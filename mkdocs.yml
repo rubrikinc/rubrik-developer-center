@@ -1,8 +1,11 @@
 site_name: Rubrik Developer Guide
 theme:
   name: material
+  icon:
+    annotation: material/arrow-right-circle
   features:
     - content.code.copy
+    - content.code.annotate
 markdown_extensions:
   - pymdownx.highlight:
       anchor_linenums: true
@@ -10,4 +13,6 @@ markdown_extensions:
       pygments_lang_class: true
   - pymdownx.inlinehilite
   - pymdownx.snippets
+  - attr_list
+  - md_in_html
   - pymdownx.superfences
