@@ -53,9 +53,9 @@ query mssqlDatabasesExample { #(1)!
 3. `nodes` is a paginated array of objects, in this case, mssqlDatabases.
 4. `name` is a property, known as a `field` in GraphQL. It has a specific type, in this case `name` is a `String`.
 5. `cluster` is also a field in the API, but unlike `name` that is of type `String`, `cluster` is a `Cluster` type, and it has its own fields.
-6. This is the cluster `name` field. It's a 
+6. This is the cluster `name` field. It's a field on the `Cluster` type in the API.
 
-[graphql language docs]()
 
-Talk about RSC instance and the API endpoint.
+If you want to learn more about the query syntax, check out [GraphQL Language Syntax](https://graphql.org/learn/queries). 
 
+Ready to move on? If so, let's head to [API Playground](API-playground.md)
