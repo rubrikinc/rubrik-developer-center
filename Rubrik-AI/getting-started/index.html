@@ -9,25 +9,25 @@
       
       
       
-        <link rel="prev" href="../export/">
+        <link rel="prev" href="../../authentication/">
       
       
-        <link rel="next" href="../instant-recovery/">
+        <link rel="next" href="../langchain-example/">
       
       
-      <link rel="icon" href="../../../../../assets/favicon.ico">
+      <link rel="icon" href="../../assets/favicon.ico">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.49">
     
     
       
-        <title>In place recovery - Rubrik Developer Guide</title>
+        <title>Getting started - Rubrik Developer Guide</title>
       
     
     
-      <link rel="stylesheet" href="../../../../../assets/stylesheets/main.6f8fc17f.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.6f8fc17f.min.css">
       
         
-        <link rel="stylesheet" href="../../../../../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -52,9 +52,9 @@
       
     
     
-      <link rel="stylesheet" href="../../../../../css/extra.css">
+      <link rel="stylesheet" href="../../css/extra.css">
     
-    <script>__md_scope=new URL("../../../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -79,6 +79,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#what-is-rubrik-ai" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -91,9 +96,9 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../../../../.." title="Rubrik Developer Guide" class="md-header__button md-logo" aria-label="Rubrik Developer Guide" data-md-component="logo">
+    <a href="../.." title="Rubrik Developer Guide" class="md-header__button md-logo" aria-label="Rubrik Developer Guide" data-md-component="logo">
       
-  <img src="../../../../../assets/favicon.ico" alt="logo">
+  <img src="../../assets/favicon.ico" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -110,7 +115,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              In place recovery
+              Getting started
             
           </span>
         </div>
@@ -231,9 +236,9 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../../../.." title="Rubrik Developer Guide" class="md-nav__button md-logo" aria-label="Rubrik Developer Guide" data-md-component="logo">
+    <a href="../.." title="Rubrik Developer Guide" class="md-nav__button md-logo" aria-label="Rubrik Developer Guide" data-md-component="logo">
       
-  <img src="../../../../../assets/favicon.ico" alt="logo">
+  <img src="../../assets/favicon.ico" alt="logo">
 
     </a>
     Rubrik Developer Guide
@@ -248,7 +253,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../.." class="md-nav__link">
+      <a href="../.." class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -268,7 +273,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../API-playground/" class="md-nav__link">
+      <a href="../../API-playground/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -288,7 +293,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../authentication/" class="md-nav__link">
+      <a href="../../authentication/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -305,17 +310,19 @@
       
   
   
+    
   
   
+  
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
         
           
           <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
@@ -329,7 +336,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
             Rubrik AI
@@ -340,10 +347,28 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../../../../Rubrik-AI/getting-started/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Getting started
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -352,6 +377,60 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-rubrik-ai" class="md-nav__link">
+    <span class="md-ellipsis">
+      What is Rubrik AI?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-it-works" class="md-nav__link">
+    <span class="md-ellipsis">
+      How it works...
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-about-personally-identifiable-informationpii-in-my-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      What about Personally Identifiable Information(PII) in my data?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-do-i-interact-with-rubrik-ai" class="md-nav__link">
+    <span class="md-ellipsis">
+      How do I interact with Rubrik AI?
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -364,7 +443,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../Rubrik-AI/langchain-example/" class="md-nav__link">
+      <a href="../langchain-example/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -389,19 +468,17 @@
       
   
   
-    
   
   
-  
     
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
         
           
           <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
@@ -415,7 +492,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
             Data protection
@@ -426,19 +503,17 @@
                 
   
   
-    
   
   
-  
     
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_1" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_1" >
         
           
           <label class="md-nav__link" for="__nav_5_1" id="__nav_5_1_label" tabindex="0">
@@ -452,7 +527,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_1_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_1_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_5_1">
             <span class="md-nav__icon md-icon"></span>
             Data center
@@ -463,19 +538,17 @@
                 
   
   
-    
   
   
-  
     
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_1_1" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_1_1" >
         
           
           <label class="md-nav__link" for="__nav_5_1_1" id="__nav_5_1_1_label" tabindex="0">
@@ -489,7 +562,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_5_1_1_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_5_1_1_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_5_1_1">
             <span class="md-nav__icon md-icon"></span>
             Vmware vsphere
@@ -503,7 +576,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../general-information/" class="md-nav__link">
+      <a href="../../data-protection/data-center/vmware-vsphere/general-information/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -524,7 +597,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../job-status/" class="md-nav__link">
+      <a href="../../data-protection/data-center/vmware-vsphere/job-status/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -545,7 +618,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../on-demand-backup/" class="md-nav__link">
+      <a href="../../data-protection/data-center/vmware-vsphere/on-demand-backup/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -566,7 +639,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../tags/" class="md-nav__link">
+      <a href="../../data-protection/data-center/vmware-vsphere/tags/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -587,7 +660,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../virtual-machines/" class="md-nav__link">
+      <a href="../../data-protection/data-center/vmware-vsphere/virtual-machines/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -608,7 +681,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../vsphere-data-source/" class="md-nav__link">
+      <a href="../../data-protection/data-center/vmware-vsphere/vsphere-data-source/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -626,19 +699,17 @@
                 
   
   
-    
   
   
-  
     
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_1_1_7" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_1_1_7" >
         
           
           <label class="md-nav__link" for="__nav_5_1_1_7" id="__nav_5_1_1_7_label" tabindex="0">
@@ -652,7 +723,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_5_1_1_7_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_5_1_1_7_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_5_1_1_7">
             <span class="md-nav__icon md-icon"></span>
             Recovery
@@ -666,7 +737,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../export/" class="md-nav__link">
+      <a href="../../data-protection/data-center/vmware-vsphere/recovery/export/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -684,17 +755,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../data-protection/data-center/vmware-vsphere/recovery/in-place-recovery/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -703,7 +767,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -716,7 +779,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../instant-recovery/" class="md-nav__link">
+      <a href="../../data-protection/data-center/vmware-vsphere/recovery/instant-recovery/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -737,7 +800,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../live-mount/" class="md-nav__link">
+      <a href="../../data-protection/data-center/vmware-vsphere/recovery/live-mount/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -758,7 +821,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../mount-virtual-disks/" class="md-nav__link">
+      <a href="../../data-protection/data-center/vmware-vsphere/recovery/mount-virtual-disks/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -779,7 +842,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../recover-files/" class="md-nav__link">
+      <a href="../../data-protection/data-center/vmware-vsphere/recovery/recover-files/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -859,7 +922,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../sla-domains/assigning-objects/" class="md-nav__link">
+      <a href="../../data-protection/sla-domains/assigning-objects/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -880,7 +943,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../sla-domains/creating-and-modifying/" class="md-nav__link">
+      <a href="../../data-protection/sla-domains/creating-and-modifying/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -901,7 +964,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../sla-domains/listing/" class="md-nav__link">
+      <a href="../../data-protection/sla-domains/listing/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -972,7 +1035,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../events-and-observability/getting-started/" class="md-nav__link">
+      <a href="../../events-and-observability/getting-started/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1035,7 +1098,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../reports/getting-started/" class="md-nav__link">
+      <a href="../../reports/getting-started/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1074,6 +1137,50 @@
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-rubrik-ai" class="md-nav__link">
+    <span class="md-ellipsis">
+      What is Rubrik AI?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-it-works" class="md-nav__link">
+    <span class="md-ellipsis">
+      How it works...
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-about-personally-identifiable-informationpii-in-my-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      What about Personally Identifiable Information(PII) in my data?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-do-i-interact-with-rubrik-ai" class="md-nav__link">
+    <span class="md-ellipsis">
+      How do I interact with Rubrik AI?
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1087,9 +1194,32 @@
                   
 
 
-  <h1>In place recovery</h1>
+  <h1>Getting started</h1>
 
-
+<h2 id="what-is-rubrik-ai">What is Rubrik AI?</h2>
+<p>Rubrik AI unlocks the true potential of your protected data. The data protected by Rubrik becomes a library of business intelligence, and integration with a ChatBot means it will be the smartest employee in the organization.</p>
+<h2 id="how-it-works">How it works...</h2>
+<p>Rubrik AI provides Retrieval-Augmented Generation(RAG) to a Large Language Model(LLM) like OpenAI's GPT-4. This give the ability to create a private chatbot that can answer questions using data from objects protected by Rubrik.</p>
+<h2 id="what-about-personally-identifiable-informationpii-in-my-data">What about Personally Identifiable Information(PII) in my data?</h2>
+<p>Rubrik Data Security Posture Management (DSPM) eliminates potential leakage or unauthorized access of PII described by pre-built and custom policies. This makes Rubrik AI an extremely unique and secure AI solution for data access.</p>
+<h2 id="how-do-i-interact-with-rubrik-ai">How do I interact with Rubrik AI?</h2>
+<ol>
+<li>Create a <code>retriever</code> in Rubrik Security Cloud. The retriever defines:<ul>
+<li>The data it can use</li>
+<li>The sensitive data policy</li>
+<li>The user role required to use the retriever</li>
+</ul>
+</li>
+<li>Implement and an AI Orchestration Framework<ul>
+<li>This is responsible for querying the <code>retriever</code> and passing the results to the LLM for an intelligent response.</li>
+<li>examples include <code>LangChain</code>,<code>Haystack</code>, and <code>llamaindex</code></li>
+</ul>
+</li>
+<li>Deploy a bot<ul>
+<li>The bot is essentially an API front-end to the orchestration. This allows chat apps like <code>Slack</code> and <code>Microsoft Teams</code>, or even custom web front ends to provide an interface to the user.</li>
+</ul>
+</li>
+</ol>
 
 
 
@@ -1136,10 +1266,10 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "../../../../..", "features": ["content.code.copy", "content.code.annotate", "content.tooltips"], "search": "../../../../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.copy", "content.code.annotate", "content.tooltips"], "search": "../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../../../../assets/javascripts/bundle.88dd0f4e.min.js"></script>
+      <script src="../../assets/javascripts/bundle.88dd0f4e.min.js"></script>
       
     
   </body>
