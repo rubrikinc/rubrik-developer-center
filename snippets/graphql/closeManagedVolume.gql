@@ -1,0 +1,13 @@
+mutation closeManagedVolume($id: String!){
+  endManagedVolumeSnapshot(input: {id: $id params: {isAsync: true}}) {
+    asyncRequestStatus {
+      id
+      status
+      startTime
+      endTime
+      error {
+        message
+      }
+    }
+  }
+}

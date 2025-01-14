@@ -1,0 +1,9 @@
+query { 
+  slaDomain(id: "2D099E0F-EC23-4A76-BC22-31F69E3EFB67") {
+    name
+    id
+    ... on GlobalSlaReply {
+        description
+      }
+  }
+}

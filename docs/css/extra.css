@@ -1,0 +1,12 @@
+[data-md-color-scheme="slate"] {
+    background-color: transparent;
+    background: radial-gradient(circle at 0% 0%,rgb(7,24,54),rgba(7,24,54,0) 72%) fixed,radial-gradient(circle at 50% 20%,rgb(0,91,193),rgba(0,91,193,0) 40%) fixed,radial-gradient(circle at 85% -5%,rgb(96,50,210),rgba(96,50,210,0) 42%) fixed,radial-gradient(circle at 50% 50%,rgb(0,106,192),rgba(0,106,192,0) 60%) fixed,radial-gradient(circle at 10% 80%,rgb(0,125,183),rgba(0,125,183,0) 50%) fixed,radial-gradient(circle at 88% 110%,rgb(1,136,160),rgb(0,63,119) 68%) fixed beige;
+    --md-primary-fg-color--dark: hsla(#{hex2hsl($clr-indigo-700)}, 1);
+    --md-primary-fg-color: #00000049; /* header color */
+    /* --md-primary-bg-color: transparent; */
+    /* --md-accent-bg-color: transparent; */
+    /* --md-primary-bg-color--light: transparent; */
+    /* --md-primary-fg-color--lighter: transparent; */
+    /* --md-default-fg-color: transparent; */
+    --md-default-bg-color: rgba(95, 50, 210, 0.4); /* scrollbar color */
+}

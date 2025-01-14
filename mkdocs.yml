@@ -27,17 +27,24 @@ theme:
   features:
     - content.code.copy
     - content.code.annotate
+    - content.tooltips
 #    - navigation.sections
-#extra_css:
-#     - css/extra.css
+extra_css:
+     - css/extra.css
 markdown_extensions:
+  - abbr
   - admonition
   - pymdownx.highlight:
       anchor_linenums: true
       line_spans: __span
       pygments_lang_class: true
   - pymdownx.inlinehilite
-  - pymdownx.snippets
+  - pymdownx.snippets:
+      base_path: .
+      auto_append:
+        - includes/glossary.md
   - attr_list
   - md_in_html
   - pymdownx.superfences
+watch:
+  - includes
