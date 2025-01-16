@@ -1,5 +1,5 @@
 query getSLADomainByName {
-  slaDomains(filter: {field: NAME, text: "bronze"}) {
+  slaDomains {
     nodes {
       name
       id

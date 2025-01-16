@@ -28,6 +28,8 @@ theme:
     - content.code.copy
     - content.code.annotate
     - content.tooltips
+    - navigation.indexes
+    - content.tabs.link
 #    - navigation.sections
 extra_css:
      - css/extra.css
@@ -46,5 +48,7 @@ markdown_extensions:
   - attr_list
   - md_in_html
   - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
 watch:
   - includes
