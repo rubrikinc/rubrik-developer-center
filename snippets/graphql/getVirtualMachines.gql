@@ -1,0 +1,8 @@
+query getVirtualMachines {
+  vSphereVmNewConnection{
+    nodes {
+      name
+      id
+    }
+  }
+}

@@ -1,8 +1,8 @@
-mutation assignSLA($slaId: UUID, $objectIds: [UUID!]!) {
-  objects: assignSla(input: {
+mutation {
+  assignSla(input: {
     slaDomainAssignType: protectWithSlaId
-    slaOptionalId: $slaId
-    objectIds: $objectIds
+    slaOptionalId: "CC4AFC96-A8DD-401F-A618-1C03742D21AA"
+    objectIds: ["DEF42837-C14D-45E2-8F11-F1BE9ED50F4E"]
     # shouldApplyToExistingSnapshots: true # optional. if you want existing snaps applied to new SLA assignment
     # existingSnapshotRetention: RETAIN_SNAPSHOTS # optional. What do you want to do with the old snaps if you change to DONOTPROTECT?
   }) {

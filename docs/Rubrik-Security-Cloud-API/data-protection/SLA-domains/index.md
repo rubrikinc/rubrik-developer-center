@@ -1,3 +1,14 @@
+## What are SLA Domains?
+
+Rubrik SLA Domains are policies that define:
+    * The object types for which the policy can be applied
+    * How frequently an object should be backed up
+    * How long the backups should be retained
+    * If and where the backups should be replicated
+    * If and where the backups should be archived for long term storage
+    * Object type specific settings
+
+
 ## Getting All SLAs 
 
 === "GraphQL"
@@ -36,5 +47,4 @@ Generally, the name of the SLA may be known, but not the ID. The `slaDomains` qu
     ```powershell
     Get-RscSla -Id "1D916D7D-92C7-4689-A017-0D0B1AD6A45A"
     ```
-
-[`slaDomain` API reference](https://gqldocstesting.s3-website-us-west-2.amazonaws.com/queries/slaDomain)
+[API reference](https://gqldocstesting.s3-website-us-west-2.amazonaws.com/queries/slaDomain)

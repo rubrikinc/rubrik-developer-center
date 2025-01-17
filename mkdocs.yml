@@ -28,8 +28,9 @@ theme:
     - content.code.copy
     - content.code.annotate
     - content.tooltips
-    - navigation.indexes
     - content.tabs.link
+    - navigation.tabs
+    - navigation.indexes
 #    - navigation.sections
 extra_css:
      - css/extra.css
@@ -69,5 +70,8 @@ markdown_extensions:
   - pymdownx.superfences
   - pymdownx.tabbed:
       alternate_style: true
+plugins:
+  - search
+  - awesome-pages
 watch:
   - includes
