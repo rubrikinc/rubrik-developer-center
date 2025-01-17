@@ -23,19 +23,7 @@ Here's an example. Click on the arrow annotation (1) in the code to see an expla
 > Retrieve all MSSQL databases, and give me the name, ID, and the name and ID of the Rubrik Cluster that protect's this MSSQL database.
 
 ``` graphql
-query mssqlDatabasesExample { #(1)!
-{ .annotate }
-  mssqlDatabases { # (2)!
-    nodes  { #(3)!
-      name #(4)! 
-      id
-      cluster { #(5)!
-        name #(6)!
-        id
-      }
-    }
-  }
-}
+--8<-- "snippets/graphql/mssqlDatabasesExample.gql"
 ```
 
 1. `mssqlDatabasesExample` is an operation name, You can change this to whatever you want.
