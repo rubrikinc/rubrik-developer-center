@@ -1,0 +1,12 @@
+query requestStatus($id: String! $clusterUuid: UUID!) {
+  vSphereVMAsyncRequestStatus(id: $id, clusterUuid: $clusterUuid) {
+    id
+    status
+    startTime
+    progress
+    endTime
+    error {
+      message
+    }
+  }
+}

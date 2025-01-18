@@ -2,7 +2,7 @@
 
 For information on protection capabilities, see the [Rubrik Security Cloud documentation](https://docs.rubrik.com/en-us/saas/saas/vs_virtual_machines.html)
 
-### Retrieving Virtual Machine Information
+### Retrieving vSphere Virtual Machine Information
 
 To list virtual machines known by Rubrik, you can perform the following. There are various filters to search by name, MOID, cluster, organization, and more.
 
