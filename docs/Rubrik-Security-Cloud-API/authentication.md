@@ -40,7 +40,7 @@ The authorization server responds with an encoded access token. Client applicati
 ```
 
 ### Using the access token
-An access token remains valid for 12 hours from the time it is generated. Run the following command to make sure your token is valid:
+An access token remains valid for 12 hours from the time it is generated. Run the following command to make sure the token is valid:
 
 ```json
 QUERY='{

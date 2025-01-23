@@ -1,13 +1,15 @@
 
 The API Playground is an integrated development environment (IDE) that you can use to browse, explore, and run GraphQL APIs offered by Rubrik Security Cloud (RSC). The IDE also provides reference to the Rubrik GraphQL API documentation for your version. Running GraphQL queries and mutations in API Playground validates the GraphQL operations so that you can confirm that your queries or mutations will achieve the desired result when included in automation scripts.
 
-After logging in to API Playground with your RSC user account credentials, you can choose to run GraphQL queries and mutations either as yourself or with a service account. The level of access you have for running the GraphQL queries and mutations depends on the RBAC roles assigned to your user account or to the service account you are using. For enhanced security, API Playground does not persist the service account access credentials.
+Initially, access to the playground uses the currently authenticated user credentials. Running queries as a service account is useful for testing permissions and can be accomplished by clicking the "Test with Service Account" button in the upper right of the Playground.
+
+The ability to access objects and queries depends on the RBAC roles assigned to the user account or service account. For enhanced security, API Playground does not persist the service account access credentials.
 
 !!! danger 
-    The GraphQL mutations that you run in API Playground perform actions against your production environment. This can result in data loss.
+    The GraphQL mutations that run in API Playground perform actions against this instance of RSC. This can result in data loss.
 
 ## Accessing API Playground
-You can access API Playground through the RSC Settings menu or directly through the url bar in your browser.
+Access the API Playground through the RSC Settings menu or directly through the browser's url bar.
 
 
 1. Log in to RSC.
@@ -15,13 +17,13 @@ You can access API Playground through the RSC Settings menu or directly through 
 3. Click API Playground. The API Playground page appears.
 4. Click Open API Playground. API Playground opens in a new browser tab.
 
-Alternatively, you can open the playground directly by supplying the url in this format:
+Alternatively, The playground can be accessed directly by supplying the url in this format:
 
 ```
 https://<INSTANCE>.my.rubrik.com/playground/
 ```
 
-Now that you have access to the playground, let's try it out by getting a list of SLA Domains. Copy and paste the below query into the code pane of the playground, then click the "execute query" button.
+Copy and paste the below example query into the playground query pane, and click the execute button.
 
 ``` graphql
 {
@@ -34,7 +36,7 @@ Now that you have access to the playground, let's try it out by getting a list o
 }
 ```
 
-You should have received some output that looked something like this...
+### Sample output
 
 ```json
 {
@@ -59,34 +61,35 @@ You should have received some output that looked something like this...
 }
 ```
 
-If so, Congrats! Let's add a bit more to our query. I want to find an SLA Domain by name. Let's use the built-in API documentation to find out how to do that.
+Building on the query for SLA Domains, it may be desirable to search by name. The following will walk through using the API documentation in the playground to identify arguments that can be specified for a particular query, and how to implement the arguments.
 
-1. Hover your mouse cursor over `slaDomains` in your query.
+1. Hover the mouse cursor over `slaDomains` in the query.
 2. Click on the `slaDomains` link when the tooltip appears.
 
 A side pane will appear with the API documentation for `slaDomains.`
 
-You'll notice two sections: `Type` and `Arguments`
+There are 3 sections in the documentation:
 
- - `Type` - This is the type of object that gets returned.
- - `Arguments` - These are what we can pass into the query, such as name filters.
+ - `Type` - The type of object that gets returned.
+ - `Arguments` - Variables that can be passed into the query, such as filters or sorting preferences.
+ - `Implementations` - Additional object types that have their own properties
 
- You'll notice that the arguments have types specified next to the name. Let's take a look at the `filter` argument. It as a type of `[GlobalSlaFilterInput!]`
+ The arguments have types specified next to the name. The `filter` argument is a type of `[GlobalSlaFilterInput!]`
 
-- `[]` The square braces indicate that we can pass in multiple`GlobalSlaFilterInput` objects. This is good if we want to filterby name and something else.
-- `!` The exclamation point means "Non-Null." You'll see thisindicated both in arguments and fields that get returnedindicating that it's a contractual obligation for that type ofobject to be provided.
+- `[]` The square braces indicate that we can pass in multiple`GlobalSlaFilterInput` objects. This means multiple filter objects can be passed in.
+- `!` The exclamation point means "Non-Null." This symbol is used both in arguments and fields that get returned indicating that the field must be supplied.
 
-Click on the `GlobalSlaFilterInput` type in the documentation. The documentation will direct you to the documentation for this type.
+Click on the `GlobalSlaFilterInput` type in the documentation. The documentation will navigate to the documentation for this type.
 
-We're interested in filtering by name, but there's no name? Name is actually a searchable `field` we'll need to specify. If you click on `GlobalSlaQueryFilterInputField`, there are several fields to choose from.
+To search by name, set the `field` to `NAME`. Clicking on `GlobalSlaQueryFilterInputField` will display the enum values that are available to filter on.
 
-Ultimately, you will supply the `field` and `text`. `field` will be `NAME` and text will be the SLA domain name we want to search for.
+Set `text` to the name of the SLA domain to search for.
 
 !!! note
 
-    Some queries will have their own filtering arguments that are unique to the context of that object. Be sure to lean on the API documentation for help!
+    Some queries will have their own filtering arguments that are unique to the context of that object. The API documentation for each query will specify the filtering syntax and capabilities for each query.
 
-We provide arguments to a query in parenthesis `()` after the query name. Let's create our filter object as an argument to our previous query. You can change the `text` content to an SLA domain name in your environment, although you should have a "bronze" SLA by default.
+Arguments are supplied to a query in parenthesis `()` after the query name. Create the filter object as an argument to the `slaDomains` query. Change the `text` content to an SLA domain name in the currently connected RSC instance.
 
 ``` graphql
 {
@@ -99,7 +102,7 @@ We provide arguments to a query in parenthesis `()` after the query name. Let's 
 }
 ```
 
-Our result will be only SLA Domains starting with `bronze` (or whatever you picked) in the name!
+The result will be only SLA Domains starting with `bronze`
 
 ```json
 {
@@ -116,4 +119,4 @@ Our result will be only SLA Domains starting with `bronze` (or whatever you pick
 }
 ```
 
-Next, let's talk about running GraphQL calls outside of the playground, starting with [authentication](authentication.md)!
+Next: [Authentication](authentication.md)

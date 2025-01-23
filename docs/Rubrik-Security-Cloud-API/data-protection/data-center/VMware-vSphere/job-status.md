@@ -1,7 +1,7 @@
 ## Description
-Monitoring job status may be necessary to continue on after a job is complete.
+Tasks such as on-demand backups and recoveries are asynchronous requests and return an AsynRequestStatus which can be monitored for progress and completion.
 
-To monitor job status for VMware vSphere, you will need the ID of the cluster where the job is running, and the ID of the request. You can query the task status periodically until a terminal state (`SUCCEEDED`, `FAILED`, `CANCELLED`) is set given in the status field.
+To monitor the asynchronous request status for VMware vSphere, you will need the ID of the cluster and the ID of the job. You can query the request status periodically until a terminal state (`SUCCEEDED`, `FAILED`, `CANCELLED`) is set given in the status field.
 
 ## Code Samples
 
