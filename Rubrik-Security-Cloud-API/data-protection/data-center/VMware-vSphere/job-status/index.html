@@ -4583,8 +4583,8 @@
   <h1>Job status</h1>
 
 <h2 id="description">Description</h2>
-<p>Monitoring job status may be necessary to continue on after a job is complete.</p>
-<p>To monitor job status for VMware vSphere, you will need the ID of the cluster where the job is running, and the ID of the request. You can query the task status periodically until a terminal state (<code>SUCCEEDED</code>, <code>FAILED</code>, <code>CANCELLED</code>) is set given in the status field.</p>
+<p>Tasks such as on-demand backups and recoveries are asynchronous requests and return an AsynRequestStatus which can be monitored for progress and completion.</p>
+<p>To monitor the asynchronous request status for VMware vSphere, you will need the ID of the cluster and the ID of the job. You can query the request status periodically until a terminal state (<code>SUCCEEDED</code>, <code>FAILED</code>, <code>CANCELLED</code>) is set given in the status field.</p>
 <h2 id="code-samples">Code Samples</h2>
 <div class="tabbed-set tabbed-alternate" data-tabs="1:4"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><input id="__tabbed_1_4" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">GraphQL</label><label for="__tabbed_1_2">PowerShell SDK</label><label for="__tabbed_1_3">curl</label><label for="__tabbed_1_4">Python SDK</label></div>
 <div class="tabbed-content">

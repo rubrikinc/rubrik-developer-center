@@ -4587,7 +4587,7 @@
 <h3 id="description">Description</h3>
 <p>This full working example performs a restore of the file or folder specified in the script.  </p>
 <h3 id="code">Code</h3>
-<p><div class="language-powershell highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nv">$snapshot</span> <span class="p">=</span> <span class="nb">Get-RscSnapshot</span> <span class="n">-id</span> <span class="s2">&quot;123&quot;</span>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nv">$snapshot</span> <span class="p">=</span> <span class="nb">Get-RscSnapshot</span> <span class="n">-id</span> <span class="s2">&quot;123&quot;</span>
 </span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="nv">$SourceFilePath</span> <span class="p">=</span> <span class="s2">&quot;C:\foo\bar.txt&quot;</span>
 </span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="nv">$DestinationFilePath</span> <span class="p">=</span> <span class="s2">&quot;C:\restore\&quot;</span>
 </span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>
@@ -4617,7 +4617,6 @@
 </span><span id="__span-0-28"><a id="__codelineno-0-28" name="__codelineno-0-28" href="#__codelineno-0-28"></a><span class="nv">$result</span> <span class="p">=</span> <span class="nb">Invoke-Rsc</span> <span class="n">-Query</span> <span class="nv">$query</span>
 </span><span id="__span-0-29"><a id="__codelineno-0-29" name="__codelineno-0-29" href="#__codelineno-0-29"></a><span class="nv">$result</span>
 </span></code></pre></div>
-<a download="download" href="../../../../../../scripts/powershell-sdk/restoreVmFile.ps1">restoreVmFile.ps1</a></p>
 
 
 

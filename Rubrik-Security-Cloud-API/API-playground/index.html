@@ -506,6 +506,21 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Accessing API Playground">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sample-output" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sample output
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
     </ul>
@@ -4539,6 +4554,21 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Accessing API Playground">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sample-output" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sample output
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
     </ul>
@@ -4559,23 +4589,24 @@
   <h1>API playground</h1>
 
 <p>The API Playground is an integrated development environment (IDE) that you can use to browse, explore, and run GraphQL APIs offered by Rubrik Security Cloud (<abbr title="Rubrik Security Cloud: The modern data security SaaS management plane">RSC</abbr>). The IDE also provides reference to the Rubrik GraphQL API documentation for your version. Running GraphQL queries and mutations in API Playground validates the GraphQL operations so that you can confirm that your queries or mutations will achieve the desired result when included in automation scripts.</p>
-<p>After logging in to API Playground with your <abbr title="Rubrik Security Cloud: The modern data security SaaS management plane">RSC</abbr> user account credentials, you can choose to run GraphQL queries and mutations either as yourself or with a service account. The level of access you have for running the GraphQL queries and mutations depends on the RBAC roles assigned to your user account or to the service account you are using. For enhanced security, API Playground does not persist the service account access credentials.</p>
+<p>Initially, access to the playground uses the currently authenticated user credentials. Running queries as a service account is useful for testing permissions and can be accomplished by clicking the "Test with Service Account" button in the upper right of the Playground.</p>
+<p>The ability to access objects and queries depends on the RBAC roles assigned to the user account or service account. For enhanced security, API Playground does not persist the service account access credentials.</p>
 <div class="admonition danger">
 <p class="admonition-title">Danger</p>
-<p>The GraphQL mutations that you run in API Playground perform actions against your production environment. This can result in data loss.</p>
+<p>The GraphQL mutations that run in API Playground perform actions against this instance of <abbr title="Rubrik Security Cloud: The modern data security SaaS management plane">RSC</abbr>. This can result in data loss.</p>
 </div>
 <h2 id="accessing-api-playground">Accessing API Playground</h2>
-<p>You can access API Playground through the <abbr title="Rubrik Security Cloud: The modern data security SaaS management plane">RSC</abbr> Settings menu or directly through the url bar in your browser.</p>
+<p>Access the API Playground through the <abbr title="Rubrik Security Cloud: The modern data security SaaS management plane">RSC</abbr> Settings menu or directly through the browser's url bar.</p>
 <ol>
 <li>Log in to <abbr title="Rubrik Security Cloud: The modern data security SaaS management plane">RSC</abbr>.</li>
 <li>Open the app tray and select Settings. The Settings menu appears.</li>
 <li>Click API Playground. The API Playground page appears.</li>
 <li>Click Open API Playground. API Playground opens in a new browser tab.</li>
 </ol>
-<p>Alternatively, you can open the playground directly by supplying the url in this format:</p>
+<p>Alternatively, The playground can be accessed directly by supplying the url in this format:</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>https://&lt;INSTANCE&gt;.my.rubrik.com/playground/
 </span></code></pre></div>
-<p>Now that you have access to the playground, let's try it out by getting a list of <abbr title="Service Level Agreement. An SLA Domain is a policy in Rubrik that defines the protection requirements.">SLA</abbr> Domains. Copy and paste the below query into the code pane of the playground, then click the "execute query" button.</p>
+<p>Copy and paste the below example query into the playground query pane, and click the execute button.</p>
 <div class="language-graphql highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="p">{</span>
 </span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="w">  </span><span class="n">slaDomains</span><span class="w"> </span><span class="p">{</span>
 </span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="w">    </span><span class="n">nodes</span><span class="w"> </span><span class="p">{</span>
@@ -4585,7 +4616,7 @@
 </span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="w">  </span><span class="p">}</span>
 </span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a><span class="p">}</span>
 </span></code></pre></div>
-<p>You should have received some output that looked something like this...</p>
+<h3 id="sample-output">Sample output</h3>
 <div class="language-json highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="p">{</span>
 </span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="w">  </span><span class="nt">&quot;data&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
 </span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="w">    </span><span class="nt">&quot;slaDomains&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
@@ -4607,30 +4638,31 @@
 </span><span id="__span-2-19"><a id="__codelineno-2-19" name="__codelineno-2-19" href="#__codelineno-2-19"></a><span class="w">  </span><span class="p">}</span>
 </span><span id="__span-2-20"><a id="__codelineno-2-20" name="__codelineno-2-20" href="#__codelineno-2-20"></a><span class="p">}</span>
 </span></code></pre></div>
-<p>If so, Congrats! Let's add a bit more to our query. I want to find an <abbr title="Service Level Agreement. An SLA Domain is a policy in Rubrik that defines the protection requirements.">SLA</abbr> Domain by name. Let's use the built-in API documentation to find out how to do that.</p>
+<p>Building on the query for <abbr title="Service Level Agreement. An SLA Domain is a policy in Rubrik that defines the protection requirements.">SLA</abbr> Domains, it may be desirable to search by name. The following will walk through using the API documentation in the playground to identify arguments that can be specified for a particular query, and how to implement the arguments.</p>
 <ol>
-<li>Hover your mouse cursor over <code>slaDomains</code> in your query.</li>
+<li>Hover the mouse cursor over <code>slaDomains</code> in the query.</li>
 <li>Click on the <code>slaDomains</code> link when the tooltip appears.</li>
 </ol>
 <p>A side pane will appear with the API documentation for <code>slaDomains.</code></p>
-<p>You'll notice two sections: <code>Type</code> and <code>Arguments</code></p>
+<p>There are 3 sections in the documentation:</p>
 <ul>
-<li><code>Type</code> - This is the type of object that gets returned.</li>
-<li><code>Arguments</code> - These are what we can pass into the query, such as name filters.</li>
+<li><code>Type</code> - The type of object that gets returned.</li>
+<li><code>Arguments</code> - Variables that can be passed into the query, such as filters or sorting preferences.</li>
+<li><code>Implementations</code> - Additional object types that have their own properties</li>
 </ul>
-<p>You'll notice that the arguments have types specified next to the name. Let's take a look at the <code>filter</code> argument. It as a type of <code>[GlobalSlaFilterInput!]</code></p>
+<p>The arguments have types specified next to the name. The <code>filter</code> argument is a type of <code>[GlobalSlaFilterInput!]</code></p>
 <ul>
-<li><code>[]</code> The square braces indicate that we can pass in multiple<code>GlobalSlaFilterInput</code> objects. This is good if we want to filterby name and something else.</li>
-<li><code>!</code> The exclamation point means "Non-Null." You'll see thisindicated both in arguments and fields that get returnedindicating that it's a contractual obligation for that type ofobject to be provided.</li>
+<li><code>[]</code> The square braces indicate that we can pass in multiple<code>GlobalSlaFilterInput</code> objects. This means multiple filter objects can be passed in.</li>
+<li><code>!</code> The exclamation point means "Non-Null." This symbol is used both in arguments and fields that get returned indicating that the field must be supplied.</li>
 </ul>
-<p>Click on the <code>GlobalSlaFilterInput</code> type in the documentation. The documentation will direct you to the documentation for this type.</p>
-<p>We're interested in filtering by name, but there's no name? Name is actually a searchable <code>field</code> we'll need to specify. If you click on <code>GlobalSlaQueryFilterInputField</code>, there are several fields to choose from.</p>
-<p>Ultimately, you will supply the <code>field</code> and <code>text</code>. <code>field</code> will be <code>NAME</code> and text will be the <abbr title="Service Level Agreement. An SLA Domain is a policy in Rubrik that defines the protection requirements.">SLA</abbr> domain name we want to search for.</p>
+<p>Click on the <code>GlobalSlaFilterInput</code> type in the documentation. The documentation will navigate to the documentation for this type.</p>
+<p>To search by name, set the <code>field</code> to <code>NAME</code>. Clicking on <code>GlobalSlaQueryFilterInputField</code> will display the enum values that are available to filter on.</p>
+<p>Set <code>text</code> to the name of the <abbr title="Service Level Agreement. An SLA Domain is a policy in Rubrik that defines the protection requirements.">SLA</abbr> domain to search for.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Some queries will have their own filtering arguments that are unique to the context of that object. Be sure to lean on the API documentation for help!</p>
+<p>Some queries will have their own filtering arguments that are unique to the context of that object. The API documentation for each query will specify the filtering syntax and capabilities for each query.</p>
 </div>
-<p>We provide arguments to a query in parenthesis <code>()</code> after the query name. Let's create our filter object as an argument to our previous query. You can change the <code>text</code> content to an <abbr title="Service Level Agreement. An SLA Domain is a policy in Rubrik that defines the protection requirements.">SLA</abbr> domain name in your environment, although you should have a "bronze" <abbr title="Service Level Agreement. An SLA Domain is a policy in Rubrik that defines the protection requirements.">SLA</abbr> by default.</p>
+<p>Arguments are supplied to a query in parenthesis <code>()</code> after the query name. Create the filter object as an argument to the <code>slaDomains</code> query. Change the <code>text</code> content to an <abbr title="Service Level Agreement. An SLA Domain is a policy in Rubrik that defines the protection requirements.">SLA</abbr> domain name in the currently connected <abbr title="Rubrik Security Cloud: The modern data security SaaS management plane">RSC</abbr> instance.</p>
 <div class="language-graphql highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="p">{</span>
 </span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="w">  </span><span class="n">slaDomains</span><span class="p">(</span><span class="n">filter</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="n">field</span><span class="p">:</span><span class="w"> </span><span class="no">NAME</span><span class="w"> </span><span class="n">text</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;bronze&quot;</span><span class="p">})</span><span class="w"> </span><span class="p">{</span>
 </span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="w">    </span><span class="n">nodes</span><span class="w"> </span><span class="p">{</span>
@@ -4640,7 +4672,7 @@
 </span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a><span class="w">  </span><span class="p">}</span>
 </span><span id="__span-3-8"><a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a><span class="p">}</span>
 </span></code></pre></div>
-<p>Our result will be only <abbr title="Service Level Agreement. An SLA Domain is a policy in Rubrik that defines the protection requirements.">SLA</abbr> Domains starting with <code>bronze</code> (or whatever you picked) in the name!</p>
+<p>The result will be only <abbr title="Service Level Agreement. An SLA Domain is a policy in Rubrik that defines the protection requirements.">SLA</abbr> Domains starting with <code>bronze</code></p>
 <div class="language-json highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="p">{</span>
 </span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="w">  </span><span class="nt">&quot;data&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
 </span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="w">    </span><span class="nt">&quot;slaDomains&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
@@ -4654,7 +4686,7 @@
 </span><span id="__span-4-11"><a id="__codelineno-4-11" name="__codelineno-4-11" href="#__codelineno-4-11"></a><span class="w">  </span><span class="p">}</span>
 </span><span id="__span-4-12"><a id="__codelineno-4-12" name="__codelineno-4-12" href="#__codelineno-4-12"></a><span class="p">}</span>
 </span></code></pre></div>
-<p>Next, let's talk about running GraphQL calls outside of the playground, starting with <a href="../authentication/">authentication</a>!</p>
+<p>Next: <a href="../authentication/">Authentication</a></p>
 
 
 
