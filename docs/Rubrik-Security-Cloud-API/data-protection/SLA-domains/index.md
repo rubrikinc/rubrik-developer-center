@@ -1,15 +1,20 @@
+---
+title: SLA Domains
+---
+
 ## What are SLA Domains?
 
 Rubrik SLA Domains are policies that define:
-    * The object types for which the policy can be applied
-    * How frequently an object should be backed up
-    * How long the backups should be retained
-    * If and where the backups should be replicated
-    * If and where the backups should be archived for long term storage
-    * Object type specific settings
+
+  - The **object types** for which the policy can be applied
+  - The **frequency** of the backups
+  - The **retention** of the backups
+  - The **replication** destination of the backups
+  - The **archival** location of the backups
+  - **Object specific settings** based on the type (e.g. MSSQL Database)
 
 
-## Getting All SLAs 
+## Retrieving All SLAs 
 
 === "GraphQL"
     ```graphql
@@ -20,7 +25,7 @@ Rubrik SLA Domains are policies that define:
     Get-RscSla
     ```
 
-## Getting an SLA by Name
+## Retrieving an SLA by Name
 Generally, the name of the SLA may be known, but not the ID. The `slaDomains` query allows filtering on several fields, including `NAME`.
 === "GraphQL"
     ```graphql
@@ -37,7 +42,7 @@ Generally, the name of the SLA may be known, but not the ID. The `slaDomains` qu
 [API reference](https://gqldocstesting.s3-website-us-west-2.amazonaws.com/queries/slaDomains)
 
 
-## Getting an Individual SLA
+## Retrieving an Individual SLA
 
 === "GraphQL"
     ```graphql
