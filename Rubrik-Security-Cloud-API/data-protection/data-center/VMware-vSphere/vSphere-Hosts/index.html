@@ -9,25 +9,25 @@
       
       
       
-        <link rel="prev" href="../authentication/">
+        <link rel="prev" href="../vSphere-Folders/">
       
       
-        <link rel="next" href="SLA-domains/">
+        <link rel="next" href="../vsphere-data-source/">
       
       
-      <link rel="icon" href="../../assets/favicon.ico">
+      <link rel="icon" href="../../../../../assets/favicon.ico">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.50">
     
     
       
-        <title>Index - Rubrik Developer Guide</title>
+        <title>vSphere Hosts - Rubrik Developer Guide</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.a40c8224.min.css">
+      <link rel="stylesheet" href="../../../../../assets/stylesheets/main.a40c8224.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../../../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -52,9 +52,9 @@
       
     
     
-      <link rel="stylesheet" href="../../css/extra.css">
+      <link rel="stylesheet" href="../../../../../css/extra.css">
     
-    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
   
@@ -89,6 +89,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#retrieving-vmware-vsphere-hosts" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -99,9 +104,9 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../.." title="Rubrik Developer Guide" class="md-header__button md-logo" aria-label="Rubrik Developer Guide" data-md-component="logo">
+    <a href="../../../../.." title="Rubrik Developer Guide" class="md-header__button md-logo" aria-label="Rubrik Developer Guide" data-md-component="logo">
       
-  <img src="../../assets/favicon.ico" alt="logo">
+  <img src="../../../../../assets/favicon.ico" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -118,7 +123,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Index
+              vSphere Hosts
             
           </span>
         </div>
@@ -233,7 +238,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../.." class="md-tabs__link">
+      <a href="../../../../.." class="md-tabs__link">
         
   
     
@@ -256,7 +261,7 @@
     
     
       <li class="md-tabs__item md-tabs__item--active">
-        <a href="../" class="md-tabs__link">
+        <a href="../../../../" class="md-tabs__link">
           
   
     
@@ -278,7 +283,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../Rubrik-Cluster-API/" class="md-tabs__link">
+        <a href="../../../../../Rubrik-Cluster-API/" class="md-tabs__link">
           
   
     
@@ -300,7 +305,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../Annapurna/" class="md-tabs__link">
+        <a href="../../../../../Annapurna/" class="md-tabs__link">
           
   
     
@@ -337,9 +342,9 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="Rubrik Developer Guide" class="md-nav__button md-logo" aria-label="Rubrik Developer Guide" data-md-component="logo">
+    <a href="../../../../.." title="Rubrik Developer Guide" class="md-nav__button md-logo" aria-label="Rubrik Developer Guide" data-md-component="logo">
       
-  <img src="../../assets/favicon.ico" alt="logo">
+  <img src="../../../../../assets/favicon.ico" alt="logo">
 
     </a>
     Rubrik Developer Guide
@@ -354,7 +359,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../.." class="md-nav__link">
+      <a href="../../../../.." class="md-nav__link">
         
   
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12 5.69 5 4.5V18h-2v-6H9v6H7v-7.81zM12 3 2 12h3v8h6v-6h2v6h6v-8h3"/></svg>
@@ -418,7 +423,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../" class="md-nav__link ">
+            <a href="../../../../" class="md-nav__link ">
               
   
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6.5 20q-2.28 0-3.89-1.57Q1 16.85 1 14.58q0-1.95 1.17-3.48 1.18-1.53 3.08-1.95.63-2.3 2.5-3.72Q9.63 4 12 4q2.93 0 4.96 2.04Q19 8.07 19 11q1.73.2 2.86 1.5 1.14 1.28 1.14 3 0 1.88-1.31 3.19T18.5 20m-12-2h12q1.05 0 1.77-.73.73-.72.73-1.77t-.73-1.77Q19.55 13 18.5 13H17v-2q0-2.07-1.46-3.54Q14.08 6 12 6 9.93 6 8.46 7.46 7 8.93 7 11h-.5q-1.45 0-2.47 1.03Q3 13.05 3 14.5T4.03 17q1.02 1 2.47 1m5.5-6"/></svg>
@@ -453,7 +458,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../API-playground/" class="md-nav__link">
+      <a href="../../../../API-playground/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -474,7 +479,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../authentication/" class="md-nav__link">
+      <a href="../../../../authentication/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -500,10 +505,6 @@
     
       
         
-          
-        
-      
-        
       
         
       
@@ -526,24 +527,16 @@
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4" checked>
         
           
-          
-          <div class="md-nav__link md-nav__container">
-            <a href="./" class="md-nav__link md-nav__link--active">
-              
+          <label class="md-nav__link" for="__nav_2_4" id="__nav_2_4_label" tabindex="0">
+            
   
   <span class="md-ellipsis">
     Data protection
   </span>
   
 
-            </a>
-            
-              
-              <label class="md-nav__link md-nav__link--active" for="__nav_2_4" id="__nav_2_4_label" tabindex="0">
-                <span class="md-nav__icon md-icon"></span>
-              </label>
-            
-          </div>
+            <span class="md-nav__icon md-icon"></span>
+          </label>
         
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2_4">
@@ -551,8 +544,6 @@
             Data protection
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
-            
-              
             
               
                 
@@ -581,12 +572,12 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_1" >
         
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="SLA-domains/" class="md-nav__link ">
+            <a href="../../../SLA-domains/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -597,14 +588,14 @@
             </a>
             
               
-              <label class="md-nav__link " for="__nav_2_4_2" id="__nav_2_4_2_label" tabindex="0">
+              <label class="md-nav__link " for="__nav_2_4_1" id="__nav_2_4_1_label" tabindex="0">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
           </div>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_4_2_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2_4_2">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_4_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4_1">
             <span class="md-nav__icon md-icon"></span>
             SLA domains
           </label>
@@ -619,11 +610,11 @@
   
   
     <li class="md-nav__item">
-      <a href="SLA-domains/assigning-objects/" class="md-nav__link">
+      <a href="../../../SLA-domains/assignment/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Assigning objects
+    Assignment
   </span>
   
 
@@ -640,7 +631,7 @@
   
   
     <li class="md-nav__item">
-      <a href="SLA-domains/creating-and-modifying/" class="md-nav__link">
+      <a href="../../../SLA-domains/creating-and-modifying/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -693,12 +684,12 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_2" >
         
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="cloud/" class="md-nav__link ">
+            <a href="../../../cloud/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -709,14 +700,14 @@
             </a>
             
               
-              <label class="md-nav__link " for="__nav_2_4_3" id="__nav_2_4_3_label" tabindex="0">
+              <label class="md-nav__link " for="__nav_2_4_2" id="__nav_2_4_2_label" tabindex="0">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
           </div>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_4_3_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2_4_3">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_4_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4_2">
             <span class="md-nav__icon md-icon"></span>
             Cloud
           </label>
@@ -753,12 +744,12 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_3_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_2_2" >
         
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="cloud/aws/" class="md-nav__link ">
+            <a href="../../../cloud/aws/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -769,14 +760,14 @@
             </a>
             
               
-              <label class="md-nav__link " for="__nav_2_4_3_2" id="__nav_2_4_3_2_label" tabindex="0">
+              <label class="md-nav__link " for="__nav_2_4_2_2" id="__nav_2_4_2_2_label" tabindex="0">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
           </div>
         
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_4_3_2_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2_4_3_2">
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_4_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4_2_2">
             <span class="md-nav__icon md-icon"></span>
             Aws
           </label>
@@ -807,12 +798,12 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_3_2_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_2_2_2" >
         
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="cloud/aws/ec2/" class="md-nav__link ">
+            <a href="../../../cloud/aws/ec2/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -824,8 +815,8 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="5" aria-labelledby="__nav_2_4_3_2_2_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2_4_3_2_2">
+        <nav class="md-nav" data-md-level="5" aria-labelledby="__nav_2_4_2_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4_2_2_2">
             <span class="md-nav__icon md-icon"></span>
             Ec2
           </label>
@@ -864,12 +855,12 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_3_2_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_2_2_3" >
         
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="cloud/aws/rds/" class="md-nav__link ">
+            <a href="../../../cloud/aws/rds/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -881,8 +872,8 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="5" aria-labelledby="__nav_2_4_3_2_3_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2_4_3_2_3">
+        <nav class="md-nav" data-md-level="5" aria-labelledby="__nav_2_4_2_2_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4_2_2_3">
             <span class="md-nav__icon md-icon"></span>
             Rds
           </label>
@@ -921,12 +912,12 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_3_2_4" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_2_2_4" >
         
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="cloud/aws/s3/" class="md-nav__link ">
+            <a href="../../../cloud/aws/s3/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -938,8 +929,8 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="5" aria-labelledby="__nav_2_4_3_2_4_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2_4_3_2_4">
+        <nav class="md-nav" data-md-level="5" aria-labelledby="__nav_2_4_2_2_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4_2_2_4">
             <span class="md-nav__icon md-icon"></span>
             S3
           </label>
@@ -994,12 +985,12 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_3_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_2_3" >
         
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="cloud/azure/" class="md-nav__link ">
+            <a href="../../../cloud/azure/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -1010,14 +1001,14 @@
             </a>
             
               
-              <label class="md-nav__link " for="__nav_2_4_3_3" id="__nav_2_4_3_3_label" tabindex="0">
+              <label class="md-nav__link " for="__nav_2_4_2_3" id="__nav_2_4_2_3_label" tabindex="0">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
           </div>
         
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_4_3_3_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2_4_3_3">
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_4_2_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4_2_3">
             <span class="md-nav__icon md-icon"></span>
             Azure
           </label>
@@ -1048,12 +1039,12 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_3_3_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_2_3_2" >
         
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="cloud/azure/blob/" class="md-nav__link ">
+            <a href="../../../cloud/azure/blob/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -1065,8 +1056,8 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="5" aria-labelledby="__nav_2_4_3_3_2_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2_4_3_3_2">
+        <nav class="md-nav" data-md-level="5" aria-labelledby="__nav_2_4_2_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4_2_3_2">
             <span class="md-nav__icon md-icon"></span>
             Blob
           </label>
@@ -1105,12 +1096,12 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_3_3_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_2_3_3" >
         
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="cloud/azure/sql/" class="md-nav__link ">
+            <a href="../../../cloud/azure/sql/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -1122,8 +1113,8 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="5" aria-labelledby="__nav_2_4_3_3_3_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2_4_3_3_3">
+        <nav class="md-nav" data-md-level="5" aria-labelledby="__nav_2_4_2_3_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4_2_3_3">
             <span class="md-nav__icon md-icon"></span>
             Sql
           </label>
@@ -1162,12 +1153,12 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_3_3_4" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_2_3_4" >
         
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="cloud/azure/sql-managed-instances/" class="md-nav__link ">
+            <a href="../../../cloud/azure/sql-managed-instances/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -1179,8 +1170,8 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="5" aria-labelledby="__nav_2_4_3_3_4_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2_4_3_3_4">
+        <nav class="md-nav" data-md-level="5" aria-labelledby="__nav_2_4_2_3_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4_2_3_4">
             <span class="md-nav__icon md-icon"></span>
             Sql managed instances
           </label>
@@ -1219,12 +1210,12 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_3_3_5" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_2_3_5" >
         
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="cloud/azure/vm/" class="md-nav__link ">
+            <a href="../../../cloud/azure/vm/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -1236,8 +1227,8 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="5" aria-labelledby="__nav_2_4_3_3_5_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2_4_3_3_5">
+        <nav class="md-nav" data-md-level="5" aria-labelledby="__nav_2_4_2_3_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4_2_3_5">
             <span class="md-nav__icon md-icon"></span>
             Vm
           </label>
@@ -1284,12 +1275,12 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_3_4" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_2_4" >
         
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="cloud/gcp/" class="md-nav__link ">
+            <a href="../../../cloud/gcp/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -1301,8 +1292,8 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_4_3_4_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2_4_3_4">
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_4_2_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4_2_4">
             <span class="md-nav__icon md-icon"></span>
             Gcp
           </label>
@@ -1341,12 +1332,12 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_3_5" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_2_5" >
         
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="cloud/kubernetes/" class="md-nav__link ">
+            <a href="../../../cloud/kubernetes/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -1358,8 +1349,8 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_4_3_5_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2_4_3_5">
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_4_2_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4_2_5">
             <span class="md-nav__icon md-icon"></span>
             Kubernetes
           </label>
@@ -1387,89 +1378,79 @@
                 
   
   
+    
   
   
+  
     
     
       
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_3" checked>
         
           
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-    
-    
-      
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_4" >
-        
-          
-          
-          <div class="md-nav__link md-nav__container">
-            <a href="data-center/" class="md-nav__link ">
-              
+          <label class="md-nav__link" for="__nav_2_4_3" id="__nav_2_4_3_label" tabindex="0">
+            
   
   <span class="md-ellipsis">
     Data center
   </span>
   
 
-            </a>
-            
-              
-              <label class="md-nav__link " for="__nav_2_4_4" id="__nav_2_4_4_label" tabindex="0">
-                <span class="md-nav__icon md-icon"></span>
-              </label>
-            
-          </div>
+            <span class="md-nav__icon md-icon"></span>
+          </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_4_4_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2_4_4">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_4_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_4_3">
             <span class="md-nav__icon md-icon"></span>
             Data center
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
               
-            
-              
                 
   
+  
+    
   
   
   
@@ -1492,22 +1473,28 @@
       
         
       
+        
+      
+        
+      
+        
+      
     
     
       
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_4_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_3_1" checked>
         
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="data-center/VMware-vSphere/" class="md-nav__link ">
+            <a href="../" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -1518,14 +1505,14 @@
             </a>
             
               
-              <label class="md-nav__link " for="__nav_2_4_4_2" id="__nav_2_4_4_2_label" tabindex="0">
+              <label class="md-nav__link " for="__nav_2_4_3_1" id="__nav_2_4_3_1_label" tabindex="0">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
           </div>
         
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_4_4_2_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2_4_4_2">
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_4_3_1_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_4_3_1">
             <span class="md-nav__icon md-icon"></span>
             VMware vSphere
           </label>
@@ -1540,7 +1527,7 @@
   
   
     <li class="md-nav__item">
-      <a href="data-center/VMware-vSphere/job-status/" class="md-nav__link">
+      <a href="../job-status/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1561,7 +1548,7 @@
   
   
     <li class="md-nav__item">
-      <a href="data-center/VMware-vSphere/on-demand-backup/" class="md-nav__link">
+      <a href="../on-demand-backup/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1582,7 +1569,7 @@
   
   
     <li class="md-nav__item">
-      <a href="data-center/VMware-vSphere/recovery/" class="md-nav__link">
+      <a href="../recovery/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1603,7 +1590,7 @@
   
   
     <li class="md-nav__item">
-      <a href="data-center/VMware-vSphere/tags/" class="md-nav__link">
+      <a href="../tags/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1624,7 +1611,115 @@
   
   
     <li class="md-nav__item">
-      <a href="data-center/VMware-vSphere/vsphere-data-source/" class="md-nav__link">
+      <a href="../vSphere-Compute-Clusters/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    vSphere Compute Clusters
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../vSphere-Folders/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    vSphere Folders
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    vSphere Hosts
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    vSphere Hosts
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#retrieving-vmware-vsphere-hosts" class="md-nav__link">
+    <span class="md-ellipsis">
+      Retrieving VMware vSphere Hosts
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../vsphere-data-source/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1659,10 +1754,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_4_2_7" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_3_1_10" >
         
           
-          <label class="md-nav__link" for="__nav_2_4_4_2_7" id="__nav_2_4_4_2_7_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2_4_3_1_10" id="__nav_2_4_3_1_10_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -1673,8 +1768,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="5" aria-labelledby="__nav_2_4_4_2_7_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2_4_4_2_7">
+        <nav class="md-nav" data-md-level="5" aria-labelledby="__nav_2_4_3_1_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4_3_1_10">
             <span class="md-nav__icon md-icon"></span>
             Script examples
           </label>
@@ -1687,7 +1782,7 @@
   
   
     <li class="md-nav__item">
-      <a href="data-center/VMware-vSphere/script-examples/restore-vm-file/" class="md-nav__link">
+      <a href="../script-examples/restore-vm-file/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1740,12 +1835,12 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_4_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_3_2" >
         
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="data-center/bare-metal/" class="md-nav__link ">
+            <a href="../../bare-metal/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -1757,8 +1852,8 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_4_4_3_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2_4_4_3">
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_4_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4_3_2">
             <span class="md-nav__icon md-icon"></span>
             Bare metal
           </label>
@@ -1797,12 +1892,12 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_4_4" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_3_3" >
         
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="data-center/ibm-db2/" class="md-nav__link ">
+            <a href="../../ibm-db2/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -1814,8 +1909,8 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_4_4_4_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2_4_4_4">
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_4_3_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4_3_3">
             <span class="md-nav__icon md-icon"></span>
             Ibm db2
           </label>
@@ -1854,12 +1949,12 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_4_5" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_3_4" >
         
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="data-center/microsoft-ad/" class="md-nav__link ">
+            <a href="../../microsoft-ad/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -1871,8 +1966,8 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_4_4_5_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2_4_4_5">
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_4_3_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4_3_4">
             <span class="md-nav__icon md-icon"></span>
             Microsoft ad
           </label>
@@ -1911,12 +2006,12 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_4_6" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_3_5" >
         
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="data-center/microsoft-entra-id/" class="md-nav__link ">
+            <a href="../../microsoft-entra-id/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -1928,8 +2023,8 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_4_4_6_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2_4_4_6">
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_4_3_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4_3_5">
             <span class="md-nav__icon md-icon"></span>
             Microsoft entra id
           </label>
@@ -1968,12 +2063,12 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_4_7" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_3_6" >
         
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="data-center/microsoft-exchange/" class="md-nav__link ">
+            <a href="../../microsoft-exchange/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -1985,8 +2080,8 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_4_4_7_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2_4_4_7">
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_4_3_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4_3_6">
             <span class="md-nav__icon md-icon"></span>
             Microsoft exchange
           </label>
@@ -2025,12 +2120,12 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_4_8" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_3_7" >
         
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="data-center/microsoft-hyperv/" class="md-nav__link ">
+            <a href="../../microsoft-hyperv/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -2042,8 +2137,8 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_4_4_8_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2_4_4_8">
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_4_3_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4_3_7">
             <span class="md-nav__icon md-icon"></span>
             Microsoft hyperv
           </label>
@@ -2082,12 +2177,12 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_4_9" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_3_8" >
         
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="data-center/microsoft-sql/" class="md-nav__link ">
+            <a href="../../microsoft-sql/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -2099,8 +2194,8 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_4_4_9_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2_4_4_9">
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_4_3_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4_3_8">
             <span class="md-nav__icon md-icon"></span>
             Microsoft sql
           </label>
@@ -2139,12 +2234,12 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_4_10" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_3_9" >
         
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="data-center/mongodb/" class="md-nav__link ">
+            <a href="../../mongodb/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -2156,8 +2251,8 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_4_4_10_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2_4_4_10">
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_4_3_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4_3_9">
             <span class="md-nav__icon md-icon"></span>
             Mongodb
           </label>
@@ -2196,12 +2291,12 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_4_11" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_3_10" >
         
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="data-center/mysql/" class="md-nav__link ">
+            <a href="../../mysql/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -2213,8 +2308,8 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_4_4_11_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2_4_4_11">
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_4_3_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4_3_10">
             <span class="md-nav__icon md-icon"></span>
             Mysql
           </label>
@@ -2253,12 +2348,12 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_4_12" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_3_11" >
         
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="data-center/nas-unstructured-data/" class="md-nav__link ">
+            <a href="../../nas-unstructured-data/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -2270,8 +2365,8 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_4_4_12_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2_4_4_12">
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_4_3_11_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4_3_11">
             <span class="md-nav__icon md-icon"></span>
             Nas unstructured data
           </label>
@@ -2310,12 +2405,12 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_4_13" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_3_12" >
         
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="data-center/nutanix-ahv/" class="md-nav__link ">
+            <a href="../../nutanix-ahv/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -2327,8 +2422,8 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_4_4_13_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2_4_4_13">
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_4_3_12_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4_3_12">
             <span class="md-nav__icon md-icon"></span>
             Nutanix ahv
           </label>
@@ -2367,12 +2462,12 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_4_14" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_3_13" >
         
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="data-center/oracle/" class="md-nav__link ">
+            <a href="../../oracle/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -2384,8 +2479,8 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_4_4_14_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2_4_4_14">
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_4_3_13_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4_3_13">
             <span class="md-nav__icon md-icon"></span>
             Oracle
           </label>
@@ -2424,12 +2519,12 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_4_15" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_3_14" >
         
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="data-center/postgres/" class="md-nav__link ">
+            <a href="../../postgres/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -2441,8 +2536,8 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_4_4_15_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2_4_4_15">
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_4_3_14_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4_3_14">
             <span class="md-nav__icon md-icon"></span>
             Postgres
           </label>
@@ -2481,12 +2576,12 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_4_16" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_3_15" >
         
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="data-center/sap-hana/" class="md-nav__link ">
+            <a href="../../sap-hana/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -2498,8 +2593,8 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_4_4_16_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2_4_4_16">
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_4_3_15_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4_3_15">
             <span class="md-nav__icon md-icon"></span>
             Sap hana
           </label>
@@ -2550,12 +2645,12 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_5" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_4" >
         
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="infrastructure/" class="md-nav__link ">
+            <a href="../../../infrastructure/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -2566,14 +2661,14 @@
             </a>
             
               
-              <label class="md-nav__link " for="__nav_2_4_5" id="__nav_2_4_5_label" tabindex="0">
+              <label class="md-nav__link " for="__nav_2_4_4" id="__nav_2_4_4_label" tabindex="0">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
           </div>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_4_5_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2_4_5">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_4_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4_4">
             <span class="md-nav__icon md-icon"></span>
             Infrastructure
           </label>
@@ -2604,12 +2699,12 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_5_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_4_2" >
         
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="infrastructure/clusters/" class="md-nav__link ">
+            <a href="../../../infrastructure/clusters/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -2621,8 +2716,8 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_4_5_2_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2_4_5_2">
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_4_4_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4_4_2">
             <span class="md-nav__icon md-icon"></span>
             Clusters
           </label>
@@ -2661,12 +2756,12 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_5_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_4_3" >
         
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="infrastructure/rubrik-cloud-vault/" class="md-nav__link ">
+            <a href="../../../infrastructure/rubrik-cloud-vault/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -2678,8 +2773,8 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_4_5_3_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2_4_5_3">
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_4_4_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4_4_3">
             <span class="md-nav__icon md-icon"></span>
             Rubrik cloud vault
           </label>
@@ -2732,12 +2827,12 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_6" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_5" >
         
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="saas/" class="md-nav__link ">
+            <a href="../../../saas/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -2748,14 +2843,14 @@
             </a>
             
               
-              <label class="md-nav__link " for="__nav_2_4_6" id="__nav_2_4_6_label" tabindex="0">
+              <label class="md-nav__link " for="__nav_2_4_5" id="__nav_2_4_5_label" tabindex="0">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
           </div>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_4_6_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2_4_6">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_4_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4_5">
             <span class="md-nav__icon md-icon"></span>
             Saas
           </label>
@@ -2786,12 +2881,12 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_6_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_5_2" >
         
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="saas/atlassian/" class="md-nav__link ">
+            <a href="../../../saas/atlassian/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -2803,8 +2898,8 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_4_6_2_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2_4_6_2">
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_4_5_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4_5_2">
             <span class="md-nav__icon md-icon"></span>
             Atlassian
           </label>
@@ -2843,12 +2938,12 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_6_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_5_3" >
         
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="saas/microsoft-m365/" class="md-nav__link ">
+            <a href="../../../saas/microsoft-m365/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -2860,8 +2955,8 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_4_6_3_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2_4_6_3">
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_4_5_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4_5_3">
             <span class="md-nav__icon md-icon"></span>
             Microsoft m365
           </label>
@@ -2900,12 +2995,12 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_6_4" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_5_4" >
         
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="saas/salesforce/" class="md-nav__link ">
+            <a href="../../../saas/salesforce/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -2917,8 +3012,8 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_4_6_4_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2_4_6_4">
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_4_5_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4_5_4">
             <span class="md-nav__icon md-icon"></span>
             Salesforce
           </label>
@@ -2986,7 +3081,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../data-security-posture/" class="md-nav__link ">
+            <a href="../../../../data-security-posture/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -3040,7 +3135,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../data-security-posture/policies/" class="md-nav__link ">
+            <a href="../../../../data-security-posture/policies/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -3097,7 +3192,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../data-security-posture/reports/" class="md-nav__link ">
+            <a href="../../../../data-security-posture/reports/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -3154,7 +3249,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../data-security-posture/sensitive-data/" class="md-nav__link ">
+            <a href="../../../../data-security-posture/sensitive-data/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -3211,7 +3306,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../data-security-posture/user-intelligence/" class="md-nav__link ">
+            <a href="../../../../data-security-posture/user-intelligence/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -3286,7 +3381,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../data-threat-analytics/" class="md-nav__link ">
+            <a href="../../../../data-threat-analytics/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -3340,7 +3435,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../data-threat-analytics/anomalies/" class="md-nav__link ">
+            <a href="../../../../data-threat-analytics/anomalies/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -3397,7 +3492,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../data-threat-analytics/hunts/" class="md-nav__link ">
+            <a href="../../../../data-threat-analytics/hunts/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -3454,7 +3549,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../data-threat-analytics/intel/" class="md-nav__link ">
+            <a href="../../../../data-threat-analytics/intel/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -3511,7 +3606,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../data-threat-analytics/reports/" class="md-nav__link ">
+            <a href="../../../../data-threat-analytics/reports/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -3568,7 +3663,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../data-threat-analytics/threats/" class="md-nav__link ">
+            <a href="../../../../data-threat-analytics/threats/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -3645,7 +3740,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../events-and-observability/" class="md-nav__link ">
+            <a href="../../../../events-and-observability/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -3678,7 +3773,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../events-and-observability/getting-started/" class="md-nav__link">
+      <a href="../../../../events-and-observability/getting-started/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3720,7 +3815,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../events-and-observability/audit-logs/" class="md-nav__link ">
+            <a href="../../../../events-and-observability/audit-logs/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -3777,7 +3872,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../events-and-observability/database-log-backup-logs/" class="md-nav__link ">
+            <a href="../../../../events-and-observability/database-log-backup-logs/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -3834,7 +3929,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../events-and-observability/event-logs/" class="md-nav__link ">
+            <a href="../../../../events-and-observability/event-logs/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -3891,7 +3986,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../events-and-observability/quorum-auth-logs/" class="md-nav__link ">
+            <a href="../../../../events-and-observability/quorum-auth-logs/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -3948,7 +4043,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../events-and-observability/webhooks/" class="md-nav__link ">
+            <a href="../../../../events-and-observability/webhooks/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -4019,7 +4114,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../orchestrated-recovery/" class="md-nav__link ">
+            <a href="../../../../orchestrated-recovery/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -4073,7 +4168,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../orchestrated-recovery/objects/" class="md-nav__link ">
+            <a href="../../../../orchestrated-recovery/objects/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -4130,7 +4225,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../orchestrated-recovery/recoveries/" class="md-nav__link ">
+            <a href="../../../../orchestrated-recovery/recoveries/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -4187,7 +4282,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../orchestrated-recovery/recovery-plans/" class="md-nav__link ">
+            <a href="../../../../orchestrated-recovery/recovery-plans/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -4254,7 +4349,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../reports/" class="md-nav__link ">
+            <a href="../../../../reports/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -4287,7 +4382,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../reports/getting-started/" class="md-nav__link">
+      <a href="../../../../reports/getting-started/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4344,7 +4439,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../Rubrik-Cluster-API/" class="md-nav__link ">
+            <a href="../../../../../Rubrik-Cluster-API/" class="md-nav__link ">
               
   
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M2 4.6v4.8c0 .9.5 1.6 1.2 1.6h17.7c.6 0 1.2-.7 1.2-1.6V4.6C22 3.7 21.5 3 20.8 3H3.2C2.5 3 2 3.7 2 4.6M10 8V6H9v2zM5 8h2V6H5zm15 1H4V5h16zM2 14.6v4.8c0 .9.5 1.6 1.2 1.6h17.7c.6 0 1.2-.7 1.2-1.6v-4.8c0-.9-.5-1.6-1.2-1.6H3.2c-.7 0-1.2.7-1.2 1.6m8 3.4v-2H9v2zm-5 0h2v-2H5zm15 1H4v-4h16z"/></svg>
@@ -4404,7 +4499,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../Annapurna/" class="md-nav__link ">
+            <a href="../../../../../Annapurna/" class="md-nav__link ">
               
   
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21.33 12.91c.09 1.55-.62 3.04-1.89 3.95l.77 1.49c.23.45.26.98.06 1.45-.19.47-.58.84-1.06 1l-.79.25a1.687 1.687 0 0 1-1.86-.55L14.44 18c-.89-.15-1.73-.53-2.44-1.1-.5.15-1 .23-1.5.23-.88 0-1.76-.27-2.5-.79-.53.16-1.07.23-1.62.22-.79.01-1.57-.15-2.3-.45a4.1 4.1 0 0 1-2.43-3.61c-.08-.72.04-1.45.35-2.11-.29-.75-.32-1.57-.07-2.33C2.3 7.11 3 6.32 3.87 5.82c.58-1.69 2.21-2.82 4-2.7 1.6-1.5 4.05-1.66 5.83-.37.42-.11.86-.17 1.3-.17 1.36-.03 2.65.57 3.5 1.64 2.04.53 3.5 2.35 3.58 4.47.05 1.11-.25 2.2-.86 3.13.07.36.11.72.11 1.09m-5-1.41c.57.07 1.02.5 1.02 1.07a1 1 0 0 1-1 1h-.63c-.32.9-.88 1.69-1.62 2.29.25.09.51.14.77.21 5.13-.07 4.53-3.2 4.53-3.25a2.59 2.59 0 0 0-2.69-2.49 1 1 0 0 1-1-1 1 1 0 0 1 1-1c1.23.03 2.41.49 3.33 1.3.05-.29.08-.59.08-.89-.06-1.24-.62-2.32-2.87-2.53-1.25-2.96-4.4-1.32-4.4-.4-.03.23.21.72.25.75a1 1 0 0 1 1 1c0 .55-.45 1-1 1-.53-.02-1.03-.22-1.43-.56-.48.31-1.03.5-1.6.56-.57.05-1.04-.35-1.07-.9a.97.97 0 0 1 .88-1.1c.16-.02.94-.14.94-.77 0-.66.25-1.29.68-1.79-.92-.25-1.91.08-2.91 1.29C6.75 5 6 5.25 5.45 7.2 4.5 7.67 4 8 3.78 9c1.08-.22 2.19-.13 3.22.25.5.19.78.75.59 1.29-.19.52-.77.78-1.29.59-.73-.32-1.55-.34-2.3-.06-.32.27-.32.83-.32 1.27 0 .74.37 1.43 1 1.83.53.27 1.12.41 1.71.4q-.225-.39-.39-.81a1.038 1.038 0 0 1 1.96-.68c.4 1.14 1.42 1.92 2.62 2.05 1.37-.07 2.59-.88 3.19-2.13.23-1.38 1.34-1.5 2.56-1.5m2 7.47-.62-1.3-.71.16 1 1.25zm-4.65-8.61a1 1 0 0 0-.91-1.03c-.71-.04-1.4.2-1.93.67-.57.58-.87 1.38-.84 2.19a1 1 0 0 0 1 1c.57 0 1-.45 1-1 0-.27.07-.54.23-.76.12-.1.27-.15.43-.15.55.03 1.02-.38 1.02-.92"/></svg>
@@ -4439,7 +4534,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Annapurna/langchain-example/" class="md-nav__link">
+      <a href="../../../../../Annapurna/langchain-example/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4478,6 +4573,23 @@
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#retrieving-vmware-vsphere-hosts" class="md-nav__link">
+    <span class="md-ellipsis">
+      Retrieving VMware vSphere Hosts
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -4491,9 +4603,36 @@
                   
 
 
-  <h1>Index</h1>
+  <h1>vSphere Hosts</h1>
 
-
+<h2 id="retrieving-vmware-vsphere-hosts">Retrieving VMware vSphere Hosts</h2>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:4"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><input id="__tabbed_1_4" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">GraphQL</label><label for="__tabbed_1_2">PowerShell SDK</label><label for="__tabbed_1_3">curl</label><label for="__tabbed_1_4">Python SDK</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="language-graphql highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="k">query</span><span class="w"> </span><span class="nf">vsphereHosts</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">  </span><span class="n">vSphereHostConnection</span><span class="p">(</span><span class="n">filter</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="n">field</span><span class="p">:</span><span class="w"> </span><span class="no">NAME_EXACT_MATCH</span><span class="w"> </span><span class="n">texts</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;esx001.example.com&quot;</span><span class="p">})</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">    </span><span class="n">nodes</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">      </span><span class="n">name</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="w">      </span><span class="n">id</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="w">  </span><span class="p">}</span>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="p">}</span>
+</span></code></pre></div>
+</div>
+<div class="tabbed-block">
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>
+</span></code></pre></div>
+</div>
+<div class="tabbed-block">
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>
+</span></code></pre></div>
+</div>
+<div class="tabbed-block">
+<div class="language-python highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>
+</span></code></pre></div>
+</div>
+</div>
+</div>
 
 
 
@@ -4579,10 +4718,10 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.copy", "content.code.annotate", "content.tooltips", "content.tabs.link", "navigation.tabs", "navigation.indexes"], "search": "../../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../../../../..", "features": ["content.code.copy", "content.code.annotate", "content.tooltips", "content.tabs.link", "navigation.tabs", "navigation.indexes"], "search": "../../../../../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.60a45f97.min.js"></script>
+      <script src="../../../../../assets/javascripts/bundle.60a45f97.min.js"></script>
       
     
   </body>
