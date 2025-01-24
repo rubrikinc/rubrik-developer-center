@@ -1,5 +1,11 @@
 query getVirtualMachines {
-  vSphereVmNewConnection{
+  objects: vSphereVmNewConnection(
+    filter: [
+      {field: NAME_EXACT_MATCH texts: "foo"}
+      {field: IS_RELIC texts: "false"}
+      {field: IS_REPLICATED texts: "false"}
+    ]
+  ) {
     nodes {
       name
       id

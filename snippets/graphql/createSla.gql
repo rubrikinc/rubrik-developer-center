@@ -1,0 +1,18 @@
+mutation createSla {
+  createGlobalSla(input: {
+    name: "foo"
+    objectTypes: [VSPHERE_OBJECT_TYPE MSSQL_OBJECT_TYPE]
+    snapshotSchedule: {
+      daily: {
+        basicSchedule: {
+          frequency: 1
+          retention: 7
+          retentionUnit: DAYS
+        }
+      }
+    }
+  }) {
+    name
+    id
+  }
+}

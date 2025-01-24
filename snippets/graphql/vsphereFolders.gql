@@ -1,0 +1,11 @@
+query vsphereFolders {
+  vSphereFolders(filter: {field: NAME_EXACT_MATCH texts: "SQL Server"}) {
+    nodes {
+      name
+      id
+      folderType
+      vCenterId
+      datacenterId
+    }
+  }
+}

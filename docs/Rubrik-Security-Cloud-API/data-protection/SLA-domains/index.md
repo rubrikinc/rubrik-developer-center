@@ -4,7 +4,7 @@ title: SLA Domains
 
 ## What are SLA Domains?
 
-Rubrik SLA Domains are policies that define:
+Rubrik SLA Domains are data protection policies that define:
 
   - The **object types** for which the policy can be applied
   - The **frequency** of the backups

@@ -1,0 +1,2 @@
+$dailySchedule = New-RscSlaSnapshotSchedule -Type daily -Frequency 1 -Retention 2 -RetentionUnit DAYS
+New-RscSla -name "foo" -DailySchedule $dailySchedule -ObjectType VSPHERE_OBJECT_TYPE,MSSQL_OBJECT_TYPE

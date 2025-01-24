@@ -5,10 +5,11 @@ title: Rubrik Security Cloud API
 
 ## Getting Started
 
-The Rubrik Security Cloud(RSC) API is based on GraphQL. GraphQL has some useful features that REST APIs do not. 
+The Rubrik Security Cloud(RSC) API is GraphQL.
 
-1. Introspection - API documentation is built in to the API itself. This means you can "ask" the API about itself, and there is no separate process for building documentation. The schema is the documentation. Along with built-in documentation, GraphQL is strongly-typed, which means you don't have to guess the format of the arguments to an API call. Understanding object structure is a common issue with REST.
-2. Performance - Rubrik has a LOT of metadata available to you. Generally you'll find that REST APIs give you every property back from an object, whether you needed it or not. This can cause performance issues and much higher complexity at scale. GraphQL allows you to select just the properties you need. This makes a big difference when we're talking about retrieving information about thousands of protected objects.
+### GraphQL Features
+1. Single endpoint
+
 
 ## Help! I'm new to GraphQL!
 It can be uncomfortable learning a new technology, but GraphQL is has reached maturity and there are a number of large organizations adopting it. 

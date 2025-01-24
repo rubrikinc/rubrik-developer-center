@@ -75,3 +75,5 @@ plugins:
   - awesome-pages
 watch:
   - includes
+  - snippets
+  - scripts

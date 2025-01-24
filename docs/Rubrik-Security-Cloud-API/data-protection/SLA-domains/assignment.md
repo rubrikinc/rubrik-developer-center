@@ -1,4 +1,4 @@
-## Assigning a single object to an SLA
+## Assigning workloads to an SLA
 
 === "GraphQL"
     ```graphql
@@ -6,5 +6,5 @@
     ```
 === "PowerShell SDK"
     ```powershell
-    Get-RscSla -Name "Bronze"
+    --8<-- "snippets/powershell-sdk/assignSla.ps1"
     ```
