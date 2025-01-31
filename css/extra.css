@@ -10,3 +10,12 @@
     /* --md-default-fg-color: transparent; */
     --md-default-bg-color: rgba(95, 50, 210, 0.9); /* scrollbar color */
 }
+[data-md-color-scheme="default"] {
+    --md-primary-fg-color: #15292b;
+}
+.md-header {
+    background: url('../assets/bgr_right.png') right no-repeat #15292b;
+}
+.md-tabs {
+    background: url('../assets/bgr_right.png') right no-repeat #15292b;
+}
