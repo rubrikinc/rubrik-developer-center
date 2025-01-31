@@ -12,10 +12,10 @@
 }
 [data-md-color-scheme="default"] {
     --md-primary-fg-color: #15292b;
-}
-.md-header {
-    background: url('../assets/bgr_right.png') right no-repeat #15292b;
-}
-.md-tabs {
-    background: url('../assets/bgr_right.png') right no-repeat #15292b;
+    .md-header {
+        background: url('../assets/bgr_right.png') right no-repeat #15292b;
+    }
+    .md-tabs {
+        background: url('../assets/bgr_right.png') right no-repeat #15292b;
+    }
 }
