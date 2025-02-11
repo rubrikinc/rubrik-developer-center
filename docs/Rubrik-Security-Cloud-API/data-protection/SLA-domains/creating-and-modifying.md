@@ -13,10 +13,6 @@ SLA domains can range from simple to very complex policy definitions.
     ```bash
     --8<-- "snippets/shell/createSla.sh"
     ```
-=== "Python SDK"
-    ```python
-    --8<-- "snippets/python-sdk/createSla.py"
-    ```
 
 ## Modifying an SLA Domain
 Modification of an SLA requires the entire SLA object to be passed in to the mutation. If every property is not passed in, the SLA update will either fail, or will be updated with only the portions of the object that were passed in to the update arguments.
@@ -32,8 +28,4 @@ Modification of an SLA requires the entire SLA object to be passed in to the mut
 === "Shell"
     ```bash
     --8<-- "snippets/shell/updateSla.sh"
-    ```
-=== "Python SDK"
-    ```python
-    --8<-- "snippets/python-sdk/updateSla.py"
     ```

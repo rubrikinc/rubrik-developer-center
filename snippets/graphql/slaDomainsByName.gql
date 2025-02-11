@@ -1,5 +1,5 @@
 query slaDomains {
-  slaDomains {
+  slaDomains(filter: {field: NAME text: "foo"}) {
     nodes {
       id
       name

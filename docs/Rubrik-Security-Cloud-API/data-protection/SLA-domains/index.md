@@ -13,36 +13,32 @@ Rubrik SLA Domains are data protection policies that define:
   - The **archival** location of the backups
   - **Object specific settings** based on the type (e.g. MSSQL Database)
 
-
-## Retrieving All SLAs 
-
+## Retrieve All SLAs 
 === "GraphQL"
     ```graphql
-    --8<-- "snippets/graphql/getSLADomains.gql"
+    --8<-- "snippets/graphql/slaDomains.gql"
     ```
 === "PowerShell SDK"
     ```powershell
-    Get-RscSla
+    --8<-- "snippets/powershell-sdk/slaDomains.ps1"
     ```
 
-## Retrieving an SLA by Name
+## Retrieve an SLA by Name
 Generally, the name of the SLA may be known, but not the ID. The `slaDomains` query allows filtering on several fields, including `NAME`.
 === "GraphQL"
     ```graphql
-    --8<-- "snippets/graphql/getSlaDomainByName.gql"
+    --8<-- "snippets/graphql/slaDomainsByName.gql"
     ```
 === "PowerShell SDK"
     ```powershell
-    Get-RscSla -Name "Bronze"
+    --8<-- "snippets/powershell-sdk/slaDomainsByName.ps1"
     ```
 
 !!!Note
     Name filtering in `slaDomains` is partial matching. If you provide the name "bronze", it will also return any other SLA domain with that name (e.g. "super-bronze").
 
-[API reference](https://gqldocstesting.s3-website-us-west-2.amazonaws.com/queries/slaDomains)
 
-
-## Retrieving an Individual SLA
+## Retrieve an Individual SLA
 
 === "GraphQL"
     ```graphql
@@ -50,6 +46,5 @@ Generally, the name of the SLA may be known, but not the ID. The `slaDomains` qu
     ```
 === "PowerShell SDK"
     ```powershell
-    Get-RscSla -Id "1D916D7D-92C7-4689-A017-0D0B1AD6A45A"
+    --8<-- "snippets/powershell-sdk/slaDomain.ps1"
     ```
-[API reference](https://gqldocstesting.s3-website-us-west-2.amazonaws.com/queries/slaDomain)
