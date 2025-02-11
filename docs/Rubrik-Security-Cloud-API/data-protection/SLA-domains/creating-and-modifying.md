@@ -9,9 +9,9 @@ SLA domains can range from simple to very complex policy definitions.
     ```powershell
     --8<-- "snippets/powershell-sdk/createSla.ps1"
     ```
-=== "curl"
+=== "Shell"
     ```bash
-    --8<-- "snippets/bash/createSla.sh"
+    --8<-- "snippets/shell/createSla.sh"
     ```
 === "Python SDK"
     ```python
@@ -29,9 +29,9 @@ Modification of an SLA requires the entire SLA object to be passed in to the mut
     ```powershell
     --8<-- "snippets/powershell-sdk/updateSla.ps1"
     ```
-=== "curl"
+=== "Shell"
     ```bash
-    --8<-- "snippets/bash/updateSla.sh"
+    --8<-- "snippets/shell/updateSla.sh"
     ```
 === "Python SDK"
     ```python

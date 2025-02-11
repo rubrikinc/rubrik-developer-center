@@ -8,9 +8,9 @@
     ```powershell
     --8<-- "snippets/powershell-sdk/vsphereFolders.ps1"
     ```
-=== "curl"
+=== "Shell"
     ```bash
-    --8<-- "snippets/bash/vsphereFolders.sh"
+    --8<-- "snippets/shell/vsphereFolders.sh"
     ```
 === "Python SDK"
     ```python

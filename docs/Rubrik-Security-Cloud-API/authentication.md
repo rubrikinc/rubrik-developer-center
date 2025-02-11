@@ -20,9 +20,9 @@ Consider the following best practices when using service accounts:
 Refer to the RSC userguide: [adding a service account](https://docs.rubrik.com/en-us/saas/saas/adding_a_service_account.html)
 
 ### Obtaining an access token
-=== "curl"
+=== "Shell"
     ```bash
-    --8<-- "snippets/bash/authentication.sh"
+    --8<-- "snippets/shell/authentication.sh"
     ```
 
 The authorization server responds with an encoded access token. Client applications use the access token to invoke Rubrik APIs.
@@ -35,9 +35,9 @@ The authorization server responds with an encoded access token. Client applicati
 
 The access token is used as a `Bearer` token in the `Authorization` header of all subsequent API calls.
 
-=== "curl"
+=== "Shell"
     ```bash
-    --8<-- "snippets/bash/accessTokenUsage.sh"
+    --8<-- "snippets/shell/accessTokenUsage.sh"
     ```
 
 ### Deleting a session
@@ -45,7 +45,7 @@ While there is no restriction on the number of active sessions a service account
 
 Run the following command to revoke the session established for the service account. Successful revocation will result in an HTTP status code of `204`.
 
-=== "curl"
+=== "Shell"
     ```bash
-    --8<-- "snippets/bash/deleteSession.sh"
+    --8<-- "snippets/shell/deleteSession.sh"
     ```

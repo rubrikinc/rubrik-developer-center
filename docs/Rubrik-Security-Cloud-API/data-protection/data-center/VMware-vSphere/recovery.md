@@ -1,21 +1,23 @@
+Recoveries, especially Exports, can be very complex 
+
 ## Export
 Create a new virtual machine from this snapshot
 
 === "GraphQL"
     ```graphql
-    --8<-- "snippets/graphql/exportVm.gql"
+    --8<-- "snippets/graphql/vsphereVmExport.gql"
     ```
 === "PowerShell SDK"
     ```powershell
-    --8<-- "snippets/powershell-sdk/exportVm.ps1"
+    --8<-- "snippets/powershell-sdk/vsphereVmExport.ps1"
     ```
-=== "curl"
+=== "Shell"
     ```bash
-    --8<-- "snippets/bash/exportVm.sh"
+    --8<-- "snippets/shell/vsphereVmExport.sh"
     ```
 === "Python SDK"
     ```python
-    --8<-- "snippets/python-sdk/exportVm.py"
+    --8<-- "snippets/python-sdk/vsphereVmExport.py"
     ```
 
 ## Recover Files
@@ -23,19 +25,19 @@ Restore files and folders from this snapshot
 
 === "GraphQL"
     ```graphql
-    --8<-- "snippets/graphql/recoverVmFiles.gql"
+    --8<-- "snippets/graphql/vsphereVmRecoverFiles.gql"
     ```
 === "PowerShell SDK"
     ```powershell
-    --8<-- "snippets/powershell-sdk/recoverVmFiles.ps1"
+    --8<-- "snippets/powershell-sdk/vsphereVmRecoverFiles.ps1"
     ```
-=== "curl"
+=== "Shell"
     ```bash
-    --8<-- "snippets/bash/recoverVmFiles.sh"
+    --8<-- "snippets/shell/vsphereVmRecoverFiles.sh"
     ```
 === "Python SDK"
     ```python
-    --8<-- "snippets/python-sdk/recoverVmFiles.py"
+    --8<-- "snippets/python-sdk/vsphereVmRecoverFiles.py"
     ```
 
 ## In-Place Recovery
@@ -43,19 +45,19 @@ Update the source virtual machine with data from this snapshot using only change
 
 === "GraphQL"
     ```graphql
-    --8<-- "snippets/graphql/inPlaceVmRecovery.gql"
+    --8<-- "snippets/graphql/vsphereVmInPlaceRecovery.gql"
     ```
 === "PowerShell SDK"
     ```powershell
-    --8<-- "snippets/powershell-sdk/inPlaceVmRecovery.ps1"
+    --8<-- "snippets/powershell-sdk/vsphereVmInPlaceRecovery.ps1"
     ```
-=== "curl"
+=== "Shell"
     ```bash
-    --8<-- "snippets/bash/inPlaceVmRecovery.sh"
+    --8<-- "snippets/shell/vsphereVmInPlaceRecovery.sh"
     ```
 === "Python SDK"
     ```python
-    --8<-- "snippets/python-sdk/inPlaceVmRecovery.py"
+    --8<-- "snippets/python-sdk/vsphereVmInPlaceRecovery.py"
     ```
 
 ## Live Mount
@@ -63,19 +65,19 @@ Create a new virtual machine from this snapshot. The recovered virtual machine u
 
 === "GraphQL"
     ```graphql
-    --8<-- "snippets/graphql/liveMountVm.gql"
+    --8<-- "snippets/graphql/vsphereVmLiveMount.gql"
     ```
 === "PowerShell SDK"
     ```powershell
-    --8<-- "snippets/powershell-sdk/liveMountVm.ps1"
+    --8<-- "snippets/powershell-sdk/vsphereVmLiveMount.ps1"
     ```
-=== "curl"
+=== "Shell"
     ```bash
-    --8<-- "snippets/bash/liveMountVm.sh"
+    --8<-- "snippets/shell/vsphereVmLiveMount.sh"
     ```
 === "Python SDK"
     ```python
-    --8<-- "snippets/python-sdk/liveMountVm.py"
+    --8<-- "snippets/python-sdk/vsphereVmLiveMount.py"
     ```
 
 ## Instant Recovery
@@ -83,19 +85,19 @@ Replace the source virtual machine with a virtual machine recovered from this sn
 
 === "GraphQL"
     ```graphql
-    --8<-- "snippets/graphql/instantRecoverVm.gql"
+    --8<-- "snippets/graphql/vsphereVmInstantRecovery.gql"
     ```
 === "PowerShell SDK"
     ```powershell
-    --8<-- "snippets/powershell-sdk/instantRecoverVm.ps1"
+    --8<-- "snippets/powershell-sdk/vsphereVmInstantRecovery.ps1"
     ```
-=== "curl"
+=== "Shell"
     ```bash
-    --8<-- "snippets/bash/instantRecoverVm.sh"
+    --8<-- "snippets/shell/vsphereVmInstantRecovery.sh"
     ```
 === "Python SDK"
     ```python
-    --8<-- "snippets/python-sdk/instantRecoverVm.py"
+    --8<-- "snippets/python-sdk/vsphereVmInstantRecovery.py"
     ```
 
 ## Mount Virtual Disks
@@ -103,17 +105,17 @@ Create new virtual disks from this snapshot, using the Rubrik cluster as the dat
 
 === "GraphQL"
     ```graphql
-    --8<-- "snippets/graphql/mountVmdk.gql"
+    --8<-- "snippets/graphql/vsphereVmLiveMountVmdk.gql"
     ```
 === "PowerShell SDK"
     ```powershell
-    --8<-- "snippets/powershell-sdk/mountVmdk.ps1"
+    --8<-- "snippets/powershell-sdk/vsphereVmLiveMountVmdk.ps1"
     ```
-=== "curl"
+=== "Shell"
     ```bash
-    --8<-- "snippets/bash/mountVmdk.sh"
+    --8<-- "snippets/shell/vsphereVmLiveMountVmdk.sh"
     ```
 === "Python SDK"
     ```python
-    --8<-- "snippets/python-sdk/mountVmdk.py"
+    --8<-- "snippets/python-sdk/vsphereVmLiveMountVmdk.py"
     ```

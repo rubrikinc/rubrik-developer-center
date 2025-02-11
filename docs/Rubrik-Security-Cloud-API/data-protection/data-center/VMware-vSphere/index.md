@@ -12,19 +12,17 @@ To list virtual machines known by Rubrik, you can perform the following. There a
 
 === "GraphQL"
     ```graphql
-    --8<-- "snippets/graphql/getVirtualMachines.gql"
+    --8<-- "snippets/graphql/vSphereVirtualMachines.gql"
     ```
 === "PowerShell SDK"
     ```powershell
-    --8<-- "snippets/powershell-sdk/getVirtualMachines.ps1"
+    --8<-- "snippets/powershell-sdk/vSphereVirtualMachines.ps1"
     ```
 === "Python SDK"
     ```python
-    --8<-- "snippets/python-sdk/getVirtualMachines.py"
+    --8<-- "snippets/python-sdk/vSphereVirtualMachines.py"
     ```
-=== "curl"
+=== "Shell"
     ```bash
-    --8<-- "snippets/bash/getVirtualMachines.sh"
+    --8<-- "snippets/shell/vSphereVirtualMachines.sh"
     ```
-
-[API REFERENCE](http://gqldocstesting.s3-website-us-west-2.amazonaws.com/queries/vSphereVmNewConnection)

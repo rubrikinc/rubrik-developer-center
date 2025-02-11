@@ -8,9 +8,9 @@
     ```powershell
     --8<-- "snippets/powershell-sdk/vsphereComputeClusters.ps1"
     ```
-=== "curl"
+=== "Shell"
     ```bash
-    --8<-- "snippets/bash/vsphereComputeClusters.sh"
+    --8<-- "snippets/shell/vsphereComputeClusters.sh"
     ```
 === "Python SDK"
     ```python

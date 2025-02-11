@@ -8,20 +8,22 @@ title: Rubrik Security Cloud API
 The Rubrik Security Cloud(RSC) API is GraphQL.
 
 ### GraphQL Features
-1. Single endpoint
+1. Single Endpoint - The RSC API endpoint will always be /api/graphql.
+2. Single HTTP method - Everything is an HTTP POST.
+3. Introspection - The API documentation is built in to the API itself, providing integrated development help and schema checking.
+4. Customized Response - Queries are customized to only return the fields that is needed.
 
 
 ## Help! I'm new to GraphQL!
-It can be uncomfortable learning a new technology, but GraphQL is has reached maturity and there are a number of large organizations adopting it. 
+GraphQL is a "query language," comparable to SQL. In SQL, one might say, "Select name and ID from the VM table." GraphQL is similar in this idea. A query which is much like a SQL table. We then select the properties called fields, which are like columns in that table. Unlike SQL, GraphQL fields can be types with their own fields, allowing a deeply nested structure for more complex objects.
 
-When learning any new language, I work first to understand what it actually does differently. Since it is a "query language," I like to compare it to SQL. In SQL, we might say, "Select name and ID from the VM table." GraphQL is similar in this idea. We run a named query which is much like a SQL table. We then select the properties called fields, which are like columns in that table. Now, I won't get too complex at this point, but some of those properties are objects that may have their own properties.
-
-Here's an example. Click on the arrow annotation (1) in the code to see an explanation of that part of the code.
+### Example
+Click on the arrow annotation (1) in the code to see an explanation of that part of the code.
 { .annotate }
 
 1. This is an annotation!
 
-> Retrieve all MSSQL databases, and give me the name, ID, and the name and ID of the Rubrik Cluster that protect's this MSSQL database.
+> Retrieve all MSSQL databases, and return the name, ID, and the name and ID of the Rubrik Cluster that protect's this MSSQL database.
 
 ``` graphql
 --8<-- "snippets/graphql/mssqlDatabasesExample.gql"
@@ -35,6 +37,6 @@ Here's an example. Click on the arrow annotation (1) in the code to see an expla
 6. This is the cluster `name` field. It's a field on the `Cluster` type in the API.
 
 
-If you want to learn more about the query syntax, check out [GraphQL Language Syntax](https://graphql.org/learn/queries). 
+To learn more about the query syntax, check out [GraphQL Language Syntax](https://graphql.org/learn/queries). 
 
-Ready to move on? If so, let's head to [API Playground](API-playground.md)
+Next: [API Playground](API-playground.md)
