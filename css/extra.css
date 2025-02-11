@@ -19,3 +19,7 @@
         background: url('../assets/bgr_right.png') right no-repeat #15292b;
     }
 }
+
+.md-typeset pre > code {
+    max-height: 20rem;
+}
