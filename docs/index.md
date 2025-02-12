@@ -5,17 +5,29 @@ icon: material/home-outline
 
 Rubrik's APIs provide an extremely flexible interface to automate and integrate with customer and partner systems. To get started, here are the APIs Rubrik currently offers.
 
-### Rubrik Security Cloud(RSC) API
-The [Rubrik Security Cloud](Rubrik-Security-Cloud-API/index.md) API provides 100% of the capabilities Rubrik has to offer.
+<div class="grid cards" markdown>
+-   :material-cloud-outline:{ .lg .middle } __Rubrik Security Cloud API__
 
- - SLA Domain management and assignment
- - Data protection tasks
- - Recovery tasks
- - Data Security Posture
- - Data Threat Analytics
+    ---
+    - SLA Domain Management
+    - SLA Assignment
+    - On-Demand Backups
+    - Recovery Operations
+    - Data Security Posture
+    - Data Threat Analytics
+    - Reporting
 
-### Rubrik Cluster API
-The [Rubrik Cluster API](Rubrik-Cluster-API/index.md) provides offline and airgapped operations in the event that you cannot access Rubrik Security Cloud
+    ---
+    [:octicons-arrow-right-24: Get Started](Rubrik-Security-Cloud-API/index.md)
+</div>
 
- - On-demand backups
- - Recovery tasks
+<div class="grid cards" markdown>
+-   :material-server-outline:{ .lg .middle } __Rubrik Cluster API__
+
+    ---
+    - On-demand backups
+    - Recovery operations
+
+    ---
+    [:octicons-arrow-right-24: Get Started](Rubrik-Cluster-API/index.md)
+</div>
