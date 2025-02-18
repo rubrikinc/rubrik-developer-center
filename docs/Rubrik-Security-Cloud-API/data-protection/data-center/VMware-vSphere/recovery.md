@@ -1,11 +1,11 @@
-Recoveries, especially Exports, can be very complex 
+Recoveries have many configuration options. The below examples demonstrate one way of configuring recoveries. For all possible recovery options refer to the API reference for the corresponding mutation.
 
 ## Export
-Create a new virtual machine from this snapshot
+Creates a new virtual machine from a snapshot
 
 === "GraphQL"
     ```graphql
-    --8<-- "snippets/graphql/vsphereVmExport.gql"
+    --8<-- "snippets/graphql/rubrik-security-cloud-api/data-protection/data-center/vmware-vsphere/export.gql"
     ```
 === "PowerShell SDK"
     ```powershell
@@ -15,17 +15,13 @@ Create a new virtual machine from this snapshot
     ```bash
     --8<-- "snippets/shell/vsphereVmExport.sh"
     ```
-=== "Python SDK"
-    ```python
-    --8<-- "snippets/python-sdk/vsphereVmExport.py"
-    ```
 
 ## Recover Files
-Restore files and folders from this snapshot
+Restore files and folders from a snapshot
 
 === "GraphQL"
     ```graphql
-    --8<-- "snippets/graphql/vsphereVmRecoverFiles.gql"
+    --8<-- "snippets/graphql/rubrik-security-cloud-api/data-protection/data-center/vmware-vsphere/fileRecovery.gql"
     ```
 === "PowerShell SDK"
     ```powershell
@@ -35,17 +31,13 @@ Restore files and folders from this snapshot
     ```bash
     --8<-- "snippets/shell/vsphereVmRecoverFiles.sh"
     ```
-=== "Python SDK"
-    ```python
-    --8<-- "snippets/python-sdk/vsphereVmRecoverFiles.py"
-    ```
 
 ## In-Place Recovery
-Update the source virtual machine with data from this snapshot using only changed blocks.
+Update the source virtual machine with data from a snapshot using only changed blocks.
 
 === "GraphQL"
     ```graphql
-    --8<-- "snippets/graphql/vsphereVmInPlaceRecovery.gql"
+    --8<-- "snippets/graphql/rubrik-security-cloud-api/data-protection/data-center/vmware-vsphere/inPlaceRecovery.gql"
     ```
 === "PowerShell SDK"
     ```powershell
@@ -55,17 +47,13 @@ Update the source virtual machine with data from this snapshot using only change
     ```bash
     --8<-- "snippets/shell/vsphereVmInPlaceRecovery.sh"
     ```
-=== "Python SDK"
-    ```python
-    --8<-- "snippets/python-sdk/vsphereVmInPlaceRecovery.py"
-    ```
 
 ## Live Mount
-Create a new virtual machine from this snapshot. The recovered virtual machine uses the Rubrik cluster as its datastore.
+Create a new virtual machine from a snapshot. The recovered virtual machine uses the Rubrik cluster as its datastore.
 
 === "GraphQL"
     ```graphql
-    --8<-- "snippets/graphql/vsphereVmLiveMount.gql"
+    --8<-- "snippets/graphql/rubrik-security-cloud-api/data-protection/data-center/vmware-vsphere/liveMountVm.gql"
     ```
 === "PowerShell SDK"
     ```powershell
@@ -75,17 +63,13 @@ Create a new virtual machine from this snapshot. The recovered virtual machine u
     ```bash
     --8<-- "snippets/shell/vsphereVmLiveMount.sh"
     ```
-=== "Python SDK"
-    ```python
-    --8<-- "snippets/python-sdk/vsphereVmLiveMount.py"
-    ```
 
 ## Instant Recovery
-Replace the source virtual machine with a virtual machine recovered from this snapshot. The recovered virtual machine uses the Rubrik cluster as the datastore.
+Replace the source virtual machine with a virtual machine recovered from a snapshot. The recovered virtual machine uses the Rubrik cluster as the datastore.
 
 === "GraphQL"
     ```graphql
-    --8<-- "snippets/graphql/vsphereVmInstantRecovery.gql"
+    --8<-- "snippets/graphql/rubrik-security-cloud-api/data-protection/data-center/vmware-vsphere/instantRecovery.gql"
     ```
 === "PowerShell SDK"
     ```powershell
@@ -95,17 +79,13 @@ Replace the source virtual machine with a virtual machine recovered from this sn
     ```bash
     --8<-- "snippets/shell/vsphereVmInstantRecovery.sh"
     ```
-=== "Python SDK"
-    ```python
-    --8<-- "snippets/python-sdk/vsphereVmInstantRecovery.py"
-    ```
 
 ## Mount Virtual Disks
-Create new virtual disks from this snapshot, using the Rubrik cluster as the datastore. Mount these disks to another virtual machine.
+Create new virtual disks from a snapshot, using the Rubrik cluster as the datastore. Mount these disks to another virtual machine.
 
 === "GraphQL"
     ```graphql
-    --8<-- "snippets/graphql/vsphereVmLiveMountVmdk.gql"
+    --8<-- "snippets/graphql/rubrik-security-cloud-api/data-protection/data-center/vmware-vsphere/liveMountVmdk.gql"
     ```
 === "PowerShell SDK"
     ```powershell
@@ -114,8 +94,4 @@ Create new virtual disks from this snapshot, using the Rubrik cluster as the dat
 === "Shell"
     ```bash
     --8<-- "snippets/shell/vsphereVmLiveMountVmdk.sh"
-    ```
-=== "Python SDK"
-    ```python
-    --8<-- "snippets/python-sdk/vsphereVmLiveMountVmdk.py"
     ```

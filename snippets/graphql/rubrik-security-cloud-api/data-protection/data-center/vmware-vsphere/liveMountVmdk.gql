@@ -1,0 +1,11 @@
+mutation liveMountVmdk {
+  vsphereVmInitiateDiskMount(input: {
+    id: "0c716834-1440-4c0e-bffd-c375b39309cb" # snapshot ID
+    config: {
+      targetVmId: "49ccc234-3fc5-4aab-9fec-eb8de56d29bf" 
+      vmdkIds: ["b94a692e-2f07-44c6-8186-17e0075341d9"] # removing this will mount all VMDKs
+    }
+  }) {
+    id
+  }
+}

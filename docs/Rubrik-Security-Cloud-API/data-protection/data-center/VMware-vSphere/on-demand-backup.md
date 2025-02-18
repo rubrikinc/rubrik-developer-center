@@ -2,7 +2,7 @@ To Perform an On-Demand Backup, you will need the Virtual Machine `ID` and SLA `
 
 === "GraphQL"
     ```graphql
-    --8<-- "snippets/graphql/vsphereOnDemandSnapshot.gql"
+    --8<-- "snippets/graphql/rubrik-security-cloud-api/data-protection/data-center/vmware-vsphere/snapshot.gql"
     ```
 === "PowerShell SDK"
     ```powershell
@@ -11,10 +11,6 @@ To Perform an On-Demand Backup, you will need the Virtual Machine `ID` and SLA `
 === "Shell"
     ```bash
     --8<-- "snippets/shell/vsphereOnDemandSnapshot.sh"
-    ```
-=== "Python SDK"
-    ```python
-    --8<-- "snippets/python-sdk/vsphereOnDemandSnapshot.py"
     ```
 
 To monitor the status of the on-demand backup, see [job status](Job-Status.md)

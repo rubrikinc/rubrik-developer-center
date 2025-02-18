@@ -1,0 +1,21 @@
+mutation inPlaceRecovery {
+  vsphereVmInitiateInPlaceRecovery(
+    input: {
+      id: "d2d9ed9f-bb52-4ae8-a50e-9692e8bf8dff"
+      config: {
+        requiredRecoveryParameters: {
+          snapshotId: "072ab1cd-ea3f-4dd2-8b63-49f24a5f87a2"
+        }
+      }
+    }
+    ) {
+    id
+    status
+    startTime
+    endTime
+    progress
+    error {
+      message
+    }
+  }
+}

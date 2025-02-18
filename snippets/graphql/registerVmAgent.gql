@@ -1,5 +1,0 @@
-mutation registerVmAgent($id: String!) {
-  objects: vsphereVmRegisterAgent(input: {id: $id}) {
-    success
-  }
-}

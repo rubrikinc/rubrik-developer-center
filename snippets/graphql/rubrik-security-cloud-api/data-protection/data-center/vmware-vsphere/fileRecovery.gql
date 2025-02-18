@@ -1,0 +1,18 @@
+mutation fileRecovery{
+  vsphereVmRecoverFilesNew(input: {
+    id: "4d94175e-9fd4-5198-8c46-64c2ce3559a2"
+    clusterUuid: "6a271636-9392-4cba-90c5-bdbe227854ab"
+    config: {
+      destObjectId: "a8fd8809-bbdb-5a03-8663-1c1feb19791c"
+      shouldUseAgent: true
+      restoreConfig: {
+        restorePathPair: {
+          path: "C:\\foo\\bar\\example.txt"
+          restorePath: "C:\\foo\\bar"
+        }
+      }
+    }
+  }) {
+    id
+  }
+}

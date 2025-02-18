@@ -1,4 +1,4 @@
-mutation {
+mutation assignSla {
   assignSla(input: {
     slaDomainAssignType: protectWithSlaId
     slaOptionalId: "CC4AFC96-A8DD-401F-A618-1C03742D21AA"

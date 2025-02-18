@@ -7,7 +7,7 @@ To monitor the asynchronous request status for VMware vSphere, provide the ID of
 
 === "GraphQL"
     ```graphql
-    --8<-- "snippets/graphql/vsphereVmRequestStatus.gql"
+    --8<-- "snippets/graphql/rubrik-security-cloud-api/data-protection/data-center/vmware-vsphere/requestStatus.gql"
     ```
 === "PowerShell SDK"
     ```powershell
@@ -16,8 +16,4 @@ To monitor the asynchronous request status for VMware vSphere, provide the ID of
 === "Shell"
     ```bash
     --8<-- "snippets/shell/vsphereVmRequestStatus.sh"
-    ```
-=== "Python SDK"
-    ```python
-    --8<-- "snippets/python-sdk/vsphereVmRequestStatus.py"
     ```

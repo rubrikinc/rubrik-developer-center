@@ -1,6 +1,6 @@
 $snapshot = Get-RscSnapshot -id "123"
-$SourceFilePath = "C:\foo\bar.txt"
-$DestinationFilePath = "C:\restore\"
+$SourceFilePath = "C:\\foo\\bar.txt"
+$DestinationFilePath = "C:\\restore"
 
 # Optional
 # $DestinationVm = Get-RscVmwareVm -id "123"

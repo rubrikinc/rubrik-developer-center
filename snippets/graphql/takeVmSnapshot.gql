@@ -1,5 +1,0 @@
-mutation takeVmSnapshot($id: String! $slaId: String) {
-  vsphereOnDemandSnapshot(input: {id: $id config: {slaId: $slaId}}) {
-    id
-  }
-}

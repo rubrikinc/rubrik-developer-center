@@ -1,7 +1,0 @@
-query liveMounts {
-  objects: vSphereMountConnection {
-    nodes {
-      newVmName
-    }
-  }
-}

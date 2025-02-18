@@ -2,7 +2,7 @@
 
 === "GraphQL"
     ```graphql
-    --8<-- "snippets/graphql/vsphereComputeClusters.gql"
+    --8<-- "snippets/graphql/rubrik-security-cloud-api/data-protection/data-center/vmware-vsphere/computeClusters.gql"
     ```
 === "PowerShell SDK"
     ```powershell
@@ -11,8 +11,4 @@
 === "Shell"
     ```bash
     --8<-- "snippets/shell/vsphereComputeClusters.sh"
-    ```
-=== "Python SDK"
-    ```python
-    --8<-- "snippets/python-sdk/vsphereComputeClusters.py"
     ```

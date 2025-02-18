@@ -18,10 +18,6 @@ To list virtual machines known by Rubrik, you can perform the following. There a
     ```powershell
     --8<-- "snippets/powershell-sdk/vSphereVirtualMachines.ps1"
     ```
-=== "Python SDK"
-    ```python
-    --8<-- "snippets/python-sdk/vSphereVirtualMachines.py"
-    ```
 === "Shell"
     ```bash
     --8<-- "snippets/shell/vSphereVirtualMachines.sh"

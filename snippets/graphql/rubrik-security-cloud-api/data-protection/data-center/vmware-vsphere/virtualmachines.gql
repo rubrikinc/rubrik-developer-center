@@ -1,0 +1,60 @@
+query virtualmachines {
+  vSphereVmNewConnection(
+    filter: [
+      {field: NAME_EXACT_MATCH texts: "foo"}
+      {field: IS_RELIC texts: "false"}
+      {field: IS_REPLICATED texts: "false"}
+    ]
+  ) {
+    nodes {
+      guestCredentialAuthorizationStatus
+      objectType
+      powerStatus
+      slaAssignment
+      snapshotConsistencyMandate
+      effectiveSlaDomain {
+        ... on GlobalSlaReply {
+          clusterUuid
+          description
+          id
+          isArchived
+          isDefault
+          isReadOnly
+          isRetentionLockedSla
+          name
+          stateVersion
+          version
+        }
+      }
+      blueprintId
+      cdmId
+      guestCredentialId
+      guestOsName
+      id
+      isActive
+      isArrayIntegrationPossible
+      isBlueprintChild
+      isRelic
+      name
+      numWorkloadDescendants
+      slaPauseStatus
+      agentStatus {
+        agentStatus
+      }
+      allOrgs {
+        id
+        name
+      }
+      cluster {
+        id
+        name
+      }
+    }
+    pageInfo {
+      endCursor
+      hasNextPage
+      hasPreviousPage
+      startCursor
+    }
+  }
+}

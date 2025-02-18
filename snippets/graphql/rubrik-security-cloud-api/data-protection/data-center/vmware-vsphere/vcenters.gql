@@ -1,0 +1,37 @@
+query vcenters {
+  vSphereVCenterConnection {
+    nodes {
+      objectType
+      slaAssignment
+      effectiveSlaDomain {
+        ... on GlobalSlaReply {
+          clusterUuid
+          description
+          id
+          isArchived
+          isDefault
+          isReadOnly
+          isRetentionLockedSla
+          name
+          stateVersion
+          version
+        }
+      }
+      id
+      isHotAddEnabledForOnPremVcenter
+      isStandaloneHost
+      isVmc
+      name
+      numWorkloadDescendants
+      slaPauseStatus
+      username
+      vcenterId
+    }
+    pageInfo {
+      endCursor
+      hasNextPage
+      hasPreviousPage
+      startCursor
+    }
+  }
+}
