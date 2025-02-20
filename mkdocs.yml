@@ -59,7 +59,7 @@ extra:
           data: 0
           note: >- 
             Thanks for your feedback! Help us improve this page by
-            using our <a href="..." target="_blank" rel="noopener">feedback form</a>.
+            using our <a href="https://docs.google.com/forms/d/e/1FAIpQLSe-U-S214aDsilkileoKhtJ100hLdN3RTk2-jrypFMwpmg_nQ/viewform?usp=pp_url&entry.478726986={title}+-+{url}" target="_blank" rel="noopener">feedback form</a>.
 markdown_extensions:
   - abbr
   - admonition
@@ -83,6 +83,8 @@ markdown_extensions:
 plugins:
   - search
   - awesome-pages
+  - git-revision-date-localized:
+      type: iso_date
 watch:
   - includes
   - snippets

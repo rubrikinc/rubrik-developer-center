@@ -1,0 +1,24 @@
+query hypervServers {
+  hypervServersPaginated(filter: [
+    {field: NAME_EXACT_MATCH texts: "example"}
+    {field: IS_RELIC texts: "false"}
+    {field: IS_REPLICATED texts: "false"}
+  ]) {
+    nodes {
+      name
+      id
+      connectionStatus
+      status {
+        connectivity
+      }
+      cluster {
+        name
+        id
+      }
+      effectiveSlaDomain {
+        name
+        id
+      }
+    }
+  }
+}

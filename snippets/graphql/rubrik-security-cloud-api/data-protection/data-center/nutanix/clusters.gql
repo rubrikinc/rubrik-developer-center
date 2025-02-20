@@ -1,0 +1,39 @@
+query {
+  nutanixClusters(filter: [
+    #{field: NAME_EXACT_MATCH texts: "example"}
+    {field: IS_RELIC texts: "false"}
+    {field: IS_REPLICATED texts: "false"}
+  ]) {
+    nodes {
+      name
+      id
+      cdmId
+      hostName
+      naturalId
+      nosVersion
+      connectionStatus {
+        message
+        status
+      }
+      clusterNetworks {
+        name
+        uuid
+      }
+      storageContainers {
+        name
+        uuid
+        freeBytes
+        usedBytes
+        totalBytes
+      }
+      effectiveSlaDomain {
+        name
+        id
+      }
+      cluster {
+        name
+        id
+      }
+    }
+  }
+}

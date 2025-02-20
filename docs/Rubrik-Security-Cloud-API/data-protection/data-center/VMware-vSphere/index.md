@@ -12,7 +12,7 @@ To list virtual machines known by Rubrik, you can perform the following. There a
 
 === "GraphQL"
     ```graphql
-    --8<-- "snippets/graphql/vSphereVirtualMachines.gql"
+    --8<-- "snippets/graphql/rubrik-security-cloud-api/data-protection/data-center/vmware-vsphere/virtualmachines.gql"
     ```
 === "PowerShell SDK"
     ```powershell
@@ -21,4 +21,34 @@ To list virtual machines known by Rubrik, you can perform the following. There a
 === "Shell"
     ```bash
     --8<-- "snippets/shell/vSphereVirtualMachines.sh"
+    ```
+
+## Retrieving VMware vSphere Compute Clusters
+
+=== "GraphQL"
+    ```graphql
+    --8<-- "snippets/graphql/rubrik-security-cloud-api/data-protection/data-center/vmware-vsphere/computeClusters.gql"
+    ```
+=== "PowerShell SDK"
+    ```powershell
+    --8<-- "snippets/powershell-sdk/vsphereComputeClusters.ps1"
+    ```
+=== "Shell"
+    ```bash
+    --8<-- "snippets/shell/vsphereComputeClusters.sh"
+    ```
+
+## Retrieving vCenter Servers
+
+=== "GraphQL"
+    ```graphql
+    --8<-- "snippets/graphql/rubrik-security-cloud-api/data-protection/data-center/vmware-vsphere/vcenters.gql"
+    ```
+=== "PowerShell SDK"
+    ```powershell
+    --8<-- "snippets/powershell-sdk/vsphereVcenters.ps1"
+    ```
+=== "Shell"
+    ```bash
+    --8<-- "snippets/shell/vsphereVcenters.sh"
     ```

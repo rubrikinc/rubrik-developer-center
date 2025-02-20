@@ -1,0 +1,13 @@
+mutation {
+  takeOnDemandOracleDatabaseSnapshot(input: {
+    id: "40bac7c1-87ad-4ac0-b4a6-34ac592d8e77"
+    config: {
+      forceFullSnapshot: false
+      baseOnDemandSnapshotConfig: {
+      	slaId: "7d40e858-b8ec-4096-8112-cab8eff1a4e2"
+      }
+    }
+  }) {
+    id
+  }
+}

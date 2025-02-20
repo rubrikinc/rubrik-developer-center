@@ -1,0 +1,29 @@
+query {
+  mongoCollections(filter: [
+    {field: NAME_EXACT_MATCH texts: "example"}
+    {field: IS_RELIC texts: "false"}
+    {field: IS_REPLICATED texts: "false"}
+  ]) {
+    nodes {
+      name
+      id
+      cdmId
+      source {
+        name
+        id
+      }
+      database {
+        name
+        id
+      }
+      cluster {
+        name
+        id
+      }
+      effectiveSlaDomain {
+        name
+        id
+      }
+    }
+  }
+}

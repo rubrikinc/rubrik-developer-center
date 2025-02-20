@@ -1,0 +1,23 @@
+query microsoftExchangeDags {
+  exchangeDags(filter: [
+    {field: NAME_EXACT_MATCH texts: "example"}
+    {field: IS_RELIC texts: "false"}
+    {field: IS_REPLICATED texts: "false"}
+  ]) {
+    nodes {
+      name
+      id
+      cdmId
+      totalHosts
+      backupPreference
+      cluster {
+        name
+        id
+      }
+      effectiveSlaDomain {
+        name
+        id
+      }
+    }
+  }
+}

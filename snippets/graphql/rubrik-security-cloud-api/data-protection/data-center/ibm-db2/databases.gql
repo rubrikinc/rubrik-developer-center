@@ -1,0 +1,30 @@
+query db2Databases{
+  db2Databases(filter: [
+    {field: NAME_EXACT_MATCH texts: "example"}
+    {field: IS_RELIC texts: "false"}
+    {field: IS_REPLICATED texts: "false"}
+  ]) {
+    nodes {
+      name
+      id
+      cdmId
+      effectiveSlaDomain {
+        name
+        id
+      }
+      cluster {
+        name
+        id
+      }
+      db2DbType
+      db2Instance {
+        name
+        id
+      }
+      status
+      statusMessage
+      backupSessions
+      backupParallelism
+    }
+  }
+}

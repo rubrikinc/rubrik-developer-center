@@ -1,0 +1,33 @@
+query microsoftAdDomainControllers {
+  activeDirectoryDomainControllers(filter: [
+    {field: NAME_EXACT_MATCH texts: "example"}
+    {field: IS_RELIC texts: "false"}
+    {field: IS_REPLICATED texts: "false"}
+  ]) {
+    nodes {
+      name
+      id
+      domainControllerGuid
+      adServiceStatus {
+        serviceStatus
+      }
+      hostname
+      fsmoRoles
+      serverRoles
+      isGlobalCatalog
+      host {
+        name
+        id
+      }
+      dcLocation
+      effectiveSlaDomain {
+        name
+        id
+      }
+      cluster {
+        name
+        id
+      }
+    }
+  }
+}

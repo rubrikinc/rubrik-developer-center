@@ -1,0 +1,26 @@
+query {
+  cloudDirectNasNamespaces(filter: [
+    {field: NAME_EXACT_MATCH texts: "example"}
+    {field: IS_RELIC texts: "false"}
+    {field: IS_REPLICATED texts: "false"}
+  ]) {
+    nodes {
+      name
+      id
+      cloudDirectId
+	  cloudDirectNasSystem {
+        name
+        id
+      }
+      shareCount
+      cluster {
+        name
+        id
+      }
+      effectiveSlaDomain {
+        name
+        id
+      }
+    }
+  }
+}

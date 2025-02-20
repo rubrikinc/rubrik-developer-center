@@ -1,0 +1,48 @@
+query {
+  nutanixVms(filter: [
+    {field: NAME_EXACT_MATCH texts: "example"}
+    {field: IS_RELIC texts: "false"}
+    {field: IS_REPLICATED texts: "false"}
+  ]) {
+    nodes {
+      name
+      id
+      cdmId
+      vmUuid
+      osType
+      vmDisks {
+        label
+        uuid
+        vmDiskUuid
+        sizeInBytes
+        isSnapshottable
+        storageContainerName
+        storageContainerId
+      }
+      preBackupScript {
+        scriptPath
+      }
+      postSnapScript {
+        scriptPath
+      }
+      postBackupScript {
+        scriptPath
+      }
+      snapshotConsistencyMandate
+      agentStatus {
+        connectionStatus
+        disconnectReason
+      }
+      isAgentRegistered
+      hypervisorType
+      effectiveSlaDomain {
+        name
+        id
+      }
+      cluster {
+        name
+        id
+      }
+    }
+  }
+}

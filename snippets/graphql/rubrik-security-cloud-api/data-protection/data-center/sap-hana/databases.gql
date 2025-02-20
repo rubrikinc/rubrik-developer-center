@@ -1,0 +1,40 @@
+query {
+  sapHanaDatabases(filter: [
+    {field: NAME_EXACT_MATCH texts: "example"}
+    {field: IS_RELIC texts: "false"}
+    {field: IS_REPLICATED texts: "false"}
+  ]) {
+    nodes {
+      name
+      id
+      info {
+        databaseType
+        status
+        backintPath
+        paramFilePath
+        numChannels
+        approxDbSizeInMb
+        logBackupIntervalSecs
+        restoreConfiguredSrcDatabaseId
+        logMode
+      }
+      dataPathType
+      dataPathSpec {
+        name
+      }
+      sapHanaSystem {
+        name
+        id
+      }
+      forceFull
+      effectiveSlaDomain {
+        name
+        id
+      }
+      cluster {
+        name
+        id
+      }
+    }
+  }
+}

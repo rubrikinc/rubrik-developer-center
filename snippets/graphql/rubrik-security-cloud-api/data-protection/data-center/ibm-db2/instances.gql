@@ -1,0 +1,30 @@
+query db2Instances {
+  objects: db2Instances(
+    filter: [
+      {field: NAME texts: "example"}
+      {field: IS_RELIC texts: "false"}
+      {field: IS_REPLICATED texts: "false"}
+    ]
+    ) {
+    nodes {
+      name
+      id
+      effectiveSlaDomain {
+        name
+        id
+      }
+      cluster {
+        name
+        id
+      }
+      primaryClusterUuid
+      hosts {
+        name
+        id
+      }
+      status
+      statusMessage
+      instanceType
+    }
+  }
+}

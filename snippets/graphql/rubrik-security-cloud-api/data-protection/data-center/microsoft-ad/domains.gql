@@ -1,0 +1,29 @@
+query microsoftAdDomains {
+  activeDirectoryDomains(filter: [
+    {field: NAME_EXACT_MATCH texts: "example"}
+    {field: IS_RELIC texts: "false"}
+    {field: IS_REPLICATED texts: "false"}
+  ]) {
+    nodes {
+      name
+      id
+      domainName
+      domainSid
+      registeredDomainControllersCount
+      smbDomain {
+        name
+        domainId
+        accountName
+        status
+      }
+      effectiveSlaDomain {
+        name
+        id
+      }
+      cluster {
+        name
+        id
+      }
+    }
+  }
+}
