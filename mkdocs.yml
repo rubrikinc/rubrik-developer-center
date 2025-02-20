@@ -47,18 +47,18 @@ extra:
     provider: google
     property: G-JTRX271SWK
     feedback:
-      title: Was this page helpful?
+      title: Did you find what you needed?
       ratings:
         - icon: material/emoticon-happy-outline
-          name: This page was helpful
+          name: Yes I did!
           data: 1
           note: >-
             Thanks for your feedback!
         - icon: material/emoticon-sad-outline
-          name: This page could be improved
+          name: No, I didn't.
           data: 0
           note: >- 
-            Thanks for your feedback! Help us improve this page by
+            Thanks for your feedback! Help us improve our content by
             using our <a href="https://docs.google.com/forms/d/e/1FAIpQLSe-U-S214aDsilkileoKhtJ100hLdN3RTk2-jrypFMwpmg_nQ/viewform?usp=pp_url&entry.478726986={title}+-+{url}" target="_blank" rel="noopener">feedback form</a>.
 markdown_extensions:
   - abbr

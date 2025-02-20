@@ -1,0 +1,9 @@
+query {
+	taskchain(taskchainId: "019523cf-0ded-7373-9e35-cdddc24e5233") {
+    state
+    progress
+    error
+    startTime
+    endTime
+  }
+}

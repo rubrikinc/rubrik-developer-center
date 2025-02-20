@@ -1,0 +1,33 @@
+query {
+  awsNativeEbsVolumes(ebsVolumeFilters: {
+    #nameOrIdSubstringFilter: {nameOrIdSubstring: "example"}
+    #regionFilter: {regions: [US_EAST_1]}
+    #tagFilter: {tagFilterParams: {tagKey: "foo" tagValue: "bar" filterType: TAG_KEY_VALUE}}
+    #typeFilter: {ebsVolumeTypes: [IO1,IO2]}
+  }) {
+    nodes {
+      name
+      id
+      nativeName
+      cloudNativeId
+      volumeType
+      sizeInGiBs
+      iops
+      region
+      availabilityZone
+      tags {
+        key
+        value
+      }
+      awsAccountRubrikId
+      awsAccount {
+        name
+        id
+      }
+      effectiveSlaDomain {
+        name
+        id
+      }
+    }
+  }
+}
