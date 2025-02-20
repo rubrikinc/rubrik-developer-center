@@ -3,7 +3,7 @@ SLA domains can range from simple to very complex policy definitions.
 
 === "GraphQL"
     ```graphql
-    --8<-- "snippets/graphql/createSla.gql"
+    --8<-- "snippets/graphql/rubrik-security-cloud-api/data-protection/sladomains/create.gql"
     ```
 === "PowerShell SDK"
     ```powershell
@@ -19,7 +19,7 @@ Modification of an SLA requires the entire SLA object to be passed in to the mut
 
 === "GraphQL"
     ```graphql
-    --8<-- "snippets/graphql/updateSla.gql"
+    --8<-- "snippets/graphql/rubrik-security-cloud-api/data-protection/sladomains/update.gql"
     ```
 === "PowerShell SDK"
     ```powershell

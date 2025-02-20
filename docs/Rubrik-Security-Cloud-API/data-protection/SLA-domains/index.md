@@ -16,7 +16,7 @@ Rubrik SLA Domains are data protection policies that define:
 ## Retrieve All SLAs 
 === "GraphQL"
     ```graphql
-    --8<-- "snippets/graphql/slaDomains.gql"
+    --8<-- "snippets/graphql/rubrik-security-cloud-api/data-protection/sladomains/slaDomains.gql"
     ```
 === "PowerShell SDK"
     ```powershell
@@ -27,7 +27,7 @@ Rubrik SLA Domains are data protection policies that define:
 Generally, the name of the SLA may be known, but not the ID. The `slaDomains` query allows filtering on several fields, including `NAME`.
 === "GraphQL"
     ```graphql
-    --8<-- "snippets/graphql/slaDomainsByName.gql"
+    --8<-- "snippets/graphql/rubrik-security-cloud-api/data-protection/sladomains/slaDomainsByName.gql"
     ```
 === "PowerShell SDK"
     ```powershell
@@ -42,7 +42,7 @@ Generally, the name of the SLA may be known, but not the ID. The `slaDomains` qu
 
 === "GraphQL"
     ```graphql
-    --8<-- "snippets/graphql/slaDomain.gql"
+    --8<-- "snippets/graphql/rubrik-security-cloud-api/data-protection/sladomains/slaDomain.gql"
     ```
 === "PowerShell SDK"
     ```powershell

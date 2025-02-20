@@ -2,7 +2,7 @@
 
 === "GraphQL"
     ```graphql
-    --8<-- "snippets/graphql/assignSla.gql"
+    --8<-- "snippets/graphql/rubrik-security-cloud-api/data-protection/sladomains/assign.gql"
     ```
 === "PowerShell SDK"
     ```powershell
@@ -13,7 +13,7 @@
 
 === "GraphQL"
     ```graphql
-    --8<-- "snippets/graphql/assignSlaToSnapshot.gql"
+    --8<-- "snippets/graphql/rubrik-security-cloud-api/data-protection/sladomains/assignToSnapshot.gql"
     ```
 === "PowerShell SDK"
     ```powershell

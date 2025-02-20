@@ -1,4 +1,4 @@
-mutation liveMountVm{
+mutation {
   vsphereVmInitiateLiveMountV2(
     input: {
       id: "a8fd8809-bbdb-5a03-8663-1c1feb19791c"

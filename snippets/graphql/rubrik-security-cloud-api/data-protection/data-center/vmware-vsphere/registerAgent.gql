@@ -1,4 +1,4 @@
-mutation registerAgent {
+mutation {
   vsphereVmRegisterAgent(input: {id: "97a0f5db-8f83-4c8d-b94e-72cc14510435"}) {
     success
   }

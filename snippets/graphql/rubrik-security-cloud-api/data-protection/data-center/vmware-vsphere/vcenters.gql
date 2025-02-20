@@ -1,4 +1,4 @@
-query vcenters {
+query {
   vSphereVCenterConnection {
     nodes {
       objectType

@@ -1,4 +1,4 @@
-mutation export {
+mutation {
   vsphereVmExportSnapshotV3(
     input: {
     id: "e776b2f3-8ea6-47aa-8ea4-ad0029cbc451"

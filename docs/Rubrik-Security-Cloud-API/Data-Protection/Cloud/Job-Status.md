@@ -1,11 +1,8 @@
----
-Title: AWS EC2
----
-## Retrieving AWS EC2 Instances
+## Retrieving Job Status of all Cloud Native Objects (AWS, Azure, GCP)
 
 === "GraphQL"
     ```graphql
-    --8<-- "snippets/graphql/rubrik-security-cloud-api/data-protection/cloud/aws/ec2/instances.gql"
+    --8<-- "snippets/graphql/rubrik-security-cloud-api/data-protection/cloud/jobstatus.gql"
     ```
 === "PowerShell SDK"
     ```powershell

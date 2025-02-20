@@ -1,4 +1,4 @@
-query vsphereFolders {
+query {
   vSphereFolders(filter: {field: NAME_EXACT_MATCH texts: "SQL Server"}) {
     nodes {
       name

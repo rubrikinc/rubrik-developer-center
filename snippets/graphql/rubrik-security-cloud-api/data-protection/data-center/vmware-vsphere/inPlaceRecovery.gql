@@ -1,4 +1,4 @@
-mutation inPlaceRecovery {
+mutation {
   vsphereVmInitiateInPlaceRecovery(
     input: {
       id: "d2d9ed9f-bb52-4ae8-a50e-9692e8bf8dff"

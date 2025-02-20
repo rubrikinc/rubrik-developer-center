@@ -1,4 +1,4 @@
-query virtualmachines {
+query {
   vSphereVmNewConnection(
     filter: [
       {field: NAME_EXACT_MATCH texts: "foo"}

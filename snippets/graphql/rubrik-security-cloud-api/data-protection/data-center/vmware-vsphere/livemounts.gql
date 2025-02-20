@@ -1,4 +1,4 @@
-query livemounts {
+query {
   vSphereLiveMounts {
   count
   nodes {

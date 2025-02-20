@@ -1,11 +1,11 @@
 ---
-Title: AWS EC2
+Title: AWS EBS
 ---
-## Retrieving AWS EC2 Instances
+## Retrieving AWS EBS Volumes
 
 === "GraphQL"
     ```graphql
-    --8<-- "snippets/graphql/rubrik-security-cloud-api/data-protection/cloud/aws/ec2/instances.gql"
+    --8<-- "snippets/graphql/rubrik-security-cloud-api/data-protection/cloud/aws/ebs/volumes.gql"
     ```
 === "PowerShell SDK"
     ```powershell

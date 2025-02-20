@@ -1,4 +1,4 @@
-query vsphereHosts {
+query {
   vSphereHostConnection(filter: {field: NAME_EXACT_MATCH texts: "esx001.example.com"}) {
     nodes {
       name

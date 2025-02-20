@@ -1,4 +1,4 @@
-mutation liveMountVmdk {
+mutation {
   vsphereVmInitiateDiskMount(input: {
     id: "0c716834-1440-4c0e-bffd-c375b39309cb" # snapshot ID
     config: {

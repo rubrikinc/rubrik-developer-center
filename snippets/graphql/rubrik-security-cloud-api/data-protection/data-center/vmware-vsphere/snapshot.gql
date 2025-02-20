@@ -1,4 +1,4 @@
-mutation snapshot {
+mutation {
   vsphereBulkOnDemandSnapshot(
     input: {
       config: {

@@ -1,5 +1,8 @@
-query requestStatus($id: String! $clusterUuid: UUID!) {
-  vSphereVMAsyncRequestStatus(id: $id, clusterUuid: $clusterUuid) {
+query {
+  vSphereVMAsyncRequestStatus(
+    id: "d4822e3d-c6e3-4bbe-950e-3e63c4770a78"
+    clusterUuid: "e4e7d2a2-c58b-4bc2-b11e-d6f9102e6fc8"
+  ) {
     id
     status
     startTime
