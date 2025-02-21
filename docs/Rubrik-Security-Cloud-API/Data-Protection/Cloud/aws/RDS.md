@@ -1,11 +1,12 @@
 ---
-Title: AWS RDS
+Title: Google Compute Engine Instances
 ---
-## Retrieving AWS RDS Instances
+
+## Retrieving Google Compute Engine (GCE) Instances
 
 === "GraphQL"
     ```graphql
-    --8<-- "snippets/graphql/rubrik-security-cloud-api/data-protection/cloud/aws/rds/instances.gql"
+    --8<-- "snippets/graphql/rubrik-security-cloud-api/data-protection/cloud/gcp/instances.gql"
     ```
 === "PowerShell SDK"
     ```powershell
