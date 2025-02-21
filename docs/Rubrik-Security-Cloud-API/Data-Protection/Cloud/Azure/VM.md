@@ -1,11 +1,12 @@
 ---
-Title: AWS S3
+Azure Virtual Machines
 ---
-## Retrieving AWS S3 Buckets
+
+## Retrieving Azure Virtual Machines
 
 === "GraphQL"
     ```graphql
-    --8<-- "snippets/graphql/rubrik-security-cloud-api/data-protection/cloud/aws/s3/buckets.gql"
+    --8<-- "snippets/graphql/rubrik-security-cloud-api/data-protection/cloud/azure/virtualmachines.gql"
     ```
 === "PowerShell SDK"
     ```powershell

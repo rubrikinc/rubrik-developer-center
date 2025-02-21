@@ -1,11 +1,12 @@
 ---
-Title: AWS EC2
+Title: Google Compute Engine Instances
 ---
-## Retrieving AWS EC2 Instances
+
+## Retrieving Google Compute Engine (GCE) Instances
 
 === "GraphQL"
     ```graphql
-    --8<-- "snippets/graphql/rubrik-security-cloud-api/data-protection/cloud/aws/ec2/instances.gql"
+    --8<-- "snippets/graphql/rubrik-security-cloud-api/data-protection/cloud/gcp/instances.gql"
     ```
 === "PowerShell SDK"
     ```powershell

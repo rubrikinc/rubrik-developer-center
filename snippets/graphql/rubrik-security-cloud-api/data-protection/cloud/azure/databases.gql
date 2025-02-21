@@ -1,5 +1,5 @@
 query {
-  azureNativeVirtualMachines( virtualMachineFilters: {
+  azureSqlDatabases( azureSqlDatabaseFilters: {
       #nameSubstringFilter: {nameSubstring: "example"}
       #tagFilter: {tagFilterParams: {tagKey: "foo", tagValue: "bar", filterType: TAG_KEY_VALUE}}
       #resourceGroupFilter: {resourceGroupNames: ["example"]}
@@ -10,21 +10,19 @@ query {
     nodes {
       name
       id
-      sizeType # https://docs.microsoft.com/en-us/azure/virtual-machines/sizes-general
-      nativeName
-      cloudNativeId
       region
-      availabilityZone
-      vnetName
-      subnetName
-      privateIp
-      isAcceleratedNetworkingEnabled
-      availabilitySetNativeId
-      attachmentSpecs {
-        managedDiskId
-        isOsDisk
-        lun
-        isExcludedFromSnapshot
+			elasticPoolName
+      backupStorageRedundancy
+      serviceTier
+      maximumSizeInBytes
+      persistentStorage {
+        name
+        id
+      }
+      serviceObjectiveName
+      azureSqlDatabaseServer {
+        name
+        id
       }
       tags {
         key
