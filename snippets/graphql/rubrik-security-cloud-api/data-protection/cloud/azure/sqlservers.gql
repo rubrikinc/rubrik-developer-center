@@ -1,0 +1,23 @@
+# https://docs.microsoft.com/en-us/azure/azure-sql/database/logical-servers
+query {
+  azureSqlDatabaseServers( azureSqlDatabaseServerFilters: {
+      #nameSubstringFilter: {nameSubstring: "example"}
+      #resourceGroupFilter: {resourceGroupNames: ["example"]}
+      #subscriptionFilter: {subscriptionIds: ["7d0d81dc-3323-4f45-bd0b-cc37e5bf9f37"]}
+      #regionFilter: {regions: [EAST_US, EAST_US2]}
+  }) {
+    nodes {
+      name
+      id
+      region
+      tags {
+        key
+        value
+      }
+      effectiveSlaDomain {
+        name
+        id
+      }
+    }
+  }
+}

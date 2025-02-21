@@ -10,21 +10,24 @@ query {
     nodes {
       name
       id
-      sizeType # https://docs.microsoft.com/en-us/azure/virtual-machines/sizes-general
       nativeName
       cloudNativeId
+      availabilitySetNativeId
+      resourceGroup {
+        name
+        id
+      }
       region
-      availabilityZone
+      sizeType
+      osType
       vnetName
       subnetName
       privateIp
-      isAcceleratedNetworkingEnabled
-      availabilitySetNativeId
-      attachmentSpecs {
-        managedDiskId
-        isOsDisk
-        lun
-        isExcludedFromSnapshot
+      attachedManagedDisks {
+        name
+        id
+        cloudNativeId
+        diskSizeGib
       }
       tags {
         key

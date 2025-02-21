@@ -1,30 +1,24 @@
 query {
-  azureNativeVirtualMachines( virtualMachineFilters: {
+  azureSqlManagedInstanceServers( azureSqlManagedInstanceServerFilters: {
       #nameSubstringFilter: {nameSubstring: "example"}
       #tagFilter: {tagFilterParams: {tagKey: "foo", tagValue: "bar", filterType: TAG_KEY_VALUE}}
       #resourceGroupFilter: {resourceGroupNames: ["example"]}
       #subscriptionFilter: {subscriptionIds: ["7d0d81dc-3323-4f45-bd0b-cc37e5bf9f37"]}
       #regionFilter: {regions: [EAST_US, EAST_US2]}
-      #relicFilter: {relic: false}
   }) {
     nodes {
       name
       id
-      sizeType # https://docs.microsoft.com/en-us/azure/virtual-machines/sizes-general
-      nativeName
-      cloudNativeId
       region
-      availabilityZone
+      vCoresCount
+      storageSizeGib
+      instancePoolName
+      serviceTier
       vnetName
       subnetName
-      privateIp
-      isAcceleratedNetworkingEnabled
-      availabilitySetNativeId
-      attachmentSpecs {
-        managedDiskId
-        isOsDisk
-        lun
-        isExcludedFromSnapshot
+      azureNativeResourceGroup {
+        name
+        id
       }
       tags {
         key

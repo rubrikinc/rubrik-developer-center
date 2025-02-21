@@ -1,0 +1,32 @@
+query {
+  azureSqlManagedInstanceDatabases( azureSqlManagedInstanceDatabaseFilters: {
+      #nameSubstringFilter: {nameSubstring: "example"}
+      #resourceGroupFilter: {resourceGroupNames: ["example"]}
+      #serverFilter: {serverNames: ["example"]}
+      #subscriptionFilter: {subscriptionIds: ["7d0d81dc-3323-4f45-bd0b-cc37e5bf9f37"]}
+      #regionFilter: {regions: [EAST_US, EAST_US2]}
+      #relicFilter: {relic: false}
+  }) {
+    nodes {
+      name
+      id
+      region
+      persistentStorage {
+        name
+        id
+      }
+      azureSqlManagedInstanceServer {
+        name
+        id
+      }
+      persistentStorage {
+        name
+        id
+      }
+      effectiveSlaDomain {
+        name
+        id
+      }
+    }
+  }
+}
