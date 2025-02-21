@@ -1,11 +1,12 @@
 ---
-Title: AWS EC2
+Azure Virtual Machines
 ---
-## Retrieving AWS EC2 Instances
+
+## Retrieving Azure Virtual Machines
 
 === "GraphQL"
     ```graphql
-    --8<-- "snippets/graphql/rubrik-security-cloud-api/data-protection/cloud/aws/ec2/instances.gql"
+    --8<-- "snippets/graphql/rubrik-security-cloud-api/data-protection/cloud/azure/virtualmachines.gql"
     ```
 === "PowerShell SDK"
     ```powershell
