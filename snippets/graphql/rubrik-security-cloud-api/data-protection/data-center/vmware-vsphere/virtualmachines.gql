@@ -7,35 +7,25 @@ query {
     ]
   ) {
     nodes {
+      name
+      id
+      cdmId
+      effectiveSlaDomain {
+        name
+        id
+      }
       guestCredentialAuthorizationStatus
       objectType
       powerStatus
       slaAssignment
       snapshotConsistencyMandate
-      effectiveSlaDomain {
-        ... on GlobalSlaReply {
-          clusterUuid
-          description
-          id
-          isArchived
-          isDefault
-          isReadOnly
-          isRetentionLockedSla
-          name
-          stateVersion
-          version
-        }
-      }
       blueprintId
-      cdmId
       guestCredentialId
       guestOsName
-      id
       isActive
       isArrayIntegrationPossible
       isBlueprintChild
       isRelic
-      name
       numWorkloadDescendants
       slaPauseStatus
       agentStatus {
@@ -53,8 +43,6 @@ query {
     pageInfo {
       endCursor
       hasNextPage
-      hasPreviousPage
-      startCursor
     }
   }
 }
