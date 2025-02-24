@@ -1,0 +1,44 @@
+query {
+  activitySeriesConnection(filters: {
+    #lastUpdatedTimeGt: "2025-02-22T00:00:00Z"
+    #orgIds: ["288970b2-16a0-4c65-a5fa-b0c86f5af337"]
+    #lastActivityType: [BACKUP]
+    #objectType: [VMWARE_VM,LINUX_FILESET]
+    #severity: [SEVERITY_CRITICAL,SEVERITY_WARNING,SEVERITY_INFO]
+    #lastActivityStatus: [SUCCESS,PARTIAL_SUCCESS,FAILURE,CANCELED]
+  }) {
+    nodes {
+      fid
+      id
+      objectName
+      objectType
+      lastActivityType
+      lastActivityMessage
+      severity
+      lastUpdated
+      objectId
+      location
+      progress
+      failureReason
+      causeErrorCode
+      causeErrorMessage
+      causeErrorReason
+      causeErrorRemedy
+      activityConnection(first: 1) { # Gets the last activity in the activitySeries
+        nodes {
+          objectId
+          objectType
+          type
+          status
+          message
+          errorInfo
+          time
+        }
+      }
+    }
+    pageInfo {
+      hasNextPage
+      endCursor
+    }
+  }
+}
