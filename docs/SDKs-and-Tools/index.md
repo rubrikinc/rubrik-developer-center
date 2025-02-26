@@ -10,5 +10,5 @@ icon: material/toolbox-outline
     - Easy to use cmdlets for many common tasks
     - Full API accessibility through low-level cmdlets
     ---
-    [:octicons-arrow-right-24: Get Started](Rubrik-Security-Cloud-API/index.md)
+    [:octicons-arrow-right-24: Get Started](PowerShell)
 </div>
