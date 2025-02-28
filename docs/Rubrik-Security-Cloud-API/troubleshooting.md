@@ -6,7 +6,8 @@
 !!! note
     It can extremely difficult to troubleshoot code logic without much context. If additional help from the Rubrik support team is required, limit the code shared to only the offending query or SDK method. Include literal variable values to verify what is being passed in to the query or SDK method.
 
-## 400
+## Error code **400**
+---
 
 ### Reason
 These occur when the query is incorrect according to the schema.
@@ -59,7 +60,7 @@ query {
 ```
 
 
-## 403
+## Error Code **403**
 
 ### Reason
 These errors are the result of a permissions issue. While RBAC is a common cause, the other reason could be that the query, or even a field in the query is behind a feature flag that is not enabled. This occurs when a development feature is deployed into the production API schema behind a feature flag, or the query is a part of licensing that has not been purchased or approved.
@@ -131,7 +132,54 @@ query {
 ```
 The offending field mentioned in the error has been removed.
 
-## 500
+## Error Code **404**
+
+### Reason
+These errors indicate you've provided an ID that does not exist for an object using the supplied query. 
+
+### Solution
+Identify the correct ID or query to be used.
+
+### Example Erroneous Query
+```graphql
+query {
+  vSphereVmNew(fid: "7d303326-7c2c-4ea2-b463-dedb8910d98a") {
+    name
+    id
+  }
+}
+```
+
+### Example Error Response
+```json
+{
+  "data": null,
+  "errors": [
+    {
+      "message": "NOT_FOUND: Unable to find managed object for ID or you are not authorized to access it",
+      "path": [
+        "vSphereVmNew"
+      ],
+      "locations": [
+        {
+          "line": 2,
+          "column": 3
+        }
+      ],
+      "extensions": {
+        "code": 404,
+        "trace": {
+          "operation": "/api/graphql",
+          "traceId": "gwzt2HR5GinN4PrhQfJ+Bg==",
+          "spanId": "/MR1LoaAiD8="
+        }
+      }
+    }
+  ]
+}
+```
+
+## Error Code **500**
 
 ### Reason
 These errors are server-side, and a defect should be filed immediately. It could be that the query is not being used as intended, but the API should catch this. This error indicates that the API let the call through to the back-end service and the service is responding with an error. Essentially this is an “uncaught exception.
