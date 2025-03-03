@@ -10,9 +10,9 @@ Azure Virtual Machines
     ```
 === "PowerShell SDK"
     ```powershell
-    --8<-- "snippets/powershell-sdk/.ps1"
+    --8<-- "snippets/powershell-sdk/rubrik-security-cloud-api/data-protection/cloud/azure/virtualmachines.ps1"
     ```
 === "Shell"
     ```bash
-    --8<-- "snippets/shell/.sh"
+    --8<-- "snippets/shell/rubrik-security-cloud-api/data-protection/cloud/azure/virtualmachines.sh"
     ```

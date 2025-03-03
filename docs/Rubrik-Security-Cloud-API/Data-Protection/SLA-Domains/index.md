@@ -20,7 +20,11 @@ Rubrik SLA Domains are data protection policies that define:
     ```
 === "PowerShell SDK"
     ```powershell
-    --8<-- "snippets/powershell-sdk/slaDomains.ps1"
+    --8<-- "snippets/powershell-sdk/rubrik-security-cloud-api/data-protection/sladomains/slaDomains.ps1"
+    ```
+=== "Shell"
+    ```bash
+    --8<-- "snippets/shell/rubrik-security-cloud-api/data-protection/sladomains/slaDomains.sh"
     ```
 
 ## Retrieve an SLA by Name
@@ -31,7 +35,11 @@ Generally, the name of the SLA may be known, but not the ID. The `slaDomains` qu
     ```
 === "PowerShell SDK"
     ```powershell
-    --8<-- "snippets/powershell-sdk/slaDomainsByName.ps1"
+    --8<-- "snippets/powershell-sdk/rubrik-security-cloud-api/data-protection/sladomains/slaDomainsByName.ps1"
+    ```
+=== "Shell"
+    ```bash
+    --8<-- "snippets/shell/rubrik-security-cloud-api/data-protection/sladomains/slaDomainsByName.sh"
     ```
 
 !!!Note
@@ -46,5 +54,9 @@ Generally, the name of the SLA may be known, but not the ID. The `slaDomains` qu
     ```
 === "PowerShell SDK"
     ```powershell
-    --8<-- "snippets/powershell-sdk/slaDomain.ps1"
+    --8<-- "snippets/powershell-sdk/rubrik-security-cloud-api/data-protection/sladomains/slaDomain.ps1"
+    ```
+=== "Shell"
+    ```bash
+    --8<-- "snippets/shell/rubrik-security-cloud-api/data-protection/sladomains/slaDomain.sh"
     ```
