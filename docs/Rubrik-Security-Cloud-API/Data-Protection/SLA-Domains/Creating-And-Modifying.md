@@ -7,11 +7,11 @@ SLA domains can range from simple to very complex policy definitions.
     ```
 === "PowerShell SDK"
     ```powershell
-    --8<-- "snippets/powershell-sdk/createSla.ps1"
+    --8<-- "snippets/powershell-sdk/rubrik-security-cloud-api/data-protection/sladomains/create.ps1"
     ```
 === "Shell"
     ```bash
-    --8<-- "snippets/shell/createSla.sh"
+    --8<-- "snippets/shell/rubrik-security-cloud-api/data-protection/sladomains/create.sh"
     ```
 
 ## Modifying an SLA Domain
@@ -23,9 +23,9 @@ Modification of an SLA requires the entire SLA object to be passed in to the mut
     ```
 === "PowerShell SDK"
     ```powershell
-    --8<-- "snippets/powershell-sdk/updateSla.ps1"
+    --8<-- "snippets/powershell-sdk/rubrik-security-cloud-api/data-protection/sladomains/update.ps1"
     ```
 === "Shell"
     ```bash
-    --8<-- "snippets/shell/updateSla.sh"
+    --8<-- "snippets/shell/rubrik-security-cloud-api/data-protection/sladomains/update.sh"
     ```
