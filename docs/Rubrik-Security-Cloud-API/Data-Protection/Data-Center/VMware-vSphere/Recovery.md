@@ -9,11 +9,11 @@ Creates a new virtual machine from a snapshot
     ```
 === "PowerShell SDK"
     ```powershell
-    --8<-- "snippets/powershell-sdk/vsphereVmExport.ps1"
+    --8<-- "snippets/powershell-sdk/rubrik-security-cloud-api/data-protection/data-center/vmware-vsphere/export.ps1"
     ```
 === "Shell"
     ```bash
-    --8<-- "snippets/shell/vsphereVmExport.sh"
+    --8<-- "snippets/shell/rubrik-security-cloud-api/data-protection/data-center/vmware-vsphere/export.sh"
     ```
 
 ## Recover Files
@@ -25,11 +25,11 @@ Restore files and folders from a snapshot
     ```
 === "PowerShell SDK"
     ```powershell
-    --8<-- "snippets/powershell-sdk/vsphereVmRecoverFiles.ps1"
+    --8<-- "snippets/powershell-sdk/rubrik-security-cloud-api/data-protection/data-center/vmware-vsphere/fileRecovery.ps1"
     ```
 === "Shell"
     ```bash
-    --8<-- "snippets/shell/vsphereVmRecoverFiles.sh"
+    --8<-- "snippets/shell/rubrik-security-cloud-api/data-protection/data-center/vmware-vsphere/fileRecovery.sh"
     ```
 
 ## In-Place Recovery
@@ -41,11 +41,11 @@ Update the source virtual machine with data from a snapshot using only changed b
     ```
 === "PowerShell SDK"
     ```powershell
-    --8<-- "snippets/powershell-sdk/vsphereVmInPlaceRecovery.ps1"
+    --8<-- "snippets/powershell-sdk/rubrik-security-cloud-api/data-protection/data-center/vmware-vsphere/inPlaceRecovery.ps1"
     ```
 === "Shell"
     ```bash
-    --8<-- "snippets/shell/vsphereVmInPlaceRecovery.sh"
+    --8<-- "snippets/shell/rubrik-security-cloud-api/data-protection/data-center/vmware-vsphere/inPlaceRecovery.sh"
     ```
 
 ## Live Mount
@@ -57,11 +57,11 @@ Create a new virtual machine from a snapshot. The recovered virtual machine uses
     ```
 === "PowerShell SDK"
     ```powershell
-    --8<-- "snippets/powershell-sdk/vsphereVmLiveMount.ps1"
+    --8<-- "snippets/powershell-sdk/rubrik-security-cloud-api/data-protection/data-center/vmware-vsphere/liveMountVm.ps1"
     ```
 === "Shell"
     ```bash
-    --8<-- "snippets/shell/vsphereVmLiveMount.sh"
+    --8<-- "snippets/shell/rubrik-security-cloud-api/data-protection/data-center/vmware-vsphere/liveMountVm.sh"
     ```
 
 ## Instant Recovery
@@ -73,11 +73,11 @@ Replace the source virtual machine with a virtual machine recovered from a snaps
     ```
 === "PowerShell SDK"
     ```powershell
-    --8<-- "snippets/powershell-sdk/vsphereVmInstantRecovery.ps1"
+    --8<-- "snippets/powershell-sdk/rubrik-security-cloud-api/data-protection/data-center/vmware-vsphere/instantRecovery.ps1"
     ```
 === "Shell"
     ```bash
-    --8<-- "snippets/shell/vsphereVmInstantRecovery.sh"
+    --8<-- "snippets/shell/rubrik-security-cloud-api/data-protection/data-center/vmware-vsphere/instantRecovery.sh"
     ```
 
 ## Mount Virtual Disks
@@ -89,9 +89,9 @@ Create new virtual disks from a snapshot, using the Rubrik cluster as the datast
     ```
 === "PowerShell SDK"
     ```powershell
-    --8<-- "snippets/powershell-sdk/vsphereVmLiveMountVmdk.ps1"
+    --8<-- "snippets/powershell-sdk/rubrik-security-cloud-api/data-protection/data-center/vmware-vsphere/liveMountVmdk.ps1"
     ```
 === "Shell"
     ```bash
-    --8<-- "snippets/shell/vsphereVmLiveMountVmdk.sh"
+    --8<-- "snippets/shell/rubrik-security-cloud-api/data-protection/data-center/vmware-vsphere/liveMountVmdk.sh"
     ```

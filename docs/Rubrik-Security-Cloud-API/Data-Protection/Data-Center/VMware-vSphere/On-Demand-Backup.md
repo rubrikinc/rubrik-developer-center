@@ -8,11 +8,11 @@ To Perform an On-Demand Backup, you will need the Virtual Machine `ID` and SLA `
     ```
 === "PowerShell SDK"
     ```powershell
-    --8<-- "snippets/powershell-sdk/vsphereOnDemandSnapshot.ps1"
+    --8<-- "snippets/powershell-sdk/rubrik-security-cloud-api/data-protection/data-center/vmware-vsphere/snapshot.ps1"
     ```
 === "Shell"
     ```bash
-    --8<-- "snippets/shell/vsphereOnDemandSnapshot.sh"
+    --8<-- "snippets/shell/rubrik-security-cloud-api/data-protection/data-center/vmware-vsphere/snapshot.sh"
     ```
 
 To monitor the status of the on-demand backup, see [job status](Job-Status.md)

@@ -16,26 +16,26 @@ To list virtual machines known by Rubrik, you can perform the following. There a
     ```
 === "PowerShell SDK"
     ```powershell
-    --8<-- "snippets/powershell-sdk/vSphereVirtualMachines.ps1"
+    --8<-- "snippets/powershell-sdk/rubrik-security-cloud-api/data-protection/data-center/vmware-vsphere/virtualmachines.ps1"
     ```
 === "Shell"
     ```bash
-    --8<-- "snippets/shell/vSphereVirtualMachines.sh"
+    --8<-- "snippets/shell/rubrik-security-cloud-api/data-protection/data-center/vmware-vsphere/virtualmachines.sh"
     ```
 
 ## Retrieving VMware vSphere Compute Clusters
 
 === "GraphQL"
     ```graphql
-    --8<-- "snippets/graphql/rubrik-security-cloud-api/data-protection/data-center/vmware-vsphere/computeClusters.gql"
+    --8<-- "snippets/graphql/rubrik-security-cloud-api/data-protection/data-center/vmware-vsphere/clusters.gql"
     ```
 === "PowerShell SDK"
     ```powershell
-    --8<-- "snippets/powershell-sdk/vsphereComputeClusters.ps1"
+    --8<-- "snippets/powershell-sdk/rubrik-security-cloud-api/data-protection/data-center/vmware-vsphere/clusters.ps1"
     ```
 === "Shell"
     ```bash
-    --8<-- "snippets/shell/vsphereComputeClusters.sh"
+    --8<-- "snippets/shell/rubrik-security-cloud-api/data-protection/data-center/vmware-vsphere/clusters.sh"
     ```
 
 ## Retrieving vCenter Servers
@@ -46,9 +46,9 @@ To list virtual machines known by Rubrik, you can perform the following. There a
     ```
 === "PowerShell SDK"
     ```powershell
-    --8<-- "snippets/powershell-sdk/vsphereVcenters.ps1"
+    --8<-- "snippets/powershell-sdk/rubrik-security-cloud-api/data-protection/data-center/vmware-vsphere/vcenters.ps1"
     ```
 === "Shell"
     ```bash
-    --8<-- "snippets/shell/vsphereVcenters.sh"
+    --8<-- "snippets/shell/rubrik-security-cloud-api/data-protection/data-center/vmware-vsphere/vcenters.sh"
     ```

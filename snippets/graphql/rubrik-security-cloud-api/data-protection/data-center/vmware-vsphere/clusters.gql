@@ -1,5 +1,7 @@
 query {
-  vSphereComputeClusters(filter: {field: NAME_EXACT_MATCH texts: "foo"}) {
+  vSphereComputeClusters(filter: {
+    field: NAME_EXACT_MATCH texts: "foo"
+    }) {
     nodes {
       name
       id
