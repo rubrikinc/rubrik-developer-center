@@ -74,7 +74,11 @@ markdown_extensions:
         - includes/glossary.md
   - attr_list
   - md_in_html
-  - pymdownx.superfences
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
   - pymdownx.tabbed:
       alternate_style: true
   - pymdownx.emoji:
@@ -84,7 +88,7 @@ plugins:
   - search
   - awesome-pages
   - git-revision-date-localized:
-      type: iso_date
+      type: iso_date  
 watch:
   - includes
   - snippets
