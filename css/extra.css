@@ -23,3 +23,7 @@
 .md-typeset pre > code {
     max-height: 20rem;
 }
+
+table, th, td {
+    background-color: transparent !important;
+}
