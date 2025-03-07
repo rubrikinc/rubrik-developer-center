@@ -69,6 +69,7 @@ markdown_extensions:
       pygments_lang_class: true
   - pymdownx.inlinehilite
   - pymdownx.snippets:
+      url_download: true
       base_path: .
       auto_append:
         - includes/glossary.md
