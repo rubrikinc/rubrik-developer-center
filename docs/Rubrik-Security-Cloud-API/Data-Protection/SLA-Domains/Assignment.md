@@ -8,6 +8,10 @@
     ```powershell
     --8<-- "snippets/powershell-sdk/rubrik-security-cloud-api/data-protection/sladomains/assign.ps1"
     ```
+=== "Shell"
+    ```bash
+    --8<-- "snippets/shell/rubrik-security-cloud-api/data-protection/sladomains/assign.ps1"
+    ```
 
 ## Assigning an SLA to a snapshot
 
