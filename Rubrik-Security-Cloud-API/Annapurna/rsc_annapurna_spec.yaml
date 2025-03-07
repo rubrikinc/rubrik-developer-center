@@ -1,0 +1,57 @@
+swagger: "2.0"
+info:
+  title: RSC API
+  description: RSC API
+  version: 1.0.3
+host: https://example.my.rubrik.com
+
+basePath: /
+consumes:
+  - application/json
+produces:
+  - application/json
+schemes:
+  - https
+paths:
+  /api/annapurna/{id}/retrieve:
+    post:
+      summary: Retrieve relevant chunks with Annapurna retriever.
+      operationId: annapurna_retrieve
+      parameters:
+        - name: id
+          in: path
+          required: true
+          description: ID of the retriever
+          type: string
+        - in: body
+          name: retrieve_request
+          required: true
+          schema:
+            $ref: '#/definitions/retrieveRequest'
+      produces:
+        - application/json
+      responses:
+        200:
+          description: Result of retrieval.
+          schema:
+            $ref: '#/definitions/retrieveResponse'
+definitions:
+  retrieveRequest:
+    type: object
+    properties:
+      query:
+        type: string
+  chunk:
+    type: object
+    properties:
+      content:
+        type: string
+      sourceUrl:
+        type: string
+  retrieveResponse:
+    type: object
+    properties:
+      results:
+        type: array
+        items:
+          $ref: '#/definitions/chunk'
