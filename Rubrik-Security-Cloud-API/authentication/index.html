@@ -90,7 +90,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#service-accounts" class="md-skip">
+        <a href="#service-accounts-oauth2-client-credentials-grant" class="md-skip">
           Skip to content
         </a>
       
@@ -544,15 +544,16 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#service-accounts" class="md-nav__link">
+  <a href="#service-accounts-oauth2-client-credentials-grant" class="md-nav__link">
     <span class="md-ellipsis">
-      Service Accounts
+      Service Accounts (OAuth2 Client Credentials Grant)
     </span>
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
+    <nav class="md-nav" aria-label="Service Accounts (OAuth2 Client Credentials Grant)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#security" class="md-nav__link">
     <span class="md-ellipsis">
       Security
@@ -560,8 +561,8 @@
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#guidelines" class="md-nav__link">
     <span class="md-ellipsis">
       Guidelines
@@ -569,8 +570,8 @@
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#usage" class="md-nav__link">
     <span class="md-ellipsis">
       Usage
@@ -613,6 +614,11 @@
       Deleting a session
     </span>
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
         
@@ -4074,15 +4080,16 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#service-accounts" class="md-nav__link">
+  <a href="#service-accounts-oauth2-client-credentials-grant" class="md-nav__link">
     <span class="md-ellipsis">
-      Service Accounts
+      Service Accounts (OAuth2 Client Credentials Grant)
     </span>
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
+    <nav class="md-nav" aria-label="Service Accounts (OAuth2 Client Credentials Grant)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#security" class="md-nav__link">
     <span class="md-ellipsis">
       Security
@@ -4090,8 +4097,8 @@
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#guidelines" class="md-nav__link">
     <span class="md-ellipsis">
       Guidelines
@@ -4099,8 +4106,8 @@
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#usage" class="md-nav__link">
     <span class="md-ellipsis">
       Usage
@@ -4150,6 +4157,11 @@
     </nav>
   
 </li>
+        
+      </ul>
+    </nav>
+  
+</li>
       
     </ul>
   
@@ -4169,11 +4181,11 @@
 
   <h1>Authentication</h1>
 
-<h2 id="service-accounts">Service Accounts</h2>
-<p>A service account represents an application that needs authentication and authorization to invoke Rubrik APIs, as opposed to a user account that represents an individual user. Service accounts are OAuth2 client credentials grants. A client ID and client secret are used to authenticate to an authorization server and obtain an access token to invoke the Rubrik APIs. Similar to user accounts, Rubrik allows assigning roles to the service accounts to enable role-based access control. But contrary to user accounts, service accounts cannot be used to access the Rubrik web UI.</p>
-<h2 id="security">Security</h2>
+<h2 id="service-accounts-oauth2-client-credentials-grant">Service Accounts (OAuth2 Client Credentials Grant)</h2>
+<p>A service account represents an application that needs authentication and authorization to invoke Rubrik APIs, as opposed to a user account that represents an individual user. A client ID and client secret are used to authenticate to an authorization server and obtain an access token to invoke the Rubrik APIs. Similar to user accounts, Rubrik allows assigning roles to the service accounts to enable role-based access control. But contrary to user accounts, service accounts cannot be used to access the Rubrik web UI.</p>
+<h3 id="security">Security</h3>
 <p>Service accounts enable client applications and other services to invoke the Rubrik APIs securely. When creating a service account, the authorization server assigns a unique client ID and client secret to the account. The combination of client ID and client secret is known as client credentials. The client credentials are known only to the client that is represented by the service account and the authorization server that grants the credentials to the service account. The client application authenticates to the authorization server using the client credentials and obtains an access token to authenticate to the Rubrik API server and access the protected resources.</p>
-<h2 id="guidelines">Guidelines</h2>
+<h3 id="guidelines">Guidelines</h3>
 <p>Consider the following best practices when using service accounts:</p>
 <ul>
 <li>One service account should represent only one client application.</li>
@@ -4182,32 +4194,44 @@
 <li>The client secret must be treated like a password and stored in a secure location.</li>
 <li>Service account access tokens should be cached and reused until they are valid.</li>
 </ul>
-<h2 id="usage">Usage</h2>
-<h3 id="adding-a-service-account">Adding a service account</h3>
-<p>Refer to the <abbr title="Rubrik Security Cloud: The modern data security SaaS management plane">RSC</abbr> userguide: <a href="https://docs.rubrik.com/en-us/saas/saas/adding_a_service_account.html">adding a service account</a></p>
-<h3 id="obtaining-an-access-token">Obtaining an access token</h3>
+<h3 id="usage">Usage</h3>
+<h4 id="adding-a-service-account">Adding a service account</h4>
+<p>Refer to the <abbr title="Rubrik Security Cloud: The modern data security SaaS management plane">RSC</abbr> user guide: <a href="https://docs.rubrik.com/en-us/saas/saas/adding_a_service_account.html">adding a service account</a></p>
+<h4 id="obtaining-an-access-token">Obtaining an access token</h4>
+<p>In this example, the service account client ID and secret are exported into environment variables and posted to the <abbr title="Rubrik Security Cloud: The modern data security SaaS management plane">RSC</abbr> client_token endpoint. The response contains the access token needed for authenticated API calls. The <code>jq</code> tool is used to parse the access token from the JSON response and stored in a variable for usage.</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="1:1"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Shell</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nb">export</span><span class="w"> </span><span class="nv">RSC_FQDN</span><span class="o">=</span><span class="s2">&quot;example.my.rubrik.com&quot;</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="nb">export</span><span class="w"> </span><span class="nv">RSC_CLIENT_ID</span><span class="o">=</span><span class="s2">&quot;client|c9bba9a9-1234-1234-b7c6-123440b4cf64&quot;</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="nb">export</span><span class="w"> </span><span class="nv">RSC_CLIENT_SECRET</span><span class="o">=</span><span class="s2">&quot;ExampleServiceAccountSecret&quot;</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="nv">RSC_TOKEN</span><span class="o">=</span><span class="k">$(</span>curl<span class="w"> </span>--silent<span class="w"> </span>--location<span class="w"> </span><span class="s2">&quot;https://</span><span class="nv">$RSC_FQDN</span><span class="s2">/api/client_token&quot;</span><span class="w"> </span><span class="se">\</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="w">  </span>--header<span class="w"> </span><span class="s2">&quot;Content-Type: application/x-www-form-urlencoded&quot;</span><span class="w"> </span><span class="se">\</span>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="w">  </span>--data<span class="w"> </span><span class="s2">&quot;client_id=</span><span class="nv">$RSC_CLIENT_ID</span><span class="s2">&amp;client_secret=</span><span class="nv">$RSC_CLIENT_SECRET</span><span class="s2">&amp;grant_type=client_credentials&quot;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>jq<span class="w"> </span>-r<span class="w"> </span><span class="s1">&#39;.access_token&#39;</span><span class="k">)</span>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="nb">export</span><span class="w"> </span>RSC_TOKEN
 </span></code></pre></div>
 </div>
 </div>
 </div>
-<p>The authorization server responds with an encoded access token. Client applications use the access token to invoke Rubrik APIs.</p>
+<p>An example response from the authorization server shows the access token and the number of seconds when the token will expire. This time is configurable up to 24 hours within the <abbr title="Rubrik Security Cloud: The modern data security SaaS management plane">RSC</abbr> session security settings. </p>
 <div class="language-json highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="p">{</span><span class="nt">&quot;client_id&quot;</span><span class="p">:</span><span class="s2">&quot;client|c9bba9a9-1234-1234-b7c6-123440b4cf64&quot;</span><span class="p">,</span><span class="nt">&quot;access_token&quot;</span><span class="p">:</span><span class="s2">&quot;eyJ...&quot;</span><span class="p">,</span><span class="nt">&quot;expires_in&quot;</span><span class="p">:</span><span class="mi">43200</span><span class="p">}</span>
 </span></code></pre></div>
-<h3 id="using-the-access-token">Using the access token</h3>
+<h4 id="using-the-access-token">Using the access token</h4>
 <p>The access token is used as a <code>Bearer</code> token in the <code>Authorization</code> header of all subsequent API calls.</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="2:1"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">Shell</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>curl<span class="w"> </span>--location<span class="w"> </span><span class="s2">&quot;https://</span><span class="nv">$RSC_FQDN</span><span class="s2">/api/graphql&quot;</span><span class="w"> </span><span class="se">\</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>--header<span class="w"> </span><span class="s2">&quot;Content-Type: application/json&quot;</span><span class="w"> </span><span class="se">\</span>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>--header<span class="w"> </span><span class="s2">&quot;Authorization: Bearer </span><span class="nv">$RSC_TOKEN</span><span class="s2">&quot;</span><span class="w"> </span><span class="se">\</span>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>--data<span class="w"> </span><span class="s1">&#39;{&quot;query&quot;:&quot;query slaDomains {nodes {name id}}}&quot;,&quot;variables&quot;:{}}&#39;</span>
 </span></code></pre></div>
 </div>
 </div>
 </div>
-<h3 id="deleting-a-session">Deleting a session</h3>
+<h4 id="deleting-a-session">Deleting a session</h4>
 <p>While there is no restriction on the number of active sessions a service account can have, Rubrik provides an API endpoint to delete an existing session.</p>
 <p>Run the following command to revoke the session established for the service account. Successful revocation will result in an HTTP status code of <code>204</code>.</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="3:1"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><div class="tabbed-labels"><label for="__tabbed_3_1">Shell</label></div>
@@ -4238,7 +4262,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="March 7, 2025 23:15:50">2025-03-07</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="March 12, 2025 17:35:28">2025-03-12</span>
   </span>
 
     
