@@ -37,7 +37,7 @@ An example response from the authorization server shows the access token and the
 The access token is used as a `Bearer` token in the `Authorization` header of all subsequent API calls.
 === "Shell"
     ```bash
-    --8<-- "snippets/shell/accessTokenUsage.sh"
+    --8<-- "snippets/shell/rubrik-security-cloud-api/authentication/authheader.sh"
     ```
 
 #### Deleting a session
