@@ -3,10 +3,11 @@ theme:
   name: material
   logo: assets/favicon.ico
   favicon: assets/favicon.ico
+  custom_dir: overrides
   palette:
     - scheme: default
       toggle:
-        icon: material/brightness-7 
+        icon: material/brightness-7
         name: Switch to dark mode
     - scheme: slate
       toggle:
@@ -33,19 +34,23 @@ theme:
     - navigation.indexes
 #    - navigation.sections
 extra_css:
-     - css/extra.css
-extra: 
+  - css/extra.css
+extra:
   consent:
     title: Cookie consent
-    description: >- 
+    description: >-
       We use cookies to recognize your repeated visits and preferences, as well
       as to measure the effectiveness of our documentation and whether users
       find what they're searching for. With your consent, you're helping us to
       make our documentation better.
   generator: false
   analytics:
-    provider: google
-    property: G-JTRX271SWK
+    provider: mixpanel
+    # Project token here is NOT a secret. It's used to identify the project in Mixpanel and is write only
+    project_token: 9949d865e3afe70668e198cc55b31299
+    # analytics:
+    #   provider: google
+    #   property: G-JTRX271SWK
     feedback:
       title: Did you find what you needed?
       ratings:
@@ -57,7 +62,7 @@ extra:
         - icon: material/emoticon-sad-outline
           name: No, I didn't.
           data: 0
-          note: >- 
+          note: >-
             Thanks for your feedback! Help us improve our content by
             using our <a href="https://docs.google.com/forms/d/e/1FAIpQLSe-U-S214aDsilkileoKhtJ100hLdN3RTk2-jrypFMwpmg_nQ/viewform?usp=pp_url&entry.478726986={title}+-+{url}" target="_blank" rel="noopener">feedback form</a>.
 markdown_extensions:
@@ -89,8 +94,9 @@ plugins:
   - search
   - awesome-pages
   - git-revision-date-localized:
-      type: iso_date  
+      type: iso_date
 watch:
   - includes
   - snippets
   - scripts
+  - overrides
