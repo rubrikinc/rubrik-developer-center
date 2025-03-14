@@ -23,7 +23,7 @@ Refer to the RSC user guide: [adding a service account](https://docs.rubrik.com/
 In this example, the service account client ID and secret are exported into environment variables and posted to the RSC client_token endpoint. The response contains the access token needed for authenticated API calls. The `jq` tool is used to parse the access token from the JSON response and stored in a variable for usage.
 === "Shell"
     ```bash
-    --8<-- "snippets/shell/rubrik-security-cloud-api/authentication/serviceaccount.sh"
+    --8<-- "code/Rubrik-Security-Cloud-API/serviceaccount.sh"
     ```
 
 An example response from the authorization server shows the access token and the number of seconds when the token will expire. This time is configurable up to 24 hours within the RSC session security settings. 

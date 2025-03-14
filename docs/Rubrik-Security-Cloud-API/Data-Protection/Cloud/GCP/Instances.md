@@ -6,13 +6,13 @@ Title: Google Compute Engine Instances
 
 === "GraphQL"
     ```graphql
-    --8<-- "snippets/graphql/rubrik-security-cloud-api/data-protection/cloud/gcp/instances.gql"
+    --8<-- "code/Rubrik-Security-Cloud-API/Data-Protection/Cloud/GCP/instances.gql"
     ```
 === "PowerShell SDK"
     ```powershell
-    --8<-- "snippets/powershell-sdk/.ps1"
+    --8<-- "code/Rubrik-Security-Cloud-API/Data-Protection/Cloud/GCP/instances.ps1"
     ```
 === "Shell"
     ```bash
-    --8<-- "snippets/shell/.sh"
+    --8<-- "code/Rubrik-Security-Cloud-API/Data-Protection/Cloud/GCP/instances.sh"
     ```

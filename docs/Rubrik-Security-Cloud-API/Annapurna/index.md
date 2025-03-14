@@ -1,4 +1,5 @@
 ---
+icon: material/test-tube
 Title: Rubrik Annapurna
 ---
 

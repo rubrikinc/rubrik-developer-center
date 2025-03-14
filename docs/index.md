@@ -3,7 +3,9 @@ icon: material/home-outline
 ---
 ## Welcome to the Rubrik Developer Guide!
 
-Rubrik's APIs provide an extremely flexible interface to automate and integrate with customer and partner systems. To get started, here are the APIs Rubrik currently offers.
+Rubrik's API-First Architecture increases operational efficiency and 
+
+---
 
 <div class="grid cards" markdown>
 -   :material-cloud-outline:{ .lg .middle } __Rubrik Security Cloud API__

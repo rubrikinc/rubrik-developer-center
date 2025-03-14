@@ -5,13 +5,13 @@ Title: AWS EC2
 
 === "GraphQL"
     ```graphql
-    --8<-- "snippets/graphql/rubrik-security-cloud-api/data-protection/cloud/aws/ec2/instances.gql"
+    --8<-- "code/Rubrik-Security-Cloud-API/Data-Protection/Cloud/AWS/ec2Instances.gql"
     ```
 === "PowerShell SDK"
     ```powershell
-    --8<-- "snippets/powershell-sdk/.ps1"
+    --8<-- "code/Rubrik-Security-Cloud-API/Data-Protection/Cloud/AWS/ec2Instances.ps1"
     ```
 === "Shell"
     ```bash
-    --8<-- "snippets/shell/.sh"
+    --8<-- "code/Rubrik-Security-Cloud-API/Data-Protection/Cloud/AWS/ec2Instances.sh"
     ```

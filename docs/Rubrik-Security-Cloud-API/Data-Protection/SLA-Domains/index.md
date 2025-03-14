@@ -16,30 +16,30 @@ Rubrik SLA Domains are data protection policies that define:
 ## Retrieve All SLAs 
 === "GraphQL"
     ```graphql
-    --8<-- "snippets/graphql/rubrik-security-cloud-api/data-protection/sladomains/slaDomains.gql"
+    --8<-- "code/Rubrik-Security-Cloud-API/Data-Protection/SLA-Domains/slaDomains.gql"
     ```
 === "PowerShell SDK"
     ```powershell
-    --8<-- "snippets/powershell-sdk/rubrik-security-cloud-api/data-protection/sladomains/slaDomains.ps1"
+    --8<-- "code/Rubrik-Security-Cloud-API/Data-Protection/SLA-Domains/slaDomains.ps1"
     ```
 === "Shell"
     ```bash
-    --8<-- "snippets/shell/rubrik-security-cloud-api/data-protection/sladomains/slaDomains.sh"
+    --8<-- "code/Rubrik-Security-Cloud-API/Data-Protection/SLA-Domains/slaDomains.sh"
     ```
 
 ## Retrieve an SLA by Name
 Generally, the name of the SLA may be known, but not the ID. The `slaDomains` query allows filtering on several fields, including `NAME`.
 === "GraphQL"
     ```graphql
-    --8<-- "snippets/graphql/rubrik-security-cloud-api/data-protection/sladomains/slaDomainsByName.gql"
+    --8<-- "code/Rubrik-Security-Cloud-API/Data-Protection/SLA-Domains/slaDomainsByName.gql"
     ```
 === "PowerShell SDK"
     ```powershell
-    --8<-- "snippets/powershell-sdk/rubrik-security-cloud-api/data-protection/sladomains/slaDomainsByName.ps1"
+    --8<-- "code/Rubrik-Security-Cloud-API/Data-Protection/SLA-Domains/slaDomainsByName.ps1"
     ```
 === "Shell"
     ```bash
-    --8<-- "snippets/shell/rubrik-security-cloud-api/data-protection/sladomains/slaDomainsByName.sh"
+    --8<-- "code/Rubrik-Security-Cloud-API/Data-Protection/SLA-Domains/slaDomainsByName.sh"
     ```
 
 !!!Note
@@ -50,13 +50,13 @@ Generally, the name of the SLA may be known, but not the ID. The `slaDomains` qu
 
 === "GraphQL"
     ```graphql
-    --8<-- "snippets/graphql/rubrik-security-cloud-api/data-protection/sladomains/slaDomain.gql"
+    --8<-- "code/Rubrik-Security-Cloud-API/Data-Protection/SLA-Domains/slaDomain.gql"
     ```
 === "PowerShell SDK"
     ```powershell
-    --8<-- "snippets/powershell-sdk/rubrik-security-cloud-api/data-protection/sladomains/slaDomain.ps1"
+    --8<-- "code/Rubrik-Security-Cloud-API/Data-Protection/SLA-Domains/slaDomain.ps1"
     ```
 === "Shell"
     ```bash
-    --8<-- "snippets/shell/rubrik-security-cloud-api/data-protection/sladomains/slaDomain.sh"
+    --8<-- "code/Rubrik-Security-Cloud-API/Data-Protection/SLA-Domains/slaDomain.sh"
     ```

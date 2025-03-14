@@ -5,13 +5,13 @@ Title: AWS RDS
 
 === "GraphQL"
     ```graphql
-    --8<-- "snippets/graphql/rubrik-security-cloud-api/data-protection/cloud/aws/rds/instances.gql"
+    --8<-- "code/Rubrik-Security-Cloud-API/Data-Protection/Cloud/AWS/rdsInstances.gql"
     ```
 === "PowerShell SDK"
     ```powershell
-    --8<-- "snippets/powershell-sdk/.ps1"
+    --8<-- "code/Rubrik-Security-Cloud-API/Data-Protection/Cloud/AWS/rdsInstances.ps1"
     ```
 === "Shell"
     ```bash
-    --8<-- "snippets/shell/.sh"
+    --8<-- "code/Rubrik-Security-Cloud-API/Data-Protection/Cloud/AWS/rdsInstances.sh"
     ```
