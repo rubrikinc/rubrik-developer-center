@@ -6,28 +6,28 @@ Title: Azure SQL Managed Instances
 
 === "GraphQL"
     ```graphql
-    --8<-- "snippets/graphql/rubrik-security-cloud-api/data-protection/cloud/azure/managed-instance-databases.gql"
+    --8<-- "code/Rubrik-Security-Cloud-API/Data-Protection/Cloud/Azure/managed-instance-databases.gql"
     ```
 === "PowerShell SDK"
     ```powershell
-    --8<-- "snippets/powershell-sdk/.ps1"
+    --8<-- "code/Rubrik-Security-Cloud-API/Data-Protection/Cloud/Azure/managed-instance-databases.ps1"
     ```
 === "Shell"
     ```bash
-    --8<-- "snippets/shell/.sh"
+    --8<-- "code/Rubrik-Security-Cloud-API/Data-Protection/Cloud/Azure/managed-instance-databases.sh"
     ```
 
 ## Retrieving Managed Instance SQL Servers
 
 === "GraphQL"
     ```graphql
-    --8<-- "snippets/graphql/rubrik-security-cloud-api/data-protection/cloud/azure/managed-instance-sqlservers.gql"
+    --8<-- "code/Rubrik-Security-Cloud-API/Data-Protection/Cloud/Azure/managed-instance-sqlservers.gql"
     ```
 === "PowerShell SDK"
     ```powershell
-    --8<-- "snippets/powershell-sdk/.ps1"
+    --8<-- "code/Rubrik-Security-Cloud-API/Data-Protection/Cloud/Azure/managed-instance-sqlservers.ps1"
     ```
 === "Shell"
     ```bash
-    --8<-- "snippets/shell/.sh"
+    --8<-- "code/Rubrik-Security-Cloud-API/Data-Protection/Cloud/Azure/managed-instance-sqlservers.sh"
     ```

@@ -6,13 +6,13 @@ Azure Virtual Machines
 
 === "GraphQL"
     ```graphql
-    --8<-- "snippets/graphql/rubrik-security-cloud-api/data-protection/cloud/azure/virtualmachines.gql"
+    --8<-- "code/Rubrik-Security-Cloud-API/Data-Protection/Cloud/Azure/virtualmachines.gql"
     ```
 === "PowerShell SDK"
     ```powershell
-    --8<-- "snippets/powershell-sdk/rubrik-security-cloud-api/data-protection/cloud/azure/virtualmachines.ps1"
+    --8<-- "code/Rubrik-Security-Cloud-API/Data-Protection/Cloud/Azure/virtualmachines.ps1"
     ```
 === "Shell"
     ```bash
-    --8<-- "snippets/shell/rubrik-security-cloud-api/data-protection/cloud/azure/virtualmachines.sh"
+    --8<-- "code/Rubrik-Security-Cloud-API/Data-Protection/Cloud/Azure/virtualmachines.sh"
     ```

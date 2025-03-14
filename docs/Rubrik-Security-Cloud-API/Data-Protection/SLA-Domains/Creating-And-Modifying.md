@@ -3,15 +3,15 @@ SLA domains can range from simple to very complex policy definitions.
 
 === "GraphQL"
     ```graphql
-    --8<-- "snippets/graphql/rubrik-security-cloud-api/data-protection/sladomains/create.gql"
+    --8<-- "code/Rubrik-Security-Cloud-API/Data-Protection/SLA-Domains/create.gql"
     ```
 === "PowerShell SDK"
     ```powershell
-    --8<-- "snippets/powershell-sdk/rubrik-security-cloud-api/data-protection/sladomains/create.ps1"
+    --8<-- "code/Rubrik-Security-Cloud-API/Data-Protection/SLA-Domains/create.ps1"
     ```
 === "Shell"
     ```bash
-    --8<-- "snippets/shell/rubrik-security-cloud-api/data-protection/sladomains/create.sh"
+    --8<-- "code/Rubrik-Security-Cloud-API/Data-Protection/SLA-Domains/create.sh"
     ```
 
 ## Modifying an SLA Domain
@@ -19,13 +19,13 @@ Modification of an SLA requires the entire SLA object to be passed in to the mut
 
 === "GraphQL"
     ```graphql
-    --8<-- "snippets/graphql/rubrik-security-cloud-api/data-protection/sladomains/update.gql"
+    --8<-- "code/Rubrik-Security-Cloud-API/Data-Protection/SLA-Domains/update.gql"
     ```
 === "PowerShell SDK"
     ```powershell
-    --8<-- "snippets/powershell-sdk/rubrik-security-cloud-api/data-protection/sladomains/update.ps1"
+    --8<-- "code/Rubrik-Security-Cloud-API/Data-Protection/SLA-Domains/update.ps1"
     ```
 === "Shell"
     ```bash
-    --8<-- "snippets/shell/rubrik-security-cloud-api/data-protection/sladomains/update.sh"
+    --8<-- "code/Rubrik-Security-Cloud-API/Data-Protection/SLA-Domains/update.sh"
     ```

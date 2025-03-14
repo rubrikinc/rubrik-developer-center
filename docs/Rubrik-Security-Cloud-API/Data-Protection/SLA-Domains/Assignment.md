@@ -2,28 +2,28 @@
 
 === "GraphQL"
     ```graphql
-    --8<-- "snippets/graphql/rubrik-security-cloud-api/data-protection/sladomains/assign.gql"
+    --8<-- "code/Rubrik-Security-Cloud-API/Data-Protection/SLA-Domains/assign.gql"
     ```
 === "PowerShell SDK"
     ```powershell
-    --8<-- "snippets/powershell-sdk/rubrik-security-cloud-api/data-protection/sladomains/assign.ps1"
+    --8<-- "code/Rubrik-Security-Cloud-API/Data-Protection/SLA-Domains/assign.ps1"
     ```
 === "Shell"
     ```bash
-    --8<-- "snippets/shell/rubrik-security-cloud-api/data-protection/sladomains/assign.ps1"
+    --8<-- "code/Rubrik-Security-Cloud-API/Data-Protection/SLA-Domains/assign.sh"
     ```
 
 ## Assigning an SLA to a snapshot
 
 === "GraphQL"
     ```graphql
-    --8<-- "snippets/graphql/rubrik-security-cloud-api/data-protection/sladomains/assignToSnapshot.gql"
+    --8<-- "code/Rubrik-Security-Cloud-API/Data-Protection/SLA-Domains/assignToSnapshot.gql"
     ```
 === "PowerShell SDK"
     ```powershell
-    --8<-- "snippets/powershell-sdk/rubrik-security-cloud-api/data-protection/sladomains/assignToSnapshot.ps1"
+    --8<-- "code/Rubrik-Security-Cloud-API/Data-Protection/SLA-Domains/assignToSnapshot.ps1"
     ```
 === "Shell"
     ```bash
-    --8<-- "snippets/shell/rubrik-security-cloud-api/data-protection/sladomains/assignToSnapshot.sh"
+    --8<-- "code/Rubrik-Security-Cloud-API/Data-Protection/SLA-Domains/assignToSnapshot.sh"
     ```
