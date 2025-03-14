@@ -37,7 +37,7 @@ An example response from the authorization server shows the access token and the
 The access token is used as a `Bearer` token in the `Authorization` header of all subsequent API calls.
 === "Shell"
     ```bash
-    --8<-- "snippets/shell/rubrik-security-cloud-api/authentication/authheader.sh"
+    --8<-- "code/Rubrik-Security-Cloud-API/authheader.sh"
     ```
 
 #### Deleting a session
@@ -47,5 +47,5 @@ Run the following command to revoke the session established for the service acco
 
 === "Shell"
     ```bash
-    --8<-- "snippets/shell/deleteSession.sh"
+    --8<-- "code/Rubrik-Security-Cloud-API/deleteSession.sh"
     ```
