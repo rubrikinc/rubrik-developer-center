@@ -48,23 +48,6 @@ extra:
     provider: mixpanel
     # Project token here is NOT a secret. It's used to identify the project in Mixpanel and is write only
     project_token: 9949d865e3afe70668e198cc55b31299
-    # analytics:
-    #   provider: google
-    #   property: G-JTRX271SWK
-    feedback:
-      title: Did you find what you needed?
-      ratings:
-        - icon: material/emoticon-happy-outline
-          name: Yes I did!
-          data: 1
-          note: >-
-            Thanks for your feedback!
-        - icon: material/emoticon-sad-outline
-          name: No, I didn't.
-          data: 0
-          note: >-
-            Thanks for your feedback! Help us improve our content by
-            using our <a href="https://docs.google.com/forms/d/e/1FAIpQLSe-U-S214aDsilkileoKhtJ100hLdN3RTk2-jrypFMwpmg_nQ/viewform?usp=pp_url&entry.478726986={title}+-+{url}" target="_blank" rel="noopener">feedback form</a>.
 markdown_extensions:
   - abbr
   - admonition
