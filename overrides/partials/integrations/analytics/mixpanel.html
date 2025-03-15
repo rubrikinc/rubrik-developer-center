@@ -4,12 +4,35 @@
 </script>
 
 <script>
-    const projectToken = "{{ config.extra.analytics.project_token }}";
+// Retrieve the cookie consent string
+  const consentStr = localStorage.getItem('/.__consent');
 
+  // Set a default value to allow tracking if no consent is found
+  let shouldFireTracking = false;
+
+  if (consentStr) {
+    try {
+      // Parse the JSON string from localStorage
+      const consentData = JSON.parse(consentStr);
+      
+      // If analytics is explicitly set to true, enable tracking
+      if (consentData.analytics === true) {
+        shouldFireTracking = true;
+      }
+    } catch (error) {
+      console.error("Error parsing consent settings:", error);
+    }
+  }
+
+  // Decide whether or not to execute the tracking script
+  if ((shouldFireTracking) && (window.location.hostname.toLowerCase() === "developer.rubrik.com")) {
     mixpanel.init(projectToken, {
         track_pageview: true,
-        persistance: 'localStorage',
+        persistance: "localStorage",
         debug: false, // Set to true to see tracking logs in the browser console
         ignore_dnt: false, // Set to true to ignore Do Not Track requests from the user's browser
-    })
+    });
+  } else {
+    console.log("Analytics tracking is disabled.");
+  }
 </script>
