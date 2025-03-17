@@ -6,7 +6,8 @@
 <script>
   const projectToken = "{{ config.extra.analytics.project_token }}";
   var consent = __md_get("__consent");
-  // Decide whether or not to execute the tracking script
+
+   // Check for consent and production before triggering web metrics
   if ((consent && consent.analytics) && (window.location.hostname.toLowerCase() === "developer.rubrik.com")) {
     mixpanel.init(projectToken, {
         track_pageview: true,
@@ -15,6 +16,6 @@
         ignore_dnt: false, // Set to true to ignore Do Not Track requests from the user's browser
     });
   } else {
-    console.log("Analytics tracking is disabled.");
+    console.log("Mixpanel metrics disabled.");
   }
 </script>
