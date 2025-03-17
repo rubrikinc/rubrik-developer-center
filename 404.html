@@ -62,14 +62,20 @@
 </script>
 
 <script>
-    const projectToken = "9949d865e3afe70668e198cc55b31299";
+  const projectToken = "9949d865e3afe70668e198cc55b31299";
+  var consent = __md_get("__consent");
 
+   // Check for consent and production before triggering web metrics
+  if ((consent && consent.analytics) && (window.location.hostname.toLowerCase() === "developer.rubrik.com")) {
     mixpanel.init(projectToken, {
         track_pageview: true,
-        persistance: 'localStorage',
+        persistance: "localStorage",
         debug: false, // Set to true to see tracking logs in the browser console
         ignore_dnt: false, // Set to true to ignore Do Not Track requests from the user's browser
-    })
+    });
+  } else {
+    console.log("Mixpanel metrics disabled.");
+  }
 </script>
   
     <script>if("undefined"!=typeof __md_analytics){var consent=__md_get("__consent");consent&&consent.analytics&&__md_analytics()}</script>
@@ -3998,8 +4004,6 @@
             
 
   
-    
-  
 
 
 
@@ -4022,7 +4026,7 @@
         <label class="task-list-control">
           <input type="checkbox" name="analytics" checked>
           <span class="task-list-indicator"></span>
-          Google Analytics
+          Site usage statistics (Mixpanel)
         </label>
       </li>
     
