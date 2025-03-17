@@ -1,4 +1,4 @@
-query slaDomain {
+query {
   slaDomain(id: "0CC22D1B-B761-4EF3-BC5B-82706D97FB05") {
     id
     name
