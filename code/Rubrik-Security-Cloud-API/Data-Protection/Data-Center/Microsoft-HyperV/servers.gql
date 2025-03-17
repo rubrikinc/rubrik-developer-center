@@ -1,4 +1,4 @@
-query hypervServers {
+query {
   hypervServersPaginated(filter: [
     {field: NAME_EXACT_MATCH texts: "example"}
     {field: IS_RELIC texts: "false"}

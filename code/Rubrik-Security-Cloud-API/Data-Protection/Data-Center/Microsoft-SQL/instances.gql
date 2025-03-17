@@ -1,4 +1,4 @@
-query mssqlInstances {
+query {
   mssqlTopLevelDescendants(filter: [
     {field: NAME_EXACT_MATCH, texts: "example"}
     {field: IS_RELIC, texts: "false"}

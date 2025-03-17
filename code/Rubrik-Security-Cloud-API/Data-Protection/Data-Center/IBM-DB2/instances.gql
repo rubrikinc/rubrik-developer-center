@@ -1,4 +1,4 @@
-query db2Instances {
+query {
   objects: db2Instances(
     filter: [
       {field: NAME texts: "example"}

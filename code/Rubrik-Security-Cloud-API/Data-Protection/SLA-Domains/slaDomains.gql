@@ -1,4 +1,4 @@
-query slaDomains {
+query {
   slaDomains {
     nodes {
       id

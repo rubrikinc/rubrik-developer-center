@@ -1,4 +1,4 @@
-query getMssqlJobStatus {
+query {
   mssqlJobStatus(input: {
   	id: "fb5342f3-daf6-475d-8aa7-14f23932c683"
     clusterUuid: "8417a938-96f5-43c6-9905-b36e051c5f98"

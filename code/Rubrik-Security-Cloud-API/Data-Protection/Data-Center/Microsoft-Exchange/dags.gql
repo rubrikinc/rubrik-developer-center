@@ -1,4 +1,4 @@
-query microsoftExchangeDags {
+query {
   exchangeDags(filter: [
     {field: NAME_EXACT_MATCH texts: "example"}
     {field: IS_RELIC texts: "false"}

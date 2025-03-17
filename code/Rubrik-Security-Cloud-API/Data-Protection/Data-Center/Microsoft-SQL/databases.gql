@@ -1,4 +1,4 @@
-query mssqlDatabases {
+query {
   mssqlDatabases(
     filter: [
       {field: NAME_EXACT_MATCH, texts: "example"}
