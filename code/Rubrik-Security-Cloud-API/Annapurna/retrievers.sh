@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # RSC_TOKEN="YOUR_RSC_ACCESS_TOKEN"
-query="query { chatbots(nameSearchFilter: \\\"exampleRetriever\\\") { nodes { name id } } }"
+query="query { chatbots { nodes { name id } } }"
 
 # Execute the GraphQL query with curl
 curl -X POST \

@@ -5,13 +5,13 @@ title: Annapurna Retrievers
 ## Listing Retrievers
 === "GraphQL"
     ```graphql
-    --8<-- "snippets/graphql/rubrik-security-cloud-api/annapurna/retrievers.gql"
+    --8<-- "code/Rubrik-Security-Cloud-API/Annapurna/retrievers.gql"
     ```
 === "Python"
     ```python
-    --8<-- "snippets/python/rubrik-security-cloud-api/annapurna/retrievers.py"
+    --8<-- "code/Rubrik-Security-Cloud-API/Annapurna/retrievers.py"
     ```
 === "Shell"
     ```bash
-    --8<-- "snippets/shell/rubrik-security-cloud-api/annapurna/retrievers.sh"
+    --8<-- "code/Rubrik-Security-Cloud-API/Annapurna/retrievers.sh"
     ```
