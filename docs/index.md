@@ -3,7 +3,7 @@ icon: material/home-outline
 ---
 ## Welcome to the Rubrik Developer Guide!
 
-Rubrik's API-First Architecture increases operational efficiency and 
+Rubrik's API-First Architecture increases operational efficiency and maximizes the investment and experience of the data security platform.
 
 ---
 

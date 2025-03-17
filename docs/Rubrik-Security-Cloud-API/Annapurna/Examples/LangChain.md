@@ -2,8 +2,6 @@
 Title: LangChain Example
 ---
 
-Ask a question, get an answer.
-
 In this end-to-end example, [LangChain](https://langchain.com) is used to query a Rubrik Annapurna retriever and pass the relevant documents to Azure OpenAI to provide a relevant response.
 
 ## Setup Instructions
@@ -34,7 +32,7 @@ export RSC_TOKEN="your-rubrik-api-token"
 Save the below code in a file called `rubrik_retriever.py`. This is the Rubrik LangChain `BaseRetriever` which will fetch documents from the retriever through the Rubrik API.
 === "Python"
     ```python title="rubrik_retriever.py"
-    --8<-- "scripts/python/annapurna/rubrik_retriever.py"
+    --8<-- "code/Rubrik-Security-Cloud-API/Annapurna/rubrik_retriever.py"
     ```
 
 ---
@@ -43,7 +41,7 @@ Save the below code in a file called `rubrik_retriever.py`. This is the Rubrik L
 Save the below code in a file called `annapurna_query.py`. This performs the chain to query the Rubrik retriever, pass the results to Azure OpenAI, and print the response.
 === "Python"
     ```python title="annapurna_query.py"
-    --8<-- "scripts/python/annapurna/langchain_llm_query.py"
+    --8<-- "code/Rubrik-Security-Cloud-API/Annapurna/langchain_llm_query.py"
     ```
 
 ---
