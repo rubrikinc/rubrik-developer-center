@@ -5,7 +5,7 @@ title: Rubrik Security Cloud API
 
 ## Getting Started
 
-The Rubrik Security Cloud(RSC) API is GraphQL.
+The Rubrik Security Cloud (RSC) API is GraphQL.
 
 ### GraphQL Features
 1. Single Endpoint - The RSC API endpoint will always be /api/graphql.
