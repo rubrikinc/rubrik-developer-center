@@ -50,6 +50,8 @@ extra:
     provider: mixpanel
     # Project token here is NOT a secret. It's used to identify the project in Mixpanel and is write only
     project_token: 9949d865e3afe70668e198cc55b31299
+  static_templates:
+    - 404.html
 markdown_extensions:
   - abbr
   - admonition
