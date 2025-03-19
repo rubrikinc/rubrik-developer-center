@@ -1,34 +1,37 @@
 query {
-  azureNativeVirtualMachines( virtualMachineFilters: {
-      #nameSubstringFilter: {nameSubstring: "example"}
-      #tagFilter: {tagFilterParams: {tagKey: "foo", tagValue: "bar", filterType: TAG_KEY_VALUE}}
-      #resourceGroupFilter: {resourceGroupNames: ["example"]}
-      #subscriptionFilter: {subscriptionIds: ["7d0d81dc-3323-4f45-bd0b-cc37e5bf9f37"]}
-      #regionFilter: {regions: [EAST_US, EAST_US2]}
-      #relicFilter: {relic: false}
+  awsNativeEc2Instances(ec2InstanceFilters: {
+    #nameOrIdSubstringFilter: {nameOrIdSubstring: "example"}
+    #regionFilter: {regions: [US_EAST_1]}
+    #tagFilter: {tagFilterParams: {tagKey: "foo" tagValue: "bar" filterType: TAG_KEY_VALUE}}
+    #vpcFilter: {vpcIds: ["093e5470-22b4-483c-8910-fff0cbb982b1"]}
   }) {
     nodes {
       name
       id
-      sizeType # https://docs.microsoft.com/en-us/azure/virtual-machines/sizes-general
-      nativeName
-      cloudNativeId
+      instanceName
+      instanceNativeId
+      instanceType
+      publicIp
+      privateIp
+      vpcName
+      vpcId
       region
       availabilityZone
-      vnetName
-      subnetName
-      privateIp
-      isAcceleratedNetworkingEnabled
-      availabilitySetNativeId
+      osType
       attachmentSpecs {
-        managedDiskId
-        isOsDisk
-        lun
+        awsNativeEbsVolumeId
+        devicePath
+        isRootVolume
         isExcludedFromSnapshot
       }
       tags {
         key
         value
+      }
+      awsAccountRubrikId
+      awsAccount {
+        name
+        id
       }
       effectiveSlaDomain {
         name
