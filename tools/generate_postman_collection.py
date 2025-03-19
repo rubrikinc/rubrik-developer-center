@@ -2,7 +2,7 @@ import os
 import json
 
 # Root directory containing the GraphQL queries
-ROOT_DIR = "../snippets/graphql"
+ROOT_DIR = "../code"
 
 # Postman Environment Variables for Flexibility
 POSTMAN_VARIABLES = {
@@ -116,7 +116,7 @@ def convert_folder_structure(folder_dict):
 postman_collection["item"].extend(convert_folder_structure(folder_map))
 
 # Save the Postman Collection JSON
-output_file = "postman_collection.json"
+output_file = "../docs/integrations/rubrik-postman.json"
 with open(output_file, "w") as f:
     json.dump(postman_collection, f, indent=2)
 

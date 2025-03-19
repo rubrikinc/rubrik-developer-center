@@ -1,0 +1,2732 @@
+{
+  "info": {
+    "name": "Rubrik",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "auth": {
+    "type": "oauth2",
+    "oauth2": [
+      {
+        "key": "grant_type",
+        "value": "client_credentials",
+        "type": "string"
+      },
+      {
+        "key": "accessTokenUrl",
+        "value": "https://{{rsc_instance}}/api/client_token",
+        "type": "string"
+      },
+      {
+        "key": "clientId",
+        "value": "{{client_id}}",
+        "type": "string"
+      },
+      {
+        "key": "clientSecret",
+        "value": "{{client_secret}}",
+        "type": "string"
+      },
+      {
+        "key": "tokenName",
+        "value": "access_token",
+        "type": "string"
+      },
+      {
+        "key": "addTokenTo",
+        "value": "header",
+        "type": "string"
+      },
+      {
+        "key": "client_authentication",
+        "value": "body",
+        "type": "string"
+      }
+    ]
+  },
+  "variable": [
+    {
+      "key": "rsc_instance",
+      "value": "example.my.rubrik.com",
+      "type": "string"
+    },
+    {
+      "key": "client_id",
+      "value": "YOUR_CLIENT_ID",
+      "type": "string"
+    },
+    {
+      "key": "client_secret",
+      "value": "YOUR_CLIENT_SECRET",
+      "type": "string"
+    }
+  ],
+  "item": [
+    {
+      "name": "Rubrik-Security-Cloud-API",
+      "item": [
+        {
+          "name": "Events-and-Observability",
+          "item": [
+            {
+              "name": "activityseries",
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  }
+                ],
+                "body": {
+                  "mode": "graphql",
+                  "graphql": {
+                    "query": "query {\n  activitySeriesConnection(filters: {\n    #lastUpdatedTimeGt: \"2025-02-22T00:00:00Z\"\n    #orgIds: [\"288970b2-16a0-4c65-a5fa-b0c86f5af337\"]\n    #lastActivityType: [BACKUP]\n    #objectType: [VMWARE_VM,LINUX_FILESET]\n    #severity: [SEVERITY_CRITICAL,SEVERITY_WARNING,SEVERITY_INFO]\n    #lastActivityStatus: [SUCCESS,PARTIAL_SUCCESS,FAILURE,CANCELED]\n  }) {\n    nodes {\n      fid\n      id\n      objectName\n      objectType\n      lastActivityType\n      lastActivityMessage\n      severity\n      lastUpdated\n      objectId\n      location\n      progress\n      failureReason\n      causeErrorCode\n      causeErrorMessage\n      causeErrorReason\n      causeErrorRemedy\n      activityConnection(first: 1) { # Gets the last activity in the activitySeries\n        nodes {\n          objectId\n          objectType\n          type\n          status\n          message\n          errorInfo\n          time\n        }\n      }\n    }\n    pageInfo {\n      hasNextPage\n      endCursor\n    }\n  }\n}"
+                  }
+                },
+                "url": {
+                  "raw": "{{rsc_instance}}/api/graphql",
+                  "protocol": "https",
+                  "host": [
+                    "{{rsc_instance}}"
+                  ],
+                  "path": [
+                    "api",
+                    "graphql"
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "name": "Annapurna",
+          "item": [
+            {
+              "name": "retrievers",
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  }
+                ],
+                "body": {
+                  "mode": "graphql",
+                  "graphql": {
+                    "query": "query {\n    chatbots {\n        nodes {\n            name\n            id\n        }\n    }\n}"
+                  }
+                },
+                "url": {
+                  "raw": "{{rsc_instance}}/api/graphql",
+                  "protocol": "https",
+                  "host": [
+                    "{{rsc_instance}}"
+                  ],
+                  "path": [
+                    "api",
+                    "graphql"
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "name": "Data-Protection",
+          "item": [
+            {
+              "name": "SLA-Domains",
+              "item": [
+                {
+                  "name": "slaDomains",
+                  "request": {
+                    "method": "POST",
+                    "header": [
+                      {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                      }
+                    ],
+                    "body": {
+                      "mode": "graphql",
+                      "graphql": {
+                        "query": "query {\n  slaDomains {\n    nodes {\n      id\n      name\n      ... on GlobalSlaReply {\n        isDefault\n        description\n        snapshotSchedule {\n          minute {\n            basicSchedule {\n              frequency\n              retention\n              retentionUnit\n            }\n          }\n          hourly {\n            basicSchedule {\n              frequency\n              retention\n              retentionUnit\n            }\n          }\n          daily {\n            basicSchedule {\n              frequency\n              retention\n              retentionUnit\n            }\n          }\n          weekly {\n            basicSchedule {\n              frequency\n              retention\n              retentionUnit\n            }\n            dayOfWeek\n          }\n          monthly {\n            basicSchedule {\n              frequency\n              retention\n              retentionUnit\n            }\n            dayOfMonth\n          }\n          quarterly {\n            basicSchedule {\n              frequency\n              retention\n              retentionUnit\n            }\n            dayOfQuarter\n            quarterStartMonth\n          }\n          yearly {\n            basicSchedule {\n              frequency\n              retention\n              retentionUnit\n            }\n            dayOfYear\n            yearStartMonth\n          }\n        }\n        archivalSpecs {\n          threshold\n          thresholdUnit\n          storageSetting {\n            id\n            name\n            groupType\n          }\n          archivalTieringSpec {\n            coldStorageClass\n            minAccessibleDurationInSeconds\n            isInstantTieringEnabled\n          }\n        }\n        backupWindows {\n          durationInHours\n          startTimeAttributes {\n            hour\n            minute\n          }\n        }\n        firstFullBackupWindows {\n          durationInHours\n          startTimeAttributes {\n            dayOfWeek {\n              day\n            }\n            hour\n            minute\n          }\n        }\n        replicationSpecsV2 {\n          replicationLocalRetentionDuration {\n            duration\n            unit\n          }\n          cascadingArchivalSpecs {\n            archivalTieringSpec {\n              coldStorageClass\n              shouldTierExistingSnapshots\n              minAccessibleDurationInSeconds\n              isInstantTieringEnabled\n            }\n            archivalLocation {\n              id\n              name\n              targetType\n              ... on RubrikManagedAwsTarget {\n                immutabilitySettings {\n                  lockDurationDays\n                }\n              }\n              ... on RubrikManagedAzureTarget {\n                immutabilitySettings {\n                  lockDurationDays\n                }\n              }\n              ... on RubrikManagedNfsTarget {\n                host\n              }\n              ... on CdmManagedAwsTarget {\n                immutabilitySettings {\n                  lockDurationDays\n                }\n              }\n              ... on CdmManagedAzureTarget {\n                immutabilitySettings {\n                  lockDurationDays\n                }\n              }\n            }\n            frequency\n            archivalThreshold {\n              duration\n              unit\n            }\n          }\n          retentionDuration {\n            duration\n            unit\n          }\n          cluster {\n            id\n            name\n          }\n          targetMapping {\n            id\n            name\n          }\n          awsTarget {\n            accountId\n            accountName\n            region\n          }\n          azureTarget {\n            region\n          }\n        }\n        localRetentionLimit {\n          duration\n          unit\n        }\n        objectSpecificConfigs {\n          sapHanaConfig {\n            incrementalFrequency {\n              duration\n              unit\n            }\n            differentialFrequency {\n              duration\n              unit\n            }\n            logRetention {\n              duration\n              unit\n            }\n          }\n          awsRdsConfig {\n            logRetention {\n              duration\n            }\n          }\n          vmwareVmConfig {\n            logRetentionSeconds\n          }\n        }\n        clusterToSyncStatusMap {\n          clusterUuid\n          slaSyncStatus\n        }\n        objectTypes\n        upgradeInfo {\n          eligibility {\n            isEligible\n            ineligibilityReason\n          }\n          latestUpgrade {\n            status\n            msg\n          }\n        }\n        allOrgsHavingAccess {\n          id\n          name\n        }\n        ownerOrg {\n          id\n          name\n        }\n        isRetentionLockedSla\n      }\n      ... on ClusterSlaDomain {\n        cdmId\n        name\n        cluster {\n          name\n          version\n        }\n        snapshotSchedule {\n          minute {\n            basicSchedule {\n              frequency\n              retention\n              retentionUnit\n            }\n          }\n          hourly {\n            basicSchedule {\n              frequency\n              retention\n              retentionUnit\n            }\n          }\n          daily {\n            basicSchedule {\n              frequency\n              retention\n              retentionUnit\n            }\n          }\n          weekly {\n            basicSchedule {\n              frequency\n              retention\n              retentionUnit\n            }\n            dayOfWeek\n          }\n          monthly {\n            basicSchedule {\n              frequency\n              retention\n              retentionUnit\n            }\n            dayOfMonth\n          }\n          quarterly {\n            basicSchedule {\n              frequency\n              retention\n              retentionUnit\n            }\n            dayOfQuarter\n            quarterStartMonth\n          }\n          yearly {\n            basicSchedule {\n              frequency\n              retention\n              retentionUnit\n            }\n            dayOfYear\n            yearStartMonth\n          }\n        }\n        backupWindows {\n          durationInHours\n          startTimeAttributes {\n            hour\n            minute\n          }\n        }\n        firstFullBackupWindows {\n          durationInHours\n          startTimeAttributes {\n            dayOfWeek {\n              day\n            }\n            hour\n            minute\n          }\n        }\n        archivalSpec {\n          threshold\n          thresholdUnit\n          archivalLocationName\n          archivalLocationId\n          archivalTieringSpec {\n            coldStorageClass\n            minAccessibleDurationInSeconds\n            isInstantTieringEnabled\n          }\n        }\n        replicationSpecsV2 {\n          retentionDuration {\n            duration\n            unit\n          }\n          cluster {\n            id\n            name\n          }\n          targetMapping {\n            id\n            name\n          }\n          awsTarget {\n            accountId\n            accountName\n            region\n          }\n          azureTarget {\n            region\n          }\n        }\n        localRetentionLimit {\n          duration\n          unit\n        }\n        upgradeInfo {\n          eligibility {\n            isEligible\n            ineligibilityReason\n          }\n          latestUpgrade {\n            status\n            msg\n          }\n        }\n        ownerOrg {\n          id\n          name\n        }\n        isRetentionLockedSla\n      }\n    }\n    pageInfo {\n      endCursor\n      hasNextPage\n    }\n  }\n}"
+                      }
+                    },
+                    "url": {
+                      "raw": "{{rsc_instance}}/api/graphql",
+                      "protocol": "https",
+                      "host": [
+                        "{{rsc_instance}}"
+                      ],
+                      "path": [
+                        "api",
+                        "graphql"
+                      ]
+                    }
+                  }
+                },
+                {
+                  "name": "update",
+                  "request": {
+                    "method": "POST",
+                    "header": [
+                      {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                      }
+                    ],
+                    "body": {
+                      "mode": "graphql",
+                      "graphql": {
+                        "query": "mutation createSla {\n  updateGlobalSla(input: {\n    id: \"2794261b-0e3b-4eab-8a32-f1ce4579e8c7\"\n    name: \"foo\"\n    objectTypes: [VSPHERE_OBJECT_TYPE MSSQL_OBJECT_TYPE]\n    description: \"This is my foo SLA Domain\"\n    snapshotSchedule: {\n      daily: {\n        basicSchedule: {\n          frequency: 1\n          retention: 7\n          retentionUnit: DAYS\n        }\n      }\n    }\n  }) {\n    name\n    id\n  }\n}"
+                      }
+                    },
+                    "url": {
+                      "raw": "{{rsc_instance}}/api/graphql",
+                      "protocol": "https",
+                      "host": [
+                        "{{rsc_instance}}"
+                      ],
+                      "path": [
+                        "api",
+                        "graphql"
+                      ]
+                    }
+                  }
+                },
+                {
+                  "name": "create",
+                  "request": {
+                    "method": "POST",
+                    "header": [
+                      {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                      }
+                    ],
+                    "body": {
+                      "mode": "graphql",
+                      "graphql": {
+                        "query": "mutation createSla {\n  createGlobalSla(input: {\n    name: \"foo\"\n    objectTypes: [VSPHERE_OBJECT_TYPE MSSQL_OBJECT_TYPE]\n    snapshotSchedule: {\n      daily: {\n        basicSchedule: {\n          frequency: 1\n          retention: 7\n          retentionUnit: DAYS\n        }\n      }\n    }\n  }) {\n    name\n    id\n  }\n}"
+                      }
+                    },
+                    "url": {
+                      "raw": "{{rsc_instance}}/api/graphql",
+                      "protocol": "https",
+                      "host": [
+                        "{{rsc_instance}}"
+                      ],
+                      "path": [
+                        "api",
+                        "graphql"
+                      ]
+                    }
+                  }
+                },
+                {
+                  "name": "slaDomain",
+                  "request": {
+                    "method": "POST",
+                    "header": [
+                      {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                      }
+                    ],
+                    "body": {
+                      "mode": "graphql",
+                      "graphql": {
+                        "query": "query {\n  slaDomain(id: \"0CC22D1B-B761-4EF3-BC5B-82706D97FB05\") {\n    id\n    name\n    ... on GlobalSlaReply {\n      isDefault\n      description\n      snapshotSchedule {\n        minute {\n          basicSchedule {\n            frequency\n            retention\n            retentionUnit\n          }\n        }\n        hourly {\n          basicSchedule {\n            frequency\n            retention\n            retentionUnit\n          }\n        }\n        daily {\n          basicSchedule {\n            frequency\n            retention\n            retentionUnit\n          }\n        }\n        weekly {\n          basicSchedule {\n            frequency\n            retention\n            retentionUnit\n          }\n          dayOfWeek\n        }\n        monthly {\n          basicSchedule {\n            frequency\n            retention\n            retentionUnit\n          }\n          dayOfMonth\n        }\n        quarterly {\n          basicSchedule {\n            frequency\n            retention\n            retentionUnit\n          }\n          dayOfQuarter\n          quarterStartMonth\n        }\n        yearly {\n          basicSchedule {\n            frequency\n            retention\n            retentionUnit\n          }\n          dayOfYear\n          yearStartMonth\n        }\n      }\n      archivalSpecs {\n        threshold\n        thresholdUnit\n        archivalLocationToClusterMapping {\n          cluster {\n            id\n            name\n          }\n          location {\n            id\n            name\n            targetType\n          }\n        }\n        storageSetting {\n          id\n          name\n          groupType\n        }\n        archivalTieringSpec {\n          coldStorageClass\n          minAccessibleDurationInSeconds\n          isInstantTieringEnabled\n        }\n        frequencies\n      }\n      archivalLocationsUpgradeInfo {\n        locationId\n        upgradeStatus\n        upgradeUnsupportedReason\n      }\n      backupWindows {\n        durationInHours\n        startTimeAttributes {\n          hour\n          minute\n        }\n      }\n      firstFullBackupWindows {\n        durationInHours\n        startTimeAttributes {\n          dayOfWeek {\n            day\n          }\n          hour\n          minute\n        }\n      }\n      replicationSpecsV2 {\n        replicationPairs {\n          sourceCluster {\n            id\n            name\n          }\n          targetCluster {\n            id\n            name\n            version\n            clusterInfo {\n              ... on LocalClusterInfo {\n                isIsolated: isAirGapped\n                isConnected\n              }\n              ... on CrossAccountClusterInfo {\n                originAccount\n                isConnected\n              }\n            }\n          }\n        }\n        replicationLocalRetentionDuration {\n          duration\n          unit\n        }\n        cascadingArchivalSpecs {\n          archivalTieringSpec {\n            coldStorageClass\n            shouldTierExistingSnapshots\n            minAccessibleDurationInSeconds\n            isInstantTieringEnabled\n          }\n          archivalLocationToClusterMapping {\n            cluster {\n              id\n              name\n              version\n              clusterInfo {\n                ... on LocalClusterInfo {\n                  isIsolated: isAirGapped\n                  isConnected\n                }\n                ... on CrossAccountClusterInfo {\n                  originAccount\n                  isConnected\n                }\n              }\n            }\n            location {\n              id\n              name\n              targetType\n              ... on RubrikManagedAwsTarget {\n                storageClass\n                immutabilitySettings {\n                  lockDurationDays\n                }\n              }\n              ... on RubrikManagedAzureTarget {\n                immutabilitySettings {\n                  lockDurationDays\n                }\n              }\n              ... on CdmManagedAwsTarget {\n                storageClass\n                immutabilitySettings {\n                  lockDurationDays\n                }\n              }\n              ... on CdmManagedAzureTarget {\n                immutabilitySettings {\n                  lockDurationDays\n                }\n              }\n              ... on RubrikManagedRcsTarget {\n                immutabilityPeriodDays\n                syncStatus\n                tier\n              }\n              ... on RubrikManagedS3CompatibleTarget {\n                immutabilitySetting {\n                  bucketLockDurationDays\n                }\n              }\n            }\n          }\n          archivalLocation {\n            id\n            name\n            targetType\n            ... on RubrikManagedAwsTarget {\n              storageClass\n              immutabilitySettings {\n                lockDurationDays\n              }\n            }\n            ... on RubrikManagedAzureTarget {\n              immutabilitySettings {\n                lockDurationDays\n              }\n            }\n            ... on CdmManagedAwsTarget {\n              storageClass\n              immutabilitySettings {\n                lockDurationDays\n              }\n            }\n            ... on CdmManagedAzureTarget {\n              immutabilitySettings {\n                lockDurationDays\n              }\n            }\n            ... on RubrikManagedRcsTarget {\n              immutabilityPeriodDays\n              syncStatus\n              tier\n            }\n            ... on RubrikManagedS3CompatibleTarget {\n              immutabilitySetting {\n                bucketLockDurationDays\n              }\n            }\n          }\n          frequency\n          archivalThreshold {\n            duration\n            unit\n          }\n        }\n        retentionDuration {\n          duration\n          unit\n        }\n        cluster {\n          id\n          name\n          version\n          clusterInfo {\n            ... on LocalClusterInfo {\n              isIsolated: isAirGapped\n              isConnected\n            }\n            ... on CrossAccountClusterInfo {\n              originAccount\n              isConnected\n            }\n          }\n        }\n        targetMapping {\n          id\n          name\n          targets {\n            id\n            name\n            cluster {\n              id\n              name\n            }\n          }\n        }\n        awsTarget {\n          accountId\n          accountName\n          region\n        }\n        azureTarget {\n          region\n        }\n      }\n      localRetentionLimit {\n        duration\n        unit\n      }\n      objectSpecificConfigs {\n        awsRdsConfig {\n          logRetention {\n            duration\n            unit\n          }\n        }\n        sapHanaConfig {\n          incrementalFrequency {\n            duration\n            unit\n          }\n          differentialFrequency {\n            duration\n            unit\n          }\n          logRetention {\n            duration\n            unit\n          }\n        }\n        db2Config {\n          incrementalFrequency {\n            duration\n            unit\n          }\n          differentialFrequency {\n            duration\n            unit\n          }\n          logRetention {\n            duration\n            unit\n          }\n        }\n        mongoConfig {\n          logFrequency {\n            duration\n            unit\n          }\n          logRetention {\n            duration\n            unit\n          }\n        }\n        mssqlConfig {\n          frequency {\n            duration\n            unit\n          }\n          logRetention {\n            duration\n            unit\n          }\n        }\n        oracleConfig {\n          frequency {\n            duration\n            unit\n          }\n          logRetention {\n            duration\n            unit\n          }\n          hostLogRetention {\n            duration\n            unit\n          }\n        }\n        vmwareVmConfig {\n          logRetentionSeconds\n        }\n        azureSqlDatabaseDbConfig {\n          logRetentionInDays\n        }\n        azureSqlManagedInstanceDbConfig {\n          logRetentionInDays\n        }\n      }\n      clusterToSyncStatusMap {\n        clusterUuid\n        slaSyncStatus\n      }\n      objectTypes\n      upgradeInfo {\n        eligibility {\n          isEligible\n          ineligibilityReason\n        }\n        latestUpgrade {\n          status\n          msg\n        }\n      }\n      allOrgsHavingAccess {\n        id\n        name\n      }\n      isRetentionLockedSla\n      retentionLockMode\n    }\n  }\n}"
+                      }
+                    },
+                    "url": {
+                      "raw": "{{rsc_instance}}/api/graphql",
+                      "protocol": "https",
+                      "host": [
+                        "{{rsc_instance}}"
+                      ],
+                      "path": [
+                        "api",
+                        "graphql"
+                      ]
+                    }
+                  }
+                },
+                {
+                  "name": "slaDomainsByName",
+                  "request": {
+                    "method": "POST",
+                    "header": [
+                      {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                      }
+                    ],
+                    "body": {
+                      "mode": "graphql",
+                      "graphql": {
+                        "query": "query {\n  slaDomains(filter: {field: NAME text: \"foo\"}) {\n    nodes {\n      id\n      name\n      ... on GlobalSlaReply {\n        isDefault\n        description\n        snapshotSchedule {\n          minute {\n            basicSchedule {\n              frequency\n              retention\n              retentionUnit\n            }\n          }\n          hourly {\n            basicSchedule {\n              frequency\n              retention\n              retentionUnit\n            }\n          }\n          daily {\n            basicSchedule {\n              frequency\n              retention\n              retentionUnit\n            }\n          }\n          weekly {\n            basicSchedule {\n              frequency\n              retention\n              retentionUnit\n            }\n            dayOfWeek\n          }\n          monthly {\n            basicSchedule {\n              frequency\n              retention\n              retentionUnit\n            }\n            dayOfMonth\n          }\n          quarterly {\n            basicSchedule {\n              frequency\n              retention\n              retentionUnit\n            }\n            dayOfQuarter\n            quarterStartMonth\n          }\n          yearly {\n            basicSchedule {\n              frequency\n              retention\n              retentionUnit\n            }\n            dayOfYear\n            yearStartMonth\n          }\n        }\n        archivalSpecs {\n          threshold\n          thresholdUnit\n          storageSetting {\n            id\n            name\n            groupType\n          }\n          archivalTieringSpec {\n            coldStorageClass\n            minAccessibleDurationInSeconds\n            isInstantTieringEnabled\n          }\n        }\n        backupWindows {\n          durationInHours\n          startTimeAttributes {\n            hour\n            minute\n          }\n        }\n        firstFullBackupWindows {\n          durationInHours\n          startTimeAttributes {\n            dayOfWeek {\n              day\n            }\n            hour\n            minute\n          }\n        }\n        replicationSpecsV2 {\n          replicationLocalRetentionDuration {\n            duration\n            unit\n          }\n          cascadingArchivalSpecs {\n            archivalTieringSpec {\n              coldStorageClass\n              shouldTierExistingSnapshots\n              minAccessibleDurationInSeconds\n              isInstantTieringEnabled\n            }\n            archivalLocation {\n              id\n              name\n              targetType\n              ... on RubrikManagedAwsTarget {\n                immutabilitySettings {\n                  lockDurationDays\n                }\n              }\n              ... on RubrikManagedAzureTarget {\n                immutabilitySettings {\n                  lockDurationDays\n                }\n              }\n              ... on RubrikManagedNfsTarget {\n                host\n              }\n              ... on CdmManagedAwsTarget {\n                immutabilitySettings {\n                  lockDurationDays\n                }\n              }\n              ... on CdmManagedAzureTarget {\n                immutabilitySettings {\n                  lockDurationDays\n                }\n              }\n            }\n            frequency\n            archivalThreshold {\n              duration\n              unit\n            }\n          }\n          retentionDuration {\n            duration\n            unit\n          }\n          cluster {\n            id\n            name\n          }\n          targetMapping {\n            id\n            name\n          }\n          awsTarget {\n            accountId\n            accountName\n            region\n          }\n          azureTarget {\n            region\n          }\n        }\n        localRetentionLimit {\n          duration\n          unit\n        }\n        objectSpecificConfigs {\n          sapHanaConfig {\n            incrementalFrequency {\n              duration\n              unit\n            }\n            differentialFrequency {\n              duration\n              unit\n            }\n            logRetention {\n              duration\n              unit\n            }\n          }\n          awsRdsConfig {\n            logRetention {\n              duration\n            }\n          }\n          vmwareVmConfig {\n            logRetentionSeconds\n          }\n        }\n        clusterToSyncStatusMap {\n          clusterUuid\n          slaSyncStatus\n        }\n        objectTypes\n        upgradeInfo {\n          eligibility {\n            isEligible\n            ineligibilityReason\n          }\n          latestUpgrade {\n            status\n            msg\n          }\n        }\n        allOrgsHavingAccess {\n          id\n          name\n        }\n        ownerOrg {\n          id\n          name\n        }\n        isRetentionLockedSla\n      }\n      ... on ClusterSlaDomain {\n        cdmId\n        name\n        cluster {\n          name\n          version\n        }\n        snapshotSchedule {\n          minute {\n            basicSchedule {\n              frequency\n              retention\n              retentionUnit\n            }\n          }\n          hourly {\n            basicSchedule {\n              frequency\n              retention\n              retentionUnit\n            }\n          }\n          daily {\n            basicSchedule {\n              frequency\n              retention\n              retentionUnit\n            }\n          }\n          weekly {\n            basicSchedule {\n              frequency\n              retention\n              retentionUnit\n            }\n            dayOfWeek\n          }\n          monthly {\n            basicSchedule {\n              frequency\n              retention\n              retentionUnit\n            }\n            dayOfMonth\n          }\n          quarterly {\n            basicSchedule {\n              frequency\n              retention\n              retentionUnit\n            }\n            dayOfQuarter\n            quarterStartMonth\n          }\n          yearly {\n            basicSchedule {\n              frequency\n              retention\n              retentionUnit\n            }\n            dayOfYear\n            yearStartMonth\n          }\n        }\n        backupWindows {\n          durationInHours\n          startTimeAttributes {\n            hour\n            minute\n          }\n        }\n        firstFullBackupWindows {\n          durationInHours\n          startTimeAttributes {\n            dayOfWeek {\n              day\n            }\n            hour\n            minute\n          }\n        }\n        archivalSpec {\n          threshold\n          thresholdUnit\n          archivalLocationName\n          archivalLocationId\n          archivalTieringSpec {\n            coldStorageClass\n            minAccessibleDurationInSeconds\n            isInstantTieringEnabled\n          }\n        }\n        replicationSpecsV2 {\n          retentionDuration {\n            duration\n            unit\n          }\n          cluster {\n            id\n            name\n          }\n          targetMapping {\n            id\n            name\n          }\n          awsTarget {\n            accountId\n            accountName\n            region\n          }\n          azureTarget {\n            region\n          }\n        }\n        localRetentionLimit {\n          duration\n          unit\n        }\n        upgradeInfo {\n          eligibility {\n            isEligible\n            ineligibilityReason\n          }\n          latestUpgrade {\n            status\n            msg\n          }\n        }\n        ownerOrg {\n          id\n          name\n        }\n        isRetentionLockedSla\n      }\n    }\n    pageInfo {\n      endCursor\n      hasNextPage\n    }\n  }\n}"
+                      }
+                    },
+                    "url": {
+                      "raw": "{{rsc_instance}}/api/graphql",
+                      "protocol": "https",
+                      "host": [
+                        "{{rsc_instance}}"
+                      ],
+                      "path": [
+                        "api",
+                        "graphql"
+                      ]
+                    }
+                  }
+                },
+                {
+                  "name": "assign",
+                  "request": {
+                    "method": "POST",
+                    "header": [
+                      {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                      }
+                    ],
+                    "body": {
+                      "mode": "graphql",
+                      "graphql": {
+                        "query": "mutation assignSla {\n  assignSla(input: {\n    slaDomainAssignType: protectWithSlaId\n    slaOptionalId: \"CC4AFC96-A8DD-401F-A618-1C03742D21AA\"\n    objectIds: [\"DEF42837-C14D-45E2-8F11-F1BE9ED50F4E\"]\n    # shouldApplyToExistingSnapshots: true # optional. if you want existing snaps applied to new SLA assignment\n    # existingSnapshotRetention: RETAIN_SNAPSHOTS # optional. What do you want to do with the old snaps if you change to DONOTPROTECT?\n  }) {\n    success\n  }\n}\n"
+                      }
+                    },
+                    "url": {
+                      "raw": "{{rsc_instance}}/api/graphql",
+                      "protocol": "https",
+                      "host": [
+                        "{{rsc_instance}}"
+                      ],
+                      "path": [
+                        "api",
+                        "graphql"
+                      ]
+                    }
+                  }
+                },
+                {
+                  "name": "assignToSnapshot",
+                  "request": {
+                    "method": "POST",
+                    "header": [
+                      {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                      }
+                    ],
+                    "body": {
+                      "mode": "graphql",
+                      "graphql": {
+                        "query": "mutation AssignSlaToSnapshot {\n  assignRetentionSLAToSnapshots(\n    snapshotFids: [\"b77f85ae-62d1-435b-9abf-2a1d97c6802f\"]\n    globalSlaAssignType: protectWithSlaId\n  \tglobalSlaOptionalFid: \"5b6e44ca-9a0d-42e8-a6ba-952159c69bab\"\n  ) {\n    success\n  }\n}"
+                      }
+                    },
+                    "url": {
+                      "raw": "{{rsc_instance}}/api/graphql",
+                      "protocol": "https",
+                      "host": [
+                        "{{rsc_instance}}"
+                      ],
+                      "path": [
+                        "api",
+                        "graphql"
+                      ]
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "name": "Data-Center",
+              "item": [
+                {
+                  "name": "IBM-DB2",
+                  "item": [
+                    {
+                      "name": "snapshot",
+                      "request": {
+                        "method": "POST",
+                        "header": [
+                          {
+                            "key": "Content-Type",
+                            "value": "application/json"
+                          }
+                        ],
+                        "body": {
+                          "mode": "graphql",
+                          "graphql": {
+                            "query": "mutation db2OnDemandBackup {\n  createOnDemandDb2Backup(input: {\n    id: \"c7bd8eb2-7132-4c8f-8592-682d507520dc\"\n    config: {\n      slaId: \"f79b1102-77b5-4434-8400-c2a66c9b2dc1\"\n      }\n    }) {\n      id\n  }\n}\n"
+                          }
+                        },
+                        "url": {
+                          "raw": "{{rsc_instance}}/api/graphql",
+                          "protocol": "https",
+                          "host": [
+                            "{{rsc_instance}}"
+                          ],
+                          "path": [
+                            "api",
+                            "graphql"
+                          ]
+                        }
+                      }
+                    },
+                    {
+                      "name": "instances",
+                      "request": {
+                        "method": "POST",
+                        "header": [
+                          {
+                            "key": "Content-Type",
+                            "value": "application/json"
+                          }
+                        ],
+                        "body": {
+                          "mode": "graphql",
+                          "graphql": {
+                            "query": "query {\n  objects: db2Instances(\n    filter: [\n      {field: NAME texts: \"example\"}\n      {field: IS_RELIC texts: \"false\"}\n      {field: IS_REPLICATED texts: \"false\"}\n    ]\n    ) {\n    nodes {\n      name\n      id\n      effectiveSlaDomain {\n        name\n        id\n      }\n      cluster {\n        name\n        id\n      }\n      primaryClusterUuid\n      hosts {\n        name\n        id\n      }\n      status\n      statusMessage\n      instanceType\n    }\n  }\n}"
+                          }
+                        },
+                        "url": {
+                          "raw": "{{rsc_instance}}/api/graphql",
+                          "protocol": "https",
+                          "host": [
+                            "{{rsc_instance}}"
+                          ],
+                          "path": [
+                            "api",
+                            "graphql"
+                          ]
+                        }
+                      }
+                    },
+                    {
+                      "name": "databases",
+                      "request": {
+                        "method": "POST",
+                        "header": [
+                          {
+                            "key": "Content-Type",
+                            "value": "application/json"
+                          }
+                        ],
+                        "body": {
+                          "mode": "graphql",
+                          "graphql": {
+                            "query": "query {\n  db2Databases(filter: [\n    {field: NAME_EXACT_MATCH texts: \"example\"}\n    {field: IS_RELIC texts: \"false\"}\n    {field: IS_REPLICATED texts: \"false\"}\n  ]) {\n    nodes {\n      name\n      id\n      cdmId\n      effectiveSlaDomain {\n        name\n        id\n      }\n      cluster {\n        name\n        id\n      }\n      db2DbType\n      db2Instance {\n        name\n        id\n      }\n      status\n      statusMessage\n      backupSessions\n      backupParallelism\n    }\n  }\n}"
+                          }
+                        },
+                        "url": {
+                          "raw": "{{rsc_instance}}/api/graphql",
+                          "protocol": "https",
+                          "host": [
+                            "{{rsc_instance}}"
+                          ],
+                          "path": [
+                            "api",
+                            "graphql"
+                          ]
+                        }
+                      }
+                    },
+                    {
+                      "name": "jobstatus",
+                      "request": {
+                        "method": "POST",
+                        "header": [
+                          {
+                            "key": "Content-Type",
+                            "value": "application/json"
+                          }
+                        ],
+                        "body": {
+                          "mode": "graphql",
+                          "graphql": {
+                            "query": "query {\n  db2DatabaseJobStatus(input: {\n    id: \"9f706c3c-4678-44e5-99fe-50ebde6b308e\"\n    clusterUuid: \"85e98e61-4c1f-496a-b846-5eb871966025\"\n  }) {\n    progress\n    status\n    result\n    error {\n      message\n    }\n  }\n}"
+                          }
+                        },
+                        "url": {
+                          "raw": "{{rsc_instance}}/api/graphql",
+                          "protocol": "https",
+                          "host": [
+                            "{{rsc_instance}}"
+                          ],
+                          "path": [
+                            "api",
+                            "graphql"
+                          ]
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "name": "Microsoft-SQL",
+                  "item": [
+                    {
+                      "name": "snapshot",
+                      "request": {
+                        "method": "POST",
+                        "header": [
+                          {
+                            "key": "Content-Type",
+                            "value": "application/json"
+                          }
+                        ],
+                        "body": {
+                          "mode": "graphql",
+                          "graphql": {
+                            "query": "mutation mssqlDatabaseSnapshot {\n  createOnDemandMssqlBackup(\n    input: {\n      id: \"85e98e61-4c1f-496a-b846-5eb871966025\" \n      config: {\n        baseOnDemandSnapshotConfig: {\n          slaId: \"9f706c3c-4678-44e5-99fe-50ebde6b308e\"\n        }\n      }\n    }) {\n    id\n  }\n}\n"
+                          }
+                        },
+                        "url": {
+                          "raw": "{{rsc_instance}}/api/graphql",
+                          "protocol": "https",
+                          "host": [
+                            "{{rsc_instance}}"
+                          ],
+                          "path": [
+                            "api",
+                            "graphql"
+                          ]
+                        }
+                      }
+                    },
+                    {
+                      "name": "instances",
+                      "request": {
+                        "method": "POST",
+                        "header": [
+                          {
+                            "key": "Content-Type",
+                            "value": "application/json"
+                          }
+                        ],
+                        "body": {
+                          "mode": "graphql",
+                          "graphql": {
+                            "query": "query {\n  mssqlTopLevelDescendants(filter: [\n    {field: NAME_EXACT_MATCH, texts: \"example\"}\n    {field: IS_RELIC, texts: \"false\"}\n    {field: IS_ARCHIVED, texts: \"false\"}\n    {field: IS_REPLICATED, texts: \"false\"}\n    ]) {\n      nodes {\n        id\n        name\n        numWorkloadDescendants\n        ... on PhysicalHost {\n          id\n          name\n          cbtStatus\n          physicalChildConnection {\n            nodes {\n              ... on MssqlInstance {\n                id\n                name\n                slaAssignment\n                effectiveSlaDomain {\n                  name\n                  id\n                  version\n                }\n              }\n            }\n          }\n        }\n      }\n  }\n}\n"
+                          }
+                        },
+                        "url": {
+                          "raw": "{{rsc_instance}}/api/graphql",
+                          "protocol": "https",
+                          "host": [
+                            "{{rsc_instance}}"
+                          ],
+                          "path": [
+                            "api",
+                            "graphql"
+                          ]
+                        }
+                      }
+                    },
+                    {
+                      "name": "databases",
+                      "request": {
+                        "method": "POST",
+                        "header": [
+                          {
+                            "key": "Content-Type",
+                            "value": "application/json"
+                          }
+                        ],
+                        "body": {
+                          "mode": "graphql",
+                          "graphql": {
+                            "query": "query {\n  mssqlDatabases(\n    filter: [\n      {field: NAME_EXACT_MATCH, texts: \"example\"}\n      {field: IS_RELIC, texts: \"false\"}\n      #{field: LOCATION, texts: \"hostname\\instancename\"}\n      {field: IS_ARCHIVED, texts: \"false\"}\n      {field: IS_REPLICATED, texts: \"false\"}]\n  ) {\n    nodes {\n      name\n      id\n      logicalPath {\n        name\n        objectType\n      }\n      effectiveSlaDomain {\n        id\n        name\n      }\n    }\n  }\n}\n"
+                          }
+                        },
+                        "url": {
+                          "raw": "{{rsc_instance}}/api/graphql",
+                          "protocol": "https",
+                          "host": [
+                            "{{rsc_instance}}"
+                          ],
+                          "path": [
+                            "api",
+                            "graphql"
+                          ]
+                        }
+                      }
+                    },
+                    {
+                      "name": "jobstatus",
+                      "request": {
+                        "method": "POST",
+                        "header": [
+                          {
+                            "key": "Content-Type",
+                            "value": "application/json"
+                          }
+                        ],
+                        "body": {
+                          "mode": "graphql",
+                          "graphql": {
+                            "query": "query {\n  mssqlJobStatus(input: {\n  \tid: \"fb5342f3-daf6-475d-8aa7-14f23932c683\"\n    clusterUuid: \"8417a938-96f5-43c6-9905-b36e051c5f98\"\n  }) {\n    startTime\n    endTime\n    error {\n      message\n    }\n    progress\n    status\n  }\n}\n"
+                          }
+                        },
+                        "url": {
+                          "raw": "{{rsc_instance}}/api/graphql",
+                          "protocol": "https",
+                          "host": [
+                            "{{rsc_instance}}"
+                          ],
+                          "path": [
+                            "api",
+                            "graphql"
+                          ]
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "name": "Microsoft-Exchange",
+                  "item": [
+                    {
+                      "name": "servers",
+                      "request": {
+                        "method": "POST",
+                        "header": [
+                          {
+                            "key": "Content-Type",
+                            "value": "application/json"
+                          }
+                        ],
+                        "body": {
+                          "mode": "graphql",
+                          "graphql": {
+                            "query": "query {\n  exchangeServers(filter: [\n    {field: NAME_EXACT_MATCH texts: \"example\"}\n    {field: IS_RELIC texts: \"false\"}\n    {field: IS_REPLICATED texts: \"false\"}\n  ]) {\n    nodes {\n      name\n      id\n      cdmId\n      totalDbs\n      version\n      exchangeDag {\n        name\n        id\n      }\n      cluster {\n        name\n        id\n      }\n      effectiveSlaDomain {\n        name\n        id\n      }\n    }\n  }\n}"
+                          }
+                        },
+                        "url": {
+                          "raw": "{{rsc_instance}}/api/graphql",
+                          "protocol": "https",
+                          "host": [
+                            "{{rsc_instance}}"
+                          ],
+                          "path": [
+                            "api",
+                            "graphql"
+                          ]
+                        }
+                      }
+                    },
+                    {
+                      "name": "databases",
+                      "request": {
+                        "method": "POST",
+                        "header": [
+                          {
+                            "key": "Content-Type",
+                            "value": "application/json"
+                          }
+                        ],
+                        "body": {
+                          "mode": "graphql",
+                          "graphql": {
+                            "query": "query {\n  exchangeDatabases(filter: [\n    {field: NAME_EXACT_MATCH texts: \"example\"}\n    {field: IS_RELIC texts: \"false\"}\n    {field: IS_REPLICATED texts: \"false\"}\n  ]) {\n    nodes {\n      name\n      id\n      cdmId\n      totalCopies\n      activeCopies\n      exchangeServer {\n        name\n        id\n      }\n      cluster {\n        name\n        id\n      }\n      effectiveSlaDomain {\n        name\n        id\n      }\n    }\n  }\n}"
+                          }
+                        },
+                        "url": {
+                          "raw": "{{rsc_instance}}/api/graphql",
+                          "protocol": "https",
+                          "host": [
+                            "{{rsc_instance}}"
+                          ],
+                          "path": [
+                            "api",
+                            "graphql"
+                          ]
+                        }
+                      }
+                    },
+                    {
+                      "name": "dags",
+                      "request": {
+                        "method": "POST",
+                        "header": [
+                          {
+                            "key": "Content-Type",
+                            "value": "application/json"
+                          }
+                        ],
+                        "body": {
+                          "mode": "graphql",
+                          "graphql": {
+                            "query": "query {\n  exchangeDags(filter: [\n    {field: NAME_EXACT_MATCH texts: \"example\"}\n    {field: IS_RELIC texts: \"false\"}\n    {field: IS_REPLICATED texts: \"false\"}\n  ]) {\n    nodes {\n      name\n      id\n      cdmId\n      totalHosts\n      backupPreference\n      cluster {\n        name\n        id\n      }\n      effectiveSlaDomain {\n        name\n        id\n      }\n    }\n  }\n}"
+                          }
+                        },
+                        "url": {
+                          "raw": "{{rsc_instance}}/api/graphql",
+                          "protocol": "https",
+                          "host": [
+                            "{{rsc_instance}}"
+                          ],
+                          "path": [
+                            "api",
+                            "graphql"
+                          ]
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "name": "Nutanix-AHV",
+                  "item": [
+                    {
+                      "name": "prismCentrals",
+                      "request": {
+                        "method": "POST",
+                        "header": [
+                          {
+                            "key": "Content-Type",
+                            "value": "application/json"
+                          }
+                        ],
+                        "body": {
+                          "mode": "graphql",
+                          "graphql": {
+                            "query": "query {\n  nutanixPrismCentrals(filter: [\n    #{field: NAME_EXACT_MATCH texts: \"example\"}\n    {field: IS_RELIC texts: \"false\"}\n    {field: IS_REPLICATED texts: \"false\"}\n  ]) {\n    nodes {\n      name\n      id\n      cdmId\n      hostName\n      naturalId\n      nosVersion\n      nutanixClusters {\n        nodes {\n          name\n          id\n        }\n      }\n      isDrEnabled\n      connectionStatus {\n        message\n        status\n      }\n      effectiveSlaDomain {\n        name\n        id\n      }\n      cluster {\n        name\n        id\n      }\n    }\n  }\n}"
+                          }
+                        },
+                        "url": {
+                          "raw": "{{rsc_instance}}/api/graphql",
+                          "protocol": "https",
+                          "host": [
+                            "{{rsc_instance}}"
+                          ],
+                          "path": [
+                            "api",
+                            "graphql"
+                          ]
+                        }
+                      }
+                    },
+                    {
+                      "name": "snapshot",
+                      "request": {
+                        "method": "POST",
+                        "header": [
+                          {
+                            "key": "Content-Type",
+                            "value": "application/json"
+                          }
+                        ],
+                        "body": {
+                          "mode": "graphql",
+                          "graphql": {
+                            "query": "mutation {\n  createOnDemandNutanixBackup(input: {\n    id: \"40bac7c1-87ad-4ac0-b4a6-34ac592d8e77\"\n    config: {\n      slaId: \"7d40e858-b8ec-4096-8112-cab8eff1a4e2\"\n    }\n  }) {\n    id\n  }\n}"
+                          }
+                        },
+                        "url": {
+                          "raw": "{{rsc_instance}}/api/graphql",
+                          "protocol": "https",
+                          "host": [
+                            "{{rsc_instance}}"
+                          ],
+                          "path": [
+                            "api",
+                            "graphql"
+                          ]
+                        }
+                      }
+                    },
+                    {
+                      "name": "vmjobstatus",
+                      "request": {
+                        "method": "POST",
+                        "header": [
+                          {
+                            "key": "Content-Type",
+                            "value": "application/json"
+                          }
+                        ],
+                        "body": {
+                          "mode": "graphql",
+                          "graphql": {
+                            "query": "query {\n  nutanixVmAsyncRequestStatus(input: {\n    id: \"9f706c3c-4678-44e5-99fe-50ebde6b308e\"\n    clusterUuid: \"85e98e61-4c1f-496a-b846-5eb871966025\"\n  }) {\n    progress\n    status\n    result\n    error {\n      message\n    }\n  }\n}"
+                          }
+                        },
+                        "url": {
+                          "raw": "{{rsc_instance}}/api/graphql",
+                          "protocol": "https",
+                          "host": [
+                            "{{rsc_instance}}"
+                          ],
+                          "path": [
+                            "api",
+                            "graphql"
+                          ]
+                        }
+                      }
+                    },
+                    {
+                      "name": "clusters",
+                      "request": {
+                        "method": "POST",
+                        "header": [
+                          {
+                            "key": "Content-Type",
+                            "value": "application/json"
+                          }
+                        ],
+                        "body": {
+                          "mode": "graphql",
+                          "graphql": {
+                            "query": "query {\n  nutanixClusters(filter: [\n    #{field: NAME_EXACT_MATCH texts: \"example\"}\n    {field: IS_RELIC texts: \"false\"}\n    {field: IS_REPLICATED texts: \"false\"}\n  ]) {\n    nodes {\n      name\n      id\n      cdmId\n      hostName\n      naturalId\n      nosVersion\n      connectionStatus {\n        message\n        status\n      }\n      clusterNetworks {\n        name\n        uuid\n      }\n      storageContainers {\n        name\n        uuid\n        freeBytes\n        usedBytes\n        totalBytes\n      }\n      effectiveSlaDomain {\n        name\n        id\n      }\n      cluster {\n        name\n        id\n      }\n    }\n  }\n}"
+                          }
+                        },
+                        "url": {
+                          "raw": "{{rsc_instance}}/api/graphql",
+                          "protocol": "https",
+                          "host": [
+                            "{{rsc_instance}}"
+                          ],
+                          "path": [
+                            "api",
+                            "graphql"
+                          ]
+                        }
+                      }
+                    },
+                    {
+                      "name": "virtualmachines",
+                      "request": {
+                        "method": "POST",
+                        "header": [
+                          {
+                            "key": "Content-Type",
+                            "value": "application/json"
+                          }
+                        ],
+                        "body": {
+                          "mode": "graphql",
+                          "graphql": {
+                            "query": "query {\n  nutanixVms(filter: [\n    {field: NAME_EXACT_MATCH texts: \"example\"}\n    {field: IS_RELIC texts: \"false\"}\n    {field: IS_REPLICATED texts: \"false\"}\n  ]) {\n    nodes {\n      name\n      id\n      cdmId\n      vmUuid\n      osType\n      vmDisks {\n        label\n        uuid\n        vmDiskUuid\n        sizeInBytes\n        isSnapshottable\n        storageContainerName\n        storageContainerId\n      }\n      preBackupScript {\n        scriptPath\n      }\n      postSnapScript {\n        scriptPath\n      }\n      postBackupScript {\n        scriptPath\n      }\n      snapshotConsistencyMandate\n      agentStatus {\n        connectionStatus\n        disconnectReason\n      }\n      isAgentRegistered\n      hypervisorType\n      effectiveSlaDomain {\n        name\n        id\n      }\n      cluster {\n        name\n        id\n      }\n    }\n  }\n}"
+                          }
+                        },
+                        "url": {
+                          "raw": "{{rsc_instance}}/api/graphql",
+                          "protocol": "https",
+                          "host": [
+                            "{{rsc_instance}}"
+                          ],
+                          "path": [
+                            "api",
+                            "graphql"
+                          ]
+                        }
+                      }
+                    },
+                    {
+                      "name": "clusterjobstatus",
+                      "request": {
+                        "method": "POST",
+                        "header": [
+                          {
+                            "key": "Content-Type",
+                            "value": "application/json"
+                          }
+                        ],
+                        "body": {
+                          "mode": "graphql",
+                          "graphql": {
+                            "query": "query {\n  nutanixClusterAsyncRequestStatus(input: {\n    id: \"9f706c3c-4678-44e5-99fe-50ebde6b308e\"\n    clusterUuid: \"85e98e61-4c1f-496a-b846-5eb871966025\"\n  }) {\n    progress\n    status\n    result\n    error {\n      message\n    }\n  }\n}"
+                          }
+                        },
+                        "url": {
+                          "raw": "{{rsc_instance}}/api/graphql",
+                          "protocol": "https",
+                          "host": [
+                            "{{rsc_instance}}"
+                          ],
+                          "path": [
+                            "api",
+                            "graphql"
+                          ]
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "name": "Oracle",
+                  "item": [
+                    {
+                      "name": "logSnapshot",
+                      "request": {
+                        "method": "POST",
+                        "header": [
+                          {
+                            "key": "Content-Type",
+                            "value": "application/json"
+                          }
+                        ],
+                        "body": {
+                          "mode": "graphql",
+                          "graphql": {
+                            "query": "mutation {\n  takeOnDemandOracleLogSnapshot(input: {\n    id: \"40bac7c1-87ad-4ac0-b4a6-34ac592d8e77\"\n  }) {\n    id\n  }\n}"
+                          }
+                        },
+                        "url": {
+                          "raw": "{{rsc_instance}}/api/graphql",
+                          "protocol": "https",
+                          "host": [
+                            "{{rsc_instance}}"
+                          ],
+                          "path": [
+                            "api",
+                            "graphql"
+                          ]
+                        }
+                      }
+                    },
+                    {
+                      "name": "databaseSnapshot",
+                      "request": {
+                        "method": "POST",
+                        "header": [
+                          {
+                            "key": "Content-Type",
+                            "value": "application/json"
+                          }
+                        ],
+                        "body": {
+                          "mode": "graphql",
+                          "graphql": {
+                            "query": "mutation {\n  takeOnDemandOracleDatabaseSnapshot(input: {\n    id: \"40bac7c1-87ad-4ac0-b4a6-34ac592d8e77\"\n    config: {\n      forceFullSnapshot: false\n      baseOnDemandSnapshotConfig: {\n      \tslaId: \"7d40e858-b8ec-4096-8112-cab8eff1a4e2\"\n      }\n    }\n  }) {\n    id\n  }\n}"
+                          }
+                        },
+                        "url": {
+                          "raw": "{{rsc_instance}}/api/graphql",
+                          "protocol": "https",
+                          "host": [
+                            "{{rsc_instance}}"
+                          ],
+                          "path": [
+                            "api",
+                            "graphql"
+                          ]
+                        }
+                      }
+                    },
+                    {
+                      "name": "databases",
+                      "request": {
+                        "method": "POST",
+                        "header": [
+                          {
+                            "key": "Content-Type",
+                            "value": "application/json"
+                          }
+                        ],
+                        "body": {
+                          "mode": "graphql",
+                          "graphql": {
+                            "query": "query {\n  oracleDatabases(filter: [\n    {field: NAME_EXACT_MATCH texts: \"example\"}\n    {field: IS_RELIC texts: \"false\"}\n    {field: IS_REPLICATED texts: \"false\"}\n  ]) {\n    nodes {\n      name\n      id\n      cdmId\n      dbUniqueName\n      numTablespaces\n      numInstances\n      numChannels\n      logRetentionHours\n      hostLogRetentionHours\n      useSecureThrift\n      osType\n      osNames\n      tablespaces\n      numLogSnapshots\n      pdbs {\n        name\n        dbId\n        openMode\n        isApplicationPdb\n        isApplicationRoot\n        applicationRootContainerId\n      }\n      dbRole\n      dataGuardType\n      dataGuardGroup {\n        name\n        id\n      }\n      lastValidationResult {\n        isSuccess\n        snapshotId\n      }\n      instances {\n        instanceName\n        hostId\n      }\n      effectiveSlaDomain {\n        name\n        id\n      }\n      cluster {\n        name\n        id\n      }\n    }\n  }\n}"
+                          }
+                        },
+                        "url": {
+                          "raw": "{{rsc_instance}}/api/graphql",
+                          "protocol": "https",
+                          "host": [
+                            "{{rsc_instance}}"
+                          ],
+                          "path": [
+                            "api",
+                            "graphql"
+                          ]
+                        }
+                      }
+                    },
+                    {
+                      "name": "jobstatus",
+                      "request": {
+                        "method": "POST",
+                        "header": [
+                          {
+                            "key": "Content-Type",
+                            "value": "application/json"
+                          }
+                        ],
+                        "body": {
+                          "mode": "graphql",
+                          "graphql": {
+                            "query": "query {\n  oracleDatabaseAsyncRequestDetails(input: {\n    id: \"9f706c3c-4678-44e5-99fe-50ebde6b308e\"\n    clusterUuid: \"85e98e61-4c1f-496a-b846-5eb871966025\"\n  }) {\n    progress\n    status\n    result\n    error {\n      message\n    }\n  }\n}"
+                          }
+                        },
+                        "url": {
+                          "raw": "{{rsc_instance}}/api/graphql",
+                          "protocol": "https",
+                          "host": [
+                            "{{rsc_instance}}"
+                          ],
+                          "path": [
+                            "api",
+                            "graphql"
+                          ]
+                        }
+                      }
+                    },
+                    {
+                      "name": "hostsAndClusters",
+                      "request": {
+                        "method": "POST",
+                        "header": [
+                          {
+                            "key": "Content-Type",
+                            "value": "application/json"
+                          }
+                        ],
+                        "body": {
+                          "mode": "graphql",
+                          "graphql": {
+                            "query": "query {\n  oracleTopLevelDescendants(filter: [\n    {field: NAME_EXACT_MATCH texts: \"example\"}\n    {field: IS_RELIC texts: \"false\"}\n    {field: IS_REPLICATED texts: \"false\"}\n  ]) {\n    nodes {\n      name\n      id\n      objectType\n      ... on OracleHost {\n        descendantConnection {\n          nodes {\n            name\n            id\n            objectType\n          }\n        }\n      }\n      ... on OracleRac {\n        descendantConnection {\n          nodes {\n            name\n            id\n            objectType\n          }\n        }\n      }\n      effectiveSlaDomain {\n        name\n        id\n      }\n      cluster {\n        name\n        id\n      }\n    }\n  }\n}"
+                          }
+                        },
+                        "url": {
+                          "raw": "{{rsc_instance}}/api/graphql",
+                          "protocol": "https",
+                          "host": [
+                            "{{rsc_instance}}"
+                          ],
+                          "path": [
+                            "api",
+                            "graphql"
+                          ]
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "name": "MongoDB",
+                  "item": [
+                    {
+                      "name": "sources",
+                      "request": {
+                        "method": "POST",
+                        "header": [
+                          {
+                            "key": "Content-Type",
+                            "value": "application/json"
+                          }
+                        ],
+                        "body": {
+                          "mode": "graphql",
+                          "graphql": {
+                            "query": "query {\n  mongoSources(filter: [\n    {field: NAME_EXACT_MATCH texts: \"example\"}\n    {field: IS_RELIC texts: \"false\"}\n    {field: IS_REPLICATED texts: \"false\"}\n  ]) {\n    nodes {\n      name\n      id\n      cdmId\n      sourceType\n      status\n      discoveryStatus\n      hostDetails {\n        name\n        id\n        connectionStatus\n      }\n      managementType\n      activeCollectionCount\n      protectedCollectionCount\n      cluster {\n        name\n        id\n      }\n      effectiveSlaDomain {\n        name\n        id\n      }\n    }\n  }\n}"
+                          }
+                        },
+                        "url": {
+                          "raw": "{{rsc_instance}}/api/graphql",
+                          "protocol": "https",
+                          "host": [
+                            "{{rsc_instance}}"
+                          ],
+                          "path": [
+                            "api",
+                            "graphql"
+                          ]
+                        }
+                      }
+                    },
+                    {
+                      "name": "databases",
+                      "request": {
+                        "method": "POST",
+                        "header": [
+                          {
+                            "key": "Content-Type",
+                            "value": "application/json"
+                          }
+                        ],
+                        "body": {
+                          "mode": "graphql",
+                          "graphql": {
+                            "query": "query {\n  mongoDatabases(filter: [\n    {field: NAME_EXACT_MATCH texts: \"example\"}\n    {field: IS_RELIC texts: \"false\"}\n    {field: IS_REPLICATED texts: \"false\"}\n  ]) {\n    nodes {\n      name\n      id\n      cdmId\n      source {\n        name\n        id\n      }\n      activeCollectionCount\n      protectedCollectionCount\n      cluster {\n        name\n        id\n      }\n      effectiveSlaDomain {\n        name\n        id\n      }\n    }\n  }\n}"
+                          }
+                        },
+                        "url": {
+                          "raw": "{{rsc_instance}}/api/graphql",
+                          "protocol": "https",
+                          "host": [
+                            "{{rsc_instance}}"
+                          ],
+                          "path": [
+                            "api",
+                            "graphql"
+                          ]
+                        }
+                      }
+                    },
+                    {
+                      "name": "collections",
+                      "request": {
+                        "method": "POST",
+                        "header": [
+                          {
+                            "key": "Content-Type",
+                            "value": "application/json"
+                          }
+                        ],
+                        "body": {
+                          "mode": "graphql",
+                          "graphql": {
+                            "query": "query {\n  mongoCollections(filter: [\n    {field: NAME_EXACT_MATCH texts: \"example\"}\n    {field: IS_RELIC texts: \"false\"}\n    {field: IS_REPLICATED texts: \"false\"}\n  ]) {\n    nodes {\n      name\n      id\n      cdmId\n      source {\n        name\n        id\n      }\n      database {\n        name\n        id\n      }\n      cluster {\n        name\n        id\n      }\n      effectiveSlaDomain {\n        name\n        id\n      }\n    }\n  }\n}"
+                          }
+                        },
+                        "url": {
+                          "raw": "{{rsc_instance}}/api/graphql",
+                          "protocol": "https",
+                          "host": [
+                            "{{rsc_instance}}"
+                          ],
+                          "path": [
+                            "api",
+                            "graphql"
+                          ]
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "name": "Microsoft-AD",
+                  "item": [
+                    {
+                      "name": "domains",
+                      "request": {
+                        "method": "POST",
+                        "header": [
+                          {
+                            "key": "Content-Type",
+                            "value": "application/json"
+                          }
+                        ],
+                        "body": {
+                          "mode": "graphql",
+                          "graphql": {
+                            "query": "query {\n  activeDirectoryDomains(filter: [\n    {field: NAME_EXACT_MATCH texts: \"example\"}\n    {field: IS_RELIC texts: \"false\"}\n    {field: IS_REPLICATED texts: \"false\"}\n  ]) {\n    nodes {\n      name\n      id\n      domainName\n      domainSid\n      registeredDomainControllersCount\n      smbDomain {\n        name\n        domainId\n        accountName\n        status\n      }\n      effectiveSlaDomain {\n        name\n        id\n      }\n      cluster {\n        name\n        id\n      }\n    }\n  }\n}"
+                          }
+                        },
+                        "url": {
+                          "raw": "{{rsc_instance}}/api/graphql",
+                          "protocol": "https",
+                          "host": [
+                            "{{rsc_instance}}"
+                          ],
+                          "path": [
+                            "api",
+                            "graphql"
+                          ]
+                        }
+                      }
+                    },
+                    {
+                      "name": "domain-controllers",
+                      "request": {
+                        "method": "POST",
+                        "header": [
+                          {
+                            "key": "Content-Type",
+                            "value": "application/json"
+                          }
+                        ],
+                        "body": {
+                          "mode": "graphql",
+                          "graphql": {
+                            "query": "query {\n  activeDirectoryDomainControllers(filter: [\n    {field: NAME_EXACT_MATCH texts: \"example\"}\n    {field: IS_RELIC texts: \"false\"}\n    {field: IS_REPLICATED texts: \"false\"}\n  ]) {\n    nodes {\n      name\n      id\n      domainControllerGuid\n      adServiceStatus {\n        serviceStatus\n      }\n      hostname\n      fsmoRoles\n      serverRoles\n      isGlobalCatalog\n      host {\n        name\n        id\n      }\n      dcLocation\n      effectiveSlaDomain {\n        name\n        id\n      }\n      cluster {\n        name\n        id\n      }\n    }\n  }\n}"
+                          }
+                        },
+                        "url": {
+                          "raw": "{{rsc_instance}}/api/graphql",
+                          "protocol": "https",
+                          "host": [
+                            "{{rsc_instance}}"
+                          ],
+                          "path": [
+                            "api",
+                            "graphql"
+                          ]
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "name": "Managed-Volumes",
+                  "item": [
+                    {
+                      "name": "beginSnapshotJobStatus",
+                      "request": {
+                        "method": "POST",
+                        "header": [
+                          {
+                            "key": "Content-Type",
+                            "value": "application/json"
+                          }
+                        ],
+                        "body": {
+                          "mode": "graphql",
+                          "graphql": {
+                            "query": "query {\n  jobInfo(input: {\n    requestId: \"c7bd8eb2-7132-4c8f-8592-682d507520dc\"\n    clusterUuid: \"f79b1102-77b5-4434-8400-c2a66c9b2dc1\"\n    type: BEGIN_MANAGED_VOLUME_SNAPSHOT\n    additionalInfo: {}\n  }) {\n    status\n  }\n}"
+                          }
+                        },
+                        "url": {
+                          "raw": "{{rsc_instance}}/api/graphql",
+                          "protocol": "https",
+                          "host": [
+                            "{{rsc_instance}}"
+                          ],
+                          "path": [
+                            "api",
+                            "graphql"
+                          ]
+                        }
+                      }
+                    },
+                    {
+                      "name": "endSnapshot",
+                      "request": {
+                        "method": "POST",
+                        "header": [
+                          {
+                            "key": "Content-Type",
+                            "value": "application/json"
+                          }
+                        ],
+                        "body": {
+                          "mode": "graphql",
+                          "graphql": {
+                            "query": "mutation endManagedVolumeSnapshot {\n  endManagedVolumeSnapshot(input: {\n    id: \"f79b1102-77b5-4434-8400-c2a66c9b2dc1\"\n    params: {\n      retentionConfig: {\n        slaId: \"c7bd8eb2-7132-4c8f-8592-682d507520dc\"\n      }\n    }\n    #endSnapshotDelayInSeconds: 5\n  }) {\n    asyncRequestStatus {\n      id\n    }\n  }\n}"
+                          }
+                        },
+                        "url": {
+                          "raw": "{{rsc_instance}}/api/graphql",
+                          "protocol": "https",
+                          "host": [
+                            "{{rsc_instance}}"
+                          ],
+                          "path": [
+                            "api",
+                            "graphql"
+                          ]
+                        }
+                      }
+                    },
+                    {
+                      "name": "slaManagedVolumeSnapshotJobStatus",
+                      "request": {
+                        "method": "POST",
+                        "header": [
+                          {
+                            "key": "Content-Type",
+                            "value": "application/json"
+                          }
+                        ],
+                        "body": {
+                          "mode": "graphql",
+                          "graphql": {
+                            "query": "query {\n  jobInfo(input: {\n    requestId: \"c7bd8eb2-7132-4c8f-8592-682d507520dc\"\n    clusterUuid: \"f79b1102-77b5-4434-8400-c2a66c9b2dc1\"\n    type: TAKE_MANAGED_VOLUME_ON_DEMAND_SNAPSHOT\n    additionalInfo: {}\n  }) {\n    status\n  }\n}"
+                          }
+                        },
+                        "url": {
+                          "raw": "{{rsc_instance}}/api/graphql",
+                          "protocol": "https",
+                          "host": [
+                            "{{rsc_instance}}"
+                          ],
+                          "path": [
+                            "api",
+                            "graphql"
+                          ]
+                        }
+                      }
+                    },
+                    {
+                      "name": "slaManagedVolumeSnapshot",
+                      "request": {
+                        "method": "POST",
+                        "header": [
+                          {
+                            "key": "Content-Type",
+                            "value": "application/json"
+                          }
+                        ],
+                        "body": {
+                          "mode": "graphql",
+                          "graphql": {
+                            "query": "mutation slaManagedVolumeSnapshot {\n  takeManagedVolumeOnDemandSnapshot(input: {\n    id: \"f79b1102-77b5-4434-8400-c2a66c9b2dc1\"\n    config: {\n      retentionConfig: {\n        slaId: \"c7bd8eb2-7132-4c8f-8592-682d507520dc\"\n      }\n    }\n  }) {\n    id\n  }\n}"
+                          }
+                        },
+                        "url": {
+                          "raw": "{{rsc_instance}}/api/graphql",
+                          "protocol": "https",
+                          "host": [
+                            "{{rsc_instance}}"
+                          ],
+                          "path": [
+                            "api",
+                            "graphql"
+                          ]
+                        }
+                      }
+                    },
+                    {
+                      "name": "beginSnapshot",
+                      "request": {
+                        "method": "POST",
+                        "header": [
+                          {
+                            "key": "Content-Type",
+                            "value": "application/json"
+                          }
+                        ],
+                        "body": {
+                          "mode": "graphql",
+                          "graphql": {
+                            "query": "mutation beginManagedVolumeSnapshot {\n  beginManagedVolumeSnapshot(input: {\n    id: \"f79b1102-77b5-4434-8400-c2a66c9b2dc1\"\n  }) {\n    asyncRequestStatus {\n      id\n    }\n  }\n}"
+                          }
+                        },
+                        "url": {
+                          "raw": "{{rsc_instance}}/api/graphql",
+                          "protocol": "https",
+                          "host": [
+                            "{{rsc_instance}}"
+                          ],
+                          "path": [
+                            "api",
+                            "graphql"
+                          ]
+                        }
+                      }
+                    },
+                    {
+                      "name": "managedVolumes",
+                      "request": {
+                        "method": "POST",
+                        "header": [
+                          {
+                            "key": "Content-Type",
+                            "value": "application/json"
+                          }
+                        ],
+                        "body": {
+                          "mode": "graphql",
+                          "graphql": {
+                            "query": "query {\n  managedVolumes( filter: [\n    {field: NAME_EXACT_MATCH texts: \"example\"}\n    {field: IS_RELIC texts: \"false\"}\n    {field: IS_REPLICATED texts: \"false\"}\n  ]) {\n    nodes {\n      name\n      id\n      cdmId\n      managedVolumeType\n      provisionedSize\n      numChannels\n      clientNamePatterns\n      host {\n        name\n        osName\n        id\n      }\n      hostDetail {\n        name\n        id\n        status\n      }\n      smbShare {\n        domainName\n        validIps\n        validUsers\n        activeDirectoryGroups\n      }\n      nfsSettings {\n        version\n      }\n      clientConfig {\n        username\n        backupScript {\n          scriptCommand\n        }\n        preBackupScript {\n          scriptCommand\n        }\n        successfulPostBackupScript {\n          scriptCommand\n        }\n        failedPostBackupScript {\n          scriptCommand\n        }\n        channelHostMountPaths\n        hostId\n      }\n      cluster {\n        name\n        id\n      }\n      effectiveSlaDomain {\n        name\n        id\n      }\n    }\n  }\n}"
+                          }
+                        },
+                        "url": {
+                          "raw": "{{rsc_instance}}/api/graphql",
+                          "protocol": "https",
+                          "host": [
+                            "{{rsc_instance}}"
+                          ],
+                          "path": [
+                            "api",
+                            "graphql"
+                          ]
+                        }
+                      }
+                    },
+                    {
+                      "name": "slaManagedVolumes",
+                      "request": {
+                        "method": "POST",
+                        "header": [
+                          {
+                            "key": "Content-Type",
+                            "value": "application/json"
+                          }
+                        ],
+                        "body": {
+                          "mode": "graphql",
+                          "graphql": {
+                            "query": "query {\n  slaManagedVolumes( filter: [\n    {field: NAME_EXACT_MATCH texts: \"example\"}\n    {field: IS_RELIC texts: \"false\"}\n    {field: IS_REPLICATED texts: \"false\"}\n  ]) {\n    nodes {\n      name\n      id\n      cdmId\n      managedVolumeType\n      provisionedSize\n      numChannels\n      clientNamePatterns\n      host {\n        name\n        osName\n        id\n      }\n      hostDetail {\n        name\n        id\n        status\n      }\n      smbShare {\n        domainName\n        validIps\n        validUsers\n        activeDirectoryGroups\n      }\n      nfsSettings {\n        version\n      }\n      clientConfig {\n        username\n        backupScript {\n          scriptCommand\n        }\n        preBackupScript {\n          scriptCommand\n        }\n        successfulPostBackupScript {\n          scriptCommand\n        }\n        failedPostBackupScript {\n          scriptCommand\n        }\n        channelHostMountPaths\n        hostId\n      }\n      cluster {\n        name\n        id\n      }\n      effectiveSlaDomain {\n        name\n        id\n      }\n    }\n  }\n}"
+                          }
+                        },
+                        "url": {
+                          "raw": "{{rsc_instance}}/api/graphql",
+                          "protocol": "https",
+                          "host": [
+                            "{{rsc_instance}}"
+                          ],
+                          "path": [
+                            "api",
+                            "graphql"
+                          ]
+                        }
+                      }
+                    },
+                    {
+                      "name": "endSnapshotJobStatus",
+                      "request": {
+                        "method": "POST",
+                        "header": [
+                          {
+                            "key": "Content-Type",
+                            "value": "application/json"
+                          }
+                        ],
+                        "body": {
+                          "mode": "graphql",
+                          "graphql": {
+                            "query": "query {\n  jobInfo(input: {\n    requestId: \"c7bd8eb2-7132-4c8f-8592-682d507520dc\"\n    clusterUuid: \"f79b1102-77b5-4434-8400-c2a66c9b2dc1\"\n    type: END_MANAGED_VOLUME_SNAPSHOT\n    additionalInfo: {}\n  }) {\n    status\n  }\n}"
+                          }
+                        },
+                        "url": {
+                          "raw": "{{rsc_instance}}/api/graphql",
+                          "protocol": "https",
+                          "host": [
+                            "{{rsc_instance}}"
+                          ],
+                          "path": [
+                            "api",
+                            "graphql"
+                          ]
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "name": "SAP-HANA",
+                  "item": [
+                    {
+                      "name": "snapshot",
+                      "request": {
+                        "method": "POST",
+                        "header": [
+                          {
+                            "key": "Content-Type",
+                            "value": "application/json"
+                          }
+                        ],
+                        "body": {
+                          "mode": "graphql",
+                          "graphql": {
+                            "query": "mutation {\n  createOnDemandSapHanaBackup(input: {\n    id: \"40bac7c1-87ad-4ac0-b4a6-34ac592d8e77\"\n    config: {\n      slaId: \"7d40e858-b8ec-4096-8112-cab8eff1a4e2\"\n    }\n  }) {\n    id\n  }\n}"
+                          }
+                        },
+                        "url": {
+                          "raw": "{{rsc_instance}}/api/graphql",
+                          "protocol": "https",
+                          "host": [
+                            "{{rsc_instance}}"
+                          ],
+                          "path": [
+                            "api",
+                            "graphql"
+                          ]
+                        }
+                      }
+                    },
+                    {
+                      "name": "databases",
+                      "request": {
+                        "method": "POST",
+                        "header": [
+                          {
+                            "key": "Content-Type",
+                            "value": "application/json"
+                          }
+                        ],
+                        "body": {
+                          "mode": "graphql",
+                          "graphql": {
+                            "query": "query {\n  sapHanaDatabases(filter: [\n    {field: NAME_EXACT_MATCH texts: \"example\"}\n    {field: IS_RELIC texts: \"false\"}\n    {field: IS_REPLICATED texts: \"false\"}\n  ]) {\n    nodes {\n      name\n      id\n      info {\n        databaseType\n        status\n        backintPath\n        paramFilePath\n        numChannels\n        approxDbSizeInMb\n        logBackupIntervalSecs\n        restoreConfiguredSrcDatabaseId\n        logMode\n      }\n      dataPathType\n      dataPathSpec {\n        name\n      }\n      sapHanaSystem {\n        name\n        id\n      }\n      forceFull\n      effectiveSlaDomain {\n        name\n        id\n      }\n      cluster {\n        name\n        id\n      }\n    }\n  }\n}"
+                          }
+                        },
+                        "url": {
+                          "raw": "{{rsc_instance}}/api/graphql",
+                          "protocol": "https",
+                          "host": [
+                            "{{rsc_instance}}"
+                          ],
+                          "path": [
+                            "api",
+                            "graphql"
+                          ]
+                        }
+                      }
+                    },
+                    {
+                      "name": "jobstatus",
+                      "request": {
+                        "method": "POST",
+                        "header": [
+                          {
+                            "key": "Content-Type",
+                            "value": "application/json"
+                          }
+                        ],
+                        "body": {
+                          "mode": "graphql",
+                          "graphql": {
+                            "query": "query {\n\tjobInfo(input: {\n    requestId: \"9f706c3c-4678-44e5-99fe-50ebde6b308e\"\n    clusterUuid: \"85e98e61-4c1f-496a-b846-5eb871966025\"\n    type: SAP_HANA_DATABASE\n  }) {\n    status\n  }\n}"
+                          }
+                        },
+                        "url": {
+                          "raw": "{{rsc_instance}}/api/graphql",
+                          "protocol": "https",
+                          "host": [
+                            "{{rsc_instance}}"
+                          ],
+                          "path": [
+                            "api",
+                            "graphql"
+                          ]
+                        }
+                      }
+                    },
+                    {
+                      "name": "systems",
+                      "request": {
+                        "method": "POST",
+                        "header": [
+                          {
+                            "key": "Content-Type",
+                            "value": "application/json"
+                          }
+                        ],
+                        "body": {
+                          "mode": "graphql",
+                          "graphql": {
+                            "query": "query {\n  sapHanaSystems(filter: [\n    {field: NAME_EXACT_MATCH texts: \"example\"}\n    {field: IS_RELIC texts: \"false\"}\n    {field: IS_REPLICATED texts: \"false\"}\n  ]) {\n    nodes {\n      name\n      id\n      objectType\n      sid\n      instanceNumber\n      status\n      statusMessage\n      systemInfo {\n        hanaVersion\n        isDtEnabled\n        authType\n      }\n      hosts {\n        hostName\n        hostUuid\n        hostType\n        status\n        systemHost {\n          name\n          id\n        }\n      }\n\t\t\tdescendantConnection {\n        nodes {\n          name\n          id\n          objectType\n        }\n      }\n      effectiveSlaDomain {\n        name\n        id\n      }\n      cluster {\n        name\n        id\n      }\n    }\n  }\n}"
+                          }
+                        },
+                        "url": {
+                          "raw": "{{rsc_instance}}/api/graphql",
+                          "protocol": "https",
+                          "host": [
+                            "{{rsc_instance}}"
+                          ],
+                          "path": [
+                            "api",
+                            "graphql"
+                          ]
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "name": "Filesets",
+                  "item": [
+                    {
+                      "name": "filesetTemplates",
+                      "request": {
+                        "method": "POST",
+                        "header": [
+                          {
+                            "key": "Content-Type",
+                            "value": "application/json"
+                          }
+                        ],
+                        "body": {
+                          "mode": "graphql",
+                          "graphql": {
+                            "query": "query {\n  filesetTemplates( hostRoot: WINDOWS_HOST_ROOT filter: [\n    #{field: NAME_EXACT_MATCH texts: \"example\"}\n    {field: IS_RELIC texts: \"false\"}\n    {field: IS_REPLICATED texts: \"false\"}\n  ]) {\n    nodes {\n      name\n      id\n      cdmId\n      osType\n      exceptions\n      excludes\n      osType\n      preBackupScript\n      postBackupScript\n      allowBackupNetworkMounts\n      allowBackupHiddenFoldersInNetworkMounts\n      shareType\n      descendantConnection {\n        nodes {\n          name\n          id\n          physicalPath {\n            name\n            fid\n          }\n        }\n      }\n      cluster {\n        name\n        id\n      }\n      effectiveSlaDomain {\n        name\n        id\n      }\n    }\n  }\n}"
+                          }
+                        },
+                        "url": {
+                          "raw": "{{rsc_instance}}/api/graphql",
+                          "protocol": "https",
+                          "host": [
+                            "{{rsc_instance}}"
+                          ],
+                          "path": [
+                            "api",
+                            "graphql"
+                          ]
+                        }
+                      }
+                    },
+                    {
+                      "name": "snapshot",
+                      "request": {
+                        "method": "POST",
+                        "header": [
+                          {
+                            "key": "Content-Type",
+                            "value": "application/json"
+                          }
+                        ],
+                        "body": {
+                          "mode": "graphql",
+                          "graphql": {
+                            "query": "mutation filesetSnapshot {\n  createFilesetSnapshot(input: {\n    id: \"f79b1102-77b5-4434-8400-c2a66c9b2dc1\"\n    config: {\n      slaId: \"c7bd8eb2-7132-4c8f-8592-682d507520dc\"\n    }\n  }) {\n    id\n  }\n}"
+                          }
+                        },
+                        "url": {
+                          "raw": "{{rsc_instance}}/api/graphql",
+                          "protocol": "https",
+                          "host": [
+                            "{{rsc_instance}}"
+                          ],
+                          "path": [
+                            "api",
+                            "graphql"
+                          ]
+                        }
+                      }
+                    },
+                    {
+                      "name": "jobstatus",
+                      "request": {
+                        "method": "POST",
+                        "header": [
+                          {
+                            "key": "Content-Type",
+                            "value": "application/json"
+                          }
+                        ],
+                        "body": {
+                          "mode": "graphql",
+                          "graphql": {
+                            "query": "query {\n  filesetRequestStatus(input: {\n  \tid: \"fb5342f3-daf6-475d-8aa7-14f23932c683\"\n    clusterUuid: \"8417a938-96f5-43c6-9905-b36e051c5f98\"\n  }) {\n    startTime\n    endTime\n    error {\n      message\n    }\n    progress\n    status\n  }\n}\n"
+                          }
+                        },
+                        "url": {
+                          "raw": "{{rsc_instance}}/api/graphql",
+                          "protocol": "https",
+                          "host": [
+                            "{{rsc_instance}}"
+                          ],
+                          "path": [
+                            "api",
+                            "graphql"
+                          ]
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "name": "NAS-Unstructured-Data",
+                  "item": [
+                    {
+                      "name": "cloudDirectNamespaces",
+                      "request": {
+                        "method": "POST",
+                        "header": [
+                          {
+                            "key": "Content-Type",
+                            "value": "application/json"
+                          }
+                        ],
+                        "body": {
+                          "mode": "graphql",
+                          "graphql": {
+                            "query": "query {\n  cloudDirectNasNamespaces(filter: [\n    {field: NAME_EXACT_MATCH texts: \"example\"}\n    {field: IS_RELIC texts: \"false\"}\n    {field: IS_REPLICATED texts: \"false\"}\n  ]) {\n    nodes {\n      name\n      id\n      cloudDirectId\n\t  cloudDirectNasSystem {\n        name\n        id\n      }\n      shareCount\n      cluster {\n        name\n        id\n      }\n      effectiveSlaDomain {\n        name\n        id\n      }\n    }\n  }\n}"
+                          }
+                        },
+                        "url": {
+                          "raw": "{{rsc_instance}}/api/graphql",
+                          "protocol": "https",
+                          "host": [
+                            "{{rsc_instance}}"
+                          ],
+                          "path": [
+                            "api",
+                            "graphql"
+                          ]
+                        }
+                      }
+                    },
+                    {
+                      "name": "cloudDirectSystems",
+                      "request": {
+                        "method": "POST",
+                        "header": [
+                          {
+                            "key": "Content-Type",
+                            "value": "application/json"
+                          }
+                        ],
+                        "body": {
+                          "mode": "graphql",
+                          "graphql": {
+                            "query": "query {\n  cloudDirectNasSystems(filter: [\n    {field: NAME_EXACT_MATCH texts: \"example\"}\n    {field: IS_RELIC texts: \"false\"}\n    {field: IS_REPLICATED texts: \"false\"}\n  ]) {\n    nodes {\n      name\n      id\n      cloudDirectId\n      vendorType\n      lastStatus\n      lastRefreshTime\n      osVersion\n      apiVersion\n      cluster {\n        name\n        id\n      }\n      effectiveSlaDomain {\n        name\n        id\n      }\n    }\n  }\n}"
+                          }
+                        },
+                        "url": {
+                          "raw": "{{rsc_instance}}/api/graphql",
+                          "protocol": "https",
+                          "host": [
+                            "{{rsc_instance}}"
+                          ],
+                          "path": [
+                            "api",
+                            "graphql"
+                          ]
+                        }
+                      }
+                    },
+                    {
+                      "name": "shares",
+                      "request": {
+                        "method": "POST",
+                        "header": [
+                          {
+                            "key": "Content-Type",
+                            "value": "application/json"
+                          }
+                        ],
+                        "body": {
+                          "mode": "graphql",
+                          "graphql": {
+                            "query": "query {\n  nasShares(filter: [\n    {field: NAME_EXACT_MATCH texts: \"example\"}\n    {field: IS_RELIC texts: \"false\"}\n    {field: IS_REPLICATED texts: \"false\"}\n  ]) {\n    nodes {\n      name\n      id\n      cdmId\n      shareType\n      exportPoint\n      isChangelistEnabled\n      isStale\n      nasSystem {\n        name\n        id\n      }\n      nasVolume {\n        name\n        id\n        nasNamespace {\n          name\n          id\n        }\n      }\n      primaryFileset {\n        name\n        id\n      }\n      connectedThrough\n      hostAddress\n      hostIdForRestore\n      cluster {\n        name\n        id\n      }\n      effectiveSlaDomain {\n        name\n        id\n      }\n    }\n  }\n}"
+                          }
+                        },
+                        "url": {
+                          "raw": "{{rsc_instance}}/api/graphql",
+                          "protocol": "https",
+                          "host": [
+                            "{{rsc_instance}}"
+                          ],
+                          "path": [
+                            "api",
+                            "graphql"
+                          ]
+                        }
+                      }
+                    },
+                    {
+                      "name": "namespaces",
+                      "request": {
+                        "method": "POST",
+                        "header": [
+                          {
+                            "key": "Content-Type",
+                            "value": "application/json"
+                          }
+                        ],
+                        "body": {
+                          "mode": "graphql",
+                          "graphql": {
+                            "query": "query {\n  nasNamespaces(filter: [\n    {field: NAME_EXACT_MATCH texts: \"example\"}\n    {field: IS_RELIC texts: \"false\"}\n    {field: IS_REPLICATED texts: \"false\"}\n  ]) {\n    nodes {\n      name\n      id\n      cdmId\n      vendorType\n      cluster {\n        name\n        id\n      }\n      effectiveSlaDomain {\n        name\n        id\n      }\n    }\n  }\n}"
+                          }
+                        },
+                        "url": {
+                          "raw": "{{rsc_instance}}/api/graphql",
+                          "protocol": "https",
+                          "host": [
+                            "{{rsc_instance}}"
+                          ],
+                          "path": [
+                            "api",
+                            "graphql"
+                          ]
+                        }
+                      }
+                    },
+                    {
+                      "name": "cloudDirectShares",
+                      "request": {
+                        "method": "POST",
+                        "header": [
+                          {
+                            "key": "Content-Type",
+                            "value": "application/json"
+                          }
+                        ],
+                        "body": {
+                          "mode": "graphql",
+                          "graphql": {
+                            "query": "query {\n  cloudDirectNasShares(filter: [\n    {field: NAME_EXACT_MATCH texts: \"example\"}\n    {field: IS_RELIC texts: \"false\"}\n    {field: IS_REPLICATED texts: \"false\"}\n  ]) {\n    nodes {\n      name\n      id\n      protocol\n      ncdPolicyName\n      systemId\n      namespaceId\n      cloudDirectId\n      cloudDirectNasSystem {\n        name\n        id\n      }\n      cloudDirectNasNamespace {\n        name\n        id\n      }\n      excludes {\n        path\n        pattern\n      }\n      \n      cluster {\n        name\n        id\n      }\n      effectiveSlaDomain {\n        name\n        id\n      }\n    }\n  }\n}"
+                          }
+                        },
+                        "url": {
+                          "raw": "{{rsc_instance}}/api/graphql",
+                          "protocol": "https",
+                          "host": [
+                            "{{rsc_instance}}"
+                          ],
+                          "path": [
+                            "api",
+                            "graphql"
+                          ]
+                        }
+                      }
+                    },
+                    {
+                      "name": "systems",
+                      "request": {
+                        "method": "POST",
+                        "header": [
+                          {
+                            "key": "Content-Type",
+                            "value": "application/json"
+                          }
+                        ],
+                        "body": {
+                          "mode": "graphql",
+                          "graphql": {
+                            "query": "query {\n  nasSystems(filter: [\n    {field: NAME_EXACT_MATCH texts: \"example\"}\n    {field: IS_RELIC texts: \"false\"}\n    {field: IS_REPLICATED texts: \"false\"}\n  ]) {\n    nodes {\n      name\n      id\n      cdmId\n      osVersion\n      lastRefreshTime\n      vendorType\n      isSmbSupported\n      isNfsSupported\n      lastStatus\n      volumeCount\n      shareCount\n      namespaceCount\n      cluster {\n        name\n        id\n      }\n      effectiveSlaDomain {\n        name\n        id\n      }\n    }\n  }\n}"
+                          }
+                        },
+                        "url": {
+                          "raw": "{{rsc_instance}}/api/graphql",
+                          "protocol": "https",
+                          "host": [
+                            "{{rsc_instance}}"
+                          ],
+                          "path": [
+                            "api",
+                            "graphql"
+                          ]
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "name": "VMware-vSphere",
+                  "item": [
+                    {
+                      "name": "hosts",
+                      "request": {
+                        "method": "POST",
+                        "header": [
+                          {
+                            "key": "Content-Type",
+                            "value": "application/json"
+                          }
+                        ],
+                        "body": {
+                          "mode": "graphql",
+                          "graphql": {
+                            "query": "query {\n  vSphereHostConnection(filter: {field: NAME_EXACT_MATCH texts: \"esx001.example.com\"}) {\n    nodes {\n      name\n      id\n    }\n  }\n}"
+                          }
+                        },
+                        "url": {
+                          "raw": "{{rsc_instance}}/api/graphql",
+                          "protocol": "https",
+                          "host": [
+                            "{{rsc_instance}}"
+                          ],
+                          "path": [
+                            "api",
+                            "graphql"
+                          ]
+                        }
+                      }
+                    },
+                    {
+                      "name": "folders",
+                      "request": {
+                        "method": "POST",
+                        "header": [
+                          {
+                            "key": "Content-Type",
+                            "value": "application/json"
+                          }
+                        ],
+                        "body": {
+                          "mode": "graphql",
+                          "graphql": {
+                            "query": "query {\n  vSphereFolders(filter: {field: NAME_EXACT_MATCH texts: \"SQL Server\"}) {\n    nodes {\n      name\n      id\n      folderType\n      vCenterId\n      datacenterId\n    }\n  }\n}"
+                          }
+                        },
+                        "url": {
+                          "raw": "{{rsc_instance}}/api/graphql",
+                          "protocol": "https",
+                          "host": [
+                            "{{rsc_instance}}"
+                          ],
+                          "path": [
+                            "api",
+                            "graphql"
+                          ]
+                        }
+                      }
+                    },
+                    {
+                      "name": "instantRecovery",
+                      "request": {
+                        "method": "POST",
+                        "header": [
+                          {
+                            "key": "Content-Type",
+                            "value": "application/json"
+                          }
+                        ],
+                        "body": {
+                          "mode": "graphql",
+                          "graphql": {
+                            "query": "mutation {\n  vsphereVmInitiateInstantRecoveryV2(\n    input: {\n      id: \"a8fd8809-bbdb-5a03-8663-1c1feb19791c\"\n      config: {\n        preserveMoid: true\n        shouldRecoverTags: true\n        clusterId: \"e90741cc-4360-54b8-9ad3-84db4727c62e\" \n        requiredRecoveryParameters: {\n          snapshotId: \"823cd454-7349-5a2c-a055-a936faf04c73\" \n\t\t\t}, \n        mountExportSnapshotJobCommonOptionsV2: {\n          powerOn: true \n          keepMacAddresses: true\n          disableNetwork: false\n        }\n      }\n    }\n  ) {\n    id\n  }\n}\n"
+                          }
+                        },
+                        "url": {
+                          "raw": "{{rsc_instance}}/api/graphql",
+                          "protocol": "https",
+                          "host": [
+                            "{{rsc_instance}}"
+                          ],
+                          "path": [
+                            "api",
+                            "graphql"
+                          ]
+                        }
+                      }
+                    },
+                    {
+                      "name": "vcenters",
+                      "request": {
+                        "method": "POST",
+                        "header": [
+                          {
+                            "key": "Content-Type",
+                            "value": "application/json"
+                          }
+                        ],
+                        "body": {
+                          "mode": "graphql",
+                          "graphql": {
+                            "query": "query {\n  vSphereVCenterConnection {\n    nodes {\n      objectType\n      slaAssignment\n      effectiveSlaDomain {\n        ... on GlobalSlaReply {\n          clusterUuid\n          description\n          id\n          isArchived\n          isDefault\n          isReadOnly\n          isRetentionLockedSla\n          name\n          stateVersion\n          version\n        }\n      }\n      id\n      isHotAddEnabledForOnPremVcenter\n      isStandaloneHost\n      isVmc\n      name\n      numWorkloadDescendants\n      slaPauseStatus\n      username\n      vcenterId\n    }\n    pageInfo {\n      endCursor\n      hasNextPage\n      hasPreviousPage\n      startCursor\n    }\n  }\n}\n"
+                          }
+                        },
+                        "url": {
+                          "raw": "{{rsc_instance}}/api/graphql",
+                          "protocol": "https",
+                          "host": [
+                            "{{rsc_instance}}"
+                          ],
+                          "path": [
+                            "api",
+                            "graphql"
+                          ]
+                        }
+                      }
+                    },
+                    {
+                      "name": "registerAgent",
+                      "request": {
+                        "method": "POST",
+                        "header": [
+                          {
+                            "key": "Content-Type",
+                            "value": "application/json"
+                          }
+                        ],
+                        "body": {
+                          "mode": "graphql",
+                          "graphql": {
+                            "query": "mutation {\n  vsphereVmRegisterAgent(input: {id: \"97a0f5db-8f83-4c8d-b94e-72cc14510435\"}) {\n    success\n  }\n}\n"
+                          }
+                        },
+                        "url": {
+                          "raw": "{{rsc_instance}}/api/graphql",
+                          "protocol": "https",
+                          "host": [
+                            "{{rsc_instance}}"
+                          ],
+                          "path": [
+                            "api",
+                            "graphql"
+                          ]
+                        }
+                      }
+                    },
+                    {
+                      "name": "export",
+                      "request": {
+                        "method": "POST",
+                        "header": [
+                          {
+                            "key": "Content-Type",
+                            "value": "application/json"
+                          }
+                        ],
+                        "body": {
+                          "mode": "graphql",
+                          "graphql": {
+                            "query": "mutation {\n  vsphereVmExportSnapshotV3(\n    input: {\n    id: \"e776b2f3-8ea6-47aa-8ea4-ad0029cbc451\"\n    config: {\n      clusterId: \"82a56e23-96b2-460d-8020-a859dd285690\"\n      hostId: \"3bb4e1cc-fb27-426f-ad78-2d8a469c0a4a\"\n      storageLocationId: \"b0ec695f-d97d-44ba-882a-b4a17c4274a9\"\n      shouldRecoverTags: true\n    }\n    }) {\n    id\n  }\n}"
+                          }
+                        },
+                        "url": {
+                          "raw": "{{rsc_instance}}/api/graphql",
+                          "protocol": "https",
+                          "host": [
+                            "{{rsc_instance}}"
+                          ],
+                          "path": [
+                            "api",
+                            "graphql"
+                          ]
+                        }
+                      }
+                    },
+                    {
+                      "name": "snapshot",
+                      "request": {
+                        "method": "POST",
+                        "header": [
+                          {
+                            "key": "Content-Type",
+                            "value": "application/json"
+                          }
+                        ],
+                        "body": {
+                          "mode": "graphql",
+                          "graphql": {
+                            "query": "mutation {\n  vsphereBulkOnDemandSnapshot(\n    input: {\n      config: {\n        vms: [\"EC6A4D79-8F6F-4105-9DD6-11F4875C7A8B\"]\n        slaId: \"def96ac0-be74-5e59-87e2-5af73b65ac1e\"\n        }\n      }\n    ) {\n    responses {\n      id\n    }\n  }\n}\n"
+                          }
+                        },
+                        "url": {
+                          "raw": "{{rsc_instance}}/api/graphql",
+                          "protocol": "https",
+                          "host": [
+                            "{{rsc_instance}}"
+                          ],
+                          "path": [
+                            "api",
+                            "graphql"
+                          ]
+                        }
+                      }
+                    },
+                    {
+                      "name": "liveMountVm",
+                      "request": {
+                        "method": "POST",
+                        "header": [
+                          {
+                            "key": "Content-Type",
+                            "value": "application/json"
+                          }
+                        ],
+                        "body": {
+                          "mode": "graphql",
+                          "graphql": {
+                            "query": "mutation {\n  vsphereVmInitiateLiveMountV2(\n    input: {\n      id: \"a8fd8809-bbdb-5a03-8663-1c1feb19791c\"\n      config: {\n        clusterId: \"e90741cc-4360-54b8-9ad3-84db4727c62e\" \n        requiredRecoveryParameters: {\n          snapshotId: \"823cd454-7349-5a2c-a055-a936faf04c73\" \n\t\t\t}, \n        mountExportSnapshotJobCommonOptionsV2: {\n          powerOn: true \n          disableNetwork: true \n          vmName: \"livemountExample\"\n        }\n      }\n    }\n  ) {\n    id\n  }\n}"
+                          }
+                        },
+                        "url": {
+                          "raw": "{{rsc_instance}}/api/graphql",
+                          "protocol": "https",
+                          "host": [
+                            "{{rsc_instance}}"
+                          ],
+                          "path": [
+                            "api",
+                            "graphql"
+                          ]
+                        }
+                      }
+                    },
+                    {
+                      "name": "liveMountVmdk",
+                      "request": {
+                        "method": "POST",
+                        "header": [
+                          {
+                            "key": "Content-Type",
+                            "value": "application/json"
+                          }
+                        ],
+                        "body": {
+                          "mode": "graphql",
+                          "graphql": {
+                            "query": "mutation {\n  vsphereVmInitiateDiskMount(input: {\n    id: \"0c716834-1440-4c0e-bffd-c375b39309cb\" # snapshot ID\n    config: {\n      targetVmId: \"49ccc234-3fc5-4aab-9fec-eb8de56d29bf\" \n      vmdkIds: [\"b94a692e-2f07-44c6-8186-17e0075341d9\"] # removing this will mount all VMDKs\n    }\n  }) {\n    id\n  }\n}"
+                          }
+                        },
+                        "url": {
+                          "raw": "{{rsc_instance}}/api/graphql",
+                          "protocol": "https",
+                          "host": [
+                            "{{rsc_instance}}"
+                          ],
+                          "path": [
+                            "api",
+                            "graphql"
+                          ]
+                        }
+                      }
+                    },
+                    {
+                      "name": "jobstatus",
+                      "request": {
+                        "method": "POST",
+                        "header": [
+                          {
+                            "key": "Content-Type",
+                            "value": "application/json"
+                          }
+                        ],
+                        "body": {
+                          "mode": "graphql",
+                          "graphql": {
+                            "query": "query {\n  vSphereVMAsyncRequestStatus(\n    id: \"d4822e3d-c6e3-4bbe-950e-3e63c4770a78\"\n    clusterUuid: \"e4e7d2a2-c58b-4bc2-b11e-d6f9102e6fc8\"\n  ) {\n    id\n    status\n    startTime\n    progress\n    endTime\n    error {\n      message\n    }\n  }\n}"
+                          }
+                        },
+                        "url": {
+                          "raw": "{{rsc_instance}}/api/graphql",
+                          "protocol": "https",
+                          "host": [
+                            "{{rsc_instance}}"
+                          ],
+                          "path": [
+                            "api",
+                            "graphql"
+                          ]
+                        }
+                      }
+                    },
+                    {
+                      "name": "livemounts",
+                      "request": {
+                        "method": "POST",
+                        "header": [
+                          {
+                            "key": "Content-Type",
+                            "value": "application/json"
+                          }
+                        ],
+                        "body": {
+                          "mode": "graphql",
+                          "graphql": {
+                            "query": "query {\n  vSphereLiveMounts {\n  count\n  nodes {\n      vmStatus\n      cdmId\n      hasAttachingDisk\n      id\n      isReady\n      migrateDatastoreRequestId\n      mountTimestamp\n      newVmName\n      vcenterId\n      mountedVm {\n        id\n        name\n      }\n      sourceSnapshot {\n        date\n        id\n      }\n      sourceVm {\n        id\n        name\n      }\n  }\n  pageInfo {\n    endCursor\n    hasNextPage\n    hasPreviousPage\n    startCursor\n  }\n  }\n}"
+                          }
+                        },
+                        "url": {
+                          "raw": "{{rsc_instance}}/api/graphql",
+                          "protocol": "https",
+                          "host": [
+                            "{{rsc_instance}}"
+                          ],
+                          "path": [
+                            "api",
+                            "graphql"
+                          ]
+                        }
+                      }
+                    },
+                    {
+                      "name": "inPlaceRecovery",
+                      "request": {
+                        "method": "POST",
+                        "header": [
+                          {
+                            "key": "Content-Type",
+                            "value": "application/json"
+                          }
+                        ],
+                        "body": {
+                          "mode": "graphql",
+                          "graphql": {
+                            "query": "mutation {\n  vsphereVmInitiateInPlaceRecovery(\n    input: {\n      id: \"d2d9ed9f-bb52-4ae8-a50e-9692e8bf8dff\"\n      config: {\n        requiredRecoveryParameters: {\n          snapshotId: \"072ab1cd-ea3f-4dd2-8b63-49f24a5f87a2\"\n        }\n      }\n    }\n    ) {\n    id\n    status\n    startTime\n    endTime\n    progress\n    error {\n      message\n    }\n  }\n}\n"
+                          }
+                        },
+                        "url": {
+                          "raw": "{{rsc_instance}}/api/graphql",
+                          "protocol": "https",
+                          "host": [
+                            "{{rsc_instance}}"
+                          ],
+                          "path": [
+                            "api",
+                            "graphql"
+                          ]
+                        }
+                      }
+                    },
+                    {
+                      "name": "clusters",
+                      "request": {
+                        "method": "POST",
+                        "header": [
+                          {
+                            "key": "Content-Type",
+                            "value": "application/json"
+                          }
+                        ],
+                        "body": {
+                          "mode": "graphql",
+                          "graphql": {
+                            "query": "query {\n  vSphereComputeClusters(filter: {\n    field: NAME_EXACT_MATCH texts: \"foo\"\n    }) {\n    nodes {\n      name\n      id\n      logicalPath {\n        name\n        fid\n        objectType\n      }\n      descendantConnection(typeFilter: [VSphereHost,VSphereNetwork,VSphereDatastore,VSphereResourcePool]) {\n        nodes {\n          name\n          id\n          objectType\n        }\n      }\n    }\n  }\n}"
+                          }
+                        },
+                        "url": {
+                          "raw": "{{rsc_instance}}/api/graphql",
+                          "protocol": "https",
+                          "host": [
+                            "{{rsc_instance}}"
+                          ],
+                          "path": [
+                            "api",
+                            "graphql"
+                          ]
+                        }
+                      }
+                    },
+                    {
+                      "name": "virtualmachines",
+                      "request": {
+                        "method": "POST",
+                        "header": [
+                          {
+                            "key": "Content-Type",
+                            "value": "application/json"
+                          }
+                        ],
+                        "body": {
+                          "mode": "graphql",
+                          "graphql": {
+                            "query": "query {\n  vSphereVmNewConnection(\n    filter: [\n      # {field: NAME_EXACT_MATCH texts: \"foo\"}\n      {field: IS_RELIC texts: \"false\"},\n      {field: IS_REPLICATED texts: \"false\"}\n    ]\n  ) {\n    nodes {\n      name\n      id\n      cdmId\n      effectiveSlaDomain {\n        name\n        id\n      }\n      guestCredentialAuthorizationStatus\n      objectType\n      powerStatus\n      slaAssignment\n      snapshotConsistencyMandate\n      blueprintId\n      guestCredentialId\n      guestOsName\n      isActive\n      isArrayIntegrationPossible\n      isBlueprintChild\n      isRelic\n      numWorkloadDescendants\n      slaPauseStatus\n      agentStatus {\n        agentStatus\n      }\n      allOrgs {\n        id\n        name\n      }\n      cluster {\n        id\n        name\n      }\n    }\n    pageInfo {\n      endCursor\n      hasNextPage\n    }\n  }\n}\n"
+                          }
+                        },
+                        "url": {
+                          "raw": "{{rsc_instance}}/api/graphql",
+                          "protocol": "https",
+                          "host": [
+                            "{{rsc_instance}}"
+                          ],
+                          "path": [
+                            "api",
+                            "graphql"
+                          ]
+                        }
+                      }
+                    },
+                    {
+                      "name": "fileRecovery",
+                      "request": {
+                        "method": "POST",
+                        "header": [
+                          {
+                            "key": "Content-Type",
+                            "value": "application/json"
+                          }
+                        ],
+                        "body": {
+                          "mode": "graphql",
+                          "graphql": {
+                            "query": "mutation {\n  vsphereVmRecoverFilesNew(input: {\n    id: \"4d94175e-9fd4-5198-8c46-64c2ce3559a2\"\n    clusterUuid: \"6a271636-9392-4cba-90c5-bdbe227854ab\"\n    config: {\n      destObjectId: \"a8fd8809-bbdb-5a03-8663-1c1feb19791c\"\n      shouldUseAgent: true\n      restoreConfig: {\n        restorePathPair: {\n          path: \"C:\\\\foo\\\\bar\\\\example.txt\"\n          restorePath: \"C:\\\\foo\\\\bar\"\n        }\n      }\n    }\n  }) {\n    id\n  }\n}"
+                          }
+                        },
+                        "url": {
+                          "raw": "{{rsc_instance}}/api/graphql",
+                          "protocol": "https",
+                          "host": [
+                            "{{rsc_instance}}"
+                          ],
+                          "path": [
+                            "api",
+                            "graphql"
+                          ]
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "name": "Microsoft-HyperV",
+                  "item": [
+                    {
+                      "name": "servers",
+                      "request": {
+                        "method": "POST",
+                        "header": [
+                          {
+                            "key": "Content-Type",
+                            "value": "application/json"
+                          }
+                        ],
+                        "body": {
+                          "mode": "graphql",
+                          "graphql": {
+                            "query": "query {\n  hypervServersPaginated(filter: [\n    {field: NAME_EXACT_MATCH texts: \"example\"}\n    {field: IS_RELIC texts: \"false\"}\n    {field: IS_REPLICATED texts: \"false\"}\n  ]) {\n    nodes {\n      name\n      id\n      connectionStatus\n      status {\n        connectivity\n      }\n      cluster {\n        name\n        id\n      }\n      effectiveSlaDomain {\n        name\n        id\n      }\n    }\n  }\n}"
+                          }
+                        },
+                        "url": {
+                          "raw": "{{rsc_instance}}/api/graphql",
+                          "protocol": "https",
+                          "host": [
+                            "{{rsc_instance}}"
+                          ],
+                          "path": [
+                            "api",
+                            "graphql"
+                          ]
+                        }
+                      }
+                    },
+                    {
+                      "name": "scvmms",
+                      "request": {
+                        "method": "POST",
+                        "header": [
+                          {
+                            "key": "Content-Type",
+                            "value": "application/json"
+                          }
+                        ],
+                        "body": {
+                          "mode": "graphql",
+                          "graphql": {
+                            "query": "query {\n  hypervScvmms(filter: [\n    {field: NAME_EXACT_MATCH texts: \"example\"}\n    {field: IS_RELIC texts: \"false\"}\n    {field: IS_REPLICATED texts: \"false\"}\n  ]) {\n    nodes {\n      name\n      id\n      hostName\n      scvmmInfo {\n        version\n      }\n      connectionStatus\n      status {\n        connectivity\n      }\n      cluster {\n        name\n        id\n      }\n      effectiveSlaDomain {\n        name\n        id\n      }\n    }\n  }\n}"
+                          }
+                        },
+                        "url": {
+                          "raw": "{{rsc_instance}}/api/graphql",
+                          "protocol": "https",
+                          "host": [
+                            "{{rsc_instance}}"
+                          ],
+                          "path": [
+                            "api",
+                            "graphql"
+                          ]
+                        }
+                      }
+                    },
+                    {
+                      "name": "snapshot",
+                      "request": {
+                        "method": "POST",
+                        "header": [
+                          {
+                            "key": "Content-Type",
+                            "value": "application/json"
+                          }
+                        ],
+                        "body": {
+                          "mode": "graphql",
+                          "graphql": {
+                            "query": "mutation hypervsnapshot {\n  hypervOnDemandSnapshot(input: {\n    id: \"f79b1102-77b5-4434-8400-c2a66c9b2dc1\"\n    config: {\n      slaId: \"c7bd8eb2-7132-4c8f-8592-682d507520dc\"\n    }\n  }) {\n    id\n  }\n}"
+                          }
+                        },
+                        "url": {
+                          "raw": "{{rsc_instance}}/api/graphql",
+                          "protocol": "https",
+                          "host": [
+                            "{{rsc_instance}}"
+                          ],
+                          "path": [
+                            "api",
+                            "graphql"
+                          ]
+                        }
+                      }
+                    },
+                    {
+                      "name": "virtualmachines",
+                      "request": {
+                        "method": "POST",
+                        "header": [
+                          {
+                            "key": "Content-Type",
+                            "value": "application/json"
+                          }
+                        ],
+                        "body": {
+                          "mode": "graphql",
+                          "graphql": {
+                            "query": "query {\n  hypervVirtualMachines(filter: [\n    #{field: NAME_EXACT_MATCH texts: \"example\"}\n    {field: IS_RELIC texts: \"false\"}\n    {field: IS_REPLICATED texts: \"false\"}\n  ]) {\n    nodes {\n      name\n      id\n      cdmId\n      osType\n      agentStatus {\n        connectionStatus\n        disconnectReason\n      }\n      cluster {\n        name\n        id\n      }\n      effectiveSlaDomain {\n        name\n        id\n      }\n    }\n  }\n}"
+                          }
+                        },
+                        "url": {
+                          "raw": "{{rsc_instance}}/api/graphql",
+                          "protocol": "https",
+                          "host": [
+                            "{{rsc_instance}}"
+                          ],
+                          "path": [
+                            "api",
+                            "graphql"
+                          ]
+                        }
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Cloud",
+              "item": [
+                {
+                  "name": "snapshot",
+                  "request": {
+                    "method": "POST",
+                    "header": [
+                      {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                      }
+                    ],
+                    "body": {
+                      "mode": "graphql",
+                      "graphql": {
+                        "query": "mutation {\n  takeOnDemandSnapshot(input: {\n    workloadIds: [\"0966c161-7156-495a-9a9c-73ec08e61e0d\"]\n    slaId: \"603d0b87-966a-4eb7-9705-d29fd45cf663\"\n  }) {\n    taskchainUuids {\n      workloadId\n      taskchainUuid\n    }\n    errors {\n      workloadId\n      error\n    }\n  }\n}"
+                      }
+                    },
+                    "url": {
+                      "raw": "{{rsc_instance}}/api/graphql",
+                      "protocol": "https",
+                      "host": [
+                        "{{rsc_instance}}"
+                      ],
+                      "path": [
+                        "api",
+                        "graphql"
+                      ]
+                    }
+                  }
+                },
+                {
+                  "name": "jobstatus",
+                  "request": {
+                    "method": "POST",
+                    "header": [
+                      {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                      }
+                    ],
+                    "body": {
+                      "mode": "graphql",
+                      "graphql": {
+                        "query": "query {\n\ttaskchain(taskchainId: \"019523cf-0ded-7373-9e35-cdddc24e5233\") {\n    state\n    progress\n    error\n    startTime\n    endTime\n  }\n}"
+                      }
+                    },
+                    "url": {
+                      "raw": "{{rsc_instance}}/api/graphql",
+                      "protocol": "https",
+                      "host": [
+                        "{{rsc_instance}}"
+                      ],
+                      "path": [
+                        "api",
+                        "graphql"
+                      ]
+                    }
+                  }
+                },
+                {
+                  "name": "Azure",
+                  "item": [
+                    {
+                      "name": "managed-instance-sqlservers",
+                      "request": {
+                        "method": "POST",
+                        "header": [
+                          {
+                            "key": "Content-Type",
+                            "value": "application/json"
+                          }
+                        ],
+                        "body": {
+                          "mode": "graphql",
+                          "graphql": {
+                            "query": "query {\n  azureSqlManagedInstanceServers( azureSqlManagedInstanceServerFilters: {\n      #nameSubstringFilter: {nameSubstring: \"example\"}\n      #tagFilter: {tagFilterParams: {tagKey: \"foo\", tagValue: \"bar\", filterType: TAG_KEY_VALUE}}\n      #resourceGroupFilter: {resourceGroupNames: [\"example\"]}\n      #subscriptionFilter: {subscriptionIds: [\"7d0d81dc-3323-4f45-bd0b-cc37e5bf9f37\"]}\n      #regionFilter: {regions: [EAST_US, EAST_US2]}\n  }) {\n    nodes {\n      name\n      id\n      region\n      vCoresCount\n      storageSizeGib\n      instancePoolName\n      serviceTier\n      vnetName\n      subnetName\n      azureNativeResourceGroup {\n        name\n        id\n      }\n      tags {\n        key\n        value\n      }\n      effectiveSlaDomain {\n        name\n        id\n      }\n    }\n  }\n}\n"
+                          }
+                        },
+                        "url": {
+                          "raw": "{{rsc_instance}}/api/graphql",
+                          "protocol": "https",
+                          "host": [
+                            "{{rsc_instance}}"
+                          ],
+                          "path": [
+                            "api",
+                            "graphql"
+                          ]
+                        }
+                      }
+                    },
+                    {
+                      "name": "managed-instance-databases",
+                      "request": {
+                        "method": "POST",
+                        "header": [
+                          {
+                            "key": "Content-Type",
+                            "value": "application/json"
+                          }
+                        ],
+                        "body": {
+                          "mode": "graphql",
+                          "graphql": {
+                            "query": "query {\n  azureSqlManagedInstanceDatabases( azureSqlManagedInstanceDatabaseFilters: {\n      #nameSubstringFilter: {nameSubstring: \"example\"}\n      #resourceGroupFilter: {resourceGroupNames: [\"example\"]}\n      #serverFilter: {serverNames: [\"example\"]}\n      #subscriptionFilter: {subscriptionIds: [\"7d0d81dc-3323-4f45-bd0b-cc37e5bf9f37\"]}\n      #regionFilter: {regions: [EAST_US, EAST_US2]}\n      #relicFilter: {relic: false}\n  }) {\n    nodes {\n      name\n      id\n      region\n      persistentStorage {\n        name\n        id\n      }\n      azureSqlManagedInstanceServer {\n        name\n        id\n      }\n      persistentStorage {\n        name\n        id\n      }\n      effectiveSlaDomain {\n        name\n        id\n      }\n    }\n  }\n}\n"
+                          }
+                        },
+                        "url": {
+                          "raw": "{{rsc_instance}}/api/graphql",
+                          "protocol": "https",
+                          "host": [
+                            "{{rsc_instance}}"
+                          ],
+                          "path": [
+                            "api",
+                            "graphql"
+                          ]
+                        }
+                      }
+                    },
+                    {
+                      "name": "databases",
+                      "request": {
+                        "method": "POST",
+                        "header": [
+                          {
+                            "key": "Content-Type",
+                            "value": "application/json"
+                          }
+                        ],
+                        "body": {
+                          "mode": "graphql",
+                          "graphql": {
+                            "query": "query {\n  azureSqlDatabases( azureSqlDatabaseFilters: {\n      #nameSubstringFilter: {nameSubstring: \"example\"}\n      #tagFilter: {tagFilterParams: {tagKey: \"foo\", tagValue: \"bar\", filterType: TAG_KEY_VALUE}}\n      #resourceGroupFilter: {resourceGroupNames: [\"example\"]}\n      #subscriptionFilter: {subscriptionIds: [\"7d0d81dc-3323-4f45-bd0b-cc37e5bf9f37\"]}\n      #regionFilter: {regions: [EAST_US, EAST_US2]}\n      #relicFilter: {relic: false}\n  }) {\n    nodes {\n      name\n      id\n      region\n\t\t\telasticPoolName\n      backupStorageRedundancy\n      serviceTier\n      maximumSizeInBytes\n      persistentStorage {\n        name\n        id\n      }\n      serviceObjectiveName\n      azureSqlDatabaseServer {\n        name\n        id\n      }\n      tags {\n        key\n        value\n      }\n      effectiveSlaDomain {\n        name\n        id\n      }\n    }\n  }\n}\n"
+                          }
+                        },
+                        "url": {
+                          "raw": "{{rsc_instance}}/api/graphql",
+                          "protocol": "https",
+                          "host": [
+                            "{{rsc_instance}}"
+                          ],
+                          "path": [
+                            "api",
+                            "graphql"
+                          ]
+                        }
+                      }
+                    },
+                    {
+                      "name": "virtualmachines",
+                      "request": {
+                        "method": "POST",
+                        "header": [
+                          {
+                            "key": "Content-Type",
+                            "value": "application/json"
+                          }
+                        ],
+                        "body": {
+                          "mode": "graphql",
+                          "graphql": {
+                            "query": "query {\n  azureNativeVirtualMachines( virtualMachineFilters: {\n      #nameSubstringFilter: {nameSubstring: \"example\"}\n      #tagFilter: {tagFilterParams: {tagKey: \"foo\", tagValue: \"bar\", filterType: TAG_KEY_VALUE}}\n      #resourceGroupFilter: {resourceGroupNames: [\"example\"]}\n      #subscriptionFilter: {subscriptionIds: [\"7d0d81dc-3323-4f45-bd0b-cc37e5bf9f37\"]}\n      #regionFilter: {regions: [EAST_US, EAST_US2]}\n      #relicFilter: {relic: false}\n  }) {\n    nodes {\n      name\n      id\n      nativeName\n      cloudNativeId\n      availabilitySetNativeId\n      resourceGroup {\n        name\n        id\n      }\n      region\n      sizeType\n      osType\n      vnetName\n      subnetName\n      privateIp\n      attachedManagedDisks {\n        name\n        id\n        cloudNativeId\n        diskSizeGib\n      }\n      tags {\n        key\n        value\n      }\n      effectiveSlaDomain {\n        name\n        id\n      }\n    }\n  }\n}\n"
+                          }
+                        },
+                        "url": {
+                          "raw": "{{rsc_instance}}/api/graphql",
+                          "protocol": "https",
+                          "host": [
+                            "{{rsc_instance}}"
+                          ],
+                          "path": [
+                            "api",
+                            "graphql"
+                          ]
+                        }
+                      }
+                    },
+                    {
+                      "name": "sqlservers",
+                      "request": {
+                        "method": "POST",
+                        "header": [
+                          {
+                            "key": "Content-Type",
+                            "value": "application/json"
+                          }
+                        ],
+                        "body": {
+                          "mode": "graphql",
+                          "graphql": {
+                            "query": "# https://docs.microsoft.com/en-us/azure/azure-sql/database/logical-servers\nquery {\n  azureSqlDatabaseServers( azureSqlDatabaseServerFilters: {\n      #nameSubstringFilter: {nameSubstring: \"example\"}\n      #resourceGroupFilter: {resourceGroupNames: [\"example\"]}\n      #subscriptionFilter: {subscriptionIds: [\"7d0d81dc-3323-4f45-bd0b-cc37e5bf9f37\"]}\n      #regionFilter: {regions: [EAST_US, EAST_US2]}\n  }) {\n    nodes {\n      name\n      id\n      region\n      tags {\n        key\n        value\n      }\n      effectiveSlaDomain {\n        name\n        id\n      }\n    }\n  }\n}\n"
+                          }
+                        },
+                        "url": {
+                          "raw": "{{rsc_instance}}/api/graphql",
+                          "protocol": "https",
+                          "host": [
+                            "{{rsc_instance}}"
+                          ],
+                          "path": [
+                            "api",
+                            "graphql"
+                          ]
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "name": "GCP",
+                  "item": [
+                    {
+                      "name": "instances",
+                      "request": {
+                        "method": "POST",
+                        "header": [
+                          {
+                            "key": "Content-Type",
+                            "value": "application/json"
+                          }
+                        ],
+                        "body": {
+                          "mode": "graphql",
+                          "graphql": {
+                            "query": "query {\n  gcpNativeGceInstances( gceInstanceFilters: {\n      #nameOrIdSubstringFilter: {nameOrIdSubstring: \"example\"}\n      #labelFilter: {labelFilterParams: {labelKey: \"foo\", labelValue: \"bar\", filterType: LABEL_KEY_VALUE}}\n      #projectFilter: {projectIds: [\"7d0d81dc-3323-4f45-bd0b-cc37e5bf9f37\"]}\n      #machineTypeFilter: {machineTypes: [\"example\"]}\n      #networkFilter: {networkNames: [\"example\"]}\n      #regionFilter: {regions: [\"example\"]}\n      #relicFilter: {relic: false}\n  }) {\n    nodes {\n      name\n      id\n      nativeName\n\t\t\tnativeId\n      region\n\t\t\tzone\n      machineType\n      vpcName\n      attachedDisks {\n        diskName\n        diskId\n        deviceName\n        sizeInGiBs\n        isBootDisk\n        isExcluded\n      }\n      labels {\n        key\n        value\n      }\n      networkHostProjectNativeId\n      gcpNativeProject {\n        name\n        id\n        nativeName\n        nativeId\n      }\n      effectiveSlaDomain {\n        name\n        id\n      }\n    }\n  }\n}\n"
+                          }
+                        },
+                        "url": {
+                          "raw": "{{rsc_instance}}/api/graphql",
+                          "protocol": "https",
+                          "host": [
+                            "{{rsc_instance}}"
+                          ],
+                          "path": [
+                            "api",
+                            "graphql"
+                          ]
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "name": "AWS",
+                  "item": [
+                    {
+                      "name": "buckets",
+                      "request": {
+                        "method": "POST",
+                        "header": [
+                          {
+                            "key": "Content-Type",
+                            "value": "application/json"
+                          }
+                        ],
+                        "body": {
+                          "mode": "graphql",
+                          "graphql": {
+                            "query": "query {\n  awsNativeRoot {\n    objectTypeDescendantConnection(\n      objectTypeFilter: AWS_NATIVE_S3_BUCKET\n      filter: [\n        #{field: NAME_EXACT_MATCH texts: \"example\"}\n        #{field: AWS_TAG tagFilterParams: {tagKey: \"foo\" tagValue: \"bar\" filterType: TAG_KEY_VALUE}}\n      ]\n    ) {\n      nodes {\n        name\n        id\n        nativeName\n        cloudNativeId\n        region\n        tags {\n          key\n          value\n        }\n        ... on AwsNativeS3Bucket {\n          numberOfObjects\n          bucketSizeBytes\n          isOnboarding\n        }\n        effectiveSlaDomain {\n          name\n          id\n        }\n      }\n    }\n  }\n}\n"
+                          }
+                        },
+                        "url": {
+                          "raw": "{{rsc_instance}}/api/graphql",
+                          "protocol": "https",
+                          "host": [
+                            "{{rsc_instance}}"
+                          ],
+                          "path": [
+                            "api",
+                            "graphql"
+                          ]
+                        }
+                      }
+                    },
+                    {
+                      "name": "volumes",
+                      "request": {
+                        "method": "POST",
+                        "header": [
+                          {
+                            "key": "Content-Type",
+                            "value": "application/json"
+                          }
+                        ],
+                        "body": {
+                          "mode": "graphql",
+                          "graphql": {
+                            "query": "query {\n  awsNativeEbsVolumes(ebsVolumeFilters: {\n    #nameOrIdSubstringFilter: {nameOrIdSubstring: \"example\"}\n    #regionFilter: {regions: [US_EAST_1]}\n    #tagFilter: {tagFilterParams: {tagKey: \"foo\" tagValue: \"bar\" filterType: TAG_KEY_VALUE}}\n    #typeFilter: {ebsVolumeTypes: [IO1,IO2]}\n  }) {\n    nodes {\n      name\n      id\n      nativeName\n      cloudNativeId\n      volumeType\n      sizeInGiBs\n      iops\n      region\n      availabilityZone\n      tags {\n        key\n        value\n      }\n      awsAccountRubrikId\n      awsAccount {\n        name\n        id\n      }\n      effectiveSlaDomain {\n        name\n        id\n      }\n    }\n  }\n}"
+                          }
+                        },
+                        "url": {
+                          "raw": "{{rsc_instance}}/api/graphql",
+                          "protocol": "https",
+                          "host": [
+                            "{{rsc_instance}}"
+                          ],
+                          "path": [
+                            "api",
+                            "graphql"
+                          ]
+                        }
+                      }
+                    },
+                    {
+                      "name": "ec2Instances",
+                      "request": {
+                        "method": "POST",
+                        "header": [
+                          {
+                            "key": "Content-Type",
+                            "value": "application/json"
+                          }
+                        ],
+                        "body": {
+                          "mode": "graphql",
+                          "graphql": {
+                            "query": "query {\n  awsNativeEc2Instances(ec2InstanceFilters: {\n    #nameOrIdSubstringFilter: {nameOrIdSubstring: \"example\"}\n    #regionFilter: {regions: [US_EAST_1]}\n    #tagFilter: {tagFilterParams: {tagKey: \"foo\" tagValue: \"bar\" filterType: TAG_KEY_VALUE}}\n    #vpcFilter: {vpcIds: [\"093e5470-22b4-483c-8910-fff0cbb982b1\"]}\n  }) {\n    nodes {\n      name\n      id\n      instanceName\n      instanceNativeId\n      instanceType\n      publicIp\n      privateIp\n      vpcName\n      vpcId\n      region\n      availabilityZone\n      osType\n      attachmentSpecs {\n        awsNativeEbsVolumeId\n        devicePath\n        isRootVolume\n        isExcludedFromSnapshot\n      }\n      tags {\n        key\n        value\n      }\n      awsAccountRubrikId\n      awsAccount {\n        name\n        id\n      }\n      effectiveSlaDomain {\n        name\n        id\n      }\n    }\n  }\n}"
+                          }
+                        },
+                        "url": {
+                          "raw": "{{rsc_instance}}/api/graphql",
+                          "protocol": "https",
+                          "host": [
+                            "{{rsc_instance}}"
+                          ],
+                          "path": [
+                            "api",
+                            "graphql"
+                          ]
+                        }
+                      }
+                    },
+                    {
+                      "name": "rdsInstances",
+                      "request": {
+                        "method": "POST",
+                        "header": [
+                          {
+                            "key": "Content-Type",
+                            "value": "application/json"
+                          }
+                        ],
+                        "body": {
+                          "mode": "graphql",
+                          "graphql": {
+                            "query": "query {\n  awsNativeRdsInstances(rdsInstanceFilters: {\n    #nameSubstringFilter: {nameSubstring: \"example\"}\n    #regionFilter: {regions: [US_EAST_1]}\n    #tagFilter: {tagFilterParams: {tagKey: \"foo\" tagValue: \"bar\" filterType: TAG_KEY_VALUE}}\n    #vpcFilter: {vpcIds: [\"093e5470-22b4-483c-8910-fff0cbb982b1\"]}\n  }) {\n    nodes {\n      name\n      id\n      dbInstanceName\n      dbiResourceId\n      dbInstanceClass\n      dbEngine\n      readReplicaSourceName\n      rdsType\n      vpcName\n      vpcId\n      isMultiAz\n      allocatedStorageInGibi\n      region\n      primaryAvailabilityZone\n      tags {\n        key\n        value\n      }\n      awsAccountRubrikId\n      awsAccount {\n        name\n        id\n      }\n      effectiveSlaDomain {\n        name\n        id\n      }\n    }\n  }\n}"
+                          }
+                        },
+                        "url": {
+                          "raw": "{{rsc_instance}}/api/graphql",
+                          "protocol": "https",
+                          "host": [
+                            "{{rsc_instance}}"
+                          ],
+                          "path": [
+                            "api",
+                            "graphql"
+                          ]
+                        }
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
