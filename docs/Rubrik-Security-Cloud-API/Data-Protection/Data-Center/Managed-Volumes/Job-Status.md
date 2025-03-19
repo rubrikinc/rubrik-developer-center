@@ -2,43 +2,43 @@
 
 === "GraphQL"
     ```graphql
-    --8<-- "snippets/graphql/rubrik-security-cloud-api/data-protection/data-center/managed-volumes/slaManagedVolumeSnapshotJobStatus.gql"
+    --8<-- "code/Rubrik-Security-Cloud-API/Data-Protection/Data-Center/Managed-Volumes/slaManagedVolumeSnapshotJobStatus.gql"
     ```
 === "PowerShell SDK"
     ```powershell
-    --8<-- "snippets/powershell-sdk/.ps1"
+    --8<-- "code/Rubrik-Security-Cloud-API/Data-Protection/Data-Center/Managed-Volumes/slaManagedVolumeSnapshotJobStatus.ps1"
     ```
 === "Shell"
     ```bash
-    --8<-- "snippets/shell/.sh"
+    --8<-- "code/Rubrik-Security-Cloud-API/Data-Protection/Data-Center/Managed-Volumes/slaManagedVolumeSnapshotJobStatus.sh"
     ```
 
 ## Retrieving Managed Volume Begin Snapshot Job Status
 
 === "GraphQL"
     ```graphql
-    --8<-- "snippets/graphql/rubrik-security-cloud-api/data-protection/data-center/managed-volumes/beginSnapshotJobStatus.gql"
+    --8<-- "code/Rubrik-Security-Cloud-API/Data-Protection/Data-Center/Managed-Volumes/beginSnapshotJobStatus.gql"
     ```
 === "PowerShell SDK"
     ```powershell
-    --8<-- "snippets/powershell-sdk/.ps1"
+    --8<-- "code/Rubrik-Security-Cloud-API/Data-Protection/Data-Center/Managed-Volumes/beginSnapshotJobStatus.ps1"
     ```
 === "Shell"
     ```bash
-    --8<-- "snippets/shell/.sh"
+    --8<-- "code/Rubrik-Security-Cloud-API/Data-Protection/Data-Center/Managed-Volumes/beginSnapshotJobStatus.sh"
     ```
 
 ## Retrieving Managed Volume End Snapshot Job Status
 
 === "GraphQL"
     ```graphql
-    --8<-- "snippets/graphql/rubrik-security-cloud-api/data-protection/data-center/managed-volumes/endSnapshotJobStatus.gql"
+    --8<-- "code/Rubrik-Security-Cloud-API/Data-Protection/Data-Center/Managed-Volumes/endSnapshotJobStatus.gql"
     ```
 === "PowerShell SDK"
     ```powershell
-    --8<-- "snippets/powershell-sdk/.ps1"
+    --8<-- "code/Rubrik-Security-Cloud-API/Data-Protection/Data-Center/Managed-Volumes/endSnapshotJobStatus.ps1"
     ```
 === "Shell"
     ```bash
-    --8<-- "snippets/shell/.sh"
+    --8<-- "code/Rubrik-Security-Cloud-API/Data-Protection/Data-Center/Managed-Volumes/endSnapshotJobStatus.sh"
     ```

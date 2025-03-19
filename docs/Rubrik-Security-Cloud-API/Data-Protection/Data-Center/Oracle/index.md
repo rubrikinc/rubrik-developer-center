@@ -6,28 +6,28 @@ Title: Oracle
 
 === "GraphQL"
     ```graphql
-    --8<-- "snippets/graphql/rubrik-security-cloud-api/data-protection/data-center/oracle/databases.gql"
+    --8<-- "code/Rubrik-Security-Cloud-API/Data-Protection/Data-Center/Oracle/databases.gql"
     ```
 === "PowerShell SDK"
     ```powershell
-    --8<-- "snippets/powershell-sdk/.ps1"
+    --8<-- "code/Rubrik-Security-Cloud-API/Data-Protection/Data-Center/Oracle/databases.ps1"
     ```
 === "Shell"
     ```bash
-    --8<-- "snippets/shell/.sh"
+    --8<-- "code/Rubrik-Security-Cloud-API/Data-Protection/Data-Center/Oracle/databases.sh"
     ```
 
 ## Retrieving Oracle Hosts and Clusters
 
 === "GraphQL"
     ```graphql
-    --8<-- "snippets/graphql/rubrik-security-cloud-api/data-protection/data-center/oracle/hostsAndClusters.gql"
+    --8<-- "code/Rubrik-Security-Cloud-API/Data-Protection/Data-Center/Oracle/hostsAndClusters.gql"
     ```
 === "PowerShell SDK"
     ```powershell
-    --8<-- "snippets/powershell-sdk/.ps1"
+    --8<-- "code/Rubrik-Security-Cloud-API/Data-Protection/Data-Center/Oracle/hostsAndClusters.ps1"
     ```
 === "Shell"
     ```bash
-    --8<-- "snippets/shell/.sh"
+    --8<-- "code/Rubrik-Security-Cloud-API/Data-Protection/Data-Center/Oracle/hostsAndClusters.sh"
     ```

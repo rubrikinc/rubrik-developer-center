@@ -6,28 +6,28 @@ Title: SAP HANA
 
 === "GraphQL"
     ```graphql
-    --8<-- "snippets/graphql/rubrik-security-cloud-api/data-protection/data-center/sap-hana/databases.gql"
+    --8<-- "code/Rubrik-Security-Cloud-API/Data-Protection/Data-Center/SAP-HANA/databases.gql"
     ```
 === "PowerShell SDK"
     ```powershell
-    --8<-- "snippets/powershell-sdk/.ps1"
+    --8<-- "code/Rubrik-Security-Cloud-API/Data-Protection/Data-Center/SAP-HANA/databases.ps1"
     ```
 === "Shell"
     ```bash
-    --8<-- "snippets/shell/.sh"
+    --8<-- "code/Rubrik-Security-Cloud-API/Data-Protection/Data-Center/SAP-HANA/databases.sh"
     ```
 
 ## Retrieving SAP HANA Systems
 
 === "GraphQL"
     ```graphql
-    --8<-- "snippets/graphql/rubrik-security-cloud-api/data-protection/data-center/sap-hana/systems.gql"
+    --8<-- "code/Rubrik-Security-Cloud-API/Data-Protection/Data-Center/SAP-HANA/systems.gql"
     ```
 === "PowerShell SDK"
     ```powershell
-    --8<-- "snippets/powershell-sdk/.ps1"
+    --8<-- "code/Rubrik-Security-Cloud-API/Data-Protection/Data-Center/SAP-HANA/systems.ps1"
     ```
 === "Shell"
     ```bash
-    --8<-- "snippets/shell/.sh"
+    --8<-- "docs/Rubrik-Security-Cloud-API/Data-Protection/Data-Center/SAP-HANA/systems.sh"
     ```
