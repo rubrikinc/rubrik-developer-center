@@ -6,43 +6,43 @@ Title: Microsoft Exchange
 
 === "GraphQL"
     ```graphql
-    --8<-- "snippets/graphql/rubrik-security-cloud-api/data-protection/data-center/microsoft-exchange/dags.gql"
+    --8<-- "code/Rubrik-Security-Cloud-API/Data-Protection/Data-Center/Microsoft-Exchange/dags.gql"
     ```
 === "PowerShell SDK"
     ```powershell
-    --8<-- "snippets/powershell-sdk/.ps1"
+    --8<-- "code/Rubrik-Security-Cloud-API/Data-Protection/Data-Center/Microsoft-Exchange/dags.ps1"
     ```
 === "Shell"
     ```bash
-    --8<-- "snippets/shell/.sh"
+    --8<-- "code/Rubrik-Security-Cloud-API/Data-Protection/Data-Center/Microsoft-Exchange/dags.sh"
     ```
 
 ## Retrieving Microsoft Exchange Servers
 
 === "GraphQL"
     ```graphql
-    --8<-- "snippets/graphql/rubrik-security-cloud-api/data-protection/data-center/microsoft-exchange/servers.gql"
+    --8<-- "code/Rubrik-Security-Cloud-API/Data-Protection/Data-Center/Microsoft-Exchange/servers.gql"
     ```
 === "PowerShell SDK"
     ```powershell
-    --8<-- "snippets/powershell-sdk/.ps1"
+    --8<-- "code/Rubrik-Security-Cloud-API/Data-Protection/Data-Center/Microsoft-Exchange/servers.ps1"
     ```
 === "Shell"
     ```bash
-    --8<-- "snippets/shell/.sh"
+    --8<-- "code/Rubrik-Security-Cloud-API/Data-Protection/Data-Center/Microsoft-Exchange/servers.sh"
     ```
 
 ## Retrieving Microsoft Exchange Databases
 
 === "GraphQL"
     ```graphql
-    --8<-- "snippets/graphql/rubrik-security-cloud-api/data-protection/data-center/microsoft-exchange/databases.gql"
+    --8<-- "code/Rubrik-Security-Cloud-API/Data-Protection/Data-Center/Microsoft-Exchange/databases.gql"
     ```
 === "PowerShell SDK"
     ```powershell
-    --8<-- "snippets/powershell-sdk/.ps1"
+    --8<-- "code/Rubrik-Security-Cloud-API/Data-Protection/Data-Center/Microsoft-Exchange/databases.ps1"
     ```
 === "Shell"
     ```bash
-    --8<-- "snippets/shell/.sh"
+    --8<-- "code/Rubrik-Security-Cloud-API/Data-Protection/Data-Center/Microsoft-Exchange/databases.sh"
     ```

@@ -6,28 +6,28 @@ Title: Managed Volumes
 
 === "GraphQL"
     ```graphql
-    --8<-- "snippets/graphql/rubrik-security-cloud-api/data-protection/data-center/managed-volumes/slaManagedVolumes.gql"
+    --8<-- "code/Rubrik-Security-Cloud-API/Data-Protection/Data-Center/Managed-Volumes/slaManagedVolumes.gql"
     ```
 === "PowerShell SDK"
     ```powershell
-    --8<-- "snippets/powershell-sdk/.ps1"
+    --8<-- "code/Rubrik-Security-Cloud-API/Data-Protection/Data-Center/Managed-Volumes/slaManagedVolumes.ps1"
     ```
 === "Shell"
     ```bash
-    --8<-- "snippets/shell/.sh"
+    --8<-- "code/Rubrik-Security-Cloud-API/Data-Protection/Data-Center/Managed-Volumes/slaManagedVolumes.sh"
     ```
 
 ## Retrieving Managed Volumes
 
 === "GraphQL"
     ```graphql
-    --8<-- "snippets/graphql/rubrik-security-cloud-api/data-protection/data-center/managed-volumes/managedVolumes.gql"
+    --8<-- "code/Rubrik-Security-Cloud-API/Data-Protection/Data-Center/Managed-Volumes/managedVolumes.gql"
     ```
 === "PowerShell SDK"
     ```powershell
-    --8<-- "snippets/powershell-sdk/.ps1"
+    --8<-- "code/Rubrik-Security-Cloud-API/Data-Protection/Data-Center/Managed-Volumes/managedVolumes.ps1"
     ```
 === "Shell"
     ```bash
-    --8<-- "snippets/shell/.sh"
+    --8<-- "code/Rubrik-Security-Cloud-API/Data-Protection/Data-Center/Managed-Volumes/managedVolumes.sh"
     ```

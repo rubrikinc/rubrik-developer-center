@@ -2,13 +2,13 @@
 
 === "GraphQL"
     ```graphql
-    --8<-- "snippets/graphql/rubrik-security-cloud-api/data-protection/data-center/microsoft-sql/jobstatus.gql"
+    --8<-- "code/Rubrik-Security-Cloud-API/Data-Protection/Data-Center/Microsoft-SQL/jobstatus.gql"
     ```
 === "PowerShell SDK"
     ```powershell
-    --8<-- "snippets/powershell-sdk/.ps1"
+    --8<-- "code/Rubrik-Security-Cloud-API/Data-Protection/Data-Center/Microsoft-SQL/jobstatus.ps1"
     ```
 === "Shell"
     ```bash
-    --8<-- "snippets/shell/.sh"
+    --8<-- "code/Rubrik-Security-Cloud-API/Data-Protection/Data-Center/Microsoft-SQL/jobstatus.sh"
     ```

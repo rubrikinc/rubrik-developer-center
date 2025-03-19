@@ -20,11 +20,11 @@ Retrieve relevant chunks with Annapurna retriever.
 ### Example
 === "Python"
     ```python
-    --8<-- "snippets/python/rubrik-security-cloud-api/annapurna/retrieve.py"
+    --8<-- "code/Rubrik-Security-Cloud-API/Annapurna/Retrievers/retrieve.py"
     ```
 === "Shell"
     ```bash
-    --8<-- "snippets/shell/rubrik-security-cloud-api/annapurna/retrieve.sh"
+    --8<-- "code/Rubrik-Security-Cloud-API/Annapurna/Retrievers/retrieve.sh"
     ```
 
 ### Response (200)

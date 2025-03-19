@@ -1,15 +1,14 @@
 ## Exchange On-Demand Backup
 
-mutation exchangeOnDemandBackup {
-  createOnDemandExchangeBackup(input: {
-    id: "f79b1102-77b5-4434-8400-c2a66c9b2dc1"
-    config: {
-      forceFullSnapshot: false
-      baseOnDemandSnapshotConfig: {
-        slaId: "c7bd8eb2-7132-4c8f-8592-682d507520dc"
-      }
-    }
-  }) {
-    id
-  }
-}
+=== "GraphQL"
+  ```graphql
+  --8<-- "code/Rubrik-Security-Cloud-API/Data-Protection/Data-Center/Microsoft-Exchange/snapshot.gql"
+  ```
+=== "PowerShell SDK"
+  ```powershell
+  --8<-- "code/Rubrik-Security-Cloud-API/Data-Protection/Data-Center/Microsoft-Exchange/snapshot.ps1"
+  ```
+=== "Shell"
+  ```bash
+  --8<-- "code/Rubrik-Security-Cloud-API/Data-Protection/Data-Center/Microsoft-Exchange/snapshot.gql"
+  ```

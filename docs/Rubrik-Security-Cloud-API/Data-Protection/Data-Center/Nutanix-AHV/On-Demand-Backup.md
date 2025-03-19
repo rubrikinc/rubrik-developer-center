@@ -2,13 +2,13 @@
 
 === "GraphQL"
     ```graphql
-    --8<-- "snippets/graphql/rubrik-security-cloud-api/data-protection/data-center/nutanix/snapshot.gql"
+    --8<-- "docs/Rubrik-Security-Cloud-API/Data-Protection/Data-Center/Nutanix-AHV/snapshot.gql"
     ```
 === "PowerShell SDK"
     ```powershell
-    --8<-- "snippets/powershell-sdk/.ps1"
+    --8<-- "docs/Rubrik-Security-Cloud-API/Data-Protection/Data-Center/Nutanix-AHV/snapshot.ps1"
     ```
 === "Shell"
     ```bash
-    --8<-- "snippets/shell/.sh"
+    --8<-- "docs/Rubrik-Security-Cloud-API/Data-Protection/Data-Center/Nutanix-AHV/snapshot.sh"
     ```

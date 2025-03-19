@@ -6,43 +6,43 @@ Title: MongoDB
 
 === "GraphQL"
     ```graphql
-    --8<-- "snippets/graphql/rubrik-security-cloud-api/data-protection/data-center/mongodb/collections.gql"
+    --8<-- "code/Rubrik-Security-Cloud-API/Data-Protection/Data-Center/MongoDB/collections.gql"
     ```
 === "PowerShell SDK"
     ```powershell
-    --8<-- "snippets/powershell-sdk/.ps1"
+    --8<-- "code/Rubrik-Security-Cloud-API/Data-Protection/Data-Center/MongoDB/collections.ps1"
     ```
 === "Shell"
     ```bash
-    --8<-- "snippets/shell/.sh"
+    --8<-- "code/Rubrik-Security-Cloud-API/Data-Protection/Data-Center/MongoDB/collections.sh"
     ```
 
 ## Retrieving Mongo Databases
 
 === "GraphQL"
     ```graphql
-    --8<-- "snippets/graphql/rubrik-security-cloud-api/data-protection/data-center/mongodb/databases.gql"
+    --8<-- "code/Rubrik-Security-Cloud-API/Data-Protection/Data-Center/MongoDB/databases.gql"
     ```
 === "PowerShell SDK"
     ```powershell
-    --8<-- "snippets/powershell-sdk/.ps1"
+    --8<-- "code/Rubrik-Security-Cloud-API/Data-Protection/Data-Center/MongoDB/databases.ps1"
     ```
 === "Shell"
     ```bash
-    --8<-- "snippets/shell/.sh"
+    --8<-- "code/Rubrik-Security-Cloud-API/Data-Protection/Data-Center/MongoDB/databases.sh"
     ```
 
 ## Retrieving Mongo Sources
 
 === "GraphQL"
     ```graphql
-    --8<-- "snippets/graphql/rubrik-security-cloud-api/data-protection/data-center/mongodb/sources.gql"
+    --8<-- "code/Rubrik-Security-Cloud-API/Data-Protection/Data-Center/MongoDB/sources.gql"
     ```
 === "PowerShell SDK"
     ```powershell
-    --8<-- "snippets/powershell-sdk/.ps1"
+    --8<-- "code/Rubrik-Security-Cloud-API/Data-Protection/Data-Center/MongoDB/sources.ps1"
     ```
 === "Shell"
     ```bash
-    --8<-- "snippets/shell/.sh"
+    --8<-- "code/Rubrik-Security-Cloud-API/Data-Protection/Data-Center/MongoDB/sources.sh"
     ```

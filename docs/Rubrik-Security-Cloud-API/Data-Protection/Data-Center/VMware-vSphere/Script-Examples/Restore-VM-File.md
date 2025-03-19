@@ -7,5 +7,5 @@ This full working example performs a restore of the file or folder specified in 
 
 ### Code
 ```powershell
---8<-- "scripts/powershell-sdk/restoreVmFile.ps1"
+--8<-- "code/Rubrik-Security-Cloud-API/Data-Protection/Data-Center/VMware-vSphere/restoreVmFile.ps1"
 ```
