@@ -1,7 +1,10 @@
 {% extends "main.html" %} 
-  
+
+{% block htmltitle %}
+<title>404 - Not Found</title>
+{% endblock %}
  <!-- Content --> 
- {% block content %} 
-   <h1>404 - Not found</h1> 
-   The page you are looking for does not exist. Check the URL or return to the <a href="/">homepage</a>.
- {% endblock %}
+{% block content %} 
+  <h1>404 - Not Found</h1> 
+  A page does not exist at this location. Check the URL or return to the <a href="/">homepage</a>.
+{% endblock %}
