@@ -3,7 +3,7 @@ query {
     objectTypeDescendantConnection(
       objectTypeFilter: AWS_NATIVE_S3_BUCKET
       filter: [
-        {field: NAME_EXACT_MATCH texts: "example"}
+        #{field: NAME_EXACT_MATCH texts: "example"}
         #{field: AWS_TAG tagFilterParams: {tagKey: "foo" tagValue: "bar" filterType: TAG_KEY_VALUE}}
       ]
     ) {
