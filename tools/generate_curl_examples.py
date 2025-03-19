@@ -57,7 +57,7 @@ def minify_query(query: str) -> str:
     return query_escaped.strip()
 
 # Walk through the graphql_dir directory structure
-for root, dirs, files in os.walk(graphql_dir):
+for root, dirs, files in os.walk(code_dir):
     for file in files:
         if file.endswith('.gql'):
             # Full path of the current .gql file
@@ -67,7 +67,7 @@ for root, dirs, files in os.walk(graphql_dir):
             minified = minify_query(content)
             
             # Determine the file's relative path from the graphql root
-            rel_path = os.path.relpath(graphql_path, graphql_dir)
+            rel_path = os.path.relpath(graphql_path, code_dir)
             # Change the extension from .gql to .sh
             new_rel_path = os.path.splitext(rel_path)[0] + '.sh'
             # Destination path under the shell directory, preserving the structure
