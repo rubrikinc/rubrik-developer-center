@@ -82,6 +82,5 @@ plugins:
       type: iso_date
 watch:
   - includes
-  - snippets
-  - scripts
+  - code
   - overrides
