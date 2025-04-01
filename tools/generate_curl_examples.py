@@ -5,8 +5,7 @@ import re
 # Configuration variables
 endpoint = "https://example.my.rubrik.com/api/graphql" 
 
-graphql_dir = "../snippets/graphql"
-shell_dir = "../snippets/shell"
+code_dir = "../code"
 
 def remove_graphql_comments(query: str) -> str:
     """
@@ -71,10 +70,7 @@ for root, dirs, files in os.walk(code_dir):
             # Change the extension from .gql to .sh
             new_rel_path = os.path.splitext(rel_path)[0] + '.sh'
             # Destination path under the shell directory, preserving the structure
-            shell_path = os.path.join(shell_dir, new_rel_path)
-            
-            # Ensure the destination directory exists
-            os.makedirs(os.path.dirname(shell_path), exist_ok=True)
+            shell_path = os.path.join(code_dir, new_rel_path)
             
             # Build the shell script content.
             # The curl command uses double quotes in the JSON payload so that
