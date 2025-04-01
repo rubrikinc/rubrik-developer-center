@@ -1,8 +1,7 @@
 $query = New-RscQuery -GqlQuery awsNativeEbsVolumes
 $query.Field.Nodes = @(Get-RscType -Name AwsNativeEbsVolume -InitialProperties `
-name,`
-idm,`
-
+      name,`
+      idm,`
       nativeName,`
       cloudNativeId,`
       volumeType,`
