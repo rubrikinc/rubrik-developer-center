@@ -1,0 +1,1 @@
+Get-RscMssqlInstance -Hostname "mssql.example.com" -Relic:$false -Replica:$false

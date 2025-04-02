@@ -1,0 +1,1 @@
+Get-RscMssqlDatabase -Relic:$false -Replica:$false
