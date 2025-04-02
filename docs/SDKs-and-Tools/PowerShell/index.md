@@ -83,7 +83,7 @@ Get-Help Get-RscSla -Full
 
 ## Updating
 ---
-To update to the latest version of the RSC PowerShell module, use the `Update-Module` cmdlet.
+To update to the latest version of the RSC PowerShell module, use the `Update-Module` cmdlet. Restart the PowerShell terminal session or use `Remove-Module RubrikSecurityCloud` to unload the old version from memory. Import the new module version using `Import-Module RubrikSecurityCloud`.
 
 ```PowerShell
 Update-Module RubrikSecurityCloud -Scope CurrentUser
