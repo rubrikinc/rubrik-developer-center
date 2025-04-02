@@ -25,6 +25,8 @@ To list virtual machines known by Rubrik, you can perform the following. There a
 
 ## Retrieving VMware vSphere Compute Clusters
 
+Querying for vSphere Compute Clusters is the easiest way to get the IDs for all recovery destinations.
+
 === "GraphQL"
     ```graphql
     --8<-- "code/Rubrik-Security-Cloud-API/Data-Protection/Data-Center/VMware-vSphere/clusters.gql"
