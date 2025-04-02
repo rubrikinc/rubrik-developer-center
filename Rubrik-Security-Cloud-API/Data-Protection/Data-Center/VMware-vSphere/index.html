@@ -2625,8 +2625,6 @@
       
         
       
-        
-      
     
     
     
@@ -2745,29 +2743,6 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="vSphere-Compute-Clusters/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    vSphere Compute Clusters
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
     
     
       
@@ -2784,10 +2759,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_6_2_13_6" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_6_2_13_5" >
         
           
-          <label class="md-nav__link" for="__nav_2_6_2_13_6" id="__nav_2_6_2_13_6_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2_6_2_13_5" id="__nav_2_6_2_13_5_label" tabindex="0">
             
   
   
@@ -2800,8 +2775,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="5" aria-labelledby="__nav_2_6_2_13_6_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2_6_2_13_6">
+        <nav class="md-nav" data-md-level="5" aria-labelledby="__nav_2_6_2_13_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_6_2_13_5">
             <span class="md-nav__icon md-icon"></span>
             Script Examples
           </label>
@@ -4225,6 +4200,7 @@
 </div>
 </div>
 <h2 id="retrieving-vmware-vsphere-compute-clusters">Retrieving VMware vSphere Compute Clusters</h2>
+<p>Querying for vSphere Compute Clusters is the easiest way to get the IDs for all recovery destinations.</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="2:3"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><input id="__tabbed_2_3" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">GraphQL</label><label for="__tabbed_2_2">PowerShell SDK</label><label for="__tabbed_2_3">Shell</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
@@ -4253,7 +4229,31 @@
 </span></code></pre></div>
 </div>
 <div class="tabbed-block">
-<div class="language-powershell highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="nv">$query</span> <span class="p">=</span> <span class="nb">New-RscQuery</span> <span class="n">-GqlQuery</span> <span class="n">vSphereComputeClusters</span>
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="nv">$query</span><span class="p">.</span><span class="n">var</span><span class="p">.</span><span class="k">filter</span> <span class="p">=</span> <span class="p">@(</span><span class="nb">Get-RscType</span> <span class="n">-Name</span> <span class="k">Filter</span><span class="p">)</span>
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="nv">$query</span><span class="p">.</span><span class="n">var</span><span class="p">.</span><span class="k">filter</span><span class="p">[</span><span class="n">0</span><span class="p">].</span><span class="n">Texts</span> <span class="p">=</span> <span class="s2">&quot;example&quot;</span>
+</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="nv">$query</span><span class="p">.</span><span class="n">var</span><span class="p">.</span><span class="k">filter</span><span class="p">[</span><span class="n">0</span><span class="p">].</span><span class="n">field</span> <span class="p">=</span> <span class="no">[RubrikSecurityCloud.Types.HierarchyFilterField]</span><span class="p">::</span><span class="n">NAME_EXACT_MATCH</span>
+</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="nv">$query</span><span class="p">.</span><span class="n">var</span><span class="p">.</span><span class="k">filter</span> <span class="p">+=</span> <span class="nb">Get-RscType</span> <span class="n">-Name</span> <span class="k">Filter</span>
+</span><span id="__span-4-6"><a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a><span class="nv">$query</span><span class="p">.</span><span class="n">var</span><span class="p">.</span><span class="k">filter</span><span class="p">[</span><span class="n">1</span><span class="p">].</span><span class="n">field</span> <span class="p">=</span> <span class="no">[RubrikSecurityCloud.Types.HierarchyFilterField]</span><span class="p">::</span><span class="n">IS_RELIC</span>
+</span><span id="__span-4-7"><a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a><span class="nv">$query</span><span class="p">.</span><span class="n">var</span><span class="p">.</span><span class="k">filter</span><span class="p">[</span><span class="n">1</span><span class="p">].</span><span class="n">Texts</span> <span class="p">=</span> <span class="s2">&quot;false&quot;</span>
+</span><span id="__span-4-8"><a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a><span class="nv">$query</span><span class="p">.</span><span class="n">var</span><span class="p">.</span><span class="k">filter</span> <span class="p">+=</span> <span class="nb">Get-RscType</span> <span class="n">-Name</span> <span class="k">Filter</span>
+</span><span id="__span-4-9"><a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a><span class="nv">$query</span><span class="p">.</span><span class="n">var</span><span class="p">.</span><span class="k">filter</span><span class="p">[</span><span class="n">2</span><span class="p">].</span><span class="n">Field</span> <span class="p">=</span> <span class="no">[RubrikSecurityCloud.Types.HierarchyFilterField]</span><span class="p">::</span><span class="n">IS_REPLICATED</span>
+</span><span id="__span-4-10"><a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a><span class="nv">$query</span><span class="p">.</span><span class="n">var</span><span class="p">.</span><span class="k">filter</span><span class="p">[</span><span class="n">2</span><span class="p">].</span><span class="n">Texts</span> <span class="p">=</span> <span class="s2">&quot;false&quot;</span>
+</span><span id="__span-4-11"><a id="__codelineno-4-11" name="__codelineno-4-11" href="#__codelineno-4-11"></a><span class="nv">$query</span><span class="p">.</span><span class="n">field</span><span class="p">.</span><span class="n">Nodes</span><span class="p">[</span><span class="n">0</span><span class="p">].</span><span class="n">descendantConnection</span> <span class="p">=</span> <span class="nb">Get-RscType</span> <span class="n">-Name</span> <span class="n">VsphereComputeClusterDescendantTypeConnection</span>
+</span><span id="__span-4-12"><a id="__codelineno-4-12" name="__codelineno-4-12" href="#__codelineno-4-12"></a><span class="nv">$query</span><span class="p">.</span><span class="n">field</span><span class="p">.</span><span class="n">nodes</span><span class="p">[</span><span class="n">0</span><span class="p">].</span><span class="n">Vars</span><span class="p">.</span><span class="n">DescendantConnection</span><span class="p">.</span><span class="n">typeFilter</span> <span class="p">=</span> <span class="p">@(</span>
+</span><span id="__span-4-13"><a id="__codelineno-4-13" name="__codelineno-4-13" href="#__codelineno-4-13"></a>    <span class="no">[RubrikSecurityCloud.Types.HierarchyObjectTypeEnum]</span><span class="p">::</span><span class="n">VSPHERE_HOST</span>
+</span><span id="__span-4-14"><a id="__codelineno-4-14" name="__codelineno-4-14" href="#__codelineno-4-14"></a>    <span class="no">[RubrikSecurityCloud.Types.HierarchyObjectTypeEnum]</span><span class="p">::</span><span class="n">VSPHERE_NETWORK</span>
+</span><span id="__span-4-15"><a id="__codelineno-4-15" name="__codelineno-4-15" href="#__codelineno-4-15"></a>    <span class="no">[RubrikSecurityCloud.Types.HierarchyObjectTypeEnum]</span><span class="p">::</span><span class="n">VSPHERE_DATASTORE</span>
+</span><span id="__span-4-16"><a id="__codelineno-4-16" name="__codelineno-4-16" href="#__codelineno-4-16"></a>    <span class="no">[RubrikSecurityCloud.Types.HierarchyObjectTypeEnum]</span><span class="p">::</span><span class="n">VSPHERE_RESOURCE_POOL</span>
+</span><span id="__span-4-17"><a id="__codelineno-4-17" name="__codelineno-4-17" href="#__codelineno-4-17"></a><span class="p">)</span>
+</span><span id="__span-4-18"><a id="__codelineno-4-18" name="__codelineno-4-18" href="#__codelineno-4-18"></a><span class="nv">$query</span><span class="p">.</span><span class="n">field</span><span class="p">.</span><span class="n">nodes</span><span class="p">[</span><span class="n">0</span><span class="p">].</span><span class="n">DescendantConnection</span><span class="p">.</span><span class="n">Nodes</span> <span class="p">=</span> <span class="p">@(</span>
+</span><span id="__span-4-19"><a id="__codelineno-4-19" name="__codelineno-4-19" href="#__codelineno-4-19"></a>    <span class="p">(</span><span class="nb">Get-RscType</span> <span class="n">-Name</span> <span class="n">VsphereHost</span> <span class="n">-InitialProperties</span> <span class="n">name</span><span class="p">,</span><span class="n">id</span><span class="p">,</span><span class="n">objectType</span><span class="p">)</span>
+</span><span id="__span-4-20"><a id="__codelineno-4-20" name="__codelineno-4-20" href="#__codelineno-4-20"></a>    <span class="p">(</span><span class="nb">Get-RscType</span> <span class="n">-Name</span> <span class="n">VsphereNetwork</span> <span class="n">-InitialProperties</span> <span class="n">name</span><span class="p">,</span><span class="n">id</span><span class="p">,</span><span class="n">objectType</span><span class="p">)</span>
+</span><span id="__span-4-21"><a id="__codelineno-4-21" name="__codelineno-4-21" href="#__codelineno-4-21"></a>    <span class="p">(</span><span class="nb">Get-RscType</span> <span class="n">-Name</span> <span class="n">VsphereDatastore</span> <span class="n">-InitialProperties</span> <span class="n">name</span><span class="p">,</span><span class="n">id</span><span class="p">,</span><span class="n">objectType</span><span class="p">)</span>
+</span><span id="__span-4-22"><a id="__codelineno-4-22" name="__codelineno-4-22" href="#__codelineno-4-22"></a>    <span class="p">(</span><span class="nb">Get-RscType</span> <span class="n">-Name</span> <span class="n">VsphereResourcePool</span> <span class="n">-InitialProperties</span> <span class="n">name</span><span class="p">,</span><span class="n">id</span><span class="p">,</span><span class="n">objectType</span><span class="p">)</span>
+</span><span id="__span-4-23"><a id="__codelineno-4-23" name="__codelineno-4-23" href="#__codelineno-4-23"></a><span class="p">)</span>
+</span><span id="__span-4-24"><a id="__codelineno-4-24" name="__codelineno-4-24" href="#__codelineno-4-24"></a>
+</span><span id="__span-4-25"><a id="__codelineno-4-25" name="__codelineno-4-25" href="#__codelineno-4-25"></a><span class="nv">$query</span><span class="p">.</span><span class="n">invoke</span><span class="p">().</span><span class="n">nodes</span>
 </span></code></pre></div>
 </div>
 <div class="tabbed-block">
@@ -4356,7 +4356,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="April 1, 2025 20:51:08">2025-04-01</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="April 2, 2025 17:50:28">2025-04-02</span>
   </span>
 
     
