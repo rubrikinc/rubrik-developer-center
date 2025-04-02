@@ -21,6 +21,11 @@ Rubrik Annapurna turns snapshot data into a secure, central library of knowledge
 
     ---
     Permissions set on the source file are respected by the retriever. Only users that have access to the file in production will have access from the retriever.
+
+- __Application-Aware Embedding__
+
+    ---
+    Leverage intelligent embeddings tailored for third-party or custom app data schemas to enhance compatibility, performance, and time to value.
 </div>
 
 
