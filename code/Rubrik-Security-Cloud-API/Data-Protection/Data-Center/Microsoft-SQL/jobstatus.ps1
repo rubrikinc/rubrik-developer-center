@@ -4,4 +4,4 @@ $query = New-RscQuery -GqlQuery mssqlJobStatus -FieldProfile FULL
 $query.var.input = New-Object -Typename RubrikSecurityCloud.Types.GetMssqlAsyncRequestStatusInput
 $query.var.input.Id = $requestId
 $query.var.input.ClusterUuid = $clusterId
-$statusQuery.invoke()
+$query.invoke()
