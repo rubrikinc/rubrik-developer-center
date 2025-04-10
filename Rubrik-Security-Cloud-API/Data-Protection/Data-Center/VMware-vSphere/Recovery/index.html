@@ -1982,6 +1982,10 @@
           
         
       
+        
+      
+        
+      
     
     
     
@@ -2009,6 +2013,11 @@
 
             </a>
             
+              
+              <label class="md-nav__link " for="__nav_2_6_2_6" id="__nav_2_6_2_6_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
           </div>
         
         <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_6_2_6_label" aria-expanded="false">
@@ -2018,6 +2027,52 @@
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Microsoft-HyperV/Job-Status/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Job Status
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Microsoft-HyperV/On-Demand-Backup/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    On Demand Backup
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
               
             
           </ul>
@@ -4306,7 +4361,36 @@
 </span></code></pre></div>
 </div>
 <div class="tabbed-block">
-<div class="language-powershell highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="nv">$vm</span> <span class="p">=</span> <span class="nb">Get-RscVmwareVm</span> <span class="n">-Name</span> <span class="s2">&quot;example&quot;</span> <span class="n">-Relic</span><span class="p">:</span><span class="nv">$false</span> <span class="n">-Replica</span><span class="p">:</span><span class="nv">$false</span>
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="nv">$snapshot</span> <span class="p">=</span> <span class="nv">$vm</span> <span class="p">|</span> <span class="nb">Get-RscSnapshot</span> <span class="p">|</span> <span class="nb">Select-Object</span> <span class="n">-First</span> <span class="n">1</span>
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="nv">$SourceFilePath</span> <span class="p">=</span> <span class="s2">&quot;C:\\foo\\bar.txt&quot;</span>
+</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="nv">$DestinationFilePath</span> <span class="p">=</span> <span class="s2">&quot;C:\\restore&quot;</span>
+</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>
+</span><span id="__span-4-6"><a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a><span class="c"># Optional</span>
+</span><span id="__span-4-7"><a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a><span class="c"># $DestinationVm = Get-RscVmwareVm -id &quot;123&quot;</span>
+</span><span id="__span-4-8"><a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a>
+</span><span id="__span-4-9"><a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a><span class="nv">$query</span> <span class="p">=</span> <span class="nb">New-RscMutation</span> <span class="n">-GqlMutation</span> <span class="n">vsphereVmRecoverFilesNew</span> <span class="n">-FieldProfile</span> <span class="n">FULL</span>
+</span><span id="__span-4-10"><a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a>
+</span><span id="__span-4-11"><a id="__codelineno-4-11" name="__codelineno-4-11" href="#__codelineno-4-11"></a><span class="nv">$query</span><span class="p">.</span><span class="n">var</span><span class="p">.</span><span class="n">input</span> <span class="p">=</span> <span class="nb">New-Object</span> <span class="n">-Typename</span> <span class="n">RubrikSecurityCloud</span><span class="p">.</span><span class="n">Types</span><span class="p">.</span><span class="n">VsphereVmRecoverFilesNewInput</span>
+</span><span id="__span-4-12"><a id="__codelineno-4-12" name="__codelineno-4-12" href="#__codelineno-4-12"></a><span class="nv">$query</span><span class="p">.</span><span class="n">var</span><span class="p">.</span><span class="n">input</span><span class="p">.</span><span class="n">Config</span> <span class="p">=</span> <span class="nb">New-Object</span> <span class="n">RubrikSecurityCloud</span><span class="p">.</span><span class="n">Types</span><span class="p">.</span><span class="n">RestoreFilesJobConfigInput</span>
+</span><span id="__span-4-13"><a id="__codelineno-4-13" name="__codelineno-4-13" href="#__codelineno-4-13"></a><span class="nv">$query</span><span class="p">.</span><span class="n">var</span><span class="p">.</span><span class="n">input</span><span class="p">.</span><span class="n">Config</span><span class="p">.</span><span class="n">RestoreConfig</span> <span class="p">=</span> <span class="nb">New-Object</span> <span class="n">-TypeName</span> <span class="n">RubrikSecurityCloud</span><span class="p">.</span><span class="n">Types</span><span class="p">.</span><span class="n">VmRestorePathPairInput</span>
+</span><span id="__span-4-14"><a id="__codelineno-4-14" name="__codelineno-4-14" href="#__codelineno-4-14"></a><span class="nv">$query</span><span class="p">.</span><span class="n">var</span><span class="p">.</span><span class="n">input</span><span class="p">.</span><span class="n">Config</span><span class="p">.</span><span class="n">RestoreConfig</span><span class="p">[</span><span class="n">0</span><span class="p">].</span><span class="n">RestorePathPair</span> <span class="p">=</span> <span class="nb">New-Object</span> <span class="n">RubrikSecurityCloud</span><span class="p">.</span><span class="n">Types</span><span class="p">.</span><span class="n">RestorePathPairInput</span>
+</span><span id="__span-4-15"><a id="__codelineno-4-15" name="__codelineno-4-15" href="#__codelineno-4-15"></a>
+</span><span id="__span-4-16"><a id="__codelineno-4-16" name="__codelineno-4-16" href="#__codelineno-4-16"></a><span class="nv">$query</span><span class="p">.</span><span class="n">var</span><span class="p">.</span><span class="n">input</span><span class="p">.</span><span class="n">id</span> <span class="p">=</span> <span class="nv">$snapshot</span><span class="p">.</span><span class="n">id</span>
+</span><span id="__span-4-17"><a id="__codelineno-4-17" name="__codelineno-4-17" href="#__codelineno-4-17"></a><span class="nv">$query</span><span class="p">.</span><span class="n">var</span><span class="p">.</span><span class="n">input</span><span class="p">.</span><span class="n">clusterUuid</span> <span class="p">=</span> <span class="nv">$snapshot</span><span class="p">.</span><span class="n">Cluster</span><span class="p">.</span><span class="n">id</span>
+</span><span id="__span-4-18"><a id="__codelineno-4-18" name="__codelineno-4-18" href="#__codelineno-4-18"></a>
+</span><span id="__span-4-19"><a id="__codelineno-4-19" name="__codelineno-4-19" href="#__codelineno-4-19"></a><span class="k">if</span> <span class="p">(</span><span class="nv">$DestinationVm</span><span class="p">)</span> <span class="p">{</span>
+</span><span id="__span-4-20"><a id="__codelineno-4-20" name="__codelineno-4-20" href="#__codelineno-4-20"></a>    <span class="nv">$query</span><span class="p">.</span><span class="n">var</span><span class="p">.</span><span class="n">input</span><span class="p">.</span><span class="n">config</span><span class="p">.</span><span class="n">destinationObjectId</span> <span class="p">=</span> <span class="nv">$DestinationVm</span><span class="p">.</span><span class="n">id</span>
+</span><span id="__span-4-21"><a id="__codelineno-4-21" name="__codelineno-4-21" href="#__codelineno-4-21"></a><span class="p">}</span>
+</span><span id="__span-4-22"><a id="__codelineno-4-22" name="__codelineno-4-22" href="#__codelineno-4-22"></a><span class="k">else</span> <span class="p">{</span>
+</span><span id="__span-4-23"><a id="__codelineno-4-23" name="__codelineno-4-23" href="#__codelineno-4-23"></a>    <span class="nv">$query</span><span class="p">.</span><span class="n">var</span><span class="p">.</span><span class="n">input</span><span class="p">.</span><span class="n">config</span><span class="p">.</span><span class="n">destinationObjectId</span> <span class="p">=</span> <span class="nv">$snapshot</span><span class="p">.</span><span class="n">SnappableNew</span><span class="p">.</span><span class="n">Id</span>
+</span><span id="__span-4-24"><a id="__codelineno-4-24" name="__codelineno-4-24" href="#__codelineno-4-24"></a><span class="p">}</span>
+</span><span id="__span-4-25"><a id="__codelineno-4-25" name="__codelineno-4-25" href="#__codelineno-4-25"></a>
+</span><span id="__span-4-26"><a id="__codelineno-4-26" name="__codelineno-4-26" href="#__codelineno-4-26"></a><span class="nv">$query</span><span class="p">.</span><span class="n">var</span><span class="p">.</span><span class="n">input</span><span class="p">.</span><span class="n">config</span><span class="p">.</span><span class="n">restoreConfig</span><span class="p">[</span><span class="n">0</span><span class="p">].</span><span class="n">RestorePathPair</span><span class="p">.</span><span class="n">path</span> <span class="p">=</span> <span class="nv">$SourceFilePath</span>
+</span><span id="__span-4-27"><a id="__codelineno-4-27" name="__codelineno-4-27" href="#__codelineno-4-27"></a><span class="nv">$query</span><span class="p">.</span><span class="n">var</span><span class="p">.</span><span class="n">input</span><span class="p">.</span><span class="n">config</span><span class="p">.</span><span class="n">restoreConfig</span><span class="p">[</span><span class="n">0</span><span class="p">].</span><span class="n">RestorePathPair</span><span class="p">.</span><span class="n">restorePath</span> <span class="p">=</span> <span class="nv">$DestinationFilePath</span>
+</span><span id="__span-4-28"><a id="__codelineno-4-28" name="__codelineno-4-28" href="#__codelineno-4-28"></a>
+</span><span id="__span-4-29"><a id="__codelineno-4-29" name="__codelineno-4-29" href="#__codelineno-4-29"></a><span class="nv">$result</span> <span class="p">=</span> <span class="nb">Invoke-Rsc</span> <span class="n">-Query</span> <span class="nv">$query</span>
+</span><span id="__span-4-30"><a id="__codelineno-4-30" name="__codelineno-4-30" href="#__codelineno-4-30"></a><span class="nv">$result</span>
 </span></code></pre></div>
 </div>
 <div class="tabbed-block">
@@ -4354,7 +4438,14 @@
 </span></code></pre></div>
 </div>
 <div class="tabbed-block">
-<div class="language-powershell highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="nv">$vm</span> <span class="p">=</span> <span class="nb">Get-RscVmwareVm</span> <span class="n">-Name</span> <span class="s2">&quot;example&quot;</span> <span class="n">-Relic</span><span class="p">:</span><span class="nv">$false</span> <span class="n">-Replica</span><span class="p">:</span><span class="nv">$false</span>
+</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="nv">$snapshot</span> <span class="p">=</span> <span class="nv">$vm</span> <span class="p">|</span> <span class="nb">Get-RscSnapshot</span> <span class="p">|</span> <span class="nb">Select-Object</span> <span class="n">-First</span> <span class="n">1</span>
+</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>
+</span><span id="__span-7-4"><a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a><span class="nv">$query</span> <span class="p">=</span> <span class="nb">New-RscMutation</span> <span class="n">-GqlMutation</span> <span class="n">vsphereVmInitiateInPlaceRecovery</span> <span class="n">-FieldProfile</span> <span class="n">FULL</span>
+</span><span id="__span-7-5"><a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a><span class="nv">$query</span><span class="p">.</span><span class="n">Var</span><span class="p">.</span><span class="n">input</span> <span class="p">=</span> <span class="nb">Get-RscType</span> <span class="n">-name</span> <span class="n">VsphereVmInitiateInPlaceRecoveryInput</span> <span class="n">-InitialProperties</span> <span class="n">config</span><span class="p">.</span><span class="n">requiredRecoveryParameters</span>
+</span><span id="__span-7-6"><a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a><span class="nv">$query</span><span class="p">.</span><span class="n">Var</span><span class="p">.</span><span class="n">input</span><span class="p">.</span><span class="n">id</span> <span class="p">=</span> <span class="nv">$vm</span><span class="p">.</span><span class="n">Id</span>
+</span><span id="__span-7-7"><a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a><span class="nv">$query</span><span class="p">.</span><span class="n">Var</span><span class="p">.</span><span class="n">input</span><span class="p">.</span><span class="n">Config</span><span class="p">.</span><span class="n">requiredRecoveryParameters</span><span class="p">.</span><span class="n">snapshotId</span> <span class="p">=</span> <span class="nv">$snapshot</span><span class="p">.</span><span class="n">Id</span>
+</span><span id="__span-7-8"><a id="__codelineno-7-8" name="__codelineno-7-8" href="#__codelineno-7-8"></a><span class="nv">$query</span><span class="p">.</span><span class="n">invoke</span><span class="p">()</span>
 </span></code></pre></div>
 </div>
 <div class="tabbed-block">
@@ -4401,7 +4492,22 @@
 </span></code></pre></div>
 </div>
 <div class="tabbed-block">
-<div class="language-powershell highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="nv">$vm</span> <span class="p">=</span> <span class="nb">Get-RscVmwareVm</span> <span class="n">-Name</span> <span class="s2">&quot;example&quot;</span> <span class="n">-Relic</span><span class="p">:</span><span class="nv">$false</span> <span class="n">-Replica</span><span class="p">:</span><span class="nv">$false</span>
+</span><span id="__span-10-2"><a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a><span class="nv">$snapshot</span> <span class="p">=</span> <span class="nv">$vm</span> <span class="p">|</span> <span class="nb">Get-RscSnapshot</span> <span class="p">|</span> <span class="nb">Select-Object</span> <span class="n">-First</span> <span class="n">1</span>
+</span><span id="__span-10-3"><a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a>
+</span><span id="__span-10-4"><a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a><span class="nv">$query</span> <span class="p">=</span> <span class="nb">New-RscMutation</span> <span class="n">-GqlMutation</span> <span class="n">vsphereVmInitiateLiveMountV2</span> <span class="n">-FieldProfile</span> <span class="n">FULL</span>
+</span><span id="__span-10-5"><a id="__codelineno-10-5" name="__codelineno-10-5" href="#__codelineno-10-5"></a><span class="nv">$query</span><span class="p">.</span><span class="n">Var</span><span class="p">.</span><span class="n">input</span> <span class="p">=</span> <span class="nb">Get-RscType</span> <span class="n">-name</span> <span class="n">VsphereVmInitiateLiveMountV2Input</span> <span class="n">-InitialProperties</span> <span class="p">`</span>
+</span><span id="__span-10-6"><a id="__codelineno-10-6" name="__codelineno-10-6" href="#__codelineno-10-6"></a>    <span class="n">config</span><span class="p">.</span><span class="n">requiredRecoveryParameters</span><span class="p">,`</span>
+</span><span id="__span-10-7"><a id="__codelineno-10-7" name="__codelineno-10-7" href="#__codelineno-10-7"></a>    <span class="n">config</span><span class="p">.</span><span class="n">mountExportSnapshotJobCommonOptionsV2</span>
+</span><span id="__span-10-8"><a id="__codelineno-10-8" name="__codelineno-10-8" href="#__codelineno-10-8"></a><span class="nv">$query</span><span class="p">.</span><span class="n">Var</span><span class="p">.</span><span class="n">input</span><span class="p">.</span><span class="n">id</span> <span class="p">=</span> <span class="nv">$vm</span><span class="p">.</span><span class="n">Id</span>
+</span><span id="__span-10-9"><a id="__codelineno-10-9" name="__codelineno-10-9" href="#__codelineno-10-9"></a><span class="nv">$query</span><span class="p">.</span><span class="n">Var</span><span class="p">.</span><span class="n">input</span><span class="p">.</span><span class="n">Config</span><span class="p">.</span><span class="n">preserveMoid</span> <span class="p">=</span> <span class="nv">$true</span>
+</span><span id="__span-10-10"><a id="__codelineno-10-10" name="__codelineno-10-10" href="#__codelineno-10-10"></a><span class="nv">$query</span><span class="p">.</span><span class="n">Var</span><span class="p">.</span><span class="n">input</span><span class="p">.</span><span class="n">Config</span><span class="p">.</span><span class="n">shouldRecoverTags</span> <span class="p">=</span> <span class="nv">$true</span>
+</span><span id="__span-10-11"><a id="__codelineno-10-11" name="__codelineno-10-11" href="#__codelineno-10-11"></a><span class="nv">$query</span><span class="p">.</span><span class="n">Var</span><span class="p">.</span><span class="n">input</span><span class="p">.</span><span class="n">Config</span><span class="p">.</span><span class="n">clusterId</span> <span class="p">=</span> <span class="nv">$vm</span><span class="p">.</span><span class="n">Cluster</span><span class="p">.</span><span class="n">Id</span>
+</span><span id="__span-10-12"><a id="__codelineno-10-12" name="__codelineno-10-12" href="#__codelineno-10-12"></a><span class="nv">$query</span><span class="p">.</span><span class="n">Var</span><span class="p">.</span><span class="n">input</span><span class="p">.</span><span class="n">Config</span><span class="p">.</span><span class="n">requiredRecoveryParameters</span><span class="p">.</span><span class="n">snapshotId</span> <span class="p">=</span> <span class="nv">$snapshot</span><span class="p">.</span><span class="n">Id</span>
+</span><span id="__span-10-13"><a id="__codelineno-10-13" name="__codelineno-10-13" href="#__codelineno-10-13"></a><span class="nv">$query</span><span class="p">.</span><span class="n">Var</span><span class="p">.</span><span class="n">input</span><span class="p">.</span><span class="n">Config</span><span class="p">.</span><span class="n">mountExportSnapshotJobCommonOptionsV2</span><span class="p">.</span><span class="n">powerOn</span> <span class="p">=</span> <span class="nv">$true</span>
+</span><span id="__span-10-14"><a id="__codelineno-10-14" name="__codelineno-10-14" href="#__codelineno-10-14"></a><span class="nv">$query</span><span class="p">.</span><span class="n">Var</span><span class="p">.</span><span class="n">input</span><span class="p">.</span><span class="n">Config</span><span class="p">.</span><span class="n">mountExportSnapshotJobCommonOptionsV2</span><span class="p">.</span><span class="n">keepMacAddresses</span> <span class="p">=</span> <span class="nv">$true</span>
+</span><span id="__span-10-15"><a id="__codelineno-10-15" name="__codelineno-10-15" href="#__codelineno-10-15"></a><span class="nv">$query</span><span class="p">.</span><span class="n">Var</span><span class="p">.</span><span class="n">input</span><span class="p">.</span><span class="n">Config</span><span class="p">.</span><span class="n">mountExportSnapshotJobCommonOptionsV2</span><span class="p">.</span><span class="n">disableNetwork</span> <span class="p">=</span> <span class="nv">$false</span>
+</span><span id="__span-10-16"><a id="__codelineno-10-16" name="__codelineno-10-16" href="#__codelineno-10-16"></a><span class="nv">$query</span><span class="p">.</span><span class="n">invoke</span><span class="p">()</span>
 </span></code></pre></div>
 </div>
 <div class="tabbed-block">
@@ -4450,7 +4556,22 @@
 </span></code></pre></div>
 </div>
 <div class="tabbed-block">
-<div class="language-powershell highlight"><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="nv">$vm</span> <span class="p">=</span> <span class="nb">Get-RscVmwareVm</span> <span class="n">-Name</span> <span class="s2">&quot;example&quot;</span> <span class="n">-Relic</span><span class="p">:</span><span class="nv">$false</span> <span class="n">-Replica</span><span class="p">:</span><span class="nv">$false</span>
+</span><span id="__span-13-2"><a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a><span class="nv">$snapshot</span> <span class="p">=</span> <span class="nv">$vm</span> <span class="p">|</span> <span class="nb">Get-RscSnapshot</span> <span class="p">|</span> <span class="nb">Select-Object</span> <span class="n">-First</span> <span class="n">1</span>
+</span><span id="__span-13-3"><a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a>
+</span><span id="__span-13-4"><a id="__codelineno-13-4" name="__codelineno-13-4" href="#__codelineno-13-4"></a><span class="nv">$query</span> <span class="p">=</span> <span class="nb">New-RscMutation</span> <span class="n">-GqlMutation</span> <span class="n">vsphereVmInitiateInstantRecoveryV2</span> <span class="n">-FieldProfile</span> <span class="n">FULL</span>
+</span><span id="__span-13-5"><a id="__codelineno-13-5" name="__codelineno-13-5" href="#__codelineno-13-5"></a><span class="nv">$query</span><span class="p">.</span><span class="n">Var</span><span class="p">.</span><span class="n">input</span> <span class="p">=</span> <span class="nb">Get-RscType</span> <span class="n">-name</span> <span class="n">VsphereVmInitiateInstantRecoveryV2Input</span> <span class="n">-InitialProperties</span> <span class="p">`</span>
+</span><span id="__span-13-6"><a id="__codelineno-13-6" name="__codelineno-13-6" href="#__codelineno-13-6"></a>    <span class="n">config</span><span class="p">.</span><span class="n">requiredRecoveryParameters</span><span class="p">,`</span>
+</span><span id="__span-13-7"><a id="__codelineno-13-7" name="__codelineno-13-7" href="#__codelineno-13-7"></a>    <span class="n">config</span><span class="p">.</span><span class="n">mountExportSnapshotJobCommonOptionsV2</span>
+</span><span id="__span-13-8"><a id="__codelineno-13-8" name="__codelineno-13-8" href="#__codelineno-13-8"></a><span class="nv">$query</span><span class="p">.</span><span class="n">Var</span><span class="p">.</span><span class="n">input</span><span class="p">.</span><span class="n">id</span> <span class="p">=</span> <span class="nv">$vm</span><span class="p">.</span><span class="n">Id</span>
+</span><span id="__span-13-9"><a id="__codelineno-13-9" name="__codelineno-13-9" href="#__codelineno-13-9"></a><span class="nv">$query</span><span class="p">.</span><span class="n">Var</span><span class="p">.</span><span class="n">input</span><span class="p">.</span><span class="n">Config</span><span class="p">.</span><span class="n">preserveMoid</span> <span class="p">=</span> <span class="nv">$true</span>
+</span><span id="__span-13-10"><a id="__codelineno-13-10" name="__codelineno-13-10" href="#__codelineno-13-10"></a><span class="nv">$query</span><span class="p">.</span><span class="n">Var</span><span class="p">.</span><span class="n">input</span><span class="p">.</span><span class="n">Config</span><span class="p">.</span><span class="n">shouldRecoverTags</span> <span class="p">=</span> <span class="nv">$true</span>
+</span><span id="__span-13-11"><a id="__codelineno-13-11" name="__codelineno-13-11" href="#__codelineno-13-11"></a><span class="nv">$query</span><span class="p">.</span><span class="n">Var</span><span class="p">.</span><span class="n">input</span><span class="p">.</span><span class="n">Config</span><span class="p">.</span><span class="n">clusterId</span> <span class="p">=</span> <span class="nv">$vm</span><span class="p">.</span><span class="n">Cluster</span><span class="p">.</span><span class="n">Id</span>
+</span><span id="__span-13-12"><a id="__codelineno-13-12" name="__codelineno-13-12" href="#__codelineno-13-12"></a><span class="nv">$query</span><span class="p">.</span><span class="n">Var</span><span class="p">.</span><span class="n">input</span><span class="p">.</span><span class="n">Config</span><span class="p">.</span><span class="n">requiredRecoveryParameters</span><span class="p">.</span><span class="n">snapshotId</span> <span class="p">=</span> <span class="nv">$snapshot</span><span class="p">.</span><span class="n">Id</span>
+</span><span id="__span-13-13"><a id="__codelineno-13-13" name="__codelineno-13-13" href="#__codelineno-13-13"></a><span class="nv">$query</span><span class="p">.</span><span class="n">Var</span><span class="p">.</span><span class="n">input</span><span class="p">.</span><span class="n">Config</span><span class="p">.</span><span class="n">mountExportSnapshotJobCommonOptionsV2</span><span class="p">.</span><span class="n">powerOn</span> <span class="p">=</span> <span class="nv">$true</span>
+</span><span id="__span-13-14"><a id="__codelineno-13-14" name="__codelineno-13-14" href="#__codelineno-13-14"></a><span class="nv">$query</span><span class="p">.</span><span class="n">Var</span><span class="p">.</span><span class="n">input</span><span class="p">.</span><span class="n">Config</span><span class="p">.</span><span class="n">mountExportSnapshotJobCommonOptionsV2</span><span class="p">.</span><span class="n">keepMacAddresses</span> <span class="p">=</span> <span class="nv">$true</span>
+</span><span id="__span-13-15"><a id="__codelineno-13-15" name="__codelineno-13-15" href="#__codelineno-13-15"></a><span class="nv">$query</span><span class="p">.</span><span class="n">Var</span><span class="p">.</span><span class="n">input</span><span class="p">.</span><span class="n">Config</span><span class="p">.</span><span class="n">mountExportSnapshotJobCommonOptionsV2</span><span class="p">.</span><span class="n">disableNetwork</span> <span class="p">=</span> <span class="nv">$false</span>
+</span><span id="__span-13-16"><a id="__codelineno-13-16" name="__codelineno-13-16" href="#__codelineno-13-16"></a><span class="nv">$query</span><span class="p">.</span><span class="n">invoke</span><span class="p">()</span>
 </span></code></pre></div>
 </div>
 <div class="tabbed-block">
@@ -4488,7 +4609,15 @@
 </span></code></pre></div>
 </div>
 <div class="tabbed-block">
-<div class="language-powershell highlight"><pre><span></span><code><span id="__span-16-1"><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-16-1"><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a><span class="nv">$vm</span> <span class="p">=</span> <span class="nb">Get-RscVmwareVm</span> <span class="n">-Name</span> <span class="s2">&quot;example&quot;</span> <span class="n">-Relic</span><span class="p">:</span><span class="nv">$false</span> <span class="n">-Replica</span><span class="p">:</span><span class="nv">$false</span>
+</span><span id="__span-16-2"><a id="__codelineno-16-2" name="__codelineno-16-2" href="#__codelineno-16-2"></a><span class="nv">$snapshot</span> <span class="p">=</span> <span class="nv">$vm</span> <span class="p">|</span> <span class="nb">Get-RscSnapshot</span> <span class="p">|</span> <span class="nb">Select-Object</span> <span class="n">-First</span> <span class="n">1</span>
+</span><span id="__span-16-3"><a id="__codelineno-16-3" name="__codelineno-16-3" href="#__codelineno-16-3"></a>
+</span><span id="__span-16-4"><a id="__codelineno-16-4" name="__codelineno-16-4" href="#__codelineno-16-4"></a><span class="nv">$query</span> <span class="p">=</span> <span class="nb">New-RscMutation</span> <span class="n">-GqlMutation</span> <span class="n">vsphereVmInitiateDiskMount</span> <span class="n">-FieldProfile</span> <span class="n">FULL</span>
+</span><span id="__span-16-5"><a id="__codelineno-16-5" name="__codelineno-16-5" href="#__codelineno-16-5"></a><span class="nv">$query</span><span class="p">.</span><span class="n">Var</span><span class="p">.</span><span class="n">input</span> <span class="p">=</span> <span class="nb">Get-RscType</span> <span class="n">-name</span> <span class="n">VsphereVmInitiateDiskMountInput</span> <span class="n">-InitialProperties</span> <span class="n">config</span>
+</span><span id="__span-16-6"><a id="__codelineno-16-6" name="__codelineno-16-6" href="#__codelineno-16-6"></a><span class="nv">$query</span><span class="p">.</span><span class="n">Var</span><span class="p">.</span><span class="n">input</span><span class="p">.</span><span class="n">id</span> <span class="p">=</span> <span class="nv">$snapshot</span><span class="p">.</span><span class="n">Id</span>
+</span><span id="__span-16-7"><a id="__codelineno-16-7" name="__codelineno-16-7" href="#__codelineno-16-7"></a><span class="nv">$query</span><span class="p">.</span><span class="n">Var</span><span class="p">.</span><span class="n">input</span><span class="p">.</span><span class="n">Config</span><span class="p">.</span><span class="n">targetVmId</span> <span class="p">=</span> <span class="nv">$vm</span><span class="p">.</span><span class="n">id</span>
+</span><span id="__span-16-8"><a id="__codelineno-16-8" name="__codelineno-16-8" href="#__codelineno-16-8"></a><span class="nv">$query</span><span class="p">.</span><span class="n">Var</span><span class="p">.</span><span class="n">input</span><span class="p">.</span><span class="n">Config</span><span class="p">.</span><span class="n">vmdkIds</span> <span class="p">=</span> <span class="p">@(</span><span class="s2">&quot;b94a692e-2f07-44c6-8186-17e0075341d9&quot;</span><span class="p">)</span>
+</span><span id="__span-16-9"><a id="__codelineno-16-9" name="__codelineno-16-9" href="#__codelineno-16-9"></a><span class="nv">$query</span><span class="p">.</span><span class="n">invoke</span><span class="p">()</span>
 </span></code></pre></div>
 </div>
 <div class="tabbed-block">
@@ -4527,7 +4656,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="April 2, 2025 21:22:47">2025-04-02</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="April 10, 2025 16:36:31">2025-04-10</span>
   </span>
 
     
