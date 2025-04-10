@@ -1,29 +1,29 @@
 query {
   vSphereLiveMounts {
-  count
-  nodes {
-      vmStatus
-      cdmId
-      hasAttachingDisk
-      id
-      isReady
-      migrateDatastoreRequestId
-      mountTimestamp
-      newVmName
-      vcenterId
-      mountedVm {
+    count
+    nodes {
+        vmStatus
+        cdmId
+        hasAttachingDisk
         id
-        name
-      }
-      sourceSnapshot {
-        date
-        id
-      }
-      sourceVm {
-        id
-        name
-      }
-  }
+        isReady
+        migrateDatastoreRequestId
+        mountTimestamp
+        newVmName
+        vcenterId
+        mountedVm {
+          id
+          name
+        }
+        sourceSnapshot {
+          date
+          id
+        }
+        sourceVm {
+          id
+          name
+        }
+    }
   pageInfo {
     endCursor
     hasNextPage

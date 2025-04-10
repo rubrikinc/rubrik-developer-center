@@ -1,4 +1,5 @@
-$snapshot = Get-RscSnapshot -id "123"
+$vm = Get-RscVmwareVm -Name "example" -Relic:$false -Replica:$false
+$snapshot = $vm | Get-RscSnapshot | Select-Object -First 1
 $SourceFilePath = "C:\\foo\\bar.txt"
 $DestinationFilePath = "C:\\restore"
 

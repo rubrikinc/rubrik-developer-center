@@ -1,4 +1,4 @@
-$statusQuery = New-RscQuery -GqlQuery vSphereVMAsyncRequestStatus
-$statusQuery.var.id = $request.Id
-$statusQuery.var.clusterUuid = $my_vm.cluster.Id
-$status = Invoke-Rsc $statusQuery
+$query = New-RscQuery -GqlQuery vSphereVMAsyncRequestStatus
+$query.var.id = $request.Id
+$query.var.clusterUuid = $vm.cluster.Id
+$query.invoke()
