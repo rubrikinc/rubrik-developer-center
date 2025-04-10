@@ -1,4 +1,4 @@
-mutation hypervsnapshot {
+mutation {
   hypervOnDemandSnapshot(input: {
     id: "f79b1102-77b5-4434-8400-c2a66c9b2dc1"
     config: {
