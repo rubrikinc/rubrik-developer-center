@@ -2040,6 +2040,10 @@
           
         
       
+        
+      
+        
+      
     
     
     
@@ -2067,6 +2071,11 @@
 
             </a>
             
+              
+              <label class="md-nav__link " for="__nav_2_6_2_6" id="__nav_2_6_2_6_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
           </div>
         
         <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_6_2_6_label" aria-expanded="false">
@@ -2076,6 +2085,52 @@
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Data-Center/Microsoft-HyperV/Job-Status/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Job Status
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Data-Center/Microsoft-HyperV/On-Demand-Backup/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    On Demand Backup
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
               
             
           </ul>
@@ -4198,7 +4253,37 @@
 </span></code></pre></div>
 </div>
 <div class="tabbed-block">
-<div class="language-powershell highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nv">$query</span> <span class="p">=</span> <span class="nb">New-RscQuery</span> <span class="n">-GqlQuery</span> <span class="n">azureSqlDatabases</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="c"># $query.Var.azureSqlDatabaseFilters = Get-RscType -Name AzureSqlDatabaseFilters -InitialProperties `</span>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="c">#     nameSubstringFilter,`</span>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="c">#     tagFilter.tagFilterParams,`</span>
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="c">#     resourceGroupFilter,`</span>
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="c">#     subscriptionFilter,`</span>
+</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="c">#     regionFilter,`</span>
+</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a><span class="c">#     relicFilter</span>
+</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a><span class="c"># $query.Var.azureSqlDatabaseFilters.nameSubstringFilter.nameSubstring = &quot;example&quot;</span>
+</span><span id="__span-1-10"><a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a><span class="c"># $query.Var.azureSqlDatabaseFilters.tagFilter.tagFilterParams.key = &quot;foo&quot;</span>
+</span><span id="__span-1-11"><a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a><span class="c"># $query.Var.azureSqlDatabaseFilters.tagFilter.tagFilterParams.value = &quot;bar&quot;</span>
+</span><span id="__span-1-12"><a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a><span class="c"># $query.Var.azureSqlDatabaseFilters.tagFilter.tagFilterParams.filterType = [RubrikSecurityCloud.Types.TagFilterType]::TAG_KEY_VALUE</span>
+</span><span id="__span-1-13"><a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a><span class="c"># $query.Var.azureSqlDatabaseFilters.resourceGroupFilter.resourceGroupNames = @(&quot;example&quot;)</span>
+</span><span id="__span-1-14"><a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a><span class="c"># $query.Var.azureSqlDatabaseFilters.subscriptionFilter.subscriptionIds = @(&quot;7d0d81dc-3323-4f45-bd0b-cc37e5bf9f37&quot;)</span>
+</span><span id="__span-1-15"><a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a><span class="c"># $query.Var.azureSqlDatabaseFilters.regionFilter.regions = @([RubrikSecurityCloud.Types.AzureRegion]::US_CENTRAL,[RubrikSecurityCloud.Types.AzureRegion]::US_EAST)</span>
+</span><span id="__span-1-16"><a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a><span class="c"># $query.Var.azureSqlDatabaseFilters.relicFilter.relic = $false</span>
+</span><span id="__span-1-17"><a id="__codelineno-1-17" name="__codelineno-1-17" href="#__codelineno-1-17"></a><span class="nv">$query</span><span class="p">.</span><span class="n">Field</span><span class="p">.</span><span class="n">nodes</span> <span class="p">=</span> <span class="p">@(</span><span class="nb">Get-RscType</span> <span class="n">-Name</span> <span class="n">AzureSqlDatabaseDb</span> <span class="n">-InitialProperties</span> <span class="p">`</span>
+</span><span id="__span-1-18"><a id="__codelineno-1-18" name="__codelineno-1-18" href="#__codelineno-1-18"></a>    <span class="n">name</span><span class="p">,</span> <span class="p">`</span>
+</span><span id="__span-1-19"><a id="__codelineno-1-19" name="__codelineno-1-19" href="#__codelineno-1-19"></a>    <span class="n">id</span><span class="p">,</span> <span class="p">`</span>
+</span><span id="__span-1-20"><a id="__codelineno-1-20" name="__codelineno-1-20" href="#__codelineno-1-20"></a>    <span class="n">region</span><span class="p">,`</span>
+</span><span id="__span-1-21"><a id="__codelineno-1-21" name="__codelineno-1-21" href="#__codelineno-1-21"></a>    <span class="n">elasticPoolName</span><span class="p">,`</span>
+</span><span id="__span-1-22"><a id="__codelineno-1-22" name="__codelineno-1-22" href="#__codelineno-1-22"></a>    <span class="n">backupStorageRedundancy</span><span class="p">,`</span>
+</span><span id="__span-1-23"><a id="__codelineno-1-23" name="__codelineno-1-23" href="#__codelineno-1-23"></a>    <span class="n">serviceTier</span><span class="p">,`</span>
+</span><span id="__span-1-24"><a id="__codelineno-1-24" name="__codelineno-1-24" href="#__codelineno-1-24"></a>    <span class="n">maximumSizeInBytes</span><span class="p">,`</span>
+</span><span id="__span-1-25"><a id="__codelineno-1-25" name="__codelineno-1-25" href="#__codelineno-1-25"></a>    <span class="n">persistentStorage</span><span class="p">.</span><span class="n">name</span><span class="p">,</span> <span class="n">persistentStorage</span><span class="p">.</span><span class="n">id</span><span class="p">,`</span>
+</span><span id="__span-1-26"><a id="__codelineno-1-26" name="__codelineno-1-26" href="#__codelineno-1-26"></a>    <span class="n">serviceObjectiveName</span><span class="p">,`</span>
+</span><span id="__span-1-27"><a id="__codelineno-1-27" name="__codelineno-1-27" href="#__codelineno-1-27"></a>    <span class="n">azureSqlDatabaseServer</span><span class="p">.</span><span class="n">name</span><span class="p">,</span> <span class="n">azureSqlDatabaseServer</span><span class="p">.</span><span class="n">id</span><span class="p">,`</span>
+</span><span id="__span-1-28"><a id="__codelineno-1-28" name="__codelineno-1-28" href="#__codelineno-1-28"></a>    <span class="n">tags</span><span class="p">.</span><span class="n">key</span><span class="p">,</span> <span class="n">tags</span><span class="p">.</span><span class="n">value</span><span class="p">,`</span>
+</span><span id="__span-1-29"><a id="__codelineno-1-29" name="__codelineno-1-29" href="#__codelineno-1-29"></a>    <span class="n">effectiveSlaDomain</span><span class="p">.</span><span class="n">name</span><span class="p">,</span> <span class="n">effectiveSlaDomain</span><span class="p">.</span><span class="n">id</span>
+</span><span id="__span-1-30"><a id="__codelineno-1-30" name="__codelineno-1-30" href="#__codelineno-1-30"></a><span class="p">)</span>
+</span><span id="__span-1-31"><a id="__codelineno-1-31" name="__codelineno-1-31" href="#__codelineno-1-31"></a><span class="nv">$query</span><span class="p">.</span><span class="n">Invoke</span><span class="p">().</span><span class="n">nodes</span>
 </span></code></pre></div>
 </div>
 <div class="tabbed-block">
@@ -4286,7 +4371,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="April 2, 2025 21:22:47">2025-04-02</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="April 10, 2025 16:36:31">2025-04-10</span>
   </span>
 
     
