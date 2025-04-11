@@ -31,3 +31,18 @@ Title: Managed Volumes
     ```bash
     --8<-- "code/Rubrik-Security-Cloud-API/Data-Protection/Data-Center/Managed-Volumes/managedVolumes.sh"
     ```
+
+## Retrieving Managed Volume Live Mounts
+
+=== "GraphQL"
+    ```graphql
+    --8<-- "code/Rubrik-Security-Cloud-API/Data-Protection/Data-Center/Managed-Volumes/livemounts.gql"
+    ```
+=== "PowerShell SDK"
+    ```powershell
+    --8<-- "code/Rubrik-Security-Cloud-API/Data-Protection/Data-Center/Managed-Volumes/livemounts.ps1"
+    ```
+=== "Shell"
+    ```bash
+    --8<-- "code/Rubrik-Security-Cloud-API/Data-Protection/Data-Center/Managed-Volumes/livemounts.sh"
+    ```

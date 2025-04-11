@@ -1,0 +1,28 @@
+query {
+  managedVolumeLiveMounts {
+    nodes {
+      name
+      id
+      logicalUsedSize
+      managedVolume {
+        name
+        id
+      }
+      sourceSnapshot {
+        id
+      }
+      channels {
+        mountPath
+        floatingIpAddress
+        id
+        mountSpec {
+          mountDir
+          imageSizeOpt
+          node {
+            id
+          }
+        }
+      }
+    }
+  }
+}
