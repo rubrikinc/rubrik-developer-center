@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # RSC_TOKEN="YOUR_RSC_ACCESS_TOKEN"
-query="query { oracleDatabaseAsyncRequestDetails(input: { id: \\\"9f706c3c-4678-44e5-99fe-50ebde6b308e\\\" clusterUuid: \\\"85e98e61-4c1f-496a-b846-5eb871966025\\\" }) { progress status result error { message } } }"
+query="query { oracleDatabaseAsyncRequestDetails(input: { id: \\\"CREATE_ORACLE_SNAPSHOT_734cc78a-2fb3-41f1-9906-d2262c604aad_96678e6a-ceb4-439d-be56-352ff0c80a7a:::0\\\" clusterUuid: \\\"85e98e61-4c1f-496a-b846-5eb871966025\\\" }) { progress status result error { message } } }"
 
 # Execute the GraphQL query with curl
 curl -X POST \
