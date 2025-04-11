@@ -15,32 +15,3 @@ $query.Field.nodes = @(Get-RscType -Name ManagedVolumeMount -InitialProperties `
     channels.mountSpec.node.id
 )
 $query.invoke().nodes
-
-# query {
-#     managedVolumeLiveMounts {
-#       nodes {
-#         name
-#         id
-#         logicalUsedSize
-#         managedVolume {
-#           name
-#           id
-#         }
-#         sourceSnapshot {
-#           id
-#         }
-#         channels {
-#           mountPath
-#           floatingIpAddress
-#           id
-#           mountSpec {
-#             mountDir
-#             imageSizeOpt
-#             node {
-#               id
-#             }
-#           }
-#         }
-#       }
-#     }
-#   }
