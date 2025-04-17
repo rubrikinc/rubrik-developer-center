@@ -1,5 +1,0 @@
-mutation generateDownloadUrl($downloadId: Long!) {
-  objects: getDownloadUrl(downloadId: $downloadId) {
-    url
-  }
-}

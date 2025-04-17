@@ -1,7 +1,0 @@
-mutation takeAzureSnapshot($id: [UUID!]!) {
-  objects: startCreateAzureNativeVirtualMachineSnapshotsJob(input: {virtualMachineRubrikIds: $id}) {
-    jobIds {
-      jobId
-    }
-  }
-}

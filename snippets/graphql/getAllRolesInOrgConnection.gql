@@ -1,7 +1,0 @@
-query roles {
-  objects: getAllRolesInOrgConnection {
-    nodes {
-      name
-    }
-  }
-}

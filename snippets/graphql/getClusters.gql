@@ -1,8 +1,0 @@
-query getClusters {
-  objects: clusterConnection {
-    nodes {
-        name
-        id
-    }
-  }
-}
