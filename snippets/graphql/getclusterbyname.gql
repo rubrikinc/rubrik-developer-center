@@ -1,8 +1,0 @@
-query getClusterByName($clustername: [String!]) {
-  objects: clusterConnection(filter: {name: $clustername}) {
-    nodes {
-      name
-      id
-    }
-  }
-}

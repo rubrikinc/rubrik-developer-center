@@ -1,8 +1,0 @@
-mutation updateWebhookAuthToken($id: Int!, $token: String!) {
-  objects: updateWebhook(input: {id: $id, authInfo: {authType: CUSTOM_HEADER, customHeader: {headerKey: "Authorization", headerValue: $token}}}) {
-    objects: webhook {
-      name
-      updatedAt
-    }
-  }
-}

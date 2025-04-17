@@ -14,8 +14,8 @@ The Rubrik Security Cloud (RSC) API is GraphQL.
 4. Customized Response - Queries are customized to only return the fields that is needed.
 
 
-## Help! I'm new to GraphQL!
-GraphQL is a "query language," comparable to SQL. In SQL, one might say, "Select name and ID from the VM table." GraphQL is similar in this idea. A query which is much like a SQL table. We then select the properties called fields, which are like columns in that table. Unlike SQL, GraphQL fields can be types with their own fields, allowing a deeply nested structure for more complex objects.
+## GraphQL Basics
+GraphQL is a "query language," comparable to SQL. In SQL, one might say, "Select name and ID from the VM table." GraphQL is similar in this idea. A query which is much like a SQL table. Properties (called fields in GraphQL) are like columns in that table. Unlike SQL, GraphQL fields can be complex types with their own fields, allowing functionality of a SQL join.
 
 ### Example
 Click on the arrow annotation (1) in the code to see an explanation of that part of the code.
