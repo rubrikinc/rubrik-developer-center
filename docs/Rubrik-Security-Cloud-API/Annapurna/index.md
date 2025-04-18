@@ -1,5 +1,5 @@
 ---
-icon: material/test-tube
+icon: rubrik/annapurna
 title: Rubrik Annapurna
 ---
 

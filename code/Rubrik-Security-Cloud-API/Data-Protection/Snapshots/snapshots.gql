@@ -1,0 +1,61 @@
+query {
+  snapshotOfASnappableConnection(
+    workloadId: "123e4567-e89b-12d3-a456-426614174000"
+  ) {
+    nodes {
+      id
+      date
+      isIndexed
+      isOnDemandSnapshot
+      isQuarantined
+      isAnomaly
+      isExpired
+      expirationDate
+      ...on CdmSnapshot {
+        isRetentionLocked
+        legalHoldInfo {
+          shouldHoldInPlace
+        }
+        snapshotRetentionInfo {
+          localInfo {
+            isSnapshotPresent
+            isExpirationDateCalculated
+            expirationTime
+          }
+          archivalInfos {
+            isSnapshotPresent
+            isExpirationDateCalculated
+            expirationTime
+          }
+          replicationInfos {
+            isSnapshotPresent
+            isExpirationDateCalculated
+            expirationTime
+          }
+        }
+        fileCount
+        consistencyLevel
+      }
+      ...on PolarisSnapshot {
+        snapshotRetentionInfo {
+          localInfo {
+            isSnapshotPresent
+            isExpirationDateCalculated
+            expirationTime
+          }
+          archivalInfos {
+            isSnapshotPresent
+            isExpirationDateCalculated
+            expirationTime
+          }
+          replicationInfos {
+            isSnapshotPresent
+            isExpirationDateCalculated
+            expirationTime
+          }
+        }
+        polarisConsistencyLevel: consistencyLevel
+      }
+    }
+  }
+}
