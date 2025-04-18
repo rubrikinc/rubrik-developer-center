@@ -1,0 +1,12 @@
+query mssqlDatabasesExample { #(1)!
+  mssqlDatabases { # (2)!
+    nodes  { #(3)!
+      name #(4)! 
+      id
+      cluster { #(5)!
+        name #(6)!
+        id
+      }
+    }
+  }
+}
