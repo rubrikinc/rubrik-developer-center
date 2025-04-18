@@ -1,0 +1,1 @@
+Get-RscVmwareVm -Name "example" | Get-RscSnapshot
