@@ -128,6 +128,40 @@
           ]
         },
         {
+          "name": "System-Settings",
+          "item": [
+            {
+              "name": "globalCertificates",
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  }
+                ],
+                "body": {
+                  "mode": "graphql",
+                  "graphql": {
+                    "query": "query { \n    globalCertificates {\n    nodes {\n        status\n        certificate\n        certificateFid\n        certificateId\n        description\n        expiringAt\n        hasKey\n        isCaSigned\n        issuedBy\n        issuedOn\n        issuedTo\n        name\n        serialNumber\n        sha1Fingerprint\n        sha256Fingerprint\n        cdmUsages {\n            type\n            clusterName\n            clusterUuid\n        }\n        clusters {\n            cdmCertUuid\n        }\n        org {\n            id\n            name\n        }\n        usages {\n            type\n        }\n    }\n    pageInfo {\n        endCursor\n        hasNextPage\n        hasPreviousPage\n        startCursor\n    }\n  }\n}"
+                  }
+                },
+                "url": {
+                  "raw": "{{rsc_instance}}/api/graphql",
+                  "protocol": "https",
+                  "host": [
+                    "{{rsc_instance}}"
+                  ],
+                  "path": [
+                    "api",
+                    "graphql"
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        {
           "name": "Annapurna",
           "item": [
             {
