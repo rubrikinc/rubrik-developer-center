@@ -1,0 +1,42 @@
+query { 
+    globalCertificates {
+    nodes {
+        status
+        certificate
+        certificateFid
+        certificateId
+        description
+        expiringAt
+        hasKey
+        isCaSigned
+        issuedBy
+        issuedOn
+        issuedTo
+        name
+        serialNumber
+        sha1Fingerprint
+        sha256Fingerprint
+        cdmUsages {
+            type
+            clusterName
+            clusterUuid
+        }
+        clusters {
+            cdmCertUuid
+        }
+        org {
+            id
+            name
+        }
+        usages {
+            type
+        }
+    }
+    pageInfo {
+        endCursor
+        hasNextPage
+        hasPreviousPage
+        startCursor
+    }
+  }
+}
