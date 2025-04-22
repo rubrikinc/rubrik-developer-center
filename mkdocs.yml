@@ -35,6 +35,8 @@ theme:
 #    - navigation.sections
 extra_css:
   - css/extra.css
+extra_javascript:
+  - javascripts/extra.js
 extra:
   consent:
     title: Cookie consent
@@ -45,7 +47,7 @@ extra:
       make our documentation better.
     cookies:
       analytics: Site usage statistics (Mixpanel)
-  generator: false  
+  generator: true  
   analytics:
     provider: mixpanel
     # Project token here is NOT a secret. It's used to identify the project in Mixpanel and is write only
