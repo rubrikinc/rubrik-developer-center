@@ -41,12 +41,12 @@ table, th, td {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 20px;
+    margin: 10px;
     gap: 10px; /* Adds space between input and button */
   }
   
   #feedback-input {
-    width: 70%;
+    width: 20em;
     padding: 8px;
     font-size: .8rem;
     border: 1px solid #ccc;
@@ -65,4 +65,11 @@ table, th, td {
   
   #send-feedback:hover {
     background-color: #0056b3;
+  }
+
+  #feedback-confirmation {
+    font-size: 0.8rem;
+    color: #28a745; /* Green for success */
+    opacity: 0; /* Invisible by default */
+    transition: opacity 0.5s ease-in-out;
   }
