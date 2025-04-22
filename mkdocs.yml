@@ -35,6 +35,8 @@ theme:
 #    - navigation.sections
 extra_css:
   - css/extra.css
+extra_javascript:
+  - javascripts/extra.js
 extra:
   consent:
     title: Cookie consent
