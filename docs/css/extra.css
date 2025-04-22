@@ -51,6 +51,7 @@ table, th, td {
     font-size: .8rem;
     border: 1px solid #ccc;
     border-radius: 5px;
+    background-color: #ffffff
   }
   
   #send-feedback {
