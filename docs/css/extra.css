@@ -51,6 +51,7 @@ table, th, td {
     font-size: .8rem;
     border: 1px solid #ccc;
     border-radius: 5px;
+    background-color: #ffffff
   }
   
   #send-feedback {
@@ -58,7 +59,7 @@ table, th, td {
     font-size: .8rem;
     cursor: pointer;
     border: none;
-    background-color: #333;
+    background-color: #555;
     color: white;
     border-radius: 5px;
   }
@@ -69,7 +70,7 @@ table, th, td {
 
   #feedback-confirmation {
     font-size: 0.8rem;
-    color: #28a745; /* Green for success */
+    color: #FFD633; /* Yellow for success */
     opacity: 0; /* Invisible by default */
     transition: opacity 0.5s ease-in-out;
   }
