@@ -1,7 +1,7 @@
 ### API Endpoint: `POST /api/annapurna/{id}/retrieve`
 
 ### Summary
-Retrieve relevant chunks with Annapurna retriever.
+Retrieve relevant chunks with Annapurna retriever. To retrieve chunks from files with user-level file permissions, authentication must take place using [OAuth2 Authorization Code](../../authentication.md#user-accounts-oauth2-authorization-code-with-pkce) 
 
 ### Request Parameters
 <div> </div>
