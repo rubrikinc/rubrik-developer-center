@@ -26,7 +26,7 @@ Click on the arrow annotation (1) in the code to see an explanation of that part
 > Retrieve all MSSQL databases, and return the name, ID, and the name and ID of the Rubrik Cluster that protect's this MSSQL database.
 
 ``` graphql
---8<-- "snippets/graphql/mssqlDatabasesExample.gql"
+--8<-- "code/Rubrik-Security-Cloud-API/mssqlDatabasesExample.gql"
 ```
 
 1. `mssqlDatabasesExample` is an operation name, You can change this to whatever you want.
