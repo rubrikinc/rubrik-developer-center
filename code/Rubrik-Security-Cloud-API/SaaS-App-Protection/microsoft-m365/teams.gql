@@ -1,0 +1,12 @@
+query {
+	o365Teams(o365OrgId: "0876804E-1CB1-4F28-BCB3-B4390C15FA1F") {
+    nodes {
+      name
+      id
+      effectiveSlaDomain {
+        name
+        id
+      }
+    }
+  }
+}

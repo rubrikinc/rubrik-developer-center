@@ -1,0 +1,10 @@
+query {
+  o365Orgs {
+    nodes {
+      name
+      id
+      tenantId
+      exocomputeId
+    }
+  }
+}
