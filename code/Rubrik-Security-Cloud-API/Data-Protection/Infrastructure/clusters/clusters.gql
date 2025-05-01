@@ -1,0 +1,55 @@
+query {
+  clusterConnection( filter : {
+      # name: "example"
+    }
+  ) {
+    nodes {
+      name
+      id
+      type
+      version
+      defaultAddress
+      ipmiInfo {
+        isAvailable
+        usesIkvm
+        usesHttps
+      }
+      systemStatus
+      status
+      subStatus
+      pauseStatus
+      encryptionEnabled
+      eosDate
+      eosStatus
+      registrationTime
+      registeredMode
+      estimatedRunway
+      geoLocation {
+        address
+        latitude
+        longitude
+      }
+      metric {
+        totalCapacity
+        availableCapacity
+        usedCapacity
+        snapshotCapacity
+        liveMountCapacity
+        miscellaneousCapacity
+        pendingSnapshotCapacity
+        cdpCapacity
+        lastUpdateTime
+        averageDailyGrowth
+      }
+      clusterNodeConnection {
+        nodes {
+          hostname
+          id
+          brikId
+          ipAddress
+          status
+        }
+      }
+    }
+  }
+}
