@@ -1,0 +1,10 @@
+nav:
+  - index.md
+  - API-playground.md
+  - authentication.md
+  - Data-Protection
+  - SaaS-App-Protection
+  - Annapurna
+  - Observability
+  - System-Settings
+  - troubleshooting.md
