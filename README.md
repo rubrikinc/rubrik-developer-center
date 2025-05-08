@@ -1,9 +1,16 @@
-# Rubrik Developer Guide
+# Rubrik Developer Center
 
 ---
 
-## Running the static site locally
+Welcome to the Rubrik Developer Center repository! This repository contains the documentation and code samples to generate [developer.rubrik.com](https://developer.rubrik.com).
 
+## Bad Experiences are Bugs
+For ANY bad experiences, please navigate to the offending page on the [site](https://developer.rubrik.com) and use the feedback tool at the bottom of each page.
+
+## Contributing
+All contributions will be considered, and require a signed CLA. All code sample contributions will require testing. Automated validation of GraphQL samples will be coming soon.
+
+## Running the static site locally
 Clone the repo locally, and execute `setup.sh`. This will create a python virtual environment and install all necessary dependencies.
 ```
 git clone https://github.com/rubrikinc/rubrik-developer-guide.git
