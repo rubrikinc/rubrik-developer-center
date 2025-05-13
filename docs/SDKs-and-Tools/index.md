@@ -15,7 +15,7 @@ icon: material/toolbox-outline
 
     [:material-powershell: PowerShell Gallery](https://www.powershellgallery.com/packages/rubriksecuritycloud)
 
-    [:material-github: Github Project](https://github.com/rubrikinc/rubrik-powershell-sdk/)
+    [:material-github: GitHub Project](https://github.com/rubrikinc/rubrik-powershell-sdk/)
 
 -   :simple-postman:{ .lg .middle } __Rubrik Security Cloud Postman Collection__
 
@@ -35,5 +35,5 @@ icon: material/toolbox-outline
 
     [:simple-terraform: Terraform Registry](https://registry.terraform.io/providers/rubrikinc/polaris/)
 
-    [:material-github: Github Project](https://github.com/rubrikinc/terraform-provider-polaris)
+    [:material-github: GitHub Project](https://github.com/rubrikinc/terraform-provider-polaris)
 </div>
