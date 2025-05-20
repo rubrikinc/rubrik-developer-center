@@ -25,6 +25,6 @@ source venv/bin/activate
 mkdocs serve
 ```
 
-The Rubrik Developer Guide site will be running locally at `localhost:8000`
+The Rubrik Developer Center site will be running locally at `localhost:8000`
 
 ---
