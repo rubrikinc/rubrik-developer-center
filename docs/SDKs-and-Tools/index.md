@@ -20,7 +20,7 @@ icon: material/toolbox-outline
 -   :simple-postman:{ .lg .middle } __Rubrik Security Cloud Postman Collection__
 
     ---
-    - Contains all samples from the Rubrik Developer Guide
+    - Contains all samples from the Rubrik Developer Center
     - Imports directly into Postman
     - Simply add credentials and instance to collection variables
     ---
