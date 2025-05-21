@@ -34,6 +34,7 @@ theme:
     - navigation.tabs
     - navigation.indexes
 #    - navigation.sections
+    - search.share
 extra_css:
   - css/extra.css
 extra_javascript:
