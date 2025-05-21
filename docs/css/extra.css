@@ -10,6 +10,7 @@
     /* --md-default-fg-color: transparent; */
     --md-default-bg-color: rgba(95, 50, 210, 0.9); /* scrollbar color */
     --md-admonition-bg-color: transparent;
+    --md-typeset-a-color: #0056b3;
 }
 [data-md-color-scheme="default"] {
     --md-primary-fg-color: #15292b;
