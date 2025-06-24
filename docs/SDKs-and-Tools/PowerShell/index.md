@@ -55,7 +55,7 @@ Import-Module RubrikSecurityCloud
 ---
 The RSC PowerShell Module utilizes RSC Service Accounts for authentication. Create a Service Account and download the JSON file. 
 
-The Service Account JSON file contains unencrypted credentials. The `Set-RscRscServiceAccount` will created an encrypted credentials file and offer to automatically remove the JSON file from disk.
+The Service Account JSON file contains unencrypted credentials. The `Set-RscServiceAccountFile` will created an encrypted credentials file and offer to automatically remove the JSON file from disk.
 
 ```
 Set-RscServiceAccountFile -InputFilePath /path/to/service_account.json
