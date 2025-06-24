@@ -4,6 +4,7 @@ nav:
   - authentication.md
   - Data-Protection
   - SaaS-App-Protection
+  - Threat-Analytics
   - Annapurna
   - Observability
   - System-Settings
