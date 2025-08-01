@@ -13,8 +13,8 @@ All contributions will be considered, and require a signed CLA. All code sample 
 ## Running the static site locally
 Clone the repo locally, and execute `setup.sh`. This will create a python virtual environment and install all necessary dependencies.
 ```
-git clone https://github.com/rubrikinc/rubrik-developer-guide.git
-cd rubrik-developer-guide
+git clone https://github.com/rubrikinc/rubrik-developer-center.git
+cd rubrik-developer-center
 chmod +x setup.sh
 ./setup.sh
 ```
