@@ -27,4 +27,10 @@ mkdocs serve
 
 The Rubrik Developer Center site will be running locally at `localhost:8000`
 
+To set up llms.txt, install [mkdocs-llmstxt](https://pawamoy.github.io/mkdocs-llmstxt/).
+```
+pip install mkdocs-llmstxt
+```
+... and find visit `localhost:8000/llms.txt`
+
 ---
