@@ -7,7 +7,7 @@
     Canceled snapshot indexing for directory \"${adDirectory}\".
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Canceled**</td><td>**No**</td></tr></table>
 
@@ -18,7 +18,7 @@
     Canceling snapshot indexing for directory \"${adDirectory}\".
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Canceling**</td><td>**No**</td></tr></table>
 
@@ -29,7 +29,7 @@
     Unable to index snapshot for directory \"${adDirectory}\".
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Critical**</td><td>**Failure**</td><td>**No**</td></tr></table>
 
@@ -40,7 +40,7 @@
     Queued snapshot indexing for directory \"${adDirectory}\".
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Queued**</td><td>**No**</td></tr></table>
 
@@ -51,7 +51,7 @@
     Started snapshot indexing for directory \"${adDirectory}\".
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**TaskSuccess**</td><td>**No**</td></tr></table>
 
@@ -62,7 +62,7 @@
     Successfully completed snapshot indexing for directory  \"${adDirectory}\".
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Success**</td><td>**No**</td></tr></table>
 
@@ -77,7 +77,7 @@
     Failed to delete scratch ${diskTypeDisplay}(s) in region ${region}.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Warning**</td><td>**TaskFailure**</td><td>**No**</td></tr></table>
 
@@ -88,7 +88,7 @@
     Deleting scratch ${diskTypeDisplay}(s) in region ${region}.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Running**</td><td>**No**</td></tr></table>
 
@@ -99,7 +99,7 @@
     Deleted scratch ${diskTypeDisplay}(s) in region ${region}.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**TaskSuccess**</td><td>**No**</td></tr></table>
 
@@ -110,7 +110,7 @@
     Started indexing of snapshot taken at ${snapshotTimeDisplay}.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Running**</td><td>**No**</td></tr></table>
 
@@ -121,7 +121,7 @@
     Failed to index snapshot taken at ${snapshotTimeDisplay} in the ${indexingAttempt} attempt. Reason: ${reason}. It will be retried automatically.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Warning**</td><td>**Failure**</td><td>**No**</td></tr></table>
 
@@ -132,7 +132,7 @@
     Failed to index snapshot taken at ${snapshotTimeDisplay} in the ${indexingAttempt} attempt. Reason: ${reason}. Skipping indexing of this snapshot.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Warning**</td><td>**Failure**</td><td>**No**</td></tr></table>
 
@@ -143,7 +143,7 @@
     Failed to delete ${diskTypeDisplay}(s) for ${numSnapshots} snapshot(s).
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Warning**</td><td>**TaskFailure**</td><td>**No**</td></tr></table>
 
@@ -154,7 +154,7 @@
     Deleting ${diskTypeDisplay}(s) for ${numSnapshots} snapshot(s).
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Running**</td><td>**No**</td></tr></table>
 
@@ -165,7 +165,7 @@
     Deleted ${diskTypeDisplay}(s) for ${numSnapshots} snapshot(s).
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**TaskSuccess**</td><td>**No**</td></tr></table>
 
@@ -176,7 +176,7 @@
     Canceled indexing of the snapshots of the ${snappableDisplay}.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Canceled**</td><td>**No**</td></tr></table>
 
@@ -187,7 +187,7 @@
     Canceling indexing of the snapshots of the ${snappableDisplay}.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Canceling**</td><td>**No**</td></tr></table>
 
@@ -198,7 +198,7 @@
     Failed to index snapshots of the ${snappableDisplay}. Reason: ${reason}.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Critical**</td><td>**Failure**</td><td>**No**</td></tr></table>
 
@@ -209,7 +209,7 @@
     ${userEmail} started indexing of the snapshot taken at ${snapshotTimeDisplay} of the ${snappableDisplay}.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Success**</td><td>**Yes**</td></tr></table>
 
@@ -220,7 +220,7 @@
     Started indexing of the snapshots of the ${snappableDisplay}.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**TaskSuccess**</td><td>**No**</td></tr></table>
 
@@ -231,7 +231,7 @@
     ${userEmail} failed to start indexing of the snapshot taken at ${snapshotTimeDisplay} of the ${snappableDisplay}. Failure reason: ${reason}.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Critical**</td><td>**Failure**</td><td>**Yes**</td></tr></table>
 
@@ -242,7 +242,18 @@
     Successfully indexed ${numSnapshots} snapshot(s) of the ${snappableDisplay}.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
+
+    <tr><td>**Info**</td><td>**Success**</td><td>**No**</td></tr></table>
+
+
+!!! info "CloudNativeIndexSnapshotsJobSucceededNoop"
+
+    ```
+    No snapshot available to index for ${snappableDisplay}.
+    ```
+
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Success**</td><td>**No**</td></tr></table>
 
@@ -253,7 +264,7 @@
     Failed to launch ${diskTypeDisplay}(s) for ${numSnapshots} snapshot(s).
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Warning**</td><td>**TaskFailure**</td><td>**No**</td></tr></table>
 
@@ -264,7 +275,7 @@
     Launching ${diskTypeDisplay}(s) for ${numSnapshots} snapshot(s).
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Running**</td><td>**No**</td></tr></table>
 
@@ -275,7 +286,7 @@
     Launched ${diskTypeDisplay}(s) for ${numSnapshots} snapshot(s).
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**TaskSuccess**</td><td>**No**</td></tr></table>
 
@@ -286,7 +297,7 @@
     Canceled indexing of the snapshot taken at ${snapshotTimeDisplay} of the ${snappableDisplay}.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Canceled**</td><td>**No**</td></tr></table>
 
@@ -297,7 +308,7 @@
     Canceling indexing of the snapshot taken at ${snapshotTimeDisplay} of the ${snappableDisplay}.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Canceling**</td><td>**No**</td></tr></table>
 
@@ -308,7 +319,7 @@
     Failed to index snapshot taken at ${snapshotTimeDisplay} of the ${snappableDisplay}. Reason: ${reason}.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Critical**</td><td>**Failure**</td><td>**No**</td></tr></table>
 
@@ -319,7 +330,7 @@
     Queued indexing of the snapshot taken at ${snapshotTimeDisplay} of the ${snappableDisplay}.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Queued**</td><td>**No**</td></tr></table>
 
@@ -330,7 +341,7 @@
     Started indexing of the snapshot taken at ${snapshotTimeDisplay} of the ${snappableDisplay}.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**TaskSuccess**</td><td>**No**</td></tr></table>
 
@@ -341,9 +352,20 @@
     Successfully indexed snapshot taken at ${snapshotTimeDisplay} of the ${snappableDisplay}.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Success**</td><td>**No**</td></tr></table>
+
+
+!!! warning "CloudNativeIndexSnapshotsPrepareTaskTerminated"
+
+    ```
+    Some files may not be available for download because we couldn't index them. Reason:  ${reason}.
+    ```
+
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
+
+    <tr><td>**Warning**</td><td>**TaskSuccess**</td><td>**No**</td></tr></table>
 
 
 !!! info "CloudNativeIndexSnapshotSucceeded"
@@ -352,7 +374,7 @@
     Successfully indexed snapshot taken at ${snapshotTimeDisplay}.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Success**</td><td>**No**</td></tr></table>
 
@@ -363,7 +385,7 @@
     Failed to make ${numSnapshots} snapshot(s) available for file recovery.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Warning**</td><td>**TaskFailure**</td><td>**No**</td></tr></table>
 
@@ -374,7 +396,7 @@
     Waiting for ${numSnapshots} snapshot(s) to be available for file recovery.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Running**</td><td>**No**</td></tr></table>
 
@@ -385,7 +407,7 @@
     ${numSnapshots} snapshot(s) are available for file recovery.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**TaskSuccess**</td><td>**No**</td></tr></table>
 
@@ -400,7 +422,7 @@
     Failed to index ${user} Microsoft 365 ${snappable}. We will retry automatically. Reason: ${reason}. (Error ID: ${errorID}). For more information on this error please visit https://support.rubrik.com/articles/How_To/000002821
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Critical**</td><td>**Failure**</td><td>**No**</td></tr></table>
 
@@ -411,7 +433,7 @@
     Unable to index ${user} Microsoft 365 ${snappable}. Rubrik will automatically retry indexing this user. Reason: ${reason}. (Error ID: ${errorID}). For more information on this error, see https://support.rubrik.com/articles/How_To/000002821
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Warning**</td><td>**Failure**</td><td>**No**</td></tr></table>
 
@@ -422,7 +444,7 @@
     Index completed. ${skipCount} ${itemType} were skipped because ${reason}.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Warning**</td><td>**Success**</td><td>**No**</td></tr></table>
 
@@ -437,7 +459,7 @@
     Failed to prepare Data Threat Analytics investigation view for snapshot taken on ${snapshotDate} for workload ${snappableName}.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Critical**</td><td>**Failure**</td><td>**No**</td></tr></table>
 
@@ -448,7 +470,7 @@
     Preparing Data Threat Analytics investigation view for snapshot taken on ${snapshotDate} for workload ${snappableName}.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Queued**</td><td>**No**</td></tr></table>
 
@@ -459,7 +481,7 @@
     Started preparing Data Threat Analytics investigation view for snapshot taken on ${snapshotDate} for workload ${snappableName}.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**TaskSuccess**</td><td>**No**</td></tr></table>
 
@@ -470,7 +492,7 @@
     Successfully prepared Data Threat Analytics investigation view for snapshot taken on ${snapshotDate} for workload ${snappableName}.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Success**</td><td>**No**</td></tr></table>
 

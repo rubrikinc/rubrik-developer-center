@@ -7,7 +7,7 @@
     ${userEmail} assigned account ownership to ${targetUser}.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Success**</td><td>**Yes**</td></tr></table>
 
@@ -18,7 +18,7 @@
     ${userEmail} revoked account ownership from ${targetUser}.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Success**</td><td>**Yes**</td></tr></table>
 
@@ -26,10 +26,10 @@
 !!! info "AdminRequestedPasswordChange"
 
     ```
-    Admin ${userName} requested password reset for users.
+    ${userName} initiated a mandatory password reset for ${userNames}.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Success**</td><td>**Yes**</td></tr></table>
 
@@ -40,7 +40,7 @@
     ${userName} removed all role assignments from the user ${targetUser}.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Success**</td><td>**Yes**</td></tr></table>
 
@@ -51,7 +51,7 @@
     ${userEmail} revoked all roles from user group ${groupName}.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Success**</td><td>**Yes**</td></tr></table>
 
@@ -62,7 +62,7 @@
     ${userEmail} authorized user groups in organization ${orgName}: ${userGroupNames}.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Success**</td><td>**Yes**</td></tr></table>
 
@@ -73,7 +73,7 @@
     ${userName} updated the hidden status to ${hiddenStatus} for ${targetUserName}.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Success**</td><td>**Yes**</td></tr></table>
 
@@ -84,7 +84,7 @@
     ${userEmail} created organization ${orgName}.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Success**</td><td>**Yes**</td></tr></table>
 
@@ -95,7 +95,7 @@
     ${userEmail} failed to create organization ${orgName}, Reason: ${reason}
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Warning**</td><td>**Failure**</td><td>**Yes**</td></tr></table>
 
@@ -106,7 +106,7 @@
     ${userEmail} deleted organization ${orgName}.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Success**</td><td>**Yes**</td></tr></table>
 
@@ -117,7 +117,18 @@
     ${userEmail} failed to delete organization ${orgName}. Reason: ${reason}
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
+
+    <tr><td>**Warning**</td><td>**Failure**</td><td>**Yes**</td></tr></table>
+
+
+!!! warning "OrgInviteEmailsFailedToSend"
+
+    ```
+    Unable to send user invite emails for organization ${orgName}. Reason: ${reason}
+    ```
+
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Warning**</td><td>**Failure**</td><td>**Yes**</td></tr></table>
 
@@ -128,7 +139,7 @@
     ${userEmail} modified organization ${orgName}.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Success**</td><td>**Yes**</td></tr></table>
 
@@ -139,7 +150,7 @@
     ${userEmail} modified organization ${orgName}. Reason: ${reason}
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Warning**</td><td>**Failure**</td><td>**Yes**</td></tr></table>
 
@@ -150,7 +161,7 @@
     ${userName} updated the password policy (${changedPolicies}) for the ${orgName} organization.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Success**</td><td>**Yes**</td></tr></table>
 
@@ -161,7 +172,7 @@
     ${userName} failed to update the password policy for the ${orgName} organization.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Warning**</td><td>**Failure**</td><td>**Yes**</td></tr></table>
 
@@ -169,10 +180,10 @@
 !!! info "RoleAssignedToUser"
 
     ```
-    ${userEmail} changed role of ${targetUser} to ${role}.
+    ${userEmail} updated the assigned roles for ${principalType} ${principal} from ${previousRoles} to ${currentRoles}
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Success**</td><td>**Yes**</td></tr></table>
 
@@ -180,10 +191,10 @@
 !!! info "RoleAssignedToUserGroup"
 
     ```
-    ${userEmail} changed role of user group ${groupName} to ${role}.
+    ${userEmail} updated the assigned roles for SSO group ${principal} from ${previousRoles} to ${currentRoles}
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Success**</td><td>**Yes**</td></tr></table>
 
@@ -194,7 +205,7 @@
     ${userEmail} failed to change role of ${targetUser} to ${role}. Reason: ${reason}
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Success**</td><td>**Yes**</td></tr></table>
 
@@ -205,7 +216,7 @@
     ${userEmail} failed to change role of user group ${groupName} to ${role}. Reason: ${reason}
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Warning**</td><td>**Failure**</td><td>**Yes**</td></tr></table>
 
@@ -216,7 +227,7 @@
     ${userEmail} created role ${role}.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Success**</td><td>**Yes**</td></tr></table>
 
@@ -227,7 +238,7 @@
     ${userEmail} failed to create role ${role}. Reason: ${reason}
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Warning**</td><td>**Failure**</td><td>**Yes**</td></tr></table>
 
@@ -238,7 +249,7 @@
     ${userEmail} revoked role ${role} from user ${targetUser}.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Success**</td><td>**Yes**</td></tr></table>
 
@@ -249,7 +260,7 @@
     ${userEmail} revoked role ${role} from user group ${groupName}.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Success**</td><td>**Yes**</td></tr></table>
 
@@ -257,10 +268,10 @@
 !!! info "RoleDeleted"
 
     ```
-    ${userEmail} deleted role ${role}
+    ${userEmail} deleted sync ${syncStatus} role ${role}
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Success**</td><td>**Yes**</td></tr></table>
 
@@ -271,18 +282,29 @@
     ${userEmail} failed to delete role ${role}. Reason: ${reason}
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Warning**</td><td>**Failure**</td><td>**Yes**</td></tr></table>
+
+
+!!! info "RoleSyncUpdated"
+
+    ```
+    ${userEmail} modified role ${origRole}${role} and  ${updatedSyncStatus} syncing for the role to CDM clusters.
+    ```
+
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
+
+    <tr><td>**Info**</td><td>**Success**</td><td>**Yes**</td></tr></table>
 
 
 !!! info "RoleUpdated"
 
     ```
-    ${userEmail} modified role ${origRole}${role}. (Role ID: ${roleID})
+    ${userEmail} modified role ${origRole}${role}.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Success**</td><td>**Yes**</td></tr></table>
 
@@ -293,7 +315,7 @@
     ${userEmail} failed to modify role ${role}. Reason: ${reason}
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Warning**</td><td>**Failure**</td><td>**Yes**</td></tr></table>
 
@@ -304,7 +326,7 @@
     ${actorSubjectName} created service account ${targetSubjectName}.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Success**</td><td>**Yes**</td></tr></table>
 
@@ -315,7 +337,7 @@
     ${actorSubjectName} failed to create service account ${targetSubjectName}. Reason: ${reason}
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Warning**</td><td>**Failure**</td><td>**Yes**</td></tr></table>
 
@@ -326,7 +348,7 @@
     ${actorSubjectName} deleted service account ${targetSubjectName}.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Success**</td><td>**Yes**</td></tr></table>
 
@@ -337,7 +359,7 @@
     ${actorSubjectName} failed to delete service account ${targetSubjectName}. Reason: ${reason}
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Warning**</td><td>**Failure**</td><td>**Yes**</td></tr></table>
 
@@ -348,7 +370,7 @@
     ${actorSubjectName} tried to start a delete request on ${count} service accounts. The preparation for the deletion failed. Reason: ${reason}
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Warning**</td><td>**Failure**</td><td>**Yes**</td></tr></table>
 
@@ -359,7 +381,7 @@
     ${actorSubjectName} rotated the secret of the service account ${targetSubjectName}.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Success**</td><td>**Yes**</td></tr></table>
 
@@ -370,7 +392,29 @@
     ${actorSubjectName} failed to rotate the secret of the service account ${targetSubjectName}. Reason: ${reason}
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
+
+    <tr><td>**Warning**</td><td>**Failure**</td><td>**Yes**</td></tr></table>
+
+
+!!! info "ServiceAccountUpdated"
+
+    ```
+    ${actorSubjectName} udpated service account ${targetSubjectName}.
+    ```
+
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
+
+    <tr><td>**Info**</td><td>**Success**</td><td>**Yes**</td></tr></table>
+
+
+!!! warning "ServiceAccountUpdateFailed"
+
+    ```
+    ${actorSubjectName} failed to update service account ${targetSubjectName}. Reason: ${reason}
+    ```
+
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Warning**</td><td>**Failure**</td><td>**Yes**</td></tr></table>
 
@@ -381,7 +425,7 @@
     ${userName} created SSO user, ${targetUserName}.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Success**</td><td>**Yes**</td></tr></table>
 
@@ -392,9 +436,20 @@
     ${userName} failed to create SSO user, ${targetUserName}.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Warning**</td><td>**Failure**</td><td>**Yes**</td></tr></table>
+
+
+!!! info "SyncedRoleCreated"
+
+    ```
+    ${userEmail} created role ${role} and enabled syncing for the role to CDM clusters.
+    ```
+
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
+
+    <tr><td>**Info**</td><td>**Success**</td><td>**Yes**</td></tr></table>
 
 
 !!! info "UpdatedUserGroupsInOrg"
@@ -403,7 +458,7 @@
     ${userEmail} updated user groups in organization ${orgName}: ${userGroupNames}.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Success**</td><td>**Yes**</td></tr></table>
 
@@ -414,7 +469,7 @@
     ${userName} changed the password for user ${targetUser}.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Success**</td><td>**Yes**</td></tr></table>
 
@@ -425,7 +480,7 @@
     ${userName} failed to change the password for user ${targetUser}.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Warning**</td><td>**Failure**</td><td>**Yes**</td></tr></table>
 
@@ -436,7 +491,7 @@
     User ${userEmail} was created.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Success**</td><td>**Yes**</td></tr></table>
 
@@ -447,7 +502,7 @@
     User ${userEmail} failed to create.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Warning**</td><td>**Failure**</td><td>**Yes**</td></tr></table>
 
@@ -458,7 +513,7 @@
     ${actorUserEmail} deleted user ${targetUserEmail}.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Success**</td><td>**Yes**</td></tr></table>
 
@@ -469,7 +524,7 @@
     ${actorUserEmail} failed to delete user ${targetUserEmail}. Reason: ${reason}
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Warning**</td><td>**Failure**</td><td>**Yes**</td></tr></table>
 
@@ -480,7 +535,7 @@
     ${actorUserEmail} tried to start a delete request on ${count} users. The preparation for the deletion failed. Reason: ${reason}
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Warning**</td><td>**Failure**</td><td>**Yes**</td></tr></table>
 
@@ -491,7 +546,7 @@
     ${actorUserName} deleted role group mapping ${groupName}.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Success**</td><td>**Yes**</td></tr></table>
 
@@ -502,7 +557,7 @@
     ${actorUserName} was unable to delete role group mapping ${groupName}.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Warning**</td><td>**Failure**</td><td>**Yes**</td></tr></table>
 
@@ -513,7 +568,77 @@
     ${actorUserEmail} invited user ${targetUserEmail}.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
+
+    <tr><td>**Info**</td><td>**Success**</td><td>**Yes**</td></tr></table>
+
+
+
+##classification_settings
+----
+
+!!! info "DisabledClassificationBanner"
+
+    ```
+    ${actorUserEmail} disabled the classification banners successfully.
+    ```
+
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
+
+    <tr><td>**Info**</td><td>**Success**</td><td>**Yes**</td></tr></table>
+
+
+!!! info "DisabledLoginBanner"
+
+    ```
+    ${actorUserEmail} disabled the login classification modal successfully.
+    ```
+
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
+
+    <tr><td>**Info**</td><td>**Success**</td><td>**Yes**</td></tr></table>
+
+
+!!! info "EnabledClassificationBanner"
+
+    ```
+    ${actorUserEmail} enabled the classification banners successfully.
+    ```
+
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
+
+    <tr><td>**Info**</td><td>**Success**</td><td>**Yes**</td></tr></table>
+
+
+!!! info "EnabledLoginBanner"
+
+    ```
+    ${actorUserEmail} enabled the login classification modal successfully.
+    ```
+
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
+
+    <tr><td>**Info**</td><td>**Success**</td><td>**Yes**</td></tr></table>
+
+
+!!! info "UpdateClassificationBanner"
+
+    ```
+    ${actorUserEmail} updated the classification banners successfully.
+    ```
+
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
+
+    <tr><td>**Info**</td><td>**Success**</td><td>**Yes**</td></tr></table>
+
+
+!!! info "UpdateLoginBanner"
+
+    ```
+    ${actorUserEmail} updated the login classification modal successfully.
+    ```
+
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Success**</td><td>**Yes**</td></tr></table>
 
@@ -528,7 +653,7 @@
     ${actorUserEmail} disabled the Display Rubrik CDM inventory in Polaris successfully.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Success**</td><td>**Yes**</td></tr></table>
 
@@ -539,7 +664,7 @@
     ${actorUserEmail} failed to change the Display Rubrik CDM inventory in Polaris. Reason: ${reason}
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Warning**</td><td>**Failure**</td><td>**Yes**</td></tr></table>
 
@@ -550,7 +675,7 @@
     ${actorUserEmail} enabled the Display Rubrik CDM inventory in Polaris successfully.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Success**</td><td>**Yes**</td></tr></table>
 
@@ -561,7 +686,7 @@
     ${actorUserEmail} disabled the Rubrik CDM federated access successfully.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Success**</td><td>**Yes**</td></tr></table>
 
@@ -572,7 +697,7 @@
     ${actorUserEmail} failed to change the Rubrik CDM federated access. Reason: ${reason}
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Warning**</td><td>**Failure**</td><td>**Yes**</td></tr></table>
 
@@ -583,7 +708,7 @@
     ${actorUserEmail} enabled the Rubrik CDM federated access successfully.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Success**</td><td>**Yes**</td></tr></table>
 
@@ -598,7 +723,7 @@
     ${username} has changed the maximum allowed passkeys from ${prevValue} to ${newValue}.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Success**</td><td>**Yes**</td></tr></table>
 
@@ -609,7 +734,7 @@
     ${username} disabled Rubrik Two-Step Verification to remember device.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Success**</td><td>**Yes**</td></tr></table>
 
@@ -620,7 +745,7 @@
     ${username} updated Rubrik Two-Step Verification to remember device from ${initialHours} to ${hours} hours.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Success**</td><td>**Yes**</td></tr></table>
 
@@ -631,7 +756,7 @@
     ${username} has added ${type} passkey ${passkeyName} for MFA.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Success**</td><td>**Yes**</td></tr></table>
 
@@ -642,7 +767,7 @@
     ${username} has deleted ${type} passkey ${passkeyName} for MFA.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Success**</td><td>**Yes**</td></tr></table>
 
@@ -653,7 +778,7 @@
     ${username} has enabled passkeys for the account.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Success**</td><td>**Yes**</td></tr></table>
 
@@ -664,7 +789,7 @@
     ${username} has disabled passkeys for the account.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Success**</td><td>**Yes**</td></tr></table>
 
@@ -675,7 +800,7 @@
     ${username} has enabled ${passkeyType} passkeys for the account.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Success**</td><td>**Yes**</td></tr></table>
 
@@ -686,7 +811,29 @@
     ${username} has disabled ${passkeyType} passkeys for the account.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
+
+    <tr><td>**Info**</td><td>**Success**</td><td>**Yes**</td></tr></table>
+
+
+!!! info "PasswordlessLoginDisabled"
+
+    ```
+    ${username} has disabled passwordless login for the account.
+    ```
+
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
+
+    <tr><td>**Info**</td><td>**Success**</td><td>**Yes**</td></tr></table>
+
+
+!!! info "PasswordlessLoginEnabled"
+
+    ```
+    ${username} has enabled passwordless login for the account.
+    ```
+
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Success**</td><td>**Yes**</td></tr></table>
 
@@ -697,7 +844,7 @@
     ${username} set Rubrik Two-Step Verification enforced globally.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Success**</td><td>**Yes**</td></tr></table>
 
@@ -708,7 +855,7 @@
     ${username} set Rubrik Two-Step Verification not enforced globally.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Warning**</td><td>**Success**</td><td>**Yes**</td></tr></table>
 
@@ -719,7 +866,7 @@
     ${username} set Rubrik Two-Step Verification enforced on LDAP domain ${ldapName}.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Success**</td><td>**Yes**</td></tr></table>
 
@@ -730,7 +877,7 @@
     ${username} set Rubrik Two-Step Verification not enforced on LDAP domain ${ldapName}.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Warning**</td><td>**Success**</td><td>**Yes**</td></tr></table>
 
@@ -741,7 +888,7 @@
     ${username} reconfigured Rubrik Two-Step Verification.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Success**</td><td>**Yes**</td></tr></table>
 
@@ -752,7 +899,7 @@
     ${username} disabled Rubrik Two-Step Verification reminder.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Warning**</td><td>**Success**</td><td>**Yes**</td></tr></table>
 
@@ -763,7 +910,7 @@
     ${username} updated the Rubrik Two-Step Verification reminder frequency from every ${initialHours} hours to once every ${hours} hours.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Success**</td><td>**Yes**</td></tr></table>
 
@@ -774,7 +921,7 @@
     ${username} disabled Rubrik Two-Step Verification for  ${targetUsername}.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Warning**</td><td>**Success**</td><td>**Yes**</td></tr></table>
 
@@ -785,7 +932,7 @@
     ${username} enabled Rubrik Two-Step Verification.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Success**</td><td>**Yes**</td></tr></table>
 
@@ -796,7 +943,7 @@
     ${username} set Rubrik Two-Step Verification enforced for ${targetUsername}.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Success**</td><td>**Yes**</td></tr></table>
 
@@ -807,7 +954,7 @@
     ${username} set Rubrik Two-Step Verification not enforced for ${targetUsername}.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Warning**</td><td>**Success**</td><td>**Yes**</td></tr></table>
 
@@ -816,15 +963,48 @@
 ##moat
 ----
 
+!!! info "AddIPWhitelistEntries"
+
+    ```
+    ${actorUserEmail} added new addresses, (${newIpCidrs}), to IP allowlist.
+    ```
+
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
+
+    <tr><td>**Info**</td><td>**Success**</td><td>**Yes**</td></tr></table>
+
+
+!!! failure "DeleteIPWhitelistEntries"
+
+    ```
+    ${actorUserEmail} deleted addresses, (${deletedIpCidrs}), from IP allowlist.
+    ```
+
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
+
+    <tr><td>**Critical**</td><td>**Success**</td><td>**Yes**</td></tr></table>
+
+
 !!! warning "FailedAPICallDueToIPViolation"
 
     ```
     ${api_name} failed to execute as it was accessed from an  unauthorized IP address ${ip_address} for the ${user_domain} ${username}
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Warning**</td><td>**Failure**</td><td>**Yes**</td></tr></table>
+
+
+!!! failure "SetIPWhitelistSetting"
+
+    ```
+    ${actorUserEmail} updated IP allowlist settings to (enabled: ${newEnabled}, mode: ${newMode}).
+    ```
+
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
+
+    <tr><td>**Critical**</td><td>**Success**</td><td>**Yes**</td></tr></table>
 
 
 !!! info "SetWhitelistDisabledSucceeded"
@@ -833,7 +1013,7 @@
     ${actorUserEmail} disabled the IP whitelist successfully.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Success**</td><td>**Yes**</td></tr></table>
 
@@ -844,7 +1024,7 @@
     ${actorUserEmail} failed to change the IP whitelist enforcement. Reason: ${reason}
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Warning**</td><td>**Failure**</td><td>**Yes**</td></tr></table>
 
@@ -855,7 +1035,18 @@
     ${actorUserEmail} enabled the IP whitelist successfully.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
+
+    <tr><td>**Info**</td><td>**Success**</td><td>**Yes**</td></tr></table>
+
+
+!!! info "UpdateIPWhitelistEntry"
+
+    ```
+    ${actorUserEmail} updated an entry in the IP allowlist from (ip: ${oldIpCidr}, description: ${oldDescription}) to (ip: ${newIpCidr}, description: ${newDescription}).
+    ```
+
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Success**</td><td>**Yes**</td></tr></table>
 
@@ -866,7 +1057,7 @@
     ${actorUserEmail} failed to update IP whitelist. Reason: ${reason}
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Warning**</td><td>**Failure**</td><td>**Yes**</td></tr></table>
 
@@ -877,7 +1068,7 @@
     ${actorUserEmail} updated IP whitelist successfully.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Success**</td><td>**Yes**</td></tr></table>
 
@@ -892,7 +1083,7 @@
     User account for ${username} has been auto-unlocked.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Success**</td><td>**Yes**</td></tr></table>
 
@@ -903,7 +1094,7 @@
     ${username} has been locked by administrator ${admin}.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Success**</td><td>**Yes**</td></tr></table>
 
@@ -914,9 +1105,20 @@
     The user account for ${username} has been locked due to multiple  failed login attempts.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Warning**</td><td>**Success**</td><td>**Yes**</td></tr></table>
+
+
+!!! info "LockedDueToInactivity"
+
+    ```
+    ${username} has been locked due to inactivity.
+    ```
+
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
+
+    <tr><td>**Info**</td><td>**Success**</td><td>**Yes**</td></tr></table>
 
 
 !!! warning "LockedDueToLeakedPassword"
@@ -925,7 +1127,7 @@
     User ${email}'s account was locked because the account is at risk of being compromised.  The account credentials were found to have been compromised in another vendors security breach.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Warning**</td><td>**Success**</td><td>**Yes**</td></tr></table>
 
@@ -936,7 +1138,7 @@
     ${admin} updated the account lockout configuration, (${changedConfigs}), for the ${orgName} organization.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Success**</td><td>**Yes**</td></tr></table>
 
@@ -947,7 +1149,7 @@
     ${username} has been unlocked by administrator ${admin}.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Success**</td><td>**Yes**</td></tr></table>
 
@@ -958,7 +1160,7 @@
     ${username} has been unlocked by Rubrik Support.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Success**</td><td>**Yes**</td></tr></table>
 

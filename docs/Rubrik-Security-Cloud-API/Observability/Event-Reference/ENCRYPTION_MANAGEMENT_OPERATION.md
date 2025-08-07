@@ -7,7 +7,7 @@
     ${ActorSubjectName} failed to add a KMIP server with the address '${address}.'
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Failure**</td><td>**Yes**</td></tr></table>
 
@@ -18,7 +18,7 @@
     ${ActorSubjectName} added a KMIP server with the address '${address}.'
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Success**</td><td>**Yes**</td></tr></table>
 
@@ -29,7 +29,7 @@
     ${ActorSubjectName} was unable to schedule an edit of the KMIP server with the address '${address}.'
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Failure**</td><td>**Yes**</td></tr></table>
 
@@ -40,7 +40,7 @@
     ${ActorSubjectName} scheduled an edit of the KMIP server with the address '${address}.'
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Success**</td><td>**Yes**</td></tr></table>
 
@@ -51,7 +51,7 @@
     ${ActorSubjectName} was unable to schedule the addition of a KMIP server with the address '${address}.'
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Failure**</td><td>**Yes**</td></tr></table>
 
@@ -62,7 +62,7 @@
     ${ActorSubjectName} scheduled the addition of a KMIP server with the address '${address}.'
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Success**</td><td>**Yes**</td></tr></table>
 
@@ -73,7 +73,7 @@
     ${ActorSubjectName} was unable to schedule the removal of the KMIP server with the address '${address}.'
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Failure**</td><td>**Yes**</td></tr></table>
 
@@ -84,7 +84,7 @@
     ${ActorSubjectName} scheduled the removal of the KMIP server with the address '${address}.'
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Success**</td><td>**Yes**</td></tr></table>
 
@@ -95,7 +95,7 @@
     ${ActorSubjectName} failed to delete the KMIP server with the address '${address}.'
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Failure**</td><td>**Yes**</td></tr></table>
 
@@ -106,7 +106,7 @@
     ${ActorSubjectName} deleted the KMIP server with the address '${address}.'
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Success**</td><td>**Yes**</td></tr></table>
 
@@ -117,7 +117,7 @@
     ${ActorSubjectName} was unable to schedule a job to trigger a one-time data-at-rest  encryption key rotation.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Failure**</td><td>**Yes**</td></tr></table>
 
@@ -128,7 +128,7 @@
     ${ActorSubjectName} scheduled a job to trigger a one-time data-at-rest  encryption key rotation with the key type '${keyType}'.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Success**</td><td>**Yes**</td></tr></table>
 
@@ -139,7 +139,7 @@
     ${ActorSubjectName} configured the KMIP client credentials with KMIP user '${username}' and both password and certificate-based authentication.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Success**</td><td>**Yes**</td></tr></table>
 
@@ -150,7 +150,7 @@
     ${ActorSubjectName} configured the KMIP client credentials with KMIP user '${username}' and certificate-based authentication.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Success**</td><td>**Yes**</td></tr></table>
 
@@ -161,7 +161,7 @@
     ${ActorSubjectName} failed to configure the KMIP client credentials.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Success**</td><td>**Yes**</td></tr></table>
 
@@ -172,7 +172,7 @@
     ${ActorSubjectName} configured the KMIP client credentials with KMIP user '${username}' and password-based authentication.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Success**</td><td>**Yes**</td></tr></table>
 
@@ -183,7 +183,7 @@
     ${ActorSubjectName} was unable to trigger a one-time data-at-rest encryption key rotation.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Failure**</td><td>**Yes**</td></tr></table>
 
@@ -194,7 +194,7 @@
     ${ActorSubjectName} triggered a one-time data-at-rest encryption  key rotation with the key type '${keyType}'.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Success**</td><td>**Yes**</td></tr></table>
 
@@ -209,7 +209,7 @@
     Successfully rekeyed encryption keys for ${exocomputeName} in  Subscription ${orgName}.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Success**</td><td>**No**</td></tr></table>
 
@@ -220,7 +220,7 @@
     Failed to rekey encryption keys for ${exocomputeName} in Subscription  ${orgName}.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Critical**</td><td>**Failure**</td><td>**No**</td></tr></table>
 
@@ -231,7 +231,7 @@
     Rekeying encryption keys for ${exocomputeName} in Subscription  ${orgName}.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Running**</td><td>**No**</td></tr></table>
 
@@ -242,7 +242,7 @@
     Successfully rotated encryption keys for ${exocomputeName} in  Subscription ${orgName}.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Success**</td><td>**No**</td></tr></table>
 
@@ -253,7 +253,7 @@
     Failed to rotate encryption keys for ${exocomputeName} in Subscription  ${orgName}.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Critical**</td><td>**Failure**</td><td>**No**</td></tr></table>
 
@@ -264,7 +264,7 @@
     Rotating encryption keys for ${exocomputeName} in Subscription  ${orgName}.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Success**</td><td>**No**</td></tr></table>
 
@@ -279,7 +279,7 @@
     Failed to add the KMIP server certificate '${certName}'  to cluster '${cluster}.'
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Warning**</td><td>**Failure**</td><td>**No**</td></tr></table>
 
@@ -290,7 +290,7 @@
     Successfully added the KMIP server certificate '${certName}'  to cluster '${cluster}.'
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Success**</td><td>**No**</td></tr></table>
 
@@ -301,7 +301,7 @@
     Failed to add the KMIP Server '${address}:${port}' to cluster  '${cluster}.'
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Warning**</td><td>**Failure**</td><td>**No**</td></tr></table>
 
@@ -312,7 +312,7 @@
     Attempting to add a KMIP Server '${address}:${port}' with server  certificate '${certName}' to cluster '${cluster}.'
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Running**</td><td>**No**</td></tr></table>
 
@@ -323,7 +323,7 @@
     Successfully added the KMIP Server '${address}:${port}' to cluster  '${cluster}.'
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Success**</td><td>**No**</td></tr></table>
 
@@ -334,7 +334,7 @@
     Unable to delete the KMIP server '${address}' from the  Rubrik cluster '${cluster}.'
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Warning**</td><td>**Failure**</td><td>**No**</td></tr></table>
 
@@ -345,7 +345,7 @@
     Attempting to delete the KMIP server '${address}' from the  Rubrik cluster '${cluster}.'
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Running**</td><td>**No**</td></tr></table>
 
@@ -356,7 +356,7 @@
     Successfully deleted the KMIP server '${address}' from the  Rubrik cluster '${cluster}.'
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Success**</td><td>**No**</td></tr></table>
 
@@ -367,7 +367,7 @@
     Unable to edit the KMIP Server with address '${address}` to use  certificate '${certName}' and port ${port} on Rubrik cluster '${cluster}.'
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Warning**</td><td>**Failure**</td><td>**No**</td></tr></table>
 
@@ -378,7 +378,7 @@
     Attempting to edit the KMIP Server with address '${address}` to use  certificate '${certName}' and port ${port} on Rubrik cluster '${cluster}.'
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Running**</td><td>**No**</td></tr></table>
 
@@ -389,7 +389,7 @@
     Successfully edited the KMIP Server with address '${address}` to use  certificate '${certName}' and port ${port} on Rubrik cluster '${cluster}.'
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Success**</td><td>**No**</td></tr></table>
 
@@ -400,7 +400,7 @@
     Failed to trigger a one-time data at rest encryption key rotation for cluster '${cluster}' because the cluster is disconnected.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Warning**</td><td>**Failure**</td><td>**No**</td></tr></table>
 
@@ -411,7 +411,7 @@
     Failed to trigger a one-time data at rest encryption key rotation for cluster '${cluster}' due to an invalid request.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Warning**</td><td>**Failure**</td><td>**No**</td></tr></table>
 
@@ -422,7 +422,7 @@
     Successfully triggered a one-time data at rest encryption key rotation for cluster '${cluster}' using key type ${keyType}.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Success**</td><td>**No**</td></tr></table>
 
@@ -437,7 +437,7 @@
     Failed to set up storage account ${storage_account_name} for backup of  encryption keys
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Critical**</td><td>**Failure**</td><td>**No**</td></tr></table>
 
@@ -448,7 +448,7 @@
     Setting up storage account ${storage_account_name} for backup of  encryption keys
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Running**</td><td>**No**</td></tr></table>
 
@@ -459,7 +459,7 @@
     Successfully completed set up of storage account ${storage_account_name} for backup of encryption keys
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Success**</td><td>**No**</td></tr></table>
 
