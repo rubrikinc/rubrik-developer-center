@@ -3592,6 +3592,14 @@
       
         
       
+        
+      
+        
+      
+        
+      
+        
+      
     
     
     
@@ -3817,6 +3825,29 @@
   
   
     <li class="md-nav__item">
+      <a href="../DATA_RISKS/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    DATA RISKS
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../Diagnostic/" class="md-nav__link">
         
   
@@ -3898,6 +3929,15 @@
   <a href="#download" class="md-nav__link">
     <span class="md-ellipsis">
       download
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fileset" class="md-nav__link">
+    <span class="md-ellipsis">
+      fileset
     </span>
   </a>
   
@@ -3989,6 +4029,29 @@
   
   <span class="md-ellipsis">
     Failover
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../IDENTITY_ALERTS/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    IDENTITY ALERTS
     
   </span>
   
@@ -4305,12 +4368,58 @@
   
   
     <li class="md-nav__item">
+      <a href="../SECURITY_VIOLATION/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    SECURITY VIOLATION
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../Search/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     Search
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Seeding/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Seeding
     
   </span>
   
@@ -4994,6 +5103,15 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#fileset" class="md-nav__link">
+    <span class="md-ellipsis">
+      fileset
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#managed_volume" class="md-nav__link">
     <span class="md-ellipsis">
       managed_volume
@@ -5035,7 +5153,7 @@
 <p class="admonition-title">RecoveryReportDownloadTriggered</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>${userEmail} triggered a job to download report for recovery &#39;${recoveryName}&#39;.
 </span></code></pre></div>
-<p><table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr></p>
+<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
 <p><tr><td><strong>Info</strong></td><td><strong>Success</strong></td><td><strong>Yes</strong></td></tr></table></p>
 </div>
 <h2 id="download">download</h2>
@@ -5044,88 +5162,104 @@
 <p class="admonition-title">DownloadReportCSV</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>${username} downloaded report ${reportName} as a CSV.
 </span></code></pre></div>
-<p><table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr></p>
+<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
 <p><tr><td><strong>Info</strong></td><td><strong>Success</strong></td><td><strong>Yes</strong></td></tr></table></p>
 </div>
 <div class="admonition info">
 <p class="admonition-title">DownloadReportPDF</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>${username} downloaded report ${reportName} as a PDF.
 </span></code></pre></div>
-<p><table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr></p>
+<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
 <p><tr><td><strong>Info</strong></td><td><strong>Success</strong></td><td><strong>Yes</strong></td></tr></table></p>
 </div>
 <div class="admonition failure">
 <p class="admonition-title">ReportDownloadGenerateFailure</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>Failure to create a download link for ${reportName} taken at ${timestamp}. ${failureReason}
 </span></code></pre></div>
-<p><table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr></p>
+<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
 <p><tr><td><strong>Critical</strong></td><td><strong>Failure</strong></td><td><strong>No</strong></td></tr></table></p>
 </div>
 <div class="admonition info">
 <p class="admonition-title">ReportDownloadGenerateInProgress</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>${reportName} is under preparation. Visit the Download Center for more information.
 </span></code></pre></div>
-<p><table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr></p>
+<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
 <p><tr><td><strong>Info</strong></td><td><strong>Running</strong></td><td><strong>No</strong></td></tr></table></p>
 </div>
 <div class="admonition info">
 <p class="admonition-title">ReportDownloadGenerateSuccess</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>Successfully completed preparation of ${reportName} taken at ${timestamp}. Visit the Download Center to obtain the link to download the report
 </span></code></pre></div>
-<p><table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr></p>
+<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
 <p><tr><td><strong>Info</strong></td><td><strong>Success</strong></td><td><strong>No</strong></td></tr></table></p>
 </div>
 <div class="admonition failure">
 <p class="admonition-title">ReportEmailGenerateFailure</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>Failed to immediately schedule report for ${reportName} requested at ${timestamp}. ${failureReason}
 </span></code></pre></div>
-<p><table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr></p>
+<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
 <p><tr><td><strong>Critical</strong></td><td><strong>Failure</strong></td><td><strong>No</strong></td></tr></table></p>
 </div>
 <div class="admonition info">
 <p class="admonition-title">ReportEmailGenerateInProgress</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>${reportName} is under preparation. Visit the Download Center for more information.
 </span></code></pre></div>
-<p><table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr></p>
+<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
 <p><tr><td><strong>Info</strong></td><td><strong>Running</strong></td><td><strong>No</strong></td></tr></table></p>
 </div>
 <div class="admonition info">
 <p class="admonition-title">ReportEmailGenerateSuccess</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>Successfully sent the immediately scheduled report for ${reportName} requested at ${timestamp}. Visit the Download Center for more information.
 </span></code></pre></div>
-<p><table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr></p>
+<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
 <p><tr><td><strong>Info</strong></td><td><strong>Success</strong></td><td><strong>No</strong></td></tr></table></p>
 </div>
 <div class="admonition info">
 <p class="admonition-title">SendImmediateReportEmail</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>${username} performed an immediate schedule for ${reportName}.
 </span></code></pre></div>
-<p><table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr></p>
+<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
 <p><tr><td><strong>Info</strong></td><td><strong>Success</strong></td><td><strong>Yes</strong></td></tr></table></p>
+</div>
+<h2 id="fileset">fileset</h2>
+<hr />
+<div class="admonition info">
+<p class="admonition-title">FilesetBackupReport</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>${username} started a backup report job for fileset &#39;${filesetName}&#39; and snapshot taken on &#39;${snapshotDate}&#39;.
+</span></code></pre></div>
+<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
+<p><tr><td><strong>Info</strong></td><td><strong>Success</strong></td><td><strong>Yes</strong></td></tr></table></p>
+</div>
+<div class="admonition info">
+<p class="admonition-title">FilesetBackupReportFailure</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>${username} failed to start backup report job for fileset &#39;${filesetName}&#39; and snapshot taken on &#39;${snapshotDate}&#39;. Reason: ${reason}.
+</span></code></pre></div>
+<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
+<p><tr><td><strong>Info</strong></td><td><strong>Failure</strong></td><td><strong>Yes</strong></td></tr></table></p>
 </div>
 <h2 id="managed_volume">managed_volume</h2>
 <hr />
 <div class="admonition info">
 <p class="admonition-title">DownloadManagedVolumeFromLocationFailure</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>${username} failed to download the snapshot: &#39;${snapshotId}&#39; from location: &#39;${locationId}&#39;. Reason: ${reason}.
+<div class="language-text highlight"><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>${username} failed to download the snapshot: &#39;${snapshotId}&#39; from location: &#39;${locationId}&#39;. Reason: ${reason}.
 </span></code></pre></div>
-<p><table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr></p>
+<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
 <p><tr><td><strong>Info</strong></td><td><strong>Failure</strong></td><td><strong>Yes</strong></td></tr></table></p>
 </div>
 <div class="admonition info">
 <p class="admonition-title">DownloadManagedVolumeFromLocationSuccess</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>${username} started the operation to download the snapshot: &#39;${snapshotId}&#39; from location: &#39;${locationId}&#39;.
+<div class="language-text highlight"><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>${username} started the operation to download the snapshot: &#39;${snapshotId}&#39; from location: &#39;${locationId}&#39;.
 </span></code></pre></div>
-<p><table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr></p>
+<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
 <p><tr><td><strong>Info</strong></td><td><strong>Success</strong></td><td><strong>Yes</strong></td></tr></table></p>
 </div>
 <h2 id="rest_api_precheck">rest_api_precheck</h2>
 <hr />
 <div class="admonition info">
 <p class="admonition-title">DownloadCSV</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>${username} downloaded a CDM Rest API metrics CSV file.
+<div class="language-text highlight"><pre><span></span><code><span id="__span-14-1"><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a>${username} downloaded a CDM Rest API metrics CSV file.
 </span></code></pre></div>
-<p><table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr></p>
+<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
 <p><tr><td><strong>Info</strong></td><td><strong>Success</strong></td><td><strong>Yes</strong></td></tr></table></p>
 </div>
 
@@ -5148,7 +5282,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="August 1, 2025 06:15:41 UTC">2025-08-01</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="August 7, 2025 18:48:20 UTC">2025-08-07</span>
   </span>
 
     
