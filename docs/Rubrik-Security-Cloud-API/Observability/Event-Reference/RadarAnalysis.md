@@ -7,7 +7,7 @@
     Finished detailed encryption analysis for snapshot taken on ${snapshotDate} of ${snappableType} '${snappableName}'.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Running**</td><td>**No**</td></tr></table>
 
@@ -18,7 +18,7 @@
     Started detailed encryption analysis for snapshot taken on ${snapshotDate} of ${snappableType} '${snappableName}'.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**TaskSuccess**</td><td>**No**</td></tr></table>
 
@@ -29,7 +29,7 @@
     Finished Anomaly Detection analysis for snapshot taken on ${snapshotDate} of ${snappableType} '${snappableName}'.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Success**</td><td>**No**</td></tr></table>
 
@@ -40,7 +40,7 @@
     Started Anomaly Detection analysis for snapshot taken on ${snapshotDate} of ${snappableType} '${snappableName}'.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**TaskSuccess**</td><td>**No**</td></tr></table>
 
@@ -51,7 +51,7 @@
     Ransomware detection job for snapshot taken on ${snapshotDate} of ${snappableType} '${snappableName}' failed: ${failureReason}.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Failure**</td><td>**No**</td></tr></table>
 
@@ -62,7 +62,7 @@
     Unable to schedule ransomware detection job on cluster ${clusterName} due to ${failureReason}.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Failure**</td><td>**No**</td></tr></table>
 
@@ -73,7 +73,7 @@
     Starting ransomware detection job on cluster ${clusterName} for snapshot taken on ${snapshotDate} of ${snappableType} '${snappableName}'.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**TaskSuccess**</td><td>**No**</td></tr></table>
 

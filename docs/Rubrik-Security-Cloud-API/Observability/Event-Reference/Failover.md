@@ -4,10 +4,10 @@
 !!! info "BlueprintFailoverCanceled"
 
     ```
-    Canceled failover recovery plan '${name}' to '${location}'.
+    Canceled failover Recovery Plan '${name}' to '${location}'.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Canceled**</td><td>**No**</td></tr></table>
 
@@ -15,10 +15,10 @@
 !!! info "BlueprintFailoverCanceling"
 
     ```
-    Canceling failover for recovery plan '${name}' to '${location}'.
+    Canceling failover for Recovery Plan '${name}' to '${location}'.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Canceling**</td><td>**No**</td></tr></table>
 
@@ -26,10 +26,10 @@
 !!! failure "BlueprintFailoverDataIngestionFailed"
 
     ```
-    '${dataIngestionOperation}' process failed for recovery plan '${name}': ${reason}.
+    '${dataIngestionOperation}' process failed for Recovery Plan '${name}': ${reason}.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Critical**</td><td>**TaskFailure**</td><td>**No**</td></tr></table>
 
@@ -37,10 +37,10 @@
 !!! info "BlueprintFailoverDataIngestionStarted"
 
     ```
-    Starting the '${dataIngestionOperation}' process for recovery plan '${name}'.
+    Starting the '${dataIngestionOperation}' process for Recovery Plan '${name}'.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**TaskSuccess**</td><td>**No**</td></tr></table>
 
@@ -48,10 +48,10 @@
 !!! info "BlueprintFailoverDataIngestionSucceed"
 
     ```
-    '${dataIngestionOperation}' process succeeded for recovery plan '${name}'.
+    '${dataIngestionOperation}' process succeeded for Recovery Plan '${name}'.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**TaskSuccess**</td><td>**No**</td></tr></table>
 
@@ -59,10 +59,10 @@
 !!! failure "BlueprintFailoverFailed"
 
     ```
-    Failed to failover recovery plan '${name}' to '${location}': ${reason}.
+    Failed to failover Recovery Plan '${name}' to '${location}': ${reason}.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Critical**</td><td>**Failure**</td><td>**No**</td></tr></table>
 
@@ -70,10 +70,10 @@
 !!! failure "BlueprintFailoverFinalizeFailed"
 
     ```
-    Final failover tasks failed for failover of recovery plan '${name}': ${reason}.
+    Final failover tasks failed for failover of Recovery Plan '${name}': ${reason}.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Critical**</td><td>**Failure**</td><td>**No**</td></tr></table>
 
@@ -81,10 +81,10 @@
 !!! info "BlueprintFailoverFinalizeStarted"
 
     ```
-    Starting the final failover tasks for failover of recovery plan '${name}'.
+    Starting the final failover tasks for failover of Recovery Plan '${name}'.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**TaskSuccess**</td><td>**No**</td></tr></table>
 
@@ -92,10 +92,10 @@
 !!! info "BlueprintFailoverFinalizeSucceed"
 
     ```
-    Final failover tasks succeeded for failover of recovery plan '${name}'.
+    Final failover tasks succeeded for failover of Recovery Plan '${name}'.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Success**</td><td>**No**</td></tr></table>
 
@@ -103,10 +103,10 @@
 !!! failure "BlueprintFailoverIncrementalDataTransferFailed"
 
     ```
-    Incremental data transfer process failed for recovery plan '${name}': ${reason}.
+    Incremental data transfer process failed for Recovery Plan '${name}': ${reason}.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Critical**</td><td>**TaskFailure**</td><td>**No**</td></tr></table>
 
@@ -114,10 +114,10 @@
 !!! info "BlueprintFailoverIncrementalDataTransferStarted"
 
     ```
-    Starting the incremental data transfer process for recovery plan '${name}'.
+    Starting the incremental data transfer process for Recovery Plan '${name}'.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**TaskSuccess**</td><td>**No**</td></tr></table>
 
@@ -125,10 +125,10 @@
 !!! info "BlueprintFailoverIncrementalDataTransferSucceed"
 
     ```
-    Incremental data transfer process succeeded for recovery plan '${name}'.
+    Incremental data transfer process succeeded for Recovery Plan '${name}'.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**TaskSuccess**</td><td>**No**</td></tr></table>
 
@@ -136,10 +136,10 @@
 !!! failure "BlueprintFailoverPrepareDataFailed"
 
     ```
-    Failover initialization process failed for recovery plan '${name}'. Reason: ${reason}.
+    Failover initialization process failed for Recovery Plan '${name}'. Reason: ${reason}.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Critical**</td><td>**TaskFailure**</td><td>**No**</td></tr></table>
 
@@ -147,10 +147,10 @@
 !!! info "BlueprintFailoverPrepareDataStarted"
 
     ```
-    Starting the failover initialization process for recovery plan '${name}'.
+    Starting the failover initialization process for Recovery Plan '${name}'.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**TaskSuccess**</td><td>**No**</td></tr></table>
 
@@ -158,10 +158,10 @@
 !!! info "BlueprintFailoverPrepareDataSucceed"
 
     ```
-    Failover initialization process succeeded for recovery plan '${name}'.
+    Failover initialization process succeeded for Recovery Plan '${name}'.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**TaskSuccess**</td><td>**No**</td></tr></table>
 
@@ -169,10 +169,10 @@
 !!! failure "BlueprintFailoverPrepareResourceFailed"
 
     ```
-    Failover resource validation and initialization process failed for recovery plan '${name}'. Reason: ${reason}.
+    Failover resource validation and initialization process failed for Recovery Plan '${name}'. Reason: ${reason}.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Critical**</td><td>**TaskFailure**</td><td>**No**</td></tr></table>
 
@@ -180,10 +180,10 @@
 !!! info "BlueprintFailoverPrepareResourceStarted"
 
     ```
-    Starting the failover resource validation and initialization process for recovery plan '${name}'.
+    Starting the failover resource validation and initialization process for Recovery Plan '${name}'.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**TaskSuccess**</td><td>**No**</td></tr></table>
 
@@ -191,10 +191,10 @@
 !!! info "BlueprintFailoverPrepareResourceSucceed"
 
     ```
-    Failover resource validation and initialization process succeeded for recovery plan '${name}'.
+    Failover resource validation and initialization process succeeded for Recovery Plan '${name}'.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**TaskSuccess**</td><td>**No**</td></tr></table>
 
@@ -202,10 +202,10 @@
 !!! failure "BlueprintFailoverProvisionFailed"
 
     ```
-    Unable to set up the target Rubrik cluster '${targetClusterName}' for failover of recovery plan '${name}': ${reason}.
+    Unable to set up the target Rubrik cluster '${targetClusterName}' for failover of Recovery Plan '${name}': ${reason}.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Critical**</td><td>**TaskFailure**</td><td>**No**</td></tr></table>
 
@@ -213,10 +213,10 @@
 !!! info "BlueprintFailoverProvisionStarted"
 
     ```
-    Setting up the target Rubrik cluster '${targetClusterName}' for failover of recovery plan '${name}'.
+    Setting up the target Rubrik cluster '${targetClusterName}' for failover of Recovery Plan '${name}'.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**TaskSuccess**</td><td>**No**</td></tr></table>
 
@@ -224,10 +224,10 @@
 !!! info "BlueprintFailoverProvisionSucceed"
 
     ```
-    Reconfiguration of virtual machines on target Rubrik cluster '${targetClusterName}' succeeded for recovery plan '${name}'.
+    Reconfiguration of virtual machines on target Rubrik cluster '${targetClusterName}' succeeded for Recovery Plan '${name}'.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**TaskSuccess**</td><td>**No**</td></tr></table>
 
@@ -235,10 +235,10 @@
 !!! warning "BlueprintFailoverProvisionSucceedWithNetworkReconfigureFailure"
 
     ```
-    Reconfiguration of virtual machines on target Rubrik cluster '${targetClusterName}' failed for recovery plan '${name}'. Ignoring and continuing.
+    Reconfiguration of virtual machines on target Rubrik cluster '${targetClusterName}' failed for Recovery Plan '${name}'. Ignoring and continuing.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Warning**</td><td>**TaskSuccess**</td><td>**No**</td></tr></table>
 
@@ -246,10 +246,10 @@
 !!! info "BlueprintFailoverScheduled"
 
     ```
-    Scheduled job to failover recovery plan '${name}' to '${location}'.
+    Scheduled job to failover Recovery Plan '${name}' to '${location}'.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Queued**</td><td>**No**</td></tr></table>
 
@@ -257,10 +257,10 @@
 !!! info "BlueprintFailoverStarted"
 
     ```
-    Starting failover for recovery plan '${name}' to '${location}'. Abort and cleanup setting is ${undoOnFailure}. Skipping network reconfiguration errors is ${skipNetworkError}.
+    Starting failover for Recovery Plan '${name}' to '${location}'. Failover error handling option is set to ${errorHandling}. Skipping network reconfiguration errors is ${skipNetworkError}.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**TaskSuccess**</td><td>**No**</td></tr></table>
 
@@ -268,10 +268,10 @@
 !!! info "BlueprintFailoverSuccess"
 
     ```
-    Successfully complete the failover for recovery plan '${name}' to '${location}'.
+    Successfully completed the failover for Recovery Plan '${name}' to '${location}'.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Success**</td><td>**No**</td></tr></table>
 
@@ -279,10 +279,10 @@
 !!! info "BlueprintTakeOnDemandSnapshotFailed"
 
     ```
-    On demand snapshot for recovery plan '${blueprintName}' failed.
+    On demand snapshot for Recovery Plan '${blueprintName}' failed.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Failure**</td><td>**No**</td></tr></table>
 
@@ -290,10 +290,10 @@
 !!! info "BlueprintTakeOnDemandSnapshotStarted"
 
     ```
-    Starting on demand snapshot for recovery plan '${blueprintName}'.
+    Starting on demand snapshot for Recovery Plan '${blueprintName}'.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**TaskSuccess**</td><td>**No**</td></tr></table>
 
@@ -301,10 +301,10 @@
 !!! info "BlueprintTakeOnDemandSnapshotSucceed"
 
     ```
-    On demand snapshot for recovery plan '${blueprintName}' successfully completed.
+    On demand snapshot for Recovery Plan '${blueprintName}' successfully completed.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Success**</td><td>**No**</td></tr></table>
 
@@ -312,10 +312,10 @@
 !!! info "BlueprintWaitOnDemandSnapshotFailed"
 
     ```
-    Waiting on demand snapshot for recovery plan '${blueprintName}' failed.
+    Waiting on demand snapshot for Recovery Plan '${blueprintName}' failed.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Failure**</td><td>**No**</td></tr></table>
 
@@ -323,10 +323,10 @@
 !!! info "BlueprintWaitOnDemandSnapshotStarted"
 
     ```
-    Waiting for on demand snapshot for recovery plan '${blueprintName}'.
+    Waiting for on demand snapshot for Recovery Plan '${blueprintName}'.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**TaskSuccess**</td><td>**No**</td></tr></table>
 
@@ -334,10 +334,10 @@
 !!! info "BlueprintWaitOnDemandSnapshotSucceed"
 
     ```
-    Waiting on demand snapshot for recovery plan '${blueprintName}' succeeded.
+    Waiting on demand snapshot for Recovery Plan '${blueprintName}' succeeded.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Success**</td><td>**No**</td></tr></table>
 
@@ -345,10 +345,10 @@
 !!! info "CleanupFailoverCanceled"
 
     ```
-    Canceled the failover cleanup for recovery plan '${name}'.
+    Canceled the failover cleanup for Recovery Plan '${name}'.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Canceled**</td><td>**No**</td></tr></table>
 
@@ -356,10 +356,10 @@
 !!! info "CleanupFailoverCanceling"
 
     ```
-    Canceling the failover cleanup for recovery plan '${name}'.
+    Canceling the failover cleanup for Recovery Plan '${name}'.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Canceling**</td><td>**No**</td></tr></table>
 
@@ -367,10 +367,10 @@
 !!! failure "CleanupFailoverFailed"
 
     ```
-    Failed to cleanup failover for recovery plan '${name}' with ${reason}.
+    Failed to cleanup failover for Recovery Plan '${name}' with ${reason}.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Critical**</td><td>**Failure**</td><td>**No**</td></tr></table>
 
@@ -378,10 +378,10 @@
 !!! info "CleanupFailoverStarted"
 
     ```
-    Started failover cleanup for recovery plan '${name}'.
+    Started failover cleanup for Recovery Plan '${name}'.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**TaskSuccess**</td><td>**No**</td></tr></table>
 
@@ -389,10 +389,10 @@
 !!! info "CleanupFailoverSuccess"
 
     ```
-    Successfully completed the failover cleanup for recovery plan '${name}'.
+    Successfully completed the failover cleanup for Recovery Plan '${name}'.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Failure**</td><td>**No**</td></tr></table>
 
@@ -400,10 +400,10 @@
 !!! failure "CleanupFailoverTaskFailed"
 
     ```
-    Failed to cleanup recovery plan ${name}: ${reason}.
+    Failed to cleanup Recovery Plan ${name}: ${reason}.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Critical**</td><td>**TaskFailure**</td><td>**No**</td></tr></table>
 
@@ -411,10 +411,10 @@
 !!! failure "CleanupFailoverTaskFailedWithUserComment"
 
     ```
-    Failed to cleanup recovery plan '${name}'. ${comment} : ${reason}.
+    Failed to cleanup Recovery Plan '${name}'. ${comment} : ${reason}.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Critical**</td><td>**TaskFailure**</td><td>**No**</td></tr></table>
 
@@ -422,10 +422,10 @@
 !!! info "CleanupFailoverTaskStarted"
 
     ```
-    Started cleanup for recovery plan ${name}.
+    Started cleanup for Recovery Plan ${name}.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Running**</td><td>**No**</td></tr></table>
 
@@ -433,10 +433,10 @@
 !!! info "CleanupFailoverTaskSucceed"
 
     ```
-    Successfully completed the cleanup for recovery plan ${name}.
+    Successfully completed the cleanup for Recovery Plan ${name}.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**TaskSuccess**</td><td>**No**</td></tr></table>
 
@@ -444,10 +444,10 @@
 !!! info "CleanupFailoverTaskSucceedWithUserComment"
 
     ```
-    Successfully completed the cleanup for recovery plan '${name}'. ${comment}.
+    Successfully completed the cleanup for Recovery Plan '${name}'. ${comment}.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**TaskSuccess**</td><td>**No**</td></tr></table>
 
@@ -458,7 +458,7 @@
     Failed to shut down ${instanceType} ${instanceName}.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**TaskFailure**</td><td>**No**</td></tr></table>
 
@@ -469,7 +469,7 @@
     Shut down ${instanceType} ${instanceName}.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**TaskSuccess**</td><td>**No**</td></tr></table>
 
@@ -477,10 +477,10 @@
 !!! warning "FailbackCloudMachineShutdownTaskFailed"
 
     ```
-    During failover, system was unable to shutdown the child ${instanceType} of recovery plan '${blueprintName}': ${reason}. Please shutdown the child ${instanceType} manually to avoid potential resource conflicts with the child ${instanceType} spun up during failover. Resource conflicts, such as IP address collisions, may result in failures, including failure to boot during failover.
+    During failover, system was unable to shutdown the child ${instanceType} of Recovery Plan '${blueprintName}': ${reason}. Please shutdown the child ${instanceType} manually to avoid potential resource conflicts with the child ${instanceType} spun up during failover. Resource conflicts, such as IP address collisions, may result in failures, including failure to boot during failover.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Warning**</td><td>**TaskFailure**</td><td>**No**</td></tr></table>
 
@@ -488,10 +488,10 @@
 !!! info "FailbackCloudMachineShutdownTaskStarted"
 
     ```
-    Started the shutdown process for recovery plan child ${instanceType}.
+    Started the shutdown process for Recovery Plan child ${instanceType}.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Running**</td><td>**No**</td></tr></table>
 
@@ -499,10 +499,10 @@
 !!! info "FailbackCloudMachineShutdownTaskSucceed"
 
     ```
-    Shut down all recovery plan child ${instanceType}.
+    Shut down all Recovery Plan child ${instanceType}.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**TaskSuccess**</td><td>**No**</td></tr></table>
 
@@ -510,10 +510,10 @@
 !!! failure "FailbackCreateOnDemandBlueprintSnapshotTaskFailed"
 
     ```
-    Failed to create a snapshot for the current state of the recovery plan '${blueprintName}': ${reason}.
+    Failed to create a snapshot for the current state of the Recovery Plan '${blueprintName}': ${reason}.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Critical**</td><td>**TaskFailure**</td><td>**No**</td></tr></table>
 
@@ -521,10 +521,10 @@
 !!! info "FailbackCreateOnDemandBlueprintSnapshotTaskStarted"
 
     ```
-    Started taking a snapshot for the current state of the recovery plan '${blueprintName}'.
+    Started taking a snapshot for the current state of the Recovery Plan '${blueprintName}'.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Running**</td><td>**No**</td></tr></table>
 
@@ -532,10 +532,10 @@
 !!! info "FailbackCreateOnDemandBlueprintSnapshotTaskSucceed"
 
     ```
-    Created a snapshot for the current state of the recovery plan '${blueprintName}'.
+    Created a snapshot for the current state of the Recovery Plan '${blueprintName}'.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**TaskSuccess**</td><td>**No**</td></tr></table>
 
@@ -543,10 +543,10 @@
 !!! warning "FailbackDeprecatePrimaryAppTaskFailed"
 
     ```
-    Failed to deprecate the primary recovery plan '${blueprintName}': ${reason}.
+    Failed to deprecate the primary Recovery Plan '${blueprintName}': ${reason}.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Warning**</td><td>**TaskFailure**</td><td>**No**</td></tr></table>
 
@@ -554,10 +554,10 @@
 !!! failure "FailbackReprotectTaskFailed"
 
     ```
-    Failed to reprotect the recovery plan '${blueprintName}': ${reason}.
+    Failed to reprotect the Recovery Plan '${blueprintName}': ${reason}.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Critical**</td><td>**TaskFailure**</td><td>**No**</td></tr></table>
 
@@ -565,10 +565,10 @@
 !!! info "FailbackReprotectTaskStarted"
 
     ```
-    Reprotecting the recovery plan '${blueprintName}'.
+    Reprotecting the Recovery Plan '${blueprintName}'.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Running**</td><td>**No**</td></tr></table>
 
@@ -576,10 +576,10 @@
 !!! info "FailbackReprotectTaskSucceeded"
 
     ```
-    Reprotected the recovery plan '${blueprintName}' with SLA '${slaName}'.
+    Reprotected the Recovery Plan '${blueprintName}' with SLA '${slaName}'.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**TaskSuccess**</td><td>**No**</td></tr></table>
 
@@ -587,10 +587,10 @@
 !!! failure "FailbackSyncRecoverySpecTaskFailed"
 
     ```
-    The recovery plan '${blueprintName}' at the target cluster could not be synchronized with the source due to a communication issue. This could be a result of network issues between the source and target clusters or an incorrect replication configuration. Please resolve the issue to make sure the replication has been setup correctly between the source cluster and the target cluster, then retry the failover job.
+    The Recovery Plan '${blueprintName}' at the target cluster could not be synchronized with the source due to a communication issue. This could be a result of network issues between the source and target clusters or an incorrect replication configuration. Please resolve the issue to make sure the replication has been setup correctly between the source cluster and the target cluster, then retry the failover job.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Critical**</td><td>**TaskFailure**</td><td>**No**</td></tr></table>
 
@@ -601,7 +601,7 @@
     Started syncing the latest recovery spec to the target cluster.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Running**</td><td>**No**</td></tr></table>
 
@@ -612,7 +612,7 @@
     Successfully synced the latest recovery spec to the target cluster.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**TaskSuccess**</td><td>**No**</td></tr></table>
 
@@ -620,10 +620,10 @@
 !!! warning "FailoverAssignClonedSLAFailed"
 
     ```
-    Failed to assign the cloned SLA to the newly created recovery plan: ${reason}.
+    Failed to assign the cloned SLA to the newly created Recovery Plan: ${reason}.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Warning**</td><td>**TaskFailure**</td><td>**No**</td></tr></table>
 
@@ -631,10 +631,10 @@
 !!! warning "FailoverAssignSLAFailed"
 
     ```
-    Failed to assign the SLA '${slaName}' to the newly created recovery plan: ${reason}.
+    Failed to assign the SLA '${slaName}' to the newly created Recovery Plan: ${reason}.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Warning**</td><td>**TaskFailure**</td><td>**No**</td></tr></table>
 
@@ -642,10 +642,10 @@
 !!! warning "FailoverDeprecatePrimaryAppTaskFailed"
 
     ```
-    Failed to deprecate the primary recovery plan '${blueprintName}': ${reason}, the ${instanceType} should be shutdown manually.
+    Failed to deprecate the primary Recovery Plan '${blueprintName}': ${reason}, the ${instanceType} should be shutdown manually.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Warning**</td><td>**TaskFailure**</td><td>**No**</td></tr></table>
 
@@ -653,10 +653,10 @@
 !!! info "FailoverDeprecatePrimaryAppTaskStarted"
 
     ```
-    Started to deprecate the primary recovery plan '${blueprintName}'.
+    Started to deprecate the primary Recovery Plan '${blueprintName}'.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Running**</td><td>**No**</td></tr></table>
 
@@ -664,10 +664,10 @@
 !!! info "FailoverDeprecatePrimaryAppTaskSucceed"
 
     ```
-    Successfully deprecated the primary recovery plan '${blueprintName}'.
+    Successfully deprecated the primary Recovery Plan '${blueprintName}'.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**TaskSuccess**</td><td>**No**</td></tr></table>
 
@@ -675,12 +675,23 @@
 !!! warning "FailoverSLANotFound"
 
     ```
-    SLA not found when assigning SLA to the newly created recovery plan.
+    SLA not found when assigning SLA to the newly created Recovery Plan.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Warning**</td><td>**TaskFailure**</td><td>**No**</td></tr></table>
+
+
+!!! info "RecoveryPlanFailoverPartialSuccess"
+
+    ```
+    The failover for Recovery Plan, '${name}', to '${location}' was partially successful. ${partialFailureInfo}
+    ```
+
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
+
+    <tr><td>**Info**</td><td>**Success**</td><td>**No**</td></tr></table>
 
 
 !!! failure "SyncFailbackTaskFailed"
@@ -689,7 +700,7 @@
     Failover failed on cluster '${clusterName}': ${reason}.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Critical**</td><td>**TaskFailure**</td><td>**No**</td></tr></table>
 
@@ -700,7 +711,7 @@
     Failover succeeded on cluster '${clusterName}'.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**TaskSuccess**</td><td>**No**</td></tr></table>
 
@@ -708,10 +719,10 @@
 !!! failure "TriggerFailbackTaskFailed"
 
     ```
-    Failed to trigger failover job for recovery plan to the point in time: ${recoveryPoint} on cluster '${clusterName}': ${reason}.
+    Failed to trigger failover job for Recovery Plan to the point in time: ${recoveryPoint} on cluster '${clusterName}': ${reason}.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Critical**</td><td>**TaskFailure**</td><td>**No**</td></tr></table>
 
@@ -719,10 +730,10 @@
 !!! failure "TriggerFailbackTaskFailedWithTimeRange"
 
     ```
-    Failed to trigger failover job for recovery plan to the point in time: range from ${startTime} to ${endTime} on cluster '${clusterName}': ${reason}.
+    Failed to trigger failover job for Recovery Plan to the point in time: range from ${startTime} to ${endTime} on cluster '${clusterName}': ${reason}.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Critical**</td><td>**TaskFailure**</td><td>**No**</td></tr></table>
 
@@ -730,10 +741,10 @@
 !!! info "TriggerFailbackTaskStarted"
 
     ```
-    Failover job for recovery plan to the point in time: ${recoveryPoint} triggered on cluster '${clusterName}'.
+    Failover job for Recovery Plan to the point in time: ${recoveryPoint} triggered on cluster '${clusterName}'.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Running**</td><td>**No**</td></tr></table>
 
@@ -741,10 +752,10 @@
 !!! info "TriggerFailbackTaskStartedWithTimeRange"
 
     ```
-    Failover job for recovery plan to the point in time: range from ${startTime} to ${endTime} triggered on cluster '${clusterName}'.
+    Failover job for Recovery Plan to the point in time: range from ${startTime} to ${endTime} triggered on cluster '${clusterName}'.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Running**</td><td>**No**</td></tr></table>
 
@@ -752,10 +763,10 @@
 !!! info "TriggerFailbackTaskSucceed"
 
     ```
-    Triggered a failover job for recovery plan to the point in time: ${recoveryPoint} on cluster '${clusterName}'.
+    Triggered a failover job for Recovery Plan to the point in time: ${recoveryPoint} on cluster '${clusterName}'.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**TaskSuccess**</td><td>**No**</td></tr></table>
 
@@ -763,10 +774,10 @@
 !!! info "TriggerFailbackTaskSucceedWithTimeRange"
 
     ```
-    Triggered a failover job for recovery plan to the point in time: range from ${startTime} to ${endTime}, on cluster '${clusterName}'.
+    Triggered a failover job for Recovery Plan to the point in time: range from ${startTime} to ${endTime}, on cluster '${clusterName}'.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**TaskSuccess**</td><td>**No**</td></tr></table>
 
@@ -774,10 +785,10 @@
 !!! failure "ValidateRecoverySpecTaskFailed"
 
     ```
-    Failed to validate the recovery spec of recovery plan '${blueprintName}' on cluster '${clusterName}': ${reason}.
+    Failed to validate the recovery spec of Recovery Plan '${blueprintName}' on cluster '${clusterName}': ${reason}.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Critical**</td><td>**TaskFailure**</td><td>**No**</td></tr></table>
 
@@ -785,10 +796,10 @@
 !!! info "ValidateRecoverySpecTaskStarted"
 
     ```
-    The recovery spec of recovery plan '${blueprintName}' is being validated on cluster '${clusterName}'.
+    The recovery spec of Recovery Plan '${blueprintName}' is being validated on cluster '${clusterName}'.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Running**</td><td>**No**</td></tr></table>
 
@@ -796,10 +807,10 @@
 !!! info "ValidateRecoverySpecTaskSucceed"
 
     ```
-    Validated the recovery spec of recovery plan '${blueprintName}' on cluster '${clusterName}'.
+    Validated the recovery spec of Recovery Plan '${blueprintName}' on cluster '${clusterName}'.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**TaskSuccess**</td><td>**No**</td></tr></table>
 
@@ -814,7 +825,7 @@
     ${userEmail} triggered cleanup job for recovery plan '${blueprintName}'.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Success**</td><td>**Yes**</td></tr></table>
 
@@ -825,7 +836,7 @@
     ${userEmail} triggered failover for recovery plan '${blueprintName}' to ${targetSite}.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Success**</td><td>**Yes**</td></tr></table>
 
@@ -836,7 +847,7 @@
     ${userEmail} triggered test failover for recovery plan '${blueprintName}' to ${targetSite}.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Success**</td><td>**Yes**</td></tr></table>
 
@@ -851,7 +862,7 @@
     Rubrik Cloud Vault location '${locName}' has been successfully  failed over to '${regionType}' region, '${currentRegionName}'  with LRS redundancy. Rubrik is now attempting to re-establish  GRS redundancy in the ${pairedRegionName} region.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Success**</td><td>**No**</td></tr></table>
 
@@ -862,7 +873,7 @@
     The Rubrik Cloud Vault '${locName}' has failed back to the former  primary region '${primaryRegionName}' and Rubrik has successfully  re-established the GRS redundancy. You can now enable '${locName}'  to resume archival.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Success**</td><td>**No**</td></tr></table>
 
@@ -873,7 +884,7 @@
     Successfully re-established GRS redundancy for Rubrik Cloud Vault  location '${locName}' between the primary region ${primaryRegionName}  and the secondary region ${secondaryRegionName}. You may initiate a  failback to the former primary region ${primaryRegionName} at any time  to resume archival to '${locName}'.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Success**</td><td>**No**</td></tr></table>
 
