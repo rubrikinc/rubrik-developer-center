@@ -7,7 +7,7 @@
     Failed to run Threat Monitoring analysis of snapshot taken on ${snapshotDate} of '${snappableName}': ${failureReason}.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Warning**</td><td>**Failure**</td><td>**No**</td></tr></table>
 
@@ -18,7 +18,7 @@
     Started Threat Monitoring analysis of snapshot taken on ${snapshotDate} of '${snappableName}'.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**TaskSuccess**</td><td>**No**</td></tr></table>
 
@@ -29,7 +29,7 @@
     Completed Threat Monitoring analysis of snapshot taken on ${snapshotDate} of '${snappableName}'.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Success**</td><td>**No**</td></tr></table>
 
@@ -37,10 +37,10 @@
 !!! warning "ThreatMonitoringFullAnalysisFailed"
 
     ```
-    Failed to run a full Threat Monitoring analysis on '${snappableName}' using YARA Threat Feed  version ${yaraTfVersion}: ${failureReason}.
+    Failed to run a full Threat Monitoring analysis on '${snappableName}'  using Threat Feed ${threatFeedType}: ${failureReason}.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Warning**</td><td>**Failure**</td><td>**No**</td></tr></table>
 
@@ -48,10 +48,10 @@
 !!! info "ThreatMonitoringFullAnalysisStarted"
 
     ```
-    Started a full Threat Monitoring analysis on ${snappableName}' using YARA Threat Feed version ${yaraTfVersion}.
+    Started a full Threat Monitoring analysis on ${snappableName}'  using Threat Feed: ${threatFeedType}.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**TaskSuccess**</td><td>**No**</td></tr></table>
 
@@ -59,10 +59,10 @@
 !!! info "ThreatMonitoringFullAnalysisSucceeded"
 
     ```
-    Completed full Threat Monitoring analysis on '${snappableName}' using YARA Threat Feed version ${yaraTfVersion} and  Hash Threat Feed version ${hashTfVersion}.
+    Completed full Threat Monitoring analysis on '${snappableName}' using Threat Feed: ${threatFeedType}.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Success**</td><td>**No**</td></tr></table>
 
@@ -73,7 +73,7 @@
     Completed full Threat Monitoring hash analysis on '${snappableName}' using Hash Threat Feed version ${hashTfVersion}. Found ${numHashMatches} hash matches.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Critical**</td><td>**TaskSuccess**</td><td>**No**</td></tr></table>
 
@@ -84,7 +84,7 @@
     Completed full Threat Monitoring hash analysis on '${snappableName}' using Hash Threat Feed version ${hashTfVersion}. No matches found.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**TaskSuccess**</td><td>**No**</td></tr></table>
 
@@ -95,7 +95,7 @@
     Completed full Threat Monitoring YARA analysis on  '${snappableName}' using Threat Feed version ${yaraTfVersion}.  Found ${numYaraRuleMatches} YARA rule matches.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Critical**</td><td>**TaskSuccess**</td><td>**No**</td></tr></table>
 
@@ -106,7 +106,7 @@
     Completed full Threat Monitoring YARA analysis on '${snappableName}' using YARA Threat Feed version ${yaraTfVersion}.  No matches found.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**TaskSuccess**</td><td>**No**</td></tr></table>
 
@@ -117,7 +117,7 @@
     Found file hash matches for ${numFilesWithMatches} files.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Critical**</td><td>**TaskSuccess**</td><td>**No**</td></tr></table>
 
@@ -128,7 +128,7 @@
     Found no file hash matches.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**TaskSuccess**</td><td>**No**</td></tr></table>
 
@@ -139,7 +139,7 @@
     Found no YARA rule matches.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**TaskSuccess**</td><td>**No**</td></tr></table>
 
@@ -150,7 +150,7 @@
     Error while analyzing YARA rule matches: ${failureReason}.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Warning**</td><td>**TaskFailure**</td><td>**No**</td></tr></table>
 
@@ -161,7 +161,7 @@
     Found ${numYaraRuleMatches} YARA rule matches.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Critical**</td><td>**TaskSuccess**</td><td>**No**</td></tr></table>
 
