@@ -31,9 +31,6 @@ $query.field.nodes = @(
     huntDetails.endTime,`
     huntDetails.config.name,`
     huntDetails.config.notes,`
-    huntDetails.config.objects.name,`
-    huntDetails.config.objects.id,`
-    huntDetails.config.objects.objectType,`
     huntDetails.config.requestedMatchDetails.requestedHashTypes,`
     huntDetails.config.clusterUuid,`
     huntDetails.config.maxMatchesPerSnapshot,`
