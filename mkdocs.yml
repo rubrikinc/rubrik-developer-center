@@ -1,4 +1,5 @@
 site_name: Rubrik Developer Center
+site_url: https://developer.rubrik.com
 copyright: Copyright &copy; 2025 Rubrik, Inc.
 theme:
   name: material
@@ -87,6 +88,11 @@ markdown_extensions:
 plugins:
   - search
   - awesome-pages
+  - llmstxt:
+      full_output: llms.txt
+      sections:
+        Rubrik Security Cloud:
+        - Rubrik-Security-Cloud-API/*.md
   - git-revision-date-localized:
       type: iso_date
 watch:
