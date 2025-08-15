@@ -7,7 +7,7 @@
     Detected anomalous filesystem activity with ${confidence} confidence (File Change: ${filesCreatedCount} Added, ${filesModifiedCount} Modified, ${filesRemovedCount} Removed)
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Success**</td><td>**No**</td></tr></table>
 
@@ -18,7 +18,7 @@
     Detected anomalous filesystem activity with ${confidence} confidence (File Change: ${filesCreatedCount} Added, ${filesModifiedCount} Modified, ${filesRemovedCount} Removed)
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Warning**</td><td>**Success**</td><td>**No**</td></tr></table>
 
@@ -26,10 +26,10 @@
 !!! failure "RansomwareStrainDetected"
 
     ```
-    Detected potential ransomware strain \"${strainName}\" with ${confidence} and ${encyptionLevel} levels of encryption (File Change: ${filesCreatedCount} Added, ${filesModifiedCount} Modified, ${filesRemovedCount} Removed)
+    Detected potential ransomware strain \"${strainName}\" with ${confidence} and ${encryptionLevel} levels of encryption (File Change: ${filesCreatedCount} Added, ${filesModifiedCount} Modified, ${filesRemovedCount} Removed)
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Critical**</td><td>**TaskSuccess**</td><td>**No**</td></tr></table>
 
@@ -40,7 +40,7 @@
     Detected potential ransomware strain \"${strainName}\" with ${confidence} (File Change: ${filesCreatedCount} Added, ${filesModifiedCount} Modified, ${filesRemovedCount} Removed)
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Warning**</td><td>**TaskSuccess**</td><td>**No**</td></tr></table>
 
@@ -51,7 +51,7 @@
     Detected anomalous filesystem activity with ${confidence} confidence and high levels of encryption (File Change: ${filesCreatedCount} Added, ${filesModifiedCount} Modified, ${filesRemovedCount} Removed)
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Critical**</td><td>**Success**</td><td>**No**</td></tr></table>
 
@@ -62,7 +62,7 @@
     Detected anomalous filesystem activity with ${confidence} confidence and high levels of encryption (File Change: ${filesCreatedCount} Added, ${filesModifiedCount} Modified, ${filesRemovedCount} Removed, ${filesSuspiciousCount} Suspicious)
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Critical**</td><td>**Success**</td><td>**No**</td></tr></table>
 
@@ -73,7 +73,7 @@
     Detected significant indication of encrypted files.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Warning**</td><td>**TaskSuccess**</td><td>**No**</td></tr></table>
 
@@ -84,7 +84,7 @@
     Detected little to no indication of encrypted files.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**TaskSuccess**</td><td>**No**</td></tr></table>
 
@@ -95,7 +95,7 @@
     Detected anomalous filesystem activity with ${confidence} confidence and low levels of encryption (File Change: ${filesCreatedCount} Added, ${filesModifiedCount} Modified, ${filesRemovedCount} Removed)
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Success**</td><td>**No**</td></tr></table>
 
@@ -106,7 +106,7 @@
     Detected anomalous filesystem activity with ${confidence} confidence and low levels of encryption (File Change: ${filesCreatedCount} Added, ${filesModifiedCount} Modified, ${filesRemovedCount} Removed)
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Warning**</td><td>**Success**</td><td>**No**</td></tr></table>
 
@@ -117,7 +117,7 @@
     Detected anomalous activity on ${snappableName} (${vmCount} Virtual Machines affected)
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Critical**</td><td>**Success**</td><td>**No**</td></tr></table>
 
@@ -126,13 +126,13 @@
 ##testevent
 ----
 
-!!! failure "Test"
+!!! failure "TestMinimal"
 
     ```
-    Everyone loves ${hobby}.
+    This is test event.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
-    <tr><td>**Critical**</td><td>**TaskSuccess**</td><td>**No**</td></tr></table>
+    <tr><td>**Critical**</td><td>**Success**</td><td>**No**</td></tr></table>
 

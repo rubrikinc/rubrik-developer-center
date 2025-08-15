@@ -7,7 +7,7 @@
     Your trial ended on ${ExpiryDate} and your account will be on hold for ${NumHoldDays} days from that date.  During the hold period, all backup jobs will be paused and no further changes can be made.  Your POC data will be deleted after ${HoldEndDate}.  To continue using the product, contact your Account Executive to purchase a license.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Critical**</td><td>**Success**</td><td>**No**</td></tr></table>
 
@@ -18,9 +18,31 @@
     Hello, We want to remind you that your account is expiring in ${noOfDaysBeforeHold} days and that your existing data will not be available after that time. Act now to extend your features or buy additional features! Retain your existing data and continue to enjoy all the benefits of Rubrik data protection. For information, please contact our friendly sales professionals at sales@rubrik.com. Thank you, Rubrik
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Warning**</td><td>**Success**</td><td>**No**</td></tr></table>
+
+
+!!! failure "AccountMoveCompleted"
+
+    ```
+    RSC account move to the new region has been completed. No more downtime should be observed.
+    ```
+
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
+
+    <tr><td>**Critical**</td><td>**Success**</td><td>**No**</td></tr></table>
+
+
+!!! failure "AccountMoveInitiated"
+
+    ```
+    Rubrik started an account move operation, which will take a few hours to complete.
+    ```
+
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
+
+    <tr><td>**Critical**</td><td>**Success**</td><td>**No**</td></tr></table>
 
 
 
@@ -33,7 +55,7 @@
     Failed to connect to ec2 client: ${reason}.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Critical**</td><td>**TaskFailure**</td><td>**No**</td></tr></table>
 
@@ -44,7 +66,7 @@
     Failed to sync AWS networking resources in '${cloudAccount}(${region})': ${reason}.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Critical**</td><td>**TaskFailure**</td><td>**No**</td></tr></table>
 
@@ -55,7 +77,7 @@
     Canceled sync AWS networking resources in '${account}'.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Canceled**</td><td>**No**</td></tr></table>
 
@@ -66,7 +88,7 @@
     Canceling sync AWS networking resources in '${account}'.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Canceling**</td><td>**No**</td></tr></table>
 
@@ -77,7 +99,7 @@
     Failed to sync AWS networking resources in '${account}': ${reason}.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Critical**</td><td>**Failure**</td><td>**No**</td></tr></table>
 
@@ -88,7 +110,7 @@
     Started to sync AWS networking resources in '${account}'.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**TaskSuccess**</td><td>**No**</td></tr></table>
 
@@ -99,7 +121,7 @@
     Synced AWS networking resources in '${account}': processed '${totalNum}' cloud locations.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Success**</td><td>**No**</td></tr></table>
 
@@ -110,7 +132,7 @@
     Failed to get cloud account ${name} in '${account}': ${reason}.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Critical**</td><td>**TaskFailure**</td><td>**No**</td></tr></table>
 
@@ -121,7 +143,7 @@
     Failed to query cloud locations in '${account}': ${reason}.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Critical**</td><td>**TaskFailure**</td><td>**No**</td></tr></table>
 
@@ -129,10 +151,10 @@
 !!! failure "ValidateAppBlueprintResourceMappingFailed"
 
     ```
-    Failed to validate recovery spec for recovery plan '${name}' in '${account}': ${reason}.
+    Failed to validate recovery spec for Recovery Plan '${name}' in '${account}': ${reason}.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Critical**</td><td>**Failure**</td><td>**No**</td></tr></table>
 
@@ -140,10 +162,10 @@
 !!! info "ValidateResourceMappingCanceled"
 
     ```
-    Canceled validate recovery specs for recovery plans in '${account}'.
+    Canceled validate recovery specs for Recovery Plans in '${account}'.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Canceled**</td><td>**No**</td></tr></table>
 
@@ -151,10 +173,10 @@
 !!! info "ValidateResourceMappingCanceling"
 
     ```
-    Canceling validate recovery specs for recovery plans in '${account}'.
+    Canceling validate recovery specs for Recovery Plans in '${account}'.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Canceling**</td><td>**No**</td></tr></table>
 
@@ -162,10 +184,10 @@
 !!! failure "ValidateResourceMappingFailed"
 
     ```
-    Failed to validate recovery specs for recovery plans in '${account}': ${reason}.
+    Failed to validate recovery specs for Recovery Plans in '${account}': ${reason}.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Critical**</td><td>**Failure**</td><td>**No**</td></tr></table>
 
@@ -173,10 +195,10 @@
 !!! failure "ValidateResourceMappingQueryAppBlueprintsFailed"
 
     ```
-    Failed to query recovery plans in '${account}': ${reason}.
+    Failed to query Recovery Plans in '${account}': ${reason}.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Critical**</td><td>**TaskFailure**</td><td>**No**</td></tr></table>
 
@@ -184,10 +206,10 @@
 !!! info "ValidateResourceMappingStarted"
 
     ```
-    Started validating recovery specs for recovery plans in '${account}'.
+    Started validating recovery specs for Recovery Plans in '${account}'.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**TaskSuccess**</td><td>**No**</td></tr></table>
 
@@ -195,10 +217,10 @@
 !!! info "ValidateResourceMappingSuccess"
 
     ```
-    Validated recovery specs for recovery plans in '${account}': processed '${totalNum}' and found recovery specs are invalid for '${invalidNum}' recovery plans.
+    Validated recovery specs for Recovery Plans in '${account}': processed '${totalNum}' and found recovery specs are invalid for '${invalidNum}' Recovery Plans.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Success**</td><td>**No**</td></tr></table>
 
@@ -210,10 +232,10 @@
 !!! warning "AwsSnapshotsMissing"
 
     ```
-    One or more rubrik managed snapshots are missing from AWS account ${awsAccountDisplayName}. Total ${missingEc2SnapshotCount} AMIs and ${missingEbsSnapshotCount} volume snapshots are missing. Details of missing snapshots have been emailed to ${accountOwnersEmails}.
+    One or more rubrik managed snapshots are missing from AWS account ${awsAccountDisplayName}. Total ${missingEc2SnapshotCount} AMIs and ${missingEbsSnapshotCount} volume snapshots are missing. ${optionalMailSentMsg}
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Warning**</td><td>**Failure**</td><td>**No**</td></tr></table>
 
@@ -222,13 +244,24 @@
 ##azurenative
 ----
 
+!!! warning "AzureNativeArchiveSnapshotTaskCleanupFailed"
+
+    ```
+    An error occurred while cleaning up a failed attempt to archive the snapshot taken at ${snapshotTimeDisplay} of the ${snappableDisplay}. Reason: ${reason}
+    ```
+
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
+
+    <tr><td>**Warning**</td><td>**PartialSuccess**</td><td>**No**</td></tr></table>
+
+
 !!! failure "AzureSnapshotsMissing"
 
     ```
     One or more rubrik managed snapshots are missing from Azure subscription ${azureSubscriptionDisplayName}. Total ${missingVMSnapshotCount} VM snapshots, ${missingVMRepSnapshotCount} VM replicated snapshots, ${missingDiskSnapshotCount} disk snapshots and ${missingDiskRepSnapshotCount} disk replicated snapshots are missing.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Critical**</td><td>**Failure**</td><td>**No**</td></tr></table>
 
@@ -239,7 +272,7 @@
     One or more Rubrik managed Azure SQL Servers are missing from Azure subscription ${azureSubscriptionDisplayName}. Missing Azure SQL Servers: ${missingSqlDatabaseServersList}
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Critical**</td><td>**Failure**</td><td>**No**</td></tr></table>
 
@@ -250,7 +283,7 @@
     One or more Rubrik managed Azure SQL Managed Instances are missing from Azure subscription ${azureSubscriptionDisplayName}. Missing Azure SQL Managed Instances: ${missingSqlManagedInstanceServersList}
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Critical**</td><td>**Failure**</td><td>**No**</td></tr></table>
 
@@ -261,7 +294,7 @@
     One or more Rubrik managed snapshots are missing from Azure subscription ${azureSubscriptionDisplayName}. Total ${missingSqlDatabaseDbSnapshotCount} Azure Sql Database and ${missingSqlManagedInstanceDbSnapshotCount} Azure Sql Managed Database snapshots are missing.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Critical**</td><td>**Failure**</td><td>**No**</td></tr></table>
 
@@ -276,7 +309,7 @@
     ${message}
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Critical**</td><td>**Failure**</td><td>**No**</td></tr></table>
 
@@ -287,7 +320,7 @@
     ${message}
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**TaskSuccess**</td><td>**No**</td></tr></table>
 
@@ -298,7 +331,7 @@
     ${message}
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Success**</td><td>**No**</td></tr></table>
 
@@ -309,7 +342,7 @@
     ${message}
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Warning**</td><td>**Success**</td><td>**No**</td></tr></table>
 
@@ -321,10 +354,10 @@
 !!! warning "AwsRdsManualSnapshotQuotaBreach"
 
     ```
-    One or more regions from the AWS account, ${awsAccountDisplayName},  protected by Rubrik, may have the following issues: manual snapshot  quota limit is about to be breached, or you have used 75%% of the quota.  Usages in affected regions are: ${quotaUsage}.
+    One or more regions from the AWS account, ${awsAccountDisplayName}, protected by Rubrik, may have the following issues: manual snapshot quota limit is about to be breached, or you have used 75%% of the quota. Usages in affected regions are: ${quotaUsage}.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Warning**</td><td>**Failure**</td><td>**No**</td></tr></table>
 
@@ -332,10 +365,10 @@
 !!! failure "AwsRdsSnapshotsMissing"
 
     ```
-    One or more RDS databases from the AWS account ${awsAccountDisplayName}  protected by Rubrik may have the following issues: Number of missing  RDS snapshots: ${missingRdsInstanceSnapshotCount}. Number of RDS  databases with modified log retention values:  ${missingRdsInstancePitrCount}.
+    One or more RDS databases from the AWS account ${awsAccountDisplayName} protected by Rubrik may have the following issues: Number of missing RDS snapshots: ${missingRdsInstanceSnapshotCount}. Number of RDS databases with modified log retention values: ${missingRdsInstancePitrCount}.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Critical**</td><td>**Failure**</td><td>**No**</td></tr></table>
 
@@ -346,7 +379,7 @@
     Canceled debug-mode index run of the snapshot taken on ${snapshotTimeDisplay} of the ${snappableDisplay}.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Canceled**</td><td>**No**</td></tr></table>
 
@@ -357,7 +390,7 @@
     Canceling debug-mode index run of the snapshot taken on ${snapshotTimeDisplay} of the ${snappableDisplay}.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Canceling**</td><td>**No**</td></tr></table>
 
@@ -368,7 +401,7 @@
     Failed in debug-mode index run of the snapshot taken on ${snapshotTimeDisplay} of the ${snappableDisplay}. Reason: ${reason}.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Failure**</td><td>**No**</td></tr></table>
 
@@ -379,7 +412,7 @@
     Queued debug-mode index run of the snapshot taken on ${snapshotTimeDisplay} of the ${snappableDisplay}. The job will not index the snapshot.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Queued**</td><td>**No**</td></tr></table>
 
@@ -390,7 +423,7 @@
     Started debug-mode index run of the snapshot taken on ${snapshotTimeDisplay} of the ${snappableDisplay}. The job will not index the snapshot.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Success**</td><td>**No**</td></tr></table>
 
@@ -401,7 +434,18 @@
     Successfully completed debug-mode index run of the snapshot taken on ${snapshotTimeDisplay} of the ${snappableDisplay}. The snapshot was not indexed, since the job was run in the debug mode.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
+
+    <tr><td>**Info**</td><td>**Success**</td><td>**No**</td></tr></table>
+
+
+!!! info "CloudNativeIndexSnapshotsDebugModeJobSucceededNoop"
+
+    ```
+    No snapshot available to index for ${snappableDisplay}.
+    ```
+
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Success**</td><td>**No**</td></tr></table>
 
@@ -412,7 +456,7 @@
     One or more rubrik managed snapshots are missing from GCP project ${gcpProjectDisplayName}. Total ${missingInstanceSnapshotCount} instance snapshots and ${missingDiskSnapshotCount} disk snapshots are missing.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Critical**</td><td>**Failure**</td><td>**No**</td></tr></table>
 
@@ -427,7 +471,7 @@
     Cluster ${clusterName} is experiencing the following delays in syncing data with Rubrik Cloud: \n\n${delayedJobsMessage}\n\nPlease open a support tunnel to the cluster and contact Rubrik Support for further assistance.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Critical**</td><td>**Failure**</td><td>**No**</td></tr></table>
 
@@ -438,7 +482,7 @@
     Cluster ${clusterName} is unreachable
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Critical**</td><td>**Failure**</td><td>**No**</td></tr></table>
 
@@ -453,7 +497,7 @@
     Verification failed for the customer managed cluster ${clusterDisplayName}. Reason: ${reason}.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Warning**</td><td>**TaskFailure**</td><td>**No**</td></tr></table>
 
@@ -464,7 +508,7 @@
     Verifying the customer managed cluster ${clusterDisplayName}.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Running**</td><td>**No**</td></tr></table>
 
@@ -475,7 +519,40 @@
     Successfully verified the customer managed cluster ${clusterDisplayName}.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
+
+    <tr><td>**Info**</td><td>**TaskSuccess**</td><td>**No**</td></tr></table>
+
+
+!!! warning "ConfigurePrivateEKSTaskFailed"
+
+    ```
+    Failed to configure private EKS cluster ${eksClusterDisplayName}.
+    ```
+
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
+
+    <tr><td>**Warning**</td><td>**TaskFailure**</td><td>**No**</td></tr></table>
+
+
+!!! info "ConfigurePrivateEKSTaskStarted"
+
+    ```
+    Configuring private EKS cluster ${eksClusterDisplayName}.
+    ```
+
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
+
+    <tr><td>**Info**</td><td>**Running**</td><td>**No**</td></tr></table>
+
+
+!!! info "ConfigurePrivateEKSTaskSucceeded"
+
+    ```
+    Successfully configured private EKS cluster ${eksClusterDisplayName}.
+    ```
+
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**TaskSuccess**</td><td>**No**</td></tr></table>
 
@@ -486,7 +563,7 @@
     ${eventMsg}
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Warning**</td><td>**Failure**</td><td>**No**</td></tr></table>
 
@@ -497,7 +574,7 @@
     The size of the subnet ${subnet} is limiting the scaling of the AKS. Recommended minimum subnet size: ${requiredBandwidth}
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Warning**</td><td>**Failure**</td><td>**No**</td></tr></table>
 
@@ -508,7 +585,7 @@
     Canceled upgrade ${exoclusterType} cluster ${exoclusterName}.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Canceled**</td><td>**No**</td></tr></table>
 
@@ -519,7 +596,7 @@
     Canceling upgrade of ${exoclusterType} cluster ${exoclusterName}.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Canceling**</td><td>**No**</td></tr></table>
 
@@ -530,7 +607,7 @@
     Failed to upgrade ${exoclusterType} cluster ${exoclusterName} to version ${version}. Reason: ${reason}.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Critical**</td><td>**Failure**</td><td>**No**</td></tr></table>
 
@@ -541,7 +618,7 @@
     Not enough resources to upgrade ${exoclusterType} cluster ${exoclusterName} to version ${version}: ${quotaMsg}. More info on https://docs.microsoft.com/en-us/azure/aks/upgrade-cluster.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Critical**</td><td>**Failure**</td><td>**No**</td></tr></table>
 
@@ -552,7 +629,7 @@
     Upgrading ${exoclusterType} cluster ${exoclusterName}.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Running**</td><td>**No**</td></tr></table>
 
@@ -563,7 +640,7 @@
     Successfully upgraded ${exoclusterType} cluster ${exoclusterName} to version ${version}.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Success**</td><td>**No**</td></tr></table>
 
@@ -574,7 +651,7 @@
     Canceled setup of the EKS cluster in the ${awsAccountDisplayName} AWS account in the ${regionDisplayName} region.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Canceled**</td><td>**No**</td></tr></table>
 
@@ -585,7 +662,7 @@
     Canceling setup of the EKS cluster in the ${awsAccountDisplayName} AWS account in the ${regionDisplayName} region.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Canceling**</td><td>**No**</td></tr></table>
 
@@ -596,7 +673,7 @@
     Failed to setup EKS cluster in the ${awsAccountDisplayName} AWS account in the ${regionDisplayName} region. Reason: ${reason}.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Critical**</td><td>**Failure**</td><td>**No**</td></tr></table>
 
@@ -607,7 +684,7 @@
     Started setup of the EKS cluster in the ${awsAccountDisplayName} AWS account in the ${regionDisplayName} region.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**TaskSuccess**</td><td>**No**</td></tr></table>
 
@@ -618,7 +695,7 @@
     Successfully setup EKS cluster in the ${awsAccountDisplayName} AWS account in the ${regionDisplayName} region.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Success**</td><td>**No**</td></tr></table>
 
@@ -629,7 +706,7 @@
     Canceled termination of the ${eksClusterDisplayName} EKS cluster in the ${awsAccountDisplayName} AWS account in the ${regionDisplayName} region.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Canceled**</td><td>**No**</td></tr></table>
 
@@ -640,7 +717,7 @@
     Canceling termination of the ${eksClusterDisplayName} EKS cluster in the ${awsAccountDisplayName} AWS account in the ${regionDisplayName} region.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Canceling**</td><td>**No**</td></tr></table>
 
@@ -651,7 +728,7 @@
     Failed to terminate the ${eksClusterDisplayName} EKS cluster in the ${awsAccountDisplayName} AWS account in the ${regionDisplayName} region. Reason: ${reason}.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Critical**</td><td>**Failure**</td><td>**No**</td></tr></table>
 
@@ -662,7 +739,7 @@
     Terminating the ${eksClusterDisplayName} EKS cluster in the ${awsAccountDisplayName} AWS account in the ${regionDisplayName} region.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**TaskSuccess**</td><td>**No**</td></tr></table>
 
@@ -673,7 +750,7 @@
     Successfully terminated the ${eksClusterDisplayName} EKS cluster in the ${awsAccountDisplayName} AWS account in the ${regionDisplayName} region.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Success**</td><td>**No**</td></tr></table>
 
@@ -684,7 +761,7 @@
     Canceled set up of the Azure Kubernetes Cluster in the resource group ${resourceGroupName} in the region ${azureRegionDisplayName} of the Azure subscription ${subscriptionDisplayName}.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Canceled**</td><td>**No**</td></tr></table>
 
@@ -695,7 +772,7 @@
     Canceling set up of the Azure Kubernetes Cluster in the resource group ${resourceGroupName} in the region ${azureRegionDisplayName} of the Azure subscription ${subscriptionDisplayName}.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Canceling**</td><td>**No**</td></tr></table>
 
@@ -706,7 +783,7 @@
     Failed to set up the Azure Kubernetes Cluster in the resource group ${resourceGroupName} in the region ${azureRegionDisplayName} of the Azure subscription ${subscriptionDisplayName}. Reason: ${reason}.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Critical**</td><td>**Failure**</td><td>**No**</td></tr></table>
 
@@ -717,7 +794,7 @@
     Started set up of the Azure Kubernetes Cluster in the resource group ${resourceGroupName} in the region ${azureRegionDisplayName} of the Azure subscription ${subscriptionDisplayName}.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**TaskSuccess**</td><td>**No**</td></tr></table>
 
@@ -728,7 +805,7 @@
     Successfully set up the Azure Kubernetes Cluster ${aksClusterDisplayName} in the resource group ${resourceGroupName} in the region ${azureRegionDisplayName} of the Azure subscription ${subscriptionDisplayName}.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Success**</td><td>**No**</td></tr></table>
 
@@ -739,7 +816,7 @@
     Canceled termination of the Azure Kubernetes Cluster ${aksClusterDisplayName} in the resource group ${resourceGroupName} in the region ${regionName} of the Azure subscription ${subscriptionName}.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Canceled**</td><td>**No**</td></tr></table>
 
@@ -750,7 +827,7 @@
     Canceling termination of the Azure Kubernetes Cluster ${aksClusterDisplayName} in the resource group ${resourceGroupName} in the region ${regionName} of the Azure subscription ${subscriptionName}.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Canceling**</td><td>**No**</td></tr></table>
 
@@ -761,7 +838,7 @@
     Failed to terminate the Azure Kubernetes Cluster ${aksClusterDisplayName} in the resource group ${resourceGroupName} in the region ${regionName} of the Azure subscription ${subscriptionName}. Reason: ${reason}.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Critical**</td><td>**Failure**</td><td>**No**</td></tr></table>
 
@@ -772,7 +849,7 @@
     Terminating the Azure Kubernetes Cluster ${aksClusterDisplayName} in the resource group ${resourceGroupName} in the region ${regionName} of the Azure subscription ${subscriptionName}.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**TaskSuccess**</td><td>**No**</td></tr></table>
 
@@ -783,7 +860,7 @@
     Successfully terminated the Azure Kubernetes Cluster ${aksClusterDisplayName} in the resource group ${resourceGroupName} in the region ${regionName} of the Azure subscription ${subscriptionName}.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Success**</td><td>**No**</td></tr></table>
 
@@ -794,7 +871,7 @@
     Canceled verification and configuration of the customer managed cluster ${clusterDisplayName} in the ${cloudAccountDisplayName} ${cloudTypeDisplayName} account in the ${regionDisplayName} region.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Canceled**</td><td>**No**</td></tr></table>
 
@@ -805,7 +882,7 @@
     Canceling verification and configuration of the customer managed cluster ${clusterDisplayName} in the ${cloudAccountDisplayName} ${cloudTypeDisplayName} account in the ${regionDisplayName} region.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Canceling**</td><td>**No**</td></tr></table>
 
@@ -816,7 +893,7 @@
     Failed to verify and configure the customer managed cluster ${clusterDisplayName} in the ${cloudAccountDisplayName} ${cloudTypeDisplayName} account in the ${regionDisplayName} region. Reason: ${reason}.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Critical**</td><td>**Failure**</td><td>**No**</td></tr></table>
 
@@ -827,7 +904,7 @@
     Started verification and configuration of the customer managed cluster  ${clusterDisplayName} in the ${cloudAccountDisplayName} ${cloudTypeDisplayName} account in the ${regionDisplayName} region.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**TaskSuccess**</td><td>**No**</td></tr></table>
 
@@ -838,7 +915,7 @@
     Successfully verified and configured customer managed cluster  ${clusterDisplayName} in the ${cloudAccountDisplayName}  ${cloudTypeDisplayName} account in the ${regionDisplayName} region.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Success**</td><td>**No**</td></tr></table>
 
@@ -849,9 +926,119 @@
     User ${userEmail} entered customer KMS details for organization (${orgId}). Validated and persisted for key ${keyName} in vault ${vaultName}.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Success**</td><td>**Yes**</td></tr></table>
+
+
+!!! info "ExocomputeGCPSetupJobCanceled"
+
+    ```
+    Canceled setup of the GKE cluster in the ${gcpProjectDisplayName} GCP project in the ${regionDisplayName} region.
+    ```
+
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
+
+    <tr><td>**Info**</td><td>**Canceled**</td><td>**No**</td></tr></table>
+
+
+!!! info "ExocomputeGCPSetupJobCanceling"
+
+    ```
+    Canceling setup of the GKE cluster in the ${gcpProjectDisplayName} GCP project in the ${regionDisplayName} region.
+    ```
+
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
+
+    <tr><td>**Info**</td><td>**Canceling**</td><td>**No**</td></tr></table>
+
+
+!!! failure "ExocomputeGCPSetupJobFailed"
+
+    ```
+    Failed to setup GKE cluster in the ${gcpProjectDisplayName} GCP project in the ${regionDisplayName} region. Reason: ${reason}.
+    ```
+
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
+
+    <tr><td>**Critical**</td><td>**Failure**</td><td>**No**</td></tr></table>
+
+
+!!! info "ExocomputeGCPSetupJobStarted"
+
+    ```
+    Started setup of the GKE cluster in the ${gcpProjectDisplayName} GCP project in the ${regionDisplayName} region.
+    ```
+
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
+
+    <tr><td>**Info**</td><td>**TaskSuccess**</td><td>**No**</td></tr></table>
+
+
+!!! info "ExocomputeGCPSetupJobSucceeded"
+
+    ```
+    Successfully set up GKE cluster in the ${gcpProjectDisplayName} GCP project in the ${regionDisplayName} region.
+    ```
+
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
+
+    <tr><td>**Info**</td><td>**Success**</td><td>**No**</td></tr></table>
+
+
+!!! info "ExocomputeGCPTeardownJobCanceled"
+
+    ```
+    Canceled termination of the ${gkeClusterDisplayName} GKE cluster in the  ${gcpProjectDisplayName} GCP project in the ${regionDisplayName} region.
+    ```
+
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
+
+    <tr><td>**Info**</td><td>**Canceled**</td><td>**No**</td></tr></table>
+
+
+!!! info "ExocomputeGCPTeardownJobCanceling"
+
+    ```
+    Canceling termination of the ${gkeClusterDisplayName} GKE cluster in the ${gcpProjectDisplayName} GCP project in the ${regionDisplayName} region.
+    ```
+
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
+
+    <tr><td>**Info**</td><td>**Canceling**</td><td>**No**</td></tr></table>
+
+
+!!! failure "ExocomputeGCPTeardownJobFailed"
+
+    ```
+    Failed to terminate the ${gkeClusterDisplayName} GKE cluster in the  ${gcpProjectDisplayName} GCP project in the ${regionDisplayName} region. Reason: ${reason}.
+    ```
+
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
+
+    <tr><td>**Critical**</td><td>**Failure**</td><td>**No**</td></tr></table>
+
+
+!!! info "ExocomputeGCPTeardownJobStarted"
+
+    ```
+    Terminating the ${gkeClusterDisplayName} GKE cluster in the ${gcpProjectDisplayName} GCP project in the ${regionDisplayName} region.
+    ```
+
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
+
+    <tr><td>**Info**</td><td>**TaskSuccess**</td><td>**No**</td></tr></table>
+
+
+!!! info "ExocomputeGCPTeardownJobSucceeded"
+
+    ```
+    Successfully terminated the ${gkeClusterDisplayName} GKE cluster in the  ${gcpProjectDisplayName} GCP account in the ${regionDisplayName} region.
+    ```
+
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
+
+    <tr><td>**Info**</td><td>**Success**</td><td>**No**</td></tr></table>
 
 
 !!! info "ExocomputeResourceProvideRegistrationCompleted"
@@ -860,7 +1047,7 @@
     Completed registration of Azure Resource Providers for subscription ${subscriptionID}.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Success**</td><td>**No**</td></tr></table>
 
@@ -871,7 +1058,7 @@
     Failed during registration of Azure Resource Providers for subscription ${subscriptionID}.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Warning**</td><td>**Failure**</td><td>**No**</td></tr></table>
 
@@ -882,7 +1069,7 @@
     Started registration of Azure Resource Providers for subscription ${subscriptionID}.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Running**</td><td>**No**</td></tr></table>
 
@@ -893,7 +1080,7 @@
     Failed health check for the Kubernetes cluster. Reason: ${reason}.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Warning**</td><td>**TaskFailure**</td><td>**No**</td></tr></table>
 
@@ -904,7 +1091,7 @@
     The powered-off AKS cluster, ${clusterName}, in resource group, ${rgName},  within Azure subscription, ${subscriptionID} failed the health check.  You can either start the AKS cluster to avoid data protection compliance  issues or delete the M365 subscription if you want to power down the  AKS cluster permanently.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Warning**</td><td>**TaskFailure**</td><td>**No**</td></tr></table>
 
@@ -915,7 +1102,7 @@
     Checking health of the Kubernetes Cluster.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Running**</td><td>**No**</td></tr></table>
 
@@ -926,9 +1113,20 @@
     Successfully completed health check for the Kubernetes Cluster.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**TaskSuccess**</td><td>**No**</td></tr></table>
+
+
+!!! warning "HealthCheckTaskWarning"
+
+    ```
+    ${error}
+    ```
+
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
+
+    <tr><td>**Warning**</td><td>**Failure**</td><td>**No**</td></tr></table>
 
 
 !!! warning "LaunchAKSClusterTaskFailed"
@@ -937,7 +1135,7 @@
     Failed to launch the Azure Kubernetes Cluster in the resource group ${resourceGroupDisplayName} in the region ${azureRegionDisplayName} of the Azure subscription ${subscriptionDisplayName}.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Warning**</td><td>**TaskFailure**</td><td>**No**</td></tr></table>
 
@@ -948,7 +1146,7 @@
     Launching the Azure Kubernetes Cluster in the resource group ${resourceGroupDisplayName} in the region ${azureRegionDisplayName} of the Azure subscription ${subscriptionDisplayName}.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Running**</td><td>**No**</td></tr></table>
 
@@ -959,7 +1157,7 @@
     Successfully launched the Azure Kubernetes Cluster ${aksClusterDisplayName} in the resource group ${resourceGroupDisplayName} in the region ${azureRegionDisplayName} of the Azure subscription ${subscriptionDisplayName}.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**TaskSuccess**</td><td>**No**</td></tr></table>
 
@@ -970,7 +1168,7 @@
     Failed to launch the ${eksClusterDisplayName} EKS cluster.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Warning**</td><td>**TaskFailure**</td><td>**No**</td></tr></table>
 
@@ -981,7 +1179,7 @@
     Launching the ${eksClusterDisplayName} EKS cluster.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Running**</td><td>**No**</td></tr></table>
 
@@ -992,7 +1190,40 @@
     Successfully launched the ${eksClusterDisplayName} EKS cluster.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
+
+    <tr><td>**Info**</td><td>**TaskSuccess**</td><td>**No**</td></tr></table>
+
+
+!!! warning "LaunchGKEClusterTaskFailed"
+
+    ```
+    Failed to launch the ${gkeClusterDisplayName} GKE cluster in the  ${gcpProjectDisplayName} GCP project in the ${regionDisplayName} region.
+    ```
+
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
+
+    <tr><td>**Warning**</td><td>**TaskFailure**</td><td>**No**</td></tr></table>
+
+
+!!! info "LaunchGKEClusterTaskStarted"
+
+    ```
+    Launching the ${gkeClusterDisplayName} GKE cluster in the  ${gcpProjectDisplayName} GCP project in the ${regionDisplayName} region.
+    ```
+
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
+
+    <tr><td>**Info**</td><td>**Running**</td><td>**No**</td></tr></table>
+
+
+!!! info "LaunchGKEClusterTaskSucceeded"
+
+    ```
+    Successfully launched the ${gkeClusterDisplayName} GKE cluster in the  ${gcpProjectDisplayName} GCP project in the ${regionDisplayName} region.
+    ```
+
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**TaskSuccess**</td><td>**No**</td></tr></table>
 
@@ -1003,7 +1234,7 @@
     Failed to launch worker nodes in the ${eksClusterDisplayName} EKS cluster.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Warning**</td><td>**TaskFailure**</td><td>**No**</td></tr></table>
 
@@ -1014,7 +1245,7 @@
     Launching worker nodes in the ${eksClusterDisplayName} EKS cluster.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Running**</td><td>**No**</td></tr></table>
 
@@ -1025,7 +1256,7 @@
     Launched worker nodes in the ${eksClusterDisplayName} EKS cluster.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**TaskSuccess**</td><td>**No**</td></tr></table>
 
@@ -1036,7 +1267,7 @@
     Please delete following stale resource from Azure Portal: ${resources}.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Warning**</td><td>**Failure**</td><td>**No**</td></tr></table>
 
@@ -1047,7 +1278,7 @@
     ${userID} failed to deploy Rubrik Office 365 protection software in ${exocomputeName}. Reason: ${reason}.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Critical**</td><td>**Failure**</td><td>**Yes**</td></tr></table>
 
@@ -1058,7 +1289,7 @@
     Failed to deploy Rubrik Office 365 protection software in ${exocomputeName}: ${reason} (Error ID: ${errorID})
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Critical**</td><td>**Failure**</td><td>**No**</td></tr></table>
 
@@ -1069,7 +1300,7 @@
     ${userID} started deploying Rubrik Office 365 protection software in ${exocomputeName}.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Success**</td><td>**Yes**</td></tr></table>
 
@@ -1080,7 +1311,7 @@
     Deploying Rubrik Office 365 protection software in ${exocomputeName}.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Running**</td><td>**No**</td></tr></table>
 
@@ -1091,7 +1322,7 @@
     Successfully deployed Rubrik Office 365 protection software in ${exocomputeName}.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Success**</td><td>**No**</td></tr></table>
 
@@ -1102,7 +1333,7 @@
     Setting up ${resource} in ${exocomputeName}.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Running**</td><td>**No**</td></tr></table>
 
@@ -1113,7 +1344,7 @@
     Successfully set up ${resource} in ${exocomputeName}.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**TaskSuccess**</td><td>**No**</td></tr></table>
 
@@ -1124,7 +1355,7 @@
     Failed to configure the customer managed cluster ${clusterDisplayName}. Reason: ${reason}.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Warning**</td><td>**TaskFailure**</td><td>**No**</td></tr></table>
 
@@ -1135,7 +1366,7 @@
     Configuring the customer managed cluster ${clusterDisplayName}.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Running**</td><td>**No**</td></tr></table>
 
@@ -1146,7 +1377,7 @@
     Successfully configured the customer managed cluster ${clusterDisplayName}.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**TaskSuccess**</td><td>**No**</td></tr></table>
 
@@ -1157,7 +1388,7 @@
     Failed to configure the ${eksClusterDisplayName} EKS cluster.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Warning**</td><td>**TaskFailure**</td><td>**No**</td></tr></table>
 
@@ -1168,7 +1399,7 @@
     Configuring the ${eksClusterDisplayName} EKS cluster.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Running**</td><td>**No**</td></tr></table>
 
@@ -1179,7 +1410,40 @@
     Successfully configured the ${eksClusterDisplayName} EKS cluster.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
+
+    <tr><td>**Info**</td><td>**TaskSuccess**</td><td>**No**</td></tr></table>
+
+
+!!! warning "SetupNetworkingTaskFailed"
+
+    ```
+    Failed to configure the networking resources for GKE cluster in the  ${gcpProjectDisplayName} GCP project in the ${regionDisplayName} region.
+    ```
+
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
+
+    <tr><td>**Warning**</td><td>**TaskFailure**</td><td>**No**</td></tr></table>
+
+
+!!! info "SetupNetworkingTaskStarted"
+
+    ```
+    Configuring the networking resources for GKE cluster in the  ${gcpProjectDisplayName} GCP project in the ${regionDisplayName} region.
+    ```
+
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
+
+    <tr><td>**Info**</td><td>**Running**</td><td>**No**</td></tr></table>
+
+
+!!! info "SetupNetworkingTaskSucceeded"
+
+    ```
+    Successfully configured the networking resources for GKE cluster in the  ${gcpProjectDisplayName} GCP project in the ${regionDisplayName} region.
+    ```
+
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**TaskSuccess**</td><td>**No**</td></tr></table>
 
@@ -1194,7 +1458,7 @@
     Connectivity health check failed for KMS ${kmsName} of type ${kmsType}.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Critical**</td><td>**Failure**</td><td>**No**</td></tr></table>
 
@@ -1209,7 +1473,7 @@
     Canary job failed for object ${object}. Reason: ${reason}.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Warning**</td><td>**Failure**</td><td>**No**</td></tr></table>
 
@@ -1220,7 +1484,7 @@
     Canary job finished for object ${object}.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Success**</td><td>**No**</td></tr></table>
 
@@ -1231,7 +1495,7 @@
     Canary job started for object ${object}.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Running**</td><td>**No**</td></tr></table>
 
@@ -1242,7 +1506,7 @@
     Job instance ${jobInstanceID} canceled.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Canceled**</td><td>**No**</td></tr></table>
 
@@ -1253,7 +1517,7 @@
     Cancellation request issued for job instance ${jobInstanceID}.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Canceling**</td><td>**No**</td></tr></table>
 
@@ -1264,7 +1528,7 @@
     Cancellation request received for job instance ${jobInstanceID} by user ${user}.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**TaskSuccess**</td><td>**No**</td></tr></table>
 
@@ -1275,7 +1539,7 @@
     The failed job will be retried automatically.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**TaskSuccess**</td><td>**No**</td></tr></table>
 
@@ -1290,7 +1554,7 @@
     The number of ${snappableType} apps (${appCount}) authenticated for ${orgName} is not sufficient to meet the configured SLAs. We recommend increasing the number of apps to ${recommendedAppCount}. Add ${snappableType} apps via the Manage Enterprise Apps button on the Microsoft 365 inventory page.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Warning**</td><td>**Failure**</td><td>**No**</td></tr></table>
 
@@ -1301,7 +1565,7 @@
     Canceled backup storage sync for Microsoft 365 subscription ${orgName}.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Canceled**</td><td>**No**</td></tr></table>
 
@@ -1312,7 +1576,7 @@
     Failed to complete backup storage sync for Microsoft 365 subscription  ${orgName}. Reason: ${reason}
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Critical**</td><td>**Failure**</td><td>**No**</td></tr></table>
 
@@ -1323,7 +1587,7 @@
     Started backup storage sync for Microsoft 365 subscription ${orgName}
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**TaskSuccess**</td><td>**No**</td></tr></table>
 
@@ -1334,7 +1598,7 @@
     ${count} object(s) state changed from ${fromState} to ${toState}
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**TaskSuccess**</td><td>**No**</td></tr></table>
 
@@ -1345,7 +1609,7 @@
     Completed backup storage sync for Microsoft 365 subscription ${orgName}
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Success**</td><td>**No**</td></tr></table>
 
@@ -1356,7 +1620,7 @@
     Failed to delete Microsoft 365 Subscription ${orgName}: ${reason} (Error ID: ${errorID}). For more information on this error please visit https://support.rubrik.com/articles/How_To/000002821
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Critical**</td><td>**Failure**</td><td>**No**</td></tr></table>
 
@@ -1367,7 +1631,7 @@
     Started deletion of O365 Subscription ${orgName}
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Running**</td><td>**No**</td></tr></table>
 
@@ -1378,7 +1642,7 @@
     Successfully deleted Microsoft 365 Subscription ${orgName}
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Success**</td><td>**No**</td></tr></table>
 
@@ -1389,7 +1653,7 @@
     Failed to delete Microsoft 365 Subscription ${orgName}. Retrying. Reason: ${reason}
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Warning**</td><td>**TaskFailure**</td><td>**No**</td></tr></table>
 
@@ -1400,7 +1664,7 @@
     Discovered ${numAdded} new document libraries
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**TaskSuccess**</td><td>**No**</td></tr></table>
 
@@ -1411,7 +1675,7 @@
     Discovered ${numAdded} new sharepoint lists
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**TaskSuccess**</td><td>**No**</td></tr></table>
 
@@ -1422,7 +1686,7 @@
     Discovered ${numAdded} new site collections(s)
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**TaskSuccess**</td><td>**No**</td></tr></table>
 
@@ -1433,7 +1697,7 @@
     Discovered ${numAdded} new site(s)
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**TaskSuccess**</td><td>**No**</td></tr></table>
 
@@ -1444,7 +1708,7 @@
     Discovered ${numTeamsAdded} new team(s) and ${numChannelsAdded} new channel(s)
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**TaskSuccess**</td><td>**No**</td></tr></table>
 
@@ -1455,7 +1719,7 @@
     Discovered ${numAdded} new user(s)
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**TaskSuccess**</td><td>**No**</td></tr></table>
 
@@ -1466,7 +1730,7 @@
     Archived ${numTeamsArchived} team(s) and ${numChannelsArchived} channel(s)
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**TaskSuccess**</td><td>**No**</td></tr></table>
 
@@ -1477,7 +1741,7 @@
     Canceled ${maintenanceType} metadata refresh for subscription ${orgName}
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Canceled**</td><td>**No**</td></tr></table>
 
@@ -1488,7 +1752,7 @@
     Added new M365 regions (${newRegions}) to (${existingRegions}).
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**TaskSuccess**</td><td>**No**</td></tr></table>
 
@@ -1499,7 +1763,7 @@
     Removed ${numRemoved} SharePoint object(s).
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**TaskSuccess**</td><td>**No**</td></tr></table>
 
@@ -1510,7 +1774,18 @@
     Removed ${numRemoved} user(s): ${removedUserList}
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
+
+    <tr><td>**Info**</td><td>**TaskSuccess**</td><td>**No**</td></tr></table>
+
+
+!!! info "O365RefreshOrgSkippedLockedSiteCollectionStats"
+
+    ```
+    Skipped ${numSkipped} locked site collections
+    ```
+
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**TaskSuccess**</td><td>**No**</td></tr></table>
 
@@ -1521,7 +1796,7 @@
     Started ${maintenanceType} metadata refresh for subscription ${orgName}
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**TaskSuccess**</td><td>**No**</td></tr></table>
 
@@ -1532,7 +1807,7 @@
     Completed ${maintenanceType} metadata refresh for subscription ${orgName}
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Success**</td><td>**No**</td></tr></table>
 
@@ -1543,7 +1818,7 @@
     Unable to verify mailbox access for ${numUnverified} user(s): ${unverifiedUserList}
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Warning**</td><td>**TaskSuccess**</td><td>**No**</td></tr></table>
 
@@ -1554,7 +1829,7 @@
     Updated metadata for ${numUpdated} document libraries
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**TaskSuccess**</td><td>**No**</td></tr></table>
 
@@ -1565,7 +1840,7 @@
     Updated metadata for ${numUpdated} sharepoint lists
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**TaskSuccess**</td><td>**No**</td></tr></table>
 
@@ -1576,7 +1851,7 @@
     Updated metadata for ${numUpdated} siteCollections(s)
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**TaskSuccess**</td><td>**No**</td></tr></table>
 
@@ -1587,7 +1862,7 @@
     Updated metadata for ${numUpdated} site(s)
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**TaskSuccess**</td><td>**No**</td></tr></table>
 
@@ -1598,7 +1873,7 @@
     Updated metadata for ${numTeamsUpdated} team(s) and ${numChannelsUpdated} channel(s)
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**TaskSuccess**</td><td>**No**</td></tr></table>
 
@@ -1609,7 +1884,7 @@
     Updated metadata for ${numUpdated} user(s)
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**TaskSuccess**</td><td>**No**</td></tr></table>
 
@@ -1620,7 +1895,7 @@
     We're glad that our protection is helping! We're now protecting more mailboxes than your current licenses allow. We are protecting ${total_protected_licensed_mailbox} licensed mailboxes but the number allowed by your current licenses is ${allowed_protected_licensed_mailbox_limit}. We are protecting ${total_protected_unlicensed_mailbox} shared mailboxes but the number allowed by your current licenses is ${allowed_protected_unlicensed_mailbox_limit}. No need to worry though, we'll keep protecting the excess mailboxes for the next 30 days. During that time please reach out to the Rubrik Sales team to purchase additional licenses, or please remove ${overage_count} mailboxes. Please refer to ${learn_more_link} for more details. Thanks for being a great customer!
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Warning**</td><td>**Success**</td><td>**No**</td></tr></table>
 
@@ -1631,7 +1906,7 @@
     We're glad that our protection is helping! We're now protecting more OneDrives than your current licenses allow. We are protecting ${total_protected_onedrive} OneDrives but the number allowed by your current licenses is ${allowed_protected_onedrive_limit}. No need to worry though, we'll keep protecting the excess OneDrives for the next 30 days. During that time please reach out to the Rubrik Sales team to purchase additional licenses, or please remove ${overage} mailboxes. Please refer to ${learn_more_link} for more details. Thanks for being a great customer!
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Warning**</td><td>**Success**</td><td>**No**</td></tr></table>
 
@@ -1642,7 +1917,7 @@
     Failed ${maintenanceType} metadata refresh of subscription ${orgName}: ${reason} (Error ID: ${errorID}). For more information on this error please visit https://support.rubrik.com/articles/How_To/000002821
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Warning**</td><td>**Failure**</td><td>**No**</td></tr></table>
 
@@ -1657,7 +1932,7 @@
     Recovery of ${component} failed.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Warning**</td><td>**Failure**</td><td>**No**</td></tr></table>
 
@@ -1668,7 +1943,7 @@
     Recovery of ${component} has begun.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**TaskSuccess**</td><td>**No**</td></tr></table>
 
@@ -1679,7 +1954,7 @@
     Recovery of ${component} has completed successfully.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Success**</td><td>**No**</td></tr></table>
 
@@ -1690,7 +1965,7 @@
     Disaster recovery failed.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Critical**</td><td>**Failure**</td><td>**No**</td></tr></table>
 
@@ -1701,7 +1976,7 @@
     Beginning disaster recovery.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**TaskSuccess**</td><td>**No**</td></tr></table>
 
@@ -1712,7 +1987,7 @@
     Disaster recovery has completed successfully.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Success**</td><td>**No**</td></tr></table>
 
@@ -1723,7 +1998,7 @@
     Returning services to running state.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**TaskSuccess**</td><td>**No**</td></tr></table>
 
@@ -1734,7 +2009,7 @@
     Failed to bring up services. Please run `cluster disaster_recovery revert` from the Admin CLI.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Critical**</td><td>**Failure**</td><td>**No**</td></tr></table>
 
@@ -1745,7 +2020,7 @@
     Services successfully returned to running state.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Success**</td><td>**No**</td></tr></table>
 
@@ -1760,7 +2035,7 @@
     Access to your Rubrik Cloud Vault (RCV) locations for the ${tier}  tier in ${bundle} with ${redundancy} redundancy was removed on  ${removeAccessDate}. If you don't renew your license, all backups in  these locations will be deleted on ${deleteDataDate}.  To renew your RCV license  and prevent the deletion of your backups, contact your Rubrik account  representative or email sales@rubrik.com.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Warning**</td><td>**Success**</td><td>**No**</td></tr></table>
 
@@ -1771,7 +2046,7 @@
     Your Rubrik Cloud Vault (RCV) locations for the  ${tier} tier in ${bundle} with ${redundancy} redundancy have been  paused. As a result, no new backups can be uploaded. However, you can  still access previously uploaded backups in these locations. Uploaded  backups will expire based on the retention period defined in their  SLA Domains.  To purchase additional RCV capacity, contact  your Rubrik account representative or email sales@rubrik.com.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Warning**</td><td>**Success**</td><td>**No**</td></tr></table>
 
@@ -1782,7 +2057,7 @@
     Your backups in Rubrik Cloud Vault (RCV) locations for the ${tier}  tier in ${bundle} with ${redundancy} redundancy were deleted on  ${deleteDataDate}.  Your RCV Locations using RCV  ${tier} tier in ${bundle} regions have been deleted.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Warning**</td><td>**Success**</td><td>**No**</td></tr></table>
 
@@ -1793,7 +2068,7 @@
     Your Rubrik Cloud Vault (RCV) locations for the  ${tier} tier in ${bundle} with ${redundancy} redundancy were paused. As  a result, no new backups will be uploaded. However, you can still  access previously uploaded backups in these locations. Uploaded backups  will expire based on the retention period defined in their SLA  Domains. If you do not renew your license, your access to these  locations will be removed on ${removeAccessDate}, and all backups  in these locations will be deleted on ${deleteDataDate}.  To renew your RCV  license and prevent the deletion of your backups, contact your Rubrik  account representative or email sales@rubrik.com.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Warning**</td><td>**Success**</td><td>**No**</td></tr></table>
 
@@ -1804,7 +2079,7 @@
     Based on your past and current consumption of  Rubrik Cloud Vault (RCV) ${tier} tier in ${bundle} regions,  we have forecasted that your consumption will exceed your  purchased entitlement on ${forecastCapacityExceedDate}.  When you exceed your license, no new backups will be uploaded  to RCV locations in ${tier} tier for ${bundle} regions  but you’ll still be able to access previously uploaded backups  in these locations. Uploaded backups will expire according to the  retention period defined in their SLA Domains.  To purchase additional Rubrik Cloud Vault (RCV) capacity, contact  your Rubrik account representative or email sales@rubrik.com.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Warning**</td><td>**Success**</td><td>**No**</td></tr></table>
 
@@ -1815,7 +2090,7 @@
     Capacity Expiring: ${expiredSize} TB  Expiration Date: ${expiryDate}  Capacity Not Expiring: ${remainingSize} TB  If you exceed your remaining license of ${remainingSize} TB, the  Rubrik Cloud Vault locations for ${tier} tier in regions that belong to  ${bundle} storage bundle with ${redundancy} redundancy will be paused.  As a result, no new backups can be uploaded but you will still be able  to access previously uploaded backups in these locations. Uploaded  backups will expire according to the retention period defined in their  SLA Domains. To prevent your backups from being paused, contact your  Rubrik account representative or email sales@rubrik.com to purchase  additional Rubrik Cloud Vault capacity.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Warning**</td><td>**Success**</td><td>**No**</td></tr></table>
 
@@ -1823,10 +2098,10 @@
 !!! warning "RcvPercentageConsumptionNotification"
 
     ```
-    Once you have used 100 percent of your licensed capacity, the  Rubrik Cloud Vault (RCV) locations for ${tier} tier in ${bundle} with  ${redundancy} redundancy will be paused. As a result, no new backups  can be uploaded. However, you can still access previously  uploaded backups in these locations. Uploaded backups will expire  based on retention period defined in their SLA Domains.  To prevent your backups from being paused, contact your Rubrik account  representative or email sales@rubrik.com to purchase additional  RCV capacity.
+    You have used ${percentage} percent of your Rubrik Cloud Vault (RCV) license. Once you have used 100 percent of your licensed capacity, the  Rubrik Cloud Vault (RCV) locations for ${tier} tier in ${bundle} with  ${redundancy} redundancy will be paused. As a result, no new backups  can be uploaded. However, you can still access previously  uploaded backups in these locations. Uploaded backups will expire  based on retention period defined in their SLA Domains.  To prevent your backups from being paused, contact your Rubrik account  representative or email sales@rubrik.com to purchase additional  RCV capacity.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Warning**</td><td>**Success**</td><td>**No**</td></tr></table>
 
@@ -1837,9 +2112,46 @@
     Your Rubrik Cloud Vault (RCV) locations for the  ${tier} tier in ${bundle}  with ${redundancy} redundancy will be paused on ${expiryDate}. As a  result, no new backups will be uploaded. However, you can still  access previously uploaded backups in these locations. Uploaded backups  will expire based on the retention period defined in their SLA  Domains. If you do not renew your license, your access to these  locations will be removed on ${removeAccessDate}, and all backups  in these locations will be deleted on ${deleteDataDate}.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Warning**</td><td>**Success**</td><td>**No**</td></tr></table>
+
+
+
+##saasapps
+----
+
+!!! failure "SaasAppsDeleteOrgFailed"
+
+    ```
+    Failed to delete SaaS organization ${orgName}: ${reason}.
+    ```
+
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
+
+    <tr><td>**Critical**</td><td>**Failure**</td><td>**No**</td></tr></table>
+
+
+!!! info "SaasAppsDeleteOrgStarted"
+
+    ```
+    Started the deletion of SaaS organization ${orgName}.
+    ```
+
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
+
+    <tr><td>**Info**</td><td>**TaskSuccess**</td><td>**No**</td></tr></table>
+
+
+!!! info "SaasAppsDeleteOrgSucceeded"
+
+    ```
+    Successfully deleted SaaS organization ${orgName}.
+    ```
+
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
+
+    <tr><td>**Info**</td><td>**Success**</td><td>**No**</td></tr></table>
 
 
 
@@ -1852,7 +2164,7 @@
     The following snappable is out of SLA compliance due to missed local snapshot(s): ${snappableName}
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Critical**</td><td>**Failure**</td><td>**No**</td></tr></table>
 
@@ -1867,7 +2179,7 @@
     ${accessRevokerName} revoked read-only access to view RSC account as ${impersonatedUserName} from Rubrik support staff.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Success**</td><td>**No**</td></tr></table>
 
@@ -1878,7 +2190,7 @@
     ${accessRevokerName} revoked read-only access to view RSC account as ${impersonatedUserName} from Rubrik support staff.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Success**</td><td>**Yes**</td></tr></table>
 
@@ -1889,7 +2201,7 @@
     ${accessProviderName} granted read-only access to view RSC account as ${impersonatedUserName} to Rubrik support staff.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Success**</td><td>**Yes**</td></tr></table>
 
@@ -1900,7 +2212,7 @@
     ${accessProviderUserName} granted read-only access to Rubrik support staff for support ticket ${ticketId}.  Rubrik support staff will have read-only view as ${impersonatedUserName} from ${startTime} till ${endTime}.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Success**</td><td>**No**</td></tr></table>
 
@@ -1908,10 +2220,10 @@
 !!! info "SupportUserAccessExpired"
 
     ```
-    Access provided to Rubrik Support Staff by ${accessProviderUserName} to investigate ticket ${ticketId} has been expired
+    Access provided to Rubrik Support staff by ${accessProviderUserName} to impersonate ${impersonatedUserName} has expired.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Success**</td><td>**No**</td></tr></table>
 
@@ -1922,7 +2234,7 @@
     ${accessModifierName} updated Rubrik support staff’s read-only access timings to RSC account  as ${impersonatedUserName} from ${previousDuration} hours to ${newDuration} hours.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Success**</td><td>**No**</td></tr></table>
 
@@ -1933,7 +2245,7 @@
     ${accessModifierName} updated Rubrik support staff’s read-only access timings to RSC account  as ${impersonatedUserName} from ${previousDuration} hours to ${newDuration} hours.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Success**</td><td>**Yes**</td></tr></table>
 
@@ -1944,7 +2256,7 @@
     Rubrik support staff logged in as ${impersonatedUserName}.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Success**</td><td>**Yes**</td></tr></table>
 
@@ -1955,7 +2267,7 @@
     Rubrik support staff viewing RSC account as ${impersonatedUserName} logged out.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Success**</td><td>**Yes**</td></tr></table>
 
@@ -1970,7 +2282,7 @@
     CPU Utilization Warning. Reasons: ${reasons}.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Warning**</td><td>**Failure**</td><td>**No**</td></tr></table>
 
@@ -1981,7 +2293,7 @@
     Disk Utilization Warning. Reasons: ${reasons}.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Warning**</td><td>**Failure**</td><td>**No**</td></tr></table>
 
@@ -1992,7 +2304,7 @@
     Memory Utilization Warning. Reasons: ${reasons}.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Warning**</td><td>**Failure**</td><td>**No**</td></tr></table>
 
@@ -2003,7 +2315,7 @@
     Rubrik deployment status is ${node_status}. Reasons: ${reasons}.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Critical**</td><td>**Failure**</td><td>**No**</td></tr></table>
 
@@ -2014,7 +2326,7 @@
     Rubrik deployment status is ${node_status}.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Success**</td><td>**No**</td></tr></table>
 

@@ -7,7 +7,7 @@
     ${username} created a new custom analyzer named '${analyzerName}'.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Success**</td><td>**Yes**</td></tr></table>
 
@@ -18,7 +18,7 @@
     ${username} deleted the custom analyzer named '${analyzerName}'.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Success**</td><td>**Yes**</td></tr></table>
 
@@ -29,7 +29,7 @@
     ${username} modified the custom analyzer named '${analyzerName}'.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Success**</td><td>**Yes**</td></tr></table>
 
@@ -40,7 +40,7 @@
     ${username} updated the analyzer risk to '${analyzerRisk}' for  ${analyzerNames}.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Success**</td><td>**Yes**</td></tr></table>
 
@@ -51,7 +51,7 @@
     Failed to ${actionType} policies to workloads for clusters or hierarchy objects.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Critical**</td><td>**Failure**</td><td>**No**</td></tr></table>
 
@@ -62,7 +62,7 @@
     Successfully ${actionType} policies to workloads for clusters or hierarchy objects.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Success**</td><td>**No**</td></tr></table>
 
@@ -73,7 +73,7 @@
     Results available in the Objects page for the workload '${objectName}' on the snapshot at ${snapshotsTimeStamp}.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Success**</td><td>**No**</td></tr></table>
 
@@ -84,7 +84,7 @@
     Canceled classification of ${objectType} '${objectName}' on snapshot(s)  at ${snapshotsTimeStamp} with policies ${policyList}.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Warning**</td><td>**Canceled**</td><td>**No**</td></tr></table>
 
@@ -95,7 +95,7 @@
     Failed to classify ${objectType} '${objectName}' on snapshot(s) at  ${snapshotsTimeStamp} with policies ${policyList}. Reason: ${reason}.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Critical**</td><td>**Failure**</td><td>**No**</td></tr></table>
 
@@ -106,7 +106,7 @@
     Running classification of ${objectType} '${objectName}' on snapshot(s)  at ${snapshotsTimeStamp} with policies ${policyList}.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**TaskSuccess**</td><td>**No**</td></tr></table>
 
@@ -117,7 +117,7 @@
     Running classification of ${objectType} '${objectName}' with policies  ${policyList}: No new snapshot to analyze.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**TaskSuccess**</td><td>**No**</td></tr></table>
 
@@ -128,7 +128,7 @@
     Beginning classification of ${objectType} '${objectName}'.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**TaskSuccess**</td><td>**No**</td></tr></table>
 
@@ -139,7 +139,7 @@
     Completed classification of ${objectType} '${objectName}' on snapshot(s) at ${snapshotsTimeStamp} with policies ${policyList}.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Success**</td><td>**No**</td></tr></table>
 
@@ -150,7 +150,7 @@
     Completed classification of ${objectType} '${objectName}' with policies ${policyList}: No new snapshot to analyze.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Success**</td><td>**No**</td></tr></table>
 
@@ -161,7 +161,7 @@
     ${username} deleted the discovery named '${crawlName}'.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Success**</td><td>**Yes**</td></tr></table>
 
@@ -172,7 +172,7 @@
     ${username} ran a discovery named '${crawlName}', which included ${policyNames}, across ${numObjects} object(s).
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Success**</td><td>**Yes**</td></tr></table>
 
@@ -183,7 +183,7 @@
     Failed to add ${ObjectCount} objects to ${policyID}
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**TaskFailure**</td><td>**No**</td></tr></table>
 
@@ -194,7 +194,7 @@
     Added ${ObjectCount} objects to ${policyID} successfully
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**TaskSuccess**</td><td>**No**</td></tr></table>
 
@@ -205,7 +205,7 @@
     ${username} downloaded full discovery results of ${objectType} '${objectName}'.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Success**</td><td>**Yes**</td></tr></table>
 
@@ -216,7 +216,7 @@
     ${username} downloaded full discovery results of ${objectType} '${objectName}' on '${location}'.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Success**</td><td>**Yes**</td></tr></table>
 
@@ -227,7 +227,7 @@
     ${username} downloaded discovery results of '${path}' in ${objectType} '${objectName}'.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Success**</td><td>**Yes**</td></tr></table>
 
@@ -238,7 +238,7 @@
     ${username} downloaded discovery results of '${path}' in ${objectType} '${objectName}' on '${location}'
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Success**</td><td>**Yes**</td></tr></table>
 
@@ -249,7 +249,7 @@
     Sync canceled due to modifications to policies. A new sync will begin shortly
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Canceled**</td><td>**No**</td></tr></table>
 
@@ -260,7 +260,7 @@
     Failed to sync changes on ${clusterName}. Reason: ${errorMessage}
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Critical**</td><td>**TaskFailure**</td><td>**No**</td></tr></table>
 
@@ -271,7 +271,7 @@
     Unable to sync changes on ${clusterName} because the cluster is disconnected
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Warning**</td><td>**TaskFailure**</td><td>**No**</td></tr></table>
 
@@ -282,7 +282,7 @@
     Sync recovered and completed successfully on ${clusterName}
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Success**</td><td>**No**</td></tr></table>
 
@@ -293,7 +293,7 @@
     Starting to sync changes for ${policies} on ${clusterName}
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**TaskSuccess**</td><td>**No**</td></tr></table>
 
@@ -304,7 +304,7 @@
     Succeeded to sync changes on ${clusterName}
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Success**</td><td>**No**</td></tr></table>
 
@@ -315,7 +315,7 @@
     ${username} downloaded the results of the discovery named '${crawlName}'.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Success**</td><td>**Yes**</td></tr></table>
 
@@ -326,7 +326,7 @@
     ${username} created a new custom policy named '${policyName}', which includes ${analyzerNames}.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Success**</td><td>**Yes**</td></tr></table>
 
@@ -337,7 +337,7 @@
     ${username} deleted the policy named '${policyName}'.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Success**</td><td>**Yes**</td></tr></table>
 
@@ -348,7 +348,7 @@
     ${username} modified the policy named '${policyName}', which now includes ${analyzerNames}.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Success**</td><td>**Yes**</td></tr></table>
 
@@ -359,7 +359,7 @@
     ${username} added ${objectNames} to ${policyNames}.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Success**</td><td>**Yes**</td></tr></table>
 
@@ -370,7 +370,7 @@
     ${username} removed ${objectNames} from ${policyNames}.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Success**</td><td>**Yes**</td></tr></table>
 
@@ -381,7 +381,7 @@
     ${username} disabled previewer for '${clusterName}'.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Success**</td><td>**Yes**</td></tr></table>
 
@@ -392,7 +392,7 @@
     ${username} enabled previewer for '${clusterName}'.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Success**</td><td>**Yes**</td></tr></table>
 
@@ -403,7 +403,7 @@
     ${username} updated the allowlist for '${objectName}' on path '${pathName}', adding '${analyzerNames}'.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Success**</td><td>**Yes**</td></tr></table>
 
@@ -414,7 +414,7 @@
     ${username} updated the allowlist for '${objectName}' on path '${pathName}', adding '${analyzersAdded}' and removing '${analyzersRemoved}'.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Success**</td><td>**Yes**</td></tr></table>
 
@@ -425,7 +425,7 @@
     ${username} updated the allowlist for '${objectName}' on path '${pathName}', removing '${analyzerNames}'.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Success**</td><td>**Yes**</td></tr></table>
 

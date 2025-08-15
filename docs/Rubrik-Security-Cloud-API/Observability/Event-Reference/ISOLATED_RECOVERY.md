@@ -7,7 +7,7 @@
     Failed to complete the clean up: ${reason}
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Critical**</td><td>**Failure**</td><td>**No**</td></tr></table>
 
@@ -15,10 +15,10 @@
 !!! info "CleanupIsolatedRecoveryStarted"
 
     ```
-    Starting cleaning up isolated recovery
+    Starting cleaning up cyber recovery
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**TaskSuccess**</td><td>**No**</td></tr></table>
 
@@ -29,7 +29,7 @@
     Successfully completed the clean up
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Success**</td><td>**No**</td></tr></table>
 
@@ -40,7 +40,7 @@
     Unable to clean up virtual machines: ${reason}
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Critical**</td><td>**TaskFailure**</td><td>**No**</td></tr></table>
 
@@ -51,7 +51,7 @@
     Starting clean up of virtual machines
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Running**</td><td>**No**</td></tr></table>
 
@@ -62,7 +62,7 @@
     Successfully cleaned up virtual machines
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**TaskSuccess**</td><td>**No**</td></tr></table>
 
@@ -73,7 +73,7 @@
     Failed to complete configuration of virtual machines: ${reason}
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Critical**</td><td>**TaskFailure**</td><td>**No**</td></tr></table>
 
@@ -84,7 +84,7 @@
     Starting configuration of virtual machines
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**TaskSuccess**</td><td>**No**</td></tr></table>
 
@@ -95,7 +95,7 @@
     Successfully completed configuration of virtual machines
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**TaskSuccess**</td><td>**No**</td></tr></table>
 
@@ -103,10 +103,10 @@
 !!! failure "IsolatedRecoveryDeployEnvironmentFailed"
 
     ```
-    Failed to deploy isolated recovery environment for isolated recovery of recovery plan '${planName}', recovery name: '${recoveryName}': ${reason}.
+    Failed to deploy recovery environment for cyber recovery of Recovery Plan '${planName}', recovery name: '${recoveryName}': ${reason}.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Critical**</td><td>**TaskFailure**</td><td>**No**</td></tr></table>
 
@@ -114,10 +114,10 @@
 !!! info "IsolatedRecoveryDeployEnvironmentStarted"
 
     ```
-    Starting deployment of isolated recovery environment for isolated recovery of recovery plan '${planName}', recovery name: '${recoveryName}'.
+    Starting deployment of recovery environment for cyber recovery of Recovery Plan '${planName}', recovery name: '${recoveryName}'.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**TaskSuccess**</td><td>**No**</td></tr></table>
 
@@ -125,10 +125,10 @@
 !!! info "IsolatedRecoveryDeployEnvironmentSucceeded"
 
     ```
-    Successfully completed deployment of isolated recovery environment for isolated recovery of recovery plan '${planName}', recovery name: '${recoveryName}'.
+    Successfully completed deployment of recovery environment for cyber recovery of Recovery Plan '${planName}', recovery name: '${recoveryName}'.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**TaskSuccess**</td><td>**No**</td></tr></table>
 
@@ -136,10 +136,10 @@
 !!! failure "IsolatedRecoveryFailed"
 
     ```
-    Failed to complete isolated recovery: ${reason}
+    Failed to complete cyber recovery: ${reason}
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Critical**</td><td>**Failure**</td><td>**No**</td></tr></table>
 
@@ -147,10 +147,10 @@
 !!! failure "IsolatedRecoveryFinalizeFailed"
 
     ```
-    Failed to complete final tasks of releasing resources for isolated recovery: ${reason}
+    Failed to complete final tasks of releasing resources for cyber recovery: ${reason}
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Critical**</td><td>**TaskFailure**</td><td>**No**</td></tr></table>
 
@@ -158,10 +158,10 @@
 !!! info "IsolatedRecoveryFinalizeStarted"
 
     ```
-    Starting final tasks of releasing resources for isolated recovery
+    Starting final tasks of releasing resources for cyber recovery
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**TaskSuccess**</td><td>**No**</td></tr></table>
 
@@ -169,10 +169,10 @@
 !!! info "IsolatedRecoveryFinalizeSucceeded"
 
     ```
-    Successfully completed final tasks of releasing resources for isolated recovery
+    Successfully completed final tasks of releasing resources for cyber recovery
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**TaskSuccess**</td><td>**No**</td></tr></table>
 
@@ -183,7 +183,7 @@
     Error occurred during network configuration of virtual machines
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Critical**</td><td>**TaskFailure**</td><td>**No**</td></tr></table>
 
@@ -194,7 +194,7 @@
     Starting to execute network configuration
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**TaskSuccess**</td><td>**No**</td></tr></table>
 
@@ -205,7 +205,7 @@
     Successfully completed network configuration of virtual machines
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**TaskSuccess**</td><td>**No**</td></tr></table>
 
@@ -216,7 +216,7 @@
     Error occured during validation of post-recovery scripts
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Critical**</td><td>**TaskFailure**</td><td>**No**</td></tr></table>
 
@@ -227,7 +227,7 @@
     Starting to execute post-recovery scripts
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**TaskSuccess**</td><td>**No**</td></tr></table>
 
@@ -238,7 +238,7 @@
     Successfully completed validation of post-recovery scripts
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**TaskSuccess**</td><td>**No**</td></tr></table>
 
@@ -246,10 +246,10 @@
 !!! failure "IsolatedRecoveryPrepareDataFailed"
 
     ```
-    Failed to complete initialization process for isolated recovery: ${reason}
+    Failed to complete initialization process for cyber recovery: ${reason}
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Critical**</td><td>**TaskFailure**</td><td>**No**</td></tr></table>
 
@@ -257,10 +257,10 @@
 !!! info "IsolatedRecoveryPrepareDataStarted"
 
     ```
-    Starting initialization process for isolated recovery
+    Starting initialization process for cyber recovery
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**TaskSuccess**</td><td>**No**</td></tr></table>
 
@@ -268,10 +268,10 @@
 !!! info "IsolatedRecoveryPrepareDataSucceeded"
 
     ```
-    Successfully completed initialization process for isolated recovery
+    Successfully completed initialization process for cyber recovery
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**TaskSuccess**</td><td>**No**</td></tr></table>
 
@@ -282,7 +282,7 @@
     Failed to complete resource validation and initialization: ${reason}
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Critical**</td><td>**TaskFailure**</td><td>**No**</td></tr></table>
 
@@ -293,7 +293,7 @@
     Starting resource validation and initialization
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**TaskSuccess**</td><td>**No**</td></tr></table>
 
@@ -304,7 +304,7 @@
     Successfully completed resource validation and initialization
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**TaskSuccess**</td><td>**No**</td></tr></table>
 
@@ -315,7 +315,7 @@
     Failed to complete recovery of virtual machines: ${reason}
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Critical**</td><td>**TaskFailure**</td><td>**No**</td></tr></table>
 
@@ -326,7 +326,7 @@
     Starting recovery of virtual machines
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**TaskSuccess**</td><td>**No**</td></tr></table>
 
@@ -337,7 +337,7 @@
     Successfully completed recovery of virtual machines
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**TaskSuccess**</td><td>**No**</td></tr></table>
 
@@ -345,10 +345,10 @@
 !!! info "IsolatedRecoveryScheduled"
 
     ```
-    Scheduled a job to execute isolated recovery
+    Scheduled a job to execute cyber recovery
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Queued**</td><td>**No**</td></tr></table>
 
@@ -356,10 +356,10 @@
 !!! info "IsolatedRecoveryStarted"
 
     ```
-    Starting isolated recovery via ${dataTransferType}. Use the ${undoOnFailure} setting to abort and cleanup the recovery.
+    Starting cyber recovery via ${dataTransferType}. Use the ${undoOnFailure} setting to abort and cleanup the recovery.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**TaskSuccess**</td><td>**No**</td></tr></table>
 
@@ -367,10 +367,10 @@
 !!! info "IsolatedRecoverySucceeded"
 
     ```
-    Successfully completed isolated recovery
+    Successfully completed cyber recovery
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Success**</td><td>**No**</td></tr></table>
 
@@ -382,10 +382,21 @@
 !!! info "IsolatedRecoveryCleanupTriggered"
 
     ```
-    ${userEmail} triggered an isolated recovery cleanup job for recovery '${recoveryName}'.
+    ${userEmail} triggered a cyber recovery cleanup job for recovery '${recoveryName}'.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
+
+    <tr><td>**Info**</td><td>**Success**</td><td>**Yes**</td></tr></table>
+
+
+!!! info "IsolatedRecoveryLocked"
+
+    ```
+    ${userEmail} locked cyber recovery '${recoveryName}' for recovery plan '${planName}'.
+    ```
+
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Success**</td><td>**Yes**</td></tr></table>
 
@@ -393,10 +404,10 @@
 !!! info "IsolatedRecoveryTriggered"
 
     ```
-    ${userEmail} triggered an isolated recovery '${recoveryName}' to ${targetSite}.
+    ${userEmail} triggered a cyber recovery '${recoveryName}' to ${targetSite}.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Success**</td><td>**Yes**</td></tr></table>
 

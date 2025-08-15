@@ -4,10 +4,10 @@
 !!! failure "ReplicateBlueprintSnapshotFailed"
 
     ```
-    Failed to replicate the latest snapshot of recovery plan '${appName}' to cluster '${cluster}' in '${account}': ${reason}.
+    Failed to replicate the latest snapshot of Recovery Plan '${appName}' to cluster '${cluster}' in '${account}': ${reason}.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Critical**</td><td>**Failure**</td><td>**No**</td></tr></table>
 
@@ -18,7 +18,7 @@
     Failed to prepare replication: ${reason}.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Warning**</td><td>**TaskFailure**</td><td>**No**</td></tr></table>
 
@@ -26,10 +26,10 @@
 !!! warning "ReplicateBlueprintSnapshotTriggerTaskFailed"
 
     ```
-    Failed to replicate the latest snapshot of recovery plan '${appName}' to cluster '${cluster}': ${reason}.
+    Failed to replicate the latest snapshot of Recovery Plan '${appName}' to cluster '${cluster}': ${reason}.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Warning**</td><td>**TaskFailure**</td><td>**No**</td></tr></table>
 
@@ -44,7 +44,7 @@
     Validation of a replicated snapshot taken at ${snapshotTimeDisplay} for the ${qualifiedSnappableDisplayText} to the ${region} failed.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Critical**</td><td>**Failure**</td><td>**No**</td></tr></table>
 
@@ -55,7 +55,7 @@
     Failed to replicate the snapshot taken at ${snapshotTimeDisplay} for the ${qualifiedSnappableDisplayText} to the ${targetLocation}. Reason: ${reason}.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Critical**</td><td>**Failure**</td><td>**No**</td></tr></table>
 
@@ -66,7 +66,7 @@
     Replicating the snapshot taken at ${snapshotTimeDisplay} for the ${qualifiedSnappableDisplayText} to the ${targetLocation}.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Running**</td><td>**No**</td></tr></table>
 
@@ -77,7 +77,7 @@
     Successfully replicated snapshot taken at ${snapshotTimeDisplay} for the ${qualifiedSnappableDisplayText} to the ${targetLocation}.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Success**</td><td>**No**</td></tr></table>
 
@@ -88,7 +88,7 @@
     Replication of snapshot(s) taken at ${snapshotTimesDisplay} for the ${qualifiedSnappableDisplayText} was skipped because newer snapshot(s) have already been replicated.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Warning**</td><td>**Success**</td><td>**No**</td></tr></table>
 
