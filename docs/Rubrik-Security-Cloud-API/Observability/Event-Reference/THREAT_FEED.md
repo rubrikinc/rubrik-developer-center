@@ -7,7 +7,7 @@
     Threat feed entry for ${entryDetails} has been disabled by ${userEmail}.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Success**</td><td>**Yes**</td></tr></table>
 
@@ -18,7 +18,7 @@
     Threat feed entry for ${entryDetails} has been enabled by ${userEmail}.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Success**</td><td>**Yes**</td></tr></table>
 
@@ -33,7 +33,7 @@
     Unable to download threat feed version: ${version}.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Warning**</td><td>**Failure**</td><td>**No**</td></tr></table>
 
@@ -44,7 +44,7 @@
     Successfully downloaded threat feed version: ${version}.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Success**</td><td>**No**</td></tr></table>
 
@@ -55,7 +55,7 @@
     Failed to ingest intel from ${provider} because of ${failureReason}.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Failure**</td><td>**No**</td></tr></table>
 
@@ -66,7 +66,7 @@
     New threat intel includes ${iocsAndProviders}.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**TaskSuccess**</td><td>**No**</td></tr></table>
 
@@ -77,7 +77,7 @@
     Unable to perform full Threat Monitoring hash analysis with Threat Feed  Version ${hashTfVersion}. Found file hash matches for ${numFilesWithMatches} files.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Failure**</td><td>**No**</td></tr></table>
 
@@ -88,7 +88,7 @@
     Completed full Threat Monitoring hash analysis with Hash Threat Feed  Version ${hashTfVersion}. Found file hash matches for ${numFilesWithMatches} files.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Critical**</td><td>**Success**</td><td>**No**</td></tr></table>
 
@@ -99,7 +99,7 @@
     Completed full Threat Monitoring hash analysis with Hash Threat Feed  Version ${hashTfVersion}. No matches found.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Success**</td><td>**No**</td></tr></table>
 

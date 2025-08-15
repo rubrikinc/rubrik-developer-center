@@ -7,7 +7,7 @@
     Failed to run cleanup for ${failoverType} job for ${blueprintName}. Reason: ${reason}
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Critical**</td><td>**TaskFailure**</td><td>**No**</td></tr></table>
 
@@ -18,7 +18,7 @@
     Starting to schedule cleanup for ${failoverType} job for ${blueprintName}
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**TaskSuccess**</td><td>**No**</td></tr></table>
 
@@ -29,7 +29,7 @@
     Successfully completed cleanup for ${failoverType} job for ${blueprintName}
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**TaskSuccess**</td><td>**No**</td></tr></table>
 
@@ -40,7 +40,7 @@
     Scheduled recovery completed for ${blueprintName}
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Success**</td><td>**No**</td></tr></table>
 
@@ -51,7 +51,7 @@
     Scheduled recovery failed for ${blueprintName}. Reason: ${reason}
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Critical**</td><td>**Failure**</td><td>**No**</td></tr></table>
 
@@ -62,7 +62,7 @@
     Failed to notify users for results of scheduled recovery for ${blueprintName}. Reason: ${reason}
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Critical**</td><td>**TaskFailure**</td><td>**No**</td></tr></table>
 
@@ -73,7 +73,7 @@
     Starting to notify users for results of scheduled recovery for ${blueprintName}
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**TaskSuccess**</td><td>**No**</td></tr></table>
 
@@ -84,7 +84,7 @@
     Successfully notified users for results of scheduled recovery for ${blueprintName}
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**TaskSuccess**</td><td>**No**</td></tr></table>
 
@@ -95,7 +95,7 @@
     Failed to run postchecks for scheduled recovery for ${blueprintName}. Reason: ${reason}
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Critical**</td><td>**TaskFailure**</td><td>**No**</td></tr></table>
 
@@ -106,7 +106,7 @@
     Starting to run postchecks for scheduled recovery for ${blueprintName}
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**TaskSuccess**</td><td>**No**</td></tr></table>
 
@@ -117,7 +117,7 @@
     Successfully completed postchecks for scheduled recovery for ${blueprintName}
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**TaskSuccess**</td><td>**No**</td></tr></table>
 
@@ -128,7 +128,7 @@
     Failed to run prechecks for scheduled recovery for ${blueprintName}. Reason: ${reason}
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Critical**</td><td>**TaskFailure**</td><td>**No**</td></tr></table>
 
@@ -136,10 +136,10 @@
 !!! warning "ScheduleRecoveryPrecheckNotSatisfied"
 
     ```
-    Scheduled recovery for ${blueprintName} doesn't meet all precheck criteria. Skipping recovery plan test. Reason: ${failedPrecheckErr}
+    Scheduled recovery for ${blueprintName} doesn't meet all precheck criteria. Skipping Recovery Plan test. Reason: ${failedPrecheckErr}
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Warning**</td><td>**TaskSuccess**</td><td>**No**</td></tr></table>
 
@@ -150,7 +150,7 @@
     Starting to run prechecks for scheduled recovery for ${blueprintName}
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**TaskSuccess**</td><td>**No**</td></tr></table>
 
@@ -161,7 +161,7 @@
     Successfully completed prechecks for scheduled recovery for ${blueprintName}
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**TaskSuccess**</td><td>**No**</td></tr></table>
 
@@ -172,7 +172,7 @@
     Failed to generate report for scheduled recovery for ${blueprintName}. Reason: ${reason}
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Critical**</td><td>**TaskFailure**</td><td>**No**</td></tr></table>
 
@@ -183,7 +183,7 @@
     Starting to generate report for scheduled recovery for ${blueprintName}
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**TaskSuccess**</td><td>**No**</td></tr></table>
 
@@ -194,7 +194,7 @@
     Successfully generated report for scheduled recovery for ${blueprintName}
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**TaskSuccess**</td><td>**No**</td></tr></table>
 
@@ -205,7 +205,7 @@
     Starting scheduled recovery for ${blueprintName}
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**TaskSuccess**</td><td>**No**</td></tr></table>
 
@@ -216,7 +216,7 @@
     Failed to schedule ${failoverType} job for ${blueprintName}. Reason: ${reason}
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Critical**</td><td>**TaskFailure**</td><td>**No**</td></tr></table>
 
@@ -227,7 +227,7 @@
     Starting to schedule ${failoverType} job for ${blueprintName}
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**TaskSuccess**</td><td>**No**</td></tr></table>
 
@@ -238,7 +238,7 @@
     Successfully completed ${failoverType} for ${blueprintName}
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**TaskSuccess**</td><td>**No**</td></tr></table>
 

@@ -7,7 +7,7 @@
     ${userEmail} successfully initiated request to assign retention SLA ${slaName} to objects ${objectNameList} on cluster ${clusterName}.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Success**</td><td>**Yes**</td></tr></table>
 
@@ -18,7 +18,7 @@
     ${userEmail} successfully initiated request to assign retention SLA ${slaName} to snapshots ${snapshotIdList} on cluster ${clusterName}.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Success**</td><td>**Yes**</td></tr></table>
 
@@ -29,7 +29,7 @@
     ${userEmail} successfully assigned retention SLA ${slaName}. to objects ${objectNameList} on RSC
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Success**</td><td>**Yes**</td></tr></table>
 
@@ -40,7 +40,7 @@
     ${userEmail} successfully initiated request to assign retention SLA Domain ${slaName} to objects ${objectNameList} on RSC
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Success**</td><td>**Yes**</td></tr></table>
 
@@ -51,7 +51,7 @@
     ${userEmail} successfully assigned retention SLA ${slaName}. to snapshots ${snapshotIdList} on RSC
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Success**</td><td>**Yes**</td></tr></table>
 
@@ -62,7 +62,7 @@
     ${userEmail} successfully initiated request to assign SLA Domain ${slaName} to ${objectList} on cluster ${clusterName}
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Success**</td><td>**Yes**</td></tr></table>
 
@@ -73,7 +73,7 @@
     ${userEmail} successfully assigned SLA ${slaName} to ${objectList} on RSC
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Success**</td><td>**Yes**</td></tr></table>
 
@@ -84,7 +84,7 @@
     ${userEmail} successfully initiated request to assign SLA Domain  ${slaName} to ${objectList} on RSC
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Success**</td><td>**Yes**</td></tr></table>
 

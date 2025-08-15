@@ -7,7 +7,7 @@ from collections import defaultdict
 CSV_FILE = "../rsc-events.csv"
 
 # The output directory inside your mkdocs site
-OUTPUT_FOLDER = "../docs/Rubrik-Security-Cloud-API/Events-and-Observability/Event-Reference"
+OUTPUT_FOLDER = "../docs/Rubrik-Security-Cloud-API/Observability/Event-Reference"
 
 # Ensure the output folder exists
 os.makedirs(OUTPUT_FOLDER, exist_ok=True)

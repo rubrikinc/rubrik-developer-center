@@ -7,7 +7,7 @@
     Failed to update KMS details for Archival Location {locationName}’s on  cluster {clusterName}.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Critical**</td><td>**Failure**</td><td>**No**</td></tr></table>
 
@@ -18,7 +18,7 @@
     Successfully updated KMS details for Archival Location {locationName}’s on cluster  {clusterName}.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Success**</td><td>**No**</td></tr></table>
 
@@ -29,7 +29,7 @@
     ${type} location '${name}' has been successfully ${operation}.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Success**</td><td>**No**</td></tr></table>
 
@@ -40,7 +40,7 @@
     Failed to remove the entry corresponding to the archival location, ${name}, from the UI. The location could not be synced either due to invalid parameters or unrecoverable/ fatal error. Contact Rubrik Support to remove this entry from the UI. Verify the parameters used during creation of the archival location and retry the operation with a new name.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Failure**</td><td>**No**</td></tr></table>
 
@@ -51,7 +51,7 @@
     Started removing the entry for archival location ${name} from the UI that could not be synced either due to invalid parameters or unrecoverable/fatal error. Error description: ${description}
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Queued**</td><td>**No**</td></tr></table>
 
@@ -62,9 +62,9 @@
     Archival location ${name} entry was removed from the UI since it could not be synced either due to invalid parameters or unrecoverable/fatal error. Verify and try again. Error description: ${description}
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
-    <tr><td>**Info**</td><td>**Success**</td><td>**No**</td></tr></table>
+    <tr><td>**Info**</td><td>**Failure**</td><td>**No**</td></tr></table>
 
 
 !!! info "ArchivalLocationUpgradeFailed"
@@ -73,7 +73,7 @@
     Unable to upgrade the CDM managed archival location '${name}' on Rubrik cluster '${cluster}'.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Failure**</td><td>**No**</td></tr></table>
 
@@ -84,7 +84,7 @@
     Started the upgrade of CDM managed archival location '${name}' on Rubrik cluster '${cluster}'.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Queued**</td><td>**No**</td></tr></table>
 
@@ -95,7 +95,7 @@
     Successfully completed the upgrade of CDM managed archival location '${name}' on Rubrik cluster '${cluster}'.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Success**</td><td>**No**</td></tr></table>
 
@@ -106,7 +106,7 @@
     Failed to refresh reader archival location ${name}
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Critical**</td><td>**Failure**</td><td>**No**</td></tr></table>
 
@@ -121,7 +121,7 @@
     Unable to clean up federated access configuration on Rubrik cluster, '${cluster}.'
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Warning**</td><td>**Failure**</td><td>**No**</td></tr></table>
 
@@ -132,7 +132,7 @@
     Successfully cleaned up federated access configuration on Rubrik cluster, '${cluster}.'
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Success**</td><td>**No**</td></tr></table>
 
@@ -143,7 +143,7 @@
     Unable to configure federated access on Rubrik cluster, '${cluster}.'
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Warning**</td><td>**Failure**</td><td>**No**</td></tr></table>
 
@@ -154,7 +154,7 @@
     Successfully configured federated access on Rubrik cluster, '${cluster}.'
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Success**</td><td>**No**</td></tr></table>
 
@@ -165,7 +165,7 @@
     Failed to toggle federated login configuration on Rubrik cluster, '${cluster}.'
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Warning**</td><td>**Failure**</td><td>**No**</td></tr></table>
 
@@ -180,7 +180,7 @@
     Queued the rekey of ${rekeyJobType} on archival location ${locationName}.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Queued**</td><td>**No**</td></tr></table>
 
@@ -195,7 +195,7 @@
     RSC failed to send ${failureCount} SSF messages to Okta ITP.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Warning**</td><td>**Failure**</td><td>**No**</td></tr></table>
 
@@ -206,7 +206,7 @@
     RSC succeeded to send SSF messages to Okta ITP.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Success**</td><td>**No**</td></tr></table>
 
@@ -221,7 +221,7 @@
     Failed to ${operation} Blueprint ${data} on cluster: ${reason}
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Critical**</td><td>**Failure**</td><td>**No**</td></tr></table>
 
@@ -232,7 +232,7 @@
     Started to ${operation} Blueprint ${data} on cluster
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**TaskSuccess**</td><td>**No**</td></tr></table>
 
@@ -243,7 +243,7 @@
     Succeeded to ${operation} Blueprint ${data} on cluster
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Success**</td><td>**No**</td></tr></table>
 
@@ -254,7 +254,7 @@
     Job to sync Archival Location was successfully initiated on cluster
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Success**</td><td>**No**</td></tr></table>
 
@@ -265,7 +265,7 @@
     Failed to sync Archival Location to the cluster: Reason: ${reason}
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Critical**</td><td>**Failure**</td><td>**No**</td></tr></table>
 
@@ -276,7 +276,7 @@
     Started to sync Archival Location to the cluster.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**TaskSuccess**</td><td>**No**</td></tr></table>
 
@@ -287,9 +287,42 @@
     Succeeded to sync Archival Location to the cluster
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Success**</td><td>**No**</td></tr></table>
+
+
+!!! failure "CloudAccountUpdateFailed"
+
+    ```
+    Failed to update cloud account '${cloudAccountName}' credentials for  ${failedCount} location(s): ${failedLocations}.
+    ```
+
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
+
+    <tr><td>**Critical**</td><td>**Failure**</td><td>**No**</td></tr></table>
+
+
+!!! info "CloudAccountUpdateSucceeded"
+
+    ```
+    Successfully updated cloud account '${cloudAccountName}' credentials for  ${successfulCount} location(s): ${successfulLocations}.
+    ```
+
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
+
+    <tr><td>**Info**</td><td>**Success**</td><td>**No**</td></tr></table>
+
+
+!!! info "CloudAccountUpdateSyncStarted"
+
+    ```
+    Started to sync cloud account '${cloudAccountName}' credentials  for ${totalLocations} location(s): ${locations}.
+    ```
+
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
+
+    <tr><td>**Info**</td><td>**TaskSuccess**</td><td>**No**</td></tr></table>
 
 
 !!! failure "GlobalSLAAssignFailed"
@@ -298,7 +331,7 @@
     Failed to assign RSC SLA Domain '${slaName}' to objects '${objectNames}' on the Rubrik cluster '${clusterName}'. Reason: '${reason}'
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Critical**</td><td>**Failure**</td><td>**No**</td></tr></table>
 
@@ -309,7 +342,7 @@
     Started to assign RSC SLA Domain '${slaName}' to objects '${objectNames}' on cluster '${clusterName}'.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**TaskSuccess**</td><td>**No**</td></tr></table>
 
@@ -320,7 +353,7 @@
     RSC SLA Domain '${slaName}' is successfully assigned  to objects '${objectNames}' on the Rubrik cluster '${clusterName}'.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Success**</td><td>**No**</td></tr></table>
 
@@ -331,7 +364,7 @@
     Sent request to Rubrik cluster '${clusterName}' to assign  RSC SLA Domain `${slaName}` to objects '${objectNames}'. Update may take a few minutes to complete.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Success**</td><td>**No**</td></tr></table>
 
@@ -342,7 +375,7 @@
     Failed to add replication target: ${targetName} on the cluster. Reason: ${reason}
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Critical**</td><td>**Failure**</td><td>**No**</td></tr></table>
 
@@ -353,7 +386,7 @@
     Started to add replication target: ${targetName} on the cluster
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**TaskSuccess**</td><td>**No**</td></tr></table>
 
@@ -364,7 +397,7 @@
     Succeeded to add replication target: ${targetName} on cluster
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Success**</td><td>**No**</td></tr></table>
 
@@ -375,7 +408,7 @@
     Failed to assign retention SLA: ${slaName} to objects: ${objects} on cluster. Reason: ${reason}
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Critical**</td><td>**Failure**</td><td>**No**</td></tr></table>
 
@@ -386,7 +419,7 @@
     Started to assign retention SLA: ${slaName} to objects: ${objects} on cluster
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**TaskSuccess**</td><td>**No**</td></tr></table>
 
@@ -397,7 +430,7 @@
     Succeeded to assign retention SLA: ${slaName} to objects: ${objects} on cluster
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Success**</td><td>**No**</td></tr></table>
 
@@ -408,7 +441,7 @@
     Failed to assign SLA: ${slaName} to snapshot IDs: ${snapshotIDs} on cluster. Reason: ${reason}
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Critical**</td><td>**Failure**</td><td>**No**</td></tr></table>
 
@@ -419,7 +452,7 @@
     Started to assign retention SLA: ${slaName} to snapshot IDs: ${snapshotIDs} on cluster
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**TaskSuccess**</td><td>**No**</td></tr></table>
 
@@ -430,7 +463,7 @@
     Succeeded to assign SLA: ${slaName} to snapshot IDs: ${snapshotIDs} on cluster
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Success**</td><td>**No**</td></tr></table>
 
@@ -441,7 +474,7 @@
     Rubrik cluster '${clusterName}' could not assign SLA Domain '${slaName}' to snapshot '${snapshotNames}'. Reason: '${reason}'
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Critical**</td><td>**Failure**</td><td>**No**</td></tr></table>
 
@@ -452,7 +485,7 @@
     Started to assign retention SLA '${slaName}' to snapshot '${snapshotNames}' on cluster
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**TaskSuccess**</td><td>**No**</td></tr></table>
 
@@ -463,7 +496,7 @@
     Rubrik cluster '${clusterName}' successfully assigned SLA Domain '${slaName}' to snapshot '${snapshotNames}'
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Success**</td><td>**No**</td></tr></table>
 
@@ -474,7 +507,7 @@
     Successfully passed request to Rubrik cluster '${clusterName}' to assign SLA Domain '${slaName}' to snapshot '${snapshotNames}'. Update may take a few minutes to complete
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Success**</td><td>**No**</td></tr></table>
 
@@ -485,7 +518,7 @@
     Unable to ${operation} RSC service accounts: ${serviceAccountID} on the Rubrik cluster.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Critical**</td><td>**Failure**</td><td>**No**</td></tr></table>
 
@@ -496,7 +529,7 @@
     Failed to assign SLA: ${slaName} to objects: ${objects} on cluster. Reason: ${reason}
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Critical**</td><td>**Failure**</td><td>**No**</td></tr></table>
 
@@ -507,7 +540,7 @@
     Started to assign SLA: ${slaName} to objects: ${objects} on cluster
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**TaskSuccess**</td><td>**No**</td></tr></table>
 
@@ -518,7 +551,7 @@
     Succeeded to assign SLA: ${slaName} to objects: ${objects} on cluster
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Success**</td><td>**No**</td></tr></table>
 
@@ -529,7 +562,7 @@
     Failed to ${operation} SLA Domain ${name} to the cluster. Reason: ${reason}
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Critical**</td><td>**Failure**</td><td>**No**</td></tr></table>
 
@@ -540,7 +573,7 @@
     Failed to ${operation} SLA Domain ${name} to the cluster. Reason: ${reason}. For more information about failures due to invalid retention, refer to ${articleLink}
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Critical**</td><td>**Failure**</td><td>**No**</td></tr></table>
 
@@ -551,7 +584,7 @@
     Started to ${operation} SLA Domain ${name} on the cluster
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**TaskSuccess**</td><td>**No**</td></tr></table>
 
@@ -562,7 +595,7 @@
     Successfully synced SLA Domain ${slaDomainName} to the cluster ${clusterName}
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Success**</td><td>**No**</td></tr></table>
 
@@ -573,7 +606,7 @@
     Failed to delete snapshots: ${snapshotIds} of object: ${objectName} on cluster. Reason: ${reason}
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Critical**</td><td>**Failure**</td><td>**No**</td></tr></table>
 
@@ -584,7 +617,7 @@
     Started to delete snapshots: ${snapshotIds} of object: ${objectName} on cluster
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**TaskSuccess**</td><td>**No**</td></tr></table>
 
@@ -595,7 +628,7 @@
     Succeeded to delete snapshots: ${snapshotIds} of object: ${objectName} on cluster
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Success**</td><td>**No**</td></tr></table>
 
@@ -606,7 +639,7 @@
     Failed to delete all unprotected snapshots of objects: ${objectNameList} on cluster. Reason: ${reason}
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Critical**</td><td>**Failure**</td><td>**No**</td></tr></table>
 
@@ -617,7 +650,7 @@
     Started to delete all unprotected snapshots of objects: ${objectNameList} on cluster
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**TaskSuccess**</td><td>**No**</td></tr></table>
 
@@ -628,7 +661,7 @@
     Succeeded to delete all unprotected snapshots of objects: ${objectNameList} on cluster
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Success**</td><td>**No**</td></tr></table>
 
@@ -643,7 +676,7 @@
     Unable to update the master encryption key for reader Rubrik Cloud Vault location ${objectName} on cluster ${clusterName}. Unable to update reader Rubrik Cloud Vault location ${objectName}’s encryption key to the new ${keyType} key.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Critical**</td><td>**Failure**</td><td>**No**</td></tr></table>
 
@@ -654,7 +687,18 @@
     Unable to update the master encryption key for reader Rubrik Cloud Vault location ${objectName}’s on cluster ${clusterName}. Unable to update reader Rubrik Cloud Vault location ${objectName}’s encryption key to ${keyName} from ${akvName}.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
+
+    <tr><td>**Critical**</td><td>**Failure**</td><td>**No**</td></tr></table>
+
+
+!!! failure "RcvReaderArchivalLocationMasterKeyUpdateFailedKms"
+
+    ```
+    Failed to update master encryption key for reader Rubrik Cloud Vault  location '${locationName}' on cluster '${clusterName}'. Unable to switch  to encryption key '${keyName}' managed by '${kmsName}' (Provider: ${kmsType}).
+    ```
+
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Critical**</td><td>**Failure**</td><td>**No**</td></tr></table>
 
@@ -665,7 +709,7 @@
     Successfully updated the master encryption key for reader Rubrik Cloud Vault location ${objectName} on cluster ${clusterName}. Reader Rubrik Cloud Vault location ${objectName}’s encryption key updated to the new ${keyType} key.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Success**</td><td>**No**</td></tr></table>
 
@@ -676,7 +720,18 @@
     Successfully updated the master encryption key for reader Rubrik Cloud Vault location ${objectName} on cluster ${clusterName}. Reader Rubrik Cloud Vault location ${objectName}’s encryption key updated to ${keyName} from ${akvName}.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
+
+    <tr><td>**Info**</td><td>**Success**</td><td>**No**</td></tr></table>
+
+
+!!! info "RcvReaderArchivalLocationMasterKeyUpdateSucceededKms"
+
+    ```
+    Successfully updated master encryption key for reader Rubrik Cloud Vault  location '${locationName}' on cluster '${clusterName}'. The location now  uses encryption key '${keyName}' managed by '${kmsName}' (Provider: ${kmsType}).
+    ```
+
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Success**</td><td>**No**</td></tr></table>
 
@@ -687,7 +742,7 @@
     Unable to allocate required resource '${resourceType}' for the RCV location '${name}'.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Critical**</td><td>**Failure**</td><td>**No**</td></tr></table>
 
@@ -698,7 +753,7 @@
     The required ${resourceType} resource has been allocated for the RCV location '${name}'.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Success**</td><td>**No**</td></tr></table>
 
@@ -713,9 +768,178 @@
     Failed to create a replication pair between the source cluster  '${sourceCluster}' and the target cluster '${targetCluster}'. Create a  replication pair for them. Error: ${errMsg}.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Critical**</td><td>**Failure**</td><td>**No**</td></tr></table>
+
+
+
+##role_sync
+----
+
+!!! warning "RoleSyncCreationFailed"
+
+    ```
+    Role ${role} creation failed in cluster. Reason: ${reason}
+    ```
+
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
+
+    <tr><td>**Warning**</td><td>**Failure**</td><td>**No**</td></tr></table>
+
+
+!!! info "RoleSyncCreationScheduled"
+
+    ```
+    Scheduled a job to sync role ${role} to cluster.
+    ```
+
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
+
+    <tr><td>**Info**</td><td>**Queued**</td><td>**No**</td></tr></table>
+
+
+!!! info "RoleSyncCreationSucceeded"
+
+    ```
+    Role ${role} successfully created in cluster.
+    ```
+
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
+
+    <tr><td>**Info**</td><td>**Success**</td><td>**No**</td></tr></table>
+
+
+!!! warning "RoleSyncDeletionFailed"
+
+    ```
+    Role ${role} deletion failed in cluster. Reason: ${reason}
+    ```
+
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
+
+    <tr><td>**Warning**</td><td>**Failure**</td><td>**No**</td></tr></table>
+
+
+!!! info "RoleSyncDeletionScheduled"
+
+    ```
+    Scheduled a job to delete role ${role} from cluster.
+    ```
+
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
+
+    <tr><td>**Info**</td><td>**Queued**</td><td>**No**</td></tr></table>
+
+
+!!! info "RoleSyncDeletionSucceeded"
+
+    ```
+    Role ${role} successfully deleted from cluster.
+    ```
+
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
+
+    <tr><td>**Info**</td><td>**Success**</td><td>**No**</td></tr></table>
+
+
+!!! warning "RoleSyncGrantAuthzFailed"
+
+    ```
+    Failed to grant authorizations to role ${role} in cluster.  Reason: ${reason}
+    ```
+
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
+
+    <tr><td>**Warning**</td><td>**Failure**</td><td>**No**</td></tr></table>
+
+
+!!! info "RoleSyncGrantAuthzScheduled"
+
+    ```
+    Scheduled a job to grant authorizations to ${role} in cluster.
+    ```
+
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
+
+    <tr><td>**Info**</td><td>**Queued**</td><td>**No**</td></tr></table>
+
+
+!!! info "RoleSyncGrantAuthzSucceeded"
+
+    ```
+    Successfully granted authorizations to role ${role} in cluster.
+    ```
+
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
+
+    <tr><td>**Info**</td><td>**Success**</td><td>**No**</td></tr></table>
+
+
+!!! warning "RoleSyncRevokeAuthzFailed"
+
+    ```
+    Failed to revoke authorizations from role ${role} in cluster.  Reason: ${reason}
+    ```
+
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
+
+    <tr><td>**Warning**</td><td>**Failure**</td><td>**No**</td></tr></table>
+
+
+!!! info "RoleSyncRevokeAuthzScheduled"
+
+    ```
+    Scheduled a job to revoke authorizations from ${role} in cluster.
+    ```
+
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
+
+    <tr><td>**Info**</td><td>**Queued**</td><td>**No**</td></tr></table>
+
+
+!!! info "RoleSyncRevokeAuthzSucceeded"
+
+    ```
+    Successfully revoked all authorizations from role ${role} in cluster.
+    ```
+
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
+
+    <tr><td>**Info**</td><td>**Success**</td><td>**No**</td></tr></table>
+
+
+!!! warning "RoleSyncUpdateFailed"
+
+    ```
+    Failed to update the name and description of role ${role} in the  cluster. Reason: ${reason}
+    ```
+
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
+
+    <tr><td>**Warning**</td><td>**Failure**</td><td>**No**</td></tr></table>
+
+
+!!! info "RoleSyncUpdateScheduled"
+
+    ```
+    Scheduled a job to update role name and description of ${role} from the cluster.
+    ```
+
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
+
+    <tr><td>**Info**</td><td>**Queued**</td><td>**No**</td></tr></table>
+
+
+!!! info "RoleSyncUpdateSucceeded"
+
+    ```
+    The name and description of role ${role} successfully updated  in the cluster.
+    ```
+
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
+
+    <tr><td>**Info**</td><td>**Success**</td><td>**No**</td></tr></table>
 
 
 
@@ -728,7 +952,7 @@
     Canceled ${maintenanceType} metadata refresh for org ${orgName}.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Canceled**</td><td>**No**</td></tr></table>
 
@@ -739,7 +963,7 @@
     Completed ${maintenanceType} metadata refresh for org ${orgName}. ${statsMsg}.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**Success**</td><td>**No**</td></tr></table>
 
@@ -750,7 +974,7 @@
     Completed ${maintenanceType} metadata refresh for org ${orgName} with warnings. ${statsMsg}. ${warningMsg}
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Warning**</td><td>**Success**</td><td>**No**</td></tr></table>
 
@@ -761,7 +985,7 @@
     Failed ${maintenanceType} metadata refresh of ${siteName}: ${reason}.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Warning**</td><td>**Failure**</td><td>**No**</td></tr></table>
 
@@ -772,7 +996,7 @@
     Started ${maintenanceType} metadata refresh for subscription ${orgName}.
     ```
 
-    <table><tr><td>Severity</td><td>Status</td><td>Audit Event</td></tr>
+    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
 
     <tr><td>**Info**</td><td>**TaskSuccess**</td><td>**No**</td></tr></table>
 
