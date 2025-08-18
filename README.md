@@ -25,12 +25,9 @@ source venv/bin/activate
 mkdocs serve
 ```
 
-The Rubrik Developer Center site will be running locally at `localhost:8000`
+Rubrik Developer Center site will be running locally at `localhost:8000`
 
-To set up llms.txt, install [mkdocs-llmstxt](https://pawamoy.github.io/mkdocs-llmstxt/).
-```
-pip install mkdocs-llmstxt
-```
-... and find visit `localhost:8000/llms.txt`
+
+The [mkdocs-llmstxt](https://pawamoy.github.io/mkdocs-llmstxt/) plugin is used to generate the llms.txt file that can be used to supply context to an LLM. This collects the markdown content into a single file that follows the [llmstxt.org](https://llmstxt.org) emerging standard. The file can be found at `localhost:8000/llms.txt` while developing locally locally or at https://developer.rubrik.com/llms.txt.
 
 ---
