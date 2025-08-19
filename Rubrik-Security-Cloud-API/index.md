@@ -1,0 +1,48 @@
+## Getting Started
+
+The Rubrik Security Cloud (RSC) API is GraphQL.
+
+### GraphQL Features
+
+1. Single Endpoint - The RSC API endpoint will always be /api/graphql.
+1. Single HTTP method - Everything is an HTTP POST.
+1. Introspection - The API documentation is built in to the API itself, providing integrated development help and schema checking.
+1. Customized Response - Queries are customized to only return the fields that is needed.
+
+## GraphQL Basics
+
+GraphQL is a "query language" comparable to SQL. In SQL, one might say, "Select name and ID from the VM table." GraphQL is similar in this idea. A query is much like a SQL table. Properties (called fields in GraphQL) are like columns in that table. Unlike SQL, GraphQL fields can be complex types with their own fields, allowing functionality of a SQL join.
+
+### Example
+
+Click on the arrow annotation (1) in the code to see an explanation of that part of the code.
+
+1. This is an annotation!
+
+> Retrieve all MSSQL databases, and return the name, ID, and the name and ID of the Rubrik Cluster that protect's this MSSQL database.
+
+```graphql
+query mssqlDatabasesExample { #(1)!
+  mssqlDatabases { # (2)!
+    nodes  { #(3)!
+      name #(4)! 
+      id
+      cluster { #(5)!
+        name #(6)!
+        id
+      }
+    }
+  }
+}
+```
+
+1. `mssqlDatabasesExample` is an operation name, You can change this to whatever you want.
+1. `mssqlDatabases` is the name of the query in the API.
+1. `nodes` is a paginated array of objects, in this case, mssqlDatabases.
+1. `name` is a property, known as a `field` in GraphQL. It has a specific type, in this case `name` is a `String`.
+1. `cluster` is also a field in the API, but unlike `name` that is of type `String`, `cluster` is a `Cluster` type, and it has its own fields.
+1. This is the cluster `name` field. It's a field on the `Cluster` type in the API.
+
+To learn more about the query syntax, check out [GraphQL Language Syntax](https://graphql.org/learn/queries).
+
+Next: [API Playground](API-playground/)
