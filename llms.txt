@@ -172,6 +172,14 @@ The result will be only SLA Domains starting with `bronze`
 }
 ```
 
+## Troubleshooting
+
+For GraphQL errors, see the [troubleshooting](../troubleshooting/) page.
+
+### 401 JWT is missing.
+
+This error indicates that the user session has expired. Refreshing the page will take you to the RSC login page to reauthenticate.
+
 Next: [Authentication](../authentication/)
 
 ## Service Accounts (OAuth2 Client Credentials Grant)
@@ -5375,7 +5383,17 @@ $query.invoke()
 ```
 
 ```bash
+#!/bin/bash
 
+# RSC_TOKEN="YOUR_RSC_ACCESS_TOKEN"
+query="query { rcvAccountEntitlement { backupEntitlement { capacity bundle tier redundancy createdAt revenueType } archiveEntitlement { capacity bundle tier redundancy createdAt revenueType } entitlements { entitlement { capacity bundle tier redundancy createdAt revenueType } usedCapacity } } }"
+
+# Execute the GraphQL query with curl
+curl -X POST \
+  -H "Content-Type: application/json" \
+  -H "Authorization: Bearer $RSC_TOKEN" \
+  -d "{\"query\": \"$query\"}" \
+  https://example.my.rubrik.com/api/graphql
 ```
 
 ## Retrieving Rubrik Clusters
@@ -5443,7 +5461,17 @@ Get-RscCluster
 ```
 
 ```bash
+#!/bin/bash
 
+# RSC_TOKEN="YOUR_RSC_ACCESS_TOKEN"
+query="query { clusterConnection( filter : { } ) { nodes { name id type version defaultAddress ipmiInfo { isAvailable usesIkvm usesHttps } systemStatus status subStatus pauseStatus encryptionEnabled eosDate eosStatus registrationTime registeredMode estimatedRunway geoLocation { address latitude longitude } metric { totalCapacity availableCapacity usedCapacity snapshotCapacity liveMountCapacity miscellaneousCapacity pendingSnapshotCapacity cdpCapacity lastUpdateTime averageDailyGrowth } clusterNodeConnection { nodes { hostname id brikId ipAddress status } } } } }"
+
+# Execute the GraphQL query with curl
+curl -X POST \
+  -H "Content-Type: application/json" \
+  -H "Authorization: Bearer $RSC_TOKEN" \
+  -d "{\"query\": \"$query\"}" \
+  https://example.my.rubrik.com/api/graphql
 ```
 
 ## What are SLA Domains?
@@ -6912,6 +6940,44 @@ $query.invoke()
 
 # RSC_TOKEN="YOUR_RSC_ACCESS_TOKEN"
 query="mutation { assignRetentionSLAToSnapshots( snapshotFids: [\\\"b77f85ae-62d1-435b-9abf-2a1d97c6802f\\\"] globalSlaAssignType: protectWithSlaId globalSlaOptionalFid: \\\"5b6e44ca-9a0d-42e8-a6ba-952159c69bab\\\" ) { success } }"
+
+# Execute the GraphQL query with curl
+curl -X POST \
+  -H "Content-Type: application/json" \
+  -H "Authorization: Bearer $RSC_TOKEN" \
+  -d "{\"query\": \"$query\"}" \
+  https://example.my.rubrik.com/api/graphql
+```
+
+## Placing a Snapshot on Legal Hold
+
+```graphql
+mutation {
+  createLegalHold(input: {
+    snapshotIds: ["123e4567-e89b-12d3-a456-426614174000"]
+    holdConfig: { shouldHoldInPlace: true }
+    userNote: "Example"
+  }) {
+    snapshotIds
+  }
+}
+```
+
+```powershell
+$query = New-RscMutation -gqlMutation createLegalHold -AddField SnapshotIds
+$query.var.input = Get-RscType -name CreateLegalHoldInput
+$query.var.input.SnapshotIds = @("123e4567-e89b-12d3-a456-426614174000")
+$query.var.input.HoldConfig = Get-RscType -Name HoldConfig
+$query.var.input.HoldConfig.ShouldHoldInPlace = $true
+$query.var.input.UserNote = "Example"
+$query.invoke()
+```
+
+```bash
+#!/bin/bash
+
+# RSC_TOKEN="YOUR_RSC_ACCESS_TOKEN"
+query="mutation { createLegalHold(input: { snapshotIds: [\\\"123e4567-e89b-12d3-a456-426614174000\\\"] holdConfig: { shouldHoldInPlace: true } userNote: \\\"Example\\\" }) { snapshotIds } }"
 
 # Execute the GraphQL query with curl
 curl -X POST \
@@ -43073,7 +43139,17 @@ $query.invoke().nodes
 ```
 
 ```bash
+#!/bin/bash
 
+# RSC_TOKEN="YOUR_RSC_ACCESS_TOKEN"
+query="query { o365Orgs { nodes { name id tenantId exocomputeId } } }"
+
+# Execute the GraphQL query with curl
+curl -X POST \
+  -H "Content-Type: application/json" \
+  -H "Authorization: Bearer $RSC_TOKEN" \
+  -d "{\"query\": \"$query\"}" \
+  https://example.my.rubrik.com/api/graphql
 ```
 
 ## Retrieving M365 Mailboxes
@@ -43100,7 +43176,17 @@ $query.invoke().nodes
 ```
 
 ```bash
+#!/bin/bash
 
+# RSC_TOKEN="YOUR_RSC_ACCESS_TOKEN"
+query="query { o365Mailboxes(o365OrgId: \\\"0876804E-1CB1-4F28-BCB3-B4390C15FA1F\\\") { nodes { name id effectiveSlaDomain { name id } } } }"
+
+# Execute the GraphQL query with curl
+curl -X POST \
+  -H "Content-Type: application/json" \
+  -H "Authorization: Bearer $RSC_TOKEN" \
+  -d "{\"query\": \"$query\"}" \
+  https://example.my.rubrik.com/api/graphql
 ```
 
 ## Retrieving M365 OneDrives
@@ -43127,7 +43213,17 @@ $query.invoke().nodes
 ```
 
 ```bash
+#!/bin/bash
 
+# RSC_TOKEN="YOUR_RSC_ACCESS_TOKEN"
+query="query { o365Onedrives(o365OrgId: \\\"0876804E-1CB1-4F28-BCB3-B4390C15FA1F\\\") { nodes { name id effectiveSlaDomain { name id } } } }"
+
+# Execute the GraphQL query with curl
+curl -X POST \
+  -H "Content-Type: application/json" \
+  -H "Authorization: Bearer $RSC_TOKEN" \
+  -d "{\"query\": \"$query\"}" \
+  https://example.my.rubrik.com/api/graphql
 ```
 
 ## Retrieving M365 Teams
@@ -43154,7 +43250,17 @@ $query.invoke().nodes
 ```
 
 ```bash
+#!/bin/bash
 
+# RSC_TOKEN="YOUR_RSC_ACCESS_TOKEN"
+query="query { o365Teams(o365OrgId: \\\"0876804E-1CB1-4F28-BCB3-B4390C15FA1F\\\") { nodes { name id effectiveSlaDomain { name id } } } }"
+
+# Execute the GraphQL query with curl
+curl -X POST \
+  -H "Content-Type: application/json" \
+  -H "Authorization: Bearer $RSC_TOKEN" \
+  -d "{\"query\": \"$query\"}" \
+  https://example.my.rubrik.com/api/graphql
 ```
 
 ## Retrieving M365 Sites
@@ -43181,7 +43287,17 @@ $query.invoke().nodes
 ```
 
 ```bash
+#!/bin/bash
 
+# RSC_TOKEN="YOUR_RSC_ACCESS_TOKEN"
+query="query { o365Sites(o365OrgId: \\\"0876804E-1CB1-4F28-BCB3-B4390C15FA1F\\\") { nodes { name id effectiveSlaDomain { name id } } } }"
+
+# Execute the GraphQL query with curl
+curl -X POST \
+  -H "Content-Type: application/json" \
+  -H "Authorization: Bearer $RSC_TOKEN" \
+  -d "{\"query\": \"$query\"}" \
+  https://example.my.rubrik.com/api/graphql
 ```
 
 ## Retrieving Global Certificates
@@ -43263,6 +43379,189 @@ $query.Invoke().nodes
 
 # RSC_TOKEN="YOUR_RSC_ACCESS_TOKEN"
 query="query { globalCertificates { nodes { status certificate certificateFid certificateId description expiringAt hasKey isCaSigned issuedBy issuedOn issuedTo name serialNumber sha1Fingerprint sha256Fingerprint cdmUsages { type clusterName clusterUuid } clusters { cdmCertUuid } org { id name } usages { type } } pageInfo { endCursor hasNextPage hasPreviousPage startCursor } } }"
+
+# Execute the GraphQL query with curl
+curl -X POST \
+  -H "Content-Type: application/json" \
+  -H "Authorization: Bearer $RSC_TOKEN" \
+  -d "{\"query\": \"$query\"}" \
+  https://example.my.rubrik.com/api/graphql
+```
+
+Rubrik Threat Analytics provides services to discover and identify malware, anomalies and other potential Indicators of Compromise (IOC). Identifying threats within protected data speeds up cyber recovery by identifying restore points that are free from common malware file signatures and content that is specified via YARA rule.
+
+## Anomaly Detection
+
+Anomaly Detection automatically scans snapshots for suspicious data changes based on previous snapshots. Anomaly Detection is passive and does not require any user intervention to run.
+
+## Threat Monitoring
+
+Threat Monitoring automatically scans each snapshot for file hashes that have a match in a threat feed. When enabled, Threat Monitoring is passive and does not require any user intervention to run.
+
+## Threat Hunting
+
+Threat Hunting provides advanced investigation of snaphots for specific file hashes, file patterns, and YARA rules provided by the user. Threat Hunts are defined and initiated by the user.
+
+## Retrieving Threat Hunts
+
+```graphql
+query {
+  threatHunts(
+    matchesFoundFilter: [NO_MATCHES,MATCHES_FOUND,UNSCANNED]
+    #quarantinedMatchesFilter: [QUARANTINED_MATCHES,NO_QUARANTINED_MATCHES]
+    #clusterUuidFilter: "00000000-0000-0000-0000-000000000000"
+    #statusFilter: [PENDING,CANCELED,ABORTED,FAILED,IN_PROGRESS,SUCCEEDED,PARTIALLY_SUCCEEDED]
+    #beginTime: "1900-01-01T00:00:00.000Z"
+    #endTime: "1900-01-01T00:00:00.000Z"
+  ) {
+    nodes {
+      name
+      huntId
+      createdBy {
+        username
+        email
+      }
+      huntDetails {
+        startTime
+        endTime
+        config {
+          name
+          notes
+          objects {
+            name
+            id
+            objectType
+          }
+          requestedMatchDetails {
+            requestedHashTypes
+          }
+          clusterUuid
+          fileScanCriteria {
+            fileSizeLimits {
+              maximumSizeInBytes
+              minimumSizeInBytes
+            }
+            fileTimeLimits {
+              earliestCreationTime
+              latestCreationTime
+              earliestModificationTime
+              latestModificationTime
+            }
+            pathFilter {
+              includes
+              excludes
+              exceptions
+            }
+          }
+          snapshotScanLimit {
+            maxSnapshotsPerObject
+            snapshotsToScanPerObject {
+              id
+              snapshots
+            }
+          }
+          indicatorsOfCompromise {
+            iocKind
+            iocValue
+            threatFamily
+          }
+          maxMatchesPerSnapshot
+          shouldTrustFilesystemTimeInfo
+        }
+      }
+    }
+  }
+}
+```
+
+```powershell
+$query = New-RscQuery -GqlQuery threatHunts
+$query.Var.beginTime = "2025-07-04T00:00:00.000Z"
+$query.Var.endTime = "1900-01-01T00:00:00.000Z"
+$query.Var.matchesFoundFilter = @(
+    [RubrikSecurityCloud.Types.ThreatHuntMatchesFound]::MATCHES_FOUND
+    [RubrikSecurityCloud.Types.ThreatHuntMatchesFound]::NO_MATCHES
+    [RubrikSecurityCloud.Types.ThreatHuntMatchesFound]::UNSCANNED
+)
+$query.Var.quarantinedMatchesFilter = @(
+    [RubrikSecurityCloud.Types.ThreatHuntQuarantinedMatchType]::QUARANTINED_MATCHES
+    [RubrikSecurityCloud.Types.ThreatHuntQuarantinedMatchType]::NO_QUARANTINED_MATCHES
+)
+$query.Var.statusFilter = @(
+    [RubrikSecurityCloud.Types.ThreatHuntStatus]::ABORTED
+    [RubrikSecurityCloud.Types.ThreatHuntStatus]::CANCELED
+    [RubrikSecurityCloud.Types.ThreatHuntStatus]::FAILED
+    [RubrikSecurityCloud.Types.ThreatHuntStatus]::IN_PROGRESS
+    [RubrikSecurityCloud.Types.ThreatHuntStatus]::PARTIALLY_SUCCEEDED
+    [RubrikSecurityCloud.Types.ThreatHuntStatus]::SUCCEEDED
+    [RubrikSecurityCloud.Types.ThreatHuntStatus]::PENDING
+)
+$query.field.nodes = @(
+    Get-RscType -Name ThreatHunt -InitialProperties `
+    name,`
+    huntId,`
+    startTime,`
+    status,`
+    HuntType,`
+    createdBy.username, createdBy.email,`
+    huntDetails.startTime,`
+    huntDetails.endTime,`
+    huntDetails.config.name,`
+    huntDetails.config.notes,`
+    huntDetails.config.requestedMatchDetails.requestedHashTypes,`
+    huntDetails.config.clusterUuid,`
+    huntDetails.config.maxMatchesPerSnapshot,`
+    huntDetails.config.shouldTrustFilesystemTimeInfo
+)
+
+$query.invoke().nodes
+```
+
+```bash
+#!/bin/bash
+
+# RSC_TOKEN="YOUR_RSC_ACCESS_TOKEN"
+query="query { threatHunts( matchesFoundFilter: [NO_MATCHES,MATCHES_FOUND,UNSCANNED] ) { nodes { name huntId createdBy { username email } huntDetails { startTime endTime config { name notes objects { name id objectType } requestedMatchDetails { requestedHashTypes } clusterUuid fileScanCriteria { fileSizeLimits { maximumSizeInBytes minimumSizeInBytes } fileTimeLimits { earliestCreationTime latestCreationTime earliestModificationTime latestModificationTime } pathFilter { includes excludes exceptions } } snapshotScanLimit { maxSnapshotsPerObject snapshotsToScanPerObject { id snapshots } } indicatorsOfCompromise { iocKind iocValue threatFamily } maxMatchesPerSnapshot shouldTrustFilesystemTimeInfo } } } } }"
+
+# Execute the GraphQL query with curl
+curl -X POST \
+  -H "Content-Type: application/json" \
+  -H "Authorization: Bearer $RSC_TOKEN" \
+  -d "{\"query\": \"$query\"}" \
+  https://example.my.rubrik.com/api/graphql
+```
+
+## Retrieving Threat Monitoring Results
+
+```graphql
+query {
+  threatMonitoringMatchedObjects(
+    beginTime: "2025-07-01"
+    # objectTypeFilter: "VmwareVirtualMachine"
+    ) {
+    nodes {
+      objectName
+      objectFid
+      objectType
+      filesMatched
+      matchType
+    }
+  }
+}
+```
+
+```powershell
+$query = New-RscQuery -GqlQuery threatMonitoringMatchedObjects -AddField Nodes.MatchType, Nodes.FilesMatched, Nodes.LastDetection, Nodes.ObjectName
+$query.field.Count = $null
+$query.var.beginTime = "2025-08-15T00:00:00.000Z"
+$query.invoke().nodes
+```
+
+```bash
+#!/bin/bash
+
+# RSC_TOKEN="YOUR_RSC_ACCESS_TOKEN"
+query="query { threatMonitoringMatchedObjects( beginTime: \\\"2025-07-01\\\" ) { nodes { objectName objectFid objectType filesMatched matchType } } }"
 
 # Execute the GraphQL query with curl
 curl -X POST \

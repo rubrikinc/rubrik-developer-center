@@ -122,6 +122,44 @@ curl -X POST \
   https://example.my.rubrik.com/api/graphql
 ```
 
+## Placing a Snapshot on Legal Hold
+
+```graphql
+mutation {
+  createLegalHold(input: {
+    snapshotIds: ["123e4567-e89b-12d3-a456-426614174000"]
+    holdConfig: { shouldHoldInPlace: true }
+    userNote: "Example"
+  }) {
+    snapshotIds
+  }
+}
+```
+
+```powershell
+$query = New-RscMutation -gqlMutation createLegalHold -AddField SnapshotIds
+$query.var.input = Get-RscType -name CreateLegalHoldInput
+$query.var.input.SnapshotIds = @("123e4567-e89b-12d3-a456-426614174000")
+$query.var.input.HoldConfig = Get-RscType -Name HoldConfig
+$query.var.input.HoldConfig.ShouldHoldInPlace = $true
+$query.var.input.UserNote = "Example"
+$query.invoke()
+```
+
+```bash
+#!/bin/bash
+
+# RSC_TOKEN="YOUR_RSC_ACCESS_TOKEN"
+query="mutation { createLegalHold(input: { snapshotIds: [\\\"123e4567-e89b-12d3-a456-426614174000\\\"] holdConfig: { shouldHoldInPlace: true } userNote: \\\"Example\\\" }) { snapshotIds } }"
+
+# Execute the GraphQL query with curl
+curl -X POST \
+  -H "Content-Type: application/json" \
+  -H "Authorization: Bearer $RSC_TOKEN" \
+  -d "{\"query\": \"$query\"}" \
+  https://example.my.rubrik.com/api/graphql
+```
+
 ## Deleting Unmanaged Snapshots
 
 Unmanaged snapshots have no policy and will be retained forever until deleted. A snapshot is an unmanaged or "forever" if `isExpirationDateCalculated` is *true* and `expirationTime` is *null*.
