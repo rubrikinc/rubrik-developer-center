@@ -158,6 +158,40 @@
                   }
                 }
               ]
+            },
+            {
+              "name": "Threat-Monitoring",
+              "item": [
+                {
+                  "name": "matchedObjects",
+                  "request": {
+                    "method": "POST",
+                    "header": [
+                      {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                      }
+                    ],
+                    "body": {
+                      "mode": "graphql",
+                      "graphql": {
+                        "query": "query {\n  threatMonitoringMatchedObjects(\n    beginTime: \"2025-07-01\"\n    # objectTypeFilter: \"VmwareVirtualMachine\"\n    ) {\n    nodes {\n      objectName\n      objectFid\n      objectType\n      filesMatched\n      matchType\n    }\n  }\n}"
+                      }
+                    },
+                    "url": {
+                      "raw": "{{rsc_instance}}/api/graphql",
+                      "protocol": "https",
+                      "host": [
+                        "{{rsc_instance}}"
+                      ],
+                      "path": [
+                        "api",
+                        "graphql"
+                      ]
+                    }
+                  }
+                }
+              ]
             }
           ]
         },
@@ -632,6 +666,35 @@
             {
               "name": "Snapshots",
               "item": [
+                {
+                  "name": "legalHold",
+                  "request": {
+                    "method": "POST",
+                    "header": [
+                      {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                      }
+                    ],
+                    "body": {
+                      "mode": "graphql",
+                      "graphql": {
+                        "query": "mutation {\n  createLegalHold(input: {\n\tsnapshotIds: [\"123e4567-e89b-12d3-a456-426614174000\"]\n    holdConfig: { shouldHoldInPlace: true }\n    userNote: \"Example\"\n  }) {\n    snapshotIds\n  }\n}"
+                      }
+                    },
+                    "url": {
+                      "raw": "{{rsc_instance}}/api/graphql",
+                      "protocol": "https",
+                      "host": [
+                        "{{rsc_instance}}"
+                      ],
+                      "path": [
+                        "api",
+                        "graphql"
+                      ]
+                    }
+                  }
+                },
                 {
                   "name": "snapshots",
                   "request": {

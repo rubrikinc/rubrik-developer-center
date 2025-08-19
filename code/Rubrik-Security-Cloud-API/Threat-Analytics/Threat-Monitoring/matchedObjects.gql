@@ -1,0 +1,14 @@
+query {
+  threatMonitoringMatchedObjects(
+    beginTime: "2025-07-01"
+    # objectTypeFilter: "VmwareVirtualMachine"
+    ) {
+    nodes {
+      objectName
+      objectFid
+      objectType
+      filesMatched
+      matchType
+    }
+  }
+}
