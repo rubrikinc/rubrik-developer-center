@@ -31,6 +31,21 @@ When retrieving snapshots for a workload, use that workload's RSC `id`. If using
     --8<-- "code/Rubrik-Security-Cloud-API/Data-Protection/Snapshots/assign.sh"
     ```
 
+## Placing a Snapshot on Legal Hold
+
+=== "GraphQL"
+    ```graphql
+    --8<-- "code/Rubrik-Security-Cloud-API/Data-Protection/Snapshots/legalHold.gql"
+    ```
+=== "PowerShell SDK"
+    ```powershell
+    --8<-- "code/Rubrik-Security-Cloud-API/Data-Protection/Snapshots/legalHold.ps1"
+    ```
+=== "Shell"
+    ```bash
+    --8<-- "code/Rubrik-Security-Cloud-API/Data-Protection/Snapshots/legalHold.sh"
+    ```
+
 ## Deleting Unmanaged Snapshots
 Unmanaged snapshots have no policy and will be retained forever until deleted. A snapshot is an unmanaged or "forever" if `isExpirationDateCalculated` is _true_ and `expirationTime` is _null_.
 

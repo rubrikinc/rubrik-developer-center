@@ -1,0 +1,67 @@
+query {
+  threatHunts(
+    matchesFoundFilter: [NO_MATCHES,MATCHES_FOUND,UNSCANNED]
+    #quarantinedMatchesFilter: [QUARANTINED_MATCHES,NO_QUARANTINED_MATCHES]
+    #clusterUuidFilter: "00000000-0000-0000-0000-000000000000"
+    #statusFilter: [PENDING,CANCELED,ABORTED,FAILED,IN_PROGRESS,SUCCEEDED,PARTIALLY_SUCCEEDED]
+    #beginTime: "1900-01-01T00:00:00.000Z"
+    #endTime: "1900-01-01T00:00:00.000Z"
+  ) {
+    nodes {
+      name
+      huntId
+      createdBy {
+        username
+        email
+      }
+      huntDetails {
+        startTime
+        endTime
+        config {
+          name
+          notes
+          objects {
+            name
+            id
+            objectType
+          }
+          requestedMatchDetails {
+            requestedHashTypes
+          }
+          clusterUuid
+          fileScanCriteria {
+            fileSizeLimits {
+              maximumSizeInBytes
+              minimumSizeInBytes
+            }
+            fileTimeLimits {
+              earliestCreationTime
+              latestCreationTime
+              earliestModificationTime
+              latestModificationTime
+            }
+            pathFilter {
+              includes
+              excludes
+              exceptions
+            }
+          }
+          snapshotScanLimit {
+            maxSnapshotsPerObject
+            snapshotsToScanPerObject {
+              id
+              snapshots
+            }
+          }
+          indicatorsOfCompromise {
+            iocKind
+            iocValue
+            threatFamily
+          }
+          maxMatchesPerSnapshot
+          shouldTrustFilesystemTimeInfo
+        }
+      }
+    }
+  }
+}
