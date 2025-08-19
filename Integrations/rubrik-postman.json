@@ -94,6 +94,263 @@
           }
         },
         {
+          "name": "Threat-Analytics",
+          "item": [
+            {
+              "name": "Threat-Hunt",
+              "item": [
+                {
+                  "name": "startThreatHunt",
+                  "request": {
+                    "method": "POST",
+                    "header": [
+                      {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                      }
+                    ],
+                    "body": {
+                      "mode": "graphql",
+                      "graphql": {
+                        "query": ""
+                      }
+                    },
+                    "url": {
+                      "raw": "{{rsc_instance}}/api/graphql",
+                      "protocol": "https",
+                      "host": [
+                        "{{rsc_instance}}"
+                      ],
+                      "path": [
+                        "api",
+                        "graphql"
+                      ]
+                    }
+                  }
+                },
+                {
+                  "name": "threatHunts",
+                  "request": {
+                    "method": "POST",
+                    "header": [
+                      {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                      }
+                    ],
+                    "body": {
+                      "mode": "graphql",
+                      "graphql": {
+                        "query": "query {\n  threatHunts(\n    matchesFoundFilter: [NO_MATCHES,MATCHES_FOUND,UNSCANNED]\n    #quarantinedMatchesFilter: [QUARANTINED_MATCHES,NO_QUARANTINED_MATCHES]\n    #clusterUuidFilter: \"00000000-0000-0000-0000-000000000000\"\n    #statusFilter: [PENDING,CANCELED,ABORTED,FAILED,IN_PROGRESS,SUCCEEDED,PARTIALLY_SUCCEEDED]\n    #beginTime: \"1900-01-01T00:00:00.000Z\"\n    #endTime: \"1900-01-01T00:00:00.000Z\"\n  ) {\n    nodes {\n      name\n      huntId\n      createdBy {\n        username\n        email\n      }\n      huntDetails {\n        startTime\n        endTime\n        config {\n          name\n          notes\n          objects {\n            name\n            id\n            objectType\n          }\n          requestedMatchDetails {\n            requestedHashTypes\n          }\n          clusterUuid\n          fileScanCriteria {\n            fileSizeLimits {\n              maximumSizeInBytes\n              minimumSizeInBytes\n            }\n            fileTimeLimits {\n              earliestCreationTime\n              latestCreationTime\n              earliestModificationTime\n              latestModificationTime\n            }\n            pathFilter {\n              includes\n              excludes\n              exceptions\n            }\n          }\n          snapshotScanLimit {\n            maxSnapshotsPerObject\n            snapshotsToScanPerObject {\n              id\n              snapshots\n            }\n          }\n          indicatorsOfCompromise {\n            iocKind\n            iocValue\n            threatFamily\n          }\n          maxMatchesPerSnapshot\n          shouldTrustFilesystemTimeInfo\n        }\n      }\n    }\n  }\n}"
+                      }
+                    },
+                    "url": {
+                      "raw": "{{rsc_instance}}/api/graphql",
+                      "protocol": "https",
+                      "host": [
+                        "{{rsc_instance}}"
+                      ],
+                      "path": [
+                        "api",
+                        "graphql"
+                      ]
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "name": "Threat-Monitoring",
+              "item": [
+                {
+                  "name": "matchedObjects",
+                  "request": {
+                    "method": "POST",
+                    "header": [
+                      {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                      }
+                    ],
+                    "body": {
+                      "mode": "graphql",
+                      "graphql": {
+                        "query": "query {\n  threatMonitoringMatchedObjects(\n    beginTime: \"2025-07-01\"\n    # objectTypeFilter: \"VmwareVirtualMachine\"\n    ) {\n    nodes {\n      objectName\n      objectFid\n      objectType\n      filesMatched\n      matchType\n    }\n  }\n}"
+                      }
+                    },
+                    "url": {
+                      "raw": "{{rsc_instance}}/api/graphql",
+                      "protocol": "https",
+                      "host": [
+                        "{{rsc_instance}}"
+                      ],
+                      "path": [
+                        "api",
+                        "graphql"
+                      ]
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "SaaS-App-Protection",
+          "item": [
+            {
+              "name": "microsoft-m365",
+              "item": [
+                {
+                  "name": "sites",
+                  "request": {
+                    "method": "POST",
+                    "header": [
+                      {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                      }
+                    ],
+                    "body": {
+                      "mode": "graphql",
+                      "graphql": {
+                        "query": "query {\n\to365Sites(o365OrgId: \"0876804E-1CB1-4F28-BCB3-B4390C15FA1F\") {\n    nodes {\n      name\n      id\n      effectiveSlaDomain {\n        name\n        id\n      }\n    }\n  }\n}"
+                      }
+                    },
+                    "url": {
+                      "raw": "{{rsc_instance}}/api/graphql",
+                      "protocol": "https",
+                      "host": [
+                        "{{rsc_instance}}"
+                      ],
+                      "path": [
+                        "api",
+                        "graphql"
+                      ]
+                    }
+                  }
+                },
+                {
+                  "name": "onedrives",
+                  "request": {
+                    "method": "POST",
+                    "header": [
+                      {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                      }
+                    ],
+                    "body": {
+                      "mode": "graphql",
+                      "graphql": {
+                        "query": "query {\n\to365Onedrives(o365OrgId: \"0876804E-1CB1-4F28-BCB3-B4390C15FA1F\") {\n    nodes {\n      name\n      id\n      effectiveSlaDomain {\n        name\n        id\n      }\n    }\n  }\n}"
+                      }
+                    },
+                    "url": {
+                      "raw": "{{rsc_instance}}/api/graphql",
+                      "protocol": "https",
+                      "host": [
+                        "{{rsc_instance}}"
+                      ],
+                      "path": [
+                        "api",
+                        "graphql"
+                      ]
+                    }
+                  }
+                },
+                {
+                  "name": "mailboxes",
+                  "request": {
+                    "method": "POST",
+                    "header": [
+                      {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                      }
+                    ],
+                    "body": {
+                      "mode": "graphql",
+                      "graphql": {
+                        "query": "query {\n\to365Mailboxes(o365OrgId: \"0876804E-1CB1-4F28-BCB3-B4390C15FA1F\") {\n    nodes {\n      name\n      id\n      effectiveSlaDomain {\n        name\n        id\n      }\n    }\n  }\n}"
+                      }
+                    },
+                    "url": {
+                      "raw": "{{rsc_instance}}/api/graphql",
+                      "protocol": "https",
+                      "host": [
+                        "{{rsc_instance}}"
+                      ],
+                      "path": [
+                        "api",
+                        "graphql"
+                      ]
+                    }
+                  }
+                },
+                {
+                  "name": "teams",
+                  "request": {
+                    "method": "POST",
+                    "header": [
+                      {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                      }
+                    ],
+                    "body": {
+                      "mode": "graphql",
+                      "graphql": {
+                        "query": "query {\n\to365Teams(o365OrgId: \"0876804E-1CB1-4F28-BCB3-B4390C15FA1F\") {\n    nodes {\n      name\n      id\n      effectiveSlaDomain {\n        name\n        id\n      }\n    }\n  }\n}"
+                      }
+                    },
+                    "url": {
+                      "raw": "{{rsc_instance}}/api/graphql",
+                      "protocol": "https",
+                      "host": [
+                        "{{rsc_instance}}"
+                      ],
+                      "path": [
+                        "api",
+                        "graphql"
+                      ]
+                    }
+                  }
+                },
+                {
+                  "name": "orgs",
+                  "request": {
+                    "method": "POST",
+                    "header": [
+                      {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                      }
+                    ],
+                    "body": {
+                      "mode": "graphql",
+                      "graphql": {
+                        "query": "query {\n  o365Orgs {\n    nodes {\n      name\n      id\n      tenantId\n      exocomputeId\n    }\n  }\n}"
+                      }
+                    },
+                    "url": {
+                      "raw": "{{rsc_instance}}/api/graphql",
+                      "protocol": "https",
+                      "host": [
+                        "{{rsc_instance}}"
+                      ],
+                      "path": [
+                        "api",
+                        "graphql"
+                      ]
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
           "name": "Observability",
           "item": [
             {
@@ -409,6 +666,35 @@
             {
               "name": "Snapshots",
               "item": [
+                {
+                  "name": "legalHold",
+                  "request": {
+                    "method": "POST",
+                    "header": [
+                      {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                      }
+                    ],
+                    "body": {
+                      "mode": "graphql",
+                      "graphql": {
+                        "query": "mutation {\n  createLegalHold(input: {\n\tsnapshotIds: [\"123e4567-e89b-12d3-a456-426614174000\"]\n    holdConfig: { shouldHoldInPlace: true }\n    userNote: \"Example\"\n  }) {\n    snapshotIds\n  }\n}"
+                      }
+                    },
+                    "url": {
+                      "raw": "{{rsc_instance}}/api/graphql",
+                      "protocol": "https",
+                      "host": [
+                        "{{rsc_instance}}"
+                      ],
+                      "path": [
+                        "api",
+                        "graphql"
+                      ]
+                    }
+                  }
+                },
                 {
                   "name": "snapshots",
                   "request": {
@@ -2947,6 +3233,79 @@
                           "mode": "graphql",
                           "graphql": {
                             "query": "query {\n  awsNativeRdsInstances(rdsInstanceFilters: {\n    #nameSubstringFilter: {nameSubstring: \"example\"}\n    #regionFilter: {regions: [US_EAST_1]}\n    #tagFilter: {tagFilterParams: {tagKey: \"foo\" tagValue: \"bar\" filterType: TAG_KEY_VALUE}}\n    #vpcFilter: {vpcIds: [\"093e5470-22b4-483c-8910-fff0cbb982b1\"]}\n  }) {\n    nodes {\n      name\n      id\n      dbInstanceName\n      dbiResourceId\n      dbInstanceClass\n      dbEngine\n      readReplicaSourceName\n      rdsType\n      vpcName\n      vpcId\n      isMultiAz\n      allocatedStorageInGibi\n      region\n      primaryAvailabilityZone\n      tags {\n        key\n        value\n      }\n      awsAccountRubrikId\n      awsAccount {\n        name\n        id\n      }\n      effectiveSlaDomain {\n        name\n        id\n      }\n    }\n  }\n}"
+                          }
+                        },
+                        "url": {
+                          "raw": "{{rsc_instance}}/api/graphql",
+                          "protocol": "https",
+                          "host": [
+                            "{{rsc_instance}}"
+                          ],
+                          "path": [
+                            "api",
+                            "graphql"
+                          ]
+                        }
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Infrastructure",
+              "item": [
+                {
+                  "name": "Rubrik-Cloud-Vault",
+                  "item": [
+                    {
+                      "name": "entitlements",
+                      "request": {
+                        "method": "POST",
+                        "header": [
+                          {
+                            "key": "Content-Type",
+                            "value": "application/json"
+                          }
+                        ],
+                        "body": {
+                          "mode": "graphql",
+                          "graphql": {
+                            "query": "query {\n  rcvAccountEntitlement {\n    backupEntitlement {\n      capacity\n      bundle\n      tier\n      redundancy\n      createdAt\n      revenueType\n    }\n    archiveEntitlement {\n      capacity\n      bundle\n      tier\n      redundancy\n      createdAt\n      revenueType\n    }\n    entitlements {\n      entitlement {\n        capacity\n        bundle\n        tier\n        redundancy\n        createdAt\n        revenueType\n      }\n      usedCapacity\n    }\n  }\n}"
+                          }
+                        },
+                        "url": {
+                          "raw": "{{rsc_instance}}/api/graphql",
+                          "protocol": "https",
+                          "host": [
+                            "{{rsc_instance}}"
+                          ],
+                          "path": [
+                            "api",
+                            "graphql"
+                          ]
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "name": "clusters",
+                  "item": [
+                    {
+                      "name": "clusters",
+                      "request": {
+                        "method": "POST",
+                        "header": [
+                          {
+                            "key": "Content-Type",
+                            "value": "application/json"
+                          }
+                        ],
+                        "body": {
+                          "mode": "graphql",
+                          "graphql": {
+                            "query": "query {\n  clusterConnection( filter : {\n      # name: \"example\"\n    }\n  ) {\n    nodes {\n      name\n      id\n      type\n      version\n      defaultAddress\n      ipmiInfo {\n        isAvailable\n        usesIkvm\n        usesHttps\n      }\n      systemStatus\n      status\n      subStatus\n      pauseStatus\n      encryptionEnabled\n      eosDate\n      eosStatus\n      registrationTime\n      registeredMode\n      estimatedRunway\n      geoLocation {\n        address\n        latitude\n        longitude\n      }\n      metric {\n        totalCapacity\n        availableCapacity\n        usedCapacity\n        snapshotCapacity\n        liveMountCapacity\n        miscellaneousCapacity\n        pendingSnapshotCapacity\n        cdpCapacity\n        lastUpdateTime\n        averageDailyGrowth\n      }\n      clusterNodeConnection {\n        nodes {\n          hostname\n          id\n          brikId\n          ipAddress\n          status\n        }\n      }\n    }\n  }\n}"
                           }
                         },
                         "url": {
