@@ -1,0 +1,45 @@
+{
+    "data": {
+        "type": "event",
+        "attributes": {
+            "aggregation_key": "{{.ActivitySeriesID}}",
+            "tags": "[Rubrik]",
+            "category": "alert",
+            "message": "{{.Message}}",
+            "timestamp": "{{.Time}}",
+            "title": "{{.ActivityType}} - {{.Status}}",
+            "attributes": {
+                "custom": {
+                    "severity": "{{.Severity}}",
+                    "id": "{{.UUID}}",
+                    "object": {
+                        "name": "{{.ObjectName}}",
+                        "id": "{{.ObjectID}}",
+                        "type": "{{.ObjectType}}",
+                        "location": "{{.Location}}",
+                        "cluster": {
+                            "name": "{{.ClusterName}}",
+                            "id": "{{.ClusterUUID}}"
+                        }
+                    },
+                    "error": {
+                        "id": "{{.Error.ID}}",
+                        "code": "{{.Error.ErrorCode}}",
+                        "remedy": "{{.Error.Remedy}}",
+                        "reason": "{{.Error.Reason}}",
+                        "message": "{{.Error.Message}}"
+                    }
+                },
+                "links": [
+                    {
+                        "category": "dashboard",
+                        "title": "Rubrik Security Cloud",
+                        "url": "{{.URL}}"
+                    }
+                ],
+                "priority": "5",
+                "status": "error"
+            }
+        }
+    }
+}
