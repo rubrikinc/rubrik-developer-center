@@ -1,0 +1,23 @@
+query {
+  workloadAnomalies(beginTime: "2025-08-15T00:00:00.000Z") {
+    nodes {
+      workloadName
+      workloadFid
+      anomalousSnapshotDate
+      anomalousSnapshotFid
+      previousSnapshotFid
+      objectType
+      anomalyType
+      suspiciousFileCount
+      anomalyInfo {
+        strainAnalysisInfo {
+          strainId
+          totalAffectedFiles
+        }
+      }
+      encryption
+      severity
+      resolutionStatus
+    }
+  }
+}
