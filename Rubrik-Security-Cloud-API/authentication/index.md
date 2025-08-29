@@ -62,12 +62,15 @@ While there is no restriction on the number of active sessions a service account
 Run the following command to revoke the session established for the service account. Successful revocation will result in an HTTP status code of `204`.
 
 ```bash
-curl -X DELETE --location "https://$RSC_FQDN/api/graphql" \
---header "Content-Type: application/json" \
+curl -X DELETE --location "https://$RSC_FQDN/api/session" \
 --header "Authorization: Bearer $RSC_TOKEN"
 ```
 
 ## User Accounts (OAuth2 Authorization Code with PKCE)
+
+Note
+
+This OAuth2 flow is only supported for Annapurna retrievers.
 
 OAuth2 Authorization Code with Proof Key for Code Exchange (PKCE) is a more secure OAuth2 flow, primarily used by mobile and native applications but can also be applied in web applications. It ensures that an authentication code, specifically a hashed code verifier (called a code challenge), is presented to an authorization server along with the authorization code.
 
