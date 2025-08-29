@@ -14,6 +14,7 @@
 }
 [data-md-color-scheme="default"] {
     --md-primary-fg-color: #15292b;
+    --md-typeset-a-color: #0056b3;
     .md-header {
         background: url('../assets/bgr_right.png') right no-repeat #15292b;
     }

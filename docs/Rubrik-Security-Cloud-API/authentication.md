@@ -51,6 +51,10 @@ Run the following command to revoke the session established for the service acco
     ```
 
 ## User Accounts (OAuth2 Authorization Code with PKCE)
+
+!!! note
+    This OAuth2 flow is only supported for Annapurna retrievers.
+
 OAuth2 Authorization Code with Proof Key for Code Exchange (PKCE) is a more secure OAuth2 flow, primarily used by mobile and native applications but can also be applied in web applications. It ensures that an authentication code, specifically a hashed code verifier (called a code challenge), is presented to an authorization server along with the authorization code. 
 
 ### Security
