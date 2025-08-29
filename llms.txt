@@ -246,12 +246,15 @@ While there is no restriction on the number of active sessions a service account
 Run the following command to revoke the session established for the service account. Successful revocation will result in an HTTP status code of `204`.
 
 ```bash
-curl -X DELETE --location "https://$RSC_FQDN/api/graphql" \
---header "Content-Type: application/json" \
+curl -X DELETE --location "https://$RSC_FQDN/api/session" \
 --header "Authorization: Bearer $RSC_TOKEN"
 ```
 
 ## User Accounts (OAuth2 Authorization Code with PKCE)
+
+Note
+
+This OAuth2 flow is only supported for Annapurna retrievers.
 
 OAuth2 Authorization Code with Proof Key for Code Exchange (PKCE) is a more secure OAuth2 flow, primarily used by mobile and native applications but can also be applied in web applications. It ensures that an authentication code, specifically a hashed code verifier (called a code challenge), is presented to an authorization server along with the authorization code.
 
@@ -7022,11 +7025,13 @@ curl -X POST \
   https://example.my.rubrik.com/api/graphql
 ```
 
-Observability increases operational effiency and reduces risk through faster mitigation of issues.
-
-## Events
+## [Events](Events/)
 
 Events are state changes within Rubrik. Events can be as simple as a successful backup, or as serious as a ransomware anomaly detected within data protected by Rubrik. Events can be obtained through an API query, or streamed to an external system via webhooks.
+
+## [Metrics](Metrics/)
+
+Various metrics can be obtained on the Rubrik platform for capacity management, chargeback, compliance status, and more.
 
 ### Retrieving Events via API Query
 
@@ -7078,7 +7083,7 @@ query {
 ```
 
 ```powershell
-
+Get-RscEventSeries
 ```
 
 ```bash
@@ -7101,7 +7106,7 @@ Webhooks provide a mechanism to push events via HTTP to an external system. Webh
 
 The following is an example webhook of a Rubrik event in the default format. For more detailed information on Rubrik webhooks, see the [RSC User Guide](https://docs.rubrik.com/en-us/saas/saas/common/webhooks.html)
 
-webhook payload example
+default webhook payload example
 
 ```json
 {
@@ -43117,6 +43122,72 @@ Severity | Status | Audit Event | |
 | -------- | --------------- | ------ |
 | **Info** | **TaskFailure** | **No** |
 
+## Workload Metrics
+
+Common workload metrics can include storage usage, compliance status, last backup time, protection status, and more.
+
+```graphql
+query {
+  snappableConnection(filter: {
+    #complianceStatus: IN_COMPLIANCE
+    #slaTimeRange: LAST_24_HOURS
+    #objectType: VmwareVirtualMachine 
+    #objectState: ACTIVE
+    #slaDomain: {id: "0000"}
+    #protectionStatus: DoNotProtect
+  }) {
+    nodes {
+      name
+      fid
+      location
+      objectType
+      objectState
+      protectionStatus
+      lastSnapshot
+      latestReplicationSnapshot
+      complianceStatus
+      replicationComplianceStatus
+      archivalComplianceStatus
+      usedBytes
+      localStorage
+      localEffectiveStorage
+      replicaStorage
+      archiveStorage
+      logicalBytes
+      physicalBytes
+      provisionedBytes
+      totalSnapshots
+      localSnapshots
+      localOnDemandSnapshots
+      localSlaSnapshots
+      replicaSnapshots
+      archiveSnapshots
+      dataReduction
+      slaDomain {
+        name
+        id
+      }
+      cluster {
+        name
+        id
+      }
+      workloadOrg {
+        fullName
+        id
+      }
+    }
+  }
+}
+```
+
+```powershell
+Get-RscWorkload
+```
+
+```bash
+
+```
+
 
 ## Retrieving M365 Organizations
 
@@ -43390,7 +43461,7 @@ curl -X POST \
 
 Rubrik Threat Analytics provides services to discover and identify malware, anomalies and other potential Indicators of Compromise (IOC). Identifying threats within protected data speeds up cyber recovery by identifying restore points that are free from common malware file signatures and content that is specified via YARA rule.
 
-## Anomaly Detection
+## [Anomaly Detection](Anomaly-Detection/)
 
 Anomaly Detection automatically scans snapshots for suspicious data changes based on previous snapshots. Anomaly Detection is passive and does not require any user intervention to run.
 
@@ -43401,6 +43472,20 @@ Threat Hunting provides advanced investigation of snaphots for specific file has
 ## [Threat Monitoring](Threat-Monitoring/)
 
 Threat Monitoring automatically scans each snapshot for file hashes that have a match in a threat feed. When enabled, Threat Monitoring is passive and does not require any user intervention to run.
+
+## Retrieving Workload Anomalies
+
+```graphql
+
+```
+
+```powershell
+
+```
+
+```bash
+
+```
 
 ## Retrieving Threat Hunts
 

@@ -1,6 +1,6 @@
 Rubrik Threat Analytics provides services to discover and identify malware, anomalies and other potential Indicators of Compromise (IOC). Identifying threats within protected data speeds up cyber recovery by identifying restore points that are free from common malware file signatures and content that is specified via YARA rule.
 
-## Anomaly Detection
+## [Anomaly Detection](Anomaly-Detection/)
 
 Anomaly Detection automatically scans snapshots for suspicious data changes based on previous snapshots. Anomaly Detection is passive and does not require any user intervention to run.
 
