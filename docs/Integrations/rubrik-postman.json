@@ -97,6 +97,40 @@
           "name": "Threat-Analytics",
           "item": [
             {
+              "name": "Anomaly-Detection",
+              "item": [
+                {
+                  "name": "workloadAnomalies",
+                  "request": {
+                    "method": "POST",
+                    "header": [
+                      {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                      }
+                    ],
+                    "body": {
+                      "mode": "graphql",
+                      "graphql": {
+                        "query": "query {\n  workloadAnomalies(beginTime: \"2025-08-15T00:00:00.000Z\") {\n    nodes {\n      workloadName\n      workloadFid\n      anomalousSnapshotDate\n      anomalousSnapshotFid\n      previousSnapshotFid\n      objectType\n      anomalyType\n      suspiciousFileCount\n      anomalyInfo {\n        strainAnalysisInfo {\n          strainId\n          totalAffectedFiles\n        }\n      }\n      encryption\n      severity\n      resolutionStatus\n    }\n  }\n}"
+                      }
+                    },
+                    "url": {
+                      "raw": "{{rsc_instance}}/api/graphql",
+                      "protocol": "https",
+                      "host": [
+                        "{{rsc_instance}}"
+                      ],
+                      "path": [
+                        "api",
+                        "graphql"
+                      ]
+                    }
+                  }
+                }
+              ]
+            },
+            {
               "name": "Threat-Hunt",
               "item": [
                 {
@@ -354,33 +388,72 @@
           "name": "Observability",
           "item": [
             {
-              "name": "activityseries",
-              "request": {
-                "method": "POST",
-                "header": [
-                  {
-                    "key": "Content-Type",
-                    "value": "application/json"
+              "name": "metrics",
+              "item": [
+                {
+                  "name": "workloads",
+                  "request": {
+                    "method": "POST",
+                    "header": [
+                      {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                      }
+                    ],
+                    "body": {
+                      "mode": "graphql",
+                      "graphql": {
+                        "query": "query {\n  snappableConnection(filter: {\n    #complianceStatus: IN_COMPLIANCE\n    #slaTimeRange: LAST_24_HOURS\n    #objectType: VmwareVirtualMachine \n    #objectState: ACTIVE\n  \t#slaDomain: {id: \"0000\"}\n    #protectionStatus: DoNotProtect\n  }) {\n    nodes {\n      name\n      fid\n      location\n      objectType\n      objectState\n      protectionStatus\n      lastSnapshot\n      latestReplicationSnapshot\n      complianceStatus\n      replicationComplianceStatus\n      archivalComplianceStatus\n      usedBytes\n      localStorage\n      localEffectiveStorage\n      replicaStorage\n      archiveStorage\n      logicalBytes\n      physicalBytes\n      provisionedBytes\n      totalSnapshots\n      localSnapshots\n      localOnDemandSnapshots\n      localSlaSnapshots\n      replicaSnapshots\n      archiveSnapshots\n      dataReduction\n      slaDomain {\n        name\n        id\n      }\n      cluster {\n        name\n        id\n      }\n      workloadOrg {\n        fullName\n        id\n      }\n    }\n  }\n}"
+                      }
+                    },
+                    "url": {
+                      "raw": "{{rsc_instance}}/api/graphql",
+                      "protocol": "https",
+                      "host": [
+                        "{{rsc_instance}}"
+                      ],
+                      "path": [
+                        "api",
+                        "graphql"
+                      ]
+                    }
                   }
-                ],
-                "body": {
-                  "mode": "graphql",
-                  "graphql": {
-                    "query": "query {\n  activitySeriesConnection(filters: {\n    #lastUpdatedTimeGt: \"2025-02-22T00:00:00Z\"\n    #orgIds: [\"288970b2-16a0-4c65-a5fa-b0c86f5af337\"]\n    #lastActivityType: [BACKUP]\n    #objectType: [VMWARE_VM,LINUX_FILESET]\n    #severity: [SEVERITY_CRITICAL,SEVERITY_WARNING,SEVERITY_INFO]\n    #lastActivityStatus: [SUCCESS,PARTIAL_SUCCESS,FAILURE,CANCELED]\n  }) {\n    nodes {\n      fid\n      id\n      objectName\n      objectType\n      lastActivityType\n      lastActivityMessage\n      severity\n      lastUpdated\n      objectId\n      location\n      progress\n      failureReason\n      causeErrorCode\n      causeErrorMessage\n      causeErrorReason\n      causeErrorRemedy\n      activityConnection(first: 1) { # Gets the last activity in the activitySeries\n        nodes {\n          objectId\n          objectType\n          type\n          status\n          message\n          errorInfo\n          time\n        }\n      }\n    }\n    pageInfo {\n      hasNextPage\n      endCursor\n    }\n  }\n}"
-                  }
-                },
-                "url": {
-                  "raw": "{{rsc_instance}}/api/graphql",
-                  "protocol": "https",
-                  "host": [
-                    "{{rsc_instance}}"
-                  ],
-                  "path": [
-                    "api",
-                    "graphql"
-                  ]
                 }
-              }
+              ]
+            },
+            {
+              "name": "events",
+              "item": [
+                {
+                  "name": "activityseries",
+                  "request": {
+                    "method": "POST",
+                    "header": [
+                      {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                      }
+                    ],
+                    "body": {
+                      "mode": "graphql",
+                      "graphql": {
+                        "query": "query {\n  activitySeriesConnection(filters: {\n    #lastUpdatedTimeGt: \"2025-02-22T00:00:00Z\"\n    #orgIds: [\"288970b2-16a0-4c65-a5fa-b0c86f5af337\"]\n    #lastActivityType: [BACKUP]\n    #objectType: [VMWARE_VM,LINUX_FILESET]\n    #severity: [SEVERITY_CRITICAL,SEVERITY_WARNING,SEVERITY_INFO]\n    #lastActivityStatus: [SUCCESS,PARTIAL_SUCCESS,FAILURE,CANCELED]\n  }) {\n    nodes {\n      fid\n      id\n      objectName\n      objectType\n      lastActivityType\n      lastActivityMessage\n      severity\n      lastUpdated\n      objectId\n      location\n      progress\n      failureReason\n      causeErrorCode\n      causeErrorMessage\n      causeErrorReason\n      causeErrorRemedy\n      activityConnection(first: 1) { # Gets the last activity in the activitySeries\n        nodes {\n          objectId\n          objectType\n          type\n          status\n          message\n          errorInfo\n          time\n        }\n      }\n    }\n    pageInfo {\n      hasNextPage\n      endCursor\n    }\n  }\n}"
+                      }
+                    },
+                    "url": {
+                      "raw": "{{rsc_instance}}/api/graphql",
+                      "protocol": "https",
+                      "host": [
+                        "{{rsc_instance}}"
+                      ],
+                      "path": [
+                        "api",
+                        "graphql"
+                      ]
+                    }
+                  }
+                }
+              ]
             }
           ]
         },
