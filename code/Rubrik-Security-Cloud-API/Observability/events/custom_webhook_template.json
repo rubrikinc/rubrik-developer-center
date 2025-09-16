@@ -1,0 +1,21 @@
+{
+    "customTitle": "{{.ActivityType}} - {{.Status}}", //(1)!
+    "message": "{{.Message}}",
+    "severity": "1", //(2!
+    "timestamp": "{{.Time.UTC.Format \"1970-01-01T00:00:00Z\"}}", //(3)!
+    "class": "{{.Class}}",
+    "aggregationKey": "{{.ActivitySeriesID}}",
+    "id": "{{.UUID}}",
+    "type": "{{.ActivityType}}",
+    "object": { //(4)!
+        "name": "{{.ObjectName}}",
+        "id": "{{.ObjectID}}",
+        "type": "{{.ObjectType}}",
+        "location": "{{.Location}}",
+        "cluster": {
+            "name": "{{.ClusterName}}",
+            "id": "{{.ClusterUUID}}"
+        }
+    },
+    "ErrorMessage": "{{.Error.Message}}" //(5)!
+}

@@ -34,7 +34,7 @@
                     {
                         "category": "dashboard",
                         "title": "Rubrik Security Cloud",
-                        "url": "{{.URL}}"
+                        "url": "https://example.my.rubrik.com"
                     }
                 ],
                 "priority": "5",

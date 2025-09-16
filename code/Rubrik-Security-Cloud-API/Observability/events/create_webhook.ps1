@@ -1,0 +1,21 @@
+$query = New-RscMutation -GqlMutation createWebhookV2
+$query.var.input = Get-RscType -name CreateWebhookV2Input
+$query.var.input.payload = Get-RscType -name WebhookPayload
+$query.var.input.payload.name = "example"
+$query.var.input.payload.description = "example with custom template and auth"
+$query.var.input.payload.url = "https://example.com"
+$query.var.input.payload.subscriptionType = Get-RscType -name WebhookSubscriptionTypeV2Input
+$query.var.input.payload.subscriptionType.eventSubscription = Get-RscType -name WebhookEventSubscriptionInput
+$query.var.input.payload.subscriptionType.eventSubscription.objectTypes = @()
+$query.var.input.payload.subscriptionType.eventSubscription.isSubscribedToAllObjectTypes = $true
+$query.var.input.payload.subscriptionType.eventSubscription.eventTypes = @([RubrikSecurityCloud.Types.EventType]::BACKUP, [RubrikSecurityCloud.Types.EventType]::ANOMALY)
+$query.var.input.payload.subscriptionType.eventSubscription.severities = @([RubrikSecurityCloud.Types.EventSeverity]::SEVERITY_CRITICAL)
+$query.var.input.payload.subscriptionType.eventSubscription.templateInfo = Get-RscType -name WebhookTemplateInfoInput
+$query.var.input.payload.subscriptionType.eventSubscription.templateInfo.customTemplate = "{ `n `"custom_key`": `"{{.Message}}`" `n }"
+$query.var.input.payload.providerType = [RubrikSecurityCloud.Types.ProviderTypeV2]::CUSTOM
+$query.var.input.payload.authInfo = Get-RscType -name WebhookAuthInfoV2Input
+$query.var.input.payload.authInfo.authType = [RubrikSecurityCloud.Types.AuthenticationTypeV2]::CUSTOM_HEADER
+$query.var.input.payload.authInfo.customHeaders = Get-RscType -name CustomHeaderInput
+$query.var.input.payload.authInfo.customHeaders.headerKey = "Authorization"
+$query.var.input.payload.authInfo.customHeaders.headerValue = "Bearer Example123"
+$query.Invoke()

@@ -1,5 +1,5 @@
-##saasapps
-----
+## saasapps
+---
 
 !!! info "SaasAppsCascadingImpactAnalysisSeedingJobFailed"
 
@@ -7,10 +7,9 @@
     Unable to complete impact analysis of ${numKeys} keys ${selectedKeys}.  Contact Rubrik Support.
     ```
 
-    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
-
-    <tr><td>**Info**</td><td>**Failure**</td><td>**No**</td></tr></table>
-
+    | Severity | Status | Audit Event |
+    | --- | --- | --- |
+    | **Info** | **Failure** | **No** |
 
 !!! info "SaasAppsCascadingImpactAnalysisSeedingJobStarted"
 
@@ -18,10 +17,9 @@
     Started impact analysis of ${numKeys} keys ${selectedKeys}.
     ```
 
-    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
-
-    <tr><td>**Info**</td><td>**TaskSuccess**</td><td>**No**</td></tr></table>
-
+    | Severity | Status | Audit Event |
+    | --- | --- | --- |
+    | **Info** | **TaskSuccess** | **No** |
 
 !!! info "SaasAppsCascadingImpactAnalysisSeedingJobSucceeded"
 
@@ -29,10 +27,9 @@
     Successfully completed impact analysis of ${numKeys} keys ${selectedKeys}.  Check notifications to resume the seeding.
     ```
 
-    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
-
-    <tr><td>**Info**</td><td>**Success**</td><td>**No**</td></tr></table>
-
+    | Severity | Status | Audit Event |
+    | --- | --- | --- |
+    | **Info** | **Success** | **No** |
 
 !!! info "SaasAppsSeedingCanceled"
 
@@ -40,10 +37,9 @@
     Canceled seeding of ${displayName} ${snappableType}. ${attachmentURLMessage}
     ```
 
-    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
-
-    <tr><td>**Info**</td><td>**Canceled**</td><td>**No**</td></tr></table>
-
+    | Severity | Status | Audit Event |
+    | --- | --- | --- |
+    | **Info** | **Canceled** | **No** |
 
 !!! info "SaasAppsSeedingCompleted"
 
@@ -51,10 +47,9 @@
     Successfully completed the seeding of ${displayName} ${snappableType} with ${numKeys} keys, ${selectedKeys}. ${attachmentURLMessage}
     ```
 
-    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
-
-    <tr><td>**Info**</td><td>**Success**</td><td>**No**</td></tr></table>
-
+    | Severity | Status | Audit Event |
+    | --- | --- | --- |
+    | **Info** | **Success** | **No** |
 
 !!! warning "SaasAppsSeedingCompletedWithWarnings"
 
@@ -62,10 +57,9 @@
     Successfully completed the seeding of ${displayName} ${snappableType} with warnings. ${warningMessage} Seeded ${numKeys} keys, ${selectedKeys}. ${attachmentURLMessage}
     ```
 
-    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
-
-    <tr><td>**Warning**</td><td>**PartialSuccess**</td><td>**No**</td></tr></table>
-
+    | Severity | Status | Audit Event |
+    | --- | --- | --- |
+    | **Warning** | **PartialSuccess** | **No** |
 
 !!! failure "SaasAppsSeedingFailed"
 
@@ -73,10 +67,9 @@
     Unable to seed ${displayName} ${snappableType}. Reason: ${reason}. ${attachmentURLMessage}
     ```
 
-    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
-
-    <tr><td>**Critical**</td><td>**Failure**</td><td>**No**</td></tr></table>
-
+    | Severity | Status | Audit Event |
+    | --- | --- | --- |
+    | **Critical** | **Failure** | **No** |
 
 !!! info "SaasAppsSeedingStarted"
 
@@ -84,7 +77,6 @@
     Started the seeding of ${displayName} ${snappableType} with ${numKeys} keys, ${selectedKeys}.
     ```
 
-    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
-
-    <tr><td>**Info**</td><td>**TaskSuccess**</td><td>**No**</td></tr></table>
-
+    | Severity | Status | Audit Event |
+    | --- | --- | --- |
+    | **Info** | **TaskSuccess** | **No** |
