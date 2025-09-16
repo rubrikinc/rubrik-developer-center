@@ -1,5 +1,5 @@
-##identity_alerts
-----
+## identity_alerts
+---
 
 !!! failure "CriticalSeverityIdentityAlertClosed"
 
@@ -7,10 +7,9 @@
     ${alertMessage} on ${source} was closed automatically
     ```
 
-    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
-
-    <tr><td>**Critical**</td><td>**TaskSuccess**</td><td>**No**</td></tr></table>
-
+    | Severity | Status | Audit Event |
+    | --- | --- | --- |
+    | **Critical** | **TaskSuccess** | **No** |
 
 !!! failure "CriticalSeverityIdentityAlertDetected"
 
@@ -18,10 +17,9 @@
     ${alertMessage} detected on ${source}
     ```
 
-    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
-
-    <tr><td>**Critical**</td><td>**TaskSuccess**</td><td>**No**</td></tr></table>
-
+    | Severity | Status | Audit Event |
+    | --- | --- | --- |
+    | **Critical** | **TaskSuccess** | **No** |
 
 !!! failure "CriticalSeverityIdentityAlertDismissed"
 
@@ -29,10 +27,9 @@
     ${alertMessage} on ${source} was dismissed
     ```
 
-    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
-
-    <tr><td>**Critical**</td><td>**TaskSuccess**</td><td>**No**</td></tr></table>
-
+    | Severity | Status | Audit Event |
+    | --- | --- | --- |
+    | **Critical** | **TaskSuccess** | **No** |
 
 !!! failure "CriticalSeverityIdentityAlertInProgress"
 
@@ -40,10 +37,9 @@
     ${alertMessage} on ${source} changed status to in progress
     ```
 
-    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
-
-    <tr><td>**Critical**</td><td>**TaskSuccess**</td><td>**No**</td></tr></table>
-
+    | Severity | Status | Audit Event |
+    | --- | --- | --- |
+    | **Critical** | **TaskSuccess** | **No** |
 
 !!! failure "CriticalSeverityIdentityAlertRemediated"
 
@@ -51,10 +47,9 @@
     ${alertMessage} on ${source} was remediated
     ```
 
-    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
-
-    <tr><td>**Critical**</td><td>**TaskSuccess**</td><td>**No**</td></tr></table>
-
+    | Severity | Status | Audit Event |
+    | --- | --- | --- |
+    | **Critical** | **TaskSuccess** | **No** |
 
 !!! failure "CriticalSeverityIdentityAlertReOpened"
 
@@ -62,10 +57,9 @@
     ${alertMessage} on ${source} changed status to open
     ```
 
-    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
-
-    <tr><td>**Critical**</td><td>**TaskSuccess**</td><td>**No**</td></tr></table>
-
+    | Severity | Status | Audit Event |
+    | --- | --- | --- |
+    | **Critical** | **TaskSuccess** | **No** |
 
 !!! warning "HighSeverityIdentityAlertClosed"
 
@@ -73,10 +67,9 @@
     ${alertMessage} on ${source} was closed automatically
     ```
 
-    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
-
-    <tr><td>**Warning**</td><td>**TaskSuccess**</td><td>**No**</td></tr></table>
-
+    | Severity | Status | Audit Event |
+    | --- | --- | --- |
+    | **Warning** | **TaskSuccess** | **No** |
 
 !!! warning "HighSeverityIdentityAlertDetected"
 
@@ -84,10 +77,9 @@
     ${alertMessage} detected on ${source}
     ```
 
-    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
-
-    <tr><td>**Warning**</td><td>**TaskSuccess**</td><td>**No**</td></tr></table>
-
+    | Severity | Status | Audit Event |
+    | --- | --- | --- |
+    | **Warning** | **TaskSuccess** | **No** |
 
 !!! warning "HighSeverityIdentityAlertDismissed"
 
@@ -95,10 +87,9 @@
     ${alertMessage} on ${source} was dismissed
     ```
 
-    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
-
-    <tr><td>**Warning**</td><td>**TaskSuccess**</td><td>**No**</td></tr></table>
-
+    | Severity | Status | Audit Event |
+    | --- | --- | --- |
+    | **Warning** | **TaskSuccess** | **No** |
 
 !!! warning "HighSeverityIdentityAlertInProgress"
 
@@ -106,10 +97,9 @@
     ${alertMessage} on ${source} changed status to in progress
     ```
 
-    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
-
-    <tr><td>**Warning**</td><td>**TaskSuccess**</td><td>**No**</td></tr></table>
-
+    | Severity | Status | Audit Event |
+    | --- | --- | --- |
+    | **Warning** | **TaskSuccess** | **No** |
 
 !!! warning "HighSeverityIdentityAlertRemediated"
 
@@ -117,10 +107,9 @@
     ${alertMessage} on ${source} was remediated
     ```
 
-    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
-
-    <tr><td>**Warning**</td><td>**TaskSuccess**</td><td>**No**</td></tr></table>
-
+    | Severity | Status | Audit Event |
+    | --- | --- | --- |
+    | **Warning** | **TaskSuccess** | **No** |
 
 !!! warning "HighSeverityIdentityAlertReOpened"
 
@@ -128,10 +117,9 @@
     ${alertMessage} on ${source} changed status to open
     ```
 
-    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
-
-    <tr><td>**Warning**</td><td>**TaskSuccess**</td><td>**No**</td></tr></table>
-
+    | Severity | Status | Audit Event |
+    | --- | --- | --- |
+    | **Warning** | **TaskSuccess** | **No** |
 
 !!! info "LowOrMediumSeverityIdentityAlertClosed"
 
@@ -139,10 +127,9 @@
     ${alertMessage} on ${source} was closed automatically
     ```
 
-    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
-
-    <tr><td>**Info**</td><td>**TaskSuccess**</td><td>**No**</td></tr></table>
-
+    | Severity | Status | Audit Event |
+    | --- | --- | --- |
+    | **Info** | **TaskSuccess** | **No** |
 
 !!! info "LowOrMediumSeverityIdentityAlertDetected"
 
@@ -150,10 +137,9 @@
     ${alertMessage} detected on ${source}
     ```
 
-    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
-
-    <tr><td>**Info**</td><td>**TaskSuccess**</td><td>**No**</td></tr></table>
-
+    | Severity | Status | Audit Event |
+    | --- | --- | --- |
+    | **Info** | **TaskSuccess** | **No** |
 
 !!! info "LowOrMediumSeverityIdentityAlertDismissed"
 
@@ -161,10 +147,9 @@
     ${alertMessage} on ${source} was dismissed
     ```
 
-    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
-
-    <tr><td>**Info**</td><td>**TaskSuccess**</td><td>**No**</td></tr></table>
-
+    | Severity | Status | Audit Event |
+    | --- | --- | --- |
+    | **Info** | **TaskSuccess** | **No** |
 
 !!! info "LowOrMediumSeverityIdentityAlertInProgress"
 
@@ -172,10 +157,9 @@
     ${alertMessage} on ${source} changed status to in progress
     ```
 
-    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
-
-    <tr><td>**Info**</td><td>**TaskSuccess**</td><td>**No**</td></tr></table>
-
+    | Severity | Status | Audit Event |
+    | --- | --- | --- |
+    | **Info** | **TaskSuccess** | **No** |
 
 !!! info "LowOrMediumSeverityIdentityAlertRemediated"
 
@@ -183,10 +167,9 @@
     ${alertMessage} on ${source} was remediated
     ```
 
-    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
-
-    <tr><td>**Info**</td><td>**TaskSuccess**</td><td>**No**</td></tr></table>
-
+    | Severity | Status | Audit Event |
+    | --- | --- | --- |
+    | **Info** | **TaskSuccess** | **No** |
 
 !!! info "LowOrMediumSeverityIdentityAlertReOpened"
 
@@ -194,7 +177,6 @@
     ${alertMessage} on ${source} changed status to open
     ```
 
-    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
-
-    <tr><td>**Info**</td><td>**TaskSuccess**</td><td>**No**</td></tr></table>
-
+    | Severity | Status | Audit Event |
+    | --- | --- | --- |
+    | **Info** | **TaskSuccess** | **No** |

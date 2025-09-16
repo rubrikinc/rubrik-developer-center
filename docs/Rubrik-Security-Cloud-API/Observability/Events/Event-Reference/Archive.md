@@ -1,5 +1,5 @@
-##awsnative
-----
+## awsnative
+---
 
 !!! warning "AwsNativeArchiveDBSnapshotTaskFailed"
 
@@ -7,10 +7,9 @@
     Failed to upload the database snapshot to the ${targetBucketName}  bucket of ${targetLocation} location. Reason: ${reason}.
     ```
 
-    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
-
-    <tr><td>**Warning**</td><td>**TaskFailure**</td><td>**No**</td></tr></table>
-
+    | Severity | Status | Audit Event |
+    | --- | --- | --- |
+    | **Warning** | **TaskFailure** | **No** |
 
 !!! info "AwsNativeArchiveDBSnapshotTaskStarted"
 
@@ -18,10 +17,9 @@
     Uploading the database snapshot to the ${targetBucketName} bucket of  ${targetLocation} location.
     ```
 
-    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
-
-    <tr><td>**Info**</td><td>**Running**</td><td>**No**</td></tr></table>
-
+    | Severity | Status | Audit Event |
+    | --- | --- | --- |
+    | **Info** | **Running** | **No** |
 
 !!! info "AwsNativeArchiveDBSnapshotTaskSucceeded"
 
@@ -29,10 +27,9 @@
     Successfully archived database snapshot taken at ${snapshotTimeDisplay} to the ${targetBucketName} bucket of ${targetLocation} location.
     ```
 
-    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
-
-    <tr><td>**Info**</td><td>**TaskSuccess**</td><td>**No**</td></tr></table>
-
+    | Severity | Status | Audit Event |
+    | --- | --- | --- |
+    | **Info** | **TaskSuccess** | **No** |
 
 !!! failure "AwsNativeArchiveSnapshotJobFailed"
 
@@ -40,10 +37,9 @@
     Failed to archive ${uploadType} snapshot taken at ${snapshotTimeDisplay} of the ${snappableDisplay} to the ${targetBucketName} bucket of ${targetLocation} location. Reason: ${reason}.
     ```
 
-    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
-
-    <tr><td>**Critical**</td><td>**Failure**</td><td>**No**</td></tr></table>
-
+    | Severity | Status | Audit Event |
+    | --- | --- | --- |
+    | **Critical** | **Failure** | **No** |
 
 !!! info "AwsNativeArchiveSnapshotJobSucceeded"
 
@@ -51,10 +47,9 @@
     Successfully archived ${uploadType} snapshot taken at ${snapshotTimeDisplay} of the ${snappableDisplay} to the ${targetBucketName} bucket of ${targetLocation} location. Processed ${dataTransferredFromSource} of data and uploaded  ${dataUploadedToDestination} (compressed) to Archival Location.
     ```
 
-    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
-
-    <tr><td>**Info**</td><td>**Success**</td><td>**No**</td></tr></table>
-
+    | Severity | Status | Audit Event |
+    | --- | --- | --- |
+    | **Info** | **Success** | **No** |
 
 !!! warning "AwsNativeArchiveSnapshotTaskFailed"
 
@@ -62,10 +57,9 @@
     Failed to upload the snapshot to the ${targetBucketName} bucket of ${targetLocation} location. Reason: ${reason}.
     ```
 
-    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
-
-    <tr><td>**Warning**</td><td>**TaskFailure**</td><td>**No**</td></tr></table>
-
+    | Severity | Status | Audit Event |
+    | --- | --- | --- |
+    | **Warning** | **TaskFailure** | **No** |
 
 !!! info "AwsNativeArchiveSnapshotTaskStarted"
 
@@ -73,14 +67,13 @@
     Uploading the snapshot to the ${targetBucketName} bucket of ${targetLocation} location.
     ```
 
-    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
+    | Severity | Status | Audit Event |
+    | --- | --- | --- |
+    | **Info** | **Running** | **No** |
 
-    <tr><td>**Info**</td><td>**Running**</td><td>**No**</td></tr></table>
 
-
-
-##azurenative
-----
+## azurenative
+---
 
 !!! failure "AzureNativeArchiveSnapshotJobFailed"
 
@@ -88,10 +81,9 @@
     Failed to archive ${uploadType} snapshot taken at  ${snapshotTimeDisplay} of the ${snappableDisplay} to the  ${targetContainerName} container in ${storageAccountName} storage  account of ${targetLocation} location. Reason: ${reason}.
     ```
 
-    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
-
-    <tr><td>**Critical**</td><td>**Failure**</td><td>**No**</td></tr></table>
-
+    | Severity | Status | Audit Event |
+    | --- | --- | --- |
+    | **Critical** | **Failure** | **No** |
 
 !!! info "AzureNativeArchiveSnapshotJobSucceeded"
 
@@ -99,10 +91,9 @@
     Successfully archived ${uploadType} snapshot taken at ${snapshotTimeDisplay} of the ${snappableDisplay} to the ${targetContainerName} container in ${storageAccountName}  storage account of ${targetLocation} location. Processed  ${dataTransferredFromSource} of data and uploaded  ${dataUploadedToDestination} (compressed) to Archival Location.
     ```
 
-    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
-
-    <tr><td>**Info**</td><td>**Success**</td><td>**No**</td></tr></table>
-
+    | Severity | Status | Audit Event |
+    | --- | --- | --- |
+    | **Info** | **Success** | **No** |
 
 !!! warning "AzureNativeArchiveSnapshotTaskFailed"
 
@@ -110,10 +101,9 @@
     Failed to upload the snapshot to the ${targetContainerName} container in ${storageAccountName} storage account of ${targetLocation} location. Reason: ${reason}.
     ```
 
-    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
-
-    <tr><td>**Warning**</td><td>**TaskFailure**</td><td>**No**</td></tr></table>
-
+    | Severity | Status | Audit Event |
+    | --- | --- | --- |
+    | **Warning** | **TaskFailure** | **No** |
 
 !!! info "AzureNativeArchiveSnapshotTaskStarted"
 
@@ -121,14 +111,13 @@
     Uploading the snapshot to the ${targetContainerName} container in ${storageAccountName} storage account of ${targetLocation} location.
     ```
 
-    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
+    | Severity | Status | Audit Event |
+    | --- | --- | --- |
+    | **Info** | **Running** | **No** |
 
-    <tr><td>**Info**</td><td>**Running**</td><td>**No**</td></tr></table>
 
-
-
-##cloudnative
-----
+## cloudnative
+---
 
 !!! info "CloudNativeArchiveSnapshotJobCanceled"
 
@@ -136,10 +125,9 @@
     Canceled archival of snapshot of the ${snappableDisplay}.
     ```
 
-    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
-
-    <tr><td>**Info**</td><td>**Canceled**</td><td>**No**</td></tr></table>
-
+    | Severity | Status | Audit Event |
+    | --- | --- | --- |
+    | **Info** | **Canceled** | **No** |
 
 !!! info "CloudNativeArchiveSnapshotJobCanceling"
 
@@ -147,10 +135,9 @@
     Canceling archival of snapshot of the ${snappableDisplay}.
     ```
 
-    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
-
-    <tr><td>**Info**</td><td>**Canceling**</td><td>**No**</td></tr></table>
-
+    | Severity | Status | Audit Event |
+    | --- | --- | --- |
+    | **Info** | **Canceling** | **No** |
 
 !!! failure "CloudNativeArchiveSnapshotJobFailed"
 
@@ -158,10 +145,9 @@
     Failed to archive snapshot of the ${snappableDisplay}. Reason: ${reason}.
     ```
 
-    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
-
-    <tr><td>**Critical**</td><td>**Failure**</td><td>**No**</td></tr></table>
-
+    | Severity | Status | Audit Event |
+    | --- | --- | --- |
+    | **Critical** | **Failure** | **No** |
 
 !!! info "CloudNativeArchiveSnapshotJobStarted"
 
@@ -169,10 +155,9 @@
     Started archival of ${snappableDisplay}.
     ```
 
-    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
-
-    <tr><td>**Info**</td><td>**TaskSuccess**</td><td>**No**</td></tr></table>
-
+    | Severity | Status | Audit Event |
+    | --- | --- | --- |
+    | **Info** | **TaskSuccess** | **No** |
 
 !!! info "CloudNativeArchiveSnapshotJobSucceededNoSnapshotFound"
 
@@ -180,10 +165,9 @@
     No snapshot found for ${snappableDisplay}.
     ```
 
-    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
-
-    <tr><td>**Info**</td><td>**Success**</td><td>**No**</td></tr></table>
-
+    | Severity | Status | Audit Event |
+    | --- | --- | --- |
+    | **Info** | **Success** | **No** |
 
 !!! warning "CloudNativeArchiveSnapshotPrepareTaskFailed"
 
@@ -191,10 +175,9 @@
     Failed to archive snapshot of the ${snappableDisplay}. Reason: ${reason}.
     ```
 
-    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
-
-    <tr><td>**Warning**</td><td>**TaskFailure**</td><td>**No**</td></tr></table>
-
+    | Severity | Status | Audit Event |
+    | --- | --- | --- |
+    | **Warning** | **TaskFailure** | **No** |
 
 !!! info "CloudNativeArchiveSnapshotPrepareTaskStarted"
 
@@ -202,10 +185,9 @@
     Starting archival of snapshot for the ${snappableDisplay}.
     ```
 
-    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
-
-    <tr><td>**Info**</td><td>**Running**</td><td>**No**</td></tr></table>
-
+    | Severity | Status | Audit Event |
+    | --- | --- | --- |
+    | **Info** | **Running** | **No** |
 
 !!! info "CloudNativeArchiveSnapshotPrepareTaskSucceeded"
 
@@ -213,10 +195,9 @@
     Started archival of the snapshot taken at ${snapshotTimeDisplay} of the ${snappableDisplay}.
     ```
 
-    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
-
-    <tr><td>**Info**</td><td>**TaskSuccess**</td><td>**No**</td></tr></table>
-
+    | Severity | Status | Audit Event |
+    | --- | --- | --- |
+    | **Info** | **TaskSuccess** | **No** |
 
 !!! info "CloudNativeArchiveSnapshotTaskSucceeded"
 
@@ -224,10 +205,9 @@
     Uploaded the snapshot to archival location.
     ```
 
-    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
-
-    <tr><td>**Info**</td><td>**TaskSuccess**</td><td>**No**</td></tr></table>
-
+    | Severity | Status | Audit Event |
+    | --- | --- | --- |
+    | **Info** | **TaskSuccess** | **No** |
 
 !!! warning "CloudNativeArchiveSnapshotWaitForIndexSnapshotTaskFailed"
 
@@ -235,10 +215,9 @@
     Failed to index the snapshot.
     ```
 
-    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
-
-    <tr><td>**Warning**</td><td>**TaskFailure**</td><td>**No**</td></tr></table>
-
+    | Severity | Status | Audit Event |
+    | --- | --- | --- |
+    | **Warning** | **TaskFailure** | **No** |
 
 !!! info "CloudNativeArchiveSnapshotWaitForIndexSnapshotTaskStarted"
 
@@ -246,10 +225,9 @@
     Waiting for snapshot to be indexed.
     ```
 
-    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
-
-    <tr><td>**Info**</td><td>**Running**</td><td>**No**</td></tr></table>
-
+    | Severity | Status | Audit Event |
+    | --- | --- | --- |
+    | **Info** | **Running** | **No** |
 
 !!! info "CloudNativeArchiveSnapshotWaitForIndexSnapshotTaskSucceeded"
 
@@ -257,10 +235,9 @@
     Snapshot has successfully been indexed.
     ```
 
-    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
-
-    <tr><td>**Info**</td><td>**TaskSuccess**</td><td>**No**</td></tr></table>
-
+    | Severity | Status | Audit Event |
+    | --- | --- | --- |
+    | **Info** | **TaskSuccess** | **No** |
 
 !!! warning "CloudNativeDeleteExportedDatabaseTaskFailed"
 
@@ -268,10 +245,9 @@
     Failed to delete ${numExportedDatabases} temporary databases in region ${exportedDBRegion}. Reason: ${reason}.
     ```
 
-    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
-
-    <tr><td>**Warning**</td><td>**TaskFailure**</td><td>**No**</td></tr></table>
-
+    | Severity | Status | Audit Event |
+    | --- | --- | --- |
+    | **Warning** | **TaskFailure** | **No** |
 
 !!! info "CloudNativeDeleteExportedDatabaseTaskStarted"
 
@@ -279,10 +255,9 @@
     Deleting ${numExportedDatabases} temporary databases in region ${exportedDBRegion}.
     ```
 
-    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
-
-    <tr><td>**Info**</td><td>**Running**</td><td>**No**</td></tr></table>
-
+    | Severity | Status | Audit Event |
+    | --- | --- | --- |
+    | **Info** | **Running** | **No** |
 
 !!! info "CloudNativeDeleteExportedDatabaseTaskSucceeded"
 
@@ -290,10 +265,9 @@
     Successfully deleted ${numExportedDatabases} temporary databases in region ${exportedDBRegion}.
     ```
 
-    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
-
-    <tr><td>**Info**</td><td>**TaskSuccess**</td><td>**No**</td></tr></table>
-
+    | Severity | Status | Audit Event |
+    | --- | --- | --- |
+    | **Info** | **TaskSuccess** | **No** |
 
 !!! warning "CloudNativeExportDatabaseTaskFailed"
 
@@ -301,10 +275,9 @@
     Failed to create ${numExportedDatabases} temporary databases in region ${exportedDBRegion}. Reason: ${reason}.
     ```
 
-    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
-
-    <tr><td>**Warning**</td><td>**TaskFailure**</td><td>**No**</td></tr></table>
-
+    | Severity | Status | Audit Event |
+    | --- | --- | --- |
+    | **Warning** | **TaskFailure** | **No** |
 
 !!! info "CloudNativeExportDatabaseTaskStarted"
 
@@ -312,10 +285,9 @@
     Creating temporary databases.
     ```
 
-    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
-
-    <tr><td>**Info**</td><td>**Running**</td><td>**No**</td></tr></table>
-
+    | Severity | Status | Audit Event |
+    | --- | --- | --- |
+    | **Info** | **Running** | **No** |
 
 !!! info "CloudNativeExportDatabaseTaskSucceeded"
 
@@ -323,10 +295,9 @@
     Successfully created ${numExportedDatabases} temporary databases in region ${exportedDBRegion}.
     ```
 
-    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
-
-    <tr><td>**Info**</td><td>**TaskSuccess**</td><td>**No**</td></tr></table>
-
+    | Severity | Status | Audit Event |
+    | --- | --- | --- |
+    | **Info** | **TaskSuccess** | **No** |
 
 !!! warning "CloudNativeImmediatelyScheduleMaintainedJobTaskFailed"
 
@@ -334,10 +305,9 @@
     Failed to trigger ${ImmediatelyScheduleMaintainedJobDisplay}.
     ```
 
-    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
-
-    <tr><td>**Warning**</td><td>**TaskFailure**</td><td>**No**</td></tr></table>
-
+    | Severity | Status | Audit Event |
+    | --- | --- | --- |
+    | **Warning** | **TaskFailure** | **No** |
 
 !!! info "CloudNativeImmediatelyScheduleMaintainedJobTaskStarted"
 
@@ -345,10 +315,9 @@
     Waiting for ${ImmediatelyScheduleMaintainedJobDisplay} to be triggered.
     ```
 
-    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
-
-    <tr><td>**Info**</td><td>**Running**</td><td>**No**</td></tr></table>
-
+    | Severity | Status | Audit Event |
+    | --- | --- | --- |
+    | **Info** | **Running** | **No** |
 
 !!! info "CloudNativeImmediatelyScheduleMaintainedJobTaskSucceeded"
 
@@ -356,10 +325,9 @@
     Successfully triggered ${ImmediatelyScheduleMaintainedJobDisplay}.
     ```
 
-    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
-
-    <tr><td>**Info**</td><td>**TaskSuccess**</td><td>**No**</td></tr></table>
-
+    | Severity | Status | Audit Event |
+    | --- | --- | --- |
+    | **Info** | **TaskSuccess** | **No** |
 
 !!! warning "CloudNativeImmediatelyScheduleMaintainedJobTaskSucceededWithError"
 
@@ -367,10 +335,9 @@
     Triggered ${ImmediatelyScheduleMaintainedJobDisplay} with error ${ignoredError}.
     ```
 
-    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
-
-    <tr><td>**Warning**</td><td>**TaskSuccess**</td><td>**No**</td></tr></table>
-
+    | Severity | Status | Audit Event |
+    | --- | --- | --- |
+    | **Warning** | **TaskSuccess** | **No** |
 
 !!! warning "CloudNativeLaunchEmptyDiskTaskFailed"
 
@@ -378,10 +345,9 @@
     Failed to launch scratch ${diskTypeDisplay}(s).
     ```
 
-    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
-
-    <tr><td>**Warning**</td><td>**TaskFailure**</td><td>**No**</td></tr></table>
-
+    | Severity | Status | Audit Event |
+    | --- | --- | --- |
+    | **Warning** | **TaskFailure** | **No** |
 
 !!! info "CloudNativeLaunchEmptyDiskTaskStarted"
 
@@ -389,10 +355,9 @@
     Temporarily launching scratch ${diskTypeDisplay}(s) in region ${region}.
     ```
 
-    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
-
-    <tr><td>**Info**</td><td>**Running**</td><td>**No**</td></tr></table>
-
+    | Severity | Status | Audit Event |
+    | --- | --- | --- |
+    | **Info** | **Running** | **No** |
 
 !!! info "CloudNativeLaunchEmptyDiskTaskSucceeded"
 
@@ -400,10 +365,9 @@
     Launched scratch ${diskTypeDisplay}(s) in region ${region}.
     ```
 
-    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
-
-    <tr><td>**Info**</td><td>**TaskSuccess**</td><td>**No**</td></tr></table>
-
+    | Severity | Status | Audit Event |
+    | --- | --- | --- |
+    | **Info** | **TaskSuccess** | **No** |
 
 !!! warning "CloudNativeOnDemandJobTaskFailed"
 
@@ -411,10 +375,9 @@
     Failed to perform ${onDemandJobDisplay}.
     ```
 
-    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
-
-    <tr><td>**Warning**</td><td>**TaskFailure**</td><td>**No**</td></tr></table>
-
+    | Severity | Status | Audit Event |
+    | --- | --- | --- |
+    | **Warning** | **TaskFailure** | **No** |
 
 !!! info "CloudNativeOnDemandJobTaskStarted"
 
@@ -422,10 +385,9 @@
     Waiting for ${onDemandJobDisplay} to complete.
     ```
 
-    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
-
-    <tr><td>**Info**</td><td>**Running**</td><td>**No**</td></tr></table>
-
+    | Severity | Status | Audit Event |
+    | --- | --- | --- |
+    | **Info** | **Running** | **No** |
 
 !!! info "CloudNativeOnDemandJobTaskSucceeded"
 
@@ -433,10 +395,9 @@
     Successfully completed ${onDemandJobDisplay}.
     ```
 
-    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
-
-    <tr><td>**Info**</td><td>**TaskSuccess**</td><td>**No**</td></tr></table>
-
+    | Severity | Status | Audit Event |
+    | --- | --- | --- |
+    | **Info** | **TaskSuccess** | **No** |
 
 !!! warning "CloudNativeOnDemandJobTaskSucceededWithError"
 
@@ -444,10 +405,9 @@
     Completed ${onDemandJobDisplay} with error ${ignoredError}.
     ```
 
-    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
-
-    <tr><td>**Warning**</td><td>**TaskSuccess**</td><td>**No**</td></tr></table>
-
+    | Severity | Status | Audit Event |
+    | --- | --- | --- |
+    | **Warning** | **TaskSuccess** | **No** |
 
 !!! info "CloudNativeOnDemandJobTaskWithoutWaitSucceeded"
 
@@ -455,10 +415,9 @@
     Successfully triggered ${onDemandJobDisplay}.
     ```
 
-    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
-
-    <tr><td>**Info**</td><td>**TaskSuccess**</td><td>**No**</td></tr></table>
-
+    | Severity | Status | Audit Event |
+    | --- | --- | --- |
+    | **Info** | **TaskSuccess** | **No** |
 
 !!! info "CloudNativeOnDemandJobTaskWithoutWaitSucceededWithError"
 
@@ -466,10 +425,9 @@
     Failed to trigger ${onDemandJobDisplay} with error ${ignoredError}.
     ```
 
-    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
-
-    <tr><td>**Info**</td><td>**TaskSuccess**</td><td>**No**</td></tr></table>
-
+    | Severity | Status | Audit Event |
+    | --- | --- | --- |
+    | **Info** | **TaskSuccess** | **No** |
 
 !!! info "CloudNativePublishArchiveDBSnapshotTaskProgress"
 
@@ -477,14 +435,13 @@
     Archival in progress: ${numTablePartitions} out of total ${totalTablePartitions} table partitions successfully archived.
     ```
 
-    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
+    | Severity | Status | Audit Event |
+    | --- | --- | --- |
+    | **Info** | **Running** | **No** |
 
-    <tr><td>**Info**</td><td>**Running**</td><td>**No**</td></tr></table>
 
-
-
-##gcpnative
-----
+## gcpnative
+---
 
 !!! failure "GCPNativeArchiveSnapshotJobFailed"
 
@@ -492,10 +449,9 @@
     Failed to archive ${uploadType} snapshot taken at ${snapshotTimeDisplay} of the ${snappableDisplay} to the ${targetBucketName} bucket of ${targetLocation} location. Reason: ${reason}.
     ```
 
-    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
-
-    <tr><td>**Critical**</td><td>**Failure**</td><td>**No**</td></tr></table>
-
+    | Severity | Status | Audit Event |
+    | --- | --- | --- |
+    | **Critical** | **Failure** | **No** |
 
 !!! info "GCPNativeArchiveSnapshotJobSucceeded"
 
@@ -503,10 +459,9 @@
     Successfully archived ${uploadType} snapshot taken at  ${snapshotTimeDisplay} of the ${snappableDisplay} to the  ${targetBucketName} bucket of ${targetLocation} location. Processed ${dataTransferredFromSource} of data and uploaded  ${dataUploadedToDestination} (compressed) to Archival Location.
     ```
 
-    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
-
-    <tr><td>**Info**</td><td>**Success**</td><td>**No**</td></tr></table>
-
+    | Severity | Status | Audit Event |
+    | --- | --- | --- |
+    | **Info** | **Success** | **No** |
 
 !!! warning "GCPNativeArchiveSnapshotTaskFailed"
 
@@ -514,10 +469,9 @@
     Failed to upload the snapshot to the ${targetBucketName} bucket of ${targetLocation} location. Reason: ${reason}.
     ```
 
-    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
-
-    <tr><td>**Warning**</td><td>**TaskFailure**</td><td>**No**</td></tr></table>
-
+    | Severity | Status | Audit Event |
+    | --- | --- | --- |
+    | **Warning** | **TaskFailure** | **No** |
 
 !!! info "GCPNativeArchiveSnapshotTaskStarted"
 
@@ -525,14 +479,13 @@
     Uploading the snapshot to the ${targetBucketName} bucket   of ${targetLocation} location.
     ```
 
-    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
+    | Severity | Status | Audit Event |
+    | --- | --- | --- |
+    | **Info** | **Running** | **No** |
 
-    <tr><td>**Info**</td><td>**Running**</td><td>**No**</td></tr></table>
 
-
-
-##rcv
-----
+## rcv
+---
 
 !!! info "RCVDataDeletionSuccess"
 
@@ -540,7 +493,6 @@
     Pursuant to Rubrik policy, data associated with the deleted RCV storage  location '${name}' has been successfully deleted.
     ```
 
-    <table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>
-
-    <tr><td>**Info**</td><td>**Success**</td><td>**No**</td></tr></table>
-
+    | Severity | Status | Audit Event |
+    | --- | --- | --- |
+    | **Info** | **Success** | **No** |

@@ -1,15 +1,21 @@
 #!/usr/bin/env python3
+
+# Import necessary modules
 import csv
 import os
 from collections import defaultdict
+import sys
 
-# Path to your CSV file
+# Path to the CSV file
 CSV_FILE = "../rsc-events.csv"
 
-# The output directory inside your mkdocs site
-OUTPUT_FOLDER = "../docs/Rubrik-Security-Cloud-API/Observability/Event-Reference"
+# The output directory inside the mkdocs site
+OUTPUT_FOLDER = "../docs/Rubrik-Security-Cloud-API/Observability/Events/Event-Reference"
 
-# Ensure the output folder exists
+# Delete previous output files
+os.system("rm -rf ../docs/Rubrik-Security-Cloud-API/Observability/Events/Event-Reference/*")
+
+# Ensure the output folder exists, creating it if it doesn't exist
 os.makedirs(OUTPUT_FOLDER, exist_ok=True)
 
 # Read the CSV file – headers: category, name, message, status, severity, type, email_subject, is_audit, send_to_syslog
@@ -17,12 +23,16 @@ with open(CSV_FILE, newline="", encoding="utf-8") as f:
     reader = csv.DictReader(f)
     events = list(reader)
 
+# Normalize capitalization of event types
+for event in events:
+    event["type"] = event["type"].lower()
+
 # Group events by event type (each type becomes a separate markdown file)
 events_by_type = defaultdict(list)
 for event in events:
     events_by_type[event["type"]].append(event)
 
-# A mapping for severity to the markdown block type.
+# A mapping for severity to the markdown block type
 severity_mapping = {
     "info": "info",
     "warning": "warning",
@@ -38,28 +48,29 @@ for event_type, event_list in events_by_type.items():
 
     for event in sorted_events:
         cat = event["category"].strip()
-        # Print category header once per category
+        # Add category header once per category
         if cat != current_category:
             if current_category is not None:
-                content_lines.append("")  # extra newline between categories
-            content_lines.append(f"##{cat}")
-            content_lines.append("----")
-            content_lines.append("")  # maintain a blank line after the header
+                content_lines.append("")  # add a blank line between categories
+            content_lines.append(f"## {cat}")  # add a header for the category
+            content_lines.append("---")  # add a horizontal line to separate categories
+            content_lines.append("")  # add a blank line after the header
             current_category = cat
 
         # Determine the markdown block for the event based on its severity
         severity = event["severity"].strip().lower()
         block_type = severity_mapping.get(severity, "info")  # default to info if not found
 
-        # Create the event snippet with required indentation and newlines.
+        # Create the event snippet with required indentation and newlines
         content_lines.append(f"!!! {block_type} \"{event['name'].strip()}\"")
         content_lines.append("")
         content_lines.append("    ```")
         content_lines.append(f"    {event['message'].strip()}")
         content_lines.append("    ```")
         content_lines.append("")
-        content_lines.append("    <table width=\"100%\"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th>\n")
-        content_lines.append(f"    <tr><td>**{event['severity'].strip()}**</td><td>**{event['status'].strip()}**</td><td>**{event['is_audit'].strip()}**</td></tr></table>\n")
+        content_lines.append("    | Severity | Status | Audit Event |")
+        content_lines.append("    | --- | --- | --- |")
+        content_lines.append(f"    | **{event['severity'].strip()}** | **{event['status'].strip()}** | **{event['is_audit'].strip()}** |")
         content_lines.append("")
 
     # Join all the lines to form the file content (each line ends with a newline)

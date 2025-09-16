@@ -1,0 +1,42 @@
+query {
+  allWebhooksV2 {
+    name
+    id
+    status
+    authType
+    createdBy
+    createdAt
+    updatedAt
+    url
+    subscriptionType {
+      auditSubscription {
+        auditTypes
+        isSubscribedToAllAudits
+        isSubscribedToAllObjectTypes
+        objectTypes
+        severities
+        templateInfo {
+          customTemplate
+          templateId
+        }
+      }
+      eventSubscription {
+        eventTypes
+        isSubscribedToAllEvents
+        isSubscribedToAllObjectTypes
+        objectTypes
+        severities
+        templateInfo {
+          customTemplate
+          templateId
+        }
+      }
+    }
+    description
+    id
+    lastFailedErrorInfo {
+      errorMessage
+      statusCode
+    }
+  }
+}

@@ -1,0 +1,31 @@
+query {
+  userAuditConnection(
+    filters: {
+        timeGt: "1970-01-01T00:00:00Z"
+        #timeLt: "1970-01-01T00:00:00Z"
+        #auditType: [SLA_MODIFICATION]
+        #auditStatus: [SUCCESS]
+        #auditSeverity: [CRITICAL]
+        #auditObjectType: [VMWARE_VM]
+    }
+  ) {
+    nodes {
+      auditType
+      cluster {
+        name
+        id
+      }
+      userName
+      ipAddress
+      message
+      objectName
+      objectId
+      objectType
+      orgName
+      orgId
+      severity
+      status
+      time
+    }
+  }
+}

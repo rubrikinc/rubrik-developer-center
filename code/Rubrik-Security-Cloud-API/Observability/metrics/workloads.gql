@@ -2,10 +2,11 @@ query {
   snappableConnection(filter: {
     #complianceStatus: IN_COMPLIANCE
     #slaTimeRange: LAST_24_HOURS
-    #objectType: VmwareVirtualMachine 
+    #objectType: VmwareVirtualMachine
     #objectState: ACTIVE
-  	#slaDomain: {id: "0000"}
+    #slaDomain: {id: "00000000-0000-0000-0000-000000000001"}
     #protectionStatus: DoNotProtect
+    #orgId: "12345678-0000-0000-0000-000000000000"
   }) {
     nodes {
       name
