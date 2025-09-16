@@ -1,0 +1,14 @@
+query {
+  allUserFiles {
+    downloads {
+      externalId
+      createdAt
+      expiresAt
+      completedAt
+      creator
+      filename
+      type
+      state
+    }
+  }
+}

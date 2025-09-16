@@ -1,0 +1,7 @@
+mutation {
+  downloadReportCsvAsync(input: {id: <REPORT ID>}) {
+    jobId
+    referenceId
+    externalId
+  }
+}
