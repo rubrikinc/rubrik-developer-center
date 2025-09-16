@@ -8,11 +8,9 @@ BulkRecoveryCanceledSuccessfully
 ${userName} canceled ${bulkRecoveryType} recovery for  '${bulkRecoveryName}'with instance ID '${bulkRecoveryInstanceID}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 BulkRecoveryCancelFailed
 
@@ -20,11 +18,9 @@ BulkRecoveryCancelFailed
 ${userName} was unable to cancel ${bulkRecoveryType} recovery for  '${bulkRecoveryName}' with instance ID '${bulkRecoveryInstanceID}'.  Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 BulkRecoveryStartedSuccessfully
 
@@ -32,11 +28,9 @@ BulkRecoveryStartedSuccessfully
 ${userName} successfully started ${inplaceRestoreUIName}  ${bulkRecoveryType} recovery for '${bulkRecoveryName}' with instance ID  '${bulkRecoveryInstanceID}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 BulkRecoveryStartFailed
 
@@ -44,11 +38,9 @@ BulkRecoveryStartFailed
 ${userName} was unable to start ${inplaceRestoreUIName}  ${bulkRecoveryType} recovery for '${bulkRecoveryName}'.  Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 ## bulk_recovery
 
@@ -60,11 +52,9 @@ BulkRecoveryScheduled
 Scheduled a job to perform ${bulkRecoveryType} recovery (${recoveryType}) of plan ${planName}, instance ${bulkRecoveryInstanceID}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |            |        |
-| -------- | ---------- | ------ |
-| **Info** | **Queued** | **No** |
+| Severity | Status     | Audit Event |
+| -------- | ---------- | ----------- |
+| **Info** | **Queued** | **No**      |
 
 MassRecoveryCanceled
 
@@ -72,11 +62,9 @@ MassRecoveryCanceled
 Canceled ${bulkRecoveryType} recovery (${recoveryType}) of plan ${planName}, instance ${bulkRecoveryInstanceID}.  Recovered workloads: ${numSuccessObjects},  Failed workloads: ${numFailedObjects}, Canceled workloads:  ${numCanceledObjects}, Workloads without snapshots: ${objectsWithoutSnapshot}, Total workloads: ${totalObjects}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |              |        |
-| -------- | ------------ | ------ |
-| **Info** | **Canceled** | **No** |
+| Severity | Status       | Audit Event |
+| -------- | ------------ | ----------- |
+| **Info** | **Canceled** | **No**      |
 
 MassRecoveryChildRestoreFailed
 
@@ -84,11 +72,9 @@ MassRecoveryChildRestoreFailed
 Unable to restore ${sourceUser} ${snappableType} data to ${destinationUser} as part of ${bulkRecoveryType} recovery of plan  ${planName}, instance ${bulkRecoveryInstanceID} because ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|             |                 |        |
-| ----------- | --------------- | ------ |
-| **Warning** | **TaskFailure** | **No** |
+| Severity    | Status          | Audit Event |
+| ----------- | --------------- | ----------- |
+| **Warning** | **TaskFailure** | **No**      |
 
 MassRecoveryCompleted
 
@@ -96,11 +82,9 @@ MassRecoveryCompleted
 Completed ${bulkRecoveryType} recovery (${recoveryType}) of plan  ${planName}, instance ${bulkRecoveryInstanceID}.  Recovered workloads: ${numSuccessObjects},  Failed workloads: ${numFailedObjects}, Workloads without snapshots: ${objectsWithoutSnapshot}, Total workloads: ${totalObjects}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 MassRecoveryFailed
 
@@ -108,11 +92,9 @@ MassRecoveryFailed
 Unable to perform ${bulkRecoveryType} recovery (${recoveryType}) of plan  ${planName}, instance ${bulkRecoveryInstanceID} because ${failureReason}. Recovered workloads: ${numSuccessObjects},  Failed workloads: ${numFailedObjects},  Workloads without snapshots: ${objectsWithoutSnapshot},  Total workloads: ${totalObjects}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Failure** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **No**      |
 
 MassRecoveryProgress
 
@@ -120,11 +102,9 @@ MassRecoveryProgress
 (Step 3/4) Progress metrics for plan ${planName}, instance  ${bulkRecoveryInstanceID} is Recovered workloads: ${numSuccessObjects}, Failed workloads: ${numFailedObjects}, Workloads without snapshots: ${objectsWithoutSnapshot}, InProgress workloads:  ${numInProgressObjects}, Total workloads: ${totalObjects}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Running** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Running** | **No**      |
 
 MassRecoveryTaskFailed
 
@@ -132,11 +112,9 @@ MassRecoveryTaskFailed
 ${taskFailedDesc} for ${bulkRecoveryType} recovery of plan ${planName}, instance  ${bulkRecoveryInstanceID}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |                 |        |
-| ------------ | --------------- | ------ |
-| **Critical** | **TaskFailure** | **No** |
+| Severity     | Status          | Audit Event |
+| ------------ | --------------- | ----------- |
+| **Critical** | **TaskFailure** | **No**      |
 
 MassRecoveryTaskStarted
 
@@ -144,11 +122,9 @@ MassRecoveryTaskStarted
 ${taskStartedDesc} for ${bulkRecoveryType} recovery of plan ${planName},  instance ${bulkRecoveryInstanceID}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 MassRecoveryTaskSucceeded
 
@@ -156,11 +132,9 @@ MassRecoveryTaskSucceeded
 ${taskSuccessDesc} for ${bulkRecoveryType} recovery of plan ${planName}, instance  ${bulkRecoveryInstanceID}. ${progressDesc}
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 ## o365
 
@@ -172,11 +146,9 @@ M365BackupStorageBulkRestoreChildFailed
 Unable to restore ${snappableType} data for ${snappableName} as part of  the mass recovery of plan ${planName} due to ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|             |                 |        |
-| ----------- | --------------- | ------ |
-| **Warning** | **TaskFailure** | **No** |
+| Severity    | Status          | Audit Event |
+| ----------- | --------------- | ----------- |
+| **Warning** | **TaskFailure** | **No**      |
 
 M365BackupStorageBulkRestoreCompleted
 
@@ -184,11 +156,9 @@ M365BackupStorageBulkRestoreCompleted
 Mass recovery of plan ${planName} is completed.  Recovered workloads: ${numSuccessObjects}, Failed workloads:  ${numFailedObjects}, Total workloads: ${totalObjects}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 M365BackupStorageBulkRestoreCSVReportGeneration
 
@@ -196,11 +166,9 @@ M365BackupStorageBulkRestoreCSVReportGeneration
 Generating report for mass recovery of plan ${planName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 M365BackupStorageBulkRestoreFailed
 
@@ -208,11 +176,9 @@ M365BackupStorageBulkRestoreFailed
 Unable to perform mass recovery of plan ${planName} due to  ${failureReason}: Recovered workloads: ${numSuccessObjects},  Failed workloads: ${numFailedObjects},  Total workloads: ${totalObjects}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Failure** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **No**      |
 
 M365BackupStorageBulkRestoreProgress
 
@@ -220,11 +186,9 @@ M365BackupStorageBulkRestoreProgress
 Progress metrics for plan ${planName} are as follows:  Recovered workloads: ${numSuccessObjects}, Failed workloads:  ${numFailedObjects}, In-progress workloads:  ${numInProgressObjects}, Total workloads: ${totalObjects}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Running** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Running** | **No**      |
 
 M365BackupStorageBulkRestoreResolveArtifactsCompleted
 
@@ -232,11 +196,9 @@ M365BackupStorageBulkRestoreResolveArtifactsCompleted
 Completed enumeration of the artifacts for mass recovery of  plan ${planName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 M365BackupStorageBulkRestoreResolveArtifactsFailed
 
@@ -244,11 +206,9 @@ M365BackupStorageBulkRestoreResolveArtifactsFailed
 Failed to enumerate artifacts for mass recovery of plan ${planName} because ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |                 |        |
-| ------------ | --------------- | ------ |
-| **Critical** | **TaskFailure** | **No** |
+| Severity     | Status          | Audit Event |
+| ------------ | --------------- | ----------- |
+| **Critical** | **TaskFailure** | **No**      |
 
 M365BackupStorageBulkRestoreResolveArtifactsStarted
 
@@ -256,11 +216,9 @@ M365BackupStorageBulkRestoreResolveArtifactsStarted
 Enumerating artifacts for mass recovery of plan ${planName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 M365BackupStorageBulkRestoreStarted
 
@@ -268,8 +226,6 @@ M365BackupStorageBulkRestoreStarted
 Started Mass Recovery of the plan ${planName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |

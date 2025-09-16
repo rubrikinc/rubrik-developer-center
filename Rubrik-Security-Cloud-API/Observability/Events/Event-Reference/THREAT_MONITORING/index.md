@@ -8,11 +8,9 @@ ThreatMonitoringAnalysisFailed
 Failed to run Threat Monitoring analysis of snapshot taken on ${snapshotDate} of '${snappableName}': ${failureReason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|             |             |        |
-| ----------- | ----------- | ------ |
-| **Warning** | **Failure** | **No** |
+| Severity    | Status      | Audit Event |
+| ----------- | ----------- | ----------- |
+| **Warning** | **Failure** | **No**      |
 
 ThreatMonitoringAnalysisStarted
 
@@ -20,11 +18,9 @@ ThreatMonitoringAnalysisStarted
 Started Threat Monitoring analysis of snapshot taken on ${snapshotDate} of '${snappableName}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 ThreatMonitoringAnalysisSucceeded
 
@@ -32,11 +28,9 @@ ThreatMonitoringAnalysisSucceeded
 Completed Threat Monitoring analysis of snapshot taken on ${snapshotDate} of '${snappableName}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 ThreatMonitoringFullAnalysisFailed
 
@@ -44,11 +38,9 @@ ThreatMonitoringFullAnalysisFailed
 Failed to run a full Threat Monitoring analysis on '${snappableName}'  using Threat Feed ${threatFeedType}: ${failureReason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|             |             |        |
-| ----------- | ----------- | ------ |
-| **Warning** | **Failure** | **No** |
+| Severity    | Status      | Audit Event |
+| ----------- | ----------- | ----------- |
+| **Warning** | **Failure** | **No**      |
 
 ThreatMonitoringFullAnalysisStarted
 
@@ -56,11 +48,9 @@ ThreatMonitoringFullAnalysisStarted
 Started a full Threat Monitoring analysis on ${snappableName}'  using Threat Feed: ${threatFeedType}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 ThreatMonitoringFullAnalysisSucceeded
 
@@ -68,11 +58,9 @@ ThreatMonitoringFullAnalysisSucceeded
 Completed full Threat Monitoring analysis on '${snappableName}' using Threat Feed: ${threatFeedType}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 ThreatMonitoringFullHashAnalysisMatchesFound
 
@@ -80,11 +68,9 @@ ThreatMonitoringFullHashAnalysisMatchesFound
 Completed full Threat Monitoring hash analysis on '${snappableName}' using Hash Threat Feed version ${hashTfVersion}. Found ${numHashMatches} hash matches.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |                 |        |
-| ------------ | --------------- | ------ |
-| **Critical** | **TaskSuccess** | **No** |
+| Severity     | Status          | Audit Event |
+| ------------ | --------------- | ----------- |
+| **Critical** | **TaskSuccess** | **No**      |
 
 ThreatMonitoringFullHashAnalysisNoMatchesFound
 
@@ -92,11 +78,9 @@ ThreatMonitoringFullHashAnalysisNoMatchesFound
 Completed full Threat Monitoring hash analysis on '${snappableName}' using Hash Threat Feed version ${hashTfVersion}. No matches found.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 ThreatMonitoringFullYaraAnalysisMatchesFound
 
@@ -104,11 +88,9 @@ ThreatMonitoringFullYaraAnalysisMatchesFound
 Completed full Threat Monitoring YARA analysis on  '${snappableName}' using Threat Feed version ${yaraTfVersion}.  Found ${numYaraRuleMatches} YARA rule matches.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |                 |        |
-| ------------ | --------------- | ------ |
-| **Critical** | **TaskSuccess** | **No** |
+| Severity     | Status          | Audit Event |
+| ------------ | --------------- | ----------- |
+| **Critical** | **TaskSuccess** | **No**      |
 
 ThreatMonitoringFullYaraAnalysisNoMatchesFound
 
@@ -116,11 +98,9 @@ ThreatMonitoringFullYaraAnalysisNoMatchesFound
 Completed full Threat Monitoring YARA analysis on '${snappableName}' using YARA Threat Feed version ${yaraTfVersion}.  No matches found.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 ThreatMonitoringHashMatchesFound
 
@@ -128,11 +108,9 @@ ThreatMonitoringHashMatchesFound
 Found file hash matches for ${numFilesWithMatches} files.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |                 |        |
-| ------------ | --------------- | ------ |
-| **Critical** | **TaskSuccess** | **No** |
+| Severity     | Status          | Audit Event |
+| ------------ | --------------- | ----------- |
+| **Critical** | **TaskSuccess** | **No**      |
 
 ThreatMonitoringNoHashMatchesFound
 
@@ -140,11 +118,9 @@ ThreatMonitoringNoHashMatchesFound
 Found no file hash matches.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 ThreatMonitoringNoYaraMatchesFound
 
@@ -152,11 +128,9 @@ ThreatMonitoringNoYaraMatchesFound
 Found no YARA rule matches.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 ThreatMonitoringYaraError
 
@@ -164,11 +138,9 @@ ThreatMonitoringYaraError
 Error while analyzing YARA rule matches: ${failureReason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|             |                 |        |
-| ----------- | --------------- | ------ |
-| **Warning** | **TaskFailure** | **No** |
+| Severity    | Status          | Audit Event |
+| ----------- | --------------- | ----------- |
+| **Warning** | **TaskFailure** | **No**      |
 
 ThreatMonitoringYaraMatchesFound
 
@@ -176,8 +148,6 @@ ThreatMonitoringYaraMatchesFound
 Found ${numYaraRuleMatches} YARA rule matches.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |                 |        |
-| ------------ | --------------- | ------ |
-| **Critical** | **TaskSuccess** | **No** |
+| Severity     | Status          | Audit Event |
+| ------------ | --------------- | ----------- |
+| **Critical** | **TaskSuccess** | **No**      |

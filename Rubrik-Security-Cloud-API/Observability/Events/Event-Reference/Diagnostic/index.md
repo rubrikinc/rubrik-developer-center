@@ -8,11 +8,9 @@ AccountExpired
 Your trial ended on ${ExpiryDate} and your account will be on hold for ${NumHoldDays} days from that date.  During the hold period, all backup jobs will be paused and no further changes can be made.  Your POC data will be deleted after ${HoldEndDate}.  To continue using the product, contact your Account Executive to purchase a license.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Success** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Success** | **No**      |
 
 AccountExpiryWarning
 
@@ -20,11 +18,9 @@ AccountExpiryWarning
 Hello, We want to remind you that your account is expiring in ${noOfDaysBeforeHold} days and that your existing data will not be available after that time. Act now to extend your features or buy additional features! Retain your existing data and continue to enjoy all the benefits of Rubrik data protection. For information, please contact our friendly sales professionals at sales@rubrik.com. Thank you, Rubrik
 ```
 
-Severity | Status | Audit Event | |
-
-|             |             |        |
-| ----------- | ----------- | ------ |
-| **Warning** | **Success** | **No** |
+| Severity    | Status      | Audit Event |
+| ----------- | ----------- | ----------- |
+| **Warning** | **Success** | **No**      |
 
 AccountMoveCompleted
 
@@ -32,11 +28,9 @@ AccountMoveCompleted
 RSC account move to the new region has been completed. No more downtime should be observed.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Success** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Success** | **No**      |
 
 AccountMoveInitiated
 
@@ -44,11 +38,9 @@ AccountMoveInitiated
 Rubrik started an account move operation, which will take a few hours to complete.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Success** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Success** | **No**      |
 
 ## app_failover
 
@@ -60,11 +52,9 @@ RefreshAwsNetResourcesConnectToEc2ClientFailed
 Failed to connect to ec2 client: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |                 |        |
-| ------------ | --------------- | ------ |
-| **Critical** | **TaskFailure** | **No** |
+| Severity     | Status          | Audit Event |
+| ------------ | --------------- | ----------- |
+| **Critical** | **TaskFailure** | **No**      |
 
 RefreshAwsNetResourcesEc2ClientFailed
 
@@ -72,11 +62,9 @@ RefreshAwsNetResourcesEc2ClientFailed
 Failed to sync AWS networking resources in '${cloudAccount}(${region})': ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |                 |        |
-| ------------ | --------------- | ------ |
-| **Critical** | **TaskFailure** | **No** |
+| Severity     | Status          | Audit Event |
+| ------------ | --------------- | ----------- |
+| **Critical** | **TaskFailure** | **No**      |
 
 RefreshAwsNetResourcesFailoverCanceled
 
@@ -84,11 +72,9 @@ RefreshAwsNetResourcesFailoverCanceled
 Canceled sync AWS networking resources in '${account}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |              |        |
-| -------- | ------------ | ------ |
-| **Info** | **Canceled** | **No** |
+| Severity | Status       | Audit Event |
+| -------- | ------------ | ----------- |
+| **Info** | **Canceled** | **No**      |
 
 RefreshAwsNetResourcesFailoverCanceling
 
@@ -96,11 +82,9 @@ RefreshAwsNetResourcesFailoverCanceling
 Canceling sync AWS networking resources in '${account}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |               |        |
-| -------- | ------------- | ------ |
-| **Info** | **Canceling** | **No** |
+| Severity | Status        | Audit Event |
+| -------- | ------------- | ----------- |
+| **Info** | **Canceling** | **No**      |
 
 RefreshAwsNetResourcesFailoverFailed
 
@@ -108,11 +92,9 @@ RefreshAwsNetResourcesFailoverFailed
 Failed to sync AWS networking resources in '${account}': ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Failure** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **No**      |
 
 RefreshAwsNetResourcesFailoverStarted
 
@@ -120,11 +102,9 @@ RefreshAwsNetResourcesFailoverStarted
 Started to sync AWS networking resources in '${account}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 RefreshAwsNetResourcesFailoverSuccess
 
@@ -132,11 +112,9 @@ RefreshAwsNetResourcesFailoverSuccess
 Synced AWS networking resources in '${account}': processed '${totalNum}' cloud locations.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 RefreshAwsNetResourcesGetCloudAccountFailed
 
@@ -144,11 +122,9 @@ RefreshAwsNetResourcesGetCloudAccountFailed
 Failed to get cloud account ${name} in '${account}': ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |                 |        |
-| ------------ | --------------- | ------ |
-| **Critical** | **TaskFailure** | **No** |
+| Severity     | Status          | Audit Event |
+| ------------ | --------------- | ----------- |
+| **Critical** | **TaskFailure** | **No**      |
 
 RefreshAwsNetResourcesQueryArchivalLocationFailed
 
@@ -156,11 +132,9 @@ RefreshAwsNetResourcesQueryArchivalLocationFailed
 Failed to query cloud locations in '${account}': ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |                 |        |
-| ------------ | --------------- | ------ |
-| **Critical** | **TaskFailure** | **No** |
+| Severity     | Status          | Audit Event |
+| ------------ | --------------- | ----------- |
+| **Critical** | **TaskFailure** | **No**      |
 
 ValidateAppBlueprintResourceMappingFailed
 
@@ -168,11 +142,9 @@ ValidateAppBlueprintResourceMappingFailed
 Failed to validate recovery spec for Recovery Plan '${name}' in '${account}': ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Failure** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **No**      |
 
 ValidateResourceMappingCanceled
 
@@ -180,11 +152,9 @@ ValidateResourceMappingCanceled
 Canceled validate recovery specs for Recovery Plans in '${account}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |              |        |
-| -------- | ------------ | ------ |
-| **Info** | **Canceled** | **No** |
+| Severity | Status       | Audit Event |
+| -------- | ------------ | ----------- |
+| **Info** | **Canceled** | **No**      |
 
 ValidateResourceMappingCanceling
 
@@ -192,11 +162,9 @@ ValidateResourceMappingCanceling
 Canceling validate recovery specs for Recovery Plans in '${account}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |               |        |
-| -------- | ------------- | ------ |
-| **Info** | **Canceling** | **No** |
+| Severity | Status        | Audit Event |
+| -------- | ------------- | ----------- |
+| **Info** | **Canceling** | **No**      |
 
 ValidateResourceMappingFailed
 
@@ -204,11 +172,9 @@ ValidateResourceMappingFailed
 Failed to validate recovery specs for Recovery Plans in '${account}': ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Failure** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **No**      |
 
 ValidateResourceMappingQueryAppBlueprintsFailed
 
@@ -216,11 +182,9 @@ ValidateResourceMappingQueryAppBlueprintsFailed
 Failed to query Recovery Plans in '${account}': ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |                 |        |
-| ------------ | --------------- | ------ |
-| **Critical** | **TaskFailure** | **No** |
+| Severity     | Status          | Audit Event |
+| ------------ | --------------- | ----------- |
+| **Critical** | **TaskFailure** | **No**      |
 
 ValidateResourceMappingStarted
 
@@ -228,11 +192,9 @@ ValidateResourceMappingStarted
 Started validating recovery specs for Recovery Plans in '${account}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 ValidateResourceMappingSuccess
 
@@ -240,11 +202,9 @@ ValidateResourceMappingSuccess
 Validated recovery specs for Recovery Plans in '${account}': processed '${totalNum}' and found recovery specs are invalid for '${invalidNum}' Recovery Plans.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 ## awsnative
 
@@ -256,11 +216,9 @@ AwsSnapshotsMissing
 One or more rubrik managed snapshots are missing from AWS account ${awsAccountDisplayName}. Total ${missingEc2SnapshotCount} AMIs and ${missingEbsSnapshotCount} volume snapshots are missing. ${optionalMailSentMsg}
 ```
 
-Severity | Status | Audit Event | |
-
-|             |             |        |
-| ----------- | ----------- | ------ |
-| **Warning** | **Failure** | **No** |
+| Severity    | Status      | Audit Event |
+| ----------- | ----------- | ----------- |
+| **Warning** | **Failure** | **No**      |
 
 ## azurenative
 
@@ -272,11 +230,9 @@ AzureNativeArchiveSnapshotTaskCleanupFailed
 An error occurred while cleaning up a failed attempt to archive the snapshot taken at ${snapshotTimeDisplay} of the ${snappableDisplay}. Reason: ${reason}
 ```
 
-Severity | Status | Audit Event | |
-
-|             |                    |        |
-| ----------- | ------------------ | ------ |
-| **Warning** | **PartialSuccess** | **No** |
+| Severity    | Status             | Audit Event |
+| ----------- | ------------------ | ----------- |
+| **Warning** | **PartialSuccess** | **No**      |
 
 AzureSnapshotsMissing
 
@@ -284,11 +240,9 @@ AzureSnapshotsMissing
 One or more rubrik managed snapshots are missing from Azure subscription ${azureSubscriptionDisplayName}. Total ${missingVMSnapshotCount} VM snapshots, ${missingVMRepSnapshotCount} VM replicated snapshots, ${missingDiskSnapshotCount} disk snapshots and ${missingDiskRepSnapshotCount} disk replicated snapshots are missing.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Failure** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **No**      |
 
 AzureSqlDatabaseServerDeleted
 
@@ -296,11 +250,9 @@ AzureSqlDatabaseServerDeleted
 One or more Rubrik managed Azure SQL Servers are missing from Azure subscription ${azureSubscriptionDisplayName}. Missing Azure SQL Servers: ${missingSqlDatabaseServersList}
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Failure** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **No**      |
 
 AzureSqlManagedInstanceServerDeleted
 
@@ -308,11 +260,9 @@ AzureSqlManagedInstanceServerDeleted
 One or more Rubrik managed Azure SQL Managed Instances are missing from Azure subscription ${azureSubscriptionDisplayName}. Missing Azure SQL Managed Instances: ${missingSqlManagedInstanceServersList}
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Failure** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **No**      |
 
 AzureSqlSnapshotsMissing
 
@@ -320,11 +270,9 @@ AzureSqlSnapshotsMissing
 One or more Rubrik managed snapshots are missing from Azure subscription ${azureSubscriptionDisplayName}. Total ${missingSqlDatabaseDbSnapshotCount} Azure Sql Database and ${missingSqlManagedInstanceDbSnapshotCount} Azure Sql Managed Database snapshots are missing.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Failure** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **No**      |
 
 ## ccprovision
 
@@ -336,11 +284,9 @@ ClusterCreateFailed
 ${message}
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Failure** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **No**      |
 
 ClusterCreateRunning
 
@@ -348,11 +294,9 @@ ClusterCreateRunning
 ${message}
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 ClusterCreateSuccess
 
@@ -360,11 +304,9 @@ ClusterCreateSuccess
 ${message}
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 ClusterCreateWarning
 
@@ -372,11 +314,9 @@ ClusterCreateWarning
 ${message}
 ```
 
-Severity | Status | Audit Event | |
-
-|             |             |        |
-| ----------- | ----------- | ------ |
-| **Warning** | **Success** | **No** |
+| Severity    | Status      | Audit Event |
+| ----------- | ----------- | ----------- |
+| **Warning** | **Success** | **No**      |
 
 ## cloudnative
 
@@ -388,11 +328,9 @@ AwsRdsManualSnapshotQuotaBreach
 One or more regions from the AWS account, ${awsAccountDisplayName}, protected by Rubrik, may have the following issues: manual snapshot quota limit is about to be breached, or you have used 75%% of the quota. Usages in affected regions are: ${quotaUsage}.
 ```
 
-Severity | Status | Audit Event | |
-
-|             |             |        |
-| ----------- | ----------- | ------ |
-| **Warning** | **Failure** | **No** |
+| Severity    | Status      | Audit Event |
+| ----------- | ----------- | ----------- |
+| **Warning** | **Failure** | **No**      |
 
 AwsRdsSnapshotsMissing
 
@@ -400,11 +338,9 @@ AwsRdsSnapshotsMissing
 One or more RDS databases from the AWS account ${awsAccountDisplayName} protected by Rubrik may have the following issues: Number of missing RDS snapshots: ${missingRdsInstanceSnapshotCount}. Number of RDS databases with modified log retention values: ${missingRdsInstancePitrCount}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Failure** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **No**      |
 
 CloudNativeIndexSnapshotsDebugModeJobCanceled
 
@@ -412,11 +348,9 @@ CloudNativeIndexSnapshotsDebugModeJobCanceled
 Canceled debug-mode index run of the snapshot taken on ${snapshotTimeDisplay} of the ${snappableDisplay}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |              |        |
-| -------- | ------------ | ------ |
-| **Info** | **Canceled** | **No** |
+| Severity | Status       | Audit Event |
+| -------- | ------------ | ----------- |
+| **Info** | **Canceled** | **No**      |
 
 CloudNativeIndexSnapshotsDebugModeJobCanceling
 
@@ -424,11 +358,9 @@ CloudNativeIndexSnapshotsDebugModeJobCanceling
 Canceling debug-mode index run of the snapshot taken on ${snapshotTimeDisplay} of the ${snappableDisplay}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |               |        |
-| -------- | ------------- | ------ |
-| **Info** | **Canceling** | **No** |
+| Severity | Status        | Audit Event |
+| -------- | ------------- | ----------- |
+| **Info** | **Canceling** | **No**      |
 
 CloudNativeIndexSnapshotsDebugModeJobFailed
 
@@ -436,11 +368,9 @@ CloudNativeIndexSnapshotsDebugModeJobFailed
 Failed in debug-mode index run of the snapshot taken on ${snapshotTimeDisplay} of the ${snappableDisplay}. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Failure** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **No**      |
 
 CloudNativeIndexSnapshotsDebugModeJobQueued
 
@@ -448,11 +378,9 @@ CloudNativeIndexSnapshotsDebugModeJobQueued
 Queued debug-mode index run of the snapshot taken on ${snapshotTimeDisplay} of the ${snappableDisplay}. The job will not index the snapshot.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |            |        |
-| -------- | ---------- | ------ |
-| **Info** | **Queued** | **No** |
+| Severity | Status     | Audit Event |
+| -------- | ---------- | ----------- |
+| **Info** | **Queued** | **No**      |
 
 CloudNativeIndexSnapshotsDebugModeJobStarted
 
@@ -460,11 +388,9 @@ CloudNativeIndexSnapshotsDebugModeJobStarted
 Started debug-mode index run of the snapshot taken on ${snapshotTimeDisplay} of the ${snappableDisplay}. The job will not index the snapshot.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 CloudNativeIndexSnapshotsDebugModeJobSucceeded
 
@@ -472,11 +398,9 @@ CloudNativeIndexSnapshotsDebugModeJobSucceeded
 Successfully completed debug-mode index run of the snapshot taken on ${snapshotTimeDisplay} of the ${snappableDisplay}. The snapshot was not indexed, since the job was run in the debug mode.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 CloudNativeIndexSnapshotsDebugModeJobSucceededNoop
 
@@ -484,11 +408,9 @@ CloudNativeIndexSnapshotsDebugModeJobSucceededNoop
 No snapshot available to index for ${snappableDisplay}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 GcpSnapshotsMissing
 
@@ -496,11 +418,9 @@ GcpSnapshotsMissing
 One or more rubrik managed snapshots are missing from GCP project ${gcpProjectDisplayName}. Total ${missingInstanceSnapshotCount} instance snapshots and ${missingDiskSnapshotCount} disk snapshots are missing.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Failure** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **No**      |
 
 ## cluster
 
@@ -512,11 +432,9 @@ ClusterSyncJobsDelayed
 Cluster ${clusterName} is experiencing the following delays in syncing data with Rubrik Cloud: \n\n${delayedJobsMessage}\n\nPlease open a support tunnel to the cluster and contact Rubrik Support for further assistance.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Failure** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **No**      |
 
 ClusterUnreachable
 
@@ -524,11 +442,9 @@ ClusterUnreachable
 Cluster ${clusterName} is unreachable
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Failure** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **No**      |
 
 ## exocompute
 
@@ -540,11 +456,9 @@ ClusterVerificationTaskFailed
 Verification failed for the customer managed cluster ${clusterDisplayName}. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|             |                 |        |
-| ----------- | --------------- | ------ |
-| **Warning** | **TaskFailure** | **No** |
+| Severity    | Status          | Audit Event |
+| ----------- | --------------- | ----------- |
+| **Warning** | **TaskFailure** | **No**      |
 
 ClusterVerificationTaskStarted
 
@@ -552,11 +466,9 @@ ClusterVerificationTaskStarted
 Verifying the customer managed cluster ${clusterDisplayName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Running** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Running** | **No**      |
 
 ClusterVerificationTaskSucceeded
 
@@ -564,11 +476,9 @@ ClusterVerificationTaskSucceeded
 Successfully verified the customer managed cluster ${clusterDisplayName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 ConfigurePrivateEKSTaskFailed
 
@@ -576,11 +486,9 @@ ConfigurePrivateEKSTaskFailed
 Failed to configure private EKS cluster ${eksClusterDisplayName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|             |                 |        |
-| ----------- | --------------- | ------ |
-| **Warning** | **TaskFailure** | **No** |
+| Severity    | Status          | Audit Event |
+| ----------- | --------------- | ----------- |
+| **Warning** | **TaskFailure** | **No**      |
 
 ConfigurePrivateEKSTaskStarted
 
@@ -588,11 +496,9 @@ ConfigurePrivateEKSTaskStarted
 Configuring private EKS cluster ${eksClusterDisplayName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Running** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Running** | **No**      |
 
 ConfigurePrivateEKSTaskSucceeded
 
@@ -600,11 +506,9 @@ ConfigurePrivateEKSTaskSucceeded
 Successfully configured private EKS cluster ${eksClusterDisplayName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 ExoclusterReachingAzureQuotaLimit
 
@@ -612,11 +516,9 @@ ExoclusterReachingAzureQuotaLimit
 ${eventMsg}
 ```
 
-Severity | Status | Audit Event | |
-
-|             |             |        |
-| ----------- | ----------- | ------ |
-| **Warning** | **Failure** | **No** |
+| Severity    | Status      | Audit Event |
+| ----------- | ----------- | ----------- |
+| **Warning** | **Failure** | **No**      |
 
 ExoclusterReachingAzureSubnetLimit
 
@@ -624,11 +526,9 @@ ExoclusterReachingAzureSubnetLimit
 The size of the subnet ${subnet} is limiting the scaling of the AKS. Recommended minimum subnet size: ${requiredBandwidth}
 ```
 
-Severity | Status | Audit Event | |
-
-|             |             |        |
-| ----------- | ----------- | ------ |
-| **Warning** | **Failure** | **No** |
+| Severity    | Status      | Audit Event |
+| ----------- | ----------- | ----------- |
+| **Warning** | **Failure** | **No**      |
 
 ExoclusterUpgradeCanceled
 
@@ -636,11 +536,9 @@ ExoclusterUpgradeCanceled
 Canceled upgrade ${exoclusterType} cluster ${exoclusterName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |              |        |
-| -------- | ------------ | ------ |
-| **Info** | **Canceled** | **No** |
+| Severity | Status       | Audit Event |
+| -------- | ------------ | ----------- |
+| **Info** | **Canceled** | **No**      |
 
 ExoclusterUpgradeCanceling
 
@@ -648,11 +546,9 @@ ExoclusterUpgradeCanceling
 Canceling upgrade of ${exoclusterType} cluster ${exoclusterName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |               |        |
-| -------- | ------------- | ------ |
-| **Info** | **Canceling** | **No** |
+| Severity | Status        | Audit Event |
+| -------- | ------------- | ----------- |
+| **Info** | **Canceling** | **No**      |
 
 ExoclusterUpgradeFailed
 
@@ -660,11 +556,9 @@ ExoclusterUpgradeFailed
 Failed to upgrade ${exoclusterType} cluster ${exoclusterName} to version ${version}. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Failure** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **No**      |
 
 ExoclusterUpgradeNotEnoughResource
 
@@ -672,11 +566,9 @@ ExoclusterUpgradeNotEnoughResource
 Not enough resources to upgrade ${exoclusterType} cluster ${exoclusterName} to version ${version}: ${quotaMsg}. More info on https://docs.microsoft.com/en-us/azure/aks/upgrade-cluster.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Failure** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **No**      |
 
 ExoclusterUpgradeStarted
 
@@ -684,11 +576,9 @@ ExoclusterUpgradeStarted
 Upgrading ${exoclusterType} cluster ${exoclusterName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Running** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Running** | **No**      |
 
 ExoclusterUpgradeSucceeded
 
@@ -696,11 +586,9 @@ ExoclusterUpgradeSucceeded
 Successfully upgraded ${exoclusterType} cluster ${exoclusterName} to version ${version}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 ExocomputeAwsSetupJobCanceled
 
@@ -708,11 +596,9 @@ ExocomputeAwsSetupJobCanceled
 Canceled setup of the EKS cluster in the ${awsAccountDisplayName} AWS account in the ${regionDisplayName} region.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |              |        |
-| -------- | ------------ | ------ |
-| **Info** | **Canceled** | **No** |
+| Severity | Status       | Audit Event |
+| -------- | ------------ | ----------- |
+| **Info** | **Canceled** | **No**      |
 
 ExocomputeAwsSetupJobCanceling
 
@@ -720,11 +606,9 @@ ExocomputeAwsSetupJobCanceling
 Canceling setup of the EKS cluster in the ${awsAccountDisplayName} AWS account in the ${regionDisplayName} region.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |               |        |
-| -------- | ------------- | ------ |
-| **Info** | **Canceling** | **No** |
+| Severity | Status        | Audit Event |
+| -------- | ------------- | ----------- |
+| **Info** | **Canceling** | **No**      |
 
 ExocomputeAwsSetupJobFailed
 
@@ -732,11 +616,9 @@ ExocomputeAwsSetupJobFailed
 Failed to setup EKS cluster in the ${awsAccountDisplayName} AWS account in the ${regionDisplayName} region. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Failure** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **No**      |
 
 ExocomputeAwsSetupJobStarted
 
@@ -744,11 +626,9 @@ ExocomputeAwsSetupJobStarted
 Started setup of the EKS cluster in the ${awsAccountDisplayName} AWS account in the ${regionDisplayName} region.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 ExocomputeAwsSetupJobSucceeded
 
@@ -756,11 +636,9 @@ ExocomputeAwsSetupJobSucceeded
 Successfully setup EKS cluster in the ${awsAccountDisplayName} AWS account in the ${regionDisplayName} region.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 ExocomputeAwsTeardownJobCanceled
 
@@ -768,11 +646,9 @@ ExocomputeAwsTeardownJobCanceled
 Canceled termination of the ${eksClusterDisplayName} EKS cluster in the ${awsAccountDisplayName} AWS account in the ${regionDisplayName} region.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |              |        |
-| -------- | ------------ | ------ |
-| **Info** | **Canceled** | **No** |
+| Severity | Status       | Audit Event |
+| -------- | ------------ | ----------- |
+| **Info** | **Canceled** | **No**      |
 
 ExocomputeAwsTeardownJobCanceling
 
@@ -780,11 +656,9 @@ ExocomputeAwsTeardownJobCanceling
 Canceling termination of the ${eksClusterDisplayName} EKS cluster in the ${awsAccountDisplayName} AWS account in the ${regionDisplayName} region.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |               |        |
-| -------- | ------------- | ------ |
-| **Info** | **Canceling** | **No** |
+| Severity | Status        | Audit Event |
+| -------- | ------------- | ----------- |
+| **Info** | **Canceling** | **No**      |
 
 ExocomputeAwsTeardownJobFailed
 
@@ -792,11 +666,9 @@ ExocomputeAwsTeardownJobFailed
 Failed to terminate the ${eksClusterDisplayName} EKS cluster in the ${awsAccountDisplayName} AWS account in the ${regionDisplayName} region. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Failure** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **No**      |
 
 ExocomputeAwsTeardownJobStarted
 
@@ -804,11 +676,9 @@ ExocomputeAwsTeardownJobStarted
 Terminating the ${eksClusterDisplayName} EKS cluster in the ${awsAccountDisplayName} AWS account in the ${regionDisplayName} region.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 ExocomputeAwsTeardownJobSucceeded
 
@@ -816,11 +686,9 @@ ExocomputeAwsTeardownJobSucceeded
 Successfully terminated the ${eksClusterDisplayName} EKS cluster in the ${awsAccountDisplayName} AWS account in the ${regionDisplayName} region.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 ExocomputeAzureSetupJobCanceled
 
@@ -828,11 +696,9 @@ ExocomputeAzureSetupJobCanceled
 Canceled set up of the Azure Kubernetes Cluster in the resource group ${resourceGroupName} in the region ${azureRegionDisplayName} of the Azure subscription ${subscriptionDisplayName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |              |        |
-| -------- | ------------ | ------ |
-| **Info** | **Canceled** | **No** |
+| Severity | Status       | Audit Event |
+| -------- | ------------ | ----------- |
+| **Info** | **Canceled** | **No**      |
 
 ExocomputeAzureSetupJobCanceling
 
@@ -840,11 +706,9 @@ ExocomputeAzureSetupJobCanceling
 Canceling set up of the Azure Kubernetes Cluster in the resource group ${resourceGroupName} in the region ${azureRegionDisplayName} of the Azure subscription ${subscriptionDisplayName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |               |        |
-| -------- | ------------- | ------ |
-| **Info** | **Canceling** | **No** |
+| Severity | Status        | Audit Event |
+| -------- | ------------- | ----------- |
+| **Info** | **Canceling** | **No**      |
 
 ExocomputeAzureSetupJobFailed
 
@@ -852,11 +716,9 @@ ExocomputeAzureSetupJobFailed
 Failed to set up the Azure Kubernetes Cluster in the resource group ${resourceGroupName} in the region ${azureRegionDisplayName} of the Azure subscription ${subscriptionDisplayName}. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Failure** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **No**      |
 
 ExocomputeAzureSetupJobStarted
 
@@ -864,11 +726,9 @@ ExocomputeAzureSetupJobStarted
 Started set up of the Azure Kubernetes Cluster in the resource group ${resourceGroupName} in the region ${azureRegionDisplayName} of the Azure subscription ${subscriptionDisplayName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 ExocomputeAzureSetupJobSucceeded
 
@@ -876,11 +736,9 @@ ExocomputeAzureSetupJobSucceeded
 Successfully set up the Azure Kubernetes Cluster ${aksClusterDisplayName} in the resource group ${resourceGroupName} in the region ${azureRegionDisplayName} of the Azure subscription ${subscriptionDisplayName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 ExocomputeAzureTeardownJobCanceled
 
@@ -888,11 +746,9 @@ ExocomputeAzureTeardownJobCanceled
 Canceled termination of the Azure Kubernetes Cluster ${aksClusterDisplayName} in the resource group ${resourceGroupName} in the region ${regionName} of the Azure subscription ${subscriptionName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |              |        |
-| -------- | ------------ | ------ |
-| **Info** | **Canceled** | **No** |
+| Severity | Status       | Audit Event |
+| -------- | ------------ | ----------- |
+| **Info** | **Canceled** | **No**      |
 
 ExocomputeAzureTeardownJobCanceling
 
@@ -900,11 +756,9 @@ ExocomputeAzureTeardownJobCanceling
 Canceling termination of the Azure Kubernetes Cluster ${aksClusterDisplayName} in the resource group ${resourceGroupName} in the region ${regionName} of the Azure subscription ${subscriptionName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |               |        |
-| -------- | ------------- | ------ |
-| **Info** | **Canceling** | **No** |
+| Severity | Status        | Audit Event |
+| -------- | ------------- | ----------- |
+| **Info** | **Canceling** | **No**      |
 
 ExocomputeAzureTeardownJobFailed
 
@@ -912,11 +766,9 @@ ExocomputeAzureTeardownJobFailed
 Failed to terminate the Azure Kubernetes Cluster ${aksClusterDisplayName} in the resource group ${resourceGroupName} in the region ${regionName} of the Azure subscription ${subscriptionName}. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Failure** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **No**      |
 
 ExocomputeAzureTeardownJobStarted
 
@@ -924,11 +776,9 @@ ExocomputeAzureTeardownJobStarted
 Terminating the Azure Kubernetes Cluster ${aksClusterDisplayName} in the resource group ${resourceGroupName} in the region ${regionName} of the Azure subscription ${subscriptionName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 ExocomputeAzureTeardownJobSucceeded
 
@@ -936,11 +786,9 @@ ExocomputeAzureTeardownJobSucceeded
 Successfully terminated the Azure Kubernetes Cluster ${aksClusterDisplayName} in the resource group ${resourceGroupName} in the region ${regionName} of the Azure subscription ${subscriptionName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 ExocomputeCloudNativeReconcilerJobCanceled
 
@@ -948,11 +796,9 @@ ExocomputeCloudNativeReconcilerJobCanceled
 Canceled verification and configuration of the customer managed cluster ${clusterDisplayName} in the ${cloudAccountDisplayName} ${cloudTypeDisplayName} account in the ${regionDisplayName} region.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |              |        |
-| -------- | ------------ | ------ |
-| **Info** | **Canceled** | **No** |
+| Severity | Status       | Audit Event |
+| -------- | ------------ | ----------- |
+| **Info** | **Canceled** | **No**      |
 
 ExocomputeCloudNativeReconcilerJobCanceling
 
@@ -960,11 +806,9 @@ ExocomputeCloudNativeReconcilerJobCanceling
 Canceling verification and configuration of the customer managed cluster ${clusterDisplayName} in the ${cloudAccountDisplayName} ${cloudTypeDisplayName} account in the ${regionDisplayName} region.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |               |        |
-| -------- | ------------- | ------ |
-| **Info** | **Canceling** | **No** |
+| Severity | Status        | Audit Event |
+| -------- | ------------- | ----------- |
+| **Info** | **Canceling** | **No**      |
 
 ExocomputeCloudNativeReconcilerJobFailed
 
@@ -972,11 +816,9 @@ ExocomputeCloudNativeReconcilerJobFailed
 Failed to verify and configure the customer managed cluster ${clusterDisplayName} in the ${cloudAccountDisplayName} ${cloudTypeDisplayName} account in the ${regionDisplayName} region. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Failure** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **No**      |
 
 ExocomputeCloudNativeReconcilerJobStarted
 
@@ -984,11 +826,9 @@ ExocomputeCloudNativeReconcilerJobStarted
 Started verification and configuration of the customer managed cluster  ${clusterDisplayName} in the ${cloudAccountDisplayName} ${cloudTypeDisplayName} account in the ${regionDisplayName} region.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 ExocomputeCloudNativeReconcilerJobSucceeded
 
@@ -996,11 +836,9 @@ ExocomputeCloudNativeReconcilerJobSucceeded
 Successfully verified and configured customer managed cluster  ${clusterDisplayName} in the ${cloudAccountDisplayName}  ${cloudTypeDisplayName} account in the ${regionDisplayName} region.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 ExocomputeCustomerKMSSaved
 
@@ -1008,11 +846,9 @@ ExocomputeCustomerKMSSaved
 User ${userEmail} entered customer KMS details for organization (${orgId}). Validated and persisted for key ${keyName} in vault ${vaultName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 ExocomputeGCPSetupJobCanceled
 
@@ -1020,11 +856,9 @@ ExocomputeGCPSetupJobCanceled
 Canceled setup of the GKE cluster in the ${gcpProjectDisplayName} GCP project in the ${regionDisplayName} region.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |              |        |
-| -------- | ------------ | ------ |
-| **Info** | **Canceled** | **No** |
+| Severity | Status       | Audit Event |
+| -------- | ------------ | ----------- |
+| **Info** | **Canceled** | **No**      |
 
 ExocomputeGCPSetupJobCanceling
 
@@ -1032,11 +866,9 @@ ExocomputeGCPSetupJobCanceling
 Canceling setup of the GKE cluster in the ${gcpProjectDisplayName} GCP project in the ${regionDisplayName} region.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |               |        |
-| -------- | ------------- | ------ |
-| **Info** | **Canceling** | **No** |
+| Severity | Status        | Audit Event |
+| -------- | ------------- | ----------- |
+| **Info** | **Canceling** | **No**      |
 
 ExocomputeGCPSetupJobFailed
 
@@ -1044,11 +876,9 @@ ExocomputeGCPSetupJobFailed
 Failed to setup GKE cluster in the ${gcpProjectDisplayName} GCP project in the ${regionDisplayName} region. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Failure** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **No**      |
 
 ExocomputeGCPSetupJobStarted
 
@@ -1056,11 +886,9 @@ ExocomputeGCPSetupJobStarted
 Started setup of the GKE cluster in the ${gcpProjectDisplayName} GCP project in the ${regionDisplayName} region.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 ExocomputeGCPSetupJobSucceeded
 
@@ -1068,11 +896,9 @@ ExocomputeGCPSetupJobSucceeded
 Successfully set up GKE cluster in the ${gcpProjectDisplayName} GCP project in the ${regionDisplayName} region.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 ExocomputeGCPTeardownJobCanceled
 
@@ -1080,11 +906,9 @@ ExocomputeGCPTeardownJobCanceled
 Canceled termination of the ${gkeClusterDisplayName} GKE cluster in the  ${gcpProjectDisplayName} GCP project in the ${regionDisplayName} region.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |              |        |
-| -------- | ------------ | ------ |
-| **Info** | **Canceled** | **No** |
+| Severity | Status       | Audit Event |
+| -------- | ------------ | ----------- |
+| **Info** | **Canceled** | **No**      |
 
 ExocomputeGCPTeardownJobCanceling
 
@@ -1092,11 +916,9 @@ ExocomputeGCPTeardownJobCanceling
 Canceling termination of the ${gkeClusterDisplayName} GKE cluster in the ${gcpProjectDisplayName} GCP project in the ${regionDisplayName} region.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |               |        |
-| -------- | ------------- | ------ |
-| **Info** | **Canceling** | **No** |
+| Severity | Status        | Audit Event |
+| -------- | ------------- | ----------- |
+| **Info** | **Canceling** | **No**      |
 
 ExocomputeGCPTeardownJobFailed
 
@@ -1104,11 +926,9 @@ ExocomputeGCPTeardownJobFailed
 Failed to terminate the ${gkeClusterDisplayName} GKE cluster in the  ${gcpProjectDisplayName} GCP project in the ${regionDisplayName} region. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Failure** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **No**      |
 
 ExocomputeGCPTeardownJobStarted
 
@@ -1116,11 +936,9 @@ ExocomputeGCPTeardownJobStarted
 Terminating the ${gkeClusterDisplayName} GKE cluster in the ${gcpProjectDisplayName} GCP project in the ${regionDisplayName} region.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 ExocomputeGCPTeardownJobSucceeded
 
@@ -1128,11 +946,9 @@ ExocomputeGCPTeardownJobSucceeded
 Successfully terminated the ${gkeClusterDisplayName} GKE cluster in the  ${gcpProjectDisplayName} GCP account in the ${regionDisplayName} region.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 ExocomputeResourceProvideRegistrationCompleted
 
@@ -1140,11 +956,9 @@ ExocomputeResourceProvideRegistrationCompleted
 Completed registration of Azure Resource Providers for subscription ${subscriptionID}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 ExocomputeResourceProvideRegistrationFailed
 
@@ -1152,11 +966,9 @@ ExocomputeResourceProvideRegistrationFailed
 Failed during registration of Azure Resource Providers for subscription ${subscriptionID}.
 ```
 
-Severity | Status | Audit Event | |
-
-|             |             |        |
-| ----------- | ----------- | ------ |
-| **Warning** | **Failure** | **No** |
+| Severity    | Status      | Audit Event |
+| ----------- | ----------- | ----------- |
+| **Warning** | **Failure** | **No**      |
 
 ExocomputeResourceProvideRegistrationStarted
 
@@ -1164,11 +976,9 @@ ExocomputeResourceProvideRegistrationStarted
 Started registration of Azure Resource Providers for subscription ${subscriptionID}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Running** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Running** | **No**      |
 
 HealthCheckTaskFailed
 
@@ -1176,11 +986,9 @@ HealthCheckTaskFailed
 Failed health check for the Kubernetes cluster. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|             |                 |        |
-| ----------- | --------------- | ------ |
-| **Warning** | **TaskFailure** | **No** |
+| Severity    | Status          | Audit Event |
+| ----------- | --------------- | ----------- |
+| **Warning** | **TaskFailure** | **No**      |
 
 HealthCheckTaskFailedForPoweredOffCluster
 
@@ -1188,11 +996,9 @@ HealthCheckTaskFailedForPoweredOffCluster
 The powered-off AKS cluster, ${clusterName}, in resource group, ${rgName},  within Azure subscription, ${subscriptionID} failed the health check.  You can either start the AKS cluster to avoid data protection compliance  issues or delete the M365 subscription if you want to power down the  AKS cluster permanently.
 ```
 
-Severity | Status | Audit Event | |
-
-|             |                 |        |
-| ----------- | --------------- | ------ |
-| **Warning** | **TaskFailure** | **No** |
+| Severity    | Status          | Audit Event |
+| ----------- | --------------- | ----------- |
+| **Warning** | **TaskFailure** | **No**      |
 
 HealthCheckTaskStarted
 
@@ -1200,11 +1006,9 @@ HealthCheckTaskStarted
 Checking health of the Kubernetes Cluster.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Running** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Running** | **No**      |
 
 HealthCheckTaskSucceeded
 
@@ -1212,11 +1016,9 @@ HealthCheckTaskSucceeded
 Successfully completed health check for the Kubernetes Cluster.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 HealthCheckTaskWarning
 
@@ -1224,11 +1026,9 @@ HealthCheckTaskWarning
 ${error}
 ```
 
-Severity | Status | Audit Event | |
-
-|             |             |        |
-| ----------- | ----------- | ------ |
-| **Warning** | **Failure** | **No** |
+| Severity    | Status      | Audit Event |
+| ----------- | ----------- | ----------- |
+| **Warning** | **Failure** | **No**      |
 
 LaunchAKSClusterTaskFailed
 
@@ -1236,11 +1036,9 @@ LaunchAKSClusterTaskFailed
 Failed to launch the Azure Kubernetes Cluster in the resource group ${resourceGroupDisplayName} in the region ${azureRegionDisplayName} of the Azure subscription ${subscriptionDisplayName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|             |                 |        |
-| ----------- | --------------- | ------ |
-| **Warning** | **TaskFailure** | **No** |
+| Severity    | Status          | Audit Event |
+| ----------- | --------------- | ----------- |
+| **Warning** | **TaskFailure** | **No**      |
 
 LaunchAKSClusterTaskStarted
 
@@ -1248,11 +1046,9 @@ LaunchAKSClusterTaskStarted
 Launching the Azure Kubernetes Cluster in the resource group ${resourceGroupDisplayName} in the region ${azureRegionDisplayName} of the Azure subscription ${subscriptionDisplayName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Running** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Running** | **No**      |
 
 LaunchAKSClusterTaskSucceeded
 
@@ -1260,11 +1056,9 @@ LaunchAKSClusterTaskSucceeded
 Successfully launched the Azure Kubernetes Cluster ${aksClusterDisplayName} in the resource group ${resourceGroupDisplayName} in the region ${azureRegionDisplayName} of the Azure subscription ${subscriptionDisplayName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 LaunchEKSClusterTaskFailed
 
@@ -1272,11 +1066,9 @@ LaunchEKSClusterTaskFailed
 Failed to launch the ${eksClusterDisplayName} EKS cluster.
 ```
 
-Severity | Status | Audit Event | |
-
-|             |                 |        |
-| ----------- | --------------- | ------ |
-| **Warning** | **TaskFailure** | **No** |
+| Severity    | Status          | Audit Event |
+| ----------- | --------------- | ----------- |
+| **Warning** | **TaskFailure** | **No**      |
 
 LaunchEKSClusterTaskStarted
 
@@ -1284,11 +1076,9 @@ LaunchEKSClusterTaskStarted
 Launching the ${eksClusterDisplayName} EKS cluster.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Running** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Running** | **No**      |
 
 LaunchEKSClusterTaskSucceeded
 
@@ -1296,11 +1086,9 @@ LaunchEKSClusterTaskSucceeded
 Successfully launched the ${eksClusterDisplayName} EKS cluster.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 LaunchGKEClusterTaskFailed
 
@@ -1308,11 +1096,9 @@ LaunchGKEClusterTaskFailed
 Failed to launch the ${gkeClusterDisplayName} GKE cluster in the  ${gcpProjectDisplayName} GCP project in the ${regionDisplayName} region.
 ```
 
-Severity | Status | Audit Event | |
-
-|             |                 |        |
-| ----------- | --------------- | ------ |
-| **Warning** | **TaskFailure** | **No** |
+| Severity    | Status          | Audit Event |
+| ----------- | --------------- | ----------- |
+| **Warning** | **TaskFailure** | **No**      |
 
 LaunchGKEClusterTaskStarted
 
@@ -1320,11 +1106,9 @@ LaunchGKEClusterTaskStarted
 Launching the ${gkeClusterDisplayName} GKE cluster in the  ${gcpProjectDisplayName} GCP project in the ${regionDisplayName} region.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Running** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Running** | **No**      |
 
 LaunchGKEClusterTaskSucceeded
 
@@ -1332,11 +1116,9 @@ LaunchGKEClusterTaskSucceeded
 Successfully launched the ${gkeClusterDisplayName} GKE cluster in the  ${gcpProjectDisplayName} GCP project in the ${regionDisplayName} region.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 LaunchWorkerNodesTaskFailed
 
@@ -1344,11 +1126,9 @@ LaunchWorkerNodesTaskFailed
 Failed to launch worker nodes in the ${eksClusterDisplayName} EKS cluster.
 ```
 
-Severity | Status | Audit Event | |
-
-|             |                 |        |
-| ----------- | --------------- | ------ |
-| **Warning** | **TaskFailure** | **No** |
+| Severity    | Status          | Audit Event |
+| ----------- | --------------- | ----------- |
+| **Warning** | **TaskFailure** | **No**      |
 
 LaunchWorkerNodesTaskStarted
 
@@ -1356,11 +1136,9 @@ LaunchWorkerNodesTaskStarted
 Launching worker nodes in the ${eksClusterDisplayName} EKS cluster.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Running** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Running** | **No**      |
 
 LaunchWorkerNodesTaskSucceeded
 
@@ -1368,11 +1146,9 @@ LaunchWorkerNodesTaskSucceeded
 Launched worker nodes in the ${eksClusterDisplayName} EKS cluster.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 O365CleanStaleResources
 
@@ -1380,11 +1156,9 @@ O365CleanStaleResources
 Please delete following stale resource from Azure Portal: ${resources}.
 ```
 
-Severity | Status | Audit Event | |
-
-|             |             |        |
-| ----------- | ----------- | ------ |
-| **Warning** | **Failure** | **No** |
+| Severity    | Status      | Audit Event |
+| ----------- | ----------- | ----------- |
+| **Warning** | **Failure** | **No**      |
 
 O365SetupExocomputeFailed
 
@@ -1392,11 +1166,9 @@ O365SetupExocomputeFailed
 ${userID} failed to deploy Rubrik Office 365 protection software in ${exocomputeName}. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |         |
-| ------------ | ----------- | ------- |
-| **Critical** | **Failure** | **Yes** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **Yes**     |
 
 O365SetupExocomputeFailed
 
@@ -1404,11 +1176,9 @@ O365SetupExocomputeFailed
 Failed to deploy Rubrik Office 365 protection software in ${exocomputeName}: ${reason} (Error ID: ${errorID})
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Failure** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **No**      |
 
 O365SetupExocomputeStarted
 
@@ -1416,11 +1186,9 @@ O365SetupExocomputeStarted
 ${userID} started deploying Rubrik Office 365 protection software in ${exocomputeName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 O365SetupExocomputeStarted
 
@@ -1428,11 +1196,9 @@ O365SetupExocomputeStarted
 Deploying Rubrik Office 365 protection software in ${exocomputeName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Running** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Running** | **No**      |
 
 O365SetupExocomputeSucceeded
 
@@ -1440,11 +1206,9 @@ O365SetupExocomputeSucceeded
 Successfully deployed Rubrik Office 365 protection software in ${exocomputeName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 O365SetupResourceStarted
 
@@ -1452,11 +1216,9 @@ O365SetupResourceStarted
 Setting up ${resource} in ${exocomputeName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Running** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Running** | **No**      |
 
 O365SetupResourceSucceeded
 
@@ -1464,11 +1226,9 @@ O365SetupResourceSucceeded
 Successfully set up ${resource} in ${exocomputeName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 SetupClusterTaskFailed
 
@@ -1476,11 +1236,9 @@ SetupClusterTaskFailed
 Failed to configure the customer managed cluster ${clusterDisplayName}. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|             |                 |        |
-| ----------- | --------------- | ------ |
-| **Warning** | **TaskFailure** | **No** |
+| Severity    | Status          | Audit Event |
+| ----------- | --------------- | ----------- |
+| **Warning** | **TaskFailure** | **No**      |
 
 SetupClusterTaskStarted
 
@@ -1488,11 +1246,9 @@ SetupClusterTaskStarted
 Configuring the customer managed cluster ${clusterDisplayName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Running** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Running** | **No**      |
 
 SetupClusterTaskSucceeded
 
@@ -1500,11 +1256,9 @@ SetupClusterTaskSucceeded
 Successfully configured the customer managed cluster ${clusterDisplayName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 SetupEKSClusterTaskFailed
 
@@ -1512,11 +1266,9 @@ SetupEKSClusterTaskFailed
 Failed to configure the ${eksClusterDisplayName} EKS cluster.
 ```
 
-Severity | Status | Audit Event | |
-
-|             |                 |        |
-| ----------- | --------------- | ------ |
-| **Warning** | **TaskFailure** | **No** |
+| Severity    | Status          | Audit Event |
+| ----------- | --------------- | ----------- |
+| **Warning** | **TaskFailure** | **No**      |
 
 SetupEKSClusterTaskStarted
 
@@ -1524,11 +1276,9 @@ SetupEKSClusterTaskStarted
 Configuring the ${eksClusterDisplayName} EKS cluster.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Running** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Running** | **No**      |
 
 SetupEKSClusterTaskSucceeded
 
@@ -1536,11 +1286,9 @@ SetupEKSClusterTaskSucceeded
 Successfully configured the ${eksClusterDisplayName} EKS cluster.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 SetupNetworkingTaskFailed
 
@@ -1548,11 +1296,9 @@ SetupNetworkingTaskFailed
 Failed to configure the networking resources for GKE cluster in the  ${gcpProjectDisplayName} GCP project in the ${regionDisplayName} region.
 ```
 
-Severity | Status | Audit Event | |
-
-|             |                 |        |
-| ----------- | --------------- | ------ |
-| **Warning** | **TaskFailure** | **No** |
+| Severity    | Status          | Audit Event |
+| ----------- | --------------- | ----------- |
+| **Warning** | **TaskFailure** | **No**      |
 
 SetupNetworkingTaskStarted
 
@@ -1560,11 +1306,9 @@ SetupNetworkingTaskStarted
 Configuring the networking resources for GKE cluster in the  ${gcpProjectDisplayName} GCP project in the ${regionDisplayName} region.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Running** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Running** | **No**      |
 
 SetupNetworkingTaskSucceeded
 
@@ -1572,11 +1316,9 @@ SetupNetworkingTaskSucceeded
 Successfully configured the networking resources for GKE cluster in the  ${gcpProjectDisplayName} GCP project in the ${regionDisplayName} region.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 ## kms_key_vault
 
@@ -1588,11 +1330,9 @@ KmsKeyVaultHealthCheckFailure
 Connectivity health check failed for KMS ${kmsName} of type ${kmsType}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Failure** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **No**      |
 
 ## korg
 
@@ -1604,11 +1344,9 @@ CanaryFailed
 Canary job failed for object ${object}. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|             |             |        |
-| ----------- | ----------- | ------ |
-| **Warning** | **Failure** | **No** |
+| Severity    | Status      | Audit Event |
+| ----------- | ----------- | ----------- |
+| **Warning** | **Failure** | **No**      |
 
 CanaryFinished
 
@@ -1616,11 +1354,9 @@ CanaryFinished
 Canary job finished for object ${object}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 CanaryStarted
 
@@ -1628,11 +1364,9 @@ CanaryStarted
 Canary job started for object ${object}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Running** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Running** | **No**      |
 
 JobCanceled
 
@@ -1640,11 +1374,9 @@ JobCanceled
 Job instance ${jobInstanceID} canceled.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |              |        |
-| -------- | ------------ | ------ |
-| **Info** | **Canceled** | **No** |
+| Severity | Status       | Audit Event |
+| -------- | ------------ | ----------- |
+| **Info** | **Canceled** | **No**      |
 
 JobCancellationIssued
 
@@ -1652,11 +1384,9 @@ JobCancellationIssued
 Cancellation request issued for job instance ${jobInstanceID}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |               |        |
-| -------- | ------------- | ------ |
-| **Info** | **Canceling** | **No** |
+| Severity | Status        | Audit Event |
+| -------- | ------------- | ----------- |
+| **Info** | **Canceling** | **No**      |
 
 JobCancellationIssuedByUser
 
@@ -1664,11 +1394,9 @@ JobCancellationIssuedByUser
 Cancellation request received for job instance ${jobInstanceID} by user ${user}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 NonTerminalSeriesFailureRetry
 
@@ -1676,11 +1404,9 @@ NonTerminalSeriesFailureRetry
 The failed job will be retried automatically.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 ## o365
 
@@ -1692,11 +1418,9 @@ InsufficientO365AppsOfType
 The number of ${snappableType} apps (${appCount}) authenticated for ${orgName} is not sufficient to meet the configured SLAs. We recommend increasing the number of apps to ${recommendedAppCount}. Add ${snappableType} apps via the Manage Enterprise Apps button on the Microsoft 365 inventory page.
 ```
 
-Severity | Status | Audit Event | |
-
-|             |             |        |
-| ----------- | ----------- | ------ |
-| **Warning** | **Failure** | **No** |
+| Severity    | Status      | Audit Event |
+| ----------- | ----------- | ----------- |
+| **Warning** | **Failure** | **No**      |
 
 M365BackupStorageSyncCanceled
 
@@ -1704,11 +1428,9 @@ M365BackupStorageSyncCanceled
 Canceled backup storage sync for Microsoft 365 subscription ${orgName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |              |        |
-| -------- | ------------ | ------ |
-| **Info** | **Canceled** | **No** |
+| Severity | Status       | Audit Event |
+| -------- | ------------ | ----------- |
+| **Info** | **Canceled** | **No**      |
 
 M365BackupStorageSyncFailed
 
@@ -1716,11 +1438,9 @@ M365BackupStorageSyncFailed
 Failed to complete backup storage sync for Microsoft 365 subscription  ${orgName}. Reason: ${reason}
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Failure** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **No**      |
 
 M365BackupStorageSyncStarted
 
@@ -1728,11 +1448,9 @@ M365BackupStorageSyncStarted
 Started backup storage sync for Microsoft 365 subscription ${orgName}
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 M365BackupStorageSyncStateTransitionStats
 
@@ -1740,11 +1458,9 @@ M365BackupStorageSyncStateTransitionStats
 ${count} object(s) state changed from ${fromState} to ${toState}
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 M365BackupStorageSyncSucceeded
 
@@ -1752,11 +1468,9 @@ M365BackupStorageSyncSucceeded
 Completed backup storage sync for Microsoft 365 subscription ${orgName}
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 O365DeleteOrgFailed
 
@@ -1764,11 +1478,9 @@ O365DeleteOrgFailed
 Failed to delete Microsoft 365 Subscription ${orgName}: ${reason} (Error ID: ${errorID}). For more information on this error please visit https://support.rubrik.com/articles/How_To/000002821
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Failure** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **No**      |
 
 O365DeleteOrgStarted
 
@@ -1776,11 +1488,9 @@ O365DeleteOrgStarted
 Started deletion of O365 Subscription ${orgName}
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Running** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Running** | **No**      |
 
 O365DeleteOrgSucceeded
 
@@ -1788,11 +1498,9 @@ O365DeleteOrgSucceeded
 Successfully deleted Microsoft 365 Subscription ${orgName}
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 O365DeleteOrgTaskFailed
 
@@ -1800,11 +1508,9 @@ O365DeleteOrgTaskFailed
 Failed to delete Microsoft 365 Subscription ${orgName}. Retrying. Reason: ${reason}
 ```
 
-Severity | Status | Audit Event | |
-
-|             |                 |        |
-| ----------- | --------------- | ------ |
-| **Warning** | **TaskFailure** | **No** |
+| Severity    | Status          | Audit Event |
+| ----------- | --------------- | ----------- |
+| **Warning** | **TaskFailure** | **No**      |
 
 O365RefreshOrgAddedDocLibStats
 
@@ -1812,11 +1518,9 @@ O365RefreshOrgAddedDocLibStats
 Discovered ${numAdded} new document libraries
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 O365RefreshOrgAddedSharePointListStats
 
@@ -1824,11 +1528,9 @@ O365RefreshOrgAddedSharePointListStats
 Discovered ${numAdded} new sharepoint lists
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 O365RefreshOrgAddedSiteCollectionStats
 
@@ -1836,11 +1538,9 @@ O365RefreshOrgAddedSiteCollectionStats
 Discovered ${numAdded} new site collections(s)
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 O365RefreshOrgAddedSiteStats
 
@@ -1848,11 +1548,9 @@ O365RefreshOrgAddedSiteStats
 Discovered ${numAdded} new site(s)
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 O365RefreshOrgAddedTeamAndChannelStats
 
@@ -1860,11 +1558,9 @@ O365RefreshOrgAddedTeamAndChannelStats
 Discovered ${numTeamsAdded} new team(s) and ${numChannelsAdded} new channel(s)
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 O365RefreshOrgAddedUserStats
 
@@ -1872,11 +1568,9 @@ O365RefreshOrgAddedUserStats
 Discovered ${numAdded} new user(s)
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 O365RefreshOrgArchivedTeamAndChannelStats
 
@@ -1884,11 +1578,9 @@ O365RefreshOrgArchivedTeamAndChannelStats
 Archived ${numTeamsArchived} team(s) and ${numChannelsArchived} channel(s)
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 O365RefreshOrgCanceled
 
@@ -1896,11 +1588,9 @@ O365RefreshOrgCanceled
 Canceled ${maintenanceType} metadata refresh for subscription ${orgName}
 ```
 
-Severity | Status | Audit Event | |
-
-|          |              |        |
-| -------- | ------------ | ------ |
-| **Info** | **Canceled** | **No** |
+| Severity | Status       | Audit Event |
+| -------- | ------------ | ----------- |
+| **Info** | **Canceled** | **No**      |
 
 O365RefreshOrgNewRegionsStats
 
@@ -1908,11 +1598,9 @@ O365RefreshOrgNewRegionsStats
 Added new M365 regions (${newRegions}) to (${existingRegions}).
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 O365RefreshOrgRemovedSharePointObjectStats
 
@@ -1920,11 +1608,9 @@ O365RefreshOrgRemovedSharePointObjectStats
 Removed ${numRemoved} SharePoint object(s).
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 O365RefreshOrgRemovedUserStats
 
@@ -1932,11 +1618,9 @@ O365RefreshOrgRemovedUserStats
 Removed ${numRemoved} user(s): ${removedUserList}
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 O365RefreshOrgSkippedLockedSiteCollectionStats
 
@@ -1944,11 +1628,9 @@ O365RefreshOrgSkippedLockedSiteCollectionStats
 Skipped ${numSkipped} locked site collections
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 O365RefreshOrgStarted
 
@@ -1956,11 +1638,9 @@ O365RefreshOrgStarted
 Started ${maintenanceType} metadata refresh for subscription ${orgName}
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 O365RefreshOrgSucceeded
 
@@ -1968,11 +1648,9 @@ O365RefreshOrgSucceeded
 Completed ${maintenanceType} metadata refresh for subscription ${orgName}
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 O365RefreshOrgUnverifiedUserStats
 
@@ -1980,11 +1658,9 @@ O365RefreshOrgUnverifiedUserStats
 Unable to verify mailbox access for ${numUnverified} user(s): ${unverifiedUserList}
 ```
 
-Severity | Status | Audit Event | |
-
-|             |                 |        |
-| ----------- | --------------- | ------ |
-| **Warning** | **TaskSuccess** | **No** |
+| Severity    | Status          | Audit Event |
+| ----------- | --------------- | ----------- |
+| **Warning** | **TaskSuccess** | **No**      |
 
 O365RefreshOrgUpdatedDocLibStats
 
@@ -1992,11 +1668,9 @@ O365RefreshOrgUpdatedDocLibStats
 Updated metadata for ${numUpdated} document libraries
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 O365RefreshOrgUpdatedSharePointListStats
 
@@ -2004,11 +1678,9 @@ O365RefreshOrgUpdatedSharePointListStats
 Updated metadata for ${numUpdated} sharepoint lists
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 O365RefreshOrgUpdatedSiteCollectionStats
 
@@ -2016,11 +1688,9 @@ O365RefreshOrgUpdatedSiteCollectionStats
 Updated metadata for ${numUpdated} siteCollections(s)
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 O365RefreshOrgUpdatedSiteStats
 
@@ -2028,11 +1698,9 @@ O365RefreshOrgUpdatedSiteStats
 Updated metadata for ${numUpdated} site(s)
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 O365RefreshOrgUpdatedTeamAndChannelStats
 
@@ -2040,11 +1708,9 @@ O365RefreshOrgUpdatedTeamAndChannelStats
 Updated metadata for ${numTeamsUpdated} team(s) and ${numChannelsUpdated} channel(s)
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 O365RefreshOrgUpdatedUserStats
 
@@ -2052,11 +1718,9 @@ O365RefreshOrgUpdatedUserStats
 Updated metadata for ${numUpdated} user(s)
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 ProtectedMailboxLimitBreach
 
@@ -2064,11 +1728,9 @@ ProtectedMailboxLimitBreach
 We're glad that our protection is helping! We're now protecting more mailboxes than your current licenses allow. We are protecting ${total_protected_licensed_mailbox} licensed mailboxes but the number allowed by your current licenses is ${allowed_protected_licensed_mailbox_limit}. We are protecting ${total_protected_unlicensed_mailbox} shared mailboxes but the number allowed by your current licenses is ${allowed_protected_unlicensed_mailbox_limit}. No need to worry though, we'll keep protecting the excess mailboxes for the next 30 days. During that time please reach out to the Rubrik Sales team to purchase additional licenses, or please remove ${overage_count} mailboxes. Please refer to ${learn_more_link} for more details. Thanks for being a great customer!
 ```
 
-Severity | Status | Audit Event | |
-
-|             |             |        |
-| ----------- | ----------- | ------ |
-| **Warning** | **Success** | **No** |
+| Severity    | Status      | Audit Event |
+| ----------- | ----------- | ----------- |
+| **Warning** | **Success** | **No**      |
 
 ProtectedOneDriveLimitBreach
 
@@ -2076,11 +1738,9 @@ ProtectedOneDriveLimitBreach
 We're glad that our protection is helping! We're now protecting more OneDrives than your current licenses allow. We are protecting ${total_protected_onedrive} OneDrives but the number allowed by your current licenses is ${allowed_protected_onedrive_limit}. No need to worry though, we'll keep protecting the excess OneDrives for the next 30 days. During that time please reach out to the Rubrik Sales team to purchase additional licenses, or please remove ${overage} mailboxes. Please refer to ${learn_more_link} for more details. Thanks for being a great customer!
 ```
 
-Severity | Status | Audit Event | |
-
-|             |             |        |
-| ----------- | ----------- | ------ |
-| **Warning** | **Success** | **No** |
+| Severity    | Status      | Audit Event |
+| ----------- | ----------- | ----------- |
+| **Warning** | **Success** | **No**      |
 
 RefreshO365OrgFailed
 
@@ -2088,11 +1748,9 @@ RefreshO365OrgFailed
 Failed ${maintenanceType} metadata refresh of subscription ${orgName}: ${reason} (Error ID: ${errorID}). For more information on this error please visit https://support.rubrik.com/articles/How_To/000002821
 ```
 
-Severity | Status | Audit Event | |
-
-|             |             |        |
-| ----------- | ----------- | ------ |
-| **Warning** | **Failure** | **No** |
+| Severity    | Status      | Audit Event |
+| ----------- | ----------- | ----------- |
+| **Warning** | **Failure** | **No**      |
 
 ## polaris_disaster_recovery
 
@@ -2104,11 +1762,9 @@ PolarisComponentRecoveryFailure
 Recovery of ${component} failed.
 ```
 
-Severity | Status | Audit Event | |
-
-|             |             |        |
-| ----------- | ----------- | ------ |
-| **Warning** | **Failure** | **No** |
+| Severity    | Status      | Audit Event |
+| ----------- | ----------- | ----------- |
+| **Warning** | **Failure** | **No**      |
 
 PolarisComponentRecoveryStarted
 
@@ -2116,11 +1772,9 @@ PolarisComponentRecoveryStarted
 Recovery of ${component} has begun.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 PolarisComponentRecoverySuccess
 
@@ -2128,11 +1782,9 @@ PolarisComponentRecoverySuccess
 Recovery of ${component} has completed successfully.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 PolarisDisasterRecoveryFailure
 
@@ -2140,11 +1792,9 @@ PolarisDisasterRecoveryFailure
 Disaster recovery failed.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Failure** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **No**      |
 
 PolarisDisasterRecoveryStarted
 
@@ -2152,11 +1802,9 @@ PolarisDisasterRecoveryStarted
 Beginning disaster recovery.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 PolarisDisasterRecoverySuccess
 
@@ -2164,11 +1812,9 @@ PolarisDisasterRecoverySuccess
 Disaster recovery has completed successfully.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 PolarisServiceStartBeginning
 
@@ -2176,11 +1822,9 @@ PolarisServiceStartBeginning
 Returning services to running state.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 PolarisServiceStartFailure
 
@@ -2188,11 +1832,9 @@ PolarisServiceStartFailure
 Failed to bring up services. Please run `cluster disaster_recovery revert` from the Admin CLI.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Failure** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **No**      |
 
 PolarisServiceStartSuccess
 
@@ -2200,11 +1842,9 @@ PolarisServiceStartSuccess
 Services successfully returned to running state.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 ## rcv
 
@@ -2216,11 +1856,9 @@ RcvAccessRemovedNotification
 Access to your Rubrik Cloud Vault (RCV) locations for the ${tier}  tier in ${bundle} with ${redundancy} redundancy was removed on  ${removeAccessDate}. If you don't renew your license, all backups in  these locations will be deleted on ${deleteDataDate}.  To renew your RCV license  and prevent the deletion of your backups, contact your Rubrik account  representative or email sales@rubrik.com.
 ```
 
-Severity | Status | Audit Event | |
-
-|             |             |        |
-| ----------- | ----------- | ------ |
-| **Warning** | **Success** | **No** |
+| Severity    | Status      | Audit Event |
+| ----------- | ----------- | ----------- |
+| **Warning** | **Success** | **No**      |
 
 RcvConsumptionNotification
 
@@ -2228,11 +1866,9 @@ RcvConsumptionNotification
 Your Rubrik Cloud Vault (RCV) locations for the  ${tier} tier in ${bundle} with ${redundancy} redundancy have been  paused. As a result, no new backups can be uploaded. However, you can  still access previously uploaded backups in these locations. Uploaded  backups will expire based on the retention period defined in their  SLA Domains.  To purchase additional RCV capacity, contact  your Rubrik account representative or email sales@rubrik.com.
 ```
 
-Severity | Status | Audit Event | |
-
-|             |             |        |
-| ----------- | ----------- | ------ |
-| **Warning** | **Success** | **No** |
+| Severity    | Status      | Audit Event |
+| ----------- | ----------- | ----------- |
+| **Warning** | **Success** | **No**      |
 
 RcvDataDeletionNotification
 
@@ -2240,11 +1876,9 @@ RcvDataDeletionNotification
 Your backups in Rubrik Cloud Vault (RCV) locations for the ${tier}  tier in ${bundle} with ${redundancy} redundancy were deleted on  ${deleteDataDate}.  Your RCV Locations using RCV  ${tier} tier in ${bundle} regions have been deleted.
 ```
 
-Severity | Status | Audit Event | |
-
-|             |             |        |
-| ----------- | ----------- | ------ |
-| **Warning** | **Success** | **No** |
+| Severity    | Status      | Audit Event |
+| ----------- | ----------- | ----------- |
+| **Warning** | **Success** | **No**      |
 
 RcvExpirationNotification
 
@@ -2252,11 +1886,9 @@ RcvExpirationNotification
 Your Rubrik Cloud Vault (RCV) locations for the  ${tier} tier in ${bundle} with ${redundancy} redundancy were paused. As  a result, no new backups will be uploaded. However, you can still  access previously uploaded backups in these locations. Uploaded backups  will expire based on the retention period defined in their SLA  Domains. If you do not renew your license, your access to these  locations will be removed on ${removeAccessDate}, and all backups  in these locations will be deleted on ${deleteDataDate}.  To renew your RCV  license and prevent the deletion of your backups, contact your Rubrik  account representative or email sales@rubrik.com.
 ```
 
-Severity | Status | Audit Event | |
-
-|             |             |        |
-| ----------- | ----------- | ------ |
-| **Warning** | **Success** | **No** |
+| Severity    | Status      | Audit Event |
+| ----------- | ----------- | ----------- |
+| **Warning** | **Success** | **No**      |
 
 RcvForecastedConsumptionNotification
 
@@ -2264,11 +1896,9 @@ RcvForecastedConsumptionNotification
 Based on your past and current consumption of  Rubrik Cloud Vault (RCV) ${tier} tier in ${bundle} regions,  we have forecasted that your consumption will exceed your  purchased entitlement on ${forecastCapacityExceedDate}.  When you exceed your license, no new backups will be uploaded  to RCV locations in ${tier} tier for ${bundle} regions  but you’ll still be able to access previously uploaded backups  in these locations. Uploaded backups will expire according to the  retention period defined in their SLA Domains.  To purchase additional Rubrik Cloud Vault (RCV) capacity, contact  your Rubrik account representative or email sales@rubrik.com.
 ```
 
-Severity | Status | Audit Event | |
-
-|             |             |        |
-| ----------- | ----------- | ------ |
-| **Warning** | **Success** | **No** |
+| Severity    | Status      | Audit Event |
+| ----------- | ----------- | ----------- |
+| **Warning** | **Success** | **No**      |
 
 RCVPartialExpiryNotification
 
@@ -2276,11 +1906,9 @@ RCVPartialExpiryNotification
 Capacity Expiring: ${expiredSize} TB  Expiration Date: ${expiryDate}  Capacity Not Expiring: ${remainingSize} TB  If you exceed your remaining license of ${remainingSize} TB, the  Rubrik Cloud Vault locations for ${tier} tier in regions that belong to  ${bundle} storage bundle with ${redundancy} redundancy will be paused.  As a result, no new backups can be uploaded but you will still be able  to access previously uploaded backups in these locations. Uploaded  backups will expire according to the retention period defined in their  SLA Domains. To prevent your backups from being paused, contact your  Rubrik account representative or email sales@rubrik.com to purchase  additional Rubrik Cloud Vault capacity.
 ```
 
-Severity | Status | Audit Event | |
-
-|             |             |        |
-| ----------- | ----------- | ------ |
-| **Warning** | **Success** | **No** |
+| Severity    | Status      | Audit Event |
+| ----------- | ----------- | ----------- |
+| **Warning** | **Success** | **No**      |
 
 RcvPercentageConsumptionNotification
 
@@ -2288,11 +1916,9 @@ RcvPercentageConsumptionNotification
 You have used ${percentage} percent of your Rubrik Cloud Vault (RCV) license. Once you have used 100 percent of your licensed capacity, the  Rubrik Cloud Vault (RCV) locations for ${tier} tier in ${bundle} with  ${redundancy} redundancy will be paused. As a result, no new backups  can be uploaded. However, you can still access previously  uploaded backups in these locations. Uploaded backups will expire  based on retention period defined in their SLA Domains.  To prevent your backups from being paused, contact your Rubrik account  representative or email sales@rubrik.com to purchase additional  RCV capacity.
 ```
 
-Severity | Status | Audit Event | |
-
-|             |             |        |
-| ----------- | ----------- | ------ |
-| **Warning** | **Success** | **No** |
+| Severity    | Status      | Audit Event |
+| ----------- | ----------- | ----------- |
+| **Warning** | **Success** | **No**      |
 
 RcvPreliminaryExpirationNotification
 
@@ -2300,11 +1926,9 @@ RcvPreliminaryExpirationNotification
 Your Rubrik Cloud Vault (RCV) locations for the  ${tier} tier in ${bundle}  with ${redundancy} redundancy will be paused on ${expiryDate}. As a  result, no new backups will be uploaded. However, you can still  access previously uploaded backups in these locations. Uploaded backups  will expire based on the retention period defined in their SLA  Domains. If you do not renew your license, your access to these  locations will be removed on ${removeAccessDate}, and all backups  in these locations will be deleted on ${deleteDataDate}.
 ```
 
-Severity | Status | Audit Event | |
-
-|             |             |        |
-| ----------- | ----------- | ------ |
-| **Warning** | **Success** | **No** |
+| Severity    | Status      | Audit Event |
+| ----------- | ----------- | ----------- |
+| **Warning** | **Success** | **No**      |
 
 ## saasapps
 
@@ -2316,11 +1940,9 @@ SaasAppsDeleteOrgFailed
 Failed to delete SaaS organization ${orgName}: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Failure** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **No**      |
 
 SaasAppsDeleteOrgStarted
 
@@ -2328,11 +1950,9 @@ SaasAppsDeleteOrgStarted
 Started the deletion of SaaS organization ${orgName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 SaasAppsDeleteOrgSucceeded
 
@@ -2340,11 +1960,9 @@ SaasAppsDeleteOrgSucceeded
 Successfully deleted SaaS organization ${orgName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 ## snapshot
 
@@ -2356,11 +1974,9 @@ SnapshotOutOfCompliance
 The following snappable is out of SLA compliance due to missed local snapshot(s): ${snappableName}
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Failure** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **No**      |
 
 ## support_user_access
 
@@ -2372,11 +1988,9 @@ SupportUserAccessDisabled
 ${accessRevokerName} revoked read-only access to view RSC account as ${impersonatedUserName} from Rubrik support staff.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 SupportUserAccessDisabled
 
@@ -2384,11 +1998,9 @@ SupportUserAccessDisabled
 ${accessRevokerName} revoked read-only access to view RSC account as ${impersonatedUserName} from Rubrik support staff.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 SupportUserAccessEnabled
 
@@ -2396,11 +2008,9 @@ SupportUserAccessEnabled
 ${accessProviderName} granted read-only access to view RSC account as ${impersonatedUserName} to Rubrik support staff.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 SupportUserAccessEnabled
 
@@ -2408,11 +2018,9 @@ SupportUserAccessEnabled
 ${accessProviderUserName} granted read-only access to Rubrik support staff for support ticket ${ticketId}.  Rubrik support staff will have read-only view as ${impersonatedUserName} from ${startTime} till ${endTime}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 SupportUserAccessExpired
 
@@ -2420,11 +2028,9 @@ SupportUserAccessExpired
 Access provided to Rubrik Support staff by ${accessProviderUserName} to impersonate ${impersonatedUserName} has expired.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 SupportUserAccessModified
 
@@ -2432,11 +2038,9 @@ SupportUserAccessModified
 ${accessModifierName} updated Rubrik support staff’s read-only access timings to RSC account  as ${impersonatedUserName} from ${previousDuration} hours to ${newDuration} hours.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 SupportUserAccessModified
 
@@ -2444,11 +2048,9 @@ SupportUserAccessModified
 ${accessModifierName} updated Rubrik support staff’s read-only access timings to RSC account  as ${impersonatedUserName} from ${previousDuration} hours to ${newDuration} hours.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 SupportUserLoggedIn
 
@@ -2456,11 +2058,9 @@ SupportUserLoggedIn
 Rubrik support staff logged in as ${impersonatedUserName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 SupportUserLoggedOut
 
@@ -2468,11 +2068,9 @@ SupportUserLoggedOut
 Rubrik support staff viewing RSC account as ${impersonatedUserName} logged out.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 ## trident
 
@@ -2484,11 +2082,9 @@ CPUUtilizationWarning
 CPU Utilization Warning. Reasons: ${reasons}.
 ```
 
-Severity | Status | Audit Event | |
-
-|             |             |        |
-| ----------- | ----------- | ------ |
-| **Warning** | **Failure** | **No** |
+| Severity    | Status      | Audit Event |
+| ----------- | ----------- | ----------- |
+| **Warning** | **Failure** | **No**      |
 
 DiskUtilizationWarning
 
@@ -2496,11 +2092,9 @@ DiskUtilizationWarning
 Disk Utilization Warning. Reasons: ${reasons}.
 ```
 
-Severity | Status | Audit Event | |
-
-|             |             |        |
-| ----------- | ----------- | ------ |
-| **Warning** | **Failure** | **No** |
+| Severity    | Status      | Audit Event |
+| ----------- | ----------- | ----------- |
+| **Warning** | **Failure** | **No**      |
 
 MemoryUtilizationWarning
 
@@ -2508,11 +2102,9 @@ MemoryUtilizationWarning
 Memory Utilization Warning. Reasons: ${reasons}.
 ```
 
-Severity | Status | Audit Event | |
-
-|             |             |        |
-| ----------- | ----------- | ------ |
-| **Warning** | **Failure** | **No** |
+| Severity    | Status      | Audit Event |
+| ----------- | ----------- | ----------- |
+| **Warning** | **Failure** | **No**      |
 
 PolarisHealthDegraded
 
@@ -2520,11 +2112,9 @@ PolarisHealthDegraded
 Rubrik deployment status is ${node_status}. Reasons: ${reasons}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Failure** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **No**      |
 
 PolarisHealthOk
 
@@ -2532,8 +2122,6 @@ PolarisHealthOk
 Rubrik deployment status is ${node_status}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |

@@ -8,11 +8,9 @@ RetentionSLAAssignmentOnClusterObjectsProcessed
 ${userEmail} successfully initiated request to assign retention SLA ${slaName} to objects ${objectNameList} on cluster ${clusterName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 RetentionSLAAssignmentOnClusterSnapshotsProcessed
 
@@ -20,11 +18,9 @@ RetentionSLAAssignmentOnClusterSnapshotsProcessed
 ${userEmail} successfully initiated request to assign retention SLA ${slaName} to snapshots ${snapshotIdList} on cluster ${clusterName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 RetentionSLAAssignmentOnPolarisObjectsProcessed
 
@@ -32,11 +28,9 @@ RetentionSLAAssignmentOnPolarisObjectsProcessed
 ${userEmail} successfully assigned retention SLA ${slaName}. to objects ${objectNameList} on RSC
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 RetentionSLAAssignmentOnPolarisObjectsQueued
 
@@ -44,11 +38,9 @@ RetentionSLAAssignmentOnPolarisObjectsQueued
 ${userEmail} successfully initiated request to assign retention SLA Domain ${slaName} to objects ${objectNameList} on RSC
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 RetentionSLAAssignmentOnPolarisSnapshotsProcessed
 
@@ -56,11 +48,9 @@ RetentionSLAAssignmentOnPolarisSnapshotsProcessed
 ${userEmail} successfully assigned retention SLA ${slaName}. to snapshots ${snapshotIdList} on RSC
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 SLAAssignmentOnClusterProcessed
 
@@ -68,11 +58,9 @@ SLAAssignmentOnClusterProcessed
 ${userEmail} successfully initiated request to assign SLA Domain ${slaName} to ${objectList} on cluster ${clusterName}
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 SLAAssignmentOnPolarisProcessed
 
@@ -80,11 +68,9 @@ SLAAssignmentOnPolarisProcessed
 ${userEmail} successfully assigned SLA ${slaName} to ${objectList} on RSC
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 SLAAssignmentOnPolarisQueued
 
@@ -92,8 +78,6 @@ SLAAssignmentOnPolarisQueued
 ${userEmail} successfully initiated request to assign SLA Domain  ${slaName} to ${objectList} on RSC
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |

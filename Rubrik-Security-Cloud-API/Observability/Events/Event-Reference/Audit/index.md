@@ -8,11 +8,9 @@ ActiveDirectoryForestTransitionCompleted
 ${username} transitioned from Domain view to Forest view.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 BrandLogoDeleted
 
@@ -20,11 +18,9 @@ BrandLogoDeleted
 Brand logo was deleted.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 BrandLogoDeleteFailed
 
@@ -32,11 +28,9 @@ BrandLogoDeleteFailed
 Unable to delete brand logo. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 BrandLogoUpdated
 
@@ -44,11 +38,9 @@ BrandLogoUpdated
 Brand logo or logo URL was updated.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 BrandLogoUpdateFailed
 
@@ -56,11 +48,9 @@ BrandLogoUpdateFailed
 Unable to update brand logo or logo URL. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 DigestListEmailDeleted
 
@@ -68,11 +58,9 @@ DigestListEmailDeleted
 ${userEmail} deleted custom event digest, ${digestListName}, which sent emails to ${emailAddressList}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 DigestListEmailUpdated
 
@@ -80,11 +68,9 @@ DigestListEmailUpdated
 ${userEmail} saved custom event digest, ${digestListName}, which sends emails to ${emailAddressList}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 EulaAccepted
 
@@ -92,11 +78,9 @@ EulaAccepted
 ${userEmail} accepted the EULA.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 PactsafeEulaAccepted
 
@@ -104,11 +88,9 @@ PactsafeEulaAccepted
 ${userEmail} accepted the Rubrik End User Licence Agreement.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 PactsafeEulaSnoozed
 
@@ -116,11 +98,9 @@ PactsafeEulaSnoozed
 ${userEmail} snoozed the Rubrik End User Licence Agreement for ${numDays} days.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 UpgradeToRSCFailure
 
@@ -128,11 +108,9 @@ UpgradeToRSCFailure
 ${userEmail} has failed to upgrade the account to RSC at ${upgradeTime}. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 UpgradeToRSCSuccess
 
@@ -140,11 +118,9 @@ UpgradeToRSCSuccess
 ${userEmail} has upgraded the account to RSC at ${upgradeTime}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 UrlChangeSuccess
 
@@ -152,11 +128,9 @@ UrlChangeSuccess
 The RSC URL has been changed from ${oldUrl} to ${newUrl}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 ## cdm_rbac_migration
 
@@ -168,11 +142,9 @@ DownloadCdmRbacSummaryStarted
 ${username} started a job to download the CDM RBAC summary from ${clusterName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 DownloadCdmRbacSummaryStartFailed
 
@@ -180,11 +152,9 @@ DownloadCdmRbacSummaryStartFailed
 ${username} failed to start a job to download the CDM RBAC summary from ${clusterName}.  Failure reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 FetchCDMRbacConfigStarted
 
@@ -192,11 +162,9 @@ FetchCDMRbacConfigStarted
 ${username} started a job to fetch the CDM RBAC configurations from ${clusterName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 FetchCDMRbacConfigStartFailed
 
@@ -204,11 +172,9 @@ FetchCDMRbacConfigStartFailed
 ${username} failed to start a job to fetch the CDM RBAC configurations from ${clusterName}. Failure reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 MigrateCDMRbacConfigStarted
 
@@ -216,11 +182,9 @@ MigrateCDMRbacConfigStarted
 ${username} started a job to migrate the CDM RBAC configurations from ${clusterName} to RSC.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 MigrateCDMRbacConfigStartFailed
 
@@ -228,11 +192,9 @@ MigrateCDMRbacConfigStartFailed
 ${username} failed to start a job to migrate the CDM RBAC configurations from ${clusterName} to  RSC. Failure reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 ## chatbot
 
@@ -244,11 +206,9 @@ CreatedChatbot
 ${userEmail} created chatbot ${chatbotName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 DeletedChatbot
 
@@ -256,11 +216,9 @@ DeletedChatbot
 ${userEmail} deleted the chatbot, ${chatbotName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 UpdatedChatbotNoNameChange
 
@@ -268,11 +226,9 @@ UpdatedChatbotNoNameChange
 ${userEmail} updated chatbot. Name unchaged: ${chatbotName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 UpdatedChatbotWithNameChange
 
@@ -280,11 +236,9 @@ UpdatedChatbotWithNameChange
 ${userEmail} updated chatbot. Renamed from ${oldChatbotName} to ${newChatbotName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 ## cloudaccounts
 
@@ -296,11 +250,9 @@ AzureSqlServerCreateSuccessful
 Successfully created Azure SQL Server ${sqlServerName} in resource group ${resourceGroupName} in subscription ${subscriptionNativeID}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 AzureSqlServerDeleteSuccessful
 
@@ -308,11 +260,9 @@ AzureSqlServerDeleteSuccessful
 ${userName} successfully deleted Azure SQL Server ${sqlServerName} in resource group ${resourceGroupName} in subscription ${subscriptionNativeID}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 AzureSqlServerUpdateSuccessful
 
@@ -320,11 +270,9 @@ AzureSqlServerUpdateSuccessful
 Successfully updated Azure SQL Server ${sqlServerName} in resource group ${resourceGroupName} in subscription ${subscriptionNativeID}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 BYOKExocomputeClusterConnectSuccessful
 
@@ -332,11 +280,9 @@ BYOKExocomputeClusterConnectSuccessful
 ${userEmail} successfully generated cluster setup YAML for Exocompute cluster ${clusterName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 CloudaccountsPrivilegeDeEscalationSuccessful
 
@@ -344,11 +290,9 @@ CloudaccountsPrivilegeDeEscalationSuccessful
 ${userEmail} dropped a privilege escalation session for Tenant ${tenantDomain} with ID ${tenantNativeID}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 CloudaccountsPrivilegeEscalationSuccessful
 
@@ -356,11 +300,9 @@ CloudaccountsPrivilegeEscalationSuccessful
 ${userEmail} initiated a privilege escalation session for Tenant ${tenantDomain} with ID ${tenantNativeID}, using OAuth.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 ## fedramp
 
@@ -372,11 +314,9 @@ FedrampBoundaryExited
 ${userEmail} acknowledged that they are exiting the FedRAMP boundary and navigated to ${link}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 ## integrations
 
@@ -388,11 +328,9 @@ CreateIntegration
 User ${userID} added '${integrationType}' integration.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 CreateIntegrationFailed
 
@@ -400,11 +338,9 @@ CreateIntegrationFailed
 User ${userID} failed to add '${integrationType}' integration.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |         |
-| ------------ | ----------- | ------- |
-| **Critical** | **Failure** | **Yes** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **Yes**     |
 
 DeleteIntegration
 
@@ -412,11 +348,9 @@ DeleteIntegration
 User ${userID} deleted '${integrationType}' integration.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 DeleteIntegrationFailed
 
@@ -424,11 +358,9 @@ DeleteIntegrationFailed
 Deletion of '${integrationType}' integration by ${userID} failed.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |         |
-| ------------ | ----------- | ------- |
-| **Critical** | **Failure** | **Yes** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **Yes**     |
 
 EnableIntegration
 
@@ -436,11 +368,9 @@ EnableIntegration
 ${userID} enabled the '${integrationType}' integration.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 ## o365
 
@@ -452,11 +382,9 @@ M365AzureADAppAdded
 ${userName} added a new authenticated Azure AD app with ID: ${appID} of type ${workloadType} for M365 tenant with ID: ${m365TenantID}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 M365AzureADAppDeleted
 
@@ -464,11 +392,9 @@ M365AzureADAppDeleted
 ${userName} deleted the Azure AD app with ID: ${appID} of type ${workloadType} for M365.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 O365RestoreFailedItemsViewed
 
@@ -476,11 +402,9 @@ O365RestoreFailedItemsViewed
 ${userID} viewed the restore failed items information of ${snappableType}  ${snappableName} corresponding to restore instance ID ${instanceID}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 SwitchWorkloadToOnboardingMode
 
@@ -488,11 +412,9 @@ SwitchWorkloadToOnboardingMode
 ${userID} moved the ${workloadType} to onboarding mode.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 ## rkcli
 
@@ -504,11 +426,9 @@ RkcliCommandExec
 Admin executed '${command}' on the ${node} node from ${ip}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 ## saasapps
 
@@ -520,11 +440,9 @@ SaasAppsGetWorkloadTableRecords
 ${userID} viewed object ${objectName} of type ${snappableType}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 ## sap_hana_database
 
@@ -536,11 +454,9 @@ CreateOnDemandSapHanaDataBackupFailed
 ${username} failed to start a job to create an on-demand ${backupType} backup for SAP HANA database ${dbName}. Failure reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 CreateOnDemandSapHanaDataBackupStarted
 
@@ -548,11 +464,9 @@ CreateOnDemandSapHanaDataBackupStarted
 ${username} started a job to create an on-demand ${backupType} backup for SAP HANA database ${dbName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 CrossRestoreSapHanaDatabaseToPointInTime
 
@@ -560,11 +474,9 @@ CrossRestoreSapHanaDatabaseToPointInTime
 ${username} triggered a cross restore operation of SAP HANA database ${sourceDbName} restoring to the target database ${targetDbName}  at point in time ${pointInTime}. Reason: ${reason}
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 RestoreSapHanaDatabaseToFullBackup
 
@@ -572,11 +484,9 @@ RestoreSapHanaDatabaseToFullBackup
 ${username} triggered restore of SAP HANA database ${dbName} to full backup ${fullSnapshotId}. Reason: ${reason}
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 RestoreSapHanaDatabaseToPointInTime
 
@@ -584,11 +494,9 @@ RestoreSapHanaDatabaseToPointInTime
 ${username} triggered restore of SAP HANA database ${dbName} to point in time ${pointInTime}. Reason: ${reason}
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 ## sap_hana_system
 
@@ -600,11 +508,9 @@ ConfigureRestoreSapHana
 ${username} configured restore on the SAP HANA ${systemName} system. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 RestoreSapHanaStorageSnapshotFailure
 
@@ -612,11 +518,9 @@ RestoreSapHanaStorageSnapshotFailure
 ${username} unable to trigger a disk restore using storage snapshot with ${snapshotId} ID of SAP HANA ${systemName} system. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 RestoreSapHanaStorageSnapshotStarted
 
@@ -624,11 +528,9 @@ RestoreSapHanaStorageSnapshotStarted
 ${username} triggered a disk restore using storage snapshot with ${snapshotId} ID of SAP HANA ${systemName} system.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 UnconfigureRestoreSapHana
 
@@ -636,11 +538,9 @@ UnconfigureRestoreSapHana
 ${username} reset the restore configuration on the SAP HANA ${systemName} system. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 ## sessionmanagement
 
@@ -652,11 +552,9 @@ CreateOrgSwitchSessionFailure
 ${userEmail} failed to switch to organization ${orgName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 CreateOrgSwitchSessionSuccess
 
@@ -664,11 +562,9 @@ CreateOrgSwitchSessionSuccess
 ${userEmail} successfully switched to organization ${orgName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 ## snapshot
 
@@ -680,11 +576,9 @@ DeleteSnapshotsOfObject
 ${username} deleted snapshots of snappable type '${snappableType}' with name '${objName}'
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 DeleteSnapshotsOfObjectFailed
 
@@ -692,11 +586,9 @@ DeleteSnapshotsOfObjectFailed
 ${username} failed to delete snapshots of snappable type '${snappableType}' with name '${objName}'
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 ## support_case
 
@@ -708,11 +600,9 @@ SupportCaseCreated
 ${userEmail} created a support case with id: ${caseId}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 SupportCaseModified
 
@@ -720,11 +610,9 @@ SupportCaseModified
 ${userEmail} modified the support case with id: ${caseId}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 ## tpr
 
@@ -736,11 +624,9 @@ TprExecuteComplete
 ${username} completed executing Quorum Authorization request ${requestID} to ${description}
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 TprExecuteFail
 
@@ -748,11 +634,9 @@ TprExecuteFail
 ${username} was unable to execute Quorum Authorization request ${requestID} to ${description}. Reason: ${reason}
 ```
 
-Severity | Status | Audit Event | |
-
-|             |             |         |
-| ----------- | ----------- | ------- |
-| **Warning** | **Failure** | **Yes** |
+| Severity    | Status      | Audit Event |
+| ----------- | ----------- | ----------- |
+| **Warning** | **Failure** | **Yes**     |
 
 TprPolicyDeleteFailed
 
@@ -760,11 +644,9 @@ TprPolicyDeleteFailed
 ${username} was unable to delete the Quorum Authorization policy ${policyName}. Reason: ${reason}
 ```
 
-Severity | Status | Audit Event | |
-
-|             |             |         |
-| ----------- | ----------- | ------- |
-| **Warning** | **Failure** | **Yes** |
+| Severity    | Status      | Audit Event |
+| ----------- | ----------- | ----------- |
+| **Warning** | **Failure** | **Yes**     |
 
 TprPolicyUpdateFailed
 
@@ -772,11 +654,9 @@ TprPolicyUpdateFailed
 ${username} was unable to update the Quorum Authorization policy ${policyName}. Reason: ${reason}
 ```
 
-Severity | Status | Audit Event | |
-
-|             |             |         |
-| ----------- | ----------- | ------- |
-| **Warning** | **Failure** | **Yes** |
+| Severity    | Status      | Audit Event |
+| ----------- | ----------- | ----------- |
+| **Warning** | **Failure** | **Yes**     |
 
 TprStatusChange
 
@@ -784,11 +664,9 @@ TprStatusChange
 ${username} updated the status to ${status} for the Quorum Authorization request, ${requestID}, to ${description}
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 ## trial
 
@@ -800,11 +678,9 @@ TrialActivationStarted
 ${userEmail} has started activation of the ${trialType} trial.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 TrialDismissed
 
@@ -812,11 +688,9 @@ TrialDismissed
 ${userEmail} dismissed the ${trialType} trial.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 TrialInvite
 
@@ -824,11 +698,9 @@ TrialInvite
 ${invitorEmail} invited ${inviteeEmail} to join the ${trialType} trial.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 TrialOnboardingComplete
 
@@ -836,11 +708,9 @@ TrialOnboardingComplete
 ${userEmail} completed the setup for the ${trialType} trial.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 TrialRefreshReports
 
@@ -848,11 +718,9 @@ TrialRefreshReports
 ${userEmail} scheduled the refresh of the ${trialType} trial report.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 TrialReportSharedFailure
 
@@ -860,11 +728,9 @@ TrialReportSharedFailure
 ${userEmail} was unable to share the ${trialType} trial report with ${recipientEmail}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 TrialReportSharedSuccess
 
@@ -872,11 +738,9 @@ TrialReportSharedSuccess
 ${userEmail} successfully shared the ${trialType} trial report with ${recipientEmail}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 ## unmanaged_objects
 
@@ -888,11 +752,9 @@ SnapshotsDeletetionOnClusterProcessed
 ${userEmail} successfully expired unmanaged snapshots ${snapshotIdList} of object ${objectName} on cluster ${clusterName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 SnapshotsDeletetionOnPolarisProcessed
 
@@ -900,11 +762,9 @@ SnapshotsDeletetionOnPolarisProcessed
 ${userEmail} successfully expired unmanaged snapshots ${snapshotIdList} on polaris.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 SnapshotsOfObjectDeletionOnClusterProcessed
 
@@ -912,11 +772,9 @@ SnapshotsOfObjectDeletionOnClusterProcessed
 ${userEmail} successfully queued request to expire all unprotected snapshots of unmanaged objects ${objectNameList} on cluster ${clusterName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 SnapshotsOfObjectDeletionOnPolarisProcessed
 
@@ -924,8 +782,6 @@ SnapshotsOfObjectDeletionOnPolarisProcessed
 ${userEmail} successfully expired all unprotected snapshots of unmanaged objects ${objectNameList} on polaris.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |

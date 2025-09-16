@@ -18,7 +18,7 @@
       
       
       <link rel="icon" href="../../../assets/favicon.ico">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.18">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.20">
     
     
       
@@ -26,7 +26,7 @@
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.7e37652d.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.e53b48f4.min.css">
       
         
         <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
@@ -5468,7 +5468,7 @@
   <h1>Advanced Usage</h1>
 
 <p>The goal at Rubrik is to have a cmdlet for every useful task that needs to be performed. As we strive toward this goal, there may be times where an easy-to-use cmdlet is not available. This may also be the case for new features, or edge cases that are not yet supported by the cmdlets. For this reason, it may be necessary to interact with the Rubrik Security Cloud API at a lower level.</p>
-<p>At its heart, The Rubrik Security Cloud PowerShell library is a collection of .NET libraries to provide full access to the API without writing any GraphQL queries. While writing GraphQL directly is not required, it is necessary to understand and utilize the API documentation since they are still GraphQL queries written in .NET/PowerShell.</p>
+<p>At its heart, The Rubrik Security Cloud PowerShell library is a collection of .NET libraries to provide full access to the API without writing any <abbr title="A query language for APIs that provides a complete and understandble description of the data in the API. GraphQL is a strongly typed architecture, which means everything has a type and there is no guessing on the structure.">GraphQL</abbr> queries. While writing <abbr title="A query language for APIs that provides a complete and understandble description of the data in the API. GraphQL is a strongly typed architecture, which means everything has a type and there is no guessing on the structure.">GraphQL</abbr> directly is not required, it is necessary to understand and utilize the API documentation since they are still <abbr title="A query language for APIs that provides a complete and understandble description of the data in the API. GraphQL is a strongly typed architecture, which means everything has a type and there is no guessing on the structure.">GraphQL</abbr> queries written in .NET/PowerShell.</p>
 <h2 id="low-level-cmdlets">'Low-level' cmdlets</h2>
 <hr />
 <p>The following cmdlets are essential to working with the <abbr title="Rubrik Security Cloud: The modern data security SaaS management plane">RSC</abbr> API through the PowerShell module.</p>
@@ -5483,12 +5483,12 @@
 <p><code>Get-RscHelp</code> can be used to get information about queries, their inputs, and the object types they return. This is a lightweight version of the API reference, but not a complete substitute.</p>
 </li>
 <li>
-<p><code>Get-RscType</code> instantiates an object of a specific type within <abbr title="Rubrik Security Cloud: The modern data security SaaS management plane">RSC</abbr>. GraphQL is a strongly typed architecture, which means everything has a type and there is no guessing on the structure. This is especially beneficial when working with large, complex objects. The .NET libraries take the types from the GraphQL API and create .NET equivilents.</p>
+<p><code>Get-RscType</code> instantiates an object of a specific type within <abbr title="Rubrik Security Cloud: The modern data security SaaS management plane">RSC</abbr>. <abbr title="A query language for APIs that provides a complete and understandble description of the data in the API. GraphQL is a strongly typed architecture, which means everything has a type and there is no guessing on the structure.">GraphQL</abbr> is a strongly typed architecture, which means everything has a type and there is no guessing on the structure. This is especially beneficial when working with large, complex objects. The .NET libraries take the types from the <abbr title="A query language for APIs that provides a complete and understandble description of the data in the API. GraphQL is a strongly typed architecture, which means everything has a type and there is no guessing on the structure.">GraphQL</abbr> API and create .NET equivilents.</p>
 </li>
 </ul>
-<h2 id="constructing-powershell-code-from-a-graphql-query">Constructing PowerShell code from a GraphQL query</h2>
+<h2 id="constructing-powershell-code-from-a-graphql-query">Constructing PowerShell code from a <abbr title="A query language for APIs that provides a complete and understandble description of the data in the API. GraphQL is a strongly typed architecture, which means everything has a type and there is no guessing on the structure.">GraphQL</abbr> query</h2>
 <hr />
-<p>The following GraphQL example is a simple query to identify all objects in the Gold <abbr title="Service Level Agreement. An SLA Domain is a data protection policy in Rubrik.">SLA</abbr> that are out of compliance in the last 24 hours. The goal will be to convert this to PowerShell.</p>
+<p>The following <abbr title="A query language for APIs that provides a complete and understandble description of the data in the API. GraphQL is a strongly typed architecture, which means everything has a type and there is no guessing on the structure.">GraphQL</abbr> example is a simple query to identify all objects in the Gold <abbr title="Service Level Agreement. An SLA Domain is a data protection policy in Rubrik.">SLA</abbr> that are out of compliance in the last 24 hours. The goal will be to convert this to PowerShell.</p>
 <div class="language-GraphQL highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="k">query</span><span class="w"> </span><span class="nf">example</span><span class="w"> </span><span class="p">{</span>
 </span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">  </span><span class="n">snappableConnection</span><span class="w"> </span><span class="p">(</span><span class="n">filter</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
 </span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">    </span><span class="n">slaDomain</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="n">id</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;00000000-0000-0000-0000-000000000000&quot;</span><span class="p">}</span>
@@ -5820,7 +5820,7 @@
       <script id="__config" type="application/json">{"base": "../../..", "features": ["content.code.copy", "content.code.annotate", "content.tooltips", "content.tabs.link", "navigation.tabs", "navigation.indexes", "search.share"], "search": "../../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.92b07e13.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.f55a23d4.min.js"></script>
       
         <script src="../../../javascripts/extra.js"></script>
       

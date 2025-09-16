@@ -1,16 +1,19 @@
+A common requirement for Rubrik customers is the ability to retrieve metrics for reporting and monitoring. This can include storage usage for chargeback and capacity management, compliance status, SLA assignment, and more. The Rubrik Security Cloud API provides a powerful way to query for these metrics.
+
 ## Workload Metrics
 
-Common workload metrics can include storage usage, compliance status, last backup time, protection status, and more.
+Common workload metrics can include storage usage, compliance status, last backup time, protection status, and more. Filtering based on object type, SLA, Organization, and other criteria provides the ability to create reports tailored to specific needs.
 
 ```graphql
 query {
   snappableConnection(filter: {
     #complianceStatus: IN_COMPLIANCE
     #slaTimeRange: LAST_24_HOURS
-    #objectType: VmwareVirtualMachine 
+    #objectType: VmwareVirtualMachine
     #objectState: ACTIVE
-    #slaDomain: {id: "0000"}
+    #slaDomain: {id: "00000000-0000-0000-0000-000000000001"}
     #protectionStatus: DoNotProtect
+    #orgId: "12345678-0000-0000-0000-000000000000"
   }) {
     nodes {
       name

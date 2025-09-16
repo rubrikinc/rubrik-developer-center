@@ -8,11 +8,9 @@ BlueprintFailoverTestDataIngestionFailed
 '${dataIngestionOperation}' process for test failover failed for Recovery Plan '${name}': ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |                 |        |
-| ------------ | --------------- | ------ |
-| **Critical** | **TaskFailure** | **No** |
+| Severity     | Status          | Audit Event |
+| ------------ | --------------- | ----------- |
+| **Critical** | **TaskFailure** | **No**      |
 
 BlueprintFailoverTestDataIngestionStarted
 
@@ -20,11 +18,9 @@ BlueprintFailoverTestDataIngestionStarted
 Starting the '${dataIngestionOperation}' process for test failover for Recovery Plan '${name}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 BlueprintFailoverTestDataIngestionSucceed
 
@@ -32,11 +28,9 @@ BlueprintFailoverTestDataIngestionSucceed
 '${dataIngestionOperation}' process for test failover succeeded for Recovery Plan '${name}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 BlueprintFailoverTestFinalizeFailed
 
@@ -44,11 +38,9 @@ BlueprintFailoverTestFinalizeFailed
 Final failover tasks failed for test failover of Recovery Plan '${name}': ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Failure** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **No**      |
 
 BlueprintFailoverTestFinalizeStarted
 
@@ -56,11 +48,9 @@ BlueprintFailoverTestFinalizeStarted
 Starting the final failover tasks for test failover of Recovery Plan '${name}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 BlueprintFailoverTestFinalizeSucceed
 
@@ -68,11 +58,9 @@ BlueprintFailoverTestFinalizeSucceed
 Failover succeeded for failover of Recovery Plan '${name}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 BlueprintFailoverTestIncrementalDataTransferFailed
 
@@ -80,11 +68,9 @@ BlueprintFailoverTestIncrementalDataTransferFailed
 Incremental data transfer process for test failover failed for Recovery Plan '${name}': ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |                 |        |
-| ------------ | --------------- | ------ |
-| **Critical** | **TaskFailure** | **No** |
+| Severity     | Status          | Audit Event |
+| ------------ | --------------- | ----------- |
+| **Critical** | **TaskFailure** | **No**      |
 
 BlueprintFailoverTestIncrementalDataTransferStarted
 
@@ -92,11 +78,9 @@ BlueprintFailoverTestIncrementalDataTransferStarted
 Starting the incremental data transfer process for test failover for Recovery Plan '${name}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 BlueprintFailoverTestIncrementalDataTransferSucceed
 
@@ -104,11 +88,9 @@ BlueprintFailoverTestIncrementalDataTransferSucceed
 Incremental data transfer process for test failover succeeded for Recovery Plan '${name}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 BlueprintFailoverTestPrepareDataFailed
 
@@ -116,11 +98,9 @@ BlueprintFailoverTestPrepareDataFailed
 Test failover initialization process failed for Recovery Plan '${name}'. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |                 |        |
-| ------------ | --------------- | ------ |
-| **Critical** | **TaskFailure** | **No** |
+| Severity     | Status          | Audit Event |
+| ------------ | --------------- | ----------- |
+| **Critical** | **TaskFailure** | **No**      |
 
 BlueprintFailoverTestPrepareDataStarted
 
@@ -128,11 +108,9 @@ BlueprintFailoverTestPrepareDataStarted
 Starting the test failover initialization process for Recovery Plan '${name}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 BlueprintFailoverTestPrepareDataSucceed
 
@@ -140,11 +118,9 @@ BlueprintFailoverTestPrepareDataSucceed
 Test failover initialization process succeeded for Recovery Plan '${name}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 BlueprintFailoverTestPrepareResourceFailed
 
@@ -152,11 +128,9 @@ BlueprintFailoverTestPrepareResourceFailed
 Test failover resource validation and initialization process failed for Recovery Plan '${name}'. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |                 |        |
-| ------------ | --------------- | ------ |
-| **Critical** | **TaskFailure** | **No** |
+| Severity     | Status          | Audit Event |
+| ------------ | --------------- | ----------- |
+| **Critical** | **TaskFailure** | **No**      |
 
 BlueprintFailoverTestPrepareResourceStarted
 
@@ -164,11 +138,9 @@ BlueprintFailoverTestPrepareResourceStarted
 Starting the test failover resource validation and initialization process for Recovery Plan '${name}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 BlueprintFailoverTestPrepareResourceSucceed
 
@@ -176,11 +148,9 @@ BlueprintFailoverTestPrepareResourceSucceed
 Test failover resource validation and initialization process succeeded for Recovery Plan '${name}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 BlueprintFailoverTestProvisionFailed
 
@@ -188,11 +158,9 @@ BlueprintFailoverTestProvisionFailed
 Unable to set up the target Rubrik cluster '${targetClusterName}' for test failover of Recovery Plan '${name}': ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |                 |        |
-| ------------ | --------------- | ------ |
-| **Critical** | **TaskFailure** | **No** |
+| Severity     | Status          | Audit Event |
+| ------------ | --------------- | ----------- |
+| **Critical** | **TaskFailure** | **No**      |
 
 BlueprintFailoverTestProvisionStarted
 
@@ -200,11 +168,9 @@ BlueprintFailoverTestProvisionStarted
 Setting up the target Rubrik cluster '${targetClusterName}' for test failover of Recovery Plan '${name}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 BlueprintFailoverTestProvisionSucceed
 
@@ -212,11 +178,9 @@ BlueprintFailoverTestProvisionSucceed
 Reconfiguration of virtual machines on target Rubrik cluster '${targetClusterName}' succeeded for Recovery Plan '${name}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 BlueprintFailoverTestProvisionSucceedWithNetworkReconfigureFailure
 
@@ -224,11 +188,9 @@ BlueprintFailoverTestProvisionSucceedWithNetworkReconfigureFailure
 Reconfiguration of virtual machines on target Rubrik cluster '${targetClusterName}' failed for Recovery Plan '${name}'. Ignoring and continuing.
 ```
 
-Severity | Status | Audit Event | |
-
-|             |                 |        |
-| ----------- | --------------- | ------ |
-| **Warning** | **TaskSuccess** | **No** |
+| Severity    | Status          | Audit Event |
+| ----------- | --------------- | ----------- |
+| **Warning** | **TaskSuccess** | **No**      |
 
 BlueprintTestFailoverCanceled
 
@@ -236,11 +198,9 @@ BlueprintTestFailoverCanceled
 Canceled test failover Recovery Plan '${name}' to '${location}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |              |        |
-| -------- | ------------ | ------ |
-| **Info** | **Canceled** | **No** |
+| Severity | Status       | Audit Event |
+| -------- | ------------ | ----------- |
+| **Info** | **Canceled** | **No**      |
 
 BlueprintTestFailoverCanceling
 
@@ -248,11 +208,9 @@ BlueprintTestFailoverCanceling
 Canceling test failover for Recovery Plan '${name}' to '${location}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |               |        |
-| -------- | ------------- | ------ |
-| **Info** | **Canceling** | **No** |
+| Severity | Status        | Audit Event |
+| -------- | ------------- | ----------- |
+| **Info** | **Canceling** | **No**      |
 
 BlueprintTestFailoverFailed
 
@@ -260,11 +218,9 @@ BlueprintTestFailoverFailed
 Failed to test failover for Recovery Plan '${name}' to '${location}': ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Failure** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **No**      |
 
 BlueprintTestFailoverScheduled
 
@@ -272,11 +228,9 @@ BlueprintTestFailoverScheduled
 Scheduled job to test failover Recovery Plan '${name}' to '${location}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |            |        |
-| -------- | ---------- | ------ |
-| **Info** | **Queued** | **No** |
+| Severity | Status     | Audit Event |
+| -------- | ---------- | ----------- |
+| **Info** | **Queued** | **No**      |
 
 BlueprintTestFailoverStarted
 
@@ -284,11 +238,9 @@ BlueprintTestFailoverStarted
 Starting test failover for Recovery Plan '${name}' to '${location}'. Failover error handling option is set to ${errorHandling}. Skipping network reconfiguration errors is ${skipNetworkError}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 BlueprintTestFailoverSuccess
 
@@ -296,11 +248,9 @@ BlueprintTestFailoverSuccess
 Successfully completed the test failover for Recovery Plan '${name}' to '${location}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 CleanupTestFailoverCanceled
 
@@ -308,11 +258,9 @@ CleanupTestFailoverCanceled
 Canceled the test failover cleanup for Recovery Plan '${name}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |              |        |
-| -------- | ------------ | ------ |
-| **Info** | **Canceled** | **No** |
+| Severity | Status       | Audit Event |
+| -------- | ------------ | ----------- |
+| **Info** | **Canceled** | **No**      |
 
 CleanupTestFailoverCanceling
 
@@ -320,11 +268,9 @@ CleanupTestFailoverCanceling
 Canceling the test failover cleanup for Recovery Plan '${name}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |               |        |
-| -------- | ------------- | ------ |
-| **Info** | **Canceling** | **No** |
+| Severity | Status        | Audit Event |
+| -------- | ------------- | ----------- |
+| **Info** | **Canceling** | **No**      |
 
 CleanupTestFailoverFailed
 
@@ -332,11 +278,9 @@ CleanupTestFailoverFailed
 Failed to cleanup test failover for Recovery Plan '${name}' with ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Failure** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **No**      |
 
 CleanupTestFailoverStarted
 
@@ -344,11 +288,9 @@ CleanupTestFailoverStarted
 Started cleanup of test failover for Recovery Plan '${name}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 CleanupTestFailoverSuccess
 
@@ -356,11 +298,9 @@ CleanupTestFailoverSuccess
 Successfully completed the test failover cleanup for Recovery Plan '${name}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 CleanupTestFailoverTaskFailed
 
@@ -368,11 +308,9 @@ CleanupTestFailoverTaskFailed
 Failed to cleanup Recovery Plan ${name}: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |                 |        |
-| ------------ | --------------- | ------ |
-| **Critical** | **TaskFailure** | **No** |
+| Severity     | Status          | Audit Event |
+| ------------ | --------------- | ----------- |
+| **Critical** | **TaskFailure** | **No**      |
 
 CleanupTestFailoverTaskFailedWithUserComment
 
@@ -380,11 +318,9 @@ CleanupTestFailoverTaskFailedWithUserComment
 Failed to cleanup Recovery Plan ${name}. ${comment}: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |                 |        |
-| ------------ | --------------- | ------ |
-| **Critical** | **TaskFailure** | **No** |
+| Severity     | Status          | Audit Event |
+| ------------ | --------------- | ----------- |
+| **Critical** | **TaskFailure** | **No**      |
 
 CleanupTestFailoverTaskStarted
 
@@ -392,11 +328,9 @@ CleanupTestFailoverTaskStarted
 Started the cleanup for Recovery Plan '${name}'
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Running** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Running** | **No**      |
 
 CleanupTestFailoverTaskSucceed
 
@@ -404,11 +338,9 @@ CleanupTestFailoverTaskSucceed
 Successfully completed the cleanup of Recovery Plan ${name}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 CleanupTestFailoverTaskSucceedWithUserComment
 
@@ -416,11 +348,9 @@ CleanupTestFailoverTaskSucceedWithUserComment
 Successfully completed the cleanup of Recovery Plan '${name}'. ${comment}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 SyncTestFailbackTaskFailed
 
@@ -428,11 +358,9 @@ SyncTestFailbackTaskFailed
 Test failover failed on cluster '${clusterName}': ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |                 |        |
-| ------------ | --------------- | ------ |
-| **Critical** | **TaskFailure** | **No** |
+| Severity     | Status          | Audit Event |
+| ------------ | --------------- | ----------- |
+| **Critical** | **TaskFailure** | **No**      |
 
 SyncTestFailbackTaskSucceed
 
@@ -440,11 +368,9 @@ SyncTestFailbackTaskSucceed
 Test failover succeeded on cluster '${clusterName}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 TriggerTestFailbackTaskFailed
 
@@ -452,11 +378,9 @@ TriggerTestFailbackTaskFailed
 Failed to trigger test failover for Recovery Plan to the point in time: ${recoveryPoint} on cluster '${clusterName}': ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |                 |        |
-| ------------ | --------------- | ------ |
-| **Critical** | **TaskFailure** | **No** |
+| Severity     | Status          | Audit Event |
+| ------------ | --------------- | ----------- |
+| **Critical** | **TaskFailure** | **No**      |
 
 TriggerTestFailbackTaskFailedWithTimeRange
 
@@ -464,11 +388,9 @@ TriggerTestFailbackTaskFailedWithTimeRange
 Failed to trigger test failover for Recovery Plan to the point in time: range from ${startTime} to ${endTime}, on cluster '${clusterName}': ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |                 |        |
-| ------------ | --------------- | ------ |
-| **Critical** | **TaskFailure** | **No** |
+| Severity     | Status          | Audit Event |
+| ------------ | --------------- | ----------- |
+| **Critical** | **TaskFailure** | **No**      |
 
 TriggerTestFailbackTaskStarted
 
@@ -476,11 +398,9 @@ TriggerTestFailbackTaskStarted
 Test failover for Recovery Plan to the point in time: ${recoveryPoint} triggered on cluster '${clusterName}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Running** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Running** | **No**      |
 
 TriggerTestFailbackTaskStartedWithTimeRange
 
@@ -488,11 +408,9 @@ TriggerTestFailbackTaskStartedWithTimeRange
 Test failover for Recovery Plan to the point in time: range from ${startTime} to ${endTime}, triggered on cluster '${clusterName}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Running** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Running** | **No**      |
 
 TriggerTestFailbackTaskSucceed
 
@@ -500,11 +418,9 @@ TriggerTestFailbackTaskSucceed
 Triggered a test failover for Recovery Plan to the point in time: ${recoveryPoint} on cluster '${clusterName}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 TriggerTestFailbackTaskSucceedWithTimeRange
 
@@ -512,8 +428,6 @@ TriggerTestFailbackTaskSucceedWithTimeRange
 Triggered a test failover for Recovery Plan to the point in time: range from ${startTime} to ${endTime}, on cluster '${clusterName}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |

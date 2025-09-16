@@ -8,11 +8,9 @@ AccountOwnershipAssigned
 ${userEmail} assigned account ownership to ${targetUser}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 AccountOwnershipRevoked
 
@@ -20,11 +18,9 @@ AccountOwnershipRevoked
 ${userEmail} revoked account ownership from ${targetUser}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 AdminRequestedPasswordChange
 
@@ -32,11 +28,9 @@ AdminRequestedPasswordChange
 ${userName} initiated a mandatory password reset for ${userNames}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 AllRolesDeassignedFromUser
 
@@ -44,11 +38,9 @@ AllRolesDeassignedFromUser
 ${userName} removed all role assignments from the user ${targetUser}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 AllRolesDeassignedFromUserGroup
 
@@ -56,11 +48,9 @@ AllRolesDeassignedFromUserGroup
 ${userEmail} revoked all roles from user group ${groupName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 AuthorizedUserGroupsToOrg
 
@@ -68,11 +58,9 @@ AuthorizedUserGroupsToOrg
 ${userEmail} authorized user groups in organization ${orgName}: ${userGroupNames}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 HideUser
 
@@ -80,11 +68,9 @@ HideUser
 ${userName} updated the hidden status to ${hiddenStatus} for ${targetUserName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 OrgCreated
 
@@ -92,11 +78,9 @@ OrgCreated
 ${userEmail} created organization ${orgName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 OrgCreationFailed
 
@@ -104,11 +88,9 @@ OrgCreationFailed
 ${userEmail} failed to create organization ${orgName}, Reason: ${reason}
 ```
 
-Severity | Status | Audit Event | |
-
-|             |             |         |
-| ----------- | ----------- | ------- |
-| **Warning** | **Failure** | **Yes** |
+| Severity    | Status      | Audit Event |
+| ----------- | ----------- | ----------- |
+| **Warning** | **Failure** | **Yes**     |
 
 OrgDeleted
 
@@ -116,11 +98,9 @@ OrgDeleted
 ${userEmail} deleted organization ${orgName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 OrgDeletionFailed
 
@@ -128,11 +108,9 @@ OrgDeletionFailed
 ${userEmail} failed to delete organization ${orgName}. Reason: ${reason}
 ```
 
-Severity | Status | Audit Event | |
-
-|             |             |         |
-| ----------- | ----------- | ------- |
-| **Warning** | **Failure** | **Yes** |
+| Severity    | Status      | Audit Event |
+| ----------- | ----------- | ----------- |
+| **Warning** | **Failure** | **Yes**     |
 
 OrgInviteEmailsFailedToSend
 
@@ -140,11 +118,9 @@ OrgInviteEmailsFailedToSend
 Unable to send user invite emails for organization ${orgName}. Reason: ${reason}
 ```
 
-Severity | Status | Audit Event | |
-
-|             |             |         |
-| ----------- | ----------- | ------- |
-| **Warning** | **Failure** | **Yes** |
+| Severity    | Status      | Audit Event |
+| ----------- | ----------- | ----------- |
+| **Warning** | **Failure** | **Yes**     |
 
 OrgUpdated
 
@@ -152,11 +128,9 @@ OrgUpdated
 ${userEmail} modified organization ${orgName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 OrgUpdateFailed
 
@@ -164,11 +138,9 @@ OrgUpdateFailed
 ${userEmail} modified organization ${orgName}. Reason: ${reason}
 ```
 
-Severity | Status | Audit Event | |
-
-|             |             |         |
-| ----------- | ----------- | ------- |
-| **Warning** | **Failure** | **Yes** |
+| Severity    | Status      | Audit Event |
+| ----------- | ----------- | ----------- |
+| **Warning** | **Failure** | **Yes**     |
 
 PasswordComplexityPolicyUpdated
 
@@ -176,11 +148,9 @@ PasswordComplexityPolicyUpdated
 ${userName} updated the password policy (${changedPolicies}) for the ${orgName} organization.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 PasswordComplexityPolicyUpdateFailed
 
@@ -188,11 +158,9 @@ PasswordComplexityPolicyUpdateFailed
 ${userName} failed to update the password policy for the ${orgName} organization.
 ```
 
-Severity | Status | Audit Event | |
-
-|             |             |         |
-| ----------- | ----------- | ------- |
-| **Warning** | **Failure** | **Yes** |
+| Severity    | Status      | Audit Event |
+| ----------- | ----------- | ----------- |
+| **Warning** | **Failure** | **Yes**     |
 
 RoleAssignedToUser
 
@@ -200,11 +168,9 @@ RoleAssignedToUser
 ${userEmail} updated the assigned roles for ${principalType} ${principal} from ${previousRoles} to ${currentRoles}
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 RoleAssignedToUserGroup
 
@@ -212,11 +178,9 @@ RoleAssignedToUserGroup
 ${userEmail} updated the assigned roles for SSO group ${principal} from ${previousRoles} to ${currentRoles}
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 RoleAssignmentToUserFailed
 
@@ -224,11 +188,9 @@ RoleAssignmentToUserFailed
 ${userEmail} failed to change role of ${targetUser} to ${role}. Reason: ${reason}
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 RoleAssignmentToUserGroupFailed
 
@@ -236,11 +198,9 @@ RoleAssignmentToUserGroupFailed
 ${userEmail} failed to change role of user group ${groupName} to ${role}. Reason: ${reason}
 ```
 
-Severity | Status | Audit Event | |
-
-|             |             |         |
-| ----------- | ----------- | ------- |
-| **Warning** | **Failure** | **Yes** |
+| Severity    | Status      | Audit Event |
+| ----------- | ----------- | ----------- |
+| **Warning** | **Failure** | **Yes**     |
 
 RoleCreated
 
@@ -248,11 +208,9 @@ RoleCreated
 ${userEmail} created role ${role}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 RoleCreationFailed
 
@@ -260,11 +218,9 @@ RoleCreationFailed
 ${userEmail} failed to create role ${role}. Reason: ${reason}
 ```
 
-Severity | Status | Audit Event | |
-
-|             |             |         |
-| ----------- | ----------- | ------- |
-| **Warning** | **Failure** | **Yes** |
+| Severity    | Status      | Audit Event |
+| ----------- | ----------- | ----------- |
+| **Warning** | **Failure** | **Yes**     |
 
 RoleDeassignedFromUser
 
@@ -272,11 +228,9 @@ RoleDeassignedFromUser
 ${userEmail} revoked role ${role} from user ${targetUser}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 RoleDeassignedFromUserGroup
 
@@ -284,11 +238,9 @@ RoleDeassignedFromUserGroup
 ${userEmail} revoked role ${role} from user group ${groupName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 RoleDeleted
 
@@ -296,11 +248,9 @@ RoleDeleted
 ${userEmail} deleted sync ${syncStatus} role ${role}
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 RoleDeletionFailed
 
@@ -308,11 +258,9 @@ RoleDeletionFailed
 ${userEmail} failed to delete role ${role}. Reason: ${reason}
 ```
 
-Severity | Status | Audit Event | |
-
-|             |             |         |
-| ----------- | ----------- | ------- |
-| **Warning** | **Failure** | **Yes** |
+| Severity    | Status      | Audit Event |
+| ----------- | ----------- | ----------- |
+| **Warning** | **Failure** | **Yes**     |
 
 RoleSyncUpdated
 
@@ -320,11 +268,9 @@ RoleSyncUpdated
 ${userEmail} modified role ${origRole}${role} and  ${updatedSyncStatus} syncing for the role to CDM clusters.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 RoleUpdated
 
@@ -332,11 +278,9 @@ RoleUpdated
 ${userEmail} modified role ${origRole}${role}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 RoleUpdateFailed
 
@@ -344,11 +288,9 @@ RoleUpdateFailed
 ${userEmail} failed to modify role ${role}. Reason: ${reason}
 ```
 
-Severity | Status | Audit Event | |
-
-|             |             |         |
-| ----------- | ----------- | ------- |
-| **Warning** | **Failure** | **Yes** |
+| Severity    | Status      | Audit Event |
+| ----------- | ----------- | ----------- |
+| **Warning** | **Failure** | **Yes**     |
 
 ServiceAccountCreated
 
@@ -356,11 +298,9 @@ ServiceAccountCreated
 ${actorSubjectName} created service account ${targetSubjectName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 ServiceAccountCreationFailed
 
@@ -368,11 +308,9 @@ ServiceAccountCreationFailed
 ${actorSubjectName} failed to create service account ${targetSubjectName}. Reason: ${reason}
 ```
 
-Severity | Status | Audit Event | |
-
-|             |             |         |
-| ----------- | ----------- | ------- |
-| **Warning** | **Failure** | **Yes** |
+| Severity    | Status      | Audit Event |
+| ----------- | ----------- | ----------- |
+| **Warning** | **Failure** | **Yes**     |
 
 ServiceAccountDeleted
 
@@ -380,11 +318,9 @@ ServiceAccountDeleted
 ${actorSubjectName} deleted service account ${targetSubjectName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 ServiceAccountDeletionFailed
 
@@ -392,11 +328,9 @@ ServiceAccountDeletionFailed
 ${actorSubjectName} failed to delete service account ${targetSubjectName}. Reason: ${reason}
 ```
 
-Severity | Status | Audit Event | |
-
-|             |             |         |
-| ----------- | ----------- | ------- |
-| **Warning** | **Failure** | **Yes** |
+| Severity    | Status      | Audit Event |
+| ----------- | ----------- | ----------- |
+| **Warning** | **Failure** | **Yes**     |
 
 ServiceAccountDeletionPreparationFailed
 
@@ -404,11 +338,9 @@ ServiceAccountDeletionPreparationFailed
 ${actorSubjectName} tried to start a delete request on ${count} service accounts. The preparation for the deletion failed. Reason: ${reason}
 ```
 
-Severity | Status | Audit Event | |
-
-|             |             |         |
-| ----------- | ----------- | ------- |
-| **Warning** | **Failure** | **Yes** |
+| Severity    | Status      | Audit Event |
+| ----------- | ----------- | ----------- |
+| **Warning** | **Failure** | **Yes**     |
 
 ServiceAccountSecretRotated
 
@@ -416,11 +348,9 @@ ServiceAccountSecretRotated
 ${actorSubjectName} rotated the secret of the service account ${targetSubjectName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 ServiceAccountSecretRotationFailed
 
@@ -428,11 +358,9 @@ ServiceAccountSecretRotationFailed
 ${actorSubjectName} failed to rotate the secret of the service account ${targetSubjectName}. Reason: ${reason}
 ```
 
-Severity | Status | Audit Event | |
-
-|             |             |         |
-| ----------- | ----------- | ------- |
-| **Warning** | **Failure** | **Yes** |
+| Severity    | Status      | Audit Event |
+| ----------- | ----------- | ----------- |
+| **Warning** | **Failure** | **Yes**     |
 
 ServiceAccountUpdated
 
@@ -440,11 +368,9 @@ ServiceAccountUpdated
 ${actorSubjectName} udpated service account ${targetSubjectName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 ServiceAccountUpdateFailed
 
@@ -452,11 +378,9 @@ ServiceAccountUpdateFailed
 ${actorSubjectName} failed to update service account ${targetSubjectName}. Reason: ${reason}
 ```
 
-Severity | Status | Audit Event | |
-
-|             |             |         |
-| ----------- | ----------- | ------- |
-| **Warning** | **Failure** | **Yes** |
+| Severity    | Status      | Audit Event |
+| ----------- | ----------- | ----------- |
+| **Warning** | **Failure** | **Yes**     |
 
 SSOUserCreated
 
@@ -464,11 +388,9 @@ SSOUserCreated
 ${userName} created SSO user, ${targetUserName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 SSOUserCreationFailed
 
@@ -476,11 +398,9 @@ SSOUserCreationFailed
 ${userName} failed to create SSO user, ${targetUserName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|             |             |         |
-| ----------- | ----------- | ------- |
-| **Warning** | **Failure** | **Yes** |
+| Severity    | Status      | Audit Event |
+| ----------- | ----------- | ----------- |
+| **Warning** | **Failure** | **Yes**     |
 
 SyncedRoleCreated
 
@@ -488,11 +408,9 @@ SyncedRoleCreated
 ${userEmail} created role ${role} and enabled syncing for the role to CDM clusters.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 UpdatedUserGroupsInOrg
 
@@ -500,11 +418,9 @@ UpdatedUserGroupsInOrg
 ${userEmail} updated user groups in organization ${orgName}: ${userGroupNames}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 UserChangedOtherUserPassword
 
@@ -512,11 +428,9 @@ UserChangedOtherUserPassword
 ${userName} changed the password for user ${targetUser}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 UserChangeOtherUserPasswordFailed
 
@@ -524,11 +438,9 @@ UserChangeOtherUserPasswordFailed
 ${userName} failed to change the password for user ${targetUser}.
 ```
 
-Severity | Status | Audit Event | |
-
-|             |             |         |
-| ----------- | ----------- | ------- |
-| **Warning** | **Failure** | **Yes** |
+| Severity    | Status      | Audit Event |
+| ----------- | ----------- | ----------- |
+| **Warning** | **Failure** | **Yes**     |
 
 UserCreated
 
@@ -536,11 +448,9 @@ UserCreated
 User ${userEmail} was created.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 UserCreationFailed
 
@@ -548,11 +458,9 @@ UserCreationFailed
 User ${userEmail} failed to create.
 ```
 
-Severity | Status | Audit Event | |
-
-|             |             |         |
-| ----------- | ----------- | ------- |
-| **Warning** | **Failure** | **Yes** |
+| Severity    | Status      | Audit Event |
+| ----------- | ----------- | ----------- |
+| **Warning** | **Failure** | **Yes**     |
 
 UserDeleted
 
@@ -560,11 +468,9 @@ UserDeleted
 ${actorUserEmail} deleted user ${targetUserEmail}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 UserDeletionFailed
 
@@ -572,11 +478,9 @@ UserDeletionFailed
 ${actorUserEmail} failed to delete user ${targetUserEmail}. Reason: ${reason}
 ```
 
-Severity | Status | Audit Event | |
-
-|             |             |         |
-| ----------- | ----------- | ------- |
-| **Warning** | **Failure** | **Yes** |
+| Severity    | Status      | Audit Event |
+| ----------- | ----------- | ----------- |
+| **Warning** | **Failure** | **Yes**     |
 
 UserDeletionPreparationFailed
 
@@ -584,11 +488,9 @@ UserDeletionPreparationFailed
 ${actorUserEmail} tried to start a delete request on ${count} users. The preparation for the deletion failed. Reason: ${reason}
 ```
 
-Severity | Status | Audit Event | |
-
-|             |             |         |
-| ----------- | ----------- | ------- |
-| **Warning** | **Failure** | **Yes** |
+| Severity    | Status      | Audit Event |
+| ----------- | ----------- | ----------- |
+| **Warning** | **Failure** | **Yes**     |
 
 UserGroupDeleted
 
@@ -596,11 +498,9 @@ UserGroupDeleted
 ${actorUserName} deleted role group mapping ${groupName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 UserGroupDeletionFailed
 
@@ -608,11 +508,9 @@ UserGroupDeletionFailed
 ${actorUserName} was unable to delete role group mapping ${groupName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|             |             |         |
-| ----------- | ----------- | ------- |
-| **Warning** | **Failure** | **Yes** |
+| Severity    | Status      | Audit Event |
+| ----------- | ----------- | ----------- |
+| **Warning** | **Failure** | **Yes**     |
 
 UserInvited
 
@@ -620,11 +518,9 @@ UserInvited
 ${actorUserEmail} invited user ${targetUserEmail}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 ## classification_settings
 
@@ -636,11 +532,9 @@ DisabledClassificationBanner
 ${actorUserEmail} disabled the classification banners successfully.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 DisabledLoginBanner
 
@@ -648,11 +542,9 @@ DisabledLoginBanner
 ${actorUserEmail} disabled the login classification modal successfully.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 EnabledClassificationBanner
 
@@ -660,11 +552,9 @@ EnabledClassificationBanner
 ${actorUserEmail} enabled the classification banners successfully.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 EnabledLoginBanner
 
@@ -672,11 +562,9 @@ EnabledLoginBanner
 ${actorUserEmail} enabled the login classification modal successfully.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 UpdateClassificationBanner
 
@@ -684,11 +572,9 @@ UpdateClassificationBanner
 ${actorUserEmail} updated the classification banners successfully.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 UpdateLoginBanner
 
@@ -696,11 +582,9 @@ UpdateLoginBanner
 ${actorUserEmail} updated the login classification modal successfully.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 ## federated_access
 
@@ -712,11 +596,9 @@ SetCDMInventoryDisabledSucceeded
 ${actorUserEmail} disabled the Display Rubrik CDM inventory in Polaris successfully.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 SetCDMInventoryEnabledFailed
 
@@ -724,11 +606,9 @@ SetCDMInventoryEnabledFailed
 ${actorUserEmail} failed to change the Display Rubrik CDM inventory in Polaris. Reason: ${reason}
 ```
 
-Severity | Status | Audit Event | |
-
-|             |             |         |
-| ----------- | ----------- | ------- |
-| **Warning** | **Failure** | **Yes** |
+| Severity    | Status      | Audit Event |
+| ----------- | ----------- | ----------- |
+| **Warning** | **Failure** | **Yes**     |
 
 SetCDMInventoryEnabledSucceeded
 
@@ -736,11 +616,9 @@ SetCDMInventoryEnabledSucceeded
 ${actorUserEmail} enabled the Display Rubrik CDM inventory in Polaris successfully.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 SetFederatedAccessDisabledSucceeded
 
@@ -748,11 +626,9 @@ SetFederatedAccessDisabledSucceeded
 ${actorUserEmail} disabled the Rubrik CDM federated access successfully.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 SetFederatedAccessEnabledFailed
 
@@ -760,11 +636,9 @@ SetFederatedAccessEnabledFailed
 ${actorUserEmail} failed to change the Rubrik CDM federated access. Reason: ${reason}
 ```
 
-Severity | Status | Audit Event | |
-
-|             |             |         |
-| ----------- | ----------- | ------- |
-| **Warning** | **Failure** | **Yes** |
+| Severity    | Status      | Audit Event |
+| ----------- | ----------- | ----------- |
+| **Warning** | **Failure** | **Yes**     |
 
 SetFederatedAccessEnabledSucceeded
 
@@ -772,11 +646,9 @@ SetFederatedAccessEnabledSucceeded
 ${actorUserEmail} enabled the Rubrik CDM federated access successfully.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 ## mfa
 
@@ -788,11 +660,9 @@ MaxPasskeysChanged
 ${username} has changed the maximum allowed passkeys from ${prevValue} to ${newValue}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 MfaRememberDisable
 
@@ -800,11 +670,9 @@ MfaRememberDisable
 ${username} disabled Rubrik Two-Step Verification to remember device.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 MfaRememberHoursUpdate
 
@@ -812,11 +680,9 @@ MfaRememberHoursUpdate
 ${username} updated Rubrik Two-Step Verification to remember device from ${initialHours} to ${hours} hours.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 PasskeyAdded
 
@@ -824,11 +690,9 @@ PasskeyAdded
 ${username} has added ${type} passkey ${passkeyName} for MFA.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 PasskeyDeleted
 
@@ -836,11 +700,9 @@ PasskeyDeleted
 ${username} has deleted ${type} passkey ${passkeyName} for MFA.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 PasskeysAllowed
 
@@ -848,11 +710,9 @@ PasskeysAllowed
 ${username} has enabled passkeys for the account.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 PasskeysDisallowed
 
@@ -860,11 +720,9 @@ PasskeysDisallowed
 ${username} has disabled passkeys for the account.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 PasskeyTypeAllowed
 
@@ -872,11 +730,9 @@ PasskeyTypeAllowed
 ${username} has enabled ${passkeyType} passkeys for the account.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 PasskeyTypeDisallowed
 
@@ -884,11 +740,9 @@ PasskeyTypeDisallowed
 ${username} has disabled ${passkeyType} passkeys for the account.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 PasswordlessLoginDisabled
 
@@ -896,11 +750,9 @@ PasswordlessLoginDisabled
 ${username} has disabled passwordless login for the account.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 PasswordlessLoginEnabled
 
@@ -908,11 +760,9 @@ PasswordlessLoginEnabled
 ${username} has enabled passwordless login for the account.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 TotpGlobalEnforce
 
@@ -920,11 +770,9 @@ TotpGlobalEnforce
 ${username} set Rubrik Two-Step Verification enforced globally.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 TotpGlobalUnenforce
 
@@ -932,11 +780,9 @@ TotpGlobalUnenforce
 ${username} set Rubrik Two-Step Verification not enforced globally.
 ```
 
-Severity | Status | Audit Event | |
-
-|             |             |         |
-| ----------- | ----------- | ------- |
-| **Warning** | **Success** | **Yes** |
+| Severity    | Status      | Audit Event |
+| ----------- | ----------- | ----------- |
+| **Warning** | **Success** | **Yes**     |
 
 TotpLdapEnforce
 
@@ -944,11 +790,9 @@ TotpLdapEnforce
 ${username} set Rubrik Two-Step Verification enforced on LDAP domain ${ldapName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 TotpLdapUnenforce
 
@@ -956,11 +800,9 @@ TotpLdapUnenforce
 ${username} set Rubrik Two-Step Verification not enforced on LDAP domain ${ldapName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|             |             |         |
-| ----------- | ----------- | ------- |
-| **Warning** | **Success** | **Yes** |
+| Severity    | Status      | Audit Event |
+| ----------- | ----------- | ----------- |
+| **Warning** | **Success** | **Yes**     |
 
 TotpReconfigure
 
@@ -968,11 +810,9 @@ TotpReconfigure
 ${username} reconfigured Rubrik Two-Step Verification.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 TotpReminderDisable
 
@@ -980,11 +820,9 @@ TotpReminderDisable
 ${username} disabled Rubrik Two-Step Verification reminder.
 ```
 
-Severity | Status | Audit Event | |
-
-|             |             |         |
-| ----------- | ----------- | ------- |
-| **Warning** | **Success** | **Yes** |
+| Severity    | Status      | Audit Event |
+| ----------- | ----------- | ----------- |
+| **Warning** | **Success** | **Yes**     |
 
 TotpReminderHoursUpdate
 
@@ -992,11 +830,9 @@ TotpReminderHoursUpdate
 ${username} updated the Rubrik Two-Step Verification reminder frequency from every ${initialHours} hours to once every ${hours} hours.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 TotpReset
 
@@ -1004,11 +840,9 @@ TotpReset
 ${username} disabled Rubrik Two-Step Verification for  ${targetUsername}.
 ```
 
-Severity | Status | Audit Event | |
-
-|             |             |         |
-| ----------- | ----------- | ------- |
-| **Warning** | **Success** | **Yes** |
+| Severity    | Status      | Audit Event |
+| ----------- | ----------- | ----------- |
+| **Warning** | **Success** | **Yes**     |
 
 TotpSetup
 
@@ -1016,11 +850,9 @@ TotpSetup
 ${username} enabled Rubrik Two-Step Verification.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 TotpUserLevelEnforce
 
@@ -1028,11 +860,9 @@ TotpUserLevelEnforce
 ${username} set Rubrik Two-Step Verification enforced for ${targetUsername}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 TotpUserLevelUnenforce
 
@@ -1040,11 +870,9 @@ TotpUserLevelUnenforce
 ${username} set Rubrik Two-Step Verification not enforced for ${targetUsername}.
 ```
 
-Severity | Status | Audit Event | |
-
-|             |             |         |
-| ----------- | ----------- | ------- |
-| **Warning** | **Success** | **Yes** |
+| Severity    | Status      | Audit Event |
+| ----------- | ----------- | ----------- |
+| **Warning** | **Success** | **Yes**     |
 
 ## moat
 
@@ -1056,11 +884,9 @@ AddIPWhitelistEntries
 ${actorUserEmail} added new addresses, (${newIpCidrs}), to IP allowlist.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 DeleteIPWhitelistEntries
 
@@ -1068,11 +894,9 @@ DeleteIPWhitelistEntries
 ${actorUserEmail} deleted addresses, (${deletedIpCidrs}), from IP allowlist.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |         |
-| ------------ | ----------- | ------- |
-| **Critical** | **Success** | **Yes** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Success** | **Yes**     |
 
 FailedAPICallDueToIPViolation
 
@@ -1080,11 +904,9 @@ FailedAPICallDueToIPViolation
 ${api_name} failed to execute as it was accessed from an  unauthorized IP address ${ip_address} for the ${user_domain} ${username}
 ```
 
-Severity | Status | Audit Event | |
-
-|             |             |         |
-| ----------- | ----------- | ------- |
-| **Warning** | **Failure** | **Yes** |
+| Severity    | Status      | Audit Event |
+| ----------- | ----------- | ----------- |
+| **Warning** | **Failure** | **Yes**     |
 
 SetIPWhitelistSetting
 
@@ -1092,11 +914,9 @@ SetIPWhitelistSetting
 ${actorUserEmail} updated IP allowlist settings to (enabled: ${newEnabled}, mode: ${newMode}).
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |         |
-| ------------ | ----------- | ------- |
-| **Critical** | **Success** | **Yes** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Success** | **Yes**     |
 
 SetWhitelistDisabledSucceeded
 
@@ -1104,11 +924,9 @@ SetWhitelistDisabledSucceeded
 ${actorUserEmail} disabled the IP whitelist successfully.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 SetWhitelistEnabledFailed
 
@@ -1116,11 +934,9 @@ SetWhitelistEnabledFailed
 ${actorUserEmail} failed to change the IP whitelist enforcement. Reason: ${reason}
 ```
 
-Severity | Status | Audit Event | |
-
-|             |             |         |
-| ----------- | ----------- | ------- |
-| **Warning** | **Failure** | **Yes** |
+| Severity    | Status      | Audit Event |
+| ----------- | ----------- | ----------- |
+| **Warning** | **Failure** | **Yes**     |
 
 SetWhitelistEnabledSucceeded
 
@@ -1128,11 +944,9 @@ SetWhitelistEnabledSucceeded
 ${actorUserEmail} enabled the IP whitelist successfully.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 UpdateIPWhitelistEntry
 
@@ -1140,11 +954,9 @@ UpdateIPWhitelistEntry
 ${actorUserEmail} updated an entry in the IP allowlist from (ip: ${oldIpCidr}, description: ${oldDescription}) to (ip: ${newIpCidr}, description: ${newDescription}).
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 UpdateWhitelistFailed
 
@@ -1152,11 +964,9 @@ UpdateWhitelistFailed
 ${actorUserEmail} failed to update IP whitelist. Reason: ${reason}
 ```
 
-Severity | Status | Audit Event | |
-
-|             |             |         |
-| ----------- | ----------- | ------- |
-| **Warning** | **Failure** | **Yes** |
+| Severity    | Status      | Audit Event |
+| ----------- | ----------- | ----------- |
+| **Warning** | **Failure** | **Yes**     |
 
 UpdateWhitelistSucceeded
 
@@ -1164,11 +974,9 @@ UpdateWhitelistSucceeded
 ${actorUserEmail} updated IP whitelist successfully.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 ## userlockout
 
@@ -1180,11 +988,9 @@ AutoUnlocked
 User account for ${username} has been auto-unlocked.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 LockedByAdmin
 
@@ -1192,11 +998,9 @@ LockedByAdmin
 ${username} has been locked by administrator ${admin}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 LockedByBruteForce
 
@@ -1204,11 +1008,9 @@ LockedByBruteForce
 The user account for ${username} has been locked due to multiple  failed login attempts.
 ```
 
-Severity | Status | Audit Event | |
-
-|             |             |         |
-| ----------- | ----------- | ------- |
-| **Warning** | **Success** | **Yes** |
+| Severity    | Status      | Audit Event |
+| ----------- | ----------- | ----------- |
+| **Warning** | **Success** | **Yes**     |
 
 LockedDueToInactivity
 
@@ -1216,11 +1018,9 @@ LockedDueToInactivity
 ${username} has been locked due to inactivity.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 LockedDueToLeakedPassword
 
@@ -1228,11 +1028,9 @@ LockedDueToLeakedPassword
 User ${email}'s account was locked because the account is at risk of being compromised.  The account credentials were found to have been compromised in another vendors security breach.
 ```
 
-Severity | Status | Audit Event | |
-
-|             |             |         |
-| ----------- | ----------- | ------- |
-| **Warning** | **Success** | **Yes** |
+| Severity    | Status      | Audit Event |
+| ----------- | ----------- | ----------- |
+| **Warning** | **Success** | **Yes**     |
 
 LockoutConfigChanged
 
@@ -1240,11 +1038,9 @@ LockoutConfigChanged
 ${admin} updated the account lockout configuration, (${changedConfigs}), for the ${orgName} organization.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 UnlockedByAdmin
 
@@ -1252,11 +1048,9 @@ UnlockedByAdmin
 ${username} has been unlocked by administrator ${admin}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 UnlockedBySupport
 
@@ -1264,8 +1058,6 @@ UnlockedBySupport
 ${username} has been unlocked by Rubrik Support.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |

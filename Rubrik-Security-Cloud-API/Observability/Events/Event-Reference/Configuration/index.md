@@ -8,11 +8,9 @@ AccountTagAdded
 ${username} added the tag(s) ${tagName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 AccountTagRemoved
 
@@ -20,11 +18,9 @@ AccountTagRemoved
 ${username} removed the tag(s) ${tagName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 ## active_directory
 
@@ -36,11 +32,9 @@ ActiveDirectoryRefreshDomainStarted
 ${username} started a job to refresh the Active Directory domain  ${domainName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 ActiveDirectoryRefreshDomainStartFailed
 
@@ -48,11 +42,9 @@ ActiveDirectoryRefreshDomainStartFailed
 ${username} unable to start a job to refresh the Active Directory domain  ${domainName}. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 ## appflows
 
@@ -64,11 +56,9 @@ BlueprintArchiveSucceeded
 ${userEmail} successfully archived recovery plan '${blueprintName}' on ${clusterName}
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 BlueprintCreationSucceeded
 
@@ -76,11 +66,9 @@ BlueprintCreationSucceeded
 ${userEmail} successfully created recovery plan '${blueprintName}' on ${clusterName}
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 BlueprintUpdateSucceeded
 
@@ -88,11 +76,9 @@ BlueprintUpdateSucceeded
 ${userEmail} successfully updated recovery plan '${blueprintName}' on ${clusterName}
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 InstallIofilterStarted
 
@@ -100,11 +86,9 @@ InstallIofilterStarted
 ${userEmail} started a job to install iofilter on ${computeClusterName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 InstallIofilterStartFailed
 
@@ -112,11 +96,9 @@ InstallIofilterStartFailed
 ${userEmail} failed to start a job to install iofilter on  ${computeClusterName}. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 InstanceResourceConfigurationDeletionSucceeded
 
@@ -124,11 +106,9 @@ InstanceResourceConfigurationDeletionSucceeded
 ${userEmail} successfully deleted resource configuration for recovery  plan '${blueprintName}' on ${clusterName} with failover Id ${failoverId}
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 PostScriptUpdateSucceeded
 
@@ -136,11 +116,9 @@ PostScriptUpdateSucceeded
 ${userEmail} successfully updated post script for the snappable '${snappableName}' of the recovery plan '${blueprintName}' on ${clusterName} with failover type ${failoverType}. The hashcode of the post script is ${postscriptSignature}
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 RecoveryPlanCreationSucceeded
 
@@ -148,11 +126,9 @@ RecoveryPlanCreationSucceeded
 ${userEmail} successfully created recovery plan '${planName}' on ${clusterName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 RecoveryPlanDeletionSucceeded
 
@@ -160,11 +136,9 @@ RecoveryPlanDeletionSucceeded
 ${userEmail} successfully deleted recovery plan '${planName}' on ${clusterName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 RecoveryPlanUpdateSucceeded
 
@@ -172,11 +146,9 @@ RecoveryPlanUpdateSucceeded
 ${userEmail} successfully updated recovery plan '${planName}' on ${clusterName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 ResourceConfigurationCreationSucceeded
 
@@ -184,11 +156,9 @@ ResourceConfigurationCreationSucceeded
 ${userEmail} successfully created resource configuration for recovery plan '${planName}' on ${clusterName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 ResourceConfigurationDeletionSucceeded
 
@@ -196,11 +166,9 @@ ResourceConfigurationDeletionSucceeded
 ${userEmail} successfully deleted resource configuration for recovery plan '${planName}' on ${clusterName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 ResourceConfigurationUpdateSucceeded
 
@@ -208,11 +176,9 @@ ResourceConfigurationUpdateSucceeded
 ${userEmail} successfully updated resource configuration for recovery plan '${planName}' on ${clusterName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 ResourceMappingCreationSucceeded
 
@@ -220,11 +186,9 @@ ResourceMappingCreationSucceeded
 ${userEmail} successfully created resource mapping for recovery plan '${blueprintName}' on ${clusterName}
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 ResourceMappingDeletionSucceeded
 
@@ -232,11 +196,9 @@ ResourceMappingDeletionSucceeded
 ${userEmail} successfully deleted resource mapping for recovery plan '${blueprintName}' on ${clusterName}
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 ResourceMappingModificationSucceeded
 
@@ -244,11 +206,9 @@ ResourceMappingModificationSucceeded
 ${userEmail} successfully modified resource mapping for recovery plan '${blueprintName}' on ${clusterName}
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 UninstallIofilterStarted
 
@@ -256,11 +216,9 @@ UninstallIofilterStarted
 ${userEmail} started a job to uninstall iofilter on ${computeClusterName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 UninstallIofilterStartFailed
 
@@ -268,11 +226,9 @@ UninstallIofilterStartFailed
 ${userEmail} failed to start a job to uninstall iofilter on  ${computeClusterName}. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 UpgradeIofilterStarted
 
@@ -280,11 +236,9 @@ UpgradeIofilterStarted
 ${userEmail} started a job to upgrade iofilter on ${computeClusterName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 UpgradeIofilterStartFailed
 
@@ -292,11 +246,9 @@ UpgradeIofilterStartFailed
 ${userEmail} failed to start a job to upgrade iofilter on  ${computeClusterName}. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 ## archivalgroup
 
@@ -308,11 +260,9 @@ ArchivalGroupCreationSucceeded
 ${userEmail} successfully created ${archivalGroupType} Archival Location ${archivalGroupName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 ArchivalGroupDeletionSucceeded
 
@@ -320,11 +270,9 @@ ArchivalGroupDeletionSucceeded
 ${userEmail} successfully deleted Archival Location ${archivalGroupName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 ArchivalGroupModificationSucceeded
 
@@ -332,11 +280,9 @@ ArchivalGroupModificationSucceeded
 ${userEmail} successfully modified Archival Location ${archivalGroupName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 ## archivallocation
 
@@ -348,11 +294,9 @@ ArchivalLocationCreationSucceeded
 ${userEmail} successfully created ${archivalLocationType} archival  location ${archivalLocationName} with ${keyType} encryption key type.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 ArchivalLocationCreationWithKeyVaultSucceeded
 
@@ -360,11 +304,9 @@ ArchivalLocationCreationWithKeyVaultSucceeded
 ${userEmail} successfully created ${archivalLocationType} archival  location ${archivalLocationName} with ${keyName} of ${keyType}  encryption key type from ${keyVaultUrl}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 ArchivalLocationModificationSucceeded
 
@@ -372,11 +314,9 @@ ArchivalLocationModificationSucceeded
 ${userEmail} successfully modified archival location ${archivalLocationName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 ArchivalLocationReaderDataSourcesRefreshTriggerFailed
 
@@ -384,11 +324,9 @@ ArchivalLocationReaderDataSourcesRefreshTriggerFailed
 ${userEmail} failed to trigger data source refresh for reader archival location ${archivalLocationName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 ArchivalLocationReaderDataSourcesRefreshTriggerSucceeded
 
@@ -396,11 +334,9 @@ ArchivalLocationReaderDataSourcesRefreshTriggerSucceeded
 ${userEmail} successfully triggered data source refresh for reader archival location ${archivalLocationName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 ArchivalLocationReaderPromotionFailed
 
@@ -408,11 +344,9 @@ ArchivalLocationReaderPromotionFailed
 ${userEmail} failed to promote reader archival location ${archivalLocationName} to read/write state from Polaris.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 ArchivalLocationReaderPromotionSucceeded
 
@@ -420,11 +354,9 @@ ArchivalLocationReaderPromotionSucceeded
 ${userEmail} successfully promoted reader archival location ${archivalLocationName} to read/write state from Polaris.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 ArchivalLocationReaderRefreshTriggerFailed
 
@@ -432,11 +364,9 @@ ArchivalLocationReaderRefreshTriggerFailed
 ${userEmail} failed to trigger refresh for reader archival location ${archivalLocationName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 ArchivalLocationReaderRefreshTriggerSucceeded
 
@@ -444,11 +374,9 @@ ArchivalLocationReaderRefreshTriggerSucceeded
 ${userEmail} successfully triggered refresh for reader archival location ${archivalLocationName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 ArchivalLocationStateChangeFailed
 
@@ -456,11 +384,9 @@ ArchivalLocationStateChangeFailed
 ${userEmail} failed to ${archivalLocationStatus} archival location ${archivalLocationName} from Polaris.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 ArchivalLocationStateChangeSucceeded
 
@@ -468,11 +394,9 @@ ArchivalLocationStateChangeSucceeded
 ${userEmail} successfully ${archivalLocationStatus} archival location ${archivalLocationName} from Polaris.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 DataCenterCloudAccountStateChange
 
@@ -480,11 +404,9 @@ DataCenterCloudAccountStateChange
 ${userEmail} successfully ${cloudAccountStatus}  ${providerType} data center cloud account '${name}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 ReaderArchivalLocationMasterKeyUpdateSucceeded
 
@@ -492,11 +414,9 @@ ReaderArchivalLocationMasterKeyUpdateSucceeded
 ${userEmail} successfully modified the master encryption key for the  reader archival location ${archivalLocationName} to ${keyType}  encryption key.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 ReaderArchivalLocationMasterKeyWithKeyVaultUpdateSucceeded
 
@@ -504,11 +424,9 @@ ReaderArchivalLocationMasterKeyWithKeyVaultUpdateSucceeded
 ${userEmail} successfully modified the master encryption key for the  reader archival location ${archivalLocationName} to ${keyType}  encryption key. ${keyName} from ${keyVaultUrl} is being used as the  encryption key.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 ## awsnative
 
@@ -520,11 +438,9 @@ AwsNativeDeleteAccountJobStarted
 ${userEmail} started to disable ${featureDisplayName} protection of AWS account ${awsAccountDisplayName}. ${featureSnapshots} from AWS will ${deleteSnapshotsMsg} be deleted.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 AwsNativeDeleteAccountJobStartFailed
 
@@ -532,11 +448,9 @@ AwsNativeDeleteAccountJobStartFailed
 ${userEmail} failed to start disable of ${featureDisplayName} protection of AWS account ${awsAccountDisplayName}. Failure reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |         |
-| ------------ | ----------- | ------- |
-| **Critical** | **Failure** | **Yes** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **Yes**     |
 
 AwsNativeRefreshAccountJobStarted
 
@@ -544,11 +458,9 @@ AwsNativeRefreshAccountJobStarted
 ${userEmail} started refresh of AWS account ${awsAccountDisplayName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 AwsNativeRefreshAccountJobStartFailed
 
@@ -556,11 +468,9 @@ AwsNativeRefreshAccountJobStartFailed
 ${userEmail} failed to start refresh of AWS account ${awsAccountDisplayName}. Failure reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |         |
-| ------------ | ----------- | ------- |
-| **Critical** | **Failure** | **Yes** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **Yes**     |
 
 DeleteAwsAccountArchiveSnapshotTaskFailed
 
@@ -568,11 +478,9 @@ DeleteAwsAccountArchiveSnapshotTaskFailed
 Failed to delete ${featureSnapshots} for ${featureDisplayName} protection in the AWS account ${awsAccountDisplayName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|             |                 |        |
-| ----------- | --------------- | ------ |
-| **Warning** | **TaskFailure** | **No** |
+| Severity    | Status          | Audit Event |
+| ----------- | --------------- | ----------- |
+| **Warning** | **TaskFailure** | **No**      |
 
 DeleteAwsAccountArchiveSnapshotTaskStarted
 
@@ -580,11 +488,9 @@ DeleteAwsAccountArchiveSnapshotTaskStarted
 Deleting ${featureSnapshots} for ${featureDisplayName} protection in the AWS account ${awsAccountDisplayName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Running** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Running** | **No**      |
 
 DeleteAwsAccountArchiveSnapshotTaskSucceeded
 
@@ -592,11 +498,9 @@ DeleteAwsAccountArchiveSnapshotTaskSucceeded
 Successfully Deleted ${featureSnapshots} for ${featureDisplayName} protection in the AWS account ${awsAccountDisplayName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 DeleteAwsNativeAccountJobFailed
 
@@ -604,11 +508,9 @@ DeleteAwsNativeAccountJobFailed
 Failed to disable ${featureDisplayName} protection for AWS account ${awsAccountDisplayName}. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Failure** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **No**      |
 
 DeleteAwsNativeAccountJobQueued
 
@@ -616,11 +518,9 @@ DeleteAwsNativeAccountJobQueued
 Queued disabling ${featureDisplayName} protection of AWS account ${awsAccountDisplayName}. ${featureSnapshots} from AWS will ${deleteSnapshotsMsg} be deleted.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |            |        |
-| -------- | ---------- | ------ |
-| **Info** | **Queued** | **No** |
+| Severity | Status     | Audit Event |
+| -------- | ---------- | ----------- |
+| **Info** | **Queued** | **No**      |
 
 DeleteAwsNativeAccountJobStarted
 
@@ -628,11 +528,9 @@ DeleteAwsNativeAccountJobStarted
 Started a job to disable ${featureDisplayName} protection for AWS account ${awsAccountDisplayName}. ${featureSnapshots} from AWS will ${deleteSnapshotsMsg} be deleted.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 DeleteAwsNativeAccountJobSucceeded
 
@@ -640,11 +538,9 @@ DeleteAwsNativeAccountJobSucceeded
 Successfully disabled ${featureDisplayName} protection for AWS account ${awsAccountDisplayName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 RefreshAwsNativeAccountJobCanceled
 
@@ -652,11 +548,9 @@ RefreshAwsNativeAccountJobCanceled
 Canceled  ${maintenanceType} refresh of AWS account ${awsAccountDisplayName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |              |        |
-| -------- | ------------ | ------ |
-| **Info** | **Canceled** | **No** |
+| Severity | Status       | Audit Event |
+| -------- | ------------ | ----------- |
+| **Info** | **Canceled** | **No**      |
 
 RefreshAwsNativeAccountJobCanceling
 
@@ -664,11 +558,9 @@ RefreshAwsNativeAccountJobCanceling
 Canceling  ${maintenanceType} refresh of AWS account ${awsAccountDisplayName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |               |        |
-| -------- | ------------- | ------ |
-| **Info** | **Canceling** | **No** |
+| Severity | Status        | Audit Event |
+| -------- | ------------- | ----------- |
+| **Info** | **Canceling** | **No**      |
 
 RefreshAwsNativeAccountJobFailed
 
@@ -676,11 +568,9 @@ RefreshAwsNativeAccountJobFailed
 Failed to refresh AWS account ${awsAccountDisplayName}. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Failure** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **No**      |
 
 RefreshAwsNativeAccountJobStarted
 
@@ -688,11 +578,9 @@ RefreshAwsNativeAccountJobStarted
 Started  ${maintenanceType} refresh of AWS account ${awsAccountDisplayName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 RefreshAwsNativeAccountJobSucceeded
 
@@ -700,11 +588,9 @@ RefreshAwsNativeAccountJobSucceeded
 Successfully refreshed AWS account ${awsAccountDisplayName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 RefreshAwsNativeAccountRefreshFeaturesTaskStarted
 
@@ -712,11 +598,9 @@ RefreshAwsNativeAccountRefreshFeaturesTaskStarted
 Refreshing ${awsAccountFeatures} features for ${awsAccountDisplayName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 ## azuread
 
@@ -728,11 +612,9 @@ AzureAdDeleteDirectoryFailed
 ${userID} attempted to delete the Azure AD Directory ${directoryName},  but the operation failed.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |         |
-| ------------ | ----------- | ------- |
-| **Critical** | **Failure** | **Yes** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **Yes**     |
 
 AzureADDeleteDirectoryJobFailed
 
@@ -740,11 +622,9 @@ AzureADDeleteDirectoryJobFailed
 Failed to delete directory \"${adDirectory}\". Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Failure** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **No**      |
 
 AzureADDeleteDirectoryJobQueued
 
@@ -752,11 +632,9 @@ AzureADDeleteDirectoryJobQueued
 Queued deletion for directory \"${adDirectory}\".
 ```
 
-Severity | Status | Audit Event | |
-
-|          |            |        |
-| -------- | ---------- | ------ |
-| **Info** | **Queued** | **No** |
+| Severity | Status     | Audit Event |
+| -------- | ---------- | ----------- |
+| **Info** | **Queued** | **No**      |
 
 AzureADDeleteDirectoryJobStarted
 
@@ -764,11 +642,9 @@ AzureADDeleteDirectoryJobStarted
 Started deletion for directory \"${adDirectory}\".
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 AzureADDeleteDirectoryJobSucceeded
 
@@ -776,11 +652,9 @@ AzureADDeleteDirectoryJobSucceeded
 Successfully deleted directory \"${adDirectory}\".
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 AzureAdDeleteDirectoryStarted
 
@@ -788,11 +662,9 @@ AzureAdDeleteDirectoryStarted
 ${userName} started deletion of Azure AD Directory ${directoryName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 AzureAdOnboardingFailed
 
@@ -800,11 +672,9 @@ AzureAdOnboardingFailed
 Onboarding of the Azure AD Directory ${directoryName} failed.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |         |
-| ------------ | ----------- | ------- |
-| **Critical** | **Failure** | **Yes** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **Yes**     |
 
 AzureAdOnboardingSucceeded
 
@@ -812,11 +682,9 @@ AzureAdOnboardingSucceeded
 Onboarding of the Azure AD Directory ${directoryName} Succeeded.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 ## azurenative
 
@@ -828,11 +696,9 @@ AzureNativeDBPrereqVerifyJobCanceled
 Canceled prerequisite verification of the ${serverDisplayName} -  ${serverTypeDisplayName} in the ${resGroupDisplayName} resource group of the ${subscriptionDisplayName} subscription.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |              |        |
-| -------- | ------------ | ------ |
-| **Info** | **Canceled** | **No** |
+| Severity | Status       | Audit Event |
+| -------- | ------------ | ----------- |
+| **Info** | **Canceled** | **No**      |
 
 AzureNativeDBPrereqVerifyJobCanceling
 
@@ -840,11 +706,9 @@ AzureNativeDBPrereqVerifyJobCanceling
 Canceling prerequisite verification of the ${serverDisplayName} -  ${serverTypeDisplayName} in the ${resGroupDisplayName} resource group of the ${subscriptionDisplayName} subscription.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |               |        |
-| -------- | ------------- | ------ |
-| **Info** | **Canceling** | **No** |
+| Severity | Status        | Audit Event |
+| -------- | ------------- | ----------- |
+| **Info** | **Canceling** | **No**      |
 
 AzureNativeDBPrereqVerifyJobFailed
 
@@ -852,11 +716,9 @@ AzureNativeDBPrereqVerifyJobFailed
 Failed prerequisite verification of the ${serverDisplayName} -  ${serverTypeDisplayName} in the ${resGroupDisplayName} resource group of the ${subscriptionDisplayName} subscription. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Failure** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **No**      |
 
 AzureNativeDBPrereqVerifyJobQueued
 
@@ -864,11 +726,9 @@ AzureNativeDBPrereqVerifyJobQueued
 Queued prerequisite verification of the ${serverDisplayName} -  ${serverTypeDisplayName} in the ${resGroupDisplayName} resource group of the ${subscriptionDisplayName} subscription.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |            |        |
-| -------- | ---------- | ------ |
-| **Info** | **Queued** | **No** |
+| Severity | Status     | Audit Event |
+| -------- | ---------- | ----------- |
+| **Info** | **Queued** | **No**      |
 
 AzureNativeDBPrereqVerifyJobStarted
 
@@ -876,11 +736,9 @@ AzureNativeDBPrereqVerifyJobStarted
 Started prerequisite verification of the ${serverDisplayName} -  ${serverTypeDisplayName} in the ${resGroupDisplayName} resource group of the ${subscriptionDisplayName} subscription.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 AzureNativeDBPrereqVerifyJobSucceeded
 
@@ -888,11 +746,9 @@ AzureNativeDBPrereqVerifyJobSucceeded
 Successfully completed prerequisite verification of the ${serverDisplayName} -  ${serverTypeDisplayName} in the ${resGroupDisplayName} resource group of the ${subscriptionDisplayName} subscription.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 AzureNativeDeleteSubscriptionArchiveSnapshotTaskFailed
 
@@ -900,11 +756,9 @@ AzureNativeDeleteSubscriptionArchiveSnapshotTaskFailed
 Failed to delete snapshots in the ${subscriptionDisplayName} subscription.
 ```
 
-Severity | Status | Audit Event | |
-
-|             |                 |        |
-| ----------- | --------------- | ------ |
-| **Warning** | **TaskFailure** | **No** |
+| Severity    | Status          | Audit Event |
+| ----------- | --------------- | ----------- |
+| **Warning** | **TaskFailure** | **No**      |
 
 AzureNativeDeleteSubscriptionArchiveSnapshotTaskStarted
 
@@ -912,11 +766,9 @@ AzureNativeDeleteSubscriptionArchiveSnapshotTaskStarted
 Deleting snapshots in the ${subscriptionDisplayName} subscription.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Running** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Running** | **No**      |
 
 AzureNativeDeleteSubscriptionArchiveSnapshotTaskSucceeded
 
@@ -924,11 +776,9 @@ AzureNativeDeleteSubscriptionArchiveSnapshotTaskSucceeded
 Deleted snapshots in the ${subscriptionDisplayName} subscription.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 AzureNativeDeleteSubscriptionJobCanceled
 
@@ -936,11 +786,9 @@ AzureNativeDeleteSubscriptionJobCanceled
 Canceled the job to disable ${featureDisplayName} protection for the ${subscriptionDisplayName} subscription.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |              |        |
-| -------- | ------------ | ------ |
-| **Info** | **Canceled** | **No** |
+| Severity | Status       | Audit Event |
+| -------- | ------------ | ----------- |
+| **Info** | **Canceled** | **No**      |
 
 AzureNativeDeleteSubscriptionJobCanceling
 
@@ -948,11 +796,9 @@ AzureNativeDeleteSubscriptionJobCanceling
 Canceling the job to disable ${featureDisplayName} protection for the ${subscriptionDisplayName} subscription.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |               |        |
-| -------- | ------------- | ------ |
-| **Info** | **Canceling** | **No** |
+| Severity | Status        | Audit Event |
+| -------- | ------------- | ----------- |
+| **Info** | **Canceling** | **No**      |
 
 AzureNativeDeleteSubscriptionJobFailed
 
@@ -960,11 +806,9 @@ AzureNativeDeleteSubscriptionJobFailed
 ${userEmail} failed to start disabling protection of the ${subscriptionDisplayName} Azure subscription. Failure reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |         |
-| ------------ | ----------- | ------- |
-| **Critical** | **Failure** | **Yes** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **Yes**     |
 
 AzureNativeDeleteSubscriptionJobFailed
 
@@ -972,11 +816,9 @@ AzureNativeDeleteSubscriptionJobFailed
 Failed to disable ${featureDisplayName} protection for the ${subscriptionDisplayName} subscription. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Failure** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **No**      |
 
 AzureNativeDeleteSubscriptionJobStarted
 
@@ -984,11 +826,9 @@ AzureNativeDeleteSubscriptionJobStarted
 ${userEmail} started disabling protection of the ${subscriptionDisplayName} Azure subscription.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 AzureNativeDeleteSubscriptionJobStarted
 
@@ -996,11 +836,9 @@ AzureNativeDeleteSubscriptionJobStarted
 Started a job to disable ${featureDisplayName} protection for the ${subscriptionDisplayName} subscription.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 AzureNativeDeleteSubscriptionJobSucceeded
 
@@ -1008,11 +846,9 @@ AzureNativeDeleteSubscriptionJobSucceeded
 Successfully disabled ${featureDisplayName} protection for the ${subscriptionDisplayName} subscription.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 AzureNativeRefreshSubscriptionCanceled
 
@@ -1020,11 +856,9 @@ AzureNativeRefreshSubscriptionCanceled
 Canceled ${maintenanceType} refresh of the ${subscriptionDisplayName} subscription.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |              |        |
-| -------- | ------------ | ------ |
-| **Info** | **Canceled** | **No** |
+| Severity | Status       | Audit Event |
+| -------- | ------------ | ----------- |
+| **Info** | **Canceled** | **No**      |
 
 AzureNativeRefreshSubscriptionCanceling
 
@@ -1032,11 +866,9 @@ AzureNativeRefreshSubscriptionCanceling
 Canceling ${maintenanceType} refresh of the ${subscriptionDisplayName} subscription.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |               |        |
-| -------- | ------------- | ------ |
-| **Info** | **Canceling** | **No** |
+| Severity | Status        | Audit Event |
+| -------- | ------------- | ----------- |
+| **Info** | **Canceling** | **No**      |
 
 AzureNativeRefreshSubscriptionFailed
 
@@ -1044,11 +876,9 @@ AzureNativeRefreshSubscriptionFailed
 Failed ${maintenanceType} refresh of the ${subscriptionDisplayName} subscription (${statusPerFeature}). Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Failure** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **No**      |
 
 AzureNativeRefreshSubscriptionJobStarted
 
@@ -1056,11 +886,9 @@ AzureNativeRefreshSubscriptionJobStarted
 ${userEmail} started refresh of the ${subscriptionDisplayName} Azure subscription.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 AzureNativeRefreshSubscriptionJobStartFailed
 
@@ -1068,11 +896,9 @@ AzureNativeRefreshSubscriptionJobStartFailed
 ${userEmail} failed to start refresh of the ${subscriptionDisplayName} Azure subscription. Failure reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |         |
-| ------------ | ----------- | ------- |
-| **Critical** | **Failure** | **Yes** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **Yes**     |
 
 AzureNativeRefreshSubscriptionQueued
 
@@ -1080,11 +906,9 @@ AzureNativeRefreshSubscriptionQueued
 Queued ${maintenanceType} refresh of the ${subscriptionDisplayName} subscription.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |            |        |
-| -------- | ---------- | ------ |
-| **Info** | **Queued** | **No** |
+| Severity | Status     | Audit Event |
+| -------- | ---------- | ----------- |
+| **Info** | **Queued** | **No**      |
 
 AzureNativeRefreshSubscriptionStarted
 
@@ -1092,11 +916,9 @@ AzureNativeRefreshSubscriptionStarted
 Started ${maintenanceType} refresh of the ${subscriptionDisplayName} subscription.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 AzureNativeRefreshSubscriptionSucceeded
 
@@ -1104,11 +926,9 @@ AzureNativeRefreshSubscriptionSucceeded
 Successfully finished ${maintenanceType} refresh of the ${subscriptionDisplayName} subscription.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 ## blobstore
 
@@ -1120,11 +940,9 @@ CyberEventLockdownUpdateFailed
 ${userName} failed to ${action} Cyber Event Lockdown for ${clusterName} (${clusterUuid}). ${supportMessage}
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |         |
-| ------------ | ----------- | ------- |
-| **Critical** | **Failure** | **Yes** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **Yes**     |
 
 CyberEventLockdownUpdateSucceeded
 
@@ -1132,11 +950,9 @@ CyberEventLockdownUpdateSucceeded
 ${userName} has ${action}d Cyber Event Lockdown for ${clusterName} (${clusterUuid}). ${supportMessage}
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |         |
-| ------------ | ----------- | ------- |
-| **Critical** | **Success** | **Yes** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Success** | **Yes**     |
 
 ## cassandra_source
 
@@ -1148,11 +964,9 @@ AddCassandraSourceFailure
 ${username} failed to add the Cassandra source '${sourceName}'. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 AddCassandraSourceStarted
 
@@ -1160,11 +974,9 @@ AddCassandraSourceStarted
 ${username} started adding the Cassandra source '${sourceName}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 DeleteCassandraSourceFailure
 
@@ -1172,11 +984,9 @@ DeleteCassandraSourceFailure
 ${username} failed to delete the Cassandra source '${sourceName}'. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 DeleteCassandraSourceStarted
 
@@ -1184,11 +994,9 @@ DeleteCassandraSourceStarted
 ${username} started deleting the Cassandra source '${sourceName}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 EditCassandraSourceFailure
 
@@ -1196,11 +1004,9 @@ EditCassandraSourceFailure
 ${username} failed to modify the Cassandra source '${sourceName}'. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 EditCassandraSourceStarted
 
@@ -1208,11 +1014,9 @@ EditCassandraSourceStarted
 ${username} modified the Cassandra source '${sourceName}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 ## ccprovision
 
@@ -1224,11 +1028,9 @@ ClusterCreateFailed
 ${userEmail} was unable to create Rubrik Cloud Cluster ${clusterName}, ${clusterUuid}, ${errorMessage}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 ClusterCreateRunning
 
@@ -1236,11 +1038,9 @@ ClusterCreateRunning
 ${userEmail} started the creation of Rubrik Cloud Cluster ${clusterName}, ${clusterUuid}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 ClusterCreateSuccess
 
@@ -1248,11 +1048,9 @@ ClusterCreateSuccess
 ${userEmail} successfully created Rubrik Cloud Cluster ${clusterName}, ${clusterUuid}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 ClusterCreateWarning
 
@@ -1260,11 +1058,9 @@ ClusterCreateWarning
 ${userEmail} is creating Rubrik Cloud Cluster ${clusterName}, ${clusterUuid}, with a warning message, ${warning}.
 ```
 
-Severity | Status | Audit Event | |
-
-|             |             |         |
-| ----------- | ----------- | ------- |
-| **Warning** | **Success** | **Yes** |
+| Severity    | Status      | Audit Event |
+| ----------- | ----------- | ----------- |
+| **Warning** | **Success** | **Yes**     |
 
 ClusterRecoveryFailed
 
@@ -1272,11 +1068,9 @@ ClusterRecoveryFailed
 ${userEmail} was unable to recover Rubrik Cloud Cluster ${clusterName}, ${clusterUuid}, ${errorMessage}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 ClusterRecoveryRunning
 
@@ -1284,11 +1078,9 @@ ClusterRecoveryRunning
 ${userEmail} started the recovery of Rubrik Cloud Cluster ${clusterName}, ${clusterUuid}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 ClusterRecoverySuccess
 
@@ -1296,11 +1088,9 @@ ClusterRecoverySuccess
 ${userEmail} successfully recovered Rubrik Cloud Cluster ${clusterName}, ${clusterUuid}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 ## cdm_rbac_migration
 
@@ -1312,11 +1102,9 @@ FetchCDMRBACConfigJobFailed
 Failed to fetch the Rubrik CDM RBAC configuration from ${clusterName}. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Failure** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **No**      |
 
 FetchCDMRBACConfigJobStarted
 
@@ -1324,11 +1112,9 @@ FetchCDMRBACConfigJobStarted
 Started the job to fetch the Rubrik CDM RBAC configuration from ${clusterName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 FetchCDMRBACConfigJobSucceeded
 
@@ -1336,11 +1122,9 @@ FetchCDMRBACConfigJobSucceeded
 Successfully fetched the Rubrik CDM RBAC configuration from ${clusterName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 GenerateCDMRBACMigrationSummaryJobFailed
 
@@ -1348,11 +1132,9 @@ GenerateCDMRBACMigrationSummaryJobFailed
 Failed to generate the Rubrik CDM RBAC migration summary from ${clusterName}. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Failure** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **No**      |
 
 GenerateCDMRBACMigrationSummaryJobStarted
 
@@ -1360,11 +1142,9 @@ GenerateCDMRBACMigrationSummaryJobStarted
 Started the job to generate the Rubrik CDM RBAC migration summary from ${clusterName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 GenerateCDMRBACMigrationSummaryJobSucceeded
 
@@ -1372,11 +1152,9 @@ GenerateCDMRBACMigrationSummaryJobSucceeded
 Successfully generated the Rubrik CDM RBAC migration summary from ${clusterName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 MigrateCDMRBACConfigJobFailed
 
@@ -1384,11 +1162,9 @@ MigrateCDMRBACConfigJobFailed
 Failed to migrate the Rubrik CDM RBAC configuration from ${clusterName}. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Failure** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **No**      |
 
 MigrateCDMRBACConfigJobStarted
 
@@ -1396,11 +1172,9 @@ MigrateCDMRBACConfigJobStarted
 Started the job to migrate the Rubrik CDM RBAC configuration from ${clusterName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 MigrateCDMRBACConfigJobSucceeded
 
@@ -1408,11 +1182,9 @@ MigrateCDMRBACConfigJobSucceeded
 Successfully migrated the Rubrik CDM RBAC configuration from ${clusterName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 ## cdm_remove_cluster
 
@@ -1424,11 +1196,9 @@ ClusterDeleteCompleted
 Cluster data delete completed for cluster with uuid ${clusterUUID}
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 ClusterDeleteQueued
 
@@ -1436,11 +1206,9 @@ ClusterDeleteQueued
 Cluster disconnect succeeded. Cluster delete queued for cluster with uuid ${clusterUUID}
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 ClusterDeleteStarted
 
@@ -1448,11 +1216,9 @@ ClusterDeleteStarted
 Cluster data delete started for cluster with uuid ${clusterUUID}
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Running** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Running** | **No**      |
 
 ClusterDisconnectFailed
 
@@ -1460,11 +1226,9 @@ ClusterDisconnectFailed
 Cluster disconnect failed for cluster with uuid ${clusterUUID}
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Failure** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **No**      |
 
 ClusterDisconnectStarted
 
@@ -1472,11 +1236,9 @@ ClusterDisconnectStarted
 Cluster disconnect started for cluster with uuid ${clusterUUID}
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Running** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Running** | **No**      |
 
 ## certificate_expiry
 
@@ -1488,11 +1250,9 @@ CertificateExpiringSoonInUse
 Certificate '${certificateName}' is expiring within the next ${dayCount} day(s).  This certificate is currently being used for the following service providers: ${serviceProviders}. Import a new certificate and reconfigure each service to use your new certificate.
 ```
 
-Severity | Status | Audit Event | |
-
-|             |             |        |
-| ----------- | ----------- | ------ |
-| **Warning** | **Success** | **No** |
+| Severity    | Status      | Audit Event |
+| ----------- | ----------- | ----------- |
+| **Warning** | **Success** | **No**      |
 
 CertificateExpiringSoonNotInUse
 
@@ -1500,11 +1260,9 @@ CertificateExpiringSoonNotInUse
 Certificate '${certificateName}' is expiring within the next ${dayCount} day(s).
 ```
 
-Severity | Status | Audit Event | |
-
-|             |             |        |
-| ----------- | ----------- | ------ |
-| **Warning** | **Success** | **No** |
+| Severity    | Status      | Audit Event |
+| ----------- | ----------- | ----------- |
+| **Warning** | **Success** | **No**      |
 
 CertificateExpiringTodayInUse
 
@@ -1512,11 +1270,9 @@ CertificateExpiringTodayInUse
 Certificate '${certificateName}' is expiring today.  This certificate is currently being used for the following service providers: ${serviceProviders}. Import a new certificate and reconfigure each service to use your new certificate.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Success** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Success** | **No**      |
 
 CertificateExpiringTodayNotInUse
 
@@ -1524,11 +1280,9 @@ CertificateExpiringTodayNotInUse
 Certificate '${certificateName}' is expiring today. Connections to service providers using this certificate will fail.
 ```
 
-Severity | Status | Audit Event | |
-
-|             |             |        |
-| ----------- | ----------- | ------ |
-| **Warning** | **Success** | **No** |
+| Severity    | Status      | Audit Event |
+| ----------- | ----------- | ----------- |
+| **Warning** | **Success** | **No**      |
 
 ## certificate_management
 
@@ -1540,11 +1294,9 @@ DeleteCdmCertificateFailure
 ${ActorSubjectName} was unable to delete the certificate '${certName}'. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 DeleteCdmCertificateSuccess
 
@@ -1552,11 +1304,9 @@ DeleteCdmCertificateSuccess
 ${ActorSubjectName} deleted the certificate '${certName}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 DeleteCertificate
 
@@ -1564,11 +1314,9 @@ DeleteCertificate
 ${ActorSubjectName} deleted the certificate '${certName}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 ImportCdmCertificateFailure
 
@@ -1576,11 +1324,9 @@ ImportCdmCertificateFailure
 ${ActorSubjectName} was unable to import the certificate '${certName}'. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 ImportCdmCertificateSuccess
 
@@ -1588,11 +1334,9 @@ ImportCdmCertificateSuccess
 ${ActorSubjectName} imported the certificate '${certName}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 ImportCdmCertificateWithTrustSuccess
 
@@ -1600,11 +1344,9 @@ ImportCdmCertificateWithTrustSuccess
 ${ActorSubjectName} imported the certificate '${certName}' to the cluster trust store.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 ImportCertificate
 
@@ -1612,11 +1354,9 @@ ImportCertificate
 ${ActorSubjectName} imported the certificate '${certName}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 ImportCSR
 
@@ -1624,11 +1364,9 @@ ImportCSR
 ${ActorSubjectName} created the CSR '${csrName}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 UpdateCdmCertificateFailure
 
@@ -1636,11 +1374,9 @@ UpdateCdmCertificateFailure
 ${ActorSubjectName} was unable to update the certificate '${certName}'. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 UpdateCdmCertificateSuccess
 
@@ -1648,11 +1384,9 @@ UpdateCdmCertificateSuccess
 ${ActorSubjectName} updated the certificate '${certName}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 UpdateCertificate
 
@@ -1660,11 +1394,9 @@ UpdateCertificate
 ${ActorSubjectName} updated the certificate '${certName}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 ## cloudaccounts
 
@@ -1676,11 +1408,9 @@ AwsAccountAdditionFailed
 ${userEmail} was unable to initiate the addition of ${feature} for ${iamRoleMsg}AWS Account, ${accountName}${orgMsg}, with ID ${nativeId}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |         |
-| ------------ | ----------- | ------- |
-| **Critical** | **Failure** | **Yes** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **Yes**     |
 
 AwsAccountAdditionSucceeded
 
@@ -1688,11 +1418,9 @@ AwsAccountAdditionSucceeded
 ${userEmail} initiated addition of ${feature} for ${iamRoleMsg}AWS Account, ${accountName}${orgMsg}, with ID ${nativeId}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 AwsAccountDeletionFailed
 
@@ -1700,11 +1428,9 @@ AwsAccountDeletionFailed
 ${userEmail} was unable to initiate the deletion of ${feature} for ${iamRoleMsg}AWS Account ${accountName}${orgMsg} with ID ${nativeId}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |         |
-| ------------ | ----------- | ------- |
-| **Critical** | **Failure** | **Yes** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **Yes**     |
 
 AwsAccountDeletionSucceeded
 
@@ -1712,11 +1438,9 @@ AwsAccountDeletionSucceeded
 ${userEmail} initiated the deletion of ${feature} for ${iamRoleMsg}AWS Account ${accountName}${orgMsg} with ID ${nativeId}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 AwsAccountForceDeletionFailed
 
@@ -1724,11 +1448,9 @@ AwsAccountForceDeletionFailed
 ${userEmail} failed to initiate deletion of ${feature} for AWS Account ${accountName} with ID ${nativeId}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |         |
-| ------------ | ----------- | ------- |
-| **Critical** | **Failure** | **Yes** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **Yes**     |
 
 AwsAccountForceDeletionSucceeded
 
@@ -1736,11 +1458,9 @@ AwsAccountForceDeletionSucceeded
 ${userEmail} initiated deletion of ${feature} for AWS Account ${accountName} with ID ${nativeId}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |         |
-| ------------ | ----------- | ------- |
-| **Critical** | **Success** | **Yes** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Success** | **Yes**     |
 
 AwsAccountMigrationFailed
 
@@ -1748,11 +1468,9 @@ AwsAccountMigrationFailed
 ${userEmail} failed to initiate migration of account, ${accountName}, with ID, ${nativeId}, to AWS organization ${orgName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |         |
-| ------------ | ----------- | ------- |
-| **Critical** | **Failure** | **Yes** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **Yes**     |
 
 AwsAccountMigrationSucceeded
 
@@ -1760,11 +1478,9 @@ AwsAccountMigrationSucceeded
 ${userEmail} initiated migration of account, ${accountName}, with ID, ${nativeId}, to AWS organization ${orgName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 AwsAccountRoleChainingMappingInitiateFailed
 
@@ -1772,11 +1488,9 @@ AwsAccountRoleChainingMappingInitiateFailed
 ${userEmail} failed to initiate mapping of AWS Account ${accountName} with ID ${nativeId} to role chaining account ${roleChainingAccountName} with ID ${roleChainingAccountNativeId}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |         |
-| ------------ | ----------- | ------- |
-| **Critical** | **Failure** | **Yes** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **Yes**     |
 
 AwsAccountRoleChainingMappingInitiateSucceeded
 
@@ -1784,11 +1498,9 @@ AwsAccountRoleChainingMappingInitiateSucceeded
 ${userEmail} initiated mapping of AWS Account ${accountName} with ID ${nativeId} to role chaining account ${roleChainingAccountName} with ID ${roleChainingAccountNativeId}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 AwsAccountRoleChainingUnMappingInitiateFailed
 
@@ -1796,11 +1508,9 @@ AwsAccountRoleChainingUnMappingInitiateFailed
 ${userEmail} failed to initiate unmapping of AWS Account ${accountName} with ID ${nativeId} from role chaining account ${roleChainingAccountName} with ID ${roleChainingAccountNativeId}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |         |
-| ------------ | ----------- | ------- |
-| **Critical** | **Failure** | **Yes** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **Yes**     |
 
 AwsAccountRoleChainingUnMappingInitiateSucceeded
 
@@ -1808,11 +1518,9 @@ AwsAccountRoleChainingUnMappingInitiateSucceeded
 ${userEmail} initiated unmapping of AWS Account ${accountName} with ID ${nativeId} from role chaining account ${roleChainingAccountName} with ID ${roleChainingAccountNativeId}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 AwsAccountUpdateFailed
 
@@ -1820,11 +1528,9 @@ AwsAccountUpdateFailed
 ${userEmail} failed to update the ${iamRoleMsg}AWS account ${accountName} with ID ${nativeId} for feature ${feature}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |         |
-| ------------ | ----------- | ------- |
-| **Critical** | **Failure** | **Yes** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **Yes**     |
 
 AwsAccountUpdateSucceeded
 
@@ -1832,11 +1538,9 @@ AwsAccountUpdateSucceeded
 ${userEmail} updated the ${iamRoleMsg}AWS account ${accountName} with ID ${nativeId} for feature ${feature}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 AwsAccountUpgradeFailed
 
@@ -1844,11 +1548,9 @@ AwsAccountUpgradeFailed
 ${userEmail} was unable to intitate an upgrade of ${iamRoleMsg}AWS account ${accountName}${orgMsg}  with ID ${nativeId} for feature ${feature}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |         |
-| ------------ | ----------- | ------- |
-| **Critical** | **Failure** | **Yes** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **Yes**     |
 
 AwsAccountUpgradeSucceeded
 
@@ -1856,11 +1558,9 @@ AwsAccountUpgradeSucceeded
 ${userEmail} initiated an upgrade of ${iamRoleMsg}AWS Account ${accountName}${orgMsg} with ID ${nativeId} for feature ${feature}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 AwsCloudAccountAdditionFailed
 
@@ -1868,11 +1568,9 @@ AwsCloudAccountAdditionFailed
 Unable to add the ${iamRoleMsg}AWS cloud account, ${accountName} (${nativeId})${orgMsg}, for feature ${feature}. Reason: ${reason}
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Failure** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **No**      |
 
 AwsCloudAccountAdditionSucceeded
 
@@ -1880,11 +1578,9 @@ AwsCloudAccountAdditionSucceeded
 Successfully added the ${iamRoleMsg}AWS cloud account ${accountName} (${nativeId}) for feature ${feature}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 AwsCloudAccountDeletionFailed
 
@@ -1892,11 +1588,9 @@ AwsCloudAccountDeletionFailed
 Unable to delete the ${iamRoleMsg}AWS cloud account ${accountName} (${nativeId})${orgMsg} for feature ${feature}. Reason: ${reason}
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Failure** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **No**      |
 
 AwsCloudAccountDeletionSucceeded
 
@@ -1904,11 +1598,9 @@ AwsCloudAccountDeletionSucceeded
 Successfully deleted the ${iamRoleMsg}AWS cloud account ${accountName} (${nativeId})${orgMsg} for feature ${feature}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 AwsCloudAccountDisableFeatureJobFailed
 
@@ -1916,11 +1608,9 @@ AwsCloudAccountDisableFeatureJobFailed
 Failed to disable ${feature} of AWS account ${awsAccountDisplayName}. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Failure** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **No**      |
 
 AwsCloudAccountDisableFeatureJobForProtectionStarted
 
@@ -1928,11 +1618,9 @@ AwsCloudAccountDisableFeatureJobForProtectionStarted
 Started to disable ${feature} of AWS account ${awsAccountDisplayName}. Snapshots from AWS will ${deleteSnapshotsMsg}be deleted.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 AwsCloudAccountDisableFeatureJobSucceeded
 
@@ -1940,11 +1628,9 @@ AwsCloudAccountDisableFeatureJobSucceeded
 Successfully disabled ${feature} of AWS account ${awsAccountDisplayName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 AwsCloudAccountDisconnect
 
@@ -1952,11 +1638,9 @@ AwsCloudAccountDisconnect
 Disconnected AWS cloud account ${accountName} (${nativeId})${orgMsg} for feature ${feature}. Reason: The CloudFormation stack for the cross-account role has been deleted.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Success** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Success** | **No**      |
 
 AwsCloudAccountMigrationFailed
 
@@ -1964,11 +1648,9 @@ AwsCloudAccountMigrationFailed
 Failed to migrate AWS account, ${accountName} (${nativeId}), for  feature, ${feature}, to AWS organization, ${orgName}. Reason: ${reason}
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Failure** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **No**      |
 
 AwsCloudAccountMigrationSucceeded
 
@@ -1976,11 +1658,9 @@ AwsCloudAccountMigrationSucceeded
 Successfully migrated AWS account, ${accountName} (${nativeId}), for  feature, ${feature}, to AWS organization, ${orgName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 AwsCloudAccountMissingPermissions
 
@@ -1988,11 +1668,9 @@ AwsCloudAccountMissingPermissions
 The Account ${name} (${nativeId}) requires additional permissions for a recent enhancement with ${feature}. Navigate to AWS accounts under Remote Settings and upgrade permissions to reconnect account.
 ```
 
-Severity | Status | Audit Event | |
-
-|             |             |        |
-| ----------- | ----------- | ------ |
-| **Warning** | **Success** | **No** |
+| Severity    | Status      | Audit Event |
+| ----------- | ----------- | ----------- |
+| **Warning** | **Success** | **No**      |
 
 AwsCloudAccountUpdateFailed
 
@@ -2000,11 +1678,9 @@ AwsCloudAccountUpdateFailed
 Failed to ${action} the ${iamRoleMsg}AWS cloud account, ${accountName} (${nativeId})${orgMsg}, for feature ${feature}. Reason: ${reason}
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Failure** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **No**      |
 
 AwsCloudAccountUpdateSucceeded
 
@@ -2012,11 +1688,9 @@ AwsCloudAccountUpdateSucceeded
 Successfully ${action} the ${iamRoleMsg}AWS cloud account ${accountName} (${nativeId})${orgMsg} for feature ${feature}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 AwsOrgCloudAccountMissingPermissions
 
@@ -2024,11 +1698,9 @@ AwsOrgCloudAccountMissingPermissions
 The Account ${name} (${nativeId}) of organization ${orgName} requires  additional permissions for a recent enhancement with ${feature}. Navigate to AWS accounts under Settings Menu and upgrade permissions to reconnect account.
 ```
 
-Severity | Status | Audit Event | |
-
-|             |             |        |
-| ----------- | ----------- | ------ |
-| **Warning** | **Success** | **No** |
+| Severity    | Status      | Audit Event |
+| ----------- | ----------- | ----------- |
+| **Warning** | **Success** | **No**      |
 
 AwsOutpostAccountAdditionFailed
 
@@ -2036,11 +1708,9 @@ AwsOutpostAccountAdditionFailed
 ${userEmail} failed to initiate the addition of Laminar AWS Outpost Account with ID ${nativeId}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |         |
-| ------------ | ----------- | ------- |
-| **Critical** | **Failure** | **Yes** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **Yes**     |
 
 AwsOutpostAccountAdditionFailed
 
@@ -2048,11 +1718,9 @@ AwsOutpostAccountAdditionFailed
 Failed to add the AWS Outpost account (${nativeId}) for Laminar. Reason: ${reason}
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Failure** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **No**      |
 
 AwsOutpostAccountAdditionSucceeded
 
@@ -2060,11 +1728,9 @@ AwsOutpostAccountAdditionSucceeded
 ${userEmail} initiated the addition of Laminar AWS Outpost Account with ID ${nativeId}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 AwsOutpostAccountAdditionSucceeded
 
@@ -2072,11 +1738,9 @@ AwsOutpostAccountAdditionSucceeded
 Successfully added the Laminar AWS Outpost account (${nativeId}).
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 AwsOutpostAccountUpdateFailed
 
@@ -2084,11 +1748,9 @@ AwsOutpostAccountUpdateFailed
 ${userEmail} failed to update the AWS Outpost account with ID ${nativeId} for Laminar.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |         |
-| ------------ | ----------- | ------- |
-| **Critical** | **Failure** | **Yes** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **Yes**     |
 
 AwsOutpostAccountUpdateFailed
 
@@ -2096,11 +1758,9 @@ AwsOutpostAccountUpdateFailed
 Failed to update the AWS Outpost account (${nativeId}) for Laminar. Reason: ${reason}
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Failure** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **No**      |
 
 AwsOutpostAccountUpdateSucceeded
 
@@ -2108,11 +1768,9 @@ AwsOutpostAccountUpdateSucceeded
 ${userEmail} updated AWS Outpost account with ID ${nativeId} for Laminar.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 AwsOutpostAccountUpdateSucceeded
 
@@ -2120,11 +1778,9 @@ AwsOutpostAccountUpdateSucceeded
 Successfully updated the AWS Outpost account (${nativeId}) for Laminar.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 AzureCloudAccountAdditionFailed
 
@@ -2132,11 +1788,9 @@ AzureCloudAccountAdditionFailed
 Failed to add Azure Subscription ${subscriptionName} with ID ${nativeId} for feature ${feature}. Reason: ${reason}
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Failure** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **No**      |
 
 AzureCloudAccountAdditionSucceeded
 
@@ -2144,11 +1798,9 @@ AzureCloudAccountAdditionSucceeded
 Successfully added Azure Subscription ${subscriptionName} with ID ${nativeId} for feature ${feature}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 AzureCloudAccountDeleteTaskFailed
 
@@ -2156,11 +1808,9 @@ AzureCloudAccountDeleteTaskFailed
 Failed to delete ${feature} of ${cloudProvider} ${accountTerminology} ${cloudAccountDisplayName}. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Failure** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **No**      |
 
 AzureCloudAccountDeleteTaskStarted
 
@@ -2168,11 +1818,9 @@ AzureCloudAccountDeleteTaskStarted
 Started to delete ${feature} of ${cloudProvider} ${accountTerminology} ${cloudAccountDisplayName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 AzureCloudAccountDeleteTaskSucceeded
 
@@ -2180,11 +1828,9 @@ AzureCloudAccountDeleteTaskSucceeded
 Successfully deleted ${feature} of ${cloudProvider} ${accountTerminology} ${cloudAccountDisplayName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 AzureCloudAccountDeletionFailed
 
@@ -2192,11 +1838,9 @@ AzureCloudAccountDeletionFailed
 Failed to delete permissions of the Azure Subscription ${subscriptionName} with ID ${nativeId} for feature ${feature}. Reason: ${reason}
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Failure** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **No**      |
 
 AzureCloudAccountDeletionSucceeded
 
@@ -2204,11 +1848,9 @@ AzureCloudAccountDeletionSucceeded
 Successfully deleted permissions of the Azure Subscription ${subscriptionName} with ID ${nativeId} for feature ${feature}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 AzureCloudAccountDisconnected
 
@@ -2216,11 +1858,9 @@ AzureCloudAccountDisconnected
 The Subscription ${subscriptionName} (${nativeId}) was disconnected because the Azure Active Directory application created for Rubrik was deleted. Under Remote Settings, open Azure Subscriptions and upgrade permissions to reconnect Subscription.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Failure** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **No**      |
 
 AzureCloudAccountMissingPermissions
 
@@ -2228,11 +1868,9 @@ AzureCloudAccountMissingPermissions
 The Subscription ${subscriptionName} (${nativeId}) requires additional permissions for a recent enhancement with ${feature}. Navigate to Azure Subscriptions under Remote Settings and upgrade permissions to reconnect Subscription.
 ```
 
-Severity | Status | Audit Event | |
-
-|             |             |        |
-| ----------- | ----------- | ------ |
-| **Warning** | **Success** | **No** |
+| Severity    | Status      | Audit Event |
+| ----------- | ----------- | ----------- |
+| **Warning** | **Success** | **No**      |
 
 AzureCloudAccountUpdateNameFailed
 
@@ -2240,11 +1878,9 @@ AzureCloudAccountUpdateNameFailed
 Failed to update name of the Azure Subscription with ID ${nativeId} to ${name}. Reason: ${reason}
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Failure** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **No**      |
 
 AzureCloudAccountUpdateNameSucceeded
 
@@ -2252,11 +1888,9 @@ AzureCloudAccountUpdateNameSucceeded
 Successfully updated name of the Azure Subscription with ID ${nativeId} to ${name}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 AzureCloudAccountUpdateRegionsFailed
 
@@ -2264,11 +1898,9 @@ AzureCloudAccountUpdateRegionsFailed
 Failed to update regions in the Azure Subscription ${subscriptionName} with ID ${nativeId} for feature ${feature}. Reason: ${reason}
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Failure** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **No**      |
 
 AzureCloudAccountUpdateRegionsSucceeded
 
@@ -2276,11 +1908,9 @@ AzureCloudAccountUpdateRegionsSucceeded
 Successfully updated regions in the Azure Subscription ${subscriptionName} with ID ${nativeId} for feature ${feature}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 AzureCloudAccountUpgradeFailed
 
@@ -2288,11 +1918,9 @@ AzureCloudAccountUpgradeFailed
 Failed to update permissions of the Azure Subscription ${subscriptionName} with ID ${nativeId} for feature ${feature}. Reason: ${reason}
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Failure** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **No**      |
 
 AzureCloudAccountUpgradeSucceeded
 
@@ -2300,11 +1928,9 @@ AzureCloudAccountUpgradeSucceeded
 Successfully updated permissions of the Azure Subscription ${subscriptionName} with ID ${nativeId} for feature ${feature}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 AzureEntraIDGroupCreationFailed
 
@@ -2312,11 +1938,9 @@ AzureEntraIDGroupCreationFailed
 ${userEmail} unable to create Azure Entra ID group '${groupName}' in Azure tenant ${tenantDomain} with member '${servicePrincipalName}' (ID ${servicePrincipalId}). Failure reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |         |
-| ------------ | ----------- | ------- |
-| **Critical** | **Failure** | **Yes** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **Yes**     |
 
 AzureEntraIDGroupCreationSucceeded
 
@@ -2324,11 +1948,9 @@ AzureEntraIDGroupCreationSucceeded
 ${userEmail} successfully created Azure Entra ID group '${groupName}' (ID ${groupId}) in Azure tenant ${tenantDomain} with member '${servicePrincipalName}' (ID ${servicePrincipalId}).
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 AzureEntraIDGroupDeletionFailed
 
@@ -2336,11 +1958,9 @@ AzureEntraIDGroupDeletionFailed
 ${userEmail} unable to delete Azure Entra ID group '${groupName}' (ID ${groupId}) from Azure tenant ${tenantDomain}.  Failure reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |         |
-| ------------ | ----------- | ------- |
-| **Critical** | **Failure** | **Yes** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **Yes**     |
 
 AzureEntraIDGroupDeletionSucceeded
 
@@ -2348,11 +1968,9 @@ AzureEntraIDGroupDeletionSucceeded
 ${userEmail} successfully deleted Azure Entra ID group '${groupName}' (ID ${groupId}) from Azure tenant ${tenantDomain}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 AzureEntraIDGroupMemberAdditionFailed
 
@@ -2360,11 +1978,9 @@ AzureEntraIDGroupMemberAdditionFailed
 ${userEmail} unable to add member '${servicePrincipalName}' (ID ${servicePrincipalId}) to Azure Entra ID group '${groupName}' (ID ${groupId}) in Azure tenant ${tenantDomain}.  Failure reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |         |
-| ------------ | ----------- | ------- |
-| **Critical** | **Failure** | **Yes** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **Yes**     |
 
 AzureEntraIDGroupMemberAdditionSucceeded
 
@@ -2372,11 +1988,9 @@ AzureEntraIDGroupMemberAdditionSucceeded
 ${userEmail} successfully added member '${servicePrincipalName}' (ID ${servicePrincipalId}) to Azure Entra ID group '${groupName}' (ID ${groupId}) in Azure tenant ${tenantDomain}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 AzureSubscriptionAdditionFailed
 
@@ -2384,11 +1998,9 @@ AzureSubscriptionAdditionFailed
 ${userEmail} failed to add Azure Subscription ${subscriptionName} with ID ${nativeId} for feature ${feature}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |         |
-| ------------ | ----------- | ------- |
-| **Critical** | **Failure** | **Yes** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **Yes**     |
 
 AzureSubscriptionAdditionSucceeded
 
@@ -2396,11 +2008,9 @@ AzureSubscriptionAdditionSucceeded
 ${userEmail} added Azure Subscription ${subscriptionName} with ID ${nativeId} for feature ${feature}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 AzureSubscriptionDeletionFailed
 
@@ -2408,11 +2018,9 @@ AzureSubscriptionDeletionFailed
 ${userEmail} failed to delete Azure Subscription ${subscriptionName} with ID ${nativeId} for feature ${feature}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |         |
-| ------------ | ----------- | ------- |
-| **Critical** | **Failure** | **Yes** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **Yes**     |
 
 AzureSubscriptionDeletionSucceeded
 
@@ -2420,11 +2028,9 @@ AzureSubscriptionDeletionSucceeded
 ${userEmail} deleted Azure Subscription ${subscriptionName} with ID ${nativeId} for feature ${feature}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 AzureSubscriptionUpdateFailed
 
@@ -2432,11 +2038,9 @@ AzureSubscriptionUpdateFailed
 ${userEmail} failed to update Azure Subscription ${subscriptionName} with ID ${nativeId} for feature ${feature}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |         |
-| ------------ | ----------- | ------- |
-| **Critical** | **Failure** | **Yes** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **Yes**     |
 
 AzureSubscriptionUpdateSucceeded
 
@@ -2444,11 +2048,9 @@ AzureSubscriptionUpdateSucceeded
 ${userEmail} updated Azure Subscription ${subscriptionName} with ID ${nativeId} for feature ${feature}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 AzureSubscriptionUpgradeFailed
 
@@ -2456,11 +2058,9 @@ AzureSubscriptionUpgradeFailed
 ${userEmail} failed to upgrade Azure Subscription ${subscriptionName} with ID ${nativeId} for feature ${feature}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |         |
-| ------------ | ----------- | ------- |
-| **Critical** | **Failure** | **Yes** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **Yes**     |
 
 AzureSubscriptionUpgradeSucceeded
 
@@ -2468,11 +2068,9 @@ AzureSubscriptionUpgradeSucceeded
 ${userEmail} upgraded Azure Subscription ${subscriptionName} with ID ${nativeId} for feature ${feature}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 CloudAccountDeleteFeatureTaskFailed
 
@@ -2480,11 +2078,9 @@ CloudAccountDeleteFeatureTaskFailed
 Failed to delete ${feature} of ${cloudProvider} ${accountTerminology} ${cloudAccountDisplayName}. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Failure** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **No**      |
 
 CloudAccountDeleteFeatureTaskStarted
 
@@ -2492,11 +2088,9 @@ CloudAccountDeleteFeatureTaskStarted
 Started to delete ${feature} of ${cloudProvider} ${accountTerminology} ${cloudAccountDisplayName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 CloudAccountDeleteFeatureTaskSucceeded
 
@@ -2504,11 +2098,9 @@ CloudAccountDeleteFeatureTaskSucceeded
 Successfully deleted ${feature} of ${cloudProvider} ${accountTerminology} ${cloudAccountDisplayName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 CloudAccountDisableFeatureJobFailed
 
@@ -2516,11 +2108,9 @@ CloudAccountDisableFeatureJobFailed
 Failed to disable ${feature} of ${cloudProvider}  ${accountTerminology} ${cloudAccountDisplayName}${awsOrgMsg}. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Failure** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **No**      |
 
 CloudAccountDisableFeatureJobForProtectionStarted
 
@@ -2528,11 +2118,9 @@ CloudAccountDisableFeatureJobForProtectionStarted
 Started to disable ${feature} of ${cloudProvider}  ${accountTerminology} ${cloudAccountDisplayName}${awsOrgMsg}. ${deleteSnapshotsMsg}
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 CloudAccountDisableFeatureJobSucceeded
 
@@ -2540,11 +2128,9 @@ CloudAccountDisableFeatureJobSucceeded
 Successfully disabled ${feature} of ${cloudProvider}  ${accountTerminology} ${cloudAccountDisplayName}${awsOrgMsg}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 CloudAccountDisableFeatureTaskFailed
 
@@ -2552,11 +2138,9 @@ CloudAccountDisableFeatureTaskFailed
 Failed to disable ${feature} of ${cloudProvider}  ${accountTerminology} ${cloudAccountDisplayName}${awsOrgMsg}. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Failure** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **No**      |
 
 CloudAccountDisableFeatureTaskStarted
 
@@ -2564,11 +2148,9 @@ CloudAccountDisableFeatureTaskStarted
 Started to disable ${feature} of ${cloudProvider}  ${accountTerminology} ${cloudAccountDisplayName}${awsOrgMsg}. ${deleteSnapshotsMsg}
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 CloudAccountDisableFeatureTaskSucceeded
 
@@ -2576,11 +2158,9 @@ CloudAccountDisableFeatureTaskSucceeded
 Successfully disabled ${feature} of ${cloudProvider}  ${accountTerminology} ${cloudAccountDisplayName}${awsOrgMsg}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 CloudAccountElevatedPrivilegesAdded
 
@@ -2588,11 +2168,9 @@ CloudAccountElevatedPrivilegesAdded
 ${userEmail} initiated a privilege elevation session for tenant - ${tenantDomain}, using OAuth.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 CloudAccountElevatedPrivilegesRemoved
 
@@ -2600,11 +2178,9 @@ CloudAccountElevatedPrivilegesRemoved
 Elevated privileges for user ${userEmail} to ${tenantDomain} revoked.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 CloudAccountRoleChainingMappingFailed
 
@@ -2612,11 +2188,9 @@ CloudAccountRoleChainingMappingFailed
 Failed to map AWS cloud account ${accountName} (${nativeId}) to role chaining account ${roleChainingAccountName} (${roleChainingAccountNativeId}). Reason: ${reason}
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Failure** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **No**      |
 
 CloudAccountRoleChainingMappingSucceeded
 
@@ -2624,11 +2198,9 @@ CloudAccountRoleChainingMappingSucceeded
 Successfully mapped AWS cloud account ${accountName} (${nativeId}) to role chaining account ${roleChainingAccountName} (${roleChainingAccountNativeId}).
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 CloudAccountRoleChainingUnMappingFailed
 
@@ -2636,11 +2208,9 @@ CloudAccountRoleChainingUnMappingFailed
 Failed to unmap AWS cloud account ${accountName} (${nativeId}) from role chaining account ${roleChainingAccountName} (${roleChainingAccountNativeId}). Reason: ${reason}
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Failure** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **No**      |
 
 CloudAccountRoleChainingUnMappingSucceeded
 
@@ -2648,11 +2218,9 @@ CloudAccountRoleChainingUnMappingSucceeded
 Successfully unmapped AWS cloud account ${accountName} (${nativeId}) from role chaining account ${roleChainingAccountName} (${roleChainingAccountNativeId}).
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 CloudaccountsAwsExocomputeConfigAddFailed
 
@@ -2660,11 +2228,9 @@ CloudaccountsAwsExocomputeConfigAddFailed
 ${userEmail} failed to add Exocompute settings for the ${region} region of the ${accountName} AWS account.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |         |
-| ------------ | ----------- | ------- |
-| **Critical** | **Failure** | **Yes** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **Yes**     |
 
 CloudaccountsAwsExocomputeConfigAddSucceeded
 
@@ -2672,11 +2238,9 @@ CloudaccountsAwsExocomputeConfigAddSucceeded
 ${userEmail} successfully added Exocompute settings for the ${region} region of the ${accountName} AWS account.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 CloudaccountsAwsExocomputeConfigDeleteFailed
 
@@ -2684,11 +2248,9 @@ CloudaccountsAwsExocomputeConfigDeleteFailed
 ${userEmail} failed to delete Exocompute settings for the ${region} region for the ${accountName} AWS account.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |         |
-| ------------ | ----------- | ------- |
-| **Critical** | **Failure** | **Yes** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **Yes**     |
 
 CloudaccountsAwsExocomputeConfigDeleteSucceeded
 
@@ -2696,11 +2258,9 @@ CloudaccountsAwsExocomputeConfigDeleteSucceeded
 ${userEmail} successfully deleted Exocompute settings for the ${region} region of the ${accountName} AWS account.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 CloudaccountsAzureExocomputeConfigAddFailed
 
@@ -2708,11 +2268,9 @@ CloudaccountsAzureExocomputeConfigAddFailed
 ${userEmail} failed to add Exocompute settings for the ${region} region of the Azure Subscription ${subscriptionName} with ID ${nativeID}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |         |
-| ------------ | ----------- | ------- |
-| **Critical** | **Failure** | **Yes** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **Yes**     |
 
 CloudaccountsAzureExocomputeConfigAddSucceeded
 
@@ -2720,11 +2278,9 @@ CloudaccountsAzureExocomputeConfigAddSucceeded
 ${userEmail} successfully added Exocompute settings for the ${region} region of the Azure Subscription ${subscriptionName} with ID ${nativeID}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 CloudaccountsAzureExocomputeConfigDeleteFailed
 
@@ -2732,11 +2288,9 @@ CloudaccountsAzureExocomputeConfigDeleteFailed
 ${userEmail} failed to delete Exocompute settings for the ${region} region for the Azure Subscription ${subscriptionName} with ID ${nativeID}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |         |
-| ------------ | ----------- | ------- |
-| **Critical** | **Failure** | **Yes** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **Yes**     |
 
 CloudaccountsAzureExocomputeConfigDeleteSucceeded
 
@@ -2744,11 +2298,9 @@ CloudaccountsAzureExocomputeConfigDeleteSucceeded
 ${userEmail} successfully deleted Exocompute settings for the ${region} region of the Azure Subscription ${subscriptionName} with ID ${nativeID}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 CloudaccountsDisableFeatureJobFailed
 
@@ -2756,11 +2308,9 @@ CloudaccountsDisableFeatureJobFailed
 ${userEmail} was unable to initialize disabling ${feature} of  ${cloudProvider} ${accountTerminology}  ${cloudAccountDisplayName}${awsOrgMsg}. Failure reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |         |
-| ------------ | ----------- | ------- |
-| **Critical** | **Failure** | **Yes** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **Yes**     |
 
 CloudaccountsDisableFeatureJobForAwsProtectionStarted
 
@@ -2768,11 +2318,9 @@ CloudaccountsDisableFeatureJobForAwsProtectionStarted
 ${userEmail} started to disable ${feature} of AWS account ${awsAccountDisplayName}. ${featureSnapshots} from AWS will ${deleteSnapshotsMsg} be deleted.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 CloudaccountsDisableFeatureJobForAwsStartFailed
 
@@ -2780,11 +2328,9 @@ CloudaccountsDisableFeatureJobForAwsStartFailed
 ${userEmail} failed to start disable of ${feature} of AWS account ${awsAccountDisplayName}. Failure reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |         |
-| ------------ | ----------- | ------- |
-| **Critical** | **Failure** | **Yes** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **Yes**     |
 
 CloudaccountsDisableFeatureJobStarted
 
@@ -2792,11 +2338,9 @@ CloudaccountsDisableFeatureJobStarted
 ${userEmail} started to disable ${feature} of ${cloudProvider} ${accountTerminology} ${cloudAccountDisplayName}${awsOrgMsg}. ${deleteSnapshotsMsg}
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 GcpCloudAccountAdditionFailed
 
@@ -2804,11 +2348,9 @@ GcpCloudAccountAdditionFailed
 Failed to add GCP Project ${name} with ID ${nativeId} for feature ${feature}. Reason: ${reason}
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Failure** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **No**      |
 
 GcpCloudAccountAdditionSucceeded
 
@@ -2816,11 +2358,9 @@ GcpCloudAccountAdditionSucceeded
 Successfully added GCP Project ${name} with ID ${nativeId} for feature ${feature}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 GcpCloudAccountDeletionFailed
 
@@ -2828,11 +2368,9 @@ GcpCloudAccountDeletionFailed
 Failed to delete permissions of the GCP Project ${name} with ID ${nativeId} for feature ${feature}. Reason: ${reason}
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Failure** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **No**      |
 
 GcpCloudAccountDeletionSucceeded
 
@@ -2840,11 +2378,9 @@ GcpCloudAccountDeletionSucceeded
 Successfully deleted permissions of the GCP Project ${name} with ID ${nativeId} for feature ${feature}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 GcpCloudAccountMissingPermissions
 
@@ -2852,11 +2388,9 @@ GcpCloudAccountMissingPermissions
 The Project ${name} (${nativeId}) requires additional permissions for a recent enhancement with ${feature}. Navigate to GCP Projects under Remote Settings and upgrade permissions to reconnect Project.
 ```
 
-Severity | Status | Audit Event | |
-
-|             |             |        |
-| ----------- | ----------- | ------ |
-| **Warning** | **Success** | **No** |
+| Severity    | Status      | Audit Event |
+| ----------- | ----------- | ----------- |
+| **Warning** | **Success** | **No**      |
 
 GcpCloudAccountUpgradeFailed
 
@@ -2864,11 +2398,9 @@ GcpCloudAccountUpgradeFailed
 Failed to update permissions of the GCP Project ${name} with ID ${nativeId} for feature ${feature}. Reason: ${reason}
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Failure** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **No**      |
 
 GcpCloudAccountUpgradeSucceeded
 
@@ -2876,11 +2408,9 @@ GcpCloudAccountUpgradeSucceeded
 Successfully updated permissions of the GCP Project ${name} with ID ${nativeId} for feature ${feature}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 GcpProjectOperationFailed
 
@@ -2888,11 +2418,9 @@ GcpProjectOperationFailed
 ${userEmail} failed to ${operation} GCP Project ${name} with ID ${nativeId} for feature ${feature}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |         |
-| ------------ | ----------- | ------- |
-| **Critical** | **Failure** | **Yes** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **Yes**     |
 
 GcpProjectOperationSucceeded
 
@@ -2900,11 +2428,9 @@ GcpProjectOperationSucceeded
 ${userEmail} ${operation} GCP Project ${name} with ID ${nativeId} for feature ${feature}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 ## cloudnative
 
@@ -2916,11 +2442,9 @@ CentralExocomputeShareSnapshotsFailed
 Failed to share snapshots with the mapped Exocompute account ${exocomputeAccountName}. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |                 |        |
-| ------------ | --------------- | ------ |
-| **Critical** | **TaskFailure** | **No** |
+| Severity     | Status          | Audit Event |
+| ------------ | --------------- | ----------- |
+| **Critical** | **TaskFailure** | **No**      |
 
 CentralExocomputeShareSnapshotsStarted
 
@@ -2928,11 +2452,9 @@ CentralExocomputeShareSnapshotsStarted
 Sharing snapshots with the mapped Exocompute account ${exocomputeAccountName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Running** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Running** | **No**      |
 
 CentralExocomputeShareSnapshotsSucceeded
 
@@ -2940,11 +2462,9 @@ CentralExocomputeShareSnapshotsSucceeded
 Successfully shared snapshots with the mapped Exocompute account ${exocomputeAccountName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 CentralExocomputeUnShareSnapshotsFailed
 
@@ -2952,11 +2472,9 @@ CentralExocomputeUnShareSnapshotsFailed
 Failed to unshare snapshots from the mapped Exocompute account ${exocomputeAccountName}. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |                 |        |
-| ------------ | --------------- | ------ |
-| **Critical** | **TaskFailure** | **No** |
+| Severity     | Status          | Audit Event |
+| ------------ | --------------- | ----------- |
+| **Critical** | **TaskFailure** | **No**      |
 
 CentralExocomputeUnShareSnapshotsStarted
 
@@ -2964,11 +2482,9 @@ CentralExocomputeUnShareSnapshotsStarted
 Unsharing snapshots from the mapped Exocompute account ${exocomputeAccountName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Running** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Running** | **No**      |
 
 CentralExocomputeUnShareSnapshotsSucceeded
 
@@ -2976,11 +2492,9 @@ CentralExocomputeUnShareSnapshotsSucceeded
 Successfully unshared snapshots from the mapped Exocompute account ${exocomputeAccountName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 CloudNativeCheckInstanceConnectivityFailed
 
@@ -2988,11 +2502,9 @@ CloudNativeCheckInstanceConnectivityFailed
 Failed to validate connectivity to the RDS servers from Exocompute nodes. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |                 |        |
-| ------------ | --------------- | ------ |
-| **Critical** | **TaskFailure** | **No** |
+| Severity     | Status          | Audit Event |
+| ------------ | --------------- | ----------- |
+| **Critical** | **TaskFailure** | **No**      |
 
 CloudNativeCheckInstanceConnectivityStarted
 
@@ -3000,11 +2512,9 @@ CloudNativeCheckInstanceConnectivityStarted
 Validating connectivity to the RDS servers from Exocompute nodes.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Running** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Running** | **No**      |
 
 CloudNativeCheckInstanceConnectivitySucceeded
 
@@ -3012,11 +2522,9 @@ CloudNativeCheckInstanceConnectivitySucceeded
 Successfully validated the connectivity to the exported RDS servers.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 CloudNativeDBPrereqSetupJobCanceled
 
@@ -3024,11 +2532,9 @@ CloudNativeDBPrereqSetupJobCanceled
 Canceled database backup set up on ${qualifiedSnappableDisplayText}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |              |        |
-| -------- | ------------ | ------ |
-| **Info** | **Canceled** | **No** |
+| Severity | Status       | Audit Event |
+| -------- | ------------ | ----------- |
+| **Info** | **Canceled** | **No**      |
 
 CloudNativeDBPrereqSetupJobCanceling
 
@@ -3036,11 +2542,9 @@ CloudNativeDBPrereqSetupJobCanceling
 Canceling database backup set up on ${qualifiedSnappableDisplayText}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |               |        |
-| -------- | ------------- | ------ |
-| **Info** | **Canceling** | **No** |
+| Severity | Status        | Audit Event |
+| -------- | ------------- | ----------- |
+| **Info** | **Canceling** | **No**      |
 
 CloudNativeDBPrereqSetupJobFailed
 
@@ -3048,11 +2552,9 @@ CloudNativeDBPrereqSetupJobFailed
 Could not set up database backup on ${qualifiedSnappableDisplayText}. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Failure** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **No**      |
 
 CloudNativeDBPrereqSetupJobQueued
 
@@ -3060,11 +2562,9 @@ CloudNativeDBPrereqSetupJobQueued
 Queued database backup set up on ${qualifiedSnappableDisplayText}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |            |        |
-| -------- | ---------- | ------ |
-| **Info** | **Queued** | **No** |
+| Severity | Status     | Audit Event |
+| -------- | ---------- | ----------- |
+| **Info** | **Queued** | **No**      |
 
 CloudNativeDBPrereqSetupJobSetupTaskFailed
 
@@ -3072,11 +2572,9 @@ CloudNativeDBPrereqSetupJobSetupTaskFailed
 Failed to prepare ${qualifiedSnappableDisplayText} for persistent database backup. Reason: ${reason}
 ```
 
-Severity | Status | Audit Event | |
-
-|             |                 |        |
-| ----------- | --------------- | ------ |
-| **Warning** | **TaskFailure** | **No** |
+| Severity    | Status          | Audit Event |
+| ----------- | --------------- | ----------- |
+| **Warning** | **TaskFailure** | **No**      |
 
 CloudNativeDBPrereqSetupJobSetupTaskStarted
 
@@ -3084,11 +2582,9 @@ CloudNativeDBPrereqSetupJobSetupTaskStarted
 Started preparation for persistent database backup on ${qualifiedSnappableDisplayText}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Running** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Running** | **No**      |
 
 CloudNativeDBPrereqSetupJobSetupTaskSucceeded
 
@@ -3096,11 +2592,9 @@ CloudNativeDBPrereqSetupJobSetupTaskSucceeded
 Successfully prepared ${qualifiedSnappableDisplayText} for persistent database backup.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 CloudNativeDBPrereqSetupJobStarted
 
@@ -3108,11 +2602,9 @@ CloudNativeDBPrereqSetupJobStarted
 ${userEmail} started database backup set up on ${qualifiedSnappableDisplayText}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 CloudNativeDBPrereqSetupJobStarted
 
@@ -3120,11 +2612,9 @@ CloudNativeDBPrereqSetupJobStarted
 Started database backup set up on ${qualifiedSnappableDisplayText}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 CloudNativeDBPrereqSetupJobStartFailed
 
@@ -3132,11 +2622,9 @@ CloudNativeDBPrereqSetupJobStartFailed
 ${userEmail} failed to start database backup set up on ${qualifiedSnappableDisplayText}. Failure reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |         |
-| ------------ | ----------- | ------- |
-| **Critical** | **Failure** | **Yes** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **Yes**     |
 
 CloudNativeDBPrereqSetupJobSucceeded
 
@@ -3144,11 +2632,9 @@ CloudNativeDBPrereqSetupJobSucceeded
 Successfully set up database backup on ${qualifiedSnappableDisplayText}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 CloudNativeRBAConnectivityJobCanceled
 
@@ -3156,11 +2642,9 @@ CloudNativeRBAConnectivityJobCanceled
 Canceled the connectivity check to the Rubrik Backup Service on ${qualifiedSnappableDisplayText}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |              |        |
-| -------- | ------------ | ------ |
-| **Info** | **Canceled** | **No** |
+| Severity | Status       | Audit Event |
+| -------- | ------------ | ----------- |
+| **Info** | **Canceled** | **No**      |
 
 CloudNativeRBAConnectivityJobCanceling
 
@@ -3168,11 +2652,9 @@ CloudNativeRBAConnectivityJobCanceling
 Canceling the connectivity check to the Rubrik Backup Service on ${qualifiedSnappableDisplayText}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |               |        |
-| -------- | ------------- | ------ |
-| **Info** | **Canceling** | **No** |
+| Severity | Status        | Audit Event |
+| -------- | ------------- | ----------- |
+| **Info** | **Canceling** | **No**      |
 
 CloudNativeRBAConnectivityJobFailed
 
@@ -3180,11 +2662,9 @@ CloudNativeRBAConnectivityJobFailed
 Could not check the connection to the Rubrik Backup Service on ${qualifiedSnappableDisplayText}. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Failure** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **No**      |
 
 CloudNativeRBAConnectivityJobQueued
 
@@ -3192,11 +2672,9 @@ CloudNativeRBAConnectivityJobQueued
 Queued the check for the connection to the Rubrik Backup Service on ${qualifiedSnappableDisplayText}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |            |        |
-| -------- | ---------- | ------ |
-| **Info** | **Queued** | **No** |
+| Severity | Status     | Audit Event |
+| -------- | ---------- | ----------- |
+| **Info** | **Queued** | **No**      |
 
 CloudNativeRBAConnectivityJobStarted
 
@@ -3204,11 +2682,9 @@ CloudNativeRBAConnectivityJobStarted
 Checking the connection to the Rubrik Backup Service on ${qualifiedSnappableDisplayText}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 CloudNativeRBAConnectivityJobStarted
 
@@ -3216,11 +2692,9 @@ CloudNativeRBAConnectivityJobStarted
 For ${userEmail}, checking the connection to the Rubrik Backup Service on ${qualifiedSnappableDisplayText}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 CloudNativeRBAConnectivityJobStartFailed
 
@@ -3228,11 +2702,9 @@ CloudNativeRBAConnectivityJobStartFailed
 For user ${userEmail}, unable to initiate the check for the connection to the Rubrik Backup Service on ${qualifiedSnappableDisplayText}. Failure reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |         |
-| ------------ | ----------- | ------- |
-| **Critical** | **Failure** | **Yes** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **Yes**     |
 
 CloudNativeRBAConnectivityJobSucceeded
 
@@ -3240,11 +2712,9 @@ CloudNativeRBAConnectivityJobSucceeded
 Successfully connected to the Rubrik Backup Service on ${qualifiedSnappableDisplayText}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 CloudNativeRequestClusterTaskFailed
 
@@ -3252,11 +2722,9 @@ CloudNativeRequestClusterTaskFailed
 Failed to get an Exocompute cluster.
 ```
 
-Severity | Status | Audit Event | |
-
-|             |                 |        |
-| ----------- | --------------- | ------ |
-| **Warning** | **TaskFailure** | **No** |
+| Severity    | Status          | Audit Event |
+| ----------- | --------------- | ----------- |
+| **Warning** | **TaskFailure** | **No**      |
 
 CloudNativeRequestClusterTaskStarted
 
@@ -3264,11 +2732,9 @@ CloudNativeRequestClusterTaskStarted
 Waiting for an Exocompute cluster to be ready.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Running** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Running** | **No**      |
 
 CloudNativeRequestClusterTaskSucceeded
 
@@ -3276,11 +2742,9 @@ CloudNativeRequestClusterTaskSucceeded
 Using the Exocompute cluster ${clusterName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 CloudNativeRequestHostedClusterTaskFailed
 
@@ -3288,11 +2752,9 @@ CloudNativeRequestHostedClusterTaskFailed
 Failed to get a Rubrik-hosted compute cluster.
 ```
 
-Severity | Status | Audit Event | |
-
-|             |                 |        |
-| ----------- | --------------- | ------ |
-| **Warning** | **TaskFailure** | **No** |
+| Severity    | Status          | Audit Event |
+| ----------- | --------------- | ----------- |
+| **Warning** | **TaskFailure** | **No**      |
 
 CloudNativeRequestHostedClusterTaskStarted
 
@@ -3300,11 +2762,9 @@ CloudNativeRequestHostedClusterTaskStarted
 Waiting for a Rubrik-hosted compute cluster to be ready.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Running** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Running** | **No**      |
 
 CloudNativeRequestHostedClusterTaskSucceeded
 
@@ -3312,11 +2772,9 @@ CloudNativeRequestHostedClusterTaskSucceeded
 Using the Rubrik-hosted compute cluster.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 DeleteArchivalGroupsTaskFailed
 
@@ -3324,11 +2782,9 @@ DeleteArchivalGroupsTaskFailed
 Failed to delete archival locations for ${cloudProvider} ${accountTerminology} ${cloudAccountDisplayName} Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |                 |        |
-| ------------ | --------------- | ------ |
-| **Critical** | **TaskFailure** | **No** |
+| Severity     | Status          | Audit Event |
+| ------------ | --------------- | ----------- |
+| **Critical** | **TaskFailure** | **No**      |
 
 DeleteArchivalGroupsTaskStarted
 
@@ -3336,11 +2792,9 @@ DeleteArchivalGroupsTaskStarted
 Deleting archival locations for ${cloudProvider} ${accountTerminology} ${cloudAccountDisplayName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Running** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Running** | **No**      |
 
 DeleteArchivalGroupsTaskSucceeded
 
@@ -3348,11 +2802,9 @@ DeleteArchivalGroupsTaskSucceeded
 Successfully deleted archival locations for ${cloudProvider} ${accountTerminology} ${cloudAccountDisplayName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |                 |        |
-| ------------ | --------------- | ------ |
-| **Critical** | **TaskSuccess** | **No** |
+| Severity     | Status          | Audit Event |
+| ------------ | --------------- | ----------- |
+| **Critical** | **TaskSuccess** | **No**      |
 
 DeleteCloudAccountsTaskFailed
 
@@ -3360,11 +2812,9 @@ DeleteCloudAccountsTaskFailed
 Failed to delete features ${commaSeparatedFeatureList} for ${cloudProvider} ${accountTerminology} ${cloudAccountDisplayName}. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |                 |        |
-| ------------ | --------------- | ------ |
-| **Critical** | **TaskFailure** | **No** |
+| Severity     | Status          | Audit Event |
+| ------------ | --------------- | ----------- |
+| **Critical** | **TaskFailure** | **No**      |
 
 DeleteCloudAccountsTaskStarted
 
@@ -3372,11 +2822,9 @@ DeleteCloudAccountsTaskStarted
 Deleting features ${commaSeparatedFeatureList} for ${cloudProvider} ${accountTerminology} ${cloudAccountDisplayName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Running** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Running** | **No**      |
 
 DeleteCloudAccountsTaskSucceeded
 
@@ -3384,11 +2832,9 @@ DeleteCloudAccountsTaskSucceeded
 Successfully deleted features ${commaSeparatedFeatureList} for ${cloudProvider} ${accountTerminology} ${cloudAccountDisplayName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |                 |        |
-| ------------ | --------------- | ------ |
-| **Critical** | **TaskSuccess** | **No** |
+| Severity     | Status          | Audit Event |
+| ------------ | --------------- | ----------- |
+| **Critical** | **TaskSuccess** | **No**      |
 
 DeleteExocomputeConfigsTaskFailed
 
@@ -3396,11 +2842,9 @@ DeleteExocomputeConfigsTaskFailed
 Failed to delete exocompute configurations for ${cloudProvider} ${accountTerminology} ${cloudAccountDisplayName}. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |                 |        |
-| ------------ | --------------- | ------ |
-| **Critical** | **TaskFailure** | **No** |
+| Severity     | Status          | Audit Event |
+| ------------ | --------------- | ----------- |
+| **Critical** | **TaskFailure** | **No**      |
 
 DeleteExocomputeConfigsTaskStarted
 
@@ -3408,11 +2852,9 @@ DeleteExocomputeConfigsTaskStarted
 Deleting exocompute configurations for ${cloudProvider} ${accountTerminology} ${cloudAccountDisplayName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Running** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Running** | **No**      |
 
 DeleteExocomputeConfigsTaskSucceeded
 
@@ -3420,11 +2862,9 @@ DeleteExocomputeConfigsTaskSucceeded
 Successfully deleted exocompute configurations for ${cloudProvider} ${accountTerminology} ${cloudAccountDisplayName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |                 |        |
-| ------------ | --------------- | ------ |
-| **Critical** | **TaskSuccess** | **No** |
+| Severity     | Status          | Audit Event |
+| ------------ | --------------- | ----------- |
+| **Critical** | **TaskSuccess** | **No**      |
 
 ForceDeleteCloudAccountJobFailed
 
@@ -3432,11 +2872,9 @@ ForceDeleteCloudAccountJobFailed
 Failed to delete ${cloudProvider} ${accountTerminology} ${cloudAccountDisplayName}. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Failure** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **No**      |
 
 ForceDeleteCloudAccountJobSucceeded
 
@@ -3444,11 +2882,9 @@ ForceDeleteCloudAccountJobSucceeded
 Successfully deleted ${cloudProvider} ${accountTerminology} ${cloudAccountDisplayName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Success** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Success** | **No**      |
 
 ForceDeleteCloudAccountJobWithDeleteSnapshotsStarted
 
@@ -3456,11 +2892,9 @@ ForceDeleteCloudAccountJobWithDeleteSnapshotsStarted
 Started to delete ${cloudProvider} ${accountTerminology} ${cloudAccountDisplayName}. Snapshots from ${cloudProvider} will be deleted.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Success** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Success** | **No**      |
 
 ForceDeleteCloudAccountJobWithoutDeleteSnapshotsStarted
 
@@ -3468,11 +2902,9 @@ ForceDeleteCloudAccountJobWithoutDeleteSnapshotsStarted
 Started to delete ${cloudProvider} ${accountTerminology} ${cloudAccountDisplayName}. Snapshots from ${cloudProvider} will not be deleted.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Success** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Success** | **No**      |
 
 FoundLeakedResources
 
@@ -3480,11 +2912,9 @@ FoundLeakedResources
 Rubrik Security Cloud encountered an issue while attempting to clean up your resources. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Failure** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **No**      |
 
 PCRExoBundleCompatibilityCheckFailed
 
@@ -3492,11 +2922,9 @@ PCRExoBundleCompatibilityCheckFailed
 RSC failed to validate your exo bundle version. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |                 |        |
-| ------------ | --------------- | ------ |
-| **Critical** | **TaskFailure** | **No** |
+| Severity     | Status          | Audit Event |
+| ------------ | --------------- | ----------- |
+| **Critical** | **TaskFailure** | **No**      |
 
 TagRuleCreationFailed
 
@@ -3504,11 +2932,9 @@ TagRuleCreationFailed
 ${userEmail} failed to create tag-rule ${ruleName} for ${objectType}, Failure reason: ${reason}
 ```
 
-Severity | Status | Audit Event | |
-
-|             |             |         |
-| ----------- | ----------- | ------- |
-| **Warning** | **Failure** | **Yes** |
+| Severity    | Status      | Audit Event |
+| ----------- | ----------- | ----------- |
+| **Warning** | **Failure** | **Yes**     |
 
 TagRuleCreationSucceeded
 
@@ -3516,11 +2942,9 @@ TagRuleCreationSucceeded
 ${userEmail} successfully created tag-rule ${ruleName} for ${objectType}
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 TagRuleDeletionFailed
 
@@ -3528,11 +2952,9 @@ TagRuleDeletionFailed
 ${userEmail} failed to delete tag-rule ${ruleName} for ${objectType}, Failure reason: ${reason}
 ```
 
-Severity | Status | Audit Event | |
-
-|             |             |         |
-| ----------- | ----------- | ------- |
-| **Warning** | **Failure** | **Yes** |
+| Severity    | Status      | Audit Event |
+| ----------- | ----------- | ----------- |
+| **Warning** | **Failure** | **Yes**     |
 
 TagRuleDeletionSucceeded
 
@@ -3540,11 +2962,9 @@ TagRuleDeletionSucceeded
 ${userEmail} successfully deleted tag-rule ${ruleName} for ${objectType}
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 TagRuleModificationFailed
 
@@ -3552,11 +2972,9 @@ TagRuleModificationFailed
 ${userEmail} failed to modify tag-rule ${ruleName} for ${objectType}, Failure reason: ${reason}
 ```
 
-Severity | Status | Audit Event | |
-
-|             |             |         |
-| ----------- | ----------- | ------- |
-| **Warning** | **Failure** | **Yes** |
+| Severity    | Status      | Audit Event |
+| ----------- | ----------- | ----------- |
+| **Warning** | **Failure** | **Yes**     |
 
 TagRuleModificationSucceeded
 
@@ -3564,11 +2982,9 @@ TagRuleModificationSucceeded
 ${userEmail} successfully modified tag-rule ${ruleName} for ${objectType}
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 ## cluster
 
@@ -3580,11 +2996,9 @@ AddClusterNodes
 ${userName} started an add-node job for ${clusterName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 AddClusterNodesFailed
 
@@ -3592,11 +3006,9 @@ AddClusterNodesFailed
 ${userName} failed to start an add-node job for ${clusterName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 AddClusterRoute
 
@@ -3604,11 +3016,9 @@ AddClusterRoute
 ${userName} added route ${routeConfig} for Rubrik cluster ${clusterName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 AddClusterRouteFailed
 
@@ -3616,11 +3026,9 @@ AddClusterRouteFailed
 ${userName} was unable to add route ${routeConfig} for Rubrik cluster ${clusterName}. Failure reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 AddSyslogExportRule
 
@@ -3628,11 +3036,9 @@ AddSyslogExportRule
 ${userName} added a Syslog export rule on ${clusterName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 AddSyslogExportRuleFailed
 
@@ -3640,11 +3046,9 @@ AddSyslogExportRuleFailed
 ${userName} was unable to add a Syslog export rule on ${clusterName}.  Failure reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |         |
-| ------------ | ----------- | ------- |
-| **Critical** | **Failure** | **Yes** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **Yes**     |
 
 BulkSupportTunnel
 
@@ -3652,11 +3056,9 @@ BulkSupportTunnel
 ${userName} started bulk ${action} support tunnel operation on ${clusterCount} clusters: ${clusterUuids}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 ChangeSyslogConfiguration
 
@@ -3664,11 +3066,9 @@ ChangeSyslogConfiguration
 ${userName} triggered a Syslog configuration change on ${clusterName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 ChangeSyslogConfigurationFailed
 
@@ -3676,11 +3076,9 @@ ChangeSyslogConfigurationFailed
 ${userName} failed to update Syslog configuration on ${clusterName}. Failure reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |         |
-| ------------ | ----------- | ------- |
-| **Critical** | **Failure** | **Yes** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **Yes**     |
 
 ConfigureVlan
 
@@ -3688,11 +3086,9 @@ ConfigureVlan
 ${userName} added VLAN with ID ${vlanId} to ${clusterName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 ConfigureVlanFailed
 
@@ -3700,11 +3096,9 @@ ConfigureVlanFailed
 ${userName} failed to add VLAN with ID ${vlanId} to ${clusterName}. Failure reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 DeleteClusterRoute
 
@@ -3712,11 +3106,9 @@ DeleteClusterRoute
 ${userName} deleted route, [${routeConfig}], for Rubrik cluster, ${clusterName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 DeleteClusterRouteFailed
 
@@ -3724,11 +3116,9 @@ DeleteClusterRouteFailed
 ${userName} was unable to delete a route, [${routeConfig}], for Rubrik cluster, ${clusterName}. Failure reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 DeleteProxyConfig
 
@@ -3736,11 +3126,9 @@ DeleteProxyConfig
 ${userName} deleted the proxy settings for ${clusterName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 DeleteProxyConfigFailed
 
@@ -3748,11 +3136,9 @@ DeleteProxyConfigFailed
 ${userName} failed to delete the proxy settings for ${clusterName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 DeleteSyslogConfiguration
 
@@ -3760,11 +3146,9 @@ DeleteSyslogConfiguration
 ${userName} triggered a Syslog configuration deletion on ${clusterName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 DeleteSyslogConfigurationFailed
 
@@ -3772,11 +3156,9 @@ DeleteSyslogConfigurationFailed
 ${userName} was unable to delete a Syslog configuration on ${clusterName}. Failure reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |         |
-| ------------ | ----------- | ------- |
-| **Critical** | **Failure** | **Yes** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **Yes**     |
 
 DeleteTerminatedClusterOpsData
 
@@ -3784,11 +3166,9 @@ DeleteTerminatedClusterOpsData
 ${userName} tried deleting the message for a terminated cluster-operation job on ${clusterName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 DeleteVlans
 
@@ -3796,11 +3176,9 @@ DeleteVlans
 ${userName} deleted VLAN(s) with ID ${vlanIds} for ${clusterName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 DeleteVlansFailed
 
@@ -3808,11 +3186,9 @@ DeleteVlansFailed
 ${userName} failed to delete VLAN(s) with ID ${vlanIds} for ${clusterName}. Failure reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 FindBadDisk
 
@@ -3820,11 +3196,9 @@ FindBadDisk
 ${userName} successfully ran find bad disk on ${nodeId} for ${clusterName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 FindBadDiskFailed
 
@@ -3832,11 +3206,9 @@ FindBadDiskFailed
 ${userName} failed to find bad disk on ${nodeId} for ${clusterName}. Failure reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 GenerateClusterRegistrationToken
 
@@ -3844,11 +3216,9 @@ GenerateClusterRegistrationToken
 ${userName} generated registration token for cluster ${clusterUUID} with nodes ${nodeIDs} and managed by polaris set to ${managedByPolaris}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 GenerateClusterRegistrationTokenFailure
 
@@ -3856,11 +3226,9 @@ GenerateClusterRegistrationTokenFailure
 ${userName} failed to generate registration token for cluster ${clusterUUID} with nodes ${nodeIDs} and managed by polaris set to ${managedByPolaris}, reason ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 MigrateCloudClusterDisks
 
@@ -3868,11 +3236,9 @@ MigrateCloudClusterDisks
 ${userName} started a disk migration job for the ${clusterName} cluster.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 ModifyIpmi
 
@@ -3880,11 +3246,9 @@ ModifyIpmi
 ${userName} successfully modified IPMI settings for ${clusterName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 ModifyIpmiFailed
 
@@ -3892,11 +3256,9 @@ ModifyIpmiFailed
 ${userName} failed to modify IPMI settings for ${clusterName}. Failure reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 PauseClusterAlerts
 
@@ -3904,11 +3266,9 @@ PauseClusterAlerts
 ${userName} paused alerts for Rubrik cluster ${clusterName}, UUID: ${clusterUUID}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 RemoveCDMClusterStarted
 
@@ -3916,11 +3276,9 @@ RemoveCDMClusterStarted
 ${userName} started removal of Rubrik Cluster ${clusterUUID}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 RemoveClusterNodes
 
@@ -3928,11 +3286,9 @@ RemoveClusterNodes
 ${userName} triggered removal of nodes: ${nodeIDs} on ${clusterName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 RemoveDisk
 
@@ -3940,11 +3296,9 @@ RemoveDisk
 ${userName} successfully removed disk ${diskId} for ${clusterName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 RemoveDiskFailed
 
@@ -3952,11 +3306,9 @@ RemoveDiskFailed
 ${userName} failed to remove disk ${diskId} for ${clusterName}. Failure reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 RemoveNodeForReplacement
 
@@ -3964,11 +3316,9 @@ RemoveNodeForReplacement
 ${userName} triggered removal of node: ${nodeID} for replacement, on ${clusterName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 ReplaceClusterNode
 
@@ -3976,11 +3326,9 @@ ReplaceClusterNode
 ${userName} triggered replacement of node: ${nodeID} on ${clusterName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 ResizeDisk
 
@@ -3988,11 +3336,9 @@ ResizeDisk
 ${userName} successfully resized disk ${diskId} for ${clusterName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 ResizeDiskFailed
 
@@ -4000,11 +3346,9 @@ ResizeDiskFailed
 ${userName} failed to resize disk ${diskId} for ${clusterName}. Failure reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 SetClusterDnsAndSearchDomains
 
@@ -4012,11 +3356,9 @@ SetClusterDnsAndSearchDomains
 ${userName} updated the DNS servers and search domains for ${clusterName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 SetClusterDnsAndSearchDomainsFailed
 
@@ -4024,11 +3366,9 @@ SetClusterDnsAndSearchDomainsFailed
 ${userName} failed to update the DNS server or search domains for ${clusterName}. Failure reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 SetupDisk
 
@@ -4036,11 +3376,9 @@ SetupDisk
 ${userName} successfully set up disk ${diskId} for ${clusterName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 SetupDiskFailed
 
@@ -4048,11 +3386,9 @@ SetupDiskFailed
 ${userName} failed to set up disk ${diskId} for ${clusterName}. Failure reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 SupportTunnelDisableFailed
 
@@ -4060,11 +3396,9 @@ SupportTunnelDisableFailed
 Support Tunnel for cluster '${clusterName}' failed to close. Reason: ${reason}
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Failure** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **No**      |
 
 SupportTunnelDisableNoTunnels
 
@@ -4072,11 +3406,9 @@ SupportTunnelDisableNoTunnels
 No support tunnels were enabled on cluster '${clusterName}', nothing to disable
 ```
 
-Severity | Status | Audit Event | |
-
-|             |                 |        |
-| ----------- | --------------- | ------ |
-| **Warning** | **TaskSuccess** | **No** |
+| Severity    | Status          | Audit Event |
+| ----------- | --------------- | ----------- |
+| **Warning** | **TaskSuccess** | **No**      |
 
 SupportTunnelDisableStarted
 
@@ -4084,11 +3416,9 @@ SupportTunnelDisableStarted
 Started to disable support tunnel on cluster '${clusterName}'
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 SupportTunnelDisableSucceeded
 
@@ -4096,11 +3426,9 @@ SupportTunnelDisableSucceeded
 Support Tunnel for cluster '${clusterName}' was successfully closed
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 SupportTunnelEnableFailed
 
@@ -4108,11 +3436,9 @@ SupportTunnelEnableFailed
 Support Tunnel for cluster '${clusterName}' failed to open. Reason: ${reason}
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Failure** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **No**      |
 
 SupportTunnelEnableStarted
 
@@ -4120,11 +3446,9 @@ SupportTunnelEnableStarted
 Started to enable support tunnel on cluster '${clusterName}'
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 SupportTunnelEnableSucceeded
 
@@ -4132,11 +3456,9 @@ SupportTunnelEnableSucceeded
 Support Tunnel for cluster '${clusterName}' was successfully opened
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 SupportTunnelNodeDisableFailed
 
@@ -4144,11 +3466,9 @@ SupportTunnelNodeDisableFailed
 Cluster '${clusterName}: Support Tunnel for node '${nodeID}' failed to close. Reason: ${reason}
 ```
 
-Severity | Status | Audit Event | |
-
-|             |                 |        |
-| ----------- | --------------- | ------ |
-| **Warning** | **TaskFailure** | **No** |
+| Severity    | Status          | Audit Event |
+| ----------- | --------------- | ----------- |
+| **Warning** | **TaskFailure** | **No**      |
 
 SupportTunnelNodeDisableSucceeded
 
@@ -4156,11 +3476,9 @@ SupportTunnelNodeDisableSucceeded
 Cluster '${clusterName}: Support Tunnel for node '${nodeID}' was successfully closed
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 SupportTunnelNodeEnableFailed
 
@@ -4168,11 +3486,9 @@ SupportTunnelNodeEnableFailed
 Cluster '${clusterName}: Support Tunnel for node '${nodeID}' failed to open. Reason: ${reason}
 ```
 
-Severity | Status | Audit Event | |
-
-|             |                 |        |
-| ----------- | --------------- | ------ |
-| **Warning** | **TaskFailure** | **No** |
+| Severity    | Status          | Audit Event |
+| ----------- | --------------- | ----------- |
+| **Warning** | **TaskFailure** | **No**      |
 
 SupportTunnelNodeEnableSucceeded
 
@@ -4180,11 +3496,9 @@ SupportTunnelNodeEnableSucceeded
 Cluster '${clusterName}: Support Tunnel for node '${nodeID}' was successfully opened
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 UnpauseClusterAlerts
 
@@ -4192,11 +3506,9 @@ UnpauseClusterAlerts
 ${userName} resumed alerts for Rubrik cluster ${clusterName}, UUID: ${clusterUUID}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 UpdateAirGapStatusFailed
 
@@ -4204,11 +3516,9 @@ UpdateAirGapStatusFailed
 ${userName} failed to modify the air-gap status for ${clusterName}. Failure reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 UpdateAirGapStatusSucceeded
 
@@ -4216,11 +3526,9 @@ UpdateAirGapStatusSucceeded
 ${userName} modified the air-gap status for ${clusterName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 UpdateClusterIps
 
@@ -4228,11 +3536,9 @@ UpdateClusterIps
 ${userName} updated the floating IPs for ${clusterName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 UpdateClusterIpsFailed
 
@@ -4240,11 +3546,9 @@ UpdateClusterIpsFailed
 ${userName} failed to update the floating IPs for ${clusterName}. Failure reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 UpdateClusterNtpServers
 
@@ -4252,11 +3556,9 @@ UpdateClusterNtpServers
 ${userName} updated the NTP servers for ${clusterName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 UpdateClusterNtpServersFailed
 
@@ -4264,11 +3566,9 @@ UpdateClusterNtpServersFailed
 ${userName} failed to update the NTP servers for ${clusterName}. Failure reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 UpdateClusterSettings
 
@@ -4276,11 +3576,9 @@ UpdateClusterSettings
 ${userName} successfully updated cluster settings for ${clusterName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 UpdateClusterSettingsFailed
 
@@ -4288,11 +3586,9 @@ UpdateClusterSettingsFailed
 ${userName} failed to update cluster settings for ${clusterName}. Failure reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 UpdateProxyConfig
 
@@ -4300,11 +3596,9 @@ UpdateProxyConfig
 ${userName} updated the proxy settings for ${clusterName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 UpdateProxyConfigFailed
 
@@ -4312,11 +3606,9 @@ UpdateProxyConfigFailed
 ${userName} failed to update the proxy settings for ${clusterName}. Failure reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 UpdateRegisteredMode
 
@@ -4324,11 +3616,9 @@ UpdateRegisteredMode
 ${userName} successfully updated the RSC managed mode for ${clusterName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 UpdateRegisteredModeFailed
 
@@ -4336,11 +3626,9 @@ UpdateRegisteredModeFailed
 ${userName} was unable to update the RSC managed mode for ${clusterName}. Failure reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 UpdateVlan
 
@@ -4348,11 +3636,9 @@ UpdateVlan
 ${userName} updated VLAN with ID ${vlanId} for Rubrik cluster ${clusterName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 UpdateVlanFailed
 
@@ -4360,11 +3646,9 @@ UpdateVlanFailed
 ${userName} was unable to update VLAN with ID ${vlanId} for Rubrik cluster ${clusterName}. Failure reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 ## cluster_pause_resume
 
@@ -4376,11 +3660,9 @@ ClusterPauseResumeFailed
 ${userEmail} unable to ${action} protection on clusters:  ${clusterList}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |         |
-| ------------ | ----------- | ------- |
-| **Critical** | **Failure** | **Yes** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **Yes**     |
 
 ClusterPauseResumeFailed
 
@@ -4388,11 +3670,9 @@ ClusterPauseResumeFailed
 Unable to ${action} protection on clusters: ${clusterList}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Failure** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **No**      |
 
 ClusterPauseResumeSucceeded
 
@@ -4400,11 +3680,9 @@ ClusterPauseResumeSucceeded
 ${userEmail} has successfully ${action} protection on clusters:  ${clusterList}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 ClusterPauseResumeSucceeded
 
@@ -4412,11 +3690,9 @@ ClusterPauseResumeSucceeded
 Successfully ${action} protection on clusters: ${clusterList}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 ## common
 
@@ -4428,11 +3704,9 @@ FirmwareUpdateStarted
 ${username} started firmware update on Rubrik cluster '${clusterName}' with ID '${clusterUuid}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 PatchVmFailed
 
@@ -4440,11 +3714,9 @@ PatchVmFailed
 ${username} failed to patch '${objType}' VM named '${vmName}' with ID '${vmID}'. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 PatchVmStarted
 
@@ -4452,11 +3724,9 @@ PatchVmStarted
 ${username} started patching '${objType}' VM named '${vmName}' with ID '${vmID}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 VmRegisterAgentFailed
 
@@ -4464,11 +3734,9 @@ VmRegisterAgentFailed
 ${username} failed to register agent on '${objType}' VM named '${vmName}' with ID '${vmID}'. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 VmRegisterAgentStarted
 
@@ -4476,11 +3744,9 @@ VmRegisterAgentStarted
 ${username} started registering agent on '${objType}' VM named '${vmName}' with ID '${vmID}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 ## cross_account
 
@@ -4492,11 +3758,9 @@ CrossAccountMetadataSyncFailed
 Failed to sync metadata from cross-account ${accountName}. Reason: ${reason}
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Failure** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **No**      |
 
 ## crossaccount
 
@@ -4508,11 +3772,9 @@ CrossAccountPairCreation
 ${username} initiated connection of cross-account ${crossAccountFqdn}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 CrossAccountPairDeletion
 
@@ -4520,11 +3782,9 @@ CrossAccountPairDeletion
 ${username} initiated deletion of cross-account connection  for ${crossAccountFqdn}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 CrossAccountPairRefresh
 
@@ -4532,11 +3792,9 @@ CrossAccountPairRefresh
 ${username} initiated refresh of cross-account connection  for ${crossAccountFqdn}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 ## database
 
@@ -4548,11 +3806,9 @@ ConfigureLogReportingProperties
 ${username} updated database log reporting properties on  cluster '${clusterName}' with ID '${clusterId}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 ConfigureLogReportingPropertiesFailure
 
@@ -4560,11 +3816,9 @@ ConfigureLogReportingPropertiesFailure
 ${username} failed to update database log reporting properties on  cluster '${clusterName}' with ID '${clusterId}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 ## db2
 
@@ -4576,11 +3830,9 @@ AddDb2InstanceFailure
 ${username} failed to add Db2 instance '${instanceName}'. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 AddDb2InstanceStarted
 
@@ -4588,11 +3840,9 @@ AddDb2InstanceStarted
 ${username} started adding Db2 instance '${instanceName}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 ConfigureDb2RestoreFailure
 
@@ -4600,11 +3850,9 @@ ConfigureDb2RestoreFailure
 ${username} failed to configure host IDs ${hostIds} for cross-host restore of Db2 database '${databaseName}'. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 ConfigureDb2RestoreStarted
 
@@ -4612,11 +3860,9 @@ ConfigureDb2RestoreStarted
 ${username} started configuring host IDs ${hostIds} for cross-host restore of Db2 database '${databaseName}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 DeleteDb2DatabaseFailure
 
@@ -4624,11 +3870,9 @@ DeleteDb2DatabaseFailure
 ${username} failed to delete Db2 database '${databaseName}'. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 DeleteDb2DatabaseStarted
 
@@ -4636,11 +3880,9 @@ DeleteDb2DatabaseStarted
 ${username} started deleting Db2 database '${databaseName}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 DeleteDb2InstanceFailure
 
@@ -4648,11 +3890,9 @@ DeleteDb2InstanceFailure
 ${username} failed to delete Db2 instance '${instanceName}'. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 DeleteDb2InstanceStarted
 
@@ -4660,11 +3900,9 @@ DeleteDb2InstanceStarted
 ${username} started deleting Db2 instance '${instanceName}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 DiscoverDb2InstanceFailure
 
@@ -4672,11 +3910,9 @@ DiscoverDb2InstanceFailure
 ${username} failed to refresh metadata for Db2 instance '${instanceName}'. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 DiscoverDb2InstanceStarted
 
@@ -4684,11 +3920,9 @@ DiscoverDb2InstanceStarted
 ${username} started refreshing metadata for Db2 instance '${instanceName}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 EditDb2InstanceFailure
 
@@ -4696,11 +3930,9 @@ EditDb2InstanceFailure
 ${username} failed to modify Db2 instance '${instanceName}'. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 EditDb2InstanceStarted
 
@@ -4708,11 +3940,9 @@ EditDb2InstanceStarted
 ${username} modified Db2 instance '${instanceName}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 PatchDb2DatabaseFailure
 
@@ -4720,11 +3950,9 @@ PatchDb2DatabaseFailure
 ${username} failed to patch metadata for Db2 database '${databaseName}'. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 PatchDb2DatabaseStarted
 
@@ -4732,11 +3960,9 @@ PatchDb2DatabaseStarted
 ${username} started patching metadata for Db2 database '${databaseName}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 RefreshDb2DatabaseFailure
 
@@ -4744,11 +3970,9 @@ RefreshDb2DatabaseFailure
 ${username} failed to refresh metadata for Db2 database '${databaseName}'. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 RefreshDb2DatabaseStarted
 
@@ -4756,11 +3980,9 @@ RefreshDb2DatabaseStarted
 ${username} started refreshing metadata for Db2 database '${databaseName}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 ## encryption_keys
 
@@ -4772,11 +3994,9 @@ ArchivalKeyRotationFailure
 Key rotation on archival location ${locationName} has failed.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Failure** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **No**      |
 
 ArchivalKeyRotationInitiated
 
@@ -4784,11 +4004,9 @@ ArchivalKeyRotationInitiated
 Key rotation on archival location ${locationName} is initiated.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 ArchivalKeyRotationSuccess
 
@@ -4796,11 +4014,9 @@ ArchivalKeyRotationSuccess
 Key rotation on archival location ${locationName} has succeeded.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 ArchivalRekeyFailure
 
@@ -4808,11 +4024,9 @@ ArchivalRekeyFailure
 Rekey of ${rekeyJobType} on archival location ${locationName} has failed. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Failure** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **No**      |
 
 ArchivalRekeyInitiated
 
@@ -4820,11 +4034,9 @@ ArchivalRekeyInitiated
 Rekey of ${rekeyJobType} on archival location ${locationName} is initiated.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 ArchivalRekeySucceeded
 
@@ -4832,11 +4044,9 @@ ArchivalRekeySucceeded
 The rekey of ${rekeyJobType} on archival location ${locationName} has been successfully completed.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 ArchivalRekeySuccessOnCdm
 
@@ -4844,11 +4054,9 @@ ArchivalRekeySuccessOnCdm
 Rekey of ${rekeyJobType} on archival location ${locationName} has succeeded on the CDM cluster.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 ArchivalRekeyTaskFailure
 
@@ -4856,11 +4064,9 @@ ArchivalRekeyTaskFailure
 Rekey of ${rekeyJobType} on archival location ${locationName} has failed. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |                 |        |
-| ------------ | --------------- | ------ |
-| **Critical** | **TaskFailure** | **No** |
+| Severity     | Status          | Audit Event |
+| ------------ | --------------- | ----------- |
+| **Critical** | **TaskFailure** | **No**      |
 
 ## exchange
 
@@ -4872,11 +4078,9 @@ UpdateExchangeDag
 ${username} updated Exchange Dag '${dagName}' with ID '${dagId}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 UpdateExchangeDagFailed
 
@@ -4884,11 +4088,9 @@ UpdateExchangeDagFailed
 ${username} failed to update Exchange Dag '${dagName}' with ID '${dagId}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 ## exocompute
 
@@ -4900,11 +4102,9 @@ BYOKExocomputeClusterDeregistrationSucceeded
 ${userEmail} successfully deregistered Exocompute cluster with ID ${clusterID}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 PCRBundleApprovalSucceeded
 
@@ -4912,11 +4112,9 @@ PCRBundleApprovalSucceeded
 ${userName} successfully ${approvedOrRejected} bundle version ${bundleVersion}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 PCRDeregisterSucceeded
 
@@ -4924,11 +4122,9 @@ PCRDeregisterSucceeded
 ${userEmail} successfully deregistered Private Container Registry for Exocompute cloud account ID ${exocomputeCloudAccountID}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 PCROnboardingSucceeded
 
@@ -4936,11 +4132,9 @@ PCROnboardingSucceeded
 ${userEmail} successfully onboarded Private Container Registry ${registryURL} for Exocompute cloud account ID ${exocomputeCloudAccountID}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 ## failover_cluster
 
@@ -4952,11 +4146,9 @@ AddFailoverClusterFailure
 ${username} failed to add Host Failover Cluster '${failoverClusterName}'. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 AddFailoverClusterStarted
 
@@ -4964,11 +4156,9 @@ AddFailoverClusterStarted
 ${username} started adding Host Failover Cluster '${failoverClusterName}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 DeleteFailoverClusterFailure
 
@@ -4976,11 +4166,9 @@ DeleteFailoverClusterFailure
 ${username} failed to delete Host Failover Cluster '${failoverClusterName}'. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 DeleteFailoverClusterStarted
 
@@ -4988,11 +4176,9 @@ DeleteFailoverClusterStarted
 ${username} started deleting Host Failover Cluster '${failoverClusterName}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 UpdateFailoverClusterFailure
 
@@ -5000,11 +4186,9 @@ UpdateFailoverClusterFailure
 ${username} failed to update Host Failover Cluster '${failoverClusterName}'. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 UpdateFailoverClusterStarted
 
@@ -5012,11 +4196,9 @@ UpdateFailoverClusterStarted
 ${username} updateed Host Failover Cluster '${failoverClusterName}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 ## failover_cluster_app
 
@@ -5028,11 +4210,9 @@ AddFailoverClusterAppFailure
 ${username} failed to add Host Failover Cluster App '${failoverClusterAppName}'. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 AddFailoverClusterAppStarted
 
@@ -5040,11 +4220,9 @@ AddFailoverClusterAppStarted
 ${username} started adding Host Failover Cluster App '${failoverClusterAppName}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 DeleteFailoverClusterAppFailure
 
@@ -5052,11 +4230,9 @@ DeleteFailoverClusterAppFailure
 ${username} failed to delete Host Failover Cluster App '${failoverClusterAppName}'. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 DeleteFailoverClusterAppStarted
 
@@ -5064,11 +4240,9 @@ DeleteFailoverClusterAppStarted
 ${username} started deleting Host Failover Cluster App '${failoverClusterAppName}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 UpdateFailoverClusterAppFailure
 
@@ -5076,11 +4250,9 @@ UpdateFailoverClusterAppFailure
 ${username} failed to update Host Failover Cluster App '${failoverClusterAppName}'. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 UpdateFailoverClusterAppStarted
 
@@ -5088,11 +4260,9 @@ UpdateFailoverClusterAppStarted
 ${username} updateed Host Failover Cluster App '${failoverClusterAppName}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 ## fileset
 
@@ -5104,11 +4274,9 @@ CreateFileset
 ${username} created fileset '${filesetName} on ${parentObjectType} '${parentName}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 CreateFilesetFailure
 
@@ -5116,11 +4284,9 @@ CreateFilesetFailure
 ${username} failed to create fileset '${filesetName}' on ${parentObjectType} '${parentName}'. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 CreateFilesetTemplate
 
@@ -5128,11 +4294,9 @@ CreateFilesetTemplate
 ${username} created fileset '${filesetName}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 CreateFilesetTemplateFailed
 
@@ -5140,11 +4304,9 @@ CreateFilesetTemplateFailed
 ${username} failed to create fileset '${filesetName}'. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 DeleteFileset
 
@@ -5152,11 +4314,9 @@ DeleteFileset
 ${username} deleted fileset '${filesetName}' on ${parentObjectType} '${parentName}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 DeleteFilesetFailure
 
@@ -5164,11 +4324,9 @@ DeleteFilesetFailure
 ${username} failed to delete fileset '${filesetName}' on ${parentObjectType} '${parentName}'. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 DeleteFilesetTemplate
 
@@ -5176,11 +4334,9 @@ DeleteFilesetTemplate
 ${username} deleted fileset '${filesetName}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 DeleteFilesetTemplateFailed
 
@@ -5188,11 +4344,9 @@ DeleteFilesetTemplateFailed
 ${username} failed to delete fileset '${filesetName}'. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 UpdateFilesetLevelCdmConfigs
 
@@ -5200,11 +4354,9 @@ UpdateFilesetLevelCdmConfigs
 ${username} modified backup throttles for fileset '${filesetName}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 UpdateFilesetLevelCdmConfigsFailure
 
@@ -5212,11 +4364,9 @@ UpdateFilesetLevelCdmConfigsFailure
 ${username} failed to modify backup throttles for fileset  '${filesetName}'. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 UpdateFilesetTemplate
 
@@ -5224,11 +4374,9 @@ UpdateFilesetTemplate
 ${username} modified fileset '${filesetName}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 UpdateFilesetTemplateFailed
 
@@ -5236,11 +4384,9 @@ UpdateFilesetTemplateFailed
 ${username} failed to modify fileset '${filesetName}'. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 ## gcpnative
 
@@ -5252,11 +4398,9 @@ DisableGCPNativeProjectArchiveSnapshotTaskFailed
 Failed to delete snapshots in the ${projectDisplayName} project.
 ```
 
-Severity | Status | Audit Event | |
-
-|             |                 |        |
-| ----------- | --------------- | ------ |
-| **Warning** | **TaskFailure** | **No** |
+| Severity    | Status          | Audit Event |
+| ----------- | --------------- | ----------- |
+| **Warning** | **TaskFailure** | **No**      |
 
 DisableGCPNativeProjectArchiveSnapshotTaskStarted
 
@@ -5264,11 +4408,9 @@ DisableGCPNativeProjectArchiveSnapshotTaskStarted
 Deleting snapshots in the ${projectDisplayName} project.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Running** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Running** | **No**      |
 
 DisableGCPNativeProjectArchiveSnapshotTaskSucceeded
 
@@ -5276,11 +4418,9 @@ DisableGCPNativeProjectArchiveSnapshotTaskSucceeded
 Deleted snapshots in the ${projectDisplayName} project.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 DisableGCPNativeProjectJobCanceled
 
@@ -5288,11 +4428,9 @@ DisableGCPNativeProjectJobCanceled
 Canceled disable protection of the ${projectDisplayName} project.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |              |        |
-| -------- | ------------ | ------ |
-| **Info** | **Canceled** | **No** |
+| Severity | Status       | Audit Event |
+| -------- | ------------ | ----------- |
+| **Info** | **Canceled** | **No**      |
 
 DisableGCPNativeProjectJobCanceling
 
@@ -5300,11 +4438,9 @@ DisableGCPNativeProjectJobCanceling
 Canceling disable protection of the ${projectDisplayName} project.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |               |        |
-| -------- | ------------- | ------ |
-| **Info** | **Canceling** | **No** |
+| Severity | Status        | Audit Event |
+| -------- | ------------- | ----------- |
+| **Info** | **Canceling** | **No**      |
 
 DisableGCPNativeProjectJobFailed
 
@@ -5312,11 +4448,9 @@ DisableGCPNativeProjectJobFailed
 Failed to disable protection of the ${projectDisplayName} project. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Failure** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **No**      |
 
 DisableGCPNativeProjectJobStarted
 
@@ -5324,11 +4458,9 @@ DisableGCPNativeProjectJobStarted
 Started to disable protection of the ${projectDisplayName} project.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 DisableGCPNativeProjectJobSucceeded
 
@@ -5336,11 +4468,9 @@ DisableGCPNativeProjectJobSucceeded
 Successfully disabled protection of the ${projectDisplayName} project.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 GCPNativeDisableProjectJobStarted
 
@@ -5348,11 +4478,9 @@ GCPNativeDisableProjectJobStarted
 ${userEmail} started disabling protection of the ${projectDisplayName} GCP project.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 GCPNativeDisableProjectJobStartFailed
 
@@ -5360,11 +4488,9 @@ GCPNativeDisableProjectJobStartFailed
 ${userEmail} failed to start disabling protection of the ${projectDisplayName} GCP project. Failure reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |         |
-| ------------ | ----------- | ------- |
-| **Critical** | **Failure** | **Yes** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **Yes**     |
 
 GCPNativeRefreshProjectJobStarted
 
@@ -5372,11 +4498,9 @@ GCPNativeRefreshProjectJobStarted
 ${userEmail} started refresh of GCP project ${gcpProjectDisplayName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 GCPNativeRefreshProjectJobStartFailed
 
@@ -5384,11 +4508,9 @@ GCPNativeRefreshProjectJobStartFailed
 ${userEmail} failed to start refresh of GCP project ${gcpProjectDisplayName}. Failure reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |         |
-| ------------ | ----------- | ------- |
-| **Critical** | **Failure** | **Yes** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **Yes**     |
 
 RefreshGCPNativeProjectJobCanceled
 
@@ -5396,11 +4518,9 @@ RefreshGCPNativeProjectJobCanceled
 Canceled ${maintenanceType} refresh of the project ${gcpProjectDisplayName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |              |        |
-| -------- | ------------ | ------ |
-| **Info** | **Canceled** | **No** |
+| Severity | Status       | Audit Event |
+| -------- | ------------ | ----------- |
+| **Info** | **Canceled** | **No**      |
 
 RefreshGCPNativeProjectJobCanceling
 
@@ -5408,11 +4528,9 @@ RefreshGCPNativeProjectJobCanceling
 Canceling ${maintenanceType} refresh of the project ${gcpProjectDisplayName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |               |        |
-| -------- | ------------- | ------ |
-| **Info** | **Canceling** | **No** |
+| Severity | Status        | Audit Event |
+| -------- | ------------- | ----------- |
+| **Info** | **Canceling** | **No**      |
 
 RefreshGCPNativeProjectJobFailed
 
@@ -5420,11 +4538,9 @@ RefreshGCPNativeProjectJobFailed
 Failed to refresh GCP project ${gcpProjectDisplayName}. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Failure** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **No**      |
 
 RefreshGCPNativeProjectJobQueued
 
@@ -5432,11 +4548,9 @@ RefreshGCPNativeProjectJobQueued
 Queued ${maintenanceType} refresh of GCP project ${gcpProjectDisplayName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |            |        |
-| -------- | ---------- | ------ |
-| **Info** | **Queued** | **No** |
+| Severity | Status     | Audit Event |
+| -------- | ---------- | ----------- |
+| **Info** | **Queued** | **No**      |
 
 RefreshGCPNativeProjectJobStarted
 
@@ -5444,11 +4558,9 @@ RefreshGCPNativeProjectJobStarted
 Started  ${maintenanceType} refresh of GCP project ${gcpProjectDisplayName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 RefreshGCPNativeProjectJobSucceeded
 
@@ -5456,11 +4568,9 @@ RefreshGCPNativeProjectJobSucceeded
 Successfully refreshed GCP project ${gcpProjectDisplayName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 ## health_monitor
 
@@ -5472,11 +4582,9 @@ RunPolicies
 ${userName} successfully ran health monitor policies [${policyIds}] on nodes [${nodeIds}] for ${clusterName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 RunPoliciesFailed
 
@@ -5484,11 +4592,9 @@ RunPoliciesFailed
 ${userName} failed to run health monitor policies [${policyIds}] on nodes [${nodeIds}] for ${clusterName}. Failure reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 ## host
 
@@ -5500,11 +4606,9 @@ ChangeVFDOnHostFailure
 ${username} failed to ${operation} VFD on host '${hostName}'. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 ChangeVFDOnHostStarted
 
@@ -5512,11 +4616,9 @@ ChangeVFDOnHostStarted
 ${username} started ${operation} VFD on host '${hostName}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 DeleteHostFailure
 
@@ -5524,11 +4626,9 @@ DeleteHostFailure
 ${username} failed to delete host '${hostName}'. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 DeleteHostStarted
 
@@ -5536,11 +4636,9 @@ DeleteHostStarted
 ${username} started deleting host '${hostName}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 MakePrimaryHostFailed
 
@@ -5548,11 +4646,9 @@ MakePrimaryHostFailed
 ${username} failed to configure cluster '${clusterName}' as primary for host '${hostName}'. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 MakePrimaryHostStarted
 
@@ -5560,11 +4656,9 @@ MakePrimaryHostStarted
 ${username} started configuring cluster '${clusterName}' as primary for host '${hostName}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 RefreshHostMetadataFailed
 
@@ -5572,11 +4666,9 @@ RefreshHostMetadataFailed
 ${username} failed to refresh metadata for host '${host}'. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 RefreshHostMetadataStarted
 
@@ -5584,11 +4676,9 @@ RefreshHostMetadataStarted
 ${username} started refreshing metadata for host '${host}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 RegisteredHostSuccessfully
 
@@ -5596,11 +4686,9 @@ RegisteredHostSuccessfully
 ${username} registered host '${hostName}' successfully.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 RegisterHostFailure
 
@@ -5608,11 +4696,9 @@ RegisterHostFailure
 ${username} failed to register host '${hostName}'. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 UpdateHost
 
@@ -5620,11 +4706,9 @@ UpdateHost
 ${username} modified host '${hostName}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 UpdateHostCertificate
 
@@ -5632,11 +4716,9 @@ UpdateHostCertificate
 ${username} modified certificate for host '${hostName}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 UpdateHostCertificateFailed
 
@@ -5644,11 +4726,9 @@ UpdateHostCertificateFailed
 ${username} failed to modify certificate for host '${hostName}'. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 UpdateHostFailed
 
@@ -5656,11 +4736,9 @@ UpdateHostFailed
 ${username} failed to modify host '${hostName}'. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 UpdateRbaCredentialsFailure
 
@@ -5668,11 +4746,9 @@ UpdateRbaCredentialsFailure
 ${username} failed to update RBS credentials for host '${hostName}'. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 UpdateRbaCredentialsSuccess
 
@@ -5680,11 +4756,9 @@ UpdateRbaCredentialsSuccess
 ${username} updated RBS credentials for host '${hostName}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 ## hyperv
 
@@ -5696,11 +4770,9 @@ AddHypervScvmmFailed
 ${username} failed to create Hyperv Scvmm '${hostName}'. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 AddHypervScvmmStarted
 
@@ -5708,11 +4780,9 @@ AddHypervScvmmStarted
 ${username} started creating Hyperv Scvmm '${hostName}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 DeleteHypervScvmmFailed
 
@@ -5720,11 +4790,9 @@ DeleteHypervScvmmFailed
 ${username} failed to delete Hyperv Scvmm '${hypervScvmm}'. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 DeleteHypervScvmmStarted
 
@@ -5732,11 +4800,9 @@ DeleteHypervScvmmStarted
 ${username} started deleting Hyperv Scvmm '${hypervScvmm}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 EditHypervScvmmFailed
 
@@ -5744,11 +4810,9 @@ EditHypervScvmmFailed
 ${username} failed to patch Hyperv Scvmm '${hypervScvmm}'. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 EditHypervScvmmStarted
 
@@ -5756,11 +4820,9 @@ EditHypervScvmmStarted
 ${username} started patching Hyperv Scvmm '${hypervScvmm}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 RefreshHypervScvmmFailed
 
@@ -5768,11 +4830,9 @@ RefreshHypervScvmmFailed
 ${username} failed to refresh Hyperv Scvmm '${hypervScvmm}'. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 RefreshHypervScvmmStarted
 
@@ -5780,11 +4840,9 @@ RefreshHypervScvmmStarted
 ${username} started refreshing Hyperv Scvmm '${hypervScvmm}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 ## k8s
 
@@ -5796,11 +4854,9 @@ K8sAddKubernetesClusterFailure
 ${userName} was unable to add the Kubernetes cluster, ${kubernetesCluster}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |         |
-| ------------ | ----------- | ------- |
-| **Critical** | **Failure** | **Yes** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **Yes**     |
 
 K8sAddKubernetesClusterSuccess
 
@@ -5808,11 +4864,9 @@ K8sAddKubernetesClusterSuccess
 ${userName} added the Kubernetes cluster, ${kubernetesCluster}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 K8sCreateProtectionSetFailure
 
@@ -5820,11 +4874,9 @@ K8sCreateProtectionSetFailure
 ${userName} was unable to create the Kubernetes protection set, ${kubernetesProtectionSet}, on Kubernetes cluster, ${kubernetesCluster}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |         |
-| ------------ | ----------- | ------- |
-| **Critical** | **Failure** | **Yes** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **Yes**     |
 
 K8sCreateProtectionSetSuccess
 
@@ -5832,11 +4884,9 @@ K8sCreateProtectionSetSuccess
 ${userName} created the Kubernetes protection set, ${kubernetesProtectionSet}, on Kubernetes cluster, ${kubernetesCluster}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 K8sDeleteKubernetesClusterFailure
 
@@ -5844,11 +4894,9 @@ K8sDeleteKubernetesClusterFailure
 ${userName} was unable to initiate the deletion of Kubernetes cluster, ${kubernetesCluster}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |         |
-| ------------ | ----------- | ------- |
-| **Critical** | **Failure** | **Yes** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **Yes**     |
 
 K8sDeleteKubernetesClusterSuccess
 
@@ -5856,11 +4904,9 @@ K8sDeleteKubernetesClusterSuccess
 ${userName} initiated the deletion of Kubernetes cluster, ${kubernetesCluster}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 K8sDeleteProtectionSetFailure
 
@@ -5868,11 +4914,9 @@ K8sDeleteProtectionSetFailure
 ${userName} was unable to delete the Kubernetes protection set, ${kubernetesProtectionSet}, on Kubernetes cluster, ${kubernetesCluster}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |         |
-| ------------ | ----------- | ------- |
-| **Critical** | **Failure** | **Yes** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **Yes**     |
 
 K8sDeleteProtectionSetSuccess
 
@@ -5880,11 +4924,9 @@ K8sDeleteProtectionSetSuccess
 ${userName} initiated the deletion of Kubernetes protection set, ${kubernetesProtectionSet}, on Kubernetes cluster, ${kubernetesCluster}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 K8sGenerateManifestFailed
 
@@ -5892,11 +4934,9 @@ K8sGenerateManifestFailed
 ${userName} failed to generate a Kubernetes manifest for cluster ${k8sClusterName}
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |         |
-| ------------ | ----------- | ------- |
-| **Critical** | **Failure** | **Yes** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **Yes**     |
 
 K8sGenerateManifestSuccess
 
@@ -5904,11 +4944,9 @@ K8sGenerateManifestSuccess
 ${userName} generated a Kubernetes manifest for cluster ${k8sClusterName}
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 K8sGetObjectConfigFailed
 
@@ -5916,11 +4954,9 @@ K8sGetObjectConfigFailed
 ${userName} was unable to retrieve the configuration for the Kubernetes object ${apigroup}/${resources}::${name} in ${scope} scope
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |         |
-| ------------ | ----------- | ------- |
-| **Critical** | **Failure** | **Yes** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **Yes**     |
 
 K8sGetObjectConfigSuccess
 
@@ -5928,11 +4964,9 @@ K8sGetObjectConfigSuccess
 ${userName} retrieved the configuration for the Kubernetes object ${apigroup}/${resources}::${name} in ${scope} scope
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 K8sRegenerateManifestFailed
 
@@ -5940,11 +4974,9 @@ K8sRegenerateManifestFailed
 ${userName} failed to regenerate Kubernetes manifest for cluster ${k8sClusterName}
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |         |
-| ------------ | ----------- | ------- |
-| **Critical** | **Failure** | **Yes** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **Yes**     |
 
 K8sRegenerateManifestSuccess
 
@@ -5952,11 +4984,9 @@ K8sRegenerateManifestSuccess
 ${userName} regenerated Kubernetes manifest for cluster ${k8sClusterName}
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 K8sUpdateKubernetesClusterFailure
 
@@ -5964,11 +4994,9 @@ K8sUpdateKubernetesClusterFailure
 ${userName} was unable to modify the ${updatedFields} of the Kubernetes cluster, ${kubernetesCluster}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |         |
-| ------------ | ----------- | ------- |
-| **Critical** | **Failure** | **Yes** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **Yes**     |
 
 K8sUpdateKubernetesClusterSuccess
 
@@ -5976,11 +5004,9 @@ K8sUpdateKubernetesClusterSuccess
 ${userName} modified the ${updatedFields} of the Kubernetes cluster, ${kubernetesCluster}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 K8sUpdateProtectionSetFailure
 
@@ -5988,11 +5014,9 @@ K8sUpdateProtectionSetFailure
 ${userName} was unable to modify the Kubernetes protection set, ${kubernetesProtectionSet}, on Kubernetes cluster, ${kubernetesCluster}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |         |
-| ------------ | ----------- | ------- |
-| **Critical** | **Failure** | **Yes** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **Yes**     |
 
 K8sUpdateProtectionSetSuccess
 
@@ -6000,11 +5024,9 @@ K8sUpdateProtectionSetSuccess
 ${userName} modified the Kubernetes protection set, ${kubernetesProtectionSet}, on Kubernetes cluster, ${kubernetesCluster}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 ## kms_key_vault
 
@@ -6016,11 +5038,9 @@ AddKMSKeyVault
 ${username} added KMS Key Vault ${keyVaultName} of type ${keyVaultType}${authConfigurationDetails}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 DeleteKMSKeyVault
 
@@ -6028,11 +5048,9 @@ DeleteKMSKeyVault
 ${username} deleted KMS Key Vault ${keyVaultName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 EditAzureKmsKeyVaultFailure
 
@@ -6040,11 +5058,9 @@ EditAzureKmsKeyVaultFailure
 Failed to update the credentials for the KMS key vault ${kmsName}  on the Rubrik cluster ${clusterName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Failure** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **No**      |
 
 EditAzureKmsKeyVaultInitiated
 
@@ -6052,11 +5068,9 @@ EditAzureKmsKeyVaultInitiated
 Initiating the process to update the credentials for the KMS key vault ${kmsName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 EditAzureKmsKeyVaultSuccess
 
@@ -6064,11 +5078,9 @@ EditAzureKmsKeyVaultSuccess
 Successfully updated credentials for the KMS key vault ${kmsName}  on the Rubrik cluster ${clusterName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 EditKmsKeyVaultFailure
 
@@ -6076,11 +5088,9 @@ EditKmsKeyVaultFailure
 Failed to update the credentials for the KMS ${kmsName} of type ${kmsType} for archival location ${locationName} on the Rubrik cluster ${clusterName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Failure** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **No**      |
 
 EditKmsKeyVaultInitiated
 
@@ -6088,11 +5098,9 @@ EditKmsKeyVaultInitiated
 Initiating the process to update the credentials for the KMS ${kmsName} of type ${kmsType} for archival location ${locationName} on the Rubrik cluster ${clusterName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 EditKmsKeyVaultSuccess
 
@@ -6100,11 +5108,9 @@ EditKmsKeyVaultSuccess
 Successfully updated credentials for the KMS ${kmsName} of type ${kmsType} for archival location ${locationName} on the Rubrik cluster ${clusterName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 UpdateKMSKeyVault
 
@@ -6112,11 +5118,9 @@ UpdateKMSKeyVault
 ${username} updated KMS Key Vault name from '${oldKeyVaultName}' to '${newKeyVaultName}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 UpdateKMSKeyVaultCredentials
 
@@ -6124,11 +5128,9 @@ UpdateKMSKeyVaultCredentials
 ${username} updated KMS Key Vault ${keyVaultName} credentials.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 UpdateKMSKeyVaultDescription
 
@@ -6136,11 +5138,9 @@ UpdateKMSKeyVaultDescription
 ${username} updated KMS Key Vault ${keyVaultName} description.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 UpdateKMSKeyVaultFailure
 
@@ -6148,11 +5148,9 @@ UpdateKMSKeyVaultFailure
 Failed to update KMS key vault ${kmsName} of type ${kmsType}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Failure** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **No**      |
 
 UpdateKMSKeyVaultSuccess
 
@@ -6160,11 +5158,9 @@ UpdateKMSKeyVaultSuccess
 Successfully updated KMS key vault ${kmsName} of type ${kmsType}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 ## kupr
 
@@ -6176,11 +5172,9 @@ KuprClusterRefreshCanceled
 Canceled refreshing Kubernetes Cluster ${clusterName} with clusterID ${clusterUUID}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |              |        |
-| -------- | ------------ | ------ |
-| **Info** | **Canceled** | **No** |
+| Severity | Status       | Audit Event |
+| -------- | ------------ | ----------- |
+| **Info** | **Canceled** | **No**      |
 
 KuprClusterRefreshCanceling
 
@@ -6188,11 +5182,9 @@ KuprClusterRefreshCanceling
 Canceling refreshing Kubernetes Cluster ${clusterName} with clusterID ${clusterUUID}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |               |        |
-| -------- | ------------- | ------ |
-| **Info** | **Canceling** | **No** |
+| Severity | Status        | Audit Event |
+| -------- | ------------- | ----------- |
+| **Info** | **Canceling** | **No**      |
 
 KuprClusterRefreshCompleted
 
@@ -6200,11 +5192,9 @@ KuprClusterRefreshCompleted
 Successfully refreshed Kubernetes Cluster ${clusterName} with clusterID ${clusterUUID}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 KuprClusterRefreshFailed
 
@@ -6212,11 +5202,9 @@ KuprClusterRefreshFailed
 Refreshing Kubernetes Cluster ${clusterName} with clusterID ${clusterUUID} failed. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Failure** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **No**      |
 
 KuprClusterRefreshStarted
 
@@ -6224,11 +5212,9 @@ KuprClusterRefreshStarted
 Started refreshing Kubernetes Cluster ${clusterName} with clusterID ${clusterUUID}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 KuprDeletingClusterStarted
 
@@ -6236,11 +5222,9 @@ KuprDeletingClusterStarted
 ${userName} deleted Kubernetes Cluster ${clusterName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 KuprDeletingClusterStarted
 
@@ -6248,11 +5232,9 @@ KuprDeletingClusterStarted
 ${userName} deleted Kubernetes Cluster ${clusterName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 KuprOnBoardingStarted
 
@@ -6260,11 +5242,9 @@ KuprOnBoardingStarted
 ${userName} onboarded Kubernetes Cluster ${clusterName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 KuprOnboardingStarted
 
@@ -6272,11 +5252,9 @@ KuprOnboardingStarted
 ${userName} onboarded Kubernetes Cluster ${clusterName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 ## legalhold
 
@@ -6288,11 +5266,9 @@ ApplyLegalHoldFailure
 ${userEmail} on the Rubrik cluster named ${clusterName} unsuccessfully attempted to place a Legal Hold on the ${snapshotTimeDisplay} UTC snapshot of ${snappableName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 ApplyLegalHoldSuccess
 
@@ -6300,11 +5276,9 @@ ApplyLegalHoldSuccess
 ${userEmail} has successfully placed a Legal Hold on the ${snapshotTimeDisplay} UTC snapshot of ${snappableName} on the Rubrik cluster ${clusterName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 DissolveLegalHoldFailure
 
@@ -6312,11 +5286,9 @@ DissolveLegalHoldFailure
 ${userEmail} on the Rubrik cluster named ${clusterName} unsuccessfully attempted to remove a Legal Hold from the ${snapshotTimeDisplay} UTC snapshot of ${snappableName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 DissolveLegalHoldSuccess
 
@@ -6324,11 +5296,9 @@ DissolveLegalHoldSuccess
 ${userEmail} has successfully removed the Legal Hold from the ${snapshotTimeDisplay} UTC snapshot of ${snappableName} on the Rubrik cluster ${clusterName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 ## link_unlink
 
@@ -6340,11 +5310,9 @@ ObjectLinkingCanceled
 Canceled job to link ${objectNames} on Rubrik clusters  ${clusterNames}, and assign SLA Domain ${slaName} to these objects.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |              |        |
-| -------- | ------------ | ------ |
-| **Info** | **Canceled** | **No** |
+| Severity | Status       | Audit Event |
+| -------- | ------------ | ----------- |
+| **Info** | **Canceled** | **No**      |
 
 ObjectLinkingCanceling
 
@@ -6352,11 +5320,9 @@ ObjectLinkingCanceling
 Canceling a job to link ${objectNames} on Rubrik clusters  ${clusterNames}, and assign SLA Domain ${slaName} to these objects.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |               |        |
-| -------- | ------------- | ------ |
-| **Info** | **Canceling** | **No** |
+| Severity | Status        | Audit Event |
+| -------- | ------------- | ----------- |
+| **Info** | **Canceling** | **No**      |
 
 ObjectLinkingFailed
 
@@ -6364,11 +5330,9 @@ ObjectLinkingFailed
 Job failed to link ${objectNames} on Rubrik clusters ${clusterNames},  and did not assign SLA Domain ${slaName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Failure** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **No**      |
 
 ObjectLinkingStarted
 
@@ -6376,11 +5340,9 @@ ObjectLinkingStarted
 Started a job to link ${objectNames} on Rubrik clusters ${clusterNames},  and assign SLA Domain ${slaName} to these objects.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 ObjectLinkingSuccess
 
@@ -6388,11 +5350,9 @@ ObjectLinkingSuccess
 Successfully linked ${objectNames} on Rubrik clusters  ${clusterNames}, and assigned SLA Domain ${slaName} to these objects.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 ObjectSLAAssignmentCanceled
 
@@ -6400,11 +5360,9 @@ ObjectSLAAssignmentCanceled
 Canceled job to update the SLA Domain of ${objectNames} on  Rubrik clusters ${clusterNames} to ${newSLANames}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |              |        |
-| -------- | ------------ | ------ |
-| **Info** | **Canceled** | **No** |
+| Severity | Status       | Audit Event |
+| -------- | ------------ | ----------- |
+| **Info** | **Canceled** | **No**      |
 
 ObjectSLAAssignmentCanceling
 
@@ -6412,11 +5370,9 @@ ObjectSLAAssignmentCanceling
 Canceling a job to update the SLA Domain of ${objectNames} on  Rubrik clusters ${clusterNames} to ${newSLANames}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |               |        |
-| -------- | ------------- | ------ |
-| **Info** | **Canceling** | **No** |
+| Severity | Status        | Audit Event |
+| -------- | ------------- | ----------- |
+| **Info** | **Canceling** | **No**      |
 
 ObjectSLAAssignmentFailed
 
@@ -6424,11 +5380,9 @@ ObjectSLAAssignmentFailed
 Job failed to update the SLA Domain of ${objectNames} on  Rubrik clusters ${clusterNames} to ${newSLANames}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Failure** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **No**      |
 
 ObjectSLAAssignmentStarted
 
@@ -6436,11 +5390,9 @@ ObjectSLAAssignmentStarted
 Started a job to update the SLA Domain of ${objectNames} on  Rubrik clusters ${clusterNames} to ${newSLANames}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 ObjectSLAAssignmentSuccess
 
@@ -6448,11 +5400,9 @@ ObjectSLAAssignmentSuccess
 Successfully updated the SLA Domain of ${objectNames} on  Rubrik clusters ${clusterNames} to ${newSLANames}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 ObjectUnlinkingCanceled
 
@@ -6460,11 +5410,9 @@ ObjectUnlinkingCanceled
 Canceled job to unlink and unprotect ${objectNames} on  Rubrik clusters ${clusterNames}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |              |        |
-| -------- | ------------ | ------ |
-| **Info** | **Canceled** | **No** |
+| Severity | Status       | Audit Event |
+| -------- | ------------ | ----------- |
+| **Info** | **Canceled** | **No**      |
 
 ObjectUnlinkingCanceling
 
@@ -6472,11 +5420,9 @@ ObjectUnlinkingCanceling
 Canceling a job to unlink and unprotect ${objectNames} on  Rubrik clusters ${clusterNames}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |               |        |
-| -------- | ------------- | ------ |
-| **Info** | **Canceling** | **No** |
+| Severity | Status        | Audit Event |
+| -------- | ------------- | ----------- |
+| **Info** | **Canceling** | **No**      |
 
 ObjectUnlinkingFailed
 
@@ -6484,11 +5430,9 @@ ObjectUnlinkingFailed
 Job failed to unlink and unprotect ${objectNames} on  Rubrik clusters ${clusterNames}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Failure** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **No**      |
 
 ObjectUnlinkingStarted
 
@@ -6496,11 +5440,9 @@ ObjectUnlinkingStarted
 Started a job to unlink and unprotect ${objectNames} on  Rubrik clusters ${clusterNames}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 ObjectUnlinkingSuccess
 
@@ -6508,11 +5450,9 @@ ObjectUnlinkingSuccess
 Successfully unlinked and unprotected ${objectNames} on  Rubrik clusters ${clusterNames}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 ## managed_volume
 
@@ -6524,11 +5464,9 @@ ConfigureManagedVolumeLogExportFailure
 ${username} failed to create a log export for Managed Volume: '${mvName}'. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 ConfigureManagedVolumeLogExportSuccess
 
@@ -6536,11 +5474,9 @@ ConfigureManagedVolumeLogExportSuccess
 ${username} started the operation to create a log export for Managed Volume: '${mvName}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 InternalResizeManagedVolume
 
@@ -6548,11 +5484,9 @@ InternalResizeManagedVolume
 ${username} started the operation to resize managed volume for '${mv}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 InternalResizeManagedVolumeFailure
 
@@ -6560,11 +5494,9 @@ InternalResizeManagedVolumeFailure
 ${username} failed to resize managed volume for '${mv}'. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 InternalUpdateManagedVolume
 
@@ -6572,11 +5504,9 @@ InternalUpdateManagedVolume
 ${username} updated the Managed Volume '${mv}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 InternalUpdateManagedVolumeFailure
 
@@ -6584,11 +5514,9 @@ InternalUpdateManagedVolumeFailure
 ${username} failed to update the Managed Volume '${mv}'. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 TakeManagedVolumeOnDemandSnapshot
 
@@ -6596,11 +5524,9 @@ TakeManagedVolumeOnDemandSnapshot
 ${username} started the operation to create on demand snapshot for Managed Volume: '${mvName}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 TakeManagedVolumeOnDemandSnapshotFailed
 
@@ -6608,11 +5534,9 @@ TakeManagedVolumeOnDemandSnapshotFailed
 ${username} failed to create on demand snapshot for Managed Volume: '${mvName}'. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 V1CreateManagedVolume
 
@@ -6620,11 +5544,9 @@ V1CreateManagedVolume
 ${username} started the operation to create the Managed Volume '${mv}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 V1CreateManagedVolumeFailure
 
@@ -6632,11 +5554,9 @@ V1CreateManagedVolumeFailure
 ${username} failed to create the Managed Volume '${mv}'. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 V1DeleteManagedVolume
 
@@ -6644,11 +5564,9 @@ V1DeleteManagedVolume
 ${username} started the operation to delete the Managed Volume '${mv}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 V1DeleteManagedVolumeFailure
 
@@ -6656,11 +5574,9 @@ V1DeleteManagedVolumeFailure
 ${username} failed to delete the Managed Volume '${mv}'. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 ## mongo
 
@@ -6672,11 +5588,9 @@ AddCdmMongoSourceFailure
 ${username} unable to add MongoDB source '${sourceName}'. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 AddCdmMongoSourceStarted
 
@@ -6684,11 +5598,9 @@ AddCdmMongoSourceStarted
 ${username} started adding MongoDB source '${sourceName}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 DeleteCdmMongoSourceFailure
 
@@ -6696,11 +5608,9 @@ DeleteCdmMongoSourceFailure
 ${username} unable to delete MongoDB source '${sourceName}'. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 DeleteCdmMongoSourceStarted
 
@@ -6708,11 +5618,9 @@ DeleteCdmMongoSourceStarted
 ${username} started deleting MongoDB source '${sourceName}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 DiscoverCdmMongoSourceFailure
 
@@ -6720,11 +5628,9 @@ DiscoverCdmMongoSourceFailure
 ${username} unable to refresh metadata for MongoDB source '${sourceName}'. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 DiscoverCdmMongoSourceStarted
 
@@ -6732,11 +5638,9 @@ DiscoverCdmMongoSourceStarted
 ${username} started refreshing metadata for MongoDB source '${sourceName}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 EditCdmMongoSourceFailure
 
@@ -6744,11 +5648,9 @@ EditCdmMongoSourceFailure
 ${username} unable to edit MongoDB source '${sourceName}'. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 EditCdmMongoSourceStarted
 
@@ -6756,11 +5658,9 @@ EditCdmMongoSourceStarted
 ${username} modified MongoDB source '${sourceName}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 RecoverCdmMongoDatabasesAndCollectionsFailure
 
@@ -6768,11 +5668,9 @@ RecoverCdmMongoDatabasesAndCollectionsFailure
 ${username} unable to recover databases and collections to MongoDB source '${sourceName}'. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 RecoverCdmMongoDatabasesAndCollectionsStarted
 
@@ -6780,11 +5678,9 @@ RecoverCdmMongoDatabasesAndCollectionsStarted
 ${username} started recovering databases and collections to MongoDB source '${sourceName}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 ## mongo_source
 
@@ -6796,11 +5692,9 @@ AddMongoSourceFailure
 ${username} failed to add the MongoDB source '${sourceName}'. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 AddMongoSourceStarted
 
@@ -6808,11 +5702,9 @@ AddMongoSourceStarted
 ${username} started adding the MongoDB source '${sourceName}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 DeleteMongoSourceFailure
 
@@ -6820,11 +5712,9 @@ DeleteMongoSourceFailure
 ${username} failed to delete the MongoDB source '${sourceName}'. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 DeleteMongoSourceStarted
 
@@ -6832,11 +5722,9 @@ DeleteMongoSourceStarted
 ${username} started deleting the MongoDB source '${sourceName}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 EditMongoSourceFailure
 
@@ -6844,11 +5732,9 @@ EditMongoSourceFailure
 ${username} failed to modify the MongoDB source '${sourceName}'. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 EditMongoSourceStarted
 
@@ -6856,11 +5742,9 @@ EditMongoSourceStarted
 ${username} modified the MongoDB source '${sourceName}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 ## mosaic_store
 
@@ -6872,11 +5756,9 @@ AddMosaicStoreFailure
 ${username} failed to add the NoSQL store '${storeName}. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 AddMosaicStoreStarted
 
@@ -6884,11 +5766,9 @@ AddMosaicStoreStarted
 ${username} started the operation to add the NoSQL store '${storeName}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 DeleteMosaicStoreFailure
 
@@ -6896,11 +5776,9 @@ DeleteMosaicStoreFailure
 ${username} failed to delete the NoSQL store '${storeName}. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 DeleteMosaicStoreStarted
 
@@ -6908,11 +5786,9 @@ DeleteMosaicStoreStarted
 ${username} started the operation to delete the NoSQL store '${storeName}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 EditMosaicStoreeStarted
 
@@ -6920,11 +5796,9 @@ EditMosaicStoreeStarted
 ${username} modified the NoSQL store '${storeName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 EditMosaicStoreFailure
 
@@ -6932,11 +5806,9 @@ EditMosaicStoreFailure
 ${username} failed to modify the NoSQL store '${storeName}. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 ## mssql
 
@@ -6948,11 +5820,9 @@ UpdateDefaultDbPropertiesFailed
 ${username} failed to update default database properties for cluster '${clusterUuid}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 UpdateDefaultDbPropertiesSuccess
 
@@ -6960,11 +5830,9 @@ UpdateDefaultDbPropertiesSuccess
 ${username} successfully updated default database properties for cluster '${clusterUuid}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 UpdateMssqlAvailabilityGroup
 
@@ -6972,11 +5840,9 @@ UpdateMssqlAvailabilityGroup
 ${username} updated Microsoft SQL Server availability group '${availabilityGroupName}' with ID '${availabilityGroupId}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 UpdateMssqlAvailabilityGroupFailed
 
@@ -6984,11 +5850,9 @@ UpdateMssqlAvailabilityGroupFailed
 ${username} failed to update Microsoft SQL Server availability group '${availabilityGroupName}' with ID '${availabilityGroupId}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 UpdateMssqlDatabase
 
@@ -6996,11 +5860,9 @@ UpdateMssqlDatabase
 ${username} updated Mssql database '${dbName}' with ID '${dbId}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 UpdateMssqlDatabaseFailed
 
@@ -7008,11 +5870,9 @@ UpdateMssqlDatabaseFailed
 ${username} failed to update Mssql database '${dbName}' with ID '${dbId}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 UpdateMssqlHost
 
@@ -7020,11 +5880,9 @@ UpdateMssqlHost
 ${username} updated Microsoft SQL Server host '${hostName}' with ID '${hostId}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 UpdateMssqlHostFailed
 
@@ -7032,11 +5890,9 @@ UpdateMssqlHostFailed
 ${username} failed to update Microsoft SQL Server host '${hostName}' with ID '${hostId}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 UpdateMssqlInstance
 
@@ -7044,11 +5900,9 @@ UpdateMssqlInstance
 ${username} updated Microsoft SQL Server instance'${instanceName}' with ID '${instanceId}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 UpdateMssqlInstanceFailed
 
@@ -7056,11 +5910,9 @@ UpdateMssqlInstanceFailed
 ${username} failed to update Microsoft SQL Server instance '${instanceName}' with ID '${instanceId}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 UpdateMssqlLogShippingConfiguration
 
@@ -7068,11 +5920,9 @@ UpdateMssqlLogShippingConfiguration
 ${username} updated log shipping configuration '${configId}' of Mssql database '${dbName}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 UpdateMssqlLogShippingConfigurationFailed
 
@@ -7080,11 +5930,9 @@ UpdateMssqlLogShippingConfigurationFailed
 ${username} failed to update log shipping configuration '${configId}' of Mssql database '${dbName}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 UpdateMssqlLogShippingConfigurationFailedV1
 
@@ -7092,11 +5940,9 @@ UpdateMssqlLogShippingConfigurationFailedV1
 ${username} failed to modify the log shipping configuration '${configId}'  for the Mssql database '${dbName}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 UpdateMssqlLogShippingConfigurationV1
 
@@ -7104,11 +5950,9 @@ UpdateMssqlLogShippingConfigurationV1
 ${username} modified the log shipping configuration '${configId}'  for the Mssql database '${dbName}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 UpdateMssqlWindowsCluster
 
@@ -7116,11 +5960,9 @@ UpdateMssqlWindowsCluster
 ${username} updated Windows Cluster '${windowsClusterName}' with ID '${windowsClusterId}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 UpdateMssqlWindowsClusterFailed
 
@@ -7128,11 +5970,9 @@ UpdateMssqlWindowsClusterFailed
 ${username} failed to update Windows Cluster '${windowsClusterName}' with ID '${windowsClusterId}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 ## mysqldb_instance
 
@@ -7144,11 +5984,9 @@ AddMysqldbInstanceFailure
 ${username} failed to add MySQL instance '${instanceName}'. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 AddMysqldbInstanceStarted
 
@@ -7156,11 +5994,9 @@ AddMysqldbInstanceStarted
 ${username} started adding MySQL instance '${instanceName}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 DeleteMysqldbInstanceFailure
 
@@ -7168,11 +6004,9 @@ DeleteMysqldbInstanceFailure
 ${username} failed to delete MySQL instance '${instanceName}'. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 DeleteMysqldbInstanceStarted
 
@@ -7180,11 +6014,9 @@ DeleteMysqldbInstanceStarted
 ${username} started deleting MySQL instance '${instanceName}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 EditMysqldbInstanceFailure
 
@@ -7192,11 +6024,9 @@ EditMysqldbInstanceFailure
 ${username} failed to modify MySQL instance '${instanceName}'. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 EditMysqldbInstanceStarted
 
@@ -7204,11 +6034,9 @@ EditMysqldbInstanceStarted
 ${username} modified MySQL instance '${instanceName}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 RefreshMysqldbInstanceMetadataFailed
 
@@ -7216,11 +6044,9 @@ RefreshMysqldbInstanceMetadataFailed
 ${username} failed to refresh metadata for MySQL instance '${instanceName}'. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 RefreshMysqldbInstanceMetadataStarted
 
@@ -7228,11 +6054,9 @@ RefreshMysqldbInstanceMetadataStarted
 ${username} started refreshing metadata for MySQL instance '${instanceName}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 RestoreMysqldbInstanceFailure
 
@@ -7240,11 +6064,9 @@ RestoreMysqldbInstanceFailure
 ${username} unable to complete a restore of MySQL instance '${instanceName} using snapshot with ID ${snapshotId}'. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 RestoreMysqldbInstanceStarted
 
@@ -7252,11 +6074,9 @@ RestoreMysqldbInstanceStarted
 ${username} initiated a restore using the snapshot with ID ${snapshotId} for the MySQL instance '${instanceName}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 ## nas
 
@@ -7268,11 +6088,9 @@ BulkCopyAutomigratableNasHosts
 ${username} Created RSC NAS System(s) from CDM NAS host(s). Migration modified the following objects Filesets    ${FilesetNames} Host Shares ${SharePaths} NAS Hosts   ${HostNames}
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 BulkCopyAutomigratableNasHostsFailed
 
@@ -7280,11 +6098,9 @@ BulkCopyAutomigratableNasHostsFailed
 ${username} Failed to create RSC NAS System(s) from CDM NAS host(s). Reason: ${reason}. Migration may have modified the following objects Filesets:    ${FilesetNames} Host Shares: ${SharePaths} NAS Hosts:   ${HostNames}
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 BulkMigrateRelicShareFilesets
 
@@ -7292,11 +6108,9 @@ BulkMigrateRelicShareFilesets
 ${username} Migrated relic CDM Share Fileset(s) to RSC NAS. Migration modified the following objects Filesets    ${FilesetNames} Host Shares ${SharePaths} NAS Hosts   ${HostNames}
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 BulkMigrateRelicShareFilesetsFailed
 
@@ -7304,11 +6118,9 @@ BulkMigrateRelicShareFilesetsFailed
 ${username} Failed to migrate relic CDM Share Fileset(s) to RSC NAS. Reason: ${reason}. Migration may have modified the following objects Filesets:    ${FilesetNames} Host Shares: ${SharePaths} NAS Hosts:   ${HostNames}
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 MigrateLegacyNasHostFilesets
 
@@ -7316,11 +6128,9 @@ MigrateLegacyNasHostFilesets
 ${username} Migrated CDM Share Fileset(s) to RSC NAS. Migration modified the following objects Filesets    ${FilesetNames} Host Shares ${SharePaths} NAS Hosts   ${HostNames}
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 MigrateLegacyNasHostFilesetsFailed
 
@@ -7328,11 +6138,9 @@ MigrateLegacyNasHostFilesetsFailed
 ${username} Failed to migrate CDM Share Fileset(s) to RSC NAS. Reason: ${reason}. Migration may have modified the following objects Filesets:    ${FilesetNames} Host Shares: ${SharePaths} NAS Hosts:   ${HostNames}
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 ## ncd
 
@@ -7344,11 +6152,9 @@ SetWanThrottle
 ${username} successfully set WAN throttle.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 SetWanThrottleFailed
 
@@ -7356,11 +6162,9 @@ SetWanThrottleFailed
 ${username} was unable to set WAN throttle. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|             |             |         |
-| ----------- | ----------- | ------- |
-| **Warning** | **Failure** | **Yes** |
+| Severity    | Status      | Audit Event |
+| ----------- | ----------- | ----------- |
+| **Warning** | **Failure** | **Yes**     |
 
 ## networkthrottle
 
@@ -7372,11 +6176,9 @@ DisableNetworkThrottleFailed
 ${username} failed to disable ${resourceType} network throttle on cluster: ${clusterName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 DisableNetworkThrottleSucceeded
 
@@ -7384,11 +6186,9 @@ DisableNetworkThrottleSucceeded
 ${username} disabled ${resourceType} network throttle on cluster: ${clusterName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 EnableNetworkThrottleFailed
 
@@ -7396,11 +6196,9 @@ EnableNetworkThrottleFailed
 ${username} enabled ${resourceType} network throttle on cluster: ${clusterName} for interface '${interfaceName}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 EnableNetworkThrottleSucceeded
 
@@ -7408,11 +6206,9 @@ EnableNetworkThrottleSucceeded
 ${username} enabled ${resourceType} network throttle on cluster: ${clusterName} for interface '${interfaceName}' with default throttle limit set to ${defaultThrottleLimit} Mbps.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 ## networkthrottlebypass
 
@@ -7424,11 +6220,9 @@ DisableNetworkThrottleBypassFailed
 ${username} failed to disable replication network throttle bypass on cluster: ${clusterName}  for target cluster: ${targetClusterName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 DisableNetworkThrottleBypassSucceeded
 
@@ -7436,11 +6230,9 @@ DisableNetworkThrottleBypassSucceeded
 ${username} disabled replication network throttle bypass on cluster: ${clusterName}  for target cluster: ${targetClusterName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 EnableNetworkThrottleBypassFailed
 
@@ -7448,11 +6240,9 @@ EnableNetworkThrottleBypassFailed
 ${username} failed to enable replication network throttle bypass on cluster: ${clusterName} for target cluster: ${targetClusterName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 EnableNetworkThrottleBypassSucceeded
 
@@ -7460,11 +6250,9 @@ EnableNetworkThrottleBypassSucceeded
 ${username} enabled replication network throttle bypass on cluster: ${clusterName} for target cluster: ${targetClusterName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 ## newdevicelogin
 
@@ -7476,11 +6264,9 @@ NewDeviceLogin
 A login on a new device using ${browser} on ${os} detected for user ${userName} with IP ${ipAddress} and location ${location}.
 ```
 
-Severity | Status | Audit Event | |
-
-|             |             |         |
-| ----------- | ----------- | ------- |
-| **Warning** | **Success** | **Yes** |
+| Severity    | Status      | Audit Event |
+| ----------- | ----------- | ----------- |
+| **Warning** | **Success** | **Yes**     |
 
 UserDeviceDelete
 
@@ -7488,11 +6274,9 @@ UserDeviceDelete
 User ${userName} deleted login device ${browser} on ${os} with IP ${ipAddress} and location ${location}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 UserDeviceNameEdit
 
@@ -7500,11 +6284,9 @@ UserDeviceNameEdit
 User ${userName} renamed the login device from ${oldName} to ${newName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 ## nutanix
 
@@ -7516,11 +6298,9 @@ CreateNutanixClusterFailed
 ${username} failed to create Nutanix cluster '${hostName}'. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 CreateNutanixClusterStarted
 
@@ -7528,11 +6308,9 @@ CreateNutanixClusterStarted
 ${username} started creating Nutanix cluster '${hostName}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 CreateNutanixExportFailed
 
@@ -7540,11 +6318,9 @@ CreateNutanixExportFailed
 ${username} failed to export snapshot '${snapshotID}' of snappable '${snappableName}'. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 CreateNutanixExportStarted
 
@@ -7552,11 +6328,9 @@ CreateNutanixExportStarted
 ${username} started exporting snapshot '${snapshotID}' of snappable '${snappableName}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 CreateNutanixInplaceExportFailed
 
@@ -7564,11 +6338,9 @@ CreateNutanixInplaceExportFailed
 ${username} failed to in-place export snapshot '${snapshotID}' of workload '${snappableName}'. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 CreateNutanixInplaceExportStarted
 
@@ -7576,11 +6348,9 @@ CreateNutanixInplaceExportStarted
 ${username} started in-place exporting snapshot '${snapshotID}' of workload '${snappableName}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 CreateNutanixPrismCentralFailed
 
@@ -7588,11 +6358,9 @@ CreateNutanixPrismCentralFailed
 ${username} failed to create Nutanix Prism Central '${hostName}'. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 CreateNutanixPrismCentralStarted
 
@@ -7600,11 +6368,9 @@ CreateNutanixPrismCentralStarted
 ${username} started creating Nutanix Prism Central '${hostName}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 DeleteNutanixClusterFailed
 
@@ -7612,11 +6378,9 @@ DeleteNutanixClusterFailed
 ${username} failed to delete Nutanix cluster '${nutanixCluster}'. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 DeleteNutanixClusterStarted
 
@@ -7624,11 +6388,9 @@ DeleteNutanixClusterStarted
 ${username} started deleting Nutanix cluster '${nutanixCluster}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 DeleteNutanixPrismCentralFailed
 
@@ -7636,11 +6398,9 @@ DeleteNutanixPrismCentralFailed
 ${username} failed to delete Nutanix Prism Central '${nutanixPrismCentral}'. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 DeleteNutanixPrismCentralStarted
 
@@ -7648,11 +6408,9 @@ DeleteNutanixPrismCentralStarted
 ${username} started deleting Nutanix Prism Central '${nutanixPrismCentral}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 PatchNutanixClusterFailed
 
@@ -7660,11 +6418,9 @@ PatchNutanixClusterFailed
 ${username} failed to patch Nutanix cluster '${nutanixCluster}'. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 PatchNutanixClusterStarted
 
@@ -7672,11 +6428,9 @@ PatchNutanixClusterStarted
 ${username} started patching Nutanix cluster '${nutanixCluster}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 PatchNutanixPrismCentralFailed
 
@@ -7684,11 +6438,9 @@ PatchNutanixPrismCentralFailed
 ${username} failed to patch Nutanix Prism Central '${nutanixPrismCentral}'. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 PatchNutanixPrismCentralStarted
 
@@ -7696,11 +6448,9 @@ PatchNutanixPrismCentralStarted
 ${username} started patching Nutanix Prism Central '${nutanixPrismCentral}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 RefreshNutanixClusterFailed
 
@@ -7708,11 +6458,9 @@ RefreshNutanixClusterFailed
 ${username} failed to refresh Nutanix cluster '${nutanixCluster}'. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 RefreshNutanixClusterStarted
 
@@ -7720,11 +6468,9 @@ RefreshNutanixClusterStarted
 ${username} started refreshing Nutanix cluster '${nutanixCluster}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 RefreshNutanixPrismCentralFailed
 
@@ -7732,11 +6478,9 @@ RefreshNutanixPrismCentralFailed
 ${username} failed to refresh Nutanix Prism Central '${nutanixPrismCentral}'. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 RefreshNutanixPrismCentralStarted
 
@@ -7744,11 +6488,9 @@ RefreshNutanixPrismCentralStarted
 ${username} started refreshing Nutanix Prism Central '${nutanixPrismCentral}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 ## o365
 
@@ -7760,11 +6502,9 @@ ExocomputeDeleteCanceled
 Canceled deleting Azure resources in ${exocomputeName}
 ```
 
-Severity | Status | Audit Event | |
-
-|          |              |        |
-| -------- | ------------ | ------ |
-| **Info** | **Canceled** | **No** |
+| Severity | Status       | Audit Event |
+| -------- | ------------ | ----------- |
+| **Info** | **Canceled** | **No**      |
 
 ExocomputeDeleteCanceling
 
@@ -7772,11 +6512,9 @@ ExocomputeDeleteCanceling
 Canceling deleting Azure resources in ${exocomputeName}
 ```
 
-Severity | Status | Audit Event | |
-
-|          |               |        |
-| -------- | ------------- | ------ |
-| **Info** | **Canceling** | **No** |
+| Severity | Status        | Audit Event |
+| -------- | ------------- | ----------- |
+| **Info** | **Canceling** | **No**      |
 
 ExocomputeDeleteFailed
 
@@ -7784,11 +6522,9 @@ ExocomputeDeleteFailed
 Failed to delete Azure resources in ${exocomputeName}. For more information on this error please visit https://support.rubrik.com/articles/How_To/000002821
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Failure** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **No**      |
 
 ExocomputeDeleteStarted
 
@@ -7796,11 +6532,9 @@ ExocomputeDeleteStarted
 Started deleting Azure resources in ${exocomputeName}
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 ExocomputeDeleteSucceeded
 
@@ -7808,11 +6542,9 @@ ExocomputeDeleteSucceeded
 Successfully deleted Azure resources in ${exocomputeName}
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 ExocomputeScaleSucceeded
 
@@ -7820,11 +6552,9 @@ ExocomputeScaleSucceeded
 Successfully scaled Azure AKS from ${oldCount} to ${newCount} nodes
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 ExocomputeUpdateCanceled
 
@@ -7832,11 +6562,9 @@ ExocomputeUpdateCanceled
 Canceled updating Azure resources in ${exocomputeName}
 ```
 
-Severity | Status | Audit Event | |
-
-|          |              |        |
-| -------- | ------------ | ------ |
-| **Info** | **Canceled** | **No** |
+| Severity | Status       | Audit Event |
+| -------- | ------------ | ----------- |
+| **Info** | **Canceled** | **No**      |
 
 ExocomputeUpdateCanceling
 
@@ -7844,11 +6572,9 @@ ExocomputeUpdateCanceling
 Canceling updating Azure resources in ${exocomputeName}
 ```
 
-Severity | Status | Audit Event | |
-
-|          |               |        |
-| -------- | ------------- | ------ |
-| **Info** | **Canceling** | **No** |
+| Severity | Status        | Audit Event |
+| -------- | ------------- | ----------- |
+| **Info** | **Canceling** | **No**      |
 
 ExocomputeUpdateFailed
 
@@ -7856,11 +6582,9 @@ ExocomputeUpdateFailed
 Failed to update Azure resources in ${exocomputeName}. For more information on this error please visit https://support.rubrik.com/articles/How_To/000002821
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Failure** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **No**      |
 
 ExocomputeUpdateStarted
 
@@ -7868,11 +6592,9 @@ ExocomputeUpdateStarted
 Updating Azure resources in ${exocomputeName}
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 ExocomputeUpdateSucceeded
 
@@ -7880,11 +6602,9 @@ ExocomputeUpdateSucceeded
 Successfully updated Azure resources in ${exocomputeName}
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 M365BackupStorageSetupSuccess
 
@@ -7892,11 +6612,9 @@ M365BackupStorageSetupSuccess
 ${userEmail} successfully onboarded Microsoft 365 Backup Storage for Org ${orgName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 M365ConfiguredGroupCreated
 
@@ -7904,11 +6622,9 @@ M365ConfiguredGroupCreated
 ${userID} created a SharePoint/Teams Group '${name}' with wildcard  pattern '${wildcard}' and PDLs ${pdls}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 M365ConfiguredGroupDeleted
 
@@ -7916,11 +6632,9 @@ M365ConfiguredGroupDeleted
 ${userID} removed SharePoint/Teams Group '${name}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 M365ConfiguredGroupModified
 
@@ -7928,11 +6642,9 @@ M365ConfiguredGroupModified
 ${userID} modified SharePoint/Teams Group '${name}' with wildcard  pattern '${wildcard}' and PDLs ${pdls} into SharePoint/Teams Group '${newName}' with wildcard pattern '${newWildcard}' and PDLs ${newPdls}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 M365GroupDeleted
 
@@ -7940,11 +6652,9 @@ M365GroupDeleted
 ${userID} removed ${groupType} '${name}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 M365GroupModified
 
@@ -7952,11 +6662,9 @@ M365GroupModified
 ${userID} modified ${groupType} '${name}' with spec ${spec} into ${groupType} '${newName}' with spec ${newSpec}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 M36GroupCreated
 
@@ -7964,11 +6672,9 @@ M36GroupCreated
 ${userID} created a ${groupType} '${name}' with spec  '${spec}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 O365DeleteOrgFailed
 
@@ -7976,11 +6682,9 @@ O365DeleteOrgFailed
 ${userID} requested deletion of Microsoft 365 Subscription ${orgName}, but failed. Failure reason: ${reason}
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |         |
-| ------------ | ----------- | ------- |
-| **Critical** | **Failure** | **Yes** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **Yes**     |
 
 O365DeleteOrgStarted
 
@@ -7988,11 +6692,9 @@ O365DeleteOrgStarted
 ${userID} started deletion of Microsoft 365 Subscription ${orgName}. (Taskchain ID is ${taskchainID})
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 ## openstack
 
@@ -8004,11 +6706,9 @@ AddOpenstackEnvironmentFailed
 ${username} failed to start a job to add OpenStack environment '${environmentAddress}'. Failure reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |         |
-| ------------ | ----------- | ------- |
-| **Critical** | **Failure** | **Yes** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **Yes**     |
 
 AddOpenstackEnvironmentStarted
 
@@ -8016,11 +6716,9 @@ AddOpenstackEnvironmentStarted
 ${username} started a job to add OpenStack environment '${environmentAddress}'
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 DeleteOpenstackEnvironmentStarted
 
@@ -8028,11 +6726,9 @@ DeleteOpenstackEnvironmentStarted
 ${username} started a job to delete Openstack Environment '${environmentAddress}' on Rubrik cluster '${clusterUuid}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 DeleteOpenstackEnvironmentStartFailed
 
@@ -8040,11 +6736,9 @@ DeleteOpenstackEnvironmentStartFailed
 ${username} failed to start a job to delete Openstack Environment '${environmentAddress}' on Rubrik cluster '${clusterUuid}'. Failure reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 RefreshOpenstackEnvironmentStarted
 
@@ -8052,11 +6746,9 @@ RefreshOpenstackEnvironmentStarted
 ${username} started a job to refresh OpenStack environment  '${environmentAddress}'
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 RefreshOpenstackEnvironmentStartFailed
 
@@ -8064,11 +6756,9 @@ RefreshOpenstackEnvironmentStartFailed
 ${username} failed to start a job to refresh OpenStack environment  '${environmentAddress}'. Failure reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 UpdateOpenstackEnvironmentFailed
 
@@ -8076,11 +6766,9 @@ UpdateOpenstackEnvironmentFailed
 ${username} was unable to modify the OpenStack environment, '${environmentAddress}', on Rubrik cluster, '${clusterUuid}'. Failure reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |         |
-| ------------ | ----------- | ------- |
-| **Critical** | **Failure** | **Yes** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **Yes**     |
 
 UpdateOpenstackEnvironmentSucceeded
 
@@ -8088,11 +6776,9 @@ UpdateOpenstackEnvironmentSucceeded
 ${username} modified the OpenStack environment, '${environmentAddress}', on Rubrik cluster, '${clusterUuid}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 UpdateOpenstackProxyVmSettingFailed
 
@@ -8100,11 +6786,9 @@ UpdateOpenstackProxyVmSettingFailed
 ${username} was unable to modify the proxy VM settings for OpenStack environment, '${environmentAddress}', on Rubrik cluster, '${clusterUuid}'. Failure reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |         |
-| ------------ | ----------- | ------- |
-| **Critical** | **Failure** | **Yes** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **Yes**     |
 
 UpdateOpenstackProxyVmSettingSucceeded
 
@@ -8112,11 +6796,9 @@ UpdateOpenstackProxyVmSettingSucceeded
 ${username} modified the proxy VM settings for OpenStack environment, '${environmentAddress}', on Rubrik cluster, '${clusterUuid}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 ## oracle
 
@@ -8128,11 +6810,9 @@ DeleteAllOracleDatabaseSnapshots
 ${username} deleted all snapshots for Oracle database '${dbName}' with ID '${dbId}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 DeleteAllOracleDatabaseSnapshotsFailed
 
@@ -8140,11 +6820,9 @@ DeleteAllOracleDatabaseSnapshotsFailed
 ${username} failed to delete all snapshots for Oracle database  '${dbName}' with ID '${dbId}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 DownloadArchivedOracleSnapshot
 
@@ -8152,11 +6830,9 @@ DownloadArchivedOracleSnapshot
 ${username} downloaded archived snapshot '${snapshotId}' of Oracle database '${dbName}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 DownloadArchivedOracleSnapshotFailed
 
@@ -8164,11 +6840,9 @@ DownloadArchivedOracleSnapshotFailed
 ${username} failed to download archived snapshot '${snapshotId}' of Oracle database '${dbName}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 ExportOracleDatabase
 
@@ -8176,11 +6850,9 @@ ExportOracleDatabase
 ${username} exported Oracle database '${dbName}' with ID '${dbId}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 ExportOracleDatabaseFailed
 
@@ -8188,11 +6860,9 @@ ExportOracleDatabaseFailed
 Failed to export Oracle database '${dbName}' with ID '${dbId}', initiated by ${username}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 ExportOracleTablespace
 
@@ -8200,11 +6870,9 @@ ExportOracleTablespace
 ${username} exported tablespace ${tablespaceName} of Oracle database '${dbName}' with ID '${dbId}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 ExportOracleTablespaceFailed
 
@@ -8212,11 +6880,9 @@ ExportOracleTablespaceFailed
 ${username} failed to export tablespace ${tablespaceName} of Oracle database '${dbName}' with ID '${dbId}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 InstantRecoverOracleSnapshot
 
@@ -8224,11 +6890,9 @@ InstantRecoverOracleSnapshot
 ${username} instant recovered Oracle database '${dbName}' with ID '${dbId}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 InstantRecoverOracleSnapshotFailed
 
@@ -8236,11 +6900,9 @@ InstantRecoverOracleSnapshotFailed
 ${username} failed to instant recover Oracle database '${dbName}' with ID '${dbId}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 MountOracleDatabase
 
@@ -8248,11 +6910,9 @@ MountOracleDatabase
 ${username} live mounted Oracle database '${dbName}' with ID '${dbId}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 MountOracleDatabaseFailed
 
@@ -8260,11 +6920,9 @@ MountOracleDatabaseFailed
 ${username} failed to live mount Oracle database '${dbName}' with ID '${dbId}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 OraclePdbRestore
 
@@ -8272,11 +6930,9 @@ OraclePdbRestore
 ${username} restored the PDBs '${pdbNames}' to Oracle database '${dbName}' with ID '${dbId}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 OraclePdbRestoreFailed
 
@@ -8284,11 +6940,9 @@ OraclePdbRestoreFailed
 ${username} failed to restore the PDBs '${pdbNames}' to Oracle database '${dbName}' with ID '${dbId}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 OracleUnmount
 
@@ -8296,11 +6950,9 @@ OracleUnmount
 ${username} removed Oracle mount with ID '${mountId}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 OracleUnmountFailed
 
@@ -8308,11 +6960,9 @@ OracleUnmountFailed
 ${username} failed to remove Oracle mount with ID '${mountId}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 RefreshOracleDatabase
 
@@ -8320,11 +6970,9 @@ RefreshOracleDatabase
 ${username} refreshed Oracle database '${dbName}' with ID '${dbId}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 RefreshOracleDatabaseFailed
 
@@ -8332,11 +6980,9 @@ RefreshOracleDatabaseFailed
 ${username} failed to refresh Oracle database '${dbName}' with ID '${dbId}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 RestoreOracleLogs
 
@@ -8344,11 +6990,9 @@ RestoreOracleLogs
 ${username} restored logs of Oracle database '${dbName}' with ID '${dbId}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 RestoreOracleLogsFailed
 
@@ -8356,11 +7000,9 @@ RestoreOracleLogsFailed
 ${username} failed to restore logs of Oracle database '${dbName}' with ID '${dbId}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 TakeOnDemandOracleDatabaseSnapshot
 
@@ -8368,11 +7010,9 @@ TakeOnDemandOracleDatabaseSnapshot
 ${username} took an on-demand snapshot of Oracle  database '${dbName}' with ID '${dbId}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 TakeOnDemandOracleDatabaseSnapshotFailed
 
@@ -8380,11 +7020,9 @@ TakeOnDemandOracleDatabaseSnapshotFailed
 ${username} failed to take an on-demand snapshot of Oracle  database '${dbName}' with ID '${dbId}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 TakeOnDemandOracleLogSnapshot
 
@@ -8392,11 +7030,9 @@ TakeOnDemandOracleLogSnapshot
 ${username} took an on-demand log snapshot of Oracle database  '${dbName}' with ID '${dbId}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 TakeOnDemandOracleLogSnapshotFailed
 
@@ -8404,11 +7040,9 @@ TakeOnDemandOracleLogSnapshotFailed
 ${username} failed to take an on-demand log snapshot of Oracle database '${dbName}' with ID '${dbId}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 UpdateOracleDatabase
 
@@ -8416,11 +7050,9 @@ UpdateOracleDatabase
 ${username} updated Oracle database '${dbName}' with ID '${dbId}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 UpdateOracleDatabaseFailed
 
@@ -8428,11 +7060,9 @@ UpdateOracleDatabaseFailed
 ${username} failed to update Oracle database '${dbName}' with ID '${dbId}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 UpdateOracleDataGuardGroup
 
@@ -8440,11 +7070,9 @@ UpdateOracleDataGuardGroup
 ${username} updated Oracle Data Guard group '${dbName}' with ID  '${dbId}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 UpdateOracleDataGuardGroupFailed
 
@@ -8452,11 +7080,9 @@ UpdateOracleDataGuardGroupFailed
 ${username} failed to refresh Oracle Data Guard group '${dbName}'  with ID '${dbId}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 UpdateOracleHost
 
@@ -8464,11 +7090,9 @@ UpdateOracleHost
 ${username} updated Oracle host '${hostName}' with ID '${hostId}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 UpdateOracleHostFailed
 
@@ -8476,11 +7100,9 @@ UpdateOracleHostFailed
 ${username} failed to update Oracle host '${hostName}' with ID '${hostId}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 UpdateOracleRac
 
@@ -8488,11 +7110,9 @@ UpdateOracleRac
 ${username} updated Oracle RAC '${racName}' with ID '${racId}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 UpdateOracleRacFailed
 
@@ -8500,11 +7120,9 @@ UpdateOracleRacFailed
 ${username} failed to update Oracle RAC '${racName}' with ID '${racId}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 ValidateOracleDatabaseBackups
 
@@ -8512,11 +7130,9 @@ ValidateOracleDatabaseBackups
 ${username} validated backups of Oracle database '${dbName}' with ID '${dbId}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 ValidateOracleDatabaseBackupsFailed
 
@@ -8524,11 +7140,9 @@ ValidateOracleDatabaseBackupsFailed
 ${username} failed to validate backups of Oracle database '${dbName}' with ID '${dbId}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 ## org_config
 
@@ -8540,11 +7154,9 @@ EnforceStricterPolicy
 ${admin} has enforced a stricter policy for tenant organizations.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 OrgFqdnUpdated
 
@@ -8552,11 +7164,9 @@ OrgFqdnUpdated
 ${userEmail} has modified the FQDN for organization ${orgName} to ${currentFqdn}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 OrgQuotaCreated
 
@@ -8564,11 +7174,9 @@ OrgQuotaCreated
 ${userEmail} has created a ${quotaType} quota for organization ${orgName} on cluster ${clusterName}. The defined quota limits are  (soft limit: ${currentSoftLimit}, hard limit: ${currentHardLimit}).
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 OrgQuotaDeleted
 
@@ -8576,11 +7184,9 @@ OrgQuotaDeleted
 ${userEmail} has deleted the ${quotaType} quota for organization ${orgName}  on cluster ${clusterName}. Previously, the quota limits were  (soft limit: ${previousSoftLimit}, hard limit: ${previousHardLimit}).
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 OrgQuotaUpdated
 
@@ -8588,11 +7194,9 @@ OrgQuotaUpdated
 ${userEmail} has updated the ${quotaType} quota for organization ${orgName} on cluster ${clusterName} from  (soft limit: ${previousSoftLimit}, hard limit: ${previousHardLimit}) to (soft limit: ${currentSoftLimit}, hard limit: ${currentHardLimit}).
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 UnenforceStricterPolicy
 
@@ -8600,11 +7204,9 @@ UnenforceStricterPolicy
 ${admin} has relaxed the policy for tenant organizations.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 ## org_network
 
@@ -8616,11 +7218,9 @@ CreateOrgNetwork
 ${userName} created org network ${orgNetworkName} in org ${orgName} for cluster ${clusterName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 CreateOrgNetworkFailed
 
@@ -8628,11 +7228,9 @@ CreateOrgNetworkFailed
 ${userName} failed to create org network ${orgNetworkName} in org ${orgName} for cluster ${clusterName}. Failure reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|             |             |         |
-| ----------- | ----------- | ------- |
-| **Warning** | **Failure** | **Yes** |
+| Severity    | Status      | Audit Event |
+| ----------- | ----------- | ----------- |
+| **Warning** | **Failure** | **Yes**     |
 
 DeleteEnvoyNgs
 
@@ -8640,11 +7238,9 @@ DeleteEnvoyNgs
 ${userName} removed Envoy Ngs: [${envoyIds}] from org network: ${orgNetworkName} in organization ${orgName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 DeleteOrgNetwork
 
@@ -8652,11 +7248,9 @@ DeleteOrgNetwork
 ${userName} deleted org network ${orgNetworkName} in org ${orgName} for cluster ${clusterName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 DeleteOrgNetworkFailed
 
@@ -8664,11 +7258,9 @@ DeleteOrgNetworkFailed
 ${userName} failed to delete org network ${orgNetworkName} in org ${orgName} for cluster ${clusterName}. Failure reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|             |             |         |
-| ----------- | ----------- | ------- |
-| **Warning** | **Failure** | **Yes** |
+| Severity    | Status      | Audit Event |
+| ----------- | ----------- | ----------- |
+| **Warning** | **Failure** | **Yes**     |
 
 MigrateHostsToOrgNetwork
 
@@ -8676,11 +7268,9 @@ MigrateHostsToOrgNetwork
 ${userName} migrated ${total} hosts in the organization ${orgName}, RSC org network ${orgNetworkName}  for Rubrik cluster ${clusterName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 MigrateHostsToOrgNetworkFailed
 
@@ -8688,11 +7278,9 @@ MigrateHostsToOrgNetworkFailed
 ${userName} was unable to migrate hosts [${failedObjects}] in the organization ${orgName},    RSC org network ${orgNetworkName} for Rubrik cluster ${clusterName}. Failure reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|             |             |         |
-| ----------- | ----------- | ------- |
-| **Warning** | **Failure** | **Yes** |
+| Severity    | Status      | Audit Event |
+| ----------- | ----------- | ----------- |
+| **Warning** | **Failure** | **Yes**     |
 
 MigrateVcentersToOrgNetwork
 
@@ -8700,11 +7288,9 @@ MigrateVcentersToOrgNetwork
 ${userName} migrated ${total} vCenters in organization ${orgName}, org network ${orgNetworkName}   for Rubrik cluster ${clusterName}
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 MigrateVcentersToOrgNetworkFailed
 
@@ -8712,11 +7298,9 @@ MigrateVcentersToOrgNetworkFailed
 ${userName} was unable to migrate vCenters [${failedObjects}] in organization ${orgName},  org network ${orgNetworkName} for Rubrik cluster ${clusterName} Failure reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|             |             |         |
-| ----------- | ----------- | ------- |
-| **Warning** | **Failure** | **Yes** |
+| Severity    | Status      | Audit Event |
+| ----------- | ----------- | ----------- |
+| **Warning** | **Failure** | **Yes**     |
 
 SetLiveMountIps
 
@@ -8724,11 +7308,9 @@ SetLiveMountIps
 ${userName} assigned Live Mount IPs: [${liveMountIps}] to org network: ${orgNetworkName} in organization ${orgName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 UpdateOrgNetwork
 
@@ -8736,11 +7318,9 @@ UpdateOrgNetwork
 ${userName} updated organization network ${orgNetworkName} in organization ${orgName} for cluster ${clusterName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 UpdateOrgNetworkFailed
 
@@ -8748,11 +7328,9 @@ UpdateOrgNetworkFailed
 ${userName} failed to update organization network ${orgNetworkName} in organization ${orgName} for cluster ${clusterName}. Failure reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|             |             |         |
-| ----------- | ----------- | ------- |
-| **Warning** | **Failure** | **Yes** |
+| Severity    | Status      | Audit Event |
+| ----------- | ----------- | ----------- |
+| **Warning** | **Failure** | **Yes**     |
 
 ## postgres_db_cluster
 
@@ -8764,11 +7342,9 @@ AddPostgresDbClusterFailure
 ${username} failed to add PostgreSQL database cluster '${dbClusterName}'. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 AddPostgresDbClusterStarted
 
@@ -8776,11 +7352,9 @@ AddPostgresDbClusterStarted
 ${username} started adding PostgreSQL database cluster '${dbClusterName}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 DeletePostgresDbClusterFailure
 
@@ -8788,11 +7362,9 @@ DeletePostgresDbClusterFailure
 ${username} failed to delete PostgreSQL database cluster '${dbClusterName}'. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 DeletePostgresDbClusterStarted
 
@@ -8800,11 +7372,9 @@ DeletePostgresDbClusterStarted
 ${username} started deleting PostgreSQL database cluster '${dbClusterName}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 EditPostgresDbClusterFailure
 
@@ -8812,11 +7382,9 @@ EditPostgresDbClusterFailure
 ${username} failed to modify PostgreSQL database cluster '${dbClusterName}'. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 EditPostgresDbClusterStarted
 
@@ -8824,11 +7392,9 @@ EditPostgresDbClusterStarted
 ${username} modified PostgreSQL database cluster '${dbClusterName}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 RefreshPostgresDbClusterMetadataFailed
 
@@ -8836,11 +7402,9 @@ RefreshPostgresDbClusterMetadataFailed
 ${username} failed to refresh metadata for PostgreSQL database cluster '${dbClusterName}'. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 RefreshPostgresDbClusterMetadataStarted
 
@@ -8848,11 +7412,9 @@ RefreshPostgresDbClusterMetadataStarted
 ${username} started refreshing metadata for PostgreSQL database cluster '${dbClusterName}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 RestorePostgresDbClusterFailure
 
@@ -8860,11 +7422,9 @@ RestorePostgresDbClusterFailure
 ${username} unable to complete a restore of PostgreSQL database cluster '${dbClusterName} using snapshot with ID ${snapshotId}'. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 RestorePostgresDbClusterStarted
 
@@ -8872,11 +7432,9 @@ RestorePostgresDbClusterStarted
 ${username} initiated a restore using the snapshot with ID ${snapshotId} for the PostgreSQL database cluster '${dbClusterName}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 ## radar
 
@@ -8888,11 +7446,9 @@ RadarEventsDisabled
 Radar events have been disabled by ${user}
 ```
 
-Severity | Status | Audit Event | |
-
-|             |             |         |
-| ----------- | ----------- | ------- |
-| **Warning** | **Success** | **Yes** |
+| Severity    | Status      | Audit Event |
+| ----------- | ----------- | ----------- |
+| **Warning** | **Success** | **Yes**     |
 
 RadarEventsDisabledForCluster
 
@@ -8900,11 +7456,9 @@ RadarEventsDisabledForCluster
 Radar events have been disabled for cluster ${clusterName} by ${user}
 ```
 
-Severity | Status | Audit Event | |
-
-|             |             |         |
-| ----------- | ----------- | ------- |
-| **Warning** | **Success** | **Yes** |
+| Severity    | Status      | Audit Event |
+| ----------- | ----------- | ----------- |
+| **Warning** | **Success** | **Yes**     |
 
 RadarEventsDisabledForSnappable
 
@@ -8912,11 +7466,9 @@ RadarEventsDisabledForSnappable
 Radar events have been disabled for protected object ${snappableName} on cluster ${clusterName} by ${user}
 ```
 
-Severity | Status | Audit Event | |
-
-|             |             |         |
-| ----------- | ----------- | ------- |
-| **Warning** | **Success** | **Yes** |
+| Severity    | Status      | Audit Event |
+| ----------- | ----------- | ----------- |
+| **Warning** | **Success** | **Yes**     |
 
 RadarEventsDisabledForSubscription
 
@@ -8924,11 +7476,9 @@ RadarEventsDisabledForSubscription
 Radar events have been disabled for subscription ${subscriptionName} on cluster ${clusterName} by ${user}
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 RadarEventsEnabled
 
@@ -8936,11 +7486,9 @@ RadarEventsEnabled
 Radar events have been enabled by ${user}
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 RadarEventsEnabledForCluster
 
@@ -8948,11 +7496,9 @@ RadarEventsEnabledForCluster
 Radar events have been enabled for cluster ${clusterName} by ${user}
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 RadarEventsEnabledForSnappable
 
@@ -8960,11 +7506,9 @@ RadarEventsEnabledForSnappable
 Radar events have been enabled for protected object ${snappableName} on cluster ${clusterName} by ${user}
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 RadarEventsEnabledForSubscription
 
@@ -8972,11 +7516,9 @@ RadarEventsEnabledForSubscription
 Radar events have been enabled for subscription ${subscriptionName} on cluster ${clusterName} by ${user}
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 ## rcv
 
@@ -8988,11 +7530,9 @@ RCVPEConnectionApprovalRequestApproved
 ${userEmail} successfully approved connection approval request for private  endpoint ${pe_id} to RCV archival location '${name}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 RCVPEConnectionApprovalRequestApproved
 
@@ -9000,11 +7540,9 @@ RCVPEConnectionApprovalRequestApproved
 Pursuant to Rubrik policy, a connection approval request for private  endpoint '${pe_id}' to RCV archival location '${name}' has been  successfully approved.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 RCVPEConnectionApprovalRequestCreated
 
@@ -9012,11 +7550,9 @@ RCVPEConnectionApprovalRequestCreated
 ${userEmail} successfully created connection approval request for private  endpoint ${pe_id} to RCV archival location '${name}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 RCVPEConnectionApprovalRequestCreated
 
@@ -9024,11 +7560,9 @@ RCVPEConnectionApprovalRequestCreated
 Pursuant to Rubrik policy, a connection approval request for private  endpoint '${pe_id}' to RCV archival location '${name}' has been  successfully created.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 RCVPEConnectionApprovalRequestExpired
 
@@ -9036,11 +7570,9 @@ RCVPEConnectionApprovalRequestExpired
 Pursuant to Rubrik policy, a connection approval request for private  endpoint '${pe_id}' to RCV archival location '${name}' has been expired.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 RCVPEConnectionApprovalRequestRejected
 
@@ -9048,11 +7580,9 @@ RCVPEConnectionApprovalRequestRejected
 ${userEmail} successfully rejected connection approval request for private  endpoint ${pe_id} to RCV archival location '${name}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |         |
-| ------------ | ----------- | ------- |
-| **Critical** | **Failure** | **Yes** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **Yes**     |
 
 RCVPEConnectionApprovalRequestRejected
 
@@ -9060,11 +7590,9 @@ RCVPEConnectionApprovalRequestRejected
 Pursuant to Rubrik policy, a connection approval request for private  endpoint '${pe_id}' to RCV archival location '${name}' has been rejected.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Failure** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **No**      |
 
 RCVPEConnectionApprovalRequestRemoved
 
@@ -9072,11 +7600,9 @@ RCVPEConnectionApprovalRequestRemoved
 ${userEmail} successfully removed connection approval request for private  endpoint ${pe_id} to RCV archival location '${name}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 RCVPEConnectionApprovalRequestRemoved
 
@@ -9084,11 +7610,9 @@ RCVPEConnectionApprovalRequestRemoved
 Pursuant to Rubrik policy, a connection approval request for private  endpoint '${pe_id}' to RCV archival location '${name}' has been removed.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 RCVPrivateEndpointApprovalFailed
 
@@ -9096,11 +7620,9 @@ RCVPrivateEndpointApprovalFailed
 Approval for Private Endpoint '${peId}' failed because of '${errMsg}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Failure** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **No**      |
 
 RCVPublicAccessDisabled
 
@@ -9108,11 +7630,9 @@ RCVPublicAccessDisabled
 ${userEmail} successfully disabled public access for RCV archival location '${name}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 RCVPublicAccessDisabled
 
@@ -9120,11 +7640,9 @@ RCVPublicAccessDisabled
 Pursuant to Rubrik policy, public access to RCV archival location  '${name}' has been successfully disabled.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 ## rekey
 
@@ -9136,11 +7654,9 @@ RekeyMasterKey
 ${username} has initiated the rekeying of the master key for the archival location ${locationName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 RekeyRootKey
 
@@ -9148,11 +7664,9 @@ RekeyRootKey
 ${username} has initiated the rekeying of the root Key Encryption Key (KEK) for the archival location ${locationName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 ## replication
 
@@ -9164,11 +7678,9 @@ ReplicationLocationCancelImmediatelyPauseEnableSucceeded
 ${userEmail} successfully paused replication from cluster: ${sourceClusterName} to cluster: ${targetClusterName}. Replication from the specified cluster will be canceled immediately.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 ReplicationLocationPauseDisableFailed
 
@@ -9176,11 +7688,9 @@ ReplicationLocationPauseDisableFailed
 ${userEmail} failed to resume replication from cluster: ${sourceClusterName} to cluster: ${targetClusterName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 ReplicationLocationPauseDisableSucceeded
 
@@ -9188,11 +7698,9 @@ ReplicationLocationPauseDisableSucceeded
 ${userEmail} successfully resumed replication from cluster: ${sourceClusterName} to cluster: ${targetClusterName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 ReplicationLocationPauseEnableFailed
 
@@ -9200,11 +7708,9 @@ ReplicationLocationPauseEnableFailed
 ${userEmail} failed to pause replication from cluster: ${sourceClusterName} to cluster: ${targetClusterName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 ReplicationLocationPauseEnableSucceeded
 
@@ -9212,11 +7718,9 @@ ReplicationLocationPauseEnableSucceeded
 ${userEmail} successfully paused replication from cluster: ${sourceClusterName} to cluster: ${targetClusterName}. Replication from the specified cluster will be canceled after any currently running jobs finish.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 ReplicationLocationSkipSnapshotsPauseDisableSucceeded
 
@@ -9224,11 +7728,9 @@ ReplicationLocationSkipSnapshotsPauseDisableSucceeded
 ${userEmail} successfully resumed replication from cluster: ${sourceClusterName} to cluster: ${targetClusterName}. Replication will not include snapshots taken before and during the pause.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 ReplicationPairCreationSucceeded
 
@@ -9236,11 +7738,9 @@ ReplicationPairCreationSucceeded
 ${userEmail} added Rubrik cluster: ${targetClusterName} as replication target to Rubrik cluster: ${sourceClusterName} using ${setupType} configuration.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 ReplicationPairDeletionSucceeded
 
@@ -9248,11 +7748,9 @@ ReplicationPairDeletionSucceeded
 ${userEmail} removed Rubrik cluster: ${targetClusterName} as replication target to Rubrik cluster: ${sourceClusterName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 ReplicationTargetEditFailed
 
@@ -9260,11 +7758,9 @@ ReplicationTargetEditFailed
 ${userEmail} failed to modify replication target: ${targetClusterName} spec on source cluster: ${sourceClusterName} using ${setupType} configuration.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 ReplicationTargetEditSucceeded
 
@@ -9272,11 +7768,9 @@ ReplicationTargetEditSucceeded
 ${userEmail} modified replication target: ${targetClusterName} spec on source cluster: ${sourceClusterName} using ${setupType} configuration.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 ## reports
 
@@ -9288,11 +7782,9 @@ ClusterReportMigrationOnDemandJobCanceled
 Canceled migration of custom reports from ${clusterName} into RSC.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |              |        |
-| -------- | ------------ | ------ |
-| **Info** | **Canceled** | **No** |
+| Severity | Status       | Audit Event |
+| -------- | ------------ | ----------- |
+| **Info** | **Canceled** | **No**      |
 
 ClusterReportMigrationOnDemandJobCanceling
 
@@ -9300,11 +7792,9 @@ ClusterReportMigrationOnDemandJobCanceling
 Canceling migration of custom reports from ${clusterName} into RSC.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |               |        |
-| -------- | ------------- | ------ |
-| **Info** | **Canceling** | **No** |
+| Severity | Status        | Audit Event |
+| -------- | ------------- | ----------- |
+| **Info** | **Canceling** | **No**      |
 
 ClusterReportMigrationOnDemandJobFailed
 
@@ -9312,11 +7802,9 @@ ClusterReportMigrationOnDemandJobFailed
 Failed to migrate all the custom reports from ${clusterName} into RSC.  Refer to the migration dashboard for report-level breakdown. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Failure** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **No**      |
 
 ClusterReportMigrationOnDemandJobQueued
 
@@ -9324,11 +7812,9 @@ ClusterReportMigrationOnDemandJobQueued
 Queued migration of custom reports from ${clusterName} into RSC.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |            |        |
-| -------- | ---------- | ------ |
-| **Info** | **Queued** | **No** |
+| Severity | Status     | Audit Event |
+| -------- | ---------- | ----------- |
+| **Info** | **Queued** | **No**      |
 
 ClusterReportMigrationOnDemandJobStarted
 
@@ -9336,11 +7822,9 @@ ClusterReportMigrationOnDemandJobStarted
 Started migration of custom reports from ${clusterName} into RSC.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 ClusterReportMigrationOnDemandJobSucceeded
 
@@ -9348,11 +7832,9 @@ ClusterReportMigrationOnDemandJobSucceeded
 Successfully migrated custom reports from ${clusterName} into RSC. Refer  to the migration dashboard for details of the migration.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 MigrateClusterReportsJobStarted
 
@@ -9360,11 +7842,9 @@ MigrateClusterReportsJobStarted
 ${userEmail} successfully started migration of custom reports of ${clusterName} into RSC.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 MigrateClusterReportsJobStartFailed
 
@@ -9372,11 +7852,9 @@ MigrateClusterReportsJobStartFailed
 ${userEmail} failed to start migration of custom reports of ${clusterName} into RSC. Failure reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 ## rsc_tag
 
@@ -9388,11 +7866,9 @@ RscTagCreated
 ${username} created an RSC tag ${rscTagName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 RscTagDeleted
 
@@ -9400,11 +7876,9 @@ RscTagDeleted
 ${username} deleted the RSC tag, ${rscTagName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 RscTagUpdated
 
@@ -9412,11 +7886,9 @@ RscTagUpdated
 ${username} updated the RSC tag, ${rscTagName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 ## saasapps
 
@@ -9428,11 +7900,9 @@ SaasAppsDeleteOrgFailed
 ${userID} requested the deletion of SaaS organization ${orgName}, but it failed. Failure reason: ${reason}
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |         |
-| ------------ | ----------- | ------- |
-| **Critical** | **Failure** | **Yes** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **Yes**     |
 
 SaasAppsDeleteOrgStarted
 
@@ -9440,11 +7910,9 @@ SaasAppsDeleteOrgStarted
 ${userID} started deletion of SaaS organization ${orgName}. (Taskchain ID is ${taskchainID})
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 SaasAppsOrgAuthenticated
 
@@ -9452,11 +7920,9 @@ SaasAppsOrgAuthenticated
 ${userID} authenticated ${orgURL} with user ${orgUser}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 SaasAppsOrgRenamed
 
@@ -9464,11 +7930,9 @@ SaasAppsOrgRenamed
 ${userEmail} renamed ${oldOrgName} ${saasAppType} org to ${newOrgName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 SaasAppsPendingAuthentication
 
@@ -9476,11 +7940,9 @@ SaasAppsPendingAuthentication
 Service is offline. Pending authentication for ${orgName} (${orgURL}) to resume protection.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Failure** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **No**      |
 
 SaasAppsSeedingTemplateDeleted
 
@@ -9488,11 +7950,9 @@ SaasAppsSeedingTemplateDeleted
 ${userID} deleted the seeding template ${templateName} with ID  ${templateID}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 ## sap_hana_system
 
@@ -9504,11 +7964,9 @@ AddSapHanaSystemFailure
 ${username} failed to add SAP HANA system '${systemName}'. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 AddSapHanaSystemStarted
 
@@ -9516,11 +7974,9 @@ AddSapHanaSystemStarted
 ${username} started adding SAP HANA system '${systemName}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 DeleteSapHanaSystemFailure
 
@@ -9528,11 +7984,9 @@ DeleteSapHanaSystemFailure
 ${username} failed to delete SAP HANA system '${systemName}'. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 DeleteSapHanaSystemStarted
 
@@ -9540,11 +7994,9 @@ DeleteSapHanaSystemStarted
 ${username} started deleting SAP HANA system '${systemName}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 EditSapHanaSystemFailure
 
@@ -9552,11 +8004,9 @@ EditSapHanaSystemFailure
 ${username} failed to modify SAP HANA system '${systemName}'. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 EditSapHanaSystemStarted
 
@@ -9564,11 +8014,9 @@ EditSapHanaSystemStarted
 ${username} modified SAP HANA system '${systemName}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 RefreshSapHanaSystemMetadataFailed
 
@@ -9576,11 +8024,9 @@ RefreshSapHanaSystemMetadataFailed
 ${username} failed to refresh metadata for SAP HANA system '${systemName}'. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 RefreshSapHanaSystemMetadataStarted
 
@@ -9588,11 +8034,9 @@ RefreshSapHanaSystemMetadataStarted
 ${username} started refreshing metadata for SAP HANA system '${systemName}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 ## sessionmanagement
 
@@ -9604,11 +8048,9 @@ ConcurrentSessionLimitExceeded
 The session associated with ${userEmail} has been invalidated, as a new  login from ${source} for the same user, exceeded the maximum number of concurrent sessions allowed.
 ```
 
-Severity | Status | Audit Event | |
-
-|             |             |         |
-| ----------- | ----------- | ------- |
-| **Warning** | **Success** | **Yes** |
+| Severity    | Status      | Audit Event |
+| ----------- | ----------- | ----------- |
+| **Warning** | **Success** | **Yes**     |
 
 SessionManagementSetConfiguration
 
@@ -9616,11 +8058,9 @@ SessionManagementSetConfiguration
 ${userEmail} updated ${config} from ${fromValue} to ${toValue}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 ## sla
 
@@ -9632,11 +8072,9 @@ DoNotProtectSLADomainAssignmentRollbackFailed
 Failed to re-assign the existing SLA Domain ${slaName} to ${objectType}  ${objectName} on Rubrik cluster ${clusterUUID} while rolling back the Manage Protection operation. Retry the operation and SLA Domain assignment or re-assign the old SLA Domain.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Failure** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **No**      |
 
 SLAAssignmentonRSCNativeObjectsFailed
 
@@ -9644,11 +8082,9 @@ SLAAssignmentonRSCNativeObjectsFailed
 Failed to assign SLA Domain: ${slaName} to objects: ${objects} on RSC. Reason: ${reason}
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Failure** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **No**      |
 
 SLAAssignmentOnRSCNativeObjectsSucceed
 
@@ -9656,11 +8092,9 @@ SLAAssignmentOnRSCNativeObjectsSucceed
 Successfully assigned SLA Domain: ${slaName} to objects: ${objects} on RSC.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 SLADirectAssignmentForRetentionLockProcessed
 
@@ -9668,11 +8102,9 @@ SLADirectAssignmentForRetentionLockProcessed
 Unable to apply the new SLA Domain because you  can only apply SLA Domains with settings that  are stricter than the current SLA Domain settings  to a Retention-locked object. Instead, the object  ${object} is now directly assigned the same SLA  Domain ${currentEffectiveSla}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 SLAMigrationArchivalLocation
 
@@ -9680,11 +8112,9 @@ SLAMigrationArchivalLocation
 SLA Domain has been configured with the archival location ${archivalLocationName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 SLAMigrationFailed
 
@@ -9692,11 +8122,9 @@ SLAMigrationFailed
 Failed to switch SLA Domain for ${slaName}. Error: ${errMsg}
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Failure** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **No**      |
 
 SLAMigrationNoObjectTypes
 
@@ -9704,11 +8132,9 @@ SLAMigrationNoObjectTypes
 SLA Domain has been configured without any object types. Edit the SLA Domain manually to add object-specific configuration before using the SLA Domain to protect objects.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 SLAMigrationObjectTypes
 
@@ -9716,11 +8142,9 @@ SLAMigrationObjectTypes
 SLA Domain has been configured with the following object types ${objectTypesStr}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 SLAMigrationRename
 
@@ -9728,11 +8152,9 @@ SLAMigrationRename
 SLA Domain has been renamed to ${slaNewName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 SLAMigrationStarted
 
@@ -9740,11 +8162,9 @@ SLAMigrationStarted
 Started switching the SLA Domain ${slaName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 SLAMigrationStuck
 
@@ -9752,11 +8172,9 @@ SLAMigrationStuck
 Switching of SLA Domain ${slaName} is stuck. Error: ${errMsg}
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Failure** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **No**      |
 
 SLAMigrationSucceeded
 
@@ -9764,11 +8182,9 @@ SLAMigrationSucceeded
 Successfully switched the SLA Domain.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 ## smb_domain
 
@@ -9780,11 +8196,9 @@ AddSmbDomainFailure
 ${username} failed to add SMB domain '${smbDomainName}'. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 AddSmbDomainSuccess
 
@@ -9792,11 +8206,9 @@ AddSmbDomainSuccess
 ${username} successfully added SMB domain '${smbDomainName}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 AuthenticateSmbDomainFailure
 
@@ -9804,11 +8216,9 @@ AuthenticateSmbDomainFailure
 ${username} failed to authenticate SMB domain '${smbDomainName}'. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 AuthenticateSmbDomainSuccess
 
@@ -9816,11 +8226,9 @@ AuthenticateSmbDomainSuccess
 ${username} successfully authenticate SMB domain '${smbDomainName}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 ChangeSmbSecurityConfigurationFailure
 
@@ -9828,11 +8236,9 @@ ChangeSmbSecurityConfigurationFailure
 ${username} failed to change SMB domain configuration of cluster '${clusterName}'. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 ChangeSmbSecurityConfigurationSuccess
 
@@ -9840,11 +8246,9 @@ ChangeSmbSecurityConfigurationSuccess
 ${username} successfully changed SMB domain configuration of cluster '${clusterName}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 DeleteSmbDomainFailure
 
@@ -9852,11 +8256,9 @@ DeleteSmbDomainFailure
 ${username} failed to delete SMB domain '${smbDomainName}'. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 DeleteSmbDomainSuccess
 
@@ -9864,11 +8266,9 @@ DeleteSmbDomainSuccess
 ${username} successfully deleted SMB domain '${smbDomainName}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 ## snappables
 
@@ -9880,11 +8280,9 @@ LinkObjectsFailed
 Unable to run steps to link objects.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Failure** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **No**      |
 
 LinkObjectsSucceeded
 
@@ -9892,11 +8290,9 @@ LinkObjectsSucceeded
 Finished running steps to link objects.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 LinkRollbackFailed
 
@@ -9904,11 +8300,9 @@ LinkRollbackFailed
 Unable to rollback the metadata updates to link  ${objectType} ${objectNameList} on Rubrik cluster ${clusterUUID}. The Rubrik cluster will not reassign the existing SLA Domain, ${slaNameList}, to the objects. Contact Rubrik Support to rollback the metadata updates and then retry the operation.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Failure** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **No**      |
 
 LinkTaskStarted
 
@@ -9916,11 +8310,9 @@ LinkTaskStarted
 Started running steps to link objects.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Running** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Running** | **No**      |
 
 UnlinkObjectsFailed
 
@@ -9928,11 +8320,9 @@ UnlinkObjectsFailed
 Unable to run steps to unlink objects.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Failure** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **No**      |
 
 UnlinkObjectsSucceeded
 
@@ -9940,11 +8330,9 @@ UnlinkObjectsSucceeded
 Finished running steps to unlink objects.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 UnlinkRollbackFailed
 
@@ -9952,11 +8340,9 @@ UnlinkRollbackFailed
 Unable to rollback the metadata updates to unlink  ${objectType} ${objectNameList} on Rubrik cluster ${clusterUUID}. The Rubrik cluster will not reassign the existing SLA Domain, ${slaNameList}, to the objects. Contact Rubrik Support to rollback the metadata updates and then retry the operation.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Failure** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **No**      |
 
 UnlinkTaskStarted
 
@@ -9964,11 +8350,9 @@ UnlinkTaskStarted
 Started running steps to unlink objects.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Running** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Running** | **No**      |
 
 UnprotectObjectsTaskFailed
 
@@ -9976,11 +8360,9 @@ UnprotectObjectsTaskFailed
 Failed to unprotect objects ${objectNames} as part of ${operation} operation. Any linking, unlinking or SLA Domain reassignment did not  occur due to this failure.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Failure** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **No**      |
 
 UnprotectObjectsTaskStarted
 
@@ -9988,11 +8370,9 @@ UnprotectObjectsTaskStarted
 Started unprotection of objects ${objectNames} as part of ${operation} operation.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Running** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Running** | **No**      |
 
 UnprotectObjectsTaskSucceeded
 
@@ -10000,11 +8380,9 @@ UnprotectObjectsTaskSucceeded
 Successfully unprotected objects ${objectNames}. If the objects are still linked, you can either unlink them or assign a new SLA Domain through the \"Manage Protection\" workflow.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 ## sso
 
@@ -10016,11 +8394,9 @@ AddNewSSOIdentityProvider
 ${userName} successfully added a new SSO identity provider, ${name}, with entity ID, ${entityID}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 RemoveIdentityProvider
 
@@ -10028,11 +8404,9 @@ RemoveIdentityProvider
 ${userName} successfully removed the SSO identity provider, ${name}, with entity ID, ${entityID}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 SSOAddConfiguration
 
@@ -10040,11 +8414,9 @@ SSOAddConfiguration
 ${userEmail} configured SSO with Identity Provider ${entityID}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 SSOLoginFailure
 
@@ -10052,11 +8424,9 @@ SSOLoginFailure
 SSO login failed. Reason: ${err_msg}
 ```
 
-Severity | Status | Audit Event | |
-
-|             |             |         |
-| ----------- | ----------- | ------- |
-| **Warning** | **Failure** | **Yes** |
+| Severity    | Status      | Audit Event |
+| ----------- | ----------- | ----------- |
+| **Warning** | **Failure** | **Yes**     |
 
 SSORemoveConfiguration
 
@@ -10064,11 +8434,9 @@ SSORemoveConfiguration
 ${userEmail} disabled SSO through Identity Provider ${entityID}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 SSOUpdateSPCertificate
 
@@ -10076,11 +8444,9 @@ SSOUpdateSPCertificate
 ${userEmail} updated the SSO Service Provider ${certType} certificate with certificate named ${certName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 SuccessfulSSOLoginWithNotification
 
@@ -10088,11 +8454,9 @@ SuccessfulSSOLoginWithNotification
 ${userName} successfully logged in via SSO using identity provider, ${name}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 SuccessfulSSOLoginWithoutNotification
 
@@ -10100,11 +8464,9 @@ SuccessfulSSOLoginWithoutNotification
 ${userName} successfully logged in via SSO using identity provider, ${name}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 UpdateSSOIdentityProvider
 
@@ -10112,11 +8474,9 @@ UpdateSSOIdentityProvider
 ${userName} successfully modified the SSO identity provider, ${name}, with entity ID, ${entityID}. The changed attributes are ${changedAttributes}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 ## support_tunnel
 
@@ -10128,11 +8488,9 @@ SupportTunnelClosed
 ${username} closed a support tunnel for cluster '${cluster}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 SupportTunnelCloseFailed
 
@@ -10140,11 +8498,9 @@ SupportTunnelCloseFailed
 ${username} failed to close the support tunnel for cluster '${cluster}'. Failure reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 SupportTunnelOpened
 
@@ -10152,11 +8508,9 @@ SupportTunnelOpened
 ${username} opened a support tunnel for cluster '${cluster}' and set the timeout window to ${timeoutWindow} hours.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 SupportTunnelOpenFailed
 
@@ -10164,11 +8518,9 @@ SupportTunnelOpenFailed
 ${username} failed to open a support tunnel for cluster '${cluster}' for ${timeoutWindow} hours. Failure reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 ## ticketingservice
 
@@ -10180,11 +8532,9 @@ TicketingPlatformConfigured
 ${userEmail} configured ${platformType} instance ${instanceURL}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 TicketingPlatformDisconnected
 
@@ -10192,11 +8542,9 @@ TicketingPlatformDisconnected
 ${userEmail} disconnected ${platformType} instance ${instanceURL}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 ## tpr
 
@@ -10208,11 +8556,9 @@ TprConfigEnable
 ${username} enabled Quorum Authorization.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 TprConfigUpdate
 
@@ -10220,11 +8566,9 @@ TprConfigUpdate
 ${username} updated the Quorum Authorization configuration to Execution Timeout Hours: ${executionTimeoutHours}, Request Timeout Hours: ${requestTimeoutHours}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 TprPolicyCreated
 
@@ -10232,11 +8576,9 @@ TprPolicyCreated
 ${username} created the Quorum Authorization policy ${policyName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 TprPolicyDeleted
 
@@ -10244,11 +8586,9 @@ TprPolicyDeleted
 ${username} deleted the Quorum Authorization policy ${policyName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 TprPolicyUpdated
 
@@ -10256,11 +8596,9 @@ TprPolicyUpdated
 ${username} updated the Quorum Authorization policy ${policyName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 ## vcd
 
@@ -10272,11 +8610,9 @@ AddVcdStarted
 ${username} started a job to add VCD '${vcdAddress}'
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 AddVcdStartFailed
 
@@ -10284,11 +8620,9 @@ AddVcdStartFailed
 ${username} failed to start a job to add vCenter '${vcdAddress}'. Failure reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 DeleteVcdStarted
 
@@ -10296,11 +8630,9 @@ DeleteVcdStarted
 ${username} started a job to delete VCD '${vcdAddress}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 DeleteVcdStartFailed
 
@@ -10308,11 +8640,9 @@ DeleteVcdStartFailed
 ${username} failed to start a job to delete VCD '${vcdAddress}'. Failure reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 RefreshVcdStarted
 
@@ -10320,11 +8650,9 @@ RefreshVcdStarted
 ${username} started a job to refresh VCD '${vcdAddress}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 RefreshVcdStartFailed
 
@@ -10332,11 +8660,9 @@ RefreshVcdStartFailed
 ${username} failed to start a job to refresh VCD '${vcdAddress}'. Failure reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 UpdateVcdStarted
 
@@ -10344,11 +8670,9 @@ UpdateVcdStarted
 ${username} started a job to update VCD '${vcdAddress}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 UpdateVcdStartFailed
 
@@ -10356,11 +8680,9 @@ UpdateVcdStartFailed
 ${username} failed to start a job to update VCD '${vcdAddress}' Failure reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 VappSnapshotInstantRecoveryStarted
 
@@ -10368,11 +8690,9 @@ VappSnapshotInstantRecoveryStarted
 ${username} started a job to instant recover snapshot '${snapshotId}' from ${snappableType} '${vcdVapp}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 VappSnapshotInstantRecoveryStartFailed
 
@@ -10380,11 +8700,9 @@ VappSnapshotInstantRecoveryStartFailed
 ${username} failed to instant recover snapshot '${snapshotId}'  from ${snappableType} '${vcdVapp}'. Failure reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 VcdVappOndemandSnapshotStarted
 
@@ -10392,11 +8710,9 @@ VcdVappOndemandSnapshotStarted
 ${username} started a job to take on demand snapshot for ${snappableType} '${vcdVapp}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 VcdVappOndemandSnapshotStartFailed
 
@@ -10404,11 +8720,9 @@ VcdVappOndemandSnapshotStartFailed
 ${username} failed to take on demand snapshot for ${snappableType}  '${vcdVapp}'. Failure reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 VcdVappSnapshotDeleteStarted
 
@@ -10416,11 +8730,9 @@ VcdVappSnapshotDeleteStarted
 ${username} started a job to delete snapshot '${snapshotId}' from ${snappableType} '${vcdVapp}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 VcdVappSnapshotDeleteStartFailed
 
@@ -10428,11 +8740,9 @@ VcdVappSnapshotDeleteStartFailed
 ${username} failed to delete snapshot '${snapshotId}' from ${snappableType} '${vcdVapp}'. Failure reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 VcdVappSnapshotExportStarted
 
@@ -10440,11 +8750,9 @@ VcdVappSnapshotExportStarted
 ${username} started a job to export snapshot '${snapshotId}' from ${snappableType} '${vcdVapp}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 VcdVappSnapshotExportStartFailed
 
@@ -10452,11 +8760,9 @@ VcdVappSnapshotExportStartFailed
 ${username} failed to export snapshot '${snapshotId}' from ${snappableType} '${vcdVapp}'. Failure reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 VcdVappUpdateStarted
 
@@ -10464,11 +8770,9 @@ VcdVappUpdateStarted
 ${username} started a job to update ${snappableType} '${vcdVapp}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 VcdVappUpdateStartFailed
 
@@ -10476,11 +8780,9 @@ VcdVappUpdateStartFailed
 ${username} failed to update ${snappableType} '${vcdVapp}'. Failure reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 ## volume_group
 
@@ -10492,11 +8794,9 @@ UpdateVolumeGroup
 ${username} updated volume group for host ${hostName}. Volumes included are :${volumes}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 UpdateVolumeGroupFailed
 
@@ -10504,11 +8804,9 @@ UpdateVolumeGroupFailed
 ${username} failed to update volume group for host ${hostName}. Reason : ${reason}
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 ## vsphere
 
@@ -10520,11 +8818,9 @@ AddVcenterStarted
 ${username} started a job to add ${sourceType} '${vcenterAddress}'
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 AddVcenterStartFailed
 
@@ -10532,11 +8828,9 @@ AddVcenterStartFailed
 ${username} failed to start a job to add ${sourceType}  '${vcenterAddress}'. Failure reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 CreateGuestCredential
 
@@ -10544,11 +8838,9 @@ CreateGuestCredential
 ${username} created a guest credential with name '${guestCredentialName}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 CreateGuestCredentialFailed
 
@@ -10556,11 +8848,9 @@ CreateGuestCredentialFailed
 ${username} failed to create a guest credential with name '${guestCredentialName}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 CreateVSphereAdvancedTag
 
@@ -10568,11 +8858,9 @@ CreateVSphereAdvancedTag
 ${username} created an advanced tag with name '${advancedTagName}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 CreateVSphereAdvancedTagFailed
 
@@ -10580,11 +8868,9 @@ CreateVSphereAdvancedTagFailed
 ${username} failed to create an advanced tag with name '${advancedTagName}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 DeleteGuestCredential
 
@@ -10592,11 +8878,9 @@ DeleteGuestCredential
 ${username} deleted a guest credential.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 DeleteGuestCredentialFailed
 
@@ -10604,11 +8888,9 @@ DeleteGuestCredentialFailed
 ${username} failed to delete a guest credential.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 DeleteVcenterStarted
 
@@ -10616,11 +8898,9 @@ DeleteVcenterStarted
 ${username} started a job to delete ${sourceType} '${vcenterAddress}'
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 DeleteVcenterStartFailed
 
@@ -10628,11 +8908,9 @@ DeleteVcenterStartFailed
 ${username} failed to start a job to delete ${sourceType} '${vcenterAddress}'. Failure reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 DeleteVSphereAdvancedTag
 
@@ -10640,11 +8918,9 @@ DeleteVSphereAdvancedTag
 ${username} deleted an advanced tag'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 DeleteVSphereAdvancedTagFailed
 
@@ -10652,11 +8928,9 @@ DeleteVSphereAdvancedTagFailed
 ${username} failed to delete an advanced tag'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 DisabledStorageArrayIntegration
 
@@ -10664,11 +8938,9 @@ DisabledStorageArrayIntegration
 ${username} disabled storage array integration in VM ${vmName}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 EnabledStorageArrayIntegration
 
@@ -10676,11 +8948,9 @@ EnabledStorageArrayIntegration
 ${username} enabled storage array integration in VM ${vmName}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 RefreshVcenterStarted
 
@@ -10688,11 +8958,9 @@ RefreshVcenterStarted
 ${username} started a job to refresh ${sourceType} '${vcenterAddress}'
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 RefreshVcenterStartFailed
 
@@ -10700,11 +8968,9 @@ RefreshVcenterStartFailed
 ${username} failed to start a job to refresh ${sourceType} '${vcenterAddress}'. Failure reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 UpdateGuestCredential
 
@@ -10712,11 +8978,9 @@ UpdateGuestCredential
 ${username} updated a guest credential with name '${guestCredentialName}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 UpdateGuestCredentialFailed
 
@@ -10724,11 +8988,9 @@ UpdateGuestCredentialFailed
 ${username} failed to update a guest credential with name '${guestCredentialName}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 UpdateSnapshotConsistencyFailed
 
@@ -10736,11 +8998,9 @@ UpdateSnapshotConsistencyFailed
 ${username} failed to update snapshot consistency for ${objectNames}. Failure reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 UpdateSnapshotConsistencySucceeded
 
@@ -10748,11 +9008,9 @@ UpdateSnapshotConsistencySucceeded
 ${username} successfully updated snapshot consistency for ${objectNames}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 UpdateVmwareAgentDeploymentSettingFailed
 
@@ -10760,11 +9018,9 @@ UpdateVmwareAgentDeploymentSettingFailed
 ${username} failed to update vmware agent deployment setting on cluster '${clusterUuid}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 UpdateVmwareAgentDeploymentSettingSucceeded
 
@@ -10772,11 +9028,9 @@ UpdateVmwareAgentDeploymentSettingSucceeded
 ${username} updated vmware agent deployment setting on cluster '${clusterUuid}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 UpdateVmwareDiskFailed
 
@@ -10784,11 +9038,9 @@ UpdateVmwareDiskFailed
 ${username} failed to update a Vmware Virtual Disk '${diskName}' of vSphere VM '${vmName}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 UpdateVmwareDiskSucceeded
 
@@ -10796,11 +9048,9 @@ UpdateVmwareDiskSucceeded
 ${username} updated protection of disk with name '${diskName}' on  VM '${vmName}' to exclusion status '${status}'
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 UpdateVmwareVcenterSettingFailed
 
@@ -10808,11 +9058,9 @@ UpdateVmwareVcenterSettingFailed
 ${username} was unable to modify the VMware ${sourceType} '${vcenterAddress}' on Rubrik cluster '${clusterUuid}'. Failure reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 UpdateVmwareVcenterSettingSucceeded
 
@@ -10820,11 +9068,9 @@ UpdateVmwareVcenterSettingSucceeded
 ${username} modified the VMware ${sourceType} '${vcenterAddress}' on Rubrik cluster '${clusterUuid}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 UpdateVSphereAdvancedTag
 
@@ -10832,11 +9078,9 @@ UpdateVSphereAdvancedTag
 ${username} updated an advanced tag with name '${advancedTagName}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 UpdateVSphereAdvancedTagFailed
 
@@ -10844,11 +9088,9 @@ UpdateVSphereAdvancedTagFailed
 ${username} failed to update an advanced tag with name '${advancedTagName}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 VSphereLiveMountPoweredOffFailed
 
@@ -10856,11 +9098,9 @@ VSphereLiveMountPoweredOffFailed
 ${username} failed to power off '${vmName}'. Failure reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 VSphereLiveMountPoweredOffStarted
 
@@ -10868,11 +9108,9 @@ VSphereLiveMountPoweredOffStarted
 ${username} started powering off '${vmName}'
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 VSphereLiveMountPoweredOnFailed
 
@@ -10880,11 +9118,9 @@ VSphereLiveMountPoweredOnFailed
 ${username} failed to power on '${vmName}'. Failure reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 VSphereLiveMountPoweredOnStarted
 
@@ -10892,11 +9128,9 @@ VSphereLiveMountPoweredOnStarted
 ${username} started powering on '${vmName}'
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 VSphereRegisterAgent
 
@@ -10904,11 +9138,9 @@ VSphereRegisterAgent
 ${username} registered agent on virtual machine '${snappableName}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 VSphereRegisterAgentFailed
 
@@ -10916,11 +9148,9 @@ VSphereRegisterAgentFailed
 ${username} failed to register agent on virtual machine '${snappableName}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 VSphereUpdateVM
 
@@ -10928,11 +9158,9 @@ VSphereUpdateVM
 ${username} updated virtual machine '${snappableName}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 VSphereUpdateVMFailed
 
@@ -10940,11 +9168,9 @@ VSphereUpdateVMFailed
 ${username} unable to update virtual machine '${snappableName}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 VSphereUpdateVmUnmountTimeFailed
 
@@ -10952,11 +9178,9 @@ VSphereUpdateVmUnmountTimeFailed
 ${username} failed to update unmount time for vm mount '${mountId}'. Failure reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 VSphereUpdateVmUnmountTimeSucceeded
 
@@ -10964,11 +9188,9 @@ VSphereUpdateVmUnmountTimeSucceeded
 ${username} successfully updated unmount time for vm mount '${mountId}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 ## webhook
 
@@ -10980,11 +9202,9 @@ PolarisWebhookAutoDisabled
 Webhook endpoint failed to receive messages after multiple retries.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Failure** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **No**      |
 
 ## webhooks
 
@@ -10996,11 +9216,9 @@ WebhookCreated
 ${actorSubjectName} successfully created the webhook ${targetSubjectName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 WebhookDeleted
 
@@ -11008,11 +9226,9 @@ WebhookDeleted
 ${actorSubjectName} successfully deleted the webhook ${targetSubjectName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 WebhookDisabled
 
@@ -11020,11 +9236,9 @@ WebhookDisabled
 ${actorSubjectName} successfully disabled the webhook ${targetSubjectName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 WebhookEnabled
 
@@ -11032,11 +9246,9 @@ WebhookEnabled
 ${actorSubjectName} successfully enabled webhook ${targetSubjectName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 WebhookUpdated
 
@@ -11044,8 +9256,6 @@ WebhookUpdated
 ${actorSubjectName} successfully updated the webhook ${targetSubjectName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |

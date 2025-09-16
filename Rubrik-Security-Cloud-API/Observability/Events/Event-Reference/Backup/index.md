@@ -8,11 +8,9 @@ BlueprintBackupCanceled
 Canceled ${maintenanceType} snapshot of the recovery plan '${name}' in the ${region} region for the ${awsAccountDisplayName} AWS account.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |              |        |
-| -------- | ------------ | ------ |
-| **Info** | **Canceled** | **No** |
+| Severity | Status       | Audit Event |
+| -------- | ------------ | ----------- |
+| **Info** | **Canceled** | **No**      |
 
 BlueprintBackupCanceling
 
@@ -20,11 +18,9 @@ BlueprintBackupCanceling
 Canceling ${maintenanceType} snapshot of the recovery plan '${name}' in the ${region} region for the ${awsAccountDisplayName} AWS account.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |               |        |
-| -------- | ------------- | ------ |
-| **Info** | **Canceling** | **No** |
+| Severity | Status        | Audit Event |
+| -------- | ------------- | ----------- |
+| **Info** | **Canceling** | **No**      |
 
 BlueprintBackupFailed
 
@@ -32,11 +28,9 @@ BlueprintBackupFailed
 Failed ${maintenanceType} snapshot of the recovery plan '${name}' in the ${region} region for the ${awsAccountDisplayName} AWS account. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Failure** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **No**      |
 
 BlueprintBackupStarted
 
@@ -44,11 +38,9 @@ BlueprintBackupStarted
 Started ${maintenanceType} snapshot of the recovery plan '${name}' in the ${region} region for the ${awsAccountDisplayName} AWS account.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 BlueprintBackupSucceeded
 
@@ -56,11 +48,9 @@ BlueprintBackupSucceeded
 Successfully created ${maintenanceType} snapshot of the recovery plan '${name}' in the ${region} region for the ${awsAccountDisplayName} AWS account.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 ## awsnative
 
@@ -72,11 +62,9 @@ AwsNativeCreateCryoResourceSnapshotJobCanceled
 Canceled ${maintenanceType} snapshot of the ${resourceDisplayName} ${resourceType} in the ${region} region for the ${awsAccountDisplayName} AWS account. This can happen if the object became unprotected, or was deleted.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |              |        |
-| -------- | ------------ | ------ |
-| **Info** | **Canceled** | **No** |
+| Severity | Status       | Audit Event |
+| -------- | ------------ | ----------- |
+| **Info** | **Canceled** | **No**      |
 
 AwsNativeCreateCryoResourceSnapshotJobCanceling
 
@@ -84,11 +72,9 @@ AwsNativeCreateCryoResourceSnapshotJobCanceling
 Canceling ${maintenanceType} snapshot of the ${resourceDisplayName} ${resourceType} in the ${region} region for the ${awsAccountDisplayName} AWS account. This can happen if the object became unprotected, or was deleted.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |               |        |
-| -------- | ------------- | ------ |
-| **Info** | **Canceling** | **No** |
+| Severity | Status        | Audit Event |
+| -------- | ------------- | ----------- |
+| **Info** | **Canceling** | **No**      |
 
 AwsNativeCreateCryoResourceSnapshotJobFailed
 
@@ -96,11 +82,9 @@ AwsNativeCreateCryoResourceSnapshotJobFailed
 Failed to create ${maintenanceType} snapshot of the ${resourceDisplayName} ${resourceType} in the ${region} region for the ${awsAccountDisplayName} AWS account. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Failure** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **No**      |
 
 AwsNativeCreateCryoResourceSnapshotJobQueued
 
@@ -108,11 +92,9 @@ AwsNativeCreateCryoResourceSnapshotJobQueued
 Queued ${maintenanceType} snapshot of the ${resourceDisplayName} ${resourceType} in the ${region} region for the ${awsAccountDisplayName} AWS account.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |            |        |
-| -------- | ---------- | ------ |
-| **Info** | **Queued** | **No** |
+| Severity | Status     | Audit Event |
+| -------- | ---------- | ----------- |
+| **Info** | **Queued** | **No**      |
 
 AwsNativeCreateCryoResourceSnapshotJobStarted
 
@@ -120,11 +102,9 @@ AwsNativeCreateCryoResourceSnapshotJobStarted
 ${userEmail} started snapshot of ${resourceType}: ${resourceDisplayName} in the ${region} region on AWS account ${awsAccountDisplayName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 AwsNativeCreateCryoResourceSnapshotJobStarted
 
@@ -132,11 +112,9 @@ AwsNativeCreateCryoResourceSnapshotJobStarted
 Started ${maintenanceType} snapshot of the ${resourceDisplayName} ${resourceType} in the ${region} region for the ${awsAccountDisplayName} AWS account.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 AwsNativeCreateCryoResourceSnapshotJobStartFailed
 
@@ -144,11 +122,9 @@ AwsNativeCreateCryoResourceSnapshotJobStartFailed
 ${userEmail} failed to start snapshot of ${resourceType}: ${resourceDisplayName} in the ${region} region on AWS account ${awsAccountDisplayName}. Failure reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |         |
-| ------------ | ----------- | ------- |
-| **Critical** | **Failure** | **Yes** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **Yes**     |
 
 AwsNativeCreateCryoResourceSnapshotJobSucceeded
 
@@ -156,11 +132,9 @@ AwsNativeCreateCryoResourceSnapshotJobSucceeded
 Successfully created ${maintenanceType} snapshot of the ${resourceDisplayName} ${resourceType} in the ${region} region for the ${awsAccountDisplayName} AWS account.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 AwsNativeCreateEbsVolumeSnapshotJobCanceled
 
@@ -168,11 +142,9 @@ AwsNativeCreateEbsVolumeSnapshotJobCanceled
 Canceled ${maintenanceType} snapshot of the EBS Volume: ${volumeDisplayName} in the ${region} region for the ${awsAccountDisplayName} AWS account. This can happen if the volume became unprotected, or was deleted.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |              |        |
-| -------- | ------------ | ------ |
-| **Info** | **Canceled** | **No** |
+| Severity | Status       | Audit Event |
+| -------- | ------------ | ----------- |
+| **Info** | **Canceled** | **No**      |
 
 AwsNativeCreateEbsVolumeSnapshotJobFailed
 
@@ -180,11 +152,9 @@ AwsNativeCreateEbsVolumeSnapshotJobFailed
 Failed to create ${maintenanceType} snapshot of the EBS Volume: ${volumeDisplayName} in the ${region} region for the ${awsAccountDisplayName} AWS account. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Failure** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **No**      |
 
 AwsNativeCreateEbsVolumeSnapshotJobStarted
 
@@ -192,11 +162,9 @@ AwsNativeCreateEbsVolumeSnapshotJobStarted
 Started ${maintenanceType} snapshot of the EBS Volume: ${volumeDisplayName} in the ${region} region for the ${awsAccountDisplayName} AWS account.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 AwsNativeCreateEbsVolumeSnapshotJobSucceeded
 
@@ -204,11 +172,9 @@ AwsNativeCreateEbsVolumeSnapshotJobSucceeded
 Successfully created ${maintenanceType} snapshot of the EBS Volume: ${volumeDisplayName} in the ${region} region for the ${awsAccountDisplayName} AWS account.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 AwsNativeCreateEc2InstanceSnapshotJobCanceled
 
@@ -216,11 +182,9 @@ AwsNativeCreateEc2InstanceSnapshotJobCanceled
 Canceled ${maintenanceType} snapshot of the EC2 Instance: ${instanceDisplayName} in the ${region} region for the ${awsAccountDisplayName} AWS account. This can happen if the instance became unprotected, or was deleted.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |              |        |
-| -------- | ------------ | ------ |
-| **Info** | **Canceled** | **No** |
+| Severity | Status       | Audit Event |
+| -------- | ------------ | ----------- |
+| **Info** | **Canceled** | **No**      |
 
 AwsNativeCreateEc2InstanceSnapshotJobFailed
 
@@ -228,11 +192,9 @@ AwsNativeCreateEc2InstanceSnapshotJobFailed
 Failed to create ${maintenanceType} snapshot of the EC2 Instance: ${instanceDisplayName} in the ${region} region for the ${awsAccountDisplayName} AWS account. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Failure** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **No**      |
 
 AwsNativeCreateEc2InstanceSnapshotJobPreempted
 
@@ -240,11 +202,9 @@ AwsNativeCreateEc2InstanceSnapshotJobPreempted
 Unable to create ${maintenanceType}, ${snapshotLevelText}, snapshot of  the ${instanceDisplayName} in the region, ${region}, for the ${awsAccountDisplayName}. Snapshot is canceled. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Failure** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **No**      |
 
 AwsNativeCreateEc2InstanceSnapshotJobQueued
 
@@ -252,11 +212,9 @@ AwsNativeCreateEc2InstanceSnapshotJobQueued
 Queued ${maintenanceType} snapshot of the EC2 Instance: ${instanceDisplayName} in the ${region} region for the ${awsAccountDisplayName} AWS account.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |            |        |
-| -------- | ---------- | ------ |
-| **Info** | **Queued** | **No** |
+| Severity | Status     | Audit Event |
+| -------- | ---------- | ----------- |
+| **Info** | **Queued** | **No**      |
 
 AwsNativeCreateEc2InstanceSnapshotJobSkipped
 
@@ -264,11 +222,9 @@ AwsNativeCreateEc2InstanceSnapshotJobSkipped
 ${nextSnapshotConsistencyLevelText} snapshot is taken since, ${maintenanceType},  ${snapshotLevelText} snapshot of the ${instanceDisplayName}, in the ${region},  region for the, ${awsAccountDisplayName} AWS account could not be created. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|             |             |        |
-| ----------- | ----------- | ------ |
-| **Warning** | **Failure** | **No** |
+| Severity    | Status      | Audit Event |
+| ----------- | ----------- | ----------- |
+| **Warning** | **Failure** | **No**      |
 
 AwsNativeCreateEc2InstanceSnapshotJobStarted
 
@@ -276,11 +232,9 @@ AwsNativeCreateEc2InstanceSnapshotJobStarted
 ${userEmail} started snapshot of the EC2 Instance ${instanceDisplayName} in the ${region} region on the AWS account ${awsAccountDisplayName}
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 AwsNativeCreateEc2InstanceSnapshotJobStarted
 
@@ -288,11 +242,9 @@ AwsNativeCreateEc2InstanceSnapshotJobStarted
 Started ${maintenanceType} snapshot of the EC2 Instance: ${instanceDisplayName} in the ${region} region for the ${awsAccountDisplayName} AWS account.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 AwsNativeCreateEc2InstanceSnapshotJobStartFailed
 
@@ -300,11 +252,9 @@ AwsNativeCreateEc2InstanceSnapshotJobStartFailed
 ${userEmail} failed to start snapshot of the EC2 Instance ${instanceDisplayName} in the ${region} region on the AWS account ${awsAccountDisplayName}
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |         |
-| ------------ | ----------- | ------- |
-| **Critical** | **Failure** | **Yes** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **Yes**     |
 
 AwsNativeCreateEc2InstanceSnapshotJobSucceeded
 
@@ -312,11 +262,9 @@ AwsNativeCreateEc2InstanceSnapshotJobSucceeded
 Successfully created ${maintenanceType} ${consistencyLevelText} snapshot of the EC2 instance: ${instanceDisplayName} in the ${region} region for the ${awsAccountDisplayName} AWS account.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 AwsNativeCreateEc2InstanceSnapshotTaskFailed
 
@@ -324,11 +272,9 @@ AwsNativeCreateEc2InstanceSnapshotTaskFailed
 Unable to take ${snapshotLevelText} snapshot of the ${instanceName}, EC2 instance. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |                 |        |
-| ------------ | --------------- | ------ |
-| **Critical** | **TaskFailure** | **No** |
+| Severity     | Status          | Audit Event |
+| ------------ | --------------- | ----------- |
+| **Critical** | **TaskFailure** | **No**      |
 
 AwsNativeCreateEc2InstanceSnapshotTaskPostScriptFailed
 
@@ -336,11 +282,9 @@ AwsNativeCreateEc2InstanceSnapshotTaskPostScriptFailed
 An application-consistent snapshot of the ${instanceName} was undone because the post script,  ${postScriptPath}, failed on the EC2 instance. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|             |                 |        |
-| ----------- | --------------- | ------ |
-| **Warning** | **TaskFailure** | **No** |
+| Severity    | Status          | Audit Event |
+| ----------- | --------------- | ----------- |
+| **Warning** | **TaskFailure** | **No**      |
 
 AwsNativeCreateEc2InstanceSnapshotTaskStarted
 
@@ -348,11 +292,9 @@ AwsNativeCreateEc2InstanceSnapshotTaskStarted
 Creating ${snapshotLevelText} snapshot of the ${instanceName}, EC2 instance.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 AwsNativeCreateEc2InstanceSnapshotTaskSucceeded
 
@@ -360,11 +302,9 @@ AwsNativeCreateEc2InstanceSnapshotTaskSucceeded
 Successfully created ${snapshotLevelText} snapshot of the ${instanceName},  EC2 instance.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 AwsNativeCreateEc2InstanceSnapshotTaskWarning
 
@@ -372,11 +312,9 @@ AwsNativeCreateEc2InstanceSnapshotTaskWarning
 Unable to take ${snapshotLevelText} snapshot of the ${instanceName}, EC2 instance. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|             |                 |        |
-| ----------- | --------------- | ------ |
-| **Warning** | **TaskFailure** | **No** |
+| Severity    | Status          | Audit Event |
+| ----------- | --------------- | ----------- |
+| **Warning** | **TaskFailure** | **No**      |
 
 ## azuread
 
@@ -388,11 +326,9 @@ AzureADBackupJobCanceled
 Canceled ${maintenanceType} backup for directory \"${adDirectory}\".
 ```
 
-Severity | Status | Audit Event | |
-
-|          |              |        |
-| -------- | ------------ | ------ |
-| **Info** | **Canceled** | **No** |
+| Severity | Status       | Audit Event |
+| -------- | ------------ | ----------- |
+| **Info** | **Canceled** | **No**      |
 
 AzureADBackupJobCanceling
 
@@ -400,11 +336,9 @@ AzureADBackupJobCanceling
 Canceling ${maintenanceType} backup for directory \"${adDirectory}\".
 ```
 
-Severity | Status | Audit Event | |
-
-|          |               |        |
-| -------- | ------------- | ------ |
-| **Info** | **Canceling** | **No** |
+| Severity | Status        | Audit Event |
+| -------- | ------------- | ----------- |
+| **Info** | **Canceling** | **No**      |
 
 AzureADBackupJobDeltaStageProgress
 
@@ -412,11 +346,9 @@ AzureADBackupJobDeltaStageProgress
 Detected ${totalObjectsToUpdate} modified objects.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Running** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Running** | **No**      |
 
 AzureADBackupJobFailed
 
@@ -424,11 +356,9 @@ AzureADBackupJobFailed
 Unable to create ${maintenanceType} backup for directory  \"${adDirectory}\". Reason: ${reason}. ${remedy}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Failure** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **No**      |
 
 AzureADBackupJobFetchStageProgress
 
@@ -436,11 +366,9 @@ AzureADBackupJobFetchStageProgress
 Completed backup of ${numObjectsUpdated} objects out of  ${totalObjectsToUpdate} modified objects. Progress:  ${progressPercent}%%
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Running** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Running** | **No**      |
 
 AzureADBackupJobQueued
 
@@ -448,11 +376,9 @@ AzureADBackupJobQueued
 Queued ${maintenanceType} backup for directory \"${adDirectory}\".
 ```
 
-Severity | Status | Audit Event | |
-
-|          |            |        |
-| -------- | ---------- | ------ |
-| **Info** | **Queued** | **No** |
+| Severity | Status     | Audit Event |
+| -------- | ---------- | ----------- |
+| **Info** | **Queued** | **No**      |
 
 AzureADBackupJobStarted
 
@@ -460,11 +386,9 @@ AzureADBackupJobStarted
 Started ${maintenanceType} backup for directory \"${adDirectory}\".
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 AzureADBackupJobSucceeded
 
@@ -472,11 +396,9 @@ AzureADBackupJobSucceeded
 Successfully created ${maintenanceType} backup for directory  \"${adDirectory}\".
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 AzureADBackupJobSucceededWithWarnings
 
@@ -484,11 +406,9 @@ AzureADBackupJobSucceededWithWarnings
 Successfully created ${maintenanceType} backup for directory  \"${adDirectory}\" with warnings. Warnings: ${warnings}.
 ```
 
-Severity | Status | Audit Event | |
-
-|             |                    |        |
-| ----------- | ------------------ | ------ |
-| **Warning** | **PartialSuccess** | **No** |
+| Severity    | Status             | Audit Event |
+| ----------- | ------------------ | ----------- |
+| **Warning** | **PartialSuccess** | **No**      |
 
 AzureADBackupJobZeusEntityCompleted
 
@@ -496,11 +416,9 @@ AzureADBackupJobZeusEntityCompleted
 Completed backup of ${numOfObjects} ${entityPluralName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 AzureADBackupJobZeusEntityProgress
 
@@ -508,11 +426,9 @@ AzureADBackupJobZeusEntityProgress
 Running backup of ${entityPluralName}. Processed ${numOfObjects}  objects.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Running** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Running** | **No**      |
 
 AzureADBackupPerformTaskStarted
 
@@ -520,11 +436,9 @@ AzureADBackupPerformTaskStarted
 Started backup of ${types}. ${additionalInfo}
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 AzureAdFirstZeusBackup
 
@@ -532,11 +446,9 @@ AzureAdFirstZeusBackup
 Due to an upgrade, this backup task will take a full backup of the directory. This may take longer than usual.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 ## azurenative
 
@@ -548,11 +460,9 @@ AzureNativeBackupSQLDatabaseBackupTaskFailed
 Failed to sync backups of all databases in ${serverDisplayName}. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|             |                 |        |
-| ----------- | --------------- | ------ |
-| **Warning** | **TaskFailure** | **No** |
+| Severity    | Status          | Audit Event |
+| ----------- | --------------- | ----------- |
+| **Warning** | **TaskFailure** | **No**      |
 
 AzureNativeBackupSQLDatabaseBackupTaskStarted
 
@@ -560,11 +470,9 @@ AzureNativeBackupSQLDatabaseBackupTaskStarted
 Started syncing backups of all databases in ${serverDisplayName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Running** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Running** | **No**      |
 
 AzureNativeBackupSQLDatabaseBackupTaskSuccess
 
@@ -572,11 +480,9 @@ AzureNativeBackupSQLDatabaseBackupTaskSuccess
 Successfully synced backups of all databases in ${serverDisplayName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskFailure** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskFailure** | **No**      |
 
 AzureNativeBackupSQLDatabaseJobCanceled
 
@@ -584,11 +490,9 @@ AzureNativeBackupSQLDatabaseJobCanceled
 Canceled syncing backups and SLAs of databases in the ${serverDisplayName} ${serverTypeDisplayName} in the ${resGroupDisplayName} resource group in the ${subscriptionDisplayName} subscription.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |              |        |
-| -------- | ------------ | ------ |
-| **Info** | **Canceled** | **No** |
+| Severity | Status       | Audit Event |
+| -------- | ------------ | ----------- |
+| **Info** | **Canceled** | **No**      |
 
 AzureNativeBackupSQLDatabaseJobCanceling
 
@@ -596,11 +500,9 @@ AzureNativeBackupSQLDatabaseJobCanceling
 Canceling sync of backups and SLAs of databases in the ${serverDisplayName} ${serverTypeDisplayName} in the ${resGroupDisplayName} resource group in the ${subscriptionDisplayName} subscription.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |               |        |
-| -------- | ------------- | ------ |
-| **Info** | **Canceling** | **No** |
+| Severity | Status        | Audit Event |
+| -------- | ------------- | ----------- |
+| **Info** | **Canceling** | **No**      |
 
 AzureNativeBackupSQLDatabaseJobFailed
 
@@ -608,11 +510,9 @@ AzureNativeBackupSQLDatabaseJobFailed
 Failed to sync backups and SLAs of databases in the ${serverDisplayName} ${serverTypeDisplayName} in the ${resGroupDisplayName} resource group in the ${subscriptionDisplayName} subscription. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Failure** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **No**      |
 
 AzureNativeBackupSQLDatabaseJobStarted
 
@@ -620,11 +520,9 @@ AzureNativeBackupSQLDatabaseJobStarted
 Started syncing backups and SLAs of databases in the ${serverDisplayName} ${serverTypeDisplayName} in the ${resGroupDisplayName} resource group in the ${subscriptionDisplayName} subscription.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 AzureNativeBackupSQLDatabaseJobSucceeded
 
@@ -632,11 +530,9 @@ AzureNativeBackupSQLDatabaseJobSucceeded
 Successfully synced backup and SLAs of databases in the ${serverDisplayName} ${serverTypeDisplayName} in the ${resGroupDisplayName} resource group in the ${subscriptionDisplayName} subscription.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 AzureNativeCreateDiskSnapshotJobCanceled
 
@@ -644,11 +540,9 @@ AzureNativeCreateDiskSnapshotJobCanceled
 Canceled ${maintenanceType} snapshot of the ${diskDisplayName} disk in the ${resGroupDisplayName} resource group in the ${subscriptionDisplayName} subscription. This can happen if the disk became unprotected, or was deleted.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |              |        |
-| -------- | ------------ | ------ |
-| **Info** | **Canceled** | **No** |
+| Severity | Status       | Audit Event |
+| -------- | ------------ | ----------- |
+| **Info** | **Canceled** | **No**      |
 
 AzureNativeCreateDiskSnapshotJobCanceling
 
@@ -656,11 +550,9 @@ AzureNativeCreateDiskSnapshotJobCanceling
 Canceling ${maintenanceType} snapshot of the ${diskDisplayName} disk in the ${resGroupDisplayName} resource group in the ${subscriptionDisplayName} subscription.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |               |        |
-| -------- | ------------- | ------ |
-| **Info** | **Canceling** | **No** |
+| Severity | Status        | Audit Event |
+| -------- | ------------- | ----------- |
+| **Info** | **Canceling** | **No**      |
 
 AzureNativeCreateDiskSnapshotJobFailed
 
@@ -668,11 +560,9 @@ AzureNativeCreateDiskSnapshotJobFailed
 Failed to create ${maintenanceType} snapshot of the ${diskDisplayName} disk in the ${resGroupDisplayName} resource group in the ${subscriptionDisplayName} subscription. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Failure** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **No**      |
 
 AzureNativeCreateDiskSnapshotJobStarted
 
@@ -680,11 +570,9 @@ AzureNativeCreateDiskSnapshotJobStarted
 Started ${maintenanceType} snapshot of the ${diskDisplayName} disk in the ${resGroupDisplayName} resource group in the ${subscriptionDisplayName} subscription.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 AzureNativeCreateDiskSnapshotJobSucceeded
 
@@ -692,11 +580,9 @@ AzureNativeCreateDiskSnapshotJobSucceeded
 Successfully created ${maintenanceType} snapshot of the ${diskDisplayName} disk in the ${resGroupDisplayName} resource group in the ${subscriptionDisplayName} subscription.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 AzureNativeCreateVMSnapshotJobCanceled
 
@@ -704,11 +590,9 @@ AzureNativeCreateVMSnapshotJobCanceled
 Canceled ${maintenanceType} snapshot of the ${vmDisplayName} virtual machine in the ${resGroupDisplayName} resource group in the ${subscriptionDisplayName} subscription. This can happen if the virtual machine became unprotected, or was deleted.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |              |        |
-| -------- | ------------ | ------ |
-| **Info** | **Canceled** | **No** |
+| Severity | Status       | Audit Event |
+| -------- | ------------ | ----------- |
+| **Info** | **Canceled** | **No**      |
 
 AzureNativeCreateVMSnapshotJobCanceling
 
@@ -716,11 +600,9 @@ AzureNativeCreateVMSnapshotJobCanceling
 Canceling ${maintenanceType} snapshot of the ${vmDisplayName} virtual machine in the ${resGroupDisplayName} resource group in the ${subscriptionDisplayName} subscription.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |               |        |
-| -------- | ------------- | ------ |
-| **Info** | **Canceling** | **No** |
+| Severity | Status        | Audit Event |
+| -------- | ------------- | ----------- |
+| **Info** | **Canceling** | **No**      |
 
 AzureNativeCreateVMSnapshotJobFailed
 
@@ -728,11 +610,9 @@ AzureNativeCreateVMSnapshotJobFailed
 Failed to create ${maintenanceType} snapshot of the ${vmDisplayName} virtual machine in the ${resGroupDisplayName} resource group in the ${subscriptionDisplayName} subscription. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Failure** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **No**      |
 
 AzureNativeCreateVMSnapshotJobSnapshotSkipped
 
@@ -740,11 +620,9 @@ AzureNativeCreateVMSnapshotJobSnapshotSkipped
 Failed to create ${maintenanceType} ${snapshotLevelText} snapshot of the ${vmDisplayName} virtual machine. Snapshot is cancelled. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Failure** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **No**      |
 
 AzureNativeCreateVMSnapshotJobStarted
 
@@ -752,11 +630,9 @@ AzureNativeCreateVMSnapshotJobStarted
 Started ${maintenanceType} snapshot of the ${vmDisplayName} virtual machine in the ${resGroupDisplayName} resource group in the ${subscriptionDisplayName} subscription.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 AzureNativeCreateVMSnapshotJobSucceeded
 
@@ -764,11 +640,9 @@ AzureNativeCreateVMSnapshotJobSucceeded
 Successfully created ${maintenanceType} snapshot of the ${vmDisplayName} virtual machine in the ${resGroupDisplayName} resource group in the ${subscriptionDisplayName} subscription.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 AzureNativeCreateVMSnapshotTaskFailed
 
@@ -776,11 +650,9 @@ AzureNativeCreateVMSnapshotTaskFailed
 Failed to take ${snapshotLevelText} snapshot of the ${vmDisplayName} virtual machine. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |                 |        |
-| ------------ | --------------- | ------ |
-| **Critical** | **TaskFailure** | **No** |
+| Severity     | Status          | Audit Event |
+| ------------ | --------------- | ----------- |
+| **Critical** | **TaskFailure** | **No**      |
 
 AzureNativeCreateVMSnapshotTaskPostScriptFailed
 
@@ -788,11 +660,9 @@ AzureNativeCreateVMSnapshotTaskPostScriptFailed
 An application consistent snapshot of the ${vmDisplayName} was successfully created but the post script ${postScriptPath} failed on the virtual machine. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |                 |        |
-| ------------ | --------------- | ------ |
-| **Critical** | **TaskFailure** | **No** |
+| Severity     | Status          | Audit Event |
+| ------------ | --------------- | ----------- |
+| **Critical** | **TaskFailure** | **No**      |
 
 AzureNativeCreateVMSnapshotTaskStarted
 
@@ -800,11 +670,9 @@ AzureNativeCreateVMSnapshotTaskStarted
 Creating ${snapshotLevelText} snapshot of the ${vmDisplayName} virtual machine.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 AzureNativeCreateVMSnapshotTaskSucceeded
 
@@ -812,11 +680,9 @@ AzureNativeCreateVMSnapshotTaskSucceeded
 Successfully created ${snapshotLevelText} snapshot of the ${vmDisplayName} virtual machine.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 AzureNativeCreateVMSnapshotTaskWarning
 
@@ -824,11 +690,9 @@ AzureNativeCreateVMSnapshotTaskWarning
 Failed to take ${snapshotLevelText} snapshot of the ${vmDisplayName} virtual machine. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|             |                 |        |
-| ----------- | --------------- | ------ |
-| **Warning** | **TaskFailure** | **No** |
+| Severity    | Status          | Audit Event |
+| ----------- | --------------- | ----------- |
+| **Warning** | **TaskFailure** | **No**      |
 
 AzureNativeDBLTRSnapshotExpiryTaskFailed
 
@@ -836,11 +700,9 @@ AzureNativeDBLTRSnapshotExpiryTaskFailed
 Failed to sync LTR backups for all databases in server ${serverDisplayName}. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|             |                 |        |
-| ----------- | --------------- | ------ |
-| **Warning** | **TaskFailure** | **No** |
+| Severity    | Status          | Audit Event |
+| ----------- | --------------- | ----------- |
+| **Warning** | **TaskFailure** | **No**      |
 
 AzureNativeDBLTRSnapshotExpiryTaskStarted
 
@@ -848,11 +710,9 @@ AzureNativeDBLTRSnapshotExpiryTaskStarted
 Started syncing LTR backups for all databases in server ${serverDisplayName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Running** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Running** | **No**      |
 
 AzureNativeDBLTRSnapshotExpiryTaskSucceeded
 
@@ -860,11 +720,9 @@ AzureNativeDBLTRSnapshotExpiryTaskSucceeded
 Successfully synced LTR backups for all databases in server ${serverDisplayName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 AzureNativeGetDisksToExcludeTaskSucceeded
 
@@ -872,11 +730,9 @@ AzureNativeGetDisksToExcludeTaskSucceeded
 The following disk(s) are being excluded from the snapshot of ${vmDisplayName}: ${dataDisksToExclude}. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 AzureNativeSyncSLATaskFailed
 
@@ -884,11 +740,9 @@ AzureNativeSyncSLATaskFailed
 Failed to sync SLAs of all databases in server ${serverDisplayName}. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|             |                 |        |
-| ----------- | --------------- | ------ |
-| **Warning** | **TaskFailure** | **No** |
+| Severity    | Status          | Audit Event |
+| ----------- | --------------- | ----------- |
+| **Warning** | **TaskFailure** | **No**      |
 
 AzureNativeSyncSLATaskStarted
 
@@ -896,11 +750,9 @@ AzureNativeSyncSLATaskStarted
 Started syncing SLAs of all databases in server ${serverDisplayName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Running** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Running** | **No**      |
 
 AzureNativeSyncSLATaskSucceeded
 
@@ -908,11 +760,9 @@ AzureNativeSyncSLATaskSucceeded
 Successfully synced SLA of databases ${databasesList} in server ${serverDisplayName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskFailure** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskFailure** | **No**      |
 
 AzureNativeSyncSLATaskSucceededWithBestEffortFailures
 
@@ -920,11 +770,9 @@ AzureNativeSyncSLATaskSucceededWithBestEffortFailures
 Failed to sync SLA of databases ${databasesList} in server ${serverDisplayName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|             |                 |        |
-| ----------- | --------------- | ------ |
-| **Warning** | **TaskFailure** | **No** |
+| Severity    | Status          | Audit Event |
+| ----------- | --------------- | ----------- |
+| **Warning** | **TaskFailure** | **No**      |
 
 AzureNativeSyncSLATaskSucceededWithFailuresAndInvalidSLAErrors
 
@@ -932,11 +780,9 @@ AzureNativeSyncSLATaskSucceededWithFailuresAndInvalidSLAErrors
 Failed to sync SLA of databases ${databasesList} in server ${serverDisplayName}. The databases ${dbsWithInvalidSLA} have an invalid SLA assigned.
 ```
 
-Severity | Status | Audit Event | |
-
-|             |                 |        |
-| ----------- | --------------- | ------ |
-| **Warning** | **TaskFailure** | **No** |
+| Severity    | Status          | Audit Event |
+| ----------- | --------------- | ----------- |
+| **Warning** | **TaskFailure** | **No**      |
 
 ## backup
 
@@ -948,11 +794,9 @@ BackupFailureRemediationNow
 User ${username} started retry jobs for ${numberOfJobs} failed or cancelled jobs. Retry is scheduled to run immediately.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 BackupFailureRemediationSLAWindow
 
@@ -960,11 +804,9 @@ BackupFailureRemediationSLAWindow
 User ${username} started retry jobs for ${numberOfJobs} failed or cancelled jobs. Retry is scheduled to run as per configured snapshot window in the effective SLA Domain protecting the objects.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 ## cloudnative
 
@@ -976,11 +818,9 @@ CloudNativeBackupJobCanceled
 Canceled ${maintenanceType} snapshot of the ${qualifiedSnappableDisplayText}. This can happen if the object became unprotected, or was deleted.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |              |        |
-| -------- | ------------ | ------ |
-| **Info** | **Canceled** | **No** |
+| Severity | Status       | Audit Event |
+| -------- | ------------ | ----------- |
+| **Info** | **Canceled** | **No**      |
 
 CloudNativeBackupJobCanceling
 
@@ -988,11 +828,9 @@ CloudNativeBackupJobCanceling
 Canceling ${maintenanceType} snapshot of the ${qualifiedSnappableDisplayText}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |               |        |
-| -------- | ------------- | ------ |
-| **Info** | **Canceling** | **No** |
+| Severity | Status        | Audit Event |
+| -------- | ------------- | ----------- |
+| **Info** | **Canceling** | **No**      |
 
 CloudNativeBackupJobCreateSnapshotTaskFailed
 
@@ -1000,11 +838,9 @@ CloudNativeBackupJobCreateSnapshotTaskFailed
 Unable to create the snapshot.
 ```
 
-Severity | Status | Audit Event | |
-
-|             |                 |        |
-| ----------- | --------------- | ------ |
-| **Warning** | **TaskFailure** | **No** |
+| Severity    | Status          | Audit Event |
+| ----------- | --------------- | ----------- |
+| **Warning** | **TaskFailure** | **No**      |
 
 CloudNativeBackupJobCreateSnapshotTaskStarted
 
@@ -1012,11 +848,9 @@ CloudNativeBackupJobCreateSnapshotTaskStarted
 Snapshot creation is in progress.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Running** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Running** | **No**      |
 
 CloudNativeBackupJobCreateSnapshotTaskSucceeded
 
@@ -1024,11 +858,9 @@ CloudNativeBackupJobCreateSnapshotTaskSucceeded
 Snapshot created successfully.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 CloudNativeBackupJobFailed
 
@@ -1036,11 +868,9 @@ CloudNativeBackupJobFailed
 Failed to create ${maintenanceType} snapshot of the ${qualifiedSnappableDisplayText}. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Failure** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **No**      |
 
 CloudNativeBackupJobQueued
 
@@ -1048,11 +878,9 @@ CloudNativeBackupJobQueued
 Queued ${maintenanceType} snapshot of the ${qualifiedSnappableDisplayText}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |            |        |
-| -------- | ---------- | ------ |
-| **Info** | **Queued** | **No** |
+| Severity | Status     | Audit Event |
+| -------- | ---------- | ----------- |
+| **Info** | **Queued** | **No**      |
 
 CloudNativeBackupJobStarted
 
@@ -1060,11 +888,9 @@ CloudNativeBackupJobStarted
 ${userEmail} started snapshot of the ${qualifiedSnappableDisplayText}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 CloudNativeBackupJobStarted
 
@@ -1072,11 +898,9 @@ CloudNativeBackupJobStarted
 Started ${maintenanceType} snapshot of the ${qualifiedSnappableDisplayText}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 CloudNativeBackupJobStartFailed
 
@@ -1084,11 +908,9 @@ CloudNativeBackupJobStartFailed
 ${userEmail} failed to start snapshot of the ${qualifiedSnappableDisplayText}. Failure reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |         |
-| ------------ | ----------- | ------- |
-| **Critical** | **Failure** | **Yes** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **Yes**     |
 
 CloudNativeBackupJobSucceeded
 
@@ -1096,11 +918,9 @@ CloudNativeBackupJobSucceeded
 Successfully created ${maintenanceType} snapshot of the ${qualifiedSnappableDisplayText}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 CloudNativeBigBucketGeneratingInventoryReport
 
@@ -1108,11 +928,9 @@ CloudNativeBigBucketGeneratingInventoryReport
 The inventory report for ${qualifiedSnappableDisplayText} is currently being generated. The process typically takes up to 48 hours, depending on the size of the bucket.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 CloudNativeBigBucketGeneratingInventoryReportFailed
 
@@ -1120,11 +938,9 @@ CloudNativeBigBucketGeneratingInventoryReportFailed
 Failed to generate inventory report for ${qualifiedSnappableDisplayText}. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Failure** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **No**      |
 
 CloudNativeBigBucketGeneratingInventoryReportSucceeded
 
@@ -1132,11 +948,9 @@ CloudNativeBigBucketGeneratingInventoryReportSucceeded
 Inventory report generated for ${qualifiedSnappableDisplayText}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 CloudNativeBigBucketOnboardingJobFailed
 
@@ -1144,11 +958,9 @@ CloudNativeBigBucketOnboardingJobFailed
 Failed to onboard ${qualifiedSnappableDisplayText}. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Failure** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **No**      |
 
 CloudNativeBigBucketOnboardingJobStarted
 
@@ -1156,11 +968,9 @@ CloudNativeBigBucketOnboardingJobStarted
 Big bucket onboarding job started for ${qualifiedSnappableDisplayText}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 CloudNativeBigBucketOnboardingJobSucceeded
 
@@ -1168,11 +978,9 @@ CloudNativeBigBucketOnboardingJobSucceeded
 Successfully onboarded the ${qualifiedSnappableDisplayText}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 CloudNativePublishObjectStoreBackupInfo
 
@@ -1180,11 +988,9 @@ CloudNativePublishObjectStoreBackupInfo
 Total object count: ${total}, Backed up: ${backedup}, Unchanged objects: ${unchanged}, Failed: ${failed}. Unsupported objects: ${unsupported}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 CloudNativePublishObjectStoreBackupProgress
 
@@ -1192,11 +998,9 @@ CloudNativePublishObjectStoreBackupProgress
 Backup is in Progress: Total object count: ${total}, Backed up: ${backedup}, Unchanged objects: ${unchanged}, Failed: ${failed}. Unsupported objects: ${unsupported}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Running** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Running** | **No**      |
 
 CloudNativePublishObjectStoreBackupWarning
 
@@ -1204,11 +1008,9 @@ CloudNativePublishObjectStoreBackupWarning
 Backup Completed with warning: Total object count: ${total}, Backed up: ${backedup}, Unchanged objects: ${unchanged}, Failed: ${failed}, Unsupported objects: ${unsupported}.
 ```
 
-Severity | Status | Audit Event | |
-
-|             |             |        |
-| ----------- | ----------- | ------ |
-| **Warning** | **Success** | **No** |
+| Severity    | Status      | Audit Event |
+| ----------- | ----------- | ----------- |
+| **Warning** | **Success** | **No**      |
 
 CloudNativeSnapshotGCFailed
 
@@ -1216,11 +1018,9 @@ CloudNativeSnapshotGCFailed
 Rubrik Security Cloud encountered an issue while attempting to clean up stale snapshots for ${snappableType} snappables. Reason: ${reportURL}
 ```
 
-Severity | Status | Audit Event | |
-
-|             |                    |        |
-| ----------- | ------------------ | ------ |
-| **Warning** | **PartialSuccess** | **No** |
+| Severity    | Status             | Audit Event |
+| ----------- | ------------------ | ----------- |
+| **Warning** | **PartialSuccess** | **No**      |
 
 CloudNativeSnapshotGCSucceeded
 
@@ -1228,11 +1028,9 @@ CloudNativeSnapshotGCSucceeded
 Successfully deleted stale snapshots for ${snappableType} snappables.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 CloudNativeTempDatabaseCreation
 
@@ -1240,11 +1038,9 @@ CloudNativeTempDatabaseCreation
 Creating temporary database.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Running** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Running** | **No**      |
 
 CloudNativeTempDatabaseCreationFailed
 
@@ -1252,11 +1048,9 @@ CloudNativeTempDatabaseCreationFailed
 Failed to create temporary database.
 ```
 
-Severity | Status | Audit Event | |
-
-|             |                 |        |
-| ----------- | --------------- | ------ |
-| **Warning** | **TaskFailure** | **No** |
+| Severity    | Status          | Audit Event |
+| ----------- | --------------- | ----------- |
+| **Warning** | **TaskFailure** | **No**      |
 
 CloudNativeTempDatabaseCreationSucceeded
 
@@ -1264,11 +1058,9 @@ CloudNativeTempDatabaseCreationSucceeded
 Successfully created temporary database.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 CloudNativeTempDatabaseWaitingFailed
 
@@ -1276,11 +1068,9 @@ CloudNativeTempDatabaseWaitingFailed
 Failed to wait for temporary database creation.
 ```
 
-Severity | Status | Audit Event | |
-
-|             |                 |        |
-| ----------- | --------------- | ------ |
-| **Warning** | **TaskFailure** | **No** |
+| Severity    | Status          | Audit Event |
+| ----------- | --------------- | ----------- |
+| **Warning** | **TaskFailure** | **No**      |
 
 ## common
 
@@ -1292,11 +1082,9 @@ DeleteSnapshot
 ${username} deleted snapshot ${snapshotId} of '${vmName}'
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 DeleteSnapshotFailed
 
@@ -1304,11 +1092,9 @@ DeleteSnapshotFailed
 ${username} failed to delete a snapshot ${snapshotId} of '${vmName}'. Failure reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 OnDemandBackupStarted
 
@@ -1316,11 +1102,9 @@ OnDemandBackupStarted
 ${username} started a job to create an on-demand backup for ${snappableType} ${snappableName} in ${hierarchyRootType} ${hierarchyRootName}
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 OnDemandBackupStartFailed
 
@@ -1328,11 +1112,9 @@ OnDemandBackupStartFailed
 ${username} failed to start a job to create an on-demand backup for ${snappableType} ${snappableName} in ${hierarchyRootType} ${hierarchyRootName}. Failure reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 ## gcpnative
 
@@ -1344,11 +1126,9 @@ BackupGCPNativeInstanceJobCanceled
 Canceled ${maintenanceType} snapshot of the ${gcpInstanceDisplayName} GCE instance in the ${gcpProjectDisplayName} project. This can happen if the instance became unprotected, or was deleted.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |              |        |
-| -------- | ------------ | ------ |
-| **Info** | **Canceled** | **No** |
+| Severity | Status       | Audit Event |
+| -------- | ------------ | ----------- |
+| **Info** | **Canceled** | **No**      |
 
 BackupGCPNativeInstanceJobCanceling
 
@@ -1356,11 +1136,9 @@ BackupGCPNativeInstanceJobCanceling
 Canceling ${maintenanceType} snapshot of the ${gcpInstanceDisplayName} GCE instance in the ${gcpProjectDisplayName} project.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |               |        |
-| -------- | ------------- | ------ |
-| **Info** | **Canceling** | **No** |
+| Severity | Status        | Audit Event |
+| -------- | ------------- | ----------- |
+| **Info** | **Canceling** | **No**      |
 
 BackupGCPNativeInstanceJobFailed
 
@@ -1368,11 +1146,9 @@ BackupGCPNativeInstanceJobFailed
 Failed to create ${maintenanceType} snapshot of the ${gcpInstanceDisplayName} GCE instance  in the ${gcpProjectDisplayName} project. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Failure** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **No**      |
 
 BackupGCPNativeInstanceJobQueued
 
@@ -1380,11 +1156,9 @@ BackupGCPNativeInstanceJobQueued
 Queued ${maintenanceType} snapshot of the ${gcpInstanceDisplayName} GCE instance in the ${gcpProjectDisplayName} project.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |            |        |
-| -------- | ---------- | ------ |
-| **Info** | **Queued** | **No** |
+| Severity | Status     | Audit Event |
+| -------- | ---------- | ----------- |
+| **Info** | **Queued** | **No**      |
 
 BackupGCPNativeInstanceJobStarted
 
@@ -1392,11 +1166,9 @@ BackupGCPNativeInstanceJobStarted
 Started  ${maintenanceType} snapshot of the ${gcpInstanceDisplayName} GCE instance in the ${gcpProjectDisplayName} project.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 BackupGCPNativeInstanceJobSucceeded
 
@@ -1404,11 +1176,9 @@ BackupGCPNativeInstanceJobSucceeded
 Successfully created ${maintenanceType} snapshot of the ${gcpInstanceDisplayName} GCE instance  in the ${gcpProjectDisplayName} project.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 GCPNativeBackupInstanceJobStarted
 
@@ -1416,11 +1186,9 @@ GCPNativeBackupInstanceJobStarted
 ${userEmail} started snapshot of GCP instance ${gcpInstanceDisplayName} in ${gcpProjectDisplayName} project.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 GCPNativeBackupInstanceJobStartFailed
 
@@ -1428,11 +1196,9 @@ GCPNativeBackupInstanceJobStartFailed
 ${userEmail} failed to start snapshot of GCP instance ${gcpInstanceDisplayName} in ${gcpProjectDisplayName} project. Failure reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |         |
-| ------------ | ----------- | ------- |
-| **Critical** | **Failure** | **Yes** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **Yes**     |
 
 ## kupr
 
@@ -1444,11 +1210,9 @@ KuprBackupCanceled
 Canceled ${maintenanceType} backup of ${user} Kubernetes Namespace ${snappable}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |              |        |
-| -------- | ------------ | ------ |
-| **Info** | **Canceled** | **No** |
+| Severity | Status       | Audit Event |
+| -------- | ------------ | ----------- |
+| **Info** | **Canceled** | **No**      |
 
 KuprBackupCanceling
 
@@ -1456,11 +1220,9 @@ KuprBackupCanceling
 Canceling ${maintenanceType} backup of ${user} Kubernetes Namespace ${snappable}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 KuprBackupCompleted
 
@@ -1468,11 +1230,9 @@ KuprBackupCompleted
 Successfully created ${maintenanceType} snapshot of ${user} Kubernetes Namespace ${snappable}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 KuprBackupFailed
 
@@ -1480,11 +1240,9 @@ KuprBackupFailed
 ${maintenanceType} backup of ${user} Kubernetes Namespace ${snappable} failed. because ${reason}
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Failure** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **No**      |
 
 KuprBackupStarted
 
@@ -1492,11 +1250,9 @@ KuprBackupStarted
 Started ${maintenanceType} backup of ${user} Kubernetes Namespace ${snappable}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 KuprNamespaceFilesetSnapshotTaskFailed
 
@@ -1504,11 +1260,9 @@ KuprNamespaceFilesetSnapshotTaskFailed
 Failed to persist PVC data for namespace ${namespaceName} with namespaceID ${namespaceID} in Kubernetes Cluster ${clusterName} for snapshotID ${snapshotID}. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |                 |        |
-| ------------ | --------------- | ------ |
-| **Critical** | **TaskFailure** | **No** |
+| Severity     | Status          | Audit Event |
+| ------------ | --------------- | ----------- |
+| **Critical** | **TaskFailure** | **No**      |
 
 KuprNamespaceFilesetSnapshotTaskStarted
 
@@ -1516,11 +1270,9 @@ KuprNamespaceFilesetSnapshotTaskStarted
 Started persisting PVC data for namespace ${namespaceName} with namespaceID ${namespaceID} in Kubernetes Cluster ${clusterName} for snapshotID ${snapshotID}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 KuprNamespaceFilesetSnapshotTaskSuccess
 
@@ -1528,11 +1280,9 @@ KuprNamespaceFilesetSnapshotTaskSuccess
 Successfully persisted PVC data for namespace ${namespaceName} with namespaceID ${namespaceID} in Kubernetes Cluster ${clusterName} for snapshotID ${snapshotID}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 KuprNamespaceFilesetSnapshotTaskWarning
 
@@ -1540,11 +1290,9 @@ KuprNamespaceFilesetSnapshotTaskWarning
 Rubrik PersistentVolumeClaim backup failed for ${pvcName} due to ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|             |                 |        |
-| ----------- | --------------- | ------ |
-| **Warning** | **TaskSuccess** | **No** |
+| Severity    | Status          | Audit Event |
+| ----------- | --------------- | ----------- |
+| **Warning** | **TaskSuccess** | **No**      |
 
 KuprNamespaceFilesetSnapshotTaskWarningInconsistentSnapshotMetadata
 
@@ -1552,11 +1300,9 @@ KuprNamespaceFilesetSnapshotTaskWarningInconsistentSnapshotMetadata
 Unexpected failure due to inconsistent configuration. Please contact ${customerService}.
 ```
 
-Severity | Status | Audit Event | |
-
-|             |                 |        |
-| ----------- | --------------- | ------ |
-| **Warning** | **TaskSuccess** | **No** |
+| Severity    | Status          | Audit Event |
+| ----------- | --------------- | ----------- |
+| **Warning** | **TaskSuccess** | **No**      |
 
 KuprNamespaceFilesetSnapshotTaskWarningPVCCountMismatch
 
@@ -1564,11 +1310,9 @@ KuprNamespaceFilesetSnapshotTaskWarningPVCCountMismatch
 Backup of ${missingPVCCount} PVCs failed due to unknown reason.  Identified mismatch in PVC counts.
 ```
 
-Severity | Status | Audit Event | |
-
-|             |                 |        |
-| ----------- | --------------- | ------ |
-| **Warning** | **TaskSuccess** | **No** |
+| Severity    | Status          | Audit Event |
+| ----------- | --------------- | ----------- |
+| **Warning** | **TaskSuccess** | **No**      |
 
 KuprNamespaceResourceSnapshotTaskFailed
 
@@ -1576,11 +1320,9 @@ KuprNamespaceResourceSnapshotTaskFailed
 Failed to collect resource definition(s) for namespace ${namespaceName} with namespaceID ${namespaceID} in Kubernetes Cluster ${clusterName} for snapshotID ${snapshotID}. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |                 |        |
-| ------------ | --------------- | ------ |
-| **Critical** | **TaskFailure** | **No** |
+| Severity     | Status          | Audit Event |
+| ------------ | --------------- | ----------- |
+| **Critical** | **TaskFailure** | **No**      |
 
 KuprNamespaceResourceSnapshotTaskStarted
 
@@ -1588,11 +1330,9 @@ KuprNamespaceResourceSnapshotTaskStarted
 Started collecting resource definition(s) for namespace ${namespaceName} with namespaceID ${namespaceID} in Kubernetes Cluster ${clusterName} for snapshotID ${snapshotID}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 KuprNamespaceResourceSnapshotTaskSuccess
 
@@ -1600,11 +1340,9 @@ KuprNamespaceResourceSnapshotTaskSuccess
 Successfully collected resource definition(s) for namespace ${namespaceName} with namespaceID ${namespaceID} in Kubernetes Cluster ${clusterName} for snapshotID ${snapshotID}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 KuprNamespaceSnapshotCanceled
 
@@ -1612,11 +1350,9 @@ KuprNamespaceSnapshotCanceled
 Canceled ${maintenanceType} snapshot of Kubernetes Namespace ${namespaceName} with namespaceID ${namespaceID} in Cluster ${clusterName} with clusterID ${clusterUUID}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |              |        |
-| -------- | ------------ | ------ |
-| **Info** | **Canceled** | **No** |
+| Severity | Status       | Audit Event |
+| -------- | ------------ | ----------- |
+| **Info** | **Canceled** | **No**      |
 
 KuprNamespaceSnapshotCanceling
 
@@ -1624,11 +1360,9 @@ KuprNamespaceSnapshotCanceling
 Canceling ${maintenanceType} snapshot of Kubernetes Namespace ${namespaceName} with namespaceID ${namespaceID} in Cluster ${clusterName} with clusterID ${clusterUUID}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |               |        |
-| -------- | ------------- | ------ |
-| **Info** | **Canceling** | **No** |
+| Severity | Status        | Audit Event |
+| -------- | ------------- | ----------- |
+| **Info** | **Canceling** | **No**      |
 
 KuprNamespaceSnapshotCompleted
 
@@ -1636,11 +1370,9 @@ KuprNamespaceSnapshotCompleted
 Successfully created ${maintenanceType} snapshot of Kubernetes Namespace ${namespaceName} with namespaceID ${namespaceID} in Cluster ${clusterName} with clusterID ${clusterUUID}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 KuprNamespaceSnapshotFailed
 
@@ -1648,11 +1380,9 @@ KuprNamespaceSnapshotFailed
 ${maintenanceType} snapshot of Kubernetes Namespace ${namespaceName} with namespaceID ${namespaceID} in Cluster ${clusterName} with clusterID ${clusterUUID} failed. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Failure** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **No**      |
 
 KuprNamespaceSnapshotStarted
 
@@ -1660,11 +1390,9 @@ KuprNamespaceSnapshotStarted
 Started ${maintenanceType} snapshot of Kubernetes Namespace ${namespaceName} with namespaceID ${namespaceID} in Cluster ${clusterName} with clusterID ${clusterUUID}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 KuprSkipPVCWarning
 
@@ -1672,11 +1400,9 @@ KuprSkipPVCWarning
 Skipping PersistentVolumeClaim(PVC) ${pvcName}.  This PVC will be restored as an empty PVC during restore.  Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|             |                 |        |
-| ----------- | --------------- | ------ |
-| **Warning** | **TaskSuccess** | **No** |
+| Severity    | Status          | Audit Event |
+| ----------- | --------------- | ----------- |
+| **Warning** | **TaskSuccess** | **No**      |
 
 ## managed_volume
 
@@ -1688,11 +1414,9 @@ V1BeginManagedVolumeSnapshot
 ${username} started the operation to change the Managed Volume '${mv}' state to writable.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 V1BeginManagedVolumeSnapshotFailure
 
@@ -1700,11 +1424,9 @@ V1BeginManagedVolumeSnapshotFailure
 ${username} failed to begin managed volume snapshot for Managed Volume '${mv}'. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 V1EndManagedVolumeSnapshot
 
@@ -1712,11 +1434,9 @@ V1EndManagedVolumeSnapshot
 ${username} started the operation to change the Managed Volume '${mv}' state to read only.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 V1EndManagedVolumeSnapshotFailure
 
@@ -1724,11 +1444,9 @@ V1EndManagedVolumeSnapshotFailure
 ${username} failed to end managed volume snapshot for Managed Volume '${mv}'. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 ## mssql
 
@@ -1740,11 +1458,9 @@ DeleteMssqlDbMountFailed
 ${username} was unable to delete mount '${mountedDbName}, created on MSSQL database '${dbName}', and with ID '${dbId}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 DeleteMssqlDbMountSuccess
 
@@ -1752,11 +1468,9 @@ DeleteMssqlDbMountSuccess
 ${username} successfully deleted mount '${mountedDbName}', created on MSSQL database '${dbName}', and with ID '${dbId}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 MSSQLBatchSnapshotFailed
 
@@ -1764,11 +1478,9 @@ MSSQLBatchSnapshotFailed
 ${username} failed to start a job to take an on-demand snapshot of Microsoft SQL Database '${snappableName}'. Failure reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 MSSQLBatchSnapshotStarted
 
@@ -1776,11 +1488,9 @@ MSSQLBatchSnapshotStarted
 ${username} started a job to take an on-demand snapshot of Microsoft SQL Database '${snappableName}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 OnDemandTransactionLogBackupStarted
 
@@ -1788,11 +1498,9 @@ OnDemandTransactionLogBackupStarted
 ${username} started a job to create an on-demand  transaction log backup for ${snappableType} ${snappableName}  in ${hierarchyRootType} ${hierarchyRootName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 OnDemandTransactionLogBackupStartFailed
 
@@ -1800,11 +1508,9 @@ OnDemandTransactionLogBackupStartFailed
 ${username} was unable to start a job to create an on-demand  transaction log backup for ${snappableType} ${snappableName}  in ${hierarchyRootType} ${hierarchyRootName}.  Failure reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 ## mysqldb_instance
 
@@ -1816,11 +1522,9 @@ CreateOnDemandMysqldbInstanceSnapshotFailure
 ${username} failed to trigger an on-demand snapshot for MySQL instance ${instanceName}. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 CreateOnDemandMysqldbInstanceSnapshotStarted
 
@@ -1828,11 +1532,9 @@ CreateOnDemandMysqldbInstanceSnapshotStarted
 ${username} triggered an on-demand snapshot for MySQL instance ${instanceName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 ## o365
 
@@ -1844,11 +1546,9 @@ O365AllAttachmentDownloaded
 All attachments are downloaded
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 O365BackupAttemptFailed
 
@@ -1856,11 +1556,9 @@ O365BackupAttemptFailed
 Attempted ${maintenanceType} backup of ${user} Microsoft 365 ${snappable}, will retry automatically: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Failure** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **No**      |
 
 O365BackupCanceled
 
@@ -1868,11 +1566,9 @@ O365BackupCanceled
 Canceled ${maintenanceType} backup of ${user} Microsoft 365 ${snappable}
 ```
 
-Severity | Status | Audit Event | |
-
-|          |              |        |
-| -------- | ------------ | ------ |
-| **Info** | **Canceled** | **No** |
+| Severity | Status       | Audit Event |
+| -------- | ------------ | ----------- |
+| **Info** | **Canceled** | **No**      |
 
 O365BackupCanceling
 
@@ -1880,11 +1576,9 @@ O365BackupCanceling
 Canceling ${maintenanceType} backup of ${user} Microsoft 365 ${snappable}
 ```
 
-Severity | Status | Audit Event | |
-
-|          |               |        |
-| -------- | ------------- | ------ |
-| **Info** | **Canceling** | **No** |
+| Severity | Status        | Audit Event |
+| -------- | ------------- | ----------- |
+| **Info** | **Canceling** | **No**      |
 
 O365BackupCannotBeInitiated
 
@@ -1892,11 +1586,9 @@ O365BackupCannotBeInitiated
 Backup cannot be initiated for ${objectName} Microsoft ${snappable}. Reason: ${reason}
 ```
 
-Severity | Status | Audit Event | |
-
-|             |              |        |
-| ----------- | ------------ | ------ |
-| **Warning** | **Canceled** | **No** |
+| Severity    | Status       | Audit Event |
+| ----------- | ------------ | ----------- |
+| **Warning** | **Canceled** | **No**      |
 
 O365BackupCompleted
 
@@ -1904,11 +1596,9 @@ O365BackupCompleted
 Successfully created ${maintenanceType} snapshot of ${user} Microsoft 365 ${snappable}
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 O365BackupCompletedObjectArchived
 
@@ -1916,11 +1606,9 @@ O365BackupCompletedObjectArchived
 The ${objectType} is no longer active and has been archived.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 O365BackupCompletedObjectDisabled
 
@@ -1928,11 +1616,9 @@ O365BackupCompletedObjectDisabled
 The ${objectType} has been disabled due to ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 O365BackupCompletedTeamArchived
 
@@ -1940,11 +1626,9 @@ O365BackupCompletedTeamArchived
 The team is no longer active and has been archived.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 O365BackupFailed
 
@@ -1952,11 +1636,9 @@ O365BackupFailed
 ${maintenanceType} backup of ${user} Microsoft 365 ${snappable} failed because ${reason}
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Failure** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **No**      |
 
 O365BackupFailedMailboxArchived
 
@@ -1964,11 +1646,9 @@ O365BackupFailedMailboxArchived
 Mailbox ${reason}. It is being archived.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 O365BackupFetchDataCompleted
 
@@ -1976,11 +1656,9 @@ O365BackupFetchDataCompleted
 Successfully fetched Microsoft 365 ${snappable} data from Microsoft
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 O365BackupFetchDataFailed
 
@@ -1988,11 +1666,9 @@ O365BackupFetchDataFailed
 Failed to fetch Microsoft 365 ${snappable} data from Microsoft. Reason: ${reason}
 ```
 
-Severity | Status | Audit Event | |
-
-|             |                 |        |
-| ----------- | --------------- | ------ |
-| **Warning** | **TaskFailure** | **No** |
+| Severity    | Status          | Audit Event |
+| ----------- | --------------- | ----------- |
+| **Warning** | **TaskFailure** | **No**      |
 
 O365BackupFetchDataRunning
 
@@ -2000,11 +1676,9 @@ O365BackupFetchDataRunning
 Fetching Microsoft 365 ${snappable} data from Microsoft
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Running** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Running** | **No**      |
 
 O365BackupStarted
 
@@ -2012,11 +1686,9 @@ O365BackupStarted
 ${userID} started backup of Microsoft 365 ${snappableType} of ${snappableName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 O365BackupStarted
 
@@ -2024,11 +1696,9 @@ O365BackupStarted
 Started ${maintenanceType} backup of ${user} Microsoft 365 ${snappable}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 O365BackupStartFailed
 
@@ -2036,11 +1706,9 @@ O365BackupStartFailed
 ${userID} failed to start on demand backup of Microsoft 365 ${snappableType} of ${snappableName}. Failure reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |         |
-| ------------ | ----------- | ------- |
-| **Critical** | **Failure** | **Yes** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **Yes**     |
 
 O365DeleteArtifactsStarted
 
@@ -2048,11 +1716,9 @@ O365DeleteArtifactsStarted
 Started deletion of temporary snapshot state for ${user}
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 O365DeleteArtifactsSucceeded
 
@@ -2060,11 +1726,9 @@ O365DeleteArtifactsSucceeded
 Successfully deleted temporary snapshot state of ${user}
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 O365ExchangeBackupCompleted
 
@@ -2072,11 +1736,9 @@ O365ExchangeBackupCompleted
 Successfully created ${maintenanceType} snapshot of ${user} Microsoft 365 ${snappable}. Folders ingested: ${foldersIngested}. Emails ingested: ${emailsIngested}. Emails skipped: ${emailsSkipped}. Calendar events ingested: ${eventsIngested}. Calendar events skipped:  ${eventsSkipped}. Attachments ingested: ${attachmentsIngested}. Attachments skipped:  ${attachmentsSkipped}. Items deleted: ${itemsDeleted}. Items found in sync but not modified since last snapshot: ${unchangedItemCount}. Attachments found in sync but not modified since last snapshot: ${unchangedAttachmentCount}. Bytes ingested: ${bytesIngested}. Bytes stored: ${bytesStored}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 O365ExchangeBackupCompletedWithWarnings
 
@@ -2084,11 +1746,9 @@ O365ExchangeBackupCompletedWithWarnings
 Completed backup with warnings. Created ${maintenanceType} snapshot of ${user} Microsoft 365 ${snappable}. Folders ingested: ${foldersIngested}. Emails ingested: ${emailsIngested}. Emails skipped: ${emailsSkipped}. Calendar events ingested: ${eventsIngested}. Calendar events skipped: ${eventsSkipped}. Contacts ingested: ${contactsIngested}. Attachments ingested: ${attachmentsIngested}. Attachments skipped: ${attachmentsSkipped}. Items deleted: ${itemsDeleted}. Items found in sync but not modified since last snapshot:  ${unchangedItemCount}. Attachments found in sync but not modified since last snapshot: ${unchangedAttachmentCount}. Bytes ingested: ${bytesIngested}.  Bytes stored: ${bytesStored}. ${reasonsForWarningEvent}.
 ```
 
-Severity | Status | Audit Event | |
-
-|             |                    |        |
-| ----------- | ------------------ | ------ |
-| **Warning** | **PartialSuccess** | **No** |
+| Severity    | Status             | Audit Event |
+| ----------- | ------------------ | ----------- |
+| **Warning** | **PartialSuccess** | **No**      |
 
 O365ExchangeBackupProgress
 
@@ -2096,11 +1756,9 @@ O365ExchangeBackupProgress
 Backup job in progress. In the last ${progressInterval},  synced ${itemsSyncedInInterval} items,  which ${unchangedItemsInInterval} have not changed since last  snapshot. Ingested ${itemsIngestedInInterval} items (${bytesIngested})  in this interval, and in total,  ${itemsIngested} items (${bytesIngestedTotal}) in the current job.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Running** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Running** | **No**      |
 
 O365ExchangeBackupWithContactsCompleted
 
@@ -2108,11 +1766,9 @@ O365ExchangeBackupWithContactsCompleted
 Successfully created ${maintenanceType} snapshot of ${user} Microsoft 365 ${snappable}. Folders ingested: ${foldersIngested}. Emails ingested: ${emailsIngested}. Emails skipped: ${emailsSkipped}. Calendar events ingested: ${eventsIngested}. Calendar events skipped:  ${eventsSkipped}. Contacts ingested: ${contactsIngested}. Attachments ingested: ${attachmentsIngested}. Attachments skipped:  ${attachmentsSkipped}. Items deleted: ${itemsDeleted}. Bytes ingested: ${bytesIngested}. Bytes stored: ${bytesStored}. Items found in sync but not modified since last snapshot:  ${unchangedItemCount}. Attachments found in sync but not modified since last snapshot: ${unchangedAttachmentCount}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 O365FullBackupLogMailMetrics
 
@@ -2120,11 +1776,9 @@ O365FullBackupLogMailMetrics
 Stored ${numMailChanges} message(s) as a ${sizeIngested} snapshot
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 O365IncrementalBackupLogMailMetrics
 
@@ -2132,11 +1786,9 @@ O365IncrementalBackupLogMailMetrics
 Stored ${numMailChanges} message change(s) as a ${sizeIngested} snapshot
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 O365LogAttachmentMetrics
 
@@ -2144,11 +1796,9 @@ O365LogAttachmentMetrics
 Downloaded ${numAttachments} attachment(s) (${numDeduped} deduplicated), for total of ${sizeIngested}
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 O365LogAttachmentStorageMetrics
 
@@ -2156,11 +1806,9 @@ O365LogAttachmentStorageMetrics
 Downloaded ${numAttachments} attachment(s). Stored ${numStored} (${numDeduped} deduplicated) for total of ${attachmentsStoredSize}
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 O365LogIncrementalMailboxSize
 
@@ -2168,11 +1816,9 @@ O365LogIncrementalMailboxSize
 Taking incremental snapshot of mailbox, with full size of approximately ${mailboxSize} on Microsoft 365
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 O365LogMailboxSize
 
@@ -2180,11 +1826,9 @@ O365LogMailboxSize
 Taking full snapshot of mailbox, approximately sized at ${mailboxSize} on Microsoft 365
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 O365LogMailMetrics
 
@@ -2192,11 +1836,9 @@ O365LogMailMetrics
 Stored ${numMailChanges} mail changes, with ${sizeIngested} of mail downloaded
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 O365LogNoAttachments
 
@@ -2204,11 +1846,9 @@ O365LogNoAttachments
 No attachments downloaded
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 O365LogTemporaryBackupStorage
 
@@ -2216,11 +1856,9 @@ O365LogTemporaryBackupStorage
 Used ${temporaryStorageSize} of temporary Azure Blob storage
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 O365OnedriveBackupCompleted
 
@@ -2228,11 +1866,9 @@ O365OnedriveBackupCompleted
 Successfully created ${maintenanceType} snapshot of ${user} Microsoft 365 ${snappable}. Folders ingested ${folderCount}. Files ingested ${fileCount}. Files skipped ${skipCount}. Items deleted ${deletedCount}. Bytes ingested ${bytesIngested}. Bytes stored ${bytesStored}. Data reduction percent ${reductionPercent}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 O365OnedriveBackupCompletedWithWarnings
 
@@ -2240,11 +1876,9 @@ O365OnedriveBackupCompletedWithWarnings
 Completed backup with warnings. Created ${maintenanceType} snapshot of ${user} Office 365 ${snappable}. Folders ingested ${folderCount}. Files ingested ${fileCount}. Items deleted ${deletedCount}. Bytes ingested ${bytesIngested}. Bytes stored ${bytesStored}. Data reduction percent ${reductionPercent}. ${skippedItemCount} files skipped during backup due to sync issues with Microsoft
 ```
 
-Severity | Status | Audit Event | |
-
-|             |                    |        |
-| ----------- | ------------------ | ------ |
-| **Warning** | **PartialSuccess** | **No** |
+| Severity    | Status             | Audit Event |
+| ----------- | ------------------ | ----------- |
+| **Warning** | **PartialSuccess** | **No**      |
 
 O365RenamedFolders
 
@@ -2252,11 +1886,9 @@ O365RenamedFolders
 Renamed ${numFolders} folders from backup due to malformed folder name: ${renamedFolderNames}
 ```
 
-Severity | Status | Audit Event | |
-
-|             |                 |        |
-| ----------- | --------------- | ------ |
-| **Warning** | **TaskSuccess** | **No** |
+| Severity    | Status          | Audit Event |
+| ----------- | --------------- | ----------- |
+| **Warning** | **TaskSuccess** | **No**      |
 
 O365SharePointListBackupCompleted
 
@@ -2264,11 +1896,9 @@ O365SharePointListBackupCompleted
 Successfully created ${maintenanceType} snapshot of ${objectName} Microsoft 365 ${snappable}. Folders ingested ${folderCount}. Items ingested ${itemCount}. Attachments ingested ${attachmentCount}. Items skipped ${skipCount}. Items deleted ${deletedCount}. Bytes ingested ${bytesIngested}. Bytes stored ${bytesStored}. Data reduction percent ${reductionPercent}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 O365SharePointSiteBackupCompletedWithWarnings
 
@@ -2276,11 +1906,9 @@ O365SharePointSiteBackupCompletedWithWarnings
 Completed backup with warnings, created ${maintenanceType} snapshot of ${objectName} Microsoft ${snappable}. ${objectsSkipped} out of ${totalChildObjects} object(s) under the site failed to backup. Folders ingested: ${folderCount} Items ingested: ${itemCount} Attachments ingested: ${attachmentCount} Items skipped: ${skipCount} Items deleted: ${deletedCount} Bytes ingested: ${bytesIngested} Bytes stored: ${bytesStored} Data reduction percent: ${reductionPercent}
 ```
 
-Severity | Status | Audit Event | |
-
-|             |                    |        |
-| ----------- | ------------------ | ------ |
-| **Warning** | **PartialSuccess** | **No** |
+| Severity    | Status             | Audit Event |
+| ----------- | ------------------ | ----------- |
+| **Warning** | **PartialSuccess** | **No**      |
 
 O365SkippedAttachments
 
@@ -2288,11 +1916,9 @@ O365SkippedAttachments
 Unable to process ${totalNumSkipped} attachment(s): ${numSkippedFromServerBusyErr} due to Microsoft server busy error, ${numSkippedFromCannotOpenFileErr} due to Microsoft cannot open file error and ${numSkippedFromUnsupportedTypeErr} due to unsupported attachment type error - More details in CSV file: ${downloadLink}
 ```
 
-Severity | Status | Audit Event | |
-
-|             |                 |        |
-| ----------- | --------------- | ------ |
-| **Warning** | **TaskSuccess** | **No** |
+| Severity    | Status          | Audit Event |
+| ----------- | --------------- | ----------- |
+| **Warning** | **TaskSuccess** | **No**      |
 
 O365SkippedEmails
 
@@ -2300,11 +1926,9 @@ O365SkippedEmails
 ${numEmails} messages were not backed up due to a retrieval failure. We will attempt to download them on the next backup cycle. For more information on this error please visit https://support.rubrik.com/articles/How_To/000004060.
 ```
 
-Severity | Status | Audit Event | |
-
-|             |                 |        |
-| ----------- | --------------- | ------ |
-| **Warning** | **TaskSuccess** | **No** |
+| Severity    | Status          | Audit Event |
+| ----------- | --------------- | ----------- |
+| **Warning** | **TaskSuccess** | **No**      |
 
 O365SkippedFolders
 
@@ -2312,11 +1936,9 @@ O365SkippedFolders
 Skipping ${numFolders} folders from backup: ${skippedFolderNames}
 ```
 
-Severity | Status | Audit Event | |
-
-|             |                 |        |
-| ----------- | --------------- | ------ |
-| **Warning** | **TaskSuccess** | **No** |
+| Severity    | Status          | Audit Event |
+| ----------- | --------------- | ----------- |
+| **Warning** | **TaskSuccess** | **No**      |
 
 O365StoreSnapshotCompleted
 
@@ -2324,11 +1946,9 @@ O365StoreSnapshotCompleted
 Successfully stored Microsoft 365 ${snappable} data
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 O365StoreSnapshotFailed
 
@@ -2336,11 +1956,9 @@ O365StoreSnapshotFailed
 Failed to store Microsoft 365 ${snappable} data. Reason: ${reason}
 ```
 
-Severity | Status | Audit Event | |
-
-|             |                 |        |
-| ----------- | --------------- | ------ |
-| **Warning** | **TaskFailure** | **No** |
+| Severity    | Status          | Audit Event |
+| ----------- | --------------- | ----------- |
+| **Warning** | **TaskFailure** | **No**      |
 
 O365StoreSnapshotRunning
 
@@ -2348,11 +1966,9 @@ O365StoreSnapshotRunning
 Storing Microsoft 365 ${snappable} data
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Running** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Running** | **No**      |
 
 O365TeamBackupCompleted
 
@@ -2360,11 +1976,9 @@ O365TeamBackupCompleted
 Successfully created ${maintenanceType} snapshot of ${user} Microsoft 365 ${snappable}. Folders ingested ${folderCount}. Files ingested ${fileCount}. Files skipped ${skipCount}. Items deleted ${deletedCount}. Bytes ingested ${bytesIngested}. Bytes stored ${bytesStored}. Data reduction percent ${reductionPercent}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 O365TeamBackupWithConversationsCompleted
 
@@ -2372,11 +1986,9 @@ O365TeamBackupWithConversationsCompleted
 Successfully created ${maintenanceType} snapshot of ${user} Microsoft 365 ${snappable}. Folders ingested ${folderCount}. Files ingested ${fileCount}. Files skipped ${skipCount}. Total Messages ingested ${messageCount}. Private Channel Message ingested ${pvtChannelMsgCount}. Items deleted ${deletedCount}. File bytes ingested ${fileBytesIngested}. File bytes stored ${bytesStored}. File data reduction percent ${fileReductionPercent}. Message bytes ingested ${msgBytesIngested}. Message bytes stored ${msgBytesStored}. Message data reduction percent ${msgReductionPercent}. Messages skipped ${msgSkipCount}. Message attachment references skipped ${msgAttachmentSkipCount}. Permissions backup skipped for ${channelPermissionsSkipped} channel(s). New channels discovered ${numChannelsAdded}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 O365TeamBackupWithConversationsCompletedWithWarning
 
@@ -2384,11 +1996,9 @@ O365TeamBackupWithConversationsCompletedWithWarning
 Partially completed the backups with warnings. Created ${maintenanceType} snapshot of ${user} Microsoft 365 ${workload},  but skipped backing up ${skippedDriveCount} channels' files. The backup for skipped files will be retried in the next incremental backup. Folders ingested ${folderCount}. Files ingested ${fileCount}. Files skipped ${skipCount}. Total Messages ingested ${messageCount}. Private Channel Message ingested ${pvtChannelMsgCount}. Items deleted ${deletedCount}. File bytes ingested ${fileBytesIngested}. File bytes stored ${bytesStored}. File data reduction percent ${fileReductionPercent}. Message bytes ingested ${msgBytesIngested}. Message bytes stored ${msgBytesStored}. Message data reduction percent ${msgReductionPercent}. Messages skipped ${msgSkipCount}. Message attachment references skipped ${msgAttachmentSkipCount}.  Permissions backup skipped for ${channelPermissionsSkipped} channel(s). New channels discovered ${numChannelsAdded}. Data reduction percent: ${reductionPercent}
 ```
 
-Severity | Status | Audit Event | |
-
-|             |                    |        |
-| ----------- | ------------------ | ------ |
-| **Warning** | **PartialSuccess** | **No** |
+| Severity    | Status             | Audit Event |
+| ----------- | ------------------ | ----------- |
+| **Warning** | **PartialSuccess** | **No**      |
 
 ## postgres_db_cluster
 
@@ -2400,11 +2010,9 @@ CreateOnDemandPostgresDbClusterSnapshotFailure
 ${username} failed to trigger an on-demand snapshot for PostgreSQL database cluster ${dbClusterName}. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 CreateOnDemandPostgresDbClusterSnapshotStarted
 
@@ -2412,11 +2020,9 @@ CreateOnDemandPostgresDbClusterSnapshotStarted
 ${username} triggered an on-demand snapshot for PostgreSQL database cluster ${dbClusterName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 ## saasapps
 
@@ -2428,11 +2034,9 @@ SaasAppsBackupCanceled
 Canceled ${maintenanceType} backup of ${displayName} ${snappableType}  belonging to ${siteName}. ${attachmentURLMessage}
 ```
 
-Severity | Status | Audit Event | |
-
-|          |              |        |
-| -------- | ------------ | ------ |
-| **Info** | **Canceled** | **No** |
+| Severity | Status       | Audit Event |
+| -------- | ------------ | ----------- |
+| **Info** | **Canceled** | **No**      |
 
 SaasAppsBackupCompleted
 
@@ -2440,11 +2044,9 @@ SaasAppsBackupCompleted
 Successfully completed ${maintenanceType} backup of ${displayName}  ${snappableType} belonging to ${siteName}. Number of rows added:  ${rowsAdded}, number of rows modified: ${rowsModified}, number of rows deleted: ${rowsDeleted}. ${attachmentURLMessage}
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 SaasAppsBackupFailed
 
@@ -2452,11 +2054,9 @@ SaasAppsBackupFailed
 Unable to take ${maintenanceType} backup of ${displayName}  ${snappableType} belonging to ${siteName} because ${reason}. ${attachmentURLMessage}
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Failure** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **No**      |
 
 SaasAppsBackupStarted
 
@@ -2464,11 +2064,9 @@ SaasAppsBackupStarted
 ${userID} started backup of ${displayName} ${snappableType}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 SaasAppsBackupStarted
 
@@ -2476,11 +2074,9 @@ SaasAppsBackupStarted
 Started ${maintenanceType} backup of ${displayName} ${snappableType}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 SaasAppsBackupStartFailed
 
@@ -2488,11 +2084,9 @@ SaasAppsBackupStartFailed
 ${userID} failed to start on-demand backup of ${displayName}  ${snappableType}. Failure reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |         |
-| ------------ | ----------- | ------- |
-| **Critical** | **Failure** | **Yes** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **Yes**     |
 
 SaasAppsEntityBackupFailed
 
@@ -2500,11 +2094,9 @@ SaasAppsEntityBackupFailed
 Unable to complete backup of '${entityName}' entity for ${displayName} ${snappableType}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskFailure** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskFailure** | **No**      |
 
 SaasAppsEntityBackupStarted
 
@@ -2512,11 +2104,9 @@ SaasAppsEntityBackupStarted
 Started backup of '${entityName}' entity for ${displayName} ${snappableType}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 SaasAppsEntityBackupSucceeded
 
@@ -2524,11 +2114,9 @@ SaasAppsEntityBackupSucceeded
 Successfully completed backup of '${entityName}' entity for ${displayName} ${snappableType}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 ## sap_hana_system
 
@@ -2540,11 +2128,9 @@ CreateOnDemandSapHanaStorageSnapshotFailure
 ${username} failed to trigger an on-demand storage snapshot for SAP HANA system ${systemName}. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 CreateOnDemandSapHanaStorageSnapshotStarted
 
@@ -2552,63 +2138,9 @@ CreateOnDemandSapHanaStorageSnapshotStarted
 ${username} triggered an on-demand storage snapshot for SAP HANA system ${systemName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
-
-## testevent
-
-______________________________________________________________________
-
-TestAll
-
-```text
-Everyone loves ${hobby}.
-```
-
-Severity | Status | Audit Event | |
-
-|              |                 |        |
-| ------------ | --------------- | ------ |
-| **Critical** | **TaskSuccess** | **No** |
-
-TestDedupe
-
-```text
-In hindsight, making dedupe time customizable was not a well though out  decision. One day we will rethink RSC email dedupe, maybe.
-```
-
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
-
-TestHasUrl
-
-```text
-This message tests parameters like ${hobby} and URL which are both in MessageVars.
-```
-
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
-
-TestUrlMetadata
-
-```text
-Is this overkill for such a simple feature? Maybe. Striving for type safety is always a good thing!
-```
-
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 ## vsphere
 
@@ -2620,11 +2152,9 @@ VSphereBulkSnapshotSingleFailed
 ${username} failed to start a job to take a snapshot of Virtual Machine '${snappableName}'. Failure reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 VSphereBulkSnapshotSingleStarted
 
@@ -2632,24 +2162,6 @@ VSphereBulkSnapshotSingleStarted
 ${username} started a job to take a snapshot of Virtual Machine '${snappableName}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
-
-## webhook
-
-______________________________________________________________________
-
-WebhookTest
-
-```text
-This is a test event to test if a message can be recieved by a user configured endpoint.
-```
-
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |

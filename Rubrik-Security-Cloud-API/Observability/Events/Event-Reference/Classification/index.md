@@ -8,11 +8,9 @@ AnalyzerCreated
 ${username} created a new custom analyzer named '${analyzerName}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 AnalyzerDeleted
 
@@ -20,11 +18,9 @@ AnalyzerDeleted
 ${username} deleted the custom analyzer named '${analyzerName}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 AnalyzerEdited
 
@@ -32,11 +28,9 @@ AnalyzerEdited
 ${username} modified the custom analyzer named '${analyzerName}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 AnalyzerRiskUpdated
 
@@ -44,11 +38,9 @@ AnalyzerRiskUpdated
 ${username} updated the analyzer risk to '${analyzerRisk}' for  ${analyzerNames}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 BulkPolicyJobFailure
 
@@ -56,11 +48,9 @@ BulkPolicyJobFailure
 Failed to ${actionType} policies to workloads for clusters or hierarchy objects.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Failure** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **No**      |
 
 BulkPolicyJobSuccess
 
@@ -68,11 +58,9 @@ BulkPolicyJobSuccess
 Successfully ${actionType} policies to workloads for clusters or hierarchy objects.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 ClassficationResultsAvailable
 
@@ -80,11 +68,9 @@ ClassficationResultsAvailable
 Results available in the Objects page for the workload '${objectName}' on the snapshot at ${snapshotsTimeStamp}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 ClassificationCanceled
 
@@ -92,11 +78,9 @@ ClassificationCanceled
 Canceled classification of ${objectType} '${objectName}' on snapshot(s)  at ${snapshotsTimeStamp} with policies ${policyList}.
 ```
 
-Severity | Status | Audit Event | |
-
-|             |              |        |
-| ----------- | ------------ | ------ |
-| **Warning** | **Canceled** | **No** |
+| Severity    | Status       | Audit Event |
+| ----------- | ------------ | ----------- |
+| **Warning** | **Canceled** | **No**      |
 
 ClassificationFailure
 
@@ -104,11 +88,9 @@ ClassificationFailure
 Failed to classify ${objectType} '${objectName}' on snapshot(s) at  ${snapshotsTimeStamp} with policies ${policyList}. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Failure** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **No**      |
 
 ClassificationRunning
 
@@ -116,11 +98,9 @@ ClassificationRunning
 Running classification of ${objectType} '${objectName}' on snapshot(s)  at ${snapshotsTimeStamp} with policies ${policyList}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 ClassificationRunningNoNewSnapshot
 
@@ -128,11 +108,9 @@ ClassificationRunningNoNewSnapshot
 Running classification of ${objectType} '${objectName}' with policies  ${policyList}: No new snapshot to analyze.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 ClassificationStarted
 
@@ -140,11 +118,9 @@ ClassificationStarted
 Beginning classification of ${objectType} '${objectName}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 ClassificationSuccess
 
@@ -152,11 +128,9 @@ ClassificationSuccess
 Completed classification of ${objectType} '${objectName}' on snapshot(s) at ${snapshotsTimeStamp} with policies ${policyList}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 ClassificationSuccessNoNewSnapshot
 
@@ -164,11 +138,9 @@ ClassificationSuccessNoNewSnapshot
 Completed classification of ${objectType} '${objectName}' with policies ${policyList}: No new snapshot to analyze.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 CrawlJobDeleted
 
@@ -176,11 +148,9 @@ CrawlJobDeleted
 ${username} deleted the discovery named '${crawlName}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 CrawlJobStarted
 
@@ -188,11 +158,9 @@ CrawlJobStarted
 ${username} ran a discovery named '${crawlName}', which included ${policyNames}, across ${numObjects} object(s).
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 DCAddObjectsToPolicyFailure
 
@@ -200,11 +168,9 @@ DCAddObjectsToPolicyFailure
 Failed to add ${ObjectCount} objects to ${policyID}
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskFailure** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskFailure** | **No**      |
 
 DCAddObjectsToPolicySuccess
 
@@ -212,11 +178,9 @@ DCAddObjectsToPolicySuccess
 Added ${ObjectCount} objects to ${policyID} successfully
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 DCObjectResultsDownloaded
 
@@ -224,11 +188,9 @@ DCObjectResultsDownloaded
 ${username} downloaded full discovery results of ${objectType} '${objectName}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 DCObjectResultsOnLocationDownloaded
 
@@ -236,11 +198,9 @@ DCObjectResultsOnLocationDownloaded
 ${username} downloaded full discovery results of ${objectType} '${objectName}' on '${location}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 DCPathResultsDownloaded
 
@@ -248,11 +208,9 @@ DCPathResultsDownloaded
 ${username} downloaded discovery results of '${path}' in ${objectType} '${objectName}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 DCPathResultsOnLocationDownloaded
 
@@ -260,11 +218,9 @@ DCPathResultsOnLocationDownloaded
 ${username} downloaded discovery results of '${path}' in ${objectType} '${objectName}' on '${location}'
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 DCPolicySyncCanceled
 
@@ -272,11 +228,9 @@ DCPolicySyncCanceled
 Sync canceled due to modifications to policies. A new sync will begin shortly
 ```
 
-Severity | Status | Audit Event | |
-
-|          |              |        |
-| -------- | ------------ | ------ |
-| **Info** | **Canceled** | **No** |
+| Severity | Status       | Audit Event |
+| -------- | ------------ | ----------- |
+| **Info** | **Canceled** | **No**      |
 
 DCPolicySyncFailed
 
@@ -284,11 +238,9 @@ DCPolicySyncFailed
 Failed to sync changes on ${clusterName}. Reason: ${errorMessage}
 ```
 
-Severity | Status | Audit Event | |
-
-|              |                 |        |
-| ------------ | --------------- | ------ |
-| **Critical** | **TaskFailure** | **No** |
+| Severity     | Status          | Audit Event |
+| ------------ | --------------- | ----------- |
+| **Critical** | **TaskFailure** | **No**      |
 
 DCPolicySyncFailedClusterDisconnected
 
@@ -296,11 +248,9 @@ DCPolicySyncFailedClusterDisconnected
 Unable to sync changes on ${clusterName} because the cluster is disconnected
 ```
 
-Severity | Status | Audit Event | |
-
-|             |                 |        |
-| ----------- | --------------- | ------ |
-| **Warning** | **TaskFailure** | **No** |
+| Severity    | Status          | Audit Event |
+| ----------- | --------------- | ----------- |
+| **Warning** | **TaskFailure** | **No**      |
 
 DCPolicySyncRecovered
 
@@ -308,11 +258,9 @@ DCPolicySyncRecovered
 Sync recovered and completed successfully on ${clusterName}
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 DCPolicySyncStarting
 
@@ -320,11 +268,9 @@ DCPolicySyncStarting
 Starting to sync changes for ${policies} on ${clusterName}
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 DCPolicySyncSuccess
 
@@ -332,11 +278,9 @@ DCPolicySyncSuccess
 Succeeded to sync changes on ${clusterName}
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 ODCResultsDownloaded
 
@@ -344,11 +288,9 @@ ODCResultsDownloaded
 ${username} downloaded the results of the discovery named '${crawlName}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 PolicyCreated
 
@@ -356,11 +298,9 @@ PolicyCreated
 ${username} created a new custom policy named '${policyName}', which includes ${analyzerNames}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 PolicyDeleted
 
@@ -368,11 +308,9 @@ PolicyDeleted
 ${username} deleted the policy named '${policyName}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 PolicyEdited
 
@@ -380,11 +318,9 @@ PolicyEdited
 ${username} modified the policy named '${policyName}', which now includes ${analyzerNames}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 PolicyObjAdded
 
@@ -392,11 +328,9 @@ PolicyObjAdded
 ${username} added ${objectNames} to ${policyNames}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 PolicyObjRemoved
 
@@ -404,11 +338,9 @@ PolicyObjRemoved
 ${username} removed ${objectNames} from ${policyNames}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 PreviewerDisabled
 
@@ -416,11 +348,9 @@ PreviewerDisabled
 ${username} disabled previewer for '${clusterName}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 PreviewerEnabled
 
@@ -428,11 +358,9 @@ PreviewerEnabled
 ${username} enabled previewer for '${clusterName}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 WhitelistUpdateAdd
 
@@ -440,11 +368,9 @@ WhitelistUpdateAdd
 ${username} updated the allowlist for '${objectName}' on path '${pathName}', adding '${analyzerNames}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 WhitelistUpdateAddRemove
 
@@ -452,11 +378,9 @@ WhitelistUpdateAddRemove
 ${username} updated the allowlist for '${objectName}' on path '${pathName}', adding '${analyzersAdded}' and removing '${analyzersRemoved}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 WhitelistUpdateRemove
 
@@ -464,8 +388,6 @@ WhitelistUpdateRemove
 ${username} updated the allowlist for '${objectName}' on path '${pathName}', removing '${analyzerNames}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |

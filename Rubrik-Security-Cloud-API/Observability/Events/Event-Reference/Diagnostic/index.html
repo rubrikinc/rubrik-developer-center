@@ -18,7 +18,7 @@
       
       
       <link rel="icon" href="../../../../../assets/favicon.ico">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.18">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.20">
     
     
       
@@ -26,7 +26,7 @@
       
     
     
-      <link rel="stylesheet" href="../../../../../assets/stylesheets/main.7e37652d.min.css">
+      <link rel="stylesheet" href="../../../../../assets/stylesheets/main.e53b48f4.min.css">
       
         
         <link rel="stylesheet" href="../../../../../assets/stylesheets/palette.06af60db.min.css">
@@ -5645,29 +5645,85 @@
 <p class="admonition-title">AccountExpired</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>Your trial ended on ${ExpiryDate} and your account will be on hold for ${NumHoldDays} days from that date.  During the hold period, all backup jobs will be paused and no further changes can be made.  Your POC data will be deleted after ${HoldEndDate}.  To continue using the product, contact your Account Executive to purchase a license.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Critical</strong></td><td><strong>Success</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Critical</strong></td>
+<td><strong>Success</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition warning">
 <p class="admonition-title">AccountExpiryWarning</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>Hello, We want to remind you that your account is expiring in ${noOfDaysBeforeHold} days and that your existing data will not be available after that time. Act now to extend your features or buy additional features! Retain your existing data and continue to enjoy all the benefits of Rubrik data protection. For information, please contact our friendly sales professionals at sales@rubrik.com. Thank you, Rubrik
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Warning</strong></td><td><strong>Success</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Warning</strong></td>
+<td><strong>Success</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition failure">
 <p class="admonition-title">AccountMoveCompleted</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>RSC account move to the new region has been completed. No more downtime should be observed.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Critical</strong></td><td><strong>Success</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Critical</strong></td>
+<td><strong>Success</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition failure">
 <p class="admonition-title">AccountMoveInitiated</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>Rubrik started an account move operation, which will take a few hours to complete.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Critical</strong></td><td><strong>Success</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Critical</strong></td>
+<td><strong>Success</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <h2 id="app_failover">app_failover</h2>
 <hr />
@@ -5675,113 +5731,337 @@
 <p class="admonition-title">RefreshAwsNetResourcesConnectToEc2ClientFailed</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>Failed to connect to ec2 client: ${reason}.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Critical</strong></td><td><strong>TaskFailure</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Critical</strong></td>
+<td><strong>TaskFailure</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition failure">
 <p class="admonition-title">RefreshAwsNetResourcesEc2ClientFailed</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>Failed to sync AWS networking resources in &#39;${cloudAccount}(${region})&#39;: ${reason}.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Critical</strong></td><td><strong>TaskFailure</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Critical</strong></td>
+<td><strong>TaskFailure</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition info">
 <p class="admonition-title">RefreshAwsNetResourcesFailoverCanceled</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>Canceled sync AWS networking resources in &#39;${account}&#39;.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>Canceled</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>Canceled</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition info">
 <p class="admonition-title">RefreshAwsNetResourcesFailoverCanceling</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>Canceling sync AWS networking resources in &#39;${account}&#39;.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>Canceling</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>Canceling</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition failure">
 <p class="admonition-title">RefreshAwsNetResourcesFailoverFailed</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>Failed to sync AWS networking resources in &#39;${account}&#39;: ${reason}.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Critical</strong></td><td><strong>Failure</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Critical</strong></td>
+<td><strong>Failure</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition info">
 <p class="admonition-title">RefreshAwsNetResourcesFailoverStarted</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>Started to sync AWS networking resources in &#39;${account}&#39;.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>TaskSuccess</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>TaskSuccess</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition info">
 <p class="admonition-title">RefreshAwsNetResourcesFailoverSuccess</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>Synced AWS networking resources in &#39;${account}&#39;: processed &#39;${totalNum}&#39; cloud locations.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>Success</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>Success</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition failure">
 <p class="admonition-title">RefreshAwsNetResourcesGetCloudAccountFailed</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>Failed to get cloud account ${name} in &#39;${account}&#39;: ${reason}.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Critical</strong></td><td><strong>TaskFailure</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Critical</strong></td>
+<td><strong>TaskFailure</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition failure">
 <p class="admonition-title">RefreshAwsNetResourcesQueryArchivalLocationFailed</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>Failed to query cloud locations in &#39;${account}&#39;: ${reason}.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Critical</strong></td><td><strong>TaskFailure</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Critical</strong></td>
+<td><strong>TaskFailure</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition failure">
 <p class="admonition-title">ValidateAppBlueprintResourceMappingFailed</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>Failed to validate recovery spec for Recovery Plan &#39;${name}&#39; in &#39;${account}&#39;: ${reason}.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Critical</strong></td><td><strong>Failure</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Critical</strong></td>
+<td><strong>Failure</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition info">
 <p class="admonition-title">ValidateResourceMappingCanceled</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-14-1"><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a>Canceled validate recovery specs for Recovery Plans in &#39;${account}&#39;.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>Canceled</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>Canceled</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition info">
 <p class="admonition-title">ValidateResourceMappingCanceling</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-15-1"><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a>Canceling validate recovery specs for Recovery Plans in &#39;${account}&#39;.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>Canceling</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>Canceling</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition failure">
 <p class="admonition-title">ValidateResourceMappingFailed</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-16-1"><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a>Failed to validate recovery specs for Recovery Plans in &#39;${account}&#39;: ${reason}.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Critical</strong></td><td><strong>Failure</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Critical</strong></td>
+<td><strong>Failure</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition failure">
 <p class="admonition-title">ValidateResourceMappingQueryAppBlueprintsFailed</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-17-1"><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a>Failed to query Recovery Plans in &#39;${account}&#39;: ${reason}.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Critical</strong></td><td><strong>TaskFailure</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Critical</strong></td>
+<td><strong>TaskFailure</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition info">
 <p class="admonition-title">ValidateResourceMappingStarted</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-18-1"><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a>Started validating recovery specs for Recovery Plans in &#39;${account}&#39;.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>TaskSuccess</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>TaskSuccess</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition info">
 <p class="admonition-title">ValidateResourceMappingSuccess</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-19-1"><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a>Validated recovery specs for Recovery Plans in &#39;${account}&#39;: processed &#39;${totalNum}&#39; and found recovery specs are invalid for &#39;${invalidNum}&#39; Recovery Plans.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>Success</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>Success</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <h2 id="awsnative">awsnative</h2>
 <hr />
@@ -5789,8 +6069,22 @@
 <p class="admonition-title">AwsSnapshotsMissing</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-20-1"><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a>One or more rubrik managed snapshots are missing from AWS account ${awsAccountDisplayName}. Total ${missingEc2SnapshotCount} AMIs and ${missingEbsSnapshotCount} volume snapshots are missing. ${optionalMailSentMsg}
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Warning</strong></td><td><strong>Failure</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Warning</strong></td>
+<td><strong>Failure</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <h2 id="azurenative">azurenative</h2>
 <hr />
@@ -5798,36 +6092,106 @@
 <p class="admonition-title">AzureNativeArchiveSnapshotTaskCleanupFailed</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-21-1"><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a>An error occurred while cleaning up a failed attempt to archive the snapshot taken at ${snapshotTimeDisplay} of the ${snappableDisplay}. Reason: ${reason}
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Warning</strong></td><td><strong>PartialSuccess</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Warning</strong></td>
+<td><strong>PartialSuccess</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition failure">
 <p class="admonition-title">AzureSnapshotsMissing</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-22-1"><a id="__codelineno-22-1" name="__codelineno-22-1" href="#__codelineno-22-1"></a>One or more rubrik managed snapshots are missing from Azure subscription ${azureSubscriptionDisplayName}. Total ${missingVMSnapshotCount} VM snapshots, ${missingVMRepSnapshotCount} VM replicated snapshots, ${missingDiskSnapshotCount} disk snapshots and ${missingDiskRepSnapshotCount} disk replicated snapshots are missing.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Critical</strong></td><td><strong>Failure</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Critical</strong></td>
+<td><strong>Failure</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition failure">
 <p class="admonition-title">AzureSqlDatabaseServerDeleted</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-23-1"><a id="__codelineno-23-1" name="__codelineno-23-1" href="#__codelineno-23-1"></a>One or more Rubrik managed Azure SQL Servers are missing from Azure subscription ${azureSubscriptionDisplayName}. Missing Azure SQL Servers: ${missingSqlDatabaseServersList}
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Critical</strong></td><td><strong>Failure</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Critical</strong></td>
+<td><strong>Failure</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition failure">
 <p class="admonition-title">AzureSqlManagedInstanceServerDeleted</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-24-1"><a id="__codelineno-24-1" name="__codelineno-24-1" href="#__codelineno-24-1"></a>One or more Rubrik managed Azure SQL Managed Instances are missing from Azure subscription ${azureSubscriptionDisplayName}. Missing Azure SQL Managed Instances: ${missingSqlManagedInstanceServersList}
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Critical</strong></td><td><strong>Failure</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Critical</strong></td>
+<td><strong>Failure</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition failure">
 <p class="admonition-title">AzureSqlSnapshotsMissing</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-25-1"><a id="__codelineno-25-1" name="__codelineno-25-1" href="#__codelineno-25-1"></a>One or more Rubrik managed snapshots are missing from Azure subscription ${azureSubscriptionDisplayName}. Total ${missingSqlDatabaseDbSnapshotCount} Azure Sql Database and ${missingSqlManagedInstanceDbSnapshotCount} Azure Sql Managed Database snapshots are missing.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Critical</strong></td><td><strong>Failure</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Critical</strong></td>
+<td><strong>Failure</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <h2 id="ccprovision">ccprovision</h2>
 <hr />
@@ -5835,29 +6199,85 @@
 <p class="admonition-title">ClusterCreateFailed</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-26-1"><a id="__codelineno-26-1" name="__codelineno-26-1" href="#__codelineno-26-1"></a>${message}
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Critical</strong></td><td><strong>Failure</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Critical</strong></td>
+<td><strong>Failure</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition info">
 <p class="admonition-title">ClusterCreateRunning</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-27-1"><a id="__codelineno-27-1" name="__codelineno-27-1" href="#__codelineno-27-1"></a>${message}
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>TaskSuccess</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>TaskSuccess</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition info">
 <p class="admonition-title">ClusterCreateSuccess</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-28-1"><a id="__codelineno-28-1" name="__codelineno-28-1" href="#__codelineno-28-1"></a>${message}
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>Success</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>Success</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition warning">
 <p class="admonition-title">ClusterCreateWarning</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-29-1"><a id="__codelineno-29-1" name="__codelineno-29-1" href="#__codelineno-29-1"></a>${message}
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Warning</strong></td><td><strong>Success</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Warning</strong></td>
+<td><strong>Success</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <h2 id="cloudnative">cloudnative</h2>
 <hr />
@@ -5865,71 +6285,211 @@
 <p class="admonition-title">AwsRdsManualSnapshotQuotaBreach</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-30-1"><a id="__codelineno-30-1" name="__codelineno-30-1" href="#__codelineno-30-1"></a>One or more regions from the AWS account, ${awsAccountDisplayName}, protected by Rubrik, may have the following issues: manual snapshot quota limit is about to be breached, or you have used 75%% of the quota. Usages in affected regions are: ${quotaUsage}.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Warning</strong></td><td><strong>Failure</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Warning</strong></td>
+<td><strong>Failure</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition failure">
 <p class="admonition-title">AwsRdsSnapshotsMissing</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-31-1"><a id="__codelineno-31-1" name="__codelineno-31-1" href="#__codelineno-31-1"></a>One or more RDS databases from the AWS account ${awsAccountDisplayName} protected by Rubrik may have the following issues: Number of missing RDS snapshots: ${missingRdsInstanceSnapshotCount}. Number of RDS databases with modified log retention values: ${missingRdsInstancePitrCount}.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Critical</strong></td><td><strong>Failure</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Critical</strong></td>
+<td><strong>Failure</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition info">
 <p class="admonition-title">CloudNativeIndexSnapshotsDebugModeJobCanceled</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-32-1"><a id="__codelineno-32-1" name="__codelineno-32-1" href="#__codelineno-32-1"></a>Canceled debug-mode index run of the snapshot taken on ${snapshotTimeDisplay} of the ${snappableDisplay}.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>Canceled</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>Canceled</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition info">
 <p class="admonition-title">CloudNativeIndexSnapshotsDebugModeJobCanceling</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-33-1"><a id="__codelineno-33-1" name="__codelineno-33-1" href="#__codelineno-33-1"></a>Canceling debug-mode index run of the snapshot taken on ${snapshotTimeDisplay} of the ${snappableDisplay}.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>Canceling</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>Canceling</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition info">
 <p class="admonition-title">CloudNativeIndexSnapshotsDebugModeJobFailed</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-34-1"><a id="__codelineno-34-1" name="__codelineno-34-1" href="#__codelineno-34-1"></a>Failed in debug-mode index run of the snapshot taken on ${snapshotTimeDisplay} of the ${snappableDisplay}. Reason: ${reason}.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>Failure</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>Failure</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition info">
 <p class="admonition-title">CloudNativeIndexSnapshotsDebugModeJobQueued</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-35-1"><a id="__codelineno-35-1" name="__codelineno-35-1" href="#__codelineno-35-1"></a>Queued debug-mode index run of the snapshot taken on ${snapshotTimeDisplay} of the ${snappableDisplay}. The job will not index the snapshot.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>Queued</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>Queued</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition info">
 <p class="admonition-title">CloudNativeIndexSnapshotsDebugModeJobStarted</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-36-1"><a id="__codelineno-36-1" name="__codelineno-36-1" href="#__codelineno-36-1"></a>Started debug-mode index run of the snapshot taken on ${snapshotTimeDisplay} of the ${snappableDisplay}. The job will not index the snapshot.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>Success</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>Success</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition info">
 <p class="admonition-title">CloudNativeIndexSnapshotsDebugModeJobSucceeded</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-37-1"><a id="__codelineno-37-1" name="__codelineno-37-1" href="#__codelineno-37-1"></a>Successfully completed debug-mode index run of the snapshot taken on ${snapshotTimeDisplay} of the ${snappableDisplay}. The snapshot was not indexed, since the job was run in the debug mode.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>Success</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>Success</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition info">
 <p class="admonition-title">CloudNativeIndexSnapshotsDebugModeJobSucceededNoop</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-38-1"><a id="__codelineno-38-1" name="__codelineno-38-1" href="#__codelineno-38-1"></a>No snapshot available to index for ${snappableDisplay}.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>Success</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>Success</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition failure">
 <p class="admonition-title">GcpSnapshotsMissing</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-39-1"><a id="__codelineno-39-1" name="__codelineno-39-1" href="#__codelineno-39-1"></a>One or more rubrik managed snapshots are missing from GCP project ${gcpProjectDisplayName}. Total ${missingInstanceSnapshotCount} instance snapshots and ${missingDiskSnapshotCount} disk snapshots are missing.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Critical</strong></td><td><strong>Failure</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Critical</strong></td>
+<td><strong>Failure</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <h2 id="cluster">cluster</h2>
 <hr />
@@ -5937,15 +6497,43 @@
 <p class="admonition-title">ClusterSyncJobsDelayed</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-40-1"><a id="__codelineno-40-1" name="__codelineno-40-1" href="#__codelineno-40-1"></a>Cluster ${clusterName} is experiencing the following delays in syncing data with Rubrik Cloud: \n\n${delayedJobsMessage}\n\nPlease open a support tunnel to the cluster and contact Rubrik Support for further assistance.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Critical</strong></td><td><strong>Failure</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Critical</strong></td>
+<td><strong>Failure</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition failure">
 <p class="admonition-title">ClusterUnreachable</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-41-1"><a id="__codelineno-41-1" name="__codelineno-41-1" href="#__codelineno-41-1"></a>Cluster ${clusterName} is unreachable
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Critical</strong></td><td><strong>Failure</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Critical</strong></td>
+<td><strong>Failure</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <h2 id="exocompute">exocompute</h2>
 <hr />
@@ -5953,610 +6541,1828 @@
 <p class="admonition-title">ClusterVerificationTaskFailed</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-42-1"><a id="__codelineno-42-1" name="__codelineno-42-1" href="#__codelineno-42-1"></a>Verification failed for the customer managed cluster ${clusterDisplayName}. Reason: ${reason}.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Warning</strong></td><td><strong>TaskFailure</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Warning</strong></td>
+<td><strong>TaskFailure</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition info">
 <p class="admonition-title">ClusterVerificationTaskStarted</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-43-1"><a id="__codelineno-43-1" name="__codelineno-43-1" href="#__codelineno-43-1"></a>Verifying the customer managed cluster ${clusterDisplayName}.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>Running</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>Running</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition info">
 <p class="admonition-title">ClusterVerificationTaskSucceeded</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-44-1"><a id="__codelineno-44-1" name="__codelineno-44-1" href="#__codelineno-44-1"></a>Successfully verified the customer managed cluster ${clusterDisplayName}.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>TaskSuccess</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>TaskSuccess</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition warning">
 <p class="admonition-title">ConfigurePrivateEKSTaskFailed</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-45-1"><a id="__codelineno-45-1" name="__codelineno-45-1" href="#__codelineno-45-1"></a>Failed to configure private EKS cluster ${eksClusterDisplayName}.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Warning</strong></td><td><strong>TaskFailure</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Warning</strong></td>
+<td><strong>TaskFailure</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition info">
 <p class="admonition-title">ConfigurePrivateEKSTaskStarted</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-46-1"><a id="__codelineno-46-1" name="__codelineno-46-1" href="#__codelineno-46-1"></a>Configuring private EKS cluster ${eksClusterDisplayName}.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>Running</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>Running</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition info">
 <p class="admonition-title">ConfigurePrivateEKSTaskSucceeded</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-47-1"><a id="__codelineno-47-1" name="__codelineno-47-1" href="#__codelineno-47-1"></a>Successfully configured private EKS cluster ${eksClusterDisplayName}.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>TaskSuccess</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>TaskSuccess</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition warning">
 <p class="admonition-title">ExoclusterReachingAzureQuotaLimit</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-48-1"><a id="__codelineno-48-1" name="__codelineno-48-1" href="#__codelineno-48-1"></a>${eventMsg}
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Warning</strong></td><td><strong>Failure</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Warning</strong></td>
+<td><strong>Failure</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition warning">
 <p class="admonition-title">ExoclusterReachingAzureSubnetLimit</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-49-1"><a id="__codelineno-49-1" name="__codelineno-49-1" href="#__codelineno-49-1"></a>The size of the subnet ${subnet} is limiting the scaling of the AKS. Recommended minimum subnet size: ${requiredBandwidth}
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Warning</strong></td><td><strong>Failure</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Warning</strong></td>
+<td><strong>Failure</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition info">
 <p class="admonition-title">ExoclusterUpgradeCanceled</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-50-1"><a id="__codelineno-50-1" name="__codelineno-50-1" href="#__codelineno-50-1"></a>Canceled upgrade ${exoclusterType} cluster ${exoclusterName}.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>Canceled</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>Canceled</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition info">
 <p class="admonition-title">ExoclusterUpgradeCanceling</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-51-1"><a id="__codelineno-51-1" name="__codelineno-51-1" href="#__codelineno-51-1"></a>Canceling upgrade of ${exoclusterType} cluster ${exoclusterName}.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>Canceling</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>Canceling</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition failure">
 <p class="admonition-title">ExoclusterUpgradeFailed</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-52-1"><a id="__codelineno-52-1" name="__codelineno-52-1" href="#__codelineno-52-1"></a>Failed to upgrade ${exoclusterType} cluster ${exoclusterName} to version ${version}. Reason: ${reason}.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Critical</strong></td><td><strong>Failure</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Critical</strong></td>
+<td><strong>Failure</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition failure">
 <p class="admonition-title">ExoclusterUpgradeNotEnoughResource</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-53-1"><a id="__codelineno-53-1" name="__codelineno-53-1" href="#__codelineno-53-1"></a>Not enough resources to upgrade ${exoclusterType} cluster ${exoclusterName} to version ${version}: ${quotaMsg}. More info on https://docs.microsoft.com/en-us/azure/aks/upgrade-cluster.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Critical</strong></td><td><strong>Failure</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Critical</strong></td>
+<td><strong>Failure</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition info">
 <p class="admonition-title">ExoclusterUpgradeStarted</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-54-1"><a id="__codelineno-54-1" name="__codelineno-54-1" href="#__codelineno-54-1"></a>Upgrading ${exoclusterType} cluster ${exoclusterName}.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>Running</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>Running</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition info">
 <p class="admonition-title">ExoclusterUpgradeSucceeded</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-55-1"><a id="__codelineno-55-1" name="__codelineno-55-1" href="#__codelineno-55-1"></a>Successfully upgraded ${exoclusterType} cluster ${exoclusterName} to version ${version}.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>Success</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>Success</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition info">
 <p class="admonition-title">ExocomputeAwsSetupJobCanceled</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-56-1"><a id="__codelineno-56-1" name="__codelineno-56-1" href="#__codelineno-56-1"></a>Canceled setup of the EKS cluster in the ${awsAccountDisplayName} AWS account in the ${regionDisplayName} region.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>Canceled</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>Canceled</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition info">
 <p class="admonition-title">ExocomputeAwsSetupJobCanceling</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-57-1"><a id="__codelineno-57-1" name="__codelineno-57-1" href="#__codelineno-57-1"></a>Canceling setup of the EKS cluster in the ${awsAccountDisplayName} AWS account in the ${regionDisplayName} region.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>Canceling</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>Canceling</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition failure">
 <p class="admonition-title">ExocomputeAwsSetupJobFailed</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-58-1"><a id="__codelineno-58-1" name="__codelineno-58-1" href="#__codelineno-58-1"></a>Failed to setup EKS cluster in the ${awsAccountDisplayName} AWS account in the ${regionDisplayName} region. Reason: ${reason}.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Critical</strong></td><td><strong>Failure</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Critical</strong></td>
+<td><strong>Failure</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition info">
 <p class="admonition-title">ExocomputeAwsSetupJobStarted</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-59-1"><a id="__codelineno-59-1" name="__codelineno-59-1" href="#__codelineno-59-1"></a>Started setup of the EKS cluster in the ${awsAccountDisplayName} AWS account in the ${regionDisplayName} region.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>TaskSuccess</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>TaskSuccess</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition info">
 <p class="admonition-title">ExocomputeAwsSetupJobSucceeded</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-60-1"><a id="__codelineno-60-1" name="__codelineno-60-1" href="#__codelineno-60-1"></a>Successfully setup EKS cluster in the ${awsAccountDisplayName} AWS account in the ${regionDisplayName} region.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>Success</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>Success</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition info">
 <p class="admonition-title">ExocomputeAwsTeardownJobCanceled</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-61-1"><a id="__codelineno-61-1" name="__codelineno-61-1" href="#__codelineno-61-1"></a>Canceled termination of the ${eksClusterDisplayName} EKS cluster in the ${awsAccountDisplayName} AWS account in the ${regionDisplayName} region.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>Canceled</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>Canceled</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition info">
 <p class="admonition-title">ExocomputeAwsTeardownJobCanceling</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-62-1"><a id="__codelineno-62-1" name="__codelineno-62-1" href="#__codelineno-62-1"></a>Canceling termination of the ${eksClusterDisplayName} EKS cluster in the ${awsAccountDisplayName} AWS account in the ${regionDisplayName} region.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>Canceling</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>Canceling</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition failure">
 <p class="admonition-title">ExocomputeAwsTeardownJobFailed</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-63-1"><a id="__codelineno-63-1" name="__codelineno-63-1" href="#__codelineno-63-1"></a>Failed to terminate the ${eksClusterDisplayName} EKS cluster in the ${awsAccountDisplayName} AWS account in the ${regionDisplayName} region. Reason: ${reason}.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Critical</strong></td><td><strong>Failure</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Critical</strong></td>
+<td><strong>Failure</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition info">
 <p class="admonition-title">ExocomputeAwsTeardownJobStarted</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-64-1"><a id="__codelineno-64-1" name="__codelineno-64-1" href="#__codelineno-64-1"></a>Terminating the ${eksClusterDisplayName} EKS cluster in the ${awsAccountDisplayName} AWS account in the ${regionDisplayName} region.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>TaskSuccess</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>TaskSuccess</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition info">
 <p class="admonition-title">ExocomputeAwsTeardownJobSucceeded</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-65-1"><a id="__codelineno-65-1" name="__codelineno-65-1" href="#__codelineno-65-1"></a>Successfully terminated the ${eksClusterDisplayName} EKS cluster in the ${awsAccountDisplayName} AWS account in the ${regionDisplayName} region.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>Success</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>Success</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition info">
 <p class="admonition-title">ExocomputeAzureSetupJobCanceled</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-66-1"><a id="__codelineno-66-1" name="__codelineno-66-1" href="#__codelineno-66-1"></a>Canceled set up of the Azure Kubernetes Cluster in the resource group ${resourceGroupName} in the region ${azureRegionDisplayName} of the Azure subscription ${subscriptionDisplayName}.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>Canceled</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>Canceled</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition info">
 <p class="admonition-title">ExocomputeAzureSetupJobCanceling</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-67-1"><a id="__codelineno-67-1" name="__codelineno-67-1" href="#__codelineno-67-1"></a>Canceling set up of the Azure Kubernetes Cluster in the resource group ${resourceGroupName} in the region ${azureRegionDisplayName} of the Azure subscription ${subscriptionDisplayName}.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>Canceling</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>Canceling</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition failure">
 <p class="admonition-title">ExocomputeAzureSetupJobFailed</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-68-1"><a id="__codelineno-68-1" name="__codelineno-68-1" href="#__codelineno-68-1"></a>Failed to set up the Azure Kubernetes Cluster in the resource group ${resourceGroupName} in the region ${azureRegionDisplayName} of the Azure subscription ${subscriptionDisplayName}. Reason: ${reason}.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Critical</strong></td><td><strong>Failure</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Critical</strong></td>
+<td><strong>Failure</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition info">
 <p class="admonition-title">ExocomputeAzureSetupJobStarted</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-69-1"><a id="__codelineno-69-1" name="__codelineno-69-1" href="#__codelineno-69-1"></a>Started set up of the Azure Kubernetes Cluster in the resource group ${resourceGroupName} in the region ${azureRegionDisplayName} of the Azure subscription ${subscriptionDisplayName}.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>TaskSuccess</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>TaskSuccess</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition info">
 <p class="admonition-title">ExocomputeAzureSetupJobSucceeded</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-70-1"><a id="__codelineno-70-1" name="__codelineno-70-1" href="#__codelineno-70-1"></a>Successfully set up the Azure Kubernetes Cluster ${aksClusterDisplayName} in the resource group ${resourceGroupName} in the region ${azureRegionDisplayName} of the Azure subscription ${subscriptionDisplayName}.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>Success</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>Success</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition info">
 <p class="admonition-title">ExocomputeAzureTeardownJobCanceled</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-71-1"><a id="__codelineno-71-1" name="__codelineno-71-1" href="#__codelineno-71-1"></a>Canceled termination of the Azure Kubernetes Cluster ${aksClusterDisplayName} in the resource group ${resourceGroupName} in the region ${regionName} of the Azure subscription ${subscriptionName}.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>Canceled</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>Canceled</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition info">
 <p class="admonition-title">ExocomputeAzureTeardownJobCanceling</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-72-1"><a id="__codelineno-72-1" name="__codelineno-72-1" href="#__codelineno-72-1"></a>Canceling termination of the Azure Kubernetes Cluster ${aksClusterDisplayName} in the resource group ${resourceGroupName} in the region ${regionName} of the Azure subscription ${subscriptionName}.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>Canceling</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>Canceling</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition failure">
 <p class="admonition-title">ExocomputeAzureTeardownJobFailed</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-73-1"><a id="__codelineno-73-1" name="__codelineno-73-1" href="#__codelineno-73-1"></a>Failed to terminate the Azure Kubernetes Cluster ${aksClusterDisplayName} in the resource group ${resourceGroupName} in the region ${regionName} of the Azure subscription ${subscriptionName}. Reason: ${reason}.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Critical</strong></td><td><strong>Failure</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Critical</strong></td>
+<td><strong>Failure</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition info">
 <p class="admonition-title">ExocomputeAzureTeardownJobStarted</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-74-1"><a id="__codelineno-74-1" name="__codelineno-74-1" href="#__codelineno-74-1"></a>Terminating the Azure Kubernetes Cluster ${aksClusterDisplayName} in the resource group ${resourceGroupName} in the region ${regionName} of the Azure subscription ${subscriptionName}.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>TaskSuccess</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>TaskSuccess</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition info">
 <p class="admonition-title">ExocomputeAzureTeardownJobSucceeded</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-75-1"><a id="__codelineno-75-1" name="__codelineno-75-1" href="#__codelineno-75-1"></a>Successfully terminated the Azure Kubernetes Cluster ${aksClusterDisplayName} in the resource group ${resourceGroupName} in the region ${regionName} of the Azure subscription ${subscriptionName}.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>Success</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>Success</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition info">
 <p class="admonition-title">ExocomputeCloudNativeReconcilerJobCanceled</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-76-1"><a id="__codelineno-76-1" name="__codelineno-76-1" href="#__codelineno-76-1"></a>Canceled verification and configuration of the customer managed cluster ${clusterDisplayName} in the ${cloudAccountDisplayName} ${cloudTypeDisplayName} account in the ${regionDisplayName} region.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>Canceled</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>Canceled</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition info">
 <p class="admonition-title">ExocomputeCloudNativeReconcilerJobCanceling</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-77-1"><a id="__codelineno-77-1" name="__codelineno-77-1" href="#__codelineno-77-1"></a>Canceling verification and configuration of the customer managed cluster ${clusterDisplayName} in the ${cloudAccountDisplayName} ${cloudTypeDisplayName} account in the ${regionDisplayName} region.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>Canceling</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>Canceling</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition failure">
 <p class="admonition-title">ExocomputeCloudNativeReconcilerJobFailed</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-78-1"><a id="__codelineno-78-1" name="__codelineno-78-1" href="#__codelineno-78-1"></a>Failed to verify and configure the customer managed cluster ${clusterDisplayName} in the ${cloudAccountDisplayName} ${cloudTypeDisplayName} account in the ${regionDisplayName} region. Reason: ${reason}.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Critical</strong></td><td><strong>Failure</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Critical</strong></td>
+<td><strong>Failure</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition info">
 <p class="admonition-title">ExocomputeCloudNativeReconcilerJobStarted</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-79-1"><a id="__codelineno-79-1" name="__codelineno-79-1" href="#__codelineno-79-1"></a>Started verification and configuration of the customer managed cluster  ${clusterDisplayName} in the ${cloudAccountDisplayName} ${cloudTypeDisplayName} account in the ${regionDisplayName} region.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>TaskSuccess</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>TaskSuccess</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition info">
 <p class="admonition-title">ExocomputeCloudNativeReconcilerJobSucceeded</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-80-1"><a id="__codelineno-80-1" name="__codelineno-80-1" href="#__codelineno-80-1"></a>Successfully verified and configured customer managed cluster  ${clusterDisplayName} in the ${cloudAccountDisplayName}  ${cloudTypeDisplayName} account in the ${regionDisplayName} region.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>Success</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>Success</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition info">
 <p class="admonition-title">ExocomputeCustomerKMSSaved</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-81-1"><a id="__codelineno-81-1" name="__codelineno-81-1" href="#__codelineno-81-1"></a>User ${userEmail} entered customer KMS details for organization (${orgId}). Validated and persisted for key ${keyName} in vault ${vaultName}.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>Success</strong></td><td><strong>Yes</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>Success</strong></td>
+<td><strong>Yes</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition info">
 <p class="admonition-title">ExocomputeGCPSetupJobCanceled</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-82-1"><a id="__codelineno-82-1" name="__codelineno-82-1" href="#__codelineno-82-1"></a>Canceled setup of the GKE cluster in the ${gcpProjectDisplayName} GCP project in the ${regionDisplayName} region.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>Canceled</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>Canceled</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition info">
 <p class="admonition-title">ExocomputeGCPSetupJobCanceling</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-83-1"><a id="__codelineno-83-1" name="__codelineno-83-1" href="#__codelineno-83-1"></a>Canceling setup of the GKE cluster in the ${gcpProjectDisplayName} GCP project in the ${regionDisplayName} region.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>Canceling</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>Canceling</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition failure">
 <p class="admonition-title">ExocomputeGCPSetupJobFailed</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-84-1"><a id="__codelineno-84-1" name="__codelineno-84-1" href="#__codelineno-84-1"></a>Failed to setup GKE cluster in the ${gcpProjectDisplayName} GCP project in the ${regionDisplayName} region. Reason: ${reason}.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Critical</strong></td><td><strong>Failure</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Critical</strong></td>
+<td><strong>Failure</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition info">
 <p class="admonition-title">ExocomputeGCPSetupJobStarted</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-85-1"><a id="__codelineno-85-1" name="__codelineno-85-1" href="#__codelineno-85-1"></a>Started setup of the GKE cluster in the ${gcpProjectDisplayName} GCP project in the ${regionDisplayName} region.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>TaskSuccess</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>TaskSuccess</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition info">
 <p class="admonition-title">ExocomputeGCPSetupJobSucceeded</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-86-1"><a id="__codelineno-86-1" name="__codelineno-86-1" href="#__codelineno-86-1"></a>Successfully set up GKE cluster in the ${gcpProjectDisplayName} GCP project in the ${regionDisplayName} region.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>Success</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>Success</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition info">
 <p class="admonition-title">ExocomputeGCPTeardownJobCanceled</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-87-1"><a id="__codelineno-87-1" name="__codelineno-87-1" href="#__codelineno-87-1"></a>Canceled termination of the ${gkeClusterDisplayName} GKE cluster in the  ${gcpProjectDisplayName} GCP project in the ${regionDisplayName} region.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>Canceled</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>Canceled</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition info">
 <p class="admonition-title">ExocomputeGCPTeardownJobCanceling</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-88-1"><a id="__codelineno-88-1" name="__codelineno-88-1" href="#__codelineno-88-1"></a>Canceling termination of the ${gkeClusterDisplayName} GKE cluster in the ${gcpProjectDisplayName} GCP project in the ${regionDisplayName} region.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>Canceling</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>Canceling</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition failure">
 <p class="admonition-title">ExocomputeGCPTeardownJobFailed</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-89-1"><a id="__codelineno-89-1" name="__codelineno-89-1" href="#__codelineno-89-1"></a>Failed to terminate the ${gkeClusterDisplayName} GKE cluster in the  ${gcpProjectDisplayName} GCP project in the ${regionDisplayName} region. Reason: ${reason}.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Critical</strong></td><td><strong>Failure</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Critical</strong></td>
+<td><strong>Failure</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition info">
 <p class="admonition-title">ExocomputeGCPTeardownJobStarted</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-90-1"><a id="__codelineno-90-1" name="__codelineno-90-1" href="#__codelineno-90-1"></a>Terminating the ${gkeClusterDisplayName} GKE cluster in the ${gcpProjectDisplayName} GCP project in the ${regionDisplayName} region.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>TaskSuccess</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>TaskSuccess</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition info">
 <p class="admonition-title">ExocomputeGCPTeardownJobSucceeded</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-91-1"><a id="__codelineno-91-1" name="__codelineno-91-1" href="#__codelineno-91-1"></a>Successfully terminated the ${gkeClusterDisplayName} GKE cluster in the  ${gcpProjectDisplayName} GCP account in the ${regionDisplayName} region.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>Success</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>Success</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition info">
 <p class="admonition-title">ExocomputeResourceProvideRegistrationCompleted</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-92-1"><a id="__codelineno-92-1" name="__codelineno-92-1" href="#__codelineno-92-1"></a>Completed registration of Azure Resource Providers for subscription ${subscriptionID}.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>Success</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>Success</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition warning">
 <p class="admonition-title">ExocomputeResourceProvideRegistrationFailed</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-93-1"><a id="__codelineno-93-1" name="__codelineno-93-1" href="#__codelineno-93-1"></a>Failed during registration of Azure Resource Providers for subscription ${subscriptionID}.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Warning</strong></td><td><strong>Failure</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Warning</strong></td>
+<td><strong>Failure</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition info">
 <p class="admonition-title">ExocomputeResourceProvideRegistrationStarted</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-94-1"><a id="__codelineno-94-1" name="__codelineno-94-1" href="#__codelineno-94-1"></a>Started registration of Azure Resource Providers for subscription ${subscriptionID}.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>Running</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>Running</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition warning">
 <p class="admonition-title">HealthCheckTaskFailed</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-95-1"><a id="__codelineno-95-1" name="__codelineno-95-1" href="#__codelineno-95-1"></a>Failed health check for the Kubernetes cluster. Reason: ${reason}.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Warning</strong></td><td><strong>TaskFailure</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Warning</strong></td>
+<td><strong>TaskFailure</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition warning">
 <p class="admonition-title">HealthCheckTaskFailedForPoweredOffCluster</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-96-1"><a id="__codelineno-96-1" name="__codelineno-96-1" href="#__codelineno-96-1"></a>The powered-off AKS cluster, ${clusterName}, in resource group, ${rgName},  within Azure subscription, ${subscriptionID} failed the health check.  You can either start the AKS cluster to avoid data protection compliance  issues or delete the M365 subscription if you want to power down the  AKS cluster permanently.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Warning</strong></td><td><strong>TaskFailure</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Warning</strong></td>
+<td><strong>TaskFailure</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition info">
 <p class="admonition-title">HealthCheckTaskStarted</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-97-1"><a id="__codelineno-97-1" name="__codelineno-97-1" href="#__codelineno-97-1"></a>Checking health of the Kubernetes Cluster.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>Running</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>Running</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition info">
 <p class="admonition-title">HealthCheckTaskSucceeded</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-98-1"><a id="__codelineno-98-1" name="__codelineno-98-1" href="#__codelineno-98-1"></a>Successfully completed health check for the Kubernetes Cluster.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>TaskSuccess</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>TaskSuccess</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition warning">
 <p class="admonition-title">HealthCheckTaskWarning</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-99-1"><a id="__codelineno-99-1" name="__codelineno-99-1" href="#__codelineno-99-1"></a>${error}
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Warning</strong></td><td><strong>Failure</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Warning</strong></td>
+<td><strong>Failure</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition warning">
 <p class="admonition-title">LaunchAKSClusterTaskFailed</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-100-1"><a id="__codelineno-100-1" name="__codelineno-100-1" href="#__codelineno-100-1"></a>Failed to launch the Azure Kubernetes Cluster in the resource group ${resourceGroupDisplayName} in the region ${azureRegionDisplayName} of the Azure subscription ${subscriptionDisplayName}.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Warning</strong></td><td><strong>TaskFailure</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Warning</strong></td>
+<td><strong>TaskFailure</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition info">
 <p class="admonition-title">LaunchAKSClusterTaskStarted</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-101-1"><a id="__codelineno-101-1" name="__codelineno-101-1" href="#__codelineno-101-1"></a>Launching the Azure Kubernetes Cluster in the resource group ${resourceGroupDisplayName} in the region ${azureRegionDisplayName} of the Azure subscription ${subscriptionDisplayName}.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>Running</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>Running</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition info">
 <p class="admonition-title">LaunchAKSClusterTaskSucceeded</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-102-1"><a id="__codelineno-102-1" name="__codelineno-102-1" href="#__codelineno-102-1"></a>Successfully launched the Azure Kubernetes Cluster ${aksClusterDisplayName} in the resource group ${resourceGroupDisplayName} in the region ${azureRegionDisplayName} of the Azure subscription ${subscriptionDisplayName}.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>TaskSuccess</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>TaskSuccess</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition warning">
 <p class="admonition-title">LaunchEKSClusterTaskFailed</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-103-1"><a id="__codelineno-103-1" name="__codelineno-103-1" href="#__codelineno-103-1"></a>Failed to launch the ${eksClusterDisplayName} EKS cluster.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Warning</strong></td><td><strong>TaskFailure</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Warning</strong></td>
+<td><strong>TaskFailure</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition info">
 <p class="admonition-title">LaunchEKSClusterTaskStarted</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-104-1"><a id="__codelineno-104-1" name="__codelineno-104-1" href="#__codelineno-104-1"></a>Launching the ${eksClusterDisplayName} EKS cluster.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>Running</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>Running</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition info">
 <p class="admonition-title">LaunchEKSClusterTaskSucceeded</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-105-1"><a id="__codelineno-105-1" name="__codelineno-105-1" href="#__codelineno-105-1"></a>Successfully launched the ${eksClusterDisplayName} EKS cluster.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>TaskSuccess</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>TaskSuccess</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition warning">
 <p class="admonition-title">LaunchGKEClusterTaskFailed</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-106-1"><a id="__codelineno-106-1" name="__codelineno-106-1" href="#__codelineno-106-1"></a>Failed to launch the ${gkeClusterDisplayName} GKE cluster in the  ${gcpProjectDisplayName} GCP project in the ${regionDisplayName} region.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Warning</strong></td><td><strong>TaskFailure</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Warning</strong></td>
+<td><strong>TaskFailure</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition info">
 <p class="admonition-title">LaunchGKEClusterTaskStarted</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-107-1"><a id="__codelineno-107-1" name="__codelineno-107-1" href="#__codelineno-107-1"></a>Launching the ${gkeClusterDisplayName} GKE cluster in the  ${gcpProjectDisplayName} GCP project in the ${regionDisplayName} region.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>Running</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>Running</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition info">
 <p class="admonition-title">LaunchGKEClusterTaskSucceeded</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-108-1"><a id="__codelineno-108-1" name="__codelineno-108-1" href="#__codelineno-108-1"></a>Successfully launched the ${gkeClusterDisplayName} GKE cluster in the  ${gcpProjectDisplayName} GCP project in the ${regionDisplayName} region.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>TaskSuccess</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>TaskSuccess</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition warning">
 <p class="admonition-title">LaunchWorkerNodesTaskFailed</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-109-1"><a id="__codelineno-109-1" name="__codelineno-109-1" href="#__codelineno-109-1"></a>Failed to launch worker nodes in the ${eksClusterDisplayName} EKS cluster.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Warning</strong></td><td><strong>TaskFailure</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Warning</strong></td>
+<td><strong>TaskFailure</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition info">
 <p class="admonition-title">LaunchWorkerNodesTaskStarted</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-110-1"><a id="__codelineno-110-1" name="__codelineno-110-1" href="#__codelineno-110-1"></a>Launching worker nodes in the ${eksClusterDisplayName} EKS cluster.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>Running</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>Running</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition info">
 <p class="admonition-title">LaunchWorkerNodesTaskSucceeded</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-111-1"><a id="__codelineno-111-1" name="__codelineno-111-1" href="#__codelineno-111-1"></a>Launched worker nodes in the ${eksClusterDisplayName} EKS cluster.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>TaskSuccess</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>TaskSuccess</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition warning">
 <p class="admonition-title">O365CleanStaleResources</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-112-1"><a id="__codelineno-112-1" name="__codelineno-112-1" href="#__codelineno-112-1"></a>Please delete following stale resource from Azure Portal: ${resources}.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Warning</strong></td><td><strong>Failure</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Warning</strong></td>
+<td><strong>Failure</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition failure">
 <p class="admonition-title">O365SetupExocomputeFailed</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-113-1"><a id="__codelineno-113-1" name="__codelineno-113-1" href="#__codelineno-113-1"></a>${userID} failed to deploy Rubrik Office 365 protection software in ${exocomputeName}. Reason: ${reason}.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Critical</strong></td><td><strong>Failure</strong></td><td><strong>Yes</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Critical</strong></td>
+<td><strong>Failure</strong></td>
+<td><strong>Yes</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition failure">
 <p class="admonition-title">O365SetupExocomputeFailed</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-114-1"><a id="__codelineno-114-1" name="__codelineno-114-1" href="#__codelineno-114-1"></a>Failed to deploy Rubrik Office 365 protection software in ${exocomputeName}: ${reason} (Error ID: ${errorID})
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Critical</strong></td><td><strong>Failure</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Critical</strong></td>
+<td><strong>Failure</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition info">
 <p class="admonition-title">O365SetupExocomputeStarted</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-115-1"><a id="__codelineno-115-1" name="__codelineno-115-1" href="#__codelineno-115-1"></a>${userID} started deploying Rubrik Office 365 protection software in ${exocomputeName}.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>Success</strong></td><td><strong>Yes</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>Success</strong></td>
+<td><strong>Yes</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition info">
 <p class="admonition-title">O365SetupExocomputeStarted</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-116-1"><a id="__codelineno-116-1" name="__codelineno-116-1" href="#__codelineno-116-1"></a>Deploying Rubrik Office 365 protection software in ${exocomputeName}.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>Running</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>Running</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition info">
 <p class="admonition-title">O365SetupExocomputeSucceeded</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-117-1"><a id="__codelineno-117-1" name="__codelineno-117-1" href="#__codelineno-117-1"></a>Successfully deployed Rubrik Office 365 protection software in ${exocomputeName}.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>Success</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>Success</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition info">
 <p class="admonition-title">O365SetupResourceStarted</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-118-1"><a id="__codelineno-118-1" name="__codelineno-118-1" href="#__codelineno-118-1"></a>Setting up ${resource} in ${exocomputeName}.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>Running</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>Running</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition info">
 <p class="admonition-title">O365SetupResourceSucceeded</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-119-1"><a id="__codelineno-119-1" name="__codelineno-119-1" href="#__codelineno-119-1"></a>Successfully set up ${resource} in ${exocomputeName}.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>TaskSuccess</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>TaskSuccess</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition warning">
 <p class="admonition-title">SetupClusterTaskFailed</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-120-1"><a id="__codelineno-120-1" name="__codelineno-120-1" href="#__codelineno-120-1"></a>Failed to configure the customer managed cluster ${clusterDisplayName}. Reason: ${reason}.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Warning</strong></td><td><strong>TaskFailure</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Warning</strong></td>
+<td><strong>TaskFailure</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition info">
 <p class="admonition-title">SetupClusterTaskStarted</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-121-1"><a id="__codelineno-121-1" name="__codelineno-121-1" href="#__codelineno-121-1"></a>Configuring the customer managed cluster ${clusterDisplayName}.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>Running</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>Running</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition info">
 <p class="admonition-title">SetupClusterTaskSucceeded</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-122-1"><a id="__codelineno-122-1" name="__codelineno-122-1" href="#__codelineno-122-1"></a>Successfully configured the customer managed cluster ${clusterDisplayName}.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>TaskSuccess</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>TaskSuccess</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition warning">
 <p class="admonition-title">SetupEKSClusterTaskFailed</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-123-1"><a id="__codelineno-123-1" name="__codelineno-123-1" href="#__codelineno-123-1"></a>Failed to configure the ${eksClusterDisplayName} EKS cluster.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Warning</strong></td><td><strong>TaskFailure</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Warning</strong></td>
+<td><strong>TaskFailure</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition info">
 <p class="admonition-title">SetupEKSClusterTaskStarted</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-124-1"><a id="__codelineno-124-1" name="__codelineno-124-1" href="#__codelineno-124-1"></a>Configuring the ${eksClusterDisplayName} EKS cluster.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>Running</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>Running</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition info">
 <p class="admonition-title">SetupEKSClusterTaskSucceeded</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-125-1"><a id="__codelineno-125-1" name="__codelineno-125-1" href="#__codelineno-125-1"></a>Successfully configured the ${eksClusterDisplayName} EKS cluster.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>TaskSuccess</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>TaskSuccess</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition warning">
 <p class="admonition-title">SetupNetworkingTaskFailed</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-126-1"><a id="__codelineno-126-1" name="__codelineno-126-1" href="#__codelineno-126-1"></a>Failed to configure the networking resources for GKE cluster in the  ${gcpProjectDisplayName} GCP project in the ${regionDisplayName} region.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Warning</strong></td><td><strong>TaskFailure</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Warning</strong></td>
+<td><strong>TaskFailure</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition info">
 <p class="admonition-title">SetupNetworkingTaskStarted</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-127-1"><a id="__codelineno-127-1" name="__codelineno-127-1" href="#__codelineno-127-1"></a>Configuring the networking resources for GKE cluster in the  ${gcpProjectDisplayName} GCP project in the ${regionDisplayName} region.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>Running</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>Running</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition info">
 <p class="admonition-title">SetupNetworkingTaskSucceeded</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-128-1"><a id="__codelineno-128-1" name="__codelineno-128-1" href="#__codelineno-128-1"></a>Successfully configured the networking resources for GKE cluster in the  ${gcpProjectDisplayName} GCP project in the ${regionDisplayName} region.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>TaskSuccess</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>TaskSuccess</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <h2 id="kms_key_vault">kms_key_vault</h2>
 <hr />
@@ -6564,8 +8370,22 @@
 <p class="admonition-title">KmsKeyVaultHealthCheckFailure</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-129-1"><a id="__codelineno-129-1" name="__codelineno-129-1" href="#__codelineno-129-1"></a>Connectivity health check failed for KMS ${kmsName} of type ${kmsType}.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Critical</strong></td><td><strong>Failure</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Critical</strong></td>
+<td><strong>Failure</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <h2 id="korg">korg</h2>
 <hr />
@@ -6573,50 +8393,148 @@
 <p class="admonition-title">CanaryFailed</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-130-1"><a id="__codelineno-130-1" name="__codelineno-130-1" href="#__codelineno-130-1"></a>Canary job failed for object ${object}. Reason: ${reason}.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Warning</strong></td><td><strong>Failure</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Warning</strong></td>
+<td><strong>Failure</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition info">
 <p class="admonition-title">CanaryFinished</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-131-1"><a id="__codelineno-131-1" name="__codelineno-131-1" href="#__codelineno-131-1"></a>Canary job finished for object ${object}.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>Success</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>Success</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition info">
 <p class="admonition-title">CanaryStarted</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-132-1"><a id="__codelineno-132-1" name="__codelineno-132-1" href="#__codelineno-132-1"></a>Canary job started for object ${object}.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>Running</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>Running</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition info">
 <p class="admonition-title">JobCanceled</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-133-1"><a id="__codelineno-133-1" name="__codelineno-133-1" href="#__codelineno-133-1"></a>Job instance ${jobInstanceID} canceled.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>Canceled</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>Canceled</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition info">
 <p class="admonition-title">JobCancellationIssued</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-134-1"><a id="__codelineno-134-1" name="__codelineno-134-1" href="#__codelineno-134-1"></a>Cancellation request issued for job instance ${jobInstanceID}.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>Canceling</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>Canceling</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition info">
 <p class="admonition-title">JobCancellationIssuedByUser</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-135-1"><a id="__codelineno-135-1" name="__codelineno-135-1" href="#__codelineno-135-1"></a>Cancellation request received for job instance ${jobInstanceID} by user ${user}.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>TaskSuccess</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>TaskSuccess</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition info">
 <p class="admonition-title">NonTerminalSeriesFailureRetry</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-136-1"><a id="__codelineno-136-1" name="__codelineno-136-1" href="#__codelineno-136-1"></a>The failed job will be retried automatically.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>TaskSuccess</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>TaskSuccess</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <h2 id="o365">o365</h2>
 <hr />
@@ -6624,239 +8542,715 @@
 <p class="admonition-title">InsufficientO365AppsOfType</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-137-1"><a id="__codelineno-137-1" name="__codelineno-137-1" href="#__codelineno-137-1"></a>The number of ${snappableType} apps (${appCount}) authenticated for ${orgName} is not sufficient to meet the configured SLAs. We recommend increasing the number of apps to ${recommendedAppCount}. Add ${snappableType} apps via the Manage Enterprise Apps button on the Microsoft 365 inventory page.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Warning</strong></td><td><strong>Failure</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Warning</strong></td>
+<td><strong>Failure</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition info">
 <p class="admonition-title">M365BackupStorageSyncCanceled</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-138-1"><a id="__codelineno-138-1" name="__codelineno-138-1" href="#__codelineno-138-1"></a>Canceled backup storage sync for Microsoft 365 subscription ${orgName}.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>Canceled</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>Canceled</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition failure">
 <p class="admonition-title">M365BackupStorageSyncFailed</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-139-1"><a id="__codelineno-139-1" name="__codelineno-139-1" href="#__codelineno-139-1"></a>Failed to complete backup storage sync for Microsoft 365 subscription  ${orgName}. Reason: ${reason}
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Critical</strong></td><td><strong>Failure</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Critical</strong></td>
+<td><strong>Failure</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition info">
 <p class="admonition-title">M365BackupStorageSyncStarted</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-140-1"><a id="__codelineno-140-1" name="__codelineno-140-1" href="#__codelineno-140-1"></a>Started backup storage sync for Microsoft 365 subscription ${orgName}
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>TaskSuccess</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>TaskSuccess</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition info">
 <p class="admonition-title">M365BackupStorageSyncStateTransitionStats</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-141-1"><a id="__codelineno-141-1" name="__codelineno-141-1" href="#__codelineno-141-1"></a>${count} object(s) state changed from ${fromState} to ${toState}
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>TaskSuccess</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>TaskSuccess</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition info">
 <p class="admonition-title">M365BackupStorageSyncSucceeded</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-142-1"><a id="__codelineno-142-1" name="__codelineno-142-1" href="#__codelineno-142-1"></a>Completed backup storage sync for Microsoft 365 subscription ${orgName}
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>Success</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>Success</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition failure">
 <p class="admonition-title">O365DeleteOrgFailed</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-143-1"><a id="__codelineno-143-1" name="__codelineno-143-1" href="#__codelineno-143-1"></a>Failed to delete Microsoft 365 Subscription ${orgName}: ${reason} (Error ID: ${errorID}). For more information on this error please visit https://support.rubrik.com/articles/How_To/000002821
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Critical</strong></td><td><strong>Failure</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Critical</strong></td>
+<td><strong>Failure</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition info">
 <p class="admonition-title">O365DeleteOrgStarted</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-144-1"><a id="__codelineno-144-1" name="__codelineno-144-1" href="#__codelineno-144-1"></a>Started deletion of O365 Subscription ${orgName}
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>Running</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>Running</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition info">
 <p class="admonition-title">O365DeleteOrgSucceeded</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-145-1"><a id="__codelineno-145-1" name="__codelineno-145-1" href="#__codelineno-145-1"></a>Successfully deleted Microsoft 365 Subscription ${orgName}
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>Success</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>Success</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition warning">
 <p class="admonition-title">O365DeleteOrgTaskFailed</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-146-1"><a id="__codelineno-146-1" name="__codelineno-146-1" href="#__codelineno-146-1"></a>Failed to delete Microsoft 365 Subscription ${orgName}. Retrying. Reason: ${reason}
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Warning</strong></td><td><strong>TaskFailure</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Warning</strong></td>
+<td><strong>TaskFailure</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition info">
 <p class="admonition-title">O365RefreshOrgAddedDocLibStats</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-147-1"><a id="__codelineno-147-1" name="__codelineno-147-1" href="#__codelineno-147-1"></a>Discovered ${numAdded} new document libraries
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>TaskSuccess</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>TaskSuccess</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition info">
 <p class="admonition-title">O365RefreshOrgAddedSharePointListStats</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-148-1"><a id="__codelineno-148-1" name="__codelineno-148-1" href="#__codelineno-148-1"></a>Discovered ${numAdded} new sharepoint lists
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>TaskSuccess</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>TaskSuccess</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition info">
 <p class="admonition-title">O365RefreshOrgAddedSiteCollectionStats</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-149-1"><a id="__codelineno-149-1" name="__codelineno-149-1" href="#__codelineno-149-1"></a>Discovered ${numAdded} new site collections(s)
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>TaskSuccess</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>TaskSuccess</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition info">
 <p class="admonition-title">O365RefreshOrgAddedSiteStats</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-150-1"><a id="__codelineno-150-1" name="__codelineno-150-1" href="#__codelineno-150-1"></a>Discovered ${numAdded} new site(s)
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>TaskSuccess</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>TaskSuccess</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition info">
 <p class="admonition-title">O365RefreshOrgAddedTeamAndChannelStats</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-151-1"><a id="__codelineno-151-1" name="__codelineno-151-1" href="#__codelineno-151-1"></a>Discovered ${numTeamsAdded} new team(s) and ${numChannelsAdded} new channel(s)
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>TaskSuccess</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>TaskSuccess</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition info">
 <p class="admonition-title">O365RefreshOrgAddedUserStats</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-152-1"><a id="__codelineno-152-1" name="__codelineno-152-1" href="#__codelineno-152-1"></a>Discovered ${numAdded} new user(s)
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>TaskSuccess</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>TaskSuccess</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition info">
 <p class="admonition-title">O365RefreshOrgArchivedTeamAndChannelStats</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-153-1"><a id="__codelineno-153-1" name="__codelineno-153-1" href="#__codelineno-153-1"></a>Archived ${numTeamsArchived} team(s) and ${numChannelsArchived} channel(s)
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>TaskSuccess</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>TaskSuccess</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition info">
 <p class="admonition-title">O365RefreshOrgCanceled</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-154-1"><a id="__codelineno-154-1" name="__codelineno-154-1" href="#__codelineno-154-1"></a>Canceled ${maintenanceType} metadata refresh for subscription ${orgName}
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>Canceled</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>Canceled</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition info">
 <p class="admonition-title">O365RefreshOrgNewRegionsStats</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-155-1"><a id="__codelineno-155-1" name="__codelineno-155-1" href="#__codelineno-155-1"></a>Added new M365 regions (${newRegions}) to (${existingRegions}).
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>TaskSuccess</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>TaskSuccess</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition info">
 <p class="admonition-title">O365RefreshOrgRemovedSharePointObjectStats</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-156-1"><a id="__codelineno-156-1" name="__codelineno-156-1" href="#__codelineno-156-1"></a>Removed ${numRemoved} SharePoint object(s).
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>TaskSuccess</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>TaskSuccess</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition info">
 <p class="admonition-title">O365RefreshOrgRemovedUserStats</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-157-1"><a id="__codelineno-157-1" name="__codelineno-157-1" href="#__codelineno-157-1"></a>Removed ${numRemoved} user(s): ${removedUserList}
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>TaskSuccess</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>TaskSuccess</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition info">
 <p class="admonition-title">O365RefreshOrgSkippedLockedSiteCollectionStats</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-158-1"><a id="__codelineno-158-1" name="__codelineno-158-1" href="#__codelineno-158-1"></a>Skipped ${numSkipped} locked site collections
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>TaskSuccess</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>TaskSuccess</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition info">
 <p class="admonition-title">O365RefreshOrgStarted</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-159-1"><a id="__codelineno-159-1" name="__codelineno-159-1" href="#__codelineno-159-1"></a>Started ${maintenanceType} metadata refresh for subscription ${orgName}
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>TaskSuccess</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>TaskSuccess</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition info">
 <p class="admonition-title">O365RefreshOrgSucceeded</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-160-1"><a id="__codelineno-160-1" name="__codelineno-160-1" href="#__codelineno-160-1"></a>Completed ${maintenanceType} metadata refresh for subscription ${orgName}
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>Success</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>Success</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition warning">
 <p class="admonition-title">O365RefreshOrgUnverifiedUserStats</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-161-1"><a id="__codelineno-161-1" name="__codelineno-161-1" href="#__codelineno-161-1"></a>Unable to verify mailbox access for ${numUnverified} user(s): ${unverifiedUserList}
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Warning</strong></td><td><strong>TaskSuccess</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Warning</strong></td>
+<td><strong>TaskSuccess</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition info">
 <p class="admonition-title">O365RefreshOrgUpdatedDocLibStats</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-162-1"><a id="__codelineno-162-1" name="__codelineno-162-1" href="#__codelineno-162-1"></a>Updated metadata for ${numUpdated} document libraries
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>TaskSuccess</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>TaskSuccess</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition info">
 <p class="admonition-title">O365RefreshOrgUpdatedSharePointListStats</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-163-1"><a id="__codelineno-163-1" name="__codelineno-163-1" href="#__codelineno-163-1"></a>Updated metadata for ${numUpdated} sharepoint lists
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>TaskSuccess</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>TaskSuccess</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition info">
 <p class="admonition-title">O365RefreshOrgUpdatedSiteCollectionStats</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-164-1"><a id="__codelineno-164-1" name="__codelineno-164-1" href="#__codelineno-164-1"></a>Updated metadata for ${numUpdated} siteCollections(s)
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>TaskSuccess</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>TaskSuccess</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition info">
 <p class="admonition-title">O365RefreshOrgUpdatedSiteStats</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-165-1"><a id="__codelineno-165-1" name="__codelineno-165-1" href="#__codelineno-165-1"></a>Updated metadata for ${numUpdated} site(s)
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>TaskSuccess</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>TaskSuccess</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition info">
 <p class="admonition-title">O365RefreshOrgUpdatedTeamAndChannelStats</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-166-1"><a id="__codelineno-166-1" name="__codelineno-166-1" href="#__codelineno-166-1"></a>Updated metadata for ${numTeamsUpdated} team(s) and ${numChannelsUpdated} channel(s)
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>TaskSuccess</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>TaskSuccess</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition info">
 <p class="admonition-title">O365RefreshOrgUpdatedUserStats</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-167-1"><a id="__codelineno-167-1" name="__codelineno-167-1" href="#__codelineno-167-1"></a>Updated metadata for ${numUpdated} user(s)
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>TaskSuccess</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>TaskSuccess</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition warning">
 <p class="admonition-title">ProtectedMailboxLimitBreach</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-168-1"><a id="__codelineno-168-1" name="__codelineno-168-1" href="#__codelineno-168-1"></a>We&#39;re glad that our protection is helping! We&#39;re now protecting more mailboxes than your current licenses allow. We are protecting ${total_protected_licensed_mailbox} licensed mailboxes but the number allowed by your current licenses is ${allowed_protected_licensed_mailbox_limit}. We are protecting ${total_protected_unlicensed_mailbox} shared mailboxes but the number allowed by your current licenses is ${allowed_protected_unlicensed_mailbox_limit}. No need to worry though, we&#39;ll keep protecting the excess mailboxes for the next 30 days. During that time please reach out to the Rubrik Sales team to purchase additional licenses, or please remove ${overage_count} mailboxes. Please refer to ${learn_more_link} for more details. Thanks for being a great customer!
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Warning</strong></td><td><strong>Success</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Warning</strong></td>
+<td><strong>Success</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition warning">
 <p class="admonition-title">ProtectedOneDriveLimitBreach</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-169-1"><a id="__codelineno-169-1" name="__codelineno-169-1" href="#__codelineno-169-1"></a>We&#39;re glad that our protection is helping! We&#39;re now protecting more OneDrives than your current licenses allow. We are protecting ${total_protected_onedrive} OneDrives but the number allowed by your current licenses is ${allowed_protected_onedrive_limit}. No need to worry though, we&#39;ll keep protecting the excess OneDrives for the next 30 days. During that time please reach out to the Rubrik Sales team to purchase additional licenses, or please remove ${overage} mailboxes. Please refer to ${learn_more_link} for more details. Thanks for being a great customer!
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Warning</strong></td><td><strong>Success</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Warning</strong></td>
+<td><strong>Success</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition warning">
 <p class="admonition-title">RefreshO365OrgFailed</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-170-1"><a id="__codelineno-170-1" name="__codelineno-170-1" href="#__codelineno-170-1"></a>Failed ${maintenanceType} metadata refresh of subscription ${orgName}: ${reason} (Error ID: ${errorID}). For more information on this error please visit https://support.rubrik.com/articles/How_To/000002821
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Warning</strong></td><td><strong>Failure</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Warning</strong></td>
+<td><strong>Failure</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <h2 id="polaris_disaster_recovery">polaris_disaster_recovery</h2>
 <hr />
@@ -6864,64 +9258,190 @@
 <p class="admonition-title">PolarisComponentRecoveryFailure</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-171-1"><a id="__codelineno-171-1" name="__codelineno-171-1" href="#__codelineno-171-1"></a>Recovery of ${component} failed.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Warning</strong></td><td><strong>Failure</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Warning</strong></td>
+<td><strong>Failure</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition info">
 <p class="admonition-title">PolarisComponentRecoveryStarted</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-172-1"><a id="__codelineno-172-1" name="__codelineno-172-1" href="#__codelineno-172-1"></a>Recovery of ${component} has begun.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>TaskSuccess</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>TaskSuccess</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition info">
 <p class="admonition-title">PolarisComponentRecoverySuccess</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-173-1"><a id="__codelineno-173-1" name="__codelineno-173-1" href="#__codelineno-173-1"></a>Recovery of ${component} has completed successfully.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>Success</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>Success</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition failure">
 <p class="admonition-title">PolarisDisasterRecoveryFailure</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-174-1"><a id="__codelineno-174-1" name="__codelineno-174-1" href="#__codelineno-174-1"></a>Disaster recovery failed.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Critical</strong></td><td><strong>Failure</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Critical</strong></td>
+<td><strong>Failure</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition info">
 <p class="admonition-title">PolarisDisasterRecoveryStarted</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-175-1"><a id="__codelineno-175-1" name="__codelineno-175-1" href="#__codelineno-175-1"></a>Beginning disaster recovery.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>TaskSuccess</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>TaskSuccess</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition info">
 <p class="admonition-title">PolarisDisasterRecoverySuccess</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-176-1"><a id="__codelineno-176-1" name="__codelineno-176-1" href="#__codelineno-176-1"></a>Disaster recovery has completed successfully.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>Success</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>Success</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition info">
 <p class="admonition-title">PolarisServiceStartBeginning</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-177-1"><a id="__codelineno-177-1" name="__codelineno-177-1" href="#__codelineno-177-1"></a>Returning services to running state.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>TaskSuccess</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>TaskSuccess</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition failure">
 <p class="admonition-title">PolarisServiceStartFailure</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-178-1"><a id="__codelineno-178-1" name="__codelineno-178-1" href="#__codelineno-178-1"></a>Failed to bring up services. Please run `cluster disaster_recovery revert` from the Admin CLI.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Critical</strong></td><td><strong>Failure</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Critical</strong></td>
+<td><strong>Failure</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition info">
 <p class="admonition-title">PolarisServiceStartSuccess</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-179-1"><a id="__codelineno-179-1" name="__codelineno-179-1" href="#__codelineno-179-1"></a>Services successfully returned to running state.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>Success</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>Success</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <h2 id="rcv">rcv</h2>
 <hr />
@@ -6929,57 +9449,169 @@
 <p class="admonition-title">RcvAccessRemovedNotification</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-180-1"><a id="__codelineno-180-1" name="__codelineno-180-1" href="#__codelineno-180-1"></a>Access to your Rubrik Cloud Vault (RCV) locations for the ${tier}  tier in ${bundle} with ${redundancy} redundancy was removed on  ${removeAccessDate}. If you don&#39;t renew your license, all backups in  these locations will be deleted on ${deleteDataDate}.  To renew your RCV license  and prevent the deletion of your backups, contact your Rubrik account  representative or email sales@rubrik.com.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Warning</strong></td><td><strong>Success</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Warning</strong></td>
+<td><strong>Success</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition warning">
 <p class="admonition-title">RcvConsumptionNotification</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-181-1"><a id="__codelineno-181-1" name="__codelineno-181-1" href="#__codelineno-181-1"></a>Your Rubrik Cloud Vault (RCV) locations for the  ${tier} tier in ${bundle} with ${redundancy} redundancy have been  paused. As a result, no new backups can be uploaded. However, you can  still access previously uploaded backups in these locations. Uploaded  backups will expire based on the retention period defined in their  SLA Domains.  To purchase additional RCV capacity, contact  your Rubrik account representative or email sales@rubrik.com.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Warning</strong></td><td><strong>Success</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Warning</strong></td>
+<td><strong>Success</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition warning">
 <p class="admonition-title">RcvDataDeletionNotification</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-182-1"><a id="__codelineno-182-1" name="__codelineno-182-1" href="#__codelineno-182-1"></a>Your backups in Rubrik Cloud Vault (RCV) locations for the ${tier}  tier in ${bundle} with ${redundancy} redundancy were deleted on  ${deleteDataDate}.  Your RCV Locations using RCV  ${tier} tier in ${bundle} regions have been deleted.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Warning</strong></td><td><strong>Success</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Warning</strong></td>
+<td><strong>Success</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition warning">
 <p class="admonition-title">RcvExpirationNotification</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-183-1"><a id="__codelineno-183-1" name="__codelineno-183-1" href="#__codelineno-183-1"></a>Your Rubrik Cloud Vault (RCV) locations for the  ${tier} tier in ${bundle} with ${redundancy} redundancy were paused. As  a result, no new backups will be uploaded. However, you can still  access previously uploaded backups in these locations. Uploaded backups  will expire based on the retention period defined in their SLA  Domains. If you do not renew your license, your access to these  locations will be removed on ${removeAccessDate}, and all backups  in these locations will be deleted on ${deleteDataDate}.  To renew your RCV  license and prevent the deletion of your backups, contact your Rubrik  account representative or email sales@rubrik.com.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Warning</strong></td><td><strong>Success</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Warning</strong></td>
+<td><strong>Success</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition warning">
 <p class="admonition-title">RcvForecastedConsumptionNotification</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-184-1"><a id="__codelineno-184-1" name="__codelineno-184-1" href="#__codelineno-184-1"></a>Based on your past and current consumption of  Rubrik Cloud Vault (RCV) ${tier} tier in ${bundle} regions,  we have forecasted that your consumption will exceed your  purchased entitlement on ${forecastCapacityExceedDate}.  When you exceed your license, no new backups will be uploaded  to RCV locations in ${tier} tier for ${bundle} regions  but you’ll still be able to access previously uploaded backups  in these locations. Uploaded backups will expire according to the  retention period defined in their SLA Domains.  To purchase additional Rubrik Cloud Vault (RCV) capacity, contact  your Rubrik account representative or email sales@rubrik.com.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Warning</strong></td><td><strong>Success</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Warning</strong></td>
+<td><strong>Success</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition warning">
 <p class="admonition-title">RCVPartialExpiryNotification</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-185-1"><a id="__codelineno-185-1" name="__codelineno-185-1" href="#__codelineno-185-1"></a>Capacity Expiring: ${expiredSize} TB  Expiration Date: ${expiryDate}  Capacity Not Expiring: ${remainingSize} TB  If you exceed your remaining license of ${remainingSize} TB, the  Rubrik Cloud Vault locations for ${tier} tier in regions that belong to  ${bundle} storage bundle with ${redundancy} redundancy will be paused.  As a result, no new backups can be uploaded but you will still be able  to access previously uploaded backups in these locations. Uploaded  backups will expire according to the retention period defined in their  SLA Domains. To prevent your backups from being paused, contact your  Rubrik account representative or email sales@rubrik.com to purchase  additional Rubrik Cloud Vault capacity.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Warning</strong></td><td><strong>Success</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Warning</strong></td>
+<td><strong>Success</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition warning">
 <p class="admonition-title">RcvPercentageConsumptionNotification</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-186-1"><a id="__codelineno-186-1" name="__codelineno-186-1" href="#__codelineno-186-1"></a>You have used ${percentage} percent of your Rubrik Cloud Vault (RCV) license. Once you have used 100 percent of your licensed capacity, the  Rubrik Cloud Vault (RCV) locations for ${tier} tier in ${bundle} with  ${redundancy} redundancy will be paused. As a result, no new backups  can be uploaded. However, you can still access previously  uploaded backups in these locations. Uploaded backups will expire  based on retention period defined in their SLA Domains.  To prevent your backups from being paused, contact your Rubrik account  representative or email sales@rubrik.com to purchase additional  RCV capacity.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Warning</strong></td><td><strong>Success</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Warning</strong></td>
+<td><strong>Success</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition warning">
 <p class="admonition-title">RcvPreliminaryExpirationNotification</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-187-1"><a id="__codelineno-187-1" name="__codelineno-187-1" href="#__codelineno-187-1"></a>Your Rubrik Cloud Vault (RCV) locations for the  ${tier} tier in ${bundle}  with ${redundancy} redundancy will be paused on ${expiryDate}. As a  result, no new backups will be uploaded. However, you can still  access previously uploaded backups in these locations. Uploaded backups  will expire based on the retention period defined in their SLA  Domains. If you do not renew your license, your access to these  locations will be removed on ${removeAccessDate}, and all backups  in these locations will be deleted on ${deleteDataDate}.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Warning</strong></td><td><strong>Success</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Warning</strong></td>
+<td><strong>Success</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <h2 id="saasapps">saasapps</h2>
 <hr />
@@ -6987,22 +9619,64 @@
 <p class="admonition-title">SaasAppsDeleteOrgFailed</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-188-1"><a id="__codelineno-188-1" name="__codelineno-188-1" href="#__codelineno-188-1"></a>Failed to delete SaaS organization ${orgName}: ${reason}.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Critical</strong></td><td><strong>Failure</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Critical</strong></td>
+<td><strong>Failure</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition info">
 <p class="admonition-title">SaasAppsDeleteOrgStarted</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-189-1"><a id="__codelineno-189-1" name="__codelineno-189-1" href="#__codelineno-189-1"></a>Started the deletion of SaaS organization ${orgName}.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>TaskSuccess</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>TaskSuccess</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition info">
 <p class="admonition-title">SaasAppsDeleteOrgSucceeded</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-190-1"><a id="__codelineno-190-1" name="__codelineno-190-1" href="#__codelineno-190-1"></a>Successfully deleted SaaS organization ${orgName}.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>Success</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>Success</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <h2 id="snapshot">snapshot</h2>
 <hr />
@@ -7010,8 +9684,22 @@
 <p class="admonition-title">SnapshotOutOfCompliance</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-191-1"><a id="__codelineno-191-1" name="__codelineno-191-1" href="#__codelineno-191-1"></a>The following snappable is out of SLA compliance due to missed local snapshot(s): ${snappableName}
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Critical</strong></td><td><strong>Failure</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Critical</strong></td>
+<td><strong>Failure</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <h2 id="support_user_access">support_user_access</h2>
 <hr />
@@ -7019,64 +9707,190 @@
 <p class="admonition-title">SupportUserAccessDisabled</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-192-1"><a id="__codelineno-192-1" name="__codelineno-192-1" href="#__codelineno-192-1"></a>${accessRevokerName} revoked read-only access to view RSC account as ${impersonatedUserName} from Rubrik support staff.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>Success</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>Success</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition info">
 <p class="admonition-title">SupportUserAccessDisabled</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-193-1"><a id="__codelineno-193-1" name="__codelineno-193-1" href="#__codelineno-193-1"></a>${accessRevokerName} revoked read-only access to view RSC account as ${impersonatedUserName} from Rubrik support staff.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>Success</strong></td><td><strong>Yes</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>Success</strong></td>
+<td><strong>Yes</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition info">
 <p class="admonition-title">SupportUserAccessEnabled</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-194-1"><a id="__codelineno-194-1" name="__codelineno-194-1" href="#__codelineno-194-1"></a>${accessProviderName} granted read-only access to view RSC account as ${impersonatedUserName} to Rubrik support staff.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>Success</strong></td><td><strong>Yes</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>Success</strong></td>
+<td><strong>Yes</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition info">
 <p class="admonition-title">SupportUserAccessEnabled</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-195-1"><a id="__codelineno-195-1" name="__codelineno-195-1" href="#__codelineno-195-1"></a>${accessProviderUserName} granted read-only access to Rubrik support staff for support ticket ${ticketId}.  Rubrik support staff will have read-only view as ${impersonatedUserName} from ${startTime} till ${endTime}.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>Success</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>Success</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition info">
 <p class="admonition-title">SupportUserAccessExpired</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-196-1"><a id="__codelineno-196-1" name="__codelineno-196-1" href="#__codelineno-196-1"></a>Access provided to Rubrik Support staff by ${accessProviderUserName} to impersonate ${impersonatedUserName} has expired.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>Success</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>Success</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition info">
 <p class="admonition-title">SupportUserAccessModified</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-197-1"><a id="__codelineno-197-1" name="__codelineno-197-1" href="#__codelineno-197-1"></a>${accessModifierName} updated Rubrik support staff’s read-only access timings to RSC account  as ${impersonatedUserName} from ${previousDuration} hours to ${newDuration} hours.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>Success</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>Success</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition info">
 <p class="admonition-title">SupportUserAccessModified</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-198-1"><a id="__codelineno-198-1" name="__codelineno-198-1" href="#__codelineno-198-1"></a>${accessModifierName} updated Rubrik support staff’s read-only access timings to RSC account  as ${impersonatedUserName} from ${previousDuration} hours to ${newDuration} hours.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>Success</strong></td><td><strong>Yes</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>Success</strong></td>
+<td><strong>Yes</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition info">
 <p class="admonition-title">SupportUserLoggedIn</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-199-1"><a id="__codelineno-199-1" name="__codelineno-199-1" href="#__codelineno-199-1"></a>Rubrik support staff logged in as ${impersonatedUserName}.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>Success</strong></td><td><strong>Yes</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>Success</strong></td>
+<td><strong>Yes</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition info">
 <p class="admonition-title">SupportUserLoggedOut</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-200-1"><a id="__codelineno-200-1" name="__codelineno-200-1" href="#__codelineno-200-1"></a>Rubrik support staff viewing RSC account as ${impersonatedUserName} logged out.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>Success</strong></td><td><strong>Yes</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>Success</strong></td>
+<td><strong>Yes</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <h2 id="trident">trident</h2>
 <hr />
@@ -7084,36 +9898,106 @@
 <p class="admonition-title">CPUUtilizationWarning</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-201-1"><a id="__codelineno-201-1" name="__codelineno-201-1" href="#__codelineno-201-1"></a>CPU Utilization Warning. Reasons: ${reasons}.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Warning</strong></td><td><strong>Failure</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Warning</strong></td>
+<td><strong>Failure</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition warning">
 <p class="admonition-title">DiskUtilizationWarning</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-202-1"><a id="__codelineno-202-1" name="__codelineno-202-1" href="#__codelineno-202-1"></a>Disk Utilization Warning. Reasons: ${reasons}.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Warning</strong></td><td><strong>Failure</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Warning</strong></td>
+<td><strong>Failure</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition warning">
 <p class="admonition-title">MemoryUtilizationWarning</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-203-1"><a id="__codelineno-203-1" name="__codelineno-203-1" href="#__codelineno-203-1"></a>Memory Utilization Warning. Reasons: ${reasons}.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Warning</strong></td><td><strong>Failure</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Warning</strong></td>
+<td><strong>Failure</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition failure">
 <p class="admonition-title">PolarisHealthDegraded</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-204-1"><a id="__codelineno-204-1" name="__codelineno-204-1" href="#__codelineno-204-1"></a>Rubrik deployment status is ${node_status}. Reasons: ${reasons}.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Critical</strong></td><td><strong>Failure</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Critical</strong></td>
+<td><strong>Failure</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition info">
 <p class="admonition-title">PolarisHealthOk</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-205-1"><a id="__codelineno-205-1" name="__codelineno-205-1" href="#__codelineno-205-1"></a>Rubrik deployment status is ${node_status}.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>Success</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>Success</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 
 
@@ -7135,7 +10019,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="August 27, 2025 19:06:59 UTC">2025-08-27</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="September 16, 2025 17:51:30 UTC">2025-09-16</span>
   </span>
 
     
@@ -7289,7 +10173,7 @@
       <script id="__config" type="application/json">{"base": "../../../../..", "features": ["content.code.copy", "content.code.annotate", "content.tooltips", "content.tabs.link", "navigation.tabs", "navigation.indexes", "search.share"], "search": "../../../../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../../../../../assets/javascripts/bundle.92b07e13.min.js"></script>
+      <script src="../../../../../assets/javascripts/bundle.f55a23d4.min.js"></script>
       
         <script src="../../../../../javascripts/extra.js"></script>
       

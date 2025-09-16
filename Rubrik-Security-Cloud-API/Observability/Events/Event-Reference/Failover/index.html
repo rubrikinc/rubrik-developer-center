@@ -18,7 +18,7 @@
       
       
       <link rel="icon" href="../../../../../assets/favicon.ico">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.18">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.20">
     
     
       
@@ -26,7 +26,7 @@
       
     
     
-      <link rel="stylesheet" href="../../../../../assets/stylesheets/main.7e37652d.min.css">
+      <link rel="stylesheet" href="../../../../../assets/stylesheets/main.e53b48f4.min.css">
       
         
         <link rel="stylesheet" href="../../../../../assets/stylesheets/palette.06af60db.min.css">
@@ -5393,519 +5393,1555 @@
 <p class="admonition-title">BlueprintFailoverCanceled</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>Canceled failover Recovery Plan &#39;${name}&#39; to &#39;${location}&#39;.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>Canceled</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>Canceled</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition info">
 <p class="admonition-title">BlueprintFailoverCanceling</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>Canceling failover for Recovery Plan &#39;${name}&#39; to &#39;${location}&#39;.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>Canceling</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>Canceling</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition failure">
 <p class="admonition-title">BlueprintFailoverDataIngestionFailed</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>&#39;${dataIngestionOperation}&#39; process failed for Recovery Plan &#39;${name}&#39;: ${reason}.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Critical</strong></td><td><strong>TaskFailure</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Critical</strong></td>
+<td><strong>TaskFailure</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition info">
 <p class="admonition-title">BlueprintFailoverDataIngestionStarted</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>Starting the &#39;${dataIngestionOperation}&#39; process for Recovery Plan &#39;${name}&#39;.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>TaskSuccess</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>TaskSuccess</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition info">
 <p class="admonition-title">BlueprintFailoverDataIngestionSucceed</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>&#39;${dataIngestionOperation}&#39; process succeeded for Recovery Plan &#39;${name}&#39;.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>TaskSuccess</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>TaskSuccess</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition failure">
 <p class="admonition-title">BlueprintFailoverFailed</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>Failed to failover Recovery Plan &#39;${name}&#39; to &#39;${location}&#39;: ${reason}.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Critical</strong></td><td><strong>Failure</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Critical</strong></td>
+<td><strong>Failure</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition failure">
 <p class="admonition-title">BlueprintFailoverFinalizeFailed</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>Final failover tasks failed for failover of Recovery Plan &#39;${name}&#39;: ${reason}.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Critical</strong></td><td><strong>Failure</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Critical</strong></td>
+<td><strong>Failure</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition info">
 <p class="admonition-title">BlueprintFailoverFinalizeStarted</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>Starting the final failover tasks for failover of Recovery Plan &#39;${name}&#39;.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>TaskSuccess</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>TaskSuccess</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition info">
 <p class="admonition-title">BlueprintFailoverFinalizeSucceed</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>Final failover tasks succeeded for failover of Recovery Plan &#39;${name}&#39;.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>Success</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>Success</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition failure">
 <p class="admonition-title">BlueprintFailoverIncrementalDataTransferFailed</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>Incremental data transfer process failed for Recovery Plan &#39;${name}&#39;: ${reason}.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Critical</strong></td><td><strong>TaskFailure</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Critical</strong></td>
+<td><strong>TaskFailure</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition info">
 <p class="admonition-title">BlueprintFailoverIncrementalDataTransferStarted</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>Starting the incremental data transfer process for Recovery Plan &#39;${name}&#39;.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>TaskSuccess</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>TaskSuccess</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition info">
 <p class="admonition-title">BlueprintFailoverIncrementalDataTransferSucceed</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>Incremental data transfer process succeeded for Recovery Plan &#39;${name}&#39;.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>TaskSuccess</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>TaskSuccess</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition failure">
 <p class="admonition-title">BlueprintFailoverPrepareDataFailed</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>Failover initialization process failed for Recovery Plan &#39;${name}&#39;. Reason: ${reason}.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Critical</strong></td><td><strong>TaskFailure</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Critical</strong></td>
+<td><strong>TaskFailure</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition info">
 <p class="admonition-title">BlueprintFailoverPrepareDataStarted</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>Starting the failover initialization process for Recovery Plan &#39;${name}&#39;.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>TaskSuccess</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>TaskSuccess</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition info">
 <p class="admonition-title">BlueprintFailoverPrepareDataSucceed</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-14-1"><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a>Failover initialization process succeeded for Recovery Plan &#39;${name}&#39;.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>TaskSuccess</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>TaskSuccess</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition failure">
 <p class="admonition-title">BlueprintFailoverPrepareResourceFailed</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-15-1"><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a>Failover resource validation and initialization process failed for Recovery Plan &#39;${name}&#39;. Reason: ${reason}.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Critical</strong></td><td><strong>TaskFailure</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Critical</strong></td>
+<td><strong>TaskFailure</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition info">
 <p class="admonition-title">BlueprintFailoverPrepareResourceStarted</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-16-1"><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a>Starting the failover resource validation and initialization process for Recovery Plan &#39;${name}&#39;.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>TaskSuccess</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>TaskSuccess</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition info">
 <p class="admonition-title">BlueprintFailoverPrepareResourceSucceed</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-17-1"><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a>Failover resource validation and initialization process succeeded for Recovery Plan &#39;${name}&#39;.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>TaskSuccess</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>TaskSuccess</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition failure">
 <p class="admonition-title">BlueprintFailoverProvisionFailed</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-18-1"><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a>Unable to set up the target Rubrik cluster &#39;${targetClusterName}&#39; for failover of Recovery Plan &#39;${name}&#39;: ${reason}.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Critical</strong></td><td><strong>TaskFailure</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Critical</strong></td>
+<td><strong>TaskFailure</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition info">
 <p class="admonition-title">BlueprintFailoverProvisionStarted</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-19-1"><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a>Setting up the target Rubrik cluster &#39;${targetClusterName}&#39; for failover of Recovery Plan &#39;${name}&#39;.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>TaskSuccess</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>TaskSuccess</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition info">
 <p class="admonition-title">BlueprintFailoverProvisionSucceed</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-20-1"><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a>Reconfiguration of virtual machines on target Rubrik cluster &#39;${targetClusterName}&#39; succeeded for Recovery Plan &#39;${name}&#39;.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>TaskSuccess</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>TaskSuccess</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition warning">
 <p class="admonition-title">BlueprintFailoverProvisionSucceedWithNetworkReconfigureFailure</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-21-1"><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a>Reconfiguration of virtual machines on target Rubrik cluster &#39;${targetClusterName}&#39; failed for Recovery Plan &#39;${name}&#39;. Ignoring and continuing.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Warning</strong></td><td><strong>TaskSuccess</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Warning</strong></td>
+<td><strong>TaskSuccess</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition info">
 <p class="admonition-title">BlueprintFailoverScheduled</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-22-1"><a id="__codelineno-22-1" name="__codelineno-22-1" href="#__codelineno-22-1"></a>Scheduled job to failover Recovery Plan &#39;${name}&#39; to &#39;${location}&#39;.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>Queued</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>Queued</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition info">
 <p class="admonition-title">BlueprintFailoverStarted</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-23-1"><a id="__codelineno-23-1" name="__codelineno-23-1" href="#__codelineno-23-1"></a>Starting failover for Recovery Plan &#39;${name}&#39; to &#39;${location}&#39;. Failover error handling option is set to ${errorHandling}. Skipping network reconfiguration errors is ${skipNetworkError}.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>TaskSuccess</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>TaskSuccess</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition info">
 <p class="admonition-title">BlueprintFailoverSuccess</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-24-1"><a id="__codelineno-24-1" name="__codelineno-24-1" href="#__codelineno-24-1"></a>Successfully completed the failover for Recovery Plan &#39;${name}&#39; to &#39;${location}&#39;.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>Success</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>Success</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition info">
 <p class="admonition-title">BlueprintTakeOnDemandSnapshotFailed</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-25-1"><a id="__codelineno-25-1" name="__codelineno-25-1" href="#__codelineno-25-1"></a>On demand snapshot for Recovery Plan &#39;${blueprintName}&#39; failed.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>Failure</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>Failure</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition info">
 <p class="admonition-title">BlueprintTakeOnDemandSnapshotStarted</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-26-1"><a id="__codelineno-26-1" name="__codelineno-26-1" href="#__codelineno-26-1"></a>Starting on demand snapshot for Recovery Plan &#39;${blueprintName}&#39;.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>TaskSuccess</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>TaskSuccess</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition info">
 <p class="admonition-title">BlueprintTakeOnDemandSnapshotSucceed</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-27-1"><a id="__codelineno-27-1" name="__codelineno-27-1" href="#__codelineno-27-1"></a>On demand snapshot for Recovery Plan &#39;${blueprintName}&#39; successfully completed.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>Success</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>Success</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition info">
 <p class="admonition-title">BlueprintWaitOnDemandSnapshotFailed</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-28-1"><a id="__codelineno-28-1" name="__codelineno-28-1" href="#__codelineno-28-1"></a>Waiting on demand snapshot for Recovery Plan &#39;${blueprintName}&#39; failed.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>Failure</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>Failure</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition info">
 <p class="admonition-title">BlueprintWaitOnDemandSnapshotStarted</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-29-1"><a id="__codelineno-29-1" name="__codelineno-29-1" href="#__codelineno-29-1"></a>Waiting for on demand snapshot for Recovery Plan &#39;${blueprintName}&#39;.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>TaskSuccess</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>TaskSuccess</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition info">
 <p class="admonition-title">BlueprintWaitOnDemandSnapshotSucceed</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-30-1"><a id="__codelineno-30-1" name="__codelineno-30-1" href="#__codelineno-30-1"></a>Waiting on demand snapshot for Recovery Plan &#39;${blueprintName}&#39; succeeded.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>Success</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>Success</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition info">
 <p class="admonition-title">CleanupFailoverCanceled</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-31-1"><a id="__codelineno-31-1" name="__codelineno-31-1" href="#__codelineno-31-1"></a>Canceled the failover cleanup for Recovery Plan &#39;${name}&#39;.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>Canceled</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>Canceled</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition info">
 <p class="admonition-title">CleanupFailoverCanceling</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-32-1"><a id="__codelineno-32-1" name="__codelineno-32-1" href="#__codelineno-32-1"></a>Canceling the failover cleanup for Recovery Plan &#39;${name}&#39;.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>Canceling</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>Canceling</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition failure">
 <p class="admonition-title">CleanupFailoverFailed</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-33-1"><a id="__codelineno-33-1" name="__codelineno-33-1" href="#__codelineno-33-1"></a>Failed to cleanup failover for Recovery Plan &#39;${name}&#39; with ${reason}.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Critical</strong></td><td><strong>Failure</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Critical</strong></td>
+<td><strong>Failure</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition info">
 <p class="admonition-title">CleanupFailoverStarted</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-34-1"><a id="__codelineno-34-1" name="__codelineno-34-1" href="#__codelineno-34-1"></a>Started failover cleanup for Recovery Plan &#39;${name}&#39;.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>TaskSuccess</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>TaskSuccess</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition info">
 <p class="admonition-title">CleanupFailoverSuccess</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-35-1"><a id="__codelineno-35-1" name="__codelineno-35-1" href="#__codelineno-35-1"></a>Successfully completed the failover cleanup for Recovery Plan &#39;${name}&#39;.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>Failure</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>Failure</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition failure">
 <p class="admonition-title">CleanupFailoverTaskFailed</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-36-1"><a id="__codelineno-36-1" name="__codelineno-36-1" href="#__codelineno-36-1"></a>Failed to cleanup Recovery Plan ${name}: ${reason}.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Critical</strong></td><td><strong>TaskFailure</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Critical</strong></td>
+<td><strong>TaskFailure</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition failure">
 <p class="admonition-title">CleanupFailoverTaskFailedWithUserComment</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-37-1"><a id="__codelineno-37-1" name="__codelineno-37-1" href="#__codelineno-37-1"></a>Failed to cleanup Recovery Plan &#39;${name}&#39;. ${comment} : ${reason}.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Critical</strong></td><td><strong>TaskFailure</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Critical</strong></td>
+<td><strong>TaskFailure</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition info">
 <p class="admonition-title">CleanupFailoverTaskStarted</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-38-1"><a id="__codelineno-38-1" name="__codelineno-38-1" href="#__codelineno-38-1"></a>Started cleanup for Recovery Plan ${name}.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>Running</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>Running</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition info">
 <p class="admonition-title">CleanupFailoverTaskSucceed</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-39-1"><a id="__codelineno-39-1" name="__codelineno-39-1" href="#__codelineno-39-1"></a>Successfully completed the cleanup for Recovery Plan ${name}.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>TaskSuccess</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>TaskSuccess</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition info">
 <p class="admonition-title">CleanupFailoverTaskSucceedWithUserComment</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-40-1"><a id="__codelineno-40-1" name="__codelineno-40-1" href="#__codelineno-40-1"></a>Successfully completed the cleanup for Recovery Plan &#39;${name}&#39;. ${comment}.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>TaskSuccess</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>TaskSuccess</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition info">
 <p class="admonition-title">FailbackCloudMachineShutdownFailed</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-41-1"><a id="__codelineno-41-1" name="__codelineno-41-1" href="#__codelineno-41-1"></a>Failed to shut down ${instanceType} ${instanceName}.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>TaskFailure</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>TaskFailure</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition info">
 <p class="admonition-title">FailbackCloudMachineShutdownSucceed</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-42-1"><a id="__codelineno-42-1" name="__codelineno-42-1" href="#__codelineno-42-1"></a>Shut down ${instanceType} ${instanceName}.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>TaskSuccess</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>TaskSuccess</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition warning">
 <p class="admonition-title">FailbackCloudMachineShutdownTaskFailed</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-43-1"><a id="__codelineno-43-1" name="__codelineno-43-1" href="#__codelineno-43-1"></a>During failover, system was unable to shutdown the child ${instanceType} of Recovery Plan &#39;${blueprintName}&#39;: ${reason}. Please shutdown the child ${instanceType} manually to avoid potential resource conflicts with the child ${instanceType} spun up during failover. Resource conflicts, such as IP address collisions, may result in failures, including failure to boot during failover.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Warning</strong></td><td><strong>TaskFailure</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Warning</strong></td>
+<td><strong>TaskFailure</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition info">
 <p class="admonition-title">FailbackCloudMachineShutdownTaskStarted</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-44-1"><a id="__codelineno-44-1" name="__codelineno-44-1" href="#__codelineno-44-1"></a>Started the shutdown process for Recovery Plan child ${instanceType}.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>Running</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>Running</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition info">
 <p class="admonition-title">FailbackCloudMachineShutdownTaskSucceed</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-45-1"><a id="__codelineno-45-1" name="__codelineno-45-1" href="#__codelineno-45-1"></a>Shut down all Recovery Plan child ${instanceType}.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>TaskSuccess</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>TaskSuccess</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition failure">
 <p class="admonition-title">FailbackCreateOnDemandBlueprintSnapshotTaskFailed</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-46-1"><a id="__codelineno-46-1" name="__codelineno-46-1" href="#__codelineno-46-1"></a>Failed to create a snapshot for the current state of the Recovery Plan &#39;${blueprintName}&#39;: ${reason}.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Critical</strong></td><td><strong>TaskFailure</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Critical</strong></td>
+<td><strong>TaskFailure</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition info">
 <p class="admonition-title">FailbackCreateOnDemandBlueprintSnapshotTaskStarted</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-47-1"><a id="__codelineno-47-1" name="__codelineno-47-1" href="#__codelineno-47-1"></a>Started taking a snapshot for the current state of the Recovery Plan &#39;${blueprintName}&#39;.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>Running</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>Running</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition info">
 <p class="admonition-title">FailbackCreateOnDemandBlueprintSnapshotTaskSucceed</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-48-1"><a id="__codelineno-48-1" name="__codelineno-48-1" href="#__codelineno-48-1"></a>Created a snapshot for the current state of the Recovery Plan &#39;${blueprintName}&#39;.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>TaskSuccess</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>TaskSuccess</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition warning">
 <p class="admonition-title">FailbackDeprecatePrimaryAppTaskFailed</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-49-1"><a id="__codelineno-49-1" name="__codelineno-49-1" href="#__codelineno-49-1"></a>Failed to deprecate the primary Recovery Plan &#39;${blueprintName}&#39;: ${reason}.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Warning</strong></td><td><strong>TaskFailure</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Warning</strong></td>
+<td><strong>TaskFailure</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition failure">
 <p class="admonition-title">FailbackReprotectTaskFailed</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-50-1"><a id="__codelineno-50-1" name="__codelineno-50-1" href="#__codelineno-50-1"></a>Failed to reprotect the Recovery Plan &#39;${blueprintName}&#39;: ${reason}.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Critical</strong></td><td><strong>TaskFailure</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Critical</strong></td>
+<td><strong>TaskFailure</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition info">
 <p class="admonition-title">FailbackReprotectTaskStarted</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-51-1"><a id="__codelineno-51-1" name="__codelineno-51-1" href="#__codelineno-51-1"></a>Reprotecting the Recovery Plan &#39;${blueprintName}&#39;.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>Running</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>Running</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition info">
 <p class="admonition-title">FailbackReprotectTaskSucceeded</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-52-1"><a id="__codelineno-52-1" name="__codelineno-52-1" href="#__codelineno-52-1"></a>Reprotected the Recovery Plan &#39;${blueprintName}&#39; with SLA &#39;${slaName}&#39;.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>TaskSuccess</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>TaskSuccess</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition failure">
 <p class="admonition-title">FailbackSyncRecoverySpecTaskFailed</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-53-1"><a id="__codelineno-53-1" name="__codelineno-53-1" href="#__codelineno-53-1"></a>The Recovery Plan &#39;${blueprintName}&#39; at the target cluster could not be synchronized with the source due to a communication issue. This could be a result of network issues between the source and target clusters or an incorrect replication configuration. Please resolve the issue to make sure the replication has been setup correctly between the source cluster and the target cluster, then retry the failover job.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Critical</strong></td><td><strong>TaskFailure</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Critical</strong></td>
+<td><strong>TaskFailure</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition info">
 <p class="admonition-title">FailbackSyncRecoverySpecTaskStarted</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-54-1"><a id="__codelineno-54-1" name="__codelineno-54-1" href="#__codelineno-54-1"></a>Started syncing the latest recovery spec to the target cluster.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>Running</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>Running</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition info">
 <p class="admonition-title">FailbackSyncRecoverySpecTaskSucceed</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-55-1"><a id="__codelineno-55-1" name="__codelineno-55-1" href="#__codelineno-55-1"></a>Successfully synced the latest recovery spec to the target cluster.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>TaskSuccess</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>TaskSuccess</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition warning">
 <p class="admonition-title">FailoverAssignClonedSLAFailed</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-56-1"><a id="__codelineno-56-1" name="__codelineno-56-1" href="#__codelineno-56-1"></a>Failed to assign the cloned SLA to the newly created Recovery Plan: ${reason}.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Warning</strong></td><td><strong>TaskFailure</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Warning</strong></td>
+<td><strong>TaskFailure</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition warning">
 <p class="admonition-title">FailoverAssignSLAFailed</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-57-1"><a id="__codelineno-57-1" name="__codelineno-57-1" href="#__codelineno-57-1"></a>Failed to assign the SLA &#39;${slaName}&#39; to the newly created Recovery Plan: ${reason}.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Warning</strong></td><td><strong>TaskFailure</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Warning</strong></td>
+<td><strong>TaskFailure</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition warning">
 <p class="admonition-title">FailoverDeprecatePrimaryAppTaskFailed</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-58-1"><a id="__codelineno-58-1" name="__codelineno-58-1" href="#__codelineno-58-1"></a>Failed to deprecate the primary Recovery Plan &#39;${blueprintName}&#39;: ${reason}, the ${instanceType} should be shutdown manually.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Warning</strong></td><td><strong>TaskFailure</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Warning</strong></td>
+<td><strong>TaskFailure</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition info">
 <p class="admonition-title">FailoverDeprecatePrimaryAppTaskStarted</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-59-1"><a id="__codelineno-59-1" name="__codelineno-59-1" href="#__codelineno-59-1"></a>Started to deprecate the primary Recovery Plan &#39;${blueprintName}&#39;.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>Running</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>Running</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition info">
 <p class="admonition-title">FailoverDeprecatePrimaryAppTaskSucceed</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-60-1"><a id="__codelineno-60-1" name="__codelineno-60-1" href="#__codelineno-60-1"></a>Successfully deprecated the primary Recovery Plan &#39;${blueprintName}&#39;.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>TaskSuccess</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>TaskSuccess</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition warning">
 <p class="admonition-title">FailoverSLANotFound</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-61-1"><a id="__codelineno-61-1" name="__codelineno-61-1" href="#__codelineno-61-1"></a>SLA not found when assigning SLA to the newly created Recovery Plan.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Warning</strong></td><td><strong>TaskFailure</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Warning</strong></td>
+<td><strong>TaskFailure</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition info">
 <p class="admonition-title">RecoveryPlanFailoverPartialSuccess</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-62-1"><a id="__codelineno-62-1" name="__codelineno-62-1" href="#__codelineno-62-1"></a>The failover for Recovery Plan, &#39;${name}&#39;, to &#39;${location}&#39; was partially successful. ${partialFailureInfo}
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>Success</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>Success</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition failure">
 <p class="admonition-title">SyncFailbackTaskFailed</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-63-1"><a id="__codelineno-63-1" name="__codelineno-63-1" href="#__codelineno-63-1"></a>Failover failed on cluster &#39;${clusterName}&#39;: ${reason}.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Critical</strong></td><td><strong>TaskFailure</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Critical</strong></td>
+<td><strong>TaskFailure</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition info">
 <p class="admonition-title">SyncFailbackTaskSucceed</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-64-1"><a id="__codelineno-64-1" name="__codelineno-64-1" href="#__codelineno-64-1"></a>Failover succeeded on cluster &#39;${clusterName}&#39;.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>TaskSuccess</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>TaskSuccess</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition failure">
 <p class="admonition-title">TriggerFailbackTaskFailed</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-65-1"><a id="__codelineno-65-1" name="__codelineno-65-1" href="#__codelineno-65-1"></a>Failed to trigger failover job for Recovery Plan to the point in time: ${recoveryPoint} on cluster &#39;${clusterName}&#39;: ${reason}.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Critical</strong></td><td><strong>TaskFailure</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Critical</strong></td>
+<td><strong>TaskFailure</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition failure">
 <p class="admonition-title">TriggerFailbackTaskFailedWithTimeRange</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-66-1"><a id="__codelineno-66-1" name="__codelineno-66-1" href="#__codelineno-66-1"></a>Failed to trigger failover job for Recovery Plan to the point in time: range from ${startTime} to ${endTime} on cluster &#39;${clusterName}&#39;: ${reason}.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Critical</strong></td><td><strong>TaskFailure</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Critical</strong></td>
+<td><strong>TaskFailure</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition info">
 <p class="admonition-title">TriggerFailbackTaskStarted</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-67-1"><a id="__codelineno-67-1" name="__codelineno-67-1" href="#__codelineno-67-1"></a>Failover job for Recovery Plan to the point in time: ${recoveryPoint} triggered on cluster &#39;${clusterName}&#39;.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>Running</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>Running</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition info">
 <p class="admonition-title">TriggerFailbackTaskStartedWithTimeRange</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-68-1"><a id="__codelineno-68-1" name="__codelineno-68-1" href="#__codelineno-68-1"></a>Failover job for Recovery Plan to the point in time: range from ${startTime} to ${endTime} triggered on cluster &#39;${clusterName}&#39;.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>Running</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>Running</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition info">
 <p class="admonition-title">TriggerFailbackTaskSucceed</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-69-1"><a id="__codelineno-69-1" name="__codelineno-69-1" href="#__codelineno-69-1"></a>Triggered a failover job for Recovery Plan to the point in time: ${recoveryPoint} on cluster &#39;${clusterName}&#39;.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>TaskSuccess</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>TaskSuccess</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition info">
 <p class="admonition-title">TriggerFailbackTaskSucceedWithTimeRange</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-70-1"><a id="__codelineno-70-1" name="__codelineno-70-1" href="#__codelineno-70-1"></a>Triggered a failover job for Recovery Plan to the point in time: range from ${startTime} to ${endTime}, on cluster &#39;${clusterName}&#39;.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>TaskSuccess</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>TaskSuccess</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition failure">
 <p class="admonition-title">ValidateRecoverySpecTaskFailed</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-71-1"><a id="__codelineno-71-1" name="__codelineno-71-1" href="#__codelineno-71-1"></a>Failed to validate the recovery spec of Recovery Plan &#39;${blueprintName}&#39; on cluster &#39;${clusterName}&#39;: ${reason}.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Critical</strong></td><td><strong>TaskFailure</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Critical</strong></td>
+<td><strong>TaskFailure</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition info">
 <p class="admonition-title">ValidateRecoverySpecTaskStarted</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-72-1"><a id="__codelineno-72-1" name="__codelineno-72-1" href="#__codelineno-72-1"></a>The recovery spec of Recovery Plan &#39;${blueprintName}&#39; is being validated on cluster &#39;${clusterName}&#39;.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>Running</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>Running</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition info">
 <p class="admonition-title">ValidateRecoverySpecTaskSucceed</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-73-1"><a id="__codelineno-73-1" name="__codelineno-73-1" href="#__codelineno-73-1"></a>Validated the recovery spec of Recovery Plan &#39;${blueprintName}&#39; on cluster &#39;${clusterName}&#39;.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>TaskSuccess</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>TaskSuccess</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <h2 id="appflows">appflows</h2>
 <hr />
@@ -5913,22 +6949,64 @@
 <p class="admonition-title">BlueprintFailoverCleanupStart</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-74-1"><a id="__codelineno-74-1" name="__codelineno-74-1" href="#__codelineno-74-1"></a>${userEmail} triggered cleanup job for recovery plan &#39;${blueprintName}&#39;.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>Success</strong></td><td><strong>Yes</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>Success</strong></td>
+<td><strong>Yes</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition info">
 <p class="admonition-title">BlueprintFailoverStart</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-75-1"><a id="__codelineno-75-1" name="__codelineno-75-1" href="#__codelineno-75-1"></a>${userEmail} triggered failover for recovery plan &#39;${blueprintName}&#39; to ${targetSite}.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>Success</strong></td><td><strong>Yes</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>Success</strong></td>
+<td><strong>Yes</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition info">
 <p class="admonition-title">BlueprintTestFailoverStart</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-76-1"><a id="__codelineno-76-1" name="__codelineno-76-1" href="#__codelineno-76-1"></a>${userEmail} triggered test failover for recovery plan &#39;${blueprintName}&#39; to ${targetSite}.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>Success</strong></td><td><strong>Yes</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>Success</strong></td>
+<td><strong>Yes</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <h2 id="rcv">rcv</h2>
 <hr />
@@ -5936,22 +7014,64 @@
 <p class="admonition-title">RCVGRSFailoverReestablishmentPending</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-77-1"><a id="__codelineno-77-1" name="__codelineno-77-1" href="#__codelineno-77-1"></a>Rubrik Cloud Vault location &#39;${locName}&#39; has been successfully  failed over to &#39;${regionType}&#39; region, &#39;${currentRegionName}&#39;  with LRS redundancy. Rubrik is now attempting to re-establish  GRS redundancy in the ${pairedRegionName} region.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>Success</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>Success</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition info">
 <p class="admonition-title">RCVGRSPrimaryFailoverReestablishmentSuccess</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-78-1"><a id="__codelineno-78-1" name="__codelineno-78-1" href="#__codelineno-78-1"></a>The Rubrik Cloud Vault &#39;${locName}&#39; has failed back to the former  primary region &#39;${primaryRegionName}&#39; and Rubrik has successfully  re-established the GRS redundancy. You can now enable &#39;${locName}&#39;  to resume archival.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>Success</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>Success</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition info">
 <p class="admonition-title">RCVGRSSecondaryFailoverReestablishmentSuccess</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-79-1"><a id="__codelineno-79-1" name="__codelineno-79-1" href="#__codelineno-79-1"></a>Successfully re-established GRS redundancy for Rubrik Cloud Vault  location &#39;${locName}&#39; between the primary region ${primaryRegionName}  and the secondary region ${secondaryRegionName}. You may initiate a  failback to the former primary region ${primaryRegionName} at any time  to resume archival to &#39;${locName}&#39;.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>Success</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>Success</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 
 
@@ -5973,7 +7093,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="August 27, 2025 19:06:59 UTC">2025-08-27</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="September 16, 2025 17:51:30 UTC">2025-09-16</span>
   </span>
 
     
@@ -6127,7 +7247,7 @@
       <script id="__config" type="application/json">{"base": "../../../../..", "features": ["content.code.copy", "content.code.annotate", "content.tooltips", "content.tabs.link", "navigation.tabs", "navigation.indexes", "search.share"], "search": "../../../../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../../../../../assets/javascripts/bundle.92b07e13.min.js"></script>
+      <script src="../../../../../assets/javascripts/bundle.f55a23d4.min.js"></script>
       
         <script src="../../../../../javascripts/extra.js"></script>
       

@@ -8,11 +8,9 @@ CriticalSeverityIdentityAlertClosed
 ${alertMessage} on ${source} was closed automatically
 ```
 
-Severity | Status | Audit Event | |
-
-|              |                 |        |
-| ------------ | --------------- | ------ |
-| **Critical** | **TaskSuccess** | **No** |
+| Severity     | Status          | Audit Event |
+| ------------ | --------------- | ----------- |
+| **Critical** | **TaskSuccess** | **No**      |
 
 CriticalSeverityIdentityAlertDetected
 
@@ -20,11 +18,9 @@ CriticalSeverityIdentityAlertDetected
 ${alertMessage} detected on ${source}
 ```
 
-Severity | Status | Audit Event | |
-
-|              |                 |        |
-| ------------ | --------------- | ------ |
-| **Critical** | **TaskSuccess** | **No** |
+| Severity     | Status          | Audit Event |
+| ------------ | --------------- | ----------- |
+| **Critical** | **TaskSuccess** | **No**      |
 
 CriticalSeverityIdentityAlertDismissed
 
@@ -32,11 +28,9 @@ CriticalSeverityIdentityAlertDismissed
 ${alertMessage} on ${source} was dismissed
 ```
 
-Severity | Status | Audit Event | |
-
-|              |                 |        |
-| ------------ | --------------- | ------ |
-| **Critical** | **TaskSuccess** | **No** |
+| Severity     | Status          | Audit Event |
+| ------------ | --------------- | ----------- |
+| **Critical** | **TaskSuccess** | **No**      |
 
 CriticalSeverityIdentityAlertInProgress
 
@@ -44,11 +38,9 @@ CriticalSeverityIdentityAlertInProgress
 ${alertMessage} on ${source} changed status to in progress
 ```
 
-Severity | Status | Audit Event | |
-
-|              |                 |        |
-| ------------ | --------------- | ------ |
-| **Critical** | **TaskSuccess** | **No** |
+| Severity     | Status          | Audit Event |
+| ------------ | --------------- | ----------- |
+| **Critical** | **TaskSuccess** | **No**      |
 
 CriticalSeverityIdentityAlertRemediated
 
@@ -56,11 +48,9 @@ CriticalSeverityIdentityAlertRemediated
 ${alertMessage} on ${source} was remediated
 ```
 
-Severity | Status | Audit Event | |
-
-|              |                 |        |
-| ------------ | --------------- | ------ |
-| **Critical** | **TaskSuccess** | **No** |
+| Severity     | Status          | Audit Event |
+| ------------ | --------------- | ----------- |
+| **Critical** | **TaskSuccess** | **No**      |
 
 CriticalSeverityIdentityAlertReOpened
 
@@ -68,11 +58,9 @@ CriticalSeverityIdentityAlertReOpened
 ${alertMessage} on ${source} changed status to open
 ```
 
-Severity | Status | Audit Event | |
-
-|              |                 |        |
-| ------------ | --------------- | ------ |
-| **Critical** | **TaskSuccess** | **No** |
+| Severity     | Status          | Audit Event |
+| ------------ | --------------- | ----------- |
+| **Critical** | **TaskSuccess** | **No**      |
 
 HighSeverityIdentityAlertClosed
 
@@ -80,11 +68,9 @@ HighSeverityIdentityAlertClosed
 ${alertMessage} on ${source} was closed automatically
 ```
 
-Severity | Status | Audit Event | |
-
-|             |                 |        |
-| ----------- | --------------- | ------ |
-| **Warning** | **TaskSuccess** | **No** |
+| Severity    | Status          | Audit Event |
+| ----------- | --------------- | ----------- |
+| **Warning** | **TaskSuccess** | **No**      |
 
 HighSeverityIdentityAlertDetected
 
@@ -92,11 +78,9 @@ HighSeverityIdentityAlertDetected
 ${alertMessage} detected on ${source}
 ```
 
-Severity | Status | Audit Event | |
-
-|             |                 |        |
-| ----------- | --------------- | ------ |
-| **Warning** | **TaskSuccess** | **No** |
+| Severity    | Status          | Audit Event |
+| ----------- | --------------- | ----------- |
+| **Warning** | **TaskSuccess** | **No**      |
 
 HighSeverityIdentityAlertDismissed
 
@@ -104,11 +88,9 @@ HighSeverityIdentityAlertDismissed
 ${alertMessage} on ${source} was dismissed
 ```
 
-Severity | Status | Audit Event | |
-
-|             |                 |        |
-| ----------- | --------------- | ------ |
-| **Warning** | **TaskSuccess** | **No** |
+| Severity    | Status          | Audit Event |
+| ----------- | --------------- | ----------- |
+| **Warning** | **TaskSuccess** | **No**      |
 
 HighSeverityIdentityAlertInProgress
 
@@ -116,11 +98,9 @@ HighSeverityIdentityAlertInProgress
 ${alertMessage} on ${source} changed status to in progress
 ```
 
-Severity | Status | Audit Event | |
-
-|             |                 |        |
-| ----------- | --------------- | ------ |
-| **Warning** | **TaskSuccess** | **No** |
+| Severity    | Status          | Audit Event |
+| ----------- | --------------- | ----------- |
+| **Warning** | **TaskSuccess** | **No**      |
 
 HighSeverityIdentityAlertRemediated
 
@@ -128,11 +108,9 @@ HighSeverityIdentityAlertRemediated
 ${alertMessage} on ${source} was remediated
 ```
 
-Severity | Status | Audit Event | |
-
-|             |                 |        |
-| ----------- | --------------- | ------ |
-| **Warning** | **TaskSuccess** | **No** |
+| Severity    | Status          | Audit Event |
+| ----------- | --------------- | ----------- |
+| **Warning** | **TaskSuccess** | **No**      |
 
 HighSeverityIdentityAlertReOpened
 
@@ -140,11 +118,9 @@ HighSeverityIdentityAlertReOpened
 ${alertMessage} on ${source} changed status to open
 ```
 
-Severity | Status | Audit Event | |
-
-|             |                 |        |
-| ----------- | --------------- | ------ |
-| **Warning** | **TaskSuccess** | **No** |
+| Severity    | Status          | Audit Event |
+| ----------- | --------------- | ----------- |
+| **Warning** | **TaskSuccess** | **No**      |
 
 LowOrMediumSeverityIdentityAlertClosed
 
@@ -152,11 +128,9 @@ LowOrMediumSeverityIdentityAlertClosed
 ${alertMessage} on ${source} was closed automatically
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 LowOrMediumSeverityIdentityAlertDetected
 
@@ -164,11 +138,9 @@ LowOrMediumSeverityIdentityAlertDetected
 ${alertMessage} detected on ${source}
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 LowOrMediumSeverityIdentityAlertDismissed
 
@@ -176,11 +148,9 @@ LowOrMediumSeverityIdentityAlertDismissed
 ${alertMessage} on ${source} was dismissed
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 LowOrMediumSeverityIdentityAlertInProgress
 
@@ -188,11 +158,9 @@ LowOrMediumSeverityIdentityAlertInProgress
 ${alertMessage} on ${source} changed status to in progress
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 LowOrMediumSeverityIdentityAlertRemediated
 
@@ -200,11 +168,9 @@ LowOrMediumSeverityIdentityAlertRemediated
 ${alertMessage} on ${source} was remediated
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 LowOrMediumSeverityIdentityAlertReOpened
 
@@ -212,8 +178,6 @@ LowOrMediumSeverityIdentityAlertReOpened
 ${alertMessage} on ${source} changed status to open
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |

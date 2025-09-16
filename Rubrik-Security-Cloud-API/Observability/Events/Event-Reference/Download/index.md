@@ -8,11 +8,9 @@ RecoveryReportDownloadTriggered
 ${userEmail} triggered a job to download report for recovery '${recoveryName}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 ## download
 
@@ -24,11 +22,9 @@ DownloadReportCSV
 ${username} downloaded report ${reportName} as a CSV.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 DownloadReportPDF
 
@@ -36,11 +32,9 @@ DownloadReportPDF
 ${username} downloaded report ${reportName} as a PDF.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 ReportDownloadGenerateFailure
 
@@ -48,11 +42,9 @@ ReportDownloadGenerateFailure
 Failure to create a download link for ${reportName} taken at ${timestamp}. ${failureReason}
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Failure** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **No**      |
 
 ReportDownloadGenerateInProgress
 
@@ -60,11 +52,9 @@ ReportDownloadGenerateInProgress
 ${reportName} is under preparation. Visit the Download Center for more information.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Running** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Running** | **No**      |
 
 ReportDownloadGenerateSuccess
 
@@ -72,11 +62,9 @@ ReportDownloadGenerateSuccess
 Successfully completed preparation of ${reportName} taken at ${timestamp}. Visit the Download Center to obtain the link to download the report
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 ReportEmailGenerateFailure
 
@@ -84,11 +72,9 @@ ReportEmailGenerateFailure
 Failed to immediately schedule report for ${reportName} requested at ${timestamp}. ${failureReason}
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Failure** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **No**      |
 
 ReportEmailGenerateInProgress
 
@@ -96,11 +82,9 @@ ReportEmailGenerateInProgress
 ${reportName} is under preparation. Visit the Download Center for more information.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Running** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Running** | **No**      |
 
 ReportEmailGenerateSuccess
 
@@ -108,11 +92,9 @@ ReportEmailGenerateSuccess
 Successfully sent the immediately scheduled report for ${reportName} requested at ${timestamp}. Visit the Download Center for more information.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 SendImmediateReportEmail
 
@@ -120,11 +102,9 @@ SendImmediateReportEmail
 ${username} performed an immediate schedule for ${reportName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 ## fileset
 
@@ -136,11 +116,9 @@ FilesetBackupReport
 ${username} started a backup report job for fileset '${filesetName}' and snapshot taken on '${snapshotDate}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 FilesetBackupReportFailure
 
@@ -148,11 +126,9 @@ FilesetBackupReportFailure
 ${username} failed to start backup report job for fileset '${filesetName}' and snapshot taken on '${snapshotDate}'. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 ## managed_volume
 
@@ -164,11 +140,9 @@ DownloadManagedVolumeFromLocationFailure
 ${username} failed to download the snapshot: '${snapshotId}' from location: '${locationId}'. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 DownloadManagedVolumeFromLocationSuccess
 
@@ -176,11 +150,9 @@ DownloadManagedVolumeFromLocationSuccess
 ${username} started the operation to download the snapshot: '${snapshotId}' from location: '${locationId}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 ## rest_api_precheck
 
@@ -192,8 +164,6 @@ DownloadCSV
 ${username} downloaded a CDM Rest API metrics CSV file.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
