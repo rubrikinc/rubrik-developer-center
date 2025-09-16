@@ -8,11 +8,9 @@ OrionThreatFeedEntryDisabled
 Threat feed entry for ${entryDetails} has been disabled by ${userEmail}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 OrionThreatFeedEntryEnabled
 
@@ -20,11 +18,9 @@ OrionThreatFeedEntryEnabled
 Threat feed entry for ${entryDetails} has been enabled by ${userEmail}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 ## threat_feed
 
@@ -36,11 +32,9 @@ DownloadThreatFeedFailure
 Unable to download threat feed version: ${version}.
 ```
 
-Severity | Status | Audit Event | |
-
-|             |             |        |
-| ----------- | ----------- | ------ |
-| **Warning** | **Failure** | **No** |
+| Severity    | Status      | Audit Event |
+| ----------- | ----------- | ----------- |
+| **Warning** | **Failure** | **No**      |
 
 DownloadThreatFeedSuccess
 
@@ -48,11 +42,9 @@ DownloadThreatFeedSuccess
 Successfully downloaded threat feed version: ${version}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 NewThreatIntelFailure
 
@@ -60,11 +52,9 @@ NewThreatIntelFailure
 Failed to ingest intel from ${provider} because of ${failureReason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Failure** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **No**      |
 
 NewThreatIntelSuccess
 
@@ -72,11 +62,9 @@ NewThreatIntelSuccess
 New threat intel includes ${iocsAndProviders}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 ThreatMonitoringHashCatalogAnalysisFailed
 
@@ -84,11 +72,9 @@ ThreatMonitoringHashCatalogAnalysisFailed
 Unable to perform full Threat Monitoring hash analysis with Threat Feed  Version ${hashTfVersion}. Found file hash matches for ${numFilesWithMatches} files.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Failure** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **No**      |
 
 ThreatMonitoringHashCatalogAnalysisMatchesFound
 
@@ -96,11 +82,9 @@ ThreatMonitoringHashCatalogAnalysisMatchesFound
 Completed full Threat Monitoring hash analysis with Hash Threat Feed  Version ${hashTfVersion}. Found file hash matches for ${numFilesWithMatches} files.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Success** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Success** | **No**      |
 
 ThreatMonitoringHashCatalogAnalysisNoMatchesFound
 
@@ -108,8 +92,6 @@ ThreatMonitoringHashCatalogAnalysisNoMatchesFound
 Completed full Threat Monitoring hash analysis with Hash Threat Feed  Version ${hashTfVersion}. No matches found.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |

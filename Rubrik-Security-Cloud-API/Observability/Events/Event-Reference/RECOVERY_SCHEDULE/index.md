@@ -8,11 +8,9 @@ RecoveryScheduleCreationSucceeded
 ${userEmail} successfully created recovery schedule for  recovery plan '${planName}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 RecoveryScheduleDeletionSucceeded
 
@@ -20,11 +18,9 @@ RecoveryScheduleDeletionSucceeded
 ${userEmail} successfully deleted recovery schedule for recovery plan '${planName}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 RecoveryScheduleUpdateSucceeded
 
@@ -32,8 +28,6 @@ RecoveryScheduleUpdateSucceeded
 ${userEmail} successfully updated recovery schedule for recovery plan '${planName}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |

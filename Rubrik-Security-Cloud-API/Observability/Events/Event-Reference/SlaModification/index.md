@@ -8,11 +8,9 @@ SLACreationSucceeded
 ${userEmail} successfully created Global SLA ${slaName}
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 SLADeletionSucceeded
 
@@ -20,11 +18,9 @@ SLADeletionSucceeded
 ${userEmail} successfully deleted Global SLA ${slaName}
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 SLAMigrationEnqueueFailure
 
@@ -32,11 +28,9 @@ SLAMigrationEnqueueFailure
 ${userEmail} did not succeed in initiating request to upgrade SLA Domain ${slaName} from cluster ${clusterName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 SLAMigrationEnqueueSuccess
 
@@ -44,11 +38,9 @@ SLAMigrationEnqueueSuccess
 ${userEmail} successfully initiated request to switch SLA ${slaName} from cluster ${clusterName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 SLAModificationSucceeded
 
@@ -56,11 +48,9 @@ SLAModificationSucceeded
 ${userEmail} successfully modified Global SLA ${slaName}
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 SLAPauseSucceeded
 
@@ -68,8 +58,6 @@ SLAPauseSucceeded
 ${userEmail} successfully ${action} Global SLA ${slaName} on ${clusterName}
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |

@@ -18,7 +18,7 @@
       
       
       <link rel="icon" href="../../../../../assets/favicon.ico">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.18">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.20">
     
     
       
@@ -26,7 +26,7 @@
       
     
     
-      <link rel="stylesheet" href="../../../../../assets/stylesheets/main.7e37652d.min.css">
+      <link rel="stylesheet" href="../../../../../assets/stylesheets/main.e53b48f4.min.css">
       
         
         <link rel="stylesheet" href="../../../../../assets/stylesheets/palette.06af60db.min.css">
@@ -5375,15 +5375,43 @@
 <p class="admonition-title">ActiveDirectoryIrRemediationFailed</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>${username} unable to start remediation ${remediationType} for risks identified on the Active Directory domain controller &#39;${dcName}&#39;. Reason: ${reason}.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>Failure</strong></td><td><strong>Yes</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>Failure</strong></td>
+<td><strong>Yes</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition info">
 <p class="admonition-title">ActiveDirectoryIrRemediationStarted</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>${username} triggered remediation ${remediationType} for risks identified on the Active Directory domain controller &#39;${dcName}&#39;.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>Success</strong></td><td><strong>Yes</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>Success</strong></td>
+<td><strong>Yes</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <h2 id="data_risks">data_risks</h2>
 <hr />
@@ -5391,99 +5419,295 @@
 <p class="admonition-title">DataRisksPolicyCreated</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>${userEmail} created a new policy named &#39;${policyName}&#39;.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>Success</strong></td><td><strong>Yes</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>Success</strong></td>
+<td><strong>Yes</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition info">
 <p class="admonition-title">DataRisksPolicyDeleted</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>${userEmail} deleted the policy &#39;${policyName}&#39;, closing  &#39;${violationsCount}&#39; violations.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>Success</strong></td><td><strong>Yes</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>Success</strong></td>
+<td><strong>Yes</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition info">
 <p class="admonition-title">DataRisksPolicyUpdated</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>${userEmail} modified the definitions for the policy &#39;${policyName}&#39;.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>Success</strong></td><td><strong>Yes</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>Success</strong></td>
+<td><strong>Yes</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition failure">
 <p class="admonition-title">EntraIDRemediationFailure</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>${userEmail} failed to remediate violation with &#39;${violationName}&#39; with &#39;${remediationType}&#39; on &#39;${objectName}&#39;. Error: ${reason}.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Critical</strong></td><td><strong>Failure</strong></td><td><strong>Yes</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Critical</strong></td>
+<td><strong>Failure</strong></td>
+<td><strong>Yes</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition info">
 <p class="admonition-title">EntraIDRemediationSuccess</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>&#39;${userEmail}&#39; successfully remediated violation &#39;${violationName}&#39;  with &#39;${remediationType}&#39; on &#39;${objectName}&#39;.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>Success</strong></td><td><strong>Yes</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>Success</strong></td>
+<td><strong>Yes</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition info">
 <p class="admonition-title">ExportActionsLogRemediation</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>&#39;${userEmail}&#39; downloaded actions log for object &#39;${resourceName} in &#39;${tenantName}&#39;
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>Success</strong></td><td><strong>Yes</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>Success</strong></td>
+<td><strong>Yes</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition info">
 <p class="admonition-title">ExportPermissionsRemediation</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>&#39;${userEmail}&#39; downloaded data access permissions for object &#39;${resourceName}&#39; in &#39;${tenantName}&#39;
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>Success</strong></td><td><strong>Yes</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>Success</strong></td>
+<td><strong>Yes</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition info">
 <p class="admonition-title">MipLabelRemediationFailure</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>Error while assigning the label &#39;${labelName}&#39; to ${failedDocumentCount}  documents detected in violation by user ${userEmail} for  violation &#39;${policyName}&#39; on object &#39;${objectName}&#39;. ${skippedCount} documents were skipped due to unsupported file types.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>Failure</strong></td><td><strong>Yes</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>Failure</strong></td>
+<td><strong>Yes</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition info">
 <p class="admonition-title">MipLabelRemediationSuccess</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>User ${userEmail} successfully assigned the label &#39;${labelName}&#39; to ${documentCount} documents detected in violation &#39;${policyName}&#39; on  object &#39;${objectName}&#39;. ${skippedCount} documents were skipped due to unsupported file types.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>Success</strong></td><td><strong>Yes</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>Success</strong></td>
+<td><strong>Yes</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition failure">
 <p class="admonition-title">OverExposureRevokeAccessRemediationFailure</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>&#39;${userEmail}&#39; failed to revoke &#39;${accessType}&#39; access from  &#39;${documentCount}&#39; files in object &#39;${resourceName}&#39;
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Critical</strong></td><td><strong>Failure</strong></td><td><strong>Yes</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Critical</strong></td>
+<td><strong>Failure</strong></td>
+<td><strong>Yes</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition info">
 <p class="admonition-title">OverExposureRevokeAccessRemediationSuccess</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>&#39;${userEmail}&#39; revoked &#39;${accessType}&#39; access from &#39;${documentCount}&#39; files in object &#39;${resourceName}&#39;
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>Success</strong></td><td><strong>Yes</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>Success</strong></td>
+<td><strong>Yes</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition info">
 <p class="admonition-title">PolicyViolationStatusUpdated</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>${userEmail} changed the status of the violations &#39;${policyName}&#39; on  object &#39;${objectName}&#39; from &#39;${oldStatus}&#39; to &#39;${newStatus}&#39; .
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>Success</strong></td><td><strong>Yes</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>Success</strong></td>
+<td><strong>Yes</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition info">
 <p class="admonition-title">RemediationTriggered</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-14-1"><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a>${userEmail} triggered remediation action &#39;${actionName}&#39; on  violation &#39;${policyName}&#39; on object &#39;${objectName}&#39;.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>Success</strong></td><td><strong>Yes</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>Success</strong></td>
+<td><strong>Yes</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition info">
 <p class="admonition-title">TicketCreated</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-15-1"><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a>${userEmail} created a ticket for violation through  &#39;${ticketPlatform}&#39; for &#39;${policyName}&#39; on object &#39;${objectName}&#39;.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>Success</strong></td><td><strong>Yes</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>Success</strong></td>
+<td><strong>Yes</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 
 
@@ -5505,7 +5729,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="August 27, 2025 19:06:59 UTC">2025-08-27</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="September 16, 2025 17:51:30 UTC">2025-09-16</span>
   </span>
 
     
@@ -5659,7 +5883,7 @@
       <script id="__config" type="application/json">{"base": "../../../../..", "features": ["content.code.copy", "content.code.annotate", "content.tooltips", "content.tabs.link", "navigation.tabs", "navigation.indexes", "search.share"], "search": "../../../../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../../../../../assets/javascripts/bundle.92b07e13.min.js"></script>
+      <script src="../../../../../assets/javascripts/bundle.f55a23d4.min.js"></script>
       
         <script src="../../../../../javascripts/extra.js"></script>
       

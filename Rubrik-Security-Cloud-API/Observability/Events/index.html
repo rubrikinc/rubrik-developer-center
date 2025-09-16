@@ -18,7 +18,7 @@
       
       
       <link rel="icon" href="../../../assets/favicon.ico">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.18">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.20">
     
     
       
@@ -26,7 +26,7 @@
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.7e37652d.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.e53b48f4.min.css">
       
         
         <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
@@ -109,7 +109,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#retrieving-events-via-api-query" class="md-skip">
+        <a href="#retrieving-events-via-api" class="md-skip">
           Skip to content
         </a>
       
@@ -5276,11 +5276,35 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#retrieving-events-via-api-query" class="md-nav__link">
+  <a href="#retrieving-events-via-api" class="md-nav__link">
     <span class="md-ellipsis">
-      Retrieving Events via API Query
+      Retrieving Events via API
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="Retrieving Events via API">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#workload-events" class="md-nav__link">
+    <span class="md-ellipsis">
+      Workload Events
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#audit-events" class="md-nav__link">
+    <span class="md-ellipsis">
+      Audit Events
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -5290,6 +5314,114 @@
       Pushing Events Using Webhooks
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="Pushing Events Using Webhooks">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#webhooks-overview-video" class="md-nav__link">
+    <span class="md-ellipsis">
+      Webhooks Overview Video
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#default-webhook-payload-format" class="md-nav__link">
+    <span class="md-ellipsis">
+      Default Webhook Payload Format
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#building-a-custom-webhook-payload-template" class="md-nav__link">
+    <span class="md-ellipsis">
+      Building a Custom Webhook Payload Template
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#event-webhook-payload-variables" class="md-nav__link">
+    <span class="md-ellipsis">
+      Event Webhook Payload Variables
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#audit-specific-webhook-payload-variables" class="md-nav__link">
+    <span class="md-ellipsis">
+      Audit Specific Webhook Payload Variables
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pre-built-webhook-templates" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pre-Built Webhook Templates
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Pre-Built Webhook Templates">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#datadog-webhook-template-example" class="md-nav__link">
+    <span class="md-ellipsis">
+      Datadog Webhook Template Example
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#managing-webhook-subscriptions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Managing Webhook Subscriptions
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Managing Webhook Subscriptions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#retrieving-webhook-subscriptions-via-api" class="md-nav__link">
+    <span class="md-ellipsis">
+      Retrieving Webhook Subscriptions via API
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#creating-a-webhook-subscription-via-api" class="md-nav__link">
+    <span class="md-ellipsis">
+      Creating a Webhook Subscription via API
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -5311,8 +5443,10 @@
 
   <h1>Events</h1>
 
-<h3 id="retrieving-events-via-api-query">Retrieving Events via API Query</h3>
-<div class="tabbed-set tabbed-alternate" data-tabs="1:3"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">GraphQL</label><label for="__tabbed_1_2">PowerShell SDK</label><label for="__tabbed_1_3">Shell</label></div>
+<h2 id="retrieving-events-via-api">Retrieving Events via API</h2>
+<p>Rubrik events can be retrieved via API query for use in automation or reporting. Rubrik stores 90 days of events in Rubrik Security Cloud. If retention requirements are greater than 90 days, events can be pulled via API or pushed via webhooks to an external system. When querying for events, it's best to limit the time range and query as frequently as needed. Depending on the size of the environment, the queries can result in a very long running query due to the volume of events.</p>
+<h3 id="workload-events">Workload Events</h3>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:3"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1"><abbr title="A query language for APIs that provides a complete and understandble description of the data in the API. GraphQL is a strongly typed architecture, which means everything has a type and there is no guessing on the structure.">GraphQL</abbr></label><label for="__tabbed_1_2">PowerShell SDK</label><label for="__tabbed_1_3">Shell</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
 <div class="language-graphql highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="k">query</span><span class="w"> </span><span class="p">{</span>
@@ -5381,41 +5515,599 @@
 </div>
 </div>
 </div>
-<h3 id="pushing-events-using-webhooks">Pushing Events Using Webhooks</h3>
-<p>Webhooks provide a mechanism to push events via HTTP to an external system. Webhooks contain a JSON payload with details about the event.</p>
-<p>The following is an example webhook of a Rubrik event in the default format. For more detailed information on Rubrik webhooks, see the <a href="https://docs.rubrik.com/en-us/saas/saas/common/webhooks.html"><abbr title="Rubrik Security Cloud: The modern data security SaaS management plane">RSC</abbr> User Guide</a></p>
-<div class="language-json highlight"><span class="filename">default webhook payload example</span><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="p">{</span>
-</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="w">   </span><span class="nt">&quot;summary&quot;</span><span class="p">:</span><span class="s2">&quot;Failed backup of vSphere VM &#39;sh1-EncryptMe-05-Group1&#39;.&quot;</span><span class="p">,</span>
-</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="w">   </span><span class="nt">&quot;source&quot;</span><span class="p">:</span><span class="s2">&quot;Rubrik Security Cloud&quot;</span><span class="p">,</span>
-</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="w">   </span><span class="nt">&quot;severity&quot;</span><span class="p">:</span><span class="s2">&quot;critical&quot;</span><span class="p">,</span>
-</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="w">   </span><span class="nt">&quot;timestamp&quot;</span><span class="p">:</span><span class="s2">&quot;2024-07-18T06:39:40.46Z&quot;</span><span class="p">,</span>
-</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="w">   </span><span class="nt">&quot;class&quot;</span><span class="p">:</span><span class="s2">&quot;Backup&quot;</span><span class="p">,</span>
-</span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a><span class="w">   </span><span class="nt">&quot;custom_details&quot;</span><span class="p">:{</span>
-</span><span id="__span-3-8"><a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a><span class="w">      </span><span class="nt">&quot;seriesId&quot;</span><span class="p">:</span><span class="s2">&quot;ccd7a8a5-4c58-4c88-bff9-7bdffddb6099&quot;</span><span class="p">,</span>
-</span><span id="__span-3-9"><a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a><span class="w">      </span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="s2">&quot;c2b47274-6323-4025-b307-afed1cfb7574&quot;</span><span class="p">,</span>
-</span><span id="__span-3-10"><a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a><span class="w">      </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="s2">&quot;Event&quot;</span><span class="p">,</span>
-</span><span id="__span-3-11"><a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a><span class="w">      </span><span class="nt">&quot;objectId&quot;</span><span class="p">:</span><span class="s2">&quot;83c4a80a-4a57-5699-b399-651089135586&quot;</span><span class="p">,</span>
-</span><span id="__span-3-12"><a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a><span class="w">      </span><span class="nt">&quot;objectName&quot;</span><span class="p">:</span><span class="s2">&quot;sh1-EncryptMe-05-Group1&quot;</span><span class="p">,</span>
-</span><span id="__span-3-13"><a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a><span class="w">      </span><span class="nt">&quot;objectType&quot;</span><span class="p">:</span><span class="s2">&quot;VmwareVm&quot;</span><span class="p">,</span>
-</span><span id="__span-3-14"><a id="__codelineno-3-14" name="__codelineno-3-14" href="#__codelineno-3-14"></a><span class="w">      </span><span class="nt">&quot;status&quot;</span><span class="p">:</span><span class="s2">&quot;Failure&quot;</span><span class="p">,</span>
-</span><span id="__span-3-15"><a id="__codelineno-3-15" name="__codelineno-3-15" href="#__codelineno-3-15"></a><span class="w">      </span><span class="nt">&quot;clusterId&quot;</span><span class="p">:</span><span class="s2">&quot;6a271636-9392-4cba-90c5-bdbe227854ab&quot;</span><span class="p">,</span>
-</span><span id="__span-3-16"><a id="__codelineno-3-16" name="__codelineno-3-16" href="#__codelineno-3-16"></a><span class="w">      </span><span class="nt">&quot;clusterName&quot;</span><span class="p">:</span><span class="s2">&quot;sh1-PaloAlto&quot;</span><span class="p">,</span>
-</span><span id="__span-3-17"><a id="__codelineno-3-17" name="__codelineno-3-17" href="#__codelineno-3-17"></a><span class="w">      </span><span class="nt">&quot;eventName&quot;</span><span class="p">:</span><span class="s2">&quot;Snapshot.BackupFailed&quot;</span><span class="p">,</span>
-</span><span id="__span-3-18"><a id="__codelineno-3-18" name="__codelineno-3-18" href="#__codelineno-3-18"></a><span class="w">      </span><span class="nt">&quot;errorId&quot;</span><span class="p">:</span><span class="s2">&quot;Snapshot.VmwareSnapshotError&quot;</span><span class="p">,</span>
-</span><span id="__span-3-19"><a id="__codelineno-3-19" name="__codelineno-3-19" href="#__codelineno-3-19"></a><span class="w">      </span><span class="nt">&quot;errorCode&quot;</span><span class="p">:</span><span class="s2">&quot;&quot;</span><span class="p">,</span>
-</span><span id="__span-3-20"><a id="__codelineno-3-20" name="__codelineno-3-20" href="#__codelineno-3-20"></a><span class="w">      </span><span class="nt">&quot;errorRemedy&quot;</span><span class="p">:</span><span class="s2">&quot;&quot;</span><span class="p">,</span>
-</span><span id="__span-3-21"><a id="__codelineno-3-21" name="__codelineno-3-21" href="#__codelineno-3-21"></a><span class="w">      </span><span class="nt">&quot;errorReason&quot;</span><span class="p">:</span><span class="s2">&quot;&quot;</span><span class="p">,</span>
-</span><span id="__span-3-22"><a id="__codelineno-3-22" name="__codelineno-3-22" href="#__codelineno-3-22"></a><span class="w">      </span><span class="nt">&quot;auditUserName&quot;</span><span class="p">:</span><span class="s2">&quot;&quot;</span><span class="p">,</span>
-</span><span id="__span-3-23"><a id="__codelineno-3-23" name="__codelineno-3-23" href="#__codelineno-3-23"></a><span class="w">      </span><span class="nt">&quot;auditUserId&quot;</span><span class="p">:</span><span class="s2">&quot;&quot;</span><span class="p">,</span>
-</span><span id="__span-3-24"><a id="__codelineno-3-24" name="__codelineno-3-24" href="#__codelineno-3-24"></a><span class="w">      </span><span class="nt">&quot;location&quot;</span><span class="p">:</span><span class="s2">&quot;sh1-paloalto-vcsa.rubrikdemo.com&quot;</span><span class="p">,</span>
-</span><span id="__span-3-25"><a id="__codelineno-3-25" name="__codelineno-3-25" href="#__codelineno-3-25"></a><span class="w">      </span><span class="nt">&quot;url&quot;</span><span class="p">:</span><span class="s2">&quot;&quot;</span><span class="p">,</span>
-</span><span id="__span-3-26"><a id="__codelineno-3-26" name="__codelineno-3-26" href="#__codelineno-3-26"></a><span class="w">      </span><span class="nt">&quot;customerID&quot;</span><span class="p">:</span><span class="s2">&quot;rubrik-gaia&quot;</span><span class="p">,</span>
-</span><span id="__span-3-27"><a id="__codelineno-3-27" name="__codelineno-3-27" href="#__codelineno-3-27"></a><span class="w">      </span><span class="nt">&quot;logicalSizeInBytes&quot;</span><span class="p">:</span><span class="s2">&quot;&quot;</span><span class="p">,</span>
-</span><span id="__span-3-28"><a id="__codelineno-3-28" name="__codelineno-3-28" href="#__codelineno-3-28"></a><span class="w">      </span><span class="nt">&quot;dataTransferredInBytes&quot;</span><span class="p">:</span><span class="s2">&quot;&quot;</span><span class="p">,</span>
-</span><span id="__span-3-29"><a id="__codelineno-3-29" name="__codelineno-3-29" href="#__codelineno-3-29"></a><span class="w">      </span><span class="nt">&quot;effectiveThroughput&quot;</span><span class="p">:</span><span class="s2">&quot;&quot;</span>
-</span><span id="__span-3-30"><a id="__codelineno-3-30" name="__codelineno-3-30" href="#__codelineno-3-30"></a><span class="w">   </span><span class="p">}</span>
+<h3 id="audit-events">Audit Events</h3>
+<div class="tabbed-set tabbed-alternate" data-tabs="2:3"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><input id="__tabbed_2_3" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1"><abbr title="A query language for APIs that provides a complete and understandble description of the data in the API. GraphQL is a strongly typed architecture, which means everything has a type and there is no guessing on the structure.">GraphQL</abbr></label><label for="__tabbed_2_2">PowerShell SDK</label><label for="__tabbed_2_3">Shell</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="language-graphql highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="k">query</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="w">  </span><span class="n">userAuditConnection</span><span class="p">(</span>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="w">    </span><span class="n">filters</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="w">        </span><span class="n">timeGt</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;1970-01-01T00:00:00Z&quot;</span>
+</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="w">        </span><span class="c">#timeLt: &quot;1970-01-01T00:00:00Z&quot;</span>
+</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="w">        </span><span class="c">#auditType: [SLA_MODIFICATION]</span>
+</span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a><span class="w">        </span><span class="c">#auditStatus: [SUCCESS]</span>
+</span><span id="__span-3-8"><a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a><span class="w">        </span><span class="c">#auditSeverity: [CRITICAL]</span>
+</span><span id="__span-3-9"><a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a><span class="w">        </span><span class="c">#auditObjectType: [VMWARE_VM]</span>
+</span><span id="__span-3-10"><a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-3-11"><a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a><span class="w">  </span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-3-12"><a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a><span class="w">    </span><span class="n">nodes</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-3-13"><a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a><span class="w">      </span><span class="n">auditType</span>
+</span><span id="__span-3-14"><a id="__codelineno-3-14" name="__codelineno-3-14" href="#__codelineno-3-14"></a><span class="w">      </span><span class="n">cluster</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-3-15"><a id="__codelineno-3-15" name="__codelineno-3-15" href="#__codelineno-3-15"></a><span class="w">        </span><span class="n">name</span>
+</span><span id="__span-3-16"><a id="__codelineno-3-16" name="__codelineno-3-16" href="#__codelineno-3-16"></a><span class="w">        </span><span class="n">id</span>
+</span><span id="__span-3-17"><a id="__codelineno-3-17" name="__codelineno-3-17" href="#__codelineno-3-17"></a><span class="w">      </span><span class="p">}</span>
+</span><span id="__span-3-18"><a id="__codelineno-3-18" name="__codelineno-3-18" href="#__codelineno-3-18"></a><span class="w">      </span><span class="n">userName</span>
+</span><span id="__span-3-19"><a id="__codelineno-3-19" name="__codelineno-3-19" href="#__codelineno-3-19"></a><span class="w">      </span><span class="n">ipAddress</span>
+</span><span id="__span-3-20"><a id="__codelineno-3-20" name="__codelineno-3-20" href="#__codelineno-3-20"></a><span class="w">      </span><span class="n">message</span>
+</span><span id="__span-3-21"><a id="__codelineno-3-21" name="__codelineno-3-21" href="#__codelineno-3-21"></a><span class="w">      </span><span class="n">objectName</span>
+</span><span id="__span-3-22"><a id="__codelineno-3-22" name="__codelineno-3-22" href="#__codelineno-3-22"></a><span class="w">      </span><span class="n">objectId</span>
+</span><span id="__span-3-23"><a id="__codelineno-3-23" name="__codelineno-3-23" href="#__codelineno-3-23"></a><span class="w">      </span><span class="n">objectType</span>
+</span><span id="__span-3-24"><a id="__codelineno-3-24" name="__codelineno-3-24" href="#__codelineno-3-24"></a><span class="w">      </span><span class="n">orgName</span>
+</span><span id="__span-3-25"><a id="__codelineno-3-25" name="__codelineno-3-25" href="#__codelineno-3-25"></a><span class="w">      </span><span class="n">orgId</span>
+</span><span id="__span-3-26"><a id="__codelineno-3-26" name="__codelineno-3-26" href="#__codelineno-3-26"></a><span class="w">      </span><span class="n">severity</span>
+</span><span id="__span-3-27"><a id="__codelineno-3-27" name="__codelineno-3-27" href="#__codelineno-3-27"></a><span class="w">      </span><span class="n">status</span>
+</span><span id="__span-3-28"><a id="__codelineno-3-28" name="__codelineno-3-28" href="#__codelineno-3-28"></a><span class="w">      </span><span class="n">time</span>
+</span><span id="__span-3-29"><a id="__codelineno-3-29" name="__codelineno-3-29" href="#__codelineno-3-29"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-3-30"><a id="__codelineno-3-30" name="__codelineno-3-30" href="#__codelineno-3-30"></a><span class="w">  </span><span class="p">}</span>
 </span><span id="__span-3-31"><a id="__codelineno-3-31" name="__codelineno-3-31" href="#__codelineno-3-31"></a><span class="p">}</span>
 </span></code></pre></div>
+</div>
+<div class="tabbed-block">
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="nv">$query</span> <span class="p">=</span> <span class="nb">New-RscQuery</span> <span class="n">-GqlQuery</span> <span class="n">userAuditConnection</span>
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="nv">$query</span><span class="p">.</span><span class="n">Var</span><span class="p">.</span><span class="n">filters</span> <span class="p">=</span> <span class="nb">Get-RscType</span> <span class="n">-Name</span> <span class="n">UserAuditFilter</span>
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="nv">$query</span><span class="p">.</span><span class="n">Var</span><span class="p">.</span><span class="n">filters</span><span class="p">.</span><span class="n">timeGt</span> <span class="p">=</span> <span class="s2">&quot;2025-09-16T00:00:00Z&quot;</span>
+</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="c">#$query.Var.filters.auditType = @([RubrikSecurityCloud.Types.AuditType]::SLA_MODIFICATION)</span>
+</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="c">#$query.Var.filters.auditStatus = @([RubrikSecurityCloud.Types.AuditStatus]::SUCCESS)</span>
+</span><span id="__span-4-6"><a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a><span class="c">#$query.Var.filters.auditSeverity = @([RubrikSecurityCloud.Types.AuditSeverity]::CRITICAL)</span>
+</span><span id="__span-4-7"><a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a><span class="c">#$query.Var.filters.auditObjectType = @([RubrikSecurityCloud.Types.AuditObjectType]::VMWARE_VM)</span>
+</span><span id="__span-4-8"><a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a><span class="nv">$query</span><span class="p">.</span><span class="n">Field</span><span class="p">.</span><span class="n">nodes</span> <span class="p">=</span> <span class="nb">Get-RscType</span> <span class="n">-Name</span> <span class="n">UserAudit</span> <span class="n">-InitialProperties</span> <span class="p">`</span>
+</span><span id="__span-4-9"><a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a>    <span class="n">auditType</span><span class="p">,`</span>
+</span><span id="__span-4-10"><a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a>    <span class="n">cluster</span><span class="p">.</span><span class="n">name</span><span class="p">,</span><span class="n">cluster</span><span class="p">.</span><span class="n">id</span><span class="p">,`</span>
+</span><span id="__span-4-11"><a id="__codelineno-4-11" name="__codelineno-4-11" href="#__codelineno-4-11"></a>    <span class="n">userName</span><span class="p">,`</span>
+</span><span id="__span-4-12"><a id="__codelineno-4-12" name="__codelineno-4-12" href="#__codelineno-4-12"></a>    <span class="n">ipAddress</span><span class="p">,`</span>
+</span><span id="__span-4-13"><a id="__codelineno-4-13" name="__codelineno-4-13" href="#__codelineno-4-13"></a>    <span class="n">message</span><span class="p">,`</span>
+</span><span id="__span-4-14"><a id="__codelineno-4-14" name="__codelineno-4-14" href="#__codelineno-4-14"></a>    <span class="n">objectName</span><span class="p">,`</span>
+</span><span id="__span-4-15"><a id="__codelineno-4-15" name="__codelineno-4-15" href="#__codelineno-4-15"></a>    <span class="n">objectId</span><span class="p">,`</span>
+</span><span id="__span-4-16"><a id="__codelineno-4-16" name="__codelineno-4-16" href="#__codelineno-4-16"></a>    <span class="n">objectType</span><span class="p">,`</span>
+</span><span id="__span-4-17"><a id="__codelineno-4-17" name="__codelineno-4-17" href="#__codelineno-4-17"></a>    <span class="n">orgName</span><span class="p">,`</span>
+</span><span id="__span-4-18"><a id="__codelineno-4-18" name="__codelineno-4-18" href="#__codelineno-4-18"></a>    <span class="n">orgId</span><span class="p">,`</span>
+</span><span id="__span-4-19"><a id="__codelineno-4-19" name="__codelineno-4-19" href="#__codelineno-4-19"></a>    <span class="n">severity</span><span class="p">,`</span>
+</span><span id="__span-4-20"><a id="__codelineno-4-20" name="__codelineno-4-20" href="#__codelineno-4-20"></a>    <span class="n">status</span><span class="p">,`</span>
+</span><span id="__span-4-21"><a id="__codelineno-4-21" name="__codelineno-4-21" href="#__codelineno-4-21"></a>    <span class="n">time</span>
+</span><span id="__span-4-22"><a id="__codelineno-4-22" name="__codelineno-4-22" href="#__codelineno-4-22"></a><span class="nv">$query</span><span class="p">.</span><span class="n">Invoke</span><span class="p">().</span><span class="n">nodes</span>
+</span></code></pre></div>
+</div>
+<div class="tabbed-block">
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="ch">#!/bin/bash</span>
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="c1"># RSC_TOKEN=&quot;YOUR_RSC_ACCESS_TOKEN&quot;</span>
+</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="nv">query</span><span class="o">=</span><span class="s2">&quot;query { userAuditConnection( filters: { timeGt: \\\&quot;1970-01-01T00:00:00Z\\\&quot; } ) { nodes { auditType cluster { name id } userName ipAddress message objectName objectId objectType orgName orgId severity status time } } }&quot;</span>
+</span><span id="__span-5-5"><a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>
+</span><span id="__span-5-6"><a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a><span class="c1"># Execute the GraphQL query with curl</span>
+</span><span id="__span-5-7"><a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a>curl<span class="w"> </span>-X<span class="w"> </span>POST<span class="w"> </span><span class="se">\</span>
+</span><span id="__span-5-8"><a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a><span class="w">  </span>-H<span class="w"> </span><span class="s2">&quot;Content-Type: application/json&quot;</span><span class="w"> </span><span class="se">\</span>
+</span><span id="__span-5-9"><a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a><span class="w">  </span>-H<span class="w"> </span><span class="s2">&quot;Authorization: Bearer </span><span class="nv">$RSC_TOKEN</span><span class="s2">&quot;</span><span class="w"> </span><span class="se">\</span>
+</span><span id="__span-5-10"><a id="__codelineno-5-10" name="__codelineno-5-10" href="#__codelineno-5-10"></a><span class="w">  </span>-d<span class="w"> </span><span class="s2">&quot;{\&quot;query\&quot;: \&quot;</span><span class="nv">$query</span><span class="s2">\&quot;}&quot;</span><span class="w"> </span><span class="se">\</span>
+</span><span id="__span-5-11"><a id="__codelineno-5-11" name="__codelineno-5-11" href="#__codelineno-5-11"></a><span class="w">  </span>https://example.my.rubrik.com/api/graphql
+</span></code></pre></div>
+</div>
+</div>
+</div>
+<h2 id="pushing-events-using-webhooks">Pushing Events Using Webhooks</h2>
+<p>Webhooks provide a mechanism to push events via HTTP to an external system. Webhooks contain a JSON payload with details about the event. The default payload format is PagerDuty Common Event Format (PD-CEF). Custom JSON templates can also be created to meet the requirements of external systems that have specific payload requirements.</p>
+<p>The webhook retry/backoff policy is as follows:</p>
+<table>
+<thead>
+<tr>
+<th>Retry Count</th>
+<th>Backoff Time</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>1 second</td>
+</tr>
+<tr>
+<td>2</td>
+<td>5 seconds</td>
+</tr>
+<tr>
+<td>3</td>
+<td>10 seconds</td>
+</tr>
+</tbody>
+</table>
+<p>After 3 attempts, the event will be removed from the queue. The webhook will be auto-disabled if there are 25 consecutive failures.</p>
+<h3 id="webhooks-overview-video">Webhooks Overview Video</h3>
+<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1116783069?h=aacc3438e6&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Observability Integration with Webhooks"></iframe></div>
+<script src="https://player.vimeo.com/api/player.js"></script>
+
+<h3 id="default-webhook-payload-format">Default Webhook Payload Format</h3>
+<p>The following is an example webhook of a Rubrik event in the default format. For more detailed information on Rubrik webhooks, see the <a href="https://docs.rubrik.com/en-us/saas/saas/common/webhooks.html"><abbr title="Rubrik Security Cloud: The modern data security SaaS management plane">RSC</abbr> User Guide</a>
+<div class="language-json highlight"><span class="filename">default webhook payload example</span><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="p">{</span>
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="w">   </span><span class="nt">&quot;summary&quot;</span><span class="p">:</span><span class="s2">&quot;Failed backup of vSphere VM &#39;sh1-EncryptMe-05-Group1&#39;.&quot;</span><span class="p">,</span>
+</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="w">   </span><span class="nt">&quot;source&quot;</span><span class="p">:</span><span class="s2">&quot;Rubrik Security Cloud&quot;</span><span class="p">,</span>
+</span><span id="__span-6-4"><a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="w">   </span><span class="nt">&quot;severity&quot;</span><span class="p">:</span><span class="s2">&quot;critical&quot;</span><span class="p">,</span>
+</span><span id="__span-6-5"><a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a><span class="w">   </span><span class="nt">&quot;timestamp&quot;</span><span class="p">:</span><span class="s2">&quot;2024-07-18T06:39:40.46Z&quot;</span><span class="p">,</span>
+</span><span id="__span-6-6"><a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a><span class="w">   </span><span class="nt">&quot;class&quot;</span><span class="p">:</span><span class="s2">&quot;Backup&quot;</span><span class="p">,</span>
+</span><span id="__span-6-7"><a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a><span class="w">   </span><span class="nt">&quot;custom_details&quot;</span><span class="p">:{</span>
+</span><span id="__span-6-8"><a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a><span class="w">      </span><span class="nt">&quot;seriesId&quot;</span><span class="p">:</span><span class="s2">&quot;ccd7a8a5-4c58-4c88-bff9-7bdffddb6099&quot;</span><span class="p">,</span>
+</span><span id="__span-6-9"><a id="__codelineno-6-9" name="__codelineno-6-9" href="#__codelineno-6-9"></a><span class="w">      </span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="s2">&quot;c2b47274-6323-4025-b307-afed1cfb7574&quot;</span><span class="p">,</span>
+</span><span id="__span-6-10"><a id="__codelineno-6-10" name="__codelineno-6-10" href="#__codelineno-6-10"></a><span class="w">      </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="s2">&quot;Event&quot;</span><span class="p">,</span>
+</span><span id="__span-6-11"><a id="__codelineno-6-11" name="__codelineno-6-11" href="#__codelineno-6-11"></a><span class="w">      </span><span class="nt">&quot;objectId&quot;</span><span class="p">:</span><span class="s2">&quot;83c4a80a-4a57-5699-b399-651089135586&quot;</span><span class="p">,</span>
+</span><span id="__span-6-12"><a id="__codelineno-6-12" name="__codelineno-6-12" href="#__codelineno-6-12"></a><span class="w">      </span><span class="nt">&quot;objectName&quot;</span><span class="p">:</span><span class="s2">&quot;sh1-EncryptMe-05-Group1&quot;</span><span class="p">,</span>
+</span><span id="__span-6-13"><a id="__codelineno-6-13" name="__codelineno-6-13" href="#__codelineno-6-13"></a><span class="w">      </span><span class="nt">&quot;objectType&quot;</span><span class="p">:</span><span class="s2">&quot;VmwareVm&quot;</span><span class="p">,</span>
+</span><span id="__span-6-14"><a id="__codelineno-6-14" name="__codelineno-6-14" href="#__codelineno-6-14"></a><span class="w">      </span><span class="nt">&quot;status&quot;</span><span class="p">:</span><span class="s2">&quot;Failure&quot;</span><span class="p">,</span>
+</span><span id="__span-6-15"><a id="__codelineno-6-15" name="__codelineno-6-15" href="#__codelineno-6-15"></a><span class="w">      </span><span class="nt">&quot;clusterId&quot;</span><span class="p">:</span><span class="s2">&quot;6a271636-9392-4cba-90c5-bdbe227854ab&quot;</span><span class="p">,</span>
+</span><span id="__span-6-16"><a id="__codelineno-6-16" name="__codelineno-6-16" href="#__codelineno-6-16"></a><span class="w">      </span><span class="nt">&quot;clusterName&quot;</span><span class="p">:</span><span class="s2">&quot;sh1-PaloAlto&quot;</span><span class="p">,</span>
+</span><span id="__span-6-17"><a id="__codelineno-6-17" name="__codelineno-6-17" href="#__codelineno-6-17"></a><span class="w">      </span><span class="nt">&quot;eventName&quot;</span><span class="p">:</span><span class="s2">&quot;Snapshot.BackupFailed&quot;</span><span class="p">,</span>
+</span><span id="__span-6-18"><a id="__codelineno-6-18" name="__codelineno-6-18" href="#__codelineno-6-18"></a><span class="w">      </span><span class="nt">&quot;errorId&quot;</span><span class="p">:</span><span class="s2">&quot;Snapshot.VmwareSnapshotError&quot;</span><span class="p">,</span>
+</span><span id="__span-6-19"><a id="__codelineno-6-19" name="__codelineno-6-19" href="#__codelineno-6-19"></a><span class="w">      </span><span class="nt">&quot;errorCode&quot;</span><span class="p">:</span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+</span><span id="__span-6-20"><a id="__codelineno-6-20" name="__codelineno-6-20" href="#__codelineno-6-20"></a><span class="w">      </span><span class="nt">&quot;errorRemedy&quot;</span><span class="p">:</span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+</span><span id="__span-6-21"><a id="__codelineno-6-21" name="__codelineno-6-21" href="#__codelineno-6-21"></a><span class="w">      </span><span class="nt">&quot;errorReason&quot;</span><span class="p">:</span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+</span><span id="__span-6-22"><a id="__codelineno-6-22" name="__codelineno-6-22" href="#__codelineno-6-22"></a><span class="w">      </span><span class="nt">&quot;auditUserName&quot;</span><span class="p">:</span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+</span><span id="__span-6-23"><a id="__codelineno-6-23" name="__codelineno-6-23" href="#__codelineno-6-23"></a><span class="w">      </span><span class="nt">&quot;auditUserId&quot;</span><span class="p">:</span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+</span><span id="__span-6-24"><a id="__codelineno-6-24" name="__codelineno-6-24" href="#__codelineno-6-24"></a><span class="w">      </span><span class="nt">&quot;location&quot;</span><span class="p">:</span><span class="s2">&quot;sh1-paloalto-vcsa.rubrikdemo.com&quot;</span><span class="p">,</span>
+</span><span id="__span-6-25"><a id="__codelineno-6-25" name="__codelineno-6-25" href="#__codelineno-6-25"></a><span class="w">      </span><span class="nt">&quot;url&quot;</span><span class="p">:</span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+</span><span id="__span-6-26"><a id="__codelineno-6-26" name="__codelineno-6-26" href="#__codelineno-6-26"></a><span class="w">      </span><span class="nt">&quot;customerID&quot;</span><span class="p">:</span><span class="s2">&quot;rubrik-gaia&quot;</span><span class="p">,</span>
+</span><span id="__span-6-27"><a id="__codelineno-6-27" name="__codelineno-6-27" href="#__codelineno-6-27"></a><span class="w">      </span><span class="nt">&quot;logicalSizeInBytes&quot;</span><span class="p">:</span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+</span><span id="__span-6-28"><a id="__codelineno-6-28" name="__codelineno-6-28" href="#__codelineno-6-28"></a><span class="w">      </span><span class="nt">&quot;dataTransferredInBytes&quot;</span><span class="p">:</span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+</span><span id="__span-6-29"><a id="__codelineno-6-29" name="__codelineno-6-29" href="#__codelineno-6-29"></a><span class="w">      </span><span class="nt">&quot;effectiveThroughput&quot;</span><span class="p">:</span><span class="s2">&quot;&quot;</span>
+</span><span id="__span-6-30"><a id="__codelineno-6-30" name="__codelineno-6-30" href="#__codelineno-6-30"></a><span class="w">   </span><span class="p">}</span>
+</span><span id="__span-6-31"><a id="__codelineno-6-31" name="__codelineno-6-31" href="#__codelineno-6-31"></a><span class="p">}</span>
+</span></code></pre></div></p>
+<h3 id="building-a-custom-webhook-payload-template">Building a Custom Webhook Payload Template</h3>
+<p>Custom Webhook templates are freeform JSON documents that can contain any variables that are available in the webhook payload. External systems may have specific payload requirements that require a custom template. Click the annotation icons in the code below for various ways to customize the webhook payload.</p>
+<div class="language-json highlight"><span class="filename">custom webhook template example</span><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="p">{</span>
+</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="w">    </span><span class="nt">&quot;customTitle&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;{{.ActivityType}} - {{.Status}}&quot;</span><span class="p">,</span><span class="w"> </span><span class="c1">//(1)!</span>
+</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="w">    </span><span class="nt">&quot;message&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;{{.Message}}&quot;</span><span class="p">,</span>
+</span><span id="__span-7-4"><a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a><span class="w">    </span><span class="nt">&quot;severity&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;1&quot;</span><span class="p">,</span><span class="w"> </span><span class="c1">//(2!</span>
+</span><span id="__span-7-5"><a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a><span class="w">    </span><span class="nt">&quot;timestamp&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;{{.Time.UTC.Format \&quot;1970-01-01T00:00:00Z\&quot;}}&quot;</span><span class="p">,</span><span class="w"> </span><span class="c1">//(3)!</span>
+</span><span id="__span-7-6"><a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a><span class="w">    </span><span class="nt">&quot;class&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;{{.Class}}&quot;</span><span class="p">,</span>
+</span><span id="__span-7-7"><a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a><span class="w">    </span><span class="nt">&quot;aggregationKey&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;{{.ActivitySeriesID}}&quot;</span><span class="p">,</span>
+</span><span id="__span-7-8"><a id="__codelineno-7-8" name="__codelineno-7-8" href="#__codelineno-7-8"></a><span class="w">    </span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;{{.UUID}}&quot;</span><span class="p">,</span>
+</span><span id="__span-7-9"><a id="__codelineno-7-9" name="__codelineno-7-9" href="#__codelineno-7-9"></a><span class="w">    </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;{{.ActivityType}}&quot;</span><span class="p">,</span>
+</span><span id="__span-7-10"><a id="__codelineno-7-10" name="__codelineno-7-10" href="#__codelineno-7-10"></a><span class="w">    </span><span class="nt">&quot;object&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="c1">//(4)!</span>
+</span><span id="__span-7-11"><a id="__codelineno-7-11" name="__codelineno-7-11" href="#__codelineno-7-11"></a><span class="w">        </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;{{.ObjectName}}&quot;</span><span class="p">,</span>
+</span><span id="__span-7-12"><a id="__codelineno-7-12" name="__codelineno-7-12" href="#__codelineno-7-12"></a><span class="w">        </span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;{{.ObjectID}}&quot;</span><span class="p">,</span>
+</span><span id="__span-7-13"><a id="__codelineno-7-13" name="__codelineno-7-13" href="#__codelineno-7-13"></a><span class="w">        </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;{{.ObjectType}}&quot;</span><span class="p">,</span>
+</span><span id="__span-7-14"><a id="__codelineno-7-14" name="__codelineno-7-14" href="#__codelineno-7-14"></a><span class="w">        </span><span class="nt">&quot;location&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;{{.Location}}&quot;</span><span class="p">,</span>
+</span><span id="__span-7-15"><a id="__codelineno-7-15" name="__codelineno-7-15" href="#__codelineno-7-15"></a><span class="w">        </span><span class="nt">&quot;cluster&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-7-16"><a id="__codelineno-7-16" name="__codelineno-7-16" href="#__codelineno-7-16"></a><span class="w">            </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;{{.ClusterName}}&quot;</span><span class="p">,</span>
+</span><span id="__span-7-17"><a id="__codelineno-7-17" name="__codelineno-7-17" href="#__codelineno-7-17"></a><span class="w">            </span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;{{.ClusterUUID}}&quot;</span>
+</span><span id="__span-7-18"><a id="__codelineno-7-18" name="__codelineno-7-18" href="#__codelineno-7-18"></a><span class="w">        </span><span class="p">}</span>
+</span><span id="__span-7-19"><a id="__codelineno-7-19" name="__codelineno-7-19" href="#__codelineno-7-19"></a><span class="w">    </span><span class="p">},</span>
+</span><span id="__span-7-20"><a id="__codelineno-7-20" name="__codelineno-7-20" href="#__codelineno-7-20"></a><span class="w">    </span><span class="nt">&quot;ErrorMessage&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;{{.Error.Message}}&quot;</span><span class="w"> </span><span class="c1">//(5)!</span>
+</span><span id="__span-7-21"><a id="__codelineno-7-21" name="__codelineno-7-21" href="#__codelineno-7-21"></a><span class="p">}</span>
+</span></code></pre></div>
+<ol>
+<li>Combine multiple variables and static text</li>
+<li>Static values can be included</li>
+<li>Custom time formats are supported</li>
+<li>JSON can be nested for complex payloads</li>
+<li>Accessing nested variable data</li>
+</ol>
+<h3 id="event-webhook-payload-variables">Event Webhook Payload Variables</h3>
+<p>The following variables are available for use in the webhook payload. </p>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+<th>Example</th>
+<th>Variable</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Message</td>
+<td>The message of the event</td>
+<td>"Failed backup of vSphere VM 'sh1-EncryptMe-05-Group1'."</td>
+<td><code>{{.Message}}</code></td>
+</tr>
+<tr>
+<td>Severity</td>
+<td>The severity of the event</td>
+<td>"critical"</td>
+<td><code>{{.Severity}}</code></td>
+</tr>
+<tr>
+<td>Time UTC</td>
+<td>The time the event occurred</td>
+<td>"2025-02-05 23:13:20.916705803 +0000 UTC"</td>
+<td><code>{{.Time}}</code></td>
+</tr>
+<tr>
+<td>Time RFC3339</td>
+<td>The time the event occurred</td>
+<td>"1970-01-01T00:00:00Z"</td>
+<td><code>{{.Time.UTC.Format "1970-01-01T00:00:00Z"}}</code></td>
+</tr>
+<tr>
+<td>Time RFC1123</td>
+<td>The time the event occurred</td>
+<td>"Mon, 01 Jan 1970 00:00:00 GMT"</td>
+<td><code>{{.Time.UTC.Format "Mon, 01 Jan 1970 00:00:00 GMT"}}</code></td>
+</tr>
+<tr>
+<td>Time Unix</td>
+<td>The time the event occurred</td>
+<td>1716051580</td>
+<td><code>{{.Time.Unix}}</code></td>
+</tr>
+<tr>
+<td>Time Unix Milliseconds</td>
+<td>The time the event occurred</td>
+<td>1716051580000</td>
+<td><code>{{.Time.UnixMilli}}</code></td>
+</tr>
+<tr>
+<td>Class</td>
+<td>The class of the event</td>
+<td>"Backup"</td>
+<td><code>{{.Class}}</code></td>
+</tr>
+<tr>
+<td>Activity Series ID</td>
+<td>The ID of the activity series. Use this for aggregation of related events.</td>
+<td>"ccd7a8a5-4c58-4c88-bff9-7bdffddb6099"</td>
+<td><code>{{.ActivitySeriesID}}</code></td>
+</tr>
+<tr>
+<td>Activity ID</td>
+<td>The ID of the activity</td>
+<td>"c2b47274-6323-4025-b307-afed1cfb7574"</td>
+<td><code>{{.UUID}}</code></td>
+</tr>
+<tr>
+<td>Activity Type</td>
+<td>The type of the activity</td>
+<td>"Event"</td>
+<td><code>{{.ActivityType}}</code></td>
+</tr>
+<tr>
+<td>Status</td>
+<td>The status of the activity</td>
+<td>"Failure"</td>
+<td><code>{{.Status}}</code></td>
+</tr>
+<tr>
+<td>Object ID</td>
+<td>The ID of the object</td>
+<td>"83c4a80a-4a57-5699-b399-651089135586"</td>
+<td><code>{{.ObjectID}}</code></td>
+</tr>
+<tr>
+<td>Object Name</td>
+<td>The name of the object</td>
+<td>"sh1-EncryptMe-05-Group1"</td>
+<td><code>{{.ObjectName}}</code></td>
+</tr>
+<tr>
+<td>Object Type</td>
+<td>The type of the object</td>
+<td>"VmwareVm"</td>
+<td><code>{{.ObjectType}}</code></td>
+</tr>
+<tr>
+<td>Cluster ID</td>
+<td>The ID of the cluster</td>
+<td>"6a271636-9392-4cba-90c5-bdbe227854ab"</td>
+<td><code>{{.ClusterUUID}}</code></td>
+</tr>
+<tr>
+<td>Cluster Name</td>
+<td>The name of the cluster</td>
+<td>"sh1-PaloAlto"</td>
+<td><code>{{.ClusterName}}</code></td>
+</tr>
+<tr>
+<td>Location</td>
+<td>The location of the object</td>
+<td>"sh1-paloalto-vcsa.rubrikdemo.com"</td>
+<td><code>{{.Location}}</code></td>
+</tr>
+<tr>
+<td>URL</td>
+<td>The URL for a restored file download for cloud native workloads</td>
+<td>"https://example.com/"</td>
+<td><code>{{.URL}}</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="audit-specific-webhook-payload-variables">Audit Specific Webhook Payload Variables</h3>
+<p>Rubrik audit events have additional fields that are specific to audits.</p>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+<th>Example</th>
+<th>Variable</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Audit Type</td>
+<td>The type of the audit</td>
+<td>"User"</td>
+<td><code>{{.AuditType}}</code></td>
+</tr>
+<tr>
+<td>Audit Series ID</td>
+<td>The ID of the audit series</td>
+<td>"ccd7a8a5-4c58-4c88-bff9-7bdffddb6099"</td>
+<td><code>{{.AuditSeriesID}}</code></td>
+</tr>
+<tr>
+<td>UserName</td>
+<td>The name of the user</td>
+<td>"admin"</td>
+<td><code>{{.UserName}}</code></td>
+</tr>
+<tr>
+<td>UserID</td>
+<td>The ID of the user</td>
+<td>"a1b2c3d4-e5f6-g7h8-i9j0-k1l2m3n4o5p6"</td>
+<td><code>{{.UserID}}</code></td>
+</tr>
+<tr>
+<td>IPAddress</td>
+<td>The IP address of the user</td>
+<td>"192.168.1.1"</td>
+<td><code>{{.IPAddress}}</code></td>
+</tr>
+<tr>
+<td>UserNote</td>
+<td>The note of the user</td>
+<td>"This is a note"</td>
+<td><code>{{.UserNote}}</code></td>
+</tr>
+<tr>
+<td>OrgID</td>
+<td>The ID of the organization</td>
+<td>"a1b2c3d4-e5f6-g7h8-i9j0-k1l2m3n4o5p6"</td>
+<td><code>{{.OrgID}}</code></td>
+</tr>
+<tr>
+<td>AuditInfo</td>
+<td>Audit Information in JSON Format</td>
+<td>{"auditKey":"auditValue","details":{"action":"create"}}</td>
+<td><code>{{.AuditInfo}}</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="pre-built-webhook-templates">Pre-Built Webhook Templates</h3>
+<h4 id="datadog-webhook-template-example">Datadog Webhook Template Example</h4>
+<p>Datadog requires a specific payload format to <a href="https://docs.datadoghq.com/api/latest/events/#post-an-event">post an event</a>. The following is an example webhook template that can be used to send events to Datadog. Authentication is required to send events to Datadog. In the Rubrik webhook configuration, choose custom, input <code>DD-API-KEY</code> as the header key, and provide the <a href="https://docs.datadoghq.com/account_management/api-app-keys/#api-keys">Datadog API key</a> as the header value. Customize the payload as needed for the events being sent.</p>
+<div class="language-json highlight"><span class="filename">datadog webhook template example</span><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="p">{</span>
+</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="w">    </span><span class="nt">&quot;data&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-8-3"><a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a><span class="w">        </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;event&quot;</span><span class="p">,</span>
+</span><span id="__span-8-4"><a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a><span class="w">        </span><span class="nt">&quot;attributes&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-8-5"><a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a><span class="w">            </span><span class="nt">&quot;aggregation_key&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;{{.ActivitySeriesID}}&quot;</span><span class="p">,</span>
+</span><span id="__span-8-6"><a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a><span class="w">            </span><span class="nt">&quot;tags&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;[Rubrik]&quot;</span><span class="p">,</span>
+</span><span id="__span-8-7"><a id="__codelineno-8-7" name="__codelineno-8-7" href="#__codelineno-8-7"></a><span class="w">            </span><span class="nt">&quot;category&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;alert&quot;</span><span class="p">,</span>
+</span><span id="__span-8-8"><a id="__codelineno-8-8" name="__codelineno-8-8" href="#__codelineno-8-8"></a><span class="w">            </span><span class="nt">&quot;message&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;{{.Message}}&quot;</span><span class="p">,</span>
+</span><span id="__span-8-9"><a id="__codelineno-8-9" name="__codelineno-8-9" href="#__codelineno-8-9"></a><span class="w">            </span><span class="nt">&quot;timestamp&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;{{.Time}}&quot;</span><span class="p">,</span>
+</span><span id="__span-8-10"><a id="__codelineno-8-10" name="__codelineno-8-10" href="#__codelineno-8-10"></a><span class="w">            </span><span class="nt">&quot;title&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;{{.ActivityType}} - {{.Status}}&quot;</span><span class="p">,</span>
+</span><span id="__span-8-11"><a id="__codelineno-8-11" name="__codelineno-8-11" href="#__codelineno-8-11"></a><span class="w">            </span><span class="nt">&quot;attributes&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-8-12"><a id="__codelineno-8-12" name="__codelineno-8-12" href="#__codelineno-8-12"></a><span class="w">                </span><span class="nt">&quot;custom&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-8-13"><a id="__codelineno-8-13" name="__codelineno-8-13" href="#__codelineno-8-13"></a><span class="w">                    </span><span class="nt">&quot;severity&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;{{.Severity}}&quot;</span><span class="p">,</span>
+</span><span id="__span-8-14"><a id="__codelineno-8-14" name="__codelineno-8-14" href="#__codelineno-8-14"></a><span class="w">                    </span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;{{.UUID}}&quot;</span><span class="p">,</span>
+</span><span id="__span-8-15"><a id="__codelineno-8-15" name="__codelineno-8-15" href="#__codelineno-8-15"></a><span class="w">                    </span><span class="nt">&quot;object&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-8-16"><a id="__codelineno-8-16" name="__codelineno-8-16" href="#__codelineno-8-16"></a><span class="w">                        </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;{{.ObjectName}}&quot;</span><span class="p">,</span>
+</span><span id="__span-8-17"><a id="__codelineno-8-17" name="__codelineno-8-17" href="#__codelineno-8-17"></a><span class="w">                        </span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;{{.ObjectID}}&quot;</span><span class="p">,</span>
+</span><span id="__span-8-18"><a id="__codelineno-8-18" name="__codelineno-8-18" href="#__codelineno-8-18"></a><span class="w">                        </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;{{.ObjectType}}&quot;</span><span class="p">,</span>
+</span><span id="__span-8-19"><a id="__codelineno-8-19" name="__codelineno-8-19" href="#__codelineno-8-19"></a><span class="w">                        </span><span class="nt">&quot;location&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;{{.Location}}&quot;</span><span class="p">,</span>
+</span><span id="__span-8-20"><a id="__codelineno-8-20" name="__codelineno-8-20" href="#__codelineno-8-20"></a><span class="w">                        </span><span class="nt">&quot;cluster&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-8-21"><a id="__codelineno-8-21" name="__codelineno-8-21" href="#__codelineno-8-21"></a><span class="w">                            </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;{{.ClusterName}}&quot;</span><span class="p">,</span>
+</span><span id="__span-8-22"><a id="__codelineno-8-22" name="__codelineno-8-22" href="#__codelineno-8-22"></a><span class="w">                            </span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;{{.ClusterUUID}}&quot;</span>
+</span><span id="__span-8-23"><a id="__codelineno-8-23" name="__codelineno-8-23" href="#__codelineno-8-23"></a><span class="w">                        </span><span class="p">}</span>
+</span><span id="__span-8-24"><a id="__codelineno-8-24" name="__codelineno-8-24" href="#__codelineno-8-24"></a><span class="w">                    </span><span class="p">},</span>
+</span><span id="__span-8-25"><a id="__codelineno-8-25" name="__codelineno-8-25" href="#__codelineno-8-25"></a><span class="w">                    </span><span class="nt">&quot;error&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-8-26"><a id="__codelineno-8-26" name="__codelineno-8-26" href="#__codelineno-8-26"></a><span class="w">                        </span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;{{.Error.ID}}&quot;</span><span class="p">,</span>
+</span><span id="__span-8-27"><a id="__codelineno-8-27" name="__codelineno-8-27" href="#__codelineno-8-27"></a><span class="w">                        </span><span class="nt">&quot;code&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;{{.Error.ErrorCode}}&quot;</span><span class="p">,</span>
+</span><span id="__span-8-28"><a id="__codelineno-8-28" name="__codelineno-8-28" href="#__codelineno-8-28"></a><span class="w">                        </span><span class="nt">&quot;remedy&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;{{.Error.Remedy}}&quot;</span><span class="p">,</span>
+</span><span id="__span-8-29"><a id="__codelineno-8-29" name="__codelineno-8-29" href="#__codelineno-8-29"></a><span class="w">                        </span><span class="nt">&quot;reason&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;{{.Error.Reason}}&quot;</span><span class="p">,</span>
+</span><span id="__span-8-30"><a id="__codelineno-8-30" name="__codelineno-8-30" href="#__codelineno-8-30"></a><span class="w">                        </span><span class="nt">&quot;message&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;{{.Error.Message}}&quot;</span>
+</span><span id="__span-8-31"><a id="__codelineno-8-31" name="__codelineno-8-31" href="#__codelineno-8-31"></a><span class="w">                    </span><span class="p">}</span>
+</span><span id="__span-8-32"><a id="__codelineno-8-32" name="__codelineno-8-32" href="#__codelineno-8-32"></a><span class="w">                </span><span class="p">},</span>
+</span><span id="__span-8-33"><a id="__codelineno-8-33" name="__codelineno-8-33" href="#__codelineno-8-33"></a><span class="w">                </span><span class="nt">&quot;links&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+</span><span id="__span-8-34"><a id="__codelineno-8-34" name="__codelineno-8-34" href="#__codelineno-8-34"></a><span class="w">                    </span><span class="p">{</span>
+</span><span id="__span-8-35"><a id="__codelineno-8-35" name="__codelineno-8-35" href="#__codelineno-8-35"></a><span class="w">                        </span><span class="nt">&quot;category&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;dashboard&quot;</span><span class="p">,</span>
+</span><span id="__span-8-36"><a id="__codelineno-8-36" name="__codelineno-8-36" href="#__codelineno-8-36"></a><span class="w">                        </span><span class="nt">&quot;title&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Rubrik Security Cloud&quot;</span><span class="p">,</span>
+</span><span id="__span-8-37"><a id="__codelineno-8-37" name="__codelineno-8-37" href="#__codelineno-8-37"></a><span class="w">                        </span><span class="nt">&quot;url&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://example.my.rubrik.com&quot;</span>
+</span><span id="__span-8-38"><a id="__codelineno-8-38" name="__codelineno-8-38" href="#__codelineno-8-38"></a><span class="w">                    </span><span class="p">}</span>
+</span><span id="__span-8-39"><a id="__codelineno-8-39" name="__codelineno-8-39" href="#__codelineno-8-39"></a><span class="w">                </span><span class="p">],</span>
+</span><span id="__span-8-40"><a id="__codelineno-8-40" name="__codelineno-8-40" href="#__codelineno-8-40"></a><span class="w">                </span><span class="nt">&quot;priority&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;5&quot;</span><span class="p">,</span>
+</span><span id="__span-8-41"><a id="__codelineno-8-41" name="__codelineno-8-41" href="#__codelineno-8-41"></a><span class="w">                </span><span class="nt">&quot;status&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;error&quot;</span>
+</span><span id="__span-8-42"><a id="__codelineno-8-42" name="__codelineno-8-42" href="#__codelineno-8-42"></a><span class="w">            </span><span class="p">}</span>
+</span><span id="__span-8-43"><a id="__codelineno-8-43" name="__codelineno-8-43" href="#__codelineno-8-43"></a><span class="w">        </span><span class="p">}</span>
+</span><span id="__span-8-44"><a id="__codelineno-8-44" name="__codelineno-8-44" href="#__codelineno-8-44"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-8-45"><a id="__codelineno-8-45" name="__codelineno-8-45" href="#__codelineno-8-45"></a><span class="p">}</span>
+</span></code></pre></div>
+<h3 id="managing-webhook-subscriptions">Managing Webhook Subscriptions</h3>
+<p>Webhook subscriptions can be managed manually via the <abbr title="Rubrik Security Cloud: The modern data security SaaS management plane">RSC</abbr> console, or automatically via <abbr title="Rubrik Security Cloud: The modern data security SaaS management plane">RSC</abbr> API.</p>
+<h4 id="retrieving-webhook-subscriptions-via-api">Retrieving Webhook Subscriptions via API</h4>
+<div class="tabbed-set tabbed-alternate" data-tabs="3:3"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><input id="__tabbed_3_2" name="__tabbed_3" type="radio" /><input id="__tabbed_3_3" name="__tabbed_3" type="radio" /><div class="tabbed-labels"><label for="__tabbed_3_1"><abbr title="A query language for APIs that provides a complete and understandble description of the data in the API. GraphQL is a strongly typed architecture, which means everything has a type and there is no guessing on the structure.">GraphQL</abbr></label><label for="__tabbed_3_2">PowerShell SDK</label><label for="__tabbed_3_3">Shell</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="language-graphql highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="k">query</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="w">  </span><span class="n">allWebhooksV2</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-9-3"><a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a><span class="w">    </span><span class="n">name</span>
+</span><span id="__span-9-4"><a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a><span class="w">    </span><span class="n">id</span>
+</span><span id="__span-9-5"><a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a><span class="w">    </span><span class="n">status</span>
+</span><span id="__span-9-6"><a id="__codelineno-9-6" name="__codelineno-9-6" href="#__codelineno-9-6"></a><span class="w">    </span><span class="n">authType</span>
+</span><span id="__span-9-7"><a id="__codelineno-9-7" name="__codelineno-9-7" href="#__codelineno-9-7"></a><span class="w">    </span><span class="n">createdBy</span>
+</span><span id="__span-9-8"><a id="__codelineno-9-8" name="__codelineno-9-8" href="#__codelineno-9-8"></a><span class="w">    </span><span class="n">createdAt</span>
+</span><span id="__span-9-9"><a id="__codelineno-9-9" name="__codelineno-9-9" href="#__codelineno-9-9"></a><span class="w">    </span><span class="n">updatedAt</span>
+</span><span id="__span-9-10"><a id="__codelineno-9-10" name="__codelineno-9-10" href="#__codelineno-9-10"></a><span class="w">    </span><span class="n">url</span>
+</span><span id="__span-9-11"><a id="__codelineno-9-11" name="__codelineno-9-11" href="#__codelineno-9-11"></a><span class="w">    </span><span class="n">subscriptionType</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-9-12"><a id="__codelineno-9-12" name="__codelineno-9-12" href="#__codelineno-9-12"></a><span class="w">      </span><span class="n">auditSubscription</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-9-13"><a id="__codelineno-9-13" name="__codelineno-9-13" href="#__codelineno-9-13"></a><span class="w">        </span><span class="n">auditTypes</span>
+</span><span id="__span-9-14"><a id="__codelineno-9-14" name="__codelineno-9-14" href="#__codelineno-9-14"></a><span class="w">        </span><span class="n">isSubscribedToAllAudits</span>
+</span><span id="__span-9-15"><a id="__codelineno-9-15" name="__codelineno-9-15" href="#__codelineno-9-15"></a><span class="w">        </span><span class="n">isSubscribedToAllObjectTypes</span>
+</span><span id="__span-9-16"><a id="__codelineno-9-16" name="__codelineno-9-16" href="#__codelineno-9-16"></a><span class="w">        </span><span class="n">objectTypes</span>
+</span><span id="__span-9-17"><a id="__codelineno-9-17" name="__codelineno-9-17" href="#__codelineno-9-17"></a><span class="w">        </span><span class="n">severities</span>
+</span><span id="__span-9-18"><a id="__codelineno-9-18" name="__codelineno-9-18" href="#__codelineno-9-18"></a><span class="w">        </span><span class="n">templateInfo</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-9-19"><a id="__codelineno-9-19" name="__codelineno-9-19" href="#__codelineno-9-19"></a><span class="w">          </span><span class="n">customTemplate</span>
+</span><span id="__span-9-20"><a id="__codelineno-9-20" name="__codelineno-9-20" href="#__codelineno-9-20"></a><span class="w">          </span><span class="n">templateId</span>
+</span><span id="__span-9-21"><a id="__codelineno-9-21" name="__codelineno-9-21" href="#__codelineno-9-21"></a><span class="w">        </span><span class="p">}</span>
+</span><span id="__span-9-22"><a id="__codelineno-9-22" name="__codelineno-9-22" href="#__codelineno-9-22"></a><span class="w">      </span><span class="p">}</span>
+</span><span id="__span-9-23"><a id="__codelineno-9-23" name="__codelineno-9-23" href="#__codelineno-9-23"></a><span class="w">      </span><span class="n">eventSubscription</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-9-24"><a id="__codelineno-9-24" name="__codelineno-9-24" href="#__codelineno-9-24"></a><span class="w">        </span><span class="n">eventTypes</span>
+</span><span id="__span-9-25"><a id="__codelineno-9-25" name="__codelineno-9-25" href="#__codelineno-9-25"></a><span class="w">        </span><span class="n">isSubscribedToAllEvents</span>
+</span><span id="__span-9-26"><a id="__codelineno-9-26" name="__codelineno-9-26" href="#__codelineno-9-26"></a><span class="w">        </span><span class="n">isSubscribedToAllObjectTypes</span>
+</span><span id="__span-9-27"><a id="__codelineno-9-27" name="__codelineno-9-27" href="#__codelineno-9-27"></a><span class="w">        </span><span class="n">objectTypes</span>
+</span><span id="__span-9-28"><a id="__codelineno-9-28" name="__codelineno-9-28" href="#__codelineno-9-28"></a><span class="w">        </span><span class="n">severities</span>
+</span><span id="__span-9-29"><a id="__codelineno-9-29" name="__codelineno-9-29" href="#__codelineno-9-29"></a><span class="w">        </span><span class="n">templateInfo</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-9-30"><a id="__codelineno-9-30" name="__codelineno-9-30" href="#__codelineno-9-30"></a><span class="w">          </span><span class="n">customTemplate</span>
+</span><span id="__span-9-31"><a id="__codelineno-9-31" name="__codelineno-9-31" href="#__codelineno-9-31"></a><span class="w">          </span><span class="n">templateId</span>
+</span><span id="__span-9-32"><a id="__codelineno-9-32" name="__codelineno-9-32" href="#__codelineno-9-32"></a><span class="w">        </span><span class="p">}</span>
+</span><span id="__span-9-33"><a id="__codelineno-9-33" name="__codelineno-9-33" href="#__codelineno-9-33"></a><span class="w">      </span><span class="p">}</span>
+</span><span id="__span-9-34"><a id="__codelineno-9-34" name="__codelineno-9-34" href="#__codelineno-9-34"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-9-35"><a id="__codelineno-9-35" name="__codelineno-9-35" href="#__codelineno-9-35"></a><span class="w">    </span><span class="n">description</span>
+</span><span id="__span-9-36"><a id="__codelineno-9-36" name="__codelineno-9-36" href="#__codelineno-9-36"></a><span class="w">    </span><span class="n">id</span>
+</span><span id="__span-9-37"><a id="__codelineno-9-37" name="__codelineno-9-37" href="#__codelineno-9-37"></a><span class="w">    </span><span class="n">lastFailedErrorInfo</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-9-38"><a id="__codelineno-9-38" name="__codelineno-9-38" href="#__codelineno-9-38"></a><span class="w">      </span><span class="n">errorMessage</span>
+</span><span id="__span-9-39"><a id="__codelineno-9-39" name="__codelineno-9-39" href="#__codelineno-9-39"></a><span class="w">      </span><span class="n">statusCode</span>
+</span><span id="__span-9-40"><a id="__codelineno-9-40" name="__codelineno-9-40" href="#__codelineno-9-40"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-9-41"><a id="__codelineno-9-41" name="__codelineno-9-41" href="#__codelineno-9-41"></a><span class="w">  </span><span class="p">}</span>
+</span><span id="__span-9-42"><a id="__codelineno-9-42" name="__codelineno-9-42" href="#__codelineno-9-42"></a><span class="p">}</span>
+</span></code></pre></div>
+</div>
+<div class="tabbed-block">
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="nv">$query</span> <span class="p">=</span> <span class="nb">New-RscQuery</span> <span class="n">-GqlQuery</span> <span class="n">allWebhooksV2</span>
+</span><span id="__span-10-2"><a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a><span class="nv">$query</span><span class="p">.</span><span class="n">field</span> <span class="p">=</span> <span class="nb">Get-RscType</span> <span class="n">-Name</span> <span class="n">WebhookV2</span> <span class="n">-InitialProperties</span> <span class="p">`</span>
+</span><span id="__span-10-3"><a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a>    <span class="n">Name</span><span class="p">,</span> <span class="p">`</span>
+</span><span id="__span-10-4"><a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a>    <span class="n">Id</span><span class="p">,</span> <span class="p">`</span>
+</span><span id="__span-10-5"><a id="__codelineno-10-5" name="__codelineno-10-5" href="#__codelineno-10-5"></a>    <span class="n">Status</span><span class="p">,</span> <span class="p">`</span>
+</span><span id="__span-10-6"><a id="__codelineno-10-6" name="__codelineno-10-6" href="#__codelineno-10-6"></a>    <span class="n">AuthType</span><span class="p">,</span> <span class="p">`</span>
+</span><span id="__span-10-7"><a id="__codelineno-10-7" name="__codelineno-10-7" href="#__codelineno-10-7"></a>    <span class="n">ProviderType</span><span class="p">,</span> <span class="p">`</span>
+</span><span id="__span-10-8"><a id="__codelineno-10-8" name="__codelineno-10-8" href="#__codelineno-10-8"></a>    <span class="n">CreatedAt</span><span class="p">,</span> <span class="p">`</span>
+</span><span id="__span-10-9"><a id="__codelineno-10-9" name="__codelineno-10-9" href="#__codelineno-10-9"></a>    <span class="n">CreatedBy</span><span class="p">,</span> <span class="p">`</span>
+</span><span id="__span-10-10"><a id="__codelineno-10-10" name="__codelineno-10-10" href="#__codelineno-10-10"></a>    <span class="n">Description</span><span class="p">,</span> <span class="p">`</span>
+</span><span id="__span-10-11"><a id="__codelineno-10-11" name="__codelineno-10-11" href="#__codelineno-10-11"></a>    <span class="n">UpdatedAt</span><span class="p">,</span> <span class="p">`</span>
+</span><span id="__span-10-12"><a id="__codelineno-10-12" name="__codelineno-10-12" href="#__codelineno-10-12"></a>    <span class="n">Url</span><span class="p">,</span> <span class="p">`</span>
+</span><span id="__span-10-13"><a id="__codelineno-10-13" name="__codelineno-10-13" href="#__codelineno-10-13"></a>    <span class="n">LastFailedErrorInfo</span><span class="p">,</span> <span class="p">`</span>
+</span><span id="__span-10-14"><a id="__codelineno-10-14" name="__codelineno-10-14" href="#__codelineno-10-14"></a>    <span class="n">SubscriptionType</span><span class="p">.</span><span class="n">eventSubscription</span><span class="p">.</span><span class="n">objectTypes</span><span class="p">,</span> <span class="p">`</span>
+</span><span id="__span-10-15"><a id="__codelineno-10-15" name="__codelineno-10-15" href="#__codelineno-10-15"></a>    <span class="n">SubscriptionType</span><span class="p">.</span><span class="n">eventSubscription</span><span class="p">.</span><span class="n">severities</span><span class="p">,</span> <span class="p">`</span>
+</span><span id="__span-10-16"><a id="__codelineno-10-16" name="__codelineno-10-16" href="#__codelineno-10-16"></a>    <span class="n">SubscriptionType</span><span class="p">.</span><span class="n">eventSubscription</span><span class="p">.</span><span class="n">eventTypes</span><span class="p">,</span> <span class="p">`</span>
+</span><span id="__span-10-17"><a id="__codelineno-10-17" name="__codelineno-10-17" href="#__codelineno-10-17"></a>    <span class="n">SubscriptionType</span><span class="p">.</span><span class="n">eventSubscription</span><span class="p">.</span><span class="n">isSubscribedToAllEvents</span><span class="p">,</span> <span class="p">`</span>
+</span><span id="__span-10-18"><a id="__codelineno-10-18" name="__codelineno-10-18" href="#__codelineno-10-18"></a>    <span class="n">SubscriptionType</span><span class="p">.</span><span class="n">eventSubscription</span><span class="p">.</span><span class="n">isSubscribedToAllObjectTypes</span><span class="p">,</span> <span class="p">`</span>
+</span><span id="__span-10-19"><a id="__codelineno-10-19" name="__codelineno-10-19" href="#__codelineno-10-19"></a>    <span class="n">SubscriptionType</span><span class="p">.</span><span class="n">eventSubscription</span><span class="p">.</span><span class="n">templateInfo</span><span class="p">.</span><span class="n">customTemplate</span><span class="p">,</span> <span class="p">`</span>
+</span><span id="__span-10-20"><a id="__codelineno-10-20" name="__codelineno-10-20" href="#__codelineno-10-20"></a>    <span class="n">SubscriptionType</span><span class="p">.</span><span class="n">eventSubscription</span><span class="p">.</span><span class="n">templateInfo</span><span class="p">.</span><span class="n">templateId</span><span class="p">,</span> <span class="p">`</span>
+</span><span id="__span-10-21"><a id="__codelineno-10-21" name="__codelineno-10-21" href="#__codelineno-10-21"></a>    <span class="n">SubscriptionType</span><span class="p">.</span><span class="n">auditSubscription</span><span class="p">.</span><span class="n">objectTypes</span><span class="p">,</span> <span class="p">`</span>
+</span><span id="__span-10-22"><a id="__codelineno-10-22" name="__codelineno-10-22" href="#__codelineno-10-22"></a>    <span class="n">SubscriptionType</span><span class="p">.</span><span class="n">auditSubscription</span><span class="p">.</span><span class="n">auditTypes</span><span class="p">,</span> <span class="p">`</span>
+</span><span id="__span-10-23"><a id="__codelineno-10-23" name="__codelineno-10-23" href="#__codelineno-10-23"></a>    <span class="n">SubscriptionType</span><span class="p">.</span><span class="n">auditSubscription</span><span class="p">.</span><span class="n">severities</span><span class="p">,</span> <span class="p">`</span>
+</span><span id="__span-10-24"><a id="__codelineno-10-24" name="__codelineno-10-24" href="#__codelineno-10-24"></a>    <span class="n">SubscriptionType</span><span class="p">.</span><span class="n">auditSubscription</span><span class="p">.</span><span class="n">isSubscribedToAllAudits</span><span class="p">,</span> <span class="p">`</span>
+</span><span id="__span-10-25"><a id="__codelineno-10-25" name="__codelineno-10-25" href="#__codelineno-10-25"></a>    <span class="n">SubscriptionType</span><span class="p">.</span><span class="n">auditSubscription</span><span class="p">.</span><span class="n">isSubscribedToAllObjectTypes</span><span class="p">,</span> <span class="p">`</span>
+</span><span id="__span-10-26"><a id="__codelineno-10-26" name="__codelineno-10-26" href="#__codelineno-10-26"></a>    <span class="n">SubscriptionType</span><span class="p">.</span><span class="n">auditSubscription</span><span class="p">.</span><span class="n">templateInfo</span><span class="p">.</span><span class="n">customTemplate</span><span class="p">,</span> <span class="p">`</span>
+</span><span id="__span-10-27"><a id="__codelineno-10-27" name="__codelineno-10-27" href="#__codelineno-10-27"></a>    <span class="n">SubscriptionType</span><span class="p">.</span><span class="n">auditSubscription</span><span class="p">.</span><span class="n">templateInfo</span><span class="p">.</span><span class="n">templateId</span>
+</span><span id="__span-10-28"><a id="__codelineno-10-28" name="__codelineno-10-28" href="#__codelineno-10-28"></a><span class="nv">$query</span><span class="p">.</span><span class="n">Invoke</span><span class="p">()</span>
+</span></code></pre></div>
+</div>
+<div class="tabbed-block">
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="ch">#!/bin/bash</span>
+</span><span id="__span-11-2"><a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a>
+</span><span id="__span-11-3"><a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a><span class="c1"># RSC_TOKEN=&quot;YOUR_RSC_ACCESS_TOKEN&quot;</span>
+</span><span id="__span-11-4"><a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a><span class="nv">query</span><span class="o">=</span><span class="s2">&quot;query { allWebhooksV2 { name id status authType createdBy createdAt updatedAt url subscriptionType { auditSubscription { auditTypes isSubscribedToAllAudits isSubscribedToAllObjectTypes objectTypes severities templateInfo { customTemplate templateId } } eventSubscription { eventTypes isSubscribedToAllEvents isSubscribedToAllObjectTypes objectTypes severities templateInfo { customTemplate templateId } } } description id lastFailedErrorInfo { errorMessage statusCode } } }&quot;</span>
+</span><span id="__span-11-5"><a id="__codelineno-11-5" name="__codelineno-11-5" href="#__codelineno-11-5"></a>
+</span><span id="__span-11-6"><a id="__codelineno-11-6" name="__codelineno-11-6" href="#__codelineno-11-6"></a><span class="c1"># Execute the GraphQL query with curl</span>
+</span><span id="__span-11-7"><a id="__codelineno-11-7" name="__codelineno-11-7" href="#__codelineno-11-7"></a>curl<span class="w"> </span>-X<span class="w"> </span>POST<span class="w"> </span><span class="se">\</span>
+</span><span id="__span-11-8"><a id="__codelineno-11-8" name="__codelineno-11-8" href="#__codelineno-11-8"></a><span class="w">  </span>-H<span class="w"> </span><span class="s2">&quot;Content-Type: application/json&quot;</span><span class="w"> </span><span class="se">\</span>
+</span><span id="__span-11-9"><a id="__codelineno-11-9" name="__codelineno-11-9" href="#__codelineno-11-9"></a><span class="w">  </span>-H<span class="w"> </span><span class="s2">&quot;Authorization: Bearer </span><span class="nv">$RSC_TOKEN</span><span class="s2">&quot;</span><span class="w"> </span><span class="se">\</span>
+</span><span id="__span-11-10"><a id="__codelineno-11-10" name="__codelineno-11-10" href="#__codelineno-11-10"></a><span class="w">  </span>-d<span class="w"> </span><span class="s2">&quot;{\&quot;query\&quot;: \&quot;</span><span class="nv">$query</span><span class="s2">\&quot;}&quot;</span><span class="w"> </span><span class="se">\</span>
+</span><span id="__span-11-11"><a id="__codelineno-11-11" name="__codelineno-11-11" href="#__codelineno-11-11"></a><span class="w">  </span>https://example.my.rubrik.com/api/graphql
+</span></code></pre></div>
+</div>
+</div>
+</div>
+<h4 id="creating-a-webhook-subscription-via-api">Creating a Webhook Subscription via API</h4>
+<div class="tabbed-set tabbed-alternate" data-tabs="4:3"><input checked="checked" id="__tabbed_4_1" name="__tabbed_4" type="radio" /><input id="__tabbed_4_2" name="__tabbed_4" type="radio" /><input id="__tabbed_4_3" name="__tabbed_4" type="radio" /><div class="tabbed-labels"><label for="__tabbed_4_1"><abbr title="A query language for APIs that provides a complete and understandble description of the data in the API. GraphQL is a strongly typed architecture, which means everything has a type and there is no guessing on the structure.">GraphQL</abbr></label><label for="__tabbed_4_2">PowerShell SDK</label><label for="__tabbed_4_3">Shell</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="language-graphql highlight"><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="k">mutation</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-12-2"><a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a><span class="w">  </span><span class="n">createWebhookV2</span><span class="p">(</span><span class="n">input</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-12-3"><a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a><span class="w">    </span><span class="n">payload</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-12-4"><a id="__codelineno-12-4" name="__codelineno-12-4" href="#__codelineno-12-4"></a><span class="w">      </span><span class="n">name</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;example&quot;</span>
+</span><span id="__span-12-5"><a id="__codelineno-12-5" name="__codelineno-12-5" href="#__codelineno-12-5"></a><span class="w">      </span><span class="n">description</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;example with custom template and auth&quot;</span>
+</span><span id="__span-12-6"><a id="__codelineno-12-6" name="__codelineno-12-6" href="#__codelineno-12-6"></a><span class="w">      </span><span class="n">url</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;https://example.com&quot;</span>
+</span><span id="__span-12-7"><a id="__codelineno-12-7" name="__codelineno-12-7" href="#__codelineno-12-7"></a><span class="w">      </span><span class="n">subscriptionType</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-12-8"><a id="__codelineno-12-8" name="__codelineno-12-8" href="#__codelineno-12-8"></a><span class="w">        </span><span class="n">eventSubscription</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-12-9"><a id="__codelineno-12-9" name="__codelineno-12-9" href="#__codelineno-12-9"></a><span class="w">          </span><span class="n">objectTypes</span><span class="p">:</span><span class="w"> </span><span class="p">[]</span>
+</span><span id="__span-12-10"><a id="__codelineno-12-10" name="__codelineno-12-10" href="#__codelineno-12-10"></a><span class="w">          </span><span class="n">isSubscribedToAllObjectTypes</span><span class="p">:</span><span class="w"> </span><span class="nb">true</span>
+</span><span id="__span-12-11"><a id="__codelineno-12-11" name="__codelineno-12-11" href="#__codelineno-12-11"></a><span class="w">          </span><span class="n">eventTypes</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="no">BACKUP</span><span class="p">,</span><span class="no">ANOMALY</span><span class="p">]</span>
+</span><span id="__span-12-12"><a id="__codelineno-12-12" name="__codelineno-12-12" href="#__codelineno-12-12"></a><span class="w">          </span><span class="n">severities</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="no">SEVERITY_CRITICAL</span><span class="p">]</span>
+</span><span id="__span-12-13"><a id="__codelineno-12-13" name="__codelineno-12-13" href="#__codelineno-12-13"></a><span class="w">          </span><span class="n">templateInfo</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-12-14"><a id="__codelineno-12-14" name="__codelineno-12-14" href="#__codelineno-12-14"></a><span class="w">            </span><span class="n">customTemplate</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;{ </span><span class="se">\n</span><span class="s"> </span><span class="se">\&quot;</span><span class="s">custom_key</span><span class="se">\&quot;</span><span class="s">: </span><span class="se">\&quot;</span><span class="s">{{.Message}}</span><span class="se">\&quot;</span><span class="s"> </span><span class="se">\n</span><span class="s"> }&quot;</span>
+</span><span id="__span-12-15"><a id="__codelineno-12-15" name="__codelineno-12-15" href="#__codelineno-12-15"></a><span class="w">          </span><span class="p">}</span>
+</span><span id="__span-12-16"><a id="__codelineno-12-16" name="__codelineno-12-16" href="#__codelineno-12-16"></a><span class="w">        </span><span class="p">}</span>
+</span><span id="__span-12-17"><a id="__codelineno-12-17" name="__codelineno-12-17" href="#__codelineno-12-17"></a><span class="w">      </span><span class="p">}</span>
+</span><span id="__span-12-18"><a id="__codelineno-12-18" name="__codelineno-12-18" href="#__codelineno-12-18"></a><span class="w">      </span><span class="n">providerType</span><span class="p">:</span><span class="w"> </span><span class="no">CUSTOM</span><span class="w"> </span>
+</span><span id="__span-12-19"><a id="__codelineno-12-19" name="__codelineno-12-19" href="#__codelineno-12-19"></a><span class="w">      </span><span class="n">authInfo</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-12-20"><a id="__codelineno-12-20" name="__codelineno-12-20" href="#__codelineno-12-20"></a><span class="w">        </span><span class="n">authType</span><span class="p">:</span><span class="w"> </span><span class="no">CUSTOM_HEADER</span>
+</span><span id="__span-12-21"><a id="__codelineno-12-21" name="__codelineno-12-21" href="#__codelineno-12-21"></a><span class="w">        </span><span class="n">customHeaders</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-12-22"><a id="__codelineno-12-22" name="__codelineno-12-22" href="#__codelineno-12-22"></a><span class="w">          </span><span class="n">headerKey</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Authorization&quot;</span>
+</span><span id="__span-12-23"><a id="__codelineno-12-23" name="__codelineno-12-23" href="#__codelineno-12-23"></a><span class="w">          </span><span class="n">headerValue</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Bearer Example123&quot;</span>
+</span><span id="__span-12-24"><a id="__codelineno-12-24" name="__codelineno-12-24" href="#__codelineno-12-24"></a><span class="w">        </span><span class="p">}</span>
+</span><span id="__span-12-25"><a id="__codelineno-12-25" name="__codelineno-12-25" href="#__codelineno-12-25"></a><span class="w">        </span><span class="p">}</span>
+</span><span id="__span-12-26"><a id="__codelineno-12-26" name="__codelineno-12-26" href="#__codelineno-12-26"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-12-27"><a id="__codelineno-12-27" name="__codelineno-12-27" href="#__codelineno-12-27"></a><span class="w">  </span><span class="p">})</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-12-28"><a id="__codelineno-12-28" name="__codelineno-12-28" href="#__codelineno-12-28"></a><span class="w">    </span><span class="n">webhook</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-12-29"><a id="__codelineno-12-29" name="__codelineno-12-29" href="#__codelineno-12-29"></a><span class="w">      </span><span class="n">name</span>
+</span><span id="__span-12-30"><a id="__codelineno-12-30" name="__codelineno-12-30" href="#__codelineno-12-30"></a><span class="w">      </span><span class="n">id</span>
+</span><span id="__span-12-31"><a id="__codelineno-12-31" name="__codelineno-12-31" href="#__codelineno-12-31"></a><span class="w">      </span><span class="n">status</span>
+</span><span id="__span-12-32"><a id="__codelineno-12-32" name="__codelineno-12-32" href="#__codelineno-12-32"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-12-33"><a id="__codelineno-12-33" name="__codelineno-12-33" href="#__codelineno-12-33"></a><span class="w">    </span><span class="n">errorInfo</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-12-34"><a id="__codelineno-12-34" name="__codelineno-12-34" href="#__codelineno-12-34"></a><span class="w">      </span><span class="n">errorMessage</span>
+</span><span id="__span-12-35"><a id="__codelineno-12-35" name="__codelineno-12-35" href="#__codelineno-12-35"></a><span class="w">      </span><span class="n">statusCode</span>
+</span><span id="__span-12-36"><a id="__codelineno-12-36" name="__codelineno-12-36" href="#__codelineno-12-36"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-12-37"><a id="__codelineno-12-37" name="__codelineno-12-37" href="#__codelineno-12-37"></a><span class="w">  </span><span class="p">}</span>
+</span><span id="__span-12-38"><a id="__codelineno-12-38" name="__codelineno-12-38" href="#__codelineno-12-38"></a><span class="p">}</span>
+</span></code></pre></div>
+</div>
+<div class="tabbed-block">
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="nv">$query</span> <span class="p">=</span> <span class="nb">New-RscMutation</span> <span class="n">-GqlMutation</span> <span class="n">createWebhookV2</span>
+</span><span id="__span-13-2"><a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a><span class="nv">$query</span><span class="p">.</span><span class="n">var</span><span class="p">.</span><span class="n">input</span> <span class="p">=</span> <span class="nb">Get-RscType</span> <span class="n">-name</span> <span class="n">CreateWebhookV2Input</span>
+</span><span id="__span-13-3"><a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a><span class="nv">$query</span><span class="p">.</span><span class="n">var</span><span class="p">.</span><span class="n">input</span><span class="p">.</span><span class="n">payload</span> <span class="p">=</span> <span class="nb">Get-RscType</span> <span class="n">-name</span> <span class="n">WebhookPayload</span>
+</span><span id="__span-13-4"><a id="__codelineno-13-4" name="__codelineno-13-4" href="#__codelineno-13-4"></a><span class="nv">$query</span><span class="p">.</span><span class="n">var</span><span class="p">.</span><span class="n">input</span><span class="p">.</span><span class="n">payload</span><span class="p">.</span><span class="n">name</span> <span class="p">=</span> <span class="s2">&quot;example&quot;</span>
+</span><span id="__span-13-5"><a id="__codelineno-13-5" name="__codelineno-13-5" href="#__codelineno-13-5"></a><span class="nv">$query</span><span class="p">.</span><span class="n">var</span><span class="p">.</span><span class="n">input</span><span class="p">.</span><span class="n">payload</span><span class="p">.</span><span class="n">description</span> <span class="p">=</span> <span class="s2">&quot;example with custom template and auth&quot;</span>
+</span><span id="__span-13-6"><a id="__codelineno-13-6" name="__codelineno-13-6" href="#__codelineno-13-6"></a><span class="nv">$query</span><span class="p">.</span><span class="n">var</span><span class="p">.</span><span class="n">input</span><span class="p">.</span><span class="n">payload</span><span class="p">.</span><span class="n">url</span> <span class="p">=</span> <span class="s2">&quot;https://example.com&quot;</span>
+</span><span id="__span-13-7"><a id="__codelineno-13-7" name="__codelineno-13-7" href="#__codelineno-13-7"></a><span class="nv">$query</span><span class="p">.</span><span class="n">var</span><span class="p">.</span><span class="n">input</span><span class="p">.</span><span class="n">payload</span><span class="p">.</span><span class="n">subscriptionType</span> <span class="p">=</span> <span class="nb">Get-RscType</span> <span class="n">-name</span> <span class="n">WebhookSubscriptionTypeV2Input</span>
+</span><span id="__span-13-8"><a id="__codelineno-13-8" name="__codelineno-13-8" href="#__codelineno-13-8"></a><span class="nv">$query</span><span class="p">.</span><span class="n">var</span><span class="p">.</span><span class="n">input</span><span class="p">.</span><span class="n">payload</span><span class="p">.</span><span class="n">subscriptionType</span><span class="p">.</span><span class="n">eventSubscription</span> <span class="p">=</span> <span class="nb">Get-RscType</span> <span class="n">-name</span> <span class="n">WebhookEventSubscriptionInput</span>
+</span><span id="__span-13-9"><a id="__codelineno-13-9" name="__codelineno-13-9" href="#__codelineno-13-9"></a><span class="nv">$query</span><span class="p">.</span><span class="n">var</span><span class="p">.</span><span class="n">input</span><span class="p">.</span><span class="n">payload</span><span class="p">.</span><span class="n">subscriptionType</span><span class="p">.</span><span class="n">eventSubscription</span><span class="p">.</span><span class="n">objectTypes</span> <span class="p">=</span> <span class="p">@()</span>
+</span><span id="__span-13-10"><a id="__codelineno-13-10" name="__codelineno-13-10" href="#__codelineno-13-10"></a><span class="nv">$query</span><span class="p">.</span><span class="n">var</span><span class="p">.</span><span class="n">input</span><span class="p">.</span><span class="n">payload</span><span class="p">.</span><span class="n">subscriptionType</span><span class="p">.</span><span class="n">eventSubscription</span><span class="p">.</span><span class="n">isSubscribedToAllObjectTypes</span> <span class="p">=</span> <span class="nv">$true</span>
+</span><span id="__span-13-11"><a id="__codelineno-13-11" name="__codelineno-13-11" href="#__codelineno-13-11"></a><span class="nv">$query</span><span class="p">.</span><span class="n">var</span><span class="p">.</span><span class="n">input</span><span class="p">.</span><span class="n">payload</span><span class="p">.</span><span class="n">subscriptionType</span><span class="p">.</span><span class="n">eventSubscription</span><span class="p">.</span><span class="n">eventTypes</span> <span class="p">=</span> <span class="p">@(</span><span class="no">[RubrikSecurityCloud.Types.EventType]</span><span class="p">::</span><span class="n">BACKUP</span><span class="p">,</span> <span class="no">[RubrikSecurityCloud.Types.EventType]</span><span class="p">::</span><span class="n">ANOMALY</span><span class="p">)</span>
+</span><span id="__span-13-12"><a id="__codelineno-13-12" name="__codelineno-13-12" href="#__codelineno-13-12"></a><span class="nv">$query</span><span class="p">.</span><span class="n">var</span><span class="p">.</span><span class="n">input</span><span class="p">.</span><span class="n">payload</span><span class="p">.</span><span class="n">subscriptionType</span><span class="p">.</span><span class="n">eventSubscription</span><span class="p">.</span><span class="n">severities</span> <span class="p">=</span> <span class="p">@(</span><span class="no">[RubrikSecurityCloud.Types.EventSeverity]</span><span class="p">::</span><span class="n">SEVERITY_CRITICAL</span><span class="p">)</span>
+</span><span id="__span-13-13"><a id="__codelineno-13-13" name="__codelineno-13-13" href="#__codelineno-13-13"></a><span class="nv">$query</span><span class="p">.</span><span class="n">var</span><span class="p">.</span><span class="n">input</span><span class="p">.</span><span class="n">payload</span><span class="p">.</span><span class="n">subscriptionType</span><span class="p">.</span><span class="n">eventSubscription</span><span class="p">.</span><span class="n">templateInfo</span> <span class="p">=</span> <span class="nb">Get-RscType</span> <span class="n">-name</span> <span class="n">WebhookTemplateInfoInput</span>
+</span><span id="__span-13-14"><a id="__codelineno-13-14" name="__codelineno-13-14" href="#__codelineno-13-14"></a><span class="nv">$query</span><span class="p">.</span><span class="n">var</span><span class="p">.</span><span class="n">input</span><span class="p">.</span><span class="n">payload</span><span class="p">.</span><span class="n">subscriptionType</span><span class="p">.</span><span class="n">eventSubscription</span><span class="p">.</span><span class="n">templateInfo</span><span class="p">.</span><span class="n">customTemplate</span> <span class="p">=</span> <span class="s2">&quot;{ </span><span class="se">`n</span><span class="s2"> </span><span class="se">`&quot;</span><span class="s2">custom_key</span><span class="se">`&quot;</span><span class="s2">: </span><span class="se">`&quot;</span><span class="s2">{{.Message}}</span><span class="se">`&quot;</span><span class="s2"> </span><span class="se">`n</span><span class="s2"> }&quot;</span>
+</span><span id="__span-13-15"><a id="__codelineno-13-15" name="__codelineno-13-15" href="#__codelineno-13-15"></a><span class="nv">$query</span><span class="p">.</span><span class="n">var</span><span class="p">.</span><span class="n">input</span><span class="p">.</span><span class="n">payload</span><span class="p">.</span><span class="n">providerType</span> <span class="p">=</span> <span class="no">[RubrikSecurityCloud.Types.ProviderTypeV2]</span><span class="p">::</span><span class="n">CUSTOM</span>
+</span><span id="__span-13-16"><a id="__codelineno-13-16" name="__codelineno-13-16" href="#__codelineno-13-16"></a><span class="nv">$query</span><span class="p">.</span><span class="n">var</span><span class="p">.</span><span class="n">input</span><span class="p">.</span><span class="n">payload</span><span class="p">.</span><span class="n">authInfo</span> <span class="p">=</span> <span class="nb">Get-RscType</span> <span class="n">-name</span> <span class="n">WebhookAuthInfoV2Input</span>
+</span><span id="__span-13-17"><a id="__codelineno-13-17" name="__codelineno-13-17" href="#__codelineno-13-17"></a><span class="nv">$query</span><span class="p">.</span><span class="n">var</span><span class="p">.</span><span class="n">input</span><span class="p">.</span><span class="n">payload</span><span class="p">.</span><span class="n">authInfo</span><span class="p">.</span><span class="n">authType</span> <span class="p">=</span> <span class="no">[RubrikSecurityCloud.Types.AuthenticationTypeV2]</span><span class="p">::</span><span class="n">CUSTOM_HEADER</span>
+</span><span id="__span-13-18"><a id="__codelineno-13-18" name="__codelineno-13-18" href="#__codelineno-13-18"></a><span class="nv">$query</span><span class="p">.</span><span class="n">var</span><span class="p">.</span><span class="n">input</span><span class="p">.</span><span class="n">payload</span><span class="p">.</span><span class="n">authInfo</span><span class="p">.</span><span class="n">customHeaders</span> <span class="p">=</span> <span class="nb">Get-RscType</span> <span class="n">-name</span> <span class="n">CustomHeaderInput</span>
+</span><span id="__span-13-19"><a id="__codelineno-13-19" name="__codelineno-13-19" href="#__codelineno-13-19"></a><span class="nv">$query</span><span class="p">.</span><span class="n">var</span><span class="p">.</span><span class="n">input</span><span class="p">.</span><span class="n">payload</span><span class="p">.</span><span class="n">authInfo</span><span class="p">.</span><span class="n">customHeaders</span><span class="p">.</span><span class="n">headerKey</span> <span class="p">=</span> <span class="s2">&quot;Authorization&quot;</span>
+</span><span id="__span-13-20"><a id="__codelineno-13-20" name="__codelineno-13-20" href="#__codelineno-13-20"></a><span class="nv">$query</span><span class="p">.</span><span class="n">var</span><span class="p">.</span><span class="n">input</span><span class="p">.</span><span class="n">payload</span><span class="p">.</span><span class="n">authInfo</span><span class="p">.</span><span class="n">customHeaders</span><span class="p">.</span><span class="n">headerValue</span> <span class="p">=</span> <span class="s2">&quot;Bearer Example123&quot;</span>
+</span><span id="__span-13-21"><a id="__codelineno-13-21" name="__codelineno-13-21" href="#__codelineno-13-21"></a><span class="nv">$query</span><span class="p">.</span><span class="n">Invoke</span><span class="p">()</span>
+</span></code></pre></div>
+</div>
+<div class="tabbed-block">
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-14-1"><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a><span class="ch">#!/bin/bash</span>
+</span><span id="__span-14-2"><a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a>
+</span><span id="__span-14-3"><a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a><span class="c1"># RSC_TOKEN=&quot;YOUR_RSC_ACCESS_TOKEN&quot;</span>
+</span><span id="__span-14-4"><a id="__codelineno-14-4" name="__codelineno-14-4" href="#__codelineno-14-4"></a><span class="nv">query</span><span class="o">=</span><span class="s2">&quot;mutation { createWebhookV2(input: { payload: { name: \\\&quot;example\\\&quot; description: \\\&quot;example with custom template and auth\\\&quot; url: \\\&quot;https://example.com\\\&quot; subscriptionType: { eventSubscription: { objectTypes: [] isSubscribedToAllObjectTypes: true eventTypes: [BACKUP,ANOMALY] severities: [SEVERITY_CRITICAL] templateInfo: { customTemplate: \\\&quot;{ \n \\\\&quot;</span>custom_key<span class="se">\\\\</span><span class="s2">&quot;: \\\\&quot;</span><span class="o">{{</span>.Message<span class="o">}}</span><span class="se">\\\\</span><span class="s2">&quot; \n }\\\&quot; } } } providerType: CUSTOM authInfo: { authType: CUSTOM_HEADER customHeaders: { headerKey: \\\&quot;Authorization\\\&quot; headerValue: \\\&quot;Bearer Example123\\\&quot; } } } }) { webhook { name id status } errorInfo { errorMessage statusCode } } }&quot;</span>
+</span><span id="__span-14-5"><a id="__codelineno-14-5" name="__codelineno-14-5" href="#__codelineno-14-5"></a>
+</span><span id="__span-14-6"><a id="__codelineno-14-6" name="__codelineno-14-6" href="#__codelineno-14-6"></a><span class="c1"># Execute the GraphQL query with curl</span>
+</span><span id="__span-14-7"><a id="__codelineno-14-7" name="__codelineno-14-7" href="#__codelineno-14-7"></a>curl<span class="w"> </span>-X<span class="w"> </span>POST<span class="w"> </span><span class="se">\</span>
+</span><span id="__span-14-8"><a id="__codelineno-14-8" name="__codelineno-14-8" href="#__codelineno-14-8"></a><span class="w">  </span>-H<span class="w"> </span><span class="s2">&quot;Content-Type: application/json&quot;</span><span class="w"> </span><span class="se">\</span>
+</span><span id="__span-14-9"><a id="__codelineno-14-9" name="__codelineno-14-9" href="#__codelineno-14-9"></a><span class="w">  </span>-H<span class="w"> </span><span class="s2">&quot;Authorization: Bearer </span><span class="nv">$RSC_TOKEN</span><span class="s2">&quot;</span><span class="w"> </span><span class="se">\</span>
+</span><span id="__span-14-10"><a id="__codelineno-14-10" name="__codelineno-14-10" href="#__codelineno-14-10"></a><span class="w">  </span>-d<span class="w"> </span><span class="s2">&quot;{\&quot;query\&quot;: \&quot;</span><span class="nv">$query</span><span class="s2">\&quot;}&quot;</span><span class="w"> </span><span class="se">\</span>
+</span><span id="__span-14-11"><a id="__codelineno-14-11" name="__codelineno-14-11" href="#__codelineno-14-11"></a><span class="w">  </span>https://example.my.rubrik.com/api/graphql
+</span></code></pre></div>
+</div>
+</div>
+</div>
 
 
 
@@ -5436,7 +6128,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="August 29, 2025 20:36:27 UTC">2025-08-29</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="September 16, 2025 17:51:30 UTC">2025-09-16</span>
   </span>
 
     
@@ -5590,7 +6282,7 @@
       <script id="__config" type="application/json">{"base": "../../..", "features": ["content.code.copy", "content.code.annotate", "content.tooltips", "content.tabs.link", "navigation.tabs", "navigation.indexes", "search.share"], "search": "../../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.92b07e13.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.f55a23d4.min.js"></script>
       
         <script src="../../../javascripts/extra.js"></script>
       

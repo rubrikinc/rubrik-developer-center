@@ -8,11 +8,9 @@ ScheduleRecoveryCleanupFailed
 Failed to run cleanup for ${failoverType} job for ${blueprintName}. Reason: ${reason}
 ```
 
-Severity | Status | Audit Event | |
-
-|              |                 |        |
-| ------------ | --------------- | ------ |
-| **Critical** | **TaskFailure** | **No** |
+| Severity     | Status          | Audit Event |
+| ------------ | --------------- | ----------- |
+| **Critical** | **TaskFailure** | **No**      |
 
 ScheduleRecoveryCleanupStarted
 
@@ -20,11 +18,9 @@ ScheduleRecoveryCleanupStarted
 Starting to schedule cleanup for ${failoverType} job for ${blueprintName}
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 ScheduleRecoveryCleanupSucceeded
 
@@ -32,11 +28,9 @@ ScheduleRecoveryCleanupSucceeded
 Successfully completed cleanup for ${failoverType} job for ${blueprintName}
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 ScheduleRecoveryCompleted
 
@@ -44,11 +38,9 @@ ScheduleRecoveryCompleted
 Scheduled recovery completed for ${blueprintName}
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 ScheduleRecoveryFailed
 
@@ -56,11 +48,9 @@ ScheduleRecoveryFailed
 Scheduled recovery failed for ${blueprintName}. Reason: ${reason}
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Failure** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **No**      |
 
 ScheduleRecoveryNotifyFailed
 
@@ -68,11 +58,9 @@ ScheduleRecoveryNotifyFailed
 Failed to notify users for results of scheduled recovery for ${blueprintName}. Reason: ${reason}
 ```
 
-Severity | Status | Audit Event | |
-
-|              |                 |        |
-| ------------ | --------------- | ------ |
-| **Critical** | **TaskFailure** | **No** |
+| Severity     | Status          | Audit Event |
+| ------------ | --------------- | ----------- |
+| **Critical** | **TaskFailure** | **No**      |
 
 ScheduleRecoveryNotifyStarted
 
@@ -80,11 +68,9 @@ ScheduleRecoveryNotifyStarted
 Starting to notify users for results of scheduled recovery for ${blueprintName}
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 ScheduleRecoveryNotifySucceeded
 
@@ -92,11 +78,9 @@ ScheduleRecoveryNotifySucceeded
 Successfully notified users for results of scheduled recovery for ${blueprintName}
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 ScheduleRecoveryPostcheckFailed
 
@@ -104,11 +88,9 @@ ScheduleRecoveryPostcheckFailed
 Failed to run postchecks for scheduled recovery for ${blueprintName}. Reason: ${reason}
 ```
 
-Severity | Status | Audit Event | |
-
-|              |                 |        |
-| ------------ | --------------- | ------ |
-| **Critical** | **TaskFailure** | **No** |
+| Severity     | Status          | Audit Event |
+| ------------ | --------------- | ----------- |
+| **Critical** | **TaskFailure** | **No**      |
 
 ScheduleRecoveryPostcheckStarted
 
@@ -116,11 +98,9 @@ ScheduleRecoveryPostcheckStarted
 Starting to run postchecks for scheduled recovery for ${blueprintName}
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 ScheduleRecoveryPostcheckSucceeded
 
@@ -128,11 +108,9 @@ ScheduleRecoveryPostcheckSucceeded
 Successfully completed postchecks for scheduled recovery for ${blueprintName}
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 ScheduleRecoveryPrecheckFailed
 
@@ -140,11 +118,9 @@ ScheduleRecoveryPrecheckFailed
 Failed to run prechecks for scheduled recovery for ${blueprintName}. Reason: ${reason}
 ```
 
-Severity | Status | Audit Event | |
-
-|              |                 |        |
-| ------------ | --------------- | ------ |
-| **Critical** | **TaskFailure** | **No** |
+| Severity     | Status          | Audit Event |
+| ------------ | --------------- | ----------- |
+| **Critical** | **TaskFailure** | **No**      |
 
 ScheduleRecoveryPrecheckNotSatisfied
 
@@ -152,11 +128,9 @@ ScheduleRecoveryPrecheckNotSatisfied
 Scheduled recovery for ${blueprintName} doesn't meet all precheck criteria. Skipping Recovery Plan test. Reason: ${failedPrecheckErr}
 ```
 
-Severity | Status | Audit Event | |
-
-|             |                 |        |
-| ----------- | --------------- | ------ |
-| **Warning** | **TaskSuccess** | **No** |
+| Severity    | Status          | Audit Event |
+| ----------- | --------------- | ----------- |
+| **Warning** | **TaskSuccess** | **No**      |
 
 ScheduleRecoveryPrecheckStarted
 
@@ -164,11 +138,9 @@ ScheduleRecoveryPrecheckStarted
 Starting to run prechecks for scheduled recovery for ${blueprintName}
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 ScheduleRecoveryPrecheckSucceeded
 
@@ -176,11 +148,9 @@ ScheduleRecoveryPrecheckSucceeded
 Successfully completed prechecks for scheduled recovery for ${blueprintName}
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 ScheduleRecoveryReportGenerationFailed
 
@@ -188,11 +158,9 @@ ScheduleRecoveryReportGenerationFailed
 Failed to generate report for scheduled recovery for ${blueprintName}. Reason: ${reason}
 ```
 
-Severity | Status | Audit Event | |
-
-|              |                 |        |
-| ------------ | --------------- | ------ |
-| **Critical** | **TaskFailure** | **No** |
+| Severity     | Status          | Audit Event |
+| ------------ | --------------- | ----------- |
+| **Critical** | **TaskFailure** | **No**      |
 
 ScheduleRecoveryReportGenerationStarted
 
@@ -200,11 +168,9 @@ ScheduleRecoveryReportGenerationStarted
 Starting to generate report for scheduled recovery for ${blueprintName}
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 ScheduleRecoveryReportGenerationSucceeded
 
@@ -212,11 +178,9 @@ ScheduleRecoveryReportGenerationSucceeded
 Successfully generated report for scheduled recovery for ${blueprintName}
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 ScheduleRecoveryStarted
 
@@ -224,11 +188,9 @@ ScheduleRecoveryStarted
 Starting scheduled recovery for ${blueprintName}
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 ScheduleRecoveryTestRecoveryFailed
 
@@ -236,11 +198,9 @@ ScheduleRecoveryTestRecoveryFailed
 Failed to schedule ${failoverType} job for ${blueprintName}. Reason: ${reason}
 ```
 
-Severity | Status | Audit Event | |
-
-|              |                 |        |
-| ------------ | --------------- | ------ |
-| **Critical** | **TaskFailure** | **No** |
+| Severity     | Status          | Audit Event |
+| ------------ | --------------- | ----------- |
+| **Critical** | **TaskFailure** | **No**      |
 
 ScheduleRecoveryTestRecoveryStarted
 
@@ -248,11 +208,9 @@ ScheduleRecoveryTestRecoveryStarted
 Starting to schedule ${failoverType} job for ${blueprintName}
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 ScheduleRecoveryTestRecoverySucceeded
 
@@ -260,8 +218,6 @@ ScheduleRecoveryTestRecoverySucceeded
 Successfully completed ${failoverType} for ${blueprintName}
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |

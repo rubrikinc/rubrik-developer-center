@@ -8,11 +8,9 @@ BlueprintFailoverCanceled
 Canceled failover Recovery Plan '${name}' to '${location}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |              |        |
-| -------- | ------------ | ------ |
-| **Info** | **Canceled** | **No** |
+| Severity | Status       | Audit Event |
+| -------- | ------------ | ----------- |
+| **Info** | **Canceled** | **No**      |
 
 BlueprintFailoverCanceling
 
@@ -20,11 +18,9 @@ BlueprintFailoverCanceling
 Canceling failover for Recovery Plan '${name}' to '${location}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |               |        |
-| -------- | ------------- | ------ |
-| **Info** | **Canceling** | **No** |
+| Severity | Status        | Audit Event |
+| -------- | ------------- | ----------- |
+| **Info** | **Canceling** | **No**      |
 
 BlueprintFailoverDataIngestionFailed
 
@@ -32,11 +28,9 @@ BlueprintFailoverDataIngestionFailed
 '${dataIngestionOperation}' process failed for Recovery Plan '${name}': ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |                 |        |
-| ------------ | --------------- | ------ |
-| **Critical** | **TaskFailure** | **No** |
+| Severity     | Status          | Audit Event |
+| ------------ | --------------- | ----------- |
+| **Critical** | **TaskFailure** | **No**      |
 
 BlueprintFailoverDataIngestionStarted
 
@@ -44,11 +38,9 @@ BlueprintFailoverDataIngestionStarted
 Starting the '${dataIngestionOperation}' process for Recovery Plan '${name}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 BlueprintFailoverDataIngestionSucceed
 
@@ -56,11 +48,9 @@ BlueprintFailoverDataIngestionSucceed
 '${dataIngestionOperation}' process succeeded for Recovery Plan '${name}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 BlueprintFailoverFailed
 
@@ -68,11 +58,9 @@ BlueprintFailoverFailed
 Failed to failover Recovery Plan '${name}' to '${location}': ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Failure** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **No**      |
 
 BlueprintFailoverFinalizeFailed
 
@@ -80,11 +68,9 @@ BlueprintFailoverFinalizeFailed
 Final failover tasks failed for failover of Recovery Plan '${name}': ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Failure** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **No**      |
 
 BlueprintFailoverFinalizeStarted
 
@@ -92,11 +78,9 @@ BlueprintFailoverFinalizeStarted
 Starting the final failover tasks for failover of Recovery Plan '${name}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 BlueprintFailoverFinalizeSucceed
 
@@ -104,11 +88,9 @@ BlueprintFailoverFinalizeSucceed
 Final failover tasks succeeded for failover of Recovery Plan '${name}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 BlueprintFailoverIncrementalDataTransferFailed
 
@@ -116,11 +98,9 @@ BlueprintFailoverIncrementalDataTransferFailed
 Incremental data transfer process failed for Recovery Plan '${name}': ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |                 |        |
-| ------------ | --------------- | ------ |
-| **Critical** | **TaskFailure** | **No** |
+| Severity     | Status          | Audit Event |
+| ------------ | --------------- | ----------- |
+| **Critical** | **TaskFailure** | **No**      |
 
 BlueprintFailoverIncrementalDataTransferStarted
 
@@ -128,11 +108,9 @@ BlueprintFailoverIncrementalDataTransferStarted
 Starting the incremental data transfer process for Recovery Plan '${name}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 BlueprintFailoverIncrementalDataTransferSucceed
 
@@ -140,11 +118,9 @@ BlueprintFailoverIncrementalDataTransferSucceed
 Incremental data transfer process succeeded for Recovery Plan '${name}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 BlueprintFailoverPrepareDataFailed
 
@@ -152,11 +128,9 @@ BlueprintFailoverPrepareDataFailed
 Failover initialization process failed for Recovery Plan '${name}'. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |                 |        |
-| ------------ | --------------- | ------ |
-| **Critical** | **TaskFailure** | **No** |
+| Severity     | Status          | Audit Event |
+| ------------ | --------------- | ----------- |
+| **Critical** | **TaskFailure** | **No**      |
 
 BlueprintFailoverPrepareDataStarted
 
@@ -164,11 +138,9 @@ BlueprintFailoverPrepareDataStarted
 Starting the failover initialization process for Recovery Plan '${name}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 BlueprintFailoverPrepareDataSucceed
 
@@ -176,11 +148,9 @@ BlueprintFailoverPrepareDataSucceed
 Failover initialization process succeeded for Recovery Plan '${name}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 BlueprintFailoverPrepareResourceFailed
 
@@ -188,11 +158,9 @@ BlueprintFailoverPrepareResourceFailed
 Failover resource validation and initialization process failed for Recovery Plan '${name}'. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |                 |        |
-| ------------ | --------------- | ------ |
-| **Critical** | **TaskFailure** | **No** |
+| Severity     | Status          | Audit Event |
+| ------------ | --------------- | ----------- |
+| **Critical** | **TaskFailure** | **No**      |
 
 BlueprintFailoverPrepareResourceStarted
 
@@ -200,11 +168,9 @@ BlueprintFailoverPrepareResourceStarted
 Starting the failover resource validation and initialization process for Recovery Plan '${name}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 BlueprintFailoverPrepareResourceSucceed
 
@@ -212,11 +178,9 @@ BlueprintFailoverPrepareResourceSucceed
 Failover resource validation and initialization process succeeded for Recovery Plan '${name}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 BlueprintFailoverProvisionFailed
 
@@ -224,11 +188,9 @@ BlueprintFailoverProvisionFailed
 Unable to set up the target Rubrik cluster '${targetClusterName}' for failover of Recovery Plan '${name}': ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |                 |        |
-| ------------ | --------------- | ------ |
-| **Critical** | **TaskFailure** | **No** |
+| Severity     | Status          | Audit Event |
+| ------------ | --------------- | ----------- |
+| **Critical** | **TaskFailure** | **No**      |
 
 BlueprintFailoverProvisionStarted
 
@@ -236,11 +198,9 @@ BlueprintFailoverProvisionStarted
 Setting up the target Rubrik cluster '${targetClusterName}' for failover of Recovery Plan '${name}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 BlueprintFailoverProvisionSucceed
 
@@ -248,11 +208,9 @@ BlueprintFailoverProvisionSucceed
 Reconfiguration of virtual machines on target Rubrik cluster '${targetClusterName}' succeeded for Recovery Plan '${name}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 BlueprintFailoverProvisionSucceedWithNetworkReconfigureFailure
 
@@ -260,11 +218,9 @@ BlueprintFailoverProvisionSucceedWithNetworkReconfigureFailure
 Reconfiguration of virtual machines on target Rubrik cluster '${targetClusterName}' failed for Recovery Plan '${name}'. Ignoring and continuing.
 ```
 
-Severity | Status | Audit Event | |
-
-|             |                 |        |
-| ----------- | --------------- | ------ |
-| **Warning** | **TaskSuccess** | **No** |
+| Severity    | Status          | Audit Event |
+| ----------- | --------------- | ----------- |
+| **Warning** | **TaskSuccess** | **No**      |
 
 BlueprintFailoverScheduled
 
@@ -272,11 +228,9 @@ BlueprintFailoverScheduled
 Scheduled job to failover Recovery Plan '${name}' to '${location}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |            |        |
-| -------- | ---------- | ------ |
-| **Info** | **Queued** | **No** |
+| Severity | Status     | Audit Event |
+| -------- | ---------- | ----------- |
+| **Info** | **Queued** | **No**      |
 
 BlueprintFailoverStarted
 
@@ -284,11 +238,9 @@ BlueprintFailoverStarted
 Starting failover for Recovery Plan '${name}' to '${location}'. Failover error handling option is set to ${errorHandling}. Skipping network reconfiguration errors is ${skipNetworkError}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 BlueprintFailoverSuccess
 
@@ -296,11 +248,9 @@ BlueprintFailoverSuccess
 Successfully completed the failover for Recovery Plan '${name}' to '${location}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 BlueprintTakeOnDemandSnapshotFailed
 
@@ -308,11 +258,9 @@ BlueprintTakeOnDemandSnapshotFailed
 On demand snapshot for Recovery Plan '${blueprintName}' failed.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Failure** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **No**      |
 
 BlueprintTakeOnDemandSnapshotStarted
 
@@ -320,11 +268,9 @@ BlueprintTakeOnDemandSnapshotStarted
 Starting on demand snapshot for Recovery Plan '${blueprintName}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 BlueprintTakeOnDemandSnapshotSucceed
 
@@ -332,11 +278,9 @@ BlueprintTakeOnDemandSnapshotSucceed
 On demand snapshot for Recovery Plan '${blueprintName}' successfully completed.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 BlueprintWaitOnDemandSnapshotFailed
 
@@ -344,11 +288,9 @@ BlueprintWaitOnDemandSnapshotFailed
 Waiting on demand snapshot for Recovery Plan '${blueprintName}' failed.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Failure** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **No**      |
 
 BlueprintWaitOnDemandSnapshotStarted
 
@@ -356,11 +298,9 @@ BlueprintWaitOnDemandSnapshotStarted
 Waiting for on demand snapshot for Recovery Plan '${blueprintName}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 BlueprintWaitOnDemandSnapshotSucceed
 
@@ -368,11 +308,9 @@ BlueprintWaitOnDemandSnapshotSucceed
 Waiting on demand snapshot for Recovery Plan '${blueprintName}' succeeded.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 CleanupFailoverCanceled
 
@@ -380,11 +318,9 @@ CleanupFailoverCanceled
 Canceled the failover cleanup for Recovery Plan '${name}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |              |        |
-| -------- | ------------ | ------ |
-| **Info** | **Canceled** | **No** |
+| Severity | Status       | Audit Event |
+| -------- | ------------ | ----------- |
+| **Info** | **Canceled** | **No**      |
 
 CleanupFailoverCanceling
 
@@ -392,11 +328,9 @@ CleanupFailoverCanceling
 Canceling the failover cleanup for Recovery Plan '${name}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |               |        |
-| -------- | ------------- | ------ |
-| **Info** | **Canceling** | **No** |
+| Severity | Status        | Audit Event |
+| -------- | ------------- | ----------- |
+| **Info** | **Canceling** | **No**      |
 
 CleanupFailoverFailed
 
@@ -404,11 +338,9 @@ CleanupFailoverFailed
 Failed to cleanup failover for Recovery Plan '${name}' with ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Failure** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **No**      |
 
 CleanupFailoverStarted
 
@@ -416,11 +348,9 @@ CleanupFailoverStarted
 Started failover cleanup for Recovery Plan '${name}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 CleanupFailoverSuccess
 
@@ -428,11 +358,9 @@ CleanupFailoverSuccess
 Successfully completed the failover cleanup for Recovery Plan '${name}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Failure** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **No**      |
 
 CleanupFailoverTaskFailed
 
@@ -440,11 +368,9 @@ CleanupFailoverTaskFailed
 Failed to cleanup Recovery Plan ${name}: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |                 |        |
-| ------------ | --------------- | ------ |
-| **Critical** | **TaskFailure** | **No** |
+| Severity     | Status          | Audit Event |
+| ------------ | --------------- | ----------- |
+| **Critical** | **TaskFailure** | **No**      |
 
 CleanupFailoverTaskFailedWithUserComment
 
@@ -452,11 +378,9 @@ CleanupFailoverTaskFailedWithUserComment
 Failed to cleanup Recovery Plan '${name}'. ${comment} : ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |                 |        |
-| ------------ | --------------- | ------ |
-| **Critical** | **TaskFailure** | **No** |
+| Severity     | Status          | Audit Event |
+| ------------ | --------------- | ----------- |
+| **Critical** | **TaskFailure** | **No**      |
 
 CleanupFailoverTaskStarted
 
@@ -464,11 +388,9 @@ CleanupFailoverTaskStarted
 Started cleanup for Recovery Plan ${name}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Running** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Running** | **No**      |
 
 CleanupFailoverTaskSucceed
 
@@ -476,11 +398,9 @@ CleanupFailoverTaskSucceed
 Successfully completed the cleanup for Recovery Plan ${name}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 CleanupFailoverTaskSucceedWithUserComment
 
@@ -488,11 +408,9 @@ CleanupFailoverTaskSucceedWithUserComment
 Successfully completed the cleanup for Recovery Plan '${name}'. ${comment}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 FailbackCloudMachineShutdownFailed
 
@@ -500,11 +418,9 @@ FailbackCloudMachineShutdownFailed
 Failed to shut down ${instanceType} ${instanceName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskFailure** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskFailure** | **No**      |
 
 FailbackCloudMachineShutdownSucceed
 
@@ -512,11 +428,9 @@ FailbackCloudMachineShutdownSucceed
 Shut down ${instanceType} ${instanceName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 FailbackCloudMachineShutdownTaskFailed
 
@@ -524,11 +438,9 @@ FailbackCloudMachineShutdownTaskFailed
 During failover, system was unable to shutdown the child ${instanceType} of Recovery Plan '${blueprintName}': ${reason}. Please shutdown the child ${instanceType} manually to avoid potential resource conflicts with the child ${instanceType} spun up during failover. Resource conflicts, such as IP address collisions, may result in failures, including failure to boot during failover.
 ```
 
-Severity | Status | Audit Event | |
-
-|             |                 |        |
-| ----------- | --------------- | ------ |
-| **Warning** | **TaskFailure** | **No** |
+| Severity    | Status          | Audit Event |
+| ----------- | --------------- | ----------- |
+| **Warning** | **TaskFailure** | **No**      |
 
 FailbackCloudMachineShutdownTaskStarted
 
@@ -536,11 +448,9 @@ FailbackCloudMachineShutdownTaskStarted
 Started the shutdown process for Recovery Plan child ${instanceType}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Running** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Running** | **No**      |
 
 FailbackCloudMachineShutdownTaskSucceed
 
@@ -548,11 +458,9 @@ FailbackCloudMachineShutdownTaskSucceed
 Shut down all Recovery Plan child ${instanceType}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 FailbackCreateOnDemandBlueprintSnapshotTaskFailed
 
@@ -560,11 +468,9 @@ FailbackCreateOnDemandBlueprintSnapshotTaskFailed
 Failed to create a snapshot for the current state of the Recovery Plan '${blueprintName}': ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |                 |        |
-| ------------ | --------------- | ------ |
-| **Critical** | **TaskFailure** | **No** |
+| Severity     | Status          | Audit Event |
+| ------------ | --------------- | ----------- |
+| **Critical** | **TaskFailure** | **No**      |
 
 FailbackCreateOnDemandBlueprintSnapshotTaskStarted
 
@@ -572,11 +478,9 @@ FailbackCreateOnDemandBlueprintSnapshotTaskStarted
 Started taking a snapshot for the current state of the Recovery Plan '${blueprintName}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Running** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Running** | **No**      |
 
 FailbackCreateOnDemandBlueprintSnapshotTaskSucceed
 
@@ -584,11 +488,9 @@ FailbackCreateOnDemandBlueprintSnapshotTaskSucceed
 Created a snapshot for the current state of the Recovery Plan '${blueprintName}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 FailbackDeprecatePrimaryAppTaskFailed
 
@@ -596,11 +498,9 @@ FailbackDeprecatePrimaryAppTaskFailed
 Failed to deprecate the primary Recovery Plan '${blueprintName}': ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|             |                 |        |
-| ----------- | --------------- | ------ |
-| **Warning** | **TaskFailure** | **No** |
+| Severity    | Status          | Audit Event |
+| ----------- | --------------- | ----------- |
+| **Warning** | **TaskFailure** | **No**      |
 
 FailbackReprotectTaskFailed
 
@@ -608,11 +508,9 @@ FailbackReprotectTaskFailed
 Failed to reprotect the Recovery Plan '${blueprintName}': ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |                 |        |
-| ------------ | --------------- | ------ |
-| **Critical** | **TaskFailure** | **No** |
+| Severity     | Status          | Audit Event |
+| ------------ | --------------- | ----------- |
+| **Critical** | **TaskFailure** | **No**      |
 
 FailbackReprotectTaskStarted
 
@@ -620,11 +518,9 @@ FailbackReprotectTaskStarted
 Reprotecting the Recovery Plan '${blueprintName}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Running** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Running** | **No**      |
 
 FailbackReprotectTaskSucceeded
 
@@ -632,11 +528,9 @@ FailbackReprotectTaskSucceeded
 Reprotected the Recovery Plan '${blueprintName}' with SLA '${slaName}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 FailbackSyncRecoverySpecTaskFailed
 
@@ -644,11 +538,9 @@ FailbackSyncRecoverySpecTaskFailed
 The Recovery Plan '${blueprintName}' at the target cluster could not be synchronized with the source due to a communication issue. This could be a result of network issues between the source and target clusters or an incorrect replication configuration. Please resolve the issue to make sure the replication has been setup correctly between the source cluster and the target cluster, then retry the failover job.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |                 |        |
-| ------------ | --------------- | ------ |
-| **Critical** | **TaskFailure** | **No** |
+| Severity     | Status          | Audit Event |
+| ------------ | --------------- | ----------- |
+| **Critical** | **TaskFailure** | **No**      |
 
 FailbackSyncRecoverySpecTaskStarted
 
@@ -656,11 +548,9 @@ FailbackSyncRecoverySpecTaskStarted
 Started syncing the latest recovery spec to the target cluster.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Running** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Running** | **No**      |
 
 FailbackSyncRecoverySpecTaskSucceed
 
@@ -668,11 +558,9 @@ FailbackSyncRecoverySpecTaskSucceed
 Successfully synced the latest recovery spec to the target cluster.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 FailoverAssignClonedSLAFailed
 
@@ -680,11 +568,9 @@ FailoverAssignClonedSLAFailed
 Failed to assign the cloned SLA to the newly created Recovery Plan: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|             |                 |        |
-| ----------- | --------------- | ------ |
-| **Warning** | **TaskFailure** | **No** |
+| Severity    | Status          | Audit Event |
+| ----------- | --------------- | ----------- |
+| **Warning** | **TaskFailure** | **No**      |
 
 FailoverAssignSLAFailed
 
@@ -692,11 +578,9 @@ FailoverAssignSLAFailed
 Failed to assign the SLA '${slaName}' to the newly created Recovery Plan: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|             |                 |        |
-| ----------- | --------------- | ------ |
-| **Warning** | **TaskFailure** | **No** |
+| Severity    | Status          | Audit Event |
+| ----------- | --------------- | ----------- |
+| **Warning** | **TaskFailure** | **No**      |
 
 FailoverDeprecatePrimaryAppTaskFailed
 
@@ -704,11 +588,9 @@ FailoverDeprecatePrimaryAppTaskFailed
 Failed to deprecate the primary Recovery Plan '${blueprintName}': ${reason}, the ${instanceType} should be shutdown manually.
 ```
 
-Severity | Status | Audit Event | |
-
-|             |                 |        |
-| ----------- | --------------- | ------ |
-| **Warning** | **TaskFailure** | **No** |
+| Severity    | Status          | Audit Event |
+| ----------- | --------------- | ----------- |
+| **Warning** | **TaskFailure** | **No**      |
 
 FailoverDeprecatePrimaryAppTaskStarted
 
@@ -716,11 +598,9 @@ FailoverDeprecatePrimaryAppTaskStarted
 Started to deprecate the primary Recovery Plan '${blueprintName}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Running** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Running** | **No**      |
 
 FailoverDeprecatePrimaryAppTaskSucceed
 
@@ -728,11 +608,9 @@ FailoverDeprecatePrimaryAppTaskSucceed
 Successfully deprecated the primary Recovery Plan '${blueprintName}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 FailoverSLANotFound
 
@@ -740,11 +618,9 @@ FailoverSLANotFound
 SLA not found when assigning SLA to the newly created Recovery Plan.
 ```
 
-Severity | Status | Audit Event | |
-
-|             |                 |        |
-| ----------- | --------------- | ------ |
-| **Warning** | **TaskFailure** | **No** |
+| Severity    | Status          | Audit Event |
+| ----------- | --------------- | ----------- |
+| **Warning** | **TaskFailure** | **No**      |
 
 RecoveryPlanFailoverPartialSuccess
 
@@ -752,11 +628,9 @@ RecoveryPlanFailoverPartialSuccess
 The failover for Recovery Plan, '${name}', to '${location}' was partially successful. ${partialFailureInfo}
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 SyncFailbackTaskFailed
 
@@ -764,11 +638,9 @@ SyncFailbackTaskFailed
 Failover failed on cluster '${clusterName}': ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |                 |        |
-| ------------ | --------------- | ------ |
-| **Critical** | **TaskFailure** | **No** |
+| Severity     | Status          | Audit Event |
+| ------------ | --------------- | ----------- |
+| **Critical** | **TaskFailure** | **No**      |
 
 SyncFailbackTaskSucceed
 
@@ -776,11 +648,9 @@ SyncFailbackTaskSucceed
 Failover succeeded on cluster '${clusterName}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 TriggerFailbackTaskFailed
 
@@ -788,11 +658,9 @@ TriggerFailbackTaskFailed
 Failed to trigger failover job for Recovery Plan to the point in time: ${recoveryPoint} on cluster '${clusterName}': ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |                 |        |
-| ------------ | --------------- | ------ |
-| **Critical** | **TaskFailure** | **No** |
+| Severity     | Status          | Audit Event |
+| ------------ | --------------- | ----------- |
+| **Critical** | **TaskFailure** | **No**      |
 
 TriggerFailbackTaskFailedWithTimeRange
 
@@ -800,11 +668,9 @@ TriggerFailbackTaskFailedWithTimeRange
 Failed to trigger failover job for Recovery Plan to the point in time: range from ${startTime} to ${endTime} on cluster '${clusterName}': ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |                 |        |
-| ------------ | --------------- | ------ |
-| **Critical** | **TaskFailure** | **No** |
+| Severity     | Status          | Audit Event |
+| ------------ | --------------- | ----------- |
+| **Critical** | **TaskFailure** | **No**      |
 
 TriggerFailbackTaskStarted
 
@@ -812,11 +678,9 @@ TriggerFailbackTaskStarted
 Failover job for Recovery Plan to the point in time: ${recoveryPoint} triggered on cluster '${clusterName}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Running** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Running** | **No**      |
 
 TriggerFailbackTaskStartedWithTimeRange
 
@@ -824,11 +688,9 @@ TriggerFailbackTaskStartedWithTimeRange
 Failover job for Recovery Plan to the point in time: range from ${startTime} to ${endTime} triggered on cluster '${clusterName}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Running** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Running** | **No**      |
 
 TriggerFailbackTaskSucceed
 
@@ -836,11 +698,9 @@ TriggerFailbackTaskSucceed
 Triggered a failover job for Recovery Plan to the point in time: ${recoveryPoint} on cluster '${clusterName}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 TriggerFailbackTaskSucceedWithTimeRange
 
@@ -848,11 +708,9 @@ TriggerFailbackTaskSucceedWithTimeRange
 Triggered a failover job for Recovery Plan to the point in time: range from ${startTime} to ${endTime}, on cluster '${clusterName}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 ValidateRecoverySpecTaskFailed
 
@@ -860,11 +718,9 @@ ValidateRecoverySpecTaskFailed
 Failed to validate the recovery spec of Recovery Plan '${blueprintName}' on cluster '${clusterName}': ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |                 |        |
-| ------------ | --------------- | ------ |
-| **Critical** | **TaskFailure** | **No** |
+| Severity     | Status          | Audit Event |
+| ------------ | --------------- | ----------- |
+| **Critical** | **TaskFailure** | **No**      |
 
 ValidateRecoverySpecTaskStarted
 
@@ -872,11 +728,9 @@ ValidateRecoverySpecTaskStarted
 The recovery spec of Recovery Plan '${blueprintName}' is being validated on cluster '${clusterName}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Running** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Running** | **No**      |
 
 ValidateRecoverySpecTaskSucceed
 
@@ -884,11 +738,9 @@ ValidateRecoverySpecTaskSucceed
 Validated the recovery spec of Recovery Plan '${blueprintName}' on cluster '${clusterName}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 ## appflows
 
@@ -900,11 +752,9 @@ BlueprintFailoverCleanupStart
 ${userEmail} triggered cleanup job for recovery plan '${blueprintName}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 BlueprintFailoverStart
 
@@ -912,11 +762,9 @@ BlueprintFailoverStart
 ${userEmail} triggered failover for recovery plan '${blueprintName}' to ${targetSite}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 BlueprintTestFailoverStart
 
@@ -924,11 +772,9 @@ BlueprintTestFailoverStart
 ${userEmail} triggered test failover for recovery plan '${blueprintName}' to ${targetSite}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 ## rcv
 
@@ -940,11 +786,9 @@ RCVGRSFailoverReestablishmentPending
 Rubrik Cloud Vault location '${locName}' has been successfully  failed over to '${regionType}' region, '${currentRegionName}'  with LRS redundancy. Rubrik is now attempting to re-establish  GRS redundancy in the ${pairedRegionName} region.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 RCVGRSPrimaryFailoverReestablishmentSuccess
 
@@ -952,11 +796,9 @@ RCVGRSPrimaryFailoverReestablishmentSuccess
 The Rubrik Cloud Vault '${locName}' has failed back to the former  primary region '${primaryRegionName}' and Rubrik has successfully  re-established the GRS redundancy. You can now enable '${locName}'  to resume archival.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 RCVGRSSecondaryFailoverReestablishmentSuccess
 
@@ -964,8 +806,6 @@ RCVGRSSecondaryFailoverReestablishmentSuccess
 Successfully re-established GRS redundancy for Rubrik Cloud Vault  location '${locName}' between the primary region ${primaryRegionName}  and the secondary region ${secondaryRegionName}. You may initiate a  failback to the former primary region ${primaryRegionName} at any time  to resume archival to '${locName}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |

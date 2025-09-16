@@ -8,11 +8,9 @@ ActiveDirectoryForestOtherDcsPhaseFailed
 ${phaseName} failed for Active Directory forest domain controllers other than root domain controller due to critical error ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|             |             |        |
-| ----------- | ----------- | ------ |
-| **Warning** | **Failure** | **No** |
+| Severity    | Status      | Audit Event |
+| ----------- | ----------- | ----------- |
+| **Warning** | **Failure** | **No**      |
 
 ActiveDirectoryForestOtherDcsPhaseStarted
 
@@ -20,11 +18,9 @@ ActiveDirectoryForestOtherDcsPhaseStarted
 ${phaseName} started for Active Directory forest domain controllers other than root domain controller.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 ActiveDirectoryForestOtherDcsPhaseSuccess
 
@@ -32,11 +28,9 @@ ActiveDirectoryForestOtherDcsPhaseSuccess
 ${phaseName} succeeded for Active Directory forest domain controllers other than root domain controller.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 ActiveDirectoryForestRestoreCanceled
 
@@ -44,11 +38,9 @@ ActiveDirectoryForestRestoreCanceled
 Canceled Active Directory forest restore for forest ${forestName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |              |        |
-| -------- | ------------ | ------ |
-| **Info** | **Canceled** | **No** |
+| Severity | Status       | Audit Event |
+| -------- | ------------ | ----------- |
+| **Info** | **Canceled** | **No**      |
 
 ActiveDirectoryForestRestoreFailed
 
@@ -56,11 +48,9 @@ ActiveDirectoryForestRestoreFailed
 Active Directory forest restore failed for forest ${forestName} due to critical error ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Failure** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **No**      |
 
 ActiveDirectoryForestRestoreStarted
 
@@ -68,11 +58,9 @@ ActiveDirectoryForestRestoreStarted
 Active Directory forest restore started for forest ${forestName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Running** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Running** | **No**      |
 
 ActiveDirectoryForestRestoreSuccess
 
@@ -80,11 +68,9 @@ ActiveDirectoryForestRestoreSuccess
 Active Directory forest restore succeeded for forest ${forestName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 ActiveDirectoryForestRootDcPhaseFailed
 
@@ -92,11 +78,9 @@ ActiveDirectoryForestRootDcPhaseFailed
 ${phaseName} failed for Active Directory forest root domain controller due to critical error ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|             |             |        |
-| ----------- | ----------- | ------ |
-| **Warning** | **Failure** | **No** |
+| Severity    | Status      | Audit Event |
+| ----------- | ----------- | ----------- |
+| **Warning** | **Failure** | **No**      |
 
 ActiveDirectoryForestRootDcPhaseStarted
 
@@ -104,11 +88,9 @@ ActiveDirectoryForestRootDcPhaseStarted
 ${phaseName} started for Active Directory forest root domain controller.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 ActiveDirectoryForestRootDcPhaseSuccess
 
@@ -116,11 +98,9 @@ ActiveDirectoryForestRootDcPhaseSuccess
 ${phaseName} succeeded for Active Directory forest root domain controller.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 ActiveDirectoryGpoRollbackFailure
 
@@ -128,11 +108,9 @@ ActiveDirectoryGpoRollbackFailure
 ${username} unable to roll back GPO ${gpoId} in domain ${domainSid} on the Active Directory domain controller '${domainControllerName}' using snapshot ${snapshotId}. Reason: ${errorMessage}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 ActiveDirectoryGpoRollbackSuccess
 
@@ -140,11 +118,9 @@ ActiveDirectoryGpoRollbackSuccess
 ${username} successfully rolled back GPO ${gpoId} in domain ${domainSid} on the Active Directory domain controller '${domainControllerName}' using snapshot ${snapshotId}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 ActiveDirectoryLiveMountStarted
 
@@ -152,11 +128,9 @@ ActiveDirectoryLiveMountStarted
 ${username} started a job to mount the snapshot ${snapshotFid} of the  Active Directory domain controller ${dcName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 ActiveDirectoryLiveMountStartFailed
 
@@ -164,11 +138,9 @@ ActiveDirectoryLiveMountStartFailed
 ${username} unable to start a job to mount the snapshot ${snapshotFid}  of the Active Directory domain controller ${dcName}. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 ActiveDirectoryModifyLiveMountStarted
 
@@ -176,11 +148,9 @@ ActiveDirectoryModifyLiveMountStarted
 ${username} updated the snapshot mount of volume export  ${volumeExportFid} of the Active Directory domain controller ${dcName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 ActiveDirectoryModifyLiveMountStartFailed
 
@@ -188,11 +158,9 @@ ActiveDirectoryModifyLiveMountStartFailed
 ${username} unable to update the snapshot mount of volume export  ${volumeExportFid} of the Active Directory domain controller ${dcName}.  Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 ActiveDirectoryObjectsRestoreStarted
 
@@ -200,11 +168,9 @@ ActiveDirectoryObjectsRestoreStarted
 ${username} started a job to ${restoreOperation} on the Active Directory domain controller '${dcName}' using the snapshot ${snapshotFid}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 ActiveDirectoryObjectsRestoreStartFailed
 
@@ -212,11 +178,9 @@ ActiveDirectoryObjectsRestoreStartFailed
 ${username} unable to start a job to ${restoreOperation} on the Active Directory domain controller '${dcName}' using the snapshot ${snapshotFid}. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 ActiveDirectoryRestoreToDCJobStarted
 
@@ -224,11 +188,9 @@ ActiveDirectoryRestoreToDCJobStarted
 ${username} started a job to restore the Active Directory domain controller ${dcName} using the snapshot ${snapshotFid}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 ActiveDirectoryRestoreToDCJobStartFailed
 
@@ -236,11 +198,9 @@ ActiveDirectoryRestoreToDCJobStartFailed
 ${username} unable to start a job to restore the Active Directory domain controller ${dcName} using the snapshot ${snapshotFid}. Reason:  ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 ActiveDirectoryRestoreToHostJobStarted
 
@@ -248,11 +208,9 @@ ActiveDirectoryRestoreToHostJobStarted
 ${username} started a job to restore the Active Directory domain controller ${dcName} to the host ${hostName} using the snapshot ${snapshotFid}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 ActiveDirectoryRestoreToHostJobStartFailed
 
@@ -260,11 +218,9 @@ ActiveDirectoryRestoreToHostJobStartFailed
 ${username} unable to start a job to restore the Active Directory domain controller ${dcName} to the host ${hostName} using the snapshot ${snapshotFid}. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 ActiveDirectoryUnmountStarted
 
@@ -272,11 +228,9 @@ ActiveDirectoryUnmountStarted
 ${username} started a job to unmount the snapshot mount of volume  export ${volumeExportFid} of the Active Directory domain controller  ${dcName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 ActiveDirectoryUnmountStartFailed
 
@@ -284,11 +238,9 @@ ActiveDirectoryUnmountStartFailed
 ${username} unable to start a job to unmount the snapshot mount of  volume export ${volumeExportFid} of the  Active Directory domain  controller ${dcName}. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 ## awsnative
 
@@ -300,11 +252,9 @@ AwsNativeExportEbsFromArchivedSnapshotJobQueued
 Queued the export of the ${snapshotType} snapshot of EBS Volume  ${volumeDisplayName} taken on ${snapshotCreationTime} in  archival location ${archivalLocation} from region ${sourceRegion}  in AWS account ${sourceAwsAccountDisplayName} to availability zone  ${availabilityZone} in region ${destinationRegion} in  AWS account ${targetAwsAccountDisplayName} .
 ```
 
-Severity | Status | Audit Event | |
-
-|          |            |        |
-| -------- | ---------- | ------ |
-| **Info** | **Queued** | **No** |
+| Severity | Status     | Audit Event |
+| -------- | ---------- | ----------- |
+| **Info** | **Queued** | **No**      |
 
 AwsNativeExportEbsFromArchivedSnapshotJobStarted
 
@@ -312,11 +262,9 @@ AwsNativeExportEbsFromArchivedSnapshotJobStarted
 Started the export of the ${snapshotType} snapshot of EBS Volume  ${volumeDisplayName} taken on ${snapshotCreationTime} in  archival location ${archivalLocation} from region ${sourceRegion}  in AWS account ${sourceAwsAccountDisplayName} to  availability zone ${availabilityZone} in region ${destinationRegion}  in AWS account ${targetAwsAccountDisplayName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 AwsNativeExportEbsSnapshotAttachVolumeTaskFailed
 
@@ -324,11 +272,9 @@ AwsNativeExportEbsSnapshotAttachVolumeTaskFailed
 Failed to attach the ${volumeDisplayName} EBS Volume to the ${instanceDisplayName} EC2 Instance at ${devicePath} device path.
 ```
 
-Severity | Status | Audit Event | |
-
-|             |                 |        |
-| ----------- | --------------- | ------ |
-| **Warning** | **TaskFailure** | **No** |
+| Severity    | Status          | Audit Event |
+| ----------- | --------------- | ----------- |
+| **Warning** | **TaskFailure** | **No**      |
 
 AwsNativeExportEbsSnapshotAttachVolumeTaskStarted
 
@@ -336,11 +282,9 @@ AwsNativeExportEbsSnapshotAttachVolumeTaskStarted
 Attaching the ${volumeDisplayName} EBS Volume to the ${instanceDisplayName} EC2 Instance at ${devicePath} device path.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Running** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Running** | **No**      |
 
 AwsNativeExportEbsSnapshotAttachVolumeTaskSucceeded
 
@@ -348,11 +292,9 @@ AwsNativeExportEbsSnapshotAttachVolumeTaskSucceeded
 Successfully attached the ${volumeDisplayName} EBS Volume to the ${instanceDisplayName} EC2 Instance at ${devicePath} device path.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 AwsNativeExportEbsSnapshotCopySnapshotTaskFailed
 
@@ -360,11 +302,9 @@ AwsNativeExportEbsSnapshotCopySnapshotTaskFailed
 Failed to copy the ${snapshotType} snapshot to the ${destinationRegion} region on the ${awsAccount} AWS account.
 ```
 
-Severity | Status | Audit Event | |
-
-|             |                 |        |
-| ----------- | --------------- | ------ |
-| **Warning** | **TaskFailure** | **No** |
+| Severity    | Status          | Audit Event |
+| ----------- | --------------- | ----------- |
+| **Warning** | **TaskFailure** | **No**      |
 
 AwsNativeExportEbsSnapshotCopySnapshotTaskStarted
 
@@ -372,11 +312,9 @@ AwsNativeExportEbsSnapshotCopySnapshotTaskStarted
 Copying the ${snapshotType} snapshot to the ${destinationRegion} region on the ${awsAccount} AWS account.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Running** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Running** | **No**      |
 
 AwsNativeExportEbsSnapshotCopySnapshotTaskSucceeded
 
@@ -384,11 +322,9 @@ AwsNativeExportEbsSnapshotCopySnapshotTaskSucceeded
 Successfully copied the ${snapshotType} snapshot to the ${destinationRegion} region on the ${awsAccount} AWS account.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 AwsNativeExportEbsSnapshotCreateVolumeTaskFailed
 
@@ -396,11 +332,9 @@ AwsNativeExportEbsSnapshotCreateVolumeTaskFailed
 Failed to create EBS Volume from the ${snapshotType} snapshot in the ${availabilityZone} availability zone.
 ```
 
-Severity | Status | Audit Event | |
-
-|             |                 |        |
-| ----------- | --------------- | ------ |
-| **Warning** | **TaskFailure** | **No** |
+| Severity    | Status          | Audit Event |
+| ----------- | --------------- | ----------- |
+| **Warning** | **TaskFailure** | **No**      |
 
 AwsNativeExportEbsSnapshotCreateVolumeTaskStarted
 
@@ -408,11 +342,9 @@ AwsNativeExportEbsSnapshotCreateVolumeTaskStarted
 Creating EBS Volume from the ${snapshotType} snapshot in the ${availabilityZone} availability zone.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Running** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Running** | **No**      |
 
 AwsNativeExportEbsSnapshotCreateVolumeTaskSucceeded
 
@@ -420,11 +352,9 @@ AwsNativeExportEbsSnapshotCreateVolumeTaskSucceeded
 Successfully created the ${volumeDisplayName} EBS Volume from the ${snapshotType} snapshot in the ${availabilityZone} availability zone.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 AwsNativeExportEbsSnapshotDetachVolumeTaskFailed
 
@@ -432,11 +362,9 @@ AwsNativeExportEbsSnapshotDetachVolumeTaskFailed
 Failed to detach the ${volumeDisplayName} EBS Volume from the ${instanceDisplayName} EC2 Instance attached at ${devicePath} device path.
 ```
 
-Severity | Status | Audit Event | |
-
-|             |                 |        |
-| ----------- | --------------- | ------ |
-| **Warning** | **TaskFailure** | **No** |
+| Severity    | Status          | Audit Event |
+| ----------- | --------------- | ----------- |
+| **Warning** | **TaskFailure** | **No**      |
 
 AwsNativeExportEbsSnapshotDetachVolumeTaskStarted
 
@@ -444,11 +372,9 @@ AwsNativeExportEbsSnapshotDetachVolumeTaskStarted
 Detaching the ${volumeDisplayName} EBS Volume from the ${instanceDisplayName} EC2 Instance attached at ${devicePath} device path.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Running** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Running** | **No**      |
 
 AwsNativeExportEbsSnapshotDetachVolumeTaskSucceeded
 
@@ -456,11 +382,9 @@ AwsNativeExportEbsSnapshotDetachVolumeTaskSucceeded
 Successfully detached the ${volumeDisplayName} EBS Volume from the ${instanceDisplayName} EC2 Instance attached at ${devicePath} device path.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 AwsNativeExportEbsSnapshotJobCanceled
 
@@ -468,11 +392,9 @@ AwsNativeExportEbsSnapshotJobCanceled
 Canceled the export the ${snapshotType} snapshot of the ${volumeDisplayName} EBS Volume taken on ${snapshotCreationTime} from the ${sourceRegion} region on the ${sourceAwsAccountDisplayName} AWS account to the ${availabilityZone} availability zone in the ${destinationRegion} region in the ${targetAwsAccountDisplayName} AWS account.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |              |        |
-| -------- | ------------ | ------ |
-| **Info** | **Canceled** | **No** |
+| Severity | Status       | Audit Event |
+| -------- | ------------ | ----------- |
+| **Info** | **Canceled** | **No**      |
 
 AwsNativeExportEbsSnapshotJobFailed
 
@@ -480,11 +402,9 @@ AwsNativeExportEbsSnapshotJobFailed
 Failed to export the ${snapshotType} snapshot of the ${volumeDisplayName} EBS Volume taken on ${snapshotCreationTime} from the ${sourceRegion} region on the ${sourceAwsAccountDisplayName} AWS account to the ${availabilityZone} availability zone in the ${destinationRegion} region in the ${targetAwsAccountDisplayName} AWS account. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Failure** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **No**      |
 
 AwsNativeExportEbsSnapshotJobQueued
 
@@ -492,11 +412,9 @@ AwsNativeExportEbsSnapshotJobQueued
 Queued the export of the ${snapshotType} snapshot of the ${volumeDisplayName} EBS Volume taken on ${snapshotCreationTime} from the ${sourceRegion} region on the ${sourceAwsAccountDisplayName} AWS account to the ${availabilityZone} availability zone in the ${destinationRegion} region in the ${targetAwsAccountDisplayName} AWS account.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |            |        |
-| -------- | ---------- | ------ |
-| **Info** | **Queued** | **No** |
+| Severity | Status     | Audit Event |
+| -------- | ---------- | ----------- |
+| **Info** | **Queued** | **No**      |
 
 AwsNativeExportEbsSnapshotJobStarted
 
@@ -504,11 +422,9 @@ AwsNativeExportEbsSnapshotJobStarted
 Started the export of the ${snapshotType} snapshot of the ${volumeDisplayName} EBS Volume taken on ${snapshotCreationTime} from the ${sourceRegion} region on the ${sourceAwsAccountDisplayName} AWS account to the ${availabilityZone} availability zone in the ${destinationRegion} region in the ${targetAwsAccountDisplayName} AWS account.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 AwsNativeExportEbsSnapshotJobSucceeded
 
@@ -516,11 +432,9 @@ AwsNativeExportEbsSnapshotJobSucceeded
 Successfully exported the ${snapshotType} snapshot of the ${volumeDisplayName} EBS Volume taken on ${snapshotCreationTime} from the ${sourceRegion} region on the ${sourceAwsAccountDisplayName} AWS account to the  ${launchedVolumeDisplayName} EBS Volume in the ${availabilityZone} availability zone in the ${destinationRegion} region in the ${targetAwsAccountDisplayName} AWS account.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 AwsNativeExportEbsSnapshotSkipRestoreTasks
 
@@ -528,11 +442,9 @@ AwsNativeExportEbsSnapshotSkipRestoreTasks
 Skipped replacing original volume: ${skipReason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 AwsNativeExportEbsSnapshotStartInstanceTaskFailed
 
@@ -540,11 +452,9 @@ AwsNativeExportEbsSnapshotStartInstanceTaskFailed
 Failed to start the ${instanceDisplayName} EC2 Instance.
 ```
 
-Severity | Status | Audit Event | |
-
-|             |                 |        |
-| ----------- | --------------- | ------ |
-| **Warning** | **TaskFailure** | **No** |
+| Severity    | Status          | Audit Event |
+| ----------- | --------------- | ----------- |
+| **Warning** | **TaskFailure** | **No**      |
 
 AwsNativeExportEbsSnapshotStartInstanceTaskStarted
 
@@ -552,11 +462,9 @@ AwsNativeExportEbsSnapshotStartInstanceTaskStarted
 Starting the ${instanceDisplayName} EC2 Instance.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Running** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Running** | **No**      |
 
 AwsNativeExportEbsSnapshotStartInstanceTaskSucceeded
 
@@ -564,11 +472,9 @@ AwsNativeExportEbsSnapshotStartInstanceTaskSucceeded
 Successfully started the ${instanceDisplayName} EC2 Instance.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 AwsNativeExportEbsSnapshotStopInstanceTaskFailed
 
@@ -576,11 +482,9 @@ AwsNativeExportEbsSnapshotStopInstanceTaskFailed
 Failed to stop the ${instanceDisplayName} EC2 Instance in the ${availabilityZone} availability zone in the ${region} region.
 ```
 
-Severity | Status | Audit Event | |
-
-|             |                 |        |
-| ----------- | --------------- | ------ |
-| **Warning** | **TaskFailure** | **No** |
+| Severity    | Status          | Audit Event |
+| ----------- | --------------- | ----------- |
+| **Warning** | **TaskFailure** | **No**      |
 
 AwsNativeExportEbsSnapshotStopInstanceTaskStarted
 
@@ -588,11 +492,9 @@ AwsNativeExportEbsSnapshotStopInstanceTaskStarted
 Stopping the ${instanceDisplayName} EC2 Instance in the ${availabilityZone} availability zone in the ${region} region.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Running** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Running** | **No**      |
 
 AwsNativeExportEbsSnapshotStopInstanceTaskSucceeded
 
@@ -600,11 +502,9 @@ AwsNativeExportEbsSnapshotStopInstanceTaskSucceeded
 Successfully stopped the ${instanceDisplayName} EC2 Instance in the ${availabilityZone} availability zone in the ${region} region.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 AwsNativeExportEbsSnapshotStopInstanceTaskSucceededAlreadyStopped
 
@@ -612,11 +512,9 @@ AwsNativeExportEbsSnapshotStopInstanceTaskSucceededAlreadyStopped
 The ${instanceDisplayName} EC2 Instance in the ${availabilityZone} availability zone in the ${region} region was already stopped.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 AwsNativeExportEbsVolumeSnapshotJobStarted
 
@@ -624,11 +522,9 @@ AwsNativeExportEbsVolumeSnapshotJobStarted
 ${userEmail} started the export of the ${snapshotType} snapshot of the ${volumeDisplayName} EBS Volume taken on ${snapshotCreationTime} from the ${sourceRegion} region on the ${sourceAwsAccountDisplayName} AWS account to the ${availabilityZone} availability zone in the ${destinationRegion} region in the ${targetAwsAccountDisplayName} AWS account.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 AwsNativeExportEbsVolumeSnapshotJobStartFailed
 
@@ -636,11 +532,9 @@ AwsNativeExportEbsVolumeSnapshotJobStartFailed
 ${userEmail} failed to start the export of the ${snapshotType} snapshot of the ${volumeDisplayName} EBS Volume taken on ${snapshotCreationTime} from the ${sourceRegion} region on the ${sourceAwsAccountDisplayName} AWS account to the ${availabilityZone} availability zone in the ${destinationRegion} region in the ${targetAwsAccountDisplayName} AWS account.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |         |
-| ------------ | ----------- | ------- |
-| **Critical** | **Failure** | **Yes** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **Yes**     |
 
 AwsNativeExportEc2InstanceCopySnapshotTaskFailed
 
@@ -648,11 +542,9 @@ AwsNativeExportEc2InstanceCopySnapshotTaskFailed
 Failed to copy the ${snapshotType} snapshot from the ${sourceRegion} region on the ${sourceAwsAccountDisplayName} AWS account to the ${destinationRegion} region in the ${targetAwsAccountDisplayName} AWS account. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|             |                 |        |
-| ----------- | --------------- | ------ |
-| **Warning** | **TaskFailure** | **No** |
+| Severity    | Status          | Audit Event |
+| ----------- | --------------- | ----------- |
+| **Warning** | **TaskFailure** | **No**      |
 
 AwsNativeExportEc2InstanceCopySnapshotTaskStarted
 
@@ -660,11 +552,9 @@ AwsNativeExportEc2InstanceCopySnapshotTaskStarted
 Copying the ${snapshotType} snapshot from the ${sourceRegion} region on the ${sourceAwsAccountDisplayName} AWS account to the ${destinationRegion} region in the ${targetAwsAccountDisplayName} AWS account.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Running** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Running** | **No**      |
 
 AwsNativeExportEc2InstanceCopySnapshotTaskSucceeded
 
@@ -672,11 +562,9 @@ AwsNativeExportEc2InstanceCopySnapshotTaskSucceeded
 Successfully copied the ${snapshotType} snapshot from the ${sourceRegion} region on the ${sourceAwsAccountDisplayName} AWS account to the ${destinationRegion} region in the ${targetAwsAccountDisplayName} AWS account.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 AwsNativeExportEc2InstanceFromArchivedSnapshotJobQueued
 
@@ -684,11 +572,9 @@ AwsNativeExportEc2InstanceFromArchivedSnapshotJobQueued
 Queued export of the ${instanceDisplayName} EC2 instance from the archived snapshot taken on ${snapshotCreationTime} in the ${sourceRegion} region in the ${archivalLocation} archival location  on the ${sourceAwsAccountDisplayName} AWS account to the ${destinationRegion} region in the ${targetAwsAccountDisplayName} AWS account.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |            |        |
-| -------- | ---------- | ------ |
-| **Info** | **Queued** | **No** |
+| Severity | Status     | Audit Event |
+| -------- | ---------- | ----------- |
+| **Info** | **Queued** | **No**      |
 
 AwsNativeExportEc2InstanceFromArchivedSnapshotJobStarted
 
@@ -696,11 +582,9 @@ AwsNativeExportEc2InstanceFromArchivedSnapshotJobStarted
 Started export of the ${instanceDisplayName} EC2 instance from the  archived snapshot taken on ${snapshotCreationTime} in the ${sourceRegion}  region in the ${archivalLocation} archival location on the ${sourceAwsAccountDisplayName} AWS account to the ${destinationRegion} region in the ${targetAwsAccountDisplayName} AWS account.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 AwsNativeExportEc2InstanceJobCanceled
 
@@ -708,11 +592,9 @@ AwsNativeExportEc2InstanceJobCanceled
 Canceled the export of the ${instanceDisplayName} EC2 instance from the ${snapshotType} snapshot taken on ${snapshotCreationTime} in the ${sourceRegion} region on the ${sourceAwsAccountDisplayName} AWS account to the ${destinationRegion} region in the ${targetAwsAccountDisplayName} AWS account.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |              |        |
-| -------- | ------------ | ------ |
-| **Info** | **Canceled** | **No** |
+| Severity | Status       | Audit Event |
+| -------- | ------------ | ----------- |
+| **Info** | **Canceled** | **No**      |
 
 AwsNativeExportEc2InstanceJobCanceling
 
@@ -720,11 +602,9 @@ AwsNativeExportEc2InstanceJobCanceling
 Canceling the export of the ${instanceDisplayName} EC2 instance from the ${snapshotType} snapshot taken on ${snapshotCreationTime} in the ${sourceRegion} region on the ${sourceAwsAccountDisplayName} AWS account to the ${destinationRegion} region in the ${targetAwsAccountDisplayName} AWS account.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |               |        |
-| -------- | ------------- | ------ |
-| **Info** | **Canceling** | **No** |
+| Severity | Status        | Audit Event |
+| -------- | ------------- | ----------- |
+| **Info** | **Canceling** | **No**      |
 
 AwsNativeExportEc2InstanceJobFailed
 
@@ -732,11 +612,9 @@ AwsNativeExportEc2InstanceJobFailed
 Failed to export the ${instanceDisplayName} EC2 instance from the ${snapshotType} snapshot taken on ${snapshotCreationTime} in the ${sourceRegion} region on the ${sourceAwsAccountDisplayName} AWS account to the ${destinationRegion} region in the ${targetAwsAccountDisplayName} AWS account. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Failure** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **No**      |
 
 AwsNativeExportEc2InstanceJobQueued
 
@@ -744,11 +622,9 @@ AwsNativeExportEc2InstanceJobQueued
 Queued the export of the ${instanceDisplayName} EC2 instance from the ${snapshotType} snapshot taken on ${snapshotCreationTime} in the ${sourceRegion} region on the ${sourceAwsAccountDisplayName} AWS account to the ${destinationRegion} region in the ${targetAwsAccountDisplayName} AWS account.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |            |        |
-| -------- | ---------- | ------ |
-| **Info** | **Queued** | **No** |
+| Severity | Status     | Audit Event |
+| -------- | ---------- | ----------- |
+| **Info** | **Queued** | **No**      |
 
 AwsNativeExportEC2InstanceJobStarted
 
@@ -756,11 +632,9 @@ AwsNativeExportEC2InstanceJobStarted
 ${userEmail} started the export of EC2 instance ${instanceDisplayName} from the ${snapshotType} snapshot ${snapshotDisplayName} taken on ${snapshotCreationTime} in the ${sourceRegion} region on the ${sourceAwsAccountDisplayName} AWS account to region ${destinationRegion} in the ${targetAwsAccountDisplayName} AWS account.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 AwsNativeExportEc2InstanceJobStarted
 
@@ -768,11 +642,9 @@ AwsNativeExportEc2InstanceJobStarted
 Started the export of the ${instanceDisplayName} EC2 instance from the ${snapshotType} snapshot taken on ${snapshotCreationTime} in the ${sourceRegion} region on the ${sourceAwsAccountDisplayName} AWS account to the ${destinationRegion} region in the ${targetAwsAccountDisplayName} AWS account.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 AwsNativeExportEC2InstanceJobStartFailed
 
@@ -780,11 +652,9 @@ AwsNativeExportEC2InstanceJobStartFailed
 ${userEmail} failed to start the export of EC2 instance from the ${snapshotType} snapshot ${snapshotDisplayName} taken on ${snapshotCreationTime} in the ${sourceRegion} region on the ${sourceAwsAccountDisplayName} AWS account to region ${destinationRegion} in the ${targetAwsAccountDisplayName} AWS account. Failure reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |         |
-| ------------ | ----------- | ------- |
-| **Critical** | **Failure** | **Yes** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **Yes**     |
 
 AwsNativeExportEc2InstanceJobSucceeded
 
@@ -792,11 +662,9 @@ AwsNativeExportEc2InstanceJobSucceeded
 Exported the ${instanceDisplayName} EC2 instance from the ${snapshotType} snapshot taken on ${snapshotCreationTime} in the ${sourceRegion} region on the ${sourceAwsAccountDisplayName} AWS account to the ${destinationRegion} region in the ${targetAwsAccountDisplayName} AWS account.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 AwsNativeExportEc2InstanceLaunchInstanceTaskFailed
 
@@ -804,11 +672,9 @@ AwsNativeExportEc2InstanceLaunchInstanceTaskFailed
 Failed to launch EC2 instance in the ${destinationRegion} region in the ${targetAwsAccountDisplayName} AWS account from the ${snapshotType} snapshot taken on ${snapshotCreationTime} in the ${sourceRegion} region on the ${sourceAwsAccountDisplayName} AWS account. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|             |                 |        |
-| ----------- | --------------- | ------ |
-| **Warning** | **TaskFailure** | **No** |
+| Severity    | Status          | Audit Event |
+| ----------- | --------------- | ----------- |
+| **Warning** | **TaskFailure** | **No**      |
 
 AwsNativeExportEc2InstanceLaunchInstanceTaskStarted
 
@@ -816,11 +682,9 @@ AwsNativeExportEc2InstanceLaunchInstanceTaskStarted
 Launching EC2 instance in the ${destinationRegion} region in the ${targetAwsAccountDisplayName} AWS account from the ${snapshotType} snapshot taken on ${snapshotCreationTime} in the ${sourceRegion} on the ${sourceAwsAccountDisplayName} AWS account.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Running** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Running** | **No**      |
 
 AwsNativeExportEc2InstanceLaunchInstanceTaskSucceeded
 
@@ -828,11 +692,9 @@ AwsNativeExportEc2InstanceLaunchInstanceTaskSucceeded
 Successfully launched EC2 instance ${launchedInstanceDisplayName} in the ${destinationRegion} region in the ${targetAwsAccountDisplayName} AWS account.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 AwsNativeExportRdsInstanceCopySnapshotTaskFailed
 
@@ -840,11 +702,9 @@ AwsNativeExportRdsInstanceCopySnapshotTaskFailed
 Failed to copy snapshot. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|             |                 |        |
-| ----------- | --------------- | ------ |
-| **Warning** | **TaskFailure** | **No** |
+| Severity    | Status          | Audit Event |
+| ----------- | --------------- | ----------- |
+| **Warning** | **TaskFailure** | **No**      |
 
 AwsNativeExportRdsInstanceCopySnapshotTaskStarted
 
@@ -852,11 +712,9 @@ AwsNativeExportRdsInstanceCopySnapshotTaskStarted
 Copying ${snapshotName} snapshot.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Running** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Running** | **No**      |
 
 AwsNativeExportRdsInstanceCopySnapshotTaskSucceeded
 
@@ -864,11 +722,9 @@ AwsNativeExportRdsInstanceCopySnapshotTaskSucceeded
 Successfully copied the ${snapshotName} snapshot in the ${destinationRegion} region from the ${sourceRegion} region.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 AwsNativeExportRdsInstanceCreateDependenciesTaskFailed
 
@@ -876,11 +732,9 @@ AwsNativeExportRdsInstanceCreateDependenciesTaskFailed
 Failed to create ${dependencies} in the ${region} region. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|             |                 |        |
-| ----------- | --------------- | ------ |
-| **Warning** | **TaskFailure** | **No** |
+| Severity    | Status          | Audit Event |
+| ----------- | --------------- | ----------- |
+| **Warning** | **TaskFailure** | **No**      |
 
 AwsNativeExportRdsInstanceCreateDependenciesTaskStarted
 
@@ -888,11 +742,9 @@ AwsNativeExportRdsInstanceCreateDependenciesTaskStarted
 Creating ${dependencies} in the ${region} region.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Running** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Running** | **No**      |
 
 AwsNativeExportRdsInstanceCreateDependenciesTaskSucceeded
 
@@ -900,11 +752,9 @@ AwsNativeExportRdsInstanceCreateDependenciesTaskSucceeded
 Successfully created ${dependencies} in the ${region} region.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 AwsNativeExportRdsInstanceJobCanceled
 
@@ -912,11 +762,9 @@ AwsNativeExportRdsInstanceJobCanceled
 Canceled export of the ${instanceDisplayName} RDS database in the ${destinationRegion} region and archival location ${archivalLocation} in the ${awsAccountDisplayName} AWS account from ${snapshotType}  snapshot in the ${sourceRegion} region taken at ${snapshotCreationTime}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |              |        |
-| -------- | ------------ | ------ |
-| **Info** | **Canceled** | **No** |
+| Severity | Status       | Audit Event |
+| -------- | ------------ | ----------- |
+| **Info** | **Canceled** | **No**      |
 
 AwsNativeExportRdsInstanceJobCanceling
 
@@ -924,11 +772,9 @@ AwsNativeExportRdsInstanceJobCanceling
 Canceling export of the ${instanceDisplayName} RDS database in the ${destinationRegion} region and archival location ${archivalLocation} in the ${awsAccountDisplayName} AWS account from ${snapshotType} snapshot  in the ${sourceRegion} region taken at ${snapshotCreationTime}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |               |        |
-| -------- | ------------- | ------ |
-| **Info** | **Canceling** | **No** |
+| Severity | Status        | Audit Event |
+| -------- | ------------- | ----------- |
+| **Info** | **Canceling** | **No**      |
 
 AwsNativeExportRdsInstanceJobFailed
 
@@ -936,11 +782,9 @@ AwsNativeExportRdsInstanceJobFailed
 Failed to export the ${instanceDisplayName} RDS database in the ${destinationRegion} region and archival location ${archivalLocation} in the ${awsAccountDisplayName} AWS account from ${snapshotType}  snapshot in the ${sourceRegion} region taken at ${snapshotCreationTime}. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Failure** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **No**      |
 
 AwsNativeExportRdsInstanceJobQueued
 
@@ -948,11 +792,9 @@ AwsNativeExportRdsInstanceJobQueued
 Queued the export of the ${instanceDisplayName} RDS database from the ${snapshotType} snapshot taken on ${snapshotCreationTime} in the ${sourceRegion} region and archival location ${archivalLocation} in the  ${awsAccountDisplayName} AWS account to the ${destinationRegion} region  in the ${targetAwsAccountDisplayName} AWS account.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |            |        |
-| -------- | ---------- | ------ |
-| **Info** | **Queued** | **No** |
+| Severity | Status     | Audit Event |
+| -------- | ---------- | ----------- |
+| **Info** | **Queued** | **No**      |
 
 AwsNativeExportRdsInstanceJobStarted
 
@@ -960,11 +802,9 @@ AwsNativeExportRdsInstanceJobStarted
 ${userEmail} started export of RDS instance ${instanceDisplayName} in region ${region} on AWS account ${awsAccountDisplayName} from snapshot ${snapshotDisplayName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 AwsNativeExportRdsInstanceJobStarted
 
@@ -972,11 +812,9 @@ AwsNativeExportRdsInstanceJobStarted
 Started export of the ${instanceDisplayName} RDS database.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 AwsNativeExportRdsInstanceJobStartFailed
 
@@ -984,11 +822,9 @@ AwsNativeExportRdsInstanceJobStartFailed
 ${userEmail} failed to start export of RDS instance ${instanceDisplayName} in region ${region} on AWS account ${awsAccountDisplayName} from snapshot ${snapshotDisplayName} . Failure reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |         |
-| ------------ | ----------- | ------- |
-| **Critical** | **Failure** | **Yes** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **Yes**     |
 
 AwsNativeExportRdsInstanceJobSucceeded
 
@@ -996,11 +832,9 @@ AwsNativeExportRdsInstanceJobSucceeded
 Export of the ${instanceDisplayName} RDS database in the ${destinationRegion} region and archival location ${archivalLocation} in the ${awsAccountDisplayName} AWS account from ${snapshotType}  snapshot in the ${sourceRegion} region, taken at ${snapshotCreationTime}, succeeded.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 AwsNativeExportRdsInstanceJobSucceededWithDisabledUsers
 
@@ -1008,11 +842,9 @@ AwsNativeExportRdsInstanceJobSucceededWithDisabledUsers
 Export of the ${instanceDisplayName} RDS database in the ${destinationRegion} region with archival location ${archivalLocation} in the ${awsAccountDisplayName} AWS account from ${snapshotType}  snapshot in the ${sourceRegion} region, taken at ${snapshotCreationTime}, succeeded. However, following users were  explicitly created as disabled users: ${disabledUsers}.
 ```
 
-Severity | Status | Audit Event | |
-
-|             |             |        |
-| ----------- | ----------- | ------ |
-| **Warning** | **Success** | **No** |
+| Severity    | Status      | Audit Event |
+| ----------- | ----------- | ----------- |
+| **Warning** | **Success** | **No**      |
 
 AwsNativeExportRdsInstanceLaunchClusterTaskFailed
 
@@ -1020,11 +852,9 @@ AwsNativeExportRdsInstanceLaunchClusterTaskFailed
 Failed to launch the ${clusterName} RDS cluster. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|             |                 |        |
-| ----------- | --------------- | ------ |
-| **Warning** | **TaskFailure** | **No** |
+| Severity    | Status          | Audit Event |
+| ----------- | --------------- | ----------- |
+| **Warning** | **TaskFailure** | **No**      |
 
 AwsNativeExportRdsInstanceLaunchClusterTaskStarted
 
@@ -1032,11 +862,9 @@ AwsNativeExportRdsInstanceLaunchClusterTaskStarted
 Launching the ${clusterName} RDS cluster.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Running** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Running** | **No**      |
 
 AwsNativeExportRdsInstanceLaunchClusterTaskSucceeded
 
@@ -1044,11 +872,9 @@ AwsNativeExportRdsInstanceLaunchClusterTaskSucceeded
 Successfully launched the ${clusterName} RDS cluster.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 AwsNativeExportRdsInstanceLaunchInstanceTaskFailed
 
@@ -1056,11 +882,9 @@ AwsNativeExportRdsInstanceLaunchInstanceTaskFailed
 Failed to launch the ${instanceName} RDS instance. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|             |                 |        |
-| ----------- | --------------- | ------ |
-| **Warning** | **TaskFailure** | **No** |
+| Severity    | Status          | Audit Event |
+| ----------- | --------------- | ----------- |
+| **Warning** | **TaskFailure** | **No**      |
 
 AwsNativeExportRdsInstanceLaunchInstanceTaskStarted
 
@@ -1068,11 +892,9 @@ AwsNativeExportRdsInstanceLaunchInstanceTaskStarted
 Launching the ${instanceName} RDS instance.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Running** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Running** | **No**      |
 
 AwsNativeExportRdsInstanceLaunchInstanceTaskSucceeded
 
@@ -1080,11 +902,9 @@ AwsNativeExportRdsInstanceLaunchInstanceTaskSucceeded
 Successfully launched the ${instanceName} RDS instance.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 AwsNativeExportRdsInstancePitrJobCanceled
 
@@ -1092,11 +912,9 @@ AwsNativeExportRdsInstancePitrJobCanceled
 Canceled point in time export of the ${instanceDisplayName} RDS  database in the ${region} region on the ${awsAccountDisplayName} AWS  account at ${exportTime}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |              |        |
-| -------- | ------------ | ------ |
-| **Info** | **Canceled** | **No** |
+| Severity | Status       | Audit Event |
+| -------- | ------------ | ----------- |
+| **Info** | **Canceled** | **No**      |
 
 AwsNativeExportRdsInstancePitrJobFailed
 
@@ -1104,11 +922,9 @@ AwsNativeExportRdsInstancePitrJobFailed
 Failed to export the ${instanceDisplayName} RDS database in the  ${region} region on the ${awsAccountDisplayName} AWS account with  point in time recovery operation at ${exportTime}. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Failure** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **No**      |
 
 AwsNativeExportRdsInstancePitrJobQueued
 
@@ -1116,11 +932,9 @@ AwsNativeExportRdsInstancePitrJobQueued
 Queued point in time export of the ${instanceDisplayName} RDS database  in the ${region} region on the ${awsAccountDisplayName} AWS account at  ${exportTime}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |            |        |
-| -------- | ---------- | ------ |
-| **Info** | **Queued** | **No** |
+| Severity | Status     | Audit Event |
+| -------- | ---------- | ----------- |
+| **Info** | **Queued** | **No**      |
 
 AwsNativeExportRdsInstancePitrJobStarted
 
@@ -1128,11 +942,9 @@ AwsNativeExportRdsInstancePitrJobStarted
 ${userEmail} started point in time export of RDS instance ${instanceDisplayName} in region ${region} on AWS account ${awsAccountDisplayName} to ${exportTime} .
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 AwsNativeExportRdsInstancePitrJobStarted
 
@@ -1140,11 +952,9 @@ AwsNativeExportRdsInstancePitrJobStarted
 Started point in time export of the ${instanceDisplayName} RDS database.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 AwsNativeExportRdsInstancePitrJobStartFailed
 
@@ -1152,11 +962,9 @@ AwsNativeExportRdsInstancePitrJobStartFailed
 ${userEmail} failed to start point in time export of RDS instance ${instanceDisplayName} in region ${region} on AWS account ${awsAccountDisplayName} to ${exportTime}. Failure reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |         |
-| ------------ | ----------- | ------- |
-| **Critical** | **Failure** | **Yes** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **Yes**     |
 
 AwsNativeExportRdsInstancePitrJobSucceeded
 
@@ -1164,11 +972,9 @@ AwsNativeExportRdsInstancePitrJobSucceeded
 Export of the ${instanceDisplayName} RDS database in the ${region}  region on the ${awsAccountDisplayName} AWS account with point in time  recovery operation at ${exportTime} succeeded.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 AwsNativeExportRdsInstanceRecoveryTaskFailed
 
@@ -1176,11 +982,9 @@ AwsNativeExportRdsInstanceRecoveryTaskFailed
 Failed to recover data from the archived snapshot taken at  ${snapshotTimeDisplay} of the ${workloadDisplay} to  ${instanceDisplayName} RDS database in the ${destinationRegion}  region of the ${targetAwsAccountDisplayName} AWS account. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |                 |        |
-| ------------ | --------------- | ------ |
-| **Critical** | **TaskFailure** | **No** |
+| Severity     | Status          | Audit Event |
+| ------------ | --------------- | ----------- |
+| **Critical** | **TaskFailure** | **No**      |
 
 AwsNativeExportRdsInstanceRecoveryTaskStarted
 
@@ -1188,11 +992,9 @@ AwsNativeExportRdsInstanceRecoveryTaskStarted
 Recovering data from the archived snapshot taken at  ${snapshotTimeDisplay} of the ${workloadDisplay} to ${instanceDisplayName} RDS database in the ${destinationRegion}  region of the ${targetAwsAccountDisplayName} AWS account.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Running** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Running** | **No**      |
 
 AwsNativeExportRdsInstanceRecoveryTaskSucceeded
 
@@ -1200,11 +1002,9 @@ AwsNativeExportRdsInstanceRecoveryTaskSucceeded
 Successfully recovered data from the archived snapshot taken at  ${snapshotTimeDisplay} of the ${workloadDisplay} to  ${instanceDisplayName} RDS database in the ${destinationRegion}  region of the ${targetAwsAccountDisplayName} AWS account.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 AwsNativeLaunchDiskForMaterializationTaskFailed
 
@@ -1212,11 +1012,9 @@ AwsNativeLaunchDiskForMaterializationTaskFailed
 Failed to launch volume(s) in availability zone ${availabilityZone} of region ${region} of account ${targetCloudAccountName} for recovering the archived snapshot.
 ```
 
-Severity | Status | Audit Event | |
-
-|             |                 |        |
-| ----------- | --------------- | ------ |
-| **Warning** | **TaskFailure** | **No** |
+| Severity    | Status          | Audit Event |
+| ----------- | --------------- | ----------- |
+| **Warning** | **TaskFailure** | **No**      |
 
 AwsNativeLaunchDiskForMaterializationTaskStarted
 
@@ -1224,11 +1022,9 @@ AwsNativeLaunchDiskForMaterializationTaskStarted
 Launching ${numberOfVolumes} volume(s) in availability zone ${availabilityZone} of region ${region} of account ${targetCloudAccountName} for recovering the archived snapshot.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Running** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Running** | **No**      |
 
 AwsNativeLaunchDiskForMaterializationTaskSucceeded
 
@@ -1236,11 +1032,9 @@ AwsNativeLaunchDiskForMaterializationTaskSucceeded
 Successfully launched ${numberOfVolumes} volume(s) in availability zone ${availabilityZone} of region ${region} of account ${targetCloudAccountName} for recovering the archived snapshot.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 AwsNativeLaunchDiskFromMaterializeSnapshotTaskFailed
 
@@ -1248,11 +1042,9 @@ AwsNativeLaunchDiskFromMaterializeSnapshotTaskFailed
 Failed to launch volume(s) in availability zone ${availabilityZone} of region ${region} of account ${accountName} from the recovered volume snapshot(s).
 ```
 
-Severity | Status | Audit Event | |
-
-|             |                 |        |
-| ----------- | --------------- | ------ |
-| **Warning** | **TaskFailure** | **No** |
+| Severity    | Status          | Audit Event |
+| ----------- | --------------- | ----------- |
+| **Warning** | **TaskFailure** | **No**      |
 
 AwsNativeLaunchDiskFromMaterializeSnapshotTaskStarted
 
@@ -1260,11 +1052,9 @@ AwsNativeLaunchDiskFromMaterializeSnapshotTaskStarted
 Launching volume(s) in availability zone ${availabilityZone} of region ${region} of account ${accountName} from the recovered volume snapshot(s).
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Running** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Running** | **No**      |
 
 AwsNativeLaunchDiskFromMaterializeSnapshotTaskSucceeded
 
@@ -1272,11 +1062,9 @@ AwsNativeLaunchDiskFromMaterializeSnapshotTaskSucceeded
 Successfully Launched volume(s) in availability zone ${availabilityZone} of region ${region} of account ${accountName} from the recovered volume snapshot(s).
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 AwsNativeMaterializeArchivedDiskTaskFailed
 
@@ -1284,11 +1072,9 @@ AwsNativeMaterializeArchivedDiskTaskFailed
 Failed to write data from archived snapshot to volume(s) in region ${region} of account ${accountName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|             |                 |        |
-| ----------- | --------------- | ------ |
-| **Warning** | **TaskFailure** | **No** |
+| Severity    | Status          | Audit Event |
+| ----------- | --------------- | ----------- |
+| **Warning** | **TaskFailure** | **No**      |
 
 AwsNativeMaterializeArchivedDiskTaskStarted
 
@@ -1296,11 +1082,9 @@ AwsNativeMaterializeArchivedDiskTaskStarted
 Writing data from archived snapshot to volume(s) in region ${region} of account ${accountName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Running** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Running** | **No**      |
 
 AwsNativeMaterializeArchivedDiskTaskSucceeded
 
@@ -1308,11 +1092,9 @@ AwsNativeMaterializeArchivedDiskTaskSucceeded
 Successfully written data from archived snapshot to volume(s) in region ${region} of account ${accountName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 AwsNativePublishExportRdsInstanceIndexRecoveryTaskProgress
 
@@ -1320,11 +1102,9 @@ AwsNativePublishExportRdsInstanceIndexRecoveryTaskProgress
 Index recovery in progress: ${numIndexes} dbs recovered with indexes out of ${totalIndexes} dbs.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Running** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Running** | **No**      |
 
 AwsNativePublishExportRdsInstanceIndexRecoveryTaskStart
 
@@ -1332,11 +1112,9 @@ AwsNativePublishExportRdsInstanceIndexRecoveryTaskStart
 Starting index recovery for ${numIndexes} dbs.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Running** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Running** | **No**      |
 
 AwsNativePublishExportRdsInstanceRecoveryTaskProgress
 
@@ -1344,11 +1122,9 @@ AwsNativePublishExportRdsInstanceRecoveryTaskProgress
 Recovery in progress: ${numTablePartitions} out of total  ${totalTablePartitions} table partitions successfully recovered.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Running** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Running** | **No**      |
 
 AwsNativeRecoverDynamoDBSnapshotAddTagsError
 
@@ -1356,11 +1132,9 @@ AwsNativeRecoverDynamoDBSnapshotAddTagsError
 An error occurred while adding tags to the recovered DynamoDB table  ${recoveredTableName}: ${reason}. Refer to the object details  page to view the tags present on the source table and add tags using  the AWS Management Console.
 ```
 
-Severity | Status | Audit Event | |
-
-|             |                 |        |
-| ----------- | --------------- | ------ |
-| **Warning** | **TaskFailure** | **No** |
+| Severity    | Status          | Audit Event |
+| ----------- | --------------- | ----------- |
+| **Warning** | **TaskFailure** | **No**      |
 
 AwsNativeRecoverDynamoDBSnapshotCreatedAndRemainingGSIsError
 
@@ -1368,11 +1142,9 @@ AwsNativeRecoverDynamoDBSnapshotCreatedAndRemainingGSIsError
 We were not able to create all Global Secondary Indices (GSIs) on  DynamoDB table ${recoveredTableName} due to an AWS error. Created GSIs:  [${createdGSIs}]. Remaining GSIs to be created: [${remainingGSIs}].  Contact AWS support to create remaining GSIs.
 ```
 
-Severity | Status | Audit Event | |
-
-|             |                 |        |
-| ----------- | --------------- | ------ |
-| **Warning** | **TaskFailure** | **No** |
+| Severity    | Status          | Audit Event |
+| ----------- | --------------- | ----------- |
+| **Warning** | **TaskFailure** | **No**      |
 
 AwsNativeRecoverDynamoDBSnapshotCreatedAndRemainingReplicasError
 
@@ -1380,11 +1152,9 @@ AwsNativeRecoverDynamoDBSnapshotCreatedAndRemainingReplicasError
 Failed to create replicas of DynamoDB table  ${recoveredTableName} in some regions due to an AWS  error. Created replicas in regions: [${createdReplicas}]. Remaining  replicas to be created in regions: [${remainingReplicas}]. Contact AWS support to create remaining replicas.
 ```
 
-Severity | Status | Audit Event | |
-
-|             |                 |        |
-| ----------- | --------------- | ------ |
-| **Warning** | **TaskFailure** | **No** |
+| Severity    | Status          | Audit Event |
+| ----------- | --------------- | ----------- |
+| **Warning** | **TaskFailure** | **No**      |
 
 AwsNativeRecoverDynamoDBSnapshotCreateGSIFailedAwsError
 
@@ -1392,11 +1162,9 @@ AwsNativeRecoverDynamoDBSnapshotCreateGSIFailedAwsError
 Failed to create GSI ${indexName} on the recovered DynamoDB table  ${recoveredTableName}. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|             |                 |        |
-| ----------- | --------------- | ------ |
-| **Warning** | **TaskFailure** | **No** |
+| Severity    | Status          | Audit Event |
+| ----------- | --------------- | ----------- |
+| **Warning** | **TaskFailure** | **No**      |
 
 AwsNativeRecoverDynamoDBSnapshotCreateGSISucceeded
 
@@ -1404,11 +1172,9 @@ AwsNativeRecoverDynamoDBSnapshotCreateGSISucceeded
 Successfully created GSI(s) ${indexNames} on the recovered DynamoDB  table ${recoveredTableName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 AwsNativeRecoverDynamoDBSnapshotCreateGSIWaitError
 
@@ -1416,11 +1182,9 @@ AwsNativeRecoverDynamoDBSnapshotCreateGSIWaitError
 An error occurred while waiting for AWS to create GSI ${indexName} on  the recovered DynamoDB table ${recoveredTableName}: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|             |                 |        |
-| ----------- | --------------- | ------ |
-| **Warning** | **TaskFailure** | **No** |
+| Severity    | Status          | Audit Event |
+| ----------- | --------------- | ----------- |
+| **Warning** | **TaskFailure** | **No**      |
 
 AwsNativeRecoverDynamoDBSnapshotCreateReplicaFailedAwsError
 
@@ -1428,11 +1192,9 @@ AwsNativeRecoverDynamoDBSnapshotCreateReplicaFailedAwsError
 Failed to create DynamoDB replica of table ${recoveredTableName} in  region ${replicaRegion}. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|             |                 |        |
-| ----------- | --------------- | ------ |
-| **Warning** | **TaskFailure** | **No** |
+| Severity    | Status          | Audit Event |
+| ----------- | --------------- | ----------- |
+| **Warning** | **TaskFailure** | **No**      |
 
 AwsNativeRecoverDynamoDBSnapshotCreateReplicasSucceeded
 
@@ -1440,11 +1202,9 @@ AwsNativeRecoverDynamoDBSnapshotCreateReplicasSucceeded
 Successfully created replica(s) of recovered DynamoDB table  ${recoveredTableName} in region(s) ${createdReplicas}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 AwsNativeRecoverDynamoDBSnapshotCreatingReplica
 
@@ -1452,11 +1212,9 @@ AwsNativeRecoverDynamoDBSnapshotCreatingReplica
 Creating replica of DynamoDB table ${recoveredTableName} in region  ${replicaRegion}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Running** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Running** | **No**      |
 
 AwsNativeRecoverDynamoDBSnapshotDataRecoveryCompleted
 
@@ -1464,11 +1222,9 @@ AwsNativeRecoverDynamoDBSnapshotDataRecoveryCompleted
 Successfully completed data recovery to ${recoveredTableName}  DynamoDB table. Started configuration of table settings and creation of  replicas and Global Secondary Indices (GSIs) as per snapshot data.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 AwsNativeRecoverDynamoDBSnapshotJobCanceled
 
@@ -1476,11 +1232,9 @@ AwsNativeRecoverDynamoDBSnapshotJobCanceled
 Canceled recovery of DynamoDB table ${sourceTableName} in region ${sourceRegion} and account ${awsAccountDisplayName} to  ${recoveredTableName} DynamoDB table in region ${destinationRegion} and account ${targetAwsAccountDisplayName} from snapshot  taken at ${snapshotCreationTime}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |              |        |
-| -------- | ------------ | ------ |
-| **Info** | **Canceled** | **No** |
+| Severity | Status       | Audit Event |
+| -------- | ------------ | ----------- |
+| **Info** | **Canceled** | **No**      |
 
 AwsNativeRecoverDynamoDBSnapshotJobCanceling
 
@@ -1488,11 +1242,9 @@ AwsNativeRecoverDynamoDBSnapshotJobCanceling
 Canceling recovery of DynamoDB table ${sourceTableName} in region ${sourceRegion} and account ${awsAccountDisplayName} to  ${recoveredTableName} DynamoDB table in region ${destinationRegion} and account ${targetAwsAccountDisplayName} from snapshot  taken at ${snapshotCreationTime}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |               |        |
-| -------- | ------------- | ------ |
-| **Info** | **Canceling** | **No** |
+| Severity | Status        | Audit Event |
+| -------- | ------------- | ----------- |
+| **Info** | **Canceling** | **No**      |
 
 AwsNativeRecoverDynamoDBSnapshotJobFailed
 
@@ -1500,11 +1252,9 @@ AwsNativeRecoverDynamoDBSnapshotJobFailed
 Failed to recover DynamoDB table ${sourceTableName} in region ${sourceRegion} and account ${awsAccountDisplayName} to  ${recoveredTableName} DynamoDB table in region ${destinationRegion} and account ${targetAwsAccountDisplayName} from snapshot  taken at ${snapshotCreationTime}. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Failure** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **No**      |
 
 AwsNativeRecoverDynamoDBSnapshotJobQueued
 
@@ -1512,11 +1262,9 @@ AwsNativeRecoverDynamoDBSnapshotJobQueued
 Queued recovery of DynamoDB table ${sourceTableName} in region ${sourceRegion} and account ${awsAccountDisplayName} to  ${recoveredTableName} DynamoDB table in region ${destinationRegion} and account ${targetAwsAccountDisplayName} from snapshot  taken at ${snapshotCreationTime}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |            |        |
-| -------- | ---------- | ------ |
-| **Info** | **Queued** | **No** |
+| Severity | Status     | Audit Event |
+| -------- | ---------- | ----------- |
+| **Info** | **Queued** | **No**      |
 
 AwsNativeRecoverDynamoDBSnapshotJobStarted
 
@@ -1524,11 +1272,9 @@ AwsNativeRecoverDynamoDBSnapshotJobStarted
 ${userEmail} started recovery of DynamoDB table ${sourceTableName} in region ${sourceRegion} and account ${awsAccountDisplayName} to  ${recoveredTableName} DynamoDB table in region ${destinationRegion} and account ${targetAwsAccountDisplayName} from snapshot  taken at ${snapshotCreationTime}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 AwsNativeRecoverDynamoDBSnapshotJobStarted
 
@@ -1536,11 +1282,9 @@ AwsNativeRecoverDynamoDBSnapshotJobStarted
 Started recovery of the ${sourceTableName} DynamoDB table.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 AwsNativeRecoverDynamoDBSnapshotJobStartFailed
 
@@ -1548,11 +1292,9 @@ AwsNativeRecoverDynamoDBSnapshotJobStartFailed
 ${userEmail} failed to start recovery of DynamoDB table  ${sourceTableName} in region ${sourceRegion} and account  ${awsAccountDisplayName} to ${recoveredTableName} DynamoDB table in  region ${destinationRegion} and account ${targetAwsAccountDisplayName}  from snapshot taken at ${snapshotCreationTime}. Failure reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |         |
-| ------------ | ----------- | ------- |
-| **Critical** | **Failure** | **Yes** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **Yes**     |
 
 AwsNativeRecoverDynamoDBSnapshotJobSucceeded
 
@@ -1560,11 +1302,9 @@ AwsNativeRecoverDynamoDBSnapshotJobSucceeded
 Successfully recovered DynamoDB table ${sourceTableName} in region ${sourceRegion} and account ${awsAccountDisplayName} to  ${recoveredTableName} DynamoDB table in region ${destinationRegion} and account ${targetAwsAccountDisplayName} from snapshot  taken at ${snapshotCreationTime}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 AwsNativeRecoverDynamoDBSnapshotPitrJobCanceled
 
@@ -1572,11 +1312,9 @@ AwsNativeRecoverDynamoDBSnapshotPitrJobCanceled
 Canceled point-in-time recovery of the ${sourceTableName} DynamoDB table in the ${sourceRegion} region to ${recoveredTableName} DynamoDB table in the ${awsAccountDisplayName} AWS account to time  ${recoveryTime} .
 ```
 
-Severity | Status | Audit Event | |
-
-|          |              |        |
-| -------- | ------------ | ------ |
-| **Info** | **Canceled** | **No** |
+| Severity | Status       | Audit Event |
+| -------- | ------------ | ----------- |
+| **Info** | **Canceled** | **No**      |
 
 AwsNativeRecoverDynamoDBSnapshotPitrJobCanceling
 
@@ -1584,11 +1322,9 @@ AwsNativeRecoverDynamoDBSnapshotPitrJobCanceling
 Canceling point-in-time recovery of the ${sourceTableName} DynamoDB  table in the ${sourceRegion} region to ${recoveredTableName}  DynamoDB table in the ${awsAccountDisplayName} AWS account to time  ${recoveryTime} .
 ```
 
-Severity | Status | Audit Event | |
-
-|          |               |        |
-| -------- | ------------- | ------ |
-| **Info** | **Canceling** | **No** |
+| Severity | Status        | Audit Event |
+| -------- | ------------- | ----------- |
+| **Info** | **Canceling** | **No**      |
 
 AwsNativeRecoverDynamoDBSnapshotPitrJobFailed
 
@@ -1596,11 +1332,9 @@ AwsNativeRecoverDynamoDBSnapshotPitrJobFailed
 Failed to recover the ${sourceTableName} DynamoDB table in the ${sourceRegion} region to ${recoveredTableName} DynamoDB table  in the ${awsAccountDisplayName} AWS account with point-in-time recovery operation to time ${recoveryTime}.  Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Failure** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **No**      |
 
 AwsNativeRecoverDynamoDBSnapshotPitrJobQueued
 
@@ -1608,11 +1342,9 @@ AwsNativeRecoverDynamoDBSnapshotPitrJobQueued
 Queued point-in-time recovery of the ${sourceTableName} DynamoDB table in the ${sourceRegion} region to ${recoveredTableName} DynamoDB table  in the ${awsAccountDisplayName} AWS account to time ${recoveryTime} .
 ```
 
-Severity | Status | Audit Event | |
-
-|          |            |        |
-| -------- | ---------- | ------ |
-| **Info** | **Queued** | **No** |
+| Severity | Status     | Audit Event |
+| -------- | ---------- | ----------- |
+| **Info** | **Queued** | **No**      |
 
 AwsNativeRecoverDynamoDBSnapshotPitrJobStarted
 
@@ -1620,11 +1352,9 @@ AwsNativeRecoverDynamoDBSnapshotPitrJobStarted
 ${userEmail} started point-in-time recovery of DynamoDB table ${sourceTableName} in region ${sourceRegion} region to  ${recoveredTableName} DynamoDB table on the AWS account  ${awsAccountDisplayName} to ${restoreTime} .
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 AwsNativeRecoverDynamoDBSnapshotPitrJobStarted
 
@@ -1632,11 +1362,9 @@ AwsNativeRecoverDynamoDBSnapshotPitrJobStarted
 Started point-in-time recovery of the ${sourceTableName} DynamoDB table.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 AwsNativeRecoverDynamoDBSnapshotPitrJobStartFailed
 
@@ -1644,11 +1372,9 @@ AwsNativeRecoverDynamoDBSnapshotPitrJobStartFailed
 ${userEmail} failed to start point-in-time recovery of DynamoDB table ${sourceTableName} in region ${sourceRegion} region to  ${recoveredTableName} DynamoDB table on the AWS account  ${awsAccountDisplayName} to ${restoreTime}. Failure reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |         |
-| ------------ | ----------- | ------- |
-| **Critical** | **Failure** | **Yes** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **Yes**     |
 
 AwsNativeRecoverDynamoDBSnapshotPitrJobSucceeded
 
@@ -1656,11 +1382,9 @@ AwsNativeRecoverDynamoDBSnapshotPitrJobSucceeded
 Recovery of the ${sourceTableName} DynamoDB table in the ${sourceRegion}  region to ${recoveredTableName} DynamoDB table in the  ${awsAccountDisplayName} AWS account with point-in-time recovery  operation to time ${recoveryTime} succeeded.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 AwsNativeRecoverDynamoDBSnapshotProgress
 
@@ -1668,11 +1392,9 @@ AwsNativeRecoverDynamoDBSnapshotProgress
 Recovery in Progress: ${processedDataMB} MB processed.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Running** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Running** | **No**      |
 
 AwsNativeRecoverDynamoDBSnapshotUpdateBillingModeError
 
@@ -1680,11 +1402,9 @@ AwsNativeRecoverDynamoDBSnapshotUpdateBillingModeError
 An error occurred while updating the billing for the recovered DynamoDB  table ${recoveredTableName}: ${reason}. Skipping updating the billing mode to ${billingMode}
 ```
 
-Severity | Status | Audit Event | |
-
-|             |                 |        |
-| ----------- | --------------- | ------ |
-| **Warning** | **TaskFailure** | **No** |
+| Severity    | Status          | Audit Event |
+| ----------- | --------------- | ----------- |
+| **Warning** | **TaskFailure** | **No**      |
 
 AwsNativeRecoverDynamoDBSnapshotUpdateDeletionProtectionError
 
@@ -1692,11 +1412,9 @@ AwsNativeRecoverDynamoDBSnapshotUpdateDeletionProtectionError
 An error occurred while enabling deletion protection on  the recovered DynamoDB table ${recoveredTableName}: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|             |                 |        |
-| ----------- | --------------- | ------ |
-| **Warning** | **TaskFailure** | **No** |
+| Severity    | Status          | Audit Event |
+| ----------- | --------------- | ----------- |
+| **Warning** | **TaskFailure** | **No**      |
 
 AwsNativeRecoverDynamoDBSnapshotUpdateStreamSpecificationError
 
@@ -1704,11 +1422,9 @@ AwsNativeRecoverDynamoDBSnapshotUpdateStreamSpecificationError
 An error occurred while updating the stream specification for the  recovered DynamoDB table ${recoveredTableName}: ${reason}. Skipping updating the stream view type to ${streamViewType}.
 ```
 
-Severity | Status | Audit Event | |
-
-|             |                 |        |
-| ----------- | --------------- | ------ |
-| **Warning** | **TaskFailure** | **No** |
+| Severity    | Status          | Audit Event |
+| ----------- | --------------- | ----------- |
+| **Warning** | **TaskFailure** | **No**      |
 
 AwsNativeRecoverDynamoDBSnapshotUpdateTableClassError
 
@@ -1716,11 +1432,9 @@ AwsNativeRecoverDynamoDBSnapshotUpdateTableClassError
 An error occurred while updating the table class for the recovered  DynamoDB table ${recoveredTableName}: ${reason}. Skipping updating the  table class to ${tableClass}.
 ```
 
-Severity | Status | Audit Event | |
-
-|             |                 |        |
-| ----------- | --------------- | ------ |
-| **Warning** | **TaskFailure** | **No** |
+| Severity    | Status          | Audit Event |
+| ----------- | --------------- | ----------- |
+| **Warning** | **TaskFailure** | **No**      |
 
 AwsNativeRecoverDynamoDBSnapshotUpdateTimeToLiveError
 
@@ -1728,11 +1442,9 @@ AwsNativeRecoverDynamoDBSnapshotUpdateTimeToLiveError
 An error occurred while updating the time to live settings for the  recovered DynamoDB table ${recoveredTableName}: ${reason}. Skipping enabling time to live on attribute ${attributeName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|             |                 |        |
-| ----------- | --------------- | ------ |
-| **Warning** | **TaskFailure** | **No** |
+| Severity    | Status          | Audit Event |
+| ----------- | --------------- | ----------- |
+| **Warning** | **TaskFailure** | **No**      |
 
 AwsNativeRecoverDynamoDBSnapshotWaitingOnCreateGSI
 
@@ -1740,11 +1452,9 @@ AwsNativeRecoverDynamoDBSnapshotWaitingOnCreateGSI
 Triggered creation of Global Secondary Index (GSI) ${indexName} on the  recovered DynamoDB table ${recoveredTableName}. Waiting for AWS to  finish creating the index.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Running** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Running** | **No**      |
 
 AwsNativeRecoverEC2InstanceWaitForHostAvailableTaskFailed
 
@@ -1752,11 +1462,9 @@ AwsNativeRecoverEC2InstanceWaitForHostAvailableTaskFailed
 Failed to retrieve status of AWS dedicated host ${dedicatedHostID} in region ${targetRegion} in the AWS account ${targetAwsAccountDisplayName}. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|             |                 |        |
-| ----------- | --------------- | ------ |
-| **Warning** | **TaskFailure** | **No** |
+| Severity    | Status          | Audit Event |
+| ----------- | --------------- | ----------- |
+| **Warning** | **TaskFailure** | **No**      |
 
 AwsNativeRecoverEC2InstanceWaitForHostAvailableTaskStarted
 
@@ -1764,11 +1472,9 @@ AwsNativeRecoverEC2InstanceWaitForHostAvailableTaskStarted
 Waiting for AWS dedicated host ${dedicatedHostID} in region ${targetRegion} in the AWS account ${targetAwsAccountDisplayName} to become available. For more details, refer to the AWS documentation at ${awsDocURL} .
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Running** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Running** | **No**      |
 
 AwsNativeRecoverEC2InstanceWaitForHostAvailableTaskSucceeded
 
@@ -1776,11 +1482,9 @@ AwsNativeRecoverEC2InstanceWaitForHostAvailableTaskSucceeded
 AWS dedicated host ${dedicatedHostID} in region ${targetRegion} in the AWS account ${targetAwsAccountDisplayName} is now available, proceeding to power on recovered instance.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 AwsNativeRecoverS3BucketPitrJobQueued
 
@@ -1788,11 +1492,9 @@ AwsNativeRecoverS3BucketPitrJobQueued
 Queued point-in-time recovery of the ${sourceBucketName} S3 Bucket in the ${sourceRegion} region to ${destinationBucketName} S3 Bucket  in the ${awsAccountDisplayName} AWS account to time ${restoreTime} .
 ```
 
-Severity | Status | Audit Event | |
-
-|          |            |        |
-| -------- | ---------- | ------ |
-| **Info** | **Queued** | **No** |
+| Severity | Status     | Audit Event |
+| -------- | ---------- | ----------- |
+| **Info** | **Queued** | **No**      |
 
 AwsNativeRecoverS3BucketPitrTaskCompletedPartially
 
@@ -1800,11 +1502,9 @@ AwsNativeRecoverS3BucketPitrTaskCompletedPartially
 Completed point-in-time recovery of the ${sourceBucketName} S3 bucket  in the ${sourceRegion} region to ${destinationBucketName} S3 bucket  in the ${awsAccountDisplayName} AWS account to time ${restoreTime}.  Successfully restored ${numRestoredSuccessful} object(s), unable to  restore ${numRestoredFailed} object(s).
 ```
 
-Severity | Status | Audit Event | |
-
-|             |                    |        |
-| ----------- | ------------------ | ------ |
-| **Warning** | **PartialSuccess** | **No** |
+| Severity    | Status             | Audit Event |
+| ----------- | ------------------ | ----------- |
+| **Warning** | **PartialSuccess** | **No**      |
 
 AwsNativeRecoverS3BucketPitrTaskFailed
 
@@ -1812,11 +1512,9 @@ AwsNativeRecoverS3BucketPitrTaskFailed
 Unable to perform point-in-time recovery of the ${sourceBucketName} S3  bucket in the ${sourceRegion} region to ${destinationBucketName} S3  bucket in the ${awsAccountDisplayName} AWS account at ${restoreTime}.  Unable to restore ${numRestoredFailed} object(s).
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Failure** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **No**      |
 
 AwsNativeRecoverS3BucketProgress
 
@@ -1824,11 +1522,9 @@ AwsNativeRecoverS3BucketProgress
 Recovery is in Progress: Successfully recovered: ${processedObjects} objects. Unable to recover: ${failedObjects} objects.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Running** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Running** | **No**      |
 
 AwsNativeRecoverS3BucketRecoveryInfo
 
@@ -1836,11 +1532,9 @@ AwsNativeRecoverS3BucketRecoveryInfo
 Recovery is in Progress: Successfully recovered: ${processedObjects} objects. Unable to recover: ${failedObjects} objects.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 AwsNativeRecoverS3BucketRecoverySummaryInfo
 
@@ -1848,11 +1542,9 @@ AwsNativeRecoverS3BucketRecoverySummaryInfo
 Download recovery failures report (the link is valid for 24 hours): ${gcsUrl}
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 AwsNativeRecoverS3SnapshotJobCanceled
 
@@ -1860,11 +1552,9 @@ AwsNativeRecoverS3SnapshotJobCanceled
 Canceled recovery of ${sourceBucketName} S3 Bucket in the ${sourceRegion} region in the ${sourceAwsAccountDisplayName} AWS account to ${destinationBucketName} S3 Bucket in the ${destinationAwsAccountDisplayName} AWS account from snapshot taken at ${snapshotCreationTime}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |              |        |
-| -------- | ------------ | ------ |
-| **Info** | **Canceled** | **No** |
+| Severity | Status       | Audit Event |
+| -------- | ------------ | ----------- |
+| **Info** | **Canceled** | **No**      |
 
 AwsNativeRecoverS3SnapshotJobCanceling
 
@@ -1872,11 +1562,9 @@ AwsNativeRecoverS3SnapshotJobCanceling
 Canceling recovery of ${sourceBucketName} S3 Bucket in the ${sourceRegion} region in ${sourceAwsAccountDisplayName} AWS account to ${destinationBucketName} S3 Bucket in the ${destinationAwsAccountDisplayName} AWS account from snapshot taken at ${snapshotCreationTime}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |               |        |
-| -------- | ------------- | ------ |
-| **Info** | **Canceling** | **No** |
+| Severity | Status        | Audit Event |
+| -------- | ------------- | ----------- |
+| **Info** | **Canceling** | **No**      |
 
 AwsNativeRecoverS3SnapshotJobFailed
 
@@ -1884,11 +1572,9 @@ AwsNativeRecoverS3SnapshotJobFailed
 Failed to recover ${sourceBucketName} S3 Bucket in the ${sourceRegion} region in the ${sourceAwsAccountDisplayName} AWS account to ${destinationBucketName} S3 Bucket in the ${destinationAwsAccountDisplayName} AWS account from snapshot taken at ${snapshotCreationTime}. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Failure** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **No**      |
 
 AwsNativeRecoverS3SnapshotJobQueued
 
@@ -1896,11 +1582,9 @@ AwsNativeRecoverS3SnapshotJobQueued
 Queued recovery of ${sourceBucketName} S3 Bucket in the ${sourceRegion} region in the ${sourceAwsAccountDisplayName} AWS account to ${destinationBucketName} S3 Bucket in the ${destinationAwsAccountDisplayName} AWS account from snapshot taken at ${snapshotCreationTime}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |            |        |
-| -------- | ---------- | ------ |
-| **Info** | **Queued** | **No** |
+| Severity | Status     | Audit Event |
+| -------- | ---------- | ----------- |
+| **Info** | **Queued** | **No**      |
 
 AwsNativeRecoverS3SnapshotJobStarted
 
@@ -1908,11 +1592,9 @@ AwsNativeRecoverS3SnapshotJobStarted
 ${userEmail} started recovery of ${sourceBucketName} S3 bucket in ${sourceRegion} region in ${sourceAwsAccountDisplayName} AWS account to ${destinationBucketName} S3 bucket in the ${destinationAwsAccountDisplayName} AWS account from the snapshot taken at ${snapshotCreationTime}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 AwsNativeRecoverS3SnapshotJobStarted
 
@@ -1920,11 +1602,9 @@ AwsNativeRecoverS3SnapshotJobStarted
 Started recovery of the ${sourceBucketName} S3 bucket.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 AwsNativeRecoverS3SnapshotJobStartFailed
 
@@ -1932,11 +1612,9 @@ AwsNativeRecoverS3SnapshotJobStartFailed
 ${userEmail} failed to start recovery of S3 bucket ${sourceBucketName} in region ${sourceRegion} in the ${sourceAwsAccountDisplayName} AWS account to ${destinationBucketName} S3 bucket on the ${destinationAwsAccountDisplayName} AWS account from snapshot taken at ${snapshotCreationTime}. Failure reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |         |
-| ------------ | ----------- | ------- |
-| **Critical** | **Failure** | **Yes** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **Yes**     |
 
 AwsNativeRecoverS3SnapshotJobSucceeded
 
@@ -1944,11 +1622,9 @@ AwsNativeRecoverS3SnapshotJobSucceeded
 Successfully recovered ${sourceBucketName} S3 Bucket in the ${sourceRegion} region in the ${sourceAwsAccountDisplayName} AWS account to ${destinationBucketName} S3 Bucket in the ${destinationAwsAccountDisplayName} AWS account from snapshot taken at ${snapshotCreationTime}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 AwsNativeRecoverS3SnapshotPitrJobCanceled
 
@@ -1956,11 +1632,9 @@ AwsNativeRecoverS3SnapshotPitrJobCanceled
 Canceled point-in-time recovery of the ${sourceBucketName} S3 bucket in the ${sourceRegion} region to ${destinationBucketName} S3 Bucket in the ${awsAccountDisplayName} AWS account to time  ${restoreTime} .
 ```
 
-Severity | Status | Audit Event | |
-
-|          |              |        |
-| -------- | ------------ | ------ |
-| **Info** | **Canceled** | **No** |
+| Severity | Status       | Audit Event |
+| -------- | ------------ | ----------- |
+| **Info** | **Canceled** | **No**      |
 
 AwsNativeRecoverS3SnapshotPitrJobCanceling
 
@@ -1968,11 +1642,9 @@ AwsNativeRecoverS3SnapshotPitrJobCanceling
 Canceling point-in-time recovery of the ${sourceBucketName} S3  Bucket in the ${sourceRegion} region to ${destinationBucketName}  S3 Bucket in the ${awsAccountDisplayName} AWS account to time  ${restoreTime} .
 ```
 
-Severity | Status | Audit Event | |
-
-|          |               |        |
-| -------- | ------------- | ------ |
-| **Info** | **Canceling** | **No** |
+| Severity | Status        | Audit Event |
+| -------- | ------------- | ----------- |
+| **Info** | **Canceling** | **No**      |
 
 AwsNativeRecoverS3SnapshotPitrJobFailed
 
@@ -1980,11 +1652,9 @@ AwsNativeRecoverS3SnapshotPitrJobFailed
 Failed to recover the ${sourceBucketName} S3 Bucket in the ${sourceRegion} region to ${destinationBucketName} S3 Bucket  in the ${awsAccountDisplayName} AWS account with point-in-time recovery operation to time ${restoreTime}.  Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Failure** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **No**      |
 
 AwsNativeRecoverS3SnapshotPitrJobStarted
 
@@ -1992,11 +1662,9 @@ AwsNativeRecoverS3SnapshotPitrJobStarted
 ${userEmail} started point-in-time recovery of S3 bucket ${sourceBucketName} in region ${sourceRegion} region to  ${destinationBucketName} S3 bucket on the AWS account  ${awsAccountDisplayName} to ${restoreTime} .
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 AwsNativeRecoverS3SnapshotPitrJobStarted
 
@@ -2004,11 +1672,9 @@ AwsNativeRecoverS3SnapshotPitrJobStarted
 Started point-in-time recovery of the ${sourceBucketName} S3 Bucket.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 AwsNativeRecoverS3SnapshotPitrJobStartFailed
 
@@ -2016,11 +1682,9 @@ AwsNativeRecoverS3SnapshotPitrJobStartFailed
 ${userEmail} failed to start point-in-time recovery of S3 bucket ${sourceBucketName} in region ${sourceRegion} region to  ${destinationBucketName} S3 bucket on the AWS account  ${awsAccountDisplayName} to ${restoreTime}. Failure reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |         |
-| ------------ | ----------- | ------- |
-| **Critical** | **Failure** | **Yes** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **Yes**     |
 
 AwsNativeRecoverS3SnapshotPitrJobSucceeded
 
@@ -2028,11 +1692,9 @@ AwsNativeRecoverS3SnapshotPitrJobSucceeded
 Recovery of the ${sourceBucketName} S3 Bucket in the ${sourceRegion}  region to ${destinationBucketName} S3 Bucket in the  ${awsAccountDisplayName} AWS account with point-in-time recovery  operation to time ${restoreTime} succeeded.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 AwsNativeRestoreEC2InstanceAttachVolumesTaskFailed
 
@@ -2040,11 +1702,9 @@ AwsNativeRestoreEC2InstanceAttachVolumesTaskFailed
 Failed to attach volumes ${volumeNativeIds} to EC2 instance ${instanceDisplayName} in region ${region} on AWS account ${awsAccountDisplayName}. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|             |                 |        |
-| ----------- | --------------- | ------ |
-| **Warning** | **TaskFailure** | **No** |
+| Severity    | Status          | Audit Event |
+| ----------- | --------------- | ----------- |
+| **Warning** | **TaskFailure** | **No**      |
 
 AwsNativeRestoreEC2InstanceAttachVolumesTaskStarted
 
@@ -2052,11 +1712,9 @@ AwsNativeRestoreEC2InstanceAttachVolumesTaskStarted
 Attaching volumes ${volumeNativeIds} to EC2 instance ${instanceDisplayName} in region ${region} on AWS account ${awsAccountDisplayName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Running** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Running** | **No**      |
 
 AwsNativeRestoreEC2InstanceAttachVolumesTaskSucceeded
 
@@ -2064,11 +1722,9 @@ AwsNativeRestoreEC2InstanceAttachVolumesTaskSucceeded
 Attached volumes ${volumeNativeIds} to EC2 instance ${instanceDisplayName} in region ${region} on AWS account ${awsAccountDisplayName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 AwsNativeRestoreEC2InstanceDetachVolumesTaskFailed
 
@@ -2076,11 +1732,9 @@ AwsNativeRestoreEC2InstanceDetachVolumesTaskFailed
 Failed to detach volumes ${volumeNativeIds} from EC2 instance ${instanceDisplayName} in region ${region} on AWS account ${awsAccountDisplayName}. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|             |                 |        |
-| ----------- | --------------- | ------ |
-| **Warning** | **TaskFailure** | **No** |
+| Severity    | Status          | Audit Event |
+| ----------- | --------------- | ----------- |
+| **Warning** | **TaskFailure** | **No**      |
 
 AwsNativeRestoreEC2InstanceDetachVolumesTaskStarted
 
@@ -2088,11 +1742,9 @@ AwsNativeRestoreEC2InstanceDetachVolumesTaskStarted
 Detaching volumes ${volumeNativeIds} from EC2 instance ${instanceDisplayName} in region ${region} on AWS account ${awsAccountDisplayName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Running** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Running** | **No**      |
 
 AwsNativeRestoreEC2InstanceDetachVolumesTaskSucceeded
 
@@ -2100,11 +1752,9 @@ AwsNativeRestoreEC2InstanceDetachVolumesTaskSucceeded
 Detached volumes ${volumeNativeIds} from EC2 instance ${instanceDisplayName} in region ${region} on AWS account ${awsAccountDisplayName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 AwsNativeRestoreEC2InstanceFromArchivedSnapshotJobQueued
 
@@ -2112,11 +1762,9 @@ AwsNativeRestoreEC2InstanceFromArchivedSnapshotJobQueued
 Queued restore of EC2 instance ${instanceDisplayName} from the snapshot taken on ${snapshotCreationTime} in region ${region} and archival location  ${archivalLocation} in AWS account ${awsAccountDisplayName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |            |        |
-| -------- | ---------- | ------ |
-| **Info** | **Queued** | **No** |
+| Severity | Status     | Audit Event |
+| -------- | ---------- | ----------- |
+| **Info** | **Queued** | **No**      |
 
 AwsNativeRestoreEC2InstanceFromArchivedSnapshotJobStarted
 
@@ -2124,11 +1772,9 @@ AwsNativeRestoreEC2InstanceFromArchivedSnapshotJobStarted
 Started restore of EC2 instance ${instanceDisplayName} from the snapshot taken on ${snapshotCreationTime} in region ${region} and archival location  ${archivalLocation} in AWS account ${awsAccountDisplayName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 AwsNativeRestoreEC2InstanceJobCanceled
 
@@ -2136,11 +1782,9 @@ AwsNativeRestoreEC2InstanceJobCanceled
 Canceled restore of EC2 instance ${instanceDisplayName} from the snapshot taken on ${snapshotCreationTime} in region ${region} on AWS account ${awsAccountDisplayName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |              |        |
-| -------- | ------------ | ------ |
-| **Info** | **Canceled** | **No** |
+| Severity | Status       | Audit Event |
+| -------- | ------------ | ----------- |
+| **Info** | **Canceled** | **No**      |
 
 AwsNativeRestoreEC2InstanceJobCanceling
 
@@ -2148,11 +1792,9 @@ AwsNativeRestoreEC2InstanceJobCanceling
 Canceling restore of EC2 instance ${instanceDisplayName} from the snapshot taken on ${snapshotCreationTime} in region ${region} on AWS account ${awsAccountDisplayName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |               |        |
-| -------- | ------------- | ------ |
-| **Info** | **Canceling** | **No** |
+| Severity | Status        | Audit Event |
+| -------- | ------------- | ----------- |
+| **Info** | **Canceling** | **No**      |
 
 AwsNativeRestoreEC2InstanceJobFailed
 
@@ -2160,11 +1802,9 @@ AwsNativeRestoreEC2InstanceJobFailed
 Failed to restore EC2 instance ${instanceDisplayName} from the snapshot taken on ${snapshotCreationTime} in region ${region} on AWS account ${awsAccountDisplayName}. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Failure** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **No**      |
 
 AwsNativeRestoreEC2InstanceJobQueued
 
@@ -2172,11 +1812,9 @@ AwsNativeRestoreEC2InstanceJobQueued
 Queued restore of EC2 instance ${instanceDisplayName} from the snapshot taken on ${snapshotCreationTime} in region ${region} on AWS account ${awsAccountDisplayName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |            |        |
-| -------- | ---------- | ------ |
-| **Info** | **Queued** | **No** |
+| Severity | Status     | Audit Event |
+| -------- | ---------- | ----------- |
+| **Info** | **Queued** | **No**      |
 
 AwsNativeRestoreEC2InstanceJobStarted
 
@@ -2184,11 +1822,9 @@ AwsNativeRestoreEC2InstanceJobStarted
 ${userEmail} started restore of EC2 instance ${instanceDisplayName} from the snapshot taken on ${snapshotCreationTime} in region ${region} on AWS account ${awsAccountDisplayName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 AwsNativeRestoreEC2InstanceJobStarted
 
@@ -2196,11 +1832,9 @@ AwsNativeRestoreEC2InstanceJobStarted
 Started restore of EC2 instance ${instanceDisplayName} from the snapshot taken on ${snapshotCreationTime} in region ${region} in AWS account  ${awsAccountDisplayName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 AwsNativeRestoreEC2InstanceJobStartFailed
 
@@ -2208,11 +1842,9 @@ AwsNativeRestoreEC2InstanceJobStartFailed
 ${userEmail} failed to start restore EC2 instance ${instanceDisplayName} from the snapshot taken on ${snapshotCreationTime} in region ${region} on AWS account ${awsAccountDisplayName}. Failure reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |         |
-| ------------ | ----------- | ------- |
-| **Critical** | **Failure** | **Yes** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **Yes**     |
 
 AwsNativeRestoreEC2InstanceJobSucceeded
 
@@ -2220,11 +1852,9 @@ AwsNativeRestoreEC2InstanceJobSucceeded
 Restore of EC2 instance ${instanceDisplayName} from the snapshot taken on ${snapshotCreationTime} in region ${region} succeeded on AWS account ${awsAccountDisplayName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 AwsNativeRestoreEC2InstanceLaunchVolumeTaskFailed
 
@@ -2232,11 +1862,9 @@ AwsNativeRestoreEC2InstanceLaunchVolumeTaskFailed
 Failed to launch volumes ${volumeNativeIds} in region ${region} on AWS account ${awsAccountDisplayName}. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|             |                 |        |
-| ----------- | --------------- | ------ |
-| **Warning** | **TaskFailure** | **No** |
+| Severity    | Status          | Audit Event |
+| ----------- | --------------- | ----------- |
+| **Warning** | **TaskFailure** | **No**      |
 
 AwsNativeRestoreEC2InstanceLaunchVolumeTaskStarted
 
@@ -2244,11 +1872,9 @@ AwsNativeRestoreEC2InstanceLaunchVolumeTaskStarted
 Launching new volumes from the snapshot taken on ${snapshotCreationTime} in region ${region} on AWS account ${awsAccountDisplayName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Running** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Running** | **No**      |
 
 AwsNativeRestoreEC2InstanceLaunchVolumeTaskSucceeded
 
@@ -2256,11 +1882,9 @@ AwsNativeRestoreEC2InstanceLaunchVolumeTaskSucceeded
 Launched new volumes ${volumeNativeIds} in region ${region} on AWS account ${awsAccountDisplayName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 AwsNativeRestoreEC2InstanceRestoreTagsTaskFailed
 
@@ -2268,11 +1892,9 @@ AwsNativeRestoreEC2InstanceRestoreTagsTaskFailed
 Failed to restore tags on EC2 instance ${instanceDisplayName}. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|             |                 |        |
-| ----------- | --------------- | ------ |
-| **Warning** | **TaskFailure** | **No** |
+| Severity    | Status          | Audit Event |
+| ----------- | --------------- | ----------- |
+| **Warning** | **TaskFailure** | **No**      |
 
 AwsNativeRestoreEC2InstanceRestoreTagsTaskStarted
 
@@ -2280,11 +1902,9 @@ AwsNativeRestoreEC2InstanceRestoreTagsTaskStarted
 Starting restore of tags.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Running** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Running** | **No**      |
 
 AwsNativeRestoreEC2InstanceRestoreTagsTaskSucceeded
 
@@ -2292,11 +1912,9 @@ AwsNativeRestoreEC2InstanceRestoreTagsTaskSucceeded
 Successfully restored tags.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 AwsNativeRestoreEC2InstanceStartInstanceTaskFailed
 
@@ -2304,11 +1922,9 @@ AwsNativeRestoreEC2InstanceStartInstanceTaskFailed
 Failed to start EC2 instance ${instanceDisplayName} in region ${region} on AWS account ${awsAccountDisplayName}. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|             |                 |        |
-| ----------- | --------------- | ------ |
-| **Warning** | **TaskFailure** | **No** |
+| Severity    | Status          | Audit Event |
+| ----------- | --------------- | ----------- |
+| **Warning** | **TaskFailure** | **No**      |
 
 AwsNativeRestoreEC2InstanceStartInstanceTaskStarted
 
@@ -2316,11 +1932,9 @@ AwsNativeRestoreEC2InstanceStartInstanceTaskStarted
 Starting EC2 instance ${instanceDisplayName} in region ${region} on AWS account ${awsAccountDisplayName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Running** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Running** | **No**      |
 
 AwsNativeRestoreEC2InstanceStartInstanceTaskSucceeded
 
@@ -2328,11 +1942,9 @@ AwsNativeRestoreEC2InstanceStartInstanceTaskSucceeded
 Started EC2 instance ${instanceDisplayName} in region ${region} on AWS account ${awsAccountDisplayName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 AwsNativeRestoreEC2InstanceStopInstanceTaskFailed
 
@@ -2340,11 +1952,9 @@ AwsNativeRestoreEC2InstanceStopInstanceTaskFailed
 Failed to power off EC2 instance ${instanceDisplayName} in region ${region} on AWS account ${awsAccountDisplayName}. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|             |                 |        |
-| ----------- | --------------- | ------ |
-| **Warning** | **TaskFailure** | **No** |
+| Severity    | Status          | Audit Event |
+| ----------- | --------------- | ----------- |
+| **Warning** | **TaskFailure** | **No**      |
 
 AwsNativeRestoreEC2InstanceStopInstanceTaskStarted
 
@@ -2352,11 +1962,9 @@ AwsNativeRestoreEC2InstanceStopInstanceTaskStarted
 Powering off EC2 instance ${instanceDisplayName} in region ${region} on AWS account ${awsAccountDisplayName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Running** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Running** | **No**      |
 
 AwsNativeRestoreEC2InstanceStopInstanceTaskSucceeded
 
@@ -2364,11 +1972,9 @@ AwsNativeRestoreEC2InstanceStopInstanceTaskSucceeded
 Powered off EC2 instance ${instanceDisplayName} in region ${region} on AWS account ${awsAccountDisplayName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 AwsNativeSnapshotMaterializeDiskTaskFailed
 
@@ -2376,11 +1982,9 @@ AwsNativeSnapshotMaterializeDiskTaskFailed
 Failed to create snapshot(s) of volume(s) of the archived snapshot in  region ${region} of account ${accountName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|             |                 |        |
-| ----------- | --------------- | ------ |
-| **Warning** | **TaskFailure** | **No** |
+| Severity    | Status          | Audit Event |
+| ----------- | --------------- | ----------- |
+| **Warning** | **TaskFailure** | **No**      |
 
 AwsNativeSnapshotMaterializeDiskTaskStarted
 
@@ -2388,11 +1992,9 @@ AwsNativeSnapshotMaterializeDiskTaskStarted
 Creating snapshot(s) of volume(s) of the archived snapshot in region ${region} of account ${accountName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Running** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Running** | **No**      |
 
 AwsNativeSnapshotMaterializeDiskTaskSucceeded
 
@@ -2400,11 +2002,9 @@ AwsNativeSnapshotMaterializeDiskTaskSucceeded
 Successfully created snapshot(s) of volume(s) of the archived snapshot in region ${region} of account ${accountName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 RefreshAwsNativeAccountJobQueued
 
@@ -2412,11 +2012,9 @@ RefreshAwsNativeAccountJobQueued
 Queued ${maintenanceType} refresh of AWS account ${awsAccountDisplayName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |            |        |
-| -------- | ---------- | ------ |
-| **Info** | **Queued** | **No** |
+| Severity | Status     | Audit Event |
+| -------- | ---------- | ----------- |
+| **Info** | **Queued** | **No**      |
 
 ## azuread
 
@@ -2428,11 +2026,9 @@ AzureAdFTRFailed
 Failed to complete Full Tenant Recovery for directory \"${adDirectory}\". ${reason}
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Failure** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **No**      |
 
 AzureADFTRProgressCompleted
 
@@ -2440,11 +2036,9 @@ AzureADFTRProgressCompleted
 Completed restoring ${attributeType} for ${objectType}. Processed ${processed} out of ${total} objects.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 AzureADFTRProgressRunning
 
@@ -2452,11 +2046,9 @@ AzureADFTRProgressRunning
 Restoring ${attributeType} for ${objectType}. Processed ${processed} out of ${total} objects.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Running** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Running** | **No**      |
 
 AzureAdFTRStarted
 
@@ -2464,11 +2056,9 @@ AzureAdFTRStarted
 Started Full Tenant Recovery for directory \"${adDirectory}\".
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 AzureAdFTRSummary
 
@@ -2476,11 +2066,9 @@ AzureAdFTRSummary
 Successfully completed Full Tenant Recovery for directory \"${adDirectory}\". Download recovery details (the link is valid for 24 hours): ${gcsUrl}
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 AzureADRecoveryJobCanceled
 
@@ -2488,11 +2076,9 @@ AzureADRecoveryJobCanceled
 Canceled recovery for directory \"${adDirectory}\".
 ```
 
-Severity | Status | Audit Event | |
-
-|          |              |        |
-| -------- | ------------ | ------ |
-| **Info** | **Canceled** | **No** |
+| Severity | Status       | Audit Event |
+| -------- | ------------ | ----------- |
+| **Info** | **Canceled** | **No**      |
 
 AzureADRecoveryJobCanceling
 
@@ -2500,11 +2086,9 @@ AzureADRecoveryJobCanceling
 Canceling recovery for directory \"${adDirectory}\".
 ```
 
-Severity | Status | Audit Event | |
-
-|          |               |        |
-| -------- | ------------- | ------ |
-| **Info** | **Canceling** | **No** |
+| Severity | Status        | Audit Event |
+| -------- | ------------- | ----------- |
+| **Info** | **Canceling** | **No**      |
 
 AzureADRecoveryJobFailed
 
@@ -2512,11 +2096,9 @@ AzureADRecoveryJobFailed
 Unable to recover directory \"${adDirectory}\".  Reason: ${reason}. ${remedy}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Failure** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **No**      |
 
 AzureADRecoveryJobQueued
 
@@ -2524,11 +2106,9 @@ AzureADRecoveryJobQueued
 Queued recovery for directory \"${adDirectory}\".
 ```
 
-Severity | Status | Audit Event | |
-
-|          |            |        |
-| -------- | ---------- | ------ |
-| **Info** | **Queued** | **No** |
+| Severity | Status     | Audit Event |
+| -------- | ---------- | ----------- |
+| **Info** | **Queued** | **No**      |
 
 AzureADRecoveryJobStarted
 
@@ -2536,11 +2116,9 @@ AzureADRecoveryJobStarted
 Started recovery for directory \"${adDirectory}\".
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 AzureADRecoveryJobSucceeded
 
@@ -2548,11 +2126,9 @@ AzureADRecoveryJobSucceeded
 Successfully recovered directory \"${adDirectory}\".
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 AzureADRestoreFailedSummary
 
@@ -2560,11 +2136,9 @@ AzureADRestoreFailedSummary
 Recovery for directory \"${adDirectory}\"\x20 has completed. Attempted to restore ${total} objects. Successfully restored ${totalRestored} objects. ${fullyDeleted} restored objects have a new UUID that is different from the original object UUID. Failed to read ${readFailed} objects from the snapshot. Failed to create ${createFailed} objects.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Failure** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **No**      |
 
 AzureADRestoreSummary
 
@@ -2572,11 +2146,9 @@ AzureADRestoreSummary
 Recovery for directory \"${adDirectory}\"\x20 has completed. Attempted to restore ${total} objects. Successfully restored ${totalRestored} objects. ${fullyDeleted} restored objects have a new UUID that is different from the original object UUID. Download recovery details (the link is valid for 24 hours): ${gcsUrl}
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 ## azurenative
 
@@ -2588,11 +2160,9 @@ AzureNativeArchiveTierRehydrationStarted
 Started rehydration of archived data from ${sourceContainer} container  to ${destinationContainer} container in ${storageAccount} storage account.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Running** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Running** | **No**      |
 
 AzureNativeArchiveTierRehydrationSucceeded
 
@@ -2600,11 +2170,9 @@ AzureNativeArchiveTierRehydrationSucceeded
 Successfully rehydrated archived data from ${sourceContainer} container  to ${destinationContainer} container in ${storageAccount} storage account.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 AzureNativeCreateNewStorageAccountTaskStarted
 
@@ -2612,11 +2180,9 @@ AzureNativeCreateNewStorageAccountTaskStarted
 Started creating storage account with name: ${storageAccountName} in resource group: ${resourceGroupName}, subscription:${subscriptionName},  region: ${regionName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Running** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Running** | **No**      |
 
 AzureNativeCreateStorageAccountTaskFailed
 
@@ -2624,11 +2190,9 @@ AzureNativeCreateStorageAccountTaskFailed
 Failed to create storage account with name: ${storageAccountName} in resource group: ${resourceGroupName}, subscription:${subscriptionName}, region: ${regionName}. Reason: ${reason}
 ```
 
-Severity | Status | Audit Event | |
-
-|             |                 |        |
-| ----------- | --------------- | ------ |
-| **Warning** | **TaskFailure** | **No** |
+| Severity    | Status          | Audit Event |
+| ----------- | --------------- | ----------- |
+| **Warning** | **TaskFailure** | **No**      |
 
 AzureNativeCreateStorageAccountTaskSucceeded
 
@@ -2636,11 +2200,9 @@ AzureNativeCreateStorageAccountTaskSucceeded
 Successfully created storage account with name: ${storageAccountName} in resource group: ${resourceGroupName}, subscription:${subscriptionName}, region: ${regionName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 AzureNativeDatabaseCreationTaskFailed
 
@@ -2648,11 +2210,9 @@ AzureNativeDatabaseCreationTaskFailed
 Failed creating an empty database ${databaseDisplayName} in server ${serverDisplayName} and region ${region}. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |                 |        |
-| ------------ | --------------- | ------ |
-| **Critical** | **TaskFailure** | **No** |
+| Severity     | Status          | Audit Event |
+| ------------ | --------------- | ----------- |
+| **Critical** | **TaskFailure** | **No**      |
 
 AzureNativeDatabaseCreationTaskStarted
 
@@ -2660,11 +2220,9 @@ AzureNativeDatabaseCreationTaskStarted
 Creating an empty database ${databaseDisplayName} in server ${serverDisplayName} and region ${region}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 AzureNativeDatabaseCreationTaskSuceeded
 
@@ -2672,11 +2230,9 @@ AzureNativeDatabaseCreationTaskSuceeded
 Successfully created an empty database ${databaseDisplayName} in server ${serverDisplayName} and region ${region}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 AzureNativeDatabaseRecoveryTaskFailed
 
@@ -2684,11 +2240,9 @@ AzureNativeDatabaseRecoveryTaskFailed
 Failed recovery to database ${databaseDisplayName} in server ${serverDisplayName} and region ${region}. Please delete this database from Azure. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |                 |        |
-| ------------ | --------------- | ------ |
-| **Critical** | **TaskFailure** | **No** |
+| Severity     | Status          | Audit Event |
+| ------------ | --------------- | ----------- |
+| **Critical** | **TaskFailure** | **No**      |
 
 AzureNativeDatabaseRecoveryTaskStarted
 
@@ -2696,11 +2250,9 @@ AzureNativeDatabaseRecoveryTaskStarted
 Starting recovery to database ${databaseDisplayName} in server ${serverDisplayName} and region ${region}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 AzureNativeDatabaseRecoveryTaskSuceeded
 
@@ -2708,11 +2260,9 @@ AzureNativeDatabaseRecoveryTaskSuceeded
 Successfully recovered to database ${databaseDisplayName} in server ${serverDisplayName} and region ${region}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 AzureNativeExportDatabaseCanceled
 
@@ -2720,11 +2270,9 @@ AzureNativeExportDatabaseCanceled
 Canceled ${restoreType} export of the ${sourceDatabaseName} ${databaseType} to ${destinationDatabaseName} ${databaseType} in the ${destinationServerName} ${serverType}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |              |        |
-| -------- | ------------ | ------ |
-| **Info** | **Canceled** | **No** |
+| Severity | Status       | Audit Event |
+| -------- | ------------ | ----------- |
+| **Info** | **Canceled** | **No**      |
 
 AzureNativeExportDatabaseCanceling
 
@@ -2732,11 +2280,9 @@ AzureNativeExportDatabaseCanceling
 Canceling ${restoreType} export of the ${sourceDatabaseName} ${databaseType} to ${destinationDatabaseName} ${databaseType} in the ${destinationServerName} ${serverType}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |               |        |
-| -------- | ------------- | ------ |
-| **Info** | **Canceling** | **No** |
+| Severity | Status        | Audit Event |
+| -------- | ------------- | ----------- |
+| **Info** | **Canceling** | **No**      |
 
 AzureNativeExportDatabaseFailed
 
@@ -2744,11 +2290,9 @@ AzureNativeExportDatabaseFailed
 Failed ${restoreType} export of the ${sourceDatabaseName} ${databaseType} to ${destinationDatabaseName} ${databaseType} in the ${destinationServerName} ${serverType}. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Failure** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **No**      |
 
 AzureNativeExportDatabaseQueued
 
@@ -2756,11 +2300,9 @@ AzureNativeExportDatabaseQueued
 Queued ${restoreType} export of the ${sourceDatabaseName} ${databaseType} to ${destinationDatabaseName} ${databaseType} in the ${destinationServerName} ${serverType}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |            |        |
-| -------- | ---------- | ------ |
-| **Info** | **Queued** | **No** |
+| Severity | Status     | Audit Event |
+| -------- | ---------- | ----------- |
+| **Info** | **Queued** | **No**      |
 
 AzureNativeExportDatabaseStarted
 
@@ -2768,11 +2310,9 @@ AzureNativeExportDatabaseStarted
 ${userEmail} started ${restoreType} export of the ${databaseType} ${databaseName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 AzureNativeExportDatabaseStarted
 
@@ -2780,11 +2320,9 @@ AzureNativeExportDatabaseStarted
 Started ${restoreType} export of the ${sourceDatabaseName} ${databaseType} to ${destinationDatabaseName} ${databaseType} in the ${destinationServerName} ${serverType}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 AzureNativeExportDatabaseStartFailed
 
@@ -2792,11 +2330,9 @@ AzureNativeExportDatabaseStartFailed
 ${userEmail} failed to start ${restoreType} export of the ${databaseType} ${databaseName}. Failure reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |         |
-| ------------ | ----------- | ------- |
-| **Critical** | **Failure** | **Yes** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **Yes**     |
 
 AzureNativeExportDatabaseSucceeded
 
@@ -2804,11 +2340,9 @@ AzureNativeExportDatabaseSucceeded
 Successfully finished ${restoreType} export of the ${sourceDatabaseName} ${databaseType} to ${destinationDatabaseName} ${databaseType} in the ${destinationServerName} ${serverType}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 AzureNativeExportDatabaseSucceededWithDisabledUsers
 
@@ -2816,11 +2350,9 @@ AzureNativeExportDatabaseSucceededWithDisabledUsers
 Successfully finished ${restoreType} export of the ${sourceDatabaseName} ${databaseType} to ${destinationDatabaseName} ${databaseType} in the ${destinationServerName} ${serverType}. However, following users were explicitly created as disabled users: ${disabledUsers}. For more information please visit https://support.rubrik.com/articles/How_To/TODO
 ```
 
-Severity | Status | Audit Event | |
-
-|             |             |        |
-| ----------- | ----------- | ------ |
-| **Warning** | **Success** | **No** |
+| Severity    | Status      | Audit Event |
+| ----------- | ----------- | ----------- |
+| **Warning** | **Success** | **No**      |
 
 AzureNativeExportDbSuccessWithLoginDeletionFailed
 
@@ -2828,11 +2360,9 @@ AzureNativeExportDbSuccessWithLoginDeletionFailed
 Successfully recovered to database ${databaseDisplayName} in server ${serverDisplayName} and region ${region}. Unable to delete the temporary login user ${user} in database ${db}. Manual deletion is required.
 ```
 
-Severity | Status | Audit Event | |
-
-|             |             |        |
-| ----------- | ----------- | ------ |
-| **Warning** | **Success** | **No** |
+| Severity    | Status      | Audit Event |
+| ----------- | ----------- | ----------- |
+| **Warning** | **Success** | **No**      |
 
 AzureNativeExportDiskFromArchivedSnapshotJobQueued
 
@@ -2840,11 +2370,9 @@ AzureNativeExportDiskFromArchivedSnapshotJobQueued
 Queued export of disk ${diskDisplayName} in region ${region} and subscription ${destSubscriptionDisplayName} from the snapshot taken at ${snapshotTimeDisplay} in  archival location ${archivalLocation}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |            |        |
-| -------- | ---------- | ------ |
-| **Info** | **Queued** | **No** |
+| Severity | Status     | Audit Event |
+| -------- | ---------- | ----------- |
+| **Info** | **Queued** | **No**      |
 
 AzureNativeExportDiskFromArchivedSnapshotJobStarted
 
@@ -2852,11 +2380,9 @@ AzureNativeExportDiskFromArchivedSnapshotJobStarted
 Started export of disk ${diskDisplayName} in region ${region} and subscription ${destSubscriptionDisplayName} from the snapshot taken at ${snapshotTimeDisplay} in  archival location ${archivalLocation}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 AzureNativeExportDiskSnapshotAttachDiskOsDiskTaskFailed
 
@@ -2864,11 +2390,9 @@ AzureNativeExportDiskSnapshotAttachDiskOsDiskTaskFailed
 Failed to swap OS disk of the ${vmDisplayName} virtual machine. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|             |                 |        |
-| ----------- | --------------- | ------ |
-| **Warning** | **TaskFailure** | **No** |
+| Severity    | Status          | Audit Event |
+| ----------- | --------------- | ----------- |
+| **Warning** | **TaskFailure** | **No**      |
 
 AzureNativeExportDiskSnapshotAttachDiskOsDiskTaskStarted
 
@@ -2876,11 +2400,9 @@ AzureNativeExportDiskSnapshotAttachDiskOsDiskTaskStarted
 Swapping OS disk of the ${vmDisplayName} virtual machine.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Running** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Running** | **No**      |
 
 AzureNativeExportDiskSnapshotAttachDiskOsDiskTaskSucceeded
 
@@ -2888,11 +2410,9 @@ AzureNativeExportDiskSnapshotAttachDiskOsDiskTaskSucceeded
 Swapped OS disk of the ${vmDisplayName} virtual machine.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 AzureNativeExportDiskSnapshotAttachDiskTaskFailed
 
@@ -2900,11 +2420,9 @@ AzureNativeExportDiskSnapshotAttachDiskTaskFailed
 Failed to attach disk with LUN ${lun} to the ${vmDisplayName} virtual machine. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|             |                 |        |
-| ----------- | --------------- | ------ |
-| **Warning** | **TaskFailure** | **No** |
+| Severity    | Status          | Audit Event |
+| ----------- | --------------- | ----------- |
+| **Warning** | **TaskFailure** | **No**      |
 
 AzureNativeExportDiskSnapshotAttachDiskTaskStarted
 
@@ -2912,11 +2430,9 @@ AzureNativeExportDiskSnapshotAttachDiskTaskStarted
 Attaching disk with LUN ${lun} to the ${vmDisplayName} virtual machine.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Running** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Running** | **No**      |
 
 AzureNativeExportDiskSnapshotAttachDiskTaskSucceeded
 
@@ -2924,11 +2440,9 @@ AzureNativeExportDiskSnapshotAttachDiskTaskSucceeded
 Attached disk with LUN ${lun} to the ${vmDisplayName} virtual machine.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 AzureNativeExportDiskSnapshotCreateDiskTaskFailed
 
@@ -2936,11 +2450,9 @@ AzureNativeExportDiskSnapshotCreateDiskTaskFailed
 Failed to create new disk in the ${region} region from the snapshot taken at ${snapshotTimeDisplay}. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|             |                 |        |
-| ----------- | --------------- | ------ |
-| **Warning** | **TaskFailure** | **No** |
+| Severity    | Status          | Audit Event |
+| ----------- | --------------- | ----------- |
+| **Warning** | **TaskFailure** | **No**      |
 
 AzureNativeExportDiskSnapshotCreateDiskTaskStarted
 
@@ -2948,11 +2460,9 @@ AzureNativeExportDiskSnapshotCreateDiskTaskStarted
 Creating new disk in the ${region} region from the snapshot taken at ${snapshotTimeDisplay}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Running** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Running** | **No**      |
 
 AzureNativeExportDiskSnapshotCreateDiskTaskSucceeded
 
@@ -2960,11 +2470,9 @@ AzureNativeExportDiskSnapshotCreateDiskTaskSucceeded
 Created new disk in the ${region} region from the snapshot taken at ${snapshotTimeDisplay}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 AzureNativeExportDiskSnapshotDetachDiskTaskFailed
 
@@ -2972,11 +2480,9 @@ AzureNativeExportDiskSnapshotDetachDiskTaskFailed
 Failed to detach disks with LUN ${lun} from the ${vmDisplayName} virtual machine. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|             |                 |        |
-| ----------- | --------------- | ------ |
-| **Warning** | **TaskFailure** | **No** |
+| Severity    | Status          | Audit Event |
+| ----------- | --------------- | ----------- |
+| **Warning** | **TaskFailure** | **No**      |
 
 AzureNativeExportDiskSnapshotDetachDiskTaskStarted
 
@@ -2984,11 +2490,9 @@ AzureNativeExportDiskSnapshotDetachDiskTaskStarted
 Detaching disk with LUN ${lun} from the ${vmDisplayName} virtual machine.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Running** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Running** | **No**      |
 
 AzureNativeExportDiskSnapshotDetachDiskTaskSucceeded
 
@@ -2996,11 +2500,9 @@ AzureNativeExportDiskSnapshotDetachDiskTaskSucceeded
 Detached disk with LUN ${lun} from the ${vmDisplayName} virtual machine.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 AzureNativeExportDiskSnapshotJobCanceled
 
@@ -3008,11 +2510,9 @@ AzureNativeExportDiskSnapshotJobCanceled
 Canceled export of the ${diskDisplayName} disk in the ${region} region and ${destSubscriptionDisplayName} subscription from the snapshot taken at ${snapshotTimeDisplay}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |              |        |
-| -------- | ------------ | ------ |
-| **Info** | **Canceled** | **No** |
+| Severity | Status       | Audit Event |
+| -------- | ------------ | ----------- |
+| **Info** | **Canceled** | **No**      |
 
 AzureNativeExportDiskSnapshotJobCanceling
 
@@ -3020,11 +2520,9 @@ AzureNativeExportDiskSnapshotJobCanceling
 Canceling export of the ${diskDisplayName} disk in the ${region} region and ${destSubscriptionDisplayName} subscription from the snapshot taken at ${snapshotTimeDisplay}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |               |        |
-| -------- | ------------- | ------ |
-| **Info** | **Canceling** | **No** |
+| Severity | Status        | Audit Event |
+| -------- | ------------- | ----------- |
+| **Info** | **Canceling** | **No**      |
 
 AzureNativeExportDiskSnapshotJobFailed
 
@@ -3032,11 +2530,9 @@ AzureNativeExportDiskSnapshotJobFailed
 Failed to export the ${diskDisplayName} disk in the ${region} region and ${destSubscriptionDisplayName} subscription from the snapshot taken at ${snapshotTimeDisplay}. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Failure** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **No**      |
 
 AzureNativeExportDiskSnapshotJobQueued
 
@@ -3044,11 +2540,9 @@ AzureNativeExportDiskSnapshotJobQueued
 Queued export of the ${diskDisplayName} disk in the ${region} region and ${destSubscriptionDisplayName} subscription from the snapshot taken at ${snapshotTimeDisplay}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |            |        |
-| -------- | ---------- | ------ |
-| **Info** | **Queued** | **No** |
+| Severity | Status     | Audit Event |
+| -------- | ---------- | ----------- |
+| **Info** | **Queued** | **No**      |
 
 AzureNativeExportDiskSnapshotJobStarted
 
@@ -3056,11 +2550,9 @@ AzureNativeExportDiskSnapshotJobStarted
 ${userEmail} started export of the ${diskDisplayName} Azure disk in the ${region} region and ${destSubscriptionDisplayName} subscription from the snapshot taken at ${snapshotTimeDisplay}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 AzureNativeExportDiskSnapshotJobStarted
 
@@ -3068,11 +2560,9 @@ AzureNativeExportDiskSnapshotJobStarted
 Started export of the ${diskDisplayName} disk in the ${region} region and ${destSubscriptionDisplayName} subscription from the snapshot taken at ${snapshotTimeDisplay}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 AzureNativeExportDiskSnapshotJobStartFailed
 
@@ -3080,11 +2570,9 @@ AzureNativeExportDiskSnapshotJobStartFailed
 ${userEmail} failed to start export of the ${diskDisplayName} Azure disk in the ${region} region and ${destSubscriptionDisplayName} subscription from the snapshot taken at ${snapshotTimeDisplay}. Failure reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |         |
-| ------------ | ----------- | ------- |
-| **Critical** | **Failure** | **Yes** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **Yes**     |
 
 AzureNativeExportDiskSnapshotJobSucceeded
 
@@ -3092,11 +2580,9 @@ AzureNativeExportDiskSnapshotJobSucceeded
 Export of the ${diskDisplayName} disk in the ${region} region and ${destSubscriptionDisplayName} subscription from the snapshot taken at ${snapshotTimeDisplay} succeeded.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 AzureNativeExportVMCreateSnapshotDisksTaskFailed
 
@@ -3104,11 +2590,9 @@ AzureNativeExportVMCreateSnapshotDisksTaskFailed
 Failed to create new disks in the ${region} region from the snapshot taken at ${snapshotTimeDisplay} for ${vmDisplayName} export. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|             |                 |        |
-| ----------- | --------------- | ------ |
-| **Warning** | **TaskFailure** | **No** |
+| Severity    | Status          | Audit Event |
+| ----------- | --------------- | ----------- |
+| **Warning** | **TaskFailure** | **No**      |
 
 AzureNativeExportVMCreateSnapshotDisksTaskStarted
 
@@ -3116,11 +2600,9 @@ AzureNativeExportVMCreateSnapshotDisksTaskStarted
 Creating new disks in the ${region} region from the snapshot taken at ${snapshotTimeDisplay} for ${vmDisplayName} export.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Running** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Running** | **No**      |
 
 AzureNativeExportVMCreateSnapshotDisksTaskSucceeded
 
@@ -3128,11 +2610,9 @@ AzureNativeExportVMCreateSnapshotDisksTaskSucceeded
 Created new disks in the ${region} region from the snapshot taken at ${snapshotTimeDisplay} for ${vmDisplayName} export.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 AzureNativeExportVMCreateVMTaskFailed
 
@@ -3140,11 +2620,9 @@ AzureNativeExportVMCreateVMTaskFailed
 Failed to create the ${vmDisplayName} virtual machine in the ${region} region. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|             |                 |        |
-| ----------- | --------------- | ------ |
-| **Warning** | **TaskFailure** | **No** |
+| Severity    | Status          | Audit Event |
+| ----------- | --------------- | ----------- |
+| **Warning** | **TaskFailure** | **No**      |
 
 AzureNativeExportVMCreateVMTaskStarted
 
@@ -3152,11 +2630,9 @@ AzureNativeExportVMCreateVMTaskStarted
 Creating the ${vmDisplayName} virtual machine in the ${region} region.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Running** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Running** | **No**      |
 
 AzureNativeExportVMCreateVMTaskSucceeded
 
@@ -3164,11 +2640,9 @@ AzureNativeExportVMCreateVMTaskSucceeded
 Created the ${vmDisplayName} virtual machine in the ${region} region.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 AzureNativeExportVMEnableEncryptionTaskFailed
 
@@ -3176,11 +2650,9 @@ AzureNativeExportVMEnableEncryptionTaskFailed
 Failed to enable encryption for the ${vmDisplayName} virtual machine. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|             |                 |        |
-| ----------- | --------------- | ------ |
-| **Warning** | **TaskFailure** | **No** |
+| Severity    | Status          | Audit Event |
+| ----------- | --------------- | ----------- |
+| **Warning** | **TaskFailure** | **No**      |
 
 AzureNativeExportVMEnableEncryptionTaskSkipped
 
@@ -3188,11 +2660,9 @@ AzureNativeExportVMEnableEncryptionTaskSkipped
 Cannot enable encryption for the ${vmDisplayName} virtual machine.  You can enable manually ADE for an exported virtual machine.
 ```
 
-Severity | Status | Audit Event | |
-
-|             |                 |        |
-| ----------- | --------------- | ------ |
-| **Warning** | **TaskSuccess** | **No** |
+| Severity    | Status          | Audit Event |
+| ----------- | --------------- | ----------- |
+| **Warning** | **TaskSuccess** | **No**      |
 
 AzureNativeExportVMEnableEncryptionTaskStarted
 
@@ -3200,11 +2670,9 @@ AzureNativeExportVMEnableEncryptionTaskStarted
 Enabling encryption for the ${vmDisplayName} virtual machine.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Running** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Running** | **No**      |
 
 AzureNativeExportVMEnableEncryptionTaskSucceeded
 
@@ -3212,11 +2680,9 @@ AzureNativeExportVMEnableEncryptionTaskSucceeded
 Enabled encryption for the ${vmDisplayName} virtual machine.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 AzureNativeExportVMFromArchivedSnapshotJobQueued
 
@@ -3224,11 +2690,9 @@ AzureNativeExportVMFromArchivedSnapshotJobQueued
 Queued export of virtual machine ${vmDisplayName} in region ${region} and subscription ${destSubscriptionDisplayName} from the snapshot taken at ${snapshotTimeDisplay} in  archival location ${archivalLocation}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |            |        |
-| -------- | ---------- | ------ |
-| **Info** | **Queued** | **No** |
+| Severity | Status     | Audit Event |
+| -------- | ---------- | ----------- |
+| **Info** | **Queued** | **No**      |
 
 AzureNativeExportVMFromArchivedSnapshotJobStarted
 
@@ -3236,11 +2700,9 @@ AzureNativeExportVMFromArchivedSnapshotJobStarted
 Started export of virtual machine ${vmDisplayName} in region ${region} and subscription ${destSubscriptionDisplayName} from the snapshot taken at ${snapshotTimeDisplay} in  archival location ${archivalLocation}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 AzureNativeExportVMJobCanceled
 
@@ -3248,11 +2710,9 @@ AzureNativeExportVMJobCanceled
 Canceled export of the ${vmDisplayName} virtual machine in the ${region} region and ${destSubscriptionDisplayName} subscription from the snapshot taken at ${snapshotTimeDisplay}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |              |        |
-| -------- | ------------ | ------ |
-| **Info** | **Canceled** | **No** |
+| Severity | Status       | Audit Event |
+| -------- | ------------ | ----------- |
+| **Info** | **Canceled** | **No**      |
 
 AzureNativeExportVMJobCanceling
 
@@ -3260,11 +2720,9 @@ AzureNativeExportVMJobCanceling
 Canceling export of the ${vmDisplayName} virtual machine in the ${region} region and ${destSubscriptionDisplayName} subscription from the snapshot taken at ${snapshotTimeDisplay}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |               |        |
-| -------- | ------------- | ------ |
-| **Info** | **Canceling** | **No** |
+| Severity | Status        | Audit Event |
+| -------- | ------------- | ----------- |
+| **Info** | **Canceling** | **No**      |
 
 AzureNativeExportVMJobFailed
 
@@ -3272,11 +2730,9 @@ AzureNativeExportVMJobFailed
 Failed to export the ${vmDisplayName} virtual machine in the ${region} region and ${destSubscriptionDisplayName} subscription from the snapshot taken at ${snapshotTimeDisplay}. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Failure** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **No**      |
 
 AzureNativeExportVMJobQueued
 
@@ -3284,11 +2740,9 @@ AzureNativeExportVMJobQueued
 Queued export of the ${vmDisplayName} virtual machine in the ${region} region and ${destSubscriptionDisplayName} subscription from the snapshot taken at ${snapshotTimeDisplay}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |            |        |
-| -------- | ---------- | ------ |
-| **Info** | **Queued** | **No** |
+| Severity | Status     | Audit Event |
+| -------- | ---------- | ----------- |
+| **Info** | **Queued** | **No**      |
 
 AzureNativeExportVMJobStarted
 
@@ -3296,11 +2750,9 @@ AzureNativeExportVMJobStarted
 ${userEmail} started export of the ${vmDisplayName} Azure virtual machine in the ${region} region and ${destSubscriptionDisplayName} subscription from the snapshot taken at ${snapshotTimeDisplay}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 AzureNativeExportVMJobStarted
 
@@ -3308,11 +2760,9 @@ AzureNativeExportVMJobStarted
 Started export of the ${vmDisplayName} virtual machine in the ${region} region and ${destSubscriptionDisplayName} subscription from the snapshot taken at ${snapshotTimeDisplay}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 AzureNativeExportVMJobStartFailed
 
@@ -3320,11 +2770,9 @@ AzureNativeExportVMJobStartFailed
 ${userEmail} failed to start export of the ${vmDisplayName} Azure virtual machine in the ${region} region and ${destSubscriptionDisplayName} subscription from the snapshot taken at ${snapshotTimeDisplay}. Failure reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |         |
-| ------------ | ----------- | ------- |
-| **Critical** | **Failure** | **Yes** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **Yes**     |
 
 AzureNativeExportVMJobSucceeded
 
@@ -3332,11 +2780,9 @@ AzureNativeExportVMJobSucceeded
 Export of the ${vmDisplayName} virtual machine in the ${region} region and ${destSubscriptionDisplayName} subscription from the snapshot taken at ${snapshotTimeDisplay} succeeded.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 AzureNativeMountDiskJobCanceled
 
@@ -3344,11 +2790,9 @@ AzureNativeMountDiskJobCanceled
 Canceled mounting disks on the ${vmDisplayName} virtual machine in the ${region} region from the snapshot taken at ${snapshotTimeDisplay} in the ${subscriptionDisplayName} subscription.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |              |        |
-| -------- | ------------ | ------ |
-| **Info** | **Canceled** | **No** |
+| Severity | Status       | Audit Event |
+| -------- | ------------ | ----------- |
+| **Info** | **Canceled** | **No**      |
 
 AzureNativeMountDiskJobCanceling
 
@@ -3356,11 +2800,9 @@ AzureNativeMountDiskJobCanceling
 Canceling mounting disks on the ${vmDisplayName} virtual machine in the ${region} region from the snapshot taken at ${snapshotTimeDisplay} in the ${subscriptionDisplayName} subscription.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |               |        |
-| -------- | ------------- | ------ |
-| **Info** | **Canceling** | **No** |
+| Severity | Status        | Audit Event |
+| -------- | ------------- | ----------- |
+| **Info** | **Canceling** | **No**      |
 
 AzureNativeMountDiskJobFailed
 
@@ -3368,11 +2810,9 @@ AzureNativeMountDiskJobFailed
 Unable to mount disks on the ${vmDisplayName} virtual machine in the ${region} region from the snapshot taken at ${snapshotTimeDisplay} in the ${subscriptionDisplayName} subscription. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Failure** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **No**      |
 
 AzureNativeMountDiskJobQueued
 
@@ -3380,11 +2820,9 @@ AzureNativeMountDiskJobQueued
 Queued mount disk on the ${vmDisplayName} virtual machine in the ${region} region from the snapshot taken at ${snapshotTimeDisplay} in the ${subscriptionDisplayName} subscription.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |            |        |
-| -------- | ---------- | ------ |
-| **Info** | **Queued** | **No** |
+| Severity | Status     | Audit Event |
+| -------- | ---------- | ----------- |
+| **Info** | **Queued** | **No**      |
 
 AzureNativeMountDiskJobStarted
 
@@ -3392,11 +2830,9 @@ AzureNativeMountDiskJobStarted
 Started mounting disk on the ${vmDisplayName} virtual machine in the ${region} region from the snapshot taken at ${snapshotTimeDisplay} in the ${subscriptionDisplayName} subscription.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 AzureNativeMountDiskJobSucceeded
 
@@ -3404,11 +2840,9 @@ AzureNativeMountDiskJobSucceeded
 Successfully mounted disks on the ${vmDisplayName} virtual machine in  the ${region} region from the snapshot taken at ${snapshotTimeDisplay}  in the ${subscriptionDisplayName} subscription.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 AzureNativeMountDisksTaskFailed
 
@@ -3416,11 +2850,9 @@ AzureNativeMountDisksTaskFailed
 Unable to mount disks created from the snapshot taken at ${snapshotTimeDisplay} of ${sourceVmDisplayName} on ${targetVmDisplayName} virtual machine in the region ${region}. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|             |                 |        |
-| ----------- | --------------- | ------ |
-| **Warning** | **TaskFailure** | **No** |
+| Severity    | Status          | Audit Event |
+| ----------- | --------------- | ----------- |
+| **Warning** | **TaskFailure** | **No**      |
 
 AzureNativeMountDisksTaskStarted
 
@@ -3428,11 +2860,9 @@ AzureNativeMountDisksTaskStarted
 Mounting the disks created from the snapshot taken at ${snapshotTimeDisplay} of ${sourceVmDisplayName} on ${targetVmDisplayName} virtual machine in the region ${region}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Running** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Running** | **No**      |
 
 AzureNativeMountDisksTaskSucceeded
 
@@ -3440,11 +2870,9 @@ AzureNativeMountDisksTaskSucceeded
 Mounted the disks created from the snapshot taken at ${snapshotTimeDisplay} of ${sourceVmDisplayName} on ${targetVmDisplayName} virtual machine in the region ${region}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 AzureNativeMovingDatabaseToElasticPoolTaskFailed
 
@@ -3452,11 +2880,9 @@ AzureNativeMovingDatabaseToElasticPoolTaskFailed
 Failed to move database ${databaseDisplayName} to elastic pool ${elasticPoolDisplayName} in ${serverDisplayName} and  region ${region}.. Reason: ${reason}. Note that database is successfully recovered, please manually move the recovered database to the desired elastic pool.
 ```
 
-Severity | Status | Audit Event | |
-
-|             |                 |        |
-| ----------- | --------------- | ------ |
-| **Warning** | **TaskFailure** | **No** |
+| Severity    | Status          | Audit Event |
+| ----------- | --------------- | ----------- |
+| **Warning** | **TaskFailure** | **No**      |
 
 AzureNativeMovingDatabaseToElasticPoolTaskStarted
 
@@ -3464,11 +2890,9 @@ AzureNativeMovingDatabaseToElasticPoolTaskStarted
 Moving destination database ${databaseDisplayName} to elastic pool ${elasticPoolDisplayName} in ${serverDisplayName} and  region ${region}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 AzureNativeMovingDatabaseToElasticPoolTaskSucceeded
 
@@ -3476,11 +2900,9 @@ AzureNativeMovingDatabaseToElasticPoolTaskSucceeded
 Successfully moved database ${databaseDisplayName} to elastic pool ${elasticPoolDisplayName} in ${serverDisplayName} and  region ${region}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 AzureNativePowerOffTaskFailed
 
@@ -3488,11 +2910,9 @@ AzureNativePowerOffTaskFailed
 Failed to power off the ${vmDisplayName} virtual machine. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|             |                 |        |
-| ----------- | --------------- | ------ |
-| **Warning** | **TaskFailure** | **No** |
+| Severity    | Status          | Audit Event |
+| ----------- | --------------- | ----------- |
+| **Warning** | **TaskFailure** | **No**      |
 
 AzureNativePowerOffTaskStarted
 
@@ -3500,11 +2920,9 @@ AzureNativePowerOffTaskStarted
 Powering off the ${vmDisplayName} virtual machine.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Running** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Running** | **No**      |
 
 AzureNativePowerOffTaskSucceeded
 
@@ -3512,11 +2930,9 @@ AzureNativePowerOffTaskSucceeded
 Powered off the ${vmDisplayName} virtual machine.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 AzureNativePowerOnTaskFailed
 
@@ -3524,11 +2940,9 @@ AzureNativePowerOnTaskFailed
 Failed to power on the ${vmDisplayName} virtual machine. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|             |                 |        |
-| ----------- | --------------- | ------ |
-| **Warning** | **TaskFailure** | **No** |
+| Severity    | Status          | Audit Event |
+| ----------- | --------------- | ----------- |
+| **Warning** | **TaskFailure** | **No**      |
 
 AzureNativePowerOnTaskStarted
 
@@ -3536,11 +2950,9 @@ AzureNativePowerOnTaskStarted
 Powering on the ${vmDisplayName} virtual machine.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Running** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Running** | **No**      |
 
 AzureNativePowerOnTaskSucceeded
 
@@ -3548,11 +2960,9 @@ AzureNativePowerOnTaskSucceeded
 Powered on the ${vmDisplayName} virtual machine.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 AzureNativePublishStorageAccountRecoveryInfo
 
@@ -3560,11 +2970,9 @@ AzureNativePublishStorageAccountRecoveryInfo
 Recovery is in progress: Successfully processed: ${processedObjects} objects. Unable to recover: ${failedObjects} objects.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 AzureNativePublishStorageAccountRecoveryProgress
 
@@ -3572,11 +2980,9 @@ AzureNativePublishStorageAccountRecoveryProgress
 Recovery is in progress: Successfully processed: ${processedObjects} objects. Unable to recover: ${failedObjects} objects.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Running** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Running** | **No**      |
 
 AzureNativeRecoverStorageAccountJobCanceled
 
@@ -3584,11 +2990,9 @@ AzureNativeRecoverStorageAccountJobCanceled
 Canceled recovery of ${sourceStorageAccount} storage account in the ${resGroupDisplayName} resource group from the snapshot taken at ${snapshotTimeDisplay} in the ${subscriptionDisplayName} subscription.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |              |        |
-| -------- | ------------ | ------ |
-| **Info** | **Canceled** | **No** |
+| Severity | Status       | Audit Event |
+| -------- | ------------ | ----------- |
+| **Info** | **Canceled** | **No**      |
 
 AzureNativeRecoverStorageAccountJobCanceling
 
@@ -3596,11 +3000,9 @@ AzureNativeRecoverStorageAccountJobCanceling
 Canceling recovery of the ${sourceStorageAccount} storage account in the ${resGroupDisplayName} resource group from the snapshot taken at  ${snapshotTimeDisplay} in the ${subscriptionDisplayName} subscription.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |               |        |
-| -------- | ------------- | ------ |
-| **Info** | **Canceling** | **No** |
+| Severity | Status        | Audit Event |
+| -------- | ------------- | ----------- |
+| **Info** | **Canceling** | **No**      |
 
 AzureNativeRecoverStorageAccountJobFailed
 
@@ -3608,11 +3010,9 @@ AzureNativeRecoverStorageAccountJobFailed
 Unable to recover the ${sourceStorageAccount} storage account in the ${resGroupDisplayName} resource group from the snapshot taken at ${snapshotTimeDisplay} in the ${subscriptionDisplayName} subscription. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Failure** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **No**      |
 
 AzureNativeRecoverStorageAccountJobQueued
 
@@ -3620,11 +3020,9 @@ AzureNativeRecoverStorageAccountJobQueued
 Queued recovery of the ${sourceStorageAccount} storage account in the ${resGroupDisplayName} resource group from the snapshot taken at ${snapshotCreationTime} in the ${subscriptionDisplayName} subscription.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |            |        |
-| -------- | ---------- | ------ |
-| **Info** | **Queued** | **No** |
+| Severity | Status     | Audit Event |
+| -------- | ---------- | ----------- |
+| **Info** | **Queued** | **No**      |
 
 AzureNativeRecoverStorageAccountJobStarted
 
@@ -3632,11 +3030,9 @@ AzureNativeRecoverStorageAccountJobStarted
 Started recovery of the ${sourceStorageAccount} storage account in the ${resGroupDisplayName} resource group from the snapshot taken at ${snapshotTimeDisplay} in the ${subscriptionDisplayName} subscription.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 AzureNativeRecoverStorageAccountJobSucceeded
 
@@ -3644,11 +3040,9 @@ AzureNativeRecoverStorageAccountJobSucceeded
 Recovery of the ${sourceStorageAccount} storage account in the ${resGroupDisplayName} resource group from the snapshot taken at ${snapshotTimeDisplay} in the ${subscriptionDisplayName} succeeded.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 AzureNativeRecoverStorageAccountSnapshotJobStarted
 
@@ -3656,11 +3050,9 @@ AzureNativeRecoverStorageAccountSnapshotJobStarted
 ${userEmail} started restore of the ${saDisplayName} Azure storage account in the ${resGroupDisplayName} resource group from the snapshot taken at ${snapshotTimeDisplay} in the ${subscriptionDisplayName} subscription.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 AzureNativeRecoverStorageAccountSnapshotJobStartFailed
 
@@ -3668,11 +3060,9 @@ AzureNativeRecoverStorageAccountSnapshotJobStartFailed
 ${userEmail} failed to start restore of the ${saDisplayName} Azure storage account in the ${resGroupDisplayName} resource group from the snapshot taken at ${snapshotTimeDisplay} in the ${subscriptionDisplayName} subscription. Failure reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |         |
-| ------------ | ----------- | ------- |
-| **Critical** | **Failure** | **Yes** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **Yes**     |
 
 AzureNativeResizeDiskTaskFailed
 
@@ -3680,11 +3070,9 @@ AzureNativeResizeDiskTaskFailed
 Failed to re-size the ${diskDisplayName} managed disk. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|             |                 |        |
-| ----------- | --------------- | ------ |
-| **Warning** | **TaskFailure** | **No** |
+| Severity    | Status          | Audit Event |
+| ----------- | --------------- | ----------- |
+| **Warning** | **TaskFailure** | **No**      |
 
 AzureNativeResizeDiskTaskStarted
 
@@ -3692,11 +3080,9 @@ AzureNativeResizeDiskTaskStarted
 Re-sizing ${diskDisplayName} managed disk.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Running** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Running** | **No**      |
 
 AzureNativeResizeDiskTaskSucceeded
 
@@ -3704,11 +3090,9 @@ AzureNativeResizeDiskTaskSucceeded
 Re-sized ${diskDisplayName} managed disk.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 AzureNativeRestoreVMAttachDisksTaskFailed
 
@@ -3716,11 +3100,9 @@ AzureNativeRestoreVMAttachDisksTaskFailed
 Failed to attach disks with LUNs ${luns} or restore OS disk to the ${vmDisplayName} virtual machine. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|             |                 |        |
-| ----------- | --------------- | ------ |
-| **Warning** | **TaskFailure** | **No** |
+| Severity    | Status          | Audit Event |
+| ----------- | --------------- | ----------- |
+| **Warning** | **TaskFailure** | **No**      |
 
 AzureNativeRestoreVMAttachDisksTaskStarted
 
@@ -3728,11 +3110,9 @@ AzureNativeRestoreVMAttachDisksTaskStarted
 Attaching disks with LUNs ${luns} and restoring OS disk to the  ${vmDisplayName} virtual machine.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Running** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Running** | **No**      |
 
 AzureNativeRestoreVMAttachDisksTaskSucceeded
 
@@ -3740,11 +3120,9 @@ AzureNativeRestoreVMAttachDisksTaskSucceeded
 Attached disks with LUNs ${luns} and restored OS disk to the  ${vmDisplayName} virtual machine.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 AzureNativeRestoreVMCreateSnapshotDisksTaskFailed
 
@@ -3752,11 +3130,9 @@ AzureNativeRestoreVMCreateSnapshotDisksTaskFailed
 Failed to create new disks from the snapshot taken at ${snapshotTimeDisplay}. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|             |                 |        |
-| ----------- | --------------- | ------ |
-| **Warning** | **TaskFailure** | **No** |
+| Severity    | Status          | Audit Event |
+| ----------- | --------------- | ----------- |
+| **Warning** | **TaskFailure** | **No**      |
 
 AzureNativeRestoreVMCreateSnapshotDisksTaskStarted
 
@@ -3764,11 +3140,9 @@ AzureNativeRestoreVMCreateSnapshotDisksTaskStarted
 Creating new disks from the snapshot taken at ${snapshotTimeDisplay}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Running** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Running** | **No**      |
 
 AzureNativeRestoreVMCreateSnapshotDisksTaskSucceeded
 
@@ -3776,11 +3150,9 @@ AzureNativeRestoreVMCreateSnapshotDisksTaskSucceeded
 Created new disks from the snapshot taken at ${snapshotTimeDisplay}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 AzureNativeRestoreVMDeleteDetachedDisksTaskFailed
 
@@ -3788,11 +3160,9 @@ AzureNativeRestoreVMDeleteDetachedDisksTaskFailed
 Failed to delete detached disks. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|             |                 |        |
-| ----------- | --------------- | ------ |
-| **Warning** | **TaskFailure** | **No** |
+| Severity    | Status          | Audit Event |
+| ----------- | --------------- | ----------- |
+| **Warning** | **TaskFailure** | **No**      |
 
 AzureNativeRestoreVMDeleteDetachedDisksTaskStarted
 
@@ -3800,11 +3170,9 @@ AzureNativeRestoreVMDeleteDetachedDisksTaskStarted
 Deleting detached disks.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Running** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Running** | **No**      |
 
 AzureNativeRestoreVMDeleteDetachedDisksTaskSucceeded
 
@@ -3812,11 +3180,9 @@ AzureNativeRestoreVMDeleteDetachedDisksTaskSucceeded
 Deleted detached disks.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 AzureNativeRestoreVMDetachDisksTaskFailed
 
@@ -3824,11 +3190,9 @@ AzureNativeRestoreVMDetachDisksTaskFailed
 Failed to detach disks with LUNs ${luns} from the ${vmDisplayName} virtual machine. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|             |                 |        |
-| ----------- | --------------- | ------ |
-| **Warning** | **TaskFailure** | **No** |
+| Severity    | Status          | Audit Event |
+| ----------- | --------------- | ----------- |
+| **Warning** | **TaskFailure** | **No**      |
 
 AzureNativeRestoreVMDetachDisksTaskStarted
 
@@ -3836,11 +3200,9 @@ AzureNativeRestoreVMDetachDisksTaskStarted
 Detaching disks with LUNs ${luns} from the ${vmDisplayName} virtual machine.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Running** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Running** | **No**      |
 
 AzureNativeRestoreVMDetachDisksTaskSucceeded
 
@@ -3848,11 +3210,9 @@ AzureNativeRestoreVMDetachDisksTaskSucceeded
 Detached disks with LUNs ${luns} from the ${vmDisplayName} virtual machine.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 AzureNativeRestoreVMDetachDisksTaskSucceededTagsNotUpdated
 
@@ -3860,11 +3220,9 @@ AzureNativeRestoreVMDetachDisksTaskSucceededTagsNotUpdated
 Detached disks with LUNs ${luns} from the ${vmDisplayName} virtual machine. Unable to apply Rubrik metadata tags on the detached disks.
 ```
 
-Severity | Status | Audit Event | |
-
-|             |                 |        |
-| ----------- | --------------- | ------ |
-| **Warning** | **TaskSuccess** | **No** |
+| Severity    | Status          | Audit Event |
+| ----------- | --------------- | ----------- |
+| **Warning** | **TaskSuccess** | **No**      |
 
 AzureNativeRestoreVMFromArchivedSnapshotJobQueued
 
@@ -3872,11 +3230,9 @@ AzureNativeRestoreVMFromArchivedSnapshotJobQueued
 Queued restore of virtual machine ${vmDisplayName} in resource group ${resGroupDisplayName} from the snapshot taken  at ${snapshotTimeDisplay} in archival location ${archivalLocation}  in subscription ${subscriptionDisplayName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |            |        |
-| -------- | ---------- | ------ |
-| **Info** | **Queued** | **No** |
+| Severity | Status     | Audit Event |
+| -------- | ---------- | ----------- |
+| **Info** | **Queued** | **No**      |
 
 AzureNativeRestoreVMFromArchivedSnapshotJobStarted
 
@@ -3884,11 +3240,9 @@ AzureNativeRestoreVMFromArchivedSnapshotJobStarted
 Started restore of virtual machine ${vmDisplayName} in resource group ${resGroupDisplayName} from the snapshot taken at ${snapshotTimeDisplay} in archival location ${archivalLocation} in  subscription ${subscriptionDisplayName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 AzureNativeRestoreVMJobCanceled
 
@@ -3896,11 +3250,9 @@ AzureNativeRestoreVMJobCanceled
 Canceled restore of ${vmDisplayName} virtual machine in the ${resGroupDisplayName} resource group from the snapshot taken at ${snapshotTimeDisplay} in the ${subscriptionDisplayName} subscription.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |              |        |
-| -------- | ------------ | ------ |
-| **Info** | **Canceled** | **No** |
+| Severity | Status       | Audit Event |
+| -------- | ------------ | ----------- |
+| **Info** | **Canceled** | **No**      |
 
 AzureNativeRestoreVMJobCanceling
 
@@ -3908,11 +3260,9 @@ AzureNativeRestoreVMJobCanceling
 Canceling restore of the ${vmDisplayName} virtual machine in the ${resGroupDisplayName} resource group from the snapshot taken at  ${snapshotTimeDisplay} in the ${subscriptionDisplayName} subscription.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |               |        |
-| -------- | ------------- | ------ |
-| **Info** | **Canceling** | **No** |
+| Severity | Status        | Audit Event |
+| -------- | ------------- | ----------- |
+| **Info** | **Canceling** | **No**      |
 
 AzureNativeRestoreVMJobFailed
 
@@ -3920,11 +3270,9 @@ AzureNativeRestoreVMJobFailed
 Failed to restore the ${vmDisplayName} virtual machine in the ${resGroupDisplayName} resource group from the snapshot taken at ${snapshotTimeDisplay} in the ${subscriptionDisplayName} subscription. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Failure** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **No**      |
 
 AzureNativeRestoreVMJobQueued
 
@@ -3932,11 +3280,9 @@ AzureNativeRestoreVMJobQueued
 Queued restore of the ${vmDisplayName} virtual machine in the ${resGroupDisplayName} resource group from the snapshot taken at ${snapshotTimeDisplay} in the ${subscriptionDisplayName} subscription.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |            |        |
-| -------- | ---------- | ------ |
-| **Info** | **Queued** | **No** |
+| Severity | Status     | Audit Event |
+| -------- | ---------- | ----------- |
+| **Info** | **Queued** | **No**      |
 
 AzureNativeRestoreVMJobStarted
 
@@ -3944,11 +3290,9 @@ AzureNativeRestoreVMJobStarted
 ${userEmail} started restore of the ${vmDisplayName} Azure virtual machine in the ${resGroupDisplayName} resource group from the snapshot taken at ${snapshotTimeDisplay} in the ${subscriptionDisplayName} subscription.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 AzureNativeRestoreVMJobStarted
 
@@ -3956,11 +3300,9 @@ AzureNativeRestoreVMJobStarted
 Started restore of the ${vmDisplayName} virtual machine in the ${resGroupDisplayName} resource group from the snapshot taken at ${snapshotTimeDisplay} in the ${subscriptionDisplayName} subscription.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 AzureNativeRestoreVMJobStartFailed
 
@@ -3968,11 +3310,9 @@ AzureNativeRestoreVMJobStartFailed
 ${userEmail} failed to start restore of the ${vmDisplayName} Azure virtual machine in the ${resGroupDisplayName} resource group from the snapshot taken at ${snapshotTimeDisplay} in the ${subscriptionDisplayName} subscription. Failure reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |         |
-| ------------ | ----------- | ------- |
-| **Critical** | **Failure** | **Yes** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **Yes**     |
 
 AzureNativeRestoreVMJobSucceeded
 
@@ -3980,11 +3320,9 @@ AzureNativeRestoreVMJobSucceeded
 Restore of the ${vmDisplayName} virtual machine in the ${resGroupDisplayName} resource group from the snapshot taken at ${snapshotTimeDisplay} in the ${subscriptionDisplayName} succeeded.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 AzureNativeSkippingRestoreTasks
 
@@ -3992,11 +3330,9 @@ AzureNativeSkippingRestoreTasks
 Skipped replacing original disk as it's not attached to virtual machine.
 ```
 
-Severity | Status | Audit Event | |
-
-|             |                 |        |
-| ----------- | --------------- | ------ |
-| **Warning** | **TaskSuccess** | **No** |
+| Severity    | Status          | Audit Event |
+| ----------- | --------------- | ----------- |
+| **Warning** | **TaskSuccess** | **No**      |
 
 AzureNativeStorageAccountRecoverySummaryInfo
 
@@ -4004,11 +3340,9 @@ AzureNativeStorageAccountRecoverySummaryInfo
 Download recovery failures report (the link is valid for 24 hours): ${gcsUrl}
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 AzureNativeUpdateNicTaskFailed
 
@@ -4016,11 +3350,9 @@ AzureNativeUpdateNicTaskFailed
 Failed to update ${nicName} network interface of ${vmDisplayName} virtual machine. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|             |                 |        |
-| ----------- | --------------- | ------ |
-| **Warning** | **TaskFailure** | **No** |
+| Severity    | Status          | Audit Event |
+| ----------- | --------------- | ----------- |
+| **Warning** | **TaskFailure** | **No**      |
 
 AzureNativeUpdateNicTaskStarted
 
@@ -4028,11 +3360,9 @@ AzureNativeUpdateNicTaskStarted
 Updating ${nicName} network interface of ${vmDisplayName} virtual machine.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Running** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Running** | **No**      |
 
 AzureNativeUpdateNicTaskSucceeded
 
@@ -4040,11 +3370,9 @@ AzureNativeUpdateNicTaskSucceeded
 Updated ${nicName} network interface of ${vmDisplayName} virtual machine.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 AzureNativeUseExistingStorageAccountTaskStarted
 
@@ -4052,11 +3380,9 @@ AzureNativeUseExistingStorageAccountTaskStarted
 Using existing storage account with name: ${storageAccountName} in resource group: ${resourceGroupName}, subscription:${subscriptionName}, region: ${regionName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Running** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Running** | **No**      |
 
 ## cassandra_source
 
@@ -4068,11 +3394,9 @@ CassandraRecoveryFailure
 ${username} failed to start recovery of objects [${recoveryObjects}] on the Cassandra source '${sourceName}'. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 CassandraRecoveryStarted
 
@@ -4080,11 +3404,9 @@ CassandraRecoveryStarted
 ${username} started recovery of objects [${recoveryObjects}] on the Cassandra source '${sourceName}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 ## cloudnative
 
@@ -4096,11 +3418,9 @@ CloudNativeDBSnapshotUploadJobCanceled
 Canceled upload for snapshot taken at ${snapshotTimeDisplay} of ${snappableDisplay} to ${bucketType} with details ${bucketDetails}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |              |        |
-| -------- | ------------ | ------ |
-| **Info** | **Canceled** | **No** |
+| Severity | Status       | Audit Event |
+| -------- | ------------ | ----------- |
+| **Info** | **Canceled** | **No**      |
 
 CloudNativeDBSnapshotUploadJobCanceling
 
@@ -4108,11 +3428,9 @@ CloudNativeDBSnapshotUploadJobCanceling
 Canceling upload for snapshot taken at ${snapshotTimeDisplay} of ${snappableDisplay} to ${bucketType} with details ${bucketDetails}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |               |        |
-| -------- | ------------- | ------ |
-| **Info** | **Canceling** | **No** |
+| Severity | Status        | Audit Event |
+| -------- | ------------- | ----------- |
+| **Info** | **Canceling** | **No**      |
 
 CloudNativeDBSnapshotUploadJobFailed
 
@@ -4120,11 +3438,9 @@ CloudNativeDBSnapshotUploadJobFailed
 Could not upload snapshot taken at ${snapshotTimeDisplay} of ${snappableDisplay} to ${bucketType} with details ${bucketDetails}. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Failure** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **No**      |
 
 CloudNativeDBSnapshotUploadJobQueued
 
@@ -4132,11 +3448,9 @@ CloudNativeDBSnapshotUploadJobQueued
 Queued upload for snapshot taken at ${snapshotTimeDisplay} of ${snappableDisplay} to ${bucketType} with details ${bucketDetails}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |            |        |
-| -------- | ---------- | ------ |
-| **Info** | **Queued** | **No** |
+| Severity | Status     | Audit Event |
+| -------- | ---------- | ----------- |
+| **Info** | **Queued** | **No**      |
 
 CloudNativeDBSnapshotUploadJobStarted
 
@@ -4144,11 +3458,9 @@ CloudNativeDBSnapshotUploadJobStarted
 ${userEmail} started upload of database backup taken at  ${snapshotTimeDisplay} of database ${snappableDisplay} to blob storage.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 CloudNativeDBSnapshotUploadJobStarted
 
@@ -4156,11 +3468,9 @@ CloudNativeDBSnapshotUploadJobStarted
 Started upload for snapshot taken at ${snapshotTimeDisplay} of ${snappableDisplay} to ${bucketType} with details ${bucketDetails}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 CloudNativeDBSnapshotUploadJobStartFailed
 
@@ -4168,11 +3478,9 @@ CloudNativeDBSnapshotUploadJobStartFailed
 ${userEmail} failed to upload database backup taken at  ${snapshotTimeDisplay} of database ${snappableDisplay} to blob storage. Failure reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |         |
-| ------------ | ----------- | ------- |
-| **Critical** | **Failure** | **Yes** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **Yes**     |
 
 CloudNativeDBSnapshotUploadJobSucceeded
 
@@ -4180,11 +3488,9 @@ CloudNativeDBSnapshotUploadJobSucceeded
 Successfully uploaded snapshot taken at ${snapshotTimeDisplay} of ${snappableDisplay} to ${bucketType} with details ${bucketDetails}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 CloudNativeDBSnapshotUploadJobUploadTaskFailed
 
@@ -4192,11 +3498,9 @@ CloudNativeDBSnapshotUploadJobUploadTaskFailed
 Failed to upload snapshot taken at ${snapshotTimeDisplay} of ${snappableDisplay} to ${bucketType} with details ${bucketDetails}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |                 |        |
-| ------------ | --------------- | ------ |
-| **Critical** | **TaskFailure** | **No** |
+| Severity     | Status          | Audit Event |
+| ------------ | --------------- | ----------- |
+| **Critical** | **TaskFailure** | **No**      |
 
 CloudNativeDBSnapshotUploadJobUploadTaskFailedWithSnapshotUploadStarted
 
@@ -4204,11 +3508,9 @@ CloudNativeDBSnapshotUploadJobUploadTaskFailedWithSnapshotUploadStarted
 Failed to upload snapshot taken at ${snapshotTimeDisplay} of ${snappableDisplay} to ${bucketType} with details ${bucketDetails}. Please visit ${bucketURL} to manually clean up the created ${bucketType}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |                 |        |
-| ------------ | --------------- | ------ |
-| **Critical** | **TaskFailure** | **No** |
+| Severity     | Status          | Audit Event |
+| ------------ | --------------- | ----------- |
+| **Critical** | **TaskFailure** | **No**      |
 
 CloudNativeDBSnapshotUploadJobUploadTaskStarted
 
@@ -4216,11 +3518,9 @@ CloudNativeDBSnapshotUploadJobUploadTaskStarted
 Started uploading snapshot taken at ${snapshotTimeDisplay} of ${snappableDisplay} to ${bucketType} with details ${bucketDetails}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Running** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Running** | **No**      |
 
 CloudNativeDBSnapshotUploadJobUploadTaskSucceeded
 
@@ -4228,11 +3528,9 @@ CloudNativeDBSnapshotUploadJobUploadTaskSucceeded
 Successfully uploaded snapshot taken at ${snapshotTimeDisplay} of ${snappableDisplay} to ${bucketType} with ${bucketURL} url.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 CloudNativeDownloadFileCreateDownloadLocationTaskFailed
 
@@ -4240,11 +3538,9 @@ CloudNativeDownloadFileCreateDownloadLocationTaskFailed
 Failed to create the ${downloadLocation}.
 ```
 
-Severity | Status | Audit Event | |
-
-|             |                 |        |
-| ----------- | --------------- | ------ |
-| **Warning** | **TaskFailure** | **No** |
+| Severity    | Status          | Audit Event |
+| ----------- | --------------- | ----------- |
+| **Warning** | **TaskFailure** | **No**      |
 
 CloudNativeDownloadFileCreateDownloadLocationTaskStarted
 
@@ -4252,11 +3548,9 @@ CloudNativeDownloadFileCreateDownloadLocationTaskStarted
 Creating the ${downloadLocation}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Running** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Running** | **No**      |
 
 CloudNativeDownloadFileCreateDownloadLocationTaskSucceeded
 
@@ -4264,11 +3558,9 @@ CloudNativeDownloadFileCreateDownloadLocationTaskSucceeded
 Created the ${downloadLocation}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 CloudNativeDownloadFileDeleteDisksTaskFailed
 
@@ -4276,11 +3568,9 @@ CloudNativeDownloadFileDeleteDisksTaskFailed
 Failed to delete ${diskTypeDisplay}(s) launched from the snapshot.
 ```
 
-Severity | Status | Audit Event | |
-
-|             |                 |        |
-| ----------- | --------------- | ------ |
-| **Warning** | **TaskFailure** | **No** |
+| Severity    | Status          | Audit Event |
+| ----------- | --------------- | ----------- |
+| **Warning** | **TaskFailure** | **No**      |
 
 CloudNativeDownloadFileDeleteDisksTaskStarted
 
@@ -4288,11 +3578,9 @@ CloudNativeDownloadFileDeleteDisksTaskStarted
 Deleting ${diskTypeDisplay}(s) launched from the snapshot.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Running** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Running** | **No**      |
 
 CloudNativeDownloadFileDeleteDisksTaskSucceeded
 
@@ -4300,11 +3588,9 @@ CloudNativeDownloadFileDeleteDisksTaskSucceeded
 Deleted ${diskTypeDisplay}(s) launched from the snapshot.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 CloudNativeDownloadFileDownloadTaskFailed
 
@@ -4312,11 +3598,9 @@ CloudNativeDownloadFileDownloadTaskFailed
 Failed to upload ${numFiles} file(s) to the ${downloadLocation}.
 ```
 
-Severity | Status | Audit Event | |
-
-|             |                 |        |
-| ----------- | --------------- | ------ |
-| **Warning** | **TaskFailure** | **No** |
+| Severity    | Status          | Audit Event |
+| ----------- | --------------- | ----------- |
+| **Warning** | **TaskFailure** | **No**      |
 
 CloudNativeDownloadFileDownloadTaskSkippedSomeFiles
 
@@ -4324,11 +3608,9 @@ CloudNativeDownloadFileDownloadTaskSkippedSomeFiles
 Failed to upload ${numFailedFiles} of ${numFiles} files to the ${downloadLocation}.  ${errors}
 ```
 
-Severity | Status | Audit Event | |
-
-|             |                 |        |
-| ----------- | --------------- | ------ |
-| **Warning** | **TaskSuccess** | **No** |
+| Severity    | Status          | Audit Event |
+| ----------- | --------------- | ----------- |
+| **Warning** | **TaskSuccess** | **No**      |
 
 CloudNativeDownloadFileDownloadTaskStarted
 
@@ -4336,11 +3618,9 @@ CloudNativeDownloadFileDownloadTaskStarted
 Uploading ${numFiles} file(s) to the ${downloadLocation}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Running** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Running** | **No**      |
 
 CloudNativeDownloadFileDownloadTaskSucceeded
 
@@ -4348,11 +3628,9 @@ CloudNativeDownloadFileDownloadTaskSucceeded
 Uploading ${numFiles} file(s) to the ${downloadLocation}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 CloudNativeDownloadFileJobCanceled
 
@@ -4360,11 +3638,9 @@ CloudNativeDownloadFileJobCanceled
 Canceled recovery of ${numFiles} file(s) from the snapshot of the ${snappableDisplay} taken at ${snapshotTimeDisplay}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |              |        |
-| -------- | ------------ | ------ |
-| **Info** | **Canceled** | **No** |
+| Severity | Status       | Audit Event |
+| -------- | ------------ | ----------- |
+| **Info** | **Canceled** | **No**      |
 
 CloudNativeDownloadFileJobCanceledAndBucketCreated
 
@@ -4372,11 +3648,9 @@ CloudNativeDownloadFileJobCanceledAndBucketCreated
 Canceled recovery of ${numFiles} file(s) from the snapshot of the ${snappableDisplay} taken at ${snapshotTimeDisplay}. Please visit ${bucketURL} to manually clean up the created ${bucketType}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |              |        |
-| -------- | ------------ | ------ |
-| **Info** | **Canceled** | **No** |
+| Severity | Status       | Audit Event |
+| -------- | ------------ | ----------- |
+| **Info** | **Canceled** | **No**      |
 
 CloudNativeDownloadFileJobCanceling
 
@@ -4384,11 +3658,9 @@ CloudNativeDownloadFileJobCanceling
 Canceling recovery of ${numFiles} file(s) from the snapshot of the ${snappableDisplay} taken at ${snapshotTimeDisplay}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |               |        |
-| -------- | ------------- | ------ |
-| **Info** | **Canceling** | **No** |
+| Severity | Status        | Audit Event |
+| -------- | ------------- | ----------- |
+| **Info** | **Canceling** | **No**      |
 
 CloudNativeDownloadFileJobFailed
 
@@ -4396,11 +3668,9 @@ CloudNativeDownloadFileJobFailed
 Failed to recover ${numFiles} file(s) from the snapshot of the ${snappableDisplay} taken at ${snapshotTimeDisplay}. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Failure** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **No**      |
 
 CloudNativeDownloadFileJobFailedAndBucketCreated
 
@@ -4408,11 +3678,9 @@ CloudNativeDownloadFileJobFailedAndBucketCreated
 Failed to recover ${numFiles} file(s) from the snapshot of the ${snappableDisplay} taken at ${snapshotTimeDisplay}. Reason: ${reason}. Please visit ${bucketURL} to manually clean up the created ${bucketType}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Failure** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **No**      |
 
 CloudNativeDownloadFileJobQueued
 
@@ -4420,11 +3688,9 @@ CloudNativeDownloadFileJobQueued
 Queued recovery of ${numFiles} file(s) from the snapshot of the ${snappableDisplay} taken at ${snapshotTimeDisplay}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |            |        |
-| -------- | ---------- | ------ |
-| **Info** | **Queued** | **No** |
+| Severity | Status     | Audit Event |
+| -------- | ---------- | ----------- |
+| **Info** | **Queued** | **No**      |
 
 CloudNativeDownloadFileJobStarted
 
@@ -4432,11 +3698,9 @@ CloudNativeDownloadFileJobStarted
 ${userEmail} started download of ${numFiles} file(s) from the snapshot of the ${snappableDisplay} taken at ${snapshotTimeDisplay}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 CloudNativeDownloadFileJobStarted
 
@@ -4444,11 +3708,9 @@ CloudNativeDownloadFileJobStarted
 Started recovery of ${numFiles} file(s) from the snapshot of the ${snappableDisplay} taken at ${snapshotTimeDisplay}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 CloudNativeDownloadFileJobStartFailed
 
@@ -4456,11 +3718,9 @@ CloudNativeDownloadFileJobStartFailed
 ${userEmail} failed to start download of ${numFiles} file(s) from the snapshot of the ${snappableDisplay} taken at ${snapshotTimeDisplay}. Failure reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |         |
-| ------------ | ----------- | ------- |
-| **Critical** | **Failure** | **Yes** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **Yes**     |
 
 CloudNativeDownloadFileJobSucceeded
 
@@ -4468,11 +3728,9 @@ CloudNativeDownloadFileJobSucceeded
 Successfully uploaded ${numFiles} file(s) from the snapshot of the ${snappableDisplay} taken at ${snapshotTimeDisplay} to ${downloadLocation} url.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 CloudNativeDownloadFileJobSucceededSkippedSomeFiles
 
@@ -4480,11 +3738,9 @@ CloudNativeDownloadFileJobSucceededSkippedSomeFiles
 Successfully uploaded ${uploadedFiles} out of ${numFiles} file(s) from the snapshot of the ${snappableDisplay} taken at ${snapshotTimeDisplay} to ${downloadLocation} url. See details for skipped files.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 CloudNativeDownloadFileLaunchDisksTaskFailed
 
@@ -4492,11 +3748,9 @@ CloudNativeDownloadFileLaunchDisksTaskFailed
 Failed to launch ${diskTypeDisplay}(s) from the snapshot.
 ```
 
-Severity | Status | Audit Event | |
-
-|             |                 |        |
-| ----------- | --------------- | ------ |
-| **Warning** | **TaskFailure** | **No** |
+| Severity    | Status          | Audit Event |
+| ----------- | --------------- | ----------- |
+| **Warning** | **TaskFailure** | **No**      |
 
 CloudNativeDownloadFileLaunchDisksTaskStarted
 
@@ -4504,11 +3758,9 @@ CloudNativeDownloadFileLaunchDisksTaskStarted
 Temporarily launching ${diskTypeDisplay}(s) from the snapshot in region ${region}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Running** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Running** | **No**      |
 
 CloudNativeDownloadFileLaunchDisksTaskSucceeded
 
@@ -4516,11 +3768,9 @@ CloudNativeDownloadFileLaunchDisksTaskSucceeded
 Launched ${diskTypeDisplay}(s) from the snapshot in region ${region}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 CloudNativeRecoverFileToVMDownloadTaskFailed
 
@@ -4528,11 +3778,9 @@ CloudNativeRecoverFileToVMDownloadTaskFailed
 Failed to recover ${numFiles} file(s) to the virtual machine ${vmName} (${vmIpAddress}) at ${restoreDirectory}.
 ```
 
-Severity | Status | Audit Event | |
-
-|             |                 |        |
-| ----------- | --------------- | ------ |
-| **Warning** | **TaskFailure** | **No** |
+| Severity    | Status          | Audit Event |
+| ----------- | --------------- | ----------- |
+| **Warning** | **TaskFailure** | **No**      |
 
 CloudNativeRecoverFileToVMDownloadTaskStarted
 
@@ -4540,11 +3788,9 @@ CloudNativeRecoverFileToVMDownloadTaskStarted
 Recovering ${numFiles} file(s) to the virtual machine ${vmName} (${vmIpAddress}) at ${restoreDirectory}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Running** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Running** | **No**      |
 
 CloudNativeRecoverFileToVMDownloadTaskSucceeded
 
@@ -4552,11 +3798,9 @@ CloudNativeRecoverFileToVMDownloadTaskSucceeded
 Recovering ${numFiles} file(s) to the virtual machine ${vmName} (${vmIpAddress}) at ${restoreDirectory}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 CloudNativeRecoverFileToVMJobSucceeded
 
@@ -4564,11 +3808,9 @@ CloudNativeRecoverFileToVMJobSucceeded
 Successfully recovered ${numFiles} file(s) from the snapshot of the ${snappableDisplay} taken at ${snapshotTimeDisplay} to the virtual machine ${vmName} (${vmIpAddress}) at ${restoreDirectory}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 ## common
 
@@ -4580,11 +3822,9 @@ DownloadBackupFiles
 ${username} started a job to download backup files of object type '${objType}' with Id '${objId}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 DownloadBackupFilesFailed
 
@@ -4592,11 +3832,9 @@ DownloadBackupFilesFailed
 ${username} failed to start a job to download backup files of object type '${objType}' with Id '${objId}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 DownloadBackupFilesFromArchivalLocation
 
@@ -4604,11 +3842,9 @@ DownloadBackupFilesFromArchivalLocation
 ${username} started a job to download backup files from archival location '${archiveLocation}' of object type '${objType}' with Id '${objId}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 DownloadBackupFilesFromArchivalLocationFailed
 
@@ -4616,11 +3852,9 @@ DownloadBackupFilesFromArchivalLocationFailed
 ${username} failed to start a job to download backup files from archival location '${archiveLocation}' of object type '${objType}' with Id '${objId}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 DownloadBackupFilesFromArchive
 
@@ -4628,11 +3862,9 @@ DownloadBackupFilesFromArchive
 ${username} started a job to download backup files from archive of object type '${objType}' with Id '${objId}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 DownloadBackupFilesFromArchiveFailed
 
@@ -4640,11 +3872,9 @@ DownloadBackupFilesFromArchiveFailed
 ${username} failed to start a job to download backup files from archive of object type '${objType}' with Id '${objId}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 DownloadFilesStarted
 
@@ -4652,11 +3882,9 @@ DownloadFilesStarted
 ${username} started a job to download ${numOfPaths} path(s) from a backup of '${objectName}' taken on ${date}
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 DownloadFilesStartFailed
 
@@ -4664,11 +3892,9 @@ DownloadFilesStartFailed
 ${username} failed to start a job to download ${numOfPaths} path(s) from a backup of '${objectName}' taken on ${date}. Failure reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 DownloadReplicatedSnapshotFromLocationFailed
 
@@ -4676,11 +3902,9 @@ DownloadReplicatedSnapshotFromLocationFailed
 ${username} failed to start a job to download replicated snapshot  from location of object type '${objType}' with Id '${objId}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 DownloadReplicatedSnapshotFromLocationSuccess
 
@@ -4688,11 +3912,9 @@ DownloadReplicatedSnapshotFromLocationSuccess
 ${username} started a job to download replicated snapshot from location of object type '${objType}' with Id '${objId}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 DownloadSnapshotFromRemoteFailed
 
@@ -4700,11 +3922,9 @@ DownloadSnapshotFromRemoteFailed
 ${username} failed to start a job to download remote snapshot for  '${objName}'. Failure reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 DownloadSnapshotFromRemoteSuccess
 
@@ -4712,11 +3932,9 @@ DownloadSnapshotFromRemoteSuccess
 ${username} started a job to download remote snapshot for '${objName}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 ExportFilesStarted
 
@@ -4724,11 +3942,9 @@ ExportFilesStarted
 ${username} started a job to restore ${count} file(s) from a backup of '${objectName}' taken on ${date} to '${objectDestName}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 ExportFilesStartFailed
 
@@ -4736,11 +3952,9 @@ ExportFilesStartFailed
 ${username} failed to start a job to restore ${count} file(s) from a backup of '${objectName}' taken on ${date} to '${objectDestName}'. Failure reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 ExportSnapshotStarted
 
@@ -4748,11 +3962,9 @@ ExportSnapshotStarted
 ${username} started a job to export snapshot '${snapshotId}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 ExportSnapshotStartFailed
 
@@ -4760,11 +3972,9 @@ ExportSnapshotStartFailed
 ${username} failed to start a job to export snapshot '${snapshotId}'. Failure reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 InstantRecoverSnapshotStarted
 
@@ -4772,11 +3982,9 @@ InstantRecoverSnapshotStarted
 ${username} started a job to instantly recover '${snappableName}' (${snappableType}) with a snapshot taken at '${snapshotDate}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 InstantRecoverSnapshotStartFailed
 
@@ -4784,11 +3992,9 @@ InstantRecoverSnapshotStartFailed
 ${username} failed to start a job to instantly recover '${snappableName}' (${snappableType}) with a snapshot taken at '${snapshotDate}'. Failure reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 MountSnapshotStarted
 
@@ -4796,11 +4002,9 @@ MountSnapshotStarted
 ${username} started a job to mount '${snappableName}' (${snappableType}) with a snapshot taken at '${snapshotDate}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 MountSnapshotStartFailed
 
@@ -4808,11 +4012,9 @@ MountSnapshotStartFailed
 ${username} failed to start a job to mount '${snappableName}'  (${snappableType}) with a snapshot taken at '${snapshotDate}'. Failure reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 RestoreFilesStarted
 
@@ -4820,11 +4022,9 @@ RestoreFilesStarted
 ${username} started a job to restore ${count} file(s) from a backup of '${objectName}' taken on ${date}
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 RestoreFilesStartFailed
 
@@ -4832,11 +4032,9 @@ RestoreFilesStartFailed
 ${username} failed to start a job to restore ${count} file(s) from a backup of '${objectName}' taken on ${date}. Failure reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 RestoreSnapshotFilesFromArchivalLocation
 
@@ -4844,11 +4042,9 @@ RestoreSnapshotFilesFromArchivalLocation
 ${username} started a job to restore snapshot files from archival location '${archiveLocation}' of object type '${objType}' with ID '${objId}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 RestoreSnapshotFilesFromArchivalLocationFailed
 
@@ -4856,11 +4052,9 @@ RestoreSnapshotFilesFromArchivalLocationFailed
 ${username} failed to start a job to restore snapshot files from archival location '${archiveLocation}' of object type '${objType}' with ID '${objId}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 UnmountMountStarted
 
@@ -4868,11 +4062,9 @@ UnmountMountStarted
 ${username} started a job to remove ${snappableType} mount '${mountId}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 UnmountMountStartFailed
 
@@ -4880,11 +4072,9 @@ UnmountMountStartFailed
 ${username} failed to start a job to remove ${snappableType} mount '${mountId}'. Failure reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 ## fileset
 
@@ -4896,11 +4086,9 @@ ExportFilesetFailure
 Failed to export '${sourceDir}' from '${source}' to '${destination}' based on snapshot taken at '${snapshotDate}'. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 ExportFilesetStarted
 
@@ -4908,11 +4096,9 @@ ExportFilesetStarted
 Started exporting '${sourceDir}' from '${source}' to '${destination}' based on snapshot taken at '${snapshotDate}'
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 RestoreFilesetFailure
 
@@ -4920,11 +4106,9 @@ RestoreFilesetFailure
 Failed to start restore job for fileset '${filesetName}' from source path '${sourceDir}' to ${hostAndShare} destination path '${destinationDir}' using snapshot ${snapshotId} taken on ${snapshotDate}. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 RestoreFilesetStarted
 
@@ -4932,11 +4116,9 @@ RestoreFilesetStarted
 ${username} started a restore job for fileset '${filesetName}' from source path '${sourceDir}' to ${hostAndShare} destination path '${destinationDir}' using snapshot ${snapshotId} taken on ${snapshotDate}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 ## gcpnative
 
@@ -4948,11 +4130,9 @@ GCPNativeAttachDisksTaskFailed
 Failed to attach recovered disks to the instance. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|             |                 |        |
-| ----------- | --------------- | ------ |
-| **Warning** | **TaskFailure** | **No** |
+| Severity    | Status          | Audit Event |
+| ----------- | --------------- | ----------- |
+| **Warning** | **TaskFailure** | **No**      |
 
 GCPNativeAttachDisksTaskStarted
 
@@ -4960,11 +4140,9 @@ GCPNativeAttachDisksTaskStarted
 Attaching recovered disks to the instance.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Running** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Running** | **No**      |
 
 GCPNativeAttachDisksTaskSucceeded
 
@@ -4972,11 +4150,9 @@ GCPNativeAttachDisksTaskSucceeded
 Successfully attached recovered disks to the instance.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 GCPNativeDetachDisksTaskFailed
 
@@ -4984,11 +4160,9 @@ GCPNativeDetachDisksTaskFailed
 Failed to detach existing disks from the instance. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|             |                 |        |
-| ----------- | --------------- | ------ |
-| **Warning** | **TaskFailure** | **No** |
+| Severity    | Status          | Audit Event |
+| ----------- | --------------- | ----------- |
+| **Warning** | **TaskFailure** | **No**      |
 
 GCPNativeDetachDisksTaskStarted
 
@@ -4996,11 +4170,9 @@ GCPNativeDetachDisksTaskStarted
 Detaching existing disks from the instance.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Running** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Running** | **No**      |
 
 GCPNativeDetachDisksTaskSucceeded
 
@@ -5008,11 +4180,9 @@ GCPNativeDetachDisksTaskSucceeded
 Successfully detached existing disks from the instance.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 GCPNativeExportDiskCreateDiskTaskFailed
 
@@ -5020,11 +4190,9 @@ GCPNativeExportDiskCreateDiskTaskFailed
 Failed to create the disk. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|             |                 |        |
-| ----------- | --------------- | ------ |
-| **Warning** | **TaskFailure** | **No** |
+| Severity    | Status          | Audit Event |
+| ----------- | --------------- | ----------- |
+| **Warning** | **TaskFailure** | **No**      |
 
 GCPNativeExportDiskCreateDiskTaskStarted
 
@@ -5032,11 +4200,9 @@ GCPNativeExportDiskCreateDiskTaskStarted
 Creating the disk.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Running** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Running** | **No**      |
 
 GCPNativeExportDiskCreateDiskTaskSucceeded
 
@@ -5044,11 +4210,9 @@ GCPNativeExportDiskCreateDiskTaskSucceeded
 Successfully created the disk.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 GCPNativeExportDiskJobCanceled
 
@@ -5056,11 +4220,9 @@ GCPNativeExportDiskJobCanceled
 Canceled export of the ${diskDisplayName} disk in the ${locationName} ${locationScope} in ${targetProjectDisplayName} project  from the snapshot of the ${sourceDiskName} disk taken at  ${snapshotDisplayTime} in the ${sourceProjectDisplayName} project.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |              |        |
-| -------- | ------------ | ------ |
-| **Info** | **Canceled** | **No** |
+| Severity | Status       | Audit Event |
+| -------- | ------------ | ----------- |
+| **Info** | **Canceled** | **No**      |
 
 GCPNativeExportDiskJobCanceling
 
@@ -5068,11 +4230,9 @@ GCPNativeExportDiskJobCanceling
 Canceling export of the ${diskDisplayName} disk in the ${locationName} ${locationScope} in ${targetProjectDisplayName} project from the snapshot of the ${sourceDiskName} disk taken  at ${snapshotDisplayTime} in the ${sourceProjectDisplayName} project.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |               |        |
-| -------- | ------------- | ------ |
-| **Info** | **Canceling** | **No** |
+| Severity | Status        | Audit Event |
+| -------- | ------------- | ----------- |
+| **Info** | **Canceling** | **No**      |
 
 GCPNativeExportDiskJobFailed
 
@@ -5080,11 +4240,9 @@ GCPNativeExportDiskJobFailed
 Failed to export the ${diskDisplayName} disk in the ${locationName} ${locationScope} in ${targetProjectDisplayName} project from the  snapshot of the ${sourceDiskName} disk taken at ${snapshotDisplayTime}  in the ${sourceProjectDisplayName} project. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Failure** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **No**      |
 
 GCPNativeExportDiskJobQueued
 
@@ -5092,11 +4250,9 @@ GCPNativeExportDiskJobQueued
 Queued export of the ${diskDisplayName} disk in the ${locationName} ${locationScope} in ${targetProjectDisplayName} project from the  snapshot of the ${sourceDiskName} disk taken at ${snapshotDisplayTime}  in the ${sourceProjectDisplayName} project.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |            |        |
-| -------- | ---------- | ------ |
-| **Info** | **Queued** | **No** |
+| Severity | Status     | Audit Event |
+| -------- | ---------- | ----------- |
+| **Info** | **Queued** | **No**      |
 
 GCPNativeExportDiskJobStarted
 
@@ -5104,11 +4260,9 @@ GCPNativeExportDiskJobStarted
 ${userEmail} started export of the ${diskDisplayName} GCP disk from the  snapshot taken at ${snapshotDisplayTime} in the  ${sourceProjectDisplayName} GCP project to the ${locationName}  ${locationScope} in ${targetProjectDisplayName} GCP project.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 GCPNativeExportDiskJobStarted
 
@@ -5116,11 +4270,9 @@ GCPNativeExportDiskJobStarted
 Started export of the ${diskDisplayName} disk in the ${locationName} ${locationScope} in ${targetProjectDisplayName} project from the  snapshot of the ${sourceDiskName} disk taken at ${snapshotDisplayTime}  in the ${sourceProjectDisplayName} project.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 GCPNativeExportDiskJobStartFailed
 
@@ -5128,11 +4280,9 @@ GCPNativeExportDiskJobStartFailed
 ${userEmail} failed to start the export of the ${diskDisplayName} GCP  disk from the snapshot taken at ${snapshotDisplayTime} in the  ${sourceProjectDisplayName} GCP project to the ${locationName}  ${locationScope} in ${targetProjectDisplayName} GCP project. Failure reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |         |
-| ------------ | ----------- | ------- |
-| **Critical** | **Failure** | **Yes** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **Yes**     |
 
 GCPNativeExportDiskJobSucceeded
 
@@ -5140,11 +4290,9 @@ GCPNativeExportDiskJobSucceeded
 Export of the ${diskDisplayName} disk in the ${locationName} ${locationScope} in ${targetProjectDisplayName} project from the  snapshot of the ${sourceDiskName} disk taken at ${snapshotDisplayTime}  in the ${sourceProjectDisplayName} project succeeded.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 GCPNativeExportInstanceCreateInstanceTaskFailed
 
@@ -5152,11 +4300,9 @@ GCPNativeExportInstanceCreateInstanceTaskFailed
 Failed to create the instance. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|             |                 |        |
-| ----------- | --------------- | ------ |
-| **Warning** | **TaskFailure** | **No** |
+| Severity    | Status          | Audit Event |
+| ----------- | --------------- | ----------- |
+| **Warning** | **TaskFailure** | **No**      |
 
 GCPNativeExportInstanceCreateInstanceTaskStarted
 
@@ -5164,11 +4310,9 @@ GCPNativeExportInstanceCreateInstanceTaskStarted
 Creating the instance.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Running** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Running** | **No**      |
 
 GCPNativeExportInstanceCreateInstanceTaskSucceeded
 
@@ -5176,11 +4320,9 @@ GCPNativeExportInstanceCreateInstanceTaskSucceeded
 Successfully created the instance.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 GCPNativeExportInstanceJobCanceled
 
@@ -5188,11 +4330,9 @@ GCPNativeExportInstanceJobCanceled
 Canceled export of the ${instanceDisplayName} GCE instance in the ${zone} zone in ${targetProjectDisplayName} project from the snapshot of  ${sourceInstanceName} GCE instance taken at ${snapshotDisplayTime} in  the ${sourceProjectDisplayName} project.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |              |        |
-| -------- | ------------ | ------ |
-| **Info** | **Canceled** | **No** |
+| Severity | Status       | Audit Event |
+| -------- | ------------ | ----------- |
+| **Info** | **Canceled** | **No**      |
 
 GCPNativeExportInstanceJobCanceling
 
@@ -5200,11 +4340,9 @@ GCPNativeExportInstanceJobCanceling
 Canceling export of the ${instanceDisplayName} GCE instance in the ${zone} zone in the ${targetProjectDisplayName} project from the  snapshot of ${sourceInstanceName} GCE instance taken at  ${snapshotDisplayTime} in the ${sourceProjectDisplayName} project.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |               |        |
-| -------- | ------------- | ------ |
-| **Info** | **Canceling** | **No** |
+| Severity | Status        | Audit Event |
+| -------- | ------------- | ----------- |
+| **Info** | **Canceling** | **No**      |
 
 GCPNativeExportInstanceJobFailed
 
@@ -5212,11 +4350,9 @@ GCPNativeExportInstanceJobFailed
 Failed to export the ${instanceDisplayName} GCE instance in the ${zone} zone in ${targetProjectDisplayName} project from the snapshot of  ${sourceInstanceName} GCE instance taken at ${snapshotDisplayTime} in  the ${sourceProjectDisplayName} project. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Failure** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **No**      |
 
 GCPNativeExportInstanceJobQueued
 
@@ -5224,11 +4360,9 @@ GCPNativeExportInstanceJobQueued
 Queued export of the ${instanceDisplayName} GCE instance in the ${zone} zone in the ${targetProjectDisplayName} project from the snapshot of  ${sourceInstanceName} GCE instance taken at ${snapshotDisplayTime} in  the ${sourceProjectDisplayName} project.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |            |        |
-| -------- | ---------- | ------ |
-| **Info** | **Queued** | **No** |
+| Severity | Status     | Audit Event |
+| -------- | ---------- | ----------- |
+| **Info** | **Queued** | **No**      |
 
 GCPNativeExportInstanceJobStarted
 
@@ -5236,11 +4370,9 @@ GCPNativeExportInstanceJobStarted
 ${userEmail} started export of the ${instanceDisplayName} GCP instance from the snapshot taken at ${snapshotDisplayTime} in the  ${sourceProjectDisplayName} GCP project to the ${zone} zone in the  ${targetProjectDisplayName} GCP project.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 GCPNativeExportInstanceJobStarted
 
@@ -5248,11 +4380,9 @@ GCPNativeExportInstanceJobStarted
 Started export of the ${instanceDisplayName} GCE instance in the ${zone} zone in the ${targetProjectDisplayName} project from the snapshot of  ${sourceInstanceName} GCE instance taken at ${snapshotDisplayTime} in  the ${sourceProjectDisplayName} project.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 GCPNativeExportInstanceJobStartFailed
 
@@ -5260,11 +4390,9 @@ GCPNativeExportInstanceJobStartFailed
 ${userEmail} failed to start the export of the ${instanceDisplayName}  GCP instance from the snapshot taken at ${snapshotDisplayTime} in the  ${sourceProjectDisplayName} GCP project to the ${zone} zone in the  ${targetProjectDisplayName} GCP project. Failure reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |         |
-| ------------ | ----------- | ------- |
-| **Critical** | **Failure** | **Yes** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **Yes**     |
 
 GCPNativeExportInstanceJobSucceeded
 
@@ -5272,11 +4400,9 @@ GCPNativeExportInstanceJobSucceeded
 Export of the ${instanceDisplayName} GCE instance in the ${zone} zone  in ${targetProjectDisplayName} project from the snapshot of  ${sourceInstanceName} GCE instance taken at ${snapshotDisplayTime} in the  ${sourceProjectDisplayName} project succeeded.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 GCPNativeRestoreInstanceCreateDisksTaskFailed
 
@@ -5284,11 +4410,9 @@ GCPNativeRestoreInstanceCreateDisksTaskFailed
 Failed to create disks from the snapshot. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|             |                 |        |
-| ----------- | --------------- | ------ |
-| **Warning** | **TaskFailure** | **No** |
+| Severity    | Status          | Audit Event |
+| ----------- | --------------- | ----------- |
+| **Warning** | **TaskFailure** | **No**      |
 
 GCPNativeRestoreInstanceCreateDisksTaskStarted
 
@@ -5296,11 +4420,9 @@ GCPNativeRestoreInstanceCreateDisksTaskStarted
 Creating disks from the snapshot.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Running** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Running** | **No**      |
 
 GCPNativeRestoreInstanceCreateDisksTaskSucceeded
 
@@ -5308,11 +4430,9 @@ GCPNativeRestoreInstanceCreateDisksTaskSucceeded
 Successfully created disks from the snapshot.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 GCPNativeRestoreInstanceJobCanceled
 
@@ -5320,11 +4440,9 @@ GCPNativeRestoreInstanceJobCanceled
 Canceled restore of the ${instanceDisplayName} GCE instance in the ${zone} zone from the snapshot taken at ${snapshotDisplayTime} in the ${projectDisplayName} project.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |              |        |
-| -------- | ------------ | ------ |
-| **Info** | **Canceled** | **No** |
+| Severity | Status       | Audit Event |
+| -------- | ------------ | ----------- |
+| **Info** | **Canceled** | **No**      |
 
 GCPNativeRestoreInstanceJobCanceling
 
@@ -5332,11 +4450,9 @@ GCPNativeRestoreInstanceJobCanceling
 Canceling restore of the ${instanceDisplayName} GCE instance in the ${zone} zone from the snapshot taken at ${snapshotDisplayTime} in the ${projectDisplayName} project.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |               |        |
-| -------- | ------------- | ------ |
-| **Info** | **Canceling** | **No** |
+| Severity | Status        | Audit Event |
+| -------- | ------------- | ----------- |
+| **Info** | **Canceling** | **No**      |
 
 GCPNativeRestoreInstanceJobFailed
 
@@ -5344,11 +4460,9 @@ GCPNativeRestoreInstanceJobFailed
 Failed to restore the ${instanceDisplayName} GCE instance in the ${zone} zone from the snapshot taken at ${snapshotDisplayTime} in the ${projectDisplayName} project. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Failure** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **No**      |
 
 GCPNativeRestoreInstanceJobQueued
 
@@ -5356,11 +4470,9 @@ GCPNativeRestoreInstanceJobQueued
 Queued restore of the ${instanceDisplayName} GCE instance in the ${zone} zone from the snapshot taken at ${snapshotDisplayTime} in the ${projectDisplayName} project.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |            |        |
-| -------- | ---------- | ------ |
-| **Info** | **Queued** | **No** |
+| Severity | Status     | Audit Event |
+| -------- | ---------- | ----------- |
+| **Info** | **Queued** | **No**      |
 
 GCPNativeRestoreInstanceJobStarted
 
@@ -5368,11 +4480,9 @@ GCPNativeRestoreInstanceJobStarted
 ${userEmail} started restore of the ${instanceDisplayName} GCP GCE instance in the ${zone} zone from the snapshot taken at ${snapshotDisplayTime} in the ${projectDisplayName} project.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 GCPNativeRestoreInstanceJobStarted
 
@@ -5380,11 +4490,9 @@ GCPNativeRestoreInstanceJobStarted
 Started restore of the ${instanceDisplayName} GCE instance in the ${zone} zone from the snapshot taken at ${snapshotDisplayTime} in the ${projectDisplayName} project.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 GCPNativeRestoreInstanceJobStartFailed
 
@@ -5392,11 +4500,9 @@ GCPNativeRestoreInstanceJobStartFailed
 ${userEmail} failed to start restore of the ${instanceDisplayName} GCP GCE instance in the ${zone} zone from the snapshot taken at ${snapshotDisplayTime} in the ${projectDisplayName} project. Failure reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |         |
-| ------------ | ----------- | ------- |
-| **Critical** | **Failure** | **Yes** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **Yes**     |
 
 GCPNativeRestoreInstanceJobSucceeded
 
@@ -5404,11 +4510,9 @@ GCPNativeRestoreInstanceJobSucceeded
 Restore of the ${instanceDisplayName} GCE instance in the ${zone} zone from the snapshot taken at ${snapshotDisplayTime} in the ${projectDisplayName} project succeeded.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 GCPNativeRestoreInstanceRestoreInstanceLabelsTaskFailed
 
@@ -5416,11 +4520,9 @@ GCPNativeRestoreInstanceRestoreInstanceLabelsTaskFailed
 Failed to restore instance labels from the snapshot. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|             |                 |        |
-| ----------- | --------------- | ------ |
-| **Warning** | **TaskFailure** | **No** |
+| Severity    | Status          | Audit Event |
+| ----------- | --------------- | ----------- |
+| **Warning** | **TaskFailure** | **No**      |
 
 GCPNativeRestoreInstanceRestoreInstanceLabelsTaskStarted
 
@@ -5428,11 +4530,9 @@ GCPNativeRestoreInstanceRestoreInstanceLabelsTaskStarted
 Restoring instance labels from the snapshot.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Running** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Running** | **No**      |
 
 GCPNativeRestoreInstanceRestoreInstanceLabelsTaskSucceeded
 
@@ -5440,11 +4540,9 @@ GCPNativeRestoreInstanceRestoreInstanceLabelsTaskSucceeded
 Successfully restored instance labels from the snapshot.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 GCPNativeStartInstanceTaskFailed
 
@@ -5452,11 +4550,9 @@ GCPNativeStartInstanceTaskFailed
 Failed to start the instance. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|             |                 |        |
-| ----------- | --------------- | ------ |
-| **Warning** | **TaskFailure** | **No** |
+| Severity    | Status          | Audit Event |
+| ----------- | --------------- | ----------- |
+| **Warning** | **TaskFailure** | **No**      |
 
 GCPNativeStartInstanceTaskStarted
 
@@ -5464,11 +4560,9 @@ GCPNativeStartInstanceTaskStarted
 Starting the instance.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Running** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Running** | **No**      |
 
 GCPNativeStartInstanceTaskSucceeded
 
@@ -5476,11 +4570,9 @@ GCPNativeStartInstanceTaskSucceeded
 Successfully started the instance.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 GCPNativeStopInstanceTaskFailed
 
@@ -5488,11 +4580,9 @@ GCPNativeStopInstanceTaskFailed
 Failed to stop the instance. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|             |                 |        |
-| ----------- | --------------- | ------ |
-| **Warning** | **TaskFailure** | **No** |
+| Severity    | Status          | Audit Event |
+| ----------- | --------------- | ----------- |
+| **Warning** | **TaskFailure** | **No**      |
 
 GCPNativeStopInstanceTaskStarted
 
@@ -5500,11 +4590,9 @@ GCPNativeStopInstanceTaskStarted
 Stopping the instance.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Running** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Running** | **No**      |
 
 GCPNativeStopInstanceTaskSucceeded
 
@@ -5512,11 +4600,9 @@ GCPNativeStopInstanceTaskSucceeded
 Successfully stopped the instance.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 GCPNativeStopInstanceTaskSucceededNoop
 
@@ -5524,11 +4610,9 @@ GCPNativeStopInstanceTaskSucceededNoop
 Ensured that the instance is stopped.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 ## hyperv
 
@@ -5540,11 +4624,9 @@ CreateHypervDiskMountFailed
 ${username} failed to mount disks from snapshot '${snapshotID}' of Hyper-V virtual machine '${snappableName}' to Hyper-V virtual machine '${targetSnappableName}'. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 CreateHypervDiskMountStarted
 
@@ -5552,11 +4634,9 @@ CreateHypervDiskMountStarted
 ${username} started disk mount from snapshot '${snapshotID}' of Hyper-V virtual machine '${snappableName}' to Hyper-V virtual machine '${targetSnappableName}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 CreateHypervExportFailed
 
@@ -5564,11 +4644,9 @@ CreateHypervExportFailed
 ${username} failed to export snapshot '${snapshotID}' of Hyper-V virtual machine '${snappableName}'. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 CreateHypervExportStarted
 
@@ -5576,11 +4654,9 @@ CreateHypervExportStarted
 ${username} started exporting snapshot '${snapshotID}' of Hyper-V virtual machine '${snappableName}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 CreateHypervInstantRecoveryFailed
 
@@ -5588,11 +4664,9 @@ CreateHypervInstantRecoveryFailed
 ${username} failed to instant recover snapshot '${snapshotID}' of Hyper-V Virtual Machine '${snappableName}'. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 CreateHypervInstantRecoveryStarted
 
@@ -5600,11 +4674,9 @@ CreateHypervInstantRecoveryStarted
 ${username} started instant recovery of Hyper-V Virtual Machine '${snappableName}' with snapshot '${snapshotID}'
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 CreateHypervMountFailed
 
@@ -5612,11 +4684,9 @@ CreateHypervMountFailed
 ${username} failed to mount snapshot '${snapshotID}' of Hyper-V Virtual Machine '${snappableName}'. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 CreateHypervMountStarted
 
@@ -5624,11 +4694,9 @@ CreateHypervMountStarted
 ${username} started live mount of snapshot '${snapshotID}' of Hyper-V Virtual Machine '${snappableName}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 CreateInplaceHypervExportFailed
 
@@ -5636,11 +4704,9 @@ CreateInplaceHypervExportFailed
 ${username} failed to in-place export snapshot '${snapshotID}' of Hyper-V virtual machine '${snappableName}'. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 CreateInplaceHypervExportStarted
 
@@ -5648,11 +4714,9 @@ CreateInplaceHypervExportStarted
 ${username} started in-place exporting snapshot '${snapshotID}' of Hyper-V virtual machine '${snappableName}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 DownloadVmLevelFilesFailed
 
@@ -5660,11 +4724,9 @@ DownloadVmLevelFilesFailed
 ${username} failed to download virtual-machine-level files from snapshot '${snapshotID}' of Hyper-V virtual machine '${snappableName}'. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 DownloadVmLevelFilesStarted
 
@@ -5672,11 +4734,9 @@ DownloadVmLevelFilesStarted
 ${username} started downloading virtual-machine-level files from snapshot '${snapshotID}' of Hyper-V virtual machine '${snappableName}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 HypervBatchExportSingleFailed
 
@@ -5684,11 +4744,9 @@ HypervBatchExportSingleFailed
 ${username} failed to start a job to export a snapshot of Hyper-V Virtual Machine '${vmId}'(${vmName}). Failure reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 HypervBatchExportSingleStarted
 
@@ -5696,11 +4754,9 @@ HypervBatchExportSingleStarted
 ${username} started a job to export a snapshot of Hyper-V Virtual Machine '${vmId}'(${vmName}).
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 HypervBatchInstantRecoverSingleFailed
 
@@ -5708,11 +4764,9 @@ HypervBatchInstantRecoverSingleFailed
 ${username} failed to start a job to instant recover a snapshot on Hyper-V Virtual Machine '${vmId}'(${vmName}). Failure reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 HypervBatchInstantRecoverSingleStarted
 
@@ -5720,11 +4774,9 @@ HypervBatchInstantRecoverSingleStarted
 ${username} started a job to instant recover a snapshot on Hyper-V Virtual Machine '${vmId}'(${vmName}).
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 HypervBatchMountSingleFailed
 
@@ -5732,11 +4784,9 @@ HypervBatchMountSingleFailed
 ${username} failed to start a job to mount a snapshot of Hyper-V Virtual Machine '${vmId}'(${vmName}). Failure reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 HypervBatchMountSingleStarted
 
@@ -5744,11 +4794,9 @@ HypervBatchMountSingleStarted
 ${username} started a job to mount a snapshot of Hyper-V Virtual Machine '${vmId}'(${vmName}).
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 ## k8s
 
@@ -5760,11 +4808,9 @@ K8sExportSnapshotStarted
 ${userName} started a job to export Kubernetes snapshot ${snapshotId}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 K8sExportSnapshotStartFailed
 
@@ -5772,11 +4818,9 @@ K8sExportSnapshotStartFailed
 ${userName} failed to start a job to export Kubernetes snapshot  ${snapshotId}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |         |
-| ------------ | ----------- | ------- |
-| **Critical** | **Failure** | **Yes** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **Yes**     |
 
 K8sRestoreSnapshotStarted
 
@@ -5784,11 +4828,9 @@ K8sRestoreSnapshotStarted
 ${userName} started a job to restore Kubernetes snapshot ${snapshotId}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 K8sRestoreSnapshotStartFailed
 
@@ -5796,11 +4838,9 @@ K8sRestoreSnapshotStartFailed
 ${userName} failed to start a job to restore Kubernetes snapshot  ${snapshotId}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |         |
-| ------------ | ----------- | ------- |
-| **Critical** | **Failure** | **Yes** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **Yes**     |
 
 ## kupr
 
@@ -5812,11 +4852,9 @@ KuprNamespaceExportCanceled
 Canceled export of namespace snapshot with snapshotID ${snapshotID} to Kubernetes Namespace ${targetNamespace} in Cluster ${targetClusterName} with clusterID ${targetClusterUUID}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |              |        |
-| -------- | ------------ | ------ |
-| **Info** | **Canceled** | **No** |
+| Severity | Status       | Audit Event |
+| -------- | ------------ | ----------- |
+| **Info** | **Canceled** | **No**      |
 
 KuprNamespaceExportCanceling
 
@@ -5824,11 +4862,9 @@ KuprNamespaceExportCanceling
 Canceling export of namespace snapshot with snapshotID ${snapshotID} to Kubernetes Namespace ${targetNamespace} in Cluster ${targetClusterName} with clusterID ${targetClusterUUID}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |               |        |
-| -------- | ------------- | ------ |
-| **Info** | **Canceling** | **No** |
+| Severity | Status        | Audit Event |
+| -------- | ------------- | ----------- |
+| **Info** | **Canceling** | **No**      |
 
 KuprNamespaceExportCompleted
 
@@ -5836,11 +4872,9 @@ KuprNamespaceExportCompleted
 Successfully exported namespace snapshot with snapshotID ${snapshotID} to Kubernetes Namespace ${targetNamespace} in Cluster ${targetClusterName} with clusterID ${targetClusterUUID}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 KuprNamespaceExportFailed
 
@@ -5848,11 +4882,9 @@ KuprNamespaceExportFailed
 Export of namespace snapshot with snapshotID ${snapshotID} to Kubernetes Namespace ${targetNamespace} in Cluster ${targetClusterName} with clusterID ${targetClusterUUID} failed. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Failure** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **No**      |
 
 KuprNamespaceExportFilesetFailure
 
@@ -5860,11 +4892,9 @@ KuprNamespaceExportFilesetFailure
 Failed to export PVC data for PVC ${pvcID}. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|             |                 |        |
-| ----------- | --------------- | ------ |
-| **Warning** | **TaskFailure** | **No** |
+| Severity    | Status          | Audit Event |
+| ----------- | --------------- | ----------- |
+| **Warning** | **TaskFailure** | **No**      |
 
 KuprNamespaceExportFilesetSnapshotTaskFailed
 
@@ -5872,11 +4902,9 @@ KuprNamespaceExportFilesetSnapshotTaskFailed
 Failed to export PVC data from snapshotID ${snapshotID} to Kubernetes Namespace ${targetNamespace} in Cluster ${targetClusterName}. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|             |                 |        |
-| ----------- | --------------- | ------ |
-| **Warning** | **TaskFailure** | **No** |
+| Severity    | Status          | Audit Event |
+| ----------- | --------------- | ----------- |
+| **Warning** | **TaskFailure** | **No**      |
 
 KuprNamespaceExportFilesetSnapshotTaskStarted
 
@@ -5884,11 +4912,9 @@ KuprNamespaceExportFilesetSnapshotTaskStarted
 Started export of PVC data from snapshotID ${snapshotID} to Kubernetes Namespace ${targetNamespace} in Cluster ${targetClusterName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 KuprNamespaceExportFilesetSnapshotTaskSuccess
 
@@ -5896,11 +4922,9 @@ KuprNamespaceExportFilesetSnapshotTaskSuccess
 Successfully exported PVC data from snapshotID ${snapshotID} to Kubernetes Namespace ${targetNamespace} in Cluster ${targetClusterName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 KuprNamespaceExportResourceSnapshotTaskError
 
@@ -5908,11 +4932,9 @@ KuprNamespaceExportResourceSnapshotTaskError
 Errors occurred while trying to export resource definition(s) from snapshotID ${snapshotID} to Kubernetes Namespace ${targetNamespace} in cluster ${targetClusterName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|             |                 |        |
-| ----------- | --------------- | ------ |
-| **Warning** | **TaskSuccess** | **No** |
+| Severity    | Status          | Audit Event |
+| ----------- | --------------- | ----------- |
+| **Warning** | **TaskSuccess** | **No**      |
 
 KuprNamespaceExportResourceSnapshotTaskFailed
 
@@ -5920,11 +4942,9 @@ KuprNamespaceExportResourceSnapshotTaskFailed
 Failed to export resource definition(s) from snapshotID ${snapshotID} to Kubernetes Namespace ${targetNamespace} in Cluster ${targetClusterName}. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|             |                 |        |
-| ----------- | --------------- | ------ |
-| **Warning** | **TaskFailure** | **No** |
+| Severity    | Status          | Audit Event |
+| ----------- | --------------- | ----------- |
+| **Warning** | **TaskFailure** | **No**      |
 
 KuprNamespaceExportResourceSnapshotTaskStarted
 
@@ -5932,11 +4952,9 @@ KuprNamespaceExportResourceSnapshotTaskStarted
 Started export of resource definition(s) from snapshotID ${snapshotID} to Kubernetes Namespace ${targetNamespace} in Cluster ${targetClusterName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 KuprNamespaceExportResourceSnapshotTaskSuccess
 
@@ -5944,11 +4962,9 @@ KuprNamespaceExportResourceSnapshotTaskSuccess
 Successfully exported resource definition(s) from snapshotID ${snapshotID} to Kubernetes Namespace ${targetNamespace} in Cluster ${targetClusterName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 KuprNamespaceExportResourceSnapshotTaskWarning
 
@@ -5956,11 +4972,9 @@ KuprNamespaceExportResourceSnapshotTaskWarning
 Skipped exporting resource definition(s) from snapshotID ${snapshotID} to Kubernetes Namespace ${targetNamespace} in cluster ${targetClusterName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|             |                 |        |
-| ----------- | --------------- | ------ |
-| **Warning** | **TaskSuccess** | **No** |
+| Severity    | Status          | Audit Event |
+| ----------- | --------------- | ----------- |
+| **Warning** | **TaskSuccess** | **No**      |
 
 KuprNamespaceExportStarted
 
@@ -5968,11 +4982,9 @@ KuprNamespaceExportStarted
 Started export of namespace snapshot with snapshotID ${snapshotID} to Kubernetes Namespace ${targetNamespace} in Cluster ${targetClusterName} with clusterID ${targetClusterUUID}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 KuprNamespaceRestoreCanceled
 
@@ -5980,11 +4992,9 @@ KuprNamespaceRestoreCanceled
 Canceled restore of namespace snapshot with snapshotID ${snapshotID} to Kubernetes Namespace ${targetNamespace} in Cluster ${targetClusterName} with clusterID ${targetClusterUUID}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |              |        |
-| -------- | ------------ | ------ |
-| **Info** | **Canceled** | **No** |
+| Severity | Status       | Audit Event |
+| -------- | ------------ | ----------- |
+| **Info** | **Canceled** | **No**      |
 
 KuprNamespaceRestoreCanceling
 
@@ -5992,11 +5002,9 @@ KuprNamespaceRestoreCanceling
 Canceling restore of namespace snapshot with snapshotID ${snapshotID} to Kubernetes Namespace ${targetNamespace} in Cluster ${targetClusterName} with clusterID ${targetClusterUUID}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |               |        |
-| -------- | ------------- | ------ |
-| **Info** | **Canceling** | **No** |
+| Severity | Status        | Audit Event |
+| -------- | ------------- | ----------- |
+| **Info** | **Canceling** | **No**      |
 
 KuprNamespaceRestoreCompleted
 
@@ -6004,11 +5012,9 @@ KuprNamespaceRestoreCompleted
 Successfully restored namespace snapshot with snapshotID ${snapshotID} to Kubernetes Namespace ${targetNamespace} in Cluster ${targetClusterName} with clusterID ${targetClusterUUID}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 KuprNamespaceRestoreFailed
 
@@ -6016,11 +5022,9 @@ KuprNamespaceRestoreFailed
 Restore of namespace snapshot with snapshotID ${snapshotID} to Kubernetes Namespace ${targetNamespace} in Cluster ${targetClusterName} with clusterID ${targetClusterUUID} failed. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Failure** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **No**      |
 
 KuprNamespaceRestoreFilesetFailure
 
@@ -6028,11 +5032,9 @@ KuprNamespaceRestoreFilesetFailure
 Failed to restore PVC data for PVC ${pvcID}. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|             |                 |        |
-| ----------- | --------------- | ------ |
-| **Warning** | **TaskFailure** | **No** |
+| Severity    | Status          | Audit Event |
+| ----------- | --------------- | ----------- |
+| **Warning** | **TaskFailure** | **No**      |
 
 KuprNamespaceRestoreFilesetSnapshotTaskFailed
 
@@ -6040,11 +5042,9 @@ KuprNamespaceRestoreFilesetSnapshotTaskFailed
 Failed to restore PVC data from snapshotID ${snapshotID} to Kubernetes Namespace ${targetNamespace} in Cluster ${targetClusterName}. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|             |                 |        |
-| ----------- | --------------- | ------ |
-| **Warning** | **TaskFailure** | **No** |
+| Severity    | Status          | Audit Event |
+| ----------- | --------------- | ----------- |
+| **Warning** | **TaskFailure** | **No**      |
 
 KuprNamespaceRestoreFilesetSnapshotTaskStarted
 
@@ -6052,11 +5052,9 @@ KuprNamespaceRestoreFilesetSnapshotTaskStarted
 Started restore of PVC data from snapshotID ${snapshotID} to Kubernetes Namespace ${targetNamespace} in Cluster ${targetClusterName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 KuprNamespaceRestoreFilesetSnapshotTaskSuccess
 
@@ -6064,11 +5062,9 @@ KuprNamespaceRestoreFilesetSnapshotTaskSuccess
 Successfully restored PVC data from snapshotID ${snapshotID} to Kubernetes Namespace ${targetNamespace} in Cluster ${targetClusterName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 KuprNamespaceRestoreResourceSnapshotTaskError
 
@@ -6076,11 +5072,9 @@ KuprNamespaceRestoreResourceSnapshotTaskError
 Errors occurred while trying to restore resource definition(s) from snapshotID ${snapshotID} to Kubernetes Namespace ${targetNamespace} in cluster ${targetClusterName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|             |                 |        |
-| ----------- | --------------- | ------ |
-| **Warning** | **TaskSuccess** | **No** |
+| Severity    | Status          | Audit Event |
+| ----------- | --------------- | ----------- |
+| **Warning** | **TaskSuccess** | **No**      |
 
 KuprNamespaceRestoreResourceSnapshotTaskFailed
 
@@ -6088,11 +5082,9 @@ KuprNamespaceRestoreResourceSnapshotTaskFailed
 Failed to restore resource definition(s) from snapshotID ${snapshotID} to Kubernetes Namespace ${targetNamespace} in Cluster ${targetClusterName}. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|             |                 |        |
-| ----------- | --------------- | ------ |
-| **Warning** | **TaskFailure** | **No** |
+| Severity    | Status          | Audit Event |
+| ----------- | --------------- | ----------- |
+| **Warning** | **TaskFailure** | **No**      |
 
 KuprNamespaceRestoreResourceSnapshotTaskStarted
 
@@ -6100,11 +5092,9 @@ KuprNamespaceRestoreResourceSnapshotTaskStarted
 Started restore of resource definition(s) from snapshotID ${snapshotID} to Kubernetes Namespace ${targetNamespace} in Cluster ${targetClusterName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 KuprNamespaceRestoreResourceSnapshotTaskSuccess
 
@@ -6112,11 +5102,9 @@ KuprNamespaceRestoreResourceSnapshotTaskSuccess
 Successfully restored resource definition(s) from snapshotID ${snapshotID} to Kubernetes Namespace ${targetNamespace} in Cluster ${targetClusterName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 KuprNamespaceRestoreResourceSnapshotTaskWarning
 
@@ -6124,11 +5112,9 @@ KuprNamespaceRestoreResourceSnapshotTaskWarning
 Skipped restoring resource definition(s) from snapshotID ${snapshotID} to Kubernetes Namespace ${targetNamespace} in cluster ${targetClusterName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|             |                 |        |
-| ----------- | --------------- | ------ |
-| **Warning** | **TaskSuccess** | **No** |
+| Severity    | Status          | Audit Event |
+| ----------- | --------------- | ----------- |
+| **Warning** | **TaskSuccess** | **No**      |
 
 KuprNamespaceRestoreStarted
 
@@ -6136,11 +5122,9 @@ KuprNamespaceRestoreStarted
 Started restore of namespace snapshot with snapshotID ${snapshotID} to Kubernetes Namespace ${targetNamespace} in Cluster ${targetClusterName} with clusterID ${targetClusterUUID}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 KuprRecoverySkipPVCWarning
 
@@ -6148,11 +5132,9 @@ KuprRecoverySkipPVCWarning
 Restoring PersistentVolumeClaim(PVC) ${pvcName} as an empty PVC since  its backup was skipped. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|             |                 |        |
-| ----------- | --------------- | ------ |
-| **Warning** | **TaskSuccess** | **No** |
+| Severity    | Status          | Audit Event |
+| ----------- | --------------- | ----------- |
+| **Warning** | **TaskSuccess** | **No**      |
 
 ## managed_volume
 
@@ -6164,11 +5146,9 @@ InternalExportSlaSnapshot
 ${username} exported the snapshot '${snapshot}' of SLA Managed Volume '${mv}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 InternalExportSlaSnapshotFailure
 
@@ -6176,11 +5156,9 @@ InternalExportSlaSnapshotFailure
 ${username} failed to export the snapshot '${snapshot}' of SLA Managed Volume '${mv}'. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 InternalExportSnapshot
 
@@ -6188,11 +5166,9 @@ InternalExportSnapshot
 ${username} exported the snapshot '${snapshot}' of Managed Volume '${mv}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 InternalExportSnapshotFailure
 
@@ -6200,11 +5176,9 @@ InternalExportSnapshotFailure
 ${username} failed to export the snapshot '${snapshot}' of Managed Volume '${mv}'. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 V1DeleteSnapshotExport
 
@@ -6212,11 +5186,9 @@ V1DeleteSnapshotExport
 ${username} deleted the live mount '${mount}' of Managed Volume '${mv}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 V1DeleteSnapshotExportFailure
 
@@ -6224,11 +5196,9 @@ V1DeleteSnapshotExportFailure
 ${username} failed to delete the live mount '${mount}' of Managed Volume '${mv}'. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 ## mongo_source
 
@@ -6240,11 +5210,9 @@ MongoRecoveryFailure
 ${username} failed to start recovery of objects [${recoveryObjects}] on the MongoDB source '${sourceName}'. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 MongoRecoveryStarted
 
@@ -6252,11 +5220,9 @@ MongoRecoveryStarted
 ${username} started recovery of objects [${recoveryObjects}] on the MongoDB source '${sourceName}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 ## mount
 
@@ -6268,11 +5234,9 @@ CreateLiveMount
 ${username} started a job to mount '${objId}' (${objName}) of type ${objType}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 CreateLiveMountFailed
 
@@ -6280,11 +5244,9 @@ CreateLiveMountFailed
 ${username} failed to start a job to mount '${objId}' (${objName}) of type ${objType}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 ## mssql
 
@@ -6296,11 +5258,9 @@ AssignMssqlSlaDomain
 ${username} assigned SLA Domain to Mssql database '${dbName}'
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 AssignMssqlSlaDomainFailed
 
@@ -6308,11 +5268,9 @@ AssignMssqlSlaDomainFailed
 ${username} failed to assign SLA Domain to Mssql database '${dbName}'
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 BulkExportMssqlDbFailure
 
@@ -6320,11 +5278,9 @@ BulkExportMssqlDbFailure
 ${username} was unable to export multiple SQL Server databases to  instance '${destinationInstanceName}'. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 BulkExportMssqlDbStarted
 
@@ -6332,11 +5288,9 @@ BulkExportMssqlDbStarted
 ${username} started exporting multiple SQL Server databases to instance  '${destinationInstanceName}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 CreateMssqlLogShippingConfiguration
 
@@ -6344,11 +5298,9 @@ CreateMssqlLogShippingConfiguration
 ${username} created log shipping for '${dbName}'
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 CreateMssqlLogShippingConfigurationFailed
 
@@ -6356,11 +5308,9 @@ CreateMssqlLogShippingConfigurationFailed
 ${username} failed to create log shipping for Mssql database '${dbName}'
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 ExportMssqlDbFailure
 
@@ -6368,11 +5318,9 @@ ExportMssqlDbFailure
 ${username} failed exporting database '${source}' to '${destination}' Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 ExportMssqlDbStarted
 
@@ -6380,11 +5328,9 @@ ExportMssqlDbStarted
 ${username} started exporting database '${source}' to '${destination}'
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 RestoreMssqlDbFailure
 
@@ -6392,11 +5338,9 @@ RestoreMssqlDbFailure
 ${username} failed to restore '${dbName}'. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 RestoreMssqlDbStarted
 
@@ -6404,11 +5348,9 @@ RestoreMssqlDbStarted
 ${username} began restoring '${dbName}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 ## mysqldb_instance
 
@@ -6420,11 +5362,9 @@ DeleteMysqldbInstanceLiveMountFailure
 ${username} failed to trigger the deletion of a Live Mount for the MySQL instance ${instanceName}. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 DeleteMysqldbInstanceLiveMountStarted
 
@@ -6432,11 +5372,9 @@ DeleteMysqldbInstanceLiveMountStarted
 ${username} triggered the deletion of a Live Mount for the MySQL instance ${instanceName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 ## ncd
 
@@ -6448,11 +5386,9 @@ RecoverPaths
 ${username} successfully started recovery of paths '${paths}' from snapshot '${snapshot}' to '${share}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 RecoverPathsFailed
 
@@ -6460,11 +5396,9 @@ RecoverPathsFailed
 ${username} was unable to start recovery of paths '${paths}' from snapshot '${snapshot}' to '${share}'. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|             |             |         |
-| ----------- | ----------- | ------- |
-| **Warning** | **Failure** | **Yes** |
+| Severity    | Status      | Audit Event |
+| ----------- | ----------- | ----------- |
+| **Warning** | **Failure** | **Yes**     |
 
 ## nutanix
 
@@ -6476,11 +5410,9 @@ CreateNutanixDiskMountFailed
 ${username} failed to mount disks from snapshot '${snapshotID}' of Nutanix virtual machine '${snappableName}' to Nutanix virtual machine '${targetSnappableName}'. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 CreateNutanixDiskMountStarted
 
@@ -6488,11 +5420,9 @@ CreateNutanixDiskMountStarted
 ${username} started disk mount from snapshot '${snapshotID}' of Nutanix virtual machine '${snappableName}' to Nutanix virtual machine '${targetSnappableName}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 CreateNutanixInstantRecoveryFailed
 
@@ -6500,11 +5430,9 @@ CreateNutanixInstantRecoveryFailed
 ${username} failed to instantly recover from snapshot '${snapshotID}' of workload '${snappableName}'. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 CreateNutanixInstantRecoveryStarted
 
@@ -6512,11 +5440,9 @@ CreateNutanixInstantRecoveryStarted
 ${username} started a job to instantly recover from snapshot '${snapshotID}' of workload '${snappableName}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 DownloadNutanixVdiskFailed
 
@@ -6524,11 +5450,9 @@ DownloadNutanixVdiskFailed
 ${username} failed to download virtual disks from snapshot '${snapshotID}' of Nutanix virtual machine '${snappableName}'. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 DownloadNutanixVdiskStarted
 
@@ -6536,11 +5460,9 @@ DownloadNutanixVdiskStarted
 ${username} started downloading virtual disks from snapshot '${snapshotID}' of Nutanix virtual machine '${snappableName}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 NutanixBatchExportSingleFailed
 
@@ -6548,11 +5470,9 @@ NutanixBatchExportSingleFailed
 ${username} failed to start a job to export a snapshot of Nutanix Virtual Machine '${vmId}'(${vmName}). Failure reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 NutanixBatchExportSingleStarted
 
@@ -6560,11 +5480,9 @@ NutanixBatchExportSingleStarted
 ${username} started a job to export a snapshot of Nutanix Virtual Machine '${vmId}'(${vmName}).
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 NutanixBatchMountSingleFailed
 
@@ -6572,11 +5490,9 @@ NutanixBatchMountSingleFailed
 ${username} failed to start a job to mount a snapshot of Nutanix Virtual Machine '${vmId}'(${vmName}). Failure reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 NutanixBatchMountSingleStarted
 
@@ -6584,11 +5500,9 @@ NutanixBatchMountSingleStarted
 ${username} started a job to mount a snapshot of Nutanix Virtual Machine '${vmId}'(${vmName}).
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 NutanixVmMountMigrationStarted
 
@@ -6596,11 +5510,9 @@ NutanixVmMountMigrationStarted
 ${username} started a job to migrate ${snappableType} mount '${mountId}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 NutanixVmMountMigrationStartFailed
 
@@ -6608,11 +5520,9 @@ NutanixVmMountMigrationStartFailed
 ${username} failed to start a job to migrate ${snappableType} mount '${mountId}'. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 PatchNutanixVmMountStarted
 
@@ -6620,11 +5530,9 @@ PatchNutanixVmMountStarted
 ${username} started a job to patch ${snappableType} mount '${mountId}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 PatchNutanixVmMountStartFailed
 
@@ -6632,11 +5540,9 @@ PatchNutanixVmMountStartFailed
 ${username} failed to start a job to patch ${snappableType} mount '${mountId}'. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 ## o365
 
@@ -6648,11 +5554,9 @@ M365BackupStorageNewLocationRestoreSucceeded
 Successfully completed restore of ${sourceObject} Microsoft  365 ${snappableType} data to ${newLocation}
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 M365BackupStorageRestoreFailed
 
@@ -6660,11 +5564,9 @@ M365BackupStorageRestoreFailed
 Failed to perform ${restoreType} of ${sourceObject} Microsoft 365  ${snappableType} data. Reason: ${reason}
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Failure** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **No**      |
 
 M365BackupStorageRestoreStarted
 
@@ -6672,11 +5574,9 @@ M365BackupStorageRestoreStarted
 Started ${restoreType} of ${sourceObject} Microsoft 365 ${snappableType} data.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 M365PublishBackupStorageInplaceRestoreSucceeded
 
@@ -6684,11 +5584,9 @@ M365PublishBackupStorageInplaceRestoreSucceeded
 Successfully completed in-place restore of ${sourceObject} Microsoft  365 ${snappableType} data.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 M365PublishBackupStorageRestoreProgress
 
@@ -6696,11 +5594,9 @@ M365PublishBackupStorageRestoreProgress
 Restore is in progress.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Running** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Running** | **No**      |
 
 O365ExchangeExportSuccess
 
@@ -6708,11 +5604,9 @@ O365ExchangeExportSuccess
 Successfully exported ${numEmails} emails and ${numExportedAttachments} attachments in ${numFolders} folders (total size: ${bytesUploaded}) from the mailbox of ${sourceUser}. Skipped data: ${numSkippedFolders} folders, ${numSkippedEmails} emails  and ${numSkippedAttachments} attachments (estimated total skipped size:  ${bytesSkipped}). The download link has been generated successfully: ${exportUrl}
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 O365ExchangeInplaceRestoreFailure
 
@@ -6720,11 +5614,9 @@ O365ExchangeInplaceRestoreFailure
 Completed ${inplaceRestoreUIName} of ${numEmails} emails,  ${numEvents} calendar events, ${numContacts} contacts, and  ${numAttachments} attachments (skipped ${skippedAttachments}  attachments) in ${numFolders} folders from ${sourceUser} Microsoft 365  Exchange to ${destinationUser}. Failed to restore ${failurePercent}%% of the items.  For more information, click here: ${failedItemsLink}
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Failure** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **No**      |
 
 O365ExchangeInplaceRestoreFailureWithRenamedCalendars
 
@@ -6732,11 +5624,9 @@ O365ExchangeInplaceRestoreFailureWithRenamedCalendars
 Completed ${inplaceRestoreUIName} of ${numEmails} emails,  ${numEvents} calendar events, ${numContacts} contacts, and  ${numAttachments} attachments (skipped ${skippedAttachments} attachments)  in ${numFolders} folders from ${sourceUser} Microsoft 365 Exchange to  ${destinationUser}. (Renamed ${RenamesDueToNameConflictsCount} calendars due to naming conflict). Failed to restore ${failurePercent}%% of the items.  For more information, click here: ${failedItemsLink}
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Failure** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **No**      |
 
 O365ExchangeInplaceRestorePartialSuccess
 
@@ -6744,11 +5634,9 @@ O365ExchangeInplaceRestorePartialSuccess
 Completed ${inplaceRestoreUIName} of ${numEmails} emails,  ${numEvents} calendar events, ${numContacts} contacts, and  ${numAttachments} attachments (skipped ${skippedAttachments}  attachments) in ${numFolders} folders from ${sourceUser} Microsoft 365  Exchange to ${destinationUser}. Failed to restore ${failurePercent}%% of the items.  For more information, click here: ${failedItemsLink}
 ```
 
-Severity | Status | Audit Event | |
-
-|             |                    |        |
-| ----------- | ------------------ | ------ |
-| **Warning** | **PartialSuccess** | **No** |
+| Severity    | Status             | Audit Event |
+| ----------- | ------------------ | ----------- |
+| **Warning** | **PartialSuccess** | **No**      |
 
 O365ExchangeInplaceRestorePartialSuccessWithRenamedCalendars
 
@@ -6756,11 +5644,9 @@ O365ExchangeInplaceRestorePartialSuccessWithRenamedCalendars
 Completed ${inplaceRestoreUIName} of ${numEmails} emails,  ${numEvents} calendar events, ${numContacts} contacts, and  ${numAttachments} attachments (skipped ${skippedAttachments} attachments)  in ${numFolders} folders from ${sourceUser} Microsoft 365 Exchange to  ${destinationUser}. (Renamed ${RenamesDueToNameConflictsCount} calendars due to naming conflict). Failed to restore ${failurePercent}%% of the items.  For more information, click here: ${failedItemsLink}
 ```
 
-Severity | Status | Audit Event | |
-
-|             |                    |        |
-| ----------- | ------------------ | ------ |
-| **Warning** | **PartialSuccess** | **No** |
+| Severity    | Status             | Audit Event |
+| ----------- | ------------------ | ----------- |
+| **Warning** | **PartialSuccess** | **No**      |
 
 O365ExchangeInplaceRestoreSuccess
 
@@ -6768,11 +5654,9 @@ O365ExchangeInplaceRestoreSuccess
 Successfully completed ${inplaceRestoreUIName} of ${numEmails} emails,  ${numEvents} calendar events, ${numContacts} contacts, and  ${numAttachments} attachments (skipped ${skippedAttachments}  attachments) in ${numFolders} folders from ${sourceUser} Microsoft 365  Exchange to ${destinationUser}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 O365ExchangeInplaceRestoreSuccessWithRenamedCalendars
 
@@ -6780,11 +5664,9 @@ O365ExchangeInplaceRestoreSuccessWithRenamedCalendars
 Successfully completed ${inplaceRestoreUIName} of ${numEmails} emails,  ${numEvents} calendar events, ${numContacts} contacts, and  ${numAttachments} attachments (skipped ${skippedAttachments}  attachments) in ${numFolders} folders from ${sourceUser} Microsoft 365  Exchange to ${destinationUser}. (Renamed ${RenamesDueToNameConflictsCount} calendars due to naming  conflict).
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 O365ExchangeRestoreFailure
 
@@ -6792,11 +5674,9 @@ O365ExchangeRestoreFailure
 Completed restore of ${numEmails} emails, ${numEvents} calendar events, and ${numAttachments} attachments (skipped ${skippedAttachments} attachments) in ${numFolders} folders from ${sourceUser} Microsoft 365 Exchange to ${destinationUser}. Failed to restore ${failurePercent}%% of the items.  For more information, click here: ${failedItemsLink}
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Failure** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **No**      |
 
 O365ExchangeRestorePartialSuccess
 
@@ -6804,11 +5684,9 @@ O365ExchangeRestorePartialSuccess
 Completed restore of ${numEmails} emails, ${numEvents} calendar events, and ${numAttachments} attachments (skipped ${skippedAttachments} attachments) in ${numFolders} folders from ${sourceUser} Microsoft 365 Exchange to ${destinationUser}. Failed to restore ${failurePercent}%% of the items.  For more information, click here: ${failedItemsLink}
 ```
 
-Severity | Status | Audit Event | |
-
-|             |                    |        |
-| ----------- | ------------------ | ------ |
-| **Warning** | **PartialSuccess** | **No** |
+| Severity    | Status             | Audit Event |
+| ----------- | ------------------ | ----------- |
+| **Warning** | **PartialSuccess** | **No**      |
 
 O365ExchangeRestoreSuccess
 
@@ -6816,11 +5694,9 @@ O365ExchangeRestoreSuccess
 Successfully restored ${numEmails} emails, ${numEvents} calendar events, and ${numAttachments} attachments (skipped ${skippedAttachments} attachments) in ${numFolders} folders from ${sourceUser} Microsoft 365 Exchange to ${destinationUser}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 O365ExchangeRestoreWithContactsFailure
 
@@ -6828,11 +5704,9 @@ O365ExchangeRestoreWithContactsFailure
 Completed restore of ${numEmails} emails, ${numEvents} calendar events, ${numContacts} contacts, and ${numAttachments} attachments (skipped ${skippedAttachments} attachments) in ${numFolders} folders from ${sourceUser} Microsoft 365 Exchange to ${destinationUser}. Failed to restore ${failurePercent}%% of the items.  For more information, click here: ${failedItemsLink}
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Failure** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **No**      |
 
 O365ExchangeRestoreWithContactsPartialSuccess
 
@@ -6840,11 +5714,9 @@ O365ExchangeRestoreWithContactsPartialSuccess
 Completed restore of ${numEmails} emails, ${numEvents} calendar events, ${numContacts} contacts, and ${numAttachments} attachments (skipped ${skippedAttachments} attachments) in ${numFolders} folders from ${sourceUser} Microsoft 365 Exchange to ${destinationUser}. Failed to restore ${failurePercent}%% of the items.  For more information, click here: ${failedItemsLink}
 ```
 
-Severity | Status | Audit Event | |
-
-|             |                    |        |
-| ----------- | ------------------ | ------ |
-| **Warning** | **PartialSuccess** | **No** |
+| Severity    | Status             | Audit Event |
+| ----------- | ------------------ | ----------- |
+| **Warning** | **PartialSuccess** | **No**      |
 
 O365ExchangeRestoreWithContactsSuccess
 
@@ -6852,11 +5724,9 @@ O365ExchangeRestoreWithContactsSuccess
 Successfully restored ${numEmails} emails, ${numEvents} calendar events, ${numContacts} contacts, and ${numAttachments} attachments (skipped ${skippedAttachments} attachments) in ${numFolders} folders from ${sourceUser} Microsoft 365 Exchange to ${destinationUser}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 O365ExportDownloaded
 
@@ -6864,11 +5734,9 @@ O365ExportDownloaded
 ${userID} accessed the download link for the exported Microsoft 365 ${objectType} data of ${objectName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 O365ExportFailed
 
@@ -6876,11 +5744,9 @@ O365ExportFailed
 ${userID} failed to export ${sourceUser} Microsoft 365 ${snappableType} data${optionalDescription}. Failure reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |         |
-| ------------ | ----------- | ------- |
-| **Critical** | **Failure** | **Yes** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **Yes**     |
 
 O365ExportFailed
 
@@ -6888,11 +5754,9 @@ O365ExportFailed
 Failed to export ${sourceUser} Microsoft 365 ${snappableType} data because ${reason}
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Failure** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **No**      |
 
 O365ExportStarted
 
@@ -6900,11 +5764,9 @@ O365ExportStarted
 ${userID} started export of ${sourceUser} Microsoft 365 ${snappableType} data${optionalDescription}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 O365ExportStarted
 
@@ -6912,11 +5774,9 @@ O365ExportStarted
 Started export of ${sourceUser} Microsoft 365 ${snappableType} data
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 O365FullTeamChannelCreationCompleted
 
@@ -6924,11 +5784,9 @@ O365FullTeamChannelCreationCompleted
 Finished preparing and creating channels for recovery. Successfully prepared and created ${successfulChannels} channel(s). Failed to create ${failedChannels} channel(s).
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 O365FullTeamChannelCreationStart
 
@@ -6936,11 +5794,9 @@ O365FullTeamChannelCreationStart
 Preparing and creating channels for recovery.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Running** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Running** | **No**      |
 
 O365FullTeamChannelRestoreCompleted
 
@@ -6948,11 +5804,9 @@ O365FullTeamChannelRestoreCompleted
 Successfully restored ${numRestoredMessages} message(s) across ${numChannelsRestored} channel(s). Skipped restore of ${numChannelsSkipped} channel(s). Failed to restore ${numFailedMessages} message(s).
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 O365FullTeamChannelRestoreSkip
 
@@ -6960,11 +5814,9 @@ O365FullTeamChannelRestoreSkip
 Skipping restore of Channel '${channelName}'. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|             |                 |        |
-| ----------- | --------------- | ------ |
-| **Warning** | **TaskSuccess** | **No** |
+| Severity    | Status          | Audit Event |
+| ----------- | --------------- | ----------- |
+| **Warning** | **TaskSuccess** | **No**      |
 
 O365FullTeamChannelRestoreStart
 
@@ -6972,11 +5824,9 @@ O365FullTeamChannelRestoreStart
 Restoring ${numRestoredMessages} message(s) across ${numChannels} channel(s).
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 O365FullTeamCreationCompleted
 
@@ -6984,11 +5834,9 @@ O365FullTeamCreationCompleted
 Successfully created the new team for recovery.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 O365FullTeamCreationStart
 
@@ -6996,11 +5844,9 @@ O365FullTeamCreationStart
 Preparing the team for recovery.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Running** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Running** | **No**      |
 
 O365FullTeamPreparationCompleted
 
@@ -7008,11 +5854,9 @@ O365FullTeamPreparationCompleted
 Successfully prepared the team for recovery.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 O365FullTeamRestoreFailure
 
@@ -7020,11 +5864,9 @@ O365FullTeamRestoreFailure
 Completed ${inplaceRestoreUIName} of ${numChannelsRestored}  channel(s) and ${numSitesRestored} site(s) from Team '${sourceObject}' to ${destinationObject}. Skipped restore of ${numChannelsSkipped}  channel(s) and ${numSitesSkipped} site(s). Failed to restore ${failurePercent}%% of the items.  For more information, click here: ${failedItemsLink}
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Failure** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **No**      |
 
 O365FullTeamRestorePartialSuccess
 
@@ -7032,11 +5874,9 @@ O365FullTeamRestorePartialSuccess
 Completed ${inplaceRestoreUIName} of ${numChannelsRestored}  channel(s) and ${numSitesRestored} site(s) from Team '${sourceObject}' to ${destinationObject}. Skipped restore of ${numChannelsSkipped}  channel(s) and ${numSitesSkipped} site(s). Failed to restore ${failurePercent}%% of the items.  For more information, click here: ${failedItemsLink}
 ```
 
-Severity | Status | Audit Event | |
-
-|             |                    |        |
-| ----------- | ------------------ | ------ |
-| **Warning** | **PartialSuccess** | **No** |
+| Severity    | Status             | Audit Event |
+| ----------- | ------------------ | ----------- |
+| **Warning** | **PartialSuccess** | **No**      |
 
 O365FullTeamRestoreSkippedObjectsPartialSuccess
 
@@ -7044,11 +5884,9 @@ O365FullTeamRestoreSkippedObjectsPartialSuccess
 Completed ${inplaceRestoreUIName} of ${numChannelsRestored}  channel(s) and ${numSitesRestored} site(s) from Team '${sourceObject}' to ${destinationObject}. Skipped restore of ${numChannelsSkipped}  channel(s) and ${numSitesSkipped} site(s).
 ```
 
-Severity | Status | Audit Event | |
-
-|             |                    |        |
-| ----------- | ------------------ | ------ |
-| **Warning** | **PartialSuccess** | **No** |
+| Severity    | Status             | Audit Event |
+| ----------- | ------------------ | ----------- |
+| **Warning** | **PartialSuccess** | **No**      |
 
 O365FullTeamRestoreSuccess
 
@@ -7056,11 +5894,9 @@ O365FullTeamRestoreSuccess
 Successfully completed ${inplaceRestoreUIName} of ${numChannelsRestored}  channel(s) and ${numSitesRestored} site(s) from Team '${sourceObject}' to ${destinationObject}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 O365FullTeamSharepointSiteRestoreCompleted
 
@@ -7068,11 +5904,9 @@ O365FullTeamSharepointSiteRestoreCompleted
 Successfully restored ${numSitesRestored} site(s). Skipped  restore of ${numSitesSkipped} site(s).
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 O365FullTeamSharepointSiteRestoreProgress
 
@@ -7080,11 +5914,9 @@ O365FullTeamSharepointSiteRestoreProgress
 Restored ${numSites} site(s) out of ${totalSites} site(s).
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Running** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Running** | **No**      |
 
 O365FullTeamSharepointSiteRestoreStart
 
@@ -7092,11 +5924,9 @@ O365FullTeamSharepointSiteRestoreStart
 Restoring ${numSites} site(s).
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Running** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Running** | **No**      |
 
 O365FullTeamSharepointSiteSkip
 
@@ -7104,11 +5934,9 @@ O365FullTeamSharepointSiteSkip
 Skipping restore of Sharepoint Site ${siteUrl}. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|             |                 |        |
-| ----------- | --------------- | ------ |
-| **Warning** | **TaskSuccess** | **No** |
+| Severity    | Status          | Audit Event |
+| ----------- | --------------- | ----------- |
+| **Warning** | **TaskSuccess** | **No**      |
 
 O365InplaceRestoreCanceled
 
@@ -7116,11 +5944,9 @@ O365InplaceRestoreCanceled
 Canceled ${inplaceRestoreUIName} of Microsoft 365 ${snappableType}  data for ${user}
 ```
 
-Severity | Status | Audit Event | |
-
-|          |              |        |
-| -------- | ------------ | ------ |
-| **Info** | **Canceled** | **No** |
+| Severity | Status       | Audit Event |
+| -------- | ------------ | ----------- |
+| **Info** | **Canceled** | **No**      |
 
 O365InplaceRestoreFailed
 
@@ -7128,11 +5954,9 @@ O365InplaceRestoreFailed
 ${userEmail} unable to start ${inplaceRestoreUIName} of Microsoft 365 ${snappableType} from ${sourceSnappableName} to ${destinationSnappableName}. Failure reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |         |
-| ------------ | ----------- | ------- |
-| **Critical** | **Failure** | **Yes** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **Yes**     |
 
 O365InplaceRestoreFailed
 
@@ -7140,11 +5964,9 @@ O365InplaceRestoreFailed
 Failed to perform ${inplaceRestoreUIName} Microsoft 365 ${snappableType} data from ${sourceUser} to ${destinationUser} because of ${reason}
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Failure** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **No**      |
 
 O365InplaceRestoreStarted
 
@@ -7152,11 +5974,9 @@ O365InplaceRestoreStarted
 ${userEmail} started ${inplaceRestoreUIName} of Microsoft 365 ${snappableType}  from '${sourceSnappableName}' to '${destinationSnappableName}'${optionalDescription}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 O365InplaceRestoreStarted
 
@@ -7164,11 +5984,9 @@ O365InplaceRestoreStarted
 Started ${inplaceRestoreUIName} of Microsoft 365 ${snappableType} data from ${sourceUser} to ${destinationUser}
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 O365LogRestoreAttachmentTooLarge
 
@@ -7176,11 +5994,9 @@ O365LogRestoreAttachmentTooLarge
 Could not restore ${numTooLargeAttachments} attachment(s) due to Microsoft API limitations. Manual recovery is possible.
 ```
 
-Severity | Status | Audit Event | |
-
-|             |                 |        |
-| ----------- | --------------- | ------ |
-| **Warning** | **TaskSuccess** | **No** |
+| Severity    | Status          | Audit Event |
+| ----------- | --------------- | ----------- |
+| **Warning** | **TaskSuccess** | **No**      |
 
 O365LogRestoreMetrics
 
@@ -7188,11 +6004,9 @@ O365LogRestoreMetrics
 Restored ${numEmails} e-mails and ${numAttachments} attachments
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 O365MailBoxRestoreSuccess
 
@@ -7200,11 +6014,9 @@ O365MailBoxRestoreSuccess
 Successfully restored ${numEmails} email(s) and ${numAttachments} attachment(s) from ${sourceUser} Microsoft 365 ${snappableType} to ${destinationUser}
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 O365OnedriveExportSuccess
 
@@ -7212,11 +6024,9 @@ O365OnedriveExportSuccess
 Successfully exported ${numRestoredFiles} file(s) (total uploaded size: ${bytesUploaded}) and ${numRestoredFolders} folder(s) from ${sourceUser} Microsoft 365 Onedrive. The download link has been generated successfully: ${exportUrl}
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 O365OnedriveInplaceRestoreFailure
 
@@ -7224,11 +6034,9 @@ O365OnedriveInplaceRestoreFailure
 Completed ${inplaceRestoreUIName} of ${numRestoredFiles} files (total uploaded size: ${bytesUploaded}) and ${numRestoredFolders}  folders from Microsoft 365 OneDrive ${sourceUser} to ${destinationUser}. Failed to restore ${failurePercent}%% of the items.  For more information, click here: ${failedItemsLink}
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Failure** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **No**      |
 
 O365OnedriveInplaceRestoreFailureWithRenamedItems
 
@@ -7236,11 +6044,9 @@ O365OnedriveInplaceRestoreFailureWithRenamedItems
 Completed ${inplaceRestoreUIName} of ${numRestoredFiles} files (total uploaded size: ${bytesUploaded}) and ${numRestoredFolders} folders from Microsoft 365 OneDrive ${sourceUser} to ${destinationUser}. (Renamed ${RenamesDueToNameConflictsCount} files and folders due to naming conflict  and ${RenamesDueToItemLockedCount} files that were locked for editing  and were not available for overwriting). Failed to restore  ${failurePercent}%% of the items. For more information, click here: ${failedItemsLink}
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Failure** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **No**      |
 
 O365OnedriveInplaceRestorePartialSuccess
 
@@ -7248,11 +6054,9 @@ O365OnedriveInplaceRestorePartialSuccess
 Completed ${inplaceRestoreUIName} of ${numRestoredFiles} files (total uploaded size: ${bytesUploaded}) and ${numRestoredFolders}  folders from Microsoft 365 OneDrive ${sourceUser} to ${destinationUser}. Failed to restore ${failurePercent}%% of the items.  For more information, click here: ${failedItemsLink}
 ```
 
-Severity | Status | Audit Event | |
-
-|             |                    |        |
-| ----------- | ------------------ | ------ |
-| **Warning** | **PartialSuccess** | **No** |
+| Severity    | Status             | Audit Event |
+| ----------- | ------------------ | ----------- |
+| **Warning** | **PartialSuccess** | **No**      |
 
 O365OnedriveInplaceRestorePartialSuccessWithRenamedItems
 
@@ -7260,11 +6064,9 @@ O365OnedriveInplaceRestorePartialSuccessWithRenamedItems
 Completed ${inplaceRestoreUIName} of ${numRestoredFiles} files (total uploaded size: ${bytesUploaded}) and ${numRestoredFolders} folders from Microsoft 365 OneDrive ${sourceUser} to ${destinationUser}. (Renamed ${RenamesDueToNameConflictsCount} files and folders due to naming conflict  and ${RenamesDueToItemLockedCount} files that were locked for editing  and were not available for overwriting). Failed to restore  ${failurePercent}%% of the items.  For more information, click here: ${failedItemsLink}
 ```
 
-Severity | Status | Audit Event | |
-
-|             |                    |        |
-| ----------- | ------------------ | ------ |
-| **Warning** | **PartialSuccess** | **No** |
+| Severity    | Status             | Audit Event |
+| ----------- | ------------------ | ----------- |
+| **Warning** | **PartialSuccess** | **No**      |
 
 O365OnedriveInplaceRestoreSuccess
 
@@ -7272,11 +6074,9 @@ O365OnedriveInplaceRestoreSuccess
 Successfully completed ${inplaceRestoreUIName} of ${numRestoredFiles} files (total uploaded size: ${bytesUploaded}) and ${numRestoredFolders} folders from Microsoft 365 OneDrive ${sourceUser} to ${destinationUser}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 O365OnedriveInplaceRestoreSuccessWithRenamedItems
 
@@ -7284,11 +6084,9 @@ O365OnedriveInplaceRestoreSuccessWithRenamedItems
 Successfully completed ${inplaceRestoreUIName} of ${numRestoredFiles} files (total uploaded size: ${bytesUploaded}) and ${numRestoredFolders} folders from Microsoft 365 OneDrive ${sourceUser} to ${destinationUser}. (Renamed ${RenamesDueToNameConflictsCount} files and folders due to naming conflict and ${RenamesDueToItemLockedCount} files that were  locked for editing and were not available for overwriting).
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 O365OnedriveRestoreFailure
 
@@ -7296,11 +6094,9 @@ O365OnedriveRestoreFailure
 Completed restore of ${numRestoredFiles} file(s) (total uploaded size:  ${bytesUploaded}) and ${numRestoredFolders} folder(s) from ${sourceUser} Microsoft 365 OneDrive to ${destinationUser}. Failed to restore  ${failurePercent}%% of the items.  For more information, click here: ${failedItemsLink}
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Failure** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **No**      |
 
 O365OnedriveRestorePartialSuccess
 
@@ -7308,11 +6104,9 @@ O365OnedriveRestorePartialSuccess
 Completed restore of ${numRestoredFiles} file(s) (total uploaded size:  ${bytesUploaded}) and ${numRestoredFolders} folder(s) from ${sourceUser} Microsoft 365 OneDrive to ${destinationUser}. Failed to restore  ${failurePercent}%% of the items.  For more information, click here: ${failedItemsLink}
 ```
 
-Severity | Status | Audit Event | |
-
-|             |                    |        |
-| ----------- | ------------------ | ------ |
-| **Warning** | **PartialSuccess** | **No** |
+| Severity    | Status             | Audit Event |
+| ----------- | ------------------ | ----------- |
+| **Warning** | **PartialSuccess** | **No**      |
 
 O365OnedriveRestoreSuccess
 
@@ -7320,11 +6114,9 @@ O365OnedriveRestoreSuccess
 Successfully restored ${numRestoredFiles} file(s) (total uploaded size: ${bytesUploaded}) and ${numRestoredFolders} folder(s) from ${sourceUser} Microsoft 365 OneDrive to ${destinationUser}
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 O365PublishRestoreProgress
 
@@ -7332,11 +6124,9 @@ O365PublishRestoreProgress
 Successfully recovered ${restoredItems} out of total ${totalItems}  items (${itemsSinceLastUpdate} items in last  ${progressIntervalInMins} minutes)
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Running** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Running** | **No**      |
 
 O365PublishSharePointSiteRestoreProgress
 
@@ -7344,11 +6134,9 @@ O365PublishSharePointSiteRestoreProgress
 Recovered ${leafObjectsRestored} out of total ${totalLeafObjects} drives/lists. Total items recovered so far: ${totalItemsRestored}  (${itemsSinceLastUpdate} items in last ${progressIntervalInMins}  minutes). Currently recovering [${objectInProgress}], its progress so  far: ${itemsRestoredInCurrentObject} out of ${totalItemsInCurrentObject}  items
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Running** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Running** | **No**      |
 
 O365RelicRestoreStarted
 
@@ -7356,11 +6144,9 @@ O365RelicRestoreStarted
 Restoring the relic object
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Running** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Running** | **No**      |
 
 O365RelicRestoreSucceeded
 
@@ -7368,11 +6154,9 @@ O365RelicRestoreSucceeded
 Successfully restored the relic object. It will be visible on RSC once your subscription is refreshed
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 O365RestoreCanceled
 
@@ -7380,11 +6164,9 @@ O365RestoreCanceled
 Canceled restore of ${user} Microsoft 365 ${snappableType}
 ```
 
-Severity | Status | Audit Event | |
-
-|          |              |        |
-| -------- | ------------ | ------ |
-| **Info** | **Canceled** | **No** |
+| Severity | Status       | Audit Event |
+| -------- | ------------ | ----------- |
+| **Info** | **Canceled** | **No**      |
 
 O365RestoredItems
 
@@ -7392,11 +6174,9 @@ O365RestoredItems
 List of restored items in the CSV file: ${downloadLink}
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 O365RestoreFailed
 
@@ -7404,11 +6184,9 @@ O365RestoreFailed
 ${userID} failed to start restore of O365 ${snappableType} from ${sourceSnappableName} to ${destinationSnappableName}. Failure reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |         |
-| ------------ | ----------- | ------- |
-| **Critical** | **Failure** | **Yes** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **Yes**     |
 
 O365RestoreFailed
 
@@ -7416,11 +6194,9 @@ O365RestoreFailed
 Failed to restore ${sourceUser} Microsoft 365 ${snappableType} data to ${destinationUser} because ${reason}
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Failure** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **No**      |
 
 O365RestoreStarted
 
@@ -7428,11 +6204,9 @@ O365RestoreStarted
 ${userID} started restore of Microsoft 365 ${snappableType} from '${sourceSnappableName}' to '${destinationSnappableName}'${optionalDescription}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 O365RestoreStarted
 
@@ -7440,11 +6214,9 @@ O365RestoreStarted
 Started restore of ${sourceUser} Microsoft 365 ${snappableType} data to ${destinationUser}
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 O365RestoreSuccess
 
@@ -7452,11 +6224,9 @@ O365RestoreSuccess
 Successfully restored ${sourceUser} Office 365 ${snappableType} data to ${destinationUser} account
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 O365SearchInProgress
 
@@ -7464,11 +6234,9 @@ O365SearchInProgress
 Preparing items for the recovery
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Running** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Running** | **No**      |
 
 O365SearchPhaseCompleted
 
@@ -7476,11 +6244,9 @@ O365SearchPhaseCompleted
 Successfully prepared ${totalItems} items for recovery
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 O365SharedTeamsInfo
 
@@ -7488,11 +6254,9 @@ O365SharedTeamsInfo
 Following teams originally belonged to Channel ${sourceChannel}. Please invite them to the newly created Shared Channel to complete their membership. ${sourceTenantTeams} ${externalTeams}
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 O365SharePointDriveExportSuccess
 
@@ -7500,11 +6264,9 @@ O365SharePointDriveExportSuccess
 Successfully exported ${numRestoredFiles} file(s) (total uploaded size: ${bytesUploaded}) and ${numRestoredFolders} folder(s) from ${sourceObject} Microsoft 365 ${snappableType}.The download link has been generated successfully: ${exportUrl}
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 O365SharePointDriveRestoreSuccess
 
@@ -7512,11 +6274,9 @@ O365SharePointDriveRestoreSuccess
 Successfully restored ${numRestoredFiles} file(s) (total uploaded size: ${bytesUploaded}) and ${numRestoredFolders} folder(s) from ${sourceObject} Microsoft 365 ${snappableType} to ${destinationObject}
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 O365SharePointListRestoreSuccess
 
@@ -7524,11 +6284,9 @@ O365SharePointListRestoreSuccess
 Successfully restored ${NumRestoredItems} item(s) and ${numRestoredFolders} folder(s) from ${sourceObject} Office 365 ${snappableType} to ${destinationObject}
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 O365SharePointSiteHierarchyRestoreCompleted
 
@@ -7536,11 +6294,9 @@ O365SharePointSiteHierarchyRestoreCompleted
 Successfully prepared site hierarchy, initiating recovery of the drives/lists
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 O365SharePointSiteHierarchyRestoreInProgress
 
@@ -7548,11 +6304,9 @@ O365SharePointSiteHierarchyRestoreInProgress
 Preparing site hierarchy for the recovery
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Running** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Running** | **No**      |
 
 O365SharePointSiteInplaceRestoreFailure
 
@@ -7560,11 +6314,9 @@ O365SharePointSiteInplaceRestoreFailure
 Completed ${inplaceRestoreUIName} of ${numRestoredSites} site(s),  ${numRestoredDocLibs} document libraries,  ${numRestoredLists} list(s),  ${numRestoredWebParts} page libraries, ${numRestoredFiles} file item(s),  ${numRestoredListItems} list item(s), and  ${numRestoredFolders} folder(s)  (total uploaded size: ${bytesUploaded})  from ${sourceObject}  Microsoft 365 ${snappableType} to ${destinationObject}. Failed to restore ${failurePercent}%% of the items.  For more information, click here: ${failedItemsLink}
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Failure** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **No**      |
 
 O365SharePointSiteInplaceRestoreFailureWithRenamedItems
 
@@ -7572,11 +6324,9 @@ O365SharePointSiteInplaceRestoreFailureWithRenamedItems
 Completed ${inplaceRestoreUIName} of ${numRestoredSites} site(s),  ${numRestoredDocLibs} document libraries,  ${numRestoredLists} list(s),  ${numRestoredWebParts} page libraries, ${numRestoredFiles} file item(s),  ${numRestoredListItems} list item(s), and  ${numRestoredFolders} folder(s)  (total uploaded size: ${bytesUploaded})  from ${sourceObject}  Microsoft 365 ${snappableType} to ${destinationObject} (Renamed ${RenamesDueToNameConflictsCount} files and folders due to naming conflict and ${RenamesDueToItemLockedCount} files that were  locked for editing and were not available for overwriting). Failed to restore ${failurePercent}%% of the items. For more information, click here: ${failedItemsLink}
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Failure** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **No**      |
 
 O365SharePointSiteInplaceRestorePartialSuccess
 
@@ -7584,11 +6334,9 @@ O365SharePointSiteInplaceRestorePartialSuccess
 Completed ${inplaceRestoreUIName} of ${numRestoredSites} site(s),  ${numRestoredDocLibs} document libraries,  ${numRestoredLists} list(s),  ${numRestoredWebParts} page libraries, ${numRestoredFiles} file item(s),  ${numRestoredListItems} list item(s), and  ${numRestoredFolders} folder(s)  (total uploaded size: ${bytesUploaded})  from ${sourceObject}  Microsoft 365 ${snappableType} to ${destinationObject}. Failed to restore ${failurePercent}%% of the items.  For more information, click here: ${failedItemsLink}
 ```
 
-Severity | Status | Audit Event | |
-
-|             |                    |        |
-| ----------- | ------------------ | ------ |
-| **Warning** | **PartialSuccess** | **No** |
+| Severity    | Status             | Audit Event |
+| ----------- | ------------------ | ----------- |
+| **Warning** | **PartialSuccess** | **No**      |
 
 O365SharePointSiteInplaceRestorePartialSuccessWithRenamedItems
 
@@ -7596,11 +6344,9 @@ O365SharePointSiteInplaceRestorePartialSuccessWithRenamedItems
 Completed ${inplaceRestoreUIName} of ${numRestoredSites} site(s),  ${numRestoredDocLibs} document libraries,  ${numRestoredLists} list(s),  ${numRestoredWebParts} page libraries, ${numRestoredFiles} file item(s),  ${numRestoredListItems} list item(s), and  ${numRestoredFolders} folder(s)  (total uploaded size: ${bytesUploaded})  from ${sourceObject}  Microsoft 365 ${snappableType} to ${destinationObject} (Renamed ${RenamesDueToNameConflictsCount} files and folders due to naming conflict and ${RenamesDueToItemLockedCount} files that were  locked for editing and were not available for overwriting). Failed to restore ${failurePercent}%% of the items.  For more information, click here: ${failedItemsLink}
 ```
 
-Severity | Status | Audit Event | |
-
-|             |                    |        |
-| ----------- | ------------------ | ------ |
-| **Warning** | **PartialSuccess** | **No** |
+| Severity    | Status             | Audit Event |
+| ----------- | ------------------ | ----------- |
+| **Warning** | **PartialSuccess** | **No**      |
 
 O365SharePointSiteInplaceRestoreSuccess
 
@@ -7608,11 +6354,9 @@ O365SharePointSiteInplaceRestoreSuccess
 Successfully completed ${inplaceRestoreUIName} of ${numRestoredSites} site(s),  ${numRestoredDocLibs} document libraries,  ${numRestoredLists} list(s),  ${numRestoredWebParts} page libraries, ${numRestoredFiles} file item(s),  ${numRestoredListItems} list item(s), and  ${numRestoredFolders} folder(s)  (total uploaded size: ${bytesUploaded})  from ${sourceObject}  Microsoft 365 ${snappableType} to ${destinationObject}
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 O365SharePointSiteInplaceRestoreSuccessWithRenamedItems
 
@@ -7620,11 +6364,9 @@ O365SharePointSiteInplaceRestoreSuccessWithRenamedItems
 Successfully completed ${inplaceRestoreUIName} of ${numRestoredSites} site(s),  ${numRestoredDocLibs} document libraries,  ${numRestoredLists} list(s),  ${numRestoredWebParts} page libraries, ${numRestoredFiles} file item(s),  ${numRestoredListItems} list item(s), and  ${numRestoredFolders} folder(s)  (total uploaded size: ${bytesUploaded})  from ${sourceObject}  Microsoft 365 ${snappableType} to ${destinationObject} (Renamed ${RenamesDueToNameConflictsCount} files and folders due to naming conflict and ${RenamesDueToItemLockedCount} files that were  locked for editing and were not available for overwriting).
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 O365SharePointSiteRestoreFailure
 
@@ -7632,11 +6374,9 @@ O365SharePointSiteRestoreFailure
 Completed restore of ${numRestoredSites} site(s),  ${numRestoredDocLibs} document libraries,  ${numRestoredLists} list(s),  ${numRestoredWebParts} page libraries, ${numRestoredFiles} file item(s),  ${numRestoredListItems} list item(s), and  ${numRestoredFolders} folder(s)  (total uploaded size: ${bytesUploaded})  from ${sourceObject}  Microsoft 365 ${snappableType} to ${destinationObject}. Failed to  restore ${failurePercent}%% of the items.  For more information, click here: ${failedItemsLink}
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Failure** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **No**      |
 
 O365SharePointSiteRestorePartialSuccess
 
@@ -7644,11 +6384,9 @@ O365SharePointSiteRestorePartialSuccess
 Completed restore of ${numRestoredSites} site(s),  ${numRestoredDocLibs} document libraries,  ${numRestoredLists} list(s),  ${numRestoredWebParts} page libraries, ${numRestoredFiles} file item(s),  ${numRestoredListItems} list item(s), and  ${numRestoredFolders} folder(s)  (total uploaded size: ${bytesUploaded})  from ${sourceObject}  Microsoft 365 ${snappableType} to ${destinationObject}. Failed to  restore ${failurePercent}%% of the items.  For more information, click here: ${failedItemsLink}
 ```
 
-Severity | Status | Audit Event | |
-
-|             |                    |        |
-| ----------- | ------------------ | ------ |
-| **Warning** | **PartialSuccess** | **No** |
+| Severity    | Status             | Audit Event |
+| ----------- | ------------------ | ----------- |
+| **Warning** | **PartialSuccess** | **No**      |
 
 O365SharePointSiteRestoreSuccess
 
@@ -7656,11 +6394,9 @@ O365SharePointSiteRestoreSuccess
 Successfully restored ${numRestoredSites} site(s),  ${numRestoredDocLibs} document libraries,  ${numRestoredLists} list(s),  ${numRestoredWebParts} page libraries, ${numRestoredFiles} file item(s),  ${numRestoredListItems} list item(s), and  ${numRestoredFolders} folder(s)  (total uploaded size: ${bytesUploaded})  from ${sourceObject}  Microsoft 365 ${snappableType} to ${destinationObject}
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 O365TeamConversationsInplaceRestoreFailure
 
@@ -7668,11 +6404,9 @@ O365TeamConversationsInplaceRestoreFailure
 Completed ${inplaceRestoreUIName} of ${numRestoredMessages} message(s) and ${numRestoredFiles} attachment(s) from Team  '${sourceObject}' (channels: ${sourceChannels}) to ${destinationObject}. Failed to restore ${failurePercent}%% of the items.  For more information, click here: ${failedItemsLink}
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Failure** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **No**      |
 
 O365TeamConversationsInplaceRestoreFailureWithWarning
 
@@ -7680,11 +6414,9 @@ O365TeamConversationsInplaceRestoreFailureWithWarning
 Completed ${inplaceRestoreUIName} of ${numRestoredMessages} message(s) and ${numRestoredFiles} attachment(s) from Team  '${sourceObject}' (channels: ${sourceChannels}) to ${destinationObject}. Failed to restore ${failurePercent}%% of the items.  For more information, click here: ${failedItemsLink} .  Warning: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Failure** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **No**      |
 
 O365TeamConversationsInplaceRestorePartialSuccess
 
@@ -7692,11 +6424,9 @@ O365TeamConversationsInplaceRestorePartialSuccess
 Completed ${inplaceRestoreUIName} of ${numRestoredMessages}  message(s) and ${numRestoredFiles} attachment(s) from Team  '${sourceObject}' (channels: ${sourceChannels}) to ${destinationObject}. Failed to restore ${failurePercent}%% of the items.  For more information, click here: ${failedItemsLink}
 ```
 
-Severity | Status | Audit Event | |
-
-|             |                    |        |
-| ----------- | ------------------ | ------ |
-| **Warning** | **PartialSuccess** | **No** |
+| Severity    | Status             | Audit Event |
+| ----------- | ------------------ | ----------- |
+| **Warning** | **PartialSuccess** | **No**      |
 
 O365TeamConversationsInplaceRestorePartialSuccessWithWarning
 
@@ -7704,11 +6434,9 @@ O365TeamConversationsInplaceRestorePartialSuccessWithWarning
 Completed ${inplaceRestoreUIName} of ${numRestoredMessages} message(s) and ${numRestoredFiles} attachment(s) from Team  '${sourceObject}' (channels: ${sourceChannels}) to ${destinationObject}. Failed to restore ${failurePercent}%% of the items.  For more information, click here: ${failedItemsLink} .  Warning: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|             |                    |        |
-| ----------- | ------------------ | ------ |
-| **Warning** | **PartialSuccess** | **No** |
+| Severity    | Status             | Audit Event |
+| ----------- | ------------------ | ----------- |
+| **Warning** | **PartialSuccess** | **No**      |
 
 O365TeamConversationsInplaceRestoreSuccess
 
@@ -7716,11 +6444,9 @@ O365TeamConversationsInplaceRestoreSuccess
 Successfully completed ${inplaceRestoreUIName} of ${numRestoredMessages} message(s) and ${numRestoredFiles} attachment(s) from Team  '${sourceObject}' (channels: ${sourceChannels}) to ${destinationObject}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 O365TeamConversationsInplaceRestoreWarning
 
@@ -7728,11 +6454,9 @@ O365TeamConversationsInplaceRestoreWarning
 Successfully completed ${inplaceRestoreUIName} of ${numRestoredMessages}  message(s) and ${numRestoredFiles} attachment(s) from Team  '${sourceObject}' (channels: ${sourceChannels}) to ${destinationObject}. Warning: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|             |             |        |
-| ----------- | ----------- | ------ |
-| **Warning** | **Success** | **No** |
+| Severity    | Status      | Audit Event |
+| ----------- | ----------- | ----------- |
+| **Warning** | **Success** | **No**      |
 
 O365TeamConversationsRestoreFailure
 
@@ -7740,11 +6464,9 @@ O365TeamConversationsRestoreFailure
 Completed restore of ${numRestoredMessages} message(s) and ${numRestoredFiles} attachment(s) from Team '${sourceObject}' (channels: ${sourceChannels}) to ${destinationObject}. Failed to restore  ${failurePercent}%% of the items.  For more information, click here: ${failedItemsLink}
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Failure** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **No**      |
 
 O365TeamConversationsRestoreFailureWithWarning
 
@@ -7752,11 +6474,9 @@ O365TeamConversationsRestoreFailureWithWarning
 Completed restore of ${numRestoredMessages} message(s) and ${numRestoredFiles} attachment(s) from Team '${sourceObject}' (channels: ${sourceChannels}) to ${destinationObject}. Failed to restore  ${failurePercent}%% of the items.  For more information, click here: ${failedItemsLink} .  Warning: ${reason}
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Failure** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **No**      |
 
 O365TeamConversationsRestorePartialSuccess
 
@@ -7764,11 +6484,9 @@ O365TeamConversationsRestorePartialSuccess
 Completed restore of ${numRestoredMessages} message(s) and ${numRestoredFiles} attachment(s) from Team '${sourceObject}' (channels: ${sourceChannels}) to ${destinationObject}. Failed to restore  ${failurePercent}%% of the items.  For more information, click here: ${failedItemsLink}
 ```
 
-Severity | Status | Audit Event | |
-
-|             |                    |        |
-| ----------- | ------------------ | ------ |
-| **Warning** | **PartialSuccess** | **No** |
+| Severity    | Status             | Audit Event |
+| ----------- | ------------------ | ----------- |
+| **Warning** | **PartialSuccess** | **No**      |
 
 O365TeamConversationsRestorePartialSuccessWithWarning
 
@@ -7776,11 +6494,9 @@ O365TeamConversationsRestorePartialSuccessWithWarning
 Completed restore of ${numRestoredMessages} message(s) and ${numRestoredFiles} attachment(s) from Team '${sourceObject}' (channels: ${sourceChannels}) to ${destinationObject}. Failed to restore  ${failurePercent}%% of the items.  For more information, click here: ${failedItemsLink} .  Warning: ${reason}
 ```
 
-Severity | Status | Audit Event | |
-
-|             |                    |        |
-| ----------- | ------------------ | ------ |
-| **Warning** | **PartialSuccess** | **No** |
+| Severity    | Status             | Audit Event |
+| ----------- | ------------------ | ----------- |
+| **Warning** | **PartialSuccess** | **No**      |
 
 O365TeamConversationsRestoreSuccess
 
@@ -7788,11 +6504,9 @@ O365TeamConversationsRestoreSuccess
 Successfully restored ${numRestoredMessages} message(s) and ${numRestoredFiles} attachment(s) from Team '${sourceObject}' (channels: ${sourceChannels}) to ${destinationObject}
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 O365TeamConversationsRestoreWarning
 
@@ -7800,11 +6514,9 @@ O365TeamConversationsRestoreWarning
 Successfully restored ${numRestoredMessages} message(s) and ${numRestoredFiles} attachment(s) from Team '${sourceObject}' (channels: ${sourceChannels}) to ${destinationObject}. Warning: ${reason}
 ```
 
-Severity | Status | Audit Event | |
-
-|             |             |        |
-| ----------- | ----------- | ------ |
-| **Warning** | **Success** | **No** |
+| Severity    | Status      | Audit Event |
+| ----------- | ----------- | ----------- |
+| **Warning** | **Success** | **No**      |
 
 O365TeamFilesExportSuccess
 
@@ -7812,11 +6524,9 @@ O365TeamFilesExportSuccess
 Successfully exported ${numRestoredFiles} file(s) (total uploaded size: ${bytesUploaded}) and ${numRestoredFolders} folder(s) from Team '${sourceObject}'. The download link has been generated successfully: ${exportUrl}
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 O365TeamFilesInplaceRestoreFailure
 
@@ -7824,11 +6534,9 @@ O365TeamFilesInplaceRestoreFailure
 Completed ${inplaceRestoreUIName} of ${numRestoredFiles}  file(s) (total uploaded size: ${bytesUploaded}) and  ${numRestoredFolders} folder(s) from Team '${sourceObject}' to  ${destinationObject}. Failed to restore ${failurePercent}%% of the  items.  For more information, click here: ${failedItemsLink}
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Failure** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **No**      |
 
 O365TeamFilesInplaceRestorePartialSuccess
 
@@ -7836,11 +6544,9 @@ O365TeamFilesInplaceRestorePartialSuccess
 Completed ${inplaceRestoreUIName} of ${numRestoredFiles}  file(s) (total uploaded size: ${bytesUploaded}) and  ${numRestoredFolders} folder(s) from Team '${sourceObject}' to  ${destinationObject}. Failed to restore ${failurePercent}%% of the  items.  For more information, click here: ${failedItemsLink}
 ```
 
-Severity | Status | Audit Event | |
-
-|             |                    |        |
-| ----------- | ------------------ | ------ |
-| **Warning** | **PartialSuccess** | **No** |
+| Severity    | Status             | Audit Event |
+| ----------- | ------------------ | ----------- |
+| **Warning** | **PartialSuccess** | **No**      |
 
 O365TeamFilesInplaceRestoreSuccess
 
@@ -7848,11 +6554,9 @@ O365TeamFilesInplaceRestoreSuccess
 Successfully completed ${inplaceRestoreUIName} of ${numRestoredFiles}  file(s) (total uploaded size: ${bytesUploaded}) and ${numRestoredFolders} folder(s) from Team '${sourceObject}' to ${destinationObject}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 O365TeamFilesRestoreFailure
 
@@ -7860,11 +6564,9 @@ O365TeamFilesRestoreFailure
 Completed restore of ${numRestoredFiles} file(s) (total uploaded size:  ${bytesUploaded}) and ${numRestoredFolders} folder(s) from Team  '${sourceObject}' to ${destinationObject}. Failed to restore  ${failurePercent}%% of the items.  For more information, click here: ${failedItemsLink}
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Failure** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **No**      |
 
 O365TeamFilesRestorePartialSuccess
 
@@ -7872,11 +6574,9 @@ O365TeamFilesRestorePartialSuccess
 Completed restore of ${numRestoredFiles} file(s) (total uploaded size:  ${bytesUploaded}) and ${numRestoredFolders} folder(s) from Team  '${sourceObject}' to ${destinationObject}. Failed to restore  ${failurePercent}%% of the items.  For more information, click here: ${failedItemsLink}
 ```
 
-Severity | Status | Audit Event | |
-
-|             |                    |        |
-| ----------- | ------------------ | ------ |
-| **Warning** | **PartialSuccess** | **No** |
+| Severity    | Status             | Audit Event |
+| ----------- | ------------------ | ----------- |
+| **Warning** | **PartialSuccess** | **No**      |
 
 O365TeamFilesRestoreSuccess
 
@@ -7884,11 +6584,9 @@ O365TeamFilesRestoreSuccess
 Successfully restored ${numRestoredFiles} file(s) (total uploaded size: ${bytesUploaded}) and ${numRestoredFolders} folder(s) from Team '${sourceObject}' to ${destinationObject}
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 O365TeamFullChannelInplaceRestoreFailure
 
@@ -7896,11 +6594,9 @@ O365TeamFullChannelInplaceRestoreFailure
 Completed ${inplaceRestoreUIName} of full channel  '${channelName}' from Team '${sourceObject}' to ${destinationObject}. ${numRestoredMessages} message(s), ${numRestoredFiles} file(s) (total  uploaded size: ${bytesUploaded}), and ${numRestoredFolders} folder(s)  were restored. Failed to restore ${failurePercent}%% of the items.  For more information, click here: ${failedItemsLink}
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Failure** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **No**      |
 
 O365TeamFullChannelInplaceRestoreFailureWithWarning
 
@@ -7908,11 +6604,9 @@ O365TeamFullChannelInplaceRestoreFailureWithWarning
 Completed ${inplaceRestoreUIName} of full channel  '${channelName}' from Team '${sourceObject}' to ${destinationObject}. ${numRestoredMessages} message(s), ${numRestoredFiles} file(s)  (total uploaded size: ${bytesUploaded}), and ${numRestoredFolders}  folder(s) were restored. Failed to restore ${failurePercent}%% of the  items.  For more information, click here: ${failedItemsLink} Warning: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Failure** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **No**      |
 
 O365TeamFullChannelInplaceRestorePartialSuccess
 
@@ -7920,11 +6614,9 @@ O365TeamFullChannelInplaceRestorePartialSuccess
 Completed ${inplaceRestoreUIName} of full channel  '${channelName}' from Team '${sourceObject}' to ${destinationObject}.  ${numRestoredMessages} message(s), ${numRestoredFiles} file(s)  (total uploaded size: ${bytesUploaded}), and ${numRestoredFolders}  folder(s) were restored. Failed to restore ${failurePercent}%% of the  items.  For more information, click here: ${failedItemsLink}
 ```
 
-Severity | Status | Audit Event | |
-
-|             |                    |        |
-| ----------- | ------------------ | ------ |
-| **Warning** | **PartialSuccess** | **No** |
+| Severity    | Status             | Audit Event |
+| ----------- | ------------------ | ----------- |
+| **Warning** | **PartialSuccess** | **No**      |
 
 O365TeamFullChannelInplaceRestorePartialSuccessWithWarning
 
@@ -7932,11 +6624,9 @@ O365TeamFullChannelInplaceRestorePartialSuccessWithWarning
 Completed ${inplaceRestoreUIName} of full channel  '${channelName}' from Team '${sourceObject}' to ${destinationObject}. ${numRestoredMessages} message(s), ${numRestoredFiles} file(s) (total  uploaded size: ${bytesUploaded}), and ${numRestoredFolders} folder(s)  were restored. Failed to restore ${failurePercent}%% of the items.  Formore information, click here: ${failedItemsLink} Warning: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|             |                    |        |
-| ----------- | ------------------ | ------ |
-| **Warning** | **PartialSuccess** | **No** |
+| Severity    | Status             | Audit Event |
+| ----------- | ------------------ | ----------- |
+| **Warning** | **PartialSuccess** | **No**      |
 
 O365TeamFullChannelInplaceRestoreSuccess
 
@@ -7944,11 +6634,9 @@ O365TeamFullChannelInplaceRestoreSuccess
 Successfully completed ${inplaceRestoreUIName} of full channel  '${channelName}' from Team '${sourceObject}' to ${destinationObject}. ${numRestoredMessages} message(s), ${numRestoredFiles} file(s)  (total uploaded size: ${bytesUploaded}), and ${numRestoredFolders}  folder(s) were restored.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 O365TeamFullChannelInplaceRestoreWarning
 
@@ -7956,11 +6644,9 @@ O365TeamFullChannelInplaceRestoreWarning
 Successfully completed ${inplaceRestoreUIName} of full channel  '${channelName}' from Team '${sourceObject}' to ${destinationObject}. ${numRestoredMessages} message(s), ${numRestoredFiles} file(s) (total  uploaded size: ${bytesUploaded}), and ${numRestoredFolders} folder(s)  were restored. Warning: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|             |             |        |
-| ----------- | ----------- | ------ |
-| **Warning** | **Success** | **No** |
+| Severity    | Status      | Audit Event |
+| ----------- | ----------- | ----------- |
+| **Warning** | **Success** | **No**      |
 
 O365TeamFullChannelRestoreFailure
 
@@ -7968,11 +6654,9 @@ O365TeamFullChannelRestoreFailure
 Completed restore of full channel '${channelName}' from Team  '${sourceObject}' to ${destinationObject}. ${numRestoredMessages}  message(s), ${numRestoredFiles} file(s) (total uploaded size:  ${bytesUploaded}), and ${numRestoredFolders} folder(s) were restored. Failed to restore ${failurePercent}%% of the items.  For more information, click here: ${failedItemsLink}
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Failure** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **No**      |
 
 O365TeamFullChannelRestoreFailureWithWarning
 
@@ -7980,11 +6664,9 @@ O365TeamFullChannelRestoreFailureWithWarning
 Completed restore of full channel '${channelName}' from Team '${sourceObject}' to ${destinationObject}. ${numRestoredMessages} message(s), ${numRestoredFiles} file(s) (total uploaded size: ${bytesUploaded}), and ${numRestoredFolders} folder(s) were restored. Failed to restore ${failurePercent}%% of the items.  For more information, click here: ${failedItemsLink} Warning: ${reason}
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Failure** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **No**      |
 
 O365TeamFullChannelRestorePartialSuccess
 
@@ -7992,11 +6674,9 @@ O365TeamFullChannelRestorePartialSuccess
 Completed restore of full channel '${channelName}' from Team  '${sourceObject}' to ${destinationObject}. ${numRestoredMessages}  message(s), ${numRestoredFiles} file(s) (total uploaded size:  ${bytesUploaded}), and ${numRestoredFolders} folder(s) were restored. Failed to restore ${failurePercent}%% of the items.  For more information, click here: ${failedItemsLink}
 ```
 
-Severity | Status | Audit Event | |
-
-|             |                    |        |
-| ----------- | ------------------ | ------ |
-| **Warning** | **PartialSuccess** | **No** |
+| Severity    | Status             | Audit Event |
+| ----------- | ------------------ | ----------- |
+| **Warning** | **PartialSuccess** | **No**      |
 
 O365TeamFullChannelRestorePartialSuccessWithWarning
 
@@ -8004,11 +6684,9 @@ O365TeamFullChannelRestorePartialSuccessWithWarning
 Completed restore of full channel '${channelName}' from Team '${sourceObject}' to ${destinationObject}. ${numRestoredMessages} message(s), ${numRestoredFiles} file(s) (total uploaded size: ${bytesUploaded}), and ${numRestoredFolders} folder(s) were restored. Failed to restore ${failurePercent}%% of the items.  For more information, click here: ${failedItemsLink} Warning:  ${reason}
 ```
 
-Severity | Status | Audit Event | |
-
-|             |                    |        |
-| ----------- | ------------------ | ------ |
-| **Warning** | **PartialSuccess** | **No** |
+| Severity    | Status             | Audit Event |
+| ----------- | ------------------ | ----------- |
+| **Warning** | **PartialSuccess** | **No**      |
 
 O365TeamFullChannelRestoreSuccess
 
@@ -8016,11 +6694,9 @@ O365TeamFullChannelRestoreSuccess
 Successfully restored full channel '${channelName}' from Team '${sourceObject}' to ${destinationObject}. ${numRestoredMessages} message(s), ${numRestoredFiles} file(s) (total uploaded size: ${bytesUploaded}), and ${numRestoredFolders} folder(s) were restored.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 O365TeamFullChannelRestoreWarning
 
@@ -8028,11 +6704,9 @@ O365TeamFullChannelRestoreWarning
 Successfully restored full channel '${channelName}' from Team '${sourceObject}' to ${destinationObject}. ${numRestoredMessages} message(s), ${numRestoredFiles} file(s) (total uploaded size: ${bytesUploaded}), and ${numRestoredFolders} folder(s) were restored. Warning: ${reason}
 ```
 
-Severity | Status | Audit Event | |
-
-|             |             |        |
-| ----------- | ----------- | ------ |
-| **Warning** | **Success** | **No** |
+| Severity    | Status      | Audit Event |
+| ----------- | ----------- | ----------- |
+| **Warning** | **Success** | **No**      |
 
 ## openstack
 
@@ -8044,11 +6718,9 @@ ExportOpenstackVMSnapshotFailed
 ${username} failed to start a job to export OpenStack virtual machine '${vmName}' using snapshot '${snapshotFid}'. Failure reason: ${reason}
 ```
 
-Severity | Status | Audit Event | |
-
-|             |             |         |
-| ----------- | ----------- | ------- |
-| **Warning** | **Failure** | **Yes** |
+| Severity    | Status      | Audit Event |
+| ----------- | ----------- | ----------- |
+| **Warning** | **Failure** | **Yes**     |
 
 ExportOpenstackVMSnapshotStarted
 
@@ -8056,11 +6728,9 @@ ExportOpenstackVMSnapshotStarted
 ${username} started a job to export OpenStack virtual machine '${vmName}' using snapshot '${snapshotFid}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 ## postgres_db_cluster
 
@@ -8072,11 +6742,9 @@ DeletePostgresDbClusterLiveMountFailure
 ${username} failed to trigger the deletion of a Live Mount for the PostgreSQL database cluster ${dbClusterName}. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 DeletePostgresDbClusterLiveMountStarted
 
@@ -8084,11 +6752,9 @@ DeletePostgresDbClusterLiveMountStarted
 ${username} triggered the deletion of a Live Mount for the PostgreSQL database cluster ${dbClusterName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 ## saasapps
 
@@ -8100,11 +6766,9 @@ SaasAppsCascadingImpactAnalysisJobFailed
 Unable to complete impact analysis of ${numKeys} keys ${selectedKeys}.  Contact Rubrik Support.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Failure** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **No**      |
 
 SaasAppsCascadingImpactAnalysisJobStarted
 
@@ -8112,11 +6776,9 @@ SaasAppsCascadingImpactAnalysisJobStarted
 Started impact analysis of ${numKeys} keys ${selectedKeys}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 SaasAppsCascadingImpactAnalysisJobSucceeded
 
@@ -8124,11 +6786,9 @@ SaasAppsCascadingImpactAnalysisJobSucceeded
 Successfully completed impact analysis of ${numKeys} keys ${selectedKeys}.  Check notifications to resume the restore.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 SaasAppsRestoreCanceled
 
@@ -8136,11 +6796,9 @@ SaasAppsRestoreCanceled
 Canceled restore of ${displayName} ${snappableType}.  ${attachmentURLMessage}
 ```
 
-Severity | Status | Audit Event | |
-
-|          |              |        |
-| -------- | ------------ | ------ |
-| **Info** | **Canceled** | **No** |
+| Severity | Status       | Audit Event |
+| -------- | ------------ | ----------- |
+| **Info** | **Canceled** | **No**      |
 
 SaasAppsRestoreCompleted
 
@@ -8148,11 +6806,9 @@ SaasAppsRestoreCompleted
 Successfully completed the restore of ${displayName} ${snappableType} with ${numKeys} keys, ${selectedKeys}. ${attachmentURLMessage}
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 SaasAppsRestoreCompletedWithWarnings
 
@@ -8160,11 +6816,9 @@ SaasAppsRestoreCompletedWithWarnings
 Successfully completed the restore of ${displayName} ${snappableType} with warnings. ${warningMessage} Restored ${numKeys} keys, ${selectedKeys}. ${attachmentURLMessage}
 ```
 
-Severity | Status | Audit Event | |
-
-|             |                    |        |
-| ----------- | ------------------ | ------ |
-| **Warning** | **PartialSuccess** | **No** |
+| Severity    | Status             | Audit Event |
+| ----------- | ------------------ | ----------- |
+| **Warning** | **PartialSuccess** | **No**      |
 
 SaasAppsRestoreFailed
 
@@ -8172,11 +6826,9 @@ SaasAppsRestoreFailed
 Unable to restore ${displayName} ${snappableType}. Reason: ${reason}.  ${attachmentURLMessage}
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Failure** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **No**      |
 
 SaasAppsRestoreStarted
 
@@ -8184,11 +6836,9 @@ SaasAppsRestoreStarted
 ${userID} started restore of ${displayName} ${snappableType}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 SaasAppsRestoreStarted
 
@@ -8196,11 +6846,9 @@ SaasAppsRestoreStarted
 Started the restore of ${displayName} ${snappableType} with ${numKeys} keys, ${selectedKeys}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 SaasAppsRestoreStartFailed
 
@@ -8208,11 +6856,9 @@ SaasAppsRestoreStartFailed
 ${userID} failed to start restore of ${displayName} ${snappableType}.  Failure reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |         |
-| ------------ | ----------- | ------- |
-| **Critical** | **Failure** | **Yes** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **Yes**     |
 
 ## testaudit
 
@@ -8224,11 +6870,9 @@ Test
 This is a test audit.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 ## vsphere
 
@@ -8240,11 +6884,9 @@ ExportSnapshotToStandaloneHostFailed
 ${username} failed to start a job to export '${snappableName}' to standalone host '${hostName}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 ExportSnapshotToStandaloneHostStarted
 
@@ -8252,11 +6894,9 @@ ExportSnapshotToStandaloneHostStarted
 ${username} started a job to export '${snappableName}' with a snapshot to standalone host '${hostName}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 RelocateVsphereMountFailed
 
@@ -8264,11 +6904,9 @@ RelocateVsphereMountFailed
 ${username} failed to relocate vSphere mount '${mountId}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 RelocateVsphereMountStarted
 
@@ -8276,11 +6914,9 @@ RelocateVsphereMountStarted
 ${username} started a job to relocate vSphere mount '${mountId}'
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 TriggerDownloadVirtualMachineFileJobFailed
 
@@ -8288,11 +6924,9 @@ TriggerDownloadVirtualMachineFileJobFailed
 ${username} failed to start a job to prepare Virtual Machine file  download for '${vmName}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 TriggerDownloadVirtualMachineFileJobSucceeded
 
@@ -8300,11 +6934,9 @@ TriggerDownloadVirtualMachineFileJobSucceeded
 ${username} started a job to prepare Virtual Machine file download  for '${vmName}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 VSphereBulkExportSingleFailed
 
@@ -8312,11 +6944,9 @@ VSphereBulkExportSingleFailed
 ${username} failed to start a job to export a snapshot on Virtual Machine '${vmId}' (${vmName}). Failure reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 VSphereBulkExportSingleStarted
 
@@ -8324,11 +6954,9 @@ VSphereBulkExportSingleStarted
 ${username} started a job to export a snapshot on Virtual Machine '${vmId}' (${vmName}).
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 VSphereBulkInPlaceRecoverySingleFailed
 
@@ -8336,11 +6964,9 @@ VSphereBulkInPlaceRecoverySingleFailed
 ${username} failed to start a job to in-place recover a snapshot on Virtual Machine '${vmId}' (${vmName}). Failure reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 VSphereBulkInPlaceRecoverySingleStarted
 
@@ -8348,11 +6974,9 @@ VSphereBulkInPlaceRecoverySingleStarted
 ${username} started a job to in-place recover a snapshot on Virtual Machine '${vmId}' (${vmName}).
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 VSphereBulkInstantRecoverySingleFailed
 
@@ -8360,11 +6984,9 @@ VSphereBulkInstantRecoverySingleFailed
 ${username} failed to start a job to instantly recover a snapshot on Virtual Machine '${vmId}' (${vmName}). Failure reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 VSphereBulkInstantRecoverySingleStarted
 
@@ -8372,11 +6994,9 @@ VSphereBulkInstantRecoverySingleStarted
 ${username} started a job to instantly recover a snapshot on Virtual Machine '${vmId}' (${vmName}).
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 VSphereBulkLiveMountSingleFailed
 
@@ -8384,11 +7004,9 @@ VSphereBulkLiveMountSingleFailed
 ${username} failed to start a job to mount a snapshot on Virtual Machine '${vmId}' (${vmName}). Failure reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 VSphereBulkLiveMountSingleStarted
 
@@ -8396,11 +7014,9 @@ VSphereBulkLiveMountSingleStarted
 ${username} started a job to mount a snapshot on Virtual Machine '${vmId}' (${vmName}).
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 VSphereExportFailed
 
@@ -8408,11 +7024,9 @@ VSphereExportFailed
 ${username} failed to start a job to export '${snappableName}' with a snapshot taken at '${snapshotDate}'. Failure reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 VSphereExportStarted
 
@@ -8420,11 +7034,9 @@ VSphereExportStarted
 ${username} started a job to export '${snappableName}' with a snapshot taken at '${snapshotDate}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 VSphereInPlaceRecoveryFailed
 
@@ -8432,11 +7044,9 @@ VSphereInPlaceRecoveryFailed
 ${username} failed to start a job to in-place recover '${snappableName}' with a snapshot taken at '${snapshotDate}'. Failure reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 VSphereInPlaceRecoveryStarted
 
@@ -8444,11 +7054,9 @@ VSphereInPlaceRecoveryStarted
 ${username} started a job to in-place recover '${snappableName}' with a snapshot taken at '${snapshotDate}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 VSphereInstantRecoverFailed
 
@@ -8456,11 +7064,9 @@ VSphereInstantRecoverFailed
 ${username} failed to instantly recover '${snappableName}' with a snapshot taken at '${snapshotDate}'. Failure reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 VSphereInstantRecoverStarted
 
@@ -8468,11 +7074,9 @@ VSphereInstantRecoverStarted
 ${username} started a job to instantly recover '${snappableName}' with a snapshot taken at '${snapshotDate}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 VSphereLatestExportFailed
 
@@ -8480,11 +7084,9 @@ VSphereLatestExportFailed
 ${username} failed to export '${snappableName}' to the latest available recovery point. Failure reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 VSphereLatestExportStarted
 
@@ -8492,11 +7094,9 @@ VSphereLatestExportStarted
 ${username} started a job to export '${snappableName}' to the latest available recovery point.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 VSphereLatestInPlaceRecoveryFailed
 
@@ -8504,11 +7104,9 @@ VSphereLatestInPlaceRecoveryFailed
 ${username} failed to start a job to in-place recover '${snappableName}' to the latest available recovery point. Failure reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 VSphereLatestInPlaceRecoveryStarted
 
@@ -8516,11 +7114,9 @@ VSphereLatestInPlaceRecoveryStarted
 ${username} started a job to in-place recover '${snappableName}' to the latest available recovery point.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 VSphereLatestInstantRecoverFailed
 
@@ -8528,11 +7124,9 @@ VSphereLatestInstantRecoverFailed
 ${username} failed to instantly recover '${snappableName}' to the latest available recovery point. Failure reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 VSphereLatestInstantRecoverStarted
 
@@ -8540,11 +7134,9 @@ VSphereLatestInstantRecoverStarted
 ${username} started a job to instantly recover '${snappableName}' to the latest available recovery point.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 VSphereLatestLiveMountFailed
 
@@ -8552,11 +7144,9 @@ VSphereLatestLiveMountFailed
 ${username} failed to mount '${snappableName}' to the latest available recovery point.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 VSphereLatestLiveMountStarted
 
@@ -8564,11 +7154,9 @@ VSphereLatestLiveMountStarted
 ${username} started a job to mount '${snappableName}' to the latest available recovery point.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 VSphereLiveMountFailed
 
@@ -8576,11 +7164,9 @@ VSphereLiveMountFailed
 ${username} failed to mount '${snappableName}' with a snapshot taken at '${snapshotDate}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Failure** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **Yes**     |
 
 VSphereLiveMountStarted
 
@@ -8588,8 +7174,6 @@ VSphereLiveMountStarted
 ${username} started a job to mount '${snappableName}' with a snapshot taken at '${snapshotDate}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |

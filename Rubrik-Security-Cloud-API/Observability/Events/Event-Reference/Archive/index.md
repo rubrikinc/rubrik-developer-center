@@ -8,11 +8,9 @@ AwsNativeArchiveDBSnapshotTaskFailed
 Failed to upload the database snapshot to the ${targetBucketName}  bucket of ${targetLocation} location. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|             |                 |        |
-| ----------- | --------------- | ------ |
-| **Warning** | **TaskFailure** | **No** |
+| Severity    | Status          | Audit Event |
+| ----------- | --------------- | ----------- |
+| **Warning** | **TaskFailure** | **No**      |
 
 AwsNativeArchiveDBSnapshotTaskStarted
 
@@ -20,11 +18,9 @@ AwsNativeArchiveDBSnapshotTaskStarted
 Uploading the database snapshot to the ${targetBucketName} bucket of  ${targetLocation} location.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Running** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Running** | **No**      |
 
 AwsNativeArchiveDBSnapshotTaskSucceeded
 
@@ -32,11 +28,9 @@ AwsNativeArchiveDBSnapshotTaskSucceeded
 Successfully archived database snapshot taken at ${snapshotTimeDisplay} to the ${targetBucketName} bucket of ${targetLocation} location.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 AwsNativeArchiveSnapshotJobFailed
 
@@ -44,11 +38,9 @@ AwsNativeArchiveSnapshotJobFailed
 Failed to archive ${uploadType} snapshot taken at ${snapshotTimeDisplay} of the ${snappableDisplay} to the ${targetBucketName} bucket of ${targetLocation} location. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Failure** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **No**      |
 
 AwsNativeArchiveSnapshotJobSucceeded
 
@@ -56,11 +48,9 @@ AwsNativeArchiveSnapshotJobSucceeded
 Successfully archived ${uploadType} snapshot taken at ${snapshotTimeDisplay} of the ${snappableDisplay} to the ${targetBucketName} bucket of ${targetLocation} location. Processed ${dataTransferredFromSource} of data and uploaded  ${dataUploadedToDestination} (compressed) to Archival Location.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 AwsNativeArchiveSnapshotTaskFailed
 
@@ -68,11 +58,9 @@ AwsNativeArchiveSnapshotTaskFailed
 Failed to upload the snapshot to the ${targetBucketName} bucket of ${targetLocation} location. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|             |                 |        |
-| ----------- | --------------- | ------ |
-| **Warning** | **TaskFailure** | **No** |
+| Severity    | Status          | Audit Event |
+| ----------- | --------------- | ----------- |
+| **Warning** | **TaskFailure** | **No**      |
 
 AwsNativeArchiveSnapshotTaskStarted
 
@@ -80,11 +68,9 @@ AwsNativeArchiveSnapshotTaskStarted
 Uploading the snapshot to the ${targetBucketName} bucket of ${targetLocation} location.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Running** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Running** | **No**      |
 
 ## azurenative
 
@@ -96,11 +82,9 @@ AzureNativeArchiveSnapshotJobFailed
 Failed to archive ${uploadType} snapshot taken at  ${snapshotTimeDisplay} of the ${snappableDisplay} to the  ${targetContainerName} container in ${storageAccountName} storage  account of ${targetLocation} location. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Failure** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **No**      |
 
 AzureNativeArchiveSnapshotJobSucceeded
 
@@ -108,11 +92,9 @@ AzureNativeArchiveSnapshotJobSucceeded
 Successfully archived ${uploadType} snapshot taken at ${snapshotTimeDisplay} of the ${snappableDisplay} to the ${targetContainerName} container in ${storageAccountName}  storage account of ${targetLocation} location. Processed  ${dataTransferredFromSource} of data and uploaded  ${dataUploadedToDestination} (compressed) to Archival Location.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 AzureNativeArchiveSnapshotTaskFailed
 
@@ -120,11 +102,9 @@ AzureNativeArchiveSnapshotTaskFailed
 Failed to upload the snapshot to the ${targetContainerName} container in ${storageAccountName} storage account of ${targetLocation} location. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|             |                 |        |
-| ----------- | --------------- | ------ |
-| **Warning** | **TaskFailure** | **No** |
+| Severity    | Status          | Audit Event |
+| ----------- | --------------- | ----------- |
+| **Warning** | **TaskFailure** | **No**      |
 
 AzureNativeArchiveSnapshotTaskStarted
 
@@ -132,11 +112,9 @@ AzureNativeArchiveSnapshotTaskStarted
 Uploading the snapshot to the ${targetContainerName} container in ${storageAccountName} storage account of ${targetLocation} location.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Running** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Running** | **No**      |
 
 ## cloudnative
 
@@ -148,11 +126,9 @@ CloudNativeArchiveSnapshotJobCanceled
 Canceled archival of snapshot of the ${snappableDisplay}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |              |        |
-| -------- | ------------ | ------ |
-| **Info** | **Canceled** | **No** |
+| Severity | Status       | Audit Event |
+| -------- | ------------ | ----------- |
+| **Info** | **Canceled** | **No**      |
 
 CloudNativeArchiveSnapshotJobCanceling
 
@@ -160,11 +136,9 @@ CloudNativeArchiveSnapshotJobCanceling
 Canceling archival of snapshot of the ${snappableDisplay}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |               |        |
-| -------- | ------------- | ------ |
-| **Info** | **Canceling** | **No** |
+| Severity | Status        | Audit Event |
+| -------- | ------------- | ----------- |
+| **Info** | **Canceling** | **No**      |
 
 CloudNativeArchiveSnapshotJobFailed
 
@@ -172,11 +146,9 @@ CloudNativeArchiveSnapshotJobFailed
 Failed to archive snapshot of the ${snappableDisplay}. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Failure** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **No**      |
 
 CloudNativeArchiveSnapshotJobStarted
 
@@ -184,11 +156,9 @@ CloudNativeArchiveSnapshotJobStarted
 Started archival of ${snappableDisplay}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 CloudNativeArchiveSnapshotJobSucceededNoSnapshotFound
 
@@ -196,11 +166,9 @@ CloudNativeArchiveSnapshotJobSucceededNoSnapshotFound
 No snapshot found for ${snappableDisplay}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 CloudNativeArchiveSnapshotPrepareTaskFailed
 
@@ -208,11 +176,9 @@ CloudNativeArchiveSnapshotPrepareTaskFailed
 Failed to archive snapshot of the ${snappableDisplay}. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|             |                 |        |
-| ----------- | --------------- | ------ |
-| **Warning** | **TaskFailure** | **No** |
+| Severity    | Status          | Audit Event |
+| ----------- | --------------- | ----------- |
+| **Warning** | **TaskFailure** | **No**      |
 
 CloudNativeArchiveSnapshotPrepareTaskStarted
 
@@ -220,11 +186,9 @@ CloudNativeArchiveSnapshotPrepareTaskStarted
 Starting archival of snapshot for the ${snappableDisplay}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Running** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Running** | **No**      |
 
 CloudNativeArchiveSnapshotPrepareTaskSucceeded
 
@@ -232,11 +196,9 @@ CloudNativeArchiveSnapshotPrepareTaskSucceeded
 Started archival of the snapshot taken at ${snapshotTimeDisplay} of the ${snappableDisplay}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 CloudNativeArchiveSnapshotTaskSucceeded
 
@@ -244,11 +206,9 @@ CloudNativeArchiveSnapshotTaskSucceeded
 Uploaded the snapshot to archival location.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 CloudNativeArchiveSnapshotWaitForIndexSnapshotTaskFailed
 
@@ -256,11 +216,9 @@ CloudNativeArchiveSnapshotWaitForIndexSnapshotTaskFailed
 Failed to index the snapshot.
 ```
 
-Severity | Status | Audit Event | |
-
-|             |                 |        |
-| ----------- | --------------- | ------ |
-| **Warning** | **TaskFailure** | **No** |
+| Severity    | Status          | Audit Event |
+| ----------- | --------------- | ----------- |
+| **Warning** | **TaskFailure** | **No**      |
 
 CloudNativeArchiveSnapshotWaitForIndexSnapshotTaskStarted
 
@@ -268,11 +226,9 @@ CloudNativeArchiveSnapshotWaitForIndexSnapshotTaskStarted
 Waiting for snapshot to be indexed.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Running** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Running** | **No**      |
 
 CloudNativeArchiveSnapshotWaitForIndexSnapshotTaskSucceeded
 
@@ -280,11 +236,9 @@ CloudNativeArchiveSnapshotWaitForIndexSnapshotTaskSucceeded
 Snapshot has successfully been indexed.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 CloudNativeDeleteExportedDatabaseTaskFailed
 
@@ -292,11 +246,9 @@ CloudNativeDeleteExportedDatabaseTaskFailed
 Failed to delete ${numExportedDatabases} temporary databases in region ${exportedDBRegion}. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|             |                 |        |
-| ----------- | --------------- | ------ |
-| **Warning** | **TaskFailure** | **No** |
+| Severity    | Status          | Audit Event |
+| ----------- | --------------- | ----------- |
+| **Warning** | **TaskFailure** | **No**      |
 
 CloudNativeDeleteExportedDatabaseTaskStarted
 
@@ -304,11 +256,9 @@ CloudNativeDeleteExportedDatabaseTaskStarted
 Deleting ${numExportedDatabases} temporary databases in region ${exportedDBRegion}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Running** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Running** | **No**      |
 
 CloudNativeDeleteExportedDatabaseTaskSucceeded
 
@@ -316,11 +266,9 @@ CloudNativeDeleteExportedDatabaseTaskSucceeded
 Successfully deleted ${numExportedDatabases} temporary databases in region ${exportedDBRegion}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 CloudNativeExportDatabaseTaskFailed
 
@@ -328,11 +276,9 @@ CloudNativeExportDatabaseTaskFailed
 Failed to create ${numExportedDatabases} temporary databases in region ${exportedDBRegion}. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|             |                 |        |
-| ----------- | --------------- | ------ |
-| **Warning** | **TaskFailure** | **No** |
+| Severity    | Status          | Audit Event |
+| ----------- | --------------- | ----------- |
+| **Warning** | **TaskFailure** | **No**      |
 
 CloudNativeExportDatabaseTaskStarted
 
@@ -340,11 +286,9 @@ CloudNativeExportDatabaseTaskStarted
 Creating temporary databases.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Running** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Running** | **No**      |
 
 CloudNativeExportDatabaseTaskSucceeded
 
@@ -352,11 +296,9 @@ CloudNativeExportDatabaseTaskSucceeded
 Successfully created ${numExportedDatabases} temporary databases in region ${exportedDBRegion}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 CloudNativeImmediatelyScheduleMaintainedJobTaskFailed
 
@@ -364,11 +306,9 @@ CloudNativeImmediatelyScheduleMaintainedJobTaskFailed
 Failed to trigger ${ImmediatelyScheduleMaintainedJobDisplay}.
 ```
 
-Severity | Status | Audit Event | |
-
-|             |                 |        |
-| ----------- | --------------- | ------ |
-| **Warning** | **TaskFailure** | **No** |
+| Severity    | Status          | Audit Event |
+| ----------- | --------------- | ----------- |
+| **Warning** | **TaskFailure** | **No**      |
 
 CloudNativeImmediatelyScheduleMaintainedJobTaskStarted
 
@@ -376,11 +316,9 @@ CloudNativeImmediatelyScheduleMaintainedJobTaskStarted
 Waiting for ${ImmediatelyScheduleMaintainedJobDisplay} to be triggered.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Running** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Running** | **No**      |
 
 CloudNativeImmediatelyScheduleMaintainedJobTaskSucceeded
 
@@ -388,11 +326,9 @@ CloudNativeImmediatelyScheduleMaintainedJobTaskSucceeded
 Successfully triggered ${ImmediatelyScheduleMaintainedJobDisplay}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 CloudNativeImmediatelyScheduleMaintainedJobTaskSucceededWithError
 
@@ -400,11 +336,9 @@ CloudNativeImmediatelyScheduleMaintainedJobTaskSucceededWithError
 Triggered ${ImmediatelyScheduleMaintainedJobDisplay} with error ${ignoredError}.
 ```
 
-Severity | Status | Audit Event | |
-
-|             |                 |        |
-| ----------- | --------------- | ------ |
-| **Warning** | **TaskSuccess** | **No** |
+| Severity    | Status          | Audit Event |
+| ----------- | --------------- | ----------- |
+| **Warning** | **TaskSuccess** | **No**      |
 
 CloudNativeLaunchEmptyDiskTaskFailed
 
@@ -412,11 +346,9 @@ CloudNativeLaunchEmptyDiskTaskFailed
 Failed to launch scratch ${diskTypeDisplay}(s).
 ```
 
-Severity | Status | Audit Event | |
-
-|             |                 |        |
-| ----------- | --------------- | ------ |
-| **Warning** | **TaskFailure** | **No** |
+| Severity    | Status          | Audit Event |
+| ----------- | --------------- | ----------- |
+| **Warning** | **TaskFailure** | **No**      |
 
 CloudNativeLaunchEmptyDiskTaskStarted
 
@@ -424,11 +356,9 @@ CloudNativeLaunchEmptyDiskTaskStarted
 Temporarily launching scratch ${diskTypeDisplay}(s) in region ${region}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Running** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Running** | **No**      |
 
 CloudNativeLaunchEmptyDiskTaskSucceeded
 
@@ -436,11 +366,9 @@ CloudNativeLaunchEmptyDiskTaskSucceeded
 Launched scratch ${diskTypeDisplay}(s) in region ${region}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 CloudNativeOnDemandJobTaskFailed
 
@@ -448,11 +376,9 @@ CloudNativeOnDemandJobTaskFailed
 Failed to perform ${onDemandJobDisplay}.
 ```
 
-Severity | Status | Audit Event | |
-
-|             |                 |        |
-| ----------- | --------------- | ------ |
-| **Warning** | **TaskFailure** | **No** |
+| Severity    | Status          | Audit Event |
+| ----------- | --------------- | ----------- |
+| **Warning** | **TaskFailure** | **No**      |
 
 CloudNativeOnDemandJobTaskStarted
 
@@ -460,11 +386,9 @@ CloudNativeOnDemandJobTaskStarted
 Waiting for ${onDemandJobDisplay} to complete.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Running** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Running** | **No**      |
 
 CloudNativeOnDemandJobTaskSucceeded
 
@@ -472,11 +396,9 @@ CloudNativeOnDemandJobTaskSucceeded
 Successfully completed ${onDemandJobDisplay}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 CloudNativeOnDemandJobTaskSucceededWithError
 
@@ -484,11 +406,9 @@ CloudNativeOnDemandJobTaskSucceededWithError
 Completed ${onDemandJobDisplay} with error ${ignoredError}.
 ```
 
-Severity | Status | Audit Event | |
-
-|             |                 |        |
-| ----------- | --------------- | ------ |
-| **Warning** | **TaskSuccess** | **No** |
+| Severity    | Status          | Audit Event |
+| ----------- | --------------- | ----------- |
+| **Warning** | **TaskSuccess** | **No**      |
 
 CloudNativeOnDemandJobTaskWithoutWaitSucceeded
 
@@ -496,11 +416,9 @@ CloudNativeOnDemandJobTaskWithoutWaitSucceeded
 Successfully triggered ${onDemandJobDisplay}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 CloudNativeOnDemandJobTaskWithoutWaitSucceededWithError
 
@@ -508,11 +426,9 @@ CloudNativeOnDemandJobTaskWithoutWaitSucceededWithError
 Failed to trigger ${onDemandJobDisplay} with error ${ignoredError}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 CloudNativePublishArchiveDBSnapshotTaskProgress
 
@@ -520,11 +436,9 @@ CloudNativePublishArchiveDBSnapshotTaskProgress
 Archival in progress: ${numTablePartitions} out of total ${totalTablePartitions} table partitions successfully archived.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Running** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Running** | **No**      |
 
 ## gcpnative
 
@@ -536,11 +450,9 @@ GCPNativeArchiveSnapshotJobFailed
 Failed to archive ${uploadType} snapshot taken at ${snapshotTimeDisplay} of the ${snappableDisplay} to the ${targetBucketName} bucket of ${targetLocation} location. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Failure** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **No**      |
 
 GCPNativeArchiveSnapshotJobSucceeded
 
@@ -548,11 +460,9 @@ GCPNativeArchiveSnapshotJobSucceeded
 Successfully archived ${uploadType} snapshot taken at  ${snapshotTimeDisplay} of the ${snappableDisplay} to the  ${targetBucketName} bucket of ${targetLocation} location. Processed ${dataTransferredFromSource} of data and uploaded  ${dataUploadedToDestination} (compressed) to Archival Location.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 GCPNativeArchiveSnapshotTaskFailed
 
@@ -560,11 +470,9 @@ GCPNativeArchiveSnapshotTaskFailed
 Failed to upload the snapshot to the ${targetBucketName} bucket of ${targetLocation} location. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|             |                 |        |
-| ----------- | --------------- | ------ |
-| **Warning** | **TaskFailure** | **No** |
+| Severity    | Status          | Audit Event |
+| ----------- | --------------- | ----------- |
+| **Warning** | **TaskFailure** | **No**      |
 
 GCPNativeArchiveSnapshotTaskStarted
 
@@ -572,11 +480,9 @@ GCPNativeArchiveSnapshotTaskStarted
 Uploading the snapshot to the ${targetBucketName} bucket   of ${targetLocation} location.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Running** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Running** | **No**      |
 
 ## rcv
 
@@ -588,8 +494,6 @@ RCVDataDeletionSuccess
 Pursuant to Rubrik policy, data associated with the deleted RCV storage  location '${name}' has been successfully deleted.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |

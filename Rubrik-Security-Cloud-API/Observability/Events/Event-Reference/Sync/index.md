@@ -8,11 +8,9 @@ ArchivalLocationKmsUpdateFailed
 Failed to update KMS details for Archival Location {locationName}’s on  cluster {clusterName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Failure** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **No**      |
 
 ArchivalLocationKmsUpdateSucceeded
 
@@ -20,11 +18,9 @@ ArchivalLocationKmsUpdateSucceeded
 Successfully updated KMS details for Archival Location {locationName}’s on cluster  {clusterName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 ArchivalLocationOperationSuccess
 
@@ -32,11 +28,9 @@ ArchivalLocationOperationSuccess
 ${type} location '${name}' has been successfully ${operation}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 ArchivalLocationUnsyncedDeleteFailed
 
@@ -44,11 +38,9 @@ ArchivalLocationUnsyncedDeleteFailed
 Failed to remove the entry corresponding to the archival location, ${name}, from the UI. The location could not be synced either due to invalid parameters or unrecoverable/ fatal error. Contact Rubrik Support to remove this entry from the UI. Verify the parameters used during creation of the archival location and retry the operation with a new name.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Failure** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **No**      |
 
 ArchivalLocationUnsyncedDeleteStarted
 
@@ -56,11 +48,9 @@ ArchivalLocationUnsyncedDeleteStarted
 Started removing the entry for archival location ${name} from the UI that could not be synced either due to invalid parameters or unrecoverable/fatal error. Error description: ${description}
 ```
 
-Severity | Status | Audit Event | |
-
-|          |            |        |
-| -------- | ---------- | ------ |
-| **Info** | **Queued** | **No** |
+| Severity | Status     | Audit Event |
+| -------- | ---------- | ----------- |
+| **Info** | **Queued** | **No**      |
 
 ArchivalLocationUnsyncedDeleteSuccess
 
@@ -68,11 +58,9 @@ ArchivalLocationUnsyncedDeleteSuccess
 Archival location ${name} entry was removed from the UI since it could not be synced either due to invalid parameters or unrecoverable/fatal error. Verify and try again. Error description: ${description}
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Failure** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **No**      |
 
 ArchivalLocationUpgradeFailed
 
@@ -80,11 +68,9 @@ ArchivalLocationUpgradeFailed
 Unable to upgrade the CDM managed archival location '${name}' on Rubrik cluster '${cluster}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Failure** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **No**      |
 
 ArchivalLocationUpgradeStarted
 
@@ -92,11 +78,9 @@ ArchivalLocationUpgradeStarted
 Started the upgrade of CDM managed archival location '${name}' on Rubrik cluster '${cluster}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |            |        |
-| -------- | ---------- | ------ |
-| **Info** | **Queued** | **No** |
+| Severity | Status     | Audit Event |
+| -------- | ---------- | ----------- |
+| **Info** | **Queued** | **No**      |
 
 ArchivalLocationUpgradeSuccess
 
@@ -104,11 +88,9 @@ ArchivalLocationUpgradeSuccess
 Successfully completed the upgrade of CDM managed archival location '${name}' on Rubrik cluster '${cluster}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 ReaderArchivalLocationRefreshFailed
 
@@ -116,11 +98,9 @@ ReaderArchivalLocationRefreshFailed
 Failed to refresh reader archival location ${name}
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Failure** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **No**      |
 
 ## encryption
 
@@ -132,11 +112,9 @@ FederatedLoginCleanupFailure
 Unable to clean up federated access configuration on Rubrik cluster, '${cluster}.'
 ```
 
-Severity | Status | Audit Event | |
-
-|             |             |        |
-| ----------- | ----------- | ------ |
-| **Warning** | **Failure** | **No** |
+| Severity    | Status      | Audit Event |
+| ----------- | ----------- | ----------- |
+| **Warning** | **Failure** | **No**      |
 
 FederatedLoginCleanupSuccess
 
@@ -144,11 +122,9 @@ FederatedLoginCleanupSuccess
 Successfully cleaned up federated access configuration on Rubrik cluster, '${cluster}.'
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 FederatedLoginConfigurationFailure
 
@@ -156,11 +132,9 @@ FederatedLoginConfigurationFailure
 Unable to configure federated access on Rubrik cluster, '${cluster}.'
 ```
 
-Severity | Status | Audit Event | |
-
-|             |             |        |
-| ----------- | ----------- | ------ |
-| **Warning** | **Failure** | **No** |
+| Severity    | Status      | Audit Event |
+| ----------- | ----------- | ----------- |
+| **Warning** | **Failure** | **No**      |
 
 FederatedLoginConfigurationSuccess
 
@@ -168,11 +142,9 @@ FederatedLoginConfigurationSuccess
 Successfully configured federated access on Rubrik cluster, '${cluster}.'
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 FederatedLoginGenericError
 
@@ -180,11 +152,9 @@ FederatedLoginGenericError
 Failed to toggle federated login configuration on Rubrik cluster, '${cluster}.'
 ```
 
-Severity | Status | Audit Event | |
-
-|             |             |        |
-| ----------- | ----------- | ------ |
-| **Warning** | **Failure** | **No** |
+| Severity    | Status      | Audit Event |
+| ----------- | ----------- | ----------- |
+| **Warning** | **Failure** | **No**      |
 
 ## encryption_keys
 
@@ -196,11 +166,9 @@ ArchivalRekeyQueued
 Queued the rekey of ${rekeyJobType} on archival location ${locationName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |            |        |
-| -------- | ---------- | ------ |
-| **Info** | **Queued** | **No** |
+| Severity | Status     | Audit Event |
+| -------- | ---------- | ----------- |
+| **Info** | **Queued** | **No**      |
 
 ## oktaintegration
 
@@ -212,11 +180,9 @@ OktaIntegrationSendEventFailure
 RSC failed to send ${failureCount} SSF messages to Okta ITP.
 ```
 
-Severity | Status | Audit Event | |
-
-|             |             |        |
-| ----------- | ----------- | ------ |
-| **Warning** | **Failure** | **No** |
+| Severity    | Status      | Audit Event |
+| ----------- | ----------- | ----------- |
+| **Warning** | **Failure** | **No**      |
 
 OktaIntegrationSendEventSuccess
 
@@ -224,11 +190,9 @@ OktaIntegrationSendEventSuccess
 RSC succeeded to send SSF messages to Okta ITP.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 ## pending_action
 
@@ -240,11 +204,9 @@ AppBlueprintChangeSyncFailed
 Failed to ${operation} Blueprint ${data} on cluster: ${reason}
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Failure** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **No**      |
 
 AppBlueprintChangeSyncStarted
 
@@ -252,11 +214,9 @@ AppBlueprintChangeSyncStarted
 Started to ${operation} Blueprint ${data} on cluster
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 AppBlueprintChangeSyncSucceed
 
@@ -264,11 +224,9 @@ AppBlueprintChangeSyncSucceed
 Succeeded to ${operation} Blueprint ${data} on cluster
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 ArchivalLocationJobInitiated
 
@@ -276,11 +234,9 @@ ArchivalLocationJobInitiated
 Job to sync Archival Location was successfully initiated on cluster
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 ArchivalLocationSyncFailed
 
@@ -288,11 +244,9 @@ ArchivalLocationSyncFailed
 Failed to sync Archival Location to the cluster: Reason: ${reason}
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Failure** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **No**      |
 
 ArchivalLocationSyncStarted
 
@@ -300,11 +254,9 @@ ArchivalLocationSyncStarted
 Started to sync Archival Location to the cluster.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 ArchivalLocationSyncSucceed
 
@@ -312,11 +264,9 @@ ArchivalLocationSyncSucceed
 Succeeded to sync Archival Location to the cluster
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 CloudAccountUpdateFailed
 
@@ -324,11 +274,9 @@ CloudAccountUpdateFailed
 Failed to update cloud account '${cloudAccountName}' credentials for  ${failedCount} location(s): ${failedLocations}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Failure** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **No**      |
 
 CloudAccountUpdateSucceeded
 
@@ -336,11 +284,9 @@ CloudAccountUpdateSucceeded
 Successfully updated cloud account '${cloudAccountName}' credentials for  ${successfulCount} location(s): ${successfulLocations}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 CloudAccountUpdateSyncStarted
 
@@ -348,11 +294,9 @@ CloudAccountUpdateSyncStarted
 Started to sync cloud account '${cloudAccountName}' credentials  for ${totalLocations} location(s): ${locations}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 GlobalSLAAssignFailed
 
@@ -360,11 +304,9 @@ GlobalSLAAssignFailed
 Failed to assign RSC SLA Domain '${slaName}' to objects '${objectNames}' on the Rubrik cluster '${clusterName}'. Reason: '${reason}'
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Failure** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **No**      |
 
 GlobalSLAAssignStarted
 
@@ -372,11 +314,9 @@ GlobalSLAAssignStarted
 Started to assign RSC SLA Domain '${slaName}' to objects '${objectNames}' on cluster '${clusterName}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 GlobalSLAAssignSuccess
 
@@ -384,11 +324,9 @@ GlobalSLAAssignSuccess
 RSC SLA Domain '${slaName}' is successfully assigned  to objects '${objectNames}' on the Rubrik cluster '${clusterName}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 GlobalSLAAssignSynced
 
@@ -396,11 +334,9 @@ GlobalSLAAssignSynced
 Sent request to Rubrik cluster '${clusterName}' to assign  RSC SLA Domain `${slaName}` to objects '${objectNames}'. Update may take a few minutes to complete.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 ReplicationLocationEnableFailed
 
@@ -408,11 +344,9 @@ ReplicationLocationEnableFailed
 Failed to add replication target: ${targetName} on the cluster. Reason: ${reason}
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Failure** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **No**      |
 
 ReplicationLocationEnableStarted
 
@@ -420,11 +354,9 @@ ReplicationLocationEnableStarted
 Started to add replication target: ${targetName} on the cluster
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 ReplicationLocationEnableSucceed
 
@@ -432,11 +364,9 @@ ReplicationLocationEnableSucceed
 Succeeded to add replication target: ${targetName} on cluster
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 RetentionSLAAssignmentToObjectsFailed
 
@@ -444,11 +374,9 @@ RetentionSLAAssignmentToObjectsFailed
 Failed to assign retention SLA: ${slaName} to objects: ${objects} on cluster. Reason: ${reason}
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Failure** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **No**      |
 
 RetentionSLAAssignmentToObjectsStarted
 
@@ -456,11 +384,9 @@ RetentionSLAAssignmentToObjectsStarted
 Started to assign retention SLA: ${slaName} to objects: ${objects} on cluster
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 RetentionSLAAssignmentToObjectsSucceeded
 
@@ -468,11 +394,9 @@ RetentionSLAAssignmentToObjectsSucceeded
 Succeeded to assign retention SLA: ${slaName} to objects: ${objects} on cluster
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 RetentionSLAAssignmentToSnapshotsFailed
 
@@ -480,11 +404,9 @@ RetentionSLAAssignmentToSnapshotsFailed
 Failed to assign SLA: ${slaName} to snapshot IDs: ${snapshotIDs} on cluster. Reason: ${reason}
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Failure** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **No**      |
 
 RetentionSLAAssignmentToSnapshotsStarted
 
@@ -492,11 +414,9 @@ RetentionSLAAssignmentToSnapshotsStarted
 Started to assign retention SLA: ${slaName} to snapshot IDs: ${snapshotIDs} on cluster
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 RetentionSLAAssignmentToSnapshotsSucceeded
 
@@ -504,11 +424,9 @@ RetentionSLAAssignmentToSnapshotsSucceeded
 Succeeded to assign SLA: ${slaName} to snapshot IDs: ${snapshotIDs} on cluster
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 RetentionSLAAssignmentV2ToSnapshotsFailed
 
@@ -516,11 +434,9 @@ RetentionSLAAssignmentV2ToSnapshotsFailed
 Rubrik cluster '${clusterName}' could not assign SLA Domain '${slaName}' to snapshot '${snapshotNames}'. Reason: '${reason}'
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Failure** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **No**      |
 
 RetentionSLAAssignmentV2ToSnapshotsStarted
 
@@ -528,11 +444,9 @@ RetentionSLAAssignmentV2ToSnapshotsStarted
 Started to assign retention SLA '${slaName}' to snapshot '${snapshotNames}' on cluster
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 RetentionSLAAssignmentV2ToSnapshotsSuccess
 
@@ -540,11 +454,9 @@ RetentionSLAAssignmentV2ToSnapshotsSuccess
 Rubrik cluster '${clusterName}' successfully assigned SLA Domain '${slaName}' to snapshot '${snapshotNames}'
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 RetentionSLAAssignmentV2ToSnapshotsSynced
 
@@ -552,11 +464,9 @@ RetentionSLAAssignmentV2ToSnapshotsSynced
 Successfully passed request to Rubrik cluster '${clusterName}' to assign SLA Domain '${slaName}' to snapshot '${snapshotNames}'. Update may take a few minutes to complete
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 ServiceAccountSyncFailed
 
@@ -564,11 +474,9 @@ ServiceAccountSyncFailed
 Unable to ${operation} RSC service accounts: ${serviceAccountID} on the Rubrik cluster.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Failure** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **No**      |
 
 SLAAssignmentFailed
 
@@ -576,11 +484,9 @@ SLAAssignmentFailed
 Failed to assign SLA: ${slaName} to objects: ${objects} on cluster. Reason: ${reason}
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Failure** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **No**      |
 
 SLAAssignmentStarted
 
@@ -588,11 +494,9 @@ SLAAssignmentStarted
 Started to assign SLA: ${slaName} to objects: ${objects} on cluster
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 SLAAssignmentSucceed
 
@@ -600,11 +504,9 @@ SLAAssignmentSucceed
 Succeeded to assign SLA: ${slaName} to objects: ${objects} on cluster
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 SLAChangeSyncFailed
 
@@ -612,11 +514,9 @@ SLAChangeSyncFailed
 Failed to ${operation} SLA Domain ${name} to the cluster. Reason: ${reason}
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Failure** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **No**      |
 
 SLAChangeSyncFailedWithInvalidRetention
 
@@ -624,11 +524,9 @@ SLAChangeSyncFailedWithInvalidRetention
 Failed to ${operation} SLA Domain ${name} to the cluster. Reason: ${reason}. For more information about failures due to invalid retention, refer to ${articleLink}
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Failure** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **No**      |
 
 SLAChangeSyncStarted
 
@@ -636,11 +534,9 @@ SLAChangeSyncStarted
 Started to ${operation} SLA Domain ${name} on the cluster
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 SLAChangeSyncSucceeded
 
@@ -648,11 +544,9 @@ SLAChangeSyncSucceeded
 Successfully synced SLA Domain ${slaDomainName} to the cluster ${clusterName}
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 SnapshotDeletionFailed
 
@@ -660,11 +554,9 @@ SnapshotDeletionFailed
 Failed to delete snapshots: ${snapshotIds} of object: ${objectName} on cluster. Reason: ${reason}
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Failure** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **No**      |
 
 SnapshotDeletionStarted
 
@@ -672,11 +564,9 @@ SnapshotDeletionStarted
 Started to delete snapshots: ${snapshotIds} of object: ${objectName} on cluster
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 SnapshotDeletionSucceeded
 
@@ -684,11 +574,9 @@ SnapshotDeletionSucceeded
 Succeeded to delete snapshots: ${snapshotIds} of object: ${objectName} on cluster
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 SnapshotsOfObjectDeletionFailed
 
@@ -696,11 +584,9 @@ SnapshotsOfObjectDeletionFailed
 Failed to delete all unprotected snapshots of objects: ${objectNameList} on cluster. Reason: ${reason}
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Failure** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **No**      |
 
 SnapshotsOfObjectDeletionStarted
 
@@ -708,11 +594,9 @@ SnapshotsOfObjectDeletionStarted
 Started to delete all unprotected snapshots of objects: ${objectNameList} on cluster
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 SnapshotsOfObjectDeletionSucceeded
 
@@ -720,11 +604,9 @@ SnapshotsOfObjectDeletionSucceeded
 Succeeded to delete all unprotected snapshots of objects: ${objectNameList} on cluster
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 ## rcv
 
@@ -736,11 +618,9 @@ RcvReaderArchivalLocationMasterKeyUpdateFailed
 Unable to update the master encryption key for reader Rubrik Cloud Vault location ${objectName} on cluster ${clusterName}. Unable to update reader Rubrik Cloud Vault location ${objectName}’s encryption key to the new ${keyType} key.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Failure** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **No**      |
 
 RcvReaderArchivalLocationMasterKeyUpdateFailedAkv
 
@@ -748,11 +628,9 @@ RcvReaderArchivalLocationMasterKeyUpdateFailedAkv
 Unable to update the master encryption key for reader Rubrik Cloud Vault location ${objectName}’s on cluster ${clusterName}. Unable to update reader Rubrik Cloud Vault location ${objectName}’s encryption key to ${keyName} from ${akvName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Failure** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **No**      |
 
 RcvReaderArchivalLocationMasterKeyUpdateFailedKms
 
@@ -760,11 +638,9 @@ RcvReaderArchivalLocationMasterKeyUpdateFailedKms
 Failed to update master encryption key for reader Rubrik Cloud Vault  location '${locationName}' on cluster '${clusterName}'. Unable to switch  to encryption key '${keyName}' managed by '${kmsName}' (Provider: ${kmsType}).
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Failure** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **No**      |
 
 RcvReaderArchivalLocationMasterKeyUpdateSucceeded
 
@@ -772,11 +648,9 @@ RcvReaderArchivalLocationMasterKeyUpdateSucceeded
 Successfully updated the master encryption key for reader Rubrik Cloud Vault location ${objectName} on cluster ${clusterName}. Reader Rubrik Cloud Vault location ${objectName}’s encryption key updated to the new ${keyType} key.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 RcvReaderArchivalLocationMasterKeyUpdateSucceededAkv
 
@@ -784,11 +658,9 @@ RcvReaderArchivalLocationMasterKeyUpdateSucceededAkv
 Successfully updated the master encryption key for reader Rubrik Cloud Vault location ${objectName} on cluster ${clusterName}. Reader Rubrik Cloud Vault location ${objectName}’s encryption key updated to ${keyName} from ${akvName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 RcvReaderArchivalLocationMasterKeyUpdateSucceededKms
 
@@ -796,11 +668,9 @@ RcvReaderArchivalLocationMasterKeyUpdateSucceededKms
 Successfully updated master encryption key for reader Rubrik Cloud Vault  location '${locationName}' on cluster '${clusterName}'. The location now  uses encryption key '${keyName}' managed by '${kmsName}' (Provider: ${kmsType}).
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 RCVResourceCreationFailed
 
@@ -808,11 +678,9 @@ RCVResourceCreationFailed
 Unable to allocate required resource '${resourceType}' for the RCV location '${name}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Failure** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **No**      |
 
 RCVResourceCreationSuccess
 
@@ -820,11 +688,9 @@ RCVResourceCreationSuccess
 The required ${resourceType} resource has been allocated for the RCV location '${name}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 ## replication
 
@@ -836,11 +702,9 @@ ReplicationPairingFailed
 Failed to create a replication pair between the source cluster  '${sourceCluster}' and the target cluster '${targetCluster}'. Create a  replication pair for them. Error: ${errMsg}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Failure** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **No**      |
 
 ## role_sync
 
@@ -852,11 +716,9 @@ RoleSyncCreationFailed
 Role ${role} creation failed in cluster. Reason: ${reason}
 ```
 
-Severity | Status | Audit Event | |
-
-|             |             |        |
-| ----------- | ----------- | ------ |
-| **Warning** | **Failure** | **No** |
+| Severity    | Status      | Audit Event |
+| ----------- | ----------- | ----------- |
+| **Warning** | **Failure** | **No**      |
 
 RoleSyncCreationScheduled
 
@@ -864,11 +726,9 @@ RoleSyncCreationScheduled
 Scheduled a job to sync role ${role} to cluster.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |            |        |
-| -------- | ---------- | ------ |
-| **Info** | **Queued** | **No** |
+| Severity | Status     | Audit Event |
+| -------- | ---------- | ----------- |
+| **Info** | **Queued** | **No**      |
 
 RoleSyncCreationSucceeded
 
@@ -876,11 +736,9 @@ RoleSyncCreationSucceeded
 Role ${role} successfully created in cluster.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 RoleSyncDeletionFailed
 
@@ -888,11 +746,9 @@ RoleSyncDeletionFailed
 Role ${role} deletion failed in cluster. Reason: ${reason}
 ```
 
-Severity | Status | Audit Event | |
-
-|             |             |        |
-| ----------- | ----------- | ------ |
-| **Warning** | **Failure** | **No** |
+| Severity    | Status      | Audit Event |
+| ----------- | ----------- | ----------- |
+| **Warning** | **Failure** | **No**      |
 
 RoleSyncDeletionScheduled
 
@@ -900,11 +756,9 @@ RoleSyncDeletionScheduled
 Scheduled a job to delete role ${role} from cluster.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |            |        |
-| -------- | ---------- | ------ |
-| **Info** | **Queued** | **No** |
+| Severity | Status     | Audit Event |
+| -------- | ---------- | ----------- |
+| **Info** | **Queued** | **No**      |
 
 RoleSyncDeletionSucceeded
 
@@ -912,11 +766,9 @@ RoleSyncDeletionSucceeded
 Role ${role} successfully deleted from cluster.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 RoleSyncGrantAuthzFailed
 
@@ -924,11 +776,9 @@ RoleSyncGrantAuthzFailed
 Failed to grant authorizations to role ${role} in cluster.  Reason: ${reason}
 ```
 
-Severity | Status | Audit Event | |
-
-|             |             |        |
-| ----------- | ----------- | ------ |
-| **Warning** | **Failure** | **No** |
+| Severity    | Status      | Audit Event |
+| ----------- | ----------- | ----------- |
+| **Warning** | **Failure** | **No**      |
 
 RoleSyncGrantAuthzScheduled
 
@@ -936,11 +786,9 @@ RoleSyncGrantAuthzScheduled
 Scheduled a job to grant authorizations to ${role} in cluster.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |            |        |
-| -------- | ---------- | ------ |
-| **Info** | **Queued** | **No** |
+| Severity | Status     | Audit Event |
+| -------- | ---------- | ----------- |
+| **Info** | **Queued** | **No**      |
 
 RoleSyncGrantAuthzSucceeded
 
@@ -948,11 +796,9 @@ RoleSyncGrantAuthzSucceeded
 Successfully granted authorizations to role ${role} in cluster.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 RoleSyncRevokeAuthzFailed
 
@@ -960,11 +806,9 @@ RoleSyncRevokeAuthzFailed
 Failed to revoke authorizations from role ${role} in cluster.  Reason: ${reason}
 ```
 
-Severity | Status | Audit Event | |
-
-|             |             |        |
-| ----------- | ----------- | ------ |
-| **Warning** | **Failure** | **No** |
+| Severity    | Status      | Audit Event |
+| ----------- | ----------- | ----------- |
+| **Warning** | **Failure** | **No**      |
 
 RoleSyncRevokeAuthzScheduled
 
@@ -972,11 +816,9 @@ RoleSyncRevokeAuthzScheduled
 Scheduled a job to revoke authorizations from ${role} in cluster.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |            |        |
-| -------- | ---------- | ------ |
-| **Info** | **Queued** | **No** |
+| Severity | Status     | Audit Event |
+| -------- | ---------- | ----------- |
+| **Info** | **Queued** | **No**      |
 
 RoleSyncRevokeAuthzSucceeded
 
@@ -984,11 +826,9 @@ RoleSyncRevokeAuthzSucceeded
 Successfully revoked all authorizations from role ${role} in cluster.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 RoleSyncUpdateFailed
 
@@ -996,11 +836,9 @@ RoleSyncUpdateFailed
 Failed to update the name and description of role ${role} in the  cluster. Reason: ${reason}
 ```
 
-Severity | Status | Audit Event | |
-
-|             |             |        |
-| ----------- | ----------- | ------ |
-| **Warning** | **Failure** | **No** |
+| Severity    | Status      | Audit Event |
+| ----------- | ----------- | ----------- |
+| **Warning** | **Failure** | **No**      |
 
 RoleSyncUpdateScheduled
 
@@ -1008,11 +846,9 @@ RoleSyncUpdateScheduled
 Scheduled a job to update role name and description of ${role} from the cluster.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |            |        |
-| -------- | ---------- | ------ |
-| **Info** | **Queued** | **No** |
+| Severity | Status     | Audit Event |
+| -------- | ---------- | ----------- |
+| **Info** | **Queued** | **No**      |
 
 RoleSyncUpdateSucceeded
 
@@ -1020,11 +856,9 @@ RoleSyncUpdateSucceeded
 The name and description of role ${role} successfully updated  in the cluster.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 ## saasapps
 
@@ -1036,11 +870,9 @@ SaasAppsRefreshOrgCanceled
 Canceled ${maintenanceType} metadata refresh for org ${orgName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |              |        |
-| -------- | ------------ | ------ |
-| **Info** | **Canceled** | **No** |
+| Severity | Status       | Audit Event |
+| -------- | ------------ | ----------- |
+| **Info** | **Canceled** | **No**      |
 
 SaasAppsRefreshOrgCompleted
 
@@ -1048,11 +880,9 @@ SaasAppsRefreshOrgCompleted
 Completed ${maintenanceType} metadata refresh for org ${orgName}. ${statsMsg}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 SaasAppsRefreshOrgCompletedWithWarnings
 
@@ -1060,11 +890,9 @@ SaasAppsRefreshOrgCompletedWithWarnings
 Completed ${maintenanceType} metadata refresh for org ${orgName} with warnings. ${statsMsg}. ${warningMsg}
 ```
 
-Severity | Status | Audit Event | |
-
-|             |             |        |
-| ----------- | ----------- | ------ |
-| **Warning** | **Success** | **No** |
+| Severity    | Status      | Audit Event |
+| ----------- | ----------- | ----------- |
+| **Warning** | **Success** | **No**      |
 
 SaasAppsRefreshOrgFailed
 
@@ -1072,11 +900,9 @@ SaasAppsRefreshOrgFailed
 Failed ${maintenanceType} metadata refresh of ${siteName}: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|             |             |        |
-| ----------- | ----------- | ------ |
-| **Warning** | **Failure** | **No** |
+| Severity    | Status      | Audit Event |
+| ----------- | ----------- | ----------- |
+| **Warning** | **Failure** | **No**      |
 
 SaasAppsRefreshOrgStarted
 
@@ -1084,8 +910,6 @@ SaasAppsRefreshOrgStarted
 Started ${maintenanceType} metadata refresh for subscription ${orgName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |

@@ -18,7 +18,7 @@
       
       
       <link rel="icon" href="../../../../../assets/favicon.ico">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.18">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.20">
     
     
       
@@ -26,7 +26,7 @@
       
     
     
-      <link rel="stylesheet" href="../../../../../assets/stylesheets/main.7e37652d.min.css">
+      <link rel="stylesheet" href="../../../../../assets/stylesheets/main.e53b48f4.min.css">
       
         
         <link rel="stylesheet" href="../../../../../assets/stylesheets/palette.06af60db.min.css">
@@ -5429,50 +5429,148 @@
 <p class="admonition-title">AwsNativeArchiveDBSnapshotTaskFailed</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>Failed to upload the database snapshot to the ${targetBucketName}  bucket of ${targetLocation} location. Reason: ${reason}.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Warning</strong></td><td><strong>TaskFailure</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Warning</strong></td>
+<td><strong>TaskFailure</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition info">
 <p class="admonition-title">AwsNativeArchiveDBSnapshotTaskStarted</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>Uploading the database snapshot to the ${targetBucketName} bucket of  ${targetLocation} location.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>Running</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>Running</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition info">
 <p class="admonition-title">AwsNativeArchiveDBSnapshotTaskSucceeded</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>Successfully archived database snapshot taken at ${snapshotTimeDisplay} to the ${targetBucketName} bucket of ${targetLocation} location.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>TaskSuccess</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>TaskSuccess</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition failure">
 <p class="admonition-title">AwsNativeArchiveSnapshotJobFailed</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>Failed to archive ${uploadType} snapshot taken at ${snapshotTimeDisplay} of the ${snappableDisplay} to the ${targetBucketName} bucket of ${targetLocation} location. Reason: ${reason}.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Critical</strong></td><td><strong>Failure</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Critical</strong></td>
+<td><strong>Failure</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition info">
 <p class="admonition-title">AwsNativeArchiveSnapshotJobSucceeded</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>Successfully archived ${uploadType} snapshot taken at ${snapshotTimeDisplay} of the ${snappableDisplay} to the ${targetBucketName} bucket of ${targetLocation} location. Processed ${dataTransferredFromSource} of data and uploaded  ${dataUploadedToDestination} (compressed) to Archival Location.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>Success</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>Success</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition warning">
 <p class="admonition-title">AwsNativeArchiveSnapshotTaskFailed</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>Failed to upload the snapshot to the ${targetBucketName} bucket of ${targetLocation} location. Reason: ${reason}.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Warning</strong></td><td><strong>TaskFailure</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Warning</strong></td>
+<td><strong>TaskFailure</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition info">
 <p class="admonition-title">AwsNativeArchiveSnapshotTaskStarted</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>Uploading the snapshot to the ${targetBucketName} bucket of ${targetLocation} location.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>Running</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>Running</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <h2 id="azurenative">azurenative</h2>
 <hr />
@@ -5480,29 +5578,85 @@
 <p class="admonition-title">AzureNativeArchiveSnapshotJobFailed</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>Failed to archive ${uploadType} snapshot taken at  ${snapshotTimeDisplay} of the ${snappableDisplay} to the  ${targetContainerName} container in ${storageAccountName} storage  account of ${targetLocation} location. Reason: ${reason}.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Critical</strong></td><td><strong>Failure</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Critical</strong></td>
+<td><strong>Failure</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition info">
 <p class="admonition-title">AzureNativeArchiveSnapshotJobSucceeded</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>Successfully archived ${uploadType} snapshot taken at ${snapshotTimeDisplay} of the ${snappableDisplay} to the ${targetContainerName} container in ${storageAccountName}  storage account of ${targetLocation} location. Processed  ${dataTransferredFromSource} of data and uploaded  ${dataUploadedToDestination} (compressed) to Archival Location.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>Success</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>Success</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition warning">
 <p class="admonition-title">AzureNativeArchiveSnapshotTaskFailed</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>Failed to upload the snapshot to the ${targetContainerName} container in ${storageAccountName} storage account of ${targetLocation} location. Reason: ${reason}.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Warning</strong></td><td><strong>TaskFailure</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Warning</strong></td>
+<td><strong>TaskFailure</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition info">
 <p class="admonition-title">AzureNativeArchiveSnapshotTaskStarted</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>Uploading the snapshot to the ${targetContainerName} container in ${storageAccountName} storage account of ${targetLocation} location.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>Running</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>Running</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <h2 id="cloudnative">cloudnative</h2>
 <hr />
@@ -5510,225 +5664,673 @@
 <p class="admonition-title">CloudNativeArchiveSnapshotJobCanceled</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>Canceled archival of snapshot of the ${snappableDisplay}.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>Canceled</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>Canceled</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition info">
 <p class="admonition-title">CloudNativeArchiveSnapshotJobCanceling</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>Canceling archival of snapshot of the ${snappableDisplay}.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>Canceling</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>Canceling</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition failure">
 <p class="admonition-title">CloudNativeArchiveSnapshotJobFailed</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>Failed to archive snapshot of the ${snappableDisplay}. Reason: ${reason}.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Critical</strong></td><td><strong>Failure</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Critical</strong></td>
+<td><strong>Failure</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition info">
 <p class="admonition-title">CloudNativeArchiveSnapshotJobStarted</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-14-1"><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a>Started archival of ${snappableDisplay}.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>TaskSuccess</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>TaskSuccess</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition info">
 <p class="admonition-title">CloudNativeArchiveSnapshotJobSucceededNoSnapshotFound</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-15-1"><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a>No snapshot found for ${snappableDisplay}.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>Success</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>Success</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition warning">
 <p class="admonition-title">CloudNativeArchiveSnapshotPrepareTaskFailed</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-16-1"><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a>Failed to archive snapshot of the ${snappableDisplay}. Reason: ${reason}.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Warning</strong></td><td><strong>TaskFailure</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Warning</strong></td>
+<td><strong>TaskFailure</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition info">
 <p class="admonition-title">CloudNativeArchiveSnapshotPrepareTaskStarted</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-17-1"><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a>Starting archival of snapshot for the ${snappableDisplay}.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>Running</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>Running</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition info">
 <p class="admonition-title">CloudNativeArchiveSnapshotPrepareTaskSucceeded</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-18-1"><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a>Started archival of the snapshot taken at ${snapshotTimeDisplay} of the ${snappableDisplay}.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>TaskSuccess</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>TaskSuccess</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition info">
 <p class="admonition-title">CloudNativeArchiveSnapshotTaskSucceeded</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-19-1"><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a>Uploaded the snapshot to archival location.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>TaskSuccess</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>TaskSuccess</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition warning">
 <p class="admonition-title">CloudNativeArchiveSnapshotWaitForIndexSnapshotTaskFailed</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-20-1"><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a>Failed to index the snapshot.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Warning</strong></td><td><strong>TaskFailure</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Warning</strong></td>
+<td><strong>TaskFailure</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition info">
 <p class="admonition-title">CloudNativeArchiveSnapshotWaitForIndexSnapshotTaskStarted</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-21-1"><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a>Waiting for snapshot to be indexed.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>Running</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>Running</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition info">
 <p class="admonition-title">CloudNativeArchiveSnapshotWaitForIndexSnapshotTaskSucceeded</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-22-1"><a id="__codelineno-22-1" name="__codelineno-22-1" href="#__codelineno-22-1"></a>Snapshot has successfully been indexed.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>TaskSuccess</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>TaskSuccess</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition warning">
 <p class="admonition-title">CloudNativeDeleteExportedDatabaseTaskFailed</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-23-1"><a id="__codelineno-23-1" name="__codelineno-23-1" href="#__codelineno-23-1"></a>Failed to delete ${numExportedDatabases} temporary databases in region ${exportedDBRegion}. Reason: ${reason}.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Warning</strong></td><td><strong>TaskFailure</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Warning</strong></td>
+<td><strong>TaskFailure</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition info">
 <p class="admonition-title">CloudNativeDeleteExportedDatabaseTaskStarted</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-24-1"><a id="__codelineno-24-1" name="__codelineno-24-1" href="#__codelineno-24-1"></a>Deleting ${numExportedDatabases} temporary databases in region ${exportedDBRegion}.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>Running</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>Running</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition info">
 <p class="admonition-title">CloudNativeDeleteExportedDatabaseTaskSucceeded</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-25-1"><a id="__codelineno-25-1" name="__codelineno-25-1" href="#__codelineno-25-1"></a>Successfully deleted ${numExportedDatabases} temporary databases in region ${exportedDBRegion}.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>TaskSuccess</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>TaskSuccess</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition warning">
 <p class="admonition-title">CloudNativeExportDatabaseTaskFailed</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-26-1"><a id="__codelineno-26-1" name="__codelineno-26-1" href="#__codelineno-26-1"></a>Failed to create ${numExportedDatabases} temporary databases in region ${exportedDBRegion}. Reason: ${reason}.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Warning</strong></td><td><strong>TaskFailure</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Warning</strong></td>
+<td><strong>TaskFailure</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition info">
 <p class="admonition-title">CloudNativeExportDatabaseTaskStarted</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-27-1"><a id="__codelineno-27-1" name="__codelineno-27-1" href="#__codelineno-27-1"></a>Creating temporary databases.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>Running</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>Running</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition info">
 <p class="admonition-title">CloudNativeExportDatabaseTaskSucceeded</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-28-1"><a id="__codelineno-28-1" name="__codelineno-28-1" href="#__codelineno-28-1"></a>Successfully created ${numExportedDatabases} temporary databases in region ${exportedDBRegion}.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>TaskSuccess</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>TaskSuccess</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition warning">
 <p class="admonition-title">CloudNativeImmediatelyScheduleMaintainedJobTaskFailed</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-29-1"><a id="__codelineno-29-1" name="__codelineno-29-1" href="#__codelineno-29-1"></a>Failed to trigger ${ImmediatelyScheduleMaintainedJobDisplay}.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Warning</strong></td><td><strong>TaskFailure</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Warning</strong></td>
+<td><strong>TaskFailure</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition info">
 <p class="admonition-title">CloudNativeImmediatelyScheduleMaintainedJobTaskStarted</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-30-1"><a id="__codelineno-30-1" name="__codelineno-30-1" href="#__codelineno-30-1"></a>Waiting for ${ImmediatelyScheduleMaintainedJobDisplay} to be triggered.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>Running</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>Running</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition info">
 <p class="admonition-title">CloudNativeImmediatelyScheduleMaintainedJobTaskSucceeded</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-31-1"><a id="__codelineno-31-1" name="__codelineno-31-1" href="#__codelineno-31-1"></a>Successfully triggered ${ImmediatelyScheduleMaintainedJobDisplay}.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>TaskSuccess</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>TaskSuccess</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition warning">
 <p class="admonition-title">CloudNativeImmediatelyScheduleMaintainedJobTaskSucceededWithError</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-32-1"><a id="__codelineno-32-1" name="__codelineno-32-1" href="#__codelineno-32-1"></a>Triggered ${ImmediatelyScheduleMaintainedJobDisplay} with error ${ignoredError}.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Warning</strong></td><td><strong>TaskSuccess</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Warning</strong></td>
+<td><strong>TaskSuccess</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition warning">
 <p class="admonition-title">CloudNativeLaunchEmptyDiskTaskFailed</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-33-1"><a id="__codelineno-33-1" name="__codelineno-33-1" href="#__codelineno-33-1"></a>Failed to launch scratch ${diskTypeDisplay}(s).
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Warning</strong></td><td><strong>TaskFailure</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Warning</strong></td>
+<td><strong>TaskFailure</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition info">
 <p class="admonition-title">CloudNativeLaunchEmptyDiskTaskStarted</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-34-1"><a id="__codelineno-34-1" name="__codelineno-34-1" href="#__codelineno-34-1"></a>Temporarily launching scratch ${diskTypeDisplay}(s) in region ${region}.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>Running</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>Running</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition info">
 <p class="admonition-title">CloudNativeLaunchEmptyDiskTaskSucceeded</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-35-1"><a id="__codelineno-35-1" name="__codelineno-35-1" href="#__codelineno-35-1"></a>Launched scratch ${diskTypeDisplay}(s) in region ${region}.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>TaskSuccess</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>TaskSuccess</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition warning">
 <p class="admonition-title">CloudNativeOnDemandJobTaskFailed</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-36-1"><a id="__codelineno-36-1" name="__codelineno-36-1" href="#__codelineno-36-1"></a>Failed to perform ${onDemandJobDisplay}.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Warning</strong></td><td><strong>TaskFailure</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Warning</strong></td>
+<td><strong>TaskFailure</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition info">
 <p class="admonition-title">CloudNativeOnDemandJobTaskStarted</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-37-1"><a id="__codelineno-37-1" name="__codelineno-37-1" href="#__codelineno-37-1"></a>Waiting for ${onDemandJobDisplay} to complete.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>Running</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>Running</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition info">
 <p class="admonition-title">CloudNativeOnDemandJobTaskSucceeded</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-38-1"><a id="__codelineno-38-1" name="__codelineno-38-1" href="#__codelineno-38-1"></a>Successfully completed ${onDemandJobDisplay}.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>TaskSuccess</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>TaskSuccess</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition warning">
 <p class="admonition-title">CloudNativeOnDemandJobTaskSucceededWithError</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-39-1"><a id="__codelineno-39-1" name="__codelineno-39-1" href="#__codelineno-39-1"></a>Completed ${onDemandJobDisplay} with error ${ignoredError}.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Warning</strong></td><td><strong>TaskSuccess</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Warning</strong></td>
+<td><strong>TaskSuccess</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition info">
 <p class="admonition-title">CloudNativeOnDemandJobTaskWithoutWaitSucceeded</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-40-1"><a id="__codelineno-40-1" name="__codelineno-40-1" href="#__codelineno-40-1"></a>Successfully triggered ${onDemandJobDisplay}.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>TaskSuccess</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>TaskSuccess</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition info">
 <p class="admonition-title">CloudNativeOnDemandJobTaskWithoutWaitSucceededWithError</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-41-1"><a id="__codelineno-41-1" name="__codelineno-41-1" href="#__codelineno-41-1"></a>Failed to trigger ${onDemandJobDisplay} with error ${ignoredError}.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>TaskSuccess</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>TaskSuccess</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition info">
 <p class="admonition-title">CloudNativePublishArchiveDBSnapshotTaskProgress</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-42-1"><a id="__codelineno-42-1" name="__codelineno-42-1" href="#__codelineno-42-1"></a>Archival in progress: ${numTablePartitions} out of total ${totalTablePartitions} table partitions successfully archived.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>Running</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>Running</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <h2 id="gcpnative">gcpnative</h2>
 <hr />
@@ -5736,29 +6338,85 @@
 <p class="admonition-title">GCPNativeArchiveSnapshotJobFailed</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-43-1"><a id="__codelineno-43-1" name="__codelineno-43-1" href="#__codelineno-43-1"></a>Failed to archive ${uploadType} snapshot taken at ${snapshotTimeDisplay} of the ${snappableDisplay} to the ${targetBucketName} bucket of ${targetLocation} location. Reason: ${reason}.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Critical</strong></td><td><strong>Failure</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Critical</strong></td>
+<td><strong>Failure</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition info">
 <p class="admonition-title">GCPNativeArchiveSnapshotJobSucceeded</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-44-1"><a id="__codelineno-44-1" name="__codelineno-44-1" href="#__codelineno-44-1"></a>Successfully archived ${uploadType} snapshot taken at  ${snapshotTimeDisplay} of the ${snappableDisplay} to the  ${targetBucketName} bucket of ${targetLocation} location. Processed ${dataTransferredFromSource} of data and uploaded  ${dataUploadedToDestination} (compressed) to Archival Location.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>Success</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>Success</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition warning">
 <p class="admonition-title">GCPNativeArchiveSnapshotTaskFailed</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-45-1"><a id="__codelineno-45-1" name="__codelineno-45-1" href="#__codelineno-45-1"></a>Failed to upload the snapshot to the ${targetBucketName} bucket of ${targetLocation} location. Reason: ${reason}.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Warning</strong></td><td><strong>TaskFailure</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Warning</strong></td>
+<td><strong>TaskFailure</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition info">
 <p class="admonition-title">GCPNativeArchiveSnapshotTaskStarted</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-46-1"><a id="__codelineno-46-1" name="__codelineno-46-1" href="#__codelineno-46-1"></a>Uploading the snapshot to the ${targetBucketName} bucket   of ${targetLocation} location.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>Running</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>Running</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <h2 id="rcv">rcv</h2>
 <hr />
@@ -5766,8 +6424,22 @@
 <p class="admonition-title">RCVDataDeletionSuccess</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-47-1"><a id="__codelineno-47-1" name="__codelineno-47-1" href="#__codelineno-47-1"></a>Pursuant to Rubrik policy, data associated with the deleted RCV storage  location &#39;${name}&#39; has been successfully deleted.
 </span></code></pre></div>
-<p><table width="100%"><th><td>Severity</td><td>Status</td><td>Audit Event</td></th></p>
-<p><tr><td><strong>Info</strong></td><td><strong>Success</strong></td><td><strong>No</strong></td></tr></table></p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Status</th>
+<th>Audit Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Info</strong></td>
+<td><strong>Success</strong></td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 
 
@@ -5789,7 +6461,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="August 27, 2025 19:06:59 UTC">2025-08-27</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="September 16, 2025 17:51:30 UTC">2025-09-16</span>
   </span>
 
     
@@ -5943,7 +6615,7 @@
       <script id="__config" type="application/json">{"base": "../../../../..", "features": ["content.code.copy", "content.code.annotate", "content.tooltips", "content.tabs.link", "navigation.tabs", "navigation.indexes", "search.share"], "search": "../../../../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../../../../../assets/javascripts/bundle.92b07e13.min.js"></script>
+      <script src="../../../../../assets/javascripts/bundle.f55a23d4.min.js"></script>
       
         <script src="../../../../../javascripts/extra.js"></script>
       

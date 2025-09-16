@@ -8,11 +8,9 @@ BlueprintLocalRecoveryCanceled
 In-place recovery canceled for the Recovery Plan '${name}' on '${location}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |              |        |
-| -------- | ------------ | ------ |
-| **Info** | **Canceled** | **No** |
+| Severity | Status       | Audit Event |
+| -------- | ------------ | ----------- |
+| **Info** | **Canceled** | **No**      |
 
 BlueprintLocalRecoveryCanceling
 
@@ -20,11 +18,9 @@ BlueprintLocalRecoveryCanceling
 Canceling in-place recovery for the Recovery Plan '${name}' on '${location}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |               |        |
-| -------- | ------------- | ------ |
-| **Info** | **Canceling** | **No** |
+| Severity | Status        | Audit Event |
+| -------- | ------------- | ----------- |
+| **Info** | **Canceling** | **No**      |
 
 BlueprintLocalRecoveryDataIngestionFailed
 
@@ -32,11 +28,9 @@ BlueprintLocalRecoveryDataIngestionFailed
 '${dataIngestionOperation}' recovery failed for the Recovery Plan '${name}': ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |                 |        |
-| ------------ | --------------- | ------ |
-| **Critical** | **TaskFailure** | **No** |
+| Severity     | Status          | Audit Event |
+| ------------ | --------------- | ----------- |
+| **Critical** | **TaskFailure** | **No**      |
 
 BlueprintLocalRecoveryDataIngestionStarted
 
@@ -44,11 +38,9 @@ BlueprintLocalRecoveryDataIngestionStarted
 Starting the '${dataIngestionOperation}' process for Recovery Plan '${name}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 BlueprintLocalRecoveryDataIngestionSucceed
 
@@ -56,11 +48,9 @@ BlueprintLocalRecoveryDataIngestionSucceed
 '${dataIngestionOperation}' process for in-place recovery succeeded for Recovery Plan '${name}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 BlueprintLocalRecoveryFailed
 
@@ -68,11 +58,9 @@ BlueprintLocalRecoveryFailed
 In-place recovery failed for the Recovery Plan '${name}' on '${location}': ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Failure** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **No**      |
 
 BlueprintLocalRecoveryFinalizeFailed
 
@@ -80,11 +68,9 @@ BlueprintLocalRecoveryFinalizeFailed
 Final in-place recovery tasks failed for Recovery Plan '${name}': ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Failure** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **No**      |
 
 BlueprintLocalRecoveryFinalizeStarted
 
@@ -92,11 +78,9 @@ BlueprintLocalRecoveryFinalizeStarted
 Starting the final in-place recovery tasks for Recovery Plan '${name}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 BlueprintLocalRecoveryFinalizeSucceed
 
@@ -104,11 +88,9 @@ BlueprintLocalRecoveryFinalizeSucceed
 Final in-place recovery tasks succeeded for Recovery Plan '${name}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 BlueprintLocalRecoveryPostScriptOptFailed
 
@@ -116,11 +98,9 @@ BlueprintLocalRecoveryPostScriptOptFailed
 Unable to execute post scripts on the in-place recovered cluster '${sourceClusterName}' for the Recovery Plan '${name}': ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |                 |        |
-| ------------ | --------------- | ------ |
-| **Critical** | **TaskFailure** | **No** |
+| Severity     | Status          | Audit Event |
+| ------------ | --------------- | ----------- |
+| **Critical** | **TaskFailure** | **No**      |
 
 BlueprintLocalRecoveryPostScriptOptStarted
 
@@ -128,11 +108,9 @@ BlueprintLocalRecoveryPostScriptOptStarted
 Starting to execute post scripts on the in-place recovered cluster '${sourceClusterName}' for the Recovery Plan '${name}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 BlueprintLocalRecoveryPostScriptOptSucceed
 
@@ -140,11 +118,9 @@ BlueprintLocalRecoveryPostScriptOptSucceed
 The in-place recovery cluster '${sourceClusterName}' post scripts setup succeeded for the Recovery Plan '${name}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 BlueprintLocalRecoveryPrepareDataFailed
 
@@ -152,11 +128,9 @@ BlueprintLocalRecoveryPrepareDataFailed
 In-place recovery initialization process failed for Recovery Plan '${name}'. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |                 |        |
-| ------------ | --------------- | ------ |
-| **Critical** | **TaskFailure** | **No** |
+| Severity     | Status          | Audit Event |
+| ------------ | --------------- | ----------- |
+| **Critical** | **TaskFailure** | **No**      |
 
 BlueprintLocalRecoveryPrepareDataStarted
 
@@ -164,11 +138,9 @@ BlueprintLocalRecoveryPrepareDataStarted
 Starting the in-place recovery initialization process for Recovery Plan '${name}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 BlueprintLocalRecoveryPrepareDataSucceed
 
@@ -176,11 +148,9 @@ BlueprintLocalRecoveryPrepareDataSucceed
 In-place recovery initialization process succeeded for Recovery Plan '${name}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 BlueprintLocalRecoveryPrepareResourceFailed
 
@@ -188,11 +158,9 @@ BlueprintLocalRecoveryPrepareResourceFailed
 The in-place recovery resource validation and initialization failed for Recovery Plan '${name}'. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |                 |        |
-| ------------ | --------------- | ------ |
-| **Critical** | **TaskFailure** | **No** |
+| Severity     | Status          | Audit Event |
+| ------------ | --------------- | ----------- |
+| **Critical** | **TaskFailure** | **No**      |
 
 BlueprintLocalRecoveryPrepareResourceStarted
 
@@ -200,11 +168,9 @@ BlueprintLocalRecoveryPrepareResourceStarted
 Starting the in-place recovery resource validation and initialization process for Recovery Plan '${name}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 BlueprintLocalRecoveryPrepareResourceSucceed
 
@@ -212,11 +178,9 @@ BlueprintLocalRecoveryPrepareResourceSucceed
 The in-place recovery resource validation and initialization succeeded for Recovery Plan '${name}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 BlueprintLocalRecoveryProvisionFailed
 
@@ -224,11 +188,9 @@ BlueprintLocalRecoveryProvisionFailed
 Unable to set up Rubrik cluster '${targetClusterName}' for in-place recovery of Recovery Plan '${name}': ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |                 |        |
-| ------------ | --------------- | ------ |
-| **Critical** | **TaskFailure** | **No** |
+| Severity     | Status          | Audit Event |
+| ------------ | --------------- | ----------- |
+| **Critical** | **TaskFailure** | **No**      |
 
 BlueprintLocalRecoveryProvisionStarted
 
@@ -236,11 +198,9 @@ BlueprintLocalRecoveryProvisionStarted
 Setting up Rubrik cluster '${targetClusterName}' for in-place recovery of Recovery Plan '${name}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 BlueprintLocalRecoveryProvisionSucceed
 
@@ -248,11 +208,9 @@ BlueprintLocalRecoveryProvisionSucceed
 Reconfiguration of virtual machines on Rubrik cluster '${targetClusterName}' succeeded for in-place recovery of Recovery Plan '${name}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 BlueprintLocalRecoveryProvisionSucceedWithNetworkReconfigureFailureEvent
 
@@ -260,11 +218,9 @@ BlueprintLocalRecoveryProvisionSucceedWithNetworkReconfigureFailureEvent
 Reconfiguration of virtual machines on target Rubrik cluster '${targetClusterName}' failed for Recovery Plan '${name}'. Ignoring and continuing.
 ```
 
-Severity | Status | Audit Event | |
-
-|             |                 |        |
-| ----------- | --------------- | ------ |
-| **Warning** | **TaskSuccess** | **No** |
+| Severity    | Status          | Audit Event |
+| ----------- | --------------- | ----------- |
+| **Warning** | **TaskSuccess** | **No**      |
 
 BlueprintLocalRecoveryScheduled
 
@@ -272,11 +228,9 @@ BlueprintLocalRecoveryScheduled
 Scheduled in-place recovery job for Recovery Plan '${name}' on '${location}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |            |        |
-| -------- | ---------- | ------ |
-| **Info** | **Queued** | **No** |
+| Severity | Status     | Audit Event |
+| -------- | ---------- | ----------- |
+| **Info** | **Queued** | **No**      |
 
 BlueprintLocalRecoveryStarted
 
@@ -284,11 +238,9 @@ BlueprintLocalRecoveryStarted
 Starting in-place recovery for Recovery Plan '${name}' to '${location}'. Abort and cleanup setting is ${undoOnFailure}. Skipping network reconfiguration errors is ${skipNetworkError}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 BlueprintLocalRecoverySuccess
 
@@ -296,11 +248,9 @@ BlueprintLocalRecoverySuccess
 Successfully completed in-place recovery for the Recovery Plan '${name}' on '${location}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 ## appflows
 
@@ -312,8 +262,6 @@ BlueprintLocalRecoveryStart
 ${userEmail} triggered local recovery for recovery plan '${blueprintName}' to ${targetSite}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |

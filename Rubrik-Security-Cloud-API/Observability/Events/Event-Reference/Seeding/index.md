@@ -8,11 +8,9 @@ SaasAppsCascadingImpactAnalysisSeedingJobFailed
 Unable to complete impact analysis of ${numKeys} keys ${selectedKeys}.  Contact Rubrik Support.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Failure** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **No**      |
 
 SaasAppsCascadingImpactAnalysisSeedingJobStarted
 
@@ -20,11 +18,9 @@ SaasAppsCascadingImpactAnalysisSeedingJobStarted
 Started impact analysis of ${numKeys} keys ${selectedKeys}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 SaasAppsCascadingImpactAnalysisSeedingJobSucceeded
 
@@ -32,11 +28,9 @@ SaasAppsCascadingImpactAnalysisSeedingJobSucceeded
 Successfully completed impact analysis of ${numKeys} keys ${selectedKeys}.  Check notifications to resume the seeding.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 SaasAppsSeedingCanceled
 
@@ -44,11 +38,9 @@ SaasAppsSeedingCanceled
 Canceled seeding of ${displayName} ${snappableType}. ${attachmentURLMessage}
 ```
 
-Severity | Status | Audit Event | |
-
-|          |              |        |
-| -------- | ------------ | ------ |
-| **Info** | **Canceled** | **No** |
+| Severity | Status       | Audit Event |
+| -------- | ------------ | ----------- |
+| **Info** | **Canceled** | **No**      |
 
 SaasAppsSeedingCompleted
 
@@ -56,11 +48,9 @@ SaasAppsSeedingCompleted
 Successfully completed the seeding of ${displayName} ${snappableType} with ${numKeys} keys, ${selectedKeys}. ${attachmentURLMessage}
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 SaasAppsSeedingCompletedWithWarnings
 
@@ -68,11 +58,9 @@ SaasAppsSeedingCompletedWithWarnings
 Successfully completed the seeding of ${displayName} ${snappableType} with warnings. ${warningMessage} Seeded ${numKeys} keys, ${selectedKeys}. ${attachmentURLMessage}
 ```
 
-Severity | Status | Audit Event | |
-
-|             |                    |        |
-| ----------- | ------------------ | ------ |
-| **Warning** | **PartialSuccess** | **No** |
+| Severity    | Status             | Audit Event |
+| ----------- | ------------------ | ----------- |
+| **Warning** | **PartialSuccess** | **No**      |
 
 SaasAppsSeedingFailed
 
@@ -80,11 +68,9 @@ SaasAppsSeedingFailed
 Unable to seed ${displayName} ${snappableType}. Reason: ${reason}. ${attachmentURLMessage}
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Failure** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **No**      |
 
 SaasAppsSeedingStarted
 
@@ -92,8 +78,6 @@ SaasAppsSeedingStarted
 Started the seeding of ${displayName} ${snappableType} with ${numKeys} keys, ${selectedKeys}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |

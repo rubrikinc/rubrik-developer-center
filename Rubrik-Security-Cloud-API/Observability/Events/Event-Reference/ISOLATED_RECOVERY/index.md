@@ -8,11 +8,9 @@ CleanupIsolatedRecoveryFailed
 Failed to complete the clean up: ${reason}
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Failure** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **No**      |
 
 CleanupIsolatedRecoveryStarted
 
@@ -20,11 +18,9 @@ CleanupIsolatedRecoveryStarted
 Starting cleaning up cyber recovery
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 CleanupIsolatedRecoverySuccess
 
@@ -32,11 +28,9 @@ CleanupIsolatedRecoverySuccess
 Successfully completed the clean up
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 CleanupIsolatedRecoveryTaskFailed
 
@@ -44,11 +38,9 @@ CleanupIsolatedRecoveryTaskFailed
 Unable to clean up virtual machines: ${reason}
 ```
 
-Severity | Status | Audit Event | |
-
-|              |                 |        |
-| ------------ | --------------- | ------ |
-| **Critical** | **TaskFailure** | **No** |
+| Severity     | Status          | Audit Event |
+| ------------ | --------------- | ----------- |
+| **Critical** | **TaskFailure** | **No**      |
 
 CleanupIsolatedRecoveryTaskStarted
 
@@ -56,11 +48,9 @@ CleanupIsolatedRecoveryTaskStarted
 Starting clean up of virtual machines
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Running** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Running** | **No**      |
 
 CleanupIsolatedRecoveryTaskSucceeded
 
@@ -68,11 +58,9 @@ CleanupIsolatedRecoveryTaskSucceeded
 Successfully cleaned up virtual machines
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 IsolatedRecoveryConfigurationFailed
 
@@ -80,11 +68,9 @@ IsolatedRecoveryConfigurationFailed
 Failed to complete configuration of virtual machines: ${reason}
 ```
 
-Severity | Status | Audit Event | |
-
-|              |                 |        |
-| ------------ | --------------- | ------ |
-| **Critical** | **TaskFailure** | **No** |
+| Severity     | Status          | Audit Event |
+| ------------ | --------------- | ----------- |
+| **Critical** | **TaskFailure** | **No**      |
 
 IsolatedRecoveryConfigurationStarted
 
@@ -92,11 +78,9 @@ IsolatedRecoveryConfigurationStarted
 Starting configuration of virtual machines
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 IsolatedRecoveryConfigurationSucceeded
 
@@ -104,11 +88,9 @@ IsolatedRecoveryConfigurationSucceeded
 Successfully completed configuration of virtual machines
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 IsolatedRecoveryDeployEnvironmentFailed
 
@@ -116,11 +98,9 @@ IsolatedRecoveryDeployEnvironmentFailed
 Failed to deploy recovery environment for cyber recovery of Recovery Plan '${planName}', recovery name: '${recoveryName}': ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |                 |        |
-| ------------ | --------------- | ------ |
-| **Critical** | **TaskFailure** | **No** |
+| Severity     | Status          | Audit Event |
+| ------------ | --------------- | ----------- |
+| **Critical** | **TaskFailure** | **No**      |
 
 IsolatedRecoveryDeployEnvironmentStarted
 
@@ -128,11 +108,9 @@ IsolatedRecoveryDeployEnvironmentStarted
 Starting deployment of recovery environment for cyber recovery of Recovery Plan '${planName}', recovery name: '${recoveryName}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 IsolatedRecoveryDeployEnvironmentSucceeded
 
@@ -140,11 +118,9 @@ IsolatedRecoveryDeployEnvironmentSucceeded
 Successfully completed deployment of recovery environment for cyber recovery of Recovery Plan '${planName}', recovery name: '${recoveryName}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 IsolatedRecoveryFailed
 
@@ -152,11 +128,9 @@ IsolatedRecoveryFailed
 Failed to complete cyber recovery: ${reason}
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Failure** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **No**      |
 
 IsolatedRecoveryFinalizeFailed
 
@@ -164,11 +138,9 @@ IsolatedRecoveryFinalizeFailed
 Failed to complete final tasks of releasing resources for cyber recovery: ${reason}
 ```
 
-Severity | Status | Audit Event | |
-
-|              |                 |        |
-| ------------ | --------------- | ------ |
-| **Critical** | **TaskFailure** | **No** |
+| Severity     | Status          | Audit Event |
+| ------------ | --------------- | ----------- |
+| **Critical** | **TaskFailure** | **No**      |
 
 IsolatedRecoveryFinalizeStarted
 
@@ -176,11 +148,9 @@ IsolatedRecoveryFinalizeStarted
 Starting final tasks of releasing resources for cyber recovery
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 IsolatedRecoveryFinalizeSucceeded
 
@@ -188,11 +158,9 @@ IsolatedRecoveryFinalizeSucceeded
 Successfully completed final tasks of releasing resources for cyber recovery
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 IsolatedRecoveryNetworkConfigurationFailed
 
@@ -200,11 +168,9 @@ IsolatedRecoveryNetworkConfigurationFailed
 Error occurred during network configuration of virtual machines
 ```
 
-Severity | Status | Audit Event | |
-
-|              |                 |        |
-| ------------ | --------------- | ------ |
-| **Critical** | **TaskFailure** | **No** |
+| Severity     | Status          | Audit Event |
+| ------------ | --------------- | ----------- |
+| **Critical** | **TaskFailure** | **No**      |
 
 IsolatedRecoveryNetworkConfigurationStarted
 
@@ -212,11 +178,9 @@ IsolatedRecoveryNetworkConfigurationStarted
 Starting to execute network configuration
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 IsolatedRecoveryNetworkConfigurationSucceeded
 
@@ -224,11 +188,9 @@ IsolatedRecoveryNetworkConfigurationSucceeded
 Successfully completed network configuration of virtual machines
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 IsolatedRecoveryPostScriptFailed
 
@@ -236,11 +198,9 @@ IsolatedRecoveryPostScriptFailed
 Error occured during validation of post-recovery scripts
 ```
 
-Severity | Status | Audit Event | |
-
-|              |                 |        |
-| ------------ | --------------- | ------ |
-| **Critical** | **TaskFailure** | **No** |
+| Severity     | Status          | Audit Event |
+| ------------ | --------------- | ----------- |
+| **Critical** | **TaskFailure** | **No**      |
 
 IsolatedRecoveryPostScriptStarted
 
@@ -248,11 +208,9 @@ IsolatedRecoveryPostScriptStarted
 Starting to execute post-recovery scripts
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 IsolatedRecoveryPostScriptSucceeded
 
@@ -260,11 +218,9 @@ IsolatedRecoveryPostScriptSucceeded
 Successfully completed validation of post-recovery scripts
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 IsolatedRecoveryPrepareDataFailed
 
@@ -272,11 +228,9 @@ IsolatedRecoveryPrepareDataFailed
 Failed to complete initialization process for cyber recovery: ${reason}
 ```
 
-Severity | Status | Audit Event | |
-
-|              |                 |        |
-| ------------ | --------------- | ------ |
-| **Critical** | **TaskFailure** | **No** |
+| Severity     | Status          | Audit Event |
+| ------------ | --------------- | ----------- |
+| **Critical** | **TaskFailure** | **No**      |
 
 IsolatedRecoveryPrepareDataStarted
 
@@ -284,11 +238,9 @@ IsolatedRecoveryPrepareDataStarted
 Starting initialization process for cyber recovery
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 IsolatedRecoveryPrepareDataSucceeded
 
@@ -296,11 +248,9 @@ IsolatedRecoveryPrepareDataSucceeded
 Successfully completed initialization process for cyber recovery
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 IsolatedRecoveryPrepareResourceFailed
 
@@ -308,11 +258,9 @@ IsolatedRecoveryPrepareResourceFailed
 Failed to complete resource validation and initialization: ${reason}
 ```
 
-Severity | Status | Audit Event | |
-
-|              |                 |        |
-| ------------ | --------------- | ------ |
-| **Critical** | **TaskFailure** | **No** |
+| Severity     | Status          | Audit Event |
+| ------------ | --------------- | ----------- |
+| **Critical** | **TaskFailure** | **No**      |
 
 IsolatedRecoveryPrepareResourceStarted
 
@@ -320,11 +268,9 @@ IsolatedRecoveryPrepareResourceStarted
 Starting resource validation and initialization
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 IsolatedRecoveryPrepareResourceSucceeded
 
@@ -332,11 +278,9 @@ IsolatedRecoveryPrepareResourceSucceeded
 Successfully completed resource validation and initialization
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 IsolatedRecoveryRecoverObjectsFailed
 
@@ -344,11 +288,9 @@ IsolatedRecoveryRecoverObjectsFailed
 Failed to complete recovery of virtual machines: ${reason}
 ```
 
-Severity | Status | Audit Event | |
-
-|              |                 |        |
-| ------------ | --------------- | ------ |
-| **Critical** | **TaskFailure** | **No** |
+| Severity     | Status          | Audit Event |
+| ------------ | --------------- | ----------- |
+| **Critical** | **TaskFailure** | **No**      |
 
 IsolatedRecoveryRecoverObjectsStarted
 
@@ -356,11 +298,9 @@ IsolatedRecoveryRecoverObjectsStarted
 Starting recovery of virtual machines
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 IsolatedRecoveryRecoverObjectsSucceeded
 
@@ -368,11 +308,9 @@ IsolatedRecoveryRecoverObjectsSucceeded
 Successfully completed recovery of virtual machines
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 IsolatedRecoveryScheduled
 
@@ -380,11 +318,9 @@ IsolatedRecoveryScheduled
 Scheduled a job to execute cyber recovery
 ```
 
-Severity | Status | Audit Event | |
-
-|          |            |        |
-| -------- | ---------- | ------ |
-| **Info** | **Queued** | **No** |
+| Severity | Status     | Audit Event |
+| -------- | ---------- | ----------- |
+| **Info** | **Queued** | **No**      |
 
 IsolatedRecoveryStarted
 
@@ -392,11 +328,9 @@ IsolatedRecoveryStarted
 Starting cyber recovery via ${dataTransferType}. Use the ${undoOnFailure} setting to abort and cleanup the recovery.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 IsolatedRecoverySucceeded
 
@@ -404,11 +338,9 @@ IsolatedRecoverySucceeded
 Successfully completed cyber recovery
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 ## appflows
 
@@ -420,11 +352,9 @@ IsolatedRecoveryCleanupTriggered
 ${userEmail} triggered a cyber recovery cleanup job for recovery '${recoveryName}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 IsolatedRecoveryLocked
 
@@ -432,11 +362,9 @@ IsolatedRecoveryLocked
 ${userEmail} locked cyber recovery '${recoveryName}' for recovery plan '${planName}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 IsolatedRecoveryTriggered
 
@@ -444,8 +372,6 @@ IsolatedRecoveryTriggered
 ${userEmail} triggered a cyber recovery '${recoveryName}' to ${targetSite}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |

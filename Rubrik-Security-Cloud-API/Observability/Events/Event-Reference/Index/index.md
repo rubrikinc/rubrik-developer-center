@@ -8,11 +8,9 @@ AzureADIndexJobCanceled
 Canceled snapshot indexing for directory \"${adDirectory}\".
 ```
 
-Severity | Status | Audit Event | |
-
-|          |              |        |
-| -------- | ------------ | ------ |
-| **Info** | **Canceled** | **No** |
+| Severity | Status       | Audit Event |
+| -------- | ------------ | ----------- |
+| **Info** | **Canceled** | **No**      |
 
 AzureADIndexJobCanceling
 
@@ -20,11 +18,9 @@ AzureADIndexJobCanceling
 Canceling snapshot indexing for directory \"${adDirectory}\".
 ```
 
-Severity | Status | Audit Event | |
-
-|          |               |        |
-| -------- | ------------- | ------ |
-| **Info** | **Canceling** | **No** |
+| Severity | Status        | Audit Event |
+| -------- | ------------- | ----------- |
+| **Info** | **Canceling** | **No**      |
 
 AzureADIndexJobFailed
 
@@ -32,11 +28,9 @@ AzureADIndexJobFailed
 Unable to index snapshot for directory \"${adDirectory}\".
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Failure** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **No**      |
 
 AzureADIndexJobQueued
 
@@ -44,11 +38,9 @@ AzureADIndexJobQueued
 Queued snapshot indexing for directory \"${adDirectory}\".
 ```
 
-Severity | Status | Audit Event | |
-
-|          |            |        |
-| -------- | ---------- | ------ |
-| **Info** | **Queued** | **No** |
+| Severity | Status     | Audit Event |
+| -------- | ---------- | ----------- |
+| **Info** | **Queued** | **No**      |
 
 AzureADIndexJobStarted
 
@@ -56,11 +48,9 @@ AzureADIndexJobStarted
 Started snapshot indexing for directory \"${adDirectory}\".
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 AzureADIndexJobSucceeded
 
@@ -68,11 +58,9 @@ AzureADIndexJobSucceeded
 Successfully completed snapshot indexing for directory  \"${adDirectory}\".
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 ## cloudnative
 
@@ -84,11 +72,9 @@ CloudNativeDeleteEmptyDiskTaskFailed
 Failed to delete scratch ${diskTypeDisplay}(s) in region ${region}.
 ```
 
-Severity | Status | Audit Event | |
-
-|             |                 |        |
-| ----------- | --------------- | ------ |
-| **Warning** | **TaskFailure** | **No** |
+| Severity    | Status          | Audit Event |
+| ----------- | --------------- | ----------- |
+| **Warning** | **TaskFailure** | **No**      |
 
 CloudNativeDeleteEmptyDiskTaskStarted
 
@@ -96,11 +82,9 @@ CloudNativeDeleteEmptyDiskTaskStarted
 Deleting scratch ${diskTypeDisplay}(s) in region ${region}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Running** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Running** | **No**      |
 
 CloudNativeDeleteEmptyDiskTaskSucceeded
 
@@ -108,11 +92,9 @@ CloudNativeDeleteEmptyDiskTaskSucceeded
 Deleted scratch ${diskTypeDisplay}(s) in region ${region}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 CloudNativeIndexSnapshotBegin
 
@@ -120,11 +102,9 @@ CloudNativeIndexSnapshotBegin
 Started indexing of snapshot taken at ${snapshotTimeDisplay}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Running** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Running** | **No**      |
 
 CloudNativeIndexSnapshotFailedRetryable
 
@@ -132,11 +112,9 @@ CloudNativeIndexSnapshotFailedRetryable
 Failed to index snapshot taken at ${snapshotTimeDisplay} in the ${indexingAttempt} attempt. Reason: ${reason}. It will be retried automatically.
 ```
 
-Severity | Status | Audit Event | |
-
-|             |             |        |
-| ----------- | ----------- | ------ |
-| **Warning** | **Failure** | **No** |
+| Severity    | Status      | Audit Event |
+| ----------- | ----------- | ----------- |
+| **Warning** | **Failure** | **No**      |
 
 CloudNativeIndexSnapshotFailedUnindexable
 
@@ -144,11 +122,9 @@ CloudNativeIndexSnapshotFailedUnindexable
 Failed to index snapshot taken at ${snapshotTimeDisplay} in the ${indexingAttempt} attempt. Reason: ${reason}. Skipping indexing of this snapshot.
 ```
 
-Severity | Status | Audit Event | |
-
-|             |             |        |
-| ----------- | ----------- | ------ |
-| **Warning** | **Failure** | **No** |
+| Severity    | Status      | Audit Event |
+| ----------- | ----------- | ----------- |
+| **Warning** | **Failure** | **No**      |
 
 CloudNativeIndexSnapshotsDeleteDisksTaskFailed
 
@@ -156,11 +132,9 @@ CloudNativeIndexSnapshotsDeleteDisksTaskFailed
 Failed to delete ${diskTypeDisplay}(s) for ${numSnapshots} snapshot(s).
 ```
 
-Severity | Status | Audit Event | |
-
-|             |                 |        |
-| ----------- | --------------- | ------ |
-| **Warning** | **TaskFailure** | **No** |
+| Severity    | Status          | Audit Event |
+| ----------- | --------------- | ----------- |
+| **Warning** | **TaskFailure** | **No**      |
 
 CloudNativeIndexSnapshotsDeleteDisksTaskStarted
 
@@ -168,11 +142,9 @@ CloudNativeIndexSnapshotsDeleteDisksTaskStarted
 Deleting ${diskTypeDisplay}(s) for ${numSnapshots} snapshot(s).
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Running** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Running** | **No**      |
 
 CloudNativeIndexSnapshotsDeleteDisksTaskSucceeded
 
@@ -180,11 +152,9 @@ CloudNativeIndexSnapshotsDeleteDisksTaskSucceeded
 Deleted ${diskTypeDisplay}(s) for ${numSnapshots} snapshot(s).
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 CloudNativeIndexSnapshotsJobCanceled
 
@@ -192,11 +162,9 @@ CloudNativeIndexSnapshotsJobCanceled
 Canceled indexing of the snapshots of the ${snappableDisplay}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |              |        |
-| -------- | ------------ | ------ |
-| **Info** | **Canceled** | **No** |
+| Severity | Status       | Audit Event |
+| -------- | ------------ | ----------- |
+| **Info** | **Canceled** | **No**      |
 
 CloudNativeIndexSnapshotsJobCanceling
 
@@ -204,11 +172,9 @@ CloudNativeIndexSnapshotsJobCanceling
 Canceling indexing of the snapshots of the ${snappableDisplay}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |               |        |
-| -------- | ------------- | ------ |
-| **Info** | **Canceling** | **No** |
+| Severity | Status        | Audit Event |
+| -------- | ------------- | ----------- |
+| **Info** | **Canceling** | **No**      |
 
 CloudNativeIndexSnapshotsJobFailed
 
@@ -216,11 +182,9 @@ CloudNativeIndexSnapshotsJobFailed
 Failed to index snapshots of the ${snappableDisplay}. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Failure** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **No**      |
 
 CloudNativeIndexSnapshotsJobStarted
 
@@ -228,11 +192,9 @@ CloudNativeIndexSnapshotsJobStarted
 ${userEmail} started indexing of the snapshot taken at ${snapshotTimeDisplay} of the ${snappableDisplay}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |         |
-| -------- | ----------- | ------- |
-| **Info** | **Success** | **Yes** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **Yes**     |
 
 CloudNativeIndexSnapshotsJobStarted
 
@@ -240,11 +202,9 @@ CloudNativeIndexSnapshotsJobStarted
 Started indexing of the snapshots of the ${snappableDisplay}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 CloudNativeIndexSnapshotsJobStartFailed
 
@@ -252,11 +212,9 @@ CloudNativeIndexSnapshotsJobStartFailed
 ${userEmail} failed to start indexing of the snapshot taken at ${snapshotTimeDisplay} of the ${snappableDisplay}. Failure reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |         |
-| ------------ | ----------- | ------- |
-| **Critical** | **Failure** | **Yes** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **Yes**     |
 
 CloudNativeIndexSnapshotsJobSucceeded
 
@@ -264,11 +222,9 @@ CloudNativeIndexSnapshotsJobSucceeded
 Successfully indexed ${numSnapshots} snapshot(s) of the ${snappableDisplay}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 CloudNativeIndexSnapshotsJobSucceededNoop
 
@@ -276,11 +232,9 @@ CloudNativeIndexSnapshotsJobSucceededNoop
 No snapshot available to index for ${snappableDisplay}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 CloudNativeIndexSnapshotsLaunchDisksTaskFailed
 
@@ -288,11 +242,9 @@ CloudNativeIndexSnapshotsLaunchDisksTaskFailed
 Failed to launch ${diskTypeDisplay}(s) for ${numSnapshots} snapshot(s).
 ```
 
-Severity | Status | Audit Event | |
-
-|             |                 |        |
-| ----------- | --------------- | ------ |
-| **Warning** | **TaskFailure** | **No** |
+| Severity    | Status          | Audit Event |
+| ----------- | --------------- | ----------- |
+| **Warning** | **TaskFailure** | **No**      |
 
 CloudNativeIndexSnapshotsLaunchDisksTaskStarted
 
@@ -300,11 +252,9 @@ CloudNativeIndexSnapshotsLaunchDisksTaskStarted
 Launching ${diskTypeDisplay}(s) for ${numSnapshots} snapshot(s).
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Running** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Running** | **No**      |
 
 CloudNativeIndexSnapshotsLaunchDisksTaskSucceeded
 
@@ -312,11 +262,9 @@ CloudNativeIndexSnapshotsLaunchDisksTaskSucceeded
 Launched ${diskTypeDisplay}(s) for ${numSnapshots} snapshot(s).
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 CloudNativeIndexSnapshotsOnDemandJobCanceled
 
@@ -324,11 +272,9 @@ CloudNativeIndexSnapshotsOnDemandJobCanceled
 Canceled indexing of the snapshot taken at ${snapshotTimeDisplay} of the ${snappableDisplay}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |              |        |
-| -------- | ------------ | ------ |
-| **Info** | **Canceled** | **No** |
+| Severity | Status       | Audit Event |
+| -------- | ------------ | ----------- |
+| **Info** | **Canceled** | **No**      |
 
 CloudNativeIndexSnapshotsOnDemandJobCanceling
 
@@ -336,11 +282,9 @@ CloudNativeIndexSnapshotsOnDemandJobCanceling
 Canceling indexing of the snapshot taken at ${snapshotTimeDisplay} of the ${snappableDisplay}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |               |        |
-| -------- | ------------- | ------ |
-| **Info** | **Canceling** | **No** |
+| Severity | Status        | Audit Event |
+| -------- | ------------- | ----------- |
+| **Info** | **Canceling** | **No**      |
 
 CloudNativeIndexSnapshotsOnDemandJobFailed
 
@@ -348,11 +292,9 @@ CloudNativeIndexSnapshotsOnDemandJobFailed
 Failed to index snapshot taken at ${snapshotTimeDisplay} of the ${snappableDisplay}. Reason: ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Failure** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **No**      |
 
 CloudNativeIndexSnapshotsOnDemandJobQueued
 
@@ -360,11 +302,9 @@ CloudNativeIndexSnapshotsOnDemandJobQueued
 Queued indexing of the snapshot taken at ${snapshotTimeDisplay} of the ${snappableDisplay}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |            |        |
-| -------- | ---------- | ------ |
-| **Info** | **Queued** | **No** |
+| Severity | Status     | Audit Event |
+| -------- | ---------- | ----------- |
+| **Info** | **Queued** | **No**      |
 
 CloudNativeIndexSnapshotsOnDemandJobStarted
 
@@ -372,11 +312,9 @@ CloudNativeIndexSnapshotsOnDemandJobStarted
 Started indexing of the snapshot taken at ${snapshotTimeDisplay} of the ${snappableDisplay}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 CloudNativeIndexSnapshotsOnDemandJobSucceeded
 
@@ -384,11 +322,9 @@ CloudNativeIndexSnapshotsOnDemandJobSucceeded
 Successfully indexed snapshot taken at ${snapshotTimeDisplay} of the ${snappableDisplay}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 CloudNativeIndexSnapshotsPrepareTaskTerminated
 
@@ -396,11 +332,9 @@ CloudNativeIndexSnapshotsPrepareTaskTerminated
 Some files may not be available for download because we couldn't index them. Reason:  ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|             |                 |        |
-| ----------- | --------------- | ------ |
-| **Warning** | **TaskSuccess** | **No** |
+| Severity    | Status          | Audit Event |
+| ----------- | --------------- | ----------- |
+| **Warning** | **TaskSuccess** | **No**      |
 
 CloudNativeIndexSnapshotSucceeded
 
@@ -408,11 +342,9 @@ CloudNativeIndexSnapshotSucceeded
 Successfully indexed snapshot taken at ${snapshotTimeDisplay}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 CloudNativeIndexSnapshotsWaitForSnappableIndexTaskFailed
 
@@ -420,11 +352,9 @@ CloudNativeIndexSnapshotsWaitForSnappableIndexTaskFailed
 Failed to make ${numSnapshots} snapshot(s) available for file recovery.
 ```
 
-Severity | Status | Audit Event | |
-
-|             |                 |        |
-| ----------- | --------------- | ------ |
-| **Warning** | **TaskFailure** | **No** |
+| Severity    | Status          | Audit Event |
+| ----------- | --------------- | ----------- |
+| **Warning** | **TaskFailure** | **No**      |
 
 CloudNativeIndexSnapshotsWaitForSnappableIndexTaskStarted
 
@@ -432,11 +362,9 @@ CloudNativeIndexSnapshotsWaitForSnappableIndexTaskStarted
 Waiting for ${numSnapshots} snapshot(s) to be available for file recovery.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Running** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Running** | **No**      |
 
 CloudNativeIndexSnapshotsWaitForSnappableIndexTaskSucceeded
 
@@ -444,11 +372,9 @@ CloudNativeIndexSnapshotsWaitForSnappableIndexTaskSucceeded
 ${numSnapshots} snapshot(s) are available for file recovery.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 ## o365
 
@@ -460,11 +386,9 @@ O365IndexTaskFailed
 Failed to index ${user} Microsoft 365 ${snappable}. We will retry automatically. Reason: ${reason}. (Error ID: ${errorID}). For more information on this error please visit https://support.rubrik.com/articles/How_To/000002821
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Failure** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **No**      |
 
 O365IndexTaskFailedWarning
 
@@ -472,11 +396,9 @@ O365IndexTaskFailedWarning
 Unable to index ${user} Microsoft 365 ${snappable}. Rubrik will automatically retry indexing this user. Reason: ${reason}. (Error ID: ${errorID}). For more information on this error, see https://support.rubrik.com/articles/How_To/000002821
 ```
 
-Severity | Status | Audit Event | |
-
-|             |             |        |
-| ----------- | ----------- | ------ |
-| **Warning** | **Failure** | **No** |
+| Severity    | Status      | Audit Event |
+| ----------- | ----------- | ----------- |
+| **Warning** | **Failure** | **No**      |
 
 O365IndexTaskSucceededWithSkip
 
@@ -484,11 +406,9 @@ O365IndexTaskSucceededWithSkip
 Index completed. ${skipCount} ${itemType} were skipped because ${reason}.
 ```
 
-Severity | Status | Audit Event | |
-
-|             |             |        |
-| ----------- | ----------- | ------ |
-| **Warning** | **Success** | **No** |
+| Severity    | Status      | Audit Event |
+| ----------- | ----------- | ----------- |
+| **Warning** | **Success** | **No**      |
 
 ## radar_hawkeye_indexing
 
@@ -500,11 +420,9 @@ RadarHawkeyeBuildIndexFailed
 Failed to prepare Data Threat Analytics investigation view for snapshot taken on ${snapshotDate} for workload ${snappableName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Failure** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **No**      |
 
 RadarHawkeyeBuildIndexQueued
 
@@ -512,11 +430,9 @@ RadarHawkeyeBuildIndexQueued
 Preparing Data Threat Analytics investigation view for snapshot taken on ${snapshotDate} for workload ${snappableName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |            |        |
-| -------- | ---------- | ------ |
-| **Info** | **Queued** | **No** |
+| Severity | Status     | Audit Event |
+| -------- | ---------- | ----------- |
+| **Info** | **Queued** | **No**      |
 
 RadarHawkeyeBuildIndexStarted
 
@@ -524,11 +440,9 @@ RadarHawkeyeBuildIndexStarted
 Started preparing Data Threat Analytics investigation view for snapshot taken on ${snapshotDate} for workload ${snappableName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 RadarHawkeyeBuildIndexSucceeded
 
@@ -536,8 +450,6 @@ RadarHawkeyeBuildIndexSucceeded
 Successfully prepared Data Threat Analytics investigation view for snapshot taken on ${snapshotDate} for workload ${snappableName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |

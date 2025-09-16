@@ -8,11 +8,9 @@ AdIrRemediationFailed
 Failed to remediate AD IR risk '${riskName}' with '${remediationType}' on ${objectName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Failure** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **No**      |
 
 AdIrRemediationStarted
 
@@ -20,11 +18,9 @@ AdIrRemediationStarted
 Initiating remediation of AD IR risk '${riskName}' with '${remediationType}' on ${objectName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 AdIrRemediationSuccess
 
@@ -32,11 +28,9 @@ AdIrRemediationSuccess
 Remediated AD IR risk '${riskName}' with '${remediationType}' on ${objectName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 CriticalSeverityDataViolationClosed
 
@@ -44,11 +38,9 @@ CriticalSeverityDataViolationClosed
 Critical severity violation of policy ${policyName} on ${objectName} was closed automatically
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Success** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Success** | **No**      |
 
 CriticalSeverityDataViolationDetected
 
@@ -56,11 +48,9 @@ CriticalSeverityDataViolationDetected
 Critical severity violation of policy ${policyName} detected on  ${objectName}
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Success** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Success** | **No**      |
 
 CriticalSeverityDataViolationDismissed
 
@@ -68,11 +58,9 @@ CriticalSeverityDataViolationDismissed
 Critical severity violation of policy ${policyName} on ${objectName} was dismissed
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Success** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Success** | **No**      |
 
 CriticalSeverityDataViolationInProgress
 
@@ -80,11 +68,9 @@ CriticalSeverityDataViolationInProgress
 Critical severity violation of policy ${policyName} on ${objectName}  changed status to in progress
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Success** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Success** | **No**      |
 
 CriticalSeverityDataViolationRemediated
 
@@ -92,11 +78,9 @@ CriticalSeverityDataViolationRemediated
 Critical severity violation of policy ${policyName} on ${objectName} was remediated
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Success** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Success** | **No**      |
 
 CriticalSeverityDataViolationReOpen
 
@@ -104,11 +88,9 @@ CriticalSeverityDataViolationReOpen
 Critical severity violation of policy ${policyName} on ${objectName} changed status to open
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Success** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Success** | **No**      |
 
 DataViolationExportActionsLogRemediationFailed
 
@@ -116,11 +98,9 @@ DataViolationExportActionsLogRemediationFailed
 Failed to download actions log for object '${resourceName}' in  violation of policy '${policyName}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Failure** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **No**      |
 
 DataViolationExportActionsLogRemediationSuccess
 
@@ -128,11 +108,9 @@ DataViolationExportActionsLogRemediationSuccess
 Actions log for object '${resourceName}' in violation  of policy '${policyName}' downloaded.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 DataViolationExportPermissionsRemediationFailed
 
@@ -140,11 +118,9 @@ DataViolationExportPermissionsRemediationFailed
 Failed to download permissions for object '${resourceName}' detected in violation of '${policyName}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Failure** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Failure** | **No**      |
 
 DataViolationExportPermissionsRemediationSuccess
 
@@ -152,11 +128,9 @@ DataViolationExportPermissionsRemediationSuccess
 Permissions for object '${resourceName}' where downloaded and detected in violation of '${policyName}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 DataViolationMipLabelRemediationFailure
 
@@ -164,11 +138,9 @@ DataViolationMipLabelRemediationFailure
 Failed to assign label '${labelName}' to ${FailedDocumentCount} out of  ${documentCount} documents detected in violation '${policyName}' on  object '${objectName}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Failure** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **No**      |
 
 DataViolationMipLabelRemediationFinished
 
@@ -176,11 +148,9 @@ DataViolationMipLabelRemediationFinished
 Completed assignment of label  '${labelName}' to ${documentCount} documents detected in violation '${policyName}' on  object '${objectName}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 DataViolationMipLabelRemediationSkipped
 
@@ -188,11 +158,9 @@ DataViolationMipLabelRemediationSkipped
 Skipped assignment of label '${labelName}' to ${SkippedDocumentCount}  out of ${documentCount} documents, which were detected in violation  '${policyName}'on object '${objectName}'. This occurred either due to unsupported document types or because the downgrading of MIP labels  is not allowed.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 DataViolationMipLabelRemediationStarted
 
@@ -200,11 +168,9 @@ DataViolationMipLabelRemediationStarted
 Beginning assignment of label '${labelName}' to ${documentCount} documents detected in violation '${policyName}' on  object '${objectName}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 DataViolationMipLabelRemediationSuccess
 
@@ -212,11 +178,9 @@ DataViolationMipLabelRemediationSuccess
 Successfully assigned label '${labelName}' to ${SuccessfulDocumentCount} out of ${documentCount} documents detected in violation '${policyName}'  on object '${objectName}'.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 EntraIdIrRemediationFailed
 
@@ -224,11 +188,9 @@ EntraIdIrRemediationFailed
 Unable to remediate Entra ID IR risk '${riskName}' with  '${remediationType}' on ${objectName}. Error: ${reason}. ${remedy}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Failure** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **No**      |
 
 EntraIdIrRemediationStarted
 
@@ -236,11 +198,9 @@ EntraIdIrRemediationStarted
 Initiating remediation of Entra ID IR risk '${riskName}' with '${remediationType}' on ${objectName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 EntraIdIrRemediationSuccess
 
@@ -248,11 +208,9 @@ EntraIdIrRemediationSuccess
 Remediated Entra ID IR risk '${riskName}' with '${remediationType}' on  ${objectName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 HighSeverityDataViolationClosed
 
@@ -260,11 +218,9 @@ HighSeverityDataViolationClosed
 High severity violation of policy ${policyName} on ${objectName} was closed automatically
 ```
 
-Severity | Status | Audit Event | |
-
-|             |             |        |
-| ----------- | ----------- | ------ |
-| **Warning** | **Success** | **No** |
+| Severity    | Status      | Audit Event |
+| ----------- | ----------- | ----------- |
+| **Warning** | **Success** | **No**      |
 
 HighSeverityDataViolationDetected
 
@@ -272,11 +228,9 @@ HighSeverityDataViolationDetected
 High severity violation of policy ${policyName} detected on  ${objectName}
 ```
 
-Severity | Status | Audit Event | |
-
-|             |             |        |
-| ----------- | ----------- | ------ |
-| **Warning** | **Success** | **No** |
+| Severity    | Status      | Audit Event |
+| ----------- | ----------- | ----------- |
+| **Warning** | **Success** | **No**      |
 
 HighSeverityDataViolationDismissed
 
@@ -284,11 +238,9 @@ HighSeverityDataViolationDismissed
 High severity violation of policy ${policyName} on ${objectName} was dismissed
 ```
 
-Severity | Status | Audit Event | |
-
-|             |             |        |
-| ----------- | ----------- | ------ |
-| **Warning** | **Success** | **No** |
+| Severity    | Status      | Audit Event |
+| ----------- | ----------- | ----------- |
+| **Warning** | **Success** | **No**      |
 
 HighSeverityDataViolationInProgress
 
@@ -296,11 +248,9 @@ HighSeverityDataViolationInProgress
 High severity violation of policy ${policyName} on ${objectName}  changed status to in progress
 ```
 
-Severity | Status | Audit Event | |
-
-|             |             |        |
-| ----------- | ----------- | ------ |
-| **Warning** | **Success** | **No** |
+| Severity    | Status      | Audit Event |
+| ----------- | ----------- | ----------- |
+| **Warning** | **Success** | **No**      |
 
 HighSeverityDataViolationRemediated
 
@@ -308,11 +258,9 @@ HighSeverityDataViolationRemediated
 High severity violation of policy ${policyName} on ${objectName} was remediated
 ```
 
-Severity | Status | Audit Event | |
-
-|             |             |        |
-| ----------- | ----------- | ------ |
-| **Warning** | **Success** | **No** |
+| Severity    | Status      | Audit Event |
+| ----------- | ----------- | ----------- |
+| **Warning** | **Success** | **No**      |
 
 HighSeverityDataViolationReOpen
 
@@ -320,11 +268,9 @@ HighSeverityDataViolationReOpen
 High severity violation of policy ${policyName} on ${objectName} changed status to open
 ```
 
-Severity | Status | Audit Event | |
-
-|             |             |        |
-| ----------- | ----------- | ------ |
-| **Warning** | **Success** | **No** |
+| Severity    | Status      | Audit Event |
+| ----------- | ----------- | ----------- |
+| **Warning** | **Success** | **No**      |
 
 IdentityRevokeAccessRemediationFailed
 
@@ -332,11 +278,9 @@ IdentityRevokeAccessRemediationFailed
 Failed to revoke access for '${identityName}' to ${documentCount} files in object ${objectName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Failure** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **No**      |
 
 IdentityRevokeAccessRemediationSuccess
 
@@ -344,11 +288,9 @@ IdentityRevokeAccessRemediationSuccess
 Successfully revoked access for '${identityName}' to ${documentCount} files in object ${objectName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 LowOrMediumSeverityDataViolationClosed
 
@@ -356,11 +298,9 @@ LowOrMediumSeverityDataViolationClosed
 ${severity} severity violation of policy ${policyName} on ${objectName} was closed automatically
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 LowOrMediumSeverityDataViolationDetected
 
@@ -368,11 +308,9 @@ LowOrMediumSeverityDataViolationDetected
 ${severity} severity violation of policy ${policyName} detected on  ${objectName}
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 LowOrMediumSeverityDataViolationDismissed
 
@@ -380,11 +318,9 @@ LowOrMediumSeverityDataViolationDismissed
 ${severity} severity violation of policy ${policyName} on ${objectName} was dismissed
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 LowOrMediumSeverityDataViolationInProgress
 
@@ -392,11 +328,9 @@ LowOrMediumSeverityDataViolationInProgress
 ${severity} severity violation of policy ${policyName} on ${objectName}  changed status to in progress
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 LowOrMediumSeverityDataViolationRemediated
 
@@ -404,11 +338,9 @@ LowOrMediumSeverityDataViolationRemediated
 ${severity} severity violation of policy ${policyName} on ${objectName} was remediated
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 LowOrMediumSeverityDataViolationReOpen
 
@@ -416,11 +348,9 @@ LowOrMediumSeverityDataViolationReOpen
 ${severity} severity violation of policy ${policyName} on ${objectName} changed status to open
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 OverExposureRevokeAccessRemediationFailed
 
@@ -428,11 +358,9 @@ OverExposureRevokeAccessRemediationFailed
 Failed to revoke '${accessType}' access from ${documentCount} files  in object ${objectName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|              |             |        |
-| ------------ | ----------- | ------ |
-| **Critical** | **Failure** | **No** |
+| Severity     | Status      | Audit Event |
+| ------------ | ----------- | ----------- |
+| **Critical** | **Failure** | **No**      |
 
 OverExposureRevokeAccessRemediationPartialSuccess
 
@@ -440,11 +368,9 @@ OverExposureRevokeAccessRemediationPartialSuccess
 Partially revoked '${accessType}' access from ${documentCount} files  in object ${objectName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|             |             |        |
-| ----------- | ----------- | ------ |
-| **Warning** | **Success** | **No** |
+| Severity    | Status      | Audit Event |
+| ----------- | ----------- | ----------- |
+| **Warning** | **Success** | **No**      |
 
 OverExposureRevokeAccessRemediationStarted
 
@@ -452,11 +378,9 @@ OverExposureRevokeAccessRemediationStarted
 Initiating revoke '${accessType}' access from ${documentCount} files in object ${objectName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 OverExposureRevokeAccessRemediationSuccess
 
@@ -464,11 +388,9 @@ OverExposureRevokeAccessRemediationSuccess
 Successfully revoked '${accessType}' access from ${documentCount} files  in object ${objectName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |             |        |
-| -------- | ----------- | ------ |
-| **Info** | **Success** | **No** |
+| Severity | Status      | Audit Event |
+| -------- | ----------- | ----------- |
+| **Info** | **Success** | **No**      |
 
 RevokeAccessRemediationInProgressForMultipleIdentities
 
@@ -476,11 +398,9 @@ RevokeAccessRemediationInProgressForMultipleIdentities
 Revoking access in progress for ${numOfViolatingIdentities} identities from ${totalAccessibleFilesAtRiskCount} files in object ${objectName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
 
 RevokeAccessRemediationInProgressForSingleIdentity
 
@@ -488,8 +408,6 @@ RevokeAccessRemediationInProgressForSingleIdentity
 Revoking access in progress for '${identityName}' from ${totalAccessibleFilesAtRiskCount} files in object ${objectName}.
 ```
 
-Severity | Status | Audit Event | |
-
-|          |                 |        |
-| -------- | --------------- | ------ |
-| **Info** | **TaskSuccess** | **No** |
+| Severity | Status          | Audit Event |
+| -------- | --------------- | ----------- |
+| **Info** | **TaskSuccess** | **No**      |
