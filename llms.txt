@@ -3894,7 +3894,9 @@ curl -X POST \
   https://example.my.rubrik.com/api/graphql
 ```
 
-## Retrieving Nutanix VMs
+## Retrieval
+
+### Nutanix VMs
 
 ```graphql
 query {
@@ -3965,7 +3967,7 @@ curl -X POST \
   https://example.my.rubrik.com/api/graphql
 ```
 
-## Retrieving Nutanix Clusters
+### Nutanix Clusters
 
 ```graphql
 query {
@@ -4046,7 +4048,7 @@ curl -X POST \
   https://example.my.rubrik.com/api/graphql
 ```
 
-## Retreiving Nutanix Prism Central Servers
+### Nutanix Prism Central Servers
 
 ```graphql
 query {
@@ -4121,7 +4123,51 @@ curl -X POST \
   https://example.my.rubrik.com/api/graphql
 ```
 
-## Retrieving Job Status of Nutanix VM Jobs
+## Protection
+
+### Nutanix VM On-Demand Backup
+
+```graphql
+mutation {
+  createOnDemandNutanixBackup(input: {
+    id: "40bac7c1-87ad-4ac0-b4a6-34ac592d8e77"
+    config: {
+      slaId: "7d40e858-b8ec-4096-8112-cab8eff1a4e2"
+    }
+  }) {
+    id
+  }
+}
+```
+
+```powershell
+$vm = Get-RscNutanixVm -Name "example"
+
+$query = New-Rscmutation -GqlMutation createOnDemandNutanixBackup
+$query.var.input = Get-RscType -Name CreateOnDemandNutanixBackupInput -InitialProperties config
+$query.var.input.id = $vm.id
+$query.var.input.config.SlaId = $vm.EffectiveSlaDomain.Id
+$query.Field = Get-RscType -Name AsyncRequestStatus -InitialProperties id
+$query.Invoke()
+```
+
+```bash
+#!/bin/bash
+
+# RSC_TOKEN="YOUR_RSC_ACCESS_TOKEN"
+query="mutation { createOnDemandNutanixBackup(input: { id: \\\"40bac7c1-87ad-4ac0-b4a6-34ac592d8e77\\\" config: { slaId: \\\"7d40e858-b8ec-4096-8112-cab8eff1a4e2\\\" } }) { id } }"
+
+# Execute the GraphQL query with curl
+curl -X POST \
+  -H "Content-Type: application/json" \
+  -H "Authorization: Bearer $RSC_TOKEN" \
+  -d "{\"query\": \"$query\"}" \
+  https://example.my.rubrik.com/api/graphql
+```
+
+## Job Status
+
+### Nutanix VM Job Status
 
 ```graphql
 query {
@@ -4154,88 +4200,6 @@ $query.invoke()
 
 # RSC_TOKEN="YOUR_RSC_ACCESS_TOKEN"
 query="query { nutanixVmAsyncRequestStatus(input: { id: \\\"CREATE_NUTANIX_SNAPSHOT_6450b2bb-3114-45ab-a45e-049c7f27b58e-vm-f5bc5502-b9a6-4759-bf02-05dc5a48f9f7_b83291a3-fa87-4aab-863a-60b415215b19:::0\\\" clusterUuid: \\\"85e98e61-4c1f-496a-b846-5eb871966025\\\" }) { progress status result error { message } } }"
-
-# Execute the GraphQL query with curl
-curl -X POST \
-  -H "Content-Type: application/json" \
-  -H "Authorization: Bearer $RSC_TOKEN" \
-  -d "{\"query\": \"$query\"}" \
-  https://example.my.rubrik.com/api/graphql
-```
-
-## Retrieving Job Status of Nutanix Cluster Jobs
-
-```graphql
-query {
-  nutanixClusterAsyncRequestStatus(input: {
-    id: "REFRESH_NUTANIX_CLUSTER_21fb4363-2510-4ce3-bca2-d4c2ad0f50ab_4b2e24a8-5712-40e9-808b-06fef83423d1:::0"
-    clusterUuid: "85e98e61-4c1f-496a-b846-5eb871966025"
-  }) {
-    progress
-    status
-    result
-    error {
-      message
-    }
-  }
-}
-```
-
-```powershell
-$requestId = "REFRESH_NUTANIX_CLUSTER_21fb4363-2510-4ce3-bca2-d4c2ad0f50ab_4b2e24a8-5712-40e9-808b-06fef83423d1:::0"
-$clusterId = "85e98e61-4c1f-496a-b846-5eb871966025"
-
-$query = New-RscQuery -GqlQuery nutanixClusterAsyncRequestStatus
-$query.var.input.id = $requestId
-$query.var.input.clusterUuid = $clusterId
-$query.invoke()
-```
-
-```bash
-#!/bin/bash
-
-# RSC_TOKEN="YOUR_RSC_ACCESS_TOKEN"
-query="query { nutanixClusterAsyncRequestStatus(input: { id: \\\"REFRESH_NUTANIX_CLUSTER_21fb4363-2510-4ce3-bca2-d4c2ad0f50ab_4b2e24a8-5712-40e9-808b-06fef83423d1:::0\\\" clusterUuid: \\\"85e98e61-4c1f-496a-b846-5eb871966025\\\" }) { progress status result error { message } } }"
-
-# Execute the GraphQL query with curl
-curl -X POST \
-  -H "Content-Type: application/json" \
-  -H "Authorization: Bearer $RSC_TOKEN" \
-  -d "{\"query\": \"$query\"}" \
-  https://example.my.rubrik.com/api/graphql
-```
-
-## Nutanix VM On-Demand Backup
-
-```graphql
-mutation {
-  createOnDemandNutanixBackup(input: {
-    id: "40bac7c1-87ad-4ac0-b4a6-34ac592d8e77"
-    config: {
-      slaId: "7d40e858-b8ec-4096-8112-cab8eff1a4e2"
-    }
-  }) {
-    id
-  }
-}
-```
-
-```powershell
-$vm = Get-RscNutanixVm -Name "example"
-
-$query = New-Rscmutation -GqlMutation createOnDemandNutanixBackup
-$query.var.input = Get-RscType -Name CreateOnDemandNutanixBackupInput -InitialProperties config
-$query.var.input.id = $vm.id
-$query.var.input.config.SlaId = $vm.EffectiveSlaDomain.Id
-$query.Field = Get-RscType -Name AsyncRequestStatus -InitialProperties id
-$query.Invoke()
-```
-
-```bash
-#!/bin/bash
-
-# RSC_TOKEN="YOUR_RSC_ACCESS_TOKEN"
-query="mutation { createOnDemandNutanixBackup(input: { id: \\\"40bac7c1-87ad-4ac0-b4a6-34ac592d8e77\\\" config: { slaId: \\\"7d40e858-b8ec-4096-8112-cab8eff1a4e2\\\" } }) { id } }"
 
 # Execute the GraphQL query with curl
 curl -X POST \
