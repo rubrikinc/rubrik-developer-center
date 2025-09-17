@@ -1,8 +1,9 @@
 ---
-Title: Nutanix AHV
+title: Nutanix AHV
 ---
 
-## Retrieving Nutanix VMs
+## Retrieval
+### Nutanix VMs
 
 === "GraphQL"
     ```graphql
@@ -17,7 +18,7 @@ Title: Nutanix AHV
     --8<-- "code/Rubrik-Security-Cloud-API/Data-Protection/Data-Center/Nutanix-AHV/virtualmachines.sh"
     ```
 
-## Retrieving Nutanix Clusters
+### Nutanix Clusters
 
 === "GraphQL"
     ```graphql
@@ -32,7 +33,7 @@ Title: Nutanix AHV
     --8<-- "code/Rubrik-Security-Cloud-API/Data-Protection/Data-Center/Nutanix-AHV/clusters.sh"
     ```
 
-## Retreiving Nutanix Prism Central Servers
+### Nutanix Prism Central Servers
 
 === "GraphQL"
     ```graphql
@@ -45,4 +46,36 @@ Title: Nutanix AHV
 === "Shell"
     ```bash
     --8<-- "code/Rubrik-Security-Cloud-API/Data-Protection/Data-Center/Nutanix-AHV/prismCentrals.sh"
+    ```
+
+## Protection
+### Nutanix VM On-Demand Backup
+
+=== "GraphQL"
+    ```graphql
+    --8<-- "code/Rubrik-Security-Cloud-API/Data-Protection/Data-Center/Nutanix-AHV/snapshot.gql"
+    ```
+=== "PowerShell SDK"
+    ```powershell
+    --8<-- "code/Rubrik-Security-Cloud-API/Data-Protection/Data-Center/Nutanix-AHV/snapshot.ps1"
+    ```
+=== "Shell"
+    ```bash
+    --8<-- "code/Rubrik-Security-Cloud-API/Data-Protection/Data-Center/Nutanix-AHV/snapshot.sh"
+    ```
+
+## Job Status
+### Nutanix VM Job Status
+
+=== "GraphQL"
+    ```graphql
+    --8<-- "code/Rubrik-Security-Cloud-API/Data-Protection/Data-Center/Nutanix-AHV/vmjobstatus.gql"
+    ```
+=== "PowerShell SDK"
+    ```powershell
+    --8<-- "code/Rubrik-Security-Cloud-API/Data-Protection/Data-Center/Nutanix-AHV/vmjobstatus.ps1"
+    ```
+=== "Shell"
+    ```bash
+    --8<-- "code/Rubrik-Security-Cloud-API/Data-Protection/Data-Center/Nutanix-AHV/vmjobstatus.sh"
     ```
