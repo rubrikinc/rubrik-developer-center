@@ -93,6 +93,8 @@ plugins:
       sections:
         Rubrik Security Cloud:
         - Rubrik-Security-Cloud-API/*.md
+        - SDKs-and-Tools/*.md
+        - Integrations/*.md
   - git-revision-date-localized:
       type: iso_date
 watch:
