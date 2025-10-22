@@ -1,0 +1,63 @@
+{
+  usersInCurrentAndDescendantOrganization(
+    shouldIncludeUserWithoutRole: true
+    filter: {
+      #emailFilter: "user@example.com"
+      #domainFilter: [CLIENT,LDAP,LOCAL,SSO,SUPPORT]
+      #hiddenStateFilter: ALL_USERS
+      #lockoutStateFilter: ALL
+      #orgIdsFilter: ["123e4567-e89b-12d3-a456-426614174000"]
+      #roleIdsFilter: ["123e4567-e89b-12d3-a456-426614174000"]
+      #authDomainIdsFilter: ["123e4567-e89b-12d3-a456-426614174000"]
+    }
+  ) {
+    nodes {
+      email
+      username
+      id
+      domain
+      domainName
+      groups
+      isAccountOwner
+      isHidden
+      lastLogin
+      allOrgs {
+        fullName
+        id
+      }
+      roles {
+        name
+        id
+      }
+      lockoutState {
+        isLocked
+        currentLockMethod
+        lockMethod
+        lockedAt
+        unlockMethod
+        unlockedAt
+      }
+      lockoutHistory {
+        lockoutEvent {
+          ... on LockMethodType {
+            lockMethod
+          }
+          ... on UnlockMethodType {
+            unlockMethod
+          }
+        }
+      }
+      totpStatus {
+        isEnabled
+        isEnforced
+        mfaStatus
+        isSupported
+        totpConfigUpdateAt
+      }
+    }
+    pageInfo {
+      hasNextPage
+      endCursor
+    }
+  }
+}

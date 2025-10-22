@@ -1,0 +1,11 @@
+#!/bin/bash
+
+# RSC_TOKEN="YOUR_RSC_ACCESS_TOKEN"
+query="mutation startYaraThreatHuntExample { startThreatHuntV2(input: { objectFids: [\\\"123e4567-e89b-12d3-a456-426614174000\\\"] baseConfig: { name: \\\"Example Yara Threat Hunt\\\" maxMatchesPerSnapshot: 1 threatHuntType: THREAT_HUNT_V2 fileScanCriteria: { fileSizeLimits: { minimumSizeInBytes: 10 maximumSizeInBytes: 10000 } } snapshotScanLimit: { scanConfig: { maxSnapshotsPerObject: 10 } } ioc: { iocList: { indicatorsOfCompromise: { iocKind: IOC_YARA iocValue: \\\"rule Generic_Hello_World {\n\tstrings:\n\t\t$test_string = \\\\"Hello World YARA Test\\\\" ascii wide\n\tcondition:\n\t\t$test_string\n}\\\" } } } } }) { huntId } }"
+
+# Execute the GraphQL query with curl
+curl -X POST \
+  -H "Content-Type: application/json" \
+  -H "Authorization: Bearer $RSC_TOKEN" \
+  -d "{\"query\": \"$query\"}" \
+  https://example.my.rubrik.com/api/graphql
