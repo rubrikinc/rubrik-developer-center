@@ -1,3 +1,7 @@
+---
+title: Microsoft M365
+---
+
 ## Retrieving M365 Organizations
 === "GraphQL"
     ```graphql
@@ -66,4 +70,18 @@
 === "Shell"
     ```bash
     --8<-- "code/Rubrik-Security-Cloud-API/SaaS-App-Protection/microsoft-m365/sites.sh"
+    ```
+
+## Searching M365 OneDrives
+=== "GraphQL"
+    ```graphql
+    --8<-- "code/Rubrik-Security-Cloud-API/SaaS-App-Protection/microsoft-m365/onedriveSearch.gql"
+    ```
+=== "PowerShell SDK"
+    ```powershell
+    --8<-- "code/Rubrik-Security-Cloud-API/SaaS-App-Protection/microsoft-m365/onedriveSearch.ps1"
+    ```
+=== "Shell"
+    ```bash
+    --8<-- "code/Rubrik-Security-Cloud-API/SaaS-App-Protection/microsoft-m365/onedriveSearch.sh"
     ```
