@@ -2,466 +2,466 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://developer.rubrik.com/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-24</lastmod>
     </url>
     <url>
          <loc>https://developer.rubrik.com/Integrations/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-24</lastmod>
     </url>
     <url>
          <loc>https://developer.rubrik.com/Rubrik-Cluster-API/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-24</lastmod>
     </url>
     <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-24</lastmod>
     </url>
     <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-playground/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-24</lastmod>
     </url>
     <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/authentication/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-24</lastmod>
     </url>
     <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/troubleshooting/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-24</lastmod>
     </url>
     <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/Annapurna/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-24</lastmod>
     </url>
     <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/Annapurna/Examples/LangChain/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-24</lastmod>
     </url>
     <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/Annapurna/Retrievers/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-24</lastmod>
     </url>
     <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/Annapurna/Retrievers/retrieve/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-24</lastmod>
     </url>
     <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/Data-Protection/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-24</lastmod>
     </url>
     <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/Data-Protection/Cloud/Job-Status/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-24</lastmod>
     </url>
     <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/Data-Protection/Cloud/On-Demand-Backup/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-24</lastmod>
     </url>
     <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/Data-Protection/Cloud/AWS/EBS/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-24</lastmod>
     </url>
     <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/Data-Protection/Cloud/AWS/EC2/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-24</lastmod>
     </url>
     <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/Data-Protection/Cloud/AWS/RDS/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-24</lastmod>
     </url>
     <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/Data-Protection/Cloud/AWS/S3/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-24</lastmod>
     </url>
     <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/Data-Protection/Cloud/Azure/BLOB/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-24</lastmod>
     </url>
     <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/Data-Protection/Cloud/Azure/SQL-Managed-Instances/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-24</lastmod>
     </url>
     <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/Data-Protection/Cloud/Azure/SQL/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-24</lastmod>
     </url>
     <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/Data-Protection/Cloud/Azure/VM/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-24</lastmod>
     </url>
     <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/Data-Protection/Cloud/GCP/Instances/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-24</lastmod>
     </url>
     <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/Data-Protection/Cloud/kubernetes/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-24</lastmod>
     </url>
     <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/Data-Protection/Data-Center/Filesets/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-24</lastmod>
     </url>
     <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/Data-Protection/Data-Center/Filesets/Job-Status/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-24</lastmod>
     </url>
     <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/Data-Protection/Data-Center/Filesets/On-Demand-Backup/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-24</lastmod>
     </url>
     <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/Data-Protection/Data-Center/IBM-DB2/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-24</lastmod>
     </url>
     <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/Data-Protection/Data-Center/IBM-DB2/Job-Status/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-24</lastmod>
     </url>
     <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/Data-Protection/Data-Center/IBM-DB2/On-Demand-Backup/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-24</lastmod>
     </url>
     <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/Data-Protection/Data-Center/Managed-Volumes/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-24</lastmod>
     </url>
     <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/Data-Protection/Data-Center/Managed-Volumes/Job-Status/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-24</lastmod>
     </url>
     <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/Data-Protection/Data-Center/Managed-Volumes/On-Demand-Backup/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-24</lastmod>
     </url>
     <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/Data-Protection/Data-Center/Microsoft-AD/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-24</lastmod>
     </url>
     <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/Data-Protection/Data-Center/Microsoft-Exchange/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-24</lastmod>
     </url>
     <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/Data-Protection/Data-Center/Microsoft-Exchange/On-Demand-Backup/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-24</lastmod>
     </url>
     <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/Data-Protection/Data-Center/Microsoft-HyperV/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-24</lastmod>
     </url>
     <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/Data-Protection/Data-Center/Microsoft-HyperV/Job-Status/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-24</lastmod>
     </url>
     <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/Data-Protection/Data-Center/Microsoft-HyperV/On-Demand-Backup/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-24</lastmod>
     </url>
     <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/Data-Protection/Data-Center/Microsoft-SQL/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-24</lastmod>
     </url>
     <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/Data-Protection/Data-Center/Microsoft-SQL/Job-Status/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-24</lastmod>
     </url>
     <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/Data-Protection/Data-Center/Microsoft-SQL/On-Demand-Backup/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-24</lastmod>
     </url>
     <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/Data-Protection/Data-Center/MongoDB/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-24</lastmod>
     </url>
     <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/Data-Protection/Data-Center/NAS-Unstructured-Data/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-24</lastmod>
     </url>
     <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/Data-Protection/Data-Center/Nutanix-AHV/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-24</lastmod>
     </url>
     <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/Data-Protection/Data-Center/Oracle/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-24</lastmod>
     </url>
     <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/Data-Protection/Data-Center/Oracle/Job-Status/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-24</lastmod>
     </url>
     <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/Data-Protection/Data-Center/Oracle/On-Demand-Backup/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-24</lastmod>
     </url>
     <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/Data-Protection/Data-Center/SAP-HANA/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-24</lastmod>
     </url>
     <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/Data-Protection/Data-Center/SAP-HANA/Job-Status/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-24</lastmod>
     </url>
     <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/Data-Protection/Data-Center/SAP-HANA/On-Demand-Backup/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-24</lastmod>
     </url>
     <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/Data-Protection/Data-Center/VMware-vSphere/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-24</lastmod>
     </url>
     <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/Data-Protection/Data-Center/VMware-vSphere/Job-Status/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-24</lastmod>
     </url>
     <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/Data-Protection/Data-Center/VMware-vSphere/On-Demand-Backup/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-24</lastmod>
     </url>
     <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/Data-Protection/Data-Center/VMware-vSphere/Recovery/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-24</lastmod>
     </url>
     <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/Data-Protection/Infrastructure/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-24</lastmod>
     </url>
     <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/Data-Protection/Infrastructure/Rubrik-Cloud-Vault/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-24</lastmod>
     </url>
     <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/Data-Protection/Infrastructure/clusters/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-24</lastmod>
     </url>
     <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/Data-Protection/SLA-Domains/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-24</lastmod>
     </url>
     <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/Data-Protection/Snapshots/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-24</lastmod>
     </url>
     <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/Observability/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-24</lastmod>
     </url>
     <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/Observability/Events/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-24</lastmod>
     </url>
     <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/Observability/Events/Event-Reference/ANOMALY/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-24</lastmod>
     </url>
     <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/Observability/Events/Event-Reference/AccessManagement/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-24</lastmod>
     </url>
     <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/Observability/Events/Event-Reference/Archive/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-24</lastmod>
     </url>
     <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/Observability/Events/Event-Reference/Audit/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-24</lastmod>
     </url>
     <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/Observability/Events/Event-Reference/BULK_RECOVERY/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-24</lastmod>
     </url>
     <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/Observability/Events/Event-Reference/Backup/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-24</lastmod>
     </url>
     <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/Observability/Events/Event-Reference/Classification/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-24</lastmod>
     </url>
     <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/Observability/Events/Event-Reference/Configuration/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-24</lastmod>
     </url>
     <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/Observability/Events/Event-Reference/DATA_RISKS/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-24</lastmod>
     </url>
     <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/Observability/Events/Event-Reference/Diagnostic/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-24</lastmod>
     </url>
     <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/Observability/Events/Event-Reference/Download/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-24</lastmod>
     </url>
     <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/Observability/Events/Event-Reference/ENCRYPTION_MANAGEMENT_OPERATION/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-24</lastmod>
     </url>
     <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/Observability/Events/Event-Reference/FILE_DOWNLOAD/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-24</lastmod>
     </url>
     <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/Observability/Events/Event-Reference/Failover/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-24</lastmod>
     </url>
     <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/Observability/Events/Event-Reference/IDENTITY_ALERTS/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-24</lastmod>
     </url>
     <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/Observability/Events/Event-Reference/ISOLATED_RECOVERY/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-24</lastmod>
     </url>
     <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/Observability/Events/Event-Reference/Index/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-24</lastmod>
     </url>
     <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/Observability/Events/Event-Reference/LocalRecovery/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-24</lastmod>
     </url>
     <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/Observability/Events/Event-Reference/LockSnapshot/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-24</lastmod>
     </url>
     <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/Observability/Events/Event-Reference/Login/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-24</lastmod>
     </url>
     <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/Observability/Events/Event-Reference/Ownership/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-24</lastmod>
     </url>
     <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/Observability/Events/Event-Reference/Quarantine/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-24</lastmod>
     </url>
     <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/Observability/Events/Event-Reference/RECOVERY_SCHEDULE/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-24</lastmod>
     </url>
     <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/Observability/Events/Event-Reference/RUBY_AI/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-24</lastmod>
     </url>
     <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/Observability/Events/Event-Reference/RadarAnalysis/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-24</lastmod>
     </url>
     <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/Observability/Events/Event-Reference/Recovery/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-24</lastmod>
     </url>
     <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/Observability/Events/Event-Reference/Replication/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-24</lastmod>
     </url>
     <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/Observability/Events/Event-Reference/SCHEDULE_RECOVERY/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-24</lastmod>
     </url>
     <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/Observability/Events/Event-Reference/SECURITY_VIOLATION/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-24</lastmod>
     </url>
     <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/Observability/Events/Event-Reference/Search/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-24</lastmod>
     </url>
     <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/Observability/Events/Event-Reference/Seeding/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-24</lastmod>
     </url>
     <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/Observability/Events/Event-Reference/SlaAssignment/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-24</lastmod>
     </url>
     <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/Observability/Events/Event-Reference/SlaModification/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-24</lastmod>
     </url>
     <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/Observability/Events/Event-Reference/Sync/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-24</lastmod>
     </url>
     <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/Observability/Events/Event-Reference/TENANT_OVERLAP/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-24</lastmod>
     </url>
     <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/Observability/Events/Event-Reference/TENANT_QUOTA/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-24</lastmod>
     </url>
     <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/Observability/Events/Event-Reference/THREAT_FEED/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-24</lastmod>
     </url>
     <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/Observability/Events/Event-Reference/THREAT_HUNT/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-24</lastmod>
     </url>
     <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/Observability/Events/Event-Reference/THREAT_MONITORING/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-24</lastmod>
     </url>
     <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/Observability/Events/Event-Reference/TestFailover/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-24</lastmod>
     </url>
     <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/Observability/Events/Event-Reference/Upgrade/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-24</lastmod>
     </url>
     <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/Observability/Metrics/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-24</lastmod>
     </url>
     <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/Observability/Reports/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-24</lastmod>
     </url>
     <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/SaaS-App-Protection/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-24</lastmod>
     </url>
     <url>
-         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/SaaS-App-Protection/microsoft-m365/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/SaaS-App-Protection/Microsoft-M365/</loc>
+         <lastmod>2025-10-24</lastmod>
     </url>
     <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/System-Settings/Certificate-Management/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-24</lastmod>
     </url>
     <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/System-Settings/Users-and-Access/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-24</lastmod>
     </url>
     <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/Threat-Analytics/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-24</lastmod>
     </url>
     <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/Threat-Analytics/Anomaly-Detection/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-24</lastmod>
     </url>
     <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/Threat-Analytics/Threat-Hunting/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-24</lastmod>
     </url>
     <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/Threat-Analytics/Threat-Monitoring/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-24</lastmod>
     </url>
     <url>
          <loc>https://developer.rubrik.com/SDKs-and-Tools/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-24</lastmod>
     </url>
     <url>
          <loc>https://developer.rubrik.com/SDKs-and-Tools/PowerShell/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-24</lastmod>
     </url>
     <url>
          <loc>https://developer.rubrik.com/SDKs-and-Tools/PowerShell/Advanced-Usage/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-24</lastmod>
     </url>
 </urlset>
