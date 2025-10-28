@@ -15,10 +15,6 @@ Consider the following best practices when using service accounts:
   - Service account access tokens should be cached and reused until they are valid.
 
 ### Usage
-
-#### Adding a service account
-Refer to the RSC user guide: [adding a service account](https://docs.rubrik.com/en-us/saas/saas/adding_a_service_account.html)
-
 #### Obtaining an access token
 In this example, the service account client ID and secret are exported into environment variables and posted to the RSC client_token endpoint. The response contains the access token needed for authenticated API calls. The `jq` tool is used to parse the access token from the JSON response and stored in a variable for usage.
 === "Shell"
@@ -49,6 +45,78 @@ Run the following command to revoke the session established for the service acco
     ```bash
     --8<-- "code/Rubrik-Security-Cloud-API/deleteSession.sh"
     ```
+
+### Service Account Management
+#### Retrieving Service Accounts
+=== "GraphQL"
+    ```graphql
+    --8<-- "code/Rubrik-Security-Cloud-API/serviceaccounts.gql"
+    ```
+    === "PowerShell SDK"
+    ```powershell
+    --8<-- "code/Rubrik-Security-Cloud-API/serviceaccounts.ps1"
+    ```
+    === "Shell"
+    ```bash
+    --8<-- "code/Rubrik-Security-Cloud-API/serviceaccounts.sh"
+    ```
+
+#### Creating a Service Account
+=== "GraphQL"
+    ```graphql
+    --8<-- "code/Rubrik-Security-Cloud-API/createServiceAccount.gql"
+    ```
+    === "PowerShell SDK"
+    ```powershell
+    --8<-- "code/Rubrik-Security-Cloud-API/createServiceAccount.ps1"
+    ```
+    === "Shell"
+    ```bash
+    --8<-- "code/Rubrik-Security-Cloud-API/createServiceAccount.sh"
+    ```
+
+#### Updating a Service Account
+=== "GraphQL"
+    ```graphql
+    --8<-- "code/Rubrik-Security-Cloud-API/updateServiceAccount.gql"
+    ```
+    === "PowerShell SDK"
+    ```powershell
+    --8<-- "code/Rubrik-Security-Cloud-API/updateServiceAccount.ps1"
+    ```
+    === "Shell"
+    ```bash
+    --8<-- "code/Rubrik-Security-Cloud-API/updateServiceAccount.sh"
+    ```
+
+#### Rotating a Service Account Secret
+=== "GraphQL"
+    ```graphql
+    --8<-- "code/Rubrik-Security-Cloud-API/rotateServiceAccountSecret.gql"
+    ```
+    === "PowerShell SDK"
+    ```powershell
+    --8<-- "code/Rubrik-Security-Cloud-API/rotateServiceAccountSecret.ps1"
+    ```
+    === "Shell"
+    ```bash
+    --8<-- "code/Rubrik-Security-Cloud-API/rotateServiceAccountSecret.sh"
+    ```
+
+#### Deleting a Service Account
+=== "GraphQL"
+    ```graphql
+    --8<-- "code/Rubrik-Security-Cloud-API/deleteServiceAccount.gql"
+    ```
+    === "PowerShell SDK"
+    ```powershell
+    --8<-- "code/Rubrik-Security-Cloud-API/deleteServiceAccount.ps1"
+    ```
+    === "Shell"
+    ```bash
+    --8<-- "code/Rubrik-Security-Cloud-API/deleteServiceAccount.sh"
+    ```
+
 
 ## User Accounts (OAuth2 Authorization Code with PKCE)
 

@@ -1,0 +1,1 @@
+Get-RscWorkload -Type VMWARE_VIRTUAL_MACHINE| Get-RscSnapshot
