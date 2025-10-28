@@ -182,6 +182,287 @@ This error indicates that the user session has expired. Refreshing the page will
 
 Next: [Authentication](../authentication/)
 
+In Rubrik, snapshots are a point-in-time copy of data, coupled with metadata. Snapshots can be managed by an SLA Domain, ahearing to the policy's archival, replication, and retention rules. Snapshot's can also be unmanaged, which means they are not tied to a specific policy, and retained forever.
+
+## Retrieving Snapshots for a Workload
+
+When retrieving snapshots for a workload, use that workload's RSC `id`. If using `snappableConnection` to list objects, use the `fid` field from the query. In the case of MSSQL databases, you must use the `dagId` from the MSSQL database object.
+
+```graphql
+query {
+  snapshotOfASnappableConnection(
+    workloadId: "123e4567-e89b-12d3-a456-426614174000"
+  ) {
+    nodes {
+      id
+      date
+      isIndexed
+      isOnDemandSnapshot
+      isQuarantined
+      isAnomaly
+      isExpired
+      expirationDate
+      ...on CdmSnapshot {
+        isRetentionLocked
+        legalHoldInfo {
+          shouldHoldInPlace
+        }
+        snapshotRetentionInfo {
+          localInfo {
+            isSnapshotPresent
+            isExpirationDateCalculated
+            expirationTime
+          }
+          archivalInfos {
+            isSnapshotPresent
+            isExpirationDateCalculated
+            expirationTime
+          }
+          replicationInfos {
+            isSnapshotPresent
+            isExpirationDateCalculated
+            expirationTime
+          }
+        }
+        fileCount
+        consistencyLevel
+      }
+      ...on PolarisSnapshot {
+        snapshotRetentionInfo {
+          localInfo {
+            isSnapshotPresent
+            isExpirationDateCalculated
+            expirationTime
+          }
+          archivalInfos {
+            isSnapshotPresent
+            isExpirationDateCalculated
+            expirationTime
+          }
+          replicationInfos {
+            isSnapshotPresent
+            isExpirationDateCalculated
+            expirationTime
+          }
+        }
+        polarisConsistencyLevel: consistencyLevel
+      }
+    }
+  }
+}
+```
+
+```powershell
+Get-RscVmwareVm -Name "example" | Get-RscSnapshot
+```
+
+```bash
+#!/bin/bash
+
+# RSC_TOKEN="YOUR_RSC_ACCESS_TOKEN"
+query="query { snapshotOfASnappableConnection( workloadId: \\\"123e4567-e89b-12d3-a456-426614174000\\\" ) { nodes { id date isIndexed isOnDemandSnapshot isQuarantined isAnomaly isExpired expirationDate ...on CdmSnapshot { isRetentionLocked legalHoldInfo { shouldHoldInPlace } snapshotRetentionInfo { localInfo { isSnapshotPresent isExpirationDateCalculated expirationTime } archivalInfos { isSnapshotPresent isExpirationDateCalculated expirationTime } replicationInfos { isSnapshotPresent isExpirationDateCalculated expirationTime } } fileCount consistencyLevel } ...on PolarisSnapshot { snapshotRetentionInfo { localInfo { isSnapshotPresent isExpirationDateCalculated expirationTime } archivalInfos { isSnapshotPresent isExpirationDateCalculated expirationTime } replicationInfos { isSnapshotPresent isExpirationDateCalculated expirationTime } } polarisConsistencyLevel: consistencyLevel } } } }"
+
+# Execute the GraphQL query with curl
+curl -X POST \
+  -H "Content-Type: application/json" \
+  -H "Authorization: Bearer $RSC_TOKEN" \
+  -d "{\"query\": \"$query\"}" \
+  https://example.my.rubrik.com/api/graphql
+```
+
+## Retrieving Snapshots for multiple Workloads
+
+```graphql
+query {
+  snapshotOfSnappablesConnection(
+    snappableIds: ["123e4567-e89b-12d3-a456-426614174000","123e4567-e89b-12d3-a456-426614174001"]
+  ) {
+    nodes {
+      id
+      date
+      isIndexed
+      isOnDemandSnapshot
+      isQuarantined
+      isAnomaly
+      isExpired
+      expirationDate
+      ...on CdmSnapshot {
+        isRetentionLocked
+        legalHoldInfo {
+          shouldHoldInPlace
+        }
+        snapshotRetentionInfo {
+          localInfo {
+            isSnapshotPresent
+            isExpirationDateCalculated
+            expirationTime
+          }
+          archivalInfos {
+            isSnapshotPresent
+            isExpirationDateCalculated
+            expirationTime
+          }
+          replicationInfos {
+            isSnapshotPresent
+            isExpirationDateCalculated
+            expirationTime
+          }
+        }
+        fileCount
+        consistencyLevel
+      }
+      ...on PolarisSnapshot {
+        snapshotRetentionInfo {
+          localInfo {
+            isSnapshotPresent
+            isExpirationDateCalculated
+            expirationTime
+          }
+          archivalInfos {
+            isSnapshotPresent
+            isExpirationDateCalculated
+            expirationTime
+          }
+          replicationInfos {
+            isSnapshotPresent
+            isExpirationDateCalculated
+            expirationTime
+          }
+        }
+        polarisConsistencyLevel: consistencyLevel
+      }
+    }
+  }
+}
+```
+
+```powershell
+Get-RscWorkload -Type VMWARE_VIRTUAL_MACHINE| Get-RscSnapshot
+```
+
+```bash
+#!/bin/bash
+
+# RSC_TOKEN="YOUR_RSC_ACCESS_TOKEN"
+query="query { snapshotOfSnappablesConnection( snappableIds: [\\\"123e4567-e89b-12d3-a456-426614174000\\\",\\\"123e4567-e89b-12d3-a456-426614174001\\\"] ) { nodes { id date isIndexed isOnDemandSnapshot isQuarantined isAnomaly isExpired expirationDate ...on CdmSnapshot { isRetentionLocked legalHoldInfo { shouldHoldInPlace } snapshotRetentionInfo { localInfo { isSnapshotPresent isExpirationDateCalculated expirationTime } archivalInfos { isSnapshotPresent isExpirationDateCalculated expirationTime } replicationInfos { isSnapshotPresent isExpirationDateCalculated expirationTime } } fileCount consistencyLevel } ...on PolarisSnapshot { snapshotRetentionInfo { localInfo { isSnapshotPresent isExpirationDateCalculated expirationTime } archivalInfos { isSnapshotPresent isExpirationDateCalculated expirationTime } replicationInfos { isSnapshotPresent isExpirationDateCalculated expirationTime } } polarisConsistencyLevel: consistencyLevel } } } }"
+
+# Execute the GraphQL query with curl
+curl -X POST \
+  -H "Content-Type: application/json" \
+  -H "Authorization: Bearer $RSC_TOKEN" \
+  -d "{\"query\": \"$query\"}" \
+  https://example.my.rubrik.com/api/graphql
+```
+
+## Assigning an SLA to a Snapshot
+
+```graphql
+mutation {
+  assignRetentionSLAToSnapshots(
+    snapshotFids: ["b77f85ae-62d1-435b-9abf-2a1d97c6802f"]
+    globalSlaAssignType: protectWithSlaId
+    globalSlaOptionalFid: "5b6e44ca-9a0d-42e8-a6ba-952159c69bab"
+  ) {
+    success
+  }
+}
+```
+
+```powershell
+$query = New-RscMutation -GqlMutation assignRetentionSLAToSnapshots
+$query.Var.globalSlaAssignType = [RubrikSecurityCloud.Types.SlaAssignTypeEnum]::PROTECT_WITH_SLA_ID
+$query.Var.snapshotFids = @("124a67b6-be5a-5181-9447-fac686bc9949")
+$query.Var.globalSlaOptionalFid = "123e4567-e89b-12d3-a456-426614174000"
+$query.invoke()
+```
+
+```bash
+#!/bin/bash
+
+# RSC_TOKEN="YOUR_RSC_ACCESS_TOKEN"
+query="mutation { assignRetentionSLAToSnapshots( snapshotFids: [\\\"b77f85ae-62d1-435b-9abf-2a1d97c6802f\\\"] globalSlaAssignType: protectWithSlaId globalSlaOptionalFid: \\\"5b6e44ca-9a0d-42e8-a6ba-952159c69bab\\\" ) { success } }"
+
+# Execute the GraphQL query with curl
+curl -X POST \
+  -H "Content-Type: application/json" \
+  -H "Authorization: Bearer $RSC_TOKEN" \
+  -d "{\"query\": \"$query\"}" \
+  https://example.my.rubrik.com/api/graphql
+```
+
+## Placing a Snapshot on Legal Hold
+
+```graphql
+mutation {
+  createLegalHold(input: {
+    snapshotIds: ["123e4567-e89b-12d3-a456-426614174000"]
+    holdConfig: { shouldHoldInPlace: true }
+    userNote: "Example"
+  }) {
+    snapshotIds
+  }
+}
+```
+
+```powershell
+$query = New-RscMutation -gqlMutation createLegalHold -AddField SnapshotIds
+$query.var.input = Get-RscType -name CreateLegalHoldInput
+$query.var.input.SnapshotIds = @("123e4567-e89b-12d3-a456-426614174000")
+$query.var.input.HoldConfig = Get-RscType -Name HoldConfig
+$query.var.input.HoldConfig.ShouldHoldInPlace = $true
+$query.var.input.UserNote = "Example"
+$query.invoke()
+```
+
+```bash
+#!/bin/bash
+
+# RSC_TOKEN="YOUR_RSC_ACCESS_TOKEN"
+query="mutation { createLegalHold(input: { snapshotIds: [\\\"123e4567-e89b-12d3-a456-426614174000\\\"] holdConfig: { shouldHoldInPlace: true } userNote: \\\"Example\\\" }) { snapshotIds } }"
+
+# Execute the GraphQL query with curl
+curl -X POST \
+  -H "Content-Type: application/json" \
+  -H "Authorization: Bearer $RSC_TOKEN" \
+  -d "{\"query\": \"$query\"}" \
+  https://example.my.rubrik.com/api/graphql
+```
+
+## Deleting Unmanaged Snapshots
+
+Unmanaged snapshots have no policy and will be retained forever until deleted. A snapshot is an unmanaged or "forever" if `isExpirationDateCalculated` is *true* and `expirationTime` is *null*.
+
+```graphql
+mutation {
+  deleteUnmanagedSnapshots(input: {
+    snapshotIds: ["124a67b6-be5a-5181-9447-fac686bc9949"]
+  }) {
+    success
+  }
+}
+```
+
+```powershell
+$query = New-RscMutation -GqlMutation deleteUnmanagedSnapshots
+$query.var.input = Get-RscType -Name DeleteUnmanagedSnapshotsInput
+$query.var.input.SnapshotIds = @("124a67b6-be5a-5181-9447-fac686bc9949")
+$query.Invoke()
+```
+
+```bash
+#!/bin/bash
+
+# RSC_TOKEN="YOUR_RSC_ACCESS_TOKEN"
+query="mutation { deleteUnmanagedSnapshots(input: { snapshotIds: [\\\"124a67b6-be5a-5181-9447-fac686bc9949\\\"] }) { success } }"
+
+# Execute the GraphQL query with curl
+curl -X POST \
+  -H "Content-Type: application/json" \
+  -H "Authorization: Bearer $RSC_TOKEN" \
+  -d "{\"query\": \"$query\"}" \
+  https://example.my.rubrik.com/api/graphql
+```
+
 ## Service Accounts (OAuth2 Client Credentials Grant)
 
 A service account represents an application that needs authentication and authorization to invoke Rubrik APIs, as opposed to a user account that represents an individual user. A client ID and client secret are used to authenticate to an authorization server and obtain an access token to invoke the Rubrik APIs. Similar to user accounts, Rubrik allows assigning roles to the service accounts to enable role-based access control. But contrary to user accounts, service accounts cannot be used to access the Rubrik web UI.
@@ -201,10 +482,6 @@ Consider the following best practices when using service accounts:
 - Service account access tokens should be cached and reused until they are valid.
 
 ### Usage
-
-#### Adding a service account
-
-Refer to the RSC user guide: [adding a service account](https://docs.rubrik.com/en-us/saas/saas/adding_a_service_account.html)
 
 #### Obtaining an access token
 
@@ -248,6 +525,78 @@ Run the following command to revoke the session established for the service acco
 ```bash
 curl -X DELETE --location "https://$RSC_FQDN/api/session" \
 --header "Authorization: Bearer $RSC_TOKEN"
+```
+
+### Service Account Management
+
+#### Retrieving Service Accounts
+
+```graphql
+
+```
+
+```powershell
+
+```
+
+```bash
+
+```
+
+#### Creating a Service Account
+
+```graphql
+
+```
+
+```powershell
+
+```
+
+```bash
+
+```
+
+#### Updating a Service Account
+
+```graphql
+
+```
+
+```powershell
+
+```
+
+```bash
+
+```
+
+#### Rotating a Service Account Secret
+
+```graphql
+
+```
+
+```powershell
+
+```
+
+```bash
+
+```
+
+#### Deleting a Service Account
+
+```graphql
+
+```
+
+```powershell
+
+```
+
+```bash
+
 ```
 
 ## User Accounts (OAuth2 Authorization Code with PKCE)
@@ -6809,203 +7158,6 @@ $sla | Set-RscSla -Description "This is my foo SLA"
 
 # RSC_TOKEN="YOUR_RSC_ACCESS_TOKEN"
 query="mutation createSla { updateGlobalSla(input: { id: \\\"2794261b-0e3b-4eab-8a32-f1ce4579e8c7\\\" name: \\\"foo\\\" objectTypes: [VSPHERE_OBJECT_TYPE MSSQL_OBJECT_TYPE] description: \\\"This is my foo SLA Domain\\\" snapshotSchedule: { daily: { basicSchedule: { frequency: 1 retention: 7 retentionUnit: DAYS } } } }) { name id } }"
-
-# Execute the GraphQL query with curl
-curl -X POST \
-  -H "Content-Type: application/json" \
-  -H "Authorization: Bearer $RSC_TOKEN" \
-  -d "{\"query\": \"$query\"}" \
-  https://example.my.rubrik.com/api/graphql
-```
-
-In Rubrik, snapshots are a point-in-time copy of data, coupled with metadata. Snapshots can be managed by an SLA Domain, ahearing to the policy's archival, replication, and retention rules. Snapshot's can also be unmanaged, which means they are not tied to a specific policy, and retained forever.
-
-## Retrieving Snapshots for a Workload
-
-When retrieving snapshots for a workload, use that workload's RSC `id`. If using `snappableConnection` to list objects, use the `fid` field from the query. In the case of MSSQL databases, you must use the `dagId` from the MSSQL database object.
-
-```graphql
-query {
-  snapshotOfASnappableConnection(
-    workloadId: "123e4567-e89b-12d3-a456-426614174000"
-  ) {
-    nodes {
-      id
-      date
-      isIndexed
-      isOnDemandSnapshot
-      isQuarantined
-      isAnomaly
-      isExpired
-      expirationDate
-      ...on CdmSnapshot {
-        isRetentionLocked
-        legalHoldInfo {
-          shouldHoldInPlace
-        }
-        snapshotRetentionInfo {
-          localInfo {
-            isSnapshotPresent
-            isExpirationDateCalculated
-            expirationTime
-          }
-          archivalInfos {
-            isSnapshotPresent
-            isExpirationDateCalculated
-            expirationTime
-          }
-          replicationInfos {
-            isSnapshotPresent
-            isExpirationDateCalculated
-            expirationTime
-          }
-        }
-        fileCount
-        consistencyLevel
-      }
-      ...on PolarisSnapshot {
-        snapshotRetentionInfo {
-          localInfo {
-            isSnapshotPresent
-            isExpirationDateCalculated
-            expirationTime
-          }
-          archivalInfos {
-            isSnapshotPresent
-            isExpirationDateCalculated
-            expirationTime
-          }
-          replicationInfos {
-            isSnapshotPresent
-            isExpirationDateCalculated
-            expirationTime
-          }
-        }
-        polarisConsistencyLevel: consistencyLevel
-      }
-    }
-  }
-}
-```
-
-```powershell
-Get-RscVmwareVm -Name "example" | Get-RscSnapshot
-```
-
-```bash
-#!/bin/bash
-
-# RSC_TOKEN="YOUR_RSC_ACCESS_TOKEN"
-query="query { snapshotOfASnappableConnection( workloadId: \\\"123e4567-e89b-12d3-a456-426614174000\\\" ) { nodes { id date isIndexed isOnDemandSnapshot isQuarantined isAnomaly isExpired expirationDate ...on CdmSnapshot { isRetentionLocked legalHoldInfo { shouldHoldInPlace } snapshotRetentionInfo { localInfo { isSnapshotPresent isExpirationDateCalculated expirationTime } archivalInfos { isSnapshotPresent isExpirationDateCalculated expirationTime } replicationInfos { isSnapshotPresent isExpirationDateCalculated expirationTime } } fileCount consistencyLevel } ...on PolarisSnapshot { snapshotRetentionInfo { localInfo { isSnapshotPresent isExpirationDateCalculated expirationTime } archivalInfos { isSnapshotPresent isExpirationDateCalculated expirationTime } replicationInfos { isSnapshotPresent isExpirationDateCalculated expirationTime } } polarisConsistencyLevel: consistencyLevel } } } }"
-
-# Execute the GraphQL query with curl
-curl -X POST \
-  -H "Content-Type: application/json" \
-  -H "Authorization: Bearer $RSC_TOKEN" \
-  -d "{\"query\": \"$query\"}" \
-  https://example.my.rubrik.com/api/graphql
-```
-
-## Assigning an SLA to a Snapshot
-
-```graphql
-mutation {
-  assignRetentionSLAToSnapshots(
-    snapshotFids: ["b77f85ae-62d1-435b-9abf-2a1d97c6802f"]
-    globalSlaAssignType: protectWithSlaId
-    globalSlaOptionalFid: "5b6e44ca-9a0d-42e8-a6ba-952159c69bab"
-  ) {
-    success
-  }
-}
-```
-
-```powershell
-$query = New-RscMutation -GqlMutation assignRetentionSLAToSnapshots
-$query.Var.globalSlaAssignType = [RubrikSecurityCloud.Types.SlaAssignTypeEnum]::PROTECT_WITH_SLA_ID
-$query.Var.snapshotFids = @("124a67b6-be5a-5181-9447-fac686bc9949")
-$query.Var.globalSlaOptionalFid = "123e4567-e89b-12d3-a456-426614174000"
-$query.invoke()
-```
-
-```bash
-#!/bin/bash
-
-# RSC_TOKEN="YOUR_RSC_ACCESS_TOKEN"
-query="mutation { assignRetentionSLAToSnapshots( snapshotFids: [\\\"b77f85ae-62d1-435b-9abf-2a1d97c6802f\\\"] globalSlaAssignType: protectWithSlaId globalSlaOptionalFid: \\\"5b6e44ca-9a0d-42e8-a6ba-952159c69bab\\\" ) { success } }"
-
-# Execute the GraphQL query with curl
-curl -X POST \
-  -H "Content-Type: application/json" \
-  -H "Authorization: Bearer $RSC_TOKEN" \
-  -d "{\"query\": \"$query\"}" \
-  https://example.my.rubrik.com/api/graphql
-```
-
-## Placing a Snapshot on Legal Hold
-
-```graphql
-mutation {
-  createLegalHold(input: {
-    snapshotIds: ["123e4567-e89b-12d3-a456-426614174000"]
-    holdConfig: { shouldHoldInPlace: true }
-    userNote: "Example"
-  }) {
-    snapshotIds
-  }
-}
-```
-
-```powershell
-$query = New-RscMutation -gqlMutation createLegalHold -AddField SnapshotIds
-$query.var.input = Get-RscType -name CreateLegalHoldInput
-$query.var.input.SnapshotIds = @("123e4567-e89b-12d3-a456-426614174000")
-$query.var.input.HoldConfig = Get-RscType -Name HoldConfig
-$query.var.input.HoldConfig.ShouldHoldInPlace = $true
-$query.var.input.UserNote = "Example"
-$query.invoke()
-```
-
-```bash
-#!/bin/bash
-
-# RSC_TOKEN="YOUR_RSC_ACCESS_TOKEN"
-query="mutation { createLegalHold(input: { snapshotIds: [\\\"123e4567-e89b-12d3-a456-426614174000\\\"] holdConfig: { shouldHoldInPlace: true } userNote: \\\"Example\\\" }) { snapshotIds } }"
-
-# Execute the GraphQL query with curl
-curl -X POST \
-  -H "Content-Type: application/json" \
-  -H "Authorization: Bearer $RSC_TOKEN" \
-  -d "{\"query\": \"$query\"}" \
-  https://example.my.rubrik.com/api/graphql
-```
-
-## Deleting Unmanaged Snapshots
-
-Unmanaged snapshots have no policy and will be retained forever until deleted. A snapshot is an unmanaged or "forever" if `isExpirationDateCalculated` is *true* and `expirationTime` is *null*.
-
-```graphql
-mutation {
-  deleteUnmanagedSnapshots(input: {
-    snapshotIds: ["124a67b6-be5a-5181-9447-fac686bc9949"]
-  }) {
-    success
-  }
-}
-```
-
-```powershell
-$query = New-RscMutation -GqlMutation deleteUnmanagedSnapshots
-$query.var.input = Get-RscType -Name DeleteUnmanagedSnapshotsInput
-$query.var.input.SnapshotIds = @("124a67b6-be5a-5181-9447-fac686bc9949")
-$query.Invoke()
-```
-
-```bash
-#!/bin/bash
-
-# RSC_TOKEN="YOUR_RSC_ACCESS_TOKEN"
-query="mutation { deleteUnmanagedSnapshots(input: { snapshotIds: [\\\"124a67b6-be5a-5181-9447-fac686bc9949\\\"] }) { success } }"
 
 # Execute the GraphQL query with curl
 curl -X POST \
@@ -37794,7 +37946,17 @@ query {
 ```
 
 ```bash
+#!/bin/bash
 
+# RSC_TOKEN="YOUR_RSC_ACCESS_TOKEN"
+query="query { allCustomReports(input: {}) { name id } }"
+
+# Execute the GraphQL query with curl
+curl -X POST \
+  -H "Content-Type: application/json" \
+  -H "Authorization: Bearer $RSC_TOKEN" \
+  -d "{\"query\": \"$query\"}" \
+  https://example.my.rubrik.com/api/graphql
 ```
 
 ## Generate Report CSV
@@ -37816,7 +37978,17 @@ mutation {
 ```
 
 ```bash
+#!/bin/bash
 
+# RSC_TOKEN="YOUR_RSC_ACCESS_TOKEN"
+query="mutation { downloadReportCsvAsync(input: {id: <REPORT ID>}) { jobId referenceId externalId } }"
+
+# Execute the GraphQL query with curl
+curl -X POST \
+  -H "Content-Type: application/json" \
+  -H "Authorization: Bearer $RSC_TOKEN" \
+  -d "{\"query\": \"$query\"}" \
+  https://example.my.rubrik.com/api/graphql
 ```
 
 ## Monitor Report Generation Status
@@ -37845,7 +38017,17 @@ query {
 ```
 
 ```bash
+#!/bin/bash
 
+# RSC_TOKEN="YOUR_RSC_ACCESS_TOKEN"
+query="query { allUserFiles { downloads { externalId createdAt expiresAt completedAt creator filename type state } } }"
+
+# Execute the GraphQL query with curl
+curl -X POST \
+  -H "Content-Type: application/json" \
+  -H "Authorization: Bearer $RSC_TOKEN" \
+  -d "{\"query\": \"$query\"}" \
+  https://example.my.rubrik.com/api/graphql
 ```
 
 ## Download Report

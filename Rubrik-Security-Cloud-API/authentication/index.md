@@ -18,10 +18,6 @@ Consider the following best practices when using service accounts:
 
 ### Usage
 
-#### Adding a service account
-
-Refer to the RSC user guide: [adding a service account](https://docs.rubrik.com/en-us/saas/saas/adding_a_service_account.html)
-
 #### Obtaining an access token
 
 In this example, the service account client ID and secret are exported into environment variables and posted to the RSC client_token endpoint. The response contains the access token needed for authenticated API calls. The `jq` tool is used to parse the access token from the JSON response and stored in a variable for usage.
@@ -64,6 +60,78 @@ Run the following command to revoke the session established for the service acco
 ```bash
 curl -X DELETE --location "https://$RSC_FQDN/api/session" \
 --header "Authorization: Bearer $RSC_TOKEN"
+```
+
+### Service Account Management
+
+#### Retrieving Service Accounts
+
+```graphql
+
+```
+
+```powershell
+
+```
+
+```bash
+
+```
+
+#### Creating a Service Account
+
+```graphql
+
+```
+
+```powershell
+
+```
+
+```bash
+
+```
+
+#### Updating a Service Account
+
+```graphql
+
+```
+
+```powershell
+
+```
+
+```bash
+
+```
+
+#### Rotating a Service Account Secret
+
+```graphql
+
+```
+
+```powershell
+
+```
+
+```bash
+
+```
+
+#### Deleting a Service Account
+
+```graphql
+
+```
+
+```powershell
+
+```
+
+```bash
+
 ```
 
 ## User Accounts (OAuth2 Authorization Code with PKCE)
