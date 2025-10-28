@@ -86,6 +86,90 @@ curl -X POST \
   https://example.my.rubrik.com/api/graphql
 ```
 
+## Retrieving Snapshots for multiple Workloads
+
+```graphql
+query {
+  snapshotOfSnappablesConnection(
+    snappableIds: ["123e4567-e89b-12d3-a456-426614174000","123e4567-e89b-12d3-a456-426614174001"]
+  ) {
+    nodes {
+      id
+      date
+      isIndexed
+      isOnDemandSnapshot
+      isQuarantined
+      isAnomaly
+      isExpired
+      expirationDate
+      ...on CdmSnapshot {
+        isRetentionLocked
+        legalHoldInfo {
+          shouldHoldInPlace
+        }
+        snapshotRetentionInfo {
+          localInfo {
+            isSnapshotPresent
+            isExpirationDateCalculated
+            expirationTime
+          }
+          archivalInfos {
+            isSnapshotPresent
+            isExpirationDateCalculated
+            expirationTime
+          }
+          replicationInfos {
+            isSnapshotPresent
+            isExpirationDateCalculated
+            expirationTime
+          }
+        }
+        fileCount
+        consistencyLevel
+      }
+      ...on PolarisSnapshot {
+        snapshotRetentionInfo {
+          localInfo {
+            isSnapshotPresent
+            isExpirationDateCalculated
+            expirationTime
+          }
+          archivalInfos {
+            isSnapshotPresent
+            isExpirationDateCalculated
+            expirationTime
+          }
+          replicationInfos {
+            isSnapshotPresent
+            isExpirationDateCalculated
+            expirationTime
+          }
+        }
+        polarisConsistencyLevel: consistencyLevel
+      }
+    }
+  }
+}
+```
+
+```powershell
+Get-RscWorkload -Type VMWARE_VIRTUAL_MACHINE| Get-RscSnapshot
+```
+
+```bash
+#!/bin/bash
+
+# RSC_TOKEN="YOUR_RSC_ACCESS_TOKEN"
+query="query { snapshotOfSnappablesConnection( snappableIds: [\\\"123e4567-e89b-12d3-a456-426614174000\\\",\\\"123e4567-e89b-12d3-a456-426614174001\\\"] ) { nodes { id date isIndexed isOnDemandSnapshot isQuarantined isAnomaly isExpired expirationDate ...on CdmSnapshot { isRetentionLocked legalHoldInfo { shouldHoldInPlace } snapshotRetentionInfo { localInfo { isSnapshotPresent isExpirationDateCalculated expirationTime } archivalInfos { isSnapshotPresent isExpirationDateCalculated expirationTime } replicationInfos { isSnapshotPresent isExpirationDateCalculated expirationTime } } fileCount consistencyLevel } ...on PolarisSnapshot { snapshotRetentionInfo { localInfo { isSnapshotPresent isExpirationDateCalculated expirationTime } archivalInfos { isSnapshotPresent isExpirationDateCalculated expirationTime } replicationInfos { isSnapshotPresent isExpirationDateCalculated expirationTime } } polarisConsistencyLevel: consistencyLevel } } } }"
+
+# Execute the GraphQL query with curl
+curl -X POST \
+  -H "Content-Type: application/json" \
+  -H "Authorization: Bearer $RSC_TOKEN" \
+  -d "{\"query\": \"$query\"}" \
+  https://example.my.rubrik.com/api/graphql
+```
+
 ## Assigning an SLA to a Snapshot
 
 ```graphql
