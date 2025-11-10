@@ -1,4 +1,8 @@
-## Retrieving NAS Shares
+## NAS
+
+### Shares
+
+#### Retrieval
 
 ```graphql
 query {
@@ -55,7 +59,9 @@ Get-RscNasShare
 
 ```
 
-## Retrieving NAS Systems
+### Systems
+
+#### Retrieval
 
 ```graphql
 query {
@@ -108,7 +114,9 @@ curl -X POST \
   https://example.my.rubrik.com/api/graphql
 ```
 
-## Retrieving NAS Namespaces
+### Namespaces
+
+#### Retrieval
 
 ```graphql
 query {
@@ -166,7 +174,11 @@ curl -X POST \
   https://example.my.rubrik.com/api/graphql
 ```
 
-## Retrieving Cloud Direct NAS Shares
+## Cloud Direct
+
+### Shares
+
+#### Retrieval
 
 ```graphql
 query {
@@ -248,7 +260,9 @@ curl -X POST \
   https://example.my.rubrik.com/api/graphql
 ```
 
-## Retrieving Cloud Direct NAS Systems
+### Systems
+
+#### Retrieval
 
 ```graphql
 query {
@@ -301,7 +315,9 @@ curl -X POST \
   https://example.my.rubrik.com/api/graphql
 ```
 
-## Retrieving Cloud Direct NAS Namespaces
+### Namespaces
+
+#### Retrieval
 
 ```graphql
 query {

@@ -1,4 +1,6 @@
-## Retrieving Mongo Collections
+## Mongo Collections
+
+### Retrieval
 
 ```graphql
 query {
@@ -50,7 +52,9 @@ curl -X POST \
   https://example.my.rubrik.com/api/graphql
 ```
 
-## Retrieving Mongo Databases
+## Mongo Databases
+
+### Retrieval
 
 ```graphql
 query {
@@ -100,7 +104,9 @@ curl -X POST \
   https://example.my.rubrik.com/api/graphql
 ```
 
-## Retrieving Mongo Sources
+## Mongo Sources
+
+### Retrieval
 
 ```graphql
 query {

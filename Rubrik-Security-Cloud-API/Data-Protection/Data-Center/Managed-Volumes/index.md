@@ -1,4 +1,6 @@
-## Retrieving SLA Managed Volumes
+## SLA Managed Volumes
+
+### Retrieval
 
 ```graphql
 query {
@@ -109,7 +111,90 @@ curl -X POST \
   https://example.my.rubrik.com/api/graphql
 ```
 
-## Retrieving Managed Volumes
+### On-Demand Backup
+
+```graphql
+mutation slaManagedVolumeSnapshot {
+  takeManagedVolumeOnDemandSnapshot(input: {
+    id: "f79b1102-77b5-4434-8400-c2a66c9b2dc1"
+    config: {
+      retentionConfig: {
+        slaId: "c7bd8eb2-7132-4c8f-8592-682d507520dc"
+      }
+    }
+  }) {
+    id
+  }
+}
+```
+
+```powershell
+$query = New-RscMutation -GqlMutation takeManagedVolumeOnDemandSnapshot
+$query.Var.input = Get-RscType -Name TakeManagedVolumeOnDemandSnapshotInput -InitialProperties config.retentionconfig
+$query.Var.input.id = "132b4b62-7d49-5972-9fcc-23d8dce2e1ad"
+$query.var.input.config.retentionconfig.slaId = "4a67543d-7f43-4a42-9953-dfefaa8bee6e"
+$query.field = Get-RscType -Name AsyncRequestStatus -InitialProperties id
+$query.invoke()
+```
+
+```bash
+#!/bin/bash
+
+# RSC_TOKEN="YOUR_RSC_ACCESS_TOKEN"
+query="mutation slaManagedVolumeSnapshot { takeManagedVolumeOnDemandSnapshot(input: { id: \\\"f79b1102-77b5-4434-8400-c2a66c9b2dc1\\\" config: { retentionConfig: { slaId: \\\"c7bd8eb2-7132-4c8f-8592-682d507520dc\\\" } } }) { id } }"
+
+# Execute the GraphQL query with curl
+curl -X POST \
+  -H "Content-Type: application/json" \
+  -H "Authorization: Bearer $RSC_TOKEN" \
+  -d "{\"query\": \"$query\"}" \
+  https://example.my.rubrik.com/api/graphql
+```
+
+### Job Status
+
+```graphql
+query {
+  jobInfo(input: {
+    requestId: "MANAGED_VOLUME_BACKUP_41447105-61f3-4def-873e-f7df1a37fc71_0522978f-c79e-4f82-9d02-c93711b387b8:::0"
+    clusterUuid: "f79b1102-77b5-4434-8400-c2a66c9b2dc1"
+    type: TAKE_MANAGED_VOLUME_ON_DEMAND_SNAPSHOT
+    additionalInfo: {}
+  }) {
+    status
+  }
+}
+```
+
+```powershell
+$query = New-RscQuery -GqlQuery jobInfo
+$query.Var.input = Get-RscType -Name JobInfoRequest -InitialProperties additionalInfo
+$query.Var.input.Type = [RubrikSecurityCloud.Types.JobType]::TAKE_MANAGED_VOLUME_ON_DEMAND_SNAPSHOT
+$query.Var.input.requestId = "MANAGED_VOLUME_BACKUP_41447105-61f3-4def-873e-f7df1a37fc71_0522978f-c79e-4f82-9d02-c93711b387b8:::0"
+$query.Var.input.ClusterUuid = "f79b1102-77b5-4434-8400-c2a66c9b2dc1"
+$query.field = Get-RscType -Name JobInfo -InitialProperties status
+$query.Invoke()
+```
+
+```bash
+#!/bin/bash
+
+# RSC_TOKEN="YOUR_RSC_ACCESS_TOKEN"
+query="query { jobInfo(input: { requestId: \\\"MANAGED_VOLUME_BACKUP_41447105-61f3-4def-873e-f7df1a37fc71_0522978f-c79e-4f82-9d02-c93711b387b8:::0\\\" clusterUuid: \\\"f79b1102-77b5-4434-8400-c2a66c9b2dc1\\\" type: TAKE_MANAGED_VOLUME_ON_DEMAND_SNAPSHOT additionalInfo: {} }) { status } }"
+
+# Execute the GraphQL query with curl
+curl -X POST \
+  -H "Content-Type: application/json" \
+  -H "Authorization: Bearer $RSC_TOKEN" \
+  -d "{\"query\": \"$query\"}" \
+  https://example.my.rubrik.com/api/graphql
+```
+
+## Managed Volumes
+
+Managed volumes become writable when a snapshot operation begins. During this time, data can be written as needed. Once all writes are complete, the on-demand backup process must be ended upon completion of writes.
+
+### Retrieval
 
 ```graphql
 query {
@@ -193,7 +278,7 @@ curl -X POST \
   https://example.my.rubrik.com/api/graphql
 ```
 
-## Retrieving Managed Volume Live Mounts
+### Managed Volume Live Mounts
 
 ```graphql
 query {
@@ -251,6 +336,158 @@ $query.invoke().nodes
 
 # RSC_TOKEN="YOUR_RSC_ACCESS_TOKEN"
 query="query { managedVolumeLiveMounts { nodes { name id logicalUsedSize managedVolume { name id } sourceSnapshot { id } channels { mountPath floatingIpAddress id mountSpec { mountDir imageSizeOpt node { id } } } } } }"
+
+# Execute the GraphQL query with curl
+curl -X POST \
+  -H "Content-Type: application/json" \
+  -H "Authorization: Bearer $RSC_TOKEN" \
+  -d "{\"query\": \"$query\"}" \
+  https://example.my.rubrik.com/api/graphql
+```
+
+### On-Demand Backup
+
+#### Begin
+
+```graphql
+mutation beginManagedVolumeSnapshot {
+  beginManagedVolumeSnapshot(input: {
+    id: "f79b1102-77b5-4434-8400-c2a66c9b2dc1"
+  }) {
+    asyncRequestStatus {
+      id
+    }
+  }
+}
+```
+
+```powershell
+Start-RscManagedVolumeSnapshot
+```
+
+```bash
+#!/bin/bash
+
+# RSC_TOKEN="YOUR_RSC_ACCESS_TOKEN"
+query="mutation beginManagedVolumeSnapshot { beginManagedVolumeSnapshot(input: { id: \\\"f79b1102-77b5-4434-8400-c2a66c9b2dc1\\\" }) { asyncRequestStatus { id } } }"
+
+# Execute the GraphQL query with curl
+curl -X POST \
+  -H "Content-Type: application/json" \
+  -H "Authorization: Bearer $RSC_TOKEN" \
+  -d "{\"query\": \"$query\"}" \
+  https://example.my.rubrik.com/api/graphql
+```
+
+#### End
+
+```graphql
+mutation endManagedVolumeSnapshot {
+  endManagedVolumeSnapshot(input: {
+    id: "f79b1102-77b5-4434-8400-c2a66c9b2dc1"
+    params: {
+      retentionConfig: {
+        slaId: "c7bd8eb2-7132-4c8f-8592-682d507520dc"
+      }
+    }
+    #endSnapshotDelayInSeconds: 5
+  }) {
+    asyncRequestStatus {
+      id
+    }
+  }
+}
+```
+
+```powershell
+Stop-RscManagedVolumeSnapshot
+```
+
+```bash
+#!/bin/bash
+
+# RSC_TOKEN="YOUR_RSC_ACCESS_TOKEN"
+query="mutation endManagedVolumeSnapshot { endManagedVolumeSnapshot(input: { id: \\\"f79b1102-77b5-4434-8400-c2a66c9b2dc1\\\" params: { retentionConfig: { slaId: \\\"c7bd8eb2-7132-4c8f-8592-682d507520dc\\\" } } }) { asyncRequestStatus { id } } }"
+
+# Execute the GraphQL query with curl
+curl -X POST \
+  -H "Content-Type: application/json" \
+  -H "Authorization: Bearer $RSC_TOKEN" \
+  -d "{\"query\": \"$query\"}" \
+  https://example.my.rubrik.com/api/graphql
+```
+
+### Job Status
+
+#### Begin
+
+```graphql
+query {
+  jobInfo(input: {
+    requestId: "MANAGED_VOLUME_BEGIN_SNAPSHOT_89c2fe66-46f9-489b-8650-7eacfab37608_b5bfbeaf-8e45-4ccd-a9da-541dec38b0b9:::0"
+    clusterUuid: "f79b1102-77b5-4434-8400-c2a66c9b2dc1"
+    type: BEGIN_MANAGED_VOLUME_SNAPSHOT
+    additionalInfo: {}
+  }) {
+    status
+  }
+}
+```
+
+```powershell
+$query = New-RscQuery -GqlQuery jobInfo
+$query.Var.input = Get-RscType -Name JobInfoRequest -InitialProperties additionalInfo
+$query.Var.input.Type = [RubrikSecurityCloud.Types.JobType]::BEGIN_MANAGED_VOLUME_SNAPSHOT
+$query.Var.input.requestId = "MANAGED_VOLUME_BEGIN_SNAPSHOT_89c2fe66-46f9-489b-8650-7eacfab37608_b5bfbeaf-8e45-4ccd-a9da-541dec38b0b9:::0"
+$query.Var.input.ClusterUuid = "f79b1102-77b5-4434-8400-c2a66c9b2dc1"
+$query.field = Get-RscType -Name JobInfo -InitialProperties status
+$query.Invoke()
+```
+
+```bash
+#!/bin/bash
+
+# RSC_TOKEN="YOUR_RSC_ACCESS_TOKEN"
+query="query { jobInfo(input: { requestId: \\\"MANAGED_VOLUME_BEGIN_SNAPSHOT_89c2fe66-46f9-489b-8650-7eacfab37608_b5bfbeaf-8e45-4ccd-a9da-541dec38b0b9:::0\\\" clusterUuid: \\\"f79b1102-77b5-4434-8400-c2a66c9b2dc1\\\" type: BEGIN_MANAGED_VOLUME_SNAPSHOT additionalInfo: {} }) { status } }"
+
+# Execute the GraphQL query with curl
+curl -X POST \
+  -H "Content-Type: application/json" \
+  -H "Authorization: Bearer $RSC_TOKEN" \
+  -d "{\"query\": \"$query\"}" \
+  https://example.my.rubrik.com/api/graphql
+```
+
+#### End
+
+```graphql
+query {
+  jobInfo(input: {
+    requestId: "MANAGED_VOLUME_END_SNAPSHOT_89c2fe66-46f9-489b-8650-7eacfab37608_b5bfbeaf-8e45-4ccd-a9da-541dec38b0b9:::0"
+    clusterUuid: "f79b1102-77b5-4434-8400-c2a66c9b2dc1"
+    type: END_MANAGED_VOLUME_SNAPSHOT
+    additionalInfo: {}
+  }) {
+    status
+  }
+}
+```
+
+```powershell
+$query = New-RscQuery -GqlQuery jobInfo
+$query.Var.input = Get-RscType -Name JobInfoRequest -InitialProperties additionalInfo
+$query.Var.input.Type = [RubrikSecurityCloud.Types.JobType]::END_MANAGED_VOLUME_SNAPSHOT
+$query.Var.input.requestId = "MANAGED_VOLUME_END_SNAPSHOT_89c2fe66-46f9-489b-8650-7eacfab37608_b5bfbeaf-8e45-4ccd-a9da-541dec38b0b9:::0"
+$query.Var.input.ClusterUuid = "f79b1102-77b5-4434-8400-c2a66c9b2dc1"
+$query.field = Get-RscType -Name JobInfo -InitialProperties status
+$query.Invoke()
+```
+
+```bash
+#!/bin/bash
+
+# RSC_TOKEN="YOUR_RSC_ACCESS_TOKEN"
+query="query { jobInfo(input: { requestId: \\\"MANAGED_VOLUME_END_SNAPSHOT_89c2fe66-46f9-489b-8650-7eacfab37608_b5bfbeaf-8e45-4ccd-a9da-541dec38b0b9:::0\\\" clusterUuid: \\\"f79b1102-77b5-4434-8400-c2a66c9b2dc1\\\" type: END_MANAGED_VOLUME_SNAPSHOT additionalInfo: {} }) { status } }"
 
 # Execute the GraphQL query with curl
 curl -X POST \

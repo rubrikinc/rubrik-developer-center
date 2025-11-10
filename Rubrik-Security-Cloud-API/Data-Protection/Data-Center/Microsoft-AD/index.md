@@ -1,4 +1,6 @@
-## Retrieving Microsoft Active Directory Domain Controllers
+## Microsoft Active Directory Domain Controllers
+
+### Retrieval
 
 ```graphql
 query {
@@ -75,7 +77,9 @@ curl -X POST \
   https://example.my.rubrik.com/api/graphql
 ```
 
-## Retrieving Microsoft Active Directory Domains
+## Microsoft Active Directory Domains
+
+### Retrieval
 
 ```graphql
 query {
