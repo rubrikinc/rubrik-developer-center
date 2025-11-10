@@ -78,7 +78,7 @@ Managed volumes become writable when a snapshot operation begins. During this ti
     ```
 
 ### On-Demand Backup
-#### Begin On-Demand Backup
+#### Begin
 === "GraphQL"
     ```graphql
     --8<-- "code/Rubrik-Security-Cloud-API/Data-Protection/Data-Center/Managed-Volumes/beginSnapshot.gql"
@@ -92,7 +92,7 @@ Managed volumes become writable when a snapshot operation begins. During this ti
     --8<-- "code/Rubrik-Security-Cloud-API/Data-Protection/Data-Center/Managed-Volumes/beginSnapshot.sh"
     ```
 
-#### End On-Demand Backup
+#### End
 === "GraphQL"
     ```graphql
     --8<-- "code/Rubrik-Security-Cloud-API/Data-Protection/Data-Center/Managed-Volumes/endSnapshot.gql"
