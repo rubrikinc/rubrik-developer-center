@@ -2,36 +2,6 @@
 Title: Microsoft Hyper-V
 ---
 
-## Microsoft Hyper-V System Center Virtual Machine Managers (SCVMM)
-### Retrieval
-=== "GraphQL"
-    ```graphql
-    --8<-- "code/Rubrik-Security-Cloud-API/Data-Protection/Data-Center/Microsoft-HyperV/scvmms.gql"
-    ```
-=== "PowerShell SDK"
-    ```powershell
-    --8<-- "code/Rubrik-Security-Cloud-API/Data-Protection/Data-Center/Microsoft-HyperV/scvmms.ps1"
-    ```
-=== "Shell"
-    ```bash
-    --8<-- "code/Rubrik-Security-Cloud-API/Data-Protection/Data-Center/Microsoft-HyperV/scvmms.sh"
-    ```
-
-## Microsoft Hyper-V Servers
-## Retrieval
-=== "GraphQL"
-    ```graphql
-    --8<-- "code/Rubrik-Security-Cloud-API/Data-Protection/Data-Center/Microsoft-HyperV/servers.gql"
-    ```
-=== "PowerShell SDK"
-    ```powershell
-    --8<-- "code/Rubrik-Security-Cloud-API/Data-Protection/Data-Center/Microsoft-HyperV/servers.ps1"
-    ```
-=== "Shell"
-    ```bash
-    --8<-- "code/Rubrik-Security-Cloud-API/Data-Protection/Data-Center/Microsoft-HyperV/servers.sh"
-    ```
-
 ## Microsoft Hyper-V Virtual Machines
 ### Retrieval
 === "GraphQL"
@@ -72,4 +42,34 @@ Title: Microsoft Hyper-V
 === "Shell"
     ```bash
     --8<-- "code/Rubrik-Security-Cloud-API/Data-Protection/Data-Center/Microsoft-HyperV/jobstatus.sh"
+    ```
+
+## Microsoft Hyper-V System Center Virtual Machine Managers (SCVMM)
+### Retrieval
+=== "GraphQL"
+    ```graphql
+    --8<-- "code/Rubrik-Security-Cloud-API/Data-Protection/Data-Center/Microsoft-HyperV/scvmms.gql"
+    ```
+=== "PowerShell SDK"
+    ```powershell
+    --8<-- "code/Rubrik-Security-Cloud-API/Data-Protection/Data-Center/Microsoft-HyperV/scvmms.ps1"
+    ```
+=== "Shell"
+    ```bash
+    --8<-- "code/Rubrik-Security-Cloud-API/Data-Protection/Data-Center/Microsoft-HyperV/scvmms.sh"
+    ```
+
+## Microsoft Hyper-V Servers
+## Retrieval
+=== "GraphQL"
+    ```graphql
+    --8<-- "code/Rubrik-Security-Cloud-API/Data-Protection/Data-Center/Microsoft-HyperV/servers.gql"
+    ```
+=== "PowerShell SDK"
+    ```powershell
+    --8<-- "code/Rubrik-Security-Cloud-API/Data-Protection/Data-Center/Microsoft-HyperV/servers.ps1"
+    ```
+=== "Shell"
+    ```bash
+    --8<-- "code/Rubrik-Security-Cloud-API/Data-Protection/Data-Center/Microsoft-HyperV/servers.sh"
     ```
