@@ -1,9 +1,9 @@
 ---
 Title: Unstructured Data (NAS)
 ---
-
-## Retrieving NAS Shares
-
+## NAS
+### Shares
+#### Retrieval
 === "GraphQL"
     ```graphql
     --8<-- "code/Rubrik-Security-Cloud-API/Data-Protection/Data-Center/NAS-Unstructured-Data/shares.gql"
@@ -17,8 +17,8 @@ Title: Unstructured Data (NAS)
     --8<-- "code/Rubrik-Security-Cloud-API/Data-Protection/Data-Center/NAS-Unstructured-Data/shares.sh1"
     ```
 
-## Retrieving NAS Systems
-
+### Systems
+#### Retrieval
 === "GraphQL"
     ```graphql
     --8<-- "code/Rubrik-Security-Cloud-API/Data-Protection/Data-Center/NAS-Unstructured-Data/systems.gql"
@@ -32,8 +32,8 @@ Title: Unstructured Data (NAS)
     --8<-- "code/Rubrik-Security-Cloud-API/Data-Protection/Data-Center/NAS-Unstructured-Data/systems.sh"
     ```
 
-## Retrieving NAS Namespaces
-
+### Namespaces
+#### Retrieval
 === "GraphQL"
     ```graphql
     --8<-- "code/Rubrik-Security-Cloud-API/Data-Protection/Data-Center/NAS-Unstructured-Data/namespaces.gql"
@@ -47,8 +47,9 @@ Title: Unstructured Data (NAS)
     --8<-- "code/Rubrik-Security-Cloud-API/Data-Protection/Data-Center/NAS-Unstructured-Data/namespaces.sh"
     ```
 
-## Retrieving Cloud Direct NAS Shares
-
+## Cloud Direct
+### Shares
+#### Retrieval
 === "GraphQL"
     ```graphql
     --8<-- "code/Rubrik-Security-Cloud-API/Data-Protection/Data-Center/NAS-Unstructured-Data/cloudDirectShares.gql"
@@ -62,8 +63,8 @@ Title: Unstructured Data (NAS)
     --8<-- "code/Rubrik-Security-Cloud-API/Data-Protection/Data-Center/NAS-Unstructured-Data/cloudDirectShares.sh"
     ```
 
-## Retrieving Cloud Direct NAS Systems
-
+### Systems
+#### Retrieval
 === "GraphQL"
     ```graphql
     --8<-- "code/Rubrik-Security-Cloud-API/Data-Protection/Data-Center/NAS-Unstructured-Data/systems.gql"
@@ -77,8 +78,8 @@ Title: Unstructured Data (NAS)
     --8<-- "code/Rubrik-Security-Cloud-API/Data-Protection/Data-Center/NAS-Unstructured-Data/systems.sh"
     ```
 
-## Retrieving Cloud Direct NAS Namespaces
-
+### Namespaces
+#### Retrieval
 === "GraphQL"
     ```graphql
     --8<-- "code/Rubrik-Security-Cloud-API/Data-Protection/Data-Center/NAS-Unstructured-Data/cloudDirectNamespaces.gql"
