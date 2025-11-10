@@ -2,8 +2,9 @@
 Title: Microsoft Active Directory
 ---
 
-## Retrieving Microsoft Active Directory Domain Controllers
 
+## Microsoft Active Directory Domain Controllers
+### Retrieval
 === "GraphQL"
     ```graphql
     --8<-- "code/Rubrik-Security-Cloud-API/Data-Protection/Data-Center/Microsoft-AD/domain-controllers.gql"
@@ -18,8 +19,8 @@ Title: Microsoft Active Directory
     ```
 
 
-## Retrieving Microsoft Active Directory Domains
-
+## Microsoft Active Directory Domains
+### Retrieval
 === "GraphQL"
     ```graphql
     --8<-- "code/Rubrik-Security-Cloud-API/Data-Protection/Data-Center/Microsoft-AD/domains.gql"
