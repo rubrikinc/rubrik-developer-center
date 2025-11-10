@@ -48,4 +48,4 @@ To monitor the asynchronous request status for VMware vSphere, provide the ID of
 === "Shell"
     ```bash
     --8<-- "code/Rubrik-Security-Cloud-API/Data-Protection/Data-Center/Filesets/jobstatus.sh"
-    ```a
+    ```
