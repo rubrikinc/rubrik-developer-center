@@ -1,9 +1,9 @@
 ---
-Title: Google Compute Engine Instances
+Title: Google Compute Engine
 ---
 
-## Retrieving Google Compute Engine (GCE) Instances
-
+## Google Compute Engine (GCE) Instances
+### Retrieval
 === "GraphQL"
     ```graphql
     --8<-- "code/Rubrik-Security-Cloud-API/Data-Protection/Cloud/GCP/instances.gql"
@@ -16,3 +16,7 @@ Title: Google Compute Engine Instances
     ```bash
     --8<-- "code/Rubrik-Security-Cloud-API/Data-Protection/Cloud/GCP/instances.sh"
     ```
+### On-Demand Backup
+See [Cloud Workloads](index.md)
+### Job Status
+See [Cloud Workloads](index.md)
