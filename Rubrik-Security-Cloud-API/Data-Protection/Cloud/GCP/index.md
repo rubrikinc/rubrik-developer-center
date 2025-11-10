@@ -1,4 +1,6 @@
-## Retrieving Google Compute Engine (GCE) Instances
+## Google Compute Engine (GCE) Instances
+
+### Retrieval
 
 ```graphql
 query {
@@ -65,3 +67,11 @@ curl -X POST \
   -d "{\"query\": \"$query\"}" \
   https://example.my.rubrik.com/api/graphql
 ```
+
+### On-Demand Backup
+
+See [Cloud Workloads](../)
+
+### Job Status
+
+See [Cloud Workloads](../)

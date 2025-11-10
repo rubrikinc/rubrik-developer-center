@@ -5,3 +5,7 @@ Events are state changes within Rubrik. Events can be as simple as a successful 
 ## [Metrics](Metrics/)
 
 Various metrics can be obtained on the Rubrik platform for capacity management, chargeback, compliance status, and more.
+
+## [Reports](Reports/)
+
+Rubrik's reporting engine simplifies reporting process by creating CSV or PDF reports for the most common requirements. Reports can be customized through the Rubrik Security Cloud console and automated generation and download can be completed through the API.
