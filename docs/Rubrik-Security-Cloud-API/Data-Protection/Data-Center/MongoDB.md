@@ -2,7 +2,8 @@
 Title: MongoDB
 ---
 
-## Retrieving Mongo Collections
+## Mongo Collections
+### Retrieval
 
 === "GraphQL"
     ```graphql
@@ -17,8 +18,8 @@ Title: MongoDB
     --8<-- "code/Rubrik-Security-Cloud-API/Data-Protection/Data-Center/MongoDB/collections.sh"
     ```
 
-## Retrieving Mongo Databases
-
+## Mongo Databases
+### Retrieval
 === "GraphQL"
     ```graphql
     --8<-- "code/Rubrik-Security-Cloud-API/Data-Protection/Data-Center/MongoDB/databases.gql"
@@ -32,8 +33,8 @@ Title: MongoDB
     --8<-- "code/Rubrik-Security-Cloud-API/Data-Protection/Data-Center/MongoDB/databases.sh"
     ```
 
-## Retrieving Mongo Sources
-
+## Mongo Sources
+### Retrieval
 === "GraphQL"
     ```graphql
     --8<-- "code/Rubrik-Security-Cloud-API/Data-Protection/Data-Center/MongoDB/sources.gql"
