@@ -52,11 +52,11 @@ Run the following command to revoke the session established for the service acco
     ```graphql
     --8<-- "code/Rubrik-Security-Cloud-API/serviceaccounts.gql"
     ```
-    === "PowerShell SDK"
+=== "PowerShell SDK"
     ```powershell
     --8<-- "code/Rubrik-Security-Cloud-API/serviceaccounts.ps1"
     ```
-    === "Shell"
+=== "Shell"
     ```bash
     --8<-- "code/Rubrik-Security-Cloud-API/serviceaccounts.sh"
     ```
@@ -66,27 +66,27 @@ Run the following command to revoke the session established for the service acco
     ```graphql
     --8<-- "code/Rubrik-Security-Cloud-API/createServiceAccount.gql"
     ```
-    === "PowerShell SDK"
+=== "PowerShell SDK"
     ```powershell
     --8<-- "code/Rubrik-Security-Cloud-API/createServiceAccount.ps1"
     ```
-    === "Shell"
+=== "Shell"
     ```bash
     --8<-- "code/Rubrik-Security-Cloud-API/createServiceAccount.sh"
     ```
 
-#### Updating a Service Account
+#### Updating a Service Account Role
 === "GraphQL"
     ```graphql
-    --8<-- "code/Rubrik-Security-Cloud-API/updateServiceAccount.gql"
+    --8<-- "code/Rubrik-Security-Cloud-API/updateRoleAssignments.gql"
     ```
-    === "PowerShell SDK"
+=== "PowerShell SDK"
     ```powershell
-    --8<-- "code/Rubrik-Security-Cloud-API/updateServiceAccount.ps1"
+    --8<-- "code/Rubrik-Security-Cloud-API/updateRoleAssignments.ps1"
     ```
-    === "Shell"
+=== "Shell"
     ```bash
-    --8<-- "code/Rubrik-Security-Cloud-API/updateServiceAccount.sh"
+    --8<-- "code/Rubrik-Security-Cloud-API/updateRoleAssignments.sh"
     ```
 
 #### Rotating a Service Account Secret
@@ -94,11 +94,11 @@ Run the following command to revoke the session established for the service acco
     ```graphql
     --8<-- "code/Rubrik-Security-Cloud-API/rotateServiceAccountSecret.gql"
     ```
-    === "PowerShell SDK"
+=== "PowerShell SDK"
     ```powershell
     --8<-- "code/Rubrik-Security-Cloud-API/rotateServiceAccountSecret.ps1"
     ```
-    === "Shell"
+=== "Shell"
     ```bash
     --8<-- "code/Rubrik-Security-Cloud-API/rotateServiceAccountSecret.sh"
     ```
@@ -108,11 +108,11 @@ Run the following command to revoke the session established for the service acco
     ```graphql
     --8<-- "code/Rubrik-Security-Cloud-API/deleteServiceAccount.gql"
     ```
-    === "PowerShell SDK"
+=== "PowerShell SDK"
     ```powershell
     --8<-- "code/Rubrik-Security-Cloud-API/deleteServiceAccount.ps1"
     ```
-    === "Shell"
+=== "Shell"
     ```bash
     --8<-- "code/Rubrik-Security-Cloud-API/deleteServiceAccount.sh"
     ```
