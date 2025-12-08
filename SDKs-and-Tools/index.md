@@ -8,7 +8,7 @@
 
   ______________________________________________________________________
 
-  [Get Started](PowerShell/)
+  [Get Started](https://developer.rubrik.com/SDKs-and-Tools/PowerShell/index.md)
 
   [PowerShell Gallery](https://www.powershellgallery.com/packages/rubriksecuritycloud)
 
@@ -24,7 +24,7 @@
 
   ______________________________________________________________________
 
-  [Download](rubrik-postman.json)
+  [Download](https://developer.rubrik.com/SDKs-and-Tools/rubrik-postman.json)
 
 - **Rubrik Security Cloud Terraform Provider**
 

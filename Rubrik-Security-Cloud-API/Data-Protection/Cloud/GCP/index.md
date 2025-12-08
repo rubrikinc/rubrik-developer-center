@@ -70,8 +70,8 @@ curl -X POST \
 
 ### On-Demand Backup
 
-See [Cloud Workloads](../)
+See [Cloud Workloads](https://developer.rubrik.com/Rubrik-Security-Cloud-API/Data-Protection/Cloud/index.md)
 
 ### Job Status
 
-See [Cloud Workloads](../)
+See [Cloud Workloads](https://developer.rubrik.com/Rubrik-Security-Cloud-API/Data-Protection/Cloud/index.md)
