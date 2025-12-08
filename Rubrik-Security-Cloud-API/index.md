@@ -45,4 +45,4 @@ query mssqlDatabasesExample { #(1)!
 
 To learn more about the query syntax, check out [GraphQL Language Syntax](https://graphql.org/learn/queries).
 
-Next: [API Playground](API-playground/)
+Next: [API Playground](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-playground/index.md)

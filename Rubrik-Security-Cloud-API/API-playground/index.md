@@ -121,10 +121,10 @@ The result will be only SLA Domains starting with `bronze`
 
 ## Troubleshooting
 
-For GraphQL errors, see the [troubleshooting](../troubleshooting/) page.
+For GraphQL errors, see the [troubleshooting](https://developer.rubrik.com/Rubrik-Security-Cloud-API/troubleshooting/index.md) page.
 
 ### 401 JWT is missing.
 
 This error indicates that the user session has expired. Refreshing the page will take you to the RSC login page to reauthenticate.
 
-Next: [Authentication](../authentication/)
+Next: [Authentication](https://developer.rubrik.com/Rubrik-Security-Cloud-API/authentication/index.md)

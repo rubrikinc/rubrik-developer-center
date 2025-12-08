@@ -49,7 +49,7 @@ query mssqlDatabasesExample { #(1)!
 
 To learn more about the query syntax, check out [GraphQL Language Syntax](https://graphql.org/learn/queries).
 
-Next: [API Playground](API-playground/)
+Next: [API Playground](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-playground/index.md)
 
 The API Playground is an integrated development environment (IDE) that you can use to browse, explore, and run GraphQL APIs offered by Rubrik Security Cloud (RSC). The IDE also provides reference to the Rubrik GraphQL API documentation for your version. Running GraphQL queries and mutations in API Playground validates the GraphQL operations so that you can confirm that your queries or mutations will achieve the desired result when included in automation scripts.
 
@@ -174,13 +174,13 @@ The result will be only SLA Domains starting with `bronze`
 
 ## Troubleshooting
 
-For GraphQL errors, see the [troubleshooting](../troubleshooting/) page.
+For GraphQL errors, see the [troubleshooting](https://developer.rubrik.com/Rubrik-Security-Cloud-API/troubleshooting/index.md) page.
 
 ### 401 JWT is missing.
 
 This error indicates that the user session has expired. Refreshing the page will take you to the RSC login page to reauthenticate.
 
-Next: [Authentication](../authentication/)
+Next: [Authentication](https://developer.rubrik.com/Rubrik-Security-Cloud-API/authentication/index.md)
 
 In Rubrik, snapshots are a point-in-time copy of data, coupled with metadata. Snapshots can be managed by an SLA Domain, ahearing to the policy's archival, replication, and retention rules. Snapshot's can also be unmanaged, which means they are not tied to a specific policy, and retained forever.
 
@@ -1270,7 +1270,7 @@ curl -X POST \
 
 ### Summary
 
-Retrieve relevant chunks with Annapurna retriever. To retrieve chunks from files with user-level file permissions, authentication must take place using [OAuth2 Authorization Code](../../../authentication/#user-accounts-oauth2-authorization-code-with-pkce)
+Retrieve relevant chunks with Annapurna retriever. To retrieve chunks from files with user-level file permissions, authentication must take place using [OAuth2 Authorization Code](https://developer.rubrik.com/Rubrik-Security-Cloud-API/authentication/#user-accounts-oauth2-authorization-code-with-pkce)
 
 ### Request Parameters
 
@@ -1312,19 +1312,19 @@ Retrieve relevant chunks with Annapurna retriever. To retrieve chunks from files
 
 The Data Protection App provides the core tools and features for protecting, managing, and analyzing your data.
 
-## [SLA Domains](SLA-Domains/)
+## [SLA Domains](https://developer.rubrik.com/Rubrik-Security-Cloud-API/Data-Protection/SLA-Domains/index.md)
 
 SLA Domains provide the governance for how an object should be protected, defining frequency, retention, archival, and replication policies. Instead of complicated backup schedules and sequencing, SLA Domains provide an intelligent framework to define business requirements for protection.
 
-## [Infrastructure](Infrastructure/)
+## [Infrastructure](https://developer.rubrik.com/Rubrik-Security-Cloud-API/Data-Protection/Infrastructure/index.md)
 
 Infrastructure refers to the physical or virtual machines that run the Rubrik software. Infrastructure can include Rubrik Clusters and Rubrik Cloud Vault.
 
-## [Data Center](Data-Center/)
+## [Data Center](https://developer.rubrik.com/Rubrik-Security-Cloud-API/Data-Protection/Data-Center/index.md)
 
 Data Center protection is categorized as anything protected by a Rubrik cluster. This can include cloud workloads protected by a Rubrik Cloud Cluster.
 
-## [Cloud](Cloud/)
+## [Cloud](https://developer.rubrik.com/Rubrik-Security-Cloud-API/Data-Protection/Cloud/index.md)
 
 Cloud protection is categorized as anything protected by Rubrik Cloud-Native protection.
 
@@ -2842,11 +2842,11 @@ curl -X POST \
 
 ### On-Demand Backup
 
-See [Cloud Workloads](../)
+See [Cloud Workloads](https://developer.rubrik.com/Rubrik-Security-Cloud-API/Data-Protection/Cloud/index.md)
 
 ### Job Status
 
-See [Cloud Workloads](../)
+See [Cloud Workloads](https://developer.rubrik.com/Rubrik-Security-Cloud-API/Data-Protection/Cloud/index.md)
 
 ## EC2 Instances
 
@@ -2917,11 +2917,11 @@ curl -X POST \
 
 ### On-Demand Backup
 
-See [Cloud Workloads](../)
+See [Cloud Workloads](https://developer.rubrik.com/Rubrik-Security-Cloud-API/Data-Protection/Cloud/index.md)
 
 ### Job Status
 
-See [Cloud Workloads](../)
+See [Cloud Workloads](https://developer.rubrik.com/Rubrik-Security-Cloud-API/Data-Protection/Cloud/index.md)
 
 ## RDS Instances
 
@@ -3007,11 +3007,11 @@ curl -X POST \
 
 ### On-Demand Backup
 
-See [Cloud Workloads](../)
+See [Cloud Workloads](https://developer.rubrik.com/Rubrik-Security-Cloud-API/Data-Protection/Cloud/index.md)
 
 ### Job Status
 
-See [Cloud Workloads](../)
+See [Cloud Workloads](https://developer.rubrik.com/Rubrik-Security-Cloud-API/Data-Protection/Cloud/index.md)
 
 ## S3 Buckets
 
@@ -3089,11 +3089,11 @@ curl -X POST \
 
 ### On-Demand Backup
 
-See [Cloud Workloads](../)
+See [Cloud Workloads](https://developer.rubrik.com/Rubrik-Security-Cloud-API/Data-Protection/Cloud/index.md)
 
 ### Job Status
 
-See [Cloud Workloads](../)
+See [Cloud Workloads](https://developer.rubrik.com/Rubrik-Security-Cloud-API/Data-Protection/Cloud/index.md)
 
 ## Virtual Machines
 
@@ -3164,11 +3164,11 @@ curl -X POST \
 
 ### On-Demand Backup
 
-See [Cloud Workloads](../)
+See [Cloud Workloads](https://developer.rubrik.com/Rubrik-Security-Cloud-API/Data-Protection/Cloud/index.md)
 
 ### Job Status
 
-See [Cloud Workloads](../)
+See [Cloud Workloads](https://developer.rubrik.com/Rubrik-Security-Cloud-API/Data-Protection/Cloud/index.md)
 
 ## Managed Instance SQL Databases
 
@@ -3229,11 +3229,11 @@ curl -X POST \
 
 ### On-Demand Backup
 
-See [Cloud Workloads](../)
+See [Cloud Workloads](https://developer.rubrik.com/Rubrik-Security-Cloud-API/Data-Protection/Cloud/index.md)
 
 ### Job Status
 
-See [Cloud Workloads](../)
+See [Cloud Workloads](https://developer.rubrik.com/Rubrik-Security-Cloud-API/Data-Protection/Cloud/index.md)
 
 ## Managed Instance SQL Servers
 
@@ -3387,11 +3387,11 @@ curl -X POST \
 
 ### On-Demand Backup
 
-See [Cloud Workloads](../)
+See [Cloud Workloads](https://developer.rubrik.com/Rubrik-Security-Cloud-API/Data-Protection/Cloud/index.md)
 
 ### Job Status
 
-See [Cloud Workloads](../)
+See [Cloud Workloads](https://developer.rubrik.com/Rubrik-Security-Cloud-API/Data-Protection/Cloud/index.md)
 
 ## Azure SQL Database Servers
 
@@ -3513,55 +3513,55 @@ curl -X POST \
 
 ### On-Demand Backup
 
-See [Cloud Workloads](../)
+See [Cloud Workloads](https://developer.rubrik.com/Rubrik-Security-Cloud-API/Data-Protection/Cloud/index.md)
 
 ### Job Status
 
-See [Cloud Workloads](../)
+See [Cloud Workloads](https://developer.rubrik.com/Rubrik-Security-Cloud-API/Data-Protection/Cloud/index.md)
 
 Data Center protection is categorized as anything protected by a Rubrik cluster. This can include cloud workloads protected by a Rubrik Cloud Cluster.
 
-## [Microsoft Active Directory](Microsoft-AD/)
+## [Microsoft Active Directory](https://developer.rubrik.com/Rubrik-Security-Cloud-API/Data-Protection/Data-Center/Microsoft-AD/index.md)
 
 Microsoft Active Directory is a directory service that provides authentication and authorization services for Windows-based systems.
 
-## [Microsoft SQL](Microsoft-SQL/)
+## [Microsoft SQL](https://developer.rubrik.com/Rubrik-Security-Cloud-API/Data-Protection/Data-Center/Microsoft-SQL/index.md)
 
 Microsoft SQL is a relational database management system developed by Microsoft.
 
-## [Microsoft Exchange](Microsoft-Exchange/)
+## [Microsoft Exchange](https://developer.rubrik.com/Rubrik-Security-Cloud-API/Data-Protection/Data-Center/Microsoft-Exchange/index.md)
 
 Microsoft Exchange is a messaging and collaboration software product developed by Microsoft.
 
-## [MongoDB](MongoDB/)
+## [MongoDB](https://developer.rubrik.com/Rubrik-Security-Cloud-API/Data-Protection/Data-Center/MongoDB/index.md)
 
 MongoDB is a source-available cross-platform document-oriented database program. Classified as a NoSQL database program, MongoDB uses JSON-like documents with optional schemas.
 
-## [Oracle](Oracle/)
+## [Oracle](https://developer.rubrik.com/Rubrik-Security-Cloud-API/Data-Protection/Data-Center/Oracle/index.md)
 
 Oracle is a relational database management system developed by Oracle Corporation.
 
-## [VMware vSphere](VMware-vSphere/)
+## [VMware vSphere](https://developer.rubrik.com/Rubrik-Security-Cloud-API/Data-Protection/Data-Center/VMware-vSphere/index.md)
 
 VMware vSphere is a cloud computing virtualization platform developed by VMware.
 
-## [Nutanix AHV](Nutanix-AHV/)
+## [Nutanix AHV](https://developer.rubrik.com/Rubrik-Security-Cloud-API/Data-Protection/Data-Center/Nutanix-AHV/index.md)
 
 Nutanix AHV is a hypervisor developed by Nutanix.
 
-## [NAS Unstructured Data](NAS-Unstructured-Data/)
+## [NAS Unstructured Data](https://developer.rubrik.com/Rubrik-Security-Cloud-API/Data-Protection/Data-Center/NAS-Unstructured-Data/index.md)
 
 NAS Unstructured Data refers to file-based data that is not structured in a database. This can include data stored on Network Attached Storage (NAS) systems.
 
-## [Filesets](Filesets/)
+## [Filesets](https://developer.rubrik.com/Rubrik-Security-Cloud-API/Data-Protection/Data-Center/Filesets/index.md)
 
 Filesets are a collection of files that are protected together. Filesets can be used to protect unstructured data on Windows and Linux hosts.
 
-## [Managed Volumes](Managed-Volumes/)
+## [Managed Volumes](https://developer.rubrik.com/Rubrik-Security-Cloud-API/Data-Protection/Data-Center/Managed-Volumes/index.md)
 
 Managed Volumes are a collection of files that are protected together. Managed Volumes can be used to protect unstructured data on Windows and Linux hosts.
 
-## [SAP HANA](SAP-HANA/)
+## [SAP HANA](https://developer.rubrik.com/Rubrik-Security-Cloud-API/Data-Protection/Data-Center/SAP-HANA/index.md)
 
 SAP HANA is an in-memory database developed by SAP.
 
@@ -7237,11 +7237,11 @@ curl -X POST \
   https://example.my.rubrik.com/api/graphql
 ```
 
-## [Rubrik Clusters](Clusters/)
+## [Rubrik Clusters](https://developer.rubrik.com/Rubrik-Security-Cloud-API/Data-Protection/Infrastructure/Clusters/index.md)
 
 Rubrik Clusters are the physical or virtual machines that run the Rubrik software. Rubrik Clusters can be physical or virtual, and can be located on-premises or in the cloud.
 
-## [Rubrik Cloud Vault](Rubrik-Cloud-Vault/)
+## [Rubrik Cloud Vault](https://developer.rubrik.com/Rubrik-Security-Cloud-API/Data-Protection/Infrastructure/Rubrik-Cloud-Vault/index.md)
 
 Rubrik Cloud Vault is a service that provides a secure, scalable, and cost-effective way to archive Rubrik backups.
 
@@ -7378,15 +7378,15 @@ curl -X POST \
   https://example.my.rubrik.com/api/graphql
 ```
 
-## [Events](Events/)
+## [Events](https://developer.rubrik.com/Rubrik-Security-Cloud-API/Observability/Events/index.md)
 
 Events are state changes within Rubrik. Events can be as simple as a successful backup, or as serious as a ransomware anomaly detected within data protected by Rubrik. Events can be obtained through an API query, or streamed to an external system via webhooks.
 
-## [Metrics](Metrics/)
+## [Metrics](https://developer.rubrik.com/Rubrik-Security-Cloud-API/Observability/Metrics/index.md)
 
 Various metrics can be obtained on the Rubrik platform for capacity management, chargeback, compliance status, and more.
 
-## [Reports](Reports/)
+## [Reports](https://developer.rubrik.com/Rubrik-Security-Cloud-API/Observability/Reports/index.md)
 
 Rubrik's reporting engine simplifies reporting process by creating CSV or PDF reports for the most common requirements. Reports can be customized through the Rubrik Security Cloud console and automated generation and download can be completed through the API.
 
@@ -38259,7 +38259,7 @@ Could not trigger upgrade as an upgrade is already running for ${clusterName} wi
 
 ## Microsoft M365
 
-[Microsoft M365](Microsoft-M365/)
+[Microsoft M365](https://developer.rubrik.com/Rubrik-Security-Cloud-API/SaaS-App-Protection/Microsoft-M365/index.md)
 
 ## Organizations
 
@@ -38775,15 +38775,15 @@ curl -X POST \
 
 Rubrik Threat Analytics provides services to discover and identify malware, anomalies and other potential Indicators of Compromise (IOC). Identifying threats within protected data speeds up cyber recovery by identifying restore points that are free from common malware file signatures and content that is specified via YARA rule.
 
-## [Anomaly Detection](Anomaly-Detection/)
+## [Anomaly Detection](https://developer.rubrik.com/Rubrik-Security-Cloud-API/Threat-Analytics/Anomaly-Detection/index.md)
 
 Anomaly Detection automatically scans snapshots for suspicious data changes based on previous snapshots. Anomaly Detection is passive and does not require any user intervention to run.
 
-## [Threat Hunting](Threat-Hunting/)
+## [Threat Hunting](https://developer.rubrik.com/Rubrik-Security-Cloud-API/Threat-Analytics/Threat-Hunting/index.md)
 
 Threat Hunting provides advanced investigation of snaphots for specific file hashes, file patterns, and YARA rules provided by the user. Threat Hunts are defined and initiated by the user.
 
-## [Threat Monitoring](Threat-Monitoring/)
+## [Threat Monitoring](https://developer.rubrik.com/Rubrik-Security-Cloud-API/Threat-Analytics/Threat-Monitoring/index.md)
 
 Threat Monitoring automatically scans each snapshot for file hashes that have a match in a threat feed. When enabled, Threat Monitoring is passive and does not require any user intervention to run.
 
@@ -39103,7 +39103,7 @@ curl -X POST \
 
   ______________________________________________________________________
 
-  [Get Started](PowerShell/)
+  [Get Started](https://developer.rubrik.com/SDKs-and-Tools/PowerShell/index.md)
 
   [PowerShell Gallery](https://www.powershellgallery.com/packages/rubriksecuritycloud)
 
@@ -39119,7 +39119,7 @@ curl -X POST \
 
   ______________________________________________________________________
 
-  [Download](rubrik-postman.json)
+  [Download](https://developer.rubrik.com/SDKs-and-Tools/rubrik-postman.json)
 
 - **Rubrik Security Cloud Terraform Provider**
 

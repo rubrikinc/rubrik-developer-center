@@ -74,11 +74,11 @@ curl -X POST \
 
 ### On-Demand Backup
 
-See [Cloud Workloads](../)
+See [Cloud Workloads](https://developer.rubrik.com/Rubrik-Security-Cloud-API/Data-Protection/Cloud/index.md)
 
 ### Job Status
 
-See [Cloud Workloads](../)
+See [Cloud Workloads](https://developer.rubrik.com/Rubrik-Security-Cloud-API/Data-Protection/Cloud/index.md)
 
 ## EC2 Instances
 
@@ -149,11 +149,11 @@ curl -X POST \
 
 ### On-Demand Backup
 
-See [Cloud Workloads](../)
+See [Cloud Workloads](https://developer.rubrik.com/Rubrik-Security-Cloud-API/Data-Protection/Cloud/index.md)
 
 ### Job Status
 
-See [Cloud Workloads](../)
+See [Cloud Workloads](https://developer.rubrik.com/Rubrik-Security-Cloud-API/Data-Protection/Cloud/index.md)
 
 ## RDS Instances
 
@@ -239,11 +239,11 @@ curl -X POST \
 
 ### On-Demand Backup
 
-See [Cloud Workloads](../)
+See [Cloud Workloads](https://developer.rubrik.com/Rubrik-Security-Cloud-API/Data-Protection/Cloud/index.md)
 
 ### Job Status
 
-See [Cloud Workloads](../)
+See [Cloud Workloads](https://developer.rubrik.com/Rubrik-Security-Cloud-API/Data-Protection/Cloud/index.md)
 
 ## S3 Buckets
 
@@ -321,8 +321,8 @@ curl -X POST \
 
 ### On-Demand Backup
 
-See [Cloud Workloads](../)
+See [Cloud Workloads](https://developer.rubrik.com/Rubrik-Security-Cloud-API/Data-Protection/Cloud/index.md)
 
 ### Job Status
 
-See [Cloud Workloads](../)
+See [Cloud Workloads](https://developer.rubrik.com/Rubrik-Security-Cloud-API/Data-Protection/Cloud/index.md)
