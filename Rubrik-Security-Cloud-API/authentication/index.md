@@ -67,71 +67,182 @@ curl -X DELETE --location "https://$RSC_FQDN/api/session" \
 #### Retrieving Service Accounts
 
 ```graphql
-
+query {
+    serviceAccounts {
+        nodes {
+            name
+            description
+            clientId
+            integrationName
+            integrationId
+            lastLogin
+            roles {
+                name
+                id
+            }
+        }
+    }
+}
 ```
 
 ```powershell
-
+$query = New-RscQuery -GqlQuery serviceAccounts
+$query.Field.nodes = @(Get-RscType -Name ServiceAccount -InitialProperties name,description,clientId,integrationName,integrationId,lastLogin,roles.name,roles.id)
+$query.invoke().nodes
 ```
 
 ```bash
+#!/bin/bash
 
+# RSC_TOKEN="YOUR_RSC_ACCESS_TOKEN"
+query="query { serviceAccounts { nodes { name description clientId integrationName integrationId lastLogin roles { name id } } } }"
+
+# Execute the GraphQL query with curl
+curl -X POST \
+  -H "Content-Type: application/json" \
+  -H "Authorization: Bearer $RSC_TOKEN" \
+  -d "{\"query\": \"$query\"}" \
+  https://example.my.rubrik.com/api/graphql
 ```
 
 #### Creating a Service Account
 
 ```graphql
-
+mutation {
+  createServiceAccount(
+    input: {
+      name: "example"
+      description: "example service account"
+      roleIds: ["123e4567-e89b-12d3-a456-426614174000"]}
+  ) {
+    clientId
+    clientSecret
+    accessTokenUri
+  }
+}
 ```
 
 ```powershell
-
+$query = New-RscMutation -GqlMutation createServiceAccount
+$query.Var.input = Get-RscType -Name CreateServiceAccountInput
+$query.Var.input.name = "example"
+$query.Var.input.description = "example service account"
+$query.Var.input.roleIds = @("123e4567-e89b-12d3-a456-426614174000")
+$query.Field = Get-RscType -Name CreateServiceAccountReply -InitialProperties clientId, clientSecret, accessTokenUri
+$serviceAccount = $query.invoke()
 ```
 
 ```bash
+#!/bin/bash
 
+# RSC_TOKEN="YOUR_RSC_ACCESS_TOKEN"
+query="mutation { createServiceAccount( input: { name: \\\"example\\\" description: \\\"example service account\\\" roleIds: [\\\"123e4567-e89b-12d3-a456-426614174000\\\"]} ) { clientId clientSecret accessTokenUri } }"
+
+# Execute the GraphQL query with curl
+curl -X POST \
+  -H "Content-Type: application/json" \
+  -H "Authorization: Bearer $RSC_TOKEN" \
+  -d "{\"query\": \"$query\"}" \
+  https://example.my.rubrik.com/api/graphql
 ```
 
-#### Updating a Service Account
+#### Updating a Service Account Role
 
 ```graphql
-
+mutation {
+    updateRoleAssignments(
+        userIds: "client|123e4567-e89b-12d3-a456-426614174000"
+        roleIds: ["123e4567-e89b-12d3-a456-426614174000"]
+    )
+}
 ```
 
 ```powershell
-
+$query = New-RscMutation -GqlMutation updateRoleAssignments
+$query.Var.userIds = @("client|123e4567-e89b-12d3-a456-426614174000")
+$query.Var.roleIds = @("123e4567-e89b-12d3-a456-426614174000")
+$query.invoke()
 ```
 
 ```bash
+#!/bin/bash
 
+# RSC_TOKEN="YOUR_RSC_ACCESS_TOKEN"
+query="mutation { updateRoleAssignments( userIds: \\\"client|123e4567-e89b-12d3-a456-426614174000\\\" roleIds: [\\\"123e4567-e89b-12d3-a456-426614174000\\\"] ) }"
+
+# Execute the GraphQL query with curl
+curl -X POST \
+  -H "Content-Type: application/json" \
+  -H "Authorization: Bearer $RSC_TOKEN" \
+  -d "{\"query\": \"$query\"}" \
+  https://example.my.rubrik.com/api/graphql
 ```
 
 #### Rotating a Service Account Secret
 
 ```graphql
-
+mutation {
+    rotateServiceAccountSecret(input: {
+        id: "123e4567-e89b-12d3-a456-426614174000"
+    }) {
+        clientId
+        clientSecret
+        accessTokenUri
+    }
+}
 ```
 
 ```powershell
-
+$query = New-RscMutation -GqlMutation rotateServiceAccountSecret
+$query.Var.input = Get-RscType -Name RotateServiceAccountSecretInput
+$query.Var.input.id = "123e4567-e89b-12d3-a456-426614174000"
+$query.Field = Get-RscType -Name RotateServiceAccountSecretReply -InitialProperties clientId, clientSecret, accessTokenUri
+$serviceAccount = $query.invoke()
 ```
 
 ```bash
+#!/bin/bash
 
+# RSC_TOKEN="YOUR_RSC_ACCESS_TOKEN"
+query="mutation { rotateServiceAccountSecret(input: { id: \\\"123e4567-e89b-12d3-a456-426614174000\\\" }) { clientId clientSecret accessTokenUri } }"
+
+# Execute the GraphQL query with curl
+curl -X POST \
+  -H "Content-Type: application/json" \
+  -H "Authorization: Bearer $RSC_TOKEN" \
+  -d "{\"query\": \"$query\"}" \
+  https://example.my.rubrik.com/api/graphql
 ```
 
 #### Deleting a Service Account
 
 ```graphql
-
+mutation {
+    deleteServiceAccountsFromAccount(input: {
+        ids: ["123e4567-e89b-12d3-a456-426614174000"]
+    })
+}
 ```
 
 ```powershell
-
+$query = New-RscMutation -GqlMutation deleteServiceAccountsFromAccount
+$query.Var.input = Get-RscType -Name DeleteServiceAccountsFromAccountInput
+$query.Var.input.ids = @("123e4567-e89b-12d3-a456-426614174000")
+$query.invoke()
 ```
 
 ```bash
+#!/bin/bash
 
+# RSC_TOKEN="YOUR_RSC_ACCESS_TOKEN"
+query="mutation { deleteServiceAccountsFromAccount(input: { ids: [\\\"123e4567-e89b-12d3-a456-426614174000\\\"] }) }"
+
+# Execute the GraphQL query with curl
+curl -X POST \
+  -H "Content-Type: application/json" \
+  -H "Authorization: Bearer $RSC_TOKEN" \
+  -d "{\"query\": \"$query\"}" \
+  https://example.my.rubrik.com/api/graphql
 ```
 
 ## User Accounts (OAuth2 Authorization Code with PKCE)

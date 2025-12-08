@@ -65,6 +65,93 @@
       "name": "Rubrik-Security-Cloud-API",
       "item": [
         {
+          "name": "rotateServiceAccountSecret",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "graphql",
+              "graphql": {
+                "query": "mutation {\n    rotateServiceAccountSecret(input: {\n        id: \"123e4567-e89b-12d3-a456-426614174000\"\n    }) {\n        clientId\n        clientSecret\n        accessTokenUri\n    }\n}"
+              }
+            },
+            "url": {
+              "raw": "{{rsc_instance}}/api/graphql",
+              "protocol": "https",
+              "host": [
+                "{{rsc_instance}}"
+              ],
+              "path": [
+                "api",
+                "graphql"
+              ]
+            }
+          }
+        },
+        {
+          "name": "createServiceAccount",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "graphql",
+              "graphql": {
+                "query": "mutation {\n  createServiceAccount(\n    input: {\n      name: \"example\"\n      description: \"example service account\"\n      roleIds: [\"123e4567-e89b-12d3-a456-426614174000\"]}\n  ) {\n    clientId\n    clientSecret\n    accessTokenUri\n  }\n}"
+              }
+            },
+            "url": {
+              "raw": "{{rsc_instance}}/api/graphql",
+              "protocol": "https",
+              "host": [
+                "{{rsc_instance}}"
+              ],
+              "path": [
+                "api",
+                "graphql"
+              ]
+            }
+          }
+        },
+        {
+          "name": "serviceaccounts",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "graphql",
+              "graphql": {
+                "query": "query {\n    serviceAccounts {\n        nodes {\n            name\n            description\n            clientId\n            integrationName\n            integrationId\n            lastLogin\n            roles {\n                name\n                id\n            }\n        }\n    }\n}"
+              }
+            },
+            "url": {
+              "raw": "{{rsc_instance}}/api/graphql",
+              "protocol": "https",
+              "host": [
+                "{{rsc_instance}}"
+              ],
+              "path": [
+                "api",
+                "graphql"
+              ]
+            }
+          }
+        },
+        {
           "name": "mssqlDatabasesExample",
           "request": {
             "method": "POST",
@@ -78,6 +165,64 @@
               "mode": "graphql",
               "graphql": {
                 "query": "query mssqlDatabasesExample { #(1)!\n  mssqlDatabases { # (2)!\n    nodes  { #(3)!\n      name #(4)! \n      id\n      cluster { #(5)!\n        name #(6)!\n        id\n      }\n    }\n  }\n}"
+              }
+            },
+            "url": {
+              "raw": "{{rsc_instance}}/api/graphql",
+              "protocol": "https",
+              "host": [
+                "{{rsc_instance}}"
+              ],
+              "path": [
+                "api",
+                "graphql"
+              ]
+            }
+          }
+        },
+        {
+          "name": "updateRoleAssignments",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "graphql",
+              "graphql": {
+                "query": "mutation {\n    updateRoleAssignments(\n        userIds: \"client|123e4567-e89b-12d3-a456-426614174000\"\n        roleIds: [\"123e4567-e89b-12d3-a456-426614174000\"]\n    )\n}"
+              }
+            },
+            "url": {
+              "raw": "{{rsc_instance}}/api/graphql",
+              "protocol": "https",
+              "host": [
+                "{{rsc_instance}}"
+              ],
+              "path": [
+                "api",
+                "graphql"
+              ]
+            }
+          }
+        },
+        {
+          "name": "deleteServiceAccount",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "graphql",
+              "graphql": {
+                "query": "mutation {\n    deleteServiceAccountsFromAccount(input: {\n        ids: [\"123e4567-e89b-12d3-a456-426614174000\"]\n    })\n}"
               }
             },
             "url": {
@@ -134,7 +279,7 @@
               "name": "Threat-Hunt",
               "item": [
                 {
-                  "name": "startThreatHunt",
+                  "name": "startYaraThreatHunt",
                   "request": {
                     "method": "POST",
                     "header": [
@@ -146,7 +291,7 @@
                     "body": {
                       "mode": "graphql",
                       "graphql": {
-                        "query": ""
+                        "query": "mutation startYaraThreatHuntExample {\n  startThreatHuntV2(input: {\n    objectFids: [\"123e4567-e89b-12d3-a456-426614174000\"]\n    baseConfig: {\n      name: \"Example Yara Threat Hunt\"\n      maxMatchesPerSnapshot: 1\n      threatHuntType: THREAT_HUNT_V2\n      fileScanCriteria: {\n        fileSizeLimits: {\n          minimumSizeInBytes: 10\n          maximumSizeInBytes: 10000\n        }\n      }\n      snapshotScanLimit: {\n        scanConfig: {\n          maxSnapshotsPerObject: 10\n        }\n      }\n      ioc: {\n        iocList: {\n          indicatorsOfCompromise: {\n            iocKind: IOC_YARA\n            iocValue: \"rule Generic_Hello_World {\\n\\tstrings:\\n\\t\\t$test_string = \\\"Hello World YARA Test\\\" ascii wide\\n\\tcondition:\\n\\t\\t$test_string\\n}\"\n          }\n        }\n      }\n    }\n  }) {\n    huntId\n  }\n}"
                       }
                     },
                     "url": {
@@ -352,6 +497,35 @@
                   }
                 },
                 {
+                  "name": "onedriveSearch",
+                  "request": {
+                    "method": "POST",
+                    "header": [
+                      {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                      }
+                    ],
+                    "body": {
+                      "mode": "graphql",
+                      "graphql": {
+                        "query": "query {\n  snappableOnedriveSearch(\n    orgId: \"0876804E-1CB1-4F28-BCB3-B4390C15FA1F\" # example UUID\n    snappableFid: \"123e4567-e89b-12d3-a456-426614174000\"\n  \tonedriveSearchFilter: {\n      searchKeywordFilter: {\n      \tkeywordType: NAME\n\t\tsearchKeyword: \"example.pdf\"\n\t\t# Replace the above with below for searching for file types\n        #keywordType: FILE_TYPE\n        #searchKeyword: \"pdf\"\n      }\n      searchObjectFilter: {\n        # to search folders use O365_FOLDER\n        searchObjectType: ONEDRIVE_FILE \n      }\n    }\n  ) {\n    nodes {\n      name\n      id\n      size\n      parentFolderId\n      channelName\n      createTime\n      modifiedTime\n      ... on O365OnedriveFile {\n        fileType\n        objectType\n        snapshotId\n        snapshotNum\n        snapshotTime\n      }\n      ... on O365OnedriveFolder {\n        objectType\n        snapshotId\n        snapshotNum\n        snapshotTime\n      }\n    }\n  }\n}"
+                      }
+                    },
+                    "url": {
+                      "raw": "{{rsc_instance}}/api/graphql",
+                      "protocol": "https",
+                      "host": [
+                        "{{rsc_instance}}"
+                      ],
+                      "path": [
+                        "api",
+                        "graphql"
+                      ]
+                    }
+                  }
+                },
+                {
                   "name": "orgs",
                   "request": {
                     "method": "POST",
@@ -403,7 +577,7 @@
                     "body": {
                       "mode": "graphql",
                       "graphql": {
-                        "query": "query {\n  snappableConnection(filter: {\n    #complianceStatus: IN_COMPLIANCE\n    #slaTimeRange: LAST_24_HOURS\n    #objectType: VmwareVirtualMachine \n    #objectState: ACTIVE\n  \t#slaDomain: {id: \"0000\"}\n    #protectionStatus: DoNotProtect\n  }) {\n    nodes {\n      name\n      fid\n      location\n      objectType\n      objectState\n      protectionStatus\n      lastSnapshot\n      latestReplicationSnapshot\n      complianceStatus\n      replicationComplianceStatus\n      archivalComplianceStatus\n      usedBytes\n      localStorage\n      localEffectiveStorage\n      replicaStorage\n      archiveStorage\n      logicalBytes\n      physicalBytes\n      provisionedBytes\n      totalSnapshots\n      localSnapshots\n      localOnDemandSnapshots\n      localSlaSnapshots\n      replicaSnapshots\n      archiveSnapshots\n      dataReduction\n      slaDomain {\n        name\n        id\n      }\n      cluster {\n        name\n        id\n      }\n      workloadOrg {\n        fullName\n        id\n      }\n    }\n  }\n}"
+                        "query": "query {\n  snappableConnection(filter: {\n    #complianceStatus: IN_COMPLIANCE\n    #slaTimeRange: LAST_24_HOURS\n    #objectType: VmwareVirtualMachine\n    #objectState: ACTIVE\n    #slaDomain: {id: \"00000000-0000-0000-0000-000000000001\"}\n    #protectionStatus: DoNotProtect\n    #orgId: \"12345678-0000-0000-0000-000000000000\"\n  }) {\n    nodes {\n      name\n      fid\n      location\n      objectType\n      objectState\n      protectionStatus\n      lastSnapshot\n      latestReplicationSnapshot\n      complianceStatus\n      replicationComplianceStatus\n      archivalComplianceStatus\n      usedBytes\n      localStorage\n      localEffectiveStorage\n      replicaStorage\n      archiveStorage\n      logicalBytes\n      physicalBytes\n      provisionedBytes\n      totalSnapshots\n      localSnapshots\n      localOnDemandSnapshots\n      localSlaSnapshots\n      replicaSnapshots\n      archiveSnapshots\n      dataReduction\n      slaDomain {\n        name\n        id\n      }\n      cluster {\n        name\n        id\n      }\n      workloadOrg {\n        fullName\n        id\n      }\n    }\n  }\n}"
                       }
                     },
                     "url": {
@@ -425,6 +599,93 @@
               "name": "events",
               "item": [
                 {
+                  "name": "webhooks",
+                  "request": {
+                    "method": "POST",
+                    "header": [
+                      {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                      }
+                    ],
+                    "body": {
+                      "mode": "graphql",
+                      "graphql": {
+                        "query": "query {\n  allWebhooksV2 {\n    name\n    id\n    status\n    authType\n    createdBy\n    createdAt\n    updatedAt\n    url\n    subscriptionType {\n      auditSubscription {\n        auditTypes\n        isSubscribedToAllAudits\n        isSubscribedToAllObjectTypes\n        objectTypes\n        severities\n        templateInfo {\n          customTemplate\n          templateId\n        }\n      }\n      eventSubscription {\n        eventTypes\n        isSubscribedToAllEvents\n        isSubscribedToAllObjectTypes\n        objectTypes\n        severities\n        templateInfo {\n          customTemplate\n          templateId\n        }\n      }\n    }\n    description\n    id\n    lastFailedErrorInfo {\n      errorMessage\n      statusCode\n    }\n  }\n}"
+                      }
+                    },
+                    "url": {
+                      "raw": "{{rsc_instance}}/api/graphql",
+                      "protocol": "https",
+                      "host": [
+                        "{{rsc_instance}}"
+                      ],
+                      "path": [
+                        "api",
+                        "graphql"
+                      ]
+                    }
+                  }
+                },
+                {
+                  "name": "userAuditConnection",
+                  "request": {
+                    "method": "POST",
+                    "header": [
+                      {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                      }
+                    ],
+                    "body": {
+                      "mode": "graphql",
+                      "graphql": {
+                        "query": "query {\n  userAuditConnection(\n    filters: {\n        timeGt: \"1970-01-01T00:00:00Z\"\n        #timeLt: \"1970-01-01T00:00:00Z\"\n        #auditType: [SLA_MODIFICATION]\n        #auditStatus: [SUCCESS]\n        #auditSeverity: [CRITICAL]\n        #auditObjectType: [VMWARE_VM]\n    }\n  ) {\n    nodes {\n      auditType\n      cluster {\n        name\n        id\n      }\n      userName\n      ipAddress\n      message\n      objectName\n      objectId\n      objectType\n      orgName\n      orgId\n      severity\n      status\n      time\n    }\n  }\n}"
+                      }
+                    },
+                    "url": {
+                      "raw": "{{rsc_instance}}/api/graphql",
+                      "protocol": "https",
+                      "host": [
+                        "{{rsc_instance}}"
+                      ],
+                      "path": [
+                        "api",
+                        "graphql"
+                      ]
+                    }
+                  }
+                },
+                {
+                  "name": "create_webhook",
+                  "request": {
+                    "method": "POST",
+                    "header": [
+                      {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                      }
+                    ],
+                    "body": {
+                      "mode": "graphql",
+                      "graphql": {
+                        "query": "mutation {\n  createWebhookV2(input: {\n    payload: {\n      name: \"example\"\n      description: \"example with custom template and auth\"\n      url: \"https://example.com\"\n      subscriptionType: {\n        eventSubscription: {\n          objectTypes: []\n          isSubscribedToAllObjectTypes: true\n          eventTypes: [BACKUP,ANOMALY]\n          severities: [SEVERITY_CRITICAL]\n          templateInfo: {\n            customTemplate: \"{ \\n \\\"custom_key\\\": \\\"{{.Message}}\\\" \\n }\"\n          }\n        }\n      }\n      providerType: CUSTOM \n      authInfo: {\n        authType: CUSTOM_HEADER\n        customHeaders: {\n          headerKey: \"Authorization\"\n          headerValue: \"Bearer Example123\"\n        }\n  \t\t}\n    }\n  }) {\n    webhook {\n      name\n      id\n      status\n    }\n    errorInfo {\n      errorMessage\n      statusCode\n    }\n  }\n}"
+                      }
+                    },
+                    "url": {
+                      "raw": "{{rsc_instance}}/api/graphql",
+                      "protocol": "https",
+                      "host": [
+                        "{{rsc_instance}}"
+                      ],
+                      "path": [
+                        "api",
+                        "graphql"
+                      ]
+                    }
+                  }
+                },
+                {
                   "name": "activityseries",
                   "request": {
                     "method": "POST",
@@ -438,6 +699,98 @@
                       "mode": "graphql",
                       "graphql": {
                         "query": "query {\n  activitySeriesConnection(filters: {\n    #lastUpdatedTimeGt: \"2025-02-22T00:00:00Z\"\n    #orgIds: [\"288970b2-16a0-4c65-a5fa-b0c86f5af337\"]\n    #lastActivityType: [BACKUP]\n    #objectType: [VMWARE_VM,LINUX_FILESET]\n    #severity: [SEVERITY_CRITICAL,SEVERITY_WARNING,SEVERITY_INFO]\n    #lastActivityStatus: [SUCCESS,PARTIAL_SUCCESS,FAILURE,CANCELED]\n  }) {\n    nodes {\n      fid\n      id\n      objectName\n      objectType\n      lastActivityType\n      lastActivityMessage\n      severity\n      lastUpdated\n      objectId\n      location\n      progress\n      failureReason\n      causeErrorCode\n      causeErrorMessage\n      causeErrorReason\n      causeErrorRemedy\n      activityConnection(first: 1) { # Gets the last activity in the activitySeries\n        nodes {\n          objectId\n          objectType\n          type\n          status\n          message\n          errorInfo\n          time\n        }\n      }\n    }\n    pageInfo {\n      hasNextPage\n      endCursor\n    }\n  }\n}"
+                      }
+                    },
+                    "url": {
+                      "raw": "{{rsc_instance}}/api/graphql",
+                      "protocol": "https",
+                      "host": [
+                        "{{rsc_instance}}"
+                      ],
+                      "path": [
+                        "api",
+                        "graphql"
+                      ]
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "name": "reports",
+              "item": [
+                {
+                  "name": "allUserFiles",
+                  "request": {
+                    "method": "POST",
+                    "header": [
+                      {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                      }
+                    ],
+                    "body": {
+                      "mode": "graphql",
+                      "graphql": {
+                        "query": "query {\n  allUserFiles {\n    downloads {\n      externalId\n      createdAt\n      expiresAt\n      completedAt\n      creator\n      filename\n      type\n      state\n    }\n  }\n}"
+                      }
+                    },
+                    "url": {
+                      "raw": "{{rsc_instance}}/api/graphql",
+                      "protocol": "https",
+                      "host": [
+                        "{{rsc_instance}}"
+                      ],
+                      "path": [
+                        "api",
+                        "graphql"
+                      ]
+                    }
+                  }
+                },
+                {
+                  "name": "allCustomReports",
+                  "request": {
+                    "method": "POST",
+                    "header": [
+                      {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                      }
+                    ],
+                    "body": {
+                      "mode": "graphql",
+                      "graphql": {
+                        "query": "query {\n  allCustomReports(input: {}) {\n    name\n    id\n  }\n}"
+                      }
+                    },
+                    "url": {
+                      "raw": "{{rsc_instance}}/api/graphql",
+                      "protocol": "https",
+                      "host": [
+                        "{{rsc_instance}}"
+                      ],
+                      "path": [
+                        "api",
+                        "graphql"
+                      ]
+                    }
+                  }
+                },
+                {
+                  "name": "downloadReportCsvAsync",
+                  "request": {
+                    "method": "POST",
+                    "header": [
+                      {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                      }
+                    ],
+                    "body": {
+                      "mode": "graphql",
+                      "graphql": {
+                        "query": "mutation {\n  downloadReportCsvAsync(input: {id: <REPORT ID>}) {\n    jobId\n    referenceId\n    externalId\n  }\n}"
                       }
                     },
                     "url": {
@@ -474,6 +827,35 @@
                   "mode": "graphql",
                   "graphql": {
                     "query": "query { \n    globalCertificates {\n    nodes {\n        status\n        certificate\n        certificateFid\n        certificateId\n        description\n        expiringAt\n        hasKey\n        isCaSigned\n        issuedBy\n        issuedOn\n        issuedTo\n        name\n        serialNumber\n        sha1Fingerprint\n        sha256Fingerprint\n        cdmUsages {\n            type\n            clusterName\n            clusterUuid\n        }\n        clusters {\n            cdmCertUuid\n        }\n        org {\n            id\n            name\n        }\n        usages {\n            type\n        }\n    }\n    pageInfo {\n        endCursor\n        hasNextPage\n        hasPreviousPage\n        startCursor\n    }\n  }\n}"
+                  }
+                },
+                "url": {
+                  "raw": "{{rsc_instance}}/api/graphql",
+                  "protocol": "https",
+                  "host": [
+                    "{{rsc_instance}}"
+                  ],
+                  "path": [
+                    "api",
+                    "graphql"
+                  ]
+                }
+              }
+            },
+            {
+              "name": "users",
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  }
+                ],
+                "body": {
+                  "mode": "graphql",
+                  "graphql": {
+                    "query": "{\n  usersInCurrentAndDescendantOrganization(\n    shouldIncludeUserWithoutRole: true\n    filter: {\n      #emailFilter: \"user@example.com\"\n      #domainFilter: [CLIENT,LDAP,LOCAL,SSO,SUPPORT]\n      #hiddenStateFilter: ALL_USERS\n      #lockoutStateFilter: ALL\n      #orgIdsFilter: [\"123e4567-e89b-12d3-a456-426614174000\"]\n      #roleIdsFilter: [\"123e4567-e89b-12d3-a456-426614174000\"]\n      #authDomainIdsFilter: [\"123e4567-e89b-12d3-a456-426614174000\"]\n    }\n  ) {\n    nodes {\n      email\n      username\n      id\n      domain\n      domainName\n      groups\n      isAccountOwner\n      isHidden\n      lastLogin\n      allOrgs {\n        fullName\n        id\n      }\n      roles {\n        name\n        id\n      }\n      lockoutState {\n        isLocked\n        currentLockMethod\n        lockMethod\n        lockedAt\n        unlockMethod\n        unlockedAt\n      }\n      lockoutHistory {\n        lockoutEvent {\n          ... on LockMethodType {\n            lockMethod\n          }\n          ... on UnlockMethodType {\n            unlockMethod\n          }\n        }\n      }\n      totpStatus {\n        isEnabled\n        isEnforced\n        mfaStatus\n        isSupported\n        totpConfigUpdateAt\n      }\n    }\n    pageInfo {\n      hasNextPage\n      endCursor\n    }\n  }\n}\n"
                   }
                 },
                 "url": {
@@ -840,6 +1222,35 @@
                       "mode": "graphql",
                       "graphql": {
                         "query": "mutation {\n  assignRetentionSLAToSnapshots(\n    snapshotFids: [\"b77f85ae-62d1-435b-9abf-2a1d97c6802f\"]\n    globalSlaAssignType: protectWithSlaId\n    globalSlaOptionalFid: \"5b6e44ca-9a0d-42e8-a6ba-952159c69bab\"\n  ) {\n    success\n  }\n}"
+                      }
+                    },
+                    "url": {
+                      "raw": "{{rsc_instance}}/api/graphql",
+                      "protocol": "https",
+                      "host": [
+                        "{{rsc_instance}}"
+                      ],
+                      "path": [
+                        "api",
+                        "graphql"
+                      ]
+                    }
+                  }
+                },
+                {
+                  "name": "snapshotsMultiple",
+                  "request": {
+                    "method": "POST",
+                    "header": [
+                      {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                      }
+                    ],
+                    "body": {
+                      "mode": "graphql",
+                      "graphql": {
+                        "query": "query {\n  snapshotOfSnappablesConnection(\n    snappableIds: [\"123e4567-e89b-12d3-a456-426614174000\",\"123e4567-e89b-12d3-a456-426614174001\"]\n  ) {\n    nodes {\n      id\n      date\n      isIndexed\n      isOnDemandSnapshot\n      isQuarantined\n      isAnomaly\n      isExpired\n      expirationDate\n      ...on CdmSnapshot {\n        isRetentionLocked\n        legalHoldInfo {\n          shouldHoldInPlace\n        }\n        snapshotRetentionInfo {\n          localInfo {\n            isSnapshotPresent\n            isExpirationDateCalculated\n            expirationTime\n          }\n          archivalInfos {\n            isSnapshotPresent\n            isExpirationDateCalculated\n            expirationTime\n          }\n          replicationInfos {\n            isSnapshotPresent\n            isExpirationDateCalculated\n            expirationTime\n          }\n        }\n        fileCount\n        consistencyLevel\n      }\n      ...on PolarisSnapshot {\n        snapshotRetentionInfo {\n          localInfo {\n            isSnapshotPresent\n            isExpirationDateCalculated\n            expirationTime\n          }\n          archivalInfos {\n            isSnapshotPresent\n            isExpirationDateCalculated\n            expirationTime\n          }\n          replicationInfos {\n            isSnapshotPresent\n            isExpirationDateCalculated\n            expirationTime\n          }\n        }\n        polarisConsistencyLevel: consistencyLevel\n      }\n    }\n  }\n}"
                       }
                     },
                     "url": {
