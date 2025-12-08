@@ -13731,7 +13731,7 @@ input ActiveDirectoryContainerRestoreOptionsInput {
   shouldOnlyRecreateMissingObjects: Boolean
 }
 # Active Directory Domain.
-type ActiveDirectoryDomain implements CdmHierarchyObject & HierarchyObject {
+type ActiveDirectoryDomain implements CdmHierarchyObject, HierarchyObject {
   # ID of the Rubrik CDM cluster.
   cdmId: String!
 
@@ -13880,7 +13880,7 @@ type ActiveDirectoryDomainConnection {
   count: Int!
 }
 # Active Directory Domain Controller.
-type ActiveDirectoryDomainController implements CdmHierarchyObject & HierarchyObject & ActiveDirectoryDomainDescendantType & ActiveDirectoryDomainPhysicalChildType & HierarchySnappable & CdmHierarchySnappableNew {
+type ActiveDirectoryDomainController implements CdmHierarchyObject, HierarchyObject, ActiveDirectoryDomainDescendantType, ActiveDirectoryDomainPhysicalChildType, HierarchySnappable, CdmHierarchySnappableNew {
   # ID of the Rubrik CDM cluster.
   cdmId: String!
 
@@ -20537,7 +20537,7 @@ enum AwsLckRegion {
   LCK_EAST
 }
 # AWS native account.
-type AwsNativeAccount implements PolarisHierarchyObject & HierarchyObject {
+type AwsNativeAccount implements PolarisHierarchyObject, HierarchyObject {
   # Specifies the state of account in Rubrik environment like Refreshed, Disconnected, etc. An account can be in a single state at a time.
   status: AwsAccountStatus!
 
@@ -20866,7 +20866,7 @@ input AwsNativeAttachedInstanceFilter {
   ec2InstanceIds: [String!]!
 }
 # AWS native EBS volume.
-type AwsNativeEbsVolume implements PolarisHierarchyObject & PolarisHierarchySnappable & HierarchyObject & HierarchySnappable & AwsNativeAccountLogicalChildType & AwsNativeAccountDescendantType & AwsNativeHierarchyObject {
+type AwsNativeEbsVolume implements PolarisHierarchyObject, PolarisHierarchySnappable, HierarchyObject, HierarchySnappable, AwsNativeAccountLogicalChildType, AwsNativeAccountDescendantType, AwsNativeHierarchyObject {
   # AWS Native ID of EBS volume.
   volumeNativeId: String!
 
@@ -21237,7 +21237,7 @@ input AwsNativeEbsVolumeTypeFilter {
   ebsVolumeTypes: [AwsNativeEbsVolumeType!]!
 }
 # AWS native EC2 instance.
-type AwsNativeEc2Instance implements PolarisHierarchyObject & PolarisHierarchySnappable & HierarchyObject & HierarchySnappable & AwsNativeAccountLogicalChildType & AwsNativeAccountDescendantType & AwsNativeHierarchyObject {
+type AwsNativeEc2Instance implements PolarisHierarchyObject, PolarisHierarchySnappable, HierarchyObject, HierarchySnappable, AwsNativeAccountLogicalChildType, AwsNativeAccountDescendantType, AwsNativeHierarchyObject {
   # AWS Native ID of Instance.
   instanceNativeId: String!
 
@@ -24551,7 +24551,7 @@ input AwsNativeRdsDbInstanceClassFilter {
   dbInstanceClasses: [AwsNativeRdsDbInstanceClass!]!
 }
 # AWS native RDS instance.
-type AwsNativeRdsInstance implements PolarisHierarchyObject & PolarisHierarchySnappable & HierarchyObject & AwsNativeAccountLogicalChildType & AwsNativeAccountDescendantType {
+type AwsNativeRdsInstance implements PolarisHierarchyObject, PolarisHierarchySnappable, HierarchyObject, AwsNativeAccountLogicalChildType, AwsNativeAccountDescendantType {
   # Name of RDS Instance.
   dbInstanceName: String!
 
@@ -25160,7 +25160,7 @@ type AwsNativeRoot {
     workloadHierarchy: WorkloadLevelHierarchy): AwsNativeHierarchyObjectConnection!
 }
 # AWS native S3 Bucket.
-type AwsNativeS3Bucket implements PolarisHierarchyObject & PolarisHierarchySnappable & HierarchyObject & AwsNativeAccountLogicalChildType & AwsNativeAccountDescendantType & AwsNativeHierarchyObject {
+type AwsNativeS3Bucket implements PolarisHierarchyObject, PolarisHierarchySnappable, HierarchyObject, AwsNativeAccountLogicalChildType, AwsNativeAccountDescendantType, AwsNativeHierarchyObject {
   # AWS native ID of S3 bucket.
   cloudNativeId: String!
 
@@ -25989,7 +25989,7 @@ type AzureAdApplication {
   appRolesCount: Int!
 }
 # Details of the Azure AD directory object.
-type AzureAdDirectory implements HierarchyObject & PolarisHierarchyObject & HierarchySnappable & PolarisHierarchySnappable {
+type AzureAdDirectory implements HierarchyObject, PolarisHierarchyObject, HierarchySnappable, PolarisHierarchySnappable {
   # The natural ID of the Azure AD Directory.
   directoryId: String!
 
@@ -28016,7 +28016,7 @@ type AzureNativeKeyVault {
   nativeId: String!
 }
 # An Azure Native Managed Disk that refers to the block storage designed to be used with Azure Virtual Machines. Some examples are: ultra disks, premium solid-state drives (SSD), standard SSDs, and standard hard disk drives (HDD). For more information, see https://docs.microsoft.com/en-us/azure/virtual-machines/managed-disks-overview.
-type AzureNativeManagedDisk implements PolarisHierarchyObject & PolarisHierarchySnappable & HierarchySnappable & HierarchyObject & AzureNativeHierarchyObjectType {
+type AzureNativeManagedDisk implements PolarisHierarchyObject, PolarisHierarchySnappable, HierarchySnappable, HierarchyObject, AzureNativeHierarchyObjectType {
   # Azure region where the Managed Disk is located.
   region: AzureNativeRegion!
 
@@ -28663,7 +28663,7 @@ type AzureNativeRegionSpec {
   isExocomputeConfigured: Boolean!
 }
 # An Azure Native Resource Group. Refers to a collection of resources in which multiple Azure services can reside.
-type AzureNativeResourceGroup implements PolarisHierarchyObject & HierarchyObject {
+type AzureNativeResourceGroup implements PolarisHierarchyObject, HierarchyObject {
   # Rubrik ID of the Azure Native Resource Group.
   azureSubscriptionRubrikId: UUID!
 
@@ -28916,7 +28916,7 @@ type AzureNativeSubnet {
   vnet: AzureNativeVirtualNetwork!
 }
 # An Azure Native Subscription. Refers to the logical entity that provides entitlement to deploy and consume Azure resources.
-type AzureNativeSubscription implements PolarisHierarchyObject & HierarchyObject {
+type AzureNativeSubscription implements PolarisHierarchyObject, HierarchyObject {
   # Native ID of the subscription.
   azureSubscriptionNativeId: String!
 
@@ -29106,7 +29106,7 @@ input AzureNativeTagFilter {
   tagFilterParams: [TagFilterParams!]!
 }
 # An Azure Native Virtual Machine that refers to the Azure infrastructure as a service (IaaS) used to deploy persistent VMs. For more information, see https://docs.microsoft.com/en-us/azure/virtual-machines/.
-type AzureNativeVirtualMachine implements PolarisHierarchyObject & PolarisHierarchySnappable & HierarchyObject & HierarchySnappable & AzureNativeHierarchyObjectType {
+type AzureNativeVirtualMachine implements PolarisHierarchyObject, PolarisHierarchySnappable, HierarchyObject, HierarchySnappable, AzureNativeHierarchyObjectType {
   # Azure region where the virtual machine (VM) is located.
   region: AzureNativeRegion!
 
@@ -29997,7 +29997,7 @@ enum AzureSqlBackupStorageRedundancyType {
   ZRS
 }
 # An Azure SQL Database. Refers to the fully managed SQL database built for the cloud. For more info, see https://azure.microsoft.com/en-us/products/azure-sql/database/.
-type AzureSqlDatabaseDb implements PolarisHierarchyObject & PolarisHierarchySnappable & HierarchyObject {
+type AzureSqlDatabaseDb implements PolarisHierarchyObject, PolarisHierarchySnappable, HierarchyObject {
   # Name of the Azure SQL Database.
   databaseName: String!
 
@@ -30305,7 +30305,7 @@ input AzureSqlDatabaseResourceGroupFilter {
   resourceGroupNames: [String!]!
 }
 # Retrieves an Azure SQL Database Server. Refers to the server the Azure SQL Database is a part of. For more info, see https://docs.microsoft.com/en-us/azure/azure-sql/database/logical-servers.
-type AzureSqlDatabaseServer implements PolarisHierarchyObject & HierarchyObject {
+type AzureSqlDatabaseServer implements PolarisHierarchyObject, HierarchyObject {
   # Name of the Azure SQL Database Server.
   serverName: String!
 
@@ -30501,7 +30501,7 @@ enum AzureSqlDbBackupSetupStatus {
   UNSUPPORTED_COLUMNS_EXIST
 }
 # Retrieves an Azure SQL Managed Instance Database. Refers to the database engine compatible with the latest SQL Server (Enterprise Edition) database engine. For more information, see https://docs.microsoft.com/en-us/azure/azure-sql/managed-instance/sql-managed-instance-paas-overview.
-type AzureSqlManagedInstanceDatabase implements PolarisHierarchyObject & PolarisHierarchySnappable & HierarchyObject {
+type AzureSqlManagedInstanceDatabase implements PolarisHierarchyObject, PolarisHierarchySnappable, HierarchyObject {
   # Name of the Azure SQL Managed Instance Database.
   databaseName: String!
 
@@ -30798,7 +30798,7 @@ input AzureSqlManagedInstanceDbPitExport {
   restorePointInTime: DateTime!
 }
 # Retrieves an Azure SQL Managed Instance Server. Refers to the server the Azure SQL Managed Instance Database is a part of.
-type AzureSqlManagedInstanceServer implements PolarisHierarchyObject & HierarchyObject {
+type AzureSqlManagedInstanceServer implements PolarisHierarchyObject, HierarchyObject {
   # Name of the Azure SQL Managed Instance Server.
   serverName: String!
 
@@ -30987,7 +30987,7 @@ enum AzureStorageAccessTier {
   UNKNOWN_STORAGE_TIER
 }
 # An Azure storage account that contains Azure storage data objects including blobs, file shares, queues, tables, and disks. For more information, see https://learn.microsoft.com/en-us/azure/storage/common/storage-account-overview.
-type AzureStorageAccount implements PolarisHierarchyObject & PolarisHierarchySnappable & HierarchyObject & AzureNativeHierarchyObjectType {
+type AzureStorageAccount implements PolarisHierarchyObject, PolarisHierarchySnappable, HierarchyObject, AzureNativeHierarchyObjectType {
   # Tags attached to the storage account.
   tags: [AzureTag!]!
 
@@ -32205,8 +32205,7 @@ enum BlueprintRecoveryType {
   # Unrecognized blueprint recovery type.
   UNKNOWN
 }
-# The `Boolean` scalar type represents `true` or `false`.
-scalar Boolean
+
 # Supported in v5.0+
 type BootstrappableNodeInfo {
   # Required. Supported in v5.0+
@@ -33099,7 +33098,7 @@ type CassandraBackupParams {
   watcherFrequency: Long!
 }
 # Cassandra Column Family information.
-type CassandraColumnFamily implements HierarchyObject & PolarisHierarchyObject & CassandraSourceDescendantType & CassandraKeyspaceDescendantType & CassandraKeyspacePhysicalChildType {
+type CassandraColumnFamily implements HierarchyObject, PolarisHierarchyObject, CassandraSourceDescendantType, CassandraKeyspaceDescendantType, CassandraKeyspacePhysicalChildType {
   # UUID of the Mosaic cluster.
   clusterUuid: UUID!
 
@@ -33261,7 +33260,7 @@ type CassandraColumnObject {
   columnType: String
 }
 # Cassandra Keyspace information.
-type CassandraKeyspace implements HierarchyObject & PolarisHierarchyObject & CassandraSourceDescendantType & CassandraSourcePhysicalChildType {
+type CassandraKeyspace implements HierarchyObject, PolarisHierarchyObject, CassandraSourceDescendantType, CassandraSourcePhysicalChildType {
   # UUID of the Mosaic cluster.
   clusterUuid: UUID!
 
@@ -33556,7 +33555,7 @@ type CassandraSchemaObject {
   primaryKeys: [String!]!
 }
 # Cassandra Source information.
-type CassandraSource implements HierarchyObject & PolarisHierarchyObject {
+type CassandraSource implements HierarchyObject, PolarisHierarchyObject {
   # UUID of the Mosaic cluster.
   clusterUuid: UUID!
 
@@ -37192,7 +37191,7 @@ enum CloudDirectNasConnectivityStatus {
   UNKNOWN_CONNECTIVITY_STATUS
 }
 # Cloud Direct NAS export object.
-type CloudDirectNasExport implements CloudDirectHierarchyWorkload & CloudDirectHierarchyObject & HierarchyObject {
+type CloudDirectNasExport implements CloudDirectHierarchyWorkload, CloudDirectHierarchyObject, HierarchyObject {
   # Cloud Direct NAS export FID.
   exportFid: UUID!
 
@@ -37272,7 +37271,7 @@ type CloudDirectNasExport implements CloudDirectHierarchyWorkload & CloudDirectH
   authorizedOperations: [Operation!]!
 }
 # Cloud Direct NAS namespace object.
-type CloudDirectNasNamespace implements CloudDirectHierarchyObject & HierarchyObject & CloudDirectNasSystemDescendantType & CloudDirectNasSystemLogicalChildType {
+type CloudDirectNasNamespace implements CloudDirectHierarchyObject, HierarchyObject, CloudDirectNasSystemDescendantType, CloudDirectNasSystemLogicalChildType {
   # Cloud Direct NAS Cluster ID.
   clusterUuid: UUID!
 
@@ -37587,7 +37586,7 @@ enum CloudDirectNasProtocolType {
   UNSPECIFIED
 }
 # Cloud Direct NAS Share object.
-type CloudDirectNasShare implements CloudDirectHierarchyWorkload & CloudDirectHierarchyObject & HierarchyObject & CloudDirectNasSystemDescendantType & CloudDirectNasSystemLogicalChildType & CloudDirectNasNamespaceDescendantType & CloudDirectNasNamespaceLogicalChildType {
+type CloudDirectNasShare implements CloudDirectHierarchyWorkload, CloudDirectHierarchyObject, HierarchyObject, CloudDirectNasSystemDescendantType, CloudDirectNasSystemLogicalChildType, CloudDirectNasNamespaceDescendantType, CloudDirectNasNamespaceLogicalChildType {
   # Cloud Direct NAS Cluster ID.
   clusterUuid: UUID!
 
@@ -37799,7 +37798,7 @@ type CloudDirectNasShareEdge {
   node: CloudDirectNasShare!
 }
 # Cloud Direct NAS System object.
-type CloudDirectNasSystem implements CloudDirectHierarchyObject & HierarchyObject {
+type CloudDirectNasSystem implements CloudDirectHierarchyObject, HierarchyObject {
   # Cloud Direct NAS Cluster ID.
   clusterUuid: UUID!
 
@@ -45595,7 +45594,7 @@ type Db2DataBackupFile {
   db2BackupFile: Db2WorkloadDataBackupFile!
 }
 # Db2 Database details object.
-type Db2Database implements CdmHierarchyObject & CdmHierarchySnappableNew & HierarchyObject & Db2InstanceDescendantType & Db2InstancePhysicalChildType {
+type Db2Database implements CdmHierarchyObject, CdmHierarchySnappableNew, HierarchyObject, Db2InstanceDescendantType, Db2InstancePhysicalChildType {
   # Uuid of the primary cluster.
   primaryClusterUuid: UUID!
 
@@ -45992,7 +45991,7 @@ type Db2HadrMetadata {
   instancesInfoList: [Db2HadrInstanceInfo!]!
 }
 # Db2 Instance details object.
-type Db2Instance implements CdmHierarchyObject & HierarchyObject {
+type Db2Instance implements CdmHierarchyObject, HierarchyObject {
   # Uuid of the primary cluster.
   primaryClusterUuid: UUID!
 
@@ -50056,7 +50055,7 @@ enum ExchangeBackupPreference {
   EXCHANGE_BACKUP_PREFERENCE_PREFER_PASSIVE
 }
 # Exchange DAG details object.
-type ExchangeDag implements CdmHierarchyObject & HierarchyObject {
+type ExchangeDag implements CdmHierarchyObject, HierarchyObject {
   # UUID of the primary cluster.
   primaryClusterUuid: UUID!
 
@@ -50316,7 +50315,7 @@ input ExchangeDagUpdateInput {
   backupPreference: ExchangeBackupPreference!
 }
 # Exchange Database details object.
-type ExchangeDatabase implements CdmHierarchyObject & HierarchySnappable & CdmHierarchySnappableNew & HierarchyObject & ExchangeDagDescendantType & ExchangeServerDescendantType & ExchangeHostDescendantType {
+type ExchangeDatabase implements CdmHierarchyObject, HierarchySnappable, CdmHierarchySnappableNew, HierarchyObject, ExchangeDagDescendantType, ExchangeServerDescendantType, ExchangeHostDescendantType {
   # UUID of the primary cluster.
   primaryClusterUuid: UUID!
 
@@ -50565,7 +50564,7 @@ type ExchangeDatabaseEdge {
   node: ExchangeDatabase!
 }
 # Exchange Host details object.
-type ExchangeHost implements CdmHierarchyObject & HierarchyObject {
+type ExchangeHost implements CdmHierarchyObject, HierarchyObject {
   # UUID of the primary cluster.
   primaryClusterUuid: UUID!
 
@@ -50999,7 +50998,7 @@ input ExchangeMountSnapshotConfigInput {
   smbValidUsers: [String!] = []
 }
 # Exchange Server details object.
-type ExchangeServer implements CdmHierarchyObject & HierarchyObject & PhysicalHostDescendantType & PhysicalHostPhysicalChildType & ExchangeHostDescendantType & ExchangeHostPhysicalChildType {
+type ExchangeServer implements CdmHierarchyObject, HierarchyObject, PhysicalHostDescendantType, PhysicalHostPhysicalChildType, ExchangeHostDescendantType, ExchangeHostPhysicalChildType {
   # UUID of the primary cluster.
   primaryClusterUuid: UUID!
 
@@ -52046,7 +52045,7 @@ type FailoverChart {
   groupBy: [FailoverGroupByEnum!]
 }
 # Failover cluster App.
-type FailoverClusterApp implements CdmHierarchyObject & HierarchyObject & HostFailoverClusterDescendantType & HostFailoverClusterPhysicalChildType & FailoverClusterTopLevelDescendantType {
+type FailoverClusterApp implements CdmHierarchyObject, HierarchyObject, HostFailoverClusterDescendantType, HostFailoverClusterPhysicalChildType, FailoverClusterTopLevelDescendantType {
   # ID of the CDM cluster.
   cdmId: String!
 
@@ -53803,7 +53802,7 @@ type FilesetSummary {
   slaAssignable: SlaAssignable
 }
 # Fileset template.
-type FilesetTemplate implements CdmHierarchyObject & HierarchyObject & PhysicalHostDescendantType & PhysicalHostPhysicalChildType {
+type FilesetTemplate implements CdmHierarchyObject, HierarchyObject, PhysicalHostDescendantType, PhysicalHostPhysicalChildType {
   # ID associated with fileset template in CDM.
   cdmId: String!
 
@@ -54582,7 +54581,7 @@ input FlashBladeSystemParametersInput {
   smbCredentials: GenericNasSystemCredentialsInput
 }
 # The `Float` scalar type represents signed double-precision fractional values as specified by [IEEE 754](https://en.wikipedia.org/wiki/IEEE_floating_point).
-scalar Float
+#scalar Float
 # Represents the OneDrive folder to be restored.
 input FolderInfo {
   folderId: String!
@@ -54968,7 +54967,7 @@ input GcpNativeDisableProjectInput {
   # Specifies whether to delete the native snapshots while disabling the project.
   shouldDeleteNativeSnapshots: Boolean!
 }
-type GcpNativeDisk implements PolarisHierarchyObject & PolarisHierarchySnappable & HierarchyObject & GcpNativeProjectLogicalChildType & GcpNativeProjectDescendantType {
+type GcpNativeDisk implements PolarisHierarchyObject, PolarisHierarchySnappable, HierarchyObject, GcpNativeProjectLogicalChildType, GcpNativeProjectDescendantType {
   # GCP project ID for the disk.
   projectId: String!
 
@@ -55374,7 +55373,7 @@ type GcpNativeFirewallRule {
   targetTags: [String!]!
 }
 # Represents a GCP GCE instance.
-type GcpNativeGceInstance implements PolarisHierarchyObject & PolarisHierarchySnappable & HierarchyObject & GcpNativeProjectLogicalChildType & GcpNativeProjectDescendantType {
+type GcpNativeGceInstance implements PolarisHierarchyObject, PolarisHierarchySnappable, HierarchyObject, GcpNativeProjectLogicalChildType, GcpNativeProjectDescendantType {
   # GCP project ID.
   projectId: String!
 
@@ -55712,7 +55711,7 @@ input GcpNativeNetworkFilter {
   networkNames: [String!]!
 }
 # Represents a GCP project.
-type GcpNativeProject implements PolarisHierarchyObject & HierarchyObject {
+type GcpNativeProject implements PolarisHierarchyObject, HierarchyObject {
   # Status of the GCP project.
   status: GcpNativeProjectStatus!
 
@@ -60222,7 +60221,7 @@ type HostDiagnosisSummary {
   connectivity: [HostConnectivitySummary!]!
 }
 # Host failover cluster.
-type HostFailoverCluster implements CdmHierarchyObject & HierarchyObject & FailoverClusterTopLevelDescendantType {
+type HostFailoverCluster implements CdmHierarchyObject, HierarchyObject, FailoverClusterTopLevelDescendantType {
   # ID of the CDM cluster.
   cdmId: String!
 
@@ -60755,7 +60754,7 @@ enum HostRoot {
   WINDOWS_HOST_ROOT
 }
 # Host share type.
-type HostShare implements CdmHierarchyObject & HierarchyObject & PhysicalHostDescendantType & PhysicalHostPhysicalChildType {
+type HostShare implements CdmHierarchyObject, HierarchyObject, PhysicalHostDescendantType, PhysicalHostPhysicalChildType {
   # Information pertaining to migration of the NAS host from Rubrik CDM to RSC.
   nasMigrationInfo: String!
 
@@ -61462,7 +61461,7 @@ input HourlySnapshotScheduleInput {
   basicSchedule: BasicSnapshotScheduleInput
 }
 # Hyper-V cluster details.
-type HyperVCluster implements HierarchyObject & CdmHierarchyObject & HyperVSCVMMDescendantType & HyperVSCVMMLogicalChildType & HypervTopLevelDescendantType {
+type HyperVCluster implements HierarchyObject, CdmHierarchyObject, HyperVSCVMMDescendantType, HyperVSCVMMLogicalChildType, HypervTopLevelDescendantType {
   # List of HyperV Server IDs in the cluster.
   serverIds: [String!]!
 
@@ -61855,7 +61854,7 @@ type HyperVLiveMountEdge {
   node: HyperVLiveMount!
 }
 # Hyper-V SCVMM details.
-type HyperVSCVMM implements HierarchyObject & CdmHierarchyObject & PhysicalHostDescendantType & PhysicalHostPhysicalChildType & HypervTopLevelDescendantType {
+type HyperVSCVMM implements HierarchyObject, CdmHierarchyObject, PhysicalHostDescendantType, PhysicalHostPhysicalChildType, HypervTopLevelDescendantType {
   # Connection status of the SCVMM server.
   status: HyperVStatus!
 
@@ -62215,7 +62214,7 @@ type HyperVStatus {
   timestampMillis: DateTime
 }
 # Hyper-V virtual machine details.
-type HyperVVirtualMachine implements HierarchyObject & CdmHierarchyObject & CdmHierarchySnappableNew & HyperVSCVMMDescendantType & HyperVClusterDescendantType & HypervServerLogicalChildType & HypervServerDescendantType & HypervTopLevelDescendantType {
+type HyperVVirtualMachine implements HierarchyObject, CdmHierarchyObject, CdmHierarchySnappableNew, HyperVSCVMMDescendantType, HyperVClusterDescendantType, HypervServerLogicalChildType, HypervServerDescendantType, HypervTopLevelDescendantType {
   # ID of the virtual machine in Rubrik CDM.
   cdmId: String!
 
@@ -62993,7 +62992,7 @@ type HypervScvmmUpdateReply {
   hypervScvmmUpdate: HypervScvmmUpdate
 }
 # Hyper-V server details.
-type HypervServer implements HierarchyObject & CdmHierarchyObject & PhysicalHostDescendantType & PhysicalHostPhysicalChildType & HyperVSCVMMDescendantType & HyperVSCVMMLogicalChildType & HyperVClusterDescendantType & HyperVClusterLogicalChildType & HypervTopLevelDescendantType {
+type HypervServer implements HierarchyObject, CdmHierarchyObject, PhysicalHostDescendantType, PhysicalHostPhysicalChildType, HyperVSCVMMDescendantType, HyperVSCVMMLogicalChildType, HyperVClusterDescendantType, HyperVClusterLogicalChildType, HypervTopLevelDescendantType {
   # Status of the Hyper-V server.
   status: HyperVStatus!
 
@@ -63652,7 +63651,7 @@ type HypervVmAgentStatus {
   connectionStatus: HypervVmAgentConnectionStatus!
 }
 # The `ID` scalar type represents a unique identifier, often used to refetch an object or as key for a cache. The ID type appears in a JSON response as a String; however, it is not intended to be human-readable. When expected as an input type, any string (such as `\"4\"`) or integer (such as `4`) input value will be accepted as an ID.
-scalar ID
+#scalar ID
 # IBM COS type location specific details.
 input IbmCosDetails {
   # Provisioning code.
@@ -64016,7 +64015,7 @@ input InstantRecoveryJobConfigV2Input {
   vNicBindings: [VmwareVnicBindingInfoV2Input!] = []
 }
 # The `Int` scalar type represents non-fractional signed whole numeric values. Int can represent values between -(2^31) and 2^31 - 1.
-scalar Int
+#scalar Int
 # Holds an integration and its configuration.
 type Integration {
   # The integration ID.
@@ -65216,7 +65215,7 @@ type K8sAppManifest {
   toDelete: AppManifestInfo
 }
 # Kubernetes cluster.
-type K8sCluster implements HierarchyObject & PolarisHierarchyObject {
+type K8sCluster implements HierarchyObject, PolarisHierarchyObject {
   # Connection status of the Kubernetes cluster.
   status: K8sClusterStatus!
 
@@ -65706,7 +65705,7 @@ input K8sExportParametersInput {
   targetNamespaceName: String!
 }
 # Kubernetes namespace.
-type K8sNamespace implements HierarchyObject & HierarchySnappable & PolarisHierarchyObject & PolarisHierarchySnappable & K8sClusterDescendant {
+type K8sNamespace implements HierarchyObject, HierarchySnappable, PolarisHierarchyObject, PolarisHierarchySnappable, K8sClusterDescendant {
   # Kubernetes cluster ID.
   k8sClusterId: String!
 
@@ -66255,7 +66254,7 @@ type KosmosWorkloadAppMetadata {
   stats: KosmosDataSnapshotStats!
 }
 # Kubernetes cluster.
-type KubernetesCluster implements HierarchyObject & CdmHierarchyObject {
+type KubernetesCluster implements HierarchyObject, CdmHierarchyObject {
   # ID of Kubernetes ProtectionSet on Rubrik CDM.
   cdmId: String!
 
@@ -66651,7 +66650,7 @@ type KubernetesNamespaceDescendantEdge {
   node: KubernetesNamespaceDescendant!
 }
 # Kubernetes namespace.
-type KubernetesNamespaceType implements HierarchyObject & CdmHierarchyObject & KubernetesClusterDescendant {
+type KubernetesNamespaceType implements HierarchyObject, CdmHierarchyObject, KubernetesClusterDescendant {
   # ID of Kubernetes namespace on Rubrik CDM.
   cdmId: String!
 
@@ -66791,7 +66790,7 @@ enum KubernetesOnboardingType {
   MANIFEST
 }
 # Kubernetes Protection Set.
-type KubernetesProtectionSet implements HierarchyObject & HierarchySnappable & CdmHierarchyObject & CdmHierarchySnappableNew & KubernetesClusterDescendant {
+type KubernetesProtectionSet implements HierarchyObject, HierarchySnappable, CdmHierarchyObject, CdmHierarchySnappableNew, KubernetesClusterDescendant {
   # ID of Protection Set on CDM.
   cdmId: String!
 
@@ -67069,7 +67068,7 @@ type KubernetesProtectionSetEdge {
   node: KubernetesProtectionSet!
 }
 # Kubernetes virtual machine.
-type KubernetesVirtualMachine implements HierarchyObject & HierarchySnappable & CdmHierarchyObject & CdmHierarchySnappableNew & KubernetesClusterDescendant & KubernetesNamespaceDescendant {
+type KubernetesVirtualMachine implements HierarchyObject, HierarchySnappable, CdmHierarchyObject, CdmHierarchySnappableNew, KubernetesClusterDescendant, KubernetesNamespaceDescendant {
   # ID of Kubernetes Virtual Machine on Rubrik CDM.
   cdmId: String!
 
@@ -68013,7 +68012,7 @@ type Link {
   rel: String!
 }
 # Linux fileset type.
-type LinuxFileset implements CdmHierarchyObject & CdmHierarchySnappableNew & HierarchyObject & HierarchySnappable & PhysicalHostDescendantType & PhysicalHostPhysicalChildType & HostFailoverClusterDescendantType & HostFailoverClusterPhysicalChildType & FailoverClusterAppDescendantType & FailoverClusterAppPhysicalChildType & FailoverClusterTopLevelDescendantType & FilesetTemplateDescendantType & FilesetTemplatePhysicalChildType {
+type LinuxFileset implements CdmHierarchyObject, CdmHierarchySnappableNew, HierarchyObject, HierarchySnappable, PhysicalHostDescendantType, PhysicalHostPhysicalChildType, HostFailoverClusterDescendantType, HostFailoverClusterPhysicalChildType, FailoverClusterAppDescendantType, FailoverClusterAppPhysicalChildType, FailoverClusterTopLevelDescendantType, FilesetTemplateDescendantType, FilesetTemplatePhysicalChildType {
   # ID of the CDM cluster.
   cdmId: String!
 
@@ -68696,7 +68695,7 @@ input LsnRecoveryPointInput {
   lsn: String!
 }
 # M365 Backup Storage Groups from M365 Backup Storage hierarchy.
-type M365BackupStorageGroup implements MicrosoftGroup & HierarchyObject & PolarisHierarchyObject {
+type M365BackupStorageGroup implements MicrosoftGroup, HierarchyObject, PolarisHierarchyObject {
   # Rubrik internal UUID for group.
   groupID: String!
 
@@ -68908,7 +68907,7 @@ type M365BackupStorageLicenseUsage {
   orgConsumptionsEntry: [M365BackupStorageOrgLicenseUsage!]!
 }
 # Microsoft 365 Backup Storage Mailbox.
-type M365BackupStorageMailbox implements HierarchyObject & HierarchySnappable & PolarisHierarchyObject & PolarisHierarchySnappable & MicrosoftMailbox {
+type M365BackupStorageMailbox implements HierarchyObject, HierarchySnappable, PolarisHierarchyObject, PolarisHierarchySnappable, MicrosoftMailbox {
   # Specifies whether the Mailbox is a relic.
   isRelic: Boolean!
 
@@ -69106,7 +69105,7 @@ input M365BackupStorageObjectRestorePointsInput {
   sortOrder: SortOrder
 }
 # Microsoft 365 Backup Storage OneDrive.
-type M365BackupStorageOnedrive implements HierarchyObject & HierarchySnappable & PolarisHierarchyObject & PolarisHierarchySnappable & MicrosoftOnedrive {
+type M365BackupStorageOnedrive implements HierarchyObject, HierarchySnappable, PolarisHierarchyObject, PolarisHierarchySnappable, MicrosoftOnedrive {
   # Specifies whether the OneDrive is a relic.
   isRelic: Boolean!
 
@@ -69290,7 +69289,7 @@ type M365BackupStorageOnedrive implements HierarchyObject & HierarchySnappable &
   authorizedOperations: [Operation!]!
 }
 # Microsoft 365 Backup Storage Organization.
-type M365BackupStorageOrg implements MicrosoftOrg & HierarchyObject & PolarisHierarchyObject {
+type M365BackupStorageOrg implements MicrosoftOrg, HierarchyObject, PolarisHierarchyObject {
   # Status of the Microsoft 365 Backup Storage Organization.
   status: OrgStatus!
 
@@ -69520,7 +69519,7 @@ type M365BackupStorageRestorePointEdge {
   node: M365BackupStorageRestorePoint!
 }
 # Microsoft 365 Backup Storage SharePoint Site.
-type M365BackupStorageSite implements HierarchyObject & HierarchySnappable & PolarisHierarchyObject & PolarisHierarchySnappable & MicrosoftSite {
+type M365BackupStorageSite implements HierarchyObject, HierarchySnappable, PolarisHierarchyObject, PolarisHierarchySnappable, MicrosoftSite {
   # The title or name of the SharePoint Site.
   title: String!
 
@@ -70641,7 +70640,7 @@ enum ManagedObjectType {
   WINDOWS_FILESET
 }
 # Managed Volume information.
-type ManagedVolume implements HierarchyObject & CdmHierarchyObject & CdmHierarchySnappableNew {
+type ManagedVolume implements HierarchyObject, CdmHierarchyObject, CdmHierarchySnappableNew {
   # Size provisioned for the Managed Volume in bytes.
   provisionedSize: Long!
 
@@ -71347,7 +71346,7 @@ type ManagedVolumeInventoryStats {
   slaBased: ManagedVolumeStats!
 }
 # Managed Volume Export details object.
-type ManagedVolumeMount implements HierarchyObject & CdmHierarchyObject & ManagedVolumeDescendantType & ManagedVolumePhysicalChildType {
+type ManagedVolumeMount implements HierarchyObject, CdmHierarchyObject, ManagedVolumeDescendantType, ManagedVolumePhysicalChildType {
   # Number of channels in the Managed Volume Export.
   numChannels: Int!
 
@@ -73623,7 +73622,7 @@ input MongoClientHostInput {
   hostId: String!
 }
 # Information about MongoDB Collection.
-type MongoCollection implements HierarchyObject & CdmHierarchyObject & MongoSourceDescendantType & MongoDatabaseDescendantType & MongoCollectionSetDescendantType & MongoCollectionSetPhysicalChildType {
+type MongoCollection implements HierarchyObject, CdmHierarchyObject, MongoSourceDescendantType, MongoDatabaseDescendantType, MongoCollectionSetDescendantType, MongoCollectionSetPhysicalChildType {
   # Identifier of the host cluster.
   clusterUuid: UUID!
 
@@ -73803,7 +73802,7 @@ type MongoCollectionEdge {
   node: MongoCollection!
 }
 # Information about MongoDB Collection Set.
-type MongoCollectionSet implements HierarchyObject & CdmHierarchyObject & MongoSourceDescendantType & MongoDatabaseDescendantType & MongoDatabasePhysicalChildType & CdmHierarchySnappableNew {
+type MongoCollectionSet implements HierarchyObject, CdmHierarchyObject, MongoSourceDescendantType, MongoDatabaseDescendantType, MongoDatabasePhysicalChildType, CdmHierarchySnappableNew {
   # Identifier of the host cluster.
   clusterUuid: UUID!
 
@@ -74283,7 +74282,7 @@ input MongoConfigInput {
   logRetention: SlaDurationInput
 }
 # Information about MongoDB Database.
-type MongoDatabase implements HierarchyObject & CdmHierarchyObject & MongoSourceDescendantType & MongoSourcePhysicalChildType {
+type MongoDatabase implements HierarchyObject, CdmHierarchyObject, MongoSourceDescendantType, MongoSourcePhysicalChildType {
   # Identifier of the host cluster.
   clusterUuid: UUID!
 
@@ -74819,7 +74818,7 @@ enum MongoSnapshotGroupByTime {
   YEAR
 }
 # Information about MongoDB Source.
-type MongoSource implements HierarchyObject & CdmHierarchySnappableNew & CdmHierarchyObject {
+type MongoSource implements HierarchyObject, CdmHierarchySnappableNew, CdmHierarchyObject {
   # UUID of the CDM cluster.
   clusterUuid: UUID!
 
@@ -75485,7 +75484,7 @@ type MongodbBackupParams {
   watcherFrequency: Long!
 }
 # Information about MongoDB Collection.
-type MongodbCollection implements HierarchyObject & PolarisHierarchyObject & MongodbSourceDescendantType & MongodbDatabaseDescendantType & MongodbDatabasePhysicalChildType {
+type MongodbCollection implements HierarchyObject, PolarisHierarchyObject, MongodbSourceDescendantType, MongodbDatabaseDescendantType, MongodbDatabasePhysicalChildType {
   # UUID of the Mosaic cluster.
   clusterUuid: UUID!
 
@@ -75633,7 +75632,7 @@ type MongodbCollectionEdge {
   node: MongodbCollection!
 }
 # Information about MongoDB Database.
-type MongodbDatabase implements HierarchyObject & PolarisHierarchyObject & MongodbSourceDescendantType & MongodbSourcePhysicalChildType {
+type MongodbDatabase implements HierarchyObject, PolarisHierarchyObject, MongodbSourceDescendantType, MongodbSourcePhysicalChildType {
   # UUID of the Nosql cluster.
   clusterUuid: UUID!
 
@@ -75924,7 +75923,7 @@ type MongodbHost {
   port: String!
 }
 # Information about MongoDB Source.
-type MongodbSource implements HierarchyObject & PolarisHierarchyObject {
+type MongodbSource implements HierarchyObject, PolarisHierarchyObject {
   # UUID of the Nosql cluster.
   clusterUuid: UUID!
 
@@ -77360,7 +77359,7 @@ type MssqlAppMetadata {
   endBackupTimestampMs: Long
 }
 # SQL Server always on availability group.
-type MssqlAvailabilityGroup implements HierarchyObject & CdmHierarchyObject & MssqlTopLevelDescendantType {
+type MssqlAvailabilityGroup implements HierarchyObject, CdmHierarchyObject, MssqlTopLevelDescendantType {
   # CopyOnly flag of the availability group.
   copyOnly: Boolean!
 
@@ -78023,7 +78022,7 @@ input MssqlConfigInput {
   logRetention: SlaDurationInput
 }
 # SQL Server database.
-type MssqlDatabase implements HierarchyObject & CdmHierarchyObject & HierarchySnappable & CdmHierarchySnappableNew & MssqlTopLevelDescendantType & PhysicalHostDescendantType & WindowsClusterDescendantType & MssqlAvailabilityGroupDescendantType & MssqlAvailabilityGroupLogicalChildType & MssqlInstanceDescendantType & MssqlInstanceLogicalChildType & MssqlHostDescendantType {
+type MssqlDatabase implements HierarchyObject, CdmHierarchyObject, HierarchySnappable, CdmHierarchySnappableNew, MssqlTopLevelDescendantType, PhysicalHostDescendantType, WindowsClusterDescendantType, MssqlAvailabilityGroupDescendantType, MssqlAvailabilityGroupLogicalChildType, MssqlInstanceDescendantType, MssqlInstanceLogicalChildType, MssqlHostDescendantType {
   # CDM ID of the SQL Server database.
   cdmId: String!
 
@@ -78937,7 +78936,7 @@ input MssqlGetRestoreFilesV1Input {
   id: String!
 }
 # Microsoft SQL Host.
-type MssqlHost implements HierarchyObject & CdmHierarchyObject & MssqlTopLevelDescendantType {
+type MssqlHost implements HierarchyObject, CdmHierarchyObject, MssqlTopLevelDescendantType {
   # ID associated with the Microsoft SQL Host in CDM.
   cdmId: String!
 
@@ -79269,7 +79268,7 @@ input MssqlHostUpdateInput {
   mssqlSlaRelatedProperties: MssqlSlaRelatedPropertiesInput
 }
 # SQL Server instance.
-type MssqlInstance implements HierarchyObject & CdmHierarchyObject & MssqlTopLevelDescendantType & PhysicalHostDescendantType & PhysicalHostPhysicalChildType & WindowsClusterDescendantType & WindowsClusterLogicalChildType & MssqlHostPhysicalChildType & MssqlHostDescendantType {
+type MssqlInstance implements HierarchyObject, CdmHierarchyObject, MssqlTopLevelDescendantType, PhysicalHostDescendantType, PhysicalHostPhysicalChildType, WindowsClusterDescendantType, WindowsClusterLogicalChildType, MssqlHostPhysicalChildType, MssqlHostDescendantType {
   # List of reasons that a SQL Server instance cannot be protected.
   unprotectableReasons: [String!]!
 
@@ -80677,7 +80676,7 @@ input NasConfigInput {
   vendorType: String!
 }
 # NAS Fileset protected object.
-type NasFileset implements CdmHierarchyObject & CdmHierarchySnappableNew & HierarchyObject & HierarchySnappable & NasSystemDescendantType & NasNamespaceDescendantType & NasShareDescendantType & NasShareLogicalChildType {
+type NasFileset implements CdmHierarchyObject, CdmHierarchySnappableNew, HierarchyObject, HierarchySnappable, NasSystemDescendantType, NasNamespaceDescendantType, NasShareDescendantType, NasShareLogicalChildType {
   # The Rubrik CDM-assigned UUID of the NAS fileset.
   cdmId: String!
 
@@ -80928,7 +80927,7 @@ type NasFileset implements CdmHierarchyObject & CdmHierarchySnappableNew & Hiera
   newestReplicatedSnapshot: CdmSnapshot
 }
 # NAS namespace instance associated with registered NAS system.
-type NasNamespace implements CdmHierarchyObject & HierarchyObject & NasSystemDescendantType & NasSystemLogicalChildType {
+type NasNamespace implements CdmHierarchyObject, HierarchyObject, NasSystemDescendantType, NasSystemLogicalChildType {
   # Rubrik CDM ID of the registered NAS system.
   cdmId: UUID!
 
@@ -81271,7 +81270,7 @@ type NasNamespaceLogicalChildTypeEdge {
   node: NasNamespaceLogicalChildType!
 }
 # NAS share instance of a registered NAS system.
-type NasShare implements CdmHierarchyObject & HierarchyObject & NasSystemDescendantType & NasSystemLogicalChildType & NasNamespaceDescendantType & NasNamespaceLogicalChildType & NasVolumeDescendantType & NasVolumeLogicalChildType {
+type NasShare implements CdmHierarchyObject, HierarchyObject, NasSystemDescendantType, NasSystemLogicalChildType, NasNamespaceDescendantType, NasNamespaceLogicalChildType, NasVolumeDescendantType, NasVolumeLogicalChildType {
   # File sharing protocol (NFS or SMB).
   shareType: String!
 
@@ -81691,7 +81690,7 @@ input NasSharePropertiesInput {
   id: String!
 }
 # Instance of a registered NAS system.
-type NasSystem implements CdmHierarchyObject & HierarchyObject {
+type NasSystem implements CdmHierarchyObject, HierarchyObject {
   # OS version of the registered NAS system.
   osVersion: String
 
@@ -82186,7 +82185,7 @@ enum NasVendorType {
   NAS_VENDOR_TYPE_NUTANIX_FILE_SERVER
 }
 # NAS volume instance in a registered NAS system.
-type NasVolume implements CdmHierarchyObject & HierarchyObject & NasSystemDescendantType & NasSystemLogicalChildType & NasNamespaceDescendantType & NasNamespaceLogicalChildType {
+type NasVolume implements CdmHierarchyObject, HierarchyObject, NasSystemDescendantType, NasSystemLogicalChildType, NasNamespaceDescendantType, NasNamespaceLogicalChildType {
   # Labels that can be applied to a newly created SnapMirror Cloud.
   snapMirrorLabels: [String!]!
 
@@ -83561,7 +83560,7 @@ input NutanixBulkOnDemandSnapshotJobConfigInput {
   vms: [NutanixOnDemandSnapshotJobConfigForBulkInput!]!
 }
 # Nutanix Category details.
-type NutanixCategory implements CdmHierarchyObject & HierarchyObject & NutanixPrismCentralDescendantType & NutanixPrismCentralLogicalChildType & NutanixMultiClusterObjectType {
+type NutanixCategory implements CdmHierarchyObject, HierarchyObject, NutanixPrismCentralDescendantType, NutanixPrismCentralLogicalChildType, NutanixMultiClusterObjectType {
   # CDM ID of the Nutanix Category.
   cdmId: String!
 
@@ -83888,7 +83887,7 @@ type NutanixCategoryLogicalChildTypeEdge {
   node: NutanixCategoryLogicalChildType!
 }
 # Nutanix Category Value details.
-type NutanixCategoryValue implements CdmHierarchyObject & HierarchyObject & NutanixPrismCentralDescendantType & NutanixCategoryDescendantType & NutanixCategoryLogicalChildType & NutanixMultiClusterObjectType {
+type NutanixCategoryValue implements CdmHierarchyObject, HierarchyObject, NutanixPrismCentralDescendantType, NutanixCategoryDescendantType, NutanixCategoryLogicalChildType, NutanixMultiClusterObjectType {
   # CDM ID of the Nutanix Category Value.
   cdmId: String!
 
@@ -84235,7 +84234,7 @@ type NutanixCategoryValueLogicalChildTypeEdge {
   node: NutanixCategoryValueLogicalChildType!
 }
 # Nutanix cluster details.
-type NutanixCluster implements CdmHierarchyObject & HierarchyObject & NutanixTopLevelDescendantType & NutanixPrismCentralDescendantType & NutanixPrismCentralLogicalChildType {
+type NutanixCluster implements CdmHierarchyObject, HierarchyObject, NutanixTopLevelDescendantType, NutanixPrismCentralDescendantType, NutanixPrismCentralLogicalChildType {
   # CDM ID of the Nutanix virtual machine.
   cdmId: String!
 
@@ -85105,7 +85104,7 @@ input NutanixPatchVmMountConfigInput {
   shouldPowerOn: Boolean!
 }
 # Nutanix Prism Central details.
-type NutanixPrismCentral implements CdmHierarchyObject & HierarchyObject & NutanixTopLevelDescendantType & NutanixMultiClusterObjectType {
+type NutanixPrismCentral implements CdmHierarchyObject, HierarchyObject, NutanixTopLevelDescendantType, NutanixMultiClusterObjectType {
   # CDM ID of the Nutanix Virtual Machine.
   cdmId: String!
 
@@ -85717,7 +85716,7 @@ input NutanixVirtualMachineScriptDetailInput {
   timeoutMs: Long!
 }
 # Nutanix virtual machine details.
-type NutanixVm implements CdmHierarchyObject & CdmHierarchySnappableNew & HierarchyObject & HierarchySnappable & NutanixClusterDescendantType & NutanixClusterLogicalChildType & NutanixPrismCentralDescendantType & NutanixCategoryDescendantType & NutanixCategoryValueDescendantType & NutanixCategoryValueLogicalChildType {
+type NutanixVm implements CdmHierarchyObject, CdmHierarchySnappableNew, HierarchyObject, HierarchySnappable, NutanixClusterDescendantType, NutanixClusterLogicalChildType, NutanixPrismCentralDescendantType, NutanixCategoryDescendantType, NutanixCategoryValueDescendantType, NutanixCategoryValueLogicalChildType {
   # CDM ID of the Nutanix virtual machine.
   cdmId: String!
 
@@ -86573,7 +86572,7 @@ enum O365AzureCloudType {
   # US Gov cloud.
   USGOV
 }
-type O365Calendar implements HierarchyObject & HierarchySnappable & PolarisHierarchyObject & PolarisHierarchySnappable & O365OrgDescendant & O365UserDescendant {
+type O365Calendar implements HierarchyObject, HierarchySnappable, PolarisHierarchyObject, PolarisHierarchySnappable, O365OrgDescendant, O365UserDescendant {
   isRelic: Boolean!
 
   # The authorized operations on the object.
@@ -87136,7 +87135,7 @@ input O365FullSpSiteExclusions {
   excludedObjects: [O365FullSpExclusion!]!
 }
 # O365 Groups from O365 hierarchy.
-type O365Group implements MicrosoftGroup & HierarchyObject & PolarisHierarchyObject & O365OrgDescendant {
+type O365Group implements MicrosoftGroup, HierarchyObject, PolarisHierarchyObject, O365OrgDescendant {
   # Rubrik internal UUID for group.
   groupID: String!
 
@@ -87419,7 +87418,7 @@ type O365LicenseDetails {
   # Host type.
   allowedHost: AzureHostType!
 }
-type O365Mailbox implements HierarchyObject & HierarchySnappable & PolarisHierarchyObject & PolarisHierarchySnappable & O365OrgDescendant & O365UserDescendant & O365UserDescendantMetadata & MicrosoftMailbox {
+type O365Mailbox implements HierarchyObject, HierarchySnappable, PolarisHierarchyObject, PolarisHierarchySnappable, O365OrgDescendant, O365UserDescendant, O365UserDescendantMetadata, MicrosoftMailbox {
   isRelic: Boolean!
   userPrincipalName: String!
 
@@ -87655,7 +87654,7 @@ type O365OauthConsentKickoffReply {
   tenantId: String!
   csrfToken: String!
 }
-type O365Onedrive implements HierarchyObject & HierarchySnappable & PolarisHierarchyObject & PolarisHierarchySnappable & O365OrgDescendant & O365UserDescendant & O365UserDescendantMetadata & MicrosoftOnedrive {
+type O365Onedrive implements HierarchyObject, HierarchySnappable, PolarisHierarchyObject, PolarisHierarchySnappable, O365OrgDescendant, O365UserDescendant, O365UserDescendantMetadata, MicrosoftOnedrive {
   userID: String!
   isRelic: Boolean!
   totalStorageInBytes: Long!
@@ -87993,7 +87992,7 @@ type O365OnedriveObjectEdge {
   # The actual O365OnedriveObject object wrapped by this edge.
   node: O365OnedriveObject!
 }
-type O365Org implements MicrosoftOrg & HierarchyObject & PolarisHierarchyObject {
+type O365Org implements MicrosoftOrg, HierarchyObject, PolarisHierarchyObject {
   status: OrgStatus!
   exocomputeId: String!
 
@@ -88518,7 +88517,7 @@ input O365SharePointSite {
   # The site child type for SharePoint descendant objects.
   siteChildType: SharePointDescendantType
 }
-type O365SharepointDrive implements HierarchyObject & HierarchySnappable & PolarisHierarchyObject & PolarisHierarchySnappable & O365OrgDescendant & O365SharepointObject {
+type O365SharepointDrive implements HierarchyObject, HierarchySnappable, PolarisHierarchyObject, PolarisHierarchySnappable, O365OrgDescendant, O365SharepointObject {
   objectId: String!
   naturalId: String!
   listNaturalId: String!
@@ -88724,7 +88723,7 @@ type O365SharepointDriveEdge {
   # The actual O365SharepointDrive object wrapped by this edge.
   node: O365SharepointDrive!
 }
-type O365SharepointList implements HierarchyObject & HierarchySnappable & PolarisHierarchyObject & PolarisHierarchySnappable & O365OrgDescendant & O365SharepointObject {
+type O365SharepointList implements HierarchyObject, HierarchySnappable, PolarisHierarchyObject, PolarisHierarchySnappable, O365OrgDescendant, O365SharepointObject {
   objectId: String!
   naturalId: String!
   parentId: String!
@@ -88976,7 +88975,7 @@ input O365SharepointSnapshotFileDeltaInput {
   # The workload specific input needed for (SharePointDrive/OneDrive/SharePointSite) objects.
   sharepointSiteReq: O365SharePointSite
 }
-type O365Site implements HierarchyObject & HierarchySnappable & PolarisHierarchyObject & PolarisHierarchySnappable & O365OrgDescendant & O365SharepointObject & MicrosoftSite {
+type O365Site implements HierarchyObject, HierarchySnappable, PolarisHierarchyObject, PolarisHierarchySnappable, O365OrgDescendant, O365SharepointObject, MicrosoftSite {
   objectId: String!
   title: String!
   parentId: String!
@@ -89328,7 +89327,7 @@ type O365TeamConversationsSenderEdge {
   # The actual O365TeamConversationsSender object wrapped by this edge.
   node: O365TeamConversationsSender!
 }
-type O365Teams implements HierarchyObject & HierarchySnappable & PolarisHierarchyObject & PolarisHierarchySnappable & O365OrgDescendant {
+type O365Teams implements HierarchyObject, HierarchySnappable, PolarisHierarchyObject, PolarisHierarchySnappable, O365OrgDescendant {
   orgID: String!
   naturalId: String!
   teamName: String!
@@ -89611,7 +89610,7 @@ type O365TeamsEdge {
   # The actual O365Teams object wrapped by this edge.
   node: O365Teams!
 }
-type O365User implements HierarchyObject & PolarisHierarchyObject & O365OrgDescendant {
+type O365User implements HierarchyObject, PolarisHierarchyObject, O365OrgDescendant {
   emailAddress: String
   isRelic: Boolean!
 
@@ -90905,7 +90904,7 @@ input OracleConfigInput {
   # The duration for which the archived redo logs will be retained.
   hostLogRetention: SlaDurationInput
 }
-type OracleDataGuardGroup implements HierarchyObject & HierarchySnappable & CdmHierarchyObject & CdmHierarchySnappableNew & OracleTopLevelDescendantType {
+type OracleDataGuardGroup implements HierarchyObject, HierarchySnappable, CdmHierarchyObject, CdmHierarchySnappableNew, OracleTopLevelDescendantType {
   # CDM ID of the Oracle Data Guard Group.
   cdmId: String!
 
@@ -91427,7 +91426,7 @@ input OracleDataGuardGroupUpdateInput {
   shouldForceDisableDgDiscovery: Boolean
   oracleUpdateCommon: OracleUpdateCommonInput
 }
-type OracleDatabase implements HierarchyObject & CdmHierarchyObject & HierarchySnappable & CdmHierarchySnappableNew & OracleTopLevelDescendantType & OracleHostDescendantType & OracleHostLogicalChildType & OracleRacDescendantType & OracleRacLogicalChildType & OracleDataGuardGroupDescendantType & OracleDataGuardGroupLogicalChildType {
+type OracleDatabase implements HierarchyObject, CdmHierarchyObject, HierarchySnappable, CdmHierarchySnappableNew, OracleTopLevelDescendantType, OracleHostDescendantType, OracleHostLogicalChildType, OracleRacDescendantType, OracleRacLogicalChildType, OracleDataGuardGroupDescendantType, OracleDataGuardGroupLogicalChildType {
   # CDM ID of the Oracle database.
   cdmId: String!
 
@@ -92076,7 +92075,7 @@ type OracleFileDownloadLink {
   # Link for file download.
   downloadLink: String!
 }
-type OracleHost implements HierarchyObject & CdmHierarchyObject & OracleTopLevelDescendantType {
+type OracleHost implements HierarchyObject, CdmHierarchyObject, OracleTopLevelDescendantType {
   # The connection status of the Oracle Host.
   connectionStatus: HostConnectionStatus
 
@@ -92806,7 +92805,7 @@ input OraclePdbRestoreConfigInput {
   # Snapshot ID or timestamp for which the PDB restore is done.
   recoveryPoint: OracleRecoveryPointInput!
 }
-type OracleRac implements HierarchyObject & CdmHierarchyObject & OracleTopLevelDescendantType {
+type OracleRac implements HierarchyObject, CdmHierarchyObject, OracleTopLevelDescendantType {
   # The list of nodes which make up the Oracle RAC.
   nodes: [CdmOracleRacNode!]!
 
@@ -94428,7 +94427,7 @@ type PhoenixRolloutProgress {
   # The number of Exchange users that have not yet completed their first full snapshot.
   numIncompleteFirstFull: Int!
 }
-type PhysicalHost implements CdmHierarchyObject & HierarchyObject & MssqlTopLevelDescendantType & Db2InstanceDescendantType & Db2InstancePhysicalChildType {
+type PhysicalHost implements CdmHierarchyObject, HierarchyObject, MssqlTopLevelDescendantType, Db2InstanceDescendantType, Db2InstancePhysicalChildType {
   cdmId: String!
   ipAddresses: [String!]!
   osName: String
@@ -101502,7 +101501,7 @@ enum SapHanaDataPathType {
   SAP_HANA_DATA_PATH_TYPE_MANAGED_VOLUME
 }
 # SAP HANA Database details object.
-type SapHanaDatabase implements CdmHierarchyObject & HierarchySnappable & CdmHierarchySnappableNew & HierarchyObject & SapHanaSystemPhysicalChildType & SapHanaSystemDescendantType {
+type SapHanaDatabase implements CdmHierarchyObject, HierarchySnappable, CdmHierarchySnappableNew, HierarchyObject, SapHanaSystemPhysicalChildType, SapHanaSystemDescendantType {
   # UUID of cluster associated with SAP HANA database.
   clusterUuid: UUID!
 
@@ -102272,7 +102271,7 @@ input SapHanaStorageSnapshotConfigInput {
   retention: SlaDurationInput
 }
 # SAP HANA system details object.
-type SapHanaSystem implements CdmHierarchyObject & CdmHierarchySnappableNew & HierarchyObject & HierarchySnappable {
+type SapHanaSystem implements CdmHierarchyObject, CdmHierarchySnappableNew, HierarchyObject, HierarchySnappable {
   # UUID of cluster associated with SAP HANA system.
   clusterUuid: UUID!
 
@@ -103877,7 +103876,7 @@ type ShareExportIdPair {
   exportId: Int!
 }
 # Share fileset.
-type ShareFileset implements CdmHierarchyObject & CdmHierarchySnappableNew & HierarchyObject & HierarchySnappable & HostShareDescendantType & HostSharePhysicalChildType & PhysicalHostDescendantType & PhysicalHostPhysicalChildType & FilesetTemplateDescendantType & FilesetTemplatePhysicalChildType {
+type ShareFileset implements CdmHierarchyObject, CdmHierarchySnappableNew, HierarchyObject, HierarchySnappable, HostShareDescendantType, HostSharePhysicalChildType, PhysicalHostDescendantType, PhysicalHostPhysicalChildType, FilesetTemplateDescendantType, FilesetTemplatePhysicalChildType {
   # ID of the CDM cluster.
   cdmId: String!
 
@@ -108087,7 +108086,7 @@ type StrainInfo {
   sampleRansomwareNoteFilesInfo: [SuspiciousFileInfo!]!
 }
 # The `String` scalar type represents textual data, represented as UTF-8 character sequences. The String type is most often used by GraphQL to represent free-form human-readable text.
-scalar String
+#scalar String
 # TODO(SPARK-442704) remove graphql annotations; this type
 # should not be a part of external API
 input SubjectContext {
@@ -115515,7 +115514,7 @@ input VappVmRestoreSpecInput {
   # vCloud managed object ID (moid) of the specified vApp virtual machine.
   vcdMoid: String!
 }
-type Vcd implements HierarchyObject & CdmHierarchyObject & VcdTopLevelDescendantType {
+type Vcd implements HierarchyObject, CdmHierarchyObject, VcdTopLevelDescendantType {
   # The CDM ID of vCD instance.
   cdmId: String!
 
@@ -115994,7 +115993,7 @@ type VcdLogicalChildTypeEdge {
   # The actual VcdLogicalChildType object wrapped by this edge.
   node: VcdLogicalChildType!
 }
-type VcdOrg implements HierarchyObject & CdmHierarchyObject & VcdDescendantType & VcdLogicalChildType & VcdTopLevelDescendantType {
+type VcdOrg implements HierarchyObject, CdmHierarchyObject, VcdDescendantType, VcdLogicalChildType, VcdTopLevelDescendantType {
   # The CDM ID of vCD org.
   cdmId: String!
 
@@ -116306,7 +116305,7 @@ type VcdOrgLogicalChildTypeEdge {
   # The actual VcdOrgLogicalChildType object wrapped by this edge.
   node: VcdOrgLogicalChildType!
 }
-type VcdOrgVdc implements HierarchyObject & CdmHierarchyObject & VcdDescendantType & VcdLogicalChildType & VcdOrgDescendantType & VcdOrgLogicalChildType & VcdTopLevelDescendantType {
+type VcdOrgVdc implements HierarchyObject, CdmHierarchyObject, VcdDescendantType, VcdLogicalChildType, VcdOrgDescendantType, VcdOrgLogicalChildType, VcdTopLevelDescendantType {
   # The CDM ID of vCD org VDC.
   cdmId: String!
 
@@ -116699,7 +116698,7 @@ interface VcdTopLevelDescendantType {
   # Security posture metadata.
   securityMetadata: SecurityMetadata
 }
-type VcdVapp implements HierarchyObject & CdmHierarchyObject & HierarchySnappable & CdmHierarchySnappableNew & VcdDescendantType & VcdOrgDescendantType & VcdOrgVdcLogicalChildType & VcdOrgVdcDescendantType & VcdCatalogLogicalChildType & VcdCatalogDescendantType & VcdTopLevelDescendantType {
+type VcdVapp implements HierarchyObject, CdmHierarchyObject, HierarchySnappable, CdmHierarchySnappableNew, VcdDescendantType, VcdOrgDescendantType, VcdOrgVdcLogicalChildType, VcdOrgVdcDescendantType, VcdCatalogLogicalChildType, VcdCatalogDescendantType, VcdTopLevelDescendantType {
   # The CDM ID of vCD vApp.
   cdmId: String!
   isRelic: Boolean!
@@ -117140,7 +117139,7 @@ type VcdVcenterConnectionState {
   # The connection status of the vCenter.
   status: RefreshableObjectConnectionStatus!
 }
-type VcdVimServer implements HierarchyObject & CdmHierarchyObject & VcdDescendantType & VcdLogicalChildType & VcdTopLevelDescendantType {
+type VcdVimServer implements HierarchyObject, CdmHierarchyObject, VcdDescendantType, VcdLogicalChildType, VcdTopLevelDescendantType {
   cdmId: String!
 
   # FID of the hierarchy object.
@@ -118924,7 +118923,7 @@ input VsphereBulkOnDemandSnapshotInput {
   # Required. User note to associate with audits.
   userNote: String
 }
-type VsphereComputeCluster implements CdmHierarchyObject & HierarchyObject & VsphereDatacenterPhysicalChildType & VsphereDatacenterDescendantType & VsphereVcenterDescendantType & VsphereVcenterPhysicalChildType {
+type VsphereComputeCluster implements CdmHierarchyObject, HierarchyObject, VsphereDatacenterPhysicalChildType, VsphereDatacenterDescendantType, VsphereVcenterDescendantType, VsphereVcenterPhysicalChildType {
   # This vsphere computer cluster's IOFilter status can be Uninstalled or Installed.
   ioFilterStatus: String!
 
@@ -119464,7 +119463,7 @@ interface VsphereContentLibraryLibraryChildType {
   # Security posture metadata.
   securityMetadata: SecurityMetadata
 }
-type VsphereDatacenter implements CdmHierarchyObject & HierarchyObject & VsphereVcenterLogicalChildType & VsphereVcenterPhysicalChildType & VsphereVcenterDescendantType & VsphereDatacenterFolderLogicalChildType & VsphereDatacenterFolderPhysicalChildType & VsphereDatacenterFolderDescendantType {
+type VsphereDatacenter implements CdmHierarchyObject, HierarchyObject, VsphereVcenterLogicalChildType, VsphereVcenterPhysicalChildType, VsphereVcenterDescendantType, VsphereDatacenterFolderLogicalChildType, VsphereDatacenterFolderPhysicalChildType, VsphereDatacenterFolderDescendantType {
   # Vsphere Datacenter CDM ID.
   cdmId: String!
 
@@ -120169,7 +120168,7 @@ type VsphereDatacenterPhysicalChildTypeEdge {
   node: VsphereDatacenterPhysicalChildType!
 }
 # Vsphere datastore.
-type VsphereDatastore implements CdmHierarchyObject & HierarchyObject & VsphereComputeClusterDescendantType & VsphereDatacenterDescendantType & VsphereHostDescendantType & VsphereResourcePoolDescendantType & VsphereVcenterDescendantType & VsphereDatastoreClusterPhysicalChildType & VsphereDatastoreClusterDescendantType {
+type VsphereDatastore implements CdmHierarchyObject, HierarchyObject, VsphereComputeClusterDescendantType, VsphereDatacenterDescendantType, VsphereHostDescendantType, VsphereResourcePoolDescendantType, VsphereVcenterDescendantType, VsphereDatastoreClusterPhysicalChildType, VsphereDatastoreClusterDescendantType {
   capacity: Long!
   freeSpace: Long!
   datastoreType: String!
@@ -120254,7 +120253,7 @@ type VsphereDatastore implements CdmHierarchyObject & HierarchyObject & VsphereC
   securityMetadata: SecurityMetadata
 }
 # Vsphere datastore cluster.
-type VsphereDatastoreCluster implements CdmHierarchyObject & HierarchyObject & VsphereComputeClusterDescendantType & VsphereDatacenterDescendantType & VsphereDatacenterPhysicalChildType & VsphereHostDescendantType & VsphereResourcePoolDescendantType & VsphereVcenterDescendantType & VsphereVcenterPhysicalChildType {
+type VsphereDatastoreCluster implements CdmHierarchyObject, HierarchyObject, VsphereComputeClusterDescendantType, VsphereDatacenterDescendantType, VsphereDatacenterPhysicalChildType, VsphereHostDescendantType, VsphereResourcePoolDescendantType, VsphereVcenterDescendantType, VsphereVcenterPhysicalChildType {
   # Vcenter ID.
   vcenterId: UUID!
 
@@ -120648,7 +120647,7 @@ input VsphereFileRestoreInfo {
   # ID of VSphere VM.
   vmFid: String = ""
 }
-type VsphereFolder implements CdmHierarchyObject & HierarchyObject & VsphereVcenterLogicalChildType & VsphereVcenterDescendantType & VsphereDatacenterFolderLogicalChildType & VsphereDatacenterFolderDescendantType & VsphereDatacenterLogicalChildType & VsphereDatacenterDescendantType & VsphereFolderLogicalChildType & VsphereFolderDescendantType {
+type VsphereFolder implements CdmHierarchyObject, HierarchyObject, VsphereVcenterLogicalChildType, VsphereVcenterDescendantType, VsphereDatacenterFolderLogicalChildType, VsphereDatacenterFolderDescendantType, VsphereDatacenterLogicalChildType, VsphereDatacenterDescendantType, VsphereFolderLogicalChildType, VsphereFolderDescendantType {
   # Vsphere folder CDM ID.
   cdmId: String!
 
@@ -121020,7 +121019,7 @@ type VsphereFolderLogicalChildTypeEdge {
   # The actual VsphereFolderLogicalChildType object wrapped by this edge.
   node: VsphereFolderLogicalChildType!
 }
-type VsphereHost implements CdmHierarchyObject & HierarchyObject & VsphereVcenterDescendantType & VsphereVcenterPhysicalChildType & VsphereComputeClusterPhysicalChildType & VsphereComputeClusterDescendantType & VsphereDatacenterDescendantType & VsphereDatacenterPhysicalChildType {
+type VsphereHost implements CdmHierarchyObject, HierarchyObject, VsphereVcenterDescendantType, VsphereVcenterPhysicalChildType, VsphereComputeClusterPhysicalChildType, VsphereComputeClusterDescendantType, VsphereDatacenterDescendantType, VsphereDatacenterPhysicalChildType {
   # Vsphere ESXI Host CDM ID.
   cdmId: String!
   isStandaloneHost: Boolean!
@@ -121654,7 +121653,7 @@ enum VsphereMountStatus {
   # Vsphere Live Mount is unmounting.
   UNMOUNTING
 }
-type VsphereNetwork implements CdmHierarchyObject & HierarchyObject & VsphereHostDescendantType & VsphereComputeClusterDescendantType & VsphereResourcePoolDescendantType & VsphereVcenterDescendantType {
+type VsphereNetwork implements CdmHierarchyObject, HierarchyObject, VsphereHostDescendantType, VsphereComputeClusterDescendantType, VsphereResourcePoolDescendantType, VsphereVcenterDescendantType {
   # MOID of the vSphere network.
   moid: String!
 
@@ -121818,7 +121817,7 @@ type VsphereProxyVmStaticIpInfo {
 type VsphereRequestErrorInfo {
   message: String!
 }
-type VsphereResourcePool implements CdmHierarchyObject & HierarchyObject & VsphereComputeClusterPhysicalChildType & VsphereComputeClusterDescendantType & VsphereResourcePoolPhysicalChildType & VsphereResourcePoolDescendantType & VsphereHostPhysicalChildType & VsphereHostDescendantType & VsphereDatacenterDescendantType & VsphereVcenterDescendantType {
+type VsphereResourcePool implements CdmHierarchyObject, HierarchyObject, VsphereComputeClusterPhysicalChildType, VsphereComputeClusterDescendantType, VsphereResourcePoolPhysicalChildType, VsphereResourcePoolDescendantType, VsphereHostPhysicalChildType, VsphereHostDescendantType, VsphereDatacenterDescendantType, VsphereVcenterDescendantType {
   # Snapshot consistency mandate.
   snapshotConsistencyMandate: ConsistencyLevelEnum!
 
@@ -122210,7 +122209,7 @@ input VsphereSnapshotRestoreFilesFromLocationInput {
   # Configuration for the restore request.
   config: RestoreFilesJobConfigInput!
 }
-type VsphereTag implements CdmHierarchyObject & HierarchyObject & VsphereVcenterDescendantType & VsphereTagCategoryDescendantType & VsphereTagCategoryTagChildType {
+type VsphereTag implements CdmHierarchyObject, HierarchyObject, VsphereVcenterDescendantType, VsphereTagCategoryDescendantType, VsphereTagCategoryTagChildType {
   vcenterId: String!
   vsphereTagPath: [PathNode!]!
 
@@ -122327,7 +122326,7 @@ type VsphereTag implements CdmHierarchyObject & HierarchyObject & VsphereVcenter
   # Security posture metadata.
   securityMetadata: SecurityMetadata
 }
-type VsphereTagCategory implements CdmHierarchyObject & HierarchyObject & VsphereVcenterDescendantType & VsphereVcenterTagChildType {
+type VsphereTagCategory implements CdmHierarchyObject, HierarchyObject, VsphereVcenterDescendantType, VsphereVcenterTagChildType {
   vcenterId: String!
   vsphereTagPath: [PathNode!]!
 
@@ -122771,7 +122770,7 @@ type VsphereTagTagChildTypeEdge {
   # The actual VsphereTagTagChildType object wrapped by this edge.
   node: VsphereTagTagChildType!
 }
-type VsphereVcenter implements CdmHierarchyObject & HierarchyObject {
+type VsphereVcenter implements CdmHierarchyObject, HierarchyObject {
   vcenterId: String!
   username: String!
   caCerts: String!
@@ -123565,7 +123564,7 @@ enum VsphereVirtualDiskSortBy {
   # Sort by size.
   SIZE
 }
-type VsphereVm implements CdmHierarchyObject & CdmHierarchySnappableNew & HierarchyObject & HierarchySnappable & VsphereComputeClusterDescendantType & VsphereContentLibraryDescendantType & VsphereContentLibraryLibraryChildType & VsphereDatacenterDescendantType & VsphereDatacenterFolderDescendantType & VsphereFolderLogicalChildType & VsphereFolderDescendantType & VsphereHostPhysicalChildType & VsphereHostDescendantType & VsphereVcenterDescendantType & VsphereTagTagChildType & VsphereTagDescendantType & VsphereTagCategoryDescendantType & VcdDescendantType & VcdLogicalChildType & VcdOrgDescendantType & VcdOrgLogicalChildType & VcdOrgVdcDescendantType & VcdOrgVdcLogicalChildType & VcdVappDescendantType & VcdVappLogicalChildType & VcdTopLevelDescendantType {
+type VsphereVm implements CdmHierarchyObject, CdmHierarchySnappableNew, HierarchyObject, HierarchySnappable, VsphereComputeClusterDescendantType, VsphereContentLibraryDescendantType, VsphereContentLibraryLibraryChildType, VsphereDatacenterDescendantType, VsphereDatacenterFolderDescendantType, VsphereFolderLogicalChildType, VsphereFolderDescendantType, VsphereHostPhysicalChildType, VsphereHostDescendantType, VsphereVcenterDescendantType, VsphereTagTagChildType, VsphereTagDescendantType, VsphereTagCategoryDescendantType, VcdDescendantType, VcdLogicalChildType, VcdOrgDescendantType, VcdOrgLogicalChildType, VcdOrgVdcDescendantType, VcdOrgVdcLogicalChildType, VcdVappDescendantType, VcdVappLogicalChildType, VcdTopLevelDescendantType {
   cdmId: String!
   isRelic: Boolean!
   guestOsName: String!
@@ -124540,7 +124539,7 @@ type WhitelistedAnalyzer {
   whitelistedPath: String!
 }
 # Windows Failover cluster.
-type WindowsCluster implements HierarchyObject & CdmHierarchyObject & MssqlTopLevelDescendantType {
+type WindowsCluster implements HierarchyObject, CdmHierarchyObject, MssqlTopLevelDescendantType {
   # The list of hosts associated with a Windows Cluster.
   hosts: [PhysicalHost!]!
 
@@ -124858,7 +124857,7 @@ type WindowsClusterLogicalChildTypeEdge {
   node: WindowsClusterLogicalChildType!
 }
 # Windows fileset.
-type WindowsFileset implements CdmHierarchyObject & CdmHierarchySnappableNew & HierarchyObject & HierarchySnappable & PhysicalHostDescendantType & PhysicalHostPhysicalChildType & HostFailoverClusterDescendantType & HostFailoverClusterPhysicalChildType & FailoverClusterAppDescendantType & FailoverClusterAppPhysicalChildType & FailoverClusterTopLevelDescendantType & FilesetTemplateDescendantType & FilesetTemplatePhysicalChildType {
+type WindowsFileset implements CdmHierarchyObject, CdmHierarchySnappableNew, HierarchyObject, HierarchySnappable, PhysicalHostDescendantType, PhysicalHostPhysicalChildType, HostFailoverClusterDescendantType, HostFailoverClusterPhysicalChildType, FailoverClusterAppDescendantType, FailoverClusterAppPhysicalChildType, FailoverClusterTopLevelDescendantType, FilesetTemplateDescendantType, FilesetTemplatePhysicalChildType {
   # ID of the CDM cluster.
   cdmId: String!
 
