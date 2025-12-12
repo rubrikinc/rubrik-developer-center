@@ -8,13 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://developer.rubrik.com/Rubrik-Security-Cloud-API/Snapshots/">
+        <link rel="canonical" href="https://developer.rubrik.com/Rubrik-Security-Cloud-API/Deprecations/">
       
       
-        <link rel="prev" href="../Deprecations/">
+        <link rel="prev" href="../Changelog/">
       
       
-        <link rel="next" href="../authentication/">
+        <link rel="next" href="../Snapshots/">
       
       
         
@@ -25,7 +25,7 @@
     
     
       
-        <title>Snapshots - Rubrik Developer Center</title>
+        <title>GraphQL API Deprecations - Rubrik Developer Center</title>
       
     
     
@@ -111,7 +111,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#retrieving-snapshots-for-a-workload" class="md-skip">
+        <a href="#graphql-api-deprecations" class="md-skip">
           Skip to content
         </a>
       
@@ -144,7 +144,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Snapshots
+              GraphQL API Deprecations
             
           </span>
         </div>
@@ -4200,6 +4200,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -4208,57 +4210,900 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#retrieving-snapshots-for-a-workload" class="md-nav__link">
+  <a href="#deprecated-fields" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Retrieving Snapshots for a Workload
+        Deprecated Fields
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Deprecated Fields">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#deprecated-query-fields" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Deprecated Query Fields
       
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#retrieving-snapshots-for-multiple-workloads" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#deprecated-mutation-fields" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Retrieving Snapshots for multiple Workloads
+        Deprecated Mutation Fields
       
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#assigning-an-sla-to-a-snapshot" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#deprecated-type-fields" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Assigning an SLA to a Snapshot
+        Deprecated Type Fields
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Deprecated Type Fields">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#activityseries" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ActivitySeries
       
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#placing-a-snapshot-on-legal-hold" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#authorizedops" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Placing a Snapshot on Legal Hold
+        AuthorizedOps
       
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#deleting-unmanaged-snapshots" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#awscustomermanagedexocomputeconfig" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Deleting Unmanaged Snapshots
+        AwsCustomerManagedExocomputeConfig
       
     </span>
   </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#awsexocomputeconfig" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        AwsExocomputeConfig
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#awsfeatureconfig" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        AwsFeatureConfig
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#awsnativeebsvolume" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        AwsNativeEbsVolume
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#awsnativeec2instance" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        AwsNativeEc2Instance
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#awsnativerdsinstance" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        AwsNativeRdsInstance
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#awsnatives3bucket" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        AwsNativeS3Bucket
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#azureaddirectory" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        AzureAdDirectory
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#azureadrelateditemcount" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        AzureAdRelatedItemCount
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#azureadreverserelationship" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        AzureAdReverseRelationship
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#azurenativehierarchyobjecttype" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        AzureNativeHierarchyObjectType
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#azurenativemanageddisk" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        AzureNativeManagedDisk
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#azurenativeresourcegroup" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        AzureNativeResourceGroup
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#azurenativevirtualmachine" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        AzureNativeVirtualMachine
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#azuresqldatabaseserver" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        AzureSqlDatabaseServer
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#azuresqlmanagedinstanceserver" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        AzureSqlManagedInstanceServer
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#azurestorageaccount" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        AzureStorageAccount
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#azuresubscriptionwithexoconfigs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        AzureSubscriptionWithExoConfigs
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ccwithcloudinfo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        CcWithCloudInfo
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cdmsnapshot" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        CdmSnapshot
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cluster" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cluster
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#clusterconnection" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ClusterConnection
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#clusterdisk" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ClusterDisk
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#clustersladomain" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ClusterSlaDomain
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#column" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Column
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#createawsexocomputeconfigsreply" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        CreateAwsExocomputeConfigsReply
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#eulastate" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        EulaState
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fileresult" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FileResult
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gcpcloudsqlinstance" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        GcpCloudSqlInstance
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gcpnativedisk" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        GcpNativeDisk
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gcpnativegceinstance" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        GcpNativeGceInstance
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getmfasettingreply" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        GetMfaSettingReply
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getskippedteamssitereportresp" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        GetSkippedTeamsSiteReportResp
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#globalslareply" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        GlobalSlaReply
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#idpclaimattributetype" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        IdpClaimAttributeType
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#m365backupstoragegroup" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        M365BackupStorageGroup
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#managedvolume" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ManagedVolume
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mongosource" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        MongoSource
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#o365group" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        O365Group
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#policydetail" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        PolicyDetail
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#policyobj" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        PolicyObj
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rbacobject" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        RbacObject
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rcvblimigrationdetails" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        RcvBliMigrationDetails
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#role" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Role
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#roletemplate" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        RoleTemplate
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rubrikmanagedazuretarget" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        RubrikManagedAzureTarget
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rubrikmanagedrcstarget" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        RubrikManagedRcsTarget
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rubrikmanageds3compatibletarget" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        RubrikManagedS3CompatibleTarget
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#saphanahostobject" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        SapHanaHostObject
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#snappable" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Snappable
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#taskdetail" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        TaskDetail
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tprrulesmap" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        TprRulesMap
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#updateawsexocomputeconfigsreply" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        UpdateAwsExocomputeConfigsReply
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vcd" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Vcd
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vspherecomputecluster" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        VsphereComputeCluster
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vspherehost" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        VsphereHost
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vsphereresourcepool" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        VsphereResourcePool
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#deprecated-enum-values" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Deprecated Enum Values
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Deprecated Enum Values">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#awscloudexternalartifact" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        AwsCloudExternalArtifact
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#certificaterotationstatus" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        CertificateRotationStatus
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cloudaccountfeature" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        CloudAccountFeature
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#clouddirectnasvendortype" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        CloudDirectNasVendorType
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cloudnativetagrulefilterfields" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        CloudNativeTagRuleFilterFields
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dataviewtypeenum" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        DataViewTypeEnum
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gcpstorageclass" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        GcpStorageClass
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hierarchyfilterfield" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        HierarchyFilterField
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hierarchysortbyfield" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        HierarchySortByField
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inventorysubhierarchyrootenum" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        InventorySubHierarchyRootEnum
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#jobtype" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        JobType
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#managedobjecttype" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ManagedObjectType
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#openaccesstype" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        OpenAccessType
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rcvredundancy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        RcvRedundancy
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#snapshotqueryfilterfield" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        SnapshotQueryFilterField
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#targetqueryfilterfield" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        TargetQueryFilterField
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -4279,301 +5124,432 @@
 
 
 
-  <h1>Snapshots</h1>
-
-<p>In Rubrik, snapshots are a point-in-time copy of data, coupled with metadata. Snapshots can be managed by an <abbr title="Service Level Agreement. An SLA Domain is a data protection policy in Rubrik.">SLA</abbr> Domain, ahearing to the policy's archival, replication, and retention rules. Snapshot's can also be unmanaged, which means they are not tied to a specific policy, and retained forever.</p>
-<h2 id="retrieving-snapshots-for-a-workload">Retrieving Snapshots for a Workload</h2>
-<p>When retrieving snapshots for a workload, use that workload's <abbr title="Rubrik Security Cloud: The modern data security SaaS management plane">RSC</abbr> <code>id</code>. If using <code>snappableConnection</code> to list objects, use the <code>fid</code> field from the query. In the case of MSSQL databases, you must use the <code>dagId</code> from the MSSQL database object.</p>
-<div class="tabbed-set tabbed-alternate" data-tabs="1:3"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1"><abbr title="A query language for APIs that provides a complete and understandble description of the data in the API. GraphQL is a strongly typed architecture, which means everything has a type and there is no guessing on the structure.">GraphQL</abbr></label><label for="__tabbed_1_2">PowerShell SDK</label><label for="__tabbed_1_3">Shell</label></div>
-<div class="tabbed-content">
-<div class="tabbed-block">
-<div class="language-graphql highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="k">query</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">  </span><span class="n">snapshotOfASnappableConnection</span><span class="p">(</span>
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">    </span><span class="n">workloadId</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;123e4567-e89b-12d3-a456-426614174000&quot;</span>
-</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">  </span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="w">    </span><span class="n">nodes</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="w">      </span><span class="n">id</span>
-</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="w">      </span><span class="n">date</span>
-</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="w">      </span><span class="n">isIndexed</span>
-</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="w">      </span><span class="n">isOnDemandSnapshot</span>
-</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="w">      </span><span class="n">isQuarantined</span>
-</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="w">      </span><span class="n">isAnomaly</span>
-</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a><span class="w">      </span><span class="n">isExpired</span>
-</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a><span class="w">      </span><span class="n">expirationDate</span>
-</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a><span class="w">      </span><span class="p">...</span><span class="n">on</span><span class="w"> </span><span class="n">CdmSnapshot</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-0-15"><a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a><span class="w">        </span><span class="n">isRetentionLocked</span>
-</span><span id="__span-0-16"><a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a><span class="w">        </span><span class="n">legalHoldInfo</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-0-17"><a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a><span class="w">          </span><span class="n">shouldHoldInPlace</span>
-</span><span id="__span-0-18"><a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a><span class="w">        </span><span class="p">}</span>
-</span><span id="__span-0-19"><a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a><span class="w">        </span><span class="n">snapshotRetentionInfo</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-0-20"><a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a><span class="w">          </span><span class="n">localInfo</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-0-21"><a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a><span class="w">            </span><span class="n">isSnapshotPresent</span>
-</span><span id="__span-0-22"><a id="__codelineno-0-22" name="__codelineno-0-22" href="#__codelineno-0-22"></a><span class="w">            </span><span class="n">isExpirationDateCalculated</span>
-</span><span id="__span-0-23"><a id="__codelineno-0-23" name="__codelineno-0-23" href="#__codelineno-0-23"></a><span class="w">            </span><span class="n">expirationTime</span>
-</span><span id="__span-0-24"><a id="__codelineno-0-24" name="__codelineno-0-24" href="#__codelineno-0-24"></a><span class="w">          </span><span class="p">}</span>
-</span><span id="__span-0-25"><a id="__codelineno-0-25" name="__codelineno-0-25" href="#__codelineno-0-25"></a><span class="w">          </span><span class="n">archivalInfos</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-0-26"><a id="__codelineno-0-26" name="__codelineno-0-26" href="#__codelineno-0-26"></a><span class="w">            </span><span class="n">isSnapshotPresent</span>
-</span><span id="__span-0-27"><a id="__codelineno-0-27" name="__codelineno-0-27" href="#__codelineno-0-27"></a><span class="w">            </span><span class="n">isExpirationDateCalculated</span>
-</span><span id="__span-0-28"><a id="__codelineno-0-28" name="__codelineno-0-28" href="#__codelineno-0-28"></a><span class="w">            </span><span class="n">expirationTime</span>
-</span><span id="__span-0-29"><a id="__codelineno-0-29" name="__codelineno-0-29" href="#__codelineno-0-29"></a><span class="w">          </span><span class="p">}</span>
-</span><span id="__span-0-30"><a id="__codelineno-0-30" name="__codelineno-0-30" href="#__codelineno-0-30"></a><span class="w">          </span><span class="n">replicationInfos</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-0-31"><a id="__codelineno-0-31" name="__codelineno-0-31" href="#__codelineno-0-31"></a><span class="w">            </span><span class="n">isSnapshotPresent</span>
-</span><span id="__span-0-32"><a id="__codelineno-0-32" name="__codelineno-0-32" href="#__codelineno-0-32"></a><span class="w">            </span><span class="n">isExpirationDateCalculated</span>
-</span><span id="__span-0-33"><a id="__codelineno-0-33" name="__codelineno-0-33" href="#__codelineno-0-33"></a><span class="w">            </span><span class="n">expirationTime</span>
-</span><span id="__span-0-34"><a id="__codelineno-0-34" name="__codelineno-0-34" href="#__codelineno-0-34"></a><span class="w">          </span><span class="p">}</span>
-</span><span id="__span-0-35"><a id="__codelineno-0-35" name="__codelineno-0-35" href="#__codelineno-0-35"></a><span class="w">        </span><span class="p">}</span>
-</span><span id="__span-0-36"><a id="__codelineno-0-36" name="__codelineno-0-36" href="#__codelineno-0-36"></a><span class="w">        </span><span class="n">fileCount</span>
-</span><span id="__span-0-37"><a id="__codelineno-0-37" name="__codelineno-0-37" href="#__codelineno-0-37"></a><span class="w">        </span><span class="n">consistencyLevel</span>
-</span><span id="__span-0-38"><a id="__codelineno-0-38" name="__codelineno-0-38" href="#__codelineno-0-38"></a><span class="w">      </span><span class="p">}</span>
-</span><span id="__span-0-39"><a id="__codelineno-0-39" name="__codelineno-0-39" href="#__codelineno-0-39"></a><span class="w">      </span><span class="p">...</span><span class="n">on</span><span class="w"> </span><span class="n">PolarisSnapshot</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-0-40"><a id="__codelineno-0-40" name="__codelineno-0-40" href="#__codelineno-0-40"></a><span class="w">        </span><span class="n">snapshotRetentionInfo</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-0-41"><a id="__codelineno-0-41" name="__codelineno-0-41" href="#__codelineno-0-41"></a><span class="w">          </span><span class="n">localInfo</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-0-42"><a id="__codelineno-0-42" name="__codelineno-0-42" href="#__codelineno-0-42"></a><span class="w">            </span><span class="n">isSnapshotPresent</span>
-</span><span id="__span-0-43"><a id="__codelineno-0-43" name="__codelineno-0-43" href="#__codelineno-0-43"></a><span class="w">            </span><span class="n">isExpirationDateCalculated</span>
-</span><span id="__span-0-44"><a id="__codelineno-0-44" name="__codelineno-0-44" href="#__codelineno-0-44"></a><span class="w">            </span><span class="n">expirationTime</span>
-</span><span id="__span-0-45"><a id="__codelineno-0-45" name="__codelineno-0-45" href="#__codelineno-0-45"></a><span class="w">          </span><span class="p">}</span>
-</span><span id="__span-0-46"><a id="__codelineno-0-46" name="__codelineno-0-46" href="#__codelineno-0-46"></a><span class="w">          </span><span class="n">archivalInfos</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-0-47"><a id="__codelineno-0-47" name="__codelineno-0-47" href="#__codelineno-0-47"></a><span class="w">            </span><span class="n">isSnapshotPresent</span>
-</span><span id="__span-0-48"><a id="__codelineno-0-48" name="__codelineno-0-48" href="#__codelineno-0-48"></a><span class="w">            </span><span class="n">isExpirationDateCalculated</span>
-</span><span id="__span-0-49"><a id="__codelineno-0-49" name="__codelineno-0-49" href="#__codelineno-0-49"></a><span class="w">            </span><span class="n">expirationTime</span>
-</span><span id="__span-0-50"><a id="__codelineno-0-50" name="__codelineno-0-50" href="#__codelineno-0-50"></a><span class="w">          </span><span class="p">}</span>
-</span><span id="__span-0-51"><a id="__codelineno-0-51" name="__codelineno-0-51" href="#__codelineno-0-51"></a><span class="w">          </span><span class="n">replicationInfos</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-0-52"><a id="__codelineno-0-52" name="__codelineno-0-52" href="#__codelineno-0-52"></a><span class="w">            </span><span class="n">isSnapshotPresent</span>
-</span><span id="__span-0-53"><a id="__codelineno-0-53" name="__codelineno-0-53" href="#__codelineno-0-53"></a><span class="w">            </span><span class="n">isExpirationDateCalculated</span>
-</span><span id="__span-0-54"><a id="__codelineno-0-54" name="__codelineno-0-54" href="#__codelineno-0-54"></a><span class="w">            </span><span class="n">expirationTime</span>
-</span><span id="__span-0-55"><a id="__codelineno-0-55" name="__codelineno-0-55" href="#__codelineno-0-55"></a><span class="w">          </span><span class="p">}</span>
-</span><span id="__span-0-56"><a id="__codelineno-0-56" name="__codelineno-0-56" href="#__codelineno-0-56"></a><span class="w">        </span><span class="p">}</span>
-</span><span id="__span-0-57"><a id="__codelineno-0-57" name="__codelineno-0-57" href="#__codelineno-0-57"></a><span class="w">        </span><span class="nl">polarisConsistencyLevel</span><span class="p">:</span><span class="w"> </span><span class="n">consistencyLevel</span>
-</span><span id="__span-0-58"><a id="__codelineno-0-58" name="__codelineno-0-58" href="#__codelineno-0-58"></a><span class="w">      </span><span class="p">}</span>
-</span><span id="__span-0-59"><a id="__codelineno-0-59" name="__codelineno-0-59" href="#__codelineno-0-59"></a><span class="w">    </span><span class="p">}</span>
-</span><span id="__span-0-60"><a id="__codelineno-0-60" name="__codelineno-0-60" href="#__codelineno-0-60"></a><span class="w">  </span><span class="p">}</span>
-</span><span id="__span-0-61"><a id="__codelineno-0-61" name="__codelineno-0-61" href="#__codelineno-0-61"></a><span class="p">}</span>
-</span></code></pre></div>
-</div>
-<div class="tabbed-block">
-<div class="language-powershell highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nb">Get-RscVmwareVm</span> <span class="n">-Name</span> <span class="s2">&quot;example&quot;</span> <span class="p">|</span> <span class="nb">Get-RscSnapshot</span>
-</span></code></pre></div>
-</div>
-<div class="tabbed-block">
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="ch">#!/bin/bash</span>
-</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>
-</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="c1"># RSC_TOKEN=&quot;YOUR_RSC_ACCESS_TOKEN&quot;</span>
-</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="nv">query</span><span class="o">=</span><span class="s2">&quot;query { snapshotOfASnappableConnection( workloadId: \\\&quot;123e4567-e89b-12d3-a456-426614174000\\\&quot; ) { nodes { id date isIndexed isOnDemandSnapshot isQuarantined isAnomaly isExpired expirationDate ...on CdmSnapshot { isRetentionLocked legalHoldInfo { shouldHoldInPlace } snapshotRetentionInfo { localInfo { isSnapshotPresent isExpirationDateCalculated expirationTime } archivalInfos { isSnapshotPresent isExpirationDateCalculated expirationTime } replicationInfos { isSnapshotPresent isExpirationDateCalculated expirationTime } } fileCount consistencyLevel } ...on PolarisSnapshot { snapshotRetentionInfo { localInfo { isSnapshotPresent isExpirationDateCalculated expirationTime } archivalInfos { isSnapshotPresent isExpirationDateCalculated expirationTime } replicationInfos { isSnapshotPresent isExpirationDateCalculated expirationTime } } polarisConsistencyLevel: consistencyLevel } } } }&quot;</span>
-</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>
-</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="c1"># Execute the GraphQL query with curl</span>
-</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a>curl<span class="w"> </span>-X<span class="w"> </span>POST<span class="w"> </span><span class="se">\</span>
-</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="w">  </span>-H<span class="w"> </span><span class="s2">&quot;Content-Type: application/json&quot;</span><span class="w"> </span><span class="se">\</span>
-</span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a><span class="w">  </span>-H<span class="w"> </span><span class="s2">&quot;Authorization: Bearer </span><span class="nv">$RSC_TOKEN</span><span class="s2">&quot;</span><span class="w"> </span><span class="se">\</span>
-</span><span id="__span-2-10"><a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a><span class="w">  </span>-d<span class="w"> </span><span class="s2">&quot;{\&quot;query\&quot;: \&quot;</span><span class="nv">$query</span><span class="s2">\&quot;}&quot;</span><span class="w"> </span><span class="se">\</span>
-</span><span id="__span-2-11"><a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a><span class="w">  </span>https://example.my.rubrik.com/api/graphql
-</span></code></pre></div>
-</div>
-</div>
-</div>
-<h2 id="retrieving-snapshots-for-multiple-workloads">Retrieving Snapshots for multiple Workloads</h2>
-<div class="tabbed-set tabbed-alternate" data-tabs="2:3"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><input id="__tabbed_2_3" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1"><abbr title="A query language for APIs that provides a complete and understandble description of the data in the API. GraphQL is a strongly typed architecture, which means everything has a type and there is no guessing on the structure.">GraphQL</abbr></label><label for="__tabbed_2_2">PowerShell SDK</label><label for="__tabbed_2_3">Shell</label></div>
-<div class="tabbed-content">
-<div class="tabbed-block">
-<div class="language-graphql highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="k">query</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="w">  </span><span class="n">snapshotOfSnappablesConnection</span><span class="p">(</span>
-</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="w">    </span><span class="n">snappableIds</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s">&quot;123e4567-e89b-12d3-a456-426614174000&quot;</span><span class="p">,</span><span class="s">&quot;123e4567-e89b-12d3-a456-426614174001&quot;</span><span class="p">]</span>
-</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="w">  </span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="w">    </span><span class="n">nodes</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="w">      </span><span class="n">id</span>
-</span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a><span class="w">      </span><span class="n">date</span>
-</span><span id="__span-3-8"><a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a><span class="w">      </span><span class="n">isIndexed</span>
-</span><span id="__span-3-9"><a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a><span class="w">      </span><span class="n">isOnDemandSnapshot</span>
-</span><span id="__span-3-10"><a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a><span class="w">      </span><span class="n">isQuarantined</span>
-</span><span id="__span-3-11"><a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a><span class="w">      </span><span class="n">isAnomaly</span>
-</span><span id="__span-3-12"><a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a><span class="w">      </span><span class="n">isExpired</span>
-</span><span id="__span-3-13"><a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a><span class="w">      </span><span class="n">expirationDate</span>
-</span><span id="__span-3-14"><a id="__codelineno-3-14" name="__codelineno-3-14" href="#__codelineno-3-14"></a><span class="w">      </span><span class="p">...</span><span class="n">on</span><span class="w"> </span><span class="n">CdmSnapshot</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-3-15"><a id="__codelineno-3-15" name="__codelineno-3-15" href="#__codelineno-3-15"></a><span class="w">        </span><span class="n">isRetentionLocked</span>
-</span><span id="__span-3-16"><a id="__codelineno-3-16" name="__codelineno-3-16" href="#__codelineno-3-16"></a><span class="w">        </span><span class="n">legalHoldInfo</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-3-17"><a id="__codelineno-3-17" name="__codelineno-3-17" href="#__codelineno-3-17"></a><span class="w">          </span><span class="n">shouldHoldInPlace</span>
-</span><span id="__span-3-18"><a id="__codelineno-3-18" name="__codelineno-3-18" href="#__codelineno-3-18"></a><span class="w">        </span><span class="p">}</span>
-</span><span id="__span-3-19"><a id="__codelineno-3-19" name="__codelineno-3-19" href="#__codelineno-3-19"></a><span class="w">        </span><span class="n">snapshotRetentionInfo</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-3-20"><a id="__codelineno-3-20" name="__codelineno-3-20" href="#__codelineno-3-20"></a><span class="w">          </span><span class="n">localInfo</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-3-21"><a id="__codelineno-3-21" name="__codelineno-3-21" href="#__codelineno-3-21"></a><span class="w">            </span><span class="n">isSnapshotPresent</span>
-</span><span id="__span-3-22"><a id="__codelineno-3-22" name="__codelineno-3-22" href="#__codelineno-3-22"></a><span class="w">            </span><span class="n">isExpirationDateCalculated</span>
-</span><span id="__span-3-23"><a id="__codelineno-3-23" name="__codelineno-3-23" href="#__codelineno-3-23"></a><span class="w">            </span><span class="n">expirationTime</span>
-</span><span id="__span-3-24"><a id="__codelineno-3-24" name="__codelineno-3-24" href="#__codelineno-3-24"></a><span class="w">          </span><span class="p">}</span>
-</span><span id="__span-3-25"><a id="__codelineno-3-25" name="__codelineno-3-25" href="#__codelineno-3-25"></a><span class="w">          </span><span class="n">archivalInfos</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-3-26"><a id="__codelineno-3-26" name="__codelineno-3-26" href="#__codelineno-3-26"></a><span class="w">            </span><span class="n">isSnapshotPresent</span>
-</span><span id="__span-3-27"><a id="__codelineno-3-27" name="__codelineno-3-27" href="#__codelineno-3-27"></a><span class="w">            </span><span class="n">isExpirationDateCalculated</span>
-</span><span id="__span-3-28"><a id="__codelineno-3-28" name="__codelineno-3-28" href="#__codelineno-3-28"></a><span class="w">            </span><span class="n">expirationTime</span>
-</span><span id="__span-3-29"><a id="__codelineno-3-29" name="__codelineno-3-29" href="#__codelineno-3-29"></a><span class="w">          </span><span class="p">}</span>
-</span><span id="__span-3-30"><a id="__codelineno-3-30" name="__codelineno-3-30" href="#__codelineno-3-30"></a><span class="w">          </span><span class="n">replicationInfos</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-3-31"><a id="__codelineno-3-31" name="__codelineno-3-31" href="#__codelineno-3-31"></a><span class="w">            </span><span class="n">isSnapshotPresent</span>
-</span><span id="__span-3-32"><a id="__codelineno-3-32" name="__codelineno-3-32" href="#__codelineno-3-32"></a><span class="w">            </span><span class="n">isExpirationDateCalculated</span>
-</span><span id="__span-3-33"><a id="__codelineno-3-33" name="__codelineno-3-33" href="#__codelineno-3-33"></a><span class="w">            </span><span class="n">expirationTime</span>
-</span><span id="__span-3-34"><a id="__codelineno-3-34" name="__codelineno-3-34" href="#__codelineno-3-34"></a><span class="w">          </span><span class="p">}</span>
-</span><span id="__span-3-35"><a id="__codelineno-3-35" name="__codelineno-3-35" href="#__codelineno-3-35"></a><span class="w">        </span><span class="p">}</span>
-</span><span id="__span-3-36"><a id="__codelineno-3-36" name="__codelineno-3-36" href="#__codelineno-3-36"></a><span class="w">        </span><span class="n">fileCount</span>
-</span><span id="__span-3-37"><a id="__codelineno-3-37" name="__codelineno-3-37" href="#__codelineno-3-37"></a><span class="w">        </span><span class="n">consistencyLevel</span>
-</span><span id="__span-3-38"><a id="__codelineno-3-38" name="__codelineno-3-38" href="#__codelineno-3-38"></a><span class="w">      </span><span class="p">}</span>
-</span><span id="__span-3-39"><a id="__codelineno-3-39" name="__codelineno-3-39" href="#__codelineno-3-39"></a><span class="w">      </span><span class="p">...</span><span class="n">on</span><span class="w"> </span><span class="n">PolarisSnapshot</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-3-40"><a id="__codelineno-3-40" name="__codelineno-3-40" href="#__codelineno-3-40"></a><span class="w">        </span><span class="n">snapshotRetentionInfo</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-3-41"><a id="__codelineno-3-41" name="__codelineno-3-41" href="#__codelineno-3-41"></a><span class="w">          </span><span class="n">localInfo</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-3-42"><a id="__codelineno-3-42" name="__codelineno-3-42" href="#__codelineno-3-42"></a><span class="w">            </span><span class="n">isSnapshotPresent</span>
-</span><span id="__span-3-43"><a id="__codelineno-3-43" name="__codelineno-3-43" href="#__codelineno-3-43"></a><span class="w">            </span><span class="n">isExpirationDateCalculated</span>
-</span><span id="__span-3-44"><a id="__codelineno-3-44" name="__codelineno-3-44" href="#__codelineno-3-44"></a><span class="w">            </span><span class="n">expirationTime</span>
-</span><span id="__span-3-45"><a id="__codelineno-3-45" name="__codelineno-3-45" href="#__codelineno-3-45"></a><span class="w">          </span><span class="p">}</span>
-</span><span id="__span-3-46"><a id="__codelineno-3-46" name="__codelineno-3-46" href="#__codelineno-3-46"></a><span class="w">          </span><span class="n">archivalInfos</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-3-47"><a id="__codelineno-3-47" name="__codelineno-3-47" href="#__codelineno-3-47"></a><span class="w">            </span><span class="n">isSnapshotPresent</span>
-</span><span id="__span-3-48"><a id="__codelineno-3-48" name="__codelineno-3-48" href="#__codelineno-3-48"></a><span class="w">            </span><span class="n">isExpirationDateCalculated</span>
-</span><span id="__span-3-49"><a id="__codelineno-3-49" name="__codelineno-3-49" href="#__codelineno-3-49"></a><span class="w">            </span><span class="n">expirationTime</span>
-</span><span id="__span-3-50"><a id="__codelineno-3-50" name="__codelineno-3-50" href="#__codelineno-3-50"></a><span class="w">          </span><span class="p">}</span>
-</span><span id="__span-3-51"><a id="__codelineno-3-51" name="__codelineno-3-51" href="#__codelineno-3-51"></a><span class="w">          </span><span class="n">replicationInfos</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-3-52"><a id="__codelineno-3-52" name="__codelineno-3-52" href="#__codelineno-3-52"></a><span class="w">            </span><span class="n">isSnapshotPresent</span>
-</span><span id="__span-3-53"><a id="__codelineno-3-53" name="__codelineno-3-53" href="#__codelineno-3-53"></a><span class="w">            </span><span class="n">isExpirationDateCalculated</span>
-</span><span id="__span-3-54"><a id="__codelineno-3-54" name="__codelineno-3-54" href="#__codelineno-3-54"></a><span class="w">            </span><span class="n">expirationTime</span>
-</span><span id="__span-3-55"><a id="__codelineno-3-55" name="__codelineno-3-55" href="#__codelineno-3-55"></a><span class="w">          </span><span class="p">}</span>
-</span><span id="__span-3-56"><a id="__codelineno-3-56" name="__codelineno-3-56" href="#__codelineno-3-56"></a><span class="w">        </span><span class="p">}</span>
-</span><span id="__span-3-57"><a id="__codelineno-3-57" name="__codelineno-3-57" href="#__codelineno-3-57"></a><span class="w">        </span><span class="nl">polarisConsistencyLevel</span><span class="p">:</span><span class="w"> </span><span class="n">consistencyLevel</span>
-</span><span id="__span-3-58"><a id="__codelineno-3-58" name="__codelineno-3-58" href="#__codelineno-3-58"></a><span class="w">      </span><span class="p">}</span>
-</span><span id="__span-3-59"><a id="__codelineno-3-59" name="__codelineno-3-59" href="#__codelineno-3-59"></a><span class="w">    </span><span class="p">}</span>
-</span><span id="__span-3-60"><a id="__codelineno-3-60" name="__codelineno-3-60" href="#__codelineno-3-60"></a><span class="w">  </span><span class="p">}</span>
-</span><span id="__span-3-61"><a id="__codelineno-3-61" name="__codelineno-3-61" href="#__codelineno-3-61"></a><span class="p">}</span>
-</span></code></pre></div>
-</div>
-<div class="tabbed-block">
-<div class="language-powershell highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="nb">Get-RscWorkload</span> <span class="n">-Type</span> <span class="n">VMWARE_VIRTUAL_MACHINE</span><span class="p">|</span> <span class="nb">Get-RscSnapshot</span>
-</span></code></pre></div>
-</div>
-<div class="tabbed-block">
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="ch">#!/bin/bash</span>
-</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>
-</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="c1"># RSC_TOKEN=&quot;YOUR_RSC_ACCESS_TOKEN&quot;</span>
-</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="nv">query</span><span class="o">=</span><span class="s2">&quot;query { snapshotOfSnappablesConnection( snappableIds: [\\\&quot;123e4567-e89b-12d3-a456-426614174000\\\&quot;,\\\&quot;123e4567-e89b-12d3-a456-426614174001\\\&quot;] ) { nodes { id date isIndexed isOnDemandSnapshot isQuarantined isAnomaly isExpired expirationDate ...on CdmSnapshot { isRetentionLocked legalHoldInfo { shouldHoldInPlace } snapshotRetentionInfo { localInfo { isSnapshotPresent isExpirationDateCalculated expirationTime } archivalInfos { isSnapshotPresent isExpirationDateCalculated expirationTime } replicationInfos { isSnapshotPresent isExpirationDateCalculated expirationTime } } fileCount consistencyLevel } ...on PolarisSnapshot { snapshotRetentionInfo { localInfo { isSnapshotPresent isExpirationDateCalculated expirationTime } archivalInfos { isSnapshotPresent isExpirationDateCalculated expirationTime } replicationInfos { isSnapshotPresent isExpirationDateCalculated expirationTime } } polarisConsistencyLevel: consistencyLevel } } } }&quot;</span>
-</span><span id="__span-5-5"><a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>
-</span><span id="__span-5-6"><a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a><span class="c1"># Execute the GraphQL query with curl</span>
-</span><span id="__span-5-7"><a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a>curl<span class="w"> </span>-X<span class="w"> </span>POST<span class="w"> </span><span class="se">\</span>
-</span><span id="__span-5-8"><a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a><span class="w">  </span>-H<span class="w"> </span><span class="s2">&quot;Content-Type: application/json&quot;</span><span class="w"> </span><span class="se">\</span>
-</span><span id="__span-5-9"><a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a><span class="w">  </span>-H<span class="w"> </span><span class="s2">&quot;Authorization: Bearer </span><span class="nv">$RSC_TOKEN</span><span class="s2">&quot;</span><span class="w"> </span><span class="se">\</span>
-</span><span id="__span-5-10"><a id="__codelineno-5-10" name="__codelineno-5-10" href="#__codelineno-5-10"></a><span class="w">  </span>-d<span class="w"> </span><span class="s2">&quot;{\&quot;query\&quot;: \&quot;</span><span class="nv">$query</span><span class="s2">\&quot;}&quot;</span><span class="w"> </span><span class="se">\</span>
-</span><span id="__span-5-11"><a id="__codelineno-5-11" name="__codelineno-5-11" href="#__codelineno-5-11"></a><span class="w">  </span>https://example.my.rubrik.com/api/graphql
-</span></code></pre></div>
-</div>
-</div>
-</div>
-<h2 id="assigning-an-sla-to-a-snapshot">Assigning an <abbr title="Service Level Agreement. An SLA Domain is a data protection policy in Rubrik.">SLA</abbr> to a Snapshot</h2>
-<div class="tabbed-set tabbed-alternate" data-tabs="3:3"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><input id="__tabbed_3_2" name="__tabbed_3" type="radio" /><input id="__tabbed_3_3" name="__tabbed_3" type="radio" /><div class="tabbed-labels"><label for="__tabbed_3_1"><abbr title="A query language for APIs that provides a complete and understandble description of the data in the API. GraphQL is a strongly typed architecture, which means everything has a type and there is no guessing on the structure.">GraphQL</abbr></label><label for="__tabbed_3_2">PowerShell SDK</label><label for="__tabbed_3_3">Shell</label></div>
-<div class="tabbed-content">
-<div class="tabbed-block">
-<div class="language-graphql highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="k">mutation</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="w">  </span><span class="n">assignRetentionSLAToSnapshots</span><span class="p">(</span>
-</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="w">    </span><span class="n">snapshotFids</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s">&quot;b77f85ae-62d1-435b-9abf-2a1d97c6802f&quot;</span><span class="p">]</span>
-</span><span id="__span-6-4"><a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="w">    </span><span class="n">globalSlaAssignType</span><span class="p">:</span><span class="w"> </span><span class="no">protectWithSlaId</span>
-</span><span id="__span-6-5"><a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a><span class="w">    </span><span class="n">globalSlaOptionalFid</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;5b6e44ca-9a0d-42e8-a6ba-952159c69bab&quot;</span>
-</span><span id="__span-6-6"><a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a><span class="w">  </span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-6-7"><a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a><span class="w">    </span><span class="n">success</span>
-</span><span id="__span-6-8"><a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a><span class="w">  </span><span class="p">}</span>
-</span><span id="__span-6-9"><a id="__codelineno-6-9" name="__codelineno-6-9" href="#__codelineno-6-9"></a><span class="p">}</span>
-</span></code></pre></div>
-</div>
-<div class="tabbed-block">
-<div class="language-powershell highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="nv">$query</span> <span class="p">=</span> <span class="nb">New-RscMutation</span> <span class="n">-GqlMutation</span> <span class="n">assignRetentionSLAToSnapshots</span>
-</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="nv">$query</span><span class="p">.</span><span class="n">Var</span><span class="p">.</span><span class="n">globalSlaAssignType</span> <span class="p">=</span> <span class="no">[RubrikSecurityCloud.Types.SlaAssignTypeEnum]</span><span class="p">::</span><span class="n">PROTECT_WITH_SLA_ID</span>
-</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="nv">$query</span><span class="p">.</span><span class="n">Var</span><span class="p">.</span><span class="n">snapshotFids</span> <span class="p">=</span> <span class="p">@(</span><span class="s2">&quot;124a67b6-be5a-5181-9447-fac686bc9949&quot;</span><span class="p">)</span>
-</span><span id="__span-7-4"><a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a><span class="nv">$query</span><span class="p">.</span><span class="n">Var</span><span class="p">.</span><span class="n">globalSlaOptionalFid</span> <span class="p">=</span> <span class="s2">&quot;123e4567-e89b-12d3-a456-426614174000&quot;</span>
-</span><span id="__span-7-5"><a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a><span class="nv">$query</span><span class="p">.</span><span class="n">invoke</span><span class="p">()</span>
-</span></code></pre></div>
-</div>
-<div class="tabbed-block">
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="ch">#!/bin/bash</span>
-</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>
-</span><span id="__span-8-3"><a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a><span class="c1"># RSC_TOKEN=&quot;YOUR_RSC_ACCESS_TOKEN&quot;</span>
-</span><span id="__span-8-4"><a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a><span class="nv">query</span><span class="o">=</span><span class="s2">&quot;mutation { assignRetentionSLAToSnapshots( snapshotFids: [\\\&quot;b77f85ae-62d1-435b-9abf-2a1d97c6802f\\\&quot;] globalSlaAssignType: protectWithSlaId globalSlaOptionalFid: \\\&quot;5b6e44ca-9a0d-42e8-a6ba-952159c69bab\\\&quot; ) { success } }&quot;</span>
-</span><span id="__span-8-5"><a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a>
-</span><span id="__span-8-6"><a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a><span class="c1"># Execute the GraphQL query with curl</span>
-</span><span id="__span-8-7"><a id="__codelineno-8-7" name="__codelineno-8-7" href="#__codelineno-8-7"></a>curl<span class="w"> </span>-X<span class="w"> </span>POST<span class="w"> </span><span class="se">\</span>
-</span><span id="__span-8-8"><a id="__codelineno-8-8" name="__codelineno-8-8" href="#__codelineno-8-8"></a><span class="w">  </span>-H<span class="w"> </span><span class="s2">&quot;Content-Type: application/json&quot;</span><span class="w"> </span><span class="se">\</span>
-</span><span id="__span-8-9"><a id="__codelineno-8-9" name="__codelineno-8-9" href="#__codelineno-8-9"></a><span class="w">  </span>-H<span class="w"> </span><span class="s2">&quot;Authorization: Bearer </span><span class="nv">$RSC_TOKEN</span><span class="s2">&quot;</span><span class="w"> </span><span class="se">\</span>
-</span><span id="__span-8-10"><a id="__codelineno-8-10" name="__codelineno-8-10" href="#__codelineno-8-10"></a><span class="w">  </span>-d<span class="w"> </span><span class="s2">&quot;{\&quot;query\&quot;: \&quot;</span><span class="nv">$query</span><span class="s2">\&quot;}&quot;</span><span class="w"> </span><span class="se">\</span>
-</span><span id="__span-8-11"><a id="__codelineno-8-11" name="__codelineno-8-11" href="#__codelineno-8-11"></a><span class="w">  </span>https://example.my.rubrik.com/api/graphql
-</span></code></pre></div>
-</div>
-</div>
-</div>
-<h2 id="placing-a-snapshot-on-legal-hold">Placing a Snapshot on Legal Hold</h2>
-<div class="tabbed-set tabbed-alternate" data-tabs="4:3"><input checked="checked" id="__tabbed_4_1" name="__tabbed_4" type="radio" /><input id="__tabbed_4_2" name="__tabbed_4" type="radio" /><input id="__tabbed_4_3" name="__tabbed_4" type="radio" /><div class="tabbed-labels"><label for="__tabbed_4_1"><abbr title="A query language for APIs that provides a complete and understandble description of the data in the API. GraphQL is a strongly typed architecture, which means everything has a type and there is no guessing on the structure.">GraphQL</abbr></label><label for="__tabbed_4_2">PowerShell SDK</label><label for="__tabbed_4_3">Shell</label></div>
-<div class="tabbed-content">
-<div class="tabbed-block">
-<div class="language-graphql highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="k">mutation</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="w">  </span><span class="n">createLegalHold</span><span class="p">(</span><span class="n">input</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-9-3"><a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a><span class="w">    </span><span class="n">snapshotIds</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s">&quot;123e4567-e89b-12d3-a456-426614174000&quot;</span><span class="p">]</span>
-</span><span id="__span-9-4"><a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a><span class="w">    </span><span class="n">holdConfig</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="n">shouldHoldInPlace</span><span class="p">:</span><span class="w"> </span><span class="nb">true</span><span class="w"> </span><span class="p">}</span>
-</span><span id="__span-9-5"><a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a><span class="w">    </span><span class="n">userNote</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Example&quot;</span>
-</span><span id="__span-9-6"><a id="__codelineno-9-6" name="__codelineno-9-6" href="#__codelineno-9-6"></a><span class="w">  </span><span class="p">})</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-9-7"><a id="__codelineno-9-7" name="__codelineno-9-7" href="#__codelineno-9-7"></a><span class="w">    </span><span class="n">snapshotIds</span>
-</span><span id="__span-9-8"><a id="__codelineno-9-8" name="__codelineno-9-8" href="#__codelineno-9-8"></a><span class="w">  </span><span class="p">}</span>
-</span><span id="__span-9-9"><a id="__codelineno-9-9" name="__codelineno-9-9" href="#__codelineno-9-9"></a><span class="p">}</span>
-</span></code></pre></div>
-</div>
-<div class="tabbed-block">
-<div class="language-powershell highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="nv">$query</span> <span class="p">=</span> <span class="nb">New-RscMutation</span> <span class="n">-gqlMutation</span> <span class="n">createLegalHold</span> <span class="n">-AddField</span> <span class="n">SnapshotIds</span>
-</span><span id="__span-10-2"><a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a><span class="nv">$query</span><span class="p">.</span><span class="n">var</span><span class="p">.</span><span class="n">input</span> <span class="p">=</span> <span class="nb">Get-RscType</span> <span class="n">-name</span> <span class="n">CreateLegalHoldInput</span>
-</span><span id="__span-10-3"><a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a><span class="nv">$query</span><span class="p">.</span><span class="n">var</span><span class="p">.</span><span class="n">input</span><span class="p">.</span><span class="n">SnapshotIds</span> <span class="p">=</span> <span class="p">@(</span><span class="s2">&quot;123e4567-e89b-12d3-a456-426614174000&quot;</span><span class="p">)</span>
-</span><span id="__span-10-4"><a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a><span class="nv">$query</span><span class="p">.</span><span class="n">var</span><span class="p">.</span><span class="n">input</span><span class="p">.</span><span class="n">HoldConfig</span> <span class="p">=</span> <span class="nb">Get-RscType</span> <span class="n">-Name</span> <span class="n">HoldConfig</span>
-</span><span id="__span-10-5"><a id="__codelineno-10-5" name="__codelineno-10-5" href="#__codelineno-10-5"></a><span class="nv">$query</span><span class="p">.</span><span class="n">var</span><span class="p">.</span><span class="n">input</span><span class="p">.</span><span class="n">HoldConfig</span><span class="p">.</span><span class="n">ShouldHoldInPlace</span> <span class="p">=</span> <span class="nv">$true</span>
-</span><span id="__span-10-6"><a id="__codelineno-10-6" name="__codelineno-10-6" href="#__codelineno-10-6"></a><span class="nv">$query</span><span class="p">.</span><span class="n">var</span><span class="p">.</span><span class="n">input</span><span class="p">.</span><span class="n">UserNote</span> <span class="p">=</span> <span class="s2">&quot;Example&quot;</span>
-</span><span id="__span-10-7"><a id="__codelineno-10-7" name="__codelineno-10-7" href="#__codelineno-10-7"></a><span class="nv">$query</span><span class="p">.</span><span class="n">invoke</span><span class="p">()</span>
-</span></code></pre></div>
-</div>
-<div class="tabbed-block">
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="ch">#!/bin/bash</span>
-</span><span id="__span-11-2"><a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a>
-</span><span id="__span-11-3"><a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a><span class="c1"># RSC_TOKEN=&quot;YOUR_RSC_ACCESS_TOKEN&quot;</span>
-</span><span id="__span-11-4"><a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a><span class="nv">query</span><span class="o">=</span><span class="s2">&quot;mutation { createLegalHold(input: { snapshotIds: [\\\&quot;123e4567-e89b-12d3-a456-426614174000\\\&quot;] holdConfig: { shouldHoldInPlace: true } userNote: \\\&quot;Example\\\&quot; }) { snapshotIds } }&quot;</span>
-</span><span id="__span-11-5"><a id="__codelineno-11-5" name="__codelineno-11-5" href="#__codelineno-11-5"></a>
-</span><span id="__span-11-6"><a id="__codelineno-11-6" name="__codelineno-11-6" href="#__codelineno-11-6"></a><span class="c1"># Execute the GraphQL query with curl</span>
-</span><span id="__span-11-7"><a id="__codelineno-11-7" name="__codelineno-11-7" href="#__codelineno-11-7"></a>curl<span class="w"> </span>-X<span class="w"> </span>POST<span class="w"> </span><span class="se">\</span>
-</span><span id="__span-11-8"><a id="__codelineno-11-8" name="__codelineno-11-8" href="#__codelineno-11-8"></a><span class="w">  </span>-H<span class="w"> </span><span class="s2">&quot;Content-Type: application/json&quot;</span><span class="w"> </span><span class="se">\</span>
-</span><span id="__span-11-9"><a id="__codelineno-11-9" name="__codelineno-11-9" href="#__codelineno-11-9"></a><span class="w">  </span>-H<span class="w"> </span><span class="s2">&quot;Authorization: Bearer </span><span class="nv">$RSC_TOKEN</span><span class="s2">&quot;</span><span class="w"> </span><span class="se">\</span>
-</span><span id="__span-11-10"><a id="__codelineno-11-10" name="__codelineno-11-10" href="#__codelineno-11-10"></a><span class="w">  </span>-d<span class="w"> </span><span class="s2">&quot;{\&quot;query\&quot;: \&quot;</span><span class="nv">$query</span><span class="s2">\&quot;}&quot;</span><span class="w"> </span><span class="se">\</span>
-</span><span id="__span-11-11"><a id="__codelineno-11-11" name="__codelineno-11-11" href="#__codelineno-11-11"></a><span class="w">  </span>https://example.my.rubrik.com/api/graphql
-</span></code></pre></div>
-</div>
-</div>
-</div>
-<h2 id="deleting-unmanaged-snapshots">Deleting Unmanaged Snapshots</h2>
-<p>Unmanaged snapshots have no policy and will be retained forever until deleted. A snapshot is an unmanaged or "forever" if <code>isExpirationDateCalculated</code> is <em>true</em> and <code>expirationTime</code> is <em>null</em>.</p>
-<div class="tabbed-set tabbed-alternate" data-tabs="5:3"><input checked="checked" id="__tabbed_5_1" name="__tabbed_5" type="radio" /><input id="__tabbed_5_2" name="__tabbed_5" type="radio" /><input id="__tabbed_5_3" name="__tabbed_5" type="radio" /><div class="tabbed-labels"><label for="__tabbed_5_1"><abbr title="A query language for APIs that provides a complete and understandble description of the data in the API. GraphQL is a strongly typed architecture, which means everything has a type and there is no guessing on the structure.">GraphQL</abbr></label><label for="__tabbed_5_2">PowerShell SDK</label><label for="__tabbed_5_3">Shell</label></div>
-<div class="tabbed-content">
-<div class="tabbed-block">
-<div class="language-graphql highlight"><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="k">mutation</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-12-2"><a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a><span class="w">  </span><span class="n">deleteUnmanagedSnapshots</span><span class="p">(</span><span class="n">input</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-12-3"><a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a><span class="w">    </span><span class="n">snapshotIds</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s">&quot;124a67b6-be5a-5181-9447-fac686bc9949&quot;</span><span class="p">]</span>
-</span><span id="__span-12-4"><a id="__codelineno-12-4" name="__codelineno-12-4" href="#__codelineno-12-4"></a><span class="w">  </span><span class="p">})</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-12-5"><a id="__codelineno-12-5" name="__codelineno-12-5" href="#__codelineno-12-5"></a><span class="w">    </span><span class="n">success</span>
-</span><span id="__span-12-6"><a id="__codelineno-12-6" name="__codelineno-12-6" href="#__codelineno-12-6"></a><span class="w">  </span><span class="p">}</span>
-</span><span id="__span-12-7"><a id="__codelineno-12-7" name="__codelineno-12-7" href="#__codelineno-12-7"></a><span class="p">}</span>
-</span></code></pre></div>
-</div>
-<div class="tabbed-block">
-<div class="language-powershell highlight"><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="nv">$query</span> <span class="p">=</span> <span class="nb">New-RscMutation</span> <span class="n">-GqlMutation</span> <span class="n">deleteUnmanagedSnapshots</span>
-</span><span id="__span-13-2"><a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a><span class="nv">$query</span><span class="p">.</span><span class="n">var</span><span class="p">.</span><span class="n">input</span> <span class="p">=</span> <span class="nb">Get-RscType</span> <span class="n">-Name</span> <span class="n">DeleteUnmanagedSnapshotsInput</span>
-</span><span id="__span-13-3"><a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a><span class="nv">$query</span><span class="p">.</span><span class="n">var</span><span class="p">.</span><span class="n">input</span><span class="p">.</span><span class="n">SnapshotIds</span> <span class="p">=</span> <span class="p">@(</span><span class="s2">&quot;124a67b6-be5a-5181-9447-fac686bc9949&quot;</span><span class="p">)</span>
-</span><span id="__span-13-4"><a id="__codelineno-13-4" name="__codelineno-13-4" href="#__codelineno-13-4"></a><span class="nv">$query</span><span class="p">.</span><span class="n">Invoke</span><span class="p">()</span>
-</span></code></pre></div>
-</div>
-<div class="tabbed-block">
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-14-1"><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a><span class="ch">#!/bin/bash</span>
-</span><span id="__span-14-2"><a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a>
-</span><span id="__span-14-3"><a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a><span class="c1"># RSC_TOKEN=&quot;YOUR_RSC_ACCESS_TOKEN&quot;</span>
-</span><span id="__span-14-4"><a id="__codelineno-14-4" name="__codelineno-14-4" href="#__codelineno-14-4"></a><span class="nv">query</span><span class="o">=</span><span class="s2">&quot;mutation { deleteUnmanagedSnapshots(input: { snapshotIds: [\\\&quot;124a67b6-be5a-5181-9447-fac686bc9949\\\&quot;] }) { success } }&quot;</span>
-</span><span id="__span-14-5"><a id="__codelineno-14-5" name="__codelineno-14-5" href="#__codelineno-14-5"></a>
-</span><span id="__span-14-6"><a id="__codelineno-14-6" name="__codelineno-14-6" href="#__codelineno-14-6"></a><span class="c1"># Execute the GraphQL query with curl</span>
-</span><span id="__span-14-7"><a id="__codelineno-14-7" name="__codelineno-14-7" href="#__codelineno-14-7"></a>curl<span class="w"> </span>-X<span class="w"> </span>POST<span class="w"> </span><span class="se">\</span>
-</span><span id="__span-14-8"><a id="__codelineno-14-8" name="__codelineno-14-8" href="#__codelineno-14-8"></a><span class="w">  </span>-H<span class="w"> </span><span class="s2">&quot;Content-Type: application/json&quot;</span><span class="w"> </span><span class="se">\</span>
-</span><span id="__span-14-9"><a id="__codelineno-14-9" name="__codelineno-14-9" href="#__codelineno-14-9"></a><span class="w">  </span>-H<span class="w"> </span><span class="s2">&quot;Authorization: Bearer </span><span class="nv">$RSC_TOKEN</span><span class="s2">&quot;</span><span class="w"> </span><span class="se">\</span>
-</span><span id="__span-14-10"><a id="__codelineno-14-10" name="__codelineno-14-10" href="#__codelineno-14-10"></a><span class="w">  </span>-d<span class="w"> </span><span class="s2">&quot;{\&quot;query\&quot;: \&quot;</span><span class="nv">$query</span><span class="s2">\&quot;}&quot;</span><span class="w"> </span><span class="se">\</span>
-</span><span id="__span-14-11"><a id="__codelineno-14-11" name="__codelineno-14-11" href="#__codelineno-14-11"></a><span class="w">  </span>https://example.my.rubrik.com/api/graphql
-</span></code></pre></div>
-</div>
-</div>
-</div>
+<h1 id="graphql-api-deprecations"><abbr title="A query language for APIs that provides a complete and understandble description of the data in the API. GraphQL is a strongly typed architecture, which means everything has a type and there is no guessing on the structure.">GraphQL</abbr> API Deprecations</h1>
+<p>This document lists all deprecated fields, queries, mutations, and enum values in the Rubrik Security Cloud <abbr title="A query language for APIs that provides a complete and understandble description of the data in the API. GraphQL is a strongly typed architecture, which means everything has a type and there is no guessing on the structure.">GraphQL</abbr> API.</p>
+<h2 id="deprecated-fields">Deprecated Fields</h2>
+<p><em>Extracted from schema: 20251208.graphql</em></p>
+<p><strong>Total deprecated items: 188</strong></p>
+<h3 id="deprecated-query-fields">Deprecated Query Fields</h3>
+<ul>
+<li><strong><code>allAzureResourceGroups</code></strong>: Use allResourceGroupsFromAzure instead.</li>
+<li><strong><code>allAzureSubnets</code></strong>: Use allAzureCloudAccountSubnetsByRegion instead.</li>
+<li><strong><code>allClusterWebCertsAndIpmis</code></strong>: Use clusterConnection instead.</li>
+<li><strong><code>azureExocomputeNetworkSetupTemplate</code></strong>: Azure networking resources creation for Exocompute using ARM template will not be supported.</li>
+<li><strong><code>getKorgTaskchainStatus</code></strong>: Use <code>taskchain</code> field instead.</li>
+<li><strong><code>getPermissions</code></strong>: Use allEffectiveRbacPermissions instead.</li>
+<li><strong><code>hypervServers</code></strong>: Use hypervServersPaginated instead.</li>
+<li><strong><code>ipWhitelist</code></strong>: use <code>ipWhitelistEntries</code> and <code>ipWhitelistSettings</code> instead.</li>
+<li><strong><code>k8sAppManifest</code></strong>: Not supported anymore.</li>
+<li><strong><code>mongodbBulkRecoverableRange</code></strong>: Use mongoBulkRecoverableRanges instead.</li>
+<li><strong><code>mongodbCollection</code></strong>: Use mongoCollection instead.</li>
+<li><strong><code>mongodbCollectionRecoverableRange</code></strong>: Use mongoRecoverableRanges instead.</li>
+<li><strong><code>mongodbCollections</code></strong>: Use mongoCollections instead.</li>
+<li><strong><code>mongodbDatabase</code></strong>: Use mongoDatabase instead.</li>
+<li><strong><code>mongodbDatabases</code></strong>: Use mongoDatabases instead.</li>
+<li><strong><code>mongodbSource</code></strong>: Use mongoSource instead.</li>
+<li><strong><code>mongodbSources</code></strong>: Use mongoSources instead.</li>
+<li><strong><code>mssqlDefaultProperties</code></strong>: Use mssqlDefaultPropertiesOnCluster instead.</li>
+<li><strong><code>o365SharepointObjects</code></strong>: This is deprecated as it was tied to the specific object type. Use o365SharepointObjectList instead.</li>
+<li><strong><code>protectedVolumesCount</code></strong>: This functionality is incorrect and deprecated.</li>
+<li><strong><code>recoverDb2DatabaseToEndOfBackup</code></strong>: Use mutation field instead. This query field will be removed in a future release.</li>
+<li><strong><code>recoverDb2DatabaseToPointInTime</code></strong>: Use mutation field instead. This query field will be removed in a future release.</li>
+<li><strong><code>tableFilters</code></strong>: No longer supported.</li>
+<li><strong><code>userGroups</code></strong>: Use groupsInCurrentAndDescendantOrganization instead.</li>
+<li><strong><code>userNotifications</code></strong>: This query is deprecated.</li>
+<li><strong><code>vsphereVMMissedRecoverableRange</code></strong>: Deprecated. Use vmwareVmMissedRecoverableRange instead.</li>
+<li><strong><code>vsphereVMRecoverableRange</code></strong>: Deprecated. Use vmwareRecoverableRanges instead.</li>
+</ul>
+<h3 id="deprecated-mutation-fields">Deprecated Mutation Fields</h3>
+<ul>
+<li><strong><code>backupO365Mailbox</code></strong>: Use backupM365Mailbox instead.</li>
+<li><strong><code>backupO365Onedrive</code></strong>: Use backupM365Onedrive instead.</li>
+<li><strong><code>backupO365SharepointDrive</code></strong>: Use backupM365SharepointDrive instead.</li>
+<li><strong><code>backupO365Team</code></strong>: Use backupM365Team instead.</li>
+<li><strong><code>bulkDeleteMongodbSources</code></strong>: Use bulkDeleteMongoSources instead.</li>
+<li><strong><code>createAutomaticAwsTargetMapping</code></strong>: This mutation is deprecated.</li>
+<li><strong><code>createAutomaticAzureTargetMapping</code></strong>: This mutation is deprecated.</li>
+<li><strong><code>createAutomaticRcsTargetMapping</code></strong>: This mutation is deprecated. Please use createRcvLocationsFromTemplate.</li>
+<li><strong><code>createMongodbSource</code></strong>: Use addMongoSource instead.</li>
+<li><strong><code>createOnDemandMongoDatabaseBackup</code></strong>: Use createOnDemandMongoDatabaseBackupV2 instead.</li>
+<li><strong><code>deleteCertificate</code></strong>: Deprecated. Use deleteGlobalCertificate instead.</li>
+<li><strong><code>deleteCloudWorkloadSnapshot</code></strong>: Use deleteUnmanagedSnapshots instead.</li>
+<li><strong><code>deleteMongodbSource</code></strong>: Use deleteMongoSource instead.</li>
+<li><strong><code>deleteSapHanaDbSnapshot</code></strong>: Please use deleteUnmanagedSnapshots mutation instead or use the <abbr title="Rubrik Security Cloud: The modern data security SaaS management plane">RSC</abbr> UI delete button from snapshots page</li>
+<li><strong><code>downloadAuditLogCsvAsync</code></strong>: Use downloadFile instead.</li>
+<li><strong><code>downloadReportCsvAsync</code></strong>: Use downloadFile instead.</li>
+<li><strong><code>downloadReportPdfAsync</code></strong>: Use downloadFile instead.</li>
+<li><strong><code>exportO365Mailbox</code></strong>: Use exportO365MailboxV2 instead.</li>
+<li><strong><code>gcpCloudAccountAddManualAuthProject</code></strong>: Use addGcpCloudAccountManualAuthProject instead.</li>
+<li><strong><code>gcpCloudAccountDeleteProjects</code></strong>: Use gcpCloudAccountDeleteProjectsV2 instead.</li>
+<li><strong><code>gcpNativeDisableProject</code></strong>: Use gcpCloudAccountDeleteProjectsV2 instead.</li>
+<li><strong><code>recoverCloudDirectPath</code></strong>: Not in use. Use recoverCloudDirectMultiPaths instead.</li>
+<li><strong><code>recoverMongodbSource</code></strong>: Use recoverMongoSource instead.</li>
+<li><strong><code>restoreO365Mailbox</code></strong>: Use restoreO365MailboxV2 instead.</li>
+<li><strong><code>setIpWhitelistEnabled</code></strong>: use <code>setIpWhitelistSetting</code> instead.</li>
+<li><strong><code>stopJobInstance</code></strong>: Use stopJobInstanceFromEventSeries instead.</li>
+<li><strong><code>updateAgentDeploymentSettingInBatch</code></strong>: Deprecated. Use updateAgentDeploymentSettingInBatchNew instead.</li>
+<li><strong><code>updateAutomaticAwsTargetMapping</code></strong>: This mutation is deprecated.</li>
+<li><strong><code>updateAutomaticAzureTargetMapping</code></strong>: This mutation is deprecated.</li>
+<li><strong><code>updateCertificate</code></strong>: Deprecated. Use updateGlobalCertificate instead.</li>
+<li><strong><code>updateClusterLocation</code></strong>: Deprecated. Use updateClusterSettings instead.</li>
+<li><strong><code>updateIpWhitelist</code></strong>: use <code>setIpWhitelistSetting</code> to update the mode, or <code>update/add/deleteIpWhitelistEntries</code> to update entries instead.</li>
+<li><strong><code>updateManagedIdentities</code></strong>: Use updateManagedIdentitiesAsync instead.</li>
+<li><strong><code>updateMongodbSource</code></strong>: Use patchMongoSource instead.</li>
+<li><strong><code>updateRcsAutomaticTargetMapping</code></strong>: This mutation is deprecated. Please use updateRcvLocationsFromTemplate.</li>
+<li><strong><code>vsphereExcludeVmDisks</code></strong>: Deprecated. Use excludeVmDisks instead.</li>
+<li><strong><code>vsphereVmRecoverFiles</code></strong>: Deprecated. Use vsphereVmRecoverFilesNew instead.</li>
+</ul>
+<h3 id="deprecated-type-fields">Deprecated Type Fields</h3>
+<h4 id="activityseries">ActivitySeries</h4>
+<ul>
+<li><strong><code>orgId</code></strong>: Deprecated. Refer to organizations.</li>
+<li><strong><code>orgName</code></strong>: Deprecated. Refer to organizations.</li>
+</ul>
+<h4 id="authorizedops">AuthorizedOps</h4>
+<ul>
+<li><strong><code>operations</code></strong>: Use authorizedOperations instead.</li>
+</ul>
+<h4 id="awscustomermanagedexocomputeconfig">AwsCustomerManagedExocomputeConfig</h4>
+<ul>
+<li><strong><code>clusterName</code></strong>: Use  clusterName from AwsExocomputeClusterConnect API instead.</li>
+</ul>
+<h4 id="awsexocomputeconfig">AwsExocomputeConfig</h4>
+<ul>
+<li><strong><code>configs</code></strong>: Deprecated in favor of BYOK8s, use exocomputeConfigs instead.</li>
+<li><strong><code>mappedCloudAccountIds</code></strong>: Use mappedCloudAccounts instead, cloud account IDs of mapped accounts are contained in mappedCloudAccounts.</li>
+</ul>
+<h4 id="awsfeatureconfig">AwsFeatureConfig</h4>
+<ul>
+<li><strong><code>exocomputeConfigs</code></strong>: Deprecated in favor of BYOK8s, use exocomputeConfigurations instead.</li>
+</ul>
+<h4 id="awsnativeebsvolume">AwsNativeEbsVolume</h4>
+<ul>
+<li><strong><code>awsNativeAccount</code></strong>: Deprecated, use awsAccount instead.</li>
+<li><strong><code>isIndexingEnabled</code></strong>: Deprecated, use fileIndexingStatus instead.</li>
+</ul>
+<h4 id="awsnativeec2instance">AwsNativeEc2Instance</h4>
+<ul>
+<li><strong><code>awsNativeAccount</code></strong>: Deprecated, use awsAccount instead.</li>
+<li><strong><code>isIndexingEnabled</code></strong>: Deprecated, use fileIndexingStatus instead.</li>
+</ul>
+<h4 id="awsnativerdsinstance">AwsNativeRdsInstance</h4>
+<ul>
+<li><strong><code>awsNativeAccount</code></strong>: Deprecated, use awsAccount instead.</li>
+</ul>
+<h4 id="awsnatives3bucket">AwsNativeS3Bucket</h4>
+<ul>
+<li><strong><code>awsNativeAccount</code></strong>: Deprecated, use awsAccount instead.</li>
+</ul>
+<h4 id="azureaddirectory">AzureAdDirectory</h4>
+<ul>
+<li><strong><code>isProvisioned</code></strong>: Use provisioningState instead.</li>
+</ul>
+<h4 id="azureadrelateditemcount">AzureAdRelatedItemCount</h4>
+<ul>
+<li><strong><code>relationshipType</code></strong>: Deprecated, use relatedItemType instead.</li>
+</ul>
+<h4 id="azureadreverserelationship">AzureAdReverseRelationship</h4>
+<ul>
+<li><strong><code>relatedObjectIds</code></strong>: use <code>relatedObjects</code> instead.</li>
+</ul>
+<h4 id="azurenativehierarchyobjecttype">AzureNativeHierarchyObjectType</h4>
+<ul>
+<li><strong><code>resourceGroup</code></strong>: Deprecated, use azureResourceGroup instead.</li>
+</ul>
+<h4 id="azurenativemanageddisk">AzureNativeManagedDisk</h4>
+<ul>
+<li><strong><code>allAttachedAzureNativeVirtualMachines</code></strong>: Deprecated, use attachedAzureNativeVirtualMachines instead.</li>
+<li><strong><code>azureNativeResourceGroupAndSubscriptionDetails</code></strong>: Deprecated, use azureResourceGroupDetails instead.</li>
+<li><strong><code>isFileIndexingEnabled</code></strong>: Deprecated, use fileIndexingStatus instead.</li>
+<li><strong><code>resourceGroup</code></strong>: Deprecated, use azureResourceGroup instead.</li>
+</ul>
+<h4 id="azurenativeresourcegroup">AzureNativeResourceGroup</h4>
+<ul>
+<li><strong><code>azureNativeSubscriptionDetails</code></strong>: Deprecated, use azureSubscriptionDetails instead.</li>
+<li><strong><code>subscription</code></strong>: Deprecated, use azureSubscription instead.</li>
+</ul>
+<h4 id="azurenativevirtualmachine">AzureNativeVirtualMachine</h4>
+<ul>
+<li><strong><code>azureNativeResourceGroupAndSubscriptionDetails</code></strong>: Deprecated, use azureResourceGroupDetails instead.</li>
+<li><strong><code>isFileIndexingEnabled</code></strong>: Deprecated, use fileIndexingStatus instead.</li>
+<li><strong><code>resourceGroup</code></strong>: Deprecated, use azureResourceGroup instead.</li>
+</ul>
+<h4 id="azuresqldatabaseserver">AzureSqlDatabaseServer</h4>
+<ul>
+<li><strong><code>azureNativeResourceGroup</code></strong>: Deprecated, use azureResourceGroup instead.</li>
+<li><strong><code>azureNativeResourceGroupAndSubscriptionDetails</code></strong>: Deprecated, use azureResourceGroupDetails instead.</li>
+</ul>
+<h4 id="azuresqlmanagedinstanceserver">AzureSqlManagedInstanceServer</h4>
+<ul>
+<li><strong><code>azureNativeResourceGroup</code></strong>: Deprecated, use azureResourceGroup instead.</li>
+<li><strong><code>azureNativeResourceGroupAndSubscriptionDetails</code></strong>: Deprecated, use azureResourceGroupDetails instead.</li>
+</ul>
+<h4 id="azurestorageaccount">AzureStorageAccount</h4>
+<ul>
+<li><strong><code>azureNativeResourceGroupAndSubscriptionDetails</code></strong>: Deprecated, use azureResourceGroupDetails instead.</li>
+<li><strong><code>resourceGroup</code></strong>: Deprecated, use azureResourceGroup instead.</li>
+</ul>
+<h4 id="azuresubscriptionwithexoconfigs">AzureSubscriptionWithExoConfigs</h4>
+<ul>
+<li><strong><code>mappedCloudAccountIds</code></strong>: Use mappedCloudAccounts instead. The cloud account IDs of the mapped accounts are contained in the field 'mappedCloudAccounts'.</li>
+</ul>
+<h4 id="ccwithcloudinfo">CcWithCloudInfo</h4>
+<ul>
+<li><strong><code>cloudAccountId</code></strong>: This field is deprecated because it is no longer used.</li>
+</ul>
+<h4 id="cdmsnapshot">CdmSnapshot</h4>
+<ul>
+<li><strong><code>slaDomain</code></strong>: Associating an <abbr title="Service Level Agreement. An SLA Domain is a data protection policy in Rubrik.">SLA</abbr> ID with a snapshot could lead to a wrong idea since if the <abbr title="Service Level Agreement. An SLA Domain is a data protection policy in Rubrik.">SLA</abbr> is edited, then its config would be different from what is being seen</li>
+</ul>
+<h4 id="cluster">Cluster</h4>
+<ul>
+<li><strong><code>isHealthy</code></strong>: Use systemStatus instead.</li>
+<li><strong><code>statusFromDb</code></strong>: Use status instead.</li>
+</ul>
+<h4 id="clusterconnection">ClusterConnection</h4>
+<ul>
+<li><strong><code>aggregateClusterHealth</code></strong>: This field is deprecated because it is no longer used.</li>
+</ul>
+<h4 id="clusterdisk">ClusterDisk</h4>
+<ul>
+<li><strong><code>id</code></strong>: Please use diskId instead.</li>
+</ul>
+<h4 id="clustersladomain">ClusterSlaDomain</h4>
+<ul>
+<li><strong><code>ownerOrgName</code></strong>: This field has been deprecated in favor of ownerOrg field.</li>
+<li><strong><code>replicationSpec</code></strong>: Use replicationSpecsV2 instead.</li>
+</ul>
+<h4 id="column">Column</h4>
+<ul>
+<li><strong><code>aggregate</code></strong>: This field is not useful.</li>
+<li><strong><code>dimensional</code></strong>: This field is not useful.</li>
+<li><strong><code>nullable</code></strong>: This field is not useful.</li>
+</ul>
+<h4 id="createawsexocomputeconfigsreply">CreateAwsExocomputeConfigsReply</h4>
+<ul>
+<li><strong><code>configs</code></strong>: Deprecated in favor of BYOK8s, use exocomputeConfigs instead.</li>
+</ul>
+<h4 id="eulastate">EulaState</h4>
+<ul>
+<li><strong><code>isAccepted</code></strong>: Use pactsafeEulaState instead.</li>
+<li><strong><code>isPactsafeEnabled</code></strong>: Use isPactsafeV2Enabled instead.</li>
+</ul>
+<h4 id="fileresult">FileResult</h4>
+<ul>
+<li><strong><code>attributesSummary</code></strong>: No longer used.</li>
+</ul>
+<h4 id="gcpcloudsqlinstance">GcpCloudSqlInstance</h4>
+<ul>
+<li><strong><code>gcpNativeProjectDetails</code></strong>: Deprecated, use gcpProjectDetails instead.</li>
+</ul>
+<h4 id="gcpnativedisk">GcpNativeDisk</h4>
+<ul>
+<li><strong><code>gcpNativeProject</code></strong>: Deprecated, use <code>gcpProject</code> instead.</li>
+<li><strong><code>gcpNativeProjectDetails</code></strong>: Deprecated, use gcpProjectDetails instead.</li>
+</ul>
+<h4 id="gcpnativegceinstance">GcpNativeGceInstance</h4>
+<ul>
+<li><strong><code>gcpNativeProject</code></strong>: Deprecated, use <code>gcpProject</code> instead.</li>
+<li><strong><code>gcpNativeProjectDetails</code></strong>: Deprecated, use gcpProjectDetails instead.</li>
+</ul>
+<h4 id="getmfasettingreply">GetMfaSettingReply</h4>
+<ul>
+<li><strong><code>mandatoryTotpEnforcementDate</code></strong>: Deprecated. Query MandatoryTotpGracePeriod instead.</li>
+</ul>
+<h4 id="getskippedteamssitereportresp">GetSkippedTeamsSiteReportResp</h4>
+<ul>
+<li><strong><code>totalSkippedSiteCount</code></strong>: api now triggers async download and does not return the count.</li>
+</ul>
+<h4 id="globalslareply">GlobalSlaReply</h4>
+<ul>
+<li><strong><code>allOrgsWithAccess</code></strong>: This field is deprecated and has been replaced by the allOrgsHavingAccess field, which must be used instead.</li>
+<li><strong><code>logConfig</code></strong>: Use objectSpecificConfigs instead.</li>
+<li><strong><code>ownerOrgName</code></strong>: This field has been deprecated in favor of ownerOrg field.</li>
+<li><strong><code>replicationSpec</code></strong>: Use replicationSpecsV2 instead.</li>
+</ul>
+<h4 id="idpclaimattributetype">IdpClaimAttributeType</h4>
+<ul>
+<li><strong><code>type</code></strong>: type is deprecated, use attributeType instead.</li>
+</ul>
+<h4 id="m365backupstoragegroup">M365BackupStorageGroup</h4>
+<ul>
+<li><strong><code>configuredGroupSpec</code></strong>: Use configuredGroupSpecification instead.</li>
+</ul>
+<h4 id="managedvolume">ManagedVolume</h4>
+<ul>
+<li><strong><code>physicalUsedSize</code></strong>: Use reportWorkload with the metric physicalBytes instead.</li>
+</ul>
+<h4 id="mongosource">MongoSource</h4>
+<ul>
+<li><strong><code>dataHosts</code></strong>: Use hostDetails instead.</li>
+</ul>
+<h4 id="o365group">O365Group</h4>
+<ul>
+<li><strong><code>configuredGroupSpec</code></strong>: Use configuredGroupSpecification instead.</li>
+</ul>
+<h4 id="policydetail">PolicyDetail</h4>
+<ul>
+<li><strong><code>objectsPercentCoverage</code></strong>: Deprecated. Use percentCoverage instead.</li>
+</ul>
+<h4 id="policyobj">PolicyObj</h4>
+<ul>
+<li><strong><code>attributesSummary</code></strong>: No longer used.</li>
+</ul>
+<h4 id="rbacobject">RbacObject</h4>
+<ul>
+<li><strong><code>objectId</code></strong>: Deprecated: use managedId instead.</li>
+</ul>
+<h4 id="rcvblimigrationdetails">RcvBliMigrationDetails</h4>
+<ul>
+<li><strong><code>migrationStatus</code></strong>: Use bli_migration_status instead.</li>
+<li><strong><code>migrationUnavailabilityReason</code></strong>: Use bli_migration_unavailability_reason instead.</li>
+</ul>
+<h4 id="role">Role</h4>
+<ul>
+<li><strong><code>effectivePermissions</code></strong>: Use effectiveRbacPermissions instead.</li>
+<li><strong><code>permissions</code></strong>: Use effectiveRbacPermissions and explicitlyAssignedPermissions instead.</li>
+<li><strong><code>syncedClusters</code></strong>: Deprecated: use paginatedSyncedClusters instead</li>
+</ul>
+<h4 id="roletemplate">RoleTemplate</h4>
+<ul>
+<li><strong><code>permissions</code></strong>: Use explicitlyAssignedPermissions instead.</li>
+</ul>
+<h4 id="rubrikmanagedazuretarget">RubrikManagedAzureTarget</h4>
+<ul>
+<li><strong><code>accessKey</code></strong>: Access key response no longer supported.</li>
+</ul>
+<h4 id="rubrikmanagedrcstarget">RubrikManagedRcsTarget</h4>
+<ul>
+<li><strong><code>privateEndpointConnection</code></strong>: Use privateEndpointConnections instead.</li>
+<li><strong><code>storageConsumptionValue</code></strong>: Use consumedBytes instead.</li>
+</ul>
+<h4 id="rubrikmanageds3compatibletarget">RubrikManagedS3CompatibleTarget</h4>
+<ul>
+<li><strong><code>ibmDetails</code></strong>: Deprecated: please use ibmDetail instead.</li>
+<li><strong><code>immutabilitySettings</code></strong>: Deprecated: please use immutabilitySetting instead.</li>
+</ul>
+<h4 id="saphanahostobject">SapHanaHostObject</h4>
+<ul>
+<li><strong><code>host</code></strong>: Use systemHost instead.</li>
+</ul>
+<h4 id="snappable"><abbr title="A workload that can be protected by a Rubrik snapshot">Snappable</abbr></h4>
+<ul>
+<li><strong><code>orgName</code></strong>: <code>snappableOrg</code> field captures the basic org details.</li>
+</ul>
+<h4 id="taskdetail">TaskDetail</h4>
+<ul>
+<li><strong><code>orgName</code></strong>: <code>taskOrg</code> field captures the basic org details.</li>
+</ul>
+<h4 id="tprrulesmap">TprRulesMap</h4>
+<ul>
+<li><strong><code>dataManagementByObjectWorkloads</code></strong>: Use tprRulesByObjectType instead.</li>
+</ul>
+<h4 id="updateawsexocomputeconfigsreply">UpdateAwsExocomputeConfigsReply</h4>
+<ul>
+<li><strong><code>configs</code></strong>: Deprecated in favor of BYOK8s, use exocomputeConfigs instead.</li>
+</ul>
+<h4 id="vcd">Vcd</h4>
+<ul>
+<li><strong><code>allVcenterConnectionStatuses</code></strong>: Use allVcenterConnectionsInfo instead.</li>
+</ul>
+<h4 id="vspherecomputecluster">VsphereComputeCluster</h4>
+<ul>
+<li><strong><code>hasDatastoresForRecovery</code></strong>: Use recoveryTargetDescendantConnection field directly instead</li>
+</ul>
+<h4 id="vspherehost">VsphereHost</h4>
+<ul>
+<li><strong><code>hasDatastoresForRecovery</code></strong>: Use recoveryTargetDescendantConnection field directly instead</li>
+</ul>
+<h4 id="vsphereresourcepool">VsphereResourcePool</h4>
+<ul>
+<li><strong><code>hasDatastoresForRecovery</code></strong>: Use recoveryTargetDescendantConnection field directly instead</li>
+</ul>
+<h3 id="deprecated-enum-values">Deprecated Enum Values</h3>
+<h4 id="awscloudexternalartifact">AwsCloudExternalArtifact</h4>
+<ul>
+<li><strong><code>EXOCOMPUTE_EKS_MASTERNODE_INSTANCE_PROFILE</code></strong>: Instance profile corresponds to worker node in an EKS\ncluster, please use EXOCOMPUTE_EKS_WORKERNODE_INSTANCE_PROFILE\ninstead.</li>
+</ul>
+<h4 id="certificaterotationstatus">CertificateRotationStatus</h4>
+<ul>
+<li><strong><code>NOT_SCHEDULED</code></strong>: No longer applicable.</li>
+</ul>
+<h4 id="cloudaccountfeature">CloudAccountFeature</h4>
+<ul>
+<li><strong><code>AZURE_LAMINAR_OUTPOST_APPLICATION</code></strong>: Use <code>LAMINAR_OUTPOST_APPLICATION</code> instead.</li>
+<li><strong><code>AZURE_LAMINAR_OUTPOST_MANAGED_IDENTITY</code></strong>: Use <code>LAMINAR_OUTPOST_MANAGED_IDENTITY</code> instead.</li>
+<li><strong><code>AZURE_LAMINAR_TARGET_APPLICATION</code></strong>: Use <code>LAMINAR_TARGET_APPLICATION</code> instead.</li>
+<li><strong><code>AZURE_LAMINAR_TARGET_MANAGED_IDENTITY</code></strong>: Use <code>LAMINAR_TARGET_MANAGED_IDENTITY</code> instead.</li>
+</ul>
+<h4 id="clouddirectnasvendortype">CloudDirectNasVendorType</h4>
+<ul>
+<li><strong><code>GENERIC</code></strong>: Use specific vendor types instead of GENERIC</li>
+<li><strong><code>NETAPP</code></strong>: Use FSXN (AWS FSx for NetApp ONTAP) or other specific vendor types instead of NETAPP.</li>
+</ul>
+<h4 id="cloudnativetagrulefilterfields">CloudNativeTagRuleFilterFields</h4>
+<ul>
+<li><strong><code>AWS_ACCOUNT</code></strong>: USE CLOUD_NATIVE_ACCOUNT filter instead.</li>
+</ul>
+<h4 id="dataviewtypeenum">DataViewTypeEnum</h4>
+<ul>
+<li><strong><code>ACTIVITY_SERIES</code></strong>: Use EVENT_SERIES instead.</li>
+<li><strong><code>BACKUP_COMPLIANCE</code></strong>: Use LATEST_GLOBAL_OBJECTS instead.</li>
+<li><strong><code>BACKUP_STRIKES</code></strong>: Use BACKUP_STRIKES_V2 instead.</li>
+<li><strong><code>INDEXING</code></strong>: Use LATEST_GLOBAL_OBJECTS instead.</li>
+<li><strong><code>OBJECT_AUDIT_DETAIL</code></strong>: Use OBJECT_PROTECTION_AUDIT_DETAIL instead.</li>
+<li><strong><code>OBJECT_AUDIT_LIST</code></strong>: Use OBJECT_PROTECTION_AUDIT_LIST instead.</li>
+<li><strong><code>PROTECTION_TASK_DETAILS</code></strong>: Use TASK_DETAILS instead.</li>
+<li><strong><code>SLA_AUDIT_DETAIL</code></strong>: Use SLA_AUDIT_DETAIL_NG instead.</li>
+<li><strong><code>SLA_AUDIT_LIST</code></strong>: Use SLA_AUDIT_LIST_NG instead.</li>
+<li><strong><code>SLA_COMPLIANCE</code></strong>: Use LATEST_GLOBAL_OBJECTS instead.</li>
+</ul>
+<h4 id="gcpstorageclass">GcpStorageClass</h4>
+<ul>
+<li><strong><code>DURABLE_REDUCED_AVAILABILITY_GCP</code></strong>: Deprecated. Use STANDARD instead.</li>
+</ul>
+<h4 id="hierarchyfilterfield">HierarchyFilterField</h4>
+<ul>
+<li><strong><code>SAASAPPS_IS_RECOVERY_TARGET_ONLY</code></strong>: use <code>SAASAPPS_ORGANIZATION_SCOPE</code> instead.</li>
+</ul>
+<h4 id="hierarchysortbyfield">HierarchySortByField</h4>
+<ul>
+<li><strong><code>AZURE_DISK_ATTACHED_VM</code></strong>: This field is deprecated and no longer used.</li>
+</ul>
+<h4 id="inventorysubhierarchyrootenum">InventorySubHierarchyRootEnum</h4>
+<ul>
+<li><strong><code>PHYSICAL_HOST_ROOT</code></strong>: This root is no longer in use.</li>
+</ul>
+<h4 id="jobtype">JobType</h4>
+<ul>
+<li><strong><code>HYPERV_VM_V1</code></strong>: Hyper-V VM poller is no longer used.</li>
+<li><strong><code>VSPHERE_SNAPSHOT</code></strong>: VSphere snapshot poller is no longer used.</li>
+</ul>
+<h4 id="managedobjecttype">ManagedObjectType</h4>
+<ul>
+<li><strong><code>MONGO_DB</code></strong>: MONGO_DB is deprecated and no longer used.</li>
+<li><strong><code>RECOVERY_PLAN</code></strong>: RECOVERY_PLAN is deprecated and no longer used.</li>
+</ul>
+<h4 id="openaccesstype">OpenAccessType</h4>
+<ul>
+<li><strong><code>UNKNOWN_ACCESS</code></strong>: enum value is deprecated.</li>
+</ul>
+<h4 id="rcvredundancy">RcvRedundancy</h4>
+<ul>
+<li><strong><code>AZURE_GRS</code></strong>: Deprecated. Use MULTI_REGION instead.</li>
+<li><strong><code>AZURE_LRS</code></strong>: Deprecated. Use SINGLE_ZONE instead.</li>
+<li><strong><code>AZURE_ZRS</code></strong>: Deprecated. Use MULTI_ZONE instead.</li>
+<li><strong><code>UNKNOWN_AZURE_REDUNDANCY</code></strong>: Deprecated. Use UNKNOWN_REDUNDANCY instead.</li>
+</ul>
+<h4 id="snapshotqueryfilterfield">SnapshotQueryFilterField</h4>
+<ul>
+<li><strong><code>IS_ARCHIVED</code></strong>: A snapshot can potentially be uploaded to multiple archival locations. This field does not give the archival status of the snapshot - whether it is uploaded to all the archival locations or partially uploaded to a few locations. Hence, this filter field is deprecated and would be removed subsequently. Please use a combination of ARCHIVAL_LOCATION_IDS and SOURCE_SNAPSHOT_IDS fields instead.</li>
+<li><strong><code>SLA_ID</code></strong>: There is no concept of <abbr title="Service Level Agreement. An SLA Domain is a data protection policy in Rubrik.">SLA</abbr> ID on a snapshot. <abbr title="Service Level Agreement. An SLA Domain is a data protection policy in Rubrik.">SLA</abbr> is assigned to an object and snapshots are taken based on the configuration of the <abbr title="Service Level Agreement. An SLA Domain is a data protection policy in Rubrik.">SLA</abbr> Domain at that point of time. However, <abbr title="Service Level Agreement. An SLA Domain is a data protection policy in Rubrik.">SLA</abbr> configurations may change at a later point in time, without reflecting the change on the snapshot, if not retroactively assigned. Hence, this filter field is deprecated and would be removed subsequently.</li>
+</ul>
+<h4 id="targetqueryfilterfield">TargetQueryFilterField</h4>
+<ul>
+<li><strong><code>GROUP_NAME</code></strong>: We do not use archival groups currently.</li>
+<li><strong><code>IS_ARCHIVED</code></strong>: Archived locations should not be queried for.</li>
+<li><strong><code>IS_MANAGED_BY_AUTO_AG</code></strong>: We do not use archival groups currently.</li>
+</ul>
 
 
 
@@ -4594,7 +5570,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="August 19, 2025 14:45:09 UTC">2025-08-19</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="December 12, 2025 22:22:41 UTC">2025-12-12</span>
   </span>
 
     
