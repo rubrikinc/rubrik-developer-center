@@ -1,0 +1,78 @@
+# ActivityTypeEnum
+
+Represents different types of activities.
+
+## Values
+
+| Value | Description |
+|-------|-------------|
+| Anomaly | Anomaly type. |
+| Archive | Archive type. |
+| AuthDomain | Auth domain type. |
+| AwsEvent | Aws type. |
+| BULK_RECOVERY | Bulk recovery event type. |
+| Backup | Backup type. |
+| CLOUD_DIRECT_ARCHIVE | CloudDirect archive event. |
+| COPY | Copy job event. |
+| Classification | Classification type. |
+| CloudNativeSource | Event from cloud-native source. |
+| CloudNativeVirtualMachine | Event from cloud-native virtual machine. |
+| CloudNativeVm | Event from cloud-native virtual machine. |
+| Configuration | Configuration type. |
+| Connection | Connection type. |
+| Conversion | Conversion type. |
+| DISCOVER | Discover job event. |
+| Diagnostic | Diagnostic type. |
+| Discovery | Discovery type. |
+| Download | Download type. |
+| ENCRYPTION_MANAGEMENT_OPERATION | Encryption Management event type. |
+| EmbeddedEvent | Embedded type. |
+| Failover | Failover type. |
+| Fileset | Fileset type. |
+| Hardware | Hardware type. |
+| Hdfs | HDFS type. |
+| HostEvent | Host type. |
+| HypervScvmm | Hyper-V system center virtual machine type. |
+| HypervServer | HyperV Server type. |
+| IDENTITY_ACTIVITY | Identity activity event type. |
+| IDENTITY_ALERTS | Identity alerts type. |
+| IDENTITY_VIOLATION | Identity violation event type. Captures life cycle of identity violations raised by PolicyEngine component. |
+| ISOLATED_RECOVERY | Isolated recovery. |
+| Index | Index type. |
+| Instantiate | Instantiate type. |
+| LOG_BACKUP | Log Backup event type. |
+| LegalHold | Legal hold type. |
+| LocalRecovery | Local recovery type. |
+| LockSnapshot | Snapshot lock type. |
+| Maintenance | Maintenance type. |
+| NutanixCluster | Nutanix cluster type. |
+| OWNERSHIP | Ownership change type. |
+| PERMISSION_ASSESSMENT | Permission assessment event type. |
+| PROTECTED_OBJECT_DELETION | Protected object deletion event type. |
+| QUARANTINE | Quarantine event type. |
+| RadarAnalysis | Ransomware Investigation analysis type. |
+| Recovery | Recovery type. |
+| Replication | Replication type. |
+| ResourceOperations | Resource operations type. |
+| SCHEDULE_RECOVERY | Orchestrated Application Recovery schedule-recovery event type. |
+| SECURITY_VIOLATION | SECURITY_VIOLATION captures life cycle of security violations raised by PolicyEngine component. |
+| SEEDING | Sandbox seeding event type. |
+| Storage | Storage type. |
+| StorageArray | Storage array type. |
+| StormResource | Storm resource type. |
+| Support | Support type. |
+| Sync | Sync type. |
+| System | System type. |
+| TENANT_OVERLAP | Tenant overlap event type. |
+| TENANT_QUOTA | Tenant quota event type. |
+| THREAT_FEED | Threat feed event type. |
+| THREAT_MONITORING | Threat monitoring event type. |
+| TestFailover | Test failover type. |
+| ThreatHunt | Threat hunt type. |
+| Tpr | TPR type. |
+| USER_INTELLIGENCE | User intelligence event type. |
+| UnknownEventType | Unknown type. |
+| Upgrade | Upgrade type. |
+| VCenter | Vcenter type. |
+| Vcd | VCD type. |
+| VolumeGroup | Volume group type. |

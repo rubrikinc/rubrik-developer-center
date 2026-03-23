@@ -1,0 +1,98 @@
+# ObjectTypeEnum
+
+ObjectTypeEnum covering all Rubrik cluster and RSC workload types.
+
+## Values
+
+| Value | Description |
+|-------|-------------|
+| ACTIVE_DIRECTORY_DOMAIN_CONTROLLER | Active Directory domain controller. |
+| ACTIVE_DIRECTORY_FOREST | Active Directory forest. |
+| AWS_NATIVE_CONFIG | AWS Native Config. |
+| AWS_NATIVE_DYNAMODB_TABLE | AWS native DynamoDB table. |
+| AWS_NATIVE_S3_BUCKET | AWS native S3 Bucket. |
+| AZURE_AD_DIRECTORY | Azure AD Directory. |
+| AZURE_DEVOPS_REPOSITORY | Azure DevOps Repository. |
+| AZURE_SQL_DATABASE_DB | Azure SQL Database. |
+| AZURE_SQL_MANAGED_INSTANCE_DB | Azure SQL Managed Instance database. |
+| AZURE_STORAGE_ACCOUNT | Azure Storage Account. |
+| AppBlueprint | Application blueprint. |
+| AwsNativeEbsVolume | AWS native EBS Volume. |
+| AwsNativeEc2Instance | AWS native EC2 instance. |
+| AwsNativeRdsInstance | AWS native RDS instance. |
+| AzureNativeManagedDisk | Azure native managed disk. |
+| AzureNativeVm | Azure native virtual machine. |
+| CASSANDRA_COLUMN_FAMILY | Cassandra Column Family. |
+| CASSANDRA_KEYSPACE | Cassandra Keyspace. |
+| CASSANDRA_SOURCE | Cassandra Source. |
+| CLOUD_DIRECT_NAS_BUCKET | NAS Cloud Direct bucket. |
+| CLOUD_DIRECT_NAS_EXPORT | NAS Cloud Direct Export. |
+| CLOUD_DIRECT_NAS_SHARE | NAS Cloud Direct share. |
+| CONFLUENCE_SPACE | Confluence Space. |
+| D365_DATAVERSE_TABLE | D365 Dataverse Table. |
+| D365_FIXED_OBJECT | D365 metadata. |
+| Db2Database | DB2 database. |
+| Ec2Instance | EC2 instance. |
+| ExchangeDatabase | Exchange Database. |
+| Fileset | Fileset. |
+| GCP_CLOUD_SQL_INSTANCE | GCP Cloud SQL Instance. |
+| GITHUB_REPOSITORY | GitHub Repository. |
+| GOOGLE_WORKSPACE_SHARED_DRIVE | Google Workspace Shared Drive. |
+| GOOGLE_WORKSPACE_USER_DRIVE | Google Workspace User Drive. |
+| GOOGLE_WORKSPACE_USER_MAILBOX | Google Workspace User Mailbox. |
+| GcpNativeDisk | GCP native disk. |
+| GcpNativeGCEInstance | GCP native GCE instance. |
+| Hdfs | Hadoop Distributed File System. |
+| HypervVirtualMachine | Hyper-V virtual machine. |
+| INFORMIX_INSTANCE | Informix Instance. |
+| JIRA_FIXED_OBJECT | Jira settings. |
+| JIRA_PROJECT | Jira project. |
+| K8S_PROTECTION_SET | Kubernetes Protection Set. |
+| K8S_VIRTUAL_MACHINE | Kubernetes virtual machine. |
+| KuprNamespace | Kubernetes namespace. |
+| LinuxFileset | Linux fileset. |
+| M365_BACKUP_STORAGE_MAILBOX | M365 Backup Storage Mailbox. |
+| M365_BACKUP_STORAGE_ONEDRIVE | M365 Backup Storage Onedrive. |
+| M365_BACKUP_STORAGE_SITE | M365 Backup Storage Sharepoint Site. |
+| MONGODB_COLLECTION | MongoDB Collection. |
+| MONGODB_DATABASE | MongoDB Database. |
+| MONGODB_SOURCE | MongoDB Source Cluster. |
+| MONGO_COLLECTION | MongoDB Collection. |
+| MONGO_COLLECTION_SET | MongoDB Database. |
+| MONGO_DATABASE | MongoDB Database. |
+| MONGO_SOURCE | MongoDB Source. |
+| MYSQLDB_INSTANCE | MySQL Instance. |
+| ManagedVolume | Managed Volume. |
+| Mssql | Microsoft SQL Server. |
+| MssqlDatabaseBatchMaintenance | MSSQL database batch maintenance. |
+| NAS_FILESET | NAS fileset. |
+| NutanixVirtualMachine | Nutanix virtual machine. |
+| O365Calendar | Office 365 calendar. |
+| O365File | Office 365 file. |
+| O365Mailbox | Office 365 mailbox. |
+| O365Onedrive | Office 365 OneDrive. |
+| O365SharePointDrive | Office 365 SharePoint drive. |
+| O365SharePointList | Office 365 SharePoint List. |
+| O365Site | Office 365 site. |
+| O365Teams | Office 365 Teams. |
+| OKTA_TENANT | Okta tenant. |
+| OLVM_VIRTUAL_MACHINE | OLVM Virtual Machine. |
+| OPENSTACK_VIRTUAL_MACHINE | OpenStack Virtual Machine. |
+| ORACLE_DATA_GUARD_GROUP | Oracle Data Guard group. |
+| OracleDatabase | Oracle database. |
+| POSTGRES_DB_CLUSTER | Postgres Database Cluster. |
+| PROXMOX_VIRTUAL_MACHINE | Proxmox Virtual Machine. |
+| RubrikEbsVolume | Rubrik EBS volume. |
+| RubrikEc2Instance | Rubrik EC2 instance. |
+| SALESFORCE_FIXED_OBJECT | Salesforce metadata. |
+| SALESFORCE_OBJECT | Salesforce object. |
+| SAP_HANA_SYSTEM | SAP HANA System. |
+| SapHanaDatabase | SAP HANA Database. |
+| ShareFileset | Share fileset. |
+| SnapMirrorCloud | SnapMirror cloud. |
+| StorageArrayVolumeGroup | Storage array volume group. |
+| VcdVapp | VCloud Director vApp. |
+| VmwareVirtualMachine | VMware virtual machine. |
+| VolumeGroup | Volume group. |
+| WindowsFileset | Windows fileset. |
+| WindowsVolumeGroup | Windows volume group. |

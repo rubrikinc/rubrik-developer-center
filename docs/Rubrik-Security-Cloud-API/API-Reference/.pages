@@ -1,0 +1,8 @@
+title: GraphQL API Reference
+nav:
+  - index.md
+  - Changelog.md
+  - Deprecations.md
+  - queries
+  - mutations
+  - types

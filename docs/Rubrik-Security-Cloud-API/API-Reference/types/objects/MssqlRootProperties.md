@@ -1,0 +1,20 @@
+# MssqlRootProperties
+
+Supported in v5.0+
+
+## Fields
+
+| Field | Type | Description |
+|-------|------|-------------|
+| rootId | String | Supported in v5.0+ ID of the root of this object. |
+| rootName | String! | Required. Supported in v5.0+ Name of the root of this object. |
+| rootRole | String | Supported in v5.3+ Role of the root object for this object if the root object is a Host and part of a **_MssqlAvailabilityGroup_**. |
+| rootType | [MssqlRootPropertiesRootType](../enums/MssqlRootPropertiesRootType.md)! | Required. Supported in v5.0+ Type of the root object for this object. The root object is the top-level object from which this object is derived. If this object is an availability database, the root object is **_MssqlAvailabilityGroup_**. Otherwise, if this object is part of a cluster, the root object is **_WindowsCluster_**. Otherwise, the root object is **_Host_**. |
+
+## Used By
+
+**Referenced by**
+
+- [MssqlDbReplica.rootProperties](MssqlDbReplica.md)
+- [MssqlDbSummary.rootProperties](MssqlDbSummary.md)
+- [MssqlInstanceSummary.rootProperties](MssqlInstanceSummary.md)

@@ -1,0 +1,21 @@
+# K8sClusterUpdateConfigInput
+
+Supported in v9.1+ Input to update a Kubernetes cluster.
+
+## Fields
+
+| Field | Type | Description |
+|-------|------|-------------|
+| accessToken | String | Supported in v9.1+ The access token for the service account. |
+| clientId | String | Supported in v9.1+ The client ID for the service account. |
+| clientSecret | String | Supported in v9.1+ The client secret for the service account. |
+| cloudAccountId | String | Supported in v9.1+ The cloud account for the Rubrik cluster to establish a connection with the EKS Kubernetes cluster. |
+| isAutoPsCreationEnabled | Boolean | Supported in v9.2+ Specifies whether to enable automatic protection set creation for the Kubernetes cluster. |
+| kubeconfig | String | Supported in v9.1+ Kubeconfig is a YAML string to store Kubernetes cluster authentication information. You can get this config file directly from the cluster administrator or from a cloud platform if you are using managed Kubernetes cluster. |
+| kuprServerProxyConfig | [KuprServerProxyConfigInput](KuprServerProxyConfigInput.md) | Supported in v9.2+ The configuration for the kupr server proxy to be updated. |
+| nadName | String | Supported in v9.4+ The name of the network attachment definition object. |
+| nadNamespace | String | Supported in v9.4+ The namespace to which the network attachment definition object belongs. |
+| pullSecret | String | Supported in v9.1+ The pull secret required for pulling Rubrik container images. |
+| registry | String | Supported in v9.1+ Container registry URL for storing Rubrik container images. |
+| serviceAccountName | String | Supported in v9.1+ The name of the RSC service account. |
+| transport | String | Supported in v9.1+ The transport type used for communication with the Kubernetes cluster. |

@@ -1,0 +1,22 @@
+# NasSystemUpdateInput
+
+Supported in v7.0+ v7.0-v8.0: v8.1+: Input for updating a NAS system.
+
+## Fields
+
+| Field | Type | Description |
+|-------|------|-------------|
+| genericNasSystemParameters | [GenericNasSystemParametersInput](GenericNasSystemParametersInput.md) | Supported in v7.0+ The updated Generic NAS system parameters. |
+| hostname | String | Supported in v7.0+ The updated hostname of the NAS system. |
+| isIsilonChangelistEnabled | Boolean | Supported in v7.0+ Specifies the default Changelist setting for all shares in the Isilon NAS system. |
+| isNetAppMetroClusterEnabled | Boolean | Supported in v8.1, v9.1+ v8.1: Enables the Metro Cluster feature for the NetApp NAS system. If the NetApp cluster is operating in the Metro Cluster environment and this flag is not enabled, the NAS protections on this NAS system will not seamlessly move when switchover or switchback occurs. v9.1+: Enables the Metro Cluster feature for the NetApp NAS system. If the NetApp cluster is operating in the Metro Cluster environment and this flag is not enabled, the NAS protections on this NAS system will not seamlessly move when switchover or switchback occurs. |
+| nasApiCredentials | [NasApiCredentialsInput](NasApiCredentialsInput.md) | Supported in v7.0+ The updated API credentials of the NAS system. |
+| nasFlashBladeApiCredentials | [FlashBladeSystemParametersInput](FlashBladeSystemParametersInput.md) | Supported in v8.1+ |
+| nutanixFileServerParameters | [NutanixFileServerParametersInput](NutanixFileServerParametersInput.md) | Supported in v8.1+ |
+| shouldAllowDuplicateSystemsWithSameIp | Boolean | Optional parameter that specifies whether to allow updating a NAS system hostname to one that has the same IP address as an existing NAS system. The default value is false. Rubrik expects that you use this setting judiciously, primarily for Azure Files and similar hosted file systems where multiple NAS devices can have same IP address. |
+| shouldGrantNfsShareRootAccess | Boolean | Supported in v8.1+ Optional parameter that specifies whether to grant root client access to NFS shares on Isilon and NetApp NAS systems. The root client access is granted on first fileset creation for the NFS share. The default value is true. |
+| shouldGrantSmbShareRootAccess | Boolean | Supported in v8.1+ Optional parameter that specifies whether to grant root user access to SMB shares on Isilon NAS systems. The root user access is granted on first fileset creation for the SMB share. The default value is true. This setting is applicable only when system-generated credentials are used. |
+| shouldResetGeneratedNamespaceSmbCredentials | Boolean | Supported in v8.1+ Optional parameter that specifies whether to remove the system-generated (not user-supplied) SMB credentials in namespaces and recreate them. If this parameter is true, the system-generated SMB credentials in all namespaces are removed. In addition, when the NAS system does not have user-supplied (system level) SMB credentials, new SMB credentials are generated in each namespace that does not have user-supplied (namespace level) SMB credentials. The API credentials must be provided when this parameter is true. |
+| smbCredentials | [NasShareCredentialsInput](NasShareCredentialsInput.md) | Supported in v8.1+ Optional credentials that will be used to access all the SMB shares on the NAS system unless overridden at the NAS namespace level or at the NAS share level. This is applicable for NetApp and Isilon NAS systems only. |
+| userSelectedNfsInterfaces | [String!] | Supported in v9.3+ List of hostnames or IP addresses used for Fileset jobs on NFS shares in the NAS system. |
+| userSelectedSmbInterfaces | [String!] | Supported in v9.3+ List of hostnames or IP addresses used for Fileset jobs on SMB shares in the NAS system. |

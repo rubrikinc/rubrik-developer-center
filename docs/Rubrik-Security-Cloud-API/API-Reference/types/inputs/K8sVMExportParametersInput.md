@@ -1,0 +1,16 @@
+# K8sVMExportParametersInput
+
+Supported in v9.3+ Input to export Kubernetes resources from a virtual machine snapshot.
+
+## Fields
+
+| Field | Type | Description |
+|-------|------|-------------|
+| filter | String | Supported in v9.3+ The filter for selecting resources from the snapshot to export. |
+| ignoreErrors | Boolean | Supported in v9.3+ Specifies whether to ignore errors during the export operation. |
+| pvcNames | [String!] | Supported in v9.3+ |
+| runStrategy | String | Supported in v9.3+ Specifies the run strategy of the exported virtual machine. |
+| shouldKeepMacAddresses | Boolean | Supported in v9.3+ Determines whether the MAC addresses of the network interfaces on the source virtual machine are assigned to the new virtual machine. Set to 'true' to keep the MAC addresses of the new virtual machine the same as the original virtual machine. Set to 'false' to assign new MAC addresses. |
+| storageMapping | [StorageMappingInput](StorageMappingInput.md) | Supported in v9.5+ The storage mapping to be used for the export operation. |
+| targetClusterId | String! | Required. Supported in v9.3+ The UUID of the target Kubernetes cluster to which the resources should be exported. |
+| targetNamespaceName | String! | Required. Supported in v9.3+ The virtual machine will be exported to this namespace. If the namespace does not exist, it will be created. |

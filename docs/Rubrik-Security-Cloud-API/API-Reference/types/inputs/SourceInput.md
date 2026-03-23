@@ -1,0 +1,35 @@
+# SourceInput
+
+Supported in m3.2.0-m4.2.0 Source Object.
+
+## Fields
+
+| Field | Type | Description |
+|-------|------|-------------|
+| async | Boolean | Supported in m3.2.0-m4.2.0 m3.2.0-m4.0.1: If the call should be async. m4.1.0-m4.2.0: If call should be async. |
+| cassandraYaml | [String!] | Supported in m3.2.0-m4.2.0 m3.2.0-m4.0.1: List of cassandra yaml. m4.1.0-m4.2.0: List of cassandra yaml files. |
+| dseYaml | [String!] | Supported in m3.2.0-m4.2.0 m3.2.0-m4.0.1: List of dse yaml. m4.1.0-m4.2.0: List of dse yaml files. |
+| enableSsl | Boolean | Supported in m3.2.0-m4.2.0 Whether ssl enabled. |
+| httpsCertificate | String | Supported in m3.2.0-m4.2.0 m3.2.0-m4.0.1: Https certificate to connect. m4.1.0-m4.2.0: HTTPS certificate. |
+| ignoreSecondaries | [String!] | Supported in m3.2.0-m4.2.0 Ignore secondaries. |
+| jmxPassword | String | Supported in m3.2.0-m4.2.0 JMX password. |
+| jmxUser | String | Supported in m3.2.0-m4.2.0 JMX user. |
+| parameterEncoded | Boolean | Supported in m3.2.0-m4.2.0 If parameter is encoded. |
+| sourceAuthKey | String | Supported in m3.2.0-m4.2.0 m3.2.0-m4.0.1: Auth key for source. m4.1.0-m4.2.0: Source auth key. |
+| sourceAuthKeyfile | String | Supported in m3.2.0-m4.2.0 Auth key file for source. |
+| sourceAuthPassphrase | String | Supported in m3.2.0-m4.2.0 m3.2.0-m4.0.1: Source auth passphrase. m4.1.0-m4.2.0: Auth passphrase for source. |
+| sourceDriverPassword | String | Supported in m3.2.0-m4.2.0 Source driver password. |
+| sourceDriverUser | String | Supported in m3.2.0-m4.2.0 Source driver user. |
+| sourceHttpsPort | String | Supported in m3.2.0-m4.2.0 m3.2.0-m4.0.1: Source https port. m4.1.0-m4.2.0: Source HTTPS port. |
+| sourceIp | [String!]! | Required. Supported in m3.2.0-m4.2.0 m3.2.0-m4.0.1: List of source IPs. m4.1.0-m4.2.0: Https certificate to connect. |
+| sourceName | String! | Required. Supported in m3.2.0-m4.2.0 Name of the source. |
+| sourcePassword | String | Supported in m3.2.0-m4.2.0 Source password. |
+| sourcePort | String | Supported in m3.2.0-m4.2.0 m3.2.0-m4.0.1: Source port number. m4.1.0-m4.2.0: Source port. |
+| sourceRpcPort | String | Supported in m3.2.0-m4.2.0 Source rpc port. |
+| sourceSshPort | String | Supported in m3.2.0-m4.2.0 m3.2.0-m4.0.1: Source SSH Port number. m4.1.0-m4.2.0: Source SSH port. |
+| sourceType | [SourceSourceType](../enums/SourceSourceType.md)! | Required. Supported in m3.2.0-m4.2.0 m3.2.0-m4.0.1: Source type. m4.1.0-m4.2.0: Type of the source. |
+| sourceUser | String | Supported in m3.2.0-m4.2.0 m3.2.0-m4.0.1: Source username. m4.1.0-m4.2.0: Source user. |
+| sslCaCerts | String | Supported in m3.2.0-m4.2.0 SSD CA certificate. |
+| sslCertReqs | [SourceSslCertReqs](../enums/SourceSslCertReqs.md) | Supported in m3.2.0-m4.2.0 SSL Cert Reqs. |
+| sslCertfile | String | Supported in m3.2.0-m4.2.0 SSL certificate file. |
+| sslKeyfile | String | Supported in m3.2.0-m4.2.0 SSL keyfile. |

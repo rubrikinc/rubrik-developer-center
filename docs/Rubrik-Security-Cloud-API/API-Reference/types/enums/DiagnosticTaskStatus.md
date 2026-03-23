@@ -1,0 +1,14 @@
+# DiagnosticTaskStatus
+
+Supported in v5.0+ Status of the task.
+
+## Values
+
+| Value | Description |
+|-------|-------------|
+| DIAGNOSTIC_TASK_STATUS_CANCELED |  |
+| DIAGNOSTIC_TASK_STATUS_FAILED |  |
+| DIAGNOSTIC_TASK_STATUS_QUEUED |  |
+| DIAGNOSTIC_TASK_STATUS_RETRIED |  |
+| DIAGNOSTIC_TASK_STATUS_STARTED |  |
+| DIAGNOSTIC_TASK_STATUS_SUCCEEDED |  |
