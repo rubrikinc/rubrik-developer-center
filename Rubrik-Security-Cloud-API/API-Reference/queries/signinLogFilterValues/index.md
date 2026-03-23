@@ -1,0 +1,56 @@
+# signinLogFilterValues
+
+Get possible filter values for sign-in logs with optional search. This API supports typeahead/autocomplete functionality for filter dropdowns. When searchTerm is empty, returns top N most common values ordered by frequency. When searchTerm is provided, returns values matching the prefix in alphabetical order.
+
+## Arguments
+
+| Argument                | Type                                                                                                                                  | Description                                                      |
+| ----------------------- | ------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------- |
+| filterType *(required)* | [SigninLogFilterType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/SigninLogFilterType/index.md)! | The type of filter to get possible values for (required).        |
+| timeRange *(required)*  | [TimeRangeInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/TimeRangeInput/index.md)!          | Time range to scope the values (required for partition pruning). |
+| searchTerm              | String                                                                                                                                | Optional prefix to filter values (typeahead).                    |
+| limit                   | Int                                                                                                                                   | Maximum results to return (default: 50, max: 100).               |
+| existingFilters         | [SigninLogsFilters](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/SigninLogsFilters/index.md)     | Optional filters to scope the search (cross-filter dependency).  |
+
+## Returns
+
+[SigninLogFilterValuesResponse](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/SigninLogFilterValuesResponse/index.md)!
+
+## Sample
+
+```graphql
+query SigninLogFilterValues($filterType: SigninLogFilterType!, $timeRange: TimeRangeInput!) {
+  signinLogFilterValues(
+    filterType: $filterType
+    timeRange: $timeRange
+  ) {
+    hasMore
+  }
+}
+```
+
+```json
+{
+  "filterType": "SIGNIN_LOG_FILTER_APPLICATION_NAME",
+  "timeRange": {
+    "end": "2024-01-01T00:00:00.000Z",
+    "start": "2024-01-01T00:00:00.000Z"
+  }
+}
+```
+
+```json
+{
+  "data": {
+    "signinLogFilterValues": {
+      "hasMore": true,
+      "values": [
+        {
+          "id": "example-string",
+          "label": "example-string"
+        }
+      ]
+    }
+  }
+}
+```

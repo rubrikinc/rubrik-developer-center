@@ -1,0 +1,11 @@
+# MssqlRootPropertiesRootType
+
+*No description available.*
+
+## Values
+
+| Value                                                    | Description |
+| -------------------------------------------------------- | ----------- |
+| MSSQL_ROOT_PROPERTIES_ROOT_TYPE_HOST                     |             |
+| MSSQL_ROOT_PROPERTIES_ROOT_TYPE_MSSQL_AVAILABILITY_GROUP |             |
+| MSSQL_ROOT_PROPERTIES_ROOT_TYPE_WINDOWS_CLUSTER          |             |

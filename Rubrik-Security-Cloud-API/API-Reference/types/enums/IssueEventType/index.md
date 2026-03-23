@@ -1,0 +1,15 @@
+# IssueEventType
+
+*No description available.*
+
+## Values
+
+| Value                    | Description |
+| ------------------------ | ----------- |
+| ADD_WHITELIST_EVENT      |             |
+| CREATE_EVENT             |             |
+| DELETE_POLICY_EVENT      |             |
+| NO_ISSUES_SNAPSHOT_EVENT |             |
+| REMOVE_POLICY_OBJ_EVENT  |             |
+| REMOVE_WHITELIST_EVENT   |             |
+| SNAPSHOT_EVENT           |             |

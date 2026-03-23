@@ -1,0 +1,94 @@
+# RcsRegionEnumType
+
+Regions for Rubrik Cloud Storage Archival Location.
+
+## Values
+
+| Value                    | Description                                 |
+| ------------------------ | ------------------------------------------- |
+| ASIA_EAST                | Asia East or Hong Kong.                     |
+| ASIA_EAST_2              | Hong Kong (Asia East 2).                    |
+| ASIA_PACIFIC_HYDERABAD   | Asia Pacific Hyderabad.                     |
+| ASIA_PACIFIC_JAKARTA     | Asia Pacific Jakarta.                       |
+| ASIA_PACIFIC_MELBOURNE   | Asia Pacific Melbourne.                     |
+| ASIA_PACIFIC_SYDNEY      | Asia Pacific Sydney.                        |
+| ASIA_SOUTHEAST           | Asia Southeast or Singapore.                |
+| AUSTRALIA_CENTRAL        | Australia Central or Canberra.              |
+| AUSTRALIA_CENTRAL2       | Australia Central 2 or Canberra.            |
+| AUSTRALIA_EAST           | Australia East or New South Wales.          |
+| AUSTRALIA_SOUTHEAST      | Australia Southeast or Victoria.            |
+| AUSTRIA_EAST             | Austria East or Vienna.                     |
+| BELGIUM_CENTRAL          | Belgium Central or Brussels.                |
+| BRAZIL_SOUTH             | Brazil South or Sao Paulo State.            |
+| BRAZIL_SOUTHEAST         | Brazil Southeast or Rio.                    |
+| CANADA_CENTRAL           | Canada Central or Toronto.                  |
+| CANADA_EAST              | Canada East or Quebec City.                 |
+| CANADA_WEST_CALGARY      | Canada West Calgary.                        |
+| CHILE_CENTRAL            | Chile Central or Santiago.                  |
+| EUROPE_NORTH             | Europe North or Netherlands.                |
+| EUROPE_STOCKHOLM         | Europe Stockholm.                           |
+| EUROPE_WEST              | Europe West or Ireland.                     |
+| EUROPE_WEST_12           | Turin (Europe West 12).                     |
+| EUROPE_WEST_4            | Netherlands (Europe West 4).                |
+| FRANCE_CENTRAL           | France Central or Paris.                    |
+| FRANCE_SOUTH             | France South or Marseille.                  |
+| GERMANY_NORTH            | Germany North or Berlin.                    |
+| GERMANY_WEST_CENTRAL     | Germany West Central or Frankfurt.          |
+| GOV_US_ARIZONA           | Gov US Arizona or US Gov Arizona.           |
+| GOV_US_TEXAS             | Gov US Texas or US Gov Texas.               |
+| GOV_US_VIRGINIA          | Gov US Virginia or US Gov Virginia.         |
+| INDIA_CENTRAL            | India Central or Pune.                      |
+| INDIA_SOUTH              | India South or Chennai.                     |
+| INDIA_SOUTH_2            | Delhi (India South 2).                      |
+| INDIA_WEST               | India West or Mumbai.                       |
+| INDONESIA_CENTRAL        | Indonesia Central or Jakarta.               |
+| ISRAEL_CENTRAL           | Israel Central or Israel.                   |
+| ITALY_NORTH              | Italy North or Milan.                       |
+| JAPAN_EAST               | Japan East or Tokyo.                        |
+| JAPAN_WEST               | Japan West or Osaka.                        |
+| KOREA_CENTRAL            | Korea Central or Seoul.                     |
+| KOREA_SOUTH              | Korea South or Busan.                       |
+| MALAYSIA_WEST            | Malaysia West.                              |
+| MEXICO_CENTRAL           | Mexico Central or Queretaro State.          |
+| ME_CENTRAL_2             | Dammam (Middle East Central 2).             |
+| MIDDLE_EAST_BAHRAIN      | Middle East bahrain.                        |
+| NEW_ZEALAND_NORTH        | New Zealand North or Auckland.              |
+| NORTHAMERICA_NORTHEAST_1 | Montreal (North America Northeast 1).       |
+| NORTHAMERICA_SOUTH_1     | Mexico (North America South 1).             |
+| NORWAY_EAST              | Norway East or Oslo.                        |
+| NORWAY_WEST              | Norway West or Stavanger.                   |
+| POLAND_CENTRAL           | Poland Central or Warsaw.                   |
+| QATAR_CENTRAL            | Qatar Central or Doha.                      |
+| SOUTHAMERICA_WEST_1      | Santiago (South America West 1).            |
+| SOUTH_AFRICA_NORTH       | South Africa North or Johannesburg.         |
+| SOUTH_AFRICA_WEST        | South Africa West or Cape Town.             |
+| SPAIN_CENTRAL            | Spain Central or Madrid.                    |
+| SPAIN_NORTH              | Spain North or Aragon.                      |
+| SWEDEN_CENTRAL           | Sweden Central or Gavle.                    |
+| SWEDEN_SOUTH             | Sweden South or Malmo.                      |
+| SWITZERLAND_NORTH        | Switzerland North or Zurich.                |
+| SWITZERLAND_WEST         | Switzerland West or Geneva.                 |
+| UAE_CENTRAL              | UAE Central or Abu Dhabi.                   |
+| UAE_NORTH                | UAE North or Dubai.                         |
+| UK_SOUTH                 | UK South or London.                         |
+| UK_WEST                  | UK West or Cardiff.                         |
+| UNKNOWN_AWS_REGION       | Rubrik Cloud Vault AWS region is unknown.   |
+| UNKNOWN_AZURE_REGION     | Rubrik Cloud Vault Azure region is unknown. |
+| UNKNOWN_GCP_REGION       | Rubrik Cloud Vault GCP region is unknown.   |
+| US_CENTRAL               | US Central or Iowa.                         |
+| US_EAST                  | US East or Virginia.                        |
+| US_EAST_1                | South Carolina (US East 1).                 |
+| US_EAST_2                | US East 2 or Virginia.                      |
+| US_EAST_5                | Columbus (US East 5).                       |
+| US_EAST_7                | US East 7.                                  |
+| US_NORTH_CENTRAL         | US North central or Illinois.               |
+| US_SOUTH_1               | Dallas (US South 1).                        |
+| US_SOUTH_CENTRAL         | US South central or Texas.                  |
+| US_WEST                  | US West or California.                      |
+| US_WEST_1                | Oregon (US West 1).                         |
+| US_WEST_2                | US West 2 or Washington.                    |
+| US_WEST_3                | Salt Lake City (US West 3).                 |
+| US_WEST_4                | Las Vegas (US West 4).                      |
+| US_WEST_8                | Phoenix (US West 8).                        |
+| US_WEST_CENTRAL          | US West Central or Wyoming.                 |
+| WEST_US3                 | West US 3 or Arizona.                       |

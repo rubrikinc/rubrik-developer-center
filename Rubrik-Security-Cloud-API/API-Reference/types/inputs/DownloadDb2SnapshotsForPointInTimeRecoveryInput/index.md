@@ -1,0 +1,11 @@
+# DownloadDb2SnapshotsForPointInTimeRecoveryInput
+
+Download Db2 snapshots from archival location to the local Rubrik cluster for point-in-time (PIT) recovery.
+
+## Fields
+
+| Field          | Type                                                                                                                                                                           | Description                                                                                                                                                                                                            |
+| -------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| downloadConfig | [Db2DownloadRecoverableRangeRequestInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/Db2DownloadRecoverableRangeRequestInput/index.md)! | Required. Object containing information required for downloading snapshots for a point in time recovery. The object includes the point in time and the ID of the archival location for the snapshots to be downloaded. |
+| id             | String!                                                                                                                                                                        | Required. ID of the Db2 database.                                                                                                                                                                                      |
+| userNote       | String                                                                                                                                                                         | User note to associate with audits.                                                                                                                                                                                    |

@@ -1,0 +1,10 @@
+# GetPossibleSnapshotLocationsForObjectsInput
+
+GetPossibleSnapshotLocationsForObjectsReq is the input for GetPossibleSnapshotLocationsForObjects query.
+
+## Fields
+
+| Field      | Type                                                                                                                | Description                                                                                                   |
+| ---------- | ------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------- |
+| objectIds  | [String!]!                                                                                                          | IDs of the objects for which possible snapshot locations are to be returned.                                  |
+| pagination | [Pagination](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/Pagination/index.md) | Pagination parameters to control the response size. Optional - if not provided, all results will be returned. |

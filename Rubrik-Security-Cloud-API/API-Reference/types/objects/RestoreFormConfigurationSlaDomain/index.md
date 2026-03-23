@@ -1,0 +1,15 @@
+# RestoreFormConfigurationSlaDomain
+
+Supported in v7.0+
+
+## Fields
+
+| Field | Type    | Description                                      |
+| ----- | ------- | ------------------------------------------------ |
+| name  | String! | Required. Supported in v7.0+ Name of SLA domain. |
+
+## Used By
+
+**Referenced by**
+
+- [RestoreFormConfigurations.slaDomains](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/RestoreFormConfigurations/index.md)

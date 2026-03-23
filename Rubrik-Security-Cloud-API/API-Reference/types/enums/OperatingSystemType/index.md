@@ -1,0 +1,14 @@
+# OperatingSystemType
+
+Supported in v5.0+ Operating system of a specified machine.
+
+## Values
+
+| Value                         | Description |
+| ----------------------------- | ----------- |
+| OPERATING_SYSTEM_TYPE_AIX     |             |
+| OPERATING_SYSTEM_TYPE_HPUX    |             |
+| OPERATING_SYSTEM_TYPE_LINUX   |             |
+| OPERATING_SYSTEM_TYPE_SUN_OS  |             |
+| OPERATING_SYSTEM_TYPE_UNKNOWN |             |
+| OPERATING_SYSTEM_TYPE_WINDOWS |             |

@@ -1,0 +1,11 @@
+# MssqlCbtStatusType
+
+Supported in v5.0+ CBT host support status.
+
+## Values
+
+| Value                          | Description |
+| ------------------------------ | ----------- |
+| MSSQL_CBT_STATUS_TYPE_DEFAULT  |             |
+| MSSQL_CBT_STATUS_TYPE_DISABLED |             |
+| MSSQL_CBT_STATUS_TYPE_ENABLED  |             |

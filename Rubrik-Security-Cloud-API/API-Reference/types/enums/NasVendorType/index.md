@@ -1,0 +1,14 @@
+# NasVendorType
+
+Supported in v5.2+ NAS Vendor Type.
+
+## Values
+
+| Value                               | Description |
+| ----------------------------------- | ----------- |
+| NAS_VENDOR_TYPE_FLASHBLADE          |             |
+| NAS_VENDOR_TYPE_GENERIC             |             |
+| NAS_VENDOR_TYPE_ISILON              |             |
+| NAS_VENDOR_TYPE_NETAPP              |             |
+| NAS_VENDOR_TYPE_NUTANIX             |             |
+| NAS_VENDOR_TYPE_NUTANIX_FILE_SERVER |             |

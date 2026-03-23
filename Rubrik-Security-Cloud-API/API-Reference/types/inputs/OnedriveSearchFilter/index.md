@@ -1,0 +1,22 @@
+# OnedriveSearchFilter
+
+Parameters for OneDrive file or folder search.
+
+## Fields
+
+| Field                 | Type                                                                                                                                                  | Description                                                                                        |
+| --------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------- |
+| channelFolderName     | String                                                                                                                                                |                                                                                                    |
+| channelId             | String                                                                                                                                                |                                                                                                    |
+| channelMembershipType | [ChannelMembershipType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/ChannelMembershipType/index.md)              |                                                                                                    |
+| channelNameKeyword    | String                                                                                                                                                |                                                                                                    |
+| createTime            | [TimeRangeFilter](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/TimeRangeFilter/index.md)                         |                                                                                                    |
+| excludeItemsUnderRoot | Boolean                                                                                                                                               |                                                                                                    |
+| filePath              | String                                                                                                                                                | Parameters to use file path in query.                                                              |
+| lambdaFilters         | [LambdaPathFilters](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/LambdaPathFilters/index.md)                     | Parameters to use lambda filters in query.                                                         |
+| modifiedTime          | [TimeRangeFilter](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/TimeRangeFilter/index.md)                         |                                                                                                    |
+| objectId              | String                                                                                                                                                | Parameters to use object ID in query.                                                              |
+| parentWorkloadId      | String                                                                                                                                                | Parameters to specify parent ID, which is used to search using the full path from the parent site. |
+| searchKeywordFilter   | [OnedriveSearchKeywordFilter](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/OnedriveSearchKeywordFilter/index.md) |                                                                                                    |
+| searchObjectFilter    | [OnedriveSearchObjectFilter](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/OnedriveSearchObjectFilter/index.md)   |                                                                                                    |
+| useExactVersionMatch  | Boolean                                                                                                                                               | Determines whether to use exact version match query.                                               |

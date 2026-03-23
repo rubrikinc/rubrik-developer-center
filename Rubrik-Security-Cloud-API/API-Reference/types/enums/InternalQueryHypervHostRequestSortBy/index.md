@@ -1,0 +1,10 @@
+# InternalQueryHypervHostRequestSortBy
+
+*No description available.*
+
+## Values
+
+| Value                                                                | Description |
+| -------------------------------------------------------------------- | ----------- |
+| INTERNAL_QUERY_HYPERV_HOST_REQUEST_SORT_BY_EFFECTIVE_SLA_DOMAIN_NAME |             |
+| INTERNAL_QUERY_HYPERV_HOST_REQUEST_SORT_BY_NAME                      |             |
