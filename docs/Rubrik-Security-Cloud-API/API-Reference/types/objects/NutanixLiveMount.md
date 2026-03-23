@@ -1,0 +1,44 @@
+# NutanixLiveMount
+
+Nutanix virtual machine live mount.
+
+## Fields
+
+| Field | Type | Description |
+|-------|------|-------------|
+| attachedDiskCount | Int! | Number of disks attached to the target virtual machine. |
+| cdmId | String! | CDM ID of the live mount. |
+| cluster | [Cluster](Cluster.md)! | Cluster of the live mount. |
+| id | [UUID](../scalars/UUID.md)! | Fid of the live mount. |
+| isDiskLevelMount | Boolean! | Indicates whether the mount is a disk mount. |
+| isMigrationDisabled | Boolean! | Specifies if the mounted virtual machine does not have migration enabled. |
+| isVmReady | Boolean! | Describes if the live mount is ready. |
+| migrationJobInstanceId | String | Migration job instance ID. This is applicable only if the mounted virtual machine is being migrated. |
+| migrationJobStatus | String | Status of the migration job. This is applicable only if the mounted virtual machine is being migrated. |
+| mountJobInstanceId | String! | Mount job instance ID. |
+| mountSpec | String! | Specification of the live mount in JSON string. |
+| mountStatus | [NutanixVmMountStatus](../enums/NutanixVmMountStatus.md) | Mount Status of the Virtual Machine. If the CDM cluster is disconnected, then None is  returned. |
+| mountedDate | [DateTime](../scalars/DateTime.md) | Time when the virtual machine was mounted. This may be set to null if the mount specification does not contain this information. |
+| mountedVmFid | String | ID of the mounted virtual machine. This may be set to null if the mount specification does not contain this information. |
+| mountedVmId | String | CDM ID of the mounted virtual machine. This may be set to null if the mount specification does not contain this information. |
+| name | String! | Name of the live mount. |
+| nutanixClusterFid | String! | ID of the Nutanix cluster. |
+| nutanixClusterId | String! | CDM ID of the Nutanix cluster. |
+| nutanixClusterName | String! | Name of the Nutanix cluster. |
+| organizationId | String! | Organization ID of the live mount. |
+| ownerId | String! | Owner ID of the live mount. |
+| powerStatus | String! | Power Status of the Virtual Machine. It is set to 'ON' or 'OFF'. If the CDM cluster is disconnected, then it is set to  'Unknown'. |
+| snapshotDate | [DateTime](../scalars/DateTime.md) | Time when the snapshot was taken. This may be set to null if the mount specification does not contain this information. |
+| snapshotId | String! | Rubrik CDM ID of the snapshot used for the Live Mount. |
+| sourceSnapshot | [CdmSnapshot](CdmSnapshot.md)! | Source snapshot of the Live Mount. |
+| sourceVmFid | String! | ID of the source virtual machine. |
+| sourceVmId | String! | CDM ID of the source virtual machine. |
+| sourceVmName | String! | Name of the source virtual machine. |
+| storageContainerName | String | Nutanix storage container where the mounted virtual machine will be migrated. This is applicable only if migration is not enabled on the virtual machine. |
+| unmountJobInstanceId | String! | Unmount job instance ID. |
+
+## Used By
+
+**Queries**
+
+- [query: nutanixMounts](../../queries/nutanixMounts.md) *(via connection)*

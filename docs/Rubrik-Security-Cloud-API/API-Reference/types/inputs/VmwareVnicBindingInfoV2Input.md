@@ -1,0 +1,10 @@
+# VmwareVnicBindingInfoV2Input
+
+Supported in v6.0+
+
+## Fields
+
+| Field | Type | Description |
+|-------|------|-------------|
+| backingNetworkInfo | [VmwareNetworkInfoV2Input](VmwareNetworkInfoV2Input.md)! | Required. Supported in v6.0+ Information about the backing network. |
+| networkDeviceInfo | [VmwareNetworkDeviceInfoV2Input](VmwareNetworkDeviceInfoV2Input.md)! | Required. Supported in v6.0+ Information about the network device. |

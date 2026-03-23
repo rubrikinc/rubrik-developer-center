@@ -1,0 +1,10 @@
+# Db2LogSnapshotEdge
+
+Wrapper around the Db2LogSnapshot object. This wrapper is used for pagination.
+
+## Fields
+
+| Field | Type | Description |
+|-------|------|-------------|
+| cursor | String! | String used to identify this edge. |
+| node | [Db2LogSnapshot](Db2LogSnapshot.md)! | The actual Db2LogSnapshot object wrapped by this edge. |

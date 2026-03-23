@@ -1,0 +1,42 @@
+# HostDetail
+
+Supported in v5.0+
+
+## Fields
+
+| Field | Type | Description |
+|-------|------|-------------|
+| activeDirectoryAdditionalInfo | [ActiveDirectoryAdditionalInfo](ActiveDirectoryAdditionalInfo.md) | Supported in v9.2+ v9.2: v9.3+: Additional Active Directory info for the host if applicable. |
+| agentId | String | Supported in v5.0-v9.0 v5.0-v5.2: v5.3-v9.0: ID of the Rubrik Backup Service (RBS) installed on the host. |
+| compressionEnabled | Boolean | Supported in v5.0+ v5.0-v5.2: v5.3+: Indicates if compression is enabled while transferring data between the host and the Rubrik cluster. |
+| hostDomainId | String | Supported in v9.0+ v9.0-v9.1: Id of the Active Directory Domain if the windows host has domain controller hosted. v9.2+: (DEPRECATED) This field is deprecate in favor of activeDirectoryAdditionalInfo. Id of the Active Directory Domain if the windows host has domain controller hosted. |
+| hostDomainName | String | Supported in v9.0+ v9.0-v9.1: Specify the name of active directory domain. v9.2+: (DEPRECATED) This field is deprecate in favor of activeDirectoryAdditionalInfo. Specify the name of active directory domain. |
+| hostSummary | [HostSummary](HostSummary.md) |  |
+| hostVfdDriverState | [HostVfdState](../enums/HostVfdState.md)! | Required. Supported in v5.0+ v5.0-v6.0: Specifies the installation status of the VFD driver on a Windows host. The value is 'NotInstalled' when the driver is absent. The value is 'Installed' when the driver is present. The value is 'RestartRequred' when the driver is present but requires a restart of the Windows host in order to function. v7.0+: Specifies the installation status of the VFD driver on a Windows host. The value is - 'NotInstalled' when the driver is absent. - 'Installed' when the driver is present. - 'InstalledButRestartRequred' when the driver is present but requires a restart of the Windows host. - 'InstalledButTwoRestartsRequred' when the driver is updated but requires two restarts of the Window host. - 'UninstalledButRestartRequired' when the driver is uninstalled but requires a restart of the Windows host to remove the driver. |
+| hostVfdEnabled | [HostVfdInstallConfig](../enums/HostVfdInstallConfig.md) | Supported in v5.0+ Specifies the status of VFD-based volume backups on Windows hosts. The value is 'Enabled' when VFD-based volume backups are enabled. The value is 'Disabled' when VFD-based volume backups are disabled. |
+| isOracleHost | Boolean | Supported in v5.2+ v5.2: Specifies whether the host is an Oracle host. When the host is an Oracle host, the UI displays the Oracle discovery fields. v5.3: Specifies whether this is an Oracle host. This indicates whether to show Oracle discovery fields in the UI. v6.0+: Specifies whether this is an Oracle host. This indicates whether to show Oracle discovery fields in the UI. |
+| isRefreshPaused | Boolean | Supported in v9.0+ Specifies whether the refresh of host metadata for this host is paused. |
+| isRelic | Boolean! | Required. Supported in v5.0+ A relic host is deleted, but still may have snapshots associated with its children (e.g. Fileset). |
+| mssqlCbtDriverInstalled | Boolean! | Required. Supported in v5.0+ v5.0-v5.2: Boolean value that indicates whether the CBT driver is installed for SQL Server instances on the specified Windows host. Set to true when the CBT driver is installed. Set to false when the CBT driver is not installed v5.3: Indicates if the CBT driver is installed for SQL Server instances on the specified Windows host. Set to true when the CBT driver is installed. Set to false when the CBT driver is not installed v6.0+: Indicates if the CBT driver is installed for SQL Server instances on the specified Windows host. Set to true when the CBT driver is installed. Set to false when the CBT driver is not installed. |
+| mssqlSddCertificateId | String | Supported in v9.2+ Specifies the certificate ID corresponding to the public key certificate of the CA that signed the SQL server certificate for Sensitive Data Discovery. |
+| mssqlSddUsername | String | Supported in v9.2+ Specifies the username configured for the SQL server instance for sensitive data discovery. |
+| oracleQueryUser | String | Supported in v5.0+ Specifies the Oracle username for an account with query privileges. |
+| oracleSddUsername | String | Supported in v9.3+ Specifies the username configured for the Oracle host for sensitive data discovery. |
+| oracleSddWalletPath | String | Supported in v9.3+ Specifies the wallet path on the Oracle host which is used to authenticate remote connections to oracle databases during Sensitive Data Discovery. |
+| oracleSepsSettings | [OracleSepsWalletSettings](OracleSepsWalletSettings.md) | Supported in v9.4+ Oracle SEPS settings for the host. |
+| oracleSysDbaUser | String | Supported in v5.0+ Specifies the Oracle username for an account with sysdba privileges. |
+| osInstallationTypeOpt | String | Supported in v9.4+ Specifies the Windows installation type (e.g., "Server", "Client"). Only applicable to Windows hosts; null for non-Windows hosts. |
+| shouldMssqlSddThroughRba | Boolean | Supported in v9.4+ A Boolean flag that specifies whether to perform the Data Discovery and Classification data acquisition workflow for SQL Server host through RBA. |
+| shouldOracleSddThroughRba | Boolean | Supported in v9.4+ A Boolean flag that specifies whether to perform the Data Discovery and Classification data acquisition workflow for Oracle host through RBA. |
+
+## Used By
+
+**Referenced by**
+
+- [BulkRegisterHostReply.data](BulkRegisterHostReply.md)
+- [HostSecondaryRegistrationResult.hostDetail](HostSecondaryRegistrationResult.md)
+- [InternalBulkUpdateHostResponse.items](InternalBulkUpdateHostResponse.md)
+- [RbsHostInstallStatus.hostDetail](RbsHostInstallStatus.md)
+- [RefreshHostReply.output](RefreshHostReply.md)
+- [UpdateCertificateHostReply.output](UpdateCertificateHostReply.md)
+- [V1BulkRegisterHostAsyncResponse.items](V1BulkRegisterHostAsyncResponse.md)

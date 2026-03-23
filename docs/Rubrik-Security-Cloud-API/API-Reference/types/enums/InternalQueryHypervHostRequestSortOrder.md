@@ -1,0 +1,10 @@
+# InternalQueryHypervHostRequestSortOrder
+
+*No description available.*
+
+## Values
+
+| Value | Description |
+|-------|-------------|
+| INTERNAL_QUERY_HYPERV_HOST_REQUEST_SORT_ORDER_ASC |  |
+| INTERNAL_QUERY_HYPERV_HOST_REQUEST_SORT_ORDER_DESC |  |

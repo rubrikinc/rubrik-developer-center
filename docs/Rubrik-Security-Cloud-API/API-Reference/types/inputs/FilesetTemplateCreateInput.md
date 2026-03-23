@@ -1,0 +1,25 @@
+# FilesetTemplateCreateInput
+
+Supported in v5.0+
+
+## Fields
+
+| Field | Type | Description |
+|-------|------|-------------|
+| backupScriptErrorHandling | String | Supported in v5.0+ Action taken if script fails. Options are "abort", "continue". |
+| backupScriptTimeout | [Long](../scalars/Long.md) | Supported in v5.0+ Number of seconds after which the script is killed if it has not completed execution. |
+| exceptions | [String!] | Supported in v5.0+ |
+| excludes | [String!] | Supported in v5.0+ |
+| filesetOptions | [FilesetOptionsInput](FilesetOptionsInput.md) | Fileset options. |
+| includes | [String!]! | Required. Supported in v5.0+ |
+| isArrayEnabled | Boolean | Supported in v5.0+ Boolean value that determines whether the fileset is array-enabled. Set to true to indicate that the fileset is array-enabled. Set to false to indicate that the fileset is not array-enabled. When a fileset is array-enabled, the includes must be top-level LVM logical volume mount points. |
+| isCreatedByKupr | Boolean | Supported in v7.0+ Specifies whether this is created by a Kupr Host. |
+| isCreatedByPolarisNas | Boolean | Specifies whether the template was created for Rubrik Security Cloud NAS. |
+| name | String! | Required. Supported in v5.0+ |
+| operatingSystemType | [FilesetTemplateCreateOperatingSystemType](../enums/FilesetTemplateCreateOperatingSystemType.md) | Supported in v5.0+ Operating system type of filesets created by template. |
+| postBackupScript | String | Supported in v5.0+ Script to run after backup of this fileset ends. |
+| preBackupScript | String | Supported in v5.0+ Script to run before backup of this fileset starts. |
+| shareType | [FilesetTemplateCreateShareType](../enums/FilesetTemplateCreateShareType.md) | Supported in v5.0+ |
+| shouldOverrideClusterWideBlocklistedFilesystemPaths | Boolean | Supported in v9.5+ Specifies whether to override the cluster-wide blocklisted filesystem paths. |
+| shouldRetryPrescriptIfBackupFails | Boolean | Supported in v9.2+ Specifies whether to retry the pre-backup script if the backup fails. If set to true, the pre-backup script will be retried if the backup fails. If set to false, the pre-backup script will not be retried if the backup fails. |
+| templateBlocklistedFilesystemPaths | String | Supported in v9.5+ Comma-separated list of blocklisted filesystem paths specific to this template. |

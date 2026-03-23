@@ -1,0 +1,22 @@
+# RansomwareResultConnection
+
+Paginated list of RansomwareResult objects. Each page of the results includes at most 1000 entries. Query the `pageInfo.hasNextPage` field to know whether all objects were returned.
+
+## Fields
+
+| Field | Type | Description |
+|-------|------|-------------|
+| count | Int! | Total number of RansomwareResult objects matching the request arguments. |
+| edges | [[RansomwareResultEdge](RansomwareResultEdge.md)!]! | List of RansomwareResult objects with additional pagination information. Use `nodes` if per-object cursors are not needed. |
+| nodes | [[RansomwareResult](RansomwareResult.md)!]! | List of RansomwareResult objects. |
+| pageInfo | [PageInfo](PageInfo.md)! | General information about this result page. |
+
+## Used By
+
+**Queries**
+
+- [query: ransomwareResults](../../queries/ransomwareResults.md)
+
+**Referenced by**
+
+- [RansomwareResultGroupedData.ransomwareResults](RansomwareResultGroupedData.md)

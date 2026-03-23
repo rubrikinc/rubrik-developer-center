@@ -1,0 +1,17 @@
+# SyslogSeverity
+
+Supported in v5.1+ The syslog message severity based on RFC 5424.
+
+## Values
+
+| Value | Description |
+|-------|-------------|
+| SYSLOG_SEVERITY_ALERT |  |
+| SYSLOG_SEVERITY_ALL |  |
+| SYSLOG_SEVERITY_CRITICAL |  |
+| SYSLOG_SEVERITY_DEBUG |  |
+| SYSLOG_SEVERITY_EMERGENCY |  |
+| SYSLOG_SEVERITY_ERROR |  |
+| SYSLOG_SEVERITY_INFORMATIONAL |  |
+| SYSLOG_SEVERITY_NOTICE |  |
+| SYSLOG_SEVERITY_WARNING |  |

@@ -1,0 +1,13 @@
+# VirtualMachineUpdateWithSecretInput
+
+Supported in v5.0+
+
+## Fields
+
+| Field | Type | Description |
+|-------|------|-------------|
+| guestCredential | [BaseGuestCredentialInput](BaseGuestCredentialInput.md) | Supported in v5.0+ |
+| guestCredentialId | String | Supported in v7.0+ ID of the guest OS credential to be used for authentication to the virtual machine guest OS. When this ID is specified, the 'guestCredential' field will be ignored. |
+| shouldRefreshCacheAfterUpdate | Boolean | Supported in v5.0+ A boolean value that specifies whether an update also refreshes the in-memory cache. When 'false' updates do not refresh the in-memory cache. When 'true' updates refresh the in-memory cache. By default, this value is 'true'. Setting this value to 'false' reduces the time required for updates to complete. |
+| shouldUseAgent | Boolean | Supported in v8.1, v9.1+ v8.1: Boolean field specifying whether to use the Rubrik Backup Service or VMware tools to run pre/post scripts. When 'true', the Rubrik Backup Service is used, otherwise the VMware tools is used. v9.1+: Boolean field specifying whether to use the Rubrik Backup Service or VMware tools to run pre/post scripts. When 'true', the Rubrik Backup Service is used, otherwise the VMware tools is used. |
+| virtualMachineUpdate | [VirtualMachineUpdateInput](VirtualMachineUpdateInput.md) |  |

@@ -1,0 +1,21 @@
+# ExportSnapshotJobConfigV2Input
+
+Supported in v5.1+
+
+## Fields
+
+| Field | Type | Description |
+|-------|------|-------------|
+| clusterId | String | ID of the Rubrik cluster to export the new virtual machine to. |
+| contentLibraryId | String | Supported in v9.1+ ID of the content library to which the new content library item is being exported. |
+| datastoreId | String! | Required. Supported in v5.1+ ID of the datastore to assign to the exported virtual machine. |
+| folderId | String | Supported in v9.1+ ID of the virtual machine folder to export the new virtual machine to. |
+| hostId | String | Supported in v5.1+ ID of the ESXi host to export the new virtual machine to. |
+| mountExportSnapshotJobCommonOptionsV2 | [MountExportSnapshotJobCommonOptionsV2Input](MountExportSnapshotJobCommonOptionsV2Input.md) |  |
+| requiredRecoveryParameters | [RequiredRecoveryParametersInput](RequiredRecoveryParametersInput.md) |  |
+| resourcePoolId | String | Supported in v5.2+ ID of the resource pool to export the new virtual machine to. |
+| shouldConvertToTemplate | Boolean | Supported in v9.1+ Specifies whether Export converts the recovered virtual machine to a template. |
+| shouldRecoverTags | Boolean | Supported in v5.1+ The job recovers any tags that were assigned to the virtual machine. |
+| shouldUseHotAddProxy | Boolean | Supported in v7.0+ Boolean value that determines whether Export uses a HotAdd mode to transport virtual disk data. When this value is `true`, Export uses HotAdd mode to transport virtual disk data. When this value is `false`, Export uses NBDSSL to transport virtual disk data. The default value is `false`. |
+| unregisterVm | Boolean | Supported in v5.1+ A Boolean value that determines whether the new virtual machine created from a snapshot is registered with the vCenter Server. When this value is 'true', the registration is removed from the vCenter Server. When this value is 'false', the registration is kept on the vCenter Server. The default is 'false'. |
+| vNicBindings | [[VmwareVnicBindingInfoV2Input](VmwareVnicBindingInfoV2Input.md)!] | Supported in v6.0+ The network binding for vNIC of the virtual machine. |

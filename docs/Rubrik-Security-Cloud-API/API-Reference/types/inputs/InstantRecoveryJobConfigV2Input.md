@@ -1,0 +1,19 @@
+# InstantRecoveryJobConfigV2Input
+
+Supported in v5.1+
+
+## Fields
+
+| Field | Type | Description |
+|-------|------|-------------|
+| clusterId | String | Supported in v6.0+ ID of the compute cluster where the new virtual machine will be mounted. |
+| hostId | String | Supported in v5.1+ ID of the ESXi host to use for Instant Recovery. |
+| migrationConfig | [RelocateMountConfigV2Input](RelocateMountConfigV2Input.md) | Supported in v9.0+ Configuration for datastore migration. |
+| mountExportSnapshotJobCommonOptionsV2 | [MountExportSnapshotJobCommonOptionsV2Input](MountExportSnapshotJobCommonOptionsV2Input.md) |  |
+| preserveMoid | Boolean | Supported in v5.1+ A Boolean value that determines whether the MOID of the source virtual machine is preserved in a restore operation. When this value is 'true', the MOID of the source is preserved. When this value is 'false', the restored virtual machine is assigned a new MOID. |
+| requiredRecoveryParameters | [RequiredRecoveryParametersInput](RequiredRecoveryParametersInput.md) |  |
+| resourcePoolId | String | Supported in v6.0+ ID of the resource pool where the new virtual machine will be mounted. |
+| shouldMigrateImmediately | Boolean | Supported in v9.0+ Specifies whether to trigger datastore migration immediately when the Instant Recovery succeeds. |
+| shouldRecoverTags | Boolean | Supported in v5.1+ A Boolean value that determines whether the job recovers the tags assigned to the virtual machine. When this value is 'true', the job recovers the tags. When this value is 'false', the job does not recover the tags. |
+| vNicBindings | [[VmwareVnicBindingInfoV2Input](VmwareVnicBindingInfoV2Input.md)!] | Supported in v6.0+ The network binding for vNIC of the virtual machine. |
+| vlan | Int | Supported in v5.1+ The preferred VLAN ID used by the VLAN ESXi host to mount the datastore. |

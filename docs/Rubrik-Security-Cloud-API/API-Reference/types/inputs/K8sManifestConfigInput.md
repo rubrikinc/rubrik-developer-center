@@ -1,0 +1,19 @@
+# K8sManifestConfigInput
+
+Supported in v9.2+ Input to generate a manifest for the Kubernetes cluster.
+
+## Fields
+
+| Field | Type | Description |
+|-------|------|-------------|
+| distribution | String! | Required. Supported in v9.2+ Distribution of the Kubernetes cluster to be added. |
+| id | String | Supported in v9.2+ UUID of the Kubernetes cluster to be added. |
+| isAutoPsCreationEnabled | Boolean | Supported in v9.2+ Specifies whether to enable automatic protection set creation for the Kubernetes cluster. |
+| k8sNodeIp | String | Supported in v9.2+ IP address of the master node of the Kubernetes cluster. This is required only when transport type is NodePort. |
+| nadName | String | Supported in v9.4+ The name of the network attachment definition object. |
+| nadNamespace | String | Supported in v9.4+ The namespace to which the network attachment definition object belongs. |
+| name | String! | Required. Supported in v9.2+ Name of the Kubernetes Cluster. |
+| pullSecret | String | Supported in v9.2+ The pull secret required for pulling Rubrik container images. |
+| registry | String | Supported in v9.2+ Container registry URL for storing Rubrik container images. |
+| serviceAccount | [ServiceAccountInputInput](ServiceAccountInputInput.md)! | Required. Supported in v9.2+ The RSC service account used for onboarding. |
+| transport | String! | Required. Supported in v9.2+ The transport type used for communication with the Kubernetes cluster. |
