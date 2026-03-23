@@ -1,0 +1,10 @@
+# DownloadManagedVolumeFilesInput
+
+Input for downloading Managed Volume files.
+
+## Fields
+
+| Field  | Type                                                                                                                                                                             | Description                                                                                               |
+| ------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------- |
+| config | [ManagedVolumeDownloadFilesJobConfigInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/ManagedVolumeDownloadFilesJobConfigInput/index.md)! | Required. Configuration information for a job to download files and folders from a managed volume backup. |
+| id     | String!                                                                                                                                                                          | Required. ID assigned to a managed volume backup object.                                                  |

@@ -1,0 +1,59 @@
+# CloudDirectSnapshot
+
+NAS Cloud Direct snapshot object.
+
+**Implements:** [GenericSnapshot](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/GenericSnapshot/index.md)
+
+## Fields
+
+| Field                    | Type                                                                                                                                                             | Description                                                                         |
+| ------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------- |
+| cloudDirectId            | [UUID](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/UUID/index.md)!                                                        | ID of the snapshot on the NAS Cloud Direct cluster.                                 |
+| clusterUuid              | [UUID](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/UUID/index.md)!                                                        | NAS Cloud Direct cluster ID.                                                        |
+| completed                | [DateTime](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/DateTime/index.md)                                                 | Time snapshot completed.                                                            |
+| date                     | [DateTime](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/DateTime/index.md)!                                                | Timestamp of the snapshot.                                                          |
+| expirationDate           | [DateTime](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/DateTime/index.md)                                                 | Date the snapshot will expire.                                                      |
+| expiryHint               | Boolean!                                                                                                                                                         | Specifies whether the expiration hint is enabled.                                   |
+| id                       | [UUID](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/UUID/index.md)!                                                        | Object ID.                                                                          |
+| indexingAttempts         | [Long](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/Long/index.md)!                                                        | Number of attempts for indexing the snapshot.                                       |
+| isAnomaly                | Boolean!                                                                                                                                                         | Flag if the snapshot is an anomaly.                                                 |
+| isCorrupted              | Boolean!                                                                                                                                                         | Specifies whether the snapshot is corrupted.                                        |
+| isCustomRetentionApplied | Boolean                                                                                                                                                          | Specifies whether the snapshot uses a custom retention period.                      |
+| isDownloadedSnapshot     | Boolean                                                                                                                                                          | Specifies whether the snapshot was downloaded.                                      |
+| isExpired                | Boolean!                                                                                                                                                         | Specifies whether or not the snapshot is expired.                                   |
+| isIndexed                | Boolean!                                                                                                                                                         | Specifies whether the snapshot is indexed or not.                                   |
+| isOnDemandSnapshot       | Boolean!                                                                                                                                                         | Specifies if the snapshot is on-demand.                                             |
+| isQuarantineProcessing   | Boolean!                                                                                                                                                         | Specifies whether RSC is processing the snapshot to determine its quarantine state. |
+| isQuarantined            | Boolean!                                                                                                                                                         | Specifies whether the snapshot is quarantined.                                      |
+| isUnindexable            | Boolean!                                                                                                                                                         | Specifies whether the snapshot can be unindexed.                                    |
+| object                   | [CloudDirectNasObject](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/unions/CloudDirectNasObject/index.md)!                         | NAS Cloud Direct object (Bucket or Share) to which this snapshot belongs.           |
+| policyName               | String!                                                                                                                                                          | Name of policy assigned to the snapshot in NAS Cloud Direct.                        |
+| protocol                 | [CloudDirectSnapshotProtocolType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/CloudDirectSnapshotProtocolType/index.md)!    | Protocol of the NAS Cloud Direct snapshot.                                          |
+| slaDomain                | [SlaDomain](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/SlaDomain/index.md)                                            | SLA Domain of the snapshot.                                                         |
+| snappableId              | String!                                                                                                                                                          | The workload ID of the snapshot.                                                    |
+| snapshotRetentionInfo    | [CloudDirectSnapshotRetentionInfo](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/CloudDirectSnapshotRetentionInfo/index.md) | Snapshot retention-related information.                                             |
+| state                    | [CloudDirectSnapshotSateType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/CloudDirectSnapshotSateType/index.md)!            | State of snapshot on NAS Cloud Direct.                                              |
+| summary                  | [CloudDirectSnapshotSummary](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/CloudDirectSnapshotSummary/index.md)             | Summary of statistics for this snapshot.                                            |
+| systemId                 | String!                                                                                                                                                          | ID of the NAS Cloud Direct System.                                                  |
+| target                   | String                                                                                                                                                           | The name of the target associated with this snapshot.                               |
+| type                     | [CloudDirectSnapshotType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/CloudDirectSnapshotType/index.md)!                    |                                                                                     |
+| userExclusionDetails     | [CloudDirectExclusionSummary](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/CloudDirectExclusionSummary/index.md)           | Summary of user-defined exclusions for this snapshot.                               |
+| workloadId               | [UUID](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/UUID/index.md)!                                                        | Rubrik ID of NAS Cloud Direct workload.                                             |
+
+## Used By
+
+**Queries**
+
+- [query: cloudDirectSnapshot](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/cloudDirectSnapshot/index.md)
+- [query: newestSnapshotForCloudDirectObject](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/newestSnapshotForCloudDirectObject/index.md)
+- [query: oldestSnapshotForCloudDirectObject](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/oldestSnapshotForCloudDirectObject/index.md)
+- [query: cloudDirectSnapshots](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/cloudDirectSnapshots/index.md) *(via connection)*
+- [query: snapshotsOfCloudDirectBucket](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/snapshotsOfCloudDirectBucket/index.md) *(via connection)*
+- [query: snapshotsOfCloudDirectShare](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/snapshotsOfCloudDirectShare/index.md) *(via connection)*
+
+**Referenced by**
+
+- [CloudDirectNasBucket.newestSnapshot](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/CloudDirectNasBucket/index.md)
+- [CloudDirectNasBucket.oldestSnapshot](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/CloudDirectNasBucket/index.md)
+- [CloudDirectNasShare.newestSnapshot](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/CloudDirectNasShare/index.md)
+- [CloudDirectNasShare.oldestSnapshot](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/CloudDirectNasShare/index.md)

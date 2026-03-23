@@ -75,3 +75,31 @@ See [Cloud Workloads](https://developer.rubrik.com/Rubrik-Security-Cloud-API/Dat
 ### Job Status
 
 See [Cloud Workloads](https://developer.rubrik.com/Rubrik-Security-Cloud-API/Data-Protection/Cloud/index.md)
+
+### Restore
+
+```graphql
+
+```
+
+```powershell
+
+```
+
+```bash
+
+```
+
+### Export
+
+```graphql
+
+```
+
+```powershell
+
+```
+
+```bash
+
+```

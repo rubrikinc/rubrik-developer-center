@@ -1,0 +1,7 @@
+# MosaicSnapshotGroupByInfo
+
+GroupBy information of snapshot.
+
+## Possible Types
+
+- [TimeRangeWithUnit](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/TimeRangeWithUnit/index.md)

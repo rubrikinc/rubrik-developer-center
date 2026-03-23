@@ -1,0 +1,18 @@
+# StartExportAzureSqlManagedInstanceDbJobInput
+
+Input for the job to export the specified Azure SQL Managed Instance database.
+
+## Fields
+
+| Field                                   | Type                                                                                                                                                                  | Description                                                                           |
+| --------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------- |
+| azureSqlManagedInstanceDbLtrExportInput | [AzureSqlManagedInstanceDbLtrExport](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/AzureSqlManagedInstanceDbLtrExport/index.md)   | Input for exporting from Long Term Retention (LTR) backup.                            |
+| azureSqlManagedInstanceDbPitExportInput | [AzureSqlManagedInstanceDbPitExport](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/AzureSqlManagedInstanceDbPitExport/index.md)   | Input for exporting from Point-in-Time (PiT) backup.                                  |
+| destinationDatabaseName                 | String!                                                                                                                                                               | Name of the exported Azure SQL Managed Instance database.                             |
+| destinationManagedInstanceName          | String!                                                                                                                                                               | Name of the Azure SQL Managed Instance in which database is being exported.           |
+| destinationManagedInstanceRubrikId      | [UUID](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/UUID/index.md)                                                              | Destination Rubrik ID of the Asure SQL Managed Instance to which export will be done. |
+| destinationResourceGroupName            | String!                                                                                                                                                               | Resource Group in which database is being exported.                                   |
+| persistentBackupExportInput             | [AzureSqlPersistentBackupExportInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/AzureSqlPersistentBackupExportInput/index.md) | Input for exporting from Rubrik managed persistent backup.                            |
+| serviceObjectiveName                    | String                                                                                                                                                                | Input for service object name selected for the export of the database.                |
+| serviceTier                             | String                                                                                                                                                                | Input for service tier selected for the export of the database.                       |
+| sourceManagedInstanceDatabaseRubrikId   | [UUID](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/UUID/index.md)!                                                             | Rubrik ID of the Azure SQL Managed Instance Database to be exported.                  |

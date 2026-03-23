@@ -1,0 +1,21 @@
+# UpdateAzureTargetInput
+
+Input to edit Azure target.
+
+## Fields
+
+| Field                  | Type                                                                                                                                                        | Description                                                                                    |
+| ---------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------- |
+| accessKey              | String                                                                                                                                                      | Access key of the Azure target.                                                                |
+| accessTier             | [AzureStorageTier](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/AzureStorageTier/index.md)                              | Access tier to use for storing data in Azure storage, used only by NAS Cloud Direct locations. |
+| bypassProxy            | Boolean!                                                                                                                                                    | Specifies whether the proxy settings should be bypassed for creating this target location.     |
+| cloudAccountId         | [UUID](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/UUID/index.md)                                                    | Cloud account ID of the Azure target.                                                          |
+| computeProxySettings   | [ProxySettingsInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/ProxySettingsInput/index.md)                         | Compute proxy settings of the Azure target.                                                    |
+| computeSettings        | [AzureCloudComputeSettingsInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/AzureCloudComputeSettingsInput/index.md) | Compute settings of the Azure target.                                                          |
+| id                     | [UUID](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/UUID/index.md)!                                                   | Id of the Azure target to be edited.                                                           |
+| immutabilitySettings   | [AzureImmutabilitySettings](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/AzureImmutabilitySettings/index.md)           | Immutability settings of the Azure target.                                                     |
+| isConsolidationEnabled | Boolean                                                                                                                                                     | Flag to determine if consolidation is enabled in the Azure target.                             |
+| name                   | String                                                                                                                                                      | Name of the Azure target.                                                                      |
+| proxySettings          | [ProxySettingsInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/ProxySettingsInput/index.md)                         | Proxy settings of the Azure target.                                                            |
+| retrievalTier          | [AzureRetrievalTier](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/AzureRetrievalTier/index.md)                          | Retrieval tier to use for retrieving data from archive storage.                                |
+| storageAccountName     | String                                                                                                                                                      | Storage account name of the Azure target.                                                      |

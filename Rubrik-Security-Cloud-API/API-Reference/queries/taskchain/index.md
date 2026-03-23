@@ -1,0 +1,63 @@
+# taskchain
+
+Details of a taskchain.
+
+## Arguments
+
+| Argument                 | Type    | Description   |
+| ------------------------ | ------- | ------------- |
+| taskchainId *(required)* | String! | Taskchain ID. |
+
+## Returns
+
+[Taskchain](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/Taskchain/index.md)!
+
+## Sample
+
+```graphql
+query Taskchain($taskchainId: String!) {
+  taskchain(taskchainId: $taskchainId) {
+    account
+    component
+    config
+    currentTaskExecutionAttempts
+    currentTaskIndex
+    endTime
+    error
+    id
+    jobId
+    jobType
+    name
+    parentTaskchainId
+    podName
+    priority
+    progress
+    progressedAt
+    startTime
+    state
+    taskchainUuid
+    workflowName
+  }
+}
+```
+
+```json
+{
+  "taskchainId": "example-string"
+}
+```
+
+```json
+{
+  "data": {
+    "taskchain": {
+      "account": "example-string",
+      "component": "example-string",
+      "config": "example-string",
+      "currentTaskExecutionAttempts": 0,
+      "currentTaskIndex": 0,
+      "endTime": "2024-01-01T00:00:00.000Z"
+    }
+  }
+}
+```

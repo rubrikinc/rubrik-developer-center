@@ -1,0 +1,17 @@
+# GetPendingSlaAssignmentsReply
+
+Supported in v5.2+
+
+## Fields
+
+| Field                | Type                                                                                                                                                         | Description                                                                                                                        |
+| -------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------- |
+| invalidIds           | [String!]!                                                                                                                                                   | Required. List of invalid managed IDs from the input. These IDs either do not exist or cannot have an SLA Domain assigned to them. |
+| objectsWithNoOp      | \[[ManagedObjectSlaInfo](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/ManagedObjectSlaInfo/index.md)!\]!               | Required. List of objects with completed SLA Domain operations.                                                                    |
+| objectsWithPendingOp | \[[ManagedObjectPendingSlaInfo](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/ManagedObjectPendingSlaInfo/index.md)!\]! | Required. List of objects with pending SLA Domain operations.                                                                      |
+
+## Used By
+
+**Mutations**
+
+- [mutation: getPendingSlaAssignments](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/getPendingSlaAssignments/index.md)

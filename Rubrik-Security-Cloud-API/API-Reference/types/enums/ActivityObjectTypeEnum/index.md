@@ -1,0 +1,238 @@
+# ActivityObjectTypeEnum
+
+Represents different types of activity objects.
+
+## Values
+
+| Value                                    | Description                                    |
+| ---------------------------------------- | ---------------------------------------------- |
+| ACTIVE_DIRECTORY_DOMAIN                  | Active Directory domain.                       |
+| ACTIVE_DIRECTORY_DOMAIN_CONTROLLER       | Active Directory domain controller.            |
+| ACTIVE_DIRECTORY_FOREST                  | Active Directory forest.                       |
+| AGENT_CLOUD_POLICY                       | Agent Cloud policy object.                     |
+| ATLASSIAN_SITE                           | Atlassian site.                                |
+| AWS_NATIVE_DYNAMODB_TABLE                | AWS native dynamoDB table.                     |
+| AWS_NATIVE_REGION                        | AWS native region.                             |
+| AWS_NATIVE_S3_BUCKET                     | AWS native S3 bucket object.                   |
+| AZURE_AD_DIRECTORY                       | Azure AD Directory object.                     |
+| AZURE_DEVOPS_ORGANIZATION                | Azure DevOps Organisation.                     |
+| AZURE_DEVOPS_PROJECT                     | Azure DevOps Project.                          |
+| AZURE_DEVOPS_REPOSITORY                  | Azure DevOps Repository.                       |
+| AZURE_NATIVE_REGION                      | Azure native region.                           |
+| AZURE_NATIVE_RESOURCE_GROUP              | Azure Native Resource Group.                   |
+| AZURE_STORAGE_ACCOUNT                    | Azure storage account.                         |
+| AppBlueprint                             | App Blueprint object.                          |
+| AppFlows                                 | AppRecovery object.                            |
+| AuthDomain                               | Auth domain object.                            |
+| AwsAccount                               | AWS account object.                            |
+| AwsEventType                             | AWS object.                                    |
+| AwsNativeAccount                         | AWS native account object.                     |
+| AwsNativeEbsVolume                       | AWS native EBS volume object.                  |
+| AwsNativeEc2Instance                     | AWS native EC2 instance object.                |
+| AwsNativeRdsInstance                     | AWS native RDS instance.                       |
+| AzureNativeDisk                          | Azure native disk object.                      |
+| AzureNativeSubscription                  | Azure native subscription object.              |
+| AzureNativeVm                            | Azure native virtual machine object.           |
+| AzureSqlDatabase                         | Azure SQL database object.                     |
+| AzureSqlDatabaseServer                   | Azure SQL database server object.              |
+| AzureSqlManagedInstance                  | Azure SQL managed instance object.             |
+| AzureSqlManagedInstanceDatabase          | Azure SQL managed instance database object.    |
+| CASSANDRA_COLUMN_FAMILY                  | Cassandra column family.                       |
+| CASSANDRA_KEYSPACE                       | Cassandra keyspace.                            |
+| CASSANDRA_SOURCE                         | Cassandra source.                              |
+| CERTIFICATE_MANAGEMENT                   | Certificate Management.                        |
+| CLOUD_ACCOUNT                            | Cloud Account.                                 |
+| CLOUD_DIRECT_NAS_BUCKET                  | NAS Cloud Direct bucket.                       |
+| CLOUD_DIRECT_NAS_EXPORT                  | NAS Cloud Direct export.                       |
+| CLOUD_DIRECT_NAS_NAMESPACE               | NAS Cloud Direct namespace.                    |
+| CLOUD_DIRECT_NAS_SHARE                   | NAS Cloud Direct share.                        |
+| CLOUD_DIRECT_NAS_SYSTEM                  | NAS Cloud Direct system.                       |
+| CONFLUENCE_SPACE                         | Confluence Space.                              |
+| CROSS_ACCOUNT_PAIR                       | Cross-account pair event type.                 |
+| CROWDSTRIKE_INTEGRATION                  | CrowdStrike integration object.                |
+| CapacityBundle                           | Capacity bundle object.                        |
+| Certificate                              | Certificate object.                            |
+| CloudNativeVirtualMachine                | Cloud-native virtual machine object.           |
+| CloudNativeVm                            | Cloud-native virtual machine.                  |
+| Cluster                                  | Cluster object.                                |
+| ComputeInstance                          | Compute instance object.                       |
+| D365_DATAVERSE_TABLE                     | Dynamics 365 dataverse table.                  |
+| D365_METADATA                            | Dynamics 365 metadata.                         |
+| D365_ORGANIZATION                        | Dynamics 365 organization.                     |
+| DataLocation                             | Data location object.                          |
+| Db2Database                              | Db2 database object.                           |
+| Db2Instance                              | Db2 instance object.                           |
+| ENCRYPTION_MANAGEMENT                    | Encryption Management object.                  |
+| Ec2Instance                              | EC2 instance object.                           |
+| Envoy                                    | Envoy object.                                  |
+| ExchangeDatabase                         | Exchange database object.                      |
+| Exocompute                               | Exocompute object.                             |
+| FailoverClusterApp                       | Failover cluster app.                          |
+| GCP_CLOUD_SQL_INSTANCE                   | GCP Cloud SQL Instance.                        |
+| GITHUB_ORGANIZATION                      | GitHub Organization.                           |
+| GITHUB_REPOSITORY                        | GitHub Repository.                             |
+| GOOGLE_WORKSPACE_ORGANIZATION            | Google Workspace Organisation.                 |
+| GOOGLE_WORKSPACE_ORG_UNIT                | Google Workspace Organisation unit.            |
+| GOOGLE_WORKSPACE_SHARED_DRIVE            | Google Workspace Shared Drive.                 |
+| GOOGLE_WORKSPACE_USER                    | Google Workspace User.                         |
+| GOOGLE_WORKSPACE_USER_DRIVE              | Google Workspace User Drive.                   |
+| GOOGLE_WORKSPACE_USER_MAILBOX            | Google Workspace User Mailbox.                 |
+| GcpNativeDisk                            | GCP native disk.                               |
+| GcpNativeGceInstance                     | GCP native GCE instance.                       |
+| GcpNativeProject                         | GCP native project.                            |
+| HIGH_AVAILABILITY_POLICY                 | High availability policy for failover groups.  |
+| Hdfs                                     | HDFS object.                                   |
+| Host                                     | Host object.                                   |
+| HypervScvmm                              | HyperV SCVMM object.                           |
+| HypervServer                             | HyperV server object.                          |
+| HypervVm                                 | HyperV virtual machine object.                 |
+| IDP_AWS                                  | AWS IDP type.                                  |
+| IDP_ENTRA_ID                             | Entra ID IDP type.                             |
+| IDP_LOCAL_AD                             | Local AD type.                                 |
+| IDP_ON_PREM_AD                           | On-prem AD IDP type.                           |
+| IDP_SHAREPOINT                           | SharePoint IDP type.                           |
+| INFORMIX_INSTANCE                        | Informix instance.                             |
+| INTEL_FEED                               | Orion threat feed.                             |
+| JIRA_PROJECT                             | Atlassian Jira project.                        |
+| JIRA_SETTINGS                            | Atlassian Jira settings.                       |
+| JobInstance                              | Job instance.                                  |
+| K8S_CLUSTER                              | Kubernetes Cluster object.                     |
+| K8S_LABEL                                | Kubernetes label object.                       |
+| K8S_NAMESPACE_V2                         | Kubernetes Virtual Machine namespace object.   |
+| K8S_PROTECTION_SET                       | Kubernetes Protection Set object.              |
+| K8S_VIRTUAL_MACHINE                      | Kubernetes Virtual Machine object.             |
+| KMS_KEY_VAULT                            | KMS Key Vault.                                 |
+| KuprCluster                              | Kubernetes cluster object.                     |
+| KuprNamespace                            | Kubernetes namespace object.                   |
+| Ldap                                     | LDAP object.                                   |
+| LinuxFileset                             | Linux fileset object.                          |
+| LinuxHost                                | Linux host object.                             |
+| M365_BACKUP_STORAGE_GROUP                | Microsoft 365 Backup Storage Group.            |
+| M365_BACKUP_STORAGE_MAILBOX              | Microsoft 365 Backup Storage Mailbox.          |
+| M365_BACKUP_STORAGE_ONEDRIVE             | Microsoft 365 Backup Storage OneDrive.         |
+| M365_BACKUP_STORAGE_ORG                  | Microsoft 365 Backup Storage Subscription.     |
+| M365_BACKUP_STORAGE_SITE                 | Microsoft 365 Backup Storage SharePoint Site.  |
+| MONGODB_COLLECTION                       | MongoDB collection.                            |
+| MONGODB_DATABASE                         | MongoDB database.                              |
+| MONGODB_SOURCE                           | MongoDB source.                                |
+| MONGO_COLLECTION                         | MongoDB collection.                            |
+| MONGO_DATABASE                           | MongoDB database.                              |
+| MONGO_SOURCE                             | MongoDB source.                                |
+| MYSQLDB_INSTANCE                         | MySQL instance.                                |
+| ManagedVolume                            | Managed Volume object.                         |
+| Mssql                                    | MsSQL Object.                                  |
+| NAS_FILESET                              | NAS fileset object.                            |
+| NUTANIX_ERA                              | Nutanix Era object.                            |
+| NUTANIX_PRISM_CENTRAL                    | Nutanix Prism Central object.                  |
+| NasHost                                  | NAS host object.                               |
+| NasSystem                                | NAS system.                                    |
+| NutanixCluster                           | Nutanix cluster object.                        |
+| NutanixVm                                | Nutanix virtual machine object.                |
+| O365Calendar                             | O365 Calendar object.                          |
+| O365Group                                | O365 Group.                                    |
+| O365Mailbox                              | O365 Mailbox object.                           |
+| O365Onedrive                             | O365 OneDrive object.                          |
+| O365Organization                         | O365 Organization object.                      |
+| O365SharePointDrive                      | O365 SharePoint drive object.                  |
+| O365SharePointList                       | O365 SharePoint list object.                   |
+| O365Site                                 | O365 Site object.                              |
+| O365Team                                 | O365 Team object.                              |
+| OAUTH_TOKEN                              | OAuth token.                                   |
+| OKTA_TENANT                              | Okta tenant.                                   |
+| OLVM_COMPUTE_CLUSTER                     | OLVM Compute Cluster.                          |
+| OLVM_DATACENTER                          | OLVM Datacenter.                               |
+| OLVM_HOST                                | OLVM Host.                                     |
+| OLVM_MANAGER                             | OLVM Manager.                                  |
+| OLVM_VIRTUAL_MACHINE                     | OLVM Virtual Machine.                          |
+| OPENSTACK_ENVIRONMENT                    | Openstack Environment.                         |
+| OPENSTACK_VIRTUAL_MACHINE                | Openstack Virtual Machine.                     |
+| ORGANIZATION                             | Organization object.                           |
+| ORION_THREAT_HUNT                        | Orion threat hunt.                             |
+| ObjectProtection                         | Object protection.                             |
+| Oracle                                   | Oracle.                                        |
+| OracleDb                                 | Oracle database object.                        |
+| OracleHost                               | Oracle host object.                            |
+| OracleRac                                | Oracle RAC object.                             |
+| POSTGRES_DB_CLUSTER                      | Postgres Database Cluster.                     |
+| PRINCIPAL_ACCESS_POLICY                  | Access Policy principal type.                  |
+| PRINCIPAL_ASSUMABLE_IDENTITY             | Assumable identity principal type.             |
+| PRINCIPAL_ATTRIBUTE_SCHEMA               | Attribute Schema principal type.               |
+| PRINCIPAL_CERTIFICATE_TEMPLATE           | Certificate Template principal type.           |
+| PRINCIPAL_CLASS_SCHEMA                   | Class Schema principal type.                   |
+| PRINCIPAL_COMPUTER                       | Computer principal type.                       |
+| PRINCIPAL_CONTACT                        | Contact principal type.                        |
+| PRINCIPAL_CONTAINER                      | Container principal type.                      |
+| PRINCIPAL_CONTROL_ACCESS_RIGHT           | Control Access Right principal type.           |
+| PRINCIPAL_DFS_LINK                       | DFS Link principal type.                       |
+| PRINCIPAL_DFS_NAMESPACE_V1               | DFS Namespace V1 principal type.               |
+| PRINCIPAL_DFS_NAMESPACE_V2               | DFS Namespace V2 principal type.               |
+| PRINCIPAL_DNS_ZONE                       | DNS Zone principal type.                       |
+| PRINCIPAL_DOMAIN_DNS                     | Domain DNS principal type.                     |
+| PRINCIPAL_EXTERNAL_ACCOUNT               | External account principal type.               |
+| PRINCIPAL_EXTERNAL_PRINCIPAL             | External principal principal type.             |
+| PRINCIPAL_FOREIGN_SECURITY_PRINCIPAL     | Foreign Security Principal type.               |
+| PRINCIPAL_GPO                            | GPO principal type.                            |
+| PRINCIPAL_GROUP                          | Group principal type.                          |
+| PRINCIPAL_INFRASTRUCTURE_UPDATE          | Infrastructure Update principal type.          |
+| PRINCIPAL_INTER_SITE_TRANSPORT           | Inter-Site Transport principal type.           |
+| PRINCIPAL_INTER_SITE_TRANSPORT_CONTAINER | Inter-Site Transport Container principal type. |
+| PRINCIPAL_LICENSING_SITE_SETTINGS        | Licensing Site Settings principal type.        |
+| PRINCIPAL_MSDS_QUOTA_CONTAINER           | MSDS Quota Container principal type.           |
+| PRINCIPAL_MSDS_QUOTA_CONTROL             | MSDS Quota Control principal type.             |
+| PRINCIPAL_NAMED_LOCATION                 | Named Location principal type.                 |
+| PRINCIPAL_NTDS_SITE_SETTINGS             | NTDS Site Settings principal type.             |
+| PRINCIPAL_ORG_WIDE                       | Org wide principal type.                       |
+| PRINCIPAL_OU                             | OU principal type.                             |
+| PRINCIPAL_PASSWORD_SETTINGS              | Password Settings principal type.              |
+| PRINCIPAL_PASSWORD_SETTINGS_CONTAINER    | Password Settings Container principal type.    |
+| PRINCIPAL_PRINT_QUEUE                    | Print Queue principal type.                    |
+| PRINCIPAL_PUBLIC                         | Public principal type.                         |
+| PRINCIPAL_RID_MANAGER                    | RID Manager principal type.                    |
+| PRINCIPAL_SERVER                         | Server principal type.                         |
+| PRINCIPAL_SERVERS_CONTAINER              | Servers Container principal type.              |
+| PRINCIPAL_SERVICE_ACCOUNT                | Service account principal type.                |
+| PRINCIPAL_SITE                           | Site principal type.                           |
+| PRINCIPAL_SITE_LINK                      | Site Link principal type.                      |
+| PRINCIPAL_SITE_LINK_BRIDGE               | Site Link Bridge principal type.               |
+| PRINCIPAL_SUBNET                         | Subnet principal type.                         |
+| PRINCIPAL_SUBNET_CONTAINER               | Subnet Container principal type.               |
+| PRINCIPAL_TRUSTED_DOMAIN                 | Trusted Domain principal type.                 |
+| PRINCIPAL_VOLUME                         | Volume principal type.                         |
+| PROXMOX_CLUSTER                          | Proxmox cluster.                               |
+| PROXMOX_ENVIRONMENT                      | Proxmox environment.                           |
+| PROXMOX_NODE                             | Proxmox node.                                  |
+| PROXMOX_VIRTUAL_MACHINE                  | Proxmox virtual machine.                       |
+| PolarisAccount                           | Rubrik SaaS account object.                    |
+| PublicCloudMachineInstance               | Public cloud machine instance.                 |
+| REPLICATION_PAIR                         | Rubrik cluster replication pair.               |
+| RSC_CHILD_ACCOUNT                        | RSC Child Account (Dedicated Tenant).          |
+| RubrikEbsVolume                          | Rubrik SAAS EBS volume.                        |
+| RubrikEc2Instance                        | Rubrik SAAS EC2 instance.                      |
+| SALESFORCE_METADATA                      | Salesforce metadata.                           |
+| SALESFORCE_OBJECT                        | Salesforce objects.                            |
+| SALESFORCE_ORGANIZATION                  | Salesforce organization.                       |
+| SamlSso                                  | SAML single sign-on.                           |
+| SapHanaDb                                | SAP HANA database.                             |
+| SapHanaSystem                            | SAP HANA system.                               |
+| ShareFileset                             | Share fileset object.                          |
+| SlaDomain                                | SLA domain.                                    |
+| SmbDomain                                | Samba domain.                                  |
+| SnapMirrorCloud                          | SnapMirror cloud.                              |
+| StorageArray                             | Storage array.                                 |
+| StorageArrayVolumeGroup                  | Storage array Volume group.                    |
+| StorageLocation                          | Storage location.                              |
+| Storm                                    | Storm object.                                  |
+| SupportBundle                            | Support bundle.                                |
+| UnknownObjectType                        | Unknown object type.                           |
+| Upgrade                                  | Upgrade.                                       |
+| User                                     | User.                                          |
+| VMWARE_HOST                              | VMware host.                                   |
+| Vcd                                      | VCD.                                           |
+| VcdVapp                                  | VCD vApp.                                      |
+| Vcenter                                  | VCenter.                                       |
+| VmwareComputeCluster                     | VMware compute cluster.                        |
+| VmwareVm                                 | VMware virtual machine.                        |
+| VolumeGroup                              | Volume group.                                  |
+| WEBHOOK                                  | Webhook object.                                |
+| WindowsFileset                           | Windows fileset.                               |
+| WindowsHost                              | Windows host.                                  |

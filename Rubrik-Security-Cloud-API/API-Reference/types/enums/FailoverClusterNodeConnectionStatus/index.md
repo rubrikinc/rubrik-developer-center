@@ -1,0 +1,18 @@
+# FailoverClusterNodeConnectionStatus
+
+Supported in v5.2+ Connection type options for the failover cluster node.
+
+## Values
+
+| Value                                                          | Description |
+| -------------------------------------------------------------- | ----------- |
+| FAILOVER_CLUSTER_NODE_CONNECTION_STATUS_CONNECTED              |             |
+| FAILOVER_CLUSTER_NODE_CONNECTION_STATUS_CONNECTING             |             |
+| FAILOVER_CLUSTER_NODE_CONNECTION_STATUS_CONNECTOR_NOT_DEPLOYED |             |
+| FAILOVER_CLUSTER_NODE_CONNECTION_STATUS_DELETED                |             |
+| FAILOVER_CLUSTER_NODE_CONNECTION_STATUS_DELETING               |             |
+| FAILOVER_CLUSTER_NODE_CONNECTION_STATUS_DISCONNECTED           |             |
+| FAILOVER_CLUSTER_NODE_CONNECTION_STATUS_PARTIALLY_CONNECTED    |             |
+| FAILOVER_CLUSTER_NODE_CONNECTION_STATUS_REFRESHING             |             |
+| FAILOVER_CLUSTER_NODE_CONNECTION_STATUS_REPLICATION_TARGET     |             |
+| FAILOVER_CLUSTER_NODE_CONNECTION_STATUS_SECONDARY_CLUSTER      |             |

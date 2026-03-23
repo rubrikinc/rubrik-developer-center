@@ -1,0 +1,9 @@
+# BatchExportSnapshotJobConfigInput
+
+Supported in v6.0+
+
+## Fields
+
+| Field     | Type                                                                                                                                                                          | Description                                                                                     |
+| --------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- |
+| snapshots | \[[ExportSnapshotJobConfigForBatchInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/ExportSnapshotJobConfigForBatchInput/index.md)!\]! | Required. Supported in v6.0+ Array of objects containing information about snapshots to export. |

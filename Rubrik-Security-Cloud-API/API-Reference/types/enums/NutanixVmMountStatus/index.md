@@ -1,0 +1,13 @@
+# NutanixVmMountStatus
+
+Supported in v9.1+ Specifies the Live Mount status.
+
+## Values
+
+| Value                               | Description |
+| ----------------------------------- | ----------- |
+| NUTANIX_VM_MOUNT_STATUS_DELETING    |             |
+| NUTANIX_VM_MOUNT_STATUS_MIGRATING   |             |
+| NUTANIX_VM_MOUNT_STATUS_MOUNTING    |             |
+| NUTANIX_VM_MOUNT_STATUS_POWERED_OFF |             |
+| NUTANIX_VM_MOUNT_STATUS_POWERED_ON  |             |

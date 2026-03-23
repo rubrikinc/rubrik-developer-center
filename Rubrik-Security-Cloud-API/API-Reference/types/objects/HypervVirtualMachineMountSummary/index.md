@@ -1,0 +1,30 @@
+# HypervVirtualMachineMountSummary
+
+Supported in v5.0+
+
+## Fields
+
+| Field             | Type                                                                                                                                                                                  | Description                                                                                                        |
+| ----------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------ |
+| attachedDiskCount | Int                                                                                                                                                                                   | Supported in v9.1+ The number of disks attached to the target virtual machine, if the mount is a disk-level mount. |
+| hostId            | String                                                                                                                                                                                | Supported in v5.0+                                                                                                 |
+| hostName          | String                                                                                                                                                                                | Supported in v5.0+                                                                                                 |
+| id                | String!                                                                                                                                                                               | Required. Supported in v5.0+                                                                                       |
+| isDiskLevelMount  | Boolean                                                                                                                                                                               | Supported in v9.1+ A boolean field that indicates whether the mount is a disk-level mount.                         |
+| isReady           | Boolean!                                                                                                                                                                              | Required. Supported in v5.0+                                                                                       |
+| mountRequestId    | String                                                                                                                                                                                | Supported in v5.0+                                                                                                 |
+| mountTime         | [DateTime](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/DateTime/index.md)                                                                      | Supported in v9.2+ This field indicates the time of mounting.                                                      |
+| mountedVmId       | String                                                                                                                                                                                | Supported in v5.0+                                                                                                 |
+| mountedVmName     | String                                                                                                                                                                                | Supported in v5.0+                                                                                                 |
+| powerStatus       | [HypervVirtualMachineMountSummaryPowerStatus](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/HypervVirtualMachineMountSummaryPowerStatus/index.md)! | Required. Supported in v5.0+ The power status of the mounted VM(ON,OFF,SLEEP etc.).                                |
+| snapshotDate      | [DateTime](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/DateTime/index.md)                                                                      | Supported in v5.0+                                                                                                 |
+| targetVmName      | String                                                                                                                                                                                | Supported in v9.1+ The name of the target virtual machine.                                                         |
+| unmountRequestId  | String                                                                                                                                                                                | Supported in v5.0+                                                                                                 |
+| vmId              | String!                                                                                                                                                                               | Required. Supported in v5.0+                                                                                       |
+| vmName            | String!                                                                                                                                                                               | Required. Supported in v5.0+                                                                                       |
+
+## Used By
+
+**Referenced by**
+
+- [UpdateHypervVirtualMachineSnapshotMountReply.hypervVirtualMachineMountSummary](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/UpdateHypervVirtualMachineSnapshotMountReply/index.md)

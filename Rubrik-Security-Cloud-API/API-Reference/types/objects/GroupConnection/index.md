@@ -1,0 +1,18 @@
+# GroupConnection
+
+Paginated list of Group objects. Each page of the results includes at most 1000 entries. Query the `pageInfo.hasNextPage` field to know whether all objects were returned.
+
+## Fields
+
+| Field    | Type                                                                                                                     | Description                                                                                                     |
+| -------- | ------------------------------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------- |
+| count    | Int!                                                                                                                     | Total number of Group objects matching the request arguments.                                                   |
+| edges    | \[[GroupEdge](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/GroupEdge/index.md)!\]! | List of Group objects with additional pagination information. Use `nodes` if per-object cursors are not needed. |
+| nodes    | \[[Group](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/Group/index.md)!\]!         | List of Group objects.                                                                                          |
+| pageInfo | [PageInfo](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/PageInfo/index.md)!        | General information about this result page.                                                                     |
+
+## Used By
+
+**Queries**
+
+- [query: groupsInCurrentAndDescendantOrganization](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/groupsInCurrentAndDescendantOrganization/index.md)

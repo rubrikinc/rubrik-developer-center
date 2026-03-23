@@ -1,0 +1,14 @@
+# MountSnapshotJobConfigForBatchV2Input
+
+Supported in v6.0+
+
+## Fields
+
+| Field              | Type                                                                                                                                                       | Description                                                                                                                                                               |
+| ------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| config             | [MountSnapshotJobConfigV2Input](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/MountSnapshotJobConfigV2Input/index.md)! | Required. Supported in v6.0+ Snapshot mount configuration.                                                                                                                |
+| snapshotAfterDate  | [DateTime](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/DateTime/index.md)                                           | Supported in v6.0+ Mounts the oldest snapshot taken after the specified date. This parameter is evaluated only snapshotId and snapshotBeforeDate. do not have values set. |
+| snapshotBeforeDate | [DateTime](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/DateTime/index.md)                                           | Supported in v6.0+ Mounts the most recent snapshot taken prior to the specified date. This parameter is evaluated only when snapshotId does not have a value set.         |
+| snapshotId         | String                                                                                                                                                     | Supported in v6.0+ ID of the snapshot to mount. This parameter is optional if either the `snapshotBeforeDate` or `snapshotAfterDate` parameters are configured.           |
+| vmId               | String!                                                                                                                                                    | Required. Supported in v6.0+ ID of the virtual machine whose snapshot must be mounted.                                                                                    |
+| vmNamePrefix       | String                                                                                                                                                     | Supported in v7.0+ Prefix added to the name of new virtual machines created by the mount or export operation.                                                             |

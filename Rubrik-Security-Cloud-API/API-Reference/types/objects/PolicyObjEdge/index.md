@@ -1,0 +1,10 @@
+# PolicyObjEdge
+
+Wrapper around the PolicyObj object. This wrapper is used for pagination.
+
+## Fields
+
+| Field  | Type                                                                                                                | Description                                       |
+| ------ | ------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------- |
+| cursor | String!                                                                                                             | String used to identify this edge.                |
+| node   | [PolicyObj](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/PolicyObj/index.md)! | The actual PolicyObj object wrapped by this edge. |
