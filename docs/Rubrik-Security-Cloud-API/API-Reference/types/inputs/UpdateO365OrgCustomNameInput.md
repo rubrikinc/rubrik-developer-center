@@ -1,0 +1,10 @@
+# UpdateO365OrgCustomNameInput
+
+Configuration for updating an O365 organization custom name.
+
+## Fields
+
+| Field | Type | Description |
+|-------|------|-------------|
+| customName | String! | Custom name to use for the O365 organization. |
+| orgUuid | [UUID](../scalars/UUID.md)! | Polaris ID for an O365 organization. |

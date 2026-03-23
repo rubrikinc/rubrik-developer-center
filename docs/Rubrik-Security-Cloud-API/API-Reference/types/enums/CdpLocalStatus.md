@@ -1,0 +1,14 @@
+# CdpLocalStatus
+
+Supported in v5.1+ Current Local CDP Status of virtual machine.
+
+## Values
+
+| Value | Description |
+|-------|-------------|
+| CDP_LOCAL_STATUS_ACTIVE |  |
+| CDP_LOCAL_STATUS_FAILED |  |
+| CDP_LOCAL_STATUS_NOT_ENABLED |  |
+| CDP_LOCAL_STATUS_PENDING |  |
+| CDP_LOCAL_STATUS_RESYNCING |  |
+| CDP_LOCAL_STATUS_TAKING_SNAPSHOT |  |

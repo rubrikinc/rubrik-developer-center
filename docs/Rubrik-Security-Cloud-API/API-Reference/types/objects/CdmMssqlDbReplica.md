@@ -1,0 +1,24 @@
+# CdmMssqlDbReplica
+
+Replica SQL Server database of an availability group.
+
+## Fields
+
+| Field | Type | Description |
+|-------|------|-------------|
+| availabilityInfo | [CdmMssqlDbReplicaAvailabilityInfo](CdmMssqlDbReplicaAvailabilityInfo.md) | Information about the availability group of the replica SQL Server database. |
+| clusterUuid | String! | Cluster ID of the replica SQL Server database. |
+| hasPermissions | Boolean! | Specifies whether the Rubrik Backup Service has permissions to back up the replica SQL Server database. When this value is 'true', the Rubrik Backup Service has permission to back up the database. |
+| instance | [MssqlInstance](MssqlInstance.md) | Instance of the replica SQL Server database. |
+| instanceRootId | String! | ID of the root of this object. |
+| isArchived | Boolean! | Deprecated. Use `isDeleted` instead. |
+| isStandBy | Boolean! | Specifies if the replica SQL Server database is in standby mode. |
+| recoveryModel | String! | The recovery model of the replica. |
+| snapshotNeeded | Boolean! | Specifies if a snapshot needs to be taken before a log backup can occur on the replica SQL Server database. |
+| state | String! | The state of the replica. |
+
+## Used By
+
+**Referenced by**
+
+- [MssqlDatabase.replicas](MssqlDatabase.md)

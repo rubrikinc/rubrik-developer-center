@@ -1,0 +1,143 @@
+"""
+MkDocs hook: generate a handcrafted llms.txt index for AI assistants.
+
+Runs after all plugins (including mkdocs-llmstxt) so it takes precedence
+over any llms.txt the plugin may have written.
+"""
+
+import os
+
+
+LLMS_TXT = """\
+# Rubrik Developer Center
+
+> Rubrik Security Cloud (RSC) is a SaaS data security platform. Its API is a \
+single GraphQL endpoint at `POST /api/graphql`. All requests use a Bearer token \
+obtained via OAuth2 — either client credentials (service accounts) for automation, \
+or Authorization Code + PKCE for user-context flows.
+
+## Getting Started
+
+- [RSC API Overview](https://developer.rubrik.com/Rubrik-Security-Cloud-API/): \
+Introduction, key concepts, and quick-start guidance
+- [Authentication](https://developer.rubrik.com/Rubrik-Security-Cloud-API/authentication/): \
+Service account credentials and PKCE auth flows, token exchange, and Bearer token usage
+- [API Playground](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-playground/): \
+Interactive GraphQL explorer for the RSC API
+- [Troubleshooting](https://developer.rubrik.com/Rubrik-Security-Cloud-API/troubleshooting/): \
+Common errors and how to resolve them
+
+## GraphQL API Reference
+
+- [API Reference](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/): \
+Full reference for all queries, mutations, and types
+- [Changelog](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/Changelog/): \
+Schema changes by version, categorized as breaking, potentially breaking, or non-breaking
+- [Deprecations](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/Deprecations/): \
+Fields and types marked deprecated in the current schema
+
+## Data Protection
+
+- [SLA Domains](https://developer.rubrik.com/Rubrik-Security-Cloud-API/Data-Protection/SLA-Domains/): \
+Create, assign, and manage SLA protection policies
+- [Snapshots](https://developer.rubrik.com/Rubrik-Security-Cloud-API/Snapshots/): \
+List, browse, and manage snapshots across workloads
+- [VMware vSphere](https://developer.rubrik.com/Rubrik-Security-Cloud-API/Data-Protection/Data-Center/VMware-vSphere/): \
+VM backup, recovery, and live mount operations
+- [Microsoft SQL](https://developer.rubrik.com/Rubrik-Security-Cloud-API/Data-Protection/Data-Center/Microsoft-SQL/): \
+SQL Server backup and recovery
+- [Oracle](https://developer.rubrik.com/Rubrik-Security-Cloud-API/Data-Protection/Data-Center/Oracle/): \
+Oracle DB backup and recovery
+- [SAP HANA](https://developer.rubrik.com/Rubrik-Security-Cloud-API/Data-Protection/Data-Center/SAP-HANA/): \
+SAP HANA backup and recovery
+- [NAS / Unstructured Data](https://developer.rubrik.com/Rubrik-Security-Cloud-API/Data-Protection/Data-Center/NAS-Unstructured-Data/): \
+NAS share and fileset protection
+- [Filesets](https://developer.rubrik.com/Rubrik-Security-Cloud-API/Data-Protection/Data-Center/Filesets/): \
+Fileset backup and recovery
+- [Managed Volumes](https://developer.rubrik.com/Rubrik-Security-Cloud-API/Data-Protection/Data-Center/Managed-Volumes/): \
+Managed Volume operations
+- [Nutanix AHV](https://developer.rubrik.com/Rubrik-Security-Cloud-API/Data-Protection/Data-Center/Nutanix-AHV/): \
+Nutanix VM protection
+- [Microsoft HyperV](https://developer.rubrik.com/Rubrik-Security-Cloud-API/Data-Protection/Data-Center/Microsoft-HyperV/): \
+Hyper-V VM protection
+- [Microsoft Active Directory](https://developer.rubrik.com/Rubrik-Security-Cloud-API/Data-Protection/Data-Center/Microsoft-AD/): \
+Active Directory protection
+- [Microsoft Exchange](https://developer.rubrik.com/Rubrik-Security-Cloud-API/Data-Protection/Data-Center/Microsoft-Exchange/): \
+Exchange backup and recovery
+- [MongoDB](https://developer.rubrik.com/Rubrik-Security-Cloud-API/Data-Protection/Data-Center/MongoDB/): \
+MongoDB backup and recovery
+- [IBM Db2](https://developer.rubrik.com/Rubrik-Security-Cloud-API/Data-Protection/Data-Center/IBM-DB2/): \
+IBM Db2 backup and recovery
+- [AWS](https://developer.rubrik.com/Rubrik-Security-Cloud-API/Data-Protection/Cloud/AWS/): \
+AWS cloud-native workload protection
+- [Azure](https://developer.rubrik.com/Rubrik-Security-Cloud-API/Data-Protection/Cloud/Azure/): \
+Azure cloud-native workload protection
+- [GCP](https://developer.rubrik.com/Rubrik-Security-Cloud-API/Data-Protection/Cloud/GCP/): \
+Google Cloud workload protection
+- [Clusters](https://developer.rubrik.com/Rubrik-Security-Cloud-API/Data-Protection/Infrastructure/Clusters/): \
+Rubrik cluster management
+- [Rubrik Cloud Vault](https://developer.rubrik.com/Rubrik-Security-Cloud-API/Data-Protection/Infrastructure/Rubrik-Cloud-Vault/): \
+Cloud archival and vaulting
+
+## SaaS App Protection
+
+- [Microsoft 365](https://developer.rubrik.com/Rubrik-Security-Cloud-API/SaaS-App-Protection/Microsoft-M365/): \
+M365 backup and recovery (Exchange Online, SharePoint, OneDrive, Teams)
+
+## Threat Analytics
+
+- [Anomaly Detection](https://developer.rubrik.com/Rubrik-Security-Cloud-API/Threat-Analytics/Anomaly-Detection/): \
+Detect and investigate ransomware and anomalous activity
+- [Threat Hunting](https://developer.rubrik.com/Rubrik-Security-Cloud-API/Threat-Analytics/Threat-Hunting/): \
+Scan backups for known threats and IOCs
+- [Threat Monitoring](https://developer.rubrik.com/Rubrik-Security-Cloud-API/Threat-Analytics/Threat-Monitoring/): \
+Continuous monitoring for threats across protected workloads
+
+## Observability
+
+- [Events](https://developer.rubrik.com/Rubrik-Security-Cloud-API/Observability/Events/): \
+Query and subscribe to RSC audit and activity events
+- [Event Reference](https://developer.rubrik.com/Rubrik-Security-Cloud-API/Observability/Events/Event-Reference/Index/): \
+All event types and their fields
+- [Metrics](https://developer.rubrik.com/Rubrik-Security-Cloud-API/Observability/Metrics/): \
+Capacity and performance metrics
+- [Reports](https://developer.rubrik.com/Rubrik-Security-Cloud-API/Observability/Reports/): \
+Compliance and activity reports
+
+## System Settings
+
+- [Users and Access](https://developer.rubrik.com/Rubrik-Security-Cloud-API/System-Settings/Users-and-Access/): \
+User management, roles, and service accounts
+- [Certificate Management](https://developer.rubrik.com/Rubrik-Security-Cloud-API/System-Settings/Certificate-Management/): \
+TLS certificate operations
+
+## Annapurna (AI Retriever Framework)
+
+- [Annapurna Overview](https://developer.rubrik.com/Rubrik-Security-Cloud-API/Annapurna/): \
+AI-native retriever framework for building LLM-powered applications on top of RSC backup data
+- [Retrievers](https://developer.rubrik.com/Rubrik-Security-Cloud-API/Annapurna/Retrievers/): \
+Built-in retrievers for querying RSC data from LLM pipelines
+- [LangChain Integration](https://developer.rubrik.com/Rubrik-Security-Cloud-API/Annapurna/Examples/LangChain/): \
+Using Annapurna retrievers with LangChain
+
+## SDKs and Tools
+
+- [SDKs and Tools Overview](https://developer.rubrik.com/SDKs-and-Tools/): \
+Available SDKs, CLI tools, and integrations
+- [PowerShell SDK](https://developer.rubrik.com/SDKs-and-Tools/PowerShell/): \
+Rubrik PowerShell module for RSC automation
+- [PowerShell Advanced Usage](https://developer.rubrik.com/SDKs-and-Tools/PowerShell/Advanced-Usage/): \
+Advanced PowerShell patterns and examples
+
+## Optional
+
+- [Full content (llms-full.txt)](https://developer.rubrik.com/llms-full.txt): \
+Complete documentation content for RAG and embedding pipelines
+"""
+
+
+def on_post_build(config, **kwargs):
+    site_dir = config["site_dir"]
+    output_path = os.path.join(site_dir, "llms.txt")
+    with open(output_path, "w", encoding="utf-8") as f:
+        f.write(LLMS_TXT)

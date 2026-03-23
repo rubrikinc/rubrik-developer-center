@@ -1,0 +1,11 @@
+# WorkloadRegionInput
+
+Regions for which the workloads are to be shown.
+
+## Fields
+
+| Field | Type | Description |
+|-------|------|-------------|
+| awsNativeRegion | [AwsNativeRegion](../enums/AwsNativeRegion.md)! | Region of the AWS location. |
+| azureNativeRegion | [AzureNativeRegion](../enums/AzureNativeRegion.md)! | Region of the Azure location. |
+| gcpNativeRegion | String! | Region of the GCP location. |

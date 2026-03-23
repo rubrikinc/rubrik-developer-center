@@ -1,0 +1,13 @@
+# BulkRecoverySapHanaDbsConfigInput
+
+Supported in v9.4+
+
+## Fields
+
+| Field | Type | Description |
+|-------|------|-------------|
+| dbIds | [String!]! | Required. Supported in v9.4+ |
+| isAfter | Boolean! | Required. Supported in v9.4+ If true, the databases will be recovered to the nearest recovery point available after the specified time. If false, the databases will be recovered to the nearest recovery point available before the specified time. |
+| recoveryPoint | [DateTime](../scalars/DateTime.md) | Supported in v9.4+ The time to which the SAP HANA database has to be recovered. |
+| sapHanaSystemCopyMap | [[SapHanaSystemCopyConfigInput](SapHanaSystemCopyConfigInput.md)!] | Supported in v9.4+ The map of source and target database IDs for system copy. |
+| shouldInitializeLogArea | Boolean! | Required. Supported in v9.4+ If you do not want to recover the log segments residing in the log area, set this boolean to true. After the recovery, the log entries will be deleted from the log area. Always initialize the log area in case of a system-copy restore. |

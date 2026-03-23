@@ -1,0 +1,29 @@
+# HostUpdateInput
+
+Supported in v5.0+
+
+## Fields
+
+| Field | Type | Description |
+|-------|------|-------------|
+| alias | String | Supported in v5.1+ A user-specified string that returns this host in searches. |
+| compressionEnabled | Boolean | Supported in v5.0+ |
+| hdfsConfig | [HdfsConfigInput](HdfsConfigInput.md) | Supported in v5.2-v9.1 |
+| hostVfdDriverInstalled | Boolean | When VFD is not enabled on the specified Windows host, set this property to false to instruct the Rubrik cluster to remove the VFD driver from a specified Windows host. Before using this property, disable VFD on the specified Windows host by setting the value of HostVfdEnabled to not enabled. |
+| hostVfdEnabled | [HostVfdInstallConfig](../enums/HostVfdInstallConfig.md) | Supported in v5.0+ |
+| hostname | String | Supported in v5.0+ |
+| isOracleHost | Boolean | Supported in v5.2+ v5.2-v5.3: A Boolean that specifies whether to discover Oracle information during host refresh. A value of 'true' discovers Oracle information during host refresh. v6.0: A Boolean that specifies whether to discover Oracle information during host refresh. A value of 'true' discovers Oracle information during host refresh.  v7.0-v8.0: A Boolean that specifies whether to discover Oracle information during host refresh. A value of 'true' discovers Oracle information during host refresh.  v8.1: A Boolean that specifies whether to discover Oracle information during host refresh. A value of 'true' discovers Oracle information during host refresh.  v9.0-v9.3: A Boolean that specifies whether to discover Oracle information during host refresh. A value of 'true' discovers Oracle information during host refresh.  v9.4+: A Boolean that specifies whether to discover Oracle information during host refresh. A value of 'true' discovers Oracle information during host refresh. |
+| isRefreshPaused | Boolean | Supported in v9.0+ A Boolean that specifies whether the host refresh is paused or not. |
+| isUpdateCertAndAgentIdEnabled | Boolean | Supported in v7.0+ v7.0-v9.1: A Boolean that specifies whether to update the Rubrik Backup Agent and agent ID during host edit.  v9.2+: A Boolean that specifies whether to update the Rubrik Backup Agent and agent ID during host edit. |
+| mssqlCbtDriverInstalled | Boolean | When CBT is not enabled on the specified Windows host, set this property to false to instruct the Rubrik cluster to remove the CBT driver from a specified Windows host. Before using this property, disable CBT on the specified Windows host by setting the value of mssqlCbtEnabled to not enabled. |
+| mssqlCbtEnabled | [MssqlCbtStatusType](../enums/MssqlCbtStatusType.md) | Supported in v5.0+ |
+| mssqlSddCertificateId | String | Supported in v9.3. The certificate ID is the identifier associated with the public key certificate issued by the Certificate Authority (CA) that signed the SQL Server certificate. This ID is used to validate the identity of the SQL Server host during Sensitive Data Discovery. |
+| mssqlSddUserCredentials | [SddUserCredentialsInput](SddUserCredentialsInput.md) | Supported in v9.2+ The user credentials for querying SQL server instance on the host for Sensitive Data Discovery. |
+| nasConfig | [NasConfigInput](NasConfigInput.md) | Supported in v5.0+ |
+| oracleQueryUser | String | Supported in v5.0+ Specifies the Oracle username for an account with query privileges. The account must have query privileges for a specified Oracle installation to enable Oracle discovery queries for that installation. |
+| oracleSddUserCredentials | [SddUserCredentialsInput](SddUserCredentialsInput.md) | Supported in v9.3+ The user credentials for querying oracle databases on the host for Sensitive Data Discovery. |
+| oracleSddWalletPath | String | Supported in v9.3+ Contains the wallet path on the Oracle host which is used to authenticate the client trying to make remote connections to oracle databases during Sensitive Data Discovery. |
+| oracleSepsSettings | [OracleSepsWalletSettingsInput](OracleSepsWalletSettingsInput.md) | Supported in v9.4+ Contains Oracle SEPS settings for the host such as enabling or disabling SEPS-based authentication. |
+| oracleSysDbaUser | String | Supported in v5.0+ v5.0: Specifies the Oracle username for an account with sysdba privileges. The account must have sysdba privileges for a specified Oracle installation to enable backup and recovery of Oracle databases for that installation. This field overrides the configured global sysdba user for the specified Oracle installation. v5.1-v5.3: Specifies the Oracle username for an account with sysdba privileges. The account must have sysdba privileges for a specified Oracle installation to enable Oracle discovery queries for that installation. This field overrides the configured global sysdba user for the specified Oracle installation. v6.0+: Specifies the Oracle username for an account with sysdba privileges. The account must have sysdba privileges for a specified Oracle installation to enable Oracle discovery queries for that installation. This field overrides the configured global sysdba user for the specified Oracle installation. |
+| shouldMssqlSddThroughRba | Boolean | Supported in v9.4+ A Boolean flag that specifies whether to perform the Data Discovery and Classification data acquisition workflow for SQL Server host through RBA. |
+| shouldOracleSddThroughRba | Boolean | Supported in v9.4+ A Boolean flag that specifies whether to perform the Data Discovery and Classification data acquisition workflow for Oracle host through RBA. |

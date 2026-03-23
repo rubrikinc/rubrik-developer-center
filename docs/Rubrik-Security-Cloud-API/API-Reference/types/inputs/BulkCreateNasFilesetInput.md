@@ -1,0 +1,14 @@
+# BulkCreateNasFilesetInput
+
+Supported in v7.0+
+
+## Fields
+
+| Field | Type | Description |
+|-------|------|-------------|
+| filesetTemplate | [FilesetTemplateCreateInput](FilesetTemplateCreateInput.md)! | Required. Supported in v7.0+ Fileset Template object. |
+| isHardlinkSupportEnabled | Boolean | Supported in v7.0+ |
+| isPassthrough | Boolean | Supported in v7.0+ |
+| nasShareIds | [String!]! | Required. Supported in v7.0+ An array of NAS share IDs the primary fileset is created for. |
+| snapMirrorLabelForFullBackup | String | Rubrik CDM uses prefix matching to select the latest SnapMirror snapshot that matches this value when taking a full backup of a SnapMirror destination share. |
+| snapMirrorLabelForIncrementalBackup | String | Rubrik CDM uses prefix matching to select the latest SnapMirror snapshot that matches this value when taking an incremental backup of a SnapMirror destination share. |

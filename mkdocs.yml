@@ -86,17 +86,26 @@ markdown_extensions:
         custom_icons:
           - overrides/.icons
 plugins:
-  - search
+  - material/search:
+  - exclude-search:
+      exclude:
+        - Rubrik-Security-Cloud-API/API-Reference/**
   - awesome-pages
   - llmstxt:
-      full_output: llms.txt
+      full_output: llms-full.txt
       sections:
-        Rubrik Security Cloud:
+        Rubrik Security Cloud API:
         - Rubrik-Security-Cloud-API/*.md
+        SDKs and Tools:
         - SDKs-and-Tools/*.md
+        Integrations:
         - Integrations/*.md
   - git-revision-date-localized:
       type: iso_date
+      exclude:
+        - Rubrik-Security-Cloud-API/API-Reference/**
+hooks:
+  - hooks/generate_llms_txt.py
 watch:
   - includes
   - code

@@ -1,0 +1,11 @@
+# VmwareMissedRecoverableRangesInput
+
+Input for getting missed recoverable ranges of a Virtual Machine.
+
+## Fields
+
+| Field | Type | Description |
+|-------|------|-------------|
+| afterTime | [DateTime](../scalars/DateTime.md) | Filter ranges to end after this time. The date-time string should be in ISO8601 format, such as `2018-01-01T01:23:45.678Z`. |
+| beforeTime | [DateTime](../scalars/DateTime.md) | Filter ranges to start before this time. The date-time string should be in ISO8601 format, such as `2018-01-01T01:23:45.678Z`. |
+| id | String! | Required. The virtual machine ID. |
