@@ -1,0 +1,10 @@
+# VsphereFolderDescendantTypeEdge
+
+Wrapper around the VsphereFolderDescendantType object. This wrapper is used for pagination.
+
+## Fields
+
+| Field | Type | Description |
+|-------|------|-------------|
+| cursor | String! | String used to identify this edge. |
+| node | [VsphereFolderDescendantType](../interfaces/VsphereFolderDescendantType.md)! | The actual VsphereFolderDescendantType object wrapped by this edge. |

@@ -2,3 +2,13 @@
 .DS_Store
 **/.DS_Store
 venv/
+site/
+
+# Private schema management tools (schemas from private repo)
+tools/check_new_schemas.py
+tools/update_schemas_and_docs.py
+tools/fetch_schema_files.py
+tools/generate_comprehensive_changelog.py
+tools/update_changelog_latest.py
+tools/generate_schema_changelog.py
+tools/extract_deprecated_fields.py

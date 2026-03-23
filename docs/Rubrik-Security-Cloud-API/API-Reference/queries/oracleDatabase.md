@@ -1,0 +1,108 @@
+# oracleDatabase
+
+An Oracle Database.
+
+## Arguments
+
+| Argument | Type | Description |
+|----------|------|-------------|
+| fid *(required)* | [UUID](../types/scalars/UUID.md)! | Rubrik UUID for the object. |
+
+## Returns
+
+[OracleDatabase](../types/objects/OracleDatabase.md)!
+
+## Sample
+
+=== "Query"
+
+    ```graphql
+    query OracleDatabase($fid: UUID!) {
+      oracleDatabase(fid: $fid) {
+        archiveLogMode
+        authorizedOperations
+        cdmId
+        cdmLink
+        cdmPendingObjectPauseAssignment
+        dataGuardType
+        dbRole
+        dbUniqueName
+        hostLogRetentionHours
+        id
+        isLiveMount
+        isRelic
+        logBackupFrequency
+        logRetentionHours
+        name
+        numChannels
+        numInstances
+        numLogSnapshots
+        numTablespaces
+        numWorkloadDescendants
+        objectType
+        onDemandSnapshotCount
+        osNames
+        osType
+        rbaRole
+        replicatedObjectCount
+        sectionSizeInGigabytes
+        slaAssignment
+        slaPauseStatus
+        tablespaces
+        useSecureThrift
+      }
+    }
+    ```
+
+=== "Variables"
+
+    ```json
+    {
+      "fid": "00000000-0000-0000-0000-000000000000"
+    }
+    ```
+
+=== "Example Response"
+
+    ```json
+    {
+      "data": {
+        "oracleDatabase": {
+          "archiveLogMode": "example-string",
+          "authorizedOperations": [
+            "ACCESS_CDM_CLUSTER"
+          ],
+          "cdmId": "example-string",
+          "cdmLink": "example-string",
+          "cdmPendingObjectPauseAssignment": "NO_PENDING_PAUSE_ASSIGNMENT",
+          "dataGuardType": "DATA_GUARD_GROUP",
+          "allOrgs": [
+            {
+              "allUrls": [
+                "example-string"
+              ],
+              "allowedClusters": [
+                "example-string"
+              ],
+              "authDomainConfig": "ALLOW_AUTH_DOMAIN_CONTROL",
+              "crossAccountCapabilities": [
+                "CROSS_ACCOUNT_CAPABILITY_UNSPECIFIED"
+              ],
+              "description": "example-string",
+              "fullName": "example-string"
+            }
+          ],
+          "allTags": [
+            {
+              "description": "example-string",
+              "id": "example-string",
+              "isArchived": true,
+              "key": "example-string",
+              "lastModified": "example-string",
+              "name": "example-string"
+            }
+          ]
+        }
+      }
+    }
+    ```

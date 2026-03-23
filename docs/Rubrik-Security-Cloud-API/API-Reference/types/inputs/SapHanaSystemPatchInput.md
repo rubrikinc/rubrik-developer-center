@@ -1,0 +1,18 @@
+# SapHanaSystemPatchInput
+
+Supported in v5.3+
+
+## Fields
+
+| Field | Type | Description |
+|-------|------|-------------|
+| authTypeSpec | [SapHanaSystemAuthTypeSpecInput](SapHanaSystemAuthTypeSpecInput.md) | Supported in v9.0+ Specifies the authentication type for the SAP HANA system. |
+| azureFeatureId | String | Supported in v9.1+ The Rubrik ID of the SAP HANA Azure Feature. |
+| backupTriggerType | [SapHanaSystemPatchBackupTriggerType](../enums/SapHanaSystemPatchBackupTriggerType.md) | Supported in v9.4+ The backup trigger type for the SAP HANA system. |
+| configuredSlaDomainId | String | Supported in v5.3+ v5.3-v8.1: The ID of the SLA Domain that is configured for the SAP HANA system. v9.0+: Deprecated. Make sure to use the SLA APIs for updating the SLA Domain of the SAP HANA database. |
+| hostIds | [String!] | Supported in v5.3+ The SAP HANA system hosts. |
+| instanceNumber | String | Supported in v5.3+ The instance number of the SAP HANA system. |
+| password | String | Supported in v5.3+ The password of the SAP HANA system. |
+| sid | String | Supported in v5.3+ The SAP System Identification (SID) code for the SAP HANA system. |
+| sslInfo | [SapHanaSslInfoInput](SapHanaSslInfoInput.md) | Supported in v7.0+ Information required to connect to SAP HANA database over SSL. |
+| username | String | Supported in v5.3+ The username of the SAP HANA system. |

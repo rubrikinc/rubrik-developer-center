@@ -1,0 +1,44 @@
+# AwsNativeRegion
+
+AWS native regions.
+
+## Values
+
+| Value | Description |
+|-------|-------------|
+| AF_SOUTH_1 | AWS native Africa (Cape Town) region. |
+| AP_EAST_1 | AWS native Asia Pacific (Hong Kong) region. |
+| AP_NORTHEAST_1 | AWS native Asia Pacific (Tokyo) region. |
+| AP_NORTHEAST_2 | AWS native Asia Pacific (Seoul) region. |
+| AP_NORTHEAST_3 | AWS native Asia Pacific (Osaka) region. |
+| AP_SOUTHEAST_1 | AWS native Asia Pacific (Singapore) region. |
+| AP_SOUTHEAST_2 | AWS native Asia Pacific (Sydney) region. |
+| AP_SOUTHEAST_3 | AWS native Asia Pacific (Jakarta) region. |
+| AP_SOUTHEAST_4 | AWS native Asia Pacific (Melbourne) region. |
+| AP_SOUTH_1 | AWS native Asia Pacific (Mumbai) region. |
+| AP_SOUTH_2 | AWS native Asia Pacific (Hyderabad) region. |
+| CA_CENTRAL_1 | AWS native Canada (Central) region. |
+| CA_WEST_1 | AWS native Canada (Calgary) region. |
+| CN_NORTHWEST_1 | AWS native China (Ningxia) region. |
+| CN_NORTH_1 | AWS native China (Beijing) region. |
+| EU_CENTRAL_1 | AWS native EU (Frankfurt) region. |
+| EU_NORTH_1 | AWS native EU (Stockholm) region. |
+| EU_SOUTH_1 | AWS native EU (Milan) region. |
+| EU_SOUTH_2 | AWS native EU (Spain) region. |
+| EU_WEST_1 | AWS native EU (Ireland) region. |
+| EU_WEST_2 | AWS native EU (London) region. |
+| EU_WEST_3 | AWS native EU (Paris) region. |
+| IL_CENTRAL_1 | AWS Israel (Tel Aviv) region. |
+| ME_CENTRAL_1 | AWS native Middle East (UAE) region. |
+| ME_SOUTH_1 | AWS native Middle East (Bahrain) region. |
+| NOT_SPECIFIED | AWS native region is not specified. |
+| SA_EAST_1 | AWS native South America (Sao Paulo) region. |
+| US_EAST_1 | AWS native US East (N. Virginia) region. |
+| US_EAST_2 | AWS native US East (Ohio) region. |
+| US_GOV_EAST_1 | AWS Gov native US East 1 (N. Virginia) region. |
+| US_GOV_WEST_1 | AWS Gov native US West 1 (N. California) region. |
+| US_ISOB_EAST_1 | AWS LCK native US East region. |
+| US_ISO_EAST_1 | AWS DCA native US East region. |
+| US_ISO_WEST_1 | AWS DCA native US West region. |
+| US_WEST_1 | AWS native US West (N. California) region. |
+| US_WEST_2 | AWS native US West (Oregon) region. |

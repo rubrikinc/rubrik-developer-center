@@ -1,0 +1,25 @@
+# GcpNativeExportGceInstanceInput
+
+Input required to export a GCP GCE instance snapshot.
+
+## Fields
+
+| Field | Type | Description |
+|-------|------|-------------|
+| archivedSnapshotId | [UUID](../scalars/UUID.md) | The archived snapshot ID from which the recovery should happen. |
+| diskEncryptionType | [DiskEncryptionType](../enums/DiskEncryptionType.md)! | Encryption type of created disk. |
+| kmsCryptoKey | [KmsCryptoKey](KmsCryptoKey.md) | Customer managed key to encrypt exported instance. This is only applicable when encryption type is CustomerManagedKey. |
+| kmsCryptoKeyResourceId | String | Customer managed key to encrypt exported instance. This is only applicable when encryption type is CustomerManagedKeyResourceId. |
+| serviceAccountId | String | Optional service account email to attach to the exported instance. If not provided or empty, no service account will be attached. |
+| sharedVpcHostProjectNativeId | String | Native ID of the shared VPC host project for the current service project. |
+| shouldAddRubrikLabels | Boolean! | Specifies whether to allow Rubrik labels on the exported disk or not. |
+| shouldCopyLabels | Boolean! | Specfies whether the labels will be copied to the exported disk from the source disk that were there at the time of taking the snapshot or not. |
+| shouldPowerOff | Boolean! | Specifies whether the exported instance will be created in a powered-off state. |
+| snapshotId | [UUID](../scalars/UUID.md)! | Snapshot Rubrik ID. |
+| snapshotType | [GcpSnapshotType](../enums/GcpSnapshotType.md) | The type of the snapshot to recover from. |
+| targetGcpProjectRubrikId | [UUID](../scalars/UUID.md) | The target project cloud account ID for cross project export. |
+| targetInstanceName | String! | The name of the exported instance. |
+| targetMachineType | String! | The machine type of the exported instance. |
+| targetNetworkTags | [String!] | The network tags of the exported instance. |
+| targetSubnetName | String! | The subnet name of the exported instance. |
+| targetZone | String! | The zone of the exported disk. |
