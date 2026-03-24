@@ -1,6 +1,8 @@
 site_name: Rubrik Developer Center
 site_url: https://developer.rubrik.com
 copyright: Copyright &copy; 2025 Rubrik, Inc.
+exclude_docs: |
+  Rubrik-Security-Cloud-API/schemas/
 theme:
   name: material
   logo: assets/favicon.ico
@@ -34,6 +36,7 @@ theme:
     - content.tabs.link
     - navigation.tabs
     - navigation.indexes
+    - navigation.prune
 #    - navigation.sections
     - search.share
 extra_css:
