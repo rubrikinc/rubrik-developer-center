@@ -179,6 +179,27 @@ query {
 }
 ```
 
+## Error Code **429**
+
+### Reason
+HTTP 429 indicates that the client has exceeded the API rate limit. Rubrik Security Cloud enforces rate limits per source IP address to protect platform stability.
+
+### Solution
+Reduce the frequency of API requests from the client. Common strategies include:
+
+- Implement exponential backoff when a 429 response is received
+- Distribute requests across a longer time window rather than sending them in rapid succession
+- Where possible, use pagination and filtering to reduce the total number of API calls needed
+
+### Example Error Response
+
+!!! note
+    Unlike other API errors, rate limit responses are returned directly by the API gateway with an HTTP status code of 429, rather than in the response body with a 200 HTTP status.
+
+```
+HTTP/1.1 429 Too Many Requests
+```
+
 ## Error Code **500**
 
 ### Reason
