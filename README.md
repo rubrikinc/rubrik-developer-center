@@ -27,6 +27,11 @@ mkdocs serve
 
 Rubrik Developer Center site will be running locally at `localhost:8000`
 
+To skip the API Reference section (faster startup), use the local config:
+```
+mkdocs serve -f mkdocs.local.yml
+```
+
 
 The [mkdocs-llmstxt](https://pawamoy.github.io/mkdocs-llmstxt/) plugin is used to generate the llms.txt file that can be used to supply context to an LLM. This collects the markdown content into a single file that follows the [llmstxt.org](https://llmstxt.org) emerging standard. The file can be found at `localhost:8000/llms.txt` while developing locally locally or at https://developer.rubrik.com/llms.txt.
 

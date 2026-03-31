@@ -1,0 +1,24 @@
+INHERIT: mkdocs.yml
+exclude_docs: |
+  Rubrik-Security-Cloud-API/schemas/
+  Rubrik-Security-Cloud-API/API-Reference/
+plugins:
+  - material/search:
+  - exclude-search:
+      exclude:
+        - Rubrik-Security-Cloud-API/API-Reference/**
+  - awesome-pages:
+      strict: false
+  - llmstxt:
+      full_output: llms-full.txt
+      sections:
+        Rubrik Security Cloud API:
+        - Rubrik-Security-Cloud-API/*.md
+        SDKs and Tools:
+        - SDKs-and-Tools/*.md
+        Integrations:
+        - Integrations/*.md
+  - git-revision-date-localized:
+      type: iso_date
+      exclude:
+        - Rubrik-Security-Cloud-API/API-Reference/**
