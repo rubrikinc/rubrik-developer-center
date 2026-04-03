@@ -4,9 +4,9 @@ This document lists all deprecated fields, queries, mutations, and enum values i
 
 ## Deprecated Fields
 
-*Extracted from schema: 20260316.graphql*
+*Extracted from schema: 20260330.graphql*
 
-**Total deprecated items: 218**
+**Total deprecated items: 249**
 
 ### Deprecated Query Fields
 
@@ -98,6 +98,10 @@ This document lists all deprecated fields, queries, mutations, and enum values i
 
 - **`orgId`**: Deprecated. Refer to organizations.
 - **`orgName`**: Deprecated. Refer to organizations.
+
+#### ArchivalSpec
+
+- **`isComplianceImmutabilityEnabled`**: Compliance Retention Lock is no longer supported.
 
 #### AuthorizedOps
 
@@ -194,6 +198,10 @@ This document lists all deprecated fields, queries, mutations, and enum values i
 
 - **`mappedCloudAccountIds`**: Use mappedCloudAccounts instead. The cloud account IDs of the mapped accounts are contained in the field 'mappedCloudAccounts'.
 
+#### BackupLocationSpec
+
+- **`isComplianceImmutabilityEnabled`**: Compliance Retention Lock is no longer supported.
+
 #### CascadingArchivalSpec
 
 - **`archivalLocation`**: Use archivalLocationToClusterMapping instead.
@@ -202,9 +210,53 @@ This document lists all deprecated fields, queries, mutations, and enum values i
 
 - **`cloudAccountId`**: This field is deprecated because it is no longer used.
 
+#### CdmManagedAwsTarget
+
+- **`isComplianceImmutabilitySupported`**: Compliance Retention Lock is no longer supported.
+
+#### CdmManagedAzureTarget
+
+- **`isComplianceImmutabilitySupported`**: Compliance Retention Lock is no longer supported.
+
+#### CdmManagedDcaTarget
+
+- **`isComplianceImmutabilitySupported`**: Compliance Retention Lock is no longer supported.
+
+#### CdmManagedGcpTarget
+
+- **`isComplianceImmutabilitySupported`**: Compliance Retention Lock is no longer supported.
+
+#### CdmManagedGlacierTarget
+
+- **`isComplianceImmutabilitySupported`**: Compliance Retention Lock is no longer supported.
+
+#### CdmManagedLckTarget
+
+- **`isComplianceImmutabilitySupported`**: Compliance Retention Lock is no longer supported.
+
+#### CdmManagedNfsTarget
+
+- **`isComplianceImmutabilitySupported`**: Compliance Retention Lock is no longer supported.
+
+#### CdmManagedS3CompatibleTarget
+
+- **`isComplianceImmutabilitySupported`**: Compliance Retention Lock is no longer supported.
+
+#### CdmManagedTapeTarget
+
+- **`isComplianceImmutabilitySupported`**: Compliance Retention Lock is no longer supported.
+
 #### CdmSnapshot
 
 - **`slaDomain`**: Associating an SLA ID with a snapshot could lead to a wrong idea since if the SLA is edited, then its config would be different from what is being seen
+
+#### CdmTarget
+
+- **`isComplianceImmutabilitySupported`**: Compliance Retention Lock is no longer supported.
+
+#### CloudAccountFilterValues
+
+- **`values`**: Use named_values instead.
 
 #### Cluster
 
@@ -214,10 +266,6 @@ This document lists all deprecated fields, queries, mutations, and enum values i
 #### ClusterConnection
 
 - **`aggregateClusterHealth`**: This field is deprecated because it is no longer used.
-
-#### ClusterDisk
-
-- **`id`**: Please use diskId instead.
 
 #### ClusterSlaDomain
 
@@ -243,6 +291,10 @@ This document lists all deprecated fields, queries, mutations, and enum values i
 #### FileResult
 
 - **`attributesSummary`**: No longer used.
+
+#### GcpAlloyDbCluster
+
+- **`gcpNativeProjectDetails`**: Deprecated, use gcpProjectDetails instead.
 
 #### GcpCloudSqlInstance
 
@@ -321,19 +373,58 @@ This document lists all deprecated fields, queries, mutations, and enum values i
 
 - **`permissions`**: Use explicitlyAssignedPermissions instead.
 
+#### RubrikManagedAwsTarget
+
+- **`isComplianceImmutabilitySupported`**: Compliance Retention Lock is no longer supported.
+
 #### RubrikManagedAzureTarget
 
 - **`accessKey`**: Access key response no longer supported.
+- **`isComplianceImmutabilitySupported`**: Compliance Retention Lock is no longer supported.
+
+#### RubrikManagedDcaTarget
+
+- **`isComplianceImmutabilitySupported`**: Compliance Retention Lock is no longer supported.
+
+#### RubrikManagedGcpTarget
+
+- **`isComplianceImmutabilitySupported`**: Compliance Retention Lock is no longer supported.
+
+#### RubrikManagedGlacierTarget
+
+- **`isComplianceImmutabilitySupported`**: Compliance Retention Lock is no longer supported.
+
+#### RubrikManagedLckTarget
+
+- **`isComplianceImmutabilitySupported`**: Compliance Retention Lock is no longer supported.
+
+#### RubrikManagedNfsTarget
+
+- **`isComplianceImmutabilitySupported`**: Compliance Retention Lock is no longer supported.
 
 #### RubrikManagedRcsTarget
 
+- **`isComplianceImmutabilitySupported`**: Compliance Retention Lock is no longer supported.
 - **`privateEndpointConnection`**: Use privateEndpointConnections instead.
 - **`storageConsumptionValue`**: Use consumedBytes instead.
+
+#### RubrikManagedRcvAwsTarget
+
+- **`isComplianceImmutabilitySupported`**: Compliance Retention Lock is no longer supported.
+
+#### RubrikManagedRcvGcpTarget
+
+- **`isComplianceImmutabilitySupported`**: Compliance Retention Lock is no longer supported.
 
 #### RubrikManagedS3CompatibleTarget
 
 - **`ibmDetails`**: Deprecated: please use ibmDetail instead.
 - **`immutabilitySettings`**: Deprecated: please use immutabilitySetting instead.
+- **`isComplianceImmutabilitySupported`**: Compliance Retention Lock is no longer supported.
+
+#### RubrikManagedTapeTargetType
+
+- **`isComplianceImmutabilitySupported`**: Compliance Retention Lock is no longer supported.
 
 #### SapHanaHostObject
 
@@ -346,6 +437,10 @@ This document lists all deprecated fields, queries, mutations, and enum values i
 #### Snappable
 
 - **`orgName`**: `snappableOrg` field captures the basic org details.
+
+#### TakeOnDemandSnapshotTaskchainUuid
+
+- **`isComplianceImmutabilitySupported`**: Compliance Retention Lock is no longer supported.
 
 #### TaskDetail
 
@@ -378,6 +473,11 @@ This document lists all deprecated fields, queries, mutations, and enum values i
 ### Deprecated Enum Values
 
 - **`ACTIVE_DIRECTORY_FOREST_RECOVERY`**: Use EVENT_SERIES instead.
+- **`ACTIVE_DIRECTORY_FOREST_RECOVERY_TABLE`**: Use EVENT_SERIES_ALL_TABLE.
+- **`ACTIVE_DIRECTORY_FOREST_RECOVERY_TABLE`**: Use EVENT_SERIES_BY_CLUSTER_TABLE.
+- **`ACTIVE_DIRECTORY_FOREST_RECOVERY_TABLE`**: Use EVENT_SERIES_BY_CLUSTER_TYPE_TABLE.
+- **`ACTIVE_DIRECTORY_FOREST_RECOVERY_TABLE`**: Use EVENT_SERIES_BY_OBJECT_TYPE_TABLE.
+- **`ACTIVE_DIRECTORY_FOREST_RECOVERY_TABLE`**: Use EVENT_SERIES_BY_TIME_TABLE.
 - **`ARCHIVAL`**: Use `CLOUD_NATIVE_CONFIG_PROTECTION` instead.
 - **`AUDIT_LIST`**: Use BACKUP_STRIKES_V2 instead.
 - **`AUDIT_LIST`**: Use LATEST_GLOBAL_OBJECTS instead.
