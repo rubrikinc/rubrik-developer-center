@@ -1,11 +1,13 @@
 #!/usr/bin/env python3
 import os
 import re
+from pathlib import Path
 
 # Configuration variables
-endpoint = "https://example.my.rubrik.com/api/graphql" 
+endpoint = "https://example.my.rubrik.com/api/graphql"
 
-code_dir = "../code"
+REPO_ROOT = Path(__file__).parent.parent
+code_dir = str(REPO_ROOT / "code")
 
 def remove_graphql_comments(query: str) -> str:
     """
