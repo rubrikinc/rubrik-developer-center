@@ -6,14 +6,16 @@ import os
 from collections import defaultdict
 import sys
 
+REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
 # Path to the CSV file
-CSV_FILE = "../rsc-events.csv"
+CSV_FILE = os.path.join(REPO_ROOT, "rsc-events.csv")
 
 # The output directory inside the mkdocs site
-OUTPUT_FOLDER = "../docs/Rubrik-Security-Cloud-API/Observability/Events/Event-Reference"
+OUTPUT_FOLDER = os.path.join(REPO_ROOT, "docs/Rubrik-Security-Cloud-API/Observability/Events/Event-Reference")
 
 # Delete previous output files
-os.system("rm -rf ../docs/Rubrik-Security-Cloud-API/Observability/Events/Event-Reference/*")
+os.system(f"rm -rf {OUTPUT_FOLDER}/*")
 
 # Ensure the output folder exists, creating it if it doesn't exist
 os.makedirs(OUTPUT_FOLDER, exist_ok=True)
