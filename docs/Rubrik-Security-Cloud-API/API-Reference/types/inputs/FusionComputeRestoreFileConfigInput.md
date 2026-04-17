@@ -1,0 +1,10 @@
+# FusionComputeRestoreFileConfigInput
+
+Configuration for restoring a single file or folder from backup, specifying the source path from backup and the destination path on the target virtual machine.
+
+## Fields
+
+| Field | Type | Description |
+|-------|------|-------------|
+| path | String! | Required. Absolute path of the source file or folder to restore. |
+| restorePath | String! | Required. Absolute path of the target location for the restored file or folder. |

@@ -7,7 +7,7 @@ Status of the Federated Access feature for the specified account.
 | Field | Type | Description |
 |-------|------|-------------|
 | enabled | Boolean! | Specifies whether Federated Access is enabled. |
-| inventoryCardEnabled | Boolean! | Specifies whether UI should display the inventory cards after Federated login. |
+| inventoryCardEnabled | Boolean! | Specifies whether the UI should display the inventory cards after federated login. |
 
 ## Used By
 

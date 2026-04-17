@@ -26,6 +26,7 @@ Paginated list of PolarisSnapshotGroupBy objects. Each page of the results inclu
 - [AzureSqlDatabaseDb.snapshotGroupByConnection](AzureSqlDatabaseDb.md)
 - [AzureSqlManagedInstanceDatabase.snapshotGroupByConnection](AzureSqlManagedInstanceDatabase.md)
 - [AzureStorageAccount.snapshotGroupByConnection](AzureStorageAccount.md)
+- [GcpAlloyDbCluster.snapshotGroupByConnection](GcpAlloyDbCluster.md)
 - [GcpCloudSqlInstance.snapshotGroupByConnection](GcpCloudSqlInstance.md)
 - [GcpNativeDisk.snapshotGroupByConnection](GcpNativeDisk.md)
 - [GcpNativeGceInstance.snapshotGroupByConnection](GcpNativeGceInstance.md)
@@ -44,5 +45,4 @@ Paginated list of PolarisSnapshotGroupBy objects. Each page of the results inclu
 - [O365Group.snapshotGroupByConnection](O365Group.md)
 - [O365Mailbox.snapshotGroupByConnection](O365Mailbox.md)
 - [O365Onedrive.snapshotGroupByConnection](O365Onedrive.md)
-- [O365Org.snapshotGroupByConnection](O365Org.md)
-- *…and 6 more*
+- *…and 7 more*

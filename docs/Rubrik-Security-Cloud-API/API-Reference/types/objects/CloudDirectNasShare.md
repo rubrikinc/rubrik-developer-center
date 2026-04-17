@@ -15,6 +15,7 @@ NAS Cloud Direct share.
 | cloudDirectId | String! | UUID of the NAS Cloud Direct share on the NCD cluster. |
 | cloudDirectNasNamespace | [CloudDirectNasNamespace](CloudDirectNasNamespace.md) | The NAS Cloud Direct namespace to which this NAS share belongs. |
 | cloudDirectNasSystem | [CloudDirectNasSystem](CloudDirectNasSystem.md) | The NAS Cloud Direct system to which this NAS share belongs. |
+| cloudDirectPendingObjectPauseAssignment | [PendingObjectPauseAssignmentStatus](../enums/PendingObjectPauseAssignmentStatus.md) | Object pause pending assignment details for Cloud Direct objects. |
 | cloudDirectSnapshotGroupBySummary | [CloudDirectSnapshotsGroupBySummaryConnection](CloudDirectSnapshotsGroupBySummaryConnection.md) | Group the snapshots of this NAS Cloud Direct share. |
 | cluster | [Cluster](Cluster.md)! | Cluster from which this workload originated. |
 | clusterUuid | [UUID](../scalars/UUID.md)! | NAS Cloud Direct cluster ID. |

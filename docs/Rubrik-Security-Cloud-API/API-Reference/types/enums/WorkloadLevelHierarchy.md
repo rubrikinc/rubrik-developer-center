@@ -10,6 +10,7 @@
 | AWS_NATIVE_DYNAMODB_TABLE | AWS native DynamoDB table. |
 | AWS_NATIVE_S3_BUCKET | AWS native S3 Bucket. |
 | AZURE_AD_DIRECTORY | Azure AD Directory. |
+| AZURE_POSTGRES_FLEXIBLE_SERVER |  |
 | AZURE_STORAGE_ACCOUNT | Azure storage account. |
 | AllSubHierarchyType |  |
 | AwsNativeEbsVolume |  |

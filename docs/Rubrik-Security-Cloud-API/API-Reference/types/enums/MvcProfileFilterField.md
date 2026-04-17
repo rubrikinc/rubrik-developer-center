@@ -6,5 +6,6 @@ Filter field options for listing MVC profiles.
 
 | Value | Description |
 |-------|-------------|
+| ID | Filter by profile ID. |
 | NAME | Filter by profile name. |
 | UNSPECIFIED | Unspecified filter field. |

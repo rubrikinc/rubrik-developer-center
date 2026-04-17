@@ -12,3 +12,4 @@ A discoverable Kosmos object.
 ## Implemented By
 
 - [MysqldbInstance](../objects/MysqldbInstance.md)
+- [PostgreSQLDbCluster](../objects/PostgreSQLDbCluster.md)

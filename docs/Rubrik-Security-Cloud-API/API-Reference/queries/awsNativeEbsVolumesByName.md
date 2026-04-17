@@ -47,6 +47,7 @@ Paginated list of all AWS EBS Volumes by name or substring of name.
           numWorkloadDescendants
           objectType
           onDemandSnapshotCount
+          outpostArn
           region
           rscPendingObjectPauseAssignment
           sizeInGiBs

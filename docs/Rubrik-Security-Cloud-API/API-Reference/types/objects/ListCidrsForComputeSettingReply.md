@@ -6,7 +6,7 @@ Response to list CIDRs for compute settings.
 
 | Field | Type | Description |
 |-------|------|-------------|
-| clusterInterfaceCidrs | [[ClusterInfCidrs](ClusterInfCidrs.md)!]! | List of cluster interface CIDR map. |
+| clusterInterfaceCidrs | [[ClusterInfCidrs](ClusterInfCidrs.md)!]! | List of cluster interface CIDRs. |
 
 ## Used By
 

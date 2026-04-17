@@ -8,6 +8,7 @@ S3CompatibleSubType enum specifies the sub location type of a S3Compatible locat
 |-------|-------------|
 | BACKBLAZE | Backblaze subtype. |
 | CLOUDIAN | Cloudian subtype. |
+| CUBBIT | Cubbit subtype. |
 | CYNNY_SPACE | Cynny Space subtype. |
 | DATACORE | DataCore subtype. |
 | DEFAULT | Default subtype. |
@@ -22,6 +23,7 @@ S3CompatibleSubType enum specifies the sub location type of a S3Compatible locat
 | HITACHI_HCP | Hitachi HCP subtype. |
 | HITACHI_HCP_OVA | Hitachi HCP OVA subtype. |
 | HITACHI_HCS | Hitachi HCS subtype. |
+| HITACHI_VSP_ONE_OBJECT | Hitachi VSP One Object subtype. |
 | HUAWEI_FUSIONSTORAGE | Huawei FusionStorage subtype. |
 | HUAWEI_OBS | Huawei OBS subtype. |
 | HUAWEI_OCEANSTOR | Huawei OceanStor subtype. |

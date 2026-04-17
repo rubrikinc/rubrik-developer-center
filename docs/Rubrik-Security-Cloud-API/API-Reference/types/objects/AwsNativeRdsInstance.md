@@ -17,6 +17,7 @@ AWS native RDS instance.
 | awsAccountRubrikId | String! | Rubrik Identifier for account associated with RDS Instance. |
 | awsNativeAccount | [AwsNativeAccount](AwsNativeAccount.md)! | AWS account of the Amazon Relational Database Service (RDS) instance. |
 | awsNativeAccountDetails | [AwsNativeAccountDetails](AwsNativeAccountDetails.md) | AWS native account details. |
+| cloudNativeApplications | [[CloudNativeApplicationInfo](CloudNativeApplicationInfo.md)!]! | List of cloud native applications associated with this RDS instance. |
 | cloudNativeId | String! | Native ID of the RDS instance. |
 | configuredSlaDomain | [SlaDomain](../interfaces/SlaDomain.md)! | SLA Domain configured for the hierarchy object. |
 | dbEngine | [AwsNativeRdsDbEngine](../enums/AwsNativeRdsDbEngine.md)! | Engine being used for RDS Instance. |

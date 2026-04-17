@@ -28,3 +28,4 @@ Feature specific details for a cloud account.
 - [AwsCloudAccountWithFeatures.featureDetails](AwsCloudAccountWithFeatures.md)
 - [AwsExocomputeConfig.featureDetail](AwsExocomputeConfig.md)
 - [AwsFeatureConfig.featureDetail](AwsFeatureConfig.md)
+- [AwsNativeAccount.featureDetails](AwsNativeAccount.md)

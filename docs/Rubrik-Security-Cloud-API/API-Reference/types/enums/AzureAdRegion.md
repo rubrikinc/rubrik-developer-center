@@ -28,7 +28,9 @@ Represents regions for Entra ID.
 | SWITZERLANDNORTH | Azure region is Switzerland North. |
 | UAENORTH | Azure region is UAE North. |
 | UKSOUTH | Azure region is UK South. |
-| UNKNOWN_AZURE_AD_REGION | AzureAd region is Unknown. |
+| UNKNOWN_AZURE_AD_REGION | Azure region is Unknown. |
+| USGOVARIZONA | Azure region is US Gov Arizona. |
+| USGOVTEXAS | Azure region is US Gov Texas. |
 | USGOVVIRGINIA | Azure region is US Gov Virginia. |
 | WESTEUROPE | Azure region is West Europe. |
 | WESTUS2 | Azure region is West US 2. |

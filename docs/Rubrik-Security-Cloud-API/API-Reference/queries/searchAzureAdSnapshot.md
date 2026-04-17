@@ -42,7 +42,7 @@ Search for azureAdObjects in a snapshot.
     ```json
     {
       "input": {
-        "azureAdObjectType": "ADMINISTRATIVE_UNIT",
+        "azureAdObjectType": "ACCOUNT_PROTECTION",
         "keywordSearchFilters": [
           {}
         ],
@@ -63,7 +63,7 @@ Search for azureAdObjects in a snapshot.
               {
                 "objectId": "example-string",
                 "snapshotId": "example-string",
-                "type": "ADMINISTRATIVE_UNIT"
+                "type": "ACCOUNT_PROTECTION"
               }
             ]
           ],

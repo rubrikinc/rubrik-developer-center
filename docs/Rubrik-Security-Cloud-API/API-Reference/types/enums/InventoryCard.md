@@ -16,6 +16,7 @@ Inventory Card options that the user can select as a workload.
 | AZURE_AD | Inventory card is Azure Active Directory. |
 | AZURE_BLOB_STORAGE | Inventory Card is Azure Blob Storage. |
 | AZURE_DEVOPS | Inventory card is Azure DevOps. |
+| AZURE_POSTGRES_FLEXIBLE_SERVER | Inventory card is Azure Postgres Flexible Server. |
 | AZURE_SQL_DB | Inventory Card is Azure SQL Databases. |
 | AZURE_SQL_MI | Inventory Card is Azure SQL Managed Instances. |
 | CASSANDRA | Inventory Card is Cassandra. |
@@ -23,6 +24,7 @@ Inventory Card options that the user can select as a workload.
 | D365 | Inventory Card is Dynamics 365. |
 | DB2 | Inventory Card is DB2. |
 | EXCHANGE | Inventory Card is Exchange. |
+| FUSION_COMPUTE | Inventory Card is FusionCompute. |
 | GCP | Inventory Card is GCP. |
 | GCP_CLOUD_SQL | Inventory Card is GCP Cloud SQL. |
 | GITHUB | Inventory card is GitHub. |

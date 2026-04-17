@@ -103,3 +103,4 @@ A Kosmos snappable object in the Hierarchy.
 ## Implemented By
 
 - [MysqldbInstance](../objects/MysqldbInstance.md)
+- [PostgreSQLDbCluster](../objects/PostgreSQLDbCluster.md)

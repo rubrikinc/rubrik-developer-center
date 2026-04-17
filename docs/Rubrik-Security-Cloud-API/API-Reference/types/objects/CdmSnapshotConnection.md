@@ -37,6 +37,7 @@ Paginated list of CdmSnapshot objects. Each page of the results includes at most
 - [NutanixVm.snapshotConnection](NutanixVm.md)
 - [OracleDataGuardGroup.snapshotConnection](OracleDataGuardGroup.md)
 - [OracleDatabase.snapshotConnection](OracleDatabase.md)
+- [PostgreSQLDbCluster.snapshotConnection](PostgreSQLDbCluster.md)
 - [SapHanaDatabase.snapshotConnection](SapHanaDatabase.md)
 - [SapHanaSystem.snapshotConnection](SapHanaSystem.md)
 - [ShareFileset.snapshotConnection](ShareFileset.md)

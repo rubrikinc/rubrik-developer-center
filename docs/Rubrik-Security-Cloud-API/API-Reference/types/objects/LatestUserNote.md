@@ -22,6 +22,7 @@ Latest user note information.
 - CdmHierarchyObject.latestUserNote
 - [CdmSnapshot.latestUserNote](CdmSnapshot.md)
 - [CdmWorkloadSnapshot.latestUserNote](CdmWorkloadSnapshot.md)
+- [CloudDirectSnapshot.latestUserNote](CloudDirectSnapshot.md)
 - [Db2Database.latestUserNote](Db2Database.md)
 - [Db2Instance.latestUserNote](Db2Instance.md)
 - Db2InstanceDescendantType.latestUserNote
@@ -44,5 +45,4 @@ Latest user note information.
 - [HostFailoverCluster.latestUserNote](HostFailoverCluster.md)
 - HostFailoverClusterDescendantType.latestUserNote
 - HostFailoverClusterPhysicalChildType.latestUserNote
-- [HostShare.latestUserNote](HostShare.md)
-- *…and 160 more*
+- *…and 163 more*

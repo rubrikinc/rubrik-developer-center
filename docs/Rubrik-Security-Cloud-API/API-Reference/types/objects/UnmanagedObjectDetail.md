@@ -18,6 +18,7 @@ UnmanagedObjectDetails.
 | hasSnapshotsWithPolicy | Boolean! | Any of the snapshots are retained by a SLA. |
 | id | String! | Object ID. |
 | isRemote | Boolean | Whether the object is remote or local. |
+| localSnapshotsCount | [Long](../scalars/Long.md)! | Total number of snapshots whose location is the local cluster for this unmanaged object. |
 | localStorage | [Long](../scalars/Long.md)! | Storage on the local location. |
 | name | String! | Unmanaged object name. |
 | nonPolicySnapshotsCount | [Long](../scalars/Long.md)! | Number of non-policy snapshots (on-demand, customized, and rehydrated). |

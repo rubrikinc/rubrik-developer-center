@@ -16,4 +16,5 @@ Stats of an individual data type.
 
 **Referenced by**
 
+- [DataGovViolationDetails.dataTypes](DataGovViolationDetails.md)
 - [DataTypeResult.result](DataTypeResult.md)

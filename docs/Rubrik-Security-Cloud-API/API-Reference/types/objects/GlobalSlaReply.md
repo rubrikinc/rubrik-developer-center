@@ -37,6 +37,7 @@ Metadata for rendering an SLA Domain.
 | ownerOrgName | String! | This field is deprecated. |
 | pausedClustersInfo | [PausedClustersInfo](PausedClustersInfo.md) | Information about Rubrik clusters where this SLA Domain is paused. |
 | protectedObjectCount | Int! | Workload count for the SLA Domain. |
+| purpose | [SlaPurpose](../enums/SlaPurpose.md)! | Purpose of the SLA Domain. |
 | replicationSpec | [ReplicationSpec](ReplicationSpec.md) | Replication specification for the SLA Domain. |
 | replicationSpecsV2 | [[ReplicationSpecV2](ReplicationSpecV2.md)!]! | Replication specification for the SLA Domain. |
 | retentionLockMode | [RetentionLockMode](../enums/RetentionLockMode.md)! | Specifies the retention lock mode when enabled for the SLA Domain. |

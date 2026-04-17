@@ -20,6 +20,7 @@
 | effectiveRetentionSlaDomain | [SlaDomain](../interfaces/SlaDomain.md) | Effective retention of the SLA Domain of the hierarchy object. |
 | effectiveSlaDomain | [SlaDomain](../interfaces/SlaDomain.md)! | Effective SLA Domain of the hierarchy object. |
 | effectiveSlaSourceObject | [PathNode](PathNode.md) | Path node of the effective SLA Domain source. |
+| filterDescription | String | Description of the resource pool. |
 | hasDatastoresForRecovery | Boolean! | This field is true if this object has one or more vSphere datastore descendants available for use as a recovery target and false otherwise. |
 | id | [UUID](../scalars/UUID.md)! | ID of the hierarchy object. |
 | latestUserNote | [LatestUserNote](LatestUserNote.md) | Latest user note information. |

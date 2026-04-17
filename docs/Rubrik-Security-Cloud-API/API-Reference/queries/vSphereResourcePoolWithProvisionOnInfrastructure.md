@@ -22,6 +22,7 @@ Returns a single vSphere resource pool that is to be used as a recovery compute 
         authorizedOperations
         cdmId
         cdmPendingObjectPauseAssignment
+        filterDescription
         hasDatastoresForRecovery
         id
         name
@@ -55,9 +56,9 @@ Returns a single vSphere resource pool that is to be used as a recovery compute 
           ],
           "cdmId": "example-string",
           "cdmPendingObjectPauseAssignment": "NO_PENDING_PAUSE_ASSIGNMENT",
+          "filterDescription": "example-string",
           "hasDatastoresForRecovery": true,
           "id": "00000000-0000-0000-0000-000000000000",
-          "name": "example-string",
           "allOrgs": [
             {
               "allUrls": [

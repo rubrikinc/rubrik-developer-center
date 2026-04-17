@@ -6,5 +6,5 @@
 
 | Value | Description |
 |-------|-------------|
-| IS_STALE |  |
-| NOT_STALE |  |
+| IS_STALE | File is stale. |
+| NOT_STALE | File is not stale. |

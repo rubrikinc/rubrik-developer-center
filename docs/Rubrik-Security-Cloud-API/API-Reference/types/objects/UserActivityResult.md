@@ -1,6 +1,6 @@
 # UserActivityResult
 
-Represents the activity for a specific user.
+User activity result.
 
 ## Fields
 

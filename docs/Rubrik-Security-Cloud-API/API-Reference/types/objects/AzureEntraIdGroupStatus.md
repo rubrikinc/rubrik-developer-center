@@ -1,6 +1,6 @@
 # AzureEntraIdGroupStatus
 
-Status of the Entra ID group creation during cloud account onboarding.
+Status of the Entra ID group creation during cloud account onboarding with oauth flow.
 
 ## Fields
 

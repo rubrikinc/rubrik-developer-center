@@ -11,6 +11,7 @@ RSC snapshot location retention information.
 | isSnapshotPresent | Boolean! | Specifies whether the snapshot is present at this location. |
 | locationId | String! | Location ID of snapshot. |
 | locationName | String! | Location name of snapshot. |
+| retentionLockMode | [RetentionLockMode](../enums/RetentionLockMode.md)! | Specifies the retention lock mode at this location. Can be NO_MODE, COMPLIANCE, or GOVERNANCE. Derived from CDM per-location retention info when available. |
 | snapshotFrequency | [SnapshotFrequency](../enums/SnapshotFrequency.md)! | Specifies the frequency tag of snapshot. |
 
 ## Used By

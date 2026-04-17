@@ -7,15 +7,16 @@ ObjectTypeEnum covering all Rubrik cluster and RSC workload types.
 | Value | Description |
 |-------|-------------|
 | ACTIVE_DIRECTORY_DOMAIN_CONTROLLER | Active Directory domain controller. |
-| ACTIVE_DIRECTORY_FOREST | Active Directory forest. |
 | AWS_NATIVE_CONFIG | AWS Native Config. |
 | AWS_NATIVE_DYNAMODB_TABLE | AWS native DynamoDB table. |
 | AWS_NATIVE_S3_BUCKET | AWS native S3 Bucket. |
 | AZURE_AD_DIRECTORY | Azure AD Directory. |
 | AZURE_DEVOPS_REPOSITORY | Azure DevOps Repository. |
+| AZURE_POSTGRES_FLEXIBLE_SERVER | Azure Postgres Flexible Server. |
 | AZURE_SQL_DATABASE_DB | Azure SQL Database. |
 | AZURE_SQL_MANAGED_INSTANCE_DB | Azure SQL Managed Instance database. |
 | AZURE_STORAGE_ACCOUNT | Azure Storage Account. |
+| ActiveDirectoryForest | Active Directory forest. |
 | AppBlueprint | Application blueprint. |
 | AwsNativeEbsVolume | AWS native EBS Volume. |
 | AwsNativeEc2Instance | AWS native EC2 instance. |
@@ -34,6 +35,7 @@ ObjectTypeEnum covering all Rubrik cluster and RSC workload types.
 | Db2Database | DB2 database. |
 | Ec2Instance | EC2 instance. |
 | ExchangeDatabase | Exchange Database. |
+| FUSION_COMPUTE_VIRTUAL_MACHINE | FusionCompute virtual machine. |
 | Fileset | Fileset. |
 | GCP_CLOUD_SQL_INSTANCE | GCP Cloud SQL Instance. |
 | GITHUB_REPOSITORY | GitHub Repository. |
@@ -82,6 +84,7 @@ ObjectTypeEnum covering all Rubrik cluster and RSC workload types.
 | OracleDatabase | Oracle database. |
 | POSTGRES_DB_CLUSTER | Postgres Database Cluster. |
 | PROXMOX_VIRTUAL_MACHINE | Proxmox Virtual Machine. |
+| PURE_STORAGE_PROTECTION_GROUP | Pure Storage protection group. |
 | RubrikEbsVolume | Rubrik EBS volume. |
 | RubrikEc2Instance | Rubrik EC2 instance. |
 | SALESFORCE_FIXED_OBJECT | Salesforce metadata. |

@@ -28,13 +28,19 @@ Get all archival locations for a given failover group.
         first: 10
       ) {
         nodes {
+          isSourceImmutabilityEnabled
+          isTargetImmutabilityEnabled
           sourceLocationId
           sourceLocationName
           sourceLocationStatus
+          sourceLocationType
+          sourceStorageLocation
           targetLastRefreshTime
           targetLocationId
           targetLocationName
           targetLocationStatus
+          targetLocationType
+          targetStorageLocation
         }
         pageInfo {
           hasNextPage
@@ -61,12 +67,12 @@ Get all archival locations for a given failover group.
           "nodes": [
             [
               {
+                "isSourceImmutabilityEnabled": true,
+                "isTargetImmutabilityEnabled": true,
                 "sourceLocationId": "00000000-0000-0000-0000-000000000000",
                 "sourceLocationName": "example-string",
                 "sourceLocationStatus": "DELETED",
-                "targetLastRefreshTime": "2024-01-01T00:00:00.000Z",
-                "targetLocationId": "00000000-0000-0000-0000-000000000000",
-                "targetLocationName": "example-string"
+                "sourceLocationType": "AWS"
               }
             ]
           ],

@@ -49,3 +49,5 @@ An object in the Kosmos hierarchy framework.
 
 - [MysqldbDatabase](../objects/MysqldbDatabase.md)
 - [MysqldbInstance](../objects/MysqldbInstance.md)
+- [PostgreSQLDatabase](../objects/PostgreSQLDatabase.md)
+- [PostgreSQLDbCluster](../objects/PostgreSQLDbCluster.md)

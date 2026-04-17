@@ -6,5 +6,5 @@
 
 | Value | Description |
 |-------|-------------|
-| COMPLIANCE |  |
-| DISCOVERY |  |
+| COMPLIANCE | Compliance mode. |
+| DISCOVERY | Discovery mode. |

@@ -37,6 +37,7 @@ Paginated list of Oracle Databases.
           isLiveMount
           isRelic
           logBackupFrequency
+          logRatePerRmanChannelInMb
           logRetentionHours
           name
           numChannels
@@ -48,6 +49,7 @@ Paginated list of Oracle Databases.
           onDemandSnapshotCount
           osNames
           osType
+          ratePerRmanChannelInMb
           rbaRole
           replicatedObjectCount
           sectionSizeInGigabytes

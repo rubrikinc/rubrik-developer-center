@@ -1,6 +1,6 @@
 # validateAndCreateAwsCloudAccount
 
-Validate and create AWS cloud account. If validation fails, no error is returned and the cause is present in the \"message\" field of return object or within admin/child accounts of return object. In case validation succeeds, it initiates creation of AWS cloud account. This is the first step to set up native protection.
+Validate and create AWS cloud account. If validation fails, no error is returned and the cause is present in the "message" field of return object or within admin/child accounts of return object. In case validation succeeds, it initiates creation of AWS cloud account. This is the first step to set up native protection.
 
 ## Arguments
 

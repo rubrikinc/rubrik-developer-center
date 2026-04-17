@@ -49,3 +49,4 @@ A Kosmos leaf object in the hierarchy.
 ## Implemented By
 
 - [MysqldbDatabase](../objects/MysqldbDatabase.md)
+- [PostgreSQLDatabase](../objects/PostgreSQLDatabase.md)

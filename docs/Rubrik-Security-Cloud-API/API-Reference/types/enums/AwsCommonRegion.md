@@ -15,6 +15,8 @@ AWS Cloud Region Enum.
 | AP_SOUTHEAST_2 | AWS cloud Asia Pacific (Sydney) region. |
 | AP_SOUTHEAST_3 | AWS cloud Asia Pacific (Jakarta) region. |
 | AP_SOUTHEAST_4 | AWS cloud Asia Pacific (Melbourne) region. |
+| AP_SOUTHEAST_5 | AWS cloud Asia Pacific (Malaysia) region. |
+| AP_SOUTHEAST_7 | AWS cloud Asia Pacific (Thailand) region. |
 | AP_SOUTH_1 | AWS cloud Asia Pacific (Mumbai) region. |
 | AP_SOUTH_2 | AWS cloud Asia Pacific (Hyderabad) region. |
 | CA_CENTRAL_1 | AWS cloud Canada (Central) region. |
@@ -22,6 +24,7 @@ AWS Cloud Region Enum.
 | CN_NORTHWEST_1 | AWS cloud China (Ningxia) region. |
 | CN_NORTH_1 | AWS cloud China (Beijing) region. |
 | EU_CENTRAL_1 | AWS cloud EU (Frankfurt) region. |
+| EU_CENTRAL_2 | AWS cloud Europe (Zurich) region. |
 | EU_NORTH_1 | AWS cloud EU (Stockholm) region. |
 | EU_SOUTH_1 | AWS cloud EU (Milan) region. |
 | EU_SOUTH_2 | AWS cloud EU (Spain) region. |
@@ -31,6 +34,7 @@ AWS Cloud Region Enum.
 | IL_CENTRAL_1 | AWS cloud Israel (Tel Aviv) region. |
 | ME_CENTRAL_1 | AWS cloud Middle East (UAE) region. |
 | ME_SOUTH_1 | AWS cloud Middle East (Bahrain) region. |
+| MX_CENTRAL_1 | AWS cloud Mexico (Central) region. |
 | SA_EAST_1 | AWS cloud South America (Sao Paulo) region. |
 | UNKNOWN_AWS_REGION | AWS cloud region is unknown. |
 | US_EAST_1 | AWS cloud US East (N. Virginia) region. |

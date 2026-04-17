@@ -13,3 +13,4 @@ AppMetadata stores the application-specific metadata.
 **Referenced by**
 
 - [AssetMetadata.appSpecificMetadata](AssetMetadata.md)
+- [CommonAssetMetadata.appSpecificMetadata](CommonAssetMetadata.md)

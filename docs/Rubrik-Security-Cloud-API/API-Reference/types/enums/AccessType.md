@@ -6,8 +6,8 @@
 
 | Value | Description |
 |-------|-------------|
-| CREATE_ACCESS |  |
-| DELETE_ACCESS |  |
-| FULL_CONTROL |  |
-| READ_ACCESS |  |
-| WRITE_ACCESS |  |
+| CREATE_ACCESS | Create access. |
+| DELETE_ACCESS | Delete access. |
+| FULL_CONTROL | Full control access. |
+| READ_ACCESS | Read access. |
+| WRITE_ACCESS | Write access. |

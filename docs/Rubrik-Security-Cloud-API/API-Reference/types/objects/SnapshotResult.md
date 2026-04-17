@@ -1,13 +1,13 @@
 # SnapshotResult
 
-*No description available.*
+Captures a snappable and snapshot for the snapshot picker
 
 ## Fields
 
 | Field | Type | Description |
 |-------|------|-------------|
-| snapshotFid | String! |  |
-| snapshotTime | [Long](../scalars/Long.md)! |  |
+| snapshotFid | String! | Snapshot FID. |
+| snapshotTime | [Long](../scalars/Long.md)! | Snapshot time. |
 
 ## Used By
 

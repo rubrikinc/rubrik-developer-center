@@ -43,6 +43,7 @@ Refers to Amazon Elastic Compute Cloud (EC2) Instance represented by a specific 
         objectType
         onDemandSnapshotCount
         osType
+        outpostArn
         privateIp
         publicIp
         region

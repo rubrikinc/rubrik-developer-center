@@ -14,6 +14,7 @@ Filters for list of Azure virtual machines.
 | hierarchyFilter | [Filter](Filter.md) | Deprecated, use hierarchyFilters. |
 | hierarchyFilters | [[Filter](Filter.md)!] | Filter by hierarchy. |
 | isEligibleForProtection | Boolean | Filter workloads based on their eligibility for protection. |
+| namePrefixFilter | [NamePrefixFilter](NamePrefixFilter.md) | Filter by name prefix. |
 | nameSubstringFilter | [NameSubstringFilter](NameSubstringFilter.md) | Filter by name substring. |
 | orgFilter | [OrgFilter](OrgFilter.md) | Filter by organization ID. |
 | protectionStatusFilter | [ProtectionStatusFilter](ProtectionStatusFilter.md) | Filter by protection status. |

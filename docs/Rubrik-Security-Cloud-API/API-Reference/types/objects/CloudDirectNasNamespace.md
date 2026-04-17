@@ -13,6 +13,7 @@ NAS Cloud Direct namespace object.
 | authorizedOperations | [[Operation](../enums/Operation.md)!]! | The authorized operations on the object. |
 | cloudDirectId | [UUID](../scalars/UUID.md)! | UUID of the NAS Cloud Direct namespace on the NCD Cluster. |
 | cloudDirectNasSystem | [CloudDirectNasSystem](CloudDirectNasSystem.md) | The NAS Cloud Direct system to which this NAS namespace belongs. |
+| cloudDirectPendingObjectPauseAssignment | [PendingObjectPauseAssignmentStatus](../enums/PendingObjectPauseAssignmentStatus.md) | Object pause pending assignment details for Cloud Direct objects. |
 | cluster | [Cluster](Cluster.md)! | NAS Cloud Direct cluster where this object originated. |
 | clusterUuid | [UUID](../scalars/UUID.md)! | NAS Cloud Direct cluster ID. |
 | configuredSlaDomain | [SlaDomain](../interfaces/SlaDomain.md)! | SLA Domain configured for the hierarchy object. |

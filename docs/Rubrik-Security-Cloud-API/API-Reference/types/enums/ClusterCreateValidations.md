@@ -15,8 +15,9 @@ List of all validations to perform.
 | AZURE_VM_IMAGE_CHECK | Check if names of the VMs to be created on Azure are valid. |
 | CLOUD_ACCOUNT_CHECK | Check if the selected cloud account supports cluster provisioning. |
 | CLUSTER_NAME_CHECK | Check if a cluster exists with the same name. |
+| CLUSTER_NAME_LENGTH_CHECK | Check if the cluster name exceeds the provider-specific length limit. |
 | DNS_SERVERS_CHECK | Validate DNS servers in the request. |
-| GCP_CLUSTER_NAME_LENGTH_CHECK | Check if the cluster name is too long. |
+| GCP_CLUSTER_NAME_LENGTH_CHECK *(deprecated: Use CLUSTER_NAME_LENGTH_CHECK instead.)* | Check if the GCP cluster name exceeds the maximum length. |
 | GCP_INSTANCE_LABEL_KEY_CHECK | Check if the GCP instance label key is valid. |
 | GCP_NETWORK_CONFIG_CHECK | Check if the GCP network configuration is valid. |
 | GCP_SERVICE_ACCOUNT_CHECK | Check if the GCP service account is valid. |

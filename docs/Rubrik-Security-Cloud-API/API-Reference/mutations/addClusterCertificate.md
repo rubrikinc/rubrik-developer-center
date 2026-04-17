@@ -25,6 +25,8 @@ Import a certificate  Supported in v5.1+ Import a certificate.
         hasKey
         isInternal
         isTrusted
+        keyStrength
+        keyType
         name
         pemFile
         usedBy

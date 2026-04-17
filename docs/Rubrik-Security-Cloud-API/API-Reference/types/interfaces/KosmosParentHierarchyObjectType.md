@@ -64,3 +64,4 @@ A Kosmos parent object in the hierarchy.
 ## Implemented By
 
 - [MysqldbInstance](../objects/MysqldbInstance.md)
+- [PostgreSQLDbCluster](../objects/PostgreSQLDbCluster.md)

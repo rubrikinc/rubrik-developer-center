@@ -26,7 +26,9 @@ NAS Cloud Direct snapshot object.
 | isQuarantineProcessing | Boolean! | Specifies whether RSC is processing the snapshot to determine its quarantine state. |
 | isQuarantined | Boolean! | Specifies whether the snapshot is quarantined. |
 | isUnindexable | Boolean! | Specifies whether the snapshot can be unindexed. |
+| latestUserNote | [LatestUserNote](LatestUserNote.md) | Latest user note information. |
 | object | [CloudDirectNasObject](../unions/CloudDirectNasObject.md)! | NAS Cloud Direct object (Bucket or Share) to which this snapshot belongs. |
+| pendingSla | [SlaDomain](../interfaces/SlaDomain.md) | Specifies that the SLA Domain assignment is pending for this snapshot. The field is non-null when a user has assigned an SLA Domain, and the assignment is still in progress. |
 | policyName | String! | Name of policy assigned to the snapshot in NAS Cloud Direct. |
 | protocol | [CloudDirectSnapshotProtocolType](../enums/CloudDirectSnapshotProtocolType.md)! | Protocol of the NAS Cloud Direct snapshot. |
 | slaDomain | [SlaDomain](../interfaces/SlaDomain.md) | SLA Domain of the snapshot. |

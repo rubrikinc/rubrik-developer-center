@@ -51,6 +51,7 @@ A generic hierarchy protected objects.
 - [CloudDirectNasBucket](../objects/CloudDirectNasBucket.md)
 - [CloudDirectNasShare](../objects/CloudDirectNasShare.md)
 - [ExchangeDatabase](../objects/ExchangeDatabase.md)
+- [GcpAlloyDbCluster](../objects/GcpAlloyDbCluster.md)
 - [GcpCloudSqlInstance](../objects/GcpCloudSqlInstance.md)
 - [GcpNativeDisk](../objects/GcpNativeDisk.md)
 - [GcpNativeGceInstance](../objects/GcpNativeGceInstance.md)

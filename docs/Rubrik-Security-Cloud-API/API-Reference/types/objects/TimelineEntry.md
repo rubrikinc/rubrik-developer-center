@@ -6,9 +6,9 @@
 
 | Field | Type | Description |
 |-------|------|-------------|
-| day | String! |  |
+| day | String! | Day in ISO date format YYYY-MM-DD. |
 | hits | [Hits](Hits.md) |  |
-| policyId | String! |  |
+| policyId | String! | Policy ID, optionally populated when entry does not represent a policy. |
 
 ## Used By
 

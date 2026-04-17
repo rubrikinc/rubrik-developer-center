@@ -6,6 +6,6 @@
 
 | Value | Description |
 |-------|-------------|
-| NFS |  |
-| SMB |  |
-| UNKNOWN_SHARE_TYPE |  |
+| NFS | NFS share type. |
+| SMB | SMB share type. |
+| UNKNOWN_SHARE_TYPE | Unknown share type. |

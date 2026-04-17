@@ -47,3 +47,4 @@ The physical child types of theKosmos Parent Hierarchy Objects
 ## Implemented By
 
 - [MysqldbDatabase](../objects/MysqldbDatabase.md)
+- [PostgreSQLDatabase](../objects/PostgreSQLDatabase.md)

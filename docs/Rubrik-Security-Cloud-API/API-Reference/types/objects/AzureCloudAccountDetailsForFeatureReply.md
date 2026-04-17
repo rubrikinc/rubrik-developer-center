@@ -7,9 +7,9 @@ Cloud account details for a given customer ID.
 | Field | Type | Description |
 |-------|------|-------------|
 | azureCloudType | [AzureCloudType](../enums/AzureCloudType.md)! | Azure cloud type. |
-| permissionsGroups | [[PermissionsGroup](../enums/PermissionsGroup.md)!]! | Permissions groups for azure cloud account. |
-| subscriptionId | String! | Azure customer subscription id for the feature. |
-| tenantDomain | String! | Azure tenant domain name. |
+| permissionsGroups | [[PermissionsGroup](../enums/PermissionsGroup.md)!]! | Permissions groups. |
+| subscriptionId | String! | Subscription ID. |
+| tenantDomain | String! | Azure tenant domain. |
 | tenantId | String! | Azure tenant ID. |
 
 ## Used By

@@ -12,9 +12,10 @@ Filters for querying sign-in logs.
 | displayNames | [String!] | Filter by display names. |
 | eventTypes | [String!] | Filter by event type (varies by provider). |
 | ipAddresses | [String!] | Filter by IP addresses. |
-| locations | [String!] | Filter by locations (city + country code, e.g. \"New York, US\"). |
+| locations | [String!] | Filter by locations (city + country code, e.g. "New York, US"). |
 | providers | [[EventProvider](../enums/EventProvider.md)!] | Filter by provider type. |
 | results | [[SigninLogResult](../enums/SigninLogResult.md)!] | Filter by result. |
 | riskLevels | [[SigninLogRiskLevel](../enums/SigninLogRiskLevel.md)!] | Filter by risk level. |
 | tenantIds | [String!] | Filter by tenant IDs. |
+| userIds | [String!] | Filter by user IDs (Entra ID object IDs / UUIDs). |
 | userSids | [String!] | Filter by user SIDs (unique user identifiers). |

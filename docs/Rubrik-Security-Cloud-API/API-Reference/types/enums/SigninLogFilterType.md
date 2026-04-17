@@ -12,6 +12,7 @@ Filter types for sign-in logs filter values.
 | SIGNIN_LOG_FILTER_DEVICE_NAME | Filter by device name. |
 | SIGNIN_LOG_FILTER_DISPLAY_NAME | Filter by display name. |
 | SIGNIN_LOG_FILTER_IP_ADDRESS | Filter by IP address. |
-| SIGNIN_LOG_FILTER_LOCATION | Filter by location (city + country code, e.g. \"New York, US\"). |
+| SIGNIN_LOG_FILTER_LOCATION | Filter by location (city + country code, e.g. "New York, US"). |
 | SIGNIN_LOG_FILTER_TENANT | Filter by tenant. |
 | SIGNIN_LOG_FILTER_USER | Filter by user (principal name). |
+| SIGNIN_LOG_FILTER_USER_ID | Filter by user ID (Entra ID object ID). |

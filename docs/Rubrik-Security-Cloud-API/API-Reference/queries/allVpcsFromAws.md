@@ -50,7 +50,8 @@ List of all Virtual Private Clouds (VPCs) in the AWS Native account.
               {
                 "availabilityZone": "example-string",
                 "id": "example-string",
-                "name": "example-string"
+                "name": "example-string",
+                "outpostArn": "example-string"
               }
             ]
           }

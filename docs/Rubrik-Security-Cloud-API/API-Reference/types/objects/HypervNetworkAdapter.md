@@ -10,6 +10,8 @@ Network adapter information for Hyper-V virtual machines.
 | ipv4Addresses | [String!] | List of IPv4 addresses assigned to the adapter. |
 | ipv6Addresses | [String!] | List of IPv6 addresses assigned to the adapter. |
 | macAddress | String | MAC address of the network adapter. |
+| nicIndex | Int! | NIC index of the network adapter. |
+| virtualSwitchId | String | ID of the virtual switch the adapter is connected to. |
 | virtualSwitchName | String | Name of the virtual switch the adapter is connected to. |
 
 ## Used By

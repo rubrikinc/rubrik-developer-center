@@ -12,7 +12,6 @@ Rubrik cluster disk type.
 | diskMode | [ClusterDiskMode](../enums/ClusterDiskMode.md) | Disk mode. |
 | diskType | [ClusterDiskType](../enums/ClusterDiskType.md)! | Disk type. |
 | hasIndicatorLed | Boolean | Specifies if the disk has an LED. |
-| id | String! | This field is deprecated. |
 | isEncrypted | Boolean! | Specifies if the disk is encrypted. |
 | isResizable | Boolean! | Specifies if the disk is resizable. |
 | ledStatus | Boolean | LED status of the disk, where true means ON and false is OFF. |

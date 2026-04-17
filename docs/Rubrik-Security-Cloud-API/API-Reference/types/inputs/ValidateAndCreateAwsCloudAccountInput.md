@@ -17,3 +17,4 @@ Input to validate and set up an AWS account.
 | orgId | String | The ID of the organization to which the AWS accounts belong. |
 | outpostAwsNativeId | String | AWS Outpost account native ID. |
 | roleChainingAccountId | [UUID](../scalars/UUID.md) | The UUID of the AWS account to be used for role chaining. |
+| serviceType | [AwsCloudAccountServiceType](../enums/AwsCloudAccountServiceType.md) | Service type of the AWS cloud account. |

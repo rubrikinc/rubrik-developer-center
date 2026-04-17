@@ -1,6 +1,6 @@
 # MonthlyDaySpecification
 
-The day specification for the monthly snapshot schedule can be either a specific date or a day-of-week pattern.
+Monthly snapshot schedule.
 
 ## Possible Types
 

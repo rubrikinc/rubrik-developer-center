@@ -7,10 +7,10 @@ AWS security group information.
 | Field | Type | Description |
 |-------|------|-------------|
 | description | String! | Description of the security group. |
-| name | String! | Security group name. |
-| ownerId | String! | ID of the security group's owner. |
-| securityGroupId | String! | ID of the security group. |
-| vpcId | String! | ID of the virtual private cloud (VPC). |
+| name | String! | Name of the security group. |
+| ownerId | String! | Owner ID. |
+| securityGroupId | String! | Security group ID. |
+| vpcId | String! | VPC ID. |
 
 ## Used By
 

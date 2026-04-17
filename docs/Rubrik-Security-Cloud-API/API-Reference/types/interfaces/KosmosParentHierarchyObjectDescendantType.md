@@ -47,3 +47,4 @@ The descendant of Kosmos parent hierarchy objects
 ## Implemented By
 
 - [MysqldbDatabase](../objects/MysqldbDatabase.md)
+- [PostgreSQLDatabase](../objects/PostgreSQLDatabase.md)

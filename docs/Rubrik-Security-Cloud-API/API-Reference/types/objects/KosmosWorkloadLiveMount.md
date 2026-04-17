@@ -23,3 +23,4 @@ Kosmos Workload Live Mounts.
 **Queries**
 
 - [query: mysqlInstanceLiveMounts](../../queries/mysqlInstanceLiveMounts.md) *(via connection)*
+- [query: postgresDbClusterLiveMounts](../../queries/postgresDbClusterLiveMounts.md) *(via connection)*

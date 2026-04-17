@@ -7,4 +7,4 @@ Sorts to apply when listing a file's user activities.
 | Field | Type | Description |
 |-------|------|-------------|
 | sortBy | [FileActivitiesSortBy](../enums/FileActivitiesSortBy.md) | The field to sort on. |
-| sortOrder | [SortOrder](../enums/SortOrder.md) | The direction to sort on. |
+| sortOrder | [SortOrder](../enums/SortOrder.md) | The direction to sort in. |

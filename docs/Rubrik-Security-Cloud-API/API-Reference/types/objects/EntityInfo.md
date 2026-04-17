@@ -20,3 +20,5 @@ The basic entity Information.
 - KosmosSnappableHierarchyObjectType.entityInfo
 - [MysqldbDatabase.entityInfo](MysqldbDatabase.md)
 - [MysqldbInstance.entityInfo](MysqldbInstance.md)
+- [PostgreSQLDatabase.entityInfo](PostgreSQLDatabase.md)
+- [PostgreSQLDbCluster.entityInfo](PostgreSQLDbCluster.md)

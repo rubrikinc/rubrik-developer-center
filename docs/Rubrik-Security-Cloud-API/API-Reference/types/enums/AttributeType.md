@@ -9,4 +9,4 @@ Group filter attribute type.
 | ADMINISTRATIVE_UNIT | Azure Administrative Unit. |
 | ATTRIBUTE_UNSPECIFIED | Unspecified. |
 | EXTENSION_ATTRIBUTES | M365 Extension attributes. |
-| SCHEMA_EXTENSION_ATTRIBUTES | M365 Schema Extension attributes. |
+| SCHEMA_EXTENSION_ATTRIBUTES | M365 Schema Extension attributes. Has a nested structure. |

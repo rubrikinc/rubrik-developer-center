@@ -19,6 +19,7 @@ AWS native EC2 instance.
 | awsNativeAccount | [AwsNativeAccount](AwsNativeAccount.md)! | AWS account of the EC2 instance. |
 | awsNativeAccountDetails | [AwsNativeAccountDetails](AwsNativeAccountDetails.md) | AWS native account details. |
 | awsNativeAccountName | String! | Name for the AWS Account. |
+| cloudNativeApplications | [[CloudNativeApplicationInfo](CloudNativeApplicationInfo.md)!]! | List of cloud native applications associated with this EC2 instance. |
 | cloudNativeId | String! | AWS Native ID of Instance. |
 | configuredSlaDomain | [SlaDomain](../interfaces/SlaDomain.md)! | SLA Domain configured for the hierarchy object. |
 | effectiveRetentionSlaDomain | [SlaDomain](../interfaces/SlaDomain.md) | Effective retention of the SLA Domain of the hierarchy object. |
@@ -48,6 +49,7 @@ AWS native EC2 instance.
 | oldestSnapshot | [PolarisSnapshot](PolarisSnapshot.md) | The oldest snapshot of this workload. |
 | onDemandSnapshotCount | Int! | The number of on-demand snapshots. |
 | osType | [OsType](../enums/OsType.md)! | Name of the Operating System (OS) for the Instance. Some examples are: Linux, Windows. This field cannot be null or empty string but can be Undefined in case it is not currently supported.List of supported OS: Linux, Windows. |
+| outpostArn | String! | ARN of the AWS Outpost this instance resides on, if applicable. |
 | physicalPath | [[PathNode](PathNode.md)!]! | Sequential list of the physical ancestors of this object. |
 | privateIp | String! | Private IP address for instance. |
 | publicIp | String! | Public IP address for instance. |

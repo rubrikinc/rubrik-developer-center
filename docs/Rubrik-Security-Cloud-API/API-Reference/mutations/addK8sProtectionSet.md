@@ -25,6 +25,8 @@ Add a Kubernetes protection set  Supported in v9.1+ Adds a Kubernetes protection
         kubernetesClusterUuid
         kubernetesNamespace
         name
+        namespaceExcludePatterns
+        namespaceIncludePatterns
         rsType
       }
     }
@@ -58,7 +60,17 @@ Add a Kubernetes protection set  Supported in v9.1+ Adds a Kubernetes protection
           "id": "example-string",
           "kubernetesClusterUuid": "example-string",
           "kubernetesNamespace": "example-string",
-          "name": "example-string"
+          "name": "example-string",
+          "customResourceDependencies": [
+            {
+              "group": "example-string",
+              "resource": "example-string",
+              "selectionMode": "example-string"
+            }
+          ],
+          "labelSelector": {
+            "matchLabels": "example-string"
+          }
         }
       }
     }

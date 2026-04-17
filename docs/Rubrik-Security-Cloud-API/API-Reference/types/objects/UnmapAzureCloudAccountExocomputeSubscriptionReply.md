@@ -1,12 +1,12 @@
 # UnmapAzureCloudAccountExocomputeSubscriptionReply
 
-Response of the operation to unmap Azure cloud accounts from the mapped Exocompute subscription.
+Response for unmapping Azure exocompute subscription.
 
 ## Fields
 
 | Field | Type | Description |
 |-------|------|-------------|
-| isSuccess | Boolean! | Specifies whether the unmapping was completed successfully. |
+| isSuccess | Boolean! | Whether the unmapping was successful. |
 
 ## Used By
 

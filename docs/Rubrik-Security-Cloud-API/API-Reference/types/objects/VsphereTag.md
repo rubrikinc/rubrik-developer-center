@@ -19,6 +19,7 @@
 | effectiveRetentionSlaDomain | [SlaDomain](../interfaces/SlaDomain.md) | Effective retention of the SLA Domain of the hierarchy object. |
 | effectiveSlaDomain | [SlaDomain](../interfaces/SlaDomain.md)! | Effective SLA Domain of the hierarchy object. |
 | effectiveSlaSourceObject | [PathNode](PathNode.md) | Path node of the effective SLA Domain source. |
+| filterDescription | String | Description of the multi-tag filter. |
 | id | [UUID](../scalars/UUID.md)! | Object ID. |
 | isFilter | Boolean! | Specifies whether this tag is a multi-tag filter or a vSphere tag. |
 | latestUserNote | [LatestUserNote](LatestUserNote.md) | Latest user note information. |

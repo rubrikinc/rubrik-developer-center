@@ -1,11 +1,11 @@
 # DiscoveryReportTablePolicyStatus
 
-*No description available.*
+Policy status for a discovery report table row.
 
 ## Values
 
 | Value | Description |
 |-------|-------------|
-| DISCOVERY |  |
-| IN_COMPLIANCE |  |
-| OUT_OF_COMPLIANCE |  |
+| DISCOVERY | Discovery policy status. |
+| IN_COMPLIANCE | In compliance policy status. |
+| OUT_OF_COMPLIANCE | Out of compliance policy status. |

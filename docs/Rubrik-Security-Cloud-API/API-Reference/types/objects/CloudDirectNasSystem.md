@@ -13,6 +13,7 @@ NAS Cloud Direct System object.
 | apiVersion | String | API version of the system. |
 | authorizedOperations | [[Operation](../enums/Operation.md)!]! | The authorized operations on the object. |
 | cloudDirectId | [UUID](../scalars/UUID.md)! | UUID of the NAS Cloud Direct system on the NCD cluster. |
+| cloudDirectPendingObjectPauseAssignment | [PendingObjectPauseAssignmentStatus](../enums/PendingObjectPauseAssignmentStatus.md) | Object pause pending assignment details for Cloud Direct objects. |
 | cluster | [Cluster](Cluster.md)! | NAS Cloud Direct cluster where this object originated. |
 | clusterUuid | [UUID](../scalars/UUID.md)! | NAS Cloud Direct cluster ID. |
 | configuredSlaDomain | [SlaDomain](../interfaces/SlaDomain.md)! | SLA Domain configured for the hierarchy object. |

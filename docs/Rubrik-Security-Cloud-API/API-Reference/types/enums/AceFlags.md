@@ -6,11 +6,11 @@
 
 | Value | Description |
 |-------|-------------|
-| CONTAINER_INHERIT |  |
-| EMPTY_FLAG |  |
-| FAILED_ACCESS |  |
-| INHERITED |  |
-| INHERIT_ONLY |  |
-| NO_PROPAGATE_INHERIT |  |
-| OBJECT_INHERIT |  |
-| SUCCESSFUL_ACCESS |  |
+| CONTAINER_INHERIT | Container inherit flag. |
+| EMPTY_FLAG | Empty flag. |
+| FAILED_ACCESS | Failed access flag. |
+| INHERITED | Inherited flag. |
+| INHERIT_ONLY | Inherit only flag. |
+| NO_PROPAGATE_INHERIT | No propagate inherit flag. |
+| OBJECT_INHERIT | Object inherit flag. |
+| SUCCESSFUL_ACCESS | Successful access flag. |

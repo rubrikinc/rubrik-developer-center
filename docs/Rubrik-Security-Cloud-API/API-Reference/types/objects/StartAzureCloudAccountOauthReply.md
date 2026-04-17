@@ -6,8 +6,8 @@ Response of the operation to initiate Azure Cloud Account OAuth.
 
 | Field | Type | Description |
 |-------|------|-------------|
-| clientId | String! | Client ID of the application configured for authentication of the Azure tenant. |
-| sessionId | String! | Session ID of the current OAuth session. |
+| clientId | String! | Azure OAuth client ID. |
+| sessionId | String! | Azure OAuth session ID. |
 
 ## Used By
 

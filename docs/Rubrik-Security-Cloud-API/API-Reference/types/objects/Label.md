@@ -13,6 +13,7 @@
 
 **Referenced by**
 
+- [GcpAlloyDbCluster.labels](GcpAlloyDbCluster.md)
 - [GcpCloudSqlInstance.labels](GcpCloudSqlInstance.md)
 - [GcpNativeDisk.labels](GcpNativeDisk.md)
 - [GcpNativeGceInstance.labels](GcpNativeGceInstance.md)

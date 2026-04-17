@@ -1,10 +1,10 @@
 # ExistingSsoGroupInput
 
-Details of an existing SSO Group.
+Details of an SSO Group.
 
 ## Fields
 
 | Field | Type | Description |
 |-------|------|-------------|
-| id | String! | Id of the SSO group. |
-| isOrgAdmin | Boolean! | Specifies whether the SSO group is an org admin or not. |
+| id | String! | ID of the SSO Group. |
+| isOrgAdmin | Boolean! | Specifies whether the users in the group are org admins. |

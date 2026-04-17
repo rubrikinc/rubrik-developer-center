@@ -89,4 +89,4 @@
 - [AzureSqlManagedInstanceDatabase.newestIndexedSnapshot](AzureSqlManagedInstanceDatabase.md)
 - [AzureSqlManagedInstanceDatabase.newestSnapshot](AzureSqlManagedInstanceDatabase.md)
 - [AzureSqlManagedInstanceDatabase.oldestSnapshot](AzureSqlManagedInstanceDatabase.md)
-- *…and 78 more*
+- *…and 81 more*

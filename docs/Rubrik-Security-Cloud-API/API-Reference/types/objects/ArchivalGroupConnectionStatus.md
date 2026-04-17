@@ -6,7 +6,7 @@ Connection status for archival group.
 
 | Field | Type | Description |
 |-------|------|-------------|
-| status | [ConnectionStatusType](../enums/ConnectionStatusType.md)! |  |
+| status | [ConnectionStatusType](../enums/ConnectionStatusType.md)! | Connection status of the archival group. |
 
 ## Used By
 

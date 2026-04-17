@@ -37,6 +37,7 @@ List of unmanaged objects.
           hasSnapshotsWithPolicy
           id
           isRemote
+          localSnapshotsCount
           localStorage
           name
           nonPolicySnapshotsCount

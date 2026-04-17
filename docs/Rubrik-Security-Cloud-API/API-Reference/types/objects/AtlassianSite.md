@@ -19,6 +19,7 @@ Atlassian site.
 | effectiveSlaDomain | [SlaDomain](../interfaces/SlaDomain.md)! | Effective SLA Domain of the hierarchy object. |
 | effectiveSlaSourceObject | [PathNode](PathNode.md) | Path node of the effective SLA Domain source. |
 | environmentType | [SaasEnvironmentType](../enums/SaasEnvironmentType.md)! |  |
+| exocomputeId | [UUID](../scalars/UUID.md) | Denotes the ID of the exocompute cluster associated with the org. |
 | id | [UUID](../scalars/UUID.md)! | ID of the hierarchy object. |
 | jiraFeaturesWorkloadID | String! | Rubrik ID of the Jira Features workload. |
 | jiraProjectCount | Int! | The count of Jira projects under the Atlassian site. |

@@ -14,3 +14,4 @@ ClusterInfo stores the cluster information.
 **Referenced by**
 
 - [AssetMetadata.clusterInfo](AssetMetadata.md)
+- [CommonAssetMetadata.clusterInfo](CommonAssetMetadata.md)

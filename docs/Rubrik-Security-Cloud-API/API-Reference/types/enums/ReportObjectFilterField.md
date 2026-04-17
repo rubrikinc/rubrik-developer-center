@@ -12,4 +12,5 @@ Fields for filtering report objects.
 | K8S_CLUSTER_NAME | Filter by K8s cluster name. |
 | NAME | Filter by object name. |
 | REPORT_CLUSTER_TYPE | Filter by cluster type. |
+| REPORT_OBJECT_LOCATION | Filter by object location. |
 | REPORT_OBJECT_TYPE | Filter by object type. |

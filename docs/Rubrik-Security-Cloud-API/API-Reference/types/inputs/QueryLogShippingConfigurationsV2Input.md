@@ -8,7 +8,7 @@ Input for getting SQL Server log shipping configurations.
 |-------|------|-------------|
 | clusterUuid | String! | Required. UUID used to identify the cluster the request goes to. |
 | limit | Int | Limit the summary information to a specified maximum number of results. |
-| location | String | Filter log shipping configuration objects by performing an infix search using the location string value for a secondary database in the format \"host/instance\". |
+| location | String | Filter log shipping configuration objects by performing an infix search using the location string value for a secondary database in the format "host/instance". |
 | offset | Int | Starting position in the list of results contained in the response. The summary information includes the specified numbered result and all higher-numbered results. |
 | primaryDatabaseId | String | ID of a primary database object. |
 | primaryDatabaseName | String | Filter log shipping configuration objects by performing an infix search using the name of a primary database. |

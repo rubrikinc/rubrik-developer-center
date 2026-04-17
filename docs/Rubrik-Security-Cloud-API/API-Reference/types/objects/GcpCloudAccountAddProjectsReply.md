@@ -6,7 +6,7 @@ Gcp Cloud Account Add Projects Response.
 
 | Field | Type | Description |
 |-------|------|-------------|
-| details | [[GcpCloudAccountAddProjectDetail](GcpCloudAccountAddProjectDetail.md)!]! | GCP cloud account add projects details. |
+| details | [[GcpCloudAccountAddProjectDetail](GcpCloudAccountAddProjectDetail.md)!]! | List of project addition details. |
 
 ## Used By
 

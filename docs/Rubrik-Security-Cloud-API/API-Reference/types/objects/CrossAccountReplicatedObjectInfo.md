@@ -44,4 +44,4 @@ The replicated cross-account object information.
 - [HostShare.crossAccountReplicatedObjectInfos](HostShare.md)
 - HostShareDescendantType.crossAccountReplicatedObjectInfos
 - HostSharePhysicalChildType.crossAccountReplicatedObjectInfos
-- *…and 157 more*
+- *…and 159 more*

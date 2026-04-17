@@ -1,6 +1,6 @@
 # FusionComputeVrmInput
 
-The hostname and account credentials of a FusionCompute VRM instance.
+The hostname and account credentials of a FusionCompute Virtual Resource Management (VRM) instance.
 
 ## Fields
 

@@ -20,7 +20,10 @@ Entra ID object relationship types.
 | POLICY_ASSIGNMENT | Policy assignment relationship for an Intune object. |
 | POLICY_INCLUDES | Relationship between a policy and its included Entra ID objects. |
 | POLICY_SCRIPT | Policy script relationship for an Intune object. |
+| PRINCIPAL_GROUP_ELIGIBLE_ASSIGNMENT | Principal-side group eligibility (User/Group to eligibility schedule). |
 | PRINCIPAL_ROLE_ASSIGNMENT | Principal Role Assignment relationship for an Entra ID object. |
+| PRINCIPAL_ROLE_ELIGIBLE_ASSIGNMENT | Principal-side role eligibility (User/Group to eligibility schedule). |
 | ROLE_ASSIGNMENT | Role assignment relationship for an Entra ID object. |
 | ROLE_ELIGIBLE_ASSIGNMENT | Role-eligible assignment relationship for an Entra ID object. |
 | SCOPE_ROLE_ASSIGNMENT | Scope Role Assignment relationship for an Entra ID object. |
+| SCOPE_ROLE_ELIGIBLE_ASSIGNMENT | Scope-side role eligibility (AU/User/Group/App/SP/Device to eligibility schedule). |

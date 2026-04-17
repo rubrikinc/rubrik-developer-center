@@ -46,4 +46,4 @@ A generic snapshot type.
 - [CassandraColumnFamily.snapshotDistribution](CassandraColumnFamily.md)
 - [CassandraKeyspace.snapshotDistribution](CassandraKeyspace.md)
 - CassandraKeyspaceDescendantType.snapshotDistribution
-- *…and 248 more*
+- *…and 251 more*

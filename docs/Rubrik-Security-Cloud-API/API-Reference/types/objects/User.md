@@ -49,6 +49,7 @@ User account details.
 - [Group.users](Group.md)
 - [OracleLiveMount.owner](OracleLiveMount.md)
 - [PolicyDetail.creator](PolicyDetail.md)
+- [PolicyViolation.userLastUpdated](PolicyViolation.md)
 - [ScheduledReport.creator](ScheduledReport.md)
 - [ScheduledReport.lastEditor](ScheduledReport.md)
 - [ScheduledReport.rubrikRecipientUsers](ScheduledReport.md)

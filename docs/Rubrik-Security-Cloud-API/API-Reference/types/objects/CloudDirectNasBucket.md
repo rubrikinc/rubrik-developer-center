@@ -15,6 +15,7 @@ NAS Cloud Direct bucket.
 | cloudDirectId | String! | UUID of the NAS Cloud Direct bucket on the NCD Cluster. |
 | cloudDirectNasNamespace | [CloudDirectNasNamespace](CloudDirectNasNamespace.md) | The NAS Cloud Direct namespace to which this NAS bucket belongs. |
 | cloudDirectNasSystem | [CloudDirectNasSystem](CloudDirectNasSystem.md) | The NAS Cloud Direct system to which this NAS bucket belongs. |
+| cloudDirectPendingObjectPauseAssignment | [PendingObjectPauseAssignmentStatus](../enums/PendingObjectPauseAssignmentStatus.md) | Object pause pending assignment details for Cloud Direct objects. |
 | cloudDirectSnapshotGroupBySummary | [CloudDirectSnapshotsGroupBySummaryConnection](CloudDirectSnapshotsGroupBySummaryConnection.md) | Groups the snapshots of this NAS Cloud Direct bucket. |
 | cluster | [Cluster](Cluster.md)! | Cluster from which this workload originated. |
 | clusterUuid | [UUID](../scalars/UUID.md)! | NAS Cloud Direct cluster ID. |

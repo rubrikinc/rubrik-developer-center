@@ -1,6 +1,6 @@
 # vsphereVmRefreshAgent
 
-Refresh Rubrik Backup Service  Supported in v9.5 Refresh the Rubrik Backup Service state for a specified virtual machine.
+Refresh Rubrik Backup Service  Supported in v9.5+ Refresh the Rubrik Backup Service state for a specified virtual machine.
 
 ## Arguments
 

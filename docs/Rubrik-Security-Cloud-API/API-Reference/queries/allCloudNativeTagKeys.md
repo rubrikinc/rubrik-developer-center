@@ -34,7 +34,7 @@ List of cloud native tag keys matched by substring.
     {
       "keySubStr": "example-string",
       "limit": 0,
-      "objectType": "AWS_DYNAMODB_TABLE"
+      "objectType": "AWS_CONFIG"
     }
     ```
 

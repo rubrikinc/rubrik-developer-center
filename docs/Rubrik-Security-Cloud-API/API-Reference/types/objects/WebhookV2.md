@@ -14,6 +14,7 @@ Webhook configuration to add to an account.
 | lastFailedErrorInfo | [WebhookErrorInfo](WebhookErrorInfo.md) | The information describing the webhook's most recent error. |
 | name | String! | The name of the webhook to be created. |
 | providerType | [ProviderTypeV2](../enums/ProviderTypeV2.md)! | The application that will receive the webhook. |
+| readOnlyAuthInfo | [WebhookReadOnlyAuthInfoV2](WebhookReadOnlyAuthInfoV2.md) | Read-only authentication metadata (username, header keys). |
 | serverCertificate | String | The Webhook server certificate that Rubrik uses to establish a TLS connection with the endpoint. |
 | serviceAccountId | String | The ID of the service account attached to the webhook. |
 | status | [WebhookStatusV2](../enums/WebhookStatusV2.md)! | Specifies whether the webhook is enabled. |

@@ -6,8 +6,8 @@ Cloud Account ID along with Features and permissions serialized in JSON format.
 
 | Field | Type | Description |
 |-------|------|-------------|
-| cloudAccountId | String! | ID of the cloud account for which feature permissions are provided. |
-| featurePermissions | [[FeaturePermission](FeaturePermission.md)!]! | List of features along with the associated permissions. |
+| cloudAccountId | String! | Cloud account ID. |
+| featurePermissions | [[FeaturePermission](FeaturePermission.md)!]! | Feature permissions. |
 
 ## Used By
 

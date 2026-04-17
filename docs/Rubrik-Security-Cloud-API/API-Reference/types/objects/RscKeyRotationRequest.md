@@ -1,6 +1,6 @@
 # RscKeyRotationRequest
 
-The most recent key rotation request that was inlcuded in a bulk key rotation from RSC.
+The most recent key rotation request that was included in a bulk key rotation from RSC.
 
 ## Fields
 

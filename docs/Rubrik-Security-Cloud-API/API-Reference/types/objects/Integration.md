@@ -12,6 +12,7 @@ Holds an integration and its configuration.
 | id | [Long](../scalars/Long.md)! | The integration ID. |
 | integrationType | [IntegrationType](../enums/IntegrationType.md)! | The integration type. |
 | name | String! | The integration name. |
+| settings | [IntegrationSettings](IntegrationSettings.md) | The integration settings (user preferences). |
 | updatedAt | [DateTime](../scalars/DateTime.md)! | The timestamp for when the integration was last updated. |
 
 ## Used By
