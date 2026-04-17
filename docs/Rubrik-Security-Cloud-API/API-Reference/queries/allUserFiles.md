@@ -10,6 +10,7 @@ All user files.
 | after | String | Returns the elements in the list that occur after the specified cursor. |
 | last | Int | Returns the last n elements from the list. |
 | before | String | Returns the elements in the list that occur before the specified cursor. |
+| filenamePrefix | String | Optional prefix to filter files by filename. |
 
 ## Returns
 

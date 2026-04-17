@@ -27,6 +27,7 @@ AWS native account.
 | effectiveSlaDomain | [SlaDomain](../interfaces/SlaDomain.md)! | Effective SLA Domain of the hierarchy object. |
 | effectiveSlaSourceObject | [PathNode](PathNode.md) | Path node of the effective SLA Domain source. |
 | enabledFeatures | [[AwsNativeAccountEnabledFeature](AwsNativeAccountEnabledFeature.md)!]! | List of protection features enabled for the AWS account. |
+| featureDetails | [[FeatureDetail](FeatureDetail.md)!]! | Cloud account feature details including permissions groups for the AWS account. |
 | id | [UUID](../scalars/UUID.md)! | ID of the hierarchy object. |
 | isProtectable | Boolean! | Whether the AWS account is protectable for the specified protection features. |
 | lastRefreshedAt | [DateTime](../scalars/DateTime.md) | Last refresh time of the account, in UTC date-time format. |

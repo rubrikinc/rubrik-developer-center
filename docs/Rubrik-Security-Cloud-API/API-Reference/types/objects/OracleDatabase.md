@@ -38,6 +38,7 @@
 | latestUserNote | [LatestUserNote](LatestUserNote.md) | Latest user note information. |
 | liveMounts | [OracleLiveMountConnection](OracleLiveMountConnection.md)! | List of live mounts for an Oracle database. |
 | logBackupFrequency | Int! | The log backup frequency, in minutes, of the Oracle database. |
+| logRatePerRmanChannelInMb | Int! | Supported in v9.5+. Specifies the RMAN RATE parameter in megabytes per second to limit log backup throughput per channel. |
 | logRetentionHours | Int! | The log retention, in hours, of the Oracle database. |
 | logicalPath | [[PathNode](PathNode.md)!]! | Sequential list of the logical ancestors of this object. |
 | missedSnapshotConnection | [MissedSnapshotCommonConnection](MissedSnapshotCommonConnection.md) | The list of missed snapshots for this workload. |
@@ -63,6 +64,7 @@
 | pendingSla | [SlaDomain](../interfaces/SlaDomain.md) | SLA Domain assignment of the object during the process of being communicated over to Rubrik CDM. |
 | physicalPath | [[PathNode](PathNode.md)!]! | Sequential list of the physical ancestors of this object. |
 | primaryClusterLocation | [DataLocation](DataLocation.md)! | The source cluster of this object. Returned as a data location because there is no guarantee that Rubrik has knowledge about the source cluster. |
+| ratePerRmanChannelInMb | Int! | Supported in v9.5+. Specifies the RMAN RATE parameter in megabytes per second to limit backup throughput per channel. |
 | rbaRole | String! | The RBS role of the Oracle database in a multi-cluster RBS configuration. |
 | replicatedObjectCount | Int! | The number of objects either replicated by this object or related to this object by replication. |
 | replicatedObjects | [[CdmHierarchyObject](../interfaces/CdmHierarchyObject.md)!]! | Objects either replicated by this object or related to this object by replication. |

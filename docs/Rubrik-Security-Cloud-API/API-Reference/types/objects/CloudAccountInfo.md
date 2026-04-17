@@ -15,3 +15,4 @@ CloudAccountInfo stores the cloud account information.
 **Referenced by**
 
 - [AssetMetadata.cloudAccountInfo](AssetMetadata.md)
+- [CommonAssetMetadata.cloudAccountInfo](CommonAssetMetadata.md)

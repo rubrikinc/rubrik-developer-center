@@ -7,4 +7,5 @@ Request message for retrieving O365 recovery analysis results. This retrieves th
 | Field | Type | Description |
 |-------|------|-------------|
 | groupId | String | The O365 group ID. |
+| orgId | [UUID](../scalars/UUID.md) | The org ID associated with the recovery analysis. |
 | taskchainId | [UUID](../scalars/UUID.md) | The ID of the recovery analysis taskchain. |

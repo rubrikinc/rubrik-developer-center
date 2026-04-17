@@ -29,7 +29,7 @@ Create cloud native tag rule
     ```json
     {
       "input": {
-        "objectType": "AWS_DYNAMODB_TABLE",
+        "objectType": "AWS_CONFIG",
         "tagRuleName": "example-string"
       }
     }

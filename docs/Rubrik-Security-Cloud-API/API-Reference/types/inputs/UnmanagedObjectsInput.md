@@ -10,6 +10,7 @@ Input to query unmanaged objects.
 | cloudAccountIds | [String!] | Cloud account IDs to filter. |
 | clusterUuid | String! | Workload cluster UUID. |
 | hasDownloadedSnapshots | Boolean | Filter objects based on presence of downloaded snapshots. When not specified, all objects are returned. When true, only objects with downloaded snapshots are returned. When false, only objects without downloaded snapshots are returned. |
+| hasLocalSnapshots | Boolean | Filter objects based on the presence of local snapshots. When not specified, all objects are returned. When true, only objects with local snapshots are returned. When false, only objects without local snapshots are returned. |
 | managedBy | [CloudVendor](../enums/CloudVendor.md) | Managed by to filter. |
 | name | String | Object name. |
 | objectId | String | Object Id. |

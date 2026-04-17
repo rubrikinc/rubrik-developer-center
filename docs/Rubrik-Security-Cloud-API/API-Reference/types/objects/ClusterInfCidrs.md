@@ -6,9 +6,9 @@ Cluster interface CIDR map.
 
 | Field | Type | Description |
 |-------|------|-------------|
-| clusterId | String! |  |
-| clusterName | String! |  |
-| interfaceCidr | [[InterfaceCidr](InterfaceCidr.md)!]! |  |
+| clusterId | String! | ID of the Rubrik cluster. |
+| clusterName | String! | Name of the Rubrik cluster. |
+| interfaceCidr | [[InterfaceCidr](InterfaceCidr.md)!]! | Interface CIDR addresses of the cluster. |
 
 ## Used By
 

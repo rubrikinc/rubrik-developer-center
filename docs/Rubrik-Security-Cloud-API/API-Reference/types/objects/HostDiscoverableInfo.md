@@ -16,3 +16,4 @@ The host information of the discoverable entity.
 
 - KosmosDiscoverableEntityType.hostsInfo
 - [MysqldbInstance.hostsInfo](MysqldbInstance.md)
+- [PostgreSQLDbCluster.hostsInfo](PostgreSQLDbCluster.md)

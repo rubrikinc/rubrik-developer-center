@@ -8,3 +8,4 @@ Metadata for the quarantine operation which mentions the source of the quarantin
 |-------|------|-------------|
 | huntId | [UUID](../scalars/UUID.md) | Hunt ID for threat hunt related quarantine operations. |
 | isThreatMonitoring | Boolean | Flag to indicate if the quarantine operation is from threat monitoring. |
+| qmcMetadata | [QmcMetadata](QmcMetadata.md) | QMC metadata for quarantine management center operations. |

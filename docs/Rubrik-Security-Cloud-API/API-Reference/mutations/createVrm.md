@@ -6,7 +6,7 @@ Add a FusionCompute VRM instance  Supported in v9.6 Create a FusionCompute VRM i
 
 | Argument | Type | Description |
 |----------|------|-------------|
-| input *(required)* | [CreateVrmInput](../types/inputs/CreateVrmInput.md)! | Input for V1CreateVrm. |
+| input *(required)* | [CreateVrmInput](../types/inputs/CreateVrmInput.md)! | Input for createVrm. |
 
 ## Returns
 

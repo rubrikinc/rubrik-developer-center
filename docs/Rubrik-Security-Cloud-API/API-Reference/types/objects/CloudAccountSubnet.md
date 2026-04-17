@@ -6,11 +6,11 @@ AWS subnet information.
 
 | Field | Type | Description |
 |-------|------|-------------|
-| availabilityZone | String! | Availability zone in which the subnet resides. |
+| availabilityZone | String! | Availability zone. |
 | cidrBlock | [CloudAccountAddressBlockV4](CloudAccountAddressBlockV4.md) | CIDR block of the subnet. |
-| name | String! | Subnet name. |
-| subnetId | String! | ID of the subnet. |
-| vpcId | String! | ID of the virtual private cloud (VPC). |
+| name | String! | Name of the subnet. |
+| subnetId | String! | Subnet ID. |
+| vpcId | String! | VPC ID. |
 
 ## Used By
 

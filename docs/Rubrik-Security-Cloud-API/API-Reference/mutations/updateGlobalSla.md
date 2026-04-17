@@ -31,6 +31,7 @@ Update SLA Domain.
         objectTypes
         ownerOrgName
         protectedObjectCount
+        purpose
         retentionLockMode
         snapshotScheduleLastUpdatedAt
         stateVersion

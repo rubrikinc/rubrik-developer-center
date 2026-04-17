@@ -6,7 +6,7 @@
 
 | Field | Type | Description |
 |-------|------|-------------|
-| analyzerResult | [AnalyzerResult](AnalyzerResult.md)! |  |
+| analyzerResult | [AnalyzerResult](AnalyzerResult.md)! | Mapping from analyzer result to groups it belongs to. |
 | groups | [[AnalyzerGroup](AnalyzerGroup.md)!]! |  |
 
 ## Used By

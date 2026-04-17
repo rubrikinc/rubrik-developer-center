@@ -8,7 +8,7 @@ Returns timeline data for all policies of an account.
 |----------|------|-------------|
 | startDay *(required)* | String! | Start time, in string format (YYYY-MM-DD). |
 | endDay *(required)* | String! | End time, in string format (YYYY-MM-DD). |
-| timezone *(required)* | String! |  |
+| timezone *(required)* | String! | The timezone in which to display timestamps. |
 | getWhitelistedResults *(required)* | Boolean! | Include whitelisted objects in the results. |
 | workloadTypes *(required)* | [[DataGovObjectType](../types/enums/DataGovObjectType.md)!]! | Types of workloads that can be used for filtering query results. |
 | useOptimisedDiscoveryTimeline | Boolean | Specifies whether the optimized discovery timeline must be used for the request. If not passed, default is taken as false. |

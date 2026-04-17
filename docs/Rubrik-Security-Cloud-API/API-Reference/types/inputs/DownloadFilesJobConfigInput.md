@@ -8,5 +8,5 @@ Supported in v5.0+
 |-------|------|-------------|
 | legalHoldDownloadConfig | [LegalHoldDownloadConfigInput](LegalHoldDownloadConfigInput.md) | Supported in v5.2+ v5.2-v7.0: An optional argument containing a Boolean parameter to depict if the download is being triggered for Legal Hold use case. v8.0+: Optional Boolean argument indicating if the download is being triggered due to a Legal Hold. |
 | paths | [String!]! | Required. Supported in v5.0+ Array with the full paths of files and folders to download. |
-| shouldUseStrongEncryption | Boolean | Supported in v9.6 When true, uses AES-256 encryption for the generated zip file. When absent, falls back to the per-workload or global configuration. |
+| shouldUseStrongEncryption | Boolean | Supported in v9.5+ When true, uses AES-256 encryption for the generated zip file. When absent, falls back to the per-workload or global configuration. |
 | zipPassword | String | Supported in v9.0+ Password to protect generated zip with. |

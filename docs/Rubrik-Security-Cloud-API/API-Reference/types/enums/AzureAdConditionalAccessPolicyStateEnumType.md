@@ -10,3 +10,4 @@ Specifies the state of an Entra ID conditional access policy.
 | OFF | Entra ID policy state is off. |
 | ON | Entra ID policy state is on. |
 | REPORT_ONLY | Entra ID policy state is report only. |
+| SNAPSHOT_STATE | Restore the policy to its original state as captured in the snapshot. |

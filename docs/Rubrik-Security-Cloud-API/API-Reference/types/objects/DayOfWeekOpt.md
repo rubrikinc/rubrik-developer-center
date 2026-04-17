@@ -6,7 +6,7 @@ Day of the week.
 
 | Field | Type | Description |
 |-------|------|-------------|
-| day | [DayOfWeek](../enums/DayOfWeek.md)! | Day. |
+| day | [DayOfWeek](../enums/DayOfWeek.md)! | Day of the week. |
 
 ## Used By
 

@@ -9,7 +9,7 @@
 | filter | [ListObjectFilesFiltersInput](../types/inputs/ListObjectFilesFiltersInput.md) |  |
 | sort | [FileResultSortInput](../types/inputs/FileResultSortInput.md) | Sorts to apply when listing file results. |
 | day *(required)* | String! | Date in the format (YYYY-MM-DD). |
-| timezone *(required)* | String! |  |
+| timezone *(required)* | String! | The timezone in which to display timestamps. |
 | first | Int | Returns the first n elements from the list. |
 | after | String | Returns the elements in the list that occur after the specified cursor. |
 | last | Int | Returns the last n elements from the list. |

@@ -8,7 +8,7 @@ Returns permissions associated with a path.
 |----------|------|-------------|
 | snappableFid *(required)* | String! |  |
 | snapshotFid *(required)* | String! |  |
-| stdPath *(required)* | String! |  |
+| stdPath *(required)* | String! | The standard path of the directory to browse. |
 | skipResolveSids | Boolean | Skip converting SIDs in response to friendly names |
 | filters | [SddlRequestFiltersInput](../types/inputs/SddlRequestFiltersInput.md) | Filter for resolving security descriptor. |
 

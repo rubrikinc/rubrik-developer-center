@@ -1,9 +1,9 @@
 # DeleteCloudNativeTagRuleInput
 
-Input required to delete a tag rule.
+Input required to delete a tag or label rule.
 
 ## Fields
 
 | Field | Type | Description |
 |-------|------|-------------|
-| ruleId | [UUID](../scalars/UUID.md)! | Tag rule ID. |
+| ruleId | [UUID](../scalars/UUID.md)! | Rule ID. |

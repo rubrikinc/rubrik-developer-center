@@ -6,6 +6,6 @@ Type of Mosaic snapshot.
 
 | Value | Description |
 |-------|-------------|
-| FULL | Full(initial) sync snapshot. |
-| INCREMENTAL | Incremental(delta) sync snapshot. |
+| FULL | Full (initial) sync snapshot. |
+| INCREMENTAL | Incremental (delta) sync snapshot. |
 | INVALID | Invalid snapshot type. |

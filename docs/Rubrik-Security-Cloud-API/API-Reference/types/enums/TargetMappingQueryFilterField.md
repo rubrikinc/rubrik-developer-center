@@ -11,6 +11,7 @@ Target mapping filter field.
 | ARCHIVAL_LOCATION_TYPE | Filter by target mapping type. |
 | CLOUD_ACCOUNT_ID | Filter by cloud account ID. |
 | CLOUD_NATIVE_USE_CASE | Filter by cloud native use case. |
+| COMPATIBLE_SNAPPABLE_TYPES | Filter archival groups to only those compatible with the listed snappable types. text_list values must be SlaObjectType enum names (e.g. "AWS_EC2_EBS_OBJECT_TYPE"). Groups containing CSE-enabled archival locations are filtered out when the corresponding UEM feature flag is not enabled for the snappable types. |
 | EXCLUDE_ARCHIVAL_LOCATION_TYPE | Filter by excluding target type. |
 | EXCLUDE_GROUP_TYPE | Filter to exclude group types. |
 | INCLUDE_INLINE | Filter to include inline groups. |

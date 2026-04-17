@@ -14,7 +14,7 @@ Rubrik cluster node.
 | id | String! | Node ID. |
 | interfaceCidrs | [[ClusterNodeInterfaceCidr](ClusterNodeInterfaceCidr.md)!] | Network interface of a Rubrik cluster node. |
 | ipAddress | String | IP address of the Rubrik cluster node. |
-| needsInspection | Boolean | Platform type of the Rubrik cluster node. |
+| needsInspection | Boolean | Whether the node needs inspection. |
 | networkSpeed | String | Network speed of the Rubrik cluster node. |
 | platformType | [ClusterNodePlatformType](../enums/ClusterNodePlatformType.md) | Platform type of the Rubrik cluster node. |
 | position | [ClusterNodePosition](../enums/ClusterNodePosition.md) | Rear view position of the Rubrik cluster node. |

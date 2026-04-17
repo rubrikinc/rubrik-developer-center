@@ -1,14 +1,14 @@
 # InterfaceCidr
 
-Interface CIDR Info.
+Information about the interface CIDR address.
 
 ## Fields
 
 | Field | Type | Description |
 |-------|------|-------------|
-| cidr | String! |  |
-| interfaceType | [InterfaceType](../enums/InterfaceType.md)! |  |
-| selected | Boolean! |  |
+| cidr | String! | CIDR address of the interface. |
+| interfaceType | [InterfaceType](../enums/InterfaceType.md)! | Type of the network interface. |
+| selected | Boolean! | Whether the interface is selected. |
 
 ## Used By
 

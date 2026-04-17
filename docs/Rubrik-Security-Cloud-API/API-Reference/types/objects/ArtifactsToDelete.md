@@ -6,8 +6,8 @@ Artifacts to be deleted for a feature.
 
 | Field | Type | Description |
 |-------|------|-------------|
-| artifactsToDelete | [[ExternalArtifactMapReply](ExternalArtifactMapReply.md)!]! | Native ID of the AWS account. |
-| feature | [CloudAccountFeature](../enums/CloudAccountFeature.md)! | Feature Enum. |
+| artifactsToDelete | [[ExternalArtifactMapReply](ExternalArtifactMapReply.md)!]! | Artifact map that should be deleted for the feature. |
+| feature | [CloudAccountFeature](../enums/CloudAccountFeature.md)! | The feature for which the deletion is requested. |
 
 ## Used By
 

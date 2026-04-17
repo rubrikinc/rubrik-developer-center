@@ -16,3 +16,4 @@ Kosmos User Message object.
 **Referenced by**
 
 - [MysqldbInstanceStatus.statusMessages](MysqldbInstanceStatus.md)
+- [PostgreSQLDbClusterStatus.statusMessages](PostgreSQLDbClusterStatus.md)

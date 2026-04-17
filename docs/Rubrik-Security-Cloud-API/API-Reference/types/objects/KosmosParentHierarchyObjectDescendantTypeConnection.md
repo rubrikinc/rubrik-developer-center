@@ -17,3 +17,4 @@ Paginated list of KosmosParentHierarchyObjectDescendantType objects with additio
 
 - KosmosParentHierarchyObjectType.descendantConnection
 - [MysqldbInstance.descendantConnection](MysqldbInstance.md)
+- [PostgreSQLDbCluster.descendantConnection](PostgreSQLDbCluster.md)

@@ -25,6 +25,7 @@ Supported in v5.0+
 - [FailoverClusterAppSummary.slaAssignable](FailoverClusterAppSummary.md)
 - [FailoverClusterSummary.slaAssignable](FailoverClusterSummary.md)
 - [FilesetSummary.slaAssignable](FilesetSummary.md)
+- [FusionComputeVrmSummary.slaAssignable](FusionComputeVrmSummary.md)
 - [HypervScvmmSummary.slaAssignable](HypervScvmmSummary.md)
 - [NutanixClusterSummary.slaAssignable](NutanixClusterSummary.md)
 - [OracleHostSummary.slaAssignable](OracleHostSummary.md)

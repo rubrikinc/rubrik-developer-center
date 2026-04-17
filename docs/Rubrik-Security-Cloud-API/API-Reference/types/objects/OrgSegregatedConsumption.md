@@ -12,6 +12,7 @@ Rich org-level segregated consumption data with detailed breakdowns
 | onedriveConsumption | [SegregatedFETBConsumption](SegregatedFETBConsumption.md) | Segregated consumption for OneDrive workload |
 | orgId | [UUID](../scalars/UUID.md)! | UUID of the organization |
 | orgName | String! | Name of the organization |
+| segregatedObjectTypeConsumption | [[SegregatedObjectTypeConsumptionEntry](SegregatedObjectTypeConsumptionEntry.md)!]! | Consumption breakdown by object type, state, and protection status. |
 | sharepointConsumption | [SegregatedFETBConsumption](SegregatedFETBConsumption.md) | Segregated consumption for SharePoint workload |
 | totalConsumption | [SegregatedFETBConsumption](SegregatedFETBConsumption.md) | Aggregated total consumption across all Microsoft 365 workloads |
 | totalFetbConsumed | [Long](../scalars/Long.md) | Total FETB consumed aggregated across all Microsoft 365 workloads |

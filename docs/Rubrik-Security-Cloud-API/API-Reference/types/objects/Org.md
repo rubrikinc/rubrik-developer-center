@@ -71,4 +71,4 @@ Details of an org.
 - [AzureStorageAccount.allOrgs](AzureStorageAccount.md)
 - [CassandraColumnFamily.allOrgs](CassandraColumnFamily.md)
 - [CassandraKeyspace.allOrgs](CassandraKeyspace.md)
-- *…and 254 more*
+- *…and 257 more*

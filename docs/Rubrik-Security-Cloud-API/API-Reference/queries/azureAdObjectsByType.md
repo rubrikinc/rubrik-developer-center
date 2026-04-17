@@ -44,7 +44,7 @@ Details of the Azure AD objects corresponding to the type.
     ```json
     {
       "input": {
-        "azureAdObjectType": "ADMINISTRATIVE_UNIT",
+        "azureAdObjectType": "ACCOUNT_PROTECTION",
         "keywordSearchFilters": [
           {}
         ],
@@ -65,7 +65,7 @@ Details of the Azure AD objects corresponding to the type.
               {
                 "objectId": "example-string",
                 "snapshotId": "example-string",
-                "type": "ADMINISTRATIVE_UNIT"
+                "type": "ACCOUNT_PROTECTION"
               }
             ]
           ],

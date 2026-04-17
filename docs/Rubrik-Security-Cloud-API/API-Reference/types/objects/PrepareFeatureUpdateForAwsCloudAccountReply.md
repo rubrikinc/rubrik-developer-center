@@ -6,8 +6,8 @@ Response to prepare updation of AWS cloud account.
 
 | Field | Type | Description |
 |-------|------|-------------|
-| cloudFormationUrl | String! | CloudFormation URL to update cloud account. |
-| templateUrl | String! | AWS CloudFormation template URL. |
+| cloudFormationUrl | String! | AWS CloudFormation URL. |
+| templateUrl | String! | Template URL of the CloudFormation stack. |
 
 ## Used By
 

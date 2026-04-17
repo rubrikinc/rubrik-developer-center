@@ -17,6 +17,7 @@ Sensitive hits for different risk categories.
 **Referenced by**
 
 - [FileResult.sensitiveHits](FileResult.md)
+- [IdentityMetadata.sensitiveHits](IdentityMetadata.md)
 - [PolicyObj.riskHits](PolicyObj.md)
 - [SnapshotFileDelta.sensitiveHits](SnapshotFileDelta.md)
 - [SnapshotFileDeltaV2.sensitiveHits](SnapshotFileDeltaV2.md)

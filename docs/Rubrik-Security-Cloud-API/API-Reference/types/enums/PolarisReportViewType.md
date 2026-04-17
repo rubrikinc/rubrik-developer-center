@@ -8,6 +8,7 @@ PolarisReportViewType is the template type for a report.
 |-------|-------------|
 | ACTIVE_DIRECTORY_FOREST_RECOVERY_REPORT | Active Directory forest recovery report. |
 | ALLOWED_HITS_REPORT | Allowed hits report for DSPM allowlisted classification hits. |
+| ANOMALY_DETECTION_COMPLIANCE_REPORT | Anomaly detection compliance report. |
 | ANOMALY_REPORT | Anomaly report (ransomware monitoring). |
 | AUDIT_REPORT | Audit report. |
 | BACKUP_STRIKES_REPORT | Backup Strikes report. |

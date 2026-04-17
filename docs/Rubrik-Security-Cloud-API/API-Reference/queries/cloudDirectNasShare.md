@@ -21,6 +21,7 @@ NAS Cloud Direct share.
       cloudDirectNasShare(fid: $fid) {
         authorizedOperations
         cloudDirectId
+        cloudDirectPendingObjectPauseAssignment
         clusterUuid
         exportPath
         id
@@ -63,10 +64,10 @@ NAS Cloud Direct share.
             "ACCESS_CDM_CLUSTER"
           ],
           "cloudDirectId": "example-string",
+          "cloudDirectPendingObjectPauseAssignment": "NO_PENDING_PAUSE_ASSIGNMENT",
           "clusterUuid": "00000000-0000-0000-0000-000000000000",
           "exportPath": "example-string",
           "id": "00000000-0000-0000-0000-000000000000",
-          "isArchived": true,
           "allOrgs": [
             {
               "allUrls": [

@@ -6,7 +6,7 @@ Response of the operation to set GCP cloud account feature status to connected, 
 
 | Field | Type | Description |
 |-------|------|-------------|
-| status | [GcpCloudAccountProjectUpgradeStatus](GcpCloudAccountProjectUpgradeStatus.md) | Status of the operation to upgrade GCP project. |
+| status | [GcpCloudAccountProjectUpgradeStatus](GcpCloudAccountProjectUpgradeStatus.md) | Status of the upgrade. |
 
 ## Used By
 

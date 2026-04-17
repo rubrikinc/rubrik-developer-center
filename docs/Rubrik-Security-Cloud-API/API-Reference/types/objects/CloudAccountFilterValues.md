@@ -7,7 +7,8 @@ CloudAccountFilterValues holds the available values for a given filter type.
 | Field | Type | Description |
 |-------|------|-------------|
 | filterType | [CloudAccountFilterType](../enums/CloudAccountFilterType.md)! | The type of filter. |
-| values | [String!]! | Available values (tenant domain names or management group customer IDs). |
+| namedValues | [[CloudAccountFilterValueEntry](CloudAccountFilterValueEntry.md)!]! | Filter entries with display names and values. |
+| values | [String!]! | The value used when applying this filter. |
 
 ## Used By
 

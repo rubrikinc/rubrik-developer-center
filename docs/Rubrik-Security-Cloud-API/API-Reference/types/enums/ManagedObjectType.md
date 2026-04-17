@@ -11,6 +11,7 @@ All supported Rubrik managed objects.
 | ACTIVE_DIRECTORY_FOREST | On-prem Active Directory forest. |
 | APP_BLUEPRINT | Orchestrated Application Recovery Blueprint. |
 | ATLASSIAN_SITE | Atlassian site. |
+| AUTH0_TENANT | Auth0 tenant. |
 | AWS_NATIVE_ACCOUNT | AWS account. |
 | AWS_NATIVE_CONFIG | Aws Native Config. |
 | AWS_NATIVE_DYNAMODB_TABLE | DynamoDB table. |
@@ -24,6 +25,7 @@ All supported Rubrik managed objects.
 | AZURE_DEVOPS_PROJECT | Azure DevOps project. |
 | AZURE_DEVOPS_REPOSITORY | Azure DevOps repository. |
 | AZURE_MANAGED_DISK | Azure managed disk. |
+| AZURE_POSTGRES_FLEXIBLE_SERVER | Azure Postgres Flexible Server. |
 | AZURE_REGION | Azure Region. |
 | AZURE_RESOURCE_GROUP | Azure common resource group. |
 | AZURE_RESOURCE_GROUP_FOR_DISK_HIERARCHY | Azure resource group for disk hierarchy. |
@@ -60,6 +62,15 @@ All supported Rubrik managed objects.
 | FAKE_OBJECT_TYPE | Fake object type, used for testing only. |
 | FELDSPAR_SITE | Feldspar site. |
 | FILESET_TEMPLATE | Fileset template. |
+| FUSION_COMPUTE_CLUSTER | FusionCompute cluster. |
+| FUSION_COMPUTE_DATASTORE | FusionCompute datastore. |
+| FUSION_COMPUTE_HOST | FusionCompute host. |
+| FUSION_COMPUTE_NETWORK | FusionCompute network. |
+| FUSION_COMPUTE_SITE | FusionCompute site. |
+| FUSION_COMPUTE_VIRTUAL_MACHINE | FusionCompute virtual machine. |
+| FUSION_COMPUTE_VRM | FusionCompute VRM (Virtual Resource Manager). |
+| GCP_ALLOY_DB_CLUSTER | GCP AlloyDB Cluster. |
+| GCP_BIGQUERY_DATASET | GCP BigQuery Dataset. |
 | GCP_CLOUD_SQL_INSTANCE | GCP Cloud SQL Instance. |
 | GCP_NATIVE_DISK | GCP disk. |
 | GCP_NATIVE_GCE_INSTANCE | GCP Google Compute Engine instance. |
@@ -148,6 +159,7 @@ All supported Rubrik managed objects.
 | OPENSTACK_DOMAIN | Openstack Domain. |
 | OPENSTACK_ENVIRONMENT | Openstack Environment. |
 | OPENSTACK_HOST | Openstack Host. |
+| OPENSTACK_IMAGE | Openstack Image. |
 | OPENSTACK_PROJECT | Openstack Project. |
 | OPENSTACK_REGION | Openstack Region. |
 | OPENSTACK_VIRTUAL_MACHINE | Openstack Virtual Machine. |
@@ -162,6 +174,9 @@ All supported Rubrik managed objects.
 | PROXMOX_ENVIRONMENT | Proxmox environment. |
 | PROXMOX_NODE | Proxmox node. |
 | PROXMOX_VIRTUAL_MACHINE | Proxmox virtual machine. |
+| PURE_STORAGE_ARRAY | Pure Storage array. |
+| PURE_STORAGE_PROTECTION_GROUP | Pure Storage protection group. |
+| PURE_STORAGE_VOLUME | Pure Storage volume. |
 | RECOVERY_PLAN *(deprecated: RECOVERY_PLAN is deprecated and no longer used.)* | Recovery Plan. |
 | ROOT | Root Node. |
 | SALESFORCE_FIXED_OBJECT | Salesforce metadata. |

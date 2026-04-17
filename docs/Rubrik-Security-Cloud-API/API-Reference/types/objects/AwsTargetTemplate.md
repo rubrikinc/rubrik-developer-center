@@ -20,3 +20,4 @@ Specific info for AWS Target Template.
 | region | [AwsRegion](../enums/AwsRegion.md)! | AWS target region. |
 | storageClass | [AwsStorageClass](../enums/AwsStorageClass.md)! | AWS target storage class. |
 | targetType | [TargetType](../enums/TargetType.md)! | The type of this Target. |
+| templateLocationId | [UUID](../scalars/UUID.md)! | The internal ID of the template archival location. |

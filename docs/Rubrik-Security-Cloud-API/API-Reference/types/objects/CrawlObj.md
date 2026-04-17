@@ -33,9 +33,9 @@
 | fileResultConnection | after | String | Returns the elements in the list that occur after the specified cursor. |
 | fileResultConnection | last | Int | Returns the last n elements from the list. |
 | fileResultConnection | before | String | Returns the elements in the list that occur before the specified cursor. |
-| fileResultConnection | filter | [BrowseDirectoryFiltersInput](../inputs/BrowseDirectoryFiltersInput.md) |  |
+| fileResultConnection | filter | [BrowseDirectoryFiltersInput](../inputs/BrowseDirectoryFiltersInput.md) | Filters for browsing directory contents. |
 | fileResultConnection | sort | [FileResultSortInput](../inputs/FileResultSortInput.md) | Sorts to apply when listing file results. |
-| fileResultConnection | stdPath *(required)* | String! |  |
+| fileResultConnection | stdPath *(required)* | String! | The standard path of the directory to browse. |
 
 ## Used By
 

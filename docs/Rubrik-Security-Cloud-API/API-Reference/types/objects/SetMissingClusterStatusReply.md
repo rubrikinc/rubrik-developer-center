@@ -6,7 +6,7 @@ Indicates success of updating missing cluster record.
 
 | Field | Type | Description |
 |-------|------|-------------|
-| isSuccessful | Boolean! | Indicates whether the missing cluster record was updated sucessfully. |
+| isSuccessful | Boolean! | Indicates whether the missing cluster record was updated successfully. |
 
 ## Used By
 

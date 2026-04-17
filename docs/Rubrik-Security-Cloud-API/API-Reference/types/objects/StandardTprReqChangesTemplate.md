@@ -1,6 +1,6 @@
 # StandardTprReqChangesTemplate
 
-*No description available.*
+Standard template for TPR Request requested changes.
 
 **Implements:** [RequestedChangesTemplate](../interfaces/RequestedChangesTemplate.md)
 
@@ -8,5 +8,5 @@
 
 | Field | Type | Description |
 |-------|------|-------------|
-| entries | [[TprRequestedChangeEntry](TprRequestedChangeEntry.md)!]! |  |
+| entries | [[TprRequestedChangeEntry](TprRequestedChangeEntry.md)!]! | Entries changed by the TPR request. |
 | templateName | String! | Name of the requested changes template for quorum authorization. |

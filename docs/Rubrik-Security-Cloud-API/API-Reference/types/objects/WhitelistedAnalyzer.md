@@ -1,14 +1,14 @@
 # WhitelistedAnalyzer
 
-*No description available.*
+Whitelisted analyzer information.
 
 ## Fields
 
 | Field | Type | Description |
 |-------|------|-------------|
-| isExplicit | Boolean! |  |
-| whitelistedAnalyzerId | String! |  |
-| whitelistedPath | String! |  |
+| isExplicit | Boolean! | Whether the path was whitelisted explicitly or inherited. |
+| whitelistedAnalyzerId | String! | Whitelisted analyzer ID. |
+| whitelistedPath | String! | Path of the whitelist, which could be inherited from parent. |
 
 ## Used By
 

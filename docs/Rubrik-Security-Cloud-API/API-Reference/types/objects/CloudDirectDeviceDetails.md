@@ -6,6 +6,7 @@ Details about a device in a NAS Cloud Direct site.
 
 | Field | Type | Description |
 |-------|------|-------------|
+| hardwareId | String! | Unique hardware identifier of the device. |
 | ipAddress | String | The IP address and netmask of the device. |
 | lastConnectedAt | [DateTime](../scalars/DateTime.md) | Time when the device was last connected to the site. |
 | lastState | [DeviceState](../enums/DeviceState.md)! | The last known state of the device. |

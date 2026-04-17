@@ -6,7 +6,7 @@ Update whitelisted analyzers for a path.
 
 | Argument | Type | Description |
 |----------|------|-------------|
-| stdPath *(required)* | String! |  |
+| stdPath *(required)* | String! | The standard path of the directory to browse. |
 | snappableFid *(required)* | String! |  |
 | snapshotFid *(required)* | String! |  |
 | analyzerIds *(required)* | [String!]! |  |

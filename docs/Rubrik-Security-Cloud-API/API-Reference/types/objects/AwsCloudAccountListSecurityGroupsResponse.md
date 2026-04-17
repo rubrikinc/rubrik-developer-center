@@ -6,7 +6,7 @@ AWS Cloud Account lists the security group response.
 
 | Field | Type | Description |
 |-------|------|-------------|
-| result | [[CloudAccountSub](CloudAccountSub.md)!]! | List of security groups and associated information. |
+| result | [[CloudAccountSub](CloudAccountSub.md)!]! | List of security groups. |
 
 ## Used By
 

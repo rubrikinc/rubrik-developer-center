@@ -18,6 +18,7 @@ Specific information for Google Cloud Platform (GCP) target created on Rubrik.
 | consumedBytes | [Long](../scalars/Long.md) | Number of bytes stored on the target. |
 | failedTasks | Int | Number of archiving tasks failed on this target. |
 | id | String! | The ID of the target. |
+| immutabilitySettings | [GcpImmutabilitySettings](GcpImmutabilitySettings.md) | Immutability settings of the GCP archival target. |
 | isActive | Boolean! | Specifies whether the status of the target is active. When set to false, the target is either paused or not enabled. |
 | isArchived | Boolean! | Specifies whether the target is archived. |
 | isComplianceImmutabilitySupported | Boolean! | Specifies whether the archival location supports compliance immutability for retention locked snapshots. |

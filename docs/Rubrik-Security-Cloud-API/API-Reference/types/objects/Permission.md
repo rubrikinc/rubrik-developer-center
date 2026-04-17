@@ -7,7 +7,7 @@ Specifies permissions.
 | Field | Type | Description |
 |-------|------|-------------|
 | objectsForHierarchyTypes | [[ObjectIdsForHierarchyType](ObjectIdsForHierarchyType.md)!]! | List of objects in hierarchy. |
-| operation | [Operation](../enums/Operation.md)! | The operations granted to the org on newly added. |
+| operation | [Operation](../enums/Operation.md)! | The operations granted to the newly added org. |
 
 ## Used By
 

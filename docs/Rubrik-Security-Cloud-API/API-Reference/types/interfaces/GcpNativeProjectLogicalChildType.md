@@ -38,6 +38,7 @@ Logical child type for GCP project.
 
 ## Implemented By
 
+- [GcpAlloyDbCluster](../objects/GcpAlloyDbCluster.md)
 - [GcpCloudSqlInstance](../objects/GcpCloudSqlInstance.md)
 - [GcpNativeDisk](../objects/GcpNativeDisk.md)
 - [GcpNativeGceInstance](../objects/GcpNativeGceInstance.md)

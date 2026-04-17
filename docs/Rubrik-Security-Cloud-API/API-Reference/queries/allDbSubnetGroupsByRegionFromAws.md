@@ -53,7 +53,8 @@ All DB subnet groups in a given region. Refers to logical isolation of RDS on a 
               {
                 "availabilityZone": "example-string",
                 "id": "example-string",
-                "name": "example-string"
+                "name": "example-string",
+                "outpostArn": "example-string"
               }
             ]
           }

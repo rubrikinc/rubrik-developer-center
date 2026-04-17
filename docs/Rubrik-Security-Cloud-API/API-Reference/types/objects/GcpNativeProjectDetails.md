@@ -16,6 +16,8 @@ GCP native project details.
 
 **Referenced by**
 
+- [GcpAlloyDbCluster.gcpNativeProjectDetails](GcpAlloyDbCluster.md)
+- [GcpAlloyDbCluster.gcpProjectDetails](GcpAlloyDbCluster.md)
 - [GcpCloudSqlInstance.gcpNativeProjectDetails](GcpCloudSqlInstance.md)
 - [GcpCloudSqlInstance.gcpProjectDetails](GcpCloudSqlInstance.md)
 - [GcpNativeDisk.gcpNativeProjectDetails](GcpNativeDisk.md)

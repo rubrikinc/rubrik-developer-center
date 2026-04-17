@@ -70,12 +70,13 @@ Returns the newest snapshot for a Cloud Direct object, such as a share or bucket
           "date": "2024-01-01T00:00:00.000Z",
           "expirationDate": "2024-01-01T00:00:00.000Z",
           "expiryHint": true,
-          "object": {},
-          "slaDomain": {
-            "id": "example-string",
-            "name": "example-string",
-            "version": "example-string"
-          }
+          "latestUserNote": {
+            "objectId": "example-string",
+            "time": "2024-01-01T00:00:00.000Z",
+            "userName": "example-string",
+            "userNote": "example-string"
+          },
+          "object": {}
         }
       }
     }

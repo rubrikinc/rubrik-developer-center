@@ -20,6 +20,7 @@ Input to update SLA Domain.
 | name | String | Name of the SLA Domain. |
 | objectSpecificConfigsInput | [ObjectSpecificConfigsInput](ObjectSpecificConfigsInput.md) | Object-specific configuration of the SLA Domain. |
 | objectTypes | [[SlaObjectType](../enums/SlaObjectType.md)!] | Object types of the SLA Domain. |
+| purpose | [SlaPurpose](../enums/SlaPurpose.md) | Purpose of the SLA Domain. |
 | replicationSpecInput | [ReplicationSpecInput](ReplicationSpecInput.md) | Replication specification of the SLA Domain. Deprecated: use replicationSpecsV2 instead. |
 | replicationSpecsV2 | [[ReplicationSpecV2Input](ReplicationSpecV2Input.md)!] | Replication specifications of the SLA Domain. |
 | retentionLockMode | [RetentionLockMode](../enums/RetentionLockMode.md) | Specifies the retention lock mode for the intended SLA Domain update. |

@@ -6,4 +6,4 @@ Day-of-week specification.
 
 | Field | Type | Description |
 |-------|------|-------------|
-| value | [DayOfWeekPatternSpec](DayOfWeekPatternSpec.md)! | Specifies which day of which week to take the monthly snapshot. For example, the first Tuesday, last Sunday, etc. |
+| value | [DayOfWeekPatternSpec](DayOfWeekPatternSpec.md)! | Day-of-week specification. |

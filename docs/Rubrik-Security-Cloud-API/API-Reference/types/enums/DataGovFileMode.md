@@ -1,12 +1,12 @@
 # DataGovFileMode
 
-*No description available.*
+FileMode lists all the relevant file types for Data Governance.
 
 ## Values
 
 | Value | Description |
 |-------|-------------|
-| DIRECTORY |  |
-| FILE |  |
-| SYMLINK |  |
-| UNKNOWN |  |
+| DIRECTORY | Directory type. |
+| FILE | File type. |
+| SYMLINK | Symbolic link type. |
+| UNKNOWN | Unknown file mode. |

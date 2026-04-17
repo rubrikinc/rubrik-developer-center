@@ -1,12 +1,12 @@
 # PasswordComplexityPolicyTemplateInput
 
-Specifies the format of each password policy field.
+Specifies range of values for each password complexity policy field.
 
 ## Fields
 
 | Field | Type | Description |
 |-------|------|-------------|
-| defaultValue | Int | Default value for the password policy field. |
+| defaultValue | Int | Default value for the password complexity policy field. |
 | isActive | Boolean! | Specifies if the password complexity policy field is being used. |
-| maxValue | Int | Maximum value for the password policy field. |
-| minValue | Int | Minimum value for the password policy field. |
+| maxValue | Int | Maximum value for the password complexity policy field. |
+| minValue | Int | Minimum value for the password complexity policy field. |

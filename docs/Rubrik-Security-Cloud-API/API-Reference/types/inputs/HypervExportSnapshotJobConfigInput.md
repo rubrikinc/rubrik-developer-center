@@ -12,5 +12,5 @@ Supported in v5.0+
 | path | String! | Required. Destination path for the new virtual machine virtual disks. |
 | powerOn | Boolean | Specifies whether the virtual machine should be powered on after export. The default value is true. |
 | removeNetworkDevices | Boolean | Supported in v5.0+ v5.0-v6.0: Determines whether to remove the network interfaces from the mounted virtual machine. Set to 'true' to remove all network interfaces. The default value is 'false'. v7.0+: Specifies whether to remove the network interfaces from the exported virtual machine. When the value is 'true' all the network interfaces are removed. The default value is 'true'. |
-| virtualSwitchMappings | [[HypervVirtualSwitchMappingInput](HypervVirtualSwitchMappingInput.md)!] | Supported in v9.6 Mapping of network adapter names to virtual switches and MAC addresses. |
+| virtualSwitchMappings | [[HypervVirtualSwitchMappingInput](HypervVirtualSwitchMappingInput.md)!] | Supported in v9.6 Mapping of NIC indices to virtual switches. |
 | vmName | String | Name of the new virtual machine being exported. |

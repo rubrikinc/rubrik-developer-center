@@ -1,13 +1,13 @@
 # DocumentAttribute
 
-*No description available.*
+Represents the document attribute.
 
 ## Fields
 
 | Field | Type | Description |
 |-------|------|-------------|
-| id | [UUID](../scalars/UUID.md)! | The ID of the document type. |
-| name | String! | The name of the document type. |
+| id | [UUID](../scalars/UUID.md)! | Represents the ID of the attribute. |
+| name | String! | Represents the title of the attribute. |
 | type | [DocumentAttributeType](../enums/DocumentAttributeType.md)! |  |
 
 ## Used By

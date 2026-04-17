@@ -10,7 +10,7 @@
 | resource | [ResourceInput](../types/inputs/ResourceInput.md) |  |
 | nativePath *(required)* | String! |  |
 | startDay *(required)* | String! | Start time, in string format (YYYY-MM-DD). |
-| timezone *(required)* | String! |  |
+| timezone *(required)* | String! | The timezone in which to display timestamps. |
 | timeGranularity *(required)* | [TimeGranularity](../types/enums/TimeGranularity.md)! |  |
 
 ## Returns

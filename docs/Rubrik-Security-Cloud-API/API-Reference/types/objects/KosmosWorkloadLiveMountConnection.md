@@ -16,8 +16,10 @@ Paginated list of KosmosWorkloadLiveMount objects. Each page of the results incl
 **Queries**
 
 - [query: mysqlInstanceLiveMounts](../../queries/mysqlInstanceLiveMounts.md)
+- [query: postgresDbClusterLiveMounts](../../queries/postgresDbClusterLiveMounts.md)
 
 **Referenced by**
 
 - KosmosSnappableHierarchyObjectType.liveMounts
 - [MysqldbInstance.liveMounts](MysqldbInstance.md)
+- [PostgreSQLDbCluster.liveMounts](PostgreSQLDbCluster.md)

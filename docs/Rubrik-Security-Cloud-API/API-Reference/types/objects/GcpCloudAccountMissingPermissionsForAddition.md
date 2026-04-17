@@ -6,8 +6,8 @@ List of permissions missing for project addition for projects ineligible for add
 
 | Field | Type | Description |
 |-------|------|-------------|
-| missingPermissions | [String!]! | Permissions which are missing for adding a GCP project. |
-| projectId | String! | GCP project ID. |
+| missingPermissions | [String!]! | List of permissions which are missing for the project. |
+| projectId | String! | Project ID of the project for which permissions are checked. |
 
 ## Used By
 

@@ -6,8 +6,8 @@
 
 | Field | Type | Description |
 |-------|------|-------------|
-| policyId | String! |  |
-| status | [ObjectPolicyStatus](../enums/ObjectPolicyStatus.md)! |  |
+| policyId | String! | Policy ID. |
+| status | [ObjectPolicyStatus](../enums/ObjectPolicyStatus.md)! | Status of the policy. |
 
 ## Used By
 

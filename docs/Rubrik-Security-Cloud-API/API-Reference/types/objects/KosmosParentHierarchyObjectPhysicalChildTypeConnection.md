@@ -17,3 +17,4 @@ Paginated list of KosmosParentHierarchyObjectPhysicalChildType objects with addi
 
 - KosmosParentHierarchyObjectType.physicalChildConnection
 - [MysqldbInstance.physicalChildConnection](MysqldbInstance.md)
+- [PostgreSQLDbCluster.physicalChildConnection](PostgreSQLDbCluster.md)

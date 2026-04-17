@@ -1,6 +1,6 @@
 # GatewayInfo
 
-Gateway information for NAT replication setup.
+Gateway information for replication setup.
 
 ## Fields
 

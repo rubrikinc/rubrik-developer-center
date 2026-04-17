@@ -1,6 +1,6 @@
 # Unions
 
-25 types.
+29 types.
 
 [AccessMethodDetailsType](AccessMethodDetailsType.md)  
 [ActionTypes](ActionTypes.md)  
@@ -20,10 +20,14 @@
 [MongoSnapshotGroupByInfo](MongoSnapshotGroupByInfo.md)  
 [MonthlyDaySpecification](MonthlyDaySpecification.md)  
 [MosaicSnapshotGroupByInfo](MosaicSnapshotGroupByInfo.md)  
+[NestedFilterConfig](NestedFilterConfig.md)  
 [NfAnomalyResultGroupByInfo](NfAnomalyResultGroupByInfo.md)  
 [PcrImagePullDetails](PcrImagePullDetails.md)  
 [PolarisSnapshotGroupByInfo](PolarisSnapshotGroupByInfo.md)  
 [RansomwareResultGroupByInfo](RansomwareResultGroupByInfo.md)  
+[RemediationDetailsUnion](RemediationDetailsUnion.md)  
+[ResourceMetadataUnion](ResourceMetadataUnion.md)  
 [SnappableGroupByInfo](SnappableGroupByInfo.md)  
 [SnappableLocationType](SnappableLocationType.md)  
 [TaskDetailGroupByInfo](TaskDetailGroupByInfo.md)  
+[ViolationDetailsUnion](ViolationDetailsUnion.md)  

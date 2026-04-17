@@ -7,6 +7,7 @@ Describes the reason why a particular remediation might not be available.
 | Value | Description |
 |-------|-------------|
 | REMEDIATION_DISABLED_REASON_ACCESS_REVOKED | Access is already revoked for the target IDs. |
+| REMEDIATION_DISABLED_REASON_ACTOR_TYPE_SYSTEM | Actor type is system. |
 | REMEDIATION_DISABLED_REASON_AD_RISK_REMEDIATED | AD Risk is already remediated for the target IDs. |
 | REMEDIATION_DISABLED_REASON_BULK_REVERT_ACTIVITIES_REMEDIATED | Bulk Revert Activities is already remediated for the target IDs. |
 | REMEDIATION_DISABLED_REASON_CROSS_DOMAIN | Activities are from different domains (SourceId mismatch). Bulk remediation requires all activities to be in the same security boundary. |

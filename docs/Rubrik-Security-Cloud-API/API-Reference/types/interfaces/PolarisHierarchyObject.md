@@ -61,6 +61,7 @@ A Polaris Managed Hierarchy Object.
 - [CassandraKeyspace](../objects/CassandraKeyspace.md)
 - [CassandraSource](../objects/CassandraSource.md)
 - [Dynamics365Organization](../objects/Dynamics365Organization.md)
+- [GcpAlloyDbCluster](../objects/GcpAlloyDbCluster.md)
 - [GcpCloudSqlInstance](../objects/GcpCloudSqlInstance.md)
 - [GcpNativeDisk](../objects/GcpNativeDisk.md)
 - [GcpNativeGceInstance](../objects/GcpNativeGceInstance.md)

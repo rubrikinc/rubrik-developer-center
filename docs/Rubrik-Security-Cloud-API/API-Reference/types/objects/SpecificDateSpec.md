@@ -1,12 +1,12 @@
 # SpecificDateSpec
 
-Specific date specification (e.g., 5th, 15th, last day).
+Specific date specification.
 
 ## Fields
 
 | Field | Type | Description |
 |-------|------|-------------|
-| dateOffset | Int! | Date offset from the start (positive) or end (negative) of the month. Valid range: -1 to 28 (excluding 0). Positive values (1-28) indicate days from the start of the month (e.g., 1 = 1st, 5 = 5th). A negative value of -1 indicates the last day of the month. |
+| dateOffset | Int! | Specifies which date of the month to take a snapshot on. Positive values denote offset from start of the month while negative values denote offset from end of the month. For example, 2 denotes second day of the month, -1 denotes last day of the month. |
 
 ## Used By
 

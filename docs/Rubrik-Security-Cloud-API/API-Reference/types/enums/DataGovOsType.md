@@ -6,6 +6,6 @@
 
 | Value | Description |
 |-------|-------------|
-| LINUX |  |
-| NONE |  |
-| WINDOWS |  |
+| LINUX | Linux OS type. |
+| NONE | NAS fileset snapshots have no OS type. |
+| WINDOWS | Windows OS type. |

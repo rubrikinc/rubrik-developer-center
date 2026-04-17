@@ -7,6 +7,7 @@ Target Template to be used for automatic archival group.
 | Field | Type | Description |
 |-------|------|-------------|
 | targetType | [TargetType](../enums/TargetType.md)! | The type of this Target. |
+| templateLocationId | [UUID](../scalars/UUID.md)! | The internal ID of the template archival location. |
 
 ## Implemented By
 

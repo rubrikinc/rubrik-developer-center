@@ -6,6 +6,6 @@
 
 | Value | Description |
 |-------|-------------|
-| DAY |  |
-| HOUR |  |
-| MONTH |  |
+| DAY | Day duration. |
+| HOUR | Hour duration. |
+| MONTH | Month duration. |

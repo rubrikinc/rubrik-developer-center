@@ -6,7 +6,7 @@ AWS Cloud Account lists the Amazon Virtual Private Cloud (VPC) response.
 
 | Field | Type | Description |
 |-------|------|-------------|
-| result | [[CloudAccountVpc](CloudAccountVpc.md)!]! | List of virtual private clouds (VPCs) and associated information. |
+| result | [[CloudAccountVpc](CloudAccountVpc.md)!]! | List of VPCs. |
 
 ## Used By
 

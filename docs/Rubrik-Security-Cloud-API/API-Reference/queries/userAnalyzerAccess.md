@@ -8,7 +8,7 @@
 |----------|------|-------------|
 | userId *(required)* | String! |  |
 | startDay *(required)* | String! | Start time, in string format (YYYY-MM-DD). |
-| timezone *(required)* | String! |  |
+| timezone *(required)* | String! | The timezone in which to display timestamps. |
 | limit *(required)* | Int! | Maximum number of entries in the response. |
 
 ## Returns

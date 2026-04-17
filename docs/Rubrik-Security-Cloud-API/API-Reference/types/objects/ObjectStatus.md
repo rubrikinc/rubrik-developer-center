@@ -6,9 +6,9 @@
 
 | Field | Type | Description |
 |-------|------|-------------|
-| id | String! |  |
-| latestSnapshotResult | [SnapshotResult](SnapshotResult.md) |  |
-| policyStatuses | [[PolicyStatus](PolicyStatus.md)!]! |  |
+| id | String! | Snappable FID. |
+| latestSnapshotResult | [SnapshotResult](SnapshotResult.md) | Populated with the latest snapshot information, if it exists. |
+| policyStatuses | [[PolicyStatus](PolicyStatus.md)!]! | Policy statuses for the object. |
 
 ## Used By
 

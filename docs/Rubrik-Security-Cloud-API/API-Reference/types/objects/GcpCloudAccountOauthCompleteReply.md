@@ -6,7 +6,7 @@ GCP Cloud Account OAuth Complete Response.
 
 | Field | Type | Description |
 |-------|------|-------------|
-| userInfo | [GcpOauthUserInfo](GcpOauthUserInfo.md) | GCP cloud account user information. |
+| userInfo | [GcpOauthUserInfo](GcpOauthUserInfo.md) | User information. |
 
 ## Used By
 

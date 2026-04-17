@@ -6,6 +6,6 @@
 
 | Value | Description |
 |-------|-------------|
-| COMPLETE |  |
-| FAIL |  |
-| IN_PROGRESS |  |
+| COMPLETE | Crawl is complete. |
+| FAIL | Crawl failed. |
+| IN_PROGRESS | Crawl is in progress. |

@@ -51,6 +51,7 @@
 | mongoSourceAppMetadata | [MongoSourceAppMetadata](MongoSourceAppMetadata.md) | Mongo source specific metadata for the snapshot. |
 | mssqlAppMetadata | [MssqlAppMetadata](MssqlAppMetadata.md) | Mssql specific metadata for the snapshot. |
 | mysqldbInstanceAppMetadata | [KosmosWorkloadAppMetadata](KosmosWorkloadAppMetadata.md) | MySQL instance-specific metadata. Null if the snapshot is not of a MySQL Instance. |
+| mysqldbInstanceAppMetadataV2 | [MysqldbInstanceAppMetadata](MysqldbInstanceAppMetadata.md) | MySQL instance-specific extended metadata with version and database info. Null if the snapshot is not of a MySQL Instance. |
 | parentSnapshotId | String | The ID of the parent snapshot. |
 | pendingSla | [SlaDomain](../interfaces/SlaDomain.md) | Non-null when a user has assigned a SLA to this snapshot, and the SLA assignment is in the process of being synced over to CDM. |
 | pendingSnapshotDeletion | [PendingSnapshotDeletion](PendingSnapshotDeletion.md) | Mapping from snapshot to delete pending action status. |
@@ -105,4 +106,4 @@
 - [GetAnomalyDetailsReply.snapshot](GetAnomalyDetailsReply.md)
 - [HierarchySnappableFileVersion.snapshot](HierarchySnappableFileVersion.md)
 - [HyperVLiveMount.sourceSnapshot](HyperVLiveMount.md)
-- *…and 109 more*
+- *…and 114 more*

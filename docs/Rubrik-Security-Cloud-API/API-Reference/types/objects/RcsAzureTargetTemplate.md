@@ -9,8 +9,10 @@ Specific info for Rcs Azure Target Template.
 | Field | Type | Description |
 |-------|------|-------------|
 | cloudNativeLocTemplateType | [CloudNativeLocTemplateType](../enums/CloudNativeLocTemplateType.md)! | Cloud native template type. |
+| encryptionType | [TargetEncryptionTypeEnum](../enums/TargetEncryptionTypeEnum.md)! | Encryption type for the RCS Azure location template. |
 | immutabilitySettings | [RcsImmutabilitySettings](RcsImmutabilitySettings.md)! | Immutability setting of the template, that defines thenumber of days for which stored data will be immutable. |
 | redundancy | [RcvRedundancy](../enums/RcvRedundancy.md)! | Redundancy for the RCV Azure location. |
 | region | [RcsRegionEnumType](../enums/RcsRegionEnumType.md)! | Region of RCV Azure location template. |
 | targetType | [TargetType](../enums/TargetType.md)! | The type of this Target. |
+| templateLocationId | [UUID](../scalars/UUID.md)! | The internal ID of the template archival location. |
 | tier | [RcsTierEnumType](../enums/RcsTierEnumType.md)! | Access tier for the RCV Azure location. |

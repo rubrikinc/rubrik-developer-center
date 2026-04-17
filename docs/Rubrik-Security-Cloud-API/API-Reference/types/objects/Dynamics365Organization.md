@@ -19,6 +19,7 @@ Dynamics 365 organization.
 | effectiveSlaDomain | [SlaDomain](../interfaces/SlaDomain.md)! | Effective SLA Domain of the hierarchy object. |
 | effectiveSlaSourceObject | [PathNode](PathNode.md) | Path node of the effective SLA Domain source. |
 | environmentType | [SaasEnvironmentType](../enums/SaasEnvironmentType.md)! |  |
+| exocomputeId | [UUID](../scalars/UUID.md) | Denotes the ID of the exocompute cluster associated with the org. |
 | id | [UUID](../scalars/UUID.md)! | ID of the hierarchy object. |
 | lastRefreshTime | [DateTime](../scalars/DateTime.md) | The time at which the Dynamics 365 organization was last synced to Rubrik. |
 | logicalPath | [[PathNode](PathNode.md)!]! | Sequential list of the logical ancestors of this object. |

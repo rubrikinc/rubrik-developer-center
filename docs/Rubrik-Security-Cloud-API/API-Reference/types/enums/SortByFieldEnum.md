@@ -9,8 +9,8 @@
 | ANALYZER_NAME |  |
 | ANOMALY_PROBABILITY | Probability of anomaly. |
 | AVAILABLE_SPACE_PERCENT | Percentage of available storage space in the cluster. |
-| ActivityStatus |  |
-| ActivityType |  |
+| ActivityStatus | Sort by activity status. |
+| ActivityType | Sort by activity type. |
 | AppBlueprintName |  |
 | ArchivalComplianceStatus |  |
 | ArchivalSnapshotLag |  |
@@ -40,13 +40,13 @@
 | IS_ENCRYPTED | Specifies whether the result is encrypted. |
 | LOCATION |  |
 | LastSnapshot |  |
-| LastUpdated |  |
+| LastUpdated | Sort by last updated time. |
 | LatestArchivalSnapshot |  |
 | LatestReplicationSnapshot |  |
 | LocalOnDemandSnapshots |  |
 | LocalSLASnapshots |  |
 | LocalSnapshots |  |
-| Location |  |
+| Location | Sort by location. |
 | LogicalBytes |  |
 | LogicalDataReduction |  |
 | MANAGED_ID | Managed ID of the object. |
@@ -59,8 +59,8 @@
 | OBJECT_NAME |  |
 | OBJECT_STATE |  |
 | OBJECT_TYPE | Type of the object. |
-| ObjectName |  |
-| ObjectType |  |
+| ObjectName | Sort by object name. |
+| ObjectType | Sort by object type. |
 | PATH |  |
 | POLICY_NAME |  |
 | POLICY_STATUS |  |
@@ -81,13 +81,13 @@
 | SNAPSHOT_ID | Id of the snapshot. |
 | SNAPSHOT_TIME |  |
 | SUSPICIOUS_FILES_COUNT | Count of suspicious files. |
-| Severity |  |
+| Severity | Sort by severity. |
 | SlaDomainName |  |
 | SourceSiteName |  |
-| StartTime |  |
+| StartTime | Sort by start time. |
 | TOTAL_HITS |  |
 | TargetSiteName |  |
-| Time |  |
+| Time | Sort user audits by time. |
 | TotalSnapshots |  |
 | TransferredBytes |  |
 | WORKLOAD_NAME | Name of the object. |

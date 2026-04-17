@@ -49,4 +49,4 @@ Details of an RSC tag.
 - [CassandraColumnFamily.allTags](CassandraColumnFamily.md)
 - [CassandraKeyspace.allTags](CassandraKeyspace.md)
 - CassandraKeyspaceDescendantType.allTags
-- *…and 248 more*
+- *…and 251 more*

@@ -6,7 +6,7 @@ AWS Cloud Account lists the subnet response.
 
 | Field | Type | Description |
 |-------|------|-------------|
-| result | [[CloudAccountSubnet](CloudAccountSubnet.md)!]! | List of subnets and associated information. |
+| result | [[CloudAccountSubnet](CloudAccountSubnet.md)!]! | List of subnets. |
 
 ## Used By
 

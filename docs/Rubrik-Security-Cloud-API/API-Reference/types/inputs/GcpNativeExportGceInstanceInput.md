@@ -11,15 +11,15 @@ Input required to export a GCP GCE instance snapshot.
 | kmsCryptoKey | [KmsCryptoKey](KmsCryptoKey.md) | Customer managed key to encrypt exported instance. This is only applicable when encryption type is CustomerManagedKey. |
 | kmsCryptoKeyResourceId | String | Customer managed key to encrypt exported instance. This is only applicable when encryption type is CustomerManagedKeyResourceId. |
 | serviceAccountId | String | Optional service account email to attach to the exported instance. If not provided or empty, no service account will be attached. |
-| sharedVpcHostProjectNativeId | String | Native ID of the shared VPC host project for the current service project. |
+| sharedVpcHostProjectNativeId | String | Native ID of the shared VPC host project for the current service project. If not provided, the exported instance will have its network in the target project. If provided, targetSubnetName must be provided. |
 | shouldAddRubrikLabels | Boolean! | Specifies whether to allow Rubrik labels on the exported disk or not. |
 | shouldCopyLabels | Boolean! | Specfies whether the labels will be copied to the exported disk from the source disk that were there at the time of taking the snapshot or not. |
 | shouldPowerOff | Boolean! | Specifies whether the exported instance will be created in a powered-off state. |
 | snapshotId | [UUID](../scalars/UUID.md)! | Snapshot Rubrik ID. |
 | snapshotType | [GcpSnapshotType](../enums/GcpSnapshotType.md) | The type of the snapshot to recover from. |
-| targetGcpProjectRubrikId | [UUID](../scalars/UUID.md) | The target project cloud account ID for cross project export. |
+| targetGcpProjectRubrikId | [UUID](../scalars/UUID.md) | The target project cloud account ID for cross project export. If provided, targetSubnetName must be provided. |
 | targetInstanceName | String! | The name of the exported instance. |
-| targetMachineType | String! | The machine type of the exported instance. |
-| targetNetworkTags | [String!] | The network tags of the exported instance. |
-| targetSubnetName | String! | The subnet name of the exported instance. |
+| targetMachineType | String | The machine type of the exported instance. If not provided, the machine type of the source instance at the time of taking the snapshot will be used. |
+| targetNetworkTags | [String!] | The network tags of the exported instance. If not provided, the network tags of the source instance at the time of taking the snapshot will be used. |
+| targetSubnetName | String | The subnet name of the exported instance. If not provided, the subnet of the source instance at the time of taking the snapshot will be used. |
 | targetZone | String! | The zone of the exported disk. |

@@ -8,6 +8,7 @@ Information about a workload in a failover group.
 |-------|------|-------------|
 | counterpartIds | [[UUID](../scalars/UUID.md)!]! | List of counterpart workload IDs on other clusters. |
 | hostIds | [[UUID](../scalars/UUID.md)!]! | List of host FIDs associated with this workload. |
+| hostNames | [String!]! | List of host names for the hosts associated with this workload. |
 | name | String! | Name of the workload. |
 | primaryClusterUuid | [UUID](../scalars/UUID.md)! | Primary cluster UUID. |
 | status | [FailoverGroupObjectStatus](../enums/FailoverGroupObjectStatus.md)! | Status of the workload. |

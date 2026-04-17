@@ -1,13 +1,13 @@
 # AnalyzerAccessUsage
 
-*No description available.*
+Analyzer access usage data.
 
 ## Fields
 
 | Field | Type | Description |
 |-------|------|-------------|
-| analyzer | [Analyzer](Analyzer.md) |  |
-| count | Int! |  |
+| analyzer | [Analyzer](Analyzer.md) | Analyzer details. |
+| count | Int! | Sum of top files may not be equal to count. |
 | countDelta | Int! |  |
 | topFiles | [[FileAccessResult](FileAccessResult.md)!]! |  |
 

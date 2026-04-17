@@ -21,6 +21,7 @@ Cloud Direct NAS export object.
       cloudDirectNasExport(fid: $fid) {
         authorizedOperations
         cloudDirectId
+        cloudDirectPendingObjectPauseAssignment
         exportFid
         exportPath
         exportType
@@ -57,10 +58,10 @@ Cloud Direct NAS export object.
             "ACCESS_CDM_CLUSTER"
           ],
           "cloudDirectId": "example-string",
+          "cloudDirectPendingObjectPauseAssignment": "NO_PENDING_PAUSE_ASSIGNMENT",
           "exportFid": "00000000-0000-0000-0000-000000000000",
           "exportPath": "example-string",
           "exportType": "example-string",
-          "id": "00000000-0000-0000-0000-000000000000",
           "allOrgs": [
             {
               "allUrls": [

@@ -43,4 +43,4 @@ SLA Domain name and ID.
 - CassandraSourceDescendantType.rscNativeObjectPendingSla
 - CassandraSourcePhysicalChildType.rscNativeObjectPendingSla
 - [CloudNativeTagRule.rscNativeObjectPendingSla](CloudNativeTagRule.md)
-- *…and 39 more*
+- *…and 40 more*

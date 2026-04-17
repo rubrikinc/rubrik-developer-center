@@ -13,6 +13,7 @@ Lambda configuration details of the Rubrik cluster.
 | enableFmdUploadForAllResources | Boolean! | Whether fmd upload is enabled for all resources. |
 | enableThreatMonitoringFullScan | Boolean! | Enable or disable full scans for threat monitoring. |
 | isThreatMonitoringEnabled | Boolean! | Enable or disable threat monitoring. |
+| isThreatMonitoringEnabledForActiveDirectory | Boolean! | Whether threat monitoring is enabled for Active Directory workloads. |
 | maxSnapshotsToUploadAutomatically | Int! | The maximum number of snapshots to upload automatically. |
 | orionYaraRemoteProcessingEnabled | Boolean! | Enable or disable yara remote processing (sandboxing). |
 | threatMonitoringExtensions | [String!]! | The extension allowlist used for threat monitoring scans. |

@@ -84,6 +84,10 @@ Fields for sorting hierarchy objects.
 | FILESET_TEMPLATE_DOES_NOT_EXCLUDE | Sort fileset templates based on the not excluded files. |
 | FILESET_TEMPLATE_EXCLUDES | Sort fileset templates based on the excluded files. |
 | FILESET_TEMPLATE_INCLUDES | Sort fileset templates by included files. |
+| GCP_ALLOY_DB_CLUSTER_NATIVE_ID | Sort AlloyDB clusters by native ID. |
+| GCP_ALLOY_DB_CLUSTER_PROJECT_NAME | Sort AlloyDB clusters by project name. |
+| GCP_BIG_QUERY_DATASET_NATIVE_ID | Sort BigQuery datasets by native ID. |
+| GCP_BIG_QUERY_DATASET_PROJECT_NAME | Sort BigQuery datasets by project name. |
 | GCP_CLOUD_SQL_INSTANCE_ENGINE_TYPE | Sort CloudSQL instances by database engine type (MYSQL, POSTGRES, SQLSERVER). |
 | GCP_CLOUD_SQL_INSTANCE_NATIVE_ID | Sort CloudSQL instances by native ID (instance name). |
 | GCP_CLOUD_SQL_INSTANCE_PROJECT_NAME | Sort CloudSQL instances by project name. |

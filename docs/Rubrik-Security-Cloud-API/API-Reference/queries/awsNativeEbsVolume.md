@@ -38,6 +38,7 @@ Refers to the Amazon Elastic Block Store (EBS) Volume represented by a specific 
         numWorkloadDescendants
         objectType
         onDemandSnapshotCount
+        outpostArn
         region
         rscPendingObjectPauseAssignment
         sizeInGiBs

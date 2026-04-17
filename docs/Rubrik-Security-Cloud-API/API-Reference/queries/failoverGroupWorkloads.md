@@ -30,6 +30,7 @@ Retrieves workloads within a failover group for high-availability management.
         nodes {
           counterpartIds
           hostIds
+          hostNames
           name
           primaryClusterUuid
           status
@@ -68,10 +69,12 @@ Retrieves workloads within a failover group for high-availability management.
                 "hostIds": [
                   "00000000-0000-0000-0000-000000000000"
                 ],
+                "hostNames": [
+                  "example-string"
+                ],
                 "name": "example-string",
                 "primaryClusterUuid": "00000000-0000-0000-0000-000000000000",
-                "status": "FAILOVER_GROUP_OBJECT_STATUS_DISCONNECTED",
-                "statusMessage": "example-string"
+                "status": "FAILOVER_GROUP_OBJECT_STATUS_DISCONNECTED"
               }
             ]
           ],

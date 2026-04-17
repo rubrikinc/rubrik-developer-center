@@ -1,6 +1,6 @@
 # takeOnDemandSnapshot
 
-Triggers on-demand snapshot for the given workloads.
+Triggers an on-demand snapshot for cloud-native workloads.
 
 ## Arguments
 

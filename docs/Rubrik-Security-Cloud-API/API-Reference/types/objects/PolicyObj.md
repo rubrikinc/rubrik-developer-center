@@ -49,7 +49,7 @@
 
 | Field | Argument | Type | Description |
 |-------|----------|------|-------------|
-| allAnalyzerMappings | stdPath *(required)* | String! |  |
+| allAnalyzerMappings | stdPath *(required)* | String! | The standard path of the directory to browse. |
 | allAnalyzerMappings | fileMode | [DataGovFileMode](../enums/DataGovFileMode.md) | FileMode represents the type of object at the path (File/Directory/Symlink). |
 | fileResultConnection | first | Int | Returns the first n elements from the list. |
 | fileResultConnection | after | String | Returns the elements in the list that occur after the specified cursor. |
@@ -57,16 +57,16 @@
 | fileResultConnection | before | String | Returns the elements in the list that occur before the specified cursor. |
 | fileResultConnection | filter | [ListFileResultFiltersInput](../inputs/ListFileResultFiltersInput.md) |  |
 | fileResultConnection | sort | [FileResultSortInput](../inputs/FileResultSortInput.md) | Sorts to apply when listing file results. |
-| fileResultConnection | timezone *(required)* | String! |  |
+| fileResultConnection | timezone *(required)* | String! | The timezone in which to display timestamps. |
 | folderChildConnection | first | Int | Returns the first n elements from the list. |
 | folderChildConnection | after | String | Returns the elements in the list that occur after the specified cursor. |
 | folderChildConnection | last | Int | Returns the last n elements from the list. |
 | folderChildConnection | before | String | Returns the elements in the list that occur before the specified cursor. |
-| folderChildConnection | filter | [BrowseDirectoryFiltersInput](../inputs/BrowseDirectoryFiltersInput.md) |  |
+| folderChildConnection | filter | [BrowseDirectoryFiltersInput](../inputs/BrowseDirectoryFiltersInput.md) | Filters for browsing directory contents. |
 | folderChildConnection | sort | [FileResultSortInput](../inputs/FileResultSortInput.md) | Sorts to apply when listing file results. |
-| folderChildConnection | stdPath *(required)* | String! |  |
-| folderChildConnection | timezone *(required)* | String! |  |
-| whitelistedAnalyzerList | stdPath *(required)* | String! |  |
+| folderChildConnection | stdPath *(required)* | String! | The standard path of the directory to browse. |
+| folderChildConnection | timezone *(required)* | String! | The timezone in which to display timestamps. |
+| whitelistedAnalyzerList | stdPath *(required)* | String! | The standard path of the directory to browse. |
 
 ## Used By
 

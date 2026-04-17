@@ -1,6 +1,6 @@
 # addAwsAuthenticationServerBasedCloudAccount
 
-Validates and adds an authentication server-based AWS cloud account. When validation succeeds, the AWS cloud account is added and the features specified in the request are enabled. When validation fails, an error is not returned, but the cause of the failure is specified in the \"message\" field of the response object.
+Validates and adds an authentication server-based AWS cloud account. When validation succeeds, the AWS cloud account is added and the features specified in the request are enabled. When validation fails, an error is not returned, but the cause of the failure is specified in the "message" field of the response object.
 
 ## Arguments
 

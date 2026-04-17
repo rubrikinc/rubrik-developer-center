@@ -6,7 +6,7 @@ All Features enabled for a Rubrik cloud account.
 
 | Field | Type | Description |
 |-------|------|-------------|
-| features | [[CloudAccountFeature](../enums/CloudAccountFeature.md)!]! | List of all features enabled for the Rubrik cloud account. |
+| features | [[CloudAccountFeature](../enums/CloudAccountFeature.md)!]! | List of enabled features. |
 
 ## Used By
 

@@ -29,7 +29,7 @@ Cloud native tag rules.
 
     ```json
     {
-      "objectType": "AWS_DYNAMODB_TABLE"
+      "objectType": "AWS_CONFIG"
     }
     ```
 

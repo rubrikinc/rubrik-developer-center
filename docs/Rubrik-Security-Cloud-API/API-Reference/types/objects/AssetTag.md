@@ -14,3 +14,4 @@ Object tag stores key value pair associated with workloads.
 **Referenced by**
 
 - [AssetMetadata.objectTags](AssetMetadata.md)
+- [CommonAssetMetadata.objectTags](CommonAssetMetadata.md)

@@ -52,6 +52,7 @@ Paginated list of all AWS EC2 Instances by name or substring of name.
           objectType
           onDemandSnapshotCount
           osType
+          outpostArn
           privateIp
           publicIp
           region

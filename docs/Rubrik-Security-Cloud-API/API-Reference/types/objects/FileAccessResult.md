@@ -9,7 +9,7 @@
 | accessType | [ActivityAccessType](../enums/ActivityAccessType.md)! |  |
 | directory | String! |  |
 | filename | String! |  |
-| nativePath | String! |  |
+| nativePath | String! | File path formatted for the OS or share type. |
 | numAccesses | Int! |  |
 
 ## Used By

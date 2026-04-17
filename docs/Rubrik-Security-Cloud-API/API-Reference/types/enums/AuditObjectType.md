@@ -19,6 +19,7 @@ Represents all the object types for which we expect to see audits.
 | AWS_ACCOUNT | AWS account object. |
 | AWS_EVENT_TYPE | AWS object. |
 | AWS_NATIVE_ACCOUNT | AWS native account object. |
+| AWS_NATIVE_CONFIG | AWS configuration. |
 | AWS_NATIVE_DYNAMODB_TABLE | AWS native dynamoDB table. |
 | AWS_NATIVE_EBS_VOLUME | AWS native EBS volume object. |
 | AWS_NATIVE_EC2_INSTANCE | AWS native EC2 instance object. |
@@ -65,6 +66,15 @@ Represents all the object types for which we expect to see audits.
 | EXOCOMPUTE | Exocompute object. |
 | FAILOVER_CLUSTER_APP | Failover cluster app. |
 | FEDERATED_ACCESS | Federated Access object. |
+| FUSION_COMPUTE_CLUSTER | FusionCompute cluster. |
+| FUSION_COMPUTE_DATASTORE | FusionCompute datastore. |
+| FUSION_COMPUTE_HOST | FusionCompute host. |
+| FUSION_COMPUTE_NETWORK | FusionCompute network. |
+| FUSION_COMPUTE_SITE | FusionCompute site. |
+| FUSION_COMPUTE_VIRTUAL_MACHINE | FusionCompute virtual machine. |
+| FUSION_COMPUTE_VRM | FusionCompute VRM (Virtual Resource Manager). |
+| GCP_ALLOY_DB_CLUSTER | GCP AlloyDB Cluster. |
+| GCP_BIG_QUERY_DATASET | GCP BigQuery Dataset. |
 | GCP_CLOUD_SQL_INSTANCE | GCP Cloud SQL Instance. |
 | GCP_NATIVE_DISK | GCP native disk. |
 | GCP_NATIVE_GCE_INSTANCE | GCP native GCE instance. |
@@ -137,6 +147,7 @@ Represents all the object types for which we expect to see audits.
 | OLVM_MANAGER | OLVM Manager. |
 | OLVM_VIRTUAL_MACHINE | OLVM Virtual Machine. |
 | OPENSTACK_ENVIRONMENT | Openstack Environment. |
+| OPENSTACK_IMAGE | Openstack Image. |
 | OPENSTACK_VIRTUAL_MACHINE | Openstack Virtual Machine. |
 | ORACLE_DB | Oracle database object. |
 | ORACLE_HOST | Oracle host object. |
@@ -147,6 +158,9 @@ Represents all the object types for which we expect to see audits.
 | PROXMOX_ENVIRONMENT | Proxmox environment. |
 | PROXMOX_VIRTUAL_MACHINE | Proxmox virtual machine. |
 | PUBLIC_CLOUD_MACHINE_INSTANCE | Public cloud machine instance. |
+| PURE_STORAGE_ARRAY | Pure Storage array. |
+| PURE_STORAGE_PROTECTION_GROUP | Pure Storage protection group. |
+| PURE_STORAGE_VOLUME | Pure Storage volume. |
 | REPLICATION_PAIR | Rubrik cluster replication pair. |
 | RSC_CHILD_ACCOUNT | RSC Child Account (Dedicated Tenant). |
 | RSC_TAG | Rsc Tag object. |

@@ -6,7 +6,7 @@ Rubrik SaaS authorized operations.
 
 | Value | Description |
 |-------|-------------|
-| MANAGE_DATA_SOURCE |  |
-| MANAGE_PROTECTION |  |
-| REFRESH_DATA_SOURCE |  |
-| VIEW_INVENTORY |  |
+| MANAGE_DATA_SOURCE | Manage data source operation. |
+| MANAGE_PROTECTION | Manage protection operation. |
+| REFRESH_DATA_SOURCE | Refresh data source operation. |
+| VIEW_INVENTORY | View inventory operation. |

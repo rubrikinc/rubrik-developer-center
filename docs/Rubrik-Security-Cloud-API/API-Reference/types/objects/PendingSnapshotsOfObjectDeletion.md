@@ -43,4 +43,4 @@
 - [HostShare.pendingObjectDeletionStatus](HostShare.md)
 - HostShareDescendantType.pendingObjectDeletionStatus
 - HostSharePhysicalChildType.pendingObjectDeletionStatus
-- *…and 157 more*
+- *…and 159 more*

@@ -33,7 +33,7 @@ Check if tag rule name is unique or not
     ```json
     {
       "ruleName": "example-string",
-      "objectType": "AWS_DYNAMODB_TABLE"
+      "objectType": "AWS_CONFIG"
     }
     ```
 

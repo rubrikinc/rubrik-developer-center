@@ -14,3 +14,4 @@ RubrikSlaInfo stores the SLA Domain information of the objects protected by Rubr
 **Referenced by**
 
 - [AssetMetadata.rubrikSlaInfo](AssetMetadata.md)
+- [CommonAssetMetadata.rubrikSlaInfo](CommonAssetMetadata.md)

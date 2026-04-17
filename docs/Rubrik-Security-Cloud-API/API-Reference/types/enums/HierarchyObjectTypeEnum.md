@@ -8,7 +8,6 @@ Hierarchy object type enum covering all CDM and RSC hierarchy objects.
 |-------|-------------|
 | ACTIVE_DIRECTORY_DOMAIN | Active Directory domain. |
 | ACTIVE_DIRECTORY_DOMAIN_CONTROLLER | Active Directory domain controller. |
-| ACTIVE_DIRECTORY_FOREST | Active Directory forest. |
 | ATLASSIAN_SITE | Atlassian site. |
 | AWS_NATIVE_CONFIG | AWS Native Config. |
 | AWS_NATIVE_DYNAMODB_TABLE | AWS native DynamoDB table. |
@@ -17,9 +16,11 @@ Hierarchy object type enum covering all CDM and RSC hierarchy objects.
 | AZURE_DEVOPS_ORGANIZATION | Azure DevOps Organization. |
 | AZURE_DEVOPS_PROJECT | Azure DevOps Project. |
 | AZURE_DEVOPS_REPOSITORY | Azure DevOps Repository. |
+| AZURE_POSTGRES_FLEXIBLE_SERVER | Azure Postgres Flexible Server. |
 | AZURE_SQL_DATABASE_DB | AZURE SQL DATABASE DB. |
 | AZURE_SQL_MANAGED_INSTANCE_DB | AZURE SQL MANAGED INSTANCE DB. |
 | AZURE_STORAGE_ACCOUNT | Azure Storage Account. |
+| ActiveDirectoryForest | Active Directory forest. |
 | AllSubHierarchyType | All Sub Hierarchy Type. |
 | AppBlueprint | App Blueprint. |
 | AwsNativeAccount | Aws Native Account. |
@@ -56,9 +57,18 @@ Hierarchy object type enum covering all CDM and RSC hierarchy objects.
 | Ec2Instance | Ec2instance. |
 | ExchangeDatabase | Exchange Database. |
 | FAILOVER_CLUSTER_APP | Failover Cluster App. |
+| FUSION_COMPUTE_CLUSTER | FusionCompute cluster. |
+| FUSION_COMPUTE_DATASTORE | FusionCompute datastore. |
+| FUSION_COMPUTE_HOST | FusionCompute host. |
+| FUSION_COMPUTE_NETWORK | FusionCompute network. |
+| FUSION_COMPUTE_SITE | FusionCompute site. |
+| FUSION_COMPUTE_VIRTUAL_MACHINE | FusionCompute virtual machine. |
+| FUSION_COMPUTE_VRM | FusionCompute VRM (Virtual Resource Manager). |
 | FeldsparSite | Feldspar Site. |
 | Fileset | Fileset. |
 | FilesetTemplate | Fileset Template. |
+| GCP_ALLOY_DB_CLUSTER | GCP AlloyDB Cluster. |
+| GCP_BIGQUERY_DATASET | GCP BigQuery Dataset. |
 | GCP_CLOUD_SQL_INSTANCE | GCP Cloud SQL Instance. |
 | GITHUB_ORGANIZATION | GitHub Organization. |
 | GITHUB_REPOSITORY | GitHub Repository. |
@@ -144,6 +154,7 @@ Hierarchy object type enum covering all CDM and RSC hierarchy objects.
 | OPENSTACK_DOMAIN | OpenStack Domain. |
 | OPENSTACK_ENVIRONMENT | OpenStack Environment. |
 | OPENSTACK_HOST | OpenStack Host. |
+| OPENSTACK_IMAGE | OpenStack Image. |
 | OPENSTACK_PROJECT | OpenStack Project. |
 | OPENSTACK_REGION | OpenStack Region. |
 | OPENSTACK_VIRTUAL_MACHINE | OpenStack Virtual Machine. |
@@ -159,6 +170,9 @@ Hierarchy object type enum covering all CDM and RSC hierarchy objects.
 | PROXMOX_ENVIRONMENT | Proxmox Environment. |
 | PROXMOX_NODE | Proxmox Node. |
 | PROXMOX_VIRTUAL_MACHINE | Proxmox Virtual Machine. |
+| PURE_STORAGE_ARRAY | Pure Storage array. |
+| PURE_STORAGE_PROTECTION_GROUP | Pure Storage protection group. |
+| PURE_STORAGE_VOLUME | Pure Storage volume. |
 | PhysicalHost | Physical Host. |
 | RubrikEbsVolume | Rubrik Ebs Volume. |
 | RubrikEc2Instance | Rubrik Ec2instance. |

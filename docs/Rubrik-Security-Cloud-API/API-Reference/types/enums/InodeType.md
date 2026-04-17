@@ -6,6 +6,6 @@
 
 | Value | Description |
 |-------|-------------|
-| DIRECTORY |  |
-| FILE |  |
-| UNKNOWN_INODE |  |
+| DIRECTORY | Directory inode. |
+| FILE | File inode. |
+| UNKNOWN_INODE | Unknown inode type. |

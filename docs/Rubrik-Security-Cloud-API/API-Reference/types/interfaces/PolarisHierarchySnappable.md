@@ -90,6 +90,7 @@ Polaris protectable object.
 - [AzureSqlDatabaseDb](../objects/AzureSqlDatabaseDb.md)
 - [AzureSqlManagedInstanceDatabase](../objects/AzureSqlManagedInstanceDatabase.md)
 - [AzureStorageAccount](../objects/AzureStorageAccount.md)
+- [GcpAlloyDbCluster](../objects/GcpAlloyDbCluster.md)
 - [GcpCloudSqlInstance](../objects/GcpCloudSqlInstance.md)
 - [GcpNativeDisk](../objects/GcpNativeDisk.md)
 - [GcpNativeGceInstance](../objects/GcpNativeGceInstance.md)

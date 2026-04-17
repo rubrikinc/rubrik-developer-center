@@ -94,6 +94,8 @@ A Rubrik CDM Managed Hierarchy object.
 - [OracleHost](../objects/OracleHost.md)
 - [OracleRac](../objects/OracleRac.md)
 - [PhysicalHost](../objects/PhysicalHost.md)
+- [PostgreSQLDatabase](../objects/PostgreSQLDatabase.md)
+- [PostgreSQLDbCluster](../objects/PostgreSQLDbCluster.md)
 - [SapHanaDatabase](../objects/SapHanaDatabase.md)
 - [SapHanaSystem](../objects/SapHanaSystem.md)
 - [ShareFileset](../objects/ShareFileset.md)

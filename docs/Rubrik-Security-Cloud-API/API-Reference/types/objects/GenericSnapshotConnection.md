@@ -31,6 +31,7 @@ Paginated list of GenericSnapshot objects with additional pagination information
 - [AzureSqlDatabaseDb.workloadSnapshotConnection](AzureSqlDatabaseDb.md)
 - [AzureSqlManagedInstanceDatabase.workloadSnapshotConnection](AzureSqlManagedInstanceDatabase.md)
 - [AzureStorageAccount.workloadSnapshotConnection](AzureStorageAccount.md)
+- [GcpAlloyDbCluster.workloadSnapshotConnection](GcpAlloyDbCluster.md)
 - [GcpCloudSqlInstance.workloadSnapshotConnection](GcpCloudSqlInstance.md)
 - [GcpNativeDisk.workloadSnapshotConnection](GcpNativeDisk.md)
 - [GcpNativeGceInstance.workloadSnapshotConnection](GcpNativeGceInstance.md)
@@ -49,5 +50,4 @@ Paginated list of GenericSnapshot objects with additional pagination information
 - [O365Group.workloadSnapshotConnection](O365Group.md)
 - [O365Mailbox.workloadSnapshotConnection](O365Mailbox.md)
 - [O365Onedrive.workloadSnapshotConnection](O365Onedrive.md)
-- [O365Org.workloadSnapshotConnection](O365Org.md)
-- *…and 6 more*
+- *…and 7 more*
