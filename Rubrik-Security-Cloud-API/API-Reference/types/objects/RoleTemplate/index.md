@@ -1,15 +1,15 @@
 # RoleTemplate
 
-*No description available.*
+Role template.
 
 ## Fields
 
 | Field                         | Type                                                                                                                       | Description                                                    |
 | ----------------------------- | -------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------- |
-| description                   | String!                                                                                                                    |                                                                |
+| description                   | String!                                                                                                                    | Role template description.                                     |
 | explicitlyAssignedPermissions | \[[Permission](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/Permission/index.md)!\]! | Role permissions that are explicitly assigned to the template. |
-| id                            | String!                                                                                                                    |                                                                |
-| name                          | String!                                                                                                                    |                                                                |
+| id                            | String!                                                                                                                    | Role template ID.                                              |
+| name                          | String!                                                                                                                    | Role template name.                                            |
 | permissions                   | \[[Permission](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/Permission/index.md)!\]! |                                                                |
 
 ## Used By

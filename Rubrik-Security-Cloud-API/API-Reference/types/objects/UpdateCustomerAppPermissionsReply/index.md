@@ -1,12 +1,12 @@
 # UpdateCustomerAppPermissionsReply
 
-Response of the operation to update the Azure app with specified permissions in an idempotent manner.
+Reply for updating Azure Rubrik customer app permissions.
 
 ## Fields
 
-| Field   | Type     | Description                                                              |
-| ------- | -------- | ------------------------------------------------------------------------ |
-| success | Boolean! | Specifies whether the customer app permissions was updated successfully. |
+| Field   | Type     | Description                        |
+| ------- | -------- | ---------------------------------- |
+| success | Boolean! | Whether the update was successful. |
 
 ## Used By
 

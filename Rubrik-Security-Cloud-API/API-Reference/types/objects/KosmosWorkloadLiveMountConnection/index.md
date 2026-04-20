@@ -16,8 +16,10 @@ Paginated list of KosmosWorkloadLiveMount objects. Each page of the results incl
 **Queries**
 
 - [query: mysqlInstanceLiveMounts](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/mysqlInstanceLiveMounts/index.md)
+- [query: postgresDbClusterLiveMounts](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/postgresDbClusterLiveMounts/index.md)
 
 **Referenced by**
 
 - KosmosSnappableHierarchyObjectType.liveMounts
 - [MysqldbInstance.liveMounts](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/MysqldbInstance/index.md)
+- [PostgreSQLDbCluster.liveMounts](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/PostgreSQLDbCluster/index.md)

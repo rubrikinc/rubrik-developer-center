@@ -51,6 +51,13 @@ User audit object type.
 | EXCHANGE_SERVER                    | Exchange server type.                         |
 | EXOCOMPUTE                         | Exocompute.                                   |
 | Ec2Instance                        | EC2 instance type.                            |
+| FUSION_COMPUTE_CLUSTER             | FusionCompute cluster.                        |
+| FUSION_COMPUTE_DATASTORE           | FusionCompute datastore.                      |
+| FUSION_COMPUTE_HOST                | FusionCompute host.                           |
+| FUSION_COMPUTE_NETWORK             | FusionCompute network.                        |
+| FUSION_COMPUTE_SITE                | FusionCompute site.                           |
+| FUSION_COMPUTE_VIRTUAL_MACHINE     | FusionCompute virtual machine.                |
+| FUSION_COMPUTE_VRM                 | FusionCompute VRM (Virtual Resource Manager). |
 | FailoverClusterApp                 | Failover cluster app type.                    |
 | FederatedAccess                    | Federated access type.                        |
 | GCP_CLOUD_SQL_INSTANCE             | GCP Cloud SQL Instance type.                  |

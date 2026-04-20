@@ -14,3 +14,4 @@ Object tag stores key value pair associated with workloads.
 **Referenced by**
 
 - [AssetMetadata.objectTags](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AssetMetadata/index.md)
+- [CommonAssetMetadata.objectTags](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/CommonAssetMetadata/index.md)

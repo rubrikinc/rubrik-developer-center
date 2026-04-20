@@ -21,6 +21,7 @@
 [allAccountsWithExocomputeMappings](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/allAccountsWithExocomputeMappings/index.md)\
 [allAgentDeploymentSettings](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/allAgentDeploymentSettings/index.md)\
 [allAllowedOrgAdminOperations](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/allAllowedOrgAdminOperations/index.md)\
+[allArchivalLocationForecasts](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/allArchivalLocationForecasts/index.md)\
 [allAuthorizationsForGlobalResource](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/allAuthorizationsForGlobalResource/index.md)\
 [allAuthorizationsForObject](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/allAuthorizationsForObject/index.md)\
 [allAuthorizationsForObjects](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/allAuthorizationsForObjects/index.md)\
@@ -126,6 +127,7 @@
 [allLatestFeaturePermissionsForCloudAccounts](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/allLatestFeaturePermissionsForCloudAccounts/index.md)\
 [allLatestPermissionsByPermissionsGroupGcp](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/allLatestPermissionsByPermissionsGroupGcp/index.md)\
 [allLicensedProducts](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/allLicensedProducts/index.md)\
+[allM365OrgOutboundIps](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/allM365OrgOutboundIps/index.md)\
 [allMipLabels](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/allMipLabels/index.md)\
 [allMissingClusters](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/allMissingClusters/index.md)\
 [allMssqlDatabaseRestoreFiles](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/allMssqlDatabaseRestoreFiles/index.md)\
@@ -288,6 +290,7 @@
 ## C
 
 [canIgnoreClusterRemovalPrechecks](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/canIgnoreClusterRemovalPrechecks/index.md)\
+[capSettingsData](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/capSettingsData/index.md)\
 [cassandraColumnFamilies](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/cassandraColumnFamilies/index.md)\
 [cassandraColumnFamily](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/cassandraColumnFamily/index.md)\
 [cassandraColumnFamilyRecoverableRange](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/cassandraColumnFamilyRecoverableRange/index.md)\
@@ -455,7 +458,8 @@
 [filesetSnapshot](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/filesetSnapshot/index.md)\
 [filesetSnapshotFiles](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/filesetSnapshotFiles/index.md)\
 [filesetTemplate](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/filesetTemplate/index.md)\
-[filesetTemplates](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/filesetTemplates/index.md)
+[filesetTemplates](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/filesetTemplates/index.md)\
+[fusionComputeVmRequestStatus](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/fusionComputeVmRequestStatus/index.md)
 
 ## G
 
@@ -522,6 +526,7 @@
 [hostsForFailoverGroup](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/hostsForFailoverGroup/index.md)\
 [hypervCluster](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/hypervCluster/index.md)\
 [hypervHostAsyncRequestStatus](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/hypervHostAsyncRequestStatus/index.md)\
+[hypervHostVirtualSwitches](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/hypervHostVirtualSwitches/index.md)\
 [hypervMounts](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/hypervMounts/index.md)\
 [hypervScvmm](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/hypervScvmm/index.md)\
 [hypervScvmmAsyncRequestStatus](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/hypervScvmmAsyncRequestStatus/index.md)\
@@ -598,6 +603,7 @@
 
 [lacpConfigurations](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/lacpConfigurations/index.md)\
 [lambdaSettings](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/lambdaSettings/index.md)\
+[latestGpoSettings](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/latestGpoSettings/index.md)\
 [ldapAuthorizedPrincipalConnection](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/ldapAuthorizedPrincipalConnection/index.md)\
 [ldapIntegrationConnection](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/ldapIntegrationConnection/index.md)\
 [ldapPrincipalConnection](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/ldapPrincipalConnection/index.md)\
@@ -670,6 +676,7 @@
 [mssqlLogShippingTargets](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/mssqlLogShippingTargets/index.md)\
 [mssqlRecoverableRanges](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/mssqlRecoverableRanges/index.md)\
 [mssqlTopLevelDescendants](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/mssqlTopLevelDescendants/index.md)\
+[multiHopUpgradePath](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/multiHopUpgradePath/index.md)\
 [mysqlDatabase](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/mysqlDatabase/index.md)\
 [mysqlDatabases](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/mysqlDatabases/index.md)\
 [mysqlInstance](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/mysqlInstance/index.md)\
@@ -788,6 +795,7 @@
 [passkeyConfig](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/passkeyConfig/index.md)\
 [passkeyInfo](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/passkeyInfo/index.md)\
 [passwordComplexityPolicy](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/passwordComplexityPolicy/index.md)\
+[pausedObjects](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/pausedObjects/index.md)\
 [pendingAction](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/pendingAction/index.md)\
 [phoenixRolloutProgress](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/phoenixRolloutProgress/index.md)\
 [physicalHost](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/physicalHost/index.md)\
@@ -801,7 +809,13 @@
 [policyObj](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/policyObj/index.md)\
 [policyObjectUsages](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/policyObjectUsages/index.md)\
 [policyObjs](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/policyObjs/index.md)\
+[policyViolations](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/policyViolations/index.md)\
 [possibleSnapshotLocationsForObjects](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/possibleSnapshotLocationsForObjects/index.md)\
+[postgreSQLDatabase](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/postgreSQLDatabase/index.md)\
+[postgreSQLDatabases](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/postgreSQLDatabases/index.md)\
+[postgreSQLDbCluster](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/postgreSQLDbCluster/index.md)\
+[postgreSQLDbClusters](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/postgreSQLDbClusters/index.md)\
+[postgresDbClusterLiveMounts](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/postgresDbClusterLiveMounts/index.md)\
 [prechecksStatus](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/prechecksStatus/index.md)\
 [prechecksStatusWithNextJobInfo](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/prechecksStatusWithNextJobInfo/index.md)\
 [privateContainerRegistry](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/privateContainerRegistry/index.md)\
@@ -921,6 +935,7 @@
 [ssoGroupAlreadyExists](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/ssoGroupAlreadyExists/index.md)\
 [staticRoutes](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/staticRoutes/index.md)\
 [supportBundle](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/supportBundle/index.md)\
+[supportCaseComments](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/supportCaseComments/index.md)\
 [supportUserAccesses](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/supportUserAccesses/index.md)\
 [supportedAzureAdRegions](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/supportedAzureAdRegions/index.md)\
 [syslogExportRules](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/syslogExportRules/index.md)

@@ -1,6 +1,6 @@
 # PolicyObjectFilter
 
-*No description available.*
+Filter policies based on whether they have objects attached.
 
 ## Values
 

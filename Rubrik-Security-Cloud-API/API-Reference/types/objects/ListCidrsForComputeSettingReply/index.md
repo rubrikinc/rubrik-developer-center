@@ -4,9 +4,9 @@ Response to list CIDRs for compute settings.
 
 ## Fields
 
-| Field                 | Type                                                                                                                                 | Description                         |
-| --------------------- | ------------------------------------------------------------------------------------------------------------------------------------ | ----------------------------------- |
-| clusterInterfaceCidrs | \[[ClusterInfCidrs](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/ClusterInfCidrs/index.md)!\]! | List of cluster interface CIDR map. |
+| Field                 | Type                                                                                                                                 | Description                      |
+| --------------------- | ------------------------------------------------------------------------------------------------------------------------------------ | -------------------------------- |
+| clusterInterfaceCidrs | \[[ClusterInfCidrs](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/ClusterInfCidrs/index.md)!\]! | List of cluster interface CIDRs. |
 
 ## Used By
 

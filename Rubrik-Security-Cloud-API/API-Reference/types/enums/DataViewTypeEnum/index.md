@@ -10,6 +10,7 @@ All reporting table schemas.
 | ACTIVITY_SERIES *(deprecated: Use EVENT_SERIES instead.)*                       | Specifies the Events report information.                                                                                |
 | ALLOWED_HITS                                                                    | Specifies the allowed hits report information for DSPM.                                                                 |
 | ANOMALIES                                                                       | Specifies the Readable Snapshots report information.                                                                    |
+| ANOMALY_DETECTION_COMPLIANCE                                                    | Anomaly detection compliance report information.                                                                        |
 | AUDIT_LIST                                                                      | Specifies the database schema for audits.                                                                               |
 | BACKUP_COMPLIANCE *(deprecated: Use LATEST_GLOBAL_OBJECTS instead.)*            | Backup compliance database schema.                                                                                      |
 | BACKUP_STRIKES *(deprecated: Use BACKUP_STRIKES_V2 instead.)*                   | Specifies the backup strikes information.                                                                               |

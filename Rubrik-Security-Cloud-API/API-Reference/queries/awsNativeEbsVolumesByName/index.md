@@ -45,6 +45,7 @@ query AwsNativeEbsVolumesByName($ebsVolumeName: String!) {
       numWorkloadDescendants
       objectType
       onDemandSnapshotCount
+      outpostArn
       region
       rscPendingObjectPauseAssignment
       sizeInGiBs

@@ -1,6 +1,6 @@
 # ShareTypeEnum
 
-Share type for fileset.
+Fileset share type.
 
 ## Values
 

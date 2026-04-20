@@ -19,6 +19,7 @@ query CloudDirectNasNamespace($fid: UUID!) {
   cloudDirectNasNamespace(fid: $fid) {
     authorizedOperations
     cloudDirectId
+    cloudDirectPendingObjectPauseAssignment
     clusterUuid
     id
     isArchived
@@ -55,10 +56,10 @@ query CloudDirectNasNamespace($fid: UUID!) {
         "ACCESS_CDM_CLUSTER"
       ],
       "cloudDirectId": "00000000-0000-0000-0000-000000000000",
+      "cloudDirectPendingObjectPauseAssignment": "NO_PENDING_PAUSE_ASSIGNMENT",
       "clusterUuid": "00000000-0000-0000-0000-000000000000",
       "id": "00000000-0000-0000-0000-000000000000",
       "isArchived": true,
-      "isHidden": true,
       "allOrgs": [
         {
           "allUrls": [

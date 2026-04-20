@@ -4,10 +4,10 @@ Missing permissions on the Azure Subscription.
 
 ## Fields
 
-| Field                | Type       | Description                                            |
-| -------------------- | ---------- | ------------------------------------------------------ |
-| missingPermissions   | [String!]! | List of missing permissions on the Azure Subscription. |
-| subscriptionNativeId | String!    | Native ID of the Azure Subscription.                   |
+| Field                | Type       | Description                    |
+| -------------------- | ---------- | ------------------------------ |
+| missingPermissions   | [String!]! | List of missing permissions.   |
+| subscriptionNativeId | String!    | Native ID of the subscription. |
 
 ## Used By
 

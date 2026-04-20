@@ -4,7 +4,8 @@ Request message for retrieving O365 recovery analysis results. This retrieves th
 
 ## Fields
 
-| Field       | Type                                                                                                     | Description                                |
-| ----------- | -------------------------------------------------------------------------------------------------------- | ------------------------------------------ |
-| groupId     | String                                                                                                   | The O365 group ID.                         |
-| taskchainId | [UUID](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/UUID/index.md) | The ID of the recovery analysis taskchain. |
+| Field       | Type                                                                                                     | Description                                       |
+| ----------- | -------------------------------------------------------------------------------------------------------- | ------------------------------------------------- |
+| groupId     | String                                                                                                   | The O365 group ID.                                |
+| orgId       | [UUID](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/UUID/index.md) | The org ID associated with the recovery analysis. |
+| taskchainId | [UUID](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/UUID/index.md) | The ID of the recovery analysis taskchain.        |

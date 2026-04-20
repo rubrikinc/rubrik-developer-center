@@ -49,6 +49,7 @@ query {
       objectType
       onDemandSnapshotCount
       osType
+      outpostArn
       privateIp
       publicIp
       region

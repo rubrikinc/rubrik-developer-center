@@ -44,4 +44,4 @@ Represents pause status of an object.
 - [CassandraColumnFamily.objectPauseStatus](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/CassandraColumnFamily/index.md)
 - [CassandraKeyspace.objectPauseStatus](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/CassandraKeyspace/index.md)
 - CassandraKeyspaceDescendantType.objectPauseStatus
-- *…and 247 more*
+- *…and 250 more*

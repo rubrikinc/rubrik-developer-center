@@ -41,6 +41,7 @@ query AwsNativeEc2Instance($ec2InstanceRubrikId: UUID!) {
     objectType
     onDemandSnapshotCount
     osType
+    outpostArn
     privateIp
     publicIp
     region

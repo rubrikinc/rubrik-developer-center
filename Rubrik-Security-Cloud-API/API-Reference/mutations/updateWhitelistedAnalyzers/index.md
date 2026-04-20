@@ -4,13 +4,13 @@ Update whitelisted analyzers for a path.
 
 ## Arguments
 
-| Argument                  | Type       | Description |
-| ------------------------- | ---------- | ----------- |
-| stdPath *(required)*      | String!    |             |
-| snappableFid *(required)* | String!    |             |
-| snapshotFid *(required)*  | String!    |             |
-| analyzerIds *(required)*  | [String!]! |             |
-| runAsync *(required)*     | Boolean!   |             |
+| Argument                  | Type       | Description                                   |
+| ------------------------- | ---------- | --------------------------------------------- |
+| stdPath *(required)*      | String!    | The standard path of the directory to browse. |
+| snappableFid *(required)* | String!    |                                               |
+| snapshotFid *(required)*  | String!    |                                               |
+| analyzerIds *(required)*  | [String!]! |                                               |
+| runAsync *(required)*     | Boolean!   |                                               |
 
 ## Returns
 

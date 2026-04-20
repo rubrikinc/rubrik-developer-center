@@ -1,12 +1,12 @@
 # MapAzureCloudAccountToPersistentStorageLocationReply
 
-Response of the operation to map Azure cloud accounts to a persistent storage location.
+Response for mapping Azure cloud account to persistent storage location.
 
 ## Fields
 
-| Field     | Type     | Description                                               |
-| --------- | -------- | --------------------------------------------------------- |
-| isSuccess | Boolean! | Specifies whether the mapping was completed successfully. |
+| Field     | Type     | Description                         |
+| --------- | -------- | ----------------------------------- |
+| isSuccess | Boolean! | Whether the mapping was successful. |
 
 ## Used By
 

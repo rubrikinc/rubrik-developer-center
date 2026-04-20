@@ -30,6 +30,7 @@ query OracleDatabase($fid: UUID!) {
     isLiveMount
     isRelic
     logBackupFrequency
+    logRatePerRmanChannelInMb
     logRetentionHours
     name
     numChannels
@@ -41,6 +42,7 @@ query OracleDatabase($fid: UUID!) {
     onDemandSnapshotCount
     osNames
     osType
+    ratePerRmanChannelInMb
     rbaRole
     replicatedObjectCount
     sectionSizeInGigabytes

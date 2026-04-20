@@ -4,13 +4,13 @@
 
 ## Fields
 
-| Field       | Type                                                                                                                                | Description |
-| ----------- | ----------------------------------------------------------------------------------------------------------------------------------- | ----------- |
-| accessType  | [ActivityAccessType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/ActivityAccessType/index.md)! |             |
-| directory   | String!                                                                                                                             |             |
-| filename    | String!                                                                                                                             |             |
-| nativePath  | String!                                                                                                                             |             |
-| numAccesses | Int!                                                                                                                                |             |
+| Field       | Type                                                                                                                                | Description                                   |
+| ----------- | ----------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------- |
+| accessType  | [ActivityAccessType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/ActivityAccessType/index.md)! |                                               |
+| directory   | String!                                                                                                                             |                                               |
+| filename    | String!                                                                                                                             |                                               |
+| nativePath  | String!                                                                                                                             | File path formatted for the OS or share type. |
+| numAccesses | Int!                                                                                                                                |                                               |
 
 ## Used By
 

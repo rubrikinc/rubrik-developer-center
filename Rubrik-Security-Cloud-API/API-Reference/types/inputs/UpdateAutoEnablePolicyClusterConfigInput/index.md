@@ -1,6 +1,6 @@
 # UpdateAutoEnablePolicyClusterConfigInput
 
-Input to update Rubrik cluster configuration.
+Auto-enabled Data Discovery policy configuration for Rubrik clusters.
 
 ## Fields
 

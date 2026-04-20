@@ -30,7 +30,7 @@ query AllCloudNativeTagKeys($keySubStr: String!, $limit: Int!, $objectType: Clou
 {
   "keySubStr": "example-string",
   "limit": 0,
-  "objectType": "AWS_DYNAMODB_TABLE"
+  "objectType": "AWS_CONFIG"
 }
 ```
 

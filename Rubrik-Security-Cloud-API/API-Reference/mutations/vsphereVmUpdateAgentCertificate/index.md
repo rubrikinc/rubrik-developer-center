@@ -1,6 +1,6 @@
 # vsphereVmUpdateAgentCertificate
 
-Update certificate for Rubrik Backup Service Supported in v9.5 Update the Rubrik Backup Service certificate for a specified virtual machine.
+Update certificate for Rubrik Backup Service Supported in v9.5+ Update the Rubrik Backup Service certificate for a specified virtual machine.
 
 ## Arguments
 

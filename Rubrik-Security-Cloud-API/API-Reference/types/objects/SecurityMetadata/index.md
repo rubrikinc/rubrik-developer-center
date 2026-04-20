@@ -47,4 +47,4 @@ Represents security metadata of a workload.
 - [CassandraColumnFamily.securityMetadata](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/CassandraColumnFamily/index.md)
 - [CassandraKeyspace.securityMetadata](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/CassandraKeyspace/index.md)
 - CassandraKeyspaceDescendantType.securityMetadata
-- *…and 247 more*
+- *…and 250 more*

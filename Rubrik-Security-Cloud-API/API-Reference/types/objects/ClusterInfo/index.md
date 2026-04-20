@@ -14,3 +14,4 @@ ClusterInfo stores the cluster information.
 **Referenced by**
 
 - [AssetMetadata.clusterInfo](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AssetMetadata/index.md)
+- [CommonAssetMetadata.clusterInfo](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/CommonAssetMetadata/index.md)

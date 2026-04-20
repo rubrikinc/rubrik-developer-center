@@ -4,7 +4,7 @@
 
 ## Values
 
-| Value          | Description |
-| -------------- | ----------- |
-| NUM_ACTIVITIES |             |
-| USER_NAME      |             |
+| Value          | Description                   |
+| -------------- | ----------------------------- |
+| NUM_ACTIVITIES | Sort by number of activities. |
+| USER_NAME      | Sort by user name.            |

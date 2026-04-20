@@ -16,7 +16,9 @@ QueryO365RecoveryAnalysisResult retrieves the recovery analysis result from GCS 
 
 ```graphql
 query QueryO365RecoveryAnalysisResult($input: GetRecoveryAnalysisResultReq!) {
-  queryO365RecoveryAnalysisResult(input: $input)
+  queryO365RecoveryAnalysisResult(input: $input) {
+    estimatedRecoveryTimeSeconds
+  }
 }
 ```
 
@@ -30,6 +32,7 @@ query QueryO365RecoveryAnalysisResult($input: GetRecoveryAnalysisResultReq!) {
 {
   "data": {
     "queryO365RecoveryAnalysisResult": {
+      "estimatedRecoveryTimeSeconds": 0,
       "metadata": {
         "analysisEndTime": 0,
         "analysisIntervalDays": 0,

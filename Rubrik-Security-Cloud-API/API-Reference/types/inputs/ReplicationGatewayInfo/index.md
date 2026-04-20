@@ -1,10 +1,10 @@
 # ReplicationGatewayInfo
 
-Gateway information for a Rubrik cluster.
+Gateway information for replication setup.
 
 ## Fields
 
-| Field   | Type    | Description           |
-| ------- | ------- | --------------------- |
-| address | String! | Gateway IPv4 address. |
-| ports   | [Int!]! | Gateway ports.        |
+| Field   | Type    | Description                  |
+| ------- | ------- | ---------------------------- |
+| address | String! | IPv4 address of the gateway. |
+| ports   | [Int!]! | Ports of the gateway.        |

@@ -7,6 +7,7 @@ Principal type for risk summary.
 | Value                          | Description                                           |
 | ------------------------------ | ----------------------------------------------------- |
 | ACCESS_POLICY                  | Principal of the access policy type.                  |
+| APP_ROLE                       | Principal of the app role type.                       |
 | ASSUMABLE_IDENTITY             | Principal of the assumable identity type.             |
 | ATTRIBUTE_SCHEMA               | Principal of the attribute schema type.               |
 | CERTIFICATE_TEMPLATE           | Principal of the AD Certificate Template type.        |
@@ -48,6 +49,7 @@ Principal type for risk summary.
 | SITE_LINK_BRIDGE               | Principal of the site link bridge type.               |
 | SUBNET                         | Principal of the subnet type.                         |
 | SUBNET_CONTAINER               | Principal of the subnet container type.               |
+| SYSTEM_IDENTITY                | Principal representing an objectless system identity. |
 | TRUSTED_DOMAIN                 | Principal of the trusted domain type.                 |
 | UNKNOWN                        | Principal of the unknown type.                        |
 | USER                           | Principal of the user type.                           |

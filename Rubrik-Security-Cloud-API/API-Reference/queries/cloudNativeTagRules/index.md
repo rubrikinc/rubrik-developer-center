@@ -25,7 +25,7 @@ query CloudNativeTagRules($objectType: CloudNativeTagObjectType!) {
 
 ```json
 {
-  "objectType": "AWS_DYNAMODB_TABLE"
+  "objectType": "AWS_CONFIG"
 }
 ```
 

@@ -4,7 +4,7 @@
 
 ## Values
 
-| Value      | Description |
-| ---------- | ----------- |
-| COMPLIANCE |             |
-| DISCOVERY  |             |
+| Value      | Description      |
+| ---------- | ---------------- |
+| COMPLIANCE | Compliance mode. |
+| DISCOVERY  | Discovery mode.  |

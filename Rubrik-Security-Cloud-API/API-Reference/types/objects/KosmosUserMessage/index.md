@@ -16,3 +16,4 @@ Kosmos User Message object.
 **Referenced by**
 
 - [MysqldbInstanceStatus.statusMessages](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/MysqldbInstanceStatus/index.md)
+- [PostgreSQLDbClusterStatus.statusMessages](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/PostgreSQLDbClusterStatus/index.md)

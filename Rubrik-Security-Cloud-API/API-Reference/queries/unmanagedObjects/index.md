@@ -35,6 +35,7 @@ query UnmanagedObjects($input: UnmanagedObjectsInput!) {
       hasSnapshotsWithPolicy
       id
       isRemote
+      localSnapshotsCount
       localStorage
       name
       nonPolicySnapshotsCount

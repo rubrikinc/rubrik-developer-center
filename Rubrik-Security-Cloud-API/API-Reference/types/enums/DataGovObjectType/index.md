@@ -53,6 +53,12 @@ Represents object types.
 | O365_SHAREPOINT_DRIVE                | Represents the O365 SharePoint Drive object.                                                                                       |
 | O365_SHAREPOINT_SITE                 | Represents the O365 SharePoint Site object.                                                                                        |
 | OBJECT_TYPE_UNSPECIFIED              | Unknown object type.                                                                                                               |
+| OLVM_COMPUTE_CLUSTER                 | Represents the OLVM compute cluster.                                                                                               |
+| OLVM_DATACENTER                      | Represents the OLVM datacenter.                                                                                                    |
+| OLVM_HOST                            | Represents the OLVM host.                                                                                                          |
+| OLVM_MANAGER                         | Represents the OLVM manager.                                                                                                       |
+| OLVM_ROOT                            | Represents the OLVM root.                                                                                                          |
+| OLVM_VIRTUAL_MACHINE                 | Represents the OLVM virtual machine.                                                                                               |
 | ORACLE_DATABASE                      | Represents the Oracle database.                                                                                                    |
 | ORACLE_DATA_GUARD_GROUP              | Represents the Oracle Data Guard Group.                                                                                            |
 | ORACLE_ROOT                          | Represents the Oracle root.                                                                                                        |

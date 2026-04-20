@@ -1,0 +1,15 @@
+# MultiHopUpgradePathReply
+
+Response for MultiHopUpgradePath.
+
+## Fields
+
+| Field       | Type       | Description                                                                                  |
+| ----------- | ---------- | -------------------------------------------------------------------------------------------- |
+| versionPath | [String!]! | Ordered sequence of CDM versions to upgrade through, from source to target (both inclusive). |
+
+## Used By
+
+**Queries**
+
+- [query: multiHopUpgradePath](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/multiHopUpgradePath/index.md)

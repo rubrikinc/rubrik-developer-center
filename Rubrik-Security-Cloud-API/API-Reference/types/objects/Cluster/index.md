@@ -152,4 +152,4 @@ A Rubrik CDM Cluster.
 - CloudDirectHierarchyObject.cluster
 - CloudDirectHierarchyWorkload.cluster
 - [CloudDirectNasBucket.cluster](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/CloudDirectNasBucket/index.md)
-- *…and 250 more*
+- *…and 252 more*

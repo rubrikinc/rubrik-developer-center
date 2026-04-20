@@ -1,6 +1,6 @@
 # knowledgeBaseArticle
 
-A knowledge base article.
+Retrieves the contents of a single knowledge base article.
 
 ## Arguments
 

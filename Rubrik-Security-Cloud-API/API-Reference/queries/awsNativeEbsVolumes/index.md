@@ -43,6 +43,7 @@ query {
       numWorkloadDescendants
       objectType
       onDemandSnapshotCount
+      outpostArn
       region
       rscPendingObjectPauseAssignment
       sizeInGiBs

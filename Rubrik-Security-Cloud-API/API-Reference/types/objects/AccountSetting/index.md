@@ -1,6 +1,6 @@
 # AccountSetting
 
-User account setting per Rubrik account.
+Depreciated, use ListAccountSettingValuesReq and ListAccountSettingValuesReply instead User account setting per Rubrik account.
 
 ## Fields
 

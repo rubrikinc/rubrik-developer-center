@@ -4,9 +4,9 @@ Add a FusionCompute VRM instance Supported in v9.6 Create a FusionCompute VRM in
 
 ## Arguments
 
-| Argument           | Type                                                                                                                         | Description            |
-| ------------------ | ---------------------------------------------------------------------------------------------------------------------------- | ---------------------- |
-| input *(required)* | [CreateVrmInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/CreateVrmInput/index.md)! | Input for V1CreateVrm. |
+| Argument           | Type                                                                                                                         | Description          |
+| ------------------ | ---------------------------------------------------------------------------------------------------------------------------- | -------------------- |
+| input *(required)* | [CreateVrmInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/CreateVrmInput/index.md)! | Input for createVrm. |
 
 ## Returns
 

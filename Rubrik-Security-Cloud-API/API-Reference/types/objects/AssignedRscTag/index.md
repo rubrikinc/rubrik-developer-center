@@ -49,4 +49,4 @@ Details of an RSC tag.
 - [CassandraColumnFamily.allTags](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/CassandraColumnFamily/index.md)
 - [CassandraKeyspace.allTags](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/CassandraKeyspace/index.md)
 - CassandraKeyspaceDescendantType.allTags
-- *…and 248 more*
+- *…and 251 more*

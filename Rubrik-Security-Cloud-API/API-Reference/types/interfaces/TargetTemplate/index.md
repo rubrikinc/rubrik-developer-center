@@ -4,9 +4,10 @@ Target Template to be used for automatic archival group.
 
 ## Fields
 
-| Field      | Type                                                                                                                | Description              |
-| ---------- | ------------------------------------------------------------------------------------------------------------------- | ------------------------ |
-| targetType | [TargetType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/TargetType/index.md)! | The type of this Target. |
+| Field              | Type                                                                                                                | Description                                        |
+| ------------------ | ------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------- |
+| targetType         | [TargetType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/TargetType/index.md)! | The type of this Target.                           |
+| templateLocationId | [UUID](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/UUID/index.md)!           | The internal ID of the template archival location. |
 
 ## Implemented By
 

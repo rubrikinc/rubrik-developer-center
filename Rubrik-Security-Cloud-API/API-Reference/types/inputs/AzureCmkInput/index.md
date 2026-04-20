@@ -1,6 +1,6 @@
 # AzureCmkInput
 
-Information about the customer-managed key and key vault for a region.
+Customer-managed key and key vault information for a region.
 
 ## Fields
 

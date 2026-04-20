@@ -43,4 +43,4 @@ SLA Domain name and ID.
 - CassandraSourceDescendantType.rscNativeObjectPendingSla
 - CassandraSourcePhysicalChildType.rscNativeObjectPendingSla
 - [CloudNativeTagRule.rscNativeObjectPendingSla](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/CloudNativeTagRule/index.md)
-- *…and 39 more*
+- *…and 40 more*

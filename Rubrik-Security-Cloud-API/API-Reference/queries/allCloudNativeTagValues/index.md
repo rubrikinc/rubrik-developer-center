@@ -33,7 +33,7 @@ query AllCloudNativeTagValues($valueSubStr: String!, $key: String!, $limit: Int!
   "valueSubStr": "example-string",
   "key": "example-string",
   "limit": 0,
-  "objectType": "AWS_DYNAMODB_TABLE"
+  "objectType": "AWS_CONFIG"
 }
 ```
 

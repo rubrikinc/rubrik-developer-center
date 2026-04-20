@@ -50,7 +50,8 @@ mutation UpdateRcsAutomaticTargetMapping($input: UpdateRcsAutomaticTargetMapping
         "status": "CONNECTED"
       },
       "targetTemplate": {
-        "targetType": "AWS"
+        "targetType": "AWS",
+        "templateLocationId": "00000000-0000-0000-0000-000000000000"
       }
     }
   }

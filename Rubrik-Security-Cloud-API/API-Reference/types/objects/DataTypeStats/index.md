@@ -16,4 +16,5 @@ Stats of an individual data type.
 
 **Referenced by**
 
+- [DataGovViolationDetails.dataTypes](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/DataGovViolationDetails/index.md)
 - [DataTypeResult.result](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/DataTypeResult/index.md)

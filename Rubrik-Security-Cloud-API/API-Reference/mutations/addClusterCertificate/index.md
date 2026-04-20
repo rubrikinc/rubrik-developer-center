@@ -23,6 +23,8 @@ mutation AddClusterCertificate($input: AddClusterCertificateInput!) {
     hasKey
     isInternal
     isTrusted
+    keyStrength
+    keyType
     name
     pemFile
     usedBy

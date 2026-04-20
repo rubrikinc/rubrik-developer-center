@@ -23,6 +23,8 @@ mutation AddK8sProtectionSet($input: AddK8sProtectionSetInput!) {
     kubernetesClusterUuid
     kubernetesNamespace
     name
+    namespaceExcludePatterns
+    namespaceIncludePatterns
     rsType
   }
 }
@@ -52,7 +54,17 @@ mutation AddK8sProtectionSet($input: AddK8sProtectionSetInput!) {
       "id": "example-string",
       "kubernetesClusterUuid": "example-string",
       "kubernetesNamespace": "example-string",
-      "name": "example-string"
+      "name": "example-string",
+      "customResourceDependencies": [
+        {
+          "group": "example-string",
+          "resource": "example-string",
+          "selectionMode": "example-string"
+        }
+      ],
+      "labelSelector": {
+        "matchLabels": "example-string"
+      }
     }
   }
 }

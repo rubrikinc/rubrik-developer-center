@@ -38,7 +38,7 @@ query SearchAzureAdSnapshot($input: SearchAzureAdSnapshotInput!) {
 ```json
 {
   "input": {
-    "azureAdObjectType": "ADMINISTRATIVE_UNIT",
+    "azureAdObjectType": "ACCOUNT_PROTECTION",
     "keywordSearchFilters": [
       {}
     ],
@@ -57,7 +57,7 @@ query SearchAzureAdSnapshot($input: SearchAzureAdSnapshotInput!) {
           {
             "objectId": "example-string",
             "snapshotId": "example-string",
-            "type": "ADMINISTRATIVE_UNIT"
+            "type": "ACCOUNT_PROTECTION"
           }
         ]
       ],

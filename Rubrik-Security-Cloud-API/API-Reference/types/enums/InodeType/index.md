@@ -4,8 +4,8 @@
 
 ## Values
 
-| Value         | Description |
-| ------------- | ----------- |
-| DIRECTORY     |             |
-| FILE          |             |
-| UNKNOWN_INODE |             |
+| Value         | Description         |
+| ------------- | ------------------- |
+| DIRECTORY     | Directory inode.    |
+| FILE          | File inode.         |
+| UNKNOWN_INODE | Unknown inode type. |

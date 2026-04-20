@@ -17,3 +17,4 @@ Kosmos Workload Recoverable Range.
 
 - KosmosSnappableHierarchyObjectType.recoverableRanges
 - [MysqldbInstance.recoverableRanges](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/MysqldbInstance/index.md)
+- [PostgreSQLDbCluster.recoverableRanges](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/PostgreSQLDbCluster/index.md)

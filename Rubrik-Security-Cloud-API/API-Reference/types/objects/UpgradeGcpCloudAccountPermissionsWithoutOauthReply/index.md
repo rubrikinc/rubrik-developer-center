@@ -4,9 +4,9 @@ Response of the operation to set GCP cloud account feature status to connected, 
 
 ## Fields
 
-| Field  | Type                                                                                                                                                                   | Description                                     |
-| ------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------- |
-| status | [GcpCloudAccountProjectUpgradeStatus](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/GcpCloudAccountProjectUpgradeStatus/index.md) | Status of the operation to upgrade GCP project. |
+| Field  | Type                                                                                                                                                                   | Description            |
+| ------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------- |
+| status | [GcpCloudAccountProjectUpgradeStatus](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/GcpCloudAccountProjectUpgradeStatus/index.md) | Status of the upgrade. |
 
 ## Used By
 

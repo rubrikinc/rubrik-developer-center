@@ -12,6 +12,7 @@ Regions for Rubrik Cloud Storage Archival Location.
 | ASIA_PACIFIC_JAKARTA     | Asia Pacific Jakarta.                       |
 | ASIA_PACIFIC_MELBOURNE   | Asia Pacific Melbourne.                     |
 | ASIA_PACIFIC_SYDNEY      | Asia Pacific Sydney.                        |
+| ASIA_PACIFIC_THAILAND    | Asia pacific thailand.                      |
 | ASIA_SOUTHEAST           | Asia Southeast or Singapore.                |
 | AUSTRALIA_CENTRAL        | Australia Central or Canberra.              |
 | AUSTRALIA_CENTRAL2       | Australia Central 2 or Canberra.            |

@@ -1,12 +1,12 @@
 # MapAzureCloudAccountExocomputeSubscriptionReply
 
-Response of the operation to map Azure cloud accounts to an Exocompute subscription.
+Response for mapping Azure exocompute subscription.
 
 ## Fields
 
-| Field     | Type     | Description                                               |
-| --------- | -------- | --------------------------------------------------------- |
-| isSuccess | Boolean! | Specifies whether the mapping was completed successfully. |
+| Field     | Type     | Description                         |
+| --------- | -------- | ----------------------------------- |
+| isSuccess | Boolean! | Whether the mapping was successful. |
 
 ## Used By
 

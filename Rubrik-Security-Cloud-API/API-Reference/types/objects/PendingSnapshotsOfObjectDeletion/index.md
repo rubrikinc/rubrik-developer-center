@@ -43,4 +43,4 @@
 - [HostShare.pendingObjectDeletionStatus](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/HostShare/index.md)
 - HostShareDescendantType.pendingObjectDeletionStatus
 - HostSharePhysicalChildType.pendingObjectDeletionStatus
-- *…and 157 more*
+- *…and 159 more*
