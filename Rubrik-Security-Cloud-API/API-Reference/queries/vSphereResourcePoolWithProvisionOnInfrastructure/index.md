@@ -20,6 +20,7 @@ query VSphereResourcePoolWithProvisionOnInfrastructure($fid: UUID!) {
     authorizedOperations
     cdmId
     cdmPendingObjectPauseAssignment
+    filterDescription
     hasDatastoresForRecovery
     id
     name
@@ -49,9 +50,9 @@ query VSphereResourcePoolWithProvisionOnInfrastructure($fid: UUID!) {
       ],
       "cdmId": "example-string",
       "cdmPendingObjectPauseAssignment": "NO_PENDING_PAUSE_ASSIGNMENT",
+      "filterDescription": "example-string",
       "hasDatastoresForRecovery": true,
       "id": "00000000-0000-0000-0000-000000000000",
-      "name": "example-string",
       "allOrgs": [
         {
           "allUrls": [

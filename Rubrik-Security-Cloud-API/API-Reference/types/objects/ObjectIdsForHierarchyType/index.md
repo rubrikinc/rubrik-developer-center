@@ -1,13 +1,13 @@
 # ObjectIdsForHierarchyType
 
-*No description available.*
+Object IDs for a specific workload hierarchy type.
 
 ## Fields
 
-| Field         | Type                                                                                                                                        | Description |
-| ------------- | ------------------------------------------------------------------------------------------------------------------------------------------- | ----------- |
-| objectIds     | [String!]!                                                                                                                                  |             |
-| snappableType | [WorkloadLevelHierarchy](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/WorkloadLevelHierarchy/index.md)! |             |
+| Field         | Type                                                                                                                                        | Description                                 |
+| ------------- | ------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------- |
+| objectIds     | [String!]!                                                                                                                                  | List of object IDs for the hierarchy type.  |
+| snappableType | [WorkloadLevelHierarchy](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/WorkloadLevelHierarchy/index.md)! | The workload hierarchy type of the objects. |
 
 ## Used By
 

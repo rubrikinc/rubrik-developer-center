@@ -13,3 +13,4 @@ AppMetadata stores the application-specific metadata.
 **Referenced by**
 
 - [AssetMetadata.appSpecificMetadata](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AssetMetadata/index.md)
+- [CommonAssetMetadata.appSpecificMetadata](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/CommonAssetMetadata/index.md)

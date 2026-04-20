@@ -22,6 +22,7 @@ Latest user note information.
 - CdmHierarchyObject.latestUserNote
 - [CdmSnapshot.latestUserNote](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/CdmSnapshot/index.md)
 - [CdmWorkloadSnapshot.latestUserNote](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/CdmWorkloadSnapshot/index.md)
+- [CloudDirectSnapshot.latestUserNote](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/CloudDirectSnapshot/index.md)
 - [Db2Database.latestUserNote](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/Db2Database/index.md)
 - [Db2Instance.latestUserNote](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/Db2Instance/index.md)
 - Db2InstanceDescendantType.latestUserNote
@@ -44,5 +45,4 @@ Latest user note information.
 - [HostFailoverCluster.latestUserNote](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/HostFailoverCluster/index.md)
 - HostFailoverClusterDescendantType.latestUserNote
 - HostFailoverClusterPhysicalChildType.latestUserNote
-- [HostShare.latestUserNote](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/HostShare/index.md)
-- *…and 160 more*
+- *…and 163 more*

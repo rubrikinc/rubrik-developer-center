@@ -15,3 +15,4 @@ CloudAccountInfo stores the cloud account information.
 **Referenced by**
 
 - [AssetMetadata.cloudAccountInfo](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AssetMetadata/index.md)
+- [CommonAssetMetadata.cloudAccountInfo](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/CommonAssetMetadata/index.md)

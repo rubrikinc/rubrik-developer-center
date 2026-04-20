@@ -4,11 +4,11 @@ Status of the Gcp Cloud Account upgrade operation.
 
 ## Fields
 
-| Field       | Type     | Description                          |
-| ----------- | -------- | ------------------------------------ |
-| error       | String!  | Error during upgrade, if any.        |
-| projectUuid | String!  | GCP project ID.                      |
-| success     | Boolean! | Specifies whether upgrade succeeded. |
+| Field       | Type     | Description                         |
+| ----------- | -------- | ----------------------------------- |
+| error       | String!  | Error message, if any.              |
+| projectUuid | String!  | UUID of the project.                |
+| success     | Boolean! | Whether the upgrade was successful. |
 
 ## Used By
 

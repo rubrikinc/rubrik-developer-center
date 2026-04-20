@@ -1,12 +1,12 @@
 # ParentLabelInfo
 
-*No description available.*
+Parent label information.
 
 ## Fields
 
-| Field       | Type    | Description                           |
-| ----------- | ------- | ------------------------------------- |
-| displayName | String! | The display name of the parent label. |
+| Field       | Type    | Description                       |
+| ----------- | ------- | --------------------------------- |
+| displayName | String! | Display name of the parent label. |
 
 ## Used By
 

@@ -4,9 +4,9 @@
 
 ## Fields
 
-| Field        | Type    | Description |
-| ------------ | ------- | ----------- |
-| downloadLink | String! |             |
+| Field        | Type    | Description                                                 |
+| ------------ | ------- | ----------------------------------------------------------- |
+| downloadLink | String! | The signed link for downloading the file in google storage. |
 
 ## Used By
 

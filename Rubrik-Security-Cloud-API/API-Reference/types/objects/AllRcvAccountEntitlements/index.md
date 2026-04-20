@@ -4,9 +4,10 @@ Rubrik Cloud Vault (RCV) account entitlements with their respective order number
 
 ## Fields
 
-| Field        | Type                                                                                                                                                            | Description                                                                |
-| ------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------- |
-| entitlements | \[[RcvEntitlementWithOrderNumber](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/RcvEntitlementWithOrderNumber/index.md)!\] | Rubrik Cloud Vault (RCV) entitlements with their respective order numbers. |
+| Field                | Type                                                                                                                                                            | Description                                                                                      |
+| -------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------ |
+| entitlements         | \[[RcvEntitlementWithOrderNumber](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/RcvEntitlementWithOrderNumber/index.md)!\] | Rubrik Cloud Vault (RCV) entitlements with their respective order numbers.                       |
+| rcvEntitlementGroups | \[[RcvEntitlementGroup](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/RcvEntitlementGroup/index.md)!\]!                    | Entitlement groups for capacity consolidation. Only populated when SKU consolidation is enabled. |
 
 ## Used By
 

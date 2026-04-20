@@ -15,6 +15,8 @@ Regions for AWS.
 | AP_SOUTHEAST_2     | AWS Asia Pacific (Sydney) region.                             |
 | AP_SOUTHEAST_3     | AWS Asia Pacific (Jakarta) region.                            |
 | AP_SOUTHEAST_4     | AWS Asia Pacific (Melbourne) region.                          |
+| AP_SOUTHEAST_5     | AWS Asia Pacific (Malaysia) region.                           |
+| AP_SOUTHEAST_7     | AWS Asia Pacific (Thailand) region.                           |
 | AP_SOUTH_1         | AWS Asia Pacific (Mumbai) region.                             |
 | AP_SOUTH_2         | AWS Asia Pacific (Hyderabad) region.                          |
 | CA_CENTRAL_1       | AWS Canada (Central) region.                                  |
@@ -32,6 +34,7 @@ Regions for AWS.
 | IL_CENTRAL_1       | Israel (tel aviv) region.                                     |
 | ME_CENTRAL_1       | AWS Middle East (UAE) region.                                 |
 | ME_SOUTH_1         | AWS Middle East (Bahrain) region.                             |
+| MX_CENTRAL_1       | AWS Mexico (Central) region.                                  |
 | SA_EAST_1          | AWS South America (Sao Paulo) region.                         |
 | UNKNOWN_AWS_REGION | AWS region is unknown.                                        |
 | US_EAST_1          | AWS US East (N. Virginia) region.                             |

@@ -9,6 +9,7 @@ Inventory workloads that are supported on Rubrik.
 | ACTIVE_DIRECTORY_ROOT                                             | Active Directory root.                      |
 | APPFLOWS_ROOT                                                     | Orchestrated recovery root.                 |
 | ATLASSIAN_ROOT                                                    | Atlassian root.                             |
+| AUTH0_ROOT                                                        | Auth0 root.                                 |
 | AWSNATIVE_ROOT                                                    | AWS Native root.                            |
 | AZURENATIVE_ROOT                                                  | Azure Native root.                          |
 | AZURE_AD_ROOT                                                     | Azure AD root.                              |
@@ -21,6 +22,7 @@ Inventory workloads that are supported on Rubrik.
 | DB2_ROOT                                                          | DB2 root.                                   |
 | EXCHANGE_ROOT                                                     | Root of exchange hierarchy.                 |
 | FELDSPAR_ROOT                                                     | Feldspar root.                              |
+| FUSION_COMPUTE_ROOT                                               | FusionCompute root.                         |
 | GCPNATIVE_ROOT                                                    | GCP Native root.                            |
 | GITHUB_ROOT                                                       | GitHub root.                                |
 | GOOGLE_WORKSPACE_ROOT                                             | The root of the Google workspace hierarchy. |
@@ -46,6 +48,7 @@ Inventory workloads that are supported on Rubrik.
 | PHYSICAL_HOST_ROOT *(deprecated: This root is no longer in use.)* | Physical Host root.                         |
 | POSTGRES_ROOT                                                     | Postgres root.                              |
 | PROXMOX_ROOT                                                      | Proxmox root.                               |
+| PURE_STORAGE_ROOT                                                 | Pure Storage root.                          |
 | SALESFORCE_ROOT                                                   | Salesforce root.                            |
 | SAP_HANA_ROOT                                                     | SAP HANA root.                              |
 | VCD_ROOT                                                          | VCD root.                                   |

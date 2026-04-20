@@ -1,10 +1,10 @@
 # IssueStatus
 
-*No description available.*
+The automatically defined status for an issue.
 
 ## Values
 
-| Value    | Description |
-| -------- | ----------- |
-| OPEN     |             |
-| RESOLVED |             |
+| Value    | Description        |
+| -------- | ------------------ |
+| OPEN     | Issue is open.     |
+| RESOLVED | Issue is resolved. |

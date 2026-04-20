@@ -46,4 +46,4 @@ A generic snapshot type.
 - [CassandraColumnFamily.snapshotDistribution](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/CassandraColumnFamily/index.md)
 - [CassandraKeyspace.snapshotDistribution](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/CassandraKeyspace/index.md)
 - CassandraKeyspaceDescendantType.snapshotDistribution
-- *…and 248 more*
+- *…and 251 more*

@@ -4,14 +4,14 @@
 
 ## Arguments
 
-| Argument                     | Type                                                                                                                          | Description                                |
-| ---------------------------- | ----------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------ |
-| userId *(required)*          | String!                                                                                                                       |                                            |
-| resource                     | [ResourceInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/ResourceInput/index.md)     |                                            |
-| nativePath *(required)*      | String!                                                                                                                       |                                            |
-| startDay *(required)*        | String!                                                                                                                       | Start time, in string format (YYYY-MM-DD). |
-| timezone *(required)*        | String!                                                                                                                       |                                            |
-| timeGranularity *(required)* | [TimeGranularity](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/TimeGranularity/index.md)! |                                            |
+| Argument                     | Type                                                                                                                          | Description                                  |
+| ---------------------------- | ----------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------- |
+| userId *(required)*          | String!                                                                                                                       |                                              |
+| resource                     | [ResourceInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/ResourceInput/index.md)     |                                              |
+| nativePath *(required)*      | String!                                                                                                                       |                                              |
+| startDay *(required)*        | String!                                                                                                                       | Start time, in string format (YYYY-MM-DD).   |
+| timezone *(required)*        | String!                                                                                                                       | The timezone in which to display timestamps. |
+| timeGranularity *(required)* | [TimeGranularity](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/TimeGranularity/index.md)! |                                              |
 
 ## Returns
 

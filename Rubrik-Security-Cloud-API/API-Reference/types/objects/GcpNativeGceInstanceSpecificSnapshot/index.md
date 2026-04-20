@@ -6,7 +6,12 @@ Snapshot information specific to the GCP GCE instance.
 
 ## Fields
 
-| Field               | Type                                                                                                      | Description                                                                                   |
-| ------------------- | --------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------- |
-| serviceAccountEmail | String!                                                                                                   | Email of the service account attached to the GCE instance at the time the snapshot was taken. |
-| snapshotId          | [UUID](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/UUID/index.md)! | ID of the snapshot.                                                                           |
+| Field                      | Type                                                                                                      | Description                                                                                   |
+| -------------------------- | --------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------- |
+| machineType                | String!                                                                                                   | Machine type of the GCE instance at the time the snapshot was taken.                          |
+| networkHostProjectNativeId | String!                                                                                                   | Network host project native ID of the GCE instance.                                           |
+| networkTags                | [String!]!                                                                                                | Network tags of the GCE instance.                                                             |
+| serviceAccountEmail        | String!                                                                                                   | Email of the service account attached to the GCE instance at the time the snapshot was taken. |
+| snapshotId                 | [UUID](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/UUID/index.md)! | ID of the snapshot.                                                                           |
+| subnetName                 | String!                                                                                                   | Subnet name of the GCE instance.                                                              |
+| vpcName                    | String!                                                                                                   | VPC name of the GCE instance.                                                                 |

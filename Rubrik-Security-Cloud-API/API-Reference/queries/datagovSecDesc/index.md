@@ -8,7 +8,7 @@ Returns permissions associated with a path.
 | ------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------- |
 | snappableFid *(required)* | String!                                                                                                                                       |                                                    |
 | snapshotFid *(required)*  | String!                                                                                                                                       |                                                    |
-| stdPath *(required)*      | String!                                                                                                                                       |                                                    |
+| stdPath *(required)*      | String!                                                                                                                                       | The standard path of the directory to browse.      |
 | skipResolveSids           | Boolean                                                                                                                                       | Skip converting SIDs in response to friendly names |
 | filters                   | [SddlRequestFiltersInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/SddlRequestFiltersInput/index.md) | Filter for resolving security descriptor.          |
 

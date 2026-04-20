@@ -24,6 +24,8 @@ Type of objects managed by SLA Domains.
 | DB2_OBJECT_TYPE                        | Db2.                                 |
 | EXCHANGE_OBJECT_TYPE                   | Microsoft Exchange.                  |
 | FILESET_OBJECT_TYPE                    | Fileset object.                      |
+| FUSION_COMPUTE_OBJECT_TYPE             | FusionCompute object.                |
+| GCP_ALLOY_DB_CLUSTER_OBJECT_TYPE       | GCP AlloyDB Cluster object.          |
 | GCP_CLOUD_SQL_OBJECT_TYPE              | GCP Cloud SQL object.                |
 | GCP_OBJECT_TYPE                        | GCP object.                          |
 | GITHUB_OBJECT_TYPE                     | GitHub object.                       |
@@ -48,6 +50,7 @@ Type of objects managed by SLA Domains.
 | ORACLE_OBJECT_TYPE                     | Oracle object.                       |
 | POSTGRES_DB_CLUSTER_OBJECT_TYPE        | PostgreSQL DB Cluster object.        |
 | PROXMOX_OBJECT_TYPE                    | Proxmox object.                      |
+| PURE_STORAGE_OBJECT_TYPE               | Pure Storage object.                 |
 | SALESFORCE_OBJECT_TYPE                 | Salesforce object.                   |
 | SAP_HANA_OBJECT_TYPE                   | SAP HANA object.                     |
 | SNAPMIRROR_CLOUD_OBJECT_TYPE           | SnapMirror Cloud object.             |

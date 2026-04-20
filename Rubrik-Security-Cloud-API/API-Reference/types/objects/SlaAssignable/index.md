@@ -25,6 +25,7 @@ Supported in v5.0+
 - [FailoverClusterAppSummary.slaAssignable](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/FailoverClusterAppSummary/index.md)
 - [FailoverClusterSummary.slaAssignable](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/FailoverClusterSummary/index.md)
 - [FilesetSummary.slaAssignable](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/FilesetSummary/index.md)
+- [FusionComputeVrmSummary.slaAssignable](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/FusionComputeVrmSummary/index.md)
 - [HypervScvmmSummary.slaAssignable](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/HypervScvmmSummary/index.md)
 - [NutanixClusterSummary.slaAssignable](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/NutanixClusterSummary/index.md)
 - [OracleHostSummary.slaAssignable](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/OracleHostSummary/index.md)

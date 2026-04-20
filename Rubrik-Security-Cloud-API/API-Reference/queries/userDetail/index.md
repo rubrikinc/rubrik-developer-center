@@ -4,11 +4,11 @@
 
 ## Arguments
 
-| Argument              | Type    | Description                                |
-| --------------------- | ------- | ------------------------------------------ |
-| userId *(required)*   | String! |                                            |
-| startDay *(required)* | String! | Start time, in string format (YYYY-MM-DD). |
-| timezone *(required)* | String! |                                            |
+| Argument              | Type    | Description                                  |
+| --------------------- | ------- | -------------------------------------------- |
+| userId *(required)*   | String! |                                              |
+| startDay *(required)* | String! | Start time, in string format (YYYY-MM-DD).   |
+| timezone *(required)* | String! | The timezone in which to display timestamps. |
 
 ## Returns
 

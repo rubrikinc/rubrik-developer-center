@@ -29,7 +29,7 @@ query CheckCloudNativeTagRuleNameUniqueness($ruleName: String!, $objectType: Clo
 ```json
 {
   "ruleName": "example-string",
-  "objectType": "AWS_DYNAMODB_TABLE"
+  "objectType": "AWS_CONFIG"
 }
 ```
 

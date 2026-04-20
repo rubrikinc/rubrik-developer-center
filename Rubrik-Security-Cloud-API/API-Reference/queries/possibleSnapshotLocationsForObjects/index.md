@@ -40,7 +40,9 @@ query PossibleSnapshotLocationsForObjects($input: GetPossibleSnapshotLocationsFo
       "snapshotLocations": [
         {
           "locationId": "example-string",
-          "locationName": "example-string"
+          "locationName": "example-string",
+          "locationType": "SNAPSHOT_LOCATION_TYPE_ARCHIVAL",
+          "snapshotCount": 0
         }
       ]
     }

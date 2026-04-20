@@ -1,13 +1,13 @@
 # AwsExocomputeConfigsDeletionStatusType
 
-AWS Exocompute configurations Deletion status.
+DeletionStatus stores the exocompute config id and corresponding deletion status after a delete operation is performed.
 
 ## Fields
 
-| Field              | Type     | Description                                                                    |
-| ------------------ | -------- | ------------------------------------------------------------------------------ |
-| exocomputeConfigId | String!  | Exocompute configuration ID.                                                   |
-| success            | Boolean! | Specifies whether the deletion of the Exocompute configuration was successful. |
+| Field              | Type     | Description                          |
+| ------------------ | -------- | ------------------------------------ |
+| exocomputeConfigId | String!  | Exocompute configuration ID.         |
+| success            | Boolean! | Whether the deletion was successful. |
 
 ## Used By
 

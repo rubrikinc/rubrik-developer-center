@@ -1,6 +1,6 @@
 # NutanixClustersListElementInput
 
-Supported in v9.0+
+Nutanix Cluster with its natural uuid and name.
 
 ## Fields
 

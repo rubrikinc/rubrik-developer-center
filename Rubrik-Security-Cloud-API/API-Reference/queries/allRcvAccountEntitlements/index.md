@@ -26,6 +26,14 @@ query {
         {
           "orderNumber": "example-string"
         }
+      ],
+      "rcvEntitlementGroups": [
+        {
+          "aggregateCapacity": 0.0,
+          "aggregateExpectedUsedCapacity": 0.0,
+          "aggregateUsedCapacity": 0.0,
+          "displayName": "example-string"
+        }
       ]
     }
   }

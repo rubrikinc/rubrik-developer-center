@@ -18,6 +18,7 @@ Keywords for AWS external artifacts.
 | EXOCOMPUTE_EKS_WORKERNODE_ROLE_ARN                                                                              | Keyword to capture EKS worker node role.             |
 | EXOCOMPUTE_FLUENTD_ROLE_ARN                                                                                     | Keyword to capture Exocompute Fluentd role.          |
 | IAM_USER_ARN                                                                                                    | Keyword to capture AWS account IAM user ARN.         |
+| ROLE_CHAINING_ROLE_ARN                                                                                          | Keyword to capture role chaining role ARN.           |
 | SECRET_KEY                                                                                                      | Keyword to capture AWS account secret key.           |
 | STACK_ARN                                                                                                       | Keyword to capture stack ARN.                        |
 | STACK_NAME                                                                                                      | Keyword to capture stack name.                       |

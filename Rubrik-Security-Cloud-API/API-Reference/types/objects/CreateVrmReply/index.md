@@ -1,6 +1,6 @@
 # CreateVrmReply
 
-Response for creating a FusionCompute VRM instance.
+Response for creating a FusionCompute Virtual Resource Management (VRM) instance.
 
 ## Fields
 

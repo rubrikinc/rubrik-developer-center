@@ -4,11 +4,11 @@ Detail of the Gcp Cloud Account Add operations.
 
 ## Fields
 
-| Field     | Type    | Description                               |
-| --------- | ------- | ----------------------------------------- |
-| error     | String! | Error while adding a GCP project, if any. |
-| projectId | String! | GCP project ID.                           |
-| uuid      | String! | Rubrik ID of the project.                 |
+| Field     | Type    | Description            |
+| --------- | ------- | ---------------------- |
+| error     | String! | Error message, if any. |
+| projectId | String! | Project ID.            |
+| uuid      | String! | UUID of the project.   |
 
 ## Used By
 

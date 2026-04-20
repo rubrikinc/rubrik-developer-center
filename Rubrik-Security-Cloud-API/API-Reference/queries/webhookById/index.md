@@ -53,7 +53,12 @@ query WebhookById($input: Int!) {
         "errorMessage": "example-string",
         "statusCode": 0
       },
-      "subscriptionType": {}
+      "readOnlyAuthInfo": {
+        "headerKeys": [
+          "example-string"
+        ],
+        "username": "example-string"
+      }
     }
   }
 }

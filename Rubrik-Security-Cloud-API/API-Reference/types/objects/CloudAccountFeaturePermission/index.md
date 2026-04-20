@@ -4,10 +4,10 @@ Cloud Account ID along with Features and permissions serialized in JSON format.
 
 ## Fields
 
-| Field              | Type                                                                                                                                     | Description                                                         |
-| ------------------ | ---------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------- |
-| cloudAccountId     | String!                                                                                                                                  | ID of the cloud account for which feature permissions are provided. |
-| featurePermissions | \[[FeaturePermission](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/FeaturePermission/index.md)!\]! | List of features along with the associated permissions.             |
+| Field              | Type                                                                                                                                     | Description          |
+| ------------------ | ---------------------------------------------------------------------------------------------------------------------------------------- | -------------------- |
+| cloudAccountId     | String!                                                                                                                                  | Cloud account ID.    |
+| featurePermissions | \[[FeaturePermission](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/FeaturePermission/index.md)!\]! | Feature permissions. |
 
 ## Used By
 

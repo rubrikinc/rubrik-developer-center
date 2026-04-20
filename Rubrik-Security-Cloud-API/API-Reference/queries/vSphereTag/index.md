@@ -20,6 +20,7 @@ query VSphereTag($fid: UUID!) {
     authorizedOperations
     cdmPendingObjectPauseAssignment
     condition
+    filterDescription
     id
     isFilter
     name
@@ -52,9 +53,9 @@ query VSphereTag($fid: UUID!) {
       ],
       "cdmPendingObjectPauseAssignment": "NO_PENDING_PAUSE_ASSIGNMENT",
       "condition": "example-string",
+      "filterDescription": "example-string",
       "id": "00000000-0000-0000-0000-000000000000",
       "isFilter": true,
-      "name": "example-string",
       "allOrgs": [
         {
           "allUrls": [

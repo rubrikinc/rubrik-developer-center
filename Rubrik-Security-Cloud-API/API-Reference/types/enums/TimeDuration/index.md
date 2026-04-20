@@ -4,8 +4,8 @@
 
 ## Values
 
-| Value | Description |
-| ----- | ----------- |
-| DAY   |             |
-| HOUR  |             |
-| MONTH |             |
+| Value | Description     |
+| ----- | --------------- |
+| DAY   | Day duration.   |
+| HOUR  | Hour duration.  |
+| MONTH | Month duration. |

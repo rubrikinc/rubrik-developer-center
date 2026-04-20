@@ -4,10 +4,10 @@ Artifacts to be deleted for a feature.
 
 ## Fields
 
-| Field             | Type                                                                                                                                                   | Description                   |
-| ----------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ | ----------------------------- |
-| artifactsToDelete | \[[ExternalArtifactMapReply](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/ExternalArtifactMapReply/index.md)!\]! | Native ID of the AWS account. |
-| feature           | [CloudAccountFeature](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/CloudAccountFeature/index.md)!                  | Feature Enum.                 |
+| Field             | Type                                                                                                                                                   | Description                                          |
+| ----------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------------------------------------------------- |
+| artifactsToDelete | \[[ExternalArtifactMapReply](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/ExternalArtifactMapReply/index.md)!\]! | Artifact map that should be deleted for the feature. |
+| feature           | [CloudAccountFeature](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/CloudAccountFeature/index.md)!                  | The feature for which the deletion is requested.     |
 
 ## Used By
 

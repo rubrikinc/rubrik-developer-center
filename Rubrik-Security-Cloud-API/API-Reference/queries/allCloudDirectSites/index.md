@@ -34,6 +34,7 @@ query {
         "name": "example-string",
         "deviceDetails": [
           {
+            "hardwareId": "example-string",
             "ipAddress": "example-string",
             "lastConnectedAt": "2024-01-01T00:00:00.000Z",
             "lastState": "DEGRADED",

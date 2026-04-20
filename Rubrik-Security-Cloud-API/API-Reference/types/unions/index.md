@@ -1,6 +1,6 @@
 # Unions
 
-25 types.
+29 types.
 
 [AccessMethodDetailsType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/unions/AccessMethodDetailsType/index.md)\
 [ActionTypes](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/unions/ActionTypes/index.md)\
@@ -20,10 +20,14 @@
 [MongoSnapshotGroupByInfo](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/unions/MongoSnapshotGroupByInfo/index.md)\
 [MonthlyDaySpecification](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/unions/MonthlyDaySpecification/index.md)\
 [MosaicSnapshotGroupByInfo](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/unions/MosaicSnapshotGroupByInfo/index.md)\
+[NestedFilterConfig](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/unions/NestedFilterConfig/index.md)\
 [NfAnomalyResultGroupByInfo](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/unions/NfAnomalyResultGroupByInfo/index.md)\
 [PcrImagePullDetails](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/unions/PcrImagePullDetails/index.md)\
 [PolarisSnapshotGroupByInfo](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/unions/PolarisSnapshotGroupByInfo/index.md)\
 [RansomwareResultGroupByInfo](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/unions/RansomwareResultGroupByInfo/index.md)\
+[RemediationDetailsUnion](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/unions/RemediationDetailsUnion/index.md)\
+[ResourceMetadataUnion](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/unions/ResourceMetadataUnion/index.md)\
 [SnappableGroupByInfo](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/unions/SnappableGroupByInfo/index.md)\
 [SnappableLocationType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/unions/SnappableLocationType/index.md)\
-[TaskDetailGroupByInfo](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/unions/TaskDetailGroupByInfo/index.md)
+[TaskDetailGroupByInfo](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/unions/TaskDetailGroupByInfo/index.md)\
+[ViolationDetailsUnion](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/unions/ViolationDetailsUnion/index.md)

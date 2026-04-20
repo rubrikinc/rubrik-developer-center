@@ -1,15 +1,15 @@
 # AnalyzerAccessUsage
 
-*No description available.*
+Analyzer access usage data.
 
 ## Fields
 
-| Field      | Type                                                                                                                                   | Description |
-| ---------- | -------------------------------------------------------------------------------------------------------------------------------------- | ----------- |
-| analyzer   | [Analyzer](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/Analyzer/index.md)                       |             |
-| count      | Int!                                                                                                                                   |             |
-| countDelta | Int!                                                                                                                                   |             |
-| topFiles   | \[[FileAccessResult](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/FileAccessResult/index.md)!\]! |             |
+| Field      | Type                                                                                                                                   | Description                                 |
+| ---------- | -------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------- |
+| analyzer   | [Analyzer](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/Analyzer/index.md)                       | Analyzer details.                           |
+| count      | Int!                                                                                                                                   | Sum of top files may not be equal to count. |
+| countDelta | Int!                                                                                                                                   |                                             |
+| topFiles   | \[[FileAccessResult](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/FileAccessResult/index.md)!\]! |                                             |
 
 ## Used By
 

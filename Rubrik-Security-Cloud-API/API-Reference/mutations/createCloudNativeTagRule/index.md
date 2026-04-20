@@ -25,7 +25,7 @@ mutation CreateCloudNativeTagRule($input: CreateCloudNativeTagRuleInput!) {
 ```json
 {
   "input": {
-    "objectType": "AWS_DYNAMODB_TABLE",
+    "objectType": "AWS_CONFIG",
     "tagRuleName": "example-string"
   }
 }

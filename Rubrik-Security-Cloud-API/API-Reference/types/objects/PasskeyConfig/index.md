@@ -1,16 +1,16 @@
 # PasskeyConfig
 
-Represents the reply returned for passkeyConfig.
+Passkey configuration.
 
 ## Fields
 
-| Field                    | Type     | Description                                      |
-| ------------------------ | -------- | ------------------------------------------------ |
-| maxPasskeysAllowed       | Int!     | Max number of passkeys allowed.                  |
-| passkeysAllowed          | Boolean! | Are passkeys allowed.                            |
-| passwordlessLoginAllowed | Boolean! | Specifies whether passwordless login is allowed. |
-| platformPasskeyAllowed   | Boolean! | Are platform passkeys allowed.                   |
-| roamingPasskeyAllowed    | Boolean! | Are roaming passkeys allowed.                    |
+| Field                    | Type     | Description                                                |
+| ------------------------ | -------- | ---------------------------------------------------------- |
+| maxPasskeysAllowed       | Int!     | Required. Maximum number of passkeys allowed.              |
+| passkeysAllowed          | Boolean! | Required. Are passkeys allowed?                            |
+| passwordlessLoginAllowed | Boolean! | Optional. Specifies whether passwordless login is allowed. |
+| platformPasskeyAllowed   | Boolean! | Required. Are platform passkeys allowed?                   |
+| roamingPasskeyAllowed    | Boolean! | Required. Are roaming passkeys allowed?                    |
 
 ## Used By
 

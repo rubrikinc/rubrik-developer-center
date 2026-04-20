@@ -32,8 +32,6 @@ mutation GcpNativeExportGceInstance($input: GcpNativeExportGceInstanceInput!) {
     "shouldPowerOff": true,
     "snapshotId": "00000000-0000-0000-0000-000000000000",
     "targetInstanceName": "example-string",
-    "targetMachineType": "example-string",
-    "targetSubnetName": "example-string",
     "targetZone": "example-string"
   }
 }

@@ -1,12 +1,12 @@
 # pendingAction
 
-*No description available.*
+Retrieve a specific pending action by its ID.
 
 ## Arguments
 
-| Argument                     | Type    | Description |
-| ---------------------------- | ------- | ----------- |
-| pendingActionId *(required)* | String! |             |
+| Argument                     | Type    | Description                                              |
+| ---------------------------- | ------- | -------------------------------------------------------- |
+| pendingActionId *(required)* | String! | The unique identifier of the pending action to retrieve. |
 
 ## Returns
 

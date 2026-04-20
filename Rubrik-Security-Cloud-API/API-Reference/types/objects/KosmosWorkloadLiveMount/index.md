@@ -23,3 +23,4 @@ Kosmos Workload Live Mounts.
 **Queries**
 
 - [query: mysqlInstanceLiveMounts](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/mysqlInstanceLiveMounts/index.md) *(via connection)*
+- [query: postgresDbClusterLiveMounts](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/postgresDbClusterLiveMounts/index.md) *(via connection)*

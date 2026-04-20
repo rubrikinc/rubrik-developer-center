@@ -15,6 +15,8 @@ AWS native regions.
 | AP_SOUTHEAST_2 | AWS native Asia Pacific (Sydney) region.         |
 | AP_SOUTHEAST_3 | AWS native Asia Pacific (Jakarta) region.        |
 | AP_SOUTHEAST_4 | AWS native Asia Pacific (Melbourne) region.      |
+| AP_SOUTHEAST_5 | AWS native Asia Pacific (Malaysia) region.       |
+| AP_SOUTHEAST_7 | AWS native Asia Pacific (Thailand) region.       |
 | AP_SOUTH_1     | AWS native Asia Pacific (Mumbai) region.         |
 | AP_SOUTH_2     | AWS native Asia Pacific (Hyderabad) region.      |
 | CA_CENTRAL_1   | AWS native Canada (Central) region.              |
@@ -22,6 +24,7 @@ AWS native regions.
 | CN_NORTHWEST_1 | AWS native China (Ningxia) region.               |
 | CN_NORTH_1     | AWS native China (Beijing) region.               |
 | EU_CENTRAL_1   | AWS native EU (Frankfurt) region.                |
+| EU_CENTRAL_2   | AWS native Europe (Zurich) region.               |
 | EU_NORTH_1     | AWS native EU (Stockholm) region.                |
 | EU_SOUTH_1     | AWS native EU (Milan) region.                    |
 | EU_SOUTH_2     | AWS native EU (Spain) region.                    |
@@ -31,6 +34,7 @@ AWS native regions.
 | IL_CENTRAL_1   | AWS Israel (Tel Aviv) region.                    |
 | ME_CENTRAL_1   | AWS native Middle East (UAE) region.             |
 | ME_SOUTH_1     | AWS native Middle East (Bahrain) region.         |
+| MX_CENTRAL_1   | AWS native Mexico (Central) region.              |
 | NOT_SPECIFIED  | AWS native region is not specified.              |
 | SA_EAST_1      | AWS native South America (Sao Paulo) region.     |
 | US_EAST_1      | AWS native US East (N. Virginia) region.         |

@@ -15,3 +15,4 @@ Filter types for sign-in logs filter values.
 | SIGNIN_LOG_FILTER_LOCATION         | Filter by location (city + country code, e.g. "New York, US"). |
 | SIGNIN_LOG_FILTER_TENANT           | Filter by tenant.                                              |
 | SIGNIN_LOG_FILTER_USER             | Filter by user (principal name).                               |
+| SIGNIN_LOG_FILTER_USER_ID          | Filter by user ID (Entra ID object ID).                        |

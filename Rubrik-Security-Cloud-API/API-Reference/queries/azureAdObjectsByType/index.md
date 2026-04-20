@@ -40,7 +40,7 @@ query AzureAdObjectsByType($input: AzureAdObjectTypeInput!) {
 ```json
 {
   "input": {
-    "azureAdObjectType": "ADMINISTRATIVE_UNIT",
+    "azureAdObjectType": "ACCOUNT_PROTECTION",
     "keywordSearchFilters": [
       {}
     ],
@@ -59,7 +59,7 @@ query AzureAdObjectsByType($input: AzureAdObjectTypeInput!) {
           {
             "objectId": "example-string",
             "snapshotId": "example-string",
-            "type": "ADMINISTRATIVE_UNIT"
+            "type": "ACCOUNT_PROTECTION"
           }
         ]
       ],

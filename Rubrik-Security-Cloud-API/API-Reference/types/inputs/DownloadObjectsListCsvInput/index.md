@@ -1,6 +1,6 @@
 # DownloadObjectsListCsvInput
 
-*No description available.*
+Input for downloading a CSV of the objects list.
 
 ## Fields
 

@@ -1,11 +1,11 @@
 # CdmSnapshotSortByEnum
 
-*No description available.*
+Sorts CDM snapshots by field.
 
 ## Values
 
-| Value       | Description |
-| ----------- | ----------- |
-| Date        |             |
-| SnappableId |             |
-| SnapshotId  |             |
+| Value       | Description                        |
+| ----------- | ---------------------------------- |
+| Date        | Sort CDM snapshots by date.        |
+| SnappableId | Sort CDM snapshots by object ID.   |
+| SnapshotId  | Sort CDM snapshots by snapshot ID. |

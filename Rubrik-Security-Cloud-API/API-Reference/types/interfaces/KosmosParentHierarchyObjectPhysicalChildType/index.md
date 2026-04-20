@@ -47,3 +47,4 @@ The physical child types of theKosmos Parent Hierarchy Objects
 ## Implemented By
 
 - [MysqldbDatabase](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/MysqldbDatabase/index.md)
+- [PostgreSQLDatabase](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/PostgreSQLDatabase/index.md)

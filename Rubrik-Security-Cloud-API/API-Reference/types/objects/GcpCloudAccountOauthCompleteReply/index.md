@@ -4,9 +4,9 @@ GCP Cloud Account OAuth Complete Response.
 
 ## Fields
 
-| Field    | Type                                                                                                                             | Description                         |
-| -------- | -------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------- |
-| userInfo | [GcpOauthUserInfo](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/GcpOauthUserInfo/index.md) | GCP cloud account user information. |
+| Field    | Type                                                                                                                             | Description       |
+| -------- | -------------------------------------------------------------------------------------------------------------------------------- | ----------------- |
+| userInfo | [GcpOauthUserInfo](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/GcpOauthUserInfo/index.md) | User information. |
 
 ## Used By
 

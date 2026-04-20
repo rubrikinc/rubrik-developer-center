@@ -1,6 +1,6 @@
 # vsphereVmUnregisterAgent
 
-Unregister Rubrik Backup Service Supported in v9.5 Unregister the Rubrik Backup Service state for a specified virtual machine.
+Unregister Rubrik Backup Service Supported in v9.5+ Unregister the Rubrik Backup Service state for a specified virtual machine.
 
 ## Arguments
 

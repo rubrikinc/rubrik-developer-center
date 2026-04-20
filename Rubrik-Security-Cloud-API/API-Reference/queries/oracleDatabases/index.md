@@ -35,6 +35,7 @@ query {
       isLiveMount
       isRelic
       logBackupFrequency
+      logRatePerRmanChannelInMb
       logRetentionHours
       name
       numChannels
@@ -46,6 +47,7 @@ query {
       onDemandSnapshotCount
       osNames
       osType
+      ratePerRmanChannelInMb
       rbaRole
       replicatedObjectCount
       sectionSizeInGigabytes

@@ -1,6 +1,6 @@
 # CustomerFacingFile
 
-Customer facing file.
+CustomerFacingFile is all the information that this service has stored about a file except the Internal ID. It also simplifies the fields so they can be displayed on the UI easier.
 
 ## Fields
 

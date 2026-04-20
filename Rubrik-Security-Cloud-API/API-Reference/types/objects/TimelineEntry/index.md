@@ -4,11 +4,11 @@
 
 ## Fields
 
-| Field    | Type                                                                                                     | Description |
-| -------- | -------------------------------------------------------------------------------------------------------- | ----------- |
-| day      | String!                                                                                                  |             |
-| hits     | [Hits](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/Hits/index.md) |             |
-| policyId | String!                                                                                                  |             |
+| Field    | Type                                                                                                     | Description                                                             |
+| -------- | -------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------- |
+| day      | String!                                                                                                  | Day in ISO date format YYYY-MM-DD.                                      |
+| hits     | [Hits](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/Hits/index.md) |                                                                         |
+| policyId | String!                                                                                                  | Policy ID, optionally populated when entry does not represent a policy. |
 
 ## Used By
 

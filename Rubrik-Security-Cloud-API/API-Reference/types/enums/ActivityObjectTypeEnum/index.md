@@ -11,6 +11,7 @@ Represents different types of activity objects.
 | ACTIVE_DIRECTORY_FOREST                  | Active Directory forest.                       |
 | AGENT_CLOUD_POLICY                       | Agent Cloud policy object.                     |
 | ATLASSIAN_SITE                           | Atlassian site.                                |
+| AWS_NATIVE_CONFIG                        | AWS configuration.                             |
 | AWS_NATIVE_DYNAMODB_TABLE                | AWS native dynamoDB table.                     |
 | AWS_NATIVE_REGION                        | AWS native region.                             |
 | AWS_NATIVE_S3_BUCKET                     | AWS native S3 bucket object.                   |
@@ -67,7 +68,16 @@ Represents different types of activity objects.
 | Envoy                                    | Envoy object.                                  |
 | ExchangeDatabase                         | Exchange database object.                      |
 | Exocompute                               | Exocompute object.                             |
+| FUSION_COMPUTE_CLUSTER                   | FusionCompute cluster.                         |
+| FUSION_COMPUTE_DATASTORE                 | FusionCompute datastore.                       |
+| FUSION_COMPUTE_HOST                      | FusionCompute host.                            |
+| FUSION_COMPUTE_NETWORK                   | FusionCompute network.                         |
+| FUSION_COMPUTE_SITE                      | FusionCompute site.                            |
+| FUSION_COMPUTE_VIRTUAL_MACHINE           | FusionCompute virtual machine.                 |
+| FUSION_COMPUTE_VRM                       | FusionCompute VRM (Virtual Resource Manager).  |
 | FailoverClusterApp                       | Failover cluster app.                          |
+| GCP_ALLOY_DB_CLUSTER                     | GCP AlloyDB Cluster.                           |
+| GCP_BIG_QUERY_DATASET                    | GCP BigQuery Dataset.                          |
 | GCP_CLOUD_SQL_INSTANCE                   | GCP Cloud SQL Instance.                        |
 | GITHUB_ORGANIZATION                      | GitHub Organization.                           |
 | GITHUB_REPOSITORY                        | GitHub Repository.                             |
@@ -145,6 +155,7 @@ Represents different types of activity objects.
 | OLVM_MANAGER                             | OLVM Manager.                                  |
 | OLVM_VIRTUAL_MACHINE                     | OLVM Virtual Machine.                          |
 | OPENSTACK_ENVIRONMENT                    | Openstack Environment.                         |
+| OPENSTACK_IMAGE                          | Openstack Image.                               |
 | OPENSTACK_VIRTUAL_MACHINE                | Openstack Virtual Machine.                     |
 | ORGANIZATION                             | Organization object.                           |
 | ORION_THREAT_HUNT                        | Orion threat hunt.                             |
@@ -155,6 +166,7 @@ Represents different types of activity objects.
 | OracleRac                                | Oracle RAC object.                             |
 | POSTGRES_DB_CLUSTER                      | Postgres Database Cluster.                     |
 | PRINCIPAL_ACCESS_POLICY                  | Access Policy principal type.                  |
+| PRINCIPAL_APP_ROLE                       | App Role principal type.                       |
 | PRINCIPAL_ASSUMABLE_IDENTITY             | Assumable identity principal type.             |
 | PRINCIPAL_ATTRIBUTE_SCHEMA               | Attribute Schema principal type.               |
 | PRINCIPAL_CERTIFICATE_TEMPLATE           | Certificate Template principal type.           |
@@ -196,12 +208,16 @@ Represents different types of activity objects.
 | PRINCIPAL_SITE_LINK_BRIDGE               | Site Link Bridge principal type.               |
 | PRINCIPAL_SUBNET                         | Subnet principal type.                         |
 | PRINCIPAL_SUBNET_CONTAINER               | Subnet Container principal type.               |
+| PRINCIPAL_SYSTEM_IDENTITY                | System Identity principal type.                |
 | PRINCIPAL_TRUSTED_DOMAIN                 | Trusted Domain principal type.                 |
 | PRINCIPAL_VOLUME                         | Volume principal type.                         |
 | PROXMOX_CLUSTER                          | Proxmox cluster.                               |
 | PROXMOX_ENVIRONMENT                      | Proxmox environment.                           |
 | PROXMOX_NODE                             | Proxmox node.                                  |
 | PROXMOX_VIRTUAL_MACHINE                  | Proxmox virtual machine.                       |
+| PURE_STORAGE_ARRAY                       | Pure Storage array.                            |
+| PURE_STORAGE_PROTECTION_GROUP            | Pure Storage protection group.                 |
+| PURE_STORAGE_VOLUME                      | Pure Storage volume.                           |
 | PolarisAccount                           | Rubrik SaaS account object.                    |
 | PublicCloudMachineInstance               | Public cloud machine instance.                 |
 | REPLICATION_PAIR                         | Rubrik cluster replication pair.               |

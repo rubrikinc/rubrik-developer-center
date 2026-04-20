@@ -16,6 +16,7 @@ Enum representing all the possible object types which generate events.
 | AWS_ACCOUNT                                                                      | AWS account object.                            |
 | AWS_EVENT_TYPE                                                                   | AWS object.                                    |
 | AWS_NATIVE_ACCOUNT                                                               | AWS native account object.                     |
+| AWS_NATIVE_CONFIG                                                                | AWS configuration.                             |
 | AWS_NATIVE_DYNAMODB_TABLE                                                        | AWS native dynamoDB table.                     |
 | AWS_NATIVE_EBS_VOLUME                                                            | AWS native EBS volume object.                  |
 | AWS_NATIVE_EC2_INSTANCE                                                          | AWS native EC2 instance object.                |
@@ -65,6 +66,15 @@ Enum representing all the possible object types which generate events.
 | EXCHANGE_DATABASE                                                                | Exchange database object.                      |
 | EXOCOMPUTE                                                                       | Exocompute object.                             |
 | FAILOVER_CLUSTER_APP                                                             | Failover cluster app.                          |
+| FUSION_COMPUTE_CLUSTER                                                           | FusionCompute cluster.                         |
+| FUSION_COMPUTE_DATASTORE                                                         | FusionCompute datastore.                       |
+| FUSION_COMPUTE_HOST                                                              | FusionCompute host.                            |
+| FUSION_COMPUTE_NETWORK                                                           | FusionCompute network.                         |
+| FUSION_COMPUTE_SITE                                                              | FusionCompute site.                            |
+| FUSION_COMPUTE_VIRTUAL_MACHINE                                                   | FusionCompute virtual machine.                 |
+| FUSION_COMPUTE_VRM                                                               | FusionCompute VRM (Virtual Resource Manager).  |
+| GCP_ALLOY_DB_CLUSTER                                                             | GCP AlloyDB Cluster.                           |
+| GCP_BIG_QUERY_DATASET                                                            | GCP BigQuery Dataset.                          |
 | GCP_CLOUD_SQL_INSTANCE                                                           | GCP Cloud SQL Instance.                        |
 | GCP_NATIVE_DISK                                                                  | GCP native disk.                               |
 | GCP_NATIVE_GCE_INSTANCE                                                          | GCP native GCE instance.                       |
@@ -151,6 +161,7 @@ Enum representing all the possible object types which generate events.
 | OLVM_MANAGER                                                                     | OLVM Manager.                                  |
 | OLVM_VIRTUAL_MACHINE                                                             | OLVM Virtual Machine.                          |
 | OPENSTACK_ENVIRONMENT                                                            | Openstack Environment.                         |
+| OPENSTACK_IMAGE                                                                  | Openstack Image.                               |
 | OPENSTACK_VIRTUAL_MACHINE                                                        | Openstack Virtual Machine.                     |
 | ORACLE                                                                           | Oracle.                                        |
 | ORACLE_DB                                                                        | Oracle database object.                        |
@@ -160,6 +171,7 @@ Enum representing all the possible object types which generate events.
 | ORION_THREAT_HUNT                                                                | Orion threat hunt.                             |
 | POSTGRES_DB_CLUSTER                                                              | Postgres Database Cluster.                     |
 | PRINCIPAL_ACCESS_POLICY                                                          | Access Policy principal type.                  |
+| PRINCIPAL_APP_ROLE                                                               | App Role principal type.                       |
 | PRINCIPAL_ASSUMABLE_IDENTITY                                                     | Assumable identity principal type.             |
 | PRINCIPAL_ATTRIBUTE_SCHEMA                                                       | Attribute Schema principal type.               |
 | PRINCIPAL_CERTIFICATE_TEMPLATE                                                   | Certificate Template principal type.           |
@@ -201,6 +213,7 @@ Enum representing all the possible object types which generate events.
 | PRINCIPAL_SITE_LINK_BRIDGE                                                       | Site Link Bridge principal type.               |
 | PRINCIPAL_SUBNET                                                                 | Subnet principal type.                         |
 | PRINCIPAL_SUBNET_CONTAINER                                                       | Subnet Container principal type.               |
+| PRINCIPAL_SYSTEM_IDENTITY                                                        | System Identity principal type.                |
 | PRINCIPAL_TRUSTED_DOMAIN                                                         | Trusted Domain principal type.                 |
 | PRINCIPAL_VOLUME                                                                 | Volume principal type.                         |
 | PROXMOX_CLUSTER                                                                  | Proxmox cluster.                               |
@@ -208,6 +221,9 @@ Enum representing all the possible object types which generate events.
 | PROXMOX_NODE                                                                     | Proxmox node.                                  |
 | PROXMOX_VIRTUAL_MACHINE                                                          | Proxmox virtual machine.                       |
 | PUBLIC_CLOUD_MACHINE_INSTANCE                                                    | Public cloud machine instance.                 |
+| PURE_STORAGE_ARRAY                                                               | Pure Storage array.                            |
+| PURE_STORAGE_PROTECTION_GROUP                                                    | Pure Storage protection group.                 |
+| PURE_STORAGE_VOLUME                                                              | Pure Storage volume.                           |
 | REPLICATION_PAIR                                                                 | Rubrik cluster replication pair.               |
 | RSC_CHILD_ACCOUNT                                                                | RSC Child Account (Dedicated Tenant).          |
 | RUBRIK_SAAS_ACCOUNT                                                              | Rubrik SaaS account object.                    |

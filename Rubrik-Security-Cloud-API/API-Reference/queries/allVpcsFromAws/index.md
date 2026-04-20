@@ -44,7 +44,8 @@ query {
           {
             "availabilityZone": "example-string",
             "id": "example-string",
-            "name": "example-string"
+            "name": "example-string",
+            "outpostArn": "example-string"
           }
         ]
       }

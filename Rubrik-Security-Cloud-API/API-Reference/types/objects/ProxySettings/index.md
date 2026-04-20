@@ -4,12 +4,12 @@ Proxy settings for target.
 
 ## Fields
 
-| Field       | Type    | Description |
-| ----------- | ------- | ----------- |
-| portNumber  | Int!    |             |
-| protocol    | String! |             |
-| proxyServer | String! |             |
-| username    | String! |             |
+| Field       | Type    | Description                        |
+| ----------- | ------- | ---------------------------------- |
+| portNumber  | Int!    | Port number of the proxy server.   |
+| protocol    | String! | Protocol used by the proxy server. |
+| proxyServer | String! | Proxy server address.              |
+| username    | String! | Username for the proxy server.     |
 
 ## Used By
 

@@ -49,6 +49,7 @@ User account details.
 - [Group.users](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/Group/index.md)
 - [OracleLiveMount.owner](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/OracleLiveMount/index.md)
 - [PolicyDetail.creator](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/PolicyDetail/index.md)
+- [PolicyViolation.userLastUpdated](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/PolicyViolation/index.md)
 - [ScheduledReport.creator](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/ScheduledReport/index.md)
 - [ScheduledReport.lastEditor](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/ScheduledReport/index.md)
 - [ScheduledReport.rubrikRecipientUsers](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/ScheduledReport/index.md)

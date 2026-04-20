@@ -6,6 +6,7 @@ Status of a failover group (HA Policy).
 
 | Value                                        | Description                          |
 | -------------------------------------------- | ------------------------------------ |
+| FAILOVER_GROUP_STATUS_DELETING               | Failover group is being deleted.     |
 | FAILOVER_GROUP_STATUS_FAILBACK_COMPLETED     | Failback completed.                  |
 | FAILOVER_GROUP_STATUS_FAILBACK_IN_PROGRESS   | Failback in progress.                |
 | FAILOVER_GROUP_STATUS_FAILOVER_COMPLETED     | Failover completed.                  |

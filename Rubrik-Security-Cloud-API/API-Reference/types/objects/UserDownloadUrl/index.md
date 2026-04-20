@@ -1,6 +1,6 @@
 # UserDownloadUrl
 
-*No description available.*
+Download URL for a file.
 
 ## Fields
 

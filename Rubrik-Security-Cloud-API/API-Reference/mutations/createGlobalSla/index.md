@@ -29,6 +29,7 @@ mutation CreateGlobalSla($input: CreateGlobalSlaInput!) {
     objectTypes
     ownerOrgName
     protectedObjectCount
+    purpose
     retentionLockMode
     snapshotScheduleLastUpdatedAt
     stateVersion

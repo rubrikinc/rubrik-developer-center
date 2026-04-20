@@ -17,3 +17,4 @@ Input to create the NFS archival location.
 | nfsAuthType             | [AuthTypeEnum](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/AuthTypeEnum/index.md)! | Authentication type of the NFS archival location.                           |
 | nfsVersion              | Int                                                                                                                     | Version of the NFS archival location.                                       |
 | otherNfsOptions         | String                                                                                                                  | Other options of the NFS archival location.                                 |
+| subType                 | [NfsSubType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/NfsSubType/index.md)      | Subtype of the NFS archival location.                                       |

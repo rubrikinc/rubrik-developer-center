@@ -4,9 +4,9 @@
 
 ## Values
 
-| Value           | Description |
-| --------------- | ----------- |
-| CREATE_ACTIVITY |             |
-| DELETE_ACTIVITY |             |
-| READ_ACTIVITY   |             |
-| WRITE_ACTIVITY  |             |
+| Value           | Description      |
+| --------------- | ---------------- |
+| CREATE_ACTIVITY | Create activity. |
+| DELETE_ACTIVITY | Delete activity. |
+| READ_ACTIVITY   | Read activity.   |
+| WRITE_ACTIVITY  | Write activity.  |

@@ -4,7 +4,7 @@
 
 ## Values
 
-| Value | Description |
-| ----- | ----------- |
-| DAY   |             |
-| MONTH |             |
+| Value | Description        |
+| ----- | ------------------ |
+| DAY   | Day granularity.   |
+| MONTH | Month granularity. |

@@ -1,12 +1,13 @@
 # allClusterGlobalSlas
 
-Global SLA Domains protecting at least one object on the specified Rubrik cluster.
+Retrieve global SLA Domains associated with the specified Rubrik cluster. By default, only SLA Domains protecting at least one object are returned.
 
 ## Arguments
 
-| Argument                    | Type                                                                                                      | Description                 |
-| --------------------------- | --------------------------------------------------------------------------------------------------------- | --------------------------- |
-| cdmClusterUUID *(required)* | [UUID](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/UUID/index.md)! | UUID of the Rubrik cluster. |
+| Argument                    | Type                                                                                                      | Description                                                                                           |
+| --------------------------- | --------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- |
+| cdmClusterUUID *(required)* | [UUID](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/UUID/index.md)! | UUID of the Rubrik cluster.                                                                           |
+| onlyWithProtectedObjects    | Boolean                                                                                                   | When true, only return SLA Domains that protect at least one object on the cluster. Defaults to true. |
 
 ## Returns
 

@@ -1,14 +1,14 @@
 # AuthorizedOperations
 
-*No description available.*
+Authorized actions permitted on a single object.
 
 ## Fields
 
-| Field             | Type                                                                                                                                       | Description         |
-| ----------------- | ------------------------------------------------------------------------------------------------------------------------------------------ | ------------------- |
-| id                | String!                                                                                                                                    |                     |
-| operations        | \[[Operation](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/Operation/index.md)!\]!                     |                     |
-| workloadHierarchy | [WorkloadLevelHierarchy](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/WorkloadLevelHierarchy/index.md) | Workload Hierarchy. |
+| Field             | Type                                                                                                                                       | Description                                          |
+| ----------------- | ------------------------------------------------------------------------------------------------------------------------------------------ | ---------------------------------------------------- |
+| id                | String!                                                                                                                                    | Object ID that the authorization operations are for. |
+| operations        | \[[Operation](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/Operation/index.md)!\]!                     | Operations that are authorized.                      |
+| workloadHierarchy | [WorkloadLevelHierarchy](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/WorkloadLevelHierarchy/index.md) | Workload Hierarchy.                                  |
 
 ## Used By
 

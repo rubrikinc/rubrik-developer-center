@@ -1,13 +1,13 @@
 # SnapshotResult
 
-*No description available.*
+Captures a snappable and snapshot for the snapshot picker
 
 ## Fields
 
-| Field        | Type                                                                                                      | Description |
-| ------------ | --------------------------------------------------------------------------------------------------------- | ----------- |
-| snapshotFid  | String!                                                                                                   |             |
-| snapshotTime | [Long](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/Long/index.md)! |             |
+| Field        | Type                                                                                                      | Description    |
+| ------------ | --------------------------------------------------------------------------------------------------------- | -------------- |
+| snapshotFid  | String!                                                                                                   | Snapshot FID.  |
+| snapshotTime | [Long](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/Long/index.md)! | Snapshot time. |
 
 ## Used By
 

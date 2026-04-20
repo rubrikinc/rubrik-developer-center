@@ -47,7 +47,8 @@ query AllDbSubnetGroupsByRegionFromAws($awsAccountRubrikId: UUID!, $region: AwsN
           {
             "availabilityZone": "example-string",
             "id": "example-string",
-            "name": "example-string"
+            "name": "example-string",
+            "outpostArn": "example-string"
           }
         ]
       }

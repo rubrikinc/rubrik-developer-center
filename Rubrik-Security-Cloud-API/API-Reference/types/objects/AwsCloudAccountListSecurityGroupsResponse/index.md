@@ -4,9 +4,9 @@ AWS Cloud Account lists the security group response.
 
 ## Fields
 
-| Field  | Type                                                                                                                                 | Description                                         |
-| ------ | ------------------------------------------------------------------------------------------------------------------------------------ | --------------------------------------------------- |
-| result | \[[CloudAccountSub](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/CloudAccountSub/index.md)!\]! | List of security groups and associated information. |
+| Field  | Type                                                                                                                                 | Description              |
+| ------ | ------------------------------------------------------------------------------------------------------------------------------------ | ------------------------ |
+| result | \[[CloudAccountSub](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/CloudAccountSub/index.md)!\]! | List of security groups. |
 
 ## Used By
 

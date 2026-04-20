@@ -4,10 +4,10 @@
 
 ## Fields
 
-| Field    | Type                                                                                                                                | Description |
-| -------- | ----------------------------------------------------------------------------------------------------------------------------------- | ----------- |
-| policyId | String!                                                                                                                             |             |
-| status   | [ObjectPolicyStatus](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/ObjectPolicyStatus/index.md)! |             |
+| Field    | Type                                                                                                                                | Description           |
+| -------- | ----------------------------------------------------------------------------------------------------------------------------------- | --------------------- |
+| policyId | String!                                                                                                                             | Policy ID.            |
+| status   | [ObjectPolicyStatus](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/ObjectPolicyStatus/index.md)! | Status of the policy. |
 
 ## Used By
 

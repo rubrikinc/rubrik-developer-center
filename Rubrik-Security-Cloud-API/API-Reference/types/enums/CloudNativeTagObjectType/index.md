@@ -6,6 +6,7 @@ Object Type for cloud-native tag rule.
 
 | Value                             | Description                        |
 | --------------------------------- | ---------------------------------- |
+| AWS_CONFIG                        | AWS Config.                        |
 | AWS_DYNAMODB_TABLE                | AWS DynamoDB Table.                |
 | AWS_EBS_VOLUME                    | AWS EBS Volume.                    |
 | AWS_EC2_INSTANCE                  | AWS EC2 Instance.                  |

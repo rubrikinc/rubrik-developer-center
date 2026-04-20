@@ -50,6 +50,7 @@ query AwsNativeEc2InstancesByName($ec2InstanceName: String!) {
       objectType
       onDemandSnapshotCount
       osType
+      outpostArn
       privateIp
       publicIp
       region

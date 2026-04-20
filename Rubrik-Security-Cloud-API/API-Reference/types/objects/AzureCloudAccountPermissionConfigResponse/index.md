@@ -1,15 +1,15 @@
 # AzureCloudAccountPermissionConfigResponse
 
-Configuration consisting of role permissions and feature policy version required for Azure subscription setup. Features refer to the Rubrik features that the customer wants to be enabled on the cloud account.
+Permission version and the list of permissions required at the subscription and resource group level for setting up an Azure subscription.
 
 ## Fields
 
-| Field                        | Type                                                                                                                                                                 | Description                                                                                             |
-| ---------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------- |
-| permissionVersion            | Int!                                                                                                                                                                 | Policy permission version to be used on Rubrik for adding a subscription.                               |
-| permissionsGroupVersions     | \[[PermissionsGroupWithVersion](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/PermissionsGroupWithVersion/index.md)!\]!         | Policy permissions group versions to be used on Rubrik for adding a subscription.                       |
-| resourceGroupRolePermissions | \[[AzureCloudAccountRolePermission](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AzureCloudAccountRolePermission/index.md)!\]! | List of permissions to be applied on the resource group level role created in Azure for a subscription. |
-| rolePermissions              | \[[AzureCloudAccountRolePermission](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AzureCloudAccountRolePermission/index.md)!\]! | List of permissions to be applied on the subscription level role created in Azure for a subscription.   |
+| Field                        | Type                                                                                                                                                                 | Description                                                 |
+| ---------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------- |
+| permissionVersion            | Int!                                                                                                                                                                 | Permission version.                                         |
+| permissionsGroupVersions     | \[[PermissionsGroupWithVersion](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/PermissionsGroupWithVersion/index.md)!\]!         | Permissions group versions.                                 |
+| resourceGroupRolePermissions | \[[AzureCloudAccountRolePermission](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AzureCloudAccountRolePermission/index.md)!\]! | Permissions to be applied on the resource group level role. |
+| rolePermissions              | \[[AzureCloudAccountRolePermission](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AzureCloudAccountRolePermission/index.md)!\]! | Permissions to be applied on the subscription level role.   |
 
 ## Used By
 

@@ -61,7 +61,7 @@ query FailoverGroupHosts($failoverGroupId: UUID!) {
             ],
             "hostId": "00000000-0000-0000-0000-000000000000",
             "hostName": "example-string",
-            "hostStatus": "FAILOVER_GROUP_STATUS_FAILBACK_COMPLETED",
+            "hostStatus": "FAILOVER_GROUP_STATUS_DELETING",
             "hostType": "HOST_REGISTER_OS_TYPE_AIX"
           }
         ]
