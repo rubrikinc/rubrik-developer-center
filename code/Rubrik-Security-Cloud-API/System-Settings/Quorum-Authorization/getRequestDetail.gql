@@ -1,0 +1,25 @@
+query GetTprRequestDetail($requestId: String!) {
+  tprRequestDetail(tprRequestId: $requestId) {
+    id
+    status
+    createdAt
+    expiresAt
+    executionExpiresAt
+    triggeredTprRule
+    triggeredTprRules
+    triggeredTprPolicies
+    isPotentialLastApprover
+    executionType
+    requester {
+      userId
+      username
+      email
+    }
+    statusLog {
+      status
+      time
+      userId
+      comment
+    }
+  }
+}
