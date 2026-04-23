@@ -42,6 +42,11 @@ query {
         }
         fileCount
         consistencyLevel
+        # For MSSQL: true recovery point in epoch milliseconds (divide by 1000 for Unix timestamp).
+        # This differs from `date`, which is the snapshot creation time, not the log-end recovery point.
+        mssqlAppMetadata {
+          endBackupTimestampMs
+        }
       }
       ...on PolarisSnapshot {
         snapshotRetentionInfo {
