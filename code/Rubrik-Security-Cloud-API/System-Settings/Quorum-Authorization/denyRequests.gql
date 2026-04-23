@@ -1,0 +1,11 @@
+mutation DenyTprRequests($input: DenyTprRequestsInput!) {
+  denyTprRequests(input: $input)
+}
+
+# Variables:
+# {
+#   "input": {
+#     "requestIds": ["YOUR_REQUEST_ID"],
+#     "comment": "Denied via ServiceNow ticket SCTASK0012345"
+#   }
+# }
