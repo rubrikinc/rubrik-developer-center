@@ -1279,6 +1279,17 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#get-your-org-id" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Get your org ID
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#read-org-configuration" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1731,6 +1742,17 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#get-your-org-id" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Get your org ID
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#read-org-configuration" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1820,11 +1842,17 @@
 </span></code></pre></div>
 </div>
 <div class="tabbed-block">
-<div class="language-powershell highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nv">$query</span> <span class="p">=</span> <span class="nb">New-RscQuery</span> <span class="n">-Gql</span> <span class="n">tprRequestSummaries</span>
-</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="nv">$filter</span> <span class="p">=</span> <span class="nb">New-Object</span> <span class="n">RubrikSecurityCloud</span><span class="p">.</span><span class="n">Types</span><span class="p">.</span><span class="n">TprRequestFilterInput</span>
-</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="nv">$filter</span><span class="p">.</span><span class="n">Statuses</span> <span class="p">=</span> <span class="p">@(</span><span class="no">[RubrikSecurityCloud.Types.TprReqStatus]</span><span class="p">::</span><span class="n">PENDING</span><span class="p">)</span>
-</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="nv">$query</span><span class="p">.</span><span class="n">Var</span><span class="p">.</span><span class="k">filter</span> <span class="p">=</span> <span class="nv">$filter</span>
-</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="nv">$query</span><span class="p">.</span><span class="n">Invoke</span><span class="p">().</span><span class="n">Nodes</span>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nv">$query</span> <span class="p">=</span> <span class="nb">New-RscQuery</span> <span class="n">-Gql</span> <span class="n">tprRequestSummaries</span> <span class="n">-AddField</span> <span class="p">`</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>    <span class="n">Nodes</span><span class="p">.</span><span class="n">requestId</span><span class="p">,`</span>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>    <span class="n">Nodes</span><span class="p">.</span><span class="n">orgId</span><span class="p">,`</span>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>    <span class="n">Nodes</span><span class="p">.</span><span class="n">orgName</span><span class="p">,`</span>
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>    <span class="n">Nodes</span><span class="p">.</span><span class="n">status</span><span class="p">,`</span>
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>    <span class="n">Nodes</span><span class="p">.</span><span class="n">updatedAt</span><span class="p">,`</span>
+</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>    <span class="n">Nodes</span><span class="p">.</span><span class="n">triggeredTprRule</span>
+</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a><span class="nv">$filter</span> <span class="p">=</span> <span class="nb">New-Object</span> <span class="n">RubrikSecurityCloud</span><span class="p">.</span><span class="n">Types</span><span class="p">.</span><span class="n">TprRequestFilterInput</span>
+</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a><span class="nv">$filter</span><span class="p">.</span><span class="n">Statuses</span> <span class="p">=</span> <span class="p">@(</span><span class="no">[RubrikSecurityCloud.Types.TprReqStatus]</span><span class="p">::</span><span class="n">PENDING</span><span class="p">)</span>
+</span><span id="__span-1-10"><a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a><span class="nv">$query</span><span class="p">.</span><span class="n">Var</span><span class="p">.</span><span class="k">filter</span> <span class="p">=</span> <span class="nv">$filter</span>
+</span><span id="__span-1-11"><a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a><span class="nv">$query</span><span class="p">.</span><span class="n">Invoke</span><span class="p">().</span><span class="n">Nodes</span>
 </span></code></pre></div>
 </div>
 <div class="tabbed-block">
@@ -1876,9 +1904,20 @@
 </span></code></pre></div>
 </div>
 <div class="tabbed-block">
-<div class="language-powershell highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="nv">$query</span> <span class="p">=</span> <span class="nb">New-RscQuery</span> <span class="n">-Gql</span> <span class="n">tprRequestDetail</span>
-</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="nv">$query</span><span class="p">.</span><span class="n">Var</span><span class="p">.</span><span class="n">tprRequestId</span> <span class="p">=</span> <span class="s2">&quot;YOUR_REQUEST_ID&quot;</span>
-</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="nv">$query</span><span class="p">.</span><span class="n">Invoke</span><span class="p">()</span>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="nv">$query</span> <span class="p">=</span> <span class="nb">New-RscQuery</span> <span class="n">-Gql</span> <span class="n">tprRequestDetail</span> <span class="n">-AddField</span> <span class="p">`</span>
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>    <span class="n">id</span><span class="p">,`</span>
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>    <span class="n">orgId</span><span class="p">,`</span>
+</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>    <span class="n">orgName</span><span class="p">,`</span>
+</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>    <span class="n">status</span><span class="p">,`</span>
+</span><span id="__span-4-6"><a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a>    <span class="n">createdAt</span><span class="p">,`</span>
+</span><span id="__span-4-7"><a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a>    <span class="n">updatedAt</span><span class="p">,`</span>
+</span><span id="__span-4-8"><a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a>    <span class="n">expiresAt</span><span class="p">,`</span>
+</span><span id="__span-4-9"><a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a>    <span class="n">executionType</span><span class="p">,`</span>
+</span><span id="__span-4-10"><a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a>    <span class="n">isPotentialLastApprover</span><span class="p">,`</span>
+</span><span id="__span-4-11"><a id="__codelineno-4-11" name="__codelineno-4-11" href="#__codelineno-4-11"></a>    <span class="n">triggeredTprRule</span><span class="p">,`</span>
+</span><span id="__span-4-12"><a id="__codelineno-4-12" name="__codelineno-4-12" href="#__codelineno-4-12"></a>    <span class="n">triggeredTprRules</span>
+</span><span id="__span-4-13"><a id="__codelineno-4-13" name="__codelineno-4-13" href="#__codelineno-4-13"></a><span class="nv">$query</span><span class="p">.</span><span class="n">Var</span><span class="p">.</span><span class="n">tprRequestId</span> <span class="p">=</span> <span class="s2">&quot;YOUR_REQUEST_ID&quot;</span>
+</span><span id="__span-4-14"><a id="__codelineno-4-14" name="__codelineno-4-14" href="#__codelineno-4-14"></a><span class="nv">$query</span><span class="p">.</span><span class="n">Invoke</span><span class="p">()</span>
 </span></code></pre></div>
 </div>
 <div class="tabbed-block">
@@ -2066,8 +2105,17 @@
 </span></code></pre></div>
 </div>
 <div class="tabbed-block">
-<div class="language-powershell highlight"><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="nv">$query</span> <span class="p">=</span> <span class="nb">New-RscQuery</span> <span class="n">-Gql</span> <span class="n">customTprPolicies</span>
-</span><span id="__span-13-2"><a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a><span class="nv">$query</span><span class="p">.</span><span class="n">Invoke</span><span class="p">().</span><span class="n">Nodes</span>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="nv">$query</span> <span class="p">=</span> <span class="nb">New-RscQuery</span> <span class="n">-Gql</span> <span class="n">customTprPolicies</span> <span class="n">-AddField</span> <span class="p">`</span>
+</span><span id="__span-13-2"><a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a>    <span class="n">Nodes</span><span class="p">.</span><span class="n">policyId</span><span class="p">,`</span>
+</span><span id="__span-13-3"><a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a>    <span class="n">Nodes</span><span class="p">.</span><span class="n">policyName</span><span class="p">,`</span>
+</span><span id="__span-13-4"><a id="__codelineno-13-4" name="__codelineno-13-4" href="#__codelineno-13-4"></a>    <span class="n">Nodes</span><span class="p">.</span><span class="n">description</span><span class="p">,`</span>
+</span><span id="__span-13-5"><a id="__codelineno-13-5" name="__codelineno-13-5" href="#__codelineno-13-5"></a>    <span class="n">Nodes</span><span class="p">.</span><span class="n">orgId</span><span class="p">,`</span>
+</span><span id="__span-13-6"><a id="__codelineno-13-6" name="__codelineno-13-6" href="#__codelineno-13-6"></a>    <span class="n">Nodes</span><span class="p">.</span><span class="n">orgName</span><span class="p">,`</span>
+</span><span id="__span-13-7"><a id="__codelineno-13-7" name="__codelineno-13-7" href="#__codelineno-13-7"></a>    <span class="n">Nodes</span><span class="p">.</span><span class="n">quorumRequirement</span><span class="p">,`</span>
+</span><span id="__span-13-8"><a id="__codelineno-13-8" name="__codelineno-13-8" href="#__codelineno-13-8"></a>    <span class="n">Nodes</span><span class="p">.</span><span class="n">numberOfObjectTypes</span><span class="p">,`</span>
+</span><span id="__span-13-9"><a id="__codelineno-13-9" name="__codelineno-13-9" href="#__codelineno-13-9"></a>    <span class="n">Nodes</span><span class="p">.</span><span class="n">numberOfProtectableObjects</span><span class="p">,`</span>
+</span><span id="__span-13-10"><a id="__codelineno-13-10" name="__codelineno-13-10" href="#__codelineno-13-10"></a>    <span class="n">Nodes</span><span class="p">.</span><span class="n">actions</span>
+</span><span id="__span-13-11"><a id="__codelineno-13-11" name="__codelineno-13-11" href="#__codelineno-13-11"></a><span class="nv">$query</span><span class="p">.</span><span class="n">Invoke</span><span class="p">().</span><span class="n">Nodes</span>
 </span></code></pre></div>
 </div>
 <div class="tabbed-block">
@@ -2123,9 +2171,16 @@
 </span></code></pre></div>
 </div>
 <div class="tabbed-block">
-<div class="language-powershell highlight"><pre><span></span><code><span id="__span-16-1"><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a><span class="nv">$query</span> <span class="p">=</span> <span class="nb">New-RscQuery</span> <span class="n">-Gql</span> <span class="n">tprPolicyDetail</span>
-</span><span id="__span-16-2"><a id="__codelineno-16-2" name="__codelineno-16-2" href="#__codelineno-16-2"></a><span class="nv">$query</span><span class="p">.</span><span class="n">Var</span><span class="p">.</span><span class="n">tprPolicyId</span> <span class="p">=</span> <span class="s2">&quot;YOUR_POLICY_ID&quot;</span>
-</span><span id="__span-16-3"><a id="__codelineno-16-3" name="__codelineno-16-3" href="#__codelineno-16-3"></a><span class="nv">$query</span><span class="p">.</span><span class="n">Invoke</span><span class="p">()</span>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-16-1"><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a><span class="nv">$query</span> <span class="p">=</span> <span class="nb">New-RscQuery</span> <span class="n">-Gql</span> <span class="n">tprPolicyDetail</span> <span class="n">-AddField</span> <span class="p">`</span>
+</span><span id="__span-16-2"><a id="__codelineno-16-2" name="__codelineno-16-2" href="#__codelineno-16-2"></a>    <span class="n">policyId</span><span class="p">,`</span>
+</span><span id="__span-16-3"><a id="__codelineno-16-3" name="__codelineno-16-3" href="#__codelineno-16-3"></a>    <span class="n">name</span><span class="p">,`</span>
+</span><span id="__span-16-4"><a id="__codelineno-16-4" name="__codelineno-16-4" href="#__codelineno-16-4"></a>    <span class="n">description</span><span class="p">,`</span>
+</span><span id="__span-16-5"><a id="__codelineno-16-5" name="__codelineno-16-5" href="#__codelineno-16-5"></a>    <span class="n">orgId</span><span class="p">,`</span>
+</span><span id="__span-16-6"><a id="__codelineno-16-6" name="__codelineno-16-6" href="#__codelineno-16-6"></a>    <span class="n">policyScope</span><span class="p">,`</span>
+</span><span id="__span-16-7"><a id="__codelineno-16-7" name="__codelineno-16-7" href="#__codelineno-16-7"></a>    <span class="n">quorumRequirement</span><span class="p">,`</span>
+</span><span id="__span-16-8"><a id="__codelineno-16-8" name="__codelineno-16-8" href="#__codelineno-16-8"></a>    <span class="n">createdAt</span>
+</span><span id="__span-16-9"><a id="__codelineno-16-9" name="__codelineno-16-9" href="#__codelineno-16-9"></a><span class="nv">$query</span><span class="p">.</span><span class="n">Var</span><span class="p">.</span><span class="n">tprPolicyId</span> <span class="p">=</span> <span class="s2">&quot;YOUR_POLICY_ID&quot;</span>
+</span><span id="__span-16-10"><a id="__codelineno-16-10" name="__codelineno-16-10" href="#__codelineno-16-10"></a><span class="nv">$query</span><span class="p">.</span><span class="n">Invoke</span><span class="p">()</span>
 </span></code></pre></div>
 </div>
 <div class="tabbed-block">
@@ -2368,97 +2423,139 @@
 </div>
 </div>
 </div>
-<h3 id="read-org-configuration">Read org configuration</h3>
-<p>Returns the current timeout and quorum settings for the organization.</p>
+<h3 id="get-your-org-id">Get your org ID</h3>
+<p><code>tprConfiguration</code> requires an <code>orgId</code>. Use <code>orgsForPrincipal</code> to retrieve it — this works with both interactive users and service accounts.</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="10:3"><input checked="checked" id="__tabbed_10_1" name="__tabbed_10" type="radio" /><input id="__tabbed_10_2" name="__tabbed_10" type="radio" /><input id="__tabbed_10_3" name="__tabbed_10" type="radio" /><div class="tabbed-labels"><label for="__tabbed_10_1"><abbr title="A query language for APIs that provides a complete and understandble description of the data in the API. GraphQL is a strongly typed architecture, which means everything has a type and there is no guessing on the structure.">GraphQL</abbr></label><label for="__tabbed_10_2">PowerShell SDK</label><label for="__tabbed_10_3">Shell</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
-<div class="language-graphql highlight"><pre><span></span><code><span id="__span-27-1"><a id="__codelineno-27-1" name="__codelineno-27-1" href="#__codelineno-27-1"></a><span class="k">query</span><span class="w"> </span><span class="nf">GetConfiguration</span><span class="p">(</span><span class="nv">$orgId</span><span class="p">:</span><span class="w"> </span><span class="nb">String</span><span class="p">!)</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-27-2"><a id="__codelineno-27-2" name="__codelineno-27-2" href="#__codelineno-27-2"></a><span class="w">  </span><span class="n">tprConfiguration</span><span class="p">(</span><span class="n">orgId</span><span class="p">:</span><span class="w"> </span><span class="nv">$orgId</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-27-3"><a id="__codelineno-27-3" name="__codelineno-27-3" href="#__codelineno-27-3"></a><span class="w">    </span><span class="n">isTprEnabled</span>
-</span><span id="__span-27-4"><a id="__codelineno-27-4" name="__codelineno-27-4" href="#__codelineno-27-4"></a><span class="w">    </span><span class="n">staticQuorumRequirement</span>
-</span><span id="__span-27-5"><a id="__codelineno-27-5" name="__codelineno-27-5" href="#__codelineno-27-5"></a><span class="w">    </span><span class="n">requestTimeoutHours</span>
-</span><span id="__span-27-6"><a id="__codelineno-27-6" name="__codelineno-27-6" href="#__codelineno-27-6"></a><span class="w">    </span><span class="n">reminderHours</span>
-</span><span id="__span-27-7"><a id="__codelineno-27-7" name="__codelineno-27-7" href="#__codelineno-27-7"></a><span class="w">    </span><span class="n">executionMaxTimeoutHours</span>
-</span><span id="__span-27-8"><a id="__codelineno-27-8" name="__codelineno-27-8" href="#__codelineno-27-8"></a><span class="w">  </span><span class="p">}</span>
-</span><span id="__span-27-9"><a id="__codelineno-27-9" name="__codelineno-27-9" href="#__codelineno-27-9"></a><span class="p">}</span>
-</span><span id="__span-27-10"><a id="__codelineno-27-10" name="__codelineno-27-10" href="#__codelineno-27-10"></a>
-</span><span id="__span-27-11"><a id="__codelineno-27-11" name="__codelineno-27-11" href="#__codelineno-27-11"></a><span class="c"># Variables:</span>
-</span><span id="__span-27-12"><a id="__codelineno-27-12" name="__codelineno-27-12" href="#__codelineno-27-12"></a><span class="c"># {</span>
-</span><span id="__span-27-13"><a id="__codelineno-27-13" name="__codelineno-27-13" href="#__codelineno-27-13"></a><span class="c">#   &quot;orgId&quot;: &quot;YOUR_ORG_ID&quot;</span>
-</span><span id="__span-27-14"><a id="__codelineno-27-14" name="__codelineno-27-14" href="#__codelineno-27-14"></a><span class="c"># }</span>
+<div class="language-graphql highlight"><pre><span></span><code><span id="__span-27-1"><a id="__codelineno-27-1" name="__codelineno-27-1" href="#__codelineno-27-1"></a><span class="k">query</span><span class="w"> </span><span class="nf">GetOrgId</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-27-2"><a id="__codelineno-27-2" name="__codelineno-27-2" href="#__codelineno-27-2"></a><span class="w">  </span><span class="n">orgsForPrincipal</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-27-3"><a id="__codelineno-27-3" name="__codelineno-27-3" href="#__codelineno-27-3"></a><span class="w">    </span><span class="n">allOrgs</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-27-4"><a id="__codelineno-27-4" name="__codelineno-27-4" href="#__codelineno-27-4"></a><span class="w">      </span><span class="n">id</span>
+</span><span id="__span-27-5"><a id="__codelineno-27-5" name="__codelineno-27-5" href="#__codelineno-27-5"></a><span class="w">      </span><span class="n">name</span>
+</span><span id="__span-27-6"><a id="__codelineno-27-6" name="__codelineno-27-6" href="#__codelineno-27-6"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-27-7"><a id="__codelineno-27-7" name="__codelineno-27-7" href="#__codelineno-27-7"></a><span class="w">  </span><span class="p">}</span>
+</span><span id="__span-27-8"><a id="__codelineno-27-8" name="__codelineno-27-8" href="#__codelineno-27-8"></a><span class="p">}</span>
 </span></code></pre></div>
 </div>
 <div class="tabbed-block">
-<div class="language-powershell highlight"><pre><span></span><code><span id="__span-28-1"><a id="__codelineno-28-1" name="__codelineno-28-1" href="#__codelineno-28-1"></a><span class="nv">$query</span> <span class="p">=</span> <span class="nb">New-RscQuery</span> <span class="n">-Gql</span> <span class="n">tprConfiguration</span>
-</span><span id="__span-28-2"><a id="__codelineno-28-2" name="__codelineno-28-2" href="#__codelineno-28-2"></a><span class="nv">$query</span><span class="p">.</span><span class="n">Var</span><span class="p">.</span><span class="n">orgId</span> <span class="p">=</span> <span class="s2">&quot;YOUR_ORG_ID&quot;</span>
-</span><span id="__span-28-3"><a id="__codelineno-28-3" name="__codelineno-28-3" href="#__codelineno-28-3"></a><span class="nv">$query</span><span class="p">.</span><span class="n">Invoke</span><span class="p">()</span>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-28-1"><a id="__codelineno-28-1" name="__codelineno-28-1" href="#__codelineno-28-1"></a><span class="nv">$query</span> <span class="p">=</span> <span class="nb">New-RscQuery</span> <span class="n">-Gql</span> <span class="n">orgsForPrincipal</span> <span class="n">-AddField</span> <span class="p">`</span>
+</span><span id="__span-28-2"><a id="__codelineno-28-2" name="__codelineno-28-2" href="#__codelineno-28-2"></a>    <span class="n">AllOrgs</span><span class="p">.</span><span class="n">Id</span><span class="p">,`</span>
+</span><span id="__span-28-3"><a id="__codelineno-28-3" name="__codelineno-28-3" href="#__codelineno-28-3"></a>    <span class="n">AllOrgs</span><span class="p">.</span><span class="n">Name</span>
+</span><span id="__span-28-4"><a id="__codelineno-28-4" name="__codelineno-28-4" href="#__codelineno-28-4"></a><span class="nv">$query</span><span class="p">.</span><span class="n">Invoke</span><span class="p">().</span><span class="n">AllOrgs</span>
 </span></code></pre></div>
 </div>
 <div class="tabbed-block">
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-29-1"><a id="__codelineno-29-1" name="__codelineno-29-1" href="#__codelineno-29-1"></a><span class="ch">#!/bin/bash</span>
 </span><span id="__span-29-2"><a id="__codelineno-29-2" name="__codelineno-29-2" href="#__codelineno-29-2"></a>
 </span><span id="__span-29-3"><a id="__codelineno-29-3" name="__codelineno-29-3" href="#__codelineno-29-3"></a><span class="c1"># RSC_TOKEN=&quot;YOUR_RSC_ACCESS_TOKEN&quot;</span>
-</span><span id="__span-29-4"><a id="__codelineno-29-4" name="__codelineno-29-4" href="#__codelineno-29-4"></a><span class="c1"># ORG_ID=&quot;YOUR_ORG_ID&quot;</span>
-</span><span id="__span-29-5"><a id="__codelineno-29-5" name="__codelineno-29-5" href="#__codelineno-29-5"></a><span class="nv">query</span><span class="o">=</span><span class="s2">&quot;query GetConfiguration(\$orgId: String!) { tprConfiguration(orgId: \$orgId) { isTprEnabled staticQuorumRequirement requestTimeoutHours reminderHours executionMaxTimeoutHours } }&quot;</span>
-</span><span id="__span-29-6"><a id="__codelineno-29-6" name="__codelineno-29-6" href="#__codelineno-29-6"></a>
-</span><span id="__span-29-7"><a id="__codelineno-29-7" name="__codelineno-29-7" href="#__codelineno-29-7"></a>curl<span class="w"> </span>-X<span class="w"> </span>POST<span class="w"> </span><span class="se">\</span>
-</span><span id="__span-29-8"><a id="__codelineno-29-8" name="__codelineno-29-8" href="#__codelineno-29-8"></a><span class="w">  </span>-H<span class="w"> </span><span class="s2">&quot;Content-Type: application/json&quot;</span><span class="w"> </span><span class="se">\</span>
-</span><span id="__span-29-9"><a id="__codelineno-29-9" name="__codelineno-29-9" href="#__codelineno-29-9"></a><span class="w">  </span>-H<span class="w"> </span><span class="s2">&quot;Authorization: Bearer </span><span class="nv">$RSC_TOKEN</span><span class="s2">&quot;</span><span class="w"> </span><span class="se">\</span>
-</span><span id="__span-29-10"><a id="__codelineno-29-10" name="__codelineno-29-10" href="#__codelineno-29-10"></a><span class="w">  </span>-d<span class="w"> </span><span class="s2">&quot;{\&quot;query\&quot;: \&quot;</span><span class="nv">$query</span><span class="s2">\&quot;, \&quot;variables\&quot;: {\&quot;orgId\&quot;: \&quot;</span><span class="nv">$ORG_ID</span><span class="s2">\&quot;}}&quot;</span><span class="w"> </span><span class="se">\</span>
-</span><span id="__span-29-11"><a id="__codelineno-29-11" name="__codelineno-29-11" href="#__codelineno-29-11"></a><span class="w">  </span>https://example.my.rubrik.com/api/graphql
+</span><span id="__span-29-4"><a id="__codelineno-29-4" name="__codelineno-29-4" href="#__codelineno-29-4"></a><span class="nv">query</span><span class="o">=</span><span class="s2">&quot;query GetOrgId { orgsForPrincipal { allOrgs { id name } } }&quot;</span>
+</span><span id="__span-29-5"><a id="__codelineno-29-5" name="__codelineno-29-5" href="#__codelineno-29-5"></a>
+</span><span id="__span-29-6"><a id="__codelineno-29-6" name="__codelineno-29-6" href="#__codelineno-29-6"></a>curl<span class="w"> </span>-X<span class="w"> </span>POST<span class="w"> </span><span class="se">\</span>
+</span><span id="__span-29-7"><a id="__codelineno-29-7" name="__codelineno-29-7" href="#__codelineno-29-7"></a><span class="w">  </span>-H<span class="w"> </span><span class="s2">&quot;Content-Type: application/json&quot;</span><span class="w"> </span><span class="se">\</span>
+</span><span id="__span-29-8"><a id="__codelineno-29-8" name="__codelineno-29-8" href="#__codelineno-29-8"></a><span class="w">  </span>-H<span class="w"> </span><span class="s2">&quot;Authorization: Bearer </span><span class="nv">$RSC_TOKEN</span><span class="s2">&quot;</span><span class="w"> </span><span class="se">\</span>
+</span><span id="__span-29-9"><a id="__codelineno-29-9" name="__codelineno-29-9" href="#__codelineno-29-9"></a><span class="w">  </span>-d<span class="w"> </span><span class="s2">&quot;{\&quot;query\&quot;: \&quot;</span><span class="nv">$query</span><span class="s2">\&quot;}&quot;</span><span class="w"> </span><span class="se">\</span>
+</span><span id="__span-29-10"><a id="__codelineno-29-10" name="__codelineno-29-10" href="#__codelineno-29-10"></a><span class="w">  </span>https://example.my.rubrik.com/api/graphql
 </span></code></pre></div>
 </div>
 </div>
 </div>
-<h3 id="update-org-configuration">Update org configuration</h3>
+<h3 id="read-org-configuration">Read org configuration</h3>
+<p>Returns the current timeout and quorum settings for the organization.</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="11:3"><input checked="checked" id="__tabbed_11_1" name="__tabbed_11" type="radio" /><input id="__tabbed_11_2" name="__tabbed_11" type="radio" /><input id="__tabbed_11_3" name="__tabbed_11" type="radio" /><div class="tabbed-labels"><label for="__tabbed_11_1"><abbr title="A query language for APIs that provides a complete and understandble description of the data in the API. GraphQL is a strongly typed architecture, which means everything has a type and there is no guessing on the structure.">GraphQL</abbr></label><label for="__tabbed_11_2">PowerShell SDK</label><label for="__tabbed_11_3">Shell</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
-<div class="language-graphql highlight"><pre><span></span><code><span id="__span-30-1"><a id="__codelineno-30-1" name="__codelineno-30-1" href="#__codelineno-30-1"></a><span class="k">mutation</span><span class="w"> </span><span class="nf">UpdateConfiguration</span><span class="p">(</span><span class="nv">$input</span><span class="p">:</span><span class="w"> </span><span class="nc">UpdateTprConfigurationInput</span><span class="p">!)</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-30-2"><a id="__codelineno-30-2" name="__codelineno-30-2" href="#__codelineno-30-2"></a><span class="w">  </span><span class="n">updateTprConfiguration</span><span class="p">(</span><span class="n">input</span><span class="p">:</span><span class="w"> </span><span class="nv">$input</span><span class="p">)</span>
-</span><span id="__span-30-3"><a id="__codelineno-30-3" name="__codelineno-30-3" href="#__codelineno-30-3"></a><span class="p">}</span>
-</span><span id="__span-30-4"><a id="__codelineno-30-4" name="__codelineno-30-4" href="#__codelineno-30-4"></a>
-</span><span id="__span-30-5"><a id="__codelineno-30-5" name="__codelineno-30-5" href="#__codelineno-30-5"></a><span class="c"># Variables:</span>
-</span><span id="__span-30-6"><a id="__codelineno-30-6" name="__codelineno-30-6" href="#__codelineno-30-6"></a><span class="c"># {</span>
-</span><span id="__span-30-7"><a id="__codelineno-30-7" name="__codelineno-30-7" href="#__codelineno-30-7"></a><span class="c">#   &quot;input&quot;: {</span>
-</span><span id="__span-30-8"><a id="__codelineno-30-8" name="__codelineno-30-8" href="#__codelineno-30-8"></a><span class="c">#     &quot;requestTimeoutHours&quot;: 24,</span>
-</span><span id="__span-30-9"><a id="__codelineno-30-9" name="__codelineno-30-9" href="#__codelineno-30-9"></a><span class="c">#     &quot;reminderHours&quot;: 4,</span>
-</span><span id="__span-30-10"><a id="__codelineno-30-10" name="__codelineno-30-10" href="#__codelineno-30-10"></a><span class="c">#     &quot;executionMaxTimeoutHours&quot;: 8,</span>
-</span><span id="__span-30-11"><a id="__codelineno-30-11" name="__codelineno-30-11" href="#__codelineno-30-11"></a><span class="c">#     &quot;staticQuorumApprovalsRequirement&quot;: 1</span>
-</span><span id="__span-30-12"><a id="__codelineno-30-12" name="__codelineno-30-12" href="#__codelineno-30-12"></a><span class="c">#   }</span>
-</span><span id="__span-30-13"><a id="__codelineno-30-13" name="__codelineno-30-13" href="#__codelineno-30-13"></a><span class="c"># }</span>
+<div class="language-graphql highlight"><pre><span></span><code><span id="__span-30-1"><a id="__codelineno-30-1" name="__codelineno-30-1" href="#__codelineno-30-1"></a><span class="k">query</span><span class="w"> </span><span class="nf">GetConfiguration</span><span class="p">(</span><span class="nv">$orgId</span><span class="p">:</span><span class="w"> </span><span class="nb">String</span><span class="p">!)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-30-2"><a id="__codelineno-30-2" name="__codelineno-30-2" href="#__codelineno-30-2"></a><span class="w">  </span><span class="n">tprConfiguration</span><span class="p">(</span><span class="n">orgId</span><span class="p">:</span><span class="w"> </span><span class="nv">$orgId</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-30-3"><a id="__codelineno-30-3" name="__codelineno-30-3" href="#__codelineno-30-3"></a><span class="w">    </span><span class="n">isTprEnabled</span>
+</span><span id="__span-30-4"><a id="__codelineno-30-4" name="__codelineno-30-4" href="#__codelineno-30-4"></a><span class="w">    </span><span class="n">staticQuorumRequirement</span>
+</span><span id="__span-30-5"><a id="__codelineno-30-5" name="__codelineno-30-5" href="#__codelineno-30-5"></a><span class="w">    </span><span class="n">requestTimeoutHours</span>
+</span><span id="__span-30-6"><a id="__codelineno-30-6" name="__codelineno-30-6" href="#__codelineno-30-6"></a><span class="w">    </span><span class="n">reminderHours</span>
+</span><span id="__span-30-7"><a id="__codelineno-30-7" name="__codelineno-30-7" href="#__codelineno-30-7"></a><span class="w">    </span><span class="n">executionMaxTimeoutHours</span>
+</span><span id="__span-30-8"><a id="__codelineno-30-8" name="__codelineno-30-8" href="#__codelineno-30-8"></a><span class="w">  </span><span class="p">}</span>
+</span><span id="__span-30-9"><a id="__codelineno-30-9" name="__codelineno-30-9" href="#__codelineno-30-9"></a><span class="p">}</span>
+</span><span id="__span-30-10"><a id="__codelineno-30-10" name="__codelineno-30-10" href="#__codelineno-30-10"></a>
+</span><span id="__span-30-11"><a id="__codelineno-30-11" name="__codelineno-30-11" href="#__codelineno-30-11"></a><span class="c"># Variables:</span>
+</span><span id="__span-30-12"><a id="__codelineno-30-12" name="__codelineno-30-12" href="#__codelineno-30-12"></a><span class="c"># {</span>
+</span><span id="__span-30-13"><a id="__codelineno-30-13" name="__codelineno-30-13" href="#__codelineno-30-13"></a><span class="c">#   &quot;orgId&quot;: &quot;YOUR_ORG_ID&quot;</span>
+</span><span id="__span-30-14"><a id="__codelineno-30-14" name="__codelineno-30-14" href="#__codelineno-30-14"></a><span class="c"># }</span>
 </span></code></pre></div>
 </div>
 <div class="tabbed-block">
-<div class="language-powershell highlight"><pre><span></span><code><span id="__span-31-1"><a id="__codelineno-31-1" name="__codelineno-31-1" href="#__codelineno-31-1"></a><span class="nv">$mutation</span> <span class="p">=</span> <span class="nb">New-RscMutation</span> <span class="n">-Gql</span> <span class="n">updateTprConfiguration</span>
-</span><span id="__span-31-2"><a id="__codelineno-31-2" name="__codelineno-31-2" href="#__codelineno-31-2"></a><span class="nv">$mutation</span><span class="p">.</span><span class="n">Var</span><span class="p">.</span><span class="n">input</span> <span class="p">=</span> <span class="nb">New-Object</span> <span class="n">RubrikSecurityCloud</span><span class="p">.</span><span class="n">Types</span><span class="p">.</span><span class="n">UpdateTprConfigurationInput</span>
-</span><span id="__span-31-3"><a id="__codelineno-31-3" name="__codelineno-31-3" href="#__codelineno-31-3"></a><span class="nv">$mutation</span><span class="p">.</span><span class="n">Var</span><span class="p">.</span><span class="n">input</span><span class="p">.</span><span class="n">RequestTimeoutHours</span> <span class="p">=</span> <span class="n">24</span>
-</span><span id="__span-31-4"><a id="__codelineno-31-4" name="__codelineno-31-4" href="#__codelineno-31-4"></a><span class="nv">$mutation</span><span class="p">.</span><span class="n">Var</span><span class="p">.</span><span class="n">input</span><span class="p">.</span><span class="n">ReminderHours</span> <span class="p">=</span> <span class="n">4</span>
-</span><span id="__span-31-5"><a id="__codelineno-31-5" name="__codelineno-31-5" href="#__codelineno-31-5"></a><span class="nv">$mutation</span><span class="p">.</span><span class="n">Var</span><span class="p">.</span><span class="n">input</span><span class="p">.</span><span class="n">ExecutionMaxTimeoutHours</span> <span class="p">=</span> <span class="n">8</span>
-</span><span id="__span-31-6"><a id="__codelineno-31-6" name="__codelineno-31-6" href="#__codelineno-31-6"></a><span class="nv">$mutation</span><span class="p">.</span><span class="n">Var</span><span class="p">.</span><span class="n">input</span><span class="p">.</span><span class="n">StaticQuorumApprovalsRequirement</span> <span class="p">=</span> <span class="n">1</span>
-</span><span id="__span-31-7"><a id="__codelineno-31-7" name="__codelineno-31-7" href="#__codelineno-31-7"></a><span class="nv">$mutation</span><span class="p">.</span><span class="n">Invoke</span><span class="p">()</span>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-31-1"><a id="__codelineno-31-1" name="__codelineno-31-1" href="#__codelineno-31-1"></a><span class="nv">$query</span> <span class="p">=</span> <span class="nb">New-RscQuery</span> <span class="n">-Gql</span> <span class="n">tprConfiguration</span> <span class="n">-AddField</span> <span class="p">`</span>
+</span><span id="__span-31-2"><a id="__codelineno-31-2" name="__codelineno-31-2" href="#__codelineno-31-2"></a>    <span class="n">isTprEnabled</span><span class="p">,`</span>
+</span><span id="__span-31-3"><a id="__codelineno-31-3" name="__codelineno-31-3" href="#__codelineno-31-3"></a>    <span class="n">requestTimeoutHours</span><span class="p">,`</span>
+</span><span id="__span-31-4"><a id="__codelineno-31-4" name="__codelineno-31-4" href="#__codelineno-31-4"></a>    <span class="n">reminderHours</span><span class="p">,`</span>
+</span><span id="__span-31-5"><a id="__codelineno-31-5" name="__codelineno-31-5" href="#__codelineno-31-5"></a>    <span class="n">executionMaxTimeoutHours</span><span class="p">,`</span>
+</span><span id="__span-31-6"><a id="__codelineno-31-6" name="__codelineno-31-6" href="#__codelineno-31-6"></a>    <span class="n">staticQuorumRequirement</span>
+</span><span id="__span-31-7"><a id="__codelineno-31-7" name="__codelineno-31-7" href="#__codelineno-31-7"></a><span class="nv">$query</span><span class="p">.</span><span class="n">Var</span><span class="p">.</span><span class="n">orgId</span> <span class="p">=</span> <span class="s2">&quot;YOUR_ORG_ID&quot;</span>
+</span><span id="__span-31-8"><a id="__codelineno-31-8" name="__codelineno-31-8" href="#__codelineno-31-8"></a><span class="nv">$query</span><span class="p">.</span><span class="n">Invoke</span><span class="p">()</span>
 </span></code></pre></div>
 </div>
 <div class="tabbed-block">
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-32-1"><a id="__codelineno-32-1" name="__codelineno-32-1" href="#__codelineno-32-1"></a><span class="ch">#!/bin/bash</span>
 </span><span id="__span-32-2"><a id="__codelineno-32-2" name="__codelineno-32-2" href="#__codelineno-32-2"></a>
 </span><span id="__span-32-3"><a id="__codelineno-32-3" name="__codelineno-32-3" href="#__codelineno-32-3"></a><span class="c1"># RSC_TOKEN=&quot;YOUR_RSC_ACCESS_TOKEN&quot;</span>
-</span><span id="__span-32-4"><a id="__codelineno-32-4" name="__codelineno-32-4" href="#__codelineno-32-4"></a>curl<span class="w"> </span>-X<span class="w"> </span>POST<span class="w"> </span><span class="se">\</span>
-</span><span id="__span-32-5"><a id="__codelineno-32-5" name="__codelineno-32-5" href="#__codelineno-32-5"></a><span class="w">  </span>-H<span class="w"> </span><span class="s2">&quot;Content-Type: application/json&quot;</span><span class="w"> </span><span class="se">\</span>
-</span><span id="__span-32-6"><a id="__codelineno-32-6" name="__codelineno-32-6" href="#__codelineno-32-6"></a><span class="w">  </span>-H<span class="w"> </span><span class="s2">&quot;Authorization: Bearer </span><span class="nv">$RSC_TOKEN</span><span class="s2">&quot;</span><span class="w"> </span><span class="se">\</span>
-</span><span id="__span-32-7"><a id="__codelineno-32-7" name="__codelineno-32-7" href="#__codelineno-32-7"></a><span class="w">  </span>-d<span class="w"> </span><span class="s1">&#39;{</span>
-</span><span id="__span-32-8"><a id="__codelineno-32-8" name="__codelineno-32-8" href="#__codelineno-32-8"></a><span class="s1">    &quot;query&quot;: &quot;mutation UpdateConfiguration($input: UpdateTprConfigurationInput!) { updateTprConfiguration(input: $input) }&quot;,</span>
-</span><span id="__span-32-9"><a id="__codelineno-32-9" name="__codelineno-32-9" href="#__codelineno-32-9"></a><span class="s1">    &quot;variables&quot;: {</span>
-</span><span id="__span-32-10"><a id="__codelineno-32-10" name="__codelineno-32-10" href="#__codelineno-32-10"></a><span class="s1">      &quot;input&quot;: {</span>
-</span><span id="__span-32-11"><a id="__codelineno-32-11" name="__codelineno-32-11" href="#__codelineno-32-11"></a><span class="s1">        &quot;requestTimeoutHours&quot;: 24,</span>
-</span><span id="__span-32-12"><a id="__codelineno-32-12" name="__codelineno-32-12" href="#__codelineno-32-12"></a><span class="s1">        &quot;reminderHours&quot;: 4,</span>
-</span><span id="__span-32-13"><a id="__codelineno-32-13" name="__codelineno-32-13" href="#__codelineno-32-13"></a><span class="s1">        &quot;executionMaxTimeoutHours&quot;: 8,</span>
-</span><span id="__span-32-14"><a id="__codelineno-32-14" name="__codelineno-32-14" href="#__codelineno-32-14"></a><span class="s1">        &quot;staticQuorumApprovalsRequirement&quot;: 1</span>
-</span><span id="__span-32-15"><a id="__codelineno-32-15" name="__codelineno-32-15" href="#__codelineno-32-15"></a><span class="s1">      }</span>
-</span><span id="__span-32-16"><a id="__codelineno-32-16" name="__codelineno-32-16" href="#__codelineno-32-16"></a><span class="s1">    }</span>
-</span><span id="__span-32-17"><a id="__codelineno-32-17" name="__codelineno-32-17" href="#__codelineno-32-17"></a><span class="s1">  }&#39;</span><span class="w"> </span><span class="se">\</span>
-</span><span id="__span-32-18"><a id="__codelineno-32-18" name="__codelineno-32-18" href="#__codelineno-32-18"></a><span class="w">  </span>https://example.my.rubrik.com/api/graphql
+</span><span id="__span-32-4"><a id="__codelineno-32-4" name="__codelineno-32-4" href="#__codelineno-32-4"></a><span class="c1"># ORG_ID=&quot;YOUR_ORG_ID&quot;</span>
+</span><span id="__span-32-5"><a id="__codelineno-32-5" name="__codelineno-32-5" href="#__codelineno-32-5"></a><span class="nv">query</span><span class="o">=</span><span class="s2">&quot;query GetConfiguration(\$orgId: String!) { tprConfiguration(orgId: \$orgId) { isTprEnabled staticQuorumRequirement requestTimeoutHours reminderHours executionMaxTimeoutHours } }&quot;</span>
+</span><span id="__span-32-6"><a id="__codelineno-32-6" name="__codelineno-32-6" href="#__codelineno-32-6"></a>
+</span><span id="__span-32-7"><a id="__codelineno-32-7" name="__codelineno-32-7" href="#__codelineno-32-7"></a>curl<span class="w"> </span>-X<span class="w"> </span>POST<span class="w"> </span><span class="se">\</span>
+</span><span id="__span-32-8"><a id="__codelineno-32-8" name="__codelineno-32-8" href="#__codelineno-32-8"></a><span class="w">  </span>-H<span class="w"> </span><span class="s2">&quot;Content-Type: application/json&quot;</span><span class="w"> </span><span class="se">\</span>
+</span><span id="__span-32-9"><a id="__codelineno-32-9" name="__codelineno-32-9" href="#__codelineno-32-9"></a><span class="w">  </span>-H<span class="w"> </span><span class="s2">&quot;Authorization: Bearer </span><span class="nv">$RSC_TOKEN</span><span class="s2">&quot;</span><span class="w"> </span><span class="se">\</span>
+</span><span id="__span-32-10"><a id="__codelineno-32-10" name="__codelineno-32-10" href="#__codelineno-32-10"></a><span class="w">  </span>-d<span class="w"> </span><span class="s2">&quot;{\&quot;query\&quot;: \&quot;</span><span class="nv">$query</span><span class="s2">\&quot;, \&quot;variables\&quot;: {\&quot;orgId\&quot;: \&quot;</span><span class="nv">$ORG_ID</span><span class="s2">\&quot;}}&quot;</span><span class="w"> </span><span class="se">\</span>
+</span><span id="__span-32-11"><a id="__codelineno-32-11" name="__codelineno-32-11" href="#__codelineno-32-11"></a><span class="w">  </span>https://example.my.rubrik.com/api/graphql
+</span></code></pre></div>
+</div>
+</div>
+</div>
+<h3 id="update-org-configuration">Update org configuration</h3>
+<div class="tabbed-set tabbed-alternate" data-tabs="12:3"><input checked="checked" id="__tabbed_12_1" name="__tabbed_12" type="radio" /><input id="__tabbed_12_2" name="__tabbed_12" type="radio" /><input id="__tabbed_12_3" name="__tabbed_12" type="radio" /><div class="tabbed-labels"><label for="__tabbed_12_1"><abbr title="A query language for APIs that provides a complete and understandble description of the data in the API. GraphQL is a strongly typed architecture, which means everything has a type and there is no guessing on the structure.">GraphQL</abbr></label><label for="__tabbed_12_2">PowerShell SDK</label><label for="__tabbed_12_3">Shell</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="language-graphql highlight"><pre><span></span><code><span id="__span-33-1"><a id="__codelineno-33-1" name="__codelineno-33-1" href="#__codelineno-33-1"></a><span class="k">mutation</span><span class="w"> </span><span class="nf">UpdateConfiguration</span><span class="p">(</span><span class="nv">$input</span><span class="p">:</span><span class="w"> </span><span class="nc">UpdateTprConfigurationInput</span><span class="p">!)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-33-2"><a id="__codelineno-33-2" name="__codelineno-33-2" href="#__codelineno-33-2"></a><span class="w">  </span><span class="n">updateTprConfiguration</span><span class="p">(</span><span class="n">input</span><span class="p">:</span><span class="w"> </span><span class="nv">$input</span><span class="p">)</span>
+</span><span id="__span-33-3"><a id="__codelineno-33-3" name="__codelineno-33-3" href="#__codelineno-33-3"></a><span class="p">}</span>
+</span><span id="__span-33-4"><a id="__codelineno-33-4" name="__codelineno-33-4" href="#__codelineno-33-4"></a>
+</span><span id="__span-33-5"><a id="__codelineno-33-5" name="__codelineno-33-5" href="#__codelineno-33-5"></a><span class="c"># Variables:</span>
+</span><span id="__span-33-6"><a id="__codelineno-33-6" name="__codelineno-33-6" href="#__codelineno-33-6"></a><span class="c"># {</span>
+</span><span id="__span-33-7"><a id="__codelineno-33-7" name="__codelineno-33-7" href="#__codelineno-33-7"></a><span class="c">#   &quot;input&quot;: {</span>
+</span><span id="__span-33-8"><a id="__codelineno-33-8" name="__codelineno-33-8" href="#__codelineno-33-8"></a><span class="c">#     &quot;requestTimeoutHours&quot;: 24,</span>
+</span><span id="__span-33-9"><a id="__codelineno-33-9" name="__codelineno-33-9" href="#__codelineno-33-9"></a><span class="c">#     &quot;reminderHours&quot;: 4,</span>
+</span><span id="__span-33-10"><a id="__codelineno-33-10" name="__codelineno-33-10" href="#__codelineno-33-10"></a><span class="c">#     &quot;executionMaxTimeoutHours&quot;: 8,</span>
+</span><span id="__span-33-11"><a id="__codelineno-33-11" name="__codelineno-33-11" href="#__codelineno-33-11"></a><span class="c">#     &quot;staticQuorumApprovalsRequirement&quot;: 1</span>
+</span><span id="__span-33-12"><a id="__codelineno-33-12" name="__codelineno-33-12" href="#__codelineno-33-12"></a><span class="c">#   }</span>
+</span><span id="__span-33-13"><a id="__codelineno-33-13" name="__codelineno-33-13" href="#__codelineno-33-13"></a><span class="c"># }</span>
+</span></code></pre></div>
+</div>
+<div class="tabbed-block">
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-34-1"><a id="__codelineno-34-1" name="__codelineno-34-1" href="#__codelineno-34-1"></a><span class="nv">$mutation</span> <span class="p">=</span> <span class="nb">New-RscMutation</span> <span class="n">-Gql</span> <span class="n">updateTprConfiguration</span>
+</span><span id="__span-34-2"><a id="__codelineno-34-2" name="__codelineno-34-2" href="#__codelineno-34-2"></a><span class="nv">$mutation</span><span class="p">.</span><span class="n">Var</span><span class="p">.</span><span class="n">input</span> <span class="p">=</span> <span class="nb">New-Object</span> <span class="n">RubrikSecurityCloud</span><span class="p">.</span><span class="n">Types</span><span class="p">.</span><span class="n">UpdateTprConfigurationInput</span>
+</span><span id="__span-34-3"><a id="__codelineno-34-3" name="__codelineno-34-3" href="#__codelineno-34-3"></a><span class="nv">$mutation</span><span class="p">.</span><span class="n">Var</span><span class="p">.</span><span class="n">input</span><span class="p">.</span><span class="n">RequestTimeoutHours</span> <span class="p">=</span> <span class="n">24</span>
+</span><span id="__span-34-4"><a id="__codelineno-34-4" name="__codelineno-34-4" href="#__codelineno-34-4"></a><span class="nv">$mutation</span><span class="p">.</span><span class="n">Var</span><span class="p">.</span><span class="n">input</span><span class="p">.</span><span class="n">ReminderHours</span> <span class="p">=</span> <span class="n">4</span>
+</span><span id="__span-34-5"><a id="__codelineno-34-5" name="__codelineno-34-5" href="#__codelineno-34-5"></a><span class="nv">$mutation</span><span class="p">.</span><span class="n">Var</span><span class="p">.</span><span class="n">input</span><span class="p">.</span><span class="n">ExecutionMaxTimeoutHours</span> <span class="p">=</span> <span class="n">8</span>
+</span><span id="__span-34-6"><a id="__codelineno-34-6" name="__codelineno-34-6" href="#__codelineno-34-6"></a><span class="nv">$mutation</span><span class="p">.</span><span class="n">Var</span><span class="p">.</span><span class="n">input</span><span class="p">.</span><span class="n">StaticQuorumApprovalsRequirement</span> <span class="p">=</span> <span class="n">1</span>
+</span><span id="__span-34-7"><a id="__codelineno-34-7" name="__codelineno-34-7" href="#__codelineno-34-7"></a><span class="nv">$mutation</span><span class="p">.</span><span class="n">Invoke</span><span class="p">()</span>
+</span></code></pre></div>
+</div>
+<div class="tabbed-block">
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-35-1"><a id="__codelineno-35-1" name="__codelineno-35-1" href="#__codelineno-35-1"></a><span class="ch">#!/bin/bash</span>
+</span><span id="__span-35-2"><a id="__codelineno-35-2" name="__codelineno-35-2" href="#__codelineno-35-2"></a>
+</span><span id="__span-35-3"><a id="__codelineno-35-3" name="__codelineno-35-3" href="#__codelineno-35-3"></a><span class="c1"># RSC_TOKEN=&quot;YOUR_RSC_ACCESS_TOKEN&quot;</span>
+</span><span id="__span-35-4"><a id="__codelineno-35-4" name="__codelineno-35-4" href="#__codelineno-35-4"></a>curl<span class="w"> </span>-X<span class="w"> </span>POST<span class="w"> </span><span class="se">\</span>
+</span><span id="__span-35-5"><a id="__codelineno-35-5" name="__codelineno-35-5" href="#__codelineno-35-5"></a><span class="w">  </span>-H<span class="w"> </span><span class="s2">&quot;Content-Type: application/json&quot;</span><span class="w"> </span><span class="se">\</span>
+</span><span id="__span-35-6"><a id="__codelineno-35-6" name="__codelineno-35-6" href="#__codelineno-35-6"></a><span class="w">  </span>-H<span class="w"> </span><span class="s2">&quot;Authorization: Bearer </span><span class="nv">$RSC_TOKEN</span><span class="s2">&quot;</span><span class="w"> </span><span class="se">\</span>
+</span><span id="__span-35-7"><a id="__codelineno-35-7" name="__codelineno-35-7" href="#__codelineno-35-7"></a><span class="w">  </span>-d<span class="w"> </span><span class="s1">&#39;{</span>
+</span><span id="__span-35-8"><a id="__codelineno-35-8" name="__codelineno-35-8" href="#__codelineno-35-8"></a><span class="s1">    &quot;query&quot;: &quot;mutation UpdateConfiguration($input: UpdateTprConfigurationInput!) { updateTprConfiguration(input: $input) }&quot;,</span>
+</span><span id="__span-35-9"><a id="__codelineno-35-9" name="__codelineno-35-9" href="#__codelineno-35-9"></a><span class="s1">    &quot;variables&quot;: {</span>
+</span><span id="__span-35-10"><a id="__codelineno-35-10" name="__codelineno-35-10" href="#__codelineno-35-10"></a><span class="s1">      &quot;input&quot;: {</span>
+</span><span id="__span-35-11"><a id="__codelineno-35-11" name="__codelineno-35-11" href="#__codelineno-35-11"></a><span class="s1">        &quot;requestTimeoutHours&quot;: 24,</span>
+</span><span id="__span-35-12"><a id="__codelineno-35-12" name="__codelineno-35-12" href="#__codelineno-35-12"></a><span class="s1">        &quot;reminderHours&quot;: 4,</span>
+</span><span id="__span-35-13"><a id="__codelineno-35-13" name="__codelineno-35-13" href="#__codelineno-35-13"></a><span class="s1">        &quot;executionMaxTimeoutHours&quot;: 8,</span>
+</span><span id="__span-35-14"><a id="__codelineno-35-14" name="__codelineno-35-14" href="#__codelineno-35-14"></a><span class="s1">        &quot;staticQuorumApprovalsRequirement&quot;: 1</span>
+</span><span id="__span-35-15"><a id="__codelineno-35-15" name="__codelineno-35-15" href="#__codelineno-35-15"></a><span class="s1">      }</span>
+</span><span id="__span-35-16"><a id="__codelineno-35-16" name="__codelineno-35-16" href="#__codelineno-35-16"></a><span class="s1">    }</span>
+</span><span id="__span-35-17"><a id="__codelineno-35-17" name="__codelineno-35-17" href="#__codelineno-35-17"></a><span class="s1">  }&#39;</span><span class="w"> </span><span class="se">\</span>
+</span><span id="__span-35-18"><a id="__codelineno-35-18" name="__codelineno-35-18" href="#__codelineno-35-18"></a><span class="w">  </span>https://example.my.rubrik.com/api/graphql
 </span></code></pre></div>
 </div>
 </div>
@@ -2483,7 +2580,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="April 23, 2026 14:07:51 UTC">2026-04-23</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="April 23, 2026 16:28:06 UTC">2026-04-23</span>
   </span>
 
     

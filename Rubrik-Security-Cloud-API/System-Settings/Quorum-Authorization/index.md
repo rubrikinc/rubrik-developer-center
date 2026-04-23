@@ -47,7 +47,13 @@ query ListPendingTprRequests {
 ```
 
 ```powershell
-$query = New-RscQuery -Gql tprRequestSummaries
+$query = New-RscQuery -Gql tprRequestSummaries -AddField `
+    Nodes.requestId,`
+    Nodes.orgId,`
+    Nodes.orgName,`
+    Nodes.status,`
+    Nodes.updatedAt,`
+    Nodes.triggeredTprRule
 $filter = New-Object RubrikSecurityCloud.Types.TprRequestFilterInput
 $filter.Statuses = @([RubrikSecurityCloud.Types.TprReqStatus]::PENDING)
 $query.Var.filter = $filter
@@ -102,7 +108,18 @@ query GetTprRequestDetail($requestId: String!) {
 ```
 
 ```powershell
-$query = New-RscQuery -Gql tprRequestDetail
+$query = New-RscQuery -Gql tprRequestDetail -AddField `
+    id,`
+    orgId,`
+    orgName,`
+    status,`
+    createdAt,`
+    updatedAt,`
+    expiresAt,`
+    executionType,`
+    isPotentialLastApprover,`
+    triggeredTprRule,`
+    triggeredTprRules
 $query.Var.tprRequestId = "YOUR_REQUEST_ID"
 $query.Invoke()
 ```
@@ -275,7 +292,16 @@ query {
 ```
 
 ```powershell
-$query = New-RscQuery -Gql customTprPolicies
+$query = New-RscQuery -Gql customTprPolicies -AddField `
+    Nodes.policyId,`
+    Nodes.policyName,`
+    Nodes.description,`
+    Nodes.orgId,`
+    Nodes.orgName,`
+    Nodes.quorumRequirement,`
+    Nodes.numberOfObjectTypes,`
+    Nodes.numberOfProtectableObjects,`
+    Nodes.actions
 $query.Invoke().Nodes
 ```
 
@@ -329,7 +355,14 @@ query GetPolicyDetail($policyId: UUID!) {
 ```
 
 ```powershell
-$query = New-RscQuery -Gql tprPolicyDetail
+$query = New-RscQuery -Gql tprPolicyDetail -AddField `
+    policyId,`
+    name,`
+    description,`
+    orgId,`
+    policyScope,`
+    quorumRequirement,`
+    createdAt
 $query.Var.tprPolicyId = "YOUR_POLICY_ID"
 $query.Invoke()
 ```
@@ -565,6 +598,41 @@ curl -X POST \
   https://example.my.rubrik.com/api/graphql
 ```
 
+### Get your org ID
+
+`tprConfiguration` requires an `orgId`. Use `orgsForPrincipal` to retrieve it — this works with both interactive users and service accounts.
+
+```graphql
+query GetOrgId {
+  orgsForPrincipal {
+    allOrgs {
+      id
+      name
+    }
+  }
+}
+```
+
+```powershell
+$query = New-RscQuery -Gql orgsForPrincipal -AddField `
+    AllOrgs.Id,`
+    AllOrgs.Name
+$query.Invoke().AllOrgs
+```
+
+```bash
+#!/bin/bash
+
+# RSC_TOKEN="YOUR_RSC_ACCESS_TOKEN"
+query="query GetOrgId { orgsForPrincipal { allOrgs { id name } } }"
+
+curl -X POST \
+  -H "Content-Type: application/json" \
+  -H "Authorization: Bearer $RSC_TOKEN" \
+  -d "{\"query\": \"$query\"}" \
+  https://example.my.rubrik.com/api/graphql
+```
+
 ### Read org configuration
 
 Returns the current timeout and quorum settings for the organization.
@@ -587,7 +655,12 @@ query GetConfiguration($orgId: String!) {
 ```
 
 ```powershell
-$query = New-RscQuery -Gql tprConfiguration
+$query = New-RscQuery -Gql tprConfiguration -AddField `
+    isTprEnabled,`
+    requestTimeoutHours,`
+    reminderHours,`
+    executionMaxTimeoutHours,`
+    staticQuorumRequirement
 $query.Var.orgId = "YOUR_ORG_ID"
 $query.Invoke()
 ```
