@@ -1,0 +1,18 @@
+mutation liveMountMssqlDb {
+  createMssqlLiveMount(input: {
+    id: "85e98e61-4c1f-496a-b846-5eb871966025"
+    config: {
+      mountedDatabaseName: "AdventureWorks_LiveMount"
+      recoveryPoint: {
+        date: "2025-01-15T14:30:00.000Z"
+      }
+    }
+  }) {
+    id
+    status
+    progress
+    error {
+      message
+    }
+  }
+}
