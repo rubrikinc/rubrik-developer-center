@@ -1,0 +1,19 @@
+mutation restoreMssqlDb {
+  restoreMssqlDatabase(input: {
+    id: "85e98e61-4c1f-496a-b846-5eb871966025"
+    config: {
+      recoveryPoint: {
+        date: "2025-01-15T14:30:00.000Z"
+      }
+      finishRecovery: true
+      maxDataStreams: 4
+    }
+  }) {
+    id
+    status
+    progress
+    error {
+      message
+    }
+  }
+}

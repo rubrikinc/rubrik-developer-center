@@ -1,0 +1,20 @@
+query ListMssqlAvailabilityGroupVirtualGroups {
+  mssqlAvailabilityGroupVirtualGroups {
+    nodes {
+      name
+      linkedFids
+      groups {
+        id
+        name
+        cluster {
+          id
+          name
+        }
+        effectiveSlaDomain {
+          id
+          name
+        }
+      }
+    }
+  }
+}
