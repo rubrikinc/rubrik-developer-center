@@ -1,0 +1,31 @@
+query GetPolicyDetail($policyId: UUID!) {
+  tprPolicyDetail(tprPolicyId: $policyId) {
+    policyId
+    name
+    description
+    policyScope
+    quorumRequirement
+    createdAt
+    createdBy {
+      username
+      email
+    }
+    policyRules {
+      tprRules
+      tprPolicyObject {
+        objectId
+        clusterId
+        managedObjectType
+      }
+    }
+    exemptServiceAccounts {
+      id
+      name
+    }
+  }
+}
+
+# Variables:
+# {
+#   "policyId": "YOUR_POLICY_ID"
+# }

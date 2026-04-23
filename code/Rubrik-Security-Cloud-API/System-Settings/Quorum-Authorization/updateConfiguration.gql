@@ -1,0 +1,13 @@
+mutation UpdateConfiguration($input: UpdateTprConfigurationInput!) {
+  updateTprConfiguration(input: $input)
+}
+
+# Variables:
+# {
+#   "input": {
+#     "requestTimeoutHours": 24,
+#     "reminderHours": 4,
+#     "executionMaxTimeoutHours": 8,
+#     "staticQuorumApprovalsRequirement": 1
+#   }
+# }

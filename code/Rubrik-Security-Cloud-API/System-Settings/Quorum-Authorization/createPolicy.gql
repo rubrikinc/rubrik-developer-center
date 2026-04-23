@@ -1,0 +1,27 @@
+mutation CreatePolicy($input: CreateTprPolicyInput!) {
+  createTprPolicy(input: $input) {
+    policyId
+  }
+}
+
+# Variables:
+# {
+#   "input": {
+#     "name": "Snapshot Delete Protection",
+#     "description": "Require approval before deleting any snapshot",
+#     "policyScope": "DATA_MANAGEMENT_BY_OBJECT",
+#     "quorumRequirement": 1,
+#     "exemptServiceAccounts": [],
+#     "policyRules": [
+#       {
+#         "tprRules": ["DELETE_SNAPSHOT"],
+#         "tprPolicyObject": {
+#           "objectId": "YOUR_OBJECT_ID",
+#           "clusterId": "YOUR_CLUSTER_ID",
+#           "managedObjectType": "MSSQL_DATABASE",
+#           "workloadHierarchy": "MSSQL_DATABASE"
+#         }
+#       }
+#     ]
+#   }
+# }
