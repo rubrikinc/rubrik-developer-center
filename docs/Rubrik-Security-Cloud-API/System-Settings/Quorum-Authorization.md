@@ -112,5 +112,136 @@ A common use case is surfacing Quorum Authorization approvals inside ServiceNow 
 - Store the RSC `requestId` on the ServiceNow approval record so it can be passed back to the API on approval or denial
 - Use the `comment` field to record the ServiceNow ticket number and the approving user's name — this creates an audit trail since the API call is made by a service account, not the individual
 
-!!! note
-    Quorum Authorization policies and approver role assignments are managed in the RSC UI under **Settings → Quorum Authorization**. The API covers the approval workflow only.
+## Advanced: Managing Policies via API
+
+Quorum Authorization policies can be fully managed through the API. This section covers listing, creating, updating, and deleting policies, as well as reading and updating the org-level configuration.
+
+### Policy scopes
+
+Every policy has a `policyScope` that determines what it applies to:
+
+| Scope | Description |
+|---|---|
+| `DATA_MANAGEMENT_BY_OBJECT` | Applies to specific protected objects (VMs, databases, etc.) |
+| `DATA_MANAGEMENT_BY_CLUSTER` | Applies to all objects on a specific Rubrik cluster |
+| `DATA_MANAGEMENT_BY_SLA` | Applies to all objects covered by a specific SLA domain |
+| `SYSTEM_CONFIGURATION` | Applies to system-level operations (cluster removal, node replacement, etc.) |
+
+Policy scope is immutable after creation — it cannot be changed with `updateTprPolicy`.
+
+### List policies
+
+`customTprPolicies` returns a paginated summary list. For full rule detail on a specific policy, use `tprPolicyDetail`.
+
+=== "GraphQL"
+    ```graphql
+    --8<-- "code/Rubrik-Security-Cloud-API/System-Settings/Quorum-Authorization/listPolicies.gql"
+    ```
+=== "PowerShell SDK"
+    ```powershell
+    --8<-- "code/Rubrik-Security-Cloud-API/System-Settings/Quorum-Authorization/listPolicies.ps1"
+    ```
+=== "Shell"
+    ```bash
+    --8<-- "code/Rubrik-Security-Cloud-API/System-Settings/Quorum-Authorization/listPolicies.sh"
+    ```
+
+### Get policy detail
+
+=== "GraphQL"
+    ```graphql
+    --8<-- "code/Rubrik-Security-Cloud-API/System-Settings/Quorum-Authorization/getPolicyDetail.gql"
+    ```
+=== "PowerShell SDK"
+    ```powershell
+    --8<-- "code/Rubrik-Security-Cloud-API/System-Settings/Quorum-Authorization/getPolicyDetail.ps1"
+    ```
+=== "Shell"
+    ```bash
+    --8<-- "code/Rubrik-Security-Cloud-API/System-Settings/Quorum-Authorization/getPolicyDetail.sh"
+    ```
+
+### Create a policy
+
+Each policy rule targets an object (or is left unscoped for system-level policies) and specifies which `TprRule` operations require approval on that object.
+
+=== "GraphQL"
+    ```graphql
+    --8<-- "code/Rubrik-Security-Cloud-API/System-Settings/Quorum-Authorization/createPolicy.gql"
+    ```
+=== "PowerShell SDK"
+    ```powershell
+    --8<-- "code/Rubrik-Security-Cloud-API/System-Settings/Quorum-Authorization/createPolicy.ps1"
+    ```
+=== "Shell"
+    ```bash
+    --8<-- "code/Rubrik-Security-Cloud-API/System-Settings/Quorum-Authorization/createPolicy.sh"
+    ```
+
+`exemptServiceAccounts` accepts a list of service account IDs. Operations performed by exempt accounts bypass the approval requirement for this policy.
+
+### Update a policy
+
+=== "GraphQL"
+    ```graphql
+    --8<-- "code/Rubrik-Security-Cloud-API/System-Settings/Quorum-Authorization/updatePolicy.gql"
+    ```
+=== "PowerShell SDK"
+    ```powershell
+    --8<-- "code/Rubrik-Security-Cloud-API/System-Settings/Quorum-Authorization/updatePolicy.ps1"
+    ```
+=== "Shell"
+    ```bash
+    --8<-- "code/Rubrik-Security-Cloud-API/System-Settings/Quorum-Authorization/updatePolicy.sh"
+    ```
+
+!!! warning
+    Always supply `quorumRequirement` when updating a policy. The field is nullable in the schema and has no default on update — omitting it results in undefined behavior.
+
+### Delete a policy
+
+=== "GraphQL"
+    ```graphql
+    --8<-- "code/Rubrik-Security-Cloud-API/System-Settings/Quorum-Authorization/deletePolicy.gql"
+    ```
+=== "PowerShell SDK"
+    ```powershell
+    --8<-- "code/Rubrik-Security-Cloud-API/System-Settings/Quorum-Authorization/deletePolicy.ps1"
+    ```
+=== "Shell"
+    ```bash
+    --8<-- "code/Rubrik-Security-Cloud-API/System-Settings/Quorum-Authorization/deletePolicy.sh"
+    ```
+
+### Read org configuration
+
+Returns the current timeout and quorum settings for the organization.
+
+=== "GraphQL"
+    ```graphql
+    --8<-- "code/Rubrik-Security-Cloud-API/System-Settings/Quorum-Authorization/getConfiguration.gql"
+    ```
+=== "PowerShell SDK"
+    ```powershell
+    --8<-- "code/Rubrik-Security-Cloud-API/System-Settings/Quorum-Authorization/getConfiguration.ps1"
+    ```
+=== "Shell"
+    ```bash
+    --8<-- "code/Rubrik-Security-Cloud-API/System-Settings/Quorum-Authorization/getConfiguration.sh"
+    ```
+
+### Update org configuration
+
+=== "GraphQL"
+    ```graphql
+    --8<-- "code/Rubrik-Security-Cloud-API/System-Settings/Quorum-Authorization/updateConfiguration.gql"
+    ```
+=== "PowerShell SDK"
+    ```powershell
+    --8<-- "code/Rubrik-Security-Cloud-API/System-Settings/Quorum-Authorization/updateConfiguration.ps1"
+    ```
+=== "Shell"
+    ```bash
+    --8<-- "code/Rubrik-Security-Cloud-API/System-Settings/Quorum-Authorization/updateConfiguration.sh"
+    ```
+
