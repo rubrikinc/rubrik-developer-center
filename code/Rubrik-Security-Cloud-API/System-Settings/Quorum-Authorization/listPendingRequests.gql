@@ -1,0 +1,20 @@
+query ListPendingTprRequests {
+  tprRequestSummaries(
+    filter: {
+      statuses: [PENDING]
+    }
+  ) {
+    nodes {
+      requestId
+      status
+      updatedAt
+      orgName
+      requester {
+        userId
+        username
+        email
+      }
+      triggeredTprRule
+    }
+  }
+}
