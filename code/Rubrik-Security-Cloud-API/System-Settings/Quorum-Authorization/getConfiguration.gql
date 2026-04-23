@@ -1,0 +1,14 @@
+query GetConfiguration($orgId: String!) {
+  tprConfiguration(orgId: $orgId) {
+    isTprEnabled
+    staticQuorumRequirement
+    requestTimeoutHours
+    reminderHours
+    executionMaxTimeoutHours
+  }
+}
+
+# Variables:
+# {
+#   "orgId": "YOUR_ORG_ID"
+# }

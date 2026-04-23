@@ -1,0 +1,10 @@
+mutation DeletePolicy($input: DeleteTprPolicyInput!) {
+  deleteTprPolicy(input: $input)
+}
+
+# Variables:
+# {
+#   "input": {
+#     "policyId": "YOUR_POLICY_ID"
+#   }
+# }
