@@ -4,9 +4,9 @@ This document lists all deprecated fields, queries, mutations, and enum values i
 
 ## Deprecated Fields
 
-*Extracted from schema: 20260413.graphql*
+*Extracted from schema: 20260330.graphql*
 
-**Total deprecated items: 269**
+**Total deprecated items: 249**
 
 ### Deprecated Query Fields
 
@@ -288,10 +288,6 @@ This document lists all deprecated fields, queries, mutations, and enum values i
 - **`isAccepted`**: Use pactsafeEulaState instead.
 - **`isPactsafeEnabled`**: Use isPactsafeV2Enabled instead.
 
-#### FederatedLoginStatus
-
-- **`inventoryCardEnabled`**: No longer used. The inventory card toggle has been removed.
-
 #### FileResult
 
 - **`attributesSummary`**: No longer used.
@@ -329,14 +325,6 @@ This document lists all deprecated fields, queries, mutations, and enum values i
 - **`ownerOrgName`**: This field has been deprecated in favor of ownerOrg field.
 - **`replicationSpec`**: Use replicationSpecsV2 instead.
 
-#### IdentityMetadata
-
-- **`identityTags`**: This field is no longer populated. Use the principal summary\nquery instead.
-
-#### IdentityViolationDetails
-
-- **`identityTags`**: This field is no longer populated. Use the principal summary\nquery instead.
-
 #### IdpClaimAttributeType
 
 - **`type`**: type is deprecated, use attributeType instead.
@@ -356,19 +344,6 @@ This document lists all deprecated fields, queries, mutations, and enum values i
 #### O365Group
 
 - **`configuredGroupSpec`**: Use configuredGroupSpecification instead.
-
-#### OrgSegregatedConsumption
-
-- **`exchangeConsumption`**: Use segregatedObjectTypeConsumption instead.
-- **`objectTypeUsage`**: Use segregatedObjectTypeConsumption instead.
-- **`onedriveConsumption`**: Use segregatedObjectTypeConsumption instead.
-- **`sharepointConsumption`**: Use segregatedObjectTypeConsumption instead.
-
-#### Permissions
-
-- **`directPermissions`**: Get the ace ranks from representation ranks sstable
-- **`permissionsByGroup`**: Get the ace ranks from representation ranks sstable
-- **`permissionsByRole`**: Get the ace ranks from representation ranks sstable
 
 #### PolicyDetail
 
@@ -457,15 +432,11 @@ This document lists all deprecated fields, queries, mutations, and enum values i
 
 #### SelfServicePermission
 
-- **`inventoryRoot`**: Use hierarchyRoot field instead.
+- **`inventoryRoot`**: No longer in use.
 
 #### Snappable
 
 - **`orgName`**: `snappableOrg` field captures the basic org details.
-
-#### SuspiciousFileInfo
-
-- **`fileId`**: Use O365Info.file_id instead.
 
 #### TakeOnDemandSnapshotTaskchainUuid
 
@@ -515,27 +486,21 @@ This document lists all deprecated fields, queries, mutations, and enum values i
 - **`AZURE_DEVOPS_REPOSITORY_PROTECTION`**: Use `LAMINAR_TARGET_APPLICATION` instead.
 - **`AZURE_DEVOPS_REPOSITORY_PROTECTION`**: Use `LAMINAR_TARGET_MANAGED_IDENTITY` instead.
 - **`AZURE_DEVOPS_REPO_SIZE`**: This field is deprecated and no longer used.
-- **`CATEGORY_UNSPECIFIED`**: Use AUTHENTICATION_AND_SECRET_MANAGEMENT instead.
 - **`CLOUDDIRECT_NAS_NAMESPACE_VENDOR_TYPE`**: Not implemented - no longer used.
 - **`CLUSTER_DISCONNECTED`**: This reason is no longer used.
 - **`COLDLINE_GCP`**: Use STANDARD_GCP instead.
-- **`DNS_SERVERS_CHECK`**: Use CLUSTER_NAME_LENGTH_CHECK instead.
 - **`DOMAIN_HAS_FOREST`**: Use EBS_VOLUME_NAME_OR_VOLUME_ID instead.
 - **`EBS_VOLUME_INDEXING_STATUS`**: Use EBS_VOLUME_NAME_OR_VOLUME_ID instead.
 - **`EBS_VOLUME_TYPE`**: Use EC2_INSTANCE_NAME_OR_INSTANCE_ID instead.
 - **`EC2_INSTANCE`**: Use UNIFIED_ENCRYPTION_MANAGEMENT instead.
 - **`EC2_INSTANCE`**: Use UNIFIED_ENCRYPTION_MANAGEMENT instead.
 - **`EC2_INSTANCE_INDEXING_STATUS`**: Use EC2_INSTANCE_NAME_OR_INSTANCE_ID instead.
-- **`EXCESSIVE_IDENTITY_RIGHTS`**: Use CATEGORY_UNSPECIFIED instead.
 - **`EXOCOMPUTE_EKS_LAMBDA_ROLE_ARN`**: Instance profile corresponds to worker node in an EKS\ncluster, please use EXOCOMPUTE_EKS_WORKERNODE_INSTANCE_PROFILE\ninstead.
 - **`EXTERNAL_CDM_LOCATION_ID`**: Archived locations should not be queried for.
 - **`EXTERNAL_CDM_LOCATION_ID`**: We do not use archival groups currently.
 - **`EXTERNAL_CDM_LOCATION_ID`**: We do not use archival groups currently.
 - **`FSXN`**: Use specific vendor types instead of GENERIC
 - **`HYPERV_VM_SNAPSHOT`**: Hyper-V VM poller is no longer used.
-- **`IDENTITY_PROVIDER_SECURITY`**: Use CATEGORY_UNSPECIFIED instead.
-- **`IDENTITY_PROVIDER_SECURITY`**: Use IDENTITY_HYGIENE instead.
-- **`IDENTITY_PROVIDER_SECURITY`**: Use IDENTITY_PROVIDER_SECURITY instead.
 - **`IDENTITY_RISKS`**: Use LATEST_GLOBAL_OBJECTS instead.
 - **`INITIALIZING_METADATA`**: INITIALIZING_REPORTS is deprecated.
 - **`IN_PROGRESS`**: No longer applicable.
@@ -547,14 +512,11 @@ This document lists all deprecated fields, queries, mutations, and enum values i
 - **`NF_ANOMALIES`**: Use OBJECT_PROTECTION_AUDIT_LIST instead.
 - **`OBJECT_PROTECTION_AUDIT_LIST_EXPORT`**: Use TASK_DETAILS instead.
 - **`ORACLE_ROOT`**: This root is no longer in use.
-- **`OVEREXPOSED`**: Use IDENTITY_HYGIENE instead.
+- **`PROXMOX_VIRTUAL_MACHINE`**: RECOVERY_PLAN is deprecated and no longer used.
 - **`PUBLIC`**: enum value is deprecated.
-- **`PURE_STORAGE_VOLUME`**: RECOVERY_PLAN is deprecated and no longer used.
 - **`RDS_AWS_NATIVE_ACCOUNT_ID`**: There is no concept of SLA ID on a snapshot. SLA is assigned to an object and snapshots are taken based on the configuration of the SLA Domain at that point of time. However, SLA configurations may change at a later point in time, without reflecting the change on the snapshot, if not retroactively assigned. Hence, this filter field is deprecated and would be removed subsequently.
 - **`REMEDIATION_TYPE_IDP_EVENT_REVERT`**: Use REMEDIATION_TYPE_REMEDIATE_ENTRA_ID_RISK instead.
 - **`RUBRIK_NATIVE_HAS_UNINDEXED_OR_EXPIRED_SNAPSHOT`**: use `SAASAPPS_ORGANIZATION_SCOPE` instead.
-- **`SECURITY_IDENTITY_DEPARTMENT`**: Use SECURITY_IDENTITY_DIRECT_DESCENDANT_COUNT instead.
-- **`SECURITY_IDENTITY_EVENT_TITLE`**: Use SECURITY_IDENTITY_EVENT_TITLE instead.
 - **`SERVICE_ACCOUNT`**: Use SLA_AUDIT_DETAIL_NG instead.
 - **`SINGLE_ZONE`**: Use REDUNDANCY_UNKNOWN instead.
 - **`SLA_AUDIT_DETAIL_NG`**: Use SLA_AUDIT_LIST_NG instead.
