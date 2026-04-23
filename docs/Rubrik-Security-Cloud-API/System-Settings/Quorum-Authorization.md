@@ -4,7 +4,7 @@ title: Quorum Authorization
 
 # Quorum Authorization
 
-Quorum Authorization (also referred to as Two-Person Rule, or TPR) requires a second authorized user to approve sensitive operations before they execute. When a user attempts a protected action — such as deleting a snapshot, modifying an SLA domain, or pausing protection — RSC creates an approval request that must be reviewed before the operation proceeds.
+Quorum Authorization (also referred to as Two-Person Rule, or TPR) requires one or more authorized approvers to approve sensitive operations before they execute. When a user attempts a protected action — such as deleting a snapshot, modifying an SLA domain, or pausing protection — RSC creates an approval request that must reach the configured quorum before the operation proceeds. The number of required approvals is set per policy via `quorumRequirement` and defaults to 1.
 
 Protected operations include:
 
