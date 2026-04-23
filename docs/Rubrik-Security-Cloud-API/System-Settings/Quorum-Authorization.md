@@ -213,6 +213,23 @@ Each policy rule targets an object (or is left unscoped for system-level policie
     --8<-- "code/Rubrik-Security-Cloud-API/System-Settings/Quorum-Authorization/deletePolicy.sh"
     ```
 
+### Get your org ID
+
+`tprConfiguration` requires an `orgId`. Use `orgsForPrincipal` to retrieve it — this works with both interactive users and service accounts.
+
+=== "GraphQL"
+    ```graphql
+    --8<-- "code/Rubrik-Security-Cloud-API/System-Settings/Quorum-Authorization/getOrgId.gql"
+    ```
+=== "PowerShell SDK"
+    ```powershell
+    --8<-- "code/Rubrik-Security-Cloud-API/System-Settings/Quorum-Authorization/getOrgId.ps1"
+    ```
+=== "Shell"
+    ```bash
+    --8<-- "code/Rubrik-Security-Cloud-API/System-Settings/Quorum-Authorization/getOrgId.sh"
+    ```
+
 ### Read org configuration
 
 Returns the current timeout and quorum settings for the organization.
