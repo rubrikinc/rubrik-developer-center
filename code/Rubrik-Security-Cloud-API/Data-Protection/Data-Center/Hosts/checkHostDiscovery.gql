@@ -1,0 +1,17 @@
+query CheckHostDiscovery {
+  physicalHosts(
+    hostRoot: WINDOWS_HOST_ROOT
+    filter: [{ field: NAME, texts: ["sqlserver01.example.com"] }]
+  ) {
+    nodes {
+      id
+      name
+      connectionStatus {
+        connectivity
+      }
+      isMssqlHost
+      numWorkloadDescendants
+      osType
+    }
+  }
+}

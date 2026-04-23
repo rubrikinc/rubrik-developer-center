@@ -16,6 +16,23 @@ title: VMware vSphere
     ```bash
     --8<-- "code/Rubrik-Security-Cloud-API/Data-Protection/Data-Center/VMware-vSphere/virtualmachines.sh"
     ```
+### Register RBS on a VM
+
+To enable app-consistent backups for workloads running inside a vSphere VM (such as SQL Server or Oracle), register the Rubrik Backup Service (RBS) after the VM has been discovered. Use the VM's `id` from the retrieval query above.
+
+=== "GraphQL"
+    ```graphql
+    --8<-- "code/Rubrik-Security-Cloud-API/Data-Protection/Data-Center/VMware-vSphere/registerRbs.gql"
+    ```
+=== "PowerShell SDK"
+    ```powershell
+    --8<-- "code/Rubrik-Security-Cloud-API/Data-Protection/Data-Center/VMware-vSphere/registerRbs.ps1"
+    ```
+=== "Shell"
+    ```bash
+    --8<-- "code/Rubrik-Security-Cloud-API/Data-Protection/Data-Center/VMware-vSphere/registerRbs.sh"
+    ```
+
 ### On-Demand Backup
 === "GraphQL"
     ```graphql

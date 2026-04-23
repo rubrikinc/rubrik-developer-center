@@ -1,0 +1,7 @@
+mutation RegisterRbs {
+  vsphereVmRegisterAgent(input: {
+    id: "YOUR_VM_ID"
+  }) {
+    success
+  }
+}
