@@ -1,0 +1,22 @@
+mutation RegisterHost {
+  bulkRegisterHostAsync(input: {
+    clusterUuid: "YOUR_CLUSTER_UUID"
+    hosts: [
+      {
+        hostname: "sqlserver01.example.com"
+        hasAgent: true
+      }
+    ]
+  }) {
+    output {
+      items {
+        hostSummary {
+          id
+          hostname
+          status
+          operatingSystem
+        }
+      }
+    }
+  }
+}

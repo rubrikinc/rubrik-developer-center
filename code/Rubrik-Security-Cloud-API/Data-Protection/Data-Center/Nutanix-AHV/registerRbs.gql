@@ -1,0 +1,7 @@
+mutation RegisterRbs {
+  registerAgentNutanixVm(input: {
+    id: "YOUR_VM_ID"
+  }) {
+    success
+  }
+}

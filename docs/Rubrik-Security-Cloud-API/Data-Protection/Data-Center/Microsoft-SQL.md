@@ -16,7 +16,7 @@ SLA policies assigned at the host or instance level are inherited by all objects
 
 Before protecting SQL Server databases through the API:
 
-1. **Register your SQL Server host** — See [Host and Connector Setup](Host-Setup.md) to add the Windows host running SQL Server to your Rubrik cluster. Discovery of instances and databases happens automatically after registration.
+1. **Register your SQL Server host** — See [Hosts](Hosts.md) to add the Windows host running SQL Server to your Rubrik cluster. Discovery of instances and databases happens automatically after registration.
 
 2. **Locate your SLA Domain** — See [SLA Domains](../SLA-Domains.md) to retrieve the UUID of the SLA policy you want to apply. You'll need this when assigning protection.
 
