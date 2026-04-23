@@ -1,0 +1,11 @@
+mutation ApproveTprRequest($input: ApproveTprRequestInput!) {
+  approveTprRequest(input: $input)
+}
+
+# Variables:
+# {
+#   "input": {
+#     "requestId": "YOUR_REQUEST_ID",
+#     "comment": "Approved via ServiceNow ticket SCTASK0012345"
+#   }
+# }
