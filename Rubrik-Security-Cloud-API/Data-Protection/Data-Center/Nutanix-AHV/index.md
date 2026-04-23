@@ -71,6 +71,41 @@ curl -X POST \
   https://example.my.rubrik.com/api/graphql
 ```
 
+### Register RBS on a VM
+
+To enable app-consistent backups for workloads running inside a Nutanix VM (such as SQL Server or Oracle), register the Rubrik Backup Service (RBS) after the VM has been discovered. Use the VM's `id` from the retrieval query above.
+
+```graphql
+mutation RegisterRbs {
+  registerAgentNutanixVm(input: {
+    id: "YOUR_VM_ID"
+  }) {
+    success
+  }
+}
+```
+
+```powershell
+$mutation = New-RscMutation -GqlQuery registerAgentNutanixVm
+$mutation.Var.Input = New-Object -TypeName RubrikSecurityCloud.Types.RegisterAgentNutanixVmInput
+$mutation.Var.Input.Id = "YOUR_VM_ID"
+$mutation.Invoke()
+```
+
+```bash
+#!/bin/bash
+
+# RSC_TOKEN="YOUR_RSC_ACCESS_TOKEN"
+# VM_ID="YOUR_VM_ID"
+query="mutation { registerAgentNutanixVm(input: { id: \\\"$VM_ID\\\" }) { success } }"
+
+curl -X POST \
+  -H "Content-Type: application/json" \
+  -H "Authorization: Bearer $RSC_TOKEN" \
+  -d "{\"query\": \"$query\"}" \
+  https://example.my.rubrik.com/api/graphql
+```
+
 ### On-Demand Backup
 
 ```graphql

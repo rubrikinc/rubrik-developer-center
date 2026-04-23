@@ -12,7 +12,7 @@ SLA policies assigned at the host or instance level are inherited by all objects
 
 Before protecting SQL Server databases through the API:
 
-1. **Register your SQL Server host** — See [Host and Connector Setup](https://developer.rubrik.com/Rubrik-Security-Cloud-API/Data-Protection/Data-Center/Microsoft-SQL/Host-Setup.md) to add the Windows host running SQL Server to your Rubrik cluster. Discovery of instances and databases happens automatically after registration.
+1. **Register your SQL Server host** — See [Hosts](https://developer.rubrik.com/Rubrik-Security-Cloud-API/Data-Protection/Data-Center/Hosts/index.md) to add the Windows host running SQL Server to your Rubrik cluster. Discovery of instances and databases happens automatically after registration.
 1. **Locate your SLA Domain** — See [SLA Domains](https://developer.rubrik.com/Rubrik-Security-Cloud-API/Data-Protection/SLA-Domains/index.md) to retrieve the UUID of the SLA policy you want to apply. You'll need this when assigning protection.
 1. **Obtain an access token** — See [Authentication](https://developer.rubrik.com/Rubrik-Security-Cloud-API/authentication/index.md) for the OAuth2 client credentials flow used in all API calls.
 
