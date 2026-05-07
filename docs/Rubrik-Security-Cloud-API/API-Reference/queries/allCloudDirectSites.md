@@ -44,6 +44,7 @@ List of the Cloud Direct Sites accessible by the current user.
                 "ipAddress": "example-string",
                 "lastConnectedAt": "2024-01-01T00:00:00.000Z",
                 "lastState": "DEGRADED",
+                "name": "example-string",
                 "removedAt": "2024-01-01T00:00:00.000Z"
               }
             ]

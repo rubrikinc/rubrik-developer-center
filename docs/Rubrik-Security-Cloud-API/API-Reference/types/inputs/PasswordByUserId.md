@@ -8,3 +8,4 @@ Map of user IDs to password.
 |-------|------|-------------|
 | password | String! | Password required to restore the user. |
 | userId | [UUID](../scalars/UUID.md)! | User ID of the user being restored. |
+| userIdString | String | String ID of the user being restored. |

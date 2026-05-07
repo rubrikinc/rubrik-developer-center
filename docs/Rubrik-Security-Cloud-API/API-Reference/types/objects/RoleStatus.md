@@ -6,7 +6,7 @@
 
 | Field | Type | Description |
 |-------|------|-------------|
-| hasRole | Boolean! |  |
+| hasRole | Boolean! | Indicates whether the user has the role. |
 
 ## Used By
 

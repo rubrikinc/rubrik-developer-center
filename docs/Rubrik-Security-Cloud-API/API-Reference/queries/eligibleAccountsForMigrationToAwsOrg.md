@@ -36,6 +36,7 @@ Retrieves the list of accounts eligible for migration to an AWS organization.
           orgName
           outpostAwsNativeId
           seamlessFlowEnabled
+          serviceType
         }
         pageInfo {
           hasNextPage

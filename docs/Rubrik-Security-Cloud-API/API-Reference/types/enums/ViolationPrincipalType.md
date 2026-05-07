@@ -10,12 +10,17 @@ Principal type for risk summary.
 | APP_ROLE | Principal of the app role type. |
 | ASSUMABLE_IDENTITY | Principal of the assumable identity type. |
 | ATTRIBUTE_SCHEMA | Principal of the attribute schema type. |
+| AU | Principal of the Entra ID administrative unit type. |
+| AUTHENTICATION_CONTEXT | Principal of the authentication context type. |
+| AUTHENTICATION_STRENGTH | Principal of the authentication strength type. |
 | CERTIFICATE_TEMPLATE | Principal of the AD Certificate Template type. |
 | CLASS_SCHEMA | Principal of the class schema type. |
 | COMPUTER | Principal of the computer type. |
 | CONTACT | Principal of the contact type. |
 | CONTAINER | Principal of the container type. |
+| CONTRACT | Principal of the contract type. |
 | CONTROL_ACCESS_RIGHT | Principal of the AD Control Access Right type. |
+| DEVICE | Principal of the device type. |
 | DFS_LINK | Principal of the AD DFS Link type. |
 | DFS_NAMESPACE_V1 | Principal of the AD DFS Namespace v1 type. |
 | DFS_NAMESPACE_V2 | Principal of the AD DFS Namespace v2 type. |
@@ -29,12 +34,15 @@ Principal type for risk summary.
 | INFRASTRUCTURE_UPDATE | Principal of the infrastructure update type. |
 | INTER_SITE_TRANSPORT | Principal of the inter-site transport type. |
 | INTER_SITE_TRANSPORT_CONTAINER | Principal of the inter-site transport container type. |
+| INVITATION | Principal of the invitation type. |
 | LICENSING_SITE_SETTINGS | Principal of the licensing site settings type. |
 | MSDS_QUOTA_CONTAINER | Principal of the MSDS quota container type. |
 | MSDS_QUOTA_CONTROL | Principal of the MSDS quota control type. |
 | NAMED_LOCATION | Principal of the named location type. |
 | NTDS_SITE_SETTINGS | Principal of the NTDS site settings type. |
+| OAUTH2_PERMISSION_GRANT | Principal of the OAuth2 permission grant type. |
 | ORG_WIDE | Principal of the org-wide identity type. |
+| OTHER | Principal of the other/unclassified type. |
 | OU | Principal of the OU type. |
 | PASSWORD_SETTINGS | Principal of the password settings type. |
 | PASSWORD_SETTINGS_CONTAINER | Principal of the password settings container type. |
@@ -50,6 +58,7 @@ Principal type for risk summary.
 | SUBNET | Principal of the subnet type. |
 | SUBNET_CONTAINER | Principal of the subnet container type. |
 | SYSTEM_IDENTITY | Principal representing an objectless system identity. |
+| TERMS_OF_USE | Principal of the terms of use type. |
 | TRUSTED_DOMAIN | Principal of the trusted domain type. |
 | UNKNOWN | Principal of the unknown type. |
 | USER | Principal of the user type. |

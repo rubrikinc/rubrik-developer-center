@@ -6,8 +6,8 @@ O365 SaaS setup kickoff response.
 
 | Field | Type | Description |
 |-------|------|-------------|
-| appClientIdsPerType | [[AppIdForType](AppIdForType.md)!]! |  |
-| csrfToken | String! |  |
+| appClientIdsPerType | [[AppIdForType](AppIdForType.md)!]! | The app client IDs per type. |
+| csrfToken | String! | The CSRF token. |
 
 ## Used By
 

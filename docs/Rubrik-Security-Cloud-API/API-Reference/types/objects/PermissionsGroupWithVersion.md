@@ -18,3 +18,5 @@ Represents a permissions group with its version.
 - [AzureCloudAccountPermissionConfigResponse.permissionsGroupVersions](AzureCloudAccountPermissionConfigResponse.md)
 - [FeatureDetail.permissionsGroupVersions](FeatureDetail.md)
 - [FeaturePermission.permissionsGroupVersions](FeaturePermission.md)
+- [GcpCloudAccountFeatureDetail.permissionsGroupVersions](GcpCloudAccountFeatureDetail.md)
+- [GcpFeatureDetail.permissionsGroupVersions](GcpFeatureDetail.md)

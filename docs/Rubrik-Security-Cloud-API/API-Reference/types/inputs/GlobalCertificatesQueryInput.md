@@ -15,5 +15,7 @@ Input to list global certificates.
 | isTrustedAny | Boolean | Specifies whether the certificate is in the trust store of the Rubrik cluster. |
 | issuerTypes | [[IssuerType](../enums/IssuerType.md)!] | Specifies the certificate issuer types to return. |
 | renewalStatuses | [[CertificateRotationStatus](../enums/CertificateRotationStatus.md)!] | Specifies the certificate rotation statuses to retrieve. |
+| rscUsages | [[CertificateUsage](../enums/CertificateUsage.md)!] | Specifies the RSC certificate usages to return. |
 | searchText | String | The query to filter the certificates. |
 | statuses | [[GlobalCertificateStatus](../enums/GlobalCertificateStatus.md)!] | The status of the certificates. |
+| usageLocations | [[CertificateUsageLocation](../enums/CertificateUsageLocation.md)!] | Filters certificates by where they are used. |

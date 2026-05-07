@@ -17,6 +17,7 @@ Supported in v5.0+
 | recoveryPoint | [OracleRecoveryPointInput](OracleRecoveryPointInput.md)! | Required. Supported in v5.0+ v5.0-v5.2: Snapshot ID or timestamp for which the export is done. v5.3+: Snapshot ID or timestamp for which the clone is done. |
 | restoreFilesPath | String | Supported in v5.0+ The full path for the directory on the target host to use to store the restored database files. |
 | shouldAllowRenameToSource | Boolean | Supported in v9.0+ A boolean value determines if the database can be renamed back to the source Oracle host or RAC during the clone. |
+| shouldRecoverToLatestFromRedo | Boolean | When true, applies Zero RPO redo logs after RMAN recovery to achieve maximum data recovery up to the latest streamed transaction. Requires Zero RPO to be enabled on the source database. |
 | shouldRestoreFilesOnly | Boolean | Specifies whether the database files are copied to the target host without recreating the database. |
 | shouldSkipDropDbInUndo | Boolean | Supported in v8.1+ v8.1-v9.0: Indicates whether to skip dropping the database in undo task if the database was partially recovered. v9.1+: Indicates whether to skip dropping the database during an undo task if the database was partially recovered. |
 | shouldStopRecoveryOnPreScriptFailure | Boolean | Supported in v6.0+ Boolean value that determines whether to stop the recovery task if the pre-script exits with a non-zero value. Set to True to stop the recovery task on pre-script failure. The default setting is False, which allows the task to continue. |

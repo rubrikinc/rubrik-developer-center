@@ -10,6 +10,7 @@ Details about a device in a NAS Cloud Direct site.
 | ipAddress | String | The IP address and netmask of the device. |
 | lastConnectedAt | [DateTime](../scalars/DateTime.md) | Time when the device was last connected to the site. |
 | lastState | [DeviceState](../enums/DeviceState.md)! | The last known state of the device. |
+| name | String! | User-assigned display name for the device. Empty string if no name has been assigned. |
 | removedAt | [DateTime](../scalars/DateTime.md) | Time when the device was removed. |
 
 ## Used By

@@ -1,12 +1,12 @@
 # deleteLdapPrincipals
 
-*No description available.*
+Delete LDAP principals.
 
 ## Arguments
 
 | Argument | Type | Description |
 |----------|------|-------------|
-| principalIds *(required)* | [String!]! |  |
+| principalIds *(required)* | [String!]! | List of LDAP principal IDs to delete. |
 
 ## Returns
 

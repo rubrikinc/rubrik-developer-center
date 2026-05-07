@@ -38,6 +38,7 @@
 | isRetentionLocked | Boolean | Specifies whether the snapshot is retention locked. |
 | isUnindexable | Boolean! |  |
 | latestUserNote | [LatestUserNote](LatestUserNote.md) | Latest user note information. |
+| legalHoldInfo | [LegalHoldInfo](LegalHoldInfo.md) | Contains info regarding legal hold on snapshot, null otherwise. |
 | parentSnapshotId | String |  |
 | pendingSla | [SlaDomain](../interfaces/SlaDomain.md) | Specifies that the SLA Domain assignment is pending for this snapshot. The field is non-null when a user has assigned an SLA Domain, and the assignment is still in progress. |
 | polarisSpecificSnapshot | [PolarisSpecificSnapshot](../interfaces/PolarisSpecificSnapshot.md) | Rubrik-specific information about snapshots of specific workloads. Currently, this is only valid for Azure Virtual Machine, AWS EC2, and M365 snapshots. |

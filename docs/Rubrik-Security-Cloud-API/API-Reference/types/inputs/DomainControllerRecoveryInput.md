@@ -7,6 +7,7 @@ DomainControllerRecoveryInput contains configuration for recovering a single DC.
 | Field | Type | Description |
 |-------|------|-------------|
 | altHostId | [UUID](../scalars/UUID.md) | Alternate host ID (optional, UUID). If provided, DC will be recovered to this alternate host. |
+| dsrmPassword | String | DSRM (Directory Services Restore Mode) admin password. Required when recoveryMethod is DC_RECOVERY_METHOD_APPLICATION_ONLY, ignored otherwise. |
 | networkInterfaceSetting | [NetworkInterfaceSetting](../enums/NetworkInterfaceSetting.md) | Network interface setting for IP address retention. Uses cdmrestservice.NetworkInterfaceSetting enum. |
 | recoveryMethod | [DcRecoveryMethod](../enums/DcRecoveryMethod.md) | Recovery method for this DC. |
 | snapshotId | [UUID](../scalars/UUID.md)! | Snapshot ID to use for recovery (UUID). |

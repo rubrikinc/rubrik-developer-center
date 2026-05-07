@@ -6,9 +6,9 @@
 
 | Field | Type | Description |
 |-------|------|-------------|
-| appClientId | String! |  |
-| csrfToken | String! |  |
-| govAppClientId | String! |  |
+| appClientId | String! | The app client ID. |
+| csrfToken | String! | The CSRF token. |
+| govAppClientId | String! | The government app client ID. |
 
 ## Used By
 

@@ -52,14 +52,25 @@ Native type of principal.
 | AD_TRUSTED_DOMAIN | Active Directory Trusted Domain. |
 | AD_USER | Active Directory user. |
 | AD_VOLUME | Active Directory Volume. |
+| ENTRA_ID_ADMINISTRATIVE_UNIT | Entra ID administrative unit. |
 | ENTRA_ID_AGENT_ID | Entra ID agent ID. |
 | ENTRA_ID_APP_ROLE | Entra ID application role. |
+| ENTRA_ID_APP_ROLE_ASSIGNMENT | Entra ID app role assignment. |
+| ENTRA_ID_AUTHENTICATION_CONTEXT | Entra ID authentication context. |
+| ENTRA_ID_AUTHENTICATION_STRENGTH | Entra ID authentication strength. |
 | ENTRA_ID_CONDITIONAL_ACCESS_POLICY | Entra ID conditional access policy. |
+| ENTRA_ID_CONTRACT | Entra ID contract. |
+| ENTRA_ID_DEVICE | Entra ID device. |
+| ENTRA_ID_DIRECTORY_ROLE | Entra ID directory role. |
 | ENTRA_ID_GROUP | Entra ID group. |
+| ENTRA_ID_INVITATION | Entra ID invitation. |
 | ENTRA_ID_MANAGED_IDENTITY | Entra ID managed identity. |
 | ENTRA_ID_NAMED_LOCATION | Entra ID named location. |
+| ENTRA_ID_OAUTH2_PERMISSION_GRANT | Entra ID OAuth2 permission grant. |
+| ENTRA_ID_OTHER | Entra ID other/unclassified object. |
 | ENTRA_ID_ROLE | Entra ID role. |
 | ENTRA_ID_SERVICE_PRINCIPAL | Entra ID service principal. |
+| ENTRA_ID_TERMS_OF_USE | Entra ID terms of use. |
 | ENTRA_ID_USER | Entra ID user. |
 | OKTA_APPLICATION | Okta application. |
 | OKTA_GROUP | Okta group. |

@@ -6,6 +6,7 @@ Contains information about the legal hold placed on the Snapshot.
 
 | Field | Type | Description |
 |-------|------|-------------|
+| legalHoldMode | [LegalHoldMode](../enums/LegalHoldMode.md)! | Legal hold mode for RSC native snapshots. |
 | shouldHoldInPlace | Boolean! | Boolean which describes whether snapshot has to be held in place. |
 
 ## Used By
@@ -13,3 +14,4 @@ Contains information about the legal hold placed on the Snapshot.
 **Referenced by**
 
 - [CdmSnapshot.legalHoldInfo](CdmSnapshot.md)
+- [PolarisSnapshot.legalHoldInfo](PolarisSnapshot.md)

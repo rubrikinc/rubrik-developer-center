@@ -8,6 +8,7 @@ Specific info for GCP Target Template.
 
 | Field | Type | Description |
 |-------|------|-------------|
+| bucketNetworkAccess | [GcpBucketNetworkAccess](../enums/GcpBucketNetworkAccess.md)! | Network access setting for the GCP bucket. |
 | bucketPrefix | String! | GCP target bucket prefix. |
 | cloudAccount | [CloudAccount](../interfaces/CloudAccount.md)! | Cloud Account information of the GCP target. |
 | cloudNativeLocTemplateType | [CloudNativeLocTemplateType](../enums/CloudNativeLocTemplateType.md)! | Cloud native template type. |

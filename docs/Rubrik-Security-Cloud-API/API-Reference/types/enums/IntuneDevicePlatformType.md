@@ -13,9 +13,14 @@ Specifies the platform type for Intune devices.
 | INTUNE_DEVICE_PLATFORM_TYPE_ANDROID_WORK_PROFILE | The platform type is Android Work Profile. |
 | INTUNE_DEVICE_PLATFORM_TYPE_IOS | The platform type is iOS/iPadOS. |
 | INTUNE_DEVICE_PLATFORM_TYPE_IOS_MOBILE_APPLICATION_MANAGEMENT | The platform type is iOS/iPadOS mobile application management. |
+| INTUNE_DEVICE_PLATFORM_TYPE_LINUX | The platform type is Linux. |
 | INTUNE_DEVICE_PLATFORM_TYPE_MACOS | The platform type is macOS. |
+| INTUNE_DEVICE_PLATFORM_TYPE_TVOS | The platform type is tvOS. |
 | INTUNE_DEVICE_PLATFORM_TYPE_UNKNOWN | The platform type is unknown. |
+| INTUNE_DEVICE_PLATFORM_TYPE_VISIONOS | The platform type is visionOS. |
+| INTUNE_DEVICE_PLATFORM_TYPE_WINDOWS_10X | The platform type is Windows 10X. |
 | INTUNE_DEVICE_PLATFORM_TYPE_WINDOWS_10_AND_LATER | The platform type is Windows 10 and later. |
+| INTUNE_DEVICE_PLATFORM_TYPE_WINDOWS_8 | The platform type is Windows 8. |
 | INTUNE_DEVICE_PLATFORM_TYPE_WINDOWS_81_AND_LATER | The platform type is Windows 8.1 and later. |
 | INTUNE_DEVICE_PLATFORM_TYPE_WINDOWS_MOBILE_APPLICATION_MANAGEMENT | The platform type is Windows mobile application management. |
 | INTUNE_DEVICE_PLATFORM_TYPE_WINDOWS_PHONE_81 | The platform type is Windows Phone 8.1. |
