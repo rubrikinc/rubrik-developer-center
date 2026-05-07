@@ -40,11 +40,15 @@ jobs:
     - name: Regenerate Deprecations
       run: python3 tools/extract_deprecated_fields.py
 
+    - name: Regenerate API Reference
+      run: python3 tools/generate_api_reference.py
+
     - name: Commit updated docs
       run: |
         git config user.name "github-actions[bot]"
         git config user.email "github-actions[bot]@users.noreply.github.com"
         git add docs/Rubrik-Security-Cloud-API/API-Reference/Changelog.md \
-                docs/Rubrik-Security-Cloud-API/API-Reference/Deprecations.md
+                docs/Rubrik-Security-Cloud-API/API-Reference/Deprecations.md \
+                docs/Rubrik-Security-Cloud-API/API-Reference/
         git diff --staged --quiet || git commit -m "Auto-update Changelog and Deprecations for new schema"
         git push
