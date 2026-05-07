@@ -46,6 +46,7 @@ query AwsNativeAccounts($awsNativeProtectionFeature: AwsNativeProtectionFeature!
       rdsInstanceCount
       rscPendingObjectPauseAssignment
       s3BucketCount
+      serviceType
       slaAssignment
       slaPauseStatus
       status

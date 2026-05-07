@@ -8,6 +8,7 @@ Quarantine information corresponding to a path.
 | ------------------------ | -------- | ---------------------------------------------------------------- |
 | containsQuarantinedFiles | Boolean! | Specifies whether there are more quarantined files at this path. |
 | isQuarantined            | Boolean! | Specifies whether the path is quarantined.                       |
+| quarantinedFileCount     | Int!     | Number of quarantined files at or beneath this path.             |
 
 ## Used By
 

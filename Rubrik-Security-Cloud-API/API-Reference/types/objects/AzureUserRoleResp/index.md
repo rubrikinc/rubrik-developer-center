@@ -4,10 +4,10 @@
 
 ## Fields
 
-| Field               | Type                                                                                                                 | Description |
-| ------------------- | -------------------------------------------------------------------------------------------------------------------- | ----------- |
-| globalAdministrator | [RoleStatus](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/RoleStatus/index.md) |             |
-| subscriptionOwner   | [RoleStatus](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/RoleStatus/index.md) |             |
+| Field               | Type                                                                                                                 | Description                           |
+| ------------------- | -------------------------------------------------------------------------------------------------------------------- | ------------------------------------- |
+| globalAdministrator | [RoleStatus](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/RoleStatus/index.md) | The global administrator role status. |
+| subscriptionOwner   | [RoleStatus](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/RoleStatus/index.md) | The subscription owner role status.   |
 
 ## Used By
 

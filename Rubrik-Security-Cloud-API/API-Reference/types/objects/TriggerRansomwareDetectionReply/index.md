@@ -1,6 +1,6 @@
 # TriggerRansomwareDetectionReply
 
-Lambda job information on certain cluster.
+Reply containing information about a ransomware detection job.
 
 ## Fields
 

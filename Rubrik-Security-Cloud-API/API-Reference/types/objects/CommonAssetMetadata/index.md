@@ -1,30 +1,30 @@
 # CommonAssetMetadata
 
-*No description available.*
+Comprehensive metadata for assets.
 
 ## Fields
 
-| Field               | Type                                                                                                                              | Description |
-| ------------------- | --------------------------------------------------------------------------------------------------------------------------------- | ----------- |
-| appSpecificMetadata | [AppMetadata](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AppMetadata/index.md)            |             |
-| backupStatus        | [BackupStatus](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/BackupStatus/index.md)!           |             |
-| cloudAccountInfo    | [CloudAccountInfo](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/CloudAccountInfo/index.md)  |             |
-| clusterInfo         | [ClusterInfo](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/ClusterInfo/index.md)            |             |
-| creationTime        | [Long](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/Long/index.md)!                         |             |
-| encryption          | [Encryption](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/Encryption/index.md)!               |             |
-| firstSeenTime       | [Long](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/Long/index.md)!                         |             |
-| isDeleted           | Boolean!                                                                                                                          |             |
-| lastAccessTime      | [Long](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/Long/index.md)!                         |             |
-| logging             | [Logging](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/Logging/index.md)!                     |             |
-| name                | String!                                                                                                                           |             |
-| networkAccess       | [NetworkAccess](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/NetworkAccess/index.md)!         |             |
-| objectTags          | \[[AssetTag](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AssetTag/index.md)!\]!            |             |
-| objectType          | [ManagedObjectType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/ManagedObjectType/index.md)! |             |
-| physicalHost        | String!                                                                                                                           |             |
-| platform            | [Platform](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/Platform/index.md)!                   |             |
-| platformCategory    | [PlatformCategory](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/PlatformCategory/index.md)!   |             |
-| region              | String!                                                                                                                           |             |
-| rubrikSlaInfo       | [RubrikSlaInfo](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/RubrikSlaInfo/index.md)        |             |
-| sensitivityLevel    | [SensitivityLevel](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/SensitivityLevel/index.md)!   |             |
-| size                | [Long](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/Long/index.md)!                         |             |
-| snapshotTimestamp   | [Long](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/Long/index.md)!                         |             |
+| Field               | Type                                                                                                                              | Description                                                                                               |
+| ------------------- | --------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------- |
+| appSpecificMetadata | [AppMetadata](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AppMetadata/index.md)            | Specifies application-specific metadata.                                                                  |
+| backupStatus        | [BackupStatus](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/BackupStatus/index.md)!           | Specifies the current backup state of the asset.                                                          |
+| cloudAccountInfo    | [CloudAccountInfo](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/CloudAccountInfo/index.md)  | Specifies the cloud provider account where the asset resides.                                             |
+| clusterInfo         | [ClusterInfo](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/ClusterInfo/index.md)            | Specifies the cluster details of the asset.                                                               |
+| creationTime        | [Long](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/Long/index.md)!                         | Specifies the creation timestamp of the asset in milliseconds.                                            |
+| encryption          | [Encryption](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/Encryption/index.md)!               | Specifies the encryption status for the asset.                                                            |
+| firstSeenTime       | [Long](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/Long/index.md)!                         | Specifies the initial detection time of the asset in milliseconds.                                        |
+| isDeleted           | Boolean!                                                                                                                          | Specifies whether the asset is marked as deleted.                                                         |
+| lastAccessTime      | [Long](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/Long/index.md)!                         | Specifies the last access time for the asset in milliseconds.                                             |
+| logging             | [Logging](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/Logging/index.md)!                     | Specifies the logging status for the asset.                                                               |
+| name                | String!                                                                                                                           | Specifies the name of the asset.                                                                          |
+| networkAccess       | [NetworkAccess](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/NetworkAccess/index.md)!         | Specifies network accessibility for the asset.                                                            |
+| objectTags          | \[[AssetTag](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AssetTag/index.md)!\]!            | Specifies the object tags assigned to the asset.                                                          |
+| objectType          | [ManagedObjectType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/ManagedObjectType/index.md)! | Specifies the managed type of the object.                                                                 |
+| physicalHost        | String!                                                                                                                           | Specifies the physical host associated with the asset.                                                    |
+| platform            | [Platform](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/Platform/index.md)!                   | Specifies the infrastructure platform of the asset.                                                       |
+| platformCategory    | [PlatformCategory](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/PlatformCategory/index.md)!   | Specifies the platform category of the asset.                                                             |
+| region              | String!                                                                                                                           | Specifies the geographic region of the asset.                                                             |
+| rubrikSlaInfo       | [RubrikSlaInfo](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/RubrikSlaInfo/index.md)        | Specifies the Rubrik SLA Domain information for the asset. Only populated when Rubrik backs up the asset. |
+| sensitivityLevel    | [SensitivityLevel](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/SensitivityLevel/index.md)!   | Specifies the data sensitivity level of the asset.                                                        |
+| size                | [Long](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/Long/index.md)!                         | Specifies the size of the asset in bytes.                                                                 |
+| snapshotTimestamp   | [Long](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/Long/index.md)!                         | Specifies the timestamp of the snapshot in milliseconds.                                                  |

@@ -1,12 +1,12 @@
 # IpRule
 
-IP Rules for Azure storage account.
+IPRule defines IP action for that IP.
 
 ## Fields
 
-| Field | Type    | Description                                        |
-| ----- | ------- | -------------------------------------------------- |
-| ip    | String! | IP for which the network access should be allowed. |
+| Field | Type    | Description                               |
+| ----- | ------- | ----------------------------------------- |
+| ip    | String! | The IP for which this IP rule is defined. |
 
 ## Used By
 

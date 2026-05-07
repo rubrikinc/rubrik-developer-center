@@ -1,6 +1,6 @@
 # NfAnomalyResultSortBy
 
-Sort non-filtesystem anomaly results by field.
+Sort non-filesystem anomaly results by field.
 
 ## Values
 

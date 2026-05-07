@@ -6,6 +6,7 @@ Use case of the archival entity.
 
 | Value                     | Description                                    |
 | ------------------------- | ---------------------------------------------- |
+| BACKUP                    | Archival entity for backup use case.           |
 | CLOUD_NATIVE              | Archival entity for cloud native use case.     |
 | DATA_CENTER               | Archival entity for data center use case.      |
 | NAS_CD                    | Archival entity for NAS Cloud Direct use case. |

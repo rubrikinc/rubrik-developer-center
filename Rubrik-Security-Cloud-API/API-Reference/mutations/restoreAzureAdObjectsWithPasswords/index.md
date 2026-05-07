@@ -29,7 +29,7 @@ mutation RestoreAzureAdObjectsWithPasswords($input: RestoreAzureAdObjectsWithPas
     "forceChangePasswordWithMfa": true,
     "objectTypeToIdMap": [
       {
-        "azureAdObjectType": "ACCOUNT_PROTECTION",
+        "azureAdObjectType": "ACCESS_REVIEW_SCHEDULE_DEFINITION",
         "objectId": "00000000-0000-0000-0000-000000000000"
       }
     ],

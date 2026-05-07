@@ -1,6 +1,6 @@
 # SaasOrgType
 
-The organization type that categorizes the SaaS provider.
+The different SaaS organization types supported.
 
 ## Values
 

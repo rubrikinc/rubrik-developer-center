@@ -4,10 +4,10 @@
 
 ## Fields
 
-| Field       | Type                                                                                                                                                          | Description |
-| ----------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------- |
-| reason      | String!                                                                                                                                                       |             |
-| rulesStatus | [AzureNetworkSecurityRulesStatus](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/AzureNetworkSecurityRulesStatus/index.md)! |             |
+| Field       | Type                                                                                                                                                          | Description                        |
+| ----------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------- |
+| reason      | String!                                                                                                                                                       | The reason.                        |
+| rulesStatus | [AzureNetworkSecurityRulesStatus](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/AzureNetworkSecurityRulesStatus/index.md)! | The network security rules status. |
 
 ## Used By
 

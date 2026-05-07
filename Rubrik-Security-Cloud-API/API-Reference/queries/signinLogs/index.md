@@ -30,17 +30,24 @@ query SigninLogs($timeRange: TimeRangeInput!) {
       actorDisplayName
       actorPrincipalName
       applicationName
+      authenticationMethod
       city
       country
       deviceName
+      errorCode
       eventId
       eventTimestamp
       eventType
       ipAddress
+      logonType
+      mfaStatus
+      processName
       provider
+      resourceName
       result
       riskLevel
       state
+      userId
       userSid
     }
     pageInfo {
@@ -70,9 +77,9 @@ query SigninLogs($timeRange: TimeRangeInput!) {
             "actorDisplayName": "example-string",
             "actorPrincipalName": "example-string",
             "applicationName": "example-string",
+            "authenticationMethod": "example-string",
             "city": "example-string",
-            "country": "example-string",
-            "deviceName": "example-string"
+            "country": "example-string"
           }
         ]
       ],

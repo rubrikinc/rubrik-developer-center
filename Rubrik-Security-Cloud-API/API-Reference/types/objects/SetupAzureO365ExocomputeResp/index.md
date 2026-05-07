@@ -4,10 +4,10 @@
 
 ## Fields
 
-| Field       | Type    | Description |
-| ----------- | ------- | ----------- |
-| clusterId   | String! |             |
-| taskchainId | String! |             |
+| Field       | Type    | Description       |
+| ----------- | ------- | ----------------- |
+| clusterId   | String! | The cluster ID.   |
+| taskchainId | String! | The taskchain ID. |
 
 ## Used By
 

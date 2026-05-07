@@ -4,9 +4,9 @@
 
 ## Fields
 
-| Field   | Type     | Description |
-| ------- | -------- | ----------- |
-| hasRole | Boolean! |             |
+| Field   | Type     | Description                              |
+| ------- | -------- | ---------------------------------------- |
+| hasRole | Boolean! | Indicates whether the user has the role. |
 
 ## Used By
 

@@ -28,6 +28,7 @@ query ActiveDirectoryDomainController($fid: UUID!) {
     hostname
     id
     isGlobalCatalog
+    isReadOnly
     isRelic
     macAddress
     macAddresses

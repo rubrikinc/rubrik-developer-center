@@ -28,9 +28,11 @@ query {
       clusterUuid
       downloadedSnapshotsStorage
       otherStorage
+      protectedObjectsStorage
       relicStorage
       totalCapacity
       totalUsedStorage
+      unprotectedObjectsStorage
     }
     pageInfo {
       hasNextPage
@@ -55,8 +57,8 @@ query {
             "clusterUuid": "00000000-0000-0000-0000-000000000000",
             "downloadedSnapshotsStorage": 0,
             "otherStorage": 0,
-            "relicStorage": 0,
-            "totalCapacity": 0
+            "protectedObjectsStorage": 0,
+            "relicStorage": 0
           }
         ]
       ],

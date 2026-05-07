@@ -4,10 +4,10 @@
 
 ## Fields
 
-| Field                 | Type    | Description |
-| --------------------- | ------- | ----------- |
-| appId                 | String! |             |
-| encryptedRefreshToken | String! |             |
+| Field                 | Type    | Description                  |
+| --------------------- | ------- | ---------------------------- |
+| appId                 | String! | The app ID.                  |
+| encryptedRefreshToken | String! | The encrypted refresh token. |
 
 ## Used By
 

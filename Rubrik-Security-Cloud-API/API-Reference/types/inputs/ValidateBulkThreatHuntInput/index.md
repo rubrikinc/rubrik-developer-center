@@ -4,6 +4,6 @@ Request to validate the bulk threat hunt request based on the provided list of o
 
 ## Fields
 
-| Field       | Type                                                                                                                                | Description                                          |
-| ----------- | ----------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------- |
-| objectInfos | \[[ObjectInfoInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/ObjectInfoInput/index.md)!\]! | List of object with their corresponding information. |
+| Field       | Type                                                                                                                                | Description                                           |
+| ----------- | ----------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------- |
+| objectInfos | \[[ObjectInfoInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/ObjectInfoInput/index.md)!\]! | List of objects with their corresponding information. |

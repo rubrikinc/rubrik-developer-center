@@ -4,10 +4,10 @@
 
 ## Fields
 
-| Field    | Type                                                                                                                                            | Description |
-| -------- | ----------------------------------------------------------------------------------------------------------------------------------------------- | ----------- |
-| status   | [O365ServiceAccountStatus](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/O365ServiceAccountStatus/index.md)! |             |
-| username | String!                                                                                                                                         |             |
+| Field    | Type                                                                                                                                            | Description                 |
+| -------- | ----------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------- |
+| status   | [O365ServiceAccountStatus](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/O365ServiceAccountStatus/index.md)! | The service account status. |
+| username | String!                                                                                                                                         | The username.               |
 
 ## Used By
 

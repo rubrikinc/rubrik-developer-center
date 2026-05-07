@@ -59,6 +59,7 @@
 [assignSla](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/assignSla/index.md)\
 [assignSlaToMongoDbCollection](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/assignSlaToMongoDbCollection/index.md)\
 [assignSlasForSnappableHierarchies](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/assignSlasForSnappableHierarchies/index.md)\
+[assignVmName](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/assignVmName/index.md)\
 [awsCloudAccountsMigrateInitiate](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/awsCloudAccountsMigrateInitiate/index.md)\
 [awsExocomputeClusterConnect](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/awsExocomputeClusterConnect/index.md)\
 [azureCloudAccountAddWithCustomerAppInitiate](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/azureCloudAccountAddWithCustomerAppInitiate/index.md)\

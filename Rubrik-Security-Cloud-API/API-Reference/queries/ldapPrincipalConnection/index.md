@@ -10,10 +10,10 @@ Search LDAP Principals.
 | after                   | String                                                                                                                                     | Returns the elements in the list that occur after the specified cursor.  |
 | last                    | Int                                                                                                                                        | Returns the last n elements from the list.                               |
 | before                  | String                                                                                                                                     | Returns the elements in the list that occur before the specified cursor. |
-| sortOrder               | [SortOrder](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/SortOrder/index.md)                           | Sorts the order of results.                                              |
-| sortBy                  | [LdapPrincipalFieldEnum](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/LdapPrincipalFieldEnum/index.md) | Field to sort LDAP principals by.                                        |
 | id *(required)*         | [UUID](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/UUID/index.md)!                                  | ID for your LDAP integration.                                            |
 | searchText *(required)* | String!                                                                                                                                    | Search Text for LDAP principal.                                          |
+| sortOrder               | [SortOrder](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/SortOrder/index.md)                           | Sorts the order of results.                                              |
+| sortBy                  | [LdapPrincipalFieldEnum](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/LdapPrincipalFieldEnum/index.md) | Field to sort LDAP principals by.                                        |
 
 ## Returns
 

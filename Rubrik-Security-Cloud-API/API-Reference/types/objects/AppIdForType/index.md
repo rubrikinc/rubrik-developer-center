@@ -4,10 +4,10 @@
 
 ## Fields
 
-| Field   | Type    | Description |
-| ------- | ------- | ----------- |
-| appId   | String! |             |
-| appType | String! |             |
+| Field   | Type    | Description   |
+| ------- | ------- | ------------- |
+| appId   | String! | The app ID.   |
+| appType | String! | The app type. |
 
 ## Used By
 

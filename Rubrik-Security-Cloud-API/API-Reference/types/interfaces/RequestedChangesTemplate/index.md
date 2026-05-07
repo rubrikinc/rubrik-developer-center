@@ -16,6 +16,7 @@ A generic TPR requested-changes template.
 - [CloudAccountsTprReqChangesTemplate](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/CloudAccountsTprReqChangesTemplate/index.md)
 - [CloudArchivalLocationTprReqChangesTemplate](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/CloudArchivalLocationTprReqChangesTemplate/index.md)
 - [DeleteReplicationPairTprReqChangesTemplate](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/DeleteReplicationPairTprReqChangesTemplate/index.md)
+- [DeleteSnapshotsTprReqChangesTemplate](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/DeleteSnapshotsTprReqChangesTemplate/index.md)
 - [EditFilesetTemplateTprReqChangesTemplate](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/EditFilesetTemplateTprReqChangesTemplate/index.md)
 - [EditReplicationPairTprReqChangesTemplate](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/EditReplicationPairTprReqChangesTemplate/index.md)
 - [EditSlaTprReqChangesTemplate](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/EditSlaTprReqChangesTemplate/index.md)

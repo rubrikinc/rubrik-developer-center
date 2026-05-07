@@ -1,6 +1,6 @@
 # SaasEnvironmentType
 
-The environment type of the SaaS resource.
+The different environments that describe a SaaS organization.
 
 ## Values
 
