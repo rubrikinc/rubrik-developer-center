@@ -16,6 +16,7 @@ A generic TPR requested-changes template.
 - [CloudAccountsTprReqChangesTemplate](../objects/CloudAccountsTprReqChangesTemplate.md)
 - [CloudArchivalLocationTprReqChangesTemplate](../objects/CloudArchivalLocationTprReqChangesTemplate.md)
 - [DeleteReplicationPairTprReqChangesTemplate](../objects/DeleteReplicationPairTprReqChangesTemplate.md)
+- [DeleteSnapshotsTprReqChangesTemplate](../objects/DeleteSnapshotsTprReqChangesTemplate.md)
 - [EditFilesetTemplateTprReqChangesTemplate](../objects/EditFilesetTemplateTprReqChangesTemplate.md)
 - [EditReplicationPairTprReqChangesTemplate](../objects/EditReplicationPairTprReqChangesTemplate.md)
 - [EditSlaTprReqChangesTemplate](../objects/EditSlaTprReqChangesTemplate.md)

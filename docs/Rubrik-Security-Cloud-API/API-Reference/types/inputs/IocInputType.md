@@ -1,10 +1,10 @@
 # IocInputType
 
-Indicators of compromise.
+IOC input of threat hunt.
 
 ## Fields
 
 | Field | Type | Description |
 |-------|------|-------------|
 | feedProviderId | String | Specifies the feed provider ID. |
-| iocList | [IndicatorOfCompromiseInputListType](IndicatorOfCompromiseInputListType.md) | Indicators of compromise. |
+| iocList | [IndicatorOfCompromiseInputListType](IndicatorOfCompromiseInputListType.md) | List of IOCs. |

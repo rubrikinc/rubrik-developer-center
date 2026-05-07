@@ -117,6 +117,7 @@ Enum representing all the possible object types which generate events.
 | M365_BACKUP_STORAGE_ORG | Microsoft 365 Backup Storage Subscription. |
 | M365_BACKUP_STORAGE_SITE | Microsoft 365 Backup Storage SharePoint Site. |
 | MANAGED_VOLUME | Managed Volume object. |
+| MICROSOFT_DEFENDER_INTEGRATION | Microsoft Defender for Identity integration object. |
 | MONGODB_COLLECTION | MongoDB collection. |
 | MONGODB_DATABASE | MongoDB database. |
 | MONGODB_SOURCE | MongoDB source. |
@@ -174,12 +175,17 @@ Enum representing all the possible object types which generate events.
 | PRINCIPAL_APP_ROLE | App Role principal type. |
 | PRINCIPAL_ASSUMABLE_IDENTITY | Assumable identity principal type. |
 | PRINCIPAL_ATTRIBUTE_SCHEMA | Attribute Schema principal type. |
+| PRINCIPAL_AU | Administrative Unit principal type. |
+| PRINCIPAL_AUTHENTICATION_CONTEXT | Authentication Context principal type. |
+| PRINCIPAL_AUTHENTICATION_STRENGTH | Authentication Strength principal type. |
 | PRINCIPAL_CERTIFICATE_TEMPLATE | Certificate Template principal type. |
 | PRINCIPAL_CLASS_SCHEMA | Class Schema principal type. |
 | PRINCIPAL_COMPUTER | Computer principal type. |
 | PRINCIPAL_CONTACT | Contact principal type. |
 | PRINCIPAL_CONTAINER | Container principal type. |
+| PRINCIPAL_CONTRACT | Contract principal type. |
 | PRINCIPAL_CONTROL_ACCESS_RIGHT | Control Access Right principal type. |
+| PRINCIPAL_DEVICE | Device principal type. |
 | PRINCIPAL_DFS_LINK | DFS Link principal type. |
 | PRINCIPAL_DFS_NAMESPACE_V1 | DFS Namespace V1 principal type. |
 | PRINCIPAL_DFS_NAMESPACE_V2 | DFS Namespace V2 principal type. |
@@ -193,11 +199,13 @@ Enum representing all the possible object types which generate events.
 | PRINCIPAL_INFRASTRUCTURE_UPDATE | Infrastructure Update principal type. |
 | PRINCIPAL_INTER_SITE_TRANSPORT | Inter-Site Transport principal type. |
 | PRINCIPAL_INTER_SITE_TRANSPORT_CONTAINER | Inter-Site Transport Container principal type. |
+| PRINCIPAL_INVITATION | Invitation principal type. |
 | PRINCIPAL_LICENSING_SITE_SETTINGS | Licensing Site Settings principal type. |
 | PRINCIPAL_MSDS_QUOTA_CONTAINER | MSDS Quota Container principal type. |
 | PRINCIPAL_MSDS_QUOTA_CONTROL | MSDS Quota Control principal type. |
 | PRINCIPAL_NAMED_LOCATION | Named Location principal type. |
 | PRINCIPAL_NTDS_SITE_SETTINGS | NTDS Site Settings principal type. |
+| PRINCIPAL_OAUTH2_PERMISSION_GRANT | OAuth2 Permission Grant principal type. |
 | PRINCIPAL_ORG_WIDE | Org wide principal type. |
 | PRINCIPAL_OU | OU principal type. |
 | PRINCIPAL_PASSWORD_SETTINGS | Password Settings principal type. |
@@ -214,6 +222,7 @@ Enum representing all the possible object types which generate events.
 | PRINCIPAL_SUBNET | Subnet principal type. |
 | PRINCIPAL_SUBNET_CONTAINER | Subnet Container principal type. |
 | PRINCIPAL_SYSTEM_IDENTITY | System Identity principal type. |
+| PRINCIPAL_TERMS_OF_USE | Terms of Use principal type. |
 | PRINCIPAL_TRUSTED_DOMAIN | Trusted Domain principal type. |
 | PRINCIPAL_VOLUME | Volume principal type. |
 | PROXMOX_CLUSTER | Proxmox cluster. |

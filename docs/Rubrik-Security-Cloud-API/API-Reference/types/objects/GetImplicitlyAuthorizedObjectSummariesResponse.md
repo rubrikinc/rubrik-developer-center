@@ -6,7 +6,7 @@ Get implicitly authorized objects response.
 
 | Field | Type | Description |
 |-------|------|-------------|
-| objectSummaries | [[ObjectSummary](ObjectSummary.md)!]! |  |
+| objectSummaries | [[ObjectSummary](ObjectSummary.md)!]! | The object summaries. |
 
 ## Used By
 

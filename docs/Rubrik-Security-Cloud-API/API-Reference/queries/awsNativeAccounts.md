@@ -48,6 +48,7 @@ Paginated list of all AWS Native accounts.
           rdsInstanceCount
           rscPendingObjectPauseAssignment
           s3BucketCount
+          serviceType
           slaAssignment
           slaPauseStatus
           status

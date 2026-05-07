@@ -8,26 +8,34 @@ SQL Server instance.
 
 | Field | Type | Description |
 |-------|------|-------------|
+| activeNode | String | Name of the currently active node for a Failover Cluster Instance. |
 | allOrgs | [[Org](Org.md)!]! | Organizations to which this hierarchy object belongs. |
 | allTags | [[AssignedRscTag](AssignedRscTag.md)!]! | RSC tags to which this hierarchy object is assigned. |
 | authorizedOperations | [[Operation](../enums/Operation.md)!]! | The authorized operations on the object. |
 | cdmPendingObjectPauseAssignment | [PendingObjectPauseAssignmentStatus](../enums/PendingObjectPauseAssignmentStatus.md) | Object pause pending assignment details for CDM objects. |
 | cluster | [Cluster](Cluster.md)! | Rubrik cluster where this object originated. |
+| configurationVersion | [Long](../scalars/Long.md) | Version of the instance configuration. Changes when the instance configuration is modified. |
 | configuredSlaDomain | [SlaDomain](../interfaces/SlaDomain.md)! | SLA Domain configured for the hierarchy object. |
 | crossAccountReplicatedObjectInfos | [[CrossAccountReplicatedObjectInfo](CrossAccountReplicatedObjectInfo.md)!] | Cross-account objects either replicated by this object or related to this object by replication. |
 | descendantConnection | [MssqlInstanceDescendantTypeConnection](MssqlInstanceDescendantTypeConnection.md)! | List of descendants. |
+| discoveredAddress | String | Network address discovered during instance registration. |
 | effectiveRetentionSlaDomain | [SlaDomain](../interfaces/SlaDomain.md) | Effective retention of the SLA Domain of the hierarchy object. |
 | effectiveSlaDomain | [SlaDomain](../interfaces/SlaDomain.md)! | Effective SLA Domain of the hierarchy object. |
 | effectiveSlaSourceObject | [PathNode](PathNode.md) | Path node of the effective SLA Domain source. |
 | hasLogConfigFromSla | Boolean! | Boolean flag indicating if the instance derives log backup configurations from SLA. |
+| hasPermissions | Boolean | Whether Rubrik has the required permissions on this instance. Returns null during rolling upgrades when the value is unavailable. |
+| hasSysadminRole | Boolean | Whether the Rubrik service account has sysadmin role on this instance. Returns null during rolling upgrades when the value is unavailable. |
 | hostLogRetention | [Long](../scalars/Long.md)! | Interval, in seconds, between the deletion of archived log files whose 'nextTime' field specifies a time longer than this interval. To specify an interval, enter a positive integer. To immediately delete archived log files regardless of age, specify an interval of -1. To preserve all archived log files, specify an interval of -2. |
+| hostsInstalled | [String!]! | List of hosts where this SQL Server instance is installed. |
 | id | [UUID](../scalars/UUID.md)! | ID of the hierarchy object. |
+| isClusterInstance | Boolean! | Whether this instance is a SQL Server Failover Cluster Instance (FCI). |
 | latestUserNote | [LatestUserNote](LatestUserNote.md) | Latest user note information. |
 | logBackupFrequencyInSeconds | [Long](../scalars/Long.md)! | Number of seconds between two log backups. When the value is set to 0, log backups are not enabled. When the value is set to -1, the default log backup frequency of the Rubrik cluster is used. When the value is set to -2, the log backup frequency is derived from the SLA Domain. |
 | logBackupRetentionInHours | Int! | Number of hours to retain a log backup. When the value is set to -1, the Rubrik cluster retains the log backup until the database snapshots that precede the log backup have expired. When the value is set to -2, the default log backup retention of the Rubrik cluster is used. When the value is set to -3, the log backup retention is derived from the SLA Domain. |
 | logicalChildConnection | [MssqlInstanceLogicalChildTypeConnection](MssqlInstanceLogicalChildTypeConnection.md)! | List of logical children. |
 | logicalPath | [[PathNode](PathNode.md)!]! | Sequential list of the logical ancestors of this object. |
 | name | String! | Name of the hierarchy object. |
+| networkName | String | Network name of the SQL Server instance. |
 | numWorkloadDescendants | Int! | Number of descendant workloads of this object. |
 | objectPauseStatus | [ObjectPauseStatus](ObjectPauseStatus.md) | Pause status of the hierarchy object. |
 | objectType | [HierarchyObjectTypeEnum](../enums/HierarchyObjectTypeEnum.md)! | Type of this object. |
@@ -35,13 +43,16 @@ SQL Server instance.
 | pendingSla | [SlaDomain](../interfaces/SlaDomain.md) | SLA Domain assignment of the object during the process of being communicated over to Rubrik CDM. |
 | physicalPath | [[PathNode](PathNode.md)!]! | Sequential list of the physical ancestors of this object. |
 | primaryClusterLocation | [DataLocation](DataLocation.md)! | The source cluster of this object. Returned as a data location because there is no guarantee that Rubrik has knowledge about the source cluster. |
+| protectionDate | [DateTime](../scalars/DateTime.md) | Date when this instance was first protected by Rubrik. |
 | replicatedObjectCount | Int! | The number of objects either replicated by this object or related to this object by replication. |
 | replicatedObjects | [[CdmHierarchyObject](../interfaces/CdmHierarchyObject.md)!]! | Objects either replicated by this object or related to this object by replication. |
 | securityMetadata | [SecurityMetadata](SecurityMetadata.md) | Security posture metadata. |
+| serviceAccountUser | String | Service account username used by the SQL Server instance. |
 | slaAssignment | [SlaAssignmentTypeEnum](../enums/SlaAssignmentTypeEnum.md)! | SLA Domain assignment type for this object. |
 | slaPauseStatus | Boolean! | Pause status of the effective SLA Domain of the hierarchy object. |
 | snapshotDistribution | [SnapshotDistribution](SnapshotDistribution.md)! | Distribution of the snapshots of the hierarchy object. |
 | unprotectableReasons | [String!]! | List of reasons that a SQL Server instance cannot be protected. |
+| version | String! | SQL Server version string of the instance. |
 
 ## Field Arguments
 

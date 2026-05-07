@@ -6,8 +6,8 @@
 
 | Field | Type | Description |
 |-------|------|-------------|
-| lastUpdated | [DateTime](../scalars/DateTime.md) |  |
-| status | [O365ServiceStatusIndication](../enums/O365ServiceStatusIndication.md)! |  |
+| lastUpdated | [DateTime](../scalars/DateTime.md) | The last updated time. |
+| status | [O365ServiceStatusIndication](../enums/O365ServiceStatusIndication.md)! | The service status. |
 
 ## Used By
 

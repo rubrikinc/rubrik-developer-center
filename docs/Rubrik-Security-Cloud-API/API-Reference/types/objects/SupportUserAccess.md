@@ -8,6 +8,7 @@ Support user access object details.
 |-------|------|-------------|
 | accessProviderUser | [User](User.md) | User providing support user access. |
 | accessStatus | [SupportUserAccessStatus](../enums/SupportUserAccessStatus.md)! | Support user access status. |
+| actualEndTime | [DateTime](../scalars/DateTime.md) | Actual time when the support access session ended. Null while open. |
 | durationInHours | Int! | Support user access duration, in hours. |
 | endTime | [DateTime](../scalars/DateTime.md)! | Support user access end time. |
 | id | Int! | Support user access ID. |

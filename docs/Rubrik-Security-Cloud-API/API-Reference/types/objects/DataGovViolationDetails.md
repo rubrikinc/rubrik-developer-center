@@ -9,7 +9,7 @@ Additional metadata about the data associated with the violation.
 | dataCategories | [[DataCategoryStats](DataCategoryStats.md)!]! | Data category counts in the data. |
 | dataTypes | [[DataTypeStats](DataTypeStats.md)!]! | Data type counts in the data. |
 | documentTypes | [[DocumentTypeStats](DocumentTypeStats.md)!]! | Document type counts in the data. |
-| identityViolationDetails | [IdentityViolationDetails](IdentityViolationDetails.md) | Identity violation details. |
+| identityViolationDetails | [IdentityViolationDetails](IdentityViolationDetails.md) | Identity violation details associated with a Data Governance (datagov) violation. |
 | mipLabels | [[MipLabelStats](MipLabelStats.md)!]! | MIP label counts in the data. |
 | permissions | [Permissions](Permissions.md) | The permissions that violate the policy. |
 | referenceTime | [DateTime](../scalars/DateTime.md) | The reference time used to evaluate the violation. |

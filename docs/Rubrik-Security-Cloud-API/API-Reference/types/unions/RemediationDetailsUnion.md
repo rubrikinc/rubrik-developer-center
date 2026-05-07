@@ -7,3 +7,4 @@ Details of the remediation to be taken for a policy violation.
 - [RemediationTicketInfo](../objects/RemediationTicketInfo.md)
 - [MipLabelInfo](../objects/MipLabelInfo.md)
 - [AdIrInfo](../objects/AdIrInfo.md)
+- [TicketDetails](../objects/TicketDetails.md)

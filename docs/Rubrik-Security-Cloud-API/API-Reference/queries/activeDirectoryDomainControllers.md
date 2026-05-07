@@ -35,6 +35,7 @@ Summary of all Active Directory domain controllers.
           hostname
           id
           isGlobalCatalog
+          isReadOnly
           isRelic
           macAddress
           macAddresses

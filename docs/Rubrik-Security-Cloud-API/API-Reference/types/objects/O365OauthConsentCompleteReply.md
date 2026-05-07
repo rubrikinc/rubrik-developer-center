@@ -6,8 +6,8 @@
 
 | Field | Type | Description |
 |-------|------|-------------|
-| appId | String! |  |
-| encryptedRefreshToken | String! |  |
+| appId | String! | The app ID. |
+| encryptedRefreshToken | String! | The encrypted refresh token. |
 
 ## Used By
 

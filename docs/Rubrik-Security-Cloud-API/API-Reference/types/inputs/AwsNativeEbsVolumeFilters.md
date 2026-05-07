@@ -19,6 +19,7 @@ Filters for list of AWS EBS volumes.
 | regionFilter | [AwsNativeRegionFilter](AwsNativeRegionFilter.md) | Filter by region. |
 | relicFilter | [RelicFilter](RelicFilter.md) | Filter by relic status. |
 | sensitivityStatusFilter | [SensitivityStatusFilter](SensitivityStatusFilter.md) | Filter by sensitivity status. |
+| serviceTypeFilter | [AwsServiceTypeFilter](AwsServiceTypeFilter.md) | Filter by BaaS or non-BaaS service type. |
 | tagFilter | [AwsNativeTagFilter](AwsNativeTagFilter.md) | Filter by tags. |
 | typeFilter | [AwsNativeEbsVolumeTypeFilter](AwsNativeEbsVolumeTypeFilter.md) | Filter by EBS volume type. |
 | unaccessedFilter | [UnaccessedFilter](UnaccessedFilter.md) | Filter by unaccessed status. |

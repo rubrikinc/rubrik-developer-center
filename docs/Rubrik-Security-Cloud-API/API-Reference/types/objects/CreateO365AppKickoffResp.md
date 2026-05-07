@@ -6,9 +6,9 @@ O365 create app kickoff response.
 
 | Field | Type | Description |
 |-------|------|-------------|
-| appClientId | String! |  |
-| csrfToken | String! |  |
-| o365TenantId | String! |  |
+| appClientId | String! | The app client ID. |
+| csrfToken | String! | The CSRF token. |
+| o365TenantId | String! | The O365 tenant ID. |
 
 ## Used By
 

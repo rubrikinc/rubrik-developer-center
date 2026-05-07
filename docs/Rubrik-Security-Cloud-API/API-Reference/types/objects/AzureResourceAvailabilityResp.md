@@ -6,8 +6,8 @@
 
 | Field | Type | Description |
 |-------|------|-------------|
-| available | Boolean! |  |
-| reason | String! |  |
+| available | Boolean! | Indicates whether the resource is available. |
+| reason | String! | The reason for resource unavailability. |
 
 ## Used By
 

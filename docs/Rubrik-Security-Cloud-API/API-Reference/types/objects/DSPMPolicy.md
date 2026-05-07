@@ -25,6 +25,7 @@ Policy definition.
 | policyId | [UUID](../scalars/UUID.md)! | DSPM policy ID. |
 | policySeverity | [Severity](../enums/Severity.md)! | The severity of the policy. |
 | policyType | [PolicyType](../enums/PolicyType.md)! | The type of the policy. |
+| policyTypeInfo | [PolicyTypeInfo](PolicyTypeInfo.md) | Policy-type-specific configuration (e.g., event providers for identity event policies). |
 | probabilityOfCompromise | String | The probability of compromise for this policy. |
 | thresholdFilter | [PolicyFilter](PolicyFilter.md) | Threshold filter for the policy that is applied on top of the root filter and requires special handling by the UI. |
 | updatedAt | [DateTime](../scalars/DateTime.md) | The time when the policy was updated. |

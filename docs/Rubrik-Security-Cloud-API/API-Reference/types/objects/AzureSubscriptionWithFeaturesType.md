@@ -10,6 +10,7 @@ Azure subscription with features.
 | customerTenantId | String! | Azure tenant ID. |
 | featureDetails | [[AzureCloudAccountFeatureDetail](AzureCloudAccountFeatureDetail.md)!]! | Feature details for the cloud account. |
 | id | String! | Azure subscription cloud account ID. |
+| managementGroup | [AzureManagementGroup](AzureManagementGroup.md) | Management group of the Azure subscription. |
 | name | String! | Azure subscription native name. |
 | nativeId | String! | Azure subscription native ID. |
 

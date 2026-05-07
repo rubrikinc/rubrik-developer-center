@@ -1,6 +1,6 @@
 # MssqlAvailabilityGroupDatabaseVirtualGroupSortByField
 
-Parameters used to sort MSSQL availability group database virtual groups..
+Parameters used to sort MSSQL availability group database virtual groups.
 
 ## Values
 

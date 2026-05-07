@@ -13,6 +13,7 @@ Name of product.
 | APPFLOWS | AppFlows. |
 | APPFLOWS_UCL | AppFlows UCL. |
 | ATLASSIAN_JIRA | Atlassian Jira protection. |
+| AWS_BAAS | AWS BaaS. |
 | CC_ES | Cloud Cluster ES. |
 | CLOUDNATIVE | CloudNative. |
 | CLOUD_UNSTRUCTURED | Cloud Unstructured. |
@@ -20,6 +21,7 @@ Name of product.
 | DSPM_CLOUD | DSPM for Cloud workloads. |
 | DSPM_O365 | DSPM for O365 workloads. |
 | DYNAMICS_365 | Dynamics 365 protection. |
+| EDGE | Edge virtual cluster deployment. |
 | GOOGLE_WORKSPACE | Google Workspace protection. |
 | GPS | GPS. |
 | KUBERNETES | Kubernetes protection. |

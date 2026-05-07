@@ -9,6 +9,7 @@ Holds the configuration of the Microsoft Defender integration.
 | applicationId | String! | The Entra ID application (client) ID. |
 | clientSecret | String! | The Entra ID client secret. |
 | domainName | String! | The Entra ID domain name. |
+| status | [MicrosoftDefenderStatus](MicrosoftDefenderStatus.md) | The status of the integration. |
 
 ## Used By
 

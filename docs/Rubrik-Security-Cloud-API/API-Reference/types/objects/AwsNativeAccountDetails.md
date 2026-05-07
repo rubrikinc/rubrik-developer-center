@@ -9,6 +9,7 @@ AWS native account details.
 | enabledFeatures | [[AwsNativeAccountEnabledFeature](AwsNativeAccountEnabledFeature.md)!]! | List of protection features enabled for the AWS account. |
 | id | String! | Rubrik ID of the AWS account. |
 | name | String! | Name of the AWS account. |
+| serviceType | [AwsCloudAccountServiceType](../enums/AwsCloudAccountServiceType.md)! | Service type indicating whether the account is onboarded for Backup-as-a-Service (BaaS) or non-BaaS use case. |
 | status | [AwsAccountStatus](../enums/AwsAccountStatus.md)! | Status of the AWS account for the relevant feature. |
 
 ## Used By

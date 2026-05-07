@@ -1,6 +1,6 @@
 # FileDetailsInput
 
-Configuration which describes file details.
+Details of a particular file.
 
 ## Fields
 

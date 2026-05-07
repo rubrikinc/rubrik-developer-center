@@ -6,8 +6,8 @@
 
 | Field | Type | Description |
 |-------|------|-------------|
-| physicalDataSizeInBytes | [Long](../scalars/Long.md)! |  |
-| timestamp | [DateTime](../scalars/DateTime.md) |  |
+| physicalDataSizeInBytes | [Long](../scalars/Long.md)! | The physical data size in bytes. |
+| timestamp | [DateTime](../scalars/DateTime.md) | The timestamp. |
 
 ## Used By
 

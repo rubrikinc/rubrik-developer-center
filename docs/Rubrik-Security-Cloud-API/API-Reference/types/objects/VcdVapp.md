@@ -45,6 +45,7 @@
 | physicalPath | [[PathNode](PathNode.md)!]! | Sequential list of the physical ancestors of this object. |
 | primaryClusterLocation | [DataLocation](DataLocation.md)! | The source cluster of this object. Returned as a data location because there is no guarantee that Rubrik has knowledge about the source cluster. |
 | protectionDate | [DateTime](../scalars/DateTime.md) | The date when the SLA Domain was assigned or inherited. |
+| recoveryLogicalChildConnection | [VcdVappLogicalChildTypeConnection](VcdVappLogicalChildTypeConnection.md)! | List of recoveryLogical children. |
 | replicatedObjectCount | Int! | The number of objects either replicated by this object or related to this object by replication. |
 | replicatedObjects | [[CdmHierarchyObject](../interfaces/CdmHierarchyObject.md)!]! | Objects either replicated by this object or related to this object by replication. |
 | reportWorkload | [Snappable](Snappable.md) | Contains statistics for the protected objects, for example, capacity. |
@@ -85,6 +86,13 @@
 | numWorkloadDescendants | last | Int | Returns the last n elements from the list. |
 | numWorkloadDescendants | before | String | Returns the elements in the list that occur before the specified cursor. |
 | numWorkloadDescendants | objectTypes | [[ManagedObjectType](../enums/ManagedObjectType.md)!] | Types of objects to limit the results. If absent, all object types are returned. |
+| recoveryLogicalChildConnection | first | Int | Returns the first n elements from the list. |
+| recoveryLogicalChildConnection | after | String | Returns the elements in the list that occur after the specified cursor. |
+| recoveryLogicalChildConnection | sortBy | [HierarchySortByField](../enums/HierarchySortByField.md) | Sort hierarchy objects according to the hierarchy field. |
+| recoveryLogicalChildConnection | sortOrder | [SortOrder](../enums/SortOrder.md) | Sorts the order of results. |
+| recoveryLogicalChildConnection | typeFilter | [[HierarchyObjectTypeEnum](../enums/HierarchyObjectTypeEnum.md)!] | Types of objects to include. |
+| recoveryLogicalChildConnection | filter | [[Filter](../inputs/Filter.md)!] | Hierarchy object filter. |
+| recoveryLogicalChildConnection | workloadHierarchy | [WorkloadLevelHierarchy](../enums/WorkloadLevelHierarchy.md) | Each enumeration value represents the hierarchy of a specific workload type for RBAC and SLA Domain assignments.  A value of 'None' represents the hierarchy of all workload types. |
 | snapshotConnection | first | Int | Returns the first n elements from the list. |
 | snapshotConnection | after | String | Returns the elements in the list that occur after the specified cursor. |
 | snapshotConnection | last | Int | Returns the last n elements from the list. |

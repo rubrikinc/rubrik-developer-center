@@ -6,4 +6,4 @@ Request to validate the bulk threat hunt request based on the provided list of o
 
 | Field | Type | Description |
 |-------|------|-------------|
-| objectInfos | [[ObjectInfoInput](ObjectInfoInput.md)!]! | List of object with their corresponding information. |
+| objectInfos | [[ObjectInfoInput](ObjectInfoInput.md)!]! | List of objects with their corresponding information. |

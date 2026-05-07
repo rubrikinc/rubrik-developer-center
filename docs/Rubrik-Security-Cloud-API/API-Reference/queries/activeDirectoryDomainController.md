@@ -30,6 +30,7 @@ Summary of the given Active Directory domain controller.
         hostname
         id
         isGlobalCatalog
+        isReadOnly
         isRelic
         macAddress
         macAddresses

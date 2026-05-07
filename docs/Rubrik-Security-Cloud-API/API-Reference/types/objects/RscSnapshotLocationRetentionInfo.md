@@ -8,6 +8,7 @@ RSC snapshot location retention information.
 |-------|------|-------------|
 | expirationTime | [DateTime](../scalars/DateTime.md) | Time when the snapshot expired or is expected to expire at this location. |
 | isExpirationDateCalculated | Boolean! | Specifies whether the expiration date for this snapshot has been calculated. This field will be absent if the snapshot has never existed at this location. |
+| isSnapshotOnLegalHold | Boolean! | Boolean to indicate whether the snapshot is legally held at the specified location. |
 | isSnapshotPresent | Boolean! | Specifies whether the snapshot is present at this location. |
 | locationId | String! | Location ID of snapshot. |
 | locationName | String! | Location name of snapshot. |

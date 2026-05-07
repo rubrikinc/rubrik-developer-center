@@ -6,8 +6,8 @@
 
 | Field | Type | Description |
 |-------|------|-------------|
-| clusterId | String! |  |
-| taskchainId | String! |  |
+| clusterId | String! | The cluster ID. |
+| taskchainId | String! | The taskchain ID. |
 
 ## Used By
 

@@ -1,12 +1,12 @@
 # CdmUpgradeInfo
 
-*No description available.*
+Rubrik cluster upgrade Information.
 
 ## Fields
 
 | Field | Type | Description |
 |-------|------|-------------|
-| authorizedOperations | [AuthorizedOperations](AuthorizedOperations.md)! | You are authorized to perform operations on the Rubrik cluster. |
+| authorizedOperations | [AuthorizedOperations](AuthorizedOperations.md)! | The authorized operations on the Rubrik cluster. |
 | cdmClusterNodeDetails | [[CdmNodeDetail](CdmNodeDetail.md)!]! | Rubrik CDM cluster node details. |
 | clusterJobStatus | [ClusterJobStatusTypeEnum](../enums/ClusterJobStatusTypeEnum.md) | Cluster job status. |
 | clusterStatus | [CdmClusterStatus](CdmClusterStatus.md) | Status of the Rubrik cluster. |
@@ -25,12 +25,12 @@
 | scheduleUpgradeAt | [DateTime](../scalars/DateTime.md) | Scheduled-Upgrade timestamp. |
 | scheduleUpgradeMode | String | Scheduled-Upgrade mode. |
 | stateMachineStatus | String | Upgrade state machine status. |
-| stateMachineStatusAt | [DateTime](../scalars/DateTime.md) | The time at which the state machine was last updated.. |
+| stateMachineStatusAt | [DateTime](../scalars/DateTime.md) | The time at which the state machine was last updated. |
 | upgradeEndAt | [DateTime](../scalars/DateTime.md) | The time at which the upgrade ended. |
 | upgradeEventSeriesId | String | The upgrade event series ID. |
 | upgradeRecommendationInfo | [UpgradeRecommendationInfo](UpgradeRecommendationInfo.md) | Recommended upgrade version of the Rubrik cluster. |
 | upgradeStartAt | [DateTime](../scalars/DateTime.md) | The time at which the upgrade started. |
-| upgradeStatusV2 | [UpgradeStatusV2](UpgradeStatusV2.md) | Upgrade status for CDM Upgrade Service 2.0. |
+| upgradeStatusV2 | [UpgradeStatusV2](UpgradeStatusV2.md) | Rubrik cluster upgrade Information. |
 | version | String! | Version of the Rubrik cluster. |
 | versionStatus | [VersionStatus](../enums/VersionStatus.md) | Version status of the Rubrik cluster. |
 

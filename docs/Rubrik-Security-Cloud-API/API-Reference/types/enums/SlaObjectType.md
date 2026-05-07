@@ -26,6 +26,7 @@ Type of objects managed by SLA Domains.
 | FILESET_OBJECT_TYPE | Fileset object. |
 | FUSION_COMPUTE_OBJECT_TYPE | FusionCompute object. |
 | GCP_ALLOY_DB_CLUSTER_OBJECT_TYPE | GCP AlloyDB Cluster object. |
+| GCP_BIGQUERY_OBJECT_TYPE | GCP BigQuery object. |
 | GCP_CLOUD_SQL_OBJECT_TYPE | GCP Cloud SQL object. |
 | GCP_OBJECT_TYPE | GCP object. |
 | GITHUB_OBJECT_TYPE | GitHub object. |

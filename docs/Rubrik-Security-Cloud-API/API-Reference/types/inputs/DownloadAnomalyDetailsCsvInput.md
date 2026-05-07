@@ -6,6 +6,6 @@ Input to trigger asynchronous Anomaly Details CSV file download.
 
 | Field | Type | Description |
 |-------|------|-------------|
-| clusterUuid | [UUID](../scalars/UUID.md)! | Rubrik cluster UUID corresponding to the object. |
-| snapshotId | String! | The ID of the snapshot. |
-| workloadId | String! | The ID of the workload. |
+| clusterUuid | [UUID](../scalars/UUID.md)! | CDM Cluster UUID. |
+| snapshotId | String! | Snapshot ID. |
+| workloadId | String! | Workload ID. |

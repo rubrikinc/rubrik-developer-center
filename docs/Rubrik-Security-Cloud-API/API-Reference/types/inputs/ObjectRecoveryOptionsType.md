@@ -6,8 +6,9 @@ Configuration to retrieve Azure AD object recovery.
 
 | Field | Type | Description |
 |-------|------|-------------|
-| administrativeUnitRecoveryOption | [AdministrativeUnitRecoveryOption](AdministrativeUnitRecoveryOption.md) | Specifies the recovery option for an Azure AD administrative unit. |
+| administrativeUnitRecoveryOption | [AdministrativeUnitRecoveryOption](AdministrativeUnitRecoveryOption.md) | Deprecated, this field is no longer used and will be ignored. |
 | applicationRecoveryOption | [ApplicationRecoveryOptionType](ApplicationRecoveryOptionType.md) | Specifies the recovery option of an Azure AD application. |
 | conditionalAccessPolicyRecoveryOption | [ConditionalAccessPolicyRecoveryOption](ConditionalAccessPolicyRecoveryOption.md) | Specifies the recovery option of Azure AD conditional access policy. |
+| deviceConfigPolicyRecoveryOption | [DeviceConfigPolicyRecoveryOption](DeviceConfigPolicyRecoveryOption.md) | Specifies the recovery option for device configuration policies. |
 | servicePrincipalRecoveryOption | [ServicePrincipalRecoveryOptionType](ServicePrincipalRecoveryOptionType.md) | Specifies the recovery option of an Azure AD service principal. |
 | userRecoveryOption | [UserRecoveryOptionType](UserRecoveryOptionType.md) | Specifies the recovery option of an Azure AD user. |

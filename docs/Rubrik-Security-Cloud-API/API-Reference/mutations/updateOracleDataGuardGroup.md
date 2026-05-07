@@ -57,6 +57,7 @@ Update an Oracle Data Guard group  Supported in v6.0+ Update properties of an Or
         ratePerRmanChannelInMb
         sectionSizeInGb
         shouldBackupFromPrimaryDgGroupMemberOnly
+        shouldEnableZeroRpo
         snapshotCount
         tablespaces
       }

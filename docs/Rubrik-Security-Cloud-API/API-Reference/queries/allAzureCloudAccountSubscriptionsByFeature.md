@@ -68,7 +68,13 @@ Retrieves a list of all Azure Subscriptions with feature details such as feature
                 ],
                 "status": "CONNECTED"
               }
-            ]
+            ],
+            "managementGroup": {
+              "customerManagementGroupId": "00000000-0000-0000-0000-000000000000",
+              "isAuthorized": true,
+              "name": "example-string",
+              "nativeId": "example-string"
+            }
           }
         ]
       }

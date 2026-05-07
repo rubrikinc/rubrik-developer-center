@@ -1,6 +1,6 @@
 # QuarantineSpecInput
 
-Configuration which indicates which files and snapshots to quarantine.
+Spec for quarantine.
 
 ## Fields
 

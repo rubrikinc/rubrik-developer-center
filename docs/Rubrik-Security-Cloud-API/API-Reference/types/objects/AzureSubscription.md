@@ -1,13 +1,13 @@
 # AzureSubscription
 
-*No description available.*
+Subscription is a billing account in Azure, an account on Azure can consist of multiple subscriptions.
 
 ## Fields
 
 | Field | Type | Description |
 |-------|------|-------------|
-| id | String! |  |
-| name | String! |  |
+| id | String! | The subscription ID. |
+| name | String! | The subscription name. |
 
 ## Used By
 
