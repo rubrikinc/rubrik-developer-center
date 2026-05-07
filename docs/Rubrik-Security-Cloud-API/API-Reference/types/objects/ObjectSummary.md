@@ -6,11 +6,11 @@
 
 | Field | Type | Description |
 |-------|------|-------------|
-| id | String! |  |
-| isArchived | Boolean! |  |
-| mailAddress | String! |  |
-| name | String! |  |
-| objectType | [ManagedObjectType](../enums/ManagedObjectType.md)! |  |
+| id | String! | The object ID. |
+| isArchived | Boolean! | Indicates whether the object is archived. |
+| mailAddress | String! | The mail address. |
+| name | String! | The object name. |
+| objectType | [ManagedObjectType](../enums/ManagedObjectType.md)! | The object type. |
 
 ## Used By
 

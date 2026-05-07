@@ -9,3 +9,4 @@ Holds the input to a create integration request.
 | config | [IntegrationConfigInput](IntegrationConfigInput.md)! | The integration configuration. |
 | integrationType | [IntegrationType](../enums/IntegrationType.md)! | The integration type. |
 | name | String! | The integration name. |
+| settings | [IntegrationSettingsInput](IntegrationSettingsInput.md) | The integration settings (user preferences). |

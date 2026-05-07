@@ -13,6 +13,7 @@ Get a paginated list of policy violations.
 | policyIds | [[UUID](../types/scalars/UUID.md)!] | Policy IDs to filter by. If empty or null, the results will not be filtered. |
 | resourceIds | [String!] | Resource IDs to filter by. If empty or null, the results will not be filtered. |
 | statuses | [[PolicyViolationStatus](../types/enums/PolicyViolationStatus.md)!] | Policy violation statuses to filter by. If empty or null, the results will not be filtered. |
+| statusReasons | [[PolicyViolationStatusReason](../types/enums/PolicyViolationStatusReason.md)!] | Policy violation status reasons to filter by. If empty or null, the results will not be filtered. |
 | policyTypes *(required)* | [[PolicyType](../types/enums/PolicyType.md)!]! | List of policy types. If empty, no results will be returned. |
 | policyViolationIds | [[UUID](../types/scalars/UUID.md)!] | Policy violation IDs to filter by. If empty or null, the results will not be filtered. |
 | policySeverities | [[Severity](../types/enums/Severity.md)!] | Policy severities to filter by. If empty or null, the results will not be filtered. |

@@ -6,9 +6,9 @@
 
 | Field | Type | Description |
 |-------|------|-------------|
-| appClientId | String! |  |
-| csrfToken | String! |  |
-| tenantId | String! |  |
+| appClientId | String! | The app ID that should be used in the consent flow by UI. |
+| csrfToken | String! | The CSRF token. |
+| tenantId | String! | The tenant ID. |
 
 ## Used By
 

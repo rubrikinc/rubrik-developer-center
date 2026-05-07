@@ -26,7 +26,7 @@ Supported in v5.0+
 | latestRecoveryPointV94 | [DateTime](../scalars/DateTime.md) | The time stamp of the most recent recovery point for this database. |
 | latestRecoveryPointV95 | [DateTime](../scalars/DateTime.md) | The time stamp of the most recent recovery point for this database. |
 | latestRecoveryPointV96 | [DateTime](../scalars/DateTime.md) | The time stamp of the most recent recovery point for this database. |
-| logRatePerRmanChannelInMb | Int | Supported in v9.5+ Specifies the RMAN RATE parameter in megabytes per second to limit log backup throughput per channel. |
+| logRatePerRmanChannelInMb | Int | Supported in v9.5+ v9.5: Specifies the RMAN RATE parameter in megabytes per second to limit log backup throughput per channel. v9.6: The RMAN RATE parameter, in megabytes per second, to limit log backup throughput per channel. |
 | oldestRecoveryPointV50 | String | The time stamp of the earliest recovery point for this database. |
 | oldestRecoveryPointV51 | String | The time stamp of the earliest recovery point for this database. |
 | oldestRecoveryPointV52 | String | The time stamp of the earliest recovery point for this database. |
@@ -51,6 +51,7 @@ Supported in v5.0+
 | ratePerRmanChannelInMb | Int | Supported in v9.5+ Specifies the RMAN RATE parameter in megabytes per second to limit backup throughput per channel. |
 | sectionSizeInGb | Int | Supported in Rubrik CDM version 9.0 and later. Specifies the section size, in gigabytes, to be used during database backup. |
 | shouldBackupFromPrimaryDgGroupMemberOnly | Boolean | Supported in v6.0+ Indicates whether to backup only from the PRIMARY Data Guard member or from any available member. |
+| shouldEnableZeroRpo | Boolean | Supported in v9.6 Indicates whether Zero RPO (near-zero recovery point) protection is enabled on this database. |
 | snapshotCount | Int! | Required. Supported in v5.0+ |
 | tablespaces | [String!]! | Required. Supported in v5.0+ An array that contains tablespace names of the specified Oracle database. |
 

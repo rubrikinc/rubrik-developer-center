@@ -1,13 +1,13 @@
 # SecurityGroup
 
-*No description available.*
+SecurityGroup represents the security policy attached to a subnet on Azure.
 
 ## Fields
 
 | Field | Type | Description |
 |-------|------|-------------|
-| id | String! |  |
-| name | String! |  |
+| id | String! | The security group ID. |
+| name | String! | The security group name. |
 
 ## Used By
 

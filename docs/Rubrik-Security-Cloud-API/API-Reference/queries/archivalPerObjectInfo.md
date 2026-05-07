@@ -32,6 +32,7 @@ Get archival information for all objects with data archived to the specified loc
         nodes {
           archivalLag
           latestArchivedSnapshotDate
+          monthlyGrowthBytes
           numActiveSnapshots
           objectLocation
           objectName
@@ -68,10 +69,10 @@ Get archival information for all objects with data archived to the specified loc
               {
                 "archivalLag": 0,
                 "latestArchivedSnapshotDate": "2024-01-01T00:00:00.000Z",
+                "monthlyGrowthBytes": 0.0,
                 "numActiveSnapshots": 0,
                 "objectLocation": "example-string",
-                "objectName": "example-string",
-                "objectStatus": "example-string"
+                "objectName": "example-string"
               }
             ]
           ],

@@ -1,6 +1,6 @@
 # MultiTenancyConsumptionType
 
-Stores per-tenant (RSC) consumption statsistics.
+Stores per-tenant (RSC) consumption statistics.
 
 ## Fields
 

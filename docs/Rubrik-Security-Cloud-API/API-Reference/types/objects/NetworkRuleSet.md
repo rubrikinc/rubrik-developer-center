@@ -1,13 +1,13 @@
 # NetworkRuleSet
 
-Network rules for Azure storage account.
+NetworkRuleSet defines network rules for Azure storage account.
 
 ## Fields
 
 | Field | Type | Description |
 |-------|------|-------------|
-| defaultAction | [DefaultActionType](../enums/DefaultActionType.md)! | Default Action for any request coming for any IP for the Azure storage account. |
-| ipRules | [[IpRule](IpRule.md)!]! | IP rules for a specific set of IPs. |
+| defaultAction | [DefaultActionType](../enums/DefaultActionType.md)! | Specifies the default action of allow or deny when no other rules match. Possible values include: 'DefaultActionAllow', 'DefaultActionDeny' |
+| ipRules | [[IpRule](IpRule.md)!]! | Specifies the IP ACL rules. |
 
 ## Used By
 

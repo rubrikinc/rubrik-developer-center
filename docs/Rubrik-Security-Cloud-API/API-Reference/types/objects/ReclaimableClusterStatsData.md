@@ -10,9 +10,11 @@ Reclaimable cluster stats data for a single cluster.
 | clusterUuid | [UUID](../scalars/UUID.md)! | UUID of the cluster. |
 | downloadedSnapshotsStorage | [Long](../scalars/Long.md)! | Storage taken by downloaded snapshots (in bytes). |
 | otherStorage | [Long](../scalars/Long.md)! | Other storage (calculated as total_used_storage - relic_storage - downloaded_snapshots_storage, in bytes). |
+| protectedObjectsStorage | [Long](../scalars/Long.md)! | Storage taken by protected objects excluding downloaded snapshots (in bytes). |
 | relicStorage | [Long](../scalars/Long.md)! | Storage taken by relic objects (in bytes). |
 | totalCapacity | [Long](../scalars/Long.md)! | Total capacity (in bytes). |
 | totalUsedStorage | [Long](../scalars/Long.md)! | Total used storage (in bytes). |
+| unprotectedObjectsStorage | [Long](../scalars/Long.md)! | Storage taken by unprotected objects excluding downloaded snapshots (in bytes). |
 
 ## Used By
 

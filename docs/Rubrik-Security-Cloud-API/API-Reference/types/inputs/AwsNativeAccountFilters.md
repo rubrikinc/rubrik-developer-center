@@ -9,3 +9,4 @@ Filters for list of AWS accounts.
 | cloudTypeFilter | [AwsCloudTypeFilter](AwsCloudTypeFilter.md) | Filter by AWS cloud type. |
 | effectiveSlaFilter | [EffectiveSlaFilter](EffectiveSlaFilter.md) | Filter by effective SLA Domain. |
 | nameSubstringFilter | [NameSubstringFilter](NameSubstringFilter.md) | Filter by name substring. |
+| serviceTypeFilter | [AwsServiceTypeFilter](AwsServiceTypeFilter.md) | Filter by BaaS or non-BaaS service type. |

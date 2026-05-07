@@ -31,6 +31,7 @@ Active Directory Domain Controller.
 | hypervVirtualMachines | [HyperVVirtualMachineConnection](HyperVVirtualMachineConnection.md) | Hyper-V virtual machine associated with the domain controller. |
 | id | [UUID](../scalars/UUID.md)! | ID of the hierarchy object. |
 | isGlobalCatalog | Boolean | Indicates whether the domain controller is a global catalog. |
+| isReadOnly | Boolean | Indicates whether the domain controller is read only. |
 | isRelic | Boolean! | Specifies whether the domain controller is a relic. |
 | latestUserNote | [LatestUserNote](LatestUserNote.md) | Latest user note information. |
 | logicalPath | [[PathNode](PathNode.md)!]! | Sequential list of the logical ancestors of this object. |

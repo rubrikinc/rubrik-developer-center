@@ -21,6 +21,7 @@
           excludePathPattern
           id
           isInactive
+          jsValidationFunction
           keyRegex
           name
           proximityDistance

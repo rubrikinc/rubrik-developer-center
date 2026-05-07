@@ -6,7 +6,7 @@ Get implicitly authorized ancestors response.
 
 | Field | Type | Description |
 |-------|------|-------------|
-| objectSummaries | [[ObjectSummary](ObjectSummary.md)!]! |  |
+| objectSummaries | [[ObjectSummary](ObjectSummary.md)!]! | The object summaries. |
 
 ## Used By
 

@@ -6,6 +6,6 @@ Snapshot scan config.
 
 | Field | Type | Description |
 |-------|------|-------------|
-| endTime | [DateTime](../scalars/DateTime.md) | End time for the snapshot scan. |
-| maxSnapshotsPerObject | Int | Maximum number of snapshots to scan. |
-| startTime | [DateTime](../scalars/DateTime.md) | Start time for the snapshot scan. |
+| endTime | [DateTime](../scalars/DateTime.md) | Specifies the end time of the snapshot scan. |
+| maxSnapshotsPerObject | Int | Specifies the max snapshots per object. |
+| startTime | [DateTime](../scalars/DateTime.md) | Specifies the start time of the snapshot scan. |

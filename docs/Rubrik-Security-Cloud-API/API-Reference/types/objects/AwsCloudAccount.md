@@ -15,6 +15,7 @@ Details of AWS account.
 | orgName | String! | The AWS organization name with which you onboarded the AWS account. |
 | outpostAwsNativeId | String! | Native ID of the AWS Outpost account. |
 | seamlessFlowEnabled | Boolean! | Whether seamless flow is enabled on cloud account. |
+| serviceType | [AwsCloudAccountServiceType](../enums/AwsCloudAccountServiceType.md)! | Service type indicating whether the account is onboarded for BaaS or non-BaaS use case. |
 
 ## Used By
 

@@ -7,4 +7,4 @@ The configuration to start a threat hunt.
 | Field | Type | Description |
 |-------|------|-------------|
 | baseConfig | [ThreatHuntBaseConfigInputType](ThreatHuntBaseConfigInputType.md)! | Threat hunt base config. |
-| objectFids | [[UUID](../scalars/UUID.md)!]! | List of objects scanned in the hunt. |
+| objectFids | [[UUID](../scalars/UUID.md)!]! | List of objects which will be scanned in the hunt. |

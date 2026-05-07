@@ -11,6 +11,7 @@ Filters for list of AWS RDS instances.
 | awsNativeIsEligibleForRdsProtectionFilter | [AwsNativeIsEligibleForRdsProtectionFilter](AwsNativeIsEligibleForRdsProtectionFilter.md) | Filter workloads based on their eligibility for protection (nested). |
 | dbEngineFilter | [AwsNativeRdsDbEngineFilter](AwsNativeRdsDbEngineFilter.md) | Filter by database engine. |
 | dbInstanceClassFilter | [AwsNativeRdsDbInstanceClassFilter](AwsNativeRdsDbInstanceClassFilter.md) | Filter by database instance class. |
+| discoveryMethodFilter | [CloudNativeApplicationDiscoveryMethodFilter](CloudNativeApplicationDiscoveryMethodFilter.md) | Filter by cloud native application discovery method. |
 | effectiveSlaFilter | [EffectiveSlaFilter](EffectiveSlaFilter.md) | Filter by effective SLA Domain. |
 | hierarchyFilters | [[Filter](Filter.md)!] | Filter by hierarchy. |
 | isEligibleForProtection | Boolean | Filter workloads based on their eligibility for protection. |
@@ -20,6 +21,7 @@ Filters for list of AWS RDS instances.
 | regionFilter | [AwsNativeRegionFilter](AwsNativeRegionFilter.md) | Filter by region. |
 | relicFilter | [RelicFilter](RelicFilter.md) | Filter by relic status. |
 | sensitivityStatusFilter | [SensitivityStatusFilter](SensitivityStatusFilter.md) | Filter by sensitivity status. |
+| serviceTypeFilter | [AwsServiceTypeFilter](AwsServiceTypeFilter.md) | Filter by BaaS or non-BaaS service type. |
 | tagFilter | [AwsNativeTagFilter](AwsNativeTagFilter.md) | Filter by tags. |
 | unaccessedFilter | [UnaccessedFilter](UnaccessedFilter.md) | Filter by unaccessed status. |
 | vpcFilter | [AwsNativeVpcFilter](AwsNativeVpcFilter.md) | Filter by VPC. |

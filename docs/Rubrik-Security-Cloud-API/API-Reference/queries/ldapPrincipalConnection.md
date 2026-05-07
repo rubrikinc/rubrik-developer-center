@@ -10,10 +10,10 @@ Search LDAP Principals.
 | after | String | Returns the elements in the list that occur after the specified cursor. |
 | last | Int | Returns the last n elements from the list. |
 | before | String | Returns the elements in the list that occur before the specified cursor. |
-| sortOrder | [SortOrder](../types/enums/SortOrder.md) | Sorts the order of results. |
-| sortBy | [LdapPrincipalFieldEnum](../types/enums/LdapPrincipalFieldEnum.md) | Field to sort LDAP principals by. |
 | id *(required)* | [UUID](../types/scalars/UUID.md)! | ID for your LDAP integration. |
 | searchText *(required)* | String! | Search Text for LDAP principal. |
+| sortOrder | [SortOrder](../types/enums/SortOrder.md) | Sorts the order of results. |
+| sortBy | [LdapPrincipalFieldEnum](../types/enums/LdapPrincipalFieldEnum.md) | Field to sort LDAP principals by. |
 
 ## Returns
 

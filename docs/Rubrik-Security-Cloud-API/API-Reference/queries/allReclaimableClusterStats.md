@@ -30,9 +30,11 @@ Get reclaimable cluster stats data for multiple clusters. This RPC aggregates st
           clusterUuid
           downloadedSnapshotsStorage
           otherStorage
+          protectedObjectsStorage
           relicStorage
           totalCapacity
           totalUsedStorage
+          unprotectedObjectsStorage
         }
         pageInfo {
           hasNextPage
@@ -61,8 +63,8 @@ Get reclaimable cluster stats data for multiple clusters. This RPC aggregates st
                 "clusterUuid": "00000000-0000-0000-0000-000000000000",
                 "downloadedSnapshotsStorage": 0,
                 "otherStorage": 0,
-                "relicStorage": 0,
-                "totalCapacity": 0
+                "protectedObjectsStorage": 0,
+                "relicStorage": 0
               }
             ]
           ],

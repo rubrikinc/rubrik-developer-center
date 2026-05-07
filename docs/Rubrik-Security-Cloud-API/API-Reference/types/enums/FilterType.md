@@ -16,10 +16,13 @@ FilterType represents the possible types of filters.
 | SECURITY_DOCUMENT_LAST_MODIFIED | Document-level last modified time filter. |
 | SECURITY_DOCUMENT_MIP_LABEL | Document-level MIP label filter. |
 | SECURITY_DOCUMENT_SENSITIVITY | Document-level sensitivity filter. |
+| SECURITY_IDENTITY_AES_ENCRYPTION_SUPPORTED | Identity AES encryption supported boolean filter. |
 | SECURITY_IDENTITY_CAP_METADATA | Conditional access policy metadata filter. |
 | SECURITY_IDENTITY_DEPARTMENT | Identity department. |
 | SECURITY_IDENTITY_DESCENDANT_USERS_COUNT *(deprecated: Use SECURITY_IDENTITY_DIRECT_DESCENDANT_COUNT instead.)* | Deprecated. Use SECURITY_IDENTITY_DIRECT_DESCENDANT_COUNT instead. |
+| SECURITY_IDENTITY_DES_ENCRYPTION_ENABLED | Identity DES encryption enabled boolean filter. |
 | SECURITY_IDENTITY_DIRECT_DESCENDANT_COUNT | Identity direct descendant count filter. |
+| SECURITY_IDENTITY_DOMAIN | Identity domain scope filter. |
 | SECURITY_IDENTITY_EVENT_ACTION_TYPE | Identity event action type. |
 | SECURITY_IDENTITY_EVENT_ACTOR | Identity event actor filter. |
 | SECURITY_IDENTITY_EVENT_CHANGED_ATTRIBUTE | Identity event changed attribute. |
@@ -33,8 +36,11 @@ FilterType represents the possible types of filters.
 | SECURITY_IDENTITY_EVENT_TITLE | Identity event title attribute. |
 | SECURITY_IDENTITY_EVENT_TYPE *(deprecated: Use SECURITY_IDENTITY_EVENT_TITLE instead.)* | Identity event type filter. |
 | SECURITY_IDENTITY_GROUP_MEMBERSHIP | Identity group membership filter. |
+| SECURITY_IDENTITY_HAS_API_PERMISSIONS | Identity has-API-permissions filter (NHI permissions). |
+| SECURITY_IDENTITY_HAS_ROLES | Identity has-roles filter (descendant of a role). |
 | SECURITY_IDENTITY_IDP_METADATA_LABEL | Identity provider metadata label filter. |
 | SECURITY_IDENTITY_IDP_TYPE | Identity provider filter. |
+| SECURITY_IDENTITY_IS_DOMAIN_CONTROLLER | Identity is domain controller boolean filter. |
 | SECURITY_IDENTITY_METADATA | Identity-level metadata filter. |
 | SECURITY_IDENTITY_METADATA_BITMASK | Identity metadata bitmask check filter (bit SET/NOT_SET). |
 | SECURITY_IDENTITY_METADATA_LABEL | Identity-level metadata label filter. |
@@ -45,26 +51,42 @@ FilterType represents the possible types of filters.
 | SECURITY_IDENTITY_NATIVE_CREATION_TIME | Identity first observed filter. |
 | SECURITY_IDENTITY_NUMBER_OF_SECRETS | Identity number of secrets filter. |
 | SECURITY_IDENTITY_ORIGIN | Identity origin filter. |
+| SECURITY_IDENTITY_PASSWORD_NEVER_EXPIRES | Identity password-never-expires boolean filter. |
+| SECURITY_IDENTITY_PASSWORD_NOT_REQUIRED | Identity password-not-required boolean filter. |
+| SECURITY_IDENTITY_PASSWORD_REVERSIBLE_ENCRYPTION | Identity password stored in reversible encryption boolean filter. |
+| SECURITY_IDENTITY_PRE_AUTH_NOT_ENABLED | Identity pre-authentication not enabled boolean filter. |
 | SECURITY_IDENTITY_PRIVILEGE_TYPE | Identity-level privilege-type filter. |
 | SECURITY_IDENTITY_PWD_AGE | Identity password age filter. |
+| SECURITY_IDENTITY_RC4_ENCRYPTION_SUPPORTED | Identity RC4 encryption supported boolean filter. |
+| SECURITY_IDENTITY_RESOURCE_BASED_CONSTRAINED_DELEGATION | Identity resource-based constrained delegation enabled boolean filter. |
 | SECURITY_IDENTITY_SECRET_CREATION_TIME | Identity secret creation time filter. |
 | SECURITY_IDENTITY_SECRET_EXPIRY_TIME | Identity secret expiry time filter. |
+| SECURITY_IDENTITY_SENSITIVE_CANNOT_DELEGATE | Identity is sensitive and cannot delegate boolean filter. |
 | SECURITY_IDENTITY_SERVICE_PRINCIPAL_NAME | Identity-level service principal name filter. |
 | SECURITY_IDENTITY_STATUS | Identity status filter. |
 | SECURITY_IDENTITY_SYNCED_ONPREM_PRIVILEGED_ACCOUNT | Identity is synced to an on-prem privileged account filter. |
 | SECURITY_IDENTITY_TITLE | Identity job title filter. |
 | SECURITY_IDENTITY_TYPE | Identity type filter. |
+| SECURITY_IDENTITY_UNCONSTRAINED_DELEGATION | Identity unconstrained delegation enabled boolean filter. |
 | SECURITY_IDENTITY_UNIQUE_IDENTIFIER | Identity unique identifier filter. |
+| SECURITY_IDP_ANONYMOUS_ACCESS_ENABLED | IDP anonymous access enabled boolean filter. |
 | SECURITY_IDP_CAP_METADATA | Identity provider conditional access policy filter. |
 | SECURITY_IDP_CRITICAL_APP_COVERAGE | Identity provider critical application coverage by conditional access policy filter. |
+| SECURITY_IDP_DOMAIN | IDP domain scope filter. |
 | SECURITY_IDP_HAS_GROUP_WITH_LABEL | Identity Provider domain has a group-with-label filter. |
 | SECURITY_IDP_HAS_USER_WITH_LABEL | Identity Provider domain has a user-with-label filter. |
+| SECURITY_IDP_INHERITANCE_ENABLED | IDP inheritance enabled boolean filter. |
 | SECURITY_IDP_METADATA_LABEL | Identity Provider domain level metadata label filter. |
 | SECURITY_IDP_METADATA_NUMERIC_COMPARISON | IDP metadata numeric comparison filter (relational operator on numeric value). |
 | SECURITY_IDP_METADATA_VALUE_LENGTH | Domain-level metadata value length filter for the identity provider. |
+| SECURITY_IDP_PIM_APPROVAL_FOR_SENSITIVE_ROLES | IDP PIM approval required for sensitive role activation boolean filter. |
+| SECURITY_IDP_PIM_MFA_FOR_PRIVILEGED_ROLES | IDP PIM MFA required for privileged role activation boolean filter. |
 | SECURITY_IDP_PRIVILEGED_ACCOUNT_COUNT | Identity Provider priviliged account count filter. |
 | SECURITY_IDP_PRIVILEGED_USER_COUNT | Identity Provider priviliged user count filter. |
+| SECURITY_IDP_SECURITY_DEFAULTS_ENABLED | IDP Entra ID security defaults enabled boolean filter. |
 | SECURITY_IDP_TYPE | Identity Provider type filter. |
+| SECURITY_IDP_WEAK_LOCKOUT_POLICY | IDP weak default account lockout policy boolean filter. |
+| SECURITY_IDP_WEAK_PASSWORD_POLICY | IDP weak default password policy boolean filter. |
 | SECURITY_SNAPPABLE_BACKUP | Object-level is backup filter. |
 | SECURITY_SNAPPABLE_CLOUD_ACCOUNT | Object-level is backup filter. |
 | SECURITY_SNAPPABLE_CREATED_AT | Object-level created at filter. |
