@@ -1,6 +1,6 @@
 # Enums
 
-1056 types.
+1079 types.
 
 [AKSClusterAccessType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/AKSClusterAccessType/index.md)\
 [AKSNodeCountBucket](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/AKSNodeCountBucket/index.md)\
@@ -110,6 +110,8 @@
 [AwsRegion](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/AwsRegion/index.md)\
 [AwsRetrievalTier](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/AwsRetrievalTier/index.md)\
 [AwsStorageClass](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/AwsStorageClass/index.md)\
+[AzureAdAccessReviewFallbackAction](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/AzureAdAccessReviewFallbackAction/index.md)\
+[AzureAdAccessReviewRecurrence](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/AzureAdAccessReviewRecurrence/index.md)\
 [AzureAdAdminUnitMembershipEnumType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/AzureAdAdminUnitMembershipEnumType/index.md)\
 [AzureAdAppSetupWarningType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/AzureAdAppSetupWarningType/index.md)\
 [AzureAdAuthenticationMethod](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/AzureAdAuthenticationMethod/index.md)\
@@ -123,6 +125,9 @@
 [AzureAdObjectSearchType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/AzureAdObjectSearchType/index.md)\
 [AzureAdObjectType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/AzureAdObjectType/index.md)\
 [AzureAdOnPremSyncStatus](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/AzureAdOnPremSyncStatus/index.md)\
+[AzureAdPimEligibilityMemberType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/AzureAdPimEligibilityMemberType/index.md)\
+[AzureAdPimEligibilityStatus](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/AzureAdPimEligibilityStatus/index.md)\
+[AzureAdPimGroupAccessType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/AzureAdPimGroupAccessType/index.md)\
 [AzureAdProvisioningState](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/AzureAdProvisioningState/index.md)\
 [AzureAdRegion](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/AzureAdRegion/index.md)\
 [AzureAdRelationshipEnumType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/AzureAdRelationshipEnumType/index.md)\
@@ -210,6 +215,7 @@
 [CertMgmtSortBy](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/CertMgmtSortBy/index.md)\
 [CertificateRotationStatus](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/CertificateRotationStatus/index.md)\
 [CertificateUsage](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/CertificateUsage/index.md)\
+[CertificateUsageLocation](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/CertificateUsageLocation/index.md)\
 [ChannelMembershipType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/ChannelMembershipType/index.md)\
 [ChartType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/ChartType/index.md)\
 [ClassificationPolicyColor](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/ClassificationPolicyColor/index.md)\
@@ -240,6 +246,7 @@
 [CloudNativeLocTemplateType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/CloudNativeLocTemplateType/index.md)\
 [CloudNativeObjectType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/CloudNativeObjectType/index.md)\
 [CloudNativeRbaStatusType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/CloudNativeRbaStatusType/index.md)\
+[CloudNativeSnapshotLocationType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/CloudNativeSnapshotLocationType/index.md)\
 [CloudNativeTagObjectType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/CloudNativeTagObjectType/index.md)\
 [CloudNativeTagRuleFilterFields](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/CloudNativeTagRuleFilterFields/index.md)\
 [CloudNativeTagRuleSortByFields](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/CloudNativeTagRuleSortByFields/index.md)\
@@ -361,6 +368,11 @@
 [DownloadSnapshotFromLocationSnappableType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/DownloadSnapshotFromLocationSnappableType/index.md)\
 [DownloadStatusEnum](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/DownloadStatusEnum/index.md)\
 [EksClusterAccessType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/EksClusterAccessType/index.md)\
+[EmAllowedTargetScope](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/EmAllowedTargetScope/index.md)\
+[EmCatalogRole](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/EmCatalogRole/index.md)\
+[EmIncompatibleObjectType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/EmIncompatibleObjectType/index.md)\
+[EmResourceType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/EmResourceType/index.md)\
+[EmSubjectType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/EmSubjectType/index.md)\
 [EmailAddressFilterType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/EmailAddressFilterType/index.md)\
 [Encryption](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/Encryption/index.md)\
 [EncryptionKeyUpdateStatus](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/EncryptionKeyUpdateStatus/index.md)\
@@ -429,6 +441,7 @@
 [FlowErrorCode](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/FlowErrorCode/index.md)\
 [FsmoRoles](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/FsmoRoles/index.md)\
 [GPOLinkingStatusEnum](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/GPOLinkingStatusEnum/index.md)\
+[GcpBucketNetworkAccess](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/GcpBucketNetworkAccess/index.md)\
 [GcpCloudAccountRegion](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/GcpCloudAccountRegion/index.md)\
 [GcpCloudSqlAvailabilityType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/GcpCloudSqlAvailabilityType/index.md)\
 [GcpCloudSqlEdition](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/GcpCloudSqlEdition/index.md)\
@@ -473,6 +486,7 @@
 [HierarchyFilterField](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/HierarchyFilterField/index.md)\
 [HierarchyObjectTypeEnum](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/HierarchyObjectTypeEnum/index.md)\
 [HierarchySortByField](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/HierarchySortByField/index.md)\
+[HostConfigurationPropertyEnabled](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/HostConfigurationPropertyEnabled/index.md)\
 [HostConnectivityStatus](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/HostConnectivityStatus/index.md)\
 [HostConnectivityStatusEnum](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/HostConnectivityStatusEnum/index.md)\
 [HostFailoverClusterRoot](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/HostFailoverClusterRoot/index.md)\
@@ -521,14 +535,20 @@
 [InternalQueryHypervHostRequestSortBy](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/InternalQueryHypervHostRequestSortBy/index.md)\
 [InternalQueryHypervHostRequestSortOrder](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/InternalQueryHypervHostRequestSortOrder/index.md)\
 [InternalQueryNetworkThrottleRequestResourceId](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/InternalQueryNetworkThrottleRequestResourceId/index.md)\
+[IntuneAppProtectionManagementType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/IntuneAppProtectionManagementType/index.md)\
 [IntuneAssignmentFilterManagementType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/IntuneAssignmentFilterManagementType/index.md)\
+[IntuneAutopilotDeploymentMode](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/IntuneAutopilotDeploymentMode/index.md)\
+[IntuneAutopilotDeploymentProfileJoinType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/IntuneAutopilotDeploymentProfileJoinType/index.md)\
 [IntuneComplianceActionType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/IntuneComplianceActionType/index.md)\
 [IntuneCompliancePolicyAssignmentType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/IntuneCompliancePolicyAssignmentType/index.md)\
 [IntuneCompliancePolicyPlatform](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/IntuneCompliancePolicyPlatform/index.md)\
 [IntuneCompliancePolicyType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/IntuneCompliancePolicyType/index.md)\
 [IntuneComplianceScriptType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/IntuneComplianceScriptType/index.md)\
 [IntuneDeviceAndAppManagementAssignmentFilterType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/IntuneDeviceAndAppManagementAssignmentFilterType/index.md)\
+[IntuneDeviceManagementPolicyType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/IntuneDeviceManagementPolicyType/index.md)\
+[IntuneDeviceManagementSecretSettingType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/IntuneDeviceManagementSecretSettingType/index.md)\
 [IntuneDevicePlatformType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/IntuneDevicePlatformType/index.md)\
+[IntunePolicyAssignmentType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/IntunePolicyAssignmentType/index.md)\
 [InventoryCard](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/InventoryCard/index.md)\
 [InventorySubHierarchyRootEnum](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/InventorySubHierarchyRootEnum/index.md)\
 [IoFilterStatus](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/IoFilterStatus/index.md)\
@@ -563,6 +583,7 @@
 [LdapLockReason](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/LdapLockReason/index.md)\
 [LdapPrincipalFieldEnum](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/LdapPrincipalFieldEnum/index.md)\
 [LdapUnlockReason](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/LdapUnlockReason/index.md)\
+[LegalHoldMode](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/LegalHoldMode/index.md)\
 [LegalHoldQueryFilterField](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/LegalHoldQueryFilterField/index.md)\
 [LegalHoldSortType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/LegalHoldSortType/index.md)\
 [ListAccessUsersSort](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/ListAccessUsersSort/index.md)\
@@ -598,6 +619,7 @@
 [MetadataKey](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/MetadataKey/index.md)\
 [MfaStatus](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/MfaStatus/index.md)\
 [MfaStrength](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/MfaStrength/index.md)\
+[MicrosoftDefenderStatusCode](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/MicrosoftDefenderStatusCode/index.md)\
 [MigrationUnavailabilityReason](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/MigrationUnavailabilityReason/index.md)\
 [MissedSnapshotDayOfTimeUnit](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/MissedSnapshotDayOfTimeUnit/index.md)\
 [MissedSnapshotGroupByTime](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/MissedSnapshotGroupByTime/index.md)\
@@ -976,6 +998,7 @@
 [TprReqOperation](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/TprReqOperation/index.md)\
 [TprReqStatus](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/TprReqStatus/index.md)\
 [TprRule](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/TprRule/index.md)\
+[TprSnapshotLocationType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/TprSnapshotLocationType/index.md)\
 [TprSubmittedByUser](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/TprSubmittedByUser/index.md)\
 [TransportLayerProtocol](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/TransportLayerProtocol/index.md)\
 [Type](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/Type/index.md)\

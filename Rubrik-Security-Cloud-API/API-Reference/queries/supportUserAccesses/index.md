@@ -25,6 +25,7 @@ query {
   supportUserAccesses(first: 10) {
     nodes {
       accessStatus
+      actualEndTime
       durationInHours
       endTime
       id
@@ -51,11 +52,11 @@ query {
         [
           {
             "accessStatus": "SUPPORT_ACCESS_STATUS_CLOSED",
+            "actualEndTime": "2024-01-01T00:00:00.000Z",
             "durationInHours": 0,
             "endTime": "2024-01-01T00:00:00.000Z",
             "id": 0,
-            "startTime": "2024-01-01T00:00:00.000Z",
-            "ticketNumber": "example-string"
+            "startTime": "2024-01-01T00:00:00.000Z"
           }
         ]
       ],

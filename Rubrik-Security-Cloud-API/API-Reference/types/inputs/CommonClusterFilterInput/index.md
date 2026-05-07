@@ -1,6 +1,6 @@
 # CommonClusterFilterInput
 
-Filter cluster data.
+Filter input for clusters.
 
 ## Fields
 

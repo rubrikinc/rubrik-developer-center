@@ -17,3 +17,5 @@ AzureManagementGroup is a representation of the native Azure management group.
 
 - [AzureCloudAccountSubscriptionDetail.managementGroup](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AzureCloudAccountSubscriptionDetail/index.md)
 - [AzureListManagementGroupsReply.managementGroups](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AzureListManagementGroupsReply/index.md)
+- [AzureSubscriptionWithExoConfigs.managementGroup](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AzureSubscriptionWithExoConfigs/index.md)
+- [AzureSubscriptionWithFeaturesType.managementGroup](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AzureSubscriptionWithFeaturesType/index.md)

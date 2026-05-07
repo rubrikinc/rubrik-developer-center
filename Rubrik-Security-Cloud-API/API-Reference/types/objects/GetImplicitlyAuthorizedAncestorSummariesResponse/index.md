@@ -4,9 +4,9 @@ Get implicitly authorized ancestors response.
 
 ## Fields
 
-| Field           | Type                                                                                                                             | Description |
-| --------------- | -------------------------------------------------------------------------------------------------------------------------------- | ----------- |
-| objectSummaries | \[[ObjectSummary](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/ObjectSummary/index.md)!\]! |             |
+| Field           | Type                                                                                                                             | Description           |
+| --------------- | -------------------------------------------------------------------------------------------------------------------------------- | --------------------- |
+| objectSummaries | \[[ObjectSummary](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/ObjectSummary/index.md)!\]! | The object summaries. |
 
 ## Used By
 

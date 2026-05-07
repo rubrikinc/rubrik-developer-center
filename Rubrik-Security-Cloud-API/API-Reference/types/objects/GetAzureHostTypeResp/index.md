@@ -1,12 +1,12 @@
 # GetAzureHostTypeResp
 
-*No description available.*
+GetAzureHostTypeResp is the response for getting the Azure host type.
 
 ## Fields
 
-| Field    | Type                                                                                                                      | Description |
-| -------- | ------------------------------------------------------------------------------------------------------------------------- | ----------- |
-| hostType | [AzureHostType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/AzureHostType/index.md)! | Host type.  |
+| Field    | Type                                                                                                                      | Description      |
+| -------- | ------------------------------------------------------------------------------------------------------------------------- | ---------------- |
+| hostType | [AzureHostType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/AzureHostType/index.md)! | Azure Host type. |
 
 ## Used By
 

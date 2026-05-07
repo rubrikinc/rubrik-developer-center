@@ -7,7 +7,7 @@ Represents the definitions of M365 backup storage object restore point.
 | Field              | Type                                                                                                                                  | Description                                                             |
 | ------------------ | ------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------- |
 | expirationDateTime | [DateTime](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/DateTime/index.md)                      | Represents the expiration time for M365 backup storage backup snapshot. |
-| id                 | String!                                                                                                                               | Represents id of restore point.                                         |
+| id                 | String!                                                                                                                               | Represents ID of restore point.                                         |
 | protectionDateTime | [DateTime](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/DateTime/index.md)                      | Represents the backup time of M365 backup storage object.               |
 | type               | [RestorePointTagType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/RestorePointTagType/index.md)! |                                                                         |
 

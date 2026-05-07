@@ -34,6 +34,7 @@ query EligibleAccountsForMigrationToAwsOrg($awsOrganizationUuid: UUID!) {
       orgName
       outpostAwsNativeId
       seamlessFlowEnabled
+      serviceType
     }
     pageInfo {
       hasNextPage

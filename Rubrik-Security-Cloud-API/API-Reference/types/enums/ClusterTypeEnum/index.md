@@ -1,6 +1,6 @@
 # ClusterTypeEnum
 
-Cluster type.
+Type of the registered cluster.
 
 ## Values
 

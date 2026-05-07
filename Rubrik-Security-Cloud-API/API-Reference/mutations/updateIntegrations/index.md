@@ -25,7 +25,6 @@ mutation UpdateIntegrations($input: UpdateIntegrationsInput!) {
   "input": {
     "integrations": [
       {
-        "config": {},
         "id": 0,
         "integrationType": "CROWD_STRIKE",
         "name": "example-string"

@@ -18,3 +18,5 @@ Represents a permissions group with its version.
 - [AzureCloudAccountPermissionConfigResponse.permissionsGroupVersions](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AzureCloudAccountPermissionConfigResponse/index.md)
 - [FeatureDetail.permissionsGroupVersions](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/FeatureDetail/index.md)
 - [FeaturePermission.permissionsGroupVersions](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/FeaturePermission/index.md)
+- [GcpCloudAccountFeatureDetail.permissionsGroupVersions](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/GcpCloudAccountFeatureDetail/index.md)
+- [GcpFeatureDetail.permissionsGroupVersions](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/GcpFeatureDetail/index.md)

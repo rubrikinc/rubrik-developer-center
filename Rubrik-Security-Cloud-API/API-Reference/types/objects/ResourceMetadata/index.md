@@ -1,6 +1,6 @@
 # ResourceMetadata
 
-*No description available.*
+Metadata for the resource.
 
 ## Fields
 

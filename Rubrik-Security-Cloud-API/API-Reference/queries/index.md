@@ -340,6 +340,7 @@
 [cloudDirectSnapshotExclusions](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/cloudDirectSnapshotExclusions/index.md)\
 [cloudDirectSnapshots](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/cloudDirectSnapshots/index.md)\
 [cloudDirectSystems](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/cloudDirectSystems/index.md)\
+[cloudNativeApplicationSnapshots](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/cloudNativeApplicationSnapshots/index.md)\
 [cloudNativeCheckArchivedSnapshotsLocked](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/cloudNativeCheckArchivedSnapshotsLocked/index.md)\
 [cloudNativeCheckRequiredPermissionsForFeature](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/cloudNativeCheckRequiredPermissionsForFeature/index.md)\
 [cloudNativeCustomerTags](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/cloudNativeCustomerTags/index.md)\
@@ -671,6 +672,7 @@
 [mssqlDatabases](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/mssqlDatabases/index.md)\
 [mssqlDefaultProperties](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/mssqlDefaultProperties/index.md)\
 [mssqlDefaultPropertiesOnCluster](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/mssqlDefaultPropertiesOnCluster/index.md)\
+[mssqlHostConfiguration](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/mssqlHostConfiguration/index.md)\
 [mssqlInstance](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/mssqlInstance/index.md)\
 [mssqlJobStatus](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/mssqlJobStatus/index.md)\
 [mssqlLogShippingTargets](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/mssqlLogShippingTargets/index.md)\
@@ -984,6 +986,7 @@
 [uniqueHypervServersCount](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/uniqueHypervServersCount/index.md)\
 [uniqueVcdCount](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/uniqueVcdCount/index.md)\
 [unmanagedObjects](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/unmanagedObjects/index.md)\
+[upgradePathEligibility](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/upgradePathEligibility/index.md)\
 [upgradeStatus](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/upgradeStatus/index.md)\
 [userActivities](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/userActivities/index.md)\
 [userActivityTimeline](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/userActivityTimeline/index.md)\
@@ -1052,6 +1055,7 @@
 [validateCreateAzureClusterInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/validateCreateAzureClusterInput/index.md)\
 [validateIocEntry](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/validateIocEntry/index.md)\
 [validateOrgName](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/validateOrgName/index.md)\
+[validateOutpostAccountNetwork](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/validateOutpostAccountNetwork/index.md)\
 [validateRdsExportExocomputePort](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/validateRdsExportExocomputePort/index.md)\
 [validateRoleName](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/validateRoleName/index.md)\
 [validateScriptOutputForManualPermissionValidation](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/validateScriptOutputForManualPermissionValidation/index.md)\

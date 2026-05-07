@@ -4,9 +4,9 @@ Taskchain status reply.
 
 ## Fields
 
-| Field     | Type                                                                                                               | Description |
-| --------- | ------------------------------------------------------------------------------------------------------------------ | ----------- |
-| taskchain | [Taskchain](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/Taskchain/index.md) |             |
+| Field     | Type                                                                                                               | Description    |
+| --------- | ------------------------------------------------------------------------------------------------------------------ | -------------- |
+| taskchain | [Taskchain](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/Taskchain/index.md) | The taskchain. |
 
 ## Used By
 

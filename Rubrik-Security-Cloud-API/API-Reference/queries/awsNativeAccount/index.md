@@ -37,6 +37,7 @@ query AwsNativeAccount($awsNativeAccountRubrikId: UUID!, $awsNativeProtectionFea
     rdsInstanceCount
     rscPendingObjectPauseAssignment
     s3BucketCount
+    serviceType
     slaAssignment
     slaPauseStatus
     status

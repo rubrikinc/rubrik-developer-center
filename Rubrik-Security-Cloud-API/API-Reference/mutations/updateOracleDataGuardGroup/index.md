@@ -55,6 +55,7 @@ mutation UpdateOracleDataGuardGroup($input: UpdateOracleDataGuardGroupInput!) {
     ratePerRmanChannelInMb
     sectionSizeInGb
     shouldBackupFromPrimaryDgGroupMemberOnly
+    shouldEnableZeroRpo
     snapshotCount
     tablespaces
   }

@@ -4,13 +4,13 @@
 
 ## Fields
 
-| Field       | Type                                                                                                                              | Description |
-| ----------- | --------------------------------------------------------------------------------------------------------------------------------- | ----------- |
-| id          | String!                                                                                                                           |             |
-| isArchived  | Boolean!                                                                                                                          |             |
-| mailAddress | String!                                                                                                                           |             |
-| name        | String!                                                                                                                           |             |
-| objectType  | [ManagedObjectType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/ManagedObjectType/index.md)! |             |
+| Field       | Type                                                                                                                              | Description                               |
+| ----------- | --------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------- |
+| id          | String!                                                                                                                           | The object ID.                            |
+| isArchived  | Boolean!                                                                                                                          | Indicates whether the object is archived. |
+| mailAddress | String!                                                                                                                           | The mail address.                         |
+| name        | String!                                                                                                                           | The object name.                          |
+| objectType  | [ManagedObjectType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/ManagedObjectType/index.md)! | The object type.                          |
 
 ## Used By
 

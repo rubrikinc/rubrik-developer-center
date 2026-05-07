@@ -24,6 +24,7 @@ query CustomAnalyzer($analyzerId: String!) {
     excludePathPattern
     id
     isInactive
+    jsValidationFunction
     keyRegex
     name
     proximityDistance

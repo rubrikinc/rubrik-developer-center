@@ -6,6 +6,6 @@ The data which represents indicator of compromise: a file path/pattern, hash, or
 
 | Field        | Type                                                                                                                                              | Description                                |
 | ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------ |
-| iocKind      | [IndicatorOfCompromiseKind](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/IndicatorOfCompromiseKind/index.md)! | IOC kind.                                  |
-| iocValue     | String!                                                                                                                                           | IOC value as a string.                     |
+| iocKind      | [IndicatorOfCompromiseKind](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/IndicatorOfCompromiseKind/index.md)! | Specifies the IOC kind.                    |
+| iocValue     | String!                                                                                                                                           | Specifies the IOC value.                   |
 | threatFamily | String                                                                                                                                            | The threat family associated with the IOC. |

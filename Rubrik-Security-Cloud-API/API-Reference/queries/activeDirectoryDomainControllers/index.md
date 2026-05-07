@@ -33,6 +33,7 @@ query {
       hostname
       id
       isGlobalCatalog
+      isReadOnly
       isRelic
       macAddress
       macAddresses

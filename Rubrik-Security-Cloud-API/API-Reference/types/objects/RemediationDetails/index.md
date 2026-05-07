@@ -1,6 +1,6 @@
 # RemediationDetails
 
-*No description available.*
+Details for the remediation to be done.
 
 ## Fields
 

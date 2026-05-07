@@ -41,7 +41,6 @@ query SnappablesWithLegalHoldSnapshotsSummary($input: SnappablesWithLegalHoldSna
 ```json
 {
   "input": {
-    "clusterUuid": "example-string",
     "filterParams": [
       {}
     ]

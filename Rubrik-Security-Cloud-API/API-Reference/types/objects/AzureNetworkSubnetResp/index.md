@@ -4,9 +4,9 @@
 
 ## Fields
 
-| Field | Type     | Description |
-| ----- | -------- | ----------- |
-| valid | Boolean! |             |
+| Field | Type     | Description                            |
+| ----- | -------- | -------------------------------------- |
+| valid | Boolean! | Indicates whether the subnet is valid. |
 
 ## Used By
 

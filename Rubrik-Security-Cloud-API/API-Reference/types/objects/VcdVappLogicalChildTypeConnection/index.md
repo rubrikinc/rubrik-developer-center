@@ -16,3 +16,4 @@ Paginated list of VcdVappLogicalChildType objects with additional pagination inf
 **Referenced by**
 
 - [VcdVapp.logicalChildConnection](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/VcdVapp/index.md)
+- [VcdVapp.recoveryLogicalChildConnection](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/VcdVapp/index.md)

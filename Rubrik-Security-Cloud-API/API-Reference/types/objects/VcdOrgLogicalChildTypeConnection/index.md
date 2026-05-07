@@ -16,3 +16,4 @@ Paginated list of VcdOrgLogicalChildType objects with additional pagination info
 **Referenced by**
 
 - [VcdOrg.logicalChildConnection](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/VcdOrg/index.md)
+- [VcdOrg.recoveryLogicalChildConnection](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/VcdOrg/index.md)

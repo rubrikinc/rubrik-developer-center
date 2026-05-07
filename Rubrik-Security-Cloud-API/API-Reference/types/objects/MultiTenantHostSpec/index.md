@@ -1,17 +1,17 @@
 # MultiTenantHostSpec
 
-MultiTenant host specification.
+MultiTenant host specification contains the specs, app ID and network config required for operations on a multi-tenant host.
 
 ## Fields
 
-| Field                        | Type                                                                                                                       | Description                                                    |
-| ---------------------------- | -------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------- |
-| multiTenantHostAzureAppId    | String!                                                                                                                    | Azure App ID of the multi-tenant host.                         |
-| multiTenantHostId            | String!                                                                                                                    | Identifier for the multi-tenant host.                          |
-| multiTenantHostNetworkConfig | [NetworkConfig](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/NetworkConfig/index.md) | Network configuration of the multi-tenant host.                |
-| namespace                    | String!                                                                                                                    | Namespace assigned to the exocluster on the multi-tenant host. |
-| registryServer               | String!                                                                                                                    | Azure container registry server for multi-tenant host.         |
-| tunnelMode                   | String!                                                                                                                    | Tunnel mode for the multi-tenant host.                         |
+| Field                        | Type                                                                                                                       | Description                                                                                     |
+| ---------------------------- | -------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- |
+| multiTenantHostAzureAppId    | String!                                                                                                                    | Azure App ID of Microsoft Entra ID app used to manage the multi-tenant host.                    |
+| multiTenantHostId            | String!                                                                                                                    | Identifier for the multi-tenant host.                                                           |
+| multiTenantHostNetworkConfig | [NetworkConfig](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/NetworkConfig/index.md) | Network configuration of the multi-tenant host.                                                 |
+| namespace                    | String!                                                                                                                    | Namespace assigned to the exocluster on the multi-tenant host, where the pods will be deployed. |
+| registryServer               | String!                                                                                                                    | Azure container registry server for multi-tenant host.                                          |
+| tunnelMode                   | String!                                                                                                                    | Tunnel mode for the multi-tenant host.                                                          |
 
 ## Used By
 

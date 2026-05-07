@@ -23,7 +23,6 @@ mutation UpdateIntegration($input: UpdateIntegrationInput!) {
 ```json
 {
   "input": {
-    "config": {},
     "id": 0,
     "integrationType": "CROWD_STRIKE",
     "name": "example-string"

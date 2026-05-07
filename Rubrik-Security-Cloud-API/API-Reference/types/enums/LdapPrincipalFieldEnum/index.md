@@ -1,9 +1,9 @@
 # LdapPrincipalFieldEnum
 
-*No description available.*
+Field enum for sorting LDAP principals.
 
 ## Values
 
-| Value | Description |
-| ----- | ----------- |
-| Name  |             |
+| Value | Description                 |
+| ----- | --------------------------- |
+| Name  | Name of the LDAP principal. |

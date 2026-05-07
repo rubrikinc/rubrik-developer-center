@@ -42,7 +42,6 @@ query LegalHoldSnapshotsForSnappable($input: LegalHoldSnapshotsForSnappableInput
 ```json
 {
   "input": {
-    "clusterUuid": "example-string",
     "filterParams": [
       {}
     ],

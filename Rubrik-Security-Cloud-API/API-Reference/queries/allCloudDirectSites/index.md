@@ -38,6 +38,7 @@ query {
             "ipAddress": "example-string",
             "lastConnectedAt": "2024-01-01T00:00:00.000Z",
             "lastState": "DEGRADED",
+            "name": "example-string",
             "removedAt": "2024-01-01T00:00:00.000Z"
           }
         ]

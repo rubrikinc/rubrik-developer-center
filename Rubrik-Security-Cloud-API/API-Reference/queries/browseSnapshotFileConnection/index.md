@@ -11,6 +11,7 @@ Returns a list files whose name is prefixed by the query in the given snapshot.
 | path *(required)*        | String!                                                                                                   | The path under which you want your search to run.                       |
 | snapshotFid *(required)* | [UUID](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/UUID/index.md)! | Snapshot persistent UUID in RSC.                                        |
 | searchPrefix             | String                                                                                                    | Prefix arg for searching for files within a snapshot.                   |
+| isPrefixSearch           | Boolean                                                                                                   | Determines whether to use a prefix search.                              |
 
 ## Returns
 

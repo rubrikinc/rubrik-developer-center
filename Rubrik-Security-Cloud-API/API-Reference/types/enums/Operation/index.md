@@ -25,6 +25,7 @@ Operations defined in the RBAC system.
 | ASSIGN_KMS_KEY_VAULT                      | Assign KMS Key Vault to data locations.                                               |
 | ASSIGN_MIP_LABELS                         | Assign Microsoft Information Protection(MIP) labels.                                  |
 | ASSIGN_ROLE                               | Assign Role.                                                                          |
+| BROWSE_WORKLOAD_CONTENTS                  | Browse snapshot and object contents.                                                  |
 | CANCEL_RUNNING_ACTIVITY                   | Cancel a running activity.                                                            |
 | CANCEL_TPR_REQUEST                        | Cancel TPR request.                                                                   |
 | CATEGORY_MANAGE_DATA_SOURCE               | Manage data source.                                                                   |

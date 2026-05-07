@@ -45,7 +45,7 @@ query {
       "nodes": [
         [
           {
-            "useCaseType": "CLOUD_NATIVE"
+            "useCaseType": "BACKUP"
           }
         ]
       ],

@@ -4,10 +4,10 @@ Object snapshot mapping.
 
 ## Fields
 
-| Field       | Type       | Description                                                     |
-| ----------- | ---------- | --------------------------------------------------------------- |
-| objectFid   | String!    | TODO(SPARK-398306): Object fid from string to uuid. Object FID. |
-| snapshotFid | [String!]! | Snapshot FIDs.                                                  |
+| Field       | Type       | Description    |
+| ----------- | ---------- | -------------- |
+| objectFid   | String!    | Object FID.    |
+| snapshotFid | [String!]! | Snapshot FIDs. |
 
 ## Used By
 
