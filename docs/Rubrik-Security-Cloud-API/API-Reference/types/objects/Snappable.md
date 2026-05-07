@@ -6,30 +6,30 @@ An object that can be backed-up by taking snapshots.
 
 | Field | Type | Description |
 |-------|------|-------------|
-| archivalComplianceStatus | [ComplianceStatusEnum](../enums/ComplianceStatusEnum.md) |  |
-| archivalSnapshotLag | Int |  |
+| archivalComplianceStatus | [ComplianceStatusEnum](../enums/ComplianceStatusEnum.md) | The archival compliance status. |
+| archivalSnapshotLag | Int | The archival snapshot lag. |
 | archiveSnapshots | Int | The number of snapshots that have been archived. |
 | archiveStorage | [Long](../scalars/Long.md) | The amount of storage used by archived snapshots. |
-| awaitingFirstFull | Boolean |  |
+| awaitingFirstFull | Boolean | Whether the snappable is awaiting first full backup. |
 | cluster | [Cluster](Cluster.md) | The Rubrik cluster to which the protected objects belong. |
 | complianceStatus | [ComplianceStatusEnum](../enums/ComplianceStatusEnum.md) | The current compliance status of the workload. |
 | dataReduction | Float | The change from transferred bytes to physical bytes. |
-| fid | [UUID](../scalars/UUID.md) |  |
+| fid | [UUID](../scalars/UUID.md) | The ID of the snappable. |
 | id | String! | The ID of the workload. |
 | lastSnapshot | [DateTime](../scalars/DateTime.md) | The timestamp of the last taken snapshot. |
 | lastSnapshotLogicalBytes | [Long](../scalars/Long.md) | The logical size of the workload's last snapshot. |
-| latestArchivalSnapshot | [DateTime](../scalars/DateTime.md) |  |
-| latestReplicationSnapshot | [DateTime](../scalars/DateTime.md) |  |
+| latestArchivalSnapshot | [DateTime](../scalars/DateTime.md) | The timestamp of the latest archival snapshot. |
+| latestReplicationSnapshot | [DateTime](../scalars/DateTime.md) | The timestamp of the latest replication snapshot. |
 | localEffectiveStorage | [Long](../scalars/Long.md) | The local effective storage size in bytes. |
 | localMeteredData | [Long](../scalars/Long.md) | The local metered data size in bytes. |
-| localOnDemandSnapshots | Int |  |
+| localOnDemandSnapshots | Int | The number of local on-demand snapshots. |
 | localProtectedData | [Long](../scalars/Long.md) | The local protected data size in bytes. |
-| localSlaSnapshots | Int |  |
+| localSlaSnapshots | Int | The number of local SLA snapshots. |
 | localSnapshots | Int | The number of snapshots locally present. |
 | localStorage | [Long](../scalars/Long.md) | The local storage size in bytes. |
-| location | String! |  |
+| location | String! | The location of the snappable. |
 | logicalBytes | [Long](../scalars/Long.md) | Logical bytes used by snapshots of this workload. |
-| logicalDataReduction | Float |  |
+| logicalDataReduction | Float | The logical data reduction ratio. |
 | missedSnapshots | Int | The number of snapshots that were missed. |
 | name | String! | The name of the workload. |
 | ncdLatestArchiveSnapshot | [DateTime](../scalars/DateTime.md) | The timestamp of the last taken NASCD archive snapshot. |
@@ -46,8 +46,8 @@ An object that can be backed-up by taking snapshots.
 | pullTime | [DateTime](../scalars/DateTime.md)! | The time at which the workload data was retrieved from CDM. |
 | replicaSnapshots | Int | The number of snapshots that have been replicated. |
 | replicaStorage | [Long](../scalars/Long.md) | The amount of storage used by replicated snapshots. |
-| replicationComplianceStatus | [ComplianceStatusEnum](../enums/ComplianceStatusEnum.md) |  |
-| replicationSnapshotLag | Int |  |
+| replicationComplianceStatus | [ComplianceStatusEnum](../enums/ComplianceStatusEnum.md) | The replication compliance status. |
+| replicationSnapshotLag | Int | The replication snapshot lag. |
 | slaDomain | [SlaDomain](../interfaces/SlaDomain.md) | The SLA Domain of the protected objects. |
 | sourceProtocol | String | The source NAS protocol. |
 | totalSnapshots | Int | The total number of snapshots present for the workload. |

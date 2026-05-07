@@ -8,6 +8,7 @@ Details of the Gcp Cloud Account feature.
 |-------|------|-------------|
 | enabledPermissionGroups | [[PermissionsGroup](../enums/PermissionsGroup.md)!]! | Permission Groups enabled for the feature. Only populated if the feature flag for permission groups is enabled. |
 | feature | [CloudAccountFeature](../enums/CloudAccountFeature.md)! | The cloud account feature. |
+| permissionsGroupVersions | [[PermissionsGroupWithVersion](PermissionsGroupWithVersion.md)!]! | Versioned permission groups for the feature, including each group's current policy version. |
 | roleId | String! | Specifies the ID of the feature-specific role, if it exists. |
 | status | [CloudAccountStatus](../enums/CloudAccountStatus.md)! | Specifies the status of the cloud account. |
 

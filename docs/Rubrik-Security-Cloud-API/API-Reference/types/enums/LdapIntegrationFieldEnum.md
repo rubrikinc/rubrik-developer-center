@@ -1,9 +1,9 @@
 # LdapIntegrationFieldEnum
 
-*No description available.*
+Field enum for sorting LDAP integrations.
 
 ## Values
 
 | Value | Description |
 |-------|-------------|
-| Name |  |
+| Name | Name of the LDAP integration. |

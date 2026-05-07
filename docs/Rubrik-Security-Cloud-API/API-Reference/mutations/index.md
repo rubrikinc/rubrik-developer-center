@@ -59,6 +59,7 @@
 [assignSla](assignSla.md)  
 [assignSlaToMongoDbCollection](assignSlaToMongoDbCollection.md)  
 [assignSlasForSnappableHierarchies](assignSlasForSnappableHierarchies.md)  
+[assignVmName](assignVmName.md)  
 [awsCloudAccountsMigrateInitiate](awsCloudAccountsMigrateInitiate.md)  
 [awsExocomputeClusterConnect](awsExocomputeClusterConnect.md)  
 [azureCloudAccountAddWithCustomerAppInitiate](azureCloudAccountAddWithCustomerAppInitiate.md)  

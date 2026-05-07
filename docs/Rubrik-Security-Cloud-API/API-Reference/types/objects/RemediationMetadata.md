@@ -9,7 +9,7 @@
 | lastUpdatedAt | [DateTime](../scalars/DateTime.md) | The time when the remediation was last updated. |
 | lastUpdatedBy | String! | The user who last updated the remediation. |
 | location | [RemediationLocation](../enums/RemediationLocation.md)! | The location that the remediation have been invoked from. |
-| policyViolationId | String! | This field is deprecated. Use targets instead. |
+| policyViolationId | String! | This field is deprecated. |
 | remediationDetails | [RemediationActionDetails](RemediationActionDetails.md) | The details of the remediation. |
 | remediationId | String! | Unique identifier for the remediation. |
 | resourceId | String! | The resource ID that the remediation have been applied on. |

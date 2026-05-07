@@ -8,5 +8,5 @@ Custom intel feed input.
 |-------|------|-------------|
 | autoQuarantineMetadata | [AutoQuarantineMetadataInput](AutoQuarantineMetadataInput.md) | Metadata for auto quarantine. |
 | description | String | Custom feed description. |
-| entries | [[CustomEntries](CustomEntries.md)!]! | Custom entries. |
+| entries | [[CustomEntries](CustomEntries.md)!]! | IOC entries. |
 | name | String | Custom feed name. |

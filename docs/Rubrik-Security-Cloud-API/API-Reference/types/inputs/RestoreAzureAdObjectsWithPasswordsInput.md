@@ -13,7 +13,7 @@ Configuration to initiate recovery of AzureAdDirectory with multiple passwords.
 | objectRecoveryOptions | [ObjectRecoveryOptionsType](ObjectRecoveryOptionsType.md) | Represents recovery options for every AzureAdObjectType. |
 | objectTypeToIdMap | [[ObjectInfoType](ObjectInfoType.md)!]! | Map of azureAdObjectType to object IDs. |
 | passwordByUserIdMap | [[PasswordByUserId](PasswordByUserId.md)!]! | Map of user IDs to password. |
-| relationshipConflictResolutionMode | [RelationshipConflictResolutionState](../enums/RelationshipConflictResolutionState.md) | Specifies the mode for relationship conflict resolution during Entra ID restore. |
+| relationshipConflictResolutionMode | [RelationshipConflictResolutionState](../enums/RelationshipConflictResolutionState.md) | Deprecated, this field is no longer used and will be ignored. |
 | relationshipRestoreMode | [AzureAdRelationshipRestoreModeEnumType](../enums/AzureAdRelationshipRestoreModeEnumType.md)! | Represents the modes for relationship restore for Azure AD objects. |
 | snapshotFid | [UUID](../scalars/UUID.md)! | Snapshot FID of the Azure AD directory snapshot from which to recover. |
 | workloadFid | [UUID](../scalars/UUID.md)! | Workload Fid of the Azure AD Directory to recover. |

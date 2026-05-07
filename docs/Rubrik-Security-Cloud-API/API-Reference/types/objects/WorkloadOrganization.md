@@ -1,6 +1,6 @@
 # WorkloadOrganization
 
-Details of an organization associated with a workload.
+Details of an organization with basic information.
 
 ## Fields
 

@@ -44,7 +44,7 @@ Details of the Azure AD objects corresponding to the type.
     ```json
     {
       "input": {
-        "azureAdObjectType": "ACCOUNT_PROTECTION",
+        "azureAdObjectType": "ACCESS_REVIEW_SCHEDULE_DEFINITION",
         "keywordSearchFilters": [
           {}
         ],
@@ -65,7 +65,7 @@ Details of the Azure AD objects corresponding to the type.
               {
                 "objectId": "example-string",
                 "snapshotId": "example-string",
-                "type": "ACCOUNT_PROTECTION"
+                "type": "ACCESS_REVIEW_SCHEDULE_DEFINITION"
               }
             ]
           ],

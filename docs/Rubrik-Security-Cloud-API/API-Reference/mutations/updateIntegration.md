@@ -27,7 +27,6 @@ Update the integration with the specified integration ID.
     ```json
     {
       "input": {
-        "config": {},
         "id": 0,
         "integrationType": "CROWD_STRIKE",
         "name": "example-string"

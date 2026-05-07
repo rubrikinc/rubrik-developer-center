@@ -16,3 +16,4 @@ Paginated list of VcdLogicalChildType objects with additional pagination informa
 **Referenced by**
 
 - [Vcd.logicalChildConnection](Vcd.md)
+- [Vcd.recoveryLogicalChildConnection](Vcd.md)

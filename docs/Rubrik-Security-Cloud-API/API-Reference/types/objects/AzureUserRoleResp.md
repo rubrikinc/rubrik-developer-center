@@ -6,8 +6,8 @@
 
 | Field | Type | Description |
 |-------|------|-------------|
-| globalAdministrator | [RoleStatus](RoleStatus.md) |  |
-| subscriptionOwner | [RoleStatus](RoleStatus.md) |  |
+| globalAdministrator | [RoleStatus](RoleStatus.md) | The global administrator role status. |
+| subscriptionOwner | [RoleStatus](RoleStatus.md) | The subscription owner role status. |
 
 ## Used By
 

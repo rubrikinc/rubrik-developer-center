@@ -1,6 +1,6 @@
 # UpdateIocStatusInput
 
-Specify IOC operation and IOC. One and only one IOC type should be set.
+Input for updating IOC status. One and only one IOC type should be set.
 
 ## Fields
 

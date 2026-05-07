@@ -6,7 +6,7 @@
 
 | Field | Type | Description |
 |-------|------|-------------|
-| valid | Boolean! |  |
+| valid | Boolean! | Indicates whether the subnet is valid. |
 
 ## Used By
 

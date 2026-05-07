@@ -6,8 +6,8 @@
 
 | Field | Type | Description |
 |-------|------|-------------|
-| reason | String! |  |
-| rulesStatus | [AzureNetworkSecurityRulesStatus](../enums/AzureNetworkSecurityRulesStatus.md)! |  |
+| reason | String! | The reason. |
+| rulesStatus | [AzureNetworkSecurityRulesStatus](../enums/AzureNetworkSecurityRulesStatus.md)! | The network security rules status. |
 
 ## Used By
 

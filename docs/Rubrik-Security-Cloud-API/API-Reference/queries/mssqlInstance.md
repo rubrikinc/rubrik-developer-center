@@ -19,20 +19,31 @@ A Microsoft SQL Instance.
     ```graphql
     query MssqlInstance($fid: UUID!) {
       mssqlInstance(fid: $fid) {
+        activeNode
         authorizedOperations
         cdmPendingObjectPauseAssignment
+        configurationVersion
+        discoveredAddress
         hasLogConfigFromSla
+        hasPermissions
+        hasSysadminRole
         hostLogRetention
+        hostsInstalled
         id
+        isClusterInstance
         logBackupFrequencyInSeconds
         logBackupRetentionInHours
         name
+        networkName
         numWorkloadDescendants
         objectType
+        protectionDate
         replicatedObjectCount
+        serviceAccountUser
         slaAssignment
         slaPauseStatus
         unprotectableReasons
+        version
       }
     }
     ```
@@ -51,14 +62,14 @@ A Microsoft SQL Instance.
     {
       "data": {
         "mssqlInstance": {
+          "activeNode": "example-string",
           "authorizedOperations": [
             "ACCESS_CDM_CLUSTER"
           ],
           "cdmPendingObjectPauseAssignment": "NO_PENDING_PAUSE_ASSIGNMENT",
+          "configurationVersion": 0,
+          "discoveredAddress": "example-string",
           "hasLogConfigFromSla": true,
-          "hostLogRetention": 0,
-          "id": "00000000-0000-0000-0000-000000000000",
-          "logBackupFrequencyInSeconds": 0,
           "allOrgs": [
             {
               "allUrls": [

@@ -1,6 +1,6 @@
 # UpgradeStatusV2
 
-Upgrade status for CDM Upgrade Service 2.0.
+Rubrik cluster upgrade Information.
 
 ## Fields
 

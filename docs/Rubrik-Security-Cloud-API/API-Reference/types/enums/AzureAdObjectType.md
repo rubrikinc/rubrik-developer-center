@@ -6,6 +6,7 @@ Entra ID object types.
 
 | Value | Description |
 |-------|-------------|
+| ACCESS_REVIEW_SCHEDULE_DEFINITION | Object type is access review schedule definition. |
 | ACCOUNT_PROTECTION | Object type is Intune endpoint security account protection policy. |
 | ADMINISTRATIVE_UNIT | Object type is Entra ID administrative unit. |
 | ANTIVIRUS | Object type is Intune endpoint security antivirus policy. |
@@ -31,13 +32,24 @@ Entra ID object types.
 | DEVICE_MANAGEMENT_COMPLIANCE_POLICY | Sub-object type of COMPLIANCE_POLICY. |
 | DEVICE_MANAGEMENT_CONFIGURATION_POLICY | Object type is Intune device management configuration policy. |
 | DISK_ENCRYPTION | Object type is Intune endpoint security disk encryption policy. |
+| EM_ACCESS_PACKAGE | Object type is Entitlement Management access package. |
+| EM_ASSIGNMENT | Object type is Entitlement Management assignment. |
+| EM_ASSIGNMENT_POLICY | Object type is Entitlement Management assignment policy. |
+| EM_CATALOG | Object type is Entitlement Management catalog. |
+| EM_CATALOG_RESOURCE | Object type is Entitlement Management catalog resource. |
+| EM_CATALOG_ROLE_ASSIGNMENT | Object type is Entitlement Management catalog role assignment. |
+| EM_INCOMPATIBILITIES | Object type is Entitlement Management incompatibilities. |
+| EM_RESOURCE_ROLE_SCOPE | Object type is Entitlement Management resource role scope. |
 | ENDPOINT_DETECTION_RESPONSE | Object type is Intune endpoint security endpoint detection and response policy. |
 | ENDPOINT_PRIVILEGE_MANAGEMENT | Object type is Intune endpoint security endpoint privilege management policy. |
 | FIREWALL | Object type is Intune endpoint security firewall policy. |
 | GROUP | Object type is Entra ID group. |
 | GROUP_ELIGIBLE_ASSIGNMENT | Object type is group-eligible assignment. |
+| INTUNE_POLICY_ASSIGNMENT | Object type is Intune policy assignment. |
+| INTUNE_ROLE_ASSIGNMENT | Object type is Intune role assignment. |
 | INTUNE_ROLE_DEFINITION | Object type is Intune role definition. |
 | INTUNE_SCOPE_TAG | Object type is Intune scope tag. |
+| INTUNE_SCOPE_TAG_ASSIGNMENT | Object type is Intune scope tag assignment. |
 | LOCAL_ADMIN_PASSWORD | Object type is Entra ID local administrator password. |
 | NAMED_LOCATION | Object type is Entra ID named location. |
 | NOTIFICATION_TEMPLATE | Object type is Intune notification template. |
@@ -49,6 +61,12 @@ Entra ID object types.
 | ROLE_ASSIGNMENT | Object type is Entra ID role assignment. |
 | ROLE_ELIGIBLE_ASSIGNMENT | Object type is role-eligible assignment. |
 | SERVICE_PRINCIPAL | Object type is Entra ID service principal. |
+| SUBTYPE_CONFIGURATION_POLICY | Sub-type of DEVICE_MANAGEMENT_CONFIGURATION_POLICY: configuration policy. |
+| SUBTYPE_DEVICE_CONFIGURATION | Sub-type of DEVICE_MANAGEMENT_CONFIGURATION_POLICY: device configuration. |
+| SUBTYPE_DEVICE_MANAGEMENT_INTENT | Sub-type of DEVICE_MANAGEMENT_CONFIGURATION_POLICY: device management intent. |
+| SUBTYPE_GROUP_POLICY_CONFIGURATION | Sub-type of DEVICE_MANAGEMENT_CONFIGURATION_POLICY: group policy configuration. |
+| SUBTYPE_HARDWARE_CONFIGURATION | Sub-type of DEVICE_MANAGEMENT_CONFIGURATION_POLICY: hardware configuration. |
+| SUBTYPE_MOBILE_APP_CONFIGURATION | Sub-type of DEVICE_MANAGEMENT_CONFIGURATION_POLICY: mobile app configuration. |
 | TERMS_OF_USE | Object type is Entra ID terms of use. |
 | UPDATE_RING | Object type is Intune Windows update ring. |
 | USER | Object type is Entra ID user. |

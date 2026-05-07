@@ -6,7 +6,7 @@
 
 | Field | Type | Description |
 |-------|------|-------------|
-| unusedAddr | [Long](../scalars/Long.md)! |  |
+| unusedAddr | [Long](../scalars/Long.md)! | The number of unused addresses. |
 
 ## Used By
 

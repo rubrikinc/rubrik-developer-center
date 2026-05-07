@@ -13,6 +13,8 @@ Recover a Rubrik Cloud Cluster.
 | azureVmConfig | [AzureVmConfig](AzureVmConfig.md) | Azure virtual machine configuration. |
 | cloudAccountId | [UUID](../scalars/UUID.md)! | Customer cloud account ID. |
 | clusterUuid | [UUID](../scalars/UUID.md)! | Cluster UUID. |
+| dnsNameServers | [String!] | Optional override for DNS nameservers. If not provided, the original cluster's DNS nameservers are used. |
+| dnsSearchDomains | [String!] | Optional override for DNS search domains. If not provided, the original cluster's DNS search domains are used. |
 | gcpVmConfig | [GcpVmConfigInput](GcpVmConfigInput.md) | GCP virtual machine configuration. |
 | gcpZone | String | GCP zone. |
 | isAzResilient | Boolean | Recovers as an AZ-resilient Rubrik cluster with nodes distributed across multiple availability zones. |

@@ -39,6 +39,7 @@ Refers to the AWS Native account that serves as a container for all your AWS res
         rdsInstanceCount
         rscPendingObjectPauseAssignment
         s3BucketCount
+        serviceType
         slaAssignment
         slaPauseStatus
         status

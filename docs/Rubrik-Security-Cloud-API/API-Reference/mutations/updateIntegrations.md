@@ -29,7 +29,6 @@ Update a batch of integrations.
       "input": {
         "integrations": [
           {
-            "config": {},
             "id": 0,
             "integrationType": "CROWD_STRIKE",
             "name": "example-string"

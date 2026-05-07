@@ -10,6 +10,7 @@ Supported in v7.0+ v7.0-v8.0: v8.1+: Input for registering a new NAS System.
 | hostname | String! | Required. Supported in v7.0+ |
 | isIsilonChangelistEnabled | Boolean | Supported in v7.0+ Specifies the default Changelist setting for all shares in the Isilon NAS system. |
 | isNetAppMetroClusterEnabled | Boolean | Supported in v8.1, v9.1+ v8.1: Enables the Metro Cluster feature for the NetApp NAS system. If the NetApp cluster is operating in the Metro Cluster environment and this flag is not enabled, the NAS protections on this NAS system will not seamlessly move when switchover or switchback occurs. v9.1+: Enables the Metro Cluster feature for the NetApp NAS system. If the NetApp cluster is operating in the Metro Cluster environment and this flag is not enabled, the NAS protections on this NAS system will not seamlessly move when switchover or switchback occurs. |
+| isNetAppSnapDiffEnabled | Boolean | Specifies the default SnapDiff setting for all shares in the NetApp NAS system. |
 | nasFlashBladeApiCredentials | [FlashBladeSystemParametersInput](FlashBladeSystemParametersInput.md) | Supported in v8.1+ |
 | nasTmpApiCredentials | [NasApiCredentialsInput](NasApiCredentialsInput.md) | Supported in v7.0+ |
 | nasVendorType | [NasVendorType](../enums/NasVendorType.md)! | Required. Supported in v7.0+ |

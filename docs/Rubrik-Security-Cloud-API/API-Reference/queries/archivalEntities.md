@@ -51,7 +51,7 @@ Lists all the user-created archival entities. This includes data center archival
           "nodes": [
             [
               {
-                "useCaseType": "CLOUD_NATIVE"
+                "useCaseType": "BACKUP"
               }
             ]
           ],

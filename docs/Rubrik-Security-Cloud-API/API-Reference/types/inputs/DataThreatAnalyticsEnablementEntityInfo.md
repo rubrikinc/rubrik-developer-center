@@ -1,6 +1,6 @@
 # DataThreatAnalyticsEnablementEntityInfo
 
-*No description available.*
+Entity type and ID.
 
 ## Fields
 

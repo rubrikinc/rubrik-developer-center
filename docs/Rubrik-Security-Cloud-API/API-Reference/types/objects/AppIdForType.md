@@ -6,8 +6,8 @@
 
 | Field | Type | Description |
 |-------|------|-------------|
-| appId | String! |  |
-| appType | String! |  |
+| appId | String! | The app ID. |
+| appType | String! | The app type. |
 
 ## Used By
 

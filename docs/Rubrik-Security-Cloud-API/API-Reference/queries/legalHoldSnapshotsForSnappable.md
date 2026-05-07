@@ -46,7 +46,6 @@ List of legal hold snapshots for a workload.
     ```json
     {
       "input": {
-        "clusterUuid": "example-string",
         "filterParams": [
           {}
         ],

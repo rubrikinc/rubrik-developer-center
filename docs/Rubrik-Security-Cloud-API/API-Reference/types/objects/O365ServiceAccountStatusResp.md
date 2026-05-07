@@ -6,8 +6,8 @@
 
 | Field | Type | Description |
 |-------|------|-------------|
-| status | [O365ServiceAccountStatus](../enums/O365ServiceAccountStatus.md)! |  |
-| username | String! |  |
+| status | [O365ServiceAccountStatus](../enums/O365ServiceAccountStatus.md)! | The service account status. |
+| username | String! | The username. |
 
 ## Used By
 

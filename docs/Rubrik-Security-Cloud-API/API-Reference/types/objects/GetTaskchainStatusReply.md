@@ -6,7 +6,7 @@ Taskchain status reply.
 
 | Field | Type | Description |
 |-------|------|-------------|
-| taskchain | [Taskchain](Taskchain.md) |  |
+| taskchain | [Taskchain](Taskchain.md) | The taskchain. |
 
 ## Used By
 

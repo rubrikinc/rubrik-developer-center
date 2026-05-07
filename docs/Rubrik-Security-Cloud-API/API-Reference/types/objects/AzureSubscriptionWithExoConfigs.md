@@ -12,6 +12,7 @@ Azure Cloud Account Subscription with exocompute configurations for feature conf
 | exocomputeMappableRegions | [[AzureCloudAccountRegion](../enums/AzureCloudAccountRegion.md)!]! | Regions with protected objects that can be mapped to exocompute configurations. |
 | featureDetail | [AzureCloudAccountFeatureDetail](AzureCloudAccountFeatureDetail.md)! | Feature details of subscription. |
 | globalRegionExocomputeConfigs | [[AzureExocomputeConfigDetails](AzureExocomputeConfigDetails.md)!]! | Optional Exocompute configurations that apply to all the regions. |
+| managementGroup | [AzureManagementGroup](AzureManagementGroup.md) | Management group of the Azure subscription. |
 | mappedCloudAccountIds | [[UUID](../scalars/UUID.md)!]! | Cloud Account IDs of subscriptions that are mapped to this Exocompute account. |
 | mappedCloudAccounts | [[CloudAccountDetails](CloudAccountDetails.md)!]! | Cloud Account details of subscriptions that are mapped to this Exocompute account. |
 | mappedExocomputeConfigs | [[AzureExocomputeConfigDetails](AzureExocomputeConfigDetails.md)!]! | Exocompute configurations available through mapped subscription. |
