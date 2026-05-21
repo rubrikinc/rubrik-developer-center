@@ -3,6 +3,7 @@ nav:
   - API-playground.md
   - authentication.md
   - API-Reference
+  - Task-Based-REST-API
   - Data-Protection
   - SaaS-App-Protection
   - Threat-Analytics
