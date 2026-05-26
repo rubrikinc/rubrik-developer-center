@@ -44,6 +44,8 @@ extra_css:
 extra_javascript:
   - javascripts/extra.js
 extra:
+  status:
+    beta: Beta
   consent:
     title: Cookie consent
     description: >-
