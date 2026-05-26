@@ -1,3 +1,7 @@
+New: Task-Based REST API (Beta)
+
+A REST interface for common RSC automation tasks is now available in beta — no GraphQL knowledge required. [Learn more](https://developer.rubrik.com/Rubrik-Security-Cloud-API/REST-API/index.md)
+
 ## Getting Started
 
 The Rubrik Security Cloud (RSC) API provides programatic access to all management within Rubrik.
