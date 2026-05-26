@@ -12,6 +12,8 @@ The Task-Based REST API is a REST interface for Rubrik Security Cloud (RSC). It 
 
 ## When to use this API
 
+The beta release of this API focuses on workloads, the protected objects in your environment. Listing what you have, checking compliance, taking snapshots, and tracking the resulting jobs are all first-class operations. SLA Domain management and event monitoring are included because they are the natural complements to workload operations: you need to assign protection policies and verify that jobs are completing successfully.
+
 Use the Task-Based REST API when you want to:
 
 - **Inventory and monitor your environment** — list workloads (protected objects), clusters, and activity events
