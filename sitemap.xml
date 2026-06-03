@@ -5,10 +5,6 @@
          <lastmod>2026-06-03</lastmod>
     </url>
     <url>
-         <loc>https://developer.rubrik.com/api-support/</loc>
-         <lastmod>2026-06-03</lastmod>
-    </url>
-    <url>
          <loc>https://developer.rubrik.com/Integrations/</loc>
          <lastmod>2026-06-03</lastmod>
     </url>
@@ -35334,6 +35330,10 @@
     </url>
     <url>
          <loc>https://developer.rubrik.com/SDKs-and-Tools/PowerShell/Advanced-Usage/</loc>
+         <lastmod>2026-06-03</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/api-support/</loc>
          <lastmod>2026-06-03</lastmod>
     </url>
 </urlset>
