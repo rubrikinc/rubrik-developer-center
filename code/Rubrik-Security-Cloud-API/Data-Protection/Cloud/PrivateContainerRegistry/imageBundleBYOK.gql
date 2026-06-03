@@ -1,0 +1,23 @@
+query ExotaskImageBundle($input: GetExotaskImageBundleInput) {
+  exotaskImageBundle(input: $input) {
+    awsImages {
+      bundleVersion
+      repoUrl
+      eksVersion
+      bundleImages {
+        name
+        tag
+        sha
+      }
+    }
+    azureImages {
+      bundleVersion
+      repoUrl
+      bundleImages {
+        name
+        tag
+        sha
+      }
+    }
+  }
+}
