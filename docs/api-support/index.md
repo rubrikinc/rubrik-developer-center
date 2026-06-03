@@ -1,9 +1,9 @@
 ---
-title: API Support Statement
+title: API Support
 icon: material/shield-check-outline
 ---
 
-# API Support Statement
+# API Support
 
 This page describes Rubrik's support commitments for the APIs documented on this site:
 
