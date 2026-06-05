@@ -14,4 +14,5 @@ CloudSpecificRegion is the region specific to the cloud provider.
 
 **Referenced by**
 
+- [DevOpsBackupLocation.cloudSpecificRegion](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/DevOpsBackupLocation/index.md)
 - [RcvRegion.cloudSpecificRegion](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/RcvRegion/index.md)

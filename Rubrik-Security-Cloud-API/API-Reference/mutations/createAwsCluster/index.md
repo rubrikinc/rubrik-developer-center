@@ -4,9 +4,9 @@ Create a Rubrik Cloud Cluster on AWS.
 
 ## Arguments
 
-| Argument           | Type                                                                                                                                       | Description                         |
-| ------------------ | ------------------------------------------------------------------------------------------------------------------------------------------ | ----------------------------------- |
-| input *(required)* | [CreateAwsClusterInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/CreateAwsClusterInput/index.md)! | CreateAwsClusterArg params for Aws. |
+| Argument           | Type                                                                                                                                       | Description                           |
+| ------------------ | ------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------- |
+| input *(required)* | [CreateAwsClusterInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/CreateAwsClusterInput/index.md)! | CreateAwsClusterInput params for AWS. |
 
 ## Returns
 

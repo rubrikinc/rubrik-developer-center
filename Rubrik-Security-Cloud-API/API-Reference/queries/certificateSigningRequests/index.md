@@ -33,6 +33,8 @@ query {
       csrId
       email
       hostnames
+      keyStrength
+      keyType
       name
       organization
       organizationUnit

@@ -22,6 +22,7 @@ Authorized operations on an object.
 | ALLOW_OWN_SUPPORT_USER_SESSIONS           | Allow Rubrik Support to impersonate himself/herself.                                  |
 | ALLOW_SUPPORT_USER_SESSIONS               | Allow Rubrik Support to impersonate any user.                                         |
 | APPROVE_TPR_REQUEST                       | Approve TPR request.                                                                  |
+| ASSIGN_COPY_SCHEDULES                     | Assign NAS shares to NAS Cloud Direct copy schedules.                                 |
 | ASSIGN_KMS_KEY_VAULT                      | Assign KMS Key Vault to data locations.                                               |
 | ASSIGN_MIP_LABELS                         | Assign Microsoft Information Protection(MIP) labels.                                  |
 | ASSIGN_ROLE                               | Assign Role.                                                                          |
@@ -37,6 +38,7 @@ Authorized operations on an object.
 | CONFIGURE_DB_LOG_REPORT_PROPERTIES        | Configure the database log reporting properties for a cluster.                        |
 | CREATE_CLOUD_NATIVE_APPLICATION           | Create a cloud native application.                                                    |
 | CREATE_CROSS_ACCOUNT_PAIR                 | Create cross-account pair.                                                            |
+| CREATE_FAILOVER_GROUP                     | Create failover groups.                                                               |
 | CREATE_REPORT                             | Create reports.                                                                       |
 | CREATE_SLA                                | Create SLA Domains.                                                                   |
 | CREATE_THREAT_HUNT                        | Create threat hunt.                                                                   |
@@ -100,6 +102,7 @@ Authorized operations on an object.
 | MANAGE_CLASSIFICATION_SETTINGS            | Manage classification banner and login settings.                                      |
 | MANAGE_CLUSTER_DISKS                      | Set up or remove disks on a cluster.                                                  |
 | MANAGE_CLUSTER_SETTINGS                   | Edit cluster settings.                                                                |
+| MANAGE_COPY_SCHEDULES                     | Create, update, and delete NAS Cloud Direct copy schedules.                           |
 | MANAGE_CORS_SETTINGS                      | Manage CORS settings.                                                                 |
 | MANAGE_CREDENTIALS                        | Manage Credential.                                                                    |
 | MANAGE_CROSS_ACCOUNT_PAIR                 | Manage cross-account pair.                                                            |
@@ -107,9 +110,11 @@ Authorized operations on an object.
 | MANAGE_DATA_SOURCE                        | Manage data source.                                                                   |
 | MANAGE_DL_EMAIL_SETTINGS                  | Manage distribution list email settings.                                              |
 | MANAGE_DSPM_INTEGRATIONS                  | Manage security integrations.                                                         |
+| MANAGE_FAILOVER_GROUP                     | Manage failover groups.                                                               |
 | MANAGE_GOOGLE_SECOPS_INTEGRATION          | Manage Google SecOps integrations.                                                    |
 | MANAGE_GPS_TO_RSC_UPGRADE                 | Manage GPS to RSC upgrade.                                                            |
 | MANAGE_GUEST_OS_CREDENTIAL                | Manage Guest OS credentials.                                                          |
+| MANAGE_HIGH_IMPACT_CHANGE_FEATURES        | Enable or disable High Impact Change features for the account.                        |
 | MANAGE_IDENTITY_RESILIENCY                | Manage identity resiliency.                                                           |
 | MANAGE_KMS_KEY_VAULT                      | Manage KMS Key Vault settings.                                                        |
 | MANAGE_LEGAL_HOLD                         | Place and remove legal hold.                                                          |
@@ -127,6 +132,7 @@ Authorized operations on an object.
 | MANAGE_RECOVERY_PLAN                      | Manage Recovery Plans within Orchestrated Recovery.                                   |
 | MANAGE_ROLE                               | Manage Role.                                                                          |
 | MANAGE_ROLLING_UPGRADES                   | Manage rolling upgrades on account level.                                             |
+| MANAGE_RSCP_CLUSTER_SETTINGS              | Manage RSC-P cluster settings.                                                        |
 | MANAGE_RUBY                               | Manage Ruby (LLM) settings, including enablement.                                     |
 | MANAGE_SECURITY_POLICIES                  | Manage security policies.                                                             |
 | MANAGE_SECURITY_POLICY                    | Manage Security Policy.                                                               |
@@ -137,6 +143,7 @@ Authorized operations on an object.
 | MANAGE_SLA                                | Manage SLA Domains.                                                                   |
 | MANAGE_SMB_DOMAIN                         | The operation to manage the SMB domain.                                               |
 | MANAGE_SNMP                               | Manage SNMP configuration.                                                            |
+| MANAGE_SPLUNK_INTEGRATION                 | Manage Splunk integrations.                                                           |
 | MANAGE_STORAGE_ENCRYPTION                 | Manage storage encryption settings.                                                   |
 | MANAGE_SUPPORT_BUNDLE                     | Manage support bundle.                                                                |
 | MANAGE_SUPPORT_TUNNEL                     | Manage support tunnel.                                                                |
@@ -181,6 +188,7 @@ Authorized operations on an object.
 | UPDATE_ACCOUNT_OWNERSHIP                  | Upgrade account ownership.                                                            |
 | UPGRADE_CLUSTER                           | Upgrade clusters.                                                                     |
 | UPLOAD_SNAPSHOT_ON_DEMAND                 | Upload a snapshot to an archival location on demand.                                  |
+| USE_AS_COPY_TARGET                        | Use a NAS share or cloud bucket as a NAS Cloud Direct copy destination.               |
 | USE_AS_REPLICATION_TARGET                 | Use the Rubrik cluster as a replication target.                                       |
 | USE_OAUTH_APPLICATIONS                    | Authorize and use selected applications.                                              |
 | VIEW_ACCESS                               | View user access.                                                                     |
@@ -204,6 +212,7 @@ Authorized operations on an object.
 | VIEW_CLUSTER                              | View clusters.                                                                        |
 | VIEW_CLUSTER_LICENSES                     | View cluster licenses.                                                                |
 | VIEW_CLUSTER_REFERENCE                    | View cluster reference (name, type, status) for pickers and selectors.                |
+| VIEW_COPY_SCHEDULES                       | View NAS Cloud Direct copy schedules.                                                 |
 | VIEW_CORS_SETTINGS                        | View CORS settings.                                                                   |
 | VIEW_CROSS_ACCOUNT_PAIR                   | View cross-account pair.                                                              |
 | VIEW_DASHBOARD                            | View dashboard.                                                                       |
@@ -216,6 +225,7 @@ Authorized operations on an object.
 | VIEW_DL_EMAIL_SETTINGS                    | View distribution list email settings.                                                |
 | VIEW_DSPM_INTEGRATIONS                    | View security integrations.                                                           |
 | VIEW_EVENT_CLUSTER_SETTING                | View event cluster settings.                                                          |
+| VIEW_FAILOVER_GROUP                       | View failover groups.                                                                 |
 | VIEW_GCP_CLOUD_ACCOUNT                    | View GCP account.                                                                     |
 | VIEW_GOOGLE_SECOPS_INTEGRATION            | View Google SecOps integrations.                                                      |
 | VIEW_GUEST_OS_CREDENTIAL                  | View Guest OS credentials.                                                            |
@@ -236,6 +246,7 @@ Authorized operations on an object.
 | VIEW_REPLICATION_SETTINGS                 | View replication settings.                                                            |
 | VIEW_REPORT                               | View reports.                                                                         |
 | VIEW_ROLE                                 | View Role.                                                                            |
+| VIEW_RSCP_CLUSTER                         | View RSC-P cluster.                                                                   |
 | VIEW_RUBY_INSIGHTS                        | View Ruby Insights use case.                                                          |
 | VIEW_SECURITY_POLICY                      | View Security Policy.                                                                 |
 | VIEW_SECURITY_SETTINGS                    | View security settings.                                                               |
@@ -245,6 +256,7 @@ Authorized operations on an object.
 | VIEW_SLA                                  | View SLA Domain.                                                                      |
 | VIEW_SMB_DOMAIN                           | The operation to view the SMB domain.                                                 |
 | VIEW_SNMP                                 | View SNMP configuration.                                                              |
+| VIEW_SPLUNK_INTEGRATION                   | View Splunk integrations.                                                             |
 | VIEW_STORAGE_SETTINGS                     | View cloud, NoSQL, and Rubrik Cloud Vault archival locations.                         |
 | VIEW_SUPPORT_BUNDLE                       | Download support bundle.                                                              |
 | VIEW_SUPPORT_USER_SESSIONS                | View Rubrik Support user sessions.                                                    |

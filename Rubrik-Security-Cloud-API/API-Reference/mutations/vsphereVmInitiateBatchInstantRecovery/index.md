@@ -1,6 +1,6 @@
 # vsphereVmInitiateBatchInstantRecovery
 
-Initiate a mass instant recovery for a group of VMs.
+Initiate a mass instant recovery for a group of virtual machines.
 
 ## Arguments
 

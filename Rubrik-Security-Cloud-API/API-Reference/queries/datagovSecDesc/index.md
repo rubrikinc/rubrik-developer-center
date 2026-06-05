@@ -6,8 +6,8 @@ Returns permissions associated with a path.
 
 | Argument                  | Type                                                                                                                                          | Description                                        |
 | ------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------- |
-| snappableFid *(required)* | String!                                                                                                                                       |                                                    |
-| snapshotFid *(required)*  | String!                                                                                                                                       |                                                    |
+| snappableFid *(required)* | String!                                                                                                                                       | FID of the workload to query.                      |
+| snapshotFid *(required)*  | String!                                                                                                                                       | Snapshot FID to query permissions in.              |
 | stdPath *(required)*      | String!                                                                                                                                       | The standard path of the directory to browse.      |
 | skipResolveSids           | Boolean                                                                                                                                       | Skip converting SIDs in response to friendly names |
 | filters                   | [SddlRequestFiltersInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/SddlRequestFiltersInput/index.md) | Filter for resolving security descriptor.          |

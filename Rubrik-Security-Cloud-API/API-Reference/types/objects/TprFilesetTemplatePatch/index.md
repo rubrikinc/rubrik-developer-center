@@ -17,6 +17,8 @@ Fileset template patch.
 | preBackupScript                                     | String                                                                                                                             | Script to run before backup of this fileset starts.                             |
 | shouldOverrideClusterWideBlocklistedFilesystemPaths | Boolean                                                                                                                            | Specifies whether to override the cluster-wide blocklisted filesystem paths.    |
 | shouldRetryPrescriptIfBackupFails                   | Boolean                                                                                                                            | Specifies whether to retry the pre-backup script if the backup fails.           |
+| templateAllowlistFilesystemPaths                    | String                                                                                                                             |                                                                                 |
+| templateBlocklistFilesystemTypes                    | String                                                                                                                             |                                                                                 |
 | templateBlocklistedFilesystemPaths                  | String                                                                                                                             | Comma-separated list of blocklisted filesystem paths specific to this template. |
 
 ## Used By

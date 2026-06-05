@@ -28,6 +28,7 @@ query {
           "id": "example-string",
           "isHealthy": true,
           "name": "example-string",
+          "shouldScanAllFiles": true,
           "threatMonitoringEnabled": true
         }
       ],
@@ -37,6 +38,7 @@ query {
           "dataThreatAnalyticsEnabled": true,
           "id": "example-string",
           "isHealthy": true,
+          "shouldScanAllFiles": true,
           "threatMonitoringEnabled": true
         }
       ]

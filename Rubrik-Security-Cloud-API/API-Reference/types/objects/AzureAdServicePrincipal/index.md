@@ -18,4 +18,5 @@ Entra ID service principal.
 **Referenced by**
 
 - [AzureAdObjects.azureAdServicePrincipal](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AzureAdObjects/index.md)
+- [AzureAdPimActivePrincipalObject.azureAdServicePrincipal](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AzureAdPimActivePrincipalObject/index.md)
 - [PrincipalObject.azureAdServicePrincipal](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/PrincipalObject/index.md)

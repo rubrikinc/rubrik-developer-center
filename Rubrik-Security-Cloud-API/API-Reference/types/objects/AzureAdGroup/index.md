@@ -20,4 +20,6 @@ Entra ID group.
 **Referenced by**
 
 - [AzureAdObjects.azureAdGroup](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AzureAdObjects/index.md)
+- [AzureAdPimActivePrincipalObject.azureAdGroup](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AzureAdPimActivePrincipalObject/index.md)
+- [AzureAdPimEligibilityPrincipalObject.azureAdGroup](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AzureAdPimEligibilityPrincipalObject/index.md)
 - [PrincipalObject.azureAdGroup](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/PrincipalObject/index.md)

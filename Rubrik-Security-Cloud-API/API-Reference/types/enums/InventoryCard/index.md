@@ -26,8 +26,10 @@ Inventory Card options that the user can select as a workload.
 | EXCHANGE                       | Inventory Card is Exchange.                       |
 | FUSION_COMPUTE                 | Inventory Card is FusionCompute.                  |
 | GCP                            | Inventory Card is GCP.                            |
+| GCP_BIGQUERY                   | Inventory card is GCP BigQuery.                   |
 | GCP_CLOUD_SQL                  | Inventory Card is GCP Cloud SQL.                  |
 | GITHUB                         | Inventory card is GitHub.                         |
+| GLUE_ICEBERG                   | Inventory card is AWS Glue Iceberg.               |
 | GOOGLE_WORKSPACE               | Inventory Card is Google Workspace.               |
 | HYPERV                         | Inventory Card is HyperV.                         |
 | HYPERV_VMS_CDM                 | Inventory Card is HyperV CDM.                     |
@@ -56,6 +58,7 @@ Inventory Card options that the user can select as a workload.
 | ORACLE_DBS_CDM                 | Inventory Card is Oracle DBs.                     |
 | POSTGRESQL                     | Inventory Card is PostgreSQL.                     |
 | PROXMOX                        | Inventory card is Proxmox.                        |
+| PURE_STORAGE                   | Inventory Card is Pure Storage.                   |
 | SALESFORCE                     | Inventory card is Salesforce.                     |
 | SAP_HANA                       | Inventory Card is Sap Hana.                       |
 | SNAPMIRROR                     | Inventory Card is Snapmirror.                     |

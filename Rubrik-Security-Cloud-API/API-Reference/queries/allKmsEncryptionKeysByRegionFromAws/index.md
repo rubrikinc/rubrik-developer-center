@@ -4,10 +4,11 @@ List of encryption keys in the specified region on the specified AWS Native acco
 
 ## Arguments
 
-| Argument                        | Type                                                                                                                          | Description                |
-| ------------------------------- | ----------------------------------------------------------------------------------------------------------------------------- | -------------------------- |
-| awsAccountRubrikId *(required)* | [UUID](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/UUID/index.md)!                     | Rubrik ID for AWS account. |
-| region *(required)*             | [AwsNativeRegion](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/AwsNativeRegion/index.md)! | Region in AWS.             |
+| Argument                        | Type                                                                                                                                 | Description                                                                                      |
+| ------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------ |
+| awsAccountRubrikId *(required)* | [UUID](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/UUID/index.md)!                            | Rubrik ID for AWS account.                                                                       |
+| region *(required)*             | [AwsNativeRegion](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/AwsNativeRegion/index.md)!        | Region in AWS.                                                                                   |
+| feature                         | [CloudAccountFeature](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/CloudAccountFeature/index.md) | Cloud account feature to filter encryption keys for accounts that support per-feature IAM roles. |
 
 ## Returns
 

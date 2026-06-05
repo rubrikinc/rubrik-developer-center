@@ -16,7 +16,6 @@ GCP native project details.
 
 **Referenced by**
 
-- [GcpAlloyDbCluster.gcpNativeProjectDetails](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/GcpAlloyDbCluster/index.md)
 - [GcpAlloyDbCluster.gcpProjectDetails](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/GcpAlloyDbCluster/index.md)
 - [GcpCloudSqlInstance.gcpNativeProjectDetails](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/GcpCloudSqlInstance/index.md)
 - [GcpCloudSqlInstance.gcpProjectDetails](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/GcpCloudSqlInstance/index.md)

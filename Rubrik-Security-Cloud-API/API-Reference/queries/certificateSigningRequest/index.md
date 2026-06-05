@@ -26,6 +26,8 @@ query CertificateSigningRequest($input: GetCsrInput!) {
     csrId
     email
     hostnames
+    keyStrength
+    keyType
     name
     organization
     organizationUnit

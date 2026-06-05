@@ -19,6 +19,7 @@ Represents audit types.
 | DOWNLOAD                        | Download type.                                                                                              |
 | ENCRYPTION_MANAGEMENT_OPERATION | Encryption Management event type.                                                                           |
 | FAILOVER                        | Failover type.                                                                                              |
+| FEATURE_FLAG_TOGGLE             | Feature flag toggle audit type.                                                                             |
 | FILE_DOWNLOAD                   | File download audit type.                                                                                   |
 | IDENTITY_ACTIVITY               | Identity activity event type.                                                                               |
 | IDENTITY_ALERT                  | Identity alerts type.                                                                                       |
@@ -39,4 +40,5 @@ Represents audit types.
 | SYNC                            | Sync type.                                                                                                  |
 | THREAT_FEED                     | Threat feed event type.                                                                                     |
 | THREAT_HUNT                     | Threat hunt type.                                                                                           |
+| THREAT_MONITORING               | Threat monitoring event/audit type.                                                                         |
 | TPR                             | TPR type.                                                                                                   |

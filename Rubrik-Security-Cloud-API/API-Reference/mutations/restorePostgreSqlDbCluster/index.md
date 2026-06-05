@@ -56,7 +56,12 @@ mutation RestorePostgreSqlDbCluster($input: RestorePostgreSqlDbClusterInput!) {
         "progress": 0.0,
         "result": "example-string",
         "startTime": "2024-01-01T00:00:00.000Z"
-      }
+      },
+      "perObjectAsyncRequestStatuses": [
+        {
+          "id": "example-string"
+        }
+      ]
     }
   }
 }

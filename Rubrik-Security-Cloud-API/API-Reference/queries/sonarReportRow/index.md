@@ -1,19 +1,19 @@
 # sonarReportRow
 
-Returns rows for SonarReport table.
+Endpoints for DC Reports Returns rows for SonarReport table.
 
 ## Arguments
 
 | Argument  | Type                                                                                                                                     | Description                                                              |
 | --------- | ---------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------ |
-| sortBy    | [DiscoveryReportSortBy](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/DiscoveryReportSortBy/index.md) |                                                                          |
-| sortOrder | [SortOrder](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/SortOrder/index.md)                         | Sorts the order of results.                                              |
-| filter    | [String!]                                                                                                                                |                                                                          |
-| endTime   | String                                                                                                                                   |                                                                          |
 | first     | Int                                                                                                                                      | Returns the first n elements from the list.                              |
 | after     | String                                                                                                                                   | Returns the elements in the list that occur after the specified cursor.  |
 | last      | Int                                                                                                                                      | Returns the last n elements from the list.                               |
 | before    | String                                                                                                                                   | Returns the elements in the list that occur before the specified cursor. |
+| sortBy    | [DiscoveryReportSortBy](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/DiscoveryReportSortBy/index.md) | Field to sort the report rows by.                                        |
+| sortOrder | [SortOrder](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/SortOrder/index.md)                         | Sorts the order of results.                                              |
+| filter    | [String!]                                                                                                                                | Optional list of policy IDs to filter by.                                |
+| endTime   | String                                                                                                                                   | Timestamp in RFC3339 (UTC) to filter rows by.                            |
 
 ## Returns
 

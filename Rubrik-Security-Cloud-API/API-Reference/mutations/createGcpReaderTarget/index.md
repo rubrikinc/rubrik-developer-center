@@ -42,7 +42,6 @@ mutation CreateGcpReaderTarget($input: CreateGcpReaderTargetInput!) {
     "bucket": "example-string",
     "bypassProxy": true,
     "clusterUuid": "00000000-0000-0000-0000-000000000000",
-    "encryptionPassword": "example-string",
     "name": "example-string",
     "readerRetrievalMethod": "OBJECT_LIST_AND_DETAILS",
     "region": "AFRICA_SOUTH1",

@@ -43,6 +43,7 @@ Active Directory Domain.
 | slaPauseStatus                    | Boolean!                                                                                                                                                                                          | Pause status of the effective SLA Domain of the hierarchy object.                                                                                |
 | smbDomain                         | [SmbDomain](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/SmbDomain/index.md)                                                                                | SMB Domain.                                                                                                                                      |
 | snapshotDistribution              | [SnapshotDistribution](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/SnapshotDistribution/index.md)!                                                         | Distribution of the snapshots of the hierarchy object.                                                                                           |
+| unregisteredDomainControllers     | \[[UnregisteredDomainControllerInfo](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/UnregisteredDomainControllerInfo/index.md)!\]!                            | List of auto-discovered domain controllers that are not registered with Rubrik. Empty if there are none.                                         |
 
 ## Field Arguments
 

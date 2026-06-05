@@ -4,9 +4,9 @@ Create a Rubrik Cloud Cluster on Azure.
 
 ## Arguments
 
-| Argument           | Type                                                                                                                                           | Description                             |
-| ------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------- |
-| input *(required)* | [CreateAzureClusterInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/CreateAzureClusterInput/index.md)! | CreateAzureClusterArg params for Azure. |
+| Argument           | Type                                                                                                                                           | Description                               |
+| ------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------- |
+| input *(required)* | [CreateAzureClusterInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/CreateAzureClusterInput/index.md)! | CreateAzureClusterInput params for Azure. |
 
 ## Returns
 

@@ -35,6 +35,7 @@ query ClusterEncryptionInfo($encryptionStatusFilter: [ClusterEncryptionStatusFil
     nodes {
       canUserManageCluster
       cipher
+      clusterProductType
       encryptionType
       isConnected
       isEncrypted
@@ -80,10 +81,10 @@ query ClusterEncryptionInfo($encryptionStatusFilter: [ClusterEncryptionStatusFil
           {
             "canUserManageCluster": true,
             "cipher": "example-string",
+            "clusterProductType": "CDM",
             "encryptionType": "ENCRYPTION_TYPE_UNSPECIFIED",
             "isConnected": true,
-            "isEncrypted": true,
-            "isOnCloud": true
+            "isEncrypted": true
           }
         ]
       ],

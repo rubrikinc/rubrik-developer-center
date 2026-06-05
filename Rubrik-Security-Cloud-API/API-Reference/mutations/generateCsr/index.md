@@ -4,18 +4,19 @@ Generate CSR.
 
 ## Arguments
 
-| Argument               | Type       | Description                     |
-| ---------------------- | ---------- | ------------------------------- |
-| name *(required)*      | String!    | Name for your CSR.              |
-| hostnames *(required)* | [String!]! | Hostnames for your CSR.         |
-| organization           | String     | Organization for your CSR.      |
-| organizationUnit       | String     | Organization unit for your CSR. |
-| country                | String     | Country for your CSR.           |
-| state                  | String     | State for your CSR.             |
-| city                   | String     | City for your CSR.              |
-| email                  | String     | Email for your CSR.             |
-| surname                | String     | Surname for your CSR.           |
-| userId                 | String     | User ID for your CSR.           |
+| Argument               | Type                                                                                                                                            | Description                                                    |
+| ---------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------- |
+| name *(required)*      | String!                                                                                                                                         | Name for your CSR.                                             |
+| hostnames *(required)* | [String!]!                                                                                                                                      | Hostnames for your CSR.                                        |
+| organization           | String                                                                                                                                          | Organization for your CSR.                                     |
+| organizationUnit       | String                                                                                                                                          | Organization unit for your CSR.                                |
+| country                | String                                                                                                                                          | Country for your CSR.                                          |
+| state                  | String                                                                                                                                          | State for your CSR.                                            |
+| city                   | String                                                                                                                                          | City for your CSR.                                             |
+| email                  | String                                                                                                                                          | Email for your CSR.                                            |
+| surname                | String                                                                                                                                          | Surname for your CSR.                                          |
+| userId                 | String                                                                                                                                          | User ID for your CSR.                                          |
+| keyGenerationParams    | [KeyGenerationParamsInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/KeyGenerationParamsInput/index.md) | Key generation parameters for the CSR (key type and strength). |
 
 ## Returns
 
@@ -38,6 +39,8 @@ mutation GenerateCsr($name: String!, $hostnames: [String!]!) {
     csrId
     email
     hostnames
+    keyStrength
+    keyType
     name
     organization
     organizationUnit

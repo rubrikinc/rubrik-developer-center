@@ -1,0 +1,14 @@
+# UpdateGitHubCloudAccountInput
+
+Request message for UpdateGitHubCloudAccount.
+
+## Fields
+
+| Field                    | Type                                                                                                                             | Description                                                                                                                                                                                         |
+| ------------------------ | -------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| archivalGroupId          | [UUID](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/UUID/index.md)                         | Archival group ID for storing GitHub backups. Retrieve the ID by calling the allTargetMappings GraphQL query and using the id field of the desired TargetMapping.                                   |
+| exocomputeCloudAccountId | [UUID](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/UUID/index.md)                         | UUID of the cloud account configured for exocompute. Retrieve the ID by calling the allCloudAccountExocomputeMappings GraphQL query and using the exocomputeCloudAccountId field from the response. |
+| exocomputeRegion         | String                                                                                                                           | Region for Rubrik-hosted exocompute (e.g., "eastus", "westus2"). Required when host_type is RUBRIK_HOST.                                                                                            |
+| hostType                 | [DevopsHostType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/DevopsHostType/index.md)       | Type of exocompute host --CUSTOMER_HOST or RUBRIK_HOST.                                                                                                                                             |
+| organizationId           | [UUID](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/UUID/index.md)!                        | RSC-assigned UUID of the GitHub organization to update.                                                                                                                                             |
+| storageType              | [DevOpsStorageType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/DevOpsStorageType/index.md) | Type of storage --BYOS (Bring Your Own Storage) or RCV (Rubrik Cloud Vault).                                                                                                                        |

@@ -1,6 +1,6 @@
 # ActivityEntry
 
-This struct represents an activity.
+This struct represents an activity. IMPORTANT: When adding new fields here, consider whether they should also appear in webhook payloads. If so, update IdentityActivityWebhookMessage in activityauditor/proto/identity_activity_webhook_message.proto as well.
 
 ## Fields
 
@@ -10,6 +10,7 @@ This struct represents an activity.
 | activityProvider         | [EventProvider](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/EventProvider/index.md)!                                            | The provider of the activity.                                                                                                     |
 | activityType             | [LambdaEventType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/LambdaEventType/index.md)!                                        | The type of activity.                                                                                                             |
 | actorEntity              | [ActivityAuditorEntity](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/ActivityAuditorEntity/index.md)                           | The entity that performed the action (e.g., the user who made a change).                                                          |
+| actorIpAddress           | String!                                                                                                                                                              | The IP address of the actor who initiated the event (IPv4 or IPv6). Empty for events without IP information.                      |
 | actorState               | [ActorIdentificationState](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/ActorIdentificationState/index.md)!                      | The identification state of the actor.                                                                                            |
 | additionalTargetEntities | \[[ActivityAuditorEntity](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/ActivityAuditorEntity/index.md)!\]!                     | Additional entities involved in the activity. For example, when a user is added to a group, the group is an additional target.    |
 | category                 | [ActivityCategory](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/ActivityCategory/index.md)!                                      | The category of the activity.                                                                                                     |

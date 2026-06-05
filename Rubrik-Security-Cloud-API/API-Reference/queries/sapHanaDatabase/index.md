@@ -33,6 +33,7 @@ query SapHanaDatabase($fid: UUID!) {
     onDemandSnapshotCount
     primaryClusterUuid
     protectionDate
+    rbaRole
     replicatedObjectCount
     slaAssignment
     slaPauseStatus

@@ -36,8 +36,10 @@ Regions for Rubrik Cloud Storage Archival Location.
 | GERMANY_NORTH            | Germany North or Berlin.                    |
 | GERMANY_WEST_CENTRAL     | Germany West Central or Frankfurt.          |
 | GOV_US_ARIZONA           | Gov US Arizona or US Gov Arizona.           |
+| GOV_US_EAST_1            | Gov US East 1 or US Gov East 1.             |
 | GOV_US_TEXAS             | Gov US Texas or US Gov Texas.               |
 | GOV_US_VIRGINIA          | Gov US Virginia or US Gov Virginia.         |
+| GOV_US_WEST_1            | Gov US West 1 or US Gov West 1.             |
 | INDIA_CENTRAL            | India Central or Pune.                      |
 | INDIA_SOUTH              | India South or Chennai.                     |
 | INDIA_SOUTH_2            | Delhi (India South 2).                      |

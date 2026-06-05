@@ -28,6 +28,7 @@ query Cluster($clusterUuid: UUID!) {
     estimatedRunway
     id
     isAirGapped
+    isAssignedByParentAccount
     isClusterRemovalTprEnabled
     isHealthy
     isTprEnabled

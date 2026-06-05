@@ -18,4 +18,6 @@ Entra ID user.
 **Referenced by**
 
 - [AzureAdObjects.azureAdUser](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AzureAdObjects/index.md)
+- [AzureAdPimActivePrincipalObject.azureAdUser](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AzureAdPimActivePrincipalObject/index.md)
+- [AzureAdPimEligibilityPrincipalObject.azureAdUser](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AzureAdPimEligibilityPrincipalObject/index.md)
 - [PrincipalObject.azureAdUser](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/PrincipalObject/index.md)

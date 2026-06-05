@@ -15,6 +15,7 @@ Supported in v5.0+
 
 **Queries**
 
+- [query: fusionComputeMissedSnapshots](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/fusionComputeMissedSnapshots/index.md)
 - [query: getMissedMongoCollectionSetSnapshots](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/getMissedMongoCollectionSetSnapshots/index.md)
 - [query: getMissedOpsManagerManagedMongoSourceSnapshots](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/getMissedOpsManagerManagedMongoSourceSnapshots/index.md)
 - [query: mssqlDatabaseMissedSnapshots](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/mssqlDatabaseMissedSnapshots/index.md)

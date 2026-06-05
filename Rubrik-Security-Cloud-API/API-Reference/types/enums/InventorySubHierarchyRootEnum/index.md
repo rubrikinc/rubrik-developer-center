@@ -46,6 +46,7 @@ Inventory workloads that are supported on Rubrik.
 | OPENSTACK_ROOT                                                    | OpenStack root.                             |
 | ORACLE_ROOT                                                       | Oracle root.                                |
 | PHYSICAL_HOST_ROOT *(deprecated: This root is no longer in use.)* | Physical Host root.                         |
+| PING_FEDERATE_ROOT                                                | Ping Federate root.                         |
 | POSTGRES_ROOT                                                     | Postgres root.                              |
 | PROXMOX_ROOT                                                      | Proxmox root.                               |
 | PURE_STORAGE_ROOT                                                 | Pure Storage root.                          |

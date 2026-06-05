@@ -37,10 +37,10 @@
 - [FilesetTemplate.pendingObjectDeletionStatus](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/FilesetTemplate/index.md)
 - FilesetTemplateDescendantType.pendingObjectDeletionStatus
 - FilesetTemplatePhysicalChildType.pendingObjectDeletionStatus
-- [HostFailoverCluster.pendingObjectDeletionStatus](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/HostFailoverCluster/index.md)
-- HostFailoverClusterDescendantType.pendingObjectDeletionStatus
-- HostFailoverClusterPhysicalChildType.pendingObjectDeletionStatus
-- [HostShare.pendingObjectDeletionStatus](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/HostShare/index.md)
-- HostShareDescendantType.pendingObjectDeletionStatus
-- HostSharePhysicalChildType.pendingObjectDeletionStatus
-- *…and 159 more*
+- [FusionComputeCluster.pendingObjectDeletionStatus](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/FusionComputeCluster/index.md)
+- FusionComputeClusterDescendant.pendingObjectDeletionStatus
+- FusionComputeClusterPhysicalChildType.pendingObjectDeletionStatus
+- [FusionComputeDatastore.pendingObjectDeletionStatus](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/FusionComputeDatastore/index.md)
+- [FusionComputeHost.pendingObjectDeletionStatus](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/FusionComputeHost/index.md)
+- FusionComputeHostDescendant.pendingObjectDeletionStatus
+- *…and 174 more*

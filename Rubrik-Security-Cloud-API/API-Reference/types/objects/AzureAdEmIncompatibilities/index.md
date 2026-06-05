@@ -4,10 +4,11 @@ Entitlement Management incompatible object.
 
 ## Fields
 
-| Field       | Type                                                                                                                                            | Description                              |
-| ----------- | ----------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------- |
-| displayName | String!                                                                                                                                         | Display name of the incompatible object. |
-| objectType  | [EmIncompatibleObjectType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/EmIncompatibleObjectType/index.md)! | Type of incompatible object.             |
+| Field       | Type                                                                                                                                            | Description                                   |
+| ----------- | ----------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------- |
+| displayName | String!                                                                                                                                         | Display name of the incompatible object.      |
+| objectType  | [EmIncompatibleObjectType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/EmIncompatibleObjectType/index.md)! | Type of incompatible object.                  |
+| targetId    | String!                                                                                                                                         | Identifier of the incompatible target object. |
 
 ## Used By
 

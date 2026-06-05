@@ -10,7 +10,7 @@ Role template.
 | explicitlyAssignedPermissions | \[[Permission](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/Permission/index.md)!\]! | Role permissions that are explicitly assigned to the template. |
 | id                            | String!                                                                                                                    | Role template ID.                                              |
 | name                          | String!                                                                                                                    | Role template name.                                            |
-| permissions                   | \[[Permission](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/Permission/index.md)!\]! |                                                                |
+| permissions                   | \[[Permission](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/Permission/index.md)!\]! | Role permissions.                                              |
 
 ## Used By
 

@@ -102,8 +102,8 @@
 - [ExchangeDatabase.newestSnapshot](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/ExchangeDatabase/index.md)
 - [ExchangeDatabase.oldestSnapshot](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/ExchangeDatabase/index.md)
 - [ExchangeLiveMount.sourceSnapshot](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/ExchangeLiveMount/index.md)
-- [GetAnomalyDetailsReply.previousSnapshot](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/GetAnomalyDetailsReply/index.md)
-- [GetAnomalyDetailsReply.snapshot](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/GetAnomalyDetailsReply/index.md)
-- [HierarchySnappableFileVersion.snapshot](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/HierarchySnappableFileVersion/index.md)
-- [HyperVLiveMount.sourceSnapshot](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/HyperVLiveMount/index.md)
-- *…and 114 more*
+- [FusionComputeVirtualMachine.newestArchivedSnapshot](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/FusionComputeVirtualMachine/index.md)
+- [FusionComputeVirtualMachine.newestIndexedSnapshot](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/FusionComputeVirtualMachine/index.md)
+- [FusionComputeVirtualMachine.newestReplicatedSnapshot](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/FusionComputeVirtualMachine/index.md)
+- [FusionComputeVirtualMachine.newestSnapshot](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/FusionComputeVirtualMachine/index.md)
+- *…and 119 more*

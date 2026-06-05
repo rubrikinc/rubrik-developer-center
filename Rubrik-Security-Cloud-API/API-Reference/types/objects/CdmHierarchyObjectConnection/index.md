@@ -15,6 +15,8 @@ Paginated list of CdmHierarchyObject objects with additional pagination informat
 
 **Queries**
 
+- [query: fusionComputeClustersAndHosts](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/fusionComputeClustersAndHosts/index.md)
+- [query: fusionComputeRecoverableClustersAndHosts](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/fusionComputeRecoverableClustersAndHosts/index.md)
 - [query: nasTopLevelDescendants](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/nasTopLevelDescendants/index.md)
 - [query: nutanixTopLevelDescendants](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/nutanixTopLevelDescendants/index.md)
 - [query: vSphereRootRecoveryHierarchy](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/vSphereRootRecoveryHierarchy/index.md)

@@ -4,11 +4,15 @@ Returns groupBy for SonarReport.
 
 ## Arguments
 
-| Argument                        | Type                                                                                                                                        | Description |
-| ------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- | ----------- |
-| sonarReportGroupBy *(required)* | [DiscoveryReportGroupBy](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/DiscoveryReportGroupBy/index.md)! |             |
-| filter                          | [String!]                                                                                                                                   |             |
-| timeFilter                      | [TimeFilterInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/TimeFilterInput/index.md)               |             |
+| Argument                        | Type                                                                                                                                        | Description                                                              |
+| ------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------ |
+| first                           | Int                                                                                                                                         | Returns the first n elements from the list.                              |
+| after                           | String                                                                                                                                      | Returns the elements in the list that occur after the specified cursor.  |
+| last                            | Int                                                                                                                                         | Returns the last n elements from the list.                               |
+| before                          | String                                                                                                                                      | Returns the elements in the list that occur before the specified cursor. |
+| sonarReportGroupBy *(required)* | [DiscoveryReportGroupBy](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/DiscoveryReportGroupBy/index.md)! | Group-by field for the report.                                           |
+| filter                          | [String!]                                                                                                                                   | Optional list of policy IDs to filter by.                                |
+| timeFilter                      | [TimeFilterInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/TimeFilterInput/index.md)               | Optional time range filter.                                              |
 
 ## Returns
 
@@ -18,7 +22,10 @@ Returns groupBy for SonarReport.
 
 ```graphql
 query SonarReport($sonarReportGroupBy: DiscoveryReportGroupBy!) {
-  sonarReport(sonarReportGroupBy: $sonarReportGroupBy) {
+  sonarReport(
+    sonarReportGroupBy: $sonarReportGroupBy
+    first: 10
+  ) {
     nodes {
       count
       groupByValue

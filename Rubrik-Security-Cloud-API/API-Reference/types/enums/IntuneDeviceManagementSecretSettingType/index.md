@@ -4,25 +4,25 @@ Specifies the type of a secret setting in an Intune device management policy.
 
 ## Values
 
-| Value                                                               | Description                                 |
-| ------------------------------------------------------------------- | ------------------------------------------- |
-| INTUNE_DEVICE_MANAGEMENT_SECRET_SETTING_TYPE_API_KEY                | API key secret setting type.                |
-| INTUNE_DEVICE_MANAGEMENT_SECRET_SETTING_TYPE_BITLOCKER_RECOVERY_KEY | BitLocker recovery key secret setting type. |
-| INTUNE_DEVICE_MANAGEMENT_SECRET_SETTING_TYPE_CERTIFICATE            | Certificate secret setting type.            |
-| INTUNE_DEVICE_MANAGEMENT_SECRET_SETTING_TYPE_CREDENTIAL             | Credential secret setting type.             |
-| INTUNE_DEVICE_MANAGEMENT_SECRET_SETTING_TYPE_CUSTOM_ENCRYPTION_KEY  | Custom encryption key secret setting type.  |
-| INTUNE_DEVICE_MANAGEMENT_SECRET_SETTING_TYPE_EAP_XML                | EAP XML secret setting type.                |
-| INTUNE_DEVICE_MANAGEMENT_SECRET_SETTING_TYPE_LAPS_PASSWORD          | LAPS password secret setting type.          |
-| INTUNE_DEVICE_MANAGEMENT_SECRET_SETTING_TYPE_OMA_URI_VALUE          | OMA-URI value secret setting type.          |
-| INTUNE_DEVICE_MANAGEMENT_SECRET_SETTING_TYPE_PASSWORD               | Password secret setting type.               |
-| INTUNE_DEVICE_MANAGEMENT_SECRET_SETTING_TYPE_PFX_PASSWORD           | PFX password secret setting type.           |
-| INTUNE_DEVICE_MANAGEMENT_SECRET_SETTING_TYPE_PKCS_CERTIFICATE       | PKCS certificate secret setting type.       |
-| INTUNE_DEVICE_MANAGEMENT_SECRET_SETTING_TYPE_PRE_SHARED_KEY         | Pre-shared key secret setting type.         |
-| INTUNE_DEVICE_MANAGEMENT_SECRET_SETTING_TYPE_PROXY_PASSWORD         | Proxy password secret setting type.         |
-| INTUNE_DEVICE_MANAGEMENT_SECRET_SETTING_TYPE_SCEP_CHALLENGE         | SCEP challenge secret setting type.         |
-| INTUNE_DEVICE_MANAGEMENT_SECRET_SETTING_TYPE_SHARED_SECRET          | Shared secret setting type.                 |
-| INTUNE_DEVICE_MANAGEMENT_SECRET_SETTING_TYPE_SMIME_CERTIFICATE      | S/MIME certificate secret setting type.     |
-| INTUNE_DEVICE_MANAGEMENT_SECRET_SETTING_TYPE_TOKEN                  | Token secret setting type.                  |
-| INTUNE_DEVICE_MANAGEMENT_SECRET_SETTING_TYPE_UNKNOWN                | The secret setting type is unknown.         |
-| INTUNE_DEVICE_MANAGEMENT_SECRET_SETTING_TYPE_VPN_SECRET             | VPN secret setting type.                    |
-| INTUNE_DEVICE_MANAGEMENT_SECRET_SETTING_TYPE_WIFI_KEY               | Wi-Fi key secret setting type.              |
+| Value                                                                        | Description                                                      |
+| ---------------------------------------------------------------------------- | ---------------------------------------------------------------- |
+| INTUNE_DEVICE_MANAGEMENT_SECRET_SETTING_TYPE_AIRPLAY_PASSWORD                | AirPlay password.                                                |
+| INTUNE_DEVICE_MANAGEMENT_SECRET_SETTING_TYPE_ATP_OFFBOARDING                 | Microsoft Defender ATP offboarding blob.                         |
+| INTUNE_DEVICE_MANAGEMENT_SECRET_SETTING_TYPE_ATP_ONBOARDING                  | Microsoft Defender ATP onboarding blob.                          |
+| INTUNE_DEVICE_MANAGEMENT_SECRET_SETTING_TYPE_ATP_ONBOARDING_FROM_CONNECTOR   | Microsoft Defender ATP onboarding blob sourced from a connector. |
+| INTUNE_DEVICE_MANAGEMENT_SECRET_SETTING_TYPE_AUTOLOGIN_PASSWORD              | Autologin password.                                              |
+| INTUNE_DEVICE_MANAGEMENT_SECRET_SETTING_TYPE_CALDAV_PASSWORD                 | CalDAV account password.                                         |
+| INTUNE_DEVICE_MANAGEMENT_SECRET_SETTING_TYPE_CARDDAV_PASSWORD                | CardDAV account password.                                        |
+| INTUNE_DEVICE_MANAGEMENT_SECRET_SETTING_TYPE_CELLULAR_APN_PASSWORD           | Cellular APN password.                                           |
+| INTUNE_DEVICE_MANAGEMENT_SECRET_SETTING_TYPE_CELLULAR_ATTACH_APN_PASSWORD    | Cellular attach APN password.                                    |
+| INTUNE_DEVICE_MANAGEMENT_SECRET_SETTING_TYPE_DIRECTORY_SERVICE_PASSWORD      | Directory service bind password.                                 |
+| INTUNE_DEVICE_MANAGEMENT_SECRET_SETTING_TYPE_FILEVAULT_PASSWORD              | FileVault recovery password (macOS).                             |
+| INTUNE_DEVICE_MANAGEMENT_SECRET_SETTING_TYPE_HTTP_PROXY_PASSWORD             | HTTP proxy password.                                             |
+| INTUNE_DEVICE_MANAGEMENT_SECRET_SETTING_TYPE_LDAP_PASSWORD                   | LDAP account password.                                           |
+| INTUNE_DEVICE_MANAGEMENT_SECRET_SETTING_TYPE_NETWORK_PASSWORD                | Network password (Windows Insiders).                             |
+| INTUNE_DEVICE_MANAGEMENT_SECRET_SETTING_TYPE_PROFILE_IDENTIFICATION_PASSWORD | Profile identification password.                                 |
+| INTUNE_DEVICE_MANAGEMENT_SECRET_SETTING_TYPE_PROFILE_REMOVAL_PASSWORD        | Profile removal password.                                        |
+| INTUNE_DEVICE_MANAGEMENT_SECRET_SETTING_TYPE_SUBSCRIBED_CALENDAR_PASSWORD    | Subscribed calendar account password.                            |
+| INTUNE_DEVICE_MANAGEMENT_SECRET_SETTING_TYPE_UNKNOWN                         | The secret setting type is unknown.                              |
+| INTUNE_DEVICE_MANAGEMENT_SECRET_SETTING_TYPE_WEB_CONTENT_FILTER_PASSWORD     | Web content filter password.                                     |
+| INTUNE_DEVICE_MANAGEMENT_SECRET_SETTING_TYPE_XSAN_SHARED_SECRET              | Xsan shared secret.                                              |

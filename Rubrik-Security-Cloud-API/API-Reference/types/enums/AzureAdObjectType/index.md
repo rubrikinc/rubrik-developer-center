@@ -44,6 +44,7 @@ Entra ID object types.
 | ENDPOINT_PRIVILEGE_MANAGEMENT                | Object type is Intune endpoint security endpoint privilege management policy.   |
 | FIREWALL                                     | Object type is Intune endpoint security firewall policy.                        |
 | GROUP                                        | Object type is Entra ID group.                                                  |
+| GROUP_ACTIVE_ASSIGNMENT                      | Object type is PIM group active assignment.                                     |
 | GROUP_ELIGIBLE_ASSIGNMENT                    | Object type is group-eligible assignment.                                       |
 | INTUNE_POLICY_ASSIGNMENT                     | Object type is Intune policy assignment.                                        |
 | INTUNE_ROLE_ASSIGNMENT                       | Object type is Intune role assignment.                                          |

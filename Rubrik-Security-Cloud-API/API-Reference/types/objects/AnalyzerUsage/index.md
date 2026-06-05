@@ -1,15 +1,15 @@
 # AnalyzerUsage
 
-*No description available.*
+Captures the inverse relationship of which policies are using an analyzer.
 
 ## Fields
 
 | Field          | Type                                                                                                                                                         | Description                                                  |
 | -------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------ |
-| analyzer       | [Analyzer](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/Analyzer/index.md)!                                            |                                                              |
+| analyzer       | [Analyzer](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/Analyzer/index.md)!                                            | Analyzer whose policy usages are described by this entry.    |
 | dataTypeHits   | [DataTypeHits](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/DataTypeHits/index.md)                                     | Total sensitive hits in this data type.                      |
 | dataTypeSource | [DataTypeSource](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/DataTypeSource/index.md)!                                  | Represents the source of data type i.e PREDEFINED or CUSTOM. |
-| policies       | \[[ClassificationPolicySummary](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/ClassificationPolicySummary/index.md)!\]! |                                                              |
+| policies       | \[[ClassificationPolicySummary](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/ClassificationPolicySummary/index.md)!\]! | Policies that reference this analyzer.                       |
 
 ## Used By
 

@@ -15,4 +15,5 @@ Paginated list of ArchivalObjectInfo objects. Each page of the results includes 
 
 **Queries**
 
+- [query: allArchivalPerObjectInfo](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/allArchivalPerObjectInfo/index.md)
 - [query: archivalPerObjectInfo](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/archivalPerObjectInfo/index.md)

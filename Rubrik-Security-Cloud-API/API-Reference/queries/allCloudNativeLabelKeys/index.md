@@ -30,7 +30,7 @@ query AllCloudNativeLabelKeys($keySubStr: String!, $limit: Int!, $objectType: Cl
 {
   "keySubStr": "example-string",
   "limit": 0,
-  "objectType": "GCP_CLOUD_SQL_INSTANCE"
+  "objectType": "GCP_BIGQUERY_DATASET"
 }
 ```
 

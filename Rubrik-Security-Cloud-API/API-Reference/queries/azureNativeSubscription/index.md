@@ -21,6 +21,7 @@ query AzureNativeSubscription($azureSubscriptionRubrikId: UUID!) {
     accountConnectionId
     authorizedOperations
     azureCloudType
+    azurePostgresFlexibleServerCount
     azureSqlDatabaseDbCount
     azureSqlManagedInstanceDbCount
     azureStorageAccountCount
@@ -58,9 +59,9 @@ query AzureNativeSubscription($azureSubscriptionRubrikId: UUID!) {
         "MANAGE_DATA_SOURCE"
       ],
       "azureCloudType": "AZURECHINACLOUD",
+      "azurePostgresFlexibleServerCount": 0,
       "azureSqlDatabaseDbCount": 0,
       "azureSqlManagedInstanceDbCount": 0,
-      "azureStorageAccountCount": 0,
       "allOrgs": [
         {
           "allUrls": [

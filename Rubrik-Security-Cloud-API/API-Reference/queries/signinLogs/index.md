@@ -38,6 +38,7 @@ query SigninLogs($timeRange: TimeRangeInput!) {
       eventId
       eventTimestamp
       eventType
+      failureCategory
       ipAddress
       logonType
       mfaStatus
@@ -47,6 +48,7 @@ query SigninLogs($timeRange: TimeRangeInput!) {
       result
       riskLevel
       state
+      tenantId
       userId
       userSid
     }

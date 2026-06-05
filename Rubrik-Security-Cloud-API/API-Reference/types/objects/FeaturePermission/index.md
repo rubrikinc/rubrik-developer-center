@@ -20,3 +20,5 @@ Represents the permissions for a feature.
 **Referenced by**
 
 - [CloudAccountFeaturePermission.featurePermissions](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/CloudAccountFeaturePermission/index.md)
+- [DevOpsCloudAccountListCurrentPermissionsReply.featurePermissions](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/DevOpsCloudAccountListCurrentPermissionsReply/index.md)
+- [DevOpsCloudAccountListLatestPermissionsReply.featurePermissions](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/DevOpsCloudAccountListLatestPermissionsReply/index.md)

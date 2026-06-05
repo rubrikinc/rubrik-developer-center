@@ -1,6 +1,6 @@
 # SetUserLevelTotpEnforcementInput
 
-*No description available.*
+Request to update user-level TOTP enforcement.
 
 ## Fields
 

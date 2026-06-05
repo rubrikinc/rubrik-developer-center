@@ -24,7 +24,6 @@ mutation UpdateCustomAnalyzer($input: CreateCustomAnalyzerInput!) {
     excludePathPattern
     id
     isInactive
-    jsValidationFunction
     keyRegex
     name
     proximityDistance

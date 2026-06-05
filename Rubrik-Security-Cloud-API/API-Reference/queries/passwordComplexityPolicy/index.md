@@ -1,6 +1,6 @@
 # passwordComplexityPolicy
 
-Get the password policy for the current organization.
+Get the password complexity policy for the current organization.
 
 ## Returns
 

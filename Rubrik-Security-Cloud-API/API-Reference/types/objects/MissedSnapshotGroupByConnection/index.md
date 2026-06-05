@@ -19,6 +19,7 @@ Paginated list of MissedSnapshotGroupBy objects. Each page of the results includ
 - CdmHierarchySnappableNew.missedSnapshotGroupByConnection
 - [Db2Database.missedSnapshotGroupByConnection](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/Db2Database/index.md)
 - [ExchangeDatabase.missedSnapshotGroupByConnection](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/ExchangeDatabase/index.md)
+- [FusionComputeVirtualMachine.missedSnapshotGroupByConnection](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/FusionComputeVirtualMachine/index.md)
 - [HyperVVirtualMachine.missedSnapshotGroupByConnection](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/HyperVVirtualMachine/index.md)
 - KosmosSnappableHierarchyObjectType.missedSnapshotGroupByConnection
 - [KubernetesProtectionSet.missedSnapshotGroupByConnection](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/KubernetesProtectionSet/index.md)

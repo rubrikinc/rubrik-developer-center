@@ -27,7 +27,9 @@ query {
       cloudDirectPendingObjectPauseAssignment
       clusterUuid
       exportPath
+      fullSnapshotNamePattern
       id
+      incrementalSnapshotNamePattern
       isArchived
       isHidden
       isNasShareManuallyAdded
@@ -72,7 +74,7 @@ query {
             "cloudDirectPendingObjectPauseAssignment": "NO_PENDING_PAUSE_ASSIGNMENT",
             "clusterUuid": "00000000-0000-0000-0000-000000000000",
             "exportPath": "example-string",
-            "id": "00000000-0000-0000-0000-000000000000"
+            "fullSnapshotNamePattern": "example-string"
           }
         ]
       ],

@@ -14,6 +14,7 @@ Holds the configuration of a single integration. Note that IntegrationConfig can
 | okta               | [OktaIntegrationConfig](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/OktaIntegrationConfig/index.md)                           | The OKTA configuration.                 |
 | pam                | [PamIntegrationConfig](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/PamIntegrationConfig/index.md)                             | The PAM configuration.                  |
 | serviceNowItsm     | [ServiceNowItsmIntegrationConfig](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/ServiceNowItsmIntegrationConfig/index.md)       | The ServiceNow ITSM configuration.      |
+| splunk             | [SplunkIntegrationConfig](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/SplunkIntegrationConfig/index.md)                       | The Splunk configuration.               |
 
 ## Used By
 

@@ -29,7 +29,7 @@ query CheckCloudNativeLabelRuleNameUniqueness($ruleName: String!, $objectType: C
 ```json
 {
   "ruleName": "example-string",
-  "objectType": "GCP_CLOUD_SQL_INSTANCE"
+  "objectType": "GCP_BIGQUERY_DATASET"
 }
 ```
 

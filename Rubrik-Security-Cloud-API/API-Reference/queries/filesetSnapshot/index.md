@@ -1,13 +1,13 @@
 # filesetSnapshot
 
-*No description available.*
+Get information for a fileset snapshot Supported in v5.0+ Retrieve summary information for a fileset snapshot by specifying the snapshot ID.
 
 ## Arguments
 
-| Argument        | Type    | Description                                                                                                                  |
-| --------------- | ------- | ---------------------------------------------------------------------------------------------------------------------------- |
-| id *(required)* | String! | ID of snapshot.                                                                                                              |
-| verbose         | Boolean | Whether or not to fetch verbose fileset snapshot information. The performance of this endpoint will decrease if set to true. |
+| Argument        | Type    | Description                                                                                                                     |
+| --------------- | ------- | ------------------------------------------------------------------------------------------------------------------------------- |
+| id *(required)* | String! | ID of snapshot.                                                                                                                 |
+| verbose         | Boolean | Whether or not to retrieve verbose fileset snapshot information. The performance of this endpoint will decrease if set to true. |
 
 ## Returns
 
