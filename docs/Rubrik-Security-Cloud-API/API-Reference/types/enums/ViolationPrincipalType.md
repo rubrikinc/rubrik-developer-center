@@ -24,6 +24,7 @@ Principal type for risk summary.
 | DFS_LINK | Principal of the AD DFS Link type. |
 | DFS_NAMESPACE_V1 | Principal of the AD DFS Namespace v1 type. |
 | DFS_NAMESPACE_V2 | Principal of the AD DFS Namespace v2 type. |
+| DNS_NODE | Principal of the AD DNS Record. |
 | DNS_ZONE | Principal of the AD DNS Zone. |
 | DOMAIN_DNS | Principal of the domain DNS type. |
 | EXTERNAL_ACCOUNT | Principal of the external account type. |
@@ -38,14 +39,17 @@ Principal type for risk summary.
 | LICENSING_SITE_SETTINGS | Principal of the licensing site settings type. |
 | MSDS_QUOTA_CONTAINER | Principal of the MSDS quota container type. |
 | MSDS_QUOTA_CONTROL | Principal of the MSDS quota control type. |
+| MSKDS_PROV_ROOT_KEY | Principal of the MS Key Distribution Service root key type. |
 | NAMED_LOCATION | Principal of the named location type. |
 | NTDS_SITE_SETTINGS | Principal of the NTDS site settings type. |
+| NTFRS_SUBSCRIBER | Principal of the NTFRS Subscriber type (File Replication Service). |
 | OAUTH2_PERMISSION_GRANT | Principal of the OAuth2 permission grant type. |
 | ORG_WIDE | Principal of the org-wide identity type. |
 | OTHER | Principal of the other/unclassified type. |
 | OU | Principal of the OU type. |
 | PASSWORD_SETTINGS | Principal of the password settings type. |
 | PASSWORD_SETTINGS_CONTAINER | Principal of the password settings container type. |
+| PKI_ENROLLMENT_SERVICE | Principal of the AD PKI Enrollment Service type (CA). |
 | PRINT_QUEUE | Principal of the print queue type. |
 | PUBLIC | Principal of the public identity type. |
 | RID_MANAGER | Principal of the RID manager type. |

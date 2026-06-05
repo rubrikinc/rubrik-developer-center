@@ -35,6 +35,7 @@ Paginated list of NAS Shares.
           isChangelistEnabled
           isHidden
           isNasShareManuallyAdded
+          isNutanixCftEnabled
           isRelic
           isStale
           name

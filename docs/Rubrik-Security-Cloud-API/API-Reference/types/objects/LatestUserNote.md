@@ -42,7 +42,7 @@ Latest user note information.
 - [FilesetTemplate.latestUserNote](FilesetTemplate.md)
 - FilesetTemplateDescendantType.latestUserNote
 - FilesetTemplatePhysicalChildType.latestUserNote
-- [HostFailoverCluster.latestUserNote](HostFailoverCluster.md)
-- HostFailoverClusterDescendantType.latestUserNote
-- HostFailoverClusterPhysicalChildType.latestUserNote
-- *…and 163 more*
+- [FusionComputeCluster.latestUserNote](FusionComputeCluster.md)
+- FusionComputeClusterDescendant.latestUserNote
+- FusionComputeClusterPhysicalChildType.latestUserNote
+- *…and 178 more*

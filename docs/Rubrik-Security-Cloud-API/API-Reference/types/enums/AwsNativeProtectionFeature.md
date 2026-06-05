@@ -10,5 +10,6 @@ AWS native protection features.
 | CONFIG | AWS native protection feature is Config. |
 | DYNAMODB | AWS native protection feature is DynamoDB. |
 | EC2 | AWS native protection feature is EC2. |
+| GLUE_ICEBERG | AWS native protection feature is Glue Iceberg. |
 | RDS | AWS native protection feature is RDS. |
 | S3 | AWS native protection feature is S3. |

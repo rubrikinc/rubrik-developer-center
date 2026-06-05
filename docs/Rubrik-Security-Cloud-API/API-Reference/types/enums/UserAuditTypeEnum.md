@@ -38,4 +38,5 @@ User audit type.
 | Sync | Sync type. |
 | THREAT_FEED | Audit type for Intel feed. |
 | THREAT_HUNT | Audit type for threat hunt use cases. |
+| THREAT_MONITORING | Audit type for Threat Monitoring enable/disable on a cluster, cloud account, subscription, project, or M365 organization. |
 | UnknownUserAuditType | Unknown user audit type. |

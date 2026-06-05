@@ -50,6 +50,7 @@ SAP HANA system details object.
 | physicalPath | [[PathNode](PathNode.md)!]! | Sequential list of the physical ancestors of this object. |
 | primaryClusterLocation | [DataLocation](DataLocation.md)! | The source cluster of this object. Returned as a data location because there is no guarantee that Rubrik has knowledge about the source cluster. |
 | primaryClusterUuid | [UUID](../scalars/UUID.md)! | UUID of the primary cluster. |
+| rbaRole | String! | The role of this SAP HANA system in a multi-cluster Rubrik Backup Agent configuration. |
 | replicatedObjectCount | Int! | The number of objects either replicated by this object or related to this object by replication. |
 | replicatedObjects | [[CdmHierarchyObject](../interfaces/CdmHierarchyObject.md)!]! | Objects either replicated by this object or related to this object by replication. |
 | securityMetadata | [SecurityMetadata](SecurityMetadata.md) | Security posture metadata. |

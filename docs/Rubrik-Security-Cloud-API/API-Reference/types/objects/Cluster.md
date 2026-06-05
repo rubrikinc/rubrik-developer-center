@@ -35,6 +35,7 @@ A Rubrik CDM Cluster.
 | id | [UUID](../scalars/UUID.md)! | The cluster uuid. |
 | ipmiInfo | [IpmiInfo](IpmiInfo.md) | IPMI information of the cluster. |
 | isAirGapped | Boolean | Air-gap status of the Rubrik cluster. |
+| isAssignedByParentAccount | Boolean! | Whether this cluster is assigned by a parent account. Tenant accounts with assigned clusters have restricted cluster management options. |
 | isClusterRemovalTprEnabled | Boolean | Specifies whether Quorum Authorization is enabled for cluster removal. |
 | isHealthy | Boolean! | Whether or not the cluster is healthy. |
 | isTprEnabled | Boolean | Indicates if TPR is enabled on the cluster. |
@@ -67,7 +68,7 @@ A Rubrik CDM Cluster.
 | systemStatusAffectedNodes | [[ClusterNode](ClusterNode.md)!] | List of affected nodes in the cluster. |
 | systemStatusMessage | String | Human readable message explaining the systemStatus. |
 | timezone | String | The cluster's timezone. |
-| type | [ClusterTypeEnum](../enums/ClusterTypeEnum.md)! |  |
+| type | [ClusterTypeEnum](../enums/ClusterTypeEnum.md) |  |
 | version | String | The software version. |
 | webServerCertificate | [WebServerCertificate](WebServerCertificate.md) | Web server certificate of the cluster. |
 
@@ -93,9 +94,9 @@ A Rubrik CDM Cluster.
 | clusterNodeConnection | filter | [ClusterNodeFilterInput](../inputs/ClusterNodeFilterInput.md) | Rubrik Cluster node filter. |
 | clusterNodeConnection | sortBy | [ClusterNodeSortBy](../enums/ClusterNodeSortBy.md) | Sort Rubrik cluster nodes by field. |
 | clusterNodeConnection | sortOrder | [SortOrder](../enums/SortOrder.md) | Sorts the order of results. |
-| clusterNodeStats | cdmClusterNodeID | String | Rubrik cluster node ID. |
 | clusterNodeStats | timeRange | [TimeRangeInput](../inputs/TimeRangeInput.md) | Time range input. |
 | clusterNodeStats | aggregationType | [NodeStatsAggregationType](../enums/NodeStatsAggregationType.md) | Aggregation type for node statistics (AVERAGE or MAX). |
+| clusterNodeStats | cdmClusterNodeID | String | Rubrik cluster node ID. |
 | metricTimeSeries | timeRange | [TimeRangeInput](../inputs/TimeRangeInput.md) | Time range input. |
 | metricTimeSeries | unit *(required)* | [TimeUnitEnum](../enums/TimeUnitEnum.md)! | Time unit input. |
 | metricTimeSeriesNew | timeRange | [TimeRangeInput](../inputs/TimeRangeInput.md) | Time range input. |
@@ -152,4 +153,4 @@ A Rubrik CDM Cluster.
 - CloudDirectHierarchyObject.cluster
 - CloudDirectHierarchyWorkload.cluster
 - [CloudDirectNasBucket.cluster](CloudDirectNasBucket.md)
-- *…and 252 more*
+- *…and 268 more*

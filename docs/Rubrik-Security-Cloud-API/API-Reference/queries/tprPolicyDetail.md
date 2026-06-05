@@ -61,6 +61,7 @@ Details for a TPR policy.
           "exemptServiceAccounts": [
             {
               "id": "example-string",
+              "isSuspended": true,
               "name": "example-string"
             }
           ]

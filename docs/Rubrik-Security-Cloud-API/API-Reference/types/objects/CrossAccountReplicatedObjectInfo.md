@@ -38,10 +38,10 @@ The replicated cross-account object information.
 - [FilesetTemplate.crossAccountReplicatedObjectInfos](FilesetTemplate.md)
 - FilesetTemplateDescendantType.crossAccountReplicatedObjectInfos
 - FilesetTemplatePhysicalChildType.crossAccountReplicatedObjectInfos
-- [HostFailoverCluster.crossAccountReplicatedObjectInfos](HostFailoverCluster.md)
-- HostFailoverClusterDescendantType.crossAccountReplicatedObjectInfos
-- HostFailoverClusterPhysicalChildType.crossAccountReplicatedObjectInfos
-- [HostShare.crossAccountReplicatedObjectInfos](HostShare.md)
-- HostShareDescendantType.crossAccountReplicatedObjectInfos
-- HostSharePhysicalChildType.crossAccountReplicatedObjectInfos
-- *…and 159 more*
+- [FusionComputeCluster.crossAccountReplicatedObjectInfos](FusionComputeCluster.md)
+- FusionComputeClusterDescendant.crossAccountReplicatedObjectInfos
+- FusionComputeClusterPhysicalChildType.crossAccountReplicatedObjectInfos
+- [FusionComputeDatastore.crossAccountReplicatedObjectInfos](FusionComputeDatastore.md)
+- [FusionComputeHost.crossAccountReplicatedObjectInfos](FusionComputeHost.md)
+- FusionComputeHostDescendant.crossAccountReplicatedObjectInfos
+- *…and 174 more*

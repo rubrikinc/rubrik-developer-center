@@ -19,3 +19,6 @@ Represents a tag key-value pair of an AWS resource.
 - AwsNativeHierarchyObject.tags
 - [AwsNativeRdsInstance.tags](AwsNativeRdsInstance.md)
 - [AwsNativeS3Bucket.tags](AwsNativeS3Bucket.md)
+- [GlueIcebergCatalog.tags](GlueIcebergCatalog.md)
+- [GlueIcebergDatabase.tags](GlueIcebergDatabase.md)
+- [GlueIcebergTable.tags](GlueIcebergTable.md)

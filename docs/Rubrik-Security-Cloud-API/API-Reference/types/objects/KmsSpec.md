@@ -11,7 +11,7 @@ KmsSpec stores the values required for CRUD on keys in the required KMS. The app
 | cloudType | [O365AzureCloudType](../enums/O365AzureCloudType.md)! | The cloud type. The allowed values are PUBLIC and USGOV. |
 | kekNameColossus | String! | The key encryption key (KeK) name for Colossus. |
 | keyName | String! | The key encryption key (KeK) name. |
-| kmsId | String! | ID of the KMS. If is_uem_managed is true, this would refer to the UEM kms ID, which is not necessarily Azure ID. The usage pattern would be to request the KMS details from UEM APIs. |
+| kmsId | String! | ID of the KMS. If is_uem_managed is true, this would refer to the UEM kms ID, which is not necessarily Azure ID. The usage pattern is to request the KMS details from UEM APIs. |
 | tenantId | String! | The tenant for the app. |
 
 ## Used By

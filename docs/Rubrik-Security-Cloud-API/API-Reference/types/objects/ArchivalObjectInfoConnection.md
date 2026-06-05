@@ -15,4 +15,5 @@ Paginated list of ArchivalObjectInfo objects. Each page of the results includes 
 
 **Queries**
 
+- [query: allArchivalPerObjectInfo](../../queries/allArchivalPerObjectInfo.md)
 - [query: archivalPerObjectInfo](../../queries/archivalPerObjectInfo.md)

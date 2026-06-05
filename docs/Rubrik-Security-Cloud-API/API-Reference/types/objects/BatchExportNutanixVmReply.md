@@ -6,7 +6,7 @@ Reply Object for BatchExportNutanixVm.
 
 | Field | Type | Description |
 |-------|------|-------------|
-| output | [NutanixBatchAsyncApiResponse](NutanixBatchAsyncApiResponse.md) |  |
+| output | [NutanixBatchAsyncApiResponse](NutanixBatchAsyncApiResponse.md) | Async API response containing successful and failed request summaries. |
 
 ## Used By
 

@@ -1,6 +1,6 @@
 # TimeRangeFilter
 
-Timerange filter.
+Time range filter.
 
 ## Fields
 

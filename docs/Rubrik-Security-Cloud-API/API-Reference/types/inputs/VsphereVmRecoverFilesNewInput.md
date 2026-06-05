@@ -10,3 +10,4 @@ Input for recovering files from snapshot.
 | config | [RestoreFilesJobConfigInput](RestoreFilesJobConfigInput.md)! | Required. Configuration for the restore request. |
 | deltaRequest | [DeltaRecoveryInput](DeltaRecoveryInput.md) | An object providing the parameters for the recovery of a snapshot and a next snapshot delta. |
 | id | String! | ID of a snapshot. |
+| recoveryPurpose | [RecoveryPurpose](../enums/RecoveryPurpose.md) | Purpose of the recovery operation. |

@@ -15,7 +15,9 @@ Fields for filtering hierarchy objects.
 | AWS_NATIVE_ACCOUNT_ID | Filter by AWS account ID. |
 | AWS_NATIVE_ACCOUNT_SERVICE_TYPE | Filter AWS native accounts and their child objects (EC2, EBS, RDS, S3, DynamoDB) by BaaS or non-BaaS service type. Use texts param with values "BAAS" or "NON_BAAS". |
 | AWS_NATIVE_CLOUD_TYPE | Filter by the AWS Cloud Type. |
+| AWS_NATIVE_EBS_OUTPOST_ARN | Filter EBS volumes by AWS Outpost ARN. |
 | AWS_NATIVE_EC2_INSTANCE_ID | ID of the AWS native EC2 instance (Rubrik ID), applicable for filtering EBS volumes with their EC2 instance IDs. Applicable only if the object type is AwsNativeEbsVolume. |
+| AWS_NATIVE_EC2_OUTPOST_ARN | Filter EC2 instances by AWS Outpost ARN. |
 | AWS_NATIVE_FEATURE_CONNECTED_STATUS | Filter those objects for which the given AWS feature status is connected. |
 | AWS_NATIVE_IS_ELIGIBLE_FOR_DYNAMODB_PROTECTION | Filter DynamoDB workloads by their eligibility for protection. Eligibility is determined by whether the AWS native account is not archived and has the protection feature enabled for DynamoDB. |
 | AWS_NATIVE_IS_ELIGIBLE_FOR_EBS_PROTECTION | Filter EBS workloads by their eligibility for protection. Eligibility is determined by whether the AWS native account is not archived and has the protection feature enabled for EBS. |
@@ -51,6 +53,8 @@ Fields for filtering hierarchy objects.
 | AZURE_NATIVE_SUBSCRIPTION_ENABLED_FEATURE | Filter Azure native subscriptions based on the features enabled for them. |
 | AZURE_NATIVE_VM_EXOCOMPUTE_CONNECTED | Filters Azure virtual machines whose regions have a "CONNECTED" exocompute. |
 | AZURE_NATIVE_VM_INDEXING_STATUS | Filter by the "indexing status" of Azure VMs. |
+| AZURE_POSTGRES_FLEXIBLE_SERVER_RG_NAME | Filter Azure Postgres Flexible Servers on resource group name. |
+| AZURE_POSTGRES_FLEXIBLE_SERVER_SUBSCRIPTION_ID | Filter Azure Postgres Flexible Servers on subscription ID. |
 | AZURE_REGION | Filter by AzureSubscription.region_spec.region, AzureResourceGroup.region, AzureVm.Region and AzureDisk.region. |
 | AZURE_RG_DISK_OR_VM_SLA | Filter Azure resource groups by disk SLA or virtual machine SLA. |
 | AZURE_RG_SUBSCRIPTION_ID | Filter Azure resource groups by subscription ID. |
@@ -123,6 +127,7 @@ Fields for filtering hierarchy objects.
 | DOMAIN_CONTROLLER_CONNECTION_STATUS | Filter by the Active Directory domain controller connection status. |
 | DOMAIN_CONTROLLER_DOMAIN_SID | Filter domain controller by domain SID. |
 | DOMAIN_CONTROLLER_FSMO_ROLE | Filter by FSMO role of a domain controller. |
+| DOMAIN_CONTROLLER_HAS_AGENT | Filter Active Directory domain controllers by whether an RBS agent is registered for the domain controller. Pass texts = ["true"] to keep only domain controllers with an agent; ["false"] to return only domain controllers without an agent. |
 | DOMAIN_HAS_FOREST | Filter domains by forest. |
 | EBS_VOLUME_ID *(deprecated: Use EBS_VOLUME_NAME_OR_VOLUME_ID instead.)* | Filter by EBSVolume native ID. |
 | EBS_VOLUME_INDEXING_STATUS | Filter EBS Volumes by status of indexing. |
@@ -159,7 +164,7 @@ Fields for filtering hierarchy objects.
 | GCP_ALLOY_DB_CLUSTER_NAME_OR_NATIVE_ID | Filter GCP AlloyDB clusters by native ID or name. |
 | GCP_BIG_QUERY_DATASET_NAME_OR_NATIVE_ID | Filter GCP BigQuery datasets by native ID or name. |
 | GCP_CLOUD_SQL_ENGINE_TYPE | Filter GCP Cloud SQL instances by database engine type (MYSQL, POSTGRES, SQLSERVER). |
-| GCP_CLOUD_SQL_INSTANCE_NAME_OR_NATIVE_ID | Filter GCP Cloud SQL instances by native ID or native name. This filter searches both the native_uri and native_name fields in the cloud_native_resource table. Implementation: Joins cloud_native_resource table and filters by native_uri LIKE or native_name LIKE Note: This filter is specific to GCP Cloud SQL instances and should be used instead of the generic NAME filter for CloudSQL to ensure consistent behavior across multi-object-type queries and Global Search. |
+| GCP_CLOUD_SQL_INSTANCE_NAME_OR_NATIVE_ID | Filter GCP Cloud SQL instances by native ID or native name. |
 | GCP_LABEL | Filter by gcp_native_labels. |
 | GCP_NATIVE_DISK_INDEXING_STATUS | Filter by the "indexing status" of GCP disks. |
 | GCP_NATIVE_DISK_LOCATION | Filter by GCP Disk location (for regional disk: location=region, for zonal disk: location=zone). |
@@ -170,7 +175,7 @@ Fields for filtering hierarchy objects.
 | GCP_NATIVE_INSTANCE_NETWORK_NAME | Filter by GCP Instance Network Name. |
 | GCP_NATIVE_INSTANCE_TYPE | Filter by GCP instance type. |
 | GCP_NATIVE_PROJECT_ENABLED_FEATURE | Filter GCP native projects based on the features enabled for them. |
-| GCP_NATIVE_PROJECT_ID | Filter by GCP project ID for GCE instances. |
+| GCP_NATIVE_PROJECT_ID | Filter by GCP project ID. |
 | GCP_NATIVE_PROJECT_NAME_OR_PROJECT_NUMBER | Filter by GCP project name or project number. |
 | GCP_NATIVE_PROJECT_NATIVE_ID | Filter GCP projects by their native ID. |
 | GCP_NATIVE_REGION | Filter by GCP region. |
@@ -185,6 +190,7 @@ Fields for filtering hierarchy objects.
 | HAS_EXPIRED_INDEXED_SNAPSHOTS | Filter objects if they have snapshots that are expired and indexed. |
 | HAS_EXPIRED_NON_GCED_SNAPSHOTS | Filter objects with snapshots that have expired but not been garbage-collected. |
 | HAS_EXPIRED_NON_GCED_SNAPSHOT_COUNT_UNSET | Filter objects for which the expired_non_gced_snapshot_count field is not set. |
+| HAS_OBJECT_BACKUP_WINDOW_OVERRIDE | Filter managed objects by whether they have an object-level backup window override configured. true = only objects with overrides configured; false = only objects without overrides; absent = no filter (all objects). |
 | HAS_PARENT_SNAPPABLE | Filter if a workload has parent workload. |
 | HAS_UNEXPIRED_SNAPSHOTS | Filter objects with unexpired snapshots. |
 | HOST_BY_AGENT_ID | Filter Host by Agent ID. |
@@ -217,10 +223,12 @@ Fields for filtering hierarchy objects.
 | IS_NAS_SHARE_PROTECTED | Filter by the protection status of a NAS share. |
 | IS_NOT_BLUEPRINT_CHILD | Workload must not be a member of any active Blueprint. |
 | IS_PROTECTED | Filter by whether object is protected by an SLA Domain. |
+| IS_PURE_STORAGE_VOLUME | Filter Pure Storage protection groups by type. Set to true to return volume-level entries; set to false to return real protection groups. |
 | IS_RBA_ROLE_SECONDARY | Filter objects by RBA role secondary status. |
 | IS_RECOVERY_PLAN_VISIBLE | Filter by recovery plan visibility. |
 | IS_RELIC | Filters workloads that are relics. |
 | IS_REPLICATED | Filters replicated workloads. |
+| IS_RSC_CLUSTER | Companion to the CLUSTER_ID filter. When set, results also include workloads on Rubrik-native clusters (workloads that are not associated with a CDM cluster). |
 | IS_SAP_HANA_SYSTEMDB | Filter SYSTEMDB SAP HANA databases. |
 | IS_UNACCESSED | Filter objects that have not been accessed for over 90 days. |
 | IS_UNMANAGED_OBJECT | Filter unmanaged objects. |
@@ -270,7 +278,7 @@ Fields for filtering hierarchy objects.
 | MYSQLDB_HOST_CONNECTION_STATUS | Filter the MySQL Instance based on its host. connection status. |
 | MYSQLDB_INSTANCE_ID | Filter the MySQL Databases based on its Instance Id. |
 | NAME | Filter by name. For an exact match, use NAME_EXACT_MATCH. |
-| NAME_EXACT_MATCH | There is already a filter called NAME which filters for all the rows where name is "LIKE" the provided string. We have a use-case in Azure where we would like to Filter by name but exact-match, not just similar match. The use case is that resource groups are identified by the tuple of subscription ID and resource group name, similarity measure will not distinguish between two similar names. |
+| NAME_EXACT_MATCH | Filter by exact name match. |
 | NAME_OR_EMAIL_ADDRESS | Filter by name or email-address of O365 user. |
 | NAME_PREFIX | Filter objects whose name starts with the specified prefix. |
 | NAS_NAMESPACE_ID | Filter by the ID of the NAS namespace. |
@@ -300,6 +308,9 @@ Fields for filtering hierarchy objects.
 | O365_SPECIFIC_TYPE | O365 specific type: O365_SHARED_USER, O365_SHARED_MAILBOX...This filter is introduced to support api-server since it is not convenient to add object-specific subtype knowledge there. To query for shared users, we can either: 1. Specify O365_USER in object type AND this filter with value O365_SHARED_USER (api-server way) 2. Specify O365_SHARED_USER in object type, ignore this filter (others should do this). |
 | OBJECT_ID | Filter managed objects by their ID (FID). |
 | ON_OR_ABOVE_CLUSTER_VERSION | Filter by software version of the cluster. |
+| OPENSTACK_IMAGE_PROJECT_ID | Filter OpenStack images by the ID of the parent OpenStack project. Can be combined with OPENSTACK_IMAGE_REGION_ID to filter by both. |
+| OPENSTACK_IMAGE_REGION_ID | Filter OpenStack images by the ID of the parent OpenStack region. Can be combined with OPENSTACK_IMAGE_PROJECT_ID to filter by both. |
+| OPENSTACK_PROJECT_NATIVE_ID | Filter OpenStack projects by their native OpenStack project ID. |
 | ORACLE_OS_TYPE | Filter Oracle host and RAC objects by OS type. |
 | ORGANIZATION_ID | Filter by organization ID. |
 | OS_NAME | Filter physical hosts by OS name. |
@@ -359,4 +370,5 @@ Fields for filtering hierarchy objects.
 | VMWARE_VM_TEMPLATE_TYPE | Filter template type of VMware virtual machines. |
 | VSPHERE_DATASTORE_IS_LOCAL | Filter isLocal of virtualhost.descendant. |
 | VSPHERE_GET_ROOT_RESTORE_HIERARCHY | Filter for the the root level of compute resources for the restore hierarchy, which includes compute clusters and standalone hosts. |
+| VSPHERE_VCENTER_CONNECTION_STATUS | Filter VMware vCenters by their connection status Supports values: "Disconnected", "Connected", "Refreshing", "BadlyConfigured", "Deleting", "Remote". |
 | WORKLOADS | Filter workloads by object name or host details. |

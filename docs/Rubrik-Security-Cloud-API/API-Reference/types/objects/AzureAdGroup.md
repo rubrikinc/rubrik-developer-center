@@ -20,4 +20,6 @@ Entra ID group.
 **Referenced by**
 
 - [AzureAdObjects.azureAdGroup](AzureAdObjects.md)
+- [AzureAdPimActivePrincipalObject.azureAdGroup](AzureAdPimActivePrincipalObject.md)
+- [AzureAdPimEligibilityPrincipalObject.azureAdGroup](AzureAdPimEligibilityPrincipalObject.md)
 - [PrincipalObject.azureAdGroup](PrincipalObject.md)

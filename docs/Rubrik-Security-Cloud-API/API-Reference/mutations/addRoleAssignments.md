@@ -1,6 +1,6 @@
 # addRoleAssignments
 
-*No description available.*
+Add RBAC role assignments to the given users and/or groups. Existing role assignments are preserved.
 
 ## Arguments
 
@@ -8,7 +8,7 @@
 |----------|------|-------------|
 | userIds | [String!] | List of user IDs. |
 | groupIds | [String!] | List of group IDs. |
-| roleIds *(required)* | [String!]! |  |
+| roleIds *(required)* | [String!]! | List of role IDs to assign. |
 
 ## Returns
 

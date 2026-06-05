@@ -1,6 +1,6 @@
 # TimeDuration
 
-*No description available.*
+Granularity of time intervals (hour / day / month).
 
 ## Values
 

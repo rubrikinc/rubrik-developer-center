@@ -1,6 +1,6 @@
 # bulkCreateFilesets
 
-*No description available.*
+Create filesets for a host  Supported in v5.0+ Create filesets for a network host. Each fileset is a fileset template applied to a host.
 
 ## Arguments
 

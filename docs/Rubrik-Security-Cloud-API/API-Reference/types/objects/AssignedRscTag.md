@@ -27,6 +27,7 @@ Details of an RSC tag.
 - [AwsNativeAccount.allTags](AwsNativeAccount.md)
 - AwsNativeAccountDescendantType.allTags
 - AwsNativeAccountLogicalChildType.allTags
+- [AwsNativeConfig.allTags](AwsNativeConfig.md)
 - [AwsNativeDynamoDbTable.allTags](AwsNativeDynamoDbTable.md)
 - [AwsNativeEbsVolume.allTags](AwsNativeEbsVolume.md)
 - [AwsNativeEc2Instance.allTags](AwsNativeEc2Instance.md)
@@ -35,18 +36,17 @@ Details of an RSC tag.
 - [AwsNativeRegionHierarchyObject.allTags](AwsNativeRegionHierarchyObject.md)
 - [AwsNativeS3Bucket.allTags](AwsNativeS3Bucket.md)
 - [AzureAdDirectory.allTags](AzureAdDirectory.md)
+- [AzureDevOpsOrganization.allTags](AzureDevOpsOrganization.md)
+- [AzureDevOpsProject.allTags](AzureDevOpsProject.md)
+- [AzureDevOpsRepository.allTags](AzureDevOpsRepository.md)
 - AzureNativeHierarchyObjectType.allTags
 - [AzureNativeManagedDisk.allTags](AzureNativeManagedDisk.md)
 - [AzureNativeRegionManagedObject.allTags](AzureNativeRegionManagedObject.md)
 - [AzureNativeResourceGroup.allTags](AzureNativeResourceGroup.md)
 - [AzureNativeSubscription.allTags](AzureNativeSubscription.md)
 - [AzureNativeVirtualMachine.allTags](AzureNativeVirtualMachine.md)
+- [AzurePostgresFlexibleServer.allTags](AzurePostgresFlexibleServer.md)
 - [AzureSqlDatabaseDb.allTags](AzureSqlDatabaseDb.md)
 - [AzureSqlDatabaseServer.allTags](AzureSqlDatabaseServer.md)
 - [AzureSqlManagedInstanceDatabase.allTags](AzureSqlManagedInstanceDatabase.md)
-- [AzureSqlManagedInstanceServer.allTags](AzureSqlManagedInstanceServer.md)
-- [AzureStorageAccount.allTags](AzureStorageAccount.md)
-- [CassandraColumnFamily.allTags](CassandraColumnFamily.md)
-- [CassandraKeyspace.allTags](CassandraKeyspace.md)
-- CassandraKeyspaceDescendantType.allTags
-- *…and 251 more*
+- *…and 276 more*

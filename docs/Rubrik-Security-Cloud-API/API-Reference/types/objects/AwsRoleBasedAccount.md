@@ -8,7 +8,7 @@ AWS role based Account specific info.
 
 | Field | Type | Description |
 |-------|------|-------------|
-| awsSpecificInfo | [AwsCloudAccountWithFeatures](AwsCloudAccountWithFeatures.md)! |  |
+| awsSpecificInfo | [AwsCloudAccountWithFeatures](AwsCloudAccountWithFeatures.md)! | AWS role based Account specific info. |
 | cloudAccountId | String! | The ID of this Cloud Account. |
 | cloudProvider | [CloudAccountType](../enums/CloudAccountType.md)! | The type of this Cloud Provider. |
 | connectionStatus | [ConnectionStatusType](../enums/ConnectionStatusType.md)! | The connection status of this Cloud Account. |

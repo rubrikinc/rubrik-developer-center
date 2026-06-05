@@ -17,6 +17,7 @@ Lambda configuration details of the Rubrik cluster.
 | maxSnapshotsToUploadAutomatically | Int! | The maximum number of snapshots to upload automatically. |
 | orionYaraRemoteProcessingEnabled | Boolean! | Enable or disable yara remote processing (sandboxing). |
 | threatMonitoringExtensions | [String!]! | The extension allowlist used for threat monitoring scans. |
+| threatMonitoringSortByOffset | Boolean! | Whether FMD entries are sorted by physical disk offset before DPS scan. |
 
 ## Used By
 

@@ -12,6 +12,7 @@ Configuration to initiate recovery of AzureAdDirectory with multiple passwords.
 | forceChangePasswordWithMfa | Boolean! | Specifies whether to enable MFA during the recovery of one or more users. |
 | objectRecoveryOptions | [ObjectRecoveryOptionsType](ObjectRecoveryOptionsType.md) | Represents recovery options for every AzureAdObjectType. |
 | objectTypeToIdMap | [[ObjectInfoType](ObjectInfoType.md)!]! | Map of azureAdObjectType to object IDs. |
+| objectsToDelete | [[ObjectInfoType](ObjectInfoType.md)!] | List of Entra ID objects to soft-delete from the target tenant after restore completes. |
 | passwordByUserIdMap | [[PasswordByUserId](PasswordByUserId.md)!]! | Map of user IDs to password. |
 | relationshipConflictResolutionMode | [RelationshipConflictResolutionState](../enums/RelationshipConflictResolutionState.md) | Deprecated, this field is no longer used and will be ignored. |
 | relationshipRestoreMode | [AzureAdRelationshipRestoreModeEnumType](../enums/AzureAdRelationshipRestoreModeEnumType.md)! | Represents the modes for relationship restore for Azure AD objects. |

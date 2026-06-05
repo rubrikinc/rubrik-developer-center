@@ -6,6 +6,7 @@ Details of IOC for a matched file.
 
 | Field | Type | Description |
 |-------|------|-------------|
+| feedType | [FeedType](../enums/FeedType.md)! | Source type of the intel feed, for example RUBRIK, CROWDSTRIKE, or TAXII_2_1. Used by clients to gate per-feed actions such as enabling or disabling IOC. |
 | intelFeedName | String! | Name of the intel feed for the IOC. |
 | iocHashHex | String! | Hash of the IOC. |
 | iocRuleAuthor | String! | Author of the IOC. |

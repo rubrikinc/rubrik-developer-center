@@ -9,7 +9,7 @@ Inputs needed to create VMs on GCP.
 | cdmProduct | String | The CDM product to use for the cluster if it is created using a marketplace image. This field must not be used if the cluster is created using an image ID. |
 | cdmVersion | String | The CDM version to use for the cluster if it is created using a marketplace image. This field must not be used if the cluster is created using an image ID. |
 | deleteProtection | Boolean | If delete protection to apply to the GCP instance. |
-| imageId | String | The image ID to use for the cluster. This field must not be used if the cluster is created using a marketplace image (using the cdm_version field). If this field is used, the cdm_version field will be ignored. |
+| imageId | String | Image resource URL (selfLink) to use for the cluster, such as "projects/<project>/global/images/<image>". Must not be used with marketplace images (cdm_version). If set, cdm_version is ignored. |
 | instanceType | [GcpInstanceType](../enums/GcpInstanceType.md) | Instance type to use for the GCP instance. |
 | labels | String | Labels to apply to the GCP instance. List of tag key=value separated by commas. |
 | networkConfig | [[GcpSubnetInput](GcpSubnetInput.md)!] | GCP subnet configs for each node. |

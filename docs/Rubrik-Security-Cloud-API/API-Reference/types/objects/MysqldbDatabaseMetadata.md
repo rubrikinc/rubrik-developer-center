@@ -7,6 +7,7 @@ MySQL database metadata object.
 | Field | Type | Description |
 |-------|------|-------------|
 | approxDbSizeInBytes | [Long](../scalars/Long.md)! | The approximate size of the MySQL database (in bytes). |
+| isSystem | Boolean! | True for MySQL system/virtual schemas -- visible in inventory but not user-protectable. |
 | protectableTables | [Long](../scalars/Long.md)! | The number of protectable tables in the MySQL database. |
 | protectionState | [MysqldbDatabaseProtectionStateEnum](../enums/MysqldbDatabaseProtectionStateEnum.md)! | The protection status of the MySQL database. |
 | totalTables | [Long](../scalars/Long.md)! | The total number of tables in the MySQL database. |

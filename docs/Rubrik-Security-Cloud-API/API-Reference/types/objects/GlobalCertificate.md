@@ -22,6 +22,8 @@ Information about a certificate on Rubrik Security Cloud.
 | issuedOn | [DateTime](../scalars/DateTime.md) | The date on which the certificate was issued. |
 | issuedTo | String! | To whom the certificate was issued. |
 | issuerType | [IssuerType](../enums/IssuerType.md)! | Specifies the type of the certificate issuer. |
+| keyStrength | String! | The cryptographic key strength of the certificate (for example, "2048", "secp384r1"). Empty for legacy certificates or keys whose strength does not map to a canonical value. |
+| keyType | String! | The cryptographic key type of the certificate (for example, "rsa", "ec"). Empty for legacy certificates whose key metadata was never extracted. |
 | name | String! | The display name of the certificate. |
 | org | [Org](Org.md) | The organization to which the certificate has been assigned. |
 | rbsHostUsage | [RbsHostUsage](RbsHostUsage.md) | Specifies the host that uses this certificate for Rubrik Backup Service (RBS). |

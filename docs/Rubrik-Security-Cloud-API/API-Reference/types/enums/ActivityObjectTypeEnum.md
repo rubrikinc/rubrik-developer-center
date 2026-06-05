@@ -21,6 +21,7 @@ Represents different types of activity objects.
 | AZURE_DEVOPS_REPOSITORY | Azure DevOps Repository. |
 | AZURE_NATIVE_REGION | Azure native region. |
 | AZURE_NATIVE_RESOURCE_GROUP | Azure Native Resource Group. |
+| AZURE_POSTGRES_FLEXIBLE_SERVER | Azure PostgreSQL Flexible Server. |
 | AZURE_STORAGE_ACCOUNT | Azure storage account. |
 | AppBlueprint | App Blueprint object. |
 | AppFlows | AppRecovery object. |
@@ -81,6 +82,10 @@ Represents different types of activity objects.
 | GCP_CLOUD_SQL_INSTANCE | GCP Cloud SQL Instance. |
 | GITHUB_ORGANIZATION | GitHub Organization. |
 | GITHUB_REPOSITORY | GitHub Repository. |
+| GLUE_ICEBERG_CATALOG | AWS Glue Iceberg Catalog. |
+| GLUE_ICEBERG_DATABASE | AWS Glue Iceberg Database. |
+| GLUE_ICEBERG_TABLE | AWS Glue Iceberg Table. |
+| GOOGLE_WORKSPACE_GROUP | Google Workspace Group. |
 | GOOGLE_WORKSPACE_ORGANIZATION | Google Workspace Organisation. |
 | GOOGLE_WORKSPACE_ORG_UNIT | Google Workspace Organisation unit. |
 | GOOGLE_WORKSPACE_SHARED_DRIVE | Google Workspace Shared Drive. |
@@ -165,6 +170,7 @@ Represents different types of activity objects.
 | OracleDb | Oracle database object. |
 | OracleHost | Oracle host object. |
 | OracleRac | Oracle RAC object. |
+| PING_FEDERATE_CLUSTER | Ping Federate Cluster. |
 | POSTGRES_DB_CLUSTER | Postgres Database Cluster. |
 | PRINCIPAL_ACCESS_POLICY | Access Policy principal type. |
 | PRINCIPAL_APP_ROLE | App Role principal type. |
@@ -184,6 +190,7 @@ Represents different types of activity objects.
 | PRINCIPAL_DFS_LINK | DFS Link principal type. |
 | PRINCIPAL_DFS_NAMESPACE_V1 | DFS Namespace V1 principal type. |
 | PRINCIPAL_DFS_NAMESPACE_V2 | DFS Namespace V2 principal type. |
+| PRINCIPAL_DNS_NODE | DNS Node principal type. |
 | PRINCIPAL_DNS_ZONE | DNS Zone principal type. |
 | PRINCIPAL_DOMAIN_DNS | Domain DNS principal type. |
 | PRINCIPAL_EXTERNAL_ACCOUNT | External account principal type. |
@@ -198,13 +205,16 @@ Represents different types of activity objects.
 | PRINCIPAL_LICENSING_SITE_SETTINGS | Licensing Site Settings principal type. |
 | PRINCIPAL_MSDS_QUOTA_CONTAINER | MSDS Quota Container principal type. |
 | PRINCIPAL_MSDS_QUOTA_CONTROL | MSDS Quota Control principal type. |
+| PRINCIPAL_MSKDS_PROV_ROOT_KEY | MS Key Distribution Service Root Key principal type. |
 | PRINCIPAL_NAMED_LOCATION | Named Location principal type. |
 | PRINCIPAL_NTDS_SITE_SETTINGS | NTDS Site Settings principal type. |
+| PRINCIPAL_NTFRS_SUBSCRIBER | NTFRS Subscriber principal type. |
 | PRINCIPAL_OAUTH2_PERMISSION_GRANT | OAuth2 Permission Grant principal type. |
 | PRINCIPAL_ORG_WIDE | Org wide principal type. |
 | PRINCIPAL_OU | OU principal type. |
 | PRINCIPAL_PASSWORD_SETTINGS | Password Settings principal type. |
 | PRINCIPAL_PASSWORD_SETTINGS_CONTAINER | Password Settings Container principal type. |
+| PRINCIPAL_PKI_ENROLLMENT_SERVICE | PKI Enrollment Service (AD CS CA) principal type. |
 | PRINCIPAL_PRINT_QUEUE | Print Queue principal type. |
 | PRINCIPAL_PUBLIC | Public principal type. |
 | PRINCIPAL_RID_MANAGER | RID Manager principal type. |

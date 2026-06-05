@@ -37,6 +37,7 @@
           estimatedRunway
           id
           isAirGapped
+          isAssignedByParentAccount
           isClusterRemovalTprEnabled
           isHealthy
           isTprEnabled

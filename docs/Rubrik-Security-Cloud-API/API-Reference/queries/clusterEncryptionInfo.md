@@ -37,6 +37,7 @@ Filter clusters by encryption information.
         nodes {
           canUserManageCluster
           cipher
+          clusterProductType
           encryptionType
           isConnected
           isEncrypted
@@ -86,10 +87,10 @@ Filter clusters by encryption information.
               {
                 "canUserManageCluster": true,
                 "cipher": "example-string",
+                "clusterProductType": "CDM",
                 "encryptionType": "ENCRYPTION_TYPE_UNSPECIFIED",
                 "isConnected": true,
-                "isEncrypted": true,
-                "isOnCloud": true
+                "isEncrypted": true
               }
             ]
           ],

@@ -1,6 +1,6 @@
 # Interfaces
 
-173 types.
+181 types.
 
 [ActiveDirectoryDomainDescendantType](ActiveDirectoryDomainDescendantType.md)  
 [ActiveDirectoryDomainPhysicalChildType](ActiveDirectoryDomainPhysicalChildType.md)  
@@ -35,6 +35,14 @@
 [FailoverClusterTopLevelDescendantType](FailoverClusterTopLevelDescendantType.md)  
 [FilesetTemplateDescendantType](FilesetTemplateDescendantType.md)  
 [FilesetTemplatePhysicalChildType](FilesetTemplatePhysicalChildType.md)  
+[FusionComputeClusterDescendant](FusionComputeClusterDescendant.md)  
+[FusionComputeClusterPhysicalChildType](FusionComputeClusterPhysicalChildType.md)  
+[FusionComputeHostDescendant](FusionComputeHostDescendant.md)  
+[FusionComputeHostPhysicalChildType](FusionComputeHostPhysicalChildType.md)  
+[FusionComputeSiteDescendant](FusionComputeSiteDescendant.md)  
+[FusionComputeSitePhysicalChildType](FusionComputeSitePhysicalChildType.md)  
+[FusionComputeVrmDescendant](FusionComputeVrmDescendant.md)  
+[FusionComputeVrmPhysicalChildType](FusionComputeVrmPhysicalChildType.md)  
 [GcpNativeHierarchyObject](GcpNativeHierarchyObject.md)  
 [GcpNativeProjectDescendantType](GcpNativeProjectDescendantType.md)  
 [GcpNativeProjectLogicalChildType](GcpNativeProjectLogicalChildType.md)  

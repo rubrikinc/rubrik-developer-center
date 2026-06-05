@@ -6,7 +6,7 @@ Reset TOTP configuration for a user. Return true when the operation succeeds.
 
 | Argument | Type | Description |
 |----------|------|-------------|
-| userId *(required)* | String! | Specifies the user ID. |
+| userId *(required)* | String! | The ID of the user whose TOTP configuration is being deleted. |
 
 ## Returns
 

@@ -15,3 +15,4 @@ The template information.
 
 - [AuditSubscription.templateInfo](AuditSubscription.md)
 - [EventSubscription.templateInfo](EventSubscription.md)
+- [IdentityActivitySubscription.templateInfo](IdentityActivitySubscription.md)

@@ -30,6 +30,7 @@ List of activities.
           actionType
           activityProvider
           activityType
+          actorIpAddress
           actorState
           category
           id
@@ -66,9 +67,9 @@ List of activities.
                 "actionType": "EVENT_ACTION_TYPE_ATTRIBUTE_CHANGE",
                 "activityProvider": "ENTRA_ID_AUDIT_LOG",
                 "activityType": "EVENT_TYPE_AUTHENTICATION",
+                "actorIpAddress": "example-string",
                 "actorState": "ACTOR_STATE_IDENTIFIED",
-                "category": "ACTIVITY_CATEGORY_ACL_CHANGE",
-                "id": "00000000-0000-0000-0000-000000000000"
+                "category": "ACTIVITY_CATEGORY_ACL_CHANGE"
               }
             ]
           ],

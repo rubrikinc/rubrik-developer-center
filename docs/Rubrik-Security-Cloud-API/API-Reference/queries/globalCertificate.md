@@ -32,6 +32,8 @@ Global certificate.
         issuedOn
         issuedTo
         issuerType
+        keyStrength
+        keyType
         name
         serialNumber
         sha1Fingerprint

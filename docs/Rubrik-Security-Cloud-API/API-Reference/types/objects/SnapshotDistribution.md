@@ -24,6 +24,7 @@ A generic snapshot type.
 - [AwsNativeAccount.snapshotDistribution](AwsNativeAccount.md)
 - AwsNativeAccountDescendantType.snapshotDistribution
 - AwsNativeAccountLogicalChildType.snapshotDistribution
+- [AwsNativeConfig.snapshotDistribution](AwsNativeConfig.md)
 - [AwsNativeDynamoDbTable.snapshotDistribution](AwsNativeDynamoDbTable.md)
 - [AwsNativeEbsVolume.snapshotDistribution](AwsNativeEbsVolume.md)
 - [AwsNativeEc2Instance.snapshotDistribution](AwsNativeEc2Instance.md)
@@ -32,18 +33,17 @@ A generic snapshot type.
 - [AwsNativeRegionHierarchyObject.snapshotDistribution](AwsNativeRegionHierarchyObject.md)
 - [AwsNativeS3Bucket.snapshotDistribution](AwsNativeS3Bucket.md)
 - [AzureAdDirectory.snapshotDistribution](AzureAdDirectory.md)
+- [AzureDevOpsOrganization.snapshotDistribution](AzureDevOpsOrganization.md)
+- [AzureDevOpsProject.snapshotDistribution](AzureDevOpsProject.md)
+- [AzureDevOpsRepository.snapshotDistribution](AzureDevOpsRepository.md)
 - AzureNativeHierarchyObjectType.snapshotDistribution
 - [AzureNativeManagedDisk.snapshotDistribution](AzureNativeManagedDisk.md)
 - [AzureNativeRegionManagedObject.snapshotDistribution](AzureNativeRegionManagedObject.md)
 - [AzureNativeResourceGroup.snapshotDistribution](AzureNativeResourceGroup.md)
 - [AzureNativeSubscription.snapshotDistribution](AzureNativeSubscription.md)
 - [AzureNativeVirtualMachine.snapshotDistribution](AzureNativeVirtualMachine.md)
+- [AzurePostgresFlexibleServer.snapshotDistribution](AzurePostgresFlexibleServer.md)
 - [AzureSqlDatabaseDb.snapshotDistribution](AzureSqlDatabaseDb.md)
 - [AzureSqlDatabaseServer.snapshotDistribution](AzureSqlDatabaseServer.md)
 - [AzureSqlManagedInstanceDatabase.snapshotDistribution](AzureSqlManagedInstanceDatabase.md)
-- [AzureSqlManagedInstanceServer.snapshotDistribution](AzureSqlManagedInstanceServer.md)
-- [AzureStorageAccount.snapshotDistribution](AzureStorageAccount.md)
-- [CassandraColumnFamily.snapshotDistribution](CassandraColumnFamily.md)
-- [CassandraKeyspace.snapshotDistribution](CassandraKeyspace.md)
-- CassandraKeyspaceDescendantType.snapshotDistribution
-- *…and 251 more*
+- *…and 276 more*

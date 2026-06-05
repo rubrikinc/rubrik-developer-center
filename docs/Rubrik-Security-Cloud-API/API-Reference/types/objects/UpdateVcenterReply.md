@@ -6,7 +6,7 @@ Reply Object for UpdateVcenter.
 
 | Field | Type | Description |
 |-------|------|-------------|
-| output | [VcenterSummary](VcenterSummary.md) |  |
+| output | [VcenterSummary](VcenterSummary.md) | Updated vCenter summary. |
 
 ## Used By
 

@@ -7,5 +7,5 @@ Input for creating an on-demand Nutanix backup.
 | Field | Type | Description |
 |-------|------|-------------|
 | config | [BaseOnDemandSnapshotConfigInput](BaseOnDemandSnapshotConfigInput.md) | Configuration for the on-demand backup. |
-| id | String! | Required. v5.0-v5.3: ID of the VM v6.0-v8.0: ID of the VM. v8.1+: ID of the virtual machine. |
+| id | String! | Required. v5.0-v5.3: ID of the VM v6.0+: ID of the Nutanix virtual machine. |
 | userNote | String | User note to associate with audits. |

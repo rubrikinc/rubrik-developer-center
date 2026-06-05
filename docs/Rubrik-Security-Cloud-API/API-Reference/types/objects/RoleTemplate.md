@@ -10,7 +10,7 @@ Role template.
 | explicitlyAssignedPermissions | [[Permission](Permission.md)!]! | Role permissions that are explicitly assigned to the template. |
 | id | String! | Role template ID. |
 | name | String! | Role template name. |
-| permissions | [[Permission](Permission.md)!]! |  |
+| permissions | [[Permission](Permission.md)!]! | Role permissions. |
 
 ## Used By
 

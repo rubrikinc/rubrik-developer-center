@@ -29,6 +29,7 @@ Retrieves a paginated list of all Azure Native Resource Groups.
       azureNativeResourceGroups(first: 10) {
         nodes {
           authorizedOperations
+          azurePostgresFlexibleServerCount
           azureSqlDatabaseCount
           azureSqlManagedInstanceDbCount
           azureStorageAccountCount
@@ -71,11 +72,11 @@ Retrieves a paginated list of all Azure Native Resource Groups.
                 "authorizedOperations": [
                   "MANAGE_DATA_SOURCE"
                 ],
+                "azurePostgresFlexibleServerCount": 0,
                 "azureSqlDatabaseCount": 0,
                 "azureSqlManagedInstanceDbCount": 0,
                 "azureStorageAccountCount": 0,
-                "azureSubscriptionRubrikId": "00000000-0000-0000-0000-000000000000",
-                "disksCount": 0
+                "azureSubscriptionRubrikId": "00000000-0000-0000-0000-000000000000"
               }
             ]
           ],

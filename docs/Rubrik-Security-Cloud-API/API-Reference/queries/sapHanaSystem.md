@@ -36,6 +36,7 @@ Details of a SAP HANA system for a given FID.
         objectType
         onDemandSnapshotCount
         primaryClusterUuid
+        rbaRole
         replicatedObjectCount
         sid
         slaAssignment

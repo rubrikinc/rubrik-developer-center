@@ -18,4 +18,6 @@ Entra ID user.
 **Referenced by**
 
 - [AzureAdObjects.azureAdUser](AzureAdObjects.md)
+- [AzureAdPimActivePrincipalObject.azureAdUser](AzureAdPimActivePrincipalObject.md)
+- [AzureAdPimEligibilityPrincipalObject.azureAdUser](AzureAdPimEligibilityPrincipalObject.md)
 - [PrincipalObject.azureAdUser](PrincipalObject.md)

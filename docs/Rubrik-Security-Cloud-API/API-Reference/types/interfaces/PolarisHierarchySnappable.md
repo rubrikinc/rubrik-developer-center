@@ -79,12 +79,14 @@ Polaris protectable object.
 
 ## Implemented By
 
+- [AwsNativeConfig](../objects/AwsNativeConfig.md)
 - [AwsNativeDynamoDbTable](../objects/AwsNativeDynamoDbTable.md)
 - [AwsNativeEbsVolume](../objects/AwsNativeEbsVolume.md)
 - [AwsNativeEc2Instance](../objects/AwsNativeEc2Instance.md)
 - [AwsNativeRdsInstance](../objects/AwsNativeRdsInstance.md)
 - [AwsNativeS3Bucket](../objects/AwsNativeS3Bucket.md)
 - [AzureAdDirectory](../objects/AzureAdDirectory.md)
+- [AzureDevOpsRepository](../objects/AzureDevOpsRepository.md)
 - [AzureNativeManagedDisk](../objects/AzureNativeManagedDisk.md)
 - [AzureNativeVirtualMachine](../objects/AzureNativeVirtualMachine.md)
 - [AzureSqlDatabaseDb](../objects/AzureSqlDatabaseDb.md)
@@ -94,6 +96,8 @@ Polaris protectable object.
 - [GcpCloudSqlInstance](../objects/GcpCloudSqlInstance.md)
 - [GcpNativeDisk](../objects/GcpNativeDisk.md)
 - [GcpNativeGceInstance](../objects/GcpNativeGceInstance.md)
+- [GithubRepository](../objects/GithubRepository.md)
+- [GlueIcebergTable](../objects/GlueIcebergTable.md)
 - [K8sNamespace](../objects/K8sNamespace.md)
 - [M365BackupStorageMailbox](../objects/M365BackupStorageMailbox.md)
 - [M365BackupStorageOnedrive](../objects/M365BackupStorageOnedrive.md)

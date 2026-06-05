@@ -1,6 +1,6 @@
 # changePassword
 
-*No description available.*
+Changes a users password without using email.
 
 ## Arguments
 

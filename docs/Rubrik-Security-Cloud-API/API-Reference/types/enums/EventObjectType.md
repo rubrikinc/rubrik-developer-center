@@ -32,6 +32,7 @@ Enum representing all the possible object types which generate events.
 | AZURE_NATIVE_RESOURCE_GROUP | Azure Native Resource Group. |
 | AZURE_NATIVE_SUBSCRIPTION | Azure native subscription object. |
 | AZURE_NATIVE_VM | Azure native virtual machine object. |
+| AZURE_POSTGRES_FLEXIBLE_SERVER | Azure PostgreSQL Flexible Server. |
 | AZURE_SQL_DATABASE | Azure SQL database object. |
 | AZURE_SQL_DATABASE_SERVER | Azure SQL database server object. |
 | AZURE_SQL_MANAGED_INSTANCE | Azure SQL managed instance object. |
@@ -81,6 +82,10 @@ Enum representing all the possible object types which generate events.
 | GCP_NATIVE_PROJECT | GCP native project. |
 | GITHUB_ORGANIZATION | GitHub Organization. |
 | GITHUB_REPOSITORY | GitHub Repository. |
+| GLUE_ICEBERG_CATALOG | AWS Glue Iceberg Catalog. |
+| GLUE_ICEBERG_DATABASE | AWS Glue Iceberg Database. |
+| GLUE_ICEBERG_TABLE | AWS Glue Iceberg Table. |
+| GOOGLE_WORKSPACE_GROUP | Google Workspace Group. |
 | GOOGLE_WORKSPACE_ORGANIZATION | Google Workspace Organisation. |
 | GOOGLE_WORKSPACE_ORG_UNIT | Google Workspace Organisation unit. |
 | GOOGLE_WORKSPACE_SHARED_DRIVE | Google Workspace Shared Drive. |
@@ -170,6 +175,7 @@ Enum representing all the possible object types which generate events.
 | ORACLE_RAC | Oracle RAC object. |
 | ORGANIZATION | Organization object. |
 | ORION_THREAT_HUNT | Orion threat hunt. |
+| PING_FEDERATE_CLUSTER | Ping Federate Cluster. |
 | POSTGRES_DB_CLUSTER | Postgres Database Cluster. |
 | PRINCIPAL_ACCESS_POLICY | Access Policy principal type. |
 | PRINCIPAL_APP_ROLE | App Role principal type. |
@@ -189,6 +195,7 @@ Enum representing all the possible object types which generate events.
 | PRINCIPAL_DFS_LINK | DFS Link principal type. |
 | PRINCIPAL_DFS_NAMESPACE_V1 | DFS Namespace V1 principal type. |
 | PRINCIPAL_DFS_NAMESPACE_V2 | DFS Namespace V2 principal type. |
+| PRINCIPAL_DNS_NODE | DNS Node principal type. |
 | PRINCIPAL_DNS_ZONE | DNS Zone principal type. |
 | PRINCIPAL_DOMAIN_DNS | Domain DNS principal type. |
 | PRINCIPAL_EXTERNAL_ACCOUNT | External account principal type. |
@@ -203,13 +210,16 @@ Enum representing all the possible object types which generate events.
 | PRINCIPAL_LICENSING_SITE_SETTINGS | Licensing Site Settings principal type. |
 | PRINCIPAL_MSDS_QUOTA_CONTAINER | MSDS Quota Container principal type. |
 | PRINCIPAL_MSDS_QUOTA_CONTROL | MSDS Quota Control principal type. |
+| PRINCIPAL_MSKDS_PROV_ROOT_KEY | MS Key Distribution Service Root Key principal type. |
 | PRINCIPAL_NAMED_LOCATION | Named Location principal type. |
 | PRINCIPAL_NTDS_SITE_SETTINGS | NTDS Site Settings principal type. |
+| PRINCIPAL_NTFRS_SUBSCRIBER | NTFRS Subscriber principal type. |
 | PRINCIPAL_OAUTH2_PERMISSION_GRANT | OAuth2 Permission Grant principal type. |
 | PRINCIPAL_ORG_WIDE | Org wide principal type. |
 | PRINCIPAL_OU | OU principal type. |
 | PRINCIPAL_PASSWORD_SETTINGS | Password Settings principal type. |
 | PRINCIPAL_PASSWORD_SETTINGS_CONTAINER | Password Settings Container principal type. |
+| PRINCIPAL_PKI_ENROLLMENT_SERVICE | PKI Enrollment Service (AD CS CA) principal type. |
 | PRINCIPAL_PRINT_QUEUE | Print Queue principal type. |
 | PRINCIPAL_PUBLIC | Public principal type. |
 | PRINCIPAL_RID_MANAGER | RID Manager principal type. |

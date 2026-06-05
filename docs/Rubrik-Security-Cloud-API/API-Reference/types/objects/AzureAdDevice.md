@@ -25,3 +25,4 @@ Entra ID device.
 **Referenced by**
 
 - [AzureAdObjects.azureAdDevice](AzureAdObjects.md)
+- [AzureAdPimActivePrincipalObject.azureAdDevice](AzureAdPimActivePrincipalObject.md)

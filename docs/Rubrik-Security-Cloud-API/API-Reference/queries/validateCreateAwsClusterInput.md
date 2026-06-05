@@ -1,12 +1,12 @@
 # validateCreateAwsClusterInput
 
-Validates aws cluster create input.
+Validates AWS cluster create input.
 
 ## Arguments
 
 | Argument | Type | Description |
 |----------|------|-------------|
-| input *(required)* | [CreateAwsClusterInput](../types/inputs/CreateAwsClusterInput.md)! | CreateAwsClusterArg params for Aws. |
+| input *(required)* | [CreateAwsClusterInput](../types/inputs/CreateAwsClusterInput.md)! | CreateAwsClusterInput params for AWS. |
 
 ## Returns
 

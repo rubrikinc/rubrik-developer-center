@@ -21,6 +21,7 @@ Returns forecasted archival storage for the requested locations. Data is aggrega
       allArchivalLocationForecasts(locationIds: $locationIds) {
         confidence
         currentBytes
+        lastRefreshedAt
         locationId
         runwayWeeks
         weeklyGrowthPct
@@ -47,6 +48,7 @@ Returns forecasted archival storage for the requested locations. Data is aggrega
           {
             "confidence": "FORECAST_CONFIDENCE_HIGH",
             "currentBytes": 0.0,
+            "lastRefreshedAt": "2024-01-01T00:00:00.000Z",
             "locationId": "00000000-0000-0000-0000-000000000000",
             "runwayWeeks": 0.0,
             "weeklyGrowthPct": 0.0,

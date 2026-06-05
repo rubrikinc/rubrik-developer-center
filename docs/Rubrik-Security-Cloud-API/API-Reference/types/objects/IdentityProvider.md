@@ -13,6 +13,7 @@ Identity Provider is an entity responsible for authenticating a user account.
 | id | [UUID](../scalars/UUID.md)! | Unique identifier of the identity provider. |
 | idpClaimAttributes | [[IdpClaimAttributeType](IdpClaimAttributeType.md)!]! | List of claim attributes of the identity provider. |
 | isDefault | Boolean! | Specifies whether the identity provider is the default. |
+| isForceAuthnEnabled | Boolean! | Whether the SAML AuthnRequest sent to this identity provider sets ForceAuthn="true", asking the IdP to re-authenticate the user on every login instead of reusing a cached IdP session. |
 | metadataJson | String! | Metadata of the identity provider in JSON format. |
 | name | String! | Name of the Identity provider. |
 | ownerOrgId | String! | ID of the organization that owns the identity provider. |

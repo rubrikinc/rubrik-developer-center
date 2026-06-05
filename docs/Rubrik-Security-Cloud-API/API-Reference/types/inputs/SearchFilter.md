@@ -6,12 +6,12 @@ Parameters for mail or folder search.
 
 | Field | Type | Description |
 |-------|------|-------------|
-| archiveFolderAction | [ArchiveFolderAction](../enums/ArchiveFolderAction.md) | Specifies actions for the in-place archive folder. |
+| archiveFolderAction | [ArchiveFolderAction](../enums/ArchiveFolderAction.md) | Used to identify that how to deal with in-place archive folder. |
 | emailAddresses | [[EmailAddressFilter](EmailAddressFilter.md)!] |  |
-| fromTime | [DateTime](../scalars/DateTime.md) |  |
-| lambdaFilters | [LambdaPathFilters](LambdaPathFilters.md) | Parameters for using Lambda filters in the query. |
+| fromTime | [DateTime](../scalars/DateTime.md) | Represents the start time of the search filter. |
+| lambdaFilters | [LambdaPathFilters](LambdaPathFilters.md) | Used for Lambda search/browse, diff/full FMD paths for mailbox. |
 | searchKeywordFilter | [SearchKeywordFilter](SearchKeywordFilter.md) |  |
-| searchObjectFilter | [SearchObjectFilter](SearchObjectFilter.md) |  |
-| skipRifItems | Boolean | Specifies whether to skip items in the Recoverable Items folder. |
+| searchObjectFilter | [SearchObjectFilter](SearchObjectFilter.md) | Filters on object type. |
+| skipRifItems | Boolean | Specifies whether or not to skip items in Recoverable Items Folder. |
 | untilTime | [DateTime](../scalars/DateTime.md) |  |
-| useExactVersionMatch | Boolean | Determines whether you should use a query that is an exact version match. |
+| useExactVersionMatch | Boolean | Specifies whether to query items for exact version match. |

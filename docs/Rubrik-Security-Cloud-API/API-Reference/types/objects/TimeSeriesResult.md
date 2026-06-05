@@ -1,13 +1,13 @@
 # TimeSeriesResult
 
-*No description available.*
+Time-series data point used in time-bucketed group-by results.
 
 ## Fields
 
 | Field | Type | Description |
 |-------|------|-------------|
-| count | [Long](../scalars/Long.md)! |  |
-| timestamp | String! |  |
+| count | [Long](../scalars/Long.md)! | Aggregated count value at this timestamp. |
+| timestamp | String! | Timestamp of the data point as an RFC3339 string. |
 
 ## Used By
 

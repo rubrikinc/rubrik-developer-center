@@ -38,10 +38,10 @@ Represents a node in a hierarchy path.
 - AwsNativeAccountLogicalChildType.effectiveSlaSourceObject
 - AwsNativeAccountLogicalChildType.logicalPath
 - AwsNativeAccountLogicalChildType.physicalPath
+- [AwsNativeConfig.effectiveSlaSourceObject](AwsNativeConfig.md)
+- [AwsNativeConfig.logicalPath](AwsNativeConfig.md)
+- [AwsNativeConfig.physicalPath](AwsNativeConfig.md)
 - [AwsNativeDynamoDbTable.effectiveSlaSourceObject](AwsNativeDynamoDbTable.md)
 - [AwsNativeDynamoDbTable.logicalPath](AwsNativeDynamoDbTable.md)
 - [AwsNativeDynamoDbTable.physicalPath](AwsNativeDynamoDbTable.md)
-- [AwsNativeEbsVolume.effectiveSlaSourceObject](AwsNativeEbsVolume.md)
-- [AwsNativeEbsVolume.logicalPath](AwsNativeEbsVolume.md)
-- [AwsNativeEbsVolume.physicalPath](AwsNativeEbsVolume.md)
-- *…and 820 more*
+- *…and 895 more*

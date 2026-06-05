@@ -30,6 +30,7 @@ A cluster object.
         estimatedRunway
         id
         isAirGapped
+        isAssignedByParentAccount
         isClusterRemovalTprEnabled
         isHealthy
         isTprEnabled

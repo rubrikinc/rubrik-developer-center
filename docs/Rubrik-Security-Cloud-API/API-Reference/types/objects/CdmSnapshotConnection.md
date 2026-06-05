@@ -21,6 +21,7 @@ Paginated list of CdmSnapshot objects. Each page of the results includes at most
 - [CdmSnapshotGroupBySummary.cdmSnapshots](CdmSnapshotGroupBySummary.md)
 - [Db2Database.snapshotConnection](Db2Database.md)
 - [ExchangeDatabase.snapshotConnection](ExchangeDatabase.md)
+- [FusionComputeVirtualMachine.snapshotConnection](FusionComputeVirtualMachine.md)
 - [HyperVVirtualMachine.snapshotConnection](HyperVVirtualMachine.md)
 - KosmosSnappableHierarchyObjectType.snapshotConnection
 - [KubernetesProtectionSet.snapshotConnection](KubernetesProtectionSet.md)

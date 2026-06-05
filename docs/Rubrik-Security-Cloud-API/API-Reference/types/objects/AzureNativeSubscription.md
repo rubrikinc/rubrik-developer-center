@@ -15,6 +15,7 @@ An Azure Native Subscription. Refers to the logical entity that provides entitle
 | authorizedOperations | [[PolarisObjectAuthorizedOperationsEnum](../enums/PolarisObjectAuthorizedOperationsEnum.md)!]! | The authorized operations on the object. |
 | azureCloudType | [AzureCloudType](../enums/AzureCloudType.md)! | Type of Azure cloud, for example, Azure Public Cloud and Azure China Cloud. |
 | azureNativeResourceGroups | [AzureNativeResourceGroupConnection](AzureNativeResourceGroupConnection.md)! | Paginated list of all Azure Resource Groups in the subscription. |
+| azurePostgresFlexibleServerCount | Int! | The number of Azure PostgreSQL Flexible Servers in the subscription. |
 | azureSqlDatabaseDbCount | Int! | Count of Azure SQL databases in the subscription. |
 | azureSqlManagedInstanceDbCount | Int! | Count of Azure SQL Managed Instance databases in the subscription. |
 | azureStorageAccountCount | Int! | The number of Azure storage accounts in the subscription. |

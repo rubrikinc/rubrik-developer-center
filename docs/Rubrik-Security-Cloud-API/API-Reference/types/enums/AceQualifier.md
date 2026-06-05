@@ -1,6 +1,6 @@
 # AceQualifier
 
-*No description available.*
+Type of access expressed by an ACE (allow / deny / audit / alarm).
 
 ## Values
 

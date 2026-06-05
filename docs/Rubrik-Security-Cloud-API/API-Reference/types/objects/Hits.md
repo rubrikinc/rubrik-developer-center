@@ -6,12 +6,12 @@ Hit statistics including total hits, violations, and permitted hits.
 
 | Field | Type | Description |
 |-------|------|-------------|
-| permittedHits | Int! | Sum of hits permitted by allowlist. |
-| permittedHitsDelta | Int! | Represents the change in permitted hits between the current result and a previous result. The interval of change may depend on the endpoint returning the result. |
-| totalHits | Int! | Sum of all hits. |
-| totalHitsDelta | Int! | Represents the change in total hits between the current result and a previous result. The interval of change may depend on the endpoint returning the result. |
-| violations | Int! | Sum of hits not permitted by allowlist. |
-| violationsDelta | Int! | Represents the change in violation between the current result and a previous result. The interval of change may depend on the endpoint returning the result. |
+| permittedHits | [Long](../scalars/Long.md)! | Sum of hits permitted by allowlist. |
+| permittedHitsDelta | [Long](../scalars/Long.md)! | Represents the change in permitted hits between the current result and a previous result. The interval of change may depend on the endpoint returning the result. |
+| totalHits | [Long](../scalars/Long.md)! | Sum of all hits. |
+| totalHitsDelta | [Long](../scalars/Long.md)! | Represents the change in total hits between the current result and a previous result. The interval of change may depend on the endpoint returning the result. |
+| violations | [Long](../scalars/Long.md)! | Sum of hits not permitted by allowlist. |
+| violationsDelta | [Long](../scalars/Long.md)! | Represents the change in violation between the current result and a previous result. The interval of change may depend on the endpoint returning the result. |
 
 ## Used By
 

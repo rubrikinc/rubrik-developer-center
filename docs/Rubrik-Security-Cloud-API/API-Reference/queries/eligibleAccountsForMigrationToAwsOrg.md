@@ -29,6 +29,7 @@ Retrieves the list of accounts eligible for migration to an AWS organization.
         nodes {
           accountName
           cloudType
+          crossAccountRoleModel
           id
           message
           nativeId
@@ -65,10 +66,10 @@ Retrieves the list of accounts eligible for migration to an AWS organization.
               {
                 "accountName": "example-string",
                 "cloudType": "C2S",
+                "crossAccountRoleModel": "CROSS_ACCOUNT_ROLE_MODEL_UNSPECIFIED",
                 "id": "example-string",
                 "message": "example-string",
-                "nativeId": "example-string",
-                "orgId": "example-string"
+                "nativeId": "example-string"
               }
             ]
           ],

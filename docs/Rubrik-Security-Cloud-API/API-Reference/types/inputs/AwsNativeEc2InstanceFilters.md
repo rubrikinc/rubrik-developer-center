@@ -17,6 +17,7 @@ Filters for list of AWS EC2 instances.
 | isEligibleForProtection | Boolean | Filter workloads based on their eligibility for protection. |
 | nameOrIdSubstringFilter | [AwsNativeEc2InstanceNameOrIdSubstringFilter](AwsNativeEc2InstanceNameOrIdSubstringFilter.md) | Filter by name or ID substring. |
 | orgFilter | [OrgFilter](OrgFilter.md) | Filter by organization ID. |
+| outpostArnFilter | [AwsNativeOutpostArnFilter](AwsNativeOutpostArnFilter.md) | Filter by AWS Outpost ARN. |
 | protectionStatusFilter | [ProtectionStatusFilter](ProtectionStatusFilter.md) | Filter by protection status. |
 | rbsStatusFilter | [AwsInstanceCcOrCnpRbsConnectionStatusFilter](AwsInstanceCcOrCnpRbsConnectionStatusFilter.md) | Filter by RBS connection status. |
 | regionFilter | [AwsNativeRegionFilter](AwsNativeRegionFilter.md) | Filter by region. |

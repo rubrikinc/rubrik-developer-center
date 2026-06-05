@@ -12,4 +12,5 @@ AWS cloud accounts with features.
 | featuresToFilterOut | [[CloudAccountFeature](../enums/CloudAccountFeature.md)!] | Exclude AWS accounts that have any of these features enabled. |
 | includeInternalFeatures | Boolean | Include internal features in the response. |
 | operation | [Operation](../enums/Operation.md) | Filter by the operation defined in the RBAC system. |
+| serviceTypeFilter | [[AwsCloudAccountServiceType](../enums/AwsCloudAccountServiceType.md)!] | Filter accounts by BaaS or non-BaaS service type. |
 | statusFilters | [[CloudAccountStatus](../enums/CloudAccountStatus.md)!]! | List of status filters for listing cloud accounts. |

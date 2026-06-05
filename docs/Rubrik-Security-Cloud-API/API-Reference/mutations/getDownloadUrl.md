@@ -1,12 +1,12 @@
 # getDownloadUrl
 
-*No description available.*
+Get the download URL for a user file.
 
 ## Arguments
 
 | Argument | Type | Description |
 |----------|------|-------------|
-| downloadId *(required)* | [Long](../types/scalars/Long.md)! |  |
+| downloadId *(required)* | [Long](../types/scalars/Long.md)! | ID of the download. |
 
 ## Returns
 

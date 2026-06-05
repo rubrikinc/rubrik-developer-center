@@ -1,13 +1,13 @@
 # CreateAzureClusterInput
 
-Input for CDM cluster creation on Azure.
+Input for creating an Azure cloud cluster.
 
 ## Fields
 
 | Field | Type | Description |
 |-------|------|-------------|
 | cloudAccountId | String | Customer Azure cloud account ID. |
-| clusterConfig | [ClusterConfigInput](ClusterConfigInput.md) | Input cluster configuration. |
+| clusterConfig | [ClusterConfigInput](ClusterConfigInput.md) | Cluster configuration. |
 | isAzResilient | Boolean | Indicates whether the cluster should be deployed across multiple availability zones. |
 | isEsType | Boolean | If cluster is CC-ES. |
 | keepClusterOnFailure | Boolean | Flag to keep the cluster on failure. |

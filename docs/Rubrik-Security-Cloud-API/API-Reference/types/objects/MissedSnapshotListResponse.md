@@ -15,6 +15,7 @@ Supported in v5.0+
 
 **Queries**
 
+- [query: fusionComputeMissedSnapshots](../../queries/fusionComputeMissedSnapshots.md)
 - [query: getMissedMongoCollectionSetSnapshots](../../queries/getMissedMongoCollectionSetSnapshots.md)
 - [query: getMissedOpsManagerManagedMongoSourceSnapshots](../../queries/getMissedOpsManagerManagedMongoSourceSnapshots.md)
 - [query: mssqlDatabaseMissedSnapshots](../../queries/mssqlDatabaseMissedSnapshots.md)

@@ -1,6 +1,6 @@
 # IdentityResolutionType
 
-*No description available.*
+Classifies how a principal/identity is related to the identity provider that tracks it (local, federated from another internal IDP, or external/guest).
 
 ## Values
 

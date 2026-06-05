@@ -6,7 +6,7 @@ Create a Rubrik Cloud Cluster on AWS.
 
 | Argument | Type | Description |
 |----------|------|-------------|
-| input *(required)* | [CreateAwsClusterInput](../types/inputs/CreateAwsClusterInput.md)! | CreateAwsClusterArg params for Aws. |
+| input *(required)* | [CreateAwsClusterInput](../types/inputs/CreateAwsClusterInput.md)! | CreateAwsClusterInput params for AWS. |
 
 ## Returns
 

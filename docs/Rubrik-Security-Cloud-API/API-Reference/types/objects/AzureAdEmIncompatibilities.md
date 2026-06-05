@@ -8,6 +8,7 @@ Entitlement Management incompatible object.
 |-------|------|-------------|
 | displayName | String! | Display name of the incompatible object. |
 | objectType | [EmIncompatibleObjectType](../enums/EmIncompatibleObjectType.md)! | Type of incompatible object. |
+| targetId | String! | Identifier of the incompatible target object. |
 
 ## Used By
 

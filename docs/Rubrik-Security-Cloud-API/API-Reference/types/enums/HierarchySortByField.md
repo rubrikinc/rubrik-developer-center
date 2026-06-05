@@ -28,6 +28,8 @@ Fields for sorting hierarchy objects.
 | AZURE_DISK_CRG_SUBSCRIPTION_NAME | Sort Azure disks by subscription name from common resource group. |
 | AZURE_DISK_SIZE | Sort Azure disks by Disk size. |
 | AZURE_DISK_TYPE | Sort Azure disks by Disk type. |
+| AZURE_POSTGRES_FLEXIBLE_SERVER_REGION | Sort Azure Postgres Flexible Servers by region. |
+| AZURE_POSTGRES_FLEXIBLE_SERVER_RESOURCE_GROUP | Sort Azure Postgres Flexible Servers by resource group. |
 | AZURE_REGION | Sort by Azure region. |
 | AZURE_REGION_DISKCOUNT | Sort Azure Regions by Disk Count. |
 | AZURE_REGION_SQL_DATABASE_DB_COUNT | Sort Azure Regions by SQL Database DB Count. |
@@ -110,6 +112,11 @@ Fields for sorting hierarchy objects.
 | GCP_PROJECT_NUMBER | Sort GCP Projects by Project Number. |
 | GCP_PROJECT_ORG_NAME | Sort GCP Projects by Organization Name. |
 | GITHUB_REPO_SIZE | Sort GitHub repositories by size. |
+| GLUE_ICEBERG_DATABASE_AWS_ACCOUNT_NAME | Sort Glue Iceberg Databases by ancestor AWS account name. |
+| GLUE_ICEBERG_DATABASE_CATALOG_NAME | Sort Glue Iceberg Databases by parent catalog name. |
+| GLUE_ICEBERG_TABLE_AWS_ACCOUNT_NAME | Sort Glue Iceberg Tables by ancestor AWS account name. |
+| GLUE_ICEBERG_TABLE_CATALOG_NAME | Sort Glue Iceberg Tables by grandparent catalog name. |
+| GLUE_ICEBERG_TABLE_DATABASE_NAME | Sort Glue Iceberg Tables by parent database name. |
 | GWS_USER_EMAIL_ADDRESS | Sort Google Workspace users by primary email address. |
 | GWS_USER_ORG_UNIT | Sort Google Workspace users by organization unit name. |
 | ID | Sort by ID of managed object. |

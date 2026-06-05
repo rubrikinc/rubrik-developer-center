@@ -8,5 +8,8 @@ Supported in v5.0+
 |-------|------|-------------|
 | destinationFolder | String | Supported in v9.6 The destination folder for datastore migration. |
 | hostId | String | Supported in v5.0+ v5.0-v5.3: ID of the host to instantly recover to v6.0: ID of the host to instantly recover to. v7.0+: ID of the instant recovery target host. |
+| keepMacAddress | Boolean | Supported in v9.6 Whether to preserve the original MAC addresses of network adapters. |
+| removeNetworkDevices | Boolean | Supported in v9.6 Determines whether to remove the network interfaces from the instantly-recovered virtual machine. 'true' removes all network interfaces. The default value is 'false'. |
 | shouldMigrateDataStore | Boolean | Supported in v9.6 Determines whether the Rubrik cluster should perform datastore migration right after instant recovery. |
+| virtualSwitchMappings | [[HypervVirtualSwitchMappingInput](HypervVirtualSwitchMappingInput.md)!] | Supported in v9.6 Mapping of NIC indices to virtual switches. |
 | vmName | String | Name of the new virtual machine to instantly recover. |

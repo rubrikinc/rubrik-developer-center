@@ -72,6 +72,10 @@ Hierarchy object type enum covering all CDM and RSC hierarchy objects.
 | GCP_CLOUD_SQL_INSTANCE | GCP Cloud SQL Instance. |
 | GITHUB_ORGANIZATION | GitHub Organization. |
 | GITHUB_REPOSITORY | GitHub Repository. |
+| GLUE_ICEBERG_CATALOG | Glue Iceberg Catalog. |
+| GLUE_ICEBERG_DATABASE | Glue Iceberg Database. |
+| GLUE_ICEBERG_TABLE | Glue Iceberg Table. |
+| GOOGLE_WORKSPACE_GROUP | Google Workspace Group. |
 | GOOGLE_WORKSPACE_ORGANIZATION | Google Workspace Organization. |
 | GOOGLE_WORKSPACE_ORG_UNIT | Google Workspace Organization Unit. |
 | GOOGLE_WORKSPACE_SHARED_DRIVE | Google Workspace Shared Drive. |
@@ -164,6 +168,7 @@ Hierarchy object type enum covering all CDM and RSC hierarchy objects.
 | OracleDatabase | Oracle Database. |
 | OracleHost | Oracle Host. |
 | OracleRac | Oracle Rac. |
+| PING_FEDERATE_CLUSTER | Ping Federate cluster. |
 | POSTGRES_DATABASE | PostgreSQL Database. |
 | POSTGRES_DB_CLUSTER | Postgres Database Cluster. |
 | PROXMOX_CLUSTER | Proxmox Cluster. |

@@ -20,3 +20,5 @@ Represents the permissions for a feature.
 **Referenced by**
 
 - [CloudAccountFeaturePermission.featurePermissions](CloudAccountFeaturePermission.md)
+- [DevOpsCloudAccountListCurrentPermissionsReply.featurePermissions](DevOpsCloudAccountListCurrentPermissionsReply.md)
+- [DevOpsCloudAccountListLatestPermissionsReply.featurePermissions](DevOpsCloudAccountListLatestPermissionsReply.md)

@@ -19,6 +19,7 @@ List all connected clusters.
     ```graphql
     query {
       allConnectedClusters {
+        accountName
         apiVersion
         isAirGapped
         isArchived
@@ -42,12 +43,12 @@ List all connected clusters.
       "data": {
         "allConnectedClusters": [
           {
+            "accountName": "example-string",
             "apiVersion": "example-string",
             "isAirGapped": true,
             "isArchived": true,
             "name": "example-string",
-            "uuid": "example-string",
-            "version": "example-string"
+            "uuid": "example-string"
           }
         ]
       }

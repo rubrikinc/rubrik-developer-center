@@ -18,6 +18,7 @@ Azure Tag.
 - [AzureNativeResourceGroup.tags](AzureNativeResourceGroup.md)
 - [AzureNativeStorageAccount.tags](AzureNativeStorageAccount.md)
 - [AzureNativeVirtualMachine.tags](AzureNativeVirtualMachine.md)
+- [AzurePostgresFlexibleServer.tags](AzurePostgresFlexibleServer.md)
 - [AzureResourceGroup.tags](AzureResourceGroup.md)
 - [AzureSqlDatabaseDb.tags](AzureSqlDatabaseDb.md)
 - [AzureSqlDatabaseServer.tags](AzureSqlDatabaseServer.md)

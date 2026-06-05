@@ -8,5 +8,6 @@ Supported in v9.0+ v9.0: Input to restore Kubernetes resources from a resource s
 |-------|------|-------------|
 | filter | String | Supported in v9.0+ The filter for selecting resources from the snapshot to restore. |
 | ignoreErrors | Boolean | Supported in v9.0+ Specifies whether to ignore errors during the restore operation. By default, this value is false. |
+| namespacesToRestore | [String!] | Optional list of namespaces to selectively restore from an Application Protection Set snapshot. When specified, only resources in these namespaces are restored. When omitted, all namespaces are restored. |
 | pvcNames | [String!] | Supported in v9.1+ |
 | storageMapping | [StorageMappingInput](StorageMappingInput.md) | Supported in v9.5+ The storage mapping to be used for the restore operation. |

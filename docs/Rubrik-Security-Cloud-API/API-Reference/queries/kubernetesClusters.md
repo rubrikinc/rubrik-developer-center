@@ -32,6 +32,8 @@ Summary of all Kubernetes Clusters.
           distribution
           eksClusterArn
           externalIp
+          helmStatus
+          helmVersion
           id
           isAutoPsCreationEnabled
           isPullSecretConfigured

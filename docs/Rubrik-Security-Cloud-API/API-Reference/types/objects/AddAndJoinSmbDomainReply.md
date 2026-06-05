@@ -6,7 +6,7 @@ Reply Object for AddAndJoinSmbDomain.
 
 | Field | Type | Description |
 |-------|------|-------------|
-| output | [SmbDomainDetail](SmbDomainDetail.md) |  |
+| output | [SmbDomainDetail](SmbDomainDetail.md) | Supported in v5.0+ |
 
 ## Used By
 

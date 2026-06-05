@@ -6,6 +6,7 @@ Supported in v5.0+
 
 | Field | Type | Description |
 |-------|------|-------------|
+| backupNodes | [String!] | Supported in v9.6 List of RAC node names designated for parallel backup. The array order defines channel round-robin assignment. |
 | configuredSlaDomainId | String | Supported in v5.0-v5.1 ID of the SLA Domain protecting the specified Oracle object. |
 | configuredSlaDomainIdDeprecated | String | Supported in v6.0+ ID of the SLA domain protecting the specified Oracle object. Log backup jobs are no longer scheduled if the SLA domain indicates the Oracle object is unprotected. The specified SLA domain is not used to configure the protection or retention for this Oracle object. This is a DEPRECATED field, and will be removed in later releases. |
 | hostLogRetentionHours | Int | Supported in v5.2-v5.3 Specifies an interval in hours. For Oracle archived redo log files whose nextTime is before (now - interval), the next log snapshot job will delete them from the host. Set to 0 for inheriting the value from its parent; -1 for immediate deletion; and -2 to skip log deletion. |
@@ -15,4 +16,7 @@ Supported in v5.0+
 | nodeOrder | [[OracleNodeOrderInput](OracleNodeOrderInput.md)!] | Supported in v6.0+ Specifies an order for the RAC nodes. Automated Oracle backups use the RAC nodes in the specified order. |
 | numChannels | Int | Supported in v5.0-v5.3 Number of channels used to backup the Oracle database. |
 | oracleUpdateCommon | [OracleUpdateCommonInput](OracleUpdateCommonInput.md) |  |
+| primaryNode | String | Supported in v9.6 Name of the RAC node designated as the primary backup node. |
+| secondaryNodes | [String!] | Supported in v9.6 Ordered list of secondary RAC node names. Array position defines fallback priority when the primary node is unavailable (position 0 = first fallback). |
 | shouldDistributeBackupsAutomatically | Boolean | Supported in v6.0+ Boolean value that specifies whether the Rubrik cluster should automatically distribute backups across Oracle database instances running on the RAC nodes. By default, backups are run from the first connected node in the RAC priority order. |
+| shouldEnableMultiNodeBackup | Boolean | Supported in v9.6 Boolean value that specifies whether multi-node backup is enabled for this Oracle RAC. When set to true, backupNodes and primaryNode must also be provided in the same request. When set to false, all stored multi-node backup configuration (backupNodes, primaryNode, secondaryNodes) is cleared. |

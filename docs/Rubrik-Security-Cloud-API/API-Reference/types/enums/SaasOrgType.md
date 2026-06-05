@@ -8,10 +8,13 @@ The different SaaS organization types supported.
 |-------|-------------|
 | ATLASSIAN_ORG | Atlassian Org type. |
 | AUTH0_ORG | Auth0 Org type. |
+| AZURE_DEVOPS_ORG | Azure DevOps Org type. |
 | DYNAMICS_365_ORG | Dynamics Org type. |
+| GITHUB_ORG | GitHub Org type. |
 | GOOGLE_WORKSPACE_ORG | Google workspace Org type. |
 | M365_BACKUP_STORAGE_ORG | M365 Backup Storage Org type. |
 | OKTA_ORG | OKTA Org type. |
+| POWER_PLATFORM_ORG | Power Platform Org type. |
 | SAAS_ORG_TYPE_UNSPECIFIED | Unspecified SaaS application type. |
 | SALESFORCE_ORG | Salesforce Org type. |
 | SLACK_ORG | Slack Org type. |

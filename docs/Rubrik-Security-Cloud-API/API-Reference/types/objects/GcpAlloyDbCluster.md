@@ -19,7 +19,6 @@ Represents a GCP AlloyDB cluster.
 | effectiveRetentionSlaDomain | [SlaDomain](../interfaces/SlaDomain.md) | Effective retention of the SLA Domain of the hierarchy object. |
 | effectiveSlaDomain | [SlaDomain](../interfaces/SlaDomain.md)! | Effective SLA Domain of the hierarchy object. |
 | effectiveSlaSourceObject | [PathNode](PathNode.md) | Path node of the effective SLA Domain source. |
-| gcpNativeProjectDetails | [GcpNativeProjectDetails](GcpNativeProjectDetails.md) | Project details of the AlloyDB cluster. |
 | gcpProject | [GcpNativeProject](GcpNativeProject.md) | GCP Project of the AlloyDB cluster. |
 | gcpProjectDetails | [GcpNativeProjectDetails](GcpNativeProjectDetails.md)! | Project details of the AlloyDB cluster. |
 | id | [UUID](../scalars/UUID.md)! | ID of the hierarchy object. |

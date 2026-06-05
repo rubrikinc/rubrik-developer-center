@@ -102,8 +102,8 @@
 - [ExchangeDatabase.newestSnapshot](ExchangeDatabase.md)
 - [ExchangeDatabase.oldestSnapshot](ExchangeDatabase.md)
 - [ExchangeLiveMount.sourceSnapshot](ExchangeLiveMount.md)
-- [GetAnomalyDetailsReply.previousSnapshot](GetAnomalyDetailsReply.md)
-- [GetAnomalyDetailsReply.snapshot](GetAnomalyDetailsReply.md)
-- [HierarchySnappableFileVersion.snapshot](HierarchySnappableFileVersion.md)
-- [HyperVLiveMount.sourceSnapshot](HyperVLiveMount.md)
-- *…and 114 more*
+- [FusionComputeVirtualMachine.newestArchivedSnapshot](FusionComputeVirtualMachine.md)
+- [FusionComputeVirtualMachine.newestIndexedSnapshot](FusionComputeVirtualMachine.md)
+- [FusionComputeVirtualMachine.newestReplicatedSnapshot](FusionComputeVirtualMachine.md)
+- [FusionComputeVirtualMachine.newestSnapshot](FusionComputeVirtualMachine.md)
+- *…and 119 more*

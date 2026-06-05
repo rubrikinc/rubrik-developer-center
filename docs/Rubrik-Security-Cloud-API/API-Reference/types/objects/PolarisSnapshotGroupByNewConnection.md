@@ -15,12 +15,14 @@ Paginated list of PolarisSnapshotGroupByNew objects. Each page of the results in
 
 **Referenced by**
 
+- [AwsNativeConfig.snapshotGroupByNewConnection](AwsNativeConfig.md)
 - [AwsNativeDynamoDbTable.snapshotGroupByNewConnection](AwsNativeDynamoDbTable.md)
 - [AwsNativeEbsVolume.snapshotGroupByNewConnection](AwsNativeEbsVolume.md)
 - [AwsNativeEc2Instance.snapshotGroupByNewConnection](AwsNativeEc2Instance.md)
 - [AwsNativeRdsInstance.snapshotGroupByNewConnection](AwsNativeRdsInstance.md)
 - [AwsNativeS3Bucket.snapshotGroupByNewConnection](AwsNativeS3Bucket.md)
 - [AzureAdDirectory.snapshotGroupByNewConnection](AzureAdDirectory.md)
+- [AzureDevOpsRepository.snapshotGroupByNewConnection](AzureDevOpsRepository.md)
 - [AzureNativeManagedDisk.snapshotGroupByNewConnection](AzureNativeManagedDisk.md)
 - [AzureNativeVirtualMachine.snapshotGroupByNewConnection](AzureNativeVirtualMachine.md)
 - [AzureSqlDatabaseDb.snapshotGroupByNewConnection](AzureSqlDatabaseDb.md)
@@ -30,6 +32,8 @@ Paginated list of PolarisSnapshotGroupByNew objects. Each page of the results in
 - [GcpCloudSqlInstance.snapshotGroupByNewConnection](GcpCloudSqlInstance.md)
 - [GcpNativeDisk.snapshotGroupByNewConnection](GcpNativeDisk.md)
 - [GcpNativeGceInstance.snapshotGroupByNewConnection](GcpNativeGceInstance.md)
+- [GithubRepository.snapshotGroupByNewConnection](GithubRepository.md)
+- [GlueIcebergTable.snapshotGroupByNewConnection](GlueIcebergTable.md)
 - [K8sNamespace.snapshotGroupByNewConnection](K8sNamespace.md)
 - [M365BackupStorageGroup.snapshotGroupByNewConnection](M365BackupStorageGroup.md)
 - [M365BackupStorageMailbox.snapshotGroupByNewConnection](M365BackupStorageMailbox.md)
@@ -41,8 +45,4 @@ Paginated list of PolarisSnapshotGroupByNew objects. Each page of the results in
 - MicrosoftOnedrive.snapshotGroupByNewConnection
 - MicrosoftOrg.snapshotGroupByNewConnection
 - MicrosoftSite.snapshotGroupByNewConnection
-- [O365Calendar.snapshotGroupByNewConnection](O365Calendar.md)
-- [O365Group.snapshotGroupByNewConnection](O365Group.md)
-- [O365Mailbox.snapshotGroupByNewConnection](O365Mailbox.md)
-- [O365Onedrive.snapshotGroupByNewConnection](O365Onedrive.md)
-- *…and 7 more*
+- *…and 11 more*

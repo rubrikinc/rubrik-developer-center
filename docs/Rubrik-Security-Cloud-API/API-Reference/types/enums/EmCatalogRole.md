@@ -1,6 +1,6 @@
 # EmCatalogRole
 
-Represents the built-in catalog role in Entitlement Management. These are the only roles that can be assigned — custom roles are not supported.
+Represents the built-in catalog role in Entitlement Management. These are the only roles that can be assigned -- custom roles are not supported.
 
 ## Values
 

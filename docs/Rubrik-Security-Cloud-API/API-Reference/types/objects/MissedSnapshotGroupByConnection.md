@@ -19,6 +19,7 @@ Paginated list of MissedSnapshotGroupBy objects. Each page of the results includ
 - CdmHierarchySnappableNew.missedSnapshotGroupByConnection
 - [Db2Database.missedSnapshotGroupByConnection](Db2Database.md)
 - [ExchangeDatabase.missedSnapshotGroupByConnection](ExchangeDatabase.md)
+- [FusionComputeVirtualMachine.missedSnapshotGroupByConnection](FusionComputeVirtualMachine.md)
 - [HyperVVirtualMachine.missedSnapshotGroupByConnection](HyperVVirtualMachine.md)
 - KosmosSnappableHierarchyObjectType.missedSnapshotGroupByConnection
 - [KubernetesProtectionSet.missedSnapshotGroupByConnection](KubernetesProtectionSet.md)

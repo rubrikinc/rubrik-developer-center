@@ -6,47 +6,55 @@ Specifies the policy type of an Intune device management configuration policy.
 
 | Value | Description |
 |-------|-------------|
-| INTUNE_DEVICE_MANAGEMENT_POLICY_TYPE_ACCOUNT_PROTECTION | Account protection policy type. |
-| INTUNE_DEVICE_MANAGEMENT_POLICY_TYPE_ADMINISTRATIVE_TEMPLATES | Administrative templates policy type. |
-| INTUNE_DEVICE_MANAGEMENT_POLICY_TYPE_ANTIVIRUS | Antivirus endpoint security policy type. |
-| INTUNE_DEVICE_MANAGEMENT_POLICY_TYPE_APP_CONTROL | App control for business policy type. |
-| INTUNE_DEVICE_MANAGEMENT_POLICY_TYPE_ATTACK_SURFACE_REDUCTION | Attack surface reduction policy type. |
-| INTUNE_DEVICE_MANAGEMENT_POLICY_TYPE_ATTACK_SURFACE_REDUCTION_RULES | Attack surface reduction rules policy type. |
-| INTUNE_DEVICE_MANAGEMENT_POLICY_TYPE_CONFIGURATION_POLICIES_CONFIG_MANAGER | Configuration Manager policies. |
-| INTUNE_DEVICE_MANAGEMENT_POLICY_TYPE_CUSTOM | Custom policy type. |
-| INTUNE_DEVICE_MANAGEMENT_POLICY_TYPE_DELIVERY_OPTIMIZATION | Delivery optimization policy type. |
-| INTUNE_DEVICE_MANAGEMENT_POLICY_TYPE_DEVICE_CONFIGURATION | Device configuration policy type. |
-| INTUNE_DEVICE_MANAGEMENT_POLICY_TYPE_DEVICE_CONTROL | Device control policy type. |
-| INTUNE_DEVICE_MANAGEMENT_POLICY_TYPE_DEVICE_FIRMWARE_CONFIGURATION | Device firmware configuration policy type. |
-| INTUNE_DEVICE_MANAGEMENT_POLICY_TYPE_DEVICE_MANAGEMENT_INTENT | Device management intent policy type. |
-| INTUNE_DEVICE_MANAGEMENT_POLICY_TYPE_DEVICE_RESTRICTIONS | Device restrictions policy type. |
-| INTUNE_DEVICE_MANAGEMENT_POLICY_TYPE_DISK_ENCRYPTION | Disk encryption endpoint security policy type. |
-| INTUNE_DEVICE_MANAGEMENT_POLICY_TYPE_DRIVER_UPDATE | Windows driver update policy type. |
-| INTUNE_DEVICE_MANAGEMENT_POLICY_TYPE_EDITION_UPGRADE | Edition upgrade policy type. |
-| INTUNE_DEVICE_MANAGEMENT_POLICY_TYPE_EMAIL | Email policy type. |
-| INTUNE_DEVICE_MANAGEMENT_POLICY_TYPE_ENDPOINT_DETECTION_RESPONSE | Endpoint detection and response policy type. |
-| INTUNE_DEVICE_MANAGEMENT_POLICY_TYPE_ENDPOINT_PRIVILEGE_MANAGEMENT | Endpoint privilege management policy type. |
-| INTUNE_DEVICE_MANAGEMENT_POLICY_TYPE_ENDPOINT_PROTECTION | Endpoint protection policy type. |
-| INTUNE_DEVICE_MANAGEMENT_POLICY_TYPE_FEATURE_UPDATE | Windows feature update policy type. |
-| INTUNE_DEVICE_MANAGEMENT_POLICY_TYPE_FIREWALL | Firewall endpoint security policy type. |
-| INTUNE_DEVICE_MANAGEMENT_POLICY_TYPE_FIREWALL_RULES | Firewall rules endpoint security policy type. |
-| INTUNE_DEVICE_MANAGEMENT_POLICY_TYPE_GROUP_POLICY_CONFIGURATION | Group policy configuration policy type. |
-| INTUNE_DEVICE_MANAGEMENT_POLICY_TYPE_HARDWARE_CONFIGURATION | Hardware configuration policy type. |
-| INTUNE_DEVICE_MANAGEMENT_POLICY_TYPE_HEALTH_MONITORING | Health monitoring policy type. |
-| INTUNE_DEVICE_MANAGEMENT_POLICY_TYPE_IDENTITY_PROTECTION | Identity protection policy type. |
-| INTUNE_DEVICE_MANAGEMENT_POLICY_TYPE_KIOSK | Kiosk policy type. |
-| INTUNE_DEVICE_MANAGEMENT_POLICY_TYPE_MOBILE_APP_CONFIGURATION | Mobile app configuration policy type. |
-| INTUNE_DEVICE_MANAGEMENT_POLICY_TYPE_PKCS_CERTIFICATE | PKCS certificate policy type. |
-| INTUNE_DEVICE_MANAGEMENT_POLICY_TYPE_QUALITY_UPDATE | Windows quality update policy type. |
-| INTUNE_DEVICE_MANAGEMENT_POLICY_TYPE_SCEP_CERTIFICATE | SCEP certificate policy type. |
-| INTUNE_DEVICE_MANAGEMENT_POLICY_TYPE_SECURITY_BASELINE | Security baseline policy type. |
-| INTUNE_DEVICE_MANAGEMENT_POLICY_TYPE_SETTINGS_CATALOG | Settings catalog policy type. |
-| INTUNE_DEVICE_MANAGEMENT_POLICY_TYPE_SHARED_DEVICE | Shared device policy type. |
-| INTUNE_DEVICE_MANAGEMENT_POLICY_TYPE_TEMPLATES | Templates policy type. |
-| INTUNE_DEVICE_MANAGEMENT_POLICY_TYPE_TRUSTED_CERTIFICATE | Trusted certificate policy type. |
+| INTUNE_DEVICE_MANAGEMENT_POLICY_TYPE_ADMINISTRATIVE_TEMPLATES | ADMX-backed administrative templates. |
+| INTUNE_DEVICE_MANAGEMENT_POLICY_TYPE_ANDROID_FOR_WORK_MIGRATION_POLICY | Migration profile for moving to Android Management API. |
+| INTUNE_DEVICE_MANAGEMENT_POLICY_TYPE_BIOS_CONFIGURATIONS | BIOS and firmware settings (Dell, HP, Lenovo, etc.). |
+| INTUNE_DEVICE_MANAGEMENT_POLICY_TYPE_BIOS_CONFIGURATIONS_REACT | BIOS configurations React internal variant. |
+| INTUNE_DEVICE_MANAGEMENT_POLICY_TYPE_CUSTOM | OMA-URI custom configuration profiles. |
+| INTUNE_DEVICE_MANAGEMENT_POLICY_TYPE_CUSTOM_ADMINISTRATIVE_TEMPLATES | Imported ADMX administrative templates (Preview). |
+| INTUNE_DEVICE_MANAGEMENT_POLICY_TYPE_DELIVERY_OPTIMIZATION | Windows Update delivery optimization settings. |
+| INTUNE_DEVICE_MANAGEMENT_POLICY_TYPE_DERIVED_CREDENTIAL | Derived credential enrollment profiles. |
+| INTUNE_DEVICE_MANAGEMENT_POLICY_TYPE_DEVICE_FEATURES | Platform-specific device features (AirPrint, notifications, etc.). |
+| INTUNE_DEVICE_MANAGEMENT_POLICY_TYPE_DEVICE_FIRMWARE_CONFIGURATION_INTERFACE | DFCI BIOS management profiles. |
+| INTUNE_DEVICE_MANAGEMENT_POLICY_TYPE_DEVICE_FIRMWARE_CONFIGURATION_INTERFACE_REACT | DFCI BIOS management React internal variant. |
+| INTUNE_DEVICE_MANAGEMENT_POLICY_TYPE_DEVICE_RESTRICTIONS | Platform-specific device restriction profiles. |
+| INTUNE_DEVICE_MANAGEMENT_POLICY_TYPE_DEVICE_RESTRICTIONS_WINDOWS_10_TEAM | Device restrictions for Windows 10 Team (Surface Hub). |
+| INTUNE_DEVICE_MANAGEMENT_POLICY_TYPE_DOMAIN_JOIN | Hybrid Azure AD join domain join configuration. |
+| INTUNE_DEVICE_MANAGEMENT_POLICY_TYPE_EDITION_UPGRADE_AND_MODE_SWITCH | Windows edition upgrade and S-mode switch profiles. |
+| INTUNE_DEVICE_MANAGEMENT_POLICY_TYPE_EMAIL | Email configuration profiles (Exchange, etc.). |
+| INTUNE_DEVICE_MANAGEMENT_POLICY_TYPE_EMAIL_SAMSUNG_KNOX_ONLY | Samsung KNOX-only email configuration profiles. |
+| INTUNE_DEVICE_MANAGEMENT_POLICY_TYPE_ENDPOINT_PROTECTION | Endpoint protection profiles (firewall, disk encryption, etc.). |
+| INTUNE_DEVICE_MANAGEMENT_POLICY_TYPE_ENDPOINT_SECURITY_ACB | Endpoint security App Control for Business profiles. |
+| INTUNE_DEVICE_MANAGEMENT_POLICY_TYPE_ENDPOINT_SECURITY_ACCOUNT_PROTECTION | Endpoint security Account protection profiles. |
+| INTUNE_DEVICE_MANAGEMENT_POLICY_TYPE_ENDPOINT_SECURITY_ANTIVIRUS | Endpoint security Antivirus profiles. |
+| INTUNE_DEVICE_MANAGEMENT_POLICY_TYPE_ENDPOINT_SECURITY_ASR | Endpoint security Attack surface reduction profiles. |
+| INTUNE_DEVICE_MANAGEMENT_POLICY_TYPE_ENDPOINT_SECURITY_DISK_ENCRYPTION | Endpoint security Disk Encryption profiles. |
+| INTUNE_DEVICE_MANAGEMENT_POLICY_TYPE_ENDPOINT_SECURITY_EDR | Endpoint security Endpoint Detection Response profiles. |
+| INTUNE_DEVICE_MANAGEMENT_POLICY_TYPE_ENDPOINT_SECURITY_EPM | Endpoint security Endpoint Privilege Management profiles. |
+| INTUNE_DEVICE_MANAGEMENT_POLICY_TYPE_ENDPOINT_SECURITY_FIREWALL | Endpoint security Firewall profiles. |
+| INTUNE_DEVICE_MANAGEMENT_POLICY_TYPE_EXTENSION | MacOS system/kernel extensions configuration. |
+| INTUNE_DEVICE_MANAGEMENT_POLICY_TYPE_IDENTITY_PROTECTION | Windows Hello for Business and identity protection. |
+| INTUNE_DEVICE_MANAGEMENT_POLICY_TYPE_KIOSK | Kiosk mode configuration profiles. |
+| INTUNE_DEVICE_MANAGEMENT_POLICY_TYPE_MICROSOFT_DEFENDER_FOR_ENDPOINT | Microsoft Defender for Endpoint onboarding (desktop Windows 10+). |
+| INTUNE_DEVICE_MANAGEMENT_POLICY_TYPE_MX_PROFILE_ZEBRA_ONLY | Zebra MX profile configuration (Android). |
+| INTUNE_DEVICE_MANAGEMENT_POLICY_TYPE_NETWORK_BOUNDARY | Network boundary configuration profiles. |
+| INTUNE_DEVICE_MANAGEMENT_POLICY_TYPE_OEM_CONFIG | Android Enterprise OEMConfig profiles. |
+| INTUNE_DEVICE_MANAGEMENT_POLICY_TYPE_OVERRIDE_GROUP_POLICY | Override local group policy settings. |
+| INTUNE_DEVICE_MANAGEMENT_POLICY_TYPE_PKCS_CERTIFICATE | PKCS certificate enrollment profiles. |
+| INTUNE_DEVICE_MANAGEMENT_POLICY_TYPE_PKCS_IMPORTED_CERTIFICATE | PKCS imported certificate profiles. |
+| INTUNE_DEVICE_MANAGEMENT_POLICY_TYPE_PREFERENCE_FILE | MacOS preference file configuration profiles. |
+| INTUNE_DEVICE_MANAGEMENT_POLICY_TYPE_PROPERTIES_CATALOG | Properties catalog configuration profiles. |
+| INTUNE_DEVICE_MANAGEMENT_POLICY_TYPE_SCEP_CERTIFICATE | SCEP certificate enrollment profiles. |
+| INTUNE_DEVICE_MANAGEMENT_POLICY_TYPE_SECURE_ASSESSMENT_EDUCATION | Secure assessment (Education, Take a Test) profiles. |
+| INTUNE_DEVICE_MANAGEMENT_POLICY_TYPE_SETTINGS_CATALOG | Settings Catalog profiles. |
+| INTUNE_DEVICE_MANAGEMENT_POLICY_TYPE_SHARED_MULTI_USER_DEVICE | Shared multi-user device profiles. |
+| INTUNE_DEVICE_MANAGEMENT_POLICY_TYPE_SOFTWARE_UPDATES | Software update profiles for iOS/macOS. |
+| INTUNE_DEVICE_MANAGEMENT_POLICY_TYPE_TRUSTED_CERTIFICATE | Trusted root certificate profiles. |
 | INTUNE_DEVICE_MANAGEMENT_POLICY_TYPE_UNKNOWN | The policy type is unknown. |
-| INTUNE_DEVICE_MANAGEMENT_POLICY_TYPE_UPDATE_RING | Windows update ring policy type. |
-| INTUNE_DEVICE_MANAGEMENT_POLICY_TYPE_VPN | VPN policy type. |
-| INTUNE_DEVICE_MANAGEMENT_POLICY_TYPE_WIFI | Wi-Fi policy type. |
-| INTUNE_DEVICE_MANAGEMENT_POLICY_TYPE_WINDOWS_HELLO_FOR_BUSINESS | Windows Hello for Business policy type. |
-| INTUNE_DEVICE_MANAGEMENT_POLICY_TYPE_WIRED_NETWORK | Wired network policy type. |
+| INTUNE_DEVICE_MANAGEMENT_POLICY_TYPE_VPN | VPN connection profiles. |
+| INTUNE_DEVICE_MANAGEMENT_POLICY_TYPE_WIFI | Wi-Fi connection profiles. |
+| INTUNE_DEVICE_MANAGEMENT_POLICY_TYPE_WIFI_IMPORT | Wi-Fi profiles imported from XML. |
+| INTUNE_DEVICE_MANAGEMENT_POLICY_TYPE_WINDOWS_HEALTH_MONITORING | Windows health monitoring (endpoint analytics) profiles. |
+| INTUNE_DEVICE_MANAGEMENT_POLICY_TYPE_WINDOWS_KIOSK | Windows kiosk mode profiles. |
+| INTUNE_DEVICE_MANAGEMENT_POLICY_TYPE_WINDOWS_ZTDNS | Zero-trust DNS configuration profiles. |
+| INTUNE_DEVICE_MANAGEMENT_POLICY_TYPE_WIRED_NETWORK | Wired network authentication profiles. |

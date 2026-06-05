@@ -1,13 +1,13 @@
 # createUser
 
-*No description available.*
+Create a new user.
 
 ## Arguments
 
 | Argument | Type | Description |
 |----------|------|-------------|
 | email *(required)* | String! | User email. |
-| roleIds *(required)* | [String!]! |  |
+| roleIds *(required)* | [String!]! | Role IDs to assign to the user. |
 
 ## Returns
 

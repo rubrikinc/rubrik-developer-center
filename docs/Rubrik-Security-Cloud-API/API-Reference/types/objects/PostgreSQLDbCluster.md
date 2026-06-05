@@ -15,6 +15,7 @@ PostgreSQL database cluster details object.
 | cdmLink | String! | A link to view the workload on the CDM cluster. For dev use only. |
 | cdmPendingObjectPauseAssignment | [PendingObjectPauseAssignmentStatus](../enums/PendingObjectPauseAssignmentStatus.md) | Object pause pending assignment details for CDM objects. |
 | cluster | [Cluster](Cluster.md)! | Rubrik cluster where this object originated. |
+| clusterMode | [KosmosClusterMode](../enums/KosmosClusterMode.md)! | Whether this is a standalone or HA PostgreSQL cluster. |
 | configuredSlaDomain | [SlaDomain](../interfaces/SlaDomain.md)! | SLA Domain configured for the hierarchy object. |
 | crossAccountReplicatedObjectInfos | [[CrossAccountReplicatedObjectInfo](CrossAccountReplicatedObjectInfo.md)!] | Cross-account objects either replicated by this object or related to this object by replication. |
 | descendantConnection | [KosmosParentHierarchyObjectDescendantTypeConnection](KosmosParentHierarchyObjectDescendantTypeConnection.md)! | List of descendants. |
@@ -45,6 +46,7 @@ PostgreSQL database cluster details object.
 | pendingSla | [SlaDomain](../interfaces/SlaDomain.md) | SLA Domain assignment of the object during the process of being communicated over to Rubrik CDM. |
 | physicalChildConnection | [KosmosParentHierarchyObjectPhysicalChildTypeConnection](KosmosParentHierarchyObjectPhysicalChildTypeConnection.md)! | List of physical children. |
 | physicalPath | [[PathNode](PathNode.md)!]! | Sequential list of the physical ancestors of this object. |
+| postgresHaClusterInfo | [PostgresHaClusterInfo](PostgresHaClusterInfo.md) | HA cluster info including group name and replica topology. Null for standalone clusters. |
 | primaryClusterLocation | [DataLocation](DataLocation.md)! | The source cluster of this object. Returned as a data location because there is no guarantee that Rubrik has knowledge about the source cluster. |
 | recoverableRanges | [[KosmosWorkloadRecoverableRange](KosmosWorkloadRecoverableRange.md)!]! | The recovery ranges for the current workload. |
 | replicatedObjectCount | Int! | The number of objects either replicated by this object or related to this object by replication. |

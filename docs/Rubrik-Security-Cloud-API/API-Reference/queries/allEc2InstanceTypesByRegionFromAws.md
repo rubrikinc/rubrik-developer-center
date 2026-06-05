@@ -1,6 +1,6 @@
 # allEc2InstanceTypesByRegionFromAws
 
-List of all EC2 instance types available in the region.
+List of EC2 instance types available in a region, optionally scoped to a single AWS Outpost.
 
 ## Arguments
 
@@ -8,6 +8,7 @@ List of all EC2 instance types available in the region.
 |----------|------|-------------|
 | awsAccountRubrikId *(required)* | [UUID](../types/scalars/UUID.md)! | Rubrik ID for AWS account. |
 | region *(required)* | [AwsNativeRegion](../types/enums/AwsNativeRegion.md)! | Region in AWS. |
+| outpostArn | String | Optional ARN of an AWS Outpost. When set, scopes the result to instance types available on that Outpost. |
 
 ## Returns
 

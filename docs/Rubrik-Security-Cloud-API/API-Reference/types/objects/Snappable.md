@@ -67,6 +67,7 @@ An object that can be backed-up by taking snapshots.
 - [ActiveDirectoryDomainController.reportWorkload](ActiveDirectoryDomainController.md)
 - [Db2Database.reportWorkload](Db2Database.md)
 - [DuplicatedVm.reportWorkload](DuplicatedVm.md)
+- [FusionComputeVirtualMachine.reportWorkload](FusionComputeVirtualMachine.md)
 - [HyperVVirtualMachine.reportWorkload](HyperVVirtualMachine.md)
 - [KubernetesVirtualMachine.reportWorkload](KubernetesVirtualMachine.md)
 - [LinuxFileset.reportWorkload](LinuxFileset.md)

@@ -10,6 +10,7 @@ Attributes to add for an organization's identity provider.
 | idpClaimAttributes | [[IdpClaimAttribute](IdpClaimAttribute.md)!] | Custom claims for the identity provider. |
 | idpId | [UUID](../scalars/UUID.md)! | ID of the identity provider. |
 | isDefault | Boolean | Specifies if the identity provider should be set as the default. |
+| isForceAuthnEnabled | Boolean | Whether the SAML AuthnRequest sent to this identity provider sets ForceAuthn="true", asking the IdP to re-authenticate the user on every login instead of reusing a cached IdP session. |
 | name | String | Name of the identity provider. |
 | signInUrl | String | Sign-in URL for the identity provider. |
 | signingCertificate | String | Signing certificate for the identity provider. |

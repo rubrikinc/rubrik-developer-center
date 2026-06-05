@@ -1,6 +1,6 @@
 # getAllRolesInOrgConnection
 
-*No description available.*
+Get all roles in the current organization with filtering, sorting, and pagination support.
 
 ## Arguments
 
@@ -11,7 +11,7 @@
 | last | Int | Returns the last n elements from the list. |
 | before | String | Returns the elements in the list that occur before the specified cursor. |
 | sortOrder | [SortOrder](../types/enums/SortOrder.md) | Sorts the order of results. |
-| sortBy | [RoleFieldEnum](../types/enums/RoleFieldEnum.md) |  |
+| sortBy | [RoleFieldEnum](../types/enums/RoleFieldEnum.md) | Field to sort roles by (e.g., Name or Assignment). |
 | nameFilter | String | Name to filter the results. |
 | assignedRoleIds | [[UUID](../types/scalars/UUID.md)!] | List of role IDs that have already been assigned to a set of users. This list will be used to sort the set of all roles. |
 | roleSyncedFilter | Boolean | Argument to filter roles based on whether they are marked to be synced to Rubrik cluster. |

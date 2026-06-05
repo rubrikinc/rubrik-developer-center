@@ -16,6 +16,7 @@ Generate CSR.
 | email | String | Email for your CSR. |
 | surname | String | Surname for your CSR. |
 | userId | String | User ID for your CSR. |
+| keyGenerationParams | [KeyGenerationParamsInput](../types/inputs/KeyGenerationParamsInput.md) | Key generation parameters for the CSR (key type and strength). |
 
 ## Returns
 
@@ -40,6 +41,8 @@ Generate CSR.
         csrId
         email
         hostnames
+        keyStrength
+        keyType
         name
         organization
         organizationUnit

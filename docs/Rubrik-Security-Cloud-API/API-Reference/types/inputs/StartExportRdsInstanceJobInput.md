@@ -26,6 +26,7 @@ Input to trigger AWS native RDS Instance export job.
 | port | [Long](../scalars/Long.md)! | Port on which the exported RDS DB instance accepts connections. |
 | primaryAz | String | Availability Zone (AZ) in which the exported RDS DB instance must be launched. |
 | rdsInstanceId | [UUID](../scalars/UUID.md)! | Rubrik ID of the RDS Instance to be exported. |
+| retrievalTier | [AwsRetrievalTier](../enums/AwsRetrievalTier.md) | AWS Glacier retrieval tier to use when hydrating archived objects for this export. Only meaningful when exporting from a Glacier-tier archival location. |
 | securityGroupIds | [String!] | List of security group IDs for the new RDS instance. Default security group is used if empty list is provided here. |
 | shouldExportTags | Boolean! | Specifies whether tags will be exported to the new RDS instance. |
 | shouldResurrectSnapshot | Boolean | Specifies whether to resurrect an archived snapshot. |

@@ -13,6 +13,7 @@
 | identityTags | [[IdentityTag](../enums/IdentityTag.md)!]! | List of principal tags. |
 | idpType | [IdpType](../enums/IdpType.md)! | Source of principal. |
 | nativeType | [NativeType](../enums/NativeType.md)! | Native type of the principal. |
+| principalOrigin | [PrincipalOrigin](../enums/PrincipalOrigin.md)! | The origin of the principal. Indicates the upstream system (e.g., Okta, Entra ID, Active Directory) that surfaced the principal. |
 | principalType | [ViolationPrincipalType](../enums/ViolationPrincipalType.md)! | Principal/Identity type of the principal. |
 | privilegeType | [PrivilegeType](../enums/PrivilegeType.md)! | Type of privilege of the principal. |
 | resolutionType | [IdentityResolutionType](../enums/IdentityResolutionType.md)! | Resolution type/origin of the identity. |

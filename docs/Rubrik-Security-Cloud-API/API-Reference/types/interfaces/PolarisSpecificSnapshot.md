@@ -18,5 +18,6 @@ Rubrik-specific information about snapshots of specific object types. Currently,
 - [AzureSqlManagedInstanceDbSpecificSnapshot](../objects/AzureSqlManagedInstanceDbSpecificSnapshot.md)
 - [GcpNativeCloudSqlSpecificSnapshot](../objects/GcpNativeCloudSqlSpecificSnapshot.md)
 - [GcpNativeGceInstanceSpecificSnapshot](../objects/GcpNativeGceInstanceSpecificSnapshot.md)
+- [IcebergTableSpecificSnapshot](../objects/IcebergTableSpecificSnapshot.md)
 - [O365SiteSpecificSnapshot](../objects/O365SiteSpecificSnapshot.md)
 - [SaasSnapshot](../objects/SaasSnapshot.md)

@@ -22,6 +22,7 @@ Represents pause status of an object.
 - [AwsNativeAccount.objectPauseStatus](AwsNativeAccount.md)
 - AwsNativeAccountDescendantType.objectPauseStatus
 - AwsNativeAccountLogicalChildType.objectPauseStatus
+- [AwsNativeConfig.objectPauseStatus](AwsNativeConfig.md)
 - [AwsNativeDynamoDbTable.objectPauseStatus](AwsNativeDynamoDbTable.md)
 - [AwsNativeEbsVolume.objectPauseStatus](AwsNativeEbsVolume.md)
 - [AwsNativeEc2Instance.objectPauseStatus](AwsNativeEc2Instance.md)
@@ -30,18 +31,17 @@ Represents pause status of an object.
 - [AwsNativeRegionHierarchyObject.objectPauseStatus](AwsNativeRegionHierarchyObject.md)
 - [AwsNativeS3Bucket.objectPauseStatus](AwsNativeS3Bucket.md)
 - [AzureAdDirectory.objectPauseStatus](AzureAdDirectory.md)
+- [AzureDevOpsOrganization.objectPauseStatus](AzureDevOpsOrganization.md)
+- [AzureDevOpsProject.objectPauseStatus](AzureDevOpsProject.md)
+- [AzureDevOpsRepository.objectPauseStatus](AzureDevOpsRepository.md)
 - AzureNativeHierarchyObjectType.objectPauseStatus
 - [AzureNativeManagedDisk.objectPauseStatus](AzureNativeManagedDisk.md)
 - [AzureNativeRegionManagedObject.objectPauseStatus](AzureNativeRegionManagedObject.md)
 - [AzureNativeResourceGroup.objectPauseStatus](AzureNativeResourceGroup.md)
 - [AzureNativeSubscription.objectPauseStatus](AzureNativeSubscription.md)
 - [AzureNativeVirtualMachine.objectPauseStatus](AzureNativeVirtualMachine.md)
+- [AzurePostgresFlexibleServer.objectPauseStatus](AzurePostgresFlexibleServer.md)
 - [AzureSqlDatabaseDb.objectPauseStatus](AzureSqlDatabaseDb.md)
 - [AzureSqlDatabaseServer.objectPauseStatus](AzureSqlDatabaseServer.md)
 - [AzureSqlManagedInstanceDatabase.objectPauseStatus](AzureSqlManagedInstanceDatabase.md)
-- [AzureSqlManagedInstanceServer.objectPauseStatus](AzureSqlManagedInstanceServer.md)
-- [AzureStorageAccount.objectPauseStatus](AzureStorageAccount.md)
-- [CassandraColumnFamily.objectPauseStatus](CassandraColumnFamily.md)
-- [CassandraKeyspace.objectPauseStatus](CassandraKeyspace.md)
-- CassandraKeyspaceDescendantType.objectPauseStatus
-- *…and 250 more*
+- *…and 275 more*

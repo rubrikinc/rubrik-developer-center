@@ -8,6 +8,7 @@ List of Availability Zones (AZs) in the specified region on the specified AWS Na
 |----------|------|-------------|
 | awsAccountRubrikId *(required)* | [UUID](../types/scalars/UUID.md)! | Rubrik ID for AWS account. |
 | region *(required)* | [AwsNativeRegion](../types/enums/AwsNativeRegion.md)! | Region in AWS. |
+| feature | [CloudAccountFeature](../types/enums/CloudAccountFeature.md) | Cloud-account feature for credential routing on MULTI_ROLE accounts. |
 
 ## Returns
 

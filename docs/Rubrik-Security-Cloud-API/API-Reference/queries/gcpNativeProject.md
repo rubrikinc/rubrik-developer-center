@@ -20,6 +20,7 @@ Get details of a GCP Project
     query GcpNativeProject($fid: UUID!) {
       gcpNativeProject(fid: $fid) {
         authorizedOperations
+        bigQueryDatasetCount
         cloudAccountId
         cloudNativeId
         diskCount
@@ -61,11 +62,11 @@ Get details of a GCP Project
           "authorizedOperations": [
             "MANAGE_DATA_SOURCE"
           ],
+          "bigQueryDatasetCount": 0,
           "cloudAccountId": "example-string",
           "cloudNativeId": "example-string",
           "diskCount": 0,
           "id": "00000000-0000-0000-0000-000000000000",
-          "isRelic": true,
           "allOrgs": [
             {
               "allUrls": [
