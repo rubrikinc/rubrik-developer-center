@@ -22,6 +22,7 @@ query {
       objectType
       objectState
       protectionStatus
+      protectedOn
       lastSnapshot
       latestReplicationSnapshot
       complianceStatus
