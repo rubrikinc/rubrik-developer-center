@@ -31,6 +31,7 @@ query FusionComputeVmRequestStatus($input: FusionComputeVmRequestStatusInput!) {
 ```json
 {
   "input": {
+    "clusterUuid": "00000000-0000-0000-0000-000000000000",
     "id": "00000000-0000-0000-0000-000000000000"
   }
 }

@@ -4,10 +4,11 @@ DeletionStatus stores the exocompute config id and corresponding deletion status
 
 ## Fields
 
-| Field              | Type     | Description                          |
-| ------------------ | -------- | ------------------------------------ |
-| exocomputeConfigId | String!  | Exocompute configuration ID.         |
-| success            | Boolean! | Whether the deletion was successful. |
+| Field              | Type                                                                                                                                   | Description                                     |
+| ------------------ | -------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------- |
+| exocomputeConfigId | String!                                                                                                                                | Exocompute configuration ID.                    |
+| region             | [DeletionRegionOneof](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/DeletionRegionOneof/index.md) | Region of the deleted exocompute configuration. |
+| success            | Boolean!                                                                                                                               | Whether the deletion was successful.            |
 
 ## Used By
 

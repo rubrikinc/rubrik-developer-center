@@ -29,6 +29,7 @@ query {
       isChangelistEnabled
       isNetAppMetroClusterEnabled
       isNfsSupported
+      isNutanixCftEnabled
       isRelic
       isSmbSupported
       isUserSuppliedSmbCredentials
@@ -36,6 +37,7 @@ query {
       lastStatus
       name
       namespaceCount
+      nfsPseudoFsPrefix
       numWorkloadDescendants
       objectType
       osVersion

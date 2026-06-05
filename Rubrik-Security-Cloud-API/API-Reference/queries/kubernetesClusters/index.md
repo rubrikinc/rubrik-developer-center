@@ -30,6 +30,8 @@ query {
       distribution
       eksClusterArn
       externalIp
+      helmStatus
+      helmVersion
       id
       isAutoPsCreationEnabled
       isPullSecretConfigured

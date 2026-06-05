@@ -1,6 +1,6 @@
 # O365ExchangeObject
 
-*No description available.*
+O365ExchangeObject is the GraphQL interface implemented by all Exchange-domain item types (folders, emails, calendar folders/events, contact folders/contacts).
 
 ## Fields
 

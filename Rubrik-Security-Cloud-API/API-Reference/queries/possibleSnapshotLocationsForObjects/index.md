@@ -1,6 +1,6 @@
 # possibleSnapshotLocationsForObjects
 
-GetPossibleSnapshotLocationsForObjects returns all valid locations where unexpired snapshots of the objects are present. This includes both RSC (MBL archival groups) and CDM snapshot locations.
+Returns all valid locations where unexpired snapshots of the input objects are present, including both RSC (MBL archival groups) and CDM snapshot locations. The returned snapshotCount per location is aggregated across all input objects. For a per-(object, location) snapshot count breakdown of the same input objects, see snapshotSummariesByLocationForObjects.
 
 ## Arguments
 

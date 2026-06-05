@@ -4,9 +4,9 @@ Setup TOTP configuration for a user. Return true when the operation succeeds.
 
 ## Arguments
 
-| Argument           | Type                                                                                                                                 | Description                                       |
-| ------------------ | ------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------- |
-| input *(required)* | [SetTotpConfigInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/SetTotpConfigInput/index.md)! | Input required for setting up TOTP configuration. |
+| Argument           | Type                                                                                                                                 | Description                              |
+| ------------------ | ------------------------------------------------------------------------------------------------------------------------------------ | ---------------------------------------- |
+| input *(required)* | [SetTotpConfigInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/SetTotpConfigInput/index.md)! | Input for setting up TOTP configuration. |
 
 ## Returns
 

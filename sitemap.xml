@@ -81,6 +81,10 @@
          <lastmod>2026-06-05</lastmod>
     </url>
     <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/addAzureDevOpsCloudAccount/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/addCloudDirectKerberosCredential/</loc>
          <lastmod>2026-06-05</lastmod>
     </url>
@@ -126,6 +130,10 @@
     </url>
     <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/addGcpCloudAccountManualAuthProject/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/addGitHubCloudAccount/</loc>
          <lastmod>2026-06-05</lastmod>
     </url>
     <url>
@@ -309,6 +317,10 @@
          <lastmod>2026-06-05</lastmod>
     </url>
     <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/backupDevOpsRepository/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/backupM365Mailbox/</loc>
          <lastmod>2026-06-05</lastmod>
     </url>
@@ -410,6 +422,10 @@
     </url>
     <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/bulkCreateFilesets/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/bulkCreateFusionComputeVmBackup/</loc>
          <lastmod>2026-06-05</lastmod>
     </url>
     <url>
@@ -665,6 +681,18 @@
          <lastmod>2026-06-05</lastmod>
     </url>
     <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/completeAzureDevOpsOauth/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/completeGitHubAppInstallation/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/completeGitHubAppRegistration/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/completeUploadSession/</loc>
          <lastmod>2026-06-05</lastmod>
     </url>
@@ -814,6 +842,10 @@
     </url>
     <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/createFilesetSnapshot/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/createFusionComputeMount/</loc>
          <lastmod>2026-06-05</lastmod>
     </url>
     <url>
@@ -1117,6 +1149,10 @@
          <lastmod>2026-06-05</lastmod>
     </url>
     <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/deleteAzureDevOpsCloudAccount/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/deleteCassandraSource/</loc>
          <lastmod>2026-06-05</lastmod>
     </url>
@@ -1193,7 +1229,15 @@
          <lastmod>2026-06-05</lastmod>
     </url>
     <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/deleteFusionComputeMount/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/deleteFusionComputeVrm/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/deleteGitHubCloudAccount/</loc>
          <lastmod>2026-06-05</lastmod>
     </url>
     <url>
@@ -1346,6 +1390,10 @@
     </url>
     <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/deletePostgreSQLDbClusterLiveMount/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/deleteRecoveryPlansV2/</loc>
          <lastmod>2026-06-05</lastmod>
     </url>
     <url>
@@ -1525,6 +1573,10 @@
          <lastmod>2026-06-05</lastmod>
     </url>
     <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/downloadFilesFromFusionComputeSnapshot/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/downloadFilesManagedVolumeSnapshotFromArchivalLocation/</loc>
          <lastmod>2026-06-05</lastmod>
     </url>
@@ -1582,6 +1634,14 @@
     </url>
     <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/downloadManagedVolumeFromLocation/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/downloadMongoCollectionSetSnapshotsForPointInTimeRecovery/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/downloadMongoOpsManagerSourceSnapshotsForPointInTimeRecovery/</loc>
          <lastmod>2026-06-05</lastmod>
     </url>
     <url>
@@ -1762,6 +1822,14 @@
     </url>
     <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/expireDownloadedSapHanaSnapshots/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/expireMongoCollectionSetDownloadedSnapshots/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/expireMongoOpsManagerSourceDownloadedSnapshots/</loc>
          <lastmod>2026-06-05</lastmod>
     </url>
     <url>
@@ -2085,6 +2153,10 @@
          <lastmod>2026-06-05</lastmod>
     </url>
     <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/migrateFusionComputeMount/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/migrateNutanixMountV1/</loc>
          <lastmod>2026-06-05</lastmod>
     </url>
@@ -2174,6 +2246,10 @@
     </url>
     <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/patchDb2Instance/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/patchFusionComputeVm/</loc>
          <lastmod>2026-06-05</lastmod>
     </url>
     <url>
@@ -2269,6 +2345,10 @@
          <lastmod>2026-06-05</lastmod>
     </url>
     <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/recoverDevOpsRepository/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/recoverMongoSource/</loc>
          <lastmod>2026-06-05</lastmod>
     </url>
@@ -2290,6 +2370,10 @@
     </url>
     <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/refreshDb2Database/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/refreshDevOpsOrganizations/</loc>
          <lastmod>2026-06-05</lastmod>
     </url>
     <url>
@@ -2669,6 +2753,10 @@
          <lastmod>2026-06-05</lastmod>
     </url>
     <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/setCoordinatorLabels/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/setCustomerTags/</loc>
          <lastmod>2026-06-05</lastmod>
     </url>
@@ -2857,6 +2945,10 @@
          <lastmod>2026-06-05</lastmod>
     </url>
     <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/startGitHubAppSetup/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/startK8sDiagnosticsJob/</loc>
          <lastmod>2026-06-05</lastmod>
     </url>
@@ -3005,6 +3097,10 @@
          <lastmod>2026-06-05</lastmod>
     </url>
     <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/uninstallGitHubApp/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/uninstallIoFilter/</loc>
          <lastmod>2026-06-05</lastmod>
     </url>
@@ -3094,6 +3190,14 @@
     </url>
     <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/updateAzureCloudAccount/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/updateAzureClusterStorageAccountRedundancy/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/updateAzureDevOpsCloudAccount/</loc>
          <lastmod>2026-06-05</lastmod>
     </url>
     <url>
@@ -3245,11 +3349,19 @@
          <lastmod>2026-06-05</lastmod>
     </url>
     <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/updateFusionComputeMount/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/updateFusionComputeVrm/</loc>
          <lastmod>2026-06-05</lastmod>
     </url>
     <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/updateGcpTarget/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/updateGitHubCloudAccount/</loc>
          <lastmod>2026-06-05</lastmod>
     </url>
     <url>
@@ -3577,6 +3689,10 @@
          <lastmod>2026-06-05</lastmod>
     </url>
     <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/upgradeAzureDevOpsCloudAccount/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/upgradeCdmManagedTarget/</loc>
          <lastmod>2026-06-05</lastmod>
     </url>
@@ -3862,6 +3978,10 @@
     </url>
     <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/allArchivalLocationForecasts/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/allArchivalPerObjectInfo/</loc>
          <lastmod>2026-06-05</lastmod>
     </url>
     <url>
@@ -4497,6 +4617,10 @@
          <lastmod>2026-06-05</lastmod>
     </url>
     <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/allWorkloadResourceSpecs/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/amiTypeForAwsNativeArchivedSnapshotExport/</loc>
          <lastmod>2026-06-05</lastmod>
     </url>
@@ -4689,6 +4813,38 @@
          <lastmod>2026-06-05</lastmod>
     </url>
     <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/azureClusterStorageAccountRedundancy/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/azureDevOpsConnectionStatusSummary/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/azureDevOpsOrganization/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/azureDevOpsOrganizations/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/azureDevOpsProject/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/azureDevOpsProjects/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/azureDevOpsRepositories/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/azureDevOpsRepository/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/azureExocomputeNetworkSetupTemplate/</loc>
          <lastmod>2026-06-05</lastmod>
     </url>
@@ -4790,6 +4946,14 @@
     </url>
     <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/azureO365ValidateUserRoles/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/azurePostgresFlexibleServer/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/azurePostgresFlexibleServers/</loc>
          <lastmod>2026-06-05</lastmod>
     </url>
     <url>
@@ -5053,7 +5217,15 @@
          <lastmod>2026-06-05</lastmod>
     </url>
     <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/cloudDirectEventSeriesTaskReport/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/cloudDirectGlobalSearch/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/cloudDirectJobRecentErrorsReport/</loc>
          <lastmod>2026-06-05</lastmod>
     </url>
     <url>
@@ -5289,6 +5461,10 @@
          <lastmod>2026-06-05</lastmod>
     </url>
     <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/coordinatorLabels/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/countClusters/</loc>
          <lastmod>2026-06-05</lastmod>
     </url>
@@ -5310,6 +5486,14 @@
     </url>
     <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/crowdStrikeIngestionStatus/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/crowdstrikeAlertActivitySummary/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/crowdstrikeCaseActivitySummary/</loc>
          <lastmod>2026-06-05</lastmod>
     </url>
     <url>
@@ -5406,6 +5590,22 @@
     </url>
     <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/deploymentVersion/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/devOpsBackupJobInformation/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/devOpsCloudAccountListCurrentPermissions/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/devOpsCloudAccountListLatestPermissions/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/devOpsProtectedObjectCountSummary/</loc>
          <lastmod>2026-06-05</lastmod>
     </url>
     <url>
@@ -5557,7 +5757,99 @@
          <lastmod>2026-06-05</lastmod>
     </url>
     <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/fusionComputeCluster/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/fusionComputeClusters/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/fusionComputeClustersAndHosts/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/fusionComputeDatastore/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/fusionComputeDatastores/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/fusionComputeEcho/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/fusionComputeHost/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/fusionComputeHosts/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/fusionComputeMissedSnapshots/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/fusionComputeMounts/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/fusionComputeNetwork/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/fusionComputeNetworks/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/fusionComputeRecoverableClustersAndHosts/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/fusionComputeRecoverableDatastores/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/fusionComputeRecoverableNetworks/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/fusionComputeSite/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/fusionComputeSites/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/fusionComputeSnapshotResourceSpec/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/fusionComputeVirtualDisks/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/fusionComputeVirtualMachine/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/fusionComputeVirtualMachines/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/fusionComputeVmRequestStatus/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/fusionComputeVrm/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/fusionComputeVrms/</loc>
          <lastmod>2026-06-05</lastmod>
     </url>
     <url>
@@ -5678,6 +5970,26 @@
     </url>
     <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/getUserDownloads/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/gitHubConnectionStatusSummary/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/gitHubOrganization/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/gitHubOrganizations/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/gitHubRepositories/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/gitHubRepository/</loc>
          <lastmod>2026-06-05</lastmod>
     </url>
     <url>
@@ -6449,6 +6761,10 @@
          <lastmod>2026-06-05</lastmod>
     </url>
     <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/nodesToRemoveByCount/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/nutanixBrowseSnapshot/</loc>
          <lastmod>2026-06-05</lastmod>
     </url>
@@ -6865,6 +7181,10 @@
          <lastmod>2026-06-05</lastmod>
     </url>
     <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/postgresDbClusterAsyncRequestStatus/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/postgresDbClusterLiveMounts/</loc>
          <lastmod>2026-06-05</lastmod>
     </url>
@@ -6894,6 +7214,10 @@
     </url>
     <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/protectedVolumesCount/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/protectionSummaryV2/</loc>
          <lastmod>2026-06-05</lastmod>
     </url>
     <url>
@@ -6958,6 +7282,10 @@
     </url>
     <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/recoverDb2DatabaseToPointInTime/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/recoveries/</loc>
          <lastmod>2026-06-05</lastmod>
     </url>
     <url>
@@ -7265,6 +7593,10 @@
          <lastmod>2026-06-05</lastmod>
     </url>
     <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/snapshotsSecurityInfo/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/snmpConfigurations/</loc>
          <lastmod>2026-06-05</lastmod>
     </url>
@@ -7294,6 +7626,10 @@
     </url>
     <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/sqlServerSetupScriptsBulk/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/ssmDocumentForEc2/</loc>
          <lastmod>2026-06-05</lastmod>
     </url>
     <url>
@@ -7721,6 +8057,10 @@
          <lastmod>2026-06-05</lastmod>
     </url>
     <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/validateBackupLocationUsableForAzureDevOps/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/validateBulkThreatHunt/</loc>
          <lastmod>2026-06-05</lastmod>
     </url>
@@ -8029,6 +8369,10 @@
          <lastmod>2026-06-05</lastmod>
     </url>
     <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/AnomalyConfidenceEnum/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/AnomalyFalsePositiveType/</loc>
          <lastmod>2026-06-05</lastmod>
     </url>
@@ -8086,6 +8430,10 @@
     </url>
     <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/ArchivalGroupType/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/ArchivalLocationImmutabilityMode/</loc>
          <lastmod>2026-06-05</lastmod>
     </url>
     <url>
@@ -8357,6 +8705,10 @@
          <lastmod>2026-06-05</lastmod>
     </url>
     <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/AzureAdPimAssignmentType/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/AzureAdPimEligibilityMemberType/</loc>
          <lastmod>2026-06-05</lastmod>
     </url>
@@ -8410,6 +8762,14 @@
     </url>
     <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/AzureCloudType/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/AzureClusterStorageRedundancy/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/AzureCommonRegion/</loc>
          <lastmod>2026-06-05</lastmod>
     </url>
     <url>
@@ -8477,6 +8837,10 @@
          <lastmod>2026-06-05</lastmod>
     </url>
     <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/AzurePostgresFlexibleServerSortFields/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/AzureRedundancy/</loc>
          <lastmod>2026-06-05</lastmod>
     </url>
@@ -8534,6 +8898,10 @@
     </url>
     <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/AzureStorageAccessTier/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/AzureStorageAccountConversionStatus/</loc>
          <lastmod>2026-06-05</lastmod>
     </url>
     <url>
@@ -8869,6 +9237,10 @@
          <lastmod>2026-06-05</lastmod>
     </url>
     <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/CloudServiceProvider/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/CloudType/</loc>
          <lastmod>2026-06-05</lastmod>
     </url>
@@ -8977,6 +9349,10 @@
          <lastmod>2026-06-05</lastmod>
     </url>
     <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/ClusterProductType/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/ClusterProvisioningState/</loc>
          <lastmod>2026-06-05</lastmod>
     </url>
@@ -9069,6 +9445,10 @@
          <lastmod>2026-06-05</lastmod>
     </url>
     <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/CoordinatorLabel/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/CrawlStatusEnum/</loc>
          <lastmod>2026-06-05</lastmod>
     </url>
@@ -9086,6 +9466,10 @@
     </url>
     <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/CrossAccountRole/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/CrossAccountRoleModel/</loc>
          <lastmod>2026-06-05</lastmod>
     </url>
     <url>
@@ -9233,7 +9617,23 @@
          <lastmod>2026-06-05</lastmod>
     </url>
     <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/DevOpsStorageType/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/DeviceState/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/DevopsConnectionStatus/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/DevopsHostType/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/DevopsOrgType/</loc>
          <lastmod>2026-06-05</lastmod>
     </url>
     <url>
@@ -9334,6 +9734,10 @@
     </url>
     <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/EmCatalogRole/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/EmExpirationType/</loc>
          <lastmod>2026-06-05</lastmod>
     </url>
     <url>
@@ -9569,7 +9973,15 @@
          <lastmod>2026-06-05</lastmod>
     </url>
     <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/FilesetExportFilesJobConfigRecoveryPurpose/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/FilesetOsType/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/FilesetRestoreFilesJobConfigRecoveryPurpose/</loc>
          <lastmod>2026-06-05</lastmod>
     </url>
     <url>
@@ -9614,6 +10026,22 @@
     </url>
     <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/FsmoRoles/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/FusionComputeMountsSortByField/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/FusionComputeSnapshotConsistencyMandate/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/FusionComputeVirtualDisksSortByField/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/FusionComputeVmStatus/</loc>
          <lastmod>2026-06-05</lastmod>
     </url>
     <url>
@@ -9717,6 +10145,10 @@
          <lastmod>2026-06-05</lastmod>
     </url>
     <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/GitHubAppStatus/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/GlobalCertificateSortBy/</loc>
          <lastmod>2026-06-05</lastmod>
     </url>
@@ -9770,6 +10202,10 @@
     </url>
     <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/HashType/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/HelmStatus/</loc>
          <lastmod>2026-06-05</lastmod>
     </url>
     <url>
@@ -10125,7 +10561,23 @@
          <lastmod>2026-06-05</lastmod>
     </url>
     <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/KeyType/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/KeyTypeEnumType/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/KosmosClusterMode/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/KosmosTopologyReplicaRole/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/KosmosTopologyReplicaStatus/</loc>
          <lastmod>2026-06-05</lastmod>
     </url>
     <url>
@@ -10905,6 +11357,10 @@
          <lastmod>2026-06-05</lastmod>
     </url>
     <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/PostgresHaReplicaConfigRole/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/PrePostScriptFailureHandlingEnum/</loc>
          <lastmod>2026-06-05</lastmod>
     </url>
@@ -11017,6 +11473,18 @@
          <lastmod>2026-06-05</lastmod>
     </url>
     <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/QueryFusionComputeMountsFilterField/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/QueryFusionComputeVirtualDisksFilterField/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/QueryType/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/RansomwareResultGroupBy/</loc>
          <lastmod>2026-06-05</lastmod>
     </url>
@@ -11093,7 +11561,51 @@
          <lastmod>2026-06-05</lastmod>
     </url>
     <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/RecoveryFailureAction/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/RecoveryLocationType/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/RecoveryOutcome/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/RecoveryPlanStatus/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/RecoveryPlanType/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/RecoveryPurpose/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/RecoveryRangeStatus/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/RecoverySortType/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/RecoveryStatus/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/RecoveryStepStatus/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/RecoveryTriggeredFrom/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/RecoveryType/</loc>
          <lastmod>2026-06-05</lastmod>
     </url>
     <url>
@@ -11441,6 +11953,10 @@
          <lastmod>2026-06-05</lastmod>
     </url>
     <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/SigninLogFailureCategory/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/SigninLogFilterType/</loc>
          <lastmod>2026-06-05</lastmod>
     </url>
@@ -11589,6 +12105,10 @@
          <lastmod>2026-06-05</lastmod>
     </url>
     <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/SnapshotLocationView/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/SnapshotManagementType/</loc>
          <lastmod>2026-06-05</lastmod>
     </url>
@@ -11650,6 +12170,10 @@
     </url>
     <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/SourceSslCertReqs/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/SplunkIntegrationConfigType/</loc>
          <lastmod>2026-06-05</lastmod>
     </url>
     <url>
@@ -12313,6 +12837,10 @@
          <lastmod>2026-06-05</lastmod>
     </url>
     <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/AddAzureDevOpsCloudAccountInput/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/AddCloudDirectKerberosCredentialInput/</loc>
          <lastmod>2026-06-05</lastmod>
     </url>
@@ -12358,6 +12886,10 @@
     </url>
     <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/AddGcpCloudAccountManualAuthProjectInput/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/AddGitHubCloudAccountInput/</loc>
          <lastmod>2026-06-05</lastmod>
     </url>
     <url>
@@ -12805,6 +13337,10 @@
          <lastmod>2026-06-05</lastmod>
     </url>
     <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/AwsNativeOutpostArnFilter/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/AwsNativeRdsDbEngineFilter/</loc>
          <lastmod>2026-06-05</lastmod>
     </url>
@@ -12941,7 +13477,19 @@
          <lastmod>2026-06-05</lastmod>
     </url>
     <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/AzureClusterStorageAccountRedundancyInput/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/AzureCmkInput/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/AzureDevOpsRepositoryRecoveryConfig/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/AzureDevopsAuthMethod/</loc>
          <lastmod>2026-06-05</lastmod>
     </url>
     <url>
@@ -13129,6 +13677,22 @@
          <lastmod>2026-06-05</lastmod>
     </url>
     <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/AzurePostgresFlexibleServerConfigInput/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/AzurePostgresFlexibleServerFilters/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/AzurePostgresFlexibleServerResourceGroupFilter/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/AzurePostgresFlexibleServerSubscriptionFilter/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/AzureRoleArmTemplateFeature/</loc>
          <lastmod>2026-06-05</lastmod>
     </url>
@@ -13254,6 +13818,10 @@
     </url>
     <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/BackupAzureAdDirectoryInput/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/BackupDevOpsRepositoryInput/</loc>
          <lastmod>2026-06-05</lastmod>
     </url>
     <url>
@@ -13438,6 +14006,10 @@
     </url>
     <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/BulkCreateFilesetsInput/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/BulkCreateFusionComputeVmBackupInput/</loc>
          <lastmod>2026-06-05</lastmod>
     </url>
     <url>
@@ -13977,6 +14549,18 @@
          <lastmod>2026-06-05</lastmod>
     </url>
     <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/CompleteAzureDevOpsOauthInput/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/CompleteGitHubAppInstallationInput/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/CompleteGitHubAppRegistrationInput/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/CompleteUploadSessionInput/</loc>
          <lastmod>2026-06-05</lastmod>
     </url>
@@ -14038,6 +14622,10 @@
     </url>
     <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/ConversationsRestoreConfig/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/CoordinatorLabelEntryInput/</loc>
          <lastmod>2026-06-05</lastmod>
     </url>
     <url>
@@ -14170,6 +14758,10 @@
     </url>
     <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/CreateFilesetSnapshotInput/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/CreateFusionComputeMountInput/</loc>
          <lastmod>2026-06-05</lastmod>
     </url>
     <url>
@@ -14597,6 +15189,10 @@
          <lastmod>2026-06-05</lastmod>
     </url>
     <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/DeleteAzureDevOpsCloudAccountInput/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/DeleteCephSettingInput/</loc>
          <lastmod>2026-06-05</lastmod>
     </url>
@@ -14665,7 +15261,15 @@
          <lastmod>2026-06-05</lastmod>
     </url>
     <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/DeleteFusionComputeMountInput/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/DeleteFusionComputeVrmInput/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/DeleteGitHubCloudAccountInput/</loc>
          <lastmod>2026-06-05</lastmod>
     </url>
     <url>
@@ -14801,6 +15405,10 @@
          <lastmod>2026-06-05</lastmod>
     </url>
     <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/DeleteRecoveryPlansV2Input/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/DeleteRecoveryScheduleV2Input/</loc>
          <lastmod>2026-06-05</lastmod>
     </url>
@@ -14898,6 +15506,18 @@
     </url>
     <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/DestTeamInfo/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/DevOpsCloudAccountListCurrentPermissionsReq/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/DevOpsCloudAccountListLatestPermissionsReq/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/DevOpsTypeRepositoryRecoveryConfig/</loc>
          <lastmod>2026-06-05</lastmod>
     </url>
     <url>
@@ -15037,6 +15657,10 @@
          <lastmod>2026-06-05</lastmod>
     </url>
     <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/DownloadFilesFromFusionComputeSnapshotInput/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/DownloadFilesJobConfigInput/</loc>
          <lastmod>2026-06-05</lastmod>
     </url>
@@ -15094,6 +15718,14 @@
     </url>
     <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/DownloadManagedVolumeRequestInput/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/DownloadMongoCollectionSetSnapshotsForPointInTimeRecoveryInput/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/DownloadMongoOpsManagerSourceSnapshotsForPointInTimeRecoveryInput/</loc>
          <lastmod>2026-06-05</lastmod>
     </url>
     <url>
@@ -15390,6 +16022,14 @@
     </url>
     <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/ExpireDownloadedSapHanaSnapshotsInput/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/ExpireMongoCollectionSetDownloadedSnapshotsInput/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/ExpireMongoOpsManagerSourceDownloadedSnapshotsInput/</loc>
          <lastmod>2026-06-05</lastmod>
     </url>
     <url>
@@ -15705,7 +16345,23 @@
          <lastmod>2026-06-05</lastmod>
     </url>
     <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/FusionComputeDatastoreMigrationConfigInput/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/FusionComputeDiskToDatastoreInput/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/FusionComputeEchoRequest/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/FusionComputeMissedSnapshotsInput/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/FusionComputeMountVmConfigInput/</loc>
          <lastmod>2026-06-05</lastmod>
     </url>
     <url>
@@ -15725,7 +16381,23 @@
          <lastmod>2026-06-05</lastmod>
     </url>
     <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/FusionComputeSnapshotResourceSpecInput/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/FusionComputeUnmountConfigInput/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/FusionComputeUpdateMountConfigInput/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/FusionComputeVmExportSnapshotJobConfigInput/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/FusionComputeVmPatchInput/</loc>
          <lastmod>2026-06-05</lastmod>
     </url>
     <url>
@@ -16029,6 +16701,10 @@
          <lastmod>2026-06-05</lastmod>
     </url>
     <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/GetCoordinatorLabelsReq/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/GetCrossAccountClustersFilter/</loc>
          <lastmod>2026-06-05</lastmod>
     </url>
@@ -16302,6 +16978,10 @@
     </url>
     <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/GoogleSecOpsIntegrationConfigInput/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/GovernanceRecoveryOptionType/</loc>
          <lastmod>2026-06-05</lastmod>
     </url>
     <url>
@@ -16809,6 +17489,10 @@
          <lastmod>2026-06-05</lastmod>
     </url>
     <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/KeyGenerationParamsInput/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/KmsCryptoKey/</loc>
          <lastmod>2026-06-05</lastmod>
     </url>
@@ -16950,6 +17634,10 @@
     </url>
     <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/ListValidReplicationTargetFilter/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/ListWorkloadResourceSpecsInput/</loc>
          <lastmod>2026-06-05</lastmod>
     </url>
     <url>
@@ -17153,6 +17841,10 @@
          <lastmod>2026-06-05</lastmod>
     </url>
     <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/MigrateFusionComputeMountInput/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/MigrateNutanixMountV1Input/</loc>
          <lastmod>2026-06-05</lastmod>
     </url>
@@ -17238,6 +17930,10 @@
     </url>
     <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/MongoRecoveryRequestConfigInput/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/MongoSnapshotDownloadRequestInput/</loc>
          <lastmod>2026-06-05</lastmod>
     </url>
     <url>
@@ -17577,6 +18273,10 @@
          <lastmod>2026-06-05</lastmod>
     </url>
     <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/MysqldbAdvancedConfigInfoInput/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/MysqldbAutomatedRestoreConfigInput/</loc>
          <lastmod>2026-06-05</lastmod>
     </url>
@@ -17626,6 +18326,14 @@
     </url>
     <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/NameSubstringFilter/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/NamespaceMappingEntry/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/NamespaceMappingInput/</loc>
          <lastmod>2026-06-05</lastmod>
     </url>
     <url>
@@ -18129,6 +18837,10 @@
          <lastmod>2026-06-05</lastmod>
     </url>
     <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/PatchFusionComputeVmInput/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/PatchMongoSourceInput/</loc>
          <lastmod>2026-06-05</lastmod>
     </url>
@@ -18174,6 +18886,10 @@
     </url>
     <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/PendingSlaOperationsRequestInput/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/PerObjectPostgresRestoreSettingsInput/</loc>
          <lastmod>2026-06-05</lastmod>
     </url>
     <url>
@@ -18238,6 +18954,14 @@
     </url>
     <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/PostgresDbClusterSlaConfigInput/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/PostgresHaClusterConfigInput/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/PostgresHaReplicaConfigInput/</loc>
          <lastmod>2026-06-05</lastmod>
     </url>
     <url>
@@ -18377,6 +19101,14 @@
          <lastmod>2026-06-05</lastmod>
     </url>
     <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/QueryFusionComputeMountsFilter/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/QueryFusionComputeVirtualDisksFilter/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/QueryGuestCredentialInput/</loc>
          <lastmod>2026-06-05</lastmod>
     </url>
@@ -18469,6 +19201,10 @@
          <lastmod>2026-06-05</lastmod>
     </url>
     <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/RecoverDevOpsRepositoryInput/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/RecoverMongoSourceInput/</loc>
          <lastmod>2026-06-05</lastmod>
     </url>
@@ -18509,7 +19245,15 @@
          <lastmod>2026-06-05</lastmod>
     </url>
     <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/RecoveryAuthConfig/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/RecoveryConfigV2/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/RecoverySortParamInput/</loc>
          <lastmod>2026-06-05</lastmod>
     </url>
     <url>
@@ -18518,6 +19262,10 @@
     </url>
     <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/RefreshDb2DatabaseInput/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/RefreshDevOpsOrganizationsInput/</loc>
          <lastmod>2026-06-05</lastmod>
     </url>
     <url>
@@ -19109,6 +19857,10 @@
          <lastmod>2026-06-05</lastmod>
     </url>
     <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/SecurityTokenAuth/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/SelfServicePermissionInput/</loc>
          <lastmod>2026-06-05</lastmod>
     </url>
@@ -19182,6 +19934,10 @@
     </url>
     <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/SetCloudNativeGatewayKmsKeysInput/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/SetCoordinatorLabelsInput/</loc>
          <lastmod>2026-06-05</lastmod>
     </url>
     <url>
@@ -19453,6 +20209,10 @@
          <lastmod>2026-06-05</lastmod>
     </url>
     <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/SplunkIntegrationConfigInput/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/StartAwsExocomputeDisableJobInput/</loc>
          <lastmod>2026-06-05</lastmod>
     </url>
@@ -19534,6 +20294,10 @@
     </url>
     <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/StartExportRdsInstanceJobInput/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/StartGitHubAppSetupInput/</loc>
          <lastmod>2026-06-05</lastmod>
     </url>
     <url>
@@ -19905,6 +20669,10 @@
          <lastmod>2026-06-05</lastmod>
     </url>
     <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/UninstallGitHubAppInput/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/UninstallIoFilterInput/</loc>
          <lastmod>2026-06-05</lastmod>
     </url>
@@ -19998,6 +20766,14 @@
     </url>
     <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/UpdateAzureCloudAccountInput/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/UpdateAzureClusterStorageAccountRedundancyInput/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/UpdateAzureDevOpsCloudAccountInput/</loc>
          <lastmod>2026-06-05</lastmod>
     </url>
     <url>
@@ -20133,11 +20909,19 @@
          <lastmod>2026-06-05</lastmod>
     </url>
     <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/UpdateFusionComputeMountInput/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/UpdateFusionComputeVrmInput/</loc>
          <lastmod>2026-06-05</lastmod>
     </url>
     <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/UpdateGcpTargetInput/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/UpdateGitHubCloudAccountInput/</loc>
          <lastmod>2026-06-05</lastmod>
     </url>
     <url>
@@ -20473,6 +21257,10 @@
          <lastmod>2026-06-05</lastmod>
     </url>
     <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/UpgradeAzureDevOpsCloudAccountInput/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/UpgradeCdmManagedTargetInput/</loc>
          <lastmod>2026-06-05</lastmod>
     </url>
@@ -20546,6 +21334,10 @@
     </url>
     <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/ValidateAzureCloudAccountExocomputeConfigurationsInput/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/ValidateBackupLocationUsableForAzureDevOpsReq/</loc>
          <lastmod>2026-06-05</lastmod>
     </url>
     <url>
@@ -21005,6 +21797,10 @@
          <lastmod>2026-06-05</lastmod>
     </url>
     <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/WebhookIdentityActivitySubscriptionInput/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/WebhookMessageTemplatesReqInput/</loc>
          <lastmod>2026-06-05</lastmod>
     </url>
@@ -21046,6 +21842,10 @@
     </url>
     <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/WorkloadFieldsInput/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/WorkloadRecoveryPoint/</loc>
          <lastmod>2026-06-05</lastmod>
     </url>
     <url>
@@ -21194,6 +21994,38 @@
     </url>
     <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/FilesetTemplatePhysicalChildType/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/FusionComputeClusterDescendant/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/FusionComputeClusterPhysicalChildType/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/FusionComputeHostDescendant/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/FusionComputeHostPhysicalChildType/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/FusionComputeSiteDescendant/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/FusionComputeSitePhysicalChildType/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/FusionComputeVrmDescendant/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/FusionComputeVrmPhysicalChildType/</loc>
          <lastmod>2026-06-05</lastmod>
     </url>
     <url>
@@ -21802,6 +22634,10 @@
     </url>
     <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AccountProduct/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AccountRecoveryPlanSummary/</loc>
          <lastmod>2026-06-05</lastmod>
     </url>
     <url>
@@ -22637,6 +23473,10 @@
          <lastmod>2026-06-05</lastmod>
     </url>
     <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AwsEc2InstanceResourceSpec/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AwsExocomputeClusterConnectReply/</loc>
          <lastmod>2026-06-05</lastmod>
     </url>
@@ -22702,6 +23542,10 @@
     </url>
     <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AwsNativeAccountEnabledFeature/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AwsNativeConfig/</loc>
          <lastmod>2026-06-05</lastmod>
     </url>
     <url>
@@ -22825,11 +23669,19 @@
          <lastmod>2026-06-05</lastmod>
     </url>
     <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AwsRdsInstanceResourceSpec/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AwsRegionDetails/</loc>
          <lastmod>2026-06-05</lastmod>
     </url>
     <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AwsRegionDetailsReply/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AwsRegionOneof/</loc>
          <lastmod>2026-06-05</lastmod>
     </url>
     <url>
@@ -22977,6 +23829,10 @@
          <lastmod>2026-06-05</lastmod>
     </url>
     <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AzureAdEmExpiration/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AzureAdEmIncompatibilities/</loc>
          <lastmod>2026-06-05</lastmod>
     </url>
@@ -22986,6 +23842,10 @@
     </url>
     <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AzureAdGroup/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AzureAdGroupActiveAssignment/</loc>
          <lastmod>2026-06-05</lastmod>
     </url>
     <url>
@@ -23018,6 +23878,14 @@
     </url>
     <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AzureAdOnPremSyncInfo/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AzureAdPimActivePrincipalObject/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AzureAdPimEligibilityPrincipalObject/</loc>
          <lastmod>2026-06-05</lastmod>
     </url>
     <url>
@@ -23145,11 +24013,55 @@
          <lastmod>2026-06-05</lastmod>
     </url>
     <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AzureClusterStorageAccountRedundancyReply/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AzureCmk/</loc>
          <lastmod>2026-06-05</lastmod>
     </url>
     <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AzureComputeSettings/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AzureDevOpsConnectionStatusSummaryReply/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AzureDevOpsOrganization/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AzureDevOpsOrganizationConnection/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AzureDevOpsOrganizationEdge/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AzureDevOpsProject/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AzureDevOpsProjectConnection/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AzureDevOpsProjectEdge/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AzureDevOpsRepository/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AzureDevOpsRepositoryConnection/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AzureDevOpsRepositoryEdge/</loc>
          <lastmod>2026-06-05</lastmod>
     </url>
     <url>
@@ -23361,6 +24273,10 @@
          <lastmod>2026-06-05</lastmod>
     </url>
     <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AzureNativeVirtualMachineResourceSpec/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AzureNativeVirtualNetwork/</loc>
          <lastmod>2026-06-05</lastmod>
     </url>
@@ -23390,6 +24306,22 @@
     </url>
     <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AzurePermissionWithUseCase/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AzurePostgresFlexibleServer/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AzurePostgresFlexibleServerConfig/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AzurePostgresFlexibleServerConnection/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AzurePostgresFlexibleServerEdge/</loc>
          <lastmod>2026-06-05</lastmod>
     </url>
     <url>
@@ -23578,6 +24510,10 @@
     </url>
     <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AzureUserRoleResp/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/BackupDevOpsRepositoryReply/</loc>
          <lastmod>2026-06-05</lastmod>
     </url>
     <url>
@@ -24405,6 +25341,10 @@
          <lastmod>2026-06-05</lastmod>
     </url>
     <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/CloudDirectEventSeriesTaskReportReply/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/CloudDirectExclusionObject/</loc>
          <lastmod>2026-06-05</lastmod>
     </url>
@@ -24422,6 +25362,10 @@
     </url>
     <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/CloudDirectGlobalSearchResult/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/CloudDirectJobRecentErrorsReportReply/</loc>
          <lastmod>2026-06-05</lastmod>
     </url>
     <url>
@@ -24690,6 +25634,14 @@
     </url>
     <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/CloudNativeVersionedFileEdge/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/CloudRegion/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/CloudRegionOneof/</loc>
          <lastmod>2026-06-05</lastmod>
     </url>
     <url>
@@ -24973,11 +25925,23 @@
          <lastmod>2026-06-05</lastmod>
     </url>
     <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/CompleteGitHubAppRegistrationReply/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/CompleteUploadSessionReply/</loc>
          <lastmod>2026-06-05</lastmod>
     </url>
     <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/CompletedUpload/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/ComplexRecoveryStep/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/ComplexRecoverySteps/</loc>
          <lastmod>2026-06-05</lastmod>
     </url>
     <url>
@@ -25017,6 +25981,10 @@
          <lastmod>2026-06-05</lastmod>
     </url>
     <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/ConnectionStatusCount/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/ConnectionStatusDetails/</loc>
          <lastmod>2026-06-05</lastmod>
     </url>
@@ -25026,6 +25994,14 @@
     </url>
     <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/ContentNodeAttribute/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/CoordinatorLabelEntry/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/CoordinatorLabelsReply/</loc>
          <lastmod>2026-06-05</lastmod>
     </url>
     <url>
@@ -25254,6 +26230,14 @@
     </url>
     <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/CrowdStrikeIntegrationSettings/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/CrowdstrikeAlertActivitySummary/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/CrowdstrikeCaseActivitySummary/</loc>
          <lastmod>2026-06-05</lastmod>
     </url>
     <url>
@@ -25605,6 +26589,14 @@
          <lastmod>2026-06-05</lastmod>
     </url>
     <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/DeleteRecoveryPlanResp/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/DeleteRecoveryPlansV2Reply/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/DeleteReplicationPairTprReqChangesTemplate/</loc>
          <lastmod>2026-06-05</lastmod>
     </url>
@@ -25621,7 +26613,47 @@
          <lastmod>2026-06-05</lastmod>
     </url>
     <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/DeletionRegionOneof/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/DetailedPrivateEndpointConnection/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/DevOpsBackupJobInformation/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/DevOpsBackupLocation/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/DevOpsCloudAccountListCurrentPermissionsReply/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/DevOpsCloudAccountListLatestPermissionsReply/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/DevOpsCloudNativeExocompute/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/DevOpsGroupPermissions/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/DevOpsOrgRefreshStatus/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/DevOpsProtectedObjectCountSummary/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/DevOpsRubrikHostedExocompute/</loc>
          <lastmod>2026-06-05</lastmod>
     </url>
     <url>
@@ -26405,6 +27437,206 @@
          <lastmod>2026-06-05</lastmod>
     </url>
     <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/FusionComputeCluster/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/FusionComputeClusterConnection/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/FusionComputeClusterDescendantConnection/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/FusionComputeClusterDescendantEdge/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/FusionComputeClusterEdge/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/FusionComputeClusterPhysicalChildTypeConnection/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/FusionComputeClusterPhysicalChildTypeEdge/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/FusionComputeDatastore/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/FusionComputeDatastoreConnection/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/FusionComputeDatastoreEdge/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/FusionComputeEchoResponse/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/FusionComputeHost/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/FusionComputeHostConnection/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/FusionComputeHostDescendantConnection/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/FusionComputeHostDescendantEdge/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/FusionComputeHostEdge/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/FusionComputeHostPhysicalChildTypeConnection/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/FusionComputeHostPhysicalChildTypeEdge/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/FusionComputeMountDetail/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/FusionComputeMountDetailConnection/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/FusionComputeMountDetailEdge/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/FusionComputeNetwork/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/FusionComputeNetworkConnection/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/FusionComputeNetworkEdge/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/FusionComputeNicSpec/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/FusionComputeResourceSpec/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/FusionComputeSite/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/FusionComputeSiteConnection/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/FusionComputeSiteDescendantConnection/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/FusionComputeSiteDescendantEdge/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/FusionComputeSiteEdge/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/FusionComputeSitePhysicalChildTypeConnection/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/FusionComputeSitePhysicalChildTypeEdge/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/FusionComputeSnapshotResourceSpecReply/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/FusionComputeVirtualDisk/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/FusionComputeVirtualDiskConnection/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/FusionComputeVirtualDiskEdge/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/FusionComputeVirtualMachine/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/FusionComputeVirtualMachineConnection/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/FusionComputeVirtualMachineEdge/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/FusionComputeVmMountDetailV1/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/FusionComputeVmMountSummaryV1/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/FusionComputeVmProperties/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/FusionComputeVrm/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/FusionComputeVrmConnection/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/FusionComputeVrmDescendantConnection/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/FusionComputeVrmDescendantEdge/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/FusionComputeVrmEdge/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/FusionComputeVrmPhysicalChildTypeConnection/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/FusionComputeVrmPhysicalChildTypeEdge/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/FusionComputeVrmSummary/</loc>
          <lastmod>2026-06-05</lastmod>
     </url>
@@ -26913,6 +28145,50 @@
          <lastmod>2026-06-05</lastmod>
     </url>
     <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/GitHubAppInstallationInfo/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/GitHubAppRegistrationInfo/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/GitHubAppSetupInfo/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/GitHubAppStatusInfo/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/GitHubConnectionStatusSummaryReply/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/GithubOrganization/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/GithubOrganizationConnection/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/GithubOrganizationEdge/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/GithubRepository/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/GithubRepositoryConnection/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/GithubRepositoryEdge/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/GlobalCertificate/</loc>
          <lastmod>2026-06-05</lastmod>
     </url>
@@ -26974,6 +28250,18 @@
     </url>
     <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/GlobalSmbAuthSettings/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/GlueIcebergCatalog/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/GlueIcebergDatabase/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/GlueIcebergTable/</loc>
          <lastmod>2026-06-05</lastmod>
     </url>
     <url>
@@ -27489,6 +28777,14 @@
          <lastmod>2026-06-05</lastmod>
     </url>
     <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/IcebergTableSpecificSnapshot/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/IdentityActivitySubscription/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/IdentityDataLocationEncryptionInfo/</loc>
          <lastmod>2026-06-05</lastmod>
     </url>
@@ -27933,6 +29229,14 @@
          <lastmod>2026-06-05</lastmod>
     </url>
     <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/KosmosPerObjectAsyncRequestStatus/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/KosmosTopologyReplicaInfo/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/KosmosUserMessage/</loc>
          <lastmod>2026-06-05</lastmod>
     </url>
@@ -28062,6 +29366,10 @@
     </url>
     <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/LambdaSettings/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/LatestEntraObjectCount/</loc>
          <lastmod>2026-06-05</lastmod>
     </url>
     <url>
@@ -29265,6 +30573,10 @@
          <lastmod>2026-06-05</lastmod>
     </url>
     <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/MysqldbInstanceAdvancedConfig/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/MysqldbInstanceAppMetadata/</loc>
          <lastmod>2026-06-05</lastmod>
     </url>
@@ -29565,6 +30877,18 @@
          <lastmod>2026-06-05</lastmod>
     </url>
     <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/NodeToRemoveByCount/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/NodeToRemoveByCountConnection/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/NodeToRemoveByCountEdge/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/NodeToReplaceReply/</loc>
          <lastmod>2026-06-05</lastmod>
     </url>
@@ -29773,7 +31097,19 @@
          <lastmod>2026-06-05</lastmod>
     </url>
     <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/NutanixVirtualMachineNic/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/NutanixVirtualMachineResourceSpec/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/NutanixVirtualMachineScriptDetail/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/NutanixVirtualMachineVolume/</loc>
          <lastmod>2026-06-05</lastmod>
     </url>
     <url>
@@ -31001,6 +32337,10 @@
          <lastmod>2026-06-05</lastmod>
     </url>
     <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/PostgresHaClusterInfo/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/PrePostScript/</loc>
          <lastmod>2026-06-05</lastmod>
     </url>
@@ -31106,6 +32446,10 @@
     </url>
     <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/ProtectionStatus/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/ProtectionSummaryV2/</loc>
          <lastmod>2026-06-05</lastmod>
     </url>
     <url>
@@ -31333,11 +32677,19 @@
          <lastmod>2026-06-05</lastmod>
     </url>
     <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/RecoverDevOpsRepositoryReply/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/RecoverableRange/</loc>
          <lastmod>2026-06-05</lastmod>
     </url>
     <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/RecoverableRangeResponse/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/Recovery/</loc>
          <lastmod>2026-06-05</lastmod>
     </url>
     <url>
@@ -31349,11 +32701,67 @@
          <lastmod>2026-06-05</lastmod>
     </url>
     <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/RecoveryConfigV2Output/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/RecoveryConnection/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/RecoveryEdge/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/RecoveryEvent/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/RecoveryPlanBasicInfo/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/RecoveryPlanLocation/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/RecoveryPlanRecoveryStat/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/RecoveryPlanStats/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/RecoveryPlanTargetConsistencyInfo/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/RecoveryPlansInfo/</loc>
          <lastmod>2026-06-05</lastmod>
     </url>
     <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/RecoverySchedule/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/RecoveryStep/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/RecoverySteps/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/RecoverySubStep/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/RecoveryTaskDetailsTableFilter/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/RefreshDevOpsOrganizationsReply/</loc>
          <lastmod>2026-06-05</lastmod>
     </url>
     <url>
@@ -31386,6 +32794,10 @@
     </url>
     <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/RegionImageIdEntry/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/RegionOneof/</loc>
          <lastmod>2026-06-05</lastmod>
     </url>
     <url>
@@ -32149,6 +33561,10 @@
          <lastmod>2026-06-05</lastmod>
     </url>
     <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/ScheduleInfoV2Output/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/ScheduledReport/</loc>
          <lastmod>2026-06-05</lastmod>
     </url>
@@ -32274,6 +33690,10 @@
     </url>
     <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/SetCloudDirectGlobalSmbSettingsReply/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/SetCoordinatorLabelsReply/</loc>
          <lastmod>2026-06-05</lastmod>
     </url>
     <url>
@@ -32593,6 +34013,18 @@
          <lastmod>2026-06-05</lastmod>
     </url>
     <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/SnapshotSecurityInfo/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/SnapshotSecurityInfoConnection/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/SnapshotSecurityInfoEdge/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/SnapshotSubObj/</loc>
          <lastmod>2026-06-05</lastmod>
     </url>
@@ -32685,7 +34117,15 @@
          <lastmod>2026-06-05</lastmod>
     </url>
     <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/SplunkIntegrationConfig/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/SqlServerSetupScriptDetails/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/SsmDocumentForEc2Reply/</loc>
          <lastmod>2026-06-05</lastmod>
     </url>
     <url>
@@ -32725,6 +34165,10 @@
          <lastmod>2026-06-05</lastmod>
     </url>
     <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/StartGitHubAppSetupReply/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/StartThreatHuntReply/</loc>
          <lastmod>2026-06-05</lastmod>
     </url>
@@ -32750,6 +34194,10 @@
     </url>
     <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/StatusResponse/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/StepsOneof/</loc>
          <lastmod>2026-06-05</lastmod>
     </url>
     <url>
@@ -32989,6 +34437,10 @@
          <lastmod>2026-06-05</lastmod>
     </url>
     <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/TaxiiConfigType/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/TemplateFilterDetail/</loc>
          <lastmod>2026-06-05</lastmod>
     </url>
@@ -33125,6 +34577,10 @@
          <lastmod>2026-06-05</lastmod>
     </url>
     <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/ThreatHuntSnapshotInfo/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/ThreatHuntStats/</loc>
          <lastmod>2026-06-05</lastmod>
     </url>
@@ -33142,6 +34598,10 @@
     </url>
     <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/ThreatHuntingObjectFileMatchEdge/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/ThreatIntelProviderConfigType/</loc>
          <lastmod>2026-06-05</lastmod>
     </url>
     <url>
@@ -33226,6 +34686,10 @@
     </url>
     <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/TprFilesetTemplatePatch/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/TprPerLocationSnapshotInfo/</loc>
          <lastmod>2026-06-05</lastmod>
     </url>
     <url>
@@ -33369,6 +34833,10 @@
          <lastmod>2026-06-05</lastmod>
     </url>
     <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/UnregisteredDomainControllerInfo/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/UpdateAgentDeploymentSettingInBatchNewReply/</loc>
          <lastmod>2026-06-05</lastmod>
     </url>
@@ -33394,6 +34862,10 @@
     </url>
     <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/UpdateAzureCloudAccountStatus/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/UpdateAzureClusterStorageAccountRedundancyReply/</loc>
          <lastmod>2026-06-05</lastmod>
     </url>
     <url>
@@ -33470,6 +34942,10 @@
     </url>
     <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/UpdateFloatingIpsReply/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/UpdateFusionComputeMountReply/</loc>
          <lastmod>2026-06-05</lastmod>
     </url>
     <url>
@@ -33650,6 +35126,10 @@
     </url>
     <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/UpgradeAzureCloudAccountStatus/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/UpgradeAzureDevOpsCloudAccountReply/</loc>
          <lastmod>2026-06-05</lastmod>
     </url>
     <url>
@@ -34229,6 +35709,18 @@
          <lastmod>2026-06-05</lastmod>
     </url>
     <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/VmwareVirtualMachineNic/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/VmwareVirtualMachineResourceSpec/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/VmwareVirtualMachineVolume/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/VmwareVmConfig/</loc>
          <lastmod>2026-06-05</lastmod>
     </url>
@@ -34777,7 +36269,15 @@
          <lastmod>2026-06-05</lastmod>
     </url>
     <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/WorkloadResourceSpec/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
          <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/WorkloadSnapshotDetails/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/WorkloadSpecificResourceSpec/</loc>
          <lastmod>2026-06-05</lastmod>
     </url>
     <url>

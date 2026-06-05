@@ -1,12 +1,13 @@
 # GcpImmutabilitySettings
 
-Immutability settings for GCP Archival location.
+Immutability settings for GCP target.
 
 ## Fields
 
-| Field               | Type     | Description                                                |
-| ------------------- | -------- | ---------------------------------------------------------- |
-| isObjectLockEnabled | Boolean! | Whether object-level locking is enabled on the GCS Bucket. |
+| Field               | Type                                                                                                                                                           | Description                                                                                         |
+| ------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- |
+| immutabilityMode    | [ArchivalLocationImmutabilityMode](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/ArchivalLocationImmutabilityMode/index.md) | Immutability mode for this target. Absent when the target does not enforce mode-based immutability. |
+| isObjectLockEnabled | Boolean!                                                                                                                                                       | Specifies whether object-level immutability is enabled.                                             |
 
 ## Used By
 

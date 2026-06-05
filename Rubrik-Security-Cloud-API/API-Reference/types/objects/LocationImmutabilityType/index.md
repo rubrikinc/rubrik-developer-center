@@ -4,10 +4,11 @@ Immutability settings for target.
 
 ## Fields
 
-| Field                  | Type     | Description                                             |
-| ---------------------- | -------- | ------------------------------------------------------- |
-| bucketLockDurationDays | Int!     | Number of days location is immutable.                   |
-| isObjectLockEnabled    | Boolean! | Specifies whether object-level immutability is enabled. |
+| Field                  | Type                                                                                                                                                           | Description                                                                                         |
+| ---------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- |
+| bucketLockDurationDays | Int!                                                                                                                                                           | Number of days location is immutable.                                                               |
+| immutabilityMode       | [ArchivalLocationImmutabilityMode](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/ArchivalLocationImmutabilityMode/index.md) | Immutability mode for this target. Absent when the target does not enforce mode-based immutability. |
+| isObjectLockEnabled    | Boolean!                                                                                                                                                       | Specifies whether object-level immutability is enabled.                                             |
 
 ## Used By
 

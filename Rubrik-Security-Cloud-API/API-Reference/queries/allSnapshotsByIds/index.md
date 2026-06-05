@@ -4,10 +4,11 @@ Returns the details for the passed snapshot IDs.
 
 ## Arguments
 
-| Argument                                     | Type                                                                                                           | Description                                   |
-| -------------------------------------------- | -------------------------------------------------------------------------------------------------------------- | --------------------------------------------- |
-| snapshotFids *(required)*                    | \[[UUID](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/UUID/index.md)!\]! | List of snapshot UUIDs.                       |
-| shouldShowSnapshotRetentionInfo *(required)* | Boolean!                                                                                                       | Specifies whether to show snapshot retention. |
+| Argument                                     | Type                                                                                                                                   | Description                                                                                           |
+| -------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- |
+| snapshotFids *(required)*                    | \[[UUID](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/UUID/index.md)!\]!                         | List of snapshot UUIDs.                                                                               |
+| shouldShowSnapshotRetentionInfo *(required)* | Boolean!                                                                                                                               | Specifies whether to show snapshot retention.                                                         |
+| snapshotLocationView                         | [SnapshotLocationView](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/SnapshotLocationView/index.md) | Filter for per-location entries in snapshot retention info. Defaults to EXCLUDE_EXPIRED when omitted. |
 
 ## Returns
 

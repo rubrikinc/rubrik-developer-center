@@ -19,6 +19,7 @@ Paginated list of MissedSnapshotCommon objects. Each page of the results include
 - CdmHierarchySnappableNew.missedSnapshotConnection
 - [Db2Database.missedSnapshotConnection](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/Db2Database/index.md)
 - [ExchangeDatabase.missedSnapshotConnection](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/ExchangeDatabase/index.md)
+- [FusionComputeVirtualMachine.missedSnapshotConnection](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/FusionComputeVirtualMachine/index.md)
 - [HyperVVirtualMachine.missedSnapshotConnection](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/HyperVVirtualMachine/index.md)
 - KosmosSnappableHierarchyObjectType.missedSnapshotConnection
 - [KubernetesProtectionSet.missedSnapshotConnection](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/KubernetesProtectionSet/index.md)

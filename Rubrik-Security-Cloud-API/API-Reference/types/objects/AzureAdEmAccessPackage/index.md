@@ -6,6 +6,7 @@ Entitlement Management access package.
 
 | Field            | Type                                                                                                             | Description                                                |
 | ---------------- | ---------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------- |
+| catalogId        | String!                                                                                                          | ID of the parent catalog containing this access package.   |
 | catalogName      | String!                                                                                                          | Name of the parent catalog containing this access package. |
 | displayName      | String!                                                                                                          | Human-readable name of the access package.                 |
 | modifiedDateTime | [DateTime](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/DateTime/index.md) | Last modified time of the catalog.                         |

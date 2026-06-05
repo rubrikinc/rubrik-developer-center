@@ -42,7 +42,7 @@ Latest user note information.
 - [FilesetTemplate.latestUserNote](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/FilesetTemplate/index.md)
 - FilesetTemplateDescendantType.latestUserNote
 - FilesetTemplatePhysicalChildType.latestUserNote
-- [HostFailoverCluster.latestUserNote](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/HostFailoverCluster/index.md)
-- HostFailoverClusterDescendantType.latestUserNote
-- HostFailoverClusterPhysicalChildType.latestUserNote
-- *…and 163 more*
+- [FusionComputeCluster.latestUserNote](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/FusionComputeCluster/index.md)
+- FusionComputeClusterDescendant.latestUserNote
+- FusionComputeClusterPhysicalChildType.latestUserNote
+- *…and 178 more*

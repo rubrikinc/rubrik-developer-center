@@ -1,12 +1,12 @@
 # customAnalyzer
 
-*No description available.*
+Returns the custom analyzer with the given ID.
 
 ## Arguments
 
-| Argument                | Type    | Description |
-| ----------------------- | ------- | ----------- |
-| analyzerId *(required)* | String! |             |
+| Argument                | Type    | Description                                  |
+| ----------------------- | ------- | -------------------------------------------- |
+| analyzerId *(required)* | String! | Identifier of the custom analyzer to return. |
 
 ## Returns
 
@@ -24,7 +24,6 @@ query CustomAnalyzer($analyzerId: String!) {
     excludePathPattern
     id
     isInactive
-    jsValidationFunction
     keyRegex
     name
     proximityDistance

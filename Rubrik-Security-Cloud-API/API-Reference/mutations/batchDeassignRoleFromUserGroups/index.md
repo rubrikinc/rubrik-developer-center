@@ -1,12 +1,12 @@
 # batchDeassignRoleFromUserGroups
 
-*No description available.*
+Batch deassign roles from the given user groups.
 
 ## Arguments
 
-| Argument                      | Type                                                                                                                                            | Description |
-| ----------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- | ----------- |
-| userGroupToRoles *(required)* | \[[UserGroupToRolesInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/UserGroupToRolesInput/index.md)!\]! |             |
+| Argument                      | Type                                                                                                                                            | Description                                       |
+| ----------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------- |
+| userGroupToRoles *(required)* | \[[UserGroupToRolesInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/UserGroupToRolesInput/index.md)!\]! | The list of (user group, role) pairs to deassign. |
 
 ## Returns
 

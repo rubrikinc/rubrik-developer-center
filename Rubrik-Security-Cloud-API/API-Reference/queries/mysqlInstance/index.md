@@ -52,6 +52,10 @@ query MysqlInstance($fid: UUID!) {
       "cdmPendingObjectPauseAssignment": "NO_PENDING_PAUSE_ASSIGNMENT",
       "id": "00000000-0000-0000-0000-000000000000",
       "isRelic": true,
+      "advancedConfig": {
+        "dirtyPageFlushTimeoutInMinutes": 0,
+        "mysqlBinaryPath": "example-string"
+      },
       "allOrgs": [
         {
           "allUrls": [
@@ -66,16 +70,6 @@ query MysqlInstance($fid: UUID!) {
           ],
           "description": "example-string",
           "fullName": "example-string"
-        }
-      ],
-      "allTags": [
-        {
-          "description": "example-string",
-          "id": "example-string",
-          "isArchived": true,
-          "key": "example-string",
-          "lastModified": "example-string",
-          "name": "example-string"
         }
       ]
     }

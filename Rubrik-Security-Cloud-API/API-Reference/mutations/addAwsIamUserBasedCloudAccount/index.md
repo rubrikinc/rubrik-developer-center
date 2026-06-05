@@ -36,10 +36,10 @@ mutation AddAwsIamUserBasedCloudAccount($input: AddAwsIamUserBasedCloudAccountIn
       "awsAccount": {
         "accountName": "example-string",
         "cloudType": "C2S",
+        "crossAccountRoleModel": "CROSS_ACCOUNT_ROLE_MODEL_UNSPECIFIED",
         "id": "example-string",
         "message": "example-string",
-        "nativeId": "example-string",
-        "orgId": "example-string"
+        "nativeId": "example-string"
       }
     }
   }

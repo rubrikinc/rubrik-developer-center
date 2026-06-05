@@ -6,6 +6,7 @@ Represents upgrade duration in seconds.
 
 | Field                  | Type                                                                                                      | Description                                                    |
 | ---------------------- | --------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------- |
+| clusterUuid            | String!                                                                                                   | Cluster UUID.                                                  |
 | fastUpgradeDuration    | [Long](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/Long/index.md)! | Time taken by the last successful fast upgrade, in seconds.    |
 | rollingUpgradeDuration | [Long](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/Long/index.md)! | Time taken by the last successful rolling upgrade, in seconds. |
 

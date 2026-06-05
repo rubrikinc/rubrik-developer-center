@@ -6,7 +6,7 @@ This document lists all deprecated fields, queries, mutations, and enum values i
 
 *Extracted from schema: 20260601.graphql*
 
-**Total deprecated items: 269**
+**Total deprecated items: 278**
 
 ### Deprecated Query Fields
 
@@ -142,6 +142,12 @@ This document lists all deprecated fields, queries, mutations, and enum values i
 
 - **`isProvisioned`**: Use provisioningState instead.
 
+#### AzureAdPimPolicy
+
+- **`activationMaxDurationMinutes`**: Use activation_max_duration_seconds instead.
+- **`activeAssignmentExpirationDays`**: Use active_assignment_expiration_seconds instead.
+- **`eligibleAssignmentExpirationDays`**: Use eligible_assignment_expiration_seconds instead.
+
 #### AzureAdRelatedItemCount
 
 - **`relationshipType`**: Deprecated, use relatedItemType instead.
@@ -160,6 +166,14 @@ This document lists all deprecated fields, queries, mutations, and enum values i
 - **`excludedDataActions`**: Use excludedDataActionsWithUseCase instead.
 - **`includedActions`**: Use includedActionsWithUseCase instead.
 - **`includedDataActions`**: Use includedDataActionsWithUseCase instead.
+
+#### AzureDevOpsOrganization
+
+- **`backupLocationId`**: Use backupLocation.id instead.
+- **`backupLocationName`**: Use backupLocation.name instead.
+- **`backupRegion`**: Use backupLocation.cloudSpecificRegion instead.
+- **`exocomputeHostName`**: Use cloudNativeExocompute.hostName instead.
+- **`exocomputeId`**: Use cloudNativeExocompute.id instead.
 
 #### AzureNativeManagedDisk
 
@@ -288,6 +302,10 @@ This document lists all deprecated fields, queries, mutations, and enum values i
 - **`isAccepted`**: Use pactsafeEulaState instead.
 - **`isPactsafeEnabled`**: Use isPactsafeV2Enabled instead.
 
+#### FailoverGroupWorkload
+
+- **`workloadType`**: Use managedObjectType instead.
+
 #### FederatedLoginStatus
 
 - **`inventoryCardEnabled`**: No longer used. The inventory card toggle has been removed.
@@ -295,10 +313,6 @@ This document lists all deprecated fields, queries, mutations, and enum values i
 #### FileResult
 
 - **`attributesSummary`**: No longer used.
-
-#### GcpAlloyDbCluster
-
-- **`gcpNativeProjectDetails`**: Deprecated, use gcpProjectDetails instead.
 
 #### GcpCloudSqlInstance
 
@@ -387,6 +401,10 @@ This document lists all deprecated fields, queries, mutations, and enum values i
 
 - **`migrationStatus`**: Use bli_migration_status instead.
 - **`migrationUnavailabilityReason`**: Use bli_migration_unavailability_reason instead.
+
+#### RemediationMetadata
+
+- **`policyViolationId`**: Use targets instead.
 
 #### Role
 
@@ -555,7 +573,7 @@ This document lists all deprecated fields, queries, mutations, and enum values i
 - **`RUBRIK_NATIVE_HAS_UNINDEXED_OR_EXPIRED_SNAPSHOT`**: use `SAASAPPS_ORGANIZATION_SCOPE` instead.
 - **`SECURITY_IDENTITY_DEPARTMENT`**: Use SECURITY_IDENTITY_DIRECT_DESCENDANT_COUNT instead.
 - **`SECURITY_IDENTITY_EVENT_TITLE`**: Use SECURITY_IDENTITY_EVENT_TITLE instead.
-- **`SERVICE_ACCOUNT`**: Use SLA_AUDIT_DETAIL_NG instead.
+- **`SIGNIN_LOGS`**: Use SLA_AUDIT_DETAIL_NG instead.
 - **`SINGLE_ZONE`**: Use REDUNDANCY_UNKNOWN instead.
 - **`SLA_AUDIT_DETAIL_NG`**: Use SLA_AUDIT_LIST_NG instead.
 - **`SLA_AUDIT_LIST_NG`**: Use LATEST_GLOBAL_OBJECTS instead.

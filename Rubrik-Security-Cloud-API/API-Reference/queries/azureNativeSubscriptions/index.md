@@ -31,6 +31,7 @@ query {
       accountConnectionId
       authorizedOperations
       azureCloudType
+      azurePostgresFlexibleServerCount
       azureSqlDatabaseDbCount
       azureSqlManagedInstanceDbCount
       azureStorageAccountCount
@@ -74,9 +75,9 @@ query {
               "MANAGE_DATA_SOURCE"
             ],
             "azureCloudType": "AZURECHINACLOUD",
+            "azurePostgresFlexibleServerCount": 0,
             "azureSqlDatabaseDbCount": 0,
-            "azureSqlManagedInstanceDbCount": 0,
-            "azureStorageAccountCount": 0
+            "azureSqlManagedInstanceDbCount": 0
           }
         ]
       ],

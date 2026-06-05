@@ -29,7 +29,11 @@ query ArchivalPerObjectInfo($input: UUID!) {
   ) {
     nodes {
       archivalLag
+      archivalLocationId
+      archivalLocationName
+      isRcv
       latestArchivedSnapshotDate
+      locationType
       monthlyGrowthBytes
       numActiveSnapshots
       objectLocation
@@ -37,6 +41,7 @@ query ArchivalPerObjectInfo($input: UUID!) {
       objectStatus
       objectType
       slaDomain
+      storageTier
       storageUsage
       workloadId
     }
@@ -62,11 +67,11 @@ query ArchivalPerObjectInfo($input: UUID!) {
         [
           {
             "archivalLag": 0,
+            "archivalLocationId": "example-string",
+            "archivalLocationName": "example-string",
+            "isRcv": true,
             "latestArchivedSnapshotDate": "2024-01-01T00:00:00.000Z",
-            "monthlyGrowthBytes": 0.0,
-            "numActiveSnapshots": 0,
-            "objectLocation": "example-string",
-            "objectName": "example-string"
+            "locationType": "example-string"
           }
         ]
       ],

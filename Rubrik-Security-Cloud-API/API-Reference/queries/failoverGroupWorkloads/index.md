@@ -29,6 +29,7 @@ query FailoverGroupWorkloads($failoverGroupId: UUID!) {
       counterpartIds
       hostIds
       hostNames
+      managedObjectType
       name
       primaryClusterUuid
       status
@@ -66,9 +67,9 @@ query FailoverGroupWorkloads($failoverGroupId: UUID!) {
             "hostNames": [
               "example-string"
             ],
+            "managedObjectType": "ACTIVE_DIRECTORY_DOMAIN",
             "name": "example-string",
-            "primaryClusterUuid": "00000000-0000-0000-0000-000000000000",
-            "status": "FAILOVER_GROUP_OBJECT_STATUS_DISCONNECTED"
+            "primaryClusterUuid": "00000000-0000-0000-0000-000000000000"
           }
         ]
       ],

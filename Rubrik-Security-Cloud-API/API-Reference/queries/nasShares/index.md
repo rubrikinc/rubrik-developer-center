@@ -33,6 +33,7 @@ query {
       isChangelistEnabled
       isHidden
       isNasShareManuallyAdded
+      isNutanixCftEnabled
       isRelic
       isStale
       name

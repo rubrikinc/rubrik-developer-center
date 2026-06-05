@@ -1,6 +1,6 @@
 # clusterState
 
-*No description available.*
+Cluster State.
 
 ## Fields
 
@@ -10,6 +10,7 @@
 | clusterRemovalState     | [ClusterRemovalState](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/ClusterRemovalState/index.md)! | The removal status of the Rubrik CDM cluster. |
 | clusterRemovalUpdatedAt | [DateTime](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/DateTime/index.md)                      | Cluster removal job update time.              |
 | connectedState          | [ClusterStatus](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/ClusterStatus/index.md)!             | Connected status of the Rubrik CDM cluster.   |
+| subStatus               | [ClusterSubStatus](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/ClusterSubStatus/index.md)!       | Cluster sub status.                           |
 
 ## Used By
 

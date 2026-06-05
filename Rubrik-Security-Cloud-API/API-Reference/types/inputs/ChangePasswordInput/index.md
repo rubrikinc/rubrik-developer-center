@@ -1,6 +1,6 @@
 # ChangePasswordInput
 
-*No description available.*
+User credentials for changing a password.
 
 ## Fields
 

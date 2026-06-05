@@ -1,6 +1,6 @@
 # Interfaces
 
-173 types.
+181 types.
 
 [ActiveDirectoryDomainDescendantType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/ActiveDirectoryDomainDescendantType/index.md)\
 [ActiveDirectoryDomainPhysicalChildType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/ActiveDirectoryDomainPhysicalChildType/index.md)\
@@ -35,6 +35,14 @@
 [FailoverClusterTopLevelDescendantType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/FailoverClusterTopLevelDescendantType/index.md)\
 [FilesetTemplateDescendantType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/FilesetTemplateDescendantType/index.md)\
 [FilesetTemplatePhysicalChildType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/FilesetTemplatePhysicalChildType/index.md)\
+[FusionComputeClusterDescendant](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/FusionComputeClusterDescendant/index.md)\
+[FusionComputeClusterPhysicalChildType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/FusionComputeClusterPhysicalChildType/index.md)\
+[FusionComputeHostDescendant](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/FusionComputeHostDescendant/index.md)\
+[FusionComputeHostPhysicalChildType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/FusionComputeHostPhysicalChildType/index.md)\
+[FusionComputeSiteDescendant](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/FusionComputeSiteDescendant/index.md)\
+[FusionComputeSitePhysicalChildType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/FusionComputeSitePhysicalChildType/index.md)\
+[FusionComputeVrmDescendant](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/FusionComputeVrmDescendant/index.md)\
+[FusionComputeVrmPhysicalChildType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/FusionComputeVrmPhysicalChildType/index.md)\
 [GcpNativeHierarchyObject](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/GcpNativeHierarchyObject/index.md)\
 [GcpNativeProjectDescendantType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/GcpNativeProjectDescendantType/index.md)\
 [GcpNativeProjectLogicalChildType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/GcpNativeProjectLogicalChildType/index.md)\

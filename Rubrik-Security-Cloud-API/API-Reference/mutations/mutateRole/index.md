@@ -1,14 +1,14 @@
 # mutateRole
 
-*No description available.*
+Creates a role if `roleId` is not provided; otherwise updates the existing role.
 
 ## Arguments
 
 | Argument                         | Type                                                                                                                                | Description                                                                      |
 | -------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------- |
 | roleId                           | String                                                                                                                              | ID of the role.                                                                  |
-| name *(required)*                | String!                                                                                                                             |                                                                                  |
-| description *(required)*         | String!                                                                                                                             |                                                                                  |
+| name *(required)*                | String!                                                                                                                             | Name of the role.                                                                |
+| description *(required)*         | String!                                                                                                                             | Description of the role.                                                         |
 | permissions *(required)*         | \[[PermissionInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/PermissionInput/index.md)!\]! | Permissions in the role.                                                         |
 | protectableClusters *(required)* | [String!]!                                                                                                                          | List of protectable clusters.                                                    |
 | isSynced                         | Boolean                                                                                                                             | Determines whether the role is marked to be synced to Rubrik CDM; false if null. |

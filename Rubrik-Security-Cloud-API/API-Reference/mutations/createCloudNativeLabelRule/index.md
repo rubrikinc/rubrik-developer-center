@@ -26,7 +26,7 @@ mutation CreateCloudNativeLabelRule($input: CreateCloudNativeLabelRuleInput!) {
 {
   "input": {
     "labelRuleName": "example-string",
-    "objectType": "GCP_CLOUD_SQL_INSTANCE"
+    "objectType": "GCP_BIGQUERY_DATASET"
   }
 }
 ```

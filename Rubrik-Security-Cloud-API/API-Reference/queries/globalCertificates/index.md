@@ -40,6 +40,8 @@ query GlobalCertificates($input: GlobalCertificatesQueryInput!) {
       issuedOn
       issuedTo
       issuerType
+      keyStrength
+      keyType
       name
       serialNumber
       sha1Fingerprint

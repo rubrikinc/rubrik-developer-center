@@ -1,6 +1,6 @@
 # Input Types
 
-2213 types.
+2281 types.
 
 [AcknowledgeClusterNotificationInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/AcknowledgeClusterNotificationInput/index.md)\
 [ActiveDirectoryContainerRestoreOptionsInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/ActiveDirectoryContainerRestoreOptionsInput/index.md)\
@@ -34,6 +34,7 @@
 [AddAzureCloudAccountSubscriptionInputWithoutOauth](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/AddAzureCloudAccountSubscriptionInputWithoutOauth/index.md)\
 [AddAzureCloudAccountUserAssignedManagedIdentityInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/AddAzureCloudAccountUserAssignedManagedIdentityInput/index.md)\
 [AddAzureCloudAccountWithoutOauthInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/AddAzureCloudAccountWithoutOauthInput/index.md)\
+[AddAzureDevOpsCloudAccountInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/AddAzureDevOpsCloudAccountInput/index.md)\
 [AddCloudDirectKerberosCredentialInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/AddCloudDirectKerberosCredentialInput/index.md)\
 [AddCloudDirectSharesToSystemInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/AddCloudDirectSharesToSystemInput/index.md)\
 [AddCloudDirectSystemInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/AddCloudDirectSystemInput/index.md)\
@@ -46,6 +47,7 @@
 [AddCustomIntelFeedInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/AddCustomIntelFeedInput/index.md)\
 [AddDb2InstanceInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/AddDb2InstanceInput/index.md)\
 [AddGcpCloudAccountManualAuthProjectInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/AddGcpCloudAccountManualAuthProjectInput/index.md)\
+[AddGitHubCloudAccountInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/AddGitHubCloudAccountInput/index.md)\
 [AddGlobalCertificateInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/AddGlobalCertificateInput/index.md)\
 [AddIdentityProviderInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/AddIdentityProviderInput/index.md)\
 [AddInventoryWorkloadsInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/AddInventoryWorkloadsInput/index.md)\
@@ -157,6 +159,7 @@
 [AwsNativeIsEligibleForEbsProtectionFilter](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/AwsNativeIsEligibleForEbsProtectionFilter/index.md)\
 [AwsNativeIsEligibleForEc2ProtectionFilter](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/AwsNativeIsEligibleForEc2ProtectionFilter/index.md)\
 [AwsNativeIsEligibleForRdsProtectionFilter](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/AwsNativeIsEligibleForRdsProtectionFilter/index.md)\
+[AwsNativeOutpostArnFilter](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/AwsNativeOutpostArnFilter/index.md)\
 [AwsNativeRdsDbEngineFilter](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/AwsNativeRdsDbEngineFilter/index.md)\
 [AwsNativeRdsDbInstanceClassFilter](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/AwsNativeRdsDbInstanceClassFilter/index.md)\
 [AwsNativeRdsInstanceFilters](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/AwsNativeRdsInstanceFilters/index.md)\
@@ -191,7 +194,10 @@
 [AzureCloudAccountSubscriptionInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/AzureCloudAccountSubscriptionInput/index.md)\
 [AzureCloudComputeSettingsInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/AzureCloudComputeSettingsInput/index.md)\
 [AzureClusterRequestParams](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/AzureClusterRequestParams/index.md)\
+[AzureClusterStorageAccountRedundancyInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/AzureClusterStorageAccountRedundancyInput/index.md)\
 [AzureCmkInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/AzureCmkInput/index.md)\
+[AzureDevOpsRepositoryRecoveryConfig](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/AzureDevOpsRepositoryRecoveryConfig/index.md)\
+[AzureDevopsAuthMethod](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/AzureDevopsAuthMethod/index.md)\
 [AzureEncryptionKeysInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/AzureEncryptionKeysInput/index.md)\
 [AzureEsConfigInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/AzureEsConfigInput/index.md)\
 [AzureExocomputeAddConfigInputType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/AzureExocomputeAddConfigInputType/index.md)\
@@ -238,6 +244,10 @@
 [AzureNsgRequest](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/AzureNsgRequest/index.md)\
 [AzureO365ExocomputeConfig](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/AzureO365ExocomputeConfig/index.md)\
 [AzureOauthConsentCompleteInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/AzureOauthConsentCompleteInput/index.md)\
+[AzurePostgresFlexibleServerConfigInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/AzurePostgresFlexibleServerConfigInput/index.md)\
+[AzurePostgresFlexibleServerFilters](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/AzurePostgresFlexibleServerFilters/index.md)\
+[AzurePostgresFlexibleServerResourceGroupFilter](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/AzurePostgresFlexibleServerResourceGroupFilter/index.md)\
+[AzurePostgresFlexibleServerSubscriptionFilter](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/AzurePostgresFlexibleServerSubscriptionFilter/index.md)\
 [AzureRoleArmTemplateFeature](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/AzureRoleArmTemplateFeature/index.md)\
 [AzureSqlDatabaseDbConfigInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/AzureSqlDatabaseDbConfigInput/index.md)\
 [AzureSqlDatabaseDbLtrExport](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/AzureSqlDatabaseDbLtrExport/index.md)\
@@ -270,6 +280,7 @@
 [AzureVmConfig](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/AzureVmConfig/index.md)\
 [AzureVnetReq](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/AzureVnetReq/index.md)\
 [BackupAzureAdDirectoryInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/BackupAzureAdDirectoryInput/index.md)\
+[BackupDevOpsRepositoryInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/BackupDevOpsRepositoryInput/index.md)\
 [BackupLocationSpecInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/BackupLocationSpecInput/index.md)\
 [BackupM365MailboxInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/BackupM365MailboxInput/index.md)\
 [BackupM365OnedriveInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/BackupM365OnedriveInput/index.md)\
@@ -316,6 +327,7 @@
 [BulkClusterWebCertAndIpmiInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/BulkClusterWebCertAndIpmiInput/index.md)\
 [BulkCreateFilesetTemplatesInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/BulkCreateFilesetTemplatesInput/index.md)\
 [BulkCreateFilesetsInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/BulkCreateFilesetsInput/index.md)\
+[BulkCreateFusionComputeVmBackupInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/BulkCreateFusionComputeVmBackupInput/index.md)\
 [BulkCreateNasFilesetInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/BulkCreateNasFilesetInput/index.md)\
 [BulkCreateNasFilesetsInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/BulkCreateNasFilesetsInput/index.md)\
 [BulkCreateOnDemandMssqlBackupInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/BulkCreateOnDemandMssqlBackupInput/index.md)\
@@ -449,6 +461,9 @@
 [CompleteAzureAdAppSetupInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/CompleteAzureAdAppSetupInput/index.md)\
 [CompleteAzureAdAppUpdateInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/CompleteAzureAdAppUpdateInput/index.md)\
 [CompleteAzureCloudAccountOauthInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/CompleteAzureCloudAccountOauthInput/index.md)\
+[CompleteAzureDevOpsOauthInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/CompleteAzureDevOpsOauthInput/index.md)\
+[CompleteGitHubAppInstallationInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/CompleteGitHubAppInstallationInput/index.md)\
+[CompleteGitHubAppRegistrationInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/CompleteGitHubAppRegistrationInput/index.md)\
 [CompleteUploadSessionInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/CompleteUploadSessionInput/index.md)\
 [ConditionalAccessPolicyConfig](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/ConditionalAccessPolicyConfig/index.md)\
 [ConditionalAccessPolicyRecoveryOption](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/ConditionalAccessPolicyRecoveryOption/index.md)\
@@ -465,6 +480,7 @@
 [ContactsSearchObjectFilter](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/ContactsSearchObjectFilter/index.md)\
 [ContextFilterInputField](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/ContextFilterInputField/index.md)\
 [ConversationsRestoreConfig](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/ConversationsRestoreConfig/index.md)\
+[CoordinatorLabelEntryInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/CoordinatorLabelEntryInput/index.md)\
 [CreateActiveDirectoryDownloadFilesJobInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/CreateActiveDirectoryDownloadFilesJobInput/index.md)\
 [CreateActiveDirectoryLiveMountInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/CreateActiveDirectoryLiveMountInput/index.md)\
 [CreateActiveDirectoryUnmountInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/CreateActiveDirectoryUnmountInput/index.md)\
@@ -498,6 +514,7 @@
 [CreateFailoverClusterAppInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/CreateFailoverClusterAppInput/index.md)\
 [CreateFailoverClusterInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/CreateFailoverClusterInput/index.md)\
 [CreateFilesetSnapshotInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/CreateFilesetSnapshotInput/index.md)\
+[CreateFusionComputeMountInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/CreateFusionComputeMountInput/index.md)\
 [CreateFusionComputeVmBackupInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/CreateFusionComputeVmBackupInput/index.md)\
 [CreateGcpReaderTargetInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/CreateGcpReaderTargetInput/index.md)\
 [CreateGcpTargetInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/CreateGcpTargetInput/index.md)\
@@ -604,6 +621,7 @@
 [DeleteAzureCloudAccountExocomputeConfigurationsInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/DeleteAzureCloudAccountExocomputeConfigurationsInput/index.md)\
 [DeleteAzureCloudAccountInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/DeleteAzureCloudAccountInput/index.md)\
 [DeleteAzureCloudAccountWithoutOauthInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/DeleteAzureCloudAccountWithoutOauthInput/index.md)\
+[DeleteAzureDevOpsCloudAccountInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/DeleteAzureDevOpsCloudAccountInput/index.md)\
 [DeleteCephSettingInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/DeleteCephSettingInput/index.md)\
 [DeleteCloudDirectKerberosCredentialInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/DeleteCloudDirectKerberosCredentialInput/index.md)\
 [DeleteCloudNativeLabelRuleInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/DeleteCloudNativeLabelRuleInput/index.md)\
@@ -621,7 +639,9 @@
 [DeleteFailoverClusterAppInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/DeleteFailoverClusterAppInput/index.md)\
 [DeleteFailoverClusterInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/DeleteFailoverClusterInput/index.md)\
 [DeleteFilesetSnapshotsInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/DeleteFilesetSnapshotsInput/index.md)\
+[DeleteFusionComputeMountInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/DeleteFusionComputeMountInput/index.md)\
 [DeleteFusionComputeVrmInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/DeleteFusionComputeVrmInput/index.md)\
+[DeleteGitHubCloudAccountInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/DeleteGitHubCloudAccountInput/index.md)\
 [DeleteGlobalCertificateInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/DeleteGlobalCertificateInput/index.md)\
 [DeleteGuestCredentialByIdInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/DeleteGuestCredentialByIdInput/index.md)\
 [DeleteHypervVirtualMachineSnapshotInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/DeleteHypervVirtualMachineSnapshotInput/index.md)\
@@ -655,6 +675,7 @@
 [DeleteOrgInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/DeleteOrgInput/index.md)\
 [DeletePostgresDbClusterInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/DeletePostgresDbClusterInput/index.md)\
 [DeletePostgresDbClusterLiveMountInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/DeletePostgresDbClusterLiveMountInput/index.md)\
+[DeleteRecoveryPlansV2Input](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/DeleteRecoveryPlansV2Input/index.md)\
 [DeleteRecoveryScheduleV2Input](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/DeleteRecoveryScheduleV2Input/index.md)\
 [DeleteReplicationPairInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/DeleteReplicationPairInput/index.md)\
 [DeleteSapHanaDbSnapshotInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/DeleteSapHanaDbSnapshotInput/index.md)\
@@ -680,6 +701,9 @@
 [DenyTprRequestsInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/DenyTprRequestsInput/index.md)\
 [DeregisterPrivateContainerRegistryInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/DeregisterPrivateContainerRegistryInput/index.md)\
 [DestTeamInfo](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/DestTeamInfo/index.md)\
+[DevOpsCloudAccountListCurrentPermissionsReq](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/DevOpsCloudAccountListCurrentPermissionsReq/index.md)\
+[DevOpsCloudAccountListLatestPermissionsReq](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/DevOpsCloudAccountListLatestPermissionsReq/index.md)\
+[DevOpsTypeRepositoryRecoveryConfig](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/DevOpsTypeRepositoryRecoveryConfig/index.md)\
 [DeviceConfigPolicyRecoveryOption](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/DeviceConfigPolicyRecoveryOption/index.md)\
 [DisablePerLocationPauseInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/DisablePerLocationPauseInput/index.md)\
 [DisableReplicationPauseInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/DisableReplicationPauseInput/index.md)\
@@ -714,6 +738,7 @@
 [DownloadDb2SnapshotsForPointInTimeRecoveryInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/DownloadDb2SnapshotsForPointInTimeRecoveryInput/index.md)\
 [DownloadExchangeSnapshotInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/DownloadExchangeSnapshotInput/index.md)\
 [DownloadExchangeSnapshotV2Input](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/DownloadExchangeSnapshotV2Input/index.md)\
+[DownloadFilesFromFusionComputeSnapshotInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/DownloadFilesFromFusionComputeSnapshotInput/index.md)\
 [DownloadFilesJobConfigInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/DownloadFilesJobConfigInput/index.md)\
 [DownloadFilesNutanixSnapshotInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/DownloadFilesNutanixSnapshotInput/index.md)\
 [DownloadFilesetSnapshotFromLocationInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/DownloadFilesetSnapshotFromLocationInput/index.md)\
@@ -729,6 +754,8 @@
 [DownloadManagedVolumeFilesInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/DownloadManagedVolumeFilesInput/index.md)\
 [DownloadManagedVolumeFromLocationInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/DownloadManagedVolumeFromLocationInput/index.md)\
 [DownloadManagedVolumeRequestInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/DownloadManagedVolumeRequestInput/index.md)\
+[DownloadMongoCollectionSetSnapshotsForPointInTimeRecoveryInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/DownloadMongoCollectionSetSnapshotsForPointInTimeRecoveryInput/index.md)\
+[DownloadMongoOpsManagerSourceSnapshotsForPointInTimeRecoveryInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/DownloadMongoOpsManagerSourceSnapshotsForPointInTimeRecoveryInput/index.md)\
 [DownloadMssqlBackupFilesByIdJobConfigInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/DownloadMssqlBackupFilesByIdJobConfigInput/index.md)\
 [DownloadMssqlDatabaseBackupFilesInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/DownloadMssqlDatabaseBackupFilesInput/index.md)\
 [DownloadMssqlDatabaseFilesFromArchivalLocationInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/DownloadMssqlDatabaseFilesFromArchivalLocationInput/index.md)\
@@ -803,6 +830,8 @@
 [ExocomputeHealthChecksReq](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/ExocomputeHealthChecksReq/index.md)\
 [ExpireDownloadedDb2SnapshotsInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/ExpireDownloadedDb2SnapshotsInput/index.md)\
 [ExpireDownloadedSapHanaSnapshotsInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/ExpireDownloadedSapHanaSnapshotsInput/index.md)\
+[ExpireMongoCollectionSetDownloadedSnapshotsInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/ExpireMongoCollectionSetDownloadedSnapshotsInput/index.md)\
+[ExpireMongoOpsManagerSourceDownloadedSnapshotsInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/ExpireMongoOpsManagerSourceDownloadedSnapshotsInput/index.md)\
 [ExpireSnoozedDirectoriesInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/ExpireSnoozedDirectoriesInput/index.md)\
 [ExportFusionComputeSnapshotInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/ExportFusionComputeSnapshotInput/index.md)\
 [ExportHypervVirtualMachineInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/ExportHypervVirtualMachineInput/index.md)\
@@ -881,12 +910,20 @@
 [ForestRecoveryGlobalConfig](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/ForestRecoveryGlobalConfig/index.md)\
 [FullTeamRestoreConfig](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/FullTeamRestoreConfig/index.md)\
 [FullyQualifiedDomainNameInfoInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/FullyQualifiedDomainNameInfoInput/index.md)\
+[FusionComputeDatastoreMigrationConfigInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/FusionComputeDatastoreMigrationConfigInput/index.md)\
 [FusionComputeDiskToDatastoreInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/FusionComputeDiskToDatastoreInput/index.md)\
+[FusionComputeEchoRequest](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/FusionComputeEchoRequest/index.md)\
+[FusionComputeMissedSnapshotsInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/FusionComputeMissedSnapshotsInput/index.md)\
+[FusionComputeMountVmConfigInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/FusionComputeMountVmConfigInput/index.md)\
 [FusionComputeNetworkToNicInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/FusionComputeNetworkToNicInput/index.md)\
 [FusionComputeRestoreFileConfigInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/FusionComputeRestoreFileConfigInput/index.md)\
 [FusionComputeRestoreFilesConfigInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/FusionComputeRestoreFilesConfigInput/index.md)\
 [FusionComputeSnapshotDownloadRequestInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/FusionComputeSnapshotDownloadRequestInput/index.md)\
+[FusionComputeSnapshotResourceSpecInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/FusionComputeSnapshotResourceSpecInput/index.md)\
+[FusionComputeUnmountConfigInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/FusionComputeUnmountConfigInput/index.md)\
+[FusionComputeUpdateMountConfigInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/FusionComputeUpdateMountConfigInput/index.md)\
 [FusionComputeVmExportSnapshotJobConfigInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/FusionComputeVmExportSnapshotJobConfigInput/index.md)\
+[FusionComputeVmPatchInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/FusionComputeVmPatchInput/index.md)\
 [FusionComputeVmRequestStatusInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/FusionComputeVmRequestStatusInput/index.md)\
 [FusionComputeVrmInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/FusionComputeVrmInput/index.md)\
 [FusionComputeVrmUpdateConfigInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/FusionComputeVrmUpdateConfigInput/index.md)\
@@ -905,7 +942,6 @@
 [GcpCloudSqlEngineTypeFilter](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/GcpCloudSqlEngineTypeFilter/index.md)\
 [GcpCloudSqlInstanceFilters](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/GcpCloudSqlInstanceFilters/index.md)\
 [GcpCloudSqlInstanceNameOrIdSubstringFilter](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/GcpCloudSqlInstanceNameOrIdSubstringFilter/index.md)\
-[GcpCloudSqlInstanceProjectFilter](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/GcpCloudSqlInstanceProjectFilter/index.md)\
 [GcpEsConfigInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/GcpEsConfigInput/index.md)\
 [GcpGetExocomputeConfigsReq](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/GcpGetExocomputeConfigsReq/index.md)\
 [GcpGetResourceSetupTemplateReq](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/GcpGetResourceSetupTemplateReq/index.md)\
@@ -960,6 +996,7 @@
 [GetCompatibleMssqlInstancesV1Input](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/GetCompatibleMssqlInstancesV1Input/index.md)\
 [GetComputeClusterInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/GetComputeClusterInput/index.md)\
 [GetContainersInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/GetContainersInput/index.md)\
+[GetCoordinatorLabelsReq](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/GetCoordinatorLabelsReq/index.md)\
 [GetCrossAccountClustersFilter](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/GetCrossAccountClustersFilter/index.md)\
 [GetCrossAccountPairsFilter](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/GetCrossAccountPairsFilter/index.md)\
 [GetCsrInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/GetCsrInput/index.md)\
@@ -1029,6 +1066,7 @@
 [GlobalSlaFilterInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/GlobalSlaFilterInput/index.md)\
 [GlobalSnapshotScheduleInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/GlobalSnapshotScheduleInput/index.md)\
 [GoogleSecOpsIntegrationConfigInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/GoogleSecOpsIntegrationConfigInput/index.md)\
+[GovernanceRecoveryOptionType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/GovernanceRecoveryOptionType/index.md)\
 [GroupConfig](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/GroupConfig/index.md)\
 [GroupFilterAttribute](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/GroupFilterAttribute/index.md)\
 [GroupFilterInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/GroupFilterInput/index.md)\
@@ -1155,6 +1193,7 @@
 [K8sVirtualMachineDiskFilter](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/K8sVirtualMachineDiskFilter/index.md)\
 [K8sVmMountParametersInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/K8sVmMountParametersInput/index.md)\
 [KdcConfigInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/KdcConfigInput/index.md)\
+[KeyGenerationParamsInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/KeyGenerationParamsInput/index.md)\
 [KmsCryptoKey](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/KmsCryptoKey/index.md)\
 [KmsSpecInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/KmsSpecInput/index.md)\
 [KosmosRecoveryInfo](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/KosmosRecoveryInfo/index.md)\
@@ -1191,6 +1230,7 @@
 [ListM365DirectoryObjectAttributesInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/ListM365DirectoryObjectAttributesInput/index.md)\
 [ListObjectFilesFiltersInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/ListObjectFilesFiltersInput/index.md)\
 [ListValidReplicationTargetFilter](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/ListValidReplicationTargetFilter/index.md)\
+[ListWorkloadResourceSpecsInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/ListWorkloadResourceSpecsInput/index.md)\
 [LiveMountRelocateInfo](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/LiveMountRelocateInfo/index.md)\
 [LlmFunctionCallInfo](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/LlmFunctionCallInfo/index.md)\
 [LocationImmutabilitySettings](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/LocationImmutabilitySettings/index.md)\
@@ -1241,6 +1281,7 @@
 [MicrosoftDefenderStatusInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/MicrosoftDefenderStatusInput/index.md)\
 [MicrosoftPurviewConfigInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/MicrosoftPurviewConfigInput/index.md)\
 [MigrateCloudClusterDisksInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/MigrateCloudClusterDisksInput/index.md)\
+[MigrateFusionComputeMountInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/MigrateFusionComputeMountInput/index.md)\
 [MigrateNutanixMountV1Input](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/MigrateNutanixMountV1Input/index.md)\
 [MigrateVmDataStoreInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/MigrateVmDataStoreInput/index.md)\
 [MinuteSnapshotScheduleInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/MinuteSnapshotScheduleInput/index.md)\
@@ -1263,6 +1304,7 @@
 [MongoOpsManagerSourceOnDemandSnapshotConfigInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/MongoOpsManagerSourceOnDemandSnapshotConfigInput/index.md)\
 [MongoOpsManagerSourcePatchRequestConfigInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/MongoOpsManagerSourcePatchRequestConfigInput/index.md)\
 [MongoRecoveryRequestConfigInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/MongoRecoveryRequestConfigInput/index.md)\
+[MongoSnapshotDownloadRequestInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/MongoSnapshotDownloadRequestInput/index.md)\
 [MongoSourceAddRequestConfigInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/MongoSourceAddRequestConfigInput/index.md)\
 [MongoSourceInfo](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/MongoSourceInfo/index.md)\
 [MongoSourcePatchRequestConfigInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/MongoSourcePatchRequestConfigInput/index.md)\
@@ -1344,6 +1386,7 @@
 [MssqlWindowsClusterUpdateIdInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/MssqlWindowsClusterUpdateIdInput/index.md)\
 [MssqlWindowsClusterUpdateInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/MssqlWindowsClusterUpdateInput/index.md)\
 [MvcProfileFilter](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/MvcProfileFilter/index.md)\
+[MysqldbAdvancedConfigInfoInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/MysqldbAdvancedConfigInfoInput/index.md)\
 [MysqldbAutomatedRestoreConfigInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/MysqldbAutomatedRestoreConfigInput/index.md)\
 [MysqldbAutomatedRestoreConnectionInfoInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/MysqldbAutomatedRestoreConnectionInfoInput/index.md)\
 [MysqldbAutomatedRestoreDatabaseDetailsInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/MysqldbAutomatedRestoreDatabaseDetailsInput/index.md)\
@@ -1357,6 +1400,8 @@
 [MysqldbSslConfigInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/MysqldbSslConfigInput/index.md)\
 [NamePrefixFilter](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/NamePrefixFilter/index.md)\
 [NameSubstringFilter](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/NameSubstringFilter/index.md)\
+[NamespaceMappingEntry](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/NamespaceMappingEntry/index.md)\
+[NamespaceMappingInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/NamespaceMappingInput/index.md)\
 [NasApiCredentialsInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/NasApiCredentialsInput/index.md)\
 [NasConfigInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/NasConfigInput/index.md)\
 [NasShareCredentialsInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/NasShareCredentialsInput/index.md)\
@@ -1482,6 +1527,7 @@
 [PatchAwsIamUserBasedCloudAccountInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/PatchAwsIamUserBasedCloudAccountInput/index.md)\
 [PatchDb2DatabaseInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/PatchDb2DatabaseInput/index.md)\
 [PatchDb2InstanceInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/PatchDb2InstanceInput/index.md)\
+[PatchFusionComputeVmInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/PatchFusionComputeVmInput/index.md)\
 [PatchMongoSourceInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/PatchMongoSourceInput/index.md)\
 [PatchMysqldbInstanceInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/PatchMysqldbInstanceInput/index.md)\
 [PatchNutanixMountV1Input](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/PatchNutanixMountV1Input/index.md)\
@@ -1494,6 +1540,7 @@
 [PcrAzureImagePullDetailsInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/PcrAzureImagePullDetailsInput/index.md)\
 [PendingSlaInfo](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/PendingSlaInfo/index.md)\
 [PendingSlaOperationsRequestInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/PendingSlaOperationsRequestInput/index.md)\
+[PerObjectPostgresRestoreSettingsInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/PerObjectPostgresRestoreSettingsInput/index.md)\
 [PermissionInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/PermissionInput/index.md)\
 [PermissionsGroupWithVersionInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/PermissionsGroupWithVersionInput/index.md)\
 [PitRestoreEntityInputInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/PitRestoreEntityInputInput/index.md)\
@@ -1510,6 +1557,8 @@
 [PostgresDbClusterAutomatedRestoreConfigInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/PostgresDbClusterAutomatedRestoreConfigInput/index.md)\
 [PostgresDbClusterInfo](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/PostgresDbClusterInfo/index.md)\
 [PostgresDbClusterSlaConfigInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/PostgresDbClusterSlaConfigInput/index.md)\
+[PostgresHaClusterConfigInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/PostgresHaClusterConfigInput/index.md)\
+[PostgresHaReplicaConfigInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/PostgresHaReplicaConfigInput/index.md)\
 [PostgresLoginInfoInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/PostgresLoginInfoInput/index.md)\
 [PostgresRestoreSettingsInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/PostgresRestoreSettingsInput/index.md)\
 [PreAddVcenterInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/PreAddVcenterInput/index.md)\
@@ -1544,6 +1593,8 @@
 [QueryByIdReplicationTargetInfoInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/QueryByIdReplicationTargetInfoInput/index.md)\
 [QueryCertificatesInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/QueryCertificatesInput/index.md)\
 [QueryDatastoreFreespaceThresholdInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/QueryDatastoreFreespaceThresholdInput/index.md)\
+[QueryFusionComputeMountsFilter](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/QueryFusionComputeMountsFilter/index.md)\
+[QueryFusionComputeVirtualDisksFilter](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/QueryFusionComputeVirtualDisksFilter/index.md)\
 [QueryGuestCredentialInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/QueryGuestCredentialInput/index.md)\
 [QueryHypervHostInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/QueryHypervHostInput/index.md)\
 [QueryK8sSnapshotInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/QueryK8sSnapshotInput/index.md)\
@@ -1567,6 +1618,7 @@
 [RecoverCloudDirectPathInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/RecoverCloudDirectPathInput/index.md)\
 [RecoverDb2DatabaseToEndOfBackupInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/RecoverDb2DatabaseToEndOfBackupInput/index.md)\
 [RecoverDb2DatabaseToPointInTimeInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/RecoverDb2DatabaseToPointInTimeInput/index.md)\
+[RecoverDevOpsRepositoryInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/RecoverDevOpsRepositoryInput/index.md)\
 [RecoverMongoSourceInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/RecoverMongoSourceInput/index.md)\
 [RecoverOpsManagerManagedMongoSourceInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/RecoverOpsManagerManagedMongoSourceInput/index.md)\
 [RecoverOracleDbConfigInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/RecoverOracleDbConfigInput/index.md)\
@@ -1577,9 +1629,12 @@
 [RecoverToPointInTimeDb2DbConfigInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/RecoverToPointInTimeDb2DbConfigInput/index.md)\
 [RecoverToPointInTimeSapHanaDbConfigInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/RecoverToPointInTimeSapHanaDbConfigInput/index.md)\
 [RecoverableRangeInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/RecoverableRangeInput/index.md)\
+[RecoveryAuthConfig](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/RecoveryAuthConfig/index.md)\
 [RecoveryConfigV2](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/RecoveryConfigV2/index.md)\
+[RecoverySortParamInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/RecoverySortParamInput/index.md)\
 [RecoveryTargetFilter](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/RecoveryTargetFilter/index.md)\
 [RefreshDb2DatabaseInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/RefreshDb2DatabaseInput/index.md)\
+[RefreshDevOpsOrganizationsInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/RefreshDevOpsOrganizationsInput/index.md)\
 [RefreshDomainInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/RefreshDomainInput/index.md)\
 [RefreshFusionComputeVrmInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/RefreshFusionComputeVrmInput/index.md)\
 [RefreshHostInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/RefreshHostInput/index.md)\
@@ -1727,6 +1782,7 @@
 [SearchObjectFilter](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/SearchObjectFilter/index.md)\
 [SecondaryRegisterHostInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/SecondaryRegisterHostInput/index.md)\
 [SecretConfig](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/SecretConfig/index.md)\
+[SecurityTokenAuth](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/SecurityTokenAuth/index.md)\
 [SelfServicePermissionInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/SelfServicePermissionInput/index.md)\
 [SendPdfReportInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/SendPdfReportInput/index.md)\
 [SendScheduledReportAsyncInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/SendScheduledReportAsyncInput/index.md)\
@@ -1746,6 +1802,7 @@
 [SetCloudDirectShareExclusionsInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/SetCloudDirectShareExclusionsInput/index.md)\
 [SetCloudDirectSystemOverrideInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/SetCloudDirectSystemOverrideInput/index.md)\
 [SetCloudNativeGatewayKmsKeysInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/SetCloudNativeGatewayKmsKeysInput/index.md)\
+[SetCoordinatorLabelsInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/SetCoordinatorLabelsInput/index.md)\
 [SetCustomerTagsInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/SetCustomerTagsInput/index.md)\
 [SetDatastoreFreespaceThresholdInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/SetDatastoreFreespaceThresholdInput/index.md)\
 [SetDatastoreFreespaceThresholdsInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/SetDatastoreFreespaceThresholdsInput/index.md)\
@@ -1813,6 +1870,7 @@
 [SourceInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/SourceInput/index.md)\
 [SpecificDateInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/SpecificDateInput/index.md)\
 [SpecificReplicationSpecInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/SpecificReplicationSpecInput/index.md)\
+[SplunkIntegrationConfigInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/SplunkIntegrationConfigInput/index.md)\
 [StartAwsExocomputeDisableJobInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/StartAwsExocomputeDisableJobInput/index.md)\
 [StartAwsNativeAccountDisableJobInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/StartAwsNativeAccountDisableJobInput/index.md)\
 [StartAwsNativeEc2InstanceSnapshotsJobInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/StartAwsNativeEc2InstanceSnapshotsJobInput/index.md)\
@@ -1834,6 +1892,7 @@
 [StartExportAzureSqlDatabaseDbJobInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/StartExportAzureSqlDatabaseDbJobInput/index.md)\
 [StartExportAzureSqlManagedInstanceDbJobInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/StartExportAzureSqlManagedInstanceDbJobInput/index.md)\
 [StartExportRdsInstanceJobInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/StartExportRdsInstanceJobInput/index.md)\
+[StartGitHubAppSetupInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/StartGitHubAppSetupInput/index.md)\
 [StartK8sDiagnosticsJobInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/StartK8sDiagnosticsJobInput/index.md)\
 [StartK8sVmMountJobInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/StartK8sVmMountJobInput/index.md)\
 [StartRecoverAzureNativeStorageAccountJobInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/StartRecoverAzureNativeStorageAccountJobInput/index.md)\
@@ -1926,6 +1985,7 @@
 [UnaccessedFilter](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/UnaccessedFilter/index.md)\
 [UnconfigureSapHanaRestoreInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/UnconfigureSapHanaRestoreInput/index.md)\
 [UnidirectionalReplicationSpecInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/UnidirectionalReplicationSpecInput/index.md)\
+[UninstallGitHubAppInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/UninstallGitHubAppInput/index.md)\
 [UninstallIoFilterInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/UninstallIoFilterInput/index.md)\
 [UnlockUsersByAdminInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/UnlockUsersByAdminInput/index.md)\
 [UnmanagedObjectsInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/UnmanagedObjectsInput/index.md)\
@@ -1950,6 +2010,8 @@
 [UpdateAwsTargetInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/UpdateAwsTargetInput/index.md)\
 [UpdateAzureAccountInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/UpdateAzureAccountInput/index.md)\
 [UpdateAzureCloudAccountInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/UpdateAzureCloudAccountInput/index.md)\
+[UpdateAzureClusterStorageAccountRedundancyInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/UpdateAzureClusterStorageAccountRedundancyInput/index.md)\
+[UpdateAzureDevOpsCloudAccountInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/UpdateAzureDevOpsCloudAccountInput/index.md)\
 [UpdateAzureTargetInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/UpdateAzureTargetInput/index.md)\
 [UpdateBackupThrottleSettingInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/UpdateBackupThrottleSettingInput/index.md)\
 [UpdateBackupTriggerForWorkloadsInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/UpdateBackupTriggerForWorkloadsInput/index.md)\
@@ -1983,8 +2045,10 @@
 [UpdateFeedInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/UpdateFeedInput/index.md)\
 [UpdateFilesetInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/UpdateFilesetInput/index.md)\
 [UpdateFloatingIpsInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/UpdateFloatingIpsInput/index.md)\
+[UpdateFusionComputeMountInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/UpdateFusionComputeMountInput/index.md)\
 [UpdateFusionComputeVrmInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/UpdateFusionComputeVrmInput/index.md)\
 [UpdateGcpTargetInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/UpdateGcpTargetInput/index.md)\
+[UpdateGitHubCloudAccountInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/UpdateGitHubCloudAccountInput/index.md)\
 [UpdateGlacierTargetInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/UpdateGlacierTargetInput/index.md)\
 [UpdateGlobalCertificateInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/UpdateGlobalCertificateInput/index.md)\
 [UpdateGlobalSlaInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/UpdateGlobalSlaInput/index.md)\
@@ -2068,6 +2132,7 @@
 [UpgradeAzureCloudAccountFeatureInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/UpgradeAzureCloudAccountFeatureInput/index.md)\
 [UpgradeAzureCloudAccountInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/UpgradeAzureCloudAccountInput/index.md)\
 [UpgradeAzureCloudAccountPermissionsWithoutOauthInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/UpgradeAzureCloudAccountPermissionsWithoutOauthInput/index.md)\
+[UpgradeAzureDevOpsCloudAccountInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/UpgradeAzureDevOpsCloudAccountInput/index.md)\
 [UpgradeCdmManagedTargetInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/UpgradeCdmManagedTargetInput/index.md)\
 [UpgradeGcpCloudAccountPermissionsWithoutOauthInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/UpgradeGcpCloudAccountPermissionsWithoutOauthInput/index.md)\
 [UpgradeIoFilterInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/UpgradeIoFilterInput/index.md)\
@@ -2087,6 +2152,7 @@
 [ValidateAndInitiateAwsOutpostAccountInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/ValidateAndInitiateAwsOutpostAccountInput/index.md)\
 [ValidateAndSaveCustomerKmsInfoInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/ValidateAndSaveCustomerKmsInfoInput/index.md)\
 [ValidateAzureCloudAccountExocomputeConfigurationsInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/ValidateAzureCloudAccountExocomputeConfigurationsInput/index.md)\
+[ValidateBackupLocationUsableForAzureDevOpsReq](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/ValidateBackupLocationUsableForAzureDevOpsReq/index.md)\
 [ValidateBulkThreatHuntInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/ValidateBulkThreatHuntInput/index.md)\
 [ValidateClusterLicenseCapacityInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/ValidateClusterLicenseCapacityInput/index.md)\
 [ValidateIocEntryInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/ValidateIocEntryInput/index.md)\
@@ -2201,6 +2267,7 @@
 [WebhookAuditSubscriptionInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/WebhookAuditSubscriptionInput/index.md)\
 [WebhookAuthInfoV2Input](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/WebhookAuthInfoV2Input/index.md)\
 [WebhookEventSubscriptionInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/WebhookEventSubscriptionInput/index.md)\
+[WebhookIdentityActivitySubscriptionInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/WebhookIdentityActivitySubscriptionInput/index.md)\
 [WebhookMessageTemplatesReqInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/WebhookMessageTemplatesReqInput/index.md)\
 [WebhookPayload](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/WebhookPayload/index.md)\
 [WebhookSubscriptionTypeV2Input](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/WebhookSubscriptionTypeV2Input/index.md)\
@@ -2212,6 +2279,7 @@
 [WindowsRbsHostInstallConfigInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/WindowsRbsHostInstallConfigInput/index.md)\
 [WindowsRbsHostUserConfigInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/WindowsRbsHostUserConfigInput/index.md)\
 [WorkloadFieldsInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/WorkloadFieldsInput/index.md)\
+[WorkloadRecoveryPoint](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/WorkloadRecoveryPoint/index.md)\
 [WorkloadRegionInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/WorkloadRegionInput/index.md)\
 [YearlyDaySpecInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/YearlyDaySpecInput/index.md)\
 [YearlySnapshotScheduleInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/YearlySnapshotScheduleInput/index.md)

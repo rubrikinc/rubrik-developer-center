@@ -18,5 +18,6 @@ Rubrik-specific information about snapshots of specific object types. Currently,
 - [AzureSqlManagedInstanceDbSpecificSnapshot](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AzureSqlManagedInstanceDbSpecificSnapshot/index.md)
 - [GcpNativeCloudSqlSpecificSnapshot](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/GcpNativeCloudSqlSpecificSnapshot/index.md)
 - [GcpNativeGceInstanceSpecificSnapshot](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/GcpNativeGceInstanceSpecificSnapshot/index.md)
+- [IcebergTableSpecificSnapshot](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/IcebergTableSpecificSnapshot/index.md)
 - [O365SiteSpecificSnapshot](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/O365SiteSpecificSnapshot/index.md)
 - [SaasSnapshot](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/SaasSnapshot/index.md)

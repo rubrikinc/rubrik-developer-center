@@ -17,6 +17,7 @@ query {
     expirationDate
     id
     isDefault
+    isForceAuthnEnabled
     metadataJson
     name
     ownerOrgId

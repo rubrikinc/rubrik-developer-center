@@ -38,10 +38,10 @@ The replicated cross-account object information.
 - [FilesetTemplate.crossAccountReplicatedObjectInfos](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/FilesetTemplate/index.md)
 - FilesetTemplateDescendantType.crossAccountReplicatedObjectInfos
 - FilesetTemplatePhysicalChildType.crossAccountReplicatedObjectInfos
-- [HostFailoverCluster.crossAccountReplicatedObjectInfos](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/HostFailoverCluster/index.md)
-- HostFailoverClusterDescendantType.crossAccountReplicatedObjectInfos
-- HostFailoverClusterPhysicalChildType.crossAccountReplicatedObjectInfos
-- [HostShare.crossAccountReplicatedObjectInfos](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/HostShare/index.md)
-- HostShareDescendantType.crossAccountReplicatedObjectInfos
-- HostSharePhysicalChildType.crossAccountReplicatedObjectInfos
-- *…and 159 more*
+- [FusionComputeCluster.crossAccountReplicatedObjectInfos](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/FusionComputeCluster/index.md)
+- FusionComputeClusterDescendant.crossAccountReplicatedObjectInfos
+- FusionComputeClusterPhysicalChildType.crossAccountReplicatedObjectInfos
+- [FusionComputeDatastore.crossAccountReplicatedObjectInfos](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/FusionComputeDatastore/index.md)
+- [FusionComputeHost.crossAccountReplicatedObjectInfos](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/FusionComputeHost/index.md)
+- FusionComputeHostDescendant.crossAccountReplicatedObjectInfos
+- *…and 174 more*

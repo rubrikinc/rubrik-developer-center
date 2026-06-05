@@ -38,10 +38,10 @@ Represents a node in a hierarchy path.
 - AwsNativeAccountLogicalChildType.effectiveSlaSourceObject
 - AwsNativeAccountLogicalChildType.logicalPath
 - AwsNativeAccountLogicalChildType.physicalPath
+- [AwsNativeConfig.effectiveSlaSourceObject](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AwsNativeConfig/index.md)
+- [AwsNativeConfig.logicalPath](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AwsNativeConfig/index.md)
+- [AwsNativeConfig.physicalPath](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AwsNativeConfig/index.md)
 - [AwsNativeDynamoDbTable.effectiveSlaSourceObject](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AwsNativeDynamoDbTable/index.md)
 - [AwsNativeDynamoDbTable.logicalPath](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AwsNativeDynamoDbTable/index.md)
 - [AwsNativeDynamoDbTable.physicalPath](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AwsNativeDynamoDbTable/index.md)
-- [AwsNativeEbsVolume.effectiveSlaSourceObject](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AwsNativeEbsVolume/index.md)
-- [AwsNativeEbsVolume.logicalPath](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AwsNativeEbsVolume/index.md)
-- [AwsNativeEbsVolume.physicalPath](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AwsNativeEbsVolume/index.md)
-- *…and 820 more*
+- *…and 895 more*

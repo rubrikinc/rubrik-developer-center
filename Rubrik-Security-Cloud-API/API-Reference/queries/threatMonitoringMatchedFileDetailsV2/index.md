@@ -54,12 +54,12 @@ query ThreatMonitoringMatchedFileDetailsV2($matchedSnapshotFid: UUID!, $filepath
       "isQuarantinedInFirstObservedSnapshot": true,
       "iocDetails": [
         {
+          "feedType": "CROWDSTRIKE",
           "intelFeedName": "example-string",
           "iocHashHex": "example-string",
           "iocRuleAuthor": "example-string",
           "iocStatus": "ACTIVE",
-          "malwareDescription": "example-string",
-          "malwareName": "example-string"
+          "malwareDescription": "example-string"
         }
       ]
     }

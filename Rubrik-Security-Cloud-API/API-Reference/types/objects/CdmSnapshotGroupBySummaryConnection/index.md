@@ -19,6 +19,7 @@ Paginated list of CdmSnapshotGroupBySummary objects. Each page of the results in
 - CdmHierarchySnappableNew.snapshotGroupBySummary
 - [Db2Database.snapshotGroupBySummary](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/Db2Database/index.md)
 - [ExchangeDatabase.snapshotGroupBySummary](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/ExchangeDatabase/index.md)
+- [FusionComputeVirtualMachine.snapshotGroupBySummary](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/FusionComputeVirtualMachine/index.md)
 - [HyperVVirtualMachine.snapshotGroupBySummary](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/HyperVVirtualMachine/index.md)
 - KosmosSnappableHierarchyObjectType.snapshotGroupBySummary
 - [KubernetesProtectionSet.snapshotGroupBySummary](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/KubernetesProtectionSet/index.md)

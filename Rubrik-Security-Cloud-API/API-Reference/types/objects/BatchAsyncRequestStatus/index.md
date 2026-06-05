@@ -12,6 +12,7 @@ Supported in v5.0+
 
 **Mutations**
 
+- [mutation: bulkCreateFusionComputeVmBackup](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/bulkCreateFusionComputeVmBackup/index.md)
 - [mutation: bulkDeleteNasSystems](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/bulkDeleteNasSystems/index.md)
 - [mutation: createNutanixPrismCentral](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/createNutanixPrismCentral/index.md)
 - [mutation: deleteNutanixPrismCentral](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/deleteNutanixPrismCentral/index.md)

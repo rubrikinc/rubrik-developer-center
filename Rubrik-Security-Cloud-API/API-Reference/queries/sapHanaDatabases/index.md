@@ -38,6 +38,7 @@ query {
       onDemandSnapshotCount
       primaryClusterUuid
       protectionDate
+      rbaRole
       replicatedObjectCount
       slaAssignment
       slaPauseStatus

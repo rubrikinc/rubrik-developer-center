@@ -4,10 +4,11 @@ List of all Virtual Private Clouds (VPCs) in the AWS Native account, classified 
 
 ## Arguments
 
-| Argument                        | Type                                                                                                                          | Description                |
-| ------------------------------- | ----------------------------------------------------------------------------------------------------------------------------- | -------------------------- |
-| awsAccountRubrikId *(required)* | [UUID](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/UUID/index.md)!                     | Rubrik ID for AWS account. |
-| region *(required)*             | [AwsNativeRegion](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/AwsNativeRegion/index.md)! | Region in AWS.             |
+| Argument                        | Type                                                                                                                                 | Description                                                          |
+| ------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------- |
+| awsAccountRubrikId *(required)* | [UUID](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/UUID/index.md)!                            | Rubrik ID for AWS account.                                           |
+| region *(required)*             | [AwsNativeRegion](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/AwsNativeRegion/index.md)!        | Region in AWS.                                                       |
+| feature                         | [CloudAccountFeature](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/CloudAccountFeature/index.md) | Cloud-account feature for credential routing on MULTI_ROLE accounts. |
 
 ## Returns
 

@@ -28,6 +28,7 @@ query {
   gcpNativeProjects(first: 10) {
     nodes {
       authorizedOperations
+      bigQueryDatasetCount
       cloudAccountId
       cloudNativeId
       diskCount
@@ -71,11 +72,11 @@ query {
             "authorizedOperations": [
               "MANAGE_DATA_SOURCE"
             ],
+            "bigQueryDatasetCount": 0,
             "cloudAccountId": "example-string",
             "cloudNativeId": "example-string",
             "diskCount": 0,
-            "id": "00000000-0000-0000-0000-000000000000",
-            "isRelic": true
+            "id": "00000000-0000-0000-0000-000000000000"
           }
         ]
       ],

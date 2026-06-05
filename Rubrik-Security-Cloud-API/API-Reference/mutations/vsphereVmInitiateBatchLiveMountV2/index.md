@@ -1,6 +1,6 @@
 # vsphereVmInitiateBatchLiveMountV2
 
-Initiate a mass live mount for a group of VMs.
+Initiate a mass live mount for a group of virtual machines.
 
 ## Arguments
 

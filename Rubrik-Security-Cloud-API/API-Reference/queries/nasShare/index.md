@@ -28,6 +28,7 @@ query NasShare($fid: UUID!) {
     isChangelistEnabled
     isHidden
     isNasShareManuallyAdded
+    isNutanixCftEnabled
     isRelic
     isStale
     name

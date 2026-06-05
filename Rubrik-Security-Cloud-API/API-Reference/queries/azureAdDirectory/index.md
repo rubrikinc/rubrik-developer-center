@@ -32,6 +32,7 @@ query AzureAdDirectory($workloadFid: UUID!) {
     isJitEnabled
     isProvisioned
     isRelic
+    latestAccessReviewScheduleDefinitionCount
     latestAdministrativeUnitsCount
     latestApplicationsCount
     latestAssignmentFilterCount
@@ -42,10 +43,15 @@ query AzureAdDirectory($workloadFid: UUID!) {
     latestComplianceScriptCount
     latestConditionalAccessPoliciesCount
     latestDeviceCount
+    latestEmAccessPackageCount
+    latestEmCatalogCount
+    latestGroupActiveAssignmentCount
     latestGroupCount
+    latestGroupEligibleAssignmentCount
     latestLocalAdminPasswordCount
     latestNamedLocationsCount
     latestNotificationTemplateCount
+    latestRoleEligibleAssignmentCount
     latestRolesCount
     latestServicePrincipalsCount
     latestSnapshotTime

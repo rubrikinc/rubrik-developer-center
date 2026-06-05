@@ -42,7 +42,6 @@ mutation CreateGcpTarget($input: CreateGcpTargetInput!) {
     "bucket": "example-string",
     "bypassProxy": true,
     "clusterUuid": "00000000-0000-0000-0000-000000000000",
-    "encryptionPassword": "example-string",
     "name": "example-string",
     "region": "AFRICA_SOUTH1",
     "serviceAccountJsonKey": "example-string",

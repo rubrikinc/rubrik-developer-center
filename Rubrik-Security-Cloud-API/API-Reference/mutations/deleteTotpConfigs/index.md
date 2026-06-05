@@ -1,6 +1,6 @@
 # deleteTotpConfigs
 
-Reset TOTP configuration for users in batch. Return true when the operation succeeds.
+Reset TOTP configuration for multiple users. Return true when the operation succeeds.
 
 ## Arguments
 

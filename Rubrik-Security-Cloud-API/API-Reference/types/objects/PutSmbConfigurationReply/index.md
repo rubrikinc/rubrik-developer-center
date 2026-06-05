@@ -4,9 +4,9 @@ Reply Object for PutSmbConfiguration.
 
 ## Fields
 
-| Field  | Type                                                                                                               | Description |
-| ------ | ------------------------------------------------------------------------------------------------------------------ | ----------- |
-| output | [SmbConfig](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/SmbConfig/index.md) |             |
+| Field  | Type                                                                                                               | Description        |
+| ------ | ------------------------------------------------------------------------------------------------------------------ | ------------------ |
+| output | [SmbConfig](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/SmbConfig/index.md) | Supported in v5.0+ |
 
 ## Used By
 

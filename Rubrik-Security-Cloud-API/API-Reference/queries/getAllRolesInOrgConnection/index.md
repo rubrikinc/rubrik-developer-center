@@ -1,6 +1,6 @@
 # getAllRolesInOrgConnection
 
-*No description available.*
+Get all roles in the current organization with filtering, sorting, and pagination support.
 
 ## Arguments
 
@@ -11,7 +11,7 @@
 | last             | Int                                                                                                                      | Returns the last n elements from the list.                                                                               |
 | before           | String                                                                                                                   | Returns the elements in the list that occur before the specified cursor.                                                 |
 | sortOrder        | [SortOrder](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/SortOrder/index.md)         | Sorts the order of results.                                                                                              |
-| sortBy           | [RoleFieldEnum](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/RoleFieldEnum/index.md) |                                                                                                                          |
+| sortBy           | [RoleFieldEnum](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/RoleFieldEnum/index.md) | Field to sort roles by (e.g., Name or Assignment).                                                                       |
 | nameFilter       | String                                                                                                                   | Name to filter the results.                                                                                              |
 | assignedRoleIds  | \[[UUID](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/UUID/index.md)!\]            | List of role IDs that have already been assigned to a set of users. This list will be used to sort the set of all roles. |
 | roleSyncedFilter | Boolean                                                                                                                  | Argument to filter roles based on whether they are marked to be synced to Rubrik cluster.                                |

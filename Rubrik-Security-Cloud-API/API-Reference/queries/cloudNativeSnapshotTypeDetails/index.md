@@ -34,8 +34,10 @@ query CloudNativeSnapshotTypeDetails($snapshotId: UUID!) {
         {
           "cloudType": "ALL",
           "locationName": "example-string",
+          "rcvTier": "example-string",
           "snapshotId": "example-string",
-          "snapshotType": "ARCHIVED"
+          "snapshotType": "ARCHIVED",
+          "storageClassTier": "example-string"
         }
       ]
     }

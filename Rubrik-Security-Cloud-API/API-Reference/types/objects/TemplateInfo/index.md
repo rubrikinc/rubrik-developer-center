@@ -15,3 +15,4 @@ The template information.
 
 - [AuditSubscription.templateInfo](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AuditSubscription/index.md)
 - [EventSubscription.templateInfo](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/EventSubscription/index.md)
+- [IdentityActivitySubscription.templateInfo](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/IdentityActivitySubscription/index.md)

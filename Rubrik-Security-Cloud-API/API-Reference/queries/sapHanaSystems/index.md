@@ -39,6 +39,7 @@ query {
       objectType
       onDemandSnapshotCount
       primaryClusterUuid
+      rbaRole
       replicatedObjectCount
       sid
       slaAssignment

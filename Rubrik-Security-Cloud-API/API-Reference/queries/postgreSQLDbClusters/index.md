@@ -26,6 +26,7 @@ query {
       cdmId
       cdmLink
       cdmPendingObjectPauseAssignment
+      clusterMode
       id
       isRelic
       name
@@ -61,8 +62,8 @@ query {
             "cdmId": "example-string",
             "cdmLink": "example-string",
             "cdmPendingObjectPauseAssignment": "NO_PENDING_PAUSE_ASSIGNMENT",
-            "id": "00000000-0000-0000-0000-000000000000",
-            "isRelic": true
+            "clusterMode": "HA",
+            "id": "00000000-0000-0000-0000-000000000000"
           }
         ]
       ],

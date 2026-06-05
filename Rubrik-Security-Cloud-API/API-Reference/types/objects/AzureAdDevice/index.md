@@ -25,3 +25,4 @@ Entra ID device.
 **Referenced by**
 
 - [AzureAdObjects.azureAdDevice](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AzureAdObjects/index.md)
+- [AzureAdPimActivePrincipalObject.azureAdDevice](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AzureAdPimActivePrincipalObject/index.md)

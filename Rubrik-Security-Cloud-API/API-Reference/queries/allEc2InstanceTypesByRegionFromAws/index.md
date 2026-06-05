@@ -1,13 +1,14 @@
 # allEc2InstanceTypesByRegionFromAws
 
-List of all EC2 instance types available in the region.
+List of EC2 instance types available in a region, optionally scoped to a single AWS Outpost.
 
 ## Arguments
 
-| Argument                        | Type                                                                                                                          | Description                |
-| ------------------------------- | ----------------------------------------------------------------------------------------------------------------------------- | -------------------------- |
-| awsAccountRubrikId *(required)* | [UUID](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/UUID/index.md)!                     | Rubrik ID for AWS account. |
-| region *(required)*             | [AwsNativeRegion](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/AwsNativeRegion/index.md)! | Region in AWS.             |
+| Argument                        | Type                                                                                                                          | Description                                                                                              |
+| ------------------------------- | ----------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------- |
+| awsAccountRubrikId *(required)* | [UUID](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/UUID/index.md)!                     | Rubrik ID for AWS account.                                                                               |
+| region *(required)*             | [AwsNativeRegion](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/AwsNativeRegion/index.md)! | Region in AWS.                                                                                           |
+| outpostArn                      | String                                                                                                                        | Optional ARN of an AWS Outpost. When set, scopes the result to instance types available on that Outpost. |
 
 ## Returns
 

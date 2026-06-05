@@ -55,6 +55,7 @@ query TprPolicyDetail($tprPolicyId: UUID!) {
       "exemptServiceAccounts": [
         {
           "id": "example-string",
+          "isSuspended": true,
           "name": "example-string"
         }
       ]

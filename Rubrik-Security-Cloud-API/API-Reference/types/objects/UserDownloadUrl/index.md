@@ -4,9 +4,9 @@ Download URL for a file.
 
 ## Fields
 
-| Field | Type    | Description |
-| ----- | ------- | ----------- |
-| url   | String! |             |
+| Field | Type    | Description               |
+| ----- | ------- | ------------------------- |
+| url   | String! | URL to download the file. |
 
 ## Used By
 

@@ -27,6 +27,7 @@ Retrieves a paginated list of all Azure Native Regions.
 query {
   azureNativeRegions(first: 10) {
     nodes {
+      azurePostgresFlexibleServerCount
       azureSqlDatabaseDbCount
       azureSqlManagedInstanceDbCount
       azureStorageAccountCount
@@ -60,12 +61,12 @@ query {
       "nodes": [
         [
           {
+            "azurePostgresFlexibleServerCount": 0,
             "azureSqlDatabaseDbCount": 0,
             "azureSqlManagedInstanceDbCount": 0,
             "azureStorageAccountCount": 0,
             "azureSubscriptionId": "example-string",
-            "disksCount": 0,
-            "id": "00000000-0000-0000-0000-000000000000"
+            "disksCount": 0
           }
         ]
       ],

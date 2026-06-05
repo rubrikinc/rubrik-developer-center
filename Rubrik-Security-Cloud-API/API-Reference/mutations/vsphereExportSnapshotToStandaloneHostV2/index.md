@@ -1,6 +1,6 @@
 # vsphereExportSnapshotToStandaloneHostV2
 
-Export snapshot of a virtual machine to standalone ESXi server.
+Initiates an export job for a vSphere snapshot to a standalone ESXi host.
 
 ## Arguments
 

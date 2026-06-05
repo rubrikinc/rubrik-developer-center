@@ -1,0 +1,18 @@
+# FusionComputeClusterConnection
+
+Paginated list of FusionComputeCluster objects. Each page of the results includes at most 1000 entries. Query the `pageInfo.hasNextPage` field to know whether all objects were returned.
+
+## Fields
+
+| Field    | Type                                                                                                                                                   | Description                                                                                                                    |
+| -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------ |
+| count    | Int!                                                                                                                                                   | Total number of FusionComputeCluster objects matching the request arguments.                                                   |
+| edges    | \[[FusionComputeClusterEdge](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/FusionComputeClusterEdge/index.md)!\]! | List of FusionComputeCluster objects with additional pagination information. Use `nodes` if per-object cursors are not needed. |
+| nodes    | \[[FusionComputeCluster](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/FusionComputeCluster/index.md)!\]!         | List of FusionComputeCluster objects.                                                                                          |
+| pageInfo | [PageInfo](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/PageInfo/index.md)!                                      | General information about this result page.                                                                                    |
+
+## Used By
+
+**Queries**
+
+- [query: fusionComputeClusters](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/fusionComputeClusters/index.md)

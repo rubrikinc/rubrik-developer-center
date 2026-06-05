@@ -24,6 +24,7 @@ query NasSystem($fid: UUID!) {
     isChangelistEnabled
     isNetAppMetroClusterEnabled
     isNfsSupported
+    isNutanixCftEnabled
     isRelic
     isSmbSupported
     isUserSuppliedSmbCredentials
@@ -31,6 +32,7 @@ query NasSystem($fid: UUID!) {
     lastStatus
     name
     namespaceCount
+    nfsPseudoFsPrefix
     numWorkloadDescendants
     objectType
     osVersion

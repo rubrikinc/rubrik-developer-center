@@ -34,6 +34,7 @@ query SapHanaSystem($fid: UUID!) {
     objectType
     onDemandSnapshotCount
     primaryClusterUuid
+    rbaRole
     replicatedObjectCount
     sid
     slaAssignment

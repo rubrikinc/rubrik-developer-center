@@ -1,12 +1,12 @@
 # updateManagedIdentitiesAsync
 
-Async transition to managed identities.
+Async transition of Azure Cloud Cluster to managed identities.
 
 ## Arguments
 
-| Argument           | Type                                                                                                                                                               | Description                                                   |
-| ------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------- |
-| input *(required)* | [UpdateManagedIdentitiesAsyncInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/UpdateManagedIdentitiesAsyncInput/index.md)! | Update managed identities async request parameters for Azure. |
+| Argument           | Type                                                                                                                                                               | Description                              |
+| ------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------------------------------------- |
+| input *(required)* | [UpdateManagedIdentitiesAsyncInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/UpdateManagedIdentitiesAsyncInput/index.md)! | Request for updating managed identities. |
 
 ## Returns
 

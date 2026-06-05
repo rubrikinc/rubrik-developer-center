@@ -1011,9 +1011,9 @@
 <h1 id="api-support">API Support</h1>
 <p>This page describes Rubrik's support commitments for the APIs documented on this site:</p>
 <ul>
-<li><a href="Rubrik-Security-Cloud-API/index.md">Rubrik Security Cloud (<abbr title="Rubrik Security Cloud: The modern data security SaaS management plane">RSC</abbr>) <abbr title="A query language for APIs that provides a complete and understandble description of the data in the API. GraphQL is a strongly typed architecture, which means everything has a type and there is no guessing on the structure.">GraphQL</abbr> API</a></li>
-<li><a href="Rubrik-Security-Cloud-API/REST-API/index.md"><abbr title="Rubrik Security Cloud: The modern data security SaaS management plane">RSC</abbr> Task-Based REST API</a> (Beta)</li>
-<li><a href="Rubrik-Cluster-API/index.md">Rubrik Cluster (CDM) REST API</a></li>
+<li><a href="../Rubrik-Security-Cloud-API/">Rubrik Security Cloud (<abbr title="Rubrik Security Cloud: The modern data security SaaS management plane">RSC</abbr>) <abbr title="A query language for APIs that provides a complete and understandble description of the data in the API. GraphQL is a strongly typed architecture, which means everything has a type and there is no guessing on the structure.">GraphQL</abbr> API</a></li>
+<li><a href="../Rubrik-Security-Cloud-API/REST-API/"><abbr title="Rubrik Security Cloud: The modern data security SaaS management plane">RSC</abbr> Task-Based REST API</a> (Beta)</li>
+<li><a href="../Rubrik-Cluster-API/">Rubrik Cluster (CDM) REST API</a></li>
 </ul>
 <p>These commitments apply to <strong>publicly documented APIs only</strong>. Undocumented or internal endpoints carry no compatibility guarantees.</p>
 <hr />
@@ -1053,9 +1053,9 @@
 <h2 id="deprecation-policy">Deprecation Policy</h2>
 <p>When an API is deprecated:</p>
 <ul>
-<li>It is marked with a <code>@deprecated</code> annotation in the schema (surfaced in introspection and SDKs) and listed with replacement guidance in the <a href="Rubrik-Security-Cloud-API/API-Reference/Deprecations.md">API Deprecations</a> reference.</li>
+<li>It is marked with a <code>@deprecated</code> annotation in the schema (surfaced in introspection and SDKs) and listed with replacement guidance in the <a href="../Rubrik-Security-Cloud-API/API-Reference/Deprecations/">API Deprecations</a> reference.</li>
 <li>It remains fully functional for a minimum of <strong>12 months</strong> from the date of the deprecation notice.</li>
-<li>The change is announced in the <a href="Rubrik-Security-Cloud-API/API-Reference/Changelog.md">Schema Changelog</a>.</li>
+<li>The change is announced in the <a href="../Rubrik-Security-Cloud-API/API-Reference/Changelog/">Schema Changelog</a>.</li>
 </ul>
 <p>When a field is deprecated, the deprecation reason will include the recommended alternative.</p>
 <hr />
@@ -1078,17 +1078,17 @@
 <p>Exceptions may be made for design issues discovered and corrected shortly after release.</p>
 <div class="admonition warning">
 <p class="admonition-title">Security exception</p>
-<p>Breaking changes without a deprecation cycle may occur in rare cases where the existing schema presents a security risk. Such changes are documented in the <a href="Rubrik-Security-Cloud-API/API-Reference/Changelog.md">Schema Changelog</a> with a rationale and migration guidance.</p>
+<p>Breaking changes without a deprecation cycle may occur in rare cases where the existing schema presents a security risk. Such changes are documented in the <a href="../Rubrik-Security-Cloud-API/API-Reference/Changelog/">Schema Changelog</a> with a rationale and migration guidance.</p>
 </div>
 <hr />
 <h2 id="release-cadence">Release Cadence</h2>
-<p>The <abbr title="Rubrik Security Cloud: The modern data security SaaS management plane">RSC</abbr> API is updated on a regular basis. Schema changes — new fields, deprecations, and any breaking changes — are documented in the <a href="Rubrik-Security-Cloud-API/API-Reference/Changelog.md">Schema Changelog</a> with each release.</p>
+<p>The <abbr title="Rubrik Security Cloud: The modern data security SaaS management plane">RSC</abbr> API is updated on a regular basis. Schema changes — new fields, deprecations, and any breaking changes — are documented in the <a href="../Rubrik-Security-Cloud-API/API-Reference/Changelog/">Schema Changelog</a> with each release.</p>
 <hr />
 <h2 id="what-rubrik-supports">What Rubrik Supports</h2>
 <p>Rubrik's support commitment covers:</p>
 <ul>
 <li><strong>The API specification</strong> — behavior as documented on this site</li>
-<li><strong>Official SDKs</strong> — the <a href="SDKs-and-Tools/index.md">Python <abbr title="A query language for APIs that provides a complete and understandble description of the data in the API. GraphQL is a strongly typed architecture, which means everything has a type and there is no guessing on the structure.">GraphQL</abbr> Client</a> and <a href="SDKs-and-Tools/index.md">PowerShell SDK</a> are maintained and versioned alongside the API</li>
+<li><strong>Official SDKs</strong> — the <a href="../SDKs-and-Tools/">Python <abbr title="A query language for APIs that provides a complete and understandble description of the data in the API. GraphQL is a strongly typed architecture, which means everything has a type and there is no guessing on the structure.">GraphQL</abbr> Client</a> and <a href="../SDKs-and-Tools/">PowerShell SDK</a> are maintained and versioned alongside the API</li>
 </ul>
 <h3 id="sdk-and-deprecation-warnings">SDK and deprecation warnings</h3>
 <p>Official SDKs are auto-generated from the <abbr title="A query language for APIs that provides a complete and understandble description of the data in the API. GraphQL is a strongly typed architecture, which means everything has a type and there is no guessing on the structure.">GraphQL</abbr> schema. When you update your SDK and recompile, deprecated fields surface as deprecation warnings in your IDE or build output. This is the recommended way to stay ahead of upcoming removals.</p>
@@ -1111,11 +1111,11 @@
 </thead>
 <tbody>
 <tr>
-<td><a href="Rubrik-Security-Cloud-API/API-Reference/Changelog.md">Schema Changelog</a></td>
+<td><a href="../Rubrik-Security-Cloud-API/API-Reference/Changelog/">Schema Changelog</a></td>
 <td>Per-release record of all schema changes, including breaking changes and deprecations</td>
 </tr>
 <tr>
-<td><a href="Rubrik-Security-Cloud-API/API-Reference/Deprecations.md">API Deprecations</a></td>
+<td><a href="../Rubrik-Security-Cloud-API/API-Reference/Deprecations/">API Deprecations</a></td>
 <td>Full list of currently deprecated fields with replacement guidance</td>
 </tr>
 </tbody>
@@ -1147,7 +1147,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="June 3, 2026 14:34:13 UTC">2026-06-03</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="June 5, 2026 12:12:33 UTC">2026-06-05</span>
   </span>
 
     

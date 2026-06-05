@@ -68,7 +68,7 @@ Enum representing all the possible event types.
 | TEST_FAILOVER                     | Test failover type.                                                                                         |
 | THREAT_FEED                       | Threat feed event type.                                                                                     |
 | THREAT_HUNT                       | Threat hunt type.                                                                                           |
-| THREAT_MONITORING                 | Threat monitoring event type.                                                                               |
+| THREAT_MONITORING                 | Threat monitoring event/audit type.                                                                         |
 | TPR                               | TPR type.                                                                                                   |
 | UNKNOWN_EVENT_TYPE                | Unknown type.                                                                                               |
 | UPGRADE                           | Upgrade type.                                                                                               |
