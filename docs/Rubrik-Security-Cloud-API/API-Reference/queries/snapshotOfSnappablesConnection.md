@@ -19,6 +19,7 @@ Returns list of snapshots for a list of workloads.
 | includeOnlySourceSnapshots | Boolean | Specifies whether to include source snapshots or not. If its true, response will contain only source snapshots. |
 | shouldExcludeCdmSnapshotRetentionInfo | Boolean | Specifies whether to show snapshot retention for snapshots of CDM workloads. |
 | shouldShowCdmSnapshotLocationInfoArg | Boolean | Specifies whether to show snapshot location information. |
+| snapshotLocationView | [SnapshotLocationView](../types/enums/SnapshotLocationView.md) | Filter for per-location entries in snapshot retention info. Defaults to EXCLUDE_EXPIRED when omitted. |
 
 ## Returns
 

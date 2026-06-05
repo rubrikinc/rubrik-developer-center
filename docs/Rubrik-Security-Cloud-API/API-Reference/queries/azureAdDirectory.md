@@ -34,6 +34,7 @@ Details of the Azure AD corresponding to the workload ID.
         isJitEnabled
         isProvisioned
         isRelic
+        latestAccessReviewScheduleDefinitionCount
         latestAdministrativeUnitsCount
         latestApplicationsCount
         latestAssignmentFilterCount
@@ -44,10 +45,15 @@ Details of the Azure AD corresponding to the workload ID.
         latestComplianceScriptCount
         latestConditionalAccessPoliciesCount
         latestDeviceCount
+        latestEmAccessPackageCount
+        latestEmCatalogCount
+        latestGroupActiveAssignmentCount
         latestGroupCount
+        latestGroupEligibleAssignmentCount
         latestLocalAdminPasswordCount
         latestNamedLocationsCount
         latestNotificationTemplateCount
+        latestRoleEligibleAssignmentCount
         latestRolesCount
         latestServicePrincipalsCount
         latestSnapshotTime

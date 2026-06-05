@@ -6,9 +6,13 @@ Returns groupBy for SonarReport.
 
 | Argument | Type | Description |
 |----------|------|-------------|
-| sonarReportGroupBy *(required)* | [DiscoveryReportGroupBy](../types/enums/DiscoveryReportGroupBy.md)! |  |
-| filter | [String!] |  |
-| timeFilter | [TimeFilterInput](../types/inputs/TimeFilterInput.md) |  |
+| first | Int | Returns the first n elements from the list. |
+| after | String | Returns the elements in the list that occur after the specified cursor. |
+| last | Int | Returns the last n elements from the list. |
+| before | String | Returns the elements in the list that occur before the specified cursor. |
+| sonarReportGroupBy *(required)* | [DiscoveryReportGroupBy](../types/enums/DiscoveryReportGroupBy.md)! | Group-by field for the report. |
+| filter | [String!] | Optional list of policy IDs to filter by. |
+| timeFilter | [TimeFilterInput](../types/inputs/TimeFilterInput.md) | Optional time range filter. |
 
 ## Returns
 
@@ -20,7 +24,10 @@ Returns groupBy for SonarReport.
 
     ```graphql
     query SonarReport($sonarReportGroupBy: DiscoveryReportGroupBy!) {
-      sonarReport(sonarReportGroupBy: $sonarReportGroupBy) {
+      sonarReport(
+        sonarReportGroupBy: $sonarReportGroupBy
+        first: 10
+      ) {
         nodes {
           count
           groupByValue

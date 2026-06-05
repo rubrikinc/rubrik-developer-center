@@ -15,6 +15,8 @@ Paginated list of CdmHierarchyObject objects with additional pagination informat
 
 **Queries**
 
+- [query: fusionComputeClustersAndHosts](../../queries/fusionComputeClustersAndHosts.md)
+- [query: fusionComputeRecoverableClustersAndHosts](../../queries/fusionComputeRecoverableClustersAndHosts.md)
 - [query: nasTopLevelDescendants](../../queries/nasTopLevelDescendants.md)
 - [query: nutanixTopLevelDescendants](../../queries/nutanixTopLevelDescendants.md)
 - [query: vSphereRootRecoveryHierarchy](../../queries/vSphereRootRecoveryHierarchy.md)

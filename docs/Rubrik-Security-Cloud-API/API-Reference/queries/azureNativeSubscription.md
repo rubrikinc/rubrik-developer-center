@@ -23,6 +23,7 @@ Retrieves an Azure Native Subscription. Refers to the logical entity that provid
         accountConnectionId
         authorizedOperations
         azureCloudType
+        azurePostgresFlexibleServerCount
         azureSqlDatabaseDbCount
         azureSqlManagedInstanceDbCount
         azureStorageAccountCount
@@ -64,9 +65,9 @@ Retrieves an Azure Native Subscription. Refers to the logical entity that provid
             "MANAGE_DATA_SOURCE"
           ],
           "azureCloudType": "AZURECHINACLOUD",
+          "azurePostgresFlexibleServerCount": 0,
           "azureSqlDatabaseDbCount": 0,
           "azureSqlManagedInstanceDbCount": 0,
-          "azureStorageAccountCount": 0,
           "allOrgs": [
             {
               "allUrls": [

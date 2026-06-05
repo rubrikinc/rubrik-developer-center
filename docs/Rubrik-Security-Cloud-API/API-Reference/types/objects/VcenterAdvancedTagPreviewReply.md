@@ -6,7 +6,7 @@ Reply Object for PreviewFilter.
 
 | Field | Type | Description |
 |-------|------|-------------|
-| output | [FilterPreviewResultListResponse](FilterPreviewResultListResponse.md) |  |
+| output | [FilterPreviewResultListResponse](FilterPreviewResultListResponse.md) | Filter preview results. |
 
 ## Used By
 

@@ -41,6 +41,7 @@ Connection of filtered SAP HANA systems based on specific filters.
           objectType
           onDemandSnapshotCount
           primaryClusterUuid
+          rbaRole
           replicatedObjectCount
           sid
           slaAssignment

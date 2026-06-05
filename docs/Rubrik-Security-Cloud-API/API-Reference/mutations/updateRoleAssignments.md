@@ -1,6 +1,6 @@
 # updateRoleAssignments
 
-*No description available.*
+Replaces RBAC role assignments for the given users and/or groups. Existing role assignments are overwritten with the provided role IDs.
 
 ## Arguments
 
@@ -8,7 +8,7 @@
 |----------|------|-------------|
 | userIds | [String!] | List of user IDs. |
 | groupIds | [String!] | List of group IDs. |
-| roleIds *(required)* | [String!]! |  |
+| roleIds *(required)* | [String!]! | List of role IDs to assign. |
 
 ## Returns
 

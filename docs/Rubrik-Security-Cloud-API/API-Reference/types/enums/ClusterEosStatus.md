@@ -1,6 +1,6 @@
 # ClusterEosStatus
 
-End of support status of the Rubrik cluster.
+The end of support status of the Rubrik CDM version.
 
 ## Values
 

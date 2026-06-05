@@ -33,6 +33,9 @@ Get a paginated list of policy violations.
 | sortOrder | [SortOrder](../types/enums/SortOrder.md) | Sort order for policy violations. |
 | principalFilter | [PrincipalSummariesFilterInput](../types/inputs/PrincipalSummariesFilterInput.md) | Principal fields to filter by. If null, the results will not be filtered. |
 | policyViolationNameSearch | String | Policy violation name to search for (substring match). |
+| policyFrameworks | [String!] | Policy frameworks to filter by. If empty or null, the results will not be filtered. |
+| ticketNumbers | [String!] | Ticket numbers to filter violations by. If empty or null, the results will not be filtered. |
+| violationNames | [String!] | Exact violation names to filter by. OR-combined with policyIds: a violation matches if its policyId is in policyIds OR its violationName is in violationNames. Distinct from policyViolationNameSearch (substring match, AND-combined). |
 
 ## Returns
 

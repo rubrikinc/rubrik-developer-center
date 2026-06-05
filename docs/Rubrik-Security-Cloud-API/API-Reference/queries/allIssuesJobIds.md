@@ -1,12 +1,12 @@
 # allIssuesJobIds
 
-List IDs of running SONAR issues jobs.
+List IDs of running issues jobs.
 
 ## Arguments
 
 | Argument | Type | Description |
 |----------|------|-------------|
-| queryIds *(required)* | [String!]! |  |
+| queryIds *(required)* | [String!]! | Query IDs to look up status for. |
 
 ## Returns
 

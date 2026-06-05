@@ -33,7 +33,7 @@ Check if label rule name is unique or not
     ```json
     {
       "ruleName": "example-string",
-      "objectType": "GCP_CLOUD_SQL_INSTANCE"
+      "objectType": "GCP_BIGQUERY_DATASET"
     }
     ```
 

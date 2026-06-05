@@ -10,6 +10,7 @@ An Azure Native Region. Refers to a specific location where Azure resources are 
 |-------|------|-------------|
 | allOrgs | [[Org](Org.md)!]! | Organizations to which this hierarchy object belongs. |
 | allTags | [[AssignedRscTag](AssignedRscTag.md)!]! | RSC tags to which this hierarchy object is assigned. |
+| azurePostgresFlexibleServerCount | Int! | The number of Azure PostgreSQL Flexible Servers in the region. |
 | azureSqlDatabaseDbCount | Int! | Count of Azure SQL databases in the region. |
 | azureSqlManagedInstanceDbCount | Int! | Count of Azure SQL Managed Instance databases in the region. |
 | azureStorageAccountCount | Int! | The number of Azure storage accounts in the region. |

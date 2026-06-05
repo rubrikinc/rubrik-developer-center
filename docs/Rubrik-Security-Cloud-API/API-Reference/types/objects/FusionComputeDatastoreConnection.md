@@ -1,0 +1,19 @@
+# FusionComputeDatastoreConnection
+
+Paginated list of FusionComputeDatastore objects. Each page of the results includes at most 1000 entries. Query the `pageInfo.hasNextPage` field to know whether all objects were returned.
+
+## Fields
+
+| Field | Type | Description |
+|-------|------|-------------|
+| count | Int! | Total number of FusionComputeDatastore objects matching the request arguments. |
+| edges | [[FusionComputeDatastoreEdge](FusionComputeDatastoreEdge.md)!]! | List of FusionComputeDatastore objects with additional pagination information. Use `nodes` if per-object cursors are not needed. |
+| nodes | [[FusionComputeDatastore](FusionComputeDatastore.md)!]! | List of FusionComputeDatastore objects. |
+| pageInfo | [PageInfo](PageInfo.md)! | General information about this result page. |
+
+## Used By
+
+**Queries**
+
+- [query: fusionComputeDatastores](../../queries/fusionComputeDatastores.md)
+- [query: fusionComputeRecoverableDatastores](../../queries/fusionComputeRecoverableDatastores.md)

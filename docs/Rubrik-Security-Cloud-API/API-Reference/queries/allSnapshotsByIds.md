@@ -8,6 +8,7 @@ Returns the details for the passed snapshot IDs.
 |----------|------|-------------|
 | snapshotFids *(required)* | [[UUID](../types/scalars/UUID.md)!]! | List of snapshot UUIDs. |
 | shouldShowSnapshotRetentionInfo *(required)* | Boolean! | Specifies whether to show snapshot retention. |
+| snapshotLocationView | [SnapshotLocationView](../types/enums/SnapshotLocationView.md) | Filter for per-location entries in snapshot retention info. Defaults to EXCLUDE_EXPIRED when omitted. |
 
 ## Returns
 

@@ -9,5 +9,6 @@ Filter by specific delta types of affected files. Only applicable when sensitive
 | AFFECTED_FILES_DELTA_TYPE_ADDED | Files that were added. |
 | AFFECTED_FILES_DELTA_TYPE_DELETED | Files that were deleted. |
 | AFFECTED_FILES_DELTA_TYPE_MODIFIED | Files that were modified. |
+| AFFECTED_FILES_DELTA_TYPE_QUARANTINED | Files that were quarantined. |
 | AFFECTED_FILES_DELTA_TYPE_RANSOMWARE_NOTE | Files identified as ransomware notes. |
 | AFFECTED_FILES_DELTA_TYPE_SUSPICIOUS | Files that are suspicious. |

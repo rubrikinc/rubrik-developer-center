@@ -1,6 +1,6 @@
 # createFilesetSnapshot
 
-*No description available.*
+Initiate an on-demand backup for a fileset  Supported in v5.0+ Create an on-demand backup request for the given fileset.
 
 ## Arguments
 

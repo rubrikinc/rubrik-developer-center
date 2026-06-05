@@ -80,6 +80,7 @@ All valid table views.
 | RECOVERY_TASKS_DETAIL_TABLE | Recovery task detail report's main table. |
 | ROLE_TABLE | Table displaying a list of role table. |
 | SERVICE_ACCOUNT_TABLE | Table displaying a list of service accounts. |
+| SIGNIN_LOGS_TABLE | Table displaying sign-in logs. |
 | SLA_AUDIT_DETAIL_TABLE | Table displaying a list of audits for the single SLA Domain. |
 | SLA_AUDIT_LIST_TABLE | Table displaying a list of latest audits for each SLA Domain. |
 | SSO_GROUP_TABLE | Table displaying a list of SSO groups. |

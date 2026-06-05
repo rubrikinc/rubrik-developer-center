@@ -1,6 +1,6 @@
 # FlexmotionWorkloadType
 
-Workload types supported by FlexMotion failover operations.
+Workload types supported by FlexMotion failover operations. Kept for backwards compatibility during rolling upgrades.
 
 ## Values
 

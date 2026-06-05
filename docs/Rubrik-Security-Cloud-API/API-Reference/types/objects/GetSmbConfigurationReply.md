@@ -6,7 +6,7 @@ Reply Object for GetSmbConfiguration.
 
 | Field | Type | Description |
 |-------|------|-------------|
-| output | [SmbConfig](SmbConfig.md) |  |
+| output | [SmbConfig](SmbConfig.md) | Supported in v5.0+ |
 
 ## Used By
 

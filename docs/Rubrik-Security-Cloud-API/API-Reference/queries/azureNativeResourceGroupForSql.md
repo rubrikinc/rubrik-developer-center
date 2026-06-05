@@ -21,6 +21,7 @@ Retrieves an Azure Native Resource Group for SQL Workloads. Refers to a collecti
     query AzureNativeResourceGroupForSql($resourceGroupId: UUID!) {
       azureNativeResourceGroupForSql(resourceGroupId: $resourceGroupId) {
         authorizedOperations
+        azurePostgresFlexibleServerCount
         azureSqlDatabaseCount
         azureSqlManagedInstanceDbCount
         azureStorageAccountCount
@@ -57,11 +58,11 @@ Retrieves an Azure Native Resource Group for SQL Workloads. Refers to a collecti
           "authorizedOperations": [
             "MANAGE_DATA_SOURCE"
           ],
+          "azurePostgresFlexibleServerCount": 0,
           "azureSqlDatabaseCount": 0,
           "azureSqlManagedInstanceDbCount": 0,
           "azureStorageAccountCount": 0,
           "azureSubscriptionRubrikId": "00000000-0000-0000-0000-000000000000",
-          "disksCount": 0,
           "allOrgs": [
             {
               "allUrls": [

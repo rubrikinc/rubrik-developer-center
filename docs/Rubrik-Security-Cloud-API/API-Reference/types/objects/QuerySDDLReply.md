@@ -1,12 +1,12 @@
 # QuerySDDLReply
 
-*No description available.*
+Reply for QuerySecurityDescriptor.
 
 ## Fields
 
 | Field | Type | Description |
 |-------|------|-------------|
-| secInfo | [[PathSecInfo](PathSecInfo.md)!]! |  |
+| secInfo | [[PathSecInfo](PathSecInfo.md)!]! | Security information for each requested path. |
 
 ## Used By
 

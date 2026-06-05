@@ -41,6 +41,7 @@ The different TPR rules.
 | REPLACE_CLUSTER_NODE | The TPR rule is for replacing a cluster node. |
 | RESET_USER_PASSKEYS | Quorum authorization is required for resetting passkeys for a QAuth user. |
 | RESET_USER_TOTP_CONFIG | The TPR rule is for resetting MFA for a TPR user. |
+| RESTORE_SERVICE_ACCOUNT_TPR_EXEMPTION | Quorum authorization is required to restore a service account's quorum authorization exemption. |
 | RETENTION_LOCK_OBJECT | The TPR rule is for retention lock objects. |
 | RETENTION_LOCK_SLA | The TPR rule is for retention lock SLA. |
 | REVOKE_TPR_ROLE | The TPR rule is for revoking a TPR role from a user. |

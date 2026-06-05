@@ -37,7 +37,7 @@ List of cloud native label values matched by substring.
       "valueSubStr": "example-string",
       "key": "example-string",
       "limit": 0,
-      "objectType": "GCP_CLOUD_SQL_INSTANCE"
+      "objectType": "GCP_BIGQUERY_DATASET"
     }
     ```
 

@@ -15,6 +15,7 @@ Filters for list of AWS EBS volumes.
 | isEligibleForProtection | Boolean | Filter workloads based on their eligibility for protection. |
 | nameOrIdSubstringFilter | [AwsNativeEbsVolumeNameOrIdSubstringFilter](AwsNativeEbsVolumeNameOrIdSubstringFilter.md) | Filter by name or ID substring. |
 | orgFilter | [OrgFilter](OrgFilter.md) | Filter by organization ID. |
+| outpostArnFilter | [AwsNativeOutpostArnFilter](AwsNativeOutpostArnFilter.md) | Filter by AWS Outpost ARN. |
 | protectionStatusFilter | [ProtectionStatusFilter](ProtectionStatusFilter.md) | Filter by protection status. |
 | regionFilter | [AwsNativeRegionFilter](AwsNativeRegionFilter.md) | Filter by region. |
 | relicFilter | [RelicFilter](RelicFilter.md) | Filter by relic status. |

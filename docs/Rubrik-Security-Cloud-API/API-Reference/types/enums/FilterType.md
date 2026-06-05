@@ -40,6 +40,7 @@ FilterType represents the possible types of filters.
 | SECURITY_IDENTITY_HAS_ROLES | Identity has-roles filter (descendant of a role). |
 | SECURITY_IDENTITY_IDP_METADATA_LABEL | Identity provider metadata label filter. |
 | SECURITY_IDENTITY_IDP_TYPE | Identity provider filter. |
+| SECURITY_IDENTITY_INSIGHT | Identity insight category filter (Is Privileged, At Risk, Highly Sensitive). |
 | SECURITY_IDENTITY_IS_DOMAIN_CONTROLLER | Identity is domain controller boolean filter. |
 | SECURITY_IDENTITY_METADATA | Identity-level metadata filter. |
 | SECURITY_IDENTITY_METADATA_BITMASK | Identity metadata bitmask check filter (bit SET/NOT_SET). |

@@ -40,6 +40,7 @@ Connection of filtered SAP HANA databases based on specific filters.
           onDemandSnapshotCount
           primaryClusterUuid
           protectionDate
+          rbaRole
           replicatedObjectCount
           slaAssignment
           slaPauseStatus

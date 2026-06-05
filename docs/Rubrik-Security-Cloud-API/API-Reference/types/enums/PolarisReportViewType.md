@@ -36,6 +36,7 @@ PolarisReportViewType is the template type for a report.
 | REPORT_UNSPECIFIED | Report view type is unspecified. |
 | ROLE_REPORT | Role report. |
 | SERVICE_ACCOUNT_REPORT | Service account report. |
+| SIGNIN_LOGS_REPORT | Sign-in logs report. |
 | SLA_AUDIT_REPORT | SLA audit report. |
 | SONAR_CONTENT | Sensitive data discovery details. |
 | SONAR_REPORT | Sensitive data discovery. |

@@ -1,6 +1,6 @@
 # RemediationTargets
 
-*No description available.*
+The input for specifying the targets for a remediation.
 
 ## Fields
 

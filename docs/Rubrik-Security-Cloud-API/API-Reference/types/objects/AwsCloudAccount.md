@@ -8,6 +8,7 @@ Details of AWS account.
 |-------|------|-------------|
 | accountName | String! | Name of cloud account. |
 | cloudType | [AwsCloudType](../enums/AwsCloudType.md)! | Type of cloud account. |
+| crossAccountRoleModel | [CrossAccountRoleModel](../enums/CrossAccountRoleModel.md)! | Cross-account role model: SINGLE_ROLE or MULTI_ROLE. |
 | id | String! | Rubrik ID of cloud account. |
 | message | String! | Message for cloud account, in case of error. |
 | nativeId | String! | Native ID of cloud account. |

@@ -16,6 +16,7 @@ AWS native account details.
 
 **Referenced by**
 
+- [AwsNativeConfig.awsNativeAccountDetails](AwsNativeConfig.md)
 - [AwsNativeDynamoDbTable.awsNativeAccountDetails](AwsNativeDynamoDbTable.md)
 - [AwsNativeEbsVolume.awsNativeAccountDetails](AwsNativeEbsVolume.md)
 - [AwsNativeEc2Instance.awsNativeAccountDetails](AwsNativeEc2Instance.md)

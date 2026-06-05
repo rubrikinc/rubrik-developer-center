@@ -1,12 +1,12 @@
 # batchDeassignRoleFromUserGroups
 
-*No description available.*
+Batch deassign roles from the given user groups.
 
 ## Arguments
 
 | Argument | Type | Description |
 |----------|------|-------------|
-| userGroupToRoles *(required)* | [[UserGroupToRolesInput](../types/inputs/UserGroupToRolesInput.md)!]! |  |
+| userGroupToRoles *(required)* | [[UserGroupToRolesInput](../types/inputs/UserGroupToRolesInput.md)!]! | The list of (user group, role) pairs to deassign. |
 
 ## Returns
 

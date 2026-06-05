@@ -43,6 +43,7 @@ Active Directory Domain.
 | slaPauseStatus | Boolean! | Pause status of the effective SLA Domain of the hierarchy object. |
 | smbDomain | [SmbDomain](SmbDomain.md) | SMB Domain. |
 | snapshotDistribution | [SnapshotDistribution](SnapshotDistribution.md)! | Distribution of the snapshots of the hierarchy object. |
+| unregisteredDomainControllers | [[UnregisteredDomainControllerInfo](UnregisteredDomainControllerInfo.md)!]! | List of auto-discovered domain controllers that are not registered with Rubrik. Empty if there are none. |
 
 ## Field Arguments
 

@@ -9,7 +9,9 @@ Represents all the object types for which we expect to see audits.
 | ACTIVE_DIRECTORY_DOMAIN | Active Directory domain. |
 | ACTIVE_DIRECTORY_DOMAIN_CONTROLLER | Active Directory domain controller. |
 | ACTIVE_DIRECTORY_FOREST | Active Directory forest. |
+| AGENT_CLOUD_ALERT | Agent Cloud alert object. |
 | AGENT_CLOUD_POLICY | Agent Cloud policy object. |
+| AGENT_CLOUD_VIOLATION | Agent Cloud violation object. |
 | AGENT_OPERATIONS_MODEL_ROUTER | Agent Operations Model Router object. |
 | APP_BLUEPRINT | App Blueprint object. |
 | ARCHIVAL_LOCATION | Archival Location object. |
@@ -32,6 +34,7 @@ Represents all the object types for which we expect to see audits.
 | AZURE_NATIVE_DISK | Azure native disk object. |
 | AZURE_NATIVE_SUBSCRIPTION | Azure native subscription object. |
 | AZURE_NATIVE_VM | Azure native virtual machine object. |
+| AZURE_POSTGRES_FLEXIBLE_SERVER | Azure PostgreSQL Flexible Server. |
 | AZURE_SQL_DATABASE | Azure SQL database object. |
 | AZURE_SQL_MANAGED_INSTANCE | Azure SQL managed instance object. |
 | AZURE_STORAGE_ACCOUNT | Azure storage account. |
@@ -65,6 +68,7 @@ Represents all the object types for which we expect to see audits.
 | EXCHANGE_SERVER | Exchange Server object. |
 | EXOCOMPUTE | Exocompute object. |
 | FAILOVER_CLUSTER_APP | Failover cluster app. |
+| FAILOVER_GROUP | Failover Group (HA Policy) object. |
 | FEDERATED_ACCESS | Federated Access object. |
 | FUSION_COMPUTE_CLUSTER | FusionCompute cluster. |
 | FUSION_COMPUTE_DATASTORE | FusionCompute datastore. |
@@ -81,6 +85,10 @@ Represents all the object types for which we expect to see audits.
 | GCP_NATIVE_PROJECT | GCP native project. |
 | GITHUB_ORGANIZATION | GitHub Organization. |
 | GITHUB_REPOSITORY | GitHub Repository. |
+| GLUE_ICEBERG_CATALOG | AWS Glue Iceberg Catalog. |
+| GLUE_ICEBERG_DATABASE | AWS Glue Iceberg Database. |
+| GLUE_ICEBERG_TABLE | AWS Glue Iceberg Table. |
+| GOOGLE_WORKSPACE_GROUP | Google Workspace Group. |
 | GOOGLE_WORKSPACE_ORGANIZATION | Google Workspace Organisation. |
 | GOOGLE_WORKSPACE_ORG_UNIT | Google Workspace Organisation unit. |
 | GOOGLE_WORKSPACE_SHARED_DRIVE | Google Workspace Shared Drive. |
@@ -154,6 +162,7 @@ Represents all the object types for which we expect to see audits.
 | ORACLE_MOUNT | Oracle Mount object. |
 | ORACLE_RAC | Oracle RAC object. |
 | ORGANIZATION | Organization object. |
+| PING_FEDERATE_CLUSTER | Ping Federate Cluster. |
 | POSTGRES_DB_CLUSTER | Postgres Database Cluster. |
 | PROXMOX_ENVIRONMENT | Proxmox environment. |
 | PROXMOX_VIRTUAL_MACHINE | Proxmox virtual machine. |

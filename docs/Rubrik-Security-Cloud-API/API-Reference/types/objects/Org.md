@@ -50,6 +50,7 @@ Details of an org.
 - [AwsNativeAccount.allOrgs](AwsNativeAccount.md)
 - AwsNativeAccountDescendantType.allOrgs
 - AwsNativeAccountLogicalChildType.allOrgs
+- [AwsNativeConfig.allOrgs](AwsNativeConfig.md)
 - [AwsNativeDynamoDbTable.allOrgs](AwsNativeDynamoDbTable.md)
 - [AwsNativeEbsVolume.allOrgs](AwsNativeEbsVolume.md)
 - [AwsNativeEc2Instance.allOrgs](AwsNativeEc2Instance.md)
@@ -58,17 +59,16 @@ Details of an org.
 - [AwsNativeRegionHierarchyObject.allOrgs](AwsNativeRegionHierarchyObject.md)
 - [AwsNativeS3Bucket.allOrgs](AwsNativeS3Bucket.md)
 - [AzureAdDirectory.allOrgs](AzureAdDirectory.md)
+- [AzureDevOpsOrganization.allOrgs](AzureDevOpsOrganization.md)
+- [AzureDevOpsProject.allOrgs](AzureDevOpsProject.md)
+- [AzureDevOpsRepository.allOrgs](AzureDevOpsRepository.md)
 - AzureNativeHierarchyObjectType.allOrgs
 - [AzureNativeManagedDisk.allOrgs](AzureNativeManagedDisk.md)
 - [AzureNativeRegionManagedObject.allOrgs](AzureNativeRegionManagedObject.md)
 - [AzureNativeResourceGroup.allOrgs](AzureNativeResourceGroup.md)
 - [AzureNativeSubscription.allOrgs](AzureNativeSubscription.md)
 - [AzureNativeVirtualMachine.allOrgs](AzureNativeVirtualMachine.md)
+- [AzurePostgresFlexibleServer.allOrgs](AzurePostgresFlexibleServer.md)
 - [AzureSqlDatabaseDb.allOrgs](AzureSqlDatabaseDb.md)
 - [AzureSqlDatabaseServer.allOrgs](AzureSqlDatabaseServer.md)
-- [AzureSqlManagedInstanceDatabase.allOrgs](AzureSqlManagedInstanceDatabase.md)
-- [AzureSqlManagedInstanceServer.allOrgs](AzureSqlManagedInstanceServer.md)
-- [AzureStorageAccount.allOrgs](AzureStorageAccount.md)
-- [CassandraColumnFamily.allOrgs](CassandraColumnFamily.md)
-- [CassandraKeyspace.allOrgs](CassandraKeyspace.md)
-- *…and 257 more*
+- *…and 282 more*

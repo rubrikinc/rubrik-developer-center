@@ -25,6 +25,8 @@ Kubernetes cluster.
 | effectiveSlaSourceObject | [PathNode](PathNode.md) | Path node of the effective SLA Domain source. |
 | eksClusterArn | String | Amazon Resource Name (ARN) for the EKS Kubernetes cluster. |
 | externalIp | String | The IP for connecting to the Kubernetes cluster on a NodePort. |
+| helmStatus | [HelmStatus](../enums/HelmStatus.md) | Compatibility status between the deployed Helm chart and the running Rubrik CDM. NULL for non-Helm onboarded clusters. |
+| helmVersion | String | Deployed Helm chart version on the cluster. NULL for non-Helm onboarded clusters. |
 | id | [UUID](../scalars/UUID.md)! | ID of the hierarchy object. |
 | isAutoPsCreationEnabled | Boolean! | Specifies whether automatic protection set creation is enabled. |
 | isPullSecretConfigured | Boolean! | Specifies whether the pull secret is configured. |

@@ -17,6 +17,7 @@ Type of objects managed by SLA Domains.
 | AZURE_BLOB_OBJECT_TYPE | Azure Blob object. |
 | AZURE_DEVOPS_OBJECT_TYPE | Azure DevOps object. |
 | AZURE_OBJECT_TYPE | Azure object. |
+| AZURE_POSTGRES_FLEXIBLE_SERVER_OBJECT_TYPE | Azure PostgreSQL Flexible Server object. |
 | AZURE_SQL_DATABASE_OBJECT_TYPE | Azure SQL Database object. |
 | AZURE_SQL_MANAGED_INSTANCE_OBJECT_TYPE | Azure SQL Managed Instance object. |
 | CASSANDRA_OBJECT_TYPE | Cassandra object. |
@@ -30,6 +31,7 @@ Type of objects managed by SLA Domains.
 | GCP_CLOUD_SQL_OBJECT_TYPE | GCP Cloud SQL object. |
 | GCP_OBJECT_TYPE | GCP object. |
 | GITHUB_OBJECT_TYPE | GitHub object. |
+| GLUE_ICEBERG_TABLE_OBJECT_TYPE | Glue Iceberg Table object. |
 | GOOGLE_WORKSPACE_OBJECT_TYPE | Google Workspace object. |
 | HYPERV_OBJECT_TYPE | HyperV SLA Domain object. |
 | INFORMIX_INSTANCE_OBJECT_TYPE | Informix object. |
@@ -49,9 +51,11 @@ Type of objects managed by SLA Domains.
 | OLVM_OBJECT_TYPE | OLVM object. |
 | OPENSTACK_OBJECT_TYPE |  |
 | ORACLE_OBJECT_TYPE | Oracle object. |
+| PING_FEDERATE_OBJECT_TYPE | Ping Federate object. |
 | POSTGRES_DB_CLUSTER_OBJECT_TYPE | PostgreSQL DB Cluster object. |
 | PROXMOX_OBJECT_TYPE | Proxmox object. |
 | PURE_STORAGE_OBJECT_TYPE | Pure Storage object. |
+| RSC_TAG_OBJECT_TYPE | RSC tag object. Used when an SLA Domain is assigned to an RSC tag so that assigned objects inherit the SLA Domain from the tag. |
 | SALESFORCE_OBJECT_TYPE | Salesforce object. |
 | SAP_HANA_OBJECT_TYPE | SAP HANA object. |
 | SNAPMIRROR_CLOUD_OBJECT_TYPE | SnapMirror Cloud object. |

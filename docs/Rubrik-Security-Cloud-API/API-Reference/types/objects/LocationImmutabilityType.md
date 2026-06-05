@@ -7,6 +7,7 @@ Immutability settings for target.
 | Field | Type | Description |
 |-------|------|-------------|
 | bucketLockDurationDays | Int! | Number of days location is immutable. |
+| immutabilityMode | [ArchivalLocationImmutabilityMode](../enums/ArchivalLocationImmutabilityMode.md) | Immutability mode for this target. Absent when the target does not enforce mode-based immutability. |
 | isObjectLockEnabled | Boolean! | Specifies whether object-level immutability is enabled. |
 
 ## Used By

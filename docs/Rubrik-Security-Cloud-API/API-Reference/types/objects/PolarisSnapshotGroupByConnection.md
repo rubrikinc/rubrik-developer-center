@@ -15,12 +15,14 @@ Paginated list of PolarisSnapshotGroupBy objects. Each page of the results inclu
 
 **Referenced by**
 
+- [AwsNativeConfig.snapshotGroupByConnection](AwsNativeConfig.md)
 - [AwsNativeDynamoDbTable.snapshotGroupByConnection](AwsNativeDynamoDbTable.md)
 - [AwsNativeEbsVolume.snapshotGroupByConnection](AwsNativeEbsVolume.md)
 - [AwsNativeEc2Instance.snapshotGroupByConnection](AwsNativeEc2Instance.md)
 - [AwsNativeRdsInstance.snapshotGroupByConnection](AwsNativeRdsInstance.md)
 - [AwsNativeS3Bucket.snapshotGroupByConnection](AwsNativeS3Bucket.md)
 - [AzureAdDirectory.snapshotGroupByConnection](AzureAdDirectory.md)
+- [AzureDevOpsRepository.snapshotGroupByConnection](AzureDevOpsRepository.md)
 - [AzureNativeManagedDisk.snapshotGroupByConnection](AzureNativeManagedDisk.md)
 - [AzureNativeVirtualMachine.snapshotGroupByConnection](AzureNativeVirtualMachine.md)
 - [AzureSqlDatabaseDb.snapshotGroupByConnection](AzureSqlDatabaseDb.md)
@@ -30,6 +32,8 @@ Paginated list of PolarisSnapshotGroupBy objects. Each page of the results inclu
 - [GcpCloudSqlInstance.snapshotGroupByConnection](GcpCloudSqlInstance.md)
 - [GcpNativeDisk.snapshotGroupByConnection](GcpNativeDisk.md)
 - [GcpNativeGceInstance.snapshotGroupByConnection](GcpNativeGceInstance.md)
+- [GithubRepository.snapshotGroupByConnection](GithubRepository.md)
+- [GlueIcebergTable.snapshotGroupByConnection](GlueIcebergTable.md)
 - [K8sNamespace.snapshotGroupByConnection](K8sNamespace.md)
 - [M365BackupStorageGroup.snapshotGroupByConnection](M365BackupStorageGroup.md)
 - [M365BackupStorageMailbox.snapshotGroupByConnection](M365BackupStorageMailbox.md)
@@ -41,8 +45,4 @@ Paginated list of PolarisSnapshotGroupBy objects. Each page of the results inclu
 - MicrosoftOnedrive.snapshotGroupByConnection
 - MicrosoftOrg.snapshotGroupByConnection
 - MicrosoftSite.snapshotGroupByConnection
-- [O365Calendar.snapshotGroupByConnection](O365Calendar.md)
-- [O365Group.snapshotGroupByConnection](O365Group.md)
-- [O365Mailbox.snapshotGroupByConnection](O365Mailbox.md)
-- [O365Onedrive.snapshotGroupByConnection](O365Onedrive.md)
-- *…and 7 more*
+- *…and 11 more*

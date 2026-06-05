@@ -26,6 +26,7 @@ A NAS System.
         isChangelistEnabled
         isNetAppMetroClusterEnabled
         isNfsSupported
+        isNutanixCftEnabled
         isRelic
         isSmbSupported
         isUserSuppliedSmbCredentials
@@ -33,6 +34,7 @@ A NAS System.
         lastStatus
         name
         namespaceCount
+        nfsPseudoFsPrefix
         numWorkloadDescendants
         objectType
         osVersion

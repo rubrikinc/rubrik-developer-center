@@ -55,6 +55,7 @@ All reporting table schemas.
 | QAUTH_ROLES | Specifies the database schema for QAuth roles. |
 | ROLE_LIST | Specifies the roles information. |
 | SERVICE_ACCOUNT | Specifies the database schema for service account. |
+| SIGNIN_LOGS | Specifies the sign-in logs report information. |
 | SLA_AUDIT_DETAIL *(deprecated: Use SLA_AUDIT_DETAIL_NG instead.)* | The DataView, which queries Audits DB table, lists all SLA audits for the single SLA in the NG Alpha report framework. |
 | SLA_AUDIT_DETAIL_NG | Specifies all audit information for the single SLA Domain. |
 | SLA_AUDIT_LIST *(deprecated: Use SLA_AUDIT_LIST_NG instead.)* | The DataView, which queries Audits DB table, lists the latest SLA audits for each SLA in the NG Alpha report framework. |

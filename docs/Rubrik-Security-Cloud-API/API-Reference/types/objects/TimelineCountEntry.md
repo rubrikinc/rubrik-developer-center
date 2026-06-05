@@ -6,7 +6,7 @@ Capture workload counts for each day.
 
 | Field | Type | Description |
 |-------|------|-------------|
-| count | Int! | Count of workloads. |
+| count | [Long](../scalars/Long.md)! | Count of workloads. |
 | day | String! | The day, in ISO format: YYYY-MM-DD. |
 
 ## Used By

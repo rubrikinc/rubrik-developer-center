@@ -19,6 +19,7 @@ Paginated list of MissedSnapshotCommon objects. Each page of the results include
 - CdmHierarchySnappableNew.missedSnapshotConnection
 - [Db2Database.missedSnapshotConnection](Db2Database.md)
 - [ExchangeDatabase.missedSnapshotConnection](ExchangeDatabase.md)
+- [FusionComputeVirtualMachine.missedSnapshotConnection](FusionComputeVirtualMachine.md)
 - [HyperVVirtualMachine.missedSnapshotConnection](HyperVVirtualMachine.md)
 - KosmosSnappableHierarchyObjectType.missedSnapshotConnection
 - [KubernetesProtectionSet.missedSnapshotConnection](KubernetesProtectionSet.md)

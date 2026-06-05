@@ -30,6 +30,7 @@ Update previewer cluster configuration.
         estimatedRunway
         id
         isAirGapped
+        isAssignedByParentAccount
         isClusterRemovalTprEnabled
         isHealthy
         isTprEnabled

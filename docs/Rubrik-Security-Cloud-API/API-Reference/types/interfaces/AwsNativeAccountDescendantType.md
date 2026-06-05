@@ -38,9 +38,13 @@
 
 ## Implemented By
 
+- [AwsNativeConfig](../objects/AwsNativeConfig.md)
 - [AwsNativeDynamoDbTable](../objects/AwsNativeDynamoDbTable.md)
 - [AwsNativeEbsVolume](../objects/AwsNativeEbsVolume.md)
 - [AwsNativeEc2Instance](../objects/AwsNativeEc2Instance.md)
 - [AwsNativeRdsInstance](../objects/AwsNativeRdsInstance.md)
 - [AwsNativeRegionHierarchyObject](../objects/AwsNativeRegionHierarchyObject.md)
 - [AwsNativeS3Bucket](../objects/AwsNativeS3Bucket.md)
+- [GlueIcebergCatalog](../objects/GlueIcebergCatalog.md)
+- [GlueIcebergDatabase](../objects/GlueIcebergDatabase.md)
+- [GlueIcebergTable](../objects/GlueIcebergTable.md)

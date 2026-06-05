@@ -1,6 +1,6 @@
 # ActivityEntry
 
-This struct represents an activity.
+This struct represents an activity.  IMPORTANT: When adding new fields here, consider whether they should also appear in webhook payloads. If so, update IdentityActivityWebhookMessage in activityauditor/proto/identity_activity_webhook_message.proto as well.
 
 ## Fields
 
@@ -10,6 +10,7 @@ This struct represents an activity.
 | activityProvider | [EventProvider](../enums/EventProvider.md)! | The provider of the activity. |
 | activityType | [LambdaEventType](../enums/LambdaEventType.md)! | The type of activity. |
 | actorEntity | [ActivityAuditorEntity](ActivityAuditorEntity.md) | The entity that performed the action (e.g., the user who made a change). |
+| actorIpAddress | String! | The IP address of the actor who initiated the event (IPv4 or IPv6). Empty for events without IP information. |
 | actorState | [ActorIdentificationState](../enums/ActorIdentificationState.md)! | The identification state of the actor. |
 | additionalTargetEntities | [[ActivityAuditorEntity](ActivityAuditorEntity.md)!]! | Additional entities involved in the activity. For example, when a user is added to a group, the group is an additional target. |
 | category | [ActivityCategory](../enums/ActivityCategory.md)! | The category of the activity. |

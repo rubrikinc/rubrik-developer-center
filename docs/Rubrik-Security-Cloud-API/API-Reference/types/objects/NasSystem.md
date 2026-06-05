@@ -24,6 +24,7 @@ Instance of a registered NAS system.
 | isChangelistEnabled | Boolean! | Specifies whether the Changelist option is enabled. |
 | isNetAppMetroClusterEnabled | Boolean! |  |
 | isNfsSupported | Boolean! | Specifies whether NFS is supported by the NAS System. |
+| isNutanixCftEnabled | Boolean | Specifies whether Nutanix Files Changed File Tracking (CFT) is enabled. |
 | isRelic | Boolean! | Specifies whether this object is a relic. |
 | isSmbSupported | Boolean! | Specifies whether SMB is supported by the NAS System. |
 | isUserSuppliedSmbCredentials | Boolean! | Specifies whether SMB credentials are manually provided by the user. |
@@ -35,6 +36,7 @@ Instance of a registered NAS system.
 | name | String! | Name of the hierarchy object. |
 | namespaceCount | Int! | The total number of namespaces in this NAS system. |
 | netAppMetroClusterInfo | [NasSystemNetAppMetroClusterInfo](NasSystemNetAppMetroClusterInfo.md) | Optional NetApp Metro Cluster info for the NAS system. |
+| nfsPseudoFsPrefix | String | NFSv4 pseudo-filesystem prefix removed from mountd export paths to derive NFSv4-accessible paths during NFS share discovery and mount-time path reconstruction. Only applicable to Generic NAS systems. |
 | numWorkloadDescendants | Int! | Number of descendant workloads of this object. |
 | objectPauseStatus | [ObjectPauseStatus](ObjectPauseStatus.md) | Pause status of the hierarchy object. |
 | objectType | [HierarchyObjectTypeEnum](../enums/HierarchyObjectTypeEnum.md)! | Type of this object. |

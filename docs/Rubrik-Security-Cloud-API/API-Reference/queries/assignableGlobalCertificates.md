@@ -42,6 +42,8 @@ Global certificates that can be assigned to an organization.
           issuedOn
           issuedTo
           issuerType
+          keyStrength
+          keyType
           name
           serialNumber
           sha1Fingerprint

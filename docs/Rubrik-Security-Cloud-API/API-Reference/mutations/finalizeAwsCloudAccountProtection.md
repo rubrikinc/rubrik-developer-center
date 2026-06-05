@@ -19,6 +19,7 @@ Process cloud account. This is the second step after validate and create in addi
     ```graphql
     mutation FinalizeAwsCloudAccountProtection($input: FinalizeAwsCloudAccountProtectionInput!) {
       finalizeAwsCloudAccountProtection(input: $input) {
+        crossAccountRoleModel
         message
       }
     }
@@ -43,15 +44,16 @@ Process cloud account. This is the second step after validate and create in addi
     {
       "data": {
         "finalizeAwsCloudAccountProtection": {
+          "crossAccountRoleModel": "CROSS_ACCOUNT_ROLE_MODEL_UNSPECIFIED",
           "message": "example-string",
           "awsChildAccounts": [
             {
               "accountName": "example-string",
               "cloudType": "C2S",
+              "crossAccountRoleModel": "CROSS_ACCOUNT_ROLE_MODEL_UNSPECIFIED",
               "id": "example-string",
               "message": "example-string",
-              "nativeId": "example-string",
-              "orgId": "example-string"
+              "nativeId": "example-string"
             }
           ]
         }

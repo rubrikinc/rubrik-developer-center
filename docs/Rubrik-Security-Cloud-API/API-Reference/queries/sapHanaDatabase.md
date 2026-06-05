@@ -35,6 +35,7 @@ Details of a SAP HANA database for a given FID.
         onDemandSnapshotCount
         primaryClusterUuid
         protectionDate
+        rbaRole
         replicatedObjectCount
         slaAssignment
         slaPauseStatus

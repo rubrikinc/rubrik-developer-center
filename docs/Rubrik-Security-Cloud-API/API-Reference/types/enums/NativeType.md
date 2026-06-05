@@ -33,10 +33,13 @@ Native type of principal.
 | AD_LICENSING_SITE_SETTINGS | Active Directory Licensing Site Settings. |
 | AD_MSDS_QUOTA_CONTAINER | Active Directory Msds Quota Container. |
 | AD_MSDS_QUOTA_CONTROL | Active Directory Msds Quota Control. |
+| AD_MSKDS_PROV_ROOT_KEY | Active Directory MS Key Distribution Service provisioned root key. |
 | AD_NTDS_SITE_SETTINGS | Active Directory NTDS Site Settings. |
+| AD_NTFRS_SUBSCRIBER | Active Directory NTFRS Subscriber (File Replication Service). |
 | AD_OU | Active Directory OU. |
 | AD_PASSWORD_SETTINGS | Active Directory Password Settings. |
 | AD_PASSWORD_SETTINGS_CONTAINER | Active Directory Password Settings Container. |
+| AD_PKI_ENROLLMENT_SERVICE | Active Directory PKI Enrollment Service (AD CS CA). |
 | AD_PRINT_QUEUE | Active Directory Printer. |
 | AD_QUERY_POLICY | Active Directory Query Policy. |
 | AD_RID_MANAGER | Active Directory RID Manager. |

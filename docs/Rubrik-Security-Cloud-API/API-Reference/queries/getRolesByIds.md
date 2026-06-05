@@ -1,12 +1,12 @@
 # getRolesByIds
 
-*No description available.*
+Get roles by IDs.
 
 ## Arguments
 
 | Argument | Type | Description |
 |----------|------|-------------|
-| roleIds *(required)* | [String!]! |  |
+| roleIds *(required)* | [String!]! | List of role IDs to retrieve. |
 | syncedClustersFilter | String | Name to filter the synced clusters for role. |
 
 ## Returns

@@ -15,6 +15,8 @@ Certificate Signing Request (CSR) information.
 | csrId | [Long](../scalars/Long.md)! | ID of the Certificate Signing Request. |
 | email | String! | Email of the Certificate Signing Request. |
 | hostnames | [String!]! | Hostnames for the Certificate Signing Request. |
+| keyStrength | String! | The key strength used to generate this CSR (e.g., "3072", "secp384r1"). |
+| keyType | String! | The key type used to generate this CSR (e.g., "rsa", "ec"). |
 | name | String! | Name of the Certificate Signing Request. |
 | organization | String! | Organization of the Certificate Signing Request. |
 | organizationUnit | String! | Organizational Unit of the Certificate Signing Request. |

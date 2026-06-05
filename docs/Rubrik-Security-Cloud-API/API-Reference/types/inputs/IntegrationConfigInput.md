@@ -14,3 +14,4 @@ Holds the configuration of a single integration. Note that IntegrationConfig can
 | okta | [OktaIntegrationConfigInput](OktaIntegrationConfigInput.md) | The OKTA configuration. |
 | pam | [PamIntegrationConfigInput](PamIntegrationConfigInput.md) | The PAM configuration. |
 | serviceNowItsm | [ServiceNowItsmIntegrationConfigInput](ServiceNowItsmIntegrationConfigInput.md) | The ServiceNow ITSM configuration. |
+| splunk | [SplunkIntegrationConfigInput](SplunkIntegrationConfigInput.md) | The Splunk configuration. |

@@ -13,7 +13,9 @@ Filters for querying sign-in logs.
 | displayNameSearchTerm | String | Free-text search term for filtering by actor display name. |
 | displayNames | [String!] | Filter by display names. |
 | errorCodes | [String!] | Filter by error codes. |
+| eventIds | [String!] | Filter by event IDs (unique sign-in event identifiers). |
 | eventTypes | [String!] | Filter by event type (varies by provider). |
+| failureCategories | [[SigninLogFailureCategory](../enums/SigninLogFailureCategory.md)!] | Filter by normalized failure category. |
 | ipAddresses | [String!] | Filter by IP addresses. |
 | locations | [String!] | Filter by locations (city + country code, e.g. "New York, US"). |
 | logonTypes | [String!] | Filter by logon type descriptions. |

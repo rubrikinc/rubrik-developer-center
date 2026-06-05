@@ -1,6 +1,6 @@
 # AceFlags
 
-*No description available.*
+Flags that modify how an ACE (Access Control Entry) is applied.
 
 ## Values
 

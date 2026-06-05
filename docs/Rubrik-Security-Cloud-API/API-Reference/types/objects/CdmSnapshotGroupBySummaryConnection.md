@@ -19,6 +19,7 @@ Paginated list of CdmSnapshotGroupBySummary objects. Each page of the results in
 - CdmHierarchySnappableNew.snapshotGroupBySummary
 - [Db2Database.snapshotGroupBySummary](Db2Database.md)
 - [ExchangeDatabase.snapshotGroupBySummary](ExchangeDatabase.md)
+- [FusionComputeVirtualMachine.snapshotGroupBySummary](FusionComputeVirtualMachine.md)
 - [HyperVVirtualMachine.snapshotGroupBySummary](HyperVVirtualMachine.md)
 - KosmosSnappableHierarchyObjectType.snapshotGroupBySummary
 - [KubernetesProtectionSet.snapshotGroupBySummary](KubernetesProtectionSet.md)

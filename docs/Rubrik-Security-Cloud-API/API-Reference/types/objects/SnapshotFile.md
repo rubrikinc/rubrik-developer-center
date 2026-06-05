@@ -10,7 +10,7 @@ File or folder data returned by browse or search delta response.
 | displayPath | String! |  |
 | fileMode | [FileModeEnum](../enums/FileModeEnum.md)! |  |
 | filename | String! |  |
-| lastModified | [DateTime](../scalars/DateTime.md)! |  |
+| lastModified | [DateTime](../scalars/DateTime.md) | Last modified timestamp. Null when modification time is not available for the entry like directories in S3/Blob. |
 | path | String! |  |
 | quarantineInfo | [QuarantineInfo](QuarantineInfo.md) | Quarantine information corresponding to the path. |
 | size | [Long](../scalars/Long.md)! |  |

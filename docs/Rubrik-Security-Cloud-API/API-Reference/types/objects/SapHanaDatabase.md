@@ -49,6 +49,7 @@ SAP HANA Database details object.
 | primaryClusterLocation | [DataLocation](DataLocation.md)! | The source cluster of this object. Returned as a data location because there is no guarantee that Rubrik has knowledge about the source cluster. |
 | primaryClusterUuid | [UUID](../scalars/UUID.md)! | UUID of the primary cluster. |
 | protectionDate | [DateTime](../scalars/DateTime.md) | Date of protection of SAP HANA Database. |
+| rbaRole | String! | The role of this SAP HANA database in a multi-cluster Rubrik Backup Agent configuration. |
 | recoverableRangeConnection | [SapHanaRecoverableRangeConnection](SapHanaRecoverableRangeConnection.md)! | Recoverable ranges for given SAP HANA database. |
 | replicatedObjectCount | Int! | The number of objects either replicated by this object or related to this object by replication. |
 | replicatedObjects | [[CdmHierarchyObject](../interfaces/CdmHierarchyObject.md)!]! | Objects either replicated by this object or related to this object by replication. |

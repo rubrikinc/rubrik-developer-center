@@ -1,13 +1,13 @@
 # ExistingUser
 
-Details of an existing user.
+Details of the existing user.
 
 ## Fields
 
 | Field | Type | Description |
 |-------|------|-------------|
 | id | String! | ID of the user. |
-| isOrgAdmin | Boolean! | Specifies whether the user is an org admin. |
+| isOrgAdmin | Boolean! | Specifies whether the user should be an org admin or not. |
 | user | [User](User.md)! | Specifies user details. |
 
 ## Used By

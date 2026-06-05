@@ -26,7 +26,6 @@ Update a custom analyzer.
         excludePathPattern
         id
         isInactive
-        jsValidationFunction
         keyRegex
         name
         proximityDistance

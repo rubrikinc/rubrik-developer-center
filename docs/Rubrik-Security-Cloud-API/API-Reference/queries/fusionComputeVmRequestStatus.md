@@ -35,6 +35,7 @@ Get asynchronous request details for FusionCompute requests  Supported in v9.6 G
     ```json
     {
       "input": {
+        "clusterUuid": "00000000-0000-0000-0000-000000000000",
         "id": "00000000-0000-0000-0000-000000000000"
       }
     }

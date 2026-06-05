@@ -6,13 +6,13 @@ Synced cluster information for RSC permissions.
 
 | Argument | Type | Description |
 |----------|------|-------------|
+| roleId | String | ID of the role. |
+| protectableClusters *(required)* | [String!]! | List of protectable clusters. |
+| permissions *(required)* | [[PermissionInput](../types/inputs/PermissionInput.md)!]! | Permissions in the role. |
 | first | Int | Returns the first n elements from the list. |
 | after | String | Returns the elements in the list that occur after the specified cursor. |
 | last | Int | Returns the last n elements from the list. |
 | before | String | Returns the elements in the list that occur before the specified cursor. |
-| permissions *(required)* | [[PermissionInput](../types/inputs/PermissionInput.md)!]! | Permissions in the role. |
-| roleId | String | ID of the role. |
-| protectableClusters *(required)* | [String!]! | List of protectable clusters. |
 
 ## Returns
 
@@ -23,10 +23,10 @@ Synced cluster information for RSC permissions.
 === "Query"
 
     ```graphql
-    query RscPermsToCdmInfo($permissions: [PermissionInput!]!, $protectableClusters: [String!]!) {
+    query RscPermsToCdmInfo($protectableClusters: [String!]!, $permissions: [PermissionInput!]!) {
       rscPermsToCdmInfo(
-        permissions: $permissions
         protectableClusters: $protectableClusters
+        permissions: $permissions
       ) {
         totalDisconnectedClusters
       }
@@ -37,6 +37,9 @@ Synced cluster information for RSC permissions.
 
     ```json
     {
+      "protectableClusters": [
+        "example-string"
+      ],
       "permissions": [
         {
           "objectsForHierarchyTypes": [
@@ -49,9 +52,6 @@ Synced cluster information for RSC permissions.
           ],
           "operation": "ACCESS_CDM_CLUSTER"
         }
-      ],
-      "protectableClusters": [
-        "example-string"
       ]
     }
     ```

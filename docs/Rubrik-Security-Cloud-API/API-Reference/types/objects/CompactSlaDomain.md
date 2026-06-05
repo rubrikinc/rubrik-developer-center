@@ -17,6 +17,7 @@ SLA Domain name and ID.
 - [AwsNativeAccount.rscNativeObjectPendingSla](AwsNativeAccount.md)
 - AwsNativeAccountDescendantType.rscNativeObjectPendingSla
 - AwsNativeAccountLogicalChildType.rscNativeObjectPendingSla
+- [AwsNativeConfig.rscNativeObjectPendingSla](AwsNativeConfig.md)
 - [AwsNativeDynamoDbTable.rscNativeObjectPendingSla](AwsNativeDynamoDbTable.md)
 - [AwsNativeEbsVolume.rscNativeObjectPendingSla](AwsNativeEbsVolume.md)
 - [AwsNativeEc2Instance.rscNativeObjectPendingSla](AwsNativeEc2Instance.md)
@@ -24,12 +25,16 @@ SLA Domain name and ID.
 - [AwsNativeRegionHierarchyObject.rscNativeObjectPendingSla](AwsNativeRegionHierarchyObject.md)
 - [AwsNativeS3Bucket.rscNativeObjectPendingSla](AwsNativeS3Bucket.md)
 - [AzureAdDirectory.rscNativeObjectPendingSla](AzureAdDirectory.md)
+- [AzureDevOpsOrganization.rscNativeObjectPendingSla](AzureDevOpsOrganization.md)
+- [AzureDevOpsProject.rscNativeObjectPendingSla](AzureDevOpsProject.md)
+- [AzureDevOpsRepository.rscNativeObjectPendingSla](AzureDevOpsRepository.md)
 - [AzureNativeManagedDisk.rscNativeObjectPendingSla](AzureNativeManagedDisk.md)
 - [AzureNativeRegionManagedObject.rscNativeObjectPendingSla](AzureNativeRegionManagedObject.md)
 - [AzureNativeResourceGroup.rscNativeObjectPendingSla](AzureNativeResourceGroup.md)
 - [AzureNativeResourceGroupSlaAssignment.rscNativeObjectPendingSla](AzureNativeResourceGroupSlaAssignment.md)
 - [AzureNativeSubscription.rscNativeObjectPendingSla](AzureNativeSubscription.md)
 - [AzureNativeVirtualMachine.rscNativeObjectPendingSla](AzureNativeVirtualMachine.md)
+- [AzurePostgresFlexibleServer.rscNativeObjectPendingSla](AzurePostgresFlexibleServer.md)
 - [AzureSqlDatabaseDb.rscNativeObjectPendingSla](AzureSqlDatabaseDb.md)
 - [AzureSqlDatabaseServer.rscNativeObjectPendingSla](AzureSqlDatabaseServer.md)
 - [AzureSqlManagedInstanceDatabase.rscNativeObjectPendingSla](AzureSqlManagedInstanceDatabase.md)
@@ -38,9 +43,4 @@ SLA Domain name and ID.
 - [CassandraColumnFamily.rscNativeObjectPendingSla](CassandraColumnFamily.md)
 - [CassandraKeyspace.rscNativeObjectPendingSla](CassandraKeyspace.md)
 - CassandraKeyspaceDescendantType.rscNativeObjectPendingSla
-- CassandraKeyspacePhysicalChildType.rscNativeObjectPendingSla
-- [CassandraSource.rscNativeObjectPendingSla](CassandraSource.md)
-- CassandraSourceDescendantType.rscNativeObjectPendingSla
-- CassandraSourcePhysicalChildType.rscNativeObjectPendingSla
-- [CloudNativeTagRule.rscNativeObjectPendingSla](CloudNativeTagRule.md)
-- *…and 40 more*
+- *…and 50 more*

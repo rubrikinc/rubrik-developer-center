@@ -14,6 +14,7 @@ User audit object type.
 | AWS_NATIVE_DYNAMODB_TABLE | AWS native DynamoDB table. |
 | AWS_NATIVE_S3_BUCKET | AWS native S3 bucket. |
 | AZURE_AD_DIRECTORY | Azure AD Directory type. |
+| AZURE_POSTGRES_FLEXIBLE_SERVER | Azure PostgreSQL Flexible Server. |
 | AZURE_STORAGE_ACCOUNT | Azure storage account. |
 | AppBlueprint | App blueprint type. |
 | ArchivalLocation | Archival location type. |
@@ -59,6 +60,7 @@ User audit object type.
 | FUSION_COMPUTE_VIRTUAL_MACHINE | FusionCompute virtual machine. |
 | FUSION_COMPUTE_VRM | FusionCompute VRM (Virtual Resource Manager). |
 | FailoverClusterApp | Failover cluster app type. |
+| FailoverGroup | Failover Group (HA Policy) type. |
 | FederatedAccess | Federated access type. |
 | GCP_CLOUD_SQL_INSTANCE | GCP Cloud SQL Instance type. |
 | GOOGLE_WORKSPACE_USER_MAILBOX | Google Workspace User Mailbox. |

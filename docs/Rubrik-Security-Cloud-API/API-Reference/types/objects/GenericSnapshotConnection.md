@@ -20,12 +20,14 @@ Paginated list of GenericSnapshot objects with additional pagination information
 
 **Referenced by**
 
+- [AwsNativeConfig.workloadSnapshotConnection](AwsNativeConfig.md)
 - [AwsNativeDynamoDbTable.workloadSnapshotConnection](AwsNativeDynamoDbTable.md)
 - [AwsNativeEbsVolume.workloadSnapshotConnection](AwsNativeEbsVolume.md)
 - [AwsNativeEc2Instance.workloadSnapshotConnection](AwsNativeEc2Instance.md)
 - [AwsNativeRdsInstance.workloadSnapshotConnection](AwsNativeRdsInstance.md)
 - [AwsNativeS3Bucket.workloadSnapshotConnection](AwsNativeS3Bucket.md)
 - [AzureAdDirectory.workloadSnapshotConnection](AzureAdDirectory.md)
+- [AzureDevOpsRepository.workloadSnapshotConnection](AzureDevOpsRepository.md)
 - [AzureNativeManagedDisk.workloadSnapshotConnection](AzureNativeManagedDisk.md)
 - [AzureNativeVirtualMachine.workloadSnapshotConnection](AzureNativeVirtualMachine.md)
 - [AzureSqlDatabaseDb.workloadSnapshotConnection](AzureSqlDatabaseDb.md)
@@ -35,6 +37,8 @@ Paginated list of GenericSnapshot objects with additional pagination information
 - [GcpCloudSqlInstance.workloadSnapshotConnection](GcpCloudSqlInstance.md)
 - [GcpNativeDisk.workloadSnapshotConnection](GcpNativeDisk.md)
 - [GcpNativeGceInstance.workloadSnapshotConnection](GcpNativeGceInstance.md)
+- [GithubRepository.workloadSnapshotConnection](GithubRepository.md)
+- [GlueIcebergTable.workloadSnapshotConnection](GlueIcebergTable.md)
 - [K8sNamespace.workloadSnapshotConnection](K8sNamespace.md)
 - [M365BackupStorageGroup.workloadSnapshotConnection](M365BackupStorageGroup.md)
 - [M365BackupStorageMailbox.workloadSnapshotConnection](M365BackupStorageMailbox.md)
@@ -46,8 +50,4 @@ Paginated list of GenericSnapshot objects with additional pagination information
 - MicrosoftOnedrive.workloadSnapshotConnection
 - MicrosoftOrg.workloadSnapshotConnection
 - MicrosoftSite.workloadSnapshotConnection
-- [O365Calendar.workloadSnapshotConnection](O365Calendar.md)
-- [O365Group.workloadSnapshotConnection](O365Group.md)
-- [O365Mailbox.workloadSnapshotConnection](O365Mailbox.md)
-- [O365Onedrive.workloadSnapshotConnection](O365Onedrive.md)
-- *…and 7 more*
+- *…and 11 more*

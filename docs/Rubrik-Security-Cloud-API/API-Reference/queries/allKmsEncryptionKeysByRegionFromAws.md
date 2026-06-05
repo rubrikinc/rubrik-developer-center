@@ -8,6 +8,7 @@ List of encryption keys in the specified region on the specified AWS Native acco
 |----------|------|-------------|
 | awsAccountRubrikId *(required)* | [UUID](../types/scalars/UUID.md)! | Rubrik ID for AWS account. |
 | region *(required)* | [AwsNativeRegion](../types/enums/AwsNativeRegion.md)! | Region in AWS. |
+| feature | [CloudAccountFeature](../types/enums/CloudAccountFeature.md) | Cloud account feature to filter encryption keys for accounts that support per-feature IAM roles. |
 
 ## Returns
 

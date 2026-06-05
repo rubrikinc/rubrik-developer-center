@@ -25,7 +25,9 @@ NAS Cloud Direct share.
 | effectiveSlaSourceObject | [PathNode](PathNode.md) | Path node of the effective SLA Domain source. |
 | excludes | [[Exclude](Exclude.md)!]! | List of exclusions for the NAS share. |
 | exportPath | String! | NAS Cloud Direct Share path. |
+| fullSnapshotNamePattern | String | Regex pattern for matching full snapshot names. |
 | id | [UUID](../scalars/UUID.md)! | Share ID. |
+| incrementalSnapshotNamePattern | String | Regex pattern for matching incremental snapshot names. |
 | isArchived | Boolean! | Specifies whether the share is archived. |
 | isHidden | Boolean! | Specifies whether the share is hidden. |
 | isNasShareManuallyAdded | Boolean! | Specifies whether the share was added manually by the user. |

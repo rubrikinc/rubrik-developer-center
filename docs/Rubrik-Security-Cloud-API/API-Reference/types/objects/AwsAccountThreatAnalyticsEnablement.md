@@ -10,6 +10,7 @@ AWS accounts on which Threat Monitoring can be enabled.
 | dataThreatAnalyticsEnabled | Boolean! | Indicates whether Data Threat Analytics is enabled. |
 | id | String! | AWS account ID. |
 | isHealthy | Boolean! | Indicates whether the AWS account is healthy. |
+| shouldScanAllFiles | Boolean! | When true, threat monitoring scans all files regardless of extension. |
 | threatMonitoringEnabled | Boolean! | Indicates whether Threat Monitoring is enabled. |
 
 ## Used By

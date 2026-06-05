@@ -30,7 +30,7 @@ Create cloud native label rule
     {
       "input": {
         "labelRuleName": "example-string",
-        "objectType": "GCP_CLOUD_SQL_INSTANCE"
+        "objectType": "GCP_BIGQUERY_DATASET"
       }
     }
     ```

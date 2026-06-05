@@ -60,10 +60,10 @@ List of all AWS exocompute configurations filtered by a cloud account ID or a cl
             "awsCloudAccount": {
               "accountName": "example-string",
               "cloudType": "C2S",
+              "crossAccountRoleModel": "CROSS_ACCOUNT_ROLE_MODEL_UNSPECIFIED",
               "id": "example-string",
               "message": "example-string",
-              "nativeId": "example-string",
-              "orgId": "example-string"
+              "nativeId": "example-string"
             },
             "configs": [
               {

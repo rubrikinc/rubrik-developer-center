@@ -25,6 +25,7 @@ Represents security metadata of a workload.
 - [AwsNativeAccount.securityMetadata](AwsNativeAccount.md)
 - AwsNativeAccountDescendantType.securityMetadata
 - AwsNativeAccountLogicalChildType.securityMetadata
+- [AwsNativeConfig.securityMetadata](AwsNativeConfig.md)
 - [AwsNativeDynamoDbTable.securityMetadata](AwsNativeDynamoDbTable.md)
 - [AwsNativeEbsVolume.securityMetadata](AwsNativeEbsVolume.md)
 - [AwsNativeEc2Instance.securityMetadata](AwsNativeEc2Instance.md)
@@ -33,18 +34,17 @@ Represents security metadata of a workload.
 - [AwsNativeRegionHierarchyObject.securityMetadata](AwsNativeRegionHierarchyObject.md)
 - [AwsNativeS3Bucket.securityMetadata](AwsNativeS3Bucket.md)
 - [AzureAdDirectory.securityMetadata](AzureAdDirectory.md)
+- [AzureDevOpsOrganization.securityMetadata](AzureDevOpsOrganization.md)
+- [AzureDevOpsProject.securityMetadata](AzureDevOpsProject.md)
+- [AzureDevOpsRepository.securityMetadata](AzureDevOpsRepository.md)
 - AzureNativeHierarchyObjectType.securityMetadata
 - [AzureNativeManagedDisk.securityMetadata](AzureNativeManagedDisk.md)
 - [AzureNativeRegionManagedObject.securityMetadata](AzureNativeRegionManagedObject.md)
 - [AzureNativeResourceGroup.securityMetadata](AzureNativeResourceGroup.md)
 - [AzureNativeSubscription.securityMetadata](AzureNativeSubscription.md)
 - [AzureNativeVirtualMachine.securityMetadata](AzureNativeVirtualMachine.md)
+- [AzurePostgresFlexibleServer.securityMetadata](AzurePostgresFlexibleServer.md)
 - [AzureSqlDatabaseDb.securityMetadata](AzureSqlDatabaseDb.md)
 - [AzureSqlDatabaseServer.securityMetadata](AzureSqlDatabaseServer.md)
 - [AzureSqlManagedInstanceDatabase.securityMetadata](AzureSqlManagedInstanceDatabase.md)
-- [AzureSqlManagedInstanceServer.securityMetadata](AzureSqlManagedInstanceServer.md)
-- [AzureStorageAccount.securityMetadata](AzureStorageAccount.md)
-- [CassandraColumnFamily.securityMetadata](CassandraColumnFamily.md)
-- [CassandraKeyspace.securityMetadata](CassandraKeyspace.md)
-- CassandraKeyspaceDescendantType.securityMetadata
-- *…and 250 more*
+- *…and 275 more*

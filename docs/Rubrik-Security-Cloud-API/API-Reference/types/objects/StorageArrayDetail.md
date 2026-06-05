@@ -11,6 +11,8 @@ Supported in v5.0+
 | connectionStatus | [RefreshableObjectConnectionStatus](RefreshableObjectConnectionStatus.md) | Supported in v5.0+ Connection status of a Storage Array. |
 | hostname | String! | Required. Supported in v5.0+ Resolvable hostname or IPv4 address of the storage array. |
 | id | String! | Required. Supported in v5.0+ |
+| isSnapshotOffloadingEnabled | Boolean | Supported in v9.6 Whether Array Integration (Snapshot Offloading) features are enabled for this storage array. Optional for backward compatibility - older clusters omit this field. |
+| isVolumeProtectionEnabled | Boolean | Supported in v9.6 Whether Volume Protection features are enabled for this storage array. Optional for backward compatibility - older clusters omit this field. |
 | username | String! | Required. Supported in v5.0+ |
 
 ## Used By

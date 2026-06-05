@@ -16,6 +16,7 @@ Specific information for Google Cloud Platform (GCP) target created on Rubrik.
 | cnpSpecificFields | [GcpCloudNativeTarget](GcpCloudNativeTarget.md) | CNP specific fields for the GCP target location.. |
 | connectionStatus | [ConnectionStatusType](../enums/ConnectionStatusType.md)! | Connection status of the GCP target. |
 | consumedBytes | [Long](../scalars/Long.md) | Number of bytes stored on the target. |
+| encryptionType | [TargetEncryptionTypeEnum](../enums/TargetEncryptionTypeEnum.md)! | Encryption type to be used for the GCP target. |
 | failedTasks | Int | Number of archiving tasks failed on this target. |
 | id | String! | The ID of the target. |
 | immutabilitySettings | [GcpImmutabilitySettings](GcpImmutabilitySettings.md) | Immutability settings of the GCP archival target. |

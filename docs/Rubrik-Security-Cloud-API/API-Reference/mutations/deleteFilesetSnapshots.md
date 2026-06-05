@@ -1,6 +1,6 @@
 # deleteFilesetSnapshots
 
-*No description available.*
+Delete all snapshots of a fileset  Supported in v5.0+ Delete all snapshots that were created based on a fileset by providing the fileset ID. Requires an unprotected fileset. Remove the fileset from all SLA Domains.
 
 ## Arguments
 

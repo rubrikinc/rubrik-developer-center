@@ -13,6 +13,7 @@ An Azure Native Resource Group. Refers to a collection of resources in which mul
 | authorizedOperations | [[PolarisObjectAuthorizedOperationsEnum](../enums/PolarisObjectAuthorizedOperationsEnum.md)!]! | The authorized operations on the object. |
 | azureNativeSubscriptionDetails | [AzureNativeSubscriptionDetails](AzureNativeSubscriptionDetails.md) | Subscription details of the resource group. |
 | azureNativeVirtualMachines | [AzureNativeVirtualMachineConnection](AzureNativeVirtualMachineConnection.md)! | Paginated ist of Azure Virtual Machines (VMs) in the Resource Group. |
+| azurePostgresFlexibleServerCount | Int! | The number of Azure PostgreSQL Flexible Servers in the resource group. |
 | azureSqlDatabaseCount | Int! | Count of Azure SQL databases in the Resource Group. |
 | azureSqlManagedInstanceDbCount | Int! | Count of Azure SQL Managed Instance databases in the Resource Group. |
 | azureStorageAccountCount | Int! | The number of Azure storage accounts in the resource group. |
@@ -81,6 +82,7 @@ An Azure Native Resource Group. Refers to a collection of resources in which mul
 - [AzureNativeManagedDisk.resourceGroup](AzureNativeManagedDisk.md)
 - [AzureNativeVirtualMachine.azureResourceGroup](AzureNativeVirtualMachine.md)
 - [AzureNativeVirtualMachine.resourceGroup](AzureNativeVirtualMachine.md)
+- [AzurePostgresFlexibleServer.azureNativeResourceGroup](AzurePostgresFlexibleServer.md)
 - [AzureSqlDatabaseServer.azureNativeResourceGroup](AzureSqlDatabaseServer.md)
 - [AzureSqlDatabaseServer.azureResourceGroup](AzureSqlDatabaseServer.md)
 - [AzureSqlManagedInstanceServer.azureNativeResourceGroup](AzureSqlManagedInstanceServer.md)

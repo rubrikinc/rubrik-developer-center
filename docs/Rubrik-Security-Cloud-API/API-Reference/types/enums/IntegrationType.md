@@ -15,3 +15,4 @@ Specifies the type of an integration. Note that the values are stored in a datab
 | OKTA | Represents a OKTA ITP integration. |
 | PRIVILEGED_ACCESS_MANAGEMENT | Represents a PAM integration. |
 | SERVICENOW_ITSM | Represents a ServiceNow ITSM integration. |
+| SPLUNK | Represents a Splunk integration. |

@@ -24,6 +24,7 @@ Entra ID object.
 | azureAdEmIncompatibilities | [AzureAdEmIncompatibilities](AzureAdEmIncompatibilities.md) | Entitlement Management incompatible object. |
 | azureAdEmResourceRoleScope | [AzureAdEmResourceRoleScope](AzureAdEmResourceRoleScope.md) | Entitlement Management resource role scope object. |
 | azureAdGroup | [AzureAdGroup](AzureAdGroup.md) | Entra ID group object. |
+| azureAdGroupActiveAssignment | [AzureAdGroupActiveAssignment](AzureAdGroupActiveAssignment.md) | PIM group active assignment object. |
 | azureAdGroupEligibleAssignment | [AzureAdGroupEligibleAssignment](AzureAdGroupEligibleAssignment.md) | PIM group-eligible assignment object. |
 | azureAdLocalAdminPassword | [AzureAdLocalAdminPassword](AzureAdLocalAdminPassword.md) | Entra ID local administrator password object. |
 | azureAdNamedLocation | [AzureAdNamedLocation](AzureAdNamedLocation.md) | Entra ID named location object. |

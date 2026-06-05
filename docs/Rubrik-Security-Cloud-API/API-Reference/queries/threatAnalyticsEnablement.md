@@ -34,6 +34,7 @@ Retrieves the enablement status of cloud-native accounts for Data Threat Analyti
               "id": "example-string",
               "isHealthy": true,
               "name": "example-string",
+              "shouldScanAllFiles": true,
               "threatMonitoringEnabled": true
             }
           ],
@@ -43,6 +44,7 @@ Retrieves the enablement status of cloud-native accounts for Data Threat Analyti
               "dataThreatAnalyticsEnabled": true,
               "id": "example-string",
               "isHealthy": true,
+              "shouldScanAllFiles": true,
               "threatMonitoringEnabled": true
             }
           ]

@@ -28,6 +28,7 @@ NAS share instance of a registered NAS system.
 | isChangelistEnabled | Boolean! | Specifies whether the Changelist option is enabled. |
 | isHidden | Boolean! | Specifies if the share is hidden. |
 | isNasShareManuallyAdded | Boolean! | Specifies whether the NAS shares are manually configured on the NAS system. |
+| isNutanixCftEnabled | Boolean | Specifies whether Nutanix Files Changed File Tracking (CFT) is enabled. |
 | isRelic | Boolean! | Specifies whether this object is a relic. |
 | isStale | Boolean! | Specifies if the share is deleted on the NAS System. |
 | latestUserNote | [LatestUserNote](LatestUserNote.md) | Latest user note information. |

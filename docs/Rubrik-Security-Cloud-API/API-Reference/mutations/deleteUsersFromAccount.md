@@ -1,6 +1,6 @@
 # deleteUsersFromAccount
 
-*No description available.*
+Deletes specified users from the account.
 
 ## Arguments
 

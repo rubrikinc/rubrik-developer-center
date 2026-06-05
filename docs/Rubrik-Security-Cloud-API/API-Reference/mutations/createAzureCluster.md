@@ -6,7 +6,7 @@ Create a Rubrik Cloud Cluster on Azure.
 
 | Argument | Type | Description |
 |----------|------|-------------|
-| input *(required)* | [CreateAzureClusterInput](../types/inputs/CreateAzureClusterInput.md)! | CreateAzureClusterArg params for Azure. |
+| input *(required)* | [CreateAzureClusterInput](../types/inputs/CreateAzureClusterInput.md)! | CreateAzureClusterInput params for Azure. |
 
 ## Returns
 

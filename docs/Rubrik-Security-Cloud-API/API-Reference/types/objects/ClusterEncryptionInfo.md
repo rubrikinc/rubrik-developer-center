@@ -8,6 +8,7 @@ The Rubrik cluster's encryption-at-rest information.
 |-------|------|-------------|
 | canUserManageCluster | Boolean! | Specifies if the user can manage the cluster settings. |
 | cipher | String! | The encryption cipher. |
+| clusterProductType | [ClusterProductType](../enums/ClusterProductType.md)! | The product type of the Rubrik cluster. |
 | encryptionType | [ClusterEncryptionType](../enums/ClusterEncryptionType.md)! | The type of encryption used by the Rubrik cluster. |
 | isConnected | Boolean! | Specifies if the Rubrik cluster is connected. |
 | isEncrypted | Boolean! | Specifies if the Rubrik cluster is encrypted. |

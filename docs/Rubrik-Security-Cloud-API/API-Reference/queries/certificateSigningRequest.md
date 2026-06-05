@@ -28,6 +28,8 @@ Get Certificate Signing Request (CSR).
         csrId
         email
         hostnames
+        keyStrength
+        keyType
         name
         organization
         organizationUnit

@@ -6,7 +6,11 @@ Returns snapshot results for a workload.
 
 | Argument | Type | Description |
 |----------|------|-------------|
-| snappableFid *(required)* | String! |  |
+| first | Int | Returns the first n elements from the list. |
+| after | String | Returns the elements in the list that occur after the specified cursor. |
+| last | Int | Returns the last n elements from the list. |
+| before | String | Returns the elements in the list that occur before the specified cursor. |
+| snappableFid *(required)* | String! | FID of the workload to query. |
 | startTimeMs *(required)* | [Long](../types/scalars/Long.md)! | Begin time of the range (in milliseconds since epoch) |
 | endTimeMs *(required)* | [Long](../types/scalars/Long.md)! | End time of the range (in milliseconds since epoch) |
 
@@ -24,6 +28,7 @@ Returns snapshot results for a workload.
         snappableFid: $snappableFid
         startTimeMs: $startTimeMs
         endTimeMs: $endTimeMs
+        first: 10
       ) {
         nodes {
           snapshotFid

@@ -19,6 +19,7 @@ Paginated list of CdmSnapshotGroupBy objects. Each page of the results includes 
 - CdmHierarchySnappableNew.snapshotGroupByConnection
 - [Db2Database.snapshotGroupByConnection](Db2Database.md)
 - [ExchangeDatabase.snapshotGroupByConnection](ExchangeDatabase.md)
+- [FusionComputeVirtualMachine.snapshotGroupByConnection](FusionComputeVirtualMachine.md)
 - [HyperVVirtualMachine.snapshotGroupByConnection](HyperVVirtualMachine.md)
 - KosmosSnappableHierarchyObjectType.snapshotGroupByConnection
 - [KubernetesProtectionSet.snapshotGroupByConnection](KubernetesProtectionSet.md)

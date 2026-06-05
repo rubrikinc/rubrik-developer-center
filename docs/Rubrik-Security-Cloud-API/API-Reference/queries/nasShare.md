@@ -30,6 +30,7 @@ A NAS Share.
         isChangelistEnabled
         isHidden
         isNasShareManuallyAdded
+        isNutanixCftEnabled
         isRelic
         isStale
         name

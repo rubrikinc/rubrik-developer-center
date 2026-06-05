@@ -8,6 +8,7 @@ RCS Azure archival locations consumption stats record.
 |-------|------|-------------|
 | metricName | [RcsConsumptionMetricOutputNameType](../enums/RcsConsumptionMetricOutputNameType.md)! | Consumption stats metric name. |
 | metricValue | Float! | Consumption stats metric value. |
+| redundancy | [RcvRedundancy](../enums/RcvRedundancy.md)! | RCV archival location redundancy. |
 | tier | [RcsTierEnumType](../enums/RcsTierEnumType.md)! | RCS archival location tier. |
 | timestamp | String! | Rubrik Security Cloud archival location ID. |
 

@@ -8,6 +8,7 @@ Identity provider to add.
 |-------|------|-------------|
 | entityId | String! | Entity ID of the identity provider. |
 | idpClaimAttributes | [[IdpClaimAttribute](IdpClaimAttribute.md)!] | Custom claims for the identity provider. |
+| isForceAuthnEnabled | Boolean | Whether the SAML AuthnRequest sent to this identity provider sets ForceAuthn="true", asking the IdP to re-authenticate the user on every login instead of reusing a cached IdP session. |
 | isTemp | Boolean! | Specifies if the identity provider should be set as the temporary identity provider. |
 | name | String! | Name of the identity provider. |
 | signInUrl | String! | Sign-in URL for the identity provider. |

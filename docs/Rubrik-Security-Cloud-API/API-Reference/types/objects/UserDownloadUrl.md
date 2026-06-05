@@ -6,7 +6,7 @@ Download URL for a file.
 
 | Field | Type | Description |
 |-------|------|-------------|
-| url | String! |  |
+| url | String! | URL to download the file. |
 
 ## Used By
 

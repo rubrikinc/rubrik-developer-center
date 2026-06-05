@@ -46,3 +46,6 @@ An AWS native managed hierarchy object.
 - [AwsNativeEc2Instance](../objects/AwsNativeEc2Instance.md)
 - [AwsNativeRdsInstance](../objects/AwsNativeRdsInstance.md)
 - [AwsNativeS3Bucket](../objects/AwsNativeS3Bucket.md)
+- [GlueIcebergCatalog](../objects/GlueIcebergCatalog.md)
+- [GlueIcebergDatabase](../objects/GlueIcebergDatabase.md)
+- [GlueIcebergTable](../objects/GlueIcebergTable.md)

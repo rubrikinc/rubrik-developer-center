@@ -20,7 +20,9 @@
 | AzureNativeVirtualMachine |  |
 | AzureSqlDatabaseDb |  |
 | AzureSqlManagedInstanceDb |  |
+| GCP_BIGQUERY_DATASET | GCP BigQuery Dataset. |
 | GCP_CLOUD_SQL_INSTANCE | GCP Cloud SQL Instance. |
+| GLUE_ICEBERG_TABLE | AWS Glue Iceberg Table. |
 | GOOGLE_WORKSPACE_SHARED_DRIVE | Google Workspace Shared Drive. |
 | GOOGLE_WORKSPACE_USER_DRIVE | Google Workspace User Drive. |
 | GOOGLE_WORKSPACE_USER_MAILBOX | Google Workspace User Mailbox. |

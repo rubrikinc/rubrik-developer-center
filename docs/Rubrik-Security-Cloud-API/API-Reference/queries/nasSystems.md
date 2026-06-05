@@ -31,6 +31,7 @@ Paginated list of NAS Systems.
           isChangelistEnabled
           isNetAppMetroClusterEnabled
           isNfsSupported
+          isNutanixCftEnabled
           isRelic
           isSmbSupported
           isUserSuppliedSmbCredentials
@@ -38,6 +39,7 @@ Paginated list of NAS Systems.
           lastStatus
           name
           namespaceCount
+          nfsPseudoFsPrefix
           numWorkloadDescendants
           objectType
           osVersion

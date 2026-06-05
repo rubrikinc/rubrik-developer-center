@@ -37,10 +37,10 @@
 - [FilesetTemplate.pendingObjectDeletionStatus](FilesetTemplate.md)
 - FilesetTemplateDescendantType.pendingObjectDeletionStatus
 - FilesetTemplatePhysicalChildType.pendingObjectDeletionStatus
-- [HostFailoverCluster.pendingObjectDeletionStatus](HostFailoverCluster.md)
-- HostFailoverClusterDescendantType.pendingObjectDeletionStatus
-- HostFailoverClusterPhysicalChildType.pendingObjectDeletionStatus
-- [HostShare.pendingObjectDeletionStatus](HostShare.md)
-- HostShareDescendantType.pendingObjectDeletionStatus
-- HostSharePhysicalChildType.pendingObjectDeletionStatus
-- *…and 159 more*
+- [FusionComputeCluster.pendingObjectDeletionStatus](FusionComputeCluster.md)
+- FusionComputeClusterDescendant.pendingObjectDeletionStatus
+- FusionComputeClusterPhysicalChildType.pendingObjectDeletionStatus
+- [FusionComputeDatastore.pendingObjectDeletionStatus](FusionComputeDatastore.md)
+- [FusionComputeHost.pendingObjectDeletionStatus](FusionComputeHost.md)
+- FusionComputeHostDescendant.pendingObjectDeletionStatus
+- *…and 174 more*

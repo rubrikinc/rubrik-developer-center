@@ -7,9 +7,9 @@ Parameters for calendar event search.
 | Field | Type | Description |
 |-------|------|-------------|
 | emailAddresses | [[CalendarEmailAddressFilter](CalendarEmailAddressFilter.md)!] |  |
-| lambdaFilters | [LambdaPathFilters](LambdaPathFilters.md) | Parameters for using Lambda filters in the query. |
-| recurrenceFilter | [CalendarRecurrenceFilter](CalendarRecurrenceFilter.md) |  |
+| lambdaFilters | [LambdaPathFilters](LambdaPathFilters.md) | Used for Lambda search/browse, diff/full FMD paths for Calendar. |
+| recurrenceFilter | [CalendarRecurrenceFilter](CalendarRecurrenceFilter.md) | Filters on recurrence type. |
 | searchKeywordFilter | [CalendarSearchKeywordFilter](CalendarSearchKeywordFilter.md) |  |
-| searchObjectFilter | [CalendarSearchObjectFilter](CalendarSearchObjectFilter.md) |  |
-| skipRifItems | Boolean | Specifies whether to skip items in the Recoverable Items folder. |
-| timerange | [TimeRangeFilter](TimeRangeFilter.md) |  |
+| searchObjectFilter | [CalendarSearchObjectFilter](CalendarSearchObjectFilter.md) | Filters on object type. |
+| skipRifItems | Boolean | Specifies whether or not to skip items in Recoverable Items Folder. |
+| timerange | [TimeRangeFilter](TimeRangeFilter.md) | Filters on time range. |

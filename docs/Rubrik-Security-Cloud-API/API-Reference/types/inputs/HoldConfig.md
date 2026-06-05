@@ -6,5 +6,5 @@ Contains configuration of the legal hold to be placed.
 
 | Field | Type | Description |
 |-------|------|-------------|
-| legalHoldMode | [LegalHoldMode](../enums/LegalHoldMode.md) | Specifies the legal hold mode for RSC native snapshots. |
+| holdReplica | Boolean | RSC native only. When true, the legal hold extends to all replica copies of the source snapshot. Must be false for CDM/NCD requests (validated server-side). |
 | shouldHoldInPlace | Boolean | Specifies whether a snapshot is to be held in place. |

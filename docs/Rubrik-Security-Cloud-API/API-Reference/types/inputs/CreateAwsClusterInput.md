@@ -1,6 +1,6 @@
 # CreateAwsClusterInput
 
-CreateAwsClusterInput for Aws account.
+Input for creating an AWS cloud cluster.
 
 ## Fields
 

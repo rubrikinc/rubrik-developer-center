@@ -59,6 +59,14 @@ Represents object types.
 | OLVM_MANAGER | Represents the OLVM manager. |
 | OLVM_ROOT | Represents the OLVM root. |
 | OLVM_VIRTUAL_MACHINE | Represents the OLVM virtual machine. |
+| OPENSTACK_AVAILABILITY_ZONE | Represents the OpenStack availability zone. |
+| OPENSTACK_DOMAIN | Represents the OpenStack domain. |
+| OPENSTACK_ENVIRONMENT | Represents the OpenStack environment. |
+| OPENSTACK_HOST | Represents the OpenStack host. |
+| OPENSTACK_PROJECT | Represents the OpenStack project. |
+| OPENSTACK_REGION | Represents the OpenStack region. |
+| OPENSTACK_ROOT | Represents the OpenStack root. |
+| OPENSTACK_VIRTUAL_MACHINE | Represents the OpenStack virtual machine. |
 | ORACLE_DATABASE | Represents the Oracle database. |
 | ORACLE_DATA_GUARD_GROUP | Represents the Oracle Data Guard Group. |
 | ORACLE_ROOT | Represents the Oracle root. |

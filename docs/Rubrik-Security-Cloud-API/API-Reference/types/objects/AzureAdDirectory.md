@@ -29,6 +29,7 @@ Details of the Azure AD directory object.
 | isJitEnabled | Boolean! | Specifies whether the tenant was onboarded using the Just In Time permissions feature. |
 | isProvisioned | Boolean! | Specifies whether the infrastructure has been provisioned to enable protection for this Azure AD. |
 | isRelic | Boolean! | Specifies whether the object is a relic. |
+| latestAccessReviewScheduleDefinitionCount | Int! | Count of access review schedule definitions from the latest snapshot. |
 | latestAdministrativeUnitsCount | Int! | Count of administrative units from the latest snapshot. |
 | latestApplicationsCount | Int! | Applications count from the latest snapshot. |
 | latestAssignmentFilterCount | Int! | Count of assignment filters from the latest snapshot. |
@@ -39,10 +40,16 @@ Details of the Azure AD directory object.
 | latestComplianceScriptCount | Int! | Count of compliance scripts from the latest snapshot. |
 | latestConditionalAccessPoliciesCount | Int! | Conditional access policies count from the latest snapshot. |
 | latestDeviceCount | Int! | Count of devices from the latest snapshot. |
+| latestEmAccessPackageCount | Int! | Count of entitlement management access packages from the latest snapshot. |
+| latestEmCatalogCount | Int! | Count of entitlement management catalogs from the latest snapshot. |
+| latestEntraObjectCounts | [[LatestEntraObjectCount](LatestEntraObjectCount.md)!]! | Counts of Entra ID and Intune object types from the latest snapshot. |
+| latestGroupActiveAssignmentCount | Int! | Count of PIM group active assignments from the latest snapshot. |
 | latestGroupCount | Int! | Group count from the latest snapshot. |
+| latestGroupEligibleAssignmentCount | Int! | Count of PIM group-eligible assignments from the latest snapshot. |
 | latestLocalAdminPasswordCount | Int! | Count of local admin passwords from the latest snapshot. |
 | latestNamedLocationsCount | Int! | Named Locations count from the latest snapshot. |
 | latestNotificationTemplateCount | Int! | Count of notification templates from the latest snapshot. |
+| latestRoleEligibleAssignmentCount | Int! | Count of PIM role-eligible assignments from the latest snapshot. |
 | latestRolesCount | Int! | Roles count from the latest snapshot. |
 | latestServicePrincipalsCount | Int! | Service principals count from the latest snapshot. |
 | latestSnapshotTime | [DateTime](../scalars/DateTime.md) | Time of the latest snapshot. |

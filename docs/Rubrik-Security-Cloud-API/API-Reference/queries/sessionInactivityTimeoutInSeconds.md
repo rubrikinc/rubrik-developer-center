@@ -1,6 +1,6 @@
 # sessionInactivityTimeoutInSeconds
 
-The session inactivity timeout in seconds.
+The session inactivity timeout in seconds for the authenticated user.
 
 ## Returns
 

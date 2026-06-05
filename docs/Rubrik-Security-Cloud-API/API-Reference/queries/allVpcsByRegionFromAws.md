@@ -8,6 +8,7 @@ List of all Virtual Private Clouds (VPCs) in the AWS Native account, classified 
 |----------|------|-------------|
 | awsAccountRubrikId *(required)* | [UUID](../types/scalars/UUID.md)! | Rubrik ID for AWS account. |
 | region *(required)* | [AwsNativeRegion](../types/enums/AwsNativeRegion.md)! | Region in AWS. |
+| feature | [CloudAccountFeature](../types/enums/CloudAccountFeature.md) | Cloud-account feature for credential routing on MULTI_ROLE accounts. |
 
 ## Returns
 

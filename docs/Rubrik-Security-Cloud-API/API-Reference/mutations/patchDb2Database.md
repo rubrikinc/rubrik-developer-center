@@ -19,8 +19,10 @@ Update a Db2 database  Supported in v9.0+ Updating a Db2 database involves modif
     ```graphql
     mutation PatchDb2Database($input: PatchDb2DatabaseInput!) {
       patchDb2Database(input: $input) {
+        backupCompressionLibraryPath
         backupParallelism
         backupSessions
+        isBackupCompressionEnabled
       }
     }
     ```
@@ -42,8 +44,10 @@ Update a Db2 database  Supported in v9.0+ Updating a Db2 database involves modif
     {
       "data": {
         "patchDb2Database": {
+          "backupCompressionLibraryPath": "example-string",
           "backupParallelism": 0,
-          "backupSessions": 0
+          "backupSessions": 0,
+          "isBackupCompressionEnabled": true
         }
       }
     }

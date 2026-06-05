@@ -14,7 +14,6 @@ Represents the analyzer.
 | excludePathPattern | String! | Regex pattern to exclude files by path. |
 | id | String! | Represents the analyzer ID. |
 | isInactive | Boolean! | Represent whether the analyzer is inactive or not. |
-| jsValidationFunction | String! | JavaScript function for post-match validation of hits. |
 | keyRegex | String! | Regex to filter fields which need to be analyzed for structured data. |
 | name | String! | Represents the analyzer name. |
 | proximityDistance | Int! | Maximum character distance for proximity keyword matching. |

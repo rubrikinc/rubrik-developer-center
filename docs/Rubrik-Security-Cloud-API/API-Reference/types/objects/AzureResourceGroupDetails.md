@@ -16,6 +16,7 @@ Azure native resource group and subscription details.
 
 - [AzureNativeManagedDisk.azureResourceGroupDetails](AzureNativeManagedDisk.md)
 - [AzureNativeVirtualMachine.azureResourceGroupDetails](AzureNativeVirtualMachine.md)
+- [AzurePostgresFlexibleServer.azureResourceGroupDetails](AzurePostgresFlexibleServer.md)
 - [AzureSqlDatabaseServer.azureResourceGroupDetails](AzureSqlDatabaseServer.md)
 - [AzureSqlManagedInstanceServer.azureResourceGroupDetails](AzureSqlManagedInstanceServer.md)
 - [AzureStorageAccount.azureResourceGroupDetails](AzureStorageAccount.md)

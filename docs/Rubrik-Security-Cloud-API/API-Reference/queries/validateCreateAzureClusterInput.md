@@ -1,12 +1,12 @@
 # validateCreateAzureClusterInput
 
-Validates azure cluster create request.
+Validates Azure cluster create request.
 
 ## Arguments
 
 | Argument | Type | Description |
 |----------|------|-------------|
-| input *(required)* | [CreateAzureClusterInput](../types/inputs/CreateAzureClusterInput.md)! | CreateAzureClusterArg params for Azure. |
+| input *(required)* | [CreateAzureClusterInput](../types/inputs/CreateAzureClusterInput.md)! | CreateAzureClusterInput params for Azure. |
 
 ## Returns
 

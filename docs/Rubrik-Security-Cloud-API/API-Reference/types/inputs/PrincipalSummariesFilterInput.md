@@ -12,6 +12,7 @@ Filter to be applied when retrieving principal summaries.
 | departments | [String!] | Filter principals by one or more department values. Returns only principals whose department exactly matches one of the provided values. |
 | directParentOfPrincipal | String | Filter to return principals that are direct parents of the specified principal. |
 | domainFidsFilter | [String!] | Filter by domain FID of principal. |
+| editorsForGpo | String | Filter to return principals that are editors of the specified GPO principal. AND-combines with all other filters in this message. An empty value means the filter is inactive. A value that does not identify a GPO with at least one editor returns an empty page. |
 | entityIds | [String!] | Filter by entity IDs of principal. |
 | entraMfaStrength | [[MfaStrength](../enums/MfaStrength.md)!] | Filter by MFA strength for Entra principals. |
 | featureFilter | [PrincipalFeature](../enums/PrincipalFeature.md) | Filter by feature. |

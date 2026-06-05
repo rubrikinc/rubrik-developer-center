@@ -8,7 +8,7 @@ Point-in-Time (PiT) restore window of the RDS Instance in the AWS Native account
 |----------|------|-------------|
 | awsAccountRubrikId *(required)* | [UUID](../types/scalars/UUID.md)! | Rubrik ID for AWS account. |
 | region *(required)* | [AwsNativeRegion](../types/enums/AwsNativeRegion.md)! | Region in AWS. |
-| rdsInstanceName *(required)* | String! | Name of the RDS DB Instance |
+| rdsInstanceName *(required)* | String! | Name of the RDS DB Instance. |
 | rdsDatabaseRubrikId | [UUID](../types/scalars/UUID.md) | The Rubrik ID for the AWS RDS database. |
 
 ## Returns

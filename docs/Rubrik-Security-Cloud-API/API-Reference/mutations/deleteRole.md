@@ -1,6 +1,6 @@
 # deleteRole
 
-*No description available.*
+Deletes a role.
 
 ## Arguments
 

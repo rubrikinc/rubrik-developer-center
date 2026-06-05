@@ -1,6 +1,6 @@
 # TeamsConversationsSearchFilter
 
-Parameters for teams conversations search.
+Parameters for Teams conversations search.
 
 ## Fields
 
@@ -8,12 +8,12 @@ Parameters for teams conversations search.
 |-------|------|-------------|
 | channelNaturalId | String |  |
 | convId | String |  |
-| fetchAllPostSenders | String | Describes whether to send post senders(shouldn't be called by UI). |
-| includeArchived | Boolean |  |
+| fetchAllPostSenders | String | Specifies whether to send post senders. |
+| includeArchived | Boolean | Specifies whether to include archived conversations. |
 | lambdaFilters | [LambdaPathFilters](LambdaPathFilters.md) | Parameters for using Lambda filters in the query. |
 | parentId | String |  |
 | postedBy | String |  |
-| postedTime | [TimeRangeFilter](TimeRangeFilter.md) |  |
-| skipPostsAttachments | Boolean | Describes whether to skip attachments(shouldn't be called by UI). |
+| postedTime | [TimeRangeFilter](TimeRangeFilter.md) | Filters on the time of posts. |
+| skipPostsAttachments | Boolean | Specifies whether to skip attachments. |
 | snapshotId | String |  |
-| snapshotNum | Int |  |
+| snapshotNum | Int | The snapshot sequence number. |

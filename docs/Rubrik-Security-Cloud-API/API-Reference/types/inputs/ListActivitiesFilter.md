@@ -10,6 +10,7 @@ Filters for list activities.
 | activityDateRange | [DateTimeRange](DateTimeRange.md) | The date range of the activity to filter on. |
 | activityIds | [[UUID](../scalars/UUID.md)!] | The IDs of the activities to filter on. |
 | actorIds | [String!] | The IDs of the actors to filter on. |
+| actorIpAddresses | [String!] | The IP addresses of the actors to filter on. |
 | attributeChangeFilter | [ActivityAuditorAttributeChangeFilter](ActivityAuditorAttributeChangeFilter.md) | The attribute change filter. |
 | categories | [[ActivityCategory](../enums/ActivityCategory.md)!] | The category of the activity. |
 | entityIds | [String!] | The IDs of the target or actor entities to filter on. |

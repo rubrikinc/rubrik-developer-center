@@ -10,6 +10,7 @@ Object-specific configurations.
 | awsNativeS3SlaConfigInput | [AwsNativeS3SlaConfigInput](AwsNativeS3SlaConfigInput.md) | Input to configure the SLA Domain configuration for AWS S3 bucket. |
 | awsRdsConfigInput | [AwsRdsConfigInput](AwsRdsConfigInput.md) | SLA Domain configuration for AWS RDS object. |
 | azureBlobConfigInput | [AzureBlobConfigInput](AzureBlobConfigInput.md) | SLA Domain configuration for Azure Blob object. |
+| azurePostgresFlexibleServerConfigInput | [AzurePostgresFlexibleServerConfigInput](AzurePostgresFlexibleServerConfigInput.md) | Input to configure the SLA Domain for Azure PostgreSQL Flexible Server. |
 | azureSqlDatabaseDbConfigInput | [AzureSqlDatabaseDbConfigInput](AzureSqlDatabaseDbConfigInput.md) | Input to configure the SLA Domain for Azure SQL Database DB. |
 | azureSqlManagedInstanceDbConfigInput | [AzureSqlManagedInstanceDbConfigInput](AzureSqlManagedInstanceDbConfigInput.md) | Input to configure the SLA Domain for Azure SQL Managed Instance DB. |
 | db2ConfigInput | [Db2ConfigInput](Db2ConfigInput.md) | Input to configure the SLA Domain for Db2 database. |

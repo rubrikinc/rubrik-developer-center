@@ -37,6 +37,7 @@ List of the available cluster objects.
           estimatedRunway
           id
           isAirGapped
+          isAssignedByParentAccount
           isClusterRemovalTprEnabled
           isHealthy
           isTprEnabled

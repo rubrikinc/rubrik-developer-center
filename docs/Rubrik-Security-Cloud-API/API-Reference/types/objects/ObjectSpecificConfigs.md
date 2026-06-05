@@ -10,6 +10,7 @@ Object-specific configurations.
 | awsNativeS3SlaConfig | [AwsNativeS3SlaConfig](AwsNativeS3SlaConfig.md) | SLA Domain configuration for AWS S3 bucket. |
 | awsRdsConfig | [AwsRdsConfig](AwsRdsConfig.md) | SLA Domain configuration for AWS RDS object. |
 | azureBlobConfig | [AzureBlobConfig](AzureBlobConfig.md) | SLA Domain configuration for Azure Blob object. |
+| azurePostgresFlexibleServerConfig | [AzurePostgresFlexibleServerConfig](AzurePostgresFlexibleServerConfig.md) | SLA Domain configuration for Azure PostgreSQL Flexible Server. |
 | azureSqlDatabaseDbConfig | [AzureSqlDatabaseDbConfig](AzureSqlDatabaseDbConfig.md) | SLA Domain configuration for Azure SQL Database DB object. |
 | azureSqlManagedInstanceDbConfig | [AzureSqlManagedInstanceDbConfig](AzureSqlManagedInstanceDbConfig.md) | SLA Domain configuration for Azure SQL Managed Instance DB object. |
 | db2Config | [Db2Config](Db2Config.md) | SLA Domain configuration for Db2 database object. |

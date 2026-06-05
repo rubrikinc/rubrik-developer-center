@@ -8,6 +8,7 @@ Supported in v9.0+ v9.0: Input to export Kubernetes resources from a resource se
 |-------|------|-------------|
 | filter | String | Supported in v9.0+ The filter for selecting resources from the snapshot to export. |
 | ignoreErrors | Boolean | Supported in v9.0+ Specifies whether to ignore errors during the export operation. By default, this value is false. |
+| namespaceMappings | [NamespaceMappingInput](NamespaceMappingInput.md) | Optional mapping of source namespace names to target namespace names for Application Protection Set exports. |
 | pvcNames | [String!] | Supported in v9.1+ |
 | shouldDeleteNamespaceIfExportFailed | Boolean | Supported in v9.1+ Specifies whether to delete exported namespace if the export failed. By default, this value is false. |
 | shouldKeepVirtualMachineMacAddresses | Boolean | Supported in v9.3+ Determines whether the MAC addresses of the network interfaces on the source virtual machine are assigned to the new virtual machine. Set to 'true' to keep the MAC addresses of the new virtual machine the same as the original virtual machine. Set to 'false' to assign new MAC addresses. |

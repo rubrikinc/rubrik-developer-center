@@ -6,7 +6,7 @@ MSSQL host-level configuration flags controlling backup, restore, and operationa
 
 | Field | Type | Description |
 |-------|------|-------------|
-| af2MinimumFileCount | Int | Supported in v9.4+ v9.4-v9.5: The minimum number of data files a database must have in order to take backups via AF2. v9.6: The minimum number of data files a database must have in order to take backups using AF2. |
+| af2MinimumFileCount | Int | Supported in v9.4+ v9.4: The minimum number of data files a database must have in order to take backups via AF2. v9.5+: The minimum number of data files a database must have in order to take backups using AF2. |
 | cbtMaxMemoryUsageInMb | Int | Supported in v6.0+ The maximum memory size in MB that a CBT driver can use. |
 | cmdPipeBufferSizeInKb | Int | Supported in v9.3+ The size of the buffer in KB for the command pipe. |
 | copyLogsToHostDuringLiveMount | [HostConfigurationPropertyEnabled](../enums/HostConfigurationPropertyEnabled.md) | Specifies whether to copy logs to be applied on the host during a live mount operation instead of exposing them via mount. |
@@ -20,8 +20,8 @@ MSSQL host-level configuration flags controlling backup, restore, and operationa
 | fileRestoreWriteParallelism | Int | Supported in v6.0+ Number of concurrent write requests for restoring a file from the Rubrik cluster to a remote host. |
 | fileTransferParallelism | Int | Supported in v6.0+ Number of concurrent requests for transferring a file from a remote host to the Rubrik cluster. |
 | maxDbLoadSizeInBytes | Int | Supported in v9.4+ Maximum database load size in bytes, used for Sensitive Data Discovery through RBA for SQL databases. |
-| maxNodesForMultiNodeBackup | Int | Maximum number of Rubrik nodes to use for multi-node backup on this host. Overrides the global maxNodesForMultiNodeBackup setting. Valid range is 1 to the total number of nodes available in the cluster. |
-| maxNodesForMultiNodeRestore | Int | Maximum number of Rubrik nodes to use for multi-node restore on this host. Overrides the global maxNodesForMultiNodeRestore setting. Valid range is 1 to the total number of nodes available in the cluster. |
+| maxNodesForMultiNodeBackup | Int | Supported in v9.5+ v9.5: Maximum number of Rubrik nodes to use for multi-node backup on this host. Overrides the global maxNodesForMultiNodeBackup setting. Valid range is from 1 to the total number of nodes available in the cluster. v9.6: Maximum number of Rubrik nodes to use for multi-node backup on this host. Overrides the global maxNodesForMultiNodeBackup setting. Valid range is 1 to the total number of nodes available in the cluster. |
+| maxNodesForMultiNodeRestore | Int | Supported in v9.5+ v9.5: Maximum number of Rubrik nodes to use for multi-node restore on this host. Overrides the global maxNodesForMultiNodeRestore setting. Valid range is from 1 to the total number of nodes available in the cluster. v9.6: Maximum number of Rubrik nodes to use for multi-node restore on this host. Overrides the global maxNodesForMultiNodeRestore setting. Valid range is 1 to the total number of nodes available in the cluster. |
 | mssqlAllowDirtyReadForDbSizeQuery | [HostConfigurationPropertyEnabled](../enums/HostConfigurationPropertyEnabled.md) | Supported in v9.3+ Specifies whether to use the NOLOCK hint when querying database file information. |
 | mssqlDatabaseQueryTimeout | Int | Supported in v9.2+ Length, in seconds, of the query timeout for database operations. |
 | mssqlDefaultMaxDataStreamsPerDatabase | Int | Supported in v6.0+ The default value for maximum number of data streams per database. |

@@ -19,6 +19,7 @@ Lists all identity providers for the current organization.
         expirationDate
         id
         isDefault
+        isForceAuthnEnabled
         metadataJson
         name
         ownerOrgId

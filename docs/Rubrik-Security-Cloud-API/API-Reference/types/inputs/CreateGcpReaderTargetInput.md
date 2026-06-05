@@ -11,9 +11,10 @@ Input for GCP Reader Target.
 | bucket | String! | Field for specifying GCP bucket name. |
 | bypassProxy | Boolean! | Specifies whether the proxy settings should be bypassed for creating this target location. |
 | clusterUuid | [UUID](../scalars/UUID.md)! | Field for specifying cluster UUID of the target. |
-| encryptionPassword | String! | Field for specifying encryption password. |
+| encryptionPassword | String | Encryption password matching the source GCP location. Required when the source location was created without UEKM. Mutually exclusive with rsaKey. |
 | name | String! | Field for specifying name of the target. |
 | readerRetrievalMethod | [ReaderRetrievalMethod](../enums/ReaderRetrievalMethod.md)! | Field for specifying the metadata to be retrieved from a target. |
 | region | [GcpRegion](../enums/GcpRegion.md)! | Field for specifying region of the target. |
+| rsaKey | String | RSA private key (PEM format) matching the source GCP location. Required when the source location was created with UEKM. Mutually exclusive with encryptionPassword. |
 | serviceAccountJsonKey | String! | Field for specifying service account JSON key. |
 | storageClass | [GcpStorageClass](../enums/GcpStorageClass.md)! | Field for specifying storage class of the target. |

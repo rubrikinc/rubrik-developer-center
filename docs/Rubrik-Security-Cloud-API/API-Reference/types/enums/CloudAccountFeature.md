@@ -11,6 +11,7 @@ Cloud account features.
 | APP_FLOWS | Cloud account feature is App Flows. |
 | ARCHIVAL | Cloud account feature is Archival. |
 | AWS_CONFIG_PROTECTION *(deprecated: Use `CLOUD_NATIVE_CONFIG_PROTECTION` instead.)* | Cloud account feature is Application Config Protection. |
+| AZURE_DEVOPS_DEVELOPER_COLLABORATION_PROTECTION | AZURE_DEVOPS_DEVELOPER_COLLABORATION_PROTECTION refers to the feature enabling backup of non-repo Azure DevOps project content (work items, boards, sprints, wikis, teams). |
 | AZURE_DEVOPS_PROTECTION | AZURE_DEVOPS_PROTECTION refers to the feature enabling protection of Azure DevOps and related workload. |
 | AZURE_DEVOPS_REPOSITORY_PROTECTION | AZURE_DEVOPS_REPOSITORY_PROTECTION refers to the feature enabling protection of Azure DevOps repositories and related workload. |
 | AZURE_LAMINAR_OUTPOST_APPLICATION *(deprecated: Use `LAMINAR_OUTPOST_APPLICATION` instead.)* | Cloud account feature is Azure Laminar Outpost Application. |
@@ -38,8 +39,10 @@ Cloud account features.
 | EXOCOMPUTE | Cloud account feature is Exocompute. |
 | FEATURE_UNSPECIFIED | Feature is not specified. |
 | GCP_BIGQUERY_PROTECTION | Cloud account feature is GCP BigQuery Protection. |
+| GCP_BIGQUERY_RESERVATION | Cloud account feature is GCP BigQuery Reservation host. |
 | GCP_SHARED_VPC_HOST | Cloud account feature is GCP Shared VPC Host. |
 | GITHUB_REPOSITORY_PROTECTION | GITHUB_REPOSITORY_PROTECTION refers to the feature enabling protection of GitHub repositories and related workload. |
+| GLUE_ICEBERG_PROTECTION | Cloud account feature is Glue Iceberg Protection. |
 | KUBERNETES_PROTECTION | Cloud account feature is Kubernetes Protection. |
 | LAMINAR_CROSS_ACCOUNT | Cloud account feature is Laminar Cross Account. |
 | LAMINAR_INTERNAL | Cloud account feature is Laminar Internal. |

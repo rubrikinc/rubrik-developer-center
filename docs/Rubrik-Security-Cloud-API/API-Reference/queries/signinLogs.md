@@ -40,6 +40,7 @@ List sign-in logs with filtering and pagination.  Retrieves sign-in events from 
           eventId
           eventTimestamp
           eventType
+          failureCategory
           ipAddress
           logonType
           mfaStatus
@@ -49,6 +50,7 @@ List sign-in logs with filtering and pagination.  Retrieves sign-in events from 
           result
           riskLevel
           state
+          tenantId
           userId
           userSid
         }

@@ -18,4 +18,5 @@ Entra ID service principal.
 **Referenced by**
 
 - [AzureAdObjects.azureAdServicePrincipal](AzureAdObjects.md)
+- [AzureAdPimActivePrincipalObject.azureAdServicePrincipal](AzureAdPimActivePrincipalObject.md)
 - [PrincipalObject.azureAdServicePrincipal](PrincipalObject.md)

@@ -6,6 +6,7 @@ Contains the region and subnet configuration.
 
 | Field | Type | Description |
 |-------|------|-------------|
+| clusterSecondaryRangeName | String | Name of the GKE pods secondary IP range on the subnet. If not provided the default value "pods-cidr-range" is used. |
 | projectId | String | Project ID of the project containing the VPC network. |
 | region | [GcpCloudAccountRegion](../enums/GcpCloudAccountRegion.md)! | Region for which the subnet is configured. |
 | subnetName | String! | Name of the subnet. |

@@ -32,6 +32,7 @@ Name of product.
 | NOSQL | NoSQL protection. |
 | O365 | O365. |
 | OKTA | Okta protection. |
+| OKTA_CYBER_POSTURE | Okta Cyber Posture - enables IR Room for Okta-only customers. |
 | ONPREM_AD | On-premise Active Directory Protection. |
 | ONPREM_AD_CP | On-premises Active Directory Cyber Posture. |
 | ONPREM_AD_CR | On-premises Active Directory Cyber Recovery. |

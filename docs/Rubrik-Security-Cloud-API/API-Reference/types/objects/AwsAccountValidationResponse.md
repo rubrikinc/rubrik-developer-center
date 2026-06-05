@@ -8,6 +8,7 @@ Validate given aws accounts.
 |-------|------|-------------|
 | accountName | String! | AWS account name. |
 | cloudType | [AwsCloudType](../enums/AwsCloudType.md)! | AWS account cloud type. |
+| crossAccountRoleModel | [CrossAccountRoleModel](../enums/CrossAccountRoleModel.md)! | The cross-account role model for this account (SINGLE_ROLE or MULTI_ROLE). |
 | message | String! | AWS account validation response message. |
 | nativeId | String! | AWS account native ID. |
 | orgId | String! | The UUID of the onboarded AWS organization. |

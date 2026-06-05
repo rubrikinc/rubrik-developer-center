@@ -14,6 +14,7 @@ Input to list global certificates.
 | isRubrikManaged | Boolean | Specifies whether to include only Rubrik-managed certificates. |
 | isTrustedAny | Boolean | Specifies whether the certificate is in the trust store of the Rubrik cluster. |
 | issuerTypes | [[IssuerType](../enums/IssuerType.md)!] | Specifies the certificate issuer types to return. |
+| keyTypes | [[KeyType](../enums/KeyType.md)!] | Filters certificates by cryptographic key type. Empty list applies no filter. |
 | renewalStatuses | [[CertificateRotationStatus](../enums/CertificateRotationStatus.md)!] | Specifies the certificate rotation statuses to retrieve. |
 | rscUsages | [[CertificateUsage](../enums/CertificateUsage.md)!] | Specifies the RSC certificate usages to return. |
 | searchText | String | The query to filter the certificates. |

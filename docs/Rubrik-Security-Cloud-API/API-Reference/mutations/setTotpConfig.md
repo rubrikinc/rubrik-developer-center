@@ -6,7 +6,7 @@ Setup TOTP configuration for a user. Return true when the operation succeeds.
 
 | Argument | Type | Description |
 |----------|------|-------------|
-| input *(required)* | [SetTotpConfigInput](../types/inputs/SetTotpConfigInput.md)! | Input required for setting up TOTP configuration. |
+| input *(required)* | [SetTotpConfigInput](../types/inputs/SetTotpConfigInput.md)! | Input for setting up TOTP configuration. |
 
 ## Returns
 

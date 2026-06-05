@@ -39,6 +39,7 @@ Lists all Azure AD directories for the account.
           isJitEnabled
           isProvisioned
           isRelic
+          latestAccessReviewScheduleDefinitionCount
           latestAdministrativeUnitsCount
           latestApplicationsCount
           latestAssignmentFilterCount
@@ -49,10 +50,15 @@ Lists all Azure AD directories for the account.
           latestComplianceScriptCount
           latestConditionalAccessPoliciesCount
           latestDeviceCount
+          latestEmAccessPackageCount
+          latestEmCatalogCount
+          latestGroupActiveAssignmentCount
           latestGroupCount
+          latestGroupEligibleAssignmentCount
           latestLocalAdminPasswordCount
           latestNamedLocationsCount
           latestNotificationTemplateCount
+          latestRoleEligibleAssignmentCount
           latestRolesCount
           latestServicePrincipalsCount
           latestSnapshotTime

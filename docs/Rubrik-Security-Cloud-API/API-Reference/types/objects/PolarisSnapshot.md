@@ -60,6 +60,9 @@
 
 **Referenced by**
 
+- [AwsNativeConfig.newestIndexedSnapshot](AwsNativeConfig.md)
+- [AwsNativeConfig.newestSnapshot](AwsNativeConfig.md)
+- [AwsNativeConfig.oldestSnapshot](AwsNativeConfig.md)
 - [AwsNativeDynamoDbTable.newestIndexedSnapshot](AwsNativeDynamoDbTable.md)
 - [AwsNativeDynamoDbTable.newestSnapshot](AwsNativeDynamoDbTable.md)
 - [AwsNativeDynamoDbTable.oldestSnapshot](AwsNativeDynamoDbTable.md)
@@ -78,16 +81,13 @@
 - [AzureAdDirectory.newestIndexedSnapshot](AzureAdDirectory.md)
 - [AzureAdDirectory.newestSnapshot](AzureAdDirectory.md)
 - [AzureAdDirectory.oldestSnapshot](AzureAdDirectory.md)
+- [AzureDevOpsRepository.newestIndexedSnapshot](AzureDevOpsRepository.md)
+- [AzureDevOpsRepository.newestSnapshot](AzureDevOpsRepository.md)
+- [AzureDevOpsRepository.oldestSnapshot](AzureDevOpsRepository.md)
 - [AzureNativeManagedDisk.newestIndexedSnapshot](AzureNativeManagedDisk.md)
 - [AzureNativeManagedDisk.newestSnapshot](AzureNativeManagedDisk.md)
 - [AzureNativeManagedDisk.oldestSnapshot](AzureNativeManagedDisk.md)
 - [AzureNativeVirtualMachine.newestIndexedSnapshot](AzureNativeVirtualMachine.md)
 - [AzureNativeVirtualMachine.newestSnapshot](AzureNativeVirtualMachine.md)
 - [AzureNativeVirtualMachine.oldestSnapshot](AzureNativeVirtualMachine.md)
-- [AzureSqlDatabaseDb.newestIndexedSnapshot](AzureSqlDatabaseDb.md)
-- [AzureSqlDatabaseDb.newestSnapshot](AzureSqlDatabaseDb.md)
-- [AzureSqlDatabaseDb.oldestSnapshot](AzureSqlDatabaseDb.md)
-- [AzureSqlManagedInstanceDatabase.newestIndexedSnapshot](AzureSqlManagedInstanceDatabase.md)
-- [AzureSqlManagedInstanceDatabase.newestSnapshot](AzureSqlManagedInstanceDatabase.md)
-- [AzureSqlManagedInstanceDatabase.oldestSnapshot](AzureSqlManagedInstanceDatabase.md)
-- *…and 81 more*
+- *…and 93 more*

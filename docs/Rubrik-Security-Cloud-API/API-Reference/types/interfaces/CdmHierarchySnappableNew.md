@@ -89,6 +89,7 @@ A managed hierarchy protected objects.
 - [ActiveDirectoryDomainController](../objects/ActiveDirectoryDomainController.md)
 - [Db2Database](../objects/Db2Database.md)
 - [ExchangeDatabase](../objects/ExchangeDatabase.md)
+- [FusionComputeVirtualMachine](../objects/FusionComputeVirtualMachine.md)
 - [HyperVVirtualMachine](../objects/HyperVVirtualMachine.md)
 - [KubernetesProtectionSet](../objects/KubernetesProtectionSet.md)
 - [KubernetesVirtualMachine](../objects/KubernetesVirtualMachine.md)

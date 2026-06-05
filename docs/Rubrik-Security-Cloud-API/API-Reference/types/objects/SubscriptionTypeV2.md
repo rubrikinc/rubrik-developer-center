@@ -8,6 +8,7 @@ Webhook subscription settings.
 |-------|------|-------------|
 | auditSubscription | [AuditSubscription](AuditSubscription.md) | Audit subscription settings. |
 | eventSubscription | [EventSubscription](EventSubscription.md) | Event subscription settings. |
+| identityActivitySubscription | [IdentityActivitySubscription](IdentityActivitySubscription.md) | Identity activity subscription settings. |
 
 ## Used By
 

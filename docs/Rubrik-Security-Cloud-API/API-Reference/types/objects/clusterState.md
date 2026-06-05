@@ -1,6 +1,6 @@
 # clusterState
 
-*No description available.*
+Cluster State.
 
 ## Fields
 
@@ -10,6 +10,7 @@
 | clusterRemovalState | [ClusterRemovalState](../enums/ClusterRemovalState.md)! | The removal status of the Rubrik CDM cluster. |
 | clusterRemovalUpdatedAt | [DateTime](../scalars/DateTime.md) | Cluster removal job update time. |
 | connectedState | [ClusterStatus](../enums/ClusterStatus.md)! | Connected status of the Rubrik CDM cluster. |
+| subStatus | [ClusterSubStatus](../enums/ClusterSubStatus.md)! | Cluster sub status. |
 
 ## Used By
 

@@ -11,6 +11,7 @@ Represents a GCP project.
 | allOrgs | [[Org](Org.md)!]! | Organizations to which this hierarchy object belongs. |
 | allTags | [[AssignedRscTag](AssignedRscTag.md)!]! | RSC tags to which this hierarchy object is assigned. |
 | authorizedOperations | [[PolarisObjectAuthorizedOperationsEnum](../enums/PolarisObjectAuthorizedOperationsEnum.md)!]! | The authorized operations on the object. |
+| bigQueryDatasetCount | Int! | Number of BigQuery datasets in the GCP project. |
 | cloudAccountId | String! | Cloud account ID associated with the project. |
 | cloudNativeId | String! | GCP Native ID of the object. |
 | configuredSlaDomain | [SlaDomain](../interfaces/SlaDomain.md)! | SLA Domain configured for the hierarchy object. |

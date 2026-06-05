@@ -6,7 +6,7 @@ New storage account configuration.
 
 | Field | Type | Description |
 |-------|------|-------------|
-| name | String |  |
+| name | String | The name of the storage account. |
 | sku | [StorageAccountSku](../enums/StorageAccountSku.md) |  |
-| storages | [[StorageAccountConfigItem](StorageAccountConfigItem.md)!] | The list of storage account within resource group. |
+| storages | [[StorageAccountConfigItem](StorageAccountConfigItem.md)!] | The list of storage accounts within the resource group. |
 | tier | [StorageAccountTier](../enums/StorageAccountTier.md) |  |

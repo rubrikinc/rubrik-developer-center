@@ -37,8 +37,10 @@ ObjectTypeEnum covering all Rubrik cluster and RSC workload types.
 | ExchangeDatabase | Exchange Database. |
 | FUSION_COMPUTE_VIRTUAL_MACHINE | FusionCompute virtual machine. |
 | Fileset | Fileset. |
+| GCP_BIGQUERY_DATASET | GCP BigQuery dataset. |
 | GCP_CLOUD_SQL_INSTANCE | GCP Cloud SQL Instance. |
 | GITHUB_REPOSITORY | GitHub Repository. |
+| GLUE_ICEBERG_TABLE | Glue Iceberg table. |
 | GOOGLE_WORKSPACE_SHARED_DRIVE | Google Workspace Shared Drive. |
 | GOOGLE_WORKSPACE_USER_DRIVE | Google Workspace User Drive. |
 | GOOGLE_WORKSPACE_USER_MAILBOX | Google Workspace User Mailbox. |
@@ -82,6 +84,7 @@ ObjectTypeEnum covering all Rubrik cluster and RSC workload types.
 | OPENSTACK_VIRTUAL_MACHINE | OpenStack Virtual Machine. |
 | ORACLE_DATA_GUARD_GROUP | Oracle Data Guard group. |
 | OracleDatabase | Oracle database. |
+| PING_FEDERATE_CLUSTER | Ping Federate cluster. |
 | POSTGRES_DB_CLUSTER | Postgres Database Cluster. |
 | PROXMOX_VIRTUAL_MACHINE | Proxmox Virtual Machine. |
 | PURE_STORAGE_PROTECTION_GROUP | Pure Storage protection group. |

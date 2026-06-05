@@ -33,6 +33,7 @@ Retrieves a paginated list of all Azure Native Subscriptions.
           accountConnectionId
           authorizedOperations
           azureCloudType
+          azurePostgresFlexibleServerCount
           azureSqlDatabaseDbCount
           azureSqlManagedInstanceDbCount
           azureStorageAccountCount
@@ -80,9 +81,9 @@ Retrieves a paginated list of all Azure Native Subscriptions.
                   "MANAGE_DATA_SOURCE"
                 ],
                 "azureCloudType": "AZURECHINACLOUD",
+                "azurePostgresFlexibleServerCount": 0,
                 "azureSqlDatabaseDbCount": 0,
-                "azureSqlManagedInstanceDbCount": 0,
-                "azureStorageAccountCount": 0
+                "azureSqlManagedInstanceDbCount": 0
               }
             ]
           ],

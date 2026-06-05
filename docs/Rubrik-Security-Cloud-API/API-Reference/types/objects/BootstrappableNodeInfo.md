@@ -16,6 +16,7 @@ Supported in v5.0+
 | isBond0Reachable | Boolean | Supported in v7.0+ indicates if Rubrik node is reachable through bond0. |
 | isBond1Eth2Enabled | Boolean | Supported in v6.0+ Link status of port eth2 in Rubrik node. |
 | isBond1Eth3Enabled | Boolean | Supported in v6.0+ Link status of port eth3 in Rubrik node. |
+| isVirtual | Boolean | True if the candidate reports running under a hypervisor (no BMC). Populated from the candidate's PreBootstrapClusterConfig.isVirtualNode thrift call during discovery. Consumed by rkcli add_node to decide whether to prompt for IPMI configuration. |
 | nodePosition | String | Supported in v6.0+ Position of Rubrik node. |
 | platformName | String | Supported in v6.0+ Deployment model of Rubrik node. |
 | version | String | Supported in v5.3+ Software version of Rubrik CDM. |
