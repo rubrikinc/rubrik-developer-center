@@ -4,7 +4,7 @@ This document lists all deprecated fields, queries, mutations, and enum values i
 
 ## Deprecated Fields
 
-*Extracted from schema: 20260413.graphql*
+*Extracted from schema: 20260601.graphql*
 
 **Total deprecated items: 269**
 
