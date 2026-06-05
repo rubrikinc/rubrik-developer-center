@@ -7,9 +7,9 @@ icon: material/shield-check-outline
 
 This page describes Rubrik's support commitments for the APIs documented on this site:
 
-- [Rubrik Security Cloud (RSC) GraphQL API](Rubrik-Security-Cloud-API/index.md)
-- [RSC Task-Based REST API](Rubrik-Security-Cloud-API/REST-API/index.md) (Beta)
-- [Rubrik Cluster (CDM) REST API](Rubrik-Cluster-API/index.md)
+- [Rubrik Security Cloud (RSC) GraphQL API](../Rubrik-Security-Cloud-API/index.md)
+- [RSC Task-Based REST API](../Rubrik-Security-Cloud-API/REST-API/index.md) (Beta)
+- [Rubrik Cluster (CDM) REST API](../Rubrik-Cluster-API/index.md)
 
 These commitments apply to **publicly documented APIs only**. Undocumented or internal endpoints carry no compatibility guarantees.
 
@@ -35,9 +35,9 @@ Every API published on this site falls into one of the following states:
 
 When an API is deprecated:
 
-- It is marked with a `@deprecated` annotation in the schema (surfaced in introspection and SDKs) and listed with replacement guidance in the [API Deprecations](Rubrik-Security-Cloud-API/API-Reference/Deprecations.md) reference.
+- It is marked with a `@deprecated` annotation in the schema (surfaced in introspection and SDKs) and listed with replacement guidance in the [API Deprecations](../Rubrik-Security-Cloud-API/API-Reference/Deprecations.md) reference.
 - It remains fully functional for a minimum of **12 months** from the date of the deprecation notice.
-- The change is announced in the [Schema Changelog](Rubrik-Security-Cloud-API/API-Reference/Changelog.md).
+- The change is announced in the [Schema Changelog](../Rubrik-Security-Cloud-API/API-Reference/Changelog.md).
 
 When a field is deprecated, the deprecation reason will include the recommended alternative.
 
@@ -64,13 +64,13 @@ GA APIs are designed to be **additive-only**: new fields, types, and enum values
 Exceptions may be made for design issues discovered and corrected shortly after release.
 
 !!! warning "Security exception"
-    Breaking changes without a deprecation cycle may occur in rare cases where the existing schema presents a security risk. Such changes are documented in the [Schema Changelog](Rubrik-Security-Cloud-API/API-Reference/Changelog.md) with a rationale and migration guidance.
+    Breaking changes without a deprecation cycle may occur in rare cases where the existing schema presents a security risk. Such changes are documented in the [Schema Changelog](../Rubrik-Security-Cloud-API/API-Reference/Changelog.md) with a rationale and migration guidance.
 
 ---
 
 ## Release Cadence
 
-The RSC API is updated on a regular basis. Schema changes — new fields, deprecations, and any breaking changes — are documented in the [Schema Changelog](Rubrik-Security-Cloud-API/API-Reference/Changelog.md) with each release.
+The RSC API is updated on a regular basis. Schema changes — new fields, deprecations, and any breaking changes — are documented in the [Schema Changelog](../Rubrik-Security-Cloud-API/API-Reference/Changelog.md) with each release.
 
 ---
 
@@ -79,7 +79,7 @@ The RSC API is updated on a regular basis. Schema changes — new fields, deprec
 Rubrik's support commitment covers:
 
 - **The API specification** — behavior as documented on this site
-- **Official SDKs** — the [Python GraphQL Client](SDKs-and-Tools/index.md) and [PowerShell SDK](SDKs-and-Tools/index.md) are maintained and versioned alongside the API
+- **Official SDKs** — the [Python GraphQL Client](../SDKs-and-Tools/index.md) and [PowerShell SDK](../SDKs-and-Tools/index.md) are maintained and versioned alongside the API
 
 ### SDK and deprecation warnings
 
@@ -102,8 +102,8 @@ Rubrik is not responsible for the behavior of third-party code that calls the AP
 
 | Resource | Description |
 |----------|-------------|
-| [Schema Changelog](Rubrik-Security-Cloud-API/API-Reference/Changelog.md) | Per-release record of all schema changes, including breaking changes and deprecations |
-| [API Deprecations](Rubrik-Security-Cloud-API/API-Reference/Deprecations.md) | Full list of currently deprecated fields with replacement guidance |
+| [Schema Changelog](../Rubrik-Security-Cloud-API/API-Reference/Changelog.md) | Per-release record of all schema changes, including breaking changes and deprecations |
+| [API Deprecations](../Rubrik-Security-Cloud-API/API-Reference/Deprecations.md) | Full list of currently deprecated fields with replacement guidance |
 
 ---
 
