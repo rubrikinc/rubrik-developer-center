@@ -62,30 +62,7 @@ Query databases to confirm they are visible and to retrieve database IDs. The `i
 
 ### Assign an SLA Domain
 
-Use `assignMssqlSlaDomainPropertiesAsync` to assign an SLA Domain and configure SQL Server-specific settings in a single call. This mutation is MSSQL-specific and supports assigning at the database, instance, or host level — pass any combination of object IDs in the `ids` array.
-
-The `configuredSlaDomainId` field sets which SLA Domain to apply. To look up SLA Domain IDs, see [SLA Domains](../SLA-Domains.md).
-
-MSSQL-specific settings in `mssqlSlaRelatedProperties`:
-
-| Setting | Description |
-|---|---|
-| `logBackupFrequencyInSeconds` | Frequency of transaction log backups. Set to `0` to disable log backups. |
-| `logRetentionHours` | How long to retain log backups. Use `-1` to retain logs until the preceding snapshot expires. |
-| `copyOnly` | When `true`, backups are copy-only and do not interrupt the native SQL Server log chain. |
-
-=== "GraphQL"
-    ```graphql
-    --8<-- "code/Rubrik-Security-Cloud-API/Data-Protection/Data-Center/Microsoft-SQL/assignSla.gql"
-    ```
-=== "PowerShell SDK"
-    ```powershell
-    --8<-- "code/Rubrik-Security-Cloud-API/Data-Protection/Data-Center/Microsoft-SQL/assignSla.ps1"
-    ```
-=== "Shell"
-    ```bash
-    --8<-- "code/Rubrik-Security-Cloud-API/Data-Protection/Data-Center/Microsoft-SQL/assignSla.sh"
-    ```
+Use the `assignSla` mutation to assign an SLA Domain to SQL Server databases, instances, or hosts. See [SLA Domains](../SLA-Domains.md#assigning-an-sla-to-a-workload) for the full walkthrough.
 
 ### Database-Level Settings
 
@@ -114,9 +91,11 @@ Common settings in `updateProperties`:
 
 ## On-Demand Backup
 
-### Full or Differential Snapshot
+### On-Demand Snapshot
 
-Trigger an immediate backup outside the scheduled SLA policy. Always provide `baseOnDemandSnapshotConfig.slaId` — omitting it causes the snapshot to be **retained indefinitely** with no automatic expiry. To force a full backup regardless of what the policy would schedule, add `forceFullSnapshot: true`.
+Trigger an immediate backup outside the scheduled SLA policy. Always provide `baseOnDemandSnapshotConfig.slaId` — omitting it causes the snapshot to be **retained indefinitely** with no automatic expiry.
+
+Setting `forceFullSnapshot: true` forces a complete data transfer to the Rubrik cluster, bypassing deduplication against any prior snapshot. The result is a self-contained recovery point that does not depend on earlier snapshots, at the cost of higher storage usage. Omit the field (or set it to `false`) to use Rubrik's normal incremental-forever transfer.
 
 === "GraphQL"
     ```graphql

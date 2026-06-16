@@ -28,6 +28,9 @@ Nutanix AHV is a hypervisor developed by Nutanix.
 ## [NAS Unstructured Data](NAS-Unstructured-Data.md)
 NAS Unstructured Data refers to file-based data that is not structured in a database. This can include data stored on Network Attached Storage (NAS) systems.
 
+## [NAS Cloud Direct (NCD)](NAS-Cloud-Direct.md)
+NAS Cloud Direct (NCD) protects NAS file data using Rubrik Cloud Direct clusters with RSC-native snapshots, and exposes an API-driven granular recovery flow for searching, browsing, and restoring individual files.
+
 ## [Filesets](Filesets.md)
 Filesets are a collection of files that are protected together. Filesets can be used to protect unstructured data on Windows and Linux hosts.
 

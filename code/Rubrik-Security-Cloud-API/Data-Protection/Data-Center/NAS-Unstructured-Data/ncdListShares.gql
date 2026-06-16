@@ -1,0 +1,37 @@
+query {
+  cloudDirectNasShares(
+    sortBy: NAME
+    sortOrder: ASC
+    filter: [
+      { field: IS_RELIC, texts: "false" }
+      { field: IS_REPLICATED, texts: "false" }
+    ]
+  ) {
+    nodes {
+      id
+      name
+      protocol
+      ncdPolicyName
+      cloudDirectId
+      isStale
+      totalSnapshots
+      cloudDirectNasSystem {
+        id
+        name
+        vendorType
+      }
+      cloudDirectNasNamespace {
+        id
+        name
+      }
+      effectiveSlaDomain {
+        id
+        name
+      }
+    }
+    pageInfo {
+      endCursor
+      hasNextPage
+    }
+  }
+}

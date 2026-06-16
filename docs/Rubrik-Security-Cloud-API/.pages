@@ -2,6 +2,7 @@ nav:
   - index.md
   - API-playground.md
   - authentication.md
+  - pagination.md
   - API-Reference
   - REST-API
   - Data-Protection

@@ -1,0 +1,23 @@
+query {
+  searchSnappableVersionedFiles(
+    snappableFid: "11111111-2222-3333-4444-555555555555"
+    searchQuery: "quarterly-report"
+    usePrefixSearch: false
+  ) {
+    nodes {
+      absolutePath
+      displayPath
+      filename
+      fileVersions {
+        snapshotId
+        size
+        lastModified
+        fileMode
+      }
+    }
+    pageInfo {
+      endCursor
+      hasNextPage
+    }
+  }
+}
