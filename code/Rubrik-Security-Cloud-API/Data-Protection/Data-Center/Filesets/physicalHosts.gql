@@ -1,0 +1,43 @@
+query {
+  # hostRoot is required. Query WINDOWS_HOST_ROOT, LINUX_HOST_ROOT, or
+  # NAS_HOST_ROOT separately — a single call cannot span OS families.
+  physicalHosts(hostRoot: LINUX_HOST_ROOT, filter: [
+    {field: IS_RELIC texts: "false"}
+    {field: IS_REPLICATED texts: "false"}
+  ]) {
+    nodes {
+      id
+      name
+      osType
+      osName
+      connectionStatus {
+        connectivity
+      }
+      cluster {
+        id
+        name
+      }
+      # The filesets configured on this host. Each is a snappable.
+      physicalChildConnection {
+        nodes {
+          ... on LinuxFileset {
+            id
+            name
+            effectiveSlaDomain {
+              id
+              name
+            }
+          }
+          ... on WindowsFileset {
+            id
+            name
+            effectiveSlaDomain {
+              id
+              name
+            }
+          }
+        }
+      }
+    }
+  }
+}

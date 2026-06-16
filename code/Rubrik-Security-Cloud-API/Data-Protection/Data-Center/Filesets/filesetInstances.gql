@@ -1,0 +1,40 @@
+query {
+  # There is no fileset(fid) or filesets query. Fileset instances are
+  # reached through their template's descendantConnection. Pass the
+  # template's FID (from the filesetTemplates query).
+  filesetTemplate(fid: "8d3e1f20-4a6b-4c2d-9e1f-2a3b4c5d6e7f") {
+    id
+    name
+    osType
+    descendantConnection {
+      nodes {
+        id
+        name
+        effectiveSlaDomain {
+          id
+          name
+        }
+        cluster {
+          id
+          name
+        }
+        ... on LinuxFileset {
+          cdmId
+          isRelic
+          newestSnapshot {
+            id
+            date
+          }
+        }
+        ... on WindowsFileset {
+          cdmId
+          isRelic
+          newestSnapshot {
+            id
+            date
+          }
+        }
+      }
+    }
+  }
+}

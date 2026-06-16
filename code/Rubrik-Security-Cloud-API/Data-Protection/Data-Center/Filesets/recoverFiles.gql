@@ -1,0 +1,27 @@
+mutation filesetRecoverFiles {
+  filesetRecoverFiles(input: {
+    snapshotFid: "f79b1102-77b5-4434-8400-c2a66c9b2dc1"
+    osType: LINUX
+    # NoShareType for a physical host; NFS or SMB for a NAS share.
+    shareType: NoShareType
+
+    # The backend reads ONLY this list (see SPARK-42157).
+    # restorePath: "" restores in place to the original location;
+    # a non-empty value restores to that alternate directory on the same host.
+    restorePathPairList: [
+      { path: "/var/www/html/config.php", restorePath: "" }
+    ]
+
+    config: {
+      ignoreErrors: false
+      # config.restoreConfig is schema-required and must be non-empty to
+      # pass validation, but the backend ignores it. Populate it with the
+      # same paths as restorePathPairList above.
+      restoreConfig: [
+        { restorePathPair: { path: "/var/www/html/config.php", restorePath: "" } }
+      ]
+    }
+  }) {
+    id
+  }
+}
