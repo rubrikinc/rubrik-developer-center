@@ -1,0 +1,19 @@
+query {
+  # Both id (the snapshot ID) and path are required. Use a leading
+  # path such as "/" (Linux) or "C:\\" (Windows) to list the root.
+  filesetSnapshotFiles(
+    id: "f79b1102-77b5-4434-8400-c2a66c9b2dc1"
+    path: "/var/www/html"
+    limit: 100
+    offset: 0
+  ) {
+    data {
+      filename
+      path
+      size
+      lastModified
+      fileMode
+    }
+    hasMore
+  }
+}

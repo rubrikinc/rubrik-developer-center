@@ -1,0 +1,13 @@
+mutation filesetDownloadSnapshotFiles {
+  filesetDownloadSnapshotFiles(input: {
+    # id is the snapshot ID.
+    id: "f79b1102-77b5-4434-8400-c2a66c9b2dc1"
+    config: {
+      sourceDirs: [ "/var/www/html/config.php" ]
+      # Optional, CDM v9.0.1+: password-protect the generated ZIP.
+      zipPassword: "ChangeMe123!"
+    }
+  }) {
+    id
+  }
+}
