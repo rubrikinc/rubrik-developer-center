@@ -501,6 +501,8 @@
       
         
       
+        
+      
     
     
     
@@ -524,6 +526,8 @@
       
         
           
+        
+      
         
       
         
@@ -1075,7 +1079,7 @@
 <p>The Rubrik Security Cloud PowerShell module extends your PowerShell console to give you full access to the Rubrik Security Cloud API.</p>
 <ul>
 <li><strong>Easy to use cmdlets</strong> provide maximum efficiency to perform tasks.</li>
-<li><strong>Advanced cmdlets</strong> facilitate advanced access to the Rubrik Security Cloud API, opening up the entire <abbr title="Rubrik Security Cloud: The modern data security SaaS management plane">RSC</abbr> API toautomation through PowerShell.</li>
+<li><strong>Advanced cmdlets</strong> facilitate advanced access to the Rubrik Security Cloud API, opening up the entire RSC API toautomation through PowerShell.</li>
 <li><strong>Integrated Help</strong> is provided for each cmdlet, and even the API schema.</li>
 <li><strong>Rubrik supported.</strong> Customer support is available for help on individual commands, but not script logic.</li>
 </ul>
@@ -1109,13 +1113,13 @@
 <p>PowerShell should auto-import the module upon use of any cmdlet in the module, but it can also be forced using the <code>Import-Module</code> cmdlet if issues arise.
 <div class="language-PowerShell highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="nb">Import-Module</span> <span class="n">RubrikSecurityCloud</span>
 </span></code></pre></div></p>
-<h2 id="connecting-to-rsc">Connecting to <abbr title="Rubrik Security Cloud: The modern data security SaaS management plane">RSC</abbr></h2>
+<h2 id="connecting-to-rsc">Connecting to RSC</h2>
 <hr />
-<p>The <abbr title="Rubrik Security Cloud: The modern data security SaaS management plane">RSC</abbr> PowerShell Module utilizes <abbr title="Rubrik Security Cloud: The modern data security SaaS management plane">RSC</abbr> Service Accounts for authentication. Create a Service Account and download the JSON file. </p>
+<p>The RSC PowerShell Module utilizes RSC Service Accounts for authentication. Create a Service Account and download the JSON file. </p>
 <p>The Service Account JSON file contains unencrypted credentials. The <code>Set-RscServiceAccountFile</code> will created an encrypted credentials file and offer to automatically remove the JSON file from disk.</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>Set-RscServiceAccountFile -InputFilePath /path/to/service_account.json
 </span></code></pre></div>
-<p>Connect to <abbr title="Rubrik Security Cloud: The modern data security SaaS management plane">RSC</abbr> using the <code>Connect-Rsc</code> cmdlet. The <abbr title="Rubrik Security Cloud: The modern data security SaaS management plane">RSC</abbr> instance and credentials are automatically retrieved from the encrypted credentials XML.</p>
+<p>Connect to RSC using the <code>Connect-Rsc</code> cmdlet. The RSC instance and credentials are automatically retrieved from the encrypted credentials XML.</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>Connect-Rsc
 </span></code></pre></div>
 <h2 id="getting-help">Getting Help</h2>
@@ -1128,7 +1132,7 @@
 </span></code></pre></div>
 <h2 id="updating">Updating</h2>
 <hr />
-<p>To update to the latest version of the <abbr title="Rubrik Security Cloud: The modern data security SaaS management plane">RSC</abbr> PowerShell module, use the <code>Update-Module</code> cmdlet. Restart the PowerShell terminal session or use <code>Remove-Module RubrikSecurityCloud</code> to unload the old version from memory. Import the new module version using <code>Import-Module RubrikSecurityCloud</code>.</p>
+<p>To update to the latest version of the RSC PowerShell module, use the <code>Update-Module</code> cmdlet. Restart the PowerShell terminal session or use <code>Remove-Module RubrikSecurityCloud</code> to unload the old version from memory. Import the new module version using <code>Import-Module RubrikSecurityCloud</code>.</p>
 <div class="language-PowerShell highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="nb">Update-Module</span> <span class="n">RubrikSecurityCloud</span> <span class="n">-Scope</span> <span class="n">CurrentUser</span>
 </span></code></pre></div>
 <div class="admonition note">

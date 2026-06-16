@@ -501,6 +501,8 @@
       
         
       
+        
+      
     
     
     
@@ -524,6 +526,8 @@
       
         
           
+        
+      
         
       
         
@@ -1227,27 +1231,27 @@
   <h1>Advanced Usage</h1>
 
 <p>The goal at Rubrik is to have a cmdlet for every useful task that needs to be performed. As we strive toward this goal, there may be times where an easy-to-use cmdlet is not available. This may also be the case for new features, or edge cases that are not yet supported by the cmdlets. For this reason, it may be necessary to interact with the Rubrik Security Cloud API at a lower level.</p>
-<p>At its heart, The Rubrik Security Cloud PowerShell library is a collection of .NET libraries to provide full access to the API without writing any <abbr title="A query language for APIs that provides a complete and understandble description of the data in the API. GraphQL is a strongly typed architecture, which means everything has a type and there is no guessing on the structure.">GraphQL</abbr> queries. While writing <abbr title="A query language for APIs that provides a complete and understandble description of the data in the API. GraphQL is a strongly typed architecture, which means everything has a type and there is no guessing on the structure.">GraphQL</abbr> directly is not required, it is necessary to understand and utilize the API documentation since they are still <abbr title="A query language for APIs that provides a complete and understandble description of the data in the API. GraphQL is a strongly typed architecture, which means everything has a type and there is no guessing on the structure.">GraphQL</abbr> queries written in .NET/PowerShell.</p>
+<p>At its heart, The Rubrik Security Cloud PowerShell library is a collection of .NET libraries to provide full access to the API without writing any GraphQL queries. While writing GraphQL directly is not required, it is necessary to understand and utilize the API documentation since they are still GraphQL queries written in .NET/PowerShell.</p>
 <h2 id="low-level-cmdlets">'Low-level' cmdlets</h2>
 <hr />
-<p>The following cmdlets are essential to working with the <abbr title="Rubrik Security Cloud: The modern data security SaaS management plane">RSC</abbr> API through the PowerShell module.</p>
+<p>The following cmdlets are essential to working with the RSC API through the PowerShell module.</p>
 <ul>
 <li>
 <p><code>New-RscQuery</code>,<code>New-RscMutation</code> queries are split into two categories: Queries(read) and Mutations(writes). These cmdlets will create a query object for either a query or a mutation respectively. Interestingly, queries and mutations are both considered "queries" so the word "query" will be used generically for either throughout the documentation.</p>
 </li>
 <li>
-<p><code>Invoke-Rsc</code> performs the provided query object against the <abbr title="Rubrik Security Cloud: The modern data security SaaS management plane">RSC</abbr> API. It returns the full HTTP response, including the data provided by the query, converted to .NET/PowerShell objects.</p>
+<p><code>Invoke-Rsc</code> performs the provided query object against the RSC API. It returns the full HTTP response, including the data provided by the query, converted to .NET/PowerShell objects.</p>
 </li>
 <li>
 <p><code>Get-RscHelp</code> can be used to get information about queries, their inputs, and the object types they return. This is a lightweight version of the API reference, but not a complete substitute.</p>
 </li>
 <li>
-<p><code>Get-RscType</code> instantiates an object of a specific type within <abbr title="Rubrik Security Cloud: The modern data security SaaS management plane">RSC</abbr>. <abbr title="A query language for APIs that provides a complete and understandble description of the data in the API. GraphQL is a strongly typed architecture, which means everything has a type and there is no guessing on the structure.">GraphQL</abbr> is a strongly typed architecture, which means everything has a type and there is no guessing on the structure. This is especially beneficial when working with large, complex objects. The .NET libraries take the types from the <abbr title="A query language for APIs that provides a complete and understandble description of the data in the API. GraphQL is a strongly typed architecture, which means everything has a type and there is no guessing on the structure.">GraphQL</abbr> API and create .NET equivilents.</p>
+<p><code>Get-RscType</code> instantiates an object of a specific type within RSC. GraphQL is a strongly typed architecture, which means everything has a type and there is no guessing on the structure. This is especially beneficial when working with large, complex objects. The .NET libraries take the types from the GraphQL API and create .NET equivilents.</p>
 </li>
 </ul>
-<h2 id="constructing-powershell-code-from-a-graphql-query">Constructing PowerShell code from a <abbr title="A query language for APIs that provides a complete and understandble description of the data in the API. GraphQL is a strongly typed architecture, which means everything has a type and there is no guessing on the structure.">GraphQL</abbr> query</h2>
+<h2 id="constructing-powershell-code-from-a-graphql-query">Constructing PowerShell code from a GraphQL query</h2>
 <hr />
-<p>The following <abbr title="A query language for APIs that provides a complete and understandble description of the data in the API. GraphQL is a strongly typed architecture, which means everything has a type and there is no guessing on the structure.">GraphQL</abbr> example is a simple query to identify all objects in the Gold <abbr title="Service Level Agreement. An SLA Domain is a data protection policy in Rubrik.">SLA</abbr> that are out of compliance in the last 24 hours. The goal will be to convert this to PowerShell.</p>
+<p>The following GraphQL example is a simple query to identify all objects in the Gold SLA that are out of compliance in the last 24 hours. The goal will be to convert this to PowerShell.</p>
 <div class="language-GraphQL highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="k">query</span><span class="w"> </span><span class="nf">example</span><span class="w"> </span><span class="p">{</span>
 </span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">  </span><span class="n">snappableConnection</span><span class="w"> </span><span class="p">(</span><span class="n">filter</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
 </span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">    </span><span class="n">slaDomain</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="n">id</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;00000000-0000-0000-0000-000000000000&quot;</span><span class="p">}</span>
@@ -1302,7 +1306,7 @@
 </span><span id="__span-2-21"><a id="__codelineno-2-21" name="__codelineno-2-21" href="#__codelineno-2-21"></a><span class="n">Var</span>            <span class="n">Property</span>   <span class="n">RubrikSecurityCloud</span><span class="p">.</span><span class="n">RscGqlVars</span> <span class="n">Var</span> <span class="p">{</span><span class="n">get</span><span class="p">;</span><span class="n">set</span><span class="p">;}</span>
 </span></code></pre></div>
 <h3 id="setting-variables">Setting Variables</h3>
-<p>The first step will be to set the filter variables for <abbr title="Service Level Agreement. An SLA Domain is a data protection policy in Rubrik.">SLA</abbr> Domain, <abbr title="Service Level Agreement. An SLA Domain is a data protection policy in Rubrik.">SLA</abbr> Time Range, and Compliance. The filter and each of the properties are their own object types. Using <code>Get-RscHelp</code> will show the type name for the filter.</p>
+<p>The first step will be to set the filter variables for SLA Domain, SLA Time Range, and Compliance. The filter and each of the properties are their own object types. Using <code>Get-RscHelp</code> will show the type name for the filter.</p>
 <div class="language-PowerShell highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="nb">Get-RscHelp</span> <span class="n">-Query</span> <span class="n">snappableConnection</span>
 </span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="c"># GraphQL field: snappableConnection</span>
 </span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>
@@ -1355,7 +1359,7 @@
 <div class="language-PowerShell highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="nv">$query</span><span class="p">.</span><span class="n">Var</span><span class="p">.</span><span class="k">filter</span><span class="p">.</span><span class="n">SlaTimeRange</span> <span class="p">=</span> <span class="no">[RubrikSecurityCloud.Types.SlaComplianceTimeRange]</span><span class="p">::</span><span class="n">LAST_24_HOURS</span>
 </span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="nv">$query</span><span class="p">.</span><span class="n">Var</span><span class="p">.</span><span class="k">filter</span><span class="p">.</span><span class="n">ComplianceStatus</span> <span class="p">=</span> <span class="p">@(</span><span class="no">[RubrikSecurityCloud.Types.ComplianceStatusEnum]</span><span class="p">::</span><span class="n">OUT_OF_COMPLIANCE</span><span class="p">)</span>
 </span></code></pre></div>
-<p>Setting the <code>SlaDomain</code> variable requires creating the <abbr title="Service Level Agreement. An SLA Domain is a data protection policy in Rubrik.">SLA</abbr> filter object, and setting the ID.</p>
+<p>Setting the <code>SlaDomain</code> variable requires creating the SLA filter object, and setting the ID.</p>
 <div class="language-PowerShell highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="nv">$query</span><span class="p">.</span><span class="n">Var</span><span class="p">.</span><span class="k">filter</span><span class="p">.</span><span class="n">SlaDomain</span> <span class="p">=</span> <span class="nb">Get-RscType</span> <span class="n">-Name</span> <span class="n">SnappableSlaDomainFilterInput</span>
 </span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="c"># The ID can be added dynamically instead of hardcoding: Get-RscSla -Name &quot;Gold&quot;</span>
 </span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="nv">$query</span><span class="p">.</span><span class="n">Var</span><span class="p">.</span><span class="k">filter</span><span class="p">.</span><span class="n">SlaDomain</span><span class="p">.</span><span class="n">id</span> <span class="p">=</span> <span class="s2">&quot;00000000-0000-0000-0000-000000000000&quot;</span> 
@@ -1392,7 +1396,7 @@
 <div class="language-PowerShell highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="nv">$query</span><span class="p">.</span><span class="n">field</span><span class="p">.</span><span class="n">nodes</span><span class="p">[</span><span class="n">0</span><span class="p">].</span><span class="n">UsedBytes</span> <span class="p">=</span> <span class="n">1</span>
 </span></code></pre></div>
 <h3 id="executing-the-query">Executing the Query</h3>
-<p>Passing the query into <code>Invoke-Rsc</code> will execute the query against the <abbr title="Rubrik Security Cloud: The modern data security SaaS management plane">RSC</abbr> API.  Store the result in a variable and view the contents. The response will contain the <code>nodes</code> array of objects were requested. Note that not all queries are 'connection' queries with <code>nodes</code>.</p>
+<p>Passing the query into <code>Invoke-Rsc</code> will execute the query against the RSC API.  Store the result in a variable and view the contents. The response will contain the <code>nodes</code> array of objects were requested. Note that not all queries are 'connection' queries with <code>nodes</code>.</p>
 <div class="language-PowerShell highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="nv">$result</span> <span class="p">=</span> <span class="nb">Invoke-Rsc</span> <span class="nv">$query</span>
 </span><span id="__span-11-2"><a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a><span class="nv">$result</span>
 </span><span id="__span-11-3"><a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a>
