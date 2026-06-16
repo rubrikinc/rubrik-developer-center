@@ -110,6 +110,5 @@ plugins:
 hooks:
   - hooks/generate_llms_txt.py
 watch:
-  - includes
   - code
   - overrides

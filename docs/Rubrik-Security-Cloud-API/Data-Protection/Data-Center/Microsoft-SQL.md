@@ -131,6 +131,17 @@ Take an on-demand transaction log backup for a specific database. The database m
 
 All backup and recovery operations are asynchronous and return a request `id`. Poll `mssqlJobStatus` with the request `id` and `clusterUuid` to track progress.
 
+The `id` string follows the format `{JOB_TYPE}_{database-id}_{run-id}:::0`, where `database-id` is the FID of the source database, `run-id` is a unique identifier for that job execution, and `0` is the instance number. The job type prefix differs from the mutation name:
+
+| Operation | Job type prefix |
+|---|---|
+| `createOnDemandMssqlBackup` | `MSSQL_DB_BACKUP` |
+| `takeMssqlLogBackup` | `MSSQL_LOG_BACKUP` |
+| `restoreMssqlDatabase` | `RESTORE_MSSQL_DB` |
+| `exportMssqlDatabase` | `RESTORE_MSSQL_DB` |
+| `createMssqlLiveMount` | `MSSQL_DB_MOUNT` |
+| `deleteMssqlLiveMount` | `MSSQL_DB_UNMOUNT` |
+
 === "GraphQL"
     ```graphql
     --8<-- "code/Rubrik-Security-Cloud-API/Data-Protection/Data-Center/Microsoft-SQL/jobstatus.gql"
