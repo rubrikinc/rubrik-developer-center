@@ -1,0 +1,9 @@
+mutation {
+  deleteOracleMount(input: {
+    id: "99999999-8888-7777-6666-555555555555"   # Live Mount object ID, not the source database ID
+    force: false
+  }) {
+    id
+    status
+  }
+}

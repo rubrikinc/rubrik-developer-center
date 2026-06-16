@@ -1,0 +1,14 @@
+mutation {
+  instantRecoverOracleSnapshot(input: {
+    id: "40bac7c1-87ad-4ac0-b4a6-34ac592d8e77"
+    config: {
+      # Set exactly ONE of timestampMs, snapshotId, or scn
+      recoveryPoint: {
+        timestampMs: 1737000000000   # epoch milliseconds (Jan 2025)
+      }
+    }
+  }) {
+    id
+    status
+  }
+}
