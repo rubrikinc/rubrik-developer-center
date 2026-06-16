@@ -1,9 +1,11 @@
 query {
-  oracleTopLevelDescendants(filter: [
-    {field: NAME_EXACT_MATCH texts: "example"}
-    {field: IS_RELIC texts: "false"}
-    {field: IS_REPLICATED texts: "false"}
-  ]) {
+  oracleTopLevelDescendants(
+    typeFilter: [OracleHost, OracleRac]
+    filter: [
+      {field: IS_RELIC texts: "false"}
+      {field: IS_REPLICATED texts: "false"}
+    ]
+  ) {
     nodes {
       name
       id

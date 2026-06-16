@@ -1,0 +1,16 @@
+query {
+  oracleRecoverableRangesMinimal(input: {
+    id: "40bac7c1-87ad-4ac0-b4a6-34ac592d8e77"
+    includeSnapshots: true
+  }) {
+    ranges {
+      beginTime
+      endTime
+      dbSnapshotSummaries {
+        fid
+        date
+        isOnDemand
+      }
+    }
+  }
+}
