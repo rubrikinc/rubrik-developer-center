@@ -1,3 +1,4 @@
+# No toolkit cmdlet available
 $query = New-RscQuery -GqlQuery mssqlAvailabilityGroupDatabaseVirtualGroups
 $query.var.fids = @(
     "7734f7a2-9388-59e3-bcc5-25cb0a531910",

@@ -1,0 +1,23 @@
+# workloadId is the share FID passed as a String (not a UUID scalar).
+query {
+  snapshotsOfCloudDirectShare(
+    workloadId: "11111111-2222-3333-4444-555555555555"
+    sortBy: CREATION_TIME
+    sortOrder: DESC
+  ) {
+    nodes {
+      id
+      date
+      expirationDate
+      protocol
+      isIndexed
+      isQuarantined
+      isExpired
+      isOnDemandSnapshot
+    }
+    pageInfo {
+      endCursor
+      hasNextPage
+    }
+  }
+}

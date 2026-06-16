@@ -1,10 +1,6 @@
-$mutation = New-RscMutation -GqlQuery createMssqlLiveMount -FieldProfile FULL
-$mutation.var.input = New-Object -TypeName RubrikSecurityCloud.Types.CreateMssqlLiveMountInput
-$mutation.var.input.Id = "85e98e61-4c1f-496a-b846-5eb871966025"
-$config = New-Object -TypeName RubrikSecurityCloud.Types.MountMssqlDbConfigInput
-$config.MountedDatabaseName = "AdventureWorks_LiveMount"
-$recoveryPoint = New-Object -TypeName RubrikSecurityCloud.Types.MssqlRecoveryPointInput
-$recoveryPoint.Date = (Get-Date "2025-01-15T14:30:00Z")
-$config.RecoveryPoint = $recoveryPoint
-$mutation.var.input.Config = $config
-$mutation.invoke()
+$db = Get-RscMssqlDatabase -Name "AdventureWorks2019"
+$inst = Get-RscMssqlInstance -HostName "sql1.rubrik-demo.com" -ClusterId "124d26df-c31f-49a3-a8c3-77b10c9470c2"
+New-RscMssqlLiveMount -RscMssqlDatabase $db `
+    -MountedDatabaseName "AdventureWorks_LiveMount" `
+    -TargetMssqlInstance $inst `
+    -RecoveryDateTime "2025-01-15T14:30:00Z"

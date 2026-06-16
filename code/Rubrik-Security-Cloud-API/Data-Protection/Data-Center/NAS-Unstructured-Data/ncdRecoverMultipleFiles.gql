@@ -1,0 +1,15 @@
+# All dstPath values must be identical (same destination directory).
+# All srcPaths must come from the same snapshot and must not overlap.
+mutation {
+  recoverCloudDirectNasShare(input: {
+    snapshotFid: "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee"
+    srcShareName: "/finance"
+    restorePathPairList: [
+      { srcPath: "/finance/quarterly-report.xlsx", dstPath: "/restored/2026-06-15" }
+      { srcPath: "/finance/budget.csv", dstPath: "/restored/2026-06-15" }
+    ]
+  }) {
+    id
+    status
+  }
+}

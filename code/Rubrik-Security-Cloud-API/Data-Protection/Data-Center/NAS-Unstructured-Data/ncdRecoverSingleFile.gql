@@ -1,0 +1,14 @@
+# An empty dstPath overwrites the source path in place.
+# Provide a non-empty dstPath to restore to an alternate location.
+mutation {
+  recoverCloudDirectNasShare(input: {
+    snapshotFid: "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee"
+    srcShareName: "/finance"
+    restorePathPairList: [
+      { srcPath: "/finance/quarterly-report.xlsx", dstPath: "" }
+    ]
+  }) {
+    id
+    status
+  }
+}

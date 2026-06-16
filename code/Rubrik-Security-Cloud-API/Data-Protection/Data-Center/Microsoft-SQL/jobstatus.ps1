@@ -1,3 +1,4 @@
+# No toolkit cmdlet available
 $requestId = "MSSQL_DB_BACKUP_00000000-0000-0000-0000-000000000000_00000000-0000-0000-0000-000000000000:::0"
 $clusterId = "00000000-0000-0000-0000-000000000000"
 $query = New-RscQuery -GqlQuery mssqlJobStatus -FieldProfile FULL

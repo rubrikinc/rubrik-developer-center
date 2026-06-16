@@ -48,47 +48,5 @@ Title: Unstructured Data (NAS)
     ```
 
 ## Cloud Direct
-### Shares
-#### Retrieval
-=== "GraphQL"
-    ```graphql
-    --8<-- "code/Rubrik-Security-Cloud-API/Data-Protection/Data-Center/NAS-Unstructured-Data/cloudDirectShares.gql"
-    ```
-=== "PowerShell SDK"
-    ```powershell
-    --8<-- "code/Rubrik-Security-Cloud-API/Data-Protection/Data-Center/NAS-Unstructured-Data/cloudDirectShares.ps1"
-    ```
-=== "Shell"
-    ```bash
-    --8<-- "code/Rubrik-Security-Cloud-API/Data-Protection/Data-Center/NAS-Unstructured-Data/cloudDirectShares.sh"
-    ```
 
-### Systems
-#### Retrieval
-=== "GraphQL"
-    ```graphql
-    --8<-- "code/Rubrik-Security-Cloud-API/Data-Protection/Data-Center/NAS-Unstructured-Data/systems.gql"
-    ```
-=== "PowerShell SDK"
-    ```powershell
-    --8<-- "code/Rubrik-Security-Cloud-API/Data-Protection/Data-Center/NAS-Unstructured-Data/systems.ps1"
-    ```
-=== "Shell"
-    ```bash
-    --8<-- "code/Rubrik-Security-Cloud-API/Data-Protection/Data-Center/NAS-Unstructured-Data/systems.sh"
-    ```
-
-### Namespaces
-#### Retrieval
-=== "GraphQL"
-    ```graphql
-    --8<-- "code/Rubrik-Security-Cloud-API/Data-Protection/Data-Center/NAS-Unstructured-Data/cloudDirectNamespaces.gql"
-    ```
-=== "PowerShell SDK"
-    ```powershell
-    --8<-- "code/Rubrik-Security-Cloud-API/Data-Protection/Data-Center/NAS-Unstructured-Data/cloudDirectNamespaces.ps1"
-    ```
-=== "Shell"
-    ```bash
-    --8<-- "code/Rubrik-Security-Cloud-API/Data-Protection/Data-Center/NAS-Unstructured-Data/cloudDirectNamespaces.sh"
-    ```
+For NAS Cloud Direct (NCD) — discovery, snapshot management, and granular file recovery — see the dedicated [NAS Cloud Direct (NCD)](NAS-Cloud-Direct.md) guide.

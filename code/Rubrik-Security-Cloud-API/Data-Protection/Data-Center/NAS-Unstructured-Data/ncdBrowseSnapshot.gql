@@ -1,0 +1,19 @@
+query {
+  browseSnapshotFileConnection(
+    snapshotFid: "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee"
+    path: "/"
+  ) {
+    nodes {
+      absolutePath
+      displayPath
+      filename
+      fileMode
+      size
+      lastModified
+    }
+    pageInfo {
+      endCursor
+      hasNextPage
+    }
+  }
+}

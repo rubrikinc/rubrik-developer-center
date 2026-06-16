@@ -1,11 +1,5 @@
-$mutation = New-RscMutation -GqlQuery manageProtectionForLinkedObjects
-$mutation.var.input = New-Object -TypeName RubrikSecurityCloud.Types.ManageProtectionForLinkedObjectsInput
-$mutation.var.input.Operation = [RubrikSecurityCloud.Types.ManageProtectionForLinkedObjectsOperationType]::UNLINK
-$slaReq = New-Object -TypeName RubrikSecurityCloud.Types.AssignSlaInput
-$slaReq.ObjectIds = @(
-    "7734f7a2-9388-59e3-bcc5-25cb0a531910",
-    "38fb7ce0-e616-53aa-a155-3b1c7216d44a"
-)
-$slaReq.SlaDomainAssignType = [RubrikSecurityCloud.Types.SlaAssignTypeEnum]::NO_ASSIGNMENT
-$mutation.var.input.AssignSlaReq = $slaReq
-$mutation.invoke()
+$ag1 = Get-RscMssqlAvailabilityGroup -AvailabilityGroupName "MyAG" -Cluster (Get-RscCluster -Name "cluster-east")
+$ag2 = Get-RscMssqlAvailabilityGroup -AvailabilityGroupName "MyAG" -Cluster (Get-RscCluster -Name "cluster-west")
+Protect-RscLinkedWorkload -InputObject $ag1 -LinkedObject $ag2 `
+    -LinkingOperation UNLINK `
+    -AssignmentType PROTECT_WITH_SLA_ID
