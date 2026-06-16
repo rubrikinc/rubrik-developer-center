@@ -503,6 +503,8 @@
       
         
       
+        
+      
     
     
     
@@ -605,6 +607,34 @@
     
   
     Authentication
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pagination/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pagination
   
 
     
@@ -732,7 +762,7 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_5" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_6" checked>
         
           
           <div class="md-nav__link md-nav__container">
@@ -763,8 +793,8 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_5_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_2_5">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_6_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_6">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -1908,49 +1938,49 @@
 <h1 id="task-based-rest-api">Task-Based REST API</h1>
 <div class="admonition warning">
 <p class="admonition-title">Beta</p>
-<p>The Task-Based REST API is currently in beta. Endpoints, request/response schemas, and behavior may change without prior notice. Backward compatibility is not guaranteed during the beta period. The <a href="../"><abbr title="Rubrik Security Cloud: The modern data security SaaS management plane">RSC</abbr> <abbr title="A query language for APIs that provides a complete and understandble description of the data in the API. GraphQL is a strongly typed architecture, which means everything has a type and there is no guessing on the structure.">GraphQL</abbr> API</a> remains the comprehensive, stable interface for all <abbr title="Rubrik Security Cloud: The modern data security SaaS management plane">RSC</abbr> operations.</p>
+<p>The Task-Based REST API is currently in beta. Endpoints, request/response schemas, and behavior may change without prior notice. Backward compatibility is not guaranteed during the beta period. The <a href="../">RSC GraphQL API</a> remains the comprehensive, stable interface for all RSC operations.</p>
 </div>
-<p>The Task-Based REST API is a REST interface for Rubrik Security Cloud (<abbr title="Rubrik Security Cloud: The modern data security SaaS management plane">RSC</abbr>). It covers the most common automation and integration tasks using familiar HTTP conventions — no <abbr title="A query language for APIs that provides a complete and understandble description of the data in the API. GraphQL is a strongly typed architecture, which means everything has a type and there is no guessing on the structure.">GraphQL</abbr> knowledge required.</p>
+<p>The Task-Based REST API is a REST interface for Rubrik Security Cloud (RSC). It covers the most common automation and integration tasks using familiar HTTP conventions — no GraphQL knowledge required.</p>
 <h2 id="when-to-use-this-api">When to use this API</h2>
-<p>The beta release of this API focuses on workloads, the protected objects in your environment. Listing what you have, checking compliance, taking snapshots, and tracking the resulting jobs are all first-class operations. <abbr title="Service Level Agreement. An SLA Domain is a data protection policy in Rubrik.">SLA</abbr> Domain management and event monitoring are included because they are the natural complements to workload operations: you need to assign protection policies and verify that jobs are completing successfully.</p>
+<p>The beta release of this API focuses on workloads, the protected objects in your environment. Listing what you have, checking compliance, taking snapshots, and tracking the resulting jobs are all first-class operations. SLA Domain management and event monitoring are included because they are the natural complements to workload operations: you need to assign protection policies and verify that jobs are completing successfully.</p>
 <p>Use the Task-Based REST API when you want to:</p>
 <ul>
 <li><strong>Inventory and monitor your environment</strong> — list workloads (protected objects), clusters, and activity events</li>
-<li><strong>Manage <abbr title="Service Level Agreement. An SLA Domain is a data protection policy in Rubrik.">SLA</abbr> Domains</strong> — create, update, assign, pause, resume, and delete protection policies</li>
+<li><strong>Manage SLA Domains</strong> — create, update, assign, pause, resume, and delete protection policies</li>
 <li><strong>Trigger and track on-demand snapshots</strong> — initiate a snapshot and poll the resulting job until it completes</li>
 <li><strong>Get started quickly</strong> — if you are comfortable with REST and <code>curl</code> or a standard HTTP library, you can make your first call in minutes</li>
 </ul>
-<p>The API is designed as a starting point. It covers a curated subset of <abbr title="Rubrik Security Cloud: The modern data security SaaS management plane">RSC</abbr> operations. If you reach the limits of what it offers, the <a href="../"><abbr title="Rubrik Security Cloud: The modern data security SaaS management plane">RSC</abbr> <abbr title="A query language for APIs that provides a complete and understandble description of the data in the API. GraphQL is a strongly typed architecture, which means everything has a type and there is no guessing on the structure.">GraphQL</abbr> API</a> covers everything — and because this API's response shapes are intentionally derived from the <abbr title="A query language for APIs that provides a complete and understandble description of the data in the API. GraphQL is a strongly typed architecture, which means everything has a type and there is no guessing on the structure.">GraphQL</abbr> schema, field names and data structures you learn here will carry over.</p>
-<h2 id="when-to-use-the-graphql-api-instead">When to use the <abbr title="A query language for APIs that provides a complete and understandble description of the data in the API. GraphQL is a strongly typed architecture, which means everything has a type and there is no guessing on the structure.">GraphQL</abbr> API instead</h2>
-<p>Choose the <a href="../"><abbr title="Rubrik Security Cloud: The modern data security SaaS management plane">RSC</abbr> <abbr title="A query language for APIs that provides a complete and understandble description of the data in the API. GraphQL is a strongly typed architecture, which means everything has a type and there is no guessing on the structure.">GraphQL</abbr> API</a> when you need:</p>
+<p>The API is designed as a starting point. It covers a curated subset of RSC operations. If you reach the limits of what it offers, the <a href="../">RSC GraphQL API</a> covers everything — and because this API's response shapes are intentionally derived from the GraphQL schema, field names and data structures you learn here will carry over.</p>
+<h2 id="when-to-use-the-graphql-api-instead">When to use the GraphQL API instead</h2>
+<p>Choose the <a href="../">RSC GraphQL API</a> when you need:</p>
 <ul>
 <li>Operations not yet available in the REST API (recovery, advanced reporting, configuration)</li>
 <li>Precise control over which fields are returned in a response</li>
-<li>Access to the full breadth of <abbr title="Rubrik Security Cloud: The modern data security SaaS management plane">RSC</abbr> capabilities</li>
+<li>Access to the full breadth of RSC capabilities</li>
 </ul>
 <table>
 <thead>
 <tr>
 <th></th>
 <th>Task-Based REST API</th>
-<th><abbr title="Rubrik Security Cloud: The modern data security SaaS management plane">RSC</abbr> <abbr title="A query language for APIs that provides a complete and understandble description of the data in the API. GraphQL is a strongly typed architecture, which means everything has a type and there is no guessing on the structure.">GraphQL</abbr> API</th>
+<th>RSC GraphQL API</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>Interface style</td>
 <td>REST — HTTP verbs and resource paths</td>
-<td><abbr title="A query language for APIs that provides a complete and understandble description of the data in the API. GraphQL is a strongly typed architecture, which means everything has a type and there is no guessing on the structure.">GraphQL</abbr> — single endpoint, typed queries</td>
+<td>GraphQL — single endpoint, typed queries</td>
 </tr>
 <tr>
 <td>Coverage</td>
 <td>Common automation journeys</td>
-<td>All <abbr title="Rubrik Security Cloud: The modern data security SaaS management plane">RSC</abbr> operations</td>
+<td>All RSC operations</td>
 </tr>
 <tr>
 <td>Learning curve</td>
 <td>Low — familiar to any REST developer</td>
-<td>Moderate — requires <abbr title="A query language for APIs that provides a complete and understandble description of the data in the API. GraphQL is a strongly typed architecture, which means everything has a type and there is no guessing on the structure.">GraphQL</abbr> and schema knowledge</td>
+<td>Moderate — requires GraphQL and schema knowledge</td>
 </tr>
 <tr>
 <td>Stability</td>
@@ -1960,18 +1990,18 @@
 <tr>
 <td>Best for</td>
 <td>Getting started, common tasks</td>
-<td>Advanced workflows, full <abbr title="Rubrik Security Cloud: The modern data security SaaS management plane">RSC</abbr> capabilities</td>
+<td>Advanced workflows, full RSC capabilities</td>
 </tr>
 </tbody>
 </table>
 <h2 id="authentication">Authentication</h2>
-<p>The Task-Based REST API uses the same authentication as the <abbr title="Rubrik Security Cloud: The modern data security SaaS management plane">RSC</abbr> <abbr title="A query language for APIs that provides a complete and understandble description of the data in the API. GraphQL is a strongly typed architecture, which means everything has a type and there is no guessing on the structure.">GraphQL</abbr> API: OAuth2 Client Credentials with a service account. You obtain a short-lived bearer token and include it on every request as <code>Authorization: Bearer &lt;token&gt;</code>.</p>
+<p>The Task-Based REST API uses the same authentication as the RSC GraphQL API: OAuth2 Client Credentials with a service account. You obtain a short-lived bearer token and include it on every request as <code>Authorization: Bearer &lt;token&gt;</code>.</p>
 <p>See <a href="../authentication/">Authentication</a> for setup instructions and code examples. The token endpoint and credential format are identical — no additional configuration is needed to use the REST API.</p>
 <h2 id="base-url-and-interactive-documentation">Base URL and interactive documentation</h2>
-<p>The REST API is hosted on your <abbr title="Rubrik Security Cloud: The modern data security SaaS management plane">RSC</abbr> account:</p>
+<p>The REST API is hosted on your RSC account:</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>https://{your-account}.my.rubrik.com/api/rest
 </span></code></pre></div>
-<p>Replace <code>{your-account}</code> with your <abbr title="Rubrik Security Cloud: The modern data security SaaS management plane">RSC</abbr> subdomain (the same subdomain used to access the <abbr title="Rubrik Security Cloud: The modern data security SaaS management plane">RSC</abbr> web UI).</p>
+<p>Replace <code>{your-account}</code> with your RSC subdomain (the same subdomain used to access the RSC web UI).</p>
 <p>Interactive documentation — including the full endpoint reference, request and response schemas, and a built-in request runner — is available at:</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>https://{your-account}.my.rubrik.com/api/rest/docs
 </span></code></pre></div>
@@ -1991,8 +2021,8 @@
 <td>List all protected objects; get a specific workload; list its snapshots; take an on-demand snapshot; check snapshot job status</td>
 </tr>
 <tr>
-<td><strong><abbr title="Service Level Agreement. An SLA Domain is a data protection policy in Rubrik.">SLA</abbr> Domains</strong></td>
-<td>List, create, get, update, delete <abbr title="Service Level Agreement. An SLA Domain is a data protection policy in Rubrik.">SLA</abbr> Domains; assign or remove protection from workloads; pause and resume</td>
+<td><strong>SLA Domains</strong></td>
+<td>List, create, get, update, delete SLA Domains; assign or remove protection from workloads; pause and resume</td>
 </tr>
 <tr>
 <td><strong>Clusters</strong></td>
@@ -2030,7 +2060,7 @@
 </span><span id="__span-3-12"><a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a><span class="p">}</span>
 </span></code></pre></div>
 <p>Use <code>first</code> to set page size and <code>after</code> to pass the <code>endCursor</code> from a previous response. Continue until <code>hasNextPage</code> is <code>false</code>. The <code>count</code> field is the total number of matching items across all pages.</p>
-<p>This pagination shape mirrors the <abbr title="Rubrik Security Cloud: The modern data security SaaS management plane">RSC</abbr> <abbr title="A query language for APIs that provides a complete and understandble description of the data in the API. GraphQL is a strongly typed architecture, which means everything has a type and there is no guessing on the structure.">GraphQL</abbr> schema. If you later move to <abbr title="A query language for APIs that provides a complete and understandble description of the data in the API. GraphQL is a strongly typed architecture, which means everything has a type and there is no guessing on the structure.">GraphQL</abbr>, you will not need to remap your data handling code.</p>
+<p>This pagination shape mirrors the RSC GraphQL schema. If you later move to GraphQL, you will not need to remap your data handling code.</p>
 <h2 id="known-limitations">Known limitations</h2>
 <p>The following are known gaps in the beta. They will be addressed before or at general availability.</p>
 <table>
@@ -2054,7 +2084,7 @@
 <td>A top-level <code>GET /jobs/{job_id}</code> endpoint is planned</td>
 </tr>
 <tr>
-<td><abbr title="Service Level Agreement. An SLA Domain is a data protection policy in Rubrik.">SLA</abbr> Domain filtering uses <code>filterField</code>/<code>filterText</code></td>
+<td>SLA Domain filtering uses <code>filterField</code>/<code>filterText</code></td>
 <td>Other endpoints use named parameters; this inconsistency is under review</td>
 </tr>
 <tr>

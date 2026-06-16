@@ -503,6 +503,8 @@
       
         
       
+        
+      
     
     
     
@@ -605,6 +607,34 @@
     
   
     Authentication
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="pagination/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pagination
   
 
     
@@ -1863,19 +1893,19 @@
 
 <div class="admonition tip">
 <p class="admonition-title">New: Task-Based REST API (Beta)</p>
-<p>A REST interface for common <abbr title="Rubrik Security Cloud: The modern data security SaaS management plane">RSC</abbr> automation tasks is now available in beta — no <abbr title="A query language for APIs that provides a complete and understandble description of the data in the API. GraphQL is a strongly typed architecture, which means everything has a type and there is no guessing on the structure.">GraphQL</abbr> knowledge required. <a href="REST-API/">Learn more</a></p>
+<p>A REST interface for common RSC automation tasks is now available in beta — no GraphQL knowledge required. <a href="REST-API/">Learn more</a></p>
 </div>
 <h2 id="getting-started">Getting Started</h2>
-<p>The Rubrik Security Cloud (<abbr title="Rubrik Security Cloud: The modern data security SaaS management plane">RSC</abbr>) API provides programatic access to all management within Rubrik.</p>
-<h3 id="graphql-features"><abbr title="A query language for APIs that provides a complete and understandble description of the data in the API. GraphQL is a strongly typed architecture, which means everything has a type and there is no guessing on the structure.">GraphQL</abbr> Features</h3>
+<p>The Rubrik Security Cloud (RSC) API provides programatic access to all management within Rubrik.</p>
+<h3 id="graphql-features">GraphQL Features</h3>
 <ol>
-<li>Single Endpoint - The <abbr title="Rubrik Security Cloud: The modern data security SaaS management plane">RSC</abbr> API endpoint will always be <code>/api/graphql</code>.</li>
+<li>Single Endpoint - The RSC API endpoint will always be <code>/api/graphql</code>.</li>
 <li>Single HTTP method - Everything is HTTP POST.</li>
 <li>Introspection - The API documentation is built in to the API itself, providing integrated development help and schema checking.</li>
 <li>Customized Response - Queries are customized to only return the fields that is needed.</li>
 </ol>
-<h2 id="graphql-basics"><abbr title="A query language for APIs that provides a complete and understandble description of the data in the API. GraphQL is a strongly typed architecture, which means everything has a type and there is no guessing on the structure.">GraphQL</abbr> Basics</h2>
-<p><abbr title="A query language for APIs that provides a complete and understandble description of the data in the API. GraphQL is a strongly typed architecture, which means everything has a type and there is no guessing on the structure.">GraphQL</abbr> is a "query language" comparable to SQL. In SQL, one might say, "Select name and ID from the VM table." <abbr title="A query language for APIs that provides a complete and understandble description of the data in the API. GraphQL is a strongly typed architecture, which means everything has a type and there is no guessing on the structure.">GraphQL</abbr> is similar in this idea. A query is much like a SQL table. Properties (called fields in <abbr title="A query language for APIs that provides a complete and understandble description of the data in the API. GraphQL is a strongly typed architecture, which means everything has a type and there is no guessing on the structure.">GraphQL</abbr>) are like columns in that table. Unlike SQL, <abbr title="A query language for APIs that provides a complete and understandble description of the data in the API. GraphQL is a strongly typed architecture, which means everything has a type and there is no guessing on the structure.">GraphQL</abbr> fields can be complex types with their own fields, allowing functionality of a SQL join.</p>
+<h2 id="graphql-basics">GraphQL Basics</h2>
+<p>GraphQL is a "query language" comparable to SQL. In SQL, one might say, "Select name and ID from the VM table." GraphQL is similar in this idea. A query is much like a SQL table. Properties (called fields in GraphQL) are like columns in that table. Unlike SQL, GraphQL fields can be complex types with their own fields, allowing functionality of a SQL join.</p>
 <h3 id="example">Example</h3>
 <p class="annotate">Click on the arrow annotation (1) in the code to see an explanation of that part of the code.</p>
 <ol>
@@ -1901,11 +1931,11 @@
 <li><code>mssqlDatabasesExample</code> is an operation name, You can change this to whatever you want.</li>
 <li><code>mssqlDatabases</code> is the name of the query in the API.</li>
 <li><code>nodes</code> is a paginated array of objects, in this case, mssqlDatabases.</li>
-<li><code>name</code> is a property, known as a <code>field</code> in <abbr title="A query language for APIs that provides a complete and understandble description of the data in the API. GraphQL is a strongly typed architecture, which means everything has a type and there is no guessing on the structure.">GraphQL</abbr>. It has a specific type, in this case <code>name</code> is a <code>String</code>.</li>
+<li><code>name</code> is a property, known as a <code>field</code> in GraphQL. It has a specific type, in this case <code>name</code> is a <code>String</code>.</li>
 <li><code>cluster</code> is also a field in the API, but unlike <code>name</code> that is of type <code>String</code>, <code>cluster</code> is a <code>Cluster</code> type, and it has its own fields.</li>
 <li>This is the cluster <code>name</code> field. It's a field on the <code>Cluster</code> type in the API.</li>
 </ol>
-<p>To learn more about the query syntax, check out <a href="https://graphql.org/learn/queries"><abbr title="A query language for APIs that provides a complete and understandble description of the data in the API. GraphQL is a strongly typed architecture, which means everything has a type and there is no guessing on the structure.">GraphQL</abbr> Language Syntax</a>. </p>
+<p>To learn more about the query syntax, check out <a href="https://graphql.org/learn/queries">GraphQL Language Syntax</a>. </p>
 <p>Next: <a href="API-playground/">API Playground</a></p>
 
 

@@ -128,66 +128,7 @@ curl -X POST \
 
 ### Assign an SLA Domain
 
-Use `assignMssqlSlaDomainPropertiesAsync` to assign an SLA Domain and configure SQL Server-specific settings in a single call. This mutation is MSSQL-specific and supports assigning at the database, instance, or host level — pass any combination of object IDs in the `ids` array.
-
-The `configuredSlaDomainId` field sets which SLA Domain to apply. To look up SLA Domain IDs, see [SLA Domains](https://developer.rubrik.com/Rubrik-Security-Cloud-API/Data-Protection/SLA-Domains/index.md).
-
-MSSQL-specific settings in `mssqlSlaRelatedProperties`:
-
-| Setting                       | Description                                                                                   |
-| ----------------------------- | --------------------------------------------------------------------------------------------- |
-| `logBackupFrequencyInSeconds` | Frequency of transaction log backups. Set to `0` to disable log backups.                      |
-| `logRetentionHours`           | How long to retain log backups. Use `-1` to retain logs until the preceding snapshot expires. |
-| `copyOnly`                    | When `true`, backups are copy-only and do not interrupt the native SQL Server log chain.      |
-
-```graphql
-mutation assignMssqlSla {
-  assignMssqlSlaDomainPropertiesAsync(input: {
-    updateInfo: {
-      ids: ["85e98e61-4c1f-496a-b846-5eb871966025"]
-      mssqlSlaPatchProperties: {
-        configuredSlaDomainId: "9f706c3c-4678-44e5-99fe-50ebde6b308e"
-        mssqlSlaRelatedProperties: {
-          logBackupFrequencyInSeconds: 3600
-          logRetentionHours: 168
-          copyOnly: false
-        }
-      }
-    }
-  })
-}
-```
-
-```powershell
-$mutation = New-RscMutation -GqlQuery assignMssqlSlaDomainPropertiesAsync
-$mutation.var.input = New-Object -TypeName RubrikSecurityCloud.Types.AssignMssqlSlaDomainPropertiesAsyncInput
-$updateInfo = New-Object -TypeName RubrikSecurityCloud.Types.MssqlSlaDomainAssignInfoInput
-$updateInfo.Ids = @("85e98e61-4c1f-496a-b846-5eb871966025")
-$slaPatch = New-Object -TypeName RubrikSecurityCloud.Types.MssqlSlaPatchPropertiesInput
-$slaPatch.ConfiguredSlaDomainId = "9f706c3c-4678-44e5-99fe-50ebde6b308e"
-$slaRelated = New-Object -TypeName RubrikSecurityCloud.Types.MssqlSlaRelatedPropertiesInput
-$slaRelated.LogBackupFrequencyInSeconds = 3600
-$slaRelated.LogRetentionHours = 168
-$slaRelated.CopyOnly = $false
-$slaPatch.MssqlSlaRelatedProperties = $slaRelated
-$updateInfo.MssqlSlaPatchProperties = $slaPatch
-$mutation.var.input.UpdateInfo = $updateInfo
-$mutation.invoke()
-```
-
-```bash
-#!/bin/bash
-
-# RSC_TOKEN="YOUR_RSC_ACCESS_TOKEN"
-query="mutation { assignMssqlSlaDomainPropertiesAsync(input: { updateInfo: { ids: [\\\"85e98e61-4c1f-496a-b846-5eb871966025\\\"] mssqlSlaPatchProperties: { configuredSlaDomainId: \\\"9f706c3c-4678-44e5-99fe-50ebde6b308e\\\" mssqlSlaRelatedProperties: { logBackupFrequencyInSeconds: 3600 logRetentionHours: 168 copyOnly: false } } } }) }"
-
-# Execute the GraphQL mutation with curl
-curl -X POST \
-  -H "Content-Type: application/json" \
-  -H "Authorization: Bearer $RSC_TOKEN" \
-  -d "{\"query\": \"$query\"}" \
-  https://example.my.rubrik.com/api/graphql
-```
+Use the `assignSla` mutation to assign an SLA Domain to SQL Server databases, instances, or hosts. See [SLA Domains](https://developer.rubrik.com/Rubrik-Security-Cloud-API/Data-Protection/SLA-Domains/#assigning-an-sla-to-a-workload) for the full walkthrough.
 
 ### Database-Level Settings
 
@@ -219,17 +160,9 @@ mutation updateMssqlDbProperties {
 ```
 
 ```powershell
-$mutation = New-RscMutation -GqlQuery bulkUpdateMssqlDbs
-$mutation.var.input = New-Object -TypeName RubrikSecurityCloud.Types.BulkUpdateMssqlDbsInput
-$mutation.var.input.ClusterUuid = "8417a938-96f5-43c6-9905-b36e051c5f98"
-$dbUpdate = New-Object -TypeName RubrikSecurityCloud.Types.MssqlDbUpdateIdInput
-$dbUpdate.DatabaseId = "85e98e61-4c1f-496a-b846-5eb871966025"
-$props = New-Object -TypeName RubrikSecurityCloud.Types.MssqlDbUpdateInput
-$props.MaxDataStreams = 4
-$props.ShouldForceFull = $false
-$dbUpdate.UpdateProperties = $props
-$mutation.var.input.DbsUpdateProperties = @($dbUpdate)
-$mutation.invoke()
+$db = Get-RscMssqlDatabase -Name "AdventureWorks2019"
+$cluster = Get-RscCluster -Name "my-cluster"
+Set-RscMssqlDatabase -RscMssqlDatabase $db -RscCluster $cluster -MaxDataStreams 4 -ShouldForceFull
 ```
 
 ```bash
@@ -248,9 +181,11 @@ curl -X POST \
 
 ## On-Demand Backup
 
-### Full or Differential Snapshot
+### On-Demand Snapshot
 
-Trigger an immediate backup outside the scheduled SLA policy. Always provide `baseOnDemandSnapshotConfig.slaId` — omitting it causes the snapshot to be **retained indefinitely** with no automatic expiry. To force a full backup regardless of what the policy would schedule, add `forceFullSnapshot: true`.
+Trigger an immediate backup outside the scheduled SLA policy. Always provide `baseOnDemandSnapshotConfig.slaId` — omitting it causes the snapshot to be **retained indefinitely** with no automatic expiry.
+
+Setting `forceFullSnapshot: true` forces a complete data transfer to the Rubrik cluster, bypassing deduplication against any prior snapshot. The result is a self-contained recovery point that does not depend on earlier snapshots, at the cost of higher storage usage. Omit the field (or set it to `false`) to use Rubrik's normal incremental-forever transfer.
 
 ```graphql
 mutation mssqlDatabaseSnapshot {
@@ -308,10 +243,8 @@ mutation takeMssqlLog {
 ```
 
 ```powershell
-$mutation = New-RscMutation -GqlQuery takeMssqlLogBackup -FieldProfile FULL
-$mutation.var.input = New-Object -TypeName RubrikSecurityCloud.Types.TakeMssqlLogBackupInput
-$mutation.var.input.Id = "85e98e61-4c1f-496a-b846-5eb871966025"
-$mutation.invoke()
+$db = Get-RscMssqlDatabase -Name "AdventureWorks2019"
+New-RscMssqlLogBackup -RscMssqlDatabase $db
 ```
 
 ```bash
@@ -332,6 +265,17 @@ curl -X POST \
 
 All backup and recovery operations are asynchronous and return a request `id`. Poll `mssqlJobStatus` with the request `id` and `clusterUuid` to track progress.
 
+The `id` string follows the format `{JOB_TYPE}_{database-id}_{run-id}:::0`, where `database-id` is the FID of the source database, `run-id` is a unique identifier for that job execution, and `0` is the instance number. The job type prefix differs from the mutation name:
+
+| Operation                   | Job type prefix    |
+| --------------------------- | ------------------ |
+| `createOnDemandMssqlBackup` | `MSSQL_DB_BACKUP`  |
+| `takeMssqlLogBackup`        | `MSSQL_LOG_BACKUP` |
+| `restoreMssqlDatabase`      | `RESTORE_MSSQL_DB` |
+| `exportMssqlDatabase`       | `RESTORE_MSSQL_DB` |
+| `createMssqlLiveMount`      | `MSSQL_DB_MOUNT`   |
+| `deleteMssqlLiveMount`      | `MSSQL_DB_UNMOUNT` |
+
 ```graphql
 query {
   mssqlJobStatus(input: {
@@ -350,6 +294,7 @@ query {
 ```
 
 ```powershell
+# No toolkit cmdlet available
 $requestId = "MSSQL_DB_BACKUP_00000000-0000-0000-0000-000000000000_00000000-0000-0000-0000-000000000000:::0"
 $clusterId = "00000000-0000-0000-0000-000000000000"
 $query = New-RscQuery -GqlQuery mssqlJobStatus -FieldProfile FULL
@@ -419,17 +364,11 @@ mutation restoreMssqlDb {
 ```
 
 ```powershell
-$mutation = New-RscMutation -GqlQuery restoreMssqlDatabase -FieldProfile FULL
-$mutation.var.input = New-Object -TypeName RubrikSecurityCloud.Types.RestoreMssqlDatabaseInput
-$mutation.var.input.Id = "85e98e61-4c1f-496a-b846-5eb871966025"
-$config = New-Object -TypeName RubrikSecurityCloud.Types.RestoreMssqlDbJobConfigInput
-$recoveryPoint = New-Object -TypeName RubrikSecurityCloud.Types.MssqlRecoveryPointInput
-$recoveryPoint.Date = (Get-Date "2025-01-15T14:30:00Z")
-$config.RecoveryPoint = $recoveryPoint
-$config.FinishRecovery = $true
-$config.MaxDataStreams = 4
-$mutation.var.input.Config = $config
-$mutation.invoke()
+$db = Get-RscMssqlDatabase -Name "AdventureWorks2019"
+New-RscMssqlRestore -RscMssqlDatabase $db `
+    -RecoveryDateTime "2025-01-15T14:30:00Z" `
+    -MaxDataStreams 4 `
+    -FinishRecovery
 ```
 
 ```bash
@@ -484,19 +423,15 @@ mutation exportMssqlDb {
 ```
 
 ```powershell
-$mutation = New-RscMutation -GqlQuery exportMssqlDatabase -FieldProfile FULL
-$mutation.var.input = New-Object -TypeName RubrikSecurityCloud.Types.ExportMssqlDatabaseInput
-$mutation.var.input.Id = "85e98e61-4c1f-496a-b846-5eb871966025"
-$config = New-Object -TypeName RubrikSecurityCloud.Types.ExportMssqlDbJobConfigInput
-$recoveryPoint = New-Object -TypeName RubrikSecurityCloud.Types.MssqlRecoveryPointInput
-$recoveryPoint.Date = (Get-Date "2025-01-15T14:30:00Z")
-$config.RecoveryPoint = $recoveryPoint
-$config.TargetDatabaseName = "AdventureWorks_Restored"
-$config.TargetInstanceId = "c7a56601-1234-5678-abcd-ef0123456789"
-$config.AllowOverwrite = $false
-$config.FinishRecovery = $true
-$mutation.var.input.Config = $config
-$mutation.invoke()
+$db = Get-RscMssqlDatabase -Name "AdventureWorks2019"
+$inst = Get-RscMssqlInstance -HostName "sql1.rubrik-demo.com" -ClusterId "124d26df-c31f-49a3-a8c3-77b10c9470c2"
+New-RscMssqlExport -RscMssqlDatabase $db `
+    -RecoveryDateTime "2025-01-15T14:30:00Z" `
+    -TargetMssqlInstance $inst `
+    -TargetDatabaseName "AdventureWorks_Restored" `
+    -TargetDataPath "C:\mnt\sqldata" `
+    -TargeLogPath "C:\mnt\sqllogs" `
+    -FinishRecovery
 ```
 
 ```bash
@@ -552,16 +487,12 @@ mutation liveMountMssqlDb {
 ```
 
 ```powershell
-$mutation = New-RscMutation -GqlQuery createMssqlLiveMount -FieldProfile FULL
-$mutation.var.input = New-Object -TypeName RubrikSecurityCloud.Types.CreateMssqlLiveMountInput
-$mutation.var.input.Id = "85e98e61-4c1f-496a-b846-5eb871966025"
-$config = New-Object -TypeName RubrikSecurityCloud.Types.MountMssqlDbConfigInput
-$config.MountedDatabaseName = "AdventureWorks_LiveMount"
-$recoveryPoint = New-Object -TypeName RubrikSecurityCloud.Types.MssqlRecoveryPointInput
-$recoveryPoint.Date = (Get-Date "2025-01-15T14:30:00Z")
-$config.RecoveryPoint = $recoveryPoint
-$mutation.var.input.Config = $config
-$mutation.invoke()
+$db = Get-RscMssqlDatabase -Name "AdventureWorks2019"
+$inst = Get-RscMssqlInstance -HostName "sql1.rubrik-demo.com" -ClusterId "124d26df-c31f-49a3-a8c3-77b10c9470c2"
+New-RscMssqlLiveMount -RscMssqlDatabase $db `
+    -MountedDatabaseName "AdventureWorks_LiveMount" `
+    -TargetMssqlInstance $inst `
+    -RecoveryDateTime "2025-01-15T14:30:00Z"
 ```
 
 ```bash
@@ -600,11 +531,9 @@ mutation unmountMssqlDb {
 ```
 
 ```powershell
-# id is the live mount ID (not the async request ID). Query mssqlDatabaseLiveMounts to retrieve it.
-$mutation = New-RscMutation -GqlQuery deleteMssqlLiveMount -FieldProfile FULL
-$mutation.var.input = New-Object -TypeName RubrikSecurityCloud.Types.DeleteMssqlLiveMountInput
-$mutation.var.input.Id = "a1b2c3d4-5678-90ab-cdef-1234567890ab"
-$mutation.invoke()
+$db = Get-RscMssqlDatabase -Name "AdventureWorks2019"
+$mount = Get-RscMssqlLiveMount -RscMssqlDatabase $db -MountedDatabaseName "AdventureWorks_LiveMount"
+Remove-RscMssqlLiveMount -MssqlLiveMount $mount
 ```
 
 ```bash
@@ -676,16 +605,7 @@ query ListMssqlAvailabilityGroupVirtualGroups {
 ```
 
 ```powershell
-$query = New-RscQuery -GqlQuery mssqlAvailabilityGroupVirtualGroups
-$query.field.Nodes[0].Name = "FETCH"
-$query.field.Nodes[0].LinkedFids = @()
-$query.field.Nodes[0].Groups[0].Id = "FETCH"
-$query.field.Nodes[0].Groups[0].Name = "FETCH"
-$query.field.Nodes[0].Groups[0].Cluster.Id = "FETCH"
-$query.field.Nodes[0].Groups[0].Cluster.Name = "FETCH"
-$query.field.Nodes[0].Groups[0].EffectiveSlaDomain.Id = "FETCH"
-$query.field.Nodes[0].Groups[0].EffectiveSlaDomain.Name = "FETCH"
-$query.invoke()
+Get-RscMssqlLinkedAvailabilityGroup
 ```
 
 ```bash
@@ -724,17 +644,13 @@ mutation LinkAvailabilityGroups {
 ```
 
 ```powershell
-$mutation = New-RscMutation -GqlQuery manageProtectionForLinkedObjects
-$mutation.var.input = New-Object -TypeName RubrikSecurityCloud.Types.ManageProtectionForLinkedObjectsInput
-$mutation.var.input.Operation = [RubrikSecurityCloud.Types.ManageProtectionForLinkedObjectsOperationType]::LINK
-$slaReq = New-Object -TypeName RubrikSecurityCloud.Types.AssignSlaInput
-$slaReq.ObjectIds = @(
-    "7734f7a2-9388-59e3-bcc5-25cb0a531910",
-    "38fb7ce0-e616-53aa-a155-3b1c7216d44a"
-)
-$slaReq.SlaDomainAssignType = [RubrikSecurityCloud.Types.SlaAssignTypeEnum]::NO_ASSIGNMENT
-$mutation.var.input.AssignSlaReq = $slaReq
-$mutation.invoke()
+$ag1 = Get-RscMssqlAvailabilityGroup -AvailabilityGroupName "MyAG" -Cluster (Get-RscCluster -Name "cluster-east")
+$ag2 = Get-RscMssqlAvailabilityGroup -AvailabilityGroupName "MyAG" -Cluster (Get-RscCluster -Name "cluster-west")
+$sla = Get-RscSla -Name "Gold"
+Protect-RscLinkedWorkload -InputObject $ag1 -LinkedObject $ag2 `
+    -LinkingOperation LINK `
+    -AssignmentType PROTECT_WITH_SLA_ID `
+    -Sla $sla
 ```
 
 ```bash
@@ -774,18 +690,13 @@ mutation AssignSlaToLinkedAvailabilityGroups {
 ```
 
 ```powershell
-$mutation = New-RscMutation -GqlQuery manageProtectionForLinkedObjects
-$mutation.var.input = New-Object -TypeName RubrikSecurityCloud.Types.ManageProtectionForLinkedObjectsInput
-$mutation.var.input.Operation = [RubrikSecurityCloud.Types.ManageProtectionForLinkedObjectsOperationType]::ASSIGN_SLA
-$slaReq = New-Object -TypeName RubrikSecurityCloud.Types.AssignSlaInput
-$slaReq.ObjectIds = @(
-    "7734f7a2-9388-59e3-bcc5-25cb0a531910",
-    "38fb7ce0-e616-53aa-a155-3b1c7216d44a"
-)
-$slaReq.SlaDomainAssignType = [RubrikSecurityCloud.Types.SlaAssignTypeEnum]::PROTECTED
-$slaReq.SlaOptionalId = "c2c3823f-d74d-49a1-afbe-8d7e0a4d3b7c"
-$mutation.var.input.AssignSlaReq = $slaReq
-$mutation.invoke()
+$ag1 = Get-RscMssqlAvailabilityGroup -AvailabilityGroupName "MyAG" -Cluster (Get-RscCluster -Name "cluster-east")
+$ag2 = Get-RscMssqlAvailabilityGroup -AvailabilityGroupName "MyAG" -Cluster (Get-RscCluster -Name "cluster-west")
+$sla = Get-RscSla -Name "Gold"
+Protect-RscLinkedWorkload -InputObject $ag1 -LinkedObject $ag2 `
+    -LinkingOperation ASSIGN_SLA `
+    -AssignmentType PROTECT_WITH_SLA_ID `
+    -Sla $sla
 ```
 
 ```bash
@@ -831,6 +742,7 @@ query ListLinkedAvailabilityGroupDatabases {
 ```
 
 ```powershell
+# No toolkit cmdlet available
 $query = New-RscQuery -GqlQuery mssqlAvailabilityGroupDatabaseVirtualGroups
 $query.var.fids = @(
     "7734f7a2-9388-59e3-bcc5-25cb0a531910",
@@ -882,17 +794,11 @@ mutation UnlinkAvailabilityGroups {
 ```
 
 ```powershell
-$mutation = New-RscMutation -GqlQuery manageProtectionForLinkedObjects
-$mutation.var.input = New-Object -TypeName RubrikSecurityCloud.Types.ManageProtectionForLinkedObjectsInput
-$mutation.var.input.Operation = [RubrikSecurityCloud.Types.ManageProtectionForLinkedObjectsOperationType]::UNLINK
-$slaReq = New-Object -TypeName RubrikSecurityCloud.Types.AssignSlaInput
-$slaReq.ObjectIds = @(
-    "7734f7a2-9388-59e3-bcc5-25cb0a531910",
-    "38fb7ce0-e616-53aa-a155-3b1c7216d44a"
-)
-$slaReq.SlaDomainAssignType = [RubrikSecurityCloud.Types.SlaAssignTypeEnum]::NO_ASSIGNMENT
-$mutation.var.input.AssignSlaReq = $slaReq
-$mutation.invoke()
+$ag1 = Get-RscMssqlAvailabilityGroup -AvailabilityGroupName "MyAG" -Cluster (Get-RscCluster -Name "cluster-east")
+$ag2 = Get-RscMssqlAvailabilityGroup -AvailabilityGroupName "MyAG" -Cluster (Get-RscCluster -Name "cluster-west")
+Protect-RscLinkedWorkload -InputObject $ag1 -LinkedObject $ag2 `
+    -LinkingOperation UNLINK `
+    -AssignmentType PROTECT_WITH_SLA_ID
 ```
 
 ```bash

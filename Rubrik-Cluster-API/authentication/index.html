@@ -501,6 +501,8 @@
       
         
       
+        
+      
     
     
     
@@ -524,6 +526,8 @@
       
         
           
+        
+      
         
       
         
@@ -1135,9 +1139,9 @@
 
   <h1>Authentication</h1>
 
-<h2 id="service-accounts-rsc-client-credentials">Service Accounts (<abbr title="Rubrik Security Cloud: The modern data security SaaS management plane">RSC</abbr> Client Credentials)</h2>
-<p>The Rubrik Cluster API uses <abbr title="Rubrik Security Cloud: The modern data security SaaS management plane">RSC</abbr> (Rubrik Security Cloud) service account credentials for authentication. A service account client ID and client secret are posted directly to the cluster node to obtain a session token used for all subsequent API calls.</p>
-<p>To create a service account, see the <a href="../../Rubrik-Security-Cloud-API/authentication/"><abbr title="Rubrik Security Cloud: The modern data security SaaS management plane">RSC</abbr> Authentication</a> page.</p>
+<h2 id="service-accounts-rsc-client-credentials">Service Accounts (RSC Client Credentials)</h2>
+<p>The Rubrik Cluster API uses RSC (Rubrik Security Cloud) service account credentials for authentication. A service account client ID and client secret are posted directly to the cluster node to obtain a session token used for all subsequent API calls.</p>
+<p>To create a service account, see the <a href="../../Rubrik-Security-Cloud-API/authentication/">RSC Authentication</a> page.</p>
 <h3 id="guidelines">Guidelines</h3>
 <p>Consider the following best practices when using service accounts with the CDM API:</p>
 <ul>
@@ -1149,7 +1153,7 @@
 </ul>
 <h3 id="usage">Usage</h3>
 <h4 id="obtaining-an-access-token">Obtaining an access token</h4>
-<p>Post the <abbr title="Rubrik Security Cloud: The modern data security SaaS management plane">RSC</abbr> service account <code>clientId</code> and <code>clientSecret</code> to <code>https://&lt;cluster_node&gt;/api/v1/service_account/session</code>. The response contains the session token needed for authenticated API calls. The <code>jq</code> tool is used to parse the token from the JSON response and store it in a variable for reuse.</p>
+<p>Post the RSC service account <code>clientId</code> and <code>clientSecret</code> to <code>https://&lt;cluster_node&gt;/api/v1/service_account/session</code>. The response contains the session token needed for authenticated API calls. The <code>jq</code> tool is used to parse the token from the JSON response and store it in a variable for reuse.</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Shell</label><label for="__tabbed_1_2">PowerShell SDK</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">

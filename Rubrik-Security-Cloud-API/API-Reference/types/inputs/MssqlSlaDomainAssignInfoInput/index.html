@@ -503,6 +503,8 @@
       
         
       
+        
+      
     
     
     
@@ -622,6 +624,34 @@
                 
   
   
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../pagination/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pagination
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
     
   
   
@@ -656,7 +686,7 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_5" checked>
         
           
           <div class="md-nav__link md-nav__container">
@@ -678,14 +708,14 @@
             </a>
             
               
-              <label class="md-nav__link " for="__nav_2_4" id="__nav_2_4_label" tabindex="0">
+              <label class="md-nav__link " for="__nav_2_5" id="__nav_2_5_label" tabindex="0">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
           </div>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_2_4">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_5_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_5">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -9069,7 +9099,7 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_6" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_5_6" checked>
         
           
           <div class="md-nav__link md-nav__container">
@@ -9091,14 +9121,14 @@
             </a>
             
               
-              <label class="md-nav__link " for="__nav_2_4_6" id="__nav_2_4_6_label" tabindex="0">
+              <label class="md-nav__link " for="__nav_2_5_6" id="__nav_2_5_6_label" tabindex="0">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
           </div>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_4_6_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_2_4_6">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_5_6_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_5_6">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -18280,7 +18310,7 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_6_3" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_5_6_3" checked>
         
           
           <div class="md-nav__link md-nav__container">
@@ -18302,14 +18332,14 @@
             </a>
             
               
-              <label class="md-nav__link " for="__nav_2_4_6_3" id="__nav_2_4_6_3_label" tabindex="0">
+              <label class="md-nav__link " for="__nav_2_5_6_3" id="__nav_2_5_6_3_label" tabindex="0">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
           </div>
         
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_4_6_3_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_2_4_6_3">
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_5_6_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_5_6_3">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -98472,17 +98502,17 @@
 <tr>
 <td>mssqlSlaPatchProperties</td>
 <td><a href="../MssqlSlaPatchPropertiesInput/">MssqlSlaPatchPropertiesInput</a></td>
-<td><abbr title="Service Level Agreement. An SLA Domain is a data protection policy in Rubrik.">SLA</abbr> Domain properties of a SQL Server object.</td>
+<td>SLA Domain properties of a SQL Server object.</td>
 </tr>
 <tr>
 <td>shouldApplyToExistingSnapshots</td>
 <td>Boolean</td>
-<td>Supported in v7.0+ A Boolean value indicating whether to retain existing snapshots of assigned objects with the specified <abbr title="Service Level Agreement. An SLA Domain is a data protection policy in Rubrik.">SLA</abbr> Domain configuration. The default value is 'true'. If objects are unprotected, existing snapshots are retained according to the value of the 'existingSnapshotRetention' parameter. For unprotected objects, this value is empty. When an <abbr title="Service Level Agreement. An SLA Domain is a data protection policy in Rubrik.">SLA</abbr> Domain assignment is cleared from an object, the retention strategy described by the 'existingSnapshotRetention' parameter is used only when the object can inherit a protection <abbr title="Service Level Agreement. An SLA Domain is a data protection policy in Rubrik.">SLA</abbr> Domain from an ancestor object.</td>
+<td>Supported in v7.0+ A Boolean value indicating whether to retain existing snapshots of assigned objects with the specified SLA Domain configuration. The default value is 'true'. If objects are unprotected, existing snapshots are retained according to the value of the 'existingSnapshotRetention' parameter. For unprotected objects, this value is empty. When an SLA Domain assignment is cleared from an object, the retention strategy described by the 'existingSnapshotRetention' parameter is used only when the object can inherit a protection SLA Domain from an ancestor object.</td>
 </tr>
 <tr>
 <td>shouldApplyToNonPolicySnapshots</td>
 <td>Boolean</td>
-<td>Supported in v7.0+ A Boolean value. When true, specifies that the retention changes corresponding to the new <abbr title="Service Level Agreement. An SLA Domain is a data protection policy in Rubrik.">SLA</abbr> Domain are applied to non-policy snapshots in addition to existing policy-based snapshots.</td>
+<td>Supported in v7.0+ A Boolean value. When true, specifies that the retention changes corresponding to the new SLA Domain are applied to non-policy snapshots in addition to existing policy-based snapshots.</td>
 </tr>
 </tbody>
 </table>

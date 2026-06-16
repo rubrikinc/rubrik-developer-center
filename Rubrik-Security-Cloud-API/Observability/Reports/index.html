@@ -503,6 +503,8 @@
       
         
       
+        
+      
     
     
     
@@ -605,6 +607,34 @@
     
   
     Authentication
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../pagination/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pagination
   
 
     
@@ -1337,7 +1367,7 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_10" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_11" checked>
         
           
           <div class="md-nav__link md-nav__container">
@@ -1359,14 +1389,14 @@
             </a>
             
               
-              <label class="md-nav__link " for="__nav_2_10" id="__nav_2_10_label" tabindex="0">
+              <label class="md-nav__link " for="__nav_2_11" id="__nav_2_11_label" tabindex="0">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
           </div>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_10_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_2_10">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_11_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_11">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -2070,7 +2100,7 @@
 <p>The reporting system in Rubrik Security Cloud provides an interface to build reports based on a number of templates, and a scheduler to build and deliver the reports via email. Reports can also be built and downloaded via the API.</p>
 <h2 id="list-reports">List Reports</h2>
 <p>To determine the ID for a given report, you can use the <code>allCustomReports</code> query. This ID is used in the <code>downloadReportCsvAsync</code> mutation to generate the report.</p>
-<div class="tabbed-set tabbed-alternate" data-tabs="1:3"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1"><abbr title="A query language for APIs that provides a complete and understandble description of the data in the API. GraphQL is a strongly typed architecture, which means everything has a type and there is no guessing on the structure.">GraphQL</abbr></label><label for="__tabbed_1_2">PowerShell SDK</label><label for="__tabbed_1_3">Shell</label></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:3"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">GraphQL</label><label for="__tabbed_1_2">PowerShell SDK</label><label for="__tabbed_1_3">Shell</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
 <div class="language-graphql highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="k">query</span><span class="w"> </span><span class="p">{</span>
@@ -2103,7 +2133,7 @@
 </div>
 <h2 id="generate-report-csv">Generate Report CSV</h2>
 <p>The <code>downloadReportCsvAsync</code> mutation will generate a report and return an <code>externalId</code> that can be used to download the report. The report is generated asynchronously, and the <code>externalId</code> can be used to monitor the status of the report generation.</p>
-<div class="tabbed-set tabbed-alternate" data-tabs="2:3"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><input id="__tabbed_2_3" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1"><abbr title="A query language for APIs that provides a complete and understandble description of the data in the API. GraphQL is a strongly typed architecture, which means everything has a type and there is no guessing on the structure.">GraphQL</abbr></label><label for="__tabbed_2_2">PowerShell SDK</label><label for="__tabbed_2_3">Shell</label></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="2:3"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><input id="__tabbed_2_3" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">GraphQL</label><label for="__tabbed_2_2">PowerShell SDK</label><label for="__tabbed_2_3">Shell</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
 <div class="language-graphql highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="k">mutation</span><span class="w"> </span><span class="p">{</span>
@@ -2137,7 +2167,7 @@
 </div>
 <h2 id="monitor-report-generation-status">Monitor Report Generation Status</h2>
 <p>The <code>allUserFiles</code> query will return a list of all files that have been generated. The <code>externalId</code> can be used to monitor the status of the report generation.</p>
-<div class="tabbed-set tabbed-alternate" data-tabs="3:3"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><input id="__tabbed_3_2" name="__tabbed_3" type="radio" /><input id="__tabbed_3_3" name="__tabbed_3" type="radio" /><div class="tabbed-labels"><label for="__tabbed_3_1"><abbr title="A query language for APIs that provides a complete and understandble description of the data in the API. GraphQL is a strongly typed architecture, which means everything has a type and there is no guessing on the structure.">GraphQL</abbr></label><label for="__tabbed_3_2">PowerShell SDK</label><label for="__tabbed_3_3">Shell</label></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="3:3"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><input id="__tabbed_3_2" name="__tabbed_3" type="radio" /><input id="__tabbed_3_3" name="__tabbed_3" type="radio" /><div class="tabbed-labels"><label for="__tabbed_3_1">GraphQL</label><label for="__tabbed_3_2">PowerShell SDK</label><label for="__tabbed_3_3">Shell</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
 <div class="language-graphql highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="k">query</span><span class="w"> </span><span class="p">{</span>
@@ -2177,7 +2207,7 @@
 </div>
 </div>
 <h2 id="download-report">Download Report</h2>
-<p>The CSV file will be downloadable from <abbr title="Rubrik Security Cloud: The modern data security SaaS management plane">RSC</abbr> from the file downloads URL in the format below. Replace <code>&lt;instance&gt;</code> with the FQDN of the <abbr title="Rubrik Security Cloud: The modern data security SaaS management plane">RSC</abbr> instance and <code>&lt;externalId&gt;</code> with the <code>externalId</code> returned from the <code>downloadReportCsvAsync</code> mutation.  </p>
+<p>The CSV file will be downloadable from RSC from the file downloads URL in the format below. Replace <code>&lt;instance&gt;</code> with the FQDN of the RSC instance and <code>&lt;externalId&gt;</code> with the <code>externalId</code> returned from the <code>downloadReportCsvAsync</code> mutation.  </p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>https://&lt;instance&gt;.my.rubrik.com/file-downloads/&lt;externalId&gt;
 </span></code></pre></div>
 <div class="admonition note">

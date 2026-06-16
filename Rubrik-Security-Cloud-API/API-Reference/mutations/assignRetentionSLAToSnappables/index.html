@@ -503,6 +503,8 @@
       
         
       
+        
+      
     
     
     
@@ -622,6 +624,34 @@
                 
   
   
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../pagination/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pagination
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
     
   
   
@@ -656,7 +686,7 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_5" checked>
         
           
           <div class="md-nav__link md-nav__container">
@@ -678,14 +708,14 @@
             </a>
             
               
-              <label class="md-nav__link " for="__nav_2_4" id="__nav_2_4_label" tabindex="0">
+              <label class="md-nav__link " for="__nav_2_5" id="__nav_2_5_label" tabindex="0">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
           </div>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_2_4">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_5_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_5">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -7067,7 +7097,7 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_5" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_5_5" checked>
         
           
           <div class="md-nav__link md-nav__container">
@@ -7089,14 +7119,14 @@
             </a>
             
               
-              <label class="md-nav__link " for="__nav_2_4_5" id="__nav_2_4_5_label" tabindex="0">
+              <label class="md-nav__link " for="__nav_2_5_5" id="__nav_2_5_5_label" tabindex="0">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
           </div>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_4_5_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_2_4_5">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_5_5_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_5_5">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -35365,7 +35395,7 @@
 
 
 <h1 id="assignretentionslatosnappables">assignRetentionSLAToSnappables</h1>
-<p>Endpoint to assign retention <abbr title="Service Level Agreement. An SLA Domain is a data protection policy in Rubrik.">SLA</abbr> Domain to workloads.</p>
+<p>Endpoint to assign retention SLA Domain to workloads.</p>
 <h2 id="arguments">Arguments</h2>
 <table>
 <thead>
@@ -35379,27 +35409,27 @@
 <tr>
 <td>globalSlaOptionalFid</td>
 <td><a href="../../types/scalars/UUID/">UUID</a></td>
-<td><abbr title="Service Level Agreement. An SLA Domain is a data protection policy in Rubrik.">SLA</abbr> Domain forever UUID.</td>
+<td>SLA Domain forever UUID.</td>
 </tr>
 <tr>
 <td>globalSlaAssignType <em>(required)</em></td>
 <td><a href="../../types/enums/SlaAssignTypeEnum/">SlaAssignTypeEnum</a>!</td>
-<td>Corresponds to the assignment type for the <abbr title="Service Level Agreement. An SLA Domain is a data protection policy in Rubrik.">SLA</abbr> Domain.</td>
+<td>Corresponds to the assignment type for the SLA Domain.</td>
 </tr>
 <tr>
 <td>objectIds <em>(required)</em></td>
 <td>[<a href="../../types/scalars/UUID/">UUID</a>!]!</td>
-<td>A list of object forever UUIDs to assign to the <abbr title="Service Level Agreement. An SLA Domain is a data protection policy in Rubrik.">SLA</abbr> Domain.</td>
+<td>A list of object forever UUIDs to assign to the SLA Domain.</td>
 </tr>
 <tr>
 <td>applicableSnappableType</td>
 <td><a href="../../types/enums/WorkloadLevelHierarchy/">WorkloadLevelHierarchy</a></td>
-<td>Optional workload type selection for <abbr title="Service Level Agreement. An SLA Domain is a data protection policy in Rubrik.">SLA</abbr> Domain assignment is available for workloads that support multiple workload hierarchies. It allows setting an <abbr title="Service Level Agreement. An SLA Domain is a data protection policy in Rubrik.">SLA</abbr> Domain for specific workload types under the workload rather than applying the <abbr title="Service Level Agreement. An SLA Domain is a data protection policy in Rubrik.">SLA</abbr> Domain for all the workload types.  For example, for an AWS account object with two different workload types, AwsNativeEc2Instance and AwsNativeRdsInstance, the appropriate type can be selected to apply the <abbr title="Service Level Agreement. An SLA Domain is a data protection policy in Rubrik.">SLA</abbr> Domain only to the selected workloads under that account. If the <abbr title="Service Level Agreement. An SLA Domain is a data protection policy in Rubrik.">SLA</abbr> Domain must be applicable to all workload types, the field can be set to AllSubHierarchyType or left blank. However, for workloads that do not support multiple workload types, this field must either be left blank or set to AllSubHierarchyType when assigning the <abbr title="Service Level Agreement. An SLA Domain is a data protection policy in Rubrik.">SLA</abbr> Domain to a workload.</td>
+<td>Optional workload type selection for SLA Domain assignment is available for workloads that support multiple workload hierarchies. It allows setting an SLA Domain for specific workload types under the workload rather than applying the SLA Domain for all the workload types.  For example, for an AWS account object with two different workload types, AwsNativeEc2Instance and AwsNativeRdsInstance, the appropriate type can be selected to apply the SLA Domain only to the selected workloads under that account. If the SLA Domain must be applicable to all workload types, the field can be set to AllSubHierarchyType or left blank. However, for workloads that do not support multiple workload types, this field must either be left blank or set to AllSubHierarchyType when assigning the SLA Domain to a workload.</td>
 </tr>
 <tr>
 <td>shouldApplyToNonPolicySnapshots</td>
 <td>Boolean</td>
-<td>Specifies whether the new configuration keeps existing, non-policy snapshots of data sources retained by this <abbr title="Service Level Agreement. An SLA Domain is a data protection policy in Rubrik.">SLA</abbr> Domain.</td>
+<td>Specifies whether the new configuration keeps existing, non-policy snapshots of data sources retained by this SLA Domain.</td>
 </tr>
 <tr>
 <td>userNote</td>
