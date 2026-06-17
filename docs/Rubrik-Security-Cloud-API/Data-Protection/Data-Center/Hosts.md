@@ -16,7 +16,7 @@ Before Rubrik can discover and protect workloads on a Windows or Linux physical 
 
 ## Register a Host
 
-Use `bulkRegisterHostAsync` to register one or more hosts. The mutation accepts the request and returns immediately; host discovery runs in the background.
+Use [`bulkRegisterHostAsync`](../../API-Reference/mutations/bulkRegisterHostAsync.md) to register one or more hosts. The mutation accepts the request and returns immediately; host discovery runs in the background.
 
 === "GraphQL"
     ```graphql
@@ -35,7 +35,7 @@ After the mutation returns, discovery runs in the background. For SQL Server hos
 
 ## Verify Discovery
 
-Use `physicalHosts` to confirm the host is registered and discovery has completed. Poll until `connectionStatus.connectivity` is `CONNECTED`.
+Use [`physicalHosts`](../../API-Reference/queries/physicalHosts.md) to confirm the host is registered and discovery has completed. Poll until `connectionStatus.connectivity` is `CONNECTED`.
 
 === "GraphQL"
     ```graphql

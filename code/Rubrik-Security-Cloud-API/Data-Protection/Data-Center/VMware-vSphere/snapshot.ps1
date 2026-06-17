@@ -1,7 +1,8 @@
-$vm = Get-RscVmwareVm -name "example"
+$vm = Get-RscVmwareVm -Name "example" -Relic:$false -Replica:$false
 
-$query = New-Rscmutation -GqlMutation vsphereBulkOnDemandSnapshot -FieldProfile FULL
-$query.var.input = Get-RscType -Name vsphereBulkOnDemandSnapshotInput -InitialProperties config
-$query.var.input.config.Vms = @($vm.id)
-$query.var.input.config.SlaId = $vm.EffectiveSlaDomain.Id
-invoke-rsc $query
+$query = New-RscMutation -GqlMutation vsphereOnDemandSnapshot
+$query.Var.input = Get-RscType -Name VsphereOnDemandSnapshotInput -InitialProperties config
+$query.Var.input.id = $vm.Id
+# Omit slaId to use the VM's assigned SLA. With no SLA assigned, the snapshot is kept indefinitely.
+$query.Var.input.config.slaId = $vm.EffectiveSlaDomain.Id
+$query.invoke()

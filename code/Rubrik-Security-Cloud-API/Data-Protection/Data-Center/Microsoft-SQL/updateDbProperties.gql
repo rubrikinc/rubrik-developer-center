@@ -10,5 +10,9 @@ mutation updateMssqlDbProperties {
         }
       }
     ]
-  })
+  }) {
+    items {
+      isLocal
+    }
+  }
 }

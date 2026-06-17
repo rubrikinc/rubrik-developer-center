@@ -12,7 +12,7 @@ Two object types work together, and the distinction matters for every query belo
 
 A **fileset template** is a reusable backup definition: which paths to include, which to exclude, any pre- or post-backup scripts, and the OS family it applies to. A template is *not* something you back up — it's the blueprint.
 
-A **fileset** is a template applied to a specific host or NAS share. This is the snappable: it gets snapshots, holds an SLA Domain, and is the target of backup and recovery operations. Concrete types are `LinuxFileset`, `WindowsFileset`, and `ShareFileset` (NAS).
+A **fileset** is a template applied to a specific host or NAS share. This is the snappable: it gets snapshots, holds an SLA Domain, and is the target of backup and recovery operations. Concrete types are [`LinuxFileset`](../../API-Reference/types/objects/LinuxFileset.md), [`WindowsFileset`](../../API-Reference/types/objects/WindowsFileset.md), and [`ShareFileset`](../../API-Reference/types/objects/ShareFileset.md) (NAS).
 
 ```
 Fileset Template  →  Fileset (on host A)
@@ -27,7 +27,7 @@ Every template is scoped to a **host root** — `WINDOWS_HOST_ROOT`, `LINUX_HOST
 Before working with filesets through the API:
 
 1. **Obtain an access token** — See [Authentication](../../authentication.md) for the token exchange flow.
-2. **Locate your Rubrik cluster UUID** — Provisioning calls require it. Find it in the RSC UI under **Clusters**, or query `allClusterConnection { nodes { id name } }`.
+2. **Locate your Rubrik cluster UUID** — Provisioning calls require it. Find it in the RSC UI under **Clusters**, or query [`allClusterConnection`](../../API-Reference/queries/allClusterConnection.md).
 3. **Locate your SLA Domain** — See [SLA Domains](../SLA-Domains.md) to retrieve the UUID of the SLA policy you want to apply.
 
 ## Set Up
@@ -116,7 +116,7 @@ Key fileset fields: `id`, `name`, `cdmId`, `effectiveSlaDomain`, `isRelic`, and 
 
 ### Hosts
 
-To approach the problem from the host side instead, query `physicalHosts` to list the servers Rubrik protects and the filesets configured on each. As with templates, `hostRoot` is required and you query each OS family separately. The `physicalChildConnection` on each host exposes its filesets.
+To approach the problem from the host side instead, query [`physicalHosts`](../../API-Reference/queries/physicalHosts.md) to list the servers Rubrik protects and the filesets configured on each. As with templates, `hostRoot` is required and you query each OS family separately. The `physicalChildConnection` on each host exposes its filesets.
 
 === "GraphQL"
     ```graphql
@@ -137,7 +137,7 @@ All of these queries return paginated connections. See [Pagination](../../pagina
 
 ### Assign an SLA Domain
 
-Use the `assignSla` mutation to assign an SLA Domain to a fileset. Assigning protection at the host level applies to the filesets beneath it. See [SLA Domains](../SLA-Domains.md#assigning-an-sla-to-a-workload) for the full walkthrough.
+Use the [`assignSla`](../../API-Reference/mutations/assignSla.md) mutation to assign an SLA Domain to a fileset. Assigning protection at the host level applies to the filesets beneath it. See [SLA Domains](../SLA-Domains.md#assigning-an-sla-to-a-workload) for the full walkthrough.
 
 ## On-Demand Backup
 
@@ -179,21 +179,21 @@ Retrieve the snapshot ID from the `newestSnapshot` field on the fileset, or from
 
 ## Recovery
 
-Rubrik offers three ways to recover files from a fileset snapshot. All three are asynchronous and return an `AsyncRequestStatus` with a request `id` you can poll (see [Monitor Jobs](#monitor-jobs)).
+Rubrik offers three ways to recover files from a fileset snapshot. All three are asynchronous and return an [`AsyncRequestStatus`](../../API-Reference/types/objects/AsyncRequestStatus.md) with a request `id` you can poll (see [Monitor Jobs](#monitor-jobs)).
 
 Each mode requires the `osType` of the source fileset's host (`LINUX` or `WINDOWS`) and a `shareType`: use `NoShareType` for physical hosts, or `NFS` / `SMB` for NAS shares.
 
 ### Restore to the Original Host
 
-Use `filesetRecoverFiles` to restore files back to the host they came from. For each file, `restorePath` controls where it lands:
+Use [`filesetRecoverFiles`](../../API-Reference/mutations/filesetRecoverFiles.md) to restore files back to the host they came from. For each file, `restorePath` controls where it lands:
 
 - `restorePath: ""` (empty) — restore in place, overwriting the original location.
 - `restorePath: "/some/dir"` — restore to an alternate directory on the same host.
 
 !!! warning "Populate both path lists (SPARK-42157)"
-    `filesetRecoverFiles` requires the recovery paths in **two** places:
+    [`filesetRecoverFiles`](../../API-Reference/mutations/filesetRecoverFiles.md) requires the recovery paths in **two** places:
 
-    - `restorePathPairList` — the top-level list (legacy `OldRestorePathPairInput` shape: `{ path, restorePath }`).
+    - `restorePathPairList` — the top-level list (legacy [`OldRestorePathPairInput`](../../API-Reference/types/inputs/OldRestorePathPairInput.md) shape: `{ path, restorePath }`).
     - `config.restoreConfig` — the nested list (`{ restorePathPair: { path, restorePath } }`).
 
     The backend **reads only `restorePathPairList`** and ignores `config.restoreConfig`. However, `config.restoreConfig` is schema-required and must be non-empty to pass validation. **You must populate both with the same paths** — omitting or emptying either one causes the request to fail or to restore nothing.
@@ -213,7 +213,7 @@ Use `filesetRecoverFiles` to restore files back to the host they came from. For 
 
 ### Export to a Different Host
 
-Use `filesetExportSnapshotFiles` to copy files to a *different* target than the source host — useful for recovery validation or moving data between servers. Specify the target with `config.hostId` (a physical host) or `config.shareId` (a NAS share), and list source-to-destination path pairs in `config.exportPathPairs` using `{ srcPath, dstPath }`.
+Use [`filesetExportSnapshotFiles`](../../API-Reference/mutations/filesetExportSnapshotFiles.md) to copy files to a *different* target than the source host — useful for recovery validation or moving data between servers. Specify the target with `config.hostId` (a physical host) or `config.shareId` (a NAS share), and list source-to-destination path pairs in `config.exportPathPairs` using `{ srcPath, dstPath }`.
 
 === "GraphQL"
     ```graphql
@@ -230,7 +230,7 @@ Use `filesetExportSnapshotFiles` to copy files to a *different* target than the 
 
 ### Download as a ZIP Archive
 
-Use `filesetDownloadSnapshotFiles` to package the selected files into a downloadable ZIP archive rather than restoring them to a host. List the paths in `config.sourceDirs`. On CDM v9.0.1 and later you can set an optional `config.zipPassword` to password-protect the archive.
+Use [`filesetDownloadSnapshotFiles`](../../API-Reference/mutations/filesetDownloadSnapshotFiles.md) to package the selected files into a downloadable ZIP archive rather than restoring them to a host. List the paths in `config.sourceDirs`. On CDM v9.0.1 and later you can set an optional `config.zipPassword` to password-protect the archive.
 
 === "GraphQL"
     ```graphql
@@ -246,23 +246,23 @@ Use `filesetDownloadSnapshotFiles` to package the selected files into a download
     ```
 
 !!! info "Recovering from archival storage"
-    If the snapshot has been tiered to an archival location, use `filesetRecoverFilesFromArchivalLocation` or `filesetDownloadSnapshotFilesFromArchivalLocation` instead. These take the same inputs plus a required `locationId`.
+    If the snapshot has been tiered to an archival location, use [`filesetRecoverFilesFromArchivalLocation`](../../API-Reference/mutations/filesetRecoverFilesFromArchivalLocation.md) or [`filesetDownloadSnapshotFilesFromArchivalLocation`](../../API-Reference/mutations/filesetDownloadSnapshotFilesFromArchivalLocation.md) instead. These take the same inputs plus a required `locationId`.
 
 ## Monitor Jobs
 
-Backup and recovery operations are asynchronous and return a request `id`. Poll `filesetRequestStatus` with that `id` and the `clusterUuid` to track progress until it reaches a terminal state (`SUCCEEDED`, `FAILED`, or `CANCELED`).
+Backup and recovery operations are asynchronous and return a request `id`. Poll [`filesetRequestStatus`](../../API-Reference/queries/filesetRequestStatus.md) with that `id` and the `clusterUuid` to track progress until it reaches a terminal state (`SUCCEEDED`, `FAILED`, or `CANCELED`).
 
 !!! warning
-    `filesetRequestStatus` requires **both** `id` and `clusterUuid`. The cluster UUID is **not** encoded in the job ID and is not returned by the mutation — retrieve it separately from the fileset's `cluster.id` field.
+    [`filesetRequestStatus`](../../API-Reference/queries/filesetRequestStatus.md) requires **both** `id` and `clusterUuid`. The cluster UUID is **not** encoded in the job ID and is not returned by the mutation — retrieve it separately from the fileset's `cluster.id` field.
 
 The `id` string follows the format `{JOB_TYPE}_{workload-id}_{run-id}:::0`, where `workload-id` is the FID of the fileset, `run-id` is a unique identifier for that execution, and `0` is the instance number. The job type prefix differs from the mutation name:
 
 | Operation | Job type prefix |
 |---|---|
-| `createFilesetSnapshot` | `CREATE_FILESET_SNAPSHOT` |
-| `filesetRecoverFiles` | `RESTORE_FILESET` |
-| `filesetExportSnapshotFiles` | `EXPORT_FILESET` |
-| `filesetDownloadSnapshotFiles` | `DOWNLOAD_FILESET` |
+| [`createFilesetSnapshot`](../../API-Reference/mutations/createFilesetSnapshot.md) | `CREATE_FILESET_SNAPSHOT` |
+| [`filesetRecoverFiles`](../../API-Reference/mutations/filesetRecoverFiles.md) | `RESTORE_FILESET` |
+| [`filesetExportSnapshotFiles`](../../API-Reference/mutations/filesetExportSnapshotFiles.md) | `EXPORT_FILESET` |
+| [`filesetDownloadSnapshotFiles`](../../API-Reference/mutations/filesetDownloadSnapshotFiles.md) | `DOWNLOAD_FILESET` |
 
 === "GraphQL"
     ```graphql

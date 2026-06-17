@@ -15,10 +15,12 @@ mutation {
   }) {
     data {
       id
-      name
-      operatingSystemType
-      includes
-      excludes
+      filesetTemplateCreate {
+        name
+        includes
+        excludes
+        operatingSystemType
+      }
     }
   }
 }

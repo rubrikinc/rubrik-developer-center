@@ -1,4 +1,4 @@
-$mutation = New-RscMutation -GqlQuery vsphereVmRegisterAgent
-$mutation.Var.Input = New-Object -TypeName RubrikSecurityCloud.Types.VsphereVmRegisterAgentInput
-$mutation.Var.Input.Id = "YOUR_VM_ID"
-$mutation.Invoke()
+$vm = Get-RscVmwareVm -Name "example" -Relic:$false -Replica:$false
+
+# Register-RscRubrikBackupService accepts a vSphere VM from the pipeline.
+$vm | Register-RscRubrikBackupService
