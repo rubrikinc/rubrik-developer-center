@@ -22,18 +22,57 @@ Fileset Template  →  Fileset (on host A)
 
 Every template is scoped to a **host root** — `WINDOWS_HOST_ROOT`, `LINUX_HOST_ROOT`, or `NAS_HOST_ROOT`. Because the discovery queries are rooted in one OS family at a time, the `hostRoot` argument is **required** and you query each family separately.
 
-!!! note
-    This guide assumes your filesets are already configured. Filesets are not created automatically when a template is defined — they are provisioned explicitly against each host or share. Provisioning is out of scope here.
-
 ## Prerequisites
 
 Before working with filesets through the API:
 
-1. **Provision your filesets** — Confirm the fileset templates and their host/share filesets already exist in your environment, as described above.
+1. **Obtain an access token** — See [Authentication](../../authentication.md) for the token exchange flow.
+2. **Locate your Rubrik cluster UUID** — Provisioning calls require it. Find it in the RSC UI under **Clusters**, or query `allClusterConnection { nodes { id name } }`.
+3. **Locate your SLA Domain** — See [SLA Domains](../SLA-Domains.md) to retrieve the UUID of the SLA policy you want to apply.
 
-2. **Locate your SLA Domain** — See [SLA Domains](../SLA-Domains.md) to retrieve the UUID of the SLA policy you want to apply. You'll need this when assigning protection.
+## Set Up
 
-3. **Obtain an access token** — See [Authentication](../../authentication.md) for the OAuth2 client credentials flow used in all API calls.
+This section covers the provisioning steps: creating a fileset template and applying it to a host to create a fileset. Skip to [Discover Templates and Filesets](#discover-templates-and-filesets) if your environment is already configured.
+
+Before creating templates and filesets, your hosts must be registered with a Rubrik cluster. See [Hosts](Hosts.md) for host registration.
+
+### Create a Fileset Template
+
+A template defines what to back up: the paths to include, paths to exclude, any pre/post scripts, and which OS family it applies to. `includes` is the only required path list.
+
+=== "GraphQL"
+    ```graphql
+    --8<-- "code/Rubrik-Security-Cloud-API/Data-Protection/Data-Center/Filesets/createTemplate.gql"
+    ```
+=== "PowerShell SDK"
+    ```powershell
+    --8<-- "code/Rubrik-Security-Cloud-API/Data-Protection/Data-Center/Filesets/createTemplate.ps1"
+    ```
+=== "Shell"
+    ```bash
+    --8<-- "code/Rubrik-Security-Cloud-API/Data-Protection/Data-Center/Filesets/createTemplate.sh"
+    ```
+
+Capture the template `id` from the response `data[0].id`.
+
+### Apply Template to a Host
+
+With a host ID and a template ID, create the fileset — the actual snappable that will receive snapshots and an SLA.
+
+=== "GraphQL"
+    ```graphql
+    --8<-- "code/Rubrik-Security-Cloud-API/Data-Protection/Data-Center/Filesets/createFileset.gql"
+    ```
+=== "PowerShell SDK"
+    ```powershell
+    --8<-- "code/Rubrik-Security-Cloud-API/Data-Protection/Data-Center/Filesets/createFileset.ps1"
+    ```
+=== "Shell"
+    ```bash
+    --8<-- "code/Rubrik-Security-Cloud-API/Data-Protection/Data-Center/Filesets/createFileset.sh"
+    ```
+
+The returned fileset `id` is what you pass to backup and recovery mutations.
 
 ## Discover Templates and Filesets
 
