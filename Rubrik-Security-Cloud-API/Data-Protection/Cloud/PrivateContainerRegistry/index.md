@@ -120,7 +120,7 @@ ______________________________________________________________________
 
 ## Step 2: Report bundle approval status
 
-After pushing the images to your registry, notify Rubrik whether the bundle was accepted or rejected using `setBundleApprovalStatus`.
+After pushing the images to your registry, notify Rubrik whether the bundle was accepted or rejected using [`setBundleApprovalStatus`](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/setBundleApprovalStatus/index.md).
 
 ```graphql
 mutation SetBundleApprovalStatus($input: SetBundleApprovalStatusInput!) {
@@ -158,8 +158,8 @@ curl -X POST \
 
 ### Input fields
 
-| Field                       | Type                      | Required | Description                                                     |
-| --------------------------- | ------------------------- | -------- | --------------------------------------------------------------- |
-| `bundleVersion`             | `String`                  | Yes      | Version string from `exotaskImageBundle` (e.g. `1.2`, `20.11`). |
-| `approvalStatus`            | `ExoBundleApprovalStatus` | Yes      | `ACCEPTED` or `REJECTED`.                                       |
-| `bundleMetadata.eksVersion` | `String`                  | AWS only | EKS version for the cluster. Omit for Azure.                    |
+| Field                       | Type                                                                                                                                           | Required | Description                                                     |
+| --------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------- | -------- | --------------------------------------------------------------- |
+| `bundleVersion`             | `String`                                                                                                                                       | Yes      | Version string from `exotaskImageBundle` (e.g. `1.2`, `20.11`). |
+| `approvalStatus`            | [`ExoBundleApprovalStatus`](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/ExoBundleApprovalStatus/index.md) | Yes      | `ACCEPTED` or `REJECTED`.                                       |
+| `bundleMetadata.eksVersion` | `String`                                                                                                                                       | AWS only | EKS version for the cluster. Omit for Azure.                    |

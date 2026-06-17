@@ -3431,9 +3431,9 @@
 </div>
 <h2 id="configure-protection">Configure Protection</h2>
 <h3 id="assign-an-sla-domain">Assign an SLA Domain</h3>
-<p>Use the <code>assignSla</code> mutation to assign an SLA Domain to SQL Server databases, instances, or hosts. See <a href="../../SLA-Domains/#assigning-an-sla-to-a-workload">SLA Domains</a> for the full walkthrough.</p>
+<p>Use the <a href="../../../API-Reference/mutations/assignSla/"><code>assignSla</code></a> mutation to assign an SLA Domain to SQL Server databases, instances, or hosts. See <a href="../../SLA-Domains/#assigning-an-sla-to-a-workload">SLA Domains</a> for the full walkthrough.</p>
 <h3 id="database-level-settings">Database-Level Settings</h3>
-<p>Use <code>bulkUpdateMssqlDbs</code> to configure per-database operational settings. These are independent of the SLA policy and control how Rubrik executes backup and restore jobs for that database.</p>
+<p>Use <a href="../../../API-Reference/mutations/bulkUpdateMssqlDbs/"><code>bulkUpdateMssqlDbs</code></a> to configure per-database operational settings. These are independent of the SLA policy and control how Rubrik executes backup and restore jobs for that database.</p>
 <p>Common settings in <code>updateProperties</code>:</p>
 <table>
 <thead>
@@ -3472,8 +3472,12 @@
 </span><span id="__span-6-10"><a id="__codelineno-6-10" name="__codelineno-6-10" href="#__codelineno-6-10"></a><span class="w">        </span><span class="p">}</span>
 </span><span id="__span-6-11"><a id="__codelineno-6-11" name="__codelineno-6-11" href="#__codelineno-6-11"></a><span class="w">      </span><span class="p">}</span>
 </span><span id="__span-6-12"><a id="__codelineno-6-12" name="__codelineno-6-12" href="#__codelineno-6-12"></a><span class="w">    </span><span class="p">]</span>
-</span><span id="__span-6-13"><a id="__codelineno-6-13" name="__codelineno-6-13" href="#__codelineno-6-13"></a><span class="w">  </span><span class="p">})</span>
-</span><span id="__span-6-14"><a id="__codelineno-6-14" name="__codelineno-6-14" href="#__codelineno-6-14"></a><span class="p">}</span>
+</span><span id="__span-6-13"><a id="__codelineno-6-13" name="__codelineno-6-13" href="#__codelineno-6-13"></a><span class="w">  </span><span class="p">})</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-6-14"><a id="__codelineno-6-14" name="__codelineno-6-14" href="#__codelineno-6-14"></a><span class="w">    </span><span class="n">items</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-6-15"><a id="__codelineno-6-15" name="__codelineno-6-15" href="#__codelineno-6-15"></a><span class="w">      </span><span class="n">isLocal</span>
+</span><span id="__span-6-16"><a id="__codelineno-6-16" name="__codelineno-6-16" href="#__codelineno-6-16"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-6-17"><a id="__codelineno-6-17" name="__codelineno-6-17" href="#__codelineno-6-17"></a><span class="w">  </span><span class="p">}</span>
+</span><span id="__span-6-18"><a id="__codelineno-6-18" name="__codelineno-6-18" href="#__codelineno-6-18"></a><span class="p">}</span>
 </span></code></pre></div>
 </div>
 <div class="tabbed-block">
@@ -3583,7 +3587,7 @@
 </div>
 </div>
 <h3 id="monitor-backup-jobs">Monitor Backup Jobs</h3>
-<p>All backup and recovery operations are asynchronous and return a request <code>id</code>. Poll <code>mssqlJobStatus</code> with the request <code>id</code> and <code>clusterUuid</code> to track progress.</p>
+<p>All backup and recovery operations are asynchronous and return a request <code>id</code>. Poll <a href="../../../API-Reference/queries/mssqlJobStatus/"><code>mssqlJobStatus</code></a> with the request <code>id</code> and <code>clusterUuid</code> to track progress.</p>
 <p>The <code>id</code> string follows the format <code>{JOB_TYPE}_{database-id}_{run-id}:::0</code>, where <code>database-id</code> is the FID of the source database, <code>run-id</code> is a unique identifier for that job execution, and <code>0</code> is the instance number. The job type prefix differs from the mutation name:</p>
 <table>
 <thead>
@@ -3594,27 +3598,27 @@
 </thead>
 <tbody>
 <tr>
-<td><code>createOnDemandMssqlBackup</code></td>
+<td><a href="../../../API-Reference/mutations/createOnDemandMssqlBackup/"><code>createOnDemandMssqlBackup</code></a></td>
 <td><code>MSSQL_DB_BACKUP</code></td>
 </tr>
 <tr>
-<td><code>takeMssqlLogBackup</code></td>
+<td><a href="../../../API-Reference/mutations/takeMssqlLogBackup/"><code>takeMssqlLogBackup</code></a></td>
 <td><code>MSSQL_LOG_BACKUP</code></td>
 </tr>
 <tr>
-<td><code>restoreMssqlDatabase</code></td>
+<td><a href="../../../API-Reference/mutations/restoreMssqlDatabase/"><code>restoreMssqlDatabase</code></a></td>
 <td><code>RESTORE_MSSQL_DB</code></td>
 </tr>
 <tr>
-<td><code>exportMssqlDatabase</code></td>
+<td><a href="../../../API-Reference/mutations/exportMssqlDatabase/"><code>exportMssqlDatabase</code></a></td>
 <td><code>RESTORE_MSSQL_DB</code></td>
 </tr>
 <tr>
-<td><code>createMssqlLiveMount</code></td>
+<td><a href="../../../API-Reference/mutations/createMssqlLiveMount/"><code>createMssqlLiveMount</code></a></td>
 <td><code>MSSQL_DB_MOUNT</code></td>
 </tr>
 <tr>
-<td><code>deleteMssqlLiveMount</code></td>
+<td><a href="../../../API-Reference/mutations/deleteMssqlLiveMount/"><code>deleteMssqlLiveMount</code></a></td>
 <td><code>MSSQL_DB_UNMOUNT</code></td>
 </tr>
 </tbody>
@@ -3697,7 +3701,7 @@
 </tbody>
 </table>
 <h3 id="in-place-restore">In-Place Restore</h3>
-<p>Restore a database to its original location and instance. The existing database is overwritten and brought back online after recovery. Use the request <code>id</code> returned by the mutation to monitor progress via <code>mssqlJobStatus</code>.</p>
+<p>Restore a database to its original location and instance. The existing database is overwritten and brought back online after recovery. Use the request <code>id</code> returned by the mutation to monitor progress via <a href="../../../API-Reference/queries/mssqlJobStatus/"><code>mssqlJobStatus</code></a>.</p>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
 <p>In-place restore overwrites the existing database. Confirm the database is not in use and that you have a verified recovery point before proceeding.</p>
@@ -3877,7 +3881,7 @@
 </div>
 </div>
 <h4 id="unmount">Unmount</h4>
-<p>When finished with the live mount, remove it to release storage resources. The <code>id</code> here is the live mount object ID — not the async request ID returned by <code>createMssqlLiveMount</code>. Query <a href="../../../API-Reference/queries/mssqlDatabaseLiveMounts/"><code>mssqlDatabaseLiveMounts</code></a> to retrieve live mount IDs.</p>
+<p>When finished with the live mount, remove it to release storage resources. The <code>id</code> here is the live mount object ID — not the async request ID returned by <a href="../../../API-Reference/mutations/createMssqlLiveMount/"><code>createMssqlLiveMount</code></a>. Query <a href="../../../API-Reference/queries/mssqlDatabaseLiveMounts/"><code>mssqlDatabaseLiveMounts</code></a> to retrieve live mount IDs.</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="10:3"><input checked="checked" id="__tabbed_10_1" name="__tabbed_10" type="radio" /><input id="__tabbed_10_2" name="__tabbed_10" type="radio" /><input id="__tabbed_10_3" name="__tabbed_10" type="radio" /><div class="tabbed-labels"><label for="__tabbed_10_1">GraphQL</label><label for="__tabbed_10_2">PowerShell SDK</label><label for="__tabbed_10_3">Shell</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
@@ -3936,7 +3940,7 @@
 <p>Linked AGs are only applicable to Distributed Availability Groups where replicas are registered with different Rubrik clusters. Standard single-cluster AGs do not require linking.</p>
 </div>
 <h4 id="list-virtual-groups">List Virtual Groups</h4>
-<p>Use <code>mssqlAvailabilityGroupVirtualGroups</code> to see all AGs and whether they are currently linked. An empty <code>linkedFids</code> array means the AG has not been linked to a counterpart on another cluster.</p>
+<p>Use <a href="../../../API-Reference/queries/mssqlAvailabilityGroupVirtualGroups/"><code>mssqlAvailabilityGroupVirtualGroups</code></a> to see all AGs and whether they are currently linked. An empty <code>linkedFids</code> array means the AG has not been linked to a counterpart on another cluster.</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="11:3"><input checked="checked" id="__tabbed_11_1" name="__tabbed_11" type="radio" /><input id="__tabbed_11_2" name="__tabbed_11" type="radio" /><input id="__tabbed_11_3" name="__tabbed_11" type="radio" /><div class="tabbed-labels"><label for="__tabbed_11_1">GraphQL</label><label for="__tabbed_11_2">PowerShell SDK</label><label for="__tabbed_11_3">Shell</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
@@ -4077,7 +4081,7 @@
 </div>
 </div>
 <h4 id="view-databases-in-a-virtual-group">View Databases in a Virtual Group</h4>
-<p>Use <code>mssqlAvailabilityGroupDatabaseVirtualGroups</code> to inspect the database-level view of a linked pair. Pass both AG FIDs. The <code>activeDbFid</code> field identifies the current primary replica's database — the one Rubrik is backing up.</p>
+<p>Use <a href="../../../API-Reference/queries/mssqlAvailabilityGroupDatabaseVirtualGroups/"><code>mssqlAvailabilityGroupDatabaseVirtualGroups</code></a> to inspect the database-level view of a linked pair. Pass both AG FIDs. The <code>activeDbFid</code> field identifies the current primary replica's database — the one Rubrik is backing up.</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="14:3"><input checked="checked" id="__tabbed_14_1" name="__tabbed_14" type="radio" /><input id="__tabbed_14_2" name="__tabbed_14" type="radio" /><input id="__tabbed_14_3" name="__tabbed_14" type="radio" /><div class="tabbed-labels"><label for="__tabbed_14_1">GraphQL</label><label for="__tabbed_14_2">PowerShell SDK</label><label for="__tabbed_14_3">Shell</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
@@ -4202,7 +4206,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="June 16, 2026 15:34:20 UTC">2026-06-16</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="June 17, 2026 17:06:20 UTC">2026-06-17</span>
   </span>
 
     

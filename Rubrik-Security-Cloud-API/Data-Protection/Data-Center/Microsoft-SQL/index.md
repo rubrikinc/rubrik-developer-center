@@ -128,11 +128,11 @@ curl -X POST \
 
 ### Assign an SLA Domain
 
-Use the `assignSla` mutation to assign an SLA Domain to SQL Server databases, instances, or hosts. See [SLA Domains](https://developer.rubrik.com/Rubrik-Security-Cloud-API/Data-Protection/SLA-Domains/#assigning-an-sla-to-a-workload) for the full walkthrough.
+Use the [`assignSla`](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/assignSla/index.md) mutation to assign an SLA Domain to SQL Server databases, instances, or hosts. See [SLA Domains](https://developer.rubrik.com/Rubrik-Security-Cloud-API/Data-Protection/SLA-Domains/#assigning-an-sla-to-a-workload) for the full walkthrough.
 
 ### Database-Level Settings
 
-Use `bulkUpdateMssqlDbs` to configure per-database operational settings. These are independent of the SLA policy and control how Rubrik executes backup and restore jobs for that database.
+Use [`bulkUpdateMssqlDbs`](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/bulkUpdateMssqlDbs/index.md) to configure per-database operational settings. These are independent of the SLA policy and control how Rubrik executes backup and restore jobs for that database.
 
 Common settings in `updateProperties`:
 
@@ -155,7 +155,11 @@ mutation updateMssqlDbProperties {
         }
       }
     ]
-  })
+  }) {
+    items {
+      isLocal
+    }
+  }
 }
 ```
 
@@ -263,18 +267,18 @@ curl -X POST \
 
 ### Monitor Backup Jobs
 
-All backup and recovery operations are asynchronous and return a request `id`. Poll `mssqlJobStatus` with the request `id` and `clusterUuid` to track progress.
+All backup and recovery operations are asynchronous and return a request `id`. Poll [`mssqlJobStatus`](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/mssqlJobStatus/index.md) with the request `id` and `clusterUuid` to track progress.
 
 The `id` string follows the format `{JOB_TYPE}_{database-id}_{run-id}:::0`, where `database-id` is the FID of the source database, `run-id` is a unique identifier for that job execution, and `0` is the instance number. The job type prefix differs from the mutation name:
 
-| Operation                   | Job type prefix    |
-| --------------------------- | ------------------ |
-| `createOnDemandMssqlBackup` | `MSSQL_DB_BACKUP`  |
-| `takeMssqlLogBackup`        | `MSSQL_LOG_BACKUP` |
-| `restoreMssqlDatabase`      | `RESTORE_MSSQL_DB` |
-| `exportMssqlDatabase`       | `RESTORE_MSSQL_DB` |
-| `createMssqlLiveMount`      | `MSSQL_DB_MOUNT`   |
-| `deleteMssqlLiveMount`      | `MSSQL_DB_UNMOUNT` |
+| Operation                                                                                                                                        | Job type prefix    |
+| ------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------ |
+| [`createOnDemandMssqlBackup`](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/createOnDemandMssqlBackup/index.md) | `MSSQL_DB_BACKUP`  |
+| [`takeMssqlLogBackup`](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/takeMssqlLogBackup/index.md)               | `MSSQL_LOG_BACKUP` |
+| [`restoreMssqlDatabase`](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/restoreMssqlDatabase/index.md)           | `RESTORE_MSSQL_DB` |
+| [`exportMssqlDatabase`](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/exportMssqlDatabase/index.md)             | `RESTORE_MSSQL_DB` |
+| [`createMssqlLiveMount`](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/createMssqlLiveMount/index.md)           | `MSSQL_DB_MOUNT`   |
+| [`deleteMssqlLiveMount`](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/deleteMssqlLiveMount/index.md)           | `MSSQL_DB_UNMOUNT` |
 
 ```graphql
 query {
@@ -335,7 +339,7 @@ All recovery operations require a `recoveryPoint` that specifies the target poin
 
 ### In-Place Restore
 
-Restore a database to its original location and instance. The existing database is overwritten and brought back online after recovery. Use the request `id` returned by the mutation to monitor progress via `mssqlJobStatus`.
+Restore a database to its original location and instance. The existing database is overwritten and brought back online after recovery. Use the request `id` returned by the mutation to monitor progress via [`mssqlJobStatus`](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/mssqlJobStatus/index.md).
 
 Warning
 
@@ -511,7 +515,7 @@ curl -X POST \
 
 #### Unmount
 
-When finished with the live mount, remove it to release storage resources. The `id` here is the live mount object ID — not the async request ID returned by `createMssqlLiveMount`. Query [`mssqlDatabaseLiveMounts`](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/mssqlDatabaseLiveMounts/index.md) to retrieve live mount IDs.
+When finished with the live mount, remove it to release storage resources. The `id` here is the live mount object ID — not the async request ID returned by [`createMssqlLiveMount`](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/createMssqlLiveMount/index.md). Query [`mssqlDatabaseLiveMounts`](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/mssqlDatabaseLiveMounts/index.md) to retrieve live mount IDs.
 
 ```graphql
 mutation unmountMssqlDb {
@@ -579,7 +583,7 @@ Linked AGs are only applicable to Distributed Availability Groups where replicas
 
 #### List Virtual Groups
 
-Use `mssqlAvailabilityGroupVirtualGroups` to see all AGs and whether they are currently linked. An empty `linkedFids` array means the AG has not been linked to a counterpart on another cluster.
+Use [`mssqlAvailabilityGroupVirtualGroups`](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/mssqlAvailabilityGroupVirtualGroups/index.md) to see all AGs and whether they are currently linked. An empty `linkedFids` array means the AG has not been linked to a counterpart on another cluster.
 
 ```graphql
 query ListMssqlAvailabilityGroupVirtualGroups {
@@ -714,7 +718,7 @@ curl -X POST \
 
 #### View Databases in a Virtual Group
 
-Use `mssqlAvailabilityGroupDatabaseVirtualGroups` to inspect the database-level view of a linked pair. Pass both AG FIDs. The `activeDbFid` field identifies the current primary replica's database — the one Rubrik is backing up.
+Use [`mssqlAvailabilityGroupDatabaseVirtualGroups`](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/mssqlAvailabilityGroupDatabaseVirtualGroups/index.md) to inspect the database-level view of a linked pair. Pass both AG FIDs. The `activeDbFid` field identifies the current primary replica's database — the one Rubrik is backing up.
 
 ```graphql
 query ListLinkedAvailabilityGroupDatabases {

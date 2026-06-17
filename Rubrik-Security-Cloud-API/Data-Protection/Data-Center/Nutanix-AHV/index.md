@@ -104,7 +104,7 @@ curl -X POST \
   https://example.my.rubrik.com/api/graphql
 ```
 
-To retrieve a single VM directly, use `nutanixVm(fid: UUID!)`. This is also how you list a VM's snapshots — query its `snapshotConnection { nodes { id date } }` field, which returns the snapshot IDs you'll need for recovery.
+To retrieve a single VM directly, use [`nutanixVm`](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/nutanixVm/index.md). This is also how you list a VM's snapshots — query its `snapshotConnection` field, which returns the snapshot IDs you'll need for recovery. See [Snapshots](https://developer.rubrik.com/Rubrik-Security-Cloud-API/Data-Protection/Snapshots/index.md) for details.
 
 ### Clusters
 
@@ -270,7 +270,7 @@ curl -X POST \
 
 ### Assign an SLA Domain
 
-Use the `assignSla` mutation to assign an SLA Domain to Nutanix VMs, clusters, or categories. SLA Domains assigned at a higher level are inherited by the VMs below them. See [SLA Domains](https://developer.rubrik.com/Rubrik-Security-Cloud-API/Data-Protection/SLA-Domains/#assigning-an-sla-to-a-workload) for the full walkthrough.
+Use the [`assignSla`](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/assignSla/index.md) mutation to assign an SLA Domain to Nutanix VMs, clusters, or categories. SLA Domains assigned at a higher level are inherited by the VMs below them. See [SLA Domains](https://developer.rubrik.com/Rubrik-Security-Cloud-API/Data-Protection/SLA-Domains/#assigning-an-sla-to-a-workload) for the full walkthrough.
 
 ### Register the Rubrik Backup Service (RBS)
 
@@ -279,7 +279,7 @@ Standard Nutanix VM backups are **crash-consistent** snapshots taken at the hype
 - **Application-consistent snapshots** — pre/post backup scripts and VSS quiescing for databases and other transactional workloads running inside the VM.
 - **File-level restore back into the running VM** — see [Recovery](#recovery).
 
-Register RBS with `registerAgentNutanixVm` after the VM has been discovered, using the VM's `id` from the discovery query above. This is **not** needed for ordinary crash-consistent VM protection.
+Register RBS with [`registerAgentNutanixVm`](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/registerAgentNutanixVm/index.md) after the VM has been discovered, using the VM's `id` from the discovery query above. This is **not** needed for ordinary crash-consistent VM protection.
 
 ```graphql
 mutation RegisterRbs {
@@ -311,7 +311,7 @@ curl -X POST \
 
 ## On-Demand Backup
 
-Trigger an immediate backup outside the scheduled SLA policy with `createOnDemandNutanixBackup`. The `id` is the **VM** FID.
+Trigger an immediate backup outside the scheduled SLA policy with [`createOnDemandNutanixBackup`](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/createOnDemandNutanixBackup/index.md). The `id` is the **VM** FID.
 
 The `config.slaId` field is optional. If you omit it, Rubrik uses the VM's currently assigned SLA Domain to determine retention. If the VM has no SLA assigned and you omit `slaId`, the snapshot is **retained indefinitely** with no automatic expiry — always provide `slaId` unless that is what you intend.
 
@@ -374,7 +374,7 @@ Three recovery modes are available.
 
 ### Export to a New VM
 
-Use `exportNutanixSnapshot` to create a brand-new VM from a snapshot without touching the source. This is the right choice for recovery validation, spinning up test/dev copies, or recovering alongside a still-running production VM.
+Use [`exportNutanixSnapshot`](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/exportNutanixSnapshot/index.md) to create a brand-new VM from a snapshot without touching the source. This is the right choice for recovery validation, spinning up test/dev copies, or recovering alongside a still-running production VM.
 
 Fields in `config`:
 
@@ -445,7 +445,7 @@ curl -X POST \
 
 ### Live Mount
 
-Use `mountNutanixSnapshotV1` to instantly stand up a running VM served directly from Rubrik backup storage — no full data copy required. Live Mount is well-suited for rapid recovery validation, extracting data from a backup, or providing a point-in-time copy without consuming production storage.
+Use [`mountNutanixSnapshotV1`](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/mountNutanixSnapshotV1/index.md) to instantly stand up a running VM served directly from Rubrik backup storage — no full data copy required. Live Mount is well-suited for rapid recovery validation, extracting data from a backup, or providing a point-in-time copy without consuming production storage.
 
 `shouldDisableMigration` controls whether `containerNaturalId` is required
 
@@ -516,9 +516,9 @@ curl -X POST \
 
 #### Tear Down a Live Mount
 
-When finished, remove the Live Mount with `deleteNutanixMountV1` to release storage resources. The `id` here is the **Live Mount object ID**, not the async request ID returned by `mountNutanixSnapshotV1`.
+When finished, remove the Live Mount with [`deleteNutanixMountV1`](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/deleteNutanixMountV1/index.md) to release storage resources. The `id` here is the **Live Mount object ID**, not the async request ID returned by [`mountNutanixSnapshotV1`](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/mountNutanixSnapshotV1/index.md).
 
-To make a Live Mount permanent instead of tearing it down, migrate it to Nutanix storage with `migrateNutanixMountV1`.
+To make a Live Mount permanent instead of tearing it down, migrate it to Nutanix storage with [`migrateNutanixMountV1`](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/migrateNutanixMountV1/index.md).
 
 ```graphql
 mutation {
@@ -562,7 +562,7 @@ curl -X POST \
 
 ### In-Place Restore
 
-Use `inplaceExportNutanixSnapshot` to overwrite the source VM with a snapshot, restoring it to its original location. No target needs to be specified. Requires Rubrik CDM v9.3 or later.
+Use [`inplaceExportNutanixSnapshot`](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/inplaceExportNutanixSnapshot/index.md) to overwrite the source VM with a snapshot, restoring it to its original location. No target needs to be specified. Requires Rubrik CDM v9.3 or later.
 
 Warning
 
@@ -627,25 +627,25 @@ curl -X POST \
 
 ### File-Level Restore
 
-To restore specific files or directories from a snapshot back into the source VM (or a target VM), use `restoreFilesNutanixSnapshot`. This requires the Rubrik Backup Service to be installed and registered inside the VM — see [Register the Rubrik Backup Service](#register-the-rubrik-backup-service-rbs). The `config.restoreConfig` array lists each file's source `path` and `restorePath`.
+To restore specific files or directories from a snapshot back into the source VM (or a target VM), use [`restoreFilesNutanixSnapshot`](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/restoreFilesNutanixSnapshot/index.md). This requires the Rubrik Backup Service to be installed and registered inside the VM — see [Register the Rubrik Backup Service](#register-the-rubrik-backup-service-rbs). The `config.restoreConfig` array lists each file's source `path` and `restorePath`.
 
 ## Monitor Jobs
 
-Backup and recovery operations are asynchronous and return an `AsyncRequestStatus` with a request `id`. Poll `nutanixVmAsyncRequestStatus` with that `id` and a `clusterUuid` to track progress.
+Backup and recovery operations are asynchronous and return an [`AsyncRequestStatus`](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AsyncRequestStatus/index.md) with a request `id`. Poll [`nutanixVmAsyncRequestStatus`](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/nutanixVmAsyncRequestStatus/index.md) with that `id` and a `clusterUuid` to track progress.
 
 `clusterUuid` is required and is not returned by the mutation
 
-The recovery and backup mutations do not return `clusterUuid`. Retrieve it from the VM's `cluster { id }` field (from the discovery query) and pass it alongside the request `id`. Cluster- and Prism-Central-level operations are tracked with `nutanixClusterAsyncRequestStatus` and `nutanixPrismCentralAsyncRequestStatus` respectively.
+The recovery and backup mutations do not return `clusterUuid`. Retrieve it from the VM's `cluster { id }` field (from the discovery query) and pass it alongside the request `id`. Cluster-level operations are tracked with [`nutanixClusterAsyncRequestStatus`](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/nutanixClusterAsyncRequestStatus/index.md).
 
 The request `id` follows the format `{JOB_TYPE}_{vm-id}_{run-id}:::0`, where `vm-id` is the FID of the source VM, `run-id` is a unique identifier for that job execution, and `0` is the instance number. The job type prefix differs from the mutation name:
 
-| Operation                      | Job type prefix                   |
-| ------------------------------ | --------------------------------- |
-| `createOnDemandNutanixBackup`  | `CREATE_NUTANIX_SNAPSHOT`         |
-| `exportNutanixSnapshot`        | `EXPORT_NUTANIX_SNAPSHOT`         |
-| `mountNutanixSnapshotV1`       | `MOUNT_NUTANIX_SNAPSHOT`          |
-| `inplaceExportNutanixSnapshot` | `INPLACE_EXPORT_NUTANIX_SNAPSHOT` |
-| `deleteNutanixMountV1`         | `UNMOUNT_NUTANIX_SNAPSHOT`        |
+| Operation                                                                                                                                              | Job type prefix                   |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------ | --------------------------------- |
+| [`createOnDemandNutanixBackup`](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/createOnDemandNutanixBackup/index.md)   | `CREATE_NUTANIX_SNAPSHOT`         |
+| [`exportNutanixSnapshot`](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/exportNutanixSnapshot/index.md)               | `EXPORT_NUTANIX_SNAPSHOT`         |
+| [`mountNutanixSnapshotV1`](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/mountNutanixSnapshotV1/index.md)             | `MOUNT_NUTANIX_SNAPSHOT`          |
+| [`inplaceExportNutanixSnapshot`](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/inplaceExportNutanixSnapshot/index.md) | `INPLACE_EXPORT_NUTANIX_SNAPSHOT` |
+| [`deleteNutanixMountV1`](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/deleteNutanixMountV1/index.md)                 | `UNMOUNT_NUTANIX_SNAPSHOT`        |
 
 ```graphql
 query {
@@ -706,18 +706,15 @@ mutation {
     }
     prismElementCdmTuple: [
       {
-        nutanixClusterUuid: "00057b6e-1234-5678-0000-000000abcdef"
-        cdmClusterUuid: "8417a938-96f5-43c6-9905-b36e051c5f98"
+        nutanixClusterId: "00057b6e-1234-5678-0000-000000abcdef"
+        cdmClusterId: "8417a938-96f5-43c6-9905-b36e051c5f98"
       }
     ]
     isDrEnabled: false
   }) {
-    requestStatuses {
+    responses {
       id
       status
-      error {
-        message
-      }
     }
   }
 }
@@ -734,8 +731,8 @@ $pcConfig.Password = "your-password"
 $pcConfig.CaCerts = "-----BEGIN CERTIFICATE-----`nMIID....`n-----END CERTIFICATE-----"
 $mutation.var.input.PrismCentralConfig = $pcConfig
 $tuple = New-Object -TypeName RubrikSecurityCloud.Types.PrismElementCdmTuple
-$tuple.NutanixClusterUuid = "00057b6e-1234-5678-0000-000000abcdef"
-$tuple.CdmClusterUuid = "8417a938-96f5-43c6-9905-b36e051c5f98"
+$tuple.NutanixClusterId = "00057b6e-1234-5678-0000-000000abcdef"
+$tuple.CdmClusterId = "8417a938-96f5-43c6-9905-b36e051c5f98"
 $mutation.var.input.PrismElementCdmTuple = @($tuple)
 $mutation.var.input.IsDrEnabled = $false
 $mutation.invoke()
@@ -746,11 +743,11 @@ curl -s -X POST "$RSC_URL/api/graphql" \
   -H "Authorization: Bearer $RSC_TOKEN" \
   -H "Content-Type: application/json" \
   -d '{
-    "query": "mutation { createNutanixPrismCentral(input: { prismCentralConfig: { hostname: \"prism-central.example.com\" username: \"admin\" password: \"your-password\" caCerts: \"-----BEGIN CERTIFICATE-----\\nMIID....\\n-----END CERTIFICATE-----\" } prismElementCdmTuple: [{ nutanixClusterUuid: \"00057b6e-1234-5678-0000-000000abcdef\" cdmClusterUuid: \"8417a938-96f5-43c6-9905-b36e051c5f98\" }] isDrEnabled: false }) { requestStatuses { id status error { message } } } }"
+    "query": "mutation { createNutanixPrismCentral(input: { prismCentralConfig: { hostname: \"prism-central.example.com\" username: \"admin\" password: \"your-password\" caCerts: \"-----BEGIN CERTIFICATE-----\\nMIID....\\n-----END CERTIFICATE-----\" } prismElementCdmTuple: [{ nutanixClusterId: \"00057b6e-1234-5678-0000-000000abcdef\" cdmClusterId: \"8417a938-96f5-43c6-9905-b36e051c5f98\" }] isDrEnabled: false }) { responses { id status } } }"
   }'
 ```
 
-Returns a `BatchAsyncRequestStatus` — one async status per Prism Element discovered.
+Returns a [`BatchAsyncRequestStatus`](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/BatchAsyncRequestStatus/index.md) — one async status per Prism Element discovered.
 
 ### Register a Standalone Cluster
 

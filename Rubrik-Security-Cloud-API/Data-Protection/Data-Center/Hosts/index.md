@@ -13,7 +13,7 @@ If you're registering RBS on a VMware vSphere VM, see [VMware vSphere](https://d
 
 ## Register a Host
 
-Use `bulkRegisterHostAsync` to register one or more hosts. The mutation accepts the request and returns immediately; host discovery runs in the background.
+Use [`bulkRegisterHostAsync`](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/bulkRegisterHostAsync/index.md) to register one or more hosts. The mutation accepts the request and returns immediately; host discovery runs in the background.
 
 ```graphql
 mutation RegisterHost {
@@ -75,7 +75,7 @@ After the mutation returns, discovery runs in the background. For SQL Server hos
 
 ## Verify Discovery
 
-Use `physicalHosts` to confirm the host is registered and discovery has completed. Poll until `connectionStatus.connectivity` is `CONNECTED`.
+Use [`physicalHosts`](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/physicalHosts/index.md) to confirm the host is registered and discovery has completed. Poll until `connectionStatus.connectivity` is `CONNECTED`.
 
 ```graphql
 query CheckHostDiscovery {

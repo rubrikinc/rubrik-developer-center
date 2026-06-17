@@ -3099,8 +3099,8 @@
 </ol>
 <h2 id="discover-your-oracle-environment">Discover Your Oracle Environment</h2>
 <h3 id="databases">Databases</h3>
-<p>Query <code>oracleDatabases</code> to list discovered databases and retrieve their IDs. The <code>id</code> returned here is what you pass to every backup and recovery operation. The response also surfaces Oracle-specific detail — <code>dbUniqueName</code>, <code>numInstances</code>, <code>numChannels</code>, tablespaces, PDBs, and the Data Guard role (<code>dbRole</code>, <code>dataGuardType</code>, <code>dataGuardGroup</code>) — so you can confirm a database was discovered correctly before protecting it.</p>
-<p>Results are paginated; see <a href="../../../pagination/">Pagination</a> for retrieving large estates. To fetch a single database when you already have its FID, use <code>oracleDatabase(fid: UUID!)</code>.</p>
+<p>Query <a href="../../../API-Reference/queries/oracleDatabases/"><code>oracleDatabases</code></a> to list discovered databases and retrieve their IDs. The <code>id</code> returned here is what you pass to every backup and recovery operation. The response also surfaces Oracle-specific detail — <code>dbUniqueName</code>, <code>numInstances</code>, <code>numChannels</code>, tablespaces, PDBs, and the Data Guard role (<code>dbRole</code>, <code>dataGuardType</code>, <code>dataGuardGroup</code>) — so you can confirm a database was discovered correctly before protecting it.</p>
+<p>Results are paginated; see <a href="../../../pagination/">Pagination</a> for retrieving large estates. To fetch a single database when you already have its FID, use <a href="../../../API-Reference/queries/oracleDatabase/"><code>oracleDatabase</code></a>.</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="1:3"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">GraphQL</label><label for="__tabbed_1_2">PowerShell SDK</label><label for="__tabbed_1_3">Shell</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
@@ -3181,7 +3181,7 @@
 </div>
 </div>
 <h3 id="hosts-and-racs">Hosts and RACs</h3>
-<p>Oracle hosts and RACs are both returned by <code>oracleTopLevelDescendants</code> — there is no separate <code>oracleHosts</code> or <code>oracleRacs</code> query. Scope the results with <code>typeFilter</code>: pass <code>[OracleHost]</code>, <code>[OracleRac]</code>, or both. You'll need a host or RAC FID as the recovery target when exporting or live mounting a database.</p>
+<p>Oracle hosts and RACs are both returned by <a href="../../../API-Reference/queries/oracleTopLevelDescendants/"><code>oracleTopLevelDescendants</code></a> — there is no separate <code>oracleHosts</code> or <code>oracleRacs</code> query. Scope the results with <code>typeFilter</code>: pass <code>[OracleHost]</code>, <code>[OracleRac]</code>, or both. You'll need a host or RAC FID as the recovery target when exporting or live mounting a database.</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="2:3"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><input id="__tabbed_2_3" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">GraphQL</label><label for="__tabbed_2_2">PowerShell SDK</label><label for="__tabbed_2_3">Shell</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
@@ -3250,16 +3250,16 @@
 </div>
 </div>
 <h3 id="data-guard-groups">Data Guard Groups</h3>
-<p>A database that participates in Data Guard reports its membership through the <code>dataGuardGroup</code> and <code>dataGuardType</code> fields in the database query above. To inspect a group directly — its members and their roles — use <code>oracleDataGuardGroup(fid: UUID!)</code>. There is no plural list query for Data Guard groups; discover them through the database listing, then look up the group by FID.</p>
+<p>A database that participates in Data Guard reports its membership through the <code>dataGuardGroup</code> and <code>dataGuardType</code> fields in the database query above. To inspect a group directly — its members and their roles — use <a href="../../../API-Reference/queries/oracleDataGuardGroup/"><code>oracleDataGuardGroup</code></a>. There is no plural list query for Data Guard groups; discover them through the database listing, then look up the group by FID.</p>
 <p>Backup and recovery against a Data Guard configuration use the <strong>member database ID</strong>, not the group ID. Rubrik backs up from the appropriate member according to the group's configuration.</p>
 <h2 id="configure-protection">Configure Protection</h2>
 <h3 id="assign-an-sla-domain">Assign an SLA Domain</h3>
-<p>Use the <code>assignSla</code> mutation to assign an SLA Domain to a database, host, or RAC. Assigning at the host or RAC level protects every database beneath it through inheritance. See <a href="../../SLA-Domains/#assigning-an-sla-to-a-workload">SLA Domains</a> for the full walkthrough.</p>
+<p>Use the <a href="../../../API-Reference/mutations/assignSla/"><code>assignSla</code></a> mutation to assign an SLA Domain to a database, host, or RAC. Assigning at the host or RAC level protects every database beneath it through inheritance. See <a href="../../SLA-Domains/#assigning-an-sla-to-a-workload">SLA Domains</a> for the full walkthrough.</p>
 <h3 id="log-backup-and-database-settings">Log Backup and Database Settings</h3>
-<p>Use <code>bulkUpdateOracleDatabases</code> to configure per-database operational settings that are independent of the SLA policy — most importantly the archived redo log backup cadence and retention. Apply the settings under <code>oracleUpdate.oracleUpdateCommon</code>.</p>
+<p>Use <a href="../../../API-Reference/mutations/bulkUpdateOracleDatabases/"><code>bulkUpdateOracleDatabases</code></a> to configure per-database operational settings that are independent of the SLA policy — most importantly the archived redo log backup cadence and retention. Apply the settings under <code>oracleUpdate.oracleUpdateCommon</code>.</p>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
-<p>Set log fields under <code>oracleUpdate.oracleUpdateCommon</code>. The log fields directly on the top-level <code>OracleUpdateInput</code> type are deprecated (CDM v5.x) and should not be used in new code.</p>
+<p>Set log fields under <code>oracleUpdate.oracleUpdateCommon</code>. The log fields directly on the top-level <a href="../../../API-Reference/types/inputs/OracleUpdateInput/"><code>OracleUpdateInput</code></a> type are deprecated (CDM v5.x) and should not be used in new code.</p>
 </div>
 <p>Common fields in <code>oracleUpdateCommon</code>:</p>
 <table>
@@ -3349,7 +3349,7 @@
 </div>
 <h2 id="on-demand-backup">On-Demand Backup</h2>
 <h3 id="database-snapshot">Database Snapshot</h3>
-<p>Trigger an immediate database backup outside the scheduled SLA policy with <code>takeOnDemandOracleDatabaseSnapshot</code>.</p>
+<p>Trigger an immediate database backup outside the scheduled SLA policy with <a href="../../../API-Reference/mutations/takeOnDemandOracleDatabaseSnapshot/"><code>takeOnDemandOracleDatabaseSnapshot</code></a>.</p>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
 <p>Always set <code>config.baseOnDemandSnapshotConfig.slaId</code>. Omitting it causes the snapshot to be <strong>retained indefinitely</strong> with no automatic expiry.</p>
@@ -3416,7 +3416,7 @@
 </div>
 </div>
 <h3 id="archived-redo-log-backup">Archived Redo Log Backup</h3>
-<p>Take an on-demand archived redo log backup with <code>takeOnDemandOracleLogSnapshot</code>. This is what extends your recoverable range between full database snapshots, enabling point-in-time recovery. The only required field is the database <code>id</code>.</p>
+<p>Take an on-demand archived redo log backup with <a href="../../../API-Reference/mutations/takeOnDemandOracleLogSnapshot/"><code>takeOnDemandOracleLogSnapshot</code></a>. This is what extends your recoverable range between full database snapshots, enabling point-in-time recovery. The only required field is the database <code>id</code>.</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="5:3"><input checked="checked" id="__tabbed_5_1" name="__tabbed_5" type="radio" /><input id="__tabbed_5_2" name="__tabbed_5" type="radio" /><input id="__tabbed_5_3" name="__tabbed_5" type="radio" /><div class="tabbed-labels"><label for="__tabbed_5_1">GraphQL</label><label for="__tabbed_5_2">PowerShell SDK</label><label for="__tabbed_5_3">Shell</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
@@ -3456,11 +3456,11 @@
 </div>
 </div>
 <h2 id="find-your-recoverable-range">Find Your Recoverable Range</h2>
-<p>Before recovering, query <code>oracleRecoverableRangesMinimal</code> to learn what points in time the database can actually be recovered to. Each returned range has a <code>beginTime</code> and <code>endTime</code>; any timestamp inside a range is a valid point-in-time recovery target. Set <code>includeSnapshots: true</code> to also list the underlying snapshot summaries (<code>fid</code>, <code>date</code>, <code>isOnDemand</code>) — use a snapshot <code>fid</code> when you want to recover to a discrete snapshot rather than an arbitrary timestamp.</p>
-<p>Pass the database FID as the <code>id</code> (note it is a <code>UUID</code> here, not a <code>String</code> as in the recovery mutations). Optionally narrow the result with <code>beforeTime</code> and <code>afterTime</code>.</p>
+<p>Before recovering, query <a href="../../../API-Reference/queries/oracleRecoverableRangesMinimal/"><code>oracleRecoverableRangesMinimal</code></a> to learn what points in time the database can actually be recovered to. Each returned range has a <code>beginTime</code> and <code>endTime</code>; any timestamp inside a range is a valid point-in-time recovery target. Set <code>includeSnapshots: true</code> to also list the underlying snapshot summaries (<code>fid</code>, <code>date</code>, <code>isOnDemand</code>) — use a snapshot <code>fid</code> when you want to recover to a discrete snapshot rather than an arbitrary timestamp.</p>
+<p>Pass the database FID as the <code>id</code> (note it is a <a href="../../../API-Reference/types/scalars/UUID/"><code>UUID</code></a> here, not a <code>String</code> as in the recovery mutations). Optionally narrow the result with <code>beforeTime</code> and <code>afterTime</code>.</p>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
-<p>Prefer <code>oracleRecoverableRangesMinimal</code> over the older <code>oracleRecoverableRanges</code> — it returns the same ranges with a lighter payload.</p>
+<p>Prefer <a href="../../../API-Reference/queries/oracleRecoverableRangesMinimal/"><code>oracleRecoverableRangesMinimal</code></a> over the older <a href="../../../API-Reference/queries/oracleRecoverableRanges/"><code>oracleRecoverableRanges</code></a> — it returns the same ranges with a lighter payload.</p>
 </div>
 <div class="tabbed-set tabbed-alternate" data-tabs="6:3"><input checked="checked" id="__tabbed_6_1" name="__tabbed_6" type="radio" /><input id="__tabbed_6_2" name="__tabbed_6" type="radio" /><input id="__tabbed_6_3" name="__tabbed_6" type="radio" /><div class="tabbed-labels"><label for="__tabbed_6_1">GraphQL</label><label for="__tabbed_6_2">PowerShell SDK</label><label for="__tabbed_6_3">Shell</label></div>
 <div class="tabbed-content">
@@ -3524,19 +3524,19 @@
 <tbody>
 <tr>
 <td><strong>Export</strong></td>
-<td><code>exportOracleDatabase</code></td>
+<td><a href="../../../API-Reference/mutations/exportOracleDatabase/"><code>exportOracleDatabase</code></a></td>
 <td>A different host or RAC</td>
 <td>Clones the database to a new location. Source untouched.</td>
 </tr>
 <tr>
 <td><strong>Live Mount</strong></td>
-<td><code>mountOracleDatabase</code></td>
+<td><a href="../../../API-Reference/mutations/mountOracleDatabase/"><code>mountOracleDatabase</code></a></td>
 <td>A different host or RAC</td>
 <td>Runs an NFS-backed copy without consuming additional storage. Source untouched.</td>
 </tr>
 <tr>
 <td><strong>In-place restore</strong></td>
-<td><code>instantRecoverOracleSnapshot</code></td>
+<td><a href="../../../API-Reference/mutations/instantRecoverOracleSnapshot/"><code>instantRecoverOracleSnapshot</code></a></td>
 <td>The original host</td>
 <td>Overwrites the source database.</td>
 </tr>
@@ -3544,7 +3544,7 @@
 </table>
 <div class="admonition danger">
 <p class="admonition-title">Every recovery requires exactly one recovery point</p>
-<p><code>OracleRecoveryPointInput</code> accepts three fields — set <strong>exactly one</strong>:</p>
+<p><a href="../../../API-Reference/types/inputs/OracleRecoveryPointInput/"><code>OracleRecoveryPointInput</code></a> accepts three fields — set <strong>exactly one</strong>:</p>
 <table>
 <thead>
 <tr>
@@ -3556,7 +3556,7 @@
 <tbody>
 <tr>
 <td><code>timestampMs</code></td>
-<td><code>Long</code></td>
+<td><a href="../../../API-Reference/types/scalars/Long/"><code>Long</code></a></td>
 <td>Epoch milliseconds for point-in-time recovery</td>
 </tr>
 <tr>
@@ -3566,7 +3566,7 @@
 </tr>
 <tr>
 <td><code>scn</code></td>
-<td><code>Long</code></td>
+<td><a href="../../../API-Reference/types/scalars/Long/"><code>Long</code></a></td>
 <td>An Oracle System Change Number (CDM v9.3+)</td>
 </tr>
 </tbody>
@@ -3578,7 +3578,7 @@
 <p>Export and live mount require permissions on <strong>both</strong> the source database <strong>and</strong> the target host or RAC. A service account with access only to the source is denied. Read operations (recoverable ranges, settings) need only view access on the database.</p>
 </div>
 <h3 id="export-to-a-new-database">Export to a New Database</h3>
-<p><code>exportOracleDatabase</code> clones a database from a recovery point onto a different Oracle host or RAC, leaving the source untouched — the right choice for recovery validation, refreshing test/dev copies, or RMAN-style duplication.</p>
+<p><a href="../../../API-Reference/mutations/exportOracleDatabase/"><code>exportOracleDatabase</code></a> clones a database from a recovery point onto a different Oracle host or RAC, leaving the source untouched — the right choice for recovery validation, refreshing test/dev copies, or RMAN-style duplication.</p>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
 <p>Note the <strong>three-level nesting</strong>: <code>input.request.config</code>. This differs from in-place restore. Set <code>recoveryPoint</code> (<a href="#recovery">exactly one field</a>) and <code>targetOracleHostOrRacId</code> inside <code>config</code>. For a standalone source database the target must be an <strong>OracleHost</strong> FID; for a RAC source it must be an <strong>OracleRac</strong> FID.</p>
@@ -3643,7 +3643,7 @@
 </div>
 </div>
 <h3 id="live-mount">Live Mount</h3>
-<p><code>mountOracleDatabase</code> exposes a database from a recovery point as a running, NFS-backed instance on a target host — without copying the data files or consuming additional storage. Use it for near-instant recovery validation, extracting objects, or providing a point-in-time copy to developers.</p>
+<p><a href="../../../API-Reference/mutations/mountOracleDatabase/"><code>mountOracleDatabase</code></a> exposes a database from a recovery point as a running, NFS-backed instance on a target host — without copying the data files or consuming additional storage. Use it for near-instant recovery validation, extracting objects, or providing a point-in-time copy to developers.</p>
 <p>Live mount uses the <strong>same three-level nesting</strong> as export (<code>input.request.config</code>) and the same required fields: <code>recoveryPoint</code> (<a href="#recovery">exactly one field</a>) and <code>targetOracleHostOrRacId</code> (an OracleHost FID for standalone sources, an OracleRac FID for RAC sources).</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="8:3"><input checked="checked" id="__tabbed_8_1" name="__tabbed_8" type="radio" /><input id="__tabbed_8_2" name="__tabbed_8" type="radio" /><input id="__tabbed_8_3" name="__tabbed_8" type="radio" /><div class="tabbed-labels"><label for="__tabbed_8_1">GraphQL</label><label for="__tabbed_8_2">PowerShell SDK</label><label for="__tabbed_8_3">Shell</label></div>
 <div class="tabbed-content">
@@ -3703,7 +3703,7 @@
 </div>
 </div>
 <h4 id="unmount">Unmount</h4>
-<p>When finished with a live mount, remove it with <code>deleteOracleMount</code> to release the resources. The <code>id</code> is the <strong>live mount object ID</strong>, not the source database ID. Set <code>force: true</code> to remove the mount metadata even when the mounted database can't be contacted.</p>
+<p>When finished with a live mount, remove it with <a href="../../../API-Reference/mutations/deleteOracleMount/"><code>deleteOracleMount</code></a> to release the resources. The <code>id</code> is the <strong>live mount object ID</strong>, not the source database ID. Set <code>force: true</code> to remove the mount metadata even when the mounted database can't be contacted.</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="9:3"><input checked="checked" id="__tabbed_9_1" name="__tabbed_9" type="radio" /><input id="__tabbed_9_2" name="__tabbed_9" type="radio" /><input id="__tabbed_9_3" name="__tabbed_9" type="radio" /><div class="tabbed-labels"><label for="__tabbed_9_1">GraphQL</label><label for="__tabbed_9_2">PowerShell SDK</label><label for="__tabbed_9_3">Shell</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
@@ -3749,7 +3749,7 @@
 </div>
 </div>
 <h3 id="in-place-restore">In-Place Restore</h3>
-<p><code>instantRecoverOracleSnapshot</code> restores a database to its original host from a recovery point, overwriting the source. No target host is needed.</p>
+<p><a href="../../../API-Reference/mutations/instantRecoverOracleSnapshot/"><code>instantRecoverOracleSnapshot</code></a> restores a database to its original host from a recovery point, overwriting the source. No target host is needed.</p>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
 <p>In-place restore uses <strong>two-level nesting</strong> (<code>input.config</code>) — there is <strong>no <code>request</code> wrapper</strong>, unlike export and live mount. It overwrites the source database, so confirm the database is not in use and your recovery point is correct before proceeding. Set <code>recoveryPoint</code> (<a href="#recovery">exactly one field</a>); <code>numChannels</code> and <code>shouldSkipDropDbInUndo</code> are optional.</p>
@@ -3804,7 +3804,7 @@
 </div>
 </div>
 <h2 id="monitor-jobs">Monitor Jobs</h2>
-<p>Every backup and recovery mutation is asynchronous and returns an <code>AsyncRequestStatus</code> with an <code>id</code>. Poll <code>oracleDatabaseAsyncRequestDetails</code> with that <code>id</code> and the <code>clusterUuid</code> (the database's <code>cluster.id</code>) to track progress and surface any error.</p>
+<p>Every backup and recovery mutation is asynchronous and returns an <a href="../../../API-Reference/types/objects/AsyncRequestStatus/"><code>AsyncRequestStatus</code></a> with an <code>id</code>. Poll <a href="../../../API-Reference/queries/oracleDatabaseAsyncRequestDetails/"><code>oracleDatabaseAsyncRequestDetails</code></a> with that <code>id</code> and the <code>clusterUuid</code> (the database's <code>cluster.id</code>) to track progress and surface any error.</p>
 <p>The <code>id</code> string follows the format <code>{JOB_TYPE}_{database-id}_{run-id}:::0</code>, where <code>database-id</code> is the FID of the source database, <code>run-id</code> is a unique identifier for that job execution, and <code>0</code> is the instance number. The job type prefix reflects the operation, not the mutation name:</p>
 <table>
 <thead>
@@ -3897,7 +3897,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="June 17, 2026 12:45:17 UTC">2026-06-17</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="June 17, 2026 17:06:20 UTC">2026-06-17</span>
   </span>
 
     
