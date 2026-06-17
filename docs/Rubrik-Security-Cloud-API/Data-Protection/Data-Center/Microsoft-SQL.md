@@ -62,11 +62,11 @@ Query databases to confirm they are visible and to retrieve database IDs. The `i
 
 ### Assign an SLA Domain
 
-Use the `assignSla` mutation to assign an SLA Domain to SQL Server databases, instances, or hosts. See [SLA Domains](../SLA-Domains.md#assigning-an-sla-to-a-workload) for the full walkthrough.
+Use the [`assignSla`](../../API-Reference/mutations/assignSla.md) mutation to assign an SLA Domain to SQL Server databases, instances, or hosts. See [SLA Domains](../SLA-Domains.md#assigning-an-sla-to-a-workload) for the full walkthrough.
 
 ### Database-Level Settings
 
-Use `bulkUpdateMssqlDbs` to configure per-database operational settings. These are independent of the SLA policy and control how Rubrik executes backup and restore jobs for that database.
+Use [`bulkUpdateMssqlDbs`](../../API-Reference/mutations/bulkUpdateMssqlDbs.md) to configure per-database operational settings. These are independent of the SLA policy and control how Rubrik executes backup and restore jobs for that database.
 
 Common settings in `updateProperties`:
 
@@ -129,18 +129,18 @@ Take an on-demand transaction log backup for a specific database. The database m
 
 ### Monitor Backup Jobs
 
-All backup and recovery operations are asynchronous and return a request `id`. Poll `mssqlJobStatus` with the request `id` and `clusterUuid` to track progress.
+All backup and recovery operations are asynchronous and return a request `id`. Poll [`mssqlJobStatus`](../../API-Reference/queries/mssqlJobStatus.md) with the request `id` and `clusterUuid` to track progress.
 
 The `id` string follows the format `{JOB_TYPE}_{database-id}_{run-id}:::0`, where `database-id` is the FID of the source database, `run-id` is a unique identifier for that job execution, and `0` is the instance number. The job type prefix differs from the mutation name:
 
 | Operation | Job type prefix |
 |---|---|
-| `createOnDemandMssqlBackup` | `MSSQL_DB_BACKUP` |
-| `takeMssqlLogBackup` | `MSSQL_LOG_BACKUP` |
-| `restoreMssqlDatabase` | `RESTORE_MSSQL_DB` |
-| `exportMssqlDatabase` | `RESTORE_MSSQL_DB` |
-| `createMssqlLiveMount` | `MSSQL_DB_MOUNT` |
-| `deleteMssqlLiveMount` | `MSSQL_DB_UNMOUNT` |
+| [`createOnDemandMssqlBackup`](../../API-Reference/mutations/createOnDemandMssqlBackup.md) | `MSSQL_DB_BACKUP` |
+| [`takeMssqlLogBackup`](../../API-Reference/mutations/takeMssqlLogBackup.md) | `MSSQL_LOG_BACKUP` |
+| [`restoreMssqlDatabase`](../../API-Reference/mutations/restoreMssqlDatabase.md) | `RESTORE_MSSQL_DB` |
+| [`exportMssqlDatabase`](../../API-Reference/mutations/exportMssqlDatabase.md) | `RESTORE_MSSQL_DB` |
+| [`createMssqlLiveMount`](../../API-Reference/mutations/createMssqlLiveMount.md) | `MSSQL_DB_MOUNT` |
+| [`deleteMssqlLiveMount`](../../API-Reference/mutations/deleteMssqlLiveMount.md) | `MSSQL_DB_UNMOUNT` |
 
 === "GraphQL"
     ```graphql
@@ -171,7 +171,7 @@ All recovery operations require a `recoveryPoint` that specifies the target poin
 
 ### In-Place Restore
 
-Restore a database to its original location and instance. The existing database is overwritten and brought back online after recovery. Use the request `id` returned by the mutation to monitor progress via `mssqlJobStatus`.
+Restore a database to its original location and instance. The existing database is overwritten and brought back online after recovery. Use the request `id` returned by the mutation to monitor progress via [`mssqlJobStatus`](../../API-Reference/queries/mssqlJobStatus.md).
 
 !!! warning
     In-place restore overwrites the existing database. Confirm the database is not in use and that you have a verified recovery point before proceeding.
@@ -246,7 +246,7 @@ Required fields in `config`:
 
 #### Unmount
 
-When finished with the live mount, remove it to release storage resources. The `id` here is the live mount object ID — not the async request ID returned by `createMssqlLiveMount`. Query [`mssqlDatabaseLiveMounts`](../../API-Reference/queries/mssqlDatabaseLiveMounts.md) to retrieve live mount IDs.
+When finished with the live mount, remove it to release storage resources. The `id` here is the live mount object ID — not the async request ID returned by [`createMssqlLiveMount`](../../API-Reference/mutations/createMssqlLiveMount.md). Query [`mssqlDatabaseLiveMounts`](../../API-Reference/queries/mssqlDatabaseLiveMounts.md) to retrieve live mount IDs.
 
 === "GraphQL"
     ```graphql
@@ -288,7 +288,7 @@ A **Linked Availability Group** (also called a Virtual Group) is used when a SQL
 
 #### List Virtual Groups
 
-Use `mssqlAvailabilityGroupVirtualGroups` to see all AGs and whether they are currently linked. An empty `linkedFids` array means the AG has not been linked to a counterpart on another cluster.
+Use [`mssqlAvailabilityGroupVirtualGroups`](../../API-Reference/queries/mssqlAvailabilityGroupVirtualGroups.md) to see all AGs and whether they are currently linked. An empty `linkedFids` array means the AG has not been linked to a counterpart on another cluster.
 
 === "GraphQL"
     ```graphql
@@ -339,7 +339,7 @@ After linking, assign a single SLA Domain to both AGs using `operation: ASSIGN_S
 
 #### View Databases in a Virtual Group
 
-Use `mssqlAvailabilityGroupDatabaseVirtualGroups` to inspect the database-level view of a linked pair. Pass both AG FIDs. The `activeDbFid` field identifies the current primary replica's database — the one Rubrik is backing up.
+Use [`mssqlAvailabilityGroupDatabaseVirtualGroups`](../../API-Reference/queries/mssqlAvailabilityGroupDatabaseVirtualGroups.md) to inspect the database-level view of a linked pair. Pass both AG FIDs. The `activeDbFid` field identifies the current primary replica's database — the one Rubrik is backing up.
 
 === "GraphQL"
     ```graphql

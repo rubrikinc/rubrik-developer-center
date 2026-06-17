@@ -67,7 +67,7 @@ Use the `bundleVersion`, `repoUrl`, and `bundleImages` fields from the response 
 
 ## Step 2: Report bundle approval status
 
-After pushing the images to your registry, notify Rubrik whether the bundle was accepted or rejected using `setBundleApprovalStatus`.
+After pushing the images to your registry, notify Rubrik whether the bundle was accepted or rejected using [`setBundleApprovalStatus`](../../API-Reference/mutations/setBundleApprovalStatus.md).
 
 === "GraphQL"
     ```graphql
@@ -87,5 +87,5 @@ After pushing the images to your registry, notify Rubrik whether the bundle was 
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
 | `bundleVersion` | `String` | Yes | Version string from `exotaskImageBundle` (e.g. `1.2`, `20.11`). |
-| `approvalStatus` | `ExoBundleApprovalStatus` | Yes | `ACCEPTED` or `REJECTED`. |
+| `approvalStatus` | [`ExoBundleApprovalStatus`](../../API-Reference/types/enums/ExoBundleApprovalStatus.md) | Yes | `ACCEPTED` or `REJECTED`. |
 | `bundleMetadata.eksVersion` | `String` | AWS only | EKS version for the cluster. Omit for Azure. |

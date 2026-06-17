@@ -18,14 +18,14 @@ The NCD object hierarchy in RSC is:
 Before using the NCD API:
 
 1. **Obtain an access token** — See [Authentication](../../authentication.md) for the token exchange flow.
-2. **Confirm NCD shares are registered** — Shares must be discovered before they appear in `cloudDirectNasShares`.
+2. **Confirm NCD shares are registered** — Shares must be discovered before they appear in [`cloudDirectNasShares`](../../API-Reference/queries/cloudDirectNasShares.md).
 3. **Locate your SLA Domain** — See [SLA Domains](../SLA-Domains.md) to retrieve the UUID of the policy assigned to your shares.
 
 ## Discover Your NCD Environment
 
 ### Shares
 
-Use `cloudDirectNasShares` to list and filter shares, or `cloudDirectNasShare` if you already have the share FID. Either way, **capture the share `id` and `name`** — both are needed in the recovery flow (`name` is required as `srcShareName`).
+Use [`cloudDirectNasShares`](../../API-Reference/queries/cloudDirectNasShares.md) to list and filter shares, or [`cloudDirectNasShare`](../../API-Reference/queries/cloudDirectNasShare.md) if you already have the share FID. Either way, **capture the share `id` and `name`** — both are needed in the recovery flow (`name` is required as `srcShareName`).
 
 #### List and filter
 
@@ -99,8 +99,8 @@ List namespaces within your Cloud Direct systems.
 
 List the snapshots of a share to choose the point in time to recover from. Sort by `CREATION_TIME` descending to get the most recent snapshot first.
 
-!!! warning "`workloadId` is a `String`, not a `UUID`"
-    `snapshotsOfCloudDirectShare` takes `workloadId: String!`. The share FID must be passed as a **quoted string literal** — the field does not accept the `UUID` scalar type.
+!!! warning "`workloadId` is a `String`, not a [`UUID`](../../API-Reference/types/scalars/UUID.md)"
+    [`snapshotsOfCloudDirectShare`](../../API-Reference/queries/snapshotsOfCloudDirectShare.md) takes `workloadId: String!`. The share FID must be passed as a **quoted string literal** — the field does not accept the [`UUID`](../../API-Reference/types/scalars/UUID.md) scalar type.
 
 === "GraphQL"
     ```graphql
@@ -119,7 +119,7 @@ List the snapshots of a share to choose the point in time to recover from. Sort 
 
 ### Search Files
 
-When you know a filename or path prefix but not which snapshot contains it, search the entire share at once. `searchSnappableVersionedFiles` returns each matching file with its `fileVersions` — one entry per snapshot that contains a version of the file.
+When you know a filename or path prefix but not which snapshot contains it, search the entire share at once. [`searchSnappableVersionedFiles`](../../API-Reference/queries/searchSnappableVersionedFiles.md) returns each matching file with its `fileVersions` — one entry per snapshot that contains a version of the file.
 
 === "GraphQL"
     ```graphql
@@ -138,7 +138,7 @@ When you know a filename or path prefix but not which snapshot contains it, sear
 
 ### Browse a Snapshot
 
-To explore a snapshot directory-by-directory, use `browseSnapshotFileConnection`. Start at the root path and re-issue the query with a directory's `displayPath` to descend into it. The `fileMode` field distinguishes files from directories.
+To explore a snapshot directory-by-directory, use [`browseSnapshotFileConnection`](../../API-Reference/queries/browseSnapshotFileConnection.md). Start at the root path and re-issue the query with a directory's `displayPath` to descend into it. The `fileMode` field distinguishes files from directories.
 
 === "GraphQL"
     ```graphql
@@ -155,7 +155,7 @@ To explore a snapshot directory-by-directory, use `browseSnapshotFileConnection`
 
 ### Recover Files
 
-`recoverCloudDirectNasShare` restores one or more files from a snapshot in a single request. Recovery targets are described by `restorePathPairList` — a list of `{ srcPath, dstPath }` pairs.
+[`recoverCloudDirectNasShare`](../../API-Reference/mutations/recoverCloudDirectNasShare.md) restores one or more files from a snapshot in a single request. Recovery targets are described by `restorePathPairList` — a list of `{ srcPath, dstPath }` pairs.
 
 | Field | Description |
 |-------|-------------|
@@ -205,7 +205,7 @@ Add an entry to `restorePathPairList` for each file. This is the "shopping cart"
 
 ### Monitor Recovery
 
-`recoverCloudDirectNasShare` returns an `AsyncRequestStatus` immediately — the restore runs in the background. Use the returned `id` to poll the task to completion using the standard async task-monitoring pattern, checking `status` until it reaches a terminal state.
+[`recoverCloudDirectNasShare`](../../API-Reference/mutations/recoverCloudDirectNasShare.md) returns an [`AsyncRequestStatus`](../../API-Reference/types/objects/AsyncRequestStatus.md) immediately — the restore runs in the background. Use the returned `id` to poll the task to completion using the standard async task-monitoring pattern, checking `status` until it reaches a terminal state.
 
 ## Reference
 

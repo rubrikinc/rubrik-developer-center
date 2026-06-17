@@ -28,9 +28,9 @@ Before protecting Oracle databases through the API:
 
 ### Databases
 
-Query `oracleDatabases` to list discovered databases and retrieve their IDs. The `id` returned here is what you pass to every backup and recovery operation. The response also surfaces Oracle-specific detail — `dbUniqueName`, `numInstances`, `numChannels`, tablespaces, PDBs, and the Data Guard role (`dbRole`, `dataGuardType`, `dataGuardGroup`) — so you can confirm a database was discovered correctly before protecting it.
+Query [`oracleDatabases`](../../API-Reference/queries/oracleDatabases.md) to list discovered databases and retrieve their IDs. The `id` returned here is what you pass to every backup and recovery operation. The response also surfaces Oracle-specific detail — `dbUniqueName`, `numInstances`, `numChannels`, tablespaces, PDBs, and the Data Guard role (`dbRole`, `dataGuardType`, `dataGuardGroup`) — so you can confirm a database was discovered correctly before protecting it.
 
-Results are paginated; see [Pagination](../../pagination.md) for retrieving large estates. To fetch a single database when you already have its FID, use `oracleDatabase(fid: UUID!)`.
+Results are paginated; see [Pagination](../../pagination.md) for retrieving large estates. To fetch a single database when you already have its FID, use [`oracleDatabase`](../../API-Reference/queries/oracleDatabase.md).
 
 === "GraphQL"
     ```graphql
@@ -47,7 +47,7 @@ Results are paginated; see [Pagination](../../pagination.md) for retrieving larg
 
 ### Hosts and RACs
 
-Oracle hosts and RACs are both returned by `oracleTopLevelDescendants` — there is no separate `oracleHosts` or `oracleRacs` query. Scope the results with `typeFilter`: pass `[OracleHost]`, `[OracleRac]`, or both. You'll need a host or RAC FID as the recovery target when exporting or live mounting a database.
+Oracle hosts and RACs are both returned by [`oracleTopLevelDescendants`](../../API-Reference/queries/oracleTopLevelDescendants.md) — there is no separate `oracleHosts` or `oracleRacs` query. Scope the results with `typeFilter`: pass `[OracleHost]`, `[OracleRac]`, or both. You'll need a host or RAC FID as the recovery target when exporting or live mounting a database.
 
 === "GraphQL"
     ```graphql
@@ -64,7 +64,7 @@ Oracle hosts and RACs are both returned by `oracleTopLevelDescendants` — there
 
 ### Data Guard Groups
 
-A database that participates in Data Guard reports its membership through the `dataGuardGroup` and `dataGuardType` fields in the database query above. To inspect a group directly — its members and their roles — use `oracleDataGuardGroup(fid: UUID!)`. There is no plural list query for Data Guard groups; discover them through the database listing, then look up the group by FID.
+A database that participates in Data Guard reports its membership through the `dataGuardGroup` and `dataGuardType` fields in the database query above. To inspect a group directly — its members and their roles — use [`oracleDataGuardGroup`](../../API-Reference/queries/oracleDataGuardGroup.md). There is no plural list query for Data Guard groups; discover them through the database listing, then look up the group by FID.
 
 Backup and recovery against a Data Guard configuration use the **member database ID**, not the group ID. Rubrik backs up from the appropriate member according to the group's configuration.
 
@@ -72,14 +72,14 @@ Backup and recovery against a Data Guard configuration use the **member database
 
 ### Assign an SLA Domain
 
-Use the `assignSla` mutation to assign an SLA Domain to a database, host, or RAC. Assigning at the host or RAC level protects every database beneath it through inheritance. See [SLA Domains](../SLA-Domains.md#assigning-an-sla-to-a-workload) for the full walkthrough.
+Use the [`assignSla`](../../API-Reference/mutations/assignSla.md) mutation to assign an SLA Domain to a database, host, or RAC. Assigning at the host or RAC level protects every database beneath it through inheritance. See [SLA Domains](../SLA-Domains.md#assigning-an-sla-to-a-workload) for the full walkthrough.
 
 ### Log Backup and Database Settings
 
-Use `bulkUpdateOracleDatabases` to configure per-database operational settings that are independent of the SLA policy — most importantly the archived redo log backup cadence and retention. Apply the settings under `oracleUpdate.oracleUpdateCommon`.
+Use [`bulkUpdateOracleDatabases`](../../API-Reference/mutations/bulkUpdateOracleDatabases.md) to configure per-database operational settings that are independent of the SLA policy — most importantly the archived redo log backup cadence and retention. Apply the settings under `oracleUpdate.oracleUpdateCommon`.
 
 !!! warning
-    Set log fields under `oracleUpdate.oracleUpdateCommon`. The log fields directly on the top-level `OracleUpdateInput` type are deprecated (CDM v5.x) and should not be used in new code.
+    Set log fields under `oracleUpdate.oracleUpdateCommon`. The log fields directly on the top-level [`OracleUpdateInput`](../../API-Reference/types/inputs/OracleUpdateInput.md) type are deprecated (CDM v5.x) and should not be used in new code.
 
 Common fields in `oracleUpdateCommon`:
 
@@ -108,7 +108,7 @@ Common fields in `oracleUpdateCommon`:
 
 ### Database Snapshot
 
-Trigger an immediate database backup outside the scheduled SLA policy with `takeOnDemandOracleDatabaseSnapshot`.
+Trigger an immediate database backup outside the scheduled SLA policy with [`takeOnDemandOracleDatabaseSnapshot`](../../API-Reference/mutations/takeOnDemandOracleDatabaseSnapshot.md).
 
 !!! warning
     Always set `config.baseOnDemandSnapshotConfig.slaId`. Omitting it causes the snapshot to be **retained indefinitely** with no automatic expiry.
@@ -130,7 +130,7 @@ Set `forceFullSnapshot: true` to force a full RMAN backup, bypassing incremental
 
 ### Archived Redo Log Backup
 
-Take an on-demand archived redo log backup with `takeOnDemandOracleLogSnapshot`. This is what extends your recoverable range between full database snapshots, enabling point-in-time recovery. The only required field is the database `id`.
+Take an on-demand archived redo log backup with [`takeOnDemandOracleLogSnapshot`](../../API-Reference/mutations/takeOnDemandOracleLogSnapshot.md). This is what extends your recoverable range between full database snapshots, enabling point-in-time recovery. The only required field is the database `id`.
 
 === "GraphQL"
     ```graphql
@@ -147,12 +147,12 @@ Take an on-demand archived redo log backup with `takeOnDemandOracleLogSnapshot`.
 
 ## Find Your Recoverable Range
 
-Before recovering, query `oracleRecoverableRangesMinimal` to learn what points in time the database can actually be recovered to. Each returned range has a `beginTime` and `endTime`; any timestamp inside a range is a valid point-in-time recovery target. Set `includeSnapshots: true` to also list the underlying snapshot summaries (`fid`, `date`, `isOnDemand`) — use a snapshot `fid` when you want to recover to a discrete snapshot rather than an arbitrary timestamp.
+Before recovering, query [`oracleRecoverableRangesMinimal`](../../API-Reference/queries/oracleRecoverableRangesMinimal.md) to learn what points in time the database can actually be recovered to. Each returned range has a `beginTime` and `endTime`; any timestamp inside a range is a valid point-in-time recovery target. Set `includeSnapshots: true` to also list the underlying snapshot summaries (`fid`, `date`, `isOnDemand`) — use a snapshot `fid` when you want to recover to a discrete snapshot rather than an arbitrary timestamp.
 
-Pass the database FID as the `id` (note it is a `UUID` here, not a `String` as in the recovery mutations). Optionally narrow the result with `beforeTime` and `afterTime`.
+Pass the database FID as the `id` (note it is a [`UUID`](../../API-Reference/types/scalars/UUID.md) here, not a `String` as in the recovery mutations). Optionally narrow the result with `beforeTime` and `afterTime`.
 
 !!! tip
-    Prefer `oracleRecoverableRangesMinimal` over the older `oracleRecoverableRanges` — it returns the same ranges with a lighter payload.
+    Prefer [`oracleRecoverableRangesMinimal`](../../API-Reference/queries/oracleRecoverableRangesMinimal.md) over the older [`oracleRecoverableRanges`](../../API-Reference/queries/oracleRecoverableRanges.md) — it returns the same ranges with a lighter payload.
 
 === "GraphQL"
     ```graphql
@@ -173,18 +173,18 @@ RSC offers three recovery modes, all driven by the database ID and a recovery po
 
 | Mode | Mutation | Target | Effect |
 |---|---|---|---|
-| **Export** | `exportOracleDatabase` | A different host or RAC | Clones the database to a new location. Source untouched. |
-| **Live Mount** | `mountOracleDatabase` | A different host or RAC | Runs an NFS-backed copy without consuming additional storage. Source untouched. |
-| **In-place restore** | `instantRecoverOracleSnapshot` | The original host | Overwrites the source database. |
+| **Export** | [`exportOracleDatabase`](../../API-Reference/mutations/exportOracleDatabase.md) | A different host or RAC | Clones the database to a new location. Source untouched. |
+| **Live Mount** | [`mountOracleDatabase`](../../API-Reference/mutations/mountOracleDatabase.md) | A different host or RAC | Runs an NFS-backed copy without consuming additional storage. Source untouched. |
+| **In-place restore** | [`instantRecoverOracleSnapshot`](../../API-Reference/mutations/instantRecoverOracleSnapshot.md) | The original host | Overwrites the source database. |
 
 !!! danger "Every recovery requires exactly one recovery point"
-    `OracleRecoveryPointInput` accepts three fields — set **exactly one**:
+    [`OracleRecoveryPointInput`](../../API-Reference/types/inputs/OracleRecoveryPointInput.md) accepts three fields — set **exactly one**:
 
     | Field | Type | Meaning |
     |---|---|---|
-    | `timestampMs` | `Long` | Epoch milliseconds for point-in-time recovery |
+    | `timestampMs` | [`Long`](../../API-Reference/types/scalars/Long.md) | Epoch milliseconds for point-in-time recovery |
     | `snapshotId` | `String` | A snapshot FID, to recover to a discrete snapshot |
-    | `scn` | `Long` | An Oracle System Change Number (CDM v9.3+) |
+    | `scn` | [`Long`](../../API-Reference/types/scalars/Long.md) | An Oracle System Change Number (CDM v9.3+) |
 
     Passing zero or more than one of these throws a backend error — the schema does **not** enforce the constraint, it only requires that `recoveryPoint` is present. Get valid values from [Find Your Recoverable Range](#find-your-recoverable-range).
 
@@ -193,7 +193,7 @@ RSC offers three recovery modes, all driven by the database ID and a recovery po
 
 ### Export to a New Database
 
-`exportOracleDatabase` clones a database from a recovery point onto a different Oracle host or RAC, leaving the source untouched — the right choice for recovery validation, refreshing test/dev copies, or RMAN-style duplication.
+[`exportOracleDatabase`](../../API-Reference/mutations/exportOracleDatabase.md) clones a database from a recovery point onto a different Oracle host or RAC, leaving the source untouched — the right choice for recovery validation, refreshing test/dev copies, or RMAN-style duplication.
 
 !!! warning
     Note the **three-level nesting**: `input.request.config`. This differs from in-place restore. Set `recoveryPoint` ([exactly one field](#recovery)) and `targetOracleHostOrRacId` inside `config`. For a standalone source database the target must be an **OracleHost** FID; for a RAC source it must be an **OracleRac** FID.
@@ -215,7 +215,7 @@ For RAC targets you may also set `targetRacHostIds` and `targetRacPrimaryHostId`
 
 ### Live Mount
 
-`mountOracleDatabase` exposes a database from a recovery point as a running, NFS-backed instance on a target host — without copying the data files or consuming additional storage. Use it for near-instant recovery validation, extracting objects, or providing a point-in-time copy to developers.
+[`mountOracleDatabase`](../../API-Reference/mutations/mountOracleDatabase.md) exposes a database from a recovery point as a running, NFS-backed instance on a target host — without copying the data files or consuming additional storage. Use it for near-instant recovery validation, extracting objects, or providing a point-in-time copy to developers.
 
 Live mount uses the **same three-level nesting** as export (`input.request.config`) and the same required fields: `recoveryPoint` ([exactly one field](#recovery)) and `targetOracleHostOrRacId` (an OracleHost FID for standalone sources, an OracleRac FID for RAC sources).
 
@@ -234,7 +234,7 @@ Live mount uses the **same three-level nesting** as export (`input.request.confi
 
 #### Unmount
 
-When finished with a live mount, remove it with `deleteOracleMount` to release the resources. The `id` is the **live mount object ID**, not the source database ID. Set `force: true` to remove the mount metadata even when the mounted database can't be contacted.
+When finished with a live mount, remove it with [`deleteOracleMount`](../../API-Reference/mutations/deleteOracleMount.md) to release the resources. The `id` is the **live mount object ID**, not the source database ID. Set `force: true` to remove the mount metadata even when the mounted database can't be contacted.
 
 === "GraphQL"
     ```graphql
@@ -251,7 +251,7 @@ When finished with a live mount, remove it with `deleteOracleMount` to release t
 
 ### In-Place Restore
 
-`instantRecoverOracleSnapshot` restores a database to its original host from a recovery point, overwriting the source. No target host is needed.
+[`instantRecoverOracleSnapshot`](../../API-Reference/mutations/instantRecoverOracleSnapshot.md) restores a database to its original host from a recovery point, overwriting the source. No target host is needed.
 
 !!! warning
     In-place restore uses **two-level nesting** (`input.config`) — there is **no `request` wrapper**, unlike export and live mount. It overwrites the source database, so confirm the database is not in use and your recovery point is correct before proceeding. Set `recoveryPoint` ([exactly one field](#recovery)); `numChannels` and `shouldSkipDropDbInUndo` are optional.
@@ -271,7 +271,7 @@ When finished with a live mount, remove it with `deleteOracleMount` to release t
 
 ## Monitor Jobs
 
-Every backup and recovery mutation is asynchronous and returns an `AsyncRequestStatus` with an `id`. Poll `oracleDatabaseAsyncRequestDetails` with that `id` and the `clusterUuid` (the database's `cluster.id`) to track progress and surface any error.
+Every backup and recovery mutation is asynchronous and returns an [`AsyncRequestStatus`](../../API-Reference/types/objects/AsyncRequestStatus.md) with an `id`. Poll [`oracleDatabaseAsyncRequestDetails`](../../API-Reference/queries/oracleDatabaseAsyncRequestDetails.md) with that `id` and the `clusterUuid` (the database's `cluster.id`) to track progress and surface any error.
 
 The `id` string follows the format `{JOB_TYPE}_{database-id}_{run-id}:::0`, where `database-id` is the FID of the source database, `run-id` is a unique identifier for that job execution, and `0` is the instance number. The job type prefix reflects the operation, not the mutation name:
 

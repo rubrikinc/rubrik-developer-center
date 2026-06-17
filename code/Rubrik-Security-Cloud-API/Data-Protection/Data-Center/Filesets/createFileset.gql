@@ -10,9 +10,8 @@ mutation {
   }) {
     data {
       filesetSummary {
-        id
-        name
-        hostId
+        effectiveSlaDomainId
+        effectiveSlaDomainName
       }
     }
   }

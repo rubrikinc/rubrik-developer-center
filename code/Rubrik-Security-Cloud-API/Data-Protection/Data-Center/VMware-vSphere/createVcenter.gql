@@ -1,0 +1,17 @@
+mutation {
+  createVsphereVcenter(input: {
+    clusterUuid: "e90741cc-4360-54b8-9ad3-84db4727c62e" # Rubrik cluster UUID
+    vcenterDetail: {
+      hostname: "vcenter.example.com"
+      username: "administrator@vsphere.local"
+      password: "REPLACE_WITH_PASSWORD"
+      # isStandaloneHost: true  # set true to register a bare ESXi host with no vCenter
+    }
+  }) {
+    id
+    asyncRequestStatus {
+      id
+      status
+    }
+  }
+}

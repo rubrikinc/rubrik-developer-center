@@ -54,7 +54,7 @@ The `filter` argument accepts a list of conditions. The example below matches a 
     --8<-- "code/Rubrik-Security-Cloud-API/Data-Protection/Data-Center/Nutanix-AHV/virtualmachines.sh"
     ```
 
-To retrieve a single VM directly, use `nutanixVm(fid: UUID!)`. This is also how you list a VM's snapshots — query its `snapshotConnection { nodes { id date } }` field, which returns the snapshot IDs you'll need for recovery.
+To retrieve a single VM directly, use [`nutanixVm`](../../API-Reference/queries/nutanixVm.md). This is also how you list a VM's snapshots — query its `snapshotConnection` field, which returns the snapshot IDs you'll need for recovery. See [Snapshots](../Snapshots.md) for details.
 
 ### Clusters
 
@@ -94,7 +94,7 @@ List the registered Prism Central servers and the clusters each one manages.
 
 ### Assign an SLA Domain
 
-Use the `assignSla` mutation to assign an SLA Domain to Nutanix VMs, clusters, or categories. SLA Domains assigned at a higher level are inherited by the VMs below them. See [SLA Domains](../SLA-Domains.md#assigning-an-sla-to-a-workload) for the full walkthrough.
+Use the [`assignSla`](../../API-Reference/mutations/assignSla.md) mutation to assign an SLA Domain to Nutanix VMs, clusters, or categories. SLA Domains assigned at a higher level are inherited by the VMs below them. See [SLA Domains](../SLA-Domains.md#assigning-an-sla-to-a-workload) for the full walkthrough.
 
 ### Register the Rubrik Backup Service (RBS)
 
@@ -103,7 +103,7 @@ Standard Nutanix VM backups are **crash-consistent** snapshots taken at the hype
 - **Application-consistent snapshots** — pre/post backup scripts and VSS quiescing for databases and other transactional workloads running inside the VM.
 - **File-level restore back into the running VM** — see [Recovery](#recovery).
 
-Register RBS with `registerAgentNutanixVm` after the VM has been discovered, using the VM's `id` from the discovery query above. This is **not** needed for ordinary crash-consistent VM protection.
+Register RBS with [`registerAgentNutanixVm`](../../API-Reference/mutations/registerAgentNutanixVm.md) after the VM has been discovered, using the VM's `id` from the discovery query above. This is **not** needed for ordinary crash-consistent VM protection.
 
 === "GraphQL"
     ```graphql
@@ -120,7 +120,7 @@ Register RBS with `registerAgentNutanixVm` after the VM has been discovered, usi
 
 ## On-Demand Backup
 
-Trigger an immediate backup outside the scheduled SLA policy with `createOnDemandNutanixBackup`. The `id` is the **VM** FID.
+Trigger an immediate backup outside the scheduled SLA policy with [`createOnDemandNutanixBackup`](../../API-Reference/mutations/createOnDemandNutanixBackup.md). The `id` is the **VM** FID.
 
 The `config.slaId` field is optional. If you omit it, Rubrik uses the VM's currently assigned SLA Domain to determine retention. If the VM has no SLA assigned and you omit `slaId`, the snapshot is **retained indefinitely** with no automatic expiry — always provide `slaId` unless that is what you intend.
 
@@ -158,7 +158,7 @@ Three recovery modes are available.
 
 ### Export to a New VM
 
-Use `exportNutanixSnapshot` to create a brand-new VM from a snapshot without touching the source. This is the right choice for recovery validation, spinning up test/dev copies, or recovering alongside a still-running production VM.
+Use [`exportNutanixSnapshot`](../../API-Reference/mutations/exportNutanixSnapshot.md) to create a brand-new VM from a snapshot without touching the source. This is the right choice for recovery validation, spinning up test/dev copies, or recovering alongside a still-running production VM.
 
 Fields in `config`:
 
@@ -184,7 +184,7 @@ Fields in `config`:
 
 ### Live Mount
 
-Use `mountNutanixSnapshotV1` to instantly stand up a running VM served directly from Rubrik backup storage — no full data copy required. Live Mount is well-suited for rapid recovery validation, extracting data from a backup, or providing a point-in-time copy without consuming production storage.
+Use [`mountNutanixSnapshotV1`](../../API-Reference/mutations/mountNutanixSnapshotV1.md) to instantly stand up a running VM served directly from Rubrik backup storage — no full data copy required. Live Mount is well-suited for rapid recovery validation, extracting data from a backup, or providing a point-in-time copy without consuming production storage.
 
 !!! warning "`shouldDisableMigration` controls whether `containerNaturalId` is required"
     `shouldDisableMigration` is **required**. Its value changes what else you must supply:
@@ -207,9 +207,9 @@ Use `mountNutanixSnapshotV1` to instantly stand up a running VM served directly 
 
 #### Tear Down a Live Mount
 
-When finished, remove the Live Mount with `deleteNutanixMountV1` to release storage resources. The `id` here is the **Live Mount object ID**, not the async request ID returned by `mountNutanixSnapshotV1`.
+When finished, remove the Live Mount with [`deleteNutanixMountV1`](../../API-Reference/mutations/deleteNutanixMountV1.md) to release storage resources. The `id` here is the **Live Mount object ID**, not the async request ID returned by [`mountNutanixSnapshotV1`](../../API-Reference/mutations/mountNutanixSnapshotV1.md).
 
-To make a Live Mount permanent instead of tearing it down, migrate it to Nutanix storage with `migrateNutanixMountV1`.
+To make a Live Mount permanent instead of tearing it down, migrate it to Nutanix storage with [`migrateNutanixMountV1`](../../API-Reference/mutations/migrateNutanixMountV1.md).
 
 === "GraphQL"
     ```graphql
@@ -226,7 +226,7 @@ To make a Live Mount permanent instead of tearing it down, migrate it to Nutanix
 
 ### In-Place Restore
 
-Use `inplaceExportNutanixSnapshot` to overwrite the source VM with a snapshot, restoring it to its original location. No target needs to be specified. Requires Rubrik CDM v9.3 or later.
+Use [`inplaceExportNutanixSnapshot`](../../API-Reference/mutations/inplaceExportNutanixSnapshot.md) to overwrite the source VM with a snapshot, restoring it to its original location. No target needs to be specified. Requires Rubrik CDM v9.3 or later.
 
 !!! warning
     In-place restore overwrites the existing VM. Set `shouldKeepRollbackSnapshot: true` to capture the VM's pre-restore state first, so you can roll back if the recovery point is wrong.
@@ -246,24 +246,24 @@ Use `inplaceExportNutanixSnapshot` to overwrite the source VM with a snapshot, r
 
 ### File-Level Restore
 
-To restore specific files or directories from a snapshot back into the source VM (or a target VM), use `restoreFilesNutanixSnapshot`. This requires the Rubrik Backup Service to be installed and registered inside the VM — see [Register the Rubrik Backup Service](#register-the-rubrik-backup-service-rbs). The `config.restoreConfig` array lists each file's source `path` and `restorePath`.
+To restore specific files or directories from a snapshot back into the source VM (or a target VM), use [`restoreFilesNutanixSnapshot`](../../API-Reference/mutations/restoreFilesNutanixSnapshot.md). This requires the Rubrik Backup Service to be installed and registered inside the VM — see [Register the Rubrik Backup Service](#register-the-rubrik-backup-service-rbs). The `config.restoreConfig` array lists each file's source `path` and `restorePath`.
 
 ## Monitor Jobs
 
-Backup and recovery operations are asynchronous and return an `AsyncRequestStatus` with a request `id`. Poll `nutanixVmAsyncRequestStatus` with that `id` and a `clusterUuid` to track progress.
+Backup and recovery operations are asynchronous and return an [`AsyncRequestStatus`](../../API-Reference/types/objects/AsyncRequestStatus.md) with a request `id`. Poll [`nutanixVmAsyncRequestStatus`](../../API-Reference/queries/nutanixVmAsyncRequestStatus.md) with that `id` and a `clusterUuid` to track progress.
 
 !!! warning "`clusterUuid` is required and is not returned by the mutation"
-    The recovery and backup mutations do not return `clusterUuid`. Retrieve it from the VM's `cluster { id }` field (from the discovery query) and pass it alongside the request `id`. Cluster- and Prism-Central-level operations are tracked with `nutanixClusterAsyncRequestStatus` and `nutanixPrismCentralAsyncRequestStatus` respectively.
+    The recovery and backup mutations do not return `clusterUuid`. Retrieve it from the VM's `cluster { id }` field (from the discovery query) and pass it alongside the request `id`. Cluster-level operations are tracked with [`nutanixClusterAsyncRequestStatus`](../../API-Reference/queries/nutanixClusterAsyncRequestStatus.md).
 
 The request `id` follows the format `{JOB_TYPE}_{vm-id}_{run-id}:::0`, where `vm-id` is the FID of the source VM, `run-id` is a unique identifier for that job execution, and `0` is the instance number. The job type prefix differs from the mutation name:
 
 | Operation | Job type prefix |
 |---|---|
-| `createOnDemandNutanixBackup` | `CREATE_NUTANIX_SNAPSHOT` |
-| `exportNutanixSnapshot` | `EXPORT_NUTANIX_SNAPSHOT` |
-| `mountNutanixSnapshotV1` | `MOUNT_NUTANIX_SNAPSHOT` |
-| `inplaceExportNutanixSnapshot` | `INPLACE_EXPORT_NUTANIX_SNAPSHOT` |
-| `deleteNutanixMountV1` | `UNMOUNT_NUTANIX_SNAPSHOT` |
+| [`createOnDemandNutanixBackup`](../../API-Reference/mutations/createOnDemandNutanixBackup.md) | `CREATE_NUTANIX_SNAPSHOT` |
+| [`exportNutanixSnapshot`](../../API-Reference/mutations/exportNutanixSnapshot.md) | `EXPORT_NUTANIX_SNAPSHOT` |
+| [`mountNutanixSnapshotV1`](../../API-Reference/mutations/mountNutanixSnapshotV1.md) | `MOUNT_NUTANIX_SNAPSHOT` |
+| [`inplaceExportNutanixSnapshot`](../../API-Reference/mutations/inplaceExportNutanixSnapshot.md) | `INPLACE_EXPORT_NUTANIX_SNAPSHOT` |
+| [`deleteNutanixMountV1`](../../API-Reference/mutations/deleteNutanixMountV1.md) | `UNMOUNT_NUTANIX_SNAPSHOT` |
 
 === "GraphQL"
     ```graphql
@@ -299,7 +299,7 @@ Prism Central (v9.0+) auto-discovers all Prism Element clusters it manages. Prov
     --8<-- "code/Rubrik-Security-Cloud-API/Data-Protection/Data-Center/Nutanix-AHV/createPrismCentral.sh"
     ```
 
-Returns a `BatchAsyncRequestStatus` — one async status per Prism Element discovered.
+Returns a [`BatchAsyncRequestStatus`](../../API-Reference/types/objects/BatchAsyncRequestStatus.md) — one async status per Prism Element discovered.
 
 ### Register a Standalone Cluster
 

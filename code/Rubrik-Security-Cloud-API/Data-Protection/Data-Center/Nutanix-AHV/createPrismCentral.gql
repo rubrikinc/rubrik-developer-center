@@ -8,18 +8,15 @@ mutation {
     }
     prismElementCdmTuple: [
       {
-        nutanixClusterUuid: "00057b6e-1234-5678-0000-000000abcdef"
-        cdmClusterUuid: "8417a938-96f5-43c6-9905-b36e051c5f98"
+        nutanixClusterId: "00057b6e-1234-5678-0000-000000abcdef"
+        cdmClusterId: "8417a938-96f5-43c6-9905-b36e051c5f98"
       }
     ]
     isDrEnabled: false
   }) {
-    requestStatuses {
+    responses {
       id
       status
-      error {
-        message
-      }
     }
   }
 }
