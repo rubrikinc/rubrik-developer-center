@@ -391,7 +391,7 @@ curl -X POST \
 
 ## Retrieve an SLA by Name
 
-Generally, the name of the SLA may be known, but not the ID. The `slaDomains` query allows filtering on several fields, including `NAME`.
+Generally, the name of the SLA may be known, but not the ID. The [`slaDomains`](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/slaDomains/index.md) query allows filtering on several fields, including `NAME`.
 
 ```graphql
 query {
@@ -773,7 +773,7 @@ curl -X POST \
 
 Note
 
-Name filtering in `slaDomains` is partial matching. If you provide the name "bronze", it will also return any other SLA domain with that name (e.g. "super-bronze").
+Name filtering in [`slaDomains`](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/slaDomains/index.md) is partial matching. If you provide the name "bronze", it will also return any other SLA domain with that name (e.g. "super-bronze").
 
 ## Retrieve an Individual SLA
 

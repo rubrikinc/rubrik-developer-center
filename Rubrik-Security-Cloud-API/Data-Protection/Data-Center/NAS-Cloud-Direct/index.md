@@ -15,14 +15,14 @@ The NCD object hierarchy in RSC is:
 Before using the NCD API:
 
 1. **Obtain an access token** — See [Authentication](https://developer.rubrik.com/Rubrik-Security-Cloud-API/authentication/index.md) for the token exchange flow.
-1. **Confirm NCD shares are registered** — Shares must be discovered before they appear in `cloudDirectNasShares`.
+1. **Confirm NCD shares are registered** — Shares must be discovered before they appear in [`cloudDirectNasShares`](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/cloudDirectNasShares/index.md).
 1. **Locate your SLA Domain** — See [SLA Domains](https://developer.rubrik.com/Rubrik-Security-Cloud-API/Data-Protection/SLA-Domains/index.md) to retrieve the UUID of the policy assigned to your shares.
 
 ## Discover Your NCD Environment
 
 ### Shares
 
-Use `cloudDirectNasShares` to list and filter shares, or `cloudDirectNasShare` if you already have the share FID. Either way, **capture the share `id` and `name`** — both are needed in the recovery flow (`name` is required as `srcShareName`).
+Use [`cloudDirectNasShares`](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/cloudDirectNasShares/index.md) to list and filter shares, or [`cloudDirectNasShare`](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/cloudDirectNasShare/index.md) if you already have the share FID. Either way, **capture the share `id` and `name`** — both are needed in the recovery flow (`name` is required as `srcShareName`).
 
 #### List and filter
 
@@ -326,9 +326,9 @@ curl -X POST \
 
 List the snapshots of a share to choose the point in time to recover from. Sort by `CREATION_TIME` descending to get the most recent snapshot first.
 
-`workloadId` is a `String`, not a `UUID`
+`workloadId` is a `String`, not a [`UUID`](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/UUID/index.md)
 
-`snapshotsOfCloudDirectShare` takes `workloadId: String!`. The share FID must be passed as a **quoted string literal** — the field does not accept the `UUID` scalar type.
+[`snapshotsOfCloudDirectShare`](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/snapshotsOfCloudDirectShare/index.md) takes `workloadId: String!`. The share FID must be passed as a **quoted string literal** — the field does not accept the [`UUID`](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/UUID/index.md) scalar type.
 
 ```graphql
 # workloadId is the share FID passed as a String (not a UUID scalar).
@@ -395,7 +395,7 @@ curl -X POST \
 
 ### Search Files
 
-When you know a filename or path prefix but not which snapshot contains it, search the entire share at once. `searchSnappableVersionedFiles` returns each matching file with its `fileVersions` — one entry per snapshot that contains a version of the file.
+When you know a filename or path prefix but not which snapshot contains it, search the entire share at once. [`searchSnappableVersionedFiles`](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/searchSnappableVersionedFiles/index.md) returns each matching file with its `fileVersions` — one entry per snapshot that contains a version of the file.
 
 ```graphql
 query {
@@ -458,7 +458,7 @@ curl -X POST \
 
 ### Browse a Snapshot
 
-To explore a snapshot directory-by-directory, use `browseSnapshotFileConnection`. Start at the root path and re-issue the query with a directory's `displayPath` to descend into it. The `fileMode` field distinguishes files from directories.
+To explore a snapshot directory-by-directory, use [`browseSnapshotFileConnection`](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/browseSnapshotFileConnection/index.md). Start at the root path and re-issue the query with a directory's `displayPath` to descend into it. The `fileMode` field distinguishes files from directories.
 
 ```graphql
 query {
@@ -518,7 +518,7 @@ curl -X POST \
 
 ### Recover Files
 
-`recoverCloudDirectNasShare` restores one or more files from a snapshot in a single request. Recovery targets are described by `restorePathPairList` — a list of `{ srcPath, dstPath }` pairs.
+[`recoverCloudDirectNasShare`](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/recoverCloudDirectNasShare/index.md) restores one or more files from a snapshot in a single request. Recovery targets are described by `restorePathPairList` — a list of `{ srcPath, dstPath }` pairs.
 
 | Field          | Description                                                                |
 | -------------- | -------------------------------------------------------------------------- |
@@ -675,7 +675,7 @@ curl -X POST \
 
 ### Monitor Recovery
 
-`recoverCloudDirectNasShare` returns an `AsyncRequestStatus` immediately — the restore runs in the background. Use the returned `id` to poll the task to completion using the standard async task-monitoring pattern, checking `status` until it reaches a terminal state.
+[`recoverCloudDirectNasShare`](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/recoverCloudDirectNasShare/index.md) returns an [`AsyncRequestStatus`](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AsyncRequestStatus/index.md) immediately — the restore runs in the background. Use the returned `id` to poll the task to completion using the standard async task-monitoring pattern, checking `status` until it reaches a terminal state.
 
 ## Reference
 

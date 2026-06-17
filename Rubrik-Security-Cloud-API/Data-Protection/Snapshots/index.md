@@ -2,7 +2,7 @@ In Rubrik, snapshots are a point-in-time copy of data, coupled with metadata. Sn
 
 ## Retrieving Snapshots for a Workload
 
-When retrieving snapshots for a workload, use that workload's RSC `id`. If using `snappableConnection` to list objects, use the `fid` field from the query. In the case of MSSQL databases, you must use the `dagId` from the MSSQL database object.
+When retrieving snapshots for a workload, use that workload's RSC `id`. If using [`snappableConnection`](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/snappableConnection/index.md) to list objects, use the `fid` field from the query. In the case of MSSQL databases, you must use the `dagId` from the MSSQL database object.
 
 ```graphql
 query {

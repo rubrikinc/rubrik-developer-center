@@ -8,7 +8,7 @@ Two object types work together, and the distinction matters for every query belo
 
 A **fileset template** is a reusable backup definition: which paths to include, which to exclude, any pre- or post-backup scripts, and the OS family it applies to. A template is *not* something you back up — it's the blueprint.
 
-A **fileset** is a template applied to a specific host or NAS share. This is the snappable: it gets snapshots, holds an SLA Domain, and is the target of backup and recovery operations. Concrete types are `LinuxFileset`, `WindowsFileset`, and `ShareFileset` (NAS).
+A **fileset** is a template applied to a specific host or NAS share. This is the snappable: it gets snapshots, holds an SLA Domain, and is the target of backup and recovery operations. Concrete types are [`LinuxFileset`](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/LinuxFileset/index.md), [`WindowsFileset`](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/WindowsFileset/index.md), and [`ShareFileset`](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/ShareFileset/index.md) (NAS).
 
 ```text
 Fileset Template  →  Fileset (on host A)
@@ -23,7 +23,7 @@ Every template is scoped to a **host root** — `WINDOWS_HOST_ROOT`, `LINUX_HOST
 Before working with filesets through the API:
 
 1. **Obtain an access token** — See [Authentication](https://developer.rubrik.com/Rubrik-Security-Cloud-API/authentication/index.md) for the token exchange flow.
-1. **Locate your Rubrik cluster UUID** — Provisioning calls require it. Find it in the RSC UI under **Clusters**, or query `allClusterConnection { nodes { id name } }`.
+1. **Locate your Rubrik cluster UUID** — Provisioning calls require it. Find it in the RSC UI under **Clusters**, or query [`allClusterConnection`](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/allClusterConnection/index.md).
 1. **Locate your SLA Domain** — See [SLA Domains](https://developer.rubrik.com/Rubrik-Security-Cloud-API/Data-Protection/SLA-Domains/index.md) to retrieve the UUID of the SLA policy you want to apply.
 
 ## Set Up
@@ -54,10 +54,12 @@ mutation {
   }) {
     data {
       id
-      name
-      operatingSystemType
-      includes
-      excludes
+      filesetTemplateCreate {
+        name
+        includes
+        excludes
+        operatingSystemType
+      }
     }
   }
 }
@@ -105,9 +107,8 @@ mutation {
   }) {
     data {
       filesetSummary {
-        id
-        name
-        hostId
+        effectiveSlaDomainId
+        effectiveSlaDomainName
       }
     }
   }
@@ -283,7 +284,7 @@ curl -X POST \
 
 ### Hosts
 
-To approach the problem from the host side instead, query `physicalHosts` to list the servers Rubrik protects and the filesets configured on each. As with templates, `hostRoot` is required and you query each OS family separately. The `physicalChildConnection` on each host exposes its filesets.
+To approach the problem from the host side instead, query [`physicalHosts`](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/physicalHosts/index.md) to list the servers Rubrik protects and the filesets configured on each. As with templates, `hostRoot` is required and you query each OS family separately. The `physicalChildConnection` on each host exposes its filesets.
 
 ```graphql
 query {
@@ -356,7 +357,7 @@ All of these queries return paginated connections. See [Pagination](https://deve
 
 ### Assign an SLA Domain
 
-Use the `assignSla` mutation to assign an SLA Domain to a fileset. Assigning protection at the host level applies to the filesets beneath it. See [SLA Domains](https://developer.rubrik.com/Rubrik-Security-Cloud-API/Data-Protection/SLA-Domains/#assigning-an-sla-to-a-workload) for the full walkthrough.
+Use the [`assignSla`](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/assignSla/index.md) mutation to assign an SLA Domain to a fileset. Assigning protection at the host level applies to the filesets beneath it. See [SLA Domains](https://developer.rubrik.com/Rubrik-Security-Cloud-API/Data-Protection/SLA-Domains/#assigning-an-sla-to-a-workload) for the full walkthrough.
 
 ## On-Demand Backup
 
@@ -457,22 +458,22 @@ Retrieve the snapshot ID from the `newestSnapshot` field on the fileset, or from
 
 ## Recovery
 
-Rubrik offers three ways to recover files from a fileset snapshot. All three are asynchronous and return an `AsyncRequestStatus` with a request `id` you can poll (see [Monitor Jobs](#monitor-jobs)).
+Rubrik offers three ways to recover files from a fileset snapshot. All three are asynchronous and return an [`AsyncRequestStatus`](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AsyncRequestStatus/index.md) with a request `id` you can poll (see [Monitor Jobs](#monitor-jobs)).
 
 Each mode requires the `osType` of the source fileset's host (`LINUX` or `WINDOWS`) and a `shareType`: use `NoShareType` for physical hosts, or `NFS` / `SMB` for NAS shares.
 
 ### Restore to the Original Host
 
-Use `filesetRecoverFiles` to restore files back to the host they came from. For each file, `restorePath` controls where it lands:
+Use [`filesetRecoverFiles`](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/filesetRecoverFiles/index.md) to restore files back to the host they came from. For each file, `restorePath` controls where it lands:
 
 - `restorePath: ""` (empty) — restore in place, overwriting the original location.
 - `restorePath: "/some/dir"` — restore to an alternate directory on the same host.
 
 Populate both path lists (SPARK-42157)
 
-`filesetRecoverFiles` requires the recovery paths in **two** places:
+[`filesetRecoverFiles`](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/filesetRecoverFiles/index.md) requires the recovery paths in **two** places:
 
-- `restorePathPairList` — the top-level list (legacy `OldRestorePathPairInput` shape: `{ path, restorePath }`).
+- `restorePathPairList` — the top-level list (legacy [`OldRestorePathPairInput`](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/OldRestorePathPairInput/index.md) shape: `{ path, restorePath }`).
 - `config.restoreConfig` — the nested list (`{ restorePathPair: { path, restorePath } }`).
 
 The backend **reads only `restorePathPairList`** and ignores `config.restoreConfig`. However, `config.restoreConfig` is schema-required and must be non-empty to pass validation. **You must populate both with the same paths** — omitting or emptying either one causes the request to fail or to restore nothing.
@@ -556,7 +557,7 @@ curl -X POST \
 
 ### Export to a Different Host
 
-Use `filesetExportSnapshotFiles` to copy files to a *different* target than the source host — useful for recovery validation or moving data between servers. Specify the target with `config.hostId` (a physical host) or `config.shareId` (a NAS share), and list source-to-destination path pairs in `config.exportPathPairs` using `{ srcPath, dstPath }`.
+Use [`filesetExportSnapshotFiles`](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/filesetExportSnapshotFiles/index.md) to copy files to a *different* target than the source host — useful for recovery validation or moving data between servers. Specify the target with `config.hostId` (a physical host) or `config.shareId` (a NAS share), and list source-to-destination path pairs in `config.exportPathPairs` using `{ srcPath, dstPath }`.
 
 ```graphql
 mutation filesetExportSnapshotFiles {
@@ -624,7 +625,7 @@ curl -X POST \
 
 ### Download as a ZIP Archive
 
-Use `filesetDownloadSnapshotFiles` to package the selected files into a downloadable ZIP archive rather than restoring them to a host. List the paths in `config.sourceDirs`. On CDM v9.0.1 and later you can set an optional `config.zipPassword` to password-protect the archive.
+Use [`filesetDownloadSnapshotFiles`](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/filesetDownloadSnapshotFiles/index.md) to package the selected files into a downloadable ZIP archive rather than restoring them to a host. List the paths in `config.sourceDirs`. On CDM v9.0.1 and later you can set an optional `config.zipPassword` to password-protect the archive.
 
 ```graphql
 mutation filesetDownloadSnapshotFiles {
@@ -671,24 +672,24 @@ curl -X POST \
 
 Recovering from archival storage
 
-If the snapshot has been tiered to an archival location, use `filesetRecoverFilesFromArchivalLocation` or `filesetDownloadSnapshotFilesFromArchivalLocation` instead. These take the same inputs plus a required `locationId`.
+If the snapshot has been tiered to an archival location, use [`filesetRecoverFilesFromArchivalLocation`](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/filesetRecoverFilesFromArchivalLocation/index.md) or [`filesetDownloadSnapshotFilesFromArchivalLocation`](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/filesetDownloadSnapshotFilesFromArchivalLocation/index.md) instead. These take the same inputs plus a required `locationId`.
 
 ## Monitor Jobs
 
-Backup and recovery operations are asynchronous and return a request `id`. Poll `filesetRequestStatus` with that `id` and the `clusterUuid` to track progress until it reaches a terminal state (`SUCCEEDED`, `FAILED`, or `CANCELED`).
+Backup and recovery operations are asynchronous and return a request `id`. Poll [`filesetRequestStatus`](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/filesetRequestStatus/index.md) with that `id` and the `clusterUuid` to track progress until it reaches a terminal state (`SUCCEEDED`, `FAILED`, or `CANCELED`).
 
 Warning
 
-`filesetRequestStatus` requires **both** `id` and `clusterUuid`. The cluster UUID is **not** encoded in the job ID and is not returned by the mutation — retrieve it separately from the fileset's `cluster.id` field.
+[`filesetRequestStatus`](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/filesetRequestStatus/index.md) requires **both** `id` and `clusterUuid`. The cluster UUID is **not** encoded in the job ID and is not returned by the mutation — retrieve it separately from the fileset's `cluster.id` field.
 
 The `id` string follows the format `{JOB_TYPE}_{workload-id}_{run-id}:::0`, where `workload-id` is the FID of the fileset, `run-id` is a unique identifier for that execution, and `0` is the instance number. The job type prefix differs from the mutation name:
 
-| Operation                      | Job type prefix           |
-| ------------------------------ | ------------------------- |
-| `createFilesetSnapshot`        | `CREATE_FILESET_SNAPSHOT` |
-| `filesetRecoverFiles`          | `RESTORE_FILESET`         |
-| `filesetExportSnapshotFiles`   | `EXPORT_FILESET`          |
-| `filesetDownloadSnapshotFiles` | `DOWNLOAD_FILESET`        |
+| Operation                                                                                                                                              | Job type prefix           |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------- |
+| [`createFilesetSnapshot`](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/createFilesetSnapshot/index.md)               | `CREATE_FILESET_SNAPSHOT` |
+| [`filesetRecoverFiles`](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/filesetRecoverFiles/index.md)                   | `RESTORE_FILESET`         |
+| [`filesetExportSnapshotFiles`](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/filesetExportSnapshotFiles/index.md)     | `EXPORT_FILESET`          |
+| [`filesetDownloadSnapshotFiles`](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/filesetDownloadSnapshotFiles/index.md) | `DOWNLOAD_FILESET`        |
 
 ```graphql
 query {

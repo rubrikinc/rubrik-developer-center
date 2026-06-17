@@ -3071,7 +3071,7 @@
 <h2 id="object-model">Object Model</h2>
 <p>Two object types work together, and the distinction matters for every query below.</p>
 <p>A <strong>fileset template</strong> is a reusable backup definition: which paths to include, which to exclude, any pre- or post-backup scripts, and the OS family it applies to. A template is <em>not</em> something you back up — it's the blueprint.</p>
-<p>A <strong>fileset</strong> is a template applied to a specific host or NAS share. This is the snappable: it gets snapshots, holds an SLA Domain, and is the target of backup and recovery operations. Concrete types are <code>LinuxFileset</code>, <code>WindowsFileset</code>, and <code>ShareFileset</code> (NAS).</p>
+<p>A <strong>fileset</strong> is a template applied to a specific host or NAS share. This is the snappable: it gets snapshots, holds an SLA Domain, and is the target of backup and recovery operations. Concrete types are <a href="../../../API-Reference/types/objects/LinuxFileset/"><code>LinuxFileset</code></a>, <a href="../../../API-Reference/types/objects/WindowsFileset/"><code>WindowsFileset</code></a>, and <a href="../../../API-Reference/types/objects/ShareFileset/"><code>ShareFileset</code></a> (NAS).</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>Fileset Template  →  Fileset (on host A)
 </span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>                  →  Fileset (on host B)
 </span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>                  →  Fileset (on NAS share)
@@ -3081,7 +3081,7 @@
 <p>Before working with filesets through the API:</p>
 <ol>
 <li><strong>Obtain an access token</strong> — See <a href="../../../authentication/">Authentication</a> for the token exchange flow.</li>
-<li><strong>Locate your Rubrik cluster UUID</strong> — Provisioning calls require it. Find it in the RSC UI under <strong>Clusters</strong>, or query <code>allClusterConnection { nodes { id name } }</code>.</li>
+<li><strong>Locate your Rubrik cluster UUID</strong> — Provisioning calls require it. Find it in the RSC UI under <strong>Clusters</strong>, or query <a href="../../../API-Reference/queries/allClusterConnection/"><code>allClusterConnection</code></a>.</li>
 <li><strong>Locate your SLA Domain</strong> — See <a href="../../SLA-Domains/">SLA Domains</a> to retrieve the UUID of the SLA policy you want to apply.</li>
 </ol>
 <h2 id="set-up">Set Up</h2>
@@ -3109,13 +3109,15 @@
 </span><span id="__span-1-15"><a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a><span class="w">  </span><span class="p">})</span><span class="w"> </span><span class="p">{</span>
 </span><span id="__span-1-16"><a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a><span class="w">    </span><span class="n">data</span><span class="w"> </span><span class="p">{</span>
 </span><span id="__span-1-17"><a id="__codelineno-1-17" name="__codelineno-1-17" href="#__codelineno-1-17"></a><span class="w">      </span><span class="n">id</span>
-</span><span id="__span-1-18"><a id="__codelineno-1-18" name="__codelineno-1-18" href="#__codelineno-1-18"></a><span class="w">      </span><span class="n">name</span>
-</span><span id="__span-1-19"><a id="__codelineno-1-19" name="__codelineno-1-19" href="#__codelineno-1-19"></a><span class="w">      </span><span class="n">operatingSystemType</span>
-</span><span id="__span-1-20"><a id="__codelineno-1-20" name="__codelineno-1-20" href="#__codelineno-1-20"></a><span class="w">      </span><span class="n">includes</span>
-</span><span id="__span-1-21"><a id="__codelineno-1-21" name="__codelineno-1-21" href="#__codelineno-1-21"></a><span class="w">      </span><span class="n">excludes</span>
-</span><span id="__span-1-22"><a id="__codelineno-1-22" name="__codelineno-1-22" href="#__codelineno-1-22"></a><span class="w">    </span><span class="p">}</span>
-</span><span id="__span-1-23"><a id="__codelineno-1-23" name="__codelineno-1-23" href="#__codelineno-1-23"></a><span class="w">  </span><span class="p">}</span>
-</span><span id="__span-1-24"><a id="__codelineno-1-24" name="__codelineno-1-24" href="#__codelineno-1-24"></a><span class="p">}</span>
+</span><span id="__span-1-18"><a id="__codelineno-1-18" name="__codelineno-1-18" href="#__codelineno-1-18"></a><span class="w">      </span><span class="n">filesetTemplateCreate</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-1-19"><a id="__codelineno-1-19" name="__codelineno-1-19" href="#__codelineno-1-19"></a><span class="w">        </span><span class="n">name</span>
+</span><span id="__span-1-20"><a id="__codelineno-1-20" name="__codelineno-1-20" href="#__codelineno-1-20"></a><span class="w">        </span><span class="n">includes</span>
+</span><span id="__span-1-21"><a id="__codelineno-1-21" name="__codelineno-1-21" href="#__codelineno-1-21"></a><span class="w">        </span><span class="n">excludes</span>
+</span><span id="__span-1-22"><a id="__codelineno-1-22" name="__codelineno-1-22" href="#__codelineno-1-22"></a><span class="w">        </span><span class="n">operatingSystemType</span>
+</span><span id="__span-1-23"><a id="__codelineno-1-23" name="__codelineno-1-23" href="#__codelineno-1-23"></a><span class="w">      </span><span class="p">}</span>
+</span><span id="__span-1-24"><a id="__codelineno-1-24" name="__codelineno-1-24" href="#__codelineno-1-24"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-1-25"><a id="__codelineno-1-25" name="__codelineno-1-25" href="#__codelineno-1-25"></a><span class="w">  </span><span class="p">}</span>
+</span><span id="__span-1-26"><a id="__codelineno-1-26" name="__codelineno-1-26" href="#__codelineno-1-26"></a><span class="p">}</span>
 </span></code></pre></div>
 </div>
 <div class="tabbed-block">
@@ -3161,13 +3163,12 @@
 </span><span id="__span-4-10"><a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a><span class="w">  </span><span class="p">})</span><span class="w"> </span><span class="p">{</span>
 </span><span id="__span-4-11"><a id="__codelineno-4-11" name="__codelineno-4-11" href="#__codelineno-4-11"></a><span class="w">    </span><span class="n">data</span><span class="w"> </span><span class="p">{</span>
 </span><span id="__span-4-12"><a id="__codelineno-4-12" name="__codelineno-4-12" href="#__codelineno-4-12"></a><span class="w">      </span><span class="n">filesetSummary</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-4-13"><a id="__codelineno-4-13" name="__codelineno-4-13" href="#__codelineno-4-13"></a><span class="w">        </span><span class="n">id</span>
-</span><span id="__span-4-14"><a id="__codelineno-4-14" name="__codelineno-4-14" href="#__codelineno-4-14"></a><span class="w">        </span><span class="n">name</span>
-</span><span id="__span-4-15"><a id="__codelineno-4-15" name="__codelineno-4-15" href="#__codelineno-4-15"></a><span class="w">        </span><span class="n">hostId</span>
-</span><span id="__span-4-16"><a id="__codelineno-4-16" name="__codelineno-4-16" href="#__codelineno-4-16"></a><span class="w">      </span><span class="p">}</span>
-</span><span id="__span-4-17"><a id="__codelineno-4-17" name="__codelineno-4-17" href="#__codelineno-4-17"></a><span class="w">    </span><span class="p">}</span>
-</span><span id="__span-4-18"><a id="__codelineno-4-18" name="__codelineno-4-18" href="#__codelineno-4-18"></a><span class="w">  </span><span class="p">}</span>
-</span><span id="__span-4-19"><a id="__codelineno-4-19" name="__codelineno-4-19" href="#__codelineno-4-19"></a><span class="p">}</span>
+</span><span id="__span-4-13"><a id="__codelineno-4-13" name="__codelineno-4-13" href="#__codelineno-4-13"></a><span class="w">        </span><span class="n">effectiveSlaDomainId</span>
+</span><span id="__span-4-14"><a id="__codelineno-4-14" name="__codelineno-4-14" href="#__codelineno-4-14"></a><span class="w">        </span><span class="n">effectiveSlaDomainName</span>
+</span><span id="__span-4-15"><a id="__codelineno-4-15" name="__codelineno-4-15" href="#__codelineno-4-15"></a><span class="w">      </span><span class="p">}</span>
+</span><span id="__span-4-16"><a id="__codelineno-4-16" name="__codelineno-4-16" href="#__codelineno-4-16"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-4-17"><a id="__codelineno-4-17" name="__codelineno-4-17" href="#__codelineno-4-17"></a><span class="w">  </span><span class="p">}</span>
+</span><span id="__span-4-18"><a id="__codelineno-4-18" name="__codelineno-4-18" href="#__codelineno-4-18"></a><span class="p">}</span>
 </span></code></pre></div>
 </div>
 <div class="tabbed-block">
@@ -3340,7 +3341,7 @@
 </div>
 </div>
 <h3 id="hosts">Hosts</h3>
-<p>To approach the problem from the host side instead, query <code>physicalHosts</code> to list the servers Rubrik protects and the filesets configured on each. As with templates, <code>hostRoot</code> is required and you query each OS family separately. The <code>physicalChildConnection</code> on each host exposes its filesets.</p>
+<p>To approach the problem from the host side instead, query <a href="../../../API-Reference/queries/physicalHosts/"><code>physicalHosts</code></a> to list the servers Rubrik protects and the filesets configured on each. As with templates, <code>hostRoot</code> is required and you query each OS family separately. The <code>physicalChildConnection</code> on each host exposes its filesets.</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="5:3"><input checked="checked" id="__tabbed_5_1" name="__tabbed_5" type="radio" /><input id="__tabbed_5_2" name="__tabbed_5" type="radio" /><input id="__tabbed_5_3" name="__tabbed_5" type="radio" /><div class="tabbed-labels"><label for="__tabbed_5_1">GraphQL</label><label for="__tabbed_5_2">PowerShell SDK</label><label for="__tabbed_5_3">Shell</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
@@ -3413,7 +3414,7 @@
 <p>All of these queries return paginated connections. See <a href="../../../pagination/">Pagination</a> to retrieve result sets larger than a single page.</p>
 <h2 id="configure-protection">Configure Protection</h2>
 <h3 id="assign-an-sla-domain">Assign an SLA Domain</h3>
-<p>Use the <code>assignSla</code> mutation to assign an SLA Domain to a fileset. Assigning protection at the host level applies to the filesets beneath it. See <a href="../../SLA-Domains/#assigning-an-sla-to-a-workload">SLA Domains</a> for the full walkthrough.</p>
+<p>Use the <a href="../../../API-Reference/mutations/assignSla/"><code>assignSla</code></a> mutation to assign an SLA Domain to a fileset. Assigning protection at the host level applies to the filesets beneath it. See <a href="../../SLA-Domains/#assigning-an-sla-to-a-workload">SLA Domains</a> for the full walkthrough.</p>
 <h2 id="on-demand-backup">On-Demand Backup</h2>
 <p>Trigger an immediate backup of a fileset outside its scheduled SLA policy. Pass the <strong>fileset instance ID</strong> (not the template ID) as <code>id</code>.</p>
 <p><code>config.slaId</code> is optional. If you omit it, the snapshot inherits the fileset's assigned SLA Domain and its retention. If the fileset has no SLA assigned and you omit <code>slaId</code>, the snapshot is <strong>retained indefinitely</strong> with no automatic expiry — provide an <code>slaId</code> to avoid this.</p>
@@ -3514,19 +3515,19 @@
 </div>
 <p>Retrieve the snapshot ID from the <code>newestSnapshot</code> field on the fileset, or from the <a href="../../Snapshots/">Snapshots</a> page for a specific point in time.</p>
 <h2 id="recovery">Recovery</h2>
-<p>Rubrik offers three ways to recover files from a fileset snapshot. All three are asynchronous and return an <code>AsyncRequestStatus</code> with a request <code>id</code> you can poll (see <a href="#monitor-jobs">Monitor Jobs</a>).</p>
+<p>Rubrik offers three ways to recover files from a fileset snapshot. All three are asynchronous and return an <a href="../../../API-Reference/types/objects/AsyncRequestStatus/"><code>AsyncRequestStatus</code></a> with a request <code>id</code> you can poll (see <a href="#monitor-jobs">Monitor Jobs</a>).</p>
 <p>Each mode requires the <code>osType</code> of the source fileset's host (<code>LINUX</code> or <code>WINDOWS</code>) and a <code>shareType</code>: use <code>NoShareType</code> for physical hosts, or <code>NFS</code> / <code>SMB</code> for NAS shares.</p>
 <h3 id="restore-to-the-original-host">Restore to the Original Host</h3>
-<p>Use <code>filesetRecoverFiles</code> to restore files back to the host they came from. For each file, <code>restorePath</code> controls where it lands:</p>
+<p>Use <a href="../../../API-Reference/mutations/filesetRecoverFiles/"><code>filesetRecoverFiles</code></a> to restore files back to the host they came from. For each file, <code>restorePath</code> controls where it lands:</p>
 <ul>
 <li><code>restorePath: ""</code> (empty) — restore in place, overwriting the original location.</li>
 <li><code>restorePath: "/some/dir"</code> — restore to an alternate directory on the same host.</li>
 </ul>
 <div class="admonition warning">
 <p class="admonition-title">Populate both path lists (SPARK-42157)</p>
-<p><code>filesetRecoverFiles</code> requires the recovery paths in <strong>two</strong> places:</p>
+<p><a href="../../../API-Reference/mutations/filesetRecoverFiles/"><code>filesetRecoverFiles</code></a> requires the recovery paths in <strong>two</strong> places:</p>
 <ul>
-<li><code>restorePathPairList</code> — the top-level list (legacy <code>OldRestorePathPairInput</code> shape: <code>{ path, restorePath }</code>).</li>
+<li><code>restorePathPairList</code> — the top-level list (legacy <a href="../../../API-Reference/types/inputs/OldRestorePathPairInput/"><code>OldRestorePathPairInput</code></a> shape: <code>{ path, restorePath }</code>).</li>
 <li><code>config.restoreConfig</code> — the nested list (<code>{ restorePathPair: { path, restorePath } }</code>).</li>
 </ul>
 <p>The backend <strong>reads only <code>restorePathPairList</code></strong> and ignores <code>config.restoreConfig</code>. However, <code>config.restoreConfig</code> is schema-required and must be non-empty to pass validation. <strong>You must populate both with the same paths</strong> — omitting or emptying either one causes the request to fail or to restore nothing.</p>
@@ -3613,7 +3614,7 @@
 </div>
 </div>
 <h3 id="export-to-a-different-host">Export to a Different Host</h3>
-<p>Use <code>filesetExportSnapshotFiles</code> to copy files to a <em>different</em> target than the source host — useful for recovery validation or moving data between servers. Specify the target with <code>config.hostId</code> (a physical host) or <code>config.shareId</code> (a NAS share), and list source-to-destination path pairs in <code>config.exportPathPairs</code> using <code>{ srcPath, dstPath }</code>.</p>
+<p>Use <a href="../../../API-Reference/mutations/filesetExportSnapshotFiles/"><code>filesetExportSnapshotFiles</code></a> to copy files to a <em>different</em> target than the source host — useful for recovery validation or moving data between servers. Specify the target with <code>config.hostId</code> (a physical host) or <code>config.shareId</code> (a NAS share), and list source-to-destination path pairs in <code>config.exportPathPairs</code> using <code>{ srcPath, dstPath }</code>.</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="9:3"><input checked="checked" id="__tabbed_9_1" name="__tabbed_9" type="radio" /><input id="__tabbed_9_2" name="__tabbed_9" type="radio" /><input id="__tabbed_9_3" name="__tabbed_9" type="radio" /><div class="tabbed-labels"><label for="__tabbed_9_1">GraphQL</label><label for="__tabbed_9_2">PowerShell SDK</label><label for="__tabbed_9_3">Shell</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
@@ -3683,7 +3684,7 @@
 </div>
 </div>
 <h3 id="download-as-a-zip-archive">Download as a ZIP Archive</h3>
-<p>Use <code>filesetDownloadSnapshotFiles</code> to package the selected files into a downloadable ZIP archive rather than restoring them to a host. List the paths in <code>config.sourceDirs</code>. On CDM v9.0.1 and later you can set an optional <code>config.zipPassword</code> to password-protect the archive.</p>
+<p>Use <a href="../../../API-Reference/mutations/filesetDownloadSnapshotFiles/"><code>filesetDownloadSnapshotFiles</code></a> to package the selected files into a downloadable ZIP archive rather than restoring them to a host. List the paths in <code>config.sourceDirs</code>. On CDM v9.0.1 and later you can set an optional <code>config.zipPassword</code> to password-protect the archive.</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="10:3"><input checked="checked" id="__tabbed_10_1" name="__tabbed_10" type="radio" /><input id="__tabbed_10_2" name="__tabbed_10" type="radio" /><input id="__tabbed_10_3" name="__tabbed_10" type="radio" /><div class="tabbed-labels"><label for="__tabbed_10_1">GraphQL</label><label for="__tabbed_10_2">PowerShell SDK</label><label for="__tabbed_10_3">Shell</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
@@ -3733,13 +3734,13 @@
 </div>
 <div class="admonition info">
 <p class="admonition-title">Recovering from archival storage</p>
-<p>If the snapshot has been tiered to an archival location, use <code>filesetRecoverFilesFromArchivalLocation</code> or <code>filesetDownloadSnapshotFilesFromArchivalLocation</code> instead. These take the same inputs plus a required <code>locationId</code>.</p>
+<p>If the snapshot has been tiered to an archival location, use <a href="../../../API-Reference/mutations/filesetRecoverFilesFromArchivalLocation/"><code>filesetRecoverFilesFromArchivalLocation</code></a> or <a href="../../../API-Reference/mutations/filesetDownloadSnapshotFilesFromArchivalLocation/"><code>filesetDownloadSnapshotFilesFromArchivalLocation</code></a> instead. These take the same inputs plus a required <code>locationId</code>.</p>
 </div>
 <h2 id="monitor-jobs">Monitor Jobs</h2>
-<p>Backup and recovery operations are asynchronous and return a request <code>id</code>. Poll <code>filesetRequestStatus</code> with that <code>id</code> and the <code>clusterUuid</code> to track progress until it reaches a terminal state (<code>SUCCEEDED</code>, <code>FAILED</code>, or <code>CANCELED</code>).</p>
+<p>Backup and recovery operations are asynchronous and return a request <code>id</code>. Poll <a href="../../../API-Reference/queries/filesetRequestStatus/"><code>filesetRequestStatus</code></a> with that <code>id</code> and the <code>clusterUuid</code> to track progress until it reaches a terminal state (<code>SUCCEEDED</code>, <code>FAILED</code>, or <code>CANCELED</code>).</p>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
-<p><code>filesetRequestStatus</code> requires <strong>both</strong> <code>id</code> and <code>clusterUuid</code>. The cluster UUID is <strong>not</strong> encoded in the job ID and is not returned by the mutation — retrieve it separately from the fileset's <code>cluster.id</code> field.</p>
+<p><a href="../../../API-Reference/queries/filesetRequestStatus/"><code>filesetRequestStatus</code></a> requires <strong>both</strong> <code>id</code> and <code>clusterUuid</code>. The cluster UUID is <strong>not</strong> encoded in the job ID and is not returned by the mutation — retrieve it separately from the fileset's <code>cluster.id</code> field.</p>
 </div>
 <p>The <code>id</code> string follows the format <code>{JOB_TYPE}_{workload-id}_{run-id}:::0</code>, where <code>workload-id</code> is the FID of the fileset, <code>run-id</code> is a unique identifier for that execution, and <code>0</code> is the instance number. The job type prefix differs from the mutation name:</p>
 <table>
@@ -3751,19 +3752,19 @@
 </thead>
 <tbody>
 <tr>
-<td><code>createFilesetSnapshot</code></td>
+<td><a href="../../../API-Reference/mutations/createFilesetSnapshot/"><code>createFilesetSnapshot</code></a></td>
 <td><code>CREATE_FILESET_SNAPSHOT</code></td>
 </tr>
 <tr>
-<td><code>filesetRecoverFiles</code></td>
+<td><a href="../../../API-Reference/mutations/filesetRecoverFiles/"><code>filesetRecoverFiles</code></a></td>
 <td><code>RESTORE_FILESET</code></td>
 </tr>
 <tr>
-<td><code>filesetExportSnapshotFiles</code></td>
+<td><a href="../../../API-Reference/mutations/filesetExportSnapshotFiles/"><code>filesetExportSnapshotFiles</code></a></td>
 <td><code>EXPORT_FILESET</code></td>
 </tr>
 <tr>
-<td><code>filesetDownloadSnapshotFiles</code></td>
+<td><a href="../../../API-Reference/mutations/filesetDownloadSnapshotFiles/"><code>filesetDownloadSnapshotFiles</code></a></td>
 <td><code>DOWNLOAD_FILESET</code></td>
 </tr>
 </tbody>
@@ -3837,7 +3838,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="June 17, 2026 12:45:17 UTC">2026-06-17</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="June 17, 2026 17:06:20 UTC">2026-06-17</span>
   </span>
 
     

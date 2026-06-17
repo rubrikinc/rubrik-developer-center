@@ -3034,12 +3034,12 @@
 <p>Before using the NCD API:</p>
 <ol>
 <li><strong>Obtain an access token</strong> — See <a href="../../../authentication/">Authentication</a> for the token exchange flow.</li>
-<li><strong>Confirm NCD shares are registered</strong> — Shares must be discovered before they appear in <code>cloudDirectNasShares</code>.</li>
+<li><strong>Confirm NCD shares are registered</strong> — Shares must be discovered before they appear in <a href="../../../API-Reference/queries/cloudDirectNasShares/"><code>cloudDirectNasShares</code></a>.</li>
 <li><strong>Locate your SLA Domain</strong> — See <a href="../../SLA-Domains/">SLA Domains</a> to retrieve the UUID of the policy assigned to your shares.</li>
 </ol>
 <h2 id="discover-your-ncd-environment">Discover Your NCD Environment</h2>
 <h3 id="shares">Shares</h3>
-<p>Use <code>cloudDirectNasShares</code> to list and filter shares, or <code>cloudDirectNasShare</code> if you already have the share FID. Either way, <strong>capture the share <code>id</code> and <code>name</code></strong> — both are needed in the recovery flow (<code>name</code> is required as <code>srcShareName</code>).</p>
+<p>Use <a href="../../../API-Reference/queries/cloudDirectNasShares/"><code>cloudDirectNasShares</code></a> to list and filter shares, or <a href="../../../API-Reference/queries/cloudDirectNasShare/"><code>cloudDirectNasShare</code></a> if you already have the share FID. Either way, <strong>capture the share <code>id</code> and <code>name</code></strong> — both are needed in the recovery flow (<code>name</code> is required as <code>srcShareName</code>).</p>
 <h4 id="list-and-filter">List and filter</h4>
 <div class="tabbed-set tabbed-alternate" data-tabs="1:3"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">GraphQL</label><label for="__tabbed_1_2">PowerShell SDK</label><label for="__tabbed_1_3">Shell</label></div>
 <div class="tabbed-content">
@@ -3349,8 +3349,8 @@
 <h3 id="list-snapshots">List Snapshots</h3>
 <p>List the snapshots of a share to choose the point in time to recover from. Sort by <code>CREATION_TIME</code> descending to get the most recent snapshot first.</p>
 <div class="admonition warning">
-<p class="admonition-title"><code>workloadId</code> is a <code>String</code>, not a <code>UUID</code></p>
-<p><code>snapshotsOfCloudDirectShare</code> takes <code>workloadId: String!</code>. The share FID must be passed as a <strong>quoted string literal</strong> — the field does not accept the <code>UUID</code> scalar type.</p>
+<p class="admonition-title"><code>workloadId</code> is a <code>String</code>, not a <a href="../../../API-Reference/types/scalars/UUID/"><code>UUID</code></a></p>
+<p><a href="../../../API-Reference/queries/snapshotsOfCloudDirectShare/"><code>snapshotsOfCloudDirectShare</code></a> takes <code>workloadId: String!</code>. The share FID must be passed as a <strong>quoted string literal</strong> — the field does not accept the <a href="../../../API-Reference/types/scalars/UUID/"><code>UUID</code></a> scalar type.</p>
 </div>
 <div class="tabbed-set tabbed-alternate" data-tabs="5:3"><input checked="checked" id="__tabbed_5_1" name="__tabbed_5" type="radio" /><input id="__tabbed_5_2" name="__tabbed_5" type="radio" /><input id="__tabbed_5_3" name="__tabbed_5" type="radio" /><div class="tabbed-labels"><label for="__tabbed_5_1">GraphQL</label><label for="__tabbed_5_2">PowerShell SDK</label><label for="__tabbed_5_3">Shell</label></div>
 <div class="tabbed-content">
@@ -3419,7 +3419,7 @@
 </div>
 <p><strong>Capture the <code>id</code></strong> of the target snapshot — this is the <code>snapshotFid</code> used in recovery.</p>
 <h3 id="search-files">Search Files</h3>
-<p>When you know a filename or path prefix but not which snapshot contains it, search the entire share at once. <code>searchSnappableVersionedFiles</code> returns each matching file with its <code>fileVersions</code> — one entry per snapshot that contains a version of the file.</p>
+<p>When you know a filename or path prefix but not which snapshot contains it, search the entire share at once. <a href="../../../API-Reference/queries/searchSnappableVersionedFiles/"><code>searchSnappableVersionedFiles</code></a> returns each matching file with its <code>fileVersions</code> — one entry per snapshot that contains a version of the file.</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="6:3"><input checked="checked" id="__tabbed_6_1" name="__tabbed_6" type="radio" /><input id="__tabbed_6_2" name="__tabbed_6" type="radio" /><input id="__tabbed_6_3" name="__tabbed_6" type="radio" /><div class="tabbed-labels"><label for="__tabbed_6_1">GraphQL</label><label for="__tabbed_6_2">PowerShell SDK</label><label for="__tabbed_6_3">Shell</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
@@ -3483,7 +3483,7 @@
 </div>
 <p><code>searchQuery</code> matches against filenames and paths. Set <code>usePrefixSearch: true</code> to match on a leading path or name fragment. Capture the file's <code>absolutePath</code> (use it as <code>srcPath</code>) and the <code>fileVersions.snapshotId</code> of the version you want.</p>
 <h3 id="browse-a-snapshot">Browse a Snapshot</h3>
-<p>To explore a snapshot directory-by-directory, use <code>browseSnapshotFileConnection</code>. Start at the root path and re-issue the query with a directory's <code>displayPath</code> to descend into it. The <code>fileMode</code> field distinguishes files from directories.</p>
+<p>To explore a snapshot directory-by-directory, use <a href="../../../API-Reference/queries/browseSnapshotFileConnection/"><code>browseSnapshotFileConnection</code></a>. Start at the root path and re-issue the query with a directory's <code>displayPath</code> to descend into it. The <code>fileMode</code> field distinguishes files from directories.</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="7:3"><input checked="checked" id="__tabbed_7_1" name="__tabbed_7" type="radio" /><input id="__tabbed_7_2" name="__tabbed_7" type="radio" /><input id="__tabbed_7_3" name="__tabbed_7" type="radio" /><div class="tabbed-labels"><label for="__tabbed_7_1">GraphQL</label><label for="__tabbed_7_2">PowerShell SDK</label><label for="__tabbed_7_3">Shell</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
@@ -3545,7 +3545,7 @@
 </div>
 </div>
 <h3 id="recover-files">Recover Files</h3>
-<p><code>recoverCloudDirectNasShare</code> restores one or more files from a snapshot in a single request. Recovery targets are described by <code>restorePathPairList</code> — a list of <code>{ srcPath, dstPath }</code> pairs.</p>
+<p><a href="../../../API-Reference/mutations/recoverCloudDirectNasShare/"><code>recoverCloudDirectNasShare</code></a> restores one or more files from a snapshot in a single request. Recovery targets are described by <code>restorePathPairList</code> — a list of <code>{ srcPath, dstPath }</code> pairs.</p>
 <table>
 <thead>
 <tr>
@@ -3725,7 +3725,7 @@
 </div>
 </div>
 <h3 id="monitor-recovery">Monitor Recovery</h3>
-<p><code>recoverCloudDirectNasShare</code> returns an <code>AsyncRequestStatus</code> immediately — the restore runs in the background. Use the returned <code>id</code> to poll the task to completion using the standard async task-monitoring pattern, checking <code>status</code> until it reaches a terminal state.</p>
+<p><a href="../../../API-Reference/mutations/recoverCloudDirectNasShare/"><code>recoverCloudDirectNasShare</code></a> returns an <a href="../../../API-Reference/types/objects/AsyncRequestStatus/"><code>AsyncRequestStatus</code></a> immediately — the restore runs in the background. Use the returned <code>id</code> to poll the task to completion using the standard async task-monitoring pattern, checking <code>status</code> until it reaches a terminal state.</p>
 <h2 id="reference">Reference</h2>
 <ul>
 <li><a href="../../../API-Reference/queries/cloudDirectNasShares/"><code>cloudDirectNasShares</code></a></li>
@@ -3752,7 +3752,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="June 16, 2026 14:33:41 UTC">2026-06-16</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="June 17, 2026 17:06:20 UTC">2026-06-17</span>
   </span>
 
     

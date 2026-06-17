@@ -3225,7 +3225,7 @@
 </div>
 </div>
 </div>
-<p>To retrieve a single VM directly, use <code>nutanixVm(fid: UUID!)</code>. This is also how you list a VM's snapshots — query its <code>snapshotConnection { nodes { id date } }</code> field, which returns the snapshot IDs you'll need for recovery.</p>
+<p>To retrieve a single VM directly, use <a href="../../../API-Reference/queries/nutanixVm/"><code>nutanixVm</code></a>. This is also how you list a VM's snapshots — query its <code>snapshotConnection</code> field, which returns the snapshot IDs you'll need for recovery. See <a href="../../Snapshots/">Snapshots</a> for details.</p>
 <h3 id="clusters">Clusters</h3>
 <p>List the registered Nutanix clusters (Prism Elements). The <code>storageContainers</code> field on each cluster returns the storage container <code>uuid</code> values — these are the <strong>natural IDs</strong> required when exporting or migrating a VM to a Nutanix container during recovery.</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="2:3"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><input id="__tabbed_2_3" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">GraphQL</label><label for="__tabbed_2_2">PowerShell SDK</label><label for="__tabbed_2_3">Shell</label></div>
@@ -3392,14 +3392,14 @@
 </div>
 <h2 id="configure-protection">Configure Protection</h2>
 <h3 id="assign-an-sla-domain">Assign an SLA Domain</h3>
-<p>Use the <code>assignSla</code> mutation to assign an SLA Domain to Nutanix VMs, clusters, or categories. SLA Domains assigned at a higher level are inherited by the VMs below them. See <a href="../../SLA-Domains/#assigning-an-sla-to-a-workload">SLA Domains</a> for the full walkthrough.</p>
+<p>Use the <a href="../../../API-Reference/mutations/assignSla/"><code>assignSla</code></a> mutation to assign an SLA Domain to Nutanix VMs, clusters, or categories. SLA Domains assigned at a higher level are inherited by the VMs below them. See <a href="../../SLA-Domains/#assigning-an-sla-to-a-workload">SLA Domains</a> for the full walkthrough.</p>
 <h3 id="register-the-rubrik-backup-service-rbs">Register the Rubrik Backup Service (RBS)</h3>
 <p>Standard Nutanix VM backups are <strong>crash-consistent</strong> snapshots taken at the hypervisor — no agent is required. Install the Rubrik Backup Service (RBS) in-guest, then register it, only when you need:</p>
 <ul>
 <li><strong>Application-consistent snapshots</strong> — pre/post backup scripts and VSS quiescing for databases and other transactional workloads running inside the VM.</li>
 <li><strong>File-level restore back into the running VM</strong> — see <a href="#recovery">Recovery</a>.</li>
 </ul>
-<p>Register RBS with <code>registerAgentNutanixVm</code> after the VM has been discovered, using the VM's <code>id</code> from the discovery query above. This is <strong>not</strong> needed for ordinary crash-consistent VM protection.</p>
+<p>Register RBS with <a href="../../../API-Reference/mutations/registerAgentNutanixVm/"><code>registerAgentNutanixVm</code></a> after the VM has been discovered, using the VM's <code>id</code> from the discovery query above. This is <strong>not</strong> needed for ordinary crash-consistent VM protection.</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="4:3"><input checked="checked" id="__tabbed_4_1" name="__tabbed_4" type="radio" /><input id="__tabbed_4_2" name="__tabbed_4" type="radio" /><input id="__tabbed_4_3" name="__tabbed_4" type="radio" /><div class="tabbed-labels"><label for="__tabbed_4_1">GraphQL</label><label for="__tabbed_4_2">PowerShell SDK</label><label for="__tabbed_4_3">Shell</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
@@ -3433,7 +3433,7 @@
 </div>
 </div>
 <h2 id="on-demand-backup">On-Demand Backup</h2>
-<p>Trigger an immediate backup outside the scheduled SLA policy with <code>createOnDemandNutanixBackup</code>. The <code>id</code> is the <strong>VM</strong> FID.</p>
+<p>Trigger an immediate backup outside the scheduled SLA policy with <a href="../../../API-Reference/mutations/createOnDemandNutanixBackup/"><code>createOnDemandNutanixBackup</code></a>. The <code>id</code> is the <strong>VM</strong> FID.</p>
 <p>The <code>config.slaId</code> field is optional. If you omit it, Rubrik uses the VM's currently assigned SLA Domain to determine retention. If the VM has no SLA assigned and you omit <code>slaId</code>, the snapshot is <strong>retained indefinitely</strong> with no automatic expiry — always provide <code>slaId</code> unless that is what you intend.</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="5:3"><input checked="checked" id="__tabbed_5_1" name="__tabbed_5" type="radio" /><input id="__tabbed_5_2" name="__tabbed_5" type="radio" /><input id="__tabbed_5_3" name="__tabbed_5" type="radio" /><div class="tabbed-labels"><label for="__tabbed_5_1">GraphQL</label><label for="__tabbed_5_2">PowerShell SDK</label><label for="__tabbed_5_3">Shell</label></div>
 <div class="tabbed-content">
@@ -3492,7 +3492,7 @@
 </span></code></pre></div>
 <p>Three recovery modes are available.</p>
 <h3 id="export-to-a-new-vm">Export to a New VM</h3>
-<p>Use <code>exportNutanixSnapshot</code> to create a brand-new VM from a snapshot without touching the source. This is the right choice for recovery validation, spinning up test/dev copies, or recovering alongside a still-running production VM.</p>
+<p>Use <a href="../../../API-Reference/mutations/exportNutanixSnapshot/"><code>exportNutanixSnapshot</code></a> to create a brand-new VM from a snapshot without touching the source. This is the right choice for recovery validation, spinning up test/dev copies, or recovering alongside a still-running production VM.</p>
 <p>Fields in <code>config</code>:</p>
 <table>
 <thead>
@@ -3583,7 +3583,7 @@
 </div>
 </div>
 <h3 id="live-mount">Live Mount</h3>
-<p>Use <code>mountNutanixSnapshotV1</code> to instantly stand up a running VM served directly from Rubrik backup storage — no full data copy required. Live Mount is well-suited for rapid recovery validation, extracting data from a backup, or providing a point-in-time copy without consuming production storage.</p>
+<p>Use <a href="../../../API-Reference/mutations/mountNutanixSnapshotV1/"><code>mountNutanixSnapshotV1</code></a> to instantly stand up a running VM served directly from Rubrik backup storage — no full data copy required. Live Mount is well-suited for rapid recovery validation, extracting data from a backup, or providing a point-in-time copy without consuming production storage.</p>
 <div class="admonition warning">
 <p class="admonition-title"><code>shouldDisableMigration</code> controls whether <code>containerNaturalId</code> is required</p>
 <p><code>shouldDisableMigration</code> is <strong>required</strong>. Its value changes what else you must supply:</p>
@@ -3657,8 +3657,8 @@
 </div>
 </div>
 <h4 id="tear-down-a-live-mount">Tear Down a Live Mount</h4>
-<p>When finished, remove the Live Mount with <code>deleteNutanixMountV1</code> to release storage resources. The <code>id</code> here is the <strong>Live Mount object ID</strong>, not the async request ID returned by <code>mountNutanixSnapshotV1</code>.</p>
-<p>To make a Live Mount permanent instead of tearing it down, migrate it to Nutanix storage with <code>migrateNutanixMountV1</code>.</p>
+<p>When finished, remove the Live Mount with <a href="../../../API-Reference/mutations/deleteNutanixMountV1/"><code>deleteNutanixMountV1</code></a> to release storage resources. The <code>id</code> here is the <strong>Live Mount object ID</strong>, not the async request ID returned by <a href="../../../API-Reference/mutations/mountNutanixSnapshotV1/"><code>mountNutanixSnapshotV1</code></a>.</p>
+<p>To make a Live Mount permanent instead of tearing it down, migrate it to Nutanix storage with <a href="../../../API-Reference/mutations/migrateNutanixMountV1/"><code>migrateNutanixMountV1</code></a>.</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="8:3"><input checked="checked" id="__tabbed_8_1" name="__tabbed_8" type="radio" /><input id="__tabbed_8_2" name="__tabbed_8" type="radio" /><input id="__tabbed_8_3" name="__tabbed_8" type="radio" /><div class="tabbed-labels"><label for="__tabbed_8_1">GraphQL</label><label for="__tabbed_8_2">PowerShell SDK</label><label for="__tabbed_8_3">Shell</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
@@ -3704,7 +3704,7 @@
 </div>
 </div>
 <h3 id="in-place-restore">In-Place Restore</h3>
-<p>Use <code>inplaceExportNutanixSnapshot</code> to overwrite the source VM with a snapshot, restoring it to its original location. No target needs to be specified. Requires Rubrik CDM v9.3 or later.</p>
+<p>Use <a href="../../../API-Reference/mutations/inplaceExportNutanixSnapshot/"><code>inplaceExportNutanixSnapshot</code></a> to overwrite the source VM with a snapshot, restoring it to its original location. No target needs to be specified. Requires Rubrik CDM v9.3 or later.</p>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
 <p>In-place restore overwrites the existing VM. Set <code>shouldKeepRollbackSnapshot: true</code> to capture the VM's pre-restore state first, so you can roll back if the recovery point is wrong.</p>
@@ -3771,12 +3771,12 @@
 </div>
 </div>
 <h3 id="file-level-restore">File-Level Restore</h3>
-<p>To restore specific files or directories from a snapshot back into the source VM (or a target VM), use <code>restoreFilesNutanixSnapshot</code>. This requires the Rubrik Backup Service to be installed and registered inside the VM — see <a href="#register-the-rubrik-backup-service-rbs">Register the Rubrik Backup Service</a>. The <code>config.restoreConfig</code> array lists each file's source <code>path</code> and <code>restorePath</code>.</p>
+<p>To restore specific files or directories from a snapshot back into the source VM (or a target VM), use <a href="../../../API-Reference/mutations/restoreFilesNutanixSnapshot/"><code>restoreFilesNutanixSnapshot</code></a>. This requires the Rubrik Backup Service to be installed and registered inside the VM — see <a href="#register-the-rubrik-backup-service-rbs">Register the Rubrik Backup Service</a>. The <code>config.restoreConfig</code> array lists each file's source <code>path</code> and <code>restorePath</code>.</p>
 <h2 id="monitor-jobs">Monitor Jobs</h2>
-<p>Backup and recovery operations are asynchronous and return an <code>AsyncRequestStatus</code> with a request <code>id</code>. Poll <code>nutanixVmAsyncRequestStatus</code> with that <code>id</code> and a <code>clusterUuid</code> to track progress.</p>
+<p>Backup and recovery operations are asynchronous and return an <a href="../../../API-Reference/types/objects/AsyncRequestStatus/"><code>AsyncRequestStatus</code></a> with a request <code>id</code>. Poll <a href="../../../API-Reference/queries/nutanixVmAsyncRequestStatus/"><code>nutanixVmAsyncRequestStatus</code></a> with that <code>id</code> and a <code>clusterUuid</code> to track progress.</p>
 <div class="admonition warning">
 <p class="admonition-title"><code>clusterUuid</code> is required and is not returned by the mutation</p>
-<p>The recovery and backup mutations do not return <code>clusterUuid</code>. Retrieve it from the VM's <code>cluster { id }</code> field (from the discovery query) and pass it alongside the request <code>id</code>. Cluster- and Prism-Central-level operations are tracked with <code>nutanixClusterAsyncRequestStatus</code> and <code>nutanixPrismCentralAsyncRequestStatus</code> respectively.</p>
+<p>The recovery and backup mutations do not return <code>clusterUuid</code>. Retrieve it from the VM's <code>cluster { id }</code> field (from the discovery query) and pass it alongside the request <code>id</code>. Cluster-level operations are tracked with <a href="../../../API-Reference/queries/nutanixClusterAsyncRequestStatus/"><code>nutanixClusterAsyncRequestStatus</code></a>.</p>
 </div>
 <p>The request <code>id</code> follows the format <code>{JOB_TYPE}_{vm-id}_{run-id}:::0</code>, where <code>vm-id</code> is the FID of the source VM, <code>run-id</code> is a unique identifier for that job execution, and <code>0</code> is the instance number. The job type prefix differs from the mutation name:</p>
 <table>
@@ -3788,23 +3788,23 @@
 </thead>
 <tbody>
 <tr>
-<td><code>createOnDemandNutanixBackup</code></td>
+<td><a href="../../../API-Reference/mutations/createOnDemandNutanixBackup/"><code>createOnDemandNutanixBackup</code></a></td>
 <td><code>CREATE_NUTANIX_SNAPSHOT</code></td>
 </tr>
 <tr>
-<td><code>exportNutanixSnapshot</code></td>
+<td><a href="../../../API-Reference/mutations/exportNutanixSnapshot/"><code>exportNutanixSnapshot</code></a></td>
 <td><code>EXPORT_NUTANIX_SNAPSHOT</code></td>
 </tr>
 <tr>
-<td><code>mountNutanixSnapshotV1</code></td>
+<td><a href="../../../API-Reference/mutations/mountNutanixSnapshotV1/"><code>mountNutanixSnapshotV1</code></a></td>
 <td><code>MOUNT_NUTANIX_SNAPSHOT</code></td>
 </tr>
 <tr>
-<td><code>inplaceExportNutanixSnapshot</code></td>
+<td><a href="../../../API-Reference/mutations/inplaceExportNutanixSnapshot/"><code>inplaceExportNutanixSnapshot</code></a></td>
 <td><code>INPLACE_EXPORT_NUTANIX_SNAPSHOT</code></td>
 </tr>
 <tr>
-<td><code>deleteNutanixMountV1</code></td>
+<td><a href="../../../API-Reference/mutations/deleteNutanixMountV1/"><code>deleteNutanixMountV1</code></a></td>
 <td><code>UNMOUNT_NUTANIX_SNAPSHOT</code></td>
 </tr>
 </tbody>
@@ -3870,21 +3870,18 @@
 </span><span id="__span-31-8"><a id="__codelineno-31-8" name="__codelineno-31-8" href="#__codelineno-31-8"></a><span class="w">    </span><span class="p">}</span>
 </span><span id="__span-31-9"><a id="__codelineno-31-9" name="__codelineno-31-9" href="#__codelineno-31-9"></a><span class="w">    </span><span class="n">prismElementCdmTuple</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
 </span><span id="__span-31-10"><a id="__codelineno-31-10" name="__codelineno-31-10" href="#__codelineno-31-10"></a><span class="w">      </span><span class="p">{</span>
-</span><span id="__span-31-11"><a id="__codelineno-31-11" name="__codelineno-31-11" href="#__codelineno-31-11"></a><span class="w">        </span><span class="n">nutanixClusterUuid</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;00057b6e-1234-5678-0000-000000abcdef&quot;</span>
-</span><span id="__span-31-12"><a id="__codelineno-31-12" name="__codelineno-31-12" href="#__codelineno-31-12"></a><span class="w">        </span><span class="n">cdmClusterUuid</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;8417a938-96f5-43c6-9905-b36e051c5f98&quot;</span>
+</span><span id="__span-31-11"><a id="__codelineno-31-11" name="__codelineno-31-11" href="#__codelineno-31-11"></a><span class="w">        </span><span class="n">nutanixClusterId</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;00057b6e-1234-5678-0000-000000abcdef&quot;</span>
+</span><span id="__span-31-12"><a id="__codelineno-31-12" name="__codelineno-31-12" href="#__codelineno-31-12"></a><span class="w">        </span><span class="n">cdmClusterId</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;8417a938-96f5-43c6-9905-b36e051c5f98&quot;</span>
 </span><span id="__span-31-13"><a id="__codelineno-31-13" name="__codelineno-31-13" href="#__codelineno-31-13"></a><span class="w">      </span><span class="p">}</span>
 </span><span id="__span-31-14"><a id="__codelineno-31-14" name="__codelineno-31-14" href="#__codelineno-31-14"></a><span class="w">    </span><span class="p">]</span>
 </span><span id="__span-31-15"><a id="__codelineno-31-15" name="__codelineno-31-15" href="#__codelineno-31-15"></a><span class="w">    </span><span class="n">isDrEnabled</span><span class="p">:</span><span class="w"> </span><span class="nb">false</span>
 </span><span id="__span-31-16"><a id="__codelineno-31-16" name="__codelineno-31-16" href="#__codelineno-31-16"></a><span class="w">  </span><span class="p">})</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-31-17"><a id="__codelineno-31-17" name="__codelineno-31-17" href="#__codelineno-31-17"></a><span class="w">    </span><span class="n">requestStatuses</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-31-17"><a id="__codelineno-31-17" name="__codelineno-31-17" href="#__codelineno-31-17"></a><span class="w">    </span><span class="n">responses</span><span class="w"> </span><span class="p">{</span>
 </span><span id="__span-31-18"><a id="__codelineno-31-18" name="__codelineno-31-18" href="#__codelineno-31-18"></a><span class="w">      </span><span class="n">id</span>
 </span><span id="__span-31-19"><a id="__codelineno-31-19" name="__codelineno-31-19" href="#__codelineno-31-19"></a><span class="w">      </span><span class="n">status</span>
-</span><span id="__span-31-20"><a id="__codelineno-31-20" name="__codelineno-31-20" href="#__codelineno-31-20"></a><span class="w">      </span><span class="n">error</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-31-21"><a id="__codelineno-31-21" name="__codelineno-31-21" href="#__codelineno-31-21"></a><span class="w">        </span><span class="n">message</span>
-</span><span id="__span-31-22"><a id="__codelineno-31-22" name="__codelineno-31-22" href="#__codelineno-31-22"></a><span class="w">      </span><span class="p">}</span>
-</span><span id="__span-31-23"><a id="__codelineno-31-23" name="__codelineno-31-23" href="#__codelineno-31-23"></a><span class="w">    </span><span class="p">}</span>
-</span><span id="__span-31-24"><a id="__codelineno-31-24" name="__codelineno-31-24" href="#__codelineno-31-24"></a><span class="w">  </span><span class="p">}</span>
-</span><span id="__span-31-25"><a id="__codelineno-31-25" name="__codelineno-31-25" href="#__codelineno-31-25"></a><span class="p">}</span>
+</span><span id="__span-31-20"><a id="__codelineno-31-20" name="__codelineno-31-20" href="#__codelineno-31-20"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-31-21"><a id="__codelineno-31-21" name="__codelineno-31-21" href="#__codelineno-31-21"></a><span class="w">  </span><span class="p">}</span>
+</span><span id="__span-31-22"><a id="__codelineno-31-22" name="__codelineno-31-22" href="#__codelineno-31-22"></a><span class="p">}</span>
 </span></code></pre></div>
 </div>
 <div class="tabbed-block">
@@ -3898,8 +3895,8 @@
 </span><span id="__span-32-8"><a id="__codelineno-32-8" name="__codelineno-32-8" href="#__codelineno-32-8"></a><span class="nv">$pcConfig</span><span class="p">.</span><span class="n">CaCerts</span> <span class="p">=</span> <span class="s2">&quot;-----BEGIN CERTIFICATE-----</span><span class="se">`n</span><span class="s2">MIID....</span><span class="se">`n</span><span class="s2">-----END CERTIFICATE-----&quot;</span>
 </span><span id="__span-32-9"><a id="__codelineno-32-9" name="__codelineno-32-9" href="#__codelineno-32-9"></a><span class="nv">$mutation</span><span class="p">.</span><span class="n">var</span><span class="p">.</span><span class="n">input</span><span class="p">.</span><span class="n">PrismCentralConfig</span> <span class="p">=</span> <span class="nv">$pcConfig</span>
 </span><span id="__span-32-10"><a id="__codelineno-32-10" name="__codelineno-32-10" href="#__codelineno-32-10"></a><span class="nv">$tuple</span> <span class="p">=</span> <span class="nb">New-Object</span> <span class="n">-TypeName</span> <span class="n">RubrikSecurityCloud</span><span class="p">.</span><span class="n">Types</span><span class="p">.</span><span class="n">PrismElementCdmTuple</span>
-</span><span id="__span-32-11"><a id="__codelineno-32-11" name="__codelineno-32-11" href="#__codelineno-32-11"></a><span class="nv">$tuple</span><span class="p">.</span><span class="n">NutanixClusterUuid</span> <span class="p">=</span> <span class="s2">&quot;00057b6e-1234-5678-0000-000000abcdef&quot;</span>
-</span><span id="__span-32-12"><a id="__codelineno-32-12" name="__codelineno-32-12" href="#__codelineno-32-12"></a><span class="nv">$tuple</span><span class="p">.</span><span class="n">CdmClusterUuid</span> <span class="p">=</span> <span class="s2">&quot;8417a938-96f5-43c6-9905-b36e051c5f98&quot;</span>
+</span><span id="__span-32-11"><a id="__codelineno-32-11" name="__codelineno-32-11" href="#__codelineno-32-11"></a><span class="nv">$tuple</span><span class="p">.</span><span class="n">NutanixClusterId</span> <span class="p">=</span> <span class="s2">&quot;00057b6e-1234-5678-0000-000000abcdef&quot;</span>
+</span><span id="__span-32-12"><a id="__codelineno-32-12" name="__codelineno-32-12" href="#__codelineno-32-12"></a><span class="nv">$tuple</span><span class="p">.</span><span class="n">CdmClusterId</span> <span class="p">=</span> <span class="s2">&quot;8417a938-96f5-43c6-9905-b36e051c5f98&quot;</span>
 </span><span id="__span-32-13"><a id="__codelineno-32-13" name="__codelineno-32-13" href="#__codelineno-32-13"></a><span class="nv">$mutation</span><span class="p">.</span><span class="n">var</span><span class="p">.</span><span class="n">input</span><span class="p">.</span><span class="n">PrismElementCdmTuple</span> <span class="p">=</span> <span class="p">@(</span><span class="nv">$tuple</span><span class="p">)</span>
 </span><span id="__span-32-14"><a id="__codelineno-32-14" name="__codelineno-32-14" href="#__codelineno-32-14"></a><span class="nv">$mutation</span><span class="p">.</span><span class="n">var</span><span class="p">.</span><span class="n">input</span><span class="p">.</span><span class="n">IsDrEnabled</span> <span class="p">=</span> <span class="nv">$false</span>
 </span><span id="__span-32-15"><a id="__codelineno-32-15" name="__codelineno-32-15" href="#__codelineno-32-15"></a><span class="nv">$mutation</span><span class="p">.</span><span class="n">invoke</span><span class="p">()</span>
@@ -3910,13 +3907,13 @@
 </span><span id="__span-33-2"><a id="__codelineno-33-2" name="__codelineno-33-2" href="#__codelineno-33-2"></a><span class="w">  </span>-H<span class="w"> </span><span class="s2">&quot;Authorization: Bearer </span><span class="nv">$RSC_TOKEN</span><span class="s2">&quot;</span><span class="w"> </span><span class="se">\</span>
 </span><span id="__span-33-3"><a id="__codelineno-33-3" name="__codelineno-33-3" href="#__codelineno-33-3"></a><span class="w">  </span>-H<span class="w"> </span><span class="s2">&quot;Content-Type: application/json&quot;</span><span class="w"> </span><span class="se">\</span>
 </span><span id="__span-33-4"><a id="__codelineno-33-4" name="__codelineno-33-4" href="#__codelineno-33-4"></a><span class="w">  </span>-d<span class="w"> </span><span class="s1">&#39;{</span>
-</span><span id="__span-33-5"><a id="__codelineno-33-5" name="__codelineno-33-5" href="#__codelineno-33-5"></a><span class="s1">    &quot;query&quot;: &quot;mutation { createNutanixPrismCentral(input: { prismCentralConfig: { hostname: \&quot;prism-central.example.com\&quot; username: \&quot;admin\&quot; password: \&quot;your-password\&quot; caCerts: \&quot;-----BEGIN CERTIFICATE-----\\nMIID....\\n-----END CERTIFICATE-----\&quot; } prismElementCdmTuple: [{ nutanixClusterUuid: \&quot;00057b6e-1234-5678-0000-000000abcdef\&quot; cdmClusterUuid: \&quot;8417a938-96f5-43c6-9905-b36e051c5f98\&quot; }] isDrEnabled: false }) { requestStatuses { id status error { message } } } }&quot;</span>
+</span><span id="__span-33-5"><a id="__codelineno-33-5" name="__codelineno-33-5" href="#__codelineno-33-5"></a><span class="s1">    &quot;query&quot;: &quot;mutation { createNutanixPrismCentral(input: { prismCentralConfig: { hostname: \&quot;prism-central.example.com\&quot; username: \&quot;admin\&quot; password: \&quot;your-password\&quot; caCerts: \&quot;-----BEGIN CERTIFICATE-----\\nMIID....\\n-----END CERTIFICATE-----\&quot; } prismElementCdmTuple: [{ nutanixClusterId: \&quot;00057b6e-1234-5678-0000-000000abcdef\&quot; cdmClusterId: \&quot;8417a938-96f5-43c6-9905-b36e051c5f98\&quot; }] isDrEnabled: false }) { responses { id status } } }&quot;</span>
 </span><span id="__span-33-6"><a id="__codelineno-33-6" name="__codelineno-33-6" href="#__codelineno-33-6"></a><span class="s1">  }&#39;</span>
 </span></code></pre></div>
 </div>
 </div>
 </div>
-<p>Returns a <code>BatchAsyncRequestStatus</code> — one async status per Prism Element discovered.</p>
+<p>Returns a <a href="../../../API-Reference/types/objects/BatchAsyncRequestStatus/"><code>BatchAsyncRequestStatus</code></a> — one async status per Prism Element discovered.</p>
 <h3 id="register-a-standalone-cluster">Register a Standalone Cluster</h3>
 <p>For clusters not managed by Prism Central. Provide the Rubrik CDM cluster UUID (<code>clusterUuid</code>) and the Nutanix cluster UUID (<code>nutanixClusterUuid</code>) along with credentials for the Prism host.</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="12:3"><input checked="checked" id="__tabbed_12_1" name="__tabbed_12" type="radio" /><input id="__tabbed_12_2" name="__tabbed_12" type="radio" /><input id="__tabbed_12_3" name="__tabbed_12" type="radio" /><div class="tabbed-labels"><label for="__tabbed_12_1">GraphQL</label><label for="__tabbed_12_2">PowerShell SDK</label><label for="__tabbed_12_3">Shell</label></div>
@@ -3988,7 +3985,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="June 17, 2026 12:45:17 UTC">2026-06-17</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="June 17, 2026 17:06:20 UTC">2026-06-17</span>
   </span>
 
     

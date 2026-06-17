@@ -22,9 +22,9 @@ Before protecting Oracle databases through the API:
 
 ### Databases
 
-Query `oracleDatabases` to list discovered databases and retrieve their IDs. The `id` returned here is what you pass to every backup and recovery operation. The response also surfaces Oracle-specific detail — `dbUniqueName`, `numInstances`, `numChannels`, tablespaces, PDBs, and the Data Guard role (`dbRole`, `dataGuardType`, `dataGuardGroup`) — so you can confirm a database was discovered correctly before protecting it.
+Query [`oracleDatabases`](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/oracleDatabases/index.md) to list discovered databases and retrieve their IDs. The `id` returned here is what you pass to every backup and recovery operation. The response also surfaces Oracle-specific detail — `dbUniqueName`, `numInstances`, `numChannels`, tablespaces, PDBs, and the Data Guard role (`dbRole`, `dataGuardType`, `dataGuardGroup`) — so you can confirm a database was discovered correctly before protecting it.
 
-Results are paginated; see [Pagination](https://developer.rubrik.com/Rubrik-Security-Cloud-API/pagination/index.md) for retrieving large estates. To fetch a single database when you already have its FID, use `oracleDatabase(fid: UUID!)`.
+Results are paginated; see [Pagination](https://developer.rubrik.com/Rubrik-Security-Cloud-API/pagination/index.md) for retrieving large estates. To fetch a single database when you already have its FID, use [`oracleDatabase`](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/oracleDatabase/index.md).
 
 ```graphql
 query {
@@ -103,7 +103,7 @@ curl -X POST \
 
 ### Hosts and RACs
 
-Oracle hosts and RACs are both returned by `oracleTopLevelDescendants` — there is no separate `oracleHosts` or `oracleRacs` query. Scope the results with `typeFilter`: pass `[OracleHost]`, `[OracleRac]`, or both. You'll need a host or RAC FID as the recovery target when exporting or live mounting a database.
+Oracle hosts and RACs are both returned by [`oracleTopLevelDescendants`](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/oracleTopLevelDescendants/index.md) — there is no separate `oracleHosts` or `oracleRacs` query. Scope the results with `typeFilter`: pass `[OracleHost]`, `[OracleRac]`, or both. You'll need a host or RAC FID as the recovery target when exporting or live mounting a database.
 
 ```graphql
 query {
@@ -170,7 +170,7 @@ curl -X POST \
 
 ### Data Guard Groups
 
-A database that participates in Data Guard reports its membership through the `dataGuardGroup` and `dataGuardType` fields in the database query above. To inspect a group directly — its members and their roles — use `oracleDataGuardGroup(fid: UUID!)`. There is no plural list query for Data Guard groups; discover them through the database listing, then look up the group by FID.
+A database that participates in Data Guard reports its membership through the `dataGuardGroup` and `dataGuardType` fields in the database query above. To inspect a group directly — its members and their roles — use [`oracleDataGuardGroup`](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/oracleDataGuardGroup/index.md). There is no plural list query for Data Guard groups; discover them through the database listing, then look up the group by FID.
 
 Backup and recovery against a Data Guard configuration use the **member database ID**, not the group ID. Rubrik backs up from the appropriate member according to the group's configuration.
 
@@ -178,15 +178,15 @@ Backup and recovery against a Data Guard configuration use the **member database
 
 ### Assign an SLA Domain
 
-Use the `assignSla` mutation to assign an SLA Domain to a database, host, or RAC. Assigning at the host or RAC level protects every database beneath it through inheritance. See [SLA Domains](https://developer.rubrik.com/Rubrik-Security-Cloud-API/Data-Protection/SLA-Domains/#assigning-an-sla-to-a-workload) for the full walkthrough.
+Use the [`assignSla`](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/assignSla/index.md) mutation to assign an SLA Domain to a database, host, or RAC. Assigning at the host or RAC level protects every database beneath it through inheritance. See [SLA Domains](https://developer.rubrik.com/Rubrik-Security-Cloud-API/Data-Protection/SLA-Domains/#assigning-an-sla-to-a-workload) for the full walkthrough.
 
 ### Log Backup and Database Settings
 
-Use `bulkUpdateOracleDatabases` to configure per-database operational settings that are independent of the SLA policy — most importantly the archived redo log backup cadence and retention. Apply the settings under `oracleUpdate.oracleUpdateCommon`.
+Use [`bulkUpdateOracleDatabases`](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/bulkUpdateOracleDatabases/index.md) to configure per-database operational settings that are independent of the SLA policy — most importantly the archived redo log backup cadence and retention. Apply the settings under `oracleUpdate.oracleUpdateCommon`.
 
 Warning
 
-Set log fields under `oracleUpdate.oracleUpdateCommon`. The log fields directly on the top-level `OracleUpdateInput` type are deprecated (CDM v5.x) and should not be used in new code.
+Set log fields under `oracleUpdate.oracleUpdateCommon`. The log fields directly on the top-level [`OracleUpdateInput`](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/OracleUpdateInput/index.md) type are deprecated (CDM v5.x) and should not be used in new code.
 
 Common fields in `oracleUpdateCommon`:
 
@@ -253,7 +253,7 @@ curl -X POST \
 
 ### Database Snapshot
 
-Trigger an immediate database backup outside the scheduled SLA policy with `takeOnDemandOracleDatabaseSnapshot`.
+Trigger an immediate database backup outside the scheduled SLA policy with [`takeOnDemandOracleDatabaseSnapshot`](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/takeOnDemandOracleDatabaseSnapshot/index.md).
 
 Warning
 
@@ -319,7 +319,7 @@ curl -X POST \
 
 ### Archived Redo Log Backup
 
-Take an on-demand archived redo log backup with `takeOnDemandOracleLogSnapshot`. This is what extends your recoverable range between full database snapshots, enabling point-in-time recovery. The only required field is the database `id`.
+Take an on-demand archived redo log backup with [`takeOnDemandOracleLogSnapshot`](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/takeOnDemandOracleLogSnapshot/index.md). This is what extends your recoverable range between full database snapshots, enabling point-in-time recovery. The only required field is the database `id`.
 
 ```graphql
 mutation {
@@ -357,13 +357,13 @@ curl -X POST \
 
 ## Find Your Recoverable Range
 
-Before recovering, query `oracleRecoverableRangesMinimal` to learn what points in time the database can actually be recovered to. Each returned range has a `beginTime` and `endTime`; any timestamp inside a range is a valid point-in-time recovery target. Set `includeSnapshots: true` to also list the underlying snapshot summaries (`fid`, `date`, `isOnDemand`) — use a snapshot `fid` when you want to recover to a discrete snapshot rather than an arbitrary timestamp.
+Before recovering, query [`oracleRecoverableRangesMinimal`](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/oracleRecoverableRangesMinimal/index.md) to learn what points in time the database can actually be recovered to. Each returned range has a `beginTime` and `endTime`; any timestamp inside a range is a valid point-in-time recovery target. Set `includeSnapshots: true` to also list the underlying snapshot summaries (`fid`, `date`, `isOnDemand`) — use a snapshot `fid` when you want to recover to a discrete snapshot rather than an arbitrary timestamp.
 
-Pass the database FID as the `id` (note it is a `UUID` here, not a `String` as in the recovery mutations). Optionally narrow the result with `beforeTime` and `afterTime`.
+Pass the database FID as the `id` (note it is a [`UUID`](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/UUID/index.md) here, not a `String` as in the recovery mutations). Optionally narrow the result with `beforeTime` and `afterTime`.
 
 Tip
 
-Prefer `oracleRecoverableRangesMinimal` over the older `oracleRecoverableRanges` — it returns the same ranges with a lighter payload.
+Prefer [`oracleRecoverableRangesMinimal`](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/oracleRecoverableRangesMinimal/index.md) over the older [`oracleRecoverableRanges`](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/oracleRecoverableRanges/index.md) — it returns the same ranges with a lighter payload.
 
 ```graphql
 query {
@@ -413,21 +413,21 @@ curl -X POST \
 
 RSC offers three recovery modes, all driven by the database ID and a recovery point:
 
-| Mode                 | Mutation                       | Target                  | Effect                                                                          |
-| -------------------- | ------------------------------ | ----------------------- | ------------------------------------------------------------------------------- |
-| **Export**           | `exportOracleDatabase`         | A different host or RAC | Clones the database to a new location. Source untouched.                        |
-| **Live Mount**       | `mountOracleDatabase`          | A different host or RAC | Runs an NFS-backed copy without consuming additional storage. Source untouched. |
-| **In-place restore** | `instantRecoverOracleSnapshot` | The original host       | Overwrites the source database.                                                 |
+| Mode                 | Mutation                                                                                                                                               | Target                  | Effect                                                                          |
+| -------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ | ----------------------- | ------------------------------------------------------------------------------- |
+| **Export**           | [`exportOracleDatabase`](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/exportOracleDatabase/index.md)                 | A different host or RAC | Clones the database to a new location. Source untouched.                        |
+| **Live Mount**       | [`mountOracleDatabase`](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/mountOracleDatabase/index.md)                   | A different host or RAC | Runs an NFS-backed copy without consuming additional storage. Source untouched. |
+| **In-place restore** | [`instantRecoverOracleSnapshot`](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/instantRecoverOracleSnapshot/index.md) | The original host       | Overwrites the source database.                                                 |
 
 Every recovery requires exactly one recovery point
 
-`OracleRecoveryPointInput` accepts three fields — set **exactly one**:
+[`OracleRecoveryPointInput`](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/OracleRecoveryPointInput/index.md) accepts three fields — set **exactly one**:
 
-| Field         | Type     | Meaning                                           |
-| ------------- | -------- | ------------------------------------------------- |
-| `timestampMs` | `Long`   | Epoch milliseconds for point-in-time recovery     |
-| `snapshotId`  | `String` | A snapshot FID, to recover to a discrete snapshot |
-| `scn`         | `Long`   | An Oracle System Change Number (CDM v9.3+)        |
+| Field         | Type                                                                                                       | Meaning                                           |
+| ------------- | ---------------------------------------------------------------------------------------------------------- | ------------------------------------------------- |
+| `timestampMs` | [`Long`](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/Long/index.md) | Epoch milliseconds for point-in-time recovery     |
+| `snapshotId`  | `String`                                                                                                   | A snapshot FID, to recover to a discrete snapshot |
+| `scn`         | [`Long`](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/Long/index.md) | An Oracle System Change Number (CDM v9.3+)        |
 
 Passing zero or more than one of these throws a backend error — the schema does **not** enforce the constraint, it only requires that `recoveryPoint` is present. Get valid values from [Find Your Recoverable Range](#find-your-recoverable-range).
 
@@ -437,7 +437,7 @@ Export and live mount require permissions on **both** the source database **and*
 
 ### Export to a New Database
 
-`exportOracleDatabase` clones a database from a recovery point onto a different Oracle host or RAC, leaving the source untouched — the right choice for recovery validation, refreshing test/dev copies, or RMAN-style duplication.
+[`exportOracleDatabase`](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/exportOracleDatabase/index.md) clones a database from a recovery point onto a different Oracle host or RAC, leaving the source untouched — the right choice for recovery validation, refreshing test/dev copies, or RMAN-style duplication.
 
 Warning
 
@@ -501,7 +501,7 @@ curl -X POST \
 
 ### Live Mount
 
-`mountOracleDatabase` exposes a database from a recovery point as a running, NFS-backed instance on a target host — without copying the data files or consuming additional storage. Use it for near-instant recovery validation, extracting objects, or providing a point-in-time copy to developers.
+[`mountOracleDatabase`](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/mountOracleDatabase/index.md) exposes a database from a recovery point as a running, NFS-backed instance on a target host — without copying the data files or consuming additional storage. Use it for near-instant recovery validation, extracting objects, or providing a point-in-time copy to developers.
 
 Live mount uses the **same three-level nesting** as export (`input.request.config`) and the same required fields: `recoveryPoint` ([exactly one field](#recovery)) and `targetOracleHostOrRacId` (an OracleHost FID for standalone sources, an OracleRac FID for RAC sources).
 
@@ -560,7 +560,7 @@ curl -X POST \
 
 #### Unmount
 
-When finished with a live mount, remove it with `deleteOracleMount` to release the resources. The `id` is the **live mount object ID**, not the source database ID. Set `force: true` to remove the mount metadata even when the mounted database can't be contacted.
+When finished with a live mount, remove it with [`deleteOracleMount`](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/deleteOracleMount/index.md) to release the resources. The `id` is the **live mount object ID**, not the source database ID. Set `force: true` to remove the mount metadata even when the mounted database can't be contacted.
 
 ```graphql
 mutation {
@@ -604,7 +604,7 @@ curl -X POST \
 
 ### In-Place Restore
 
-`instantRecoverOracleSnapshot` restores a database to its original host from a recovery point, overwriting the source. No target host is needed.
+[`instantRecoverOracleSnapshot`](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/instantRecoverOracleSnapshot/index.md) restores a database to its original host from a recovery point, overwriting the source. No target host is needed.
 
 Warning
 
@@ -657,7 +657,7 @@ curl -X POST \
 
 ## Monitor Jobs
 
-Every backup and recovery mutation is asynchronous and returns an `AsyncRequestStatus` with an `id`. Poll `oracleDatabaseAsyncRequestDetails` with that `id` and the `clusterUuid` (the database's `cluster.id`) to track progress and surface any error.
+Every backup and recovery mutation is asynchronous and returns an [`AsyncRequestStatus`](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AsyncRequestStatus/index.md) with an `id`. Poll [`oracleDatabaseAsyncRequestDetails`](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/oracleDatabaseAsyncRequestDetails/index.md) with that `id` and the `clusterUuid` (the database's `cluster.id`) to track progress and surface any error.
 
 The `id` string follows the format `{JOB_TYPE}_{database-id}_{run-id}:::0`, where `database-id` is the FID of the source database, `run-id` is a unique identifier for that job execution, and `0` is the instance number. The job type prefix reflects the operation, not the mutation name:
 
