@@ -111,7 +111,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#nutanix-vms" class="md-skip">
+        <a href="#nutanix-ahv" class="md-skip">
           Skip to content
         </a>
       
@@ -1507,6 +1507,8 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
           
@@ -1549,6 +1551,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -1557,22 +1561,44 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#nutanix-vms" class="md-nav__link">
+  <a href="#object-model" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Nutanix VMs
+        Object Model
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Nutanix VMs">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prerequisites" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Prerequisites
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#discover-your-environment" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Discover Your Environment
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Discover Your Environment">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#retrieval" class="md-nav__link">
+  <a href="#virtual-machines" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Retrieval
+        Virtual Machines
       
     </span>
   </a>
@@ -1580,10 +1606,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#register-rbs-on-a-vm" class="md-nav__link">
+  <a href="#clusters" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Register RBS on a VM
+        Clusters
       
     </span>
   </a>
@@ -1591,6 +1617,61 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#prism-central-servers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Prism Central Servers
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configure-protection" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Configure Protection
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Configure Protection">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#assign-an-sla-domain" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Assign an SLA Domain
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#register-the-rubrik-backup-service-rbs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Register the Rubrik Backup Service (RBS)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#on-demand-backup" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1600,12 +1681,74 @@
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#job-status" class="md-nav__link">
+      
+        <li class="md-nav__item">
+  <a href="#recovery" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Job Status
+        Recovery
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Recovery">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#export-to-a-new-vm" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Export to a New VM
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#live-mount" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Live Mount
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Live Mount">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tear-down-a-live-mount" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tear Down a Live Mount
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#in-place-restore" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        In-Place Restore
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#file-level-restore" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        File-Level Restore
       
     </span>
   </a>
@@ -1618,50 +1761,44 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#nutanix-clusters" class="md-nav__link">
+  <a href="#monitor-jobs" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Nutanix Clusters
+        Monitor Jobs
       
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="Nutanix Clusters">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#retrieval_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Retrieval
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#nutanix-prism-central-servers" class="md-nav__link">
+  <a href="#set-up" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Nutanix Prism Central Servers
+        Set Up
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Nutanix Prism Central Servers">
+    <nav class="md-nav" aria-label="Set Up">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#retrieval_2" class="md-nav__link">
+  <a href="#register-a-prism-central" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Retrieval
+        Register a Prism Central
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#register-a-standalone-cluster" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Register a Standalone Cluster
       
     </span>
   </a>
@@ -2709,6 +2846,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -2717,22 +2856,44 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#nutanix-vms" class="md-nav__link">
+  <a href="#object-model" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Nutanix VMs
+        Object Model
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Nutanix VMs">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prerequisites" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Prerequisites
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#discover-your-environment" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Discover Your Environment
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Discover Your Environment">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#retrieval" class="md-nav__link">
+  <a href="#virtual-machines" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Retrieval
+        Virtual Machines
       
     </span>
   </a>
@@ -2740,10 +2901,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#register-rbs-on-a-vm" class="md-nav__link">
+  <a href="#clusters" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Register RBS on a VM
+        Clusters
       
     </span>
   </a>
@@ -2751,6 +2912,61 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#prism-central-servers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Prism Central Servers
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configure-protection" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Configure Protection
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Configure Protection">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#assign-an-sla-domain" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Assign an SLA Domain
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#register-the-rubrik-backup-service-rbs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Register the Rubrik Backup Service (RBS)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#on-demand-backup" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -2760,12 +2976,74 @@
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#job-status" class="md-nav__link">
+      
+        <li class="md-nav__item">
+  <a href="#recovery" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Job Status
+        Recovery
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Recovery">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#export-to-a-new-vm" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Export to a New VM
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#live-mount" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Live Mount
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Live Mount">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tear-down-a-live-mount" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tear Down a Live Mount
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#in-place-restore" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        In-Place Restore
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#file-level-restore" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        File-Level Restore
       
     </span>
   </a>
@@ -2778,50 +3056,44 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#nutanix-clusters" class="md-nav__link">
+  <a href="#monitor-jobs" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Nutanix Clusters
+        Monitor Jobs
       
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="Nutanix Clusters">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#retrieval_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Retrieval
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#nutanix-prism-central-servers" class="md-nav__link">
+  <a href="#set-up" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Nutanix Prism Central Servers
+        Set Up
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Nutanix Prism Central Servers">
+    <nav class="md-nav" aria-label="Set Up">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#retrieval_2" class="md-nav__link">
+  <a href="#register-a-prism-central" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Retrieval
+        Register a Prism Central
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#register-a-standalone-cluster" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Register a Standalone Cluster
       
     </span>
   </a>
@@ -2850,10 +3122,36 @@
 
 
 
-  <h1>Nutanix AHV</h1>
-
-<h2 id="nutanix-vms">Nutanix VMs</h2>
-<h3 id="retrieval">Retrieval</h3>
+<h1 id="nutanix-ahv">Nutanix AHV</h1>
+<p>Rubrik provides API-driven backup and recovery for Nutanix AHV virtual machines. This guide covers the complete workflow: discovering your Nutanix environment, assigning protection, taking on-demand backups, and recovering VMs through export, Live Mount, and in-place restore.</p>
+<p>If you administer AHV through Prism, the model here will feel familiar — Rubrik discovers your VMs automatically once you register a Prism Central or a standalone cluster. You never register individual VMs.</p>
+<h2 id="object-model">Object Model</h2>
+<p>The Nutanix object hierarchy in RSC is:</p>
+<p><strong>Prism Central</strong> → <strong>Cluster (Prism Element)</strong> → <strong>Virtual Machine</strong></p>
+<p>You bring Nutanix into Rubrik in one of two ways:</p>
+<ul>
+<li><strong>Register a Prism Central.</strong> Rubrik auto-discovers every cluster (Prism Element) managed by that Prism Central, and every VM on those clusters.</li>
+<li><strong>Register a standalone cluster.</strong> A Prism Element registered directly, without a Prism Central in front of it.</li>
+</ul>
+<p>Either way, VMs are discovered automatically — you do not add them one at a time. VMs can also be grouped by Nutanix <strong>Categories</strong> and their values, which Rubrik mirrors for protection assignment.</p>
+<p>SLA Domains assigned at a higher level (cluster or category) are inherited by the VMs below them. Backup and recovery operations are performed at the VM level.</p>
+<h2 id="prerequisites">Prerequisites</h2>
+<p>Before protecting Nutanix VMs through the API:</p>
+<ol>
+<li>
+<p><strong>Register a Prism Central or standalone cluster</strong> — Once registered, Rubrik discovers clusters and VMs automatically.</p>
+</li>
+<li>
+<p><strong>Locate your SLA Domain</strong> — See <a href="../../SLA-Domains/">SLA Domains</a> to retrieve the UUID of the SLA policy you want to apply. You'll need this when assigning protection.</p>
+</li>
+<li>
+<p><strong>Obtain an access token</strong> — See <a href="../../../authentication/">Authentication</a> for the OAuth2 client credentials flow used in all API calls.</p>
+</li>
+</ol>
+<h2 id="discover-your-environment">Discover Your Environment</h2>
+<h3 id="virtual-machines">Virtual Machines</h3>
+<p>Query your Nutanix VMs to confirm discovery completed and to retrieve VM IDs. The <code>id</code> field (the VM's forever-ID, or FID) is what you pass to protection and backup operations.</p>
+<p>The <code>filter</code> argument accepts a list of conditions. The example below matches a VM by exact name and excludes relics (VMs no longer present on the cluster) and replicated copies. Omit the <code>NAME_EXACT_MATCH</code> filter to list all VMs. Results are paginated — see <a href="../../../pagination/">Pagination</a> for handling large environments.</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="1:3"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">GraphQL</label><label for="__tabbed_1_2">PowerShell SDK</label><label for="__tabbed_1_3">Shell</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
@@ -2927,34 +3225,83 @@
 </div>
 </div>
 </div>
-<h3 id="register-rbs-on-a-vm">Register RBS on a VM</h3>
-<p>To enable app-consistent backups for workloads running inside a Nutanix VM (such as SQL Server or Oracle), register the Rubrik Backup Service (RBS) after the VM has been discovered. Use the VM's <code>id</code> from the retrieval query above.</p>
+<p>To retrieve a single VM directly, use <code>nutanixVm(fid: UUID!)</code>. This is also how you list a VM's snapshots — query its <code>snapshotConnection { nodes { id date } }</code> field, which returns the snapshot IDs you'll need for recovery.</p>
+<h3 id="clusters">Clusters</h3>
+<p>List the registered Nutanix clusters (Prism Elements). The <code>storageContainers</code> field on each cluster returns the storage container <code>uuid</code> values — these are the <strong>natural IDs</strong> required when exporting or migrating a VM to a Nutanix container during recovery.</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="2:3"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><input id="__tabbed_2_3" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">GraphQL</label><label for="__tabbed_2_2">PowerShell SDK</label><label for="__tabbed_2_3">Shell</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
-<div class="language-graphql highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="k">mutation</span><span class="w"> </span><span class="nf">RegisterRbs</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="w">  </span><span class="n">registerAgentNutanixVm</span><span class="p">(</span><span class="n">input</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="w">    </span><span class="n">id</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;YOUR_VM_ID&quot;</span>
-</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="w">  </span><span class="p">})</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="w">    </span><span class="n">success</span>
-</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="w">  </span><span class="p">}</span>
-</span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a><span class="p">}</span>
+<div class="language-graphql highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="k">query</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="w">  </span><span class="n">nutanixClusters</span><span class="p">(</span><span class="n">filter</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="w">    </span><span class="c">#{field: NAME_EXACT_MATCH texts: &quot;example&quot;}</span>
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="w">    </span><span class="p">{</span><span class="n">field</span><span class="p">:</span><span class="w"> </span><span class="no">IS_RELIC</span><span class="w"> </span><span class="n">texts</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;false&quot;</span><span class="p">}</span>
+</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="w">    </span><span class="p">{</span><span class="n">field</span><span class="p">:</span><span class="w"> </span><span class="no">IS_REPLICATED</span><span class="w"> </span><span class="n">texts</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;false&quot;</span><span class="p">}</span>
+</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="w">  </span><span class="p">])</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a><span class="w">    </span><span class="n">nodes</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-3-8"><a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a><span class="w">      </span><span class="n">name</span>
+</span><span id="__span-3-9"><a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a><span class="w">      </span><span class="n">id</span>
+</span><span id="__span-3-10"><a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a><span class="w">      </span><span class="n">cdmId</span>
+</span><span id="__span-3-11"><a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a><span class="w">      </span><span class="n">hostName</span>
+</span><span id="__span-3-12"><a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a><span class="w">      </span><span class="n">naturalId</span>
+</span><span id="__span-3-13"><a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a><span class="w">      </span><span class="n">nosVersion</span>
+</span><span id="__span-3-14"><a id="__codelineno-3-14" name="__codelineno-3-14" href="#__codelineno-3-14"></a><span class="w">      </span><span class="n">connectionStatus</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-3-15"><a id="__codelineno-3-15" name="__codelineno-3-15" href="#__codelineno-3-15"></a><span class="w">        </span><span class="n">message</span>
+</span><span id="__span-3-16"><a id="__codelineno-3-16" name="__codelineno-3-16" href="#__codelineno-3-16"></a><span class="w">        </span><span class="n">status</span>
+</span><span id="__span-3-17"><a id="__codelineno-3-17" name="__codelineno-3-17" href="#__codelineno-3-17"></a><span class="w">      </span><span class="p">}</span>
+</span><span id="__span-3-18"><a id="__codelineno-3-18" name="__codelineno-3-18" href="#__codelineno-3-18"></a><span class="w">      </span><span class="n">clusterNetworks</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-3-19"><a id="__codelineno-3-19" name="__codelineno-3-19" href="#__codelineno-3-19"></a><span class="w">        </span><span class="n">name</span>
+</span><span id="__span-3-20"><a id="__codelineno-3-20" name="__codelineno-3-20" href="#__codelineno-3-20"></a><span class="w">        </span><span class="n">uuid</span>
+</span><span id="__span-3-21"><a id="__codelineno-3-21" name="__codelineno-3-21" href="#__codelineno-3-21"></a><span class="w">      </span><span class="p">}</span>
+</span><span id="__span-3-22"><a id="__codelineno-3-22" name="__codelineno-3-22" href="#__codelineno-3-22"></a><span class="w">      </span><span class="n">storageContainers</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-3-23"><a id="__codelineno-3-23" name="__codelineno-3-23" href="#__codelineno-3-23"></a><span class="w">        </span><span class="n">name</span>
+</span><span id="__span-3-24"><a id="__codelineno-3-24" name="__codelineno-3-24" href="#__codelineno-3-24"></a><span class="w">        </span><span class="n">uuid</span>
+</span><span id="__span-3-25"><a id="__codelineno-3-25" name="__codelineno-3-25" href="#__codelineno-3-25"></a><span class="w">        </span><span class="n">freeBytes</span>
+</span><span id="__span-3-26"><a id="__codelineno-3-26" name="__codelineno-3-26" href="#__codelineno-3-26"></a><span class="w">        </span><span class="n">usedBytes</span>
+</span><span id="__span-3-27"><a id="__codelineno-3-27" name="__codelineno-3-27" href="#__codelineno-3-27"></a><span class="w">        </span><span class="n">totalBytes</span>
+</span><span id="__span-3-28"><a id="__codelineno-3-28" name="__codelineno-3-28" href="#__codelineno-3-28"></a><span class="w">      </span><span class="p">}</span>
+</span><span id="__span-3-29"><a id="__codelineno-3-29" name="__codelineno-3-29" href="#__codelineno-3-29"></a><span class="w">      </span><span class="n">effectiveSlaDomain</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-3-30"><a id="__codelineno-3-30" name="__codelineno-3-30" href="#__codelineno-3-30"></a><span class="w">        </span><span class="n">name</span>
+</span><span id="__span-3-31"><a id="__codelineno-3-31" name="__codelineno-3-31" href="#__codelineno-3-31"></a><span class="w">        </span><span class="n">id</span>
+</span><span id="__span-3-32"><a id="__codelineno-3-32" name="__codelineno-3-32" href="#__codelineno-3-32"></a><span class="w">      </span><span class="p">}</span>
+</span><span id="__span-3-33"><a id="__codelineno-3-33" name="__codelineno-3-33" href="#__codelineno-3-33"></a><span class="w">      </span><span class="n">cluster</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-3-34"><a id="__codelineno-3-34" name="__codelineno-3-34" href="#__codelineno-3-34"></a><span class="w">        </span><span class="n">name</span>
+</span><span id="__span-3-35"><a id="__codelineno-3-35" name="__codelineno-3-35" href="#__codelineno-3-35"></a><span class="w">        </span><span class="n">id</span>
+</span><span id="__span-3-36"><a id="__codelineno-3-36" name="__codelineno-3-36" href="#__codelineno-3-36"></a><span class="w">      </span><span class="p">}</span>
+</span><span id="__span-3-37"><a id="__codelineno-3-37" name="__codelineno-3-37" href="#__codelineno-3-37"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-3-38"><a id="__codelineno-3-38" name="__codelineno-3-38" href="#__codelineno-3-38"></a><span class="w">  </span><span class="p">}</span>
+</span><span id="__span-3-39"><a id="__codelineno-3-39" name="__codelineno-3-39" href="#__codelineno-3-39"></a><span class="p">}</span>
 </span></code></pre></div>
 </div>
 <div class="tabbed-block">
-<div class="language-powershell highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="nv">$mutation</span> <span class="p">=</span> <span class="nb">New-RscMutation</span> <span class="n">-GqlQuery</span> <span class="n">registerAgentNutanixVm</span>
-</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="nv">$mutation</span><span class="p">.</span><span class="n">Var</span><span class="p">.</span><span class="n">Input</span> <span class="p">=</span> <span class="nb">New-Object</span> <span class="n">-TypeName</span> <span class="n">RubrikSecurityCloud</span><span class="p">.</span><span class="n">Types</span><span class="p">.</span><span class="n">RegisterAgentNutanixVmInput</span>
-</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="nv">$mutation</span><span class="p">.</span><span class="n">Var</span><span class="p">.</span><span class="n">Input</span><span class="p">.</span><span class="n">Id</span> <span class="p">=</span> <span class="s2">&quot;YOUR_VM_ID&quot;</span>
-</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="nv">$mutation</span><span class="p">.</span><span class="n">Invoke</span><span class="p">()</span>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="nv">$query</span> <span class="p">=</span> <span class="nb">New-RscQuery</span> <span class="n">-GqlQuery</span> <span class="n">nutanixClusters</span>
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="nv">$query</span><span class="p">.</span><span class="n">Var</span><span class="p">.</span><span class="k">filter</span> <span class="p">=</span> <span class="p">@((</span><span class="nb">Get-RscType</span> <span class="n">-Name</span> <span class="k">Filter</span><span class="p">),(</span><span class="nb">Get-RscType</span> <span class="n">-Name</span> <span class="k">Filter</span><span class="p">))</span>
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="nv">$query</span><span class="p">.</span><span class="n">Var</span><span class="p">.</span><span class="k">filter</span><span class="p">[</span><span class="n">0</span><span class="p">].</span><span class="n">field</span> <span class="p">=</span> <span class="no">[RubrikSecurityCloud.Types.HierarchyFilterField]</span><span class="p">::</span><span class="n">IS_RELIC</span>
+</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="nv">$query</span><span class="p">.</span><span class="n">Var</span><span class="p">.</span><span class="k">filter</span><span class="p">[</span><span class="n">0</span><span class="p">].</span><span class="n">texts</span> <span class="p">=</span> <span class="s2">&quot;false&quot;</span>
+</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="nv">$query</span><span class="p">.</span><span class="n">Var</span><span class="p">.</span><span class="k">filter</span><span class="p">[</span><span class="n">1</span><span class="p">].</span><span class="n">field</span> <span class="p">=</span> <span class="no">[RubrikSecurityCloud.Types.HierarchyFilterField]</span><span class="p">::</span><span class="n">IS_REPLICATED</span>
+</span><span id="__span-4-6"><a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a><span class="nv">$query</span><span class="p">.</span><span class="n">Var</span><span class="p">.</span><span class="k">filter</span><span class="p">[</span><span class="n">1</span><span class="p">].</span><span class="n">texts</span> <span class="p">=</span> <span class="s2">&quot;false&quot;</span>
+</span><span id="__span-4-7"><a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a>
+</span><span id="__span-4-8"><a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a><span class="nv">$query</span><span class="p">.</span><span class="n">field</span><span class="p">.</span><span class="n">nodes</span> <span class="p">=</span> <span class="p">@(</span><span class="nb">Get-RscType</span> <span class="n">-Name</span> <span class="n">NutanixCluster</span> <span class="n">-InitialProperties</span> <span class="p">`</span>
+</span><span id="__span-4-9"><a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a>    <span class="n">name</span><span class="p">,`</span>
+</span><span id="__span-4-10"><a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a>    <span class="n">id</span><span class="p">,`</span>
+</span><span id="__span-4-11"><a id="__codelineno-4-11" name="__codelineno-4-11" href="#__codelineno-4-11"></a>    <span class="n">cdmId</span><span class="p">,`</span>
+</span><span id="__span-4-12"><a id="__codelineno-4-12" name="__codelineno-4-12" href="#__codelineno-4-12"></a>    <span class="n">hostName</span><span class="p">,`</span>
+</span><span id="__span-4-13"><a id="__codelineno-4-13" name="__codelineno-4-13" href="#__codelineno-4-13"></a>    <span class="n">naturalId</span><span class="p">,`</span>
+</span><span id="__span-4-14"><a id="__codelineno-4-14" name="__codelineno-4-14" href="#__codelineno-4-14"></a>    <span class="n">nosVersion</span><span class="p">,`</span>
+</span><span id="__span-4-15"><a id="__codelineno-4-15" name="__codelineno-4-15" href="#__codelineno-4-15"></a>    <span class="n">clusterNetworks</span><span class="p">.</span><span class="n">name</span><span class="p">,</span><span class="n">clusterNetworks</span><span class="p">.</span><span class="n">uuid</span><span class="p">,`</span>
+</span><span id="__span-4-16"><a id="__codelineno-4-16" name="__codelineno-4-16" href="#__codelineno-4-16"></a>    <span class="n">storageContainers</span><span class="p">.</span><span class="n">name</span><span class="p">,</span><span class="n">storageContainers</span><span class="p">.</span><span class="n">uuid</span><span class="p">,</span><span class="n">storageContainers</span><span class="p">.</span><span class="n">freeBytes</span><span class="p">,</span><span class="n">storageContainers</span><span class="p">.</span><span class="n">usedBytes</span><span class="p">,</span><span class="n">storageContainers</span><span class="p">.</span><span class="n">totalBytes</span><span class="p">,`</span>
+</span><span id="__span-4-17"><a id="__codelineno-4-17" name="__codelineno-4-17" href="#__codelineno-4-17"></a>    <span class="n">connectionStatus</span><span class="p">.</span><span class="n">message</span><span class="p">,</span><span class="n">connectionStatus</span><span class="p">.</span><span class="n">status</span><span class="p">,`</span>
+</span><span id="__span-4-18"><a id="__codelineno-4-18" name="__codelineno-4-18" href="#__codelineno-4-18"></a>    <span class="n">cluster</span><span class="p">.</span><span class="n">name</span><span class="p">,</span><span class="n">cluster</span><span class="p">.</span><span class="n">id</span>
+</span><span id="__span-4-19"><a id="__codelineno-4-19" name="__codelineno-4-19" href="#__codelineno-4-19"></a><span class="p">)</span>
+</span><span id="__span-4-20"><a id="__codelineno-4-20" name="__codelineno-4-20" href="#__codelineno-4-20"></a><span class="nv">$query</span><span class="p">.</span><span class="n">Invoke</span><span class="p">().</span><span class="n">nodes</span>
 </span></code></pre></div>
 </div>
 <div class="tabbed-block">
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="ch">#!/bin/bash</span>
 </span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>
 </span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="c1"># RSC_TOKEN=&quot;YOUR_RSC_ACCESS_TOKEN&quot;</span>
-</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="c1"># VM_ID=&quot;YOUR_VM_ID&quot;</span>
-</span><span id="__span-5-5"><a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="nv">query</span><span class="o">=</span><span class="s2">&quot;mutation { registerAgentNutanixVm(input: { id: \\\&quot;</span><span class="nv">$VM_ID</span><span class="s2">\\\&quot; }) { success } }&quot;</span>
-</span><span id="__span-5-6"><a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a>
+</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="nv">query</span><span class="o">=</span><span class="s2">&quot;query { nutanixClusters(filter: [ {field: IS_RELIC texts: \\\&quot;false\\\&quot;} {field: IS_REPLICATED texts: \\\&quot;false\\\&quot;} ]) { nodes { name id cdmId hostName naturalId nosVersion connectionStatus { message status } clusterNetworks { name uuid } storageContainers { name uuid freeBytes usedBytes totalBytes } effectiveSlaDomain { name id } cluster { name id } } } }&quot;</span>
+</span><span id="__span-5-5"><a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>
+</span><span id="__span-5-6"><a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a><span class="c1"># Execute the GraphQL query with curl</span>
 </span><span id="__span-5-7"><a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a>curl<span class="w"> </span>-X<span class="w"> </span>POST<span class="w"> </span><span class="se">\</span>
 </span><span id="__span-5-8"><a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a><span class="w">  </span>-H<span class="w"> </span><span class="s2">&quot;Content-Type: application/json&quot;</span><span class="w"> </span><span class="se">\</span>
 </span><span id="__span-5-9"><a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a><span class="w">  </span>-H<span class="w"> </span><span class="s2">&quot;Authorization: Bearer </span><span class="nv">$RSC_TOKEN</span><span class="s2">&quot;</span><span class="w"> </span><span class="se">\</span>
@@ -2964,38 +3311,74 @@
 </div>
 </div>
 </div>
-<h3 id="on-demand-backup">On-Demand Backup</h3>
+<h3 id="prism-central-servers">Prism Central Servers</h3>
+<p>List the registered Prism Central servers and the clusters each one manages.</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="3:3"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><input id="__tabbed_3_2" name="__tabbed_3" type="radio" /><input id="__tabbed_3_3" name="__tabbed_3" type="radio" /><div class="tabbed-labels"><label for="__tabbed_3_1">GraphQL</label><label for="__tabbed_3_2">PowerShell SDK</label><label for="__tabbed_3_3">Shell</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
-<div class="language-graphql highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="k">mutation</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="w">  </span><span class="n">createOnDemandNutanixBackup</span><span class="p">(</span><span class="n">input</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="w">    </span><span class="n">id</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;40bac7c1-87ad-4ac0-b4a6-34ac592d8e77&quot;</span>
-</span><span id="__span-6-4"><a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="w">    </span><span class="n">config</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-6-5"><a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a><span class="w">      </span><span class="n">slaId</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;7d40e858-b8ec-4096-8112-cab8eff1a4e2&quot;</span>
-</span><span id="__span-6-6"><a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a><span class="w">    </span><span class="p">}</span>
-</span><span id="__span-6-7"><a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a><span class="w">  </span><span class="p">})</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-6-8"><a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a><span class="w">    </span><span class="n">id</span>
-</span><span id="__span-6-9"><a id="__codelineno-6-9" name="__codelineno-6-9" href="#__codelineno-6-9"></a><span class="w">  </span><span class="p">}</span>
-</span><span id="__span-6-10"><a id="__codelineno-6-10" name="__codelineno-6-10" href="#__codelineno-6-10"></a><span class="p">}</span>
+<div class="language-graphql highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="k">query</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="w">  </span><span class="n">nutanixPrismCentrals</span><span class="p">(</span><span class="n">filter</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="w">    </span><span class="c">#{field: NAME_EXACT_MATCH texts: &quot;example&quot;}</span>
+</span><span id="__span-6-4"><a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="w">    </span><span class="p">{</span><span class="n">field</span><span class="p">:</span><span class="w"> </span><span class="no">IS_RELIC</span><span class="w"> </span><span class="n">texts</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;false&quot;</span><span class="p">}</span>
+</span><span id="__span-6-5"><a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a><span class="w">    </span><span class="p">{</span><span class="n">field</span><span class="p">:</span><span class="w"> </span><span class="no">IS_REPLICATED</span><span class="w"> </span><span class="n">texts</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;false&quot;</span><span class="p">}</span>
+</span><span id="__span-6-6"><a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a><span class="w">  </span><span class="p">])</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-6-7"><a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a><span class="w">    </span><span class="n">nodes</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-6-8"><a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a><span class="w">      </span><span class="n">name</span>
+</span><span id="__span-6-9"><a id="__codelineno-6-9" name="__codelineno-6-9" href="#__codelineno-6-9"></a><span class="w">      </span><span class="n">id</span>
+</span><span id="__span-6-10"><a id="__codelineno-6-10" name="__codelineno-6-10" href="#__codelineno-6-10"></a><span class="w">      </span><span class="n">cdmId</span>
+</span><span id="__span-6-11"><a id="__codelineno-6-11" name="__codelineno-6-11" href="#__codelineno-6-11"></a><span class="w">      </span><span class="n">hostName</span>
+</span><span id="__span-6-12"><a id="__codelineno-6-12" name="__codelineno-6-12" href="#__codelineno-6-12"></a><span class="w">      </span><span class="n">naturalId</span>
+</span><span id="__span-6-13"><a id="__codelineno-6-13" name="__codelineno-6-13" href="#__codelineno-6-13"></a><span class="w">      </span><span class="n">nosVersion</span>
+</span><span id="__span-6-14"><a id="__codelineno-6-14" name="__codelineno-6-14" href="#__codelineno-6-14"></a><span class="w">      </span><span class="n">nutanixClusters</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-6-15"><a id="__codelineno-6-15" name="__codelineno-6-15" href="#__codelineno-6-15"></a><span class="w">        </span><span class="n">nodes</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-6-16"><a id="__codelineno-6-16" name="__codelineno-6-16" href="#__codelineno-6-16"></a><span class="w">          </span><span class="n">name</span>
+</span><span id="__span-6-17"><a id="__codelineno-6-17" name="__codelineno-6-17" href="#__codelineno-6-17"></a><span class="w">          </span><span class="n">id</span>
+</span><span id="__span-6-18"><a id="__codelineno-6-18" name="__codelineno-6-18" href="#__codelineno-6-18"></a><span class="w">        </span><span class="p">}</span>
+</span><span id="__span-6-19"><a id="__codelineno-6-19" name="__codelineno-6-19" href="#__codelineno-6-19"></a><span class="w">      </span><span class="p">}</span>
+</span><span id="__span-6-20"><a id="__codelineno-6-20" name="__codelineno-6-20" href="#__codelineno-6-20"></a><span class="w">      </span><span class="n">isDrEnabled</span>
+</span><span id="__span-6-21"><a id="__codelineno-6-21" name="__codelineno-6-21" href="#__codelineno-6-21"></a><span class="w">      </span><span class="n">connectionStatus</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-6-22"><a id="__codelineno-6-22" name="__codelineno-6-22" href="#__codelineno-6-22"></a><span class="w">        </span><span class="n">message</span>
+</span><span id="__span-6-23"><a id="__codelineno-6-23" name="__codelineno-6-23" href="#__codelineno-6-23"></a><span class="w">        </span><span class="n">status</span>
+</span><span id="__span-6-24"><a id="__codelineno-6-24" name="__codelineno-6-24" href="#__codelineno-6-24"></a><span class="w">      </span><span class="p">}</span>
+</span><span id="__span-6-25"><a id="__codelineno-6-25" name="__codelineno-6-25" href="#__codelineno-6-25"></a><span class="w">      </span><span class="n">effectiveSlaDomain</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-6-26"><a id="__codelineno-6-26" name="__codelineno-6-26" href="#__codelineno-6-26"></a><span class="w">        </span><span class="n">name</span>
+</span><span id="__span-6-27"><a id="__codelineno-6-27" name="__codelineno-6-27" href="#__codelineno-6-27"></a><span class="w">        </span><span class="n">id</span>
+</span><span id="__span-6-28"><a id="__codelineno-6-28" name="__codelineno-6-28" href="#__codelineno-6-28"></a><span class="w">      </span><span class="p">}</span>
+</span><span id="__span-6-29"><a id="__codelineno-6-29" name="__codelineno-6-29" href="#__codelineno-6-29"></a><span class="w">      </span><span class="n">cluster</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-6-30"><a id="__codelineno-6-30" name="__codelineno-6-30" href="#__codelineno-6-30"></a><span class="w">        </span><span class="n">name</span>
+</span><span id="__span-6-31"><a id="__codelineno-6-31" name="__codelineno-6-31" href="#__codelineno-6-31"></a><span class="w">        </span><span class="n">id</span>
+</span><span id="__span-6-32"><a id="__codelineno-6-32" name="__codelineno-6-32" href="#__codelineno-6-32"></a><span class="w">      </span><span class="p">}</span>
+</span><span id="__span-6-33"><a id="__codelineno-6-33" name="__codelineno-6-33" href="#__codelineno-6-33"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-6-34"><a id="__codelineno-6-34" name="__codelineno-6-34" href="#__codelineno-6-34"></a><span class="w">  </span><span class="p">}</span>
+</span><span id="__span-6-35"><a id="__codelineno-6-35" name="__codelineno-6-35" href="#__codelineno-6-35"></a><span class="p">}</span>
 </span></code></pre></div>
 </div>
 <div class="tabbed-block">
-<div class="language-powershell highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="nv">$vm</span> <span class="p">=</span> <span class="nb">Get-RscNutanixVm</span> <span class="n">-Name</span> <span class="s2">&quot;example&quot;</span>
-</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>
-</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="nv">$query</span> <span class="p">=</span> <span class="nb">New-Rscmutation</span> <span class="n">-GqlMutation</span> <span class="n">createOnDemandNutanixBackup</span>
-</span><span id="__span-7-4"><a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a><span class="nv">$query</span><span class="p">.</span><span class="n">var</span><span class="p">.</span><span class="n">input</span> <span class="p">=</span> <span class="nb">Get-RscType</span> <span class="n">-Name</span> <span class="n">CreateOnDemandNutanixBackupInput</span> <span class="n">-InitialProperties</span> <span class="n">config</span>
-</span><span id="__span-7-5"><a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a><span class="nv">$query</span><span class="p">.</span><span class="n">var</span><span class="p">.</span><span class="n">input</span><span class="p">.</span><span class="n">id</span> <span class="p">=</span> <span class="nv">$vm</span><span class="p">.</span><span class="n">id</span>
-</span><span id="__span-7-6"><a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a><span class="nv">$query</span><span class="p">.</span><span class="n">var</span><span class="p">.</span><span class="n">input</span><span class="p">.</span><span class="n">config</span><span class="p">.</span><span class="n">SlaId</span> <span class="p">=</span> <span class="nv">$vm</span><span class="p">.</span><span class="n">EffectiveSlaDomain</span><span class="p">.</span><span class="n">Id</span>
-</span><span id="__span-7-7"><a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a><span class="nv">$query</span><span class="p">.</span><span class="n">Field</span> <span class="p">=</span> <span class="nb">Get-RscType</span> <span class="n">-Name</span> <span class="n">AsyncRequestStatus</span> <span class="n">-InitialProperties</span> <span class="n">id</span>
-</span><span id="__span-7-8"><a id="__codelineno-7-8" name="__codelineno-7-8" href="#__codelineno-7-8"></a><span class="nv">$query</span><span class="p">.</span><span class="n">Invoke</span><span class="p">()</span>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="nv">$query</span> <span class="p">=</span> <span class="nb">New-RscQuery</span> <span class="n">-GqlQuery</span> <span class="n">nutanixPrismCentrals</span>
+</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="nv">$query</span><span class="p">.</span><span class="n">Var</span><span class="p">.</span><span class="k">filter</span> <span class="p">=</span> <span class="p">@((</span><span class="nb">Get-RscType</span> <span class="n">-Name</span> <span class="k">Filter</span><span class="p">),(</span><span class="nb">Get-RscType</span> <span class="n">-Name</span> <span class="k">Filter</span><span class="p">))</span>
+</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="nv">$query</span><span class="p">.</span><span class="n">Var</span><span class="p">.</span><span class="k">filter</span><span class="p">[</span><span class="n">0</span><span class="p">].</span><span class="n">field</span> <span class="p">=</span> <span class="no">[RubrikSecurityCloud.Types.HierarchyFilterField]</span><span class="p">::</span><span class="n">IS_RELIC</span>
+</span><span id="__span-7-4"><a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a><span class="nv">$query</span><span class="p">.</span><span class="n">Var</span><span class="p">.</span><span class="k">filter</span><span class="p">[</span><span class="n">0</span><span class="p">].</span><span class="n">texts</span> <span class="p">=</span> <span class="s2">&quot;false&quot;</span>
+</span><span id="__span-7-5"><a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a><span class="nv">$query</span><span class="p">.</span><span class="n">Var</span><span class="p">.</span><span class="k">filter</span><span class="p">[</span><span class="n">1</span><span class="p">].</span><span class="n">field</span> <span class="p">=</span> <span class="no">[RubrikSecurityCloud.Types.HierarchyFilterField]</span><span class="p">::</span><span class="n">IS_REPLICATED</span>
+</span><span id="__span-7-6"><a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a><span class="nv">$query</span><span class="p">.</span><span class="n">Var</span><span class="p">.</span><span class="k">filter</span><span class="p">[</span><span class="n">1</span><span class="p">].</span><span class="n">texts</span> <span class="p">=</span> <span class="s2">&quot;false&quot;</span>
+</span><span id="__span-7-7"><a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a>
+</span><span id="__span-7-8"><a id="__codelineno-7-8" name="__codelineno-7-8" href="#__codelineno-7-8"></a><span class="nv">$query</span><span class="p">.</span><span class="n">field</span><span class="p">.</span><span class="n">nodes</span> <span class="p">=</span> <span class="p">@(</span><span class="nb">Get-RscType</span> <span class="n">-Name</span> <span class="n">NutanixPrismCentral</span> <span class="n">-InitialProperties</span> <span class="p">`</span>
+</span><span id="__span-7-9"><a id="__codelineno-7-9" name="__codelineno-7-9" href="#__codelineno-7-9"></a>    <span class="n">name</span><span class="p">,`</span>
+</span><span id="__span-7-10"><a id="__codelineno-7-10" name="__codelineno-7-10" href="#__codelineno-7-10"></a>    <span class="n">id</span><span class="p">,`</span>
+</span><span id="__span-7-11"><a id="__codelineno-7-11" name="__codelineno-7-11" href="#__codelineno-7-11"></a>    <span class="n">cdmId</span><span class="p">,`</span>
+</span><span id="__span-7-12"><a id="__codelineno-7-12" name="__codelineno-7-12" href="#__codelineno-7-12"></a>    <span class="n">hostName</span><span class="p">,`</span>
+</span><span id="__span-7-13"><a id="__codelineno-7-13" name="__codelineno-7-13" href="#__codelineno-7-13"></a>    <span class="n">naturalId</span><span class="p">,`</span>
+</span><span id="__span-7-14"><a id="__codelineno-7-14" name="__codelineno-7-14" href="#__codelineno-7-14"></a>    <span class="n">isDrEnabled</span><span class="p">,`</span>
+</span><span id="__span-7-15"><a id="__codelineno-7-15" name="__codelineno-7-15" href="#__codelineno-7-15"></a>    <span class="n">connectionStatus</span><span class="p">.</span><span class="n">message</span><span class="p">,</span><span class="n">connectionStatus</span><span class="p">.</span><span class="n">status</span><span class="p">,`</span>
+</span><span id="__span-7-16"><a id="__codelineno-7-16" name="__codelineno-7-16" href="#__codelineno-7-16"></a>    <span class="n">cluster</span><span class="p">.</span><span class="n">name</span><span class="p">,</span><span class="n">cluster</span><span class="p">.</span><span class="n">id</span>
+</span><span id="__span-7-17"><a id="__codelineno-7-17" name="__codelineno-7-17" href="#__codelineno-7-17"></a><span class="p">)</span>
+</span><span id="__span-7-18"><a id="__codelineno-7-18" name="__codelineno-7-18" href="#__codelineno-7-18"></a><span class="nv">$query</span><span class="p">.</span><span class="n">Invoke</span><span class="p">().</span><span class="n">nodes</span>
 </span></code></pre></div>
 </div>
 <div class="tabbed-block">
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="ch">#!/bin/bash</span>
 </span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>
 </span><span id="__span-8-3"><a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a><span class="c1"># RSC_TOKEN=&quot;YOUR_RSC_ACCESS_TOKEN&quot;</span>
-</span><span id="__span-8-4"><a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a><span class="nv">query</span><span class="o">=</span><span class="s2">&quot;mutation { createOnDemandNutanixBackup(input: { id: \\\&quot;40bac7c1-87ad-4ac0-b4a6-34ac592d8e77\\\&quot; config: { slaId: \\\&quot;7d40e858-b8ec-4096-8112-cab8eff1a4e2\\\&quot; } }) { id } }&quot;</span>
+</span><span id="__span-8-4"><a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a><span class="nv">query</span><span class="o">=</span><span class="s2">&quot;query { nutanixPrismCentrals(filter: [ {field: IS_RELIC texts: \\\&quot;false\\\&quot;} {field: IS_REPLICATED texts: \\\&quot;false\\\&quot;} ]) { nodes { name id cdmId hostName naturalId nosVersion nutanixClusters { nodes { name id } } isDrEnabled connectionStatus { message status } effectiveSlaDomain { name id } cluster { name id } } } }&quot;</span>
 </span><span id="__span-8-5"><a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a>
 </span><span id="__span-8-6"><a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a><span class="c1"># Execute the GraphQL query with curl</span>
 </span><span id="__span-8-7"><a id="__codelineno-8-7" name="__codelineno-8-7" href="#__codelineno-8-7"></a>curl<span class="w"> </span>-X<span class="w"> </span>POST<span class="w"> </span><span class="se">\</span>
@@ -3007,42 +3390,39 @@
 </div>
 </div>
 </div>
-<h3 id="job-status">Job Status</h3>
+<h2 id="configure-protection">Configure Protection</h2>
+<h3 id="assign-an-sla-domain">Assign an SLA Domain</h3>
+<p>Use the <code>assignSla</code> mutation to assign an SLA Domain to Nutanix VMs, clusters, or categories. SLA Domains assigned at a higher level are inherited by the VMs below them. See <a href="../../SLA-Domains/#assigning-an-sla-to-a-workload">SLA Domains</a> for the full walkthrough.</p>
+<h3 id="register-the-rubrik-backup-service-rbs">Register the Rubrik Backup Service (RBS)</h3>
+<p>Standard Nutanix VM backups are <strong>crash-consistent</strong> snapshots taken at the hypervisor — no agent is required. Install the Rubrik Backup Service (RBS) in-guest, then register it, only when you need:</p>
+<ul>
+<li><strong>Application-consistent snapshots</strong> — pre/post backup scripts and VSS quiescing for databases and other transactional workloads running inside the VM.</li>
+<li><strong>File-level restore back into the running VM</strong> — see <a href="#recovery">Recovery</a>.</li>
+</ul>
+<p>Register RBS with <code>registerAgentNutanixVm</code> after the VM has been discovered, using the VM's <code>id</code> from the discovery query above. This is <strong>not</strong> needed for ordinary crash-consistent VM protection.</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="4:3"><input checked="checked" id="__tabbed_4_1" name="__tabbed_4" type="radio" /><input id="__tabbed_4_2" name="__tabbed_4" type="radio" /><input id="__tabbed_4_3" name="__tabbed_4" type="radio" /><div class="tabbed-labels"><label for="__tabbed_4_1">GraphQL</label><label for="__tabbed_4_2">PowerShell SDK</label><label for="__tabbed_4_3">Shell</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
-<div class="language-graphql highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="k">query</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="w">  </span><span class="n">nutanixVmAsyncRequestStatus</span><span class="p">(</span><span class="n">input</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-9-3"><a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a><span class="w">    </span><span class="n">id</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;CREATE_NUTANIX_SNAPSHOT_6450b2bb-3114-45ab-a45e-049c7f27b58e-vm-f5bc5502-b9a6-4759-bf02-05dc5a48f9f7_b83291a3-fa87-4aab-863a-60b415215b19:::0&quot;</span>
-</span><span id="__span-9-4"><a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a><span class="w">    </span><span class="n">clusterUuid</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;85e98e61-4c1f-496a-b846-5eb871966025&quot;</span>
-</span><span id="__span-9-5"><a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a><span class="w">  </span><span class="p">})</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-9-6"><a id="__codelineno-9-6" name="__codelineno-9-6" href="#__codelineno-9-6"></a><span class="w">    </span><span class="n">progress</span>
-</span><span id="__span-9-7"><a id="__codelineno-9-7" name="__codelineno-9-7" href="#__codelineno-9-7"></a><span class="w">    </span><span class="n">status</span>
-</span><span id="__span-9-8"><a id="__codelineno-9-8" name="__codelineno-9-8" href="#__codelineno-9-8"></a><span class="w">    </span><span class="n">result</span>
-</span><span id="__span-9-9"><a id="__codelineno-9-9" name="__codelineno-9-9" href="#__codelineno-9-9"></a><span class="w">    </span><span class="n">error</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-9-10"><a id="__codelineno-9-10" name="__codelineno-9-10" href="#__codelineno-9-10"></a><span class="w">      </span><span class="n">message</span>
-</span><span id="__span-9-11"><a id="__codelineno-9-11" name="__codelineno-9-11" href="#__codelineno-9-11"></a><span class="w">    </span><span class="p">}</span>
-</span><span id="__span-9-12"><a id="__codelineno-9-12" name="__codelineno-9-12" href="#__codelineno-9-12"></a><span class="w">  </span><span class="p">}</span>
-</span><span id="__span-9-13"><a id="__codelineno-9-13" name="__codelineno-9-13" href="#__codelineno-9-13"></a><span class="p">}</span>
+<div class="language-graphql highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="k">mutation</span><span class="w"> </span><span class="nf">RegisterRbs</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="w">  </span><span class="n">registerAgentNutanixVm</span><span class="p">(</span><span class="n">input</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-9-3"><a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a><span class="w">    </span><span class="n">id</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;YOUR_VM_ID&quot;</span>
+</span><span id="__span-9-4"><a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a><span class="w">  </span><span class="p">})</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-9-5"><a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a><span class="w">    </span><span class="n">success</span>
+</span><span id="__span-9-6"><a id="__codelineno-9-6" name="__codelineno-9-6" href="#__codelineno-9-6"></a><span class="w">  </span><span class="p">}</span>
+</span><span id="__span-9-7"><a id="__codelineno-9-7" name="__codelineno-9-7" href="#__codelineno-9-7"></a><span class="p">}</span>
 </span></code></pre></div>
 </div>
 <div class="tabbed-block">
-<div class="language-powershell highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="nv">$requestId</span> <span class="p">=</span> <span class="s2">&quot;CREATE_NUTANIX_SNAPSHOT_6450b2bb-3114-45ab-a45e-049c7f27b58e-vm-f5bc5502-b9a6-4759-bf02-05dc5a48f9f7_b83291a3-fa87-4aab-863a-60b415215b19:::0&quot;</span>
-</span><span id="__span-10-2"><a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a><span class="nv">$vm</span> <span class="p">=</span> <span class="nb">Get-RscNutanixVm</span> <span class="n">-name</span> <span class="s2">&quot;example&quot;</span>
-</span><span id="__span-10-3"><a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a>
-</span><span id="__span-10-4"><a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a><span class="nv">$query</span> <span class="p">=</span> <span class="nb">New-RscQuery</span> <span class="n">-GqlQuery</span> <span class="n">nutanixVmAsyncRequestStatus</span>
-</span><span id="__span-10-5"><a id="__codelineno-10-5" name="__codelineno-10-5" href="#__codelineno-10-5"></a><span class="nv">$query</span><span class="p">.</span><span class="n">var</span><span class="p">.</span><span class="n">input</span><span class="p">.</span><span class="n">id</span> <span class="p">=</span> <span class="nv">$requestId</span>
-</span><span id="__span-10-6"><a id="__codelineno-10-6" name="__codelineno-10-6" href="#__codelineno-10-6"></a><span class="nv">$query</span><span class="p">.</span><span class="n">var</span><span class="p">.</span><span class="n">input</span><span class="p">.</span><span class="n">clusterUuid</span> <span class="p">=</span> <span class="nv">$vm</span><span class="p">.</span><span class="n">cluster</span><span class="p">.</span><span class="n">Id</span>
-</span><span id="__span-10-7"><a id="__codelineno-10-7" name="__codelineno-10-7" href="#__codelineno-10-7"></a><span class="nv">$query</span><span class="p">.</span><span class="n">invoke</span><span class="p">()</span>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="nb">Get-RscNutanixVm</span> <span class="n">-Name</span> <span class="s2">&quot;my-vm&quot;</span> <span class="p">|</span> <span class="nb">Register-RscRubrikBackupService</span>
 </span></code></pre></div>
 </div>
 <div class="tabbed-block">
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="ch">#!/bin/bash</span>
 </span><span id="__span-11-2"><a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a>
 </span><span id="__span-11-3"><a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a><span class="c1"># RSC_TOKEN=&quot;YOUR_RSC_ACCESS_TOKEN&quot;</span>
-</span><span id="__span-11-4"><a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a><span class="nv">query</span><span class="o">=</span><span class="s2">&quot;query { nutanixVmAsyncRequestStatus(input: { id: \\\&quot;CREATE_NUTANIX_SNAPSHOT_6450b2bb-3114-45ab-a45e-049c7f27b58e-vm-f5bc5502-b9a6-4759-bf02-05dc5a48f9f7_b83291a3-fa87-4aab-863a-60b415215b19:::0\\\&quot; clusterUuid: \\\&quot;85e98e61-4c1f-496a-b846-5eb871966025\\\&quot; }) { progress status result error { message } } }&quot;</span>
-</span><span id="__span-11-5"><a id="__codelineno-11-5" name="__codelineno-11-5" href="#__codelineno-11-5"></a>
-</span><span id="__span-11-6"><a id="__codelineno-11-6" name="__codelineno-11-6" href="#__codelineno-11-6"></a><span class="c1"># Execute the GraphQL query with curl</span>
+</span><span id="__span-11-4"><a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a><span class="c1"># VM_ID=&quot;YOUR_VM_ID&quot;</span>
+</span><span id="__span-11-5"><a id="__codelineno-11-5" name="__codelineno-11-5" href="#__codelineno-11-5"></a><span class="nv">query</span><span class="o">=</span><span class="s2">&quot;mutation { registerAgentNutanixVm(input: { id: \\\&quot;</span><span class="nv">$VM_ID</span><span class="s2">\\\&quot; }) { success } }&quot;</span>
+</span><span id="__span-11-6"><a id="__codelineno-11-6" name="__codelineno-11-6" href="#__codelineno-11-6"></a>
 </span><span id="__span-11-7"><a id="__codelineno-11-7" name="__codelineno-11-7" href="#__codelineno-11-7"></a>curl<span class="w"> </span>-X<span class="w"> </span>POST<span class="w"> </span><span class="se">\</span>
 </span><span id="__span-11-8"><a id="__codelineno-11-8" name="__codelineno-11-8" href="#__codelineno-11-8"></a><span class="w">  </span>-H<span class="w"> </span><span class="s2">&quot;Content-Type: application/json&quot;</span><span class="w"> </span><span class="se">\</span>
 </span><span id="__span-11-9"><a id="__codelineno-11-9" name="__codelineno-11-9" href="#__codelineno-11-9"></a><span class="w">  </span>-H<span class="w"> </span><span class="s2">&quot;Authorization: Bearer </span><span class="nv">$RSC_TOKEN</span><span class="s2">&quot;</span><span class="w"> </span><span class="se">\</span>
@@ -3052,80 +3432,40 @@
 </div>
 </div>
 </div>
-<h2 id="nutanix-clusters">Nutanix Clusters</h2>
-<h3 id="retrieval_1">Retrieval</h3>
+<h2 id="on-demand-backup">On-Demand Backup</h2>
+<p>Trigger an immediate backup outside the scheduled SLA policy with <code>createOnDemandNutanixBackup</code>. The <code>id</code> is the <strong>VM</strong> FID.</p>
+<p>The <code>config.slaId</code> field is optional. If you omit it, Rubrik uses the VM's currently assigned SLA Domain to determine retention. If the VM has no SLA assigned and you omit <code>slaId</code>, the snapshot is <strong>retained indefinitely</strong> with no automatic expiry — always provide <code>slaId</code> unless that is what you intend.</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="5:3"><input checked="checked" id="__tabbed_5_1" name="__tabbed_5" type="radio" /><input id="__tabbed_5_2" name="__tabbed_5" type="radio" /><input id="__tabbed_5_3" name="__tabbed_5" type="radio" /><div class="tabbed-labels"><label for="__tabbed_5_1">GraphQL</label><label for="__tabbed_5_2">PowerShell SDK</label><label for="__tabbed_5_3">Shell</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
-<div class="language-graphql highlight"><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="k">query</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-12-2"><a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a><span class="w">  </span><span class="n">nutanixClusters</span><span class="p">(</span><span class="n">filter</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
-</span><span id="__span-12-3"><a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a><span class="w">    </span><span class="c">#{field: NAME_EXACT_MATCH texts: &quot;example&quot;}</span>
-</span><span id="__span-12-4"><a id="__codelineno-12-4" name="__codelineno-12-4" href="#__codelineno-12-4"></a><span class="w">    </span><span class="p">{</span><span class="n">field</span><span class="p">:</span><span class="w"> </span><span class="no">IS_RELIC</span><span class="w"> </span><span class="n">texts</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;false&quot;</span><span class="p">}</span>
-</span><span id="__span-12-5"><a id="__codelineno-12-5" name="__codelineno-12-5" href="#__codelineno-12-5"></a><span class="w">    </span><span class="p">{</span><span class="n">field</span><span class="p">:</span><span class="w"> </span><span class="no">IS_REPLICATED</span><span class="w"> </span><span class="n">texts</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;false&quot;</span><span class="p">}</span>
-</span><span id="__span-12-6"><a id="__codelineno-12-6" name="__codelineno-12-6" href="#__codelineno-12-6"></a><span class="w">  </span><span class="p">])</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-12-7"><a id="__codelineno-12-7" name="__codelineno-12-7" href="#__codelineno-12-7"></a><span class="w">    </span><span class="n">nodes</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-12-8"><a id="__codelineno-12-8" name="__codelineno-12-8" href="#__codelineno-12-8"></a><span class="w">      </span><span class="n">name</span>
-</span><span id="__span-12-9"><a id="__codelineno-12-9" name="__codelineno-12-9" href="#__codelineno-12-9"></a><span class="w">      </span><span class="n">id</span>
-</span><span id="__span-12-10"><a id="__codelineno-12-10" name="__codelineno-12-10" href="#__codelineno-12-10"></a><span class="w">      </span><span class="n">cdmId</span>
-</span><span id="__span-12-11"><a id="__codelineno-12-11" name="__codelineno-12-11" href="#__codelineno-12-11"></a><span class="w">      </span><span class="n">hostName</span>
-</span><span id="__span-12-12"><a id="__codelineno-12-12" name="__codelineno-12-12" href="#__codelineno-12-12"></a><span class="w">      </span><span class="n">naturalId</span>
-</span><span id="__span-12-13"><a id="__codelineno-12-13" name="__codelineno-12-13" href="#__codelineno-12-13"></a><span class="w">      </span><span class="n">nosVersion</span>
-</span><span id="__span-12-14"><a id="__codelineno-12-14" name="__codelineno-12-14" href="#__codelineno-12-14"></a><span class="w">      </span><span class="n">connectionStatus</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-12-15"><a id="__codelineno-12-15" name="__codelineno-12-15" href="#__codelineno-12-15"></a><span class="w">        </span><span class="n">message</span>
-</span><span id="__span-12-16"><a id="__codelineno-12-16" name="__codelineno-12-16" href="#__codelineno-12-16"></a><span class="w">        </span><span class="n">status</span>
-</span><span id="__span-12-17"><a id="__codelineno-12-17" name="__codelineno-12-17" href="#__codelineno-12-17"></a><span class="w">      </span><span class="p">}</span>
-</span><span id="__span-12-18"><a id="__codelineno-12-18" name="__codelineno-12-18" href="#__codelineno-12-18"></a><span class="w">      </span><span class="n">clusterNetworks</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-12-19"><a id="__codelineno-12-19" name="__codelineno-12-19" href="#__codelineno-12-19"></a><span class="w">        </span><span class="n">name</span>
-</span><span id="__span-12-20"><a id="__codelineno-12-20" name="__codelineno-12-20" href="#__codelineno-12-20"></a><span class="w">        </span><span class="n">uuid</span>
-</span><span id="__span-12-21"><a id="__codelineno-12-21" name="__codelineno-12-21" href="#__codelineno-12-21"></a><span class="w">      </span><span class="p">}</span>
-</span><span id="__span-12-22"><a id="__codelineno-12-22" name="__codelineno-12-22" href="#__codelineno-12-22"></a><span class="w">      </span><span class="n">storageContainers</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-12-23"><a id="__codelineno-12-23" name="__codelineno-12-23" href="#__codelineno-12-23"></a><span class="w">        </span><span class="n">name</span>
-</span><span id="__span-12-24"><a id="__codelineno-12-24" name="__codelineno-12-24" href="#__codelineno-12-24"></a><span class="w">        </span><span class="n">uuid</span>
-</span><span id="__span-12-25"><a id="__codelineno-12-25" name="__codelineno-12-25" href="#__codelineno-12-25"></a><span class="w">        </span><span class="n">freeBytes</span>
-</span><span id="__span-12-26"><a id="__codelineno-12-26" name="__codelineno-12-26" href="#__codelineno-12-26"></a><span class="w">        </span><span class="n">usedBytes</span>
-</span><span id="__span-12-27"><a id="__codelineno-12-27" name="__codelineno-12-27" href="#__codelineno-12-27"></a><span class="w">        </span><span class="n">totalBytes</span>
-</span><span id="__span-12-28"><a id="__codelineno-12-28" name="__codelineno-12-28" href="#__codelineno-12-28"></a><span class="w">      </span><span class="p">}</span>
-</span><span id="__span-12-29"><a id="__codelineno-12-29" name="__codelineno-12-29" href="#__codelineno-12-29"></a><span class="w">      </span><span class="n">effectiveSlaDomain</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-12-30"><a id="__codelineno-12-30" name="__codelineno-12-30" href="#__codelineno-12-30"></a><span class="w">        </span><span class="n">name</span>
-</span><span id="__span-12-31"><a id="__codelineno-12-31" name="__codelineno-12-31" href="#__codelineno-12-31"></a><span class="w">        </span><span class="n">id</span>
-</span><span id="__span-12-32"><a id="__codelineno-12-32" name="__codelineno-12-32" href="#__codelineno-12-32"></a><span class="w">      </span><span class="p">}</span>
-</span><span id="__span-12-33"><a id="__codelineno-12-33" name="__codelineno-12-33" href="#__codelineno-12-33"></a><span class="w">      </span><span class="n">cluster</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-12-34"><a id="__codelineno-12-34" name="__codelineno-12-34" href="#__codelineno-12-34"></a><span class="w">        </span><span class="n">name</span>
-</span><span id="__span-12-35"><a id="__codelineno-12-35" name="__codelineno-12-35" href="#__codelineno-12-35"></a><span class="w">        </span><span class="n">id</span>
-</span><span id="__span-12-36"><a id="__codelineno-12-36" name="__codelineno-12-36" href="#__codelineno-12-36"></a><span class="w">      </span><span class="p">}</span>
-</span><span id="__span-12-37"><a id="__codelineno-12-37" name="__codelineno-12-37" href="#__codelineno-12-37"></a><span class="w">    </span><span class="p">}</span>
-</span><span id="__span-12-38"><a id="__codelineno-12-38" name="__codelineno-12-38" href="#__codelineno-12-38"></a><span class="w">  </span><span class="p">}</span>
-</span><span id="__span-12-39"><a id="__codelineno-12-39" name="__codelineno-12-39" href="#__codelineno-12-39"></a><span class="p">}</span>
+<div class="language-graphql highlight"><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="k">mutation</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-12-2"><a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a><span class="w">  </span><span class="n">createOnDemandNutanixBackup</span><span class="p">(</span><span class="n">input</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-12-3"><a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a><span class="w">    </span><span class="n">id</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;40bac7c1-87ad-4ac0-b4a6-34ac592d8e77&quot;</span>
+</span><span id="__span-12-4"><a id="__codelineno-12-4" name="__codelineno-12-4" href="#__codelineno-12-4"></a><span class="w">    </span><span class="n">config</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-12-5"><a id="__codelineno-12-5" name="__codelineno-12-5" href="#__codelineno-12-5"></a><span class="w">      </span><span class="n">slaId</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;7d40e858-b8ec-4096-8112-cab8eff1a4e2&quot;</span>
+</span><span id="__span-12-6"><a id="__codelineno-12-6" name="__codelineno-12-6" href="#__codelineno-12-6"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-12-7"><a id="__codelineno-12-7" name="__codelineno-12-7" href="#__codelineno-12-7"></a><span class="w">  </span><span class="p">})</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-12-8"><a id="__codelineno-12-8" name="__codelineno-12-8" href="#__codelineno-12-8"></a><span class="w">    </span><span class="n">id</span>
+</span><span id="__span-12-9"><a id="__codelineno-12-9" name="__codelineno-12-9" href="#__codelineno-12-9"></a><span class="w">  </span><span class="p">}</span>
+</span><span id="__span-12-10"><a id="__codelineno-12-10" name="__codelineno-12-10" href="#__codelineno-12-10"></a><span class="p">}</span>
 </span></code></pre></div>
 </div>
 <div class="tabbed-block">
-<div class="language-powershell highlight"><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="nv">$query</span> <span class="p">=</span> <span class="nb">New-RscQuery</span> <span class="n">-GqlQuery</span> <span class="n">nutanixClusters</span>
-</span><span id="__span-13-2"><a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a><span class="nv">$query</span><span class="p">.</span><span class="n">Var</span><span class="p">.</span><span class="k">filter</span> <span class="p">=</span> <span class="p">@((</span><span class="nb">Get-RscType</span> <span class="n">-Name</span> <span class="k">Filter</span><span class="p">),(</span><span class="nb">Get-RscType</span> <span class="n">-Name</span> <span class="k">Filter</span><span class="p">))</span>
-</span><span id="__span-13-3"><a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a><span class="nv">$query</span><span class="p">.</span><span class="n">Var</span><span class="p">.</span><span class="k">filter</span><span class="p">[</span><span class="n">0</span><span class="p">].</span><span class="n">field</span> <span class="p">=</span> <span class="no">[RubrikSecurityCloud.Types.HierarchyFilterField]</span><span class="p">::</span><span class="n">IS_RELIC</span>
-</span><span id="__span-13-4"><a id="__codelineno-13-4" name="__codelineno-13-4" href="#__codelineno-13-4"></a><span class="nv">$query</span><span class="p">.</span><span class="n">Var</span><span class="p">.</span><span class="k">filter</span><span class="p">[</span><span class="n">0</span><span class="p">].</span><span class="n">texts</span> <span class="p">=</span> <span class="s2">&quot;false&quot;</span>
-</span><span id="__span-13-5"><a id="__codelineno-13-5" name="__codelineno-13-5" href="#__codelineno-13-5"></a><span class="nv">$query</span><span class="p">.</span><span class="n">Var</span><span class="p">.</span><span class="k">filter</span><span class="p">[</span><span class="n">1</span><span class="p">].</span><span class="n">field</span> <span class="p">=</span> <span class="no">[RubrikSecurityCloud.Types.HierarchyFilterField]</span><span class="p">::</span><span class="n">IS_REPLICATED</span>
-</span><span id="__span-13-6"><a id="__codelineno-13-6" name="__codelineno-13-6" href="#__codelineno-13-6"></a><span class="nv">$query</span><span class="p">.</span><span class="n">Var</span><span class="p">.</span><span class="k">filter</span><span class="p">[</span><span class="n">1</span><span class="p">].</span><span class="n">texts</span> <span class="p">=</span> <span class="s2">&quot;false&quot;</span>
-</span><span id="__span-13-7"><a id="__codelineno-13-7" name="__codelineno-13-7" href="#__codelineno-13-7"></a>
-</span><span id="__span-13-8"><a id="__codelineno-13-8" name="__codelineno-13-8" href="#__codelineno-13-8"></a><span class="nv">$query</span><span class="p">.</span><span class="n">field</span><span class="p">.</span><span class="n">nodes</span> <span class="p">=</span> <span class="p">@(</span><span class="nb">Get-RscType</span> <span class="n">-Name</span> <span class="n">NutanixCluster</span> <span class="n">-InitialProperties</span> <span class="p">`</span>
-</span><span id="__span-13-9"><a id="__codelineno-13-9" name="__codelineno-13-9" href="#__codelineno-13-9"></a>    <span class="n">name</span><span class="p">,`</span>
-</span><span id="__span-13-10"><a id="__codelineno-13-10" name="__codelineno-13-10" href="#__codelineno-13-10"></a>    <span class="n">id</span><span class="p">,`</span>
-</span><span id="__span-13-11"><a id="__codelineno-13-11" name="__codelineno-13-11" href="#__codelineno-13-11"></a>    <span class="n">cdmId</span><span class="p">,`</span>
-</span><span id="__span-13-12"><a id="__codelineno-13-12" name="__codelineno-13-12" href="#__codelineno-13-12"></a>    <span class="n">hostName</span><span class="p">,`</span>
-</span><span id="__span-13-13"><a id="__codelineno-13-13" name="__codelineno-13-13" href="#__codelineno-13-13"></a>    <span class="n">naturalId</span><span class="p">,`</span>
-</span><span id="__span-13-14"><a id="__codelineno-13-14" name="__codelineno-13-14" href="#__codelineno-13-14"></a>    <span class="n">nosVersion</span><span class="p">,`</span>
-</span><span id="__span-13-15"><a id="__codelineno-13-15" name="__codelineno-13-15" href="#__codelineno-13-15"></a>    <span class="n">clusterNetworks</span><span class="p">.</span><span class="n">name</span><span class="p">,</span><span class="n">clusterNetworks</span><span class="p">.</span><span class="n">uuid</span><span class="p">,`</span>
-</span><span id="__span-13-16"><a id="__codelineno-13-16" name="__codelineno-13-16" href="#__codelineno-13-16"></a>    <span class="n">storageContainers</span><span class="p">.</span><span class="n">name</span><span class="p">,</span><span class="n">storageContainers</span><span class="p">.</span><span class="n">uuid</span><span class="p">,</span><span class="n">storageContainers</span><span class="p">.</span><span class="n">freeBytes</span><span class="p">,</span><span class="n">storageContainers</span><span class="p">.</span><span class="n">usedBytes</span><span class="p">,</span><span class="n">storageContainers</span><span class="p">.</span><span class="n">totalBytes</span><span class="p">,`</span>
-</span><span id="__span-13-17"><a id="__codelineno-13-17" name="__codelineno-13-17" href="#__codelineno-13-17"></a>    <span class="n">connectionStatus</span><span class="p">.</span><span class="n">message</span><span class="p">,</span><span class="n">connectionStatus</span><span class="p">.</span><span class="n">status</span><span class="p">,`</span>
-</span><span id="__span-13-18"><a id="__codelineno-13-18" name="__codelineno-13-18" href="#__codelineno-13-18"></a>    <span class="n">cluster</span><span class="p">.</span><span class="n">name</span><span class="p">,</span><span class="n">cluster</span><span class="p">.</span><span class="n">id</span>
-</span><span id="__span-13-19"><a id="__codelineno-13-19" name="__codelineno-13-19" href="#__codelineno-13-19"></a><span class="p">)</span>
-</span><span id="__span-13-20"><a id="__codelineno-13-20" name="__codelineno-13-20" href="#__codelineno-13-20"></a><span class="nv">$query</span><span class="p">.</span><span class="n">Invoke</span><span class="p">().</span><span class="n">nodes</span>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="nv">$vm</span> <span class="p">=</span> <span class="nb">Get-RscNutanixVm</span> <span class="n">-Name</span> <span class="s2">&quot;example&quot;</span>
+</span><span id="__span-13-2"><a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a>
+</span><span id="__span-13-3"><a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a><span class="nv">$query</span> <span class="p">=</span> <span class="nb">New-Rscmutation</span> <span class="n">-GqlMutation</span> <span class="n">createOnDemandNutanixBackup</span>
+</span><span id="__span-13-4"><a id="__codelineno-13-4" name="__codelineno-13-4" href="#__codelineno-13-4"></a><span class="nv">$query</span><span class="p">.</span><span class="n">var</span><span class="p">.</span><span class="n">input</span> <span class="p">=</span> <span class="nb">Get-RscType</span> <span class="n">-Name</span> <span class="n">CreateOnDemandNutanixBackupInput</span> <span class="n">-InitialProperties</span> <span class="n">config</span>
+</span><span id="__span-13-5"><a id="__codelineno-13-5" name="__codelineno-13-5" href="#__codelineno-13-5"></a><span class="nv">$query</span><span class="p">.</span><span class="n">var</span><span class="p">.</span><span class="n">input</span><span class="p">.</span><span class="n">id</span> <span class="p">=</span> <span class="nv">$vm</span><span class="p">.</span><span class="n">id</span>
+</span><span id="__span-13-6"><a id="__codelineno-13-6" name="__codelineno-13-6" href="#__codelineno-13-6"></a><span class="nv">$query</span><span class="p">.</span><span class="n">var</span><span class="p">.</span><span class="n">input</span><span class="p">.</span><span class="n">config</span><span class="p">.</span><span class="n">SlaId</span> <span class="p">=</span> <span class="nv">$vm</span><span class="p">.</span><span class="n">EffectiveSlaDomain</span><span class="p">.</span><span class="n">Id</span>
+</span><span id="__span-13-7"><a id="__codelineno-13-7" name="__codelineno-13-7" href="#__codelineno-13-7"></a><span class="nv">$query</span><span class="p">.</span><span class="n">Field</span> <span class="p">=</span> <span class="nb">Get-RscType</span> <span class="n">-Name</span> <span class="n">AsyncRequestStatus</span> <span class="n">-InitialProperties</span> <span class="n">id</span>
+</span><span id="__span-13-8"><a id="__codelineno-13-8" name="__codelineno-13-8" href="#__codelineno-13-8"></a><span class="nv">$query</span><span class="p">.</span><span class="n">Invoke</span><span class="p">()</span>
 </span></code></pre></div>
 </div>
 <div class="tabbed-block">
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-14-1"><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a><span class="ch">#!/bin/bash</span>
 </span><span id="__span-14-2"><a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a>
 </span><span id="__span-14-3"><a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a><span class="c1"># RSC_TOKEN=&quot;YOUR_RSC_ACCESS_TOKEN&quot;</span>
-</span><span id="__span-14-4"><a id="__codelineno-14-4" name="__codelineno-14-4" href="#__codelineno-14-4"></a><span class="nv">query</span><span class="o">=</span><span class="s2">&quot;query { nutanixClusters(filter: [ {field: IS_RELIC texts: \\\&quot;false\\\&quot;} {field: IS_REPLICATED texts: \\\&quot;false\\\&quot;} ]) { nodes { name id cdmId hostName naturalId nosVersion connectionStatus { message status } clusterNetworks { name uuid } storageContainers { name uuid freeBytes usedBytes totalBytes } effectiveSlaDomain { name id } cluster { name id } } } }&quot;</span>
+</span><span id="__span-14-4"><a id="__codelineno-14-4" name="__codelineno-14-4" href="#__codelineno-14-4"></a><span class="nv">query</span><span class="o">=</span><span class="s2">&quot;mutation { createOnDemandNutanixBackup(input: { id: \\\&quot;40bac7c1-87ad-4ac0-b4a6-34ac592d8e77\\\&quot; config: { slaId: \\\&quot;7d40e858-b8ec-4096-8112-cab8eff1a4e2\\\&quot; } }) { id } }&quot;</span>
 </span><span id="__span-14-5"><a id="__codelineno-14-5" name="__codelineno-14-5" href="#__codelineno-14-5"></a>
 </span><span id="__span-14-6"><a id="__codelineno-14-6" name="__codelineno-14-6" href="#__codelineno-14-6"></a><span class="c1"># Execute the GraphQL query with curl</span>
 </span><span id="__span-14-7"><a id="__codelineno-14-7" name="__codelineno-14-7" href="#__codelineno-14-7"></a>curl<span class="w"> </span>-X<span class="w"> </span>POST<span class="w"> </span><span class="se">\</span>
@@ -3137,81 +3477,493 @@
 </div>
 </div>
 </div>
-<h2 id="nutanix-prism-central-servers">Nutanix Prism Central Servers</h2>
-<h3 id="retrieval_2">Retrieval</h3>
+<h2 id="recovery">Recovery</h2>
+<p>All Nutanix recovery mutations take <code>id</code> = the <strong>snapshot</strong> FID, not the VM FID. There is no timestamp-based point-in-time recovery for Nutanix — you recover from a discrete snapshot. Retrieve snapshot IDs from a VM's <code>snapshotConnection</code>:</p>
+<div class="language-graphql highlight"><pre><span></span><code><span id="__span-15-1"><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a><span class="k">query</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-15-2"><a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a><span class="w">  </span><span class="n">nutanixVm</span><span class="p">(</span><span class="n">fid</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;40bac7c1-87ad-4ac0-b4a6-34ac592d8e77&quot;</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-15-3"><a id="__codelineno-15-3" name="__codelineno-15-3" href="#__codelineno-15-3"></a><span class="w">    </span><span class="n">snapshotConnection</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-15-4"><a id="__codelineno-15-4" name="__codelineno-15-4" href="#__codelineno-15-4"></a><span class="w">      </span><span class="n">nodes</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-15-5"><a id="__codelineno-15-5" name="__codelineno-15-5" href="#__codelineno-15-5"></a><span class="w">        </span><span class="n">id</span>
+</span><span id="__span-15-6"><a id="__codelineno-15-6" name="__codelineno-15-6" href="#__codelineno-15-6"></a><span class="w">        </span><span class="n">date</span>
+</span><span id="__span-15-7"><a id="__codelineno-15-7" name="__codelineno-15-7" href="#__codelineno-15-7"></a><span class="w">      </span><span class="p">}</span>
+</span><span id="__span-15-8"><a id="__codelineno-15-8" name="__codelineno-15-8" href="#__codelineno-15-8"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-15-9"><a id="__codelineno-15-9" name="__codelineno-15-9" href="#__codelineno-15-9"></a><span class="w">  </span><span class="p">}</span>
+</span><span id="__span-15-10"><a id="__codelineno-15-10" name="__codelineno-15-10" href="#__codelineno-15-10"></a><span class="p">}</span>
+</span></code></pre></div>
+<p>Three recovery modes are available.</p>
+<h3 id="export-to-a-new-vm">Export to a New VM</h3>
+<p>Use <code>exportNutanixSnapshot</code> to create a brand-new VM from a snapshot without touching the source. This is the right choice for recovery validation, spinning up test/dev copies, or recovering alongside a still-running production VM.</p>
+<p>Fields in <code>config</code>:</p>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>containerNaturalId</code></td>
+<td><strong>Required.</strong> The Nutanix storage container UUID that will hold the new VM's disks. This is a Nutanix natural ID (from the <code>storageContainers</code> field on the clusters query), <strong>not</strong> a Rubrik FID.</td>
+</tr>
+<tr>
+<td><code>nutanixClusterId</code></td>
+<td>Target cluster FID. Defaults to the source VM's cluster if omitted.</td>
+</tr>
+<tr>
+<td><code>vmName</code></td>
+<td>Name for the new VM. Defaults to the source VM's name if omitted.</td>
+</tr>
+<tr>
+<td><code>powerOn</code></td>
+<td>Whether to power on the new VM after export.</td>
+</tr>
+</tbody>
+</table>
 <div class="tabbed-set tabbed-alternate" data-tabs="6:3"><input checked="checked" id="__tabbed_6_1" name="__tabbed_6" type="radio" /><input id="__tabbed_6_2" name="__tabbed_6" type="radio" /><input id="__tabbed_6_3" name="__tabbed_6" type="radio" /><div class="tabbed-labels"><label for="__tabbed_6_1">GraphQL</label><label for="__tabbed_6_2">PowerShell SDK</label><label for="__tabbed_6_3">Shell</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
-<div class="language-graphql highlight"><pre><span></span><code><span id="__span-15-1"><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a><span class="k">query</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-15-2"><a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a><span class="w">  </span><span class="n">nutanixPrismCentrals</span><span class="p">(</span><span class="n">filter</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
-</span><span id="__span-15-3"><a id="__codelineno-15-3" name="__codelineno-15-3" href="#__codelineno-15-3"></a><span class="w">    </span><span class="c">#{field: NAME_EXACT_MATCH texts: &quot;example&quot;}</span>
-</span><span id="__span-15-4"><a id="__codelineno-15-4" name="__codelineno-15-4" href="#__codelineno-15-4"></a><span class="w">    </span><span class="p">{</span><span class="n">field</span><span class="p">:</span><span class="w"> </span><span class="no">IS_RELIC</span><span class="w"> </span><span class="n">texts</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;false&quot;</span><span class="p">}</span>
-</span><span id="__span-15-5"><a id="__codelineno-15-5" name="__codelineno-15-5" href="#__codelineno-15-5"></a><span class="w">    </span><span class="p">{</span><span class="n">field</span><span class="p">:</span><span class="w"> </span><span class="no">IS_REPLICATED</span><span class="w"> </span><span class="n">texts</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;false&quot;</span><span class="p">}</span>
-</span><span id="__span-15-6"><a id="__codelineno-15-6" name="__codelineno-15-6" href="#__codelineno-15-6"></a><span class="w">  </span><span class="p">])</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-15-7"><a id="__codelineno-15-7" name="__codelineno-15-7" href="#__codelineno-15-7"></a><span class="w">    </span><span class="n">nodes</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-15-8"><a id="__codelineno-15-8" name="__codelineno-15-8" href="#__codelineno-15-8"></a><span class="w">      </span><span class="n">name</span>
-</span><span id="__span-15-9"><a id="__codelineno-15-9" name="__codelineno-15-9" href="#__codelineno-15-9"></a><span class="w">      </span><span class="n">id</span>
-</span><span id="__span-15-10"><a id="__codelineno-15-10" name="__codelineno-15-10" href="#__codelineno-15-10"></a><span class="w">      </span><span class="n">cdmId</span>
-</span><span id="__span-15-11"><a id="__codelineno-15-11" name="__codelineno-15-11" href="#__codelineno-15-11"></a><span class="w">      </span><span class="n">hostName</span>
-</span><span id="__span-15-12"><a id="__codelineno-15-12" name="__codelineno-15-12" href="#__codelineno-15-12"></a><span class="w">      </span><span class="n">naturalId</span>
-</span><span id="__span-15-13"><a id="__codelineno-15-13" name="__codelineno-15-13" href="#__codelineno-15-13"></a><span class="w">      </span><span class="n">nosVersion</span>
-</span><span id="__span-15-14"><a id="__codelineno-15-14" name="__codelineno-15-14" href="#__codelineno-15-14"></a><span class="w">      </span><span class="n">nutanixClusters</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-15-15"><a id="__codelineno-15-15" name="__codelineno-15-15" href="#__codelineno-15-15"></a><span class="w">        </span><span class="n">nodes</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-15-16"><a id="__codelineno-15-16" name="__codelineno-15-16" href="#__codelineno-15-16"></a><span class="w">          </span><span class="n">name</span>
-</span><span id="__span-15-17"><a id="__codelineno-15-17" name="__codelineno-15-17" href="#__codelineno-15-17"></a><span class="w">          </span><span class="n">id</span>
-</span><span id="__span-15-18"><a id="__codelineno-15-18" name="__codelineno-15-18" href="#__codelineno-15-18"></a><span class="w">        </span><span class="p">}</span>
-</span><span id="__span-15-19"><a id="__codelineno-15-19" name="__codelineno-15-19" href="#__codelineno-15-19"></a><span class="w">      </span><span class="p">}</span>
-</span><span id="__span-15-20"><a id="__codelineno-15-20" name="__codelineno-15-20" href="#__codelineno-15-20"></a><span class="w">      </span><span class="n">isDrEnabled</span>
-</span><span id="__span-15-21"><a id="__codelineno-15-21" name="__codelineno-15-21" href="#__codelineno-15-21"></a><span class="w">      </span><span class="n">connectionStatus</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-15-22"><a id="__codelineno-15-22" name="__codelineno-15-22" href="#__codelineno-15-22"></a><span class="w">        </span><span class="n">message</span>
-</span><span id="__span-15-23"><a id="__codelineno-15-23" name="__codelineno-15-23" href="#__codelineno-15-23"></a><span class="w">        </span><span class="n">status</span>
-</span><span id="__span-15-24"><a id="__codelineno-15-24" name="__codelineno-15-24" href="#__codelineno-15-24"></a><span class="w">      </span><span class="p">}</span>
-</span><span id="__span-15-25"><a id="__codelineno-15-25" name="__codelineno-15-25" href="#__codelineno-15-25"></a><span class="w">      </span><span class="n">effectiveSlaDomain</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-15-26"><a id="__codelineno-15-26" name="__codelineno-15-26" href="#__codelineno-15-26"></a><span class="w">        </span><span class="n">name</span>
-</span><span id="__span-15-27"><a id="__codelineno-15-27" name="__codelineno-15-27" href="#__codelineno-15-27"></a><span class="w">        </span><span class="n">id</span>
-</span><span id="__span-15-28"><a id="__codelineno-15-28" name="__codelineno-15-28" href="#__codelineno-15-28"></a><span class="w">      </span><span class="p">}</span>
-</span><span id="__span-15-29"><a id="__codelineno-15-29" name="__codelineno-15-29" href="#__codelineno-15-29"></a><span class="w">      </span><span class="n">cluster</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-15-30"><a id="__codelineno-15-30" name="__codelineno-15-30" href="#__codelineno-15-30"></a><span class="w">        </span><span class="n">name</span>
-</span><span id="__span-15-31"><a id="__codelineno-15-31" name="__codelineno-15-31" href="#__codelineno-15-31"></a><span class="w">        </span><span class="n">id</span>
-</span><span id="__span-15-32"><a id="__codelineno-15-32" name="__codelineno-15-32" href="#__codelineno-15-32"></a><span class="w">      </span><span class="p">}</span>
-</span><span id="__span-15-33"><a id="__codelineno-15-33" name="__codelineno-15-33" href="#__codelineno-15-33"></a><span class="w">    </span><span class="p">}</span>
-</span><span id="__span-15-34"><a id="__codelineno-15-34" name="__codelineno-15-34" href="#__codelineno-15-34"></a><span class="w">  </span><span class="p">}</span>
-</span><span id="__span-15-35"><a id="__codelineno-15-35" name="__codelineno-15-35" href="#__codelineno-15-35"></a><span class="p">}</span>
+<div class="language-graphql highlight"><pre><span></span><code><span id="__span-16-1"><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a><span class="k">mutation</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-16-2"><a id="__codelineno-16-2" name="__codelineno-16-2" href="#__codelineno-16-2"></a><span class="w">  </span><span class="n">exportNutanixSnapshot</span><span class="p">(</span><span class="n">input</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-16-3"><a id="__codelineno-16-3" name="__codelineno-16-3" href="#__codelineno-16-3"></a><span class="w">    </span><span class="n">id</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;f5bc5502-b9a6-4759-bf02-05dc5a48f9f7&quot;</span>
+</span><span id="__span-16-4"><a id="__codelineno-16-4" name="__codelineno-16-4" href="#__codelineno-16-4"></a><span class="w">    </span><span class="n">config</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-16-5"><a id="__codelineno-16-5" name="__codelineno-16-5" href="#__codelineno-16-5"></a><span class="w">      </span><span class="n">containerNaturalId</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;0005a1b2-1234-5678-90ab-cdef01234567&quot;</span>
+</span><span id="__span-16-6"><a id="__codelineno-16-6" name="__codelineno-16-6" href="#__codelineno-16-6"></a><span class="w">      </span><span class="n">nutanixClusterId</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;6450b2bb-3114-45ab-a45e-049c7f27b58e&quot;</span>
+</span><span id="__span-16-7"><a id="__codelineno-16-7" name="__codelineno-16-7" href="#__codelineno-16-7"></a><span class="w">      </span><span class="n">vmName</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;example-restored&quot;</span>
+</span><span id="__span-16-8"><a id="__codelineno-16-8" name="__codelineno-16-8" href="#__codelineno-16-8"></a><span class="w">      </span><span class="n">powerOn</span><span class="p">:</span><span class="w"> </span><span class="nb">true</span>
+</span><span id="__span-16-9"><a id="__codelineno-16-9" name="__codelineno-16-9" href="#__codelineno-16-9"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-16-10"><a id="__codelineno-16-10" name="__codelineno-16-10" href="#__codelineno-16-10"></a><span class="w">  </span><span class="p">})</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-16-11"><a id="__codelineno-16-11" name="__codelineno-16-11" href="#__codelineno-16-11"></a><span class="w">    </span><span class="n">id</span>
+</span><span id="__span-16-12"><a id="__codelineno-16-12" name="__codelineno-16-12" href="#__codelineno-16-12"></a><span class="w">    </span><span class="n">status</span>
+</span><span id="__span-16-13"><a id="__codelineno-16-13" name="__codelineno-16-13" href="#__codelineno-16-13"></a><span class="w">    </span><span class="n">progress</span>
+</span><span id="__span-16-14"><a id="__codelineno-16-14" name="__codelineno-16-14" href="#__codelineno-16-14"></a><span class="w">    </span><span class="n">error</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-16-15"><a id="__codelineno-16-15" name="__codelineno-16-15" href="#__codelineno-16-15"></a><span class="w">      </span><span class="n">message</span>
+</span><span id="__span-16-16"><a id="__codelineno-16-16" name="__codelineno-16-16" href="#__codelineno-16-16"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-16-17"><a id="__codelineno-16-17" name="__codelineno-16-17" href="#__codelineno-16-17"></a><span class="w">  </span><span class="p">}</span>
+</span><span id="__span-16-18"><a id="__codelineno-16-18" name="__codelineno-16-18" href="#__codelineno-16-18"></a><span class="p">}</span>
 </span></code></pre></div>
 </div>
 <div class="tabbed-block">
-<div class="language-powershell highlight"><pre><span></span><code><span id="__span-16-1"><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a><span class="nv">$query</span> <span class="p">=</span> <span class="nb">New-RscQuery</span> <span class="n">-GqlQuery</span> <span class="n">nutanixPrismCentrals</span>
-</span><span id="__span-16-2"><a id="__codelineno-16-2" name="__codelineno-16-2" href="#__codelineno-16-2"></a><span class="nv">$query</span><span class="p">.</span><span class="n">Var</span><span class="p">.</span><span class="k">filter</span> <span class="p">=</span> <span class="p">@((</span><span class="nb">Get-RscType</span> <span class="n">-Name</span> <span class="k">Filter</span><span class="p">),(</span><span class="nb">Get-RscType</span> <span class="n">-Name</span> <span class="k">Filter</span><span class="p">))</span>
-</span><span id="__span-16-3"><a id="__codelineno-16-3" name="__codelineno-16-3" href="#__codelineno-16-3"></a><span class="nv">$query</span><span class="p">.</span><span class="n">Var</span><span class="p">.</span><span class="k">filter</span><span class="p">[</span><span class="n">0</span><span class="p">].</span><span class="n">field</span> <span class="p">=</span> <span class="no">[RubrikSecurityCloud.Types.HierarchyFilterField]</span><span class="p">::</span><span class="n">IS_RELIC</span>
-</span><span id="__span-16-4"><a id="__codelineno-16-4" name="__codelineno-16-4" href="#__codelineno-16-4"></a><span class="nv">$query</span><span class="p">.</span><span class="n">Var</span><span class="p">.</span><span class="k">filter</span><span class="p">[</span><span class="n">0</span><span class="p">].</span><span class="n">texts</span> <span class="p">=</span> <span class="s2">&quot;false&quot;</span>
-</span><span id="__span-16-5"><a id="__codelineno-16-5" name="__codelineno-16-5" href="#__codelineno-16-5"></a><span class="nv">$query</span><span class="p">.</span><span class="n">Var</span><span class="p">.</span><span class="k">filter</span><span class="p">[</span><span class="n">1</span><span class="p">].</span><span class="n">field</span> <span class="p">=</span> <span class="no">[RubrikSecurityCloud.Types.HierarchyFilterField]</span><span class="p">::</span><span class="n">IS_REPLICATED</span>
-</span><span id="__span-16-6"><a id="__codelineno-16-6" name="__codelineno-16-6" href="#__codelineno-16-6"></a><span class="nv">$query</span><span class="p">.</span><span class="n">Var</span><span class="p">.</span><span class="k">filter</span><span class="p">[</span><span class="n">1</span><span class="p">].</span><span class="n">texts</span> <span class="p">=</span> <span class="s2">&quot;false&quot;</span>
-</span><span id="__span-16-7"><a id="__codelineno-16-7" name="__codelineno-16-7" href="#__codelineno-16-7"></a>
-</span><span id="__span-16-8"><a id="__codelineno-16-8" name="__codelineno-16-8" href="#__codelineno-16-8"></a><span class="nv">$query</span><span class="p">.</span><span class="n">field</span><span class="p">.</span><span class="n">nodes</span> <span class="p">=</span> <span class="p">@(</span><span class="nb">Get-RscType</span> <span class="n">-Name</span> <span class="n">NutanixPrismCentral</span> <span class="n">-InitialProperties</span> <span class="p">`</span>
-</span><span id="__span-16-9"><a id="__codelineno-16-9" name="__codelineno-16-9" href="#__codelineno-16-9"></a>    <span class="n">name</span><span class="p">,`</span>
-</span><span id="__span-16-10"><a id="__codelineno-16-10" name="__codelineno-16-10" href="#__codelineno-16-10"></a>    <span class="n">id</span><span class="p">,`</span>
-</span><span id="__span-16-11"><a id="__codelineno-16-11" name="__codelineno-16-11" href="#__codelineno-16-11"></a>    <span class="n">cdmId</span><span class="p">,`</span>
-</span><span id="__span-16-12"><a id="__codelineno-16-12" name="__codelineno-16-12" href="#__codelineno-16-12"></a>    <span class="n">hostName</span><span class="p">,`</span>
-</span><span id="__span-16-13"><a id="__codelineno-16-13" name="__codelineno-16-13" href="#__codelineno-16-13"></a>    <span class="n">naturalId</span><span class="p">,`</span>
-</span><span id="__span-16-14"><a id="__codelineno-16-14" name="__codelineno-16-14" href="#__codelineno-16-14"></a>    <span class="n">isDrEnabled</span><span class="p">,`</span>
-</span><span id="__span-16-15"><a id="__codelineno-16-15" name="__codelineno-16-15" href="#__codelineno-16-15"></a>    <span class="n">connectionStatus</span><span class="p">.</span><span class="n">message</span><span class="p">,</span><span class="n">connectionStatus</span><span class="p">.</span><span class="n">status</span><span class="p">,`</span>
-</span><span id="__span-16-16"><a id="__codelineno-16-16" name="__codelineno-16-16" href="#__codelineno-16-16"></a>    <span class="n">cluster</span><span class="p">.</span><span class="n">name</span><span class="p">,</span><span class="n">cluster</span><span class="p">.</span><span class="n">id</span>
-</span><span id="__span-16-17"><a id="__codelineno-16-17" name="__codelineno-16-17" href="#__codelineno-16-17"></a><span class="p">)</span>
-</span><span id="__span-16-18"><a id="__codelineno-16-18" name="__codelineno-16-18" href="#__codelineno-16-18"></a><span class="nv">$query</span><span class="p">.</span><span class="n">Invoke</span><span class="p">().</span><span class="n">nodes</span>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-17-1"><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a><span class="c"># Retrieve the source VM, then its most recent snapshot</span>
+</span><span id="__span-17-2"><a id="__codelineno-17-2" name="__codelineno-17-2" href="#__codelineno-17-2"></a><span class="nv">$vm</span> <span class="p">=</span> <span class="nb">Get-RscNutanixVm</span> <span class="n">-Name</span> <span class="s2">&quot;example&quot;</span>
+</span><span id="__span-17-3"><a id="__codelineno-17-3" name="__codelineno-17-3" href="#__codelineno-17-3"></a>
+</span><span id="__span-17-4"><a id="__codelineno-17-4" name="__codelineno-17-4" href="#__codelineno-17-4"></a><span class="nv">$snapshotQuery</span> <span class="p">=</span> <span class="nb">New-RscQuery</span> <span class="n">-GqlQuery</span> <span class="n">nutanixVm</span>
+</span><span id="__span-17-5"><a id="__codelineno-17-5" name="__codelineno-17-5" href="#__codelineno-17-5"></a><span class="nv">$snapshotQuery</span><span class="p">.</span><span class="n">Var</span><span class="p">.</span><span class="n">fid</span> <span class="p">=</span> <span class="nv">$vm</span><span class="p">.</span><span class="n">Id</span>
+</span><span id="__span-17-6"><a id="__codelineno-17-6" name="__codelineno-17-6" href="#__codelineno-17-6"></a><span class="nv">$snapshotQuery</span><span class="p">.</span><span class="n">Field</span><span class="p">.</span><span class="n">SnapshotConnection</span><span class="p">.</span><span class="n">Nodes</span> <span class="p">=</span> <span class="p">@(</span><span class="nb">Get-RscType</span> <span class="n">-Name</span> <span class="n">CdmSnapshot</span> <span class="n">-InitialProperties</span> <span class="n">id</span><span class="p">,</span> <span class="n">date</span><span class="p">)</span>
+</span><span id="__span-17-7"><a id="__codelineno-17-7" name="__codelineno-17-7" href="#__codelineno-17-7"></a><span class="nv">$snapshotId</span> <span class="p">=</span> <span class="nv">$snapshotQuery</span><span class="p">.</span><span class="n">Invoke</span><span class="p">().</span><span class="n">SnapshotConnection</span><span class="p">.</span><span class="n">Nodes</span><span class="p">[</span><span class="n">0</span><span class="p">].</span><span class="n">Id</span>
+</span><span id="__span-17-8"><a id="__codelineno-17-8" name="__codelineno-17-8" href="#__codelineno-17-8"></a>
+</span><span id="__span-17-9"><a id="__codelineno-17-9" name="__codelineno-17-9" href="#__codelineno-17-9"></a><span class="c"># Export the snapshot to a new VM. containerNaturalId is the Nutanix storage</span>
+</span><span id="__span-17-10"><a id="__codelineno-17-10" name="__codelineno-17-10" href="#__codelineno-17-10"></a><span class="c"># container UUID (from the nutanixClusters query), not a Rubrik FID.</span>
+</span><span id="__span-17-11"><a id="__codelineno-17-11" name="__codelineno-17-11" href="#__codelineno-17-11"></a><span class="nv">$mutation</span> <span class="p">=</span> <span class="nb">New-RscMutation</span> <span class="n">-GqlMutation</span> <span class="n">exportNutanixSnapshot</span>
+</span><span id="__span-17-12"><a id="__codelineno-17-12" name="__codelineno-17-12" href="#__codelineno-17-12"></a><span class="nv">$mutation</span><span class="p">.</span><span class="n">Var</span><span class="p">.</span><span class="n">input</span> <span class="p">=</span> <span class="nb">Get-RscType</span> <span class="n">-Name</span> <span class="n">ExportNutanixSnapshotInput</span> <span class="n">-InitialProperties</span> <span class="n">config</span>
+</span><span id="__span-17-13"><a id="__codelineno-17-13" name="__codelineno-17-13" href="#__codelineno-17-13"></a><span class="nv">$mutation</span><span class="p">.</span><span class="n">Var</span><span class="p">.</span><span class="n">input</span><span class="p">.</span><span class="n">id</span> <span class="p">=</span> <span class="nv">$snapshotId</span>
+</span><span id="__span-17-14"><a id="__codelineno-17-14" name="__codelineno-17-14" href="#__codelineno-17-14"></a><span class="nv">$mutation</span><span class="p">.</span><span class="n">Var</span><span class="p">.</span><span class="n">input</span><span class="p">.</span><span class="n">config</span><span class="p">.</span><span class="n">containerNaturalId</span> <span class="p">=</span> <span class="s2">&quot;0005a1b2-1234-5678-90ab-cdef01234567&quot;</span>
+</span><span id="__span-17-15"><a id="__codelineno-17-15" name="__codelineno-17-15" href="#__codelineno-17-15"></a><span class="nv">$mutation</span><span class="p">.</span><span class="n">Var</span><span class="p">.</span><span class="n">input</span><span class="p">.</span><span class="n">config</span><span class="p">.</span><span class="n">vmName</span> <span class="p">=</span> <span class="s2">&quot;example-restored&quot;</span>
+</span><span id="__span-17-16"><a id="__codelineno-17-16" name="__codelineno-17-16" href="#__codelineno-17-16"></a><span class="nv">$mutation</span><span class="p">.</span><span class="n">Var</span><span class="p">.</span><span class="n">input</span><span class="p">.</span><span class="n">config</span><span class="p">.</span><span class="n">powerOn</span> <span class="p">=</span> <span class="nv">$true</span>
+</span><span id="__span-17-17"><a id="__codelineno-17-17" name="__codelineno-17-17" href="#__codelineno-17-17"></a><span class="nv">$mutation</span><span class="p">.</span><span class="n">Field</span> <span class="p">=</span> <span class="nb">Get-RscType</span> <span class="n">-Name</span> <span class="n">AsyncRequestStatus</span> <span class="n">-InitialProperties</span> <span class="n">id</span><span class="p">,</span> <span class="n">status</span>
+</span><span id="__span-17-18"><a id="__codelineno-17-18" name="__codelineno-17-18" href="#__codelineno-17-18"></a><span class="nv">$mutation</span><span class="p">.</span><span class="n">Invoke</span><span class="p">()</span>
 </span></code></pre></div>
 </div>
 <div class="tabbed-block">
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-17-1"><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a><span class="ch">#!/bin/bash</span>
-</span><span id="__span-17-2"><a id="__codelineno-17-2" name="__codelineno-17-2" href="#__codelineno-17-2"></a>
-</span><span id="__span-17-3"><a id="__codelineno-17-3" name="__codelineno-17-3" href="#__codelineno-17-3"></a><span class="c1"># RSC_TOKEN=&quot;YOUR_RSC_ACCESS_TOKEN&quot;</span>
-</span><span id="__span-17-4"><a id="__codelineno-17-4" name="__codelineno-17-4" href="#__codelineno-17-4"></a><span class="nv">query</span><span class="o">=</span><span class="s2">&quot;query { nutanixPrismCentrals(filter: [ {field: IS_RELIC texts: \\\&quot;false\\\&quot;} {field: IS_REPLICATED texts: \\\&quot;false\\\&quot;} ]) { nodes { name id cdmId hostName naturalId nosVersion nutanixClusters { nodes { name id } } isDrEnabled connectionStatus { message status } effectiveSlaDomain { name id } cluster { name id } } } }&quot;</span>
-</span><span id="__span-17-5"><a id="__codelineno-17-5" name="__codelineno-17-5" href="#__codelineno-17-5"></a>
-</span><span id="__span-17-6"><a id="__codelineno-17-6" name="__codelineno-17-6" href="#__codelineno-17-6"></a><span class="c1"># Execute the GraphQL query with curl</span>
-</span><span id="__span-17-7"><a id="__codelineno-17-7" name="__codelineno-17-7" href="#__codelineno-17-7"></a>curl<span class="w"> </span>-X<span class="w"> </span>POST<span class="w"> </span><span class="se">\</span>
-</span><span id="__span-17-8"><a id="__codelineno-17-8" name="__codelineno-17-8" href="#__codelineno-17-8"></a><span class="w">  </span>-H<span class="w"> </span><span class="s2">&quot;Content-Type: application/json&quot;</span><span class="w"> </span><span class="se">\</span>
-</span><span id="__span-17-9"><a id="__codelineno-17-9" name="__codelineno-17-9" href="#__codelineno-17-9"></a><span class="w">  </span>-H<span class="w"> </span><span class="s2">&quot;Authorization: Bearer </span><span class="nv">$RSC_TOKEN</span><span class="s2">&quot;</span><span class="w"> </span><span class="se">\</span>
-</span><span id="__span-17-10"><a id="__codelineno-17-10" name="__codelineno-17-10" href="#__codelineno-17-10"></a><span class="w">  </span>-d<span class="w"> </span><span class="s2">&quot;{\&quot;query\&quot;: \&quot;</span><span class="nv">$query</span><span class="s2">\&quot;}&quot;</span><span class="w"> </span><span class="se">\</span>
-</span><span id="__span-17-11"><a id="__codelineno-17-11" name="__codelineno-17-11" href="#__codelineno-17-11"></a><span class="w">  </span>https://example.my.rubrik.com/api/graphql
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-18-1"><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a><span class="ch">#!/bin/bash</span>
+</span><span id="__span-18-2"><a id="__codelineno-18-2" name="__codelineno-18-2" href="#__codelineno-18-2"></a>
+</span><span id="__span-18-3"><a id="__codelineno-18-3" name="__codelineno-18-3" href="#__codelineno-18-3"></a><span class="c1"># RSC_TOKEN=&quot;YOUR_RSC_ACCESS_TOKEN&quot;</span>
+</span><span id="__span-18-4"><a id="__codelineno-18-4" name="__codelineno-18-4" href="#__codelineno-18-4"></a><span class="c1"># id              = the snapshot FID (not the VM FID)</span>
+</span><span id="__span-18-5"><a id="__codelineno-18-5" name="__codelineno-18-5" href="#__codelineno-18-5"></a><span class="c1"># containerNaturalId = the Nutanix storage container UUID (not a Rubrik FID)</span>
+</span><span id="__span-18-6"><a id="__codelineno-18-6" name="__codelineno-18-6" href="#__codelineno-18-6"></a><span class="nv">query</span><span class="o">=</span><span class="s2">&quot;mutation { exportNutanixSnapshot(input: { id: \\\&quot;f5bc5502-b9a6-4759-bf02-05dc5a48f9f7\\\&quot; config: { containerNaturalId: \\\&quot;0005a1b2-1234-5678-90ab-cdef01234567\\\&quot; nutanixClusterId: \\\&quot;6450b2bb-3114-45ab-a45e-049c7f27b58e\\\&quot; vmName: \\\&quot;example-restored\\\&quot; powerOn: true } }) { id status progress error { message } } }&quot;</span>
+</span><span id="__span-18-7"><a id="__codelineno-18-7" name="__codelineno-18-7" href="#__codelineno-18-7"></a>
+</span><span id="__span-18-8"><a id="__codelineno-18-8" name="__codelineno-18-8" href="#__codelineno-18-8"></a><span class="c1"># Execute the GraphQL mutation with curl</span>
+</span><span id="__span-18-9"><a id="__codelineno-18-9" name="__codelineno-18-9" href="#__codelineno-18-9"></a>curl<span class="w"> </span>-X<span class="w"> </span>POST<span class="w"> </span><span class="se">\</span>
+</span><span id="__span-18-10"><a id="__codelineno-18-10" name="__codelineno-18-10" href="#__codelineno-18-10"></a><span class="w">  </span>-H<span class="w"> </span><span class="s2">&quot;Content-Type: application/json&quot;</span><span class="w"> </span><span class="se">\</span>
+</span><span id="__span-18-11"><a id="__codelineno-18-11" name="__codelineno-18-11" href="#__codelineno-18-11"></a><span class="w">  </span>-H<span class="w"> </span><span class="s2">&quot;Authorization: Bearer </span><span class="nv">$RSC_TOKEN</span><span class="s2">&quot;</span><span class="w"> </span><span class="se">\</span>
+</span><span id="__span-18-12"><a id="__codelineno-18-12" name="__codelineno-18-12" href="#__codelineno-18-12"></a><span class="w">  </span>-d<span class="w"> </span><span class="s2">&quot;{\&quot;query\&quot;: \&quot;</span><span class="nv">$query</span><span class="s2">\&quot;}&quot;</span><span class="w"> </span><span class="se">\</span>
+</span><span id="__span-18-13"><a id="__codelineno-18-13" name="__codelineno-18-13" href="#__codelineno-18-13"></a><span class="w">  </span>https://example.my.rubrik.com/api/graphql
+</span></code></pre></div>
+</div>
+</div>
+</div>
+<h3 id="live-mount">Live Mount</h3>
+<p>Use <code>mountNutanixSnapshotV1</code> to instantly stand up a running VM served directly from Rubrik backup storage — no full data copy required. Live Mount is well-suited for rapid recovery validation, extracting data from a backup, or providing a point-in-time copy without consuming production storage.</p>
+<div class="admonition warning">
+<p class="admonition-title"><code>shouldDisableMigration</code> controls whether <code>containerNaturalId</code> is required</p>
+<p><code>shouldDisableMigration</code> is <strong>required</strong>. Its value changes what else you must supply:</p>
+<ul>
+<li><strong><code>shouldDisableMigration: true</code></strong> — Rubrik serves the mounted VM indefinitely from backup storage. <code>containerNaturalId</code> is <strong>not</strong> needed.</li>
+<li><strong><code>shouldDisableMigration: false</code></strong> — Nutanix migrates the VM onto one of its own storage containers after mount. <code>containerNaturalId</code> becomes <strong>required at runtime</strong>, even though the schema marks it optional. Omitting it fails the job.</li>
+</ul>
+</div>
+<div class="tabbed-set tabbed-alternate" data-tabs="7:3"><input checked="checked" id="__tabbed_7_1" name="__tabbed_7" type="radio" /><input id="__tabbed_7_2" name="__tabbed_7" type="radio" /><input id="__tabbed_7_3" name="__tabbed_7" type="radio" /><div class="tabbed-labels"><label for="__tabbed_7_1">GraphQL</label><label for="__tabbed_7_2">PowerShell SDK</label><label for="__tabbed_7_3">Shell</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="language-graphql highlight"><pre><span></span><code><span id="__span-19-1"><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a><span class="k">mutation</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-19-2"><a id="__codelineno-19-2" name="__codelineno-19-2" href="#__codelineno-19-2"></a><span class="w">  </span><span class="n">mountNutanixSnapshotV1</span><span class="p">(</span><span class="n">input</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-19-3"><a id="__codelineno-19-3" name="__codelineno-19-3" href="#__codelineno-19-3"></a><span class="w">    </span><span class="n">id</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;f5bc5502-b9a6-4759-bf02-05dc5a48f9f7&quot;</span>
+</span><span id="__span-19-4"><a id="__codelineno-19-4" name="__codelineno-19-4" href="#__codelineno-19-4"></a><span class="w">    </span><span class="n">config</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-19-5"><a id="__codelineno-19-5" name="__codelineno-19-5" href="#__codelineno-19-5"></a><span class="w">      </span><span class="n">shouldDisableMigration</span><span class="p">:</span><span class="w"> </span><span class="nb">true</span>
+</span><span id="__span-19-6"><a id="__codelineno-19-6" name="__codelineno-19-6" href="#__codelineno-19-6"></a><span class="w">      </span><span class="n">vmName</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;example-livemount&quot;</span>
+</span><span id="__span-19-7"><a id="__codelineno-19-7" name="__codelineno-19-7" href="#__codelineno-19-7"></a><span class="w">      </span><span class="n">shouldPowerOn</span><span class="p">:</span><span class="w"> </span><span class="nb">true</span>
+</span><span id="__span-19-8"><a id="__codelineno-19-8" name="__codelineno-19-8" href="#__codelineno-19-8"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-19-9"><a id="__codelineno-19-9" name="__codelineno-19-9" href="#__codelineno-19-9"></a><span class="w">  </span><span class="p">})</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-19-10"><a id="__codelineno-19-10" name="__codelineno-19-10" href="#__codelineno-19-10"></a><span class="w">    </span><span class="n">id</span>
+</span><span id="__span-19-11"><a id="__codelineno-19-11" name="__codelineno-19-11" href="#__codelineno-19-11"></a><span class="w">    </span><span class="n">status</span>
+</span><span id="__span-19-12"><a id="__codelineno-19-12" name="__codelineno-19-12" href="#__codelineno-19-12"></a><span class="w">    </span><span class="n">progress</span>
+</span><span id="__span-19-13"><a id="__codelineno-19-13" name="__codelineno-19-13" href="#__codelineno-19-13"></a><span class="w">    </span><span class="n">error</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-19-14"><a id="__codelineno-19-14" name="__codelineno-19-14" href="#__codelineno-19-14"></a><span class="w">      </span><span class="n">message</span>
+</span><span id="__span-19-15"><a id="__codelineno-19-15" name="__codelineno-19-15" href="#__codelineno-19-15"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-19-16"><a id="__codelineno-19-16" name="__codelineno-19-16" href="#__codelineno-19-16"></a><span class="w">  </span><span class="p">}</span>
+</span><span id="__span-19-17"><a id="__codelineno-19-17" name="__codelineno-19-17" href="#__codelineno-19-17"></a><span class="p">}</span>
+</span></code></pre></div>
+</div>
+<div class="tabbed-block">
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-20-1"><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a><span class="c"># Retrieve the source VM, then its most recent snapshot</span>
+</span><span id="__span-20-2"><a id="__codelineno-20-2" name="__codelineno-20-2" href="#__codelineno-20-2"></a><span class="nv">$vm</span> <span class="p">=</span> <span class="nb">Get-RscNutanixVm</span> <span class="n">-Name</span> <span class="s2">&quot;example&quot;</span>
+</span><span id="__span-20-3"><a id="__codelineno-20-3" name="__codelineno-20-3" href="#__codelineno-20-3"></a>
+</span><span id="__span-20-4"><a id="__codelineno-20-4" name="__codelineno-20-4" href="#__codelineno-20-4"></a><span class="nv">$snapshotQuery</span> <span class="p">=</span> <span class="nb">New-RscQuery</span> <span class="n">-GqlQuery</span> <span class="n">nutanixVm</span>
+</span><span id="__span-20-5"><a id="__codelineno-20-5" name="__codelineno-20-5" href="#__codelineno-20-5"></a><span class="nv">$snapshotQuery</span><span class="p">.</span><span class="n">Var</span><span class="p">.</span><span class="n">fid</span> <span class="p">=</span> <span class="nv">$vm</span><span class="p">.</span><span class="n">Id</span>
+</span><span id="__span-20-6"><a id="__codelineno-20-6" name="__codelineno-20-6" href="#__codelineno-20-6"></a><span class="nv">$snapshotQuery</span><span class="p">.</span><span class="n">Field</span><span class="p">.</span><span class="n">SnapshotConnection</span><span class="p">.</span><span class="n">Nodes</span> <span class="p">=</span> <span class="p">@(</span><span class="nb">Get-RscType</span> <span class="n">-Name</span> <span class="n">CdmSnapshot</span> <span class="n">-InitialProperties</span> <span class="n">id</span><span class="p">,</span> <span class="n">date</span><span class="p">)</span>
+</span><span id="__span-20-7"><a id="__codelineno-20-7" name="__codelineno-20-7" href="#__codelineno-20-7"></a><span class="nv">$snapshotId</span> <span class="p">=</span> <span class="nv">$snapshotQuery</span><span class="p">.</span><span class="n">Invoke</span><span class="p">().</span><span class="n">SnapshotConnection</span><span class="p">.</span><span class="n">Nodes</span><span class="p">[</span><span class="n">0</span><span class="p">].</span><span class="n">Id</span>
+</span><span id="__span-20-8"><a id="__codelineno-20-8" name="__codelineno-20-8" href="#__codelineno-20-8"></a>
+</span><span id="__span-20-9"><a id="__codelineno-20-9" name="__codelineno-20-9" href="#__codelineno-20-9"></a><span class="c"># Live Mount the snapshot. shouldDisableMigration is required.</span>
+</span><span id="__span-20-10"><a id="__codelineno-20-10" name="__codelineno-20-10" href="#__codelineno-20-10"></a><span class="c"># When true, Rubrik serves the VM and no containerNaturalId is needed.</span>
+</span><span id="__span-20-11"><a id="__codelineno-20-11" name="__codelineno-20-11" href="#__codelineno-20-11"></a><span class="c"># When false, set config.containerNaturalId to a Nutanix storage container UUID.</span>
+</span><span id="__span-20-12"><a id="__codelineno-20-12" name="__codelineno-20-12" href="#__codelineno-20-12"></a><span class="nv">$mutation</span> <span class="p">=</span> <span class="nb">New-RscMutation</span> <span class="n">-GqlMutation</span> <span class="n">mountNutanixSnapshotV1</span>
+</span><span id="__span-20-13"><a id="__codelineno-20-13" name="__codelineno-20-13" href="#__codelineno-20-13"></a><span class="nv">$mutation</span><span class="p">.</span><span class="n">Var</span><span class="p">.</span><span class="n">input</span> <span class="p">=</span> <span class="nb">Get-RscType</span> <span class="n">-Name</span> <span class="n">MountNutanixSnapshotV1Input</span> <span class="n">-InitialProperties</span> <span class="n">config</span>
+</span><span id="__span-20-14"><a id="__codelineno-20-14" name="__codelineno-20-14" href="#__codelineno-20-14"></a><span class="nv">$mutation</span><span class="p">.</span><span class="n">Var</span><span class="p">.</span><span class="n">input</span><span class="p">.</span><span class="n">id</span> <span class="p">=</span> <span class="nv">$snapshotId</span>
+</span><span id="__span-20-15"><a id="__codelineno-20-15" name="__codelineno-20-15" href="#__codelineno-20-15"></a><span class="nv">$mutation</span><span class="p">.</span><span class="n">Var</span><span class="p">.</span><span class="n">input</span><span class="p">.</span><span class="n">config</span><span class="p">.</span><span class="n">shouldDisableMigration</span> <span class="p">=</span> <span class="nv">$true</span>
+</span><span id="__span-20-16"><a id="__codelineno-20-16" name="__codelineno-20-16" href="#__codelineno-20-16"></a><span class="nv">$mutation</span><span class="p">.</span><span class="n">Var</span><span class="p">.</span><span class="n">input</span><span class="p">.</span><span class="n">config</span><span class="p">.</span><span class="n">vmName</span> <span class="p">=</span> <span class="s2">&quot;example-livemount&quot;</span>
+</span><span id="__span-20-17"><a id="__codelineno-20-17" name="__codelineno-20-17" href="#__codelineno-20-17"></a><span class="nv">$mutation</span><span class="p">.</span><span class="n">Var</span><span class="p">.</span><span class="n">input</span><span class="p">.</span><span class="n">config</span><span class="p">.</span><span class="n">shouldPowerOn</span> <span class="p">=</span> <span class="nv">$true</span>
+</span><span id="__span-20-18"><a id="__codelineno-20-18" name="__codelineno-20-18" href="#__codelineno-20-18"></a><span class="nv">$mutation</span><span class="p">.</span><span class="n">Field</span> <span class="p">=</span> <span class="nb">Get-RscType</span> <span class="n">-Name</span> <span class="n">AsyncRequestStatus</span> <span class="n">-InitialProperties</span> <span class="n">id</span><span class="p">,</span> <span class="n">status</span>
+</span><span id="__span-20-19"><a id="__codelineno-20-19" name="__codelineno-20-19" href="#__codelineno-20-19"></a><span class="nv">$mutation</span><span class="p">.</span><span class="n">Invoke</span><span class="p">()</span>
+</span></code></pre></div>
+</div>
+<div class="tabbed-block">
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-21-1"><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a><span class="ch">#!/bin/bash</span>
+</span><span id="__span-21-2"><a id="__codelineno-21-2" name="__codelineno-21-2" href="#__codelineno-21-2"></a>
+</span><span id="__span-21-3"><a id="__codelineno-21-3" name="__codelineno-21-3" href="#__codelineno-21-3"></a><span class="c1"># RSC_TOKEN=&quot;YOUR_RSC_ACCESS_TOKEN&quot;</span>
+</span><span id="__span-21-4"><a id="__codelineno-21-4" name="__codelineno-21-4" href="#__codelineno-21-4"></a><span class="c1"># id = the snapshot FID (not the VM FID)</span>
+</span><span id="__span-21-5"><a id="__codelineno-21-5" name="__codelineno-21-5" href="#__codelineno-21-5"></a><span class="c1"># shouldDisableMigration is required. When true, Rubrik serves the VM and no</span>
+</span><span id="__span-21-6"><a id="__codelineno-21-6" name="__codelineno-21-6" href="#__codelineno-21-6"></a><span class="c1"># containerNaturalId is needed. When false, add containerNaturalId (a Nutanix</span>
+</span><span id="__span-21-7"><a id="__codelineno-21-7" name="__codelineno-21-7" href="#__codelineno-21-7"></a><span class="c1"># storage container UUID) so Nutanix can migrate the mounted VM to its storage.</span>
+</span><span id="__span-21-8"><a id="__codelineno-21-8" name="__codelineno-21-8" href="#__codelineno-21-8"></a><span class="nv">query</span><span class="o">=</span><span class="s2">&quot;mutation { mountNutanixSnapshotV1(input: { id: \\\&quot;f5bc5502-b9a6-4759-bf02-05dc5a48f9f7\\\&quot; config: { shouldDisableMigration: true vmName: \\\&quot;example-livemount\\\&quot; shouldPowerOn: true } }) { id status progress error { message } } }&quot;</span>
+</span><span id="__span-21-9"><a id="__codelineno-21-9" name="__codelineno-21-9" href="#__codelineno-21-9"></a>
+</span><span id="__span-21-10"><a id="__codelineno-21-10" name="__codelineno-21-10" href="#__codelineno-21-10"></a><span class="c1"># Execute the GraphQL mutation with curl</span>
+</span><span id="__span-21-11"><a id="__codelineno-21-11" name="__codelineno-21-11" href="#__codelineno-21-11"></a>curl<span class="w"> </span>-X<span class="w"> </span>POST<span class="w"> </span><span class="se">\</span>
+</span><span id="__span-21-12"><a id="__codelineno-21-12" name="__codelineno-21-12" href="#__codelineno-21-12"></a><span class="w">  </span>-H<span class="w"> </span><span class="s2">&quot;Content-Type: application/json&quot;</span><span class="w"> </span><span class="se">\</span>
+</span><span id="__span-21-13"><a id="__codelineno-21-13" name="__codelineno-21-13" href="#__codelineno-21-13"></a><span class="w">  </span>-H<span class="w"> </span><span class="s2">&quot;Authorization: Bearer </span><span class="nv">$RSC_TOKEN</span><span class="s2">&quot;</span><span class="w"> </span><span class="se">\</span>
+</span><span id="__span-21-14"><a id="__codelineno-21-14" name="__codelineno-21-14" href="#__codelineno-21-14"></a><span class="w">  </span>-d<span class="w"> </span><span class="s2">&quot;{\&quot;query\&quot;: \&quot;</span><span class="nv">$query</span><span class="s2">\&quot;}&quot;</span><span class="w"> </span><span class="se">\</span>
+</span><span id="__span-21-15"><a id="__codelineno-21-15" name="__codelineno-21-15" href="#__codelineno-21-15"></a><span class="w">  </span>https://example.my.rubrik.com/api/graphql
+</span></code></pre></div>
+</div>
+</div>
+</div>
+<h4 id="tear-down-a-live-mount">Tear Down a Live Mount</h4>
+<p>When finished, remove the Live Mount with <code>deleteNutanixMountV1</code> to release storage resources. The <code>id</code> here is the <strong>Live Mount object ID</strong>, not the async request ID returned by <code>mountNutanixSnapshotV1</code>.</p>
+<p>To make a Live Mount permanent instead of tearing it down, migrate it to Nutanix storage with <code>migrateNutanixMountV1</code>.</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="8:3"><input checked="checked" id="__tabbed_8_1" name="__tabbed_8" type="radio" /><input id="__tabbed_8_2" name="__tabbed_8" type="radio" /><input id="__tabbed_8_3" name="__tabbed_8" type="radio" /><div class="tabbed-labels"><label for="__tabbed_8_1">GraphQL</label><label for="__tabbed_8_2">PowerShell SDK</label><label for="__tabbed_8_3">Shell</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="language-graphql highlight"><pre><span></span><code><span id="__span-22-1"><a id="__codelineno-22-1" name="__codelineno-22-1" href="#__codelineno-22-1"></a><span class="k">mutation</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-22-2"><a id="__codelineno-22-2" name="__codelineno-22-2" href="#__codelineno-22-2"></a><span class="w">  </span><span class="n">deleteNutanixMountV1</span><span class="p">(</span><span class="n">input</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-22-3"><a id="__codelineno-22-3" name="__codelineno-22-3" href="#__codelineno-22-3"></a><span class="w">    </span><span class="n">id</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;0a1b2c3d-4e5f-6789-abcd-ef0123456789&quot;</span>
+</span><span id="__span-22-4"><a id="__codelineno-22-4" name="__codelineno-22-4" href="#__codelineno-22-4"></a><span class="w">  </span><span class="p">})</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-22-5"><a id="__codelineno-22-5" name="__codelineno-22-5" href="#__codelineno-22-5"></a><span class="w">    </span><span class="n">id</span>
+</span><span id="__span-22-6"><a id="__codelineno-22-6" name="__codelineno-22-6" href="#__codelineno-22-6"></a><span class="w">    </span><span class="n">status</span>
+</span><span id="__span-22-7"><a id="__codelineno-22-7" name="__codelineno-22-7" href="#__codelineno-22-7"></a><span class="w">    </span><span class="n">progress</span>
+</span><span id="__span-22-8"><a id="__codelineno-22-8" name="__codelineno-22-8" href="#__codelineno-22-8"></a><span class="w">    </span><span class="n">error</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-22-9"><a id="__codelineno-22-9" name="__codelineno-22-9" href="#__codelineno-22-9"></a><span class="w">      </span><span class="n">message</span>
+</span><span id="__span-22-10"><a id="__codelineno-22-10" name="__codelineno-22-10" href="#__codelineno-22-10"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-22-11"><a id="__codelineno-22-11" name="__codelineno-22-11" href="#__codelineno-22-11"></a><span class="w">  </span><span class="p">}</span>
+</span><span id="__span-22-12"><a id="__codelineno-22-12" name="__codelineno-22-12" href="#__codelineno-22-12"></a><span class="p">}</span>
+</span></code></pre></div>
+</div>
+<div class="tabbed-block">
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-23-1"><a id="__codelineno-23-1" name="__codelineno-23-1" href="#__codelineno-23-1"></a><span class="c"># Tear down a Live Mount. The id here is the Live Mount object ID,</span>
+</span><span id="__span-23-2"><a id="__codelineno-23-2" name="__codelineno-23-2" href="#__codelineno-23-2"></a><span class="c"># not the async request ID returned by mountNutanixSnapshotV1.</span>
+</span><span id="__span-23-3"><a id="__codelineno-23-3" name="__codelineno-23-3" href="#__codelineno-23-3"></a><span class="nv">$mutation</span> <span class="p">=</span> <span class="nb">New-RscMutation</span> <span class="n">-GqlMutation</span> <span class="n">deleteNutanixMountV1</span>
+</span><span id="__span-23-4"><a id="__codelineno-23-4" name="__codelineno-23-4" href="#__codelineno-23-4"></a><span class="nv">$mutation</span><span class="p">.</span><span class="n">Var</span><span class="p">.</span><span class="n">input</span> <span class="p">=</span> <span class="nb">Get-RscType</span> <span class="n">-Name</span> <span class="n">DeleteNutanixMountV1Input</span>
+</span><span id="__span-23-5"><a id="__codelineno-23-5" name="__codelineno-23-5" href="#__codelineno-23-5"></a><span class="nv">$mutation</span><span class="p">.</span><span class="n">Var</span><span class="p">.</span><span class="n">input</span><span class="p">.</span><span class="n">id</span> <span class="p">=</span> <span class="s2">&quot;0a1b2c3d-4e5f-6789-abcd-ef0123456789&quot;</span>
+</span><span id="__span-23-6"><a id="__codelineno-23-6" name="__codelineno-23-6" href="#__codelineno-23-6"></a><span class="nv">$mutation</span><span class="p">.</span><span class="n">Field</span> <span class="p">=</span> <span class="nb">Get-RscType</span> <span class="n">-Name</span> <span class="n">AsyncRequestStatus</span> <span class="n">-InitialProperties</span> <span class="n">id</span><span class="p">,</span> <span class="n">status</span>
+</span><span id="__span-23-7"><a id="__codelineno-23-7" name="__codelineno-23-7" href="#__codelineno-23-7"></a><span class="nv">$mutation</span><span class="p">.</span><span class="n">Invoke</span><span class="p">()</span>
+</span></code></pre></div>
+</div>
+<div class="tabbed-block">
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-24-1"><a id="__codelineno-24-1" name="__codelineno-24-1" href="#__codelineno-24-1"></a><span class="ch">#!/bin/bash</span>
+</span><span id="__span-24-2"><a id="__codelineno-24-2" name="__codelineno-24-2" href="#__codelineno-24-2"></a>
+</span><span id="__span-24-3"><a id="__codelineno-24-3" name="__codelineno-24-3" href="#__codelineno-24-3"></a><span class="c1"># RSC_TOKEN=&quot;YOUR_RSC_ACCESS_TOKEN&quot;</span>
+</span><span id="__span-24-4"><a id="__codelineno-24-4" name="__codelineno-24-4" href="#__codelineno-24-4"></a><span class="c1"># id = the Live Mount object ID (not the async request ID from the mount call)</span>
+</span><span id="__span-24-5"><a id="__codelineno-24-5" name="__codelineno-24-5" href="#__codelineno-24-5"></a><span class="nv">query</span><span class="o">=</span><span class="s2">&quot;mutation { deleteNutanixMountV1(input: { id: \\\&quot;0a1b2c3d-4e5f-6789-abcd-ef0123456789\\\&quot; }) { id status progress error { message } } }&quot;</span>
+</span><span id="__span-24-6"><a id="__codelineno-24-6" name="__codelineno-24-6" href="#__codelineno-24-6"></a>
+</span><span id="__span-24-7"><a id="__codelineno-24-7" name="__codelineno-24-7" href="#__codelineno-24-7"></a><span class="c1"># Execute the GraphQL mutation with curl</span>
+</span><span id="__span-24-8"><a id="__codelineno-24-8" name="__codelineno-24-8" href="#__codelineno-24-8"></a>curl<span class="w"> </span>-X<span class="w"> </span>POST<span class="w"> </span><span class="se">\</span>
+</span><span id="__span-24-9"><a id="__codelineno-24-9" name="__codelineno-24-9" href="#__codelineno-24-9"></a><span class="w">  </span>-H<span class="w"> </span><span class="s2">&quot;Content-Type: application/json&quot;</span><span class="w"> </span><span class="se">\</span>
+</span><span id="__span-24-10"><a id="__codelineno-24-10" name="__codelineno-24-10" href="#__codelineno-24-10"></a><span class="w">  </span>-H<span class="w"> </span><span class="s2">&quot;Authorization: Bearer </span><span class="nv">$RSC_TOKEN</span><span class="s2">&quot;</span><span class="w"> </span><span class="se">\</span>
+</span><span id="__span-24-11"><a id="__codelineno-24-11" name="__codelineno-24-11" href="#__codelineno-24-11"></a><span class="w">  </span>-d<span class="w"> </span><span class="s2">&quot;{\&quot;query\&quot;: \&quot;</span><span class="nv">$query</span><span class="s2">\&quot;}&quot;</span><span class="w"> </span><span class="se">\</span>
+</span><span id="__span-24-12"><a id="__codelineno-24-12" name="__codelineno-24-12" href="#__codelineno-24-12"></a><span class="w">  </span>https://example.my.rubrik.com/api/graphql
+</span></code></pre></div>
+</div>
+</div>
+</div>
+<h3 id="in-place-restore">In-Place Restore</h3>
+<p>Use <code>inplaceExportNutanixSnapshot</code> to overwrite the source VM with a snapshot, restoring it to its original location. No target needs to be specified. Requires Rubrik CDM v9.3 or later.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>In-place restore overwrites the existing VM. Set <code>shouldKeepRollbackSnapshot: true</code> to capture the VM's pre-restore state first, so you can roll back if the recovery point is wrong.</p>
+</div>
+<div class="tabbed-set tabbed-alternate" data-tabs="9:3"><input checked="checked" id="__tabbed_9_1" name="__tabbed_9" type="radio" /><input id="__tabbed_9_2" name="__tabbed_9" type="radio" /><input id="__tabbed_9_3" name="__tabbed_9" type="radio" /><div class="tabbed-labels"><label for="__tabbed_9_1">GraphQL</label><label for="__tabbed_9_2">PowerShell SDK</label><label for="__tabbed_9_3">Shell</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="language-graphql highlight"><pre><span></span><code><span id="__span-25-1"><a id="__codelineno-25-1" name="__codelineno-25-1" href="#__codelineno-25-1"></a><span class="k">mutation</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-25-2"><a id="__codelineno-25-2" name="__codelineno-25-2" href="#__codelineno-25-2"></a><span class="w">  </span><span class="n">inplaceExportNutanixSnapshot</span><span class="p">(</span><span class="n">input</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-25-3"><a id="__codelineno-25-3" name="__codelineno-25-3" href="#__codelineno-25-3"></a><span class="w">    </span><span class="n">id</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;f5bc5502-b9a6-4759-bf02-05dc5a48f9f7&quot;</span>
+</span><span id="__span-25-4"><a id="__codelineno-25-4" name="__codelineno-25-4" href="#__codelineno-25-4"></a><span class="w">    </span><span class="n">config</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-25-5"><a id="__codelineno-25-5" name="__codelineno-25-5" href="#__codelineno-25-5"></a><span class="w">      </span><span class="n">containerNaturalId</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;0005a1b2-1234-5678-90ab-cdef01234567&quot;</span>
+</span><span id="__span-25-6"><a id="__codelineno-25-6" name="__codelineno-25-6" href="#__codelineno-25-6"></a><span class="w">      </span><span class="n">powerOn</span><span class="p">:</span><span class="w"> </span><span class="nb">true</span>
+</span><span id="__span-25-7"><a id="__codelineno-25-7" name="__codelineno-25-7" href="#__codelineno-25-7"></a><span class="w">      </span><span class="n">shouldKeepRollbackSnapshot</span><span class="p">:</span><span class="w"> </span><span class="nb">true</span>
+</span><span id="__span-25-8"><a id="__codelineno-25-8" name="__codelineno-25-8" href="#__codelineno-25-8"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-25-9"><a id="__codelineno-25-9" name="__codelineno-25-9" href="#__codelineno-25-9"></a><span class="w">  </span><span class="p">})</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-25-10"><a id="__codelineno-25-10" name="__codelineno-25-10" href="#__codelineno-25-10"></a><span class="w">    </span><span class="n">id</span>
+</span><span id="__span-25-11"><a id="__codelineno-25-11" name="__codelineno-25-11" href="#__codelineno-25-11"></a><span class="w">    </span><span class="n">status</span>
+</span><span id="__span-25-12"><a id="__codelineno-25-12" name="__codelineno-25-12" href="#__codelineno-25-12"></a><span class="w">    </span><span class="n">progress</span>
+</span><span id="__span-25-13"><a id="__codelineno-25-13" name="__codelineno-25-13" href="#__codelineno-25-13"></a><span class="w">    </span><span class="n">error</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-25-14"><a id="__codelineno-25-14" name="__codelineno-25-14" href="#__codelineno-25-14"></a><span class="w">      </span><span class="n">message</span>
+</span><span id="__span-25-15"><a id="__codelineno-25-15" name="__codelineno-25-15" href="#__codelineno-25-15"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-25-16"><a id="__codelineno-25-16" name="__codelineno-25-16" href="#__codelineno-25-16"></a><span class="w">  </span><span class="p">}</span>
+</span><span id="__span-25-17"><a id="__codelineno-25-17" name="__codelineno-25-17" href="#__codelineno-25-17"></a><span class="p">}</span>
+</span></code></pre></div>
+</div>
+<div class="tabbed-block">
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-26-1"><a id="__codelineno-26-1" name="__codelineno-26-1" href="#__codelineno-26-1"></a><span class="c"># Retrieve the source VM, then its most recent snapshot</span>
+</span><span id="__span-26-2"><a id="__codelineno-26-2" name="__codelineno-26-2" href="#__codelineno-26-2"></a><span class="nv">$vm</span> <span class="p">=</span> <span class="nb">Get-RscNutanixVm</span> <span class="n">-Name</span> <span class="s2">&quot;example&quot;</span>
+</span><span id="__span-26-3"><a id="__codelineno-26-3" name="__codelineno-26-3" href="#__codelineno-26-3"></a>
+</span><span id="__span-26-4"><a id="__codelineno-26-4" name="__codelineno-26-4" href="#__codelineno-26-4"></a><span class="nv">$snapshotQuery</span> <span class="p">=</span> <span class="nb">New-RscQuery</span> <span class="n">-GqlQuery</span> <span class="n">nutanixVm</span>
+</span><span id="__span-26-5"><a id="__codelineno-26-5" name="__codelineno-26-5" href="#__codelineno-26-5"></a><span class="nv">$snapshotQuery</span><span class="p">.</span><span class="n">Var</span><span class="p">.</span><span class="n">fid</span> <span class="p">=</span> <span class="nv">$vm</span><span class="p">.</span><span class="n">Id</span>
+</span><span id="__span-26-6"><a id="__codelineno-26-6" name="__codelineno-26-6" href="#__codelineno-26-6"></a><span class="nv">$snapshotQuery</span><span class="p">.</span><span class="n">Field</span><span class="p">.</span><span class="n">SnapshotConnection</span><span class="p">.</span><span class="n">Nodes</span> <span class="p">=</span> <span class="p">@(</span><span class="nb">Get-RscType</span> <span class="n">-Name</span> <span class="n">CdmSnapshot</span> <span class="n">-InitialProperties</span> <span class="n">id</span><span class="p">,</span> <span class="n">date</span><span class="p">)</span>
+</span><span id="__span-26-7"><a id="__codelineno-26-7" name="__codelineno-26-7" href="#__codelineno-26-7"></a><span class="nv">$snapshotId</span> <span class="p">=</span> <span class="nv">$snapshotQuery</span><span class="p">.</span><span class="n">Invoke</span><span class="p">().</span><span class="n">SnapshotConnection</span><span class="p">.</span><span class="n">Nodes</span><span class="p">[</span><span class="n">0</span><span class="p">].</span><span class="n">Id</span>
+</span><span id="__span-26-8"><a id="__codelineno-26-8" name="__codelineno-26-8" href="#__codelineno-26-8"></a>
+</span><span id="__span-26-9"><a id="__codelineno-26-9" name="__codelineno-26-9" href="#__codelineno-26-9"></a><span class="c"># In-place restore overwrites the source VM with the snapshot (CDM v9.3+).</span>
+</span><span id="__span-26-10"><a id="__codelineno-26-10" name="__codelineno-26-10" href="#__codelineno-26-10"></a><span class="c"># shouldKeepRollbackSnapshot captures the pre-restore state so you can roll back.</span>
+</span><span id="__span-26-11"><a id="__codelineno-26-11" name="__codelineno-26-11" href="#__codelineno-26-11"></a><span class="nv">$mutation</span> <span class="p">=</span> <span class="nb">New-RscMutation</span> <span class="n">-GqlMutation</span> <span class="n">inplaceExportNutanixSnapshot</span>
+</span><span id="__span-26-12"><a id="__codelineno-26-12" name="__codelineno-26-12" href="#__codelineno-26-12"></a><span class="nv">$mutation</span><span class="p">.</span><span class="n">Var</span><span class="p">.</span><span class="n">input</span> <span class="p">=</span> <span class="nb">Get-RscType</span> <span class="n">-Name</span> <span class="n">CreateNutanixInplaceExportInput</span> <span class="n">-InitialProperties</span> <span class="n">config</span>
+</span><span id="__span-26-13"><a id="__codelineno-26-13" name="__codelineno-26-13" href="#__codelineno-26-13"></a><span class="nv">$mutation</span><span class="p">.</span><span class="n">Var</span><span class="p">.</span><span class="n">input</span><span class="p">.</span><span class="n">id</span> <span class="p">=</span> <span class="nv">$snapshotId</span>
+</span><span id="__span-26-14"><a id="__codelineno-26-14" name="__codelineno-26-14" href="#__codelineno-26-14"></a><span class="nv">$mutation</span><span class="p">.</span><span class="n">Var</span><span class="p">.</span><span class="n">input</span><span class="p">.</span><span class="n">config</span><span class="p">.</span><span class="n">containerNaturalId</span> <span class="p">=</span> <span class="s2">&quot;0005a1b2-1234-5678-90ab-cdef01234567&quot;</span>
+</span><span id="__span-26-15"><a id="__codelineno-26-15" name="__codelineno-26-15" href="#__codelineno-26-15"></a><span class="nv">$mutation</span><span class="p">.</span><span class="n">Var</span><span class="p">.</span><span class="n">input</span><span class="p">.</span><span class="n">config</span><span class="p">.</span><span class="n">powerOn</span> <span class="p">=</span> <span class="nv">$true</span>
+</span><span id="__span-26-16"><a id="__codelineno-26-16" name="__codelineno-26-16" href="#__codelineno-26-16"></a><span class="nv">$mutation</span><span class="p">.</span><span class="n">Var</span><span class="p">.</span><span class="n">input</span><span class="p">.</span><span class="n">config</span><span class="p">.</span><span class="n">shouldKeepRollbackSnapshot</span> <span class="p">=</span> <span class="nv">$true</span>
+</span><span id="__span-26-17"><a id="__codelineno-26-17" name="__codelineno-26-17" href="#__codelineno-26-17"></a><span class="nv">$mutation</span><span class="p">.</span><span class="n">Field</span> <span class="p">=</span> <span class="nb">Get-RscType</span> <span class="n">-Name</span> <span class="n">AsyncRequestStatus</span> <span class="n">-InitialProperties</span> <span class="n">id</span><span class="p">,</span> <span class="n">status</span>
+</span><span id="__span-26-18"><a id="__codelineno-26-18" name="__codelineno-26-18" href="#__codelineno-26-18"></a><span class="nv">$mutation</span><span class="p">.</span><span class="n">Invoke</span><span class="p">()</span>
+</span></code></pre></div>
+</div>
+<div class="tabbed-block">
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-27-1"><a id="__codelineno-27-1" name="__codelineno-27-1" href="#__codelineno-27-1"></a><span class="ch">#!/bin/bash</span>
+</span><span id="__span-27-2"><a id="__codelineno-27-2" name="__codelineno-27-2" href="#__codelineno-27-2"></a>
+</span><span id="__span-27-3"><a id="__codelineno-27-3" name="__codelineno-27-3" href="#__codelineno-27-3"></a><span class="c1"># RSC_TOKEN=&quot;YOUR_RSC_ACCESS_TOKEN&quot;</span>
+</span><span id="__span-27-4"><a id="__codelineno-27-4" name="__codelineno-27-4" href="#__codelineno-27-4"></a><span class="c1"># id = the snapshot FID (not the VM FID). Overwrites the source VM (CDM v9.3+).</span>
+</span><span id="__span-27-5"><a id="__codelineno-27-5" name="__codelineno-27-5" href="#__codelineno-27-5"></a><span class="c1"># shouldKeepRollbackSnapshot captures the pre-restore state so you can roll back.</span>
+</span><span id="__span-27-6"><a id="__codelineno-27-6" name="__codelineno-27-6" href="#__codelineno-27-6"></a><span class="nv">query</span><span class="o">=</span><span class="s2">&quot;mutation { inplaceExportNutanixSnapshot(input: { id: \\\&quot;f5bc5502-b9a6-4759-bf02-05dc5a48f9f7\\\&quot; config: { containerNaturalId: \\\&quot;0005a1b2-1234-5678-90ab-cdef01234567\\\&quot; powerOn: true shouldKeepRollbackSnapshot: true } }) { id status progress error { message } } }&quot;</span>
+</span><span id="__span-27-7"><a id="__codelineno-27-7" name="__codelineno-27-7" href="#__codelineno-27-7"></a>
+</span><span id="__span-27-8"><a id="__codelineno-27-8" name="__codelineno-27-8" href="#__codelineno-27-8"></a><span class="c1"># Execute the GraphQL mutation with curl</span>
+</span><span id="__span-27-9"><a id="__codelineno-27-9" name="__codelineno-27-9" href="#__codelineno-27-9"></a>curl<span class="w"> </span>-X<span class="w"> </span>POST<span class="w"> </span><span class="se">\</span>
+</span><span id="__span-27-10"><a id="__codelineno-27-10" name="__codelineno-27-10" href="#__codelineno-27-10"></a><span class="w">  </span>-H<span class="w"> </span><span class="s2">&quot;Content-Type: application/json&quot;</span><span class="w"> </span><span class="se">\</span>
+</span><span id="__span-27-11"><a id="__codelineno-27-11" name="__codelineno-27-11" href="#__codelineno-27-11"></a><span class="w">  </span>-H<span class="w"> </span><span class="s2">&quot;Authorization: Bearer </span><span class="nv">$RSC_TOKEN</span><span class="s2">&quot;</span><span class="w"> </span><span class="se">\</span>
+</span><span id="__span-27-12"><a id="__codelineno-27-12" name="__codelineno-27-12" href="#__codelineno-27-12"></a><span class="w">  </span>-d<span class="w"> </span><span class="s2">&quot;{\&quot;query\&quot;: \&quot;</span><span class="nv">$query</span><span class="s2">\&quot;}&quot;</span><span class="w"> </span><span class="se">\</span>
+</span><span id="__span-27-13"><a id="__codelineno-27-13" name="__codelineno-27-13" href="#__codelineno-27-13"></a><span class="w">  </span>https://example.my.rubrik.com/api/graphql
+</span></code></pre></div>
+</div>
+</div>
+</div>
+<h3 id="file-level-restore">File-Level Restore</h3>
+<p>To restore specific files or directories from a snapshot back into the source VM (or a target VM), use <code>restoreFilesNutanixSnapshot</code>. This requires the Rubrik Backup Service to be installed and registered inside the VM — see <a href="#register-the-rubrik-backup-service-rbs">Register the Rubrik Backup Service</a>. The <code>config.restoreConfig</code> array lists each file's source <code>path</code> and <code>restorePath</code>.</p>
+<h2 id="monitor-jobs">Monitor Jobs</h2>
+<p>Backup and recovery operations are asynchronous and return an <code>AsyncRequestStatus</code> with a request <code>id</code>. Poll <code>nutanixVmAsyncRequestStatus</code> with that <code>id</code> and a <code>clusterUuid</code> to track progress.</p>
+<div class="admonition warning">
+<p class="admonition-title"><code>clusterUuid</code> is required and is not returned by the mutation</p>
+<p>The recovery and backup mutations do not return <code>clusterUuid</code>. Retrieve it from the VM's <code>cluster { id }</code> field (from the discovery query) and pass it alongside the request <code>id</code>. Cluster- and Prism-Central-level operations are tracked with <code>nutanixClusterAsyncRequestStatus</code> and <code>nutanixPrismCentralAsyncRequestStatus</code> respectively.</p>
+</div>
+<p>The request <code>id</code> follows the format <code>{JOB_TYPE}_{vm-id}_{run-id}:::0</code>, where <code>vm-id</code> is the FID of the source VM, <code>run-id</code> is a unique identifier for that job execution, and <code>0</code> is the instance number. The job type prefix differs from the mutation name:</p>
+<table>
+<thead>
+<tr>
+<th>Operation</th>
+<th>Job type prefix</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>createOnDemandNutanixBackup</code></td>
+<td><code>CREATE_NUTANIX_SNAPSHOT</code></td>
+</tr>
+<tr>
+<td><code>exportNutanixSnapshot</code></td>
+<td><code>EXPORT_NUTANIX_SNAPSHOT</code></td>
+</tr>
+<tr>
+<td><code>mountNutanixSnapshotV1</code></td>
+<td><code>MOUNT_NUTANIX_SNAPSHOT</code></td>
+</tr>
+<tr>
+<td><code>inplaceExportNutanixSnapshot</code></td>
+<td><code>INPLACE_EXPORT_NUTANIX_SNAPSHOT</code></td>
+</tr>
+<tr>
+<td><code>deleteNutanixMountV1</code></td>
+<td><code>UNMOUNT_NUTANIX_SNAPSHOT</code></td>
+</tr>
+</tbody>
+</table>
+<div class="tabbed-set tabbed-alternate" data-tabs="10:3"><input checked="checked" id="__tabbed_10_1" name="__tabbed_10" type="radio" /><input id="__tabbed_10_2" name="__tabbed_10" type="radio" /><input id="__tabbed_10_3" name="__tabbed_10" type="radio" /><div class="tabbed-labels"><label for="__tabbed_10_1">GraphQL</label><label for="__tabbed_10_2">PowerShell SDK</label><label for="__tabbed_10_3">Shell</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="language-graphql highlight"><pre><span></span><code><span id="__span-28-1"><a id="__codelineno-28-1" name="__codelineno-28-1" href="#__codelineno-28-1"></a><span class="k">query</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-28-2"><a id="__codelineno-28-2" name="__codelineno-28-2" href="#__codelineno-28-2"></a><span class="w">  </span><span class="n">nutanixVmAsyncRequestStatus</span><span class="p">(</span><span class="n">input</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-28-3"><a id="__codelineno-28-3" name="__codelineno-28-3" href="#__codelineno-28-3"></a><span class="w">    </span><span class="n">id</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;CREATE_NUTANIX_SNAPSHOT_6450b2bb-3114-45ab-a45e-049c7f27b58e-vm-f5bc5502-b9a6-4759-bf02-05dc5a48f9f7_b83291a3-fa87-4aab-863a-60b415215b19:::0&quot;</span>
+</span><span id="__span-28-4"><a id="__codelineno-28-4" name="__codelineno-28-4" href="#__codelineno-28-4"></a><span class="w">    </span><span class="n">clusterUuid</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;85e98e61-4c1f-496a-b846-5eb871966025&quot;</span>
+</span><span id="__span-28-5"><a id="__codelineno-28-5" name="__codelineno-28-5" href="#__codelineno-28-5"></a><span class="w">  </span><span class="p">})</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-28-6"><a id="__codelineno-28-6" name="__codelineno-28-6" href="#__codelineno-28-6"></a><span class="w">    </span><span class="n">progress</span>
+</span><span id="__span-28-7"><a id="__codelineno-28-7" name="__codelineno-28-7" href="#__codelineno-28-7"></a><span class="w">    </span><span class="n">status</span>
+</span><span id="__span-28-8"><a id="__codelineno-28-8" name="__codelineno-28-8" href="#__codelineno-28-8"></a><span class="w">    </span><span class="n">result</span>
+</span><span id="__span-28-9"><a id="__codelineno-28-9" name="__codelineno-28-9" href="#__codelineno-28-9"></a><span class="w">    </span><span class="n">error</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-28-10"><a id="__codelineno-28-10" name="__codelineno-28-10" href="#__codelineno-28-10"></a><span class="w">      </span><span class="n">message</span>
+</span><span id="__span-28-11"><a id="__codelineno-28-11" name="__codelineno-28-11" href="#__codelineno-28-11"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-28-12"><a id="__codelineno-28-12" name="__codelineno-28-12" href="#__codelineno-28-12"></a><span class="w">  </span><span class="p">}</span>
+</span><span id="__span-28-13"><a id="__codelineno-28-13" name="__codelineno-28-13" href="#__codelineno-28-13"></a><span class="p">}</span>
+</span></code></pre></div>
+</div>
+<div class="tabbed-block">
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-29-1"><a id="__codelineno-29-1" name="__codelineno-29-1" href="#__codelineno-29-1"></a><span class="nv">$requestId</span> <span class="p">=</span> <span class="s2">&quot;CREATE_NUTANIX_SNAPSHOT_6450b2bb-3114-45ab-a45e-049c7f27b58e-vm-f5bc5502-b9a6-4759-bf02-05dc5a48f9f7_b83291a3-fa87-4aab-863a-60b415215b19:::0&quot;</span>
+</span><span id="__span-29-2"><a id="__codelineno-29-2" name="__codelineno-29-2" href="#__codelineno-29-2"></a><span class="nv">$vm</span> <span class="p">=</span> <span class="nb">Get-RscNutanixVm</span> <span class="n">-name</span> <span class="s2">&quot;example&quot;</span>
+</span><span id="__span-29-3"><a id="__codelineno-29-3" name="__codelineno-29-3" href="#__codelineno-29-3"></a>
+</span><span id="__span-29-4"><a id="__codelineno-29-4" name="__codelineno-29-4" href="#__codelineno-29-4"></a><span class="nv">$query</span> <span class="p">=</span> <span class="nb">New-RscQuery</span> <span class="n">-GqlQuery</span> <span class="n">nutanixVmAsyncRequestStatus</span>
+</span><span id="__span-29-5"><a id="__codelineno-29-5" name="__codelineno-29-5" href="#__codelineno-29-5"></a><span class="nv">$query</span><span class="p">.</span><span class="n">var</span><span class="p">.</span><span class="n">input</span><span class="p">.</span><span class="n">id</span> <span class="p">=</span> <span class="nv">$requestId</span>
+</span><span id="__span-29-6"><a id="__codelineno-29-6" name="__codelineno-29-6" href="#__codelineno-29-6"></a><span class="nv">$query</span><span class="p">.</span><span class="n">var</span><span class="p">.</span><span class="n">input</span><span class="p">.</span><span class="n">clusterUuid</span> <span class="p">=</span> <span class="nv">$vm</span><span class="p">.</span><span class="n">cluster</span><span class="p">.</span><span class="n">Id</span>
+</span><span id="__span-29-7"><a id="__codelineno-29-7" name="__codelineno-29-7" href="#__codelineno-29-7"></a><span class="nv">$query</span><span class="p">.</span><span class="n">invoke</span><span class="p">()</span>
+</span></code></pre></div>
+</div>
+<div class="tabbed-block">
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-30-1"><a id="__codelineno-30-1" name="__codelineno-30-1" href="#__codelineno-30-1"></a><span class="ch">#!/bin/bash</span>
+</span><span id="__span-30-2"><a id="__codelineno-30-2" name="__codelineno-30-2" href="#__codelineno-30-2"></a>
+</span><span id="__span-30-3"><a id="__codelineno-30-3" name="__codelineno-30-3" href="#__codelineno-30-3"></a><span class="c1"># RSC_TOKEN=&quot;YOUR_RSC_ACCESS_TOKEN&quot;</span>
+</span><span id="__span-30-4"><a id="__codelineno-30-4" name="__codelineno-30-4" href="#__codelineno-30-4"></a><span class="nv">query</span><span class="o">=</span><span class="s2">&quot;query { nutanixVmAsyncRequestStatus(input: { id: \\\&quot;CREATE_NUTANIX_SNAPSHOT_6450b2bb-3114-45ab-a45e-049c7f27b58e-vm-f5bc5502-b9a6-4759-bf02-05dc5a48f9f7_b83291a3-fa87-4aab-863a-60b415215b19:::0\\\&quot; clusterUuid: \\\&quot;85e98e61-4c1f-496a-b846-5eb871966025\\\&quot; }) { progress status result error { message } } }&quot;</span>
+</span><span id="__span-30-5"><a id="__codelineno-30-5" name="__codelineno-30-5" href="#__codelineno-30-5"></a>
+</span><span id="__span-30-6"><a id="__codelineno-30-6" name="__codelineno-30-6" href="#__codelineno-30-6"></a><span class="c1"># Execute the GraphQL query with curl</span>
+</span><span id="__span-30-7"><a id="__codelineno-30-7" name="__codelineno-30-7" href="#__codelineno-30-7"></a>curl<span class="w"> </span>-X<span class="w"> </span>POST<span class="w"> </span><span class="se">\</span>
+</span><span id="__span-30-8"><a id="__codelineno-30-8" name="__codelineno-30-8" href="#__codelineno-30-8"></a><span class="w">  </span>-H<span class="w"> </span><span class="s2">&quot;Content-Type: application/json&quot;</span><span class="w"> </span><span class="se">\</span>
+</span><span id="__span-30-9"><a id="__codelineno-30-9" name="__codelineno-30-9" href="#__codelineno-30-9"></a><span class="w">  </span>-H<span class="w"> </span><span class="s2">&quot;Authorization: Bearer </span><span class="nv">$RSC_TOKEN</span><span class="s2">&quot;</span><span class="w"> </span><span class="se">\</span>
+</span><span id="__span-30-10"><a id="__codelineno-30-10" name="__codelineno-30-10" href="#__codelineno-30-10"></a><span class="w">  </span>-d<span class="w"> </span><span class="s2">&quot;{\&quot;query\&quot;: \&quot;</span><span class="nv">$query</span><span class="s2">\&quot;}&quot;</span><span class="w"> </span><span class="se">\</span>
+</span><span id="__span-30-11"><a id="__codelineno-30-11" name="__codelineno-30-11" href="#__codelineno-30-11"></a><span class="w">  </span>https://example.my.rubrik.com/api/graphql
+</span></code></pre></div>
+</div>
+</div>
+</div>
+<h2 id="set-up">Set Up</h2>
+<p>The operations below register a Nutanix environment with Rubrik for the first time. Once registered, VMs are discovered automatically and the day-to-day operations above apply. You only need these when onboarding a new cluster or Prism Central.</p>
+<h3 id="register-a-prism-central">Register a Prism Central</h3>
+<p>Prism Central (v9.0+) auto-discovers all Prism Element clusters it manages. Provide the <code>prismElementCdmTuple</code> list to map each Prism Element cluster UUID to the Rubrik CDM cluster that will protect it. <code>caCerts</code> is the Base64-encoded DER certificate chain for the Prism Central host.</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="11:3"><input checked="checked" id="__tabbed_11_1" name="__tabbed_11" type="radio" /><input id="__tabbed_11_2" name="__tabbed_11" type="radio" /><input id="__tabbed_11_3" name="__tabbed_11" type="radio" /><div class="tabbed-labels"><label for="__tabbed_11_1">GraphQL</label><label for="__tabbed_11_2">PowerShell SDK</label><label for="__tabbed_11_3">Shell</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="language-graphql highlight"><pre><span></span><code><span id="__span-31-1"><a id="__codelineno-31-1" name="__codelineno-31-1" href="#__codelineno-31-1"></a><span class="k">mutation</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-31-2"><a id="__codelineno-31-2" name="__codelineno-31-2" href="#__codelineno-31-2"></a><span class="w">  </span><span class="n">createNutanixPrismCentral</span><span class="p">(</span><span class="n">input</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-31-3"><a id="__codelineno-31-3" name="__codelineno-31-3" href="#__codelineno-31-3"></a><span class="w">    </span><span class="n">prismCentralConfig</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-31-4"><a id="__codelineno-31-4" name="__codelineno-31-4" href="#__codelineno-31-4"></a><span class="w">      </span><span class="n">hostname</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;prism-central.example.com&quot;</span>
+</span><span id="__span-31-5"><a id="__codelineno-31-5" name="__codelineno-31-5" href="#__codelineno-31-5"></a><span class="w">      </span><span class="n">username</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;admin&quot;</span>
+</span><span id="__span-31-6"><a id="__codelineno-31-6" name="__codelineno-31-6" href="#__codelineno-31-6"></a><span class="w">      </span><span class="n">password</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;your-password&quot;</span>
+</span><span id="__span-31-7"><a id="__codelineno-31-7" name="__codelineno-31-7" href="#__codelineno-31-7"></a><span class="w">      </span><span class="n">caCerts</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;-----BEGIN CERTIFICATE-----</span><span class="se">\n</span><span class="s">MIID....</span><span class="se">\n</span><span class="s">-----END CERTIFICATE-----&quot;</span>
+</span><span id="__span-31-8"><a id="__codelineno-31-8" name="__codelineno-31-8" href="#__codelineno-31-8"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-31-9"><a id="__codelineno-31-9" name="__codelineno-31-9" href="#__codelineno-31-9"></a><span class="w">    </span><span class="n">prismElementCdmTuple</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+</span><span id="__span-31-10"><a id="__codelineno-31-10" name="__codelineno-31-10" href="#__codelineno-31-10"></a><span class="w">      </span><span class="p">{</span>
+</span><span id="__span-31-11"><a id="__codelineno-31-11" name="__codelineno-31-11" href="#__codelineno-31-11"></a><span class="w">        </span><span class="n">nutanixClusterUuid</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;00057b6e-1234-5678-0000-000000abcdef&quot;</span>
+</span><span id="__span-31-12"><a id="__codelineno-31-12" name="__codelineno-31-12" href="#__codelineno-31-12"></a><span class="w">        </span><span class="n">cdmClusterUuid</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;8417a938-96f5-43c6-9905-b36e051c5f98&quot;</span>
+</span><span id="__span-31-13"><a id="__codelineno-31-13" name="__codelineno-31-13" href="#__codelineno-31-13"></a><span class="w">      </span><span class="p">}</span>
+</span><span id="__span-31-14"><a id="__codelineno-31-14" name="__codelineno-31-14" href="#__codelineno-31-14"></a><span class="w">    </span><span class="p">]</span>
+</span><span id="__span-31-15"><a id="__codelineno-31-15" name="__codelineno-31-15" href="#__codelineno-31-15"></a><span class="w">    </span><span class="n">isDrEnabled</span><span class="p">:</span><span class="w"> </span><span class="nb">false</span>
+</span><span id="__span-31-16"><a id="__codelineno-31-16" name="__codelineno-31-16" href="#__codelineno-31-16"></a><span class="w">  </span><span class="p">})</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-31-17"><a id="__codelineno-31-17" name="__codelineno-31-17" href="#__codelineno-31-17"></a><span class="w">    </span><span class="n">requestStatuses</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-31-18"><a id="__codelineno-31-18" name="__codelineno-31-18" href="#__codelineno-31-18"></a><span class="w">      </span><span class="n">id</span>
+</span><span id="__span-31-19"><a id="__codelineno-31-19" name="__codelineno-31-19" href="#__codelineno-31-19"></a><span class="w">      </span><span class="n">status</span>
+</span><span id="__span-31-20"><a id="__codelineno-31-20" name="__codelineno-31-20" href="#__codelineno-31-20"></a><span class="w">      </span><span class="n">error</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-31-21"><a id="__codelineno-31-21" name="__codelineno-31-21" href="#__codelineno-31-21"></a><span class="w">        </span><span class="n">message</span>
+</span><span id="__span-31-22"><a id="__codelineno-31-22" name="__codelineno-31-22" href="#__codelineno-31-22"></a><span class="w">      </span><span class="p">}</span>
+</span><span id="__span-31-23"><a id="__codelineno-31-23" name="__codelineno-31-23" href="#__codelineno-31-23"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-31-24"><a id="__codelineno-31-24" name="__codelineno-31-24" href="#__codelineno-31-24"></a><span class="w">  </span><span class="p">}</span>
+</span><span id="__span-31-25"><a id="__codelineno-31-25" name="__codelineno-31-25" href="#__codelineno-31-25"></a><span class="p">}</span>
+</span></code></pre></div>
+</div>
+<div class="tabbed-block">
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-32-1"><a id="__codelineno-32-1" name="__codelineno-32-1" href="#__codelineno-32-1"></a><span class="c"># No toolkit cmdlet available</span>
+</span><span id="__span-32-2"><a id="__codelineno-32-2" name="__codelineno-32-2" href="#__codelineno-32-2"></a><span class="nv">$mutation</span> <span class="p">=</span> <span class="nb">New-RscMutation</span> <span class="n">-GqlQuery</span> <span class="n">createNutanixPrismCentral</span>
+</span><span id="__span-32-3"><a id="__codelineno-32-3" name="__codelineno-32-3" href="#__codelineno-32-3"></a><span class="nv">$mutation</span><span class="p">.</span><span class="n">var</span><span class="p">.</span><span class="n">input</span> <span class="p">=</span> <span class="nb">New-Object</span> <span class="n">-TypeName</span> <span class="n">RubrikSecurityCloud</span><span class="p">.</span><span class="n">Types</span><span class="p">.</span><span class="n">CreateNutanixPrismCentralInput</span>
+</span><span id="__span-32-4"><a id="__codelineno-32-4" name="__codelineno-32-4" href="#__codelineno-32-4"></a><span class="nv">$pcConfig</span> <span class="p">=</span> <span class="nb">New-Object</span> <span class="n">-TypeName</span> <span class="n">RubrikSecurityCloud</span><span class="p">.</span><span class="n">Types</span><span class="p">.</span><span class="n">NutanixPrismCentralConfigInput</span>
+</span><span id="__span-32-5"><a id="__codelineno-32-5" name="__codelineno-32-5" href="#__codelineno-32-5"></a><span class="nv">$pcConfig</span><span class="p">.</span><span class="n">Hostname</span> <span class="p">=</span> <span class="s2">&quot;prism-central.example.com&quot;</span>
+</span><span id="__span-32-6"><a id="__codelineno-32-6" name="__codelineno-32-6" href="#__codelineno-32-6"></a><span class="nv">$pcConfig</span><span class="p">.</span><span class="n">Username</span> <span class="p">=</span> <span class="s2">&quot;admin&quot;</span>
+</span><span id="__span-32-7"><a id="__codelineno-32-7" name="__codelineno-32-7" href="#__codelineno-32-7"></a><span class="nv">$pcConfig</span><span class="p">.</span><span class="n">Password</span> <span class="p">=</span> <span class="s2">&quot;your-password&quot;</span>
+</span><span id="__span-32-8"><a id="__codelineno-32-8" name="__codelineno-32-8" href="#__codelineno-32-8"></a><span class="nv">$pcConfig</span><span class="p">.</span><span class="n">CaCerts</span> <span class="p">=</span> <span class="s2">&quot;-----BEGIN CERTIFICATE-----</span><span class="se">`n</span><span class="s2">MIID....</span><span class="se">`n</span><span class="s2">-----END CERTIFICATE-----&quot;</span>
+</span><span id="__span-32-9"><a id="__codelineno-32-9" name="__codelineno-32-9" href="#__codelineno-32-9"></a><span class="nv">$mutation</span><span class="p">.</span><span class="n">var</span><span class="p">.</span><span class="n">input</span><span class="p">.</span><span class="n">PrismCentralConfig</span> <span class="p">=</span> <span class="nv">$pcConfig</span>
+</span><span id="__span-32-10"><a id="__codelineno-32-10" name="__codelineno-32-10" href="#__codelineno-32-10"></a><span class="nv">$tuple</span> <span class="p">=</span> <span class="nb">New-Object</span> <span class="n">-TypeName</span> <span class="n">RubrikSecurityCloud</span><span class="p">.</span><span class="n">Types</span><span class="p">.</span><span class="n">PrismElementCdmTuple</span>
+</span><span id="__span-32-11"><a id="__codelineno-32-11" name="__codelineno-32-11" href="#__codelineno-32-11"></a><span class="nv">$tuple</span><span class="p">.</span><span class="n">NutanixClusterUuid</span> <span class="p">=</span> <span class="s2">&quot;00057b6e-1234-5678-0000-000000abcdef&quot;</span>
+</span><span id="__span-32-12"><a id="__codelineno-32-12" name="__codelineno-32-12" href="#__codelineno-32-12"></a><span class="nv">$tuple</span><span class="p">.</span><span class="n">CdmClusterUuid</span> <span class="p">=</span> <span class="s2">&quot;8417a938-96f5-43c6-9905-b36e051c5f98&quot;</span>
+</span><span id="__span-32-13"><a id="__codelineno-32-13" name="__codelineno-32-13" href="#__codelineno-32-13"></a><span class="nv">$mutation</span><span class="p">.</span><span class="n">var</span><span class="p">.</span><span class="n">input</span><span class="p">.</span><span class="n">PrismElementCdmTuple</span> <span class="p">=</span> <span class="p">@(</span><span class="nv">$tuple</span><span class="p">)</span>
+</span><span id="__span-32-14"><a id="__codelineno-32-14" name="__codelineno-32-14" href="#__codelineno-32-14"></a><span class="nv">$mutation</span><span class="p">.</span><span class="n">var</span><span class="p">.</span><span class="n">input</span><span class="p">.</span><span class="n">IsDrEnabled</span> <span class="p">=</span> <span class="nv">$false</span>
+</span><span id="__span-32-15"><a id="__codelineno-32-15" name="__codelineno-32-15" href="#__codelineno-32-15"></a><span class="nv">$mutation</span><span class="p">.</span><span class="n">invoke</span><span class="p">()</span>
+</span></code></pre></div>
+</div>
+<div class="tabbed-block">
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-33-1"><a id="__codelineno-33-1" name="__codelineno-33-1" href="#__codelineno-33-1"></a>curl<span class="w"> </span>-s<span class="w"> </span>-X<span class="w"> </span>POST<span class="w"> </span><span class="s2">&quot;</span><span class="nv">$RSC_URL</span><span class="s2">/api/graphql&quot;</span><span class="w"> </span><span class="se">\</span>
+</span><span id="__span-33-2"><a id="__codelineno-33-2" name="__codelineno-33-2" href="#__codelineno-33-2"></a><span class="w">  </span>-H<span class="w"> </span><span class="s2">&quot;Authorization: Bearer </span><span class="nv">$RSC_TOKEN</span><span class="s2">&quot;</span><span class="w"> </span><span class="se">\</span>
+</span><span id="__span-33-3"><a id="__codelineno-33-3" name="__codelineno-33-3" href="#__codelineno-33-3"></a><span class="w">  </span>-H<span class="w"> </span><span class="s2">&quot;Content-Type: application/json&quot;</span><span class="w"> </span><span class="se">\</span>
+</span><span id="__span-33-4"><a id="__codelineno-33-4" name="__codelineno-33-4" href="#__codelineno-33-4"></a><span class="w">  </span>-d<span class="w"> </span><span class="s1">&#39;{</span>
+</span><span id="__span-33-5"><a id="__codelineno-33-5" name="__codelineno-33-5" href="#__codelineno-33-5"></a><span class="s1">    &quot;query&quot;: &quot;mutation { createNutanixPrismCentral(input: { prismCentralConfig: { hostname: \&quot;prism-central.example.com\&quot; username: \&quot;admin\&quot; password: \&quot;your-password\&quot; caCerts: \&quot;-----BEGIN CERTIFICATE-----\\nMIID....\\n-----END CERTIFICATE-----\&quot; } prismElementCdmTuple: [{ nutanixClusterUuid: \&quot;00057b6e-1234-5678-0000-000000abcdef\&quot; cdmClusterUuid: \&quot;8417a938-96f5-43c6-9905-b36e051c5f98\&quot; }] isDrEnabled: false }) { requestStatuses { id status error { message } } } }&quot;</span>
+</span><span id="__span-33-6"><a id="__codelineno-33-6" name="__codelineno-33-6" href="#__codelineno-33-6"></a><span class="s1">  }&#39;</span>
+</span></code></pre></div>
+</div>
+</div>
+</div>
+<p>Returns a <code>BatchAsyncRequestStatus</code> — one async status per Prism Element discovered.</p>
+<h3 id="register-a-standalone-cluster">Register a Standalone Cluster</h3>
+<p>For clusters not managed by Prism Central. Provide the Rubrik CDM cluster UUID (<code>clusterUuid</code>) and the Nutanix cluster UUID (<code>nutanixClusterUuid</code>) along with credentials for the Prism host.</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="12:3"><input checked="checked" id="__tabbed_12_1" name="__tabbed_12" type="radio" /><input id="__tabbed_12_2" name="__tabbed_12" type="radio" /><input id="__tabbed_12_3" name="__tabbed_12" type="radio" /><div class="tabbed-labels"><label for="__tabbed_12_1">GraphQL</label><label for="__tabbed_12_2">PowerShell SDK</label><label for="__tabbed_12_3">Shell</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="language-graphql highlight"><pre><span></span><code><span id="__span-34-1"><a id="__codelineno-34-1" name="__codelineno-34-1" href="#__codelineno-34-1"></a><span class="k">mutation</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-34-2"><a id="__codelineno-34-2" name="__codelineno-34-2" href="#__codelineno-34-2"></a><span class="w">  </span><span class="n">createNutanixCluster</span><span class="p">(</span><span class="n">input</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-34-3"><a id="__codelineno-34-3" name="__codelineno-34-3" href="#__codelineno-34-3"></a><span class="w">    </span><span class="n">clusterUuid</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;8417a938-96f5-43c6-9905-b36e051c5f98&quot;</span>
+</span><span id="__span-34-4"><a id="__codelineno-34-4" name="__codelineno-34-4" href="#__codelineno-34-4"></a><span class="w">    </span><span class="n">nutanixClusterConfig</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-34-5"><a id="__codelineno-34-5" name="__codelineno-34-5" href="#__codelineno-34-5"></a><span class="w">      </span><span class="n">hostname</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;prism.example.com&quot;</span>
+</span><span id="__span-34-6"><a id="__codelineno-34-6" name="__codelineno-34-6" href="#__codelineno-34-6"></a><span class="w">      </span><span class="n">nutanixClusterUuid</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;00057b6e-1234-5678-0000-000000abcdef&quot;</span>
+</span><span id="__span-34-7"><a id="__codelineno-34-7" name="__codelineno-34-7" href="#__codelineno-34-7"></a><span class="w">      </span><span class="n">username</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;admin&quot;</span>
+</span><span id="__span-34-8"><a id="__codelineno-34-8" name="__codelineno-34-8" href="#__codelineno-34-8"></a><span class="w">      </span><span class="n">password</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;your-password&quot;</span>
+</span><span id="__span-34-9"><a id="__codelineno-34-9" name="__codelineno-34-9" href="#__codelineno-34-9"></a><span class="w">      </span><span class="n">caCerts</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;-----BEGIN CERTIFICATE-----</span><span class="se">\n</span><span class="s">MIID....</span><span class="se">\n</span><span class="s">-----END CERTIFICATE-----&quot;</span>
+</span><span id="__span-34-10"><a id="__codelineno-34-10" name="__codelineno-34-10" href="#__codelineno-34-10"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-34-11"><a id="__codelineno-34-11" name="__codelineno-34-11" href="#__codelineno-34-11"></a><span class="w">  </span><span class="p">})</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-34-12"><a id="__codelineno-34-12" name="__codelineno-34-12" href="#__codelineno-34-12"></a><span class="w">    </span><span class="n">id</span>
+</span><span id="__span-34-13"><a id="__codelineno-34-13" name="__codelineno-34-13" href="#__codelineno-34-13"></a><span class="w">    </span><span class="n">status</span>
+</span><span id="__span-34-14"><a id="__codelineno-34-14" name="__codelineno-34-14" href="#__codelineno-34-14"></a><span class="w">    </span><span class="n">error</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-34-15"><a id="__codelineno-34-15" name="__codelineno-34-15" href="#__codelineno-34-15"></a><span class="w">      </span><span class="n">message</span>
+</span><span id="__span-34-16"><a id="__codelineno-34-16" name="__codelineno-34-16" href="#__codelineno-34-16"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-34-17"><a id="__codelineno-34-17" name="__codelineno-34-17" href="#__codelineno-34-17"></a><span class="w">  </span><span class="p">}</span>
+</span><span id="__span-34-18"><a id="__codelineno-34-18" name="__codelineno-34-18" href="#__codelineno-34-18"></a><span class="p">}</span>
+</span></code></pre></div>
+</div>
+<div class="tabbed-block">
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-35-1"><a id="__codelineno-35-1" name="__codelineno-35-1" href="#__codelineno-35-1"></a><span class="c"># No toolkit cmdlet available</span>
+</span><span id="__span-35-2"><a id="__codelineno-35-2" name="__codelineno-35-2" href="#__codelineno-35-2"></a><span class="nv">$mutation</span> <span class="p">=</span> <span class="nb">New-RscMutation</span> <span class="n">-GqlQuery</span> <span class="n">createNutanixCluster</span>
+</span><span id="__span-35-3"><a id="__codelineno-35-3" name="__codelineno-35-3" href="#__codelineno-35-3"></a><span class="nv">$mutation</span><span class="p">.</span><span class="n">var</span><span class="p">.</span><span class="n">input</span> <span class="p">=</span> <span class="nb">New-Object</span> <span class="n">-TypeName</span> <span class="n">RubrikSecurityCloud</span><span class="p">.</span><span class="n">Types</span><span class="p">.</span><span class="n">CreateNutanixClusterInput</span>
+</span><span id="__span-35-4"><a id="__codelineno-35-4" name="__codelineno-35-4" href="#__codelineno-35-4"></a><span class="nv">$mutation</span><span class="p">.</span><span class="n">var</span><span class="p">.</span><span class="n">input</span><span class="p">.</span><span class="n">ClusterUuid</span> <span class="p">=</span> <span class="s2">&quot;8417a938-96f5-43c6-9905-b36e051c5f98&quot;</span>
+</span><span id="__span-35-5"><a id="__codelineno-35-5" name="__codelineno-35-5" href="#__codelineno-35-5"></a><span class="nv">$clusterConfig</span> <span class="p">=</span> <span class="nb">New-Object</span> <span class="n">-TypeName</span> <span class="n">RubrikSecurityCloud</span><span class="p">.</span><span class="n">Types</span><span class="p">.</span><span class="n">NutanixClusterConfigInput</span>
+</span><span id="__span-35-6"><a id="__codelineno-35-6" name="__codelineno-35-6" href="#__codelineno-35-6"></a><span class="nv">$clusterConfig</span><span class="p">.</span><span class="n">Hostname</span> <span class="p">=</span> <span class="s2">&quot;prism.example.com&quot;</span>
+</span><span id="__span-35-7"><a id="__codelineno-35-7" name="__codelineno-35-7" href="#__codelineno-35-7"></a><span class="nv">$clusterConfig</span><span class="p">.</span><span class="n">NutanixClusterUuid</span> <span class="p">=</span> <span class="s2">&quot;00057b6e-1234-5678-0000-000000abcdef&quot;</span>
+</span><span id="__span-35-8"><a id="__codelineno-35-8" name="__codelineno-35-8" href="#__codelineno-35-8"></a><span class="nv">$clusterConfig</span><span class="p">.</span><span class="n">Username</span> <span class="p">=</span> <span class="s2">&quot;admin&quot;</span>
+</span><span id="__span-35-9"><a id="__codelineno-35-9" name="__codelineno-35-9" href="#__codelineno-35-9"></a><span class="nv">$clusterConfig</span><span class="p">.</span><span class="n">Password</span> <span class="p">=</span> <span class="s2">&quot;your-password&quot;</span>
+</span><span id="__span-35-10"><a id="__codelineno-35-10" name="__codelineno-35-10" href="#__codelineno-35-10"></a><span class="nv">$clusterConfig</span><span class="p">.</span><span class="n">CaCerts</span> <span class="p">=</span> <span class="s2">&quot;-----BEGIN CERTIFICATE-----</span><span class="se">`n</span><span class="s2">MIID....</span><span class="se">`n</span><span class="s2">-----END CERTIFICATE-----&quot;</span>
+</span><span id="__span-35-11"><a id="__codelineno-35-11" name="__codelineno-35-11" href="#__codelineno-35-11"></a><span class="nv">$mutation</span><span class="p">.</span><span class="n">var</span><span class="p">.</span><span class="n">input</span><span class="p">.</span><span class="n">NutanixClusterConfig</span> <span class="p">=</span> <span class="nv">$clusterConfig</span>
+</span><span id="__span-35-12"><a id="__codelineno-35-12" name="__codelineno-35-12" href="#__codelineno-35-12"></a><span class="nv">$mutation</span><span class="p">.</span><span class="n">invoke</span><span class="p">()</span>
+</span></code></pre></div>
+</div>
+<div class="tabbed-block">
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-36-1"><a id="__codelineno-36-1" name="__codelineno-36-1" href="#__codelineno-36-1"></a>curl<span class="w"> </span>-s<span class="w"> </span>-X<span class="w"> </span>POST<span class="w"> </span><span class="s2">&quot;</span><span class="nv">$RSC_URL</span><span class="s2">/api/graphql&quot;</span><span class="w"> </span><span class="se">\</span>
+</span><span id="__span-36-2"><a id="__codelineno-36-2" name="__codelineno-36-2" href="#__codelineno-36-2"></a><span class="w">  </span>-H<span class="w"> </span><span class="s2">&quot;Authorization: Bearer </span><span class="nv">$RSC_TOKEN</span><span class="s2">&quot;</span><span class="w"> </span><span class="se">\</span>
+</span><span id="__span-36-3"><a id="__codelineno-36-3" name="__codelineno-36-3" href="#__codelineno-36-3"></a><span class="w">  </span>-H<span class="w"> </span><span class="s2">&quot;Content-Type: application/json&quot;</span><span class="w"> </span><span class="se">\</span>
+</span><span id="__span-36-4"><a id="__codelineno-36-4" name="__codelineno-36-4" href="#__codelineno-36-4"></a><span class="w">  </span>-d<span class="w"> </span><span class="s1">&#39;{</span>
+</span><span id="__span-36-5"><a id="__codelineno-36-5" name="__codelineno-36-5" href="#__codelineno-36-5"></a><span class="s1">    &quot;query&quot;: &quot;mutation { createNutanixCluster(input: { clusterUuid: \&quot;8417a938-96f5-43c6-9905-b36e051c5f98\&quot; nutanixClusterConfig: { hostname: \&quot;prism.example.com\&quot; nutanixClusterUuid: \&quot;00057b6e-1234-5678-0000-000000abcdef\&quot; username: \&quot;admin\&quot; password: \&quot;your-password\&quot; caCerts: \&quot;-----BEGIN CERTIFICATE-----\\nMIID....\\n-----END CERTIFICATE-----\&quot; } }) { id status error { message } } }&quot;</span>
+</span><span id="__span-36-6"><a id="__codelineno-36-6" name="__codelineno-36-6" href="#__codelineno-36-6"></a><span class="s1">  }&#39;</span>
 </span></code></pre></div>
 </div>
 </div>
@@ -3236,7 +3988,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="April 23, 2026 19:00:10 UTC">2026-04-23</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="June 17, 2026 12:45:17 UTC">2026-06-17</span>
   </span>
 
     

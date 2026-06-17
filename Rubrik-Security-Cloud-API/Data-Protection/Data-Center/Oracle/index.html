@@ -1623,10 +1623,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#hosts-and-rac-clusters" class="md-nav__link">
+  <a href="#hosts-and-racs" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Hosts and RAC Clusters
+        Hosts and RACs
       
     </span>
   </a>
@@ -2868,10 +2868,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#hosts-and-rac-clusters" class="md-nav__link">
+  <a href="#hosts-and-racs" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Hosts and RAC Clusters
+        Hosts and RACs
       
     </span>
   </a>
@@ -3081,14 +3081,14 @@
 <h1 id="oracle">Oracle</h1>
 <p>Rubrik provides API-driven, RMAN-based backup and recovery for Oracle databases — standalone instances, Real Application Clusters (RAC), and Data Guard configurations. This guide walks through the full lifecycle: discovering your Oracle estate, applying protection, taking on-demand backups, finding a valid recovery point, and recovering a database.</p>
 <p>The Oracle object hierarchy in RSC is:</p>
-<p><strong>Oracle Host</strong> <em>or</em> <strong>RAC Cluster</strong> → <strong>Database</strong></p>
-<p>A standalone database belongs to an Oracle host; a clustered database belongs to a RAC cluster. <strong>Data Guard groups</strong> join a primary and its standbys into a single logical workload. SLA Domains assigned at the host or RAC level are inherited by the databases beneath them, while backup and recovery operations are performed against an individual database.</p>
+<p><strong>Oracle Host</strong> <em>or</em> <strong>RAC</strong> → <strong>Database</strong></p>
+<p>A standalone database belongs to an Oracle host; a clustered database belongs to a RAC. <strong>Data Guard groups</strong> join a primary and its standbys into a single logical workload. SLA Domains assigned at the host or RAC level are inherited by the databases beneath them, while backup and recovery operations are performed against an individual database.</p>
 <p>Every object carries two identifiers: the RSC <code>id</code> (the FID — a UUID) used in all API calls, and the <code>cdmId</code> assigned by the Rubrik cluster. Use the <code>id</code> field unless a call specifically asks for a cluster UUID.</p>
 <h2 id="prerequisites">Prerequisites</h2>
 <p>Before protecting Oracle databases through the API:</p>
 <ol>
 <li>
-<p><strong>Register your Oracle host or RAC cluster</strong> — See <a href="../Hosts/">Hosts</a> to add the host running the Rubrik Backup Service to your Rubrik cluster. Databases, tablespaces, and PDBs are discovered automatically after registration.</p>
+<p><strong>Register your Oracle host or RAC</strong> — See <a href="../Hosts/">Hosts</a> to add the host running the Rubrik Backup Service to your Rubrik cluster. Databases, tablespaces, and PDBs are discovered automatically after registration.</p>
 </li>
 <li>
 <p><strong>Locate your SLA Domain</strong> — See <a href="../../SLA-Domains/">SLA Domains</a> to retrieve the UUID of the SLA policy you want to apply. You'll need this when assigning protection and when taking on-demand snapshots.</p>
@@ -3180,8 +3180,8 @@
 </div>
 </div>
 </div>
-<h3 id="hosts-and-rac-clusters">Hosts and RAC Clusters</h3>
-<p>Oracle hosts and RAC clusters are both returned by <code>oracleTopLevelDescendants</code> — there is no separate <code>oracleHosts</code> or <code>oracleRacs</code> query. Scope the results with <code>typeFilter</code>: pass <code>[OracleHost]</code>, <code>[OracleRac]</code>, or both. You'll need a host or RAC FID as the recovery target when exporting or live mounting a database.</p>
+<h3 id="hosts-and-racs">Hosts and RACs</h3>
+<p>Oracle hosts and RACs are both returned by <code>oracleTopLevelDescendants</code> — there is no separate <code>oracleHosts</code> or <code>oracleRacs</code> query. Scope the results with <code>typeFilter</code>: pass <code>[OracleHost]</code>, <code>[OracleRac]</code>, or both. You'll need a host or RAC FID as the recovery target when exporting or live mounting a database.</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="2:3"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><input id="__tabbed_2_3" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">GraphQL</label><label for="__tabbed_2_2">PowerShell SDK</label><label for="__tabbed_2_3">Shell</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
@@ -3254,7 +3254,7 @@
 <p>Backup and recovery against a Data Guard configuration use the <strong>member database ID</strong>, not the group ID. Rubrik backs up from the appropriate member according to the group's configuration.</p>
 <h2 id="configure-protection">Configure Protection</h2>
 <h3 id="assign-an-sla-domain">Assign an SLA Domain</h3>
-<p>Use the <code>assignSla</code> mutation to assign an SLA Domain to a database, host, or RAC cluster. Assigning at the host or RAC level protects every database beneath it through inheritance. See <a href="../../SLA-Domains/#assigning-an-sla-to-a-workload">SLA Domains</a> for the full walkthrough.</p>
+<p>Use the <code>assignSla</code> mutation to assign an SLA Domain to a database, host, or RAC. Assigning at the host or RAC level protects every database beneath it through inheritance. See <a href="../../SLA-Domains/#assigning-an-sla-to-a-workload">SLA Domains</a> for the full walkthrough.</p>
 <h3 id="log-backup-and-database-settings">Log Backup and Database Settings</h3>
 <p>Use <code>bulkUpdateOracleDatabases</code> to configure per-database operational settings that are independent of the SLA policy — most importantly the archived redo log backup cadence and retention. Apply the settings under <code>oracleUpdate.oracleUpdateCommon</code>.</p>
 <div class="admonition warning">
@@ -3280,7 +3280,7 @@
 </tr>
 <tr>
 <td><code>isPaused</code></td>
-<td>Pause or resume protection for the database. Supported for databases and Data Guard groups only — not for hosts or RAC clusters.</td>
+<td>Pause or resume protection for the database. Supported for databases and Data Guard groups only — not for hosts or RACs.</td>
 </tr>
 <tr>
 <td><code>ratePerRmanChannelInMb</code></td>
@@ -3575,10 +3575,10 @@
 </div>
 <div class="admonition note">
 <p class="admonition-title">RBAC for export and live mount</p>
-<p>Export and live mount require permissions on <strong>both</strong> the source database <strong>and</strong> the target host or RAC cluster. A service account with access only to the source is denied. Read operations (recoverable ranges, settings) need only view access on the database.</p>
+<p>Export and live mount require permissions on <strong>both</strong> the source database <strong>and</strong> the target host or RAC. A service account with access only to the source is denied. Read operations (recoverable ranges, settings) need only view access on the database.</p>
 </div>
 <h3 id="export-to-a-new-database">Export to a New Database</h3>
-<p><code>exportOracleDatabase</code> clones a database from a recovery point onto a different Oracle host or RAC cluster, leaving the source untouched — the right choice for recovery validation, refreshing test/dev copies, or RMAN-style duplication.</p>
+<p><code>exportOracleDatabase</code> clones a database from a recovery point onto a different Oracle host or RAC, leaving the source untouched — the right choice for recovery validation, refreshing test/dev copies, or RMAN-style duplication.</p>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
 <p>Note the <strong>three-level nesting</strong>: <code>input.request.config</code>. This differs from in-place restore. Set <code>recoveryPoint</code> (<a href="#recovery">exactly one field</a>) and <code>targetOracleHostOrRacId</code> inside <code>config</code>. For a standalone source database the target must be an <strong>OracleHost</strong> FID; for a RAC source it must be an <strong>OracleRac</strong> FID.</p>
@@ -3897,7 +3897,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="June 16, 2026 15:34:20 UTC">2026-06-16</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="June 17, 2026 12:45:17 UTC">2026-06-17</span>
   </span>
 
     

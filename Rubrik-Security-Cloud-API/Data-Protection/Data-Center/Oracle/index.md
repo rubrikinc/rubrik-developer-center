@@ -4,9 +4,9 @@ Rubrik provides API-driven, RMAN-based backup and recovery for Oracle databases 
 
 The Oracle object hierarchy in RSC is:
 
-**Oracle Host** *or* **RAC Cluster** → **Database**
+**Oracle Host** *or* **RAC** → **Database**
 
-A standalone database belongs to an Oracle host; a clustered database belongs to a RAC cluster. **Data Guard groups** join a primary and its standbys into a single logical workload. SLA Domains assigned at the host or RAC level are inherited by the databases beneath them, while backup and recovery operations are performed against an individual database.
+A standalone database belongs to an Oracle host; a clustered database belongs to a RAC. **Data Guard groups** join a primary and its standbys into a single logical workload. SLA Domains assigned at the host or RAC level are inherited by the databases beneath them, while backup and recovery operations are performed against an individual database.
 
 Every object carries two identifiers: the RSC `id` (the FID — a UUID) used in all API calls, and the `cdmId` assigned by the Rubrik cluster. Use the `id` field unless a call specifically asks for a cluster UUID.
 
@@ -14,7 +14,7 @@ Every object carries two identifiers: the RSC `id` (the FID — a UUID) used in 
 
 Before protecting Oracle databases through the API:
 
-1. **Register your Oracle host or RAC cluster** — See [Hosts](https://developer.rubrik.com/Rubrik-Security-Cloud-API/Data-Protection/Data-Center/Hosts/index.md) to add the host running the Rubrik Backup Service to your Rubrik cluster. Databases, tablespaces, and PDBs are discovered automatically after registration.
+1. **Register your Oracle host or RAC** — See [Hosts](https://developer.rubrik.com/Rubrik-Security-Cloud-API/Data-Protection/Data-Center/Hosts/index.md) to add the host running the Rubrik Backup Service to your Rubrik cluster. Databases, tablespaces, and PDBs are discovered automatically after registration.
 1. **Locate your SLA Domain** — See [SLA Domains](https://developer.rubrik.com/Rubrik-Security-Cloud-API/Data-Protection/SLA-Domains/index.md) to retrieve the UUID of the SLA policy you want to apply. You'll need this when assigning protection and when taking on-demand snapshots.
 1. **Obtain an access token** — See [Authentication](https://developer.rubrik.com/Rubrik-Security-Cloud-API/authentication/index.md) for the OAuth2 client credentials flow used in all API calls.
 
@@ -101,9 +101,9 @@ curl -X POST \
   https://example.my.rubrik.com/api/graphql
 ```
 
-### Hosts and RAC Clusters
+### Hosts and RACs
 
-Oracle hosts and RAC clusters are both returned by `oracleTopLevelDescendants` — there is no separate `oracleHosts` or `oracleRacs` query. Scope the results with `typeFilter`: pass `[OracleHost]`, `[OracleRac]`, or both. You'll need a host or RAC FID as the recovery target when exporting or live mounting a database.
+Oracle hosts and RACs are both returned by `oracleTopLevelDescendants` — there is no separate `oracleHosts` or `oracleRacs` query. Scope the results with `typeFilter`: pass `[OracleHost]`, `[OracleRac]`, or both. You'll need a host or RAC FID as the recovery target when exporting or live mounting a database.
 
 ```graphql
 query {
@@ -178,7 +178,7 @@ Backup and recovery against a Data Guard configuration use the **member database
 
 ### Assign an SLA Domain
 
-Use the `assignSla` mutation to assign an SLA Domain to a database, host, or RAC cluster. Assigning at the host or RAC level protects every database beneath it through inheritance. See [SLA Domains](https://developer.rubrik.com/Rubrik-Security-Cloud-API/Data-Protection/SLA-Domains/#assigning-an-sla-to-a-workload) for the full walkthrough.
+Use the `assignSla` mutation to assign an SLA Domain to a database, host, or RAC. Assigning at the host or RAC level protects every database beneath it through inheritance. See [SLA Domains](https://developer.rubrik.com/Rubrik-Security-Cloud-API/Data-Protection/SLA-Domains/#assigning-an-sla-to-a-workload) for the full walkthrough.
 
 ### Log Backup and Database Settings
 
@@ -194,7 +194,7 @@ Common fields in `oracleUpdateCommon`:
 | ----------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ |
 | `logBackupFrequencyInMinutes` | Interval between archived redo log backups. Default `30`.                                                                                        |
 | `logRetentionHours`           | How long log backups are retained. Default `720` (30 days). Sentinels: `-1` deletes immediately, `0` inherits from the parent host or RAC.       |
-| `isPaused`                    | Pause or resume protection for the database. Supported for databases and Data Guard groups only — not for hosts or RAC clusters.                 |
+| `isPaused`                    | Pause or resume protection for the database. Supported for databases and Data Guard groups only — not for hosts or RACs.                         |
 | `ratePerRmanChannelInMb`      | RMAN backup bandwidth throttle per channel, in MB/s (CDM v9.4+). `0` means no limit.                                                             |
 | `numChannels`                 | Number of RMAN channels for backups. Omit unless you are deliberately tuning — CDM derives a sensible value from the configured backup channels. |
 
@@ -433,11 +433,11 @@ Passing zero or more than one of these throws a backend error — the schema doe
 
 RBAC for export and live mount
 
-Export and live mount require permissions on **both** the source database **and** the target host or RAC cluster. A service account with access only to the source is denied. Read operations (recoverable ranges, settings) need only view access on the database.
+Export and live mount require permissions on **both** the source database **and** the target host or RAC. A service account with access only to the source is denied. Read operations (recoverable ranges, settings) need only view access on the database.
 
 ### Export to a New Database
 
-`exportOracleDatabase` clones a database from a recovery point onto a different Oracle host or RAC cluster, leaving the source untouched — the right choice for recovery validation, refreshing test/dev copies, or RMAN-style duplication.
+`exportOracleDatabase` clones a database from a recovery point onto a different Oracle host or RAC, leaving the source untouched — the right choice for recovery validation, refreshing test/dev copies, or RMAN-style duplication.
 
 Warning
 
