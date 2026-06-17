@@ -18,17 +18,124 @@ Fileset Template  →  Fileset (on host A)
 
 Every template is scoped to a **host root** — `WINDOWS_HOST_ROOT`, `LINUX_HOST_ROOT`, or `NAS_HOST_ROOT`. Because the discovery queries are rooted in one OS family at a time, the `hostRoot` argument is **required** and you query each family separately.
 
-Note
-
-This guide assumes your filesets are already configured. Filesets are not created automatically when a template is defined — they are provisioned explicitly against each host or share. Provisioning is out of scope here.
-
 ## Prerequisites
 
 Before working with filesets through the API:
 
-1. **Provision your filesets** — Confirm the fileset templates and their host/share filesets already exist in your environment, as described above.
-1. **Locate your SLA Domain** — See [SLA Domains](https://developer.rubrik.com/Rubrik-Security-Cloud-API/Data-Protection/SLA-Domains/index.md) to retrieve the UUID of the SLA policy you want to apply. You'll need this when assigning protection.
-1. **Obtain an access token** — See [Authentication](https://developer.rubrik.com/Rubrik-Security-Cloud-API/authentication/index.md) for the OAuth2 client credentials flow used in all API calls.
+1. **Obtain an access token** — See [Authentication](https://developer.rubrik.com/Rubrik-Security-Cloud-API/authentication/index.md) for the token exchange flow.
+1. **Locate your Rubrik cluster UUID** — Provisioning calls require it. Find it in the RSC UI under **Clusters**, or query `allClusterConnection { nodes { id name } }`.
+1. **Locate your SLA Domain** — See [SLA Domains](https://developer.rubrik.com/Rubrik-Security-Cloud-API/Data-Protection/SLA-Domains/index.md) to retrieve the UUID of the SLA policy you want to apply.
+
+## Set Up
+
+This section covers the provisioning steps: creating a fileset template and applying it to a host to create a fileset. Skip to [Discover Templates and Filesets](#discover-templates-and-filesets) if your environment is already configured.
+
+Before creating templates and filesets, your hosts must be registered with a Rubrik cluster. See [Hosts](https://developer.rubrik.com/Rubrik-Security-Cloud-API/Data-Protection/Data-Center/Hosts/index.md) for host registration.
+
+### Create a Fileset Template
+
+A template defines what to back up: the paths to include, paths to exclude, any pre/post scripts, and which OS family it applies to. `includes` is the only required path list.
+
+```graphql
+mutation {
+  bulkCreateFilesetTemplates(input: {
+    clusterUuid: "8417a938-96f5-43c6-9905-b36e051c5f98"
+    definitions: [
+      {
+        name: "Web Server Files"
+        operatingSystemType: FILESET_TEMPLATE_CREATE_OPERATING_SYSTEM_TYPE_UNIX_LIKE
+        includes: ["/var/www", "/etc/nginx"]
+        excludes: ["/var/www/cache", "*.tmp"]
+        exceptions: []
+        preBackupScript: ""
+        postBackupScript: ""
+      }
+    ]
+  }) {
+    data {
+      id
+      name
+      operatingSystemType
+      includes
+      excludes
+    }
+  }
+}
+```
+
+```powershell
+# No toolkit cmdlet available
+$mutation = New-RscMutation -GqlQuery bulkCreateFilesetTemplates
+$mutation.var.input = New-Object -TypeName RubrikSecurityCloud.Types.BulkCreateFilesetTemplatesInput
+$mutation.var.input.ClusterUuid = "8417a938-96f5-43c6-9905-b36e051c5f98"
+$template = New-Object -TypeName RubrikSecurityCloud.Types.FilesetTemplateCreateInput
+$template.Name = "Web Server Files"
+$template.OperatingSystemType = [RubrikSecurityCloud.Types.FilesetTemplateCreateOperatingSystemType]::FILESET_TEMPLATE_CREATE_OPERATING_SYSTEM_TYPE_UNIX_LIKE
+$template.Includes = @("/var/www", "/etc/nginx")
+$template.Excludes = @("/var/www/cache", "*.tmp")
+$mutation.var.input.Definitions = @($template)
+$mutation.invoke()
+```
+
+```bash
+curl -s -X POST "$RSC_URL/api/graphql" \
+  -H "Authorization: Bearer $RSC_TOKEN" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "query": "mutation { bulkCreateFilesetTemplates(input: { clusterUuid: \"8417a938-96f5-43c6-9905-b36e051c5f98\" definitions: [{ name: \"Web Server Files\" operatingSystemType: FILESET_TEMPLATE_CREATE_OPERATING_SYSTEM_TYPE_UNIX_LIKE includes: [\"/var/www\", \"/etc/nginx\"] excludes: [\"/var/www/cache\", \"*.tmp\"] }] }) { data { id name operatingSystemType includes excludes } } }"
+  }'
+```
+
+Capture the template `id` from the response `data[0].id`.
+
+### Apply Template to a Host
+
+With a host ID and a template ID, create the fileset — the actual snappable that will receive snapshots and an SLA.
+
+```graphql
+mutation {
+  bulkCreateFilesets(input: {
+    clusterUuid: "8417a938-96f5-43c6-9905-b36e051c5f98"
+    definitions: [
+      {
+        templateId: "11111111-2222-3333-4444-555555555555"
+        hostId: "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee"
+      }
+    ]
+  }) {
+    data {
+      filesetSummary {
+        id
+        name
+        hostId
+      }
+    }
+  }
+}
+```
+
+```powershell
+# No toolkit cmdlet available
+$mutation = New-RscMutation -GqlQuery bulkCreateFilesets
+$mutation.var.input = New-Object -TypeName RubrikSecurityCloud.Types.BulkCreateFilesetsInput
+$mutation.var.input.ClusterUuid = "8417a938-96f5-43c6-9905-b36e051c5f98"
+$filesetDef = New-Object -TypeName RubrikSecurityCloud.Types.FilesetCreateInput
+$filesetDef.TemplateId = "11111111-2222-3333-4444-555555555555"
+$filesetDef.HostId = "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee"
+$mutation.var.input.Definitions = @($filesetDef)
+$mutation.invoke()
+```
+
+```bash
+curl -s -X POST "$RSC_URL/api/graphql" \
+  -H "Authorization: Bearer $RSC_TOKEN" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "query": "mutation { bulkCreateFilesets(input: { clusterUuid: \"8417a938-96f5-43c6-9905-b36e051c5f98\" definitions: [{ templateId: \"11111111-2222-3333-4444-555555555555\" hostId: \"aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee\" }] }) { data { filesetSummary { id name hostId } } } }"
+  }'
+```
+
+The returned fileset `id` is what you pass to backup and recovery mutations.
 
 ## Discover Templates and Filesets
 
