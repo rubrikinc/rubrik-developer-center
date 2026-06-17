@@ -1,0 +1,6 @@
+curl -s -X POST "$RSC_URL/api/graphql" \
+  -H "Authorization: Bearer $RSC_TOKEN" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "query": "mutation { createNutanixCluster(input: { clusterUuid: \"8417a938-96f5-43c6-9905-b36e051c5f98\" nutanixClusterConfig: { hostname: \"prism.example.com\" nutanixClusterUuid: \"00057b6e-1234-5678-0000-000000abcdef\" username: \"admin\" password: \"your-password\" caCerts: \"-----BEGIN CERTIFICATE-----\\nMIID....\\n-----END CERTIFICATE-----\" } }) { id status error { message } } }"
+  }'

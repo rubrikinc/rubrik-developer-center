@@ -1,0 +1,6 @@
+curl -s -X POST "$RSC_URL/api/graphql" \
+  -H "Authorization: Bearer $RSC_TOKEN" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "query": "mutation { bulkCreateFilesetTemplates(input: { clusterUuid: \"8417a938-96f5-43c6-9905-b36e051c5f98\" definitions: [{ name: \"Web Server Files\" operatingSystemType: FILESET_TEMPLATE_CREATE_OPERATING_SYSTEM_TYPE_UNIX_LIKE includes: [\"/var/www\", \"/etc/nginx\"] excludes: [\"/var/www/cache\", \"*.tmp\"] }] }) { data { id name operatingSystemType includes excludes } } }"
+  }'

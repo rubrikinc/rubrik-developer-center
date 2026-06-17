@@ -1,0 +1,17 @@
+mutation {
+  mountNutanixSnapshotV1(input: {
+    id: "f5bc5502-b9a6-4759-bf02-05dc5a48f9f7"
+    config: {
+      shouldDisableMigration: true
+      vmName: "example-livemount"
+      shouldPowerOn: true
+    }
+  }) {
+    id
+    status
+    progress
+    error {
+      message
+    }
+  }
+}
