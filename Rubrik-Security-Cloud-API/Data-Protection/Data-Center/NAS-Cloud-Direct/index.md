@@ -6,17 +6,29 @@ NCD vs. NAS
 
 Both products protect file shares, but they are distinct. NAS Unstructured Data is backed by a Rubrik cluster and CDM filesets. NCD is backed by a Cloud Direct cluster, and its shares, snapshots, and recovery operations use the `cloudDirect*` family of GraphQL operations documented on this page.
 
-The NCD object hierarchy in RSC is:
-
-**System** → **Namespace** → **Share** (NFS/SMB) or **Bucket** (S3)
+This guide walks the full NCD lifecycle: discover your environment, assign protection, take on-demand backups, and recover individual files. System registration and other one-time setup tasks are covered in [Set Up](#set-up) at the end.
 
 ## Prerequisites
 
 Before using the NCD API:
 
 1. **Obtain an access token** — See [Authentication](https://developer.rubrik.com/Rubrik-Security-Cloud-API/authentication/index.md) for the token exchange flow.
-1. **Confirm NCD shares are registered** — Shares must be discovered before they appear in [`cloudDirectNasShares`](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/cloudDirectNasShares/index.md).
-1. **Locate your SLA Domain** — See [SLA Domains](https://developer.rubrik.com/Rubrik-Security-Cloud-API/Data-Protection/SLA-Domains/index.md) to retrieve the UUID of the policy assigned to your shares.
+1. **Locate your SLA Domain** — See [SLA Domains](https://developer.rubrik.com/Rubrik-Security-Cloud-API/Data-Protection/SLA-Domains/index.md) to retrieve the UUID of the policy you will assign to your shares.
+1. **Register the NCD system** — A NAS appliance must be registered as a Cloud Direct system before its shares appear in discovery queries. If your shares are not yet visible, see [Set Up](#set-up).
+
+## Object Model
+
+NCD organizes unstructured data into a three-level hierarchy:
+
+**System** → **Namespace** → **Share**
+
+| Object        | Description                                                                                                                             |
+| ------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
+| **System**    | The NAS appliance registered with Rubrik — NetApp, Isilon, Qumulo, FlashBlade, VAST, Azure Files, FSxN, generic NFS/SMB/S3, and others. |
+| **Namespace** | A logical grouping within a system, such as an SVM on NetApp.                                                                           |
+| **Share**     | The snappable: an NFS export, SMB share, or S3 bucket. This is the object that gets backed up, assigned an SLA, and recovered from.     |
+
+Protection operations — SLA assignment, on-demand snapshots, and recovery — all act on the **share**. Capture the share FID (`id`) from discovery; it is the handle for everything that follows.
 
 ## Discover Your NCD Environment
 
@@ -272,7 +284,6 @@ query {
         name
         id
       }
-      shareCount
       cluster {
         name
         id
@@ -317,6 +328,96 @@ curl -X POST \
   -H "Content-Type: application/json" \
   -H "Authorization: Bearer $RSC_TOKEN" \
   -d "{\"query\": \"$query\"}" \
+  https://example.my.rubrik.com/api/graphql
+```
+
+## Configure Protection
+
+Protect a share by assigning it an SLA Domain. NCD uses the generic [`assignSla`](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/assignSla/index.md) mutation — pass the **share FID** as the object ID. See [Assigning an SLA to a workload](https://developer.rubrik.com/Rubrik-Security-Cloud-API/Data-Protection/SLA-Domains/#assigning-an-sla-to-a-workload) for the assignment flow and code samples.
+
+NCD SLA Domains specify backup targets per frequency
+
+An NCD SLA Domain must declare which **backup target** each retention frequency writes to — `minutelyBackupLocations`, `hourlyBackupLocations`, `dailyBackupLocations`, and so on are set in the SLA definition. This is configured when you create or update the SLA Domain, not at assignment time. See [Creating an SLA Domain](https://developer.rubrik.com/Rubrik-Security-Cloud-API/Data-Protection/SLA-Domains/#creating-an-sla-domain) for the full SLA definition.
+
+## On-Demand Backup
+
+Trigger an immediate snapshot of a share with [`takeCloudDirectSnapshot`](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/takeCloudDirectSnapshot/index.md), outside the SLA schedule.
+
+| Field        | Description                                                                                                            |
+| ------------ | ---------------------------------------------------------------------------------------------------------------------- |
+| `objectFid`  | **Required.** The FID of the share to snapshot.                                                                        |
+| `slaId`      | Optional. Omit to use the share's assigned SLA, or provide a different SLA ID to override retention for this snapshot. |
+| `exclusions` | Optional. A list of `{ path, pattern }` entries to skip during this backup.                                            |
+
+Returns a list of statuses, not one
+
+[`takeCloudDirectSnapshot`](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/takeCloudDirectSnapshot/index.md) returns a [`BatchAsyncRequestStatus`](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/BatchAsyncRequestStatus/index.md) — a `responses` **list** of [`AsyncRequestStatus`](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AsyncRequestStatus/index.md), not a single status. A single share can fan out to multiple snapshot jobs, one per backup target defined in its SLA. Iterate `responses` and poll each `id` to track every job to completion.
+
+```graphql
+# Take an on-demand snapshot of a share.
+# Omit slaId to use the share's assigned SLA, or set it to override for this snapshot.
+# exclusions is optional — each entry has a path and/or pattern to skip.
+mutation {
+  takeCloudDirectSnapshot(input: {
+    objectFid: "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee"
+    slaId: "11111111-2222-3333-4444-555555555555"
+    exclusions: [
+      { path: "/finance/tmp" }
+      { pattern: "*.bak" }
+    ]
+  }) {
+    responses {
+      id
+      status
+    }
+  }
+}
+```
+
+```powershell
+# Take an on-demand snapshot of a share.
+# Omit slaId to use the share's assigned SLA, or set it to override for this snapshot.
+$query = New-RscMutation -GqlMutation takeCloudDirectSnapshot
+
+$exclusion = Get-RscType -Name CloudDirectExclusionInput
+$exclusion.pattern = "*.bak"
+
+$query.Var.input = Get-RscType -Name TakeCloudDirectSnapshotInput
+$query.Var.input.objectFid = "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee"
+$query.Var.input.slaId = "11111111-2222-3333-4444-555555555555"
+$query.Var.input.exclusions = @($exclusion)
+
+# takeCloudDirectSnapshot returns a BatchAsyncRequestStatus — a list of
+# AsyncRequestStatus, one per backup target a share fans out to.
+$query.field.responses = @(Get-RscType -Name AsyncRequestStatus -InitialProperties id,status)
+$query.Invoke().responses
+```
+
+```bash
+#!/bin/bash
+
+# RSC_TOKEN="YOUR_RSC_ACCESS_TOKEN"
+# Take an on-demand snapshot of a share. Omit slaId to use the share's assigned SLA.
+query="mutation TakeCloudDirectSnapshot(\$input: TakeCloudDirectSnapshotInput!) { takeCloudDirectSnapshot(input: \$input) { responses { id status } } }"
+
+read -r -d '' variables <<'JSON'
+{
+  "input": {
+    "objectFid": "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee",
+    "slaId": "11111111-2222-3333-4444-555555555555",
+    "exclusions": [
+      { "path": "/finance/tmp" },
+      { "pattern": "*.bak" }
+    ]
+  }
+}
+JSON
+
+# Execute the GraphQL mutation with curl
+curl -X POST \
+  -H "Content-Type: application/json" \
+  -H "Authorization: Bearer $RSC_TOKEN" \
+  -d "$(jq -n --arg q "$query" --argjson v "$variables" '{query: $q, variables: $v}')" \
   https://example.my.rubrik.com/api/graphql
 ```
 
@@ -677,8 +778,168 @@ curl -X POST \
 
 [`recoverCloudDirectNasShare`](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/recoverCloudDirectNasShare/index.md) returns an [`AsyncRequestStatus`](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AsyncRequestStatus/index.md) immediately — the restore runs in the background. Use the returned `id` to poll the task to completion using the standard async task-monitoring pattern, checking `status` until it reaches a terminal state.
 
+## Set Up
+
+The operations below are one-time or infrequent administrative tasks: registering a NAS appliance so its shares can be discovered, adding shares on generic systems, registering Kerberos credentials, and removing a system. Most environments perform these once, then work entirely within the discovery, protection, and recovery flows above.
+
+### Register a NAS System
+
+Register a NAS appliance as a Cloud Direct system with [`addCloudDirectSystem`](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/addCloudDirectSystem/index.md). Once the import completes, the system's shares become discoverable and can be protected.
+
+| Field                        | Description                                                                                                                                                                      |
+| ---------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `clusterId`                  | **Required.** The Rubrik CDM cluster that will manage this system.                                                                                                               |
+| `host`                       | **Required.** Management IP or hostname of the NAS appliance.                                                                                                                    |
+| `systemType`                 | **Required.** Vendor type — for example `NETAPP_CLUSTER_MODE`, `ISILON`, `QUMULO`, `FLASHBLADE`, `VAST_DATA`, `FSXN`, `AZURE_FILES`, `GENERIC_NFS`, `GENERIC_SMB`, `GENERIC_S3`. |
+| `skipServiceAccountCreation` | **Required.** Set `true` to skip automatic service account creation on the array and use the credentials you provide as-is.                                                      |
+| `verifySsl`                  | **Required.** Whether to verify the appliance's TLS certificate.                                                                                                                 |
+
+Authenticate with either a username/password pair (`username`, `password`) or a client certificate (`certificateData`, `certificateType`, `certificateKeyPassword`). For FSxN, also set `managementInfo.fileSystemId`; for Azure Files, set `managementInfo.privateEndpoint`.
+
+Registration is asynchronous
+
+[`addCloudDirectSystem`](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/addCloudDirectSystem/index.md) returns `{ jobId }` — an import job ID, **not** an [`AsyncRequestStatus`](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AsyncRequestStatus/index.md). The system and its shares do not appear in discovery queries until the background import finishes, which can take up to **two hours** for large environments. There is no dedicated status query for this job — monitor progress in the Rubrik UI or the activity events feed.
+
+```graphql
+# Register a NAS appliance as a Cloud Direct system.
+# Returns a jobId — registration runs asynchronously and shares appear once
+# the background import completes (up to ~2 hours for large environments).
+mutation {
+  addCloudDirectSystem(input: {
+    clusterId: "11111111-2222-3333-4444-555555555555"
+    host: "netapp01.example.com"
+    systemType: NETAPP_CLUSTER_MODE
+    username: "svc-rubrik"
+    password: "REPLACE_WITH_PASSWORD"
+    skipServiceAccountCreation: false
+    verifySsl: true
+  }) {
+    jobId
+  }
+}
+```
+
+```powershell
+# Register a NAS appliance as a Cloud Direct system.
+# Returns a jobId — registration runs asynchronously and shares appear once
+# the background import completes (up to ~2 hours for large environments).
+$query = New-RscMutation -GqlMutation addCloudDirectSystem
+
+$query.Var.input = Get-RscType -Name AddCloudDirectSystemInput
+$query.Var.input.clusterId = "11111111-2222-3333-4444-555555555555"
+$query.Var.input.host = "netapp01.example.com"
+$query.Var.input.systemType = [RubrikSecurityCloud.Types.CloudDirectNasVendorType]::NETAPP_CLUSTER_MODE
+$query.Var.input.username = "svc-rubrik"
+$query.Var.input.password = "REPLACE_WITH_PASSWORD"
+$query.Var.input.skipServiceAccountCreation = $false
+$query.Var.input.verifySsl = $true
+
+$query.field = Get-RscType -Name AddCloudDirectSystemReply -InitialProperties jobId
+$query.Invoke()
+```
+
+```bash
+#!/bin/bash
+
+# RSC_TOKEN="YOUR_RSC_ACCESS_TOKEN"
+# Register a NAS appliance as a Cloud Direct system. Returns a jobId;
+# registration is asynchronous and shares appear once the import completes.
+query="mutation AddCloudDirectSystem(\$input: AddCloudDirectSystemInput!) { addCloudDirectSystem(input: \$input) { jobId } }"
+
+read -r -d '' variables <<'JSON'
+{
+  "input": {
+    "clusterId": "11111111-2222-3333-4444-555555555555",
+    "host": "netapp01.example.com",
+    "systemType": "NETAPP_CLUSTER_MODE",
+    "username": "svc-rubrik",
+    "password": "REPLACE_WITH_PASSWORD",
+    "skipServiceAccountCreation": false,
+    "verifySsl": true
+  }
+}
+JSON
+
+# Execute the GraphQL mutation with curl
+curl -X POST \
+  -H "Content-Type: application/json" \
+  -H "Authorization: Bearer $RSC_TOKEN" \
+  -d "$(jq -n --arg q "$query" --argjson v "$variables" '{query: $q, variables: $v}')" \
+  https://example.my.rubrik.com/api/graphql
+```
+
+### Add Shares (Generic NAS Only)
+
+[`addCloudDirectSharesToSystem`](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/addCloudDirectSharesToSystem/index.md) is needed **only for generic NAS systems** (`GENERIC_NFS`, `GENERIC_SMB`, `GENERIC_S3`), where shares are not auto-discovered. For branded arrays — NetApp, Isilon, Qumulo, and the rest — shares are discovered automatically after the system is registered, so you do not call this.
+
+Provide `clusterUuid`, `systemId` (the system FID), and `shares` — a list of share paths to add.
+
+### Kerberos Credentials (Kerberos-Secured NFS Only)
+
+[`addCloudDirectKerberosCredential`](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/addCloudDirectKerberosCredential/index.md) is needed **only for NFS shares secured with Kerberos** (krb5/krb5i/krb5p). Plain NFS (AUTH_SYS) and SMB do not require it.
+
+Kerberos credentials are registered at the **cluster level**, not per system — register them before or independently of system import. Provide `clusterUuid`, `username`, `password`, and a `kdcConfig` object with `kdc1`, `realm`, and an optional `kdc2`. Rotate credentials by removing them with [`deleteCloudDirectKerberosCredential`](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/deleteCloudDirectKerberosCredential/index.md) and registering new ones.
+
+### Remove a System
+
+Remove a Cloud Direct system with [`cloudDirectSystemDelete`](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/cloudDirectSystemDelete/index.md), passing `clusterUuid` and `systemFid`.
+
+Operation name
+
+The mutation is [`cloudDirectSystemDelete`](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/cloudDirectSystemDelete/index.md) — the noun precedes the verb, unlike the `addCloudDirect*` operations. It returns [`Void`](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/Void/index.md), so the request has no selection set.
+
+```graphql
+# Remove a Cloud Direct system. Note the operation name: cloudDirectSystemDelete.
+# Returns Void — there is no selection set.
+mutation {
+  cloudDirectSystemDelete(input: {
+    clusterUuid: "11111111-2222-3333-4444-555555555555"
+    systemFid: "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee"
+  })
+}
+```
+
+```powershell
+# Remove a Cloud Direct system. Note the operation name: cloudDirectSystemDelete.
+$query = New-RscMutation -GqlMutation cloudDirectSystemDelete
+
+$query.Var.input = Get-RscType -Name CloudDirectSystemDeleteInput
+$query.Var.input.clusterUuid = "11111111-2222-3333-4444-555555555555"
+$query.Var.input.systemFid = "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee"
+
+$query.Invoke()
+```
+
+```bash
+#!/bin/bash
+
+# RSC_TOKEN="YOUR_RSC_ACCESS_TOKEN"
+# Remove a Cloud Direct system. Note the operation name: cloudDirectSystemDelete.
+# Returns Void — there is no selection set.
+query="mutation CloudDirectSystemDelete(\$input: CloudDirectSystemDeleteInput!) { cloudDirectSystemDelete(input: \$input) }"
+
+read -r -d '' variables <<'JSON'
+{
+  "input": {
+    "clusterUuid": "11111111-2222-3333-4444-555555555555",
+    "systemFid": "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee"
+  }
+}
+JSON
+
+# Execute the GraphQL mutation with curl
+curl -X POST \
+  -H "Content-Type: application/json" \
+  -H "Authorization: Bearer $RSC_TOKEN" \
+  -d "$(jq -n --arg q "$query" --argjson v "$variables" '{query: $q, variables: $v}')" \
+  https://example.my.rubrik.com/api/graphql
+```
+
 ## Reference
 
 - [`cloudDirectNasShares`](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/cloudDirectNasShares/index.md)
+- [`takeCloudDirectSnapshot`](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/takeCloudDirectSnapshot/index.md)
 - [`recoverCloudDirectNasShare`](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/recoverCloudDirectNasShare/index.md)
+- [`addCloudDirectSystem`](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/addCloudDirectSystem/index.md)
+- [`cloudDirectSystemDelete`](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/cloudDirectSystemDelete/index.md)
 - [`AsyncRequestStatus`](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AsyncRequestStatus/index.md)

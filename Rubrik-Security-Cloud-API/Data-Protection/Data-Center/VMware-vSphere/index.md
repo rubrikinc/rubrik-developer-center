@@ -867,3 +867,33 @@ curl -X POST \
   -d "{\"query\": \"$query\"}" \
   https://example.my.rubrik.com/api/graphql
 ```
+
+### Refresh a vCenter Server
+
+Re-synchronize vCenter metadata — host, datastore, network, and VM inventory — after infrastructure changes.
+
+```graphql
+mutation {
+  refreshVsphereVcenter(input: {
+    fid: "11111111-2222-3333-4444-555555555555"
+  }) {
+    id
+    status
+  }
+}
+```
+
+```powershell
+# No toolkit cmdlet available
+$mutation = New-RscMutation -GqlQuery refreshVsphereVcenter
+$mutation.var.input = New-Object -TypeName RubrikSecurityCloud.Types.RefreshVsphereVcenterInput
+$mutation.var.input.Fid = "11111111-2222-3333-4444-555555555555"
+$mutation.invoke()
+```
+
+```bash
+curl -s -X POST "$RSC_URL/api/graphql" \
+  -H "Authorization: Bearer $RSC_TOKEN" \
+  -H "Content-Type: application/json" \
+  -d '{"query": "mutation { refreshVsphereVcenter(input: { fid: \"11111111-2222-3333-4444-555555555555\" }) { id status } }"}'
+```
