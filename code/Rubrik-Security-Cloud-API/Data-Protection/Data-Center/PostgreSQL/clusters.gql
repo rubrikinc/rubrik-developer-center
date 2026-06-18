@@ -1,0 +1,25 @@
+query {
+  postgreSQLDbClusters(
+    filter: [
+      {field: IS_RELIC, texts: "false"}
+      {field: IS_REPLICATED, texts: "false"}
+    ]
+  ) {
+    nodes {
+      id
+      name
+      effectiveSlaDomain {
+        id
+        name
+      }
+      metadata {
+        version
+        size
+        lastSuccessfulRefreshTime
+      }
+      status {
+        status
+      }
+    }
+  }
+}

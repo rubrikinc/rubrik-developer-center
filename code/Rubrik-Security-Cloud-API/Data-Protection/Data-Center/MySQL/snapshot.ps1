@@ -1,0 +1,11 @@
+# No toolkit cmdlet available for MySQL — use the generic New-RscMutation
+$mutation = New-RscMutation -GqlMutation createOnDemandMysqldbInstanceSnapshot
+$mutation.Var.input = @{
+    id     = "f1e2d3c4-b5a6-7890-1234-567890abcdef"
+    config = @{
+        baseOnDemandSnapshotConfig = @{ slaId = "9f706c3c-4678-44e5-99fe-50ebde6b308e" }
+        snapshotType               = "MYSQLDB_ON_DEMAND_SNAPSHOT_CONFIG_SNAPSHOT_TYPE_FULL"
+    }
+    userNote = "Pre-migration backup"
+}
+$mutation.Invoke()

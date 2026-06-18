@@ -16,8 +16,14 @@ Microsoft Exchange is a messaging and collaboration software product developed b
 ## [MongoDB](MongoDB.md)
 MongoDB is a source-available cross-platform document-oriented database program. Classified as a NoSQL database program, MongoDB uses JSON-like documents with optional schemas.
 
+## [MySQL](MySQL.md)
+MySQL is an open-source relational database management system. Rubrik protects MySQL at the instance level, and the databases within an instance inherit its protection.
+
 ## [Oracle](Oracle.md)
 Oracle is a relational database management system developed by Oracle Corporation.
+
+## [PostgreSQL](PostgreSQL.md)
+PostgreSQL is an open-source object-relational database system. Rubrik protects PostgreSQL at the cluster level, and the databases within a cluster inherit its protection.
 
 ## [VMware vSphere](VMware-vSphere.md)
 VMware vSphere is a cloud computing virtualization platform developed by VMware.

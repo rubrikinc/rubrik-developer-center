@@ -1,0 +1,16 @@
+mutation {
+  createHypervVirtualMachineSnapshotMount(input: {
+    id: "f5bc5502-b9a6-4759-bf02-05dc5a48f9f7"
+    config: {
+      vmName: "example-livemount"
+      powerOn: true
+    }
+  }) {
+    id
+    status
+    progress
+    error {
+      message
+    }
+  }
+}

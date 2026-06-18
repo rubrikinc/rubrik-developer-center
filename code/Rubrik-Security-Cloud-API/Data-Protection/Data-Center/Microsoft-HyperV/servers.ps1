@@ -8,8 +8,6 @@ $query.Var.filter[1].texts = "false"
 $query.field.nodes = @(Get-RscType -Name HypervServer -InitialProperties `
     name,`
     id,`
-    hostName,`
-    scvmmInfo.version,`
     connectionStatus,`
     status.connectivity,`
     effectiveSlaDomain.name,effectiveSlaDomain.id,`

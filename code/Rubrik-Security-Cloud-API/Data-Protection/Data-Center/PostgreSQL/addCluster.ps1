@@ -1,0 +1,22 @@
+# No toolkit cmdlet available for PostgreSQL — use the generic New-RscMutation
+$mutation = New-RscMutation -GqlMutation addPostgreSQLDbCluster
+$mutation.Var.input = @{
+    clusterUuid = "8417a938-96f5-43c6-9905-b36e051c5f98"
+    postgresqlDbClusterConfig = @{
+        discoveryInfo = @{
+            entityInfo = @{ name = "prod-pg-01" }
+            hostInfo   = @(
+                @{
+                    hostId     = "b2c3d4e5-f6a7-8901-bcde-f12345678901"
+                    portNumber = 5432
+                }
+            )
+        }
+        systemUsername = "postgres"
+        loginInfo = @{
+            username = "rubrik_backup"
+            password = "REPLACE_WITH_PASSWORD"
+        }
+    }
+}
+$mutation.Invoke()

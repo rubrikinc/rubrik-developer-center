@@ -90,7 +90,7 @@ def process_guide(guide_path: Path, index: dict[str, Path], dry_run: bool) -> in
     if new_content != original:
         if not dry_run:
             guide_path.write_text(new_content)
-        rel = guide_path.relative_to(REPO_ROOT)
+        rel = Path(os.path.relpath(guide_path, REPO_ROOT))
         print(f"  {rel}  (+{total_replacements} links)")
 
     return total_replacements

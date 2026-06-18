@@ -1,0 +1,21 @@
+query {
+  postgreSQLDatabases(
+    filter: [
+      {field: IS_RELIC, texts: "false"}
+      {field: IS_REPLICATED, texts: "false"}
+    ]
+  ) {
+    nodes {
+      id
+      name
+      effectiveSlaDomain {
+        id
+        name
+      }
+      logicalPath {
+        name
+        objectType
+      }
+    }
+  }
+}

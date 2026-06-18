@@ -1,0 +1,30 @@
+query {
+  mysqlInstances(
+    filter: [
+      {field: IS_RELIC, texts: "false"}
+      {field: IS_REPLICATED, texts: "false"}
+    ]
+  ) {
+    nodes {
+      id
+      name
+      objectType
+      effectiveSlaDomain {
+        id
+        name
+      }
+      cluster {
+        id
+        name
+      }
+      status {
+        status
+      }
+      metadata {
+        version
+        lastSuccessfulRefreshTime
+      }
+      numWorkloadDescendants
+    }
+  }
+}

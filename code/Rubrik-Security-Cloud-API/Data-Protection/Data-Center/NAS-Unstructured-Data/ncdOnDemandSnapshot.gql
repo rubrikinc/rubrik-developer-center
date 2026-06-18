@@ -1,0 +1,18 @@
+# Take an on-demand snapshot of a share.
+# Omit slaId to use the share's assigned SLA, or set it to override for this snapshot.
+# exclusions is optional — each entry has a path and/or pattern to skip.
+mutation {
+  takeCloudDirectSnapshot(input: {
+    objectFid: "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee"
+    slaId: "11111111-2222-3333-4444-555555555555"
+    exclusions: [
+      { path: "/finance/tmp" }
+      { pattern: "*.bak" }
+    ]
+  }) {
+    responses {
+      id
+      status
+    }
+  }
+}

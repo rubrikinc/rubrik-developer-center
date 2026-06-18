@@ -317,3 +317,37 @@ For clusters not managed by Prism Central. Provide the Rubrik CDM cluster UUID (
     ```bash
     --8<-- "code/Rubrik-Security-Cloud-API/Data-Protection/Data-Center/Nutanix-AHV/createCluster.sh"
     ```
+
+### Refresh a Cluster
+
+Re-synchronize VM inventory and metadata for a standalone Nutanix cluster after infrastructure changes.
+
+=== "GraphQL"
+    ```graphql
+    --8<-- "code/Rubrik-Security-Cloud-API/Data-Protection/Data-Center/Nutanix-AHV/refreshCluster.gql"
+    ```
+=== "PowerShell SDK"
+    ```powershell
+    --8<-- "code/Rubrik-Security-Cloud-API/Data-Protection/Data-Center/Nutanix-AHV/refreshCluster.ps1"
+    ```
+=== "Shell"
+    ```bash
+    --8<-- "code/Rubrik-Security-Cloud-API/Data-Protection/Data-Center/Nutanix-AHV/refreshCluster.sh"
+    ```
+
+### Refresh a Prism Central
+
+Re-synchronize metadata for a Prism Central and all its associated clusters. Returns a `BatchAsyncRequestStatus` — one status per cluster.
+
+=== "GraphQL"
+    ```graphql
+    --8<-- "code/Rubrik-Security-Cloud-API/Data-Protection/Data-Center/Nutanix-AHV/refreshPrismCentral.gql"
+    ```
+=== "PowerShell SDK"
+    ```powershell
+    --8<-- "code/Rubrik-Security-Cloud-API/Data-Protection/Data-Center/Nutanix-AHV/refreshPrismCentral.ps1"
+    ```
+=== "Shell"
+    ```bash
+    --8<-- "code/Rubrik-Security-Cloud-API/Data-Protection/Data-Center/Nutanix-AHV/refreshPrismCentral.sh"
+    ```

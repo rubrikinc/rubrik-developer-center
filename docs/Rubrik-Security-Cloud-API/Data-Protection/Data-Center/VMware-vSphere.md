@@ -360,3 +360,20 @@ To register a **bare ESXi host with no vCenter**, set `vcenterDetail.isStandalon
     ```bash
     --8<-- "code/Rubrik-Security-Cloud-API/Data-Protection/Data-Center/VMware-vSphere/createVcenter.sh"
     ```
+
+### Refresh a vCenter Server
+
+Re-synchronize vCenter metadata — host, datastore, network, and VM inventory — after infrastructure changes.
+
+=== "GraphQL"
+    ```graphql
+    --8<-- "code/Rubrik-Security-Cloud-API/Data-Protection/Data-Center/VMware-vSphere/refreshVcenter.gql"
+    ```
+=== "PowerShell SDK"
+    ```powershell
+    --8<-- "code/Rubrik-Security-Cloud-API/Data-Protection/Data-Center/VMware-vSphere/refreshVcenter.ps1"
+    ```
+=== "Shell"
+    ```bash
+    --8<-- "code/Rubrik-Security-Cloud-API/Data-Protection/Data-Center/VMware-vSphere/refreshVcenter.sh"
+    ```
