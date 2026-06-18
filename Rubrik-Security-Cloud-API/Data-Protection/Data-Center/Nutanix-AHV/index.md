@@ -797,3 +797,65 @@ curl -s -X POST "$RSC_URL/api/graphql" \
     "query": "mutation { createNutanixCluster(input: { clusterUuid: \"8417a938-96f5-43c6-9905-b36e051c5f98\" nutanixClusterConfig: { hostname: \"prism.example.com\" nutanixClusterUuid: \"00057b6e-1234-5678-0000-000000abcdef\" username: \"admin\" password: \"your-password\" caCerts: \"-----BEGIN CERTIFICATE-----\\nMIID....\\n-----END CERTIFICATE-----\" } }) { id status error { message } } }"
   }'
 ```
+
+### Refresh a Cluster
+
+Re-synchronize VM inventory and metadata for a standalone Nutanix cluster after infrastructure changes.
+
+```graphql
+mutation {
+  refreshNutanixCluster(input: {
+    id: "11111111-2222-3333-4444-555555555555"
+  }) {
+    id
+    status
+  }
+}
+```
+
+```powershell
+# No toolkit cmdlet available
+$mutation = New-RscMutation -GqlQuery refreshNutanixCluster
+$mutation.var.input = New-Object -TypeName RubrikSecurityCloud.Types.RefreshNutanixClusterInput
+$mutation.var.input.Id = "11111111-2222-3333-4444-555555555555"
+$mutation.invoke()
+```
+
+```bash
+curl -s -X POST "$RSC_URL/api/graphql" \
+  -H "Authorization: Bearer $RSC_TOKEN" \
+  -H "Content-Type: application/json" \
+  -d '{"query": "mutation { refreshNutanixCluster(input: { id: \"11111111-2222-3333-4444-555555555555\" }) { id status } }"}'
+```
+
+### Refresh a Prism Central
+
+Re-synchronize metadata for a Prism Central and all its associated clusters. Returns a `BatchAsyncRequestStatus` — one status per cluster.
+
+```graphql
+mutation {
+  refreshNutanixPrismCentral(input: {
+    id: "11111111-2222-3333-4444-555555555555"
+  }) {
+    responses {
+      id
+      status
+    }
+  }
+}
+```
+
+```powershell
+# No toolkit cmdlet available
+$mutation = New-RscMutation -GqlQuery refreshNutanixPrismCentral
+$mutation.var.input = New-Object -TypeName RubrikSecurityCloud.Types.RefreshNutanixPrismCentralInput
+$mutation.var.input.Id = "11111111-2222-3333-4444-555555555555"
+$mutation.invoke()
+```
+
+```bash
+curl -s -X POST "$RSC_URL/api/graphql" \
+  -H "Authorization: Bearer $RSC_TOKEN" \
+  -H "Content-Type: application/json" \
+  -d '{"query": "mutation { refreshNutanixPrismCentral(input: { id: \"11111111-2222-3333-4444-555555555555\" }) { responses { id status } } }"}'
+```
