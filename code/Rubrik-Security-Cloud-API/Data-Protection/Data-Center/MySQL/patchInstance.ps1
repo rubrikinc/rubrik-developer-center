@@ -1,0 +1,24 @@
+# No toolkit cmdlet available for MySQL — use the generic New-RscMutation
+$mutation = New-RscMutation -GqlMutation patchMysqlInstance
+$mutation.Var.input = @{
+    id = "f1e2d3c4-b5a6-7890-1234-567890abcdef"
+    mysqldbInstanceConfig = @{
+        discoveryInfo = @{
+            entityInfo = @{ name = "prod-mysql-01" }
+            hostInfo   = @(
+                @{
+                    hostId     = "b2c3d4e5-f6a7-8901-bcde-f12345678901"
+                    portNumber = 3306
+                }
+            )
+        }
+        connectionInfo = @{
+            username           = "rubrik_backup"
+            password           = "REPLACE_WITH_ROTATED_PASSWORD"
+            systemUsername     = "mysql"
+            authenticationType = "MYSQLDB_AUTHENTICATION_TYPE_TCP_BASED"
+        }
+    }
+    userNote = "Rotate backup credentials"
+}
+$mutation.Invoke()

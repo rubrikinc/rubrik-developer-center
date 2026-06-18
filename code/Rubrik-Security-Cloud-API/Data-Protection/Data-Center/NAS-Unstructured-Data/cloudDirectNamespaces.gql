@@ -12,7 +12,6 @@ query {
         name
         id
       }
-      shareCount
       cluster {
         name
         id

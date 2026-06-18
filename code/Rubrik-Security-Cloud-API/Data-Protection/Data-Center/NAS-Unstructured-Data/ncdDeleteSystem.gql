@@ -1,0 +1,8 @@
+# Remove a Cloud Direct system. Note the operation name: cloudDirectSystemDelete.
+# Returns Void — there is no selection set.
+mutation {
+  cloudDirectSystemDelete(input: {
+    clusterUuid: "11111111-2222-3333-4444-555555555555"
+    systemFid: "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee"
+  })
+}

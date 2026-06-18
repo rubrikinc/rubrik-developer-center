@@ -1,0 +1,17 @@
+mutation {
+  exportHypervVirtualMachine(input: {
+    id: "f5bc5502-b9a6-4759-bf02-05dc5a48f9f7"
+    config: {
+      path: "C:\\ClusterStorage\\Volume1\\Exports\\example-restored"
+      vmName: "example-restored"
+      powerOn: true
+    }
+  }) {
+    id
+    status
+    progress
+    error {
+      message
+    }
+  }
+}

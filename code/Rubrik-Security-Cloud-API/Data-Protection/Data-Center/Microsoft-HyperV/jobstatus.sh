@@ -1,7 +1,9 @@
 #!/bin/bash
 
 # RSC_TOKEN="YOUR_RSC_ACCESS_TOKEN"
-query="query { jobInfo(input: { requestId: \\\"CREATE_HYPERV_SNAPSHOT_89ac2296-565d-4199-8aea-36b8a836c64e_a1be6a78-3ce9-454d-964c-0ce30e19d080:::0:::0\\\" clusterUuid: \\\"f79b1102-77b5-4434-8400-c2a66c9b2dc1\\\" type: HYPERV_VM_SNAPSHOT additionalInfo: {} }) { status } }"
+# id          = the request id returned by the backup/recovery mutation
+# clusterUuid = the source VM's cluster.id (the mutation does not return it)
+query="query { hypervVirtualMachineAsyncRequestStatus(input: { id: \\\"CREATE_HYPERV_SNAPSHOT_a1b2c3d4-1111-2222-3333-444455556666_a1be6a78-3ce9-454d-964c-0ce30e19d080:::0\\\" clusterUuid: \\\"f79b1102-77b5-4434-8400-c2a66c9b2dc1\\\" }) { id status progress error { message } } }"
 
 # Execute the GraphQL query with curl
 curl -X POST \

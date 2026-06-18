@@ -9,17 +9,29 @@ NAS Cloud Direct (NCD) protects unstructured file data on Network Attached Stora
 !!! note "NCD vs. NAS"
     Both products protect file shares, but they are distinct. NAS Unstructured Data is backed by a Rubrik cluster and CDM filesets. NCD is backed by a Cloud Direct cluster, and its shares, snapshots, and recovery operations use the `cloudDirect*` family of GraphQL operations documented on this page.
 
-The NCD object hierarchy in RSC is:
-
-**System** → **Namespace** → **Share** (NFS/SMB) or **Bucket** (S3)
+This guide walks the full NCD lifecycle: discover your environment, assign protection, take on-demand backups, and recover individual files. System registration and other one-time setup tasks are covered in [Set Up](#set-up) at the end.
 
 ## Prerequisites
 
 Before using the NCD API:
 
 1. **Obtain an access token** — See [Authentication](../../authentication.md) for the token exchange flow.
-2. **Confirm NCD shares are registered** — Shares must be discovered before they appear in [`cloudDirectNasShares`](../../API-Reference/queries/cloudDirectNasShares.md).
-3. **Locate your SLA Domain** — See [SLA Domains](../SLA-Domains.md) to retrieve the UUID of the policy assigned to your shares.
+2. **Locate your SLA Domain** — See [SLA Domains](../SLA-Domains.md) to retrieve the UUID of the policy you will assign to your shares.
+3. **Register the NCD system** — A NAS appliance must be registered as a Cloud Direct system before its shares appear in discovery queries. If your shares are not yet visible, see [Set Up](#set-up).
+
+## Object Model
+
+NCD organizes unstructured data into a three-level hierarchy:
+
+**System** → **Namespace** → **Share**
+
+| Object | Description |
+|--------|-------------|
+| **System** | The NAS appliance registered with Rubrik — NetApp, Isilon, Qumulo, FlashBlade, VAST, Azure Files, FSxN, generic NFS/SMB/S3, and others. |
+| **Namespace** | A logical grouping within a system, such as an SVM on NetApp. |
+| **Share** | The snappable: an NFS export, SMB share, or S3 bucket. This is the object that gets backed up, assigned an SLA, and recovered from. |
+
+Protection operations — SLA assignment, on-demand snapshots, and recovery — all act on the **share**. Capture the share FID (`id`) from discovery; it is the handle for everything that follows.
 
 ## Discover Your NCD Environment
 
@@ -91,6 +103,39 @@ List namespaces within your Cloud Direct systems.
 === "Shell"
     ```bash
     --8<-- "code/Rubrik-Security-Cloud-API/Data-Protection/Data-Center/NAS-Unstructured-Data/cloudDirectNamespaces.sh"
+    ```
+
+## Configure Protection
+
+Protect a share by assigning it an SLA Domain. NCD uses the generic [`assignSla`](../../API-Reference/mutations/assignSla.md) mutation — pass the **share FID** as the object ID. See [Assigning an SLA to a workload](../SLA-Domains.md#assigning-an-sla-to-a-workload) for the assignment flow and code samples.
+
+!!! note "NCD SLA Domains specify backup targets per frequency"
+    An NCD SLA Domain must declare which **backup target** each retention frequency writes to — `minutelyBackupLocations`, `hourlyBackupLocations`, `dailyBackupLocations`, and so on are set in the SLA definition. This is configured when you create or update the SLA Domain, not at assignment time. See [Creating an SLA Domain](../SLA-Domains.md#creating-an-sla-domain) for the full SLA definition.
+
+## On-Demand Backup
+
+Trigger an immediate snapshot of a share with [`takeCloudDirectSnapshot`](../../API-Reference/mutations/takeCloudDirectSnapshot.md), outside the SLA schedule.
+
+| Field | Description |
+|-------|-------------|
+| `objectFid` | **Required.** The FID of the share to snapshot. |
+| `slaId` | Optional. Omit to use the share's assigned SLA, or provide a different SLA ID to override retention for this snapshot. |
+| `exclusions` | Optional. A list of `{ path, pattern }` entries to skip during this backup. |
+
+!!! warning "Returns a list of statuses, not one"
+    [`takeCloudDirectSnapshot`](../../API-Reference/mutations/takeCloudDirectSnapshot.md) returns a [`BatchAsyncRequestStatus`](../../API-Reference/types/objects/BatchAsyncRequestStatus.md) — a `responses` **list** of [`AsyncRequestStatus`](../../API-Reference/types/objects/AsyncRequestStatus.md), not a single status. A single share can fan out to multiple snapshot jobs, one per backup target defined in its SLA. Iterate `responses` and poll each `id` to track every job to completion.
+
+=== "GraphQL"
+    ```graphql
+    --8<-- "code/Rubrik-Security-Cloud-API/Data-Protection/Data-Center/NAS-Unstructured-Data/ncdOnDemandSnapshot.gql"
+    ```
+=== "PowerShell SDK"
+    ```powershell
+    --8<-- "code/Rubrik-Security-Cloud-API/Data-Protection/Data-Center/NAS-Unstructured-Data/ncdOnDemandSnapshot.ps1"
+    ```
+=== "Shell"
+    ```bash
+    --8<-- "code/Rubrik-Security-Cloud-API/Data-Protection/Data-Center/NAS-Unstructured-Data/ncdOnDemandSnapshot.sh"
     ```
 
 ## Granular Recovery
@@ -207,8 +252,77 @@ Add an entry to `restorePathPairList` for each file. This is the "shopping cart"
 
 [`recoverCloudDirectNasShare`](../../API-Reference/mutations/recoverCloudDirectNasShare.md) returns an [`AsyncRequestStatus`](../../API-Reference/types/objects/AsyncRequestStatus.md) immediately — the restore runs in the background. Use the returned `id` to poll the task to completion using the standard async task-monitoring pattern, checking `status` until it reaches a terminal state.
 
+## Set Up
+
+The operations below are one-time or infrequent administrative tasks: registering a NAS appliance so its shares can be discovered, adding shares on generic systems, registering Kerberos credentials, and removing a system. Most environments perform these once, then work entirely within the discovery, protection, and recovery flows above.
+
+### Register a NAS System
+
+Register a NAS appliance as a Cloud Direct system with [`addCloudDirectSystem`](../../API-Reference/mutations/addCloudDirectSystem.md). Once the import completes, the system's shares become discoverable and can be protected.
+
+| Field | Description |
+|-------|-------------|
+| `clusterId` | **Required.** The Rubrik CDM cluster that will manage this system. |
+| `host` | **Required.** Management IP or hostname of the NAS appliance. |
+| `systemType` | **Required.** Vendor type — for example `NETAPP_CLUSTER_MODE`, `ISILON`, `QUMULO`, `FLASHBLADE`, `VAST_DATA`, `FSXN`, `AZURE_FILES`, `GENERIC_NFS`, `GENERIC_SMB`, `GENERIC_S3`. |
+| `skipServiceAccountCreation` | **Required.** Set `true` to skip automatic service account creation on the array and use the credentials you provide as-is. |
+| `verifySsl` | **Required.** Whether to verify the appliance's TLS certificate. |
+
+Authenticate with either a username/password pair (`username`, `password`) or a client certificate (`certificateData`, `certificateType`, `certificateKeyPassword`). For FSxN, also set `managementInfo.fileSystemId`; for Azure Files, set `managementInfo.privateEndpoint`.
+
+!!! warning "Registration is asynchronous"
+    [`addCloudDirectSystem`](../../API-Reference/mutations/addCloudDirectSystem.md) returns `{ jobId }` — an import job ID, **not** an [`AsyncRequestStatus`](../../API-Reference/types/objects/AsyncRequestStatus.md). The system and its shares do not appear in discovery queries until the background import finishes, which can take up to **two hours** for large environments. There is no dedicated status query for this job — monitor progress in the Rubrik UI or the activity events feed.
+
+=== "GraphQL"
+    ```graphql
+    --8<-- "code/Rubrik-Security-Cloud-API/Data-Protection/Data-Center/NAS-Unstructured-Data/ncdAddSystem.gql"
+    ```
+=== "PowerShell SDK"
+    ```powershell
+    --8<-- "code/Rubrik-Security-Cloud-API/Data-Protection/Data-Center/NAS-Unstructured-Data/ncdAddSystem.ps1"
+    ```
+=== "Shell"
+    ```bash
+    --8<-- "code/Rubrik-Security-Cloud-API/Data-Protection/Data-Center/NAS-Unstructured-Data/ncdAddSystem.sh"
+    ```
+
+### Add Shares (Generic NAS Only)
+
+[`addCloudDirectSharesToSystem`](../../API-Reference/mutations/addCloudDirectSharesToSystem.md) is needed **only for generic NAS systems** (`GENERIC_NFS`, `GENERIC_SMB`, `GENERIC_S3`), where shares are not auto-discovered. For branded arrays — NetApp, Isilon, Qumulo, and the rest — shares are discovered automatically after the system is registered, so you do not call this.
+
+Provide `clusterUuid`, `systemId` (the system FID), and `shares` — a list of share paths to add.
+
+### Kerberos Credentials (Kerberos-Secured NFS Only)
+
+[`addCloudDirectKerberosCredential`](../../API-Reference/mutations/addCloudDirectKerberosCredential.md) is needed **only for NFS shares secured with Kerberos** (krb5/krb5i/krb5p). Plain NFS (AUTH_SYS) and SMB do not require it.
+
+Kerberos credentials are registered at the **cluster level**, not per system — register them before or independently of system import. Provide `clusterUuid`, `username`, `password`, and a `kdcConfig` object with `kdc1`, `realm`, and an optional `kdc2`. Rotate credentials by removing them with [`deleteCloudDirectKerberosCredential`](../../API-Reference/mutations/deleteCloudDirectKerberosCredential.md) and registering new ones.
+
+### Remove a System
+
+Remove a Cloud Direct system with [`cloudDirectSystemDelete`](../../API-Reference/mutations/cloudDirectSystemDelete.md), passing `clusterUuid` and `systemFid`.
+
+!!! note "Operation name"
+    The mutation is [`cloudDirectSystemDelete`](../../API-Reference/mutations/cloudDirectSystemDelete.md) — the noun precedes the verb, unlike the `addCloudDirect*` operations. It returns [`Void`](../../API-Reference/types/scalars/Void.md), so the request has no selection set.
+
+=== "GraphQL"
+    ```graphql
+    --8<-- "code/Rubrik-Security-Cloud-API/Data-Protection/Data-Center/NAS-Unstructured-Data/ncdDeleteSystem.gql"
+    ```
+=== "PowerShell SDK"
+    ```powershell
+    --8<-- "code/Rubrik-Security-Cloud-API/Data-Protection/Data-Center/NAS-Unstructured-Data/ncdDeleteSystem.ps1"
+    ```
+=== "Shell"
+    ```bash
+    --8<-- "code/Rubrik-Security-Cloud-API/Data-Protection/Data-Center/NAS-Unstructured-Data/ncdDeleteSystem.sh"
+    ```
+
 ## Reference
 
 - [`cloudDirectNasShares`](../../API-Reference/queries/cloudDirectNasShares.md)
+- [`takeCloudDirectSnapshot`](../../API-Reference/mutations/takeCloudDirectSnapshot.md)
 - [`recoverCloudDirectNasShare`](../../API-Reference/mutations/recoverCloudDirectNasShare.md)
+- [`addCloudDirectSystem`](../../API-Reference/mutations/addCloudDirectSystem.md)
+- [`cloudDirectSystemDelete`](../../API-Reference/mutations/cloudDirectSystemDelete.md)
 - [`AsyncRequestStatus`](../../API-Reference/types/objects/AsyncRequestStatus.md)

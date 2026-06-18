@@ -1,0 +1,17 @@
+query {
+  postgresDbClusterLiveMounts {
+    nodes {
+      id
+      name
+      workloadId
+      workloadName
+      hostMountPath
+      mountCreateTime
+      pointInTime
+      mountedHost {
+        id
+        name
+      }
+    }
+  }
+}

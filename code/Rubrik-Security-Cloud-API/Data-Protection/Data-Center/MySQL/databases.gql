@@ -1,0 +1,22 @@
+query {
+  mysqlDatabases(
+    filter: [
+      {field: IS_RELIC, texts: "false"}
+      {field: IS_REPLICATED, texts: "false"}
+    ]
+  ) {
+    nodes {
+      id
+      name
+      objectType
+      effectiveSlaDomain {
+        id
+        name
+      }
+      logicalPath {
+        name
+        objectType
+      }
+    }
+  }
+}

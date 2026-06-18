@@ -1,0 +1,16 @@
+# Register a NAS appliance as a Cloud Direct system.
+# Returns a jobId — registration runs asynchronously and shares appear once
+# the background import completes (up to ~2 hours for large environments).
+mutation {
+  addCloudDirectSystem(input: {
+    clusterId: "11111111-2222-3333-4444-555555555555"
+    host: "netapp01.example.com"
+    systemType: NETAPP_CLUSTER_MODE
+    username: "svc-rubrik"
+    password: "REPLACE_WITH_PASSWORD"
+    skipServiceAccountCreation: false
+    verifySsl: true
+  }) {
+    jobId
+  }
+}

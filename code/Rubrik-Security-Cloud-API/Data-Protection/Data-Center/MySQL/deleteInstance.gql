@@ -1,0 +1,9 @@
+mutation {
+  deleteMysqlInstance(input: {
+    id: "f1e2d3c4-b5a6-7890-1234-567890abcdef"
+    userNote: "Decommissioning instance"
+  }) {
+    id
+    status
+  }
+}
