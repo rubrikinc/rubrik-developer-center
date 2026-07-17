@@ -70,6 +70,6 @@ Page ordering uses the `mkdocs-awesome-pages` plugin (`.pages` files in director
 ## Key Conventions
 
 - The RSC API has a single endpoint: `POST /api/graphql`
-- Authentication uses OAuth2 Client Credentials (service accounts) for automation, or OAuth2 Authorization Code + PKCE for user-context flows (Annapurna retrievers only)
+- Authentication uses OAuth2 Client Credentials (service accounts) for automation
 - Access tokens are Bearer tokens in the `Authorization` header
 - Schema changelog entries are categorized as Breaking, Potentially Breaking, or Non-Breaking based on `graphql-inspector` output
