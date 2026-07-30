@@ -19,10 +19,12 @@ Query Azure DevOps organization object.
     ```graphql
     query AzureDevOpsOrganization($workloadId: UUID!) {
       azureDevOpsOrganization(workloadId: $workloadId) {
+        authenticationMechanism
         authorizedOperations
         backupLocationId
         backupLocationName
         backupRegion
+        clientId
         connectionStatus
         devOpsOrgType
         exocomputeHostName
@@ -60,14 +62,14 @@ Query Azure DevOps organization object.
     {
       "data": {
         "azureDevOpsOrganization": {
+          "authenticationMechanism": "DEVOPS_AUTH_MECHANISM_NON_OAUTH",
           "authorizedOperations": [
             "ACCESS_CDM_CLUSTER"
           ],
           "backupLocationId": "example-string",
           "backupLocationName": "example-string",
           "backupRegion": "example-string",
-          "connectionStatus": "CONNECTION_STATUS_CONNECTED",
-          "devOpsOrgType": "AZURE_DEVOPS",
+          "clientId": "example-string",
           "allOrgs": [
             {
               "allUrls": [

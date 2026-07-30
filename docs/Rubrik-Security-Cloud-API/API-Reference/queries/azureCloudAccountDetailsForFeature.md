@@ -44,7 +44,7 @@ Retrieves the cloud account details from azure customer feature ID.
         "azureCloudAccountDetailsForFeature": {
           "azureCloudType": "AZURECHINACLOUD",
           "permissionsGroups": [
-            "AKS_CUSTOM_PRIVATE_DNS_ZONE"
+            "ADVANCED_DIAGNOSTICS"
           ],
           "subscriptionId": "example-string",
           "tenantDomain": "example-string",

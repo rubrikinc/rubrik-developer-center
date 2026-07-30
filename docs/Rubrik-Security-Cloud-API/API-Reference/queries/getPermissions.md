@@ -45,7 +45,7 @@ Permissions assigned to the role that are in effect.
                 "objectIds": [
                   "example-string"
                 ],
-                "snappableType": "AWS_NATIVE_CONFIG"
+                "snappableType": "AUTH0_TENANT"
               }
             ]
           }

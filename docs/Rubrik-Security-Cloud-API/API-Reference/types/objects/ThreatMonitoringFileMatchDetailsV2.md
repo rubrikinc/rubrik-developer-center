@@ -6,6 +6,7 @@ Reply to ThreatMonitoringFileMatchDetailsV2.
 
 | Field | Type | Description |
 |-------|------|-------------|
+| containerArchiveDetails | [ContainerArchiveDetails](ContainerArchiveDetails.md) | Details of the archive container when the matched file is an inner entry discovered via archive expansion. Unset when is_inside_archive is false. |
 | detectedSnapshotDate | [DateTime](../scalars/DateTime.md) | Snapshot date where the match was first detected. |
 | fileName | String! | Name of the file that was matched. |
 | filePath | String! | Filepath that was matched. |

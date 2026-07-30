@@ -6,4 +6,4 @@ Calendar search object type.
 
 | Field | Type | Description |
 |-------|------|-------------|
-| searchObjectType | [O365CalendarSearchObjectType](../enums/O365CalendarSearchObjectType.md) |  |
+| searchObjectType | [O365CalendarSearchObjectType](../enums/O365CalendarSearchObjectType.md) | Object type (calendar, event, or all) to restrict the search to. |

@@ -47,7 +47,7 @@ Retrieves currently configured permissions for a DevOps cloud account organizati
           ],
           "groupPermissions": [
             {
-              "group": "AKS_CUSTOM_PRIVATE_DNS_ZONE",
+              "group": "ADVANCED_DIAGNOSTICS",
               "permissions": [
                 "example-string"
               ],

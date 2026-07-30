@@ -35,6 +35,7 @@ Get a summary of all failover cluster apps.
           failoverClusterType
           id
           isArchived
+          isReplica
           name
           numWorkloadDescendants
           objectType

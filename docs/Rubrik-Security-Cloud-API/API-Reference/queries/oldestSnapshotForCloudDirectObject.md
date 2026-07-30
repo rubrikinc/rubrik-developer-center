@@ -44,6 +44,7 @@ Returns the oldest snapshot for a Cloud Direct object, such as a share or bucket
         state
         systemId
         target
+        targetId
         type
         workloadId
       }

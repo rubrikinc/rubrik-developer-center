@@ -30,6 +30,7 @@
         id
         includes
         isArrayEnabled
+        isReplica
         name
         numWorkloadDescendants
         objectType
@@ -42,6 +43,8 @@
         shouldRetryPrescriptIfBackupFails
         slaAssignment
         slaPauseStatus
+        templateAllowlistFilesystemPaths
+        templateBlocklistFilesystemTypes
         templateBlocklistedFilesystemPaths
       }
     }

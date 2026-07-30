@@ -23,3 +23,4 @@ Input for updating an SNMP configuration.
 | snmpConfigV94 | [SnmpConfigurationPatchInput](SnmpConfigurationPatchInput.md) | SNMP configuration updates for the specified Rubrik cluster. |
 | snmpConfigV95 | [SnmpConfigurationPatchInput](SnmpConfigurationPatchInput.md) | SNMP configuration updates for the specified Rubrik cluster. |
 | snmpConfigV96 | [SnmpConfigurationPatchInput](SnmpConfigurationPatchInput.md) | SNMP configuration updates for the specified Rubrik cluster. |
+| snmpConfigV97 | [SnmpConfigurationPatchInput](SnmpConfigurationPatchInput.md) | SNMP configuration updates for the specified Rubrik cluster. |

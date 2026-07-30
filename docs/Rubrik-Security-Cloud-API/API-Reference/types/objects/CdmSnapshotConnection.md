@@ -39,9 +39,10 @@ Paginated list of CdmSnapshot objects. Each page of the results includes at most
 - [OracleDataGuardGroup.snapshotConnection](OracleDataGuardGroup.md)
 - [OracleDatabase.snapshotConnection](OracleDatabase.md)
 - [PostgreSQLDbCluster.snapshotConnection](PostgreSQLDbCluster.md)
+- [PureStorageProtectionGroupV1.snapshotConnection](PureStorageProtectionGroupV1.md)
+- [PureStorageVolumeV1.snapshotConnection](PureStorageVolumeV1.md)
 - [SapHanaDatabase.snapshotConnection](SapHanaDatabase.md)
 - [SapHanaSystem.snapshotConnection](SapHanaSystem.md)
 - [ShareFileset.snapshotConnection](ShareFileset.md)
 - [VcdVapp.snapshotConnection](VcdVapp.md)
-- [VsphereVm.snapshotConnection](VsphereVm.md)
-- [WindowsFileset.snapshotConnection](WindowsFileset.md)
+- *…and 2 more*

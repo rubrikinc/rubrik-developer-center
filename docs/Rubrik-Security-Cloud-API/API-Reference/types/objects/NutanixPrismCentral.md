@@ -26,6 +26,7 @@ Nutanix Prism Central details.
 | hostName | String! | IP address of Nutanix Prism Central. |
 | id | [UUID](../scalars/UUID.md)! | Object ID. |
 | isDrEnabled | Boolean! | Specifies whether Nutanix DR support is enabled for the Prism Central object. |
+| isReplica | Boolean | True if this object is a replica, its current cluster differs from its source (primary) cluster. False if the object resides on its source cluster. Null when the source cluster is unknown. |
 | lastRefreshTime | [DateTime](../scalars/DateTime.md) | Last refresh timestamp of Nutanix Prism Central. |
 | latestUserNote | [LatestUserNote](LatestUserNote.md) | Latest user note information. |
 | logicalChildConnection | [NutanixPrismCentralLogicalChildTypeConnection](NutanixPrismCentralLogicalChildTypeConnection.md)! | List of logical children. |
@@ -36,6 +37,7 @@ Nutanix Prism Central details.
 | numWorkloadDescendants | Int! | Number of descendant workloads of this object. |
 | nutanixClusterIds | [String!]! | List of Nutanix Clusters that are protected as part of this Nutanix Prism Central. |
 | nutanixClusters | [CdmHierarchyObjectConnection](CdmHierarchyObjectConnection.md)! | Provide a list of child nutanix cluster objects for the current Nutanix Prism Central. |
+| objectBackupWindow | [ObjectBackupWindowStatus](ObjectBackupWindowStatus.md) | Object-level backup window status of the hierarchy object. |
 | objectPauseStatus | [ObjectPauseStatus](ObjectPauseStatus.md) | Pause status of the hierarchy object. |
 | objectType | [HierarchyObjectTypeEnum](../enums/HierarchyObjectTypeEnum.md)! | Type of this object. |
 | pendingObjectDeletionStatus | [PendingSnapshotsOfObjectDeletion](PendingSnapshotsOfObjectDeletion.md) | Mapping from object ID to pending object deletion status. |
@@ -45,6 +47,7 @@ Nutanix Prism Central details.
 | replicatedObjectCount | Int! | The number of objects either replicated by this object or related to this object by replication. |
 | replicatedObjects | [[CdmHierarchyObject](../interfaces/CdmHierarchyObject.md)!]! | Objects either replicated by this object or related to this object by replication. |
 | securityMetadata | [SecurityMetadata](SecurityMetadata.md) | Security posture metadata. |
+| shouldUseV4 | Boolean! | Indicates whether requests for this Prism Central should dispatch through the Nutanix V4 API on supported Rubrik clusters. Defaults to false when no preference has been set. |
 | slaAssignment | [SlaAssignmentTypeEnum](../enums/SlaAssignmentTypeEnum.md)! | SLA Domain assignment type for this object. |
 | slaPauseStatus | Boolean! | Pause status of the effective SLA Domain of the hierarchy object. |
 | snapshotDistribution | [SnapshotDistribution](SnapshotDistribution.md)! | Distribution of the snapshots of the hierarchy object. |

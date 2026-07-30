@@ -16,3 +16,4 @@ Application info for a cloud native workload discovered via tag-based or auto-di
 
 - [AwsNativeEc2Instance.cloudNativeApplications](AwsNativeEc2Instance.md)
 - [AwsNativeRdsInstance.cloudNativeApplications](AwsNativeRdsInstance.md)
+- [AwsNativeS3Bucket.cloudNativeApplications](AwsNativeS3Bucket.md)

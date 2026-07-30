@@ -18,6 +18,7 @@ Supported in v5.0+
 - [NutanixCluster.connectionStatus](NutanixCluster.md)
 - [NutanixClusterSummary.connectionStatus](NutanixClusterSummary.md)
 - [NutanixPrismCentral.connectionStatus](NutanixPrismCentral.md)
+- [PureStorageArrayV1.connectionStatus](PureStorageArrayV1.md)
 - [StorageArrayDetail.connectionStatus](StorageArrayDetail.md)
 - [UpdateNutanixClusterReply.connectionStatus](UpdateNutanixClusterReply.md)
 - [UpdateNutanixPrismCentralReply.connectionStatus](UpdateNutanixPrismCentralReply.md)

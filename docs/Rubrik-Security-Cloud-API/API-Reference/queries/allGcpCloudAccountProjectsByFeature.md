@@ -6,7 +6,8 @@ List of GCP projects configured for a feature.
 
 | Argument | Type | Description |
 |----------|------|-------------|
-| feature *(required)* | [CloudAccountFeature](../types/enums/CloudAccountFeature.md)! | A cloud account feature of Rubrik Security Cloud. |
+| feature | [CloudAccountFeature](../types/enums/CloudAccountFeature.md) | A cloud account feature of Rubrik Security Cloud. |
+| features | [[CloudAccountFeature](../types/enums/CloudAccountFeature.md)!] | Cloud account features. Rubrik offers a cloud account feature as part of Rubrik Security Cloud (RSC). |
 | projectStatusFilters *(required)* | [[CloudAccountStatus](../types/enums/CloudAccountStatus.md)!]! | List of project status filters to apply. |
 | projectSearchText *(required)* | String! | Search text for project name, native ID and number. |
 | aggregateFeatures | Boolean | Denotes if features are to be aggregated or flattened. |
@@ -20,9 +21,8 @@ List of GCP projects configured for a feature.
 === "Query"
 
     ```graphql
-    query AllGcpCloudAccountProjectsByFeature($feature: CloudAccountFeature!, $projectStatusFilters: [CloudAccountStatus!]!, $projectSearchText: String!) {
+    query AllGcpCloudAccountProjectsByFeature($projectStatusFilters: [CloudAccountStatus!]!, $projectSearchText: String!) {
       allGcpCloudAccountProjectsByFeature(
-        feature: $feature
         projectStatusFilters: $projectStatusFilters
         projectSearchText: $projectSearchText
       ) {
@@ -35,7 +35,6 @@ List of GCP projects configured for a feature.
 
     ```json
     {
-      "feature": "ALL",
       "projectStatusFilters": [
         "CONNECTED"
       ],
@@ -54,7 +53,7 @@ List of GCP projects configured for a feature.
             "allEnabledFeaturesDetails": [
               {
                 "enabledPermissionGroups": [
-                  "AKS_CUSTOM_PRIVATE_DNS_ZONE"
+                  "ADVANCED_DIAGNOSTICS"
                 ],
                 "feature": "ALL",
                 "roleId": "example-string",
@@ -63,7 +62,7 @@ List of GCP projects configured for a feature.
             ],
             "featureDetail": {
               "enabledPermissionGroups": [
-                "AKS_CUSTOM_PRIVATE_DNS_ZONE"
+                "ADVANCED_DIAGNOSTICS"
               ],
               "feature": "ALL",
               "roleId": "example-string",

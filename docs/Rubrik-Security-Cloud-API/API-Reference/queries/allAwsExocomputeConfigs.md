@@ -1,12 +1,13 @@
 # allAwsExocomputeConfigs
 
-List of all AWS exocompute configurations filtered by a cloud account ID or a cloud account name prefix.
+List of all AWS exocompute configurations filtered by a cloud account ID or a cloud account name prefix. When an operation is supplied, the returned accounts are scoped to those the caller can perform that operation on.
 
 ## Arguments
 
 | Argument | Type | Description |
 |----------|------|-------------|
 | awsNativeAccountIdOrNamePrefix *(required)* | String! | A query that searches for Exocompute configurations with an account name or account native ID that is prefixed by the search query. |
+| operation *(required)* | [Operation](../types/enums/Operation.md)! | The operation used to scope the returned accounts to those the caller is authorized to perform. Defaults to CREATE_REPORT, which returns all accounts without operation-based scoping. |
 
 ## Returns
 
@@ -17,8 +18,11 @@ List of all AWS exocompute configurations filtered by a cloud account ID or a cl
 === "Query"
 
     ```graphql
-    query AllAwsExocomputeConfigs($awsNativeAccountIdOrNamePrefix: String!) {
-      allAwsExocomputeConfigs(awsNativeAccountIdOrNamePrefix: $awsNativeAccountIdOrNamePrefix) {
+    query AllAwsExocomputeConfigs($awsNativeAccountIdOrNamePrefix: String!, $operation: Operation!) {
+      allAwsExocomputeConfigs(
+        awsNativeAccountIdOrNamePrefix: $awsNativeAccountIdOrNamePrefix
+        operation: $operation
+      ) {
         bundleStatus
         exocomputeEligibleAuthServerRegions
         exocomputeEligibleRegions
@@ -34,7 +38,8 @@ List of all AWS exocompute configurations filtered by a cloud account ID or a cl
 
     ```json
     {
-      "awsNativeAccountIdOrNamePrefix": "example-string"
+      "awsNativeAccountIdOrNamePrefix": "example-string",
+      "operation": "ACCESS_CDM_CLUSTER"
     }
     ```
 

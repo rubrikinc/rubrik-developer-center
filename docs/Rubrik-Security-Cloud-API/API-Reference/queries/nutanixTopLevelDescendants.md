@@ -28,6 +28,7 @@ Paginated list of the highest-level Nutanix Objects accessible by the current us
           authorizedOperations
           cdmPendingObjectPauseAssignment
           id
+          isReplica
           name
           numWorkloadDescendants
           objectType

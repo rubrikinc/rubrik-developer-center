@@ -7,10 +7,10 @@ Update whitelisted analyzers for a path.
 | Argument | Type | Description |
 |----------|------|-------------|
 | stdPath *(required)* | String! | The standard path of the directory to browse. |
-| snappableFid *(required)* | String! |  |
-| snapshotFid *(required)* | String! |  |
-| analyzerIds *(required)* | [String!]! |  |
-| runAsync *(required)* | Boolean! |  |
+| snappableFid *(required)* | String! | Identifier of the object the path belongs to. |
+| snapshotFid *(required)* | String! | Identifier of the snapshot the path belongs to. |
+| analyzerIds *(required)* | [String!]! | Identifiers of the analyzers to whitelist on the path. |
+| runAsync *(required)* | Boolean! | Determines whether to run this asynchronously. |
 
 ## Returns
 

@@ -7,6 +7,7 @@ Windows disk layout details of the domain controller at the time of the snapshot
 | Field | Type | Description |
 |-------|------|-------------|
 | disks | [[WindowsDiskInfo](WindowsDiskInfo.md)!]! | List of physical disks on the domain controller. |
+| partitions | [[WindowsPartitionInfo](WindowsPartitionInfo.md)!]! | List of partitions on the disks. |
 | volumes | [[WindowsVolumeInfo](WindowsVolumeInfo.md)!]! | List of volumes on the disks. |
 
 ## Used By

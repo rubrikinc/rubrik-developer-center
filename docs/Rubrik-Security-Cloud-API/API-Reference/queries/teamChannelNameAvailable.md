@@ -6,8 +6,8 @@ Checks the availability of the channel name in the Team.
 
 | Argument | Type | Description |
 |----------|------|-------------|
-| teamUUID *(required)* | [UUID](../types/scalars/UUID.md)! |  |
-| channelName *(required)* | String! |  |
+| teamUUID *(required)* | [UUID](../types/scalars/UUID.md)! | The UUID of the Team. |
+| channelName *(required)* | String! | The channel name whose availability is being checked. |
 
 ## Returns
 

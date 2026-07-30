@@ -10,6 +10,7 @@ Details of the Cloud Direct System to be added.
 | certificateKeyPassword | String | Password for encrypted certificate keys. |
 | certificateType | [CloudDirectCertificateType](../enums/CloudDirectCertificateType.md) | Certificate type for client certificate authentication. |
 | clusterId | [UUID](../scalars/UUID.md)! | NCD cluster ID. |
+| creds | [[NcdCredential](NcdCredential.md)!] | Multiple named credentials for multi-tenant generic S3 systems. When non-empty, Mesa uses these instead of username/password. |
 | host | String! | IP address or hostname of the management interface of the system. |
 | managementInfo | [NcdManagementInfo](NcdManagementInfo.md) | Additional information for connecting to a NCD system. |
 | password | String | Password to authenticate with the system. |

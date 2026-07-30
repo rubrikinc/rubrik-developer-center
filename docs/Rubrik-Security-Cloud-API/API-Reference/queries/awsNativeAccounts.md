@@ -39,6 +39,9 @@ Paginated list of all AWS Native accounts.
           dynamoDbTableCount
           ebsVolumeCount
           ec2InstanceCount
+          glueIcebergCatalogCount
+          glueIcebergDatabaseCount
+          glueIcebergTableCount
           id
           isProtectable
           lastRefreshedAt
@@ -48,6 +51,9 @@ Paginated list of all AWS Native accounts.
           rdsInstanceCount
           rscPendingObjectPauseAssignment
           s3BucketCount
+          s3TablesIcebergCatalogCount
+          s3TablesIcebergNamespaceCount
+          s3TablesIcebergTableCount
           serviceType
           slaAssignment
           slaPauseStatus

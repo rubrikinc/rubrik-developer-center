@@ -11,6 +11,7 @@ Response for the update Nutanix Prism Central operation.
 | isDrEnabled | Boolean | Supported in v9.2+ Specifies whether Nutanix DR support is enabled for the the Prism Central object. |
 | pendingSlaDomain | [ManagedObjectPendingSlaInfo](ManagedObjectPendingSlaInfo.md) | Supported in v9.0+ Describes any pending SLA Domain assignment on this object. |
 | refreshJobAsyncReqStatus | [AsyncRequestStatus](AsyncRequestStatus.md) | Supported in v9.1+ Displays the status of the initiated refresh job. |
+| shouldUseV4 | Boolean | Supported in v9.6+ Specifies whether the Prism Central uses the Nutanix V4 API for backup and recovery operations. |
 | slaAssignable | [SlaAssignable](SlaAssignable.md) | Details of the SLA Domain assigned to Nutanix Prism Central. |
 | username | String! | Required. Supported in v9.0+ Username for the Nutanix Prism Central that we use for all the cluster connections. |
 

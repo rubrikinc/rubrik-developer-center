@@ -22,8 +22,11 @@ Add a Kubernetes cluster  Supported in v9.0+ Adds a Kubernetes cluster to the Ru
         distribution
         id
         lastRefreshTime
+        maxConcurrentAgents
+        maxPvcsPerAgent
         name
         onboardingType
+        pvcGroupingStrategy
         region
         registry
         status
@@ -54,9 +57,9 @@ Add a Kubernetes cluster  Supported in v9.0+ Adds a Kubernetes cluster to the Ru
           "distribution": "example-string",
           "id": "example-string",
           "lastRefreshTime": "2024-01-01T00:00:00.000Z",
+          "maxConcurrentAgents": 0,
+          "maxPvcsPerAgent": 0,
           "name": "example-string",
-          "onboardingType": "example-string",
-          "region": "example-string",
           "crdServiceAccountInfo": {
             "accessToken": "example-string",
             "clientId": "example-string",

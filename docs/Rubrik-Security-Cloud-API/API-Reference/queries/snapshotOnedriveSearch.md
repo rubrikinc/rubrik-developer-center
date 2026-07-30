@@ -1,6 +1,6 @@
 # snapshotOnedriveSearch
 
-*No description available.*
+Returns OneDrive folders and files inside a single snapshot, merged as a single O365OnedriveObject interface list (folders then files).
 
 ## Arguments
 
@@ -8,10 +8,12 @@
 |----------|------|-------------|
 | first | Int | Returns the first n elements from the list. |
 | after | String | Returns the elements in the list that occur after the specified cursor. |
+| last | Int | Returns the last n elements from the list. |
+| before | String | Returns the elements in the list that occur before the specified cursor. |
 | snappableFid *(required)* | [UUID](../types/scalars/UUID.md)! | The FID for the workload. |
 | snapshotFid *(required)* | [UUID](../types/scalars/UUID.md)! | The ID of the snapshot. |
 | orgId *(required)* | [UUID](../types/scalars/UUID.md)! | Org UUID. |
-| onedriveSearchFilter | [OnedriveSearchFilter](../types/inputs/OnedriveSearchFilter.md) |  |
+| onedriveSearchFilter | [OnedriveSearchFilter](../types/inputs/OnedriveSearchFilter.md) | Optional OneDrive search filter. |
 
 ## Returns
 

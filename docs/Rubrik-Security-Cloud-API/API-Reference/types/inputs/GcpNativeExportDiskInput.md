@@ -10,6 +10,7 @@ Input required to export a GCP native disk snapshot.
 | diskEncryptionType | [DiskEncryptionType](../enums/DiskEncryptionType.md)! | Encryption type of exported disk. |
 | kmsCryptoKey | [KmsCryptoKey](KmsCryptoKey.md) | Customer managed key to encrypt exported disk. This is only applicable when encryption type is CustomerManagedKey. |
 | kmsCryptoKeyResourceId | String | Customer managed key to encrypt exported disk. This is only applicable when encryption type is CustomerManagedKeyResourceId. |
+| recoveryPurpose | [RecoveryPurpose](../enums/RecoveryPurpose.md) | Purpose of the recovery operation. Set to SURGICAL_RECOVERY to automatically exclude quarantined files from the exported disk (subject to feature availability for the account). Defaults to RECOVERY_PURPOSE_UNSPECIFIED, which preserves prior behavior. |
 | replaceAttached | Boolean! | Specifies whether the exported disk should replace the source disk from the attached instance. |
 | replicaZones | [String!] | The zones where the regional exported disk should be replicated. |
 | shouldAddRubrikLabels | Boolean! | Specifies whether to allow Rubrik labels on the exported disk or not. |

@@ -45,7 +45,7 @@ Retrieves the most recent permission definitions available for DevOps features a
           ],
           "groupPermissions": [
             {
-              "group": "AKS_CUSTOM_PRIVATE_DNS_ZONE",
+              "group": "ADVANCED_DIAGNOSTICS",
               "permissions": [
                 "example-string"
               ],

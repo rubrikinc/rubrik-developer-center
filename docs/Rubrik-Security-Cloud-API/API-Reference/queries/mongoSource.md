@@ -30,6 +30,7 @@ Provides details for the MongoDB source cluster identified by the fid.
         id
         isArchived
         isRelic
+        isReplica
         lastRefreshTime
         managementType
         name

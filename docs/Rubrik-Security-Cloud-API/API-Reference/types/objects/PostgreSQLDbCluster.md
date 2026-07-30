@@ -26,6 +26,7 @@ PostgreSQL database cluster details object.
 | hostsInfo | [[HostDiscoverableInfo](HostDiscoverableInfo.md)!]! | The host information of the discoverable entity. |
 | id | [UUID](../scalars/UUID.md)! | ID of the hierarchy object. |
 | isRelic | Boolean! | Indicates whether the workload type is Relic. |
+| isReplica | Boolean | True if this object is a replica, its current cluster differs from its source (primary) cluster. False if the object resides on its source cluster. Null when the source cluster is unknown. |
 | latestUserNote | [LatestUserNote](LatestUserNote.md) | Latest user note information. |
 | liveMounts | [KosmosWorkloadLiveMountConnection](KosmosWorkloadLiveMountConnection.md)! | The live mounts of the given workloads. |
 | logicalPath | [[PathNode](PathNode.md)!]! | Sequential list of the logical ancestors of this object. |
@@ -38,6 +39,7 @@ PostgreSQL database cluster details object.
 | newestReplicatedSnapshot | [CdmSnapshot](CdmSnapshot.md) | The newest snapshot replicated to a cluster. |
 | newestSnapshot | [CdmSnapshot](CdmSnapshot.md) | The most recent snapshot of this workload. |
 | numWorkloadDescendants | Int! | Number of descendant workloads of this object. |
+| objectBackupWindow | [ObjectBackupWindowStatus](ObjectBackupWindowStatus.md) | Object-level backup window status of the hierarchy object. |
 | objectPauseStatus | [ObjectPauseStatus](ObjectPauseStatus.md) | Pause status of the hierarchy object. |
 | objectType | [HierarchyObjectTypeEnum](../enums/HierarchyObjectTypeEnum.md)! | Type of this object. |
 | oldestSnapshot | [CdmSnapshot](CdmSnapshot.md) | The oldest snapshot of this workload. |
@@ -46,7 +48,7 @@ PostgreSQL database cluster details object.
 | pendingSla | [SlaDomain](../interfaces/SlaDomain.md) | SLA Domain assignment of the object during the process of being communicated over to Rubrik CDM. |
 | physicalChildConnection | [KosmosParentHierarchyObjectPhysicalChildTypeConnection](KosmosParentHierarchyObjectPhysicalChildTypeConnection.md)! | List of physical children. |
 | physicalPath | [[PathNode](PathNode.md)!]! | Sequential list of the physical ancestors of this object. |
-| postgresHaClusterInfo | [PostgresHaClusterInfo](PostgresHaClusterInfo.md) | HA cluster info including group name and replica topology. Null for standalone clusters. |
+| postgresHaClusterInfo | [PostgresHaClusterInfo](PostgresHaClusterInfo.md) | HA cluster info including the group name and replica topology. Null for standalone clusters. |
 | primaryClusterLocation | [DataLocation](DataLocation.md)! | The source cluster of this object. Returned as a data location because there is no guarantee that Rubrik has knowledge about the source cluster. |
 | recoverableRanges | [[KosmosWorkloadRecoverableRange](KosmosWorkloadRecoverableRange.md)!]! | The recovery ranges for the current workload. |
 | replicatedObjectCount | Int! | The number of objects either replicated by this object or related to this object by replication. |
@@ -78,6 +80,8 @@ PostgreSQL database cluster details object.
 | liveMounts | sortBy | [KosmosWorkloadLiveMountSortByInput](../inputs/KosmosWorkloadLiveMountSortByInput.md) | Sort the live mounts of the Kosmos Workload based on the argument. |
 | missedSnapshotConnection | first | Int | Returns the first n elements from the list. |
 | missedSnapshotConnection | after | String | Returns the elements in the list that occur after the specified cursor. |
+| missedSnapshotConnection | last | Int | Returns the last n elements from the list. |
+| missedSnapshotConnection | before | String | Returns the elements in the list that occur before the specified cursor. |
 | missedSnapshotConnection | filter | [MissedSnapshotFilterInput](../inputs/MissedSnapshotFilterInput.md) | Filter missed snapshots by date. |
 | missedSnapshotGroupByConnection | first | Int | Returns the first n elements from the list. |
 | missedSnapshotGroupByConnection | after | String | Returns the elements in the list that occur after the specified cursor. |

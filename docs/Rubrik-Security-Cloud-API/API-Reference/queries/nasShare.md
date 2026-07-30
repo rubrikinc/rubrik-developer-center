@@ -30,8 +30,10 @@ A NAS Share.
         isChangelistEnabled
         isHidden
         isNasShareManuallyAdded
+        isNetAppSnapDiffEnabled
         isNutanixCftEnabled
         isRelic
+        isReplica
         isStale
         name
         numWorkloadDescendants

@@ -25,6 +25,7 @@ Kubernetes virtual machine.
 | guestOsName | String | Guest OS name of the K8s Virtual Machine. |
 | id | [UUID](../scalars/UUID.md)! | Object ID of Kubernetes Virtual Machine. |
 | isRelic | Boolean! | Specifies whether the Protection Set is a relic. |
+| isReplica | Boolean | True if this object is a replica, its current cluster differs from its source (primary) cluster. False if the object resides on its source cluster. Null when the source cluster is unknown. |
 | k8sClusterName | String! | Name of the Kubernetes cluster. |
 | k8sClusterUuid | [UUID](../scalars/UUID.md)! | UUID of the Kubernetes Cluster. |
 | k8sLabelIds | [[UUID](../scalars/UUID.md)!]! | List of IDs of the Kubernetes labels. |
@@ -43,6 +44,7 @@ Kubernetes virtual machine.
 | newestReplicatedSnapshot | [CdmSnapshot](CdmSnapshot.md) | The newest snapshot replicated to a cluster. |
 | newestSnapshot | [CdmSnapshot](CdmSnapshot.md) | The most recent snapshot of this workload. |
 | numWorkloadDescendants | Int! | Number of descendant workloads of this object. |
+| objectBackupWindow | [ObjectBackupWindowStatus](ObjectBackupWindowStatus.md) | Object-level backup window status of the hierarchy object. |
 | objectPauseStatus | [ObjectPauseStatus](ObjectPauseStatus.md) | Pause status of the hierarchy object. |
 | objectType | [HierarchyObjectTypeEnum](../enums/HierarchyObjectTypeEnum.md)! | Type of this object. |
 | oldestSnapshot | [CdmSnapshot](CdmSnapshot.md) | The oldest snapshot of this workload. |
@@ -78,6 +80,8 @@ Kubernetes virtual machine.
 | k8sVirtualMachineDisks | sortOrder | [SortOrder](../enums/SortOrder.md) | Sorts the order of results. |
 | missedSnapshotConnection | first | Int | Returns the first n elements from the list. |
 | missedSnapshotConnection | after | String | Returns the elements in the list that occur after the specified cursor. |
+| missedSnapshotConnection | last | Int | Returns the last n elements from the list. |
+| missedSnapshotConnection | before | String | Returns the elements in the list that occur before the specified cursor. |
 | missedSnapshotConnection | filter | [MissedSnapshotFilterInput](../inputs/MissedSnapshotFilterInput.md) | Filter missed snapshots by date. |
 | missedSnapshotGroupByConnection | first | Int | Returns the first n elements from the list. |
 | missedSnapshotGroupByConnection | after | String | Returns the elements in the list that occur after the specified cursor. |

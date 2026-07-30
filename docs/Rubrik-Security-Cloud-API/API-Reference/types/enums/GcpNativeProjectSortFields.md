@@ -1,15 +1,15 @@
 # GcpNativeProjectSortFields
 
-Fields to sort GCP native projects.
+Fields available for sorting the list of GCP native projects.
 
 ## Values
 
 | Value | Description |
 |-------|-------------|
-| EFFECTIVE_SLA_DOMAIN | Sort by SLA Domain. |
-| GCP_PROJECT_DISK_COUNT | Sort by disk count. |
-| GCP_PROJECT_INSTANCE_COUNT | Sort by GCE instance count. |
-| GCP_PROJECT_NATIVE_ID | Sort by GCP project native ID. |
-| GCP_PROJECT_NUMBER | Sort by GCP project number. |
-| GCP_PROJECT_ORG_NAME | Sort by GCP project native name. |
-| NAME | Sort by GCP project name. |
+| EFFECTIVE_SLA_DOMAIN | Sort by the effective SLA Domain. |
+| GCP_PROJECT_DISK_COUNT | Sort by the disk count. |
+| GCP_PROJECT_INSTANCE_COUNT | Sort by the GCE instance count. |
+| GCP_PROJECT_NATIVE_ID | Sort by the GCP project native ID. |
+| GCP_PROJECT_NUMBER | Sort by the GCP project number. |
+| GCP_PROJECT_ORG_NAME | Sort by the GCP organization name. |
+| NAME | Sort by the GCP project name. |

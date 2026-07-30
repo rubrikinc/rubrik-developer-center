@@ -44,4 +44,4 @@ Represents pause status of an object.
 - [AzureSqlDatabaseDb.objectPauseStatus](AzureSqlDatabaseDb.md)
 - [AzureSqlDatabaseServer.objectPauseStatus](AzureSqlDatabaseServer.md)
 - [AzureSqlManagedInstanceDatabase.objectPauseStatus](AzureSqlManagedInstanceDatabase.md)
-- *…and 275 more*
+- *…and 284 more*

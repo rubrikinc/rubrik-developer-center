@@ -23,10 +23,13 @@ Entra ID object relationship types.
 | GROUP_POLICY_ACTION | Group policy action relationship for an Intune object. |
 | GROUP_POLICY_ASSIGNMENT | Group policy assignment relationship for an Intune object. |
 | INTUNE_ROLE_ASSIGNMENT | Intune role assignment relationship for an Intune role definition. |
+| INTUNE_ROLE_ASSIGNMENT_MEMBER | Member (Group) of an Intune role assignment; resolves the assignments a group belongs to. |
 | INTUNE_ROLE_ASSIGNMENT_SCOPE | Intune role assignment scope relationship for an Intune role definition. Targets the resource scope groups the role assignment manages. |
 | INTUNE_ROLE_ASSIGNMENT_SCOPE_TAG | Intune role assignment scope tag relationship for an Intune role definition. Targets the scope tags constraining the role. |
+| MANAGER | Manager relationship of an Entra ID object. |
 | MEMBER | Member relationship of an Entra ID object. |
 | NOTIFICATION_POLICY_ACTION | Notification policy action relationship for an Intune object. |
+| NOTIFICATION_RECIPIENT | Additional notification recipient (User or Group) for an Access Review schedule definition. |
 | OWNER | Owner relationship of an Entra ID object. |
 | PIM_POLICY_APPROVER | PIM policy approver relationship for an Entra ID role or group. |
 | POLICY_ACTION | Policy action relationship for an Intune object. |
@@ -39,6 +42,7 @@ Entra ID object relationship types.
 | PRINCIPAL_ROLE_ASSIGNMENT | Principal Role Assignment relationship for an Entra ID object. |
 | PRINCIPAL_ROLE_ELIGIBLE_ASSIGNMENT | Principal-side role eligibility (User/Group to eligibility schedule). |
 | REUSABLE_SETTING_REFERENCE | Reusable setting reference relationship for an Intune object. |
+| REVIEWER | Reviewer (User or Group) assigned to an Access Review schedule definition, either top-level or within stageSettings. |
 | ROLE_ASSIGNMENT | Role assignment relationship for an Entra ID object. |
 | ROLE_ELIGIBLE_ASSIGNMENT | Role-eligible assignment relationship for an Entra ID object. |
 | ROLE_SCOPE_TAG_REFERENCE | Role scope tag relationship for an Intune object. |

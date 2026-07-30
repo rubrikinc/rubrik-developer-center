@@ -1,6 +1,6 @@
 # addAdGroupsToHierarchy
 
-Add AD Groups to O365 hierarchy.
+AddADGroupsToHierarchyV2 is the V2 GraphQL entry point for AddADGroupsToHierarchy.
 
 ## Arguments
 

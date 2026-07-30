@@ -35,6 +35,7 @@ Get the configuration for a specific host  Supported in v6.0+ Returns the config
         maxDbLoadSizeInBytes
         maxNodesForMultiNodeBackup
         maxNodesForMultiNodeRestore
+        mssqlAllowDirtyReadForAgQuery
         mssqlAllowDirtyReadForDbSizeQuery
         mssqlDatabaseQueryTimeout
         mssqlDefaultMaxDataStreamsPerDatabase

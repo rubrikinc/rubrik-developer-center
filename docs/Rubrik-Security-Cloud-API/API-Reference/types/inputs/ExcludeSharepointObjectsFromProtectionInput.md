@@ -1,6 +1,6 @@
 # ExcludeSharepointObjectsFromProtectionInput
 
-Configuration for the exclusion of SharePoint objects from protection.
+Input for the excludeSharepointObjectsFromProtection mutation.
 
 ## Fields
 

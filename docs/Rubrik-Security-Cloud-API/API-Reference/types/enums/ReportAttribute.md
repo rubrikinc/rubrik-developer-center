@@ -16,6 +16,13 @@ All reporting attributes.
 | ARCHIVE_TARGET | The archive target in the report |
 | ATTRIBUTE_UNSPECIFIED | Unspecified attribute. |
 | AWAITING_FIRST_FULL | The awaiting first full status in the report. |
+| CLOUD_ACCOUNT_NAME | The cloud account display name attribute in the report. |
+| CLOUD_ACCOUNT_NATIVE_ID | The cloud account native ID attribute in the report. |
+| CLOUD_COST_ACCOUNT | The cloud account attribute in the cloud cost report. |
+| CLOUD_COST_ACCOUNT_ID | The raw native cloud account id attribute in the cloud cost report (e.g. the 12-digit AWS account number), unresolved to a name. |
+| CLOUD_COST_PROVIDER | The cloud provider attribute (AWS, Azure, GCP) in the cloud cost report. |
+| CLOUD_COST_TYPE | The cost type/dimension attribute in the cloud cost report (Snapshot, Archival, Compute, Transient, Replication). |
+| CLOUD_PROVIDER | The cloud provider attribute in the report. |
 | CLUSTER | The cluster name attribute in the report. |
 | CLUSTER_LOCATION | The cluster location attribute in the report. |
 | CLUSTER_TYPE | The cluster type attribute in the report. |
@@ -50,6 +57,7 @@ All reporting attributes.
 | REPLICATION_COMPLIANCE_STATUS | The replication compliance status in the report. |
 | REPLICATION_SOURCE | The replication source in the report. |
 | REPLICATION_TARGET | The replication target in the report. |
+| RESOURCE_GROUP | The cloud resource group attribute in the report (Azure resource group). |
 | RISK_CATEGORY | Category of the policy. |
 | RISK_SEVERITY | Severity of the policy. |
 | SEVERITY | The severity attribute in the report. |

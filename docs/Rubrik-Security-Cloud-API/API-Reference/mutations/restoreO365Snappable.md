@@ -1,12 +1,12 @@
 # restoreO365Snappable
 
-Restores an O365 snappable.
+Restores an O365 workload (OneDrive, SharePoint, Exchange, Calendar, Contacts, Teams). The account, user, and RSC org id are resolved from req_ctx.
 
 ## Arguments
 
 | Argument | Type | Description |
 |----------|------|-------------|
-| input *(required)* | [RestoreO365SnappableInput](../types/inputs/RestoreO365SnappableInput.md)! | The input for the mutation to restore an O365 workload. |
+| input *(required)* | [RestoreO365SnappableInput](../types/inputs/RestoreO365SnappableInput.md)! | Input for restoring an O365 workload. |
 
 ## Returns
 

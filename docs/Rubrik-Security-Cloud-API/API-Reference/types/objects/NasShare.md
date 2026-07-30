@@ -28,8 +28,10 @@ NAS share instance of a registered NAS system.
 | isChangelistEnabled | Boolean! | Specifies whether the Changelist option is enabled. |
 | isHidden | Boolean! | Specifies if the share is hidden. |
 | isNasShareManuallyAdded | Boolean! | Specifies whether the NAS shares are manually configured on the NAS system. |
+| isNetAppSnapDiffEnabled | Boolean | Specifies whether NetApp SnapDiff is enabled. |
 | isNutanixCftEnabled | Boolean | Specifies whether Nutanix Files Changed File Tracking (CFT) is enabled. |
 | isRelic | Boolean! | Specifies whether this object is a relic. |
+| isReplica | Boolean | True if this object is a replica, its current cluster differs from its source (primary) cluster. False if the object resides on its source cluster. Null when the source cluster is unknown. |
 | isStale | Boolean! | Specifies if the share is deleted on the NAS System. |
 | latestUserNote | [LatestUserNote](LatestUserNote.md) | Latest user note information. |
 | logicalChildConnection | [NasShareLogicalChildTypeConnection](NasShareLogicalChildTypeConnection.md)! | List of logical children. |
@@ -39,6 +41,7 @@ NAS share instance of a registered NAS system.
 | nasSystem | [NasSystem](NasSystem.md) | The NAS System to which this NAS Share belongs. |
 | nasVolume | [NasVolume](NasVolume.md) | The NAS Volume to which this NAS Share belongs. |
 | numWorkloadDescendants | Int! | Number of descendant workloads of this object. |
+| objectBackupWindow | [ObjectBackupWindowStatus](ObjectBackupWindowStatus.md) | Object-level backup window status of the hierarchy object. |
 | objectPauseStatus | [ObjectPauseStatus](ObjectPauseStatus.md) | Pause status of the hierarchy object. |
 | objectType | [HierarchyObjectTypeEnum](../enums/HierarchyObjectTypeEnum.md)! | Type of this object. |
 | pendingObjectDeletionStatus | [PendingSnapshotsOfObjectDeletion](PendingSnapshotsOfObjectDeletion.md) | Mapping from object ID to pending object deletion status. |

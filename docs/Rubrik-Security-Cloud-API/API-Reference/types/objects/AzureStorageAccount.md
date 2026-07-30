@@ -33,6 +33,7 @@ An Azure storage account that contains Azure storage data objects including blob
 | numContainers | [Long](../scalars/Long.md)! | The number of containers in the storage account. |
 | numExcludedContainers | [Long](../scalars/Long.md)! | The number of containers excluded from protection by the customer in the storage account. |
 | numWorkloadDescendants | Int! | Number of descendant workloads of this object. |
+| objectBackupWindow | [ObjectBackupWindowStatus](ObjectBackupWindowStatus.md) | Object-level backup window status of the hierarchy object. |
 | objectPauseStatus | [ObjectPauseStatus](ObjectPauseStatus.md) | Pause status of the hierarchy object. |
 | objectType | [HierarchyObjectTypeEnum](../enums/HierarchyObjectTypeEnum.md)! | Type of this object. |
 | oldestSnapshot | [PolarisSnapshot](PolarisSnapshot.md) | The oldest snapshot of this workload. |

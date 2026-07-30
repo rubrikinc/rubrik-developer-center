@@ -11,7 +11,7 @@
 | AVAILABLE_SPACE_PERCENT | Percentage of available storage space in the cluster. |
 | ActivityStatus | Sort by activity status. |
 | ActivityType | Sort by activity type. |
-| AppBlueprintName |  |
+| AppBlueprintName | Sort by the Recovery Plan name. |
 | ArchivalComplianceStatus |  |
 | ArchivalSnapshotLag |  |
 | ArchiveSnapshots |  |
@@ -83,10 +83,10 @@
 | SUSPICIOUS_FILES_COUNT | Count of suspicious files. |
 | Severity | Sort by severity. |
 | SlaDomainName |  |
-| SourceSiteName |  |
-| StartTime | Sort by start time. |
+| SourceSiteName | Sort by the source site name. |
+| StartTime | Sort by the start time of the failover. |
 | TOTAL_HITS |  |
-| TargetSiteName |  |
+| TargetSiteName | Sort by the target site name. |
 | Time | Sort user audits by time. |
 | TotalSnapshots |  |
 | TransferredBytes |  |

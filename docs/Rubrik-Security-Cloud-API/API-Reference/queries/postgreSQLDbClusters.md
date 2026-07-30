@@ -31,6 +31,7 @@ Connection of filtered PostgreSQL database cluster based on specific filters.
           clusterMode
           id
           isRelic
+          isReplica
           name
           numWorkloadDescendants
           objectType

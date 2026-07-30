@@ -6,7 +6,7 @@ Archive a crawl.
 
 | Argument | Type | Description |
 |----------|------|-------------|
-| crawlId *(required)* | String! |  |
+| crawlId *(required)* | String! | Identifier of the crawl to archive. |
 
 ## Returns
 

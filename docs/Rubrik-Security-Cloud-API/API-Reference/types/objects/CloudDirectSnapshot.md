@@ -38,6 +38,7 @@ NAS Cloud Direct snapshot object.
 | summary | [CloudDirectSnapshotSummary](CloudDirectSnapshotSummary.md) | Summary of statistics for this snapshot. |
 | systemId | String! | ID of the NAS Cloud Direct System. |
 | target | String | The name of the target associated with this snapshot. |
+| targetId | [UUID](../scalars/UUID.md) | The ID of the target associated with this snapshot. |
 | type | [CloudDirectSnapshotType](../enums/CloudDirectSnapshotType.md)! |  |
 | userExclusionDetails | [CloudDirectExclusionSummary](CloudDirectExclusionSummary.md) | Summary of user-defined exclusions for this snapshot. |
 | workloadId | [UUID](../scalars/UUID.md)! | Rubrik ID of NAS Cloud Direct workload. |

@@ -24,6 +24,7 @@ Details of an Exchange Server for a given fid.
         cdmPendingObjectPauseAssignment
         hasVgConflict
         id
+        isReplica
         name
         numWorkloadDescendants
         objectType
@@ -59,7 +60,7 @@ Details of an Exchange Server for a given fid.
           "cdmPendingObjectPauseAssignment": "NO_PENDING_PAUSE_ASSIGNMENT",
           "hasVgConflict": true,
           "id": "00000000-0000-0000-0000-000000000000",
-          "name": "example-string",
+          "isReplica": true,
           "allOrgs": [
             {
               "allUrls": [

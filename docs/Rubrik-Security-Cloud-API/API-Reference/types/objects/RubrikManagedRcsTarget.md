@@ -27,6 +27,7 @@ Specific information for Rubrik Cloud Vault (RCV) Azure target created on Rubrik
 | name | String! | The name of the target. |
 | privateEndpointConnection | [PrivateEndpointConnection](PrivateEndpointConnection.md) | RCV Private endpoint connection details. |
 | privateEndpointConnections | [[PrivateEndpointConnection](PrivateEndpointConnection.md)!] | Private endpoint connections for this location. |
+| proxySettings | [ProxySettings](ProxySettings.md) | Proxy configuration used by the Rubrik cluster to reach this Rubrik Cloud Vault Azure location. |
 | rcvConversion | [[RcvConversionType](RcvConversionType.md)!] | List of conversions for this RCV location. |
 | readerRetrievalMethod | [ReaderRetrievalMethod](../enums/ReaderRetrievalMethod.md) | The retrieval method of the reader target. |
 | redundancy | [RcvRedundancy](../enums/RcvRedundancy.md)! | Redundancy for RCV Azure target. |
@@ -34,7 +35,8 @@ Specific information for Rubrik Cloud Vault (RCV) Azure target created on Rubrik
 | region | [RcsRegionEnumType](../enums/RcsRegionEnumType.md)! | Region of RCV Azure target. |
 | resourceGroup | String! | Resource group for RCV Azure target. |
 | runningTasks | Int | Number of archiving tasks running on this target. |
-| shouldBypassProxy | Boolean! | Specifies whether the proxy settings is bypassed for  the RCV Azure archival target. |
+| shouldBypassProxy | Boolean! | Specifies whether the proxy settings is bypassed for the RCV Azure archival target. |
+| shouldBypassProxyForDatapaths | Boolean! | When enabled, blob storage (data path) traffic bypasses the configured proxy, while Azure AD authentication traffic continues to use it. |
 | spaceUsageAlertThreshold | Int! | Space usage threshold of RCV Azure target above which alert will be raised. |
 | status | [ArchivalLocationStatus](../enums/ArchivalLocationStatus.md)! | Status of the target. |
 | storageAccountName | String! | Storage account name for RCV Azure target. |

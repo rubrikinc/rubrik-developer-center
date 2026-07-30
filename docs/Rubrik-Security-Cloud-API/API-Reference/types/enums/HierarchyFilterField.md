@@ -26,7 +26,7 @@ Fields for filtering hierarchy objects.
 | AWS_NATIVE_IS_ELIGIBLE_FOR_S3_PROTECTION | Filter S3 workloads by their eligibility for protection. Eligibility is determined by whether the AWS native account is not archived and has the protection feature enabled for S3. |
 | AWS_NATIVE_RDS_DB_ENGINE | Filter by RDS Instace DB Engine. |
 | AWS_NATIVE_RDS_DB_INSTANCE_CLASS | Filter by RDS Instance DB Instance Class. |
-| AWS_NATIVE_REGION_NON_EMPTY | Filter AWS native regions that have at least one workload. A region is considered non-empty if any of its workload counters, such as ec2_instance_count, ebs_volume_count, rds_instance_count, s3_bucket_count, or dynamo_db_table_count, are greater than zero. |
+| AWS_NATIVE_REGION_NON_EMPTY | Filter AWS native regions that have at least one workload. A region is considered non-empty if any of its workload counters, such as ec2_instance_count, ebs_volume_count, rds_instance_count, s3_bucket_count, dynamo_db_table_count, glue_iceberg_catalog_count, glue_iceberg_database_count, glue_iceberg_table_count, s3_tables_iceberg_catalog_count, s3_tables_iceberg_namespace_count, or s3_tables_iceberg_table_count, are greater than zero. |
 | AWS_REGION | Filter by AWSAccount.aws_region_spec.region, EC2Instance.region, and EBSVolume.region. |
 | AWS_TAG | Filter by aws_native_tags. |
 | AWS_VPC_ID | Filter by VPC ID. |
@@ -116,6 +116,7 @@ Fields for filtering hierarchy objects.
 | DEVOPS_ARCHIVAL_LOCATION_ID | Filter DevOps organizations by their archival location ID, stored in devops_organizations and share the backup_location_id column. |
 | DEVOPS_EXOCOMPUTE_CLOUD_ACCOUNT_ID | Filter DevOps organizations by their exocompute cloud account ID, stored in devops_organizations. |
 | DEVOPS_NATIVE_ID | Filter by the native ID field of the DevOps object. |
+| DIRECTLY_PAUSED_SINCE | Filter objects whose direct object level pause started on or after the timestamp in timeParam. |
 | DOES_NAS_SHARE_HAVE_RELIC_FILESETS | Filter by relic filesets of a NAS Share. |
 | DOES_NAS_VOLUME_HAVE_SMC | Filter NAS volumes based on whether they are associated with a SnapMirror Cloud object. |
 | DOES_PHYSICAL_HOST_HAVE_PROTECTED_FILESETS | Filter physical hosts that have protected filesets. |
@@ -161,6 +162,7 @@ Fields for filtering hierarchy objects.
 | FILESET_SLA | Filter physical hosts by SLAs attached to their filesets. |
 | FILESET_TEMPLATE_ID | Filter physical hosts by which fileset templates are attached to them. |
 | FILESET_TEMPLATE_OS_TYPE | Filter fileset templates by OS Type. |
+| FUSION_COMPUTE_NETWORK_TYPE | Filter FusionCompute network objects by their network type. Pass texts = ["PortGroup"] to keep only port groups (the only network kind valid as a NIC attachment target on export / live mount); ["DVSwitch"] to keep only distributed virtual switches. The CDM-side refresh ingests both kinds into the same cdm_fusion_compute_network table, so this filter is what callers use to scope the list to the right kind for their use case. |
 | GCP_ALLOY_DB_CLUSTER_NAME_OR_NATIVE_ID | Filter GCP AlloyDB clusters by native ID or name. |
 | GCP_BIG_QUERY_DATASET_NAME_OR_NATIVE_ID | Filter GCP BigQuery datasets by native ID or name. |
 | GCP_CLOUD_SQL_ENGINE_TYPE | Filter GCP Cloud SQL instances by database engine type (MYSQL, POSTGRES, SQLSERVER). |
@@ -202,6 +204,8 @@ Fields for filtering hierarchy objects.
 | HOST_VENDOR_TYPE | Filter by the vendor type of the NAS Host. |
 | HYPERV_HOST_OR_SERVER_NAME | Filter Hyperv servers by Windows Host name or Hyperv Server name. |
 | HYPERV_VM_BY_AGENT_STATUS | Filter Hyper-V virtual machines by the agent's connection status. |
+| HYPERV_VM_BY_LINKED_NATIVE_TAG | Filter Hyper-V VMs by raw native tags from the source system (e.g. SCVMM). The accompanying nativeTagFilterParams on Filter carries the (source, nativeTagIds) pair. Source-agnostic so future native tag sources work without API churn. |
+| HYPERV_VM_BY_SUBTYPE | Filter Hyper-V VMs by subtype (Hyper-V vs Azure Local). Pass HypervVmSubtype enum names in texts. |
 | HYPERV_VM_MAC_ADDRESS | Filter Hyper-V virtual machine using a MAC Address. |
 | INCLUDE_DIRECT_ASSIGN_OBJECT | Filter will retrieve all objects with SLA Domains assigned directly. |
 | INCLUDE_INDEPENDENT_REPLICA | Filter independent replica objects on which you can assign an SLA Domain independently, without depending on source objects. |
@@ -214,12 +218,14 @@ Fields for filtering hierarchy objects.
 | IS_DOMAIN_CONTROLLER | Filter hosts that are domain controllers. |
 | IS_GHOST | Filter archived and non-relic managed-objects. |
 | IS_HOST_PROTECTED *(deprecated: Not implemented - no longer used.)* | Filter physical hosts that have protected filesets. |
+| IS_INFRASTRUCTURE_ALERTS_ENABLED | Filters S3 buckets by whether infrastructure deletion alerts are enabled. |
 | IS_KUPR_HOST | Filter the kooper hosts from the host list. |
 | IS_LOG_SHIPPING_SECONDARY | Filter MSSQL databases that are log shipping secondaries. |
 | IS_MAIN_MOUNT | Filter Live Mounts from Managed Volume Exports. |
 | IS_MANAGED_VOLUME_ARCHIVED | Filter child objects by Managed Volume archival status. |
 | IS_MICROSOFT_TEAMS_SITE | Filter Teams' sites in o365 sharepoint sites by presence of team_id. |
 | IS_MOUNT | Filter MSSQL databases that are Live Mounts. |
+| IS_MYSQLDB_SYSTEM_DATABASE | Filter MySQL databases by whether they are system databases (sys, mysql, information_schema, performance_schema, etc.). |
 | IS_NAS_SHARE_PROTECTED | Filter by the protection status of a NAS share. |
 | IS_NOT_BLUEPRINT_CHILD | Workload must not be a member of any active Blueprint. |
 | IS_PROTECTED | Filter by whether object is protected by an SLA Domain. |
@@ -259,6 +265,9 @@ Fields for filtering hierarchy objects.
 | MANAGED_VOLUME_HOST_ID | Filter the Managed Volume based on its host ID. |
 | MANAGED_VOLUME_ID | Filter Managed Volume Exports for a given Managed Volume ID. |
 | MANAGED_VOLUME_TYPE | Filter Managed Volume Type. |
+| MARIADB_DATABASE_CDM_ID | Filter MariaDB databases by their CDM-assigned identifier. |
+| MARIADB_HOST_CONNECTION_STATUS | Filter MariaDB instances by their host connection status. |
+| MARIADB_INSTANCE_ID | Filter the MariaDB Databases based on its Instance Id. |
 | MIGRATED_HOSTS_WITH_GHOST_OBJECTS | Filter to show all migrated hosts, including ghost objects. |
 | MIGRATED_HOST_SHARES_WITH_GHOST_OBJECTS | Filter to show all migrated host shares, including ghost objects. |
 | MONGODB_DATABASE_ID | Filter by ID of parent MongoDB Keyspace. |
@@ -276,6 +285,7 @@ Fields for filtering hierarchy objects.
 | MSSQL_IS_HOST_PROTECTED | Filter Microsoft SQL Server hosts that are protected by an SLA Domain. |
 | MYSQLDB_DATABASE_CDM_ID | Filter MySQL Databases by their CDM internal ID. Joins on cdm_mysqldb_database.fid = managed_object.id, then filters on cdm_mysqldb_database.id (the CDM-assigned identifier). |
 | MYSQLDB_HOST_CONNECTION_STATUS | Filter the MySQL Instance based on its host. connection status. |
+| MYSQLDB_INSTANCE_CLUSTER_MODE | Filter MySQL instances by cluster mode. Pass texts = ["HA"] to keep only high-availability instances, or ["STANDALONE"] to keep only single-instance ones. Any instance that is not high-availability is treated as STANDALONE. |
 | MYSQLDB_INSTANCE_ID | Filter the MySQL Databases based on its Instance Id. |
 | NAME | Filter by name. For an exact match, use NAME_EXACT_MATCH. |
 | NAME_EXACT_MATCH | Filter by exact name match. |
@@ -325,7 +335,23 @@ Fields for filtering hierarchy objects.
 | PHYSICAL_HOST_RBS_UPGRADE_STATUS | Filter by the RBS upgrade of the physical host. |
 | POSTGRES_DB_CLUSTER_HOST_CONNECTION_STATUS | Filter the Postgres Database Cluster based on its host connection status. |
 | POSTGRES_DB_CLUSTER_ID | Filter the Postgres Databases based on its Database Cluster Id. |
+| POSTGRES_DB_CLUSTER_MODE | Filter PostgreSQL database clusters by cluster mode. Pass texts = ["HA"] to keep only high-availability clusters, or ["STANDALONE"] to keep only single-instance clusters. Any cluster that is not high-availability is treated as STANDALONE. |
+| POWER_PLATFORM_APP_DISPLAY_NAME | Filter Power Platform apps by a case-insensitive prefix match on the display name. |
+| POWER_PLATFORM_APP_ID | Filter Power Platform apps by natural ID (the app's Power Platform GUID). |
+| POWER_PLATFORM_APP_LAST_MODIFIED_AFTER | Filter Power Platform apps modified on or after the given timestamp. |
+| POWER_PLATFORM_APP_OWNER | Filter Power Platform apps by a case-insensitive prefix match on the owner email. The value is empty or null for model-driven apps, which have no owner. |
+| POWER_PLATFORM_APP_PUBLISHER | Filter Power Platform apps by publisher (GUID). |
+| POWER_PLATFORM_APP_STATUS | Filter Power Platform apps by status. |
+| POWER_PLATFORM_APP_TYPE | Filter Power Platform apps by app type. |
+| POWER_PLATFORM_FLOW_DISPLAY_NAME | Filter Power Platform flows by a case-insensitive prefix match on the display name. |
+| POWER_PLATFORM_FLOW_ID | Filter Power Platform flows by natural ID (the flow's workflow GUID). |
+| POWER_PLATFORM_FLOW_LAST_MODIFIED_AFTER | Filter Power Platform flows modified on or after the given timestamp. |
+| POWER_PLATFORM_FLOW_OWNER | Filter Power Platform flows by a case-insensitive prefix match on the owner email. |
+| POWER_PLATFORM_FLOW_PUBLISHER | Filter Power Platform flows by publisher (GUID). |
+| POWER_PLATFORM_FLOW_STATUS | Filter Power Platform flows by status. |
+| POWER_PLATFORM_FLOW_TYPE | Filter Power Platform flows by flow type. |
 | PROTECTION_STATUS | Filter by the protection status of the object. |
+| PROXMOX_NODE_RBS_CONFIGURED | Filter Proxmox nodes by Rubrik Backup Service configuration status. No index on `rbs_configured` is required: `cdm_pve_node` is small (bounded by per-cluster node count, typically a few hundred rows), and the filter is always combined with the unique-keyed JOIN on `managed_object.id = cdm_pve_node.fid`, so the filter scan is already bounded by the JOIN's index lookup. |
 | RECOVERY_PLAN_AWS_REGION | Filter the recovery plan by the AWS region. |
 | RECOVERY_PLAN_AWS_SOURCE_ACCOUNT | Filter the recovery plan by the AWS source account. |
 | RECOVERY_PLAN_AWS_TARGET_ACCOUNT | Filter the recovery plan by the AWS target account. |
@@ -344,6 +370,7 @@ Fields for filtering hierarchy objects.
 | RSC_TAG_ID | Filter by RSC tag ID. |
 | RUBRIK_NATIVE_HAS_AT_LEAST_ONE_SNAPSHOT | Filter by objects with at least one snapshot. |
 | RUBRIK_NATIVE_HAS_UNINDEXED_OR_EXPIRED_SNAPSHOT | Filter by whether Rubrik SaaS native workload object has an unindexed snapshot or it has a snapshot that is expired and has an unmerged index. |
+| SAASAPPS_IS_HIDDEN | Filter SaaS org objects by their is_hidden metadata flag. Hidden orgs remain fully functional for backup, restore, refresh, and delete; only UI visibility is affected. Stored in the saasapps_organizations.metadata JSON column at path $.isHidden. |
 | SAASAPPS_IS_RECOVERY_TARGET_ONLY *(deprecated: use `SAASAPPS_ORGANIZATION_SCOPE` instead.)* | Filter SaaS Apps organizations based on whether they only support recovery. |
 | SAASAPPS_NATURAL_ID | Filter according to the natural ID field of the SaaS app resource. |
 | SAASAPPS_ORGANIZATION_SCOPE | Filter the SaaS Apps organizations by their scopes. |

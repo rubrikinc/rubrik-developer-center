@@ -1,6 +1,6 @@
 # AppIdForType
 
-*No description available.*
+Azure Application ID paired with its application type.
 
 ## Fields
 

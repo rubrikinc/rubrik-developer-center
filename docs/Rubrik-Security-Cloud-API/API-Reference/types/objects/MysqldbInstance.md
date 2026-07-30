@@ -16,6 +16,7 @@ MySQL instance details object.
 | cdmLink | String! | A link to view the workload on the CDM cluster. For dev use only. |
 | cdmPendingObjectPauseAssignment | [PendingObjectPauseAssignmentStatus](../enums/PendingObjectPauseAssignmentStatus.md) | Object pause pending assignment details for CDM objects. |
 | cluster | [Cluster](Cluster.md)! | Rubrik cluster where this object originated. |
+| clusterMode | [KosmosClusterMode](../enums/KosmosClusterMode.md)! | Whether this is a standalone or HA MySQL instance. |
 | configuredSlaDomain | [SlaDomain](../interfaces/SlaDomain.md)! | SLA Domain configured for the hierarchy object. |
 | crossAccountReplicatedObjectInfos | [[CrossAccountReplicatedObjectInfo](CrossAccountReplicatedObjectInfo.md)!] | Cross-account objects either replicated by this object or related to this object by replication. |
 | descendantConnection | [KosmosParentHierarchyObjectDescendantTypeConnection](KosmosParentHierarchyObjectDescendantTypeConnection.md)! | List of descendants. |
@@ -26,18 +27,21 @@ MySQL instance details object.
 | hostsInfo | [[HostDiscoverableInfo](HostDiscoverableInfo.md)!]! | The host information of the discoverable entity. |
 | id | [UUID](../scalars/UUID.md)! | ID of the hierarchy object. |
 | isRelic | Boolean! | Indicates whether the workload type is Relic. |
+| isReplica | Boolean | True if this object is a replica, its current cluster differs from its source (primary) cluster. False if the object resides on its source cluster. Null when the source cluster is unknown. |
 | latestUserNote | [LatestUserNote](LatestUserNote.md) | Latest user note information. |
 | liveMounts | [KosmosWorkloadLiveMountConnection](KosmosWorkloadLiveMountConnection.md)! | The live mounts of the given workloads. |
 | logicalPath | [[PathNode](PathNode.md)!]! | Sequential list of the logical ancestors of this object. |
 | metadata | [MysqldbInstanceMetadata](MysqldbInstanceMetadata.md)! | The metadata field of MySQL instance. |
 | missedSnapshotConnection | [MissedSnapshotCommonConnection](MissedSnapshotCommonConnection.md) | The list of missed snapshots for this workload. |
 | missedSnapshotGroupByConnection | [MissedSnapshotGroupByConnection](MissedSnapshotGroupByConnection.md) | The list of missed snapshots for this workload. |
+| mysqlHaClusterInfo | [MysqlHaClusterInfo](MysqlHaClusterInfo.md) | HA cluster info including the group name and replica topology. Null for standalone instances. |
 | name | String! | Name of the hierarchy object. |
 | newestArchivedSnapshot | [CdmSnapshot](CdmSnapshot.md) | The newest snapshot archived to AWS. |
 | newestIndexedSnapshot | [CdmSnapshot](CdmSnapshot.md) | The most recent indexed snapshot of this workload. |
 | newestReplicatedSnapshot | [CdmSnapshot](CdmSnapshot.md) | The newest snapshot replicated to a cluster. |
 | newestSnapshot | [CdmSnapshot](CdmSnapshot.md) | The most recent snapshot of this workload. |
 | numWorkloadDescendants | Int! | Number of descendant workloads of this object. |
+| objectBackupWindow | [ObjectBackupWindowStatus](ObjectBackupWindowStatus.md) | Object-level backup window status of the hierarchy object. |
 | objectPauseStatus | [ObjectPauseStatus](ObjectPauseStatus.md) | Pause status of the hierarchy object. |
 | objectType | [HierarchyObjectTypeEnum](../enums/HierarchyObjectTypeEnum.md)! | Type of this object. |
 | oldestSnapshot | [CdmSnapshot](CdmSnapshot.md) | The oldest snapshot of this workload. |
@@ -77,6 +81,8 @@ MySQL instance details object.
 | liveMounts | sortBy | [KosmosWorkloadLiveMountSortByInput](../inputs/KosmosWorkloadLiveMountSortByInput.md) | Sort the live mounts of the Kosmos Workload based on the argument. |
 | missedSnapshotConnection | first | Int | Returns the first n elements from the list. |
 | missedSnapshotConnection | after | String | Returns the elements in the list that occur after the specified cursor. |
+| missedSnapshotConnection | last | Int | Returns the last n elements from the list. |
+| missedSnapshotConnection | before | String | Returns the elements in the list that occur before the specified cursor. |
 | missedSnapshotConnection | filter | [MissedSnapshotFilterInput](../inputs/MissedSnapshotFilterInput.md) | Filter missed snapshots by date. |
 | missedSnapshotGroupByConnection | first | Int | Returns the first n elements from the list. |
 | missedSnapshotGroupByConnection | after | String | Returns the elements in the list that occur after the specified cursor. |

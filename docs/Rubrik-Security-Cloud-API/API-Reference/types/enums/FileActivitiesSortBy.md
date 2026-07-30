@@ -1,6 +1,6 @@
 # FileActivitiesSortBy
 
-*No description available.*
+The field to sort file activities by.
 
 ## Values
 

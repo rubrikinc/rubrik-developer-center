@@ -13,43 +13,43 @@
 | ClusterType |  |
 | ComplianceStatus |  |
 | DAY | Group by day. |
-| Day |  |
+| Day | Group by day. |
 | FILE |  |
-| FailoverStatus |  |
-| FailoverType |  |
+| FailoverStatus | Group by the failover status. |
+| FailoverType | Group by the failover type. |
 | HOUR | Group by hour. |
-| Hour |  |
+| Hour | Group by hour. |
 | IS_ANOMALY | Specifies whether the result is an anomaly. |
 | LastActivityStatus |  |
 | LastActivityType |  |
-| LastTestStatus |  |
+| LastTestStatus | Group by the last test status. |
 | MANAGED_ID | The managed ID of the object. |
 | MONTH | Group by month. |
-| Month |  |
+| Month | Group by month. |
 | OBJECT_NAME |  |
 | ObjectType |  |
 | POLICY |  |
 | POLICY_VIOLATIONS |  |
 | ProtectionStatus |  |
 | PullTimeWithOffset |  |
-| Quarter |  |
+| Quarter | Group by quarter. |
 | SEVERITY | Group by severity of the anomaly. |
 | SLA_DOMAIN |  |
 | STATUS_POLICY |  |
 | SlaDomain |  |
-| Source |  |
+| Source | Group by the source site. |
 | Status |  |
 | TIME |  |
 | TIME_ISSUES |  |
 | TIME_VIOLATIONS |  |
 | TRANSFERRED_BYTES_OBJECT_TYPE | Bytes transferred group by object type. |
-| TargetSite |  |
+| TargetSite | Group by the target site. |
 | TaskDetailClusterType |  |
 | TaskDetailObjectType |  |
 | Type |  |
 | UserAuditStatus |  |
 | UserAuditType |  |
 | WEEK | Group by week. |
-| Week |  |
+| Week | Group by week. |
 | YEAR | Group by year. |
-| Year |  |
+| Year | Group by year. |

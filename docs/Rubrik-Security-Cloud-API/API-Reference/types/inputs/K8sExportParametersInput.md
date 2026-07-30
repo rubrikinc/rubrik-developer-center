@@ -15,4 +15,5 @@ Supported in v9.0+ v9.0: Input to export Kubernetes resources from a resource se
 | storageMapping | [StorageMappingInput](StorageMappingInput.md) | Supported in v9.5+ The storage mapping to be used for the export operation. |
 | targetClusterId | String! | Required. Supported in v9.0+ The UUID of the target Kubernetes cluster to which the resources should be exported. |
 | targetNamespaceName | String! | Required. Supported in v9.0+ v9.0-v9.3: The name of the new Kubernetes namespace that will be created. The resources will be exported to the new namespace. v9.4+: The name of the new Kubernetes namespace that will be created. The resources will be exported to the new namespace. Set to empty string for cluster level export. |
+| transforms | [K8sTransformsInput](K8sTransformsInput.md) | Supported in v9.6+ Resource transformations to apply during the export operation. |
 | virtualMachineRunStrategy | String | Supported in v9.3+ Specifies the run strategy of the exported virtual machine. |

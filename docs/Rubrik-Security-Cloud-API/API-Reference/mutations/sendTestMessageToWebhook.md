@@ -29,9 +29,6 @@ Send test message to webhook.
     ```json
     {
       "input": {
-        "authInfo": {
-          "authType": "AUTH_TYPE_UNSPECIFIED"
-        },
         "providerType": "CUSTOM"
       }
     }

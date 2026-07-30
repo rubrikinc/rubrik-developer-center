@@ -6,6 +6,7 @@ An audit triggered by a user.
 
 | Field | Type | Description |
 |-------|------|-------------|
+| actorType | [ActorType](../enums/ActorType.md) | The kind of user that triggered this audit. Null when the user could not be classified. |
 | auditType | [UserAuditTypeEnum](../enums/UserAuditTypeEnum.md) | The type of the user audit. |
 | cluster | [Cluster](Cluster.md) | The ID of the Rubrik cluster to which this user audit belongs. |
 | id | ID! | The ID of the user audit. |

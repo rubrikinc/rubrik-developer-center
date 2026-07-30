@@ -15,3 +15,4 @@ ExposureSummary contains exposure type and associated aggregated results.
 
 - [FileResult.exposureSummary](FileResult.md)
 - [PolicyObj.exposureSummary](PolicyObj.md)
+- [SensitiveFileDetailsReply.exposureSummary](SensitiveFileDetailsReply.md)

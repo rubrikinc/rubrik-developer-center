@@ -68,7 +68,7 @@ A Rubrik CDM Cluster.
 | systemStatusAffectedNodes | [[ClusterNode](ClusterNode.md)!] | List of affected nodes in the cluster. |
 | systemStatusMessage | String | Human readable message explaining the systemStatus. |
 | timezone | String | The cluster's timezone. |
-| type | [ClusterTypeEnum](../enums/ClusterTypeEnum.md) |  |
+| type | [ClusterTypeEnum](../enums/ClusterTypeEnum.md)! |  |
 | version | String | The software version. |
 | webServerCertificate | [WebServerCertificate](WebServerCertificate.md) | Web server certificate of the cluster. |
 
@@ -81,7 +81,7 @@ A Rubrik CDM Cluster.
 | activitySeriesConnection | last | Int | Returns the last n elements from the list. |
 | activitySeriesConnection | before | String | Returns the elements in the list that occur before the specified cursor. |
 | activitySeriesConnection | sortBy | [ActivitySeriesSortField](../enums/ActivitySeriesSortField.md) | Sort activity series by field. |
-| activitySeriesConnection | filters | [ActivitySeriesFilter](../inputs/ActivitySeriesFilter.md) |  |
+| activitySeriesConnection | filters | [ActivitySeriesFilter](../inputs/ActivitySeriesFilter.md) | Filters for the activity series. |
 | clusterDiskConnection | first | Int | Returns the first n elements from the list. |
 | clusterDiskConnection | after | String | Returns the elements in the list that occur after the specified cursor. |
 | clusterDiskConnection | last | Int | Returns the last n elements from the list. |
@@ -153,4 +153,4 @@ A Rubrik CDM Cluster.
 - CloudDirectHierarchyObject.cluster
 - CloudDirectHierarchyWorkload.cluster
 - [CloudDirectNasBucket.cluster](CloudDirectNasBucket.md)
-- *…and 268 more*
+- *…and 274 more*

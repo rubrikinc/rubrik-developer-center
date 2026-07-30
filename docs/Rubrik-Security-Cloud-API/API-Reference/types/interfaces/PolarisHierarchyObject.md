@@ -16,6 +16,7 @@ A Polaris Managed Hierarchy Object.
 | logicalPath | [[PathNode](../objects/PathNode.md)!]! | Sequential list of the logical ancestors of this object. |
 | name | String! | Name of the hierarchy object. |
 | numWorkloadDescendants | Int! | Number of descendant workloads of this object. |
+| objectBackupWindow | [ObjectBackupWindowStatus](../objects/ObjectBackupWindowStatus.md) | Object-level backup window status of the hierarchy object. |
 | objectPauseStatus | [ObjectPauseStatus](../objects/ObjectPauseStatus.md) | Pause status of the hierarchy object. |
 | objectType | [HierarchyObjectTypeEnum](../enums/HierarchyObjectTypeEnum.md)! | Type of this object. |
 | physicalPath | [[PathNode](../objects/PathNode.md)!]! | Sequential list of the physical ancestors of this object. |
@@ -97,5 +98,9 @@ A Polaris Managed Hierarchy Object.
 - [O365Site](../objects/O365Site.md)
 - [O365Teams](../objects/O365Teams.md)
 - [O365User](../objects/O365User.md)
+- [PowerPlatformEnvironment](../objects/PowerPlatformEnvironment.md)
+- [S3TablesIcebergCatalog](../objects/S3TablesIcebergCatalog.md)
+- [S3TablesIcebergNamespace](../objects/S3TablesIcebergNamespace.md)
+- [S3TablesIcebergTable](../objects/S3TablesIcebergTable.md)
 - [SalesforceObject](../objects/SalesforceObject.md)
 - [SalesforceOrganization](../objects/SalesforceOrganization.md)

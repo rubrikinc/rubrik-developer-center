@@ -1,6 +1,6 @@
 # CloudDirectSystemsInput
 
-Input for recovering Cloud Direct systems.
+Input for retrieving systems managed by a Cloud Direct site.
 
 ## Fields
 

@@ -37,6 +37,7 @@ Paginated list of Nutanix Virtual Machines.
           isAgentRegistered
           isBlueprintChild
           isRelic
+          isReplica
           name
           numWorkloadDescendants
           nutanixSnapshotConsistencyMandate

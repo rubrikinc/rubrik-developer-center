@@ -16,6 +16,7 @@ Specific info for GCP Target Template.
 | encryptionType | [TargetEncryptionTypeEnum](../enums/TargetEncryptionTypeEnum.md)! | Encryption type for the GCP location template. |
 | labels | [[TagObject](TagObject.md)!]! | GCP target bucket labels. |
 | region | [GcpRegion](../enums/GcpRegion.md)! | GCP target region. |
+| sourceWorkloadCloud | [SourceWorkloadCloud](../enums/SourceWorkloadCloud.md) | Specifies the source workload cloud of this template. This field is optional. |
 | storageClass | [GcpStorageClass](../enums/GcpStorageClass.md)! | GCP target storage class. |
 | targetType | [TargetType](../enums/TargetType.md)! | The type of this Target. |
 | templateLocationId | [UUID](../scalars/UUID.md)! | The internal ID of the template archival location. |

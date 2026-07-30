@@ -6,4 +6,4 @@ Request to clear RBS network throttle limits for hosts.
 
 | Field | Type | Description |
 |-------|------|-------------|
-| request | [String!] | List of host IDs to clear RBS network throttle limits for. |
+| request | [String!] | Required. List of host IDs to clear RBS network throttle limits for. |

@@ -21,6 +21,7 @@ Details for a TPR policy.
       tprPolicyDetail(tprPolicyId: $tprPolicyId) {
         createdAt
         description
+        isCdmEnforcementDisabled
         name
         orgId
         policyId
@@ -46,10 +47,10 @@ Details for a TPR policy.
         "tprPolicyDetail": {
           "createdAt": "2024-01-01T00:00:00.000Z",
           "description": "example-string",
+          "isCdmEnforcementDisabled": true,
           "name": "example-string",
           "orgId": "00000000-0000-0000-0000-000000000000",
           "policyId": "00000000-0000-0000-0000-000000000000",
-          "policyScope": "DATA_MANAGEMENT_BY_CLUSTER",
           "createdBy": {
             "domain": "CLIENT",
             "domainId": "example-string",

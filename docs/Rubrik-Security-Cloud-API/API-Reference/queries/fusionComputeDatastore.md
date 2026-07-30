@@ -31,6 +31,7 @@ Summary of a FusionCompute datastore.
         hosts
         id
         isLocal
+        isReplica
         name
         numWorkloadDescendants
         objectType

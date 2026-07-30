@@ -1,12 +1,12 @@
 # addConfiguredGroupToHierarchy
 
-Add a Configured Group to the O365 hierarchy.
+Adds a configured group to the O365 hierarchy.
 
 ## Arguments
 
 | Argument | Type | Description |
 |----------|------|-------------|
-| input *(required)* | [AddConfiguredGroupToHierarchyInput](../types/inputs/AddConfiguredGroupToHierarchyInput.md)! | The input for the AddConfiguredGroupToHierarchy mutation. |
+| input *(required)* | [AddConfiguredGroupToHierarchyInput](../types/inputs/AddConfiguredGroupToHierarchyInput.md)! | Input for adding a configured group to the O365 hierarchy. |
 
 ## Returns
 

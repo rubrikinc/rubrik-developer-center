@@ -34,4 +34,5 @@ Policy definition.
 
 **Referenced by**
 
+- [PolicyResult.policy](PolicyResult.md)
 - [PolicyViolation.policy](PolicyViolation.md)

@@ -20,6 +20,7 @@ Details of a db2 database for a given fid.
     query Db2Database($fid: UUID!) {
       db2Database(fid: $fid) {
         authorizedOperations
+        backupCompressionLibraryPath
         backupParallelism
         backupSessions
         backupTriggerType
@@ -28,7 +29,9 @@ Details of a db2 database for a given fid.
         cdmPendingObjectPauseAssignment
         db2DbType
         id
+        isBackupCompressionEnabled
         isRelic
+        isReplica
         lastSyncTime
         logBackupThreshold
         name
@@ -63,11 +66,11 @@ Details of a db2 database for a given fid.
           "authorizedOperations": [
             "ACCESS_CDM_CLUSTER"
           ],
+          "backupCompressionLibraryPath": "example-string",
           "backupParallelism": 0,
           "backupSessions": 0,
           "backupTriggerType": "BACKUP_TRIGGER_TYPE_CUSTOMER_MANAGED",
           "cdmId": "example-string",
-          "cdmLink": "example-string",
           "allOrgs": [
             {
               "allUrls": [

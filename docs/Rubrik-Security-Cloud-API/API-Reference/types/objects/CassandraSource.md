@@ -27,6 +27,7 @@ Cassandra Source information.
 | name | String! | Name of the hierarchy object. |
 | nodeCount | Int | Number of source nodes. |
 | numWorkloadDescendants | Int! | Number of descendant workloads of this object. |
+| objectBackupWindow | [ObjectBackupWindowStatus](ObjectBackupWindowStatus.md) | Object-level backup window status of the hierarchy object. |
 | objectPauseStatus | [ObjectPauseStatus](ObjectPauseStatus.md) | Pause status of the hierarchy object. |
 | objectType | [HierarchyObjectTypeEnum](../enums/HierarchyObjectTypeEnum.md)! | Type of this object. |
 | physicalChildConnection | [CassandraSourcePhysicalChildTypeConnection](CassandraSourcePhysicalChildTypeConnection.md)! | List of physical children. |

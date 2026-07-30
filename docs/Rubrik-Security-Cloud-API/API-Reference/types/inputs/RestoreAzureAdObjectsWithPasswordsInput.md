@@ -8,6 +8,7 @@ Configuration to initiate recovery of AzureAdDirectory with multiple passwords.
 |-------|------|-------------|
 | attributeRecoveryMode | [AttributeRecoveryMode](../enums/AttributeRecoveryMode.md) | Represents the modes for attributes restore for Azure AD objects. |
 | attributeRecoveryOptions | [AttributeRecoveryOptions](AttributeRecoveryOptions.md) | Represents attribute recovery options for each Azure AD object. |
+| cleanRecoverySessionId | [UUID](../scalars/UUID.md) | Identifier of the clean-recovery session being committed. When set, the operator-approved set of objects and attributes is read from the granular-recovery data written during StartCleanRecovery, and the in-request selection is ignored. |
 | ctrConfig | [EntraIdCrossTenantRecoveryConfig](EntraIdCrossTenantRecoveryConfig.md) | Configuration for cross tenant recovery. |
 | forceChangePasswordWithMfa | Boolean! | Specifies whether to enable MFA during the recovery of one or more users. |
 | objectRecoveryOptions | [ObjectRecoveryOptionsType](ObjectRecoveryOptionsType.md) | Represents recovery options for every AzureAdObjectType. |

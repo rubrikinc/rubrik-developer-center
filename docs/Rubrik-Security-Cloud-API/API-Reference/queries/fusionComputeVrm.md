@@ -28,6 +28,7 @@ Summary of a FusionCompute VRM.
         id
         ipAddress
         isRefreshed
+        isReplica
         lastRefreshTime
         name
         numWorkloadDescendants

@@ -1,15 +1,19 @@
 # userActivityTimeline
 
-*No description available.*
+Returns a paginated timeline of a user's data access activity, aggregated per day over the requested window.
 
 ## Arguments
 
 | Argument | Type | Description |
 |----------|------|-------------|
-| userId *(required)* | String! |  |
-| startDay *(required)* | String! | Start time, in string format (YYYY-MM-DD). |
-| timezone *(required)* | String! | The timezone in which to display timestamps. |
-| uniqueActivities *(required)* | Boolean! |  |
+| first | Int | Returns the first n elements from the list. |
+| after | String | Returns the elements in the list that occur after the specified cursor. |
+| last | Int | Returns the last n elements from the list. |
+| before | String | Returns the elements in the list that occur before the specified cursor. |
+| userId *(required)* | String! | Stable identifier of the user. |
+| startDay *(required)* | String! | Day to anchor the timeline window, in YYYY-MM-DD format. |
+| timezone *(required)* | String! | Official IANA timezone name. |
+| uniqueActivities *(required)* | Boolean! | When true, collapse identical activities to a single entry per day. |
 
 ## Returns
 
@@ -26,6 +30,7 @@
         startDay: $startDay
         timezone: $timezone
         uniqueActivities: $uniqueActivities
+        first: 10
       ) {
         nodes {
           day

@@ -22,3 +22,4 @@
 | updatePropertiesV94 | [VcenterUpdateConfigInput](VcenterUpdateConfigInput.md) | Object containing updated vCenter Server information. |
 | updatePropertiesV95 | [VcenterUpdateConfigInput](VcenterUpdateConfigInput.md) | Object containing updated vCenter Server information. |
 | updatePropertiesV96 | [VcenterUpdateConfigInput](VcenterUpdateConfigInput.md) | Object containing updated vCenter Server information. |
+| updatePropertiesV97 | [VcenterUpdateConfigInput](VcenterUpdateConfigInput.md) | Object containing updated vCenter Server information. |

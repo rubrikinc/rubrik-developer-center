@@ -17,6 +17,7 @@ A Kosmos snappable object in the Hierarchy.
 | effectiveSlaSourceObject | [PathNode](../objects/PathNode.md) | Path node of the effective SLA Domain source. |
 | id | [UUID](../scalars/UUID.md)! | ID of the hierarchy object. |
 | isRelic | Boolean! | Indicates whether the workload type is Relic. |
+| isReplica | Boolean | True if this object is a replica, its current cluster differs from its source (primary) cluster. False if the object resides on its source cluster. Null when the source cluster is unknown. |
 | liveMounts | [KosmosWorkloadLiveMountConnection](../objects/KosmosWorkloadLiveMountConnection.md)! | The live mounts of the given workloads. |
 | logicalPath | [[PathNode](../objects/PathNode.md)!]! | Sequential list of the logical ancestors of this object. |
 | missedSnapshotConnection | [MissedSnapshotCommonConnection](../objects/MissedSnapshotCommonConnection.md) | The list of missed snapshots for this workload. |
@@ -27,6 +28,7 @@ A Kosmos snappable object in the Hierarchy.
 | newestReplicatedSnapshot | [CdmSnapshot](../objects/CdmSnapshot.md) | The newest snapshot replicated to a cluster. |
 | newestSnapshot | [CdmSnapshot](../objects/CdmSnapshot.md) | The most recent snapshot of this workload. |
 | numWorkloadDescendants | Int! | Number of descendant workloads of this object. |
+| objectBackupWindow | [ObjectBackupWindowStatus](../objects/ObjectBackupWindowStatus.md) | Object-level backup window status of the hierarchy object. |
 | objectPauseStatus | [ObjectPauseStatus](../objects/ObjectPauseStatus.md) | Pause status of the hierarchy object. |
 | objectType | [HierarchyObjectTypeEnum](../enums/HierarchyObjectTypeEnum.md)! | Type of this object. |
 | oldestSnapshot | [CdmSnapshot](../objects/CdmSnapshot.md) | The oldest snapshot of this workload. |
@@ -61,6 +63,8 @@ A Kosmos snappable object in the Hierarchy.
 | liveMounts | sortBy | [KosmosWorkloadLiveMountSortByInput](../inputs/KosmosWorkloadLiveMountSortByInput.md) | Sort the live mounts of the Kosmos Workload based on the argument. |
 | missedSnapshotConnection | first | Int | Returns the first n elements from the list. |
 | missedSnapshotConnection | after | String | Returns the elements in the list that occur after the specified cursor. |
+| missedSnapshotConnection | last | Int | Returns the last n elements from the list. |
+| missedSnapshotConnection | before | String | Returns the elements in the list that occur before the specified cursor. |
 | missedSnapshotConnection | filter | [MissedSnapshotFilterInput](../inputs/MissedSnapshotFilterInput.md) | Filter missed snapshots by date. |
 | missedSnapshotGroupByConnection | first | Int | Returns the first n elements from the list. |
 | missedSnapshotGroupByConnection | after | String | Returns the elements in the list that occur after the specified cursor. |

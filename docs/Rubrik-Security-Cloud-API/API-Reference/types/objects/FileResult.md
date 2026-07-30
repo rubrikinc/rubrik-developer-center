@@ -70,6 +70,7 @@
 **Queries**
 
 - [query: objectFiles](../../queries/objectFiles.md) *(via connection)*
+- [query: policyObjFolderChildren](../../queries/policyObjFolderChildren.md) *(via connection)*
 - [query: userActivities](../../queries/userActivities.md) *(via connection)*
 
 **Referenced by**

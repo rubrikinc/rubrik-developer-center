@@ -7,5 +7,5 @@ Map of AzureAdObjectType to IDs.
 | Field | Type | Description |
 |-------|------|-------------|
 | azureAdObjectType | [AzureAdObjectType](../enums/AzureAdObjectType.md)! | Azure AD object type. |
-| objectId | [UUID](../scalars/UUID.md)! | ID of the AzureAD object. |
+| objectId | [UUID](../scalars/UUID.md) | ID of the AzureAD object. |
 | objectIdString | String | String ID of the Entra ID object. |

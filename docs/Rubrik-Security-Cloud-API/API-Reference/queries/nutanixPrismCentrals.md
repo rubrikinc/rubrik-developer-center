@@ -31,6 +31,7 @@ Paginated list of Nutanix Prism Central objects.
           hostName
           id
           isDrEnabled
+          isReplica
           lastRefreshTime
           name
           naturalId
@@ -39,6 +40,7 @@ Paginated list of Nutanix Prism Central objects.
           nutanixClusterIds
           objectType
           replicatedObjectCount
+          shouldUseV4
           slaAssignment
           slaPauseStatus
           userName

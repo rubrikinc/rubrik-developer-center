@@ -43,6 +43,7 @@ Returns a NAS Cloud Direct snapshot by ID.
         state
         systemId
         target
+        targetId
         type
         workloadId
       }

@@ -8,6 +8,8 @@ Search for azureAdObjects in a snapshot.
 |----------|------|-------------|
 | first | Int | Returns the first n elements from the list. |
 | after | String | Returns the elements in the list that occur after the specified cursor. |
+| last | Int | Returns the last n elements from the list. |
+| before | String | Returns the elements in the list that occur before the specified cursor. |
 | input *(required)* | [SearchAzureAdSnapshotInput](../types/inputs/SearchAzureAdSnapshotInput.md)! | Input for searching for Azure AD objects in a snapshot. |
 
 ## Returns

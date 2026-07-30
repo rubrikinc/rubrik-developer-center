@@ -1,6 +1,6 @@
 # PrincipalSummariesFilterInput
 
-Filter to be applied when retrieving principal summaries.
+Filter criteria for the principalSummaries query. Narrows the returned principals by attributes such as type, risk level, policy, name, SIDs, object IDs, and GPO settings; the specified filters are combined using AND logic.
 
 ## Fields
 
@@ -17,6 +17,7 @@ Filter to be applied when retrieving principal summaries.
 | entraMfaStrength | [[MfaStrength](../enums/MfaStrength.md)!] | Filter by MFA strength for Entra principals. |
 | featureFilter | [PrincipalFeature](../enums/PrincipalFeature.md) | Filter by feature. |
 | gpoLinkingStatusFilter | [[GPOLinkingStatusEnum](../enums/GPOLinkingStatusEnum.md)!] | Filter by GPO linking status. Proto field added in P0 but NOT exposed in GraphQL schema until P1 when linking computation is implemented. |
+| gpoSettingFilters | [[GpoSettingFilterInput](GpoSettingFilterInput.md)!] | Filter by the Group Policy settings a GPO configures. The provided filters are combined using OR logic (a GPO matching any entry is returned). Only applicable when principalTypes includes GPO. An empty value means the filter is inactive. |
 | gpoStatusFilter | [[GpoStatusEnum](../enums/GpoStatusEnum.md)!] | Filter by GPO status. Only applicable when principal_types includes GPO. |
 | groupId | String | Group ID to filter principals by. |
 | identityStatusFilter | [[IdentityStatus](../enums/IdentityStatus.md)!] | Filter by status. |

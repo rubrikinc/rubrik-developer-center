@@ -42,7 +42,7 @@ GcpCloudAccountGetProject gets the GCP project corresponding to the requested pr
           "featureDetails": [
             {
               "enabledPermissionGroups": [
-                "AKS_CUSTOM_PRIVATE_DNS_ZONE"
+                "ADVANCED_DIAGNOSTICS"
               ],
               "feature": "ALL",
               "roleId": "example-string",

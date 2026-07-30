@@ -28,6 +28,7 @@ The root hierarchy for VMware export, which includes VMware compute clusters and
           authorizedOperations
           cdmPendingObjectPauseAssignment
           id
+          isReplica
           name
           numWorkloadDescendants
           objectType

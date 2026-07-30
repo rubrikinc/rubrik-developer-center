@@ -29,6 +29,7 @@ SQL Server instance.
 | hostsInstalled | [String!]! | List of hosts where this SQL Server instance is installed. |
 | id | [UUID](../scalars/UUID.md)! | ID of the hierarchy object. |
 | isClusterInstance | Boolean! | Whether this instance is a SQL Server Failover Cluster Instance (FCI). |
+| isReplica | Boolean | True if this object is a replica, its current cluster differs from its source (primary) cluster. False if the object resides on its source cluster. Null when the source cluster is unknown. |
 | latestUserNote | [LatestUserNote](LatestUserNote.md) | Latest user note information. |
 | logBackupFrequencyInSeconds | [Long](../scalars/Long.md)! | Number of seconds between two log backups. When the value is set to 0, log backups are not enabled. When the value is set to -1, the default log backup frequency of the Rubrik cluster is used. When the value is set to -2, the log backup frequency is derived from the SLA Domain. |
 | logBackupRetentionInHours | Int! | Number of hours to retain a log backup. When the value is set to -1, the Rubrik cluster retains the log backup until the database snapshots that precede the log backup have expired. When the value is set to -2, the default log backup retention of the Rubrik cluster is used. When the value is set to -3, the log backup retention is derived from the SLA Domain. |
@@ -37,6 +38,7 @@ SQL Server instance.
 | name | String! | Name of the hierarchy object. |
 | networkName | String | Network name of the SQL Server instance. |
 | numWorkloadDescendants | Int! | Number of descendant workloads of this object. |
+| objectBackupWindow | [ObjectBackupWindowStatus](ObjectBackupWindowStatus.md) | Object-level backup window status of the hierarchy object. |
 | objectPauseStatus | [ObjectPauseStatus](ObjectPauseStatus.md) | Pause status of the hierarchy object. |
 | objectType | [HierarchyObjectTypeEnum](../enums/HierarchyObjectTypeEnum.md)! | Type of this object. |
 | pendingObjectDeletionStatus | [PendingSnapshotsOfObjectDeletion](PendingSnapshotsOfObjectDeletion.md) | Mapping from object ID to pending object deletion status. |

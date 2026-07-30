@@ -34,6 +34,8 @@
 | instances | [[OracleDatabaseInstance](OracleDatabaseInstance.md)!]! | Specifies details of the Oracle database instances. |
 | isLiveMount | Boolean! | Specifies whether the Oracle database is live mounted. |
 | isRelic | Boolean! | Whether the Oracle database is a relic in CDM. |
+| isReplica | Boolean | True if this object is a replica, its current cluster differs from its source (primary) cluster. False if the object resides on its source cluster. Null when the source cluster is unknown. |
+| isZeroRpoEnabled | Boolean | Supported in v9.6+. Indicates whether Zero RPO (near-zero recovery point) protection is enabled on this database. Null if the database has no ZRPO configuration. |
 | lastValidationResult | [OracleDatabaseLastValidationStatus](OracleDatabaseLastValidationStatus.md) | The last validation result of the Oracle database. |
 | latestUserNote | [LatestUserNote](LatestUserNote.md) | Latest user note information. |
 | liveMounts | [OracleLiveMountConnection](OracleLiveMountConnection.md)! | List of live mounts for an Oracle database. |
@@ -53,6 +55,7 @@
 | numLogSnapshots | Int! | The number of log snapshots taken of the Oracle database. |
 | numTablespaces | Int! | The number of tablespaces contained in the Oracle database. |
 | numWorkloadDescendants | Int! | Number of descendant workloads of this object. |
+| objectBackupWindow | [ObjectBackupWindowStatus](ObjectBackupWindowStatus.md) | Object-level backup window status of the hierarchy object. |
 | objectPauseStatus | [ObjectPauseStatus](ObjectPauseStatus.md) | Pause status of the hierarchy object. |
 | objectType | [HierarchyObjectTypeEnum](../enums/HierarchyObjectTypeEnum.md)! | Type of this object. |
 | oldestSnapshot | [CdmSnapshot](CdmSnapshot.md) | The oldest snapshot of this workload. |
@@ -89,6 +92,8 @@
 | liveMounts | sortBy | [OracleLiveMountSortBy](../inputs/OracleLiveMountSortBy.md) | Sort by argument for Oracle live mounts. |
 | missedSnapshotConnection | first | Int | Returns the first n elements from the list. |
 | missedSnapshotConnection | after | String | Returns the elements in the list that occur after the specified cursor. |
+| missedSnapshotConnection | last | Int | Returns the last n elements from the list. |
+| missedSnapshotConnection | before | String | Returns the elements in the list that occur before the specified cursor. |
 | missedSnapshotConnection | filter | [MissedSnapshotFilterInput](../inputs/MissedSnapshotFilterInput.md) | Filter missed snapshots by date. |
 | missedSnapshotGroupByConnection | first | Int | Returns the first n elements from the list. |
 | missedSnapshotGroupByConnection | after | String | Returns the elements in the list that occur after the specified cursor. |

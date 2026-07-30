@@ -1,6 +1,6 @@
 # CloudNativeTagPair
 
-CloudNativeTagPair represents a single tag key with multiple possible values for cloud-native tag rules.
+A cloud-native tag key-value pair.
 
 ## Fields
 

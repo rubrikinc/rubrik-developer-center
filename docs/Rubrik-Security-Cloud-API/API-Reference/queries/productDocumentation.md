@@ -22,6 +22,10 @@ A product documentation.
         description
         id
         language
+        nextDocId
+        nextDocTitle
+        prevDocId
+        prevDocTitle
         title
         type
       }
@@ -45,8 +49,9 @@ A product documentation.
           "description": "example-string",
           "id": "example-string",
           "language": "example-string",
-          "title": "example-string",
-          "type": "CONCEPT",
+          "nextDocId": "example-string",
+          "nextDocTitle": "example-string",
+          "prevDocId": "example-string",
           "contents": [
             {
               "index": 0,

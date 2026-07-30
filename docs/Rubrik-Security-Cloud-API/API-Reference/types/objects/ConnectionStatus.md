@@ -18,5 +18,6 @@ Connection status details of a SaaS organization.
 - [AtlassianSite.connectionStatus](AtlassianSite.md)
 - [Dynamics365Organization.connectionStatus](Dynamics365Organization.md)
 - [GoogleWorkspaceOrg.connectionStatus](GoogleWorkspaceOrg.md)
+- [PowerPlatformEnvironment.connectionStatus](PowerPlatformEnvironment.md)
 - SaasAppsOrganization.connectionStatus
 - [SalesforceOrganization.connectionStatus](SalesforceOrganization.md)

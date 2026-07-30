@@ -11,6 +11,7 @@ Input for completing authentication of the Azure Cloud Accounts.
 | authorizationCode | String! | Authorization code received after the OAuth consent flow. For more information, see https://auth0.com/docs/flows/authorization-code-flow. |
 | azureCloudType | [AzureCloudType](../enums/AzureCloudType.md) | Type of Azure Tenant. Possible values: Azure Public Cloud, Azure China Cloud. |
 | features | [[CloudAccountFeature](../enums/CloudAccountFeature.md)!]! | Features enabled on the Azure Cloud Account. |
+| isEntraIdInitiatedOnboarding | Boolean | Indicates that this OAuth flow is an Entra ID initiated Event Hub onboarding, which is authorized in the Entra ID data-source domain rather than the cloud-native domain. |
 | performBasicOauth | Boolean | Ensures that only basic OAuth is performed. The session will be stored in Rubrik, however, no additional information (such as list of subscriptions) is returned. |
 | redirectUrl | String! | Redirect URL used in the OAuth flow. |
 | resource | [AzureOauthResource](../enums/AzureOauthResource.md) | The resource that requires OAuth access. |

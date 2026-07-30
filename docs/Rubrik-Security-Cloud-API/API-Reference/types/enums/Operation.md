@@ -79,6 +79,7 @@ Operations defined in the RBAC system.
 | EDIT_REPLICATION_SETTINGS | Edit replication settings. |
 | EDIT_SECURITY_SETTINGS | Edit security settings. |
 | EDIT_STORAGE_SETTINGS | Edit archival location (pause/resume, enable/disable, and promote cluster as reader). |
+| EDIT_SUPPRESS_EVENT_NOTIFICATION_RULE | Edit suppress event notification rules. |
 | EDIT_SYSTEM_PREFERENCE | Edit system preferences. |
 | EDIT_USER_MANAGEMENT | Configure user management. |
 | ENABLE_ACCESS_LOGGING | Enable access logging. |
@@ -88,6 +89,7 @@ Operations defined in the RBAC system.
 | EXPORT_SNAPSHOTS | Export snapshots. |
 | GRANULAR_RECOVERY | Recover specific objects from backup. |
 | INSTANT_RECOVER | Instant recovery. |
+| ISSUE_ARCHIVAL_MIGRATION_DATA_MOVER_CREDENTIALS | Issue temporary credentials for the Rubrik data mover to migrate archival data to Rubrik Cloud Vault (RCV). |
 | MANAGE_ACCESS | Manage user access. |
 | MANAGE_ANOMALY_DETECTION | Manage anomalies. |
 | MANAGE_ARCHIVAL_NETWORK_THROTTLE_SETTINGS | Manage archival network throttle settings. |
@@ -110,6 +112,7 @@ Operations defined in the RBAC system.
 | MANAGE_DL_EMAIL_SETTINGS | Manage distribution list email settings. |
 | MANAGE_DSPM_INTEGRATIONS | Manage security integrations. |
 | MANAGE_FAILOVER_GROUP | Manage failover groups. |
+| MANAGE_FEATURE_ENABLEMENT | Manage feature enablement. |
 | MANAGE_GOOGLE_SECOPS_INTEGRATION | Manage Google SecOps integrations. |
 | MANAGE_GPS_TO_RSC_UPGRADE | Manage GPS to RSC upgrade. |
 | MANAGE_GUEST_OS_CREDENTIAL | Manage Guest OS credentials. |
@@ -127,6 +130,7 @@ Operations defined in the RBAC system.
 | MANAGE_ORGANIZATION_NETWORKS | Manage Organization Networks. |
 | MANAGE_OWN_PERSONAL_ACCESS_TOKEN | Create, rotate, and deactivate your own personal access token. |
 | MANAGE_PAM_INTEGRATION | Manage PAM integration. |
+| MANAGE_PAN_XSOAR_INTEGRATION | Manage Palo Alto Networks Cortex XSOAR integrations. |
 | MANAGE_PROTECTION | Manage protection. |
 | MANAGE_RECOVERY_PLAN | Manage Recovery Plans within Orchestrated Recovery. |
 | MANAGE_ROLE | Manage Role. |
@@ -227,6 +231,7 @@ Operations defined in the RBAC system.
 | VIEW_DSPM_INTEGRATIONS | View security integrations. |
 | VIEW_EVENT_CLUSTER_SETTING | View event cluster settings. |
 | VIEW_FAILOVER_GROUP | View failover groups. |
+| VIEW_FEATURE_ENABLEMENT | View feature enablement. |
 | VIEW_GCP_CLOUD_ACCOUNT | View GCP account. |
 | VIEW_GOOGLE_SECOPS_INTEGRATION | View Google SecOps integrations. |
 | VIEW_GUEST_OS_CREDENTIAL | View Guest OS credentials. |
@@ -243,6 +248,7 @@ Operations defined in the RBAC system.
 | VIEW_ORCHESTRATED_RECOVERY_APP | View Orchestrated Recovery application. |
 | VIEW_ORGANIZATION | View organization. |
 | VIEW_ORGANIZATION_NETWORKS | View Organization Networks. |
+| VIEW_PAN_XSOAR_INTEGRATION | View Palo Alto Networks Cortex XSOAR integrations. |
 | VIEW_PERSONAL_ACCESS_TOKENS | View personal access tokens. |
 | VIEW_REPLICATION_SETTINGS | View replication settings. |
 | VIEW_REPORT | View reports. |
@@ -261,6 +267,7 @@ Operations defined in the RBAC system.
 | VIEW_STORAGE_SETTINGS | View cloud, NoSQL, and Rubrik Cloud Vault archival locations. |
 | VIEW_SUPPORT_BUNDLE | Download support bundle. |
 | VIEW_SUPPORT_USER_SESSIONS | View Rubrik Support user sessions. |
+| VIEW_SUPPRESS_EVENT_NOTIFICATION_RULE | View suppress event notification rules. |
 | VIEW_SYSLOG | View syslog rules. |
 | VIEW_SYSTEM_EVENT | View system events. |
 | VIEW_SYSTEM_PREFERENCE | View system preferences. |

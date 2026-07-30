@@ -18,6 +18,7 @@ Paginated list of FileResult objects. Each page of the results includes at most 
 **Queries**
 
 - [query: objectFiles](../../queries/objectFiles.md)
+- [query: policyObjFolderChildren](../../queries/policyObjFolderChildren.md)
 - [query: userActivities](../../queries/userActivities.md)
 
 **Referenced by**

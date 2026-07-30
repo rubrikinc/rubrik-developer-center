@@ -1,13 +1,13 @@
 # PendingSnapshotDeletion
 
-*No description available.*
+Pending snapshot deletion status.
 
 ## Fields
 
 | Field | Type | Description |
 |-------|------|-------------|
-| snapshotFid | [UUID](../scalars/UUID.md)! |  |
-| status | [PendingActionStatus](../enums/PendingActionStatus.md)! |  |
+| snapshotFid | [UUID](../scalars/UUID.md)! | FID of the snapshot. |
+| status | [PendingActionStatus](../enums/PendingActionStatus.md)! | Status of the pending action. |
 
 ## Used By
 

@@ -30,12 +30,12 @@ Retrieves the enablement status of cloud-native accounts for Data Threat Analyti
         "threatAnalyticsEnablement": {
           "allEnablementItems": [
             {
+              "awsServiceType": "AWS_CLOUD_ACCOUNT_SERVICE_TYPE_BAAS",
               "dataThreatAnalyticsEnabled": true,
               "id": "example-string",
               "isHealthy": true,
-              "name": "example-string",
-              "shouldScanAllFiles": true,
-              "threatMonitoringEnabled": true
+              "isYaraProcessingEnabled": true,
+              "name": "example-string"
             }
           ],
           "awsAccounts": [
@@ -44,8 +44,8 @@ Retrieves the enablement status of cloud-native accounts for Data Threat Analyti
               "dataThreatAnalyticsEnabled": true,
               "id": "example-string",
               "isHealthy": true,
-              "shouldScanAllFiles": true,
-              "threatMonitoringEnabled": true
+              "isSmartScanningEnabled": true,
+              "isYaraProcessingEnabled": true
             }
           ]
         }

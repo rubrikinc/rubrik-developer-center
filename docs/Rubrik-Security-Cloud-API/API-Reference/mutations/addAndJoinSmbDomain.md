@@ -43,6 +43,9 @@ Add a new domain  Supported in v5.0+ Add a new domain manually and join Active D
         "addAndJoinSmbDomain": {
           "output": {
             "allowTrustedDomain": true,
+            "dnsServers": [
+              "example-string"
+            ],
             "isStickySmbService": true,
             "name": "example-string",
             "serviceAccount": "example-string",

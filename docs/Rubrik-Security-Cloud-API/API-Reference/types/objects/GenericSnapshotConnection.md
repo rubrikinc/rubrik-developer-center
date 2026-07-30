@@ -30,6 +30,7 @@ Paginated list of GenericSnapshot objects with additional pagination information
 - [AzureDevOpsRepository.workloadSnapshotConnection](AzureDevOpsRepository.md)
 - [AzureNativeManagedDisk.workloadSnapshotConnection](AzureNativeManagedDisk.md)
 - [AzureNativeVirtualMachine.workloadSnapshotConnection](AzureNativeVirtualMachine.md)
+- [AzurePostgresFlexibleServer.workloadSnapshotConnection](AzurePostgresFlexibleServer.md)
 - [AzureSqlDatabaseDb.workloadSnapshotConnection](AzureSqlDatabaseDb.md)
 - [AzureSqlManagedInstanceDatabase.workloadSnapshotConnection](AzureSqlManagedInstanceDatabase.md)
 - [AzureStorageAccount.workloadSnapshotConnection](AzureStorageAccount.md)
@@ -49,5 +50,4 @@ Paginated list of GenericSnapshot objects with additional pagination information
 - MicrosoftMailbox.workloadSnapshotConnection
 - MicrosoftOnedrive.workloadSnapshotConnection
 - MicrosoftOrg.workloadSnapshotConnection
-- MicrosoftSite.workloadSnapshotConnection
-- *…and 11 more*
+- *…and 13 more*

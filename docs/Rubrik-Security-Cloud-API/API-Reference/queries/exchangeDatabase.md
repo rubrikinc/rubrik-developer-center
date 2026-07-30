@@ -26,6 +26,7 @@ Details of an Exchange Database for a given fid.
         cdmPendingObjectPauseAssignment
         id
         isRelic
+        isReplica
         name
         numWorkloadDescendants
         objectType

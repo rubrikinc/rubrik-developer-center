@@ -6,8 +6,8 @@ Deactivate a classification policy.
 
 | Argument | Type | Description |
 |----------|------|-------------|
-| policyId *(required)* | String! |  |
-| runAsync *(required)* | Boolean! |  |
+| policyId *(required)* | String! | Identifier of the classification policy to deactivate. |
+| runAsync *(required)* | Boolean! | Determines whether to run this asynchronously. |
 | disableDataCategory | Boolean | Disable data category. |
 
 ## Returns

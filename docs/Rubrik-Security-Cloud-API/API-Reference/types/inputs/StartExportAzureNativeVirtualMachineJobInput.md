@@ -15,6 +15,7 @@ Input for the job to export the specified Azure Native Virtual Machine to the sp
 | diskEncryptionSetNativeId | String | Native ID of the disk encryption set for encrypting the newly created disks. |
 | networkSecurityGroupNativeId | String | The native ID of the network security group used by the virtual machine created by the export job. |
 | recoveryDiskIds | [[UUID](../scalars/UUID.md)!] | Specifies a list of Azure disk unique native IDs that will be exported. When empty, all disks from the snapshot will be exported. |
+| recoveryPurpose | [RecoveryPurpose](../enums/RecoveryPurpose.md) | Purpose of the recovery operation. Set to SURGICAL_RECOVERY to automatically exclude quarantined files from the exported virtual machine (subject to feature availability for the account). Defaults to RECOVERY_PURPOSE_UNSPECIFIED, which preserves prior behavior. |
 | resourceGroupName | String! | The resource group associated with the virtual machine created by the export job. |
 | shouldEnableAcceleratedNetworking | Boolean | Specifies whether to enable accelerated networking for the virtual machine created by the export job. This value is false by default. |
 | shouldExportTags | Boolean! | Specifies whether to export the tags from the snapshot. |

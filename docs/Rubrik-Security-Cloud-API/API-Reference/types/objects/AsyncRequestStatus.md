@@ -40,6 +40,7 @@ Supported in v5.0+
 
 **Mutations**
 
+- [mutation: addStorageArrayV1](../../mutations/addStorageArrayV1.md)
 - [mutation: assignSlaToMongoDbCollection](../../mutations/assignSlaToMongoDbCollection.md)
 - [mutation: bulkCreateOnDemandMssqlBackup](../../mutations/bulkCreateOnDemandMssqlBackup.md)
 - [mutation: bulkExportMssqlDatabases](../../mutations/bulkExportMssqlDatabases.md)
@@ -75,6 +76,7 @@ Supported in v5.0+
 - [mutation: createOnDemandVolumeGroupBackup](../../mutations/createOnDemandVolumeGroupBackup.md)
 - [mutation: createOpsManagerManagedMongoSourceOnDemandSnapshot](../../mutations/createOpsManagerManagedMongoSourceOnDemandSnapshot.md)
 - [mutation: createOraclePdbRestore](../../mutations/createOraclePdbRestore.md)
+- [mutation: createPureStorageProtectionGroupSnapshot](../../mutations/createPureStorageProtectionGroupSnapshot.md)
 - [mutation: createSapHanaSystemRefresh](../../mutations/createSapHanaSystemRefresh.md)
 - [mutation: deleteDb2Database](../../mutations/deleteDb2Database.md)
 - [mutation: deleteDb2Instance](../../mutations/deleteDb2Instance.md)
@@ -134,6 +136,7 @@ Supported in v5.0+
 - [mutation: downloadOracleDatabaseSnapshot](../../mutations/downloadOracleDatabaseSnapshot.md)
 - [mutation: downloadOracleSnapshotFromLocation](../../mutations/downloadOracleSnapshotFromLocation.md)
 - [mutation: downloadOracleSnapshotFromLocationV2](../../mutations/downloadOracleSnapshotFromLocationV2.md)
+- [mutation: downloadPureStorageProtectionGroupSnapshotFromLocation](../../mutations/downloadPureStorageProtectionGroupSnapshotFromLocation.md)
 - [mutation: downloadSapHanaSnapshot](../../mutations/downloadSapHanaSnapshot.md)
 - [mutation: downloadSapHanaSnapshotFromLocation](../../mutations/downloadSapHanaSnapshotFromLocation.md)
 - [mutation: downloadSapHanaSnapshotsForPointInTimeRecovery](../../mutations/downloadSapHanaSnapshotsForPointInTimeRecovery.md)
@@ -154,6 +157,7 @@ Supported in v5.0+
 - [mutation: exportOracleDatabase](../../mutations/exportOracleDatabase.md)
 - [mutation: exportOracleTablespace](../../mutations/exportOracleTablespace.md)
 - [mutation: exportProxmoxVmSnapshot](../../mutations/exportProxmoxVmSnapshot.md)
+- [mutation: exportPureStorageProtectionGroupSnapshot](../../mutations/exportPureStorageProtectionGroupSnapshot.md)
 - [mutation: exportSlaManagedVolumeSnapshot](../../mutations/exportSlaManagedVolumeSnapshot.md)
 - [mutation: failoverHaPolicy](../../mutations/failoverHaPolicy.md)
 - [mutation: filesetDownloadSnapshotFiles](../../mutations/filesetDownloadSnapshotFiles.md)

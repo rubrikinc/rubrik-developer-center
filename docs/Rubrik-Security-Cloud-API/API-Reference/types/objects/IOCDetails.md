@@ -7,6 +7,8 @@ Details of IOC for a matched file.
 | Field | Type | Description |
 |-------|------|-------------|
 | feedType | [FeedType](../enums/FeedType.md)! | Source type of the intel feed, for example RUBRIK, CROWDSTRIKE, or TAXII_2_1. Used by clients to gate per-feed actions such as enabling or disabling IOC. |
+| hasScopedDisable | Boolean! | Whether this IOC has at least one active scoped disable. |
+| intelFeedId | String! | Unique ID of the intel feed for the IOC. Unlike intel_feed_name, this is stable and unique across providers; legacy matches map to the GTI feed's all-zero UUID. |
 | intelFeedName | String! | Name of the intel feed for the IOC. |
 | iocHashHex | String! | Hash of the IOC. |
 | iocRuleAuthor | String! | Author of the IOC. |
@@ -14,6 +16,7 @@ Details of IOC for a matched file.
 | malwareDescription | String! | Description of the malware for the IOC. |
 | malwareName | String! | Name of the malware for the IOC. |
 | matchType | [IndicatorOfCompromiseKind](../enums/IndicatorOfCompromiseKind.md)! | Type of threat match. |
+| yaraRuleName | String! | YARA rule name associated with the indicator of compromise. |
 
 ## Used By
 

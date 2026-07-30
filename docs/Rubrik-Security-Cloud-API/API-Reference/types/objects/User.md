@@ -24,6 +24,7 @@ User account details.
 | lockoutHistory | [[UserLockoutEvent](UserLockoutEvent.md)!]! | The user account lockout history. |
 | lockoutState | [LockoutState](LockoutState.md)! | The user account lockout information. |
 | passkeyMetadata | [PasskeyMetadata](PasskeyMetadata.md)! | The passkey metadata of the user. |
+| patId | String! | The user's active Personal Access Token ID. |
 | roles | [[Role](Role.md)!]! | Roles assigned to the user. |
 | status | [UserStatus](../enums/UserStatus.md)! | The status of the user account. |
 | totpStatus | [TotpStatus](TotpStatus.md)! | The TOTP status of user. |

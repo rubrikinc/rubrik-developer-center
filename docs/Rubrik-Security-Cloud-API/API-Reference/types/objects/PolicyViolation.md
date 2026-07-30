@@ -20,12 +20,12 @@ Details of policy violation.
 | policyViolationId | String! | The ID of the policy violation. |
 | possibleRemediationsForViolationTarget | [[RemediationAvailability](RemediationAvailability.md)!] | Possible remediations for violation target type. |
 | remediations | [[RemediationMetadata](RemediationMetadata.md)!] | Details of the remediations associated with the violation. |
-| resourceCriticalViolationsCount | Int! |  |
-| resourceHighViolationsCount | Int! |  |
+| resourceCriticalViolationsCount | Int! | Total number of critical-severity violations on the resource. |
+| resourceHighViolationsCount | Int! | Total number of high-severity violations on the resource. |
 | resourceId | String! | Resource involved in a policy violation. |
-| resourceLowViolationsCount | Int! |  |
-| resourceMaxSeverity | [Severity](../enums/Severity.md)! |  |
-| resourceMediumViolationsCount | Int! |  |
+| resourceLowViolationsCount | Int! | Total number of low-severity violations on the resource. |
+| resourceMaxSeverity | [Severity](../enums/Severity.md)! | The highest severity among the resource's violations. |
+| resourceMediumViolationsCount | Int! | Total number of medium-severity violations on the resource. |
 | resourceMetadata | [ResourceMetadata](ResourceMetadata.md) | Metadata for the resource involved in the policy violation. |
 | resourceType | [PolicyResourceType](../enums/PolicyResourceType.md)! | Resource type. |
 | resourceViolationsCount | Int! | Resource-level aggregate violation counts: |
@@ -42,10 +42,11 @@ Details of policy violation.
 
 | Field | Argument | Type | Description |
 |-------|----------|------|-------------|
-| violationSummaryForResource | policyTypes *(required)* | [[PolicyType](../enums/PolicyType.md)!]! | List of policy types. If empty, no results will be returned. |
+| violationSummaryForResource | policyTypes | [[PolicyType](../enums/PolicyType.md)!] | List of policy types. If empty, no results will be returned. |
 
 ## Used By
 
 **Queries**
 
+- [query: policyViolation](../../queries/policyViolation.md)
 - [query: policyViolations](../../queries/policyViolations.md) *(via connection)*

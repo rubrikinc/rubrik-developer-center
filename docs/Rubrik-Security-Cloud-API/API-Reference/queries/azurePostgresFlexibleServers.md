@@ -27,18 +27,32 @@ Retrieves a paginated list of all Azure Postgres Flexible Servers.
       azurePostgresFlexibleServers(first: 10) {
         nodes {
           authorizedOperations
+          availabilityZone
+          backupRetentionDays
           cloudNativeId
+          computeSize
+          computeTier
+          dataEncryptionType
+          engineVersion
+          haMode
+          hostname
           id
+          isExocomputeConfigured
           isProtectable
+          isPublicNetworkAccess
           isRelic
           name
           nativeName
           numWorkloadDescendants
           objectType
+          onDemandSnapshotCount
           region
           rscPendingObjectPauseAssignment
+          skuTier
           slaAssignment
           slaPauseStatus
+          storageSizeGb
+          vCoresCount
         }
         pageInfo {
           hasNextPage
@@ -66,11 +80,11 @@ Retrieves a paginated list of all Azure Postgres Flexible Servers.
                 "authorizedOperations": [
                   "DELETE_SNAPSHOT"
                 ],
+                "availabilityZone": "example-string",
+                "backupRetentionDays": 0,
                 "cloudNativeId": "example-string",
-                "id": "00000000-0000-0000-0000-000000000000",
-                "isProtectable": true,
-                "isRelic": true,
-                "name": "example-string"
+                "computeSize": "example-string",
+                "computeTier": "AZURE_POSTGRES_FLEXIBLE_SERVER_COMPUTE_TIER_BURSTABLE"
               }
             ]
           ],

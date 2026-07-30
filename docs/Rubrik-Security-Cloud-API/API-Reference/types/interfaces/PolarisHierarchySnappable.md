@@ -18,6 +18,7 @@ Polaris protectable object.
 | newestIndexedSnapshot | [PolarisSnapshot](../objects/PolarisSnapshot.md) | The latest snapshot that is indexed and unexpired, and therefore restorable. |
 | newestSnapshot | [PolarisSnapshot](../objects/PolarisSnapshot.md) | The most recent snapshot of this workload. |
 | numWorkloadDescendants | Int! | Number of descendant workloads of this object. |
+| objectBackupWindow | [ObjectBackupWindowStatus](../objects/ObjectBackupWindowStatus.md) | Object-level backup window status of the hierarchy object. |
 | objectPauseStatus | [ObjectPauseStatus](../objects/ObjectPauseStatus.md) | Pause status of the hierarchy object. |
 | objectType | [HierarchyObjectTypeEnum](../enums/HierarchyObjectTypeEnum.md)! | Type of this object. |
 | oldestSnapshot | [PolarisSnapshot](../objects/PolarisSnapshot.md) | The oldest snapshot of this workload. |
@@ -89,6 +90,7 @@ Polaris protectable object.
 - [AzureDevOpsRepository](../objects/AzureDevOpsRepository.md)
 - [AzureNativeManagedDisk](../objects/AzureNativeManagedDisk.md)
 - [AzureNativeVirtualMachine](../objects/AzureNativeVirtualMachine.md)
+- [AzurePostgresFlexibleServer](../objects/AzurePostgresFlexibleServer.md)
 - [AzureSqlDatabaseDb](../objects/AzureSqlDatabaseDb.md)
 - [AzureSqlManagedInstanceDatabase](../objects/AzureSqlManagedInstanceDatabase.md)
 - [AzureStorageAccount](../objects/AzureStorageAccount.md)
@@ -109,4 +111,5 @@ Polaris protectable object.
 - [O365SharepointList](../objects/O365SharepointList.md)
 - [O365Site](../objects/O365Site.md)
 - [O365Teams](../objects/O365Teams.md)
+- [S3TablesIcebergTable](../objects/S3TablesIcebergTable.md)
 - [SalesforceObject](../objects/SalesforceObject.md)

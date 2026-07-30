@@ -36,6 +36,8 @@
         isExchangeHost
         isMssqlHost
         isOracleHost
+        isReplica
+        lastSuccessfulUpgradeTime
         name
         nasApiEndpoint
         nasApiHostname
@@ -48,6 +50,7 @@
         osType
         rbaPackageUpgradeInfo
         rbsUpgradeStatus
+        rbsVersion
         replicatedObjectCount
         resourceInfo
         slaAssignment

@@ -35,8 +35,10 @@ Paginated list of NAS Shares.
           isChangelistEnabled
           isHidden
           isNasShareManuallyAdded
+          isNetAppSnapDiffEnabled
           isNutanixCftEnabled
           isRelic
+          isReplica
           isStale
           name
           numWorkloadDescendants

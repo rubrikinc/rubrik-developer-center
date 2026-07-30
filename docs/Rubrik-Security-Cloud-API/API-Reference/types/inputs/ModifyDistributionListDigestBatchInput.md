@@ -6,4 +6,4 @@ Input for modifying event digests.
 
 | Field | Type | Description |
 |-------|------|-------------|
-| digests | [[EventDigestInput](EventDigestInput.md)!]! | List of event digests to modify. |
+| digests | [[EventDigestInput](EventDigestInput.md)!]! | A list of event digests to modify. |

@@ -18,3 +18,4 @@ Stats of an individual data type.
 
 - [DataGovViolationDetails.dataTypes](DataGovViolationDetails.md)
 - [DataTypeResult.result](DataTypeResult.md)
+- [SensitiveDataSummaryBreakdown.dataTypeStats](SensitiveDataSummaryBreakdown.md)

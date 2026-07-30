@@ -15,12 +15,15 @@ Azure DevOps Project.
 | effectiveRetentionSlaDomain | [SlaDomain](../interfaces/SlaDomain.md) | Effective retention of the SLA Domain of the hierarchy object. |
 | effectiveSlaDomain | [SlaDomain](../interfaces/SlaDomain.md)! | Effective SLA Domain of the hierarchy object. |
 | effectiveSlaSourceObject | [PathNode](PathNode.md) | Path node of the effective SLA Domain source. |
+| fixedObjectCounts | [AzureDevOpsProjectFixedObjectCounts](AzureDevOpsProjectFixedObjectCounts.md) | Developer-collaboration object counts for the project's fixed-object child. Returns null when the project has no fixed-object child. |
+| fixedObjectId | [UUID](../scalars/UUID.md) | Managed object UUID of this project's fixed object. Returns null when the project fixed object has not been created yet. |
 | id | [UUID](../scalars/UUID.md)! | ID of the Azure DevOps project. |
 | isRelic | Boolean! | True if the Azure DevOps project is a relic. |
 | logicalPath | [[PathNode](PathNode.md)!]! | Sequential list of the logical ancestors of this object. |
 | name | String! | Name of the hierarchy object. |
 | nativeId | String! | Native ID of the Azure DevOps project. |
 | numWorkloadDescendants | Int! | Number of descendant workloads of this object. |
+| objectBackupWindow | [ObjectBackupWindowStatus](ObjectBackupWindowStatus.md) | Object-level backup window status of the hierarchy object. |
 | objectPauseStatus | [ObjectPauseStatus](ObjectPauseStatus.md) | Pause status of the hierarchy object. |
 | objectType | [HierarchyObjectTypeEnum](../enums/HierarchyObjectTypeEnum.md)! | Type of this object. |
 | orgId | [UUID](../scalars/UUID.md)! | ID of the Azure DevOps organization associated with the project. |
@@ -33,6 +36,7 @@ Azure DevOps Project.
 | slaAssignment | [SlaAssignmentTypeEnum](../enums/SlaAssignmentTypeEnum.md)! | SLA Domain assignment type for this object. |
 | slaPauseStatus | Boolean! | Pause status of the effective SLA Domain of the hierarchy object. |
 | snapshotDistribution | [SnapshotDistribution](SnapshotDistribution.md)! | Distribution of the snapshots of the hierarchy object. |
+| tenantId | String | Tenant ID of the org this project belongs to (human-readable tenant domain). |
 | url | [URL](../scalars/URL.md)! | URL of the Azure DevOps project. |
 
 ## Field Arguments

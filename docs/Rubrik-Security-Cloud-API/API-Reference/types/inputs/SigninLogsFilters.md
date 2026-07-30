@@ -8,6 +8,7 @@ Filters for querying sign-in logs.
 |-------|------|-------------|
 | applicationNames | [String!] | Filter by application names. |
 | authenticationMethods | [String!] | Filter by authentication methods. |
+| capIds | [String!] | Filter by Conditional Access Policy IDs. |
 | countries | [String!] | Filter by countries. |
 | deviceNames | [String!] | Filter by device names. |
 | displayNameSearchTerm | String | Free-text search term for filtering by actor display name. |

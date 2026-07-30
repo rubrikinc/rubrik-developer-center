@@ -38,6 +38,7 @@ Summary of all FusionCompute virtual machines.
           id
           ipAddresses
           isRelic
+          isReplica
           name
           numWorkloadDescendants
           objectType

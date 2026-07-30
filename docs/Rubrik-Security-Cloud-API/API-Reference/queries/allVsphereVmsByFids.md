@@ -45,6 +45,7 @@ All vSphere virtual machines, based on the FIDs passed.
           isArrayIntegrationPossible
           isBlueprintChild
           isRelic
+          isReplica
           name
           numWorkloadDescendants
           objectType

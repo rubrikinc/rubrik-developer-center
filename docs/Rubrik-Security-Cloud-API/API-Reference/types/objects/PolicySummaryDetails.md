@@ -15,4 +15,6 @@ Policy summary details.
 
 **Referenced by**
 
+- [ExposureTypeHits.policySummaryDetails](ExposureTypeHits.md)
 - [ObjectTypeAccessSummary.policySummaryDetails](ObjectTypeAccessSummary.md)
+- [SensitiveDataSummaryBreakdown.dataCategories](SensitiveDataSummaryBreakdown.md)

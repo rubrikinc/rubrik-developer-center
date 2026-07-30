@@ -1,6 +1,6 @@
 # AzureResourceAvailabilityResp
 
-*No description available.*
+Reply indicating whether an Azure resource is available.
 
 ## Fields
 

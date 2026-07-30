@@ -31,7 +31,7 @@ Retrieves a list of AWS permissions required for Data Center Role Based Archival
     ```json
     {
       "permissionsGroups": [
-        "AKS_CUSTOM_PRIVATE_DNS_ZONE"
+        "ADVANCED_DIAGNOSTICS"
       ]
     }
     ```
@@ -47,7 +47,8 @@ Retrieves a list of AWS permissions required for Data Center Role Based Archival
           "version": 0,
           "permissionsGroupVersions": [
             {
-              "permissionsGroup": "AKS_CUSTOM_PRIVATE_DNS_ZONE",
+              "deltaMigrated": true,
+              "permissionsGroup": "ADVANCED_DIAGNOSTICS",
               "version": 0
             }
           ]

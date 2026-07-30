@@ -35,6 +35,7 @@ Query Azure DevOps project objects.
       ) {
         nodes {
           authorizedOperations
+          fixedObjectId
           id
           isRelic
           name
@@ -47,6 +48,7 @@ Query Azure DevOps project objects.
           rscPendingObjectPauseAssignment
           slaAssignment
           slaPauseStatus
+          tenantId
           url
         }
         pageInfo {
@@ -81,11 +83,11 @@ Query Azure DevOps project objects.
                 "authorizedOperations": [
                   "ACCESS_CDM_CLUSTER"
                 ],
+                "fixedObjectId": "00000000-0000-0000-0000-000000000000",
                 "id": "00000000-0000-0000-0000-000000000000",
                 "isRelic": true,
                 "name": "example-string",
-                "nativeId": "example-string",
-                "numWorkloadDescendants": 0
+                "nativeId": "example-string"
               }
             ]
           ],

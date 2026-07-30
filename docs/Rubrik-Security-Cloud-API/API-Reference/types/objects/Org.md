@@ -71,4 +71,4 @@ Details of an org.
 - [AzurePostgresFlexibleServer.allOrgs](AzurePostgresFlexibleServer.md)
 - [AzureSqlDatabaseDb.allOrgs](AzureSqlDatabaseDb.md)
 - [AzureSqlDatabaseServer.allOrgs](AzureSqlDatabaseServer.md)
-- *…and 282 more*
+- *…and 291 more*

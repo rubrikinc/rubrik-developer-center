@@ -11,6 +11,7 @@ Specific information for the RCV GCP target template.
 | cloudNativeLocTemplateType | [CloudNativeLocTemplateType](../enums/CloudNativeLocTemplateType.md)! | Cloud native template type. |
 | encryptionType | [TargetEncryptionTypeEnum](../enums/TargetEncryptionTypeEnum.md)! | Encryption type for the RCV GCP location template. |
 | region | [RcsRegionEnumType](../enums/RcsRegionEnumType.md)! | Region of RCV GCP location template. |
+| sourceWorkloadCloud | [SourceWorkloadCloud](../enums/SourceWorkloadCloud.md) | Specifies the source workload cloud of this template. This field is optional. |
 | targetType | [TargetType](../enums/TargetType.md)! | The type of this Target. |
 | templateLocationId | [UUID](../scalars/UUID.md)! | The internal ID of the template archival location. |
 | tier | [RcsTierEnumType](../enums/RcsTierEnumType.md)! | Access tier for the RCV GCP location. |

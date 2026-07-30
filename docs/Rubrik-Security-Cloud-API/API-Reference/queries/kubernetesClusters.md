@@ -37,8 +37,11 @@ Summary of all Kubernetes Clusters.
           id
           isAutoPsCreationEnabled
           isPullSecretConfigured
+          isReplica
           k8sName
           k8sVersion
+          maxConcurrentAgents
+          maxPvcsPerAgent
           nadName
           nadNamespace
           name

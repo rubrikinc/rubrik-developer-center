@@ -1,12 +1,12 @@
 # runCustomAnalyzer
 
-*No description available.*
+Runs a custom analyzer against sample content and returns the matches.
 
 ## Arguments
 
 | Argument | Type | Description |
 |----------|------|-------------|
-| input *(required)* | [RunCustomAnalyzerInput](../types/inputs/RunCustomAnalyzerInput.md)! |  |
+| input *(required)* | [RunCustomAnalyzerInput](../types/inputs/RunCustomAnalyzerInput.md)! | The custom analyzer configuration to run. |
 
 ## Returns
 

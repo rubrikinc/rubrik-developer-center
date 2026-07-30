@@ -12,9 +12,10 @@ Represents the analyzer.
 | dictionaryCsv | String | Represents the dictionary CSV. |
 | excludeFieldNamePattern | String | Regex pattern to exclude fields by name. |
 | excludePathPattern | String | Regex pattern to exclude files by path. |
+| excludeValueRegex | String | A matched value is excluded when it matches this regex. Users express alternation themselves with `|` (e.g. `^000-|^999-`). An empty value clears any existing pattern. |
 | id | String | Represents the analyzer ID. |
 | isInactive | Boolean | Represent whether the analyzer is inactive or not. |
-| keyRegex | String | Regex to filter fields which need to be analyzed for structured data. |
+| keyRegex | String | Regex to filter fields that need to be analyzed for structured data. |
 | name | String | Represents the analyzer name. |
 | proximityDistance | Int | Maximum character distance for proximity keyword matching. |
 | proximityKeywordsRegex | String | Regex pattern for proximity keywords used to filter hits. |

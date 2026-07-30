@@ -11,7 +11,7 @@ Information about the Amazon Glacier target created on Rubrik.
 | cloudAccount | [CloudAccount](../interfaces/CloudAccount.md)! | Cloud account details of the Amazon Glacier target. |
 | cluster | [Cluster](Cluster.md)! | The cluster to which this target belongs. |
 | clusterName | String | Name of the Rubrik cluster that archives to this archival location. |
-| connectionStatus | [ConnectionStatusType](../enums/ConnectionStatusType.md)! | Connection status of the AWS target. |
+| connectionStatus | [ConnectionStatusType](../enums/ConnectionStatusType.md)! | Connection status of the Amazon Glacier target. |
 | consumedBytes | [Long](../scalars/Long.md) | Number of bytes stored on the target. |
 | failedTasks | Int | Number of archiving tasks failed on this target. |
 | id | String! | The ID of the target. |

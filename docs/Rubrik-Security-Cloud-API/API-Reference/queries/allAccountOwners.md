@@ -22,6 +22,7 @@ List of account owners.
         isEmailEnabled
         isHidden
         lastLogin
+        patId
         status
         unreadCount
         username

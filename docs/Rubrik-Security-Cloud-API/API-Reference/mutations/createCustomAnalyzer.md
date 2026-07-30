@@ -6,7 +6,7 @@ Create a new custom analyzer.
 
 | Argument | Type | Description |
 |----------|------|-------------|
-| input *(required)* | [CreateCustomAnalyzerInput](../types/inputs/CreateCustomAnalyzerInput.md)! |  |
+| input *(required)* | [CreateCustomAnalyzerInput](../types/inputs/CreateCustomAnalyzerInput.md)! | The custom analyzer to create. |
 
 ## Returns
 
@@ -24,6 +24,7 @@ Create a new custom analyzer.
         dictionaryCsv
         excludeFieldNamePattern
         excludePathPattern
+        excludeValueRegex
         id
         isInactive
         keyRegex
@@ -64,7 +65,7 @@ Create a new custom analyzer.
           "dictionaryCsv": "example-string",
           "excludeFieldNamePattern": "example-string",
           "excludePathPattern": "example-string",
-          "id": "example-string",
+          "excludeValueRegex": "example-string",
           "analyzerRiskInstance": {
             "analyzerId": "example-string",
             "risk": "HIGH_RISK",

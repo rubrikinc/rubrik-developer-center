@@ -1,13 +1,13 @@
 # azureO365ValidateUserRoles
 
-Validates the user roles in the subscription.
+Validates that the caller has the Azure global-administrator and subscription-owner roles required for O365 setup. The O365InventoryEnabled feature-flag gate is enforced upstream in the Scala resolver, mirroring the V1 path.
 
 ## Arguments
 
 | Argument | Type | Description |
 |----------|------|-------------|
-| tenantId *(required)* | String! |  |
-| subscriptionId *(required)* | [UUID](../types/scalars/UUID.md)! |  |
+| tenantId *(required)* | String! | The Azure tenant ID. |
+| subscriptionId *(required)* | [UUID](../types/scalars/UUID.md)! | The Azure subscription ID. |
 
 ## Returns
 

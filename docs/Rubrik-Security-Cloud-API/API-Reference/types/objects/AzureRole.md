@@ -6,7 +6,7 @@ Azure Role details.
 
 | Field | Type | Description |
 |-------|------|-------------|
-| isRubrikManaged | Boolean! | Specifies whether role is created by Rubrik via OAuth flow or manually by the customer without OAuth flow. |
+| isRubrikManaged | Boolean! | Specifies whether role is created by Rubrik via OAuth flow or manually by the customer without OAuth flow. Specifies whether role is managed by Rubrik. TODO[SPARK-181742]: Deprecate this field in favor of is_oauth after the release. |
 | roleAssignmentName | String! | Name of the role assignment. |
 | roleDefinitionId | [UUID](../scalars/UUID.md)! | ID of the role definition. |
 | roleDisplayName | String! | Name of the role. |

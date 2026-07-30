@@ -1,6 +1,6 @@
 # DownloadObjectFilesCsvInput
 
-*No description available.*
+Input for scheduling a download CSV job for cross object files.
 
 ## Fields
 

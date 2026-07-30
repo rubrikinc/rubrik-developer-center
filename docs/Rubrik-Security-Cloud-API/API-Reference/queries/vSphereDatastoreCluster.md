@@ -25,6 +25,7 @@ Vsphere datastore cluster based on id passed in.
         cdmPendingObjectPauseAssignment
         freeSpace
         id
+        isReplica
         isSdrsEnabled
         name
         numWorkloadDescendants

@@ -1,6 +1,6 @@
 # Unions
 
-29 types.
+35 types.
 
 [AccessMethodDetailsType](AccessMethodDetailsType.md)  
 [ActionTypes](ActionTypes.md)  
@@ -13,6 +13,7 @@
 [ClusterMetricGroupByInfo](ClusterMetricGroupByInfo.md)  
 [DataLocationClusterInfo](DataLocationClusterInfo.md)  
 [EntityType](EntityType.md)  
+[IdpSpecificMetadata](IdpSpecificMetadata.md)  
 [IntegrationCreationInfo](IntegrationCreationInfo.md)  
 [LockoutEvent](LockoutEvent.md)  
 [ManagedVolumeQueuedSnapshotGroupByInfo](ManagedVolumeQueuedSnapshotGroupByInfo.md)  
@@ -22,8 +23,11 @@
 [MosaicSnapshotGroupByInfo](MosaicSnapshotGroupByInfo.md)  
 [NestedFilterConfig](NestedFilterConfig.md)  
 [NfAnomalyResultGroupByInfo](NfAnomalyResultGroupByInfo.md)  
+[OnPremAdPrincipalTypeSpecificMetadata](OnPremAdPrincipalTypeSpecificMetadata.md)  
 [PcrImagePullDetails](PcrImagePullDetails.md)  
 [PolarisSnapshotGroupByInfo](PolarisSnapshotGroupByInfo.md)  
+[PossibleFilterValues](PossibleFilterValues.md)  
+[PrincipalMetadata](PrincipalMetadata.md)  
 [RansomwareResultGroupByInfo](RansomwareResultGroupByInfo.md)  
 [RemediationDetailsUnion](RemediationDetailsUnion.md)  
 [ResourceMetadataUnion](ResourceMetadataUnion.md)  
@@ -31,3 +35,5 @@
 [SnappableLocationType](SnappableLocationType.md)  
 [TaskDetailGroupByInfo](TaskDetailGroupByInfo.md)  
 [ViolationDetailsUnion](ViolationDetailsUnion.md)  
+[ViolationHistoryDetailsUnion](ViolationHistoryDetailsUnion.md)  
+[ViolationsInsights](ViolationsInsights.md)  

@@ -26,6 +26,7 @@ Paginated list of user audit data. Each page of the results will include at most
     query {
       userAuditConnection(first: 10) {
         nodes {
+          actorType
           auditType
           id
           ipAddress
@@ -64,12 +65,12 @@ Paginated list of user audit data. Each page of the results will include at most
           "nodes": [
             [
               {
+                "actorType": "ACTOR_TYPE_UNSPECIFIED",
                 "auditType": "ANOMALY",
                 "id": "example-id",
                 "ipAddress": "example-string",
                 "message": "example-string",
-                "objectId": "example-string",
-                "objectName": "example-string"
+                "objectId": "example-string"
               }
             ]
           ],

@@ -1,6 +1,6 @@
 # ValueNull
 
-*No description available.*
+An explicitly null value.
 
 **Implements:** [Value](../interfaces/Value.md)
 
@@ -8,4 +8,4 @@
 
 | Field | Type | Description |
 |-------|------|-------------|
-| serializedValue | String! |  |
+| serializedValue | String! | The value rendered in its string form, primarily for values within filters. |

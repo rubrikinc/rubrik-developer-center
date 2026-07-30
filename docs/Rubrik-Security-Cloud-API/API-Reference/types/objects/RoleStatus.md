@@ -1,6 +1,6 @@
 # RoleStatus
 
-*No description available.*
+Status of a single Azure role assignment.
 
 ## Fields
 

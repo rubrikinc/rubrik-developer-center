@@ -1,12 +1,12 @@
 # updatePreviewerClusterConfig
 
-Update previewer cluster configuration.
+Update previewer cluster configuration and return the updated Rubrik cluster.
 
 ## Arguments
 
 | Argument | Type | Description |
 |----------|------|-------------|
-| previewerClusterConfig *(required)* | [PreviewerClusterConfigInput](../types/inputs/PreviewerClusterConfigInput.md)! |  |
+| previewerClusterConfig *(required)* | [PreviewerClusterConfigInput](../types/inputs/PreviewerClusterConfigInput.md)! | Previewer cluster configuration to apply. |
 
 ## Returns
 

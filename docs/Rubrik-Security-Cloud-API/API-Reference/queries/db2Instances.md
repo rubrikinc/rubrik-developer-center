@@ -30,6 +30,7 @@ Connection of filtered db2 instances based on specific filters.
           containsHadrDatabase
           id
           instanceType
+          isReplica
           lastRefreshTime
           lastSyncTime
           name

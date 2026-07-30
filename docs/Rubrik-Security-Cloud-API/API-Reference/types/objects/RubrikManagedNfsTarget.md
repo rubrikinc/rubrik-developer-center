@@ -1,6 +1,6 @@
 # RubrikManagedNfsTarget
 
-Specific information for Network File System (NFS) target created on Rubrik.
+Specific information for NFS target created on Rubrik.
 
 **Implements:** [Target](../interfaces/Target.md)
 
@@ -16,7 +16,7 @@ Specific information for Network File System (NFS) target created on Rubrik.
 | exportDir | String! | Directory in the NFS location where snapshots will be exported. |
 | failedTasks | Int | Number of archiving tasks failed on this target. |
 | fileLockPeriodInSeconds | Int! | Lock period of the files in NFS in seconds. |
-| host | String! | Host of the Nfs location. |
+| host | String! | Host of the NFS location. |
 | id | String! | The ID of the target. |
 | immutabilitySetting | [LocationImmutabilityType](LocationImmutabilityType.md) | Immutability settings for the NFS target. |
 | isActive | Boolean! | Specifies whether the status of the target is active. When set to false, the target is either paused or not enabled. |
@@ -26,12 +26,13 @@ Specific information for Network File System (NFS) target created on Rubrik.
 | locationConnectionStatus | [ConnectionStatusType](../enums/ConnectionStatusType.md)! | Status of the target. |
 | locationScope | [LocationScope](../enums/LocationScope.md)! | The scope of the location of the target. Possible values are Global or Local. |
 | name | String! | The name of the target. |
-| nfsAuthType | [AuthTypeEnum](../enums/AuthTypeEnum.md)! | Field for specifying the authentication type of NFS. |
+| nfsAuthType | [AuthTypeEnum](../enums/AuthTypeEnum.md)! | Authentication type of NFS. |
 | nfsVersion | Int! | Version of NFS target. |
 | otherNfsOptions | String! | Other NFS options. |
 | readerRetrievalMethod | [ReaderRetrievalMethod](../enums/ReaderRetrievalMethod.md) | The retrieval method of the reader target. |
 | runningTasks | Int | Number of archiving tasks running on this target. |
 | status | [ArchivalLocationStatus](../enums/ArchivalLocationStatus.md)! | Status of the target. |
+| subType | [NfsSubType](../enums/NfsSubType.md) | Vendor subtype of the NFS archival location. |
 | syncFailureReason | String! | Reason why sync of this target with CDM failed. |
 | syncStatus | [TargetSyncStatus](../enums/TargetSyncStatus.md)! | Sync status of NFS location. |
 | targetMapping | [TargetMappingBasic](TargetMappingBasic.md) | Archival location to which the mapping target belongs. |

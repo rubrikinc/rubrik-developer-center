@@ -12,6 +12,7 @@ MvcProfile represents an MVC (Minimum Viable Company) profile for an org.
 | id | [UUID](../scalars/UUID.md)! | Unique ID of the MVC profile. |
 | name | String! | Display name of the MVC profile. |
 | orgId | [UUID](../scalars/UUID.md)! | ID of the org this profile belongs to. |
+| recoveryPlans | [[M365AbrRecoveryPlan](M365AbrRecoveryPlan.md)!]! | Recovery Plans associated with this minimum viable company profile. Archived Recovery Plans are excluded. Empty list when no Recovery Plans exist. |
 | siteIds | [[UUID](../scalars/UUID.md)!]! | IDs of the SharePoint sites included in this profile. |
 | totalUniqueUsers | Int! | Cached count of unique users across all groups in this profile. |
 | updatedAt | [DateTime](../scalars/DateTime.md)! | Timestamp when the profile was last updated. |

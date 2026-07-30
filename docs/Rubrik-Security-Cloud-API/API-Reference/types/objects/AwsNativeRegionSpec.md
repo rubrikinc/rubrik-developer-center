@@ -14,3 +14,4 @@ List of AWS region specifications associated with an AWS account.
 **Referenced by**
 
 - [AwsNativeAccount.regionSpecs](AwsNativeAccount.md)
+- [RecoveryPlanAwsAccount.regionSpecs](RecoveryPlanAwsAccount.md)

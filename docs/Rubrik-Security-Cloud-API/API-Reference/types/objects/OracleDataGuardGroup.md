@@ -31,9 +31,12 @@
 | hostLogRetentionHours | Int! | The host log retention, in hours, of the Oracle Data Guard Group. |
 | id | [UUID](../scalars/UUID.md)! | ID of the hierarchy object. |
 | isRelic | Boolean! | Whether the Oracle Data Guard Group is a relic in CDM. |
+| isReplica | Boolean | True if this object is a replica, its current cluster differs from its source (primary) cluster. False if the object resides on its source cluster. Null when the source cluster is unknown. |
+| isZeroRpoEnabled | Boolean | Supported in v9.6+. Indicates whether Zero RPO (near-zero recovery point) protection is enabled on this database. Null if the database has no ZRPO configuration. |
 | lastValidationResult | [OracleDatabaseLastValidationStatus](OracleDatabaseLastValidationStatus.md) | The last validation result of the Oracle Data Guard Group. |
 | latestUserNote | [LatestUserNote](LatestUserNote.md) | Latest user note information. |
 | logBackupFrequency | Int! | The log backup frequency, in minutes, of the Oracle Data Guard Group. |
+| logRatePerRmanChannelInMb | Int! | Supported in v9.5+. Specifies the RMAN RATE parameter in megabytes per second to limit log backup throughput per channel. |
 | logRetentionHours | Int! | The log retention, in hours, of the Oracle Data Guard Group. |
 | logicalChildConnection | [OracleDataGuardGroupLogicalChildTypeConnection](OracleDataGuardGroupLogicalChildTypeConnection.md)! | List of logical children. |
 | logicalPath | [[PathNode](PathNode.md)!]! | Sequential list of the logical ancestors of this object. |
@@ -49,6 +52,7 @@
 | numLogSnapshots | Int! | The number of log snapshots taken of the Oracle Data Guard Group. |
 | numTablespaces | Int! | The number of tablespaces contained in the Oracle Data Guard Group. |
 | numWorkloadDescendants | Int! | Number of descendant workloads of this object. |
+| objectBackupWindow | [ObjectBackupWindowStatus](ObjectBackupWindowStatus.md) | Object-level backup window status of the hierarchy object. |
 | objectPauseStatus | [ObjectPauseStatus](ObjectPauseStatus.md) | Pause status of the hierarchy object. |
 | objectType | [HierarchyObjectTypeEnum](../enums/HierarchyObjectTypeEnum.md)! | Type of this object. |
 | oldestSnapshot | [CdmSnapshot](CdmSnapshot.md) | The oldest snapshot of this workload. |
@@ -59,6 +63,7 @@
 | physicalPath | [[PathNode](PathNode.md)!]! | Sequential list of the physical ancestors of this object. |
 | preferredDataGuardMemberUniqueNames | [String!]! | An ordered sequence of Oracle Data Guard members' unique names to be chosen for backups. The list may be empty or contain a maximum of one name. |
 | primaryClusterLocation | [DataLocation](DataLocation.md)! | The source cluster of this object. Returned as a data location because there is no guarantee that Rubrik has knowledge about the source cluster. |
+| ratePerRmanChannelInMb | Int! | Supported in v9.5+. Specifies the RMAN RATE parameter in megabytes per second to limit backup throughput per channel. |
 | replicatedObjectCount | Int! | The number of objects either replicated by this object or related to this object by replication. |
 | replicatedObjects | [[CdmHierarchyObject](../interfaces/CdmHierarchyObject.md)!]! | Objects either replicated by this object or related to this object by replication. |
 | sectionSizeInGigabytes | Int! | Specifies the section size, in gigabytes, to be used during backups. |
@@ -93,6 +98,8 @@
 | logicalChildConnection | workloadHierarchy | [WorkloadLevelHierarchy](../enums/WorkloadLevelHierarchy.md) | Each enumeration value represents the hierarchy of a specific workload type for RBAC and SLA Domain assignments.  A value of 'None' represents the hierarchy of all workload types. |
 | missedSnapshotConnection | first | Int | Returns the first n elements from the list. |
 | missedSnapshotConnection | after | String | Returns the elements in the list that occur after the specified cursor. |
+| missedSnapshotConnection | last | Int | Returns the last n elements from the list. |
+| missedSnapshotConnection | before | String | Returns the elements in the list that occur before the specified cursor. |
 | missedSnapshotConnection | filter | [MissedSnapshotFilterInput](../inputs/MissedSnapshotFilterInput.md) | Filter missed snapshots by date. |
 | missedSnapshotGroupByConnection | first | Int | Returns the first n elements from the list. |
 | missedSnapshotGroupByConnection | after | String | Returns the elements in the list that occur after the specified cursor. |

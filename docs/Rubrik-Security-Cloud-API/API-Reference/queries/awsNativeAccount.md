@@ -30,6 +30,9 @@ Refers to the AWS Native account that serves as a container for all your AWS res
         dynamoDbTableCount
         ebsVolumeCount
         ec2InstanceCount
+        glueIcebergCatalogCount
+        glueIcebergDatabaseCount
+        glueIcebergTableCount
         id
         isProtectable
         lastRefreshedAt
@@ -39,6 +42,9 @@ Refers to the AWS Native account that serves as a container for all your AWS res
         rdsInstanceCount
         rscPendingObjectPauseAssignment
         s3BucketCount
+        s3TablesIcebergCatalogCount
+        s3TablesIcebergNamespaceCount
+        s3TablesIcebergTableCount
         serviceType
         slaAssignment
         slaPauseStatus

@@ -17,5 +17,6 @@ Stats of the backup jobs in the last 24 hours.
 - [AtlassianSite.backupJobsStats](AtlassianSite.md)
 - [Dynamics365Organization.backupJobsStats](Dynamics365Organization.md)
 - [GoogleWorkspaceOrg.backupJobsStats](GoogleWorkspaceOrg.md)
+- [PowerPlatformEnvironment.backupJobsStats](PowerPlatformEnvironment.md)
 - SaasAppsOrganization.backupJobsStats
 - [SalesforceOrganization.backupJobsStats](SalesforceOrganization.md)

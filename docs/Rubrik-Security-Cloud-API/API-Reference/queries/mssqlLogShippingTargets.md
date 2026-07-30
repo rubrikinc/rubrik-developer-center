@@ -10,7 +10,7 @@ List of filtered Microsoft SQL log shipping targets.
 
 ## Returns
 
-[MssqlLogShippingSummaryV2ListResponse](../types/objects/MssqlLogShippingSummaryV2ListResponse.md)
+[MssqlLogShippingSummaryV2ListResponse](../types/objects/MssqlLogShippingSummaryV2ListResponse.md)!
 
 ## Sample
 

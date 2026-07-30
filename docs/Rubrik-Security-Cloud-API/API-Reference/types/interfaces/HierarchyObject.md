@@ -16,6 +16,7 @@ A generic hierarchy object.
 | logicalPath | [[PathNode](../objects/PathNode.md)!]! | Sequential list of the logical ancestors of this object. |
 | name | String! | Name of the hierarchy object. |
 | numWorkloadDescendants | Int! | Number of descendant workloads of this object. |
+| objectBackupWindow | [ObjectBackupWindowStatus](../objects/ObjectBackupWindowStatus.md) | Object-level backup window status of the hierarchy object. |
 | objectPauseStatus | [ObjectPauseStatus](../objects/ObjectPauseStatus.md) | Pause status of the hierarchy object. |
 | objectType | [HierarchyObjectTypeEnum](../enums/HierarchyObjectTypeEnum.md)! | Type of this object. |
 | physicalPath | [[PathNode](../objects/PathNode.md)!]! | Sequential list of the physical ancestors of this object. |
@@ -157,6 +158,13 @@ A generic hierarchy object.
 - [PhysicalHost](../objects/PhysicalHost.md)
 - [PostgreSQLDatabase](../objects/PostgreSQLDatabase.md)
 - [PostgreSQLDbCluster](../objects/PostgreSQLDbCluster.md)
+- [PowerPlatformEnvironment](../objects/PowerPlatformEnvironment.md)
+- [PureStorageArrayV1](../objects/PureStorageArrayV1.md)
+- [PureStorageProtectionGroupV1](../objects/PureStorageProtectionGroupV1.md)
+- [PureStorageVolumeV1](../objects/PureStorageVolumeV1.md)
+- [S3TablesIcebergCatalog](../objects/S3TablesIcebergCatalog.md)
+- [S3TablesIcebergNamespace](../objects/S3TablesIcebergNamespace.md)
+- [S3TablesIcebergTable](../objects/S3TablesIcebergTable.md)
 - [SalesforceObject](../objects/SalesforceObject.md)
 - [SalesforceOrganization](../objects/SalesforceOrganization.md)
 - [SapHanaDatabase](../objects/SapHanaDatabase.md)

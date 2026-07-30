@@ -29,6 +29,7 @@ Details of a SAP HANA database for a given FID.
         forceFull
         id
         isRelic
+        isReplica
         name
         numWorkloadDescendants
         objectType

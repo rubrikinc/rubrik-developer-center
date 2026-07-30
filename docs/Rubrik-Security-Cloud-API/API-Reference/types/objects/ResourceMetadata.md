@@ -13,3 +13,4 @@ Metadata for the resource.
 **Referenced by**
 
 - [PolicyViolation.resourceMetadata](PolicyViolation.md)
+- [PolicyViolationsByResource.resourceMetadata](PolicyViolationsByResource.md)

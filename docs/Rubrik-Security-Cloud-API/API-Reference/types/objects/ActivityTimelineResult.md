@@ -1,14 +1,14 @@
 # ActivityTimelineResult
 
-*No description available.*
+Aggregated activity for a single day in a user activity timeline.
 
 ## Fields
 
 | Field | Type | Description |
 |-------|------|-------------|
-| activityResults | [[ActivityResult](ActivityResult.md)!]! |  |
-| day | String! |  |
-| topFiles | [[FileAccessResult](FileAccessResult.md)!]! |  |
+| activityResults | [[ActivityResult](ActivityResult.md)!]! | Aggregated activity counts across all files for this day. |
+| day | String! | Day the activity occurred on, formatted as YYYY-MM-DD. |
+| topFiles | [[FileAccessResult](FileAccessResult.md)!]! | Top files accessed on this day. |
 
 ## Used By
 

@@ -1,6 +1,6 @@
 # adGroupMembers
 
-Objects that match the specifications of the AD group.
+Returns members matching an AD group spec, in a given org.
 
 ## Arguments
 
@@ -8,6 +8,8 @@ Objects that match the specifications of the AD group.
 |----------|------|-------------|
 | first | Int | Returns the first n elements from the list. |
 | after | String | Returns the elements in the list that occur after the specified cursor. |
+| last | Int | Returns the last n elements from the list. |
+| before | String | Returns the elements in the list that occur before the specified cursor. |
 | orgId *(required)* | [UUID](../types/scalars/UUID.md)! | Org UUID. |
 | adGroupSpec *(required)* | [AdGroupSpecInput](../types/inputs/AdGroupSpecInput.md)! | The Azure Active Directory group spec. |
 

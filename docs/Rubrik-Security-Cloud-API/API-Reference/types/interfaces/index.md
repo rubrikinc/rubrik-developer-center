@@ -1,6 +1,6 @@
 # Interfaces
 
-181 types.
+183 types.
 
 [ActiveDirectoryDomainDescendantType](ActiveDirectoryDomainDescendantType.md)  
 [ActiveDirectoryDomainPhysicalChildType](ActiveDirectoryDomainPhysicalChildType.md)  
@@ -135,6 +135,8 @@
 [PolarisHierarchySnappable](PolarisHierarchySnappable.md)  
 [PolarisSpecificSnapshot](PolarisSpecificSnapshot.md)  
 [ProtectedObjectSummary](ProtectedObjectSummary.md)  
+[PureStorageArrayDescendantV1](PureStorageArrayDescendantV1.md)  
+[PureStorageArrayLogicalChildType](PureStorageArrayLogicalChildType.md)  
 [RequestedChangesTemplate](RequestedChangesTemplate.md)  
 [SaasAppsOrganization](SaasAppsOrganization.md)  
 [SapHanaSystemDescendantType](SapHanaSystemDescendantType.md)  

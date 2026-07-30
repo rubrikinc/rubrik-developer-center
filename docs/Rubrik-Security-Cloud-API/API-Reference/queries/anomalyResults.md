@@ -44,6 +44,7 @@ Results for Anomaly Investigations.
           objectType
           previousSnapshotDate
           previousSnapshotId
+          resourceDeletedAt
           severity
           snapshotDate
           snapshotFid

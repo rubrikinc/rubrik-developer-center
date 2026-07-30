@@ -13,6 +13,7 @@ The types of metadata key.
 | HIDE_CHART_LEGEND_NUMBER | Specifies whether to hide numbers in the chart legend component. |
 | INVALID_CHART_USER_MESSAGE | User message to be displayed if the chart is invalid. |
 | JSON_STRING_ARRAY | Specifies UI to render a popover with a list of strings from a JSON string array. |
+| MANAGED_OBJECT_TYPE | Type of the managed object associated with this metadata entry. |
 | METADATA_KEY_UNSPECIFIED | Metadata key is unspecified. |
 | OBJECT_ICON_ID | Object icon ID used to generate object icon. |
 | OBJECT_LINK_ID | Object ID used to generate object hyperlink. |

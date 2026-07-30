@@ -44,7 +44,6 @@ List of GCP projects.
           objectType
           organizationName
           projectNumber
-          region
           rscPendingObjectPauseAssignment
           slaAssignment
           slaPauseStatus

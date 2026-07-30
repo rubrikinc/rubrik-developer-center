@@ -13,3 +13,4 @@ AWS native protection features.
 | GLUE_ICEBERG | AWS native protection feature is Glue Iceberg. |
 | RDS | AWS native protection feature is RDS. |
 | S3 | AWS native protection feature is S3. |
+| S3_TABLES_ICEBERG | AWS native protection feature is S3 Tables Iceberg. |

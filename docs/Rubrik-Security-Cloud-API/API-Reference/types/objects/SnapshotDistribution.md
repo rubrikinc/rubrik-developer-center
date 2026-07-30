@@ -46,4 +46,4 @@ A generic snapshot type.
 - [AzureSqlDatabaseDb.snapshotDistribution](AzureSqlDatabaseDb.md)
 - [AzureSqlDatabaseServer.snapshotDistribution](AzureSqlDatabaseServer.md)
 - [AzureSqlManagedInstanceDatabase.snapshotDistribution](AzureSqlManagedInstanceDatabase.md)
-- *…and 276 more*
+- *…and 285 more*

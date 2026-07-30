@@ -26,6 +26,7 @@ Details of the given Prism Central.
         hostName
         id
         isDrEnabled
+        isReplica
         lastRefreshTime
         name
         naturalId
@@ -34,6 +35,7 @@ Details of the given Prism Central.
         nutanixClusterIds
         objectType
         replicatedObjectCount
+        shouldUseV4
         slaAssignment
         slaPauseStatus
         userName

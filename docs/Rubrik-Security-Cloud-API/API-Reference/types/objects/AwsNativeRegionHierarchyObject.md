@@ -18,10 +18,14 @@ AWS native region.
 | effectiveRetentionSlaDomain | [SlaDomain](../interfaces/SlaDomain.md) | Effective retention of the SLA Domain of the hierarchy object. |
 | effectiveSlaDomain | [SlaDomain](../interfaces/SlaDomain.md)! | Effective SLA Domain of the hierarchy object. |
 | effectiveSlaSourceObject | [PathNode](PathNode.md) | Path node of the effective SLA Domain source. |
+| glueIcebergCatalogCount | Int! | Number of Glue Iceberg catalogs in this region. |
+| glueIcebergDatabaseCount | Int! | Number of Glue Iceberg databases in this region. |
+| glueIcebergTableCount | Int! | Number of Glue Iceberg tables in this region. |
 | id | [UUID](../scalars/UUID.md)! | ID of the hierarchy object. |
 | logicalPath | [[PathNode](PathNode.md)!]! | Sequential list of the logical ancestors of this object. |
 | name | String! | Name of the hierarchy object. |
 | numWorkloadDescendants | Int! | Number of descendant workloads of this object. |
+| objectBackupWindow | [ObjectBackupWindowStatus](ObjectBackupWindowStatus.md) | Object-level backup window status of the hierarchy object. |
 | objectPauseStatus | [ObjectPauseStatus](ObjectPauseStatus.md) | Pause status of the hierarchy object. |
 | objectType | [HierarchyObjectTypeEnum](../enums/HierarchyObjectTypeEnum.md)! | Type of this object. |
 | parentAccountId | String! | ID of the parent AWS account. |
@@ -31,6 +35,9 @@ AWS native region.
 | rscNativeObjectPendingSla | [CompactSlaDomain](CompactSlaDomain.md) | SLA Domain assignment which is pending on the Rubrik Security Cloud native objects. |
 | rscPendingObjectPauseAssignment | [PendingObjectPauseAssignmentStatus](../enums/PendingObjectPauseAssignmentStatus.md) | Object pause pending assignment details for RSC objects. |
 | s3BucketCount | Int! | Number of S3 buckets in this region. |
+| s3TablesIcebergCatalogCount | Int! | Number of S3 Tables Iceberg catalogs in this region. |
+| s3TablesIcebergNamespaceCount | Int! | Number of S3 Tables Iceberg namespaces in this region. |
+| s3TablesIcebergTableCount | Int! | Number of S3 Tables Iceberg tables in this region. |
 | securityMetadata | [SecurityMetadata](SecurityMetadata.md) | Security posture metadata. |
 | slaAssignment | [SlaAssignmentTypeEnum](../enums/SlaAssignmentTypeEnum.md)! | SLA Domain assignment type for this object. |
 | slaPauseStatus | Boolean! | Pause status of the effective SLA Domain of the hierarchy object. |

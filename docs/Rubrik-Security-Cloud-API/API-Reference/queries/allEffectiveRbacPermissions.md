@@ -45,7 +45,7 @@ Permissions assigned to the role that are in effect.
             "rbacObject": {
               "clusterId": "example-string",
               "objectId": "example-string",
-              "workloadHierarchy": "AWS_NATIVE_CONFIG"
+              "workloadHierarchy": "AUTH0_TENANT"
             }
           }
         ]

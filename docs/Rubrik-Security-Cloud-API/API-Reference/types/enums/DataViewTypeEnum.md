@@ -16,8 +16,11 @@ All reporting table schemas.
 | BACKUP_STRIKES *(deprecated: Use BACKUP_STRIKES_V2 instead.)* | Specifies the backup strikes information. |
 | BACKUP_STRIKES_V2 | Specifies the backup strikes information. |
 | CDM_UPGRADES | Cdm upgrades. |
+| CLOUD_COST_DAILY | Cloud cost daily report -- raw daily costs per cloud account. |
+| CLOUD_COST_MONTHLY | Cloud cost monthly report -- aggregated monthly costs per cloud account. |
 | CLOUD_OVERLAP_OBJECTS | Specifies the Cloud Overlap Objects report information. |
 | CLUSTERS | Clusters database table schema. |
+| CONSOLIDATED_LICENSE_USAGE | Consolidated per-child-account license usage report information. |
 | DATAGOV_TIMELINE | Specifies Rubrik DSPM information for a given workload over time. |
 | DISK_REPORT | Specifies the Disk Report information. |
 | EVENT_SERIES | Specifies the Events report information. |
@@ -26,6 +29,7 @@ All reporting table schemas.
 | GLOBAL_OBJECT_SUMMARY_MONTHLY | Global object summary monthly database table schema. |
 | IDENTITY_ACTIVITY | Specifies the Identity Activity report information. |
 | IDENTITY_RISKS | Specifies the Identity Risks report information. |
+| IDENTITY_SEGMENTATION_AUDIT | Specifies the Entra identity-segmentation audit report information: per-user licensing classification for a selected month. |
 | INDEXING *(deprecated: Use LATEST_GLOBAL_OBJECTS instead.)* | Indexing database schema. |
 | LATEST_GLOBAL_OBJECTS | LatestGlobalObjects database view schema. |
 | LOG_TASKS | Specifies the Log Tasks Report information. |
@@ -39,18 +43,18 @@ All reporting table schemas.
 | MONITORING_SCHEDULED | Monitoring scheduled database schema. |
 | MONITORING_TASK_COUNT_TIME_SERIES | Monitoring task count over time. |
 | NF_ANOMALIES | Specifies the Unreadable Objects report information. |
-| OBJECT_AUDIT_DETAIL *(deprecated: Use OBJECT_PROTECTION_AUDIT_DETAIL instead.)* |  |
-| OBJECT_AUDIT_LIST *(deprecated: Use OBJECT_PROTECTION_AUDIT_LIST instead.)* |  |
+| OBJECT_AUDIT_DETAIL *(deprecated: Use OBJECT_PROTECTION_AUDIT_DETAIL instead.)* | Legacy object audit detail database schema. |
+| OBJECT_AUDIT_LIST *(deprecated: Use OBJECT_PROTECTION_AUDIT_LIST instead.)* | Legacy object audit list database schema. |
 | OBJECT_BACKUP_TASK_SUMMARY | Specifies the database schema for the object backup task summary. |
 | OBJECT_CAPACITY | Specifies the Object Capacity report information using fact table. |
 | OBJECT_CAPACITY_OVER_TIME_DAILY | Specifies the Object Capacity Over Time report information using daily summary fact table. |
 | OBJECT_CAPACITY_OVER_TIME_HOURLY | Specifies the Object Capacity Over Time report information using hourly fact table. |
 | OBJECT_CAPACITY_OVER_TIME_MONTHLY | Specifies the Object Capacity Over Time report information using monthly summary fact table. |
 | OBJECT_COMPLIANCE | Specifies the Object Compliance report information using fact table. |
-| OBJECT_PROTECTION_AUDIT_DETAIL | Specifies all protection audit information for the single protected workload. |
-| OBJECT_PROTECTION_AUDIT_LIST | Specifies the latest protection audit information for each protected workload. |
-| OBJECT_PROTECTION_AUDIT_LIST_EXPORT | Specifies the protection audit information for all protected workloads. |
-| PROTECTION_TASK_DETAILS *(deprecated: Use TASK_DETAILS instead.)* |  |
+| OBJECT_PROTECTION_AUDIT_DETAIL | The DataView type, which queries `object_protection_log` DB table, list all object audits about SOURCE_CLUSTER_REFRESH user action for the specific snappable in the NG report framework. Specifies all protection audit information for the single protected workload. |
+| OBJECT_PROTECTION_AUDIT_LIST | The DataView type, which queries `object_protection_log` DB table, list the latest object audits about SOURCE_CLUSTER_REFRESH user action for all snappable in the NG report framework. Specifies the latest protection audit information for each protected workload. |
+| OBJECT_PROTECTION_AUDIT_LIST_EXPORT | The file exported DataView type of OBJECT_PROTECTION_AUDIT_LIST. It queries `object_protection_log` DB table, list all object audits about SOURCE_CLUSTER_REFRESH user action in the NG report framework. Specifies the protection audit information for all protected workloads. |
+| PROTECTION_TASK_DETAILS *(deprecated: Use TASK_DETAILS instead.)* | Legacy protection task details database schema. |
 | QAUTH_OBJECTS | Specifies the database schema for QAuth objects. |
 | QAUTH_ROLES | Specifies the database schema for QAuth roles. |
 | ROLE_LIST | Specifies the roles information. |

@@ -30,6 +30,7 @@ Query compute clusters
           hasDatastoresForRecovery
           id
           ioFilterStatus
+          isReplica
           name
           numWorkloadDescendants
           objectType

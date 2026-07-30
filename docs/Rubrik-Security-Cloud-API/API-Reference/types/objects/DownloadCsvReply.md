@@ -1,6 +1,6 @@
 # DownloadCsvReply
 
-*No description available.*
+Reply indicating whether the download CSV job was queued successfully.
 
 ## Fields
 

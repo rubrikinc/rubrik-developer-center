@@ -16,6 +16,7 @@ Specific info for Azure Target Template.
 | instanceType | [InstanceTypeEnum](../enums/InstanceTypeEnum.md)! | Instance type of the Azure target. |
 | isConsolidationEnabled | Boolean! | Specifies whether Azure target has consolidation enabled or not. |
 | proxySettings | [ProxySettings](ProxySettings.md) | Proxy settings of the Azure target. |
+| sourceWorkloadCloud | [SourceWorkloadCloud](../enums/SourceWorkloadCloud.md) | Specifies the source workload cloud of this template. This field is optional. |
 | storageAccountName | String! | Storage account name of the Azure target. |
 | targetType | [TargetType](../enums/TargetType.md)! | The type of this Target. |
 | templateLocationId | [UUID](../scalars/UUID.md)! | The internal ID of the template archival location. |

@@ -25,6 +25,7 @@ Paginated list of PolarisSnapshotGroupByNew objects. Each page of the results in
 - [AzureDevOpsRepository.snapshotGroupByNewConnection](AzureDevOpsRepository.md)
 - [AzureNativeManagedDisk.snapshotGroupByNewConnection](AzureNativeManagedDisk.md)
 - [AzureNativeVirtualMachine.snapshotGroupByNewConnection](AzureNativeVirtualMachine.md)
+- [AzurePostgresFlexibleServer.snapshotGroupByNewConnection](AzurePostgresFlexibleServer.md)
 - [AzureSqlDatabaseDb.snapshotGroupByNewConnection](AzureSqlDatabaseDb.md)
 - [AzureSqlManagedInstanceDatabase.snapshotGroupByNewConnection](AzureSqlManagedInstanceDatabase.md)
 - [AzureStorageAccount.snapshotGroupByNewConnection](AzureStorageAccount.md)
@@ -44,5 +45,4 @@ Paginated list of PolarisSnapshotGroupByNew objects. Each page of the results in
 - MicrosoftMailbox.snapshotGroupByNewConnection
 - MicrosoftOnedrive.snapshotGroupByNewConnection
 - MicrosoftOrg.snapshotGroupByNewConnection
-- MicrosoftSite.snapshotGroupByNewConnection
-- *…and 11 more*
+- *…and 13 more*

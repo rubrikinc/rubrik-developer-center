@@ -28,6 +28,10 @@ Duration.
 - [InformixSlaConfig.logFrequency](InformixSlaConfig.md)
 - [InformixSlaConfig.logRetention](InformixSlaConfig.md)
 - [ManagedVolumeSlaConfig.logRetention](ManagedVolumeSlaConfig.md)
+- [MariadbSlaConfig.differentialFrequency](MariadbSlaConfig.md)
+- [MariadbSlaConfig.differentialRetention](MariadbSlaConfig.md)
+- [MariadbSlaConfig.logFrequency](MariadbSlaConfig.md)
+- [MariadbSlaConfig.logRetention](MariadbSlaConfig.md)
 - [MongoConfig.logFrequency](MongoConfig.md)
 - [MongoConfig.logRetention](MongoConfig.md)
 - [MssqlConfig.frequency](MssqlConfig.md)
@@ -39,8 +43,4 @@ Duration.
 - [OracleConfig.logRetention](OracleConfig.md)
 - [OracleDataGuardGroup.effectiveHostLogRetention](OracleDataGuardGroup.md)
 - [OracleDataGuardGroup.effectiveLogBackupFrequency](OracleDataGuardGroup.md)
-- [OracleDataGuardGroup.effectiveLogRetention](OracleDataGuardGroup.md)
-- [OracleDatabase.effectiveHostLogRetention](OracleDatabase.md)
-- [OracleDatabase.effectiveLogBackupFrequency](OracleDatabase.md)
-- [OracleDatabase.effectiveLogRetention](OracleDatabase.md)
-- *…and 17 more*
+- *…and 21 more*

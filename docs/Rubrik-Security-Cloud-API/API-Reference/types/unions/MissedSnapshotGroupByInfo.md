@@ -1,6 +1,6 @@
 # MissedSnapshotGroupByInfo
 
-*No description available.*
+The data groupby info.
 
 ## Possible Types
 

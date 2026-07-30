@@ -8,5 +8,6 @@ AzureAppPermission represents the enumeration of various Azure app permissions f
 |-------|-------------|
 | AZURE_APP_PERMISSION_UNSPECIFIED | Unspecified permission. |
 | AZURE_GRAPH_GROUP_RW | Represents the permission needed for managing Entra ID group to use EntraID authentication in Exocompute. |
+| AZURE_OSS_RDBMS_IMPERSONATION | Represents the delegated user_impersonation permission needed for authenticating and connecting to an Azure Database for PostgreSQL / MySQL Flexible Server (OSS RDBMS) using Entra (AAD) "Sign in with Azure" during recovery. |
 | AZURE_SQL_IMPERSONATION | Represents the impersonation permission needed for authenticating and connecting to an Azure SQL Database or an Azure SQL Managed Instance. |
 | AZURE_STORAGE_IMPERSONATION | Represents the impersonation permission needed for authenticating and connecting to an Azure Storage. |

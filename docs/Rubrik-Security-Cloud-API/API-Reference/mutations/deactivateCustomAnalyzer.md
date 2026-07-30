@@ -6,7 +6,7 @@ Deactivate a custom analyzer.
 
 | Argument | Type | Description |
 |----------|------|-------------|
-| analyzerId *(required)* | String! |  |
+| analyzerId *(required)* | String! | Identifier of the custom analyzer to deactivate. |
 | disableAnalyzer | Boolean | If true, disable the underlying requested analyzer. |
 
 ## Returns

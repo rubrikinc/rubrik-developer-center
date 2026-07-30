@@ -31,6 +31,7 @@ Summary of all Active Directory domains.
           domainSid
           id
           isArchived
+          isReplica
           name
           numWorkloadDescendants
           objectType

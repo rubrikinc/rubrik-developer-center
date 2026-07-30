@@ -25,6 +25,7 @@ Details of a db2 instance for a given fid.
         containsHadrDatabase
         id
         instanceType
+        isReplica
         lastRefreshTime
         lastSyncTime
         name

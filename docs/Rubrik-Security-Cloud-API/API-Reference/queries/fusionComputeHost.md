@@ -28,6 +28,7 @@ Summary of a FusionCompute host.
         hostName
         id
         ipAddresses
+        isReplica
         name
         numWorkloadDescendants
         objectType

@@ -31,6 +31,7 @@ Summary of all FusionCompute networks.
           fcNetworkId
           hostIds
           id
+          isReplica
           name
           networkName
           networkType

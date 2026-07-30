@@ -35,6 +35,8 @@ Paginated list of CdmSnapshotGroupBySummary objects. Each page of the results in
 - [OracleDataGuardGroup.snapshotGroupBySummary](OracleDataGuardGroup.md)
 - [OracleDatabase.snapshotGroupBySummary](OracleDatabase.md)
 - [PostgreSQLDbCluster.snapshotGroupBySummary](PostgreSQLDbCluster.md)
+- [PureStorageProtectionGroupV1.snapshotGroupBySummary](PureStorageProtectionGroupV1.md)
+- [PureStorageVolumeV1.snapshotGroupBySummary](PureStorageVolumeV1.md)
 - [SapHanaDatabase.snapshotGroupBySummary](SapHanaDatabase.md)
 - [SapHanaSystem.snapshotGroupBySummary](SapHanaSystem.md)
 - [ShareFileset.snapshotGroupBySummary](ShareFileset.md)

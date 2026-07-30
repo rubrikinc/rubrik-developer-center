@@ -1,6 +1,6 @@
 # TagInput
 
-Input for tag.
+Key-value pair of string.
 
 ## Fields
 

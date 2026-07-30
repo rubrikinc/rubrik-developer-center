@@ -6,8 +6,8 @@ Download file results in CSV format.
 
 | Argument | Type | Description |
 |----------|------|-------------|
-| crawlId *(required)* | String! |  |
-| downloadFilter | [DownloadResultsCsvFiltersInput](../types/inputs/DownloadResultsCsvFiltersInput.md) |  |
+| crawlId *(required)* | String! | Identifier of the crawl whose file results are downloaded. |
+| downloadFilter | [DownloadResultsCsvFiltersInput](../types/inputs/DownloadResultsCsvFiltersInput.md) | Filters applied to the file results included in the CSV. |
 
 ## Returns
 

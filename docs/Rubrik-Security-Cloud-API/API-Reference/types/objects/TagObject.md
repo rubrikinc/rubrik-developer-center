@@ -6,8 +6,8 @@ Key-value pair of string.
 
 | Field | Type | Description |
 |-------|------|-------------|
-| key | String! | Key of the tag or label. |
-| value | String! | Value of the tag or label. |
+| key | String! | Key for the tag. |
+| value | String! | Value for the tag. |
 
 ## Used By
 

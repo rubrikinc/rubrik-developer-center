@@ -33,7 +33,7 @@ Rubrik Cloud Vault (RCV) Account entitlement details.
             "capacity": 0.0,
             "createdAt": "2024-01-01T00:00:00.000Z",
             "isReplaced": true,
-            "redundancy": "AZURE_GRS",
+            "redundancy": "MULTI_REGION",
             "revenueType": "ET_POC"
           },
           "backupEntitlement": {
@@ -41,7 +41,7 @@ Rubrik Cloud Vault (RCV) Account entitlement details.
             "capacity": 0.0,
             "createdAt": "2024-01-01T00:00:00.000Z",
             "isReplaced": true,
-            "redundancy": "AZURE_GRS",
+            "redundancy": "MULTI_REGION",
             "revenueType": "ET_POC"
           }
         }

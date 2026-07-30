@@ -37,6 +37,7 @@ Returns security information (anomaly, malware, quarantine) for snapshots of the
           isAnomaly
           isQuarantined
           snapshotId
+          suspiciousFileCount
           workloadId
         }
         pageInfo {

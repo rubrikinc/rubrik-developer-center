@@ -8,9 +8,9 @@ A minimal snapshot representation for expired/deleted snapshots.
 
 | Field | Type | Description |
 |-------|------|-------------|
-| date | [DateTime](../scalars/DateTime.md)! | The date when the snapshot was taken. |
-| expirationDate | [DateTime](../scalars/DateTime.md) | The expirationDate of the snapshot. |
-| id | [UUID](../scalars/UUID.md)! | The ID of the expired snapshot. |
+| date | [DateTime](../scalars/DateTime.md)! | The date of the snapshot. |
+| expirationDate | [DateTime](../scalars/DateTime.md) | The expiration date of the snapshot. |
+| id | [UUID](../scalars/UUID.md)! | The ID of the snapshot. |
 | indexingAttempts | [Long](../scalars/Long.md)! | The number of indexing attempts for the snapshot. |
 | isAnomaly | Boolean! | Flag if the snapshot is an anomaly. |
 | isCorrupted | Boolean! | Specifies whether or not the snapshot is corrupted. |

@@ -22,6 +22,7 @@
         authorizedOperations
         cdmPendingObjectPauseAssignment
         id
+        isReplica
         moid
         name
         numWorkloadDescendants
@@ -52,9 +53,9 @@
           ],
           "cdmPendingObjectPauseAssignment": "NO_PENDING_PAUSE_ASSIGNMENT",
           "id": "00000000-0000-0000-0000-000000000000",
+          "isReplica": true,
           "moid": "example-string",
           "name": "example-string",
-          "numWorkloadDescendants": 0,
           "allOrgs": [
             {
               "allUrls": [

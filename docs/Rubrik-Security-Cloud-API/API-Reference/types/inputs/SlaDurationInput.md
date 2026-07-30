@@ -1,10 +1,10 @@
 # SlaDurationInput
 
-Input to SLA Domain duration.
+Duration.
 
 ## Fields
 
 | Field | Type | Description |
 |-------|------|-------------|
-| duration | Int | Duration of SLA Domain. |
+| duration | Int | Duration. |
 | unit | [RetentionUnit](../enums/RetentionUnit.md) | Unit of duration. |

@@ -25,6 +25,7 @@ Nutanix cluster details.
 | effectiveSlaSourceObject | [PathNode](PathNode.md) | Path node of the effective SLA Domain source. |
 | hostName | String! | IP address of Nutanix cluster. |
 | id | [UUID](../scalars/UUID.md)! | Object ID. |
+| isReplica | Boolean | True if this object is a replica, its current cluster differs from its source (primary) cluster. False if the object resides on its source cluster. Null when the source cluster is unknown. |
 | lastRefreshTime | [DateTime](../scalars/DateTime.md) | Last refresh timestamp of Nutanix cluster. |
 | latestUserNote | [LatestUserNote](LatestUserNote.md) | Latest user note information. |
 | logicalChildConnection | [NutanixClusterLogicalChildTypeConnection](NutanixClusterLogicalChildTypeConnection.md)! | List of logical children. |
@@ -34,6 +35,7 @@ Nutanix cluster details.
 | nosVersion | String | Nutanix cluster version. |
 | numWorkloadDescendants | Int! | Number of descendant workloads of this object. |
 | nutanixSnapshotConsistencyMandate | [CdmNutanixSnapshotConsistencyMandate](../enums/CdmNutanixSnapshotConsistencyMandate.md)! | Nutanix cluster snapshot consistency level. |
+| objectBackupWindow | [ObjectBackupWindowStatus](ObjectBackupWindowStatus.md) | Object-level backup window status of the hierarchy object. |
 | objectPauseStatus | [ObjectPauseStatus](ObjectPauseStatus.md) | Pause status of the hierarchy object. |
 | objectType | [HierarchyObjectTypeEnum](../enums/HierarchyObjectTypeEnum.md)! | Type of this object. |
 | pendingObjectDeletionStatus | [PendingSnapshotsOfObjectDeletion](PendingSnapshotsOfObjectDeletion.md) | Mapping from object ID to pending object deletion status. |

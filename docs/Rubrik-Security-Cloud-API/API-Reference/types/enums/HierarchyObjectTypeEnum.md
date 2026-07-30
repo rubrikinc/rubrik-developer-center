@@ -9,12 +9,14 @@ Hierarchy object type enum covering all CDM and RSC hierarchy objects.
 | ACTIVE_DIRECTORY_DOMAIN | Active Directory domain. |
 | ACTIVE_DIRECTORY_DOMAIN_CONTROLLER | Active Directory domain controller. |
 | ATLASSIAN_SITE | Atlassian site. |
+| AUTH0_TENANT | Auth0 tenant. |
 | AWS_NATIVE_CONFIG | AWS Native Config. |
 | AWS_NATIVE_DYNAMODB_TABLE | AWS native DynamoDB table. |
 | AWS_NATIVE_S3_BUCKET | AWS native S3 bucket. |
 | AZURE_AD_DIRECTORY | Azure AD Directory. |
 | AZURE_DEVOPS_ORGANIZATION | Azure DevOps Organization. |
 | AZURE_DEVOPS_PROJECT | Azure DevOps Project. |
+| AZURE_DEVOPS_PROJECT_FIXED_OBJECT | Azure DevOps project-scoped fixed object to represent non repo entity. |
 | AZURE_DEVOPS_REPOSITORY | Azure DevOps Repository. |
 | AZURE_POSTGRES_FLEXIBLE_SERVER | Azure Postgres Flexible Server. |
 | AZURE_SQL_DATABASE_DB | AZURE SQL DATABASE DB. |
@@ -110,6 +112,8 @@ Hierarchy object type enum covering all CDM and RSC hierarchy objects.
 | M365_BACKUP_STORAGE_SITE | M365 Backup Storage Sharepoint Site. |
 | M365_BACKUP_STORAGE_USER | M365 Backup Storage User. |
 | MANAGED_VOLUME_EXPORT | Managed Volume Export. |
+| MARIADB_DATABASE | MariaDB Database. |
+| MARIADB_INSTANCE | MariaDB Instance. |
 | MONGODB_COLLECTION | MongoDB Collection. |
 | MONGODB_DATABASE | MongoDB Database. |
 | MONGODB_SOURCE | MongoDB Source Cluster. |
@@ -153,6 +157,7 @@ Hierarchy object type enum covering all CDM and RSC hierarchy objects.
 | OLVM_DATACENTER | OLVM Datacenter. |
 | OLVM_HOST | OLVM Host. |
 | OLVM_MANAGER | OLVM Manager. |
+| OLVM_TAG | OLVM Tag. |
 | OLVM_VIRTUAL_MACHINE | OLVM Virtual Machine. |
 | OPENSTACK_AVAILABILITY_ZONE | OpenStack Availability Zone. |
 | OPENSTACK_DOMAIN | OpenStack Domain. |
@@ -171,6 +176,17 @@ Hierarchy object type enum covering all CDM and RSC hierarchy objects.
 | PING_FEDERATE_CLUSTER | Ping Federate cluster. |
 | POSTGRES_DATABASE | PostgreSQL Database. |
 | POSTGRES_DB_CLUSTER | Postgres Database Cluster. |
+| POWER_PLATFORM_AI_FLOW | Power Platform AI Flow. |
+| POWER_PLATFORM_BUSINESS_PROCESS_FLOW | Power Platform Business Process Flow. |
+| POWER_PLATFORM_BUSINESS_RULE | Power Platform Business Rule. |
+| POWER_PLATFORM_CANVAS_APP | Power Platform Canvas App. |
+| POWER_PLATFORM_CLASSIC_WORKFLOW | Power Platform Classic Workflow. |
+| POWER_PLATFORM_CLOUD_FLOW | Power Platform Cloud Flow. |
+| POWER_PLATFORM_CUSTOM_ACTION | Power Platform Custom Action. |
+| POWER_PLATFORM_DESKTOP_FLOW | Power Platform Desktop Flow. |
+| POWER_PLATFORM_DIALOG | Power Platform Dialog. |
+| POWER_PLATFORM_ENVIRONMENT | Power Platform environment. |
+| POWER_PLATFORM_MODEL_DRIVEN_APP | Power Platform Model-Driven App. |
 | PROXMOX_CLUSTER | Proxmox Cluster. |
 | PROXMOX_ENVIRONMENT | Proxmox Environment. |
 | PROXMOX_NODE | Proxmox Node. |
@@ -179,8 +195,12 @@ Hierarchy object type enum covering all CDM and RSC hierarchy objects.
 | PURE_STORAGE_PROTECTION_GROUP | Pure Storage protection group. |
 | PURE_STORAGE_VOLUME | Pure Storage volume. |
 | PhysicalHost | Physical Host. |
+| RSC_TAG | RSC system tag. |
 | RubrikEbsVolume | Rubrik Ebs Volume. |
 | RubrikEc2Instance | Rubrik Ec2instance. |
+| S3_TABLES_ICEBERG_CATALOG | S3 Tables Iceberg catalog. |
+| S3_TABLES_ICEBERG_NAMESPACE | S3 Tables Iceberg namespace. |
+| S3_TABLES_ICEBERG_TABLE | S3 Tables Iceberg table. |
 | SALESFORCE_FIXED_OBJECT | Salesforce metadata. |
 | SALESFORCE_OBJECT | Salesforce object. |
 | SALESFORCE_ORGANIZATION | Salesforce organization. |

@@ -6,10 +6,10 @@ Represents the Teams Channels to/from be restored.
 
 | Field | Type | Description |
 |-------|------|-------------|
-| ChannelFolderId | String |  |
-| ChannelFolderName | String |  |
-| ChannelID | [UUID](../scalars/UUID.md) |  |
-| ChannelName | String |  |
-| ChannelNaturalId | String |  |
-| TeamID | [UUID](../scalars/UUID.md)! |  |
+| ChannelFolderId | String | Folder ID of the channel. |
+| ChannelFolderName | String | Folder name of the channel. |
+| ChannelID | [UUID](../scalars/UUID.md) | UUID of the channel. |
+| ChannelName | String | Name of the channel. |
+| ChannelNaturalId | String | Natural ID of the channel. |
+| TeamID | [UUID](../scalars/UUID.md)! | UUID of the team. |
 | channelMembershipType | [ChannelMembershipType](../enums/ChannelMembershipType.md) | Represents membership type of the channel (STANDARD, PRIVATE or SHARED). |

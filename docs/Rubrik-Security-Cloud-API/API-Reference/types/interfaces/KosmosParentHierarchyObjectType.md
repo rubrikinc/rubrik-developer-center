@@ -10,6 +10,7 @@ A Kosmos parent object in the hierarchy.
 | physicalChildConnection | [KosmosParentHierarchyObjectPhysicalChildTypeConnection](../objects/KosmosParentHierarchyObjectPhysicalChildTypeConnection.md)! | List of physical children. |
 | cluster | [Cluster](../objects/Cluster.md)! | Rubrik cluster where this object originated. |
 | primaryClusterLocation | [DataLocation](../objects/DataLocation.md)! | The source cluster of this object. Returned as a data location because there is no guarantee that Rubrik has knowledge about the source cluster. |
+| isReplica | Boolean | True if this object is a replica, its current cluster differs from its source (primary) cluster. False if the object resides on its source cluster. Null when the source cluster is unknown. |
 | pendingSla | [SlaDomain](SlaDomain.md) | SLA Domain assignment of the object during the process of being communicated over to Rubrik CDM. |
 | pendingObjectDeletionStatus | [PendingSnapshotsOfObjectDeletion](../objects/PendingSnapshotsOfObjectDeletion.md) | Mapping from object ID to pending object deletion status. |
 | replicatedObjects | [[CdmHierarchyObject](CdmHierarchyObject.md)!]! | Objects either replicated by this object or related to this object by replication. |
@@ -35,6 +36,7 @@ A Kosmos parent object in the hierarchy.
 | allTags | [[AssignedRscTag](../objects/AssignedRscTag.md)!]! | RSC tags to which this hierarchy object is assigned. |
 | securityMetadata | [SecurityMetadata](../objects/SecurityMetadata.md) | Security posture metadata. |
 | objectPauseStatus | [ObjectPauseStatus](../objects/ObjectPauseStatus.md) | Pause status of the hierarchy object. |
+| objectBackupWindow | [ObjectBackupWindowStatus](../objects/ObjectBackupWindowStatus.md) | Object-level backup window status of the hierarchy object. |
 | entityInfo | [EntityInfo](../objects/EntityInfo.md)! | The basic entity information. |
 
 ## Field Arguments

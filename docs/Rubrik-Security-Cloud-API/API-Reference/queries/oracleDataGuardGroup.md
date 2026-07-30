@@ -30,7 +30,10 @@ An Oracle Data Guard Group.
         hostLogRetentionHours
         id
         isRelic
+        isReplica
+        isZeroRpoEnabled
         logBackupFrequency
+        logRatePerRmanChannelInMb
         logRetentionHours
         name
         numChannels
@@ -41,6 +44,7 @@ An Oracle Data Guard Group.
         objectType
         onDemandSnapshotCount
         preferredDataGuardMemberUniqueNames
+        ratePerRmanChannelInMb
         replicatedObjectCount
         sectionSizeInGigabytes
         shouldBackupFromPrimaryOnly

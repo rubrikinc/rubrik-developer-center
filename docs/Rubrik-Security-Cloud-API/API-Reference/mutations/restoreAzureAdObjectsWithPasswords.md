@@ -33,8 +33,7 @@ Restores the Azure AD directory with multiple passwords.
         "forceChangePasswordWithMfa": true,
         "objectTypeToIdMap": [
           {
-            "azureAdObjectType": "ACCESS_REVIEW_SCHEDULE_DEFINITION",
-            "objectId": "00000000-0000-0000-0000-000000000000"
+            "azureAdObjectType": "ACCESS_REVIEW_SCHEDULE_DEFINITION"
           }
         ],
         "passwordByUserIdMap": [

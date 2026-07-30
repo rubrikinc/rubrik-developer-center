@@ -6,7 +6,7 @@ Response for mapping exocompute account.
 
 | Field | Type | Description |
 |-------|------|-------------|
-| isSuccess | Boolean! | Whether the mapping was successful. |
+| isSuccess | Boolean! | Whether all requested accounts succeeded; per-account detail in results. |
 
 ## Used By
 

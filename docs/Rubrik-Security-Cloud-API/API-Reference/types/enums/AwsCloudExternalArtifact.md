@@ -17,6 +17,7 @@ instead.)* | Keyword to capture EKS worker node instance profile. |
 | EXOCOMPUTE_EKS_WORKERNODE_INSTANCE_PROFILE | Keyword to capture EKS worker node instance profile. |
 | EXOCOMPUTE_EKS_WORKERNODE_ROLE_ARN | Keyword to capture EKS worker node role. |
 | EXOCOMPUTE_FLUENTD_ROLE_ARN | Keyword to capture Exocompute Fluentd role. |
+| GATEWAY_KMS_KEY_ARN | Keyword to capture the customer-provided gateway KMS key ARN. |
 | IAM_USER_ARN | Keyword to capture AWS account IAM user ARN. |
 | ROLE_CHAINING_ROLE_ARN | Keyword to capture role chaining role ARN. |
 | SECRET_KEY | Keyword to capture AWS account secret key. |

@@ -6,8 +6,8 @@ Add policies to objects.
 
 | Argument | Type | Description |
 |----------|------|-------------|
-| policyIds *(required)* | [String!]! |  |
-| objectIds *(required)* | [String!]! |  |
+| policyIds *(required)* | [String!]! | Identifiers of the classification policies to add objects to. |
+| objectIds *(required)* | [String!]! | Identifiers of the hierarchy objects to add to the policies. |
 | objectRootIds *(required)* | [String!]! | List of supported root IDs. |
 | clusterIds *(required)* | [String!]! | List of Rubrik cluster IDs. |
 

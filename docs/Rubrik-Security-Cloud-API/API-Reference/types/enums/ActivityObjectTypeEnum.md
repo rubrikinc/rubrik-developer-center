@@ -11,6 +11,7 @@ Represents different types of activity objects.
 | ACTIVE_DIRECTORY_FOREST | Active Directory forest. |
 | AGENT_CLOUD_POLICY | Agent Cloud policy object. |
 | ATLASSIAN_SITE | Atlassian site. |
+| AUTH0_TENANT | Auth0 tenant. |
 | AWS_NATIVE_CONFIG | AWS configuration. |
 | AWS_NATIVE_DYNAMODB_TABLE | AWS native dynamoDB table. |
 | AWS_NATIVE_REGION | AWS native region. |
@@ -18,6 +19,7 @@ Represents different types of activity objects.
 | AZURE_AD_DIRECTORY | Azure AD Directory object. |
 | AZURE_DEVOPS_ORGANIZATION | Azure DevOps Organisation. |
 | AZURE_DEVOPS_PROJECT | Azure DevOps Project. |
+| AZURE_DEVOPS_PROJECT_FIXED_OBJECT | Azure DevOps Developer Collaboration (work items, boards, wikis) per project. |
 | AZURE_DEVOPS_REPOSITORY | Azure DevOps Repository. |
 | AZURE_NATIVE_REGION | Azure native region. |
 | AZURE_NATIVE_RESOURCE_GROUP | Azure Native Resource Group. |
@@ -108,6 +110,7 @@ Represents different types of activity objects.
 | IDP_SHAREPOINT | SharePoint IDP type. |
 | INFORMIX_INSTANCE | Informix instance. |
 | INTEL_FEED | Orion threat feed. |
+| IRISDB_INSTANCE | IrisDB instance object. |
 | JIRA_PROJECT | Atlassian Jira project. |
 | JIRA_SETTINGS | Atlassian Jira settings. |
 | JobInstance | Job instance. |
@@ -127,6 +130,7 @@ Represents different types of activity objects.
 | M365_BACKUP_STORAGE_ONEDRIVE | Microsoft 365 Backup Storage OneDrive. |
 | M365_BACKUP_STORAGE_ORG | Microsoft 365 Backup Storage Subscription. |
 | M365_BACKUP_STORAGE_SITE | Microsoft 365 Backup Storage SharePoint Site. |
+| MARIADB_INSTANCE | MariaDB instance. |
 | MICROSOFT_DEFENDER_INTEGRATION | Microsoft Defender for Identity integration object. |
 | MONGODB_COLLECTION | MongoDB collection. |
 | MONGODB_DATABASE | MongoDB database. |
@@ -172,6 +176,17 @@ Represents different types of activity objects.
 | OracleRac | Oracle RAC object. |
 | PING_FEDERATE_CLUSTER | Ping Federate Cluster. |
 | POSTGRES_DB_CLUSTER | Postgres Database Cluster. |
+| POWER_PLATFORM_AI_FLOW | Power Platform AI flow. |
+| POWER_PLATFORM_BUSINESS_PROCESS_FLOW | Power Platform business process flow. |
+| POWER_PLATFORM_BUSINESS_RULE | Power Platform business rule. |
+| POWER_PLATFORM_CANVAS_APP | Power Platform canvas app. |
+| POWER_PLATFORM_CLASSIC_WORKFLOW | Power Platform classic workflow. |
+| POWER_PLATFORM_CLOUD_FLOW | Power Platform cloud flow. |
+| POWER_PLATFORM_CUSTOM_ACTION | Power Platform custom action. |
+| POWER_PLATFORM_DESKTOP_FLOW | Power Platform desktop flow. |
+| POWER_PLATFORM_DIALOG | Power Platform dialog. |
+| POWER_PLATFORM_MODEL_DRIVEN_APP | Power Platform model-driven app. |
+| POWER_PLATFORM_ORGANIZATION | Power Platform organization. |
 | PRINCIPAL_ACCESS_POLICY | Access Policy principal type. |
 | PRINCIPAL_APP_ROLE | App Role principal type. |
 | PRINCIPAL_ASSUMABLE_IDENTITY | Assumable identity principal type. |
@@ -243,6 +258,9 @@ Represents different types of activity objects.
 | RSC_CHILD_ACCOUNT | RSC Child Account (Dedicated Tenant). |
 | RubrikEbsVolume | Rubrik SAAS EBS volume. |
 | RubrikEc2Instance | Rubrik SAAS EC2 instance. |
+| S3_TABLES_ICEBERG_CATALOG | AWS S3 Tables Iceberg Catalog. |
+| S3_TABLES_ICEBERG_NAMESPACE | AWS S3 Tables Iceberg Namespace. |
+| S3_TABLES_ICEBERG_TABLE | AWS S3 Tables Iceberg Table. |
 | SALESFORCE_METADATA | Salesforce metadata. |
 | SALESFORCE_OBJECT | Salesforce objects. |
 | SALESFORCE_ORGANIZATION | Salesforce organization. |

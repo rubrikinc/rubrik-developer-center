@@ -9,7 +9,8 @@ Supported in v5.0+
 | excludePaths | [String!] | Supported in v8.1+ Optional field which excludes the paths specified during recovery. |
 | ignoreErrors | Boolean | Supported in v5.0+ Optional field to determine if we should ignore single error during restore. Default value is false. |
 | postRestoreScript | String | Supported in v9.4+ Optional script to run after restore of this fileset ends. |
-| recoveryPurpose | [FilesetRestoreFilesJobConfigRecoveryPurpose](../enums/FilesetRestoreFilesJobConfigRecoveryPurpose.md) | Supported in v9.6 Optional field indicating the purpose of the recovery operation. Set to SURGICAL_RECOVERY for surgical recovery where quarantined files are automatically excluded. |
+| previousJobInstanceId | String | Supported in v9.6+ Composite ID of a previously failed or canceled restore job to resume. This is the id field from the original restore response. When specified, the new restore job reads checkpoints and failed-inodes artifacts from the previous job instance instead of starting from scratch. |
+| recoveryPurpose | [FilesetRestoreFilesJobConfigRecoveryPurpose](../enums/FilesetRestoreFilesJobConfigRecoveryPurpose.md) | Supported in v9.6+ Optional field indicating the purpose of the recovery operation. Set to SURGICAL_RECOVERY for surgical recovery where quarantined files are automatically excluded. |
 | restoreConfig | [[FilesetRestorePathPairInput](FilesetRestorePathPairInput.md)!]! | Required. Supported in v5.0+ v5.0-v5.3: Absolute file path and restore path if not restored back to itself v6.0+: Absolute file path.. and restore path if not restored back to itself. |
 | shouldRecreateDirectoryStructure | Boolean | Supported in v8.1+ Optional field that specifies whether to recreate directory structure when using the 'Restore to separate folder' option in the UI. |
 | shouldRestoreOnlyAcls | Boolean | Optional field to determine if only ACLs should be restored during the restore process. The default value is false. |

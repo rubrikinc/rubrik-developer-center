@@ -28,6 +28,7 @@ Kubernetes namespace.
 | numPvcs | Int! | Number of persistent volume claims. |
 | numWorkloadDescendants | Int! | Number of descendant workloads of this object. |
 | numWorkloads | Int! | Number of workloads. |
+| objectBackupWindow | [ObjectBackupWindowStatus](ObjectBackupWindowStatus.md) | Object-level backup window status of the hierarchy object. |
 | objectPauseStatus | [ObjectPauseStatus](ObjectPauseStatus.md) | Pause status of the hierarchy object. |
 | objectType | [HierarchyObjectTypeEnum](../enums/HierarchyObjectTypeEnum.md)! | Type of this object. |
 | oldestSnapshot | [PolarisSnapshot](PolarisSnapshot.md) | The oldest snapshot of this workload. |

@@ -35,6 +35,8 @@ Paginated list of CdmSnapshotGroupBy objects. Each page of the results includes 
 - [OracleDataGuardGroup.snapshotGroupByConnection](OracleDataGuardGroup.md)
 - [OracleDatabase.snapshotGroupByConnection](OracleDatabase.md)
 - [PostgreSQLDbCluster.snapshotGroupByConnection](PostgreSQLDbCluster.md)
+- [PureStorageProtectionGroupV1.snapshotGroupByConnection](PureStorageProtectionGroupV1.md)
+- [PureStorageVolumeV1.snapshotGroupByConnection](PureStorageVolumeV1.md)
 - [SapHanaDatabase.snapshotGroupByConnection](SapHanaDatabase.md)
 - [SapHanaSystem.snapshotGroupByConnection](SapHanaSystem.md)
 - [ShareFileset.snapshotGroupByConnection](ShareFileset.md)

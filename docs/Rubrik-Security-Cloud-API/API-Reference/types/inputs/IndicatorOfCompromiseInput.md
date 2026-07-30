@@ -1,6 +1,6 @@
 # IndicatorOfCompromiseInput
 
-The data which represents indicator of compromise: a file path/pattern, hash, or YARA rule.
+Indicator of Compromise.
 
 ## Fields
 

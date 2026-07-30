@@ -22,20 +22,24 @@ The different TPR rules.
 | EDIT_BACKUP_OBJECT | Quorum authorization is required for editing any backup object related configuration. |
 | EDIT_REPLICATION_PAIR | Quorum authorization is required for editing a replication pair. |
 | EDIT_SLA | The TPR rule is for editing an SLA. |
+| EDIT_TPR_BREAK_GLASS_CONFIG | Quorum authorization is required to edit the break-glass access configuration. |
 | EDIT_TPR_CONFIG | The TPR rule for editing any QAuth configuration. |
 | EDIT_TPR_POLICY | The TPR rule is for editing a TPR policy. |
 | EDIT_TPR_ROLE | The TPR rule is for updating a TPR role that has been assigned to a user. |
 | ENABLE_DISABLE_RCV | The TPR rule is for enabling and disabling RCV locations. |
 | EXCLUDE_DISK | The TPR rule is for excluding disks from snapshots. |
 | LEGAL_HOLD | The TPR rule is for legal holds. |
+| MANAGE_CUSTOM_CERTIFICATES | Quorum authorization is required for managing custom (trust store) certificates: add, update, delete. |
 | MANAGE_SECURITY_SETTINGS | The TPR rule for managing platform security settings. |
 | MODIFY_AIR_GAPPED_STATUS | The TPR rule for updating air gapped status of cluster. |
 | MODIFY_PAM_INTEGRATION | The TPR rule for modifying PAM configuration. |
+| OBJECT_BACKUP_WINDOW_CHANGE | Quorum authorization is required for changing the object-level backup window override (enabling, turning off, or editing the per-object backup window). |
 | OBJECT_PROTECTION_PAUSE | TPR rule to apply Object level Protection Pause. |
 | PAUSE_CLUSTER | The TPR rule is for pausing cluster. |
 | PAUSE_REPLICATION | Quorum authorization is required to pause replication. |
 | PAUSE_RESUME_RCV | The TPR rule is for pausing and resuming RCV locations. |
 | PAUSE_SLA | The TPR rule is for pausing an SLA. |
+| RCV_BACKUP_TO_ARCHIVE_CONVERSION | The TPR rule for converting an Azure Rubrik Cloud Vault (RCV) location's backup tier to the archive tier. |
 | REMOVE_CLUSTER | The TPR rule for removing a cluster. |
 | REMOVE_CLUSTER_NODE | The TPR rule is for removing cluster nodes. |
 | REPLACE_CLUSTER_NODE | The TPR rule is for replacing a cluster node. |

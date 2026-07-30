@@ -27,10 +27,13 @@ Paginated list of help content snippets.
         first: 10
       ) {
         nodes {
+          category
           description
           id
+          lastUpdated
           link
           source
+          sourceLabel
           title
         }
         pageInfo {
@@ -62,11 +65,12 @@ Paginated list of help content snippets.
           "nodes": [
             [
               {
+                "category": "example-string",
                 "description": "example-string",
                 "id": "example-string",
+                "lastUpdated": "2024-01-01T00:00:00.000Z",
                 "link": "https://example.com",
-                "source": "KB_ARTICLES",
-                "title": "example-string"
+                "source": "ANNOUNCEMENTS"
               }
             ]
           ],

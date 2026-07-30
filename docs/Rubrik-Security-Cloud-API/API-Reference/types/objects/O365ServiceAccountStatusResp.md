@@ -1,6 +1,6 @@
 # O365ServiceAccountStatusResp
 
-*No description available.*
+Status of the O365 service account for an org.
 
 ## Fields
 

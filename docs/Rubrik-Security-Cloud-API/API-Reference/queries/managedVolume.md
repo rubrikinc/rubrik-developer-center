@@ -27,6 +27,7 @@ Details of a Managed Volume Object.
         clientNamePatterns
         id
         isRelic
+        isReplica
         lastResetReason
         managedVolumeType
         mountState

@@ -27,6 +27,7 @@ Paginated list of Live Mounts.
           authorizedOperations
           cdmPendingObjectPauseAssignment
           id
+          isReplica
           logicalUsedSize
           name
           numChannels
@@ -64,9 +65,9 @@ Paginated list of Live Mounts.
                 ],
                 "cdmPendingObjectPauseAssignment": "NO_PENDING_PAUSE_ASSIGNMENT",
                 "id": "00000000-0000-0000-0000-000000000000",
+                "isReplica": true,
                 "logicalUsedSize": 0,
-                "name": "example-string",
-                "numChannels": 0
+                "name": "example-string"
               }
             ]
           ],

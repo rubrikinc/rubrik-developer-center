@@ -27,6 +27,7 @@ Information about a Windows fileset.
         id
         isPassThrough
         isRelic
+        isReplica
         name
         numWorkloadDescendants
         objectType

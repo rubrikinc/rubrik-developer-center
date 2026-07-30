@@ -24,6 +24,7 @@ Details of the given category.
         cdmPendingObjectPauseAssignment
         duplicateObjectsAbsoluteCount
         id
+        isReplica
         name
         numWorkloadDescendants
         objectType
@@ -56,7 +57,7 @@ Details of the given category.
           "cdmPendingObjectPauseAssignment": "NO_PENDING_PAUSE_ASSIGNMENT",
           "duplicateObjectsAbsoluteCount": 0,
           "id": "00000000-0000-0000-0000-000000000000",
-          "name": "example-string",
+          "isReplica": true,
           "allOrgs": [
             {
               "allUrls": [

@@ -47,7 +47,7 @@ List of authorizations for the objects.
             "operations": [
               "ACCESS_CDM_CLUSTER"
             ],
-            "workloadHierarchy": "AWS_NATIVE_CONFIG"
+            "workloadHierarchy": "AUTH0_TENANT"
           }
         ]
       }

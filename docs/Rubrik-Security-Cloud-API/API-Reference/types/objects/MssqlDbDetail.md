@@ -25,6 +25,7 @@ Supported in v5.0+
 | latestRecoveryPointV94 | [DateTime](../scalars/DateTime.md) |  |
 | latestRecoveryPointV95 | [DateTime](../scalars/DateTime.md) |  |
 | latestRecoveryPointV96 | [DateTime](../scalars/DateTime.md) |  |
+| latestRecoveryPointV97 | [DateTime](../scalars/DateTime.md) |  |
 | localStorage | [Long](../scalars/Long.md) | Supported in v5.0+ |
 | maxDataStreams | Int | Supported in v5.0+ |
 | mssqlDbSummary | [MssqlDbSummary](MssqlDbSummary.md) |  |
@@ -43,6 +44,7 @@ Supported in v5.0+
 | oldestRecoveryPointV94 | [DateTime](../scalars/DateTime.md) |  |
 | oldestRecoveryPointV95 | [DateTime](../scalars/DateTime.md) |  |
 | oldestRecoveryPointV96 | [DateTime](../scalars/DateTime.md) |  |
+| oldestRecoveryPointV97 | [DateTime](../scalars/DateTime.md) |  |
 | postBackupScript | [MssqlScriptDetail](MssqlScriptDetail.md) | Supported in v5.0+ |
 | preBackupScript | [MssqlScriptDetail](MssqlScriptDetail.md) | Supported in v5.0+ |
 | protectionDateV50 | String |  |
@@ -60,6 +62,7 @@ Supported in v5.0+
 | protectionDateV94 | [DateTime](../scalars/DateTime.md) |  |
 | protectionDateV95 | [DateTime](../scalars/DateTime.md) |  |
 | protectionDateV96 | [DateTime](../scalars/DateTime.md) |  |
+| protectionDateV97 | [DateTime](../scalars/DateTime.md) |  |
 | recoveryForkGuid | String | Supported in v5.0+ This field is deprecated. Use the recoveryForkGuid field on the replicas list instead. This field will continue to work for non-availability databases, but it is meaningless for availability databases. |
 | snapshotCount | Int! | Required. Supported in v5.0+ |
 

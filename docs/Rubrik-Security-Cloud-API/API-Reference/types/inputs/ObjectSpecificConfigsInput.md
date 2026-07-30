@@ -17,6 +17,7 @@ Object-specific configurations.
 | gcpCloudSqlConfigInput | [GcpCloudSqlConfigInput](GcpCloudSqlConfigInput.md) | Input to configure the SLA Domain for GCP Cloud SQL. |
 | informixConfigInput | [InformixSlaConfigInput](InformixSlaConfigInput.md) | Input to configure the SLA Domain for Informix. |
 | managedVolumeSlaConfigInput | [ManagedVolumeSlaConfigInput](ManagedVolumeSlaConfigInput.md) | Input to configure the SLA Domain for Managed Volume. |
+| mariadbConfigInput | [MariadbSlaConfigInput](MariadbSlaConfigInput.md) | Input to configure the SLA Domain for MariaDB. |
 | mongoConfigInput | [MongoConfigInput](MongoConfigInput.md) | Input to configure the SLA Domain for MongoDB database. |
 | mssqlConfigInput | [MssqlConfigInput](MssqlConfigInput.md) | Input to configure the SLA Domain for SQL Server database. |
 | mysqldbConfigInput | [MysqldbSlaConfigInput](MysqldbSlaConfigInput.md) | Input to configure the SLA Domain for MySQL. |

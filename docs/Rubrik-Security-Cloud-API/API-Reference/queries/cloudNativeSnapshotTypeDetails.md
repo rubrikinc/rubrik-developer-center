@@ -40,10 +40,9 @@ Details of the available snapshot types.
             {
               "cloudType": "ALL",
               "locationName": "example-string",
-              "rcvTier": "example-string",
+              "rcvTier": "ARCHIVE",
               "snapshotId": "example-string",
-              "snapshotType": "ARCHIVED",
-              "storageClassTier": "example-string"
+              "snapshotType": "ARCHIVED"
             }
           ]
         }

@@ -56,6 +56,7 @@ Returns a list of NAS Cloud Direct snapshots for a share.
           state
           systemId
           target
+          targetId
           type
           workloadId
         }

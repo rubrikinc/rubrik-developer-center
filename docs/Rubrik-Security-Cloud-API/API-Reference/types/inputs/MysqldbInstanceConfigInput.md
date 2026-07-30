@@ -6,6 +6,6 @@ Supported in v9.3+ MySQL database instance configuration.
 
 | Field | Type | Description |
 |-------|------|-------------|
-| advancedConfigInfo | [MysqldbAdvancedConfigInfoInput](MysqldbAdvancedConfigInfoInput.md) |  |
+| advancedConfigInfo | [MysqldbAdvancedConfigInfoInput](MysqldbAdvancedConfigInfoInput.md) | Supported in v9.6+ |
 | connectionInfo | [MysqldbConnectionInfoInput](MysqldbConnectionInfoInput.md) | Supported in v9.3+ |
 | discoveryInfo | [DiscoverableInputInput](DiscoverableInputInput.md)! | Required. Supported in v9.3+ |

@@ -36,6 +36,7 @@ Summary of all FusionCompute datastores that the user can recover to.
           hosts
           id
           isLocal
+          isReplica
           name
           numWorkloadDescendants
           objectType

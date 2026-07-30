@@ -16,6 +16,7 @@ AWS native S3 Bucket.
 | awsNativeAccount | [AwsNativeAccount](AwsNativeAccount.md)! | AWS account of the Amazon S3 bucket. |
 | awsNativeAccountDetails | [AwsNativeAccountDetails](AwsNativeAccountDetails.md) | AWS native account details. |
 | bucketSizeBytes | [Long](../scalars/Long.md)! | Total size of the bucket in bytes. |
+| cloudNativeApplications | [[CloudNativeApplicationInfo](CloudNativeApplicationInfo.md)!]! | List of cloud native applications associated with this S3 bucket. |
 | cloudNativeId | String! | AWS native ID of S3 bucket. |
 | configuredSlaDomain | [SlaDomain](../interfaces/SlaDomain.md)! | SLA Domain configured for the hierarchy object. |
 | creationTime | [DateTime](../scalars/DateTime.md) | The time when the Amazon S3 bucket was created. |
@@ -25,6 +26,7 @@ AWS native S3 Bucket.
 | effectiveSlaSourceObject | [PathNode](PathNode.md) | Path node of the effective SLA Domain source. |
 | id | [UUID](../scalars/UUID.md)! | ID of the hierarchy object. |
 | isExocomputeConfigured | Boolean! | A boolean specifying whether exocompute is configured in the region. |
+| isInfrastructureAlertsEnabled | Boolean! | Whether infrastructure deletion alerts are enabled for the S3 bucket. |
 | isOnboarding | Boolean! | Flag to specify if the S3 bucket is being onboarded for backup. |
 | isProtectable | Boolean! | Indicates whether this S3 bucket is protectable or not. |
 | isRelic | Boolean! | Whether the bucket is relic. |
@@ -36,6 +38,7 @@ AWS native S3 Bucket.
 | newestSnapshot | [PolarisSnapshot](PolarisSnapshot.md) | The most recent snapshot of this workload. |
 | numWorkloadDescendants | Int! | Number of descendant workloads of this object. |
 | numberOfObjects | [Long](../scalars/Long.md)! | Number of objects in the S3 bucket. |
+| objectBackupWindow | [ObjectBackupWindowStatus](ObjectBackupWindowStatus.md) | Object-level backup window status of the hierarchy object. |
 | objectPauseStatus | [ObjectPauseStatus](ObjectPauseStatus.md) | Pause status of the hierarchy object. |
 | objectType | [HierarchyObjectTypeEnum](../enums/HierarchyObjectTypeEnum.md)! | Type of this object. |
 | oldestSnapshot | [PolarisSnapshot](PolarisSnapshot.md) | The oldest snapshot of this workload. |

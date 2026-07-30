@@ -16,3 +16,4 @@ Recovery schedule associated with a recovery plan.
 **Referenced by**
 
 - [RecoveryPlanBasicInfo.recoverySchedule](RecoveryPlanBasicInfo.md)
+- [RecoveryPlanV2.recoverySchedule](RecoveryPlanV2.md)

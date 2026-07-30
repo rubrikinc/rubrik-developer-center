@@ -6,7 +6,7 @@ Change the password for the current user.
 
 | Argument | Type | Description |
 |----------|------|-------------|
-| input *(required)* | [ChangeCurrentUserPasswordInput](../types/inputs/ChangeCurrentUserPasswordInput.md)! | Input required to change the current user's password. |
+| input *(required)* | [ChangeCurrentUserPasswordInput](../types/inputs/ChangeCurrentUserPasswordInput.md)! | Specifies the input required to change the current user's password. |
 
 ## Returns
 

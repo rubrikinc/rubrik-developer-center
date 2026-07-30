@@ -10,11 +10,13 @@ Azure DevOps Organization.
 |-------|------|-------------|
 | allOrgs | [[Org](Org.md)!]! | Organizations to which this hierarchy object belongs. |
 | allTags | [[AssignedRscTag](AssignedRscTag.md)!]! | RSC tags to which this hierarchy object is assigned. |
+| authenticationMechanism | [DevopsAuthMechanism](../enums/DevopsAuthMechanism.md)! | Authentication mechanism (OAuth or non-OAuth) the organization's tenant was onboarded with. Derived per-tenant; UNSPECIFIED when it cannot be determined. |
 | authorizedOperations | [[Operation](../enums/Operation.md)!]! | The authorized operations on the object. |
 | backupLocation | [DevOpsBackupLocation](DevOpsBackupLocation.md) | Backup location associated with the Azure DevOps organization. |
 | backupLocationId | String! | ID of the backup location associated with the Azure DevOps organization. |
 | backupLocationName | String! | Name of the backup location associated with the Azure DevOps organization. |
 | backupRegion | String! | Backup region for the Azure DevOps organization. |
+| clientId | String! | Azure AD application (client) ID of the per-tenant application the organization's tenant was onboarded with. Populated only for non-OAuth tenants; empty otherwise. |
 | cloudNativeExocompute | [DevOpsCloudNativeExocompute](DevOpsCloudNativeExocompute.md) | Cloud native exocompute associated with the Azure DevOps organization. |
 | configuredSlaDomain | [SlaDomain](../interfaces/SlaDomain.md)! | SLA Domain configured for the hierarchy object. |
 | connectionStatus | [DevopsConnectionStatus](../enums/DevopsConnectionStatus.md)! | Connection status of the Azure DevOps organization. |
@@ -31,6 +33,7 @@ Azure DevOps Organization.
 | name | String! | Name of the hierarchy object. |
 | nativeId | String! | Native ID of the Azure DevOps organization. |
 | numWorkloadDescendants | Int! | Number of descendant workloads of this object. |
+| objectBackupWindow | [ObjectBackupWindowStatus](ObjectBackupWindowStatus.md) | Object-level backup window status of the hierarchy object. |
 | objectPauseStatus | [ObjectPauseStatus](ObjectPauseStatus.md) | Pause status of the hierarchy object. |
 | objectType | [HierarchyObjectTypeEnum](../enums/HierarchyObjectTypeEnum.md)! | Type of this object. |
 | physicalPath | [[PathNode](PathNode.md)!]! | Sequential list of the physical ancestors of this object. |

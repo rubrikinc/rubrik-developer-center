@@ -6,6 +6,7 @@ Data for a matched file.
 
 | Field | Type | Description |
 |-------|------|-------------|
+| archiveRelativePath | String! | Path of this file relative to the root of its parent archive. Empty string when the matched file is not inside an archive. |
 | detectedTime | [DateTime](../scalars/DateTime.md) | Time the scan detected the match. |
 | fileMetadata | [FileMetadata](FileMetadata.md) | File Metadata for the matched file. |
 | fileName | String! | Name of the file that was matched. |
@@ -15,8 +16,11 @@ Data for a matched file.
 | firstObservedSnapshotFid | [UUID](../scalars/UUID.md)! | FID of the first observed snapshot. |
 | isFileVersionQuarantined | Boolean! | Indicates whether the workload file version is quarantined. |
 | isFirstObservedSnapshotExpired | Boolean! | Specifies whether the first observed snapshot has expired. |
+| isInsideArchive | Boolean! | True when the matched file is an inner entry inside a compressed archive (e.g. zip) discovered via archive expansion. |
 | isMatchedSnapshotExpired | Boolean! | Specifies whether the matched snapshot has expired. |
 | isQuarantinedInFirstObservedSnapshot | Boolean! | Indicates whether the file is quarantined in the first observed snapshot. |
+| isValidated | Boolean! | Indicates whether the match has been validated. |
+| isValidationRequired | Boolean! | Indicates whether severity evaluation is required for this match. True when the match was inserted while delayed detection was active. False for matches inserted before delayed detection was enabled. |
 | matchId | [Long](../scalars/Long.md)! | ID of the matched file being returned. |
 | matchType | [IndicatorOfCompromiseKind](../enums/IndicatorOfCompromiseKind.md)! | Type of threat match. |
 | matchedSnapshotDate | [DateTime](../scalars/DateTime.md) | Date of the snapshot when the match was found. |
@@ -25,6 +29,7 @@ Data for a matched file.
 | objectFid | [UUID](../scalars/UUID.md)! | FID of the object. |
 | objectName | String! | The scanned object name. |
 | objectType | [HierarchyObjectTypeEnum](../enums/HierarchyObjectTypeEnum.md) | Object type. |
+| severity | [MatchSeverity](../enums/MatchSeverity.md)! | Severity of the match. |
 
 ## Used By
 

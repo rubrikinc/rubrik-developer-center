@@ -1,6 +1,6 @@
 # snapshotEmailSearch
 
-*No description available.*
+SearchSnapshotEmails returns a paginated, GraphQL-shaped list of mailbox folders and emails inside a single snapshot. Encapsulates the snapshot-expiry data check and the mailbox response shaping previously performed in the GraphQL resolver `snapshotEmailSearch`.
 
 ## Arguments
 
@@ -8,6 +8,8 @@
 |----------|------|-------------|
 | first | Int | Returns the first n elements from the list. |
 | after | String | Returns the elements in the list that occur after the specified cursor. |
+| last | Int | Returns the last n elements from the list. |
+| before | String | Returns the elements in the list that occur before the specified cursor. |
 | snappableFid *(required)* | [UUID](../types/scalars/UUID.md)! | The FID for the workload. |
 | snapshotFid *(required)* | [UUID](../types/scalars/UUID.md)! | The ID of the snapshot. |
 | orgId *(required)* | [UUID](../types/scalars/UUID.md)! | Org UUID. |

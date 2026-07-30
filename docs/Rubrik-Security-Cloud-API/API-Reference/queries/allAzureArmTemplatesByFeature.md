@@ -52,7 +52,8 @@ Retrieve ARM templates for role definition and role assignment.
             "version": 0,
             "permissionsGroupVersions": [
               {
-                "permissionsGroup": "AKS_CUSTOM_PRIVATE_DNS_ZONE",
+                "deltaMigrated": true,
+                "permissionsGroup": "ADVANCED_DIAGNOSTICS",
                 "version": 0
               }
             ]

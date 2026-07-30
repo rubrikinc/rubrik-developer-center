@@ -47,4 +47,4 @@ Represents security metadata of a workload.
 - [AzureSqlDatabaseDb.securityMetadata](AzureSqlDatabaseDb.md)
 - [AzureSqlDatabaseServer.securityMetadata](AzureSqlDatabaseServer.md)
 - [AzureSqlManagedInstanceDatabase.securityMetadata](AzureSqlManagedInstanceDatabase.md)
-- *…and 275 more*
+- *…and 284 more*

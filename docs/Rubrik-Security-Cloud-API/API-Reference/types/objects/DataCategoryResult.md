@@ -15,3 +15,4 @@ Data category result indicates the classification result for a data category.
 **Referenced by**
 
 - [ClassificationPolicyDetail.dataCategoryResult](ClassificationPolicyDetail.md)
+- [PrincipalSummary.dataCategoryResults](PrincipalSummary.md)

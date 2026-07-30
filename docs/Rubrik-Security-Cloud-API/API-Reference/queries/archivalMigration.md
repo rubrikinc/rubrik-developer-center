@@ -40,7 +40,7 @@ Retrieves the current migration status and target location details for a given s
       "data": {
         "archivalMigration": {
           "status": "ARCHIVAL_MIGRATION_DATA_COPY_PENDING",
-          "targetLocationType": "ARCHIVAL_MIGRATION_TARGET_S3_COMPATIBLE",
+          "targetLocationType": "ARCHIVAL_MIGRATION_TARGET_RCV_AWS",
           "targetLocation": {}
         }
       }

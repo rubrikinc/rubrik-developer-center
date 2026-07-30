@@ -12,6 +12,10 @@ Represents the document attribute.
 
 ## Used By
 
+**Queries**
+
+- [query: allDocumentTypes](../../queries/allDocumentTypes.md)
+
 **Referenced by**
 
 - [ClassificationPolicyDetail.documentTypes](ClassificationPolicyDetail.md)

@@ -20,17 +20,23 @@ An Oracle Real Application Cluster.
     query OracleRac($fid: UUID!) {
       oracleRac(fid: $fid) {
         authorizedOperations
+        backupNodes
         cdmPendingObjectPauseAssignment
         distributeBackupsAutomatically
+        excludedDbUniqueNames
         hostLogRetentionHours
         id
+        isReplica
         logBackupFrequency
         logRetentionHours
         name
         numChannels
         numWorkloadDescendants
         objectType
+        primaryNode
         replicatedObjectCount
+        secondaryNodes
+        shouldEnableMultiNodeBackup
         slaAssignment
         slaPauseStatus
       }
@@ -54,11 +60,15 @@ An Oracle Real Application Cluster.
           "authorizedOperations": [
             "ACCESS_CDM_CLUSTER"
           ],
+          "backupNodes": [
+            "example-string"
+          ],
           "cdmPendingObjectPauseAssignment": "NO_PENDING_PAUSE_ASSIGNMENT",
           "distributeBackupsAutomatically": true,
+          "excludedDbUniqueNames": [
+            "example-string"
+          ],
           "hostLogRetentionHours": 0,
-          "id": "00000000-0000-0000-0000-000000000000",
-          "logBackupFrequency": 0,
           "allOrgs": [
             {
               "allUrls": [

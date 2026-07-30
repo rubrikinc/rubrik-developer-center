@@ -15,3 +15,4 @@ Statistics of an individual data category.
 **Referenced by**
 
 - [DataGovViolationDetails.dataCategories](DataGovViolationDetails.md)
+- [SensitiveDataSummaryBreakdown.dataCategoryStats](SensitiveDataSummaryBreakdown.md)

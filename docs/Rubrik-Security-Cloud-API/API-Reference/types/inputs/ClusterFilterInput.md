@@ -12,6 +12,7 @@ Filters for the cluster list.
 | excludeEmptyCluster | Boolean | Exclude clusters that do not have any nodes connected. |
 | excludeId | [[UUID](../scalars/UUID.md)!] | Exclude the Rubrik cluster UUIDs. |
 | id | [[UUID](../scalars/UUID.md)!] | Cluster UUIDs. |
+| isAssignedByParentAccount | Boolean | Filter on shared (parent-assigned) clusters. When true, return only shared clusters; when false, exclude them; omit for no filter. |
 | isInFatalOrDisconnectedState | Boolean | Include Rubrik clusters which are disconnected  or in fatal state. |
 | minSoftwareVersion | String | Returns clusters running software version equal to or greater than the specified version. |
 | name | [String!] | Cluster names. |

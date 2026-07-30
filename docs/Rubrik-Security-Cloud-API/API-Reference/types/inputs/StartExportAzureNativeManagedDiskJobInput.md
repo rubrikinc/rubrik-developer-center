@@ -14,6 +14,7 @@ Input for the job to export the specified Azure Native Managed Disk to the speci
 | diskName | String! | Name of the disk created after export. |
 | diskSize | Int! | Size of the disk created after export, in GiB. |
 | diskStorageTier | [AzureNativeManagedDiskType](../enums/AzureNativeManagedDiskType.md)! | Type of the disk created after export. |
+| recoveryPurpose | [RecoveryPurpose](../enums/RecoveryPurpose.md) | Purpose of the recovery operation. Set to SURGICAL_RECOVERY to automatically exclude quarantined files from the exported disk (subject to feature availability for the account). Defaults to RECOVERY_PURPOSE_UNSPECIFIED, which preserves prior behavior. |
 | resourceGroup | String! | Resource group to be associated with the disk created after export. |
 | shouldExportTags | Boolean! | Specifies whether to export tags from the snapshot or not. When true, the tags from the snapshot are exported as well. |
 | shouldReplaceAttachedManagedDisk | Boolean! | Specifies whether to run only the export job or to run both the export and replace jobs. When true, the attached managed disk is exported and replaced. |

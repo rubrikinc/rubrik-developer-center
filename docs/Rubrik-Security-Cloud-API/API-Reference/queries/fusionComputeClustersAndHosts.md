@@ -28,6 +28,7 @@ Summary of all FusionCompute clusters and hosts.
           authorizedOperations
           cdmPendingObjectPauseAssignment
           id
+          isReplica
           name
           numWorkloadDescendants
           objectType

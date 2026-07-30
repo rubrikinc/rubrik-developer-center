@@ -6,7 +6,7 @@ Delete all snapshots of VM  Supported in v5.0+ Delete all snapshots of a virtual
 
 | Argument | Type | Description |
 |----------|------|-------------|
-| input *(required)* | [HypervDeleteAllSnapshotsInput](../types/inputs/HypervDeleteAllSnapshotsInput.md)! | Input for HypervDeleteAllSnapshotsRequest. |
+| input *(required)* | [HypervDeleteAllSnapshotsInput](../types/inputs/HypervDeleteAllSnapshotsInput.md)! | Input for InternalDeleteHypervVirtualMachineSnapshots. |
 
 ## Returns
 

@@ -16,6 +16,17 @@ Sensitive files for different risk categories.
 
 **Referenced by**
 
+- [ExposureTypeHits.deltaHits](ExposureTypeHits.md)
 - [FileResult.sensitiveFiles](FileResult.md)
+- [FilesSummaryCountResultType.unusedSensitiveFiles](FilesSummaryCountResultType.md)
+- [FilesSummaryCountResultType.usedSensitiveFiles](FilesSummaryCountResultType.md)
+- [PolicyHitsSummary.sidDeltaSensitiveFiles](PolicyHitsSummary.md)
+- [PolicyHitsSummary.sidSensitiveFiles](PolicyHitsSummary.md)
 - [PolicyObj.sensitiveFiles](PolicyObj.md)
 - [PolicyObj.unusedSensitiveFiles](PolicyObj.md)
+- [PolicyRiskSummary.files](PolicyRiskSummary.md)
+- [PrincipalObjectSummary.sensitiveFiles](PrincipalObjectSummary.md)
+- [PrincipalRisk.sensitiveFiles](PrincipalRisk.md)
+- [PrincipalSummary.deltaSensitiveFiles](PrincipalSummary.md)
+- [PrincipalSummary.sensitiveFiles](PrincipalSummary.md)
+- [SensitiveDataSummaryBreakdown.sensitiveFiles](SensitiveDataSummaryBreakdown.md)

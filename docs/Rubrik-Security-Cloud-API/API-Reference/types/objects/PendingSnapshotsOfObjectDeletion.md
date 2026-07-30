@@ -1,13 +1,13 @@
 # PendingSnapshotsOfObjectDeletion
 
-*No description available.*
+Pending snapshots deletion status for an object.
 
 ## Fields
 
 | Field | Type | Description |
 |-------|------|-------------|
-| objectFid | [UUID](../scalars/UUID.md)! |  |
-| status | [PendingActionStatus](../enums/PendingActionStatus.md)! |  |
+| objectFid | [UUID](../scalars/UUID.md)! | FID of the object. |
+| status | [PendingActionStatus](../enums/PendingActionStatus.md)! | Status of the pending action. |
 
 ## Used By
 
@@ -43,4 +43,4 @@
 - [FusionComputeDatastore.pendingObjectDeletionStatus](FusionComputeDatastore.md)
 - [FusionComputeHost.pendingObjectDeletionStatus](FusionComputeHost.md)
 - FusionComputeHostDescendant.pendingObjectDeletionStatus
-- *…and 174 more*
+- *…and 179 more*

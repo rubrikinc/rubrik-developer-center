@@ -28,6 +28,7 @@ Paginated list of the highest-level HyperV Objects accessible by the current use
           authorizedOperations
           cdmPendingObjectPauseAssignment
           id
+          isReplica
           name
           numWorkloadDescendants
           objectType

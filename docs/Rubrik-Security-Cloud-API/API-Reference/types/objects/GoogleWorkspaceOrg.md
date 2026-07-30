@@ -25,6 +25,7 @@ Google Workspace organization.
 | name | String! | Name of the hierarchy object. |
 | naturalId | String! | ID of the Google Workspace organization at the source. |
 | numWorkloadDescendants | Int! | Number of descendant workloads of this object. |
+| objectBackupWindow | [ObjectBackupWindowStatus](ObjectBackupWindowStatus.md) | Object-level backup window status of the hierarchy object. |
 | objectPauseStatus | [ObjectPauseStatus](ObjectPauseStatus.md) | Pause status of the hierarchy object. |
 | objectType | [HierarchyObjectTypeEnum](../enums/HierarchyObjectTypeEnum.md)! | Type of this object. |
 | onboardedAppTypes | [[SaasAppType](../enums/SaasAppType.md)!]! | List of onboarded app types. |

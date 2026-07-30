@@ -22,3 +22,6 @@ Represents a tag key-value pair of an AWS resource.
 - [GlueIcebergCatalog.tags](GlueIcebergCatalog.md)
 - [GlueIcebergDatabase.tags](GlueIcebergDatabase.md)
 - [GlueIcebergTable.tags](GlueIcebergTable.md)
+- [S3TablesIcebergCatalog.tags](S3TablesIcebergCatalog.md)
+- [S3TablesIcebergNamespace.tags](S3TablesIcebergNamespace.md)
+- [S3TablesIcebergTable.tags](S3TablesIcebergTable.md)

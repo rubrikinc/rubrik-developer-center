@@ -8,12 +8,12 @@
 
 | Field | Type | Description |
 |-------|------|-------------|
-| folderId | String | The ID of SharePoint folder of the channel. |
-| folderName | String | The name of SharePoint folder of the channel. |
-| id | String | The Rubrik ID of Microsoft 365 Teams channel. |
+| folderId | String | The ID of the Sharepoint folder for the Teams channel. |
+| folderName | String | The name of the Sharepoint folder for the Teams channel. |
+| id | String | The ID of the Teams channel. |
 | isArchived | Boolean | Specifies whether the channel is relic or not. |
 | membershipType | [ChannelMembershipType](../enums/ChannelMembershipType.md) | The membership type of the channel. |
-| name | String | Display name of the channel. |
+| name | String | The display name of the Teams channel. |
 | naturalId | String | The natural ID of Microsoft 365 Teams channel. |
 
 ## Used By

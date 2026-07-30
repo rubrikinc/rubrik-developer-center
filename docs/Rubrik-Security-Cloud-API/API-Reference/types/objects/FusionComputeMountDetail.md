@@ -26,6 +26,7 @@ Details of a FusionCompute live mount.
 | sourceVmFid | [UUID](../scalars/UUID.md)! | Source virtual machine FID of the FusionCompute mount. |
 | sourceVmId | String! | ID of the source virtual machine. |
 | sourceVmName | String! | Name of the source virtual machine. |
+| unmountTimestamp | [DateTime](../scalars/DateTime.md) | Scheduled auto-unmount time of the Live Mount. Set only when an auto-unmount (lease) is scheduled for the mount; null otherwise. |
 | vmStatus | [FusionComputeVmStatus](../enums/FusionComputeVmStatus.md)! | Status of the live mount. |
 
 ## Used By

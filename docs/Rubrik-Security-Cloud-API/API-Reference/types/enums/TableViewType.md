@@ -16,16 +16,44 @@ All valid table views.
 | ANOMALY_DETECTION_COMPLIANCE_TABLE | Anomaly detection compliance report table. |
 | AUDIT_ALL_TABLE | Table showing audits. |
 | BACKUP_STRIKE_BY_OBJECT_TABLE | Table displaying back up strikes for each object. |
+| CLOUD_COMPLIANCE_ALL_TABLE | All cloud-native objects with compliance status (Cloud Compliance Report). |
+| CLOUD_COMPLIANCE_BY_CLOUD_ACCOUNT_TABLE | Cloud Compliance Report grouped by cloud account name. |
+| CLOUD_COMPLIANCE_BY_LOCATION_TABLE | Cloud Compliance Report grouped by source location. |
+| CLOUD_COMPLIANCE_BY_OBJECT_TYPE_TABLE | Cloud Compliance Report grouped by object type. |
+| CLOUD_COMPLIANCE_BY_SLA_TABLE | Cloud Compliance Report grouped by SLA domain. |
+| CLOUD_COST_BY_ACCOUNT_NAME_TABLE | Cloud cost rolled up by cloud account, displayed by resolved account name. |
+| CLOUD_COST_BY_CLOUD_ACCOUNT_ID_TABLE | Cloud cost rolled up by raw native cloud account id. |
+| CLOUD_COST_BY_PROVIDER_TABLE | Cloud cost rolled up by cloud provider. |
+| CLOUD_COST_EXPORT_TABLE | Cloud cost export table with per-tag cost breakdown. Used by the CSV export path -- includes a Tags column. |
+| CLOUD_COST_TABLE | Table displaying cloud cost data per cloud account with tag attribution. |
 | CLOUD_OVERLAP_OBJECTS_ALL_TABLE | Table displaying all the cloud overlap objects. |
 | CNP_OBJECT_CAPACITY_ALL_TABLE | Table displaying information for each cloud native protection object capacity report. |
 | CNP_OBJECT_CAPACITY_BY_OBJECT_TYPE_TABLE | Table displaying CNP object capacity for each object type. |
+| CNP_OBJECT_CAPACITY_OVERTIME_ALL_TABLE | Main table for the CNP object capacity over time report. |
+| CNP_OBJECT_CAPACITY_OVERTIME_BY_CLOUD_ACCOUNT_ID_TABLE | CNP object capacity over time grouped by cloud account native ID. Declared for future wiring; not yet registered in the V2 adaptor or surfaced by the CNP-OCOT report. |
+| CNP_OBJECT_CAPACITY_OVERTIME_BY_CLOUD_ACCOUNT_NAME_TABLE | CNP object capacity over time grouped by cloud account name. Declared for future wiring; not yet registered in the V2 adaptor or surfaced by the CNP-OCOT report. A separate change will wire group-by cloud account when the data model supports it. |
+| CNP_OBJECT_CAPACITY_OVERTIME_BY_OBJECT_TYPE_TABLE | Table displaying CNP object capacity over time for each object type. |
+| CNP_OBJECT_CAPACITY_OVERTIME_BY_PROTECTION_STATUS_TABLE | Table displaying CNP object capacity over time for each protection status. |
+| CNP_OBJECT_CAPACITY_OVERTIME_BY_SLA_DOMAIN_TABLE | Table displaying CNP object capacity over time for each SLA Domain. |
+| CNP_OBJECT_CAPACITY_OVERTIME_BY_SOURCE_LOCATION_TABLE | Table displaying CNP object capacity over time for each source location. |
+| CNP_OBJECT_CAPACITY_OVERTIME_BY_TIME_TABLE | Table displaying total CNP object capacity over time. |
+| CNP_PROTECTION_TASKS_DETAIL_BY_LOCATION_TABLE | CNP protection tasks detail report grouped by location. |
+| CNP_PROTECTION_TASKS_DETAIL_BY_OBJECT_TYPE_TABLE | CNP protection tasks detail report grouped by object type. |
+| CNP_PROTECTION_TASKS_DETAIL_BY_TIME_TABLE | CNP protection tasks detail report grouped by time. |
+| CNP_PROTECTION_TASKS_DETAIL_TABLE | Detail table for the CNP protection tasks detail report. |
+| CNP_RECOVERY_TASKS_DETAIL_BY_LOCATION_TABLE | CNP recovery tasks detail report grouped by location. |
+| CNP_RECOVERY_TASKS_DETAIL_BY_OBJECT_TYPE_TABLE | CNP recovery tasks detail report grouped by object type. |
+| CNP_RECOVERY_TASKS_DETAIL_BY_TIME_TABLE | CNP recovery tasks detail report grouped by time. |
+| CNP_RECOVERY_TASKS_DETAIL_TABLE | Detail table for the CNP recovery tasks detail report. |
 | COMPLIANCE_ALL_TABLE | Main table for the compliance report. |
 | COMPLIANCE_BY_CLUSTER_TABLE | Table displaying compliance status statistics for each cluster. |
 | COMPLIANCE_BY_CLUSTER_TYPE_TABLE | Table displaying compliance status statistics for each cluster type. |
 | COMPLIANCE_BY_LOCATION_TABLE | Table displaying compliance status statistics for each location. |
 | COMPLIANCE_BY_OBJECT_TYPE_TABLE | Table displaying compliance status statistics for each object type. |
+| CONSOLIDATED_LICENSE_USAGE_TABLE | Table displaying consolidated per-child-account license usage report. |
 | DATA_DISCOVERY_OBJECT_DETAILS_TABLE | Table displaying data discovery statistics for all workloads on a specified date. |
 | DISK_STATUS_TABLE | Table displaying disk status information. |
+| DNS_ACTIVITY_TABLE | Table displaying DNS activity log entries. |
 | EVENT_SERIES_ALL_TABLE | Main table for the Events report. |
 | EVENT_SERIES_BY_CLUSTER_TABLE | Table displaying events information for each cluster. |
 | EVENT_SERIES_BY_CLUSTER_TYPE_TABLE | Table displaying events information for each cluster type. |
@@ -33,11 +61,13 @@ All valid table views.
 | EVENT_SERIES_BY_TIME_TABLE | Table displaying events information for certain time periods. |
 | IDENTITY_ACTIVITY_TABLE | Table displaying a list of identity activities. |
 | IDENTITY_RISKS_TABLE | Table displaying list of policies and the number of violations. |
+| IDENTITY_SEGMENTATION_AUDIT_TABLE | Table displaying Entra identity-segmentation per-user licensing classification for a selected month. |
 | INDEXING_REPORT_ALL_TABLE | Main table for the indexing report. |
 | INDEXING_REPORT_BY_LOCATION_TABLE | Table displaying indexing statistics for each Location. |
 | INDEXING_REPORT_BY_OBJECT_TYPE_TABLE | Table displaying indexing statistics for each Object Type. |
 | INDEXING_REPORT_BY_SLA_TABLE | Table displaying indexing statistics for each SLA Domain. |
 | INFRASTRUCTURE_ALL_TABLE | Table displaying statistics for each cluster. |
+| LICENSE_USAGE_TABLE | Table displaying object level license usage report. |
 | LOG_TASKS_BY_CLUSTER_TABLE | Table displaying log tasks information for each cluster. |
 | LOG_TASKS_BY_CLUSTER_TYPE_TABLE | Table displaying log tasks information for each cluster type. |
 | LOG_TASKS_BY_LOCATION_TABLE | Table displaying log tasks information for each location. |
@@ -58,6 +88,9 @@ All valid table views.
 | OBJECT_CAPACITY_OVERTIME_BY_LOCATION_TABLE | Table displaying capacity per location over time. |
 | OBJECT_CAPACITY_OVERTIME_BY_TIME_TABLE | Table displaying total capacity over time. |
 | OBJECT_CAPACITY_OVERTIME_OBJECT_TYPE_TABLE | Table displaying capacity per object type over time. |
+| PAUSED_CLUSTERS_TABLE | Table displaying paused clusters. |
+| PAUSED_OBJECTS_TABLE | Table displaying paused objects. |
+| PAUSED_SLA_TABLE | Table displaying paused SLA Domains. |
 | PROTECTION_ALL_TABLE | Main table for the protection report. |
 | PROTECTION_BY_CLUSTER_TABLE | Table displaying protection status statistics for each cluster. |
 | PROTECTION_BY_CLUSTER_TYPE_TABLE | Table displaying protection status statistics for each cluster type. |
@@ -79,6 +112,7 @@ All valid table views.
 | RECOVERY_TASKS_DETAIL_BY_TIME_TABLE | Table displaying recovery task status statistics for a period of time. |
 | RECOVERY_TASKS_DETAIL_TABLE | Recovery task detail report's main table. |
 | ROLE_TABLE | Table displaying a list of role table. |
+| SCRIPT_REPORT_TABLE | TBD. |
 | SERVICE_ACCOUNT_TABLE | Table displaying a list of service accounts. |
 | SIGNIN_LOGS_TABLE | Table displaying sign-in logs. |
 | SLA_AUDIT_DETAIL_TABLE | Table displaying a list of audits for the single SLA Domain. |

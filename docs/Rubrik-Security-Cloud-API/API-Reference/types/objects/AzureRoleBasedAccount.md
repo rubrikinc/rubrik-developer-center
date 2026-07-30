@@ -1,6 +1,6 @@
 # AzureRoleBasedAccount
 
-*No description available.*
+Azure role based Account specific info.
 
 **Implements:** [CloudAccount](../interfaces/CloudAccount.md)
 

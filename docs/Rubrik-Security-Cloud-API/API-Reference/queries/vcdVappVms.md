@@ -40,6 +40,7 @@ Paginated list of virtual machines under vCloud Director hiearchy.
           isArrayIntegrationPossible
           isBlueprintChild
           isRelic
+          isReplica
           name
           numWorkloadDescendants
           objectType

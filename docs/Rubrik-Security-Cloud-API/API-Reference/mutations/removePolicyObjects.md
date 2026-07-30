@@ -6,11 +6,11 @@ Remove policies from objects.
 
 | Argument | Type | Description |
 |----------|------|-------------|
-| policyIds *(required)* | [String!]! |  |
-| objectIds *(required)* | [String!]! |  |
+| policyIds *(required)* | [String!]! | Identifiers of the classification policies to remove objects from. |
+| objectIds *(required)* | [String!]! | Identifiers of the hierarchy objects to remove from the policies. |
 | objectRootIds *(required)* | [String!]! | List of supported root IDs. |
 | clusterIds *(required)* | [String!]! | List of Rubrik cluster IDs. |
-| runAsync *(required)* | Boolean! |  |
+| runAsync *(required)* | Boolean! | Determines whether to run this asynchronously. |
 
 ## Returns
 

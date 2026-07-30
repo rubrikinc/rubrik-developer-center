@@ -6,7 +6,7 @@ Create SSO users.
 
 | Argument | Type | Description |
 |----------|------|-------------|
-| input *(required)* | [CreateSsoUsersInput](../types/inputs/CreateSsoUsersInput.md)! | Input required to create SSO users. |
+| input *(required)* | [CreateSsoUsersInput](../types/inputs/CreateSsoUsersInput.md)! | Specifies the input to create SSO users. |
 
 ## Returns
 

@@ -27,6 +27,7 @@ Summary of all FusionCompute clusters and hosts that the user can recover to.
           authorizedOperations
           cdmPendingObjectPauseAssignment
           id
+          isReplica
           name
           numWorkloadDescendants
           objectType

@@ -28,6 +28,7 @@ Represents the Amazon S3 Bucket with a specific ID. For more information, see ht
         earliestRestoreTime
         id
         isExocomputeConfigured
+        isInfrastructureAlertsEnabled
         isOnboarding
         isProtectable
         isRelic

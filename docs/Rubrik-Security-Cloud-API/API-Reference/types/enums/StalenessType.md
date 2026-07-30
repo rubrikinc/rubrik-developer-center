@@ -1,6 +1,6 @@
 # StalenessType
 
-*No description available.*
+Whether a file is considered stale based on its last activity.
 
 ## Values
 

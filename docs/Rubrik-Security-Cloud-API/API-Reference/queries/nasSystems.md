@@ -30,9 +30,11 @@ Paginated list of NAS Systems.
           id
           isChangelistEnabled
           isNetAppMetroClusterEnabled
+          isNetAppSnapDiffEnabled
           isNfsSupported
           isNutanixCftEnabled
           isRelic
+          isReplica
           isSmbSupported
           isUserSuppliedSmbCredentials
           lastRefreshTime

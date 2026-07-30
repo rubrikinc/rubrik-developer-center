@@ -40,6 +40,7 @@
           isArrayIntegrationPossible
           isBlueprintChild
           isRelic
+          isReplica
           name
           numWorkloadDescendants
           objectType

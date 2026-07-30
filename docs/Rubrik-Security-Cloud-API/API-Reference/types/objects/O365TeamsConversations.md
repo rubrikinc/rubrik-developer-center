@@ -1,14 +1,14 @@
 # O365TeamsConversations
 
-*No description available.*
+A single Teams conversation search result, grouped by channel.
 
 ## Fields
 
 | Field | Type | Description |
 |-------|------|-------------|
-| channelId | String! |  |
-| channelName | String |  |
-| channelPostCount | Int! |  |
+| channelId | String! | The RSC ID of the channel. |
+| channelName | String | Display name of the channel. |
+| channelPostCount | Int! | The number of matching conversation posts in the channel. |
 
 ## Used By
 

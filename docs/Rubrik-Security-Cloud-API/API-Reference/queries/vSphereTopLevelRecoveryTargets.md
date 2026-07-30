@@ -28,6 +28,7 @@ Returns the top level recovery targets for vSphere.
           authorizedOperations
           cdmPendingObjectPauseAssignment
           id
+          isReplica
           name
           numWorkloadDescendants
           objectType

@@ -16,5 +16,6 @@ Crowdstrike alert violation details.
 | endTime | [DateTime](../scalars/DateTime.md) | End time. |
 | falconHostLink | String! | Link to CrowdStrike console. |
 | mitreTactic | String! | MITRE ATT&CK tactic. |
+| patternId | String! | CrowdStrike Falcon pattern ID (the vendor detection taxonomy ID). |
 | startTime | [DateTime](../scalars/DateTime.md) | Start time. |
 | targetIdentityId | String! | Target identity ID (principal ID - if applicable). |

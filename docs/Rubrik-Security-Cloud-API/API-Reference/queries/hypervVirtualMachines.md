@@ -31,6 +31,7 @@ Paginated list of HyperV Virtual Machines.
           hypervVmMountCount
           id
           isRelic
+          isReplica
           name
           numWorkloadDescendants
           objectType

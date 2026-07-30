@@ -22,14 +22,14 @@ Filters to query snapshots.
 | IS_ARCHIVAL_COPY | When true, this filter returns the snapshots created as a result of archiving source snapshots. When false, the filter returns snapshots that were not created due to archiving. |
 | IS_ARCHIVED *(deprecated: A snapshot can potentially be uploaded to multiple archival locations. This field does not give the archival status of the snapshot - whether it is uploaded to all the archival locations or partially uploaded to a few locations. Hence, this filter field is deprecated and would be removed subsequently. Please use a combination of ARCHIVAL_LOCATION_IDS and SOURCE_SNAPSHOT_IDS fields instead.)* | When the value is true, this filter returns snapshots that are archived. |
 | IS_DELETED_FROM_SOURCE | When true, returns snapshots that are deleted from source. |
-| IS_DOWNLOADED |  |
+| IS_DOWNLOADED | When true, returns snapshots downloaded to the cluster from an archival or replication location. When false, returns snapshots not downloaded. |
 | IS_GCED | When true, returns snapshots that have been deleted, else returns all non-deleted snapshots (may/may not be expired). |
 | IS_INDEXED | When true, this returns snapshots that have been indexed, else returns snapshots that have not been indexed. |
 | IS_LEGALLY_HELD | When true, returns snapshots that have been placed on legal hold, else return all snapshots which are not legally held. |
 | IS_MAINTAINED_OR_ON_DEMAND_WITH_SLA | When true, returns snapshots which are either scheduled/maintained or on-demand snapshots that have an on-demand SLA assigned. |
 | IS_MARKED_FOR_METADATA_DELETION | Checks whether the death_time field is null or not. Determines whether the snapshot metadata is marked for deletion or not. Applicable only for snapshots of RSC workloads. |
 | IS_NOT_GLOBALLY_EXPIRED | When true, returns source snapshots that are not globally expired i.e. snapshot is unexpired on source or has an unexpired replica/archival copy, else returns globally expired source snapshots. |
-| IS_ON_DEMAND |  |
+| IS_ON_DEMAND | When true, returns on-demand snapshots (manually triggered by a user). When false, returns scheduled snapshots taken per the SLA Domain. |
 | IS_ON_DEMAND_OR_CUSTOMISED_SNAPSHOT | When true, returns snapshots which are either on-demand or customised; when false, returns snapshots that are only policy-based. |
 | IS_REPLICA | Denotes whether the snapshot is a replica copy or not. |
 | IS_REPLICATED | When true, returns snapshots that have been replicated. When false, returns snapshots which have not been replicated. |

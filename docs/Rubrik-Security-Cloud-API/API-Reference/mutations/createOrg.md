@@ -44,7 +44,7 @@ Create a new organization under global org.
                 "objectIds": [
                   "example-string"
                 ],
-                "snappableType": "AWS_NATIVE_CONFIG"
+                "snappableType": "AUTH0_TENANT"
               }
             ],
             "operation": "ACCESS_CDM_CLUSTER"
@@ -52,7 +52,7 @@ Create a new organization under global org.
         ],
         "selfServicePermissions": [
           {
-            "inventoryWorkloadType": "AWS_NATIVE_CONFIG",
+            "inventoryWorkloadType": "AUTH0_TENANT",
             "operations": [
               "ACCESS_CDM_CLUSTER"
             ]

@@ -17,7 +17,7 @@ NAS Cloud Direct bucket.
 | cloudDirectNasSystem | [CloudDirectNasSystem](CloudDirectNasSystem.md) | The NAS Cloud Direct system to which this NAS bucket belongs. |
 | cloudDirectPendingObjectPauseAssignment | [PendingObjectPauseAssignmentStatus](../enums/PendingObjectPauseAssignmentStatus.md) | Object pause pending assignment details for Cloud Direct objects. |
 | cloudDirectSnapshotGroupBySummary | [CloudDirectSnapshotsGroupBySummaryConnection](CloudDirectSnapshotsGroupBySummaryConnection.md) | Groups the snapshots of this NAS Cloud Direct bucket. |
-| cluster | [Cluster](Cluster.md)! | Cluster from which this workload originated. |
+| cluster | [Cluster](Cluster.md)! | NAS Cloud Direct cluster where this object originated. |
 | clusterUuid | [UUID](../scalars/UUID.md)! | NAS Cloud Direct cluster ID. |
 | configuredSlaDomain | [SlaDomain](../interfaces/SlaDomain.md)! | SLA Domain configured for the hierarchy object. |
 | effectiveRetentionSlaDomain | [SlaDomain](../interfaces/SlaDomain.md) | Effective retention of the SLA Domain of the hierarchy object. |
@@ -36,6 +36,7 @@ NAS Cloud Direct bucket.
 | namespaceId | String | NamespaceID of the namespace (if any) to which the NAS Cloud Direct bucket belongs. |
 | newestSnapshot | [CloudDirectSnapshot](CloudDirectSnapshot.md) | The most recent snapshot of this bucket. |
 | numWorkloadDescendants | Int! | Number of descendant workloads of this object. |
+| objectBackupWindow | [ObjectBackupWindowStatus](ObjectBackupWindowStatus.md) | Object-level backup window status of the hierarchy object. |
 | objectPauseStatus | [ObjectPauseStatus](ObjectPauseStatus.md) | Pause status of the hierarchy object. |
 | objectType | [HierarchyObjectTypeEnum](../enums/HierarchyObjectTypeEnum.md)! | Type of this object. |
 | oldestSnapshot | [CloudDirectSnapshot](CloudDirectSnapshot.md) | The oldest available snapshot of this bucket. |

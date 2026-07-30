@@ -13,3 +13,4 @@ Recovery statistics for a specific recovery plan. Contains aggregate recovery co
 **Referenced by**
 
 - [RecoveryPlanBasicInfo.recoveryPlanStats](RecoveryPlanBasicInfo.md)
+- [RecoveryPlanV2.recoveryPlanStats](RecoveryPlanV2.md)

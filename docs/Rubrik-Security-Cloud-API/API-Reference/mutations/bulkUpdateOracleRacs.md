@@ -44,7 +44,17 @@ Update Oracle RACs  Supported in v5.2+ Update the properties of the objects that
         "bulkUpdateOracleRacs": {
           "responses": [
             {
-              "scan": "example-string"
+              "backupNodes": [
+                "example-string"
+              ],
+              "excludedDbUniqueNames": [
+                "example-string"
+              ],
+              "primaryNode": "example-string",
+              "scan": "example-string",
+              "secondaryNodes": [
+                "example-string"
+              ]
             }
           ]
         }

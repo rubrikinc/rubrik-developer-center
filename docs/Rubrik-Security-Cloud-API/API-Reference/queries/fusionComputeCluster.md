@@ -26,6 +26,7 @@ Summary of a FusionCompute cluster.
         clusterUuid
         fcClusterId
         id
+        isReplica
         name
         numWorkloadDescendants
         objectType

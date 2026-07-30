@@ -36,6 +36,8 @@ Paginated list of Oracle Databases.
           id
           isLiveMount
           isRelic
+          isReplica
+          isZeroRpoEnabled
           logBackupFrequency
           logRatePerRmanChannelInMb
           logRetentionHours

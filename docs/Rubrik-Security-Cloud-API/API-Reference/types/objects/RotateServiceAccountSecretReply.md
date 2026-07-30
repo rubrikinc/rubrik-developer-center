@@ -10,6 +10,7 @@ Updated service account details.
 | clientId | String! | ID of the service account. |
 | clientSecret | String! | Secret used to authenticate to the authorization server. |
 | name | String! | Name of the service account. |
+| suspendedTprPolicyIds | [String!]! | IDs of the quorum authorization policies whose service account exemptions were suspended by this rotation. |
 
 ## Used By
 

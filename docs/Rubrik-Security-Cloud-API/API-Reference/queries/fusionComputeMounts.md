@@ -45,6 +45,7 @@ Retrieve the list of FusionCompute live mounts.
           sourceVmFid
           sourceVmId
           sourceVmName
+          unmountTimestamp
           vmStatus
         }
         pageInfo {

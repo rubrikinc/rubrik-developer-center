@@ -22,6 +22,7 @@ Currently logged-in user.
         isEmailEnabled
         isHidden
         lastLogin
+        patId
         status
         unreadCount
         username

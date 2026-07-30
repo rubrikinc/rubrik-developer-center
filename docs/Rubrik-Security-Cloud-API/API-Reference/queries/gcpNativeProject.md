@@ -34,7 +34,6 @@ Get details of a GCP Project
         objectType
         organizationName
         projectNumber
-        region
         rscPendingObjectPauseAssignment
         slaAssignment
         slaPauseStatus

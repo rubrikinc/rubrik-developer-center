@@ -6,6 +6,7 @@ Legal hold query filter field.
 
 | Value | Description |
 |-------|-------------|
+| CLOUD_ACCOUNT_ID | Cloud account. Only valid for RSC native legal holds. |
 | CLOUD_REGION | Cloud region of the workload. |
 | CLOUD_VENDOR | Cloud vendor of the workload (AWS, Azure, or GCP). |
 | LEGAL_HOLD_TIME | Legal hold time. |

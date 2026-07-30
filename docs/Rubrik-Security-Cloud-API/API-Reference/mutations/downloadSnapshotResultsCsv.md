@@ -6,9 +6,9 @@ Download snapshot policy results in CSV format.
 
 | Argument | Type | Description |
 |----------|------|-------------|
-| snappableFid *(required)* | String! |  |
-| snapshotFid *(required)* | String! |  |
-| downloadFilter | [DownloadResultsCsvFiltersInput](../types/inputs/DownloadResultsCsvFiltersInput.md) |  |
+| snappableFid *(required)* | String! | Identifier of the object whose snapshot results are downloaded. |
+| snapshotFid *(required)* | String! | Identifier of the snapshot whose results are downloaded. |
+| downloadFilter | [DownloadResultsCsvFiltersInput](../types/inputs/DownloadResultsCsvFiltersInput.md) | Filters applied to the snapshot results included in the CSV. |
 
 ## Returns
 

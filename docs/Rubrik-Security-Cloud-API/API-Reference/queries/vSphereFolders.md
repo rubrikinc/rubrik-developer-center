@@ -30,6 +30,7 @@ Get all the vSphere folders.
           datacenterId
           folderType
           id
+          isReplica
           name
           numWorkloadDescendants
           objectType
