@@ -2,9 +2,15 @@ name: Deploy MkDocs site to GitHub Pages
 
 on:
   workflow_dispatch:
+  workflow_run:
+    workflows: ["Update Changelog and Deprecations"]
+    branches: [main]
+    types: [completed]
   push:
     branches:
-      - main  # Set this to the branch you want to trigger the build
+      - main
+    paths-ignore:
+      - 'docs/Rubrik-Security-Cloud-API/schemas/**'
 
 jobs:
   deploy:
