@@ -26,6 +26,7 @@ query FusionComputeHost($fid: UUID!) {
     hostName
     id
     ipAddresses
+    isReplica
     name
     numWorkloadDescendants
     objectType

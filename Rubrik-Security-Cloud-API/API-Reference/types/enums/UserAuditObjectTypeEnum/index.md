@@ -9,6 +9,10 @@ User audit object type.
 | ACTIVE_DIRECTORY_DOMAIN            | Active Directory domain type.                 |
 | ACTIVE_DIRECTORY_DOMAIN_CONTROLLER | Active Directory domain controller type.      |
 | ACTIVE_DIRECTORY_FOREST            | Active Directory forest type.                 |
+| AGENT_CLOUD_ALERT                  | Agent Cloud alert object type.                |
+| AGENT_CLOUD_CONNECTION             | Agent Cloud connection object type.           |
+| AGENT_CLOUD_POLICY                 | Agent Cloud policy object type.               |
+| AGENT_CLOUD_VIOLATION              | Agent Cloud violation object type.            |
 | AGENT_OPERATIONS_MODEL_ROUTER      | Agent Operations Model Router.                |
 | ATLASSIAN_SITE                     | Atlassian site.                               |
 | AWS_NATIVE_DYNAMODB_TABLE          | AWS native DynamoDB table.                    |
@@ -62,6 +66,7 @@ User audit object type.
 | FailoverClusterApp                 | Failover cluster app type.                    |
 | FailoverGroup                      | Failover Group (HA Policy) type.              |
 | FederatedAccess                    | Federated access type.                        |
+| GCP_BIG_QUERY_DATASET              | GCP BigQuery dataset type.                    |
 | GCP_CLOUD_SQL_INSTANCE             | GCP Cloud SQL Instance type.                  |
 | GOOGLE_WORKSPACE_USER_MAILBOX      | Google Workspace User Mailbox.                |
 | GcpNativeDisk                      | GCP native disk type.                         |

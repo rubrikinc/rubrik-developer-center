@@ -29,13 +29,18 @@ query {
       cdmPendingObjectPauseAssignment
       clusterUuid
       creationType
+      customResourceDependencies
       definition
       id
       isRelic
+      isReplica
       k8sClusterName
       k8sClusterUuid
+      labelSelector
       name
       namespace
+      namespaceExcludePatterns
+      namespaceIncludePatterns
       numWorkloadDescendants
       objectType
       onDemandSnapshotCount

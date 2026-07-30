@@ -16,3 +16,4 @@ Summarizes the document type associated with files.
 
 - [FileResult.documentTypesSummary](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/FileResult/index.md)
 - [PolicyObj.documentTypesSummary](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/PolicyObj/index.md)
+- [SensitiveDataSummaryBreakdown.documentTypes](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/SensitiveDataSummaryBreakdown/index.md)

@@ -25,9 +25,6 @@ mutation SendTestMessageToWebhook($input: SendTestMessageToWebhookInput!) {
 ```json
 {
   "input": {
-    "authInfo": {
-      "authType": "AUTH_TYPE_UNSPECIFIED"
-    },
     "providerType": "CUSTOM"
   }
 }

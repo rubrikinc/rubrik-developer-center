@@ -28,6 +28,7 @@ A generic TPR requested-changes template.
 - [RemoveClusterTprReqChangesTemplate](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/RemoveClusterTprReqChangesTemplate/index.md)
 - [RemoveNodesTprReqChangesTemplate](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/RemoveNodesTprReqChangesTemplate/index.md)
 - [SaaSOrgTprReqChangesTemplate](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/SaaSOrgTprReqChangesTemplate/index.md)
+- [SetObjectBackupWindowsTprReqChangesTemplate](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/SetObjectBackupWindowsTprReqChangesTemplate/index.md)
 - [StandardTprReqChangesTemplate](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/StandardTprReqChangesTemplate/index.md)
 - [UpdateTprPolicyDataMangementClusterReqChangesTemplate](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/UpdateTprPolicyDataMangementClusterReqChangesTemplate/index.md)
 - [UpdateTprPolicyDataMangementObjectReqChangesTemplate](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/UpdateTprPolicyDataMangementObjectReqChangesTemplate/index.md)

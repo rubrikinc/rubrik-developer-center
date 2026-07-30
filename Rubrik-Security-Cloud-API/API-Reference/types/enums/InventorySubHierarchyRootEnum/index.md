@@ -33,6 +33,7 @@ Inventory workloads that are supported on Rubrik.
 | LINUX_HOST_ROOT                                                   | Linux Host root.                            |
 | M365_BACKUP_STORAGE_ROOT                                          | M365 Backup Storage Root.                   |
 | MANAGED_VOLUME_ROOT                                               | Managed Volume root.                        |
+| MARIADB_ROOT                                                      | MariaDB root.                               |
 | MONGODB_ROOT                                                      | MongoDB Root.                               |
 | MONGO_ROOT                                                        | MongoDB Root.                               |
 | MSSQL_ROOT                                                        | MSSQL root.                                 |
@@ -48,6 +49,7 @@ Inventory workloads that are supported on Rubrik.
 | PHYSICAL_HOST_ROOT *(deprecated: This root is no longer in use.)* | Physical Host root.                         |
 | PING_FEDERATE_ROOT                                                | Ping Federate root.                         |
 | POSTGRES_ROOT                                                     | Postgres root.                              |
+| POWER_PLATFORM_ROOT                                               | Power Platform root.                        |
 | PROXMOX_ROOT                                                      | Proxmox root.                               |
 | PURE_STORAGE_ROOT                                                 | Pure Storage root.                          |
 | SALESFORCE_ROOT                                                   | Salesforce root.                            |

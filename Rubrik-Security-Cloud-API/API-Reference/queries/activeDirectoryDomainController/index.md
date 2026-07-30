@@ -30,6 +30,7 @@ query ActiveDirectoryDomainController($fid: UUID!) {
     isGlobalCatalog
     isReadOnly
     isRelic
+    isReplica
     macAddress
     macAddresses
     name

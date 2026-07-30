@@ -15,3 +15,4 @@ ExposureSummary contains exposure type and associated aggregated results.
 
 - [FileResult.exposureSummary](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/FileResult/index.md)
 - [PolicyObj.exposureSummary](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/PolicyObj/index.md)
+- [SensitiveFileDetailsReply.exposureSummary](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/SensitiveFileDetailsReply/index.md)

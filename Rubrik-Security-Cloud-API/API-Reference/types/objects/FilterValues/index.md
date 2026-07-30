@@ -4,9 +4,9 @@ FilterValues represents a flat list of filter values.
 
 ## Fields
 
-| Field        | Type                                                                                                                         | Description |
-| ------------ | ---------------------------------------------------------------------------------------------------------------------------- | ----------- |
-| filterValues | \[[FilterValue](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/FilterValue/index.md)!\]! |             |
+| Field        | Type                                                                                                                         | Description                     |
+| ------------ | ---------------------------------------------------------------------------------------------------------------------------- | ------------------------------- |
+| filterValues | \[[FilterValue](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/FilterValue/index.md)!\]! | The flat list of filter values. |
 
 ## Used By
 

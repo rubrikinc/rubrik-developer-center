@@ -4,11 +4,11 @@ Deactivate a classification policy.
 
 ## Arguments
 
-| Argument              | Type     | Description            |
-| --------------------- | -------- | ---------------------- |
-| policyId *(required)* | String!  |                        |
-| runAsync *(required)* | Boolean! |                        |
-| disableDataCategory   | Boolean  | Disable data category. |
+| Argument              | Type     | Description                                            |
+| --------------------- | -------- | ------------------------------------------------------ |
+| policyId *(required)* | String!  | Identifier of the classification policy to deactivate. |
+| runAsync *(required)* | Boolean! | Determines whether to run this asynchronously.         |
+| disableDataCategory   | Boolean  | Disable data category.                                 |
 
 ## Returns
 

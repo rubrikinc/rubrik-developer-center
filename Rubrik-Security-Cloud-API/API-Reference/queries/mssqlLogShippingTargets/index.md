@@ -10,7 +10,7 @@ List of filtered Microsoft SQL log shipping targets.
 
 ## Returns
 
-[MssqlLogShippingSummaryV2ListResponse](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/MssqlLogShippingSummaryV2ListResponse/index.md)
+[MssqlLogShippingSummaryV2ListResponse](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/MssqlLogShippingSummaryV2ListResponse/index.md)!
 
 ## Sample
 

@@ -20,8 +20,11 @@ mutation AddK8sCluster($input: AddK8sClusterInput!) {
     distribution
     id
     lastRefreshTime
+    maxConcurrentAgents
+    maxPvcsPerAgent
     name
     onboardingType
+    pvcGroupingStrategy
     region
     registry
     status
@@ -48,9 +51,9 @@ mutation AddK8sCluster($input: AddK8sClusterInput!) {
       "distribution": "example-string",
       "id": "example-string",
       "lastRefreshTime": "2024-01-01T00:00:00.000Z",
+      "maxConcurrentAgents": 0,
+      "maxPvcsPerAgent": 0,
       "name": "example-string",
-      "onboardingType": "example-string",
-      "region": "example-string",
       "crdServiceAccountInfo": {
         "accessToken": "example-string",
         "clientId": "example-string",

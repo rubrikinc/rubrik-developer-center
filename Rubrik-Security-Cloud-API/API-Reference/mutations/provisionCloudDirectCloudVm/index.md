@@ -20,6 +20,7 @@ mutation ProvisionCloudDirectCloudVm($input: ProvisionCloudDirectCloudVmInput!) 
     cloudProvider
     cloudRegion
     imageId
+    projectId
     userData
   }
 }
@@ -41,6 +42,7 @@ mutation ProvisionCloudDirectCloudVm($input: ProvisionCloudDirectCloudVmInput!) 
       "cloudProvider": "CLOUD_DIRECT_CLOUD_PROVIDER_AWS",
       "cloudRegion": "example-string",
       "imageId": "example-string",
+      "projectId": "example-string",
       "userData": "example-string",
       "regionImageIds": [
         {

@@ -22,6 +22,7 @@ query ExchangeDag($fid: UUID!) {
     cdmId
     cdmPendingObjectPauseAssignment
     id
+    isReplica
     name
     numWorkloadDescendants
     objectType
@@ -51,7 +52,7 @@ query ExchangeDag($fid: UUID!) {
       "cdmId": "example-string",
       "cdmPendingObjectPauseAssignment": "NO_PENDING_PAUSE_ASSIGNMENT",
       "id": "00000000-0000-0000-0000-000000000000",
-      "name": "example-string",
+      "isReplica": true,
       "allOrgs": [
         {
           "allUrls": [

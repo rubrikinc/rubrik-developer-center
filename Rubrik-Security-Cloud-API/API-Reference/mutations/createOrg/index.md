@@ -40,7 +40,7 @@ mutation CreateOrg($input: CreateOrgInput!) {
             "objectIds": [
               "example-string"
             ],
-            "snappableType": "AWS_NATIVE_CONFIG"
+            "snappableType": "AUTH0_TENANT"
           }
         ],
         "operation": "ACCESS_CDM_CLUSTER"
@@ -48,7 +48,7 @@ mutation CreateOrg($input: CreateOrgInput!) {
     ],
     "selfServicePermissions": [
       {
-        "inventoryWorkloadType": "AWS_NATIVE_CONFIG",
+        "inventoryWorkloadType": "AUTH0_TENANT",
         "operations": [
           "ACCESS_CDM_CLUSTER"
         ]

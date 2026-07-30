@@ -29,6 +29,7 @@ query {
       clusterUuid
       fcClusterId
       id
+      isReplica
       name
       numWorkloadDescendants
       objectType

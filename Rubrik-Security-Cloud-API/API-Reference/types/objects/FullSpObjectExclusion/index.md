@@ -1,6 +1,6 @@
 # FullSpObjectExclusion
 
-SharePoint object excluded from protection.
+SharePoint object excluded from protection. Used as GraphQL input `O365FullSpExclusion` and output `FullSpObjectExclusion`.
 
 ## Fields
 

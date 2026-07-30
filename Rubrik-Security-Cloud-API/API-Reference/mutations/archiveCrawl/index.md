@@ -4,9 +4,9 @@ Archive a crawl.
 
 ## Arguments
 
-| Argument             | Type    | Description |
-| -------------------- | ------- | ----------- |
-| crawlId *(required)* | String! |             |
+| Argument             | Type    | Description                         |
+| -------------------- | ------- | ----------------------------------- |
+| crawlId *(required)* | String! | Identifier of the crawl to archive. |
 
 ## Returns
 

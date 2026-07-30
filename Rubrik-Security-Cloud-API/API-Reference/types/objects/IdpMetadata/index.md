@@ -1,6 +1,6 @@
 # IdpMetadata
 
-*No description available.*
+Metadata describing an IdP resource involved in a policy violation.
 
 ## Fields
 

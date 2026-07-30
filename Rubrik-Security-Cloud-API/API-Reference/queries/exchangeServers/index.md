@@ -27,6 +27,7 @@ query {
       cdmPendingObjectPauseAssignment
       hasVgConflict
       id
+      isReplica
       name
       numWorkloadDescendants
       objectType
@@ -64,7 +65,7 @@ query {
             "cdmPendingObjectPauseAssignment": "NO_PENDING_PAUSE_ASSIGNMENT",
             "hasVgConflict": true,
             "id": "00000000-0000-0000-0000-000000000000",
-            "name": "example-string"
+            "isReplica": true
           }
         ]
       ],

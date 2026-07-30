@@ -1,6 +1,6 @@
 # CloudNativeTagConditionOutput
 
-Cloud-native tag condition with multiple tag pairs.
+A cloud-native tag condition with multiple tag pairs.
 
 ## Fields
 

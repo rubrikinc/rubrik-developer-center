@@ -28,6 +28,7 @@ query FilesetTemplate($fid: UUID!) {
     id
     includes
     isArrayEnabled
+    isReplica
     name
     numWorkloadDescendants
     objectType
@@ -40,6 +41,8 @@ query FilesetTemplate($fid: UUID!) {
     shouldRetryPrescriptIfBackupFails
     slaAssignment
     slaPauseStatus
+    templateAllowlistFilesystemPaths
+    templateBlocklistFilesystemTypes
     templateBlocklistedFilesystemPaths
   }
 }

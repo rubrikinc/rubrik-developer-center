@@ -35,6 +35,7 @@ query {
       isAgentRegistered
       isBlueprintChild
       isRelic
+      isReplica
       name
       numWorkloadDescendants
       nutanixSnapshotConsistencyMandate

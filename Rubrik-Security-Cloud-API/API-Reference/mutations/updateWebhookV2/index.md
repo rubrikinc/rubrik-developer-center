@@ -25,9 +25,6 @@ mutation UpdateWebhookV2($input: UpdateWebhookV2Input!) {
   "input": {
     "id": 0,
     "payload": {
-      "authInfo": {
-        "authType": "AUTH_TYPE_UNSPECIFIED"
-      },
       "providerType": "CUSTOM",
       "subscriptionType": {}
     }

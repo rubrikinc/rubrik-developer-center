@@ -4,7 +4,7 @@ Specification for day selection for monthly snapshot schedule. You can choose on
 
 ## Fields
 
-| Field            | Type                                                                                                                                      | Description                                                                                                                 |
-| ---------------- | ----------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
-| dayOfWeekPattern | [DayOfWeekPatternInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/DayOfWeekPatternInput/index.md) | Input for selecting a specific day of the week in a month to schedule a snapshot. For example, First Monday or Last Friday. |
-| specificDate     | [SpecificDateInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/SpecificDateInput/index.md)         | Input for selecting a specific date in a month to schedule a snapshot. For example, dateOffset=15 for the 15th day.         |
+| Field            | Type                                                                                                                                      | Description                                                                                           |
+| ---------------- | ----------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- |
+| dayOfWeekPattern | [DayOfWeekPatternInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/DayOfWeekPatternInput/index.md) | Specific day of the week in a month to schedule a snapshot. For example, First Monday or Last Friday. |
+| specificDate     | [SpecificDateInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/SpecificDateInput/index.md)         | Specific date in a month to schedule a snapshot. For example, dateOffset=15 for the 15th day.         |

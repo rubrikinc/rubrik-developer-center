@@ -31,6 +31,7 @@ query {
       id
       ipAddress
       isRefreshed
+      isReplica
       lastRefreshTime
       name
       numWorkloadDescendants

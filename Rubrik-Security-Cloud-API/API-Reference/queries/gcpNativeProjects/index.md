@@ -42,7 +42,6 @@ query {
       objectType
       organizationName
       projectNumber
-      region
       rscPendingObjectPauseAssignment
       slaAssignment
       slaPauseStatus

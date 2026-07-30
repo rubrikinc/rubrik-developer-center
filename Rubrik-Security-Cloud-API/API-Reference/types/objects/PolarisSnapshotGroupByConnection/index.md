@@ -25,6 +25,7 @@ Paginated list of PolarisSnapshotGroupBy objects. Each page of the results inclu
 - [AzureDevOpsRepository.snapshotGroupByConnection](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AzureDevOpsRepository/index.md)
 - [AzureNativeManagedDisk.snapshotGroupByConnection](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AzureNativeManagedDisk/index.md)
 - [AzureNativeVirtualMachine.snapshotGroupByConnection](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AzureNativeVirtualMachine/index.md)
+- [AzurePostgresFlexibleServer.snapshotGroupByConnection](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AzurePostgresFlexibleServer/index.md)
 - [AzureSqlDatabaseDb.snapshotGroupByConnection](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AzureSqlDatabaseDb/index.md)
 - [AzureSqlManagedInstanceDatabase.snapshotGroupByConnection](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AzureSqlManagedInstanceDatabase/index.md)
 - [AzureStorageAccount.snapshotGroupByConnection](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AzureStorageAccount/index.md)
@@ -44,5 +45,4 @@ Paginated list of PolarisSnapshotGroupBy objects. Each page of the results inclu
 - MicrosoftMailbox.snapshotGroupByConnection
 - MicrosoftOnedrive.snapshotGroupByConnection
 - MicrosoftOrg.snapshotGroupByConnection
-- MicrosoftSite.snapshotGroupByConnection
-- *…and 11 more*
+- *…and 13 more*

@@ -55,7 +55,7 @@ mutation PatchDb2Instance($input: PatchDb2InstanceInput!) {
           "example-string"
         ],
         "id": "example-string",
-        "isArchived": true
+        "instanceType": "DB2_INSTANCE_SUMMARY_INSTANCE_TYPE_PARTITIONED"
       }
     }
   }

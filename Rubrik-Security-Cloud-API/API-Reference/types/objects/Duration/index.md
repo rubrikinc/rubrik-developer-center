@@ -28,6 +28,10 @@ Duration.
 - [InformixSlaConfig.logFrequency](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/InformixSlaConfig/index.md)
 - [InformixSlaConfig.logRetention](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/InformixSlaConfig/index.md)
 - [ManagedVolumeSlaConfig.logRetention](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/ManagedVolumeSlaConfig/index.md)
+- [MariadbSlaConfig.differentialFrequency](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/MariadbSlaConfig/index.md)
+- [MariadbSlaConfig.differentialRetention](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/MariadbSlaConfig/index.md)
+- [MariadbSlaConfig.logFrequency](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/MariadbSlaConfig/index.md)
+- [MariadbSlaConfig.logRetention](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/MariadbSlaConfig/index.md)
 - [MongoConfig.logFrequency](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/MongoConfig/index.md)
 - [MongoConfig.logRetention](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/MongoConfig/index.md)
 - [MssqlConfig.frequency](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/MssqlConfig/index.md)
@@ -39,8 +43,4 @@ Duration.
 - [OracleConfig.logRetention](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/OracleConfig/index.md)
 - [OracleDataGuardGroup.effectiveHostLogRetention](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/OracleDataGuardGroup/index.md)
 - [OracleDataGuardGroup.effectiveLogBackupFrequency](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/OracleDataGuardGroup/index.md)
-- [OracleDataGuardGroup.effectiveLogRetention](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/OracleDataGuardGroup/index.md)
-- [OracleDatabase.effectiveHostLogRetention](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/OracleDatabase/index.md)
-- [OracleDatabase.effectiveLogBackupFrequency](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/OracleDatabase/index.md)
-- [OracleDatabase.effectiveLogRetention](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/OracleDatabase/index.md)
-- *…and 17 more*
+- *…and 21 more*

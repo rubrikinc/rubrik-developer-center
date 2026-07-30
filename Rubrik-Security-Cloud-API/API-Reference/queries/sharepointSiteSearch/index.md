@@ -1,16 +1,18 @@
 # sharepointSiteSearch
 
-Search site and descendant objects.
+Search site and descendant objects. SearchSharepointSite returns a paginated, GraphQL-shaped list of SharePoint descendant objects for the given site workload across all snapshots. Encapsulates the response shaping (filter out is_excluded_from_protection items per SPARK-151589) that previously lived in the GraphQL resolver `sharepointSiteSearch`.
 
 ## Arguments
 
-| Argument                   | Type                                                                                                                                        | Description                                                             |
-| -------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------- |
-| first                      | Int                                                                                                                                         | Returns the first n elements from the list.                             |
-| after                      | String                                                                                                                                      | Returns the elements in the list that occur after the specified cursor. |
-| siteFid *(required)*       | [UUID](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/UUID/index.md)!                                   | The fid for the site.                                                   |
-| orgId *(required)*         | [UUID](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/UUID/index.md)!                                   | Org UUID.                                                               |
-| sharepointSiteSearchFilter | [SharePointSearchFilter](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/SharePointSearchFilter/index.md) | The filter for site search.                                             |
+| Argument                   | Type                                                                                                                                        | Description                                                              |
+| -------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------ |
+| first                      | Int                                                                                                                                         | Returns the first n elements from the list.                              |
+| after                      | String                                                                                                                                      | Returns the elements in the list that occur after the specified cursor.  |
+| last                       | Int                                                                                                                                         | Returns the last n elements from the list.                               |
+| before                     | String                                                                                                                                      | Returns the elements in the list that occur before the specified cursor. |
+| siteFid *(required)*       | [UUID](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/UUID/index.md)!                                   | Workload ID of SharePoint site object.                                   |
+| orgId *(required)*         | [UUID](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/UUID/index.md)!                                   | Organization scope for the search.                                       |
+| sharepointSiteSearchFilter | [SharePointSearchFilter](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/SharePointSearchFilter/index.md) | Optional SharePoint search filter.                                       |
 
 ## Returns
 

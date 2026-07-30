@@ -44,4 +44,4 @@ Represents a node in a hierarchy path.
 - [AwsNativeDynamoDbTable.effectiveSlaSourceObject](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AwsNativeDynamoDbTable/index.md)
 - [AwsNativeDynamoDbTable.logicalPath](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AwsNativeDynamoDbTable/index.md)
 - [AwsNativeDynamoDbTable.physicalPath](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AwsNativeDynamoDbTable/index.md)
-- *…and 895 more*
+- *…and 922 more*

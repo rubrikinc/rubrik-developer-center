@@ -39,7 +39,7 @@ query DevOpsCloudAccountListLatestPermissions($input: DevOpsCloudAccountListLate
       ],
       "groupPermissions": [
         {
-          "group": "AKS_CUSTOM_PRIVATE_DNS_ZONE",
+          "group": "ADVANCED_DIAGNOSTICS",
           "permissions": [
             "example-string"
           ],

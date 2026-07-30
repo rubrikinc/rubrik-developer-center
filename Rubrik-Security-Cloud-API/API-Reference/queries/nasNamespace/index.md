@@ -22,6 +22,7 @@ query NasNamespace($fid: UUID!) {
     cdmPendingObjectPauseAssignment
     id
     isReadonly
+    isReplica
     name
     nfsDataAddresses
     numWorkloadDescendants
@@ -54,7 +55,7 @@ query NasNamespace($fid: UUID!) {
       "cdmPendingObjectPauseAssignment": "NO_PENDING_PAUSE_ASSIGNMENT",
       "id": "00000000-0000-0000-0000-000000000000",
       "isReadonly": true,
-      "name": "example-string",
+      "isReplica": true,
       "allOrgs": [
         {
           "allUrls": [

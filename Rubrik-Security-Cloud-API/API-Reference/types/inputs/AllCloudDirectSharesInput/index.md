@@ -1,6 +1,6 @@
 # AllCloudDirectSharesInput
 
-Input for recovering Cloud Direct path.
+Input for retrieving all Cloud Direct shares from a system.
 
 ## Fields
 

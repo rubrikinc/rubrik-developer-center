@@ -23,6 +23,7 @@ query VSphereResourcePool($fid: UUID!) {
     filterDescription
     hasDatastoresForRecovery
     id
+    isReplica
     name
     numWorkloadDescendants
     objectType

@@ -41,6 +41,7 @@ query CloudDirectSnapshot($snapshotFid: UUID!) {
     state
     systemId
     target
+    targetId
     type
     workloadId
   }

@@ -1,6 +1,6 @@
 # updateAccountOwner
 
-*No description available.*
+Updates the account owner.
 
 ## Arguments
 

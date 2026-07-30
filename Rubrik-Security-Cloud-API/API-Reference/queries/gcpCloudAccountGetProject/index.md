@@ -36,7 +36,7 @@ query GcpCloudAccountGetProject($input: GcpCloudAccountGetProjectReq!) {
       "featureDetails": [
         {
           "enabledPermissionGroups": [
-            "AKS_CUSTOM_PRIVATE_DNS_ZONE"
+            "ADVANCED_DIAGNOSTICS"
           ],
           "feature": "ALL",
           "roleId": "example-string",

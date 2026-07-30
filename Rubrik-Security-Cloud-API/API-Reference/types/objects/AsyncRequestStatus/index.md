@@ -40,6 +40,7 @@ Supported in v5.0+
 
 **Mutations**
 
+- [mutation: addStorageArrayV1](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/addStorageArrayV1/index.md)
 - [mutation: assignSlaToMongoDbCollection](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/assignSlaToMongoDbCollection/index.md)
 - [mutation: bulkCreateOnDemandMssqlBackup](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/bulkCreateOnDemandMssqlBackup/index.md)
 - [mutation: bulkExportMssqlDatabases](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/bulkExportMssqlDatabases/index.md)
@@ -75,6 +76,7 @@ Supported in v5.0+
 - [mutation: createOnDemandVolumeGroupBackup](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/createOnDemandVolumeGroupBackup/index.md)
 - [mutation: createOpsManagerManagedMongoSourceOnDemandSnapshot](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/createOpsManagerManagedMongoSourceOnDemandSnapshot/index.md)
 - [mutation: createOraclePdbRestore](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/createOraclePdbRestore/index.md)
+- [mutation: createPureStorageProtectionGroupSnapshot](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/createPureStorageProtectionGroupSnapshot/index.md)
 - [mutation: createSapHanaSystemRefresh](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/createSapHanaSystemRefresh/index.md)
 - [mutation: deleteDb2Database](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/deleteDb2Database/index.md)
 - [mutation: deleteDb2Instance](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/deleteDb2Instance/index.md)
@@ -134,6 +136,7 @@ Supported in v5.0+
 - [mutation: downloadOracleDatabaseSnapshot](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/downloadOracleDatabaseSnapshot/index.md)
 - [mutation: downloadOracleSnapshotFromLocation](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/downloadOracleSnapshotFromLocation/index.md)
 - [mutation: downloadOracleSnapshotFromLocationV2](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/downloadOracleSnapshotFromLocationV2/index.md)
+- [mutation: downloadPureStorageProtectionGroupSnapshotFromLocation](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/downloadPureStorageProtectionGroupSnapshotFromLocation/index.md)
 - [mutation: downloadSapHanaSnapshot](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/downloadSapHanaSnapshot/index.md)
 - [mutation: downloadSapHanaSnapshotFromLocation](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/downloadSapHanaSnapshotFromLocation/index.md)
 - [mutation: downloadSapHanaSnapshotsForPointInTimeRecovery](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/downloadSapHanaSnapshotsForPointInTimeRecovery/index.md)
@@ -154,6 +157,7 @@ Supported in v5.0+
 - [mutation: exportOracleDatabase](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/exportOracleDatabase/index.md)
 - [mutation: exportOracleTablespace](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/exportOracleTablespace/index.md)
 - [mutation: exportProxmoxVmSnapshot](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/exportProxmoxVmSnapshot/index.md)
+- [mutation: exportPureStorageProtectionGroupSnapshot](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/exportPureStorageProtectionGroupSnapshot/index.md)
 - [mutation: exportSlaManagedVolumeSnapshot](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/exportSlaManagedVolumeSnapshot/index.md)
 - [mutation: failoverHaPolicy](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/failoverHaPolicy/index.md)
 - [mutation: filesetDownloadSnapshotFiles](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/filesetDownloadSnapshotFiles/index.md)

@@ -4,9 +4,13 @@ Gets the subscriptions for the given Azure tenant.
 
 ## Arguments
 
-| Argument              | Type    | Description |
-| --------------------- | ------- | ----------- |
-| tenantId *(required)* | String! |             |
+| Argument              | Type    | Description                                                              |
+| --------------------- | ------- | ------------------------------------------------------------------------ |
+| first                 | Int     | Returns the first n elements from the list.                              |
+| after                 | String  | Returns the elements in the list that occur after the specified cursor.  |
+| last                  | Int     | Returns the last n elements from the list.                               |
+| before                | String  | Returns the elements in the list that occur before the specified cursor. |
+| tenantId *(required)* | String! | Azure tenant ID.                                                         |
 
 ## Returns
 
@@ -16,7 +20,10 @@ Gets the subscriptions for the given Azure tenant.
 
 ```graphql
 query AzureSubscriptions($tenantId: String!) {
-  azureSubscriptions(tenantId: $tenantId) {
+  azureSubscriptions(
+    tenantId: $tenantId
+    first: 10
+  ) {
     nodes {
       id
       name

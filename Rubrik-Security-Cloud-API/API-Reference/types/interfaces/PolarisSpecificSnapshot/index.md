@@ -1,6 +1,6 @@
 # PolarisSpecificSnapshot
 
-Rubrik-specific information about snapshots of specific object types. Currently, this is only valid for Azure virtual machine, Azure storage account, AWS EC2, AWS S3, GCP GCE instance, GCP Cloud SQL instance, and SaaS snapshots.
+Rubrik-specific information about snapshots of specific object types. Currently, this is only valid for Azure virtual machine, Azure storage account, AWS EC2, AWS S3, GCP GCE instance, GCP Cloud SQL instance, SaaS, and Okta tenant snapshots.
 
 ## Fields
 
@@ -14,10 +14,13 @@ Rubrik-specific information about snapshots of specific object types. Currently,
 - [AwsNativeS3SpecificSnapshot](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AwsNativeS3SpecificSnapshot/index.md)
 - [AzureNativeStorageAccountSpecificSnapshot](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AzureNativeStorageAccountSpecificSnapshot/index.md)
 - [AzureNativeVmSpecificSnapshot](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AzureNativeVmSpecificSnapshot/index.md)
+- [AzurePostgresFlexibleServerSpecificSnapshot](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AzurePostgresFlexibleServerSpecificSnapshot/index.md)
 - [AzureSqlDatabaseDbSpecificSnapshot](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AzureSqlDatabaseDbSpecificSnapshot/index.md)
 - [AzureSqlManagedInstanceDbSpecificSnapshot](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AzureSqlManagedInstanceDbSpecificSnapshot/index.md)
+- [GcpBigQueryDatasetSpecificSnapshot](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/GcpBigQueryDatasetSpecificSnapshot/index.md)
 - [GcpNativeCloudSqlSpecificSnapshot](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/GcpNativeCloudSqlSpecificSnapshot/index.md)
 - [GcpNativeGceInstanceSpecificSnapshot](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/GcpNativeGceInstanceSpecificSnapshot/index.md)
 - [IcebergTableSpecificSnapshot](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/IcebergTableSpecificSnapshot/index.md)
 - [O365SiteSpecificSnapshot](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/O365SiteSpecificSnapshot/index.md)
+- [OktaTenantSpecificSnapshot](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/OktaTenantSpecificSnapshot/index.md)
 - [SaasSnapshot](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/SaasSnapshot/index.md)

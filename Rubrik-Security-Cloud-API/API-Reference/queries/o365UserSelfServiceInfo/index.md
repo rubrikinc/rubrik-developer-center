@@ -1,6 +1,6 @@
 # o365UserSelfServiceInfo
 
-Returns the self service information for the logged-in user, which includes the user name and the M365 object details.
+GetSelfServiceInfoForCurrentUser returns the self service info for the currently logged-in user, including the user's name, OneDrive ID, and mailbox ID (if they exist).
 
 ## Returns
 

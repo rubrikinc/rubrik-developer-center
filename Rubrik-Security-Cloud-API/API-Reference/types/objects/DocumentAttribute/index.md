@@ -12,6 +12,10 @@ Represents the document attribute.
 
 ## Used By
 
+**Queries**
+
+- [query: allDocumentTypes](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/allDocumentTypes/index.md)
+
 **Referenced by**
 
 - [ClassificationPolicyDetail.documentTypes](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/ClassificationPolicyDetail/index.md)

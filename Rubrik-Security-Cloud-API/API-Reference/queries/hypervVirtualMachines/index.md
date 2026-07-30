@@ -29,6 +29,7 @@ query {
       hypervVmMountCount
       id
       isRelic
+      isReplica
       name
       numWorkloadDescendants
       objectType

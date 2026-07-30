@@ -4,12 +4,13 @@ List of GCP projects configured for a feature.
 
 ## Arguments
 
-| Argument                          | Type                                                                                                                                     | Description                                            |
-| --------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------ |
-| feature *(required)*              | [CloudAccountFeature](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/CloudAccountFeature/index.md)!    | A cloud account feature of Rubrik Security Cloud.      |
-| projectStatusFilters *(required)* | \[[CloudAccountStatus](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/CloudAccountStatus/index.md)!\]! | List of project status filters to apply.               |
-| projectSearchText *(required)*    | String!                                                                                                                                  | Search text for project name, native ID and number.    |
-| aggregateFeatures                 | Boolean                                                                                                                                  | Denotes if features are to be aggregated or flattened. |
+| Argument                          | Type                                                                                                                                      | Description                                                                                           |
+| --------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- |
+| feature                           | [CloudAccountFeature](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/CloudAccountFeature/index.md)      | A cloud account feature of Rubrik Security Cloud.                                                     |
+| features                          | \[[CloudAccountFeature](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/CloudAccountFeature/index.md)!\] | Cloud account features. Rubrik offers a cloud account feature as part of Rubrik Security Cloud (RSC). |
+| projectStatusFilters *(required)* | \[[CloudAccountStatus](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/CloudAccountStatus/index.md)!\]!  | List of project status filters to apply.                                                              |
+| projectSearchText *(required)*    | String!                                                                                                                                   | Search text for project name, native ID and number.                                                   |
+| aggregateFeatures                 | Boolean                                                                                                                                   | Denotes if features are to be aggregated or flattened.                                                |
 
 ## Returns
 
@@ -18,9 +19,8 @@ List of GCP projects configured for a feature.
 ## Sample
 
 ```graphql
-query AllGcpCloudAccountProjectsByFeature($feature: CloudAccountFeature!, $projectStatusFilters: [CloudAccountStatus!]!, $projectSearchText: String!) {
+query AllGcpCloudAccountProjectsByFeature($projectStatusFilters: [CloudAccountStatus!]!, $projectSearchText: String!) {
   allGcpCloudAccountProjectsByFeature(
-    feature: $feature
     projectStatusFilters: $projectStatusFilters
     projectSearchText: $projectSearchText
   ) {
@@ -31,7 +31,6 @@ query AllGcpCloudAccountProjectsByFeature($feature: CloudAccountFeature!, $proje
 
 ```json
 {
-  "feature": "ALL",
   "projectStatusFilters": [
     "CONNECTED"
   ],
@@ -48,7 +47,7 @@ query AllGcpCloudAccountProjectsByFeature($feature: CloudAccountFeature!, $proje
         "allEnabledFeaturesDetails": [
           {
             "enabledPermissionGroups": [
-              "AKS_CUSTOM_PRIVATE_DNS_ZONE"
+              "ADVANCED_DIAGNOSTICS"
             ],
             "feature": "ALL",
             "roleId": "example-string",
@@ -57,7 +56,7 @@ query AllGcpCloudAccountProjectsByFeature($feature: CloudAccountFeature!, $proje
         ],
         "featureDetail": {
           "enabledPermissionGroups": [
-            "AKS_CUSTOM_PRIVATE_DNS_ZONE"
+            "ADVANCED_DIAGNOSTICS"
           ],
           "feature": "ALL",
           "roleId": "example-string",

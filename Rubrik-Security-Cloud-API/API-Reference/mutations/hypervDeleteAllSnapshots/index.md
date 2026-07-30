@@ -4,9 +4,9 @@ Delete all snapshots of VM Supported in v5.0+ Delete all snapshots of a virtual 
 
 ## Arguments
 
-| Argument           | Type                                                                                                                                                       | Description                                |
-| ------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------ |
-| input *(required)* | [HypervDeleteAllSnapshotsInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/HypervDeleteAllSnapshotsInput/index.md)! | Input for HypervDeleteAllSnapshotsRequest. |
+| Argument           | Type                                                                                                                                                       | Description                                            |
+| ------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------ |
+| input *(required)* | [HypervDeleteAllSnapshotsInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/HypervDeleteAllSnapshotsInput/index.md)! | Input for InternalDeleteHypervVirtualMachineSnapshots. |
 
 ## Returns
 

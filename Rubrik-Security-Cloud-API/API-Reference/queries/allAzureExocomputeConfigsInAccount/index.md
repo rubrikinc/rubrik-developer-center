@@ -36,6 +36,7 @@ query {
           "AUSTRALIACENTRAL"
         ],
         "azureCloudAccount": {
+          "azureLocalClusterCount": 0,
           "id": "example-string",
           "name": "example-string",
           "nativeId": "example-string"

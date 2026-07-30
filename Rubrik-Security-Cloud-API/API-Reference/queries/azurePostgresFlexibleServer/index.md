@@ -18,18 +18,32 @@ Retrieves an Azure Postgres Flexible Server. For more information, see https://l
 query AzurePostgresFlexibleServer($azurePostgresFlexibleServerRubrikId: UUID!) {
   azurePostgresFlexibleServer(azurePostgresFlexibleServerRubrikId: $azurePostgresFlexibleServerRubrikId) {
     authorizedOperations
+    availabilityZone
+    backupRetentionDays
     cloudNativeId
+    computeSize
+    computeTier
+    dataEncryptionType
+    engineVersion
+    haMode
+    hostname
     id
+    isExocomputeConfigured
     isProtectable
+    isPublicNetworkAccess
     isRelic
     name
     nativeName
     numWorkloadDescendants
     objectType
+    onDemandSnapshotCount
     region
     rscPendingObjectPauseAssignment
+    skuTier
     slaAssignment
     slaPauseStatus
+    storageSizeGb
+    vCoresCount
   }
 }
 ```
@@ -47,11 +61,11 @@ query AzurePostgresFlexibleServer($azurePostgresFlexibleServerRubrikId: UUID!) {
       "authorizedOperations": [
         "DELETE_SNAPSHOT"
       ],
+      "availabilityZone": "example-string",
+      "backupRetentionDays": 0,
       "cloudNativeId": "example-string",
-      "id": "00000000-0000-0000-0000-000000000000",
-      "isProtectable": true,
-      "isRelic": true,
-      "name": "example-string",
+      "computeSize": "example-string",
+      "computeTier": "AZURE_POSTGRES_FLEXIBLE_SERVER_COMPUTE_TIER_BURSTABLE",
       "allOrgs": [
         {
           "allUrls": [

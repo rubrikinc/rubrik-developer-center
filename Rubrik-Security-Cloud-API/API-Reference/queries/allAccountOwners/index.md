@@ -20,6 +20,7 @@ query {
     isEmailEnabled
     isHidden
     lastLogin
+    patId
     status
     unreadCount
     username

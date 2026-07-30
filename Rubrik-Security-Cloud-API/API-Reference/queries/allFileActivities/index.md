@@ -6,12 +6,12 @@ List user activity for a specific file on a specific snapshot.
 
 | Argument                             | Type                                                                                                                                           | Description                                                                   |
 | ------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------- |
-| ListFileActivitiesInput *(required)* | [ListFileActivitiesInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/ListFileActivitiesInput/index.md)! | Request for getting user activity for a specific path on a specific snapshot. |
-| FileActivitiesSort *(required)*      | [FileActivitiesSort](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/FileActivitiesSort/index.md)!           | Sorts to apply when listing a file's user activities.                         |
 | first                                | Int                                                                                                                                            | Returns the first n elements from the list.                                   |
 | after                                | String                                                                                                                                         | Returns the elements in the list that occur after the specified cursor.       |
 | last                                 | Int                                                                                                                                            | Returns the last n elements from the list.                                    |
 | before                               | String                                                                                                                                         | Returns the elements in the list that occur before the specified cursor.      |
+| ListFileActivitiesInput *(required)* | [ListFileActivitiesInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/ListFileActivitiesInput/index.md)! | Request for getting user activity for a specific path on a specific snapshot. |
+| FileActivitiesSort *(required)*      | [FileActivitiesSort](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/FileActivitiesSort/index.md)!           | Sorts to apply when listing a file's user activities.                         |
 
 ## Returns
 

@@ -33,6 +33,7 @@ query FailoverClusterApps($hostFailoverClusterRoot: HostFailoverClusterRoot!) {
       failoverClusterType
       id
       isArchived
+      isReplica
       name
       numWorkloadDescendants
       objectType

@@ -1,6 +1,6 @@
 # O365TeamConvChannel
 
-*No description available.*
+Channel object consisting naturalId and name.
 
 ## Fields
 

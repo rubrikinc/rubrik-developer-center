@@ -34,6 +34,8 @@ query PhysicalHost($fid: UUID!) {
     isExchangeHost
     isMssqlHost
     isOracleHost
+    isReplica
+    lastSuccessfulUpgradeTime
     name
     nasApiEndpoint
     nasApiHostname
@@ -46,6 +48,7 @@ query PhysicalHost($fid: UUID!) {
     osType
     rbaPackageUpgradeInfo
     rbsUpgradeStatus
+    rbsVersion
     replicatedObjectCount
     resourceInfo
     slaAssignment

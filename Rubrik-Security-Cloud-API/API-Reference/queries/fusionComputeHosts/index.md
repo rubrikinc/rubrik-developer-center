@@ -31,6 +31,7 @@ query {
       hostName
       id
       ipAddresses
+      isReplica
       name
       numWorkloadDescendants
       objectType

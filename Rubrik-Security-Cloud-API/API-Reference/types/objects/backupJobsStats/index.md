@@ -17,5 +17,6 @@ Stats of the backup jobs in the last 24 hours.
 - [AtlassianSite.backupJobsStats](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AtlassianSite/index.md)
 - [Dynamics365Organization.backupJobsStats](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/Dynamics365Organization/index.md)
 - [GoogleWorkspaceOrg.backupJobsStats](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/GoogleWorkspaceOrg/index.md)
+- [PowerPlatformEnvironment.backupJobsStats](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/PowerPlatformEnvironment/index.md)
 - SaasAppsOrganization.backupJobsStats
 - [SalesforceOrganization.backupJobsStats](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/SalesforceOrganization/index.md)

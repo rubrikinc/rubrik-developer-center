@@ -4,6 +4,6 @@ Search object type.
 
 ## Fields
 
-| Field            | Type                                                                                                                           | Description |
-| ---------------- | ------------------------------------------------------------------------------------------------------------------------------ | ----------- |
-| searchObjectType | [SearchObjectType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/SearchObjectType/index.md) |             |
+| Field            | Type                                                                                                                           | Description                                              |
+| ---------------- | ------------------------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------- |
+| searchObjectType | [SearchObjectType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/SearchObjectType/index.md) | Object type (folder or email) to restrict the search to. |

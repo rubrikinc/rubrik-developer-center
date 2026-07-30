@@ -29,6 +29,7 @@ query {
       cdmPendingObjectPauseAssignment
       id
       isRelic
+      isReplica
       name
       numWorkloadDescendants
       objectType

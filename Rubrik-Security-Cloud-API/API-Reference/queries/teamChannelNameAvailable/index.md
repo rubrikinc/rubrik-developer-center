@@ -4,10 +4,10 @@ Checks the availability of the channel name in the Team.
 
 ## Arguments
 
-| Argument                 | Type                                                                                                      | Description |
-| ------------------------ | --------------------------------------------------------------------------------------------------------- | ----------- |
-| teamUUID *(required)*    | [UUID](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/UUID/index.md)! |             |
-| channelName *(required)* | String!                                                                                                   |             |
+| Argument                 | Type                                                                                                      | Description                                           |
+| ------------------------ | --------------------------------------------------------------------------------------------------------- | ----------------------------------------------------- |
+| teamUUID *(required)*    | [UUID](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/UUID/index.md)! | The UUID of the Team.                                 |
+| channelName *(required)* | String!                                                                                                   | The channel name whose availability is being checked. |
 
 ## Returns
 

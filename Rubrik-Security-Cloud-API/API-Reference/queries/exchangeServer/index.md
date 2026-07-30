@@ -22,6 +22,7 @@ query ExchangeServer($fid: UUID!) {
     cdmPendingObjectPauseAssignment
     hasVgConflict
     id
+    isReplica
     name
     numWorkloadDescendants
     objectType
@@ -53,7 +54,7 @@ query ExchangeServer($fid: UUID!) {
       "cdmPendingObjectPauseAssignment": "NO_PENDING_PAUSE_ASSIGNMENT",
       "hasVgConflict": true,
       "id": "00000000-0000-0000-0000-000000000000",
-      "name": "example-string",
+      "isReplica": true,
       "allOrgs": [
         {
           "allUrls": [

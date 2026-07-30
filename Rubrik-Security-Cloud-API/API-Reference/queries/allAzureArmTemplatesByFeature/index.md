@@ -46,7 +46,8 @@ query AllAzureArmTemplatesByFeature($input: AzureArmTemplatesByFeatureInput!) {
         "version": 0,
         "permissionsGroupVersions": [
           {
-            "permissionsGroup": "AKS_CUSTOM_PRIVATE_DNS_ZONE",
+            "deltaMigrated": true,
+            "permissionsGroup": "ADVANCED_DIAGNOSTICS",
             "version": 0
           }
         ]

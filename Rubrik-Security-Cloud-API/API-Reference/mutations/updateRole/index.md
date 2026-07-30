@@ -41,7 +41,7 @@ mutation UpdateRole($roleId: String!, $name: String!, $description: String!, $pe
           "objectIds": [
             "example-string"
           ],
-          "snappableType": "AWS_NATIVE_CONFIG"
+          "snappableType": "AUTH0_TENANT"
         }
       ],
       "operation": "ACCESS_CDM_CLUSTER"

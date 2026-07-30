@@ -35,3 +35,4 @@ Recovery contains information around a particular recovery.
 **Referenced by**
 
 - [RecoveryPlanBasicInfo.latestRecovery](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/RecoveryPlanBasicInfo/index.md)
+- [RecoveryPlanV2.latestRecovery](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/RecoveryPlanV2/index.md)

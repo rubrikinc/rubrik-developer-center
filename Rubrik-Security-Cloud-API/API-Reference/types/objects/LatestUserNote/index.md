@@ -45,4 +45,4 @@ Latest user note information.
 - [FusionComputeCluster.latestUserNote](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/FusionComputeCluster/index.md)
 - FusionComputeClusterDescendant.latestUserNote
 - FusionComputeClusterPhysicalChildType.latestUserNote
-- *…and 178 more*
+- *…and 183 more*

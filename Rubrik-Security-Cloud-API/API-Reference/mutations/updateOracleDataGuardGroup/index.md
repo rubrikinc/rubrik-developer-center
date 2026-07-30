@@ -34,6 +34,7 @@ mutation UpdateOracleDataGuardGroup($input: UpdateOracleDataGuardGroupInput!) {
     latestRecoveryPointV94
     latestRecoveryPointV95
     latestRecoveryPointV96
+    latestRecoveryPointV97
     logRatePerRmanChannelInMb
     oldestRecoveryPointV50
     oldestRecoveryPointV51
@@ -50,6 +51,7 @@ mutation UpdateOracleDataGuardGroup($input: UpdateOracleDataGuardGroupInput!) {
     oldestRecoveryPointV94
     oldestRecoveryPointV95
     oldestRecoveryPointV96
+    oldestRecoveryPointV97
     oracleHome
     preferredDgMemberUniqueNames
     ratePerRmanChannelInMb

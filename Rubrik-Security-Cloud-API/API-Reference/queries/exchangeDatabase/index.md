@@ -24,6 +24,7 @@ query ExchangeDatabase($fid: UUID!) {
     cdmPendingObjectPauseAssignment
     id
     isRelic
+    isReplica
     name
     numWorkloadDescendants
     objectType

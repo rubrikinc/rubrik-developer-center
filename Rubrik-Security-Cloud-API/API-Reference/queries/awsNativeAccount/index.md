@@ -28,6 +28,9 @@ query AwsNativeAccount($awsNativeAccountRubrikId: UUID!, $awsNativeProtectionFea
     dynamoDbTableCount
     ebsVolumeCount
     ec2InstanceCount
+    glueIcebergCatalogCount
+    glueIcebergDatabaseCount
+    glueIcebergTableCount
     id
     isProtectable
     lastRefreshedAt
@@ -37,6 +40,9 @@ query AwsNativeAccount($awsNativeAccountRubrikId: UUID!, $awsNativeProtectionFea
     rdsInstanceCount
     rscPendingObjectPauseAssignment
     s3BucketCount
+    s3TablesIcebergCatalogCount
+    s3TablesIcebergNamespaceCount
+    s3TablesIcebergTableCount
     serviceType
     slaAssignment
     slaPauseStatus

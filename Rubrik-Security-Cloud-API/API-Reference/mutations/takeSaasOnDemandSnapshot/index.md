@@ -23,7 +23,7 @@ mutation TakeSaasOnDemandSnapshot($input: TakeSaasOnDemandSnapshotInput!) {
 ```json
 {
   "input": {
-    "saasAppType": "ATLASSIAN_CONFLUENCE",
+    "saasAppType": "ANTHROPIC_CHAT",
     "workloadIds": [
       "00000000-0000-0000-0000-000000000000"
     ]

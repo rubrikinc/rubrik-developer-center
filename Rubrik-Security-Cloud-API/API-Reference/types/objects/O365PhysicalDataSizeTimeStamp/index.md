@@ -1,6 +1,6 @@
 # O365PhysicalDataSizeTimeStamp
 
-*No description available.*
+A physical data size measurement at a point in time.
 
 ## Fields
 

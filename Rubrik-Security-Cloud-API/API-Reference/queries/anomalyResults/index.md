@@ -42,6 +42,7 @@ query {
       objectType
       previousSnapshotDate
       previousSnapshotId
+      resourceDeletedAt
       severity
       snapshotDate
       snapshotFid

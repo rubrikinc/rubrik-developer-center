@@ -1,13 +1,13 @@
 # decryptExportUrl
 
-Decrypt Export URL.
+Decrypts an encrypted Export URL Specs blob.
 
 ## Arguments
 
-| Argument                       | Type                                                                                                      | Description                                                          |
-| ------------------------------ | --------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------- |
-| workloadFid *(required)*       | [UUID](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/UUID/index.md)! | The FID of the workload.                                             |
-| exportUrlSpecsEnc *(required)* | String!                                                                                                   | Encrypted string of Export URL Specs containing arbitrary characters |
+| Argument                       | Type                                                                                                      | Description                                                           |
+| ------------------------------ | --------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------- |
+| workloadFid *(required)*       | [UUID](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/UUID/index.md)! | The FID of the workload.                                              |
+| exportUrlSpecsEnc *(required)* | String!                                                                                                   | Encrypted string of Export URL Specs containing arbitrary characters. |
 
 ## Returns
 

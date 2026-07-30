@@ -1,12 +1,12 @@
 # Value
 
-*No description available.*
+Interface for different values types.
 
 ## Fields
 
-| Field           | Type    | Description |
-| --------------- | ------- | ----------- |
-| serializedValue | String! |             |
+| Field           | Type    | Description                                                                 |
+| --------------- | ------- | --------------------------------------------------------------------------- |
+| serializedValue | String! | The value rendered in its string form, primarily for values within filters. |
 
 ## Implemented By
 

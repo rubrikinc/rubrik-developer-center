@@ -23,6 +23,7 @@ query VSphereDatastoreCluster($fid: UUID!) {
     cdmPendingObjectPauseAssignment
     freeSpace
     id
+    isReplica
     isSdrsEnabled
     name
     numWorkloadDescendants

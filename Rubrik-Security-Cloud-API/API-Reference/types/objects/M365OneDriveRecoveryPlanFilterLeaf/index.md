@@ -1,0 +1,17 @@
+# M365OneDriveRecoveryPlanFilterLeaf
+
+A leaf predicate for OneDrive file items. Exactly one primitive field must be set.
+
+## Fields
+
+| Field          | Type                                                                                                                                     | Description                   |
+| -------------- | ---------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------- |
+| fileExtensions | [M365StringListFilter](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/M365StringListFilter/index.md) | Filter by file extension.     |
+| fileName       | [M365StringListFilter](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/M365StringListFilter/index.md) | Filter by file name.          |
+| fileSize       | [M365IntRangeFilter](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/M365IntRangeFilter/index.md)     | Filter by file size in bytes. |
+
+## Used By
+
+**Referenced by**
+
+- [M365RecoveryPlanFilterLeaf.onedrive](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/M365RecoveryPlanFilterLeaf/index.md)

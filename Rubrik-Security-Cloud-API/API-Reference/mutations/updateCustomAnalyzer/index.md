@@ -4,9 +4,9 @@ Update a custom analyzer.
 
 ## Arguments
 
-| Argument           | Type                                                                                                                                               | Description |
-| ------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------- | ----------- |
-| input *(required)* | [CreateCustomAnalyzerInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/CreateCustomAnalyzerInput/index.md)! |             |
+| Argument           | Type                                                                                                                                               | Description                    |
+| ------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------ |
+| input *(required)* | [CreateCustomAnalyzerInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/CreateCustomAnalyzerInput/index.md)! | The custom analyzer to update. |
 
 ## Returns
 
@@ -22,6 +22,7 @@ mutation UpdateCustomAnalyzer($input: CreateCustomAnalyzerInput!) {
     dictionaryCsv
     excludeFieldNamePattern
     excludePathPattern
+    excludeValueRegex
     id
     isInactive
     keyRegex
@@ -58,7 +59,7 @@ mutation UpdateCustomAnalyzer($input: CreateCustomAnalyzerInput!) {
       "dictionaryCsv": "example-string",
       "excludeFieldNamePattern": "example-string",
       "excludePathPattern": "example-string",
-      "id": "example-string",
+      "excludeValueRegex": "example-string",
       "analyzerRiskInstance": {
         "analyzerId": "example-string",
         "risk": "HIGH_RISK",

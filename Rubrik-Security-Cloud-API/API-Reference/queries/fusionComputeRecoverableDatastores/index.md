@@ -34,6 +34,7 @@ query {
       hosts
       id
       isLocal
+      isReplica
       name
       numWorkloadDescendants
       objectType

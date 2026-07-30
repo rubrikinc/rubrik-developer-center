@@ -33,6 +33,7 @@ query MssqlHostConfiguration($input: MssqlHostConfigInput!) {
     maxDbLoadSizeInBytes
     maxNodesForMultiNodeBackup
     maxNodesForMultiNodeRestore
+    mssqlAllowDirtyReadForAgQuery
     mssqlAllowDirtyReadForDbSizeQuery
     mssqlDatabaseQueryTimeout
     mssqlDefaultMaxDataStreamsPerDatabase

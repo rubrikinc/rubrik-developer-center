@@ -16,6 +16,7 @@
 | logicalPath                     | \[[PathNode](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/PathNode/index.md)!\]!                                             | Sequential list of the logical ancestors of this object.                            |
 | name                            | String!                                                                                                                                                            | Name of the hierarchy object.                                                       |
 | numWorkloadDescendants          | Int!                                                                                                                                                               | Number of descendant workloads of this object.                                      |
+| objectBackupWindow              | [ObjectBackupWindowStatus](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/ObjectBackupWindowStatus/index.md)                   | Object-level backup window status of the hierarchy object.                          |
 | objectPauseStatus               | [ObjectPauseStatus](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/ObjectPauseStatus/index.md)                                 | Pause status of the hierarchy object.                                               |
 | objectType                      | [HierarchyObjectTypeEnum](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/HierarchyObjectTypeEnum/index.md)!                      | Type of this object.                                                                |
 | physicalPath                    | \[[PathNode](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/PathNode/index.md)!\]!                                             | Sequential list of the physical ancestors of this object.                           |
@@ -48,3 +49,6 @@
 - [GlueIcebergCatalog](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/GlueIcebergCatalog/index.md)
 - [GlueIcebergDatabase](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/GlueIcebergDatabase/index.md)
 - [GlueIcebergTable](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/GlueIcebergTable/index.md)
+- [S3TablesIcebergCatalog](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/S3TablesIcebergCatalog/index.md)
+- [S3TablesIcebergNamespace](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/S3TablesIcebergNamespace/index.md)
+- [S3TablesIcebergTable](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/S3TablesIcebergTable/index.md)

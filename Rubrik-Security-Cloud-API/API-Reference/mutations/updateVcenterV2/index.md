@@ -41,6 +41,7 @@ mutation UpdateVcenterV2($input: UpdateVcenterV2Input!) {
         "caCerts": "example-string",
         "conflictResolutionAuthz": "VCENTER_SUMMARY_V2_CONFLICT_RESOLUTION_AUTHZ_ALLOW_AUTO_CONFLICT_RESOLUTION",
         "hostname": "example-string",
+        "isComputeVisibilityFilterDisabled": true,
         "isHotAddProxyEnabledForOnPremVcenter": true,
         "username": "example-string"
       }

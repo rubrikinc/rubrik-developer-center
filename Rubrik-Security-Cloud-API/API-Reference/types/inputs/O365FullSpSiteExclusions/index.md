@@ -1,6 +1,6 @@
 # O365FullSpSiteExclusions
 
-Configuration for the exclusion of SharePoint objects under a site collection from protection.
+SharePoint objects excluded under a site collection. Used as GraphQL input `O365FullSpSiteExclusions` and output `FullSpSiteExclusions`.
 
 ## Fields
 

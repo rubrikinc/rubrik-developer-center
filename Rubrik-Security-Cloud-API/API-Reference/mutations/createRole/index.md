@@ -38,7 +38,7 @@ mutation CreateRole($name: String!, $description: String!, $permissions: [Permis
           "objectIds": [
             "example-string"
           ],
-          "snappableType": "AWS_NATIVE_CONFIG"
+          "snappableType": "AUTH0_TENANT"
         }
       ],
       "operation": "ACCESS_CDM_CLUSTER"

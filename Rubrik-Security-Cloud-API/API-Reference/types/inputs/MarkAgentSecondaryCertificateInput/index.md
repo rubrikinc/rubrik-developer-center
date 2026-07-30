@@ -8,3 +8,4 @@ Input for operation to mark a secondary cluster certificate to be asynchronously
 | ----------- | ------- | ---------------------------------------------------------------- |
 | certId      | String! | Required. ID of certificate to add.                              |
 | clusterUuid | String! | Required. UUID used to identify the cluster the request goes to. |
+| hostId      | String  | Host to scope the certificate to.                                |

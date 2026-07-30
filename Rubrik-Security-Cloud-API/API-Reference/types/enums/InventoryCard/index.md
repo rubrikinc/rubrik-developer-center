@@ -41,6 +41,7 @@ Inventory Card options that the user can select as a workload.
 | M365_BACKUP_STORAGE            | Inventory Card is Microsoft 365 Backup Storage.   |
 | MANAGED_VOLUMES                | Inventory Card is Managed Volumes.                |
 | MANAGED_VOLUMES_CDM            | Inventory Card is Managed Volumes CDM.            |
+| MARIADB                        | Inventory card is MariaDB.                        |
 | MICROSOFT_365                  | Inventory Card is Microsoft 365.                  |
 | MONGO                          | Inventory Card is Mongo.                          |
 | MONGODB                        | Inventory Card is MongoDB.                        |
@@ -56,9 +57,12 @@ Inventory Card options that the user can select as a workload.
 | OPENSTACK                      | Inventory card is OpenStack.                      |
 | ORACLE                         | Inventory Card is Oracle.                         |
 | ORACLE_DBS_CDM                 | Inventory Card is Oracle DBs.                     |
+| PING_FEDERATE                  | Inventory card is PingFederate.                   |
 | POSTGRESQL                     | Inventory Card is PostgreSQL.                     |
+| POWER_PLATFORM                 | Inventory card is Microsoft Power Platform.       |
 | PROXMOX                        | Inventory card is Proxmox.                        |
 | PURE_STORAGE                   | Inventory Card is Pure Storage.                   |
+| S3_TABLES_ICEBERG              | Inventory card is AWS S3 Tables Iceberg.          |
 | SALESFORCE                     | Inventory card is Salesforce.                     |
 | SAP_HANA                       | Inventory Card is Sap Hana.                       |
 | SNAPMIRROR                     | Inventory Card is Snapmirror.                     |

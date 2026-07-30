@@ -1,17 +1,19 @@
 # snapshotEventSearch
 
-*No description available.*
+SearchSnapshotEvents returns a paginated, GraphQL-shaped list of calendar folders and events inside a single snapshot. Encapsulates the snapshot-expiry data check and the calendar response shaping previously performed in the GraphQL resolver `snapshotEventSearch`.
 
 ## Arguments
 
-| Argument                  | Type                                                                                                                                    | Description                                                             |
-| ------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------- |
-| first                     | Int                                                                                                                                     | Returns the first n elements from the list.                             |
-| after                     | String                                                                                                                                  | Returns the elements in the list that occur after the specified cursor. |
-| snappableFid *(required)* | [UUID](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/UUID/index.md)!                               | The FID for the workload.                                               |
-| snapshotFid *(required)*  | [UUID](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/UUID/index.md)!                               | The ID of the snapshot.                                                 |
-| orgId *(required)*        | [UUID](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/UUID/index.md)!                               | Org UUID.                                                               |
-| calendarSearchFilter      | [CalendarSearchFilter](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/CalendarSearchFilter/index.md) | Search filter for calendar search.                                      |
+| Argument                  | Type                                                                                                                                    | Description                                                              |
+| ------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------ |
+| first                     | Int                                                                                                                                     | Returns the first n elements from the list.                              |
+| after                     | String                                                                                                                                  | Returns the elements in the list that occur after the specified cursor.  |
+| last                      | Int                                                                                                                                     | Returns the last n elements from the list.                               |
+| before                    | String                                                                                                                                  | Returns the elements in the list that occur before the specified cursor. |
+| snappableFid *(required)* | [UUID](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/UUID/index.md)!                               | The FID for the workload.                                                |
+| snapshotFid *(required)*  | [UUID](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/UUID/index.md)!                               | The ID of the snapshot.                                                  |
+| orgId *(required)*        | [UUID](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/UUID/index.md)!                               | Org UUID.                                                                |
+| calendarSearchFilter      | [CalendarSearchFilter](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/CalendarSearchFilter/index.md) | Search filter for calendar search.                                       |
 
 ## Returns
 

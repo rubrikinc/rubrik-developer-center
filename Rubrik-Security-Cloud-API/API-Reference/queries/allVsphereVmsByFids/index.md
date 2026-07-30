@@ -43,6 +43,7 @@ query AllVsphereVmsByFids($fids: [UUID!]!) {
       isArrayIntegrationPossible
       isBlueprintChild
       isRelic
+      isReplica
       name
       numWorkloadDescendants
       objectType

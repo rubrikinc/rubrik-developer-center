@@ -36,3 +36,4 @@ Supported in v5.0+
 - [ManagedVolumeSnapshotSummary.baseSnapshotSummary](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/ManagedVolumeSnapshotSummary/index.md)
 - [NutanixVmSnapshotSummary.baseSnapshotSummary](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/NutanixVmSnapshotSummary/index.md)
 - [OracleDbSnapshotSummary.baseSnapshotSummary](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/OracleDbSnapshotSummary/index.md)
+- [PureStorageProtectionGroupSnapshotSummary.baseSnapshotSummary](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/PureStorageProtectionGroupSnapshotSummary/index.md)

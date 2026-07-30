@@ -35,6 +35,7 @@ query {
       isGlobalCatalog
       isReadOnly
       isRelic
+      isReplica
       macAddress
       macAddresses
       name

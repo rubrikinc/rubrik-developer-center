@@ -31,6 +31,7 @@ query FusionComputeVirtualMachine($fid: UUID!) {
     id
     ipAddresses
     isRelic
+    isReplica
     name
     numWorkloadDescendants
     objectType

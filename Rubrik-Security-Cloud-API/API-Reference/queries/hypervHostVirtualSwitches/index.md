@@ -1,6 +1,6 @@
 # hypervHostVirtualSwitches
 
-Get virtual switches on Hyper-V host Supported in v9.6 Retrieves the list of virtual switches configured on a Hyper-V host.
+Get virtual switches on Hyper-V host Supported in v9.6+ Retrieves the list of virtual switches configured on a Hyper-V host.
 
 ## Arguments
 

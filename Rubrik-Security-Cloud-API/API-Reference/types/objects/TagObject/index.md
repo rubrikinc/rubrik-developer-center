@@ -4,10 +4,10 @@ Key-value pair of string.
 
 ## Fields
 
-| Field | Type    | Description                |
-| ----- | ------- | -------------------------- |
-| key   | String! | Key of the tag or label.   |
-| value | String! | Value of the tag or label. |
+| Field | Type    | Description        |
+| ----- | ------- | ------------------ |
+| key   | String! | Key for the tag.   |
+| value | String! | Value for the tag. |
 
 ## Used By
 

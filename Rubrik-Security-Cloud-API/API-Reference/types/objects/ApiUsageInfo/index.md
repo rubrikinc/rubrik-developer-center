@@ -16,5 +16,6 @@ API usage information for an organization.
 - [AtlassianSite.apiUsage](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AtlassianSite/index.md)
 - [Dynamics365Organization.apiUsage](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/Dynamics365Organization/index.md)
 - [GoogleWorkspaceOrg.apiUsage](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/GoogleWorkspaceOrg/index.md)
+- [PowerPlatformEnvironment.apiUsage](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/PowerPlatformEnvironment/index.md)
 - SaasAppsOrganization.apiUsage
 - [SalesforceOrganization.apiUsage](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/SalesforceOrganization/index.md)

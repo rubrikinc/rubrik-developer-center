@@ -29,6 +29,7 @@ query FusionComputeDatastore($fid: UUID!) {
     hosts
     id
     isLocal
+    isReplica
     name
     numWorkloadDescendants
     objectType

@@ -17,3 +17,4 @@ Paginated list of CdmWorkloadSnapshot objects. Each page of the results includes
 
 - [CdmGroupedSnapshot.cdmSnapshots](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/CdmGroupedSnapshot/index.md)
 - [MssqlDatabase.cdmSnapshots](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/MssqlDatabase/index.md)
+- [PureStorageProtectionGroupV1.cdmSnapshots](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/PureStorageProtectionGroupV1/index.md)

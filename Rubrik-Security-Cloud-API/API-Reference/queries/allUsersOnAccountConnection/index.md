@@ -41,6 +41,7 @@ query AllUsersOnAccountConnection($shouldGetLocalUsersOnly: Boolean!) {
       isEmailEnabled
       isHidden
       lastLogin
+      patId
       status
       unreadCount
       username

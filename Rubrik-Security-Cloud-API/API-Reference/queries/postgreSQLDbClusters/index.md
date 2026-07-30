@@ -29,6 +29,7 @@ query {
       clusterMode
       id
       isRelic
+      isReplica
       name
       numWorkloadDescendants
       objectType

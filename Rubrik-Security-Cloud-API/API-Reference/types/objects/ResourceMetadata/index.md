@@ -13,3 +13,4 @@ Metadata for the resource.
 **Referenced by**
 
 - [PolicyViolation.resourceMetadata](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/PolicyViolation/index.md)
+- [PolicyViolationsByResource.resourceMetadata](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/PolicyViolationsByResource/index.md)

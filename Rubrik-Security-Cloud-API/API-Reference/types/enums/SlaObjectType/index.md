@@ -39,6 +39,7 @@ Type of objects managed by SLA Domains.
 | KUPR_OBJECT_TYPE                           | Kubernetes object.                                                                                                              |
 | M365_BACKUP_STORAGE_OBJECT_TYPE            | Microsoft 365 Backup Storage object.                                                                                            |
 | MANAGED_VOLUME_OBJECT_TYPE                 | Managed Volume object.                                                                                                          |
+| MARIADB_OBJECT_TYPE                        | MariaDB object.                                                                                                                 |
 | MONGODB_OBJECT_TYPE                        | MongoDB object.                                                                                                                 |
 | MONGO_OBJECT_TYPE                          | CDM Mongo object.                                                                                                               |
 | MSSQL_OBJECT_TYPE                          | MSSQL object.                                                                                                                   |
@@ -53,9 +54,11 @@ Type of objects managed by SLA Domains.
 | ORACLE_OBJECT_TYPE                         | Oracle object.                                                                                                                  |
 | PING_FEDERATE_OBJECT_TYPE                  | Ping Federate object.                                                                                                           |
 | POSTGRES_DB_CLUSTER_OBJECT_TYPE            | PostgreSQL DB Cluster object.                                                                                                   |
+| POWER_PLATFORM_OBJECT_TYPE                 | Power Platform SLA object type. Covers the environment plus all Power Platform objects (canvas app, model-driven app, flow).    |
 | PROXMOX_OBJECT_TYPE                        | Proxmox object.                                                                                                                 |
 | PURE_STORAGE_OBJECT_TYPE                   | Pure Storage object.                                                                                                            |
 | RSC_TAG_OBJECT_TYPE                        | RSC tag object. Used when an SLA Domain is assigned to an RSC tag so that assigned objects inherit the SLA Domain from the tag. |
+| S3_TABLES_ICEBERG_TABLE_OBJECT_TYPE        | S3 Tables Iceberg Table object.                                                                                                 |
 | SALESFORCE_OBJECT_TYPE                     | Salesforce object.                                                                                                              |
 | SAP_HANA_OBJECT_TYPE                       | SAP HANA object.                                                                                                                |
 | SNAPMIRROR_CLOUD_OBJECT_TYPE               | SnapMirror Cloud object.                                                                                                        |

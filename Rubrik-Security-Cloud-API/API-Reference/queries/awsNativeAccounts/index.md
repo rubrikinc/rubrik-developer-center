@@ -37,6 +37,9 @@ query AwsNativeAccounts($awsNativeProtectionFeature: AwsNativeProtectionFeature!
       dynamoDbTableCount
       ebsVolumeCount
       ec2InstanceCount
+      glueIcebergCatalogCount
+      glueIcebergDatabaseCount
+      glueIcebergTableCount
       id
       isProtectable
       lastRefreshedAt
@@ -46,6 +49,9 @@ query AwsNativeAccounts($awsNativeProtectionFeature: AwsNativeProtectionFeature!
       rdsInstanceCount
       rscPendingObjectPauseAssignment
       s3BucketCount
+      s3TablesIcebergCatalogCount
+      s3TablesIcebergNamespaceCount
+      s3TablesIcebergTableCount
       serviceType
       slaAssignment
       slaPauseStatus

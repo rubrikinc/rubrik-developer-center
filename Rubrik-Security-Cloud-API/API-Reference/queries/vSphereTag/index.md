@@ -23,6 +23,7 @@ query VSphereTag($fid: UUID!) {
     filterDescription
     id
     isFilter
+    isReplica
     name
     numWorkloadDescendants
     objectIds

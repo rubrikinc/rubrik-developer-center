@@ -4,10 +4,10 @@ Download file results in CSV format.
 
 ## Arguments
 
-| Argument             | Type                                                                                                                                                        | Description |
-| -------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------- |
-| crawlId *(required)* | String!                                                                                                                                                     |             |
-| downloadFilter       | [DownloadResultsCsvFiltersInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/DownloadResultsCsvFiltersInput/index.md) |             |
+| Argument             | Type                                                                                                                                                        | Description                                                |
+| -------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------- |
+| crawlId *(required)* | String!                                                                                                                                                     | Identifier of the crawl whose file results are downloaded. |
+| downloadFilter       | [DownloadResultsCsvFiltersInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/DownloadResultsCsvFiltersInput/index.md) | Filters applied to the file results included in the CSV.   |
 
 ## Returns
 

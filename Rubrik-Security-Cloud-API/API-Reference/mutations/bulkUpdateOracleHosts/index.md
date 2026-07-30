@@ -37,7 +37,11 @@ mutation BulkUpdateOracleHosts($input: BulkUpdateOracleHostsInput!) {
   "data": {
     "bulkUpdateOracleHosts": {
       "responses": [
-        {}
+        {
+          "excludedDbUniqueNames": [
+            "example-string"
+          ]
+        }
       ]
     }
   }

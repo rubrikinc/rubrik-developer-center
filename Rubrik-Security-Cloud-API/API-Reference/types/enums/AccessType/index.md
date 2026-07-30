@@ -1,6 +1,6 @@
 # AccessType
 
-*No description available.*
+Type of access a principal has to a file.
 
 ## Values
 

@@ -33,6 +33,7 @@ query MssqlDatabase($fid: UUID!) {
     isMount
     isOnline
     isRelic
+    isReplica
     logBackupFrequencyInSeconds
     logBackupRetentionInHours
     name

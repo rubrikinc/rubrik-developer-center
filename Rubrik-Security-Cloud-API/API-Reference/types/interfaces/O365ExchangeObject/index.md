@@ -6,7 +6,7 @@ O365ExchangeObject is the GraphQL interface implemented by all Exchange-domain i
 
 | Field          | Type    | Description                                                      |
 | -------------- | ------- | ---------------------------------------------------------------- |
-| id             | String! | The ID of the O365 exchange object.                              |
+| id             | String! | The ID of the Microsoft 365 Exchange object.                     |
 | parentFolderId | String  | The parent folder ID of the object (ROOT indicates root folder). |
 
 ## Implemented By

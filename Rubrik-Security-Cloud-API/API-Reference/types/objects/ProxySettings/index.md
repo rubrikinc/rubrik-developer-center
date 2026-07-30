@@ -22,3 +22,6 @@ Proxy settings for target.
 - [RubrikManagedAwsTarget.proxySettings](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/RubrikManagedAwsTarget/index.md)
 - [RubrikManagedAzureTarget.proxySettings](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/RubrikManagedAzureTarget/index.md)
 - [RubrikManagedGcpTarget.archivalProxySettings](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/RubrikManagedGcpTarget/index.md)
+- [RubrikManagedRcsTarget.proxySettings](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/RubrikManagedRcsTarget/index.md)
+- [RubrikManagedRcvAwsTarget.proxySettings](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/RubrikManagedRcvAwsTarget/index.md)
+- [RubrikManagedRcvGcpTarget.proxySettings](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/RubrikManagedRcvGcpTarget/index.md)

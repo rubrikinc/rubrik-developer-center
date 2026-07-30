@@ -1,12 +1,12 @@
 # addConfiguredGroupToHierarchy
 
-Add a Configured Group to the O365 hierarchy.
+Adds a configured group to the O365 hierarchy.
 
 ## Arguments
 
-| Argument           | Type                                                                                                                                                                 | Description                                               |
-| ------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------- |
-| input *(required)* | [AddConfiguredGroupToHierarchyInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/AddConfiguredGroupToHierarchyInput/index.md)! | The input for the AddConfiguredGroupToHierarchy mutation. |
+| Argument           | Type                                                                                                                                                                 | Description                                                |
+| ------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------- |
+| input *(required)* | [AddConfiguredGroupToHierarchyInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/AddConfiguredGroupToHierarchyInput/index.md)! | Input for adding a configured group to the O365 hierarchy. |
 
 ## Returns
 

@@ -33,6 +33,7 @@ query {
       id
       isArchived
       isRelic
+      isReplica
       lastRefreshTime
       managementType
       name

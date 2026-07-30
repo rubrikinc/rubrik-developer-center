@@ -24,6 +24,7 @@ query HypervVirtualMachine($fid: UUID!) {
     hypervVmMountCount
     id
     isRelic
+    isReplica
     name
     numWorkloadDescendants
     objectType

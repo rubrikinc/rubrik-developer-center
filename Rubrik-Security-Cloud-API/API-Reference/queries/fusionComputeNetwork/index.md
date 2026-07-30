@@ -24,6 +24,7 @@ query FusionComputeNetwork($fid: UUID!) {
     fcNetworkId
     hostIds
     id
+    isReplica
     name
     networkName
     networkType

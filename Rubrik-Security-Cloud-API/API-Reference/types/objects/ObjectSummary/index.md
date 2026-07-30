@@ -1,6 +1,6 @@
 # ObjectSummary
 
-*No description available.*
+Summary of a managed object, identifying it and describing its type and state.
 
 ## Fields
 

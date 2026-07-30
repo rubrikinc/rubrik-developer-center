@@ -1,6 +1,6 @@
 # DownloadResultsCsvReply
 
-*No description available.*
+Reply containing the link to download file results in CSV format.
 
 ## Fields
 

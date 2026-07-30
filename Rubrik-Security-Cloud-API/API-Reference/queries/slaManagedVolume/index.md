@@ -25,6 +25,7 @@ query SlaManagedVolume($fid: UUID!) {
     clientNamePatterns
     id
     isRelic
+    isReplica
     lastResetReason
     managedVolumeType
     mountState

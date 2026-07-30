@@ -15,3 +15,4 @@ Count of sensitive files labeled under the MIP Label.
 
 - [FileResult.mipLabelsSummary](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/FileResult/index.md)
 - [PolicyObj.mipLabelsSummary](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/PolicyObj/index.md)
+- [SensitiveDataSummaryBreakdown.mipLabels](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/SensitiveDataSummaryBreakdown/index.md)

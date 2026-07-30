@@ -21,6 +21,7 @@ query MysqlDatabase($fid: UUID!) {
     cdmPendingObjectPauseAssignment
     id
     isRelic
+    isReplica
     name
     numWorkloadDescendants
     objectType
@@ -47,8 +48,8 @@ query MysqlDatabase($fid: UUID!) {
       "cdmPendingObjectPauseAssignment": "NO_PENDING_PAUSE_ASSIGNMENT",
       "id": "00000000-0000-0000-0000-000000000000",
       "isRelic": true,
+      "isReplica": true,
       "name": "example-string",
-      "numWorkloadDescendants": 0,
       "allOrgs": [
         {
           "allUrls": [

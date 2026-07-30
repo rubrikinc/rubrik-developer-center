@@ -29,6 +29,7 @@ query {
       fcNetworkId
       hostIds
       id
+      isReplica
       name
       networkName
       networkType

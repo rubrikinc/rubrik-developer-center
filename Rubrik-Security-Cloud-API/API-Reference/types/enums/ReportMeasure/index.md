@@ -9,6 +9,7 @@ All reporting measures.
 | ALL_MEASURES                        | Represents all measures in the table or chart schema.                        |
 | ARCHIVAL_COMPLIANCE_RATE            | Archival compliance rate.                                                    |
 | ARCHIVAL_SNAPSHOT_LAG_COUNT         | The archival snapshot lag count.                                             |
+| ARCHIVAL_STORAGE_COST               | Archival storage cost (S3 archival buckets).                                 |
 | ARCHIVE_COUNT                       | The archive event count measure.                                             |
 | ARCHIVE_DATA_REDUCTION              | The archive data reduction measure.                                          |
 | ARCHIVE_DEDUP_RATIO                 | The archive deduplication ratio measure.                                     |
@@ -27,6 +28,7 @@ All reporting measures.
 | BACK_UP_COMPLIANCE_RATE             | Back up compliance rate.                                                     |
 | CANCELED_TASK_COUNT                 | The canceled task count measure.                                             |
 | CLUSTER_COUNT                       | The cluster count measure.                                                   |
+| COMPUTE_COST                        | Compute cost (exocompute, restore/export instances).                         |
 | DATA_TRANSFERRED                    | The total amount of data successfully transferred during a backup operation. |
 | DATA_TRANSFERRED_OVER_WIRE          | The amount of data transmitted over the network during a backup operation.   |
 | DISK_CAPACITY                       | The total capacity of disks in bytes.                                        |
@@ -77,6 +79,7 @@ All reporting measures.
 | RECOVERY_COUNT                      | The recovery event count measure.                                            |
 | RECOVERY_EVENT_COUNT                | The recovery event count.                                                    |
 | REPLICATION_COMPLIANCE_RATE         | Replication compliance rate.                                                 |
+| REPLICATION_COST                    | Replication cost (replica buckets, DynamoDB).                                |
 | REPLICATION_COUNT                   | The replication event count measure.                                         |
 | REPLICATION_DATA_LAG_COUNT          | The replication data lag count.                                              |
 | REPLICATION_EVENT_COUNT             | The replication event count.                                                 |
@@ -89,6 +92,7 @@ All reporting measures.
 | SENSITIVE_FILES                     | The sensitive files measure.                                                 |
 | SENSITIVE_HITS                      | The sensitive hits measure.                                                  |
 | SOURCE_SIZE                         | NCD The source size measure.                                                 |
+| SOURCE_SNAPSHOT_COST                | Source snapshot cost (EC2, EBS, RDS backups).                                |
 | SUCCEEDED_TASK_COUNT                | The succeeded task count measure.                                            |
 | SUCCEEDED_WITH_WARNINGS_TASK_COUNT  | The total number of tasks that succeeded with warnings.                      |
 | SUCCESS_RATE                        | Success rate.                                                                |
@@ -97,10 +101,12 @@ All reporting measures.
 | TASK_COUNT_BY_TASK_STATUS           | The task count by task status measure.                                       |
 | TASK_DURATION                       | The task duration measure.                                                   |
 | THREAT_FAMILIES_LIST                | The threat families list measure.                                            |
+| TOTAL_CLOUD_COST                    | Total cloud cost across all dimensions.                                      |
 | TOTAL_COMPLIANCE_RATE               | Total compliance rate.                                                       |
 | TOTAL_FILES_TRANSFERRED             | The total number of transferred files.                                       |
 | TOTAL_SNAPSHOT_COUNT                | The total snapshot count.                                                    |
 | TRANSFERRED_BYTES                   | The transferred bytes measure.                                               |
+| TRANSIENT_RESOURCE_COST             | Transient resource cost (temporary EBS volumes).                             |
 | UNREADABLE_OBJECT_COUNT             | The unreadable object count measure.                                         |
 | USED_BYTES                          | The used bytes measure.                                                      |
 | VIOLATIONS_COUNT                    | The total number of violations.                                              |

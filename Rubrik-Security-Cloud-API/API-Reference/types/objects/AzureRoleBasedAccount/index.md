@@ -1,6 +1,6 @@
 # AzureRoleBasedAccount
 
-*No description available.*
+Azure role based Account specific info.
 
 **Implements:** [CloudAccount](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/CloudAccount/index.md)
 

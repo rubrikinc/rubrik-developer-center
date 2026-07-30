@@ -14,3 +14,4 @@ IP allow list of Rubrik cluster mappings.
 **Referenced by**
 
 - [RubrikManagedRcsTarget.clusterIpMapping](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/RubrikManagedRcsTarget/index.md)
+- [RubrikManagedRcvAwsTarget.allowList](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/RubrikManagedRcvAwsTarget/index.md)

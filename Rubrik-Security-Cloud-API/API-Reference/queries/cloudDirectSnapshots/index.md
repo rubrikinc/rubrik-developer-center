@@ -47,6 +47,7 @@ query {
       state
       systemId
       target
+      targetId
       type
       workloadId
     }

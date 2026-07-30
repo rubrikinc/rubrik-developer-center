@@ -23,6 +23,7 @@ query Db2Instance($id: UUID!) {
     containsHadrDatabase
     id
     instanceType
+    isReplica
     lastRefreshTime
     lastSyncTime
     name

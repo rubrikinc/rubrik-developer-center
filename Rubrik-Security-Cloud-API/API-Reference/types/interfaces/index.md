@@ -1,6 +1,6 @@
 # Interfaces
 
-181 types.
+183 types.
 
 [ActiveDirectoryDomainDescendantType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/ActiveDirectoryDomainDescendantType/index.md)\
 [ActiveDirectoryDomainPhysicalChildType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/ActiveDirectoryDomainPhysicalChildType/index.md)\
@@ -135,6 +135,8 @@
 [PolarisHierarchySnappable](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/PolarisHierarchySnappable/index.md)\
 [PolarisSpecificSnapshot](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/PolarisSpecificSnapshot/index.md)\
 [ProtectedObjectSummary](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/ProtectedObjectSummary/index.md)\
+[PureStorageArrayDescendantV1](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/PureStorageArrayDescendantV1/index.md)\
+[PureStorageArrayLogicalChildType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/PureStorageArrayLogicalChildType/index.md)\
 [RequestedChangesTemplate](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/RequestedChangesTemplate/index.md)\
 [SaasAppsOrganization](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/SaasAppsOrganization/index.md)\
 [SapHanaSystemDescendantType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/SapHanaSystemDescendantType/index.md)\

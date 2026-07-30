@@ -1,16 +1,16 @@
 # sonarUserGroups
 
-*No description available.*
+Returns a paginated list of user groups visible in the user awareness experience.
 
 ## Arguments
 
 | Argument | Type                                                                                                                                                  | Description                                                              |
 | -------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------ |
-| filter   | [ListAccessGroupsFilterInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/ListAccessGroupsFilterInput/index.md) |                                                                          |
 | first    | Int                                                                                                                                                   | Returns the first n elements from the list.                              |
 | after    | String                                                                                                                                                | Returns the elements in the list that occur after the specified cursor.  |
 | last     | Int                                                                                                                                                   | Returns the last n elements from the list.                               |
 | before   | String                                                                                                                                                | Returns the elements in the list that occur before the specified cursor. |
+| filter   | [ListAccessGroupsFilterInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/ListAccessGroupsFilterInput/index.md) | Optional filter to narrow the returned groups by name or user.           |
 
 ## Returns
 

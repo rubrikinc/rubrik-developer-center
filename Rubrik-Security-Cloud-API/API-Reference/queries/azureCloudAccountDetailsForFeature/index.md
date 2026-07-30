@@ -38,7 +38,7 @@ query AzureCloudAccountDetailsForFeature($featureId: UUID!) {
     "azureCloudAccountDetailsForFeature": {
       "azureCloudType": "AZURECHINACLOUD",
       "permissionsGroups": [
-        "AKS_CUSTOM_PRIVATE_DNS_ZONE"
+        "ADVANCED_DIAGNOSTICS"
       ],
       "subscriptionId": "example-string",
       "tenantDomain": "example-string",

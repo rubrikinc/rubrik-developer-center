@@ -1,6 +1,6 @@
 # InodeType
 
-*No description available.*
+Type of filesystem inode (file or directory).
 
 ## Values
 

@@ -22,3 +22,6 @@ Represents a tag key-value pair of an AWS resource.
 - [GlueIcebergCatalog.tags](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/GlueIcebergCatalog/index.md)
 - [GlueIcebergDatabase.tags](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/GlueIcebergDatabase/index.md)
 - [GlueIcebergTable.tags](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/GlueIcebergTable/index.md)
+- [S3TablesIcebergCatalog.tags](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/S3TablesIcebergCatalog/index.md)
+- [S3TablesIcebergNamespace.tags](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/S3TablesIcebergNamespace/index.md)
+- [S3TablesIcebergTable.tags](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/S3TablesIcebergTable/index.md)

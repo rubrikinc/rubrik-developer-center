@@ -1,14 +1,14 @@
 # azureO365CheckStorageAccountName
 
-Checks the storage account name.
+CheckAzureStorageAccountName checks that given storage account name is valid and available for use in Azure.
 
 ## Arguments
 
-| Argument                          | Type                                                                                                      | Description |
-| --------------------------------- | --------------------------------------------------------------------------------------------------------- | ----------- |
-| tenantId *(required)*             | String!                                                                                                   |             |
-| subscriptionId *(required)*       | [UUID](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/UUID/index.md)! |             |
-| storage_account_name *(required)* | String!                                                                                                   |             |
+| Argument                          | Type                                                                                                      | Description                              |
+| --------------------------------- | --------------------------------------------------------------------------------------------------------- | ---------------------------------------- |
+| tenantId *(required)*             | String!                                                                                                   | The Azure tenant ID.                     |
+| subscriptionId *(required)*       | [UUID](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/UUID/index.md)! | The Azure subscription ID.               |
+| storage_account_name *(required)* | String!                                                                                                   | The Azure storage account name to check. |
 
 ## Returns
 

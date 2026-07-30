@@ -13,3 +13,4 @@ Recovery statistics for a specific recovery plan. Contains aggregate recovery co
 **Referenced by**
 
 - [RecoveryPlanBasicInfo.recoveryPlanStats](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/RecoveryPlanBasicInfo/index.md)
+- [RecoveryPlanV2.recoveryPlanStats](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/RecoveryPlanV2/index.md)

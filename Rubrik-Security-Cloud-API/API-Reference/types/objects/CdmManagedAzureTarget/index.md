@@ -1,6 +1,6 @@
 # CdmManagedAzureTarget
 
-Specific info for Azure target created on Cdm.
+Specific information for Azure target created on CDM cluster.
 
 **Implements:** [Target](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/Target/index.md)
 
@@ -12,8 +12,8 @@ Specific info for Azure target created on Cdm.
 | clusterName                       | String                                                                                                                                                     | Name of the Rubrik cluster that archives to this archival location.                                                         |
 | consumedBytes                     | [Long](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/Long/index.md)                                                   | Number of bytes stored on the target.                                                                                       |
 | failedTasks                       | Int                                                                                                                                                        | Number of archiving tasks failed on this target.                                                                            |
-| id                                | String!                                                                                                                                                    | ID of the Azure location.                                                                                                   |
-| immutabilitySettings              | [AzureImmutabilitySettingsType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AzureImmutabilitySettingsType/index.md) | Immutability info of Azure location.                                                                                        |
+| id                                | String!                                                                                                                                                    | The ID of the target.                                                                                                       |
+| immutabilitySettings              | [AzureImmutabilitySettingsType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AzureImmutabilitySettingsType/index.md) | Immutability settings of the Azure archival target.                                                                         |
 | instanceType                      | [InstanceTypeEnum](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/InstanceTypeEnum/index.md)!                            | Instance type of the Azure location.                                                                                        |
 | isActive                          | Boolean!                                                                                                                                                   | Specifies whether the status of the target is active. When set to false, the target is either paused or not enabled.        |
 | isArchived                        | Boolean!                                                                                                                                                   | Specifies whether the target is archived.                                                                                   |

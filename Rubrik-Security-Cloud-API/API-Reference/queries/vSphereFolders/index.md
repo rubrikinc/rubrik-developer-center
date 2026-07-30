@@ -28,6 +28,7 @@ query {
       datacenterId
       folderType
       id
+      isReplica
       name
       numWorkloadDescendants
       objectType

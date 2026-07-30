@@ -1,6 +1,6 @@
 # SlaArchivalCluster
 
-Information about the Rubrik cluster where the archival location is created.
+Cluster specific information.
 
 ## Fields
 

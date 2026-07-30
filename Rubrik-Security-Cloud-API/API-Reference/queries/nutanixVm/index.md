@@ -30,6 +30,7 @@ query NutanixVm($fid: UUID!) {
     isAgentRegistered
     isBlueprintChild
     isRelic
+    isReplica
     name
     numWorkloadDescendants
     nutanixSnapshotConsistencyMandate

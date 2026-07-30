@@ -26,6 +26,7 @@ query AwsNativeS3Bucket($s3BucketRubrikId: UUID!) {
     earliestRestoreTime
     id
     isExocomputeConfigured
+    isInfrastructureAlertsEnabled
     isOnboarding
     isProtectable
     isRelic

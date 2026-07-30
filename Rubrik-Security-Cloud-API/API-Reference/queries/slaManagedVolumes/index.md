@@ -30,6 +30,7 @@ query {
       clientNamePatterns
       id
       isRelic
+      isReplica
       lastResetReason
       managedVolumeType
       mountState

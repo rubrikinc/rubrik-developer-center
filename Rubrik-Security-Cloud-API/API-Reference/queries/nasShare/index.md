@@ -28,8 +28,10 @@ query NasShare($fid: UUID!) {
     isChangelistEnabled
     isHidden
     isNasShareManuallyAdded
+    isNetAppSnapDiffEnabled
     isNutanixCftEnabled
     isRelic
+    isReplica
     isStale
     name
     numWorkloadDescendants

@@ -1,6 +1,6 @@
 # O365TeamsChannelObject
 
-*No description available.*
+O365TeamsChannelObject is the interface for Teams channel objects in the O365 hierarchy.
 
 ## Fields
 

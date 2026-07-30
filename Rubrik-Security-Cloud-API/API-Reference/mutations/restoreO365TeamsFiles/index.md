@@ -1,12 +1,12 @@
 # restoreO365TeamsFiles
 
-Restore Team files.
+Schedules an on-demand restore job for files and folders within a Teams channel. The account, user, and RSC org id are resolved from req_ctx.
 
 ## Arguments
 
-| Argument           | Type                                                                                                                                                 | Description                                                 |
-| ------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------- |
-| input *(required)* | [RestoreO365TeamsFilesInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/RestoreO365TeamsFilesInput/index.md)! | The input for the mutation to restore files for O365 Teams. |
+| Argument           | Type                                                                                                                                                 | Description                                                   |
+| ------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------- |
+| input *(required)* | [RestoreO365TeamsFilesInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/RestoreO365TeamsFilesInput/index.md)! | Input for restoring files and folders within a Teams channel. |
 
 ## Returns
 

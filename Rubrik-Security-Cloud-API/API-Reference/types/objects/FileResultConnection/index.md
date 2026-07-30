@@ -18,6 +18,7 @@ Paginated list of FileResult objects. Each page of the results includes at most 
 **Queries**
 
 - [query: objectFiles](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/objectFiles/index.md)
+- [query: policyObjFolderChildren](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/policyObjFolderChildren/index.md)
 - [query: userActivities](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/userActivities/index.md)
 
 **Referenced by**

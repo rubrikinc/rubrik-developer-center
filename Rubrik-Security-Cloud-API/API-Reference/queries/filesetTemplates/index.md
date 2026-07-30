@@ -37,6 +37,7 @@ query FilesetTemplates($hostRoot: HostRoot!) {
       id
       includes
       isArrayEnabled
+      isReplica
       name
       numWorkloadDescendants
       objectType
@@ -49,6 +50,8 @@ query FilesetTemplates($hostRoot: HostRoot!) {
       shouldRetryPrescriptIfBackupFails
       slaAssignment
       slaPauseStatus
+      templateAllowlistFilesystemPaths
+      templateBlocklistFilesystemTypes
       templateBlocklistedFilesystemPaths
     }
     pageInfo {

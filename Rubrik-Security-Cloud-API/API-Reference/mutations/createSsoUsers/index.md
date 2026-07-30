@@ -4,9 +4,9 @@ Create SSO users.
 
 ## Arguments
 
-| Argument           | Type                                                                                                                                   | Description                         |
-| ------------------ | -------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------- |
-| input *(required)* | [CreateSsoUsersInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/CreateSsoUsersInput/index.md)! | Input required to create SSO users. |
+| Argument           | Type                                                                                                                                   | Description                              |
+| ------------------ | -------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------- |
+| input *(required)* | [CreateSsoUsersInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/CreateSsoUsersInput/index.md)! | Specifies the input to create SSO users. |
 
 ## Returns
 

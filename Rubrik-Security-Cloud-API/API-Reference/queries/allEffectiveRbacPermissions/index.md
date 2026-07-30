@@ -39,7 +39,7 @@ query AllEffectiveRbacPermissions($roleId: String!) {
         "rbacObject": {
           "clusterId": "example-string",
           "objectId": "example-string",
-          "workloadHierarchy": "AWS_NATIVE_CONFIG"
+          "workloadHierarchy": "AUTH0_TENANT"
         }
       }
     ]

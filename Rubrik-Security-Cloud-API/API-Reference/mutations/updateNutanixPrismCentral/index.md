@@ -19,6 +19,7 @@ mutation UpdateNutanixPrismCentral($input: UpdateNutanixPrismCentralInput!) {
   updateNutanixPrismCentral(input: $input) {
     hostname
     isDrEnabled
+    shouldUseV4
     username
   }
 }
@@ -39,6 +40,7 @@ mutation UpdateNutanixPrismCentral($input: UpdateNutanixPrismCentralInput!) {
     "updateNutanixPrismCentral": {
       "hostname": "example-string",
       "isDrEnabled": true,
+      "shouldUseV4": true,
       "username": "example-string",
       "connectionStatus": {
         "message": "example-string",

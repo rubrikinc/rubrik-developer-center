@@ -33,8 +33,10 @@ query {
       isChangelistEnabled
       isHidden
       isNasShareManuallyAdded
+      isNetAppSnapDiffEnabled
       isNutanixCftEnabled
       isRelic
+      isReplica
       isStale
       name
       numWorkloadDescendants

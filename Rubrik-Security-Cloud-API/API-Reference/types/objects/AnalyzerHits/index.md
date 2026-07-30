@@ -17,3 +17,4 @@ Analyzer hits for different risk categories.
 
 - [FileResult.analyzerRiskHits](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/FileResult/index.md)
 - [PolicyObj.analyzerHits](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/PolicyObj/index.md)
+- [PrincipalRisk.analyzerHits](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/PrincipalRisk/index.md)

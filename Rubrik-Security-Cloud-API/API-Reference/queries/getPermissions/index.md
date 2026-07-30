@@ -39,7 +39,7 @@ query GetPermissions($roleId: String!) {
             "objectIds": [
               "example-string"
             ],
-            "snappableType": "AWS_NATIVE_CONFIG"
+            "snappableType": "AUTH0_TENANT"
           }
         ]
       }
