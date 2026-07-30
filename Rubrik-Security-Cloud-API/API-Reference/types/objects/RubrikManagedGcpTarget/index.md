@@ -1,6 +1,6 @@
 # RubrikManagedGcpTarget
 
-Specific information for Google Cloud Platform (GCP) target created on Rubrik.
+Specific information for GCP target created on Rubrik.
 
 **Implements:** [Target](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/Target/index.md)
 
@@ -13,7 +13,7 @@ Specific information for Google Cloud Platform (GCP) target created on Rubrik.
 | bypassProxy                       | Boolean!                                                                                                                                        | Specifies whether the proxy settings should be bypassed for creating this target location.                                  |
 | cluster                           | [Cluster](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/Cluster/index.md)!                                 | The cluster to which this target belongs.                                                                                   |
 | clusterName                       | String                                                                                                                                          | Name of the Rubrik cluster that archives to this archival location.                                                         |
-| cnpSpecificFields                 | [GcpCloudNativeTarget](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/GcpCloudNativeTarget/index.md)        | CNP specific fields for the GCP target location..                                                                           |
+| cnpSpecificFields                 | [GcpCloudNativeTarget](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/GcpCloudNativeTarget/index.md)        | CNP specific fields for the GCP target location.                                                                            |
 | connectionStatus                  | [ConnectionStatusType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/ConnectionStatusType/index.md)!         | Connection status of the GCP target.                                                                                        |
 | consumedBytes                     | [Long](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/Long/index.md)                                        | Number of bytes stored on the target.                                                                                       |
 | encryptionType                    | [TargetEncryptionTypeEnum](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/TargetEncryptionTypeEnum/index.md)! | Encryption type to be used for the GCP target.                                                                              |

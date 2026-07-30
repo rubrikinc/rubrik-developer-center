@@ -21,6 +21,7 @@ query VSphereTagCategory($fid: UUID!) {
     cdmPendingObjectPauseAssignment
     id
     isFilterCategory
+    isReplica
     name
     numWorkloadDescendants
     objectType
@@ -50,8 +51,8 @@ query VSphereTagCategory($fid: UUID!) {
       "cdmPendingObjectPauseAssignment": "NO_PENDING_PAUSE_ASSIGNMENT",
       "id": "00000000-0000-0000-0000-000000000000",
       "isFilterCategory": true,
+      "isReplica": true,
       "name": "example-string",
-      "numWorkloadDescendants": 0,
       "allOrgs": [
         {
           "allUrls": [

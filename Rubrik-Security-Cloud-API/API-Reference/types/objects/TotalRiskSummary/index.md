@@ -18,3 +18,4 @@ Total Risk Summary Details.
 
 - [HitsSummary.deltaHitsSummary](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/HitsSummary/index.md)
 - [HitsSummary.totalHitsSummary](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/HitsSummary/index.md)
+- [SensitiveDataSummary.totalRiskSummary](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/SensitiveDataSummary/index.md)

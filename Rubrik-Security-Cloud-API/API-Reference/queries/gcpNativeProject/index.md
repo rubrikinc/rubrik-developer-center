@@ -32,7 +32,6 @@ query GcpNativeProject($fid: UUID!) {
     objectType
     organizationName
     projectNumber
-    region
     rscPendingObjectPauseAssignment
     slaAssignment
     slaPauseStatus

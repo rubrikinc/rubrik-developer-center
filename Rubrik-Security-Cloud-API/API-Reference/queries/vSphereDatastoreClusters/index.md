@@ -28,6 +28,7 @@ query {
       cdmPendingObjectPauseAssignment
       freeSpace
       id
+      isReplica
       isSdrsEnabled
       name
       numWorkloadDescendants

@@ -4,9 +4,9 @@ Enables Teams protection in the exocompute cluster.
 
 ## Arguments
 
-| Argument                         | Type    | Description |
-| -------------------------------- | ------- | ----------- |
-| exocomputeClusterId *(required)* | String! |             |
+| Argument                         | Type    | Description            |
+| -------------------------------- | ------- | ---------------------- |
+| exocomputeClusterId *(required)* | String! | Exocompute Cluster ID. |
 
 ## Returns
 

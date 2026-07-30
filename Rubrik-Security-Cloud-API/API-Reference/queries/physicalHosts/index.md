@@ -44,6 +44,8 @@ query PhysicalHosts($hostRoot: HostRoot!) {
       isExchangeHost
       isMssqlHost
       isOracleHost
+      isReplica
+      lastSuccessfulUpgradeTime
       name
       nasApiEndpoint
       nasApiHostname
@@ -56,6 +58,7 @@ query PhysicalHosts($hostRoot: HostRoot!) {
       osType
       rbaPackageUpgradeInfo
       rbsUpgradeStatus
+      rbsVersion
       replicatedObjectCount
       resourceInfo
       slaAssignment

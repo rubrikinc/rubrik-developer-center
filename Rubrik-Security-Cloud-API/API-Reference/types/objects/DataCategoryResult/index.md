@@ -15,3 +15,4 @@ Data category result indicates the classification result for a data category.
 **Referenced by**
 
 - [ClassificationPolicyDetail.dataCategoryResult](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/ClassificationPolicyDetail/index.md)
+- [PrincipalSummary.dataCategoryResults](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/PrincipalSummary/index.md)

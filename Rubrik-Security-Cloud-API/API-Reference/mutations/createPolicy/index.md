@@ -60,7 +60,7 @@ mutation CreatePolicy($input: CreatePolicyInput!) {
           "dictionaryCsv": "example-string",
           "excludeFieldNamePattern": "example-string",
           "excludePathPattern": "example-string",
-          "id": "example-string"
+          "excludeValueRegex": "example-string"
         }
       ],
       "assignmentResources": {

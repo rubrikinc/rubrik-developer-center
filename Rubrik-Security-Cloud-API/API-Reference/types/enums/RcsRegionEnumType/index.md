@@ -8,6 +8,7 @@ Regions for Rubrik Cloud Storage Archival Location.
 | ------------------------ | ------------------------------------------- |
 | ASIA_EAST                | Asia East or Hong Kong.                     |
 | ASIA_EAST_2              | Hong Kong (Asia East 2).                    |
+| ASIA_EAST_TAIWAN         | Asia East (Taiwan).                         |
 | ASIA_PACIFIC_HYDERABAD   | Asia Pacific Hyderabad.                     |
 | ASIA_PACIFIC_JAKARTA     | Asia Pacific Jakarta.                       |
 | ASIA_PACIFIC_MELBOURNE   | Asia Pacific Melbourne.                     |
@@ -27,10 +28,12 @@ Regions for Rubrik Cloud Storage Archival Location.
 | CANADA_WEST_CALGARY      | Canada West Calgary.                        |
 | CHILE_CENTRAL            | Chile Central or Santiago.                  |
 | EUROPE_NORTH             | Europe North or Netherlands.                |
+| EUROPE_NORTH_FINLAND     | Europe North (Finland).                     |
 | EUROPE_STOCKHOLM         | Europe Stockholm.                           |
 | EUROPE_WEST              | Europe West or Ireland.                     |
 | EUROPE_WEST_12           | Turin (Europe West 12).                     |
 | EUROPE_WEST_4            | Netherlands (Europe West 4).                |
+| EUROPE_WEST_BELGIUM      | Europe West (Belgium).                      |
 | FRANCE_CENTRAL           | France Central or Paris.                    |
 | FRANCE_SOUTH             | France South or Marseille.                  |
 | GERMANY_NORTH            | Germany North or Berlin.                    |
@@ -82,6 +85,7 @@ Regions for Rubrik Cloud Storage Archival Location.
 | US_EAST                  | US East or Virginia.                        |
 | US_EAST_1                | South Carolina (US East 1).                 |
 | US_EAST_2                | US East 2 or Virginia.                      |
+| US_EAST_2_VIRGINIA       | Virginia (East US 2).                       |
 | US_EAST_5                | Columbus (US East 5).                       |
 | US_EAST_7                | US East 7.                                  |
 | US_NORTH_CENTRAL         | US North central or Illinois.               |
@@ -94,4 +98,5 @@ Regions for Rubrik Cloud Storage Archival Location.
 | US_WEST_4                | Las Vegas (US West 4).                      |
 | US_WEST_8                | Phoenix (US West 8).                        |
 | US_WEST_CENTRAL          | US West Central or Wyoming.                 |
+| US_WEST_LOS_ANGELES      | US West (Los Angeles).                      |
 | WEST_US3                 | West US 3 or Arizona.                       |

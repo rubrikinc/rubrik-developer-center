@@ -23,6 +23,7 @@ query MongoCollection($fid: UUID!) {
     clusterUuid
     id
     isRelic
+    isReplica
     name
     numWorkloadDescendants
     objectType

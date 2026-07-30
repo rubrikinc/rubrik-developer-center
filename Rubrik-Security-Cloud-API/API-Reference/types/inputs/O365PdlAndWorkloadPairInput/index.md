@@ -1,6 +1,6 @@
 # O365PdlAndWorkloadPairInput
 
-Input to create the pairing of a preferred data location (PDL) and the workload corresponding to the PDL group.
+Pairing of a preferred data location (PDL) and the workload corresponding to the PDL group.
 
 ## Fields
 

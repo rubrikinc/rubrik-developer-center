@@ -21,6 +21,7 @@ query HostShare($fid: UUID!) {
     cdmPendingObjectPauseAssignment
     id
     isChangelistEnabled
+    isReplica
     name
     nasMigrationInfo
     nasShareType
@@ -49,8 +50,8 @@ query HostShare($fid: UUID!) {
       "cdmPendingObjectPauseAssignment": "NO_PENDING_PAUSE_ASSIGNMENT",
       "id": "00000000-0000-0000-0000-000000000000",
       "isChangelistEnabled": true,
+      "isReplica": true,
       "name": "example-string",
-      "nasMigrationInfo": "example-string",
       "allOrgs": [
         {
           "allUrls": [

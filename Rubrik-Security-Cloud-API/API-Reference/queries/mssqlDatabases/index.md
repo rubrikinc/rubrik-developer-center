@@ -38,6 +38,7 @@ query {
       isMount
       isOnline
       isRelic
+      isReplica
       logBackupFrequencyInSeconds
       logBackupRetentionInHours
       name

@@ -1,6 +1,6 @@
 # CdmManagedAwsTarget
 
-Specific info for AWS target created on Cdm.
+Specific information for AWS target created on CDM cluster.
 
 **Implements:** [Target](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/Target/index.md)
 
@@ -12,8 +12,8 @@ Specific info for AWS target created on Cdm.
 | clusterName                       | String                                                                                                                                                 | Name of the Rubrik cluster that archives to this archival location.                                                         |
 | consumedBytes                     | [Long](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/Long/index.md)                                               | Number of bytes stored on the target.                                                                                       |
 | failedTasks                       | Int                                                                                                                                                    | Number of archiving tasks failed on this target.                                                                            |
-| id                                | String!                                                                                                                                                | Id of the AWS location.                                                                                                     |
-| immutabilitySettings              | [AwsImmutabilitySettingsType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AwsImmutabilitySettingsType/index.md) | Immutability info of Aws location.                                                                                          |
+| id                                | String!                                                                                                                                                | The ID of the target.                                                                                                       |
+| immutabilitySettings              | [AwsImmutabilitySettingsType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AwsImmutabilitySettingsType/index.md) | Immutability settings of the AWS archival target.                                                                           |
 | isActive                          | Boolean!                                                                                                                                               | Specifies whether the status of the target is active. When set to false, the target is either paused or not enabled.        |
 | isArchived                        | Boolean!                                                                                                                                               | Specifies whether the target is archived.                                                                                   |
 | isComplianceImmutabilitySupported | Boolean!                                                                                                                                               | Specifies whether the archival location supports compliance immutability for retention locked snapshots.                    |

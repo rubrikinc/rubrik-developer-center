@@ -27,7 +27,7 @@ mutation O365PdlGroups($input: O365PdlGroupsInput!) {
     "pdlAndWorkloadPairs": [
       {
         "pdl": "example-string",
-        "workload": "AWS_NATIVE_CONFIG"
+        "workload": "AUTH0_TENANT"
       }
     ]
   }

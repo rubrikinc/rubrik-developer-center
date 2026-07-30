@@ -13,6 +13,9 @@ Specifies the type of an integration. Note that the values are stored in a datab
 | MICROSOFT_DEFENDER           | Represents a Microsoft Defender integration.                                                                               |
 | MICROSOFT_PURVIEW            | Represents a Microsoft Purview integration.                                                                                |
 | OKTA                         | Represents a OKTA ITP integration.                                                                                         |
+| PAN_XSOAR                    | Represents a Palo Alto Networks XSOAR integration.                                                                         |
 | PRIVILEGED_ACCESS_MANAGEMENT | Represents a PAM integration.                                                                                              |
+| SAIL_POINT                   | Represents a SailPoint ISC (IGA) integration.                                                                              |
 | SERVICENOW_ITSM              | Represents a ServiceNow ITSM integration.                                                                                  |
 | SPLUNK                       | Represents a Splunk integration.                                                                                           |
+| WORKDAY                      | Represents a Workday HRIS integration.                                                                                     |

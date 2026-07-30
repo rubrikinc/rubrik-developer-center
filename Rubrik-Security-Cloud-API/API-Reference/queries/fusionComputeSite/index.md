@@ -23,6 +23,7 @@ query FusionComputeSite($fid: UUID!) {
     clusterUuid
     fcSiteId
     id
+    isReplica
     name
     numWorkloadDescendants
     objectType

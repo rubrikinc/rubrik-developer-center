@@ -52,14 +52,21 @@ query ThreatMonitoringMatchedFileDetailsV2($matchedSnapshotFid: UUID!, $filepath
       "firstDetectedSnapshotFid": "example-string",
       "isFileVersionQuarantined": true,
       "isQuarantinedInFirstObservedSnapshot": true,
+      "containerArchiveDetails": {
+        "filePath": "example-string",
+        "fileSize": 0,
+        "md5Hash": "example-string",
+        "sha1Hash": "example-string",
+        "sha256Hash": "example-string"
+      },
       "iocDetails": [
         {
           "feedType": "CROWDSTRIKE",
+          "hasScopedDisable": true,
+          "intelFeedId": "example-string",
           "intelFeedName": "example-string",
           "iocHashHex": "example-string",
-          "iocRuleAuthor": "example-string",
-          "iocStatus": "ACTIVE",
-          "malwareDescription": "example-string"
+          "iocRuleAuthor": "example-string"
         }
       ]
     }

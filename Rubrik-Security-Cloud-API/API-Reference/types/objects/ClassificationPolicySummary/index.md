@@ -15,6 +15,7 @@ Summary of a policy.
 **Referenced by**
 
 - [AnalyzerUsage.policies](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AnalyzerUsage/index.md)
+- [DocumentTypeDetails.policies](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/DocumentTypeDetails/index.md)
 - [GetPoliciesTimelineReply.policySummaries](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/GetPoliciesTimelineReply/index.md)
 - [Issue.policies](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/Issue/index.md)
 - [PolicyObj.policySummaries](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/PolicyObj/index.md)

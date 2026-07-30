@@ -3,6 +3,9 @@
 ## A
 
 [acknowledgeClusterNotification](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/acknowledgeClusterNotification/index.md)\
+[activateDataCategory](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/activateDataCategory/index.md)\
+[activateDataType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/activateDataType/index.md)\
+[activateDocumentAttribute](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/activateDocumentAttribute/index.md)\
 [addAdGroupsToHierarchy](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/addAdGroupsToHierarchy/index.md)\
 [addAndJoinSmbDomain](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/addAndJoinSmbDomain/index.md)\
 [addAwsAuthenticationServerBasedCloudAccount](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/addAwsAuthenticationServerBasedCloudAccount/index.md)\
@@ -11,6 +14,7 @@
 [addAzureCloudAccountExocomputeConfigurations](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/addAzureCloudAccountExocomputeConfigurations/index.md)\
 [addAzureCloudAccountWithoutOauth](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/addAzureCloudAccountWithoutOauth/index.md)\
 [addAzureDevOpsCloudAccount](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/addAzureDevOpsCloudAccount/index.md)\
+[addCloudDirectGenericS3TenantCredentials](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/addCloudDirectGenericS3TenantCredentials/index.md)\
 [addCloudDirectKerberosCredential](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/addCloudDirectKerberosCredential/index.md)\
 [addCloudDirectSharesToSystem](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/addCloudDirectSharesToSystem/index.md)\
 [addCloudDirectSystem](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/addCloudDirectSystem/index.md)\
@@ -42,6 +46,7 @@
 [addPostgreSQLDbCluster](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/addPostgreSQLDbCluster/index.md)\
 [addRoleAssignments](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/addRoleAssignments/index.md)\
 [addSapHanaSystem](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/addSapHanaSystem/index.md)\
+[addStorageArrayV1](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/addStorageArrayV1/index.md)\
 [addStorageArrays](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/addStorageArrays/index.md)\
 [addSyslogExportRule](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/addSyslogExportRule/index.md)\
 [addVlan](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/addVlan/index.md)\
@@ -137,6 +142,7 @@
 [bulkUpdateOracleRacs](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/bulkUpdateOracleRacs/index.md)\
 [bulkUpdatePolicyViolations](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/bulkUpdatePolicyViolations/index.md)\
 [bulkUpdateRansomwareInvestigationStatus](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/bulkUpdateRansomwareInvestigationStatus/index.md)\
+[bulkUpdateSupportTunnel](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/bulkUpdateSupportTunnel/index.md)\
 [bulkUpdateSystemConfig](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/bulkUpdateSystemConfig/index.md)
 
 ## C
@@ -199,6 +205,7 @@
 [createCrossAccountPair](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/createCrossAccountPair/index.md)\
 [createCrossAccountRegOauthPayload](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/createCrossAccountRegOauthPayload/index.md)\
 [createCustomAnalyzer](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/createCustomAnalyzer/index.md)\
+[createCustomDataType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/createCustomDataType/index.md)\
 [createDistributionListDigestBatch](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/createDistributionListDigestBatch/index.md)\
 [createDomainControllerSnapshot](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/createDomainControllerSnapshot/index.md)\
 [createDownloadSnapshotForVolumeGroup](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/createDownloadSnapshotForVolumeGroup/index.md)\
@@ -235,6 +242,7 @@
 [createO365AppKickoff](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/createO365AppKickoff/index.md)\
 [createOnDemandDb2Backup](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/createOnDemandDb2Backup/index.md)\
 [createOnDemandExchangeBackup](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/createOnDemandExchangeBackup/index.md)\
+[createOnDemandGlueIcebergTableBackup](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/createOnDemandGlueIcebergTableBackup/index.md)\
 [createOnDemandMongoDatabaseBackup](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/createOnDemandMongoDatabaseBackup/index.md)\
 [createOnDemandMongoDatabaseBackupV2](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/createOnDemandMongoDatabaseBackupV2/index.md)\
 [createOnDemandMssqlBackup](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/createOnDemandMssqlBackup/index.md)\
@@ -249,17 +257,21 @@
 [createOrg](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/createOrg/index.md)\
 [createOrgSwitchSession](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/createOrgSwitchSession/index.md)\
 [createPolicy](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/createPolicy/index.md)\
+[createPureStorageProtectionGroupSnapshot](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/createPureStorageProtectionGroupSnapshot/index.md)\
 [createRcsReaderTarget](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/createRcsReaderTarget/index.md)\
 [createRcsTarget](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/createRcsTarget/index.md)\
 [createRcvLocationsFromTemplate](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/createRcvLocationsFromTemplate/index.md)\
 [createRcvPrivateEndpointApprovalRequest](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/createRcvPrivateEndpointApprovalRequest/index.md)\
+[createRecoveryPlanV2](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/createRecoveryPlanV2/index.md)\
 [createRecoveryScheduleV2](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/createRecoveryScheduleV2/index.md)\
+[createRecoverySpecs](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/createRecoverySpecs/index.md)\
 [createReplicationPair](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/createReplicationPair/index.md)\
 [createRole](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/createRole/index.md)\
 [createS3CompatibleReaderTarget](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/createS3CompatibleReaderTarget/index.md)\
 [createS3CompatibleTarget](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/createS3CompatibleTarget/index.md)\
 [createSapHanaSystemRefresh](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/createSapHanaSystemRefresh/index.md)\
 [createScheduledReport](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/createScheduledReport/index.md)\
+[createSecurityPolicy](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/createSecurityPolicy/index.md)\
 [createServiceAccount](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/createServiceAccount/index.md)\
 [createSsoUsers](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/createSsoUsers/index.md)\
 [createTapeReaderTarget](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/createTapeReaderTarget/index.md)\
@@ -269,6 +281,7 @@
 [createUserWithPassword](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/createUserWithPassword/index.md)\
 [createVappSnapshots](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/createVappSnapshots/index.md)\
 [createVappsInstantRecovery](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/createVappsInstantRecovery/index.md)\
+[createViolationRemediation](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/createViolationRemediation/index.md)\
 [createVrm](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/createVrm/index.md)\
 [createVsphereAdvancedTag](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/createVsphereAdvancedTag/index.md)\
 [createVsphereVcenter](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/createVsphereVcenter/index.md)\
@@ -278,6 +291,8 @@
 ## D
 
 [deactivateCustomAnalyzer](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/deactivateCustomAnalyzer/index.md)\
+[deactivateDataType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/deactivateDataType/index.md)\
+[deactivateDocumentAttribute](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/deactivateDocumentAttribute/index.md)\
 [deactivatePolicy](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/deactivatePolicy/index.md)\
 [deleteAdGroupsFromHierarchy](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/deleteAdGroupsFromHierarchy/index.md)\
 [deleteAllOracleDatabaseSnapshots](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/deleteAllOracleDatabaseSnapshots/index.md)\
@@ -290,6 +305,7 @@
 [deleteCassandraSource](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/deleteCassandraSource/index.md)\
 [deleteCephSetting](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/deleteCephSetting/index.md)\
 [deleteCertificate](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/deleteCertificate/index.md)\
+[deleteCloudDirectGenericS3TenantCredential](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/deleteCloudDirectGenericS3TenantCredential/index.md)\
 [deleteCloudDirectKerberosCredential](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/deleteCloudDirectKerberosCredential/index.md)\
 [deleteCloudNativeLabelRule](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/deleteCloudNativeLabelRule/index.md)\
 [deleteCloudNativeTagRule](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/deleteCloudNativeTagRule/index.md)\
@@ -354,6 +370,7 @@
 [deleteSapHanaDbSnapshot](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/deleteSapHanaDbSnapshot/index.md)\
 [deleteSapHanaSystem](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/deleteSapHanaSystem/index.md)\
 [deleteScheduledReport](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/deleteScheduledReport/index.md)\
+[deleteSecurityPolicy](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/deleteSecurityPolicy/index.md)\
 [deleteServiceAccountsFromAccount](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/deleteServiceAccountsFromAccount/index.md)\
 [deleteSmbDomain](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/deleteSmbDomain/index.md)\
 [deleteSnapshotsOfUnmanagedObjects](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/deleteSnapshotsOfUnmanagedObjects/index.md)\
@@ -421,6 +438,7 @@
 [downloadOracleDatabaseSnapshot](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/downloadOracleDatabaseSnapshot/index.md)\
 [downloadOracleSnapshotFromLocation](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/downloadOracleSnapshotFromLocation/index.md)\
 [downloadOracleSnapshotFromLocationV2](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/downloadOracleSnapshotFromLocationV2/index.md)\
+[downloadPureStorageProtectionGroupSnapshotFromLocation](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/downloadPureStorageProtectionGroupSnapshotFromLocation/index.md)\
 [downloadReportCsvAsync](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/downloadReportCsvAsync/index.md)\
 [downloadReportPdfAsync](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/downloadReportPdfAsync/index.md)\
 [downloadResultsCsv](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/downloadResultsCsv/index.md)\
@@ -473,7 +491,11 @@
 [exportO365MailboxV2](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/exportO365MailboxV2/index.md)\
 [exportOracleDatabase](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/exportOracleDatabase/index.md)\
 [exportOracleTablespace](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/exportOracleTablespace/index.md)\
+[exportPermissions](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/exportPermissions/index.md)\
+[exportPolicyViolationsCsv](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/exportPolicyViolationsCsv/index.md)\
+[exportPrincipalsSummary](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/exportPrincipalsSummary/index.md)\
 [exportProxmoxVmSnapshot](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/exportProxmoxVmSnapshot/index.md)\
+[exportPureStorageProtectionGroupSnapshot](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/exportPureStorageProtectionGroupSnapshot/index.md)\
 [exportSlaManagedVolumeSnapshot](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/exportSlaManagedVolumeSnapshot/index.md)
 
 ## F
@@ -503,6 +525,7 @@
 [gcpNativeRefreshProjects](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/gcpNativeRefreshProjects/index.md)\
 [gcpNativeRestoreGceInstance](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/gcpNativeRestoreGceInstance/index.md)\
 [gcpSetDefaultServiceAccountJwtConfig](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/gcpSetDefaultServiceAccountJwtConfig/index.md)\
+[generateCdmTotpSecret](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/generateCdmTotpSecret/index.md)\
 [generateClusterRegistrationToken](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/generateClusterRegistrationToken/index.md)\
 [generateConfigProtectionRestoreForm](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/generateConfigProtectionRestoreForm/index.md)\
 [generateCsr](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/generateCsr/index.md)\
@@ -511,6 +534,7 @@
 [generatePresignedUrlForDownload](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/generatePresignedUrlForDownload/index.md)\
 [generatePresignedUrlForPartUpload](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/generatePresignedUrlForPartUpload/index.md)\
 [generatePreviewMessageForWebhookTemplate](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/generatePreviewMessageForWebhookTemplate/index.md)\
+[generateRecoveryReport](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/generateRecoveryReport/index.md)\
 [generateSupportBundle](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/generateSupportBundle/index.md)\
 [generateTotpSecret](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/generateTotpSecret/index.md)\
 [getDownloadUrl](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/getDownloadUrl/index.md)\
@@ -623,6 +647,7 @@
 [recoverDb2DatabaseToEndOfBackup](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/recoverDb2DatabaseToEndOfBackup/index.md)\
 [recoverDb2DatabaseToPointInTime](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/recoverDb2DatabaseToPointInTime/index.md)\
 [recoverDevOpsRepository](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/recoverDevOpsRepository/index.md)\
+[recoverGlueIcebergTableSnapshot](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/recoverGlueIcebergTableSnapshot/index.md)\
 [recoverMongoSource](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/recoverMongoSource/index.md)\
 [recoverMongodbSource](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/recoverMongodbSource/index.md)\
 [recoverOpsManagerManagedMongoSource](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/recoverOpsManagerManagedMongoSource/index.md)\
@@ -656,6 +681,7 @@
 [registerCloudCluster](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/registerCloudCluster/index.md)\
 [registerHypervScvmm](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/registerHypervScvmm/index.md)\
 [registerNasSystem](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/registerNasSystem/index.md)\
+[registerProductInterest](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/registerProductInterest/index.md)\
 [releasePersistentExoclusters](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/releasePersistentExoclusters/index.md)\
 [removeCdmCluster](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/removeCdmCluster/index.md)\
 [removeClusterNodes](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/removeClusterNodes/index.md)\
@@ -670,6 +696,7 @@
 [removeVlans](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/removeVlans/index.md)\
 [replaceClusterNode](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/replaceClusterNode/index.md)\
 [requestPersistentExocluster](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/requestPersistentExocluster/index.md)\
+[requestPureStorageProtectionGroupForceFullSnapshot](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/requestPureStorageProtectionGroupForceFullSnapshot/index.md)\
 [reseedLogShippingSecondary](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/reseedLogShippingSecondary/index.md)\
 [resetAllOrgUsersPasswords](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/resetAllOrgUsersPasswords/index.md)\
 [resetUsersPasswordsWithUserIds](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/resetUsersPasswordsWithUserIds/index.md)\
@@ -700,6 +727,7 @@
 [restorePostgreSqlDbCluster](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/restorePostgreSqlDbCluster/index.md)\
 [restoreSapHanaSystemStorage](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/restoreSapHanaSystemStorage/index.md)\
 [restoreVolumeGroupSnapshotFiles](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/restoreVolumeGroupSnapshotFiles/index.md)\
+[resumeRecovery](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/resumeRecovery/index.md)\
 [resumeTarget](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/resumeTarget/index.md)\
 [retryAddMongoSource](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/retryAddMongoSource/index.md)\
 [retryAddOpsManagerManagedMongoSource](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/retryAddOpsManagerManagedMongoSource/index.md)\
@@ -734,6 +762,7 @@
 [setHostRbsNetworkLimit](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/setHostRbsNetworkLimit/index.md)\
 [setIpWhitelistEnabled](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/setIpWhitelistEnabled/index.md)\
 [setIpWhitelistSetting](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/setIpWhitelistSetting/index.md)\
+[setIsIdentitySecurityRoleAssignmentComplete](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/setIsIdentitySecurityRoleAssignmentComplete/index.md)\
 [setLdapMfaSetting](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/setLdapMfaSetting/index.md)\
 [setMfaSetting](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/setMfaSetting/index.md)\
 [setMissingClusterStatus](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/setMissingClusterStatus/index.md)\
@@ -749,6 +778,7 @@
 [setWebSignedCertificate](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/setWebSignedCertificate/index.md)\
 [setWorkloadAlertSetting](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/setWorkloadAlertSetting/index.md)\
 [setupAzureO365Exocompute](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/setupAzureO365Exocompute/index.md)\
+[setupCdmTotp](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/setupCdmTotp/index.md)\
 [setupCloudNativeSqlServerBackup](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/setupCloudNativeSqlServerBackup/index.md)\
 [setupDisk](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/setupDisk/index.md)\
 [startAwsExocomputeDisableJob](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/startAwsExocomputeDisableJob/index.md)\
@@ -781,6 +811,7 @@
 [startPeriodicUpgradePrechecksOnDemandJob](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/startPeriodicUpgradePrechecksOnDemandJob/index.md)\
 [startRecoverAzureNativeStorageAccountJob](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/startRecoverAzureNativeStorageAccountJob/index.md)\
 [startRecoverS3SnapshotJob](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/startRecoverS3SnapshotJob/index.md)\
+[startRecovery](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/startRecovery/index.md)\
 [startRefreshAwsNativeAccountsJob](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/startRefreshAwsNativeAccountsJob/index.md)\
 [startRefreshAzureNativeSubscriptionsJob](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/startRefreshAzureNativeSubscriptionsJob/index.md)\
 [startRestoreAwsNativeEc2InstanceSnapshotJob](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/startRestoreAwsNativeEc2InstanceSnapshotJob/index.md)\
@@ -850,12 +881,14 @@
 [updateBackupTriggerForWorkloads](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/updateBackupTriggerForWorkloads/index.md)\
 [updateBadDiskLedStatus](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/updateBadDiskLedStatus/index.md)\
 [updateCassandraSource](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/updateCassandraSource/index.md)\
+[updateCdmUser](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/updateCdmUser/index.md)\
 [updateCertificate](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/updateCertificate/index.md)\
 [updateCertificateHost](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/updateCertificateHost/index.md)\
 [updateCertificateUsagesForCloudAccount](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/updateCertificateUsagesForCloudAccount/index.md)\
 [updateCloudDirectKerberosCredential](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/updateCloudDirectKerberosCredential/index.md)\
 [updateCloudNativeAwsStorageSetting](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/updateCloudNativeAwsStorageSetting/index.md)\
 [updateCloudNativeAzureStorageSetting](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/updateCloudNativeAzureStorageSetting/index.md)\
+[updateCloudNativeCustomerSettings](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/updateCloudNativeCustomerSettings/index.md)\
 [updateCloudNativeIndexingStatus](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/updateCloudNativeIndexingStatus/index.md)\
 [updateCloudNativeLabelRule](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/updateCloudNativeLabelRule/index.md)\
 [updateCloudNativeRcvAzureStorageSetting](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/updateCloudNativeRcvAzureStorageSetting/index.md)\
@@ -867,6 +900,7 @@
 [updateClusterSettings](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/updateClusterSettings/index.md)\
 [updateConfiguredGroup](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/updateConfiguredGroup/index.md)\
 [updateCustomAnalyzer](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/updateCustomAnalyzer/index.md)\
+[updateCustomDataType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/updateCustomDataType/index.md)\
 [updateCustomIntelFeed](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/updateCustomIntelFeed/index.md)\
 [updateCustomerAppPermissionForAzureSql](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/updateCustomerAppPermissionForAzureSql/index.md)\
 [updateCustomerAppPermissions](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/updateCustomerAppPermissions/index.md)\
@@ -874,6 +908,7 @@
 [updateDestinationRoleForRcvMigration](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/updateDestinationRoleForRcvMigration/index.md)\
 [updateDistributionListDigest](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/updateDistributionListDigest/index.md)\
 [updateDnsServersAndSearchDomains](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/updateDnsServersAndSearchDomains/index.md)\
+[updateDocumentType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/updateDocumentType/index.md)\
 [updateEncryptionKeyForRcvMigration](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/updateEncryptionKeyForRcvMigration/index.md)\
 [updateEventDigest](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/updateEventDigest/index.md)\
 [updateFailoverCluster](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/updateFailoverCluster/index.md)\
@@ -926,12 +961,17 @@
 [updateOrg](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/updateOrg/index.md)\
 [updateOrgSecurityPolicy](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/updateOrgSecurityPolicy/index.md)\
 [updatePolicy](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/updatePolicy/index.md)\
+[updatePredefinedDataType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/updatePredefinedDataType/index.md)\
 [updatePreviewerClusterConfig](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/updatePreviewerClusterConfig/index.md)\
 [updateProxmoxEnvironment](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/updateProxmoxEnvironment/index.md)\
 [updateProxyConfig](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/updateProxyConfig/index.md)\
+[updatePureStorageProtectionGroup](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/updatePureStorageProtectionGroup/index.md)\
+[updatePureStorageProtectionGroupQuiesceTargets](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/updatePureStorageProtectionGroupQuiesceTargets/index.md)\
+[updatePureStorageProtectionGroupVolumeExclusions](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/updatePureStorageProtectionGroupVolumeExclusions/index.md)\
 [updateRcsAutomaticTargetMapping](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/updateRcsAutomaticTargetMapping/index.md)\
 [updateRcvPrivateEndpoint](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/updateRcvPrivateEndpoint/index.md)\
 [updateRcvTarget](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/updateRcvTarget/index.md)\
+[updateRecoveryPlanV2](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/updateRecoveryPlanV2/index.md)\
 [updateRecoveryScheduleV2](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/updateRecoveryScheduleV2/index.md)\
 [updateReplicationNetworkThrottleBypass](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/updateReplicationNetworkThrottleBypass/index.md)\
 [updateReplicationTarget](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/updateReplicationTarget/index.md)\
@@ -939,9 +979,12 @@
 [updateRoleAssignments](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/updateRoleAssignments/index.md)\
 [updateS3CompatibleTarget](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/updateS3CompatibleTarget/index.md)\
 [updateScheduledReport](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/updateScheduledReport/index.md)\
+[updateSecurityPolicy](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/updateSecurityPolicy/index.md)\
 [updateServiceAccount](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/updateServiceAccount/index.md)\
 [updateSlasForMigrationToRcvTarget](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/updateSlasForMigrationToRcvTarget/index.md)\
+[updateSmbDomain](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/updateSmbDomain/index.md)\
 [updateSnmpConfig](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/updateSnmpConfig/index.md)\
+[updateStorageArrayV1](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/updateStorageArrayV1/index.md)\
 [updateStorageArrays](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/updateStorageArrays/index.md)\
 [updateSupportUserAccess](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/updateSupportUserAccess/index.md)\
 [updateSyslogExportRule](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/updateSyslogExportRule/index.md)\
@@ -1007,7 +1050,6 @@
 [vsphereVmInitiateInPlaceRecovery](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/vsphereVmInitiateInPlaceRecovery/index.md)\
 [vsphereVmInitiateInstantRecoveryV2](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/vsphereVmInitiateInstantRecoveryV2/index.md)\
 [vsphereVmInitiateLiveMountV2](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/vsphereVmInitiateLiveMountV2/index.md)\
-[vsphereVmListEsxiDatastores](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/vsphereVmListEsxiDatastores/index.md)\
 [vsphereVmMountRelocate](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/vsphereVmMountRelocate/index.md)\
 [vsphereVmMountRelocateV2](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/vsphereVmMountRelocateV2/index.md)\
 [vsphereVmPowerOnOffLiveMount](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/vsphereVmPowerOnOffLiveMount/index.md)\

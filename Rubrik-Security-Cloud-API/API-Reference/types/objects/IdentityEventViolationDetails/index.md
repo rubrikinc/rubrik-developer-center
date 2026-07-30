@@ -1,0 +1,17 @@
+# IdentityEventViolationDetails
+
+Identity event level violation details.
+
+## Fields
+
+| Field                 | Type                                                                                                                            | Description                                                                                                                                     |
+| --------------------- | ------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- |
+| actorIdentityDetails  | [IdentityInfo](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/IdentityInfo/index.md)        | Actor identity details.                                                                                                                         |
+| actorIdentityId       | String!                                                                                                                         | Identity ID of the actor.                                                                                                                       |
+| eventTime             | [DateTime](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/DateTime/index.md)                | Time of the origin event.                                                                                                                       |
+| eventType             | [LambdaEventType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/LambdaEventType/index.md)!   | Origin event type.                                                                                                                              |
+| gpoStatus             | [GpoStatus](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/GpoStatus/index.md)!               | GPO status.                                                                                                                                     |
+| revertStatus          | [RemediationState](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/RemediationState/index.md)! | Status of the revert remediation.                                                                                                               |
+| sourceIdentityDetails | [IdentityInfo](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/IdentityInfo/index.md)        | Source identity details. In the case of a group membership add/remove event, the source is the group that the user is being added/removed from. |
+| sourceIdentityId      | String!                                                                                                                         | Source identity ID.                                                                                                                             |
+| targetIdentityDetails | [IdentityInfo](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/IdentityInfo/index.md)        | Target identity details. In the case of a group membership add/remove event, the target is the user being added/removed from the group.         |

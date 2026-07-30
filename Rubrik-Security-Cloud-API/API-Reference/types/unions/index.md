@@ -1,6 +1,6 @@
 # Unions
 
-29 types.
+35 types.
 
 [AccessMethodDetailsType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/unions/AccessMethodDetailsType/index.md)\
 [ActionTypes](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/unions/ActionTypes/index.md)\
@@ -13,6 +13,7 @@
 [ClusterMetricGroupByInfo](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/unions/ClusterMetricGroupByInfo/index.md)\
 [DataLocationClusterInfo](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/unions/DataLocationClusterInfo/index.md)\
 [EntityType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/unions/EntityType/index.md)\
+[IdpSpecificMetadata](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/unions/IdpSpecificMetadata/index.md)\
 [IntegrationCreationInfo](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/unions/IntegrationCreationInfo/index.md)\
 [LockoutEvent](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/unions/LockoutEvent/index.md)\
 [ManagedVolumeQueuedSnapshotGroupByInfo](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/unions/ManagedVolumeQueuedSnapshotGroupByInfo/index.md)\
@@ -22,12 +23,17 @@
 [MosaicSnapshotGroupByInfo](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/unions/MosaicSnapshotGroupByInfo/index.md)\
 [NestedFilterConfig](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/unions/NestedFilterConfig/index.md)\
 [NfAnomalyResultGroupByInfo](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/unions/NfAnomalyResultGroupByInfo/index.md)\
+[OnPremAdPrincipalTypeSpecificMetadata](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/unions/OnPremAdPrincipalTypeSpecificMetadata/index.md)\
 [PcrImagePullDetails](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/unions/PcrImagePullDetails/index.md)\
 [PolarisSnapshotGroupByInfo](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/unions/PolarisSnapshotGroupByInfo/index.md)\
+[PossibleFilterValues](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/unions/PossibleFilterValues/index.md)\
+[PrincipalMetadata](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/unions/PrincipalMetadata/index.md)\
 [RansomwareResultGroupByInfo](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/unions/RansomwareResultGroupByInfo/index.md)\
 [RemediationDetailsUnion](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/unions/RemediationDetailsUnion/index.md)\
 [ResourceMetadataUnion](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/unions/ResourceMetadataUnion/index.md)\
 [SnappableGroupByInfo](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/unions/SnappableGroupByInfo/index.md)\
 [SnappableLocationType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/unions/SnappableLocationType/index.md)\
 [TaskDetailGroupByInfo](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/unions/TaskDetailGroupByInfo/index.md)\
-[ViolationDetailsUnion](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/unions/ViolationDetailsUnion/index.md)
+[ViolationDetailsUnion](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/unions/ViolationDetailsUnion/index.md)\
+[ViolationHistoryDetailsUnion](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/unions/ViolationHistoryDetailsUnion/index.md)\
+[ViolationsInsights](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/unions/ViolationsInsights/index.md)

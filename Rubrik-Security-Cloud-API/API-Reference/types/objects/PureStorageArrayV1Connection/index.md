@@ -1,0 +1,18 @@
+# PureStorageArrayV1Connection
+
+Paginated list of PureStorageArrayV1 objects. Each page of the results includes at most 1000 entries. Query the `pageInfo.hasNextPage` field to know whether all objects were returned.
+
+## Fields
+
+| Field    | Type                                                                                                                                               | Description                                                                                                                  |
+| -------- | -------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------- |
+| count    | Int!                                                                                                                                               | Total number of PureStorageArrayV1 objects matching the request arguments.                                                   |
+| edges    | \[[PureStorageArrayV1Edge](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/PureStorageArrayV1Edge/index.md)!\]! | List of PureStorageArrayV1 objects with additional pagination information. Use `nodes` if per-object cursors are not needed. |
+| nodes    | \[[PureStorageArrayV1](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/PureStorageArrayV1/index.md)!\]!         | List of PureStorageArrayV1 objects.                                                                                          |
+| pageInfo | [PageInfo](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/PageInfo/index.md)!                                  | General information about this result page.                                                                                  |
+
+## Used By
+
+**Queries**
+
+- [query: pureStorageArraysV1](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/pureStorageArraysV1/index.md)

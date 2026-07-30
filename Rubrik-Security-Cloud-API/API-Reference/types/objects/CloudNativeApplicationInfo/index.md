@@ -16,3 +16,4 @@ Application info for a cloud native workload discovered via tag-based or auto-di
 
 - [AwsNativeEc2Instance.cloudNativeApplications](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AwsNativeEc2Instance/index.md)
 - [AwsNativeRdsInstance.cloudNativeApplications](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AwsNativeRdsInstance/index.md)
+- [AwsNativeS3Bucket.cloudNativeApplications](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AwsNativeS3Bucket/index.md)

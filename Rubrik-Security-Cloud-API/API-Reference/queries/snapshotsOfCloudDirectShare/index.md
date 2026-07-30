@@ -54,6 +54,7 @@ query SnapshotsOfCloudDirectShare($workloadId: String!) {
       state
       systemId
       target
+      targetId
       type
       workloadId
     }

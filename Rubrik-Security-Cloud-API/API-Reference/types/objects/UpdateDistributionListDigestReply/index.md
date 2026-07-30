@@ -1,6 +1,6 @@
 # UpdateDistributionListDigestReply
 
-Container for a list of updated distribution list digests.
+Container for a list of updated event digests.
 
 ## Fields
 

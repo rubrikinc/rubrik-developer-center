@@ -24,9 +24,6 @@ mutation CreateWebhookV2($input: CreateWebhookV2Input!) {
 {
   "input": {
     "payload": {
-      "authInfo": {
-        "authType": "AUTH_TYPE_UNSPECIFIED"
-      },
       "providerType": "CUSTOM",
       "subscriptionType": {}
     }

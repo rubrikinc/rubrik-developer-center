@@ -21,6 +21,7 @@ query HypervCluster($fid: UUID!) {
     cdmPendingObjectPauseAssignment
     connectionStatus
     id
+    isReplica
     name
     numWorkloadDescendants
     objectType
@@ -48,8 +49,8 @@ query HypervCluster($fid: UUID!) {
       "cdmPendingObjectPauseAssignment": "NO_PENDING_PAUSE_ASSIGNMENT",
       "connectionStatus": "CONNECTED",
       "id": "00000000-0000-0000-0000-000000000000",
+      "isReplica": true,
       "name": "example-string",
-      "numWorkloadDescendants": 0,
       "allOrgs": [
         {
           "allUrls": [

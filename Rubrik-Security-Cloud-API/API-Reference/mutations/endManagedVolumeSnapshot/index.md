@@ -44,7 +44,8 @@ mutation EndManagedVolumeSnapshot($input: EndManagedVolumeSnapshotInput!) {
         "startTime": "2024-01-01T00:00:00.000Z"
       },
       "managedVolumeSnapshotSummary": {
-        "isQueuedSnapshot": true
+        "isQueuedSnapshot": true,
+        "isTlsEnabledAtSnapshot": true
       }
     }
   }

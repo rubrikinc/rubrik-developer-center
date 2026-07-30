@@ -43,6 +43,7 @@ query {
       sourceVmFid
       sourceVmId
       sourceVmName
+      unmountTimestamp
       vmStatus
     }
     pageInfo {

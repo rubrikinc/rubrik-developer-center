@@ -16,8 +16,16 @@ Sensitive hits for different risk categories.
 
 **Referenced by**
 
+- [ExposureTypeHits.hits](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/ExposureTypeHits/index.md)
 - [FileResult.sensitiveHits](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/FileResult/index.md)
 - [IdentityMetadata.sensitiveHits](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/IdentityMetadata/index.md)
+- [PolicyHitsSummary.sidAnalyzerHits](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/PolicyHitsSummary/index.md)
+- [PolicyHitsSummary.sidDeltaAnalyzerHits](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/PolicyHitsSummary/index.md)
+- [PolicyHitsSummary.sidDeltaRiskHits](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/PolicyHitsSummary/index.md)
+- [PolicyHitsSummary.sidRiskHits](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/PolicyHitsSummary/index.md)
 - [PolicyObj.riskHits](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/PolicyObj/index.md)
+- [PolicyRiskSummary.hits](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/PolicyRiskSummary/index.md)
+- [PrincipalRisk.sensitiveHits](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/PrincipalRisk/index.md)
+- [PrincipalSummary.sensitiveHits](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/PrincipalSummary/index.md)
 - [SnapshotFileDelta.sensitiveHits](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/SnapshotFileDelta/index.md)
 - [SnapshotFileDeltaV2.sensitiveHits](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/SnapshotFileDeltaV2/index.md)

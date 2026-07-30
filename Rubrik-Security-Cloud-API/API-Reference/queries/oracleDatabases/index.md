@@ -34,6 +34,8 @@ query {
       id
       isLiveMount
       isRelic
+      isReplica
+      isZeroRpoEnabled
       logBackupFrequency
       logRatePerRmanChannelInMb
       logRetentionHours

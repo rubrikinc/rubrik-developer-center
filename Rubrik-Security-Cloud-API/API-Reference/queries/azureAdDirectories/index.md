@@ -72,6 +72,7 @@ query {
       rscPendingObjectPauseAssignment
       slaAssignment
       slaPauseStatus
+      tenantType
     }
     pageInfo {
       hasNextPage

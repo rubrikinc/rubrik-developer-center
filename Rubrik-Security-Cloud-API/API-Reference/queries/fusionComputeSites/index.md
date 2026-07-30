@@ -28,6 +28,7 @@ query {
       clusterUuid
       fcSiteId
       id
+      isReplica
       name
       numWorkloadDescendants
       objectType

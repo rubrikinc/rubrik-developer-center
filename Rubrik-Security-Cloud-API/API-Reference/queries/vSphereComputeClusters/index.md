@@ -28,6 +28,7 @@ query {
       hasDatastoresForRecovery
       id
       ioFilterStatus
+      isReplica
       name
       numWorkloadDescendants
       objectType

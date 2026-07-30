@@ -12,6 +12,7 @@ Represents regions for Entra ID.
 | CENTRALINDIA            | Azure region is Central India.        |
 | CENTRALUS               | Azure region is Central US.           |
 | EASTASIA                | Azure region is East Asia.            |
+| EASTUS                  | Azure region is East US.              |
 | EASTUS2                 | Azure region is East US 2.            |
 | FRANCECENTRAL           | Azure region is France Central.       |
 | GERMANYWESTCENTRAL      | Azure region is Germany West Central. |

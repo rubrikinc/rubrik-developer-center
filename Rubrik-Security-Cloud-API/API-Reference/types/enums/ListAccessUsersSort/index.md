@@ -1,6 +1,6 @@
 # ListAccessUsersSort
 
-*No description available.*
+Field to sort access users by.
 
 ## Values
 

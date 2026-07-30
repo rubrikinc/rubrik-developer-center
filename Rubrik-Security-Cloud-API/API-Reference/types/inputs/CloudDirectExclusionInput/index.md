@@ -1,10 +1,10 @@
 # CloudDirectExclusionInput
 
-Input for NAS Cloud Direct Exclusions.
+Path or glob pattern exclusion.
 
 ## Fields
 
-| Field   | Type   | Description                            |
-| ------- | ------ | -------------------------------------- |
-| path    | String | Path to be excluded.                   |
-| pattern | String | Pattern to match paths to be excluded. |
+| Field   | Type   | Description           |
+| ------- | ------ | --------------------- |
+| path    | String | Path of exclusion.    |
+| pattern | String | Pattern of exclusion. |

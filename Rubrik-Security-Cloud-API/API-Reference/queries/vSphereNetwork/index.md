@@ -20,6 +20,7 @@ query VSphereNetwork($fid: UUID!) {
     authorizedOperations
     cdmPendingObjectPauseAssignment
     id
+    isReplica
     moid
     name
     numWorkloadDescendants
@@ -46,9 +47,9 @@ query VSphereNetwork($fid: UUID!) {
       ],
       "cdmPendingObjectPauseAssignment": "NO_PENDING_PAUSE_ASSIGNMENT",
       "id": "00000000-0000-0000-0000-000000000000",
+      "isReplica": true,
       "moid": "example-string",
       "name": "example-string",
-      "numWorkloadDescendants": 0,
       "allOrgs": [
         {
           "allUrls": [

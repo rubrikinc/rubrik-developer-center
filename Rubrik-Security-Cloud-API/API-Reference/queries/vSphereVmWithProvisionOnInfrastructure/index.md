@@ -33,6 +33,7 @@ query VSphereVmWithProvisionOnInfrastructure($fid: UUID!) {
     isArrayIntegrationPossible
     isBlueprintChild
     isRelic
+    isReplica
     name
     numWorkloadDescendants
     objectType

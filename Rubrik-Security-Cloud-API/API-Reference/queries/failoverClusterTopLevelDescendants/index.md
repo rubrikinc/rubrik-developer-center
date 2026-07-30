@@ -30,6 +30,7 @@ query FailoverClusterTopLevelDescendants($hostFailoverClusterRoot: HostFailoverC
       authorizedOperations
       cdmPendingObjectPauseAssignment
       id
+      isReplica
       name
       numWorkloadDescendants
       objectType

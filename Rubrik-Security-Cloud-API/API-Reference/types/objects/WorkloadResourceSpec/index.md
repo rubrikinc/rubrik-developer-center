@@ -16,4 +16,9 @@ Workload-specific resource specification.
 
 **Queries**
 
+- [query: allResourceSpecs](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/allResourceSpecs/index.md)
 - [query: allWorkloadResourceSpecs](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/allWorkloadResourceSpecs/index.md)
+
+**Referenced by**
+
+- [RecoveryPlanChildV2.resourceSpec](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/RecoveryPlanChildV2/index.md)

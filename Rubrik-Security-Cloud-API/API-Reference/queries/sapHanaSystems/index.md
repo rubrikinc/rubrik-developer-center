@@ -32,6 +32,7 @@ query {
       instanceNumber
       isForceFullOnMasterChangeEnabled
       isRelic
+      isReplica
       lastRefreshTime
       lastStatusUpdateTime
       name

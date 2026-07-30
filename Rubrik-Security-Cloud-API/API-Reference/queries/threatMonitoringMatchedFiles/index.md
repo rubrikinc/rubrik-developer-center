@@ -26,6 +26,7 @@ query ThreatMonitoringMatchedFiles($objectFid: UUID!) {
     first: 10
   ) {
     nodes {
+      archiveRelativePath
       detectedTime
       fileName
       fileSize
@@ -34,8 +35,11 @@ query ThreatMonitoringMatchedFiles($objectFid: UUID!) {
       firstObservedSnapshotFid
       isFileVersionQuarantined
       isFirstObservedSnapshotExpired
+      isInsideArchive
       isMatchedSnapshotExpired
       isQuarantinedInFirstObservedSnapshot
+      isValidated
+      isValidationRequired
       matchId
       matchType
       matchedSnapshotDate
@@ -44,6 +48,7 @@ query ThreatMonitoringMatchedFiles($objectFid: UUID!) {
       objectFid
       objectName
       objectType
+      severity
     }
     pageInfo {
       hasNextPage
@@ -66,12 +71,12 @@ query ThreatMonitoringMatchedFiles($objectFid: UUID!) {
       "nodes": [
         [
           {
+            "archiveRelativePath": "example-string",
             "detectedTime": "2024-01-01T00:00:00.000Z",
             "fileName": "example-string",
             "fileSize": 0,
             "filepath": "example-string",
-            "firstObservedSnapshotDate": "2024-01-01T00:00:00.000Z",
-            "firstObservedSnapshotFid": "00000000-0000-0000-0000-000000000000"
+            "firstObservedSnapshotDate": "2024-01-01T00:00:00.000Z"
           }
         ]
       ],

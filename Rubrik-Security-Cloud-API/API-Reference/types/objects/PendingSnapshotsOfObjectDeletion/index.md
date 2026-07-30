@@ -1,13 +1,13 @@
 # PendingSnapshotsOfObjectDeletion
 
-*No description available.*
+Pending snapshots deletion status for an object.
 
 ## Fields
 
-| Field     | Type                                                                                                                                  | Description |
-| --------- | ------------------------------------------------------------------------------------------------------------------------------------- | ----------- |
-| objectFid | [UUID](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/UUID/index.md)!                             |             |
-| status    | [PendingActionStatus](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/PendingActionStatus/index.md)! |             |
+| Field     | Type                                                                                                                                  | Description                   |
+| --------- | ------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------- |
+| objectFid | [UUID](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/UUID/index.md)!                             | FID of the object.            |
+| status    | [PendingActionStatus](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/PendingActionStatus/index.md)! | Status of the pending action. |
 
 ## Used By
 
@@ -43,4 +43,4 @@
 - [FusionComputeDatastore.pendingObjectDeletionStatus](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/FusionComputeDatastore/index.md)
 - [FusionComputeHost.pendingObjectDeletionStatus](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/FusionComputeHost/index.md)
 - FusionComputeHostDescendant.pendingObjectDeletionStatus
-- *…and 174 more*
+- *…and 179 more*

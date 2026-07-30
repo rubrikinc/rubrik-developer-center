@@ -34,7 +34,7 @@ query AllIamPairsByCloudAccountAndLocation($input: AllIamPairsByCloudAccountAndL
     "allIamPairsByCloudAccountAndLocation": [
       {
         "missingPermissionsGroups": [
-          "AKS_CUSTOM_PRIVATE_DNS_ZONE"
+          "ADVANCED_DIAGNOSTICS"
         ],
         "awsIamPair": {
           "awsIamPairId": "example-string",

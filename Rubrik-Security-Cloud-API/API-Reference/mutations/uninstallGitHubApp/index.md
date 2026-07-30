@@ -23,7 +23,7 @@ mutation UninstallGitHubApp($input: UninstallGitHubAppInput!) {
 ```json
 {
   "input": {
-    "permissionGroup": "AKS_CUSTOM_PRIVATE_DNS_ZONE"
+    "permissionGroup": "ADVANCED_DIAGNOSTICS"
   }
 }
 ```

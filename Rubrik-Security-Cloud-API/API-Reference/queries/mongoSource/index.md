@@ -28,6 +28,7 @@ query MongoSource($fid: UUID!) {
     id
     isArchived
     isRelic
+    isReplica
     lastRefreshTime
     managementType
     name

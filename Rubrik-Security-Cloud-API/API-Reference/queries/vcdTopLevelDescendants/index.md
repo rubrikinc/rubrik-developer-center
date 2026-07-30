@@ -26,6 +26,7 @@ query {
       authorizedOperations
       cdmPendingObjectPauseAssignment
       id
+      isReplica
       name
       numWorkloadDescendants
       objectType

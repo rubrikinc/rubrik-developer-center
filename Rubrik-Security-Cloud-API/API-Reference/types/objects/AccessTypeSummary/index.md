@@ -16,3 +16,4 @@ AccessTypeSummary includes a summary of counts of direct principals and IDs of g
 **Referenced by**
 
 - [PolicyObj.accessTypeSummary](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/PolicyObj/index.md)
+- [PrincipalSummary.accessTypeSummary](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/PrincipalSummary/index.md)

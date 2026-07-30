@@ -16,3 +16,4 @@ Recovery schedule associated with a recovery plan.
 **Referenced by**
 
 - [RecoveryPlanBasicInfo.recoverySchedule](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/RecoveryPlanBasicInfo/index.md)
+- [RecoveryPlanV2.recoverySchedule](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/RecoveryPlanV2/index.md)

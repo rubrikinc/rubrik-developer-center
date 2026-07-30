@@ -1,6 +1,6 @@
 # TimeGranularity
 
-*No description available.*
+Granularity at which activity is aggregated over time.
 
 ## Values
 

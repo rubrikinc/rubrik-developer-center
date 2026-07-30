@@ -1,14 +1,14 @@
 # userDetail
 
-*No description available.*
+Returns summary details for a single user, including identity information and an overview of their data access for the anchored day.
 
 ## Arguments
 
-| Argument              | Type    | Description                                  |
-| --------------------- | ------- | -------------------------------------------- |
-| userId *(required)*   | String! |                                              |
-| startDay *(required)* | String! | Start time, in string format (YYYY-MM-DD).   |
-| timezone *(required)* | String! | The timezone in which to display timestamps. |
+| Argument              | Type    | Description                                      |
+| --------------------- | ------- | ------------------------------------------------ |
+| userId *(required)*   | String! | Stable identifier of the user.                   |
+| startDay *(required)* | String! | Day to anchor the summary, in YYYY-MM-DD format. |
+| timezone *(required)* | String! | Official IANA timezone name.                     |
 
 ## Returns
 

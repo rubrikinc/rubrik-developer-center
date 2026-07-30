@@ -4,11 +4,15 @@ Gets the VNets for the given subscription.
 
 ## Arguments
 
-| Argument                    | Type                                                                                                      | Description |
-| --------------------------- | --------------------------------------------------------------------------------------------------------- | ----------- |
-| tenantId *(required)*       | String!                                                                                                   |             |
-| subscriptionId *(required)* | [UUID](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/UUID/index.md)! |             |
-| regionName *(required)*     | String!                                                                                                   |             |
+| Argument                    | Type                                                                                                      | Description                                                              |
+| --------------------------- | --------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------ |
+| first                       | Int                                                                                                       | Returns the first n elements from the list.                              |
+| after                       | String                                                                                                    | Returns the elements in the list that occur after the specified cursor.  |
+| last                        | Int                                                                                                       | Returns the last n elements from the list.                               |
+| before                      | String                                                                                                    | Returns the elements in the list that occur before the specified cursor. |
+| tenantId *(required)*       | String!                                                                                                   | Azure tenant ID.                                                         |
+| subscriptionId *(required)* | [UUID](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/UUID/index.md)! | Azure subscription ID.                                                   |
+| regionName *(required)*     | String!                                                                                                   | Azure region name.                                                       |
 
 ## Returns
 
@@ -22,6 +26,7 @@ query AzureVNets($tenantId: String!, $subscriptionId: UUID!, $regionName: String
     tenantId: $tenantId
     subscriptionId: $subscriptionId
     regionName: $regionName
+    first: 10
   ) {
     nodes {
       id

@@ -1,6 +1,6 @@
 # o365OrgSummaries
 
-*No description available.*
+GetO365OrgSummaries returns the O365 organizations that the caller is implicitly authorized to view.
 
 ## Returns
 

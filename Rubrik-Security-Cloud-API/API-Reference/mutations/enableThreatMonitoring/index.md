@@ -22,13 +22,7 @@ mutation EnableThreatMonitoring($input: EnableThreatMonitoringInput!) {
 
 ```json
 {
-  "input": {
-    "status": {
-      "enabled": true,
-      "entityId": "example-string",
-      "entityType": "ACTIVE_DIRECTORY"
-    }
-  }
+  "input": {}
 }
 ```
 

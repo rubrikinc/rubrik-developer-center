@@ -1,6 +1,6 @@
 # IdentityViolationDetails
 
-*No description available.*
+Details of an identity-related policy violation.
 
 ## Fields
 

@@ -23,6 +23,7 @@ query NutanixCategoryValue($fid: UUID!) {
     cdmPendingObjectPauseAssignment
     duplicateObjectsAbsoluteCount
     id
+    isReplica
     name
     numWorkloadDescendants
     objectType

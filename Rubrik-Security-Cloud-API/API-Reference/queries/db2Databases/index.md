@@ -23,6 +23,7 @@ query {
   db2Databases(first: 10) {
     nodes {
       authorizedOperations
+      backupCompressionLibraryPath
       backupParallelism
       backupSessions
       backupTriggerType
@@ -31,7 +32,9 @@ query {
       cdmPendingObjectPauseAssignment
       db2DbType
       id
+      isBackupCompressionEnabled
       isRelic
+      isReplica
       lastSyncTime
       logBackupThreshold
       name
@@ -68,11 +71,11 @@ query {
             "authorizedOperations": [
               "ACCESS_CDM_CLUSTER"
             ],
+            "backupCompressionLibraryPath": "example-string",
             "backupParallelism": 0,
             "backupSessions": 0,
             "backupTriggerType": "BACKUP_TRIGGER_TYPE_CUSTOMER_MANAGED",
-            "cdmId": "example-string",
-            "cdmLink": "example-string"
+            "cdmId": "example-string"
           }
         ]
       ],

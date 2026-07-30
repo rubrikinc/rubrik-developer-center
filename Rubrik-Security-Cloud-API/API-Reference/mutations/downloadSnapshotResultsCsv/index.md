@@ -4,11 +4,11 @@ Download snapshot policy results in CSV format.
 
 ## Arguments
 
-| Argument                  | Type                                                                                                                                                        | Description |
-| ------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------- |
-| snappableFid *(required)* | String!                                                                                                                                                     |             |
-| snapshotFid *(required)*  | String!                                                                                                                                                     |             |
-| downloadFilter            | [DownloadResultsCsvFiltersInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/DownloadResultsCsvFiltersInput/index.md) |             |
+| Argument                  | Type                                                                                                                                                        | Description                                                     |
+| ------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------- |
+| snappableFid *(required)* | String!                                                                                                                                                     | Identifier of the object whose snapshot results are downloaded. |
+| snapshotFid *(required)*  | String!                                                                                                                                                     | Identifier of the snapshot whose results are downloaded.        |
+| downloadFilter            | [DownloadResultsCsvFiltersInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/DownloadResultsCsvFiltersInput/index.md) | Filters applied to the snapshot results included in the CSV.    |
 
 ## Returns
 

@@ -36,6 +36,7 @@ query {
       id
       ipAddresses
       isRelic
+      isReplica
       name
       numWorkloadDescendants
       objectType

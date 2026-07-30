@@ -18,3 +18,4 @@ Stats of an individual data type.
 
 - [DataGovViolationDetails.dataTypes](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/DataGovViolationDetails/index.md)
 - [DataTypeResult.result](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/DataTypeResult/index.md)
+- [SensitiveDataSummaryBreakdown.dataTypeStats](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/SensitiveDataSummaryBreakdown/index.md)

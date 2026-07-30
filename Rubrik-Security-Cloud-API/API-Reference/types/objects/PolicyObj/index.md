@@ -73,6 +73,7 @@
 **Queries**
 
 - [query: policyObj](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/policyObj/index.md)
+- [query: policyObjOpt](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/policyObjOpt/index.md)
 - [query: policyObjs](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/policyObjs/index.md) *(via connection)*
 
 **Referenced by**

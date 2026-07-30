@@ -22,6 +22,7 @@ query CustomAnalyzer($analyzerId: String!) {
     dictionaryCsv
     excludeFieldNamePattern
     excludePathPattern
+    excludeValueRegex
     id
     isInactive
     keyRegex
@@ -58,7 +59,7 @@ query CustomAnalyzer($analyzerId: String!) {
       "dictionaryCsv": "example-string",
       "excludeFieldNamePattern": "example-string",
       "excludePathPattern": "example-string",
-      "id": "example-string",
+      "excludeValueRegex": "example-string",
       "analyzerRiskInstance": {
         "analyzerId": "example-string",
         "risk": "HIGH_RISK",

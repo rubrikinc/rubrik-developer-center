@@ -19,8 +19,10 @@ query OracleHost($fid: UUID!) {
   oracleHost(fid: $fid) {
     authorizedOperations
     cdmPendingObjectPauseAssignment
+    excludedDbUniqueNames
     hostLogRetentionHours
     id
+    isReplica
     logBackupFrequency
     logRetentionHours
     name
@@ -48,10 +50,12 @@ query OracleHost($fid: UUID!) {
         "ACCESS_CDM_CLUSTER"
       ],
       "cdmPendingObjectPauseAssignment": "NO_PENDING_PAUSE_ASSIGNMENT",
+      "excludedDbUniqueNames": [
+        "example-string"
+      ],
       "hostLogRetentionHours": 0,
       "id": "00000000-0000-0000-0000-000000000000",
-      "logBackupFrequency": 0,
-      "logRetentionHours": 0,
+      "isReplica": true,
       "allOrgs": [
         {
           "allUrls": [

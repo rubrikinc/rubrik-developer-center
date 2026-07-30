@@ -12,6 +12,7 @@ Microsoft Defender for Identity alert violation details.
 | detectionDescription | String!                                                                                                          | Full alert description.                                                |
 | detectionName        | String!                                                                                                          | Alert name (title).                                                    |
 | detectionTime        | [DateTime](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/DateTime/index.md) | When Defender created the alert.                                       |
+| detectorId           | String!                                                                                                          | Microsoft Defender detector ID (the Graph detectorId).                 |
 | endTime              | [DateTime](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/DateTime/index.md) | Latest activity associated with the alert.                             |
 | mitreTactic          | String!                                                                                                          | MITRE ATT&CK tactic (from alert category).                             |
 | mitreTechniques      | [String!]!                                                                                                       | MITRE ATT&CK technique IDs (array, unlike CrowdStrike's single value). |

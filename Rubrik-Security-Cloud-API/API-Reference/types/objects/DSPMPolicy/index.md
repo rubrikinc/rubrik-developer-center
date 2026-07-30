@@ -34,4 +34,5 @@ Policy definition.
 
 **Referenced by**
 
+- [PolicyResult.policy](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/PolicyResult/index.md)
 - [PolicyViolation.policy](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/PolicyViolation/index.md)

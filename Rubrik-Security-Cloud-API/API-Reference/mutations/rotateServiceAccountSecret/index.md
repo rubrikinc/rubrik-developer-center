@@ -21,6 +21,7 @@ mutation RotateServiceAccountSecret($input: RotateServiceAccountSecretInput!) {
     clientId
     clientSecret
     name
+    suspendedTprPolicyIds
   }
 }
 ```
@@ -40,7 +41,10 @@ mutation RotateServiceAccountSecret($input: RotateServiceAccountSecretInput!) {
       "accessTokenUri": "example-string",
       "clientId": "example-string",
       "clientSecret": "example-string",
-      "name": "example-string"
+      "name": "example-string",
+      "suspendedTprPolicyIds": [
+        "example-string"
+      ]
     }
   }
 }

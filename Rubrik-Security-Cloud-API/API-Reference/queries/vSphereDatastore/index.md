@@ -26,6 +26,7 @@ query VSphereDatastore($fid: UUID!) {
     id
     isArchived
     isLocal
+    isReplica
     isStandaloneDatastore
     name
     numWorkloadDescendants

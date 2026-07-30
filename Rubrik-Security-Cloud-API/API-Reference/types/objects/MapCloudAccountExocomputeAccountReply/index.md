@@ -4,9 +4,9 @@ Response for mapping exocompute account.
 
 ## Fields
 
-| Field     | Type     | Description                         |
-| --------- | -------- | ----------------------------------- |
-| isSuccess | Boolean! | Whether the mapping was successful. |
+| Field     | Type     | Description                                                              |
+| --------- | -------- | ------------------------------------------------------------------------ |
+| isSuccess | Boolean! | Whether all requested accounts succeeded; per-account detail in results. |
 
 ## Used By
 

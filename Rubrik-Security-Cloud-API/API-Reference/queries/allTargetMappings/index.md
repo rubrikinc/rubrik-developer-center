@@ -50,6 +50,7 @@ query {
           "status": "CONNECTED"
         },
         "targetTemplate": {
+          "sourceWorkloadCloud": "SOURCE_AWS",
           "targetType": "AWS",
           "templateLocationId": "00000000-0000-0000-0000-000000000000"
         }

@@ -15,3 +15,4 @@ Azure region specification.
 
 - [AzureNativeSubscription.regionSpecs](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AzureNativeSubscription/index.md)
 - [AzureNativeSubscriptionDetails.regionSpecs](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AzureNativeSubscriptionDetails/index.md)
+- [RecoveryPlanAzureSubscription.regionSpecs](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/RecoveryPlanAzureSubscription/index.md)

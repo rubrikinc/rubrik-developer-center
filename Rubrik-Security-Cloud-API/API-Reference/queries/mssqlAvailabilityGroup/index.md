@@ -23,6 +23,7 @@ query MssqlAvailabilityGroup($fid: UUID!) {
     hasLogConfigFromSla
     hostLogRetention
     id
+    isReplica
     logBackupFrequencyInSeconds
     logBackupRetentionInHours
     name

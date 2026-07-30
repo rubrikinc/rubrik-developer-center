@@ -19,4 +19,5 @@ AnalyzerResult contains analyzer metadata and hit statistics for a single analyz
 - [CrawlObj.analyzerResults](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/CrawlObj/index.md)
 - [FileResult.analyzerResults](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/FileResult/index.md)
 - [GetDashboardSummaryReply.analyzerResults](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/GetDashboardSummaryReply/index.md)
+- [SensitiveDataSummaryBreakdown.dataTypes](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/SensitiveDataSummaryBreakdown/index.md)
 - [SonarContentReport.analyzerResults](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/SonarContentReport/index.md)

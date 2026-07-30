@@ -1,12 +1,12 @@
 # updatePreviewerClusterConfig
 
-Update previewer cluster configuration.
+Update previewer cluster configuration and return the updated Rubrik cluster.
 
 ## Arguments
 
-| Argument                            | Type                                                                                                                                                   | Description |
-| ----------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ | ----------- |
-| previewerClusterConfig *(required)* | [PreviewerClusterConfigInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/PreviewerClusterConfigInput/index.md)! |             |
+| Argument                            | Type                                                                                                                                                   | Description                               |
+| ----------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ | ----------------------------------------- |
+| previewerClusterConfig *(required)* | [PreviewerClusterConfigInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/PreviewerClusterConfigInput/index.md)! | Previewer cluster configuration to apply. |
 
 ## Returns
 

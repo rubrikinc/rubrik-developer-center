@@ -1,6 +1,6 @@
 # CdmManagedS3CompatibleTarget
 
-Specific info for S3Compatible created on Cdm.
+Specific information for S3-compatible target created on CDM cluster.
 
 **Implements:** [Target](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/Target/index.md)
 
@@ -11,9 +11,9 @@ Specific info for S3Compatible created on Cdm.
 | cluster                           | [Cluster](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/Cluster/index.md)!                             | The cluster to which this target belongs.                                                                                   |
 | clusterName                       | String                                                                                                                                      | Name of the Rubrik cluster that archives to this archival location.                                                         |
 | consumedBytes                     | [Long](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/Long/index.md)                                    | Number of bytes stored on the target.                                                                                       |
-| endpoint                          | String!                                                                                                                                     | Host of the S3Compatible location.                                                                                          |
+| endpoint                          | String!                                                                                                                                     | Host of the S3-compatible location.                                                                                         |
 | failedTasks                       | Int                                                                                                                                         | Number of archiving tasks failed on this target.                                                                            |
-| id                                | String!                                                                                                                                     | Id of the S3Compatible location.                                                                                            |
+| id                                | String!                                                                                                                                     | The ID of the target.                                                                                                       |
 | isActive                          | Boolean!                                                                                                                                    | Specifies whether the status of the target is active. When set to false, the target is either paused or not enabled.        |
 | isArchived                        | Boolean!                                                                                                                                    | Specifies whether the target is archived.                                                                                   |
 | isComplianceImmutabilitySupported | Boolean!                                                                                                                                    | Specifies whether the archival location supports compliance immutability for retention locked snapshots.                    |

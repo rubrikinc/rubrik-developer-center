@@ -15,3 +15,4 @@ Statistics of an individual data category.
 **Referenced by**
 
 - [DataGovViolationDetails.dataCategories](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/DataGovViolationDetails/index.md)
+- [SensitiveDataSummaryBreakdown.dataCategoryStats](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/SensitiveDataSummaryBreakdown/index.md)

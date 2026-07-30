@@ -15,4 +15,5 @@ RemediationAvailability provides details about the availability of a particular 
 **Referenced by**
 
 - [ActivityEntry.remediationTypes](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/ActivityEntry/index.md)
+- [GetRemediationTypesType.remediations](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/GetRemediationTypesType/index.md)
 - [PolicyViolation.possibleRemediationsForViolationTarget](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/PolicyViolation/index.md)

@@ -1,0 +1,10 @@
+# SidPolicySummarySortBy
+
+SidPolicySummarySortBy specifies the sort criteria for SID policy summary sort.
+
+## Values
+
+| Value                                  | Description                         |
+| -------------------------------------- | ----------------------------------- |
+| SID_POLICY_SUMMARY_SORT_BY_UNSPECIFIED | Unspecified sort criteria.          |
+| TOTAL_SENSITIVE_HITS                   | Sort based on total sensitive hits. |

@@ -38,7 +38,17 @@ mutation BulkUpdateOracleRacs($input: BulkUpdateOracleRacsInput!) {
     "bulkUpdateOracleRacs": {
       "responses": [
         {
-          "scan": "example-string"
+          "backupNodes": [
+            "example-string"
+          ],
+          "excludedDbUniqueNames": [
+            "example-string"
+          ],
+          "primaryNode": "example-string",
+          "scan": "example-string",
+          "secondaryNodes": [
+            "example-string"
+          ]
         }
       ]
     }

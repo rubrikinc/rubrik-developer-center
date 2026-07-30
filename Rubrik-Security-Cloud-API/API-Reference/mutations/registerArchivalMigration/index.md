@@ -27,7 +27,7 @@ mutation RegisterArchivalMigration($input: RegisterArchivalMigrationInput!) {
   "input": {
     "destination": {},
     "sourceLocationId": "00000000-0000-0000-0000-000000000000",
-    "targetLocationType": "ARCHIVAL_MIGRATION_TARGET_S3_COMPATIBLE"
+    "targetLocationType": "ARCHIVAL_MIGRATION_TARGET_RCV_AWS"
   }
 }
 ```

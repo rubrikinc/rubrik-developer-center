@@ -4,10 +4,11 @@ Simplified table column for template introspection.
 
 ## Fields
 
-| Field       | Type    | Description                       |
-| ----------- | ------- | --------------------------------- |
-| displayName | String! | The display name shown in the UI. |
-| name        | String! | The column identifier.            |
+| Field       | Type     | Description                       |
+| ----------- | -------- | --------------------------------- |
+| displayName | String!  | The display name shown in the UI. |
+| isSortable  | Boolean! | Whether this column is sortable.  |
+| name        | String!  | The column identifier.            |
 
 ## Used By
 

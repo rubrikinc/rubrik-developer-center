@@ -23,6 +23,7 @@ query VSphereComputeCluster($fid: UUID!) {
     hasDatastoresForRecovery
     id
     ioFilterStatus
+    isReplica
     name
     numWorkloadDescendants
     objectType

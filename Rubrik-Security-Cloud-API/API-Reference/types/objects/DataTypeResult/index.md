@@ -13,4 +13,6 @@ DataTypeResult represents the result for a specific data type.
 
 **Referenced by**
 
+- [AnalyzedColumn.columnDatatypeResults](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AnalyzedColumn/index.md)
 - [PolicyObj.dataTypeResults](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/PolicyObj/index.md)
+- [PrincipalSummary.dataTypeResults](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/PrincipalSummary/index.md)

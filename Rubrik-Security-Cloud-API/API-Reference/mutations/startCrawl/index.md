@@ -1,15 +1,16 @@
 # startCrawl
 
-Start a crawl.
+Endpoints for ODC Start a crawl.
 
 ## Arguments
 
-| Argument                    | Type                                                                                                                                      | Description |
-| --------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------- | ----------- |
-| name *(required)*           | String!                                                                                                                                   |             |
-| resources *(required)*      | \[[ResourceInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/ResourceInput/index.md)!\]!           |             |
-| analyzerGroups *(required)* | \[[AnalyzerGroupInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/AnalyzerGroupInput/index.md)!\]! |             |
-| extWhiteList                | [String!]                                                                                                                                 |             |
+| Argument               | Type                                                                                                                                     | Description                                                                                                                |
+| ---------------------- | ---------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------- |
+| name *(required)*      | String!                                                                                                                                  | Name of the crawl.                                                                                                         |
+| resources *(required)* | \[[ResourceInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/ResourceInput/index.md)!\]!          | Resources to include in the crawl.                                                                                         |
+| analyzerGroups         | \[[AnalyzerGroupInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/AnalyzerGroupInput/index.md)!\] | Analyzer groups to run during the crawl. Mutually exclusive with dataCategoryIds: exactly one of the two must be supplied. |
+| extWhiteList           | [String!]                                                                                                                                | External whitelist entries for the crawl.                                                                                  |
+| dataCategoryIds        | [String!]                                                                                                                                | Data category IDs to scan. Mutually exclusive with analyzerGroups.                                                         |
 
 ## Returns
 
@@ -18,11 +19,10 @@ Start a crawl.
 ## Sample
 
 ```graphql
-mutation StartCrawl($name: String!, $resources: [ResourceInput!]!, $analyzerGroups: [AnalyzerGroupInput!]!) {
+mutation StartCrawl($name: String!, $resources: [ResourceInput!]!) {
   startCrawl(
     name: $name
     resources: $resources
-    analyzerGroups: $analyzerGroups
   ) {
     crawlId
   }
@@ -33,9 +33,6 @@ mutation StartCrawl($name: String!, $resources: [ResourceInput!]!, $analyzerGrou
 {
   "name": "example-string",
   "resources": [
-    {}
-  ],
-  "analyzerGroups": [
     {}
   ]
 }

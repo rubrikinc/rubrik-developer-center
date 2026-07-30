@@ -35,7 +35,7 @@ query AllObjectsAlreadyAssignedToOrgs($objectIdsForHierarchyTypes: [ObjectIdsFor
       "objectIds": [
         "example-string"
       ],
-      "snappableType": "AWS_NATIVE_CONFIG"
+      "snappableType": "AUTH0_TENANT"
     }
   ],
   "allowedClusters": [
@@ -52,7 +52,7 @@ query AllObjectsAlreadyAssignedToOrgs($objectIdsForHierarchyTypes: [ObjectIdsFor
         "objectIds": [
           "example-string"
         ],
-        "snappableType": "AWS_NATIVE_CONFIG"
+        "snappableType": "AUTH0_TENANT"
       }
     ]
   }

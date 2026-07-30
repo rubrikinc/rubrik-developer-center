@@ -4,10 +4,12 @@ Represents a permissions group with its version.
 
 ## Fields
 
-| Field            | Type                                                                                                                            | Description                                      |
-| ---------------- | ------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------ |
-| permissionsGroup | [PermissionsGroup](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/PermissionsGroup/index.md)! | Represents the permissions group.                |
-| version          | Int!                                                                                                                            | Represents the version of the permissions group. |
+| Field            | Type                                                                                                                             | Description                                                                                                        |
+| ---------------- | -------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------ |
+| deltaInterval    | \[[DeltaInterval](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/DeltaInterval/index.md)!\]! | Delta intervals applied. Populated when the PG is on the delta-intervals representation; empty otherwise.          |
+| deltaMigrated    | Boolean!                                                                                                                         | True iff this PG is on the delta-intervals representation; when false, read `version` and ignore `delta_interval`. |
+| permissionsGroup | [PermissionsGroup](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/PermissionsGroup/index.md)!  | Represents the permissions group.                                                                                  |
+| version          | Int!                                                                                                                             | Represents the version of the permissions group.                                                                   |
 
 ## Used By
 

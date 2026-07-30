@@ -1,0 +1,23 @@
+# AwsEc2InstanceRecoverySpec
+
+Recovery specification for AWS EC2 instance recovery.
+
+## Fields
+
+| Field                  | Type                                                                                                                    | Description                                                                   |
+| ---------------------- | ----------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------- |
+| iamInstanceProfileArn  | String                                                                                                                  | The IAM instance profile ARN selected by the user (optional).                 |
+| instanceType           | String!                                                                                                                 | The instance type of the virtual machine to recover to.                       |
+| kmsKeyId               | String                                                                                                                  | The KMS key ID of the recovered virtual machine (optional).                   |
+| securityGroupNativeIds | [String!]!                                                                                                              | The native IDs of the security groups used for the recovered virtual machine. |
+| snapshotType           | [SnapshotType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/SnapshotType/index.md)! | The type of the source snapshot to be used for recovery.                      |
+| sshKeyPairName         | String                                                                                                                  | The SSH key pair of the recovered virtual machine (optional).                 |
+| subnetNativeId         | String!                                                                                                                 | The native ID of the subnet from which to recover the EC2 instance.           |
+| version                | [Long](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/Long/index.md)!               | Version of the recovery specification.                                        |
+| vpcNativeId            | String!                                                                                                                 | The VPC native ID of the provided subnet.                                     |
+
+## Used By
+
+**Referenced by**
+
+- [WorkloadSpecificRecoverySpec.awsEc2Instance](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/WorkloadSpecificRecoverySpec/index.md)

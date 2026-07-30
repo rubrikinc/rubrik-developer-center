@@ -38,7 +38,7 @@ query AllLatestPermissionsByPermissionsGroupGcp($features: [CloudAccountFeature!
         "feature": "ALL",
         "permissionGroups": [
           {
-            "permissionGroupType": "AKS_CUSTOM_PRIVATE_DNS_ZONE",
+            "permissionGroupType": "ADVANCED_DIAGNOSTICS",
             "permissionsWithConditions": [
               "example-string"
             ],

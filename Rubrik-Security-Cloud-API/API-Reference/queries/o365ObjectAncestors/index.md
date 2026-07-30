@@ -1,6 +1,6 @@
 # o365ObjectAncestors
 
-*No description available.*
+GetO365ObjectAncestors returns the ancestor object summaries for the given object that the caller is implicitly authorized to view.
 
 ## Arguments
 

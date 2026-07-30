@@ -24,6 +24,7 @@ query NutanixPrismCentral($fid: UUID!) {
     hostName
     id
     isDrEnabled
+    isReplica
     lastRefreshTime
     name
     naturalId
@@ -32,6 +33,7 @@ query NutanixPrismCentral($fid: UUID!) {
     nutanixClusterIds
     objectType
     replicatedObjectCount
+    shouldUseV4
     slaAssignment
     slaPauseStatus
     userName

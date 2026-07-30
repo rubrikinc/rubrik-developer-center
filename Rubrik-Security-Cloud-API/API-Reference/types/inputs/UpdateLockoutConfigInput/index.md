@@ -1,6 +1,6 @@
 # UpdateLockoutConfigInput
 
-Specifies the input required to update the lockout config by the admin.
+Specifies information about lockout configuration.
 
 ## Fields
 

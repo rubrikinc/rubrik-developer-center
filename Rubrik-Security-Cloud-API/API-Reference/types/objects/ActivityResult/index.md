@@ -1,14 +1,14 @@
 # ActivityResult
 
-*No description available.*
+Aggregated count of activities of a given access type.
 
 ## Fields
 
-| Field      | Type                                                                                                                                | Description |
-| ---------- | ----------------------------------------------------------------------------------------------------------------------------------- | ----------- |
-| accessType | [ActivityAccessType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/ActivityAccessType/index.md)! |             |
-| count      | [Long](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/Long/index.md)!                           |             |
-| countDelta | [Long](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/Long/index.md)!                           |             |
+| Field      | Type                                                                                                                                | Description                                          |
+| ---------- | ----------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------- |
+| accessType | [ActivityAccessType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/ActivityAccessType/index.md)! | Type of activity the counts apply to.                |
+| count      | [Long](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/Long/index.md)!                           | Number of activities of this access type.            |
+| countDelta | [Long](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/Long/index.md)!                           | Change in the count relative to the previous period. |
 
 ## Used By
 

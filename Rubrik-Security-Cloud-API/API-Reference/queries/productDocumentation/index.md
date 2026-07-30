@@ -20,6 +20,10 @@ query ProductDocumentation($id: String!) {
     description
     id
     language
+    nextDocId
+    nextDocTitle
+    prevDocId
+    prevDocTitle
     title
     type
   }
@@ -39,8 +43,9 @@ query ProductDocumentation($id: String!) {
       "description": "example-string",
       "id": "example-string",
       "language": "example-string",
-      "title": "example-string",
-      "type": "CONCEPT",
+      "nextDocId": "example-string",
+      "nextDocTitle": "example-string",
+      "prevDocId": "example-string",
       "contents": [
         {
           "index": 0,

@@ -15,4 +15,6 @@ Policy summary details.
 
 **Referenced by**
 
+- [ExposureTypeHits.policySummaryDetails](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/ExposureTypeHits/index.md)
 - [ObjectTypeAccessSummary.policySummaryDetails](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/ObjectTypeAccessSummary/index.md)
+- [SensitiveDataSummaryBreakdown.dataCategories](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/SensitiveDataSummaryBreakdown/index.md)

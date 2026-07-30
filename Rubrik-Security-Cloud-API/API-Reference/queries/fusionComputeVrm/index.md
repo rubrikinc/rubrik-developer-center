@@ -26,6 +26,7 @@ query FusionComputeVrm($fid: UUID!) {
     id
     ipAddress
     isRefreshed
+    isReplica
     lastRefreshTime
     name
     numWorkloadDescendants

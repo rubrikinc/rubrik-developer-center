@@ -4,9 +4,9 @@ Change the password for the current user.
 
 ## Arguments
 
-| Argument           | Type                                                                                                                                                         | Description                                           |
-| ------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------ | ----------------------------------------------------- |
-| input *(required)* | [ChangeCurrentUserPasswordInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/ChangeCurrentUserPasswordInput/index.md)! | Input required to change the current user's password. |
+| Argument           | Type                                                                                                                                                         | Description                                                         |
+| ------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------- |
+| input *(required)* | [ChangeCurrentUserPasswordInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/ChangeCurrentUserPasswordInput/index.md)! | Specifies the input required to change the current user's password. |
 
 ## Returns
 

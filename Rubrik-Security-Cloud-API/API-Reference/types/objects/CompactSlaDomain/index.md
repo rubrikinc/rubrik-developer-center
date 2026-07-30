@@ -43,4 +43,4 @@ SLA Domain name and ID.
 - [CassandraColumnFamily.rscNativeObjectPendingSla](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/CassandraColumnFamily/index.md)
 - [CassandraKeyspace.rscNativeObjectPendingSla](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/CassandraKeyspace/index.md)
 - CassandraKeyspaceDescendantType.rscNativeObjectPendingSla
-- *…and 50 more*
+- *…and 54 more*

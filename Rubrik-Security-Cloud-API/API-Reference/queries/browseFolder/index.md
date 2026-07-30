@@ -1,17 +1,19 @@
 # browseFolder
 
-*No description available.*
+BrowseMailboxFolderItems returns the contents (folders + emails) of a mailbox folder inside a single snapshot. Encapsulates the snapshot-expiry data check and the mailbox response shaping previously performed in the GraphQL resolver `browseFolder`.
 
 ## Arguments
 
-| Argument                  | Type                                                                                                      | Description                                                             |
-| ------------------------- | --------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------- |
-| first                     | Int                                                                                                       | Returns the first n elements from the list.                             |
-| after                     | String                                                                                                    | Returns the elements in the list that occur after the specified cursor. |
-| snappableFid *(required)* | [UUID](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/UUID/index.md)! | The FID for the workload.                                               |
-| snapshotFid *(required)*  | [UUID](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/UUID/index.md)! | The ID of the snapshot.                                                 |
-| folderId *(required)*     | String!                                                                                                   |                                                                         |
-| orgId *(required)*        | [UUID](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/UUID/index.md)! | Org UUID.                                                               |
+| Argument                  | Type                                                                                                      | Description                                                              |
+| ------------------------- | --------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------ |
+| first                     | Int                                                                                                       | Returns the first n elements from the list.                              |
+| after                     | String                                                                                                    | Returns the elements in the list that occur after the specified cursor.  |
+| last                      | Int                                                                                                       | Returns the last n elements from the list.                               |
+| before                    | String                                                                                                    | Returns the elements in the list that occur before the specified cursor. |
+| snappableFid *(required)* | [UUID](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/UUID/index.md)! | The FID for the workload.                                                |
+| snapshotFid *(required)*  | [UUID](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/UUID/index.md)! | The ID of the snapshot.                                                  |
+| folderId *(required)*     | String!                                                                                                   | The folder being browsed.                                                |
+| orgId *(required)*        | [UUID](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/UUID/index.md)! | Org UUID.                                                                |
 
 ## Returns
 

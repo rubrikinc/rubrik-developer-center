@@ -15,3 +15,6 @@ Group of backup windows allowing backup termination. This groups regular backup 
 
 - [ClusterSlaDomain.backupWindowSpec](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/ClusterSlaDomain/index.md)
 - [GlobalSlaReply.backupWindowSpec](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/GlobalSlaReply/index.md)
+- [ObjectBackupWindowStatus.backupWindowGroup](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/ObjectBackupWindowStatus/index.md)
+- [SetObjectBackupWindowsTprReqChangesTemplate.newBackupWindowGroup](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/SetObjectBackupWindowsTprReqChangesTemplate/index.md)
+- [SetObjectBackupWindowsTprReqChangesTemplate.oldBackupWindowGroup](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/SetObjectBackupWindowsTprReqChangesTemplate/index.md)

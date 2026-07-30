@@ -30,7 +30,7 @@ query AzureCloudAccountPermissionConfig($feature: CloudAccountFeature!, $permiss
 {
   "feature": "ALL",
   "permissionsGroups": [
-    "AKS_CUSTOM_PRIVATE_DNS_ZONE"
+    "ADVANCED_DIAGNOSTICS"
   ]
 }
 ```
@@ -42,7 +42,8 @@ query AzureCloudAccountPermissionConfig($feature: CloudAccountFeature!, $permiss
       "permissionVersion": 0,
       "permissionsGroupVersions": [
         {
-          "permissionsGroup": "AKS_CUSTOM_PRIVATE_DNS_ZONE",
+          "deltaMigrated": true,
+          "permissionsGroup": "ADVANCED_DIAGNOSTICS",
           "version": 0
         }
       ],

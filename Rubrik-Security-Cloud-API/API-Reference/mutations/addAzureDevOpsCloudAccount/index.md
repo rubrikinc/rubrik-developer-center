@@ -26,7 +26,6 @@ mutation AddAzureDevOpsCloudAccount($input: AddAzureDevOpsCloudAccountInput!) {
     "featuresWithPermissionsGroups": [
       {}
     ],
-    "organizationNativeId": "example-string",
     "sessionId": "00000000-0000-0000-0000-000000000000",
     "tenantId": "example-string"
   }

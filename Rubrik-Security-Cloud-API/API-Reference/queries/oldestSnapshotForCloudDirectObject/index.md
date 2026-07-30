@@ -42,6 +42,7 @@ query OldestSnapshotForCloudDirectObject($workloadId: UUID!) {
     state
     systemId
     target
+    targetId
     type
     workloadId
   }

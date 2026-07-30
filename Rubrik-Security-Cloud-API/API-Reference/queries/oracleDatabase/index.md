@@ -29,6 +29,8 @@ query OracleDatabase($fid: UUID!) {
     id
     isLiveMount
     isRelic
+    isReplica
+    isZeroRpoEnabled
     logBackupFrequency
     logRatePerRmanChannelInMb
     logRetentionHours

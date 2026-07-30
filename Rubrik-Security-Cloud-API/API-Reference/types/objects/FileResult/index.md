@@ -70,6 +70,7 @@
 **Queries**
 
 - [query: objectFiles](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/objectFiles/index.md) *(via connection)*
+- [query: policyObjFolderChildren](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/policyObjFolderChildren/index.md) *(via connection)*
 - [query: userActivities](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/userActivities/index.md) *(via connection)*
 
 **Referenced by**

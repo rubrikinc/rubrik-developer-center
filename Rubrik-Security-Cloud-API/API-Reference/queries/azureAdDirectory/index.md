@@ -67,6 +67,7 @@ query AzureAdDirectory($workloadFid: UUID!) {
     rscPendingObjectPauseAssignment
     slaAssignment
     slaPauseStatus
+    tenantType
   }
 }
 ```

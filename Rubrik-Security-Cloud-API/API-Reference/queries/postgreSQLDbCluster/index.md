@@ -24,6 +24,7 @@ query PostgreSQLDbCluster($fid: UUID!) {
     clusterMode
     id
     isRelic
+    isReplica
     name
     numWorkloadDescendants
     objectType

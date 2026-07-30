@@ -1,12 +1,12 @@
 # runCustomAnalyzer
 
-*No description available.*
+Runs a custom analyzer against sample content and returns the matches.
 
 ## Arguments
 
-| Argument           | Type                                                                                                                                         | Description |
-| ------------------ | -------------------------------------------------------------------------------------------------------------------------------------------- | ----------- |
-| input *(required)* | [RunCustomAnalyzerInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/RunCustomAnalyzerInput/index.md)! |             |
+| Argument           | Type                                                                                                                                         | Description                               |
+| ------------------ | -------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------- |
+| input *(required)* | [RunCustomAnalyzerInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/RunCustomAnalyzerInput/index.md)! | The custom analyzer configuration to run. |
 
 ## Returns
 

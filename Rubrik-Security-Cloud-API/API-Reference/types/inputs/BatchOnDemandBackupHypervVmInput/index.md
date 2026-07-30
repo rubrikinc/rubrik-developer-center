@@ -4,7 +4,7 @@ Required. Input for taking on-demand snapshots of multiple Hyper-V virtual machi
 
 ## Fields
 
-| Field    | Type                                                                                                                                                                           | Description                                                                            |
-| -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------- |
-| config   | [HypervBatchOnDemandBackupJobConfigInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/HypervBatchOnDemandBackupJobConfigInput/index.md)! | Input configuration for taking on-demand snapshot of multiple HyperV virtual machines. |
-| userNote | String                                                                                                                                                                         | User note to associate with audits.                                                    |
+| Field    | Type                                                                                                                                                                           | Description                                                                                      |
+| -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------ |
+| config   | [HypervBatchOnDemandBackupJobConfigInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/HypervBatchOnDemandBackupJobConfigInput/index.md)! | Required. Input configuration for taking on-demand snapshot of multiple HyperV virtual machines. |
+| userNote | String                                                                                                                                                                         | User note to associate with audits.                                                              |

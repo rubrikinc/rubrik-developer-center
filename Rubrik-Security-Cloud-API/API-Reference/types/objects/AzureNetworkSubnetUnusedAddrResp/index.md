@@ -1,6 +1,6 @@
 # AzureNetworkSubnetUnusedAddrResp
 
-*No description available.*
+Reply with the number of unused addresses in an Azure subnet.
 
 ## Fields
 

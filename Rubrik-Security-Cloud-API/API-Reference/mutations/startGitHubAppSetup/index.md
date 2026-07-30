@@ -27,7 +27,7 @@ mutation StartGitHubAppSetup($input: StartGitHubAppSetupInput!) {
 {
   "input": {
     "appPurposes": [
-      "AKS_CUSTOM_PRIVATE_DNS_ZONE"
+      "ADVANCED_DIAGNOSTICS"
     ],
     "orgName": "example-string"
   }
@@ -42,7 +42,7 @@ mutation StartGitHubAppSetup($input: StartGitHubAppSetupInput!) {
       "orgAlreadyAdded": true,
       "appSetupInfo": [
         {
-          "appPurpose": "AKS_CUSTOM_PRIVATE_DNS_ZONE",
+          "appPurpose": "ADVANCED_DIAGNOSTICS",
           "appStatus": "INSTALLED",
           "sessionId": "example-string"
         }

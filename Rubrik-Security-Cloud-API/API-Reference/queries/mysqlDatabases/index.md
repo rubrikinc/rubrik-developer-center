@@ -26,6 +26,7 @@ query {
       cdmPendingObjectPauseAssignment
       id
       isRelic
+      isReplica
       name
       numWorkloadDescendants
       objectType
@@ -58,8 +59,8 @@ query {
             "cdmPendingObjectPauseAssignment": "NO_PENDING_PAUSE_ASSIGNMENT",
             "id": "00000000-0000-0000-0000-000000000000",
             "isRelic": true,
-            "name": "example-string",
-            "numWorkloadDescendants": 0
+            "isReplica": true,
+            "name": "example-string"
           }
         ]
       ],

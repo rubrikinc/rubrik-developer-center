@@ -44,6 +44,7 @@ query PolarisSnapshot($snapshotFid: UUID!) {
     isReplica
     isReplicated
     isRetentionLocked
+    isSnapshotSearchable
     isUnindexable
     parentSnapshotId
     retentionLockModeAcrossLocations

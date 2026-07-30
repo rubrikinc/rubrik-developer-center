@@ -1,6 +1,6 @@
 # O365OnedriveObject
 
-*No description available.*
+O365OnedriveObject is the interface for OneDrive and SharePoint drive/list search results.
 
 ## Fields
 

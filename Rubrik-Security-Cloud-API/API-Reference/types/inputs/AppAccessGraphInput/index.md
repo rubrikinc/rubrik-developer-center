@@ -1,0 +1,19 @@
+# AppAccessGraphInput
+
+Request for GetAppAccessGraph RPC.
+
+## Fields
+
+| Field             | Type                                                                                                                                       | Description                                                                                                                         |
+| ----------------- | ------------------------------------------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------- |
+| accessPathType    | [AccessPathType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/AccessPathType/index.md)                 | Filter by access path type (direct, indirect, or all).                                                                              |
+| activityId        | String                                                                                                                                     | Optional activity ID that overlays an impacted lane on the access graph. When set, activityTimestamp must also be provided.         |
+| activityTimestamp | String                                                                                                                                     | RFC3339 timestamp at which to compute the access graph. Must not be in the future and must be within 30 days of now.                |
+| activityType      | [IdentityAlertEventType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/IdentityAlertEventType/index.md) | Activity kind associated with the activityId. Required when activityId is set; identifies the event type for impact classification. |
+| appFilter         | String                                                                                                                                     | Filter to show only paths to a specific app.                                                                                        |
+| domainId          | String                                                                                                                                     | ID of the identity provider domain.                                                                                                 |
+| groupFilter       | String                                                                                                                                     | Filter by groups (show paths through specific groups).                                                                              |
+| principalId       | String!                                                                                                                                    | ID of the user principal (SID format).                                                                                              |
+| targetAppId       | String                                                                                                                                     | Optional app hint to resolve which application the activity targeted. Mutually exclusive with targetGroupId.                        |
+| targetGroupId     | String                                                                                                                                     | Optional group hint to resolve which group the activity targeted. Mutually exclusive with targetAppId.                              |
+| timelineDate      | String                                                                                                                                     | Timeline date for time-series data (format: YYYY-MM-DD). If not provided, defaults to latest available data.                        |

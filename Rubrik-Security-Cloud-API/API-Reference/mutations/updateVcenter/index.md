@@ -36,9 +36,9 @@ mutation UpdateVcenter($input: UpdateVcenterInput!) {
         "configuredSlaDomainPolarisManagedId": "example-string",
         "conflictResolutionAuthz": "VCENTER_SUMMARY_CONFLICT_RESOLUTION_AUTHZ_ALLOW_AUTO_CONFLICT_RESOLUTION",
         "hostname": "example-string",
+        "isComputeVisibilityFilterDisabled": true,
         "isHotAddProxyEnabledForOnPremVcenter": true,
-        "isIoFilterInstalled": true,
-        "isVmc": true
+        "isIoFilterInstalled": true
       }
     }
   }

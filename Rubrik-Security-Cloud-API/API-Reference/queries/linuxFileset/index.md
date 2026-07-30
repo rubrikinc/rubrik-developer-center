@@ -25,6 +25,7 @@ query LinuxFileset($fid: UUID!) {
     id
     isPassThrough
     isRelic
+    isReplica
     name
     numWorkloadDescendants
     objectType

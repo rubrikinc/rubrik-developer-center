@@ -1,6 +1,6 @@
 # CloudNativeTagCondition
 
-CloudNativeTagCondition represents a condition with multiple tag key-value pairs for cloud-native tag rules.
+A cloud-native tag condition with multiple tag pairs.
 
 ## Fields
 

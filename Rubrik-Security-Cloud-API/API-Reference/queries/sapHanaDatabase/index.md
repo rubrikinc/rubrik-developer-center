@@ -27,6 +27,7 @@ query SapHanaDatabase($fid: UUID!) {
     forceFull
     id
     isRelic
+    isReplica
     name
     numWorkloadDescendants
     objectType

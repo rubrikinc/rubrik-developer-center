@@ -1,12 +1,12 @@
 # backupO365SharePointSite
 
-Take on-demand snapshot for a SharePoint site.
+BackupO365SharePointSiteV2 schedules an on-demand backup of the given SharePoint site workload. V2 replacement for the legacy api-server resolver `backupO365SharePointSite`. Identity is carried in req_ctx; the handler builds the JobInfo with SharepointObjectType="SITE" and forwards the optional retention SLA Domain, then schedules using the korg-job-backup-o365-sharepoint-v2 job service (same job type as the list variant -- they differ only in JobInfo).
 
 ## Arguments
 
-| Argument           | Type                                                                                                                                                       | Description                                                      |
-| ------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------- |
-| input *(required)* | [BackupO365SharePointSiteInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/BackupO365SharePointSiteInput/index.md)! | The input for taking an on-demand snapshot of a SharePoint site. |
+| Argument           | Type                                                                                                                                                       | Description                                     |
+| ------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------- |
+| input *(required)* | [BackupO365SharePointSiteInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/BackupO365SharePointSiteInput/index.md)! | Input for the SharePoint site on-demand backup. |
 
 ## Returns
 
@@ -25,9 +25,7 @@ mutation BackupO365SharePointSite($input: BackupO365SharePointSiteInput!) {
 
 ```json
 {
-  "input": {
-    "siteFid": "00000000-0000-0000-0000-000000000000"
-  }
+  "input": {}
 }
 ```
 

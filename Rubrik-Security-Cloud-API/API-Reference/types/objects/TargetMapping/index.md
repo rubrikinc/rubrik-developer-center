@@ -4,16 +4,16 @@ Target mapping information.
 
 ## Fields
 
-| Field            | Type                                                                                                                                                       | Description                           |
-| ---------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------- |
-| connectionStatus | [ArchivalGroupConnectionStatus](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/ArchivalGroupConnectionStatus/index.md) | Connection status for archival group. |
-| groupType        | [ArchivalGroupType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/ArchivalGroupType/index.md)!                          |                                       |
-| id               | [UUID](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/UUID/index.md)!                                                  |                                       |
-| name             | String!                                                                                                                                                    |                                       |
-| targetTemplate   | [TargetTemplate](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/TargetTemplate/index.md)                            |                                       |
-| targetType       | [TargetType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/TargetType/index.md)!                                        |                                       |
-| targets          | \[[Target](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/Target/index.md)!\]                                       |                                       |
-| tieringStatus    | \[[ArchivalGroupTieringStatus](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/ArchivalGroupTieringStatus/index.md)!\]    | Tiering status for archival group.    |
+| Field            | Type                                                                                                                                                       | Description                                                 |
+| ---------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------- |
+| connectionStatus | [ArchivalGroupConnectionStatus](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/ArchivalGroupConnectionStatus/index.md) | Connection status for the target mapping.                   |
+| groupType        | [ArchivalGroupType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/ArchivalGroupType/index.md)!                          | The type of the target mapping (manual or automatic).       |
+| id               | [UUID](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/UUID/index.md)!                                                  | The ID of the target mapping.                               |
+| name             | String!                                                                                                                                                    | The name of the target mapping.                             |
+| targetTemplate   | [TargetTemplate](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/TargetTemplate/index.md)                            | The target template for this target mapping (if automatic). |
+| targetType       | [TargetType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/TargetType/index.md)!                                        | The type of targets in this target mapping.                 |
+| targets          | \[[Target](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/Target/index.md)!\]                                       | The targets in this target mapping.                         |
+| tieringStatus    | \[[ArchivalGroupTieringStatus](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/ArchivalGroupTieringStatus/index.md)!\]    | Tiering status for the target mapping.                      |
 
 ## Used By
 

@@ -22,6 +22,7 @@ query NutanixCategory($fid: UUID!) {
     cdmPendingObjectPauseAssignment
     duplicateObjectsAbsoluteCount
     id
+    isReplica
     name
     numWorkloadDescendants
     objectType
@@ -50,7 +51,7 @@ query NutanixCategory($fid: UUID!) {
       "cdmPendingObjectPauseAssignment": "NO_PENDING_PAUSE_ASSIGNMENT",
       "duplicateObjectsAbsoluteCount": 0,
       "id": "00000000-0000-0000-0000-000000000000",
-      "name": "example-string",
+      "isReplica": true,
       "allOrgs": [
         {
           "allUrls": [

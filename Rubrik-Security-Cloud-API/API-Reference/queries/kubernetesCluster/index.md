@@ -30,8 +30,11 @@ query KubernetesCluster($fid: UUID!) {
     id
     isAutoPsCreationEnabled
     isPullSecretConfigured
+    isReplica
     k8sName
     k8sVersion
+    maxConcurrentAgents
+    maxPvcsPerAgent
     nadName
     nadNamespace
     name

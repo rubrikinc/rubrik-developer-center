@@ -62,6 +62,7 @@ query AzureCloudAccountTenant($tenantId: UUID!, $feature: CloudAccountFeature!, 
       "entraIdGroupId": "example-string",
       "subscriptions": [
         {
+          "azureLocalClusterCount": 0,
           "id": "example-string",
           "name": "example-string",
           "nativeId": "example-string"

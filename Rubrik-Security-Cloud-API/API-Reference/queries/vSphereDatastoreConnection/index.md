@@ -31,6 +31,7 @@ query {
       id
       isArchived
       isLocal
+      isReplica
       isStandaloneDatastore
       name
       numWorkloadDescendants

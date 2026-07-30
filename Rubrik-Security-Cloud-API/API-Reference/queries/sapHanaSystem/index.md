@@ -27,6 +27,7 @@ query SapHanaSystem($fid: UUID!) {
     instanceNumber
     isForceFullOnMasterChangeEnabled
     isRelic
+    isReplica
     lastRefreshTime
     lastStatusUpdateTime
     name

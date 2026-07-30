@@ -28,7 +28,10 @@ query OracleDataGuardGroup($fid: UUID!) {
     hostLogRetentionHours
     id
     isRelic
+    isReplica
+    isZeroRpoEnabled
     logBackupFrequency
+    logRatePerRmanChannelInMb
     logRetentionHours
     name
     numChannels
@@ -39,6 +42,7 @@ query OracleDataGuardGroup($fid: UUID!) {
     objectType
     onDemandSnapshotCount
     preferredDataGuardMemberUniqueNames
+    ratePerRmanChannelInMb
     replicatedObjectCount
     sectionSizeInGigabytes
     shouldBackupFromPrimaryOnly

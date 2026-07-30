@@ -22,7 +22,9 @@ query VSphereVCenter($fid: UUID!) {
     cdmPendingObjectPauseAssignment
     conflictResolutionAuthz
     id
+    isComputeVisibilityFilterDisabled
     isHotAddEnabledForOnPremVcenter
+    isReplica
     isStandaloneHost
     isVmc
     lastRefreshTime
@@ -58,7 +60,7 @@ query VSphereVCenter($fid: UUID!) {
       "cdmPendingObjectPauseAssignment": "NO_PENDING_PAUSE_ASSIGNMENT",
       "conflictResolutionAuthz": "VCENTER_SUMMARY_CONFLICT_RESOLUTION_AUTHZ_ALLOW_AUTO_CONFLICT_RESOLUTION",
       "id": "00000000-0000-0000-0000-000000000000",
-      "isHotAddEnabledForOnPremVcenter": true,
+      "isComputeVisibilityFilterDisabled": true,
       "aboutInfo": {
         "apiType": "example-string",
         "name": "example-string",

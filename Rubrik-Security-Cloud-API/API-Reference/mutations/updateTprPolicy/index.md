@@ -35,7 +35,7 @@ mutation UpdateTprPolicy($input: UpdateTprPolicyInput!) {
           "clusterId": "example-string",
           "managedObjectType": "ACTIVE_DIRECTORY_DOMAIN",
           "objectId": "example-string",
-          "workloadHierarchy": "AWS_NATIVE_CONFIG"
+          "workloadHierarchy": "AUTH0_TENANT"
         },
         "tprRules": [
           "ASSIGN_TPR_ROLE"

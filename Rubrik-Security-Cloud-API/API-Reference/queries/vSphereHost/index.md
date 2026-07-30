@@ -23,6 +23,7 @@ query VSphereHost($fid: UUID!) {
     hasDatastoresForRecovery
     id
     ioFilterStatus
+    isReplica
     isStandaloneHost
     name
     numWorkloadDescendants

@@ -29,6 +29,7 @@ query {
       id
       isBestEffortSynchronizationEnabled
       isRelic
+      isReplica
       isTemplate
       name
       numWorkloadDescendants

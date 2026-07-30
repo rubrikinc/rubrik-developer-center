@@ -29,6 +29,7 @@ query MssqlInstance($fid: UUID!) {
     hostsInstalled
     id
     isClusterInstance
+    isReplica
     logBackupFrequencyInSeconds
     logBackupRetentionInHours
     name

@@ -17,4 +17,5 @@ Per-replica details for a Kosmos HA topology. Reusable across any HA workload (P
 
 **Referenced by**
 
+- [MysqlHaClusterInfo.replicas](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/MysqlHaClusterInfo/index.md)
 - [PostgresHaClusterInfo.replicas](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/PostgresHaClusterInfo/index.md)

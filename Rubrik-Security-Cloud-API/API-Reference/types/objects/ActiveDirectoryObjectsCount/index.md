@@ -14,6 +14,8 @@ Count of different types of Active Directory objects in a snapshot.
 | groups                      | [Long](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/Long/index.md) | Count of objects of type group.                          |
 | managedServiceAccounts      | [Long](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/Long/index.md) | Count of objects of type managed service accounts.       |
 | organizationalUnits         | [Long](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/Long/index.md) | Count of objects of type organizational unit.            |
+| sites                       | [Long](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/Long/index.md) | Count of sites.                                          |
+| trustedDomains              | [Long](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/Long/index.md) | Count of trusted domains.                                |
 | users                       | [Long](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/Long/index.md) | Count of objects of type user.                           |
 
 ## Used By

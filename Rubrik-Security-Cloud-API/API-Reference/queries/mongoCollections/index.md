@@ -28,6 +28,7 @@ query {
       clusterUuid
       id
       isRelic
+      isReplica
       name
       numWorkloadDescendants
       objectType

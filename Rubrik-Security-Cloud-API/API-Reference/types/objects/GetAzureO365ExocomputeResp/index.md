@@ -1,12 +1,12 @@
 # GetAzureO365ExocomputeResp
 
-*No description available.*
+Reply with the Azure O365 Exocompute cluster details.
 
 ## Fields
 
-| Field   | Type                                                                                                                                                 | Description |
-| ------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- | ----------- |
-| cluster | [AzureO365ExocomputeCluster](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AzureO365ExocomputeCluster/index.md) |             |
+| Field   | Type                                                                                                                                                 | Description                     |
+| ------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------- |
+| cluster | [AzureO365ExocomputeCluster](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AzureO365ExocomputeCluster/index.md) | The Exocompute cluster details. |
 
 ## Used By
 

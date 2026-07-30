@@ -32,6 +32,7 @@ query {
       forceFull
       id
       isRelic
+      isReplica
       name
       numWorkloadDescendants
       objectType

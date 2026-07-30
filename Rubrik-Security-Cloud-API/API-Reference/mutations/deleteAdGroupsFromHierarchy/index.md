@@ -1,6 +1,6 @@
 # deleteAdGroupsFromHierarchy
 
-Delete AD Groups from O365 hierarchy.
+DeleteADGroupsFromHierarchyV2 is the V2 GraphQL entry point for DeleteADGroupsFromHierarchy.
 
 ## Arguments
 

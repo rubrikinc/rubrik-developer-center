@@ -1,15 +1,15 @@
 # SlaReplicationCluster
 
-Replication cluster specific information.
+Cluster specific information.
 
 ## Fields
 
 | Field       | Type                                                                                                                                           | Description                                 |
 | ----------- | ---------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------- |
 | clusterInfo | [DataLocationClusterInfo](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/unions/DataLocationClusterInfo/index.md)! | Specific information of the Rubrik cluster. |
-| id          | [UUID](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/UUID/index.md)!                                      | ID of the replication cluster.              |
-| name        | String!                                                                                                                                        | Name of the replication cluster.            |
-| version     | String                                                                                                                                         | Version of the replication cluster.         |
+| id          | [UUID](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/UUID/index.md)!                                      | ID of the Rubrik cluster.                   |
+| name        | String!                                                                                                                                        | Name of the Rubrik cluster.                 |
+| version     | String                                                                                                                                         | Version of the Rubrik cluster.              |
 
 ## Used By
 

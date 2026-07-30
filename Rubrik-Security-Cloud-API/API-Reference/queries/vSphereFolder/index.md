@@ -23,6 +23,7 @@ query VSphereFolder($fid: UUID!) {
     datacenterId
     folderType
     id
+    isReplica
     name
     numWorkloadDescendants
     objectType

@@ -1,6 +1,6 @@
 # PrincipalSummaryCategoryType
 
-*No description available.*
+Category of principals to summarize.
 
 ## Values
 

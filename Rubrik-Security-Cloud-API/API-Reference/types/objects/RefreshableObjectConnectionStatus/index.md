@@ -18,6 +18,7 @@ Supported in v5.0+
 - [NutanixCluster.connectionStatus](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/NutanixCluster/index.md)
 - [NutanixClusterSummary.connectionStatus](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/NutanixClusterSummary/index.md)
 - [NutanixPrismCentral.connectionStatus](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/NutanixPrismCentral/index.md)
+- [PureStorageArrayV1.connectionStatus](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/PureStorageArrayV1/index.md)
 - [StorageArrayDetail.connectionStatus](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/StorageArrayDetail/index.md)
 - [UpdateNutanixClusterReply.connectionStatus](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/UpdateNutanixClusterReply/index.md)
 - [UpdateNutanixPrismCentralReply.connectionStatus](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/UpdateNutanixPrismCentralReply/index.md)

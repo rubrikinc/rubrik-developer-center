@@ -35,6 +35,7 @@ query SnapshotsSecurityInfo($workloadIds: [UUID!]!) {
       isAnomaly
       isQuarantined
       snapshotId
+      suspiciousFileCount
       workloadId
     }
     pageInfo {

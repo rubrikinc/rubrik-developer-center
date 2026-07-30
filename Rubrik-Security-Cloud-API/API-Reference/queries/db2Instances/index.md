@@ -28,6 +28,7 @@ query {
       containsHadrDatabase
       id
       instanceType
+      isReplica
       lastRefreshTime
       lastSyncTime
       name

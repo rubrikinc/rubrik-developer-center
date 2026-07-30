@@ -1,6 +1,6 @@
 # pauseTarget
 
-*No description available.*
+Pauses an Archival Location.
 
 ## Arguments
 

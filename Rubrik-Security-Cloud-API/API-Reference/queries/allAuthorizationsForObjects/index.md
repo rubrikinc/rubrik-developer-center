@@ -41,7 +41,7 @@ query AllAuthorizationsForObjects($fids: [UUID!]!) {
         "operations": [
           "ACCESS_CDM_CLUSTER"
         ],
-        "workloadHierarchy": "AWS_NATIVE_CONFIG"
+        "workloadHierarchy": "AUTH0_TENANT"
       }
     ]
   }

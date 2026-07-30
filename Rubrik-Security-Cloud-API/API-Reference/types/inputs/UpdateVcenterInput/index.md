@@ -22,3 +22,4 @@
 | updatePropertiesV94 | [VcenterUpdateConfigInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/VcenterUpdateConfigInput/index.md) | Object containing updated vCenter Server information. |
 | updatePropertiesV95 | [VcenterUpdateConfigInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/VcenterUpdateConfigInput/index.md) | Object containing updated vCenter Server information. |
 | updatePropertiesV96 | [VcenterUpdateConfigInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/VcenterUpdateConfigInput/index.md) | Object containing updated vCenter Server information. |
+| updatePropertiesV97 | [VcenterUpdateConfigInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/VcenterUpdateConfigInput/index.md) | Object containing updated vCenter Server information. |

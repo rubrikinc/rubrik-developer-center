@@ -29,6 +29,7 @@ query {
       hostName
       id
       isDrEnabled
+      isReplica
       lastRefreshTime
       name
       naturalId
@@ -37,6 +38,7 @@ query {
       nutanixClusterIds
       objectType
       replicatedObjectCount
+      shouldUseV4
       slaAssignment
       slaPauseStatus
       userName
