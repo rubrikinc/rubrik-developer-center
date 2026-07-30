@@ -1,6 +1,6 @@
 # ActivityAccessType
 
-*No description available.*
+Type of activity performed on a file.
 
 ## Values
 

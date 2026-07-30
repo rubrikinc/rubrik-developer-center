@@ -30,6 +30,7 @@ Query vSphere datastore clusters.
           cdmPendingObjectPauseAssignment
           freeSpace
           id
+          isReplica
           isSdrsEnabled
           name
           numWorkloadDescendants

@@ -31,6 +31,7 @@ All the users on the current account.
         isEmailEnabled
         isHidden
         lastLogin
+        patId
         status
         unreadCount
         username

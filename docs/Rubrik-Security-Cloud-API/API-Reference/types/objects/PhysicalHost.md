@@ -37,6 +37,8 @@
 | isExchangeHost | Boolean! | Specifies if the physical host is a Microsoft Exchange host. |
 | isMssqlHost | Boolean! | Specifies if the physical host is a SQL Server database host. |
 | isOracleHost | Boolean! | Specifies if Physical Host is an Oracle Host. |
+| isReplica | Boolean | True if this object is a replica, its current cluster differs from its source (primary) cluster. False if the object resides on its source cluster. Null when the source cluster is unknown. |
+| lastSuccessfulUpgradeTime | String | Timestamp of the last successful RBS upgrade on the host. |
 | latestUserNote | [LatestUserNote](LatestUserNote.md) | Latest user note information. |
 | logicalPath | [[PathNode](PathNode.md)!]! | Sequential list of the logical ancestors of this object. |
 | mssqlSddDetail | [MssqlSddDetail](MssqlSddDetail.md) | Specifies the MSSQL SDD details. |
@@ -47,6 +49,7 @@
 | nasVendorType | String | Specifies the NAS vendor, which can be ISILON, NETAPP, FLASHBLADE, or NUTANIX. |
 | networkThrottle | String! | Network throttle information associated with this physical host. |
 | numWorkloadDescendants | Int! | Number of descendant workloads of this object. |
+| objectBackupWindow | [ObjectBackupWindowStatus](ObjectBackupWindowStatus.md) | Object-level backup window status of the hierarchy object. |
 | objectPauseStatus | [ObjectPauseStatus](ObjectPauseStatus.md) | Pause status of the hierarchy object. |
 | objectType | [HierarchyObjectTypeEnum](../enums/HierarchyObjectTypeEnum.md)! | Type of this object. |
 | oracleSddDetail | [OracleSddDetail](OracleSddDetail.md) | Specifies the Oracle database Sensitive Data Monitoring details. |
@@ -61,6 +64,7 @@
 | primaryClusterLocation | [DataLocation](DataLocation.md)! | The source cluster of this object. Returned as a data location because there is no guarantee that Rubrik has knowledge about the source cluster. |
 | rbaPackageUpgradeInfo | String | Specifies the Rubrik Backup Service (RBS) upgrade status on the host. |
 | rbsUpgradeStatus | [RbsUpgradeStatus](../enums/RbsUpgradeStatus.md)! | RBS upgrade status of the host. |
+| rbsVersion | String | Version of the Rubrik Backup Service (RBS) on the host. |
 | replicatedObjectCount | Int! | The number of objects either replicated by this object or related to this object by replication. |
 | replicatedObjects | [[CdmHierarchyObject](../interfaces/CdmHierarchyObject.md)!]! | Objects either replicated by this object or related to this object by replication. |
 | resourceInfo | String | Resource information associated with this physical host as a JSON string. |

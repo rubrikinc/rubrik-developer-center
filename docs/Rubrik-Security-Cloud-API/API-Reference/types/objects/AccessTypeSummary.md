@@ -16,3 +16,4 @@ AccessTypeSummary includes a summary of counts of direct principals and IDs of g
 **Referenced by**
 
 - [PolicyObj.accessTypeSummary](PolicyObj.md)
+- [PrincipalSummary.accessTypeSummary](PrincipalSummary.md)

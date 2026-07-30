@@ -73,6 +73,7 @@
 **Queries**
 
 - [query: policyObj](../../queries/policyObj.md)
+- [query: policyObjOpt](../../queries/policyObjOpt.md)
 - [query: policyObjs](../../queries/policyObjs.md) *(via connection)*
 
 **Referenced by**

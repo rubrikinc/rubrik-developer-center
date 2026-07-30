@@ -22,6 +22,7 @@ Details of a PostgreSQL database for a given FID.
         authorizedOperations
         cdmPendingObjectPauseAssignment
         id
+        isReplica
         name
         numWorkloadDescendants
         objectType
@@ -51,9 +52,9 @@ Details of a PostgreSQL database for a given FID.
           ],
           "cdmPendingObjectPauseAssignment": "NO_PENDING_PAUSE_ASSIGNMENT",
           "id": "00000000-0000-0000-0000-000000000000",
+          "isReplica": true,
           "name": "example-string",
           "numWorkloadDescendants": 0,
-          "objectType": "ACTIVE_DIRECTORY_DOMAIN",
           "allOrgs": [
             {
               "allUrls": [

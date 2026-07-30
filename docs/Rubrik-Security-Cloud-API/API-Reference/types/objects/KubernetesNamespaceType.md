@@ -22,6 +22,7 @@ Kubernetes namespace.
 | effectiveSlaDomain | [SlaDomain](../interfaces/SlaDomain.md)! | Effective SLA Domain of the hierarchy object. |
 | effectiveSlaSourceObject | [PathNode](PathNode.md) | Path node of the effective SLA Domain source. |
 | id | [UUID](../scalars/UUID.md)! | ID of the hierarchy object. |
+| isReplica | Boolean | True if this object is a replica, its current cluster differs from its source (primary) cluster. False if the object resides on its source cluster. Null when the source cluster is unknown. |
 | k8sClusterName | String! | Name of the Kubernetes Cluster. |
 | k8sClusterUuid | [UUID](../scalars/UUID.md)! | UUID of the Kubernetes Cluster. |
 | k8sLabelIds | [[UUID](../scalars/UUID.md)!]! | List of Kubernetes label IDs. |
@@ -33,6 +34,7 @@ Kubernetes namespace.
 | name | String! | Name of the hierarchy object. |
 | namespaceName | String! | Name of Kubernetes namespace. |
 | numWorkloadDescendants | Int! | Number of descendant workloads of this object. |
+| objectBackupWindow | [ObjectBackupWindowStatus](ObjectBackupWindowStatus.md) | Object-level backup window status of the hierarchy object. |
 | objectPauseStatus | [ObjectPauseStatus](ObjectPauseStatus.md) | Pause status of the hierarchy object. |
 | objectType | [HierarchyObjectTypeEnum](../enums/HierarchyObjectTypeEnum.md)! | Type of this object. |
 | pendingObjectDeletionStatus | [PendingSnapshotsOfObjectDeletion](PendingSnapshotsOfObjectDeletion.md) | Mapping from object ID to pending object deletion status. |

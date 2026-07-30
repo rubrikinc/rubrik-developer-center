@@ -27,6 +27,7 @@ Information about a NAS share fileset.
         id
         isPassThrough
         isRelic
+        isReplica
         name
         nasMigrationInfo
         numWorkloadDescendants

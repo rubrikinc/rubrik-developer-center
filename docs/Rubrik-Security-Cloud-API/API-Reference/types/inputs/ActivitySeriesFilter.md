@@ -15,6 +15,7 @@ Filters for list of event series.
 | lastUpdatedTimeLt | [DateTime](../scalars/DateTime.md) | Filter activites having last updated time before than the specified value. |
 | objectFid | [[UUID](../scalars/UUID.md)!] | Filter by object fid. |
 | objectName | String | Filter by object name. |
+| objectNamePrefix | String | Filter by object name prefix. |
 | objectType | [[EventObjectType](../enums/EventObjectType.md)!] | Filter by object type. |
 | orgIds | [String!] | Filter by organization ID. |
 | searchTerm | String | Filter by search term. |

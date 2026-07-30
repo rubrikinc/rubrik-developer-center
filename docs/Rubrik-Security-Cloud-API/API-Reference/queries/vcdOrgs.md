@@ -28,6 +28,7 @@ Paginated list of vCloud Director orgs.
           cdmId
           cdmPendingObjectPauseAssignment
           id
+          isReplica
           name
           numWorkloadDescendants
           objectType
@@ -64,8 +65,8 @@ Paginated list of vCloud Director orgs.
                 "cdmId": "example-string",
                 "cdmPendingObjectPauseAssignment": "NO_PENDING_PAUSE_ASSIGNMENT",
                 "id": "00000000-0000-0000-0000-000000000000",
-                "name": "example-string",
-                "numWorkloadDescendants": 0
+                "isReplica": true,
+                "name": "example-string"
               }
             ]
           ],

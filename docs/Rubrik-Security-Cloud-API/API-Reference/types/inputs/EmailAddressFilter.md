@@ -6,5 +6,5 @@ Email address and to/from/both.
 
 | Field | Type | Description |
 |-------|------|-------------|
-| emailAddress | String |  |
-| emailAddressType | [EmailAddressFilterType](../enums/EmailAddressFilterType.md) |  |
+| emailAddress | String | The email address to match against. |
+| emailAddressType | [EmailAddressFilterType](../enums/EmailAddressFilterType.md) | Whether the address is matched against sender, recipient, or both. |

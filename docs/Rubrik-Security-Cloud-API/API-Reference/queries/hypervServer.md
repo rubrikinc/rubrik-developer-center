@@ -24,6 +24,7 @@ Details of the given Hyper-V Server.
         connectionStatus
         hostname
         id
+        isReplica
         name
         numWorkloadDescendants
         objectType
@@ -55,7 +56,7 @@ Details of the given Hyper-V Server.
           "connectionStatus": "CONNECTED",
           "hostname": "example-string",
           "id": "00000000-0000-0000-0000-000000000000",
-          "name": "example-string",
+          "isReplica": true,
           "allOrgs": [
             {
               "allUrls": [

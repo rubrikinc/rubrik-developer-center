@@ -10,6 +10,7 @@ Rubrik cluster upgrade Information.
 | cdmClusterNodeDetails | [[CdmNodeDetail](CdmNodeDetail.md)!]! | Rubrik CDM cluster node details. |
 | clusterJobStatus | [ClusterJobStatusTypeEnum](../enums/ClusterJobStatusTypeEnum.md) | Cluster job status. |
 | clusterStatus | [CdmClusterStatus](CdmClusterStatus.md) | Status of the Rubrik cluster. |
+| clusterUnsupportedWorkloadState | [ClusterUnsupportedWorkloadState](../enums/ClusterUnsupportedWorkloadState.md) | Self-service RU classification for the Rubrik cluster as a whole - one overall state summarizing its RU-unsupported workloads and their pause state. |
 | clusterUuid | [UUID](../scalars/UUID.md)! | The cluster UUID. |
 | currentStateProgress | Float | Current running state progress percentage. |
 | downloadedVersion | String | Downloaded version of tarball. |
@@ -26,6 +27,7 @@ Rubrik cluster upgrade Information.
 | scheduleUpgradeMode | String | Scheduled-Upgrade mode. |
 | stateMachineStatus | String | Upgrade state machine status. |
 | stateMachineStatusAt | [DateTime](../scalars/DateTime.md) | The time at which the state machine was last updated. |
+| unsupportedWorkloads | [[UnsupportedWorkloadTypeInfo](UnsupportedWorkloadTypeInfo.md)!] | One entry per RU-unsupported workload type present on the Rubrik cluster, with paused / non-paused counts. |
 | upgradeEndAt | [DateTime](../scalars/DateTime.md) | The time at which the upgrade ended. |
 | upgradeEventSeriesId | String | The upgrade event series ID. |
 | upgradeRecommendationInfo | [UpgradeRecommendationInfo](UpgradeRecommendationInfo.md) | Recommended upgrade version of the Rubrik cluster. |

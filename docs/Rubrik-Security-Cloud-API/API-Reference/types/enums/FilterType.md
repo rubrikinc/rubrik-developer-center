@@ -16,7 +16,10 @@ FilterType represents the possible types of filters.
 | SECURITY_DOCUMENT_LAST_MODIFIED | Document-level last modified time filter. |
 | SECURITY_DOCUMENT_MIP_LABEL | Document-level MIP label filter. |
 | SECURITY_DOCUMENT_SENSITIVITY | Document-level sensitivity filter. |
+| SECURITY_GPO_NO_LM_HASH | Filter for GPOs that configure the "Do not store LAN Manager hash value" security option. Selects GPOs where the NoLMHash setting is configured to store LM hashes (NoLMHash = 0). |
+| SECURITY_IDENTITY_ACCOUNT_EXPIRY_TIME | Identity account expiry time filter. |
 | SECURITY_IDENTITY_AES_ENCRYPTION_SUPPORTED | Identity AES encryption supported boolean filter. |
+| SECURITY_IDENTITY_APP_REG_NO_ACTIVE_USER_OWNER | Entra ID App Registration linked to this service principal has no active user owner. |
 | SECURITY_IDENTITY_CAP_METADATA | Conditional access policy metadata filter. |
 | SECURITY_IDENTITY_DEPARTMENT | Identity department. |
 | SECURITY_IDENTITY_DESCENDANT_USERS_COUNT *(deprecated: Use SECURITY_IDENTITY_DIRECT_DESCENDANT_COUNT instead.)* | Deprecated. Use SECURITY_IDENTITY_DIRECT_DESCENDANT_COUNT instead. |
@@ -29,6 +32,8 @@ FilterType represents the possible types of filters.
 | SECURITY_IDENTITY_EVENT_CHANGED_ATT_NEW_VAL | Identity event changed attribute new value. |
 | SECURITY_IDENTITY_EVENT_CHANGED_ATT_OLD_VAL | Identity event changed attribute old value. |
 | SECURITY_IDENTITY_EVENT_DC_NAME | Identity event domain controller name. |
+| SECURITY_IDENTITY_EVENT_GPO_CHANGE_LABEL | Filters identity events by their Group Policy Object (GPO) change label. Applies to Active Directory events only. |
+| SECURITY_IDENTITY_EVENT_GROUP_IS_PRIVILEGED | Identity event group is privileged filter. |
 | SECURITY_IDENTITY_EVENT_SOURCE_ENTITY_ID | Identity event source entity ID. |
 | SECURITY_IDENTITY_EVENT_TARGET_ENTITY | Identity event target entity. |
 | SECURITY_IDENTITY_EVENT_TARGET_ENTITY_TYPE | Identity event target entity type. |
@@ -42,6 +47,7 @@ FilterType represents the possible types of filters.
 | SECURITY_IDENTITY_IDP_TYPE | Identity provider filter. |
 | SECURITY_IDENTITY_INSIGHT | Identity insight category filter (Is Privileged, At Risk, Highly Sensitive). |
 | SECURITY_IDENTITY_IS_DOMAIN_CONTROLLER | Identity is domain controller boolean filter. |
+| SECURITY_IDENTITY_LAST_SIGN_IN_TIME | Identity last successful sign-in time filter. |
 | SECURITY_IDENTITY_METADATA | Identity-level metadata filter. |
 | SECURITY_IDENTITY_METADATA_BITMASK | Identity metadata bitmask check filter (bit SET/NOT_SET). |
 | SECURITY_IDENTITY_METADATA_LABEL | Identity-level metadata label filter. |
@@ -88,6 +94,7 @@ FilterType represents the possible types of filters.
 | SECURITY_IDP_TYPE | Identity Provider type filter. |
 | SECURITY_IDP_WEAK_LOCKOUT_POLICY | IDP weak default account lockout policy boolean filter. |
 | SECURITY_IDP_WEAK_PASSWORD_POLICY | IDP weak default password policy boolean filter. |
+| SECURITY_SIGNIN_ANOMALY_PER_CAP_SPIKE | Sign-in failure spike attributed to a single Conditional Access Policy. |
 | SECURITY_SNAPPABLE_BACKUP | Object-level is backup filter. |
 | SECURITY_SNAPPABLE_CLOUD_ACCOUNT | Object-level is backup filter. |
 | SECURITY_SNAPPABLE_CREATED_AT | Object-level created at filter. |

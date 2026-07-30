@@ -37,6 +37,7 @@ A paginated list of Nutanix virtual machines with the vDisk Mount privilege.
           isAgentRegistered
           isBlueprintChild
           isRelic
+          isReplica
           name
           numWorkloadDescendants
           nutanixSnapshotConsistencyMandate

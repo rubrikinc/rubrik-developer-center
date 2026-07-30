@@ -6,7 +6,7 @@ FilterValues represents a flat list of filter values.
 
 | Field | Type | Description |
 |-------|------|-------------|
-| filterValues | [[FilterValue](FilterValue.md)!]! |  |
+| filterValues | [[FilterValue](FilterValue.md)!]! | The flat list of filter values. |
 
 ## Used By
 

@@ -43,7 +43,11 @@ Update Oracle Hosts  Supported in v5.2+ Update properties to Oracle Host objects
       "data": {
         "bulkUpdateOracleHosts": {
           "responses": [
-            {}
+            {
+              "excludedDbUniqueNames": [
+                "example-string"
+              ]
+            }
           ]
         }
       }

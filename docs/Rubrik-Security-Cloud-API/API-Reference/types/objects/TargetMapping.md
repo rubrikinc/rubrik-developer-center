@@ -6,14 +6,14 @@ Target mapping information.
 
 | Field | Type | Description |
 |-------|------|-------------|
-| connectionStatus | [ArchivalGroupConnectionStatus](ArchivalGroupConnectionStatus.md) | Connection status for archival group. |
-| groupType | [ArchivalGroupType](../enums/ArchivalGroupType.md)! |  |
-| id | [UUID](../scalars/UUID.md)! |  |
-| name | String! |  |
-| targetTemplate | [TargetTemplate](../interfaces/TargetTemplate.md) |  |
-| targetType | [TargetType](../enums/TargetType.md)! |  |
-| targets | [[Target](../interfaces/Target.md)!] |  |
-| tieringStatus | [[ArchivalGroupTieringStatus](../enums/ArchivalGroupTieringStatus.md)!] | Tiering status for archival group. |
+| connectionStatus | [ArchivalGroupConnectionStatus](ArchivalGroupConnectionStatus.md) | Connection status for the target mapping. |
+| groupType | [ArchivalGroupType](../enums/ArchivalGroupType.md)! | The type of the target mapping (manual or automatic). |
+| id | [UUID](../scalars/UUID.md)! | The ID of the target mapping. |
+| name | String! | The name of the target mapping. |
+| targetTemplate | [TargetTemplate](../interfaces/TargetTemplate.md) | The target template for this target mapping (if automatic). |
+| targetType | [TargetType](../enums/TargetType.md)! | The type of targets in this target mapping. |
+| targets | [[Target](../interfaces/Target.md)!] | The targets in this target mapping. |
+| tieringStatus | [[ArchivalGroupTieringStatus](../enums/ArchivalGroupTieringStatus.md)!] | Tiering status for the target mapping. |
 
 ## Used By
 

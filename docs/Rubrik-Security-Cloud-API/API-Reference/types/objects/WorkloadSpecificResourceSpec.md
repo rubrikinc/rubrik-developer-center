@@ -9,6 +9,7 @@ Resource specification for the workload.
 | awsNativeEc2Instance | [AwsEc2InstanceResourceSpec](AwsEc2InstanceResourceSpec.md) | AWS EC2 instance resource specification. |
 | awsNativeRdsInstance | [AwsRdsInstanceResourceSpec](AwsRdsInstanceResourceSpec.md) | AWS RDS instance resource specification. |
 | azureNativeVm | [AzureNativeVirtualMachineResourceSpec](AzureNativeVirtualMachineResourceSpec.md) | Azure native virtual machine resource specification. |
+| hypervVm | [HypervVirtualMachineResourceSpec](HypervVirtualMachineResourceSpec.md) | HyperV virtual machine resource specification. |
 | nutanixVm | [NutanixVirtualMachineResourceSpec](NutanixVirtualMachineResourceSpec.md) | Nutanix virtual machine resource specification. |
 | vmwareVm | [VmwareVirtualMachineResourceSpec](VmwareVirtualMachineResourceSpec.md) | VMware virtual machine resource specification. |
 

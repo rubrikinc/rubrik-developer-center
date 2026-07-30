@@ -35,3 +35,4 @@ Recovery contains information around a particular recovery.
 **Referenced by**
 
 - [RecoveryPlanBasicInfo.latestRecovery](RecoveryPlanBasicInfo.md)
+- [RecoveryPlanV2.latestRecovery](RecoveryPlanV2.md)

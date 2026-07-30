@@ -25,6 +25,7 @@
         filterDescription
         id
         isFilter
+        isReplica
         name
         numWorkloadDescendants
         objectIds

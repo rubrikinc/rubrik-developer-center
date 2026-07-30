@@ -25,6 +25,7 @@
         filterDescription
         hasDatastoresForRecovery
         id
+        isReplica
         name
         numWorkloadDescendants
         objectType

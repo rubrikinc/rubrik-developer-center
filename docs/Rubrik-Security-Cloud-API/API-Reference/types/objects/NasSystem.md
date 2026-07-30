@@ -23,9 +23,11 @@ Instance of a registered NAS system.
 | id | [UUID](../scalars/UUID.md)! | Object ID. |
 | isChangelistEnabled | Boolean! | Specifies whether the Changelist option is enabled. |
 | isNetAppMetroClusterEnabled | Boolean! |  |
+| isNetAppSnapDiffEnabled | Boolean | Specifies whether NetApp SnapDiff is enabled. |
 | isNfsSupported | Boolean! | Specifies whether NFS is supported by the NAS System. |
 | isNutanixCftEnabled | Boolean | Specifies whether Nutanix Files Changed File Tracking (CFT) is enabled. |
 | isRelic | Boolean! | Specifies whether this object is a relic. |
+| isReplica | Boolean | True if this object is a replica, its current cluster differs from its source (primary) cluster. False if the object resides on its source cluster. Null when the source cluster is unknown. |
 | isSmbSupported | Boolean! | Specifies whether SMB is supported by the NAS System. |
 | isUserSuppliedSmbCredentials | Boolean! | Specifies whether SMB credentials are manually provided by the user. |
 | lastRefreshTime | [DateTime](../scalars/DateTime.md) | UTC timestamp of the most recent NAS system refresh job instance. |
@@ -38,6 +40,7 @@ Instance of a registered NAS system.
 | netAppMetroClusterInfo | [NasSystemNetAppMetroClusterInfo](NasSystemNetAppMetroClusterInfo.md) | Optional NetApp Metro Cluster info for the NAS system. |
 | nfsPseudoFsPrefix | String | NFSv4 pseudo-filesystem prefix removed from mountd export paths to derive NFSv4-accessible paths during NFS share discovery and mount-time path reconstruction. Only applicable to Generic NAS systems. |
 | numWorkloadDescendants | Int! | Number of descendant workloads of this object. |
+| objectBackupWindow | [ObjectBackupWindowStatus](ObjectBackupWindowStatus.md) | Object-level backup window status of the hierarchy object. |
 | objectPauseStatus | [ObjectPauseStatus](ObjectPauseStatus.md) | Pause status of the hierarchy object. |
 | objectType | [HierarchyObjectTypeEnum](../enums/HierarchyObjectTypeEnum.md)! | Type of this object. |
 | osVersion | String | OS version of the registered NAS system. |

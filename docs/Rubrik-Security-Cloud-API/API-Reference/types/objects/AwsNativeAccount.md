@@ -28,12 +28,16 @@ AWS native account.
 | effectiveSlaSourceObject | [PathNode](PathNode.md) | Path node of the effective SLA Domain source. |
 | enabledFeatures | [[AwsNativeAccountEnabledFeature](AwsNativeAccountEnabledFeature.md)!]! | List of protection features enabled for the AWS account. |
 | featureDetails | [[FeatureDetail](FeatureDetail.md)!]! | Cloud account feature details including permissions groups for the AWS account. |
+| glueIcebergCatalogCount | Int! | Count of Glue Iceberg catalogs in the AWS native account. |
+| glueIcebergDatabaseCount | Int! | Count of Glue Iceberg databases in the AWS native account. |
+| glueIcebergTableCount | Int! | Count of Glue Iceberg tables in the AWS native account. |
 | id | [UUID](../scalars/UUID.md)! | ID of the hierarchy object. |
 | isProtectable | Boolean! | Whether the AWS account is protectable for the specified protection features. |
 | lastRefreshedAt | [DateTime](../scalars/DateTime.md) | Last refresh time of the account, in UTC date-time format. |
 | logicalPath | [[PathNode](PathNode.md)!]! | Sequential list of the logical ancestors of this object. |
 | name | String! | Name of the hierarchy object. |
 | numWorkloadDescendants | Int! | Number of descendant workloads of this object. |
+| objectBackupWindow | [ObjectBackupWindowStatus](ObjectBackupWindowStatus.md) | Object-level backup window status of the hierarchy object. |
 | objectPauseStatus | [ObjectPauseStatus](ObjectPauseStatus.md) | Pause status of the hierarchy object. |
 | objectType | [HierarchyObjectTypeEnum](../enums/HierarchyObjectTypeEnum.md)! | Type of this object. |
 | physicalPath | [[PathNode](PathNode.md)!]! | Sequential list of the physical ancestors of this object. |
@@ -43,6 +47,9 @@ AWS native account.
 | rscNativeObjectPendingSla | [CompactSlaDomain](CompactSlaDomain.md) | SLA Domain assignment which is pending on the Rubrik Security Cloud native objects. |
 | rscPendingObjectPauseAssignment | [PendingObjectPauseAssignmentStatus](../enums/PendingObjectPauseAssignmentStatus.md) | Object pause pending assignment details for RSC objects. |
 | s3BucketCount | Int! | Count of Amazon S3 Buckets in the AWS native account. |
+| s3TablesIcebergCatalogCount | Int! | Count of S3 Tables Iceberg catalogs in the AWS native account. |
+| s3TablesIcebergNamespaceCount | Int! | Count of S3 Tables Iceberg namespaces in the AWS native account. |
+| s3TablesIcebergTableCount | Int! | Count of S3 Tables Iceberg tables in the AWS native account. |
 | securityMetadata | [SecurityMetadata](SecurityMetadata.md) | Security posture metadata. |
 | serviceType | [AwsCloudAccountServiceType](../enums/AwsCloudAccountServiceType.md)! | Service type indicating whether the account is onboarded for Backup-as-a-Service (BaaS) or non-BaaS use case. |
 | slaAssignment | [SlaAssignmentTypeEnum](../enums/SlaAssignmentTypeEnum.md)! | SLA Domain assignment type for this object. |

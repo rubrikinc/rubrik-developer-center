@@ -61,7 +61,7 @@ Mutation to update an existing Db2 instance.
               "example-string"
             ],
             "id": "example-string",
-            "isArchived": true
+            "instanceType": "DB2_INSTANCE_SUMMARY_INSTANCE_TYPE_PARTITIONED"
           }
         }
       }

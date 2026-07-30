@@ -27,6 +27,7 @@ Information about a Linux fileset.
         id
         isPassThrough
         isRelic
+        isReplica
         name
         numWorkloadDescendants
         objectType

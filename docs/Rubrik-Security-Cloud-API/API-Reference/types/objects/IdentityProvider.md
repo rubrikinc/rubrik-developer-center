@@ -7,6 +7,7 @@ Identity Provider is an entity responsible for authenticating a user account.
 | Field | Type | Description |
 |-------|------|-------------|
 | activeUserCount | Int! | Number of users from the identity provider that have an active session. |
+| allowIdpInitiatedSso | Boolean! | Specifies whether IdP-initiated SSO is allowed for this identity provider. |
 | authorizedGroupsCount | Int! | Number of authorized groups for the identity provider. |
 | entityId | String! | EntityId of the Identity provider. |
 | expirationDate | [DateTime](../scalars/DateTime.md) | Expiration date of the identity providers metadata. |

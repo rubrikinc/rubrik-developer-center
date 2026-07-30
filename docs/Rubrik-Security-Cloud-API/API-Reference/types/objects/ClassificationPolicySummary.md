@@ -15,6 +15,7 @@ Summary of a policy.
 **Referenced by**
 
 - [AnalyzerUsage.policies](AnalyzerUsage.md)
+- [DocumentTypeDetails.policies](DocumentTypeDetails.md)
 - [GetPoliciesTimelineReply.policySummaries](GetPoliciesTimelineReply.md)
 - [Issue.policies](Issue.md)
 - [PolicyObj.policySummaries](PolicyObj.md)

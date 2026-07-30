@@ -37,6 +37,7 @@ Summary of all Active Directory domain controllers.
           isGlobalCatalog
           isReadOnly
           isRelic
+          isReplica
           macAddress
           macAddresses
           name

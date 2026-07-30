@@ -43,4 +43,4 @@ SLA Domain name and ID.
 - [CassandraColumnFamily.rscNativeObjectPendingSla](CassandraColumnFamily.md)
 - [CassandraKeyspace.rscNativeObjectPendingSla](CassandraKeyspace.md)
 - CassandraKeyspaceDescendantType.rscNativeObjectPendingSla
-- *…and 50 more*
+- *…and 54 more*

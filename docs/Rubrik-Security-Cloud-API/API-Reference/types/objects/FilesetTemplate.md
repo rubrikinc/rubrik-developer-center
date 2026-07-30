@@ -28,10 +28,12 @@ Fileset template.
 | id | [UUID](../scalars/UUID.md)! | ID of the hierarchy object. |
 | includes | [String!]! | Paths included in fileset template. |
 | isArrayEnabled | Boolean! | Boolean variable denoting array is enabled. |
+| isReplica | Boolean | True if this object is a replica, its current cluster differs from its source (primary) cluster. False if the object resides on its source cluster. Null when the source cluster is unknown. |
 | latestUserNote | [LatestUserNote](LatestUserNote.md) | Latest user note information. |
 | logicalPath | [[PathNode](PathNode.md)!]! | Sequential list of the logical ancestors of this object. |
 | name | String! | Name of the hierarchy object. |
 | numWorkloadDescendants | Int! | Number of descendant workloads of this object. |
+| objectBackupWindow | [ObjectBackupWindowStatus](ObjectBackupWindowStatus.md) | Object-level backup window status of the hierarchy object. |
 | objectPauseStatus | [ObjectPauseStatus](ObjectPauseStatus.md) | Pause status of the hierarchy object. |
 | objectType | [HierarchyObjectTypeEnum](../enums/HierarchyObjectTypeEnum.md)! | Type of this object. |
 | osType | [FilesetOsType](../enums/FilesetOsType.md)! | Operating system type of host. |
@@ -51,6 +53,8 @@ Fileset template.
 | slaAssignment | [SlaAssignmentTypeEnum](../enums/SlaAssignmentTypeEnum.md)! | SLA Domain assignment type for this object. |
 | slaPauseStatus | Boolean! | Pause status of the effective SLA Domain of the hierarchy object. |
 | snapshotDistribution | [SnapshotDistribution](SnapshotDistribution.md)! | Distribution of the snapshots of the hierarchy object. |
+| templateAllowlistFilesystemPaths | String! | Comma-separated list of paths that override blocklist exclusions. |
+| templateBlocklistFilesystemTypes | String! | Comma-separated list of filesystem types to dynamically block from backup (such as "gpfs,lustre"). |
 | templateBlocklistedFilesystemPaths | String! | List of blocklisted filesystem paths for the template. |
 
 ## Field Arguments

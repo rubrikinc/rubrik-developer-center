@@ -12,6 +12,7 @@ Filters for the cluster list.
 | eosStatus | [[ClusterEosStatus](../enums/ClusterEosStatus.md)!] | End of support status of the Rubrik cluster. |
 | id | [[UUID](../scalars/UUID.md)!] | Cluster UUIDs. |
 | installedVersion | [String!] |  |
+| isAssignedByParentAccount | Boolean | Filter on shared (parent-assigned) Rubrik clusters. When true, return only shared Rubrik clusters; when false, exclude them; omit for no filter. |
 | minSoftwareVersion | String | Cluster software version greater than or equal to. |
 | name | [String!] | Cluster names. |
 | prechecksStatus | [[PrechecksStatusTypeEnum](../enums/PrechecksStatusTypeEnum.md)!] | Prechecks status of cluster. |

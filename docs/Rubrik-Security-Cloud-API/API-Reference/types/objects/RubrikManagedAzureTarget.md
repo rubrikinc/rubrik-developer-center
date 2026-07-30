@@ -25,13 +25,13 @@ Specific information for Azure target created on Rubrik.
 | instanceType | [InstanceTypeEnum](../enums/InstanceTypeEnum.md)! | Instance type of the Azure location. |
 | isActive | Boolean! | Specifies whether the status of the target is active. When set to false, the target is either paused or not enabled. |
 | isArchived | Boolean! | Specifies whether the target is archived. |
-| isAzureTieringSupported | Boolean | Flag to determine if tiering is supported in the Azure target. |
+| isAzureTieringSupported | Boolean | Specifies whether Azure archival tiering is supported or not. |
 | isComplianceImmutabilitySupported | Boolean! | Specifies whether the archival location supports compliance immutability for retention locked snapshots. |
 | isConsolidationEnabled | Boolean! | Flag to check if consolidation is enabled or not in this target. |
 | locationConnectionStatus | [ConnectionStatusType](../enums/ConnectionStatusType.md)! | Status of the target. |
 | locationScope | [LocationScope](../enums/LocationScope.md)! | The scope of the location of the target. Possible values are Global or Local. |
 | name | String! | The name of the target. |
-| proxySettings | [ProxySettings](ProxySettings.md) | Proxy settings of the AWS target. |
+| proxySettings | [ProxySettings](ProxySettings.md) | Proxy settings of the Azure target. |
 | readerRetrievalMethod | [ReaderRetrievalMethod](../enums/ReaderRetrievalMethod.md) | The retrieval method of the reader target. |
 | retrievalTier | [AzureRetrievalTier](../enums/AzureRetrievalTier.md)! | Retrieval tier of the Azure target. |
 | runningTasks | Int | Number of archiving tasks running on this target. |

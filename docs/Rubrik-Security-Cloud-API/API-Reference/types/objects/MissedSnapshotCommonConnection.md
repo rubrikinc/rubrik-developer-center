@@ -36,6 +36,8 @@ Paginated list of MissedSnapshotCommon objects. Each page of the results include
 - [OracleDataGuardGroup.missedSnapshotConnection](OracleDataGuardGroup.md)
 - [OracleDatabase.missedSnapshotConnection](OracleDatabase.md)
 - [PostgreSQLDbCluster.missedSnapshotConnection](PostgreSQLDbCluster.md)
+- [PureStorageProtectionGroupV1.missedSnapshotConnection](PureStorageProtectionGroupV1.md)
+- [PureStorageVolumeV1.missedSnapshotConnection](PureStorageVolumeV1.md)
 - [SapHanaDatabase.missedSnapshotConnection](SapHanaDatabase.md)
 - [SapHanaSystem.missedSnapshotConnection](SapHanaSystem.md)
 - [ShareFileset.missedSnapshotConnection](ShareFileset.md)

@@ -29,6 +29,7 @@ Details of a SAP HANA system for a given FID.
         instanceNumber
         isForceFullOnMasterChangeEnabled
         isRelic
+        isReplica
         lastRefreshTime
         lastStatusUpdateTime
         name

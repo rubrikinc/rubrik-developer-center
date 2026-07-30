@@ -1,6 +1,6 @@
 # DownloadUserActivityCsvInput
 
-*No description available.*
+Input for scheduling a download CSV job for a user's activity.
 
 ## Fields
 

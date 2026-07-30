@@ -12,6 +12,7 @@ Security information (anomaly, malware, quarantine) of a snapshot.
 | isAnomaly | Boolean! | Whether this snapshot has anomaly detection results. |
 | isQuarantined | Boolean! | Whether this snapshot is quarantined. |
 | snapshotId | [UUID](../scalars/UUID.md)! | Snapshot ID. |
+| suspiciousFileCount | [Long](../scalars/Long.md)! | Number of suspicious files detected in this snapshot. |
 | threatHuntInfo | [[ThreatHuntSnapshotInfo](ThreatHuntSnapshotInfo.md)!]! | Information about threat hunts on snapshot. |
 | workloadId | [UUID](../scalars/UUID.md)! | Workload Identifier. |
 

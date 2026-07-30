@@ -31,6 +31,7 @@ Paginated list of MongoDB databases.
           clusterUuid
           id
           isRelic
+          isReplica
           name
           numWorkloadDescendants
           objectType

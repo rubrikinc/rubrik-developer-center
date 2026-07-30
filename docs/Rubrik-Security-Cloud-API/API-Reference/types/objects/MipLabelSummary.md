@@ -15,3 +15,4 @@ Count of sensitive files labeled under the MIP Label.
 
 - [FileResult.mipLabelsSummary](FileResult.md)
 - [PolicyObj.mipLabelsSummary](PolicyObj.md)
+- [SensitiveDataSummaryBreakdown.mipLabels](SensitiveDataSummaryBreakdown.md)

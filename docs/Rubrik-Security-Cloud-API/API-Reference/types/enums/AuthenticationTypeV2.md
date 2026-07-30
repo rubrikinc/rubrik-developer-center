@@ -10,4 +10,5 @@ Options for authenticating the webhook.
 | BASIC | Webhook is authenticated with a username/password pair. |
 | BEARER | Webhook is authenticated with a bearer token. |
 | CUSTOM_HEADER | Webhook is authenticated with a custom header. |
+| OAUTH2 | Webhook is authenticated with OAuth 2.0 (see OAuth2Info). |
 | URL | Webhook is authenticated with a URL token. |

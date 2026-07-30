@@ -6,6 +6,9 @@ Supported in v9.1+ Input to update a Kubernetes protection set.
 
 | Field | Type | Description |
 |-------|------|-------------|
-| customResourceDependencies | [[CustomResourceDependencyInput](CustomResourceDependencyInput.md)!] | Custom Resource types to capture alongside workloads. Replace the existing CR dependency list. |
+| customResourceDependencies | [[CustomResourceDependencyInput](CustomResourceDependencyInput.md)!] | Supported in v9.6+ Custom Resource types to capture alongside workloads. Only valid when rsType is "application". Replaces the existing CR dependency list. |
 | definition | String | Supported in v9.1+ Definition of the Kubernetes protection set. |
 | hookConfigs | [String!] | Supported in v9.1+ |
+| labelSelector | [CdmLabelSelectorInput](CdmLabelSelectorInput.md) | Supported in v9.6+ Label selector for entry-point workload filtering. Only valid when rsType is "application". |
+| namespaceExcludePatterns | [String!] | Supported in v9.6+ Namespace patterns to exclude. Supports "regex:" prefix. Only valid when rsType is "application". |
+| namespaceIncludePatterns | [String!] | Supported in v9.6+ Namespace names to include. Required when rsType is "application". Use ["*"] for wildcard or ["regex:^..."] for patterns. |

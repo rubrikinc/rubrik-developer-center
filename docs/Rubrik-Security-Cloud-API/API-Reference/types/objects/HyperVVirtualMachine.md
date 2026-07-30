@@ -24,6 +24,7 @@ Hyper-V virtual machine details.
 | hypervVmMountCount | Int! | Hyper-V virtual machine Live Count Connection. |
 | id | [UUID](../scalars/UUID.md)! | ID of the hierarchy object. |
 | isRelic | Boolean! | Flag to indicate whether the virtual machine is a relic. |
+| isReplica | Boolean | True if this object is a replica, its current cluster differs from its source (primary) cluster. False if the object resides on its source cluster. Null when the source cluster is unknown. |
 | latestUserNote | [LatestUserNote](LatestUserNote.md) | Latest user note information. |
 | logicalPath | [[PathNode](PathNode.md)!]! | Sequential list of the logical ancestors of this object. |
 | missedSnapshotConnection | [MissedSnapshotCommonConnection](MissedSnapshotCommonConnection.md) | The list of missed snapshots for this workload. |
@@ -34,6 +35,7 @@ Hyper-V virtual machine details.
 | newestReplicatedSnapshot | [CdmSnapshot](CdmSnapshot.md) | The newest snapshot replicated to a cluster. |
 | newestSnapshot | [CdmSnapshot](CdmSnapshot.md) | The most recent snapshot of this workload. |
 | numWorkloadDescendants | Int! | Number of descendant workloads of this object. |
+| objectBackupWindow | [ObjectBackupWindowStatus](ObjectBackupWindowStatus.md) | Object-level backup window status of the hierarchy object. |
 | objectPauseStatus | [ObjectPauseStatus](ObjectPauseStatus.md) | Pause status of the hierarchy object. |
 | objectType | [HierarchyObjectTypeEnum](../enums/HierarchyObjectTypeEnum.md)! | Type of this object. |
 | oldestSnapshot | [CdmSnapshot](CdmSnapshot.md) | The oldest snapshot of this workload. |
@@ -61,6 +63,8 @@ Hyper-V virtual machine details.
 |-------|----------|------|-------------|
 | missedSnapshotConnection | first | Int | Returns the first n elements from the list. |
 | missedSnapshotConnection | after | String | Returns the elements in the list that occur after the specified cursor. |
+| missedSnapshotConnection | last | Int | Returns the last n elements from the list. |
+| missedSnapshotConnection | before | String | Returns the elements in the list that occur before the specified cursor. |
 | missedSnapshotConnection | filter | [MissedSnapshotFilterInput](../inputs/MissedSnapshotFilterInput.md) | Filter missed snapshots by date. |
 | missedSnapshotGroupByConnection | first | Int | Returns the first n elements from the list. |
 | missedSnapshotGroupByConnection | after | String | Returns the elements in the list that occur after the specified cursor. |

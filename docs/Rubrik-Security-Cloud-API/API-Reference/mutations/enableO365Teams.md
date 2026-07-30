@@ -6,7 +6,7 @@ Enables Teams protection in the exocompute cluster.
 
 | Argument | Type | Description |
 |----------|------|-------------|
-| exocomputeClusterId *(required)* | String! |  |
+| exocomputeClusterId *(required)* | String! | Exocompute Cluster ID. |
 
 ## Returns
 

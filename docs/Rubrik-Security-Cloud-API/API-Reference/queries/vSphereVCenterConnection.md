@@ -29,7 +29,9 @@
           cdmPendingObjectPauseAssignment
           conflictResolutionAuthz
           id
+          isComputeVisibilityFilterDisabled
           isHotAddEnabledForOnPremVcenter
+          isReplica
           isStandaloneHost
           isVmc
           lastRefreshTime
@@ -75,7 +77,7 @@
                 "cdmPendingObjectPauseAssignment": "NO_PENDING_PAUSE_ASSIGNMENT",
                 "conflictResolutionAuthz": "VCENTER_SUMMARY_CONFLICT_RESOLUTION_AUTHZ_ALLOW_AUTO_CONFLICT_RESOLUTION",
                 "id": "00000000-0000-0000-0000-000000000000",
-                "isHotAddEnabledForOnPremVcenter": true
+                "isComputeVisibilityFilterDisabled": true
               }
             ]
           ],

@@ -32,6 +32,7 @@ Supported in v5.0+
 | protectionDateV94 | [DateTime](../scalars/DateTime.md) |  |
 | protectionDateV95 | [DateTime](../scalars/DateTime.md) |  |
 | protectionDateV96 | [DateTime](../scalars/DateTime.md) |  |
+| protectionDateV97 | [DateTime](../scalars/DateTime.md) |  |
 | rootProperties | [MssqlRootProperties](MssqlRootProperties.md) | Required. Supported in v5.0+ |
 | unprotectableReasonsV50 | [[MssqlUnprotectableReason](MssqlUnprotectableReason.md)!]! | A list of reasons that all the SQL Server databases in a SQL Server instance cannot be protected by Rubrik. |
 | unprotectableReasonsV51 | [String!]! | A list of reasons that all the SQL Server databases in a SQL Server instance cannot be protected by the Rubrik CDM. |
@@ -48,6 +49,7 @@ Supported in v5.0+
 | unprotectableReasonsV94 | [String!]! | A list of reasons that all the SQL Server databases in a SQL Server instance cannot be protected by the Rubrik CDM. |
 | unprotectableReasonsV95 | [String!]! | A list of reasons that all the SQL Server databases in a SQL Server instance cannot be protected by the Rubrik CDM. |
 | unprotectableReasonsV96 | [String!]! | A list of reasons that all the SQL Server databases in a SQL Server instance cannot be protected by the Rubrik CDM. |
+| unprotectableReasonsV97 | [String!]! | A list of reasons that all the SQL Server databases in a SQL Server instance cannot be protected by the Rubrik CDM. |
 | version | String | Supported in v5.0+ |
 
 ## Used By

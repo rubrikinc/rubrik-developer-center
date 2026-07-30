@@ -6,6 +6,8 @@ The different SaaS organization types supported.
 
 | Value | Description |
 |-------|-------------|
+| ANTHROPIC_CLOUD_ORG | Anthropic cloud org type (control plane + chat surfaces). |
+| ANTHROPIC_ENDPOINT_ORG | Anthropic endpoint org type (code + cowork surfaces). |
 | ATLASSIAN_ORG | Atlassian Org type. |
 | AUTH0_ORG | Auth0 Org type. |
 | AZURE_DEVOPS_ORG | Azure DevOps Org type. |

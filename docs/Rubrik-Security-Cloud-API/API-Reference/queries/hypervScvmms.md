@@ -29,6 +29,7 @@ Paginated list of HyperV SCVMMs.
           connectionStatus
           hostName
           id
+          isReplica
           name
           numWorkloadDescendants
           objectType
@@ -68,7 +69,7 @@ Paginated list of HyperV SCVMMs.
                 "connectionStatus": "CONNECTED",
                 "hostName": "example-string",
                 "id": "00000000-0000-0000-0000-000000000000",
-                "name": "example-string"
+                "isReplica": true
               }
             ]
           ],

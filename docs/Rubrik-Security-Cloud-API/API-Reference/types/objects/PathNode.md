@@ -44,4 +44,4 @@ Represents a node in a hierarchy path.
 - [AwsNativeDynamoDbTable.effectiveSlaSourceObject](AwsNativeDynamoDbTable.md)
 - [AwsNativeDynamoDbTable.logicalPath](AwsNativeDynamoDbTable.md)
 - [AwsNativeDynamoDbTable.physicalPath](AwsNativeDynamoDbTable.md)
-- *…and 895 more*
+- *…and 922 more*

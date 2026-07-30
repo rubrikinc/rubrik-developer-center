@@ -1,6 +1,6 @@
 # sharepointSiteSearch
 
-Search site and descendant objects.
+Search site and descendant objects.  SearchSharepointSite returns a paginated, GraphQL-shaped list of SharePoint descendant objects for the given site workload across all snapshots. Encapsulates the response shaping (filter out is_excluded_from_protection items per SPARK-151589) that previously lived in the GraphQL resolver `sharepointSiteSearch`.
 
 ## Arguments
 
@@ -8,9 +8,11 @@ Search site and descendant objects.
 |----------|------|-------------|
 | first | Int | Returns the first n elements from the list. |
 | after | String | Returns the elements in the list that occur after the specified cursor. |
-| siteFid *(required)* | [UUID](../types/scalars/UUID.md)! | The fid for the site. |
-| orgId *(required)* | [UUID](../types/scalars/UUID.md)! | Org UUID. |
-| sharepointSiteSearchFilter | [SharePointSearchFilter](../types/inputs/SharePointSearchFilter.md) | The filter for site search. |
+| last | Int | Returns the last n elements from the list. |
+| before | String | Returns the elements in the list that occur before the specified cursor. |
+| siteFid *(required)* | [UUID](../types/scalars/UUID.md)! | Workload ID of SharePoint site object. |
+| orgId *(required)* | [UUID](../types/scalars/UUID.md)! | Organization scope for the search. |
+| sharepointSiteSearchFilter | [SharePointSearchFilter](../types/inputs/SharePointSearchFilter.md) | Optional SharePoint search filter. |
 
 ## Returns
 

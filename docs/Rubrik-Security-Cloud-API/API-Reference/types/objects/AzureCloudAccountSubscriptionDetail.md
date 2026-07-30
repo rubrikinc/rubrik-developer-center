@@ -6,6 +6,7 @@ Azure Cloud Account Subscription details for a given feature.
 
 | Field | Type | Description |
 |-------|------|-------------|
+| azureLocalClusterCount | Int | Number of Azure Local clusters in this subscription. Populated only for Azure Local subscriptions; null otherwise. |
 | featureDetail | [AzureCloudAccountFeatureDetail](AzureCloudAccountFeatureDetail.md) | One of the enabled features on this subscription. |
 | id | String! | Rubrik ID of the Azure Subscription. |
 | managementGroup | [AzureManagementGroup](AzureManagementGroup.md) | Management group to which this subscription belongs. |

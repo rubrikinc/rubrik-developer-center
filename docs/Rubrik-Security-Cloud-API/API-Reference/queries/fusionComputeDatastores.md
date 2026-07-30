@@ -36,6 +36,7 @@ Summary of all FusionCompute datastores.
           hosts
           id
           isLocal
+          isReplica
           name
           numWorkloadDescendants
           objectType

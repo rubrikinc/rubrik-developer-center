@@ -19,4 +19,5 @@ AnalyzerResult contains analyzer metadata and hit statistics for a single analyz
 - [CrawlObj.analyzerResults](CrawlObj.md)
 - [FileResult.analyzerResults](FileResult.md)
 - [GetDashboardSummaryReply.analyzerResults](GetDashboardSummaryReply.md)
+- [SensitiveDataSummaryBreakdown.dataTypes](SensitiveDataSummaryBreakdown.md)
 - [SonarContentReport.analyzerResults](SonarContentReport.md)

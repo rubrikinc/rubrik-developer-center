@@ -16,3 +16,4 @@ Summarizes the document type associated with files.
 
 - [FileResult.documentTypesSummary](FileResult.md)
 - [PolicyObj.documentTypesSummary](PolicyObj.md)
+- [SensitiveDataSummaryBreakdown.documentTypes](SensitiveDataSummaryBreakdown.md)

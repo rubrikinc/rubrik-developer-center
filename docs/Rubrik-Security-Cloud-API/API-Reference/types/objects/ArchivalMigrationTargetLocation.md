@@ -6,6 +6,7 @@ Wrapper for archival migration target location details.
 
 | Field | Type | Description |
 |-------|------|-------------|
+| rcvAws | [RcvAwsArchivalMigrationTarget](RcvAwsArchivalMigrationTarget.md) | Rubrik Cloud Vault on AWS target details. |
 | s3Compatible | [S3CompatibleArchivalMigrationTarget](S3CompatibleArchivalMigrationTarget.md) | S3 compatible target details. |
 
 ## Used By

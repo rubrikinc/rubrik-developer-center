@@ -22,3 +22,6 @@ Proxy settings for target.
 - [RubrikManagedAwsTarget.proxySettings](RubrikManagedAwsTarget.md)
 - [RubrikManagedAzureTarget.proxySettings](RubrikManagedAzureTarget.md)
 - [RubrikManagedGcpTarget.archivalProxySettings](RubrikManagedGcpTarget.md)
+- [RubrikManagedRcsTarget.proxySettings](RubrikManagedRcsTarget.md)
+- [RubrikManagedRcvAwsTarget.proxySettings](RubrikManagedRcvAwsTarget.md)
+- [RubrikManagedRcvGcpTarget.proxySettings](RubrikManagedRcvGcpTarget.md)

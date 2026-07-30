@@ -31,8 +31,7 @@ ApproveRCVPrivateEndpoint approves a pending request for RCV private endpoints. 
     {
       "input": {
         "locationId": "00000000-0000-0000-0000-000000000000",
-        "privateEndpointId": "example-string",
-        "requestMessage": "00000000-0000-0000-0000-000000000000"
+        "privateEndpointId": "example-string"
       }
     }
     ```

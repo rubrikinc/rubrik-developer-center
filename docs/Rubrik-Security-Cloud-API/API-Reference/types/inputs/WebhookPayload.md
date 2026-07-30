@@ -6,8 +6,10 @@ Webhook configuration information.
 
 | Field | Type | Description |
 |-------|------|-------------|
-| authInfo | [WebhookAuthInfoV2Input](WebhookAuthInfoV2Input.md)! | Authentication type that the endpoint uses. |
+| authInfo | [WebhookAuthInfoV2Input](WebhookAuthInfoV2Input.md) | Authentication type that the endpoint uses. Optional: a request may instead supply auth in encoded form. A request must be EITHER fully plain (url + auth_info) OR fully encoded (encoded_url + encoded_auth_info); mixing plain and encoded fields is rejected (enforced server-side). |
 | description | String | A description of the webhook to be created. |
+| encodedAuthInfo | [WebhookEncodedAuthInfoV2Input](WebhookEncodedAuthInfoV2Input.md) | Base64-encoded authentication info. Optional alternative to `auth_info`. When any encoded field is present, the request is in encoded mode and the plain `auth_info` is ignored. Input-only; never returned on a reply. |
+| encodedUrl | String | Base64-encoded webhook receiver url. Optional alternative to `url`. When any encoded field is present, the request is in encoded mode and the plain `url` is ignored. SECURITY: base64 is not encryption. |
 | name | String | The name of the webhook to be created. |
 | providerType | [ProviderTypeV2](../enums/ProviderTypeV2.md)! | Webhook integration provider type. |
 | serverCertificate | String | The Webhook server certificate that Rubrik uses to establish a TLS connection with the endpoint. |

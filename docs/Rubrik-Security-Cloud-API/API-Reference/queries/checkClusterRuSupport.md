@@ -19,6 +19,7 @@ Check if a cluster supports Rolling Upgrade (RU) based on its workload types.
     ```graphql
     query CheckClusterRuSupport($clusterId: String!) {
       checkClusterRuSupport(clusterId: $clusterId) {
+        clusterUnsupportedWorkloadState
         clusterUuid
         isRuSupported
         ruUnsupportabilityReason
@@ -40,9 +41,18 @@ Check if a cluster supports Rolling Upgrade (RU) based on its workload types.
     {
       "data": {
         "checkClusterRuSupport": {
+          "clusterUnsupportedWorkloadState": "ALL_UNSUPPORTED_WORKLOADS_PAUSED",
           "clusterUuid": "example-string",
           "isRuSupported": true,
-          "ruUnsupportabilityReason": "example-string"
+          "ruUnsupportabilityReason": "example-string",
+          "unsupportedWorkloads": [
+            {
+              "displayName": "example-string",
+              "nonPausedCount": 0,
+              "pausedCount": 0,
+              "workloadType": "example-string"
+            }
+          ]
         }
       }
     }

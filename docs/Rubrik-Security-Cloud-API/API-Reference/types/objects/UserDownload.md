@@ -1,18 +1,18 @@
 # UserDownload
 
-*No description available.*
+A user-initiated download.
 
 ## Fields
 
 | Field | Type | Description |
 |-------|------|-------------|
-| completeTime | String! |  |
-| createTime | String! |  |
-| id | [Long](../scalars/Long.md)! |  |
-| identifier | [DownloadIdentifierEnum](../enums/DownloadIdentifierEnum.md)! |  |
-| name | String! |  |
-| progress | Int! |  |
-| status | [DownloadStatusEnum](../enums/DownloadStatusEnum.md)! |  |
+| completeTime | String! | The time at which the download completed. |
+| createTime | String! | The time at which the download was created. |
+| id | [Long](../scalars/Long.md)! | The ID of the download. |
+| identifier | [DownloadIdentifierEnum](../enums/DownloadIdentifierEnum.md)! | The identifier of the download. |
+| name | String! | The name of the download. |
+| progress | Int! | The progress of the download, where 0 <= progress <= 100. |
+| status | [DownloadStatusEnum](../enums/DownloadStatusEnum.md)! | The status of the download. |
 
 ## Used By
 

@@ -24,6 +24,7 @@ Details of the given Hyper-V SCVMM.
         connectionStatus
         hostName
         id
+        isReplica
         name
         numWorkloadDescendants
         objectType
@@ -57,7 +58,7 @@ Details of the given Hyper-V SCVMM.
           "connectionStatus": "CONNECTED",
           "hostName": "example-string",
           "id": "00000000-0000-0000-0000-000000000000",
-          "name": "example-string",
+          "isReplica": true,
           "allOrgs": [
             {
               "allUrls": [

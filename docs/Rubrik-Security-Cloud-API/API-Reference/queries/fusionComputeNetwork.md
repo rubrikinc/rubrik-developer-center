@@ -26,6 +26,7 @@ Summary of a FusionCompute network.
         fcNetworkId
         hostIds
         id
+        isReplica
         name
         networkName
         networkType

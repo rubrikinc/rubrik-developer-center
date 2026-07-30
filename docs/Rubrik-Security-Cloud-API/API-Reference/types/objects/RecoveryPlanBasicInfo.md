@@ -7,8 +7,10 @@ Basic information about the recovery plans.
 | Field | Type | Description |
 |-------|------|-------------|
 | id | [UUID](../scalars/UUID.md)! | Recovery plan identifier. |
-| latestRecovery | [Recovery](Recovery.md) | The latest recovery for this recovery plan. |
+| isArchived | Boolean! | Whether the recovery plan is archived. |
+| latestRecovery | [Recovery](Recovery.md) | The last completed recovery for this recovery plan. |
 | name | String! | Recovery plan name. |
+| numChildren | Int! | Number of non-archived child objects in the recovery plan. |
 | recoveryPlanStats | [RecoveryPlanStats](RecoveryPlanStats.md) | Recovery statistics for this recovery plan. |
 | recoveryPlanStatus | [RecoveryPlanStatus](../enums/RecoveryPlanStatus.md)! | Current status of the recovery plan. |
 | recoveryPlanType | [RecoveryPlanType](../enums/RecoveryPlanType.md)! | Recovery plan type. |

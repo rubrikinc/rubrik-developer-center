@@ -1,16 +1,17 @@
 # RecoverableRange
 
-Range to recover a snapshot from for a given VM
+Range to recover a snapshot from for a given virtual machine.
 
 ## Fields
 
 | Field | Type | Description |
 |-------|------|-------------|
-| beginTime | String |  |
-| endTime | String |  |
+| beginTime | String | Start time of the recoverable range. |
+| endTime | String | End time of the recoverable range. |
 
 ## Used By
 
 **Referenced by**
 
-- [RecoverableRangeResponse.data](RecoverableRangeResponse.md)
+- [RecoveryCoverage.missedRecoverableRanges](RecoveryCoverage.md)
+- [RecoveryCoverage.recoverableRanges](RecoveryCoverage.md)

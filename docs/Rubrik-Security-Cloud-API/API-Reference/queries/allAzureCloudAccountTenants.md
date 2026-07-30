@@ -64,6 +64,7 @@ Retrieves a list of all the Azure tenants and tenant subscriptions for features.
             "entraIdGroupId": "example-string",
             "subscriptions": [
               {
+                "azureLocalClusterCount": 0,
                 "id": "example-string",
                 "name": "example-string",
                 "nativeId": "example-string"

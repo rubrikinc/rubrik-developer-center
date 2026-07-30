@@ -40,7 +40,7 @@ List the IAM pairs of the provided cloud account and any missing permission grou
         "allIamPairsByCloudAccountAndLocation": [
           {
             "missingPermissionsGroups": [
-              "AKS_CUSTOM_PRIVATE_DNS_ZONE"
+              "ADVANCED_DIAGNOSTICS"
             ],
             "awsIamPair": {
               "awsIamPairId": "example-string",

@@ -28,6 +28,7 @@ List of matched files for an object for Threat Monitoring.
         first: 10
       ) {
         nodes {
+          archiveRelativePath
           detectedTime
           fileName
           fileSize
@@ -36,8 +37,11 @@ List of matched files for an object for Threat Monitoring.
           firstObservedSnapshotFid
           isFileVersionQuarantined
           isFirstObservedSnapshotExpired
+          isInsideArchive
           isMatchedSnapshotExpired
           isQuarantinedInFirstObservedSnapshot
+          isValidated
+          isValidationRequired
           matchId
           matchType
           matchedSnapshotDate
@@ -46,6 +50,7 @@ List of matched files for an object for Threat Monitoring.
           objectFid
           objectName
           objectType
+          severity
         }
         pageInfo {
           hasNextPage
@@ -72,12 +77,12 @@ List of matched files for an object for Threat Monitoring.
           "nodes": [
             [
               {
+                "archiveRelativePath": "example-string",
                 "detectedTime": "2024-01-01T00:00:00.000Z",
                 "fileName": "example-string",
                 "fileSize": 0,
                 "filepath": "example-string",
-                "firstObservedSnapshotDate": "2024-01-01T00:00:00.000Z",
-                "firstObservedSnapshotFid": "00000000-0000-0000-0000-000000000000"
+                "firstObservedSnapshotDate": "2024-01-01T00:00:00.000Z"
               }
             ]
           ],

@@ -1,0 +1,13 @@
+# MongoNodePreference
+
+Node-role preference per replica set for MongoDB backups.
+
+## Values
+
+| Value | Description |
+|-------|-------------|
+| MONGO_NODE_PREFERENCE_NO_PREFERENCE |  |
+| MONGO_NODE_PREFERENCE_PRIMARY |  |
+| MONGO_NODE_PREFERENCE_PRIMARY_ONLY |  |
+| MONGO_NODE_PREFERENCE_SECONDARY |  |
+| MONGO_NODE_PREFERENCE_SECONDARY_ONLY |  |

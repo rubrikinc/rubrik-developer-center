@@ -25,6 +25,7 @@ Anomaly analysis report from lambda service.
 | previousSnapshotDate | [DateTime](../scalars/DateTime.md)! | The date of the previous snapshot. |
 | previousSnapshotId | String! | The ID of the previous snapshot. |
 | ransomwareResult | [RansomwareResult](RansomwareResult.md) | The ransomware analysis result, including encryption. |
+| resourceDeletedAt | [DateTime](../scalars/DateTime.md) | The timestamp when the resource was deleted. Populated only when the anomaly was caused by accidental deletion. Null otherwise. |
 | severity | [ActivitySeverityEnum](../enums/ActivitySeverityEnum.md)! | Severity of the anomaly. |
 | snapshot | [CdmSnapshot](CdmSnapshot.md) | The analyzed snapshot. |
 | snapshotDate | [DateTime](../scalars/DateTime.md)! | The date of the snapshot. |

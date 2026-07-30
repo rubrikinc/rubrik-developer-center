@@ -8,6 +8,7 @@ SMB domain.
 |-------|------|-------------|
 | accountName | String! | Account name of SMB domain. |
 | cluster | [Cluster](Cluster.md)! | Cluster of the SMB domain. |
+| dnsServers | [String!]! | DNS servers authoritative for this SMB domain. Empty when per-domain DNS is not configured. |
 | domainId | String! | Domain ID of SMB domain. |
 | id | [UUID](../scalars/UUID.md)! | ID of the SMB domain. |
 | isArchived | Boolean! | Specifies if the SMB domain is archived. |

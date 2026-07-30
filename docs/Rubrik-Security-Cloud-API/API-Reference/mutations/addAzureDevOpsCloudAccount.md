@@ -30,7 +30,6 @@ Creates a new Azure DevOps cloud account configuration with backup and exocomput
         "featuresWithPermissionsGroups": [
           {}
         ],
-        "organizationNativeId": "example-string",
         "sessionId": "00000000-0000-0000-0000-000000000000",
         "tenantId": "example-string"
       }

@@ -35,6 +35,7 @@ Returns compute resources information for a single vsphere virtual machine to be
         isArrayIntegrationPossible
         isBlueprintChild
         isRelic
+        isReplica
         name
         numWorkloadDescendants
         objectType

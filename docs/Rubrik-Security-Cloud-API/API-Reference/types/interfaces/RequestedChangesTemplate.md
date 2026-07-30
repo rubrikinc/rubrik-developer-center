@@ -28,6 +28,7 @@ A generic TPR requested-changes template.
 - [RemoveClusterTprReqChangesTemplate](../objects/RemoveClusterTprReqChangesTemplate.md)
 - [RemoveNodesTprReqChangesTemplate](../objects/RemoveNodesTprReqChangesTemplate.md)
 - [SaaSOrgTprReqChangesTemplate](../objects/SaaSOrgTprReqChangesTemplate.md)
+- [SetObjectBackupWindowsTprReqChangesTemplate](../objects/SetObjectBackupWindowsTprReqChangesTemplate.md)
 - [StandardTprReqChangesTemplate](../objects/StandardTprReqChangesTemplate.md)
 - [UpdateTprPolicyDataMangementClusterReqChangesTemplate](../objects/UpdateTprPolicyDataMangementClusterReqChangesTemplate.md)
 - [UpdateTprPolicyDataMangementObjectReqChangesTemplate](../objects/UpdateTprPolicyDataMangementObjectReqChangesTemplate.md)

@@ -34,6 +34,7 @@ NAS Cloud Direct System object.
 | nfs4Hosts | [String!]! | List of default NFSv4 hosts for this system. |
 | nfsHosts | [String!]! | List of default NFS hosts for this system. |
 | numWorkloadDescendants | Int! | Number of descendant workloads of this object. |
+| objectBackupWindow | [ObjectBackupWindowStatus](ObjectBackupWindowStatus.md) | Object-level backup window status of the hierarchy object. |
 | objectCount | Int! | Total number of objects in this NAS system. |
 | objectPauseStatus | [ObjectPauseStatus](ObjectPauseStatus.md) | Pause status of the hierarchy object. |
 | objectType | [HierarchyObjectTypeEnum](../enums/HierarchyObjectTypeEnum.md)! | Type of this object. |

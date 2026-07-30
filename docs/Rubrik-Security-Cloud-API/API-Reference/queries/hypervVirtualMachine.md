@@ -26,6 +26,7 @@ Details of the given Hyper-V Virtual Machine.
         hypervVmMountCount
         id
         isRelic
+        isReplica
         name
         numWorkloadDescendants
         objectType

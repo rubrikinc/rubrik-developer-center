@@ -1,6 +1,6 @@
 # createOnDemandMssqlBackup
 
-Take an on-demand backup of a Microsoft SQL Database
+Take an on-demand backup of a Microsoft SQL Database.
 
 ## Arguments
 

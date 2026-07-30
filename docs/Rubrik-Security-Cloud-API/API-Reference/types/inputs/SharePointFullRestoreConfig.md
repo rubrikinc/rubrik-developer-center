@@ -9,7 +9,7 @@ Represents the objects or items to be restored from a site collection. Either th
 | newObjectName | String | The name for the new object. |
 | newObjectType | [SnappableType](../enums/SnappableType.md) | Type of object to create under the target. |
 | shouldCreateNewObject | Boolean! | Create a new object under the target if true. |
-| shouldRestoreFileVersions | Boolean |  |
+| shouldRestoreFileVersions | Boolean | Whether to restore all file versions. |
 | spItemsToRestore | [SharePointItems](SharePointItems.md) | The items to restore, if browsing within a document library, list, or web part. |
 | spObjectToRestore | [SharePointObject](SharePointObject.md) | The object (list, document library, web part, or site) to restore. |
 | targetObjectType | [SnappableType](../enums/SnappableType.md) | Type of the target. |

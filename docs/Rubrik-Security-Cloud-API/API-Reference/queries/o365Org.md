@@ -23,6 +23,7 @@ Details of the O365Org.
         exocomputeId
         hasSharePointLegacySnapshots
         id
+        mailboxesPendingGraphMigration
         name
         numWorkloadDescendants
         objectType
@@ -69,8 +70,8 @@ Details of the O365Org.
           "exocomputeId": "example-string",
           "hasSharePointLegacySnapshots": true,
           "id": "00000000-0000-0000-0000-000000000000",
+          "mailboxesPendingGraphMigration": 0,
           "name": "example-string",
-          "numWorkloadDescendants": 0,
           "allOrgs": [
             {
               "allUrls": [

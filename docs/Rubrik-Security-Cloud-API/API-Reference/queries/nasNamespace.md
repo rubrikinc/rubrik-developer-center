@@ -24,6 +24,7 @@ A NAS Namespace.
         cdmPendingObjectPauseAssignment
         id
         isReadonly
+        isReplica
         name
         nfsDataAddresses
         numWorkloadDescendants
@@ -60,7 +61,7 @@ A NAS Namespace.
           "cdmPendingObjectPauseAssignment": "NO_PENDING_PAUSE_ASSIGNMENT",
           "id": "00000000-0000-0000-0000-000000000000",
           "isReadonly": true,
-          "name": "example-string",
+          "isReplica": true,
           "allOrgs": [
             {
               "allUrls": [

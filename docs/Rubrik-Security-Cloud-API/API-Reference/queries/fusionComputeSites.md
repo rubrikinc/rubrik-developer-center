@@ -30,6 +30,7 @@ Summary of all FusionCompute sites.
           clusterUuid
           fcSiteId
           id
+          isReplica
           name
           numWorkloadDescendants
           objectType

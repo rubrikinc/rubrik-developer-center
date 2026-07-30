@@ -1,6 +1,6 @@
 # AzureUserRoleResp
 
-*No description available.*
+Reply with the caller's Azure role assignments.
 
 ## Fields
 

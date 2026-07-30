@@ -25,6 +25,7 @@ Information about MongoDB Source.
 | name | String! | Name of the hierarchy object. |
 | nodeCount | Int | Number of nodes in MongoDB source node. |
 | numWorkloadDescendants | Int! | Number of descendant workloads of this object. |
+| objectBackupWindow | [ObjectBackupWindowStatus](ObjectBackupWindowStatus.md) | Object-level backup window status of the hierarchy object. |
 | objectPauseStatus | [ObjectPauseStatus](ObjectPauseStatus.md) | Pause status of the hierarchy object. |
 | objectType | [HierarchyObjectTypeEnum](../enums/HierarchyObjectTypeEnum.md)! | Type of this object. |
 | physicalChildConnection | [MongodbSourcePhysicalChildTypeConnection](MongodbSourcePhysicalChildTypeConnection.md)! | List of physical children. |

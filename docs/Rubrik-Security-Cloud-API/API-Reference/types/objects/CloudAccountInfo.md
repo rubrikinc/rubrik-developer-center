@@ -12,7 +12,12 @@ CloudAccountInfo stores the cloud account information.
 
 ## Used By
 
+**Queries**
+
+- [query: cloudAccounts](../../queries/cloudAccounts.md)
+
 **Referenced by**
 
 - [AssetMetadata.cloudAccountInfo](AssetMetadata.md)
 - [CommonAssetMetadata.cloudAccountInfo](CommonAssetMetadata.md)
+- [PrincipalSummary.cloudAccountInfo](PrincipalSummary.md)

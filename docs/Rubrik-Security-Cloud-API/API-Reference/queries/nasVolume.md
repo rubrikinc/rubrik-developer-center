@@ -23,6 +23,7 @@ A NAS Volume.
         cdmPendingObjectPauseAssignment
         id
         isReadonly
+        isReplica
         name
         numWorkloadDescendants
         objectType
@@ -56,8 +57,8 @@ A NAS Volume.
           "cdmPendingObjectPauseAssignment": "NO_PENDING_PAUSE_ASSIGNMENT",
           "id": "00000000-0000-0000-0000-000000000000",
           "isReadonly": true,
+          "isReplica": true,
           "name": "example-string",
-          "numWorkloadDescendants": 0,
           "allOrgs": [
             {
               "allUrls": [

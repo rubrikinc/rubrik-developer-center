@@ -35,6 +35,7 @@ Paginated list of MongoDB sources.
           id
           isArchived
           isRelic
+          isReplica
           lastRefreshTime
           managementType
           name

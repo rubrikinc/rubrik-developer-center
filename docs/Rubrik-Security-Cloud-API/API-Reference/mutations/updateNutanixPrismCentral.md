@@ -21,6 +21,7 @@ Patch Nutanix Prism Central  Supported in v9.0+ Patch the host and credentials o
       updateNutanixPrismCentral(input: $input) {
         hostname
         isDrEnabled
+        shouldUseV4
         username
       }
     }
@@ -45,6 +46,7 @@ Patch Nutanix Prism Central  Supported in v9.0+ Patch the host and credentials o
         "updateNutanixPrismCentral": {
           "hostname": "example-string",
           "isDrEnabled": true,
+          "shouldUseV4": true,
           "username": "example-string",
           "connectionStatus": {
             "message": "example-string",

@@ -18,4 +18,5 @@ KmsSpec stores the values required for CRUD on keys in the required KMS. The app
 
 **Referenced by**
 
+- [AzureO365ExocomputeCluster.internalKmsSpec](AzureO365ExocomputeCluster.md)
 - [AzureO365ExocomputeCluster.kmsSpec](AzureO365ExocomputeCluster.md)

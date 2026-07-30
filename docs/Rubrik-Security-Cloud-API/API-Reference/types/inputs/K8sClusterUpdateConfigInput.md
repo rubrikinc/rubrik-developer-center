@@ -13,9 +13,12 @@ Supported in v9.1+ Input to update a Kubernetes cluster.
 | isAutoPsCreationEnabled | Boolean | Supported in v9.2+ Specifies whether to enable automatic protection set creation for the Kubernetes cluster. |
 | kubeconfig | String | Supported in v9.1+ Kubeconfig is a YAML string to store Kubernetes cluster authentication information. You can get this config file directly from the cluster administrator or from a cloud platform if you are using managed Kubernetes cluster. |
 | kuprServerProxyConfig | [KuprServerProxyConfigInput](KuprServerProxyConfigInput.md) | Supported in v9.2+ The configuration for the kupr server proxy to be updated. |
+| maxConcurrentAgents | Int | Supported in v9.6+ Maximum number of kupr backup agents allowed to run concurrently against this Kubernetes cluster. Set to 0 to disable the concurrent-agent throttle. Omit to leave the current setting unchanged. |
+| maxPvcsPerAgent | Int | Supported in v9.6+ Maximum number of PVCs assigned to a single kupr backup agent. Required by the count grouping strategy and used as a per-group cap for the node_affinity strategy. Set to 0 to disable the per-agent cap. Omit to leave the current setting unchanged. |
 | nadName | String | Supported in v9.4+ The name of the network attachment definition object. |
 | nadNamespace | String | Supported in v9.4+ The namespace to which the network attachment definition object belongs. |
 | pullSecret | String | Supported in v9.1+ The pull secret required for pulling Rubrik container images. |
+| pvcGroupingStrategy | String | Supported in v9.6+ PVC grouping strategy used for multi-agent backup. Determines how PVCs are partitioned across kupr backup agents. One of: node_affinity, count, none. Omit to leave unchanged. |
 | registry | String | Supported in v9.1+ Container registry URL for storing Rubrik container images. |
 | serviceAccountName | String | Supported in v9.1+ The name of the RSC service account. |
 | transport | String | Supported in v9.1+ The transport type used for communication with the Kubernetes cluster. |

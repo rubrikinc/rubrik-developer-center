@@ -1,6 +1,6 @@
 # ScheduledReportCreate
 
-*No description available.*
+Configuration to create a new scheduled report.
 
 ## Fields
 

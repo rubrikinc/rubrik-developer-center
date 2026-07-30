@@ -30,6 +30,7 @@ Paginated list of MongoDB collections.
           clusterUuid
           id
           isRelic
+          isReplica
           name
           numWorkloadDescendants
           objectType

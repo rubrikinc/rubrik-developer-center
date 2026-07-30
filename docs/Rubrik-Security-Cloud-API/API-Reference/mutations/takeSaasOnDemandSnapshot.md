@@ -27,7 +27,7 @@ Takes on-demand snapshots for the provided workloads.
     ```json
     {
       "input": {
-        "saasAppType": "ATLASSIAN_CONFLUENCE",
+        "saasAppType": "ANTHROPIC_CHAT",
         "workloadIds": [
           "00000000-0000-0000-0000-000000000000"
         ]

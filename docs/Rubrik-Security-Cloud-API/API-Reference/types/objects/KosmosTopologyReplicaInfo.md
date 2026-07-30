@@ -17,4 +17,5 @@ Per-replica details for a Kosmos HA topology. Reusable across any HA workload (P
 
 **Referenced by**
 
+- [MysqlHaClusterInfo.replicas](MysqlHaClusterInfo.md)
 - [PostgresHaClusterInfo.replicas](PostgresHaClusterInfo.md)

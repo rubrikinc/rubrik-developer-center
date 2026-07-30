@@ -12,6 +12,8 @@ Salesforce organization.
 | allTags | [[AssignedRscTag](AssignedRscTag.md)!]! | RSC tags to which this hierarchy object is assigned. |
 | apiLimits | [SalesforceOrganizationApiLimits](SalesforceOrganizationApiLimits.md) | The API limits configured for the Salesforce organization. |
 | apiUsage | [ApiUsageInfo](ApiUsageInfo.md)! | The API usage of the organization during the last 24 hours. |
+| archivalEnabled | Boolean! | Whether archival has been enabled (opted in) for this Salesforce organization. |
+| archivalExocomputeId | [UUID](../scalars/UUID.md) | Denotes the ID of the exocompute cluster used for archival. Non-null indicates archival setup is complete. |
 | authorizedOperations | [[Operation](../enums/Operation.md)!]! | The authorized operations on the object. |
 | backupJobsStats | [backupJobsStats](backupJobsStats.md) | Stats of the backup jobs in the last 24 hours. |
 | configuredSlaDomain | [SlaDomain](../interfaces/SlaDomain.md)! | SLA Domain configured for the hierarchy object. |
@@ -28,6 +30,7 @@ Salesforce organization.
 | name | String! | Name of the hierarchy object. |
 | naturalId | String! | ID of the Salesforce organization at the source. |
 | numWorkloadDescendants | Int! | Number of descendant workloads of this object. |
+| objectBackupWindow | [ObjectBackupWindowStatus](ObjectBackupWindowStatus.md) | Object-level backup window status of the hierarchy object. |
 | objectPauseStatus | [ObjectPauseStatus](ObjectPauseStatus.md) | Pause status of the hierarchy object. |
 | objectType | [HierarchyObjectTypeEnum](../enums/HierarchyObjectTypeEnum.md)! | Type of this object. |
 | onboardedAppTypes | [[SaasAppType](../enums/SaasAppType.md)!]! | The list of SaaS application types that are onboarded for the organization. |

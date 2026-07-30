@@ -12,21 +12,33 @@ PolarisReportViewType is the template type for a report.
 | ANOMALY_REPORT | Anomaly report (ransomware monitoring). |
 | AUDIT_REPORT | Audit report. |
 | BACKUP_STRIKES_REPORT | Backup Strikes report. |
+| CLOUD_COMPLIANCE_REPORT | Cloud Compliance Report - cloud-native workloads with dimensional model. |
+| CLOUD_COST_REPORT | Cloud cost report for cloud-native protection cost analysis. Displays cost breakdown by cloud provider, account, and cost dimension with tag-level attribution. Supports time series and bar charts. |
 | CLOUD_OVERLAP_OBJECTS_REPORT | Cloud overlap objects report. |
+| CNP_OBJECT_CAPACITY_OVER_TIME_REPORT | Cloud Native Protection Object Capacity Over Time Report.  This report presents capacity metrics over time for cloud-native protection features, specifically for resources managed under customer-onboarded cloud accounts (e.g., Azure, AWS, GCP). |
 | CNP_OBJECT_CAPACITY_REPORT | Cloud Native Protection Object Capacity Report.  This report presents capacity metrics for cloud-native protection features, specifically for resources managed under customer-onboarded cloud accounts (e.g., Azure, AWS, GCP). |
+| CNP_PROTECTION_TASKS_DETAIL_REPORT | Cloud Native Protection (CNP) protection tasks detail report. Scopes the protection tasks detail data to cloud-native (AWS, Azure, GCP) object types. |
+| CNP_RECOVERY_TASKS_DETAIL_REPORT | Cloud Native Protection (CNP) recovery tasks detail report. Scopes the recovery tasks detail data to cloud-native (AWS, Azure, GCP) object types. |
 | COMPLIANCE_REPORT | Compliance report. |
+| CONSOLIDATED_LICENSE_USAGE_REPORT | Consolidated per-child-account license usage report. |
 | DISK_STATUS_REPORT | Disk Status report. |
+| DNS_ACTIVITY_REPORT | DNS Activity Log report (Identity Activity scoped to AD DNS targets). |
 | EVENTS_REPORT | Events report. |
 | FAILOVER_REPORT | Failover report. |
 | IDENTITY_ACTIVITY_REPORT | Identity Activity Auditor report. |
 | IDENTITY_RISKS_REPORT | Identity Risks report. |
+| IDENTITY_SEGMENTATION_AUDIT_REPORT | Entra identity-segmentation audit report: per-user licensing classification for a selected month. |
 | INDEXING_REPORT | Indexing report. |
 | INFRASTRUCTURE_REPORT | Infrastructure report. |
+| LICENSE_USAGE_REPORT | License usage report. |
 | LOG_TASKS_REPORT | Log Tasks report. |
 | OBJECT_AUDIT_REPORT | Object audit report. |
 | OBJECT_BACKUP_TASK_SUMMARY_REPORT | Object backup task summary report. |
 | OBJECT_CAPACITY_OVERTIME_REPORT | Object capacity over time report. |
 | OBJECT_CAPACITY_REPORT | Object capacity report. |
+| PAUSED_CLUSTERS_REPORT | Paused clusters report. |
+| PAUSED_OBJECTS_REPORT | Paused objects report. |
+| PAUSED_SLA_REPORT | Paused SLA Domains report. |
 | PROTECTION_REPORT | Protection report. |
 | PROTECTION_TASKS_DETAIL_REPORT | Protection tasks detail report. |
 | QAUTH_OBJECTS_REPORT | Two Person Rule (TPR)-based report: QAuth objects report. |
@@ -35,6 +47,7 @@ PolarisReportViewType is the template type for a report.
 | RECOVERY_TASKS_DETAIL_REPORT | Recovery tasks detail report. |
 | REPORT_UNSPECIFIED | Report view type is unspecified. |
 | ROLE_REPORT | Role report. |
+| SCRIPT_REPORT | TBD. |
 | SERVICE_ACCOUNT_REPORT | Service account report. |
 | SIGNIN_LOGS_REPORT | Sign-in logs report. |
 | SLA_AUDIT_REPORT | SLA audit report. |

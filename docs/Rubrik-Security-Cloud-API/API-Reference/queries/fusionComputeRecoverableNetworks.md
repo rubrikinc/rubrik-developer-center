@@ -31,6 +31,7 @@ Summary of all FusionCompute networks that the user can recover to.
           fcNetworkId
           hostIds
           id
+          isReplica
           name
           networkName
           networkType

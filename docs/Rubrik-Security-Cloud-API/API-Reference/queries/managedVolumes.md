@@ -32,6 +32,7 @@ Paginated list of Managed Volumes.
           clientNamePatterns
           id
           isRelic
+          isReplica
           lastResetReason
           managedVolumeType
           mountState

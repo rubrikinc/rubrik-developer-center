@@ -12,6 +12,7 @@ Specific information for the RCV AWS target template.
 | encryptionType | [TargetEncryptionTypeEnum](../enums/TargetEncryptionTypeEnum.md)! | Encryption type for the RCV AWS location template. |
 | redundancy | [RcvRedundancy](../enums/RcvRedundancy.md)! | Redundancy for the RCV AWS location. |
 | region | [RcsRegionEnumType](../enums/RcsRegionEnumType.md)! | Region of RCV AWS location template. |
+| sourceWorkloadCloud | [SourceWorkloadCloud](../enums/SourceWorkloadCloud.md) | Specifies the source workload cloud of this template. This field is optional. |
 | targetType | [TargetType](../enums/TargetType.md)! | The type of this Target. |
 | templateLocationId | [UUID](../scalars/UUID.md)! | The internal ID of the template archival location. |
 | tier | [RcsTierEnumType](../enums/RcsTierEnumType.md)! | Access tier for the RCV AWS location. |

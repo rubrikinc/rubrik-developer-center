@@ -6,6 +6,6 @@ Represents the teams conversations search filter.
 
 | Field | Type | Description |
 |-------|------|-------------|
-| PostedBy | String |  |
-| PostedTime | [TimeRangeFilterJson](TimeRangeFilterJson.md) |  |
-| SnapshotId | String |  |
+| PostedBy | String | Filter by the message author. |
+| PostedTime | [TimeRangeFilterJson](TimeRangeFilterJson.md) | Filter by the time the message was posted. |
+| SnapshotId | String | Filter by snapshot ID. |

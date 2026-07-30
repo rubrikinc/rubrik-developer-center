@@ -9,4 +9,4 @@ ES storage for AWS account.
 | bucketName | String | Bucket name in AWS. |
 | enableImmutability | Boolean | Enable immutability on rubrik filesystem. |
 | enableObjectLock | Boolean | Enable object locking on bucket. |
-| shouldCreateBucket | Boolean | Create a new bucket or use an existing bucket. |
+| shouldCreateBucket | Boolean | Whether RSC should create the S3 bucket. This field is no longer honored. |

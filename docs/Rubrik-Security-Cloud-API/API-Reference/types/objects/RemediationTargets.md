@@ -13,4 +13,5 @@ The input for specifying the targets for a remediation.
 
 **Referenced by**
 
+- [GetRemediationTypesType.targets](GetRemediationTypesType.md)
 - [RemediationMetadata.targets](RemediationMetadata.md)

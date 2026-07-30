@@ -1,14 +1,14 @@
 # setO365ServiceAccount
 
-Sets the service account for the org.
+SetO365ServiceAccountV2 sets the Microsoft 365 service account credentials for an organization. V2 replacement for the legacy cloud-manager SetO365ServiceAccount RPC. Identity is carried in req_ctx; the handler delegates to the existing cloud-manager RPC.
 
 ## Arguments
 
 | Argument | Type | Description |
 |----------|------|-------------|
-| username *(required)* | String! |  |
-| appPassword *(required)* | String! |  |
-| orgId *(required)* | [UUID](../types/scalars/UUID.md)! | Org UUID. |
+| username *(required)* | String! | Service account username. |
+| appPassword *(required)* | String! | Service account app password. |
+| orgId *(required)* | [UUID](../types/scalars/UUID.md)! | Microsoft 365 organization ID for which the service account is being set. |
 
 ## Returns
 

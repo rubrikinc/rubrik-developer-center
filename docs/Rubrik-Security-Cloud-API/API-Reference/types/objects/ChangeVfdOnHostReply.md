@@ -6,7 +6,7 @@ Reply Object for ChangeVfdOnHost.
 
 | Field | Type | Description |
 |-------|------|-------------|
-| output | [InternalChangeVfdOnHostResponse](InternalChangeVfdOnHostResponse.md) |  |
+| output | [InternalChangeVfdOnHostResponse](InternalChangeVfdOnHostResponse.md)! |  |
 
 ## Used By
 

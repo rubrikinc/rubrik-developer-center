@@ -6,6 +6,10 @@ Returns data categories for an account.
 
 | Argument | Type | Description |
 |----------|------|-------------|
+| first | Int | Returns the first n elements from the list. |
+| after | String | Returns the elements in the list that occur after the specified cursor. |
+| last | Int | Returns the last n elements from the list. |
+| before | String | Returns the elements in the list that occur before the specified cursor. |
 | dataCategoryIds | [String!] | Filter for data category IDs. |
 | dataTypeIds | [String!] | Data type IDs to filter. |
 | dataCategoryType | [DataCategoryType](../types/enums/DataCategoryType.md) | Filter for data category type. |
@@ -25,7 +29,7 @@ Returns data categories for an account.
 
     ```graphql
     query {
-      policyDetails {
+      policyDetails(first: 10) {
         nodes {
           analyzers
           dataTypeIds

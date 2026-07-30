@@ -8,6 +8,7 @@ Inputs to trigger the job to restore Azure Native Virtual Machine.
 |-------|------|-------------|
 | archivedSnapshotId | [UUID](../scalars/UUID.md) | ID of the archived snapshot to be restored. This field should be specified only when `snapshotTypeToUseIfSourceExpired` is set to `Archived`. In such cases, the archived snapshot will be used for restore. If `snapshotTypeToUseIfSourceExpired` is not `Archived`, this field is ignored. |
 | recoveryDiskIds | [[UUID](../scalars/UUID.md)!] | Specifies a list of Azure disk unique native IDs that will be restored. When empty, all disks from the snapshot will be restored. |
+| recoveryPurpose | [RecoveryPurpose](../enums/RecoveryPurpose.md) | Purpose of the recovery operation. Set to SURGICAL_RECOVERY to automatically exclude quarantined files from the restored virtual machine (subject to feature availability for the account). Defaults to RECOVERY_PURPOSE_UNSPECIFIED, which preserves prior behavior. |
 | shouldPowerOn | Boolean! | Specifies whether the restored virtual machine is to be launched in powered on state. When false, the restored virtual machine will not be connected to the internet. |
 | shouldRestoreTags | Boolean! | Specifies whether the tags at the time of snapshot should also be restored. When true, the tags on the virtual machine will be reverted to the time of the backup. |
 | snapshotId | [UUID](../scalars/UUID.md)! | Snapshot ID of the snapshot which is to be restored. |

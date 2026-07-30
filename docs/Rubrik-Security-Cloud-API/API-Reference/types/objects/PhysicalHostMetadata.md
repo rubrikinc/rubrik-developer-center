@@ -14,6 +14,7 @@ Metadata details of a Physical Host.
 | defaultCbt | Boolean | Default CBT status of this Physical Host. |
 | ipAddresses | [String!]! | IP addresses associated with the Physical Host. |
 | isArchived | Boolean! | Whether the Physical Host is archived. |
+| lastSuccessfulUpgradeTime | String | Timestamp of the last successful RBS upgrade on the host. |
 | mssqlSddDetail | [MssqlSddDetail](MssqlSddDetail.md) | Specifies the MSSQL SDD details. |
 | networkThrottle | String! | Network throttle information associated with this physical host. |
 | oracleSddDetail | [OracleSddDetail](OracleSddDetail.md) | Specifies the Oracle database Sensitive Data Monitoring details. |
@@ -21,6 +22,7 @@ Metadata details of a Physical Host.
 | osName | String | The name of the Physical Host's operating system. |
 | osType | [GuestOsType](../enums/GuestOsType.md) | The operating system type of the physical host. |
 | rbsUpgradeStatus | [RbsUpgradeStatus](../enums/RbsUpgradeStatus.md)! | RBS upgrade status of the host. |
+| rbsVersion | String | Version of the Rubrik Backup Service (RBS) on the host. |
 | resourceInfo | String | Resource information associated with this physical host as a JSON string. |
 
 ## Used By

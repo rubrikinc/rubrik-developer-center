@@ -10,6 +10,7 @@ Response for getting the TPR Policy detail.
 | createdBy | [UserSummary](UserSummary.md) | The user who created the TPR policy. |
 | description | String! | Description of the TPR policy. |
 | exemptServiceAccounts | [[ServiceAccountClient](ServiceAccountClient.md)!]! | Service accounts exempt from the TPR policy. |
+| isCdmEnforcementDisabled | Boolean! | Whether enforcement on the corresponding CDM REST APIs is turned off for this policy. False (the default) means the policy is enforced on CDM. |
 | name | String! | Name of the TPR policy. |
 | orgId | [UUID](../scalars/UUID.md)! | Organization the TPR policy is in. |
 | policyId | [UUID](../scalars/UUID.md)! | ID of the TPR policy. |

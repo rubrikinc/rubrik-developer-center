@@ -12,6 +12,7 @@ Lambda configuration details of the Rubrik cluster.
 | enableAutomaticFmdUpload | Boolean! | Whether automatic fmd upload is enabled for the cluster. |
 | enableFmdUploadForAllResources | Boolean! | Whether fmd upload is enabled for all resources. |
 | enableThreatMonitoringFullScan | Boolean! | Enable or disable full scans for threat monitoring. |
+| isSmartScanningEnabled | Boolean! | Indicates whether threat monitoring uses extended file scan coverage for this Rubrik cluster. |
 | isThreatMonitoringEnabled | Boolean! | Enable or disable threat monitoring. |
 | isThreatMonitoringEnabledForActiveDirectory | Boolean! | Whether threat monitoring is enabled for Active Directory workloads. |
 | maxSnapshotsToUploadAutomatically | Int! | The maximum number of snapshots to upload automatically. |

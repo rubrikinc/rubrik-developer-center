@@ -16,4 +16,9 @@ Workload-specific resource specification.
 
 **Queries**
 
+- [query: allResourceSpecs](../../queries/allResourceSpecs.md)
 - [query: allWorkloadResourceSpecs](../../queries/allWorkloadResourceSpecs.md)
+
+**Referenced by**
+
+- [RecoveryPlanChildV2.resourceSpec](RecoveryPlanChildV2.md)

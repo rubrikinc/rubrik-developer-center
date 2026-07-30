@@ -15,3 +15,6 @@ Group of backup windows allowing backup termination. This groups regular backup 
 
 - [ClusterSlaDomain.backupWindowSpec](ClusterSlaDomain.md)
 - [GlobalSlaReply.backupWindowSpec](GlobalSlaReply.md)
+- [ObjectBackupWindowStatus.backupWindowGroup](ObjectBackupWindowStatus.md)
+- [SetObjectBackupWindowsTprReqChangesTemplate.newBackupWindowGroup](SetObjectBackupWindowsTprReqChangesTemplate.md)
+- [SetObjectBackupWindowsTprReqChangesTemplate.oldBackupWindowGroup](SetObjectBackupWindowsTprReqChangesTemplate.md)

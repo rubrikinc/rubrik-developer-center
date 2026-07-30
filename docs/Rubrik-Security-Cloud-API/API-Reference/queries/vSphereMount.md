@@ -60,7 +60,7 @@ Get a vSphere Live Mount by id
             "operations": [
               "ACCESS_CDM_CLUSTER"
             ],
-            "workloadHierarchy": "AWS_NATIVE_CONFIG"
+            "workloadHierarchy": "AUTH0_TENANT"
           },
           "cluster": {
             "cdmRbacMigrationStatus": "example-string",

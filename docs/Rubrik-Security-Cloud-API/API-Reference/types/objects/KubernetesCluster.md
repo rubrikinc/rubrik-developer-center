@@ -30,17 +30,21 @@ Kubernetes cluster.
 | id | [UUID](../scalars/UUID.md)! | ID of the hierarchy object. |
 | isAutoPsCreationEnabled | Boolean! | Specifies whether automatic protection set creation is enabled. |
 | isPullSecretConfigured | Boolean! | Specifies whether the pull secret is configured. |
+| isReplica | Boolean | True if this object is a replica, its current cluster differs from its source (primary) cluster. False if the object resides on its source cluster. Null when the source cluster is unknown. |
 | k8sDescendantProtectionSets | [KubernetesProtectionSetConnection](KubernetesProtectionSetConnection.md)! | Protection Sets belonging to the Kubernetes cluster. |
 | k8sDescendantVirtualMachines | [KubernetesVirtualMachineConnection](KubernetesVirtualMachineConnection.md)! | Virtual machines belonging to the Kubernetes cluster. |
 | k8sName | String! | Name of Kubernetes Cluster. |
 | k8sVersion | String | Version of Kubernetes Cluster. |
 | latestUserNote | [LatestUserNote](LatestUserNote.md) | Latest user note information. |
 | logicalPath | [[PathNode](PathNode.md)!]! | Sequential list of the logical ancestors of this object. |
+| maxConcurrentAgents | Int | Specifies the maximum number of concurrent backup agents. |
+| maxPvcsPerAgent | Int | Specifies the maximum number of PVCs per backup agent. |
 | nadName | String | Specifies the name for the Network Attachment Definition (NAD) for multus transport. |
 | nadNamespace | String | Specifies the namespace for the Network Attachment Definition (NAD) for multus transport. |
 | name | String! | Name of the hierarchy object. |
 | namespaceCount | Int! | Number of namespaces in the cluster. |
 | numWorkloadDescendants | Int! | Number of descendant workloads of this object. |
+| objectBackupWindow | [ObjectBackupWindowStatus](ObjectBackupWindowStatus.md) | Object-level backup window status of the hierarchy object. |
 | objectPauseStatus | [ObjectPauseStatus](ObjectPauseStatus.md) | Pause status of the hierarchy object. |
 | objectType | [HierarchyObjectTypeEnum](../enums/HierarchyObjectTypeEnum.md)! | Type of this object. |
 | onboardingType | [KubernetesOnboardingType](../enums/KubernetesOnboardingType.md)! | Onboarding type of Kubernetes cluster. |

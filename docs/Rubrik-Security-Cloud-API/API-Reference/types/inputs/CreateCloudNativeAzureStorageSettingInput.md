@@ -7,6 +7,7 @@ Input for create storage settings for an account.
 | Field | Type | Description |
 |-------|------|-------------|
 | azureCloudType | [AzureCloudType](../enums/AzureCloudType.md) | Cloud type of Azure cloud account. |
+| azureKeyVaultKey | [AzureKeyVaultKeyIdentifierInput](AzureKeyVaultKeyIdentifierInput.md) | Azure Key Vault key for client-side encryption of the archival target. |
 | cloudAccountId | [UUID](../scalars/UUID.md)! | Cloud Account Id of the target subscription. |
 | cloudNativeLocTemplateType | [CloudNativeLocTemplateType](../enums/CloudNativeLocTemplateType.md)! | Template type of the storage settings. Must be either SOURCE_REGION or SPECIFIC_REGION. |
 | cmkInfo | [[AzureCmkInput](AzureCmkInput.md)!] | Information about the customer-managed key and key vault. |
@@ -14,6 +15,7 @@ Input for create storage settings for an account.
 | name | String! | Name of the storage setting. |
 | networkAccessType | [AzureStorageAccountNetworkAccess](../enums/AzureStorageAccountNetworkAccess.md) | Information about the network access type of the storage account. |
 | redundancy | [AzureRedundancy](../enums/AzureRedundancy.md)! | Redundancy type for the Storage Account. Some examples are: LRS, ZRS, GRS etc. More Info: https://docs.microsoft.com/en-us/azure/storage/common/storage-redundancy. |
+| sourceWorkloadCloud | [SourceWorkloadCloud](../enums/SourceWorkloadCloud.md) | Cloud where the source workload's data originates. When omitted, it is derived from the destination type. |
 | storageAccountName | String! | Name or prefix of the storage account. This field can not be empty string and must contain only lowercase letters and numbers. For 'SOURCE_REGION' Template Type, this field must be less than 16 characters. Random UID of eight characters is appended to the prefix to create the actual storage accounts. For 'SPECIFIC_REGION' Template Type, this field must be less than 24 characters. |
 | storageAccountRegion | [AzureRegion](../enums/AzureRegion.md) | Region for the Storage Account. For 'SOURCE_REGION' Template Type, this field will be 'UNKNOWN_AZURE_REGION'. For 'SPECIFIC_REGION' Template Type, this field must be a azure region supporting GPV2, More Info: https://docs.microsoft.com/en-us/azure/storage/common/storage-redundancy#redundancy-in-the-primary-region. |
 | storageAccountTags | [TagsInput](TagsInput.md) | Tags of the storage account. |

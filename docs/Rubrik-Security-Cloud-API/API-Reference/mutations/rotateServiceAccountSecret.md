@@ -23,6 +23,7 @@ Rotate service account secret.
         clientId
         clientSecret
         name
+        suspendedTprPolicyIds
       }
     }
     ```
@@ -46,7 +47,10 @@ Rotate service account secret.
           "accessTokenUri": "example-string",
           "clientId": "example-string",
           "clientSecret": "example-string",
-          "name": "example-string"
+          "name": "example-string",
+          "suspendedTprPolicyIds": [
+            "example-string"
+          ]
         }
       }
     }

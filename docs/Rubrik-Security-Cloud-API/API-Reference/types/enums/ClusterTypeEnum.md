@@ -11,4 +11,6 @@ Type of the registered cluster.
 | OnPrem | On-premises cluster. |
 | Polaris | RSC cluster. |
 | Robo | Robo cluster. |
+| RvcLS | RVC local storage cluster. |
+| RvcSS | RVC shared storage cluster. |
 | Unknown | Unknown cluster type. |

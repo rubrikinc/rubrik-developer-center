@@ -13,10 +13,12 @@ AWS Glue Iceberg Table.
 | authorizedOperations | [[Operation](../enums/Operation.md)!]! | The authorized operations on the object. |
 | cloudNativeId | String! | AWS native ID of the Glue table. |
 | configuredSlaDomain | [SlaDomain](../interfaces/SlaDomain.md)! | SLA Domain configured for the hierarchy object. |
+| dataLocationRegion | String! | Region of the storage location where the table's data resides. |
 | effectiveRetentionSlaDomain | [SlaDomain](../interfaces/SlaDomain.md) | Effective retention of the SLA Domain of the hierarchy object. |
 | effectiveSlaDomain | [SlaDomain](../interfaces/SlaDomain.md)! | Effective SLA Domain of the hierarchy object. |
 | effectiveSlaSourceObject | [PathNode](PathNode.md) | Path node of the effective SLA Domain source. |
 | id | [UUID](../scalars/UUID.md)! | ID of the hierarchy object. |
+| isExocomputeConfigured | Boolean! | Whether exocompute is configured for the region where the table's data is located. |
 | isRelic | Boolean! | Whether the table is a relic. |
 | location | String! | S3 data location for this table. |
 | logicalPath | [[PathNode](PathNode.md)!]! | Sequential list of the logical ancestors of this object. |
@@ -25,6 +27,7 @@ AWS Glue Iceberg Table.
 | newestIndexedSnapshot | [PolarisSnapshot](PolarisSnapshot.md) | The latest snapshot that is indexed and unexpired, and therefore restorable. |
 | newestSnapshot | [PolarisSnapshot](PolarisSnapshot.md) | The most recent snapshot of this workload. |
 | numWorkloadDescendants | Int! | Number of descendant workloads of this object. |
+| objectBackupWindow | [ObjectBackupWindowStatus](ObjectBackupWindowStatus.md) | Object-level backup window status of the hierarchy object. |
 | objectPauseStatus | [ObjectPauseStatus](ObjectPauseStatus.md) | Pause status of the hierarchy object. |
 | objectType | [HierarchyObjectTypeEnum](../enums/HierarchyObjectTypeEnum.md)! | Type of this object. |
 | oldestSnapshot | [PolarisSnapshot](PolarisSnapshot.md) | The oldest snapshot of this workload. |
@@ -88,3 +91,9 @@ AWS Glue Iceberg Table.
 | workloadSnapshotConnection | sortBy | [SnapshotQuerySortByField](../enums/SnapshotQuerySortByField.md) | Sorts snapshots by field. |
 | workloadSnapshotConnection | timeRange | [TimeRangeInput](../inputs/TimeRangeInput.md) | Time range input. |
 | workloadSnapshotConnection | ignoreActiveWorkloadCheck | Boolean | Specifies whether to ignore the active workload check. |
+
+## Used By
+
+**Queries**
+
+- [query: glueIcebergTable](../../queries/glueIcebergTable.md)

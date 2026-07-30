@@ -31,6 +31,7 @@ Paginated list of vCloud Director vApps.
           id
           isBestEffortSynchronizationEnabled
           isRelic
+          isReplica
           isTemplate
           name
           numWorkloadDescendants

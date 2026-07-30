@@ -1,12 +1,12 @@
 # GetAzureO365ExocomputeResp
 
-*No description available.*
+Reply with the Azure O365 Exocompute cluster details.
 
 ## Fields
 
 | Field | Type | Description |
 |-------|------|-------------|
-| cluster | [AzureO365ExocomputeCluster](AzureO365ExocomputeCluster.md) |  |
+| cluster | [AzureO365ExocomputeCluster](AzureO365ExocomputeCluster.md) | The Exocompute cluster details. |
 
 ## Used By
 

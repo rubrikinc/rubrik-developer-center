@@ -1,6 +1,6 @@
 # CdmManagedNfsTarget
 
-Specific info for Nfs target created on Cdm.
+Specific information for NFS target created on CDM cluster.
 
 **Implements:** [Target](../interfaces/Target.md)
 
@@ -12,8 +12,8 @@ Specific info for Nfs target created on Cdm.
 | clusterName | String | Name of the Rubrik cluster that archives to this archival location. |
 | consumedBytes | [Long](../scalars/Long.md) | Number of bytes stored on the target. |
 | failedTasks | Int | Number of archiving tasks failed on this target. |
-| host | String! | Host of the Nfs location. |
-| id | String! | Id of the Nfs location. |
+| host | String! | Host of the NFS location. |
+| id | String! | The ID of the target. |
 | isActive | Boolean! | Specifies whether the status of the target is active. When set to false, the target is either paused or not enabled. |
 | isArchived | Boolean! | Specifies whether the target is archived. |
 | isComplianceImmutabilitySupported | Boolean! | Specifies whether the archival location supports compliance immutability for retention locked snapshots. |

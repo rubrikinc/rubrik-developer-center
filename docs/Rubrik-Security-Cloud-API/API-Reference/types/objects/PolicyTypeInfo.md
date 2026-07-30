@@ -9,6 +9,7 @@ Carries policy-type-specific configuration. The oneof allows future policy types
 | identityEventPolicyInfo | [IdentityEventPolicyInfo](IdentityEventPolicyInfo.md) | Configuration for identity event policies. |
 | identityPolicyInfo | [IdentityPolicyInfo](IdentityPolicyInfo.md) | Configuration for identity policies. |
 | idpPolicyInfo | [IdpPolicyInfo](IdpPolicyInfo.md) | Configuration for IDP policies. |
+| signinAnomalyPolicyInfo | [SigninAnomalyPolicyInfo](SigninAnomalyPolicyInfo.md) | Configuration for sign-in anomaly policies. |
 
 ## Used By
 

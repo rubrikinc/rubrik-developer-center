@@ -74,9 +74,12 @@ Returns a single snapshot by snapshot forever UUID and cluster UUID. In case clu
           "date": "2024-01-01T00:00:00.000Z",
           "expirationDate": "2024-01-01T00:00:00.000Z",
           "activeDirectoryAppMetadata": {
+            "attributeVersionNumberOpt": 0,
             "cdmVersion": "example-string",
-            "isUmdCreatedOpt": true,
-            "rubrikBackupServiceDataDirPath": "example-string"
+            "configDir": "example-string",
+            "firmwareTypeOpt": "example-string",
+            "isDataIntegrityPerformed": true,
+            "isHashRecalculatedOnCluster": true
           },
           "aggregateSnapshotLocationDetail": {}
         }

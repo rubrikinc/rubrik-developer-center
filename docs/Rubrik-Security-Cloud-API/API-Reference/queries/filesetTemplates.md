@@ -39,6 +39,7 @@ Get a summary of all fileset templates.
           id
           includes
           isArrayEnabled
+          isReplica
           name
           numWorkloadDescendants
           objectType
@@ -51,6 +52,8 @@ Get a summary of all fileset templates.
           shouldRetryPrescriptIfBackupFails
           slaAssignment
           slaPauseStatus
+          templateAllowlistFilesystemPaths
+          templateBlocklistFilesystemTypes
           templateBlocklistedFilesystemPaths
         }
         pageInfo {

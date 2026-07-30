@@ -23,6 +23,7 @@ Details of the given Hyper-V Cluster.
         cdmPendingObjectPauseAssignment
         connectionStatus
         id
+        isReplica
         name
         numWorkloadDescendants
         objectType
@@ -54,8 +55,8 @@ Details of the given Hyper-V Cluster.
           "cdmPendingObjectPauseAssignment": "NO_PENDING_PAUSE_ASSIGNMENT",
           "connectionStatus": "CONNECTED",
           "id": "00000000-0000-0000-0000-000000000000",
+          "isReplica": true,
           "name": "example-string",
-          "numWorkloadDescendants": 0,
           "allOrgs": [
             {
               "allUrls": [

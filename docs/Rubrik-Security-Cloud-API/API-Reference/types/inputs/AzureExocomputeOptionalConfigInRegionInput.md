@@ -12,9 +12,12 @@ Represents optional parameters that are to be configured during the configuratio
 | aksCustomPrivateDnsZoneId | String | Azure resource ID of the private DNS zone which will be used to resolve the API server URL for private exoclusters. |
 | aksNodeCountBucket | [AKSNodeCountBucket](../enums/AKSNodeCountBucket.md) | Bucket to determine the node count in the aks cluster. |
 | aksNodeRgPrefix | String | Resource group prefix for AKS nodes. |
+| azurePostgresFlexServerPrivateDnsZoneId | String | Azure resource ID of the private DNS zone used to resolve FQDNs of Rubrik-managed Azure Postgres Flexible Servers from the exocompute subnet. The DNS zone name must end with '.postgres.database.azure.com' and be linked to the exocompute VNet. Per-region only: not valid on the globalConfig argument of azureExocomputeConfigsUpdate. |
+| azurePostgresFlexServerSubnetNativeId | String | Azure resource ID of the subnet, in the exocompute VNet, that is delegated to Microsoft.DBforPostgreSQL/flexibleServers. Used for VNet integration of Rubrik-managed Azure Postgres Flexible Servers. Must be different from the exocompute (AKS) subnet. Per-region only: not valid on the globalConfig argument of azureExocomputeConfigsUpdate. |
 | azureSqlPrivateDnsZoneId | String | Azure resource ID of the private DNS zone which will be used to resolve the Azure SQL Private Endpoints. |
 | diskEncryptionAtHost | Boolean | Disk encryption is enabled for nodes on the AKS cluster. |
 | diskEncryptionSetId | String | Azure resource ID of the disk encryption set which will be used to encrypt the AKS node disks using customer managed keys. |
 | enableUserDefinedRouting | Boolean | Enable user-defined routing as the outbound type for AKS load balancer. |
+| healthCheckVmNamePrefix | String | Customer-configured name prefix for the health-check launch virtual machine. When empty, the default prefix is used; a Rubrik-owned marker and a UUID suffix are appended automatically and are not part of this value. |
 | privateDnsZoneId | String | Azure resource ID of the private DNS zone which will be used to resolve private endpoints if using private access to snapshots. |
 | shouldWhitelistRubrikIps | Boolean | Determines whether Rubrik IPs are whitelisted for the Kubernetes API server of the AKS cluster. |

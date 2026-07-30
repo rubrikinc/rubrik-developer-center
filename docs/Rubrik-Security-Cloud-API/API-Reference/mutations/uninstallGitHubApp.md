@@ -27,7 +27,7 @@ Uninstalls a GitHub App for the specified organization and permission group.
     ```json
     {
       "input": {
-        "permissionGroup": "AKS_CUSTOM_PRIVATE_DNS_ZONE"
+        "permissionGroup": "ADVANCED_DIAGNOSTICS"
       }
     }
     ```

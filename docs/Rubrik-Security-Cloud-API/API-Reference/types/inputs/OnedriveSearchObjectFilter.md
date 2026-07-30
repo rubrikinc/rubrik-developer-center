@@ -6,4 +6,4 @@ OneDrive search object type.
 
 | Field | Type | Description |
 |-------|------|-------------|
-| searchObjectType | [OnedriveSearchObjectType](../enums/OnedriveSearchObjectType.md) |  |
+| searchObjectType | [OnedriveSearchObjectType](../enums/OnedriveSearchObjectType.md) | The object type to constrain the search against. |

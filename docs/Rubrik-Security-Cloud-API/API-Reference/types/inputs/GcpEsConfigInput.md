@@ -8,4 +8,4 @@ ES storage for the GCP account.
 |-------|------|-------------|
 | bucketName | String | Bucket name in GCP. |
 | region | String | Region for the GCP bucket. |
-| shouldCreateBucket | Boolean | Create a new bucket or use an existing bucket. |
+| shouldCreateBucket | Boolean | Whether RSC should create the GCS bucket. This field is no longer honored. |

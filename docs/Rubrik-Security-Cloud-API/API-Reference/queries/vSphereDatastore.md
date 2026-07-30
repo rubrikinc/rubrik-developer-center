@@ -28,6 +28,7 @@ Vsphere datastore based on id passed in.
         id
         isArchived
         isLocal
+        isReplica
         isStandaloneDatastore
         name
         numWorkloadDescendants

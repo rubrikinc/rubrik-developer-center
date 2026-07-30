@@ -6,9 +6,9 @@ Returns details for one policy object.
 
 | Argument | Type | Description |
 |----------|------|-------------|
-| snappableFid *(required)* | String! |  |
-| snapshotFid *(required)* | String! |  |
-| includeWhitelistedResults | Boolean | Specifies whether whitelisted results should be included. |
+| snappableFid *(required)* | String! | The unique identifier of the workload. |
+| snapshotFid *(required)* | String! | The unique identifier of the snapshot. |
+| includeWhitelistedResults | Boolean | Specifies whether allowlisted results should be included. |
 
 ## Returns
 

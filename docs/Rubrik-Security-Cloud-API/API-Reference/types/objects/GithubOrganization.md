@@ -2,7 +2,7 @@
 
 GitHub Organization.
 
-**Implements:** [HierarchyObject](../interfaces/HierarchyObject.md), [PolarisHierarchyObject](../interfaces/PolarisHierarchyObject.md)
+**Implements:** [PolarisHierarchyObject](../interfaces/PolarisHierarchyObject.md), [HierarchyObject](../interfaces/HierarchyObject.md)
 
 ## Fields
 
@@ -19,13 +19,14 @@ GitHub Organization.
 | effectiveSlaDomain | [SlaDomain](../interfaces/SlaDomain.md)! | Effective SLA Domain of the hierarchy object. |
 | effectiveSlaSourceObject | [PathNode](PathNode.md) | Path node of the effective SLA Domain source. |
 | exocompute | [DevOpsCloudNativeExocompute](DevOpsCloudNativeExocompute.md) | Exocompute associated with the GitHub organization. |
-| id | [UUID](../scalars/UUID.md)! | Managed Object ID of the GitHub organization. |
+| id | [UUID](../scalars/UUID.md)! | ID of the hierarchy object. |
 | isRelic | Boolean! | True if the GitHub organization is a relic. |
 | lastRefreshTime | [DateTime](../scalars/DateTime.md) | Last refresh time of the GitHub organization. |
 | logicalPath | [[PathNode](PathNode.md)!]! | Sequential list of the logical ancestors of this object. |
 | name | String! | Name of the hierarchy object. |
 | nativeId | String! | Native ID of the GitHub organization. |
 | numWorkloadDescendants | Int! | Number of descendant workloads of this object. |
+| objectBackupWindow | [ObjectBackupWindowStatus](ObjectBackupWindowStatus.md) | Object-level backup window status of the hierarchy object. |
 | objectPauseStatus | [ObjectPauseStatus](ObjectPauseStatus.md) | Pause status of the hierarchy object. |
 | objectType | [HierarchyObjectTypeEnum](../enums/HierarchyObjectTypeEnum.md)! | Type of this object. |
 | orgUrl | String! | Canonical organization URL, e.g. "https://github.com/my-org" or "https://acme.ghe.com/my-org" for GHEC data residency. Empty for legacy orgs that pre-date the GHEC data residency migration. |

@@ -24,6 +24,7 @@ Paginated list of SMB domains.
       smbDomains(first: 10) {
         nodes {
           accountName
+          dnsServers
           domainId
           id
           isArchived
@@ -54,11 +55,13 @@ Paginated list of SMB domains.
             [
               {
                 "accountName": "example-string",
+                "dnsServers": [
+                  "example-string"
+                ],
                 "domainId": "example-string",
                 "id": "00000000-0000-0000-0000-000000000000",
                 "isArchived": true,
-                "name": "example-string",
-                "status": "CONFIGURED"
+                "name": "example-string"
               }
             ]
           ],

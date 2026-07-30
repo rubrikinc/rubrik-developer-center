@@ -22,6 +22,7 @@
         cdmId
         cdmLink
         id
+        isReplica
         name
         numWorkloadDescendants
         objectType

@@ -35,6 +35,8 @@ Paginated list of MissedSnapshotGroupBy objects. Each page of the results includ
 - [OracleDataGuardGroup.missedSnapshotGroupByConnection](OracleDataGuardGroup.md)
 - [OracleDatabase.missedSnapshotGroupByConnection](OracleDatabase.md)
 - [PostgreSQLDbCluster.missedSnapshotGroupByConnection](PostgreSQLDbCluster.md)
+- [PureStorageProtectionGroupV1.missedSnapshotGroupByConnection](PureStorageProtectionGroupV1.md)
+- [PureStorageVolumeV1.missedSnapshotGroupByConnection](PureStorageVolumeV1.md)
 - [SapHanaDatabase.missedSnapshotGroupByConnection](SapHanaDatabase.md)
 - [SapHanaSystem.missedSnapshotGroupByConnection](SapHanaSystem.md)
 - [ShareFileset.missedSnapshotGroupByConnection](ShareFileset.md)

@@ -24,6 +24,7 @@
 | id | [UUID](../scalars/UUID.md)! | ID of the hierarchy object. |
 | isBestEffortSynchronizationEnabled | Boolean! | Specifies whether the vApp is best effort synchronization Enabled. |
 | isRelic | Boolean! |  |
+| isReplica | Boolean | True if this object is a replica, its current cluster differs from its source (primary) cluster. False if the object resides on its source cluster. Null when the source cluster is unknown. |
 | isTemplate | Boolean! | Specifies whether this is a vApp template. |
 | latestUserNote | [LatestUserNote](LatestUserNote.md) | Latest user note information. |
 | logicalChildConnection | [VcdVappLogicalChildTypeConnection](VcdVappLogicalChildTypeConnection.md)! | List of logical children. |
@@ -36,6 +37,7 @@
 | newestReplicatedSnapshot | [CdmSnapshot](CdmSnapshot.md) | The newest snapshot replicated to a cluster. |
 | newestSnapshot | [CdmSnapshot](CdmSnapshot.md) | The most recent snapshot of this workload. |
 | numWorkloadDescendants | Int! | Number of descendant workloads of this object. |
+| objectBackupWindow | [ObjectBackupWindowStatus](ObjectBackupWindowStatus.md) | Object-level backup window status of the hierarchy object. |
 | objectPauseStatus | [ObjectPauseStatus](ObjectPauseStatus.md) | Pause status of the hierarchy object. |
 | objectType | [HierarchyObjectTypeEnum](../enums/HierarchyObjectTypeEnum.md)! | Type of this object. |
 | oldestSnapshot | [CdmSnapshot](CdmSnapshot.md) | The oldest snapshot of this workload. |
@@ -71,6 +73,8 @@
 | logicalChildConnection | workloadHierarchy | [WorkloadLevelHierarchy](../enums/WorkloadLevelHierarchy.md) | Each enumeration value represents the hierarchy of a specific workload type for RBAC and SLA Domain assignments.  A value of 'None' represents the hierarchy of all workload types. |
 | missedSnapshotConnection | first | Int | Returns the first n elements from the list. |
 | missedSnapshotConnection | after | String | Returns the elements in the list that occur after the specified cursor. |
+| missedSnapshotConnection | last | Int | Returns the last n elements from the list. |
+| missedSnapshotConnection | before | String | Returns the elements in the list that occur before the specified cursor. |
 | missedSnapshotConnection | filter | [MissedSnapshotFilterInput](../inputs/MissedSnapshotFilterInput.md) | Filter missed snapshots by date. |
 | missedSnapshotGroupByConnection | first | Int | Returns the first n elements from the list. |
 | missedSnapshotGroupByConnection | after | String | Returns the elements in the list that occur after the specified cursor. |

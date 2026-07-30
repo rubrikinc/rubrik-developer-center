@@ -28,6 +28,7 @@ Returns active custom analyzers.
           dictionaryCsv
           excludeFieldNamePattern
           excludePathPattern
+          excludeValueRegex
           id
           isInactive
           keyRegex
@@ -74,7 +75,7 @@ Returns active custom analyzers.
                 "dictionaryCsv": "example-string",
                 "excludeFieldNamePattern": "example-string",
                 "excludePathPattern": "example-string",
-                "id": "example-string"
+                "excludeValueRegex": "example-string"
               }
             ]
           ],

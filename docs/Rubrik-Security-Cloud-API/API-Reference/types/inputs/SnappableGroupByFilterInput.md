@@ -6,9 +6,11 @@ Filter workload data.
 
 | Field | Type | Description |
 |-------|------|-------------|
+| awsServiceType | [[AwsServiceType](../enums/AwsServiceType.md)!] | The AWS deployment model of the workload (BaaS / non-BaaS). Filters only AWS workloads; non-AWS workloads pass through unfiltered. Empty list disables the filter. |
 | cluster | [CommonClusterFilterInput](CommonClusterFilterInput.md) | The cluster filter for the workload. |
 | complianceStatus | [[ComplianceStatusEnum](../enums/ComplianceStatusEnum.md)!] | The compliance status of the workload. |
 | excludedObjectTypes | [[ObjectTypeEnum](../enums/ObjectTypeEnum.md)!] | List of workload types to exclude. This should NOT be specified along with objectType. |
+| isInfrastructureAlertsEnabled | Boolean | Filters S3 buckets by whether infrastructure deletion alerts are enabled. Null means no filter is applied. |
 | isLocal | Boolean | True if the workload is local; false if the workload is remote. |
 | objectFid | [[UUID](../scalars/UUID.md)!] | The FIDs of the workload. |
 | objectState | [[ObjectState](../enums/ObjectState.md)!] | The state of the workload. |

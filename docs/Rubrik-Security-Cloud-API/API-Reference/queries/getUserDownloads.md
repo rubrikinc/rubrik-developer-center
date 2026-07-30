@@ -1,6 +1,6 @@
 # getUserDownloads
 
-*No description available.*
+GetUserDownloads returns downloads of a user in the last 24 hours.
 
 ## Arguments
 

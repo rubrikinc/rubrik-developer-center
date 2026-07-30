@@ -25,7 +25,9 @@
 | effectiveSlaDomain | [SlaDomain](../interfaces/SlaDomain.md)! | Effective SLA Domain of the hierarchy object. |
 | effectiveSlaSourceObject | [PathNode](PathNode.md) | Path node of the effective SLA Domain source. |
 | id | [UUID](../scalars/UUID.md)! | ID of the hierarchy object. |
+| isComputeVisibilityFilterDisabled | Boolean! | Whether compute cluster visibility is turned off for this vCenter. |
 | isHotAddEnabledForOnPremVcenter | Boolean! | Is HotAdd enabled for this on-prem vCenter. |
+| isReplica | Boolean | True if this object is a replica, its current cluster differs from its source (primary) cluster. False if the object resides on its source cluster. Null when the source cluster is unknown. |
 | isStandaloneHost | Boolean! | Specifies whether this entity is a standalone host. |
 | isVmc | Boolean! | Flag to determine whether this vcenter is from VMC or not. |
 | lastRefreshTime | [DateTime](../scalars/DateTime.md) |  |
@@ -35,6 +37,7 @@
 | logicalPath | [[PathNode](PathNode.md)!]! | Sequential list of the logical ancestors of this object. |
 | name | String! | Name of the hierarchy object. |
 | numWorkloadDescendants | Int! | Number of descendant workloads of this object. |
+| objectBackupWindow | [ObjectBackupWindowStatus](ObjectBackupWindowStatus.md) | Object-level backup window status of the hierarchy object. |
 | objectPauseStatus | [ObjectPauseStatus](ObjectPauseStatus.md) | Pause status of the hierarchy object. |
 | objectType | [HierarchyObjectTypeEnum](../enums/HierarchyObjectTypeEnum.md)! | Type of this object. |
 | pendingObjectDeletionStatus | [PendingSnapshotsOfObjectDeletion](PendingSnapshotsOfObjectDeletion.md) | Mapping from object ID to pending object deletion status. |

@@ -20,6 +20,7 @@ Query Azure DevOps project object.
     query AzureDevOpsProject($workloadId: UUID!) {
       azureDevOpsProject(workloadId: $workloadId) {
         authorizedOperations
+        fixedObjectId
         id
         isRelic
         name
@@ -32,6 +33,7 @@ Query Azure DevOps project object.
         rscPendingObjectPauseAssignment
         slaAssignment
         slaPauseStatus
+        tenantId
         url
       }
     }
@@ -54,11 +56,11 @@ Query Azure DevOps project object.
           "authorizedOperations": [
             "ACCESS_CDM_CLUSTER"
           ],
+          "fixedObjectId": "00000000-0000-0000-0000-000000000000",
           "id": "00000000-0000-0000-0000-000000000000",
           "isRelic": true,
           "name": "example-string",
           "nativeId": "example-string",
-          "numWorkloadDescendants": 0,
           "allOrgs": [
             {
               "allUrls": [

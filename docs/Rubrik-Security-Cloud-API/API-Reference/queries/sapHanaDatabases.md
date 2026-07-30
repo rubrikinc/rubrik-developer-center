@@ -34,6 +34,7 @@ Connection of filtered SAP HANA databases based on specific filters.
           forceFull
           id
           isRelic
+          isReplica
           name
           numWorkloadDescendants
           objectType

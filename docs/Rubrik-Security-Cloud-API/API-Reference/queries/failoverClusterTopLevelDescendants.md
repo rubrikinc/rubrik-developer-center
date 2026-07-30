@@ -32,6 +32,7 @@ Get a summary of all failover cluster top level descendants.
           authorizedOperations
           cdmPendingObjectPauseAssignment
           id
+          isReplica
           name
           numWorkloadDescendants
           objectType

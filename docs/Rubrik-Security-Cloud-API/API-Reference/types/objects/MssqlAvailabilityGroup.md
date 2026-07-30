@@ -24,6 +24,7 @@ SQL Server always on availability group.
 | hostLogRetention | [Long](../scalars/Long.md)! | Interval, in seconds, between the deletion of archived log files whose 'nextTime' field specifies a time longer than this interval. To specify an interval, enter a positive integer. To immediately delete archived log files regardless of age, specify an interval of -1. To preserve all archived log files, specify an interval of -2. |
 | id | [UUID](../scalars/UUID.md)! | ID of the hierarchy object. |
 | instances | [[MssqlInstance](MssqlInstance.md)!]! | The list of instances associated with an availability group. |
+| isReplica | Boolean | True if this object is a replica, its current cluster differs from its source (primary) cluster. False if the object resides on its source cluster. Null when the source cluster is unknown. |
 | latestUserNote | [LatestUserNote](LatestUserNote.md) | Latest user note information. |
 | logBackupFrequencyInSeconds | [Long](../scalars/Long.md)! | Number of seconds between two log backups. When the value is set to 0, log backups are not enabled. When the value is set to -1, the default log backup frequency of the Rubrik cluster is used. When the value is set to -2, the log backup frequency is derived from the SLA Domain. |
 | logBackupRetentionInHours | Int! | Number of hours to retain a log backup. When the value is set to -1, the Rubrik cluster retains the log backup until the database snapshots that precede the log backup have expired. When the value is set to -2, the default log backup retention of the Rubrik cluster is used. When the value is set to -3, the log backup retention is derived from the SLA Domain. |
@@ -31,6 +32,7 @@ SQL Server always on availability group.
 | logicalPath | [[PathNode](PathNode.md)!]! | Sequential list of the logical ancestors of this object. |
 | name | String! | Name of the hierarchy object. |
 | numWorkloadDescendants | Int! | Number of descendant workloads of this object. |
+| objectBackupWindow | [ObjectBackupWindowStatus](ObjectBackupWindowStatus.md) | Object-level backup window status of the hierarchy object. |
 | objectPauseStatus | [ObjectPauseStatus](ObjectPauseStatus.md) | Pause status of the hierarchy object. |
 | objectType | [HierarchyObjectTypeEnum](../enums/HierarchyObjectTypeEnum.md)! | Type of this object. |
 | pendingObjectDeletionStatus | [PendingSnapshotsOfObjectDeletion](PendingSnapshotsOfObjectDeletion.md) | Mapping from object ID to pending object deletion status. |

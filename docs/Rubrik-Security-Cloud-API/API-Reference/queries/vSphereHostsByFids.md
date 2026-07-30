@@ -25,6 +25,7 @@ All of the VSphere hosts based on fids passed in.
         hasDatastoresForRecovery
         id
         ioFilterStatus
+        isReplica
         isStandaloneHost
         name
         numWorkloadDescendants

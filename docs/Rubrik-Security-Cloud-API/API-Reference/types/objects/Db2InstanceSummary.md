@@ -11,6 +11,7 @@ Supported in v7.0+
 | hostIds | [String!]! | Required. Supported in v7.0+ v7.0: List of hosts that are a part of this Db2 instance. v8.0+: A list of IDs of the hosts that are part of this Db2 instance. |
 | hostNames | [String!]! | Supported in v8.0+ A list of names of the hosts that are part of this Db2 instance. |
 | id | String! | Required. Supported in v7.0+ ID of the Db2 instance. |
+| instanceType | [Db2InstanceSummaryInstanceType](../enums/Db2InstanceSummaryInstanceType.md) | Supported in v9.6+ Specifies the type of the Db2 instance. |
 | isArchived | Boolean | Supported in v8.0+ Specifies whether a Db2 instance is archived. |
 | lastRefreshTime | String! | Required. Supported in v7.0+ UTC timestamp of the most recent Db2 instance refresh job. |
 | name | String! | Required. Supported in v7.0+ Name of the Db2 instance. |

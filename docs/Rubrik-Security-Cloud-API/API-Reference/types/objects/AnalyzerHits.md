@@ -17,3 +17,4 @@ Analyzer hits for different risk categories.
 
 - [FileResult.analyzerRiskHits](FileResult.md)
 - [PolicyObj.analyzerHits](PolicyObj.md)
+- [PrincipalRisk.analyzerHits](PrincipalRisk.md)

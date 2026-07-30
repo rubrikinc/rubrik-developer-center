@@ -19,6 +19,7 @@ An AWS native managed hierarchy object.
 | name | String! | Name of the hierarchy object. |
 | nativeName | String! | AWS Native name of the object. |
 | numWorkloadDescendants | Int! | Number of descendant workloads of this object. |
+| objectBackupWindow | [ObjectBackupWindowStatus](../objects/ObjectBackupWindowStatus.md) | Object-level backup window status of the hierarchy object. |
 | objectPauseStatus | [ObjectPauseStatus](../objects/ObjectPauseStatus.md) | Pause status of the hierarchy object. |
 | objectType | [HierarchyObjectTypeEnum](../enums/HierarchyObjectTypeEnum.md)! | Type of this object. |
 | physicalPath | [[PathNode](../objects/PathNode.md)!]! | Sequential list of the physical ancestors of this object. |
@@ -49,3 +50,6 @@ An AWS native managed hierarchy object.
 - [GlueIcebergCatalog](../objects/GlueIcebergCatalog.md)
 - [GlueIcebergDatabase](../objects/GlueIcebergDatabase.md)
 - [GlueIcebergTable](../objects/GlueIcebergTable.md)
+- [S3TablesIcebergCatalog](../objects/S3TablesIcebergCatalog.md)
+- [S3TablesIcebergNamespace](../objects/S3TablesIcebergNamespace.md)
+- [S3TablesIcebergTable](../objects/S3TablesIcebergTable.md)

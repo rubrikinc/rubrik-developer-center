@@ -49,4 +49,4 @@ Details of an RSC tag.
 - [AzureSqlDatabaseDb.allTags](AzureSqlDatabaseDb.md)
 - [AzureSqlDatabaseServer.allTags](AzureSqlDatabaseServer.md)
 - [AzureSqlManagedInstanceDatabase.allTags](AzureSqlManagedInstanceDatabase.md)
-- *…and 276 more*
+- *…and 285 more*

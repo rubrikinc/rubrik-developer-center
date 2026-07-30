@@ -26,6 +26,7 @@ Information about MongoDB Collection.
 | name | String! | Name of the hierarchy object. |
 | newestSnapshot | [MosaicSnapshot](MosaicSnapshot.md) | The most recent snapshot of this workload. |
 | numWorkloadDescendants | Int! | Number of descendant workloads of this object. |
+| objectBackupWindow | [ObjectBackupWindowStatus](ObjectBackupWindowStatus.md) | Object-level backup window status of the hierarchy object. |
 | objectPauseStatus | [ObjectPauseStatus](ObjectPauseStatus.md) | Pause status of the hierarchy object. |
 | objectType | [HierarchyObjectTypeEnum](../enums/HierarchyObjectTypeEnum.md)! | Type of this object. |
 | oldestSnapshot | [MosaicSnapshot](MosaicSnapshot.md) | The oldest snapshot of this workload. |

@@ -24,6 +24,7 @@ A Nutanix Cluster.
         cdmPendingObjectPauseAssignment
         hostName
         id
+        isReplica
         lastRefreshTime
         name
         naturalId
@@ -60,7 +61,7 @@ A Nutanix Cluster.
           "cdmPendingObjectPauseAssignment": "NO_PENDING_PAUSE_ASSIGNMENT",
           "hostName": "example-string",
           "id": "00000000-0000-0000-0000-000000000000",
-          "lastRefreshTime": "2024-01-01T00:00:00.000Z",
+          "isReplica": true,
           "allOrgs": [
             {
               "allUrls": [

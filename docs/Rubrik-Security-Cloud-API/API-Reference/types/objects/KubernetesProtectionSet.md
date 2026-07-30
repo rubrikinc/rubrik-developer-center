@@ -19,25 +19,31 @@ Kubernetes Protection Set.
 | configuredSlaDomain | [SlaDomain](../interfaces/SlaDomain.md)! | SLA Domain configured for the hierarchy object. |
 | creationType | [KubernetesProtectionSetCreationType](../enums/KubernetesProtectionSetCreationType.md)! | Creation type of protection set. |
 | crossAccountReplicatedObjectInfos | [[CrossAccountReplicatedObjectInfo](CrossAccountReplicatedObjectInfo.md)!] | Cross-account objects either replicated by this object or related to this object by replication. |
+| customResourceDependencies | String | Custom resource dependencies captured as part of this Protection Set. |
 | definition | String! | Definition of Protection Set. |
 | effectiveRetentionSlaDomain | [SlaDomain](../interfaces/SlaDomain.md) | Effective retention of the SLA Domain of the hierarchy object. |
 | effectiveSlaDomain | [SlaDomain](../interfaces/SlaDomain.md)! | Effective SLA Domain of the hierarchy object. |
 | effectiveSlaSourceObject | [PathNode](PathNode.md) | Path node of the effective SLA Domain source. |
 | id | [UUID](../scalars/UUID.md)! | Object ID. |
 | isRelic | Boolean! | Specifies whether the Protection Set is a relic. |
+| isReplica | Boolean | True if this object is a replica, its current cluster differs from its source (primary) cluster. False if the object resides on its source cluster. Null when the source cluster is unknown. |
 | k8sClusterName | String! | Name of the Kubernetes Cluster. |
 | k8sClusterUuid | [UUID](../scalars/UUID.md)! | UUID of the Kubernetes Cluster. |
+| labelSelector | String | Label selector used to match Kubernetes resources protected by this Protection Set. |
 | latestUserNote | [LatestUserNote](LatestUserNote.md) | Latest user note information. |
 | logicalPath | [[PathNode](PathNode.md)!]! | Sequential list of the logical ancestors of this object. |
 | missedSnapshotConnection | [MissedSnapshotCommonConnection](MissedSnapshotCommonConnection.md) | The list of missed snapshots for this workload. |
 | missedSnapshotGroupByConnection | [MissedSnapshotGroupByConnection](MissedSnapshotGroupByConnection.md) | The list of missed snapshots for this workload. |
 | name | String! | Name of the hierarchy object. |
 | namespace | String | Namespace of Protection Set. |
+| namespaceExcludePatterns | String | Namespace name patterns to exclude when selecting resources protected by this Protection Set. |
+| namespaceIncludePatterns | String | Namespace name patterns to include when selecting resources protected by this Protection Set. |
 | newestArchivedSnapshot | [CdmSnapshot](CdmSnapshot.md) | The newest snapshot archived to AWS. |
 | newestIndexedSnapshot | [CdmSnapshot](CdmSnapshot.md) | The most recent indexed snapshot of this workload. |
 | newestReplicatedSnapshot | [CdmSnapshot](CdmSnapshot.md) | The newest snapshot replicated to a cluster. |
 | newestSnapshot | [CdmSnapshot](CdmSnapshot.md) | The most recent snapshot of this workload. |
 | numWorkloadDescendants | Int! | Number of descendant workloads of this object. |
+| objectBackupWindow | [ObjectBackupWindowStatus](ObjectBackupWindowStatus.md) | Object-level backup window status of the hierarchy object. |
 | objectPauseStatus | [ObjectPauseStatus](ObjectPauseStatus.md) | Pause status of the hierarchy object. |
 | objectType | [HierarchyObjectTypeEnum](../enums/HierarchyObjectTypeEnum.md)! | Type of this object. |
 | oldestSnapshot | [CdmSnapshot](CdmSnapshot.md) | The oldest snapshot of this workload. |
@@ -65,6 +71,8 @@ Kubernetes Protection Set.
 |-------|----------|------|-------------|
 | missedSnapshotConnection | first | Int | Returns the first n elements from the list. |
 | missedSnapshotConnection | after | String | Returns the elements in the list that occur after the specified cursor. |
+| missedSnapshotConnection | last | Int | Returns the last n elements from the list. |
+| missedSnapshotConnection | before | String | Returns the elements in the list that occur before the specified cursor. |
 | missedSnapshotConnection | filter | [MissedSnapshotFilterInput](../inputs/MissedSnapshotFilterInput.md) | Filter missed snapshots by date. |
 | missedSnapshotGroupByConnection | first | Int | Returns the first n elements from the list. |
 | missedSnapshotGroupByConnection | after | String | Returns the elements in the list that occur after the specified cursor. |

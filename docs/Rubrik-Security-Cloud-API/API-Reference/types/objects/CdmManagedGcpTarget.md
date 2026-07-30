@@ -1,6 +1,6 @@
 # CdmManagedGcpTarget
 
-Specific info for Gcp target created on Cdm.
+Specific information for GCP target created on CDM cluster.
 
 **Implements:** [Target](../interfaces/Target.md)
 
@@ -12,7 +12,7 @@ Specific info for Gcp target created on Cdm.
 | clusterName | String | Name of the Rubrik cluster that archives to this archival location. |
 | consumedBytes | [Long](../scalars/Long.md) | Number of bytes stored on the target. |
 | failedTasks | Int | Number of archiving tasks failed on this target. |
-| id | String! | Id of the GCP location. |
+| id | String! | The ID of the target. |
 | immutabilitySettings | [GcpImmutabilitySettings](GcpImmutabilitySettings.md) | Immutability settings of the GCP archival target. |
 | isActive | Boolean! | Specifies whether the status of the target is active. When set to false, the target is either paused or not enabled. |
 | isArchived | Boolean! | Specifies whether the target is archived. |

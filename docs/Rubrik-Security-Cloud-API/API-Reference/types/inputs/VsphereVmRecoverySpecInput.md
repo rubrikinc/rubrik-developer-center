@@ -1,0 +1,20 @@
+# VsphereVmRecoverySpecInput
+
+VSphere virtual machine recovery specification.
+
+## Fields
+
+| Field | Type | Description |
+|-------|------|-------------|
+| enableMacPreserveOnly | Boolean | If true, recovery will only preserve the original MAC address when network preservation is enabled. |
+| enableNetworkDisconnect | Boolean | If true, the network will be disconnected for the new virtual machine during recovery. |
+| enableNetworkPreserve | Boolean | If true, recovery will use the original network configuration. |
+| localAdminPassword | String | Local administrator password for the virtual machine (optional). Only required when creating a windows host for ADFR recovery. UI can provide this value as input, but it will never be returned in API responses. Backend services can read this field via internal RPC calls. |
+| memoryMbs | Int | Amount of memory in megabytes to assign to the recovered virtual machine. |
+| nics | [[VsphereVmNicSpecInput](VsphereVmNicSpecInput.md)!] | Network configuration for the recovered virtual machine. |
+| postScript | String | The script to be run on the recovered virtual machine after reboot. |
+| postScriptHash | String | Post script hash. |
+| postScriptTimestamp | String | Post script timestamp. |
+| target | [VsphereComputeTargetInput](VsphereComputeTargetInput.md) | Compute target configuration for recovery. |
+| vcpus | Int | Number of vCPUs to assign to the recovered virtual machine. |
+| volumes | [[VsphereVmVolumeSpecInput](VsphereVmVolumeSpecInput.md)!] | Storage volume configuration for the recovered virtual machine. |

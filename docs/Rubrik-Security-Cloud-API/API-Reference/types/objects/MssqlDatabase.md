@@ -36,6 +36,7 @@ SQL Server database.
 | isMount | Boolean! | Specifies if the SQL Server database is a live mount. |
 | isOnline | Boolean! | Specifies if the SQL Server database is online. |
 | isRelic | Boolean! | Specifies if the SQL Server database is a relic. |
+| isReplica | Boolean | True if this object is a replica, its current cluster differs from its source (primary) cluster. False if the object resides on its source cluster. Null when the source cluster is unknown. |
 | latestUserNote | [LatestUserNote](LatestUserNote.md) | Latest user note information. |
 | liveMounts | [MssqlDatabaseLiveMountConnection](MssqlDatabaseLiveMountConnection.md)! | List of live mounts for a SQL Server database. |
 | logBackupFrequencyInSeconds | Float! | Number of seconds between two log backups. When the value is set to 0, log backups are not enabled. When the value is set to -1, the default log backup frequency of the Rubrik cluster is used. When the value is set to -2, the log backup frequency is derived from the SLA Domain. |
@@ -49,6 +50,7 @@ SQL Server database.
 | newestReplicatedSnapshot | [CdmSnapshot](CdmSnapshot.md) | The newest snapshot replicated to a cluster. |
 | newestSnapshot | [CdmSnapshot](CdmSnapshot.md) | The most recent snapshot of this workload. |
 | numWorkloadDescendants | Int! | Number of descendant workloads of this object. |
+| objectBackupWindow | [ObjectBackupWindowStatus](ObjectBackupWindowStatus.md) | Object-level backup window status of the hierarchy object. |
 | objectPauseStatus | [ObjectPauseStatus](ObjectPauseStatus.md) | Pause status of the hierarchy object. |
 | objectType | [HierarchyObjectTypeEnum](../enums/HierarchyObjectTypeEnum.md)! | Type of this object. |
 | oldestSnapshot | [CdmSnapshot](CdmSnapshot.md) | The oldest snapshot of this workload. |
@@ -96,6 +98,8 @@ SQL Server database.
 | liveMounts | filters | [[MssqlDatabaseLiveMountFilterInput](../inputs/MssqlDatabaseLiveMountFilterInput.md)!] | Filters for Mssql database live mounts. |
 | missedSnapshotConnection | first | Int | Returns the first n elements from the list. |
 | missedSnapshotConnection | after | String | Returns the elements in the list that occur after the specified cursor. |
+| missedSnapshotConnection | last | Int | Returns the last n elements from the list. |
+| missedSnapshotConnection | before | String | Returns the elements in the list that occur before the specified cursor. |
 | missedSnapshotConnection | filter | [MissedSnapshotFilterInput](../inputs/MissedSnapshotFilterInput.md) | Filter missed snapshots by date. |
 | missedSnapshotGroupByConnection | first | Int | Returns the first n elements from the list. |
 | missedSnapshotGroupByConnection | after | String | Returns the elements in the list that occur after the specified cursor. |

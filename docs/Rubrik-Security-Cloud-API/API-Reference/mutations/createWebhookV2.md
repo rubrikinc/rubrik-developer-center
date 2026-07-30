@@ -28,9 +28,6 @@ Create webhook configuration.
     {
       "input": {
         "payload": {
-          "authInfo": {
-            "authType": "AUTH_TYPE_UNSPECIFIED"
-          },
           "providerType": "CUSTOM",
           "subscriptionType": {}
         }

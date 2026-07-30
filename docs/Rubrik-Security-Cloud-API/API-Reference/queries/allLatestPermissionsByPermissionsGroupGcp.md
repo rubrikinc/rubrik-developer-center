@@ -44,7 +44,7 @@ Details of all the supported permission groups for the specified features.
             "feature": "ALL",
             "permissionGroups": [
               {
-                "permissionGroupType": "AKS_CUSTOM_PRIVATE_DNS_ZONE",
+                "permissionGroupType": "ADVANCED_DIAGNOSTICS",
                 "permissionsWithConditions": [
                   "example-string"
                 ],

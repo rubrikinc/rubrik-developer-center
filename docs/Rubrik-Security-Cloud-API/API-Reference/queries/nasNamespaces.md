@@ -29,6 +29,7 @@ Paginated list of NAS Namespaces.
           cdmPendingObjectPauseAssignment
           id
           isReadonly
+          isReplica
           name
           nfsDataAddresses
           numWorkloadDescendants
@@ -71,7 +72,7 @@ Paginated list of NAS Namespaces.
                 "cdmPendingObjectPauseAssignment": "NO_PENDING_PAUSE_ASSIGNMENT",
                 "id": "00000000-0000-0000-0000-000000000000",
                 "isReadonly": true,
-                "name": "example-string"
+                "isReplica": true
               }
             ]
           ],

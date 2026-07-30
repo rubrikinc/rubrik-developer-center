@@ -25,6 +25,7 @@ A Microsoft SQL Availability Group.
         hasLogConfigFromSla
         hostLogRetention
         id
+        isReplica
         logBackupFrequencyInSeconds
         logBackupRetentionInHours
         name

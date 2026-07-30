@@ -10,6 +10,7 @@ Represents all the object types for which we expect to see audits.
 | ACTIVE_DIRECTORY_DOMAIN_CONTROLLER | Active Directory domain controller. |
 | ACTIVE_DIRECTORY_FOREST | Active Directory forest. |
 | AGENT_CLOUD_ALERT | Agent Cloud alert object. |
+| AGENT_CLOUD_CONNECTION | Agent Cloud connection object. |
 | AGENT_CLOUD_POLICY | Agent Cloud policy object. |
 | AGENT_CLOUD_VIOLATION | Agent Cloud violation object. |
 | AGENT_OPERATIONS_MODEL_ROUTER | Agent Operations Model Router object. |
@@ -17,6 +18,7 @@ Represents all the object types for which we expect to see audits.
 | ARCHIVAL_LOCATION | Archival Location object. |
 | ATLASSIAN_SITE | Atlassian site. |
 | AUDIT_OBJECT_TYPE_UNSPECIFIED | Unknown object type. |
+| AUTH0_TENANT | Auth0 tenant. |
 | AUTH_DOMAIN | Auth domain object. |
 | AWS_ACCOUNT | AWS account object. |
 | AWS_EVENT_TYPE | AWS object. |
@@ -30,6 +32,7 @@ Represents all the object types for which we expect to see audits.
 | AZURE_AD_DIRECTORY | Azure AD Directory object. |
 | AZURE_DEVOPS_ORGANIZATION | Azure DevOps Organisation. |
 | AZURE_DEVOPS_PROJECT | Azure DevOps Project. |
+| AZURE_DEVOPS_PROJECT_FIXED_OBJECT | Azure DevOps Developer Collaboration (work items, boards, wikis) per project. |
 | AZURE_DEVOPS_REPOSITORY | Azure DevOps Repository. |
 | AZURE_NATIVE_DISK | Azure native disk object. |
 | AZURE_NATIVE_SUBSCRIPTION | Azure native subscription object. |
@@ -104,6 +107,7 @@ Represents all the object types for which we expect to see audits.
 | INTEGRATION | Integration object. |
 | INTEL_FEED | Orion threat feed. |
 | IP_WHITELIST | Ip Whitelist object. |
+| IRISDB_INSTANCE | IrisDB instance object. |
 | JIRA_PROJECT | Atlassian Jira project. |
 | JIRA_SETTINGS | Atlassian Jira settings. |
 | JOB_INSTANCE | Job instance. |
@@ -122,6 +126,7 @@ Represents all the object types for which we expect to see audits.
 | M365_BACKUP_STORAGE_ORG | Microsoft 365 Backup Storage Subscription. |
 | M365_BACKUP_STORAGE_SITE | Microsoft 365 Backup Storage SharePoint Site. |
 | MANAGED_VOLUME | Managed Volume object. |
+| MARIADB_INSTANCE | MariaDB instance. |
 | MONGODB_SOURCE | MongoDB source. |
 | MONGO_COLLECTION | MongoDB collection. |
 | MONGO_SOURCE | MongoDB source. |
@@ -164,6 +169,17 @@ Represents all the object types for which we expect to see audits.
 | ORGANIZATION | Organization object. |
 | PING_FEDERATE_CLUSTER | Ping Federate Cluster. |
 | POSTGRES_DB_CLUSTER | Postgres Database Cluster. |
+| POWER_PLATFORM_AI_FLOW | Power Platform AI flow. |
+| POWER_PLATFORM_BUSINESS_PROCESS_FLOW | Power Platform business process flow. |
+| POWER_PLATFORM_BUSINESS_RULE | Power Platform business rule. |
+| POWER_PLATFORM_CANVAS_APP | Power Platform canvas app. |
+| POWER_PLATFORM_CLASSIC_WORKFLOW | Power Platform classic workflow. |
+| POWER_PLATFORM_CLOUD_FLOW | Power Platform cloud flow. |
+| POWER_PLATFORM_CUSTOM_ACTION | Power Platform custom action. |
+| POWER_PLATFORM_DESKTOP_FLOW | Power Platform desktop flow. |
+| POWER_PLATFORM_DIALOG | Power Platform dialog. |
+| POWER_PLATFORM_MODEL_DRIVEN_APP | Power Platform model-driven app. |
+| POWER_PLATFORM_ORGANIZATION | Power Platform organization. |
 | PROXMOX_ENVIRONMENT | Proxmox environment. |
 | PROXMOX_VIRTUAL_MACHINE | Proxmox virtual machine. |
 | PUBLIC_CLOUD_MACHINE_INSTANCE | Public cloud machine instance. |
@@ -173,6 +189,9 @@ Represents all the object types for which we expect to see audits.
 | REPLICATION_PAIR | Rubrik cluster replication pair. |
 | RSC_CHILD_ACCOUNT | RSC Child Account (Dedicated Tenant). |
 | RSC_TAG | Rsc Tag object. |
+| S3_TABLES_ICEBERG_CATALOG | AWS S3 Tables Iceberg Catalog. |
+| S3_TABLES_ICEBERG_NAMESPACE | AWS S3 Tables Iceberg Namespace. |
+| S3_TABLES_ICEBERG_TABLE | AWS S3 Tables Iceberg Table. |
 | SALESFORCE_METADATA | Salesforce metadata. |
 | SALESFORCE_OBJECT | Salesforce objects. |
 | SALESFORCE_ORGANIZATION | Salesforce organization. |

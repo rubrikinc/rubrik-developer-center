@@ -25,6 +25,7 @@ Provides details for a MongoDB collection identified by the fid.
         clusterUuid
         id
         isRelic
+        isReplica
         name
         numWorkloadDescendants
         objectType

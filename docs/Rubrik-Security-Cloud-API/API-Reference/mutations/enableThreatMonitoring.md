@@ -26,13 +26,7 @@ Enable or disable Threat Monitoring on a Rubrik cluster. Supports CDM clusters, 
 
     ```json
     {
-      "input": {
-        "status": {
-          "enabled": true,
-          "entityId": "example-string",
-          "entityType": "ACTIVE_DIRECTORY"
-        }
-      }
+      "input": {}
     }
     ```
 

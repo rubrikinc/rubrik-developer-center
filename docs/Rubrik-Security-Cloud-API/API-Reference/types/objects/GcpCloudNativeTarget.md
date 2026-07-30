@@ -1,6 +1,6 @@
 # GcpCloudNativeTarget
 
-GCP native archival specific fields for GCP Target Template.
+GCP cloud native archival specific fields for GCP Target Template. GraphQL view that uses CloudAccountV2 and TagObject instead of CloudAccount and map<string, string>.
 
 ## Fields
 

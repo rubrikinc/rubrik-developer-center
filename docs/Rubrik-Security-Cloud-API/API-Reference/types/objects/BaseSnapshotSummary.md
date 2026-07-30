@@ -36,3 +36,4 @@ Supported in v5.0+
 - [ManagedVolumeSnapshotSummary.baseSnapshotSummary](ManagedVolumeSnapshotSummary.md)
 - [NutanixVmSnapshotSummary.baseSnapshotSummary](NutanixVmSnapshotSummary.md)
 - [OracleDbSnapshotSummary.baseSnapshotSummary](OracleDbSnapshotSummary.md)
+- [PureStorageProtectionGroupSnapshotSummary.baseSnapshotSummary](PureStorageProtectionGroupSnapshotSummary.md)

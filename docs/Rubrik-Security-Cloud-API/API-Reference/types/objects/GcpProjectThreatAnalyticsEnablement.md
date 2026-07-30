@@ -9,6 +9,8 @@ GCP projects on which Threat Monitoring can be enabled.
 | dataThreatAnalyticsEnabled | Boolean! | Indicates whether Data Threat Analytics is enabled. |
 | id | String! | GCP project ID. |
 | isHealthy | Boolean! | Indicates whether the GCP project is healthy. |
+| isSmartScanningEnabled | Boolean! | Indicates whether extended file scan coverage is enabled. |
+| isYaraProcessingEnabled | Boolean! | Indicates whether YARA-based threat monitoring is enabled. |
 | projectName | String! | GCP project name. |
 | shouldScanAllFiles | Boolean! | When true, threat monitoring scans all files regardless of extension. |
 | threatMonitoringEnabled | Boolean! | Indicates whether Threat Monitoring is enabled. |

@@ -68,6 +68,7 @@ Retrieves the details of the Azure tenant and all the subscriptions of the tenan
           "entraIdGroupId": "example-string",
           "subscriptions": [
             {
+              "azureLocalClusterCount": 0,
               "id": "example-string",
               "name": "example-string",
               "nativeId": "example-string"

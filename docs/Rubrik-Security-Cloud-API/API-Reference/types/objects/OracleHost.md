@@ -23,9 +23,11 @@
 | effectiveRetentionSlaDomain | [SlaDomain](../interfaces/SlaDomain.md) | Effective retention of the SLA Domain of the hierarchy object. |
 | effectiveSlaDomain | [SlaDomain](../interfaces/SlaDomain.md)! | Effective SLA Domain of the hierarchy object. |
 | effectiveSlaSourceObject | [PathNode](PathNode.md) | Path node of the effective SLA Domain source. |
+| excludedDbUniqueNames | [String!]! | The db_unique_names of the Oracle databases on this host that are excluded from discovery. An empty list means no databases are excluded. |
 | host | [PhysicalHost](PhysicalHost.md) | Source host of the Oracle database. |
 | hostLogRetentionHours | Int! | The host log retention, in hours, of the Oracle Host. |
 | id | [UUID](../scalars/UUID.md)! | ID of the hierarchy object. |
+| isReplica | Boolean | True if this object is a replica, its current cluster differs from its source (primary) cluster. False if the object resides on its source cluster. Null when the source cluster is unknown. |
 | latestUserNote | [LatestUserNote](LatestUserNote.md) | Latest user note information. |
 | logBackupFrequency | Int! | The log backup frequency, in minutes, of the Oracle Host. |
 | logRetentionHours | Int! | The log retention, in hours, of the Oracle Host. |
@@ -34,6 +36,7 @@
 | name | String! | Name of the hierarchy object. |
 | numChannels | [Long](../scalars/Long.md)! | The number of RMAN channels used for backup and restore of the Oracle Host. |
 | numWorkloadDescendants | Int! | Number of descendant workloads of this object. |
+| objectBackupWindow | [ObjectBackupWindowStatus](ObjectBackupWindowStatus.md) | Object-level backup window status of the hierarchy object. |
 | objectPauseStatus | [ObjectPauseStatus](ObjectPauseStatus.md) | Pause status of the hierarchy object. |
 | objectType | [HierarchyObjectTypeEnum](../enums/HierarchyObjectTypeEnum.md)! | Type of this object. |
 | pendingObjectDeletionStatus | [PendingSnapshotsOfObjectDeletion](PendingSnapshotsOfObjectDeletion.md) | Mapping from object ID to pending object deletion status. |

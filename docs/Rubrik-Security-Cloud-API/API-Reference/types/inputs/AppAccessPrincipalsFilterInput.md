@@ -1,0 +1,22 @@
+# AppAccessPrincipalsFilterInput
+
+Filter for appAccessPrincipals.
+
+## Fields
+
+| Field | Type | Description |
+|-------|------|-------------|
+| accessPathType | [AccessPathType](../enums/AccessPathType.md) | Filter by access path type (direct, indirect, or all). |
+| activityId | String | Optional activity ID whose impact should be overlaid on the PIT graph. When set, activityTimestamp must also be provided. |
+| activityTimestamp | String | RFC3339 timestamp that pins the query to a point-in-time graph. Must not be in the future and must be within 30 days of the current time. |
+| activityType | [IdentityAlertEventType](../enums/IdentityAlertEventType.md) | Activity kind associated with activityId. Required when activityId is set. |
+| appFilter | String | Filter to paths leading to a specific app. When set, only principals in the path to this app are returned. |
+| domainId | String | ID of the identity provider domain. |
+| nameFilter | String | Search by name (case-insensitive contains). |
+| nodeId | [AppAccessNodeId](../enums/AppAccessNodeId.md) | Graph node slot to drill into; selects which principal cluster to list. |
+| parentPrincipalId | String | When set and principal_type=SERVICE_PRINCIPAL, list only apps reachable via this parent principal (group). |
+| principalId | String! | Source principal (user) whose app access paths are being explored. |
+| principalType | [PrincipalRiskySummaryPrincipalType](../enums/PrincipalRiskySummaryPrincipalType.md) | Type of principals to list (e.g., GROUP, SERVICE_ACCOUNT). |
+| targetAppId | String | Optional app hint to resolve which application the activity targeted. Mutually exclusive with targetGroupId. |
+| targetGroupId | String | Optional group hint to resolve which group the activity targeted. Mutually exclusive with targetAppId. |
+| timelineDate | String | Timeline date for time-series data (format: YYYY-MM-DD). If not provided, defaults to latest available data. |

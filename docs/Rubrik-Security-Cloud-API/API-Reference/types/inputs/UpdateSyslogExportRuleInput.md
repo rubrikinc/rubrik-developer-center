@@ -22,3 +22,4 @@ Input for updating a syslog export rule.
 | syslogSettingsV94 | [SyslogExportRulePartialInput](SyslogExportRulePartialInput.md) | Syslog export rule. |
 | syslogSettingsV95 | [SyslogExportRulePartialInput](SyslogExportRulePartialInput.md) | Syslog export rule. |
 | syslogSettingsV96 | [SyslogExportRulePartialInput](SyslogExportRulePartialInput.md) | Syslog export rule. |
+| syslogSettingsV97 | [SyslogExportRulePartialInput](SyslogExportRulePartialInput.md) | Syslog export rule. |

@@ -7,4 +7,5 @@ Represents the severity level of a user message.
 | Value | Description |
 |-------|-------------|
 | ERROR | The severity level of the message is ERROR. |
+| INFO | The severity level of the message is INFO. |
 | WARNING | The severity level of the message is WARNING. |

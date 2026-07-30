@@ -31,6 +31,7 @@ A Microsoft SQL Instance.
         hostsInstalled
         id
         isClusterInstance
+        isReplica
         logBackupFrequencyInSeconds
         logBackupRetentionInHours
         name

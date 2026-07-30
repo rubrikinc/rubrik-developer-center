@@ -1,6 +1,6 @@
 # IdentityMetadata
 
-*No description available.*
+Metadata describing an identity resource involved in a policy violation.
 
 ## Fields
 

@@ -15,3 +15,4 @@ Azure region specification.
 
 - [AzureNativeSubscription.regionSpecs](AzureNativeSubscription.md)
 - [AzureNativeSubscriptionDetails.regionSpecs](AzureNativeSubscriptionDetails.md)
+- [RecoveryPlanAzureSubscription.regionSpecs](RecoveryPlanAzureSubscription.md)

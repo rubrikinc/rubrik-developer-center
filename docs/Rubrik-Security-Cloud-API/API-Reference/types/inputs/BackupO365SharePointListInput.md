@@ -6,4 +6,4 @@ Configuration for O365 SharePoint List backup.
 
 | Field | Type | Description |
 |-------|------|-------------|
-| snappableUuid | [UUID](../scalars/UUID.md)! | Polaris ID of O365 list object. |
+| snappableUuid | [UUID](../scalars/UUID.md) | Polaris ID of O365 list object. |

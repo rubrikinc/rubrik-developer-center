@@ -23,8 +23,10 @@ Details of a MySQL instance for a given FID.
         cdmId
         cdmLink
         cdmPendingObjectPauseAssignment
+        clusterMode
         id
         isRelic
+        isReplica
         name
         numWorkloadDescendants
         objectType
@@ -56,8 +58,8 @@ Details of a MySQL instance for a given FID.
           "cdmId": "example-string",
           "cdmLink": "example-string",
           "cdmPendingObjectPauseAssignment": "NO_PENDING_PAUSE_ASSIGNMENT",
+          "clusterMode": "HA",
           "id": "00000000-0000-0000-0000-000000000000",
-          "isRelic": true,
           "advancedConfig": {
             "dirtyPageFlushTimeoutInMinutes": 0,
             "mysqlBinaryPath": "example-string"

@@ -16,8 +16,16 @@ Sensitive hits for different risk categories.
 
 **Referenced by**
 
+- [ExposureTypeHits.hits](ExposureTypeHits.md)
 - [FileResult.sensitiveHits](FileResult.md)
 - [IdentityMetadata.sensitiveHits](IdentityMetadata.md)
+- [PolicyHitsSummary.sidAnalyzerHits](PolicyHitsSummary.md)
+- [PolicyHitsSummary.sidDeltaAnalyzerHits](PolicyHitsSummary.md)
+- [PolicyHitsSummary.sidDeltaRiskHits](PolicyHitsSummary.md)
+- [PolicyHitsSummary.sidRiskHits](PolicyHitsSummary.md)
 - [PolicyObj.riskHits](PolicyObj.md)
+- [PolicyRiskSummary.hits](PolicyRiskSummary.md)
+- [PrincipalRisk.sensitiveHits](PrincipalRisk.md)
+- [PrincipalSummary.sensitiveHits](PrincipalSummary.md)
 - [SnapshotFileDelta.sensitiveHits](SnapshotFileDelta.md)
 - [SnapshotFileDeltaV2.sensitiveHits](SnapshotFileDeltaV2.md)

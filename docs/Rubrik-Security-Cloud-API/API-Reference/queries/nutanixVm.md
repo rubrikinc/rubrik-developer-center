@@ -32,6 +32,7 @@ A Nutanix Virtual Machine.
         isAgentRegistered
         isBlueprintChild
         isRelic
+        isReplica
         name
         numWorkloadDescendants
         nutanixSnapshotConsistencyMandate

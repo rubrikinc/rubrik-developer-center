@@ -28,6 +28,7 @@ Get all host shares.
           cdmPendingObjectPauseAssignment
           id
           isChangelistEnabled
+          isReplica
           name
           nasMigrationInfo
           nasShareType
@@ -66,8 +67,8 @@ Get all host shares.
                 "cdmPendingObjectPauseAssignment": "NO_PENDING_PAUSE_ASSIGNMENT",
                 "id": "00000000-0000-0000-0000-000000000000",
                 "isChangelistEnabled": true,
-                "name": "example-string",
-                "nasMigrationInfo": "example-string"
+                "isReplica": true,
+                "name": "example-string"
               }
             ]
           ],

@@ -9,6 +9,7 @@ Additional information about backint and database configuration.
 | approxDbSizeInMb | [Long](../scalars/Long.md)! | Approximate size of the database in Megabytes. |
 | backintPath | String! | Path to the backint agent. |
 | databaseType | String! | Database type (SYSTEM / TENANT). |
+| isCompressionEnabled | Boolean! | Whether SAP HANA native backup compression is enabled for this database. |
 | logBackupIntervalSecs | Int! | Time interval in seconds in which the log backup will be triggered. |
 | logMode | String! | SAP HANA log mode (overwrite / normal). |
 | numChannels | Int! | Number of channels that the backint agent is using. |

@@ -22,6 +22,7 @@ RBAC role.
 | permissions | [[Permission](Permission.md)!]! | Role permissions. |
 | protectableClusters | [String!]! | List of protectable Rubrik clusters. |
 | syncedClusters | [[SyncedCluster](SyncedCluster.md)!]! | Explicit list of clusters to which role is synced. |
+| tagPermissions | [[TagPermission](TagPermission.md)!]! | Tag-scoped permissions of the role. Populated for tag-scoped roles and empty for object-scoped roles. |
 
 ## Field Arguments
 

@@ -1,6 +1,6 @@
 # RubrikManagedGcpTarget
 
-Specific information for Google Cloud Platform (GCP) target created on Rubrik.
+Specific information for GCP target created on Rubrik.
 
 **Implements:** [Target](../interfaces/Target.md)
 
@@ -13,7 +13,7 @@ Specific information for Google Cloud Platform (GCP) target created on Rubrik.
 | bypassProxy | Boolean! | Specifies whether the proxy settings should be bypassed for creating this target location. |
 | cluster | [Cluster](Cluster.md)! | The cluster to which this target belongs. |
 | clusterName | String | Name of the Rubrik cluster that archives to this archival location. |
-| cnpSpecificFields | [GcpCloudNativeTarget](GcpCloudNativeTarget.md) | CNP specific fields for the GCP target location.. |
+| cnpSpecificFields | [GcpCloudNativeTarget](GcpCloudNativeTarget.md) | CNP specific fields for the GCP target location. |
 | connectionStatus | [ConnectionStatusType](../enums/ConnectionStatusType.md)! | Connection status of the GCP target. |
 | consumedBytes | [Long](../scalars/Long.md) | Number of bytes stored on the target. |
 | encryptionType | [TargetEncryptionTypeEnum](../enums/TargetEncryptionTypeEnum.md)! | Encryption type to be used for the GCP target. |

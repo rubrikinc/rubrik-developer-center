@@ -25,9 +25,11 @@ A NAS System.
         id
         isChangelistEnabled
         isNetAppMetroClusterEnabled
+        isNetAppSnapDiffEnabled
         isNfsSupported
         isNutanixCftEnabled
         isRelic
+        isReplica
         isSmbSupported
         isUserSuppliedSmbCredentials
         lastRefreshTime

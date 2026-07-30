@@ -34,6 +34,7 @@ Connection of filtered SAP HANA systems based on specific filters.
           instanceNumber
           isForceFullOnMasterChangeEnabled
           isRelic
+          isReplica
           lastRefreshTime
           lastStatusUpdateTime
           name

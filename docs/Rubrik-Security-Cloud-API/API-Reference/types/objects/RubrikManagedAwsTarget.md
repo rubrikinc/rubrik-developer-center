@@ -1,6 +1,6 @@
 # RubrikManagedAwsTarget
 
-Specific information for Amazon Web Services (AWS) target created on Rubrik.
+Specific information for AWS target created on Rubrik.
 
 **Implements:** [Target](../interfaces/Target.md)
 
@@ -29,7 +29,7 @@ Specific information for Amazon Web Services (AWS) target created on Rubrik.
 | isArchived | Boolean! | Specifies whether the target is archived. |
 | isComplianceImmutabilitySupported | Boolean! | Specifies whether the archival location supports compliance immutability for retention locked snapshots. |
 | isConsolidationEnabled | Boolean! | Flag to check if consolidation is enabled or not in this target. |
-| kmsEndpoint | String | Optional field of the KMS server endpoint when using KMS-based encryption for example, a VPC endpoint. When not provided, the default, region-based KMS server endpoint is used. |
+| kmsEndpoint | String | Optional field of the KMS server endpoint when using KMS-based encryption. |
 | kmsMasterKeyId | String! | KMS master key ID required for encryption for the AWS target. |
 | locationConnectionStatus | [ConnectionStatusType](../enums/ConnectionStatusType.md)! | Status of the target. |
 | locationScope | [LocationScope](../enums/LocationScope.md)! | The scope of the location of the target. Possible values are Global or Local. |
@@ -38,7 +38,7 @@ Specific information for Amazon Web Services (AWS) target created on Rubrik.
 | readerRetrievalMethod | [ReaderRetrievalMethod](../enums/ReaderRetrievalMethod.md) | The retrieval method of the reader target. |
 | region | [AwsRegion](../enums/AwsRegion.md)! | Region of the AWS target. |
 | runningTasks | Int | Number of archiving tasks running on this target. |
-| s3Endpoint | String | Optional field of an Amazon S3 endpoint for example, a VPC endpoint. When not provided, the default, region-based Amazon S3 endpoint is used. |
+| s3Endpoint | String | Optional field of an Amazon S3 endpoint for example, a VPC endpoint. |
 | status | [ArchivalLocationStatus](../enums/ArchivalLocationStatus.md)! | Status of the target. |
 | storageClass | [AwsStorageClass](../enums/AwsStorageClass.md)! | Storage class of the AWS target. |
 | syncFailureReason | String! | Reason why sync of this target with CDM failed. |

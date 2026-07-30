@@ -25,6 +25,7 @@
         hasDatastoresForRecovery
         id
         ioFilterStatus
+        isReplica
         isStandaloneHost
         name
         numWorkloadDescendants

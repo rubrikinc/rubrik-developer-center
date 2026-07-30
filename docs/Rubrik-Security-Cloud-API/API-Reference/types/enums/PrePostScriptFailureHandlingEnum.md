@@ -1,10 +1,10 @@
 # PrePostScriptFailureHandlingEnum
 
-*No description available.*
+Pre/post script failure handling.
 
 ## Values
 
 | Value | Description |
 |-------|-------------|
-| abort |  |
-| continue |  |
+| abort | Abort on failure. |
+| continue | Continue on failure. |

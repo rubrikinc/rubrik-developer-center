@@ -15,3 +15,5 @@ The details of Rubrik CDM OVA for Virtual Clusters.
 **Queries**
 
 - [query: allCdmOvaDetails](../../queries/allCdmOvaDetails.md)
+- [query: allRvcLsOvaDetails](../../queries/allRvcLsOvaDetails.md)
+- [query: allRvcSsOvaDetails](../../queries/allRvcSsOvaDetails.md)

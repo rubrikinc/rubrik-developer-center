@@ -36,6 +36,7 @@ Update an Oracle Data Guard group  Supported in v6.0+ Update properties of an Or
         latestRecoveryPointV94
         latestRecoveryPointV95
         latestRecoveryPointV96
+        latestRecoveryPointV97
         logRatePerRmanChannelInMb
         oldestRecoveryPointV50
         oldestRecoveryPointV51
@@ -52,6 +53,7 @@ Update an Oracle Data Guard group  Supported in v6.0+ Update properties of an Or
         oldestRecoveryPointV94
         oldestRecoveryPointV95
         oldestRecoveryPointV96
+        oldestRecoveryPointV97
         oracleHome
         preferredDgMemberUniqueNames
         ratePerRmanChannelInMb

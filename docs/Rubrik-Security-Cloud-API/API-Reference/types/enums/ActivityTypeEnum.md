@@ -6,6 +6,7 @@ Represents different types of activities.
 
 | Value | Description |
 |-------|-------------|
+| AGENT_CLOUD_SECURITY_ALERT | Agent Cloud security alert event type. |
 | Anomaly | Anomaly type. |
 | Archive | Archive type. |
 | AuthDomain | Auth domain type. |

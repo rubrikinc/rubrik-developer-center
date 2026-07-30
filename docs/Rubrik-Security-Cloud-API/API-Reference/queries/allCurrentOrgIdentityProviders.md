@@ -14,6 +14,7 @@ Lists all identity providers for the current organization.
     query {
       allCurrentOrgIdentityProviders {
         activeUserCount
+        allowIdpInitiatedSso
         authorizedGroupsCount
         entityId
         expirationDate
@@ -46,11 +47,11 @@ Lists all identity providers for the current organization.
         "allCurrentOrgIdentityProviders": [
           {
             "activeUserCount": 0,
+            "allowIdpInitiatedSso": true,
             "authorizedGroupsCount": 0,
             "entityId": "example-string",
             "expirationDate": "2024-01-01T00:00:00.000Z",
             "id": "00000000-0000-0000-0000-000000000000",
-            "isDefault": true,
             "idpClaimAttributes": [
               {
                 "attributeType": "EMAIL",

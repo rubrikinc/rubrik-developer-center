@@ -1,6 +1,6 @@
 # resumeTarget
 
-*No description available.*
+Resumes an Archival Location.
 
 ## Arguments
 

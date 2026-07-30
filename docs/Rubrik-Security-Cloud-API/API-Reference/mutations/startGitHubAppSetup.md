@@ -31,7 +31,7 @@ Starts the GitHub App setup flow for the specified organization and app purposes
     {
       "input": {
         "appPurposes": [
-          "AKS_CUSTOM_PRIVATE_DNS_ZONE"
+          "ADVANCED_DIAGNOSTICS"
         ],
         "orgName": "example-string"
       }
@@ -48,7 +48,7 @@ Starts the GitHub App setup flow for the specified organization and app purposes
           "orgAlreadyAdded": true,
           "appSetupInfo": [
             {
-              "appPurpose": "AKS_CUSTOM_PRIVATE_DNS_ZONE",
+              "appPurpose": "ADVANCED_DIAGNOSTICS",
               "appStatus": "INSTALLED",
               "sessionId": "example-string"
             }

@@ -41,7 +41,7 @@ Retrieves the details of the Azure cloud account.
               "customerFeatureId": "00000000-0000-0000-0000-000000000000",
               "feature": "ALL",
               "permissionsGroups": [
-                "AKS_CUSTOM_PRIVATE_DNS_ZONE"
+                "ADVANCED_DIAGNOSTICS"
               ],
               "regions": [
                 "AUSTRALIACENTRAL"

@@ -1,6 +1,6 @@
 # AzureOauthConsentKickoffReply
 
-*No description available.*
+Reply for the Azure OAuth consent kickoff.
 
 ## Fields
 

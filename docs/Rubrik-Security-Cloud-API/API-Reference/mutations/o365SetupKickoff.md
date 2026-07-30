@@ -1,6 +1,6 @@
 # o365SetupKickoff
 
-Kicks off an O365 subscription setup flow.
+O365SetupKickoff starts the first-leg of an O365 OAuth client-secret code flow.
 
 ## Returns
 

@@ -1,6 +1,6 @@
 # RcvConversionType
 
-Rubrik Cloud Vault (RCV) conversion.
+RcvConversion stores information corresponding to a RCV location.
 
 ## Fields
 

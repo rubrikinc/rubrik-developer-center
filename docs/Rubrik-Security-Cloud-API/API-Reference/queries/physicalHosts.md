@@ -46,6 +46,8 @@ Get list of physical hosts.
           isExchangeHost
           isMssqlHost
           isOracleHost
+          isReplica
+          lastSuccessfulUpgradeTime
           name
           nasApiEndpoint
           nasApiHostname
@@ -58,6 +60,7 @@ Get list of physical hosts.
           osType
           rbaPackageUpgradeInfo
           rbsUpgradeStatus
+          rbsVersion
           replicatedObjectCount
           resourceInfo
           slaAssignment

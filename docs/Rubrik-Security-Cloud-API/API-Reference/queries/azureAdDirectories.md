@@ -74,6 +74,7 @@ Lists all Azure AD directories for the account.
           rscPendingObjectPauseAssignment
           slaAssignment
           slaPauseStatus
+          tenantType
         }
         pageInfo {
           hasNextPage

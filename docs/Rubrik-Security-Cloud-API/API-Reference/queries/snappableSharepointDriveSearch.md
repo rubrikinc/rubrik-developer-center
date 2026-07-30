@@ -1,6 +1,6 @@
 # snappableSharepointDriveSearch
 
-*No description available.*
+Returns SharePoint drive folders and files for the given site workload across all snapshots, merged as a single O365OnedriveObject interface list (folders then files).
 
 ## Arguments
 
@@ -8,9 +8,11 @@
 |----------|------|-------------|
 | first | Int | Returns the first n elements from the list. |
 | after | String | Returns the elements in the list that occur after the specified cursor. |
+| last | Int | Returns the last n elements from the list. |
+| before | String | Returns the elements in the list that occur before the specified cursor. |
 | snappableFid *(required)* | [UUID](../types/scalars/UUID.md)! | The FID for the workload. |
 | orgId *(required)* | [UUID](../types/scalars/UUID.md)! | Org UUID. |
-| sharepointDriveSearchFilter | [OnedriveSearchFilter](../types/inputs/OnedriveSearchFilter.md) |  |
+| sharepointDriveSearchFilter | [OnedriveSearchFilter](../types/inputs/OnedriveSearchFilter.md) | Optional SharePoint drive search filter. |
 | siteChildId | String | The site child ID for SharePoint descendant objects. |
 | siteChildType | [SharePointDescendantType](../types/enums/SharePointDescendantType.md) | The site child type for SharePoint descendant objects. |
 

@@ -35,6 +35,7 @@ Retrieve users from current and descendant organizations based on the specified 
           isEmailEnabled
           isHidden
           lastLogin
+          patId
           status
           unreadCount
           username

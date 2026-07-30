@@ -26,6 +26,7 @@ Summary of the given Active Directory domain.
         domainSid
         id
         isArchived
+        isReplica
         name
         numWorkloadDescendants
         objectType

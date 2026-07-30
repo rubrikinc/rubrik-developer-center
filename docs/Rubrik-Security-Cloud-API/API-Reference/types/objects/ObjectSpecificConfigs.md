@@ -17,6 +17,7 @@ Object-specific configurations.
 | gcpCloudSqlConfig | [GcpCloudSqlConfig](GcpCloudSqlConfig.md) | SLA Domain configuration for GCP Cloud SQL object. |
 | informixSlaConfig | [InformixSlaConfig](InformixSlaConfig.md) | SLA Domain configuration for Informix object. |
 | managedVolumeSlaConfig | [ManagedVolumeSlaConfig](ManagedVolumeSlaConfig.md) | SLA Domain configuration for Managed Volume object. |
+| mariadbSlaConfig | [MariadbSlaConfig](MariadbSlaConfig.md) | SLA Domain configuration for MariaDB object. |
 | mongoConfig | [MongoConfig](MongoConfig.md) | SLA Domain configuration for MongoDB database object. |
 | mssqlConfig | [MssqlConfig](MssqlConfig.md) | SLA Domain configuration for SQL Server database object. |
 | mysqldbSlaConfig | [MysqldbSlaConfig](MysqldbSlaConfig.md) | SLA Domain configuration for MySQL object. |

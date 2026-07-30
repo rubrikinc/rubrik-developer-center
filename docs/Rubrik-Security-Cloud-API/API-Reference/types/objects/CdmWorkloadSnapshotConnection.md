@@ -17,3 +17,4 @@ Paginated list of CdmWorkloadSnapshot objects. Each page of the results includes
 
 - [CdmGroupedSnapshot.cdmSnapshots](CdmGroupedSnapshot.md)
 - [MssqlDatabase.cdmSnapshots](MssqlDatabase.md)
+- [PureStorageProtectionGroupV1.cdmSnapshots](PureStorageProtectionGroupV1.md)

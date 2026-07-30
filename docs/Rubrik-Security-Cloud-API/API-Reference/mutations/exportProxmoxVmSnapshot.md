@@ -1,6 +1,6 @@
 # exportProxmoxVmSnapshot
 
-Export a Proxmox virtual machine  Supported in v9.5 Export an Proxmox virtual machine from a snapshot.
+Export a Proxmox virtual machine  Supported in v9.5+ Export an Proxmox virtual machine from a snapshot.
 
 ## Arguments
 

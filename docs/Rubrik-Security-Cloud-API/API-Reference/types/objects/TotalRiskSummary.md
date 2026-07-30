@@ -18,3 +18,4 @@ Total Risk Summary Details.
 
 - [HitsSummary.deltaHitsSummary](HitsSummary.md)
 - [HitsSummary.totalHitsSummary](HitsSummary.md)
+- [SensitiveDataSummary.totalRiskSummary](SensitiveDataSummary.md)

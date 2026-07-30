@@ -4,9 +4,9 @@ This document lists all deprecated fields, queries, mutations, and enum values i
 
 ## Deprecated Fields
 
-*Extracted from schema: 20260601.graphql*
+*Extracted from schema: 20260727.graphql*
 
-**Total deprecated items: 278**
+**Total deprecated items: 298**
 
 ### Deprecated Query Fields
 
@@ -40,8 +40,6 @@ This document lists all deprecated fields, queries, mutations, and enum values i
 - **`taskDetailGroupByConnection`**: This endpoint doesn't provide new data. Use the count field in taskDetailConnection instead
 - **`userGroups`**: Use groupsInCurrentAndDescendantOrganization instead.
 - **`userNotifications`**: This query is deprecated.
-- **`vsphereVMMissedRecoverableRange`**: Deprecated. Use vmwareVmMissedRecoverableRange instead.
-- **`vsphereVMRecoverableRange`**: Deprecated. Use vmwareRecoverableRanges instead.
 
 ### Deprecated Mutation Fields
 
@@ -50,6 +48,7 @@ This document lists all deprecated fields, queries, mutations, and enum values i
 - **`backupO365SharepointDrive`**: Use backupM365SharepointDrive instead.
 - **`backupO365Team`**: Use backupM365Team instead.
 - **`bulkDeleteMongodbSources`**: Use bulkDeleteMongoSources instead.
+- **`cancelTaskchain`**: Endpoint is no longer maintained
 - **`createAutomaticAwsTargetMapping`**: This mutation is deprecated.
 - **`createAutomaticAzureTargetMapping`**: This mutation is deprecated.
 - **`createAutomaticRcsTargetMapping`**: This mutation is deprecated. Please use createRcvLocationsFromTemplate.
@@ -98,6 +97,27 @@ This document lists all deprecated fields, queries, mutations, and enum values i
 
 - **`orgId`**: Deprecated. Refer to organizations.
 - **`orgName`**: Deprecated. Refer to organizations.
+
+#### AdContactMetadata
+
+- **`organisation`**: Use 'company' instead.
+
+#### AdOuMetadata
+
+- **`gposLinked`**: Use linked_gpo_metadata instead.
+
+#### AppAccessGraph
+
+- **`counts`**: Clients can derive these values from per-node counts in `nodes`; kept for one release for backward compatibility.
+- **`userAppAccessData`**: Use `nodes` and `edges` instead; kept for one release for backward compatibility.
+
+#### AppAccessPrincipal
+
+- **`applicationLogoId`**: Use logo_id instead. Will be removed in a future release.
+
+#### AppNode
+
+- **`applicationLogoId`**: Use logo_id instead. Will be removed in a future release.
 
 #### ArchivalSpec
 
@@ -193,6 +213,10 @@ This document lists all deprecated fields, queries, mutations, and enum values i
 - **`isFileIndexingEnabled`**: Deprecated, use fileIndexingStatus instead.
 - **`resourceGroup`**: Deprecated, use azureResourceGroup instead.
 
+#### AzurePostgresFlexibleServer
+
+- **`skuTier`**: Use `computeTier` instead.
+
 #### AzureSqlDatabaseServer
 
 - **`azureNativeResourceGroup`**: Deprecated, use azureResourceGroup instead.
@@ -262,6 +286,7 @@ This document lists all deprecated fields, queries, mutations, and enum values i
 
 #### CdmSnapshot
 
+- **`k8sAppMetadata`**: Deprecated in favor of k8sResourceSummary for resource summaries and the k8sSnapshotResourceObjects connection for per-object listings.
 - **`slaDomain`**: Associating an SLA ID with a snapshot could lead to a wrong idea since if the SLA is edited, then its config would be different from what is being seen
 
 #### CdmTarget
@@ -297,6 +322,16 @@ This document lists all deprecated fields, queries, mutations, and enum values i
 
 - **`configs`**: Deprecated in favor of BYOK8s, use exocomputeConfigs instead.
 
+#### EntraIDGroupMetadataProperties
+
+- **`unprivilegedOwnersNames`**: Replaced by owners field, which includes all owners and their necessary information.
+
+#### EntraIDPrincipalMetadata
+
+- **`appId`**: Use service_principal_properties.app_id instead.
+- **`appName`**: Use the name provided in the principal summary instead.
+- **`owner`**: Use service_principal_properties.app_owners instead.
+
 #### EulaState
 
 - **`isAccepted`**: Use pactsafeEulaState instead.
@@ -328,6 +363,13 @@ This document lists all deprecated fields, queries, mutations, and enum values i
 - **`gcpNativeProject`**: Deprecated, use `gcpProject` instead.
 - **`gcpNativeProjectDetails`**: Deprecated, use gcpProjectDetails instead.
 
+#### GetExotaskImageBundleReply
+
+- **`bundleImages`**: Use AwsImages.bundleImages instead
+- **`bundleVersion`**: Use AwsImages.bundleVersion instead
+- **`eksVersion`**: Use AwsImages.eksVersion instead
+- **`repoUrl`**: Use AwsImages.repoUrl instead
+
 #### GetMfaSettingReply
 
 - **`mandatoryTotpEnforcementDate`**: Deprecated. Query MandatoryTotpGracePeriod instead.
@@ -351,9 +393,17 @@ This document lists all deprecated fields, queries, mutations, and enum values i
 
 - **`identityTags`**: This field is no longer populated. Use the principal summary\nquery instead.
 
+#### IdentityViolationsSummary
+
+- **`identityTags`**: This field is no longer populated. Use the principal summary\nquery instead.
+
 #### IdpClaimAttributeType
 
 - **`type`**: type is deprecated, use attributeType instead.
+
+#### LinkedGpoMetadata
+
+- **`managedBy`**: AD GPO don't have managed by attribute.
 
 #### M365BackupStorageGroup
 
@@ -401,6 +451,10 @@ This document lists all deprecated fields, queries, mutations, and enum values i
 
 - **`migrationStatus`**: Use bli_migration_status instead.
 - **`migrationUnavailabilityReason`**: Use bli_migration_unavailability_reason instead.
+
+#### RcvEntitlement
+
+- **`bundle`**: Use tier and redundancy fields instead.
 
 #### RemediationMetadata
 
@@ -461,8 +515,8 @@ This document lists all deprecated fields, queries, mutations, and enum values i
 
 #### RubrikManagedS3CompatibleTarget
 
-- **`ibmDetails`**: Deprecated: please use ibmDetail instead.
-- **`immutabilitySettings`**: Deprecated: please use immutabilitySetting instead.
+- **`ibmDetails`**: Use ibmDetail instead.
+- **`immutabilitySettings`**: Use immutabilitySetting instead.
 - **`isComplianceImmutabilitySupported`**: Compliance Retention Lock is no longer supported.
 
 #### RubrikManagedTapeTargetType
@@ -476,6 +530,11 @@ This document lists all deprecated fields, queries, mutations, and enum values i
 #### SelfServicePermission
 
 - **`inventoryRoot`**: Use hierarchyRoot field instead.
+
+#### SensitiveDataSummaryBreakdown
+
+- **`dataCategories`**: Use dataCategoryStats instead.
+- **`dataTypes`**: Use dataTypeStats instead.
 
 #### Snappable
 
@@ -554,8 +613,9 @@ This document lists all deprecated fields, queries, mutations, and enum values i
 - **`IDENTITY_PROVIDER_SECURITY`**: Use CATEGORY_UNSPECIFIED instead.
 - **`IDENTITY_PROVIDER_SECURITY`**: Use IDENTITY_HYGIENE instead.
 - **`IDENTITY_PROVIDER_SECURITY`**: Use IDENTITY_PROVIDER_SECURITY instead.
-- **`IDENTITY_RISKS`**: Use LATEST_GLOBAL_OBJECTS instead.
+- **`IDENTITY_SEGMENTATION_AUDIT`**: Use LATEST_GLOBAL_OBJECTS instead.
 - **`INITIALIZING_METADATA`**: INITIALIZING_REPORTS is deprecated.
+- **`INSTANCE`**: We don't support promotion based recovery.
 - **`IN_PROGRESS`**: No longer applicable.
 - **`ISILON`**: Use FSXN (AWS FSx for NetApp ONTAP) or other specific vendor types instead of NETAPP.
 - **`IS_ARCHIVAL_COPY`**: A snapshot can potentially be uploaded to multiple archival locations. This field does not give the archival status of the snapshot - whether it is uploaded to all the archival locations or partially uploaded to a few locations. Hence, this filter field is deprecated and would be removed subsequently. Please use a combination of ARCHIVAL_LOCATION_IDS and SOURCE_SNAPSHOT_IDS fields instead.
@@ -570,11 +630,10 @@ This document lists all deprecated fields, queries, mutations, and enum values i
 - **`PURE_STORAGE_VOLUME`**: RECOVERY_PLAN is deprecated and no longer used.
 - **`RDS_AWS_NATIVE_ACCOUNT_ID`**: There is no concept of SLA ID on a snapshot. SLA is assigned to an object and snapshots are taken based on the configuration of the SLA Domain at that point of time. However, SLA configurations may change at a later point in time, without reflecting the change on the snapshot, if not retroactively assigned. Hence, this filter field is deprecated and would be removed subsequently.
 - **`REMEDIATION_TYPE_IDP_EVENT_REVERT`**: Use REMEDIATION_TYPE_REMEDIATE_ENTRA_ID_RISK instead.
-- **`RUBRIK_NATIVE_HAS_UNINDEXED_OR_EXPIRED_SNAPSHOT`**: use `SAASAPPS_ORGANIZATION_SCOPE` instead.
+- **`SAASAPPS_IS_HIDDEN`**: use `SAASAPPS_ORGANIZATION_SCOPE` instead.
 - **`SECURITY_IDENTITY_DEPARTMENT`**: Use SECURITY_IDENTITY_DIRECT_DESCENDANT_COUNT instead.
 - **`SECURITY_IDENTITY_EVENT_TITLE`**: Use SECURITY_IDENTITY_EVENT_TITLE instead.
 - **`SIGNIN_LOGS`**: Use SLA_AUDIT_DETAIL_NG instead.
-- **`SINGLE_ZONE`**: Use REDUNDANCY_UNKNOWN instead.
 - **`SLA_AUDIT_DETAIL_NG`**: Use SLA_AUDIT_LIST_NG instead.
 - **`SLA_AUDIT_LIST_NG`**: Use LATEST_GLOBAL_OBJECTS instead.
 - **`TOP_LEVEL_SITES_OF_O365_ORG`**: Not implemented - no longer used.

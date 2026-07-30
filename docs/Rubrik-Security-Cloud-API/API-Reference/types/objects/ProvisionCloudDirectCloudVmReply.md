@@ -9,6 +9,7 @@ Response containing provisioning details for a NAS Cloud Direct virtual machine.
 | cloudProvider | [CloudDirectCloudProvider](../enums/CloudDirectCloudProvider.md)! | Cloud provider for the virtual machine provisioning. |
 | cloudRegion | String! | Cloud region for virtual machine provisioning. |
 | imageId | String! | Cloud provider-specific image identifier for the virtual machine. |
+| projectId | String! | The GCP project hosting the image. Only set when cloudProvider is GCP. GCP images are region-agnostic, so cloudRegion and regionImageIds are empty for GCP responses. |
 | regionImageIds | [[RegionImageIdEntry](RegionImageIdEntry.md)!]! | Maps cloud region to image ID. Single entry returned when a specific region is requested. All available regions returned when no specific region is requested. |
 | userData | String! | Enrollment data for the NAS Cloud Direct virtual machine encoded as JSON. |
 

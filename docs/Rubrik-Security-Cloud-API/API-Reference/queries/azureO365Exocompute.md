@@ -1,13 +1,13 @@
 # azureO365Exocompute
 
-Gets the exocompute details of the given cluster.
+GetAzureO365Exocompute returns the details of the specified Exocluster.
 
 ## Arguments
 
 | Argument | Type | Description |
 |----------|------|-------------|
 | orgId *(required)* | [UUID](../types/scalars/UUID.md)! | Org UUID. |
-| exocomputeClusterId *(required)* | String! |  |
+| exocomputeClusterId *(required)* | String! | The ID of the exocompute cluster. |
 
 ## Returns
 

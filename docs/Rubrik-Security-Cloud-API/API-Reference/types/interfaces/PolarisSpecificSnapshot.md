@@ -1,6 +1,6 @@
 # PolarisSpecificSnapshot
 
-Rubrik-specific information about snapshots of specific object types. Currently, this is only valid for Azure virtual machine, Azure storage account, AWS EC2, AWS S3, GCP GCE instance, GCP Cloud SQL instance, and SaaS snapshots.
+Rubrik-specific information about snapshots of specific object types. Currently, this is only valid for Azure virtual machine, Azure storage account, AWS EC2, AWS S3, GCP GCE instance, GCP Cloud SQL instance, SaaS, and Okta tenant snapshots.
 
 ## Fields
 
@@ -14,10 +14,13 @@ Rubrik-specific information about snapshots of specific object types. Currently,
 - [AwsNativeS3SpecificSnapshot](../objects/AwsNativeS3SpecificSnapshot.md)
 - [AzureNativeStorageAccountSpecificSnapshot](../objects/AzureNativeStorageAccountSpecificSnapshot.md)
 - [AzureNativeVmSpecificSnapshot](../objects/AzureNativeVmSpecificSnapshot.md)
+- [AzurePostgresFlexibleServerSpecificSnapshot](../objects/AzurePostgresFlexibleServerSpecificSnapshot.md)
 - [AzureSqlDatabaseDbSpecificSnapshot](../objects/AzureSqlDatabaseDbSpecificSnapshot.md)
 - [AzureSqlManagedInstanceDbSpecificSnapshot](../objects/AzureSqlManagedInstanceDbSpecificSnapshot.md)
+- [GcpBigQueryDatasetSpecificSnapshot](../objects/GcpBigQueryDatasetSpecificSnapshot.md)
 - [GcpNativeCloudSqlSpecificSnapshot](../objects/GcpNativeCloudSqlSpecificSnapshot.md)
 - [GcpNativeGceInstanceSpecificSnapshot](../objects/GcpNativeGceInstanceSpecificSnapshot.md)
 - [IcebergTableSpecificSnapshot](../objects/IcebergTableSpecificSnapshot.md)
 - [O365SiteSpecificSnapshot](../objects/O365SiteSpecificSnapshot.md)
+- [OktaTenantSpecificSnapshot](../objects/OktaTenantSpecificSnapshot.md)
 - [SaasSnapshot](../objects/SaasSnapshot.md)

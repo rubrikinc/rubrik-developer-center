@@ -27,6 +27,7 @@ Details of a SLA Managed Volume object.
         clientNamePatterns
         id
         isRelic
+        isReplica
         lastResetReason
         managedVolumeType
         mountState

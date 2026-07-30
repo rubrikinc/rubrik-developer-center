@@ -8,8 +8,9 @@ Parameters for Teams conversations search.
 |-------|------|-------------|
 | channelNaturalId | String |  |
 | convId | String |  |
-| fetchAllPostSenders | String | Specifies whether to send post senders. |
+| fetchAllPostSenders | String | Specifies whether to retrieve the full list of post-senders. |
 | includeArchived | Boolean | Specifies whether to include archived conversations. |
+| itemId | String | Optional: filter to a single object by its M365 item ID. Empty or unset = no filter. |
 | lambdaFilters | [LambdaPathFilters](LambdaPathFilters.md) | Parameters for using Lambda filters in the query. |
 | parentId | String |  |
 | postedBy | String |  |

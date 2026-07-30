@@ -50,7 +50,8 @@ End Managed Volume snapshot  Supported in v7.0+ Close a Managed Volume for write
             "startTime": "2024-01-01T00:00:00.000Z"
           },
           "managedVolumeSnapshotSummary": {
-            "isQueuedSnapshot": true
+            "isQueuedSnapshot": true,
+            "isTlsEnabledAtSnapshot": true
           }
         }
       }

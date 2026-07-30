@@ -46,6 +46,7 @@ Returns the RSC snapshot according to ID.
         isReplica
         isReplicated
         isRetentionLocked
+        isSnapshotSearchable
         isUnindexable
         parentSnapshotId
         retentionLockModeAcrossLocations

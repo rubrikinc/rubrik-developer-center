@@ -40,6 +40,7 @@ Paginated list of Microsoft SQL Databases.
           isMount
           isOnline
           isRelic
+          isReplica
           logBackupFrequencyInSeconds
           logBackupRetentionInHours
           name

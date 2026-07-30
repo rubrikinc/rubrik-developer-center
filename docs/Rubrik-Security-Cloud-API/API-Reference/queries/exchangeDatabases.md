@@ -31,6 +31,7 @@ Connection of filtered Exchange Databases based on specific filters.
           cdmPendingObjectPauseAssignment
           id
           isRelic
+          isReplica
           name
           numWorkloadDescendants
           objectType

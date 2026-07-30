@@ -64,6 +64,7 @@ Principal type for risk summary.
 | SYSTEM_IDENTITY | Principal representing an objectless system identity. |
 | TERMS_OF_USE | Principal of the terms of use type. |
 | TRUSTED_DOMAIN | Principal of the trusted domain type. |
+| UNIDENTIFIED | Principal that could not be matched to a known identity (unidentified target on a third-party alert). |
 | UNKNOWN | Principal of the unknown type. |
 | USER | Principal of the user type. |
 | VOLUME | Principal of the volume type. |

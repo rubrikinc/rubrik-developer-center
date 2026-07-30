@@ -22,6 +22,7 @@ ProvisionCloudDirectCloudVm provisions a NAS Cloud Direct virtual machine in a p
         cloudProvider
         cloudRegion
         imageId
+        projectId
         userData
       }
     }
@@ -47,6 +48,7 @@ ProvisionCloudDirectCloudVm provisions a NAS Cloud Direct virtual machine in a p
           "cloudProvider": "CLOUD_DIRECT_CLOUD_PROVIDER_AWS",
           "cloudRegion": "example-string",
           "imageId": "example-string",
+          "projectId": "example-string",
           "userData": "example-string",
           "regionImageIds": [
             {

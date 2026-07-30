@@ -1,17 +1,21 @@
 # userFileActivityTimeline
 
-*No description available.*
+Returns a paginated timeline of a single user's access activity on a specific file, bucketed by the requested time granularity.
 
 ## Arguments
 
 | Argument | Type | Description |
 |----------|------|-------------|
-| userId *(required)* | String! |  |
-| resource | [ResourceInput](../types/inputs/ResourceInput.md) |  |
-| nativePath *(required)* | String! |  |
-| startDay *(required)* | String! | Start time, in string format (YYYY-MM-DD). |
-| timezone *(required)* | String! | The timezone in which to display timestamps. |
-| timeGranularity *(required)* | [TimeGranularity](../types/enums/TimeGranularity.md)! |  |
+| first | Int | Returns the first n elements from the list. |
+| after | String | Returns the elements in the list that occur after the specified cursor. |
+| last | Int | Returns the last n elements from the list. |
+| before | String | Returns the elements in the list that occur before the specified cursor. |
+| userId *(required)* | String! | Stable identifier of the user. |
+| resource | [ResourceInput](../types/inputs/ResourceInput.md) | Snapshot identifier of the workload containing the file. Optional; when absent the latest available snapshot is used. |
+| nativePath *(required)* | String! | Native (filesystem-relative) path of the file. |
+| startDay *(required)* | String! | Day to anchor the timeline window, in YYYY-MM-DD format. |
+| timezone *(required)* | String! | Official IANA timezone name. |
+| timeGranularity *(required)* | [TimeGranularity](../types/enums/TimeGranularity.md)! | Time-bucket granularity for the returned timeline entries. |
 
 ## Returns
 
@@ -29,6 +33,7 @@
         startDay: $startDay
         timezone: $timezone
         timeGranularity: $timeGranularity
+        first: 10
       ) {
         nodes {
           day

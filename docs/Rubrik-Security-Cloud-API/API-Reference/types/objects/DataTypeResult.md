@@ -13,4 +13,6 @@ DataTypeResult represents the result for a specific data type.
 
 **Referenced by**
 
+- [AnalyzedColumn.columnDatatypeResults](AnalyzedColumn.md)
 - [PolicyObj.dataTypeResults](PolicyObj.md)
+- [PrincipalSummary.dataTypeResults](PrincipalSummary.md)

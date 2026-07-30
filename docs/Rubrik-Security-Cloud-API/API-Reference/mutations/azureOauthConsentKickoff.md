@@ -1,6 +1,6 @@
 # azureOauthConsentKickoff
 
-Kicks off an OAuth consent flow for Azure resource access.
+AzureOAuthConsentKickoff starts the first-leg of an Azure OAuth authorization code flow.
 
 ## Returns
 

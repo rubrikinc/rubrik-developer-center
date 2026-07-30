@@ -18,6 +18,7 @@ Specific info for AWS Target Template.
 | kmsMasterKeyId | String | AWS target KMS master key ID. |
 | proxySettings | [ProxySettings](ProxySettings.md) | AWS target proxy settings. |
 | region | [AwsRegion](../enums/AwsRegion.md)! | AWS target region. |
+| sourceWorkloadCloud | [SourceWorkloadCloud](../enums/SourceWorkloadCloud.md) | Specifies the source workload cloud of this template. This field is optional. |
 | storageClass | [AwsStorageClass](../enums/AwsStorageClass.md)! | AWS target storage class. |
 | targetType | [TargetType](../enums/TargetType.md)! | The type of this Target. |
 | templateLocationId | [UUID](../scalars/UUID.md)! | The internal ID of the template archival location. |

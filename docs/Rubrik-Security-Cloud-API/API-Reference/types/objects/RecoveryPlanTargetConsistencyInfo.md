@@ -14,3 +14,4 @@ Target consistency information for a recovery plan.
 **Referenced by**
 
 - [RecoveryPlanBasicInfo.targetConsistencyInfo](RecoveryPlanBasicInfo.md)
+- [RecoveryPlanV2.targetConsistencyInfo](RecoveryPlanV2.md)

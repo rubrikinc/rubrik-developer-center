@@ -15,4 +15,5 @@ RemediationAvailability provides details about the availability of a particular 
 **Referenced by**
 
 - [ActivityEntry.remediationTypes](ActivityEntry.md)
+- [GetRemediationTypesType.remediations](GetRemediationTypesType.md)
 - [PolicyViolation.possibleRemediationsForViolationTarget](PolicyViolation.md)

@@ -25,6 +25,7 @@ Details of the given category value.
         cdmPendingObjectPauseAssignment
         duplicateObjectsAbsoluteCount
         id
+        isReplica
         name
         numWorkloadDescendants
         objectType

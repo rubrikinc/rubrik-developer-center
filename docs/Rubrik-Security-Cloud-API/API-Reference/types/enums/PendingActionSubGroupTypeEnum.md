@@ -41,8 +41,13 @@ The specific subgroup type that defines the exact operation to be performed with
 | LCK_LOCATION_READER_POST | The subgroup type of the pending action is for creating LCK reader archival location. |
 | NFS_LOCATION_PUT | Creates or updates an NFS archival location. |
 | NFS_LOCATION_READER_POST | Creates a reader for NFS archival location. |
+| OBJECT_BACKUP_WINDOW_SYNC | Subgroup used to sync a per-object backup-window override to CDM. |
 | OBJECT_STORE_LOCATION_PUT | Creates or updates an object store archival location. |
 | OBJECT_STORE_LOCATION_READER_POST | Creates a reader for object store archival location. |
+| PERSONAL_ACCESS_TOKEN_DELETE | Subgroup used to delete personal access token from CDM. |
+| PERSONAL_ACCESS_TOKEN_SYNC | Subgroup used to sync a personal access token to CDM. |
+| QAUTH_POLICY_CDM_DELETE | Subgroup used to delete a QAuth policy block-list from CDM. |
+| QAUTH_POLICY_CDM_PUT | Subgroup used to put a QAuth policy block-list to CDM. |
 | QSTAR_LOCATION_PUT | The subgroup type of the pending action is forput of Q-star location. |
 | QSTAR_LOCATION_READER_POST | The subgroup type of the pending action is forcreate of reader of Q=star location. |
 | REVOKE_AUTHZ | Subgroup used for revoking authorization to the CDM role using RSC. |

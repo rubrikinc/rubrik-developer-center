@@ -16,6 +16,7 @@ A managed hierarchy protected objects.
 | effectiveSlaDomain | [SlaDomain](SlaDomain.md)! | Effective SLA Domain of the hierarchy object. |
 | effectiveSlaSourceObject | [PathNode](../objects/PathNode.md) | Path node of the effective SLA Domain source. |
 | id | [UUID](../scalars/UUID.md)! | ID of the hierarchy object. |
+| isReplica | Boolean | True if this object is a replica, its current cluster differs from its source (primary) cluster. False if the object resides on its source cluster. Null when the source cluster is unknown. |
 | logicalPath | [[PathNode](../objects/PathNode.md)!]! | Sequential list of the logical ancestors of this object. |
 | missedSnapshotConnection | [MissedSnapshotCommonConnection](../objects/MissedSnapshotCommonConnection.md) | The list of missed snapshots for this workload. |
 | missedSnapshotGroupByConnection | [MissedSnapshotGroupByConnection](../objects/MissedSnapshotGroupByConnection.md) | The list of missed snapshots for this workload. |
@@ -25,6 +26,7 @@ A managed hierarchy protected objects.
 | newestReplicatedSnapshot | [CdmSnapshot](../objects/CdmSnapshot.md) | The newest snapshot replicated to a cluster. |
 | newestSnapshot | [CdmSnapshot](../objects/CdmSnapshot.md) | The most recent snapshot of this workload. |
 | numWorkloadDescendants | Int! | Number of descendant workloads of this object. |
+| objectBackupWindow | [ObjectBackupWindowStatus](../objects/ObjectBackupWindowStatus.md) | Object-level backup window status of the hierarchy object. |
 | objectPauseStatus | [ObjectPauseStatus](../objects/ObjectPauseStatus.md) | Pause status of the hierarchy object. |
 | objectType | [HierarchyObjectTypeEnum](../enums/HierarchyObjectTypeEnum.md)! | Type of this object. |
 | oldestSnapshot | [CdmSnapshot](../objects/CdmSnapshot.md) | The oldest snapshot of this workload. |
@@ -45,6 +47,8 @@ A managed hierarchy protected objects.
 |-------|----------|------|-------------|
 | missedSnapshotConnection | first | Int | Returns the first n elements from the list. |
 | missedSnapshotConnection | after | String | Returns the elements in the list that occur after the specified cursor. |
+| missedSnapshotConnection | last | Int | Returns the last n elements from the list. |
+| missedSnapshotConnection | before | String | Returns the elements in the list that occur before the specified cursor. |
 | missedSnapshotConnection | filter | [MissedSnapshotFilterInput](../inputs/MissedSnapshotFilterInput.md) | Filter missed snapshots by date. |
 | missedSnapshotGroupByConnection | first | Int | Returns the first n elements from the list. |
 | missedSnapshotGroupByConnection | after | String | Returns the elements in the list that occur after the specified cursor. |
@@ -102,6 +106,8 @@ A managed hierarchy protected objects.
 - [NutanixVm](../objects/NutanixVm.md)
 - [OracleDataGuardGroup](../objects/OracleDataGuardGroup.md)
 - [OracleDatabase](../objects/OracleDatabase.md)
+- [PureStorageProtectionGroupV1](../objects/PureStorageProtectionGroupV1.md)
+- [PureStorageVolumeV1](../objects/PureStorageVolumeV1.md)
 - [SapHanaDatabase](../objects/SapHanaDatabase.md)
 - [SapHanaSystem](../objects/SapHanaSystem.md)
 - [ShareFileset](../objects/ShareFileset.md)

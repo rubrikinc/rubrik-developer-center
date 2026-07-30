@@ -28,6 +28,7 @@ Paginated list of the highest-level vCloud Director objects accessible by the cu
           authorizedOperations
           cdmPendingObjectPauseAssignment
           id
+          isReplica
           name
           numWorkloadDescendants
           objectType

@@ -28,6 +28,7 @@ Paginated list of the highest-level NAS Objects accessible by the current user.
           authorizedOperations
           cdmPendingObjectPauseAssignment
           id
+          isReplica
           name
           numWorkloadDescendants
           objectType

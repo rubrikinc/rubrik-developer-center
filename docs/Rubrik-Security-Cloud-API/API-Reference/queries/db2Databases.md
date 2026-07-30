@@ -25,6 +25,7 @@ Connection of filtered db2 databases based on specific filters.
       db2Databases(first: 10) {
         nodes {
           authorizedOperations
+          backupCompressionLibraryPath
           backupParallelism
           backupSessions
           backupTriggerType
@@ -33,7 +34,9 @@ Connection of filtered db2 databases based on specific filters.
           cdmPendingObjectPauseAssignment
           db2DbType
           id
+          isBackupCompressionEnabled
           isRelic
+          isReplica
           lastSyncTime
           logBackupThreshold
           name
@@ -74,11 +77,11 @@ Connection of filtered db2 databases based on specific filters.
                 "authorizedOperations": [
                   "ACCESS_CDM_CLUSTER"
                 ],
+                "backupCompressionLibraryPath": "example-string",
                 "backupParallelism": 0,
                 "backupSessions": 0,
                 "backupTriggerType": "BACKUP_TRIGGER_TYPE_CUSTOMER_MANAGED",
-                "cdmId": "example-string",
-                "cdmLink": "example-string"
+                "cdmId": "example-string"
               }
             ]
           ],

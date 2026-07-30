@@ -34,7 +34,7 @@ Retrieves the configuration consisting of role permissions and feature policy ve
     {
       "feature": "ALL",
       "permissionsGroups": [
-        "AKS_CUSTOM_PRIVATE_DNS_ZONE"
+        "ADVANCED_DIAGNOSTICS"
       ]
     }
     ```
@@ -48,7 +48,8 @@ Retrieves the configuration consisting of role permissions and feature policy ve
           "permissionVersion": 0,
           "permissionsGroupVersions": [
             {
-              "permissionsGroup": "AKS_CUSTOM_PRIVATE_DNS_ZONE",
+              "deltaMigrated": true,
+              "permissionsGroup": "ADVANCED_DIAGNOSTICS",
               "version": 0
             }
           ],

@@ -7,6 +7,7 @@ Unmanaged objects sort type Enum.
 | Value | Description |
 |-------|-------------|
 | ARCHIVAL_STORAGE | Archival storage. |
+| DOWNLOADED_STORAGE | Downloaded storage. |
 | LOCAL_STORAGE | Local storage. |
 | LOCATION | Location. |
 | NAME | Object name. |

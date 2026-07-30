@@ -26,6 +26,7 @@ Details of a PostgreSQL database cluster for a given FID.
         clusterMode
         id
         isRelic
+        isReplica
         name
         numWorkloadDescendants
         objectType

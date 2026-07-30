@@ -1,6 +1,6 @@
 # o365SaaSSetupKickoff
 
-*No description available.*
+O365SaaSSetupKickoff starts the first-leg of an O365 OAuth client-secret code flow for the fully hosted solution.
 
 ## Returns
 

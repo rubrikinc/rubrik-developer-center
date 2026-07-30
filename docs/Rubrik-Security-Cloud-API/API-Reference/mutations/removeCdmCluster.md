@@ -1,13 +1,13 @@
 # removeCdmCluster
 
-*No description available.*
+Removes a registered Rubrik cluster from the account.
 
 ## Arguments
 
 | Argument | Type | Description |
 |----------|------|-------------|
 | clusterUUID *(required)* | [UUID](../types/scalars/UUID.md)! | UUID of the Rubrik cluster. |
-| isForce *(required)* | Boolean! |  |
+| isForce *(required)* | Boolean! | Whether to force the removal of the Rubrik cluster. |
 | expireInDays | [Long](../types/scalars/Long.md) | Number of days after which data from Rubrik is removed. |
 
 ## Returns

@@ -8,6 +8,8 @@ Lists the Microsoft 365 backup storage object restore points.
 |----------|------|-------------|
 | first | Int | Returns the first n elements from the list. |
 | after | String | Returns the elements in the list that occur after the specified cursor. |
+| last | Int | Returns the last n elements from the list. |
+| before | String | Returns the elements in the list that occur before the specified cursor. |
 | m365BackupStorageObjectRestorePointsInput *(required)* | [M365BackupStorageObjectRestorePointsInput](../types/inputs/M365BackupStorageObjectRestorePointsInput.md)! | The input to list Microsoft 365 Backup Storage restore points. |
 
 ## Returns

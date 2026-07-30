@@ -49,7 +49,7 @@ Set risk for analyzers.
               "dictionaryCsv": "example-string",
               "excludeFieldNamePattern": "example-string",
               "excludePathPattern": "example-string",
-              "id": "example-string"
+              "excludeValueRegex": "example-string"
             }
           ]
         }

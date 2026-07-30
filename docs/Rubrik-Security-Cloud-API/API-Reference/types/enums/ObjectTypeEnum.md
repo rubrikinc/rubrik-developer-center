@@ -58,6 +58,7 @@ ObjectTypeEnum covering all Rubrik cluster and RSC workload types.
 | M365_BACKUP_STORAGE_MAILBOX | M365 Backup Storage Mailbox. |
 | M365_BACKUP_STORAGE_ONEDRIVE | M365 Backup Storage Onedrive. |
 | M365_BACKUP_STORAGE_SITE | M365 Backup Storage Sharepoint Site. |
+| MARIADB_INSTANCE | MariaDB Instance. |
 | MONGODB_COLLECTION | MongoDB Collection. |
 | MONGODB_DATABASE | MongoDB Database. |
 | MONGODB_SOURCE | MongoDB Source Cluster. |
@@ -86,10 +87,21 @@ ObjectTypeEnum covering all Rubrik cluster and RSC workload types.
 | OracleDatabase | Oracle database. |
 | PING_FEDERATE_CLUSTER | Ping Federate cluster. |
 | POSTGRES_DB_CLUSTER | Postgres Database Cluster. |
+| POWER_PLATFORM_AI_FLOW | Microsoft Power Platform AI flow. |
+| POWER_PLATFORM_BUSINESS_PROCESS_FLOW | Microsoft Power Platform business process flow. |
+| POWER_PLATFORM_BUSINESS_RULE | Microsoft Power Platform business rule. |
+| POWER_PLATFORM_CANVAS_APP | Microsoft Power Platform canvas app. |
+| POWER_PLATFORM_CLASSIC_WORKFLOW | Microsoft Power Platform classic workflow. |
+| POWER_PLATFORM_CLOUD_FLOW | Microsoft Power Platform cloud flow. |
+| POWER_PLATFORM_CUSTOM_ACTION | Microsoft Power Platform custom action. |
+| POWER_PLATFORM_DESKTOP_FLOW | Microsoft Power Platform desktop flow. |
+| POWER_PLATFORM_DIALOG | Microsoft Power Platform dialog. |
+| POWER_PLATFORM_MODEL_DRIVEN_APP | Microsoft Power Platform model-driven app. |
 | PROXMOX_VIRTUAL_MACHINE | Proxmox Virtual Machine. |
 | PURE_STORAGE_PROTECTION_GROUP | Pure Storage protection group. |
 | RubrikEbsVolume | Rubrik EBS volume. |
 | RubrikEc2Instance | Rubrik EC2 instance. |
+| S3_TABLES_ICEBERG_TABLE | S3 Tables Iceberg table. |
 | SALESFORCE_FIXED_OBJECT | Salesforce metadata. |
 | SALESFORCE_OBJECT | Salesforce object. |
 | SAP_HANA_SYSTEM | SAP HANA System. |

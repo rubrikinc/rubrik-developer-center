@@ -24,12 +24,14 @@ Db2 Instance details object.
 | hosts | [[CdmLightweightHost](CdmLightweightHost.md)!]! | List of hosts associated with the Db2 instance. |
 | id | [UUID](../scalars/UUID.md)! | ID of the hierarchy object. |
 | instanceType | [Db2InstanceType](../enums/Db2InstanceType.md)! | Type of Db2 instance: STANDALONE, PARTITIONED, PURESCALE, or UNSPECIFIED. |
+| isReplica | Boolean | True if this object is a replica, its current cluster differs from its source (primary) cluster. False if the object resides on its source cluster. Null when the source cluster is unknown. |
 | lastRefreshTime | [DateTime](../scalars/DateTime.md) | Timestamp when last refresh job got triggered for the Db2 instance. |
 | lastSyncTime | [DateTime](../scalars/DateTime.md) | Time stamp of when last metadata sync happened for the Db2 instance. |
 | latestUserNote | [LatestUserNote](LatestUserNote.md) | Latest user note information. |
 | logicalPath | [[PathNode](PathNode.md)!]! | Sequential list of the logical ancestors of this object. |
 | name | String! | Name of the hierarchy object. |
 | numWorkloadDescendants | Int! | Number of descendant workloads of this object. |
+| objectBackupWindow | [ObjectBackupWindowStatus](ObjectBackupWindowStatus.md) | Object-level backup window status of the hierarchy object. |
 | objectPauseStatus | [ObjectPauseStatus](ObjectPauseStatus.md) | Pause status of the hierarchy object. |
 | objectType | [HierarchyObjectTypeEnum](../enums/HierarchyObjectTypeEnum.md)! | Type of this object. |
 | pendingObjectDeletionStatus | [PendingSnapshotsOfObjectDeletion](PendingSnapshotsOfObjectDeletion.md) | Mapping from object ID to pending object deletion status. |

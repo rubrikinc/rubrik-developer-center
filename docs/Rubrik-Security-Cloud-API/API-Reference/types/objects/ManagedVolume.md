@@ -28,6 +28,7 @@ Managed Volume information.
 | hostDetail | [ManagedVolumeHostDetail](ManagedVolumeHostDetail.md) | Specifies host details for the SLA Managed Volume. |
 | id | [UUID](../scalars/UUID.md)! | ID of the hierarchy object. |
 | isRelic | Boolean! | If the managed volume is in relic state. |
+| isReplica | Boolean | True if this object is a replica, its current cluster differs from its source (primary) cluster. False if the object resides on its source cluster. Null when the source cluster is unknown. |
 | lastResetReason | String | The reason for the last reset of the Managed Volume. |
 | latestUserNote | [LatestUserNote](LatestUserNote.md) | Latest user note information. |
 | liveMounts | [ManagedVolumeMountConnection](ManagedVolumeMountConnection.md)! | Paginated list of Live Mounts for Managed Volume. |
@@ -45,6 +46,7 @@ Managed Volume information.
 | nfsSettings | [ManagedVolumeNfsSettings](ManagedVolumeNFSSettings.md) | NFS settings and configurations for the Managed Volume. |
 | numChannels | Int! | Number of channels in the Managed Volume. |
 | numWorkloadDescendants | Int! | Number of descendant workloads of this object. |
+| objectBackupWindow | [ObjectBackupWindowStatus](ObjectBackupWindowStatus.md) | Object-level backup window status of the hierarchy object. |
 | objectPauseStatus | [ObjectPauseStatus](ObjectPauseStatus.md) | Pause status of the hierarchy object. |
 | objectType | [HierarchyObjectTypeEnum](../enums/HierarchyObjectTypeEnum.md)! | Type of this object. |
 | oldestSnapshot | [CdmSnapshot](CdmSnapshot.md) | The oldest snapshot of this workload. |
@@ -92,6 +94,8 @@ Managed Volume information.
 | liveMounts | filter | [[Filter](../inputs/Filter.md)!] | Hierarchy object filter. |
 | missedSnapshotConnection | first | Int | Returns the first n elements from the list. |
 | missedSnapshotConnection | after | String | Returns the elements in the list that occur after the specified cursor. |
+| missedSnapshotConnection | last | Int | Returns the last n elements from the list. |
+| missedSnapshotConnection | before | String | Returns the elements in the list that occur before the specified cursor. |
 | missedSnapshotConnection | filter | [MissedSnapshotFilterInput](../inputs/MissedSnapshotFilterInput.md) | Filter missed snapshots by date. |
 | missedSnapshotGroupByConnection | first | Int | Returns the first n elements from the list. |
 | missedSnapshotGroupByConnection | after | String | Returns the elements in the list that occur after the specified cursor. |

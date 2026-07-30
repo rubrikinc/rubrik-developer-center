@@ -39,7 +39,7 @@ Returns objects that have already been assigned to existing orgs.
           "objectIds": [
             "example-string"
           ],
-          "snappableType": "AWS_NATIVE_CONFIG"
+          "snappableType": "AUTH0_TENANT"
         }
       ],
       "allowedClusters": [
@@ -58,7 +58,7 @@ Returns objects that have already been assigned to existing orgs.
             "objectIds": [
               "example-string"
             ],
-            "snappableType": "AWS_NATIVE_CONFIG"
+            "snappableType": "AUTH0_TENANT"
           }
         ]
       }

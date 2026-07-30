@@ -33,6 +33,7 @@ Summary of all FusionCompute hosts.
           hostName
           id
           ipAddresses
+          isReplica
           name
           numWorkloadDescendants
           objectType

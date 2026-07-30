@@ -16,6 +16,7 @@ A generic hierarchy protected objects.
 | logicalPath | [[PathNode](../objects/PathNode.md)!]! | Sequential list of the logical ancestors of this object. |
 | name | String! | Name of the hierarchy object. |
 | numWorkloadDescendants | Int! | Number of descendant workloads of this object. |
+| objectBackupWindow | [ObjectBackupWindowStatus](../objects/ObjectBackupWindowStatus.md) | Object-level backup window status of the hierarchy object. |
 | objectPauseStatus | [ObjectPauseStatus](../objects/ObjectPauseStatus.md) | Pause status of the hierarchy object. |
 | objectType | [HierarchyObjectTypeEnum](../enums/HierarchyObjectTypeEnum.md)! | Type of this object. |
 | physicalPath | [[PathNode](../objects/PathNode.md)!]! | Sequential list of the physical ancestors of this object. |
@@ -47,6 +48,7 @@ A generic hierarchy protected objects.
 - [AzureDevOpsRepository](../objects/AzureDevOpsRepository.md)
 - [AzureNativeManagedDisk](../objects/AzureNativeManagedDisk.md)
 - [AzureNativeVirtualMachine](../objects/AzureNativeVirtualMachine.md)
+- [AzurePostgresFlexibleServer](../objects/AzurePostgresFlexibleServer.md)
 - [AzureSqlDatabaseDb](../objects/AzureSqlDatabaseDb.md)
 - [AzureSqlManagedInstanceDatabase](../objects/AzureSqlManagedInstanceDatabase.md)
 - [AzureStorageAccount](../objects/AzureStorageAccount.md)
@@ -80,6 +82,9 @@ A generic hierarchy protected objects.
 - [O365Teams](../objects/O365Teams.md)
 - [OracleDataGuardGroup](../objects/OracleDataGuardGroup.md)
 - [OracleDatabase](../objects/OracleDatabase.md)
+- [PureStorageProtectionGroupV1](../objects/PureStorageProtectionGroupV1.md)
+- [PureStorageVolumeV1](../objects/PureStorageVolumeV1.md)
+- [S3TablesIcebergTable](../objects/S3TablesIcebergTable.md)
 - [SalesforceObject](../objects/SalesforceObject.md)
 - [SapHanaDatabase](../objects/SapHanaDatabase.md)
 - [SapHanaSystem](../objects/SapHanaSystem.md)

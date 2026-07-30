@@ -28,6 +28,7 @@ Paginated list of the highest-level Microsoft SQL Objects accessible by the curr
           authorizedOperations
           cdmPendingObjectPauseAssignment
           id
+          isReplica
           name
           numWorkloadDescendants
           objectType

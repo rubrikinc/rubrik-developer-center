@@ -24,6 +24,7 @@ Get details of the given host failover cluster.
         cdmPendingObjectPauseAssignment
         id
         isArchived
+        isReplica
         name
         nodesOsType
         numWorkloadDescendants
@@ -56,7 +57,7 @@ Get details of the given host failover cluster.
           "cdmPendingObjectPauseAssignment": "NO_PENDING_PAUSE_ASSIGNMENT",
           "id": "00000000-0000-0000-0000-000000000000",
           "isArchived": true,
-          "name": "example-string",
+          "isReplica": true,
           "allNodes": [
             {
               "adDomain": "example-string",

@@ -9,6 +9,7 @@ Operating system details of the domain controller at the time of the snapshot.
 | buildNumber | String! | Build number of the operating system. |
 | hotFixDetails | [[HotFixDetail](HotFixDetail.md)!]! | List of hotfixes installed on the operating system. |
 | osName | String! | Name of the operating system. |
+| ubrOpt | String | Update Build Revision (UBR) of the operating system. |
 | version | String! | Version of the operating system. |
 
 ## Used By

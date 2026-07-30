@@ -25,6 +25,7 @@ Paginated list of PolarisSnapshot objects. Each page of the results includes at 
 - [AzureDevOpsRepository.snapshotConnection](AzureDevOpsRepository.md)
 - [AzureNativeManagedDisk.snapshotConnection](AzureNativeManagedDisk.md)
 - [AzureNativeVirtualMachine.snapshotConnection](AzureNativeVirtualMachine.md)
+- [AzurePostgresFlexibleServer.snapshotConnection](AzurePostgresFlexibleServer.md)
 - [AzureSqlDatabaseDb.snapshotConnection](AzureSqlDatabaseDb.md)
 - [AzureSqlManagedInstanceDatabase.snapshotConnection](AzureSqlManagedInstanceDatabase.md)
 - [AzureStorageAccount.snapshotConnection](AzureStorageAccount.md)
@@ -44,5 +45,4 @@ Paginated list of PolarisSnapshot objects. Each page of the results includes at 
 - MicrosoftMailbox.snapshotConnection
 - MicrosoftOnedrive.snapshotConnection
 - MicrosoftOrg.snapshotConnection
-- MicrosoftSite.snapshotConnection
-- *…and 13 more*
+- *…and 15 more*

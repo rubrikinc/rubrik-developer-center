@@ -6,6 +6,7 @@ Attributes to add for an organization's identity provider.
 
 | Field | Type | Description |
 |-------|------|-------------|
+| allowIdpInitiatedSso | Boolean | Specifies whether to allow IdP-initiated SSO for this identity provider. |
 | entityId | String | Entity ID of the identity provider. |
 | idpClaimAttributes | [[IdpClaimAttribute](IdpClaimAttribute.md)!] | Custom claims for the identity provider. |
 | idpId | [UUID](../scalars/UUID.md)! | ID of the identity provider. |

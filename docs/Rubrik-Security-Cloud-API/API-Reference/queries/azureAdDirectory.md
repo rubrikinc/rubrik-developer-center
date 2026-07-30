@@ -69,6 +69,7 @@ Details of the Azure AD corresponding to the workload ID.
         rscPendingObjectPauseAssignment
         slaAssignment
         slaPauseStatus
+        tenantType
       }
     }
     ```

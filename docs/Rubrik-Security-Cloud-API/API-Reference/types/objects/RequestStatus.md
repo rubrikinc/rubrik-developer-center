@@ -1,12 +1,12 @@
 # RequestStatus
 
-*No description available.*
+RequestStatus is a generic response indicating whether a mutation completed successfully.
 
 ## Fields
 
 | Field | Type | Description |
 |-------|------|-------------|
-| success | Boolean! |  |
+| success | Boolean! | Whether the request completed successfully. |
 
 ## Used By
 

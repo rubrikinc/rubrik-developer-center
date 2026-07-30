@@ -6,5 +6,5 @@ Resource defines a CDM target to run content analysis on.
 
 | Field | Type | Description |
 |-------|------|-------------|
-| snappableFid | String |  |
+| snappableFid | String | Identifier of the protected object to run content analysis on. |
 | snapshotFid | String | Snapshot is not supported right now. |

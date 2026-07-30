@@ -10,6 +10,7 @@ Input required to export a GCP GCE instance snapshot.
 | diskEncryptionType | [DiskEncryptionType](../enums/DiskEncryptionType.md)! | Encryption type of created disk. |
 | kmsCryptoKey | [KmsCryptoKey](KmsCryptoKey.md) | Customer managed key to encrypt exported instance. This is only applicable when encryption type is CustomerManagedKey. |
 | kmsCryptoKeyResourceId | String | Customer managed key to encrypt exported instance. This is only applicable when encryption type is CustomerManagedKeyResourceId. |
+| recoveryPurpose | [RecoveryPurpose](../enums/RecoveryPurpose.md) | Purpose of the recovery operation. Set to SURGICAL_RECOVERY to automatically exclude quarantined files from the exported instance (subject to feature availability for the account). Defaults to RECOVERY_PURPOSE_UNSPECIFIED, which preserves prior behavior. |
 | serviceAccountId | String | Optional service account email to attach to the exported instance. If not provided or empty, no service account will be attached. |
 | sharedVpcHostProjectNativeId | String | Native ID of the shared VPC host project for the current service project. If not provided, the exported instance will have its network in the target project. If provided, targetSubnetName must be provided. |
 | shouldAddRubrikLabels | Boolean! | Specifies whether to allow Rubrik labels on the exported disk or not. |
