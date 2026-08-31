@@ -2,6 +2,12 @@
 
 Retrieve o365 licence details.
 
+## Arguments
+
+| Argument | Type | Description |
+|----------|------|-------------|
+| resourceIds | [[UUID](../types/scalars/UUID.md)!] | Rubrik Security Cloud IDs of the Microsoft 365 resources the caller is acting on. Optional. Used only to authorize the read against those objects instead of the Microsoft 365 inventory root; the license returned is always the caller's own account. |
+
 ## Returns
 
 [O365License](../types/objects/O365License.md)!

@@ -13,7 +13,7 @@ Retrieves a paginated list of all Azure Native Subscriptions.
 | sortBy | [AzureNativeSubscriptionSortFields](../types/enums/AzureNativeSubscriptionSortFields.md) | Sort fields for list of Azure subscriptions. |
 | sortOrder | [SortOrder](../types/enums/SortOrder.md) | Sorts the order of results. |
 | subscriptionFilters | [AzureNativeSubscriptionFilters](../types/inputs/AzureNativeSubscriptionFilters.md) |  |
-| authorizedOperationFilter | [Operation](../types/enums/Operation.md) | Filters according to the operation given. |
+| authorizedOperationFilter | [Operation](../types/enums/Operation.md) | Filters the results to objects on which the caller is authorized to perform the specified operation. Only privilege operations are accepted. |
 | workloadHierarchy | [WorkloadLevelHierarchy](../types/enums/WorkloadLevelHierarchy.md) | Workload hierarchy. |
 | azureNativeProtectionFeature | [AzureNativeProtectionFeature](../types/enums/AzureNativeProtectionFeature.md) | The type of Azure Native feature that RSC supports. |
 | azureNativeProtectionFeatures | [[AzureNativeProtectionFeature](../types/enums/AzureNativeProtectionFeature.md)!] | The type of Azure Native features that RSC supports. |

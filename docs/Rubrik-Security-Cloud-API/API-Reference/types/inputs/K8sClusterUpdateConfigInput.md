@@ -7,9 +7,11 @@ Supported in v9.1+ Input to update a Kubernetes cluster.
 | Field | Type | Description |
 |-------|------|-------------|
 | accessToken | String | Supported in v9.1+ The access token for the service account. |
+| backupSubnetCidr | String | Supported in v9.6+ Comma-separated IPv4 CIDR(s) the per-node backup proxy binds its backup NIC within. Only used when dataPathTransport is pernodeproxy. An empty string clears the field. |
 | clientId | String | Supported in v9.1+ The client ID for the service account. |
 | clientSecret | String | Supported in v9.1+ The client secret for the service account. |
 | cloudAccountId | String | Supported in v9.1+ The cloud account for the Rubrik cluster to establish a connection with the EKS Kubernetes cluster. |
+| dataPathTransport | String | Supported in v9.6+ The transport type used for the RBA data movers. Defaults to the control-plane transport when unset. Set to pernodeproxy to route data movers through the per-node backup proxy. An empty string clears the field. |
 | isAutoPsCreationEnabled | Boolean | Supported in v9.2+ Specifies whether to enable automatic protection set creation for the Kubernetes cluster. |
 | kubeconfig | String | Supported in v9.1+ Kubeconfig is a YAML string to store Kubernetes cluster authentication information. You can get this config file directly from the cluster administrator or from a cloud platform if you are using managed Kubernetes cluster. |
 | kuprServerProxyConfig | [KuprServerProxyConfigInput](KuprServerProxyConfigInput.md) | Supported in v9.2+ The configuration for the kupr server proxy to be updated. |

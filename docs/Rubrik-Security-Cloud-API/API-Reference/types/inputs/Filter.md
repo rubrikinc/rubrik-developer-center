@@ -8,7 +8,7 @@ A set of parameters to filter objects.
 |-------|------|-------------|
 | awsNativeProtectionFeatureNames | [[AwsNativeProtectionFeature](../enums/AwsNativeProtectionFeature.md)!] | Param for AWS native account enabled feature filter. |
 | azureNativeProtectionFeatureNames | [[AzureNativeProtectionFeature](../enums/AzureNativeProtectionFeature.md)!] | Param for Azure native subscription enabled feature filter. |
-| field | [HierarchyFilterField](../enums/HierarchyFilterField.md) |  |
+| field | [HierarchyFilterField](../enums/HierarchyFilterField.md) | The hierarchy object attribute to filter on. |
 | gcpNativeProtectionFeatureNames | [[GcpNativeProtectionFeature](../enums/GcpNativeProtectionFeature.md)!] | Param for GCP native project enabled feature filter. |
 | isNegative | Boolean | Whether to negate the filter and exclude matching objects. |
 | isSlowSearchEnabled | Boolean | Enable slow search for location-based filters. |

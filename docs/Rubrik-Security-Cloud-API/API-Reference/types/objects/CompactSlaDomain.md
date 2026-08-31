@@ -13,6 +13,7 @@ SLA Domain name and ID.
 
 **Referenced by**
 
+- [AnthropicOrg.rscNativeObjectPendingSla](AnthropicOrg.md)
 - [AtlassianSite.rscNativeObjectPendingSla](AtlassianSite.md)
 - [AwsNativeAccount.rscNativeObjectPendingSla](AwsNativeAccount.md)
 - AwsNativeAccountDescendantType.rscNativeObjectPendingSla
@@ -40,7 +41,6 @@ SLA Domain name and ID.
 - [AzureSqlManagedInstanceDatabase.rscNativeObjectPendingSla](AzureSqlManagedInstanceDatabase.md)
 - [AzureSqlManagedInstanceServer.rscNativeObjectPendingSla](AzureSqlManagedInstanceServer.md)
 - [AzureStorageAccount.rscNativeObjectPendingSla](AzureStorageAccount.md)
-- [CassandraColumnFamily.rscNativeObjectPendingSla](CassandraColumnFamily.md)
-- [CassandraKeyspace.rscNativeObjectPendingSla](CassandraKeyspace.md)
-- CassandraKeyspaceDescendantType.rscNativeObjectPendingSla
-- *…and 54 more*
+- [CloudNativeTagRule.rscNativeObjectPendingSla](CloudNativeTagRule.md)
+- [CloudNativeTagRuleHierarchy.rscNativeObjectPendingSla](CloudNativeTagRuleHierarchy.md)
+- *…and 43 more*

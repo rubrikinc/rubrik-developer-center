@@ -39,6 +39,7 @@ A Rubrik CDM Cluster.
 | isClusterRemovalTprEnabled | Boolean | Specifies whether Quorum Authorization is enabled for cluster removal. |
 | isHealthy | Boolean! | Whether or not the cluster is healthy. |
 | isTprEnabled | Boolean | Indicates if TPR is enabled on the cluster. |
+| isTunnelEnabled | Boolean | True if any node in this Rubrik cluster has a support tunnel open. |
 | lambdaConfig | [GetLambdaConfigReply](GetLambdaConfigReply.md) | Lambda configuration. |
 | lambdaFeatureHistory | [LambdaFeatureHistory](LambdaFeatureHistory.md) | Lambda feature history. |
 | lastConnectionTime | [DateTime](../scalars/DateTime.md) | The time the cluster was last connected. |
@@ -48,7 +49,6 @@ A Rubrik CDM Cluster.
 | metricTimeSeries | [[metricTimeSeries](metricTimeSeries.md)!]! | The metric time series of a cluster. |
 | metricTimeSeriesNew | [[ClusterMetricTimeSeriesNew](ClusterMetricTimeSeriesNew.md)!]! | The metric time series of a cluster. |
 | name | String! | The cluster name. |
-| noSqlWorkloadCount | Int! | Total number of protected NoSQL workloads. |
 | passesConnectivityCheck | Boolean | Whether the global manager connectivity is healthy. |
 | pauseStatus | [ClusterPauseStatus](../enums/ClusterPauseStatus.md) | Pause status of the cluster. |
 | productType | [ClusterProductEnum](../enums/ClusterProductEnum.md) | The cluster product type (e.g., CDM, DATOS, etc.). |
@@ -133,9 +133,6 @@ A Rubrik CDM Cluster.
 - [AgentDeploymentSettingsInfo.cluster](AgentDeploymentSettingsInfo.md)
 - [AnomalyResult.cluster](AnomalyResult.md)
 - [BackupThrottleSetting.cluster](BackupThrottleSetting.md)
-- [CassandraColumnFamily.cluster](CassandraColumnFamily.md)
-- [CassandraKeyspace.cluster](CassandraKeyspace.md)
-- [CassandraSource.cluster](CassandraSource.md)
 - [CdmGuestCredential.cluster](CdmGuestCredential.md)
 - CdmHierarchyObject.cluster
 - CdmHierarchySnappableNew.cluster
@@ -153,4 +150,7 @@ A Rubrik CDM Cluster.
 - CloudDirectHierarchyObject.cluster
 - CloudDirectHierarchyWorkload.cluster
 - [CloudDirectNasBucket.cluster](CloudDirectNasBucket.md)
-- *…and 274 more*
+- [CloudDirectNasExport.cluster](CloudDirectNasExport.md)
+- [CloudDirectNasNamespace.cluster](CloudDirectNasNamespace.md)
+- CloudDirectNasNamespaceDescendantType.cluster
+- *…and 288 more*

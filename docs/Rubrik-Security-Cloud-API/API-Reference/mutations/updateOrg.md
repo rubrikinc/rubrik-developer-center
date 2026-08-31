@@ -45,7 +45,7 @@ Update an organization.
                 "objectIds": [
                   "example-string"
                 ],
-                "snappableType": "AUTH0_TENANT"
+                "snappableType": "ANTHROPIC_CHILD_ORG_SETTINGS"
               }
             ],
             "operation": "ACCESS_CDM_CLUSTER"
@@ -53,7 +53,7 @@ Update an organization.
         ],
         "selfServicePermissions": [
           {
-            "inventoryWorkloadType": "AUTH0_TENANT",
+            "inventoryWorkloadType": "ANTHROPIC_CHILD_ORG_SETTINGS",
             "operations": [
               "ACCESS_CDM_CLUSTER"
             ]

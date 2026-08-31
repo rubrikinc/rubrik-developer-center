@@ -2,7 +2,7 @@
 
 PostgreSQL database cluster details object.
 
-**Implements:** [KosmosDiscoverableEntityType](../interfaces/KosmosDiscoverableEntityType.md), [KosmosParentHierarchyObjectType](../interfaces/KosmosParentHierarchyObjectType.md), [KosmosHierarchyObjectType](../interfaces/KosmosHierarchyObjectType.md), [CdmHierarchyObject](../interfaces/CdmHierarchyObject.md), [HierarchyObject](../interfaces/HierarchyObject.md), [KosmosSnappableHierarchyObjectType](../interfaces/KosmosSnappableHierarchyObjectType.md)
+**Implements:** [KosmosDiscoverableEntityType](../interfaces/KosmosDiscoverableEntityType.md), [KosmosParentHierarchyObjectType](../interfaces/KosmosParentHierarchyObjectType.md), [KosmosSnappableHierarchyObjectType](../interfaces/KosmosSnappableHierarchyObjectType.md), [KosmosHierarchyObjectType](../interfaces/KosmosHierarchyObjectType.md), [CdmHierarchyObject](../interfaces/CdmHierarchyObject.md), [HierarchyObject](../interfaces/HierarchyObject.md)
 
 ## Fields
 
@@ -11,8 +11,8 @@ PostgreSQL database cluster details object.
 | allOrgs | [[Org](Org.md)!]! | Organizations to which this hierarchy object belongs. |
 | allTags | [[AssignedRscTag](AssignedRscTag.md)!]! | RSC tags to which this hierarchy object is assigned. |
 | authorizedOperations | [[Operation](../enums/Operation.md)!]! | The authorized operations on the object. |
-| cdmId | String! | The ID of the workload on the Rubrik CDM cluster. |
-| cdmLink | String! | A link to view the workload on the CDM cluster. For dev use only. |
+| cdmId | String! | The ID of the workload on the Rubrik cluster. |
+| cdmLink | String! | A link to view the workload on the Rubrik cluster. For dev use only. |
 | cdmPendingObjectPauseAssignment | [PendingObjectPauseAssignmentStatus](../enums/PendingObjectPauseAssignmentStatus.md) | Object pause pending assignment details for CDM objects. |
 | cluster | [Cluster](Cluster.md)! | Rubrik cluster where this object originated. |
 | clusterMode | [KosmosClusterMode](../enums/KosmosClusterMode.md)! | Whether this is a standalone or HA PostgreSQL cluster. |
@@ -25,7 +25,7 @@ PostgreSQL database cluster details object.
 | entityInfo | [EntityInfo](EntityInfo.md)! | The basic entity information. |
 | hostsInfo | [[HostDiscoverableInfo](HostDiscoverableInfo.md)!]! | The host information of the discoverable entity. |
 | id | [UUID](../scalars/UUID.md)! | ID of the hierarchy object. |
-| isRelic | Boolean! | Indicates whether the workload type is Relic. |
+| isRelic | Boolean! | Indicates whether the workload type is a relic. |
 | isReplica | Boolean | True if this object is a replica, its current cluster differs from its source (primary) cluster. False if the object resides on its source cluster. Null when the source cluster is unknown. |
 | latestUserNote | [LatestUserNote](LatestUserNote.md) | Latest user note information. |
 | liveMounts | [KosmosWorkloadLiveMountConnection](KosmosWorkloadLiveMountConnection.md)! | The live mounts of the given workloads. |
@@ -36,7 +36,7 @@ PostgreSQL database cluster details object.
 | name | String! | Name of the hierarchy object. |
 | newestArchivedSnapshot | [CdmSnapshot](CdmSnapshot.md) | The newest snapshot archived to AWS. |
 | newestIndexedSnapshot | [CdmSnapshot](CdmSnapshot.md) | The most recent indexed snapshot of this workload. |
-| newestReplicatedSnapshot | [CdmSnapshot](CdmSnapshot.md) | The newest snapshot replicated to a cluster. |
+| newestReplicatedSnapshot | [CdmSnapshot](CdmSnapshot.md) | The newest snapshot replicated to a Rubrik cluster. |
 | newestSnapshot | [CdmSnapshot](CdmSnapshot.md) | The most recent snapshot of this workload. |
 | numWorkloadDescendants | Int! | Number of descendant workloads of this object. |
 | objectBackupWindow | [ObjectBackupWindowStatus](ObjectBackupWindowStatus.md) | Object-level backup window status of the hierarchy object. |
@@ -58,8 +58,8 @@ PostgreSQL database cluster details object.
 | slaPauseStatus | Boolean! | Pause status of the effective SLA Domain of the hierarchy object. |
 | snapshotConnection | [CdmSnapshotConnection](CdmSnapshotConnection.md) | The list of snapshots taken for this workload. |
 | snapshotDistribution | [SnapshotDistribution](SnapshotDistribution.md)! | Distribution of the snapshots of the hierarchy object. |
-| snapshotGroupByConnection | [CdmSnapshotGroupByConnection](CdmSnapshotGroupByConnection.md) | GroupBy connection for the snapshots of this workload. |
-| snapshotGroupBySummary | [CdmSnapshotGroupBySummaryConnection](CdmSnapshotGroupBySummaryConnection.md) | GroupBy connection for the snapshots of this workload. |
+| snapshotGroupByConnection | [CdmSnapshotGroupByConnection](CdmSnapshotGroupByConnection.md) | Group-by connection for the snapshots of this workload. |
+| snapshotGroupBySummary | [CdmSnapshotGroupBySummaryConnection](CdmSnapshotGroupBySummaryConnection.md) | Group-by connection for the snapshots of this workload. |
 | status | [PostgreSQLDbClusterStatus](PostgreSQLDbClusterStatus.md)! | The connectivity status of PostgreSQL database cluster. |
 | userDetails | [PostgreSQLDbClusterUserDetails](PostgreSQLDbClusterUserDetails.md)! | The user details of PostgreSQL database cluster. |
 

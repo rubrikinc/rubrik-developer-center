@@ -23,6 +23,7 @@ Get the configuration for a specific host  Supported in v6.0+ Returns the config
         cbtMaxMemoryUsageInMb
         cmdPipeBufferSizeInKb
         copyLogsToHostDuringLiveMount
+        disableStrictSyncForMssqlLiveMount
         enableDatabaseBatchSnapshots
         enableGroupFetch
         enableMssqlMultiNodeBackup
@@ -73,8 +74,8 @@ Get the configuration for a specific host  Supported in v6.0+ Returns the config
           "cbtMaxMemoryUsageInMb": 0,
           "cmdPipeBufferSizeInKb": 0,
           "copyLogsToHostDuringLiveMount": "HOST_CONFIGURATION_PROPERTY_ENABLED_DEFAULT",
-          "enableDatabaseBatchSnapshots": "HOST_CONFIGURATION_PROPERTY_ENABLED_DEFAULT",
-          "enableGroupFetch": "HOST_CONFIGURATION_PROPERTY_ENABLED_DEFAULT"
+          "disableStrictSyncForMssqlLiveMount": "HOST_CONFIGURATION_PROPERTY_ENABLED_DEFAULT",
+          "enableDatabaseBatchSnapshots": "HOST_CONFIGURATION_PROPERTY_ENABLED_DEFAULT"
         }
       }
     }

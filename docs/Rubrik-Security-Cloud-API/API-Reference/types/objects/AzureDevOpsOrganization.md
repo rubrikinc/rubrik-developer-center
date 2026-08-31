@@ -2,7 +2,7 @@
 
 Azure DevOps Organization.
 
-**Implements:** [HierarchyObject](../interfaces/HierarchyObject.md), [PolarisHierarchyObject](../interfaces/PolarisHierarchyObject.md)
+**Implements:** [PolarisHierarchyObject](../interfaces/PolarisHierarchyObject.md), [HierarchyObject](../interfaces/HierarchyObject.md)
 
 ## Fields
 
@@ -10,13 +10,13 @@ Azure DevOps Organization.
 |-------|------|-------------|
 | allOrgs | [[Org](Org.md)!]! | Organizations to which this hierarchy object belongs. |
 | allTags | [[AssignedRscTag](AssignedRscTag.md)!]! | RSC tags to which this hierarchy object is assigned. |
-| authenticationMechanism | [DevopsAuthMechanism](../enums/DevopsAuthMechanism.md)! | Authentication mechanism (OAuth or non-OAuth) the organization's tenant was onboarded with. Derived per-tenant; UNSPECIFIED when it cannot be determined. |
+| authenticationMechanism | [DevopsAuthMechanism](../enums/DevopsAuthMechanism.md)! | Authentication mechanism (OAuth or non-OAuth) the organization's tenant was onboarded with. |
 | authorizedOperations | [[Operation](../enums/Operation.md)!]! | The authorized operations on the object. |
 | backupLocation | [DevOpsBackupLocation](DevOpsBackupLocation.md) | Backup location associated with the Azure DevOps organization. |
 | backupLocationId | String! | ID of the backup location associated with the Azure DevOps organization. |
 | backupLocationName | String! | Name of the backup location associated with the Azure DevOps organization. |
 | backupRegion | String! | Backup region for the Azure DevOps organization. |
-| clientId | String! | Azure AD application (client) ID of the per-tenant application the organization's tenant was onboarded with. Populated only for non-OAuth tenants; empty otherwise. |
+| clientId | String! | Azure AD application (client) ID of the per-tenant application the organization's tenant was onboarded with. |
 | cloudNativeExocompute | [DevOpsCloudNativeExocompute](DevOpsCloudNativeExocompute.md) | Cloud native exocompute associated with the Azure DevOps organization. |
 | configuredSlaDomain | [SlaDomain](../interfaces/SlaDomain.md)! | SLA Domain configured for the hierarchy object. |
 | connectionStatus | [DevopsConnectionStatus](../enums/DevopsConnectionStatus.md)! | Connection status of the Azure DevOps organization. |
@@ -26,7 +26,7 @@ Azure DevOps Organization.
 | effectiveSlaSourceObject | [PathNode](PathNode.md) | Path node of the effective SLA Domain source. |
 | exocomputeHostName | String! | Exocompute host name for the Azure DevOps organization. |
 | exocomputeId | String! | ID of the exocompute associated with the Azure DevOps organization. |
-| id | [UUID](../scalars/UUID.md)! | ID of the Azure DevOps organization. |
+| id | [UUID](../scalars/UUID.md)! | ID of the hierarchy object. |
 | isRelic | Boolean! | True if the Azure DevOps organization is a relic. |
 | lastRefreshTime | [DateTime](../scalars/DateTime.md) | Last refresh time of the Azure DevOps organization. |
 | logicalPath | [[PathNode](PathNode.md)!]! | Sequential list of the logical ancestors of this object. |

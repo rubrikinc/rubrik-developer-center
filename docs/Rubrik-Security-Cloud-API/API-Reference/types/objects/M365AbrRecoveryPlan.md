@@ -6,11 +6,13 @@ A saved, named recovery configuration used to trigger an Autonomous Business Rec
 
 | Field | Type | Description |
 |-------|------|-------------|
+| analysisJob | [MvcAnalysisJob](MvcAnalysisJob.md) | This Recovery Plan's own latest FULL-mode analysis job. Null when the plan has never been analyzed in FULL mode. |
 | conditionTree | [M365RecoveryPlanConditionTree](M365RecoveryPlanConditionTree.md) | Typed filter condition expression currently saved on this Recovery Plan. Absent when no filters have been saved. |
 | description | String! | Free-text user-supplied description. |
 | id | [UUID](../scalars/UUID.md)! | Unique identifier of the Recovery Plan. |
 | lastNumberOfDays | Int! | Number of days of activity history included in this recovery plan. |
 | name | String! | Display name of the Recovery Plan. Unique within its parent MVC profile. |
+| workloadSummaries | [[M365RecoveryPlanWorkloadSummary](M365RecoveryPlanWorkloadSummary.md)!]! | Per-workload human-readable summaries of the saved filter. |
 | workloadTypes | [[O365MvbWorkloadType](../enums/O365MvbWorkloadType.md)!]! | Workload types covered by this recovery plan. |
 
 ## Used By

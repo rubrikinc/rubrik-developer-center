@@ -16,3 +16,4 @@ Paginated list of KubernetesCluster objects. Each page of the results includes a
 **Queries**
 
 - [query: kubernetesClusters](../../queries/kubernetesClusters.md)
+- [query: kubernetesRecoverableClusters](../../queries/kubernetesRecoverableClusters.md)

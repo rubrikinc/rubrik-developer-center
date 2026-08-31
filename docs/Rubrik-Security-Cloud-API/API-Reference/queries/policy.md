@@ -6,7 +6,7 @@ Returns detailed policy information.
 
 | Argument | Type | Description |
 |----------|------|-------------|
-| policyId *(required)* | String! |  |
+| policyId *(required)* | String! | Identifier of the classification policy. |
 | workloadTypes | [[DataGovObjectType](../types/enums/DataGovObjectType.md)!] | Types of workloads used for filtering the query results. |
 | sortBy | [PolicyDetailsSortBy](../types/enums/PolicyDetailsSortBy.md) | Name of the column to sort result by. |
 | sortOrder | [SortOrder](../types/enums/SortOrder.md) | Sorts the order of results. |

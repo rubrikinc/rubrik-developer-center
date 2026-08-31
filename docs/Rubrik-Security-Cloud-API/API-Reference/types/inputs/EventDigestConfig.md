@@ -12,4 +12,5 @@ An event digest configuration.
 | auditType | [[UserAuditTypeEnum](../enums/UserAuditTypeEnum.md)!] | Audit types included in event digest. |
 | clusters | [String!] | Clusters to include in event digest. |
 | emailAddresses | [String!] | Email addresses of the event digest recipients. |
+| objectIds | [String!] | Scopes the digest to specific objects by their unique identifiers. When empty, no object-level scoping is applied and all objects match, subject to the other filters. |
 | objectType | [[ActivityObjectTypeEnum](../enums/ActivityObjectTypeEnum.md)!] | Object type to include in event digest. |

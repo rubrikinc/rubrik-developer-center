@@ -29,8 +29,7 @@ Completes the creation flow for an Azure AD app.
     ```json
     {
       "input": {
-        "domainName": "example-string",
-        "stateToken": "example-string"
+        "domainName": "example-string"
       }
     }
     ```

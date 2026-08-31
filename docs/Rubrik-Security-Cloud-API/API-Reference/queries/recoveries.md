@@ -1,6 +1,6 @@
 # recoveries
 
-Return list of recoveries corresponding to the filter passed. RSC prioritizes recovery_ids if they are passed in the filter. All the filters, if passed, will work as AND logic.
+Return a paginated list of recoveries corresponding to the filter passed. RSC prioritizes recovery_ids if they are passed in the filter. All the filters, if passed, will work as AND logic. A maximum of 50 objects per page is supported.
 
 ## Arguments
 

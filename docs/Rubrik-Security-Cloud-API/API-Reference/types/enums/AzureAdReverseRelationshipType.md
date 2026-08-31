@@ -10,9 +10,11 @@ Reverse relationships of an Azure Active Directory object.
 | ACCESS_PACKAGE_POLICY_PRINCIPAL_OF | Principal (User, Group, or ServicePrincipal) referenced in an Access Package assignment policy. |
 | ACCESS_PACKAGE_RESOURCE_OF | Resource (Group, ServicePrincipal, or Application) exposed through an Entitlement Management access package resource role scope. |
 | APPLIED_POLICY | Directory object to which the policy is applied. |
+| APPLIED_SSO_POLICY | Service principal or application that an SSO policy applies to. |
 | BOUND_TO_CONFIG | Intune policy object referenced by a config binding. |
 | CATALOG_ROLE_ASSIGNMENT_OF | Granted an Entitlement Management (EM) catalog-scoped role assignment (User, Group, or ServicePrincipal). |
 | DIRECT_REPORT | Direct report of a manager. |
+| EXTENDED_SSO_POLICY | Application that owns a directory extension used by a claims mapping policy. |
 | INCLUDED_IN_POLICY | Component of a policy. For example, a named location included in the policy. |
 | INCOMPATIBLE_ACCESS_PACKAGE_OF | Access Package marked incompatible with another Access Package. |
 | INCOMPATIBLE_GROUP_OF | Group marked incompatible with an Access Package. |

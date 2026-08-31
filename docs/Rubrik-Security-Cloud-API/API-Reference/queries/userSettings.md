@@ -1,6 +1,6 @@
 # userSettings
 
-*No description available.*
+Returns the settings for the specified user.
 
 ## Returns
 

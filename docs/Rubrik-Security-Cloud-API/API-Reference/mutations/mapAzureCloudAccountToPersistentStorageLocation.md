@@ -29,7 +29,7 @@ Map Azure cloud accounts to a persistent storage location.
     ```json
     {
       "input": {
-        "azureNativeProtectionFeature": "AZ_CLOUD_DISCOVERY",
+        "azureNativeProtectionFeature": "AZURE_COSMOS_NOSQL",
         "cloudAccountIds": [
           "00000000-0000-0000-0000-000000000000"
         ],

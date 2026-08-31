@@ -1,12 +1,12 @@
 # setMissingClusterStatus
 
-Update missing cluster connection status.
+Updates the connection status of a missing cluster.
 
 ## Arguments
 
 | Argument | Type | Description |
 |----------|------|-------------|
-| input *(required)* | [SetMissingClusterStatusInput](../types/inputs/SetMissingClusterStatusInput.md)! | Input required for setting missing cluster status. |
+| input *(required)* | [SetMissingClusterStatusInput](../types/inputs/SetMissingClusterStatusInput.md)! | Missing cluster status to set. |
 
 ## Returns
 

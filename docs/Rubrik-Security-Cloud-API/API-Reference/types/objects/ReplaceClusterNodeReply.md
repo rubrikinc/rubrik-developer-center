@@ -1,6 +1,6 @@
 # ReplaceClusterNodeReply
 
-Asynchronous reply for a submitted job.
+Reply for a node replacement job.
 
 ## Fields
 

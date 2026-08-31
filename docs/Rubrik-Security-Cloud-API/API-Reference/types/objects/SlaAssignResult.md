@@ -12,7 +12,6 @@ Response for Assign SLA Domain Result.
 
 **Mutations**
 
-- [mutation: assignProtection](../../mutations/assignProtection.md)
 - [mutation: assignRetentionSLAToSnappables](../../mutations/assignRetentionSLAToSnappables.md)
 - [mutation: assignRetentionSLAToSnapshots](../../mutations/assignRetentionSLAToSnapshots.md)
 - [mutation: assignSla](../../mutations/assignSla.md)

@@ -45,7 +45,7 @@ Creates a role if `roleId` is not provided; otherwise updates the existing role.
               "objectIds": [
                 "example-string"
               ],
-              "snappableType": "AUTH0_TENANT"
+              "snappableType": "ANTHROPIC_CHILD_ORG_SETTINGS"
             }
           ],
           "operation": "ACCESS_CDM_CLUSTER"

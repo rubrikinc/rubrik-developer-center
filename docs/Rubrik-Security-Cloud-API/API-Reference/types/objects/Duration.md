@@ -27,6 +27,8 @@ Duration.
 - [InformixSlaConfig.incrementalRetention](InformixSlaConfig.md)
 - [InformixSlaConfig.logFrequency](InformixSlaConfig.md)
 - [InformixSlaConfig.logRetention](InformixSlaConfig.md)
+- [IrisdbSlaConfig.logFrequency](IrisdbSlaConfig.md)
+- [IrisdbSlaConfig.logRetention](IrisdbSlaConfig.md)
 - [ManagedVolumeSlaConfig.logRetention](ManagedVolumeSlaConfig.md)
 - [MariadbSlaConfig.differentialFrequency](MariadbSlaConfig.md)
 - [MariadbSlaConfig.differentialRetention](MariadbSlaConfig.md)
@@ -41,6 +43,4 @@ Duration.
 - [OracleConfig.frequency](OracleConfig.md)
 - [OracleConfig.hostLogRetention](OracleConfig.md)
 - [OracleConfig.logRetention](OracleConfig.md)
-- [OracleDataGuardGroup.effectiveHostLogRetention](OracleDataGuardGroup.md)
-- [OracleDataGuardGroup.effectiveLogBackupFrequency](OracleDataGuardGroup.md)
-- *…and 21 more*
+- *…and 23 more*

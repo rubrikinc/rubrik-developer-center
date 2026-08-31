@@ -6,6 +6,10 @@ Returns groupBy results for SonarContentReport.
 
 | Argument | Type | Description |
 |----------|------|-------------|
+| first | Int | Returns the first n elements from the list. |
+| after | String | Returns the elements in the list that occur after the specified cursor. |
+| last | Int | Returns the last n elements from the list. |
+| before | String | Returns the elements in the list that occur before the specified cursor. |
 | groupBy *(required)* | [DiscoveryContentReportGroupBy](../types/enums/DiscoveryContentReportGroupBy.md)! |  |
 | sortBy | [DiscoveryContentReportSortBy](../types/enums/DiscoveryContentReportSortBy.md) |  |
 | sortOrder | [SortOrder](../types/enums/SortOrder.md) | Sorts the order of results. |
@@ -13,10 +17,6 @@ Returns groupBy results for SonarContentReport.
 | day *(required)* | String! | Date in the format (YYYY-MM-DD). |
 | timezone *(required)* | String! | The timezone in which to display timestamps. |
 | workloadTypes *(required)* | [[DataGovObjectType](../types/enums/DataGovObjectType.md)!]! | Types of workloads that can be used for filtering query results. |
-| first | Int | Returns the first n elements from the list. |
-| after | String | Returns the elements in the list that occur after the specified cursor. |
-| last | Int | Returns the last n elements from the list. |
-| before | String | Returns the elements in the list that occur before the specified cursor. |
 
 ## Returns
 

@@ -10,3 +10,5 @@ Metadata about the resource.
 - [IdentityEventMetadata](../objects/IdentityEventMetadata.md)
 - [CrowdStrikeAlertMetadata](../objects/CrowdStrikeAlertMetadata.md)
 - [DefenderAlertMetadata](../objects/DefenderAlertMetadata.md)
+- [SigninAnomalyMetadata](../objects/SigninAnomalyMetadata.md)
+- [SaasActivityMetadata](../objects/SaasActivityMetadata.md)

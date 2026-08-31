@@ -6,6 +6,8 @@ A leaf predicate for Exchange mailbox items. Exactly one primitive field must be
 
 | Field | Type | Description |
 |-------|------|-------------|
+| bccRecipients | [M365StringListFilter](M365StringListFilter.md) | Filter by blind-carbon-copy recipient addresses. |
+| createdTime | [RecoveryPlanFilterTimeRange](RecoveryPlanFilterTimeRange.md) | Filter by creation time. |
 | importance | [M365StringListFilter](M365StringListFilter.md) | Filter by importance level. Valid values: HIGH, NORMAL, LOW. |
 | isDraft | Boolean | Filter by draft status. |
 | isRead | Boolean | Filter by read status. |

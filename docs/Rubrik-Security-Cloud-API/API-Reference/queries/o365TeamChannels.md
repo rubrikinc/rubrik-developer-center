@@ -1,6 +1,6 @@
 # o365TeamChannels
 
-List of Channels for the O365Team.
+GetTeamChannelsV2 returns a paginated, GraphQL-shaped list of channels for a Teams workload. Encapsulates the response shaping (TeamChannelInfo -> O365TeamsChannelObject, including the membership-type enum parse) that previously lived in the GraphQL resolver `o365TeamChannels`.
 
 ## Arguments
 
@@ -8,10 +8,12 @@ List of Channels for the O365Team.
 |----------|------|-------------|
 | first | Int | Returns the first n elements from the list. |
 | after | String | Returns the elements in the list that occur after the specified cursor. |
-| snappableFid *(required)* | [UUID](../types/scalars/UUID.md)! | The FID for the workload. |
-| excludeArchived *(required)* | Boolean! |  |
+| last | Int | Returns the last n elements from the list. |
+| before | String | Returns the elements in the list that occur before the specified cursor. |
+| snappableFid *(required)* | [UUID](../types/scalars/UUID.md)! | The FID for the Teams workload. |
+| excludeArchived *(required)* | Boolean! | Whether archived channels are omitted. |
 | channelMembershipTypeFilter *(required)* | [ChannelMembershipType](../types/enums/ChannelMembershipType.md)! | Filter on channel membership type. |
-| nameFilter | String |  |
+| nameFilter | String | Optional display-name substring filter. |
 
 ## Returns
 

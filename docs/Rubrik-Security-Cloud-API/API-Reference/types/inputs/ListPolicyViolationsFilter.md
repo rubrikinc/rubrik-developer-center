@@ -10,6 +10,7 @@ Filter for listing policy violations.
 | dataTypeIds | [String!] | List of data type IDs to filter by. |
 | detectionDateRange | [PolicyDateTimeRange](PolicyDateTimeRange.md) | Date range for when the violations were detected. |
 | documentTypeIds | [String!] | List of document type IDs to filter by. |
+| lastSeenAtDateRange | [PolicyDateTimeRange](PolicyDateTimeRange.md) | Date range filter for the last-seen time. Matches violations whose most recent observation falls within [start, end). If null, the results are not filtered by last-seen time. |
 | originId | String | Origin IDs to filter policy violations by. |
 | originIds | [String!] | List of origin IDs to filter policy violations by. |
 | parentViolationId | String | Get secondary violations by primary violation ID. If the field is not set, it will return primary violations. |

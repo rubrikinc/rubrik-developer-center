@@ -1,6 +1,6 @@
 # bulkDeleteHost
 
-*No description available.*
+Deregister multiple hosts in bulk.
 
 ## Arguments
 

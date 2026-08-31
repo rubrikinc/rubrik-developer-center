@@ -12,8 +12,8 @@ List of GCP projects.
 | before | String | Returns the elements in the list that occur before the specified cursor. |
 | sortBy | [GcpNativeProjectSortFields](../types/enums/GcpNativeProjectSortFields.md) | Sort fields for list of GCP projects. |
 | sortOrder | [SortOrder](../types/enums/SortOrder.md) | Sorts the order of results. |
-| projectFilters | [GcpNativeProjectFilters](../types/inputs/GcpNativeProjectFilters.md) |  |
-| authorizedOperationFilter | [Operation](../types/enums/Operation.md) |  |
+| projectFilters | [GcpNativeProjectFilters](../types/inputs/GcpNativeProjectFilters.md) | Filters for list of GCP projects. |
+| authorizedOperationFilter | [Operation](../types/enums/Operation.md) | Restricts the list to projects the caller may perform the given operation on. |
 | workloadHierarchy | [WorkloadLevelHierarchy](../types/enums/WorkloadLevelHierarchy.md) | Provide optional workload hierarchy for RBAC and SLA, none value is assumed to be All workload hierarchy. |
 | gcpNativeProtectionFeatures | [[GcpNativeProtectionFeature](../types/enums/GcpNativeProtectionFeature.md)!] | List of GCP native protection features. |
 

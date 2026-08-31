@@ -6,7 +6,7 @@ Details for the O365 user corresponding to the ID.
 
 | Argument | Type | Description |
 |----------|------|-------------|
-| fid *(required)* | [UUID](../types/scalars/UUID.md)! | Rubrik UUID for the object. |
+| fid *(required)* | [UUID](../types/scalars/UUID.md)! | Rubrik UUID for the O365 user object. |
 
 ## Returns
 

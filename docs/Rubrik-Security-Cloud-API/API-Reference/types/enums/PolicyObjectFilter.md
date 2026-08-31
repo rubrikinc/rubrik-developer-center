@@ -6,6 +6,6 @@ Filter policies based on whether they have objects attached.
 
 | Value | Description |
 |-------|-------------|
-| ALL |  |
-| HAS_OBJECTS |  |
-| NO_OBJECTS |  |
+| ALL | All policies, regardless of attached objects. |
+| HAS_OBJECTS | Only policies that have objects attached. |
+| NO_OBJECTS | Only policies that have no objects attached. |

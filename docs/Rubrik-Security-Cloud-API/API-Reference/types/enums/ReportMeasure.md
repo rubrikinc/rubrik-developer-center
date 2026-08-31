@@ -93,6 +93,7 @@ All reporting measures.
 | SENSITIVE_HITS | The sensitive hits measure. |
 | SOURCE_SIZE | NCD The source size measure. |
 | SOURCE_SNAPSHOT_COST | Source snapshot cost (EC2, EBS, RDS backups). |
+| SPARSE_AWARE_SIZE | Estimated size of data that would be restored, accounting for sparse-file optimization; can be smaller than the used size for objects with sparse files. |
 | SUCCEEDED_TASK_COUNT | The succeeded task count measure. |
 | SUCCEEDED_WITH_WARNINGS_TASK_COUNT | The total number of tasks that succeeded with warnings. |
 | SUCCESS_RATE | Success rate. |

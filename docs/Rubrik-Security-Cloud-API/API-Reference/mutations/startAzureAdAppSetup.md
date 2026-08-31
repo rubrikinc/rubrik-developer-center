@@ -22,6 +22,8 @@ Initiates the Azure AD app creation workflow.
         appId
         csrfToken
         excessivePermissions
+        isExchangeAdminRoleAssigned
+        missingM365Permissions
         missingPermissions
         tenantCloudType
         warning
@@ -51,11 +53,13 @@ Initiates the Azure AD app creation workflow.
           "excessivePermissions": [
             "example-string"
           ],
-          "missingPermissions": [
+          "isExchangeAdminRoleAssigned": true,
+          "missingM365Permissions": [
             "example-string"
           ],
-          "tenantCloudType": "AZURECHINACLOUD",
-          "warning": "COMMERCIAL_TENANT_ON_RSC_FEDRAMP"
+          "missingPermissions": [
+            "example-string"
+          ]
         }
       }
     }

@@ -1,6 +1,6 @@
 # vmMakePrimary
 
-Make this cluster the primary for agents on a set of VMs  Supported in v5.3+ Migrate the primary cluster with which the agent is able to communicate. For disaster recovery when migrating everything over from another cluster, the /host/make_primary endpoint can be used with the oldPrimaryClusterUuid parameter.
+Make this cluster the primary for agents on a set of VMs  Supported in v6.0+ Migrate the primary cluster with which the agent is able to communicate. For disaster recovery when migrating everything over from another cluster, the /host/make_primary endpoint can be used with the oldPrimaryClusterUuid parameter.
 
 ## Arguments
 

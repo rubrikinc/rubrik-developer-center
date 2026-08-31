@@ -46,6 +46,7 @@ Details of an org.
 - ActiveDirectoryDomainDescendantType.allOrgs
 - ActiveDirectoryDomainPhysicalChildType.allOrgs
 - [ActivitySeries.organizations](ActivitySeries.md)
+- [AnthropicOrg.allOrgs](AnthropicOrg.md)
 - [AtlassianSite.allOrgs](AtlassianSite.md)
 - [AwsNativeAccount.allOrgs](AwsNativeAccount.md)
 - AwsNativeAccountDescendantType.allOrgs
@@ -70,5 +71,4 @@ Details of an org.
 - [AzureNativeVirtualMachine.allOrgs](AzureNativeVirtualMachine.md)
 - [AzurePostgresFlexibleServer.allOrgs](AzurePostgresFlexibleServer.md)
 - [AzureSqlDatabaseDb.allOrgs](AzureSqlDatabaseDb.md)
-- [AzureSqlDatabaseServer.allOrgs](AzureSqlDatabaseServer.md)
-- *…and 291 more*
+- *…and 300 more*

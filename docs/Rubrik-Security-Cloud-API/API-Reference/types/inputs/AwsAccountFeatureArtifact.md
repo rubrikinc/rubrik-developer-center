@@ -1,6 +1,6 @@
 # AwsAccountFeatureArtifact
 
-AWS Native ID to features/artifacts map.
+Details of the AWS account artifacts to be registered.
 
 ## Fields
 

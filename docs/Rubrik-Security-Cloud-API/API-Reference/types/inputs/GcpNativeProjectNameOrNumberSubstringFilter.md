@@ -6,4 +6,4 @@ Filter to return GCP projects with a given substring in their name or number.
 
 | Field | Type | Description |
 |-------|------|-------------|
-| nameOrNumberSubstring | String! |  |
+| nameOrNumberSubstring | String! | Substring to match against the project name or project number. |

@@ -19,9 +19,11 @@ Fields for sorting hierarchy objects.
 | AWS_NATIVE_S3_BUCKET_OBJECT_COUNT | Sort AWS S3 buckets by number of objects. |
 | AWS_NATIVE_S3_BUCKET_SIZE_BYTES | Sort AWS S3 buckets by bucket size in bytes. |
 | AWS_REGION | Sort by AWS region. |
-| AWS_VPC_ID | Sort by AWS VPC ID. |
+| AWS_VPC_ID *(deprecated: Use EC2_INSTANCE_VPC_ID or RDS_INSTANCE_VPC_ID instead.)* | Sort by AWS VPC ID. |
 | AZURE_BLOB_STORAGE_ACCOUNT_CAPACITY_USED | Sort Azure storage accounts by capacity used. |
 | AZURE_BLOB_STORAGE_ACCOUNT_CONTAINER_COUNT | Sort Azure storage accounts by number of containers. |
+| AZURE_COSMOS_NOSQL_CONTAINER_ACCOUNT_NAME | Sort Azure Cosmos NoSQL containers by the name of their ancestor account, denormalized onto the container as a property. |
+| AZURE_COSMOS_NOSQL_CONTAINER_DATABASE_NAME | Sort Azure Cosmos NoSQL containers by the name of their parent database, denormalized onto the container as a property. |
 | AZURE_DEVOPS_REPO_SIZE | Sort Azure DevOps repositories by size. |
 | AZURE_DISK_ATTACHED_VM *(deprecated: This field is deprecated and no longer used.)* | Sort Azure disks by attached virtual machine name. |
 | AZURE_DISK_CRG_NAME | Sort Azure disks by common resource group name. |
@@ -79,6 +81,7 @@ Fields for sorting hierarchy objects.
 | EC2_INSTANCE_ID | Sort by EC2 instance native ID. |
 | EC2_INSTANCE_NAME | Sort by EC2 instance name. |
 | EC2_INSTANCE_TYPE | Sort by EC2 instance type. |
+| EC2_INSTANCE_VPC_ID | Sort EC2 instances by VPC ID. |
 | EFFECTIVE_SLA_DOMAIN | Sort by effective SLA Domain. |
 | EFFECTIVE_SLA_FREQUENCY | Sort based on the base frequency of effective SLA Domain. |
 | EFFECTIVE_SLA_MAX_RETENTION | Sort based on the maximum retention of the effective SLA Domain. |
@@ -142,6 +145,9 @@ Fields for sorting hierarchy objects.
 | POWER_PLATFORM_APP_TYPE | Sort Power Platform apps by app type. |
 | POWER_PLATFORM_FLOW_LAST_MODIFIED | Sort Power Platform flows by last modified time. |
 | POWER_PLATFORM_FLOW_TYPE | Sort Power Platform flows by flow type. |
+| RDS_INSTANCE_VPC_ID | Sort RDS instances by VPC ID. |
+| RECOVERY_PLAN_LAST_RECOVERY_OUTCOME | Sort Recovery Plans by the most recent terminal recovery outcome from failover_summary. Plans with no recovery sort to the end (NULL last). Uses a correlated MAX(created_at) subquery on failover_summary because the latest-terminal-row-per-blueprint selection cannot be expressed as a simple INNER JOIN + ORDER BY without a window function (unsupported in MySQL 5.7). The composite index failover_summary_bp_outcome_idx on (blueprint_id, parent_recovery_id, outcome, created_at) added in migration m0278 enables an index-only scan for this subquery. |
+| RECOVERY_PLAN_STATUS | Sort Recovery Plans by blueprint status (CONFIGURED, PARTIAL, etc.). |
 | S3_TABLES_ICEBERG_NAMESPACE_AWS_ACCOUNT_NAME | Sort S3 Tables Iceberg Namespaces by ancestor AWS account name. |
 | S3_TABLES_ICEBERG_NAMESPACE_CATALOG_NAME | Sort S3 Tables Iceberg Namespaces by parent catalog name. |
 | S3_TABLES_ICEBERG_TABLE_AWS_ACCOUNT_NAME | Sort S3 Tables Iceberg Tables by ancestor AWS account name. |

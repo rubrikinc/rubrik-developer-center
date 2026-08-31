@@ -1,12 +1,12 @@
 # updateO365AppPermissions
 
-Update O365 Azure app permission in Azure AD portal.
+Updates the Azure AD app API permissions for a Microsoft 365 app.
 
 ## Arguments
 
 | Argument | Type | Description |
 |----------|------|-------------|
-| input *(required)* | [UpdateO365AppPermissionsInput](../types/inputs/UpdateO365AppPermissionsInput.md)! | Input for updating O365 app permissions. |
+| input *(required)* | [UpdateO365AppPermissionsInput](../types/inputs/UpdateO365AppPermissionsInput.md)! | Input for updating Microsoft 365 app permissions. |
 
 ## Returns
 

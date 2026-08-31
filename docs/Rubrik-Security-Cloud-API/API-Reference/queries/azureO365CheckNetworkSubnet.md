@@ -1,17 +1,17 @@
 # azureO365CheckNetworkSubnet
 
-Checks the network subnet of the Azure resources.
+CheckAzureNetworkSubnet checks that the given subnet conforms to the requirements for the Exocompute config.
 
 ## Arguments
 
 | Argument | Type | Description |
 |----------|------|-------------|
-| tenantId *(required)* | String! |  |
-| subscriptionId *(required)* | [UUID](../types/scalars/UUID.md)! |  |
-| resourceGroupName *(required)* | String! |  |
-| vnet_name *(required)* | String! |  |
-| subnet_name *(required)* | String! |  |
-| strict_addr_check *(required)* | Boolean! |  |
+| tenantId *(required)* | String! | The Azure tenant ID. |
+| subscriptionId *(required)* | [UUID](../types/scalars/UUID.md)! | The Azure subscription ID. |
+| resourceGroupName *(required)* | String! | The Azure resource group name. |
+| vnet_name *(required)* | String! | The Azure virtual network name. |
+| subnet_name *(required)* | String! | The Azure subnet name. |
+| strict_addr_check *(required)* | Boolean! | Whether to fail if any address in the subnet is in use. |
 
 ## Returns
 

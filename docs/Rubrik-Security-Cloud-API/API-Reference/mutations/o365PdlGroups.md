@@ -31,7 +31,7 @@ Retrieve or create the groups corresponding to the preferred data location and w
         "pdlAndWorkloadPairs": [
           {
             "pdl": "example-string",
-            "workload": "AUTH0_TENANT"
+            "workload": "ANTHROPIC_CHILD_ORG_SETTINGS"
           }
         ]
       }

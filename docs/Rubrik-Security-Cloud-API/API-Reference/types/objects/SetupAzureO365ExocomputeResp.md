@@ -1,6 +1,6 @@
 # SetupAzureO365ExocomputeResp
 
-*No description available.*
+Response for setting up an Azure O365 Exocompute cluster.
 
 ## Fields
 

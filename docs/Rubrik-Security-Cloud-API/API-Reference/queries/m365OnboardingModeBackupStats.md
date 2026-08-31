@@ -9,6 +9,7 @@ Returns the backup statistics of an M365 organization product in onboarding mode
 | orgId *(required)* | [UUID](../types/scalars/UUID.md)! | Org UUID. |
 | dashboardWorkloadType *(required)* | [M365DashboardWorkloadType](../types/enums/M365DashboardWorkloadType.md)! | Workload type for M365 dashboard. |
 | backupStatsTimeRange *(required)* | [BackupStatsTimeRange](../types/enums/BackupStatsTimeRange.md)! | Time range for backup statistics. |
+| operationMode | [M365DashboardOperationMode](../types/enums/M365DashboardOperationMode.md) | Operation mode to scope the statistics to. Defaults to onboarding mode when omitted. |
 
 ## Returns
 

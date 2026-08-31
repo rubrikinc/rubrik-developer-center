@@ -18,6 +18,7 @@ Represents pause status of an object.
 - [ActiveDirectoryDomainController.objectPauseStatus](ActiveDirectoryDomainController.md)
 - ActiveDirectoryDomainDescendantType.objectPauseStatus
 - ActiveDirectoryDomainPhysicalChildType.objectPauseStatus
+- [AnthropicOrg.objectPauseStatus](AnthropicOrg.md)
 - [AtlassianSite.objectPauseStatus](AtlassianSite.md)
 - [AwsNativeAccount.objectPauseStatus](AwsNativeAccount.md)
 - AwsNativeAccountDescendantType.objectPauseStatus
@@ -43,5 +44,4 @@ Represents pause status of an object.
 - [AzurePostgresFlexibleServer.objectPauseStatus](AzurePostgresFlexibleServer.md)
 - [AzureSqlDatabaseDb.objectPauseStatus](AzureSqlDatabaseDb.md)
 - [AzureSqlDatabaseServer.objectPauseStatus](AzureSqlDatabaseServer.md)
-- [AzureSqlManagedInstanceDatabase.objectPauseStatus](AzureSqlManagedInstanceDatabase.md)
-- *…and 284 more*
+- *…and 293 more*

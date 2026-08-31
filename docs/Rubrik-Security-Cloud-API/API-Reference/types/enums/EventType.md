@@ -53,6 +53,7 @@ Enum representing all the possible event types.
 | QUARANTINE | Quarantine event type. |
 | RANSOMWARE_INVESTIGATION_ANALYSIS | Ransomware Investigation analysis type. |
 | RECOVERY | Recovery type. |
+| REENCRYPTION | Reencryption (re-encrypt a snapshot with the customer-managed key) event type. |
 | REPLICATION | Replication type. |
 | RESOURCE_OPERATIONS | Resource operations type. |
 | SCHEDULE_RECOVERY | Orchestrated Application Recovery schedule-recovery event type. |

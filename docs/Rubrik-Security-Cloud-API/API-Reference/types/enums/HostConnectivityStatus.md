@@ -20,5 +20,5 @@ Connectivity status of a host.
 | REMOTE | Host is on a remote cluster. |
 | REPLICATED_TARGET | Host is a replicated target. |
 | SECONDARY_CLUSTER | Host is on a secondary cluster. |
-| UNAUTHORIZED | Host is unauthorized. |
+| UNAUTHORIZED | Host is not authorized. |
 | UNKNOWN_CONNECTIVITY_STATUS | Unknown connectivity status. |

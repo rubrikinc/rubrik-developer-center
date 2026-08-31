@@ -33,6 +33,8 @@ List of activities.
           actorIpAddress
           actorState
           category
+          classification
+          classifiedOn
           id
           nativeCorrelationId
           operation

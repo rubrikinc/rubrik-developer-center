@@ -9,6 +9,8 @@ Response of the operation that initiates onboarding of Azure AD.
 | appId | String! | ID of the created Azure AD app. |
 | csrfToken | String! | State token to be used in CompleteAzureAdAppSetupReply. |
 | excessivePermissions | [String!]! | List of excessive permissions for the Entra ID app. |
+| isExchangeAdminRoleAssigned | Boolean! | Indicates whether the app's service principal already holds the Exchange Administrator directory role, as observed at setup kickoff. A customer-hosted app requires the tenant admin to grant the role; it is not granted by consent. |
+| missingM365Permissions | [String!]! | Lists the missing M365 permissions (Exchange Online / SharePoint Online) required for Automated M365 Access Recovery. |
 | missingPermissions | [String!]! | List of missing permissions for the Entra ID app. |
 | tenantCloudType | [AzureCloudType](../enums/AzureCloudType.md)! | Cloud type of the Entra ID tenant. |
 | warning | [AzureAdAppSetupWarningType](../enums/AzureAdAppSetupWarningType.md)! | A warning message indicating a unrecommended onboarding scenario. |

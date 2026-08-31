@@ -12,7 +12,7 @@ List of GCP disks.
 | before | String | Returns the elements in the list that occur before the specified cursor. |
 | sortBy | [GcpNativeDiskSortFields](../types/enums/GcpNativeDiskSortFields.md) | Sort fields for list of GCP disks. |
 | sortOrder | [SortOrder](../types/enums/SortOrder.md) | Sorts the order of results. |
-| diskFilters | [GcpNativeDiskFilters](../types/inputs/GcpNativeDiskFilters.md) |  |
+| diskFilters | [GcpNativeDiskFilters](../types/inputs/GcpNativeDiskFilters.md) | Filters for list of GCP disks. |
 
 ## Returns
 
@@ -34,6 +34,7 @@ List of GCP disks.
           fileIndexingStatus
           id
           isExocomputeConfigured
+          isProtectionOnboarded
           isRelic
           kmsKey
           name

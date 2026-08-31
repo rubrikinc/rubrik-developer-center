@@ -35,6 +35,7 @@ Get reclaimable cluster stats data for multiple clusters. This RPC aggregates st
           totalCapacity
           totalUsedStorage
           unprotectedObjectsStorage
+          version
         }
         pageInfo {
           hasNextPage

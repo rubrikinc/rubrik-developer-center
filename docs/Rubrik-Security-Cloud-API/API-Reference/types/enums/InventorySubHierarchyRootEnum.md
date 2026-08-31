@@ -7,6 +7,7 @@ Inventory workloads that are supported on Rubrik.
 | Value | Description |
 |-------|-------------|
 | ACTIVE_DIRECTORY_ROOT | Active Directory root. |
+| ANTHROPIC_ROOT | Anthropic root. |
 | APPFLOWS_ROOT | Orchestrated recovery root. |
 | ATLASSIAN_ROOT | Atlassian root. |
 | AUTH0_ROOT | Auth0 root. |
@@ -26,8 +27,10 @@ Inventory workloads that are supported on Rubrik.
 | GCPNATIVE_ROOT | GCP Native root. |
 | GITHUB_ROOT | GitHub root. |
 | GOOGLE_WORKSPACE_ROOT | The root of the Google workspace hierarchy. |
+| HVM_ROOT | HPE Virtual Machine Essentials root. |
 | HYPERV_ROOT | Hyper-V root. |
 | INFORMIX_ROOT | The root of the Informix hierarchy. |
+| IRISDB_ROOT | The root of the IRIS DB sub-hierarchy. |
 | K8S_ROOT | K8S root. |
 | KUPR_ROOT | KUPR root. |
 | LINUX_HOST_ROOT | Linux Host root. |

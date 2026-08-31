@@ -36,3 +36,4 @@ Reply to Create on-demand job request.
 - [mutation: restoreO365Snappable](../../mutations/restoreO365Snappable.md)
 - [mutation: restoreO365TeamsConversations](../../mutations/restoreO365TeamsConversations.md)
 - [mutation: restoreO365TeamsFiles](../../mutations/restoreO365TeamsFiles.md)
+- [mutation: startSaasAppItemsRestore](../../mutations/startSaasAppItemsRestore.md)

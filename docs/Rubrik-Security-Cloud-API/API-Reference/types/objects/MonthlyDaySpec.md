@@ -13,3 +13,4 @@ Specification for day selection for monthly snapshot schedule. You can choose on
 **Referenced by**
 
 - [MonthlySnapshotSchedule.daysOfMonth](MonthlySnapshotSchedule.md)
+- [YearlyDaySpecification.dayOfMonthSpecification](YearlyDaySpecification.md)

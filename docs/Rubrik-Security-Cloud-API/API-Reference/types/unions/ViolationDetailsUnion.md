@@ -11,3 +11,4 @@ Details about the policy violation.
 - [CrowdStrikeAlertViolationDetails](../objects/CrowdStrikeAlertViolationDetails.md)
 - [DefenderAlertViolationDetails](../objects/DefenderAlertViolationDetails.md)
 - [SigninAnomalyViolationDetails](../objects/SigninAnomalyViolationDetails.md)
+- [SaasActivityViolationDetails](../objects/SaasActivityViolationDetails.md)

@@ -13,7 +13,7 @@ A Pure Storage protection group protected by Rubrik.
 | arrayId | String! | ID of the Pure Storage array this protection group belongs to. |
 | authorizedOperations | [[Operation](../enums/Operation.md)!]! | The authorized operations on the object. |
 | cdmId | String! | ID of the protection group on the Rubrik cluster. |
-| cdmLink | String! | A link to view the workload on the CDM cluster. For dev use only. |
+| cdmLink | String! | A link to view the workload on the Rubrik cluster. For dev use only. |
 | cdmPendingObjectPauseAssignment | [PendingObjectPauseAssignmentStatus](../enums/PendingObjectPauseAssignmentStatus.md) | Object pause pending assignment details for CDM objects. |
 | cdmSnapshots | [CdmWorkloadSnapshotConnection](CdmWorkloadSnapshotConnection.md)! | List of snapshots taken for this Pure Storage protection group, including snapshot-time volume membership. |
 | cluster | [Cluster](Cluster.md)! | Rubrik cluster where this object originated. |
@@ -34,7 +34,7 @@ A Pure Storage protection group protected by Rubrik.
 | name | String! | Name of the protection group. |
 | newestArchivedSnapshot | [CdmSnapshot](CdmSnapshot.md) | The newest snapshot archived to AWS. |
 | newestIndexedSnapshot | [CdmSnapshot](CdmSnapshot.md) | The most recent indexed snapshot of this workload. |
-| newestReplicatedSnapshot | [CdmSnapshot](CdmSnapshot.md) | The newest snapshot replicated to a cluster. |
+| newestReplicatedSnapshot | [CdmSnapshot](CdmSnapshot.md) | The newest snapshot replicated to a Rubrik cluster. |
 | newestSnapshot | [CdmSnapshot](CdmSnapshot.md) | The most recent snapshot of this workload. |
 | numVolumes | Int! | Number of volumes in this protection group. |
 | numWorkloadDescendants | Int! | Number of descendant workloads of this object. |
@@ -57,8 +57,8 @@ A Pure Storage protection group protected by Rubrik.
 | slaPauseStatus | Boolean! | Pause status of the effective SLA Domain of the hierarchy object. |
 | snapshotConnection | [CdmSnapshotConnection](CdmSnapshotConnection.md) | The list of snapshots taken for this workload. |
 | snapshotDistribution | [SnapshotDistribution](SnapshotDistribution.md)! | Distribution of the snapshots of the hierarchy object. |
-| snapshotGroupByConnection | [CdmSnapshotGroupByConnection](CdmSnapshotGroupByConnection.md) | GroupBy connection for the snapshots of this workload. |
-| snapshotGroupBySummary | [CdmSnapshotGroupBySummaryConnection](CdmSnapshotGroupBySummaryConnection.md) | GroupBy connection for the snapshots of this workload. |
+| snapshotGroupByConnection | [CdmSnapshotGroupByConnection](CdmSnapshotGroupByConnection.md) | Group-by connection for the snapshots of this workload. |
+| snapshotGroupBySummary | [CdmSnapshotGroupBySummaryConnection](CdmSnapshotGroupBySummaryConnection.md) | Group-by connection for the snapshots of this workload. |
 | volumes | [PureStorageVolumeV1Connection](PureStorageVolumeV1Connection.md)! | Volumes in this protection group. |
 
 ## Field Arguments

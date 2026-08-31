@@ -1,15 +1,15 @@
 # azureO365CheckVirtualNetworkName
 
-Checks the virtual network name.
+CheckAzureVirtualNetworkNameV2 checks that the given virtual network name is valid and available for use in Azure. Identity is carried in req_ctx.
 
 ## Arguments
 
 | Argument | Type | Description |
 |----------|------|-------------|
-| tenantId *(required)* | String! |  |
-| subscriptionId *(required)* | [UUID](../types/scalars/UUID.md)! |  |
-| groupName *(required)* | String! |  |
-| vnet_name *(required)* | String! |  |
+| tenantId *(required)* | String! | Azure tenant ID. |
+| subscriptionId *(required)* | [UUID](../types/scalars/UUID.md)! | Azure subscription ID. |
+| groupName *(required)* | String! | Azure resource group name. |
+| vnet_name *(required)* | String! | Azure virtual network name to check. |
 
 ## Returns
 

@@ -48,7 +48,7 @@ Retrieve all report templates by category.
               {
                 "description": "example-string",
                 "name": "example-string",
-                "reportViewType": "ACTIVE_DIRECTORY_FOREST_RECOVERY_REPORT"
+                "reportViewType": "ACCOUNT_LIFECYCLE_REPORT"
               }
             ]
           }

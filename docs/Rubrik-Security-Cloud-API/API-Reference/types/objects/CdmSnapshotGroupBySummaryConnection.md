@@ -21,6 +21,7 @@ Paginated list of CdmSnapshotGroupBySummary objects. Each page of the results in
 - [ExchangeDatabase.snapshotGroupBySummary](ExchangeDatabase.md)
 - [FusionComputeVirtualMachine.snapshotGroupBySummary](FusionComputeVirtualMachine.md)
 - [HyperVVirtualMachine.snapshotGroupBySummary](HyperVVirtualMachine.md)
+- [HypervisorVirtualMachineV1.snapshotGroupBySummary](HypervisorVirtualMachineV1.md)
 - KosmosSnappableHierarchyObjectType.snapshotGroupBySummary
 - [KubernetesProtectionSet.snapshotGroupBySummary](KubernetesProtectionSet.md)
 - [KubernetesVirtualMachine.snapshotGroupBySummary](KubernetesVirtualMachine.md)
@@ -32,6 +33,7 @@ Paginated list of CdmSnapshotGroupBySummary objects. Each page of the results in
 - [MysqldbInstance.snapshotGroupBySummary](MysqldbInstance.md)
 - [NasFileset.snapshotGroupBySummary](NasFileset.md)
 - [NutanixVm.snapshotGroupBySummary](NutanixVm.md)
+- [OpenstackVirtualMachine.snapshotGroupBySummary](OpenstackVirtualMachine.md)
 - [OracleDataGuardGroup.snapshotGroupBySummary](OracleDataGuardGroup.md)
 - [OracleDatabase.snapshotGroupBySummary](OracleDatabase.md)
 - [PostgreSQLDbCluster.snapshotGroupBySummary](PostgreSQLDbCluster.md)
@@ -41,5 +43,6 @@ Paginated list of CdmSnapshotGroupBySummary objects. Each page of the results in
 - [SapHanaSystem.snapshotGroupBySummary](SapHanaSystem.md)
 - [ShareFileset.snapshotGroupBySummary](ShareFileset.md)
 - [VcdVapp.snapshotGroupBySummary](VcdVapp.md)
+- [VolumeGroup.snapshotGroupBySummary](VolumeGroup.md)
 - [VsphereVm.snapshotGroupBySummary](VsphereVm.md)
-- [WindowsFileset.snapshotGroupBySummary](WindowsFileset.md)
+- *…and 1 more*

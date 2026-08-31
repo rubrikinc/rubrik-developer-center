@@ -13,6 +13,7 @@ Retrieves a paginated list of all Azure SQL Database Servers.
 | sortBy | [AzureSqlDatabaseServerSortFields](../types/enums/AzureSqlDatabaseServerSortFields.md) | Sort fields for list of Azure SQL Database Servers. |
 | sortOrder | [SortOrder](../types/enums/SortOrder.md) | Sorts the order of results. |
 | azureSqlDatabaseServerFilters | [AzureSqlDatabaseServerFilters](../types/inputs/AzureSqlDatabaseServerFilters.md) | Filters for listing Azure SQL Database Servers. |
+| authorizedOperationFilter | [Operation](../types/enums/Operation.md) | Filters the results to objects on which the caller is authorized to perform the specified operation. Only privilege operations are accepted. |
 
 ## Returns
 

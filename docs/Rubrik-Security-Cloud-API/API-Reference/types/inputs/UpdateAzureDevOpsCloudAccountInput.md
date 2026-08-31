@@ -7,7 +7,7 @@ Contains parameters to update an existing Azure DevOps cloud account configurati
 | Field | Type | Description |
 |-------|------|-------------|
 | backupLocationId | [UUID](../scalars/UUID.md) | Archival group ID for storing Azure DevOps backups. Retrieve the ID by calling the allTargetMappings GraphQL query and using the id field of the desired TargetMapping. |
-| backupRegion | String | Azure region for backup storage (e.g., "eastus", "westus2"). See addAzureDevOpsCloudAccount for details. |
+| backupRegion | String | Azure region where Azure DevOps backups are stored. |
 | exocomputeCloudAccountId | [UUID](../scalars/UUID.md) | UUID of the Azure cloud account configured for exocompute. Retrieve the ID by calling the allCloudAccountExocomputeMappings GraphQL query with cloudVendor set to AZURE. |
 | exocomputeRegion | String | Azure region for Rubrik-hosted exocompute (e.g., "eastus", "westus2"). |
 | hostType | [DevopsHostType](../enums/DevopsHostType.md) | Type of exocompute host --CUSTOMER_HOST or RUBRIK_HOST. |

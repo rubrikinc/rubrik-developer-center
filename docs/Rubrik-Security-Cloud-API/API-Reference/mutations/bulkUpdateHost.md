@@ -1,6 +1,6 @@
 # bulkUpdateHost
 
-*No description available.*
+Update properties for multiple hosts in bulk.
 
 ## Arguments
 

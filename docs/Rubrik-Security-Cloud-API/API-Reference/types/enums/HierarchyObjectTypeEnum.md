@@ -8,12 +8,22 @@ Hierarchy object type enum covering all CDM and RSC hierarchy objects.
 |-------|-------------|
 | ACTIVE_DIRECTORY_DOMAIN | Active Directory domain. |
 | ACTIVE_DIRECTORY_DOMAIN_CONTROLLER | Active Directory domain controller. |
+| ANTHROPIC_CHILD_ORG | Anthropic child organization. |
+| ANTHROPIC_CHILD_ORG_SETTINGS | Anthropic child organization settings (workload, leaf). |
+| ANTHROPIC_CHILD_ORG_USER | Anthropic child organization user. |
+| ANTHROPIC_DEVICE | Anthropic endpoint device (workload, leaf). |
+| ANTHROPIC_ORG | Anthropic organization. |
+| ANTHROPIC_ORG_SETTINGS | Anthropic organization settings (workload, leaf). |
+| ANTHROPIC_USER_CLAUDE_CHAT | Anthropic user Claude chat (workload, leaf). |
 | ATLASSIAN_SITE | Atlassian site. |
 | AUTH0_TENANT | Auth0 tenant. |
 | AWS_NATIVE_CONFIG | AWS Native Config. |
 | AWS_NATIVE_DYNAMODB_TABLE | AWS native DynamoDB table. |
 | AWS_NATIVE_S3_BUCKET | AWS native S3 bucket. |
 | AZURE_AD_DIRECTORY | Azure AD Directory. |
+| AZURE_COSMOS_NOSQL_ACCOUNT | Azure Cosmos NoSQL account. |
+| AZURE_COSMOS_NOSQL_CONTAINER | Azure Cosmos NoSQL container. |
+| AZURE_COSMOS_NOSQL_DATABASE | Azure Cosmos NoSQL SQL (NoSQL) database. |
 | AZURE_DEVOPS_ORGANIZATION | Azure DevOps Organization. |
 | AZURE_DEVOPS_PROJECT | Azure DevOps Project. |
 | AZURE_DEVOPS_PROJECT_FIXED_OBJECT | Azure DevOps project-scoped fixed object to represent non repo entity. |
@@ -88,6 +98,15 @@ Hierarchy object type enum covering all CDM and RSC hierarchy objects.
 | GcpNativeGCEInstance | Gcp Native GCE Instance. |
 | GcpNativeProject | Gcp Native Project. |
 | HOST_FAILOVER_CLUSTER | Host Failover Cluster. |
+| HVM_CLOUD | HPE Virtual Machine Essentials cloud. |
+| HVM_CLUSTER | HPE Virtual Machine Essentials cluster. |
+| HVM_DATASTORE | HPE Virtual Machine Essentials datastore. |
+| HVM_GROUP | HPE Virtual Machine Essentials group. |
+| HVM_HOST | HPE Virtual Machine Essentials host. |
+| HVM_INSTANCE | HPE Virtual Machine Essentials instance. An inventory hierarchy level, not a protectable object. |
+| HVM_MANAGER | HPE Virtual Machine Essentials manager. |
+| HVM_NETWORK | HPE Virtual Machine Essentials network. |
+| HVM_VIRTUAL_MACHINE | HPE Virtual Machine Essentials virtual machine. The protectable object in this hierarchy. |
 | Hdfs | Hdfs. |
 | HostShare | Host Share. |
 | HypervCluster | Hyperv Cluster. |
@@ -95,11 +114,15 @@ Hierarchy object type enum covering all CDM and RSC hierarchy objects.
 | HypervServer | Hyperv Server. |
 | HypervVirtualMachine | Hyperv Virtual Machine. |
 | INFORMIX_INSTANCE | Informix Instance. |
+| IRISDB_DATABASE | IRIS database (a single IRIS database within an instance). |
+| IRISDB_INSTANCE | IRIS DB instance (Epic EpicCare database host node). |
 | JIRA_FIXED_OBJECT | Jira fixed object. |
 | JIRA_PROJECT | Jira project. |
 | K8S_CLUSTER | Kubernetes cluster. |
 | K8S_LABEL | Kubernetes label. |
 | K8S_NAMESPACE_V2 | Kubernetes namespace v2. |
+| K8S_POSTGRES_DATABASE | Kubernetes Postgres database. |
+| K8S_POSTGRES_DB_CLUSTER | Kubernetes Postgres database cluster. |
 | K8S_PROTECTION_SET | Kubernetes Protection Set. |
 | K8S_VIRTUAL_MACHINE | Kubernetes virtual machine. |
 | KuprCluster | Kupr Cluster. |
@@ -166,6 +189,7 @@ Hierarchy object type enum covering all CDM and RSC hierarchy objects.
 | OPENSTACK_IMAGE | OpenStack Image. |
 | OPENSTACK_PROJECT | OpenStack Project. |
 | OPENSTACK_REGION | OpenStack Region. |
+| OPENSTACK_TAG | OpenStack tag. |
 | OPENSTACK_VIRTUAL_MACHINE | OpenStack Virtual Machine. |
 | ORACLE_DATA_GUARD_GROUP | ORACLE DATA GUARD GROUP. |
 | ORCHESTRATED_APPLICATION_RECOVERY_BLUEPRINT | Orchestrated Application Recovery Blueprint. |

@@ -1,16 +1,16 @@
 # azureO365CheckNSGOutboundRules
 
-Checks the NSG Outbound rules of the Azure resources.
+CheckNetworkSecurityGroupOutboundRules validates that the given NSG allows the required egress traffic for an AKS.
 
 ## Arguments
 
 | Argument | Type | Description |
 |----------|------|-------------|
-| tenantId *(required)* | String! |  |
-| subscriptionId *(required)* | [UUID](../types/scalars/UUID.md)! |  |
-| resourceGroupName *(required)* | String! |  |
-| vnet_name *(required)* | String! |  |
-| subnet_name *(required)* | String! |  |
+| tenantId *(required)* | String! | Azure tenant ID. |
+| subscriptionId *(required)* | [UUID](../types/scalars/UUID.md)! | Azure subscription ID. |
+| resourceGroupName *(required)* | String! | Azure resource group name. |
+| vnet_name *(required)* | String! | Azure virtual network name. |
+| subnet_name *(required)* | String! | Azure subnet name. |
 
 ## Returns
 

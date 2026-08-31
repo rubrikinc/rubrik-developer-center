@@ -16,7 +16,7 @@ Azure Cloud Account Feature details.
 | roles | [[AzureRole](AzureRole.md)!]! | Role details for the feature. |
 | specificDetails | [AzureSpecificFeatureDetails](../unions/AzureSpecificFeatureDetails.md) | Specific details for the feature, varies based on the feature type. |
 | status | [CloudAccountStatus](../enums/CloudAccountStatus.md)! | Specifies the state of an Azure cloud account in Rubrik environment. For example, Refreshed, Disconnected, etc. A cloud account can only be in one state at a time. |
-| userAssignedManagedIdentity | [AzureUserAssignedManagedIdentity](AzureUserAssignedManagedIdentity.md) | User assigned managed identity. It is populated for Cloud Native Archival Encryption and Azure SQL DB Protection features. |
+| userAssignedManagedIdentity | [AzureUserAssignedManagedIdentity](AzureUserAssignedManagedIdentity.md) | User assigned managed identity. It is populated for Cloud Native Archival Encryption, Azure SQL DB Protection, and Azure PostgreSQL Flexible Server Protection features. |
 
 ## Used By
 

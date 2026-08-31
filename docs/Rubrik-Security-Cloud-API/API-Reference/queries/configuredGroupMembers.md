@@ -1,6 +1,6 @@
 # configuredGroupMembers
 
-Objects that match the specifications of a configured group.
+Returns objects that match the specifications of a configured group.
 
 ## Arguments
 
@@ -8,6 +8,8 @@ Objects that match the specifications of a configured group.
 |----------|------|-------------|
 | first | Int | Returns the first n elements from the list. |
 | after | String | Returns the elements in the list that occur after the specified cursor. |
+| last | Int | Returns the last n elements from the list. |
+| before | String | Returns the elements in the list that occur before the specified cursor. |
 | orgId *(required)* | [UUID](../types/scalars/UUID.md)! | Org UUID. |
 | wildcard | String | A wildcard pattern that group members' names or URLs must match. |
 | pdls *(required)* | [String!]! | A list of preferred data locations that group members must match. |

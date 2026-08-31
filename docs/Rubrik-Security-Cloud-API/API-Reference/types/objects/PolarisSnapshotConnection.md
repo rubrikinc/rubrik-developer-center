@@ -30,6 +30,7 @@ Paginated list of PolarisSnapshot objects. Each page of the results includes at 
 - [AzureSqlManagedInstanceDatabase.snapshotConnection](AzureSqlManagedInstanceDatabase.md)
 - [AzureStorageAccount.snapshotConnection](AzureStorageAccount.md)
 - [GcpAlloyDbCluster.snapshotConnection](GcpAlloyDbCluster.md)
+- [GcpBigQueryDataset.snapshotConnection](GcpBigQueryDataset.md)
 - [GcpCloudSqlInstance.snapshotConnection](GcpCloudSqlInstance.md)
 - [GcpNativeDisk.snapshotConnection](GcpNativeDisk.md)
 - [GcpNativeGceInstance.snapshotConnection](GcpNativeGceInstance.md)
@@ -44,5 +45,4 @@ Paginated list of PolarisSnapshot objects. Each page of the results includes at 
 - MicrosoftGroup.snapshotConnection
 - MicrosoftMailbox.snapshotConnection
 - MicrosoftOnedrive.snapshotConnection
-- MicrosoftOrg.snapshotConnection
-- *…and 15 more*
+- *…and 16 more*

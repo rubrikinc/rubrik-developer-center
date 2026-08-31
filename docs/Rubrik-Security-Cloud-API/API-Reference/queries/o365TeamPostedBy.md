@@ -1,6 +1,6 @@
 # o365TeamPostedBy
 
-Users who have posted in a team.
+SearchTeamPostSenders returns the users who have posted in the given Teams workload, paginated.
 
 ## Arguments
 
@@ -8,9 +8,11 @@ Users who have posted in a team.
 |----------|------|-------------|
 | first | Int | Returns the first n elements from the list. |
 | after | String | Returns the elements in the list that occur after the specified cursor. |
-| snappableFid *(required)* | [UUID](../types/scalars/UUID.md)! | The FID for the workload. |
+| last | Int | Returns the last n elements from the list. |
+| before | String | Returns the elements in the list that occur before the specified cursor. |
+| snappableFid *(required)* | [UUID](../types/scalars/UUID.md)! | The FID for the Teams workload. |
 | o365OrgId *(required)* | [UUID](../types/scalars/UUID.md)! | The FID for the O365 organization. |
-| nameFilter | String |  |
+| nameFilter | String | Optional display-name filter for post senders. |
 
 ## Returns
 

@@ -1,6 +1,6 @@
 # O365OauthConsentCompleteReply
 
-*No description available.*
+Response for the completion of an O365 OAuth consent flow.
 
 ## Fields
 

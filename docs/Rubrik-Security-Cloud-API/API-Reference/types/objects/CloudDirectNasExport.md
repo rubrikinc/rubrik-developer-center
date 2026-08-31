@@ -2,7 +2,7 @@
 
 Cloud Direct NAS export object.
 
-**Implements:** [CloudDirectHierarchyWorkload](../interfaces/CloudDirectHierarchyWorkload.md), [CloudDirectHierarchyObject](../interfaces/CloudDirectHierarchyObject.md), [HierarchyObject](../interfaces/HierarchyObject.md)
+**Implements:** [CloudDirectHierarchyObject](../interfaces/CloudDirectHierarchyObject.md), [HierarchyObject](../interfaces/HierarchyObject.md), [CloudDirectHierarchyWorkload](../interfaces/CloudDirectHierarchyWorkload.md)
 
 ## Fields
 

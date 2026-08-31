@@ -12,8 +12,8 @@ Managed Volume information.
 | allTags | [[AssignedRscTag](AssignedRscTag.md)!]! | RSC tags to which this hierarchy object is assigned. |
 | applicationTag | [ManagedVolumeApplicationTag](../enums/ManagedVolumeApplicationTag.md) | Mount protocol used for Managed Volume. |
 | authorizedOperations | [[Operation](../enums/Operation.md)!]! | The authorized operations on the object. |
-| cdmId | String! | The ID of the workload on the Rubrik CDM cluster. |
-| cdmLink | String! | A link to view the workload on the CDM cluster. For dev use only. |
+| cdmId | String! | The ID of the workload on the Rubrik cluster. |
+| cdmLink | String! | A link to view the workload on the Rubrik cluster. For dev use only. |
 | cdmPendingObjectPauseAssignment | [PendingObjectPauseAssignmentStatus](../enums/PendingObjectPauseAssignmentStatus.md) | Object pause pending assignment details for CDM objects. |
 | clientConfig | [ManagedVolumeSlaClientConfig](ManagedVolumeSlaClientConfig.md) | Client configuration related to backup scripts. |
 | clientNamePatterns | [String!]! | Allowed host names. |
@@ -41,7 +41,7 @@ Managed Volume information.
 | name | String! | Name of the hierarchy object. |
 | newestArchivedSnapshot | [CdmSnapshot](CdmSnapshot.md) | The newest snapshot archived to AWS. |
 | newestIndexedSnapshot | [CdmSnapshot](CdmSnapshot.md) | The most recent indexed snapshot of this workload. |
-| newestReplicatedSnapshot | [CdmSnapshot](CdmSnapshot.md) | The newest snapshot replicated to a cluster. |
+| newestReplicatedSnapshot | [CdmSnapshot](CdmSnapshot.md) | The newest snapshot replicated to a Rubrik cluster. |
 | newestSnapshot | [CdmSnapshot](CdmSnapshot.md) | The most recent snapshot of this workload. |
 | nfsSettings | [ManagedVolumeNfsSettings](ManagedVolumeNFSSettings.md) | NFS settings and configurations for the Managed Volume. |
 | numChannels | Int! | Number of channels in the Managed Volume. |
@@ -71,8 +71,8 @@ Managed Volume information.
 | smbShare | [ManagedVolumeSmbShare](ManagedVolumeSmbShare.md) | SMB share details of the Managed Volume. |
 | snapshotConnection | [CdmSnapshotConnection](CdmSnapshotConnection.md) | The list of snapshots taken for this workload. |
 | snapshotDistribution | [SnapshotDistribution](SnapshotDistribution.md)! | Distribution of the snapshots of the hierarchy object. |
-| snapshotGroupByConnection | [CdmSnapshotGroupByConnection](CdmSnapshotGroupByConnection.md) | GroupBy connection for the snapshots of this workload. |
-| snapshotGroupBySummary | [CdmSnapshotGroupBySummaryConnection](CdmSnapshotGroupBySummaryConnection.md) | GroupBy connection for the snapshots of this workload. |
+| snapshotGroupByConnection | [CdmSnapshotGroupByConnection](CdmSnapshotGroupByConnection.md) | Group-by connection for the snapshots of this workload. |
+| snapshotGroupBySummary | [CdmSnapshotGroupBySummaryConnection](CdmSnapshotGroupBySummaryConnection.md) | Group-by connection for the snapshots of this workload. |
 | state | [ManagedVolumeState](../enums/ManagedVolumeState.md)! | State of the Managed Volume. |
 | subnet | String | Subnet of the Managed Volume. |
 

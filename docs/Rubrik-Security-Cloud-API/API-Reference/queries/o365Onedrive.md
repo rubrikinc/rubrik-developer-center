@@ -1,12 +1,12 @@
 # o365Onedrive
 
-Details for the OneDrive corresponding to the snappable ID.
+Details for the OneDrive corresponding to the workload ID.
 
 ## Arguments
 
 | Argument | Type | Description |
 |----------|------|-------------|
-| snappableFid *(required)* | [UUID](../types/scalars/UUID.md)! | The FID for the workload. |
+| snappableFid *(required)* | [UUID](../types/scalars/UUID.md)! | Rubrik UUID for the O365 OneDrive workload. |
 
 ## Returns
 

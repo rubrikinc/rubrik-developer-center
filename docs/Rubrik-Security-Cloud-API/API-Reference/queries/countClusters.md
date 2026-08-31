@@ -23,6 +23,7 @@ Count Rubrik clusters grouped by status.
         fatalClusters
         okClusters
         totalClusters
+        tunnelEnabledClusters
         warningClusters
       }
     }
@@ -44,6 +45,7 @@ Count Rubrik clusters grouped by status.
           "fatalClusters": 0,
           "okClusters": 0,
           "totalClusters": 0,
+          "tunnelEnabledClusters": 0,
           "warningClusters": 0
         }
       }

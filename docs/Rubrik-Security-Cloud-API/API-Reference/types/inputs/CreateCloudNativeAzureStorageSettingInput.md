@@ -6,6 +6,7 @@ Input for create storage settings for an account.
 
 | Field | Type | Description |
 |-------|------|-------------|
+| awsKmsKey | [AwsKmsKeyIdentifierInput](AwsKmsKeyIdentifierInput.md) | AWS KMS key for client-side encryption of an AWS workload archived to this Azure target (cross-cloud archival). Mutually exclusive with azureKeyVaultKey; requires the archival group's source workload cloud to be AWS. |
 | azureCloudType | [AzureCloudType](../enums/AzureCloudType.md) | Cloud type of Azure cloud account. |
 | azureKeyVaultKey | [AzureKeyVaultKeyIdentifierInput](AzureKeyVaultKeyIdentifierInput.md) | Azure Key Vault key for client-side encryption of the archival target. |
 | cloudAccountId | [UUID](../scalars/UUID.md)! | Cloud Account Id of the target subscription. |

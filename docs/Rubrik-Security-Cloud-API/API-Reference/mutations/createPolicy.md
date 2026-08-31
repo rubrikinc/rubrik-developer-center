@@ -6,7 +6,7 @@ Create a classification policy.
 
 | Argument | Type | Description |
 |----------|------|-------------|
-| input *(required)* | [CreatePolicyInput](../types/inputs/CreatePolicyInput.md)! |  |
+| input *(required)* | [CreatePolicyInput](../types/inputs/CreatePolicyInput.md)! | Input for creating a classification policy. |
 
 ## Returns
 

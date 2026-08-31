@@ -2,7 +2,7 @@
 
 Azure DevOps Project.
 
-**Implements:** [HierarchyObject](../interfaces/HierarchyObject.md), [PolarisHierarchyObject](../interfaces/PolarisHierarchyObject.md)
+**Implements:** [PolarisHierarchyObject](../interfaces/PolarisHierarchyObject.md), [HierarchyObject](../interfaces/HierarchyObject.md)
 
 ## Fields
 
@@ -16,8 +16,9 @@ Azure DevOps Project.
 | effectiveSlaDomain | [SlaDomain](../interfaces/SlaDomain.md)! | Effective SLA Domain of the hierarchy object. |
 | effectiveSlaSourceObject | [PathNode](PathNode.md) | Path node of the effective SLA Domain source. |
 | fixedObjectCounts | [AzureDevOpsProjectFixedObjectCounts](AzureDevOpsProjectFixedObjectCounts.md) | Developer-collaboration object counts for the project's fixed-object child. Returns null when the project has no fixed-object child. |
-| fixedObjectId | [UUID](../scalars/UUID.md) | Managed object UUID of this project's fixed object. Returns null when the project fixed object has not been created yet. |
-| id | [UUID](../scalars/UUID.md)! | ID of the Azure DevOps project. |
+| fixedObjectId | [UUID](../scalars/UUID.md) | Managed object UUID of this project's fixed object. Null when the project fixed object has not been created yet. |
+| id | [UUID](../scalars/UUID.md)! | ID of the hierarchy object. |
+| isMissingDeveloperCollaborationAccess | [AzureDevOpsProjectMissingPermission](AzureDevOpsProjectMissingPermission.md) | True when the org has developer-collaboration protection enabled but this project has not yet been granted the required access. |
 | isRelic | Boolean! | True if the Azure DevOps project is a relic. |
 | logicalPath | [[PathNode](PathNode.md)!]! | Sequential list of the logical ancestors of this object. |
 | name | String! | Name of the hierarchy object. |

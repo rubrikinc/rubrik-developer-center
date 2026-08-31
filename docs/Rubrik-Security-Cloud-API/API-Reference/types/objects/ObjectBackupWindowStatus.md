@@ -19,6 +19,7 @@ Represents the object-level backup window status of a hierarchy object.
 - [ActiveDirectoryDomainController.objectBackupWindow](ActiveDirectoryDomainController.md)
 - ActiveDirectoryDomainDescendantType.objectBackupWindow
 - ActiveDirectoryDomainPhysicalChildType.objectBackupWindow
+- [AnthropicOrg.objectBackupWindow](AnthropicOrg.md)
 - [AtlassianSite.objectBackupWindow](AtlassianSite.md)
 - [AwsNativeAccount.objectBackupWindow](AwsNativeAccount.md)
 - AwsNativeAccountDescendantType.objectBackupWindow
@@ -44,5 +45,4 @@ Represents the object-level backup window status of a hierarchy object.
 - [AzurePostgresFlexibleServer.objectBackupWindow](AzurePostgresFlexibleServer.md)
 - [AzureSqlDatabaseDb.objectBackupWindow](AzureSqlDatabaseDb.md)
 - [AzureSqlDatabaseServer.objectBackupWindow](AzureSqlDatabaseServer.md)
-- [AzureSqlManagedInstanceDatabase.objectBackupWindow](AzureSqlManagedInstanceDatabase.md)
-- *…and 284 more*
+- *…and 293 more*

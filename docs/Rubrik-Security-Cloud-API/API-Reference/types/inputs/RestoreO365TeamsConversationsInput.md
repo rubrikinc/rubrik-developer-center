@@ -1,6 +1,6 @@
 # RestoreO365TeamsConversationsInput
 
-Input for restoring O365 Teams channel conversations.
+Request for restoring Teams channel conversations. The account, user, and RSC org id are resolved from req_ctx.
 
 ## Fields
 

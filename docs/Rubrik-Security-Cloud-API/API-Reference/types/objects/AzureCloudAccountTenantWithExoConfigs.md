@@ -7,6 +7,7 @@ Azure Cloud Account Tenant with details of exocompute configured for subscriptio
 | Field | Type | Description |
 |-------|------|-------------|
 | appName | String! | App name of Azure application for the tenant. |
+| apps | [[AzureCloudAccountTenantApp](AzureCloudAccountTenantApp.md)!]! | Contains every Azure application configured on this tenant, one per auth type present. On a mixed-auth tenant this has more than one entry. The scalar appName and clientId fields return the primary (first-onboarded) app for backward compatibility. |
 | clientId | String! | Client ID of azure application for the tenant. |
 | cloudType | [AzureCloudType](../enums/AzureCloudType.md)! | Type of Azure Tenant. Can be Azure Public Cloud or Azure China Cloud. |
 | domainName | String! | Azure Active Directory (AD) domain corresponding to subscription. |

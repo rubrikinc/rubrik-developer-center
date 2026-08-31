@@ -1,6 +1,6 @@
 # DataGovShareType
 
-*No description available.*
+The network file-sharing protocol used to expose a share.
 
 ## Values
 

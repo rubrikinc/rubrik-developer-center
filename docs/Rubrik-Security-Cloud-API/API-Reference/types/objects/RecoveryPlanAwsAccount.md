@@ -9,6 +9,7 @@ Identifying details for an AWS account used as a recovery plan location.
 | cloudType | [AwsCloudType](../enums/AwsCloudType.md)! | Cloud partition the AWS account belongs to. |
 | id | String! | Identifier of the AWS account. |
 | name | String! | Name of the AWS account. |
+| region | [AwsNativeRegion](../enums/AwsNativeRegion.md)! | The region this recovery plan location targets. This is distinct from regionSpecs, which lists every region the account is registered with. |
 | regionSpecs | [[AwsNativeRegionSpec](AwsNativeRegionSpec.md)!]! | Region specifications configured for the AWS account. |
 | status | [AwsAccountStatus](../enums/AwsAccountStatus.md)! | Protection status of the AWS account. |
 

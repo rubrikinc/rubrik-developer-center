@@ -6,7 +6,7 @@ Rubrik Cloud Vault (RCV) entitlement with order number.
 
 | Field | Type | Description |
 |-------|------|-------------|
-| entitlement | [RcvEntitlementWithExpirationDate](RcvEntitlementWithExpirationDate.md) | Rubrik Cloud Vault (RCV) entitlement capacity in TB. |
+| entitlement | [RcvEntitlementWithExpirationDate](RcvEntitlementWithExpirationDate.md) | Rubrik Cloud Vault (RCV) entitlement with expiration date. |
 | orderNumber | String! | Rubrik Cloud Vault (RCV) entitlement order number. |
 
 ## Used By

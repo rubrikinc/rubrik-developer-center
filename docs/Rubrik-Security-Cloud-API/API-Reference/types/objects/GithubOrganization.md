@@ -40,6 +40,7 @@ GitHub Organization.
 | slaAssignment | [SlaAssignmentTypeEnum](../enums/SlaAssignmentTypeEnum.md)! | SLA Domain assignment type for this object. |
 | slaPauseStatus | Boolean! | Pause status of the effective SLA Domain of the hierarchy object. |
 | snapshotDistribution | [SnapshotDistribution](SnapshotDistribution.md)! | Distribution of the snapshots of the hierarchy object. |
+| zeusState | [DevopsZeusState](../enums/DevopsZeusState.md)! | Zeus provisioning lifecycle state of the GitHub organization. |
 
 ## Field Arguments
 

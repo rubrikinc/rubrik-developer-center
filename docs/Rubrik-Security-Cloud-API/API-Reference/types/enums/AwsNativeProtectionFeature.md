@@ -6,6 +6,7 @@ AWS native protection features.
 
 | Value | Description |
 |-------|-------------|
+| CLOUD_COST_REPORT | AWS native protection feature is Cloud Cost Report. Present so the feature can be removed through startAwsNativeAccountDisableJob, the same route CLOUD_DISCOVERY uses; it protects no workload of its own. |
 | CLOUD_DISCOVERY | AWS native protection feature is Cloud Discovery. |
 | CONFIG | AWS native protection feature is Config. |
 | DYNAMODB | AWS native protection feature is DynamoDB. |

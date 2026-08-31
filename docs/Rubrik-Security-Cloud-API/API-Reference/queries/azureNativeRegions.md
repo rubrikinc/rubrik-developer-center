@@ -15,7 +15,7 @@ Retrieves a paginated list of all Azure Native Regions.
 | regionFilters | [AzureNativeRegionFilters](../types/inputs/AzureNativeRegionFilters.md) | Filters for list of Azure regions. |
 | subscriptionId | [UUID](../types/scalars/UUID.md) | Subscription ID. |
 | workloadHierarchy | [WorkloadLevelHierarchy](../types/enums/WorkloadLevelHierarchy.md) | Workload hierarchy. |
-| authorizedOperationFilter | [Operation](../types/enums/Operation.md) | Filters according to the operation given. |
+| authorizedOperationFilter | [Operation](../types/enums/Operation.md) | Filters the results to objects on which the caller is authorized to perform the specified operation. Only privilege operations are accepted. |
 
 ## Returns
 

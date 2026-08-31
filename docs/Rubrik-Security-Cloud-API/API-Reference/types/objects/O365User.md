@@ -1,8 +1,8 @@
 # O365User
 
-*No description available.*
+O365 User.
 
-**Implements:** [HierarchyObject](../interfaces/HierarchyObject.md), [PolarisHierarchyObject](../interfaces/PolarisHierarchyObject.md), [O365OrgDescendant](../interfaces/O365OrgDescendant.md)
+**Implements:** [O365OrgDescendant](../interfaces/O365OrgDescendant.md), [PolarisHierarchyObject](../interfaces/PolarisHierarchyObject.md), [HierarchyObject](../interfaces/HierarchyObject.md)
 
 ## Fields
 
@@ -16,9 +16,9 @@
 | effectiveRetentionSlaDomain | [SlaDomain](../interfaces/SlaDomain.md) | Effective retention of the SLA Domain of the hierarchy object. |
 | effectiveSlaDomain | [SlaDomain](../interfaces/SlaDomain.md)! | Effective SLA Domain of the hierarchy object. |
 | effectiveSlaSourceObject | [PathNode](PathNode.md) | Path node of the effective SLA Domain source. |
-| emailAddress | String |  |
+| emailAddress | String | The email address of the O365 user. |
 | id | [UUID](../scalars/UUID.md)! | ID of the hierarchy object. |
-| isRelic | Boolean! |  |
+| isRelic | Boolean! | Specifies whether the O365 user is a relic. |
 | logicalPath | [[PathNode](PathNode.md)!]! | Sequential list of the logical ancestors of this object. |
 | name | String! | Name of the hierarchy object. |
 | numWorkloadDescendants | Int! | Number of descendant workloads of this object. |

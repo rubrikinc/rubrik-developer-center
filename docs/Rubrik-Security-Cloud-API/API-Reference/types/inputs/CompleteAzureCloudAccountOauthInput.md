@@ -19,3 +19,4 @@ Input for completing authentication of the Azure Cloud Accounts.
 | shouldKeepRefreshToken | Boolean | Indicates whether the OAuth refresh token should be retained for future use. |
 | shouldSkipPermissionChecks | Boolean! | Specifies whether to skip permission checks of Azure subscriptions required for addition. |
 | tenantDomainName | String! | Domain name of the Azure Tenant. |
+| workloadId | [UUID](../scalars/UUID.md) | Rubrik ID of the workload the sign-in is being performed for. Used to scope authorization of the sign-in to that workload. |

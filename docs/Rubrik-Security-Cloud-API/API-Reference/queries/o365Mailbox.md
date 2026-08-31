@@ -1,6 +1,6 @@
 # o365Mailbox
 
-Details for the Exchange mailbox corresponding to the snappable ID.
+Details for the Microsoft Exchange mailbox corresponding to the workload ID.
 
 ## Arguments
 

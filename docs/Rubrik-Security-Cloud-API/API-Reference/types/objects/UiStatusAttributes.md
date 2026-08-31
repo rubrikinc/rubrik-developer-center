@@ -27,4 +27,5 @@ UI status attributes.
 
 **Referenced by**
 
+- [RscpUpgradeStatus.uiStatusAttributes](RscpUpgradeStatus.md)
 - [UpgradeStatusV2.uiStatusAttributes](UpgradeStatusV2.md)

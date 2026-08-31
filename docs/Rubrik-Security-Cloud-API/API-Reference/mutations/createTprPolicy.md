@@ -40,7 +40,7 @@ Create a TPR policy.
               "clusterId": "example-string",
               "managedObjectType": "ACTIVE_DIRECTORY_DOMAIN",
               "objectId": "example-string",
-              "workloadHierarchy": "AUTH0_TENANT"
+              "workloadHierarchy": "ANTHROPIC_CHILD_ORG_SETTINGS"
             },
             "tprRules": [
               "ASSIGN_TPR_ROLE"

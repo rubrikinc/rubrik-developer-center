@@ -6,4 +6,4 @@ Filter to return objects which are relic or not.
 
 | Field | Type | Description |
 |-------|------|-------------|
-| relic | Boolean! |  |
+| relic | Boolean! | Whether to match objects that are relics. |

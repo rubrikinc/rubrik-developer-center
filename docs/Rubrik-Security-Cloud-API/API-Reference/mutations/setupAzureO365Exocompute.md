@@ -1,14 +1,14 @@
 # setupAzureO365Exocompute
 
-Sets up Exocompute for an O365 subscription.
+Sets up Exocompute for an O365 subscription. Validates the exocompute configuration, initialises the Korg job and returns the cluster and taskchain IDs.
 
 ## Arguments
 
 | Argument | Type | Description |
 |----------|------|-------------|
-| tenantId *(required)* | String! |  |
-| subscriptionId *(required)* | [UUID](../types/scalars/UUID.md)! |  |
-| exocomputeConfig *(required)* | [AzureO365ExocomputeConfig](../types/inputs/AzureO365ExocomputeConfig.md)! |  |
+| tenantId *(required)* | String! | The Azure tenant ID. |
+| subscriptionId *(required)* | [UUID](../types/scalars/UUID.md)! | The Azure subscription ID. |
+| exocomputeConfig *(required)* | [AzureO365ExocomputeConfig](../types/inputs/AzureO365ExocomputeConfig.md)! | The exocompute configuration. |
 
 ## Returns
 

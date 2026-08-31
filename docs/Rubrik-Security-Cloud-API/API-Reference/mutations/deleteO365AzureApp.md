@@ -6,8 +6,8 @@ Deletes an O365 Azure AD App from the account.
 
 | Argument | Type | Description |
 |----------|------|-------------|
-| o365AppClientId *(required)* | String! |  |
-| o365AppType *(required)* | String! |  |
+| o365AppClientId *(required)* | String! | The client ID of the Azure AD app to delete. |
+| o365AppType *(required)* | String! | The type of the Azure AD app to delete. |
 
 ## Returns
 

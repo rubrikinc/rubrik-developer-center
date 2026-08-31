@@ -14,6 +14,7 @@ Filters for the cluster list.
 | id | [[UUID](../scalars/UUID.md)!] | Cluster UUIDs. |
 | isAssignedByParentAccount | Boolean | Filter on shared (parent-assigned) clusters. When true, return only shared clusters; when false, exclude them; omit for no filter. |
 | isInFatalOrDisconnectedState | Boolean | Include Rubrik clusters which are disconnected  or in fatal state. |
+| isSupportTunnelEnabled | Boolean | Filter on the support tunnel state of the Rubrik cluster. When true, return only Rubrik clusters with at least one node whose support tunnel is open; when false, return only Rubrik clusters with no such node; omit for no filter. |
 | minSoftwareVersion | String | Returns clusters running software version equal to or greater than the specified version. |
 | name | [String!] | Cluster names. |
 | objectType | [[ObjectTypeEnum](../enums/ObjectTypeEnum.md)!] | Object types of snappables protected by the cluster. |

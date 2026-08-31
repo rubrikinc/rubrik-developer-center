@@ -6,7 +6,7 @@ Details for the SharePoint drive corresponding to the snappable ID.
 
 | Argument | Type | Description |
 |----------|------|-------------|
-| snappableFid *(required)* | [UUID](../types/scalars/UUID.md)! | The FID for the workload. |
+| snappableFid *(required)* | [UUID](../types/scalars/UUID.md)! | Rubrik UUID for the O365 SharePoint drive workload. |
 
 ## Returns
 

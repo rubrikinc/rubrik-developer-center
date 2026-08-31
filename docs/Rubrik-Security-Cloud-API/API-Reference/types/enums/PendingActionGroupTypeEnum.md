@@ -9,6 +9,7 @@ The group type for the pending action.
 | APP_FLOW | Group type for application blueprint operations. |
 | ARCHIVAL_LOCATION | Group type for archival location management operations. |
 | CLOUD_ACCOUNTS | Group type for cloud account management operations. |
+| DELETION | Group type for snapshot deletion operations initiated from RSC. |
 | GLOBAL_SLA | Group type for global SLA domain operations. |
 | OBJECT_BACKUP_WINDOW | Object Backup Window is used to perform per-object backup-window override operations. |
 | OBJECT_PAUSE | Object Pause is used to perform object pause operations. |

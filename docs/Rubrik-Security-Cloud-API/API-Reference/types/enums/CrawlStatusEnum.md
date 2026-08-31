@@ -1,6 +1,6 @@
 # CrawlStatusEnum
 
-*No description available.*
+The lifecycle state of a crawl.
 
 ## Values
 

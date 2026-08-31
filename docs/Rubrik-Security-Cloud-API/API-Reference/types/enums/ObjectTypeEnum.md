@@ -7,10 +7,16 @@ ObjectTypeEnum covering all Rubrik cluster and RSC workload types.
 | Value | Description |
 |-------|-------------|
 | ACTIVE_DIRECTORY_DOMAIN_CONTROLLER | Active Directory domain controller. |
+| ANTHROPIC_CHILD_ORG_SETTINGS | Anthropic child org settings. |
+| ANTHROPIC_DEVICE | Anthropic device. |
+| ANTHROPIC_ORG_SETTINGS | Anthropic org settings. |
+| ANTHROPIC_USER_CLAUDE_CHAT | Anthropic user Claude chat. |
 | AWS_NATIVE_CONFIG | AWS Native Config. |
 | AWS_NATIVE_DYNAMODB_TABLE | AWS native DynamoDB table. |
 | AWS_NATIVE_S3_BUCKET | AWS native S3 Bucket. |
 | AZURE_AD_DIRECTORY | Azure AD Directory. |
+| AZURE_COSMOS_NOSQL_CONTAINER | Azure Cosmos NoSQL container. |
+| AZURE_DEVOPS_PROJECT_FIXED_OBJECT | Azure DevOps Developer Collaboration. |
 | AZURE_DEVOPS_REPOSITORY | Azure DevOps Repository. |
 | AZURE_POSTGRES_FLEXIBLE_SERVER | Azure Postgres Flexible Server. |
 | AZURE_SQL_DATABASE_DB | Azure SQL Database. |
@@ -46,11 +52,14 @@ ObjectTypeEnum covering all Rubrik cluster and RSC workload types.
 | GOOGLE_WORKSPACE_USER_MAILBOX | Google Workspace User Mailbox. |
 | GcpNativeDisk | GCP native disk. |
 | GcpNativeGCEInstance | GCP native GCE instance. |
+| HVM_VIRTUAL_MACHINE | HPE Virtual Machine Essentials virtual machine. |
 | Hdfs | Hadoop Distributed File System. |
 | HypervVirtualMachine | Hyper-V virtual machine. |
 | INFORMIX_INSTANCE | Informix Instance. |
+| IRISDB_INSTANCE | IRIS DB instance (Epic EpicCare database host node). |
 | JIRA_FIXED_OBJECT | Jira settings. |
 | JIRA_PROJECT | Jira project. |
+| K8S_POSTGRES_DB_CLUSTER | Kubernetes Postgres database cluster. |
 | K8S_PROTECTION_SET | Kubernetes Protection Set. |
 | K8S_VIRTUAL_MACHINE | Kubernetes virtual machine. |
 | KuprNamespace | Kubernetes namespace. |

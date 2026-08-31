@@ -31,7 +31,7 @@ Start an on demand job to refresh AWS accounts. The job updates the Rubrik platf
           "00000000-0000-0000-0000-000000000000"
         ],
         "awsNativeProtectionFeatures": [
-          "CLOUD_DISCOVERY"
+          "CLOUD_COST_REPORT"
         ]
       }
     }

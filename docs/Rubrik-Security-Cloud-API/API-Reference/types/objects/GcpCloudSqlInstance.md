@@ -2,7 +2,7 @@
 
 Represents a GCP Cloud SQL instance.
 
-**Implements:** [PolarisHierarchyObject](../interfaces/PolarisHierarchyObject.md), [PolarisHierarchySnappable](../interfaces/PolarisHierarchySnappable.md), [HierarchySnappable](../interfaces/HierarchySnappable.md), [HierarchyObject](../interfaces/HierarchyObject.md), [GcpNativeProjectLogicalChildType](../interfaces/GcpNativeProjectLogicalChildType.md), [GcpNativeProjectDescendantType](../interfaces/GcpNativeProjectDescendantType.md), [GcpNativeHierarchyObject](../interfaces/GcpNativeHierarchyObject.md)
+**Implements:** [PolarisHierarchyObject](../interfaces/PolarisHierarchyObject.md), [HierarchyObject](../interfaces/HierarchyObject.md), [PolarisHierarchySnappable](../interfaces/PolarisHierarchySnappable.md), [HierarchySnappable](../interfaces/HierarchySnappable.md), [GcpNativeProjectLogicalChildType](../interfaces/GcpNativeProjectLogicalChildType.md), [GcpNativeProjectDescendantType](../interfaces/GcpNativeProjectDescendantType.md), [GcpNativeHierarchyObject](../interfaces/GcpNativeHierarchyObject.md)
 
 ## Fields
 
@@ -27,13 +27,13 @@ Represents a GCP Cloud SQL instance.
 | instanceId | String! | Rubrik-generated unique identifier for the Cloud SQL instance. |
 | instanceTier | String! | Tier of the Cloud SQL instance. |
 | isExocomputeConfigured | Boolean! | Specifies whether exocompute is configured for use by this Cloud SQL instance. |
-| isRelic | Boolean! | Indicates if the instance is archived/deleted. |
+| isRelic | Boolean! | Whether the object is a relic. |
 | kmsKey | String | KMS key used for encryption, if any. |
 | labels | [[Label](Label.md)!]! | List of labels that are assigned to the object. |
 | logicalPath | [[PathNode](PathNode.md)!]! | Sequential list of the logical ancestors of this object. |
 | name | String! | Name of the hierarchy object. |
 | nativeId | String! | Cloud provider's native ID for the instance. |
-| nativeName | String! | Display name of the Cloud SQL instance. |
+| nativeName | String! | GCP Native name of the object. |
 | newestIndexedSnapshot | [PolarisSnapshot](PolarisSnapshot.md) | The latest snapshot that is indexed and unexpired, and therefore restorable. |
 | newestSnapshot | [PolarisSnapshot](PolarisSnapshot.md) | The most recent snapshot of this workload. |
 | numWorkloadDescendants | Int! | Number of descendant workloads of this object. |
@@ -52,8 +52,8 @@ Represents a GCP Cloud SQL instance.
 | slaPauseStatus | Boolean! | Pause status of the effective SLA Domain of the hierarchy object. |
 | snapshotConnection | [PolarisSnapshotConnection](PolarisSnapshotConnection.md) | The list of snapshots taken for this workload. |
 | snapshotDistribution | [SnapshotDistribution](SnapshotDistribution.md)! | Distribution of the snapshots of the hierarchy object. |
-| snapshotGroupByConnection | [PolarisSnapshotGroupByConnection](PolarisSnapshotGroupByConnection.md) | GroupBy connection for the snapshots of this workload. |
-| snapshotGroupByNewConnection | [PolarisSnapshotGroupByNewConnection](PolarisSnapshotGroupByNewConnection.md) | GroupBy connection for the snapshots of this workload. |
+| snapshotGroupByConnection | [PolarisSnapshotGroupByConnection](PolarisSnapshotGroupByConnection.md) | Group-by connection for the snapshots of this workload. |
+| snapshotGroupByNewConnection | [PolarisSnapshotGroupByNewConnection](PolarisSnapshotGroupByNewConnection.md) | Group-by connection for the snapshots of this workload. |
 | state | String! | Current operational state of the instance. |
 | storageSize | Int! | Size of allocated storage in GiB. |
 | workloadSnapshotConnection | [GenericSnapshotConnection](GenericSnapshotConnection.md) | The list of snapshots taken for this workload. |

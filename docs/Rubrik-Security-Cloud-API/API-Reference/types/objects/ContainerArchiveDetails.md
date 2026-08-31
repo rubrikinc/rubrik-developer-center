@@ -17,4 +17,5 @@ Details of the archive file that directly contains the matched file.
 
 **Referenced by**
 
+- [ThreatHuntingObjectFileMatch.containerArchiveDetails](ThreatHuntingObjectFileMatch.md)
 - [ThreatMonitoringFileMatchDetailsV2.containerArchiveDetails](ThreatMonitoringFileMatchDetailsV2.md)

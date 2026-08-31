@@ -6,27 +6,27 @@ Detailed view of a data classification policy.
 
 | Field | Type | Description |
 |-------|------|-------------|
-| analyzers | [[Analyzer](Analyzer.md)!]! |  |
+| analyzers | [[Analyzer](Analyzer.md)!]! | Analyzers included in the policy. |
 | assignmentResources | [AssignmentResourceDetailsConnection](AssignmentResourceDetailsConnection.md)! | Connection on AssignmentResourceDetails. |
-| colorEnum | [ClassificationPolicyColor](../enums/ClassificationPolicyColor.md)! |  |
-| createdTime | [Long](../scalars/Long.md)! |  |
-| creator | [User](User.md) |  |
+| colorEnum | [ClassificationPolicyColor](../enums/ClassificationPolicyColor.md)! | Display color of the policy. |
+| createdTime | [Long](../scalars/Long.md)! | Creation time of the policy, in epoch seconds. |
+| creator | [User](User.md) | The user who created this policy. |
 | dataCategoryResult | [DataCategoryResult](DataCategoryResult.md) | Data category classification result. |
-| deletable | Boolean! |  |
-| description | String! |  |
+| deletable | Boolean! | Whether the policy can be deleted. |
+| description | String! | Description of the policy. |
 | documentTypes | [[DocumentAttribute](DocumentAttribute.md)!]! | Document types associated with the policy. |
 | hierarchyObjectConnection | [HierarchyObjectConnection](HierarchyObjectConnection.md)! | Connection on hierarchy objects. |
-| hierarchyObjectIds | [String!]! |  |
-| hierarchyObjects | [[HierarchyObject](../interfaces/HierarchyObject.md)]! |  |
-| id | String! |  |
+| hierarchyObjectIds | [String!]! | Identifiers of the hierarchy objects the policy is assigned to. |
+| hierarchyObjects | [[HierarchyObject](../interfaces/HierarchyObject.md)]! | The objects assigned to this policy. |
+| id | String! | Unique identifier of the policy. |
 | isInactive | Boolean! | Data category is inactive or not. |
-| lastUpdatedTime | [Long](../scalars/Long.md)! |  |
-| mode | [ClassificationPolicyMode](../enums/ClassificationPolicyMode.md)! |  |
-| name | String! |  |
-| numAnalyzers | Int! |  |
-| objectStatuses | [[ObjectStatus](ObjectStatus.md)!]! |  |
-| totalObjects | Int! |  |
-| whitelists | [[ClassificationPolicyWhitelistDetailedEntry](ClassificationPolicyWhitelistDetailedEntry.md)!]! |  |
+| lastUpdatedTime | [Long](../scalars/Long.md)! | Time the policy was last updated, in epoch seconds. |
+| mode | [ClassificationPolicyMode](../enums/ClassificationPolicyMode.md)! | Operating mode of the policy. |
+| name | String! | Human-readable name of the policy. |
+| numAnalyzers | Int! | Number of analyzers in this policy. |
+| objectStatuses | [[ObjectStatus](ObjectStatus.md)!]! | Assignment status per object. |
+| totalObjects | Int! | Number of objects assigned to this policy. |
+| whitelists | [[ClassificationPolicyWhitelistDetailedEntry](ClassificationPolicyWhitelistDetailedEntry.md)!]! | Whitelist entries for this policy. |
 
 ## Field Arguments
 

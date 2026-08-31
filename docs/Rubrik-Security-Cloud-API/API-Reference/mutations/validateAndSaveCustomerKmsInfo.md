@@ -1,6 +1,6 @@
 # validateAndSaveCustomerKmsInfo
 
-Validate KMS input provided on O365 subscription setup.
+Validates and saves the customer's KMS (Key Management Service) information.
 
 ## Arguments
 

@@ -14,13 +14,13 @@ Information about MongoDB Source.
 | authorizedOperations | [[Operation](../enums/Operation.md)!]! | The authorized operations on the object. |
 | caCertificateId | [UUID](../scalars/UUID.md) | Certificate ID referencing the certificate imported by using Rubrik's certificate management framework. |
 | cdmId | String! | CDM ID of the MongoDB source. |
-| cdmLink | String! | A link to view the workload on the CDM cluster. For dev use only. |
+| cdmLink | String! | A link to view the workload on the Rubrik cluster. For dev use only. |
 | cdmPendingObjectPauseAssignment | [PendingObjectPauseAssignmentStatus](../enums/PendingObjectPauseAssignmentStatus.md) | Object pause pending assignment details for CDM objects. |
 | cluster | [Cluster](Cluster.md)! | Information about CDM cluster for this MongoDB cluster. |
 | clusterUuid | [UUID](../scalars/UUID.md)! | UUID of the CDM cluster. |
 | configuredSlaDomain | [SlaDomain](../interfaces/SlaDomain.md)! | SLA Domain configured for the hierarchy object. |
 | crossAccountReplicatedObjectInfos | [[CrossAccountReplicatedObjectInfo](CrossAccountReplicatedObjectInfo.md)!] | Cross-account objects either replicated by this object or related to this object by replication. |
-| dataHosts | [PhysicalHostConnection](PhysicalHostConnection.md)! | The list of data hosts associated with this MongoDB source. |
+| dataHosts | [MongoDataHostsConnection](MongoDataHostsConnection.md)! | The list of data hosts associated with this MongoDB source. |
 | descendantConnection | [MongoSourceDescendantTypeConnection](MongoSourceDescendantTypeConnection.md)! | List of descendants. |
 | discoveryStatus | [MongoDiscoveryStatus](../enums/MongoDiscoveryStatus.md)! | Discovery status of the MongoDB source. |
 | effectiveRetentionSlaDomain | [SlaDomain](../interfaces/SlaDomain.md) | Effective retention of the SLA Domain of the hierarchy object. |
@@ -41,7 +41,7 @@ Information about MongoDB Source.
 | name | String! | Name of the hierarchy object. |
 | newestArchivedSnapshot | [CdmSnapshot](CdmSnapshot.md) | The newest snapshot archived to AWS. |
 | newestIndexedSnapshot | [CdmSnapshot](CdmSnapshot.md) | The most recent indexed snapshot of this workload. |
-| newestReplicatedSnapshot | [CdmSnapshot](CdmSnapshot.md) | The newest snapshot replicated to a cluster. |
+| newestReplicatedSnapshot | [CdmSnapshot](CdmSnapshot.md) | The newest snapshot replicated to a Rubrik cluster. |
 | newestSnapshot | [CdmSnapshot](CdmSnapshot.md) | The most recent snapshot of this workload. |
 | numWorkloadDescendants | Int! | Number of descendant workloads of this object. |
 | objectBackupWindow | [ObjectBackupWindowStatus](ObjectBackupWindowStatus.md) | Object-level backup window status of the hierarchy object. |
@@ -63,8 +63,8 @@ Information about MongoDB Source.
 | slaPauseStatus | Boolean! | Pause status of the effective SLA Domain of the hierarchy object. |
 | snapshotConnection | [CdmSnapshotConnection](CdmSnapshotConnection.md) | The list of snapshots taken for this workload. |
 | snapshotDistribution | [SnapshotDistribution](SnapshotDistribution.md)! | Distribution of the snapshots of the hierarchy object. |
-| snapshotGroupByConnection | [CdmSnapshotGroupByConnection](CdmSnapshotGroupByConnection.md) | GroupBy connection for the snapshots of this workload. |
-| snapshotGroupBySummary | [CdmSnapshotGroupBySummaryConnection](CdmSnapshotGroupBySummaryConnection.md) | GroupBy connection for the snapshots of this workload. |
+| snapshotGroupByConnection | [CdmSnapshotGroupByConnection](CdmSnapshotGroupByConnection.md) | Group-by connection for the snapshots of this workload. |
+| snapshotGroupBySummary | [CdmSnapshotGroupBySummaryConnection](CdmSnapshotGroupBySummaryConnection.md) | Group-by connection for the snapshots of this workload. |
 | sourceMetadata | [SourceMetadata](SourceMetadata.md) | Metadata of the MongoDB source. |
 | sourceNodes | [[CdmMongoNode](CdmMongoNode.md)!]! | List of source nodes. |
 | sourceType | [MongoSourceType](../enums/MongoSourceType.md)! | Type of the MongoDB source. |

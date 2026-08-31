@@ -27,8 +27,7 @@ Set GCP Cloud Account feature status to Connected from Update Permissions state 
     ```json
     {
       "input": {
-        "cloudAccountId": "00000000-0000-0000-0000-000000000000",
-        "feature": "ALL"
+        "cloudAccountId": "00000000-0000-0000-0000-000000000000"
       }
     }
     ```

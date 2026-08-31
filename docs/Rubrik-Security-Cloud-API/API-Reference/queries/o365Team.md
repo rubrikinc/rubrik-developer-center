@@ -6,7 +6,7 @@ Details for the team corresponding to the snappable ID.
 
 | Argument | Type | Description |
 |----------|------|-------------|
-| snappableFid *(required)* | [UUID](../types/scalars/UUID.md)! | The FID for the workload. |
+| snappableFid *(required)* | [UUID](../types/scalars/UUID.md)! | FID of the O365 Team. |
 
 ## Returns
 

@@ -12,7 +12,7 @@ Paginated list of user audit data. Each page of the results will include at most
 | before | String | Returns the elements in the list that occur before the specified cursor. |
 | sortOrder | [SortOrder](../types/enums/SortOrder.md) | User audit sort order. |
 | sortBy | [UserAuditSortField](../types/enums/UserAuditSortField.md) | Sort user audit by field. |
-| filters | [UserAuditFilter](../types/inputs/UserAuditFilter.md) |  |
+| filters | [UserAuditFilter](../types/inputs/UserAuditFilter.md) | Filters to apply to the returned user audits. |
 
 ## Returns
 

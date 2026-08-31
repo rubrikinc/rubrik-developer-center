@@ -7,7 +7,7 @@ Details of the O365Org at snappable level, given the snappable type.
 | Argument | Type | Description |
 |----------|------|-------------|
 | fid *(required)* | [UUID](../types/scalars/UUID.md)! | Rubrik UUID for the object. |
-| snappableType *(required)* | [SnappableType](../types/enums/SnappableType.md)! |  |
+| snappableType *(required)* | [SnappableType](../types/enums/SnappableType.md)! | The type of the M365 workload. |
 
 ## Returns
 

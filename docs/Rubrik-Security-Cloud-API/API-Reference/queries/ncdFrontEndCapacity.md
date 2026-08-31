@@ -10,7 +10,7 @@ NAS Cloud Direct front-end capacity for the requested clusters.
 
 ## Returns
 
-[NcdFrontEndCapacity](../types/objects/NcdFrontEndCapacity.md)
+[NcdFrontEndCapacity](../types/objects/NcdFrontEndCapacity.md)!
 
 ## Sample
 

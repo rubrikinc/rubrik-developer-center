@@ -11,6 +11,7 @@ Base config for a threat hunt.
 | maxMatchesPerSnapshot | Int | Maximum number of matches per shapshot, per IOC. |
 | name | String! | Name of the threat hunt. |
 | notes | String! | Notes to describe this threat hunt. |
+| registryPatterns | [[RegistryPatternSpec](RegistryPatternSpec.md)!]! | Windows registry key search patterns for this hunt. |
 | snapshotScanLimit | [HuntScanSnapshotLimit](HuntScanSnapshotLimit.md) | Threat hunt snapshot scan limit. |
 | threatHuntType | [ThreatHuntType](../enums/ThreatHuntType.md)! | Threat hunt type. |
 

@@ -1,6 +1,6 @@
 # ClusterOperationJobProgress
 
-Status and progress of a Rubrik cluster operation job.
+Progress details for a Rubrik cluster operation job.
 
 ## Fields
 
@@ -9,7 +9,7 @@ Status and progress of a Rubrik cluster operation job.
 | jobProgress | Int! | Job progress. |
 | jobStatus | [CdmJobStatus](../enums/CdmJobStatus.md)! | Job status. |
 | jobType | [CcpJobType](../enums/CcpJobType.md)! | Job type. |
-| message | String! | Job progess detail. |
+| message | String! | Job progress detail. |
 
 ## Used By
 

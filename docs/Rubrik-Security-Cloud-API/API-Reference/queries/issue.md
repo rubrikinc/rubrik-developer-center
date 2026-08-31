@@ -6,7 +6,7 @@ Returns details of one issue.
 
 | Argument | Type | Description |
 |----------|------|-------------|
-| issueId *(required)* | String! |  |
+| issueId *(required)* | String! | Identifier of the issue whose details are returned. |
 
 ## Returns
 

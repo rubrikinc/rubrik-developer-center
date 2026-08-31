@@ -35,6 +35,7 @@ A snapshot of a workload managed by a Rubrik cluster.
 | isExpired | Boolean! | Specifies whether or not the snapshot is expired. |
 | isIndexed | Boolean! | Whether the snapshot is indexed. |
 | isOnDemandSnapshot | Boolean! | Whether the snapshot is on demand. |
+| isOpenstackStorageSnapshot | Boolean | For OpenStack virtual machine snapshots only: true = dataless Cinder storage snapshot, false = regular Rubrik backup. Returns null for all non-OpenStack workloads. |
 | isQuarantineProcessing | Boolean! | Specifies whether RSC is processing the snapshot to determine its quarantine state. |
 | isQuarantined | Boolean! | Specifies whether the snapshot is quarantined. |
 | isRetentionLocked | Boolean | Whether the snapshot is retention locked. |
@@ -49,6 +50,7 @@ A snapshot of a workload managed by a Rubrik cluster.
 | localLocations | [[DataLocation](DataLocation.md)!] | Local cluster locations where the snapshot is present. |
 | locations | [[DataLocation](DataLocation.md)!] | All locations where the snapshot is present. |
 | managedVolumeAppMetadata | [ManagedVolumeAppMetadata](ManagedVolumeAppMetadata.md) | Managed Volume specific metadata for the snapshot. Null if snapshot is not of a managed volume. |
+| mariadbInstanceAppMetadata | [MariadbInstanceAppMetadata](MariadbInstanceAppMetadata.md) | MariaDB instance-specific metadata carrying the snapshot statistics and the full or differential snapshot type. Null if the snapshot is not of a MariaDB instance. |
 | mongoSourceAppMetadata | [MongoSourceAppMetadata](MongoSourceAppMetadata.md) | Mongo source specific metadata for the snapshot. |
 | mssqlAppMetadata | [MssqlAppMetadata](MssqlAppMetadata.md) | Mssql specific metadata for the snapshot. |
 | mysqldbInstanceAppMetadata | [KosmosWorkloadAppMetadata](KosmosWorkloadAppMetadata.md) | MySQL instance-specific metadata. Null if the snapshot is not of a MySQL Instance. |
@@ -57,7 +59,7 @@ A snapshot of a workload managed by a Rubrik cluster.
 | pendingSla | [SlaDomain](../interfaces/SlaDomain.md) | Non-null when a user has assigned a SLA to this snapshot, and the SLA assignment is in the process of being synced over to CDM. |
 | pendingSnapshotDeletion | [PendingSnapshotDeletion](PendingSnapshotDeletion.md) | Mapping from snapshot to delete pending action status. |
 | pingFederateAppMetadata | [PingFederateAppMetadata](PingFederateAppMetadata.md) | PingFederate-specific metadata for the snapshot. Null if the snapshot is not of a PingFederate cluster. |
-| postgresDbClusterAppMetadata | [KosmosWorkloadAppMetadata](KosmosWorkloadAppMetadata.md) | PostgreSQL Database Cluster-specific metadata. Null if the snapshot is not of a PostgreSQL Database Cluster. |
+| postgresDbClusterAppMetadata | [PostgresDbClusterAppMetadata](PostgresDbClusterAppMetadata.md) | PostgreSQL Database Cluster-specific metadata. Null if the snapshot is not of a PostgreSQL Database Cluster. |
 | replicationLocations | [[DataLocation](DataLocation.md)!] | Replication locations where the snapshot is present. |
 | resourceSpec | String | Resource spec JSON, if present. |
 | retentionLockModeAcrossLocations | [RetentionLockMode](../enums/RetentionLockMode.md) | Retention lock mode across locations. |
@@ -67,6 +69,7 @@ A snapshot of a workload managed by a Rubrik cluster.
 | snappableNew | [CdmHierarchySnappableNew](../interfaces/CdmHierarchySnappableNew.md)! | The workload this snapshot belongs to. |
 | snapshotRetentionInfo | [CdmSnapshotRetentionInfo](CdmSnapshotRetentionInfo.md) | Snapshot retention info, if set. |
 | subObjs | [[SnapshotSubObject](SnapshotSubObject.md)!]! | Sub objects for the snapshot. |
+| usedFsSize | [Long](../scalars/Long.md) | Total used size, in bytes, of the guest filesystems captured in the snapshot, measured when the snapshot was indexed. Returns null when the size is unavailable, for example when the snapshot is not indexed yet or its workload type does not report the value. |
 | vappAppMetadata | [[VappAppMetadata](VappAppMetadata.md)!] | Vmware vApp specific snapshot metadata. |
 | vmwareAppMetadata | [VmwareAppMetadata](VmwareAppMetadata.md) | VMware specific metadata for the snapshot. |
 
@@ -108,4 +111,4 @@ A snapshot of a workload managed by a Rubrik cluster.
 - [FusionComputeVirtualMachine.newestIndexedSnapshot](FusionComputeVirtualMachine.md)
 - [FusionComputeVirtualMachine.newestReplicatedSnapshot](FusionComputeVirtualMachine.md)
 - [FusionComputeVirtualMachine.newestSnapshot](FusionComputeVirtualMachine.md)
-- *…and 129 more*
+- *…and 144 more*

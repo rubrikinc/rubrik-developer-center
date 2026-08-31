@@ -2,7 +2,7 @@
 
 M365 Backup Storage Groups from M365 Backup Storage hierarchy.
 
-**Implements:** [MicrosoftGroup](../interfaces/MicrosoftGroup.md), [HierarchyObject](../interfaces/HierarchyObject.md), [PolarisHierarchyObject](../interfaces/PolarisHierarchyObject.md)
+**Implements:** [MicrosoftGroup](../interfaces/MicrosoftGroup.md), [PolarisHierarchySnappable](../interfaces/PolarisHierarchySnappable.md), [HierarchySnappable](../interfaces/HierarchySnappable.md), [HierarchyObject](../interfaces/HierarchyObject.md), [PolarisHierarchyObject](../interfaces/PolarisHierarchyObject.md)
 
 ## Fields
 
@@ -12,21 +12,21 @@ M365 Backup Storage Groups from M365 Backup Storage hierarchy.
 | allTags | [[AssignedRscTag](AssignedRscTag.md)!]! | RSC tags to which this hierarchy object is assigned. |
 | authorizedOperations | [[Operation](../enums/Operation.md)!]! | The authorized operations on the object. |
 | configuredGroupSpec | String! | The specification for a configured group. |
-| configuredGroupSpecification | [O365ConfiguredGroupSpec](O365ConfiguredGroupSpec.md)! | The specification for a configured group. |
+| configuredGroupSpecification | [O365ConfiguredGroupSpec](O365ConfiguredGroupSpec.md)! | Configured Group Specs. |
 | configuredSlaDomain | [SlaDomain](../interfaces/SlaDomain.md)! | SLA Domain configured for the hierarchy object. |
-| deletedInAzure | Boolean! | True, if the group is deleted in Microsoft Entra ID. |
-| displayName | String! | Display name of the group. |
+| deletedInAzure | Boolean! | Whether the Group is deleted in Microsoft Entra ID or not. |
+| displayName | String! | Display name of Microsoft Group. |
 | effectiveRetentionSlaDomain | [SlaDomain](../interfaces/SlaDomain.md) | Effective retention of the SLA Domain of the hierarchy object. |
 | effectiveSlaDomain | [SlaDomain](../interfaces/SlaDomain.md)! | Effective SLA Domain of the hierarchy object. |
 | effectiveSlaSourceObject | [PathNode](PathNode.md) | Path node of the effective SLA Domain source. |
-| groupID | String! | Rubrik internal UUID for group. |
-| groupSubType | [O365GroupSubType](../enums/O365GroupSubType.md)! | The subtype of the group. |
-| groupType | [O365GroupType](../enums/O365GroupType.md)! | The type of group. |
-| id | [UUID](../scalars/UUID.md)! | Group ID of M365 Backup Storage Group object. |
+| groupID | String! | Group ID of Microsoft Group. |
+| groupSubType | [O365GroupSubType](../enums/O365GroupSubType.md)! | Group sub-type of the Microsoft Group. |
+| groupType | [O365GroupType](../enums/O365GroupType.md)! | Group type of the Microsoft Group. |
+| id | [UUID](../scalars/UUID.md)! | ID of the hierarchy object. |
 | logicalPath | [[PathNode](PathNode.md)!]! | Sequential list of the logical ancestors of this object. |
-| metadata | [O365GroupMetadata](O365GroupMetadata.md) | The metadata for an Office 365 group. |
+| metadata | [O365GroupMetadata](O365GroupMetadata.md) | Metadata of the Microsoft Group. |
 | name | String! | Name of the hierarchy object. |
-| naturalID | String! | Natural ID of the group. |
+| naturalID | String! | Natural ID of Microsoft Group. |
 | newestIndexedSnapshot | [PolarisSnapshot](PolarisSnapshot.md) | The latest snapshot that is indexed and unexpired, and therefore restorable. |
 | newestSnapshot | [PolarisSnapshot](PolarisSnapshot.md) | The most recent snapshot of this workload. |
 | numWorkloadDescendants | Int! | Number of descendant workloads of this object. |
@@ -43,9 +43,9 @@ M365 Backup Storage Groups from M365 Backup Storage hierarchy.
 | slaPauseStatus | Boolean! | Pause status of the effective SLA Domain of the hierarchy object. |
 | snapshotConnection | [PolarisSnapshotConnection](PolarisSnapshotConnection.md) | The list of snapshots taken for this workload. |
 | snapshotDistribution | [SnapshotDistribution](SnapshotDistribution.md)! | Distribution of the snapshots of the hierarchy object. |
-| snapshotGroupByConnection | [PolarisSnapshotGroupByConnection](PolarisSnapshotGroupByConnection.md) | GroupBy connection for the snapshots of this workload. |
-| snapshotGroupByNewConnection | [PolarisSnapshotGroupByNewConnection](PolarisSnapshotGroupByNewConnection.md) | GroupBy connection for the snapshots of this workload. |
-| userCount | [Long](../scalars/Long.md)! | Number of user that are member of the group. |
+| snapshotGroupByConnection | [PolarisSnapshotGroupByConnection](PolarisSnapshotGroupByConnection.md) | Group-by connection for the snapshots of this workload. |
+| snapshotGroupByNewConnection | [PolarisSnapshotGroupByNewConnection](PolarisSnapshotGroupByNewConnection.md) | Group-by connection for the snapshots of this workload. |
+| userCount | [Long](../scalars/Long.md)! | User count of Microsoft Group. |
 | workloadSnapshotConnection | [GenericSnapshotConnection](GenericSnapshotConnection.md) | The list of snapshots taken for this workload. |
 
 ## Field Arguments

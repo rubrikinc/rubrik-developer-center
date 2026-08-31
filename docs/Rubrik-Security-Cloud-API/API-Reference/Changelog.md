@@ -1,8 +1,1144 @@
 # GraphQL Schema Changelog
 
-*Generated on July 30, 2026 at 08:29 PM*
+*Generated on August 31, 2026 at 08:01 PM*
 
-This changelog documents the evolution of the GraphQL schema across 53 versions.
+This changelog documents the evolution of the GraphQL schema across 58 versions.
+
+## August 31, 2026
+
+### ⚠️ Breaking Changes
+
+- Type `MariadbDatabase` was removed
+- Type `MariadbDatabaseMetadata` was removed
+- Type `MariadbDatabaseProtectionState` was removed
+- Type `MariadbInstance` was removed
+- Type `MariadbInstanceAdvancedConfig` was removed
+- Type `MariadbInstanceAuthenticationType` was removed
+- Type `MariadbInstanceDetails` was removed
+- Type `MariadbInstanceMetadata` was removed
+- Type `MariadbInstanceSslConfig` was removed
+- Type `MariadbInstanceStatus` was removed
+- Field `MongoSource`.dataHosts changed type from `PhysicalHostConnection`! to `MongoDataHostsConnection`!
+- Input field `StartExportRdsInstanceJobInput.dbInstanceClass` changed type from `AwsNativeRdsDbInstanceClass`! to `AwsNativeRdsDbInstanceClass`
+- Input field `StartExportRdsInstanceJobInput.dbInstanceName` changed type from `String`! to `String`
+- Input field `StartExportRdsInstanceJobInput.isMultiAz` changed type from `Boolean`! to `Boolean`
+- Input field `StartExportRdsInstanceJobInput.isPubliclyAccessible` changed type from `Boolean`! to `Boolean`
+- Input field `StartExportRdsInstanceJobInput.port` changed type from `Long`! to `Long`
+- Input field `StartExportRdsInstanceJobInput.shouldExportTags` changed type from `Boolean`! to `Boolean`
+
+### ⚡ Potentially Breaking Changes
+
+- Enum value `AGENT_CLOUD_MCP_SERVER` was added to enum `ActivityObjectTypeEnum`
+- Enum value `AZURE_COSMOS_NOSQL_ACCOUNT` was added to enum `ActivityObjectTypeEnum`
+- Enum value `AZURE_COSMOS_NOSQL_CONTAINER` was added to enum `ActivityObjectTypeEnum`
+- Enum value `AZURE_COSMOS_NOSQL_DATABASE` was added to enum `ActivityObjectTypeEnum`
+- Enum value `HVM_CLOUD` was added to enum `ActivityObjectTypeEnum`
+- Enum value `HVM_CLUSTER` was added to enum `ActivityObjectTypeEnum`
+- Enum value `HVM_DATASTORE` was added to enum `ActivityObjectTypeEnum`
+- Enum value `HVM_GROUP` was added to enum `ActivityObjectTypeEnum`
+- Enum value `HVM_HOST` was added to enum `ActivityObjectTypeEnum`
+- Enum value `HVM_INSTANCE` was added to enum `ActivityObjectTypeEnum`
+- Enum value `HVM_MANAGER` was added to enum `ActivityObjectTypeEnum`
+- Enum value `HVM_NETWORK` was added to enum `ActivityObjectTypeEnum`
+- Enum value `HVM_VIRTUAL_MACHINE` was added to enum `ActivityObjectTypeEnum`
+- Enum value `AZURE_COSMOS_NOSQL_ACCOUNT` was added to enum `AuditObjectType`
+- Enum value `AZURE_COSMOS_NOSQL_CONTAINER` was added to enum `AuditObjectType`
+- Enum value `AZURE_COSMOS_NOSQL_DATABASE` was added to enum `AuditObjectType`
+- Enum value `HVM_CLOUD` was added to enum `AuditObjectType`
+- Enum value `HVM_CLUSTER` was added to enum `AuditObjectType`
+- Enum value `HVM_DATASTORE` was added to enum `AuditObjectType`
+- Enum value `HVM_GROUP` was added to enum `AuditObjectType`
+- Enum value `HVM_HOST` was added to enum `AuditObjectType`
+- Enum value `HVM_INSTANCE` was added to enum `AuditObjectType`
+- Enum value `HVM_MANAGER` was added to enum `AuditObjectType`
+- Enum value `HVM_NETWORK` was added to enum `AuditObjectType`
+- Enum value `HVM_VIRTUAL_MACHINE` was added to enum `AuditObjectType`
+- Enum value `AGENT_CLOUD_MCP_SERVER` was added to enum `EventObjectType`
+- Enum value `AZURE_COSMOS_NOSQL_ACCOUNT` was added to enum `EventObjectType`
+- Enum value `AZURE_COSMOS_NOSQL_CONTAINER` was added to enum `EventObjectType`
+- Enum value `AZURE_COSMOS_NOSQL_DATABASE` was added to enum `EventObjectType`
+- Enum value `HVM_CLOUD` was added to enum `EventObjectType`
+- Enum value `HVM_CLUSTER` was added to enum `EventObjectType`
+- Enum value `HVM_DATASTORE` was added to enum `EventObjectType`
+- Enum value `HVM_GROUP` was added to enum `EventObjectType`
+- Enum value `HVM_HOST` was added to enum `EventObjectType`
+- Enum value `HVM_INSTANCE` was added to enum `EventObjectType`
+- Enum value `HVM_MANAGER` was added to enum `EventObjectType`
+- Enum value `HVM_NETWORK` was added to enum `EventObjectType`
+- Enum value `HVM_VIRTUAL_MACHINE` was added to enum `EventObjectType`
+- Enum value `AD_REPORT` was added to enum `FileTypeEnumType`
+- Enum value `AZURE_COSMOS_NOSQL_CONTAINER_ACCOUNT_NAME` was added to enum `HierarchyFilterField`
+- Enum value `AZURE_COSMOS_NOSQL_CONTAINER_CONTINUOUS_BACKUP_ENABLED` was added to enum `HierarchyFilterField`
+- Enum value `AZURE_COSMOS_NOSQL_CONTAINER_DATABASE_NAME` was added to enum `HierarchyFilterField`
+- Enum value `AZURE_COSMOS_NOSQL_CONTAINER_NAME_OR_NATIVE_ID` was added to enum `HierarchyFilterField`
+- Enum value `AZURE_COSMOS_NOSQL_ACCOUNT` was added to enum `HierarchyObjectTypeEnum`
+- Enum value `AZURE_COSMOS_NOSQL_CONTAINER` was added to enum `HierarchyObjectTypeEnum`
+- Enum value `AZURE_COSMOS_NOSQL_DATABASE` was added to enum `HierarchyObjectTypeEnum`
+- Enum value `HVM_CLOUD` was added to enum `HierarchyObjectTypeEnum`
+- Enum value `HVM_CLUSTER` was added to enum `HierarchyObjectTypeEnum`
+- Enum value `HVM_DATASTORE` was added to enum `HierarchyObjectTypeEnum`
+- Enum value `HVM_GROUP` was added to enum `HierarchyObjectTypeEnum`
+- Enum value `HVM_HOST` was added to enum `HierarchyObjectTypeEnum`
+- Enum value `HVM_INSTANCE` was added to enum `HierarchyObjectTypeEnum`
+- Enum value `HVM_MANAGER` was added to enum `HierarchyObjectTypeEnum`
+- Enum value `HVM_NETWORK` was added to enum `HierarchyObjectTypeEnum`
+- Enum value `HVM_VIRTUAL_MACHINE` was added to enum `HierarchyObjectTypeEnum`
+- Enum value `AZURE_COSMOS_NOSQL_CONTAINER_ACCOUNT_NAME` was added to enum `HierarchySortByField`
+- Enum value `AZURE_COSMOS_NOSQL_CONTAINER_DATABASE_NAME` was added to enum `HierarchySortByField`
+- Enum value `HVM_ROOT` was added to enum `InventorySubHierarchyRootEnum`
+- Enum value `AZURE_COSMOS_NOSQL_ACCOUNT` was added to enum `ManagedObjectType`
+- Enum value `AZURE_COSMOS_NOSQL_CONTAINER` was added to enum `ManagedObjectType`
+- Enum value `AZURE_COSMOS_NOSQL_DATABASE` was added to enum `ManagedObjectType`
+- Enum value `HVM_CLOUD` was added to enum `ManagedObjectType`
+- Enum value `HVM_CLUSTER` was added to enum `ManagedObjectType`
+- Enum value `HVM_DATASTORE` was added to enum `ManagedObjectType`
+- Enum value `HVM_GROUP` was added to enum `ManagedObjectType`
+- Enum value `HVM_HOST` was added to enum `ManagedObjectType`
+- Enum value `HVM_INSTANCE` was added to enum `ManagedObjectType`
+- Enum value `HVM_MANAGER` was added to enum `ManagedObjectType`
+- Enum value `HVM_NETWORK` was added to enum `ManagedObjectType`
+- Enum value `HVM_VIRTUAL_MACHINE` was added to enum `ManagedObjectType`
+- Argument before: String added to field `MssqlDatabase.liveMounts`
+- Argument last: Int added to field `MssqlDatabase.liveMounts`
+- Input field `multiMysqldbRestoreSettings` of type [MysqldbPerReplicaRestoreSettingsInput!] with default value [] was added to input object type `MysqldbAutomatedRestoreConfigInput`
+- Enum value `AZURE_COSMOS_NOSQL_CONTAINER` was added to enum `ObjectTypeEnum`
+- Enum value `HVM_VIRTUAL_MACHINE` was added to enum `ObjectTypeEnum`
+- Argument authorizedOperationFilter: Operation added to field `Query.azureSqlDatabaseServers`
+- Argument authorizedOperationFilter: Operation added to field `Query.azureSqlManagedInstanceServers`
+- Argument before: String added to field `Query.browseO365TeamConvChannels`
+- Argument last: Int added to field `Query.browseO365TeamConvChannels`
+- Argument before: String added to field `Query.browseSharepointDrive`
+- Argument last: Int added to field `Query.browseSharepointDrive`
+- Argument before: String added to field `Query.browseSharepointList`
+- Argument last: Int added to field `Query.browseSharepointList`
+- Argument before: String added to field `Query.browseTeamsChannels`
+- Argument last: Int added to field `Query.browseTeamsChannels`
+- Argument before: String added to field `Query.browseTeamsDrive`
+- Argument last: Int added to field `Query.browseTeamsDrive`
+- Argument before: String added to field `Query.configuredGroupMembers`
+- Argument last: Int added to field `Query.configuredGroupMembers`
+- Argument before: String added to field `Query.filesetTemplates`
+- Argument last: Int added to field `Query.filesetTemplates`
+- Argument before: String added to field `Query.hostShares`
+- Argument last: Int added to field `Query.hostShares`
+- Argument feature: CloudAccountFeature (with default value) added to field `Query.isAwsS3BucketNameAvailable`
+- Argument operationMode: M365DashboardOperationMode added to field `Query.m365OnboardingModeBackupStats`
+- Argument tunnelFilter: NodeTunnelFilter added to field `Query.nodeTunnelStatuses`
+- Argument before: String added to field `Query.physicalHosts`
+- Argument last: Int added to field `Query.physicalHosts`
+- Argument before: String added to field `Query.pureStorageArraysV1`
+- Argument last: Int added to field `Query.pureStorageArraysV1`
+- Argument before: String added to field `Query.pureStorageProtectionGroupsV1`
+- Argument last: Int added to field `Query.pureStorageProtectionGroupsV1`
+- Argument before: String added to field `Query.pureStorageVolumesV1`
+- Argument last: Int added to field `Query.pureStorageVolumesV1`
+- Input field `RemoveClusterNodesInput.nodeIds` default value changed from [] to undefined
+- Input field `RemoveNodeForReplacementInput.nodeIds` default value changed from [] to undefined
+- Enum value `HVM_OBJECT_TYPE` was added to enum `SlaObjectType`
+- Input field `resource` of type `AzureOauthResource` with default value AZURE_RESOURCE_MANAGER was added to input object type `StartAzureCloudAccountOauthInput`
+- Input field `StartExportRdsInstanceJobInput.dbInstanceClass` default value changed from undefined to `UNKNOWN`
+- Input field `StartExportRdsInstanceJobInput.dbInstanceName` default value changed from undefined to ""
+- Input field `exportS3BucketName` of type `String` with default value "" was added to input object type `StartExportRdsInstanceJobInput`
+- Input field `StartExportRdsInstanceJobInput.port` default value changed from undefined to 0
+- Input field `shouldCreateS3Bucket` of type `Boolean` with default value false was added to input object type `StartExportRdsInstanceJobInput`
+- Input field `shouldExportToS3` of type `Boolean` with default value false was added to input object type `StartExportRdsInstanceJobInput`
+- Enum value `PING_FEDERATE_CLUSTER` was added to enum `UserAuditObjectTypeEnum`
+- Enum value `ANTHROPIC_CHILD_ORG_SETTINGS` was added to enum `WorkloadLevelHierarchy`
+- Enum value `ANTHROPIC_DEVICE` was added to enum `WorkloadLevelHierarchy`
+- Enum value `ANTHROPIC_ORG_SETTINGS` was added to enum `WorkloadLevelHierarchy`
+- Enum value `ANTHROPIC_USER_CLAUDE_CHAT` was added to enum `WorkloadLevelHierarchy`
+- Enum value `AZURE_COSMOS_NOSQL_CONTAINER` was added to enum `WorkloadLevelHierarchy`
+- Enum value `PARTIALLY_SUCCEEDED` was added to enum `WorkloadRecoveryStatusV2`
+- Input field `prioritizedOnboardingSpec` of type `PrioritizedOnboardingSpec` was added to input object type `AddO365OrgInput`
+- Input field `isSupportTunnelEnabled` of type `Boolean` was added to input object type `ClusterFilterInput`
+- Input field `workloadId` of type `UUID` was added to input object type `CompleteAzureCloudAccountOauthInput`
+- Input field `targetType` of type `UpgradeTargetType` was added to input object type `CompleteUploadSessionInput`
+- Input field `targetType` of type `UpgradeTargetType` was added to input object type `ConfirmPartUploadInput`
+- Input field `targetType` of type `UpgradeTargetType` was added to input object type `GeneratePresignedUrlForDownloadInput`
+- Input field `targetType` of type `UpgradeTargetType` was added to input object type `GeneratePresignedUrlForPartUploadInput`
+- Input field `targetType` of type `UpgradeTargetType` was added to input object type `InitializeUploadSessionInput`
+- Input field `sailPoint` of type `SailPointIntegrationConfigInput` was added to input object type `IntegrationConfigInput`
+- Input field `targetType` of type `UpgradeTargetType` was added to input object type `ListAllUploadRecordsInput`
+- Input field `prioritizedOnboardingSpec` of type `PrioritizedOnboardingSpec` was added to input object type `O365SaasSetupCompleteInput`
+- Input field `ssoRecoveryOption` of type `SsoRecoveryOptionInput` was added to input object type `ObjectRecoveryOptionsType`
+- Input field `targetType` of type `UpgradeTargetType` was added to input object type `RemoveUploadRecordInput`
+- Input field `m365AccessRecoveryConfig` of type `M365AccessRecoveryConfig` was added to input object type `StartAzureAdAppSetupInput`
+- Input field `m365AccessRecoveryConfig` of type `M365AccessRecoveryConfig` was added to input object type `StartAzureAdAppUpdateInput`
+- Input field `workloadId` of type `UUID` was added to input object type `StartAzureCloudAccountOauthInput`
+- Input field `surgicalRecoveryConfig` of type `SurgicalRecoveryConfigInput` was added to input object type `StartEc2InstanceSnapshotExportJobInput`
+- Input field `surgicalRecoveryConfig` of type `SurgicalRecoveryConfigInput` was added to input object type `StartRestoreAwsNativeEc2InstanceSnapshotJobInput`
+
+### ✨ New Features & Additions
+
+- Type `AnthropicOrg` was added
+- Field `linkedServicePrincipal` was added to object type `AzureAdApplication`
+- Field `m365AccessRecoveryState` was added to object type `AzureAdDirectory`
+- Field `hasSigningCert` was added to object type `AzureAdServicePrincipal`
+- Field `isMissingDeveloperCollaborationAccess` was added to object type `AzureDevOpsProject`
+- Type `AzureDevOpsProjectMissingPermission` was added
+- Field `shouldAllowSwitchToBackfillOnboardingMode` was added to object type `ComplianceState`
+- Field `tunnelEnabledClusters` was added to object type `CountClustersReply`
+- Type `EncryptedFileRecoverySpecInput` was added
+- Type `EntraIdLinkedServicePrincipal` was added
+- Field `maxTimeTravelHours` was added to object type `GcpBigQueryDataset`
+- Type `GetImageClassificationClusterConfigsReply` was added
+- Field `memoryMb` was added to object type `HypervAppMetadata`
+- Field `numVirtualCpus` was added to object type `HypervAppMetadata`
+- Type `HypervisorSlaDomainInfo` was added
+- Type `HypervisorVirtualMachine` was added
+- Type `HypervisorVirtualMachineDetails` was added
+- Type `HypervisorVirtualMachineV1` was added
+- Type `ImageClassificationClusterConfig` was added
+- Field `sailPoint` was added to object type `IntegrationConfig`
+- Type `M365AccessRecoveryConfig` was added
+- Type `M365AccessRecoveryState` was added
+- Field `prioritizedOnboardingDays` was added to object type `M365ProductOperationMode`
+- Type `MongoDataHostsConnection` was added
+- Field `startRscpPackageDownload` was added to object type `Mutation`
+- Field `startRscpUpgrade` was added to object type `Mutation`
+- Field `updateImageClassificationConfig` was added to object type `Mutation`
+- Field `backupSource` was added to object type `MysqldbInstanceAppMetadata`
+- Type `MysqldbPerReplicaRestoreSettingsInput` was added
+- Field `assetId` was added to object type `NodeStatus`
+- Type `NodeTunnelFilter` was added
+- Field `nodeIp` was added to object type `NodeTunnelStatus`
+- Type `O365SetupOperationMode` was added
+- Type `OpenstackAvailabilityZoneDescendantType` was added
+- Type `OpenstackAvailabilityZonePhysicalChildType` was added
+- Type `OpenstackDomainDescendantType` was added
+- Type `OpenstackDomainLogicalChildType` was added
+- Type `OpenstackEnvironmentDescendantType` was added
+- Type `OpenstackEnvironmentLogicalChildType` was added
+- Type `OpenstackEnvironmentPhysicalChildType` was added
+- Type `OpenstackHostDescendantType` was added
+- Type `OpenstackHostPhysicalChildType` was added
+- Type `OpenstackNetworkTags` was added
+- Type `OpenstackProjectDescendantType` was added
+- Type `OpenstackProjectLogicalChildType` was added
+- Type `OpenstackRegionDescendantType` was added
+- Type `OpenstackRegionPhysicalChildType` was added
+- Type `OpenstackTag` was added
+- Type `OpenstackTagDescendantType` was added
+- Type `OpenstackTagLogicalChildType` was added
+- Type `OpenstackVirtualMachine` was added
+- Type `OpenstackVmAgentStatus` was added
+- Type `PrioritizedOnboardingSpec` was added
+- Type `ProxmoxVirtualMachineDetails` was added
+- Type `QuarantinedFileRecoverySpecInput` was added
+- Field `imageClassificationClusterConfigs` was added to object type `Query`
+- Field `rscpUpgradeStatus` was added to object type `Query`
+- Field `overusageGraceStartedAt` was added to object type `RcvEntitlementsUsageDetails`
+- Type `RscpUpgradeMode` was added
+- Type `RscpUpgradeStatus` was added
+- Type `SailPointIntegrationConfig` was added
+- Type `SailPointIntegrationConfigInput` was added
+- Type `SailPointStatus` was added
+- Type `SailPointStatusCode` was added
+- Type `SailPointStatusInput` was added
+- Type `SlaAssignmentType` was added
+- Type `SsoRecoveryOptionInput` was added
+- Type `SsoSigningCertConfigInput` was added
+- Field `isExchangeAdminRoleAssigned` was added to object type `StartAzureAdAppSetupReply`
+- Field `missingM365Permissions` was added to object type `StartAzureAdAppSetupReply`
+- Type `StartRscpPackageDownloadInput` was added
+- Type `StartRscpPackageDownloadReply` was added
+- Type `StartRscpUpgradeInput` was added
+- Type `StartRscpUpgradeReply` was added
+- Type `SurgicalRecoveryConfigInput` was added
+- Type `UpdateImageClassificationConfigInput` was added
+- Type `UpdateImageClassificationConfigReply` was added
+- Type `UpgradeTargetType` was added
+- Type `VirtualMachinesOneof` was added
+
+## August 24, 2026
+
+### ⚠️ Breaking Changes
+
+- Field `AirMcpGatewayConnectionData`.idpTenantId changed type from `UUID`! to `String`!
+- Input field `memberServerIds` was removed from input object type `AirUpdateMcpGatewayInput`
+- Type `D365DataverseTable` was removed
+- Input field `cloudInstanceId` was removed from input object type `HostRegisterInput`
+- Input field `id` was removed from input object type `HostRegisterInput`
+- Input field `connectionInfo` was removed from input object type `MysqldbHaReplicaConfigInput`
+- Enum value PendingActionSubGroupTypeEnum.ARCHIVAL_LOCATION_DISABLE was deprecated with reason Nothing creates this type; it will be removed in a future release.
+- Enum value PendingActionSubGroupTypeEnum.ARCHIVAL_LOCATION_ENABLE was deprecated with reason Nothing creates this type; it will be removed in a future release.
+- Enum value PendingActionSubGroupTypeEnum.ARCHIVAL_LOCATION_PAUSE was deprecated with reason Nothing creates this type; it will be removed in a future release.
+- Enum value PendingActionSubGroupTypeEnum.ARCHIVAL_LOCATION_RESUME was deprecated with reason Nothing creates this type; it will be removed in a future release.
+- Enum value PendingActionSubGroupTypeEnum.AWS_ROLE_BASED_ARCHIVAL_LOCATION was deprecated with reason Nothing creates this type; it will be removed in a future release.
+- Enum value PendingActionSyncType.DERIVED was deprecated with reason Nothing returns this sync type; it will be removed in a future release.
+- Input field `UpgradeGcpCloudAccountPermissionsWithoutOauthInput.feature` changed type from `CloudAccountFeature`! to `CloudAccountFeature`
+
+### ⚡ Potentially Breaking Changes
+
+- Enum value `AZURE_LOCAL_SUBSCRIPTION` was added to enum `ActivityObjectTypeEnum`
+- Enum value `K8S_POSTGRES_DATABASE` was added to enum `ActivityObjectTypeEnum`
+- Enum value `K8S_POSTGRES_DB_CLUSTER` was added to enum `ActivityObjectTypeEnum`
+- Enum value `OPENSTACK_TAG` was added to enum `ActivityObjectTypeEnum`
+- Enum value `REENCRYPTION` was added to enum `ActivityTypeEnum`
+- Enum value `K8S_POSTGRES_DB_CLUSTER` was added to enum `AuditObjectType`
+- Enum value `OPENSTACK_TAG` was added to enum `AuditObjectType`
+- Enum value `MANAGE_RSCP_UPGRADE` was added to enum `AuthorizedOperation`
+- Enum value `VIEW_RSCP_UPGRADE` was added to enum `AuthorizedOperation`
+- Enum value `CLAIMS_MAPPING_POLICY` was added to enum `AzureAdObjectType`
+- Enum value `HOME_REALM_DISCOVERY_POLICY` was added to enum `AzureAdObjectType`
+- Enum value `TOKEN_ISSUANCE_POLICY` was added to enum `AzureAdObjectType`
+- Enum value `TOKEN_LIFETIME_POLICY` was added to enum `AzureAdObjectType`
+- Enum value `SSO_POLICY_APPLIES_TO` was added to enum `AzureAdRelationshipEnumType`
+- Enum value `SSO_POLICY_EXTENSION` was added to enum `AzureAdRelationshipEnumType`
+- Enum value `APPLIED_SSO_POLICY` was added to enum `AzureAdReverseRelationshipType`
+- Enum value `EXTENDED_SSO_POLICY` was added to enum `AzureAdReverseRelationshipType`
+- Enum value `AWS_KMS_KEY_SHARING` was added to enum `CloudAccountFeature`
+- Enum value `RSCP_VM` was added to enum `ClusterProductType`
+- Enum value `PROXMOX_CLUSTER` was added to enum `DataGovObjectType`
+- Enum value `PROXMOX_ENVIRONMENT` was added to enum `DataGovObjectType`
+- Enum value `PROXMOX_NODE` was added to enum `DataGovObjectType`
+- Enum value `PROXMOX_ROOT` was added to enum `DataGovObjectType`
+- Enum value `PROXMOX_VIRTUAL_MACHINE` was added to enum `DataGovObjectType`
+- Enum value `DATABASE_TYPE_SAP_HANA` was added to enum `DatabaseType`
+- Enum value `AZURE_LOCAL_SUBSCRIPTION` was added to enum `EventObjectType`
+- Enum value `K8S_POSTGRES_DATABASE` was added to enum `EventObjectType`
+- Enum value `K8S_POSTGRES_DB_CLUSTER` was added to enum `EventObjectType`
+- Enum value `OPENSTACK_TAG` was added to enum `EventObjectType`
+- Enum value `REENCRYPTION` was added to enum `EventType`
+- Enum value `IRISDB_CONNECTION_STATUS` was added to enum `HierarchyFilterField`
+- Enum value `IRISDB_HOST_ID` was added to enum `HierarchyFilterField`
+- Enum value `K8S_POSTGRES_DATABASE` was added to enum `HierarchyObjectTypeEnum`
+- Enum value `K8S_POSTGRES_DB_CLUSTER` was added to enum `HierarchyObjectTypeEnum`
+- Enum value `OPENSTACK_TAG` was added to enum `HierarchyObjectTypeEnum`
+- M365BackupStorageGroup object implements PolarisHierarchySnappable interface
+- M365BackupStorageOrg object implements PolarisHierarchySnappable interface
+- Enum value `BACKFILL_ONBOARDING` was added to enum `M365DashboardOperationMode`
+- Enum value `PRIORITIZED_ONBOARDING` was added to enum `M365DashboardOperationMode`
+- Enum value `K8S_POSTGRES_DATABASE` was added to enum `ManagedObjectType`
+- Enum value `K8S_POSTGRES_DB_CLUSTER` was added to enum `ManagedObjectType`
+- Enum value `OPENSTACK_TAG` was added to enum `ManagedObjectType`
+- Enum value `ARCHIVAL_LOCATION` was added to enum `NotificationResourceType`
+- Enum value `SUPPORT_CASE` was added to enum `NotificationResourceType`
+- O365Group object implements PolarisHierarchySnappable interface
+- O365Org object implements PolarisHierarchySnappable interface
+- Enum value `K8S_POSTGRES_DB_CLUSTER` was added to enum `ObjectTypeEnum`
+- Enum value `MANAGE_RSCP_UPGRADE` was added to enum `Operation`
+- Enum value `VIEW_RSCP_UPGRADE` was added to enum `Operation`
+- Enum value `EXPORT` was added to enum `PermissionsGroup`
+- Enum value `EXPORT_FILES` was added to enum `PolarisSnappableAuthorizedOperationsEnum`
+- Enum value `REMOVAL_IN_PROGRESS` was added to enum `PrivateEndpointConnectionStatus`
+- Argument after: String added to field `Query.allMissingClusters`
+- Argument before: String added to field `Query.allMissingClusters`
+- Default value CONNECTION_STATUS_NOT_SPECIFIED was added to argument connectionStatus on field `Query.allMissingClusters`
+- Argument first: Int added to field `Query.allMissingClusters`
+- Argument last: Int added to field `Query.allMissingClusters`
+- Argument after: String added to field `Query.azureSubnets`
+- Argument before: String added to field `Query.azureSubnets`
+- Argument first: Int added to field `Query.azureSubnets`
+- Argument last: Int added to field `Query.azureSubnets`
+- Argument before: String added to field `Query.browseOnedrive`
+- Argument last: Int added to field `Query.browseOnedrive`
+- Argument before: String added to field `Query.microsoftGroups`
+- Argument last: Int added to field `Query.microsoftGroups`
+- Argument before: String added to field `Query.o365Groups`
+- Argument last: Int added to field `Query.o365Groups`
+- Argument resourceIds: [UUID!] added to field `Query.o365License`
+- Argument before: String added to field `Query.o365Mailboxes`
+- Argument last: Int added to field `Query.o365Mailboxes`
+- Argument before: String added to field `Query.o365Onedrives`
+- Argument last: Int added to field `Query.o365Onedrives`
+- Argument before: String added to field `Query.o365Orgs`
+- Argument last: Int added to field `Query.o365Orgs`
+- Argument before: String added to field `Query.o365SharepointDrives`
+- Argument last: Int added to field `Query.o365SharepointDrives`
+- Argument before: String added to field `Query.o365SharepointLists`
+- Argument last: Int added to field `Query.o365SharepointLists`
+- Argument before: String added to field `Query.o365SharepointObjectList`
+- Argument last: Int added to field `Query.o365SharepointObjectList`
+- Argument before: String added to field `Query.o365SharepointObjectsNew`
+- Argument last: Int added to field `Query.o365SharepointObjectsNew`
+- Argument before: String added to field `Query.o365SharepointSites`
+- Argument last: Int added to field `Query.o365SharepointSites`
+- Argument before: String added to field `Query.o365Sites`
+- Argument last: Int added to field `Query.o365Sites`
+- Argument before: String added to field `Query.o365TeamChannels`
+- Argument last: Int added to field `Query.o365TeamChannels`
+- Argument before: String added to field `Query.o365TeamPostedBy`
+- Argument last: Int added to field `Query.o365TeamPostedBy`
+- Argument before: String added to field `Query.o365Teams`
+- Argument last: Int added to field `Query.o365Teams`
+- Argument before: String added to field `Query.o365UserObjects`
+- Argument last: Int added to field `Query.o365UserObjects`
+- Argument before: String added to field `Query.snappableTeamsDriveSearch`
+- Argument last: Int added to field `Query.snappableTeamsDriveSearch`
+- Enum value `SPARSE_AWARE_SIZE` was added to enum `ReportMeasure`
+- Enum value `SNAPSHOT_LOCATION_TYPE_BACKUP` was added to enum `SnapshotLocType`
+- Enum value `SNAPSHOT_LOCATION_TYPE_REPLICATION` was added to enum `SnapshotLocType`
+- Enum value `SNAPSHOT_LOCATION_TYPE_SOURCE` was added to enum `SnapshotLocType`
+- Input field `excludePaths` of type [String!] with default value [] was added to input object type `VolumeGroupMountSnapshotJobConfigInput`
+- Input field `authType` of type `AzureAuthType` was added to input object type `AzureListManagementGroupHierarchyReq`
+- Input field `awsKmsKey` of type `AwsKmsKeyIdentifierInput` was added to input object type `CreateCloudNativeAzureStorageSettingInput`
+- Input field `dsrmAdminPassword` of type `String` was added to input object type `DomainControllerRestoreConfigInput`
+- Input field `recoveryMethod` of type `RecoveryMethod` was added to input object type `DomainControllerRestoreConfigInput`
+- Input field `shouldReplayCapturedSchema` of type `Boolean` was added to input object type `MysqldbAutomatedRestoreConfigInput`
+- Input field `perReplicaConnectionInfo` of type `MysqldbReplicaConnectionInfoInput` was added to input object type `MysqldbHaReplicaConfigInput`
+- Input field `tasksRestoreConfig` of type `TasksRestoreConfig` was added to input object type `SnappableRestoreConfig`
+- Input field `featuresToUpgrade` of type [FeatureWithPermissionsGroups!] was added to input object type `UpgradeGcpCloudAccountPermissionsWithoutOauthInput`
+- Input field `recoveryPurpose` of type `VolumeGroupMountSnapshotJobConfigRecoveryPurpose` was added to input object type `VolumeGroupMountSnapshotJobConfigInput`
+- Input field `hypervVm` of type `HypervVmRecoverySpecInput` was added to input object type `WorkloadSpecificRecoverySpecInput`
+
+### ✨ New Features & Additions
+
+- Type `AppItemRestoreConfig` was added
+- Type `AppItemRestoreInfo` was added
+- Type `AppItemWithCascadingImpact` was added
+- Field `id` was added to object type `AwsAccountValidationResponse`
+- Field `serviceType` was added to object type `AwsAccountValidationResponse`
+- Field `orgId` was added to object type `AwsNativeAccount`
+- Field `entraIdClaimsMappingPolicy` was added to object type `AzureAdObjects`
+- Field `entraIdHomeRealmDiscoveryPolicy` was added to object type `AzureAdObjects`
+- Field `entraIdTokenIssuancePolicy` was added to object type `AzureAdObjects`
+- Field `entraIdTokenLifetimePolicy` was added to object type `AzureAdObjects`
+- Field `apps` was added to object type `AzureCloudAccountTenantWithExoConfigs`
+- Field `pullRequestCount` was added to object type `AzureDevOpsProjectFixedObjectCounts`
+- Field `app` was added to object type `AzureSubscriptionWithExoConfigs`
+- Type `CascadingImpactActionType` was added
+- Type `CascadingImpactResolutionMode` was added
+- Type `CascadingImpactResult` was added
+- Field `mariadbInstanceAppMetadata` was added to object type `CdmSnapshot`
+- Type `ChildRestoreItemCriteria` was added
+- Type `ClassificationDataTypeIdToMaskingTechnique` was added
+- Field `isTunnelEnabled` was added to object type `Cluster`
+- Field `assetId` was added to object type `ClusterNode`
+- Type `Condition` was added
+- Type `ConditionValue` was added
+- Type `DataMaskingConfigInput` was added
+- Type `DownloadSalesforcePermissionsInput` was added
+- Type `DownloadSalesforcePermissionsReply` was added
+- Type `Dynamics365RestoreConfig` was added
+- Type `EntraIdClaimsMappingPolicy` was added
+- Type `EntraIdHomeRealmDiscoveryPolicy` was added
+- Type `EntraIdTokenIssuancePolicy` was added
+- Type `EntraIdTokenIssuanceSigningAlgorithm` was added
+- Type `EntraIdTokenLifetimePolicy` was added
+- Type `EntraIdTokenResponseSigningPolicy` was added
+- Field `taskCount` was added to object type `ExchangeAnalysisResult`
+- Type `ExcludedChildDetails` was added
+- Type `FieldOverrideInput` was added
+- Field `isProtectionOnboarded` was added to object type `GcpAlloyDbCluster`
+- Type `GcpBigQueryDataset` was added
+- Type `GcpBigQueryLocation` was added
+- Type `GcpBigQueryModel` was added
+- Type `GcpBigQueryRoutine` was added
+- Type `GcpBigQueryTable` was added
+- Type `GcpBigQueryView` was added
+- Field `isProtectionOnboarded` was added to object type `GcpNativeDisk`
+- Field `isProtectionOnboarded` was added to object type `GcpNativeGceInstance`
+- Type `HarmfulLifecyclePolicy` was added
+- Type `HarmfulLifecyclePolicyConnection` was added
+- Type `HarmfulLifecyclePolicyEdge` was added
+- Type `HarmfulLifecyclePolicyFilter` was added
+- Type `HypervStandaloneNicSpec` was added
+- Type `HypervStandaloneNicSpecInput` was added
+- Type `HypervStandaloneTarget` was added
+- Type `HypervStandaloneTargetInput` was added
+- Type `HypervTargetConfig` was added
+- Type `HypervTargetConfigInput` was added
+- Type `HypervVmRecoverySpec` was added
+- Type `HypervVmRecoverySpecInput` was added
+- Type `HypervisorEnvironment` was added
+- Type `HypervisorEnvironmentDetails` was added
+- Type `HypervisorEnvironmentTypeOneof` was added
+- Type `HypervisorEnvironmentV1` was added
+- Type `HypervisorSpecificDetails` was added
+- Type `IpAllocationMethod` was added
+- Type `IrisdbSlaConfig` was added
+- Field `prioritizedOnboardingEndTime` was added to object type `M365ProductOperationMode`
+- Field `prioritizedOnboardingStartTime` was added to object type `M365ProductOperationMode`
+- Type `MariadbInstanceAppMetadata` was added
+- Type `MariadbSnapshotType` was added
+- Type `MaskingExclusionInput` was added
+- Type `MaskingOverrideInput` was added
+- Type `MaskingTechnique` was added
+- Field `disableStrictSyncForMssqlLiveMount` was added to object type `MssqlHostConfiguration`
+- Field `downloadSalesforcePermissions` was added to object type `Mutation`
+- Field `startInPlaceDataMasking` was added to object type `Mutation`
+- Field `startSaasAppItemsRestore` was added to object type `Mutation`
+- Field `startSalesforcePermissionAssessment` was added to object type `Mutation`
+- Type `MysqlBackupNodePreference` was added
+- Field `backupNodePreference` was added to object type `MysqlHaClusterInfo`
+- Field `authenticationType` was added to object type `MysqlTopologyReplicaInfo`
+- Field `bindIpAddress` was added to object type `MysqlTopologyReplicaInfo`
+- Field `mysqlBinaryPath` was added to object type `MysqlTopologyReplicaInfo`
+- Field `mysqlVersion` was added to object type `MysqlTopologyReplicaInfo`
+- Field `portNumber` was added to object type `MysqlTopologyReplicaInfo`
+- Field `socketFilePath` was added to object type `MysqlTopologyReplicaInfo`
+- Field `sslCaCertFilePath` was added to object type `MysqlTopologyReplicaInfo`
+- Field `sslCertFilePath` was added to object type `MysqlTopologyReplicaInfo`
+- Field `sslKeyFilePath` was added to object type `MysqlTopologyReplicaInfo`
+- Field `systemUsername` was added to object type `MysqlTopologyReplicaInfo`
+- Field `username` was added to object type `MysqlTopologyReplicaInfo`
+- Type `NetworkPreservationMode` was added
+- Type `NicIpConfig` was added
+- Field `irisdbSlaConfig` was added to object type `ObjectSpecificConfigs`
+- Type `Operator` was added
+- Type `PermissionReportType` was added
+- Type `PermissionType` was added
+- Type `ProxmoxDetails` was added
+- Type `ProxmoxEnvironmentDetails` was added
+- Field `Query`.accountSettings is deprecated
+- Field `harmfulLifecyclePolicies` was added to object type `Query`
+- Field `kubernetesRecoverableClusters` was added to object type `Query`
+- Field `saasAppCascadingImpact` was added to object type `Query`
+- Field `s3EndpointStatus` was added to object type `RcvAwsPrivateConnectivityEndpoints`
+- Field `stsEndpointStatus` was added to object type `RcvAwsPrivateConnectivityEndpoints`
+- Field `expirationDate` was added to object type `RcvEntitlement`
+- Field `RcvEntitlementWithExpirationDate`.bundle is deprecated
+- Deprecation reason on field `RdsInstanceExportDefaults.supportedDbEngineVersions` has changed from `Use` available_db_engine_versions instead. to `Use` availableDbEngineVersions instead.
+- Type `RecordFilter` was added
+- Field `totalTasks` was added to object type `RecoveryAnalysisSummary`
+- Type `RecoveryMethod` was added
+- Field `region` was added to object type `RecoveryPlanAwsAccount`
+- Field `region` was added to object type `RecoveryPlanAzureSubscription`
+- Type `RelationshipType` was added
+- Type `RestoreDataType` was added
+- Type `RestoreItemCriteria` was added
+- Type `RestoreItemInfo` was added
+- Type `RestoreOperationType` was added
+- Type `SaasAppSpecificRestoreConfig` was added
+- Type `SaasAppsCascadingImpactOperationType` was added
+- Type `SaasSortByParam` was added
+- Type `SalesforceRestoreConfig` was added
+- Field `type` was added to object type `SnapshotLocationDetail`
+- Type `StartInPlaceDataMaskingInput` was added
+- Type `StartInPlaceDataMaskingReply` was added
+- Type `StartSalesforcePermissionAssessmentInput` was added
+- Type `StartSalesforcePermissionAssessmentReply` was added
+- Type `TaskInfo` was added
+- Type `TaskListRestoreInfo` was added
+- Type `TasksRestoreConfig` was added
+- Field `isCdmEnforcementDisabled` was added to object type `UpdateTprPolicyDataMangementClusterReqChangesTemplate`
+- Field `isCdmEnforcementDisabled` was added to object type `UpdateTprPolicyDataMangementObjectReqChangesTemplate`
+- Field `isCdmEnforcementDisabled` was added to object type `UpdateTprPolicyDataMangementSlaReqChangesTemplate`
+- Field `isCdmEnforcementDisabled` was added to object type `UpdateTprPolicySystemConfigReqChangesTemplate`
+- Type `VolumeGroup` was added
+- Type `VolumeGroupMountSnapshotJobConfigRecoveryPurpose` was added
+- Field `hypervVm` was added to object type `WorkloadSpecificRecoverySpec`
+- Type cascadingImpactKeys was added
+
+## August 17, 2026
+
+### ⚠️ Breaking Changes
+
+- Type `PowerPlatformApp` was removed
+- Type `PowerPlatformAppStatus` was removed
+- Type `PowerPlatformAppType` was removed
+- Type `PowerPlatformFlow` was removed
+- Type `PowerPlatformFlowStatus` was removed
+- Type `PowerPlatformFlowType` was removed
+- Field `objectDeletedAt` was added to object type `GetAnomalyDetailsReply`
+
+### ⚡ Potentially Breaking Changes
+
+- Enum value `INFRASTRUCTURE_DELETION` was added to enum `AnomalyType`
+- Enum value `UNRECOGNIZED` was added to enum `AnomalyType`
+- Enum value `CLOUD_COST_REPORT` was added to enum `AwsNativeProtectionFeature`
+- Enum value `ENCRYPTION_TYPE_NON_UEM_BYOK` was added to enum `EncryptionType`
+- Enum value `SECURITY_IDP_HAS_ENABLED_USER_WITH_LABEL` was added to enum `FilterType`
+- Enum value `SECURITY_SAAS_ACTIVITY_ACTOR_TYPE` was added to enum `FilterType`
+- Enum value `IOC_REGISTRY` was added to enum `IndicatorOfCompromiseKind`
+- Enum value `DELETION` was added to enum `PendingActionGroupTypeEnum`
+- Enum value `DELETE_SNAPSHOTS` was added to enum `PendingActionSubGroupTypeEnum`
+- Enum value `DELETE_SNAPSHOTS_OF_OBJECTS` was added to enum `PendingActionSubGroupTypeEnum`
+- Argument anomalyCategoryFilter: [WorkloadAnomalyCategory!] added to field `Query.workloadAnomalies`
+- Enum value `TASKS` was added to enum `SnappableType`
+- Enum value `CNP_OBJECT_CAPACITY_BY_CLOUD_ACCOUNT_NAME_TABLE` was added to enum `TableViewType`
+- Input field `proxySettings` of type `ProxySettingsInput` was added to input object type `CreateAutomaticRcsTargetMappingInput`
+- Input field `shouldBypassProxyForDatapaths` of type `Boolean` was added to input object type `CreateAutomaticRcsTargetMappingInput`
+- Input field `proxySettings` of type `ProxySettingsInput` was added to input object type `CreateRcsReaderTargetInput`
+- Input field `shouldBypassProxyForDatapaths` of type `Boolean` was added to input object type `CreateRcsReaderTargetInput`
+- Input field `proxySettings` of type `ProxySettingsInput` was added to input object type `CreateRcsTargetInput`
+- Input field `shouldBypassProxyForDatapaths` of type `Boolean` was added to input object type `CreateRcsTargetInput`
+- Input field `proxySettings` of type `ProxySettingsInput` was added to input object type `CreateRcvLocationsFromTemplateInput`
+- Input field `shouldBypassProxyForDatapaths` of type `Boolean` was added to input object type `CreateRcvLocationsFromTemplateInput`
+- Input field `shouldIncludeDiagnosticDetails` of type `Boolean` was added to input object type `ExocomputeHealthChecksReq`
+- Input field `registryPatterns` of type [RegistryPatternSpecInputType!] was added to input object type `ThreatHuntBaseConfigInputType`
+- Input field `proxySettings` of type `ProxySettingsInput` was added to input object type `UpdateRcsAutomaticTargetMappingInput`
+- Input field `shouldBypassProxyForDatapaths` of type `Boolean` was added to input object type `UpdateRcsAutomaticTargetMappingInput`
+- Input field `proxySettings` of type `ProxySettingsInput` was added to input object type `UpdateRcvTargetInput`
+- Input field `shouldBypassProxyForDatapaths` of type `Boolean` was added to input object type `UpdateRcvTargetInput`
+
+### ✨ New Features & Additions
+
+- Field `nativeId` was added to object type `AwsNativeAccount`
+- Field `latestCleanSnapshotTime` was added to object type `AwsNativeS3Bucket`
+- Type `AzureAuthType` was added
+- Field `app` was added to object type `AzureCloudAccountSubscription`
+- Field `ineligibilityReason` was added to object type `AzureCloudAccountSubscription`
+- Field `app` was added to object type `AzureCloudAccountSubscriptionDetail`
+- Field `apps` was added to object type `AzureCloudAccountTenant`
+- Type `AzureCloudAccountTenantApp` was added
+- Field `ineligibilityReason` was added to object type `AzureManagementGroupEntity`
+- Type `AzureOnboardingIneligibilityReason` was added
+- Field `app` was added to object type `AzureSubscriptionWithFeaturesType`
+- Field `app` was added to object type `CloudAccountsAzureSubscription`
+- Field `ineligibilityReason` was added to object type `CloudAccountsAzureSubscription`
+- Type `CloudAuditEvent` was added
+- Type `CloudNativeTagRuleHierarchy` was added
+- Type `D365DataverseTable` was added
+- Field `location` was added to object type `FailoverGroupWorkload`
+- Field `locationId` was added to object type `FailoverGroupWorkload`
+- Field `anomalyCategory` was added to object type `GetAnomalyDetailsReply`
+- Field `cloudAuditEvent` was added to object type `GetAnomalyDetailsReply`
+- Field `isCriticalResourceMonitored` was added to object type `GetAnomalyDetailsReply`
+- Type `O365TodoTask` was added
+- Type `O365TodoTaskFolder` was added
+- Field `browseTasks` was added to object type `Query`
+- Field `snappableTaskSearch` was added to object type `Query`
+- Field `version` was added to object type `ReclaimableClusterStatsData`
+- Type `RegistryPatternSpec` was added
+- Type `RegistryPatternSpecInputType` was added
+- Type `TasksSearchFilter` was added
+- Type `TasksSearchKeywordFilter` was added
+- Type `TasksSearchObjectFilter` was added
+- Type `TasksSearchObjectType` was added
+- Field `registryPatterns` was added to object type `ThreatHuntBaseConfig`
+- Field `registryPatterns` was added to object type `ThreatHuntConfig`
+- Field `anomalyCategory` was added to object type `WorkloadAnomaly`
+- Field `isInfrastructureAlertsEnabled` was added to object type `WorkloadAnomaly`
+- Type `WorkloadAnomalyCategory` was added
+- Field `WorkloadRecoveryInfo`.oldWorkloadId is deprecated
+
+## August 10, 2026
+
+### ⚠️ Breaking Changes
+
+- Type `AddMosaicSourceInput` was removed
+- Type `AssignProtectionInput` was removed
+- Type `BulkDeleteMosaicSourcesInput` was removed
+- Type `BulkDeleteSourceRequestInput` was removed
+- Type `CassandraBackupParams` was removed
+- Type `CassandraColumnFamily` was removed
+- Type `CassandraColumnFamilyConnection` was removed
+- Type `CassandraColumnFamilyEdge` was removed
+- Type `CassandraColumnObject` was removed
+- Type `CassandraKeyspace` was removed
+- Type `CassandraKeyspaceConnection` was removed
+- Type `CassandraKeyspaceDescendantType` was removed
+- Type `CassandraKeyspaceDescendantTypeConnection` was removed
+- Type `CassandraKeyspaceDescendantTypeEdge` was removed
+- Type `CassandraKeyspaceEdge` was removed
+- Type `CassandraKeyspacePhysicalChildType` was removed
+- Type `CassandraKeyspacePhysicalChildTypeConnection` was removed
+- Type `CassandraKeyspacePhysicalChildTypeEdge` was removed
+- Type `CassandraSchemaObject` was removed
+- Type `CassandraSource` was removed
+- Type `CassandraSourceConnection` was removed
+- Type `CassandraSourceDescendantType` was removed
+- Type `CassandraSourceDescendantTypeConnection` was removed
+- Type `CassandraSourceDescendantTypeEdge` was removed
+- Type `CassandraSourceEdge` was removed
+- Type `CassandraSourcePhysicalChildType` was removed
+- Type `CassandraSourcePhysicalChildTypeConnection` was removed
+- Type `CassandraSourcePhysicalChildTypeEdge` was removed
+- Type `CassandraSourceStatus` was removed
+- Type `CassandraSslOptions` was removed
+- Field `CdmSnapshot`.postgresDbClusterAppMetadata changed type from `KosmosWorkloadAppMetadata` to `PostgresDbClusterAppMetadata`
+- Field `noSqlWorkloadCount` was removed from object type `Cluster`
+- Type `DeleteMosaicSourceInput` was removed
+- Type `GetMosaicRecoverableRangeInput` was removed
+- Type `GetMosaicRecoverableRangeResponse` was removed
+- Type `GetMosaicStoreInput` was removed
+- Type `GetMosaicTableSchemaInput` was removed
+- Type `GetMosaicVersionInput` was removed
+- Type `GetSchemaResponse` was removed
+- Type `KosmosTopologyReplicaInfo` was removed
+- Type `ListStoreResponse` was removed
+- Type `ListVersionResponse` was removed
+- Type `ModifyMosaicSourceInput` was removed
+- Type `MongodbBackupParams` was removed
+- Type `MongodbCollection` was removed
+- Type `MongodbCollectionConnection` was removed
+- Type `MongodbCollectionEdge` was removed
+- Type `MongodbDatabase` was removed
+- Type `MongodbDatabaseConnection` was removed
+- Type `MongodbDatabaseDescendantType` was removed
+- Type `MongodbDatabaseDescendantTypeConnection` was removed
+- Type `MongodbDatabaseDescendantTypeEdge` was removed
+- Type `MongodbDatabaseEdge` was removed
+- Type `MongodbDatabasePhysicalChildType` was removed
+- Type `MongodbDatabasePhysicalChildTypeConnection` was removed
+- Type `MongodbDatabasePhysicalChildTypeEdge` was removed
+- Type `MongodbHost` was removed
+- Type `MongodbSource` was removed
+- Type `MongodbSourceConfigParams` was removed
+- Type `MongodbSourceConnection` was removed
+- Type `MongodbSourceDescendantType` was removed
+- Type `MongodbSourceDescendantTypeConnection` was removed
+- Type `MongodbSourceDescendantTypeEdge` was removed
+- Type `MongodbSourceEdge` was removed
+- Type `MongodbSourcePhysicalChildType` was removed
+- Type `MongodbSourcePhysicalChildTypeConnection` was removed
+- Type `MongodbSourcePhysicalChildTypeEdge` was removed
+- Type `MongodbSourceStatus` was removed
+- Type `MongodbSslOptions` was removed
+- Type `MosaicBackupStoreInfoInput` was removed
+- Type `MosaicBulkRecoverableRangeRequestInput` was removed
+- Type `MosaicBulkRecoverableRangeRequestSourceType` was removed
+- Type `MosaicBulkRecoveryRangeInput` was removed
+- Type `MosaicDatabaseManagementObjectInput` was removed
+- Type `MosaicDatabaseObjectInput` was removed
+- Type `MosaicGetSchemaRequestInput` was removed
+- Type `MosaicMonitorInfoInput` was removed
+- Type `MosaicRecoverableRangeObject` was removed
+- Type `MosaicRecoverableRangeRequestInput` was removed
+- Type `MosaicRecoverableRangeRequestSourceType` was removed
+- Type `MosaicRecoveryRangeObject` was removed
+- Type `MosaicRecoveryRangeResponse` was removed
+- Type `MosaicRestoreDataInput` was removed
+- Type `MosaicRetrieveRequestInput` was removed
+- Type `MosaicRetrieveRequestSourceType` was removed
+- Type `MosaicSlaInfoInput` was removed
+- Type `MosaicSnapshot` was removed
+- Type `MosaicSnapshotConnection` was removed
+- Type `MosaicSnapshotEdge` was removed
+- Type `MosaicSnapshotFilterInput` was removed
+- Type `MosaicSnapshotGroupBy` was removed
+- Type `MosaicSnapshotGroupByInfo` was removed
+- Type `MosaicSnapshotGroupByType` was removed
+- Type `MosaicSnapshotGroupByTypeConnection` was removed
+- Type `MosaicSnapshotGroupByTypeEdge` was removed
+- Type `MosaicSnapshotSortBy` was removed
+- Type `MosaicSnapshotType` was removed
+- Type `MosaicStorageLocation` was removed
+- Type `MosaicStorageLocationFilterField` was removed
+- Type `MosaicStorageLocationFilterInput` was removed
+- Type `MosaicStorageLocationQuerySortByField` was removed
+- Type `MosaicStoreConnectionParameters` was removed
+- Type `MosaicStoreConnectionStatus` was removed
+- Type `MosaicStoreObject` was removed
+- Type `MosaicStoreObjectStoreType` was removed
+- Type `MosaicStoreType` was removed
+- Type `MosaicVersionObject` was removed
+- Type `MosaicVersionObjectVersionState` was removed
+- Field `assignProtection` was removed from object type `Mutation`
+- Field `bulkDeleteCassandraSources` was removed from object type `Mutation`
+- Field `createCassandraSource` was removed from object type `Mutation`
+- Field `deleteCassandraSource` was removed from object type `Mutation`
+- Field `recoverCassandraSource` was removed from object type `Mutation`
+- Field `updateCassandraSource` was removed from object type `Mutation`
+- Field `haGroupName` was removed from object type `MysqlHaClusterInfo`
+- Field `MysqlHaClusterInfo`.replicas changed type from [KosmosTopologyReplicaInfo!]! to [MysqlTopologyReplicaInfo!]!
+- Field `allNosqlStorageLocations` was removed from object type `Query`
+- Field `cassandraColumnFamilies` was removed from object type `Query`
+- Field `cassandraColumnFamily` was removed from object type `Query`
+- Field `cassandraColumnFamilyRecoverableRange` was removed from object type `Query`
+- Field `cassandraColumnFamilySchema` was removed from object type `Query`
+- Field `cassandraKeyspace` was removed from object type `Query`
+- Field `cassandraKeyspaces` was removed from object type `Query`
+- Field `cassandraSource` was removed from object type `Query`
+- Field `cassandraSources` was removed from object type `Query`
+- Field `mosaicBulkRecoveryRange` was removed from object type `Query`
+- Field `mosaicSnapshots` was removed from object type `Query`
+- Field `mosaicStores` was removed from object type `Query`
+- Field `mosaicVersions` was removed from object type `Query`
+- Type `SourceConfigParams` was removed
+- Type `SourceInput` was removed
+- Type `SourceSourceType` was removed
+- Type `StoreMetadata` was removed
+- Type `V2BulkDeleteMosaicSourcesRequestSourceType` was removed
+- Type `V2DeleteMosaicSourceRequestSourceType` was removed
+- Type `VersionInput` was removed
+- Type `VersionSourceType` was removed
+
+### 🗑️ Removed Deprecated Items
+
+*These items were previously marked `@deprecated` and have now been removed.*
+
+- Field `bulkDeleteMongodbSources` (deprecated) was removed from object type `Mutation`
+- Field `createMongodbSource` (deprecated) was removed from object type `Mutation`
+- Field `deleteMongodbSource` (deprecated) was removed from object type `Mutation`
+- Field `recoverMongodbSource` (deprecated) was removed from object type `Mutation`
+- Field `updateMongodbSource` (deprecated) was removed from object type `Mutation`
+- Field `mongodbBulkRecoverableRange` (deprecated) was removed from object type `Query`
+- Field `mongodbCollection` (deprecated) was removed from object type `Query`
+- Field `mongodbCollectionRecoverableRange` (deprecated) was removed from object type `Query`
+- Field `mongodbCollections` (deprecated) was removed from object type `Query`
+- Field `mongodbDatabase` (deprecated) was removed from object type `Query`
+- Field `mongodbDatabases` (deprecated) was removed from object type `Query`
+- Field `mongodbSource` (deprecated) was removed from object type `Query`
+- Field `mongodbSources` (deprecated) was removed from object type `Query`
+
+### ⚡ Potentially Breaking Changes
+
+- Enum value `GATEWAY_PROVISIONING_STATE_DELETED` was added to enum `AirGatewayProvisioningState`
+- Enum value `GATEWAY_PROVISIONING_STATE_DELETION_FAILED` was added to enum `AirGatewayProvisioningState`
+- Enum value `UNRECOGNIZED` was added to enum `AirGatewayProvisioningState`
+- Enum value `AZURE_COSMOS_NOSQL` was added to enum `AzureNativeProtectionFeature`
+- Enum value `AZURE_COSMOS_NOSQL_PROTECTION` was added to enum `CloudAccountFeature`
+- Enum value `AWAITING_DECISION` was added to enum `FailoverStatusEnum`
+- Enum value `COMMITTING` was added to enum `FailoverStatusEnum`
+- Enum value `SECURITY_SAAS_ACTIVITY_ACTOR` was added to enum `FilterType`
+- Enum value `SECURITY_SAAS_ACTIVITY_ORG` was added to enum `FilterType`
+- Enum value `SECURITY_SAAS_ACTIVITY_TYPE` was added to enum `FilterType`
+- Enum value `D365_TABLE_LOGICAL_NAME` was added to enum `HierarchyFilterField`
+- Enum value `RECOVERY_PLAN_LAST_RECOVERY_OUTCOME` was added to enum `HierarchyFilterField`
+- Enum value `SAP_HANA_ENABLE_COMPRESSION` was added to enum `HierarchyFilterField`
+- Enum value `RECOVERY_PLAN_LAST_RECOVERY_OUTCOME` was added to enum `HierarchySortByField`
+- Enum value `RECOVERY_PLAN_STATUS` was added to enum `HierarchySortByField`
+- Enum value `IRISDB` was added to enum `InventoryCard`
+- Argument shouldDeleteRcvLocations: Boolean added to field `Mutation.removeCdmCluster`
+- Enum value `RECOVERY_RDS_CONNECTIVITY` was added to enum `PermissionsGroup`
+- Enum value `RESOURCE_TYPE_SAAS_ACTIVITY` was added to enum `PolicyResourceType`
+- Enum value `POLICY_TYPE_SAAS_ACTIVITY` was added to enum `PolicyType`
+- Argument maxCacheStalenessSeconds: Int! (with default value) added to field `Query.allCloudNativeTagKeys`
+- Argument maxCacheStalenessSeconds: Int! (with default value) added to field `Query.allCloudNativeTagValues`
+- Argument after: String added to field `Query.crawls`
+- Argument before: String added to field `Query.crawls`
+- Argument first: Int added to field `Query.crawls`
+- Argument last: Int added to field `Query.crawls`
+- Default value DESC was added to argument sortOrder on field `Query.getCdmReleaseDetailsForVersionFromSupportPortal`
+- Default value DESC was added to argument sortOrder on field `Query.getCdmReleaseDetailsFromSupportPortal`
+- Argument before: String added to field `Query.listO365Apps`
+- Argument last: Int added to field `Query.listO365Apps`
+- Argument after: String added to field `Query.policies`
+- Argument before: String added to field `Query.policies`
+- Argument first: Int added to field `Query.policies`
+- Argument last: Int added to field `Query.policies`
+- Default value ALL was added to argument policyObjectFilter on field `Query.policies`
+- Default value true was added to argument includeWhitelistedResults on field `Query.policyObj`
+- Default value true was added to argument includeWhitelistedResults on field `Query.policyObjOpt`
+- Argument after: String added to field `Query.policyObjectUsages`
+- Argument before: String added to field `Query.policyObjectUsages`
+- Argument first: Int added to field `Query.policyObjectUsages`
+- Argument last: Int added to field `Query.policyObjectUsages`
+- Argument before: String added to field `Query.snappableTeamsConversationsSearch`
+- Argument last: Int added to field `Query.snappableTeamsConversationsSearch`
+- Enum value `AWAITING_DECISION` was added to enum `RecoveryStatus`
+- Enum value `COMMITTING` was added to enum `RecoveryStatus`
+- Member SaasActivityMetadata was added to `Union` type ResourceMetadataUnion
+- Member SaasActivityViolationDetails was added to `Union` type ViolationDetailsUnion
+- Input field `cloudInstanceId` of type `String` was added to input object type `HostRegisterInput`
+- Input field `id` of type `String` was added to input object type `HostRegisterInput`
+- Input field `licenseRecoveryOption` of type `LicenseRecoveryOptionInput` was added to input object type `ObjectRecoveryOptionsType`
+
+### ✨ New Features & Additions
+
+- Field `usedFsSize` was added to object type `CdmSnapshot`
+- Field `dataCategoryIds` was added to object type `Crawl`
+- Type `DbEngineVersionInfo` was added
+- Deprecation reason on field `FileResult.attributesSummary` has changed from `No` longer used. to `No` longer populated or consumed by any caller.
+- Type `FilesetExportSnapshotFilesFromArchivalLocationInput` was added
+- Type `LicenseRecoveryOptionInput` was added
+- Field `analysisJob` was added to object type `M365AbrRecoveryPlan`
+- Field `bccRecipients` was added to object type `M365ExchangeRecoveryPlanFilterLeaf`
+- Field `createdTime` was added to object type `M365ExchangeRecoveryPlanFilterLeaf`
+- Field `createTime` was added to object type `M365OneDriveRecoveryPlanFilterLeaf`
+- Field `createdByEmail` was added to object type `M365OneDriveRecoveryPlanFilterLeaf`
+- Field `hasUniquePermissions` was added to object type `M365OneDriveRecoveryPlanFilterLeaf`
+- Field `lastModifiedByEmail` was added to object type `M365OneDriveRecoveryPlanFilterLeaf`
+- Field `modifiedTime` was added to object type `M365OneDriveRecoveryPlanFilterLeaf`
+- Field `createTime` was added to object type `M365SharePointRecoveryPlanFilterLeaf`
+- Field `createdByEmail` was added to object type `M365SharePointRecoveryPlanFilterLeaf`
+- Field `hasUniquePermissions` was added to object type `M365SharePointRecoveryPlanFilterLeaf`
+- Field `lastModifiedByEmail` was added to object type `M365SharePointRecoveryPlanFilterLeaf`
+- Field `modifiedTime` was added to object type `M365SharePointRecoveryPlanFilterLeaf`
+- Type `MariadbDatabase` was added
+- Type `MariadbDatabaseMetadata` was added
+- Type `MariadbDatabaseProtectionState` was added
+- Type `MariadbInstance` was added
+- Type `MariadbInstanceAdvancedConfig` was added
+- Type `MariadbInstanceAuthenticationType` was added
+- Type `MariadbInstanceDetails` was added
+- Type `MariadbInstanceMetadata` was added
+- Type `MariadbInstanceSslConfig` was added
+- Type `MariadbInstanceStatus` was added
+- Field `filesetExportSnapshotFilesFromArchivalLocation` was added to object type `Mutation`
+- Type `MysqlTopologyReplicaInfo` was added
+- Deprecation reason on field `PolicyObj.attributesSummary` has changed from `No` longer used. to `No` longer populated or consumed by any caller.
+- Type `PostgresBackupNodePreference` was added
+- Type `PostgresDbClusterAppMetadata` was added
+- Field `backupNodePreference` was added to object type `PostgresHaClusterInfo`
+- Field `portNumber` was added to object type `PostgresTopologyReplicaInfo`
+- Field `statusMessageDetails` was added to object type `PostgresTopologyReplicaInfo`
+- Type `PowerPlatformApp` was added
+- Type `PowerPlatformAppStatus` was added
+- Type `PowerPlatformAppType` was added
+- Type `PowerPlatformFlow` was added
+- Type `PowerPlatformFlowStatus` was added
+- Type `PowerPlatformFlowType` was added
+- Field `availableDbEngineVersions` was added to object type `RdsInstanceExportDefaults`
+- Field `RdsInstanceExportDefaults`.supportedDbEngineVersions is deprecated
+- Type `RecoveryPlanFilterTimeRange` was added
+- Type `SaasActivityMetadata` was added
+- Type `SaasActivityViolationDetails` was added
+- Field `domainFid` was added to object type `SigninAnomalyMetadata`
+- Field `archiveRelativePath` was added to object type `ThreatHuntingObjectFileMatch`
+- Field `containerArchiveDetails` was added to object type `ThreatHuntingObjectFileMatch`
+- Field `isInsideArchive` was added to object type `ThreatHuntingObjectFileMatch`
+
+## August 03, 2026
+
+### ⚠️ Breaking Changes
+
+- Field `PostgresHaClusterInfo`.replicas changed type from [KosmosTopologyReplicaInfo!]! to [PostgresTopologyReplicaInfo!]!
+- Input field `CompleteAzureAdAppSetupInput.stateToken` changed type from `String`! to `String`
+- Field `Query`.ncdBackEndCapacity changed type from `NcdBackEndCapacity` to `NcdBackEndCapacity`!
+- Field `Query`.ncdFrontEndCapacity changed type from `NcdFrontEndCapacity` to `NcdFrontEndCapacity`!
+- Field `Query`.ncdObjectProtectionStatus changed type from `NcdObjectProtectionStatus` to `NcdObjectProtectionStatus`!
+- Detected 1 breaking change
+
+### ⚡ Potentially Breaking Changes
+
+- Enum value `ANTHROPIC_CHILD_ORG` was added to enum `ActivityObjectTypeEnum`
+- Enum value `ANTHROPIC_CHILD_ORG_SETTINGS` was added to enum `ActivityObjectTypeEnum`
+- Enum value `ANTHROPIC_CHILD_ORG_USER` was added to enum `ActivityObjectTypeEnum`
+- Enum value `ANTHROPIC_DEVICE` was added to enum `ActivityObjectTypeEnum`
+- Enum value `ANTHROPIC_ORG` was added to enum `ActivityObjectTypeEnum`
+- Enum value `ANTHROPIC_ORG_SETTINGS` was added to enum `ActivityObjectTypeEnum`
+- Enum value `ANTHROPIC_USER_CLAUDE_CHAT` was added to enum `ActivityObjectTypeEnum`
+- Enum value `SLA_UPDATE_FAILED` was added to enum `ArchivalMigrationStatus`
+- Enum value `SLA_UPDATE_IN_PROGRESS` was added to enum `ArchivalMigrationStatus`
+- Enum value `SLA_UPDATE_PENDING` was added to enum `ArchivalMigrationStatus`
+- Enum value `SLA_UPDATE_SUCCESS` was added to enum `ArchivalMigrationStatus`
+- Enum value `ANTHROPIC_CHILD_ORG` was added to enum `AuditObjectType`
+- Enum value `ANTHROPIC_CHILD_ORG_SETTINGS` was added to enum `AuditObjectType`
+- Enum value `ANTHROPIC_CHILD_ORG_USER` was added to enum `AuditObjectType`
+- Enum value `ANTHROPIC_DEVICE` was added to enum `AuditObjectType`
+- Enum value `ANTHROPIC_ORG` was added to enum `AuditObjectType`
+- Enum value `ANTHROPIC_ORG_SETTINGS` was added to enum `AuditObjectType`
+- Enum value `ANTHROPIC_USER_CLAUDE_CHAT` was added to enum `AuditObjectType`
+- Enum value `MANAGE_CDM_USER` was added to enum `AuthorizedOperation`
+- Enum value `VIEW_AGENT_CLOUD_SESSIONS` was added to enum `AuthorizedOperation`
+- Enum value `VIEW_CDM_USER` was added to enum `AuthorizedOperation`
+- Input field `awsNativeId` of type `String` with default value "" was added to input object type `AwsGetPermissionPoliciesInput`
+- Enum value `VSPHERE_COMPUTE_VISIBILITY_DISABLED` was added to enum `CdmFeatureFlagType`
+- Enum value `CRITICAL_RESOURCE_PROTECTION` was added to enum `CloudAccountFeature`
+- Enum value `GITHUB_DEVELOPER_COLLABORATION_PROTECTION` was added to enum `CloudAccountFeature`
+- Enum value `SENSITIVE_DATA_DISCOVERY` was added to enum `CoordinatorLabel`
+- Enum value `IDENTITY_INVENTORY` was added to enum `DataViewTypeEnum`
+- Enum value `ANTHROPIC_CHILD_ORG` was added to enum `EventObjectType`
+- Enum value `ANTHROPIC_CHILD_ORG_SETTINGS` was added to enum `EventObjectType`
+- Enum value `ANTHROPIC_CHILD_ORG_USER` was added to enum `EventObjectType`
+- Enum value `ANTHROPIC_DEVICE` was added to enum `EventObjectType`
+- Enum value `ANTHROPIC_ORG` was added to enum `EventObjectType`
+- Enum value `ANTHROPIC_ORG_SETTINGS` was added to enum `EventObjectType`
+- Enum value `ANTHROPIC_USER_CLAUDE_CHAT` was added to enum `EventObjectType`
+- Enum value `RECOVERY_IMPACT_CSV` was added to enum `FileTypeEnumType`
+- Enum value `SECURITY_GPO_LDAP_SIGNING` was added to enum `FilterType`
+- Enum value `SECURITY_GPO_LLMNR_ENABLED` was added to enum `FilterType`
+- Enum value `SECURITY_GPO_RISKY_MACHINE_SCRIPT` was added to enum `FilterType`
+- Enum value `SECURITY_GPO_SE_ASSIGN_PRIMARY_TOKEN_PRIVILEGE` was added to enum `FilterType`
+- Enum value `SECURITY_GPO_SE_BACKUP_PRIVILEGE` was added to enum `FilterType`
+- Enum value `SECURITY_GPO_SE_DEBUG_PRIVILEGE` was added to enum `FilterType`
+- Enum value `SECURITY_GPO_SE_ENABLE_DELEGATION_PRIVILEGE` was added to enum `FilterType`
+- Enum value `SECURITY_GPO_SE_IMPERSONATE_PRIVILEGE` was added to enum `FilterType`
+- Enum value `SECURITY_GPO_SE_LOAD_DRIVER_PRIVILEGE` was added to enum `FilterType`
+- Enum value `SECURITY_GPO_SE_REMOTE_INTERACTIVE_LOGON_RIGHT` was added to enum `FilterType`
+- Enum value `SECURITY_GPO_SE_RESTORE_PRIVILEGE` was added to enum `FilterType`
+- Enum value `SECURITY_GPO_SE_TAKE_OWNERSHIP_PRIVILEGE` was added to enum `FilterType`
+- Enum value `SECURITY_GPO_SE_TCB_PRIVILEGE` was added to enum `FilterType`
+- Enum value `SECURITY_GPO_SE_TRUSTED_CRED_MAN_ACCESS_PRIVILEGE` was added to enum `FilterType`
+- Enum value `SECURITY_IDENTITY_EVENT_POLICY_INSIGHTS` was added to enum `FilterType`
+- Enum value `GPO_SETTING_NAME_ENABLE_MULTICAST` was added to enum `GpoSettingName`
+- Enum value `GPO_SETTING_NAME_LDAP_SERVER_INTEGRITY` was added to enum `GpoSettingName`
+- Enum value `GPO_SETTING_NAME_MACHINE_SCRIPT_COMMAND` was added to enum `GpoSettingName`
+- Enum value `GPO_SETTING_NAME_SE_ASSIGN_PRIMARY_TOKEN_PRIVILEGE` was added to enum `GpoSettingName`
+- Enum value `GPO_SETTING_NAME_SE_BACKUP_PRIVILEGE` was added to enum `GpoSettingName`
+- Enum value `GPO_SETTING_NAME_SE_DEBUG_PRIVILEGE` was added to enum `GpoSettingName`
+- Enum value `GPO_SETTING_NAME_SE_ENABLE_DELEGATION_PRIVILEGE` was added to enum `GpoSettingName`
+- Enum value `GPO_SETTING_NAME_SE_IMPERSONATE_PRIVILEGE` was added to enum `GpoSettingName`
+- Enum value `GPO_SETTING_NAME_SE_LOAD_DRIVER_PRIVILEGE` was added to enum `GpoSettingName`
+- Enum value `GPO_SETTING_NAME_SE_REMOTE_INTERACTIVE_LOGON_RIGHT` was added to enum `GpoSettingName`
+- Enum value `GPO_SETTING_NAME_SE_RESTORE_PRIVILEGE` was added to enum `GpoSettingName`
+- Enum value `GPO_SETTING_NAME_SE_TAKE_OWNERSHIP_PRIVILEGE` was added to enum `GpoSettingName`
+- Enum value `GPO_SETTING_NAME_SE_TCB_PRIVILEGE` was added to enum `GpoSettingName`
+- Enum value `GPO_SETTING_NAME_SE_TRUSTED_CRED_MAN_ACCESS_PRIVILEGE` was added to enum `GpoSettingName`
+- Enum value `EC2_INSTANCE_VPC_ID` was added to enum `HierarchyFilterField`
+- Enum value `RDS_INSTANCE_VPC_ID` was added to enum `HierarchyFilterField`
+- Enum value `ANTHROPIC_CHILD_ORG` was added to enum `HierarchyObjectTypeEnum`
+- Enum value `ANTHROPIC_CHILD_ORG_SETTINGS` was added to enum `HierarchyObjectTypeEnum`
+- Enum value `ANTHROPIC_CHILD_ORG_USER` was added to enum `HierarchyObjectTypeEnum`
+- Enum value `ANTHROPIC_DEVICE` was added to enum `HierarchyObjectTypeEnum`
+- Enum value `ANTHROPIC_ORG` was added to enum `HierarchyObjectTypeEnum`
+- Enum value `ANTHROPIC_ORG_SETTINGS` was added to enum `HierarchyObjectTypeEnum`
+- Enum value `ANTHROPIC_USER_CLAUDE_CHAT` was added to enum `HierarchyObjectTypeEnum`
+- Enum value `IRISDB_DATABASE` was added to enum `HierarchyObjectTypeEnum`
+- Enum value `IRISDB_INSTANCE` was added to enum `HierarchyObjectTypeEnum`
+- Enum value `EC2_INSTANCE_VPC_ID` was added to enum `HierarchySortByField`
+- Enum value `RDS_INSTANCE_VPC_ID` was added to enum `HierarchySortByField`
+- Enum value `ANTHROPIC` was added to enum `InventoryCard`
+- Enum value `ANTHROPIC_ROOT` was added to enum `InventorySubHierarchyRootEnum`
+- Enum value `IRISDB_ROOT` was added to enum `InventorySubHierarchyRootEnum`
+- Enum value `ANTHROPIC_CHILD_ORG` was added to enum `ManagedObjectType`
+- Enum value `ANTHROPIC_CHILD_ORG_SETTINGS` was added to enum `ManagedObjectType`
+- Enum value `ANTHROPIC_CHILD_ORG_USER` was added to enum `ManagedObjectType`
+- Enum value `ANTHROPIC_DEVICE` was added to enum `ManagedObjectType`
+- Enum value `ANTHROPIC_ORG` was added to enum `ManagedObjectType`
+- Enum value `ANTHROPIC_ORG_SETTINGS` was added to enum `ManagedObjectType`
+- Enum value `ANTHROPIC_USER_CLAUDE_CHAT` was added to enum `ManagedObjectType`
+- Enum value `IRISDB_DATABASE` was added to enum `ManagedObjectType`
+- Enum value `IRISDB_INSTANCE` was added to enum `ManagedObjectType`
+- Enum value `ANTHROPIC_CHILD_ORG_SETTINGS` was added to enum `ObjectTypeEnum`
+- Enum value `ANTHROPIC_DEVICE` was added to enum `ObjectTypeEnum`
+- Enum value `ANTHROPIC_ORG_SETTINGS` was added to enum `ObjectTypeEnum`
+- Enum value `ANTHROPIC_USER_CLAUDE_CHAT` was added to enum `ObjectTypeEnum`
+- Enum value `AZURE_DEVOPS_PROJECT_FIXED_OBJECT` was added to enum `ObjectTypeEnum`
+- Enum value `IRISDB_INSTANCE` was added to enum `ObjectTypeEnum`
+- Enum value `MANAGE_CDM_USER` was added to enum `Operation`
+- Enum value `VIEW_AGENT_CLOUD_SESSIONS` was added to enum `Operation`
+- Enum value `VIEW_CDM_USER` was added to enum `Operation`
+- Enum value `QAUTH_BREAK_GLASS_CONFIG_PUT` was added to enum `PendingActionSubGroupTypeEnum`
+- Enum value `RECOVER_TO_S3` was added to enum `PermissionsGroup`
+- Enum value `ACCOUNT_LIFECYCLE_REPORT` was added to enum `PolarisReportViewType`
+- Enum value `ACCOUNT_LOCKOUTS_REPORT` was added to enum `PolarisReportViewType`
+- Enum value `GPO_CAP_CHANGES_REPORT` was added to enum `PolarisReportViewType`
+- Enum value `GROUP_CHANGES_REPORT` was added to enum `PolarisReportViewType`
+- Enum value `GROUP_MEMBERSHIP_REPORT` was added to enum `PolarisReportViewType`
+- Enum value `IDENTITY_INVENTORY_REPORT` was added to enum `PolarisReportViewType`
+- Enum value `PASSWORD_CHANGE_HISTORY_REPORT` was added to enum `PolarisReportViewType`
+- Enum value `PRIVILEGED_IDENTITY_REPORT` was added to enum `PolarisReportViewType`
+- Argument idpTypes: [IdpType!] added to field `Query.allSecurityPolicies`
+- Argument before: String added to field `Query.azureAdDirectories`
+- Argument last: Int added to field `Query.azureAdDirectories`
+- Argument eventObjectTypes: [EventObjectType!] added to field `Query.devOpsBackupJobInformation`
+- Argument lastSeenDate: TimeRangeInput added to field `Query.policyViolations`
+- Member SigninAnomalyMetadata was added to `Union` type ResourceMetadataUnion
+- Enum value `ANTHROPIC_OBJECT_TYPE` was added to enum `SlaObjectType`
+- Enum value `IRISDB_INSTANCE_OBJECT_TYPE` was added to enum `SlaObjectType`
+- Enum value `ACCOUNT_LIFECYCLE_TABLE` was added to enum `TableViewType`
+- Enum value `ACCOUNT_LOCKOUTS_TABLE` was added to enum `TableViewType`
+- Enum value `CNP_PROTECTION_TASKS_DETAIL_BY_CLOUD_ACCOUNT_TABLE` was added to enum `TableViewType`
+- Enum value `CNP_RECOVERY_TASKS_DETAIL_BY_CLOUD_ACCOUNT_TABLE` was added to enum `TableViewType`
+- Enum value `GPO_CAP_CHANGES_TABLE` was added to enum `TableViewType`
+- Enum value `GROUP_CHANGES_TABLE` was added to enum `TableViewType`
+- Enum value `GROUP_MEMBERSHIP_ALL_TABLE` was added to enum `TableViewType`
+- Enum value `IDENTITY_INVENTORY_ALL_TABLE` was added to enum `TableViewType`
+- Enum value `PASSWORD_CHANGE_HISTORY_TABLE` was added to enum `TableViewType`
+- Enum value `PRIVILEGED_IDENTITY_TABLE` was added to enum `TableViewType`
+- Enum value `DELETE_PHYSICAL_HOST` was added to enum `TprRule`
+- Enum value `MANAGE_ENCRYPTION_SETTINGS` was added to enum `TprRule`
+- Input field `isOpenstackStorageSnapshot` of type `Boolean` was added to input object type `CdmSnapshotFilterInput`
+- Input field `eventHubOnboarding` of type `EntraIdEventHubOnboarding` was added to input object type `CompleteAzureAdAppSetupInput`
+- Input field `eventHubOnboardingWithoutOauth` of type `EntraIdEventHubOnboardingWithoutOAuth` was added to input object type `CompleteAzureAdAppSetupInput`
+- Input field `eventHubOnly` of type `Boolean` was added to input object type `CompleteAzureAdAppSetupInput`
+- Input field `sessionId` of type `String` was added to input object type `DeleteAzureAdDirectoryInput`
+- Input field `objectIds` of type [String!] was added to input object type `EventDigestConfig`
+- Input field `managedObjectTypeFilter` of type [ManagedObjectType!] was added to input object type `FailoverGroupWorkloadFilter`
+- Input field `tagBindings` of type [AwsFeatureTagBinding!] was added to input object type `FeatureWithPermissionsGroups`
+- Input field `useExtensionWhitelist` of type `Boolean` was added to input object type `HuntScanFileCriteriaInputType`
+- Input field `targetPrivilegeTypes` of type [PrivilegeType!] was added to input object type `IdentityFilter`
+- Input field `backupSubnetCidr` of type `String` was added to input object type `K8sClusterAddInput`
+- Input field `dataPathTransport` of type `String` was added to input object type `K8sClusterAddInput`
+- Input field `backupSubnetCidr` of type `String` was added to input object type `K8sClusterUpdateConfigInput`
+- Input field `dataPathTransport` of type `String` was added to input object type `K8sClusterUpdateConfigInput`
+- Input field `backupSubnetCidr` of type `String` was added to input object type `K8sManifestConfigInput`
+- Input field `dataPathTransport` of type `String` was added to input object type `K8sManifestConfigInput`
+- Input field `classificationSources` of type [ActivityClassificationSourceType!] was added to input object type `ListActivitiesFilter`
+- Input field `classifications` of type [ActivityClassification!] was added to input object type `ListActivitiesFilter`
+- Input field `classifiedOnRange` of type `DateTimeRange` was added to input object type `ListActivitiesFilter`
+- Input field `policyInsights` of type [PolicyInsight!] was added to input object type `ListActivitiesFilter`
+- Input field `lastSeenAtDateRange` of type `PolicyDateTimeRange` was added to input object type `ListPolicyViolationsFilter`
+- Input field `haClusterConfig` of type `MysqldbHaClusterConfigInput` was added to input object type `MysqldbInstanceConfigInput`
+- Input field `icebergSlaConfigInput` of type `IcebergSlaConfigInput` was added to input object type `ObjectSpecificConfigsInput`
+- Input field `irisdbConfigInput` of type `IrisdbSlaConfigInput` was added to input object type `ObjectSpecificConfigsInput`
+- Input field `featuresWithPermissionsGroups` of type [FeatureWithPermissionsGroups!] was added to input object type `StartGitHubAppSetupInput`
+- Input field `daysOfYear` of type [YearlyDaySpecInput!] was added to input object type `YearlySnapshotScheduleInput`
+
+### ✨ New Features & Additions
+
+- Type `ActivityClassification` was added
+- Type `ActivityClassificationSource` was added
+- Type `ActivityClassificationSourceType` was added
+- Field `classification` was added to object type `ActivityEntry`
+- Field `classificationSources` was added to object type `ActivityEntry`
+- Field `classifiedOn` was added to object type `ActivityEntry`
+- Type `AirGatewayProvisioningState` was added
+- Type `AirMcpGatewayConnectionData` was added
+- Type `AirUpdateMcpGatewayInput` was added
+- Type `AirUpdateMcpGatewayReply` was added
+- Type `AttributeNameValues` was added
+- Type `AwsFeatureTagBinding` was added
+- Field `doesEventHubIngestionRequireAzureSignIn` was added to object type `AzureAdDirectory`
+- Field `eventHubConnectionStatus` was added to object type `AzureAdDirectory`
+- Field `isEventHubIngestionEnabled` was added to object type `AzureAdDirectory`
+- Type `AzureAdEventHubConnectionStatus` was added
+- Type `BackupWindowsForObjectsReply` was added
+- Field `isOpenstackStorageSnapshot` was added to object type `CdmSnapshot`
+- Field `diskUtilBasisPoints` was added to object type `ClusterNodeStats`
+- Field `loadAvg5MinMilli` was added to object type `ClusterNodeStats`
+- Field `nfacctTcpBackupAgentBytes` was added to object type `ClusterNodeStats`
+- Field `nfacctTcpEsxBytes` was added to object type `ClusterNodeStats`
+- Field `nfacctTcpIscsiBytes` was added to object type `ClusterNodeStats`
+- Field `nfacctTcpNfsBytes` was added to object type `ClusterNodeStats`
+- Field `nfacctTcpSmbBytes` was added to object type `ClusterNodeStats`
+- Field `snapshotStorageDelta` was added to object type `ClusterNodeStats`
+- Field `snapshotStorageIndex` was added to object type `ClusterNodeStats`
+- Field `snapshotStorageLive` was added to object type `ClusterNodeStats`
+- Field `snapshotStorageMetadata` was added to object type `ClusterNodeStats`
+- Field `storageEfficiencyRatio10k` was added to object type `ClusterNodeStats`
+- Field `uptimeSeconds` was added to object type `ClusterNodeStats`
+- Type `CreateOnDemandS3TablesIcebergTableBackupInput` was added
+- Type `CreateOnDemandS3TablesIcebergTableBackupReply` was added
+- Type `DatabaseLogRetentionConfigEntryType` was added
+- Type `DatabaseLogRetentionConfigType` was added
+- Type `DatabaseLogRetentionInfoType` was added
+- Field `feature` was added to object type `DevOpsGroupPermissions`
+- Type `DevopsZeusState` was added
+- Type `EntraIdEventHubOnboarding` was added
+- Type `EntraIdEventHubOnboardingWithoutOAuth` was added
+- Field `objectIds` was added to object type `EventDigestConfigInfo`
+- Enum value FilterType.SECURITY_IDENTITY_EVENT_GPO_CHANGE_LABEL was deprecated with reason Use SECURITY_IDENTITY_EVENT_POLICY_INSIGHTS instead.
+- Type `FusionComputeUpdatedUnmountTimeInput` was added
+- Field `inactiveOwnerLocationIds` was added to object type `GetArchivalReaderInfoResp`
+- Field `zeusState` was added to object type `GithubOrganization`
+- Field `assignedSystemTags` was added to object type `GlobalSlaReply`
+- Enum value HierarchyFilterField.AWS_VPC_ID was deprecated with reason Use EC2_INSTANCE_VPC_ID or RDS_INSTANCE_VPC_ID instead.
+- Enum value HierarchySortByField.AWS_VPC_ID was deprecated with reason Use EC2_INSTANCE_VPC_ID or RDS_INSTANCE_VPC_ID instead.
+- Field `useExtensionWhitelist` was added to object type `HuntScanFileCriteria`
+- Type `IcebergSlaConfig` was added
+- Type `IcebergSlaConfigInput` was added
+- Type `IcebergSnapshotSelectionStrategy` was added
+- Type `IrisdbSlaConfigInput` was added
+- Field `workloadSummaries` was added to object type `M365AbrRecoveryPlan`
+- Type `M365RecoveryPlanWorkloadSummary` was added
+- Field `isTlsEnabled` was added to object type `ManagedVolumeNfsSettings`
+- Field `airUpdateMcpGateway` was added to object type `Mutation`
+- Field `createOnDemandS3TablesIcebergTableBackup` was added to object type `Mutation`
+- Field `recoverS3TablesIcebergTableSnapshot` was added to object type `Mutation`
+- Field `setObjectBackupWindows` was added to object type `Mutation`
+- Field `updateFusionComputeUnmountTime` was added to object type `Mutation`
+- Type `MysqldbHaClusterConfigInput` was added
+- Type `MysqldbHaReplicaConfigInput` was added
+- Type `MysqldbHaReplicaConfigRole` was added
+- Field `hasCapturedSchemas` was added to object type `MysqldbInstanceAppMetadata`
+- Type `MysqldbReplicaConnectionInfoInput` was added
+- Type `ObjectBackupWindowsEntry` was added
+- Field `icebergSlaConfig` was added to object type `ObjectSpecificConfigs`
+- Field `caCertificates` was added to object type `PingFederateObjectsCount`
+- Field `virtualHostNames` was added to object type `PingFederateObjectsCount`
+- Type `PolicyInsight` was added
+- Type `PostgresTopologyReplicaInfo` was added
+- Type `PrincipalAttributeFilter` was added
+- Type `PrincipalAttributes` was added
+- Type `PrincipalAttributesConnection` was added
+- Type `PrincipalAttributesEdge` was added
+- Field `backupWindowsForObjects` was added to object type `Query`
+- Field `principalAttributes` was added to object type `Query`
+- Field `s3TablesIcebergInventoryStats` was added to object type `Query`
+- Type `RecoverS3TablesIcebergTableSnapshotInput` was added
+- Type `RecoverS3TablesIcebergTableSnapshotReply` was added
+- Field `databaseLogRetentionInfo` was added to object type `ReplicationSpecV2`
+- Type `S3TablesIcebergExportToExistingTableRecoveryTarget` was added
+- Type `S3TablesIcebergExportToNewTableRecoveryTarget` was added
+- Type `S3TablesIcebergInPlaceRecoveryTarget` was added
+- Type `S3TablesIcebergInventoryStatsReply` was added
+- Type `SetObjectBackupWindowsInput` was added
+- Type `SigninAnomalyActor` was added
+- Type `SigninAnomalyMetadata` was added
+- Type `TagCondition` was added
+- Type `TagConditionKeyPrefix` was added
+- Type `TagConditionOperator` was added
+- Field `shouldExpandArchiveFiles` was added to object type `ThreatHuntConfig`
+- Type `UpdateFusionComputeUnmountTimeInput` was added
+- Type `YearlyDaySpecInput` was added
+- Type `YearlyDaySpecification` was added
+- Field `daysOfYear` was added to object type `YearlySnapshotSchedule`
 
 ## July 27, 2026
 
@@ -530,14 +1666,19 @@ This changelog documents the evolution of the GraphQL schema across 53 versions.
 
 - Type `Datastore` was removed
 - Field `vsphereVmListEsxiDatastores` was removed from object type `Mutation`
-- Enum value `AZURE_GRS` (deprecated) was removed from enum `RcvRedundancy`
-- Enum value `AZURE_LRS` (deprecated) was removed from enum `RcvRedundancy`
-- Enum value `AZURE_ZRS` (deprecated) was removed from enum `RcvRedundancy`
-- Enum value `UNKNOWN_AZURE_REDUNDANCY` (deprecated) was removed from enum `RcvRedundancy`
 - Type `VsphereLoginInfoInput` was removed
 - Type `VsphereVmListEsxiDatastoresInput` was removed
 - Type `VsphereVmListEsxiDatastoresReply` was removed
 - Field `resourceDeletedAt` was added to object type `AnomalyResult`
+
+### 🗑️ Removed Deprecated Items
+
+*These items were previously marked `@deprecated` and have now been removed.*
+
+- Enum value `AZURE_GRS` (deprecated) was removed from enum `RcvRedundancy`
+- Enum value `AZURE_LRS` (deprecated) was removed from enum `RcvRedundancy`
+- Enum value `AZURE_ZRS` (deprecated) was removed from enum `RcvRedundancy`
+- Enum value `UNKNOWN_AZURE_REDUNDANCY` (deprecated) was removed from enum `RcvRedundancy`
 
 ### ⚡ Potentially Breaking Changes
 
@@ -1350,13 +2491,18 @@ This changelog documents the evolution of the GraphQL schema across 53 versions.
 - Field `region` was removed from interface GcpNativeHierarchyObject
 - Field `region` was removed from object type `GcpNativeProject`
 - Type `MountExportSnapshotJobCommonOptionsV2RecoveryPurpose` was removed
-- Field `vsphereVMMissedRecoverableRange` (deprecated) was removed from object type `Query`
-- Field `vsphereVMRecoverableRange` (deprecated) was removed from object type `Query`
 - Type `RecoverableRange` was removed
 - Type `RecoverableRangeResponse` was removed
 - Type `YearlyDaySpecInput` was removed
 - Type `YearlyDaySpecification` was removed
 - Input field `AddAzureDevOpsCloudAccountInput.organizationNativeId` changed type from `String`! to `String`
+
+### 🗑️ Removed Deprecated Items
+
+*These items were previously marked `@deprecated` and have now been removed.*
+
+- Field `vsphereVMMissedRecoverableRange` (deprecated) was removed from object type `Query`
+- Field `vsphereVMRecoverableRange` (deprecated) was removed from object type `Query`
 
 ### ⚡ Potentially Breaking Changes
 
@@ -1371,6 +2517,8 @@ This changelog documents the evolution of the GraphQL schema across 53 versions.
 - Enum value `RCV_LOCATION_CREATION_SUCCESSFUL` was added to enum `ArchivalMigrationStatus`
 - Enum value `ARCHIVAL_MIGRATION_TARGET_RCV_AWS` was added to enum `ArchivalMigrationTargetType`
 - Enum value `S3_TABLES_ICEBERG` was added to enum `AwsNativeProtectionFeature`
+- Input field `AzureAdKeywordSearchFilterInput.searchKeyword` default value changed from "" to undefined
+- Input field `AzureAdKeywordSearchFilterInput.searchKeywordType` default value changed from "" to undefined
 - Enum value `AZURE_OSS_RDBMS_IMPERSONATION` was added to enum `AzureAppPermission`
 - Input field `healthCheckVmNamePrefix` of type `String` with default value "" was added to input object type `AzureExocomputeOptionalConfigInRegionInput`
 - Enum value `AZURE_OSS_RDBMS` was added to enum `AzureOauthResource`
@@ -1945,6 +3093,8 @@ This changelog documents the evolution of the GraphQL schema across 53 versions.
 - Enum value `PAUSED_OBJECTS_TABLE` was added to enum `TableViewType`
 - Enum value `PAUSED_SLA_TABLE` was added to enum `TableViewType`
 - Enum value `MANAGE_CUSTOM_CERTIFICATES` was added to enum `TprRule`
+- Input field `WebhookAuthInfoV2Input.token` default value changed from "" to undefined
+- Input field `WebhookEncodedAuthInfoV2Input.token` default value changed from "" to undefined
 - Enum value `POWER_PLATFORM_AI_FLOW` was added to enum `WorkloadLevelHierarchy`
 - Enum value `POWER_PLATFORM_BUSINESS_PROCESS_FLOW` was added to enum `WorkloadLevelHierarchy`
 - Enum value `POWER_PLATFORM_BUSINESS_RULE` was added to enum `WorkloadLevelHierarchy`
@@ -2817,10 +3967,15 @@ This changelog documents the evolution of the GraphQL schema across 53 versions.
 ### ⚠️ Breaking Changes
 
 - Field `AzureAdEmAssignmentPolicy`.expiration changed type from `String`! to `AzureAdEmExpiration`
-- Field `gcpNativeProjectDetails` (deprecated) was removed from object type `GcpAlloyDbCluster`
 - Input field `GcpCloudSqlInstanceFilters.projectFilter` changed type from `GcpCloudSqlInstanceProjectFilter` to `GcpNativeProjectFilter`
 - Type `GcpCloudSqlInstanceProjectFilter` was removed
 - Field `locationIds` was removed from object type `TprSnapshotInfo`
+
+### 🗑️ Removed Deprecated Items
+
+*These items were previously marked `@deprecated` and have now been removed.*
+
+- Field `gcpNativeProjectDetails` (deprecated) was removed from object type `GcpAlloyDbCluster`
 
 ### ⚡ Potentially Breaking Changes
 
@@ -3322,8 +4477,13 @@ This changelog documents the evolution of the GraphQL schema across 53 versions.
 
 ### ⚠️ Breaking Changes
 
-- Field `hasPolicy` (deprecated) was removed from object type `AzureAdRole`
 - Input field `purpose` was removed from input object type `UpdateGlobalSlaInput`
+
+### 🗑️ Removed Deprecated Items
+
+*These items were previously marked `@deprecated` and have now been removed.*
+
+- Field `hasPolicy` (deprecated) was removed from object type `AzureAdRole`
 
 ### ⚡ Potentially Breaking Changes
 
@@ -4036,8 +5196,13 @@ This changelog documents the evolution of the GraphQL schema across 53 versions.
 
 ### ⚠️ Breaking Changes
 
-- Field `id` (deprecated) was removed from object type `ClusterDisk`
 - Detected 1 breaking change
+
+### 🗑️ Removed Deprecated Items
+
+*These items were previously marked `@deprecated` and have now been removed.*
+
+- Field `id` (deprecated) was removed from object type `ClusterDisk`
 
 ### ⚡ Potentially Breaking Changes
 
@@ -4355,10 +5520,15 @@ This changelog documents the evolution of the GraphQL schema across 53 versions.
 
 ### ⚠️ Breaking Changes
 
-- Field `dataViewType` (deprecated) was removed from object type `Column`
 - Input field `AddCloudNativeSqlServerBackupCredentialsInput.backupCredentials` changed type from `LoginCredentials`! to `LoginCredentials`
 - Input field `SetupCloudNativeSqlServerBackupInput.databaseIds` changed type from [UUID!]! to [UUID!]
 - Detected 1 breaking change
+
+### 🗑️ Removed Deprecated Items
+
+*These items were previously marked `@deprecated` and have now been removed.*
+
+- Field `dataViewType` (deprecated) was removed from object type `Column`
 
 ### ⚡ Potentially Breaking Changes
 
@@ -4457,13 +5627,59 @@ This changelog documents the evolution of the GraphQL schema across 53 versions.
 - Enum value `DELETE_CHILD_ACCOUNTS` was added to enum `AuthorizedOperation`
 - Enum value `SUSPEND_CHILD_ACCOUNTS` was added to enum `AuthorizedOperation`
 - Enum value `VIEW_CLUSTER_REFERENCE` was added to enum `AuthorizedOperation`
+- Input field `AwsCdmVersionRequest.cloudAccountId` default value changed from "" to undefined
+- Input field `AwsCdmVersionRequest.region` default value changed from "" to undefined
+- Input field `AwsVmNetworkConfig.availabilityZone` default value changed from "" to undefined
+- Input field `AwsVmNetworkConfig.subnet` default value changed from "" to undefined
+- Input field `AwsVmNetworkConfig.vpc` default value changed from "" to undefined
 - Enum value `GROUP_ELIGIBLE_ASSIGNMENT` was added to enum `AzureAdObjectType`
 - Enum value `ROLE_ELIGIBLE_ASSIGNMENT` was added to enum `AzureAdObjectType`
 - Enum value `GROUP_ELIGIBLE_ASSIGNMENT` was added to enum `AzureAdRelationshipEnumType`
 - Enum value `ROLE_ELIGIBLE_ASSIGNMENT` was added to enum `AzureAdRelationshipEnumType`
 - Enum value `SKIP_EXISTING` was added to enum `AzureAdRelationshipRestoreModeEnumType`
+- Input field `AzureBlobContainersByStorageAccountInput.cloudAccountId` default value changed from "" to undefined
+- Input field `AzureBlobContainersByStorageAccountInput.resourceGroup` default value changed from "" to undefined
+- Input field `AzureBlobContainersByStorageAccountInput.storageAccount` default value changed from "" to undefined
+- Input field `AzureCdmVersionReq.cloudAccountId` default value changed from "" to undefined
+- Input field `AzureCdmVersionReq.location` default value changed from "" to undefined
+- Input field `AzureNsgRequest.cloudAccountId` default value changed from "" to undefined
+- Input field `AzureNsgRequest.resourceGroup` default value changed from "" to undefined
+- Input field `AzureStorageAccountsByRegionInput.cloudAccountId` default value changed from "" to undefined
+- Input field `AzureStorageAccountsByRegionInput.region` default value changed from "" to undefined
+- Input field `AzureStorageAccountsReq.cloudAccountId` default value changed from "" to undefined
+- Input field `AzureStorageAccountsReq.resourceGroup` default value changed from "" to undefined
+- Input field `AzureSubnetReq.cloudAccountId` default value changed from "" to undefined
+- Input field `AzureSubnetReq.resourceGroup` default value changed from "" to undefined
+- Input field `AzureSubnetReq.vnetName` default value changed from "" to undefined
+- Input field `AzureVmConfig.availabilityZone` default value changed from "" to undefined
+- Input field `AzureVmConfig.cdmProduct` default value changed from "" to undefined
+- Input field `AzureVmConfig.cdmVersion` default value changed from "" to undefined
+- Input field `AzureVmConfig.location` default value changed from "" to undefined
+- Input field `AzureVmConfig.networkResourceGroup` default value changed from "" to undefined
+- Input field `AzureVmConfig.networkSecurityGroup` default value changed from "" to undefined
+- Input field `AzureVmConfig.networkSecurityResourceGroup` default value changed from "" to undefined
+- Input field `AzureVmConfig.nodeSizeGb` default value changed from 0 to undefined
+- Input field `AzureVmConfig.resourceGroup` default value changed from "" to undefined
+- Input field `AzureVmConfig.subnet` default value changed from "" to undefined
 - Input field `AzureVmConfig.subnetAzConfigs` default value changed from [] to undefined
+- Input field `AzureVmConfig.tags` default value changed from "" to undefined
+- Input field `AzureVmConfig.vmImage` default value changed from "" to undefined
+- Input field `AzureVmConfig.vnet` default value changed from "" to undefined
+- Input field `AzureVmConfig.vnetResourceGroup` default value changed from "" to undefined
+- Input field `AzureVnetReq.cloudAccountId` default value changed from "" to undefined
+- Input field `AzureVnetReq.resourceGroup` default value changed from "" to undefined
 - Enum value `AWS_CONFIG` was added to enum `CloudNativeObjectType`
+- Input field `CreateAwsClusterInput.cloudAccountId` default value changed from "" to undefined
+- Input field `CreateAwsClusterInput.disableApiTermination` default value changed from false to undefined
+- Input field `CreateAwsClusterInput.isAzResilient` default value changed from false to undefined
+- Input field `CreateAwsClusterInput.isEsType` default value changed from false to undefined
+- Input field `CreateAwsClusterInput.keepClusterOnFailure` default value changed from false to undefined
+- Input field `CreateAwsClusterInput.region` default value changed from "" to undefined
+- Input field `CreateAwsClusterInput.usePlacementGroups` default value changed from false to undefined
+- Input field `CreateAzureClusterInput.cloudAccountId` default value changed from "" to undefined
+- Input field `CreateAzureClusterInput.isAzResilient` default value changed from false to undefined
+- Input field `CreateAzureClusterInput.isEsType` default value changed from false to undefined
+- Input field `CreateAzureClusterInput.keepClusterOnFailure` default value changed from false to undefined
 - Enum value `ALLOWED_HITS` was added to enum `DataViewTypeEnum`
 - Enum value `AGENT_CLOUD_POLICY` was added to enum `EventObjectType`
 - Enum value `PRINCIPAL_CERTIFICATE_TEMPLATE` was added to enum `EventObjectType`
@@ -4689,10 +5905,15 @@ This changelog documents the evolution of the GraphQL schema across 53 versions.
 - Type `GcpCloudAccountDeleteProjectsReply` was removed
 - Type `GcpCloudAccountProjectDeleteStatus` was removed
 - Type `GcpNativeDisableProjectInput` was removed
-- Field `gcpCloudAccountDeleteProjects` (deprecated) was removed from object type `Mutation`
-- Field `gcpNativeDisableProject` (deprecated) was removed from object type `Mutation`
 - Input field `MongoOnDemandDatabaseSnapshotConfigInput.slaId` changed type from `String`! to `String`
 - Input field `MongoOpsManagerSourceOnDemandSnapshotConfigInput.slaId` changed type from `String`! to `String`
+
+### 🗑️ Removed Deprecated Items
+
+*These items were previously marked `@deprecated` and have now been removed.*
+
+- Field `gcpCloudAccountDeleteProjects` (deprecated) was removed from object type `Mutation`
+- Field `gcpNativeDisableProject` (deprecated) was removed from object type `Mutation`
 
 ### ⚡ Potentially Breaking Changes
 
@@ -5150,6 +6371,11 @@ This changelog documents the evolution of the GraphQL schema across 53 versions.
 ### ⚠️ Breaking Changes
 
 - Type `ClusterLocationEdit` was removed
+
+### 🗑️ Removed Deprecated Items
+
+*These items were previously marked `@deprecated` and have now been removed.*
+
 - Field `updateClusterLocation` (deprecated) was removed from object type `Mutation`
 
 ### ⚡ Potentially Breaking Changes
@@ -5411,6 +6637,8 @@ This changelog documents the evolution of the GraphQL schema across 53 versions.
 - Enum value `EXPORT_POWER_OFF` was added to enum `PermissionsGroup`
 - Enum value `EXPORT_POWER_ON` was added to enum `PermissionsGroup`
 - Enum value `RESTORE` was added to enum `PermissionsGroup`
+- Input field `ProviderDescription.description` default value changed from "" to undefined
+- Input field `ProviderName.name` default value changed from "" to undefined
 - Argument snapshotManagementType: SnapshotManagementType added to field `Query.allUnmanagedObjectsSupportedTypes`
 - Argument includeInactiveDataCategories: Boolean (with default value) added to field `Query.policyDetails`
 - Argument shouldShowCdmSnapshotLocationInfoArg: Boolean added to field `Query.snapshotOfASnappableConnection`
@@ -5996,13 +7224,18 @@ This changelog documents the evolution of the GraphQL schema across 53 versions.
 - Enum value `FAILOVER_GROUP_STATUS_OK` was removed from enum `FailoverGroupStatus`
 - Enum value `FAILOVER_GROUP_STATUS_WARNING` was removed from enum `FailoverGroupStatus`
 - Type `InterfaceCidrInput` was removed
+- Type `UpdateAwsComputeSettingInput` was removed
+
+### 🗑️ Removed Deprecated Items
+
+*These items were previously marked `@deprecated` and have now been removed.*
+
 - Field `createAwsComputeSetting` (deprecated) was removed from object type `Mutation`
 - Field `deleteAwsComputeSetting` (deprecated) was removed from object type `Mutation`
 - Field `updateAwsComputeSetting` (deprecated) was removed from object type `Mutation`
 - Field `allAwsComputeSettings` (deprecated) was removed from object type `Query`
 - Field `allTargets` (deprecated) was removed from object type `Query`
 - Field `awsComputeSettings` (deprecated) was removed from object type `Query`
-- Type `UpdateAwsComputeSettingInput` was removed
 
 ### ⚡ Potentially Breaking Changes
 
@@ -6693,12 +7926,17 @@ This changelog documents the evolution of the GraphQL schema across 53 versions.
 
 ### ⚠️ Breaking Changes
 
-- Field `relationships` (deprecated) was removed from object type `AzureAdObject`
 - Type `Map` was removed
 - Type `RcvRedundancyConversionStatus` was removed
 - Type `RcvRedundancyConversionType` was removed
 - Type `RelatedObjectIdsType` was removed
 - Field `RubrikManagedRcsTarget`.conversionOpt changed type from `RcvRedundancyConversionType` to `RcvConversionType`
+
+### 🗑️ Removed Deprecated Items
+
+*These items were previously marked `@deprecated` and have now been removed.*
+
+- Field `relationships` (deprecated) was removed from object type `AzureAdObject`
 
 ### ⚡ Potentially Breaking Changes
 

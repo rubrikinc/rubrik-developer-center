@@ -27,6 +27,7 @@ Get details of a GCP Disk
         fileIndexingStatus
         id
         isExocomputeConfigured
+        isProtectionOnboarded
         isRelic
         kmsKey
         name

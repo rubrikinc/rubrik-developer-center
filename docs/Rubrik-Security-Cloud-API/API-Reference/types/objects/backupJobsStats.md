@@ -14,6 +14,7 @@ Stats of the backup jobs in the last 24 hours.
 
 **Referenced by**
 
+- [AnthropicOrg.backupJobsStats](AnthropicOrg.md)
 - [AtlassianSite.backupJobsStats](AtlassianSite.md)
 - [Dynamics365Organization.backupJobsStats](Dynamics365Organization.md)
 - [GoogleWorkspaceOrg.backupJobsStats](GoogleWorkspaceOrg.md)

@@ -7,6 +7,7 @@ Azure Tenant with details of subscriptions that are configured for a given featu
 | Field | Type | Description |
 |-------|------|-------------|
 | appName | String! | App name of the application configured for authentication of the Azure tenant. |
+| apps | [[AzureCloudAccountTenantApp](AzureCloudAccountTenantApp.md)!]! | Contains every Azure application configured on this tenant, one per auth type present. On a mixed-auth tenant this has more than one entry. The scalar appName and clientId fields return the primary (first-onboarded) app for backward compatibility. |
 | azureCloudAccountTenantRubrikId | String! | Rubrik ID of the Azure Tenant. |
 | clientId | String! | Client ID of the application configured for authentication of the Azure tenant. |
 | cloudType | [AzureCloudType](../enums/AzureCloudType.md)! | Type of Azure Tenant. Possible values: Azure Public Cloud, Azure China Cloud. |

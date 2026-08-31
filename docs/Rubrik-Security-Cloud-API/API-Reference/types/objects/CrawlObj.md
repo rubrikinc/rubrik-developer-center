@@ -8,17 +8,17 @@
 |-------|------|-------------|
 | analyzerGroupResults | [[AnalyzerGroupResult](AnalyzerGroupResult.md)!]! |  |
 | analyzerResults | [[AnalyzerResult](AnalyzerResult.md)!]! |  |
-| cluster | [Cluster](Cluster.md)! |  |
+| cluster | [Cluster](Cluster.md)! | The cluster that ran this crawl object's scan. |
 | crawlId | String! |  |
 | endTime | [Long](../scalars/Long.md)! |  |
 | error | String! |  |
-| fileResultConnection | [FileResultConnection](FileResultConnection.md)! |  |
+| fileResultConnection | [FileResultConnection](FileResultConnection.md)! | Browses the file classification results within this crawl object. |
 | filesAnalyzeable | [Long](../scalars/Long.md)! |  |
 | filesAnalyzed | [Long](../scalars/Long.md)! |  |
 | filesTotal | [Long](../scalars/Long.md)! |  |
 | filesWithHits | [Long](../scalars/Long.md)! |  |
 | progress | Float! |  |
-| snappable | [HierarchyObject](../interfaces/HierarchyObject.md)! |  |
+| snappable | [HierarchyObject](../interfaces/HierarchyObject.md)! | The hierarchy object this crawl object scanned. |
 | snapshotFid | String! |  |
 | snapshotTime | [Long](../scalars/Long.md)! |  |
 | startTime | [Long](../scalars/Long.md)! |  |

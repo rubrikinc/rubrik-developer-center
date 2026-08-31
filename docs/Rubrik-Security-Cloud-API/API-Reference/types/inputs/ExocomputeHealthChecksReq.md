@@ -8,3 +8,4 @@ ExocomputeHealthChecksRequest defines the request for retrieving health checks.
 |-------|------|-------------|
 | cloudVendor | [ExocomputeCloudType](../enums/ExocomputeCloudType.md) | Cloud vendor for the Exocompute configuration, such as Azure or AWS. |
 | exocomputeConfigId | String | This is the unique ID of the Exocompute configuration. |
+| shouldIncludeDiagnosticDetails | Boolean | When true, includes diagnostic check results (network path trace, AWS network config, AWS node scaling). Omitted or false excludes diagnostic data from the response by default. |

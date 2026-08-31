@@ -47,7 +47,7 @@ List of authorizations for the objects.
             "operations": [
               "ACCESS_CDM_CLUSTER"
             ],
-            "workloadHierarchy": "AUTH0_TENANT"
+            "workloadHierarchy": "ANTHROPIC_CHILD_ORG_SETTINGS"
           }
         ]
       }

@@ -98,3 +98,4 @@ Kubernetes cluster.
 
 - [query: kubernetesCluster](../../queries/kubernetesCluster.md)
 - [query: kubernetesClusters](../../queries/kubernetesClusters.md) *(via connection)*
+- [query: kubernetesRecoverableClusters](../../queries/kubernetesRecoverableClusters.md) *(via connection)*

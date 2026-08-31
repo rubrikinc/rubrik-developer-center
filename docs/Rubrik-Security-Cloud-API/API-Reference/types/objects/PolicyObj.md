@@ -1,6 +1,6 @@
 # PolicyObj
 
-*No description available.*
+A workload evaluated against a classification policy at a point in time, along with its classification and access-risk results.
 
 ## Fields
 
@@ -8,7 +8,7 @@
 |-------|------|-------------|
 | accessRiskReasons | [[RiskReason](../enums/RiskReason.md)!]! | User access risk reasons. |
 | accessTypeSummary | [AccessTypeSummary](AccessTypeSummary.md) | Specifies the access type summary for a principal. |
-| allAnalyzerMappings | [[AnalyzerMapping](AnalyzerMapping.md)!]! |  |
+| allAnalyzerMappings | [[AnalyzerMapping](AnalyzerMapping.md)!]! | Analyzer mappings for a path in this policy object. |
 | analysisStatus | [AnalysisStatus](../enums/AnalysisStatus.md)! | Analysis status of the policy object. |
 | analyzerHits | [AnalyzerHits](AnalyzerHits.md) | Analyzer Hits count for various risk levels. |
 | assetMetadata | [AssetMetadata](AssetMetadata.md) | Specifies the metadata of the asset. |
@@ -17,33 +17,33 @@
 | deltaUserCounts | [PrincipalCounts](PrincipalCounts.md) | Change in the user count for various risk levels. |
 | documentTypesSummary | [[DocumentTypeSummary](DocumentTypeSummary.md)!]! | Specifies the sensitive files count summary for document types. |
 | exposureSummary | [[ExposureSummary](ExposureSummary.md)!]! | Signifies the file exposure summary of the asset. |
-| fileResultConnection | [FileResultConnection](FileResultConnection.md)! |  |
-| folderChildConnection | [FileResultConnection](FileResultConnection.md)! |  |
+| fileResultConnection | [FileResultConnection](FileResultConnection.md)! | File classification results within this policy object's snapshot. |
+| folderChildConnection | [FileResultConnection](FileResultConnection.md)! | Browse the contents of a directory within this policy object's snapshot. |
 | hasInsights | Boolean! | Specifies whether the object has insights or not. |
-| id | String! |  |
+| id | String! | Cache-differentiating identifier for this policy object at a point in time. |
 | isUserAccessEnabledObject | Boolean! | Specifies whether the object has user access enabled or not. |
 | isUserActivityEnabled | Boolean! | Specifies whether the user activity for the object is enabled. |
 | mipLabelsSummary | [[MipLabelSummary](MipLabelSummary.md)!]! | Specifies the sensitive files count summary for MIP Labels. |
-| objectStatus | [ObjectStatus](ObjectStatus.md)! |  |
+| objectStatus | [ObjectStatus](ObjectStatus.md)! | Assignment and analysis status of this object. |
 | objectType | [DataGovObjectType](../enums/DataGovObjectType.md)! | Specifies the object type of the asset. |
-| osType | [DataGovOsType](../enums/DataGovOsType.md)! |  |
-| policySummaries | [[ClassificationPolicySummary](ClassificationPolicySummary.md)!]! |  |
+| osType | [DataGovOsType](../enums/DataGovOsType.md)! | Operating system of the workload. |
+| policySummaries | [[ClassificationPolicySummary](ClassificationPolicySummary.md)!]! | Summaries of the policies that classified this object. |
 | riskHits | [SensitiveHits](SensitiveHits.md) | Sensitive hits for various risk levels. |
 | riskLevel | [RiskLevelType](../enums/RiskLevelType.md)! | Risk level of the policy object. |
 | rootFileResult | [FileResult](FileResult.md)! | Root file result. |
 | scanErrorInfo | [ScanErrorInfo](ScanErrorInfo.md) | Scan error information for the policy object. |
 | scanStatus | [ScanStatus](../enums/ScanStatus.md)! | Specifies the scan status of the asset. |
 | sensitiveFiles | [SensitiveFiles](SensitiveFiles.md) | Sensitive File count for various risk levels. |
-| shareType | [DataGovShareType](../enums/DataGovShareType.md)! |  |
-| snappable | [HierarchyObject](../interfaces/HierarchyObject.md) |  |
-| snapshotFid | String! |  |
+| shareType | [DataGovShareType](../enums/DataGovShareType.md)! | Network file-sharing protocol of the workload, when applicable. |
+| snappable | [HierarchyObject](../interfaces/HierarchyObject.md) | The hierarchy object this policy object describes. |
+| snapshotFid | String! | Identifier of the snapshot the results were computed from. |
 | snapshotTimestamp | [Long](../scalars/Long.md)! | Timestamp in ms. |
 | timeContext | String! | The same snapshot may be returned for different policy object queries at different time points since snapshot results are pulled forward if no new snapshots have come up from CDM. The daily change values will be different for these different time points.  This time_context field is used by the graphql layer to make sure that Apollo cache on the UI can differentiate between the policy object at different time points. |
 | totalSensitiveHits | [SummaryHits](SummaryHits.md) | Sensitive hits accumulated across different workloads for the user. |
 | unusedSensitiveFiles | [SensitiveFiles](SensitiveFiles.md) | Unused sensitive file count for various risk levels. |
 | userCounts | [PrincipalCounts](PrincipalCounts.md) | User count for various risk levels. |
 | violationSeverity | [ViolationSeverity](../enums/ViolationSeverity.md)! | Signifies the violation severity of the asset. |
-| whitelistedAnalyzerList | [[WhitelistedAnalyzer](WhitelistedAnalyzer.md)!]! |  |
+| whitelistedAnalyzerList | [[WhitelistedAnalyzer](WhitelistedAnalyzer.md)!]! | Whitelisted analyzers for a path in this policy object. |
 
 ## Field Arguments
 

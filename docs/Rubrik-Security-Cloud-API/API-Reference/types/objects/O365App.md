@@ -1,6 +1,6 @@
 # O365App
 
-*No description available.*
+Configuration for a Microsoft 365 App.
 
 **Implements:** [O365AppObject](../interfaces/O365AppObject.md)
 

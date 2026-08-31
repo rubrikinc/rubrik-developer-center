@@ -1,8 +1,8 @@
 # O365Onedrive
 
-*No description available.*
+O365 OneDrive.
 
-**Implements:** [HierarchyObject](../interfaces/HierarchyObject.md), [HierarchySnappable](../interfaces/HierarchySnappable.md), [PolarisHierarchyObject](../interfaces/PolarisHierarchyObject.md), [PolarisHierarchySnappable](../interfaces/PolarisHierarchySnappable.md), [O365OrgDescendant](../interfaces/O365OrgDescendant.md), [O365UserDescendant](../interfaces/O365UserDescendant.md), [O365UserDescendantMetadata](../interfaces/O365UserDescendantMetadata.md), [MicrosoftOnedrive](../interfaces/MicrosoftOnedrive.md)
+**Implements:** [MicrosoftOnedrive](../interfaces/MicrosoftOnedrive.md), [PolarisHierarchySnappable](../interfaces/PolarisHierarchySnappable.md), [HierarchySnappable](../interfaces/HierarchySnappable.md), [HierarchyObject](../interfaces/HierarchyObject.md), [O365OrgDescendant](../interfaces/O365OrgDescendant.md), [PolarisHierarchyObject](../interfaces/PolarisHierarchyObject.md), [O365UserDescendant](../interfaces/O365UserDescendant.md), [O365UserDescendantMetadata](../interfaces/O365UserDescendantMetadata.md)
 
 ## Fields
 
@@ -15,9 +15,9 @@
 | effectiveRetentionSlaDomain | [SlaDomain](../interfaces/SlaDomain.md) | Effective retention of the SLA Domain of the hierarchy object. |
 | effectiveSlaDomain | [SlaDomain](../interfaces/SlaDomain.md)! | Effective SLA Domain of the hierarchy object. |
 | effectiveSlaSourceObject | [PathNode](PathNode.md) | Path node of the effective SLA Domain source. |
-| id | [UUID](../scalars/UUID.md)! | Object ID. |
+| id | [UUID](../scalars/UUID.md)! | ID of the hierarchy object. |
 | isRansomwareInvestigationEnabled | Boolean! | Ransomware Investigation enablement status. |
-| isRelic | Boolean! |  |
+| isRelic | Boolean! | Specifies whether the OneDrive is a relic. |
 | logicalPath | [[PathNode](PathNode.md)!]! | Sequential list of the logical ancestors of this object. |
 | name | String! | Name of the hierarchy object. |
 | naturalId | String! | The natural ID of the OneDrive. |
@@ -30,7 +30,7 @@
 | oldestSnapshot | [PolarisSnapshot](PolarisSnapshot.md) | The oldest snapshot of this workload. |
 | onDemandSnapshotCount | Int! | The number of on-demand snapshots. |
 | physicalPath | [[PathNode](PathNode.md)!]! | Sequential list of the physical ancestors of this object. |
-| preferredDataLocation | String! | The preferred data location of the OneDrive. |
+| preferredDataLocation | String! | The preferred data location of the workload. |
 | rscNativeObjectPendingSla | [CompactSlaDomain](CompactSlaDomain.md) | SLA Domain assignment which is pending on the Rubrik Security Cloud native objects. |
 | rscPendingObjectPauseAssignment | [PendingObjectPauseAssignmentStatus](../enums/PendingObjectPauseAssignmentStatus.md) | Object pause pending assignment details for RSC objects. |
 | securityMetadata | [SecurityMetadata](SecurityMetadata.md) | Security posture metadata. |
@@ -38,13 +38,13 @@
 | slaPauseStatus | Boolean! | Pause status of the effective SLA Domain of the hierarchy object. |
 | snapshotConnection | [PolarisSnapshotConnection](PolarisSnapshotConnection.md) | The list of snapshots taken for this workload. |
 | snapshotDistribution | [SnapshotDistribution](SnapshotDistribution.md)! | Distribution of the snapshots of the hierarchy object. |
-| snapshotGroupByConnection | [PolarisSnapshotGroupByConnection](PolarisSnapshotGroupByConnection.md) | GroupBy connection for the snapshots of this workload. |
-| snapshotGroupByNewConnection | [PolarisSnapshotGroupByNewConnection](PolarisSnapshotGroupByNewConnection.md) | GroupBy connection for the snapshots of this workload. |
-| totalStorageInBytes | [Long](../scalars/Long.md)! |  |
-| usedStorageInBytes | [Long](../scalars/Long.md)! |  |
-| userID | String! |  |
-| userName | String! |  |
-| userPrincipalName | String! |  |
+| snapshotGroupByConnection | [PolarisSnapshotGroupByConnection](PolarisSnapshotGroupByConnection.md) | Group-by connection for the snapshots of this workload. |
+| snapshotGroupByNewConnection | [PolarisSnapshotGroupByNewConnection](PolarisSnapshotGroupByNewConnection.md) | Group-by connection for the snapshots of this workload. |
+| totalStorageInBytes | [Long](../scalars/Long.md)! | Total storage allocated to the OneDrive in bytes. |
+| usedStorageInBytes | [Long](../scalars/Long.md)! | Used storage of the OneDrive in bytes. |
+| userID | String! | The user ID of the O365 OneDrive owner. |
+| userName | String! | The name of the O365 OneDrive owner. |
+| userPrincipalName | String! | The user principal name of the object. |
 | workloadSnapshotConnection | [GenericSnapshotConnection](GenericSnapshotConnection.md) | The list of snapshots taken for this workload. |
 
 ## Field Arguments

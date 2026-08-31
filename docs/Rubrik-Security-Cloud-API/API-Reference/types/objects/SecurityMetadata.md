@@ -21,6 +21,7 @@ Represents security metadata of a workload.
 - [ActiveDirectoryDomainController.securityMetadata](ActiveDirectoryDomainController.md)
 - ActiveDirectoryDomainDescendantType.securityMetadata
 - ActiveDirectoryDomainPhysicalChildType.securityMetadata
+- [AnthropicOrg.securityMetadata](AnthropicOrg.md)
 - [AtlassianSite.securityMetadata](AtlassianSite.md)
 - [AwsNativeAccount.securityMetadata](AwsNativeAccount.md)
 - AwsNativeAccountDescendantType.securityMetadata
@@ -46,5 +47,4 @@ Represents security metadata of a workload.
 - [AzurePostgresFlexibleServer.securityMetadata](AzurePostgresFlexibleServer.md)
 - [AzureSqlDatabaseDb.securityMetadata](AzureSqlDatabaseDb.md)
 - [AzureSqlDatabaseServer.securityMetadata](AzureSqlDatabaseServer.md)
-- [AzureSqlManagedInstanceDatabase.securityMetadata](AzureSqlManagedInstanceDatabase.md)
-- *…and 284 more*
+- *…and 293 more*

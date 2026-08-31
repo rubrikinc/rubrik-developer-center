@@ -23,6 +23,7 @@ Get a paginated list of policy violations.
 | sensitivityLevels | [[SensitivityLevel](../types/enums/SensitivityLevel.md)!] | Sensitivity levels to filter by. If empty or null, the results will not be filtered. |
 | detectionDate | [TimeRangeInput](../types/inputs/TimeRangeInput.md) | Detection date range to filter by. If null, the results will not be filtered. |
 | updateDate | [TimeRangeInput](../types/inputs/TimeRangeInput.md) | Violation update date range to filter by. |
+| lastSeenDate | [TimeRangeInput](../types/inputs/TimeRangeInput.md) | Last seen date range to filter by. If null, the results will not be filtered. |
 | includeResourceCounts | Boolean | Include resource-level total violation counts. If null, the data will not be included. |
 | resourceMetadataFilter | [ResourceMetadataFiltersInput](../types/inputs/ResourceMetadataFiltersInput.md) | Resource metadata fields to filter by. If null, the results will not be filtered. |
 | parentViolationId | [UUID](../types/scalars/UUID.md) | Parent violation ID. |

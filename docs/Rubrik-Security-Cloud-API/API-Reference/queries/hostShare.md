@@ -1,6 +1,6 @@
 # hostShare
 
-*No description available.*
+Returns information about a host share.
 
 ## Arguments
 

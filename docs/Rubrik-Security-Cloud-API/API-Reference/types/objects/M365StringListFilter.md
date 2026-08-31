@@ -13,10 +13,15 @@ String values to keep or drop. At least one of include or exclude must be non-em
 
 **Referenced by**
 
+- [M365ExchangeRecoveryPlanFilterLeaf.bccRecipients](M365ExchangeRecoveryPlanFilterLeaf.md)
 - [M365ExchangeRecoveryPlanFilterLeaf.importance](M365ExchangeRecoveryPlanFilterLeaf.md)
 - [M365ExchangeRecoveryPlanFilterLeaf.sender](M365ExchangeRecoveryPlanFilterLeaf.md)
 - [M365ExchangeRecoveryPlanFilterLeaf.toRecipients](M365ExchangeRecoveryPlanFilterLeaf.md)
+- [M365OneDriveRecoveryPlanFilterLeaf.createdByEmail](M365OneDriveRecoveryPlanFilterLeaf.md)
 - [M365OneDriveRecoveryPlanFilterLeaf.fileExtensions](M365OneDriveRecoveryPlanFilterLeaf.md)
 - [M365OneDriveRecoveryPlanFilterLeaf.fileName](M365OneDriveRecoveryPlanFilterLeaf.md)
+- [M365OneDriveRecoveryPlanFilterLeaf.lastModifiedByEmail](M365OneDriveRecoveryPlanFilterLeaf.md)
+- [M365SharePointRecoveryPlanFilterLeaf.createdByEmail](M365SharePointRecoveryPlanFilterLeaf.md)
 - [M365SharePointRecoveryPlanFilterLeaf.fileExtensions](M365SharePointRecoveryPlanFilterLeaf.md)
 - [M365SharePointRecoveryPlanFilterLeaf.fileName](M365SharePointRecoveryPlanFilterLeaf.md)
+- [M365SharePointRecoveryPlanFilterLeaf.lastModifiedByEmail](M365SharePointRecoveryPlanFilterLeaf.md)

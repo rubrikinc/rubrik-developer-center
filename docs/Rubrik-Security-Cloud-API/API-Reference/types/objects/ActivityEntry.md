@@ -15,6 +15,9 @@ This struct represents an activity.  IMPORTANT: When adding new fields here, con
 | additionalTargetEntities | [[ActivityAuditorEntity](ActivityAuditorEntity.md)!]! | Additional entities involved in the activity. For example, when a user is added to a group, the group is an additional target. |
 | category | [ActivityCategory](../enums/ActivityCategory.md)! | The category of the activity. |
 | changeDetails | [ActivityAuditorChangeDetails](ActivityAuditorChangeDetails.md) | The details of the change. Present only for modification events. |
+| classification | [ActivityClassification](../enums/ActivityClassification.md) | The classification assigned to this activity. |
+| classificationSources | [[ActivityClassificationSource](ActivityClassificationSource.md)!]! | The sources that contributed evidence to the classification. |
+| classifiedOn | [DateTime](../scalars/DateTime.md) | The time the activity was classified. |
 | id | [UUID](../scalars/UUID.md)! | The unique identifier for the activity. |
 | nativeCorrelationId | String! | The native correlation ID from the event provider used for tracking and grouping related activities. |
 | operation | [ActivityOperation](../enums/ActivityOperation.md)! | The operation performed. |

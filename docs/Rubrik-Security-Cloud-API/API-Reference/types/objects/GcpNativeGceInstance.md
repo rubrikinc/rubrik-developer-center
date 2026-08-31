@@ -2,7 +2,7 @@
 
 Represents a GCP GCE instance.
 
-**Implements:** [PolarisHierarchyObject](../interfaces/PolarisHierarchyObject.md), [PolarisHierarchySnappable](../interfaces/PolarisHierarchySnappable.md), [HierarchySnappable](../interfaces/HierarchySnappable.md), [HierarchyObject](../interfaces/HierarchyObject.md), [GcpNativeProjectLogicalChildType](../interfaces/GcpNativeProjectLogicalChildType.md), [GcpNativeProjectDescendantType](../interfaces/GcpNativeProjectDescendantType.md), [GcpNativeHierarchyObject](../interfaces/GcpNativeHierarchyObject.md)
+**Implements:** [PolarisHierarchyObject](../interfaces/PolarisHierarchyObject.md), [HierarchyObject](../interfaces/HierarchyObject.md), [PolarisHierarchySnappable](../interfaces/PolarisHierarchySnappable.md), [HierarchySnappable](../interfaces/HierarchySnappable.md), [GcpNativeProjectLogicalChildType](../interfaces/GcpNativeProjectLogicalChildType.md), [GcpNativeProjectDescendantType](../interfaces/GcpNativeProjectDescendantType.md), [GcpNativeHierarchyObject](../interfaces/GcpNativeHierarchyObject.md)
 
 ## Fields
 
@@ -25,13 +25,14 @@ Represents a GCP GCE instance.
 | gcpProjectDetails | [GcpNativeProjectDetails](GcpNativeProjectDetails.md)! | Project details of the GCE instance. |
 | id | [UUID](../scalars/UUID.md)! | ID of the hierarchy object. |
 | isExocomputeConfigured | Boolean! | Specifies whether exocompute is configured for use by this GCE instance. When the value is true, exocompute can be used to perform tasks like file indexing. |
-| isRelic | Boolean! | Specifies whether the GCP GCE instance is relic or not. |
-| labels | [[Label](Label.md)!]! | List of labels attached to the GCP instance. |
+| isProtectionOnboarded | Boolean! | Specifies whether a protection feature is onboarded for this GCE instance. |
+| isRelic | Boolean! | Whether the object is a relic. |
+| labels | [[Label](Label.md)!]! | List of labels that are assigned to the object. |
 | logicalPath | [[PathNode](PathNode.md)!]! | Sequential list of the logical ancestors of this object. |
 | machineType | String! | The machine type of the GCP instance. |
 | name | String! | Name of the hierarchy object. |
 | nativeId | String! | GCP GCE instance native ID. |
-| nativeName | String! | GCP GCE instance native name. |
+| nativeName | String! | GCP Native name of the object. |
 | networkHostProjectNativeId | String! | Network host project native ID. |
 | newestIndexedSnapshot | [PolarisSnapshot](PolarisSnapshot.md) | The latest snapshot that is indexed and unexpired, and therefore restorable. |
 | newestSnapshot | [PolarisSnapshot](PolarisSnapshot.md) | The most recent snapshot of this workload. |
@@ -51,8 +52,8 @@ Represents a GCP GCE instance.
 | slaPauseStatus | Boolean! | Pause status of the effective SLA Domain of the hierarchy object. |
 | snapshotConnection | [PolarisSnapshotConnection](PolarisSnapshotConnection.md) | The list of snapshots taken for this workload. |
 | snapshotDistribution | [SnapshotDistribution](SnapshotDistribution.md)! | Distribution of the snapshots of the hierarchy object. |
-| snapshotGroupByConnection | [PolarisSnapshotGroupByConnection](PolarisSnapshotGroupByConnection.md) | GroupBy connection for the snapshots of this workload. |
-| snapshotGroupByNewConnection | [PolarisSnapshotGroupByNewConnection](PolarisSnapshotGroupByNewConnection.md) | GroupBy connection for the snapshots of this workload. |
+| snapshotGroupByConnection | [PolarisSnapshotGroupByConnection](PolarisSnapshotGroupByConnection.md) | Group-by connection for the snapshots of this workload. |
+| snapshotGroupByNewConnection | [PolarisSnapshotGroupByNewConnection](PolarisSnapshotGroupByNewConnection.md) | Group-by connection for the snapshots of this workload. |
 | vpcName | String! | Name of Virtual Private Cloud (VPC) associated with the GCP GCE instance. |
 | workloadSnapshotConnection | [GenericSnapshotConnection](GenericSnapshotConnection.md) | The list of snapshots taken for this workload. |
 | zone | String! | The zone of the GCP GCE instance. |

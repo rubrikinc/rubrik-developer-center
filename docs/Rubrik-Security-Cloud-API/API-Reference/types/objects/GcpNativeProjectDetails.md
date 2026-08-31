@@ -17,6 +17,7 @@ GCP native project details.
 **Referenced by**
 
 - [GcpAlloyDbCluster.gcpProjectDetails](GcpAlloyDbCluster.md)
+- [GcpBigQueryDataset.gcpProjectDetails](GcpBigQueryDataset.md)
 - [GcpCloudSqlInstance.gcpNativeProjectDetails](GcpCloudSqlInstance.md)
 - [GcpCloudSqlInstance.gcpProjectDetails](GcpCloudSqlInstance.md)
 - [GcpNativeDisk.gcpNativeProjectDetails](GcpNativeDisk.md)

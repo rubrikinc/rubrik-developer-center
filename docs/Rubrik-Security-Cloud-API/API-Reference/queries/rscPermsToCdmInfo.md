@@ -47,7 +47,7 @@ Synced cluster information for RSC permissions.
               "objectIds": [
                 "example-string"
               ],
-              "snappableType": "AUTH0_TENANT"
+              "snappableType": "ANTHROPIC_CHILD_ORG_SETTINGS"
             }
           ],
           "operation": "ACCESS_CDM_CLUSTER"

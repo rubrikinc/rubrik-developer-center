@@ -23,13 +23,16 @@ Details of the Azure AD corresponding to the workload ID.
         appOwner
         authorizedOperations
         directoryId
+        doesEventHubIngestionRequireAzureSignIn
         domainName
+        eventHubConnectionStatus
         exoHostType
         exocomputeId
         firstDeviceSnapshotTime
         firstScopeSnapshotTime
         firstZeusSnapshotTime
         id
+        isEventHubIngestionEnabled
         isIntuneEnabled
         isJitEnabled
         isProvisioned
@@ -59,6 +62,7 @@ Details of the Azure AD corresponding to the workload ID.
         latestSnapshotTime
         latestTermsOfUseCount
         latestUserCount
+        m365AccessRecoveryState
         migratedFromColossus
         name
         numWorkloadDescendants
@@ -94,8 +98,8 @@ Details of the Azure AD corresponding to the workload ID.
             "ACCESS_CDM_CLUSTER"
           ],
           "directoryId": "example-string",
+          "doesEventHubIngestionRequireAzureSignIn": true,
           "domainName": "example-string",
-          "exoHostType": "CUSTOMER_HOST",
           "allOrgs": [
             {
               "allUrls": [

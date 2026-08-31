@@ -1,6 +1,6 @@
 # physicalHost
 
-*No description available.*
+Details of a physical host for a given ID.
 
 ## Arguments
 

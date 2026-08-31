@@ -45,7 +45,7 @@ Permissions assigned to the role that are in effect.
             "rbacObject": {
               "clusterId": "example-string",
               "objectId": "example-string",
-              "workloadHierarchy": "AUTH0_TENANT"
+              "workloadHierarchy": "ANTHROPIC_CHILD_ORG_SETTINGS"
             }
           }
         ]

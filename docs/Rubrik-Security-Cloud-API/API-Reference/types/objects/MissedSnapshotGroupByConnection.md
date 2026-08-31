@@ -21,6 +21,7 @@ Paginated list of MissedSnapshotGroupBy objects. Each page of the results includ
 - [ExchangeDatabase.missedSnapshotGroupByConnection](ExchangeDatabase.md)
 - [FusionComputeVirtualMachine.missedSnapshotGroupByConnection](FusionComputeVirtualMachine.md)
 - [HyperVVirtualMachine.missedSnapshotGroupByConnection](HyperVVirtualMachine.md)
+- [HypervisorVirtualMachineV1.missedSnapshotGroupByConnection](HypervisorVirtualMachineV1.md)
 - KosmosSnappableHierarchyObjectType.missedSnapshotGroupByConnection
 - [KubernetesProtectionSet.missedSnapshotGroupByConnection](KubernetesProtectionSet.md)
 - [KubernetesVirtualMachine.missedSnapshotGroupByConnection](KubernetesVirtualMachine.md)
@@ -32,6 +33,7 @@ Paginated list of MissedSnapshotGroupBy objects. Each page of the results includ
 - [MysqldbInstance.missedSnapshotGroupByConnection](MysqldbInstance.md)
 - [NasFileset.missedSnapshotGroupByConnection](NasFileset.md)
 - [NutanixVm.missedSnapshotGroupByConnection](NutanixVm.md)
+- [OpenstackVirtualMachine.missedSnapshotGroupByConnection](OpenstackVirtualMachine.md)
 - [OracleDataGuardGroup.missedSnapshotGroupByConnection](OracleDataGuardGroup.md)
 - [OracleDatabase.missedSnapshotGroupByConnection](OracleDatabase.md)
 - [PostgreSQLDbCluster.missedSnapshotGroupByConnection](PostgreSQLDbCluster.md)
@@ -41,5 +43,6 @@ Paginated list of MissedSnapshotGroupBy objects. Each page of the results includ
 - [SapHanaSystem.missedSnapshotGroupByConnection](SapHanaSystem.md)
 - [ShareFileset.missedSnapshotGroupByConnection](ShareFileset.md)
 - [VcdVapp.missedSnapshotGroupByConnection](VcdVapp.md)
+- [VolumeGroup.missedSnapshotGroupByConnection](VolumeGroup.md)
 - [VsphereVm.missedSnapshotGroupByConnection](VsphereVm.md)
-- [WindowsFileset.missedSnapshotGroupByConnection](WindowsFileset.md)
+- *…and 1 more*

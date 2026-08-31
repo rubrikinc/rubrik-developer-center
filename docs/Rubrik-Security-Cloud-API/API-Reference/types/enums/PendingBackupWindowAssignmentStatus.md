@@ -1,6 +1,6 @@
 # PendingBackupWindowAssignmentStatus
 
-The status of a backup window assignment. Reflects an in-flight object-level backup-window assignment sync to CDM only, and is surfaced only when the resolved scope is OBJECT_LEVEL. SLA-level windows are returned without a pending signal (matching GetSLA, which returns the SLA's window directly regardless of its CDM sync state).
+The status of a backup window assignment. Reflects an in-flight object-level backup-window assignment sync to CDM only. An explicit SLA_LEVEL read is returned without a pending signal (matching GetSLA, which returns the SLA's window directly regardless of its CDM sync state).
 
 ## Values
 

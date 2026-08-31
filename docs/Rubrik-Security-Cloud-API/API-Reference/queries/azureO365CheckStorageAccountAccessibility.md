@@ -1,15 +1,15 @@
 # azureO365CheckStorageAccountAccessibility
 
-Checks the accessibility of the storage account.
+CheckAzureStorageAccountAccess checks that the given storage account is valid and can be accessed by Polaris during Exocompute setup.
 
 ## Arguments
 
 | Argument | Type | Description |
 |----------|------|-------------|
-| tenantId *(required)* | String! |  |
-| subscriptionId *(required)* | [UUID](../types/scalars/UUID.md)! |  |
-| storage_account_name *(required)* | String! |  |
-| groupName *(required)* | String! |  |
+| tenantId *(required)* | String! | The Azure tenant ID. |
+| subscriptionId *(required)* | [UUID](../types/scalars/UUID.md)! | The Azure subscription ID. |
+| storage_account_name *(required)* | String! | The Azure storage account name. |
+| groupName *(required)* | String! | The Azure resource group name. |
 
 ## Returns
 

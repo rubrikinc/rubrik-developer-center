@@ -6,11 +6,16 @@
 
 | Value | Description |
 |-------|-------------|
+| ANTHROPIC_CHILD_ORG_SETTINGS | Anthropic child org settings. |
+| ANTHROPIC_DEVICE | Anthropic device. |
+| ANTHROPIC_ORG_SETTINGS | Anthropic org settings. |
+| ANTHROPIC_USER_CLAUDE_CHAT | Anthropic user Claude chat. |
 | AUTH0_TENANT | Auth0 tenant. |
 | AWS_NATIVE_CONFIG | AWS Native Config. |
 | AWS_NATIVE_DYNAMODB_TABLE | AWS native DynamoDB table. |
 | AWS_NATIVE_S3_BUCKET | AWS native S3 Bucket. |
 | AZURE_AD_DIRECTORY | Azure AD Directory. |
+| AZURE_COSMOS_NOSQL_CONTAINER | Azure Cosmos NoSQL container. |
 | AZURE_POSTGRES_FLEXIBLE_SERVER |  |
 | AZURE_STORAGE_ACCOUNT | Azure storage account. |
 | AllSubHierarchyType |  |

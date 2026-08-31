@@ -38,6 +38,7 @@ Returns a single snapshot by snapshot forever UUID and cluster UUID. In case clu
         isExpired
         isIndexed
         isOnDemandSnapshot
+        isOpenstackStorageSnapshot
         isQuarantineProcessing
         isQuarantined
         isRetentionLocked
@@ -49,6 +50,7 @@ Returns a single snapshot by snapshot forever UUID and cluster UUID. In case clu
         resourceSpec
         retentionLockModeAcrossLocations
         snappableId
+        usedFsSize
       }
     }
     ```

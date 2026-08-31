@@ -7,8 +7,10 @@ Supported in v9.0+ Input to add a Kubernetes cluster.
 | Field | Type | Description |
 |-------|------|-------------|
 | accessToken | String | Supported in v9.1+ The access token for the service account. |
+| backupSubnetCidr | String | Supported in v9.6+ Comma-separated IPv4 CIDR(s) the per-node backup proxy binds its backup NIC within. Only used when dataPathTransport is pernodeproxy. |
 | clientId | String | Supported in v9.1+ The client ID for the service account. |
 | clientSecret | String | Supported in v9.1+ The client secret for the service account. |
+| dataPathTransport | String | Supported in v9.6+ The transport type used for the RBA data movers. Defaults to the control-plane transport when unset. Set to pernodeproxy to route data movers through the per-node backup proxy. |
 | distribution | String | Supported in v9.1+ Distribution of the Kubernetes cluster to be added. |
 | eksConfig | [EksConfigInput](EksConfigInput.md) | The configuration for adding an EKS cluster. |
 | helmChartVersion | String | Supported in v9.6+ Helm chart version installed on the Kubernetes cluster. Set by the chart at install time. Empty for non-Helm onboarding. |

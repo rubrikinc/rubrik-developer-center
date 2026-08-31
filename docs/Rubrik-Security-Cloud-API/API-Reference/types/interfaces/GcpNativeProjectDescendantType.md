@@ -40,6 +40,7 @@ Descendant type for GCP project.
 ## Implemented By
 
 - [GcpAlloyDbCluster](../objects/GcpAlloyDbCluster.md)
+- [GcpBigQueryDataset](../objects/GcpBigQueryDataset.md)
 - [GcpCloudSqlInstance](../objects/GcpCloudSqlInstance.md)
 - [GcpNativeDisk](../objects/GcpNativeDisk.md)
 - [GcpNativeGceInstance](../objects/GcpNativeGceInstance.md)

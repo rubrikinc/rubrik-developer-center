@@ -6,9 +6,11 @@ The Recovery plan recovery statuses.
 
 | Value | Description |
 |-------|-------------|
+| AWAITING_DECISION | Recovery has reached the commit gate and is awaiting a commit/rollback decision. |
 | CLEANUP_FAILED | Recovery cleanup failed. |
 | CLEANUP_STARTED | Recovery cleanup started. |
 | CLEANUP_SUCCEEDED | Recovery cleanup succeeded. |
+| COMMITTING | A commit is in progress. |
 | COMPLETED | Recovery completed. |
 | DONE | Recovery done. |
 | FAILOVER_CLEANUP_STARTED | Failover cleanup started. |

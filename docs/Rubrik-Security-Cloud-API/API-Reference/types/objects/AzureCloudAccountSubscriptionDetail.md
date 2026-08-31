@@ -6,6 +6,7 @@ Azure Cloud Account Subscription details for a given feature.
 
 | Field | Type | Description |
 |-------|------|-------------|
+| app | [AzureCloudAccountTenantApp](AzureCloudAccountTenantApp.md) | The Azure application backing this subscription, together with the authentication method it is bound to. Unset when the app cannot be resolved. |
 | azureLocalClusterCount | Int | Number of Azure Local clusters in this subscription. Populated only for Azure Local subscriptions; null otherwise. |
 | featureDetail | [AzureCloudAccountFeatureDetail](AzureCloudAccountFeatureDetail.md) | One of the enabled features on this subscription. |
 | id | String! | Rubrik ID of the Azure Subscription. |

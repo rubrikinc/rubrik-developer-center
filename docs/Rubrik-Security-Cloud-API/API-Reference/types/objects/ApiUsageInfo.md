@@ -13,6 +13,7 @@ API usage information for an organization.
 
 **Referenced by**
 
+- [AnthropicOrg.apiUsage](AnthropicOrg.md)
 - [AtlassianSite.apiUsage](AtlassianSite.md)
 - [Dynamics365Organization.apiUsage](Dynamics365Organization.md)
 - [GoogleWorkspaceOrg.apiUsage](GoogleWorkspaceOrg.md)
