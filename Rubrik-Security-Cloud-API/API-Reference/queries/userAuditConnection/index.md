@@ -12,7 +12,7 @@ Paginated list of user audit data. Each page of the results will include at most
 | before    | String                                                                                                                             | Returns the elements in the list that occur before the specified cursor. |
 | sortOrder | [SortOrder](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/SortOrder/index.md)                   | User audit sort order.                                                   |
 | sortBy    | [UserAuditSortField](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/UserAuditSortField/index.md) | Sort user audit by field.                                                |
-| filters   | [UserAuditFilter](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/UserAuditFilter/index.md)      |                                                                          |
+| filters   | [UserAuditFilter](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/UserAuditFilter/index.md)      | Filters to apply to the returned user audits.                            |
 
 ## Returns
 

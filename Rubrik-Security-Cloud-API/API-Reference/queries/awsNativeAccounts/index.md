@@ -44,8 +44,10 @@ query AwsNativeAccounts($awsNativeProtectionFeature: AwsNativeProtectionFeature!
       isProtectable
       lastRefreshedAt
       name
+      nativeId
       numWorkloadDescendants
       objectType
+      orgId
       rdsInstanceCount
       rscPendingObjectPauseAssignment
       s3BucketCount
@@ -67,7 +69,7 @@ query AwsNativeAccounts($awsNativeProtectionFeature: AwsNativeProtectionFeature!
 
 ```json
 {
-  "awsNativeProtectionFeature": "CLOUD_DISCOVERY"
+  "awsNativeProtectionFeature": "CLOUD_COST_REPORT"
 }
 ```
 

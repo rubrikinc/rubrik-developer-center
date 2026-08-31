@@ -20,6 +20,7 @@ A generic snapshot type.
 - [ActiveDirectoryDomainController.snapshotDistribution](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/ActiveDirectoryDomainController/index.md)
 - ActiveDirectoryDomainDescendantType.snapshotDistribution
 - ActiveDirectoryDomainPhysicalChildType.snapshotDistribution
+- [AnthropicOrg.snapshotDistribution](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AnthropicOrg/index.md)
 - [AtlassianSite.snapshotDistribution](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AtlassianSite/index.md)
 - [AwsNativeAccount.snapshotDistribution](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AwsNativeAccount/index.md)
 - AwsNativeAccountDescendantType.snapshotDistribution
@@ -45,5 +46,4 @@ A generic snapshot type.
 - [AzurePostgresFlexibleServer.snapshotDistribution](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AzurePostgresFlexibleServer/index.md)
 - [AzureSqlDatabaseDb.snapshotDistribution](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AzureSqlDatabaseDb/index.md)
 - [AzureSqlDatabaseServer.snapshotDistribution](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AzureSqlDatabaseServer/index.md)
-- [AzureSqlManagedInstanceDatabase.snapshotDistribution](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AzureSqlManagedInstanceDatabase/index.md)
-- *…and 285 more*
+- *…and 294 more*

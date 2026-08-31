@@ -1,13 +1,13 @@
 # SnappableTypeSummary
 
-*No description available.*
+A summary of the count of workloads grouped by a single workload type.
 
 ## Fields
 
-| Field         | Type                                                                                                                                          | Description |
-| ------------- | --------------------------------------------------------------------------------------------------------------------------------------------- | ----------- |
-| count         | Int!                                                                                                                                          |             |
-| snappableType | [HierarchyObjectTypeEnum](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/HierarchyObjectTypeEnum/index.md)! |             |
+| Field         | Type                                                                                                                                          | Description                             |
+| ------------- | --------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------- |
+| count         | Int!                                                                                                                                          | The number of workloads of this type.   |
+| snappableType | [HierarchyObjectTypeEnum](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/HierarchyObjectTypeEnum/index.md)! | The workload type the count applies to. |
 
 ## Used By
 

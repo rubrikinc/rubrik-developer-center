@@ -60,6 +60,13 @@ query AwsNativeRdsExportDefaults($rdsInstanceRubrikId: UUID!, $isPointInTime: Bo
       "dbEngineVersion": "example-string",
       "dbInstanceClass": "DB_M1_LARGE",
       "dbParameterGroupName": "example-string",
+      "availableDbEngineVersions": [
+        {
+          "isDifferentMajor": true,
+          "isExtendedSupport": true,
+          "version": "example-string"
+        }
+      ],
       "metadata": [
         {
           "key": "example-string",

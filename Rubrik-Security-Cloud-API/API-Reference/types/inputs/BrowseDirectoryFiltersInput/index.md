@@ -1,6 +1,6 @@
 # BrowseDirectoryFiltersInput
 
-*No description available.*
+Filters applied when browsing the contents of a directory.
 
 ## Fields
 

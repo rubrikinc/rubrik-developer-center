@@ -4,9 +4,9 @@ Details for the team corresponding to the snappable ID.
 
 ## Arguments
 
-| Argument                  | Type                                                                                                      | Description               |
-| ------------------------- | --------------------------------------------------------------------------------------------------------- | ------------------------- |
-| snappableFid *(required)* | [UUID](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/UUID/index.md)! | The FID for the workload. |
+| Argument                  | Type                                                                                                      | Description           |
+| ------------------------- | --------------------------------------------------------------------------------------------------------- | --------------------- |
+| snappableFid *(required)* | [UUID](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/UUID/index.md)! | FID of the O365 Team. |
 
 ## Returns
 

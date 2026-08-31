@@ -14,6 +14,7 @@ Stats of the backup jobs in the last 24 hours.
 
 **Referenced by**
 
+- [AnthropicOrg.backupJobsStats](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AnthropicOrg/index.md)
 - [AtlassianSite.backupJobsStats](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AtlassianSite/index.md)
 - [Dynamics365Organization.backupJobsStats](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/Dynamics365Organization/index.md)
 - [GoogleWorkspaceOrg.backupJobsStats](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/GoogleWorkspaceOrg/index.md)

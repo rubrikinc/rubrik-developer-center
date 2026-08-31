@@ -25,7 +25,7 @@ mutation MapAzureCloudAccountToPersistentStorageLocation($input: MapAzureCloudAc
 ```json
 {
   "input": {
-    "azureNativeProtectionFeature": "AZ_CLOUD_DISCOVERY",
+    "azureNativeProtectionFeature": "AZURE_COSMOS_NOSQL",
     "cloudAccountIds": [
       "00000000-0000-0000-0000-000000000000"
     ],

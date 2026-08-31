@@ -10,7 +10,7 @@ NAS Cloud Direct object protection status for the requested clusters.
 
 ## Returns
 
-[NcdObjectProtectionStatus](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/NcdObjectProtectionStatus/index.md)
+[NcdObjectProtectionStatus](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/NcdObjectProtectionStatus/index.md)!
 
 ## Sample
 

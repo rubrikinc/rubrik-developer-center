@@ -10,6 +10,7 @@ Threat hunt scan file criteria.
 | fileTimeLimits           | [HuntScanFileTimeLimits](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/HuntScanFileTimeLimits/index.md) | Specify limits around file creation and modification time.                                                                                          |
 | pathFilter               | [HuntScanPathFilters](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/HuntScanPathFilters/index.md)       | Specify allow-list and deny-list of file paths. This option is only compatible with YARA rule IOCs or Hash IOCs. Filters for Path IOCs are ignored. |
 | shouldExpandArchiveFiles | Boolean                                                                                                                                      | When true, zip and archive files are expanded during the threat hunt scan so that inner files are scanned individually.                             |
+| useExtensionWhitelist    | Boolean                                                                                                                                      | When true, the backend applies the extension whitelist during the scan. Controlled by the extension whitelist checkbox in the Advance Hunt UI.      |
 
 ## Used By
 

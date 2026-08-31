@@ -4,10 +4,10 @@ Details of the O365Org at snappable level, given the snappable type.
 
 ## Arguments
 
-| Argument                   | Type                                                                                                                      | Description                 |
-| -------------------------- | ------------------------------------------------------------------------------------------------------------------------- | --------------------------- |
-| fid *(required)*           | [UUID](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/UUID/index.md)!                 | Rubrik UUID for the object. |
-| snappableType *(required)* | [SnappableType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/SnappableType/index.md)! |                             |
+| Argument                   | Type                                                                                                                      | Description                    |
+| -------------------------- | ------------------------------------------------------------------------------------------------------------------------- | ------------------------------ |
+| fid *(required)*           | [UUID](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/UUID/index.md)!                 | Rubrik UUID for the object.    |
+| snappableType *(required)* | [SnappableType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/SnappableType/index.md)! | The type of the M365 workload. |
 
 ## Returns
 

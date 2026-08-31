@@ -1,6 +1,6 @@
 # Interfaces
 
-183 types.
+190 types.
 
 [ActiveDirectoryDomainDescendantType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/ActiveDirectoryDomainDescendantType/index.md)\
 [ActiveDirectoryDomainPhysicalChildType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/ActiveDirectoryDomainPhysicalChildType/index.md)\
@@ -10,10 +10,6 @@
 [AwsNativeAccountLogicalChildType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/AwsNativeAccountLogicalChildType/index.md)\
 [AwsNativeHierarchyObject](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/AwsNativeHierarchyObject/index.md)\
 [AzureNativeHierarchyObjectType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/AzureNativeHierarchyObjectType/index.md)\
-[CassandraKeyspaceDescendantType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/CassandraKeyspaceDescendantType/index.md)\
-[CassandraKeyspacePhysicalChildType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/CassandraKeyspacePhysicalChildType/index.md)\
-[CassandraSourceDescendantType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/CassandraSourceDescendantType/index.md)\
-[CassandraSourcePhysicalChildType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/CassandraSourcePhysicalChildType/index.md)\
 [CdmHierarchyObject](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/CdmHierarchyObject/index.md)\
 [CdmHierarchySnappableNew](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/CdmHierarchySnappableNew/index.md)\
 [CloudAccount](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/CloudAccount/index.md)\
@@ -84,10 +80,6 @@
 [MongoDatabasePhysicalChildType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/MongoDatabasePhysicalChildType/index.md)\
 [MongoSourceDescendantType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/MongoSourceDescendantType/index.md)\
 [MongoSourcePhysicalChildType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/MongoSourcePhysicalChildType/index.md)\
-[MongodbDatabaseDescendantType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/MongodbDatabaseDescendantType/index.md)\
-[MongodbDatabasePhysicalChildType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/MongodbDatabasePhysicalChildType/index.md)\
-[MongodbSourceDescendantType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/MongodbSourceDescendantType/index.md)\
-[MongodbSourcePhysicalChildType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/MongodbSourcePhysicalChildType/index.md)\
 [MssqlAvailabilityGroupDescendantType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/MssqlAvailabilityGroupDescendantType/index.md)\
 [MssqlAvailabilityGroupLogicalChildType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/MssqlAvailabilityGroupLogicalChildType/index.md)\
 [MssqlHostDescendantType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/MssqlHostDescendantType/index.md)\
@@ -122,6 +114,21 @@
 [O365TeamsChannelObject](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/O365TeamsChannelObject/index.md)\
 [O365UserDescendant](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/O365UserDescendant/index.md)\
 [O365UserDescendantMetadata](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/O365UserDescendantMetadata/index.md)\
+[OpenstackAvailabilityZoneDescendantType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/OpenstackAvailabilityZoneDescendantType/index.md)\
+[OpenstackAvailabilityZonePhysicalChildType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/OpenstackAvailabilityZonePhysicalChildType/index.md)\
+[OpenstackDomainDescendantType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/OpenstackDomainDescendantType/index.md)\
+[OpenstackDomainLogicalChildType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/OpenstackDomainLogicalChildType/index.md)\
+[OpenstackEnvironmentDescendantType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/OpenstackEnvironmentDescendantType/index.md)\
+[OpenstackEnvironmentLogicalChildType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/OpenstackEnvironmentLogicalChildType/index.md)\
+[OpenstackEnvironmentPhysicalChildType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/OpenstackEnvironmentPhysicalChildType/index.md)\
+[OpenstackHostDescendantType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/OpenstackHostDescendantType/index.md)\
+[OpenstackHostPhysicalChildType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/OpenstackHostPhysicalChildType/index.md)\
+[OpenstackProjectDescendantType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/OpenstackProjectDescendantType/index.md)\
+[OpenstackProjectLogicalChildType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/OpenstackProjectLogicalChildType/index.md)\
+[OpenstackRegionDescendantType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/OpenstackRegionDescendantType/index.md)\
+[OpenstackRegionPhysicalChildType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/OpenstackRegionPhysicalChildType/index.md)\
+[OpenstackTagDescendantType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/OpenstackTagDescendantType/index.md)\
+[OpenstackTagLogicalChildType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/OpenstackTagLogicalChildType/index.md)\
 [OracleDataGuardGroupDescendantType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/OracleDataGuardGroupDescendantType/index.md)\
 [OracleDataGuardGroupLogicalChildType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/OracleDataGuardGroupLogicalChildType/index.md)\
 [OracleHostDescendantType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/OracleHostDescendantType/index.md)\

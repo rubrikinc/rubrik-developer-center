@@ -35,7 +35,7 @@ query AllObjectsAlreadyAssignedToOrgs($objectIdsForHierarchyTypes: [ObjectIdsFor
       "objectIds": [
         "example-string"
       ],
-      "snappableType": "AUTH0_TENANT"
+      "snappableType": "ANTHROPIC_CHILD_ORG_SETTINGS"
     }
   ],
   "allowedClusters": [
@@ -52,7 +52,7 @@ query AllObjectsAlreadyAssignedToOrgs($objectIdsForHierarchyTypes: [ObjectIdsFor
         "objectIds": [
           "example-string"
         ],
-        "snappableType": "AUTH0_TENANT"
+        "snappableType": "ANTHROPIC_CHILD_ORG_SETTINGS"
       }
     ]
   }

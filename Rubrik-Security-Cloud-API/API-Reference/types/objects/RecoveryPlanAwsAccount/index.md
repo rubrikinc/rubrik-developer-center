@@ -4,13 +4,14 @@ Identifying details for an AWS account used as a recovery plan location.
 
 ## Fields
 
-| Field       | Type                                                                                                                                         | Description                                           |
-| ----------- | -------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------- |
-| cloudType   | [AwsCloudType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/AwsCloudType/index.md)!                      | Cloud partition the AWS account belongs to.           |
-| id          | String!                                                                                                                                      | Identifier of the AWS account.                        |
-| name        | String!                                                                                                                                      | Name of the AWS account.                              |
-| regionSpecs | \[[AwsNativeRegionSpec](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AwsNativeRegionSpec/index.md)!\]! | Region specifications configured for the AWS account. |
-| status      | [AwsAccountStatus](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/AwsAccountStatus/index.md)!              | Protection status of the AWS account.                 |
+| Field       | Type                                                                                                                                         | Description                                                                                                                                 |
+| ----------- | -------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
+| cloudType   | [AwsCloudType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/AwsCloudType/index.md)!                      | Cloud partition the AWS account belongs to.                                                                                                 |
+| id          | String!                                                                                                                                      | Identifier of the AWS account.                                                                                                              |
+| name        | String!                                                                                                                                      | Name of the AWS account.                                                                                                                    |
+| region      | [AwsNativeRegion](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/AwsNativeRegion/index.md)!                | The region this recovery plan location targets. This is distinct from regionSpecs, which lists every region the account is registered with. |
+| regionSpecs | \[[AwsNativeRegionSpec](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AwsNativeRegionSpec/index.md)!\]! | Region specifications configured for the AWS account.                                                                                       |
+| status      | [AwsAccountStatus](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/AwsAccountStatus/index.md)!              | Protection status of the AWS account.                                                                                                       |
 
 ## Used By
 

@@ -6,6 +6,7 @@ The type of Azure Native feature Polaris supports.
 
 | Value                    | Description                                         |
 | ------------------------ | --------------------------------------------------- |
+| AZURE_COSMOS_NOSQL       | Azure native protection feature is Cosmos NoSQL.    |
 | AZ_CLOUD_DISCOVERY       | Azure native protection feature is Cloud Discovery. |
 | BLOB                     | Protection on Azure blobs.                          |
 | POSTGRES_FLEXIBLE_SERVER | Protection on Azure Postgres Flexible Servers.      |

@@ -46,6 +46,7 @@ Details of an org.
 - ActiveDirectoryDomainDescendantType.allOrgs
 - ActiveDirectoryDomainPhysicalChildType.allOrgs
 - [ActivitySeries.organizations](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/ActivitySeries/index.md)
+- [AnthropicOrg.allOrgs](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AnthropicOrg/index.md)
 - [AtlassianSite.allOrgs](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AtlassianSite/index.md)
 - [AwsNativeAccount.allOrgs](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AwsNativeAccount/index.md)
 - AwsNativeAccountDescendantType.allOrgs
@@ -70,5 +71,4 @@ Details of an org.
 - [AzureNativeVirtualMachine.allOrgs](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AzureNativeVirtualMachine/index.md)
 - [AzurePostgresFlexibleServer.allOrgs](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AzurePostgresFlexibleServer/index.md)
 - [AzureSqlDatabaseDb.allOrgs](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AzureSqlDatabaseDb/index.md)
-- [AzureSqlDatabaseServer.allOrgs](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AzureSqlDatabaseServer/index.md)
-- *…and 291 more*
+- *…and 300 more*

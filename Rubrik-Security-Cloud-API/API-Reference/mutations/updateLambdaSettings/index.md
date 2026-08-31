@@ -1,6 +1,6 @@
 # updateLambdaSettings
 
-*No description available.*
+Updates the anomaly detection settings for the account.
 
 ## Arguments
 

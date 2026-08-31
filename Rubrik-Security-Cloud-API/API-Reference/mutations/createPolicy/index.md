@@ -4,9 +4,9 @@ Create a classification policy.
 
 ## Arguments
 
-| Argument           | Type                                                                                                                               | Description |
-| ------------------ | ---------------------------------------------------------------------------------------------------------------------------------- | ----------- |
-| input *(required)* | [CreatePolicyInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/CreatePolicyInput/index.md)! |             |
+| Argument           | Type                                                                                                                               | Description                                 |
+| ------------------ | ---------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------- |
+| input *(required)* | [CreatePolicyInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/CreatePolicyInput/index.md)! | Input for creating a classification policy. |
 
 ## Returns
 

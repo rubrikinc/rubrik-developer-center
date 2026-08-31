@@ -2,7 +2,7 @@
 
 Cloud Direct NAS export object.
 
-**Implements:** [CloudDirectHierarchyWorkload](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/CloudDirectHierarchyWorkload/index.md), [CloudDirectHierarchyObject](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/CloudDirectHierarchyObject/index.md), [HierarchyObject](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/HierarchyObject/index.md)
+**Implements:** [CloudDirectHierarchyObject](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/CloudDirectHierarchyObject/index.md), [HierarchyObject](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/HierarchyObject/index.md), [CloudDirectHierarchyWorkload](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/CloudDirectHierarchyWorkload/index.md)
 
 ## Fields
 

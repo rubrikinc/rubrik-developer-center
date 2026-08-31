@@ -22,6 +22,7 @@ query GcpNativeGceInstance($fid: UUID!) {
     fileIndexingStatus
     id
     isExocomputeConfigured
+    isProtectionOnboarded
     isRelic
     machineType
     name
@@ -59,7 +60,7 @@ query GcpNativeGceInstance($fid: UUID!) {
       "fileIndexingStatus": "DISABLED",
       "id": "00000000-0000-0000-0000-000000000000",
       "isExocomputeConfigured": true,
-      "isRelic": true,
+      "isProtectionOnboarded": true,
       "allOrgs": [
         {
           "allUrls": [

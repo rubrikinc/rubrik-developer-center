@@ -4,12 +4,13 @@ This document lists all deprecated fields, queries, mutations, and enum values i
 
 ## Deprecated Fields
 
-*Extracted from schema: 20260727.graphql*
+*Extracted from schema: 20260831.graphql*
 
-**Total deprecated items: 298**
+**Total deprecated items: 299**
 
 ### Deprecated Query Fields
 
+- **`accountSettings`**: Use getAccountSettingValue or getAccountSettingValueWithDefault instead.
 - **`allAzureResourceGroups`**: Use allResourceGroupsFromAzure instead.
 - **`allAzureSubnets`**: Use allAzureCloudAccountSubnetsByRegion instead.
 - **`allClusterWebCertsAndIpmis`**: Use clusterConnection instead.
@@ -22,14 +23,6 @@ This document lists all deprecated fields, queries, mutations, and enum values i
 - **`hypervServers`**: Use hypervServersPaginated instead.
 - **`ipWhitelist`**: use `ipWhitelistEntries` and `ipWhitelistSettings` instead.
 - **`k8sAppManifest`**: Not supported anymore.
-- **`mongodbBulkRecoverableRange`**: Use mongoBulkRecoverableRanges instead.
-- **`mongodbCollection`**: Use mongoCollection instead.
-- **`mongodbCollectionRecoverableRange`**: Use mongoRecoverableRanges instead.
-- **`mongodbCollections`**: Use mongoCollections instead.
-- **`mongodbDatabase`**: Use mongoDatabase instead.
-- **`mongodbDatabases`**: Use mongoDatabases instead.
-- **`mongodbSource`**: Use mongoSource instead.
-- **`mongodbSources`**: Use mongoSources instead.
 - **`mssqlDefaultProperties`**: Use mssqlDefaultPropertiesOnCluster instead.
 - **`o365SharepointObjects`**: This is deprecated as it was tied to the specific object type. Use o365SharepointObjectList instead.
 - **`protectedVolumesCount`**: This functionality is incorrect and deprecated.
@@ -47,17 +40,14 @@ This document lists all deprecated fields, queries, mutations, and enum values i
 - **`backupO365Onedrive`**: Use backupM365Onedrive instead.
 - **`backupO365SharepointDrive`**: Use backupM365SharepointDrive instead.
 - **`backupO365Team`**: Use backupM365Team instead.
-- **`bulkDeleteMongodbSources`**: Use bulkDeleteMongoSources instead.
 - **`cancelTaskchain`**: Endpoint is no longer maintained
 - **`createAutomaticAwsTargetMapping`**: This mutation is deprecated.
 - **`createAutomaticAzureTargetMapping`**: This mutation is deprecated.
 - **`createAutomaticRcsTargetMapping`**: This mutation is deprecated. Please use createRcvLocationsFromTemplate.
-- **`createMongodbSource`**: Use addMongoSource instead.
 - **`createOnDemandMongoDatabaseBackup`**: Use createOnDemandMongoDatabaseBackupV2 instead.
 - **`createWebhook`**: Use createWebhookV2 instead.
 - **`deleteCertificate`**: Deprecated. Use deleteGlobalCertificate instead.
 - **`deleteCloudWorkloadSnapshot`**: Use deleteUnmanagedSnapshots instead.
-- **`deleteMongodbSource`**: Use deleteMongoSource instead.
 - **`deleteSapHanaDbSnapshot`**: Please use deleteUnmanagedSnapshots mutation instead or use the RSC UI delete button from snapshots page
 - **`deleteWebhook`**: Use deleteWebhookV2 instead.
 - **`downloadAuditLogCsvAsync`**: Use downloadFile instead.
@@ -67,7 +57,6 @@ This document lists all deprecated fields, queries, mutations, and enum values i
 - **`gcpCloudAccountAddManualAuthProject`**: Use addGcpCloudAccountManualAuthProject instead.
 - **`listCidrsForComputeSetting`**: This endpoint is no longer maintained and will be removed.
 - **`recoverCloudDirectPath`**: Not in use. Use recoverCloudDirectMultiPaths instead.
-- **`recoverMongodbSource`**: Use recoverMongoSource instead.
 - **`restoreO365Mailbox`**: Use restoreO365MailboxV2 instead.
 - **`setIpWhitelistEnabled`**: use `setIpWhitelistSetting` instead.
 - **`stopJobInstance`**: Use stopJobInstanceFromEventSeries instead.
@@ -79,7 +68,6 @@ This document lists all deprecated fields, queries, mutations, and enum values i
 - **`updateCertificate`**: Deprecated. Use updateGlobalCertificate instead.
 - **`updateIpWhitelist`**: use `setIpWhitelistSetting` to update the mode, or `update/add/deleteIpWhitelistEntries` to update entries instead.
 - **`updateManagedIdentities`**: Use updateManagedIdentitiesAsync instead.
-- **`updateMongodbSource`**: Use patchMongoSource instead.
 - **`updateRcsAutomaticTargetMapping`**: This mutation is deprecated. Please use updateRcvLocationsFromTemplate.
 - **`updateWebhook`**: Use updateWebhookV2 instead.
 - **`vsphereExcludeVmDisks`**: Deprecated. Use excludeVmDisks instead.
@@ -347,7 +335,7 @@ This document lists all deprecated fields, queries, mutations, and enum values i
 
 #### FileResult
 
-- **`attributesSummary`**: No longer used.
+- **`attributesSummary`**: No longer populated or consumed by any caller.
 
 #### GcpCloudSqlInstance
 
@@ -441,7 +429,7 @@ This document lists all deprecated fields, queries, mutations, and enum values i
 
 #### PolicyObj
 
-- **`attributesSummary`**: No longer used.
+- **`attributesSummary`**: No longer populated or consumed by any caller.
 
 #### RbacObject
 
@@ -455,6 +443,14 @@ This document lists all deprecated fields, queries, mutations, and enum values i
 #### RcvEntitlement
 
 - **`bundle`**: Use tier and redundancy fields instead.
+
+#### RcvEntitlementWithExpirationDate
+
+- **`bundle`**: Use tier and redundancy fields instead.
+
+#### RdsInstanceExportDefaults
+
+- **`supportedDbEngineVersions`**: Use availableDbEngineVersions instead.
 
 #### RemediationMetadata
 
@@ -576,6 +572,10 @@ This document lists all deprecated fields, queries, mutations, and enum values i
 
 - **`hasDatastoresForRecovery`**: Use recoveryTargetDescendantConnection field directly instead
 
+#### WorkloadRecoveryInfo
+
+- **`oldWorkloadId`**: Use the set of [oldWorkloadId + oldWorkloadIds] instead for multiple old IDs mapping to the same new ID.
+
 ### Deprecated Enum Values
 
 - **`ACTIVE_DIRECTORY_FOREST_RECOVERY`**: Use EVENT_SERIES instead.
@@ -585,8 +585,15 @@ This document lists all deprecated fields, queries, mutations, and enum values i
 - **`ACTIVE_DIRECTORY_FOREST_RECOVERY_TABLE`**: Use EVENT_SERIES_BY_OBJECT_TYPE_TABLE.
 - **`ACTIVE_DIRECTORY_FOREST_RECOVERY_TABLE`**: Use EVENT_SERIES_BY_TIME_TABLE.
 - **`ARCHIVAL`**: Use `CLOUD_NATIVE_CONFIG_PROTECTION` instead.
+- **`ARCHIVAL_LOCATION_DELETE`**: Nothing creates this type; it will be removed in a future release.
+- **`ARCHIVAL_LOCATION_DELETE`**: Nothing creates this type; it will be removed in a future release.
+- **`ARCHIVAL_LOCATION_DELETE`**: Nothing creates this type; it will be removed in a future release.
+- **`ARCHIVAL_LOCATION_DELETE`**: Nothing creates this type; it will be removed in a future release.
 - **`AUDIT_LIST`**: Use BACKUP_STRIKES_V2 instead.
 - **`AUDIT_LIST`**: Use LATEST_GLOBAL_OBJECTS instead.
+- **`AWS_IAM_CUSTOMER_ACCOUNT_UPSERT`**: Nothing creates this type; it will be removed in a future release.
+- **`AWS_REGION`**: Use EC2_INSTANCE_VPC_ID or RDS_INSTANCE_VPC_ID instead.
+- **`AWS_TAG`**: Use EC2_INSTANCE_VPC_ID or RDS_INSTANCE_VPC_ID instead.
 - **`AZURE_DEVOPS_REPOSITORY_PROTECTION`**: Use `LAMINAR_OUTPOST_APPLICATION` instead.
 - **`AZURE_DEVOPS_REPOSITORY_PROTECTION`**: Use `LAMINAR_OUTPOST_MANAGED_IDENTITY` instead.
 - **`AZURE_DEVOPS_REPOSITORY_PROTECTION`**: Use `LAMINAR_TARGET_APPLICATION` instead.
@@ -594,6 +601,7 @@ This document lists all deprecated fields, queries, mutations, and enum values i
 - **`AZURE_DEVOPS_REPO_SIZE`**: This field is deprecated and no longer used.
 - **`CATEGORY_UNSPECIFIED`**: Use AUTHENTICATION_AND_SECRET_MANAGEMENT instead.
 - **`CLOUDDIRECT_NAS_NAMESPACE_VENDOR_TYPE`**: Not implemented - no longer used.
+- **`CLOUD_DIRECT`**: Nothing returns this sync type; it will be removed in a future release.
 - **`CLUSTER_DISCONNECTED`**: This reason is no longer used.
 - **`COLDLINE_GCP`**: Use STANDARD_GCP instead.
 - **`DNS_SERVERS_CHECK`**: Use CLUSTER_NAME_LENGTH_CHECK instead.
@@ -623,6 +631,7 @@ This document lists all deprecated fields, queries, mutations, and enum values i
 - **`MONGO_DATABASE`**: MONGO_DB is deprecated and no longer used.
 - **`NF_ANOMALIES`**: Use OBJECT_PROTECTION_AUDIT_DETAIL instead.
 - **`NF_ANOMALIES`**: Use OBJECT_PROTECTION_AUDIT_LIST instead.
+- **`OBJECT`**: Use OBJECT or FIELD instead.
 - **`OBJECT_PROTECTION_AUDIT_LIST_EXPORT`**: Use TASK_DETAILS instead.
 - **`ORACLE_ROOT`**: This root is no longer in use.
 - **`OVEREXPOSED`**: Use IDENTITY_HYGIENE instead.
@@ -632,6 +641,7 @@ This document lists all deprecated fields, queries, mutations, and enum values i
 - **`REMEDIATION_TYPE_IDP_EVENT_REVERT`**: Use REMEDIATION_TYPE_REMEDIATE_ENTRA_ID_RISK instead.
 - **`SAASAPPS_IS_HIDDEN`**: use `SAASAPPS_ORGANIZATION_SCOPE` instead.
 - **`SECURITY_IDENTITY_DEPARTMENT`**: Use SECURITY_IDENTITY_DIRECT_DESCENDANT_COUNT instead.
+- **`SECURITY_IDENTITY_EVENT_DC_NAME`**: Use SECURITY_IDENTITY_EVENT_POLICY_INSIGHTS instead.
 - **`SECURITY_IDENTITY_EVENT_TITLE`**: Use SECURITY_IDENTITY_EVENT_TITLE instead.
 - **`SIGNIN_LOGS`**: Use SLA_AUDIT_DETAIL_NG instead.
 - **`SLA_AUDIT_DETAIL_NG`**: Use SLA_AUDIT_LIST_NG instead.

@@ -36,6 +36,7 @@ query Snapshot($snapshotFid: UUID!) {
     isExpired
     isIndexed
     isOnDemandSnapshot
+    isOpenstackStorageSnapshot
     isQuarantineProcessing
     isQuarantined
     isRetentionLocked
@@ -47,6 +48,7 @@ query Snapshot($snapshotFid: UUID!) {
     resourceSpec
     retentionLockModeAcrossLocations
     snappableId
+    usedFsSize
   }
 }
 ```

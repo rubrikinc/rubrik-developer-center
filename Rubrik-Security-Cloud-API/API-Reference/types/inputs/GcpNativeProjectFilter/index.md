@@ -4,6 +4,6 @@ Filter to return GCP objects which have project rubrik ID in the given list of p
 
 ## Fields
 
-| Field      | Type       | Description |
-| ---------- | ---------- | ----------- |
-| projectIds | [String!]! |             |
+| Field      | Type       | Description                                                |
+| ---------- | ---------- | ---------------------------------------------------------- |
+| projectIds | [String!]! | Rubrik IDs of the GCP projects to restrict the results to. |

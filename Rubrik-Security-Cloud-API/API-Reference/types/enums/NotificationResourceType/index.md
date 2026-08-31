@@ -6,6 +6,7 @@ The resource type associated with the notification.
 
 | Value                          | Description                                           |
 | ------------------------------ | ----------------------------------------------------- |
+| ARCHIVAL_LOCATION              | Data center archival location.                        |
 | AWS_PRIVATE_CONTAINER_REGISTRY | AWS private container registry for Exocompute.        |
 | CROSS_ACCOUNT                  | Cross-account resource.                               |
 | DEFAULT_AUDIT_EVENT            | Default audit event.                                  |
@@ -26,6 +27,7 @@ The resource type associated with the notification.
 | SAAS_APPS_ORGANIZATION         | SaaS application organization.                        |
 | SENTRY_AI_INSIGHT              | A Sentry AI insight.                                  |
 | SLA_AUTO_MIGRATION             | SLA Domain auto migration notification.               |
+| SUPPORT_CASE                   | Rubrik support case.                                  |
 | THREAT_MONITORING_MATCH        | A Threat Monitoring match.                            |
 | TPR_BREAK_GLASS_ENROLLMENT     | Quorum Authorization break-glass approver enrollment. |
 | USER_ACCOUNT                   | User account.                                         |

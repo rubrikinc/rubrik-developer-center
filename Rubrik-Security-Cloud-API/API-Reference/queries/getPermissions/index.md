@@ -39,7 +39,7 @@ query GetPermissions($roleId: String!) {
             "objectIds": [
               "example-string"
             ],
-            "snappableType": "AUTH0_TENANT"
+            "snappableType": "ANTHROPIC_CHILD_ORG_SETTINGS"
           }
         ]
       }

@@ -54,7 +54,7 @@ query VSphereMount($fid: UUID!) {
         "operations": [
           "ACCESS_CDM_CLUSTER"
         ],
-        "workloadHierarchy": "AUTH0_TENANT"
+        "workloadHierarchy": "ANTHROPIC_CHILD_ORG_SETTINGS"
       },
       "cluster": {
         "cdmRbacMigrationStatus": "example-string",

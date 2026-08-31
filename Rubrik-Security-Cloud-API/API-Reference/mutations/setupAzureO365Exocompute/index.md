@@ -1,14 +1,14 @@
 # setupAzureO365Exocompute
 
-Sets up Exocompute for an O365 subscription.
+Sets up Exocompute for an O365 subscription. Validates the exocompute configuration, initialises the Korg job and returns the cluster and taskchain IDs.
 
 ## Arguments
 
-| Argument                      | Type                                                                                                                                               | Description |
-| ----------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- | ----------- |
-| tenantId *(required)*         | String!                                                                                                                                            |             |
-| subscriptionId *(required)*   | [UUID](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/UUID/index.md)!                                          |             |
-| exocomputeConfig *(required)* | [AzureO365ExocomputeConfig](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/AzureO365ExocomputeConfig/index.md)! |             |
+| Argument                      | Type                                                                                                                                               | Description                   |
+| ----------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------- |
+| tenantId *(required)*         | String!                                                                                                                                            | The Azure tenant ID.          |
+| subscriptionId *(required)*   | [UUID](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/UUID/index.md)!                                          | The Azure subscription ID.    |
+| exocomputeConfig *(required)* | [AzureO365ExocomputeConfig](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/AzureO365ExocomputeConfig/index.md)! | The exocompute configuration. |
 
 ## Returns
 

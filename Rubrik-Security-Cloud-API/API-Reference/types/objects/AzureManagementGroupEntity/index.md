@@ -4,10 +4,11 @@ A single entity in the management group hierarchy.
 
 ## Fields
 
-| Field      | Type                                                                                                                | Description                                |
-| ---------- | ------------------------------------------------------------------------------------------------------------------- | ------------------------------------------ |
-| entity     | [EntityType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/unions/EntityType/index.md) | This represents the entity under Azure MG. |
-| isEligible | Boolean!                                                                                                            | Is the entity eligible for onboarding.     |
+| Field               | Type                                                                                                                                                                | Description                                                                                        |
+| ------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------- |
+| entity              | [EntityType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/unions/EntityType/index.md)                                                 | This represents the entity under Azure MG.                                                         |
+| ineligibilityReason | [AzureOnboardingIneligibilityReason](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/AzureOnboardingIneligibilityReason/index.md)! | The reason the entity cannot be onboarded in the current pass, or UNSPECIFIED when it is eligible. |
+| isEligible          | Boolean!                                                                                                                                                            | Is the entity eligible for onboarding.                                                             |
 
 ## Used By
 

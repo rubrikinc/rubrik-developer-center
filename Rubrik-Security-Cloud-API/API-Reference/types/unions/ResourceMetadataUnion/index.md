@@ -10,3 +10,5 @@ Metadata about the resource.
 - [IdentityEventMetadata](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/IdentityEventMetadata/index.md)
 - [CrowdStrikeAlertMetadata](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/CrowdStrikeAlertMetadata/index.md)
 - [DefenderAlertMetadata](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/DefenderAlertMetadata/index.md)
+- [SigninAnomalyMetadata](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/SigninAnomalyMetadata/index.md)
+- [SaasActivityMetadata](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/SaasActivityMetadata/index.md)

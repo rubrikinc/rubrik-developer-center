@@ -42,7 +42,7 @@ query AllReportTemplatesByCategories($input: AllReportTemplatesByCategoriesInput
           {
             "description": "example-string",
             "name": "example-string",
-            "reportViewType": "ACTIVE_DIRECTORY_FOREST_RECOVERY_REPORT"
+            "reportViewType": "ACCOUNT_LIFECYCLE_REPORT"
           }
         ]
       }

@@ -1,12 +1,12 @@
 # updateO365AppAuthStatus
 
-Update O365 App authentication status to applicable app version.
+Updates the Microsoft 365 app authentication status to the applicable app version.
 
 ## Arguments
 
-| Argument           | Type                                                                                                                                                     | Description                                        |
-| ------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------- |
-| input *(required)* | [UpdateO365AppAuthStatusInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/UpdateO365AppAuthStatusInput/index.md)! | Input for updating O365 App authentication status. |
+| Argument           | Type                                                                                                                                                     | Description                                                     |
+| ------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------- |
+| input *(required)* | [UpdateO365AppAuthStatusInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/UpdateO365AppAuthStatusInput/index.md)! | Input for updating the Microsoft 365 app authentication status. |
 
 ## Returns
 

@@ -4,11 +4,12 @@ Exchange activity analysis results for a user.
 
 ## Fields
 
-| Field              | Type                                                                                                      | Description                                  |
-| ------------------ | --------------------------------------------------------------------------------------------------------- | -------------------------------------------- |
-| calendarEventCount | [Long](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/Long/index.md)! | The number of calendar events for this user. |
-| contactCount       | [Long](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/Long/index.md)! | The number of contacts for this user.        |
-| emailCount         | [Long](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/Long/index.md)! | The number of emails for this user.          |
+| Field              | Type                                                                                                      | Description                                        |
+| ------------------ | --------------------------------------------------------------------------------------------------------- | -------------------------------------------------- |
+| calendarEventCount | [Long](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/Long/index.md)! | The number of calendar events for this user.       |
+| contactCount       | [Long](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/Long/index.md)! | The number of contacts for this user.              |
+| emailCount         | [Long](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/Long/index.md)! | The number of emails for this user.                |
+| taskCount          | [Long](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/Long/index.md)! | The number of Microsoft To Do tasks for this user. |
 
 ## Used By
 

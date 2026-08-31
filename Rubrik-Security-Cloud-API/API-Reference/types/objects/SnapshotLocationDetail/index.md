@@ -4,10 +4,11 @@ Snapshot location information.
 
 ## Fields
 
-| Field      | Type    | Description           |
-| ---------- | ------- | --------------------- |
-| locationId | String! | Id of the location.   |
-| name       | String! | Name of the location. |
+| Field      | Type                                                                                                                         | Description           |
+| ---------- | ---------------------------------------------------------------------------------------------------------------------------- | --------------------- |
+| locationId | String!                                                                                                                      | Id of the location.   |
+| name       | String!                                                                                                                      | Name of the location. |
+| type       | [SnapshotLocType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/SnapshotLocType/index.md) |                       |
 
 ## Used By
 

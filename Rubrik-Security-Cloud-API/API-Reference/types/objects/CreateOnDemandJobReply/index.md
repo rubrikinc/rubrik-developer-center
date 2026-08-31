@@ -36,3 +36,4 @@ Reply to Create on-demand job request.
 - [mutation: restoreO365Snappable](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/restoreO365Snappable/index.md)
 - [mutation: restoreO365TeamsConversations](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/restoreO365TeamsConversations/index.md)
 - [mutation: restoreO365TeamsFiles](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/restoreO365TeamsFiles/index.md)
+- [mutation: startSaasAppItemsRestore](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/startSaasAppItemsRestore/index.md)

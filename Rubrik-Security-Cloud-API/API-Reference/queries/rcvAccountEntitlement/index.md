@@ -26,17 +26,17 @@ query {
         "bundle": "BUNDLE_1",
         "capacity": 0.0,
         "createdAt": "2024-01-01T00:00:00.000Z",
+        "expirationDate": "2024-01-01T00:00:00.000Z",
         "isReplaced": true,
-        "redundancy": "MULTI_REGION",
-        "revenueType": "ET_POC"
+        "redundancy": "MULTI_REGION"
       },
       "backupEntitlement": {
         "bundle": "BUNDLE_1",
         "capacity": 0.0,
         "createdAt": "2024-01-01T00:00:00.000Z",
+        "expirationDate": "2024-01-01T00:00:00.000Z",
         "isReplaced": true,
-        "redundancy": "MULTI_REGION",
-        "revenueType": "ET_POC"
+        "redundancy": "MULTI_REGION"
       }
     }
   }

@@ -15,4 +15,5 @@ MvcAnalysisJob represents the most recent MVC analysis job for a profile.
 
 **Referenced by**
 
+- [M365AbrRecoveryPlan.analysisJob](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/M365AbrRecoveryPlan/index.md)
 - [MvcProfile.analysisJob](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/MvcProfile/index.md)

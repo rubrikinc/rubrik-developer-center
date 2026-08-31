@@ -32,7 +32,10 @@ query M365OrgOperationModes($orgId: UUID!) {
     "m365OrgOperationModes": {
       "operationModes": [
         {
-          "operationMode": "DAY_TO_DAY_MODE",
+          "operationMode": "BACKFILL_ONBOARDING",
+          "prioritizedOnboardingDays": 0,
+          "prioritizedOnboardingEndTime": "2024-01-01T00:00:00.000Z",
+          "prioritizedOnboardingStartTime": "2024-01-01T00:00:00.000Z",
           "workloadType": "DST_EXCHANGE"
         }
       ]

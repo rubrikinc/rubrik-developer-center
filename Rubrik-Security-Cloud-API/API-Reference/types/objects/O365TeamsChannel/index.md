@@ -1,6 +1,6 @@
 # O365TeamsChannel
 
-*No description available.*
+A Microsoft 365 Teams channel.
 
 **Implements:** [O365TeamsChannelObject](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/O365TeamsChannelObject/index.md)
 

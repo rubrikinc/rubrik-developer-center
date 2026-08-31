@@ -1,6 +1,6 @@
 # ClusterGeolocationInput
 
-Cluster geolocation input.
+Cluster geolocation type.
 
 ## Fields
 

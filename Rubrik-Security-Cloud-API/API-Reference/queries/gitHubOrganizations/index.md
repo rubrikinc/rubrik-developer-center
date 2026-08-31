@@ -48,6 +48,7 @@ query GitHubOrganizations($queryType: QueryType!, $ancestorId: String!, $filter:
       rscPendingObjectPauseAssignment
       slaAssignment
       slaPauseStatus
+      zeusState
     }
     pageInfo {
       hasNextPage

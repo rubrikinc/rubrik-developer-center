@@ -1,6 +1,6 @@
 # allO365SubscriptionsAppTypeCounts
 
-Returns the total number of apps of each type, for each O365 org.
+Returns the total number of apps of each type for each O365 subscription, aggregated across all apps in the account.
 
 ## Returns
 

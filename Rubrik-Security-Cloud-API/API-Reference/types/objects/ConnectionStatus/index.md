@@ -15,6 +15,7 @@ Connection status details of a SaaS organization.
 
 **Referenced by**
 
+- [AnthropicOrg.connectionStatus](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AnthropicOrg/index.md)
 - [AtlassianSite.connectionStatus](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AtlassianSite/index.md)
 - [Dynamics365Organization.connectionStatus](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/Dynamics365Organization/index.md)
 - [GoogleWorkspaceOrg.connectionStatus](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/GoogleWorkspaceOrg/index.md)

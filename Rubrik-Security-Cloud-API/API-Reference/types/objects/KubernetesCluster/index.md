@@ -98,3 +98,4 @@ Kubernetes cluster.
 
 - [query: kubernetesCluster](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/kubernetesCluster/index.md)
 - [query: kubernetesClusters](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/kubernetesClusters/index.md) *(via connection)*
+- [query: kubernetesRecoverableClusters](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/kubernetesRecoverableClusters/index.md) *(via connection)*

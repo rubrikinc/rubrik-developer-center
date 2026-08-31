@@ -1,6 +1,6 @@
 # o365Sites
 
-List of sites in the O365Org.
+List of SharePoint sites in the O365Org. When exclude_child_sites is true, only direct child sites of the org are returned; otherwise all descendant sites are returned.
 
 ## Arguments
 
@@ -8,6 +8,8 @@ List of sites in the O365Org.
 | ---------------------- | -------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
 | first                  | Int                                                                                                                                    | Returns the first n elements from the list.                                                                                                 |
 | after                  | String                                                                                                                                 | Returns the elements in the list that occur after the specified cursor.                                                                     |
+| last                   | Int                                                                                                                                    | Returns the last n elements from the list.                                                                                                  |
+| before                 | String                                                                                                                                 | Returns the elements in the list that occur before the specified cursor.                                                                    |
 | sortBy                 | [HierarchySortByField](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/HierarchySortByField/index.md) | Sort hierarchy objects according to the hierarchy field.                                                                                    |
 | sortOrder              | [SortOrder](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/SortOrder/index.md)                       | Sorts the order of results.                                                                                                                 |
 | filter                 | \[[Filter](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/Filter/index.md)!\]                       | Hierarchy object filter.                                                                                                                    |

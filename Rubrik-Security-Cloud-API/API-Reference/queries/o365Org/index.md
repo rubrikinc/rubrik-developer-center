@@ -4,9 +4,9 @@ Details of the O365Org.
 
 ## Arguments
 
-| Argument         | Type                                                                                                      | Description                 |
-| ---------------- | --------------------------------------------------------------------------------------------------------- | --------------------------- |
-| fid *(required)* | [UUID](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/UUID/index.md)! | Rubrik UUID for the object. |
+| Argument         | Type                                                                                                      | Description                   |
+| ---------------- | --------------------------------------------------------------------------------------------------------- | ----------------------------- |
+| fid *(required)* | [UUID](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/UUID/index.md)! | FID of the O365 organization. |
 
 ## Returns
 

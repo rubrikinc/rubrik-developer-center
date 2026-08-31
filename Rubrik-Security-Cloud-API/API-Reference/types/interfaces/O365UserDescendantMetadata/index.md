@@ -1,6 +1,6 @@
 # O365UserDescendantMetadata
 
-*No description available.*
+Metadata shared by O365 user-descendant workloads.
 
 ## Fields
 

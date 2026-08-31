@@ -13,3 +13,4 @@ Specification for day selection for monthly snapshot schedule. You can choose on
 **Referenced by**
 
 - [MonthlySnapshotSchedule.daysOfMonth](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/MonthlySnapshotSchedule/index.md)
+- [YearlyDaySpecification.dayOfMonthSpecification](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/YearlyDaySpecification/index.md)

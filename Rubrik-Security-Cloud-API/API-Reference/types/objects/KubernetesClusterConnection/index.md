@@ -16,3 +16,4 @@ Paginated list of KubernetesCluster objects. Each page of the results includes a
 **Queries**
 
 - [query: kubernetesClusters](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/kubernetesClusters/index.md)
+- [query: kubernetesRecoverableClusters](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/kubernetesRecoverableClusters/index.md)

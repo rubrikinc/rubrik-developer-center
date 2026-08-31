@@ -27,4 +27,5 @@ UI status attributes.
 
 **Referenced by**
 
+- [RscpUpgradeStatus.uiStatusAttributes](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/RscpUpgradeStatus/index.md)
 - [UpgradeStatusV2.uiStatusAttributes](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/UpgradeStatusV2/index.md)

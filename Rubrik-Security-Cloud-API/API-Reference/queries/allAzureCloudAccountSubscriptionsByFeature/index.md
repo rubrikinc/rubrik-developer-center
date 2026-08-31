@@ -50,6 +50,11 @@ query AllAzureCloudAccountSubscriptionsByFeature($feature: CloudAccountFeature!,
         "id": "example-string",
         "name": "example-string",
         "nativeId": "example-string",
+        "app": {
+          "appName": "example-string",
+          "authType": "AZURE_AUTH_TYPE_NON_OAUTH",
+          "clientId": "example-string"
+        },
         "featureDetails": [
           {
             "customerFeatureId": "00000000-0000-0000-0000-000000000000",
@@ -62,13 +67,7 @@ query AllAzureCloudAccountSubscriptionsByFeature($feature: CloudAccountFeature!,
             ],
             "status": "CONNECTED"
           }
-        ],
-        "managementGroup": {
-          "customerManagementGroupId": "00000000-0000-0000-0000-000000000000",
-          "isAuthorized": true,
-          "name": "example-string",
-          "nativeId": "example-string"
-        }
+        ]
       }
     ]
   }

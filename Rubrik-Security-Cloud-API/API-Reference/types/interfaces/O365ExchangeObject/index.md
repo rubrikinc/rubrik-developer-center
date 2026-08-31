@@ -17,3 +17,5 @@ O365ExchangeObject is the GraphQL interface implemented by all Exchange-domain i
 - [O365ContactFolder](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/O365ContactFolder/index.md)
 - [O365Email](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/O365Email/index.md)
 - [O365Folder](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/O365Folder/index.md)
+- [O365TodoTask](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/O365TodoTask/index.md)
+- [O365TodoTaskFolder](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/O365TodoTaskFolder/index.md)

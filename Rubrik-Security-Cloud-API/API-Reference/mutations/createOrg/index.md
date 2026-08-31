@@ -40,7 +40,7 @@ mutation CreateOrg($input: CreateOrgInput!) {
             "objectIds": [
               "example-string"
             ],
-            "snappableType": "AUTH0_TENANT"
+            "snappableType": "ANTHROPIC_CHILD_ORG_SETTINGS"
           }
         ],
         "operation": "ACCESS_CDM_CLUSTER"
@@ -48,7 +48,7 @@ mutation CreateOrg($input: CreateOrgInput!) {
     ],
     "selfServicePermissions": [
       {
-        "inventoryWorkloadType": "AUTH0_TENANT",
+        "inventoryWorkloadType": "ANTHROPIC_CHILD_ORG_SETTINGS",
         "operations": [
           "ACCESS_CDM_CLUSTER"
         ]

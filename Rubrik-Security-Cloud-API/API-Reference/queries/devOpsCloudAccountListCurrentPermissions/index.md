@@ -41,6 +41,7 @@ query DevOpsCloudAccountListCurrentPermissions($input: DevOpsCloudAccountListCur
       ],
       "groupPermissions": [
         {
+          "feature": "ALL",
           "group": "ADVANCED_DIAGNOSTICS",
           "permissions": [
             "example-string"

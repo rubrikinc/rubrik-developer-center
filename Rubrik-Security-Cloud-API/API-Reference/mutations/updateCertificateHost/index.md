@@ -1,6 +1,6 @@
 # updateCertificateHost
 
-*No description available.*
+Update the certificate for a single host.
 
 ## Arguments
 

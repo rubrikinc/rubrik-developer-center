@@ -21,6 +21,7 @@ Paginated list of CdmSnapshotGroupBySummary objects. Each page of the results in
 - [ExchangeDatabase.snapshotGroupBySummary](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/ExchangeDatabase/index.md)
 - [FusionComputeVirtualMachine.snapshotGroupBySummary](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/FusionComputeVirtualMachine/index.md)
 - [HyperVVirtualMachine.snapshotGroupBySummary](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/HyperVVirtualMachine/index.md)
+- [HypervisorVirtualMachineV1.snapshotGroupBySummary](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/HypervisorVirtualMachineV1/index.md)
 - KosmosSnappableHierarchyObjectType.snapshotGroupBySummary
 - [KubernetesProtectionSet.snapshotGroupBySummary](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/KubernetesProtectionSet/index.md)
 - [KubernetesVirtualMachine.snapshotGroupBySummary](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/KubernetesVirtualMachine/index.md)
@@ -32,6 +33,7 @@ Paginated list of CdmSnapshotGroupBySummary objects. Each page of the results in
 - [MysqldbInstance.snapshotGroupBySummary](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/MysqldbInstance/index.md)
 - [NasFileset.snapshotGroupBySummary](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/NasFileset/index.md)
 - [NutanixVm.snapshotGroupBySummary](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/NutanixVm/index.md)
+- [OpenstackVirtualMachine.snapshotGroupBySummary](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/OpenstackVirtualMachine/index.md)
 - [OracleDataGuardGroup.snapshotGroupBySummary](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/OracleDataGuardGroup/index.md)
 - [OracleDatabase.snapshotGroupBySummary](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/OracleDatabase/index.md)
 - [PostgreSQLDbCluster.snapshotGroupBySummary](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/PostgreSQLDbCluster/index.md)
@@ -41,5 +43,6 @@ Paginated list of CdmSnapshotGroupBySummary objects. Each page of the results in
 - [SapHanaSystem.snapshotGroupBySummary](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/SapHanaSystem/index.md)
 - [ShareFileset.snapshotGroupBySummary](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/ShareFileset/index.md)
 - [VcdVapp.snapshotGroupBySummary](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/VcdVapp/index.md)
+- [VolumeGroup.snapshotGroupBySummary](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/VolumeGroup/index.md)
 - [VsphereVm.snapshotGroupBySummary](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/VsphereVm/index.md)
-- [WindowsFileset.snapshotGroupBySummary](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/WindowsFileset/index.md)
+- *…and 1 more*

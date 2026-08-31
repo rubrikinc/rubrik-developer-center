@@ -1,6 +1,6 @@
 # GenerateK8sManifestInput
 
-*No description available.*
+Input to generate the manifest for onboarding a Kubernetes cluster.
 
 ## Fields
 

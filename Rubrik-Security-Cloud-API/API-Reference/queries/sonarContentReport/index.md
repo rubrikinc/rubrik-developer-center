@@ -6,6 +6,10 @@ Returns groupBy results for SonarContentReport.
 
 | Argument                   | Type                                                                                                                                                      | Description                                                              |
 | -------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------ |
+| first                      | Int                                                                                                                                                       | Returns the first n elements from the list.                              |
+| after                      | String                                                                                                                                                    | Returns the elements in the list that occur after the specified cursor.  |
+| last                       | Int                                                                                                                                                       | Returns the last n elements from the list.                               |
+| before                     | String                                                                                                                                                    | Returns the elements in the list that occur before the specified cursor. |
 | groupBy *(required)*       | [DiscoveryContentReportGroupBy](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/DiscoveryContentReportGroupBy/index.md)! |                                                                          |
 | sortBy                     | [DiscoveryContentReportSortBy](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/DiscoveryContentReportSortBy/index.md)    |                                                                          |
 | sortOrder                  | [SortOrder](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/SortOrder/index.md)                                          | Sorts the order of results.                                              |
@@ -13,10 +17,6 @@ Returns groupBy results for SonarContentReport.
 | day *(required)*           | String!                                                                                                                                                   | Date in the format (YYYY-MM-DD).                                         |
 | timezone *(required)*      | String!                                                                                                                                                   | The timezone in which to display timestamps.                             |
 | workloadTypes *(required)* | \[[DataGovObjectType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/DataGovObjectType/index.md)!\]!                    | Types of workloads that can be used for filtering query results.         |
-| first                      | Int                                                                                                                                                       | Returns the first n elements from the list.                              |
-| after                      | String                                                                                                                                                    | Returns the elements in the list that occur after the specified cursor.  |
-| last                       | Int                                                                                                                                                       | Returns the last n elements from the list.                               |
-| before                     | String                                                                                                                                                    | Returns the elements in the list that occur before the specified cursor. |
 
 ## Returns
 

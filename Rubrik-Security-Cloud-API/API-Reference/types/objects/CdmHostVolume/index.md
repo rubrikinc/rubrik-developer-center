@@ -1,16 +1,16 @@
 # CdmHostVolume
 
-*No description available.*
+A storage volume on a Rubrik CDM physical host.
 
 ## Fields
 
 | Field          | Type                                                                                                     | Description                                          |
 | -------------- | -------------------------------------------------------------------------------------------------------- | ---------------------------------------------------- |
-| cdmId          | String!                                                                                                  |                                                      |
-| clusterUuid    | String!                                                                                                  |                                                      |
-| fileSystemType | String                                                                                                   |                                                      |
-| mountPoints    | [String!]!                                                                                               |                                                      |
-| size           | [Long](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/Long/index.md) |                                                      |
+| cdmId          | String!                                                                                                  | Rubrik CDM ID of this volume.                        |
+| clusterUuid    | String!                                                                                                  | UUID of the Rubrik cluster that owns this volume.    |
+| fileSystemType | String                                                                                                   | File system type of this volume.                     |
+| mountPoints    | [String!]!                                                                                               | Mount points of this volume on the host.             |
+| size           | [Long](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/Long/index.md) | Size of this volume, in bytes.                       |
 | volumeGroupId  | String                                                                                                   | ID of the volume group to which this volume belongs. |
 | volumeId       | String!                                                                                                  | Host volume's ID.                                    |
 

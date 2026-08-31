@@ -44,4 +44,4 @@ The replicated cross-account object information.
 - [FusionComputeDatastore.crossAccountReplicatedObjectInfos](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/FusionComputeDatastore/index.md)
 - [FusionComputeHost.crossAccountReplicatedObjectInfos](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/FusionComputeHost/index.md)
 - FusionComputeHostDescendant.crossAccountReplicatedObjectInfos
-- *…and 179 more*
+- *…and 199 more*

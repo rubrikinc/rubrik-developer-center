@@ -4,11 +4,12 @@ Removes a registered Rubrik cluster from the account.
 
 ## Arguments
 
-| Argument                 | Type                                                                                                      | Description                                             |
-| ------------------------ | --------------------------------------------------------------------------------------------------------- | ------------------------------------------------------- |
-| clusterUUID *(required)* | [UUID](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/UUID/index.md)! | UUID of the Rubrik cluster.                             |
-| isForce *(required)*     | Boolean!                                                                                                  | Whether to force the removal of the Rubrik cluster.     |
-| expireInDays             | [Long](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/Long/index.md)  | Number of days after which data from Rubrik is removed. |
+| Argument                 | Type                                                                                                      | Description                                                                                                                |
+| ------------------------ | --------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------- |
+| clusterUUID *(required)* | [UUID](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/UUID/index.md)! | UUID of the Rubrik cluster.                                                                                                |
+| isForce *(required)*     | Boolean!                                                                                                  | Whether to force the removal of the Rubrik cluster.                                                                        |
+| expireInDays             | [Long](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/Long/index.md)  | Number of days after which data from Rubrik is removed.                                                                    |
+| shouldDeleteRcvLocations | Boolean                                                                                                   | Whether to soft-delete the cluster's Rubrik Cloud Vault (RCV) locations before removal even if some lack an active reader. |
 
 ## Returns
 

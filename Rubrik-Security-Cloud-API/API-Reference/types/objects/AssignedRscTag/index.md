@@ -23,6 +23,7 @@ Details of an RSC tag.
 - [ActiveDirectoryDomainController.allTags](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/ActiveDirectoryDomainController/index.md)
 - ActiveDirectoryDomainDescendantType.allTags
 - ActiveDirectoryDomainPhysicalChildType.allTags
+- [AnthropicOrg.allTags](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AnthropicOrg/index.md)
 - [AtlassianSite.allTags](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AtlassianSite/index.md)
 - [AwsNativeAccount.allTags](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AwsNativeAccount/index.md)
 - AwsNativeAccountDescendantType.allTags
@@ -48,5 +49,4 @@ Details of an RSC tag.
 - [AzurePostgresFlexibleServer.allTags](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AzurePostgresFlexibleServer/index.md)
 - [AzureSqlDatabaseDb.allTags](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AzureSqlDatabaseDb/index.md)
 - [AzureSqlDatabaseServer.allTags](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AzureSqlDatabaseServer/index.md)
-- [AzureSqlManagedInstanceDatabase.allTags](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AzureSqlManagedInstanceDatabase/index.md)
-- *…and 285 more*
+- *…and 295 more*

@@ -41,7 +41,7 @@ mutation UpdateOrg($input: UpdateOrgInput!) {
             "objectIds": [
               "example-string"
             ],
-            "snappableType": "AUTH0_TENANT"
+            "snappableType": "ANTHROPIC_CHILD_ORG_SETTINGS"
           }
         ],
         "operation": "ACCESS_CDM_CLUSTER"
@@ -49,7 +49,7 @@ mutation UpdateOrg($input: UpdateOrgInput!) {
     ],
     "selfServicePermissions": [
       {
-        "inventoryWorkloadType": "AUTH0_TENANT",
+        "inventoryWorkloadType": "ANTHROPIC_CHILD_ORG_SETTINGS",
         "operations": [
           "ACCESS_CDM_CLUSTER"
         ]

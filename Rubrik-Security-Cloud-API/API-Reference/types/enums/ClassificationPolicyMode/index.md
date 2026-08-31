@@ -1,6 +1,6 @@
 # ClassificationPolicyMode
 
-*No description available.*
+The operating mode of a classification policy.
 
 ## Values
 

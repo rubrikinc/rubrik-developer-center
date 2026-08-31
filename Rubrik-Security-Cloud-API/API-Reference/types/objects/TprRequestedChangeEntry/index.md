@@ -16,7 +16,11 @@ Changed entry in a TPR request.
 
 - [CategorizedTprRequestedChangeEntry.entries](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/CategorizedTprRequestedChangeEntry/index.md)
 - [StandardTprReqChangesTemplate.entries](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/StandardTprReqChangesTemplate/index.md)
+- [UpdateTprPolicyDataMangementClusterReqChangesTemplate.isCdmEnforcementDisabled](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/UpdateTprPolicyDataMangementClusterReqChangesTemplate/index.md)
 - [UpdateTprPolicyDataMangementClusterReqChangesTemplate.quorumRequirement](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/UpdateTprPolicyDataMangementClusterReqChangesTemplate/index.md)
+- [UpdateTprPolicyDataMangementObjectReqChangesTemplate.isCdmEnforcementDisabled](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/UpdateTprPolicyDataMangementObjectReqChangesTemplate/index.md)
 - [UpdateTprPolicyDataMangementObjectReqChangesTemplate.quorumRequirement](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/UpdateTprPolicyDataMangementObjectReqChangesTemplate/index.md)
+- [UpdateTprPolicyDataMangementSlaReqChangesTemplate.isCdmEnforcementDisabled](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/UpdateTprPolicyDataMangementSlaReqChangesTemplate/index.md)
 - [UpdateTprPolicyDataMangementSlaReqChangesTemplate.quorumRequirement](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/UpdateTprPolicyDataMangementSlaReqChangesTemplate/index.md)
+- [UpdateTprPolicySystemConfigReqChangesTemplate.isCdmEnforcementDisabled](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/UpdateTprPolicySystemConfigReqChangesTemplate/index.md)
 - [UpdateTprPolicySystemConfigReqChangesTemplate.quorumRequirement](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/UpdateTprPolicySystemConfigReqChangesTemplate/index.md)

@@ -1,6 +1,6 @@
 # target
 
-*No description available.*
+GetTarget returns a single archival location in the V2 shape, with its encryption details and Cloud Direct immutability mode resolved.
 
 ## Arguments
 

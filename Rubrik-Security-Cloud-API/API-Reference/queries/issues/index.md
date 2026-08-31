@@ -6,11 +6,11 @@ Returns all issues filtered by status.
 
 | Argument            | Type                                                                                                                  | Description                                                              |
 | ------------------- | --------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------ |
-| status *(required)* | [IssueStatus](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/IssueStatus/index.md)! |                                                                          |
 | first               | Int                                                                                                                   | Returns the first n elements from the list.                              |
 | after               | String                                                                                                                | Returns the elements in the list that occur after the specified cursor.  |
 | last                | Int                                                                                                                   | Returns the last n elements from the list.                               |
 | before              | String                                                                                                                | Returns the elements in the list that occur before the specified cursor. |
+| status *(required)* | [IssueStatus](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/IssueStatus/index.md)! | Status of the issues to return.                                          |
 
 ## Returns
 

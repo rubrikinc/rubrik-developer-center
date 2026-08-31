@@ -26,7 +26,7 @@ mutation StartDisableAzureNativeSubscriptionProtectionJob($input: StartDisableAz
 ```json
 {
   "input": {
-    "azureNativeProtectionFeature": "AZ_CLOUD_DISCOVERY",
+    "azureNativeProtectionFeature": "AZURE_COSMOS_NOSQL",
     "azureSubscriptionRubrikId": "00000000-0000-0000-0000-000000000000",
     "shouldDeleteNativeSnapshots": true
   }

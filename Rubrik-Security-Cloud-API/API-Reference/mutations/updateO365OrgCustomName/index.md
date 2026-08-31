@@ -1,12 +1,12 @@
 # updateO365OrgCustomName
 
-Update the custom name for an O365 Organization.
+Updates the custom display name for an O365 organization.
 
 ## Arguments
 
-| Argument           | Type                                                                                                                                                     | Description                                  |
-| ------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------- |
-| input *(required)* | [UpdateO365OrgCustomNameInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/UpdateO365OrgCustomNameInput/index.md)! | Config for updating an O365 Org custom name. |
+| Argument           | Type                                                                                                                                                     | Description                                                          |
+| ------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------- |
+| input *(required)* | [UpdateO365OrgCustomNameInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/UpdateO365OrgCustomNameInput/index.md)! | Input for updating the custom display name for an O365 organization. |
 
 ## Returns
 

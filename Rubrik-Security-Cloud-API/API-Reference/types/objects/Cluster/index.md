@@ -39,6 +39,7 @@ A Rubrik CDM Cluster.
 | isClusterRemovalTprEnabled           | Boolean                                                                                                                                                                       | Specifies whether Quorum Authorization is enabled for cluster removal.                                                                   |
 | isHealthy                            | Boolean!                                                                                                                                                                      | Whether or not the cluster is healthy.                                                                                                   |
 | isTprEnabled                         | Boolean                                                                                                                                                                       | Indicates if TPR is enabled on the cluster.                                                                                              |
+| isTunnelEnabled                      | Boolean                                                                                                                                                                       | True if any node in this Rubrik cluster has a support tunnel open.                                                                       |
 | lambdaConfig                         | [GetLambdaConfigReply](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/GetLambdaConfigReply/index.md)                                      | Lambda configuration.                                                                                                                    |
 | lambdaFeatureHistory                 | [LambdaFeatureHistory](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/LambdaFeatureHistory/index.md)                                      | Lambda feature history.                                                                                                                  |
 | lastConnectionTime                   | [DateTime](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/DateTime/index.md)                                                              | The time the cluster was last connected.                                                                                                 |
@@ -48,7 +49,6 @@ A Rubrik CDM Cluster.
 | metricTimeSeries                     | \[[metricTimeSeries](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/metricTimeSeries/index.md)!\]!                                        | The metric time series of a cluster.                                                                                                     |
 | metricTimeSeriesNew                  | \[[ClusterMetricTimeSeriesNew](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/ClusterMetricTimeSeriesNew/index.md)!\]!                    | The metric time series of a cluster.                                                                                                     |
 | name                                 | String!                                                                                                                                                                       | The cluster name.                                                                                                                        |
-| noSqlWorkloadCount                   | Int!                                                                                                                                                                          | Total number of protected NoSQL workloads.                                                                                               |
 | passesConnectivityCheck              | Boolean                                                                                                                                                                       | Whether the global manager connectivity is healthy.                                                                                      |
 | pauseStatus                          | [ClusterPauseStatus](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/ClusterPauseStatus/index.md)                                            | Pause status of the cluster.                                                                                                             |
 | productType                          | [ClusterProductEnum](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/ClusterProductEnum/index.md)                                            | The cluster product type (e.g., CDM, DATOS, etc.).                                                                                       |
@@ -133,9 +133,6 @@ A Rubrik CDM Cluster.
 - [AgentDeploymentSettingsInfo.cluster](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AgentDeploymentSettingsInfo/index.md)
 - [AnomalyResult.cluster](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AnomalyResult/index.md)
 - [BackupThrottleSetting.cluster](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/BackupThrottleSetting/index.md)
-- [CassandraColumnFamily.cluster](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/CassandraColumnFamily/index.md)
-- [CassandraKeyspace.cluster](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/CassandraKeyspace/index.md)
-- [CassandraSource.cluster](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/CassandraSource/index.md)
 - [CdmGuestCredential.cluster](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/CdmGuestCredential/index.md)
 - CdmHierarchyObject.cluster
 - CdmHierarchySnappableNew.cluster
@@ -153,4 +150,7 @@ A Rubrik CDM Cluster.
 - CloudDirectHierarchyObject.cluster
 - CloudDirectHierarchyWorkload.cluster
 - [CloudDirectNasBucket.cluster](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/CloudDirectNasBucket/index.md)
-- *…and 274 more*
+- [CloudDirectNasExport.cluster](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/CloudDirectNasExport/index.md)
+- [CloudDirectNasNamespace.cluster](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/CloudDirectNasNamespace/index.md)
+- CloudDirectNasNamespaceDescendantType.cluster
+- *…and 288 more*

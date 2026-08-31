@@ -11,6 +11,7 @@ Platform-specific recovery specification.
 | awsEc2Instance | [AwsEc2InstanceRecoverySpec](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AwsEc2InstanceRecoverySpec/index.md) | AWS EC2 instance recovery specification.                   |
 | awsRdsInstance | [AwsRdsInstanceRecoverySpec](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AwsRdsInstanceRecoverySpec/index.md) | AWS RDS instance recovery specification.                   |
 | azureVm        | [AzureNativeVmRecoverySpec](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AzureNativeVmRecoverySpec/index.md)   | Azure native virtual machine recovery specification.       |
+| hypervVm       | [HypervVmRecoverySpec](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/HypervVmRecoverySpec/index.md)             | HyperV virtual machine recovery specification.             |
 | nutanixVm      | [NutanixVmRecoverySpec](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/NutanixVmRecoverySpec/index.md)           | Nutanix virtual machine recovery specification.            |
 | vmwareVm       | [VsphereVmRecoverySpec](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/VsphereVmRecoverySpec/index.md)           | VMware virtual machine recovery specification.             |
 

@@ -19,6 +19,7 @@ query ArchivalReaderInfo($input: GetArchivalReaderInfoReq!) {
   archivalReaderInfo(input: $input) {
     activeOwnerLocationIds
     activeReaderLocationIds
+    inactiveOwnerLocationIds
   }
 }
 ```
@@ -39,6 +40,9 @@ query ArchivalReaderInfo($input: GetArchivalReaderInfoReq!) {
         "example-string"
       ],
       "activeReaderLocationIds": [
+        "example-string"
+      ],
+      "inactiveOwnerLocationIds": [
         "example-string"
       ],
       "readerRefreshStatus": {

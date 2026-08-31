@@ -21,6 +21,7 @@ query MssqlHostConfiguration($input: MssqlHostConfigInput!) {
     cbtMaxMemoryUsageInMb
     cmdPipeBufferSizeInKb
     copyLogsToHostDuringLiveMount
+    disableStrictSyncForMssqlLiveMount
     enableDatabaseBatchSnapshots
     enableGroupFetch
     enableMssqlMultiNodeBackup
@@ -67,8 +68,8 @@ query MssqlHostConfiguration($input: MssqlHostConfigInput!) {
       "cbtMaxMemoryUsageInMb": 0,
       "cmdPipeBufferSizeInKb": 0,
       "copyLogsToHostDuringLiveMount": "HOST_CONFIGURATION_PROPERTY_ENABLED_DEFAULT",
-      "enableDatabaseBatchSnapshots": "HOST_CONFIGURATION_PROPERTY_ENABLED_DEFAULT",
-      "enableGroupFetch": "HOST_CONFIGURATION_PROPERTY_ENABLED_DEFAULT"
+      "disableStrictSyncForMssqlLiveMount": "HOST_CONFIGURATION_PROPERTY_ENABLED_DEFAULT",
+      "enableDatabaseBatchSnapshots": "HOST_CONFIGURATION_PROPERTY_ENABLED_DEFAULT"
     }
   }
 }

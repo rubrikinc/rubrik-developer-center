@@ -20,6 +20,8 @@ mutation StartAzureAdAppSetup($input: StartAzureAdAppSetupInput!) {
     appId
     csrfToken
     excessivePermissions
+    isExchangeAdminRoleAssigned
+    missingM365Permissions
     missingPermissions
     tenantCloudType
     warning
@@ -45,11 +47,13 @@ mutation StartAzureAdAppSetup($input: StartAzureAdAppSetupInput!) {
       "excessivePermissions": [
         "example-string"
       ],
-      "missingPermissions": [
+      "isExchangeAdminRoleAssigned": true,
+      "missingM365Permissions": [
         "example-string"
       ],
-      "tenantCloudType": "AZURECHINACLOUD",
-      "warning": "COMMERCIAL_TENANT_ON_RSC_FEDRAMP"
+      "missingPermissions": [
+        "example-string"
+      ]
     }
   }
 }

@@ -1,12 +1,12 @@
 # o365Onedrive
 
-Details for the OneDrive corresponding to the snappable ID.
+Details for the OneDrive corresponding to the workload ID.
 
 ## Arguments
 
-| Argument                  | Type                                                                                                      | Description               |
-| ------------------------- | --------------------------------------------------------------------------------------------------------- | ------------------------- |
-| snappableFid *(required)* | [UUID](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/UUID/index.md)! | The FID for the workload. |
+| Argument                  | Type                                                                                                      | Description                                 |
+| ------------------------- | --------------------------------------------------------------------------------------------------------- | ------------------------------------------- |
+| snappableFid *(required)* | [UUID](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/UUID/index.md)! | Rubrik UUID for the O365 OneDrive workload. |
 
 ## Returns
 

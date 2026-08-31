@@ -4,13 +4,14 @@ Identifying details for an Azure subscription used as a recovery plan location.
 
 ## Fields
 
-| Field          | Type                                                                                                                                             | Description                                                  |
-| -------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------ |
-| azureCloudType | [AzureCloudType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/AzureCloudType/index.md)!                      | Cloud partition the Azure subscription belongs to.           |
-| id             | String!                                                                                                                                          | Identifier of the Azure subscription.                        |
-| name           | String!                                                                                                                                          | Name of the Azure subscription.                              |
-| regionSpecs    | \[[AzureNativeRegionSpec](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AzureNativeRegionSpec/index.md)!\]! | Region specifications configured for the Azure subscription. |
-| status         | [AzureSubscriptionStatus](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/AzureSubscriptionStatus/index.md)!    | Protection status of the Azure subscription.                 |
+| Field          | Type                                                                                                                                             | Description                                                                                                                                 |
+| -------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------- |
+| azureCloudType | [AzureCloudType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/AzureCloudType/index.md)!                      | Cloud partition the Azure subscription belongs to.                                                                                          |
+| id             | String!                                                                                                                                          | Identifier of the Azure subscription.                                                                                                       |
+| name           | String!                                                                                                                                          | Name of the Azure subscription.                                                                                                             |
+| region         | [AzureNativeRegion](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/AzureNativeRegion/index.md)!                | The region this recovery plan location targets. This is distinct from regionSpecs, which lists every region the account is registered with. |
+| regionSpecs    | \[[AzureNativeRegionSpec](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AzureNativeRegionSpec/index.md)!\]! | Region specifications configured for the Azure subscription.                                                                                |
+| status         | [AzureSubscriptionStatus](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/AzureSubscriptionStatus/index.md)!    | Protection status of the Azure subscription.                                                                                                |
 
 ## Used By
 

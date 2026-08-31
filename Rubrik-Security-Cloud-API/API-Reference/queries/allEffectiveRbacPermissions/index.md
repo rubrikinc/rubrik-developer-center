@@ -39,7 +39,7 @@ query AllEffectiveRbacPermissions($roleId: String!) {
         "rbacObject": {
           "clusterId": "example-string",
           "objectId": "example-string",
-          "workloadHierarchy": "AUTH0_TENANT"
+          "workloadHierarchy": "ANTHROPIC_CHILD_ORG_SETTINGS"
         }
       }
     ]

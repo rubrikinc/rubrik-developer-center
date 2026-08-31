@@ -13,4 +13,3 @@ Kosmos workload Snapshot related app metadata for a Snapshot.
 **Referenced by**
 
 - [CdmSnapshot.mysqldbInstanceAppMetadata](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/CdmSnapshot/index.md)
-- [CdmSnapshot.postgresDbClusterAppMetadata](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/CdmSnapshot/index.md)

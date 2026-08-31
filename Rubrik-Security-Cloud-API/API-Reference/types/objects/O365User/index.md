@@ -1,8 +1,8 @@
 # O365User
 
-*No description available.*
+O365 User.
 
-**Implements:** [HierarchyObject](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/HierarchyObject/index.md), [PolarisHierarchyObject](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/PolarisHierarchyObject/index.md), [O365OrgDescendant](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/O365OrgDescendant/index.md)
+**Implements:** [O365OrgDescendant](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/O365OrgDescendant/index.md), [PolarisHierarchyObject](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/PolarisHierarchyObject/index.md), [HierarchyObject](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/HierarchyObject/index.md)
 
 ## Fields
 
@@ -16,9 +16,9 @@
 | effectiveRetentionSlaDomain     | [SlaDomain](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/SlaDomain/index.md)                                              | Effective retention of the SLA Domain of the hierarchy object.                      |
 | effectiveSlaDomain              | [SlaDomain](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/SlaDomain/index.md)!                                             | Effective SLA Domain of the hierarchy object.                                       |
 | effectiveSlaSourceObject        | [PathNode](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/PathNode/index.md)                                                   | Path node of the effective SLA Domain source.                                       |
-| emailAddress                    | String                                                                                                                                                             |                                                                                     |
+| emailAddress                    | String                                                                                                                                                             | The email address of the O365 user.                                                 |
 | id                              | [UUID](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/UUID/index.md)!                                                          | ID of the hierarchy object.                                                         |
-| isRelic                         | Boolean!                                                                                                                                                           |                                                                                     |
+| isRelic                         | Boolean!                                                                                                                                                           | Specifies whether the O365 user is a relic.                                         |
 | logicalPath                     | \[[PathNode](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/PathNode/index.md)!\]!                                             | Sequential list of the logical ancestors of this object.                            |
 | name                            | String!                                                                                                                                                            | Name of the hierarchy object.                                                       |
 | numWorkloadDescendants          | Int!                                                                                                                                                               | Number of descendant workloads of this object.                                      |

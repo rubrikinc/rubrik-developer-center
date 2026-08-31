@@ -28,5 +28,7 @@ Paginated list of CdmHierarchyObject objects with additional pagination informat
 - [CdmInventorySubHierarchyRoot.childConnection](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/CdmInventorySubHierarchyRoot/index.md)
 - [CdmInventorySubHierarchyRoot.descendantConnection](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/CdmInventorySubHierarchyRoot/index.md)
 - [CdmInventorySubHierarchyRoot.topLevelDescendantConnection](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/CdmInventorySubHierarchyRoot/index.md)
+- [HypervisorEnvironmentV1.descendantConnection](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/HypervisorEnvironmentV1/index.md)
+- [HypervisorEnvironmentV1.physicalChildConnection](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/HypervisorEnvironmentV1/index.md)
 - [NutanixCategoryValue.nutanixVms](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/NutanixCategoryValue/index.md)
 - [NutanixPrismCentral.nutanixClusters](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/NutanixPrismCentral/index.md)

@@ -4,26 +4,26 @@
 
 ## Fields
 
-| Field                | Type                                                                                                                                         | Description |
-| -------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- | ----------- |
-| analyzerGroupResults | \[[AnalyzerGroupResult](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AnalyzerGroupResult/index.md)!\]! |             |
-| analyzerResults      | \[[AnalyzerResult](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AnalyzerResult/index.md)!\]!           |             |
-| cluster              | [Cluster](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/Cluster/index.md)!                              |             |
-| crawlId              | String!                                                                                                                                      |             |
-| endTime              | [Long](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/Long/index.md)!                                    |             |
-| error                | String!                                                                                                                                      |             |
-| fileResultConnection | [FileResultConnection](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/FileResultConnection/index.md)!    |             |
-| filesAnalyzeable     | [Long](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/Long/index.md)!                                    |             |
-| filesAnalyzed        | [Long](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/Long/index.md)!                                    |             |
-| filesTotal           | [Long](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/Long/index.md)!                                    |             |
-| filesWithHits        | [Long](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/Long/index.md)!                                    |             |
-| progress             | Float!                                                                                                                                       |             |
-| snappable            | [HierarchyObject](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/HierarchyObject/index.md)!           |             |
-| snapshotFid          | String!                                                                                                                                      |             |
-| snapshotTime         | [Long](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/Long/index.md)!                                    |             |
-| startTime            | [Long](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/Long/index.md)!                                    |             |
-| status               | [SnappableCrawlStatus](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/SnappableCrawlStatus/index.md)!      |             |
-| totalHits            | Int!                                                                                                                                         |             |
+| Field                | Type                                                                                                                                         | Description                                                       |
+| -------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------- |
+| analyzerGroupResults | \[[AnalyzerGroupResult](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AnalyzerGroupResult/index.md)!\]! |                                                                   |
+| analyzerResults      | \[[AnalyzerResult](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AnalyzerResult/index.md)!\]!           |                                                                   |
+| cluster              | [Cluster](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/Cluster/index.md)!                              | The cluster that ran this crawl object's scan.                    |
+| crawlId              | String!                                                                                                                                      |                                                                   |
+| endTime              | [Long](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/Long/index.md)!                                    |                                                                   |
+| error                | String!                                                                                                                                      |                                                                   |
+| fileResultConnection | [FileResultConnection](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/FileResultConnection/index.md)!    | Browses the file classification results within this crawl object. |
+| filesAnalyzeable     | [Long](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/Long/index.md)!                                    |                                                                   |
+| filesAnalyzed        | [Long](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/Long/index.md)!                                    |                                                                   |
+| filesTotal           | [Long](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/Long/index.md)!                                    |                                                                   |
+| filesWithHits        | [Long](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/Long/index.md)!                                    |                                                                   |
+| progress             | Float!                                                                                                                                       |                                                                   |
+| snappable            | [HierarchyObject](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/HierarchyObject/index.md)!           | The hierarchy object this crawl object scanned.                   |
+| snapshotFid          | String!                                                                                                                                      |                                                                   |
+| snapshotTime         | [Long](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/Long/index.md)!                                    |                                                                   |
+| startTime            | [Long](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/Long/index.md)!                                    |                                                                   |
+| status               | [SnappableCrawlStatus](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/SnappableCrawlStatus/index.md)!      |                                                                   |
+| totalHits            | Int!                                                                                                                                         |                                                                   |
 
 ## Field Arguments
 

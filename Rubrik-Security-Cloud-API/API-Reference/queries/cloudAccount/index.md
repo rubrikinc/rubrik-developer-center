@@ -1,6 +1,6 @@
 # cloudAccount
 
-*No description available.*
+Get cloud account details for a given cloud account ID.
 
 ## Arguments
 

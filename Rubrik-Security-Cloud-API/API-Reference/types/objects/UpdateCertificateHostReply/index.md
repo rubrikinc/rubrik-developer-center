@@ -1,12 +1,12 @@
 # UpdateCertificateHostReply
 
-Reply Object for UpdateCertificateHost.
+Response for the update-certificate-host operation.
 
 ## Fields
 
-| Field  | Type                                                                                                                 | Description |
-| ------ | -------------------------------------------------------------------------------------------------------------------- | ----------- |
-| output | [HostDetail](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/HostDetail/index.md) |             |
+| Field  | Type                                                                                                                 | Description           |
+| ------ | -------------------------------------------------------------------------------------------------------------------- | --------------------- |
+| output | [HostDetail](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/HostDetail/index.md) | Updated host details. |
 
 ## Used By
 

@@ -1,6 +1,6 @@
 # RemoveNodeForReplacementReply
 
-Asynchronous reply for a submitted removal job.
+Reply for a node removal job submitted for replacement.
 
 ## Fields
 

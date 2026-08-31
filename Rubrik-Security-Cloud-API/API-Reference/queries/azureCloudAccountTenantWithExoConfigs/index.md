@@ -60,6 +60,13 @@ query AzureCloudAccountTenantWithExoConfigs($tenantId: UUID!, $feature: CloudAcc
       "domainName": "example-string",
       "entraIdGroupId": "example-string",
       "isAppRubrikManaged": true,
+      "apps": [
+        {
+          "appName": "example-string",
+          "authType": "AZURE_AUTH_TYPE_NON_OAUTH",
+          "clientId": "example-string"
+        }
+      ],
       "subscriptions": [
         {
           "azureSubscriptionNativeId": "example-string",

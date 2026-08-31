@@ -21,13 +21,16 @@ query AzureAdDirectory($workloadFid: UUID!) {
     appOwner
     authorizedOperations
     directoryId
+    doesEventHubIngestionRequireAzureSignIn
     domainName
+    eventHubConnectionStatus
     exoHostType
     exocomputeId
     firstDeviceSnapshotTime
     firstScopeSnapshotTime
     firstZeusSnapshotTime
     id
+    isEventHubIngestionEnabled
     isIntuneEnabled
     isJitEnabled
     isProvisioned
@@ -57,6 +60,7 @@ query AzureAdDirectory($workloadFid: UUID!) {
     latestSnapshotTime
     latestTermsOfUseCount
     latestUserCount
+    m365AccessRecoveryState
     migratedFromColossus
     name
     numWorkloadDescendants
@@ -88,8 +92,8 @@ query AzureAdDirectory($workloadFid: UUID!) {
         "ACCESS_CDM_CLUSTER"
       ],
       "directoryId": "example-string",
+      "doesEventHubIngestionRequireAzureSignIn": true,
       "domainName": "example-string",
-      "exoHostType": "CUSTOMER_HOST",
       "allOrgs": [
         {
           "allUrls": [

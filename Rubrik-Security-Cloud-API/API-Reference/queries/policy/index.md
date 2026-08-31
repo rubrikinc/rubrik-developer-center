@@ -6,7 +6,7 @@ Returns detailed policy information.
 
 | Argument                  | Type                                                                                                                                   | Description                                                              |
 | ------------------------- | -------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------ |
-| policyId *(required)*     | String!                                                                                                                                |                                                                          |
+| policyId *(required)*     | String!                                                                                                                                | Identifier of the classification policy.                                 |
 | workloadTypes             | \[[DataGovObjectType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/DataGovObjectType/index.md)!\]  | Types of workloads used for filtering the query results.                 |
 | sortBy                    | [PolicyDetailsSortBy](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/PolicyDetailsSortBy/index.md)   | Name of the column to sort result by.                                    |
 | sortOrder                 | [SortOrder](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/SortOrder/index.md)                       | Sorts the order of results.                                              |
