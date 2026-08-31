@@ -4,9 +4,9 @@ Send notification when the user clicks on the Get License button.
 
 ## Arguments
 
-| Argument | Type                                                                                                                                                        | Description                                       |
-| -------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------- |
-| input    | [NotificationForGetLicenseInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/NotificationForGetLicenseInput/index.md) | Request type for receiving license notifications. |
+| Argument | Type                                                                                                                                                        | Description                                      |
+| -------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------ |
+| input    | [NotificationForGetLicenseInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/NotificationForGetLicenseInput/index.md) | Details of the get-license notification to send. |
 
 ## Returns
 

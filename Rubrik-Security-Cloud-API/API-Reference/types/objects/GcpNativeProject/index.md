@@ -28,7 +28,7 @@ Represents a GCP project.
 | logicalPath                     | \[[PathNode](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/PathNode/index.md)!\]!                                                                | Sequential list of the logical ancestors of this object.                            |
 | name                            | String!                                                                                                                                                                               | Name of the hierarchy object.                                                       |
 | nativeId                        | String!                                                                                                                                                                               | Native id of the GCP project.                                                       |
-| nativeName                      | String!                                                                                                                                                                               | Native name of the GCP project.                                                     |
+| nativeName                      | String!                                                                                                                                                                               | GCP Native name of the object.                                                      |
 | numWorkloadDescendants          | Int!                                                                                                                                                                                  | Number of descendant workloads of this object.                                      |
 | objectBackupWindow              | [ObjectBackupWindowStatus](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/ObjectBackupWindowStatus/index.md)                                      | Object-level backup window status of the hierarchy object.                          |
 | objectPauseStatus               | [ObjectPauseStatus](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/ObjectPauseStatus/index.md)                                                    | Pause status of the hierarchy object.                                               |
@@ -80,6 +80,7 @@ Represents a GCP project.
 **Referenced by**
 
 - [GcpAlloyDbCluster.gcpProject](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/GcpAlloyDbCluster/index.md)
+- [GcpBigQueryDataset.gcpProject](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/GcpBigQueryDataset/index.md)
 - [GcpCloudSqlInstance.gcpProject](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/GcpCloudSqlInstance/index.md)
 - [GcpNativeDisk.gcpNativeProject](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/GcpNativeDisk/index.md)
 - [GcpNativeDisk.gcpProject](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/GcpNativeDisk/index.md)

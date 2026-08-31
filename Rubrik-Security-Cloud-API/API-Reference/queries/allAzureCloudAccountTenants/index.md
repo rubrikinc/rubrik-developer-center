@@ -56,6 +56,13 @@ query AllAzureCloudAccountTenants($feature: CloudAccountFeature!, $includeSubscr
         "cloudType": "AZURECHINACLOUD",
         "domainName": "example-string",
         "entraIdGroupId": "example-string",
+        "apps": [
+          {
+            "appName": "example-string",
+            "authType": "AZURE_AUTH_TYPE_NON_OAUTH",
+            "clientId": "example-string"
+          }
+        ],
         "subscriptions": [
           {
             "azureLocalClusterCount": 0,

@@ -1,20 +1,22 @@
 # browseSharepointDrive
 
-Browse SharePoint drive files and folders.
+BrowseSharepointDriveFolderItems returns the contents (folders and files) of a SharePoint Drive folder within a snapshot.
 
 ## Arguments
 
-| Argument                    | Type                                                                                                                                           | Description                                                             |
-| --------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------- |
-| first                       | Int                                                                                                                                            | Returns the first n elements from the list.                             |
-| after                       | String                                                                                                                                         | Returns the elements in the list that occur after the specified cursor. |
-| snappableFid *(required)*   | [UUID](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/UUID/index.md)!                                      | The FID for the workload.                                               |
-| snapshotFid *(required)*    | [UUID](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/UUID/index.md)!                                      | The ID of the snapshot.                                                 |
-| folderId                    | String                                                                                                                                         |                                                                         |
-| sharepointDriveSearchFilter | [OnedriveSearchFilter](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/OnedriveSearchFilter/index.md)        |                                                                         |
-| orgId *(required)*          | [UUID](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/UUID/index.md)!                                      | Org UUID.                                                               |
-| siteChildId                 | String                                                                                                                                         | The site child ID for SharePoint descendant objects.                    |
-| siteChildType               | [SharePointDescendantType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/SharePointDescendantType/index.md) | The site child type for SharePoint descendant objects.                  |
+| Argument                    | Type                                                                                                                                           | Description                                                              |
+| --------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------ |
+| first                       | Int                                                                                                                                            | Returns the first n elements from the list.                              |
+| after                       | String                                                                                                                                         | Returns the elements in the list that occur after the specified cursor.  |
+| last                        | Int                                                                                                                                            | Returns the last n elements from the list.                               |
+| before                      | String                                                                                                                                         | Returns the elements in the list that occur before the specified cursor. |
+| snappableFid *(required)*   | [UUID](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/UUID/index.md)!                                      | The unique identifier for the SharePoint Drive workload.                 |
+| snapshotFid *(required)*    | [UUID](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/UUID/index.md)!                                      | The ID of the snapshot.                                                  |
+| orgId *(required)*          | [UUID](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/UUID/index.md)!                                      | Org UUID.                                                                |
+| folderId                    | String                                                                                                                                         | The folder to browse. Empty means the drive root.                        |
+| sharepointDriveSearchFilter | [OnedriveSearchFilter](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/OnedriveSearchFilter/index.md)        | Optional OneDrive-compatible search filter.                              |
+| siteChildId                 | String                                                                                                                                         | Optional sub-site ID for a library or list within the SharePoint site.   |
+| siteChildType               | [SharePointDescendantType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/SharePointDescendantType/index.md) | Optional SharePoint descendant type; defaults to LIBRARY.                |
 
 ## Returns
 

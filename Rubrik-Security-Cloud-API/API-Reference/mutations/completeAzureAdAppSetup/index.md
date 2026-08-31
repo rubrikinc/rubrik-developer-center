@@ -25,8 +25,7 @@ mutation CompleteAzureAdAppSetup($input: CompleteAzureAdAppSetupInput!) {
 ```json
 {
   "input": {
-    "domainName": "example-string",
-    "stateToken": "example-string"
+    "domainName": "example-string"
   }
 }
 ```

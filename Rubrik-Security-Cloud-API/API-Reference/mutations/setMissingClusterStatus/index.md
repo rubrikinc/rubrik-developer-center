@@ -1,12 +1,12 @@
 # setMissingClusterStatus
 
-Update missing cluster connection status.
+Updates the connection status of a missing cluster.
 
 ## Arguments
 
-| Argument           | Type                                                                                                                                                     | Description                                        |
-| ------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------- |
-| input *(required)* | [SetMissingClusterStatusInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/SetMissingClusterStatusInput/index.md)! | Input required for setting missing cluster status. |
+| Argument           | Type                                                                                                                                                     | Description                    |
+| ------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------ |
+| input *(required)* | [SetMissingClusterStatusInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/SetMissingClusterStatusInput/index.md)! | Missing cluster status to set. |
 
 ## Returns
 

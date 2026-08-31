@@ -27,7 +27,7 @@ mutation O365PdlGroups($input: O365PdlGroupsInput!) {
     "pdlAndWorkloadPairs": [
       {
         "pdl": "example-string",
-        "workload": "AUTH0_TENANT"
+        "workload": "ANTHROPIC_CHILD_ORG_SETTINGS"
       }
     ]
   }

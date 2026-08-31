@@ -1,6 +1,6 @@
 # getOrCreateByokAzureApp
 
-Get or create an Azure BYOK (Bring Your Own Key) application.
+Gets or creates the per-account Rubrik SaaS Azure application used for Bring Your Own Key (BYOK) scenarios.
 
 ## Returns
 

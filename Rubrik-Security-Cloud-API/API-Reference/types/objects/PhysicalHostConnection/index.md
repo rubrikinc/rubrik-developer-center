@@ -16,7 +16,3 @@ Paginated list of PhysicalHost objects. Each page of the results includes at mos
 **Queries**
 
 - [query: physicalHosts](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/physicalHosts/index.md)
-
-**Referenced by**
-
-- [MongoSource.dataHosts](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/MongoSource/index.md)

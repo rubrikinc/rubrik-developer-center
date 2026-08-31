@@ -13,6 +13,7 @@ SLA Domain name and ID.
 
 **Referenced by**
 
+- [AnthropicOrg.rscNativeObjectPendingSla](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AnthropicOrg/index.md)
 - [AtlassianSite.rscNativeObjectPendingSla](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AtlassianSite/index.md)
 - [AwsNativeAccount.rscNativeObjectPendingSla](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AwsNativeAccount/index.md)
 - AwsNativeAccountDescendantType.rscNativeObjectPendingSla
@@ -40,7 +41,6 @@ SLA Domain name and ID.
 - [AzureSqlManagedInstanceDatabase.rscNativeObjectPendingSla](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AzureSqlManagedInstanceDatabase/index.md)
 - [AzureSqlManagedInstanceServer.rscNativeObjectPendingSla](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AzureSqlManagedInstanceServer/index.md)
 - [AzureStorageAccount.rscNativeObjectPendingSla](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AzureStorageAccount/index.md)
-- [CassandraColumnFamily.rscNativeObjectPendingSla](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/CassandraColumnFamily/index.md)
-- [CassandraKeyspace.rscNativeObjectPendingSla](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/CassandraKeyspace/index.md)
-- CassandraKeyspaceDescendantType.rscNativeObjectPendingSla
-- *…and 54 more*
+- [CloudNativeTagRule.rscNativeObjectPendingSla](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/CloudNativeTagRule/index.md)
+- [CloudNativeTagRuleHierarchy.rscNativeObjectPendingSla](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/CloudNativeTagRuleHierarchy/index.md)
+- *…and 43 more*

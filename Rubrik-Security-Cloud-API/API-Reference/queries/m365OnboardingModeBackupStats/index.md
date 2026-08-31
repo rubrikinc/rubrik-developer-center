@@ -4,11 +4,12 @@ Returns the backup statistics of an M365 organization product in onboarding mode
 
 ## Arguments
 
-| Argument                           | Type                                                                                                                                              | Description                       |
-| ---------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------- |
-| orgId *(required)*                 | [UUID](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/UUID/index.md)!                                         | Org UUID.                         |
-| dashboardWorkloadType *(required)* | [M365DashboardWorkloadType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/M365DashboardWorkloadType/index.md)! | Workload type for M365 dashboard. |
-| backupStatsTimeRange *(required)*  | [BackupStatsTimeRange](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/BackupStatsTimeRange/index.md)!           | Time range for backup statistics. |
+| Argument                           | Type                                                                                                                                               | Description                                                                          |
+| ---------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------ |
+| orgId *(required)*                 | [UUID](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/UUID/index.md)!                                          | Org UUID.                                                                            |
+| dashboardWorkloadType *(required)* | [M365DashboardWorkloadType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/M365DashboardWorkloadType/index.md)!  | Workload type for M365 dashboard.                                                    |
+| backupStatsTimeRange *(required)*  | [BackupStatsTimeRange](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/BackupStatsTimeRange/index.md)!            | Time range for backup statistics.                                                    |
+| operationMode                      | [M365DashboardOperationMode](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/M365DashboardOperationMode/index.md) | Operation mode to scope the statistics to. Defaults to onboarding mode when omitted. |
 
 ## Returns
 

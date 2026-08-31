@@ -12,7 +12,7 @@ List of GCP disks.
 | before      | String                                                                                                                                       | Returns the elements in the list that occur before the specified cursor. |
 | sortBy      | [GcpNativeDiskSortFields](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/GcpNativeDiskSortFields/index.md) | Sort fields for list of GCP disks.                                       |
 | sortOrder   | [SortOrder](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/SortOrder/index.md)                             | Sorts the order of results.                                              |
-| diskFilters | [GcpNativeDiskFilters](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/GcpNativeDiskFilters/index.md)      |                                                                          |
+| diskFilters | [GcpNativeDiskFilters](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/GcpNativeDiskFilters/index.md)      | Filters for list of GCP disks.                                           |
 
 ## Returns
 
@@ -32,6 +32,7 @@ query {
       fileIndexingStatus
       id
       isExocomputeConfigured
+      isProtectionOnboarded
       isRelic
       kmsKey
       name

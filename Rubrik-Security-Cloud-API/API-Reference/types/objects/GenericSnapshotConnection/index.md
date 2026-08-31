@@ -35,6 +35,7 @@ Paginated list of GenericSnapshot objects with additional pagination information
 - [AzureSqlManagedInstanceDatabase.workloadSnapshotConnection](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AzureSqlManagedInstanceDatabase/index.md)
 - [AzureStorageAccount.workloadSnapshotConnection](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AzureStorageAccount/index.md)
 - [GcpAlloyDbCluster.workloadSnapshotConnection](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/GcpAlloyDbCluster/index.md)
+- [GcpBigQueryDataset.workloadSnapshotConnection](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/GcpBigQueryDataset/index.md)
 - [GcpCloudSqlInstance.workloadSnapshotConnection](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/GcpCloudSqlInstance/index.md)
 - [GcpNativeDisk.workloadSnapshotConnection](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/GcpNativeDisk/index.md)
 - [GcpNativeGceInstance.workloadSnapshotConnection](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/GcpNativeGceInstance/index.md)
@@ -49,5 +50,4 @@ Paginated list of GenericSnapshot objects with additional pagination information
 - MicrosoftGroup.workloadSnapshotConnection
 - MicrosoftMailbox.workloadSnapshotConnection
 - MicrosoftOnedrive.workloadSnapshotConnection
-- MicrosoftOrg.workloadSnapshotConnection
-- *…and 13 more*
+- *…and 14 more*

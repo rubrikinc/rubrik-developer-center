@@ -1,6 +1,6 @@
 # searchHost
 
-*No description available.*
+Search a host's file or path index.
 
 ## Arguments
 

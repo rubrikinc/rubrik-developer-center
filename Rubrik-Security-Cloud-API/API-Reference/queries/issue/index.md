@@ -4,9 +4,9 @@ Returns details of one issue.
 
 ## Arguments
 
-| Argument             | Type    | Description |
-| -------------------- | ------- | ----------- |
-| issueId *(required)* | String! |             |
+| Argument             | Type    | Description                                         |
+| -------------------- | ------- | --------------------------------------------------- |
+| issueId *(required)* | String! | Identifier of the issue whose details are returned. |
 
 ## Returns
 

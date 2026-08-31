@@ -163,6 +163,7 @@ Supported in v5.0+
 - [mutation: filesetDownloadSnapshotFiles](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/filesetDownloadSnapshotFiles/index.md)
 - [mutation: filesetDownloadSnapshotFilesFromArchivalLocation](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/filesetDownloadSnapshotFilesFromArchivalLocation/index.md)
 - [mutation: filesetExportSnapshotFiles](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/filesetExportSnapshotFiles/index.md)
+- [mutation: filesetExportSnapshotFilesFromArchivalLocation](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/filesetExportSnapshotFilesFromArchivalLocation/index.md)
 - [mutation: filesetRecoverFiles](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/filesetRecoverFiles/index.md)
 - [mutation: filesetRecoverFilesFromArchivalLocation](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/filesetRecoverFilesFromArchivalLocation/index.md)
 - [mutation: generateFilesetBackupReport](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/generateFilesetBackupReport/index.md)

@@ -33,6 +33,7 @@ query {
       totalCapacity
       totalUsedStorage
       unprotectedObjectsStorage
+      version
     }
     pageInfo {
       hasNextPage

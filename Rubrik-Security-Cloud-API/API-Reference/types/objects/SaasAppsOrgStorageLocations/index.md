@@ -12,4 +12,5 @@ Storage locations details for a SaaS organization.
 
 **Referenced by**
 
+- [AnthropicOrg.storageRegions](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AnthropicOrg/index.md)
 - [GoogleWorkspaceOrg.storageRegions](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/GoogleWorkspaceOrg/index.md)

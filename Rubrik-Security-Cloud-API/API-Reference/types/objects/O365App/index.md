@@ -1,6 +1,6 @@
 # O365App
 
-*No description available.*
+Configuration for a Microsoft 365 App.
 
 **Implements:** [O365AppObject](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/O365AppObject/index.md)
 

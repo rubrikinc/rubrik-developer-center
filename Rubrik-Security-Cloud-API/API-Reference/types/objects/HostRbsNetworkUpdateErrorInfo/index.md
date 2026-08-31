@@ -4,10 +4,10 @@ Error information for a host RBS network throttle update.
 
 ## Fields
 
-| Field                       | Type                                                                                                                             | Description                                      |
-| --------------------------- | -------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------ |
-| hostId                      | String!                                                                                                                          | ID of the host that failed to update.            |
-| networkThrottleUpdateStatus | [RequestErrorInfo](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/RequestErrorInfo/index.md) | Status message describing why the update failed. |
+| Field                       | Type                                                                                                                             | Description                                                |
+| --------------------------- | -------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------- |
+| hostId                      | String!                                                                                                                          | Required. ID of the host that failed to update.            |
+| networkThrottleUpdateStatus | [RequestErrorInfo](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/RequestErrorInfo/index.md) | Required. Status message describing why the update failed. |
 
 ## Used By
 

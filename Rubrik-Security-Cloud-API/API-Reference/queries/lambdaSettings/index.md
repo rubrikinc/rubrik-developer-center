@@ -1,6 +1,6 @@
 # lambdaSettings
 
-*No description available.*
+Returns the anomaly detection settings for the account.
 
 ## Returns
 

@@ -7,6 +7,7 @@ Inventory Card options that the user can select as a workload.
 | Value                          | Description                                       |
 | ------------------------------ | ------------------------------------------------- |
 | AHV_VMS_CDM                    | Inventory Card is AHV VMS.                        |
+| ANTHROPIC                      | Inventory card is Anthropic.                      |
 | ATLASSIAN                      | Inventory card is Atlassian.                      |
 | AWS_DYNAMODB                   | Inventory Card is AWS DynamoDB.                   |
 | AWS_EC2                        | Inventory Card is AWS EC2.                        |
@@ -34,6 +35,7 @@ Inventory Card options that the user can select as a workload.
 | HYPERV                         | Inventory Card is HyperV.                         |
 | HYPERV_VMS_CDM                 | Inventory Card is HyperV CDM.                     |
 | INFORMIX                       | Inventory card is Informix.                       |
+| IRISDB                         | Inventory card is IRIS DB.                        |
 | KUBERNETES                     | Inventory Card is Kubernetes.                     |
 | KUBERNETES_V2                  | Inventory Card is Kubernetes V2.                  |
 | LINUX_UNIX_FILESETS            | Inventory Card is Linux Filesets.                 |

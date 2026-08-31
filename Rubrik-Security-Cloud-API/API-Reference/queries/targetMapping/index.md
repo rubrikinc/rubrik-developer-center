@@ -1,6 +1,6 @@
 # targetMapping
 
-*No description available.*
+GetTargetMapping returns a single archival group (target mapping) in the V2 shape.
 
 ## Arguments
 

@@ -26,16 +26,10 @@ mutation StartExportRdsInstanceJob($input: StartExportRdsInstanceJobInput!) {
 ```json
 {
   "input": {
-    "dbInstanceClass": "DB_M1_LARGE",
-    "dbInstanceName": "example-string",
     "destinationAwsNativeAccountId": "example-string",
     "destinationRegionNativeId": "AF_SOUTH_1",
-    "isMultiAz": true,
     "isPointInTime": true,
-    "isPubliclyAccessible": true,
-    "port": 0,
-    "rdsInstanceId": "00000000-0000-0000-0000-000000000000",
-    "shouldExportTags": true
+    "rdsInstanceId": "00000000-0000-0000-0000-000000000000"
   }
 }
 ```

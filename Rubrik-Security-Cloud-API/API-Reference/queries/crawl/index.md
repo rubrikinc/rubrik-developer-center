@@ -4,9 +4,9 @@ Returns details for one crawl.
 
 ## Arguments
 
-| Argument             | Type    | Description |
-| -------------------- | ------- | ----------- |
-| crawlId *(required)* | String! |             |
+| Argument             | Type    | Description                        |
+| -------------------- | ------- | ---------------------------------- |
+| crawlId *(required)* | String! | Identifier of the crawl to return. |
 
 ## Returns
 
@@ -17,6 +17,7 @@ Returns details for one crawl.
 ```graphql
 query Crawl($crawlId: String!) {
   crawl(crawlId: $crawlId) {
+    dataCategoryIds
     endTime
     failedObjectCount
     filesAnalyzeable
@@ -43,12 +44,14 @@ query Crawl($crawlId: String!) {
 {
   "data": {
     "crawl": {
+      "dataCategoryIds": [
+        "example-string"
+      ],
       "endTime": 0,
       "failedObjectCount": 0,
       "filesAnalyzeable": 0,
       "filesAnalyzed": 0,
       "filesTotal": 0,
-      "filesWithHits": 0,
       "analyzerGroupResults": [
         {}
       ],

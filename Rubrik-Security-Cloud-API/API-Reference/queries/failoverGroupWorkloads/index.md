@@ -29,6 +29,8 @@ query FailoverGroupWorkloads($failoverGroupId: UUID!) {
       counterpartIds
       hostIds
       hostNames
+      location
+      locationId
       managedObjectType
       name
       primaryClusterUuid
@@ -67,9 +69,9 @@ query FailoverGroupWorkloads($failoverGroupId: UUID!) {
             "hostNames": [
               "example-string"
             ],
-            "managedObjectType": "ACTIVE_DIRECTORY_DOMAIN",
-            "name": "example-string",
-            "primaryClusterUuid": "00000000-0000-0000-0000-000000000000"
+            "location": "example-string",
+            "locationId": "example-string",
+            "managedObjectType": "ACTIVE_DIRECTORY_DOMAIN"
           }
         ]
       ],

@@ -1,6 +1,6 @@
 # RemoveClusterNodesInput
 
-Request parameters for removing nodes from a cluster.
+Request parameters for removing nodes from Rubrik cluster.
 
 ## Fields
 

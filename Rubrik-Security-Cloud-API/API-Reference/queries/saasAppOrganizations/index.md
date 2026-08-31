@@ -1,6 +1,6 @@
 # saasAppOrganizations
 
-List of SaaS app organization.
+A paginated list of SaaS app organizations.
 
 ## Arguments
 

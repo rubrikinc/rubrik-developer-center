@@ -1,6 +1,6 @@
 # O365UserDescendant
 
-*No description available.*
+Descendants of a Microsoft 365 user.
 
 ## Fields
 

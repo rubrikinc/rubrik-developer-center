@@ -30,6 +30,7 @@ Paginated list of PolarisSnapshotGroupByNew objects. Each page of the results in
 - [AzureSqlManagedInstanceDatabase.snapshotGroupByNewConnection](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AzureSqlManagedInstanceDatabase/index.md)
 - [AzureStorageAccount.snapshotGroupByNewConnection](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AzureStorageAccount/index.md)
 - [GcpAlloyDbCluster.snapshotGroupByNewConnection](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/GcpAlloyDbCluster/index.md)
+- [GcpBigQueryDataset.snapshotGroupByNewConnection](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/GcpBigQueryDataset/index.md)
 - [GcpCloudSqlInstance.snapshotGroupByNewConnection](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/GcpCloudSqlInstance/index.md)
 - [GcpNativeDisk.snapshotGroupByNewConnection](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/GcpNativeDisk/index.md)
 - [GcpNativeGceInstance.snapshotGroupByNewConnection](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/GcpNativeGceInstance/index.md)
@@ -44,5 +45,4 @@ Paginated list of PolarisSnapshotGroupByNew objects. Each page of the results in
 - MicrosoftGroup.snapshotGroupByNewConnection
 - MicrosoftMailbox.snapshotGroupByNewConnection
 - MicrosoftOnedrive.snapshotGroupByNewConnection
-- MicrosoftOrg.snapshotGroupByNewConnection
-- *…and 13 more*
+- *…and 14 more*

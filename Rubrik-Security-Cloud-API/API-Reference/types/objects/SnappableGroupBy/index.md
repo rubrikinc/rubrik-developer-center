@@ -18,8 +18,8 @@ Snappable data with groupby info applied to it.
 | snappableConnection | after                | String                                                                                                                                  | Returns the elements in the list that occur after the specified cursor.  |
 | snappableConnection | last                 | Int                                                                                                                                     | Returns the last n elements from the list.                               |
 | snappableConnection | before               | String                                                                                                                                  | Returns the elements in the list that occur before the specified cursor. |
-| snappableConnection | sortOrder            | [SortOrder](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/SortOrder/index.md)                        | Sorts the order of results.                                              |
 | snappableConnection | sortBy               | [SnappableSortByEnum](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/SnappableSortByEnum/index.md)    | Sort workloads by field.                                                 |
+| snappableConnection | sortOrder            | [SortOrder](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/SortOrder/index.md)                        | Sorts the order of results.                                              |
 | snappableGroupBy    | groupBy *(required)* | [SnappableGroupByEnum](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/SnappableGroupByEnum/index.md)! | Group workloads by field.                                                |
 
 ## Used By

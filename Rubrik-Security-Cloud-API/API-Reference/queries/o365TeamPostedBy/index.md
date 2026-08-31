@@ -1,16 +1,18 @@
 # o365TeamPostedBy
 
-Users who have posted in a team.
+SearchTeamPostSenders returns the users who have posted in the given Teams workload, paginated.
 
 ## Arguments
 
-| Argument                  | Type                                                                                                      | Description                                                             |
-| ------------------------- | --------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------- |
-| first                     | Int                                                                                                       | Returns the first n elements from the list.                             |
-| after                     | String                                                                                                    | Returns the elements in the list that occur after the specified cursor. |
-| snappableFid *(required)* | [UUID](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/UUID/index.md)! | The FID for the workload.                                               |
-| o365OrgId *(required)*    | [UUID](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/UUID/index.md)! | The FID for the O365 organization.                                      |
-| nameFilter                | String                                                                                                    |                                                                         |
+| Argument                  | Type                                                                                                      | Description                                                              |
+| ------------------------- | --------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------ |
+| first                     | Int                                                                                                       | Returns the first n elements from the list.                              |
+| after                     | String                                                                                                    | Returns the elements in the list that occur after the specified cursor.  |
+| last                      | Int                                                                                                       | Returns the last n elements from the list.                               |
+| before                    | String                                                                                                    | Returns the elements in the list that occur before the specified cursor. |
+| snappableFid *(required)* | [UUID](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/UUID/index.md)! | The FID for the Teams workload.                                          |
+| o365OrgId *(required)*    | [UUID](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/UUID/index.md)! | The FID for the O365 organization.                                       |
+| nameFilter                | String                                                                                                    | Optional display-name filter for post senders.                           |
 
 ## Returns
 

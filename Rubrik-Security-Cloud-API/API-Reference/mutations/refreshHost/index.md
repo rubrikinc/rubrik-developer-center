@@ -1,6 +1,6 @@
 # refreshHost
 
-*No description available.*
+Refresh a single host.
 
 ## Arguments
 

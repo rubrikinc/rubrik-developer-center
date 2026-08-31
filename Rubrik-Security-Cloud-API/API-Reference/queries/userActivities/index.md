@@ -1,19 +1,19 @@
 # userActivities
 
-*No description available.*
+Returns the file activities attributed to a user.
 
 ## Arguments
 
 | Argument            | Type                                                                                                                                                  | Description                                                              |
 | ------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------ |
-| filter              | [ListObjectFilesFiltersInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/ListObjectFilesFiltersInput/index.md) |                                                                          |
-| sort                | [FileResultSortInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/FileResultSortInput/index.md)                 | Sorts to apply when listing file results.                                |
-| timeRange           | [UserTimeRangeInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/UserTimeRangeInput/index.md)                   | Time range specified in the user's local timezone.                       |
-| userId *(required)* | String!                                                                                                                                               |                                                                          |
 | first               | Int                                                                                                                                                   | Returns the first n elements from the list.                              |
 | after               | String                                                                                                                                                | Returns the elements in the list that occur after the specified cursor.  |
 | last                | Int                                                                                                                                                   | Returns the last n elements from the list.                               |
 | before              | String                                                                                                                                                | Returns the elements in the list that occur before the specified cursor. |
+| filter              | [ListObjectFilesFiltersInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/ListObjectFilesFiltersInput/index.md) | Filters to apply when listing user activities.                           |
+| sort                | [FileResultSortInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/FileResultSortInput/index.md)                 | Sorts to apply when listing file results.                                |
+| timeRange           | [UserTimeRangeInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/UserTimeRangeInput/index.md)                   | Time range specified in the user's local timezone.                       |
+| userId *(required)* | String!                                                                                                                                               | Identifier of the user whose activities are returned.                    |
 
 ## Returns
 

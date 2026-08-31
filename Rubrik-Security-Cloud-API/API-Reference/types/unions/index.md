@@ -1,6 +1,6 @@
 # Unions
 
-35 types.
+34 types.
 
 [AccessMethodDetailsType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/unions/AccessMethodDetailsType/index.md)\
 [ActionTypes](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/unions/ActionTypes/index.md)\
@@ -20,7 +20,6 @@
 [MissedSnapshotGroupByInfo](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/unions/MissedSnapshotGroupByInfo/index.md)\
 [MongoSnapshotGroupByInfo](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/unions/MongoSnapshotGroupByInfo/index.md)\
 [MonthlyDaySpecification](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/unions/MonthlyDaySpecification/index.md)\
-[MosaicSnapshotGroupByInfo](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/unions/MosaicSnapshotGroupByInfo/index.md)\
 [NestedFilterConfig](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/unions/NestedFilterConfig/index.md)\
 [NfAnomalyResultGroupByInfo](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/unions/NfAnomalyResultGroupByInfo/index.md)\
 [OnPremAdPrincipalTypeSpecificMetadata](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/unions/OnPremAdPrincipalTypeSpecificMetadata/index.md)\

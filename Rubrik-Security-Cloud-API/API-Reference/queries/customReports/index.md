@@ -59,7 +59,7 @@ query {
             "id": 0,
             "name": "example-string",
             "reportCategory": "AUDIT_AND_COMPLIANCE",
-            "reportViewType": "ACTIVE_DIRECTORY_FOREST_RECOVERY_REPORT"
+            "reportViewType": "ACCOUNT_LIFECYCLE_REPORT"
           }
         ]
       ],

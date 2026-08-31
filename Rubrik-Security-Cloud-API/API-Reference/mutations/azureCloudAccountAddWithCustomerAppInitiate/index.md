@@ -40,9 +40,9 @@ mutation AzureCloudAccountAddWithCustomerAppInitiate($input: AzureCloudAccountAd
           "cloudType": "AZURECHINACLOUD",
           "customerSubscriptionId": "example-string",
           "customerTenantId": "example-string",
+          "ineligibilityReason": "AZURE_ONBOARDING_INELIGIBILITY_REASON_ALREADY_ONBOARDED",
           "isAuthorized": true,
-          "name": "example-string",
-          "nativeId": "example-string"
+          "name": "example-string"
         }
       ]
     }

@@ -40,6 +40,7 @@ query ThreatHuntSummary($huntId: String!) {
         "maxMatchesPerSnapshot": 0,
         "name": "example-string",
         "notes": "example-string",
+        "shouldExpandArchiveFiles": true,
         "shouldTrustFilesystemTimeInfo": true
       },
       "objectsSummary": [

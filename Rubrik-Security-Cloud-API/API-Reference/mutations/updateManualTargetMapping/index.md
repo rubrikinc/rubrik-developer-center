@@ -1,6 +1,6 @@
 # updateManualTargetMapping
 
-*No description available.*
+Updates a manual target mapping scoped to the caller's account.
 
 ## Arguments
 

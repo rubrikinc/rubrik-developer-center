@@ -30,10 +30,12 @@ query ThreatHuntingObjectMatchedFiles($huntId: String!, $objectFid: UUID!) {
     first: 10
   ) {
     nodes {
+      archiveRelativePath
       createdTime
       earliestMatchedSnapshotDate
       filename
       filepath
+      isInsideArchive
       isQuarantinedInFirstObservedSnapshot
       latestMatchedSnapshotDate
       latestSnapshotWithoutMatchDate
@@ -67,12 +69,12 @@ query ThreatHuntingObjectMatchedFiles($huntId: String!, $objectFid: UUID!) {
       "nodes": [
         [
           {
+            "archiveRelativePath": "example-string",
             "createdTime": "2024-01-01T00:00:00.000Z",
             "earliestMatchedSnapshotDate": "2024-01-01T00:00:00.000Z",
             "filename": "example-string",
             "filepath": "example-string",
-            "isQuarantinedInFirstObservedSnapshot": true,
-            "latestMatchedSnapshotDate": "2024-01-01T00:00:00.000Z"
+            "isInsideArchive": true
           }
         ]
       ],

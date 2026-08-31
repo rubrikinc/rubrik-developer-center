@@ -1,6 +1,6 @@
 # WorkloadRegionInput
 
-Regions for which the workloads are to be shown.
+Region of the workload.
 
 ## Fields
 

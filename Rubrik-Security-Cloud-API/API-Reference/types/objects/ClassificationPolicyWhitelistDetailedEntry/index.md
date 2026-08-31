@@ -4,13 +4,13 @@
 
 ## Fields
 
-| Field          | Type                                                                                                                               | Description |
-| -------------- | ---------------------------------------------------------------------------------------------------------------------------------- | ----------- |
-| nativePath     | String!                                                                                                                            |             |
-| snappable      | [HierarchyObject](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/HierarchyObject/index.md)! |             |
-| stdPath        | String!                                                                                                                            |             |
-| updateTs       | [Long](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/Long/index.md)!                          |             |
-| updateUsername | String!                                                                                                                            |             |
+| Field          | Type                                                                                                                               | Description                                        |
+| -------------- | ---------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------- |
+| nativePath     | String!                                                                                                                            |                                                    |
+| snappable      | [HierarchyObject](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/HierarchyObject/index.md)! | The workload that this allowlist entry belongs to. |
+| stdPath        | String!                                                                                                                            |                                                    |
+| updateTs       | [Long](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/Long/index.md)!                          |                                                    |
+| updateUsername | String!                                                                                                                            |                                                    |
 
 ## Used By
 

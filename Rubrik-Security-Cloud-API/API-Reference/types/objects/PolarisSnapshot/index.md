@@ -91,4 +91,4 @@ A cloud-managed snapshot type that extends the generic snapshot with additional 
 - [AzureNativeVirtualMachine.newestIndexedSnapshot](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AzureNativeVirtualMachine/index.md)
 - [AzureNativeVirtualMachine.newestSnapshot](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AzureNativeVirtualMachine/index.md)
 - [AzureNativeVirtualMachine.oldestSnapshot](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AzureNativeVirtualMachine/index.md)
-- *…and 99 more*
+- *…and 102 more*

@@ -31,6 +31,8 @@ query {
       actorIpAddress
       actorState
       category
+      classification
+      classifiedOn
       id
       nativeCorrelationId
       operation

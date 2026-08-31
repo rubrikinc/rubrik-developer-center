@@ -1,0 +1,13 @@
+# RecoverS3TablesIcebergTableSnapshotInput
+
+Request for RecoverS3TablesIcebergTableSnapshot.
+
+## Fields
+
+| Field                 | Type                                                                                                                                                                                                | Description                                                                                                                        |
+| --------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------- |
+| exportToExistingTable | [S3TablesIcebergExportToExistingTableRecoveryTarget](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/S3TablesIcebergExportToExistingTableRecoveryTarget/index.md) | Write the snapshot into a different, already-existing Iceberg table.                                                               |
+| exportToNewTable      | [S3TablesIcebergExportToNewTableRecoveryTarget](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/S3TablesIcebergExportToNewTableRecoveryTarget/index.md)           | Create a new Iceberg table in an existing S3 Tables namespace and write the snapshot into it.                                      |
+| inPlace               | [S3TablesIcebergInPlaceRecoveryTarget](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/S3TablesIcebergInPlaceRecoveryTarget/index.md)                             | Recover into a branch on the source table itself.                                                                                  |
+| snapshotId            | [UUID](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/UUID/index.md)                                                                                            | Identifier of the snapshot to recover.                                                                                             |
+| sourceTableId         | [UUID](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/UUID/index.md)                                                                                            | Source S3 Tables Iceberg table being recovered from. Requiredness left unset to mirror RecoverGlueIcebergTableSnapshotReq exactly. |

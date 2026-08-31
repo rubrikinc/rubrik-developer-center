@@ -4,12 +4,14 @@ Lists the O365 apps.
 
 ## Arguments
 
-| Argument                    | Type                                                                                                                        | Description                                                             |
-| --------------------------- | --------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------- |
-| first                       | Int                                                                                                                         | Returns the first n elements from the list.                             |
-| after                       | String                                                                                                                      | Returns the elements in the list that occur after the specified cursor. |
-| o365AppFilters *(required)* | \[[AppFilter](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/AppFilter/index.md)!\]!     |                                                                         |
-| o365AppSortByParam          | [AppSortByParam](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/AppSortByParam/index.md) |                                                                         |
+| Argument                    | Type                                                                                                                        | Description                                                              |
+| --------------------------- | --------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------ |
+| first                       | Int                                                                                                                         | Returns the first n elements from the list.                              |
+| after                       | String                                                                                                                      | Returns the elements in the list that occur after the specified cursor.  |
+| last                        | Int                                                                                                                         | Returns the last n elements from the list.                               |
+| before                      | String                                                                                                                      | Returns the elements in the list that occur before the specified cursor. |
+| o365AppFilters *(required)* | \[[AppFilter](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/AppFilter/index.md)!\]!     | Filters for the O365 app listing.                                        |
+| o365AppSortByParam          | [AppSortByParam](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/AppSortByParam/index.md) | Sort parameter for the O365 app listing.                                 |
 
 ## Returns
 

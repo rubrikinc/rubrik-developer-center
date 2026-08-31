@@ -44,6 +44,7 @@ query M365DayToDayModeStats($orgId: UUID!, $dashboardWorkloadType: M365Dashboard
         "compliancePercentage": 0,
         "lastComplianceUpdateTime": "2024-01-01T00:00:00.000Z",
         "lowComplianceReason": "example-string",
+        "shouldAllowSwitchToBackfillOnboardingMode": true,
         "shouldAllowSwitchToOnboardingMode": true
       }
     }

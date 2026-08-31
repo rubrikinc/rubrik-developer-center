@@ -11,3 +11,4 @@ Details about the policy violation.
 - [CrowdStrikeAlertViolationDetails](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/CrowdStrikeAlertViolationDetails/index.md)
 - [DefenderAlertViolationDetails](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/DefenderAlertViolationDetails/index.md)
 - [SigninAnomalyViolationDetails](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/SigninAnomalyViolationDetails/index.md)
+- [SaasActivityViolationDetails](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/SaasActivityViolationDetails/index.md)

@@ -25,6 +25,7 @@ query GcpNativeDisk($fid: UUID!) {
     fileIndexingStatus
     id
     isExocomputeConfigured
+    isProtectionOnboarded
     isRelic
     kmsKey
     name

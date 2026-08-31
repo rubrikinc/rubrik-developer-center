@@ -27,6 +27,8 @@ Duration.
 - [InformixSlaConfig.incrementalRetention](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/InformixSlaConfig/index.md)
 - [InformixSlaConfig.logFrequency](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/InformixSlaConfig/index.md)
 - [InformixSlaConfig.logRetention](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/InformixSlaConfig/index.md)
+- [IrisdbSlaConfig.logFrequency](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/IrisdbSlaConfig/index.md)
+- [IrisdbSlaConfig.logRetention](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/IrisdbSlaConfig/index.md)
 - [ManagedVolumeSlaConfig.logRetention](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/ManagedVolumeSlaConfig/index.md)
 - [MariadbSlaConfig.differentialFrequency](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/MariadbSlaConfig/index.md)
 - [MariadbSlaConfig.differentialRetention](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/MariadbSlaConfig/index.md)
@@ -41,6 +43,4 @@ Duration.
 - [OracleConfig.frequency](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/OracleConfig/index.md)
 - [OracleConfig.hostLogRetention](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/OracleConfig/index.md)
 - [OracleConfig.logRetention](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/OracleConfig/index.md)
-- [OracleDataGuardGroup.effectiveHostLogRetention](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/OracleDataGuardGroup/index.md)
-- [OracleDataGuardGroup.effectiveLogBackupFrequency](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/OracleDataGuardGroup/index.md)
-- *…and 21 more*
+- *…and 23 more*

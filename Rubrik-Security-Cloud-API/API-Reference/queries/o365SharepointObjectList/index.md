@@ -4,16 +4,18 @@ Returns the sharepoint objects after filtering on the object types and includeEn
 
 ## Arguments
 
-| Argument                            | Type                                                                                                                                   | Description                                                             |
-| ----------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------- |
-| first                               | Int                                                                                                                                    | Returns the first n elements from the list.                             |
-| after                               | String                                                                                                                                 | Returns the elements in the list that occur after the specified cursor. |
-| sortBy                              | [HierarchySortByField](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/HierarchySortByField/index.md) | Sort hierarchy objects according to the hierarchy field.                |
-| sortOrder                           | [SortOrder](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/SortOrder/index.md)                       | Sorts the order of results.                                             |
-| filter                              | \[[Filter](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/Filter/index.md)!\]                       | Hierarchy object filter.                                                |
-| objectTypeFilter                    | [String!]                                                                                                                              | Types of objects to include.                                            |
-| includeEntireHierarchy *(required)* | Boolean!                                                                                                                               | If true, the entire hierarchy will be searched.                         |
-| fid *(required)*                    | [UUID](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/UUID/index.md)!                              | Rubrik UUID for the object.                                             |
+| Argument                            | Type                                                                                                                                   | Description                                                              |
+| ----------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------ |
+| first                               | Int                                                                                                                                    | Returns the first n elements from the list.                              |
+| after                               | String                                                                                                                                 | Returns the elements in the list that occur after the specified cursor.  |
+| last                                | Int                                                                                                                                    | Returns the last n elements from the list.                               |
+| before                              | String                                                                                                                                 | Returns the elements in the list that occur before the specified cursor. |
+| sortBy                              | [HierarchySortByField](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/HierarchySortByField/index.md) | Sort hierarchy objects according to the hierarchy field.                 |
+| sortOrder                           | [SortOrder](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/SortOrder/index.md)                       | Sorts the order of results.                                              |
+| filter                              | \[[Filter](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/Filter/index.md)!\]                       | Hierarchy object filter.                                                 |
+| objectTypeFilter                    | [String!]                                                                                                                              | Types of objects to include.                                             |
+| fid *(required)*                    | [UUID](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/UUID/index.md)!                              | FID of the parent O365 org or SharePoint site.                           |
+| includeEntireHierarchy *(required)* | Boolean!                                                                                                                               | If true, the entire hierarchy will be searched.                          |
 
 ## Returns
 
@@ -22,10 +24,10 @@ Returns the sharepoint objects after filtering on the object types and includeEn
 ## Sample
 
 ```graphql
-query O365SharepointObjectList($includeEntireHierarchy: Boolean!, $fid: UUID!) {
+query O365SharepointObjectList($fid: UUID!, $includeEntireHierarchy: Boolean!) {
   o365SharepointObjectList(
-    includeEntireHierarchy: $includeEntireHierarchy
     fid: $fid
+    includeEntireHierarchy: $includeEntireHierarchy
     first: 10
   ) {
     nodes {
@@ -45,8 +47,8 @@ query O365SharepointObjectList($includeEntireHierarchy: Boolean!, $fid: UUID!) {
 
 ```json
 {
-  "includeEntireHierarchy": true,
-  "fid": "00000000-0000-0000-0000-000000000000"
+  "fid": "00000000-0000-0000-0000-000000000000",
+  "includeEntireHierarchy": true
 }
 ```
 

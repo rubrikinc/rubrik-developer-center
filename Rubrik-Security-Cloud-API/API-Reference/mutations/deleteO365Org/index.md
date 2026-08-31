@@ -1,6 +1,6 @@
 # deleteO365Org
 
-Deletes an O365 org from the account.
+Deletes a Microsoft 365 org from the account.
 
 ## Arguments
 

@@ -1,14 +1,18 @@
 # azureSubnets
 
-Gets the subnets for the given subscription.
+Gets the subnets for the given VNet.
 
 ## Arguments
 
-| Argument                    | Type                                                                                                      | Description |
-| --------------------------- | --------------------------------------------------------------------------------------------------------- | ----------- |
-| tenantId *(required)*       | String!                                                                                                   |             |
-| subscriptionId *(required)* | [UUID](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/UUID/index.md)! |             |
-| vNetId *(required)*         | String!                                                                                                   |             |
+| Argument                    | Type                                                                                                      | Description                                                              |
+| --------------------------- | --------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------ |
+| first                       | Int                                                                                                       | Returns the first n elements from the list.                              |
+| after                       | String                                                                                                    | Returns the elements in the list that occur after the specified cursor.  |
+| last                        | Int                                                                                                       | Returns the last n elements from the list.                               |
+| before                      | String                                                                                                    | Returns the elements in the list that occur before the specified cursor. |
+| tenantId *(required)*       | String!                                                                                                   | Azure tenant ID.                                                         |
+| subscriptionId *(required)* | [UUID](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/UUID/index.md)! | Azure subscription ID.                                                   |
+| vNetId *(required)*         | String!                                                                                                   | Azure VNet ID.                                                           |
 
 ## Returns
 
@@ -22,6 +26,7 @@ query AzureSubnets($tenantId: String!, $subscriptionId: UUID!, $vNetId: String!)
     tenantId: $tenantId
     subscriptionId: $subscriptionId
     vNetId: $vNetId
+    first: 10
   ) {
     nodes {
       id

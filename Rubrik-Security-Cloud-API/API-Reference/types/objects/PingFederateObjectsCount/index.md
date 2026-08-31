@@ -8,6 +8,7 @@ Count of different types of PingFederate objects in a snapshot.
 | ----------------------------------- | -------------------------------------------------------------------------------------------------------- | ------------------------------------------------- |
 | authenticationPolicyContracts       | [Long](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/Long/index.md) | Count of authentication policy contracts.         |
 | authenticationPolicySettings        | [Long](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/Long/index.md) | Count of authentication policy settings.          |
+| caCertificates                      | [Long](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/Long/index.md) | Count of trusted CA certificates.                 |
 | dataStores                          | [Long](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/Long/index.md) | Count of data stores.                             |
 | defaultAuthenticationPolicy         | [Long](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/Long/index.md) | Count of default authentication policy settings.  |
 | generalSettings                     | [Long](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/Long/index.md) | Count of general settings.                        |
@@ -30,6 +31,7 @@ Count of different types of PingFederate objects in a snapshot.
 | spConnections                       | [Long](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/Long/index.md) | Count of SP connections.                          |
 | sslClientKeyPairs                   | [Long](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/Long/index.md) | Count of SSL client key pairs.                    |
 | sslServerKeyPairs                   | [Long](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/Long/index.md) | Count of SSL server key pairs.                    |
+| virtualHostNames                    | [Long](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/Long/index.md) | Count of virtual host names.                      |
 | wsTrustStsSettings                  | [Long](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/Long/index.md) | Count of WS-Trust STS settings.                   |
 
 ## Used By

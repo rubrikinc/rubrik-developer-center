@@ -1,6 +1,6 @@
 # O365OauthConsentKickoffReply
 
-*No description available.*
+Response for the kickoff of an O365 OAuth consent flow.
 
 ## Fields
 

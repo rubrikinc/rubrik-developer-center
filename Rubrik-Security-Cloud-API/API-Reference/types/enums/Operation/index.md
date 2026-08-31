@@ -96,6 +96,7 @@ Operations defined in the RBAC system.
 | MANAGE_AUTH_DOMAIN                              | Manage Auth Domain.                                                                                         |
 | MANAGE_AUTO_QUARANTINE                          | Allow users to manage auto quarantine settings.                                                             |
 | MANAGE_CDM_ADMIN                                | Manage cluster local administrator user credentials.                                                        |
+| MANAGE_CDM_USER                                 | Manage CDM users.                                                                                           |
 | MANAGE_CDP_IO_FILTER                            | The operation to manage CDP IO Filter.                                                                      |
 | MANAGE_CERTIFICATE                              | Manage certificates and certificate signing requests.                                                       |
 | MANAGE_CHATBOT                                  | Manage chatbot configuration.                                                                               |
@@ -136,6 +137,7 @@ Operations defined in the RBAC system.
 | MANAGE_ROLE                                     | Manage Role.                                                                                                |
 | MANAGE_ROLLING_UPGRADES                         | Manage rolling upgrades on account level.                                                                   |
 | MANAGE_RSCP_CLUSTER_SETTINGS                    | Manage RSC-P cluster settings.                                                                              |
+| MANAGE_RSCP_UPGRADE                             | Trigger and manage RSC-P appliance upgrades.                                                                |
 | MANAGE_RUBY                                     | Manage Ruby (LLM) settings, including enablement.                                                           |
 | MANAGE_SECURITY_POLICIES                        | Manage security policies.                                                                                   |
 | MANAGE_SECURITY_POLICY                          | Manage Security Policy.                                                                                     |
@@ -197,6 +199,7 @@ Operations defined in the RBAC system.
 | USE_AS_REPLICATION_TARGET                       | Use the Rubrik cluster as a replication target.                                                             |
 | USE_OAUTH_APPLICATIONS                          | Authorize and use selected applications.                                                                    |
 | VIEW_ACCESS                                     | View user access.                                                                                           |
+| VIEW_AGENT_CLOUD_SESSIONS                       | View Agent Cloud session timelines and summaries.                                                           |
 | VIEW_ALL_EVENTS                                 | View all events and audits.                                                                                 |
 | VIEW_ANOMALY_DETECTION_FILE_DETAILS             | View file details.                                                                                          |
 | VIEW_ANOMALY_DETECTION_RESULTS                  | View anomalies.                                                                                             |
@@ -211,6 +214,7 @@ Operations defined in the RBAC system.
 | VIEW_CDM_REPORT                                 | View CDM report.                                                                                            |
 | VIEW_CDM_SUPPORT_SETTING                        | View support settings.                                                                                      |
 | VIEW_CDM_SYS_CONFIG                             | View system configuration.                                                                                  |
+| VIEW_CDM_USER                                   | View CDM user information.                                                                                  |
 | VIEW_CERTIFICATE                                | View certificates and certificate signing requests.                                                         |
 | VIEW_CHATBOT                                    | View chatbot configuration.                                                                                 |
 | VIEW_CHILD_ACCOUNTS                             | View child accounts.                                                                                        |
@@ -254,6 +258,7 @@ Operations defined in the RBAC system.
 | VIEW_REPORT                                     | View reports.                                                                                               |
 | VIEW_ROLE                                       | View Role.                                                                                                  |
 | VIEW_RSCP_CLUSTER                               | View RSC-P cluster.                                                                                         |
+| VIEW_RSCP_UPGRADE                               | View RSC-P upgrade status.                                                                                  |
 | VIEW_RUBY_INSIGHTS                              | View Ruby Insights use case.                                                                                |
 | VIEW_SECURITY_POLICY                            | View Security Policy.                                                                                       |
 | VIEW_SECURITY_SETTINGS                          | View security settings.                                                                                     |

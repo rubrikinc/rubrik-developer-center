@@ -21,6 +21,7 @@ query {
     fatalClusters
     okClusters
     totalClusters
+    tunnelEnabledClusters
     warningClusters
   }
 }
@@ -38,6 +39,7 @@ query {
       "fatalClusters": 0,
       "okClusters": 0,
       "totalClusters": 0,
+      "tunnelEnabledClusters": 0,
       "warningClusters": 0
     }
   }

@@ -19,6 +19,7 @@ Represents the object-level backup window status of a hierarchy object.
 - [ActiveDirectoryDomainController.objectBackupWindow](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/ActiveDirectoryDomainController/index.md)
 - ActiveDirectoryDomainDescendantType.objectBackupWindow
 - ActiveDirectoryDomainPhysicalChildType.objectBackupWindow
+- [AnthropicOrg.objectBackupWindow](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AnthropicOrg/index.md)
 - [AtlassianSite.objectBackupWindow](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AtlassianSite/index.md)
 - [AwsNativeAccount.objectBackupWindow](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AwsNativeAccount/index.md)
 - AwsNativeAccountDescendantType.objectBackupWindow
@@ -44,5 +45,4 @@ Represents the object-level backup window status of a hierarchy object.
 - [AzurePostgresFlexibleServer.objectBackupWindow](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AzurePostgresFlexibleServer/index.md)
 - [AzureSqlDatabaseDb.objectBackupWindow](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AzureSqlDatabaseDb/index.md)
 - [AzureSqlDatabaseServer.objectBackupWindow](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AzureSqlDatabaseServer/index.md)
-- [AzureSqlManagedInstanceDatabase.objectBackupWindow](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AzureSqlManagedInstanceDatabase/index.md)
-- *…and 284 more*
+- *…and 293 more*

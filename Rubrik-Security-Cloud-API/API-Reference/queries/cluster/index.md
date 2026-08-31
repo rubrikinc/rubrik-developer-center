@@ -32,10 +32,10 @@ query Cluster($clusterUuid: UUID!) {
     isClusterRemovalTprEnabled
     isHealthy
     isTprEnabled
+    isTunnelEnabled
     lastConnectionTime
     licensedProducts
     name
-    noSqlWorkloadCount
     passesConnectivityCheck
     pauseStatus
     productType

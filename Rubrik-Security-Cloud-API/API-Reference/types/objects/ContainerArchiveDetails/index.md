@@ -17,4 +17,5 @@ Details of the archive file that directly contains the matched file.
 
 **Referenced by**
 
+- [ThreatHuntingObjectFileMatch.containerArchiveDetails](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/ThreatHuntingObjectFileMatch/index.md)
 - [ThreatMonitoringFileMatchDetailsV2.containerArchiveDetails](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/ThreatMonitoringFileMatchDetailsV2/index.md)

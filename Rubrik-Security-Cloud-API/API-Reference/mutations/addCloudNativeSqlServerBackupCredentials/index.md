@@ -29,7 +29,7 @@ mutation AddCloudNativeSqlServerBackupCredentials($input: AddCloudNativeSqlServe
     "objectIds": [
       "00000000-0000-0000-0000-000000000000"
     ],
-    "workloadType": "AUTH0_TENANT"
+    "workloadType": "ANTHROPIC_CHILD_ORG_SETTINGS"
   }
 }
 ```

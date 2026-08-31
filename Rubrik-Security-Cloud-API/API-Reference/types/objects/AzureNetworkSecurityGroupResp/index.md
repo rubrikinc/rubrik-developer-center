@@ -1,6 +1,6 @@
 # AzureNetworkSecurityGroupResp
 
-*No description available.*
+Response for CheckNetworkSecurityGroupOutboundRules.
 
 ## Fields
 

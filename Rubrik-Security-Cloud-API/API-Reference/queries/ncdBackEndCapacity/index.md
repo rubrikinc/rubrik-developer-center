@@ -10,7 +10,7 @@ NAS Cloud Direct back-end capacity for the requested clusters.
 
 ## Returns
 
-[NcdBackEndCapacity](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/NcdBackEndCapacity/index.md)
+[NcdBackEndCapacity](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/NcdBackEndCapacity/index.md)!
 
 ## Sample
 

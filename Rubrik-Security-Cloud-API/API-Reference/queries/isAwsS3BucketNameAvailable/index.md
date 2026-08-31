@@ -4,10 +4,11 @@ Specifies whether an S3 bucket name is available for use in AWS or not. When tru
 
 ## Arguments
 
-| Argument                        | Type                                                                                                      | Description                |
-| ------------------------------- | --------------------------------------------------------------------------------------------------------- | -------------------------- |
-| bucketName *(required)*         | String!                                                                                                   | Name of the AWS S3 bucket. |
-| awsAccountRubrikId *(required)* | [UUID](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/UUID/index.md)! | Rubrik ID for AWS account. |
+| Argument                        | Type                                                                                                                                 | Description                                                                                     |
+| ------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------- |
+| bucketName *(required)*         | String!                                                                                                                              | Name of the AWS S3 bucket.                                                                      |
+| awsAccountRubrikId *(required)* | [UUID](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/UUID/index.md)!                            | Rubrik ID for AWS account.                                                                      |
+| feature                         | [CloudAccountFeature](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/CloudAccountFeature/index.md) | Cloud account feature whose IAM role is assumed to answer the query. Defaults to S3 protection. |
 
 ## Returns
 

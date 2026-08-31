@@ -1,6 +1,6 @@
 # allHostedAzureRegions
 
-Lists all Azure regions supported by the Rubrik-Hosted SaaS protection.
+ListSupportedAzureRegionsV2 returns the Azure regions supported by Rubrik-Hosted SaaS protection for the caller's account.
 
 ## Returns
 

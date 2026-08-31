@@ -41,7 +41,7 @@ mutation MutateRole($name: String!, $description: String!, $permissions: [Permis
           "objectIds": [
             "example-string"
           ],
-          "snappableType": "AUTH0_TENANT"
+          "snappableType": "ANTHROPIC_CHILD_ORG_SETTINGS"
         }
       ],
       "operation": "ACCESS_CDM_CLUSTER"

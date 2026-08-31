@@ -26,6 +26,9 @@ Represents a node in a hierarchy path.
 - ActiveDirectoryDomainPhysicalChildType.effectiveSlaSourceObject
 - ActiveDirectoryDomainPhysicalChildType.logicalPath
 - ActiveDirectoryDomainPhysicalChildType.physicalPath
+- [AnthropicOrg.effectiveSlaSourceObject](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AnthropicOrg/index.md)
+- [AnthropicOrg.logicalPath](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AnthropicOrg/index.md)
+- [AnthropicOrg.physicalPath](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AnthropicOrg/index.md)
 - [AtlassianSite.effectiveSlaSourceObject](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AtlassianSite/index.md)
 - [AtlassianSite.logicalPath](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AtlassianSite/index.md)
 - [AtlassianSite.physicalPath](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AtlassianSite/index.md)
@@ -41,7 +44,4 @@ Represents a node in a hierarchy path.
 - [AwsNativeConfig.effectiveSlaSourceObject](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AwsNativeConfig/index.md)
 - [AwsNativeConfig.logicalPath](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AwsNativeConfig/index.md)
 - [AwsNativeConfig.physicalPath](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AwsNativeConfig/index.md)
-- [AwsNativeDynamoDbTable.effectiveSlaSourceObject](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AwsNativeDynamoDbTable/index.md)
-- [AwsNativeDynamoDbTable.logicalPath](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AwsNativeDynamoDbTable/index.md)
-- [AwsNativeDynamoDbTable.physicalPath](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AwsNativeDynamoDbTable/index.md)
-- *…and 922 more*
+- *…and 949 more*

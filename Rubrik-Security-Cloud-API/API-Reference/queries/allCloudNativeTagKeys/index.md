@@ -4,11 +4,12 @@ List of cloud native tag keys matched by substring.
 
 ## Arguments
 
-| Argument                | Type                                                                                                                                            | Description                                               |
-| ----------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------- |
-| keySubStr *(required)*  | String!                                                                                                                                         | Key substring to filter by.                               |
-| limit *(required)*      | Int!                                                                                                                                            | Number of results to return.                              |
-| objectType *(required)* | [CloudNativeTagObjectType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/CloudNativeTagObjectType/index.md)! | Type of managed object on which tag rule will be applied. |
+| Argument                              | Type                                                                                                                                            | Description                                                                                                                                                                          |
+| ------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| keySubStr *(required)*                | String!                                                                                                                                         | Key substring to filter by.                                                                                                                                                          |
+| limit *(required)*                    | Int!                                                                                                                                            | Number of results to return.                                                                                                                                                         |
+| objectType *(required)*               | [CloudNativeTagObjectType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/CloudNativeTagObjectType/index.md)! | Type of managed object on which tag rule will be applied.                                                                                                                            |
+| maxCacheStalenessSeconds *(required)* | Int!                                                                                                                                            | Maximum tag-cache staleness the caller tolerates, in seconds. 0 uses the cache as-is; a positive value forces a fresh DB read (and cache refresh) when the cache is older than this. |
 
 ## Returns
 
@@ -17,11 +18,12 @@ List of cloud native tag keys matched by substring.
 ## Sample
 
 ```graphql
-query AllCloudNativeTagKeys($keySubStr: String!, $limit: Int!, $objectType: CloudNativeTagObjectType!) {
+query AllCloudNativeTagKeys($keySubStr: String!, $limit: Int!, $objectType: CloudNativeTagObjectType!, $maxCacheStalenessSeconds: Int!) {
   allCloudNativeTagKeys(
     keySubStr: $keySubStr
     limit: $limit
     objectType: $objectType
+    maxCacheStalenessSeconds: $maxCacheStalenessSeconds
   )
 }
 ```
@@ -30,7 +32,8 @@ query AllCloudNativeTagKeys($keySubStr: String!, $limit: Int!, $objectType: Clou
 {
   "keySubStr": "example-string",
   "limit": 0,
-  "objectType": "AWS_CONFIG"
+  "objectType": "AWS_CONFIG",
+  "maxCacheStalenessSeconds": 0
 }
 ```
 

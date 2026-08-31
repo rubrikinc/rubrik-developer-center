@@ -4,9 +4,9 @@ Update a classification policy.
 
 ## Arguments
 
-| Argument           | Type                                                                                                                               | Description |
-| ------------------ | ---------------------------------------------------------------------------------------------------------------------------------- | ----------- |
-| input *(required)* | [UpdatePolicyInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/UpdatePolicyInput/index.md)! |             |
+| Argument           | Type                                                                                                                               | Description                                 |
+| ------------------ | ---------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------- |
+| input *(required)* | [UpdatePolicyInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/UpdatePolicyInput/index.md)! | Input for updating a classification policy. |
 
 ## Returns
 

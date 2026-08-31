@@ -1,6 +1,6 @@
 # O365AppObject
 
-*No description available.*
+Interface for O365 application objects associated with a subscription.
 
 ## Fields
 

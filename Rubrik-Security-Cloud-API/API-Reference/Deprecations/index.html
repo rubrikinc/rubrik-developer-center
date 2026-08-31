@@ -1746,6 +1746,28 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#rcventitlementwithexpirationdate" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        RcvEntitlementWithExpirationDate
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rdsinstanceexportdefaults" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        RdsInstanceExportDefaults
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#remediationmetadata" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -2047,6 +2069,17 @@
     <span class="md-ellipsis">
       
         VsphereResourcePool
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#workloadrecoveryinfo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        WorkloadRecoveryInfo
       
     </span>
   </a>
@@ -4438,6 +4471,26 @@
       
         
       
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
     
     
     
@@ -4461,6 +4514,26 @@
       
         
           
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
         
       
         
@@ -8856,6 +8929,32 @@
       
         
       
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
     
     
     
@@ -8879,6 +8978,32 @@
       
         
           
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
         
       
         
@@ -12915,6 +13040,28 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#rcventitlementwithexpirationdate" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        RcvEntitlementWithExpirationDate
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rdsinstanceexportdefaults" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        RdsInstanceExportDefaults
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#remediationmetadata" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -13222,6 +13369,17 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#workloadrecoveryinfo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        WorkloadRecoveryInfo
+      
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -13263,10 +13421,11 @@
 <h1 id="graphql-api-deprecations">GraphQL API Deprecations</h1>
 <p>This document lists all deprecated fields, queries, mutations, and enum values in the Rubrik Security Cloud GraphQL API.</p>
 <h2 id="deprecated-fields">Deprecated Fields</h2>
-<p><em>Extracted from schema: 20260727.graphql</em></p>
-<p><strong>Total deprecated items: 298</strong></p>
+<p><em>Extracted from schema: 20260831.graphql</em></p>
+<p><strong>Total deprecated items: 299</strong></p>
 <h3 id="deprecated-query-fields">Deprecated Query Fields</h3>
 <ul>
+<li><strong><code>accountSettings</code></strong>: Use getAccountSettingValue or getAccountSettingValueWithDefault instead.</li>
 <li><strong><code>allAzureResourceGroups</code></strong>: Use allResourceGroupsFromAzure instead.</li>
 <li><strong><code>allAzureSubnets</code></strong>: Use allAzureCloudAccountSubnetsByRegion instead.</li>
 <li><strong><code>allClusterWebCertsAndIpmis</code></strong>: Use clusterConnection instead.</li>
@@ -13279,14 +13438,6 @@
 <li><strong><code>hypervServers</code></strong>: Use hypervServersPaginated instead.</li>
 <li><strong><code>ipWhitelist</code></strong>: use <code>ipWhitelistEntries</code> and <code>ipWhitelistSettings</code> instead.</li>
 <li><strong><code>k8sAppManifest</code></strong>: Not supported anymore.</li>
-<li><strong><code>mongodbBulkRecoverableRange</code></strong>: Use mongoBulkRecoverableRanges instead.</li>
-<li><strong><code>mongodbCollection</code></strong>: Use mongoCollection instead.</li>
-<li><strong><code>mongodbCollectionRecoverableRange</code></strong>: Use mongoRecoverableRanges instead.</li>
-<li><strong><code>mongodbCollections</code></strong>: Use mongoCollections instead.</li>
-<li><strong><code>mongodbDatabase</code></strong>: Use mongoDatabase instead.</li>
-<li><strong><code>mongodbDatabases</code></strong>: Use mongoDatabases instead.</li>
-<li><strong><code>mongodbSource</code></strong>: Use mongoSource instead.</li>
-<li><strong><code>mongodbSources</code></strong>: Use mongoSources instead.</li>
 <li><strong><code>mssqlDefaultProperties</code></strong>: Use mssqlDefaultPropertiesOnCluster instead.</li>
 <li><strong><code>o365SharepointObjects</code></strong>: This is deprecated as it was tied to the specific object type. Use o365SharepointObjectList instead.</li>
 <li><strong><code>protectedVolumesCount</code></strong>: This functionality is incorrect and deprecated.</li>
@@ -13304,17 +13455,14 @@
 <li><strong><code>backupO365Onedrive</code></strong>: Use backupM365Onedrive instead.</li>
 <li><strong><code>backupO365SharepointDrive</code></strong>: Use backupM365SharepointDrive instead.</li>
 <li><strong><code>backupO365Team</code></strong>: Use backupM365Team instead.</li>
-<li><strong><code>bulkDeleteMongodbSources</code></strong>: Use bulkDeleteMongoSources instead.</li>
 <li><strong><code>cancelTaskchain</code></strong>: Endpoint is no longer maintained</li>
 <li><strong><code>createAutomaticAwsTargetMapping</code></strong>: This mutation is deprecated.</li>
 <li><strong><code>createAutomaticAzureTargetMapping</code></strong>: This mutation is deprecated.</li>
 <li><strong><code>createAutomaticRcsTargetMapping</code></strong>: This mutation is deprecated. Please use createRcvLocationsFromTemplate.</li>
-<li><strong><code>createMongodbSource</code></strong>: Use addMongoSource instead.</li>
 <li><strong><code>createOnDemandMongoDatabaseBackup</code></strong>: Use createOnDemandMongoDatabaseBackupV2 instead.</li>
 <li><strong><code>createWebhook</code></strong>: Use createWebhookV2 instead.</li>
 <li><strong><code>deleteCertificate</code></strong>: Deprecated. Use deleteGlobalCertificate instead.</li>
 <li><strong><code>deleteCloudWorkloadSnapshot</code></strong>: Use deleteUnmanagedSnapshots instead.</li>
-<li><strong><code>deleteMongodbSource</code></strong>: Use deleteMongoSource instead.</li>
 <li><strong><code>deleteSapHanaDbSnapshot</code></strong>: Please use deleteUnmanagedSnapshots mutation instead or use the RSC UI delete button from snapshots page</li>
 <li><strong><code>deleteWebhook</code></strong>: Use deleteWebhookV2 instead.</li>
 <li><strong><code>downloadAuditLogCsvAsync</code></strong>: Use downloadFile instead.</li>
@@ -13324,7 +13472,6 @@
 <li><strong><code>gcpCloudAccountAddManualAuthProject</code></strong>: Use addGcpCloudAccountManualAuthProject instead.</li>
 <li><strong><code>listCidrsForComputeSetting</code></strong>: This endpoint is no longer maintained and will be removed.</li>
 <li><strong><code>recoverCloudDirectPath</code></strong>: Not in use. Use recoverCloudDirectMultiPaths instead.</li>
-<li><strong><code>recoverMongodbSource</code></strong>: Use recoverMongoSource instead.</li>
 <li><strong><code>restoreO365Mailbox</code></strong>: Use restoreO365MailboxV2 instead.</li>
 <li><strong><code>setIpWhitelistEnabled</code></strong>: use <code>setIpWhitelistSetting</code> instead.</li>
 <li><strong><code>stopJobInstance</code></strong>: Use stopJobInstanceFromEventSeries instead.</li>
@@ -13336,7 +13483,6 @@
 <li><strong><code>updateCertificate</code></strong>: Deprecated. Use updateGlobalCertificate instead.</li>
 <li><strong><code>updateIpWhitelist</code></strong>: use <code>setIpWhitelistSetting</code> to update the mode, or <code>update/add/deleteIpWhitelistEntries</code> to update entries instead.</li>
 <li><strong><code>updateManagedIdentities</code></strong>: Use updateManagedIdentitiesAsync instead.</li>
-<li><strong><code>updateMongodbSource</code></strong>: Use patchMongoSource instead.</li>
 <li><strong><code>updateRcsAutomaticTargetMapping</code></strong>: This mutation is deprecated. Please use updateRcvLocationsFromTemplate.</li>
 <li><strong><code>updateWebhook</code></strong>: Use updateWebhookV2 instead.</li>
 <li><strong><code>vsphereExcludeVmDisks</code></strong>: Deprecated. Use excludeVmDisks instead.</li>
@@ -13603,7 +13749,7 @@
 </ul>
 <h4 id="fileresult">FileResult</h4>
 <ul>
-<li><strong><code>attributesSummary</code></strong>: No longer used.</li>
+<li><strong><code>attributesSummary</code></strong>: No longer populated or consumed by any caller.</li>
 </ul>
 <h4 id="gcpcloudsqlinstance">GcpCloudSqlInstance</h4>
 <ul>
@@ -13697,7 +13843,7 @@
 </ul>
 <h4 id="policyobj">PolicyObj</h4>
 <ul>
-<li><strong><code>attributesSummary</code></strong>: No longer used.</li>
+<li><strong><code>attributesSummary</code></strong>: No longer populated or consumed by any caller.</li>
 </ul>
 <h4 id="rbacobject">RbacObject</h4>
 <ul>
@@ -13711,6 +13857,14 @@
 <h4 id="rcventitlement">RcvEntitlement</h4>
 <ul>
 <li><strong><code>bundle</code></strong>: Use tier and redundancy fields instead.</li>
+</ul>
+<h4 id="rcventitlementwithexpirationdate">RcvEntitlementWithExpirationDate</h4>
+<ul>
+<li><strong><code>bundle</code></strong>: Use tier and redundancy fields instead.</li>
+</ul>
+<h4 id="rdsinstanceexportdefaults">RdsInstanceExportDefaults</h4>
+<ul>
+<li><strong><code>supportedDbEngineVersions</code></strong>: Use availableDbEngineVersions instead.</li>
 </ul>
 <h4 id="remediationmetadata">RemediationMetadata</h4>
 <ul>
@@ -13832,6 +13986,10 @@
 <ul>
 <li><strong><code>hasDatastoresForRecovery</code></strong>: Use recoveryTargetDescendantConnection field directly instead</li>
 </ul>
+<h4 id="workloadrecoveryinfo">WorkloadRecoveryInfo</h4>
+<ul>
+<li><strong><code>oldWorkloadId</code></strong>: Use the set of [oldWorkloadId + oldWorkloadIds] instead for multiple old IDs mapping to the same new ID.</li>
+</ul>
 <h3 id="deprecated-enum-values">Deprecated Enum Values</h3>
 <ul>
 <li><strong><code>ACTIVE_DIRECTORY_FOREST_RECOVERY</code></strong>: Use EVENT_SERIES instead.</li>
@@ -13841,8 +13999,15 @@
 <li><strong><code>ACTIVE_DIRECTORY_FOREST_RECOVERY_TABLE</code></strong>: Use EVENT_SERIES_BY_OBJECT_TYPE_TABLE.</li>
 <li><strong><code>ACTIVE_DIRECTORY_FOREST_RECOVERY_TABLE</code></strong>: Use EVENT_SERIES_BY_TIME_TABLE.</li>
 <li><strong><code>ARCHIVAL</code></strong>: Use <code>CLOUD_NATIVE_CONFIG_PROTECTION</code> instead.</li>
+<li><strong><code>ARCHIVAL_LOCATION_DELETE</code></strong>: Nothing creates this type; it will be removed in a future release.</li>
+<li><strong><code>ARCHIVAL_LOCATION_DELETE</code></strong>: Nothing creates this type; it will be removed in a future release.</li>
+<li><strong><code>ARCHIVAL_LOCATION_DELETE</code></strong>: Nothing creates this type; it will be removed in a future release.</li>
+<li><strong><code>ARCHIVAL_LOCATION_DELETE</code></strong>: Nothing creates this type; it will be removed in a future release.</li>
 <li><strong><code>AUDIT_LIST</code></strong>: Use BACKUP_STRIKES_V2 instead.</li>
 <li><strong><code>AUDIT_LIST</code></strong>: Use LATEST_GLOBAL_OBJECTS instead.</li>
+<li><strong><code>AWS_IAM_CUSTOMER_ACCOUNT_UPSERT</code></strong>: Nothing creates this type; it will be removed in a future release.</li>
+<li><strong><code>AWS_REGION</code></strong>: Use EC2_INSTANCE_VPC_ID or RDS_INSTANCE_VPC_ID instead.</li>
+<li><strong><code>AWS_TAG</code></strong>: Use EC2_INSTANCE_VPC_ID or RDS_INSTANCE_VPC_ID instead.</li>
 <li><strong><code>AZURE_DEVOPS_REPOSITORY_PROTECTION</code></strong>: Use <code>LAMINAR_OUTPOST_APPLICATION</code> instead.</li>
 <li><strong><code>AZURE_DEVOPS_REPOSITORY_PROTECTION</code></strong>: Use <code>LAMINAR_OUTPOST_MANAGED_IDENTITY</code> instead.</li>
 <li><strong><code>AZURE_DEVOPS_REPOSITORY_PROTECTION</code></strong>: Use <code>LAMINAR_TARGET_APPLICATION</code> instead.</li>
@@ -13850,6 +14015,7 @@
 <li><strong><code>AZURE_DEVOPS_REPO_SIZE</code></strong>: This field is deprecated and no longer used.</li>
 <li><strong><code>CATEGORY_UNSPECIFIED</code></strong>: Use AUTHENTICATION_AND_SECRET_MANAGEMENT instead.</li>
 <li><strong><code>CLOUDDIRECT_NAS_NAMESPACE_VENDOR_TYPE</code></strong>: Not implemented - no longer used.</li>
+<li><strong><code>CLOUD_DIRECT</code></strong>: Nothing returns this sync type; it will be removed in a future release.</li>
 <li><strong><code>CLUSTER_DISCONNECTED</code></strong>: This reason is no longer used.</li>
 <li><strong><code>COLDLINE_GCP</code></strong>: Use STANDARD_GCP instead.</li>
 <li><strong><code>DNS_SERVERS_CHECK</code></strong>: Use CLUSTER_NAME_LENGTH_CHECK instead.</li>
@@ -13879,6 +14045,7 @@
 <li><strong><code>MONGO_DATABASE</code></strong>: MONGO_DB is deprecated and no longer used.</li>
 <li><strong><code>NF_ANOMALIES</code></strong>: Use OBJECT_PROTECTION_AUDIT_DETAIL instead.</li>
 <li><strong><code>NF_ANOMALIES</code></strong>: Use OBJECT_PROTECTION_AUDIT_LIST instead.</li>
+<li><strong><code>OBJECT</code></strong>: Use OBJECT or FIELD instead.</li>
 <li><strong><code>OBJECT_PROTECTION_AUDIT_LIST_EXPORT</code></strong>: Use TASK_DETAILS instead.</li>
 <li><strong><code>ORACLE_ROOT</code></strong>: This root is no longer in use.</li>
 <li><strong><code>OVEREXPOSED</code></strong>: Use IDENTITY_HYGIENE instead.</li>
@@ -13888,6 +14055,7 @@
 <li><strong><code>REMEDIATION_TYPE_IDP_EVENT_REVERT</code></strong>: Use REMEDIATION_TYPE_REMEDIATE_ENTRA_ID_RISK instead.</li>
 <li><strong><code>SAASAPPS_IS_HIDDEN</code></strong>: use <code>SAASAPPS_ORGANIZATION_SCOPE</code> instead.</li>
 <li><strong><code>SECURITY_IDENTITY_DEPARTMENT</code></strong>: Use SECURITY_IDENTITY_DIRECT_DESCENDANT_COUNT instead.</li>
+<li><strong><code>SECURITY_IDENTITY_EVENT_DC_NAME</code></strong>: Use SECURITY_IDENTITY_EVENT_POLICY_INSIGHTS instead.</li>
 <li><strong><code>SECURITY_IDENTITY_EVENT_TITLE</code></strong>: Use SECURITY_IDENTITY_EVENT_TITLE instead.</li>
 <li><strong><code>SIGNIN_LOGS</code></strong>: Use SLA_AUDIT_DETAIL_NG instead.</li>
 <li><strong><code>SLA_AUDIT_DETAIL_NG</code></strong>: Use SLA_AUDIT_LIST_NG instead.</li>

@@ -1,6 +1,6 @@
 # allAccountProducts
 
-*No description available.*
+Retrieves account products that match the specified filters.
 
 ## Arguments
 

@@ -1,6 +1,6 @@
 # RegenerateK8sManifestInput
 
-*No description available.*
+Input to regenerate the manifest for an existing Kubernetes cluster.
 
 ## Fields
 

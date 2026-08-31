@@ -41,12 +41,12 @@ query ClusterNodes($input: GetNodesInput!) {
       "total": 0,
       "data": [
         {
+          "assetId": "example-string",
           "brikId": "example-string",
           "hasUnavailableDisks": true,
           "hostname": "example-string",
           "id": "example-string",
-          "ipAddress": "example-string",
-          "role": "example-string"
+          "ipAddress": "example-string"
         }
       ]
     }

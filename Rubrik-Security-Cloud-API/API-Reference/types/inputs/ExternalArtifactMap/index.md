@@ -1,6 +1,6 @@
 # ExternalArtifactMap
 
-Key value pair for external artifacts associated with an AWS account.
+A map of an AWS artifact to its value for feature artifact registration.
 
 ## Fields
 

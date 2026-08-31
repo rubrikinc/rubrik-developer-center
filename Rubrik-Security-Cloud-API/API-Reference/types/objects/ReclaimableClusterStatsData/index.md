@@ -15,6 +15,7 @@ Reclaimable cluster stats data for a single cluster.
 | totalCapacity              | [Long](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/Long/index.md)! | Total capacity (in bytes).                                                                                 |
 | totalUsedStorage           | [Long](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/Long/index.md)! | Total used storage (in bytes).                                                                             |
 | unprotectedObjectsStorage  | [Long](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/Long/index.md)! | Storage taken by unprotected objects excluding downloaded snapshots (in bytes).                            |
+| version                    | String!                                                                                                   | Rubrik cluster software version (e.g. "9.5.2-1234").                                                       |
 
 ## Used By
 

@@ -1,9 +1,9 @@
 # CloudAccountSortByFieldEnum
 
-*No description available.*
+Fields a list of cloud accounts can be sorted by.
 
 ## Values
 
-| Value | Description |
-| ----- | ----------- |
-| NAME  |             |
+| Value | Description                |
+| ----- | -------------------------- |
+| NAME  | Name of the cloud account. |

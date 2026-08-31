@@ -6,7 +6,7 @@ The O365 includes provision status and ID of O365 org.
 
 | Field                                        | Type                                                                                                                          | Description                                              |
 | -------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------- |
-| exchangeOnColossus                           | Boolean!                                                                                                                      | Exchange colossus status.                                |
+| exchangeOnColossus                           | Boolean!                                                                                                                      | Exchange colossus status. Deprecated: Do not use.        |
 | orgId                                        | String!                                                                                                                       | ID of O365 subscription.                                 |
 | past1DayMailboxComplianceCount               | Int!                                                                                                                          | Count of mailboxes compliant.                            |
 | past1DayMailboxOutOfComplianceCount          | Int!                                                                                                                          | Count of mailboxes out of compliance.                    |

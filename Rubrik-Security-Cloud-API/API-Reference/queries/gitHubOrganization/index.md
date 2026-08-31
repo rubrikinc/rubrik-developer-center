@@ -33,6 +33,7 @@ query GitHubOrganization($workloadId: UUID!) {
     rscPendingObjectPauseAssignment
     slaAssignment
     slaPauseStatus
+    zeusState
   }
 }
 ```

@@ -1,6 +1,6 @@
 # ReplicationSpec
 
-Replication specification.
+Replication specification. Deprecated in favor of ReplicationSpecV2.
 
 ## Fields
 

@@ -1,19 +1,21 @@
 # o365SharepointObjectsNew
 
-Compared to the endpoint o365SharepointObjectList, this endpoint retrieves and persists SharePoint site hierarchy from Microsoft directly. Returns the SharePoint objects after filtering by the object types.
+Loads and persists the SharePoint site hierarchy from Microsoft, then returns the SharePoint objects under the given parent, filtered by object type.
 
 ## Arguments
 
-| Argument                            | Type                                                                                                                                   | Description                                                             |
-| ----------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------- |
-| first                               | Int                                                                                                                                    | Returns the first n elements from the list.                             |
-| after                               | String                                                                                                                                 | Returns the elements in the list that occur after the specified cursor. |
-| sortBy                              | [HierarchySortByField](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/HierarchySortByField/index.md) | Sort hierarchy objects according to the hierarchy field.                |
-| sortOrder                           | [SortOrder](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/SortOrder/index.md)                       | Sorts the order of results.                                             |
-| filter                              | \[[Filter](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/Filter/index.md)!\]                       | Hierarchy object filter.                                                |
-| objectTypeFilter                    | [String!]                                                                                                                              | Types of objects to include.                                            |
-| includeEntireHierarchy *(required)* | Boolean!                                                                                                                               | If true, the entire hierarchy will be searched.                         |
-| fid *(required)*                    | [UUID](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/UUID/index.md)!                              | Rubrik UUID for the object.                                             |
+| Argument                            | Type                                                                                                                                   | Description                                                              |
+| ----------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------ |
+| first                               | Int                                                                                                                                    | Returns the first n elements from the list.                              |
+| after                               | String                                                                                                                                 | Returns the elements in the list that occur after the specified cursor.  |
+| last                                | Int                                                                                                                                    | Returns the last n elements from the list.                               |
+| before                              | String                                                                                                                                 | Returns the elements in the list that occur before the specified cursor. |
+| sortBy                              | [HierarchySortByField](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/HierarchySortByField/index.md) | Sort hierarchy objects according to the hierarchy field.                 |
+| sortOrder                           | [SortOrder](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/SortOrder/index.md)                       | Sorts the order of results.                                              |
+| filter                              | \[[Filter](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/Filter/index.md)!\]                       | Hierarchy object filter.                                                 |
+| objectTypeFilter                    | [String!]                                                                                                                              | Types of objects to include.                                             |
+| includeEntireHierarchy *(required)* | Boolean!                                                                                                                               | Whether to include the entire hierarchy.                                 |
+| fid *(required)*                    | [UUID](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/UUID/index.md)!                              | The FID of the parent O365Org or O365Site.                               |
 
 ## Returns
 

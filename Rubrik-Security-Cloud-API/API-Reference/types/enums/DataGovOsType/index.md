@@ -1,6 +1,6 @@
 # DataGovOsType
 
-*No description available.*
+The operating system of the workload a file belongs to.
 
 ## Values
 

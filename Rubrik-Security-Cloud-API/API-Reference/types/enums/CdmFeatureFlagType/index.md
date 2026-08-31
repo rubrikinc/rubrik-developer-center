@@ -84,3 +84,4 @@ Cluster feature identifiers.
 | ORACLEDB_TAKE_TLOG_BACKUP                     | ORACLEDB_TAKE_TLOG_BACKUP.                                                       |
 | REPLICATION_TARGET_SETUP_UPDATE               | Support for replication setup type update.                                       |
 | SAP_HANA_STATIC_RETENTION                     | Support for SAP HANA static retention.                                           |
+| VSPHERE_COMPUTE_VISIBILITY_DISABLED           | Support for disabling the vSphere compute visibility filter.                     |

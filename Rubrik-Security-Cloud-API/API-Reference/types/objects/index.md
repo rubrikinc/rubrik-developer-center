@@ -1,6 +1,6 @@
 # Object Types
 
-3752 types.
+3780 types.
 
 [AWSExoTaskImageBundle](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AWSExoTaskImageBundle/index.md)\
 [AboutInformation](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AboutInformation/index.md)\
@@ -52,6 +52,7 @@
 [ActivityAuditorEntityDetails](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/ActivityAuditorEntityDetails/index.md)\
 [ActivityAuditorGroupMembershipChange](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/ActivityAuditorGroupMembershipChange/index.md)\
 [ActivityAuditorPrimaryTargetEntity](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/ActivityAuditorPrimaryTargetEntity/index.md)\
+[ActivityClassificationSource](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/ActivityClassificationSource/index.md)\
 [ActivityConnection](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/ActivityConnection/index.md)\
 [ActivityEdge](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/ActivityEdge/index.md)\
 [ActivityEntry](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/ActivityEntry/index.md)\
@@ -123,6 +124,8 @@
 [AggregateSnapshotLocationDetail](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AggregateSnapshotLocationDetail/index.md)\
 [AggregatedValues](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AggregatedValues/index.md)\
 [AirGappedTprReqChangesTemplate](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AirGappedTprReqChangesTemplate/index.md)\
+[AirMcpGatewayConnectionData](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AirMcpGatewayConnectionData/index.md)\
+[AirUpdateMcpGatewayReply](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AirUpdateMcpGatewayReply/index.md)\
 [AlertInfo](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AlertInfo/index.md)\
 [AllEnabledFeaturesForAccountReply](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AllEnabledFeaturesForAccountReply/index.md)\
 [AllRcvAccountEntitlements](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AllRcvAccountEntitlements/index.md)\
@@ -160,6 +163,7 @@
 [AnomalyResultGroupedDataConnection](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AnomalyResultGroupedDataConnection/index.md)\
 [AnomalyResultGroupedDataEdge](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AnomalyResultGroupedDataEdge/index.md)\
 [AnomalyStatus](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AnomalyStatus/index.md)\
+[AnthropicOrg](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AnthropicOrg/index.md)\
 [ApiGroupToResourcesObjects](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/ApiGroupToResourcesObjects/index.md)\
 [ApiTypeUsage](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/ApiTypeUsage/index.md)\
 [ApiUsageInfo](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/ApiUsageInfo/index.md)\
@@ -174,6 +178,7 @@
 [AppAccessPrincipalConnection](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AppAccessPrincipalConnection/index.md)\
 [AppAccessPrincipalEdge](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AppAccessPrincipalEdge/index.md)\
 [AppIdForType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AppIdForType/index.md)\
+[AppItemWithCascadingImpact](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AppItemWithCascadingImpact/index.md)\
 [AppManifestInfo](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AppManifestInfo/index.md)\
 [AppMetadata](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AppMetadata/index.md)\
 [AppNode](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AppNode/index.md)\
@@ -228,6 +233,7 @@
 [AttachmentSpecForEc2Instance](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AttachmentSpecForEc2Instance/index.md)\
 [AttachmentSpecsForManagedDisk](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AttachmentSpecsForManagedDisk/index.md)\
 [AttachmentSpecsForVirtualMachine](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AttachmentSpecsForVirtualMachine/index.md)\
+[AttributeNameValues](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AttributeNameValues/index.md)\
 [AttributesSummary](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AttributesSummary/index.md)\
 [AuditSubscription](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AuditSubscription/index.md)\
 [AuthCounts](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AuthCounts/index.md)\
@@ -396,6 +402,7 @@
 [AzureCloudAccountSubscriptionDetail](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AzureCloudAccountSubscriptionDetail/index.md)\
 [AzureCloudAccountSubscriptionWithFeatures](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AzureCloudAccountSubscriptionWithFeatures/index.md)\
 [AzureCloudAccountTenant](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AzureCloudAccountTenant/index.md)\
+[AzureCloudAccountTenantApp](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AzureCloudAccountTenantApp/index.md)\
 [AzureCloudAccountTenantWithExoConfigs](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AzureCloudAccountTenantWithExoConfigs/index.md)\
 [AzureCloudNativeTargetCompanion](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AzureCloudNativeTargetCompanion/index.md)\
 [AzureClusterStorageAccountRedundancyReply](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AzureClusterStorageAccountRedundancyReply/index.md)\
@@ -410,6 +417,7 @@
 [AzureDevOpsProjectConnection](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AzureDevOpsProjectConnection/index.md)\
 [AzureDevOpsProjectEdge](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AzureDevOpsProjectEdge/index.md)\
 [AzureDevOpsProjectFixedObjectCounts](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AzureDevOpsProjectFixedObjectCounts/index.md)\
+[AzureDevOpsProjectMissingPermission](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AzureDevOpsProjectMissingPermission/index.md)\
 [AzureDevOpsRepository](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AzureDevOpsRepository/index.md)\
 [AzureDevOpsRepositoryConnection](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AzureDevOpsRepositoryConnection/index.md)\
 [AzureDevOpsRepositoryEdge](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AzureDevOpsRepositoryEdge/index.md)\
@@ -536,6 +544,7 @@
 [BackupThrottleSetting](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/BackupThrottleSetting/index.md)\
 [BackupWindow](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/BackupWindow/index.md)\
 [BackupWindowSpec](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/BackupWindowSpec/index.md)\
+[BackupWindowsForObjectsReply](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/BackupWindowsForObjectsReply/index.md)\
 [BaseGuestCredentialDetail](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/BaseGuestCredentialDetail/index.md)\
 [BaseSnapshotSummary](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/BaseSnapshotSummary/index.md)\
 [BasicOracleSnapshotSummary](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/BasicOracleSnapshotSummary/index.md)\
@@ -597,27 +606,7 @@
 [CapacityContribution](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/CapacityContribution/index.md)\
 [CascadingArchivalLocationToClusterMapping](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/CascadingArchivalLocationToClusterMapping/index.md)\
 [CascadingArchivalSpec](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/CascadingArchivalSpec/index.md)\
-[CassandraBackupParams](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/CassandraBackupParams/index.md)\
-[CassandraColumnFamily](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/CassandraColumnFamily/index.md)\
-[CassandraColumnFamilyConnection](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/CassandraColumnFamilyConnection/index.md)\
-[CassandraColumnFamilyEdge](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/CassandraColumnFamilyEdge/index.md)\
-[CassandraColumnObject](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/CassandraColumnObject/index.md)\
-[CassandraKeyspace](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/CassandraKeyspace/index.md)\
-[CassandraKeyspaceConnection](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/CassandraKeyspaceConnection/index.md)\
-[CassandraKeyspaceDescendantTypeConnection](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/CassandraKeyspaceDescendantTypeConnection/index.md)\
-[CassandraKeyspaceDescendantTypeEdge](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/CassandraKeyspaceDescendantTypeEdge/index.md)\
-[CassandraKeyspaceEdge](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/CassandraKeyspaceEdge/index.md)\
-[CassandraKeyspacePhysicalChildTypeConnection](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/CassandraKeyspacePhysicalChildTypeConnection/index.md)\
-[CassandraKeyspacePhysicalChildTypeEdge](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/CassandraKeyspacePhysicalChildTypeEdge/index.md)\
-[CassandraSchemaObject](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/CassandraSchemaObject/index.md)\
-[CassandraSource](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/CassandraSource/index.md)\
-[CassandraSourceConnection](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/CassandraSourceConnection/index.md)\
-[CassandraSourceDescendantTypeConnection](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/CassandraSourceDescendantTypeConnection/index.md)\
-[CassandraSourceDescendantTypeEdge](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/CassandraSourceDescendantTypeEdge/index.md)\
-[CassandraSourceEdge](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/CassandraSourceEdge/index.md)\
-[CassandraSourcePhysicalChildTypeConnection](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/CassandraSourcePhysicalChildTypeConnection/index.md)\
-[CassandraSourcePhysicalChildTypeEdge](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/CassandraSourcePhysicalChildTypeEdge/index.md)\
-[CassandraSslOptions](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/CassandraSslOptions/index.md)\
+[CascadingImpactResult](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/CascadingImpactResult/index.md)\
 [CategorizedTprReqChangesTemplate](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/CategorizedTprReqChangesTemplate/index.md)\
 [CategorizedTprRequestedChangeEntry](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/CategorizedTprRequestedChangeEntry/index.md)\
 [CcProvisionJobReply](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/CcProvisionJobReply/index.md)\
@@ -738,6 +727,7 @@
 [CloudAccountsGetListFiltersReply](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/CloudAccountsGetListFiltersReply/index.md)\
 [CloudAccountsTprReqChangesTemplate](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/CloudAccountsTprReqChangesTemplate/index.md)\
 [CloudArchivalLocationTprReqChangesTemplate](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/CloudArchivalLocationTprReqChangesTemplate/index.md)\
+[CloudAuditEvent](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/CloudAuditEvent/index.md)\
 [CloudDirectAddSubdirBackupReply](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/CloudDirectAddSubdirBackupReply/index.md)\
 [CloudDirectCheckSharePathResp](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/CloudDirectCheckSharePathResp/index.md)\
 [CloudDirectCluster](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/CloudDirectCluster/index.md)\
@@ -817,6 +807,7 @@
 [CloudNativeTagConditionOutput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/CloudNativeTagConditionOutput/index.md)\
 [CloudNativeTagPairOutput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/CloudNativeTagPairOutput/index.md)\
 [CloudNativeTagRule](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/CloudNativeTagRule/index.md)\
+[CloudNativeTagRuleHierarchy](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/CloudNativeTagRuleHierarchy/index.md)\
 [CloudNativeVersionedFile](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/CloudNativeVersionedFile/index.md)\
 [CloudNativeVersionedFileConnection](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/CloudNativeVersionedFileConnection/index.md)\
 [CloudNativeVersionedFileEdge](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/CloudNativeVersionedFileEdge/index.md)\
@@ -945,6 +936,7 @@
 [CreateO365AppKickoffResp](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/CreateO365AppKickoffResp/index.md)\
 [CreateOnDemandGlueIcebergTableBackupReply](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/CreateOnDemandGlueIcebergTableBackupReply/index.md)\
 [CreateOnDemandJobReply](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/CreateOnDemandJobReply/index.md)\
+[CreateOnDemandS3TablesIcebergTableBackupReply](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/CreateOnDemandS3TablesIcebergTableBackupReply/index.md)\
 [CreateOrgReply](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/CreateOrgReply/index.md)\
 [CreateOrgSwitchSessionReply](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/CreateOrgSwitchSessionReply/index.md)\
 [CreateRcvPrivateEndpointApprovalRequestReply](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/CreateRcvPrivateEndpointApprovalRequestReply/index.md)\
@@ -1021,6 +1013,9 @@
 [DataTypeResult](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/DataTypeResult/index.md)\
 [DataTypeResults](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/DataTypeResults/index.md)\
 [DataTypeStats](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/DataTypeStats/index.md)\
+[DatabaseLogRetentionConfigEntryType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/DatabaseLogRetentionConfigEntryType/index.md)\
+[DatabaseLogRetentionConfigType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/DatabaseLogRetentionConfigType/index.md)\
+[DatabaseLogRetentionInfoType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/DatabaseLogRetentionInfoType/index.md)\
 [DatagovAccessMethodDetailsType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/DatagovAccessMethodDetailsType/index.md)\
 [DatastoreFreespaceThresholdType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/DatastoreFreespaceThresholdType/index.md)\
 [DatasyncMigrationInfo](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/DatasyncMigrationInfo/index.md)\
@@ -1057,6 +1052,7 @@
 [Db2RecoverableRangeEdge](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/Db2RecoverableRangeEdge/index.md)\
 [Db2WorkloadDataBackupFile](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/Db2WorkloadDataBackupFile/index.md)\
 [Db2WorkloadDataSnapshotMetadata](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/Db2WorkloadDataSnapshotMetadata/index.md)\
+[DbEngineVersionInfo](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/DbEngineVersionInfo/index.md)\
 [DbLogReportProperties](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/DbLogReportProperties/index.md)\
 [DbLogReportSummary](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/DbLogReportSummary/index.md)\
 [DbLogReportSummaryListReply](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/DbLogReportSummaryListReply/index.md)\
@@ -1140,6 +1136,7 @@
 [DownloadPackageReplyWithUuid](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/DownloadPackageReplyWithUuid/index.md)\
 [DownloadPackageStatusReply](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/DownloadPackageStatusReply/index.md)\
 [DownloadResultsCsvReply](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/DownloadResultsCsvReply/index.md)\
+[DownloadSalesforcePermissionsReply](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/DownloadSalesforcePermissionsReply/index.md)\
 [DownloadSlaWithReplicationCsvReply](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/DownloadSlaWithReplicationCsvReply/index.md)\
 [DownloadThreatHuntCsvReply](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/DownloadThreatHuntCsvReply/index.md)\
 [DownloadThreatHuntV2CsvResponse](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/DownloadThreatHuntV2CsvResponse/index.md)\
@@ -1171,6 +1168,11 @@
 [EntraIDRoleProperties](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/EntraIDRoleProperties/index.md)\
 [EntraIDServicePrincipalMetadataProperties](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/EntraIDServicePrincipalMetadataProperties/index.md)\
 [EntraIDUserMetadataProperties](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/EntraIDUserMetadataProperties/index.md)\
+[EntraIdClaimsMappingPolicy](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/EntraIdClaimsMappingPolicy/index.md)\
+[EntraIdHomeRealmDiscoveryPolicy](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/EntraIdHomeRealmDiscoveryPolicy/index.md)\
+[EntraIdLinkedServicePrincipal](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/EntraIdLinkedServicePrincipal/index.md)\
+[EntraIdTokenIssuancePolicy](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/EntraIdTokenIssuancePolicy/index.md)\
+[EntraIdTokenLifetimePolicy](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/EntraIdTokenLifetimePolicy/index.md)\
 [EntraIdUserShadowMetadataAdminProperties](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/EntraIdUserShadowMetadataAdminProperties/index.md)\
 [ErrorInfo](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/ErrorInfo/index.md)\
 [EulaState](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/EulaState/index.md)\
@@ -1368,8 +1370,13 @@
 [FusionComputeVrmSummary](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/FusionComputeVrmSummary/index.md)\
 [GatewayInfo](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/GatewayInfo/index.md)\
 [GcpAlloyDbCluster](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/GcpAlloyDbCluster/index.md)\
+[GcpBigQueryDataset](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/GcpBigQueryDataset/index.md)\
 [GcpBigQueryDatasetSpecificSnapshot](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/GcpBigQueryDatasetSpecificSnapshot/index.md)\
+[GcpBigQueryModel](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/GcpBigQueryModel/index.md)\
+[GcpBigQueryRoutine](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/GcpBigQueryRoutine/index.md)\
+[GcpBigQueryTable](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/GcpBigQueryTable/index.md)\
 [GcpBigQueryTableSpecificSnapshot](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/GcpBigQueryTableSpecificSnapshot/index.md)\
+[GcpBigQueryView](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/GcpBigQueryView/index.md)\
 [GcpCloudAccountAddProjectDetail](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/GcpCloudAccountAddProjectDetail/index.md)\
 [GcpCloudAccountAddProjectsReply](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/GcpCloudAccountAddProjectsReply/index.md)\
 [GcpCloudAccountFeatureDetail](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/GcpCloudAccountFeatureDetail/index.md)\
@@ -1460,6 +1467,7 @@
 [GetHealthMonitorPolicyStatusReply](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/GetHealthMonitorPolicyStatusReply/index.md)\
 [GetHitsExposureStatsReply](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/GetHitsExposureStatsReply/index.md)\
 [GetHostRbsNetworkThrottleResponse](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/GetHostRbsNetworkThrottleResponse/index.md)\
+[GetImageClassificationClusterConfigsReply](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/GetImageClassificationClusterConfigsReply/index.md)\
 [GetImplicitlyAuthorizedAncestorSummariesResponse](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/GetImplicitlyAuthorizedAncestorSummariesResponse/index.md)\
 [GetImplicitlyAuthorizedObjectSummariesResponse](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/GetImplicitlyAuthorizedObjectSummariesResponse/index.md)\
 [GetLambdaConfigReply](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/GetLambdaConfigReply/index.md)\
@@ -1468,7 +1476,6 @@
 [GetLatestGpoSettingsRes](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/GetLatestGpoSettingsRes/index.md)\
 [GetLicensedProductsInfoReply](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/GetLicensedProductsInfoReply/index.md)\
 [GetMfaSettingReply](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/GetMfaSettingReply/index.md)\
-[GetMosaicRecoverableRangeResponse](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/GetMosaicRecoverableRangeResponse/index.md)\
 [GetNutanixMountsReply](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/GetNutanixMountsReply/index.md)\
 [GetO365ServiceStatusResp](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/GetO365ServiceStatusResp/index.md)\
 [GetO365StorageStatsResp](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/GetO365StorageStatsResp/index.md)\
@@ -1497,7 +1504,6 @@
 [GetRecoveryAnalysisResultResp](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/GetRecoveryAnalysisResultResp/index.md)\
 [GetRemediationTypesType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/GetRemediationTypesType/index.md)\
 [GetS3BucketStateForRecoveryReply](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/GetS3BucketStateForRecoveryReply/index.md)\
-[GetSchemaResponse](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/GetSchemaResponse/index.md)\
 [GetScriptsForManualPermissionValidationReply](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/GetScriptsForManualPermissionValidationReply/index.md)\
 [GetSelfServeRollingUpgradeReply](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/GetSelfServeRollingUpgradeReply/index.md)\
 [GetSelfServiceInfoForUserResp](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/GetSelfServiceInfoForUserResp/index.md)\
@@ -1561,6 +1567,9 @@
 [HaPolicy](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/HaPolicy/index.md)\
 [HaPolicyConnection](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/HaPolicyConnection/index.md)\
 [HaPolicyEdge](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/HaPolicyEdge/index.md)\
+[HarmfulLifecyclePolicy](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/HarmfulLifecyclePolicy/index.md)\
+[HarmfulLifecyclePolicyConnection](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/HarmfulLifecyclePolicyConnection/index.md)\
+[HarmfulLifecyclePolicyEdge](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/HarmfulLifecyclePolicyEdge/index.md)\
 [HasAccessToO365ObjectsResp](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/HasAccessToO365ObjectsResp/index.md)\
 [HasRelicAzureAdSnapshotReplyType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/HasRelicAzureAdSnapshotReplyType/index.md)\
 [HashDetail](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/HashDetail/index.md)\
@@ -1662,6 +1671,9 @@
 [HypervServerEdge](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/HypervServerEdge/index.md)\
 [HypervServerLogicalChildTypeConnection](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/HypervServerLogicalChildTypeConnection/index.md)\
 [HypervServerLogicalChildTypeEdge](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/HypervServerLogicalChildTypeEdge/index.md)\
+[HypervStandaloneNicSpec](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/HypervStandaloneNicSpec/index.md)\
+[HypervStandaloneTarget](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/HypervStandaloneTarget/index.md)\
+[HypervTargetConfig](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/HypervTargetConfig/index.md)\
 [HypervTopLevelDescendantTypeConnection](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/HypervTopLevelDescendantTypeConnection/index.md)\
 [HypervTopLevelDescendantTypeEdge](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/HypervTopLevelDescendantTypeEdge/index.md)\
 [HypervVirtualDiskInfo](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/HypervVirtualDiskInfo/index.md)\
@@ -1675,10 +1687,21 @@
 [HypervVirtualSwitchInfo](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/HypervVirtualSwitchInfo/index.md)\
 [HypervVirtualSwitchesResponse](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/HypervVirtualSwitchesResponse/index.md)\
 [HypervVmAgentStatus](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/HypervVmAgentStatus/index.md)\
+[HypervVmRecoverySpec](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/HypervVmRecoverySpec/index.md)\
+[HypervisorEnvironment](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/HypervisorEnvironment/index.md)\
+[HypervisorEnvironmentDetails](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/HypervisorEnvironmentDetails/index.md)\
+[HypervisorEnvironmentTypeOneof](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/HypervisorEnvironmentTypeOneof/index.md)\
+[HypervisorEnvironmentV1](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/HypervisorEnvironmentV1/index.md)\
+[HypervisorSlaDomainInfo](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/HypervisorSlaDomainInfo/index.md)\
+[HypervisorSpecificDetails](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/HypervisorSpecificDetails/index.md)\
+[HypervisorVirtualMachine](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/HypervisorVirtualMachine/index.md)\
+[HypervisorVirtualMachineDetails](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/HypervisorVirtualMachineDetails/index.md)\
+[HypervisorVirtualMachineV1](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/HypervisorVirtualMachineV1/index.md)\
 [IDPPrincipalCounts](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/IDPPrincipalCounts/index.md)\
 [IOCDetails](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/IOCDetails/index.md)\
 [IbmCosDetailsOutput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/IbmCosDetailsOutput/index.md)\
 [IbmCosDetailsType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/IbmCosDetailsType/index.md)\
+[IcebergSlaConfig](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/IcebergSlaConfig/index.md)\
 [IcebergTableSpecificSnapshot](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/IcebergTableSpecificSnapshot/index.md)\
 [IdentityActivitySubscription](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/IdentityActivitySubscription/index.md)\
 [IdentityDataLocationEncryptionInfo](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/IdentityDataLocationEncryptionInfo/index.md)\
@@ -1700,6 +1723,7 @@
 [IdpPolicyInfo](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/IdpPolicyInfo/index.md)\
 [IdpViolationDetails](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/IdpViolationDetails/index.md)\
 [IgnoreClusterRemovalPrecheckReply](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/IgnoreClusterRemovalPrecheckReply/index.md)\
+[ImageClassificationClusterConfig](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/ImageClassificationClusterConfig/index.md)\
 [InactiveLockoutConfig](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/InactiveLockoutConfig/index.md)\
 [IndicatorOfCompromise](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/IndicatorOfCompromise/index.md)\
 [IndicatorOfCompromiseInputOutputListType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/IndicatorOfCompromiseInputOutputListType/index.md)\
@@ -1753,6 +1777,7 @@
 [IpWhitelistSettings](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/IpWhitelistSettings/index.md)\
 [IpmiAccess](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/IpmiAccess/index.md)\
 [IpmiInfo](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/IpmiInfo/index.md)\
+[IrisdbSlaConfig](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/IrisdbSlaConfig/index.md)\
 [IsCloudClusterDiskUpgradeAvailableReply](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/IsCloudClusterDiskUpgradeAvailableReply/index.md)\
 [IsCloudNativeTagRuleNameUniqueReply](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/IsCloudNativeTagRuleNameUniqueReply/index.md)\
 [IsVolumeSnapshotRestorableReply](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/IsVolumeSnapshotRestorableReply/index.md)\
@@ -1801,7 +1826,6 @@
 [KosmosParentHierarchyObjectPhysicalChildTypeConnection](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/KosmosParentHierarchyObjectPhysicalChildTypeConnection/index.md)\
 [KosmosParentHierarchyObjectPhysicalChildTypeEdge](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/KosmosParentHierarchyObjectPhysicalChildTypeEdge/index.md)\
 [KosmosPerObjectAsyncRequestStatus](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/KosmosPerObjectAsyncRequestStatus/index.md)\
-[KosmosTopologyReplicaInfo](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/KosmosTopologyReplicaInfo/index.md)\
 [KosmosUserMessage](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/KosmosUserMessage/index.md)\
 [KosmosWorkloadAppMetadata](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/KosmosWorkloadAppMetadata/index.md)\
 [KosmosWorkloadLiveMount](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/KosmosWorkloadLiveMount/index.md)\
@@ -1871,10 +1895,8 @@
 [ListIntegrationsReply](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/ListIntegrationsReply/index.md)\
 [ListLocationsReply](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/ListLocationsReply/index.md)\
 [ListO365DirectoryObjectAttributesResp](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/ListO365DirectoryObjectAttributesResp/index.md)\
-[ListStoreResponse](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/ListStoreResponse/index.md)\
 [ListStoredDiskLocationsReply](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/ListStoredDiskLocationsReply/index.md)\
 [ListThreatFeedsResponse](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/ListThreatFeedsResponse/index.md)\
-[ListVersionResponse](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/ListVersionResponse/index.md)\
 [LocalClusterInfo](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/LocalClusterInfo/index.md)\
 [LocationImmutabilityType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/LocationImmutabilityType/index.md)\
 [LocationPathPoint](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/LocationPathPoint/index.md)\
@@ -1910,6 +1932,7 @@
 [M365RecoveryPlanFilterComposite](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/M365RecoveryPlanFilterComposite/index.md)\
 [M365RecoveryPlanFilterLeaf](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/M365RecoveryPlanFilterLeaf/index.md)\
 [M365RecoveryPlanFilterNode](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/M365RecoveryPlanFilterNode/index.md)\
+[M365RecoveryPlanWorkloadSummary](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/M365RecoveryPlanWorkloadSummary/index.md)\
 [M365Region](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/M365Region/index.md)\
 [M365RegionsResp](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/M365RegionsResp/index.md)\
 [M365SharePointRecoveryPlanFilterLeaf](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/M365SharePointRecoveryPlanFilterLeaf/index.md)\
@@ -1971,6 +1994,7 @@
 [MapAzureCloudAccountExocomputeSubscriptionReply](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/MapAzureCloudAccountExocomputeSubscriptionReply/index.md)\
 [MapAzureCloudAccountToPersistentStorageLocationReply](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/MapAzureCloudAccountToPersistentStorageLocationReply/index.md)\
 [MapCloudAccountExocomputeAccountReply](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/MapCloudAccountExocomputeAccountReply/index.md)\
+[MariadbInstanceAppMetadata](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/MariadbInstanceAppMetadata/index.md)\
 [MariadbSlaConfig](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/MariadbSlaConfig/index.md)\
 [MarkAgentSecondaryCertificateReply](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/MarkAgentSecondaryCertificateReply/index.md)\
 [MatchedSnapshot](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/MatchedSnapshot/index.md)\
@@ -2016,6 +2040,7 @@
 [MongoCollectionSetPhysicalChildTypeConnection](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/MongoCollectionSetPhysicalChildTypeConnection/index.md)\
 [MongoCollectionSetPhysicalChildTypeEdge](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/MongoCollectionSetPhysicalChildTypeEdge/index.md)\
 [MongoConfig](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/MongoConfig/index.md)\
+[MongoDataHostsConnection](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/MongoDataHostsConnection/index.md)\
 [MongoDatabase](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/MongoDatabase/index.md)\
 [MongoDatabaseConnection](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/MongoDatabaseConnection/index.md)\
 [MongoDatabaseDescendantTypeConnection](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/MongoDatabaseDescendantTypeConnection/index.md)\
@@ -2039,45 +2064,11 @@
 [MongoSourceEdge](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/MongoSourceEdge/index.md)\
 [MongoSourcePhysicalChildTypeConnection](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/MongoSourcePhysicalChildTypeConnection/index.md)\
 [MongoSourcePhysicalChildTypeEdge](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/MongoSourcePhysicalChildTypeEdge/index.md)\
-[MongodbBackupParams](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/MongodbBackupParams/index.md)\
-[MongodbCollection](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/MongodbCollection/index.md)\
-[MongodbCollectionConnection](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/MongodbCollectionConnection/index.md)\
-[MongodbCollectionEdge](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/MongodbCollectionEdge/index.md)\
-[MongodbDatabase](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/MongodbDatabase/index.md)\
-[MongodbDatabaseConnection](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/MongodbDatabaseConnection/index.md)\
-[MongodbDatabaseDescendantTypeConnection](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/MongodbDatabaseDescendantTypeConnection/index.md)\
-[MongodbDatabaseDescendantTypeEdge](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/MongodbDatabaseDescendantTypeEdge/index.md)\
-[MongodbDatabaseEdge](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/MongodbDatabaseEdge/index.md)\
-[MongodbDatabasePhysicalChildTypeConnection](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/MongodbDatabasePhysicalChildTypeConnection/index.md)\
-[MongodbDatabasePhysicalChildTypeEdge](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/MongodbDatabasePhysicalChildTypeEdge/index.md)\
-[MongodbHost](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/MongodbHost/index.md)\
-[MongodbSource](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/MongodbSource/index.md)\
-[MongodbSourceConfigParams](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/MongodbSourceConfigParams/index.md)\
-[MongodbSourceConnection](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/MongodbSourceConnection/index.md)\
-[MongodbSourceDescendantTypeConnection](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/MongodbSourceDescendantTypeConnection/index.md)\
-[MongodbSourceDescendantTypeEdge](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/MongodbSourceDescendantTypeEdge/index.md)\
-[MongodbSourceEdge](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/MongodbSourceEdge/index.md)\
-[MongodbSourcePhysicalChildTypeConnection](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/MongodbSourcePhysicalChildTypeConnection/index.md)\
-[MongodbSourcePhysicalChildTypeEdge](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/MongodbSourcePhysicalChildTypeEdge/index.md)\
-[MongodbSslOptions](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/MongodbSslOptions/index.md)\
 [MonthlyDaySpec](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/MonthlyDaySpec/index.md)\
 [MonthlyDaySpecDayOfWeek](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/MonthlyDaySpecDayOfWeek/index.md)\
 [MonthlyDaySpecSpecificDate](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/MonthlyDaySpecSpecificDate/index.md)\
 [MonthlySnapshotSchedule](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/MonthlySnapshotSchedule/index.md)\
 [MosaicAsyncResponse](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/MosaicAsyncResponse/index.md)\
-[MosaicRecoverableRangeObject](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/MosaicRecoverableRangeObject/index.md)\
-[MosaicRecoveryRangeObject](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/MosaicRecoveryRangeObject/index.md)\
-[MosaicRecoveryRangeResponse](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/MosaicRecoveryRangeResponse/index.md)\
-[MosaicSnapshot](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/MosaicSnapshot/index.md)\
-[MosaicSnapshotConnection](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/MosaicSnapshotConnection/index.md)\
-[MosaicSnapshotEdge](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/MosaicSnapshotEdge/index.md)\
-[MosaicSnapshotGroupByType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/MosaicSnapshotGroupByType/index.md)\
-[MosaicSnapshotGroupByTypeConnection](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/MosaicSnapshotGroupByTypeConnection/index.md)\
-[MosaicSnapshotGroupByTypeEdge](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/MosaicSnapshotGroupByTypeEdge/index.md)\
-[MosaicStorageLocation](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/MosaicStorageLocation/index.md)\
-[MosaicStoreConnectionParameters](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/MosaicStoreConnectionParameters/index.md)\
-[MosaicStoreObject](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/MosaicStoreObject/index.md)\
-[MosaicVersionObject](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/MosaicVersionObject/index.md)\
 [MountDiskReply](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/MountDiskReply/index.md)\
 [MountedVolume](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/MountedVolume/index.md)\
 [MssqlAppMetadata](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/MssqlAppMetadata/index.md)\
@@ -2152,7 +2143,9 @@
 [MvcProfile](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/MvcProfile/index.md)\
 [MvcProfileConnection](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/MvcProfileConnection/index.md)\
 [MvcProfileEdge](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/MvcProfileEdge/index.md)\
+[MysqlBackupNodePreference](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/MysqlBackupNodePreference/index.md)\
 [MysqlHaClusterInfo](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/MysqlHaClusterInfo/index.md)\
+[MysqlTopologyReplicaInfo](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/MysqlTopologyReplicaInfo/index.md)\
 [MysqldbDatabase](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/MysqldbDatabase/index.md)\
 [MysqldbDatabaseConnection](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/MysqldbDatabaseConnection/index.md)\
 [MysqldbDatabaseEdge](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/MysqldbDatabaseEdge/index.md)\
@@ -2228,6 +2221,7 @@
 [NfAnomalyResultGroupedData](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/NfAnomalyResultGroupedData/index.md)\
 [NfAnomalyResultGroupedDataConnection](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/NfAnomalyResultGroupedDataConnection/index.md)\
 [NfAnomalyResultGroupedDataEdge](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/NfAnomalyResultGroupedDataEdge/index.md)\
+[NicIpConfig](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/NicIpConfig/index.md)\
 [NoEndRecurrenceRange](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/NoEndRecurrenceRange/index.md)\
 [NodeIp](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/NodeIp/index.md)\
 [NodePolicyCheckResult](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/NodePolicyCheckResult/index.md)\
@@ -2407,6 +2401,8 @@
 [O365TeamsConversationsConnection](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/O365TeamsConversationsConnection/index.md)\
 [O365TeamsConversationsEdge](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/O365TeamsConversationsEdge/index.md)\
 [O365TeamsEdge](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/O365TeamsEdge/index.md)\
+[O365TodoTask](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/O365TodoTask/index.md)\
+[O365TodoTaskFolder](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/O365TodoTaskFolder/index.md)\
 [O365User](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/O365User/index.md)\
 [O365UserConnection](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/O365UserConnection/index.md)\
 [O365UserDescendantConnection](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/O365UserDescendantConnection/index.md)\
@@ -2419,6 +2415,7 @@
 [OauthCodesForEdgeRegReply](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/OauthCodesForEdgeRegReply/index.md)\
 [OauthRequestPayload](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/OauthRequestPayload/index.md)\
 [ObjectBackupWindowStatus](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/ObjectBackupWindowStatus/index.md)\
+[ObjectBackupWindowsEntry](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/ObjectBackupWindowsEntry/index.md)\
 [ObjectClusterSummary](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/ObjectClusterSummary/index.md)\
 [ObjectIdToSnapshotIds](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/ObjectIdToSnapshotIds/index.md)\
 [ObjectIdsForHierarchyType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/ObjectIdsForHierarchyType/index.md)\
@@ -2449,6 +2446,10 @@
 [OnedriveForSelfService](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/OnedriveForSelfService/index.md)\
 [OpenstackCephSetting](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/OpenstackCephSetting/index.md)\
 [OpenstackMonHost](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/OpenstackMonHost/index.md)\
+[OpenstackNetworkTags](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/OpenstackNetworkTags/index.md)\
+[OpenstackTag](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/OpenstackTag/index.md)\
+[OpenstackVirtualMachine](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/OpenstackVirtualMachine/index.md)\
+[OpenstackVmAgentStatus](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/OpenstackVmAgentStatus/index.md)\
 [OpenstackVmSubObject](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/OpenstackVmSubObject/index.md)\
 [OptionGroup](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/OptionGroup/index.md)\
 [OracleAcoParameterDetail](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/OracleAcoParameterDetail/index.md)\
@@ -2625,8 +2626,11 @@
 [PostgreSQLDbClusterMetadata](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/PostgreSQLDbClusterMetadata/index.md)\
 [PostgreSQLDbClusterStatus](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/PostgreSQLDbClusterStatus/index.md)\
 [PostgreSQLDbClusterUserDetails](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/PostgreSQLDbClusterUserDetails/index.md)\
+[PostgresBackupNodePreference](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/PostgresBackupNodePreference/index.md)\
+[PostgresDbClusterAppMetadata](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/PostgresDbClusterAppMetadata/index.md)\
 [PostgresDbClusterSlaConfig](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/PostgresDbClusterSlaConfig/index.md)\
 [PostgresHaClusterInfo](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/PostgresHaClusterInfo/index.md)\
+[PostgresTopologyReplicaInfo](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/PostgresTopologyReplicaInfo/index.md)\
 [PowerPlatformEnvironment](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/PowerPlatformEnvironment/index.md)\
 [PrePostScript](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/PrePostScript/index.md)\
 [PrecheckFailure](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/PrecheckFailure/index.md)\
@@ -2640,6 +2644,9 @@
 [PrincipalAPIPermissionGrant](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/PrincipalAPIPermissionGrant/index.md)\
 [PrincipalAccessInfo](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/PrincipalAccessInfo/index.md)\
 [PrincipalApiPermissionsReply](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/PrincipalApiPermissionsReply/index.md)\
+[PrincipalAttributes](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/PrincipalAttributes/index.md)\
+[PrincipalAttributesConnection](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/PrincipalAttributesConnection/index.md)\
+[PrincipalAttributesEdge](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/PrincipalAttributesEdge/index.md)\
 [PrincipalChange](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/PrincipalChange/index.md)\
 [PrincipalConnection](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/PrincipalConnection/index.md)\
 [PrincipalCounts](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/PrincipalCounts/index.md)\
@@ -2680,7 +2687,10 @@
 [ProtectionTaskDetailsTableFilter](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/ProtectionTaskDetailsTableFilter/index.md)\
 [ProviderInfo](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/ProviderInfo/index.md)\
 [ProvisionCloudDirectCloudVmReply](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/ProvisionCloudDirectCloudVmReply/index.md)\
+[ProxmoxDetails](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/ProxmoxDetails/index.md)\
+[ProxmoxEnvironmentDetails](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/ProxmoxEnvironmentDetails/index.md)\
 [ProxmoxEnvironmentSummary](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/ProxmoxEnvironmentSummary/index.md)\
+[ProxmoxVirtualMachineDetails](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/ProxmoxVirtualMachineDetails/index.md)\
 [ProxySettings](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/ProxySettings/index.md)\
 [PureStorageArrayDescendantV1Connection](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/PureStorageArrayDescendantV1Connection/index.md)\
 [PureStorageArrayDescendantV1Edge](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/PureStorageArrayDescendantV1Edge/index.md)\
@@ -2761,6 +2771,7 @@
 [ReclaimableClusterStatsDataEdge](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/ReclaimableClusterStatsDataEdge/index.md)\
 [RecoverDevOpsRepositoryReply](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/RecoverDevOpsRepositoryReply/index.md)\
 [RecoverGlueIcebergTableSnapshotReply](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/RecoverGlueIcebergTableSnapshotReply/index.md)\
+[RecoverS3TablesIcebergTableSnapshotReply](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/RecoverS3TablesIcebergTableSnapshotReply/index.md)\
 [RecoverableRange](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/RecoverableRange/index.md)\
 [Recovery](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/Recovery/index.md)\
 [RecoveryAnalysisMetadata](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/RecoveryAnalysisMetadata/index.md)\
@@ -2775,6 +2786,7 @@
 [RecoveryPlanBasicInfo](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/RecoveryPlanBasicInfo/index.md)\
 [RecoveryPlanCdmCluster](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/RecoveryPlanCdmCluster/index.md)\
 [RecoveryPlanChildV2](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/RecoveryPlanChildV2/index.md)\
+[RecoveryPlanFilterTimeRange](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/RecoveryPlanFilterTimeRange/index.md)\
 [RecoveryPlanLocation](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/RecoveryPlanLocation/index.md)\
 [RecoveryPlanLocationDetails](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/RecoveryPlanLocationDetails/index.md)\
 [RecoveryPlanRecoverySpecMap](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/RecoveryPlanRecoverySpecMap/index.md)\
@@ -2808,6 +2820,7 @@
 [RegisterAwsFeatureArtifactsReply](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/RegisterAwsFeatureArtifactsReply/index.md)\
 [RegisterCloudClusterReply](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/RegisterCloudClusterReply/index.md)\
 [RegisterNasSystemReply](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/RegisterNasSystemReply/index.md)\
+[RegistryPatternSpec](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/RegistryPatternSpec/index.md)\
 [RelatedContent](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/RelatedContent/index.md)\
 [RelatedObjectsType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/RelatedObjectsType/index.md)\
 [RelativeMonthlyRecurrencePattern](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/RelativeMonthlyRecurrencePattern/index.md)\
@@ -2922,6 +2935,7 @@
 [RscReportTemplate](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/RscReportTemplate/index.md)\
 [RscSnapshotLocationRetentionInfo](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/RscSnapshotLocationRetentionInfo/index.md)\
 [RscSnapshotRetentionInfo](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/RscSnapshotRetentionInfo/index.md)\
+[RscpUpgradeStatus](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/RscpUpgradeStatus/index.md)\
 [RubrikCloudVaultLocation](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/RubrikCloudVaultLocation/index.md)\
 [RubrikCloudVaultRansomwareInvestigationEnablement](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/RubrikCloudVaultRansomwareInvestigationEnablement/index.md)\
 [RubrikManagedAwsTarget](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/RubrikManagedAwsTarget/index.md)\
@@ -2943,11 +2957,14 @@
 [S3BucketDetails](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/S3BucketDetails/index.md)\
 [S3CompatibleArchivalMigrationTarget](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/S3CompatibleArchivalMigrationTarget/index.md)\
 [S3TablesIcebergCatalog](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/S3TablesIcebergCatalog/index.md)\
+[S3TablesIcebergInventoryStatsReply](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/S3TablesIcebergInventoryStatsReply/index.md)\
 [S3TablesIcebergNamespace](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/S3TablesIcebergNamespace/index.md)\
 [S3TablesIcebergTable](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/S3TablesIcebergTable/index.md)\
 [SDDLPermission](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/SDDLPermission/index.md)\
 [SLAIdToObjectCount](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/SLAIdToObjectCount/index.md)\
 [SaaSOrgTprReqChangesTemplate](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/SaaSOrgTprReqChangesTemplate/index.md)\
+[SaasActivityMetadata](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/SaasActivityMetadata/index.md)\
+[SaasActivityViolationDetails](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/SaasActivityViolationDetails/index.md)\
 [SaasAppsOrgInfo](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/SaasAppsOrgInfo/index.md)\
 [SaasAppsOrgSizeInfo](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/SaasAppsOrgSizeInfo/index.md)\
 [SaasAppsOrgStorageLocations](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/SaasAppsOrgStorageLocations/index.md)\
@@ -2959,6 +2976,8 @@
 [SaasWorkloadField](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/SaasWorkloadField/index.md)\
 [SaasWorkloadMetadataType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/SaasWorkloadMetadataType/index.md)\
 [SaasWorkloadMetadataTypesReply](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/SaasWorkloadMetadataTypesReply/index.md)\
+[SailPointIntegrationConfig](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/SailPointIntegrationConfig/index.md)\
+[SailPointStatus](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/SailPointStatus/index.md)\
 [SalesforceObject](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/SalesforceObject/index.md)\
 [SalesforceObjectConnection](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/SalesforceObjectConnection/index.md)\
 [SalesforceObjectEdge](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/SalesforceObjectEdge/index.md)\
@@ -3059,6 +3078,8 @@
 [ShoppingCartAction](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/ShoppingCartAction/index.md)\
 [SidPolicyHitsSummary](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/SidPolicyHitsSummary/index.md)\
 [SidsPolicyHitsSummaries](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/SidsPolicyHitsSummaries/index.md)\
+[SigninAnomalyActor](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/SigninAnomalyActor/index.md)\
+[SigninAnomalyMetadata](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/SigninAnomalyMetadata/index.md)\
 [SigninAnomalyPolicyInfo](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/SigninAnomalyPolicyInfo/index.md)\
 [SigninAnomalyViolationDetails](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/SigninAnomalyViolationDetails/index.md)\
 [SigninConditionDetails](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/SigninConditionDetails/index.md)\
@@ -3152,7 +3173,6 @@
 [SonarReportRowConnection](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/SonarReportRowConnection/index.md)\
 [SonarReportRowEdge](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/SonarReportRowEdge/index.md)\
 [SourceChildRecoverySpecMapV2](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/SourceChildRecoverySpecMapV2/index.md)\
-[SourceConfigParams](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/SourceConfigParams/index.md)\
 [SourceMetadata](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/SourceMetadata/index.md)\
 [SpecificDateSpec](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/SpecificDateSpec/index.md)\
 [SpecificReplicationSpec](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/SpecificReplicationSpec/index.md)\
@@ -3169,7 +3189,11 @@
 [StartClusterReportMigrationJobReply](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/StartClusterReportMigrationJobReply/index.md)\
 [StartCrawlReply](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/StartCrawlReply/index.md)\
 [StartGitHubAppSetupReply](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/StartGitHubAppSetupReply/index.md)\
+[StartInPlaceDataMaskingReply](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/StartInPlaceDataMaskingReply/index.md)\
 [StartRecoveryReply](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/StartRecoveryReply/index.md)\
+[StartRscpPackageDownloadReply](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/StartRscpPackageDownloadReply/index.md)\
+[StartRscpUpgradeReply](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/StartRscpUpgradeReply/index.md)\
+[StartSalesforcePermissionAssessmentReply](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/StartSalesforcePermissionAssessmentReply/index.md)\
 [StartThreatHuntReply](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/StartThreatHuntReply/index.md)\
 [StartThreatHuntV2Reply](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/StartThreatHuntV2Reply/index.md)\
 [StartTimeAttributes](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/StartTimeAttributes/index.md)\
@@ -3184,7 +3208,6 @@
 [StorageAccountEdge](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/StorageAccountEdge/index.md)\
 [StorageArrayDetail](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/StorageArrayDetail/index.md)\
 [StorageArrayOperationOutputType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/StorageArrayOperationOutputType/index.md)\
-[StoreMetadata](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/StoreMetadata/index.md)\
 [StrainInfo](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/StrainInfo/index.md)\
 [Subnet](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/Subnet/index.md)\
 [SubnetConnection](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/SubnetConnection/index.md)\
@@ -3384,6 +3407,7 @@
 [UpdateHealthMonitorPolicyStatusReply](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/UpdateHealthMonitorPolicyStatusReply/index.md)\
 [UpdateHypervVirtualMachineReply](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/UpdateHypervVirtualMachineReply/index.md)\
 [UpdateHypervVirtualMachineSnapshotMountReply](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/UpdateHypervVirtualMachineSnapshotMountReply/index.md)\
+[UpdateImageClassificationConfigReply](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/UpdateImageClassificationConfigReply/index.md)\
 [UpdateIndexingStatusError](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/UpdateIndexingStatusError/index.md)\
 [UpdateInsightStateReply](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/UpdateInsightStateReply/index.md)\
 [UpdateLockoutConfigReply](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/UpdateLockoutConfigReply/index.md)\
@@ -3569,6 +3593,7 @@
 [VirtualMachineFilesReply](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/VirtualMachineFilesReply/index.md)\
 [VirtualMachineScriptDetail](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/VirtualMachineScriptDetail/index.md)\
 [VirtualMachineSummary](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/VirtualMachineSummary/index.md)\
+[VirtualMachinesOneof](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/VirtualMachinesOneof/index.md)\
 [VlanConfig](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/VlanConfig/index.md)\
 [VlanConfigListResponse](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/VlanConfigListResponse/index.md)\
 [VmAppConsistentSpecsInternal](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/VmAppConsistentSpecsInternal/index.md)\
@@ -3601,6 +3626,7 @@
 [Vnet](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/Vnet/index.md)\
 [VnetConnection](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/VnetConnection/index.md)\
 [VnetEdge](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/VnetEdge/index.md)\
+[VolumeGroup](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/VolumeGroup/index.md)\
 [VolumeGroupDetailInfo](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/VolumeGroupDetailInfo/index.md)\
 [VolumeGroupLiveMount](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/VolumeGroupLiveMount/index.md)\
 [VolumeGroupLiveMountConnection](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/VolumeGroupLiveMountConnection/index.md)\
@@ -3747,10 +3773,12 @@
 [YARAMatchDetail](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/YARAMatchDetail/index.md)\
 [YaraInfo](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/YaraInfo/index.md)\
 [YearlyDaySpec](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/YearlyDaySpec/index.md)\
+[YearlyDaySpecification](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/YearlyDaySpecification/index.md)\
 [YearlySnapshotSchedule](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/YearlySnapshotSchedule/index.md)\
 [ZeusDatabaseIds](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/ZeusDatabaseIds/index.md)\
 [ZrsAvailabilityReply](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/ZrsAvailabilityReply/index.md)\
 [backupJobsStats](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/backupJobsStats/index.md)\
+[cascadingImpactKeys](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/cascadingImpactKeys/index.md)\
 [clusterState](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/clusterState/index.md)\
 [metricTimeSeries](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/metricTimeSeries/index.md)\
 [pendingAction](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/pendingAction/index.md)

@@ -12,7 +12,7 @@ List of GCE instances.
 | before             | String                                                                                                                                                     | Returns the elements in the list that occur before the specified cursor. |
 | sortBy             | [GcpNativeGceInstanceSortFields](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/GcpNativeGceInstanceSortFields/index.md) | Sort fields for list of GCP GCE instances.                               |
 | sortOrder          | [SortOrder](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/SortOrder/index.md)                                           | Sorts the order of results.                                              |
-| gceInstanceFilters | [GcpNativeGceInstanceFilters](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/GcpNativeGceInstanceFilters/index.md)      |                                                                          |
+| gceInstanceFilters | [GcpNativeGceInstanceFilters](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/GcpNativeGceInstanceFilters/index.md)      | Filters for list of GCP GCE instances.                                   |
 
 ## Returns
 
@@ -29,6 +29,7 @@ query {
       fileIndexingStatus
       id
       isExocomputeConfigured
+      isProtectionOnboarded
       isRelic
       machineType
       name
@@ -72,7 +73,7 @@ query {
             "fileIndexingStatus": "DISABLED",
             "id": "00000000-0000-0000-0000-000000000000",
             "isExocomputeConfigured": true,
-            "isRelic": true
+            "isProtectionOnboarded": true
           }
         ]
       ],

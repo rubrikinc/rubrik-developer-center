@@ -1,6 +1,6 @@
 # GetO365ServiceStatusResp
 
-*No description available.*
+GetO365ServiceStatusResp is the response for the o365ServiceStatus query.
 
 ## Fields
 
