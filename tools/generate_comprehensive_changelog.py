@@ -121,6 +121,7 @@ def clean_line(line):
 def parse_diff_output(diff_output):
     """Parse graphql-inspector diff output into categorized changes."""
     breaking_changes = []
+    deprecated_removals = []
     dangerous_changes = []
     safe_changes = []
 
@@ -174,13 +175,17 @@ def parse_diff_output(diff_output):
             continue
 
         if is_breaking:
-            breaking_changes.append(cleaned)
+            # graphql-inspector annotates removals of previously-deprecated items with "(deprecated)"
+            if '(deprecated)' in cleaned.lower() and 'was removed' in cleaned.lower():
+                deprecated_removals.append(cleaned)
+            else:
+                breaking_changes.append(cleaned)
         elif is_dangerous:
             dangerous_changes.append(cleaned)
         elif is_safe:
             safe_changes.append(cleaned)
 
-    return breaking_changes, dangerous_changes, safe_changes
+    return breaking_changes, deprecated_removals, dangerous_changes, safe_changes
 
 
 def format_date(date_str):
@@ -189,16 +194,25 @@ def format_date(date_str):
     return dt.strftime('%B %d, %Y')
 
 
-def generate_changelog_entry(date_str, breaking, dangerous, safe):
+def generate_changelog_entry(date_str, breaking, deprecated_removals, dangerous, safe):
     """Generate a markdown changelog entry for a version."""
     lines = []
     lines.append(f"## {format_date(date_str)}")
     lines.append("")
-    
+
     if breaking:
         lines.append("### ⚠️ Breaking Changes")
         lines.append("")
         for change in breaking:
+            lines.append(f"- {change}")
+        lines.append("")
+
+    if deprecated_removals:
+        lines.append("### 🗑️ Removed Deprecated Items")
+        lines.append("")
+        lines.append("*These items were previously marked `@deprecated` and have now been removed.*")
+        lines.append("")
+        for change in deprecated_removals:
             lines.append(f"- {change}")
         lines.append("")
     
@@ -250,13 +264,13 @@ def main():
             continue
 
         # Parse changes
-        breaking_changes, dangerous_changes, safe_changes = parse_diff_output(diff_output)
+        breaking_changes, deprecated_removals, dangerous_changes, safe_changes = parse_diff_output(diff_output)
 
-        total_changes = len(breaking_changes) + len(dangerous_changes) + len(safe_changes)
-        print(f"   Found {total_changes} changes ({len(breaking_changes)} breaking, {len(dangerous_changes)} potentially breaking, {len(safe_changes)} safe)")
+        total_changes = len(breaking_changes) + len(deprecated_removals) + len(dangerous_changes) + len(safe_changes)
+        print(f"   Found {total_changes} changes ({len(breaking_changes)} breaking, {len(deprecated_removals)} deprecated removals, {len(dangerous_changes)} potentially breaking, {len(safe_changes)} safe)")
 
         if total_changes > 0:
-            entry = generate_changelog_entry(new_date, breaking_changes, dangerous_changes, safe_changes)
+            entry = generate_changelog_entry(new_date, breaking_changes, deprecated_removals, dangerous_changes, safe_changes)
             changelog_entries.append(entry)
 
     # Generate the complete changelog
