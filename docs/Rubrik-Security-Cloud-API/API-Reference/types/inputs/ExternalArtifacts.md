@@ -1,10 +1,10 @@
 # ExternalArtifacts
 
-Key value pair for external artifacts associated with an AWS account.
+A map of an AWS artifact to its value.
 
 ## Fields
 
 | Field | Type | Description |
 |-------|------|-------------|
-| externalArtifactKey | [AwsCloudExternalArtifact](../enums/AwsCloudExternalArtifact.md) | Keyword for external artifacts. |
+| externalArtifactKey | [AwsCloudExternalArtifact](../enums/AwsCloudExternalArtifact.md) | Keyword for external artifact. |
 | externalArtifactValue | String | AWS unique identifier of the external artifact. |

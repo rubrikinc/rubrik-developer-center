@@ -71,6 +71,11 @@ Represents object types.
 | ORACLE_DATA_GUARD_GROUP | Represents the Oracle Data Guard Group. |
 | ORACLE_ROOT | Represents the Oracle root. |
 | PHYSICAL_HOST | Represents the Physical host. |
+| PROXMOX_CLUSTER | Represents the Proxmox cluster. |
+| PROXMOX_ENVIRONMENT | Represents the Proxmox environment. |
+| PROXMOX_NODE | Represents the Proxmox node. |
+| PROXMOX_ROOT | Represents the Proxmox root. |
+| PROXMOX_VIRTUAL_MACHINE | Represents the Proxmox virtual machine. |
 | SALESFORCE_OBJECT | Represents the Salesforce object. |
 | SALESFORCE_ORGANIZATION | Represents the Salesforce organization. |
 | SALESFORCE_ROOT | Represents the Salesforce root. |

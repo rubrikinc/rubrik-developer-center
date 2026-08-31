@@ -1,6 +1,6 @@
 # browseSharepointDrive
 
-Browse SharePoint  drive files and folders.
+BrowseSharepointDriveFolderItems returns the contents (folders and files) of a SharePoint Drive folder within a snapshot.
 
 ## Arguments
 
@@ -8,13 +8,15 @@ Browse SharePoint  drive files and folders.
 |----------|------|-------------|
 | first | Int | Returns the first n elements from the list. |
 | after | String | Returns the elements in the list that occur after the specified cursor. |
-| snappableFid *(required)* | [UUID](../types/scalars/UUID.md)! | The FID for the workload. |
+| last | Int | Returns the last n elements from the list. |
+| before | String | Returns the elements in the list that occur before the specified cursor. |
+| snappableFid *(required)* | [UUID](../types/scalars/UUID.md)! | The unique identifier for the SharePoint Drive workload. |
 | snapshotFid *(required)* | [UUID](../types/scalars/UUID.md)! | The ID of the snapshot. |
-| folderId | String |  |
-| sharepointDriveSearchFilter | [OnedriveSearchFilter](../types/inputs/OnedriveSearchFilter.md) |  |
 | orgId *(required)* | [UUID](../types/scalars/UUID.md)! | Org UUID. |
-| siteChildId | String | The site child ID for SharePoint descendant objects. |
-| siteChildType | [SharePointDescendantType](../types/enums/SharePointDescendantType.md) | The site child type for SharePoint descendant objects. |
+| folderId | String | The folder to browse. Empty means the drive root. |
+| sharepointDriveSearchFilter | [OnedriveSearchFilter](../types/inputs/OnedriveSearchFilter.md) | Optional OneDrive-compatible search filter. |
+| siteChildId | String | Optional sub-site ID for a library or list within the SharePoint site. |
+| siteChildType | [SharePointDescendantType](../types/enums/SharePointDescendantType.md) | Optional SharePoint descendant type; defaults to LIBRARY. |
 
 ## Returns
 

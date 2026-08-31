@@ -12,7 +12,7 @@ List of GCE instances.
 | before | String | Returns the elements in the list that occur before the specified cursor. |
 | sortBy | [GcpNativeGceInstanceSortFields](../types/enums/GcpNativeGceInstanceSortFields.md) | Sort fields for list of GCP GCE instances. |
 | sortOrder | [SortOrder](../types/enums/SortOrder.md) | Sorts the order of results. |
-| gceInstanceFilters | [GcpNativeGceInstanceFilters](../types/inputs/GcpNativeGceInstanceFilters.md) |  |
+| gceInstanceFilters | [GcpNativeGceInstanceFilters](../types/inputs/GcpNativeGceInstanceFilters.md) | Filters for list of GCP GCE instances. |
 
 ## Returns
 
@@ -31,6 +31,7 @@ List of GCE instances.
           fileIndexingStatus
           id
           isExocomputeConfigured
+          isProtectionOnboarded
           isRelic
           machineType
           name
@@ -78,7 +79,7 @@ List of GCE instances.
                 "fileIndexingStatus": "DISABLED",
                 "id": "00000000-0000-0000-0000-000000000000",
                 "isExocomputeConfigured": true,
-                "isRelic": true
+                "isProtectionOnboarded": true
               }
             ]
           ],

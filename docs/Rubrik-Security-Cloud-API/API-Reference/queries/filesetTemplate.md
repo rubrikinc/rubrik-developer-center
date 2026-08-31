@@ -1,6 +1,6 @@
 # filesetTemplate
 
-*No description available.*
+Information about a fileset template.
 
 ## Arguments
 

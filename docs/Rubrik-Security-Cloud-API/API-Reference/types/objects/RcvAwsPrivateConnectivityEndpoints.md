@@ -7,7 +7,9 @@ Customer-provided VPC interface endpoint (PrivateLink) DNS names for routing a R
 | Field | Type | Description |
 |-------|------|-------------|
 | s3EndpointHost | String | S3 interface VPC endpoint "bucket"-type regional DNS name, e.g. bucket.vpce-0abc1234-xy9z.s3.us-west-2.vpce.amazonaws.com. Unset when the location has no S3 endpoint configured. |
+| s3EndpointStatus | [PrivateEndpointConnectionStatus](../enums/PrivateEndpointConnectionStatus.md)! | The connection status of the S3 interface endpoint named by s3EndpointHost. Read-only: the status is owned by the endpoint lifecycle, not the caller. |
 | stsEndpointHost | String | STS interface VPC endpoint regional DNS name, e.g. vpce-0def5678-pq3r.sts.us-west-2.vpce.amazonaws.com. Unset when the location has no STS endpoint configured. |
+| stsEndpointStatus | [PrivateEndpointConnectionStatus](../enums/PrivateEndpointConnectionStatus.md)! | The connection status of the STS interface endpoint named by stsEndpointHost. Read-only: the status is owned by the endpoint lifecycle, not the caller. |
 
 ## Used By
 

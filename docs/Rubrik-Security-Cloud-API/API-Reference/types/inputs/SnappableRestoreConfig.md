@@ -20,3 +20,4 @@ Represents the snappable contents to be restored.
 | rubrikOrgUuid | String | UUID of the the logged-in user's RSC organization. |
 | sharePointFullRestoreConfig | [SharePointFullRestoreConfig](SharePointFullRestoreConfig.md) | Restore configuration for full SharePoint jobs. |
 | sharePointListRestoreConfig | [SharePointListRestoreConfig](SharePointListRestoreConfig.md) | Restore configuration for SharePoint list jobs. |
+| tasksRestoreConfig | [TasksRestoreConfig](TasksRestoreConfig.md) | Restore configuration for Microsoft To Do tasks jobs. |

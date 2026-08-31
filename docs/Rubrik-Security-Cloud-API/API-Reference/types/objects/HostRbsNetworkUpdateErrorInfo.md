@@ -6,8 +6,8 @@ Error information for a host RBS network throttle update.
 
 | Field | Type | Description |
 |-------|------|-------------|
-| hostId | String! | ID of the host that failed to update. |
-| networkThrottleUpdateStatus | [RequestErrorInfo](RequestErrorInfo.md) | Status message describing why the update failed. |
+| hostId | String! | Required. ID of the host that failed to update. |
+| networkThrottleUpdateStatus | [RequestErrorInfo](RequestErrorInfo.md) | Required. Status message describing why the update failed. |
 
 ## Used By
 

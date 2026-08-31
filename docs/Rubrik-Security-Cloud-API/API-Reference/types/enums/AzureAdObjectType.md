@@ -21,6 +21,7 @@ Entra ID object types.
 | AUTOPILOT_DEPLOYMENT_PROFILE | Object type is Intune autopilot deployment profile. |
 | AZURE_AD_OBJECT_TYPE_UNKNOWN | Entra ID object type is unknown. |
 | BIT_LOCKER_KEY | Object type is Entra ID BitLocker key. |
+| CLAIMS_MAPPING_POLICY | Object type is a claims mapping policy. |
 | COMPLIANCE_POLICY | Object type is Intune compliance policy. |
 | COMPLIANCE_POLICY_ACTION | Object type is Intune compliance policy action. |
 | COMPLIANCE_POLICY_ASSIGNMENT | Object type is Intune compliance policy assignment. |
@@ -46,6 +47,7 @@ Entra ID object types.
 | GROUP | Object type is Entra ID group. |
 | GROUP_ACTIVE_ASSIGNMENT | Object type is PIM group active assignment. |
 | GROUP_ELIGIBLE_ASSIGNMENT | Object type is group-eligible assignment. |
+| HOME_REALM_DISCOVERY_POLICY | Object type is a home realm discovery policy. |
 | INTUNE_POLICY_ASSIGNMENT | Object type is Intune policy assignment. |
 | INTUNE_ROLE_ASSIGNMENT | Object type is Intune role assignment. |
 | INTUNE_ROLE_DEFINITION | Object type is Intune role definition. |
@@ -69,5 +71,7 @@ Entra ID object types.
 | SUBTYPE_HARDWARE_CONFIGURATION | Sub-type of DEVICE_MANAGEMENT_CONFIGURATION_POLICY: hardware configuration. |
 | SUBTYPE_MOBILE_APP_CONFIGURATION | Sub-type of DEVICE_MANAGEMENT_CONFIGURATION_POLICY: mobile app configuration. |
 | TERMS_OF_USE | Object type is Entra ID terms of use. |
+| TOKEN_ISSUANCE_POLICY | Object type is a token issuance policy. |
+| TOKEN_LIFETIME_POLICY | Object type is a token lifetime policy. |
 | UPDATE_RING | Object type is Intune Windows update ring. |
 | USER | Object type is Entra ID user. |

@@ -31,8 +31,8 @@ An interface for Microsoft Mailbox.
 | slaPauseStatus | Boolean! | Pause status of the effective SLA Domain of the hierarchy object. |
 | snapshotConnection | [PolarisSnapshotConnection](../objects/PolarisSnapshotConnection.md) | The list of snapshots taken for this workload. |
 | snapshotDistribution | [SnapshotDistribution](../objects/SnapshotDistribution.md)! | Distribution of the snapshots of the hierarchy object. |
-| snapshotGroupByConnection | [PolarisSnapshotGroupByConnection](../objects/PolarisSnapshotGroupByConnection.md) | GroupBy connection for the snapshots of this workload. |
-| snapshotGroupByNewConnection | [PolarisSnapshotGroupByNewConnection](../objects/PolarisSnapshotGroupByNewConnection.md) | GroupBy connection for the snapshots of this workload. |
+| snapshotGroupByConnection | [PolarisSnapshotGroupByConnection](../objects/PolarisSnapshotGroupByConnection.md) | Group-by connection for the snapshots of this workload. |
+| snapshotGroupByNewConnection | [PolarisSnapshotGroupByNewConnection](../objects/PolarisSnapshotGroupByNewConnection.md) | Group-by connection for the snapshots of this workload. |
 | userPrincipalName | String! | The user principal name of the object. |
 | workloadSnapshotConnection | [GenericSnapshotConnection](../objects/GenericSnapshotConnection.md) | The list of snapshots taken for this workload. |
 

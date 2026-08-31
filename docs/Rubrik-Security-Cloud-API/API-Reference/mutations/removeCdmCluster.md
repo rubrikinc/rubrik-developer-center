@@ -9,6 +9,7 @@ Removes a registered Rubrik cluster from the account.
 | clusterUUID *(required)* | [UUID](../types/scalars/UUID.md)! | UUID of the Rubrik cluster. |
 | isForce *(required)* | Boolean! | Whether to force the removal of the Rubrik cluster. |
 | expireInDays | [Long](../types/scalars/Long.md) | Number of days after which data from Rubrik is removed. |
+| shouldDeleteRcvLocations | Boolean | Whether to soft-delete the cluster's Rubrik Cloud Vault (RCV) locations before removal even if some lack an active reader. |
 
 ## Returns
 

@@ -6,6 +6,7 @@ Azure subscription with features.
 
 | Field | Type | Description |
 |-------|------|-------------|
+| app | [AzureCloudAccountTenantApp](AzureCloudAccountTenantApp.md) | The Azure application backing this subscription, together with the authentication method it is bound to. Unset for a discovered subscription that is not yet onboarded. |
 | cloudType | [AzureCloudType](../enums/AzureCloudType.md)! | Cloud type of the Azure subscription. |
 | customerTenantId | String! | Azure tenant ID. |
 | featureDetails | [[AzureCloudAccountFeatureDetail](AzureCloudAccountFeatureDetail.md)!]! | Feature details for the cloud account. |

@@ -8,9 +8,9 @@ A managed hierarchy protected objects.
 |-------|------|-------------|
 | allOrgs | [[Org](../objects/Org.md)!]! | Organizations to which this hierarchy object belongs. |
 | allTags | [[AssignedRscTag](../objects/AssignedRscTag.md)!]! | RSC tags to which this hierarchy object is assigned. |
-| cdmId | String! | The ID of the workload on the Rubrik CDM cluster. |
-| cdmLink | String! | A link to view the workload on the CDM cluster. For dev use only. |
-| cluster | [Cluster](../objects/Cluster.md)! | The cluster from which this workload originated. |
+| cdmId | String! | The ID of the workload on the Rubrik cluster. |
+| cdmLink | String! | A link to view the workload on the Rubrik cluster. For dev use only. |
+| cluster | [Cluster](../objects/Cluster.md)! | The Rubrik cluster from which this workload originated. |
 | configuredSlaDomain | [SlaDomain](SlaDomain.md)! | SLA Domain configured for the hierarchy object. |
 | effectiveRetentionSlaDomain | [SlaDomain](SlaDomain.md) | Effective retention of the SLA Domain of the hierarchy object. |
 | effectiveSlaDomain | [SlaDomain](SlaDomain.md)! | Effective SLA Domain of the hierarchy object. |
@@ -23,7 +23,7 @@ A managed hierarchy protected objects.
 | name | String! | Name of the hierarchy object. |
 | newestArchivedSnapshot | [CdmSnapshot](../objects/CdmSnapshot.md) | The newest snapshot archived to AWS. |
 | newestIndexedSnapshot | [CdmSnapshot](../objects/CdmSnapshot.md) | The most recent indexed snapshot of this workload. |
-| newestReplicatedSnapshot | [CdmSnapshot](../objects/CdmSnapshot.md) | The newest snapshot replicated to a cluster. |
+| newestReplicatedSnapshot | [CdmSnapshot](../objects/CdmSnapshot.md) | The newest snapshot replicated to a Rubrik cluster. |
 | newestSnapshot | [CdmSnapshot](../objects/CdmSnapshot.md) | The most recent snapshot of this workload. |
 | numWorkloadDescendants | Int! | Number of descendant workloads of this object. |
 | objectBackupWindow | [ObjectBackupWindowStatus](../objects/ObjectBackupWindowStatus.md) | Object-level backup window status of the hierarchy object. |
@@ -38,8 +38,8 @@ A managed hierarchy protected objects.
 | slaPauseStatus | Boolean! | Pause status of the effective SLA Domain of the hierarchy object. |
 | snapshotConnection | [CdmSnapshotConnection](../objects/CdmSnapshotConnection.md) | The list of snapshots taken for this workload. |
 | snapshotDistribution | [SnapshotDistribution](../objects/SnapshotDistribution.md)! | Distribution of the snapshots of the hierarchy object. |
-| snapshotGroupByConnection | [CdmSnapshotGroupByConnection](../objects/CdmSnapshotGroupByConnection.md) | GroupBy connection for the snapshots of this workload. |
-| snapshotGroupBySummary | [CdmSnapshotGroupBySummaryConnection](../objects/CdmSnapshotGroupBySummaryConnection.md) | GroupBy connection for the snapshots of this workload. |
+| snapshotGroupByConnection | [CdmSnapshotGroupByConnection](../objects/CdmSnapshotGroupByConnection.md) | Group-by connection for the snapshots of this workload. |
+| snapshotGroupBySummary | [CdmSnapshotGroupBySummaryConnection](../objects/CdmSnapshotGroupBySummaryConnection.md) | Group-by connection for the snapshots of this workload. |
 
 ## Field Arguments
 
@@ -95,6 +95,7 @@ A managed hierarchy protected objects.
 - [ExchangeDatabase](../objects/ExchangeDatabase.md)
 - [FusionComputeVirtualMachine](../objects/FusionComputeVirtualMachine.md)
 - [HyperVVirtualMachine](../objects/HyperVVirtualMachine.md)
+- [HypervisorVirtualMachineV1](../objects/HypervisorVirtualMachineV1.md)
 - [KubernetesProtectionSet](../objects/KubernetesProtectionSet.md)
 - [KubernetesVirtualMachine](../objects/KubernetesVirtualMachine.md)
 - [LinuxFileset](../objects/LinuxFileset.md)
@@ -104,6 +105,7 @@ A managed hierarchy protected objects.
 - [MssqlDatabase](../objects/MssqlDatabase.md)
 - [NasFileset](../objects/NasFileset.md)
 - [NutanixVm](../objects/NutanixVm.md)
+- [OpenstackVirtualMachine](../objects/OpenstackVirtualMachine.md)
 - [OracleDataGuardGroup](../objects/OracleDataGuardGroup.md)
 - [OracleDatabase](../objects/OracleDatabase.md)
 - [PureStorageProtectionGroupV1](../objects/PureStorageProtectionGroupV1.md)
@@ -112,5 +114,6 @@ A managed hierarchy protected objects.
 - [SapHanaSystem](../objects/SapHanaSystem.md)
 - [ShareFileset](../objects/ShareFileset.md)
 - [VcdVapp](../objects/VcdVapp.md)
+- [VolumeGroup](../objects/VolumeGroup.md)
 - [VsphereVm](../objects/VsphereVm.md)
 - [WindowsFileset](../objects/WindowsFileset.md)

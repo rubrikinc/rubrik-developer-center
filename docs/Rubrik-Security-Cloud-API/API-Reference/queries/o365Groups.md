@@ -8,11 +8,13 @@ List of O365 Groups in the O365Org.
 |----------|------|-------------|
 | first | Int | Returns the first n elements from the list. |
 | after | String | Returns the elements in the list that occur after the specified cursor. |
+| last | Int | Returns the last n elements from the list. |
+| before | String | Returns the elements in the list that occur before the specified cursor. |
 | sortBy | [HierarchySortByField](../types/enums/HierarchySortByField.md) | Sort hierarchy objects according to the hierarchy field. |
 | sortOrder | [SortOrder](../types/enums/SortOrder.md) | Sorts the order of results. |
 | filter | [[Filter](../types/inputs/Filter.md)!] | Hierarchy object filter. |
 | o365OrgId *(required)* | [UUID](../types/scalars/UUID.md)! | The FID for the O365 organization. |
-| snappableType *(required)* | [SnappableType](../types/enums/SnappableType.md)! |  |
+| snappableType *(required)* | [SnappableType](../types/enums/SnappableType.md)! | The type of workload. |
 
 ## Returns
 

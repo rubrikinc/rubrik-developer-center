@@ -6,6 +6,7 @@ Request to list Azure management groups and subscriptions.
 
 | Field | Type | Description |
 |-------|------|-------------|
+| authType | [AzureAuthType](../enums/AzureAuthType.md) | Auth type the discovery/migration/upgrade list is scoped to. Only honored when the Azure auth coexistence flag is on: ADD greys out subscriptions that conflict with this auth type, and MIGRATE/UPGRADE return only subscriptions onboarded with it. Ignored (auth type inferred from the session) when the flag is off. |
 | cloudType | [AzureCloudType](../enums/AzureCloudType.md)! | Cloud type. |
 | features | [[CloudAccountFeature](../enums/CloudAccountFeature.md)!] | Features to be checked for eligibility. |
 | managementGroupId | String! | Native ID of management group to be listed. |

@@ -44,4 +44,4 @@ The replicated cross-account object information.
 - [FusionComputeDatastore.crossAccountReplicatedObjectInfos](FusionComputeDatastore.md)
 - [FusionComputeHost.crossAccountReplicatedObjectInfos](FusionComputeHost.md)
 - FusionComputeHostDescendant.crossAccountReplicatedObjectInfos
-- *…and 179 more*
+- *…and 199 more*

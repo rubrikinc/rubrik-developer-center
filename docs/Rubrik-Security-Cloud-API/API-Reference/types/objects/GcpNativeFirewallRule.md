@@ -6,8 +6,8 @@ GCP native firewall rule.
 
 | Field | Type | Description |
 |-------|------|-------------|
-| name | String! |  |
-| targetTags | [String!]! |  |
+| name | String! | Name of the firewall rule. |
+| targetTags | [String!]! | Network tags of the instances the rule applies to. |
 
 ## Used By
 

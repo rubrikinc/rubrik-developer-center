@@ -57,4 +57,5 @@ Descendants of a Physical Host.
 - [MssqlDatabase](../objects/MssqlDatabase.md)
 - [MssqlInstance](../objects/MssqlInstance.md)
 - [ShareFileset](../objects/ShareFileset.md)
+- [VolumeGroup](../objects/VolumeGroup.md)
 - [WindowsFileset](../objects/WindowsFileset.md)

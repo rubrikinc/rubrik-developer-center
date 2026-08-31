@@ -1,6 +1,6 @@
 # allO365OrgStatuses
 
-Gets the status of each org in the account.
+Returns the status of each O365 org the caller is authorized to view.
 
 ## Returns
 

@@ -14,6 +14,7 @@ Holds the configuration of a single integration. Note that IntegrationConfig can
 | okta | [OktaIntegrationConfig](OktaIntegrationConfig.md) | The OKTA configuration. |
 | pam | [PamIntegrationConfig](PamIntegrationConfig.md) | The PAM configuration. |
 | panXsoar | [PanXsoarIntegrationConfig](PanXsoarIntegrationConfig.md) | The Palo Alto Networks XSOAR configuration. |
+| sailPoint | [SailPointIntegrationConfig](SailPointIntegrationConfig.md) | The SailPoint configuration. |
 | serviceNowItsm | [ServiceNowItsmIntegrationConfig](ServiceNowItsmIntegrationConfig.md) | The ServiceNow ITSM configuration. |
 | splunk | [SplunkIntegrationConfig](SplunkIntegrationConfig.md) | The Splunk configuration. |
 | workday | [WorkdayIntegrationConfig](WorkdayIntegrationConfig.md) | The Workday configuration. |

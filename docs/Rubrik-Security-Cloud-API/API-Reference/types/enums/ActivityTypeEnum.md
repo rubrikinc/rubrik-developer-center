@@ -51,6 +51,7 @@ Represents different types of activities.
 | PERMISSION_ASSESSMENT | Permission assessment event type. |
 | PROTECTED_OBJECT_DELETION | Protected object deletion event type. |
 | QUARANTINE | Quarantine event type. |
+| REENCRYPTION | Reencryption (re-encrypt a snapshot with the customer-managed key) event type. |
 | RadarAnalysis | Ransomware Investigation analysis type. |
 | Recovery | Recovery type. |
 | Replication | Replication type. |

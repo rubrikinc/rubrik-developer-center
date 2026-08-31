@@ -14,6 +14,13 @@ Represents all the object types for which we expect to see audits.
 | AGENT_CLOUD_POLICY | Agent Cloud policy object. |
 | AGENT_CLOUD_VIOLATION | Agent Cloud violation object. |
 | AGENT_OPERATIONS_MODEL_ROUTER | Agent Operations Model Router object. |
+| ANTHROPIC_CHILD_ORG | Anthropic child org. |
+| ANTHROPIC_CHILD_ORG_SETTINGS | Anthropic child org settings. |
+| ANTHROPIC_CHILD_ORG_USER | Anthropic child org user. |
+| ANTHROPIC_DEVICE | Anthropic device. |
+| ANTHROPIC_ORG | Anthropic org. |
+| ANTHROPIC_ORG_SETTINGS | Anthropic org settings. |
+| ANTHROPIC_USER_CLAUDE_CHAT | Anthropic user Claude chat. |
 | APP_BLUEPRINT | App Blueprint object. |
 | ARCHIVAL_LOCATION | Archival Location object. |
 | ATLASSIAN_SITE | Atlassian site. |
@@ -30,6 +37,9 @@ Represents all the object types for which we expect to see audits.
 | AWS_NATIVE_RDS_INSTANCE | AWS native RDS instance. |
 | AWS_NATIVE_S3_BUCKET | AWS native S3 bucket object. |
 | AZURE_AD_DIRECTORY | Azure AD Directory object. |
+| AZURE_COSMOS_NOSQL_ACCOUNT | Azure Cosmos NoSQL account. |
+| AZURE_COSMOS_NOSQL_CONTAINER | Azure Cosmos NoSQL container. |
+| AZURE_COSMOS_NOSQL_DATABASE | Azure Cosmos NoSQL database. |
 | AZURE_DEVOPS_ORGANIZATION | Azure DevOps Organisation. |
 | AZURE_DEVOPS_PROJECT | Azure DevOps Project. |
 | AZURE_DEVOPS_PROJECT_FIXED_OBJECT | Azure DevOps Developer Collaboration (work items, boards, wikis) per project. |
@@ -100,6 +110,15 @@ Represents all the object types for which we expect to see audits.
 | GOOGLE_WORKSPACE_USER_MAILBOX | Google Workspace User Mailbox. |
 | HOST | Host object. |
 | HOST_FAILOVER_CLUSTER | Host Failover Cluster object. |
+| HVM_CLOUD | HPE Virtual Machine Essentials cloud. |
+| HVM_CLUSTER | HPE Virtual Machine Essentials cluster. |
+| HVM_DATASTORE | HPE Virtual Machine Essentials datastore. |
+| HVM_GROUP | HPE Virtual Machine Essentials group. |
+| HVM_HOST | HPE Virtual Machine Essentials host. |
+| HVM_INSTANCE | HPE Virtual Machine Essentials instance. An inventory hierarchy level, not a protectable object. |
+| HVM_MANAGER | HPE Virtual Machine Essentials manager. |
+| HVM_NETWORK | HPE Virtual Machine Essentials network. |
+| HVM_VIRTUAL_MACHINE | HPE Virtual Machine Essentials virtual machine. The protectable object in this hierarchy. |
 | HYPERV_SCVMM | HyperV SCVMM object. |
 | HYPERV_SERVER | HyperV server object. |
 | HYPERV_VM | HyperV virtual machine object. |
@@ -114,6 +133,7 @@ Represents all the object types for which we expect to see audits.
 | K8S_CLUSTER | Kubernetes Cluster object. |
 | K8S_LABEL | Kubernetes label object. |
 | K8S_NAMESPACE_V2 | Kubernetes Virtual Machine namespace object. |
+| K8S_POSTGRES_DB_CLUSTER | Kubernetes Postgres database cluster. |
 | K8S_PROTECTION_SET | Kubernetes Protection Set object. |
 | K8S_VIRTUAL_MACHINE | Kubernetes Virtual Machine object. |
 | KMS_KEY_VAULT | KMS Key Vault. |
@@ -161,13 +181,14 @@ Represents all the object types for which we expect to see audits.
 | OLVM_VIRTUAL_MACHINE | OLVM Virtual Machine. |
 | OPENSTACK_ENVIRONMENT | Openstack Environment. |
 | OPENSTACK_IMAGE | Openstack Image. |
+| OPENSTACK_TAG | OpenStack tag object. |
 | OPENSTACK_VIRTUAL_MACHINE | Openstack Virtual Machine. |
 | ORACLE_DB | Oracle database object. |
 | ORACLE_HOST | Oracle host object. |
 | ORACLE_MOUNT | Oracle Mount object. |
 | ORACLE_RAC | Oracle RAC object. |
 | ORGANIZATION | Organization object. |
-| PING_FEDERATE_CLUSTER | Ping Federate Cluster. |
+| PING_FEDERATE_CLUSTER | PingFederate Cluster. |
 | POSTGRES_DB_CLUSTER | Postgres Database Cluster. |
 | POWER_PLATFORM_AI_FLOW | Power Platform AI flow. |
 | POWER_PLATFORM_BUSINESS_PROCESS_FLOW | Power Platform business process flow. |
@@ -183,9 +204,9 @@ Represents all the object types for which we expect to see audits.
 | PROXMOX_ENVIRONMENT | Proxmox environment. |
 | PROXMOX_VIRTUAL_MACHINE | Proxmox virtual machine. |
 | PUBLIC_CLOUD_MACHINE_INSTANCE | Public cloud machine instance. |
-| PURE_STORAGE_ARRAY | Pure Storage array. |
-| PURE_STORAGE_PROTECTION_GROUP | Pure Storage protection group. |
-| PURE_STORAGE_VOLUME | Pure Storage volume. |
+| PURE_STORAGE_ARRAY | Everpure FlashArray. |
+| PURE_STORAGE_PROTECTION_GROUP | Everpure protection group. |
+| PURE_STORAGE_VOLUME | Everpure volume. |
 | REPLICATION_PAIR | Rubrik cluster replication pair. |
 | RSC_CHILD_ACCOUNT | RSC Child Account (Dedicated Tenant). |
 | RSC_TAG | Rsc Tag object. |

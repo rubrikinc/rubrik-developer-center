@@ -17,3 +17,5 @@ O365ExchangeObject is the GraphQL interface implemented by all Exchange-domain i
 - [O365ContactFolder](../objects/O365ContactFolder.md)
 - [O365Email](../objects/O365Email.md)
 - [O365Folder](../objects/O365Folder.md)
+- [O365TodoTask](../objects/O365TodoTask.md)
+- [O365TodoTaskFolder](../objects/O365TodoTaskFolder.md)

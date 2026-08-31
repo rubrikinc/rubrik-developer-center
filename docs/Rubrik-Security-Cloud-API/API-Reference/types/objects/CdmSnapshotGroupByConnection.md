@@ -21,6 +21,7 @@ Paginated list of CdmSnapshotGroupBy objects. Each page of the results includes 
 - [ExchangeDatabase.snapshotGroupByConnection](ExchangeDatabase.md)
 - [FusionComputeVirtualMachine.snapshotGroupByConnection](FusionComputeVirtualMachine.md)
 - [HyperVVirtualMachine.snapshotGroupByConnection](HyperVVirtualMachine.md)
+- [HypervisorVirtualMachineV1.snapshotGroupByConnection](HypervisorVirtualMachineV1.md)
 - KosmosSnappableHierarchyObjectType.snapshotGroupByConnection
 - [KubernetesProtectionSet.snapshotGroupByConnection](KubernetesProtectionSet.md)
 - [KubernetesVirtualMachine.snapshotGroupByConnection](KubernetesVirtualMachine.md)
@@ -32,6 +33,7 @@ Paginated list of CdmSnapshotGroupBy objects. Each page of the results includes 
 - [MysqldbInstance.snapshotGroupByConnection](MysqldbInstance.md)
 - [NasFileset.snapshotGroupByConnection](NasFileset.md)
 - [NutanixVm.snapshotGroupByConnection](NutanixVm.md)
+- [OpenstackVirtualMachine.snapshotGroupByConnection](OpenstackVirtualMachine.md)
 - [OracleDataGuardGroup.snapshotGroupByConnection](OracleDataGuardGroup.md)
 - [OracleDatabase.snapshotGroupByConnection](OracleDatabase.md)
 - [PostgreSQLDbCluster.snapshotGroupByConnection](PostgreSQLDbCluster.md)
@@ -41,5 +43,6 @@ Paginated list of CdmSnapshotGroupBy objects. Each page of the results includes 
 - [SapHanaSystem.snapshotGroupByConnection](SapHanaSystem.md)
 - [ShareFileset.snapshotGroupByConnection](ShareFileset.md)
 - [VcdVapp.snapshotGroupByConnection](VcdVapp.md)
+- [VolumeGroup.snapshotGroupByConnection](VolumeGroup.md)
 - [VsphereVm.snapshotGroupByConnection](VsphereVm.md)
-- [WindowsFileset.snapshotGroupByConnection](WindowsFileset.md)
+- *…and 1 more*

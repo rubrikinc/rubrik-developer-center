@@ -16,7 +16,7 @@
 | blueprintId | String | ID of the recovery plan when the virtual machine is a child of the recovery plan. |
 | blueprintName | String | Name of the Recovery Plan when the virtual machine is a child of the Recovery Plan. |
 | cdmId | String! |  |
-| cdmLink | String! | A link to view the workload on the CDM cluster. For dev use only. |
+| cdmLink | String! | A link to view the workload on the Rubrik cluster. For dev use only. |
 | cdmPendingObjectPauseAssignment | [PendingObjectPauseAssignmentStatus](../enums/PendingObjectPauseAssignmentStatus.md) | Object pause pending assignment details for CDM objects. |
 | cluster | [Cluster](Cluster.md)! | Rubrik cluster where this object originated. |
 | configuredSlaDomain | [SlaDomain](../interfaces/SlaDomain.md)! | SLA Domain configured for the hierarchy object. |
@@ -43,7 +43,7 @@
 | name | String! | Name of the hierarchy object. |
 | newestArchivedSnapshot | [CdmSnapshot](CdmSnapshot.md) | The newest snapshot archived to AWS. |
 | newestIndexedSnapshot | [CdmSnapshot](CdmSnapshot.md) | The most recent indexed snapshot of this workload. |
-| newestReplicatedSnapshot | [CdmSnapshot](CdmSnapshot.md) | The newest snapshot replicated to a cluster. |
+| newestReplicatedSnapshot | [CdmSnapshot](CdmSnapshot.md) | The newest snapshot replicated to a Rubrik cluster. |
 | newestSnapshot | [CdmSnapshot](CdmSnapshot.md) | The most recent snapshot of this workload. |
 | numWorkloadDescendants | Int! | Number of descendant workloads of this object. |
 | objectBackupWindow | [ObjectBackupWindowStatus](ObjectBackupWindowStatus.md) | Object-level backup window status of the hierarchy object. |
@@ -74,8 +74,8 @@
 | snapshotConsistencyMandate | [ConsistencyLevelEnum](../enums/ConsistencyLevelEnum.md)! | Snapshot consistency mandate. |
 | snapshotConsistencySource | String | Fid of the object from where the snapshot consistency mandate is inherited. |
 | snapshotDistribution | [SnapshotDistribution](SnapshotDistribution.md)! | Distribution of the snapshots of the hierarchy object. |
-| snapshotGroupByConnection | [CdmSnapshotGroupByConnection](CdmSnapshotGroupByConnection.md) | GroupBy connection for the snapshots of this workload. |
-| snapshotGroupBySummary | [CdmSnapshotGroupBySummaryConnection](CdmSnapshotGroupBySummaryConnection.md) | GroupBy connection for the snapshots of this workload. |
+| snapshotGroupByConnection | [CdmSnapshotGroupByConnection](CdmSnapshotGroupByConnection.md) | Group-by connection for the snapshots of this workload. |
+| snapshotGroupBySummary | [CdmSnapshotGroupBySummaryConnection](CdmSnapshotGroupBySummaryConnection.md) | Group-by connection for the snapshots of this workload. |
 | templateType | [VmwareTemplateType](../enums/VmwareTemplateType.md)! | VMware virtual machine template type. |
 | vSphereLiveMounts | [VsphereLiveMountConnection](VsphereLiveMountConnection.md)! | List of Live Mounts for this virtual machine. |
 | vSphereMounts | [VsphereMountConnection](VsphereMountConnection.md)! | List of Live Mounts for this virtual machine. |

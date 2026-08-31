@@ -13,7 +13,7 @@ Resource metadata fields to filter by.
 | identityNameSearch | String | The identity name to search for. If empty, the results will not be filtered. |
 | identityOrigins | [[PrincipalOrigin](../enums/PrincipalOrigin.md)!] | Filter by identity origin (INTERNAL/EXTERNAL). |
 | identityTags | [[IdentityTag](../enums/IdentityTag.md)!] | The identity tags to filter by. If empty, the results will not be filtered. |
-| idpTypes | [[IdpType](../enums/IdpType.md)!] | The list of identity provider types to filter by. If empty, the results will not be filtered. |
+| idpTypes | [[IdpType](../enums/IdpType.md)!] | The list of identity provider types to filter by. If empty, the results will not be filtered. This is a resource/violation-scoped filter: it narrows results by the IdP of the involved principal/resource, not by the policy's own configured IdP type. The policy-level IdP filter is the separate `idp_types` field on ListPoliciesFilter / ListPoliciesV2Request. Do not conflate the two. |
 | managedObjectTypes | [[ManagedObjectType](../enums/ManagedObjectType.md)!] | The list of managed object types to filter by. If empty, the results will not be filtered. |
 | objectTypes | [[DataGovObjectType](../enums/DataGovObjectType.md)!] | The list of object types to filter by. If empty, the results will not be filtered. |
 | originEventDateRange | [TimeRangeInput](TimeRangeInput.md) | The date range of the origin event to filter by. If empty, the results will not be filtered. |

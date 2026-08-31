@@ -15,7 +15,9 @@ Object-specific configurations.
 | azureSqlManagedInstanceDbConfigInput | [AzureSqlManagedInstanceDbConfigInput](AzureSqlManagedInstanceDbConfigInput.md) | Input to configure the SLA Domain for Azure SQL Managed Instance DB. |
 | db2ConfigInput | [Db2ConfigInput](Db2ConfigInput.md) | Input to configure the SLA Domain for Db2 database. |
 | gcpCloudSqlConfigInput | [GcpCloudSqlConfigInput](GcpCloudSqlConfigInput.md) | Input to configure the SLA Domain for GCP Cloud SQL. |
+| icebergSlaConfigInput | [IcebergSlaConfigInput](IcebergSlaConfigInput.md) | Input to configure the SLA Domain for Apache Iceberg table. |
 | informixConfigInput | [InformixSlaConfigInput](InformixSlaConfigInput.md) | Input to configure the SLA Domain for Informix. |
+| irisdbConfigInput | [IrisdbSlaConfigInput](IrisdbSlaConfigInput.md) | Input to configure the SLA Domain for IRIS DB instances. |
 | managedVolumeSlaConfigInput | [ManagedVolumeSlaConfigInput](ManagedVolumeSlaConfigInput.md) | Input to configure the SLA Domain for Managed Volume. |
 | mariadbConfigInput | [MariadbSlaConfigInput](MariadbSlaConfigInput.md) | Input to configure the SLA Domain for MariaDB. |
 | mongoConfigInput | [MongoConfigInput](MongoConfigInput.md) | Input to configure the SLA Domain for MongoDB database. |

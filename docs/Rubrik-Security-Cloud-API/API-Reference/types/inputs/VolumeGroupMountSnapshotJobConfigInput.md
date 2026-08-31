@@ -6,6 +6,8 @@ Supported in v5.0+
 
 | Field | Type | Description |
 |-------|------|-------------|
+| excludePaths | [String!] | Supported in v9.7 Optional field which excludes the paths specified during recovery. |
+| recoveryPurpose | [VolumeGroupMountSnapshotJobConfigRecoveryPurpose](../enums/VolumeGroupMountSnapshotJobConfigRecoveryPurpose.md) | Supported in v9.7 Optional field that identifies the purpose of the recovery. Set to 'SURGICAL_RECOVERY' for surgical recovery jobs which exclude quarantined files. |
 | smbDomainName | String | Supported in v5.0+ Domain name of the users that are authenticated to access the SMB share. |
 | smbValidIps | [String!] | Supported in v5.0+ IP address of the hosts that are authenticated to access the SMB share. |
 | smbValidUsers | [String!] | Supported in v5.0+ Usernames of the users that are authenticated to access the SMB share. |

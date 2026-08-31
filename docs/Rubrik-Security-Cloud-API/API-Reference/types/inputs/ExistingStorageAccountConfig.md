@@ -6,4 +6,4 @@ Existing storage account configuration.
 
 | Field | Type | Description |
 |-------|------|-------------|
-| id | String |  |
+| id | String | Azure resource ID of the existing storage account. |

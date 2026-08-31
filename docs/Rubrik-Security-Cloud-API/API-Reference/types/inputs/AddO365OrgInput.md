@@ -8,5 +8,6 @@ Configuration for the addition of an O365 org.
 |-------|------|-------------|
 | appTypes | [String!]! | Types of the apps created in the flow. |
 | exocomputeClusterId | String! | ID of the exocompute cluster. |
+| prioritizedOnboardingSpec | [PrioritizedOnboardingSpec](PrioritizedOnboardingSpec.md) | Prioritized onboarding configuration. |
 | stateToken | String! | CSRF token for the setup flow. |
 | tenantId | String! | ID of the Microsoft 365 tenant. |

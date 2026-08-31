@@ -29,8 +29,8 @@ Polaris protectable object.
 | slaPauseStatus | Boolean! | Pause status of the effective SLA Domain of the hierarchy object. |
 | snapshotConnection | [PolarisSnapshotConnection](../objects/PolarisSnapshotConnection.md) | The list of snapshots taken for this workload. |
 | snapshotDistribution | [SnapshotDistribution](../objects/SnapshotDistribution.md)! | Distribution of the snapshots of the hierarchy object. |
-| snapshotGroupByConnection | [PolarisSnapshotGroupByConnection](../objects/PolarisSnapshotGroupByConnection.md) | GroupBy connection for the snapshots of this workload. |
-| snapshotGroupByNewConnection | [PolarisSnapshotGroupByNewConnection](../objects/PolarisSnapshotGroupByNewConnection.md) | GroupBy connection for the snapshots of this workload. |
+| snapshotGroupByConnection | [PolarisSnapshotGroupByConnection](../objects/PolarisSnapshotGroupByConnection.md) | Group-by connection for the snapshots of this workload. |
+| snapshotGroupByNewConnection | [PolarisSnapshotGroupByNewConnection](../objects/PolarisSnapshotGroupByNewConnection.md) | Group-by connection for the snapshots of this workload. |
 | workloadSnapshotConnection | [GenericSnapshotConnection](../objects/GenericSnapshotConnection.md) | The list of snapshots taken for this workload. |
 
 ## Field Arguments
@@ -95,18 +95,23 @@ Polaris protectable object.
 - [AzureSqlManagedInstanceDatabase](../objects/AzureSqlManagedInstanceDatabase.md)
 - [AzureStorageAccount](../objects/AzureStorageAccount.md)
 - [GcpAlloyDbCluster](../objects/GcpAlloyDbCluster.md)
+- [GcpBigQueryDataset](../objects/GcpBigQueryDataset.md)
 - [GcpCloudSqlInstance](../objects/GcpCloudSqlInstance.md)
 - [GcpNativeDisk](../objects/GcpNativeDisk.md)
 - [GcpNativeGceInstance](../objects/GcpNativeGceInstance.md)
 - [GithubRepository](../objects/GithubRepository.md)
 - [GlueIcebergTable](../objects/GlueIcebergTable.md)
 - [K8sNamespace](../objects/K8sNamespace.md)
+- [M365BackupStorageGroup](../objects/M365BackupStorageGroup.md)
 - [M365BackupStorageMailbox](../objects/M365BackupStorageMailbox.md)
 - [M365BackupStorageOnedrive](../objects/M365BackupStorageOnedrive.md)
+- [M365BackupStorageOrg](../objects/M365BackupStorageOrg.md)
 - [M365BackupStorageSite](../objects/M365BackupStorageSite.md)
 - [O365Calendar](../objects/O365Calendar.md)
+- [O365Group](../objects/O365Group.md)
 - [O365Mailbox](../objects/O365Mailbox.md)
 - [O365Onedrive](../objects/O365Onedrive.md)
+- [O365Org](../objects/O365Org.md)
 - [O365SharepointDrive](../objects/O365SharePointDrive.md)
 - [O365SharepointList](../objects/O365SharepointList.md)
 - [O365Site](../objects/O365Site.md)

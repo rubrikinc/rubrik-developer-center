@@ -9,9 +9,9 @@
 | ANALYZER |  |
 | CLUSTER |  |
 | CLUSTER_UUID | The unique ID of the cluster. |
-| Cluster |  |
-| ClusterType |  |
-| ComplianceStatus |  |
+| Cluster | Group by the cluster that the workload belongs to. |
+| ClusterType | Group by the type of the cluster that the workload belongs to. |
+| ComplianceStatus | Group by the SLA compliance status of the workload. |
 | DAY | Group by day. |
 | Day | Group by day. |
 | FILE |  |
@@ -27,16 +27,16 @@
 | MONTH | Group by month. |
 | Month | Group by month. |
 | OBJECT_NAME |  |
-| ObjectType |  |
+| ObjectType | Group by the type of the workload. |
 | POLICY |  |
 | POLICY_VIOLATIONS |  |
-| ProtectionStatus |  |
-| PullTimeWithOffset |  |
+| ProtectionStatus | Group by the protection status of the workload. |
+| PullTimeWithOffset | Group by the time at which the workload data was pulled from the cluster, adjusted by the requested timezone offset. |
 | Quarter | Group by quarter. |
 | SEVERITY | Group by severity of the anomaly. |
 | SLA_DOMAIN |  |
 | STATUS_POLICY |  |
-| SlaDomain |  |
+| SlaDomain | Group by the SLA Domain assigned to the workload. |
 | Source | Group by the source site. |
 | Status |  |
 | TIME |  |

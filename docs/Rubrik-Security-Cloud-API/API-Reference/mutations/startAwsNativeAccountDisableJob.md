@@ -31,7 +31,7 @@ Starts a job to disable a specific AWS Native account. When complete, the job wi
     {
       "input": {
         "awsAccountRubrikId": "00000000-0000-0000-0000-000000000000",
-        "awsNativeProtectionFeature": "CLOUD_DISCOVERY",
+        "awsNativeProtectionFeature": "CLOUD_COST_REPORT",
         "shouldDeleteNativeSnapshots": true
       }
     }

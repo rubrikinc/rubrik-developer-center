@@ -8,13 +8,13 @@ The specific subgroup type that defines the exact operation to be performed with
 |-------|-------------|
 | ADD_CLUSTER_AS_REPLICATION_TARGET | Adds a cluster as replication target. |
 | ARCHIVAL_LOCATION_DELETE | Deletes an archival location. |
-| ARCHIVAL_LOCATION_DISABLE | Disables an archival location. |
-| ARCHIVAL_LOCATION_ENABLE | Enables an archival location. |
-| ARCHIVAL_LOCATION_PAUSE | Pauses operations on an archival location. |
-| ARCHIVAL_LOCATION_RESUME | Resumes operations on an archival location. |
+| ARCHIVAL_LOCATION_DISABLE *(deprecated: Nothing creates this type; it will be removed in a future release.)* | Disables an archival location. |
+| ARCHIVAL_LOCATION_ENABLE *(deprecated: Nothing creates this type; it will be removed in a future release.)* | Enables an archival location. |
+| ARCHIVAL_LOCATION_PAUSE *(deprecated: Nothing creates this type; it will be removed in a future release.)* | Pauses operations on an archival location. |
+| ARCHIVAL_LOCATION_RESUME *(deprecated: Nothing creates this type; it will be removed in a future release.)* | Resumes operations on an archival location. |
 | AWS_COMPUTE_SETTING_UPSERT | Creates or updates AWS compute settings. |
 | AWS_IAM_CUSTOMER_ACCOUNT_UPSERT | Creates or updates AWS IAM customer account configuration. |
-| AWS_ROLE_BASED_ARCHIVAL_LOCATION | Creates AWS role-based archival location. |
+| AWS_ROLE_BASED_ARCHIVAL_LOCATION *(deprecated: Nothing creates this type; it will be removed in a future release.)* | Creates an AWS role-based archival location. |
 | AZURE_CUSTOMER_FEATURE_UPSERT | Creates or updates Azure customer feature configuration. |
 | BLUEPRINT_CREATE | Creates a new application blueprint. |
 | BLUEPRINT_DELETE | Deletes an application blueprint. |
@@ -26,6 +26,8 @@ The specific subgroup type that defines the exact operation to be performed with
 | CLUSTER_PEER_TOKEN_SET | Sets cluster peer token for replication setup. |
 | DCA_LOCATION_PUT | The subgroup type of the pending action is for creating DCA archival location. |
 | DCA_LOCATION_READER_POST | The subgroup type of the pending action is for creating DCA reader archival location. |
+| DELETE_SNAPSHOTS | Subgroup used to delete specified snapshots at specific locations of an object from CDM (granular deletion mutation). |
+| DELETE_SNAPSHOTS_OF_OBJECTS | Subgroup used to delete all snapshots of specified objects at specific locations from CDM (granular deletion of objects mutation). |
 | DISABLE_REPLICATION_LOCATION_PUT | Disables a replication location. |
 | ENABLE_LOCATION_AS_REPLICATION_TARGET | Enables a location as a replication target. |
 | ENABLE_POLARIS_AS_REPLICATION_SOURCE | Enables Polaris as a replication source. |
@@ -46,6 +48,7 @@ The specific subgroup type that defines the exact operation to be performed with
 | OBJECT_STORE_LOCATION_READER_POST | Creates a reader for object store archival location. |
 | PERSONAL_ACCESS_TOKEN_DELETE | Subgroup used to delete personal access token from CDM. |
 | PERSONAL_ACCESS_TOKEN_SYNC | Subgroup used to sync a personal access token to CDM. |
+| QAUTH_BREAK_GLASS_CONFIG_PUT | Subgroup used to put the break-glass config blob to CDM. |
 | QAUTH_POLICY_CDM_DELETE | Subgroup used to delete a QAuth policy block-list from CDM. |
 | QAUTH_POLICY_CDM_PUT | Subgroup used to put a QAuth policy block-list to CDM. |
 | QSTAR_LOCATION_PUT | The subgroup type of the pending action is forput of Q-star location. |

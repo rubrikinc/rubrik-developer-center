@@ -1,6 +1,6 @@
 # AzureNetworkSubnetResp
 
-*No description available.*
+AzureNetworkSubnetResp is the response for CheckAzureNetworkSubnet.
 
 ## Fields
 

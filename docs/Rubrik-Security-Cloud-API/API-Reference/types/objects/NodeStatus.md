@@ -6,6 +6,7 @@ Supported in v5.0+
 
 | Field | Type | Description |
 |-------|------|-------------|
+| assetId | String | System serial number of the node from dmidecode, used as the Salesforce asset ID. Absent for virtual and cloud nodes. |
 | brikId | String! | Required. Supported in v5.0+ |
 | hasUnavailableDisks | Boolean | Supported in v5.1+ |
 | hostname | String | Supported in v6.0+ Hostname of the node. |

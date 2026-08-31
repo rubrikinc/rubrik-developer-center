@@ -28,7 +28,7 @@ Represents a GCP project.
 | logicalPath | [[PathNode](PathNode.md)!]! | Sequential list of the logical ancestors of this object. |
 | name | String! | Name of the hierarchy object. |
 | nativeId | String! | Native id of the GCP project. |
-| nativeName | String! | Native name of the GCP project. |
+| nativeName | String! | GCP Native name of the object. |
 | numWorkloadDescendants | Int! | Number of descendant workloads of this object. |
 | objectBackupWindow | [ObjectBackupWindowStatus](ObjectBackupWindowStatus.md) | Object-level backup window status of the hierarchy object. |
 | objectPauseStatus | [ObjectPauseStatus](ObjectPauseStatus.md) | Pause status of the hierarchy object. |
@@ -80,6 +80,7 @@ Represents a GCP project.
 **Referenced by**
 
 - [GcpAlloyDbCluster.gcpProject](GcpAlloyDbCluster.md)
+- [GcpBigQueryDataset.gcpProject](GcpBigQueryDataset.md)
 - [GcpCloudSqlInstance.gcpProject](GcpCloudSqlInstance.md)
 - [GcpNativeDisk.gcpNativeProject](GcpNativeDisk.md)
 - [GcpNativeDisk.gcpProject](GcpNativeDisk.md)

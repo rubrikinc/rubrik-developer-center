@@ -12,6 +12,7 @@ Replication specification.
 | azureTarget | [AzureReplicationTarget](AzureReplicationTarget.md)! | Azure location used as the replication target. |
 | cascadingArchivalSpecs | [[CascadingArchivalSpec](CascadingArchivalSpec.md)!]! | Cascading Archival Specifications. |
 | cluster | [SlaReplicationCluster](SlaReplicationCluster.md) | Rubrik cluster used as the replication target. |
+| databaseLogRetentionInfo | [DatabaseLogRetentionInfoType](DatabaseLogRetentionInfoType.md) | Per-workload database transaction log retention policy for this location. |
 | replicationLocalRetentionDuration | [Duration](Duration.md) | Time snapshot is kept on local target cluster. |
 | replicationPairs | [[SlaReplicationPair](SlaReplicationPair.md)!] | Datacenter replication pairs. |
 | retentionDuration | [Duration](Duration.md) | Retention duration. |

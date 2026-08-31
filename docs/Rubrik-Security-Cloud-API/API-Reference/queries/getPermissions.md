@@ -45,7 +45,7 @@ Permissions assigned to the role that are in effect.
                 "objectIds": [
                   "example-string"
                 ],
-                "snappableType": "AUTH0_TENANT"
+                "snappableType": "ANTHROPIC_CHILD_ORG_SETTINGS"
               }
             ]
           }

@@ -42,7 +42,7 @@ This endpoint is deprecated.
               "objectIds": [
                 "example-string"
               ],
-              "snappableType": "AUTH0_TENANT"
+              "snappableType": "ANTHROPIC_CHILD_ORG_SETTINGS"
             }
           ],
           "operation": "ACCESS_CDM_CLUSTER"

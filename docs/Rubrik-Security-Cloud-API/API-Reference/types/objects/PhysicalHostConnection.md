@@ -16,7 +16,3 @@ Paginated list of PhysicalHost objects. Each page of the results includes at mos
 **Queries**
 
 - [query: physicalHosts](../../queries/physicalHosts.md)
-
-**Referenced by**
-
-- [MongoSource.dataHosts](MongoSource.md)

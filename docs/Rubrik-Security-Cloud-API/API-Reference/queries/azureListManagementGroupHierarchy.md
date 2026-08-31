@@ -42,6 +42,7 @@ AzureListManagementGroupHierarchy lists the flattened management groups hierarch
         "azureListManagementGroupHierarchy": {
           "entities": [
             {
+              "ineligibilityReason": "AZURE_ONBOARDING_INELIGIBILITY_REASON_ALREADY_ONBOARDED",
               "isEligible": true
             }
           ]

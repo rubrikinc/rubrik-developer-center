@@ -66,6 +66,13 @@ Refers to the default values for the export operation of the RDS DB Instance in 
           "dbEngineVersion": "example-string",
           "dbInstanceClass": "DB_M1_LARGE",
           "dbParameterGroupName": "example-string",
+          "availableDbEngineVersions": [
+            {
+              "isDifferentMajor": true,
+              "isExtendedSupport": true,
+              "version": "example-string"
+            }
+          ],
           "metadata": [
             {
               "key": "example-string",

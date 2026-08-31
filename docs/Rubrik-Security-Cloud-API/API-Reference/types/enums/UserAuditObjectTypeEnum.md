@@ -137,6 +137,7 @@ User audit object type.
 | OracleDb | Oracle database type. |
 | OracleHost | Oracle host type. |
 | OracleRac | Oracle RAC type. |
+| PING_FEDERATE_CLUSTER | PingFederate cluster type. |
 | POSTGRES_DB_CLUSTER | PostgreSQL Database Cluster. |
 | PublicCloudMachineInstance | Public cloud machine instance type. |
 | REPLICATION_PAIR | Rubrik cluster replication pair. |

@@ -11,6 +11,7 @@ The different TPR rules.
 | DELETE_CLOUD_ACCOUNTS | Quorum authorization is required for deleting cloud accounts. |
 | DELETE_CLOUD_ARCHIVAL_LOCATION | Quorum authorization is required to delete a cloud archival location. |
 | DELETE_DATA_SOURCE | Quorum authorization is required for deleting data sources. |
+| DELETE_PHYSICAL_HOST | Quorum authorization is required for deleting a physical host. |
 | DELETE_RCV | The TPR rule is for deleting RCV locations. |
 | DELETE_REPLICATION_PAIR | Quorum authorization is required for deleting a replication pair. |
 | DELETE_SNAPSHOT | The TPR rule is for deleting snapshots. |
@@ -30,6 +31,7 @@ The different TPR rules.
 | EXCLUDE_DISK | The TPR rule is for excluding disks from snapshots. |
 | LEGAL_HOLD | The TPR rule is for legal holds. |
 | MANAGE_CUSTOM_CERTIFICATES | Quorum authorization is required for managing custom (trust store) certificates: add, update, delete. |
+| MANAGE_ENCRYPTION_SETTINGS | The TPR rule for managing encryption settings (Rubrik cluster key rotation and archival location rekey). |
 | MANAGE_SECURITY_SETTINGS | The TPR rule for managing platform security settings. |
 | MODIFY_AIR_GAPPED_STATUS | The TPR rule for updating air gapped status of cluster. |
 | MODIFY_PAM_INTEGRATION | The TPR rule for modifying PAM configuration. |

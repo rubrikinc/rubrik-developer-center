@@ -1,6 +1,6 @@
 # gcpNativeExcludeDisksFromInstanceSnapshot
 
-*No description available.*
+Exclude GCP native disks from GCE instance snapshots.
 
 ## Arguments
 

@@ -10,7 +10,7 @@ NAS Cloud Direct object protection status for the requested clusters.
 
 ## Returns
 
-[NcdObjectProtectionStatus](../types/objects/NcdObjectProtectionStatus.md)
+[NcdObjectProtectionStatus](../types/objects/NcdObjectProtectionStatus.md)!
 
 ## Sample
 

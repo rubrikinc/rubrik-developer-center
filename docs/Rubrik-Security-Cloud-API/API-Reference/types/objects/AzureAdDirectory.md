@@ -2,7 +2,7 @@
 
 Details of the Azure AD directory object.
 
-**Implements:** [HierarchyObject](../interfaces/HierarchyObject.md), [PolarisHierarchyObject](../interfaces/PolarisHierarchyObject.md), [HierarchySnappable](../interfaces/HierarchySnappable.md), [PolarisHierarchySnappable](../interfaces/PolarisHierarchySnappable.md)
+**Implements:** [PolarisHierarchyObject](../interfaces/PolarisHierarchyObject.md), [HierarchyObject](../interfaces/HierarchyObject.md), [PolarisHierarchySnappable](../interfaces/PolarisHierarchySnappable.md), [HierarchySnappable](../interfaces/HierarchySnappable.md)
 
 ## Fields
 
@@ -15,16 +15,19 @@ Details of the Azure AD directory object.
 | authorizedOperations | [[Operation](../enums/Operation.md)!]! | The authorized operations on the object. |
 | configuredSlaDomain | [SlaDomain](../interfaces/SlaDomain.md)! | SLA Domain configured for the hierarchy object. |
 | directoryId | String! | The natural ID of the Azure AD Directory. |
+| doesEventHubIngestionRequireAzureSignIn | Boolean! | Specifies whether removing Event Hub ingestion for this Entra ID directory requires an interactive Azure sign-in. |
 | domainName | String! | Name of the Azure AD Directory. |
 | effectiveRetentionSlaDomain | [SlaDomain](../interfaces/SlaDomain.md) | Effective retention of the SLA Domain of the hierarchy object. |
 | effectiveSlaDomain | [SlaDomain](../interfaces/SlaDomain.md)! | Effective SLA Domain of the hierarchy object. |
 | effectiveSlaSourceObject | [PathNode](PathNode.md) | Path node of the effective SLA Domain source. |
+| eventHubConnectionStatus | [AzureAdEventHubConnectionStatus](../enums/AzureAdEventHubConnectionStatus.md) | Whether Entra ID Event Hub ingestion is actively connected for this directory. Returns null if the status is currently unavailable. |
 | exoHostType | [AzureAdExocomputeHostType](../enums/AzureAdExocomputeHostType.md)! | Specifies the host type of the exocompute resource for this tenant. |
 | exocomputeId | String! | ID of the exocompute cluster. |
 | firstDeviceSnapshotTime | [DateTime](../scalars/DateTime.md) | When enabled, time of the first snapshot that includes devices. |
 | firstScopeSnapshotTime | [DateTime](../scalars/DateTime.md) | Time of the first snapshot with scope enabled for Role Assignments. |
 | firstZeusSnapshotTime | [DateTime](../scalars/DateTime.md) | When enabled, time of the first snapshot saved to the Zeus store. |
-| id | [UUID](../scalars/UUID.md)! | Object ID. |
+| id | [UUID](../scalars/UUID.md)! | ID of the hierarchy object. |
+| isEventHubIngestionEnabled | Boolean! | Specifies whether Event Hub ingestion is active for this Entra ID directory. |
 | isIntuneEnabled | Boolean! | Specifies whether Intune protection is enabled for the tenant. |
 | isJitEnabled | Boolean! | Specifies whether the tenant was onboarded using the Just In Time permissions feature. |
 | isProvisioned | Boolean! | Specifies whether the infrastructure has been provisioned to enable protection for this Azure AD. |
@@ -56,7 +59,8 @@ Details of the Azure AD directory object.
 | latestTermsOfUseCount | Int! | Terms of Use count from the latest snapshot. |
 | latestUserCount | Int! | User count from the latest snapshot. |
 | logicalPath | [[PathNode](PathNode.md)!]! | Sequential list of the logical ancestors of this object. |
-| migratedFromColossus | Boolean! | Specifies whether the tenant was migrated from Colossus to the Zeusstore. |
+| m365AccessRecoveryState | [M365AccessRecoveryState](../enums/M365AccessRecoveryState.md)! | Specifies the state of Automated M365 Access Recovery for the directory. A directory that has never been configured reports the default state. |
+| migratedFromColossus | Boolean! | Specifies whether the tenant was migrated from Colossus to the Zeus store. |
 | name | String! | Name of the hierarchy object. |
 | newestIndexedSnapshot | [PolarisSnapshot](PolarisSnapshot.md) | The latest snapshot that is indexed and unexpired, and therefore restorable. |
 | newestSnapshot | [PolarisSnapshot](PolarisSnapshot.md) | The most recent snapshot of this workload. |
@@ -77,8 +81,8 @@ Details of the Azure AD directory object.
 | slaPauseStatus | Boolean! | Pause status of the effective SLA Domain of the hierarchy object. |
 | snapshotConnection | [PolarisSnapshotConnection](PolarisSnapshotConnection.md) | The list of snapshots taken for this workload. |
 | snapshotDistribution | [SnapshotDistribution](SnapshotDistribution.md)! | Distribution of the snapshots of the hierarchy object. |
-| snapshotGroupByConnection | [PolarisSnapshotGroupByConnection](PolarisSnapshotGroupByConnection.md) | GroupBy connection for the snapshots of this workload. |
-| snapshotGroupByNewConnection | [PolarisSnapshotGroupByNewConnection](PolarisSnapshotGroupByNewConnection.md) | GroupBy connection for the snapshots of this workload. |
+| snapshotGroupByConnection | [PolarisSnapshotGroupByConnection](PolarisSnapshotGroupByConnection.md) | Group-by connection for the snapshots of this workload. |
+| snapshotGroupByNewConnection | [PolarisSnapshotGroupByNewConnection](PolarisSnapshotGroupByNewConnection.md) | Group-by connection for the snapshots of this workload. |
 | tenantType | [AzureAdTenantType](../enums/AzureAdTenantType.md)! | Specifies the Microsoft cloud environment type of this tenant. |
 | workloadSnapshotConnection | [GenericSnapshotConnection](GenericSnapshotConnection.md) | The list of snapshots taken for this workload. |
 

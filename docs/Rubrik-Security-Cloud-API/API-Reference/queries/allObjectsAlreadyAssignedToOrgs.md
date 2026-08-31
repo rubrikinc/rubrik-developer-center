@@ -39,7 +39,7 @@ Returns objects that have already been assigned to existing orgs.
           "objectIds": [
             "example-string"
           ],
-          "snappableType": "AUTH0_TENANT"
+          "snappableType": "ANTHROPIC_CHILD_ORG_SETTINGS"
         }
       ],
       "allowedClusters": [
@@ -58,7 +58,7 @@ Returns objects that have already been assigned to existing orgs.
             "objectIds": [
               "example-string"
             ],
-            "snappableType": "AUTH0_TENANT"
+            "snappableType": "ANTHROPIC_CHILD_ORG_SETTINGS"
           }
         ]
       }

@@ -1,6 +1,6 @@
 # O365OrgDescendant
 
-*No description available.*
+Descendants of a Microsoft 365 organization.
 
 ## Fields
 

@@ -2,7 +2,7 @@
 
 SQL Server database.
 
-**Implements:** [HierarchyObject](../interfaces/HierarchyObject.md), [CdmHierarchyObject](../interfaces/CdmHierarchyObject.md), [HierarchySnappable](../interfaces/HierarchySnappable.md), [CdmHierarchySnappableNew](../interfaces/CdmHierarchySnappableNew.md), [MssqlTopLevelDescendantType](../interfaces/MssqlTopLevelDescendantType.md), [PhysicalHostDescendantType](../interfaces/PhysicalHostDescendantType.md), [WindowsClusterDescendantType](../interfaces/WindowsClusterDescendantType.md), [MssqlAvailabilityGroupDescendantType](../interfaces/MssqlAvailabilityGroupDescendantType.md), [MssqlAvailabilityGroupLogicalChildType](../interfaces/MssqlAvailabilityGroupLogicalChildType.md), [MssqlInstanceDescendantType](../interfaces/MssqlInstanceDescendantType.md), [MssqlInstanceLogicalChildType](../interfaces/MssqlInstanceLogicalChildType.md), [MssqlHostDescendantType](../interfaces/MssqlHostDescendantType.md)
+**Implements:** [CdmHierarchyObject](../interfaces/CdmHierarchyObject.md), [HierarchyObject](../interfaces/HierarchyObject.md), [HierarchySnappable](../interfaces/HierarchySnappable.md), [CdmHierarchySnappableNew](../interfaces/CdmHierarchySnappableNew.md), [MssqlTopLevelDescendantType](../interfaces/MssqlTopLevelDescendantType.md), [PhysicalHostDescendantType](../interfaces/PhysicalHostDescendantType.md), [WindowsClusterDescendantType](../interfaces/WindowsClusterDescendantType.md), [MssqlAvailabilityGroupDescendantType](../interfaces/MssqlAvailabilityGroupDescendantType.md), [MssqlAvailabilityGroupLogicalChildType](../interfaces/MssqlAvailabilityGroupLogicalChildType.md), [MssqlInstanceDescendantType](../interfaces/MssqlInstanceDescendantType.md), [MssqlInstanceLogicalChildType](../interfaces/MssqlInstanceLogicalChildType.md), [MssqlHostDescendantType](../interfaces/MssqlHostDescendantType.md)
 
 ## Fields
 
@@ -13,7 +13,7 @@ SQL Server database.
 | authorizedOperations | [[Operation](../enums/Operation.md)!]! | The authorized operations on the object. |
 | cdmGroupedSnapshots | [CdmGroupedSnapshotConnection](CdmGroupedSnapshotConnection.md)! | List of snapshots taken for a Rubrik CDM workload grouped by attributes. |
 | cdmId | String! | CDM ID of the SQL Server database. |
-| cdmLink | String! | A link to view the workload on the CDM cluster. For dev use only. |
+| cdmLink | String! | A link to view the workload on the Rubrik cluster. For dev use only. |
 | cdmNewestSnapshot | [CdmWorkloadSnapshot](CdmWorkloadSnapshot.md) | The newest snapshot taken for a CDM workload. |
 | cdmOldestSnapshot | [CdmWorkloadSnapshot](CdmWorkloadSnapshot.md) | The oldest snapshot taken for a CDM workload. |
 | cdmOnDemandSnapshotCount | Int! | The count of on demand snapshots for a SQL Server database. |
@@ -47,7 +47,7 @@ SQL Server database.
 | name | String! | Name of the hierarchy object. |
 | newestArchivedSnapshot | [CdmSnapshot](CdmSnapshot.md) | The newest snapshot archived to AWS. |
 | newestIndexedSnapshot | [CdmSnapshot](CdmSnapshot.md) | The most recent indexed snapshot of this workload. |
-| newestReplicatedSnapshot | [CdmSnapshot](CdmSnapshot.md) | The newest snapshot replicated to a cluster. |
+| newestReplicatedSnapshot | [CdmSnapshot](CdmSnapshot.md) | The newest snapshot replicated to a Rubrik cluster. |
 | newestSnapshot | [CdmSnapshot](CdmSnapshot.md) | The most recent snapshot of this workload. |
 | numWorkloadDescendants | Int! | Number of descendant workloads of this object. |
 | objectBackupWindow | [ObjectBackupWindowStatus](ObjectBackupWindowStatus.md) | Object-level backup window status of the hierarchy object. |
@@ -70,8 +70,8 @@ SQL Server database.
 | slaPauseStatus | Boolean! | Pause status of the effective SLA Domain of the hierarchy object. |
 | snapshotConnection | [CdmSnapshotConnection](CdmSnapshotConnection.md) | The list of snapshots taken for this workload. |
 | snapshotDistribution | [SnapshotDistribution](SnapshotDistribution.md)! | Distribution of the snapshots of the hierarchy object. |
-| snapshotGroupByConnection | [CdmSnapshotGroupByConnection](CdmSnapshotGroupByConnection.md) | GroupBy connection for the snapshots of this workload. |
-| snapshotGroupBySummary | [CdmSnapshotGroupBySummaryConnection](CdmSnapshotGroupBySummaryConnection.md) | GroupBy connection for the snapshots of this workload. |
+| snapshotGroupByConnection | [CdmSnapshotGroupByConnection](CdmSnapshotGroupByConnection.md) | Group-by connection for the snapshots of this workload. |
+| snapshotGroupBySummary | [CdmSnapshotGroupBySummaryConnection](CdmSnapshotGroupBySummaryConnection.md) | Group-by connection for the snapshots of this workload. |
 | unprotectableReasons | [String!]! | List of reasons that a SQL Server database cannot be protected. |
 | version | String | The Microsoft SQL Server version. |
 
@@ -94,6 +94,8 @@ SQL Server database.
 | cdmSnapshots | sortBy | [CdmSnapshotSortByEnum](../enums/CdmSnapshotSortByEnum.md) | Sorts snapshots by field. |
 | liveMounts | first | Int | Returns the first n elements from the list. |
 | liveMounts | after | String | Returns the elements in the list that occur after the specified cursor. |
+| liveMounts | last | Int | Returns the last n elements from the list. |
+| liveMounts | before | String | Returns the elements in the list that occur before the specified cursor. |
 | liveMounts | sortBy | [MssqlDatabaseLiveMountSortByInput](../inputs/MssqlDatabaseLiveMountSortByInput.md) | Sort by argument for Mssql database live mounts. |
 | liveMounts | filters | [[MssqlDatabaseLiveMountFilterInput](../inputs/MssqlDatabaseLiveMountFilterInput.md)!] | Filters for Mssql database live mounts. |
 | missedSnapshotConnection | first | Int | Returns the first n elements from the list. |

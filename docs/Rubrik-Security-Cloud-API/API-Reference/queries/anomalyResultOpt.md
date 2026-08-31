@@ -25,6 +25,7 @@ Optional result of the Anomaly Investigation.
         activitySeriesId
         anomalyAnalysisLocationId
         anomalyAnalysisLocationName
+        anomalyCategory
         anomalyProbability
         anomalyType
         bytesCreatedCount
@@ -39,8 +40,10 @@ Optional result of the Anomaly Investigation.
         filesModifiedCount
         id
         isAnomaly
+        isCriticalResourceMonitored
         location
         managedId
+        objectDeletedAt
         objectType
         potentialSnoozedDirectories
         previousSnapshotDate
@@ -74,17 +77,17 @@ Optional result of the Anomaly Investigation.
           "activitySeriesId": "example-string",
           "anomalyAnalysisLocationId": "example-string",
           "anomalyAnalysisLocationName": "example-string",
+          "anomalyCategory": "ANOMALY_CATEGORY_UNSPECIFIED",
           "anomalyProbability": 0.0,
           "anomalyType": "FILESYSTEM",
-          "bytesCreatedCount": 0,
           "anomalyInfo": {},
-          "cluster": {
-            "cdmRbacMigrationStatus": "example-string",
-            "connectivityLastUpdated": "2024-01-01T00:00:00.000Z",
-            "cyberEventLockdownMode": "CYBER_EVENT_LOCKDOWN_MODE_UNSPECIFIED",
-            "defaultAddress": "example-string",
-            "defaultPort": 0,
-            "encryptionEnabled": true
+          "cloudAuditEvent": {
+            "accountId": "example-string",
+            "accountName": "example-string",
+            "action": "example-string",
+            "deletedBy": "example-string",
+            "eventId": "example-string",
+            "sourceIp": "example-string"
           }
         }
       }

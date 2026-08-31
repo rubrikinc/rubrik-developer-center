@@ -2,7 +2,7 @@
 
 SQL Server instance.
 
-**Implements:** [HierarchyObject](../interfaces/HierarchyObject.md), [CdmHierarchyObject](../interfaces/CdmHierarchyObject.md), [MssqlTopLevelDescendantType](../interfaces/MssqlTopLevelDescendantType.md), [PhysicalHostDescendantType](../interfaces/PhysicalHostDescendantType.md), [PhysicalHostPhysicalChildType](../interfaces/PhysicalHostPhysicalChildType.md), [WindowsClusterDescendantType](../interfaces/WindowsClusterDescendantType.md), [WindowsClusterLogicalChildType](../interfaces/WindowsClusterLogicalChildType.md), [MssqlHostPhysicalChildType](../interfaces/MssqlHostPhysicalChildType.md), [MssqlHostDescendantType](../interfaces/MssqlHostDescendantType.md)
+**Implements:** [CdmHierarchyObject](../interfaces/CdmHierarchyObject.md), [HierarchyObject](../interfaces/HierarchyObject.md), [MssqlTopLevelDescendantType](../interfaces/MssqlTopLevelDescendantType.md), [PhysicalHostDescendantType](../interfaces/PhysicalHostDescendantType.md), [PhysicalHostPhysicalChildType](../interfaces/PhysicalHostPhysicalChildType.md), [WindowsClusterDescendantType](../interfaces/WindowsClusterDescendantType.md), [WindowsClusterLogicalChildType](../interfaces/WindowsClusterLogicalChildType.md), [MssqlHostPhysicalChildType](../interfaces/MssqlHostPhysicalChildType.md), [MssqlHostDescendantType](../interfaces/MssqlHostDescendantType.md)
 
 ## Fields
 

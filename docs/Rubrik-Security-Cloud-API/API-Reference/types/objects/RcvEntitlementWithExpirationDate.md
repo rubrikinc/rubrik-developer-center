@@ -1,19 +1,19 @@
 # RcvEntitlementWithExpirationDate
 
-Rubrik Cloud Vault (RCV) entitlement with expiration date.
+Rubrik Cloud Vault (RCV) entitlement tier wise details.
 
 ## Fields
 
 | Field | Type | Description |
 |-------|------|-------------|
 | bundle | [RcvRegionBundle](../enums/RcvRegionBundle.md)! | Rubrik Cloud Vault (RCV) region bundle. |
-| capacity | Float! | Rubrik Cloud Vault (RCV) entitlement capacity in TB. |
+| capacity | Float! | Rubrik Cloud Vault (RCV) Entitlement capacity in TBs. |
 | createdAt | [DateTime](../scalars/DateTime.md) | Rubrik Cloud Vault (RCV) entitlement creation date. |
 | expirationDate | [DateTime](../scalars/DateTime.md) | Rubrik Cloud Vault (RCV) entitlement expiration date. |
-| isReplaced | Boolean! | Rubrik Cloud Vault (RCV) is replaced or not. |
+| isReplaced | Boolean! | Specifies whether the Rubrik Cloud Vault (RCV) has been replaced. |
 | redundancy | [RcvRedundancy](../enums/RcvRedundancy.md)! | Rubrik Cloud Vault (RCV) redundancy level. |
 | revenueType | [EntitlementType](../enums/EntitlementType.md)! | Rubrik Cloud Vault (RCV) entitlement revenue type. |
-| tier | [RcvTier](../enums/RcvTier.md)! | Rubrik Cloud Vault (RCV) entitlement tier. |
+| tier | [RcvTier](../enums/RcvTier.md)! | Rubrik Cloud Vault (RCV) Entitlement tier. |
 
 ## Used By
 

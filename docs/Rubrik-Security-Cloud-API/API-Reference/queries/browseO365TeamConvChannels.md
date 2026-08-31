@@ -1,6 +1,6 @@
 # browseO365TeamConvChannels
 
-Browse channels in a Teams conversations snapshot.
+BrowseO365TeamConvChannels returns a paginated list of Teams conversation channels for the given workload. When no snapshot is specified, browses live channels; when a snapshot is specified, browses channels in that snapshot.
 
 ## Arguments
 
@@ -8,12 +8,14 @@ Browse channels in a Teams conversations snapshot.
 |----------|------|-------------|
 | first | Int | Returns the first n elements from the list. |
 | after | String | Returns the elements in the list that occur after the specified cursor. |
-| snappableFid *(required)* | [UUID](../types/scalars/UUID.md)! | The FID for the workload. |
-| snapshotFidOpt | [UUID](../types/scalars/UUID.md) | snapshotFid arg which is of optional type |
-| excludeArchived *(required)* | Boolean! |  |
+| last | Int | Returns the last n elements from the list. |
+| before | String | Returns the elements in the list that occur before the specified cursor. |
+| snappableFid *(required)* | [UUID](../types/scalars/UUID.md)! | The unique identifier for the Teams workload. |
+| snapshotFidOpt | [UUID](../types/scalars/UUID.md) | Optional snapshot FID. When set, browses that snapshot. |
+| excludeArchived *(required)* | Boolean! | Whether archived channels are omitted from results. Must be false when snapshotFidOpt is absent; must be true when present. |
 | orgId *(required)* | [UUID](../types/scalars/UUID.md)! | Org UUID. |
 | channelMembershipTypeFilter *(required)* | [ChannelMembershipType](../types/enums/ChannelMembershipType.md)! | Filter on channel membership type. |
-| nameFilter | String |  |
+| nameFilter | String | Optional display-name substring filter. |
 
 ## Returns
 

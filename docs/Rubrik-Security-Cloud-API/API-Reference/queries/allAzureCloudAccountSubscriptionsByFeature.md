@@ -56,6 +56,11 @@ Retrieves a list of all Azure Subscriptions with feature details such as feature
             "id": "example-string",
             "name": "example-string",
             "nativeId": "example-string",
+            "app": {
+              "appName": "example-string",
+              "authType": "AZURE_AUTH_TYPE_NON_OAUTH",
+              "clientId": "example-string"
+            },
             "featureDetails": [
               {
                 "customerFeatureId": "00000000-0000-0000-0000-000000000000",
@@ -68,13 +73,7 @@ Retrieves a list of all Azure Subscriptions with feature details such as feature
                 ],
                 "status": "CONNECTED"
               }
-            ],
-            "managementGroup": {
-              "customerManagementGroupId": "00000000-0000-0000-0000-000000000000",
-              "isAuthorized": true,
-              "name": "example-string",
-              "nativeId": "example-string"
-            }
+            ]
           }
         ]
       }

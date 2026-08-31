@@ -11,6 +11,8 @@ Cloud account features.
 | APP_FLOWS | Cloud account feature is App Flows. |
 | ARCHIVAL | Cloud account feature is Archival. |
 | AWS_CONFIG_PROTECTION *(deprecated: Use `CLOUD_NATIVE_CONFIG_PROTECTION` instead.)* | Cloud account feature is Application Config Protection. |
+| AWS_KMS_KEY_SHARING | Cloud account feature is AWS KMS Key Sharing -- automated sharing of the customer's CMKs with the exocompute account and creation of the RSC gateway KMS key. Applies to any AWS workload backed up through exocompute, independently of which protection features are enabled. |
+| AZURE_COSMOS_NOSQL_PROTECTION | Cloud account feature is Azure Cosmos NoSQL Protection. |
 | AZURE_DEVOPS_DEVELOPER_COLLABORATION_PROTECTION | AZURE_DEVOPS_DEVELOPER_COLLABORATION_PROTECTION refers to the feature enabling backup of non-repo Azure DevOps project content (work items, boards, sprints, wikis, teams). |
 | AZURE_DEVOPS_PROTECTION | AZURE_DEVOPS_PROTECTION refers to the feature enabling protection of Azure DevOps and related workload. |
 | AZURE_DEVOPS_REPOSITORY_PROTECTION | AZURE_DEVOPS_REPOSITORY_PROTECTION refers to the feature enabling protection of Azure DevOps repositories and related workload. |
@@ -35,6 +37,7 @@ Cloud account features.
 | CLOUD_NATIVE_S3_PROTECTION | Cloud account feature is Cloud Native S3 Protection. |
 | CLOUD_NATIVE_UEM_KEY_MANAGEMENT | Cloud account feature is Cloud Native UEM Key Management. |
 | CLOUD_SQL_PROTECTION | Cloud account feature is Cloud SQL Protection. |
+| CRITICAL_RESOURCE_PROTECTION | Cloud account feature is Critical Resource Protection -- real-time detection of deletions on customer-marked critical AWS resources, surfaced in the UI as Infrastructure Alerts. |
 | CYBERRECOVERY_DATA_CLASSIFICATION_DATA | Cloud account feature is Cyber Recovery Data Classification Data. |
 | CYBERRECOVERY_DATA_CLASSIFICATION_METADATA | Cloud account feature is Cyber Recovery Data Classification Metadata. |
 | DATA_CENTER_ROLE_BASED_ARCHIVAL | Cloud account feature is Data Center Role Based Archival. |
@@ -45,6 +48,7 @@ Cloud account features.
 | GCP_BIGQUERY_PROTECTION | Cloud account feature is GCP BigQuery Protection. |
 | GCP_BIGQUERY_RESERVATION | Cloud account feature is GCP BigQuery Reservation host. |
 | GCP_SHARED_VPC_HOST | Cloud account feature is GCP Shared VPC Host. |
+| GITHUB_DEVELOPER_COLLABORATION_PROTECTION | GITHUB_DEVELOPER_COLLABORATION_PROTECTION refers to the GitHub Developer Collaboration feature. |
 | GITHUB_REPOSITORY_PROTECTION | GITHUB_REPOSITORY_PROTECTION refers to the feature enabling protection of GitHub repositories and related workload. |
 | GLUE_ICEBERG_PROTECTION | Cloud account feature is Glue Iceberg Protection. |
 | KUBERNETES_PROTECTION | Cloud account feature is Kubernetes Protection. |

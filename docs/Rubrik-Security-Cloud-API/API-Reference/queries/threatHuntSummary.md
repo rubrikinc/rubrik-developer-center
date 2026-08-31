@@ -46,6 +46,7 @@ The summary of the threat hunt.
             "maxMatchesPerSnapshot": 0,
             "name": "example-string",
             "notes": "example-string",
+            "shouldExpandArchiveFiles": true,
             "shouldTrustFilesystemTimeInfo": true
           },
           "objectsSummary": [

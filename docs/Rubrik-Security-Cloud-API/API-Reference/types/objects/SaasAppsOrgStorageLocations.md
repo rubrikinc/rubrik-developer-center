@@ -12,4 +12,5 @@ Storage locations details for a SaaS organization.
 
 **Referenced by**
 
+- [AnthropicOrg.storageRegions](AnthropicOrg.md)
 - [GoogleWorkspaceOrg.storageRegions](GoogleWorkspaceOrg.md)

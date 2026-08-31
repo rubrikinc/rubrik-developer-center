@@ -1,8 +1,8 @@
 # O365Org
 
-*No description available.*
+O365 Organization.
 
-**Implements:** [MicrosoftOrg](../interfaces/MicrosoftOrg.md), [HierarchyObject](../interfaces/HierarchyObject.md), [PolarisHierarchyObject](../interfaces/PolarisHierarchyObject.md)
+**Implements:** [MicrosoftOrg](../interfaces/MicrosoftOrg.md), [PolarisHierarchySnappable](../interfaces/PolarisHierarchySnappable.md), [HierarchySnappable](../interfaces/HierarchySnappable.md), [HierarchyObject](../interfaces/HierarchyObject.md), [PolarisHierarchyObject](../interfaces/PolarisHierarchyObject.md)
 
 ## Fields
 
@@ -17,7 +17,7 @@
 | effectiveSlaDomain | [SlaDomain](../interfaces/SlaDomain.md)! | Effective SLA Domain of the hierarchy object. |
 | effectiveSlaSourceObject | [PathNode](PathNode.md) | Path node of the effective SLA Domain source. |
 | exchangeGraphMigrationStatus | [ExchangeGraphMigrationStatus](ExchangeGraphMigrationStatus.md)! | Status of the EWS to Microsoft Graph migration for the org's protected Exchange mailboxes. |
-| exocomputeId | String! |  |
+| exocomputeId | String! | External Exocompute cluster ID. |
 | groupsSummary | [O365GroupsSummary](O365GroupsSummary.md)! | Summary of Microsoft groups count. |
 | hasSharePointLegacySnapshots | Boolean! | Specifies whether the org has legacy SharePoint Snapshots. |
 | id | [UUID](../scalars/UUID.md)! | ID of the hierarchy object. |
@@ -53,9 +53,9 @@
 | slaPauseStatus | Boolean! | Pause status of the effective SLA Domain of the hierarchy object. |
 | snapshotConnection | [PolarisSnapshotConnection](PolarisSnapshotConnection.md) | The list of snapshots taken for this workload. |
 | snapshotDistribution | [SnapshotDistribution](SnapshotDistribution.md)! | Distribution of the snapshots of the hierarchy object. |
-| snapshotGroupByConnection | [PolarisSnapshotGroupByConnection](PolarisSnapshotGroupByConnection.md) | GroupBy connection for the snapshots of this workload. |
-| snapshotGroupByNewConnection | [PolarisSnapshotGroupByNewConnection](PolarisSnapshotGroupByNewConnection.md) | GroupBy connection for the snapshots of this workload. |
-| status | [OrgStatus](../enums/OrgStatus.md)! |  |
+| snapshotGroupByConnection | [PolarisSnapshotGroupByConnection](PolarisSnapshotGroupByConnection.md) | Group-by connection for the snapshots of this workload. |
+| snapshotGroupByNewConnection | [PolarisSnapshotGroupByNewConnection](PolarisSnapshotGroupByNewConnection.md) | Group-by connection for the snapshots of this workload. |
+| status | [OrgStatus](../enums/OrgStatus.md)! | Status of the Microsoft organization. |
 | tenantId | String! | The tenant ID of the Microsoft organization. |
 | unprotectedUsersCount | Int! | Number of O365 Users with no SLA assigned. |
 | workloadSnapshotConnection | [GenericSnapshotConnection](GenericSnapshotConnection.md) | The list of snapshots taken for this workload. |

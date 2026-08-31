@@ -9,6 +9,13 @@ All supported Rubrik managed objects.
 | ACTIVE_DIRECTORY_DOMAIN | On-prem Active Directory domain. |
 | ACTIVE_DIRECTORY_DOMAIN_CONTROLLER | On-prem Active Directory domain controller. |
 | ACTIVE_DIRECTORY_FOREST | On-prem Active Directory forest. |
+| ANTHROPIC_CHILD_ORG | Anthropic child organization. |
+| ANTHROPIC_CHILD_ORG_SETTINGS | Anthropic child organization settings (workload, leaf). |
+| ANTHROPIC_CHILD_ORG_USER | Anthropic child organization user. |
+| ANTHROPIC_DEVICE | Anthropic endpoint device (workload, leaf). |
+| ANTHROPIC_ORG | Anthropic organization (cloud or endpoint kind). |
+| ANTHROPIC_ORG_SETTINGS | Anthropic organization settings (workload, leaf). |
+| ANTHROPIC_USER_CLAUDE_CHAT | Anthropic user Claude chat (workload, leaf). |
 | APP_BLUEPRINT | Orchestrated Application Recovery Blueprint. |
 | ATLASSIAN_SITE | Atlassian site. |
 | AUTH0_TENANT | Auth0 tenant. |
@@ -21,6 +28,9 @@ All supported Rubrik managed objects.
 | AWS_NATIVE_REGION | AWS Native Region. |
 | AWS_NATIVE_S3_BUCKET | AWS native S3 Bucket. |
 | AZURE_AD_DIRECTORY | Azure AD Directory. |
+| AZURE_COSMOS_NOSQL_ACCOUNT | Azure Cosmos NoSQL account. |
+| AZURE_COSMOS_NOSQL_CONTAINER | Azure Cosmos NoSQL container. |
+| AZURE_COSMOS_NOSQL_DATABASE | Azure Cosmos NoSQL database. |
 | AZURE_DEVOPS_ORGANIZATION | Azure DevOps organization. |
 | AZURE_DEVOPS_PROJECT | Azure DevOps project. |
 | AZURE_DEVOPS_PROJECT_FIXED_OBJECT | Azure DevOps project-scoped fixed object to represent non repo entity. |
@@ -91,16 +101,29 @@ All supported Rubrik managed objects.
 | GROUP | Rubrik SaaS user group. |
 | HOST_FAILOVER_CLUSTER | Host failover cluster. |
 | HOST_SHARE | Host share. |
+| HVM_CLOUD | HPE Virtual Machine Essentials cloud. |
+| HVM_CLUSTER | HPE Virtual Machine Essentials cluster. |
+| HVM_DATASTORE | HPE Virtual Machine Essentials datastore. |
+| HVM_GROUP | HPE Virtual Machine Essentials group. |
+| HVM_HOST | HPE Virtual Machine Essentials host. |
+| HVM_INSTANCE | HPE Virtual Machine Essentials instance. An inventory hierarchy level, not a protectable object. |
+| HVM_MANAGER | HPE Virtual Machine Essentials manager. |
+| HVM_NETWORK | HPE Virtual Machine Essentials network. |
+| HVM_VIRTUAL_MACHINE | HPE Virtual Machine Essentials virtual machine. The protectable object in this hierarchy. |
 | HYPERV_CLUSTER | Hyper-V cluster. |
 | HYPERV_SCVMM | Hyper-V System Center Virtual Machine Manager. |
 | HYPERV_SERVER | Hyper-V server. |
 | HYPERV_VIRTUAL_MACHINE | Hyper-V virtual machine. |
 | INFORMIX_INSTANCE | Informix Instance. |
+| IRISDB_DATABASE | IRIS database (Epic EpicCare database). |
+| IRISDB_INSTANCE | IRIS DB instance (Epic EpicCare database host node). |
 | JIRA_FIXED_OBJECT | Jira fixed object. |
 | JIRA_PROJECT | Jira project. |
 | K8S_CLUSTER | On-prem Kubernetes Cluster. |
 | K8S_LABEL | Kubernetes label. |
 | K8S_NAMESPACE_V2 | Kubernetes Namespace V2. |
+| K8S_POSTGRES_DATABASE | Kubernetes Postgres database. |
+| K8S_POSTGRES_DB_CLUSTER | Kubernetes Postgres database cluster. |
 | K8S_PROTECTION_SET | On-prem Kubernetes Protection Set. |
 | K8S_VIRTUAL_MACHINE | Kubernetes Virtual Machine. |
 | KUPR_CLUSTER | Kubernetes cluster. |
@@ -170,6 +193,7 @@ All supported Rubrik managed objects.
 | OPENSTACK_IMAGE | Openstack Image. |
 | OPENSTACK_PROJECT | Openstack Project. |
 | OPENSTACK_REGION | Openstack Region. |
+| OPENSTACK_TAG | Openstack tag, one entity per (environment, project, Nova tag string). |
 | OPENSTACK_VIRTUAL_MACHINE | Openstack Virtual Machine. |
 | ORACLE_DATABASE | Oracle database. |
 | ORACLE_DATA_GUARD_GROUP | Oracle Data Guard Group. |

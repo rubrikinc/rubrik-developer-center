@@ -23,6 +23,7 @@ Paginated list of CdmSnapshot objects. Each page of the results includes at most
 - [ExchangeDatabase.snapshotConnection](ExchangeDatabase.md)
 - [FusionComputeVirtualMachine.snapshotConnection](FusionComputeVirtualMachine.md)
 - [HyperVVirtualMachine.snapshotConnection](HyperVVirtualMachine.md)
+- [HypervisorVirtualMachineV1.snapshotConnection](HypervisorVirtualMachineV1.md)
 - KosmosSnappableHierarchyObjectType.snapshotConnection
 - [KubernetesProtectionSet.snapshotConnection](KubernetesProtectionSet.md)
 - [KubernetesVirtualMachine.snapshotConnection](KubernetesVirtualMachine.md)
@@ -36,6 +37,7 @@ Paginated list of CdmSnapshot objects. Each page of the results includes at most
 - [MysqldbInstance.snapshotConnection](MysqldbInstance.md)
 - [NasFileset.snapshotConnection](NasFileset.md)
 - [NutanixVm.snapshotConnection](NutanixVm.md)
+- [OpenstackVirtualMachine.snapshotConnection](OpenstackVirtualMachine.md)
 - [OracleDataGuardGroup.snapshotConnection](OracleDataGuardGroup.md)
 - [OracleDatabase.snapshotConnection](OracleDatabase.md)
 - [PostgreSQLDbCluster.snapshotConnection](PostgreSQLDbCluster.md)
@@ -43,6 +45,4 @@ Paginated list of CdmSnapshot objects. Each page of the results includes at most
 - [PureStorageVolumeV1.snapshotConnection](PureStorageVolumeV1.md)
 - [SapHanaDatabase.snapshotConnection](SapHanaDatabase.md)
 - [SapHanaSystem.snapshotConnection](SapHanaSystem.md)
-- [ShareFileset.snapshotConnection](ShareFileset.md)
-- [VcdVapp.snapshotConnection](VcdVapp.md)
-- *…and 2 more*
+- *…and 5 more*

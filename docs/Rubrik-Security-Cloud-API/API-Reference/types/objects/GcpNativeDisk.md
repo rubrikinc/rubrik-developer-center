@@ -1,8 +1,8 @@
 # GcpNativeDisk
 
-*No description available.*
+A GCP native persistent disk.
 
-**Implements:** [PolarisHierarchyObject](../interfaces/PolarisHierarchyObject.md), [PolarisHierarchySnappable](../interfaces/PolarisHierarchySnappable.md), [HierarchySnappable](../interfaces/HierarchySnappable.md), [HierarchyObject](../interfaces/HierarchyObject.md), [GcpNativeProjectLogicalChildType](../interfaces/GcpNativeProjectLogicalChildType.md), [GcpNativeProjectDescendantType](../interfaces/GcpNativeProjectDescendantType.md), [GcpNativeHierarchyObject](../interfaces/GcpNativeHierarchyObject.md)
+**Implements:** [PolarisHierarchyObject](../interfaces/PolarisHierarchyObject.md), [HierarchyObject](../interfaces/HierarchyObject.md), [PolarisHierarchySnappable](../interfaces/PolarisHierarchySnappable.md), [HierarchySnappable](../interfaces/HierarchySnappable.md), [GcpNativeProjectLogicalChildType](../interfaces/GcpNativeProjectLogicalChildType.md), [GcpNativeProjectDescendantType](../interfaces/GcpNativeProjectDescendantType.md), [GcpNativeHierarchyObject](../interfaces/GcpNativeHierarchyObject.md)
 
 ## Fields
 
@@ -28,9 +28,10 @@
 | gcpProjectDetails | [GcpNativeProjectDetails](GcpNativeProjectDetails.md)! | Project details of the disk. |
 | id | [UUID](../scalars/UUID.md)! | ID of the hierarchy object. |
 | isExocomputeConfigured | Boolean! | Specifies whether exocompute is configured for use by this disk. When the value is true, exocompute can be used to perform tasks like file indexing. |
-| isRelic | Boolean! | Relic status of the disk. |
+| isProtectionOnboarded | Boolean! | Specifies whether a protection feature is onboarded for this disk. |
+| isRelic | Boolean! | Whether the object is a relic. |
 | kmsKey | String! | KMS key for the disk. |
-| labels | [[Label](Label.md)!]! | Labels attached to the disk. |
+| labels | [[Label](Label.md)!]! | List of labels that are assigned to the object. |
 | logicalPath | [[PathNode](PathNode.md)!]! | Sequential list of the logical ancestors of this object. |
 | name | String! | Name of the hierarchy object. |
 | nativeName | String! | GCP Native name of the object. |
@@ -54,8 +55,8 @@
 | slaPauseStatus | Boolean! | Pause status of the effective SLA Domain of the hierarchy object. |
 | snapshotConnection | [PolarisSnapshotConnection](PolarisSnapshotConnection.md) | The list of snapshots taken for this workload. |
 | snapshotDistribution | [SnapshotDistribution](SnapshotDistribution.md)! | Distribution of the snapshots of the hierarchy object. |
-| snapshotGroupByConnection | [PolarisSnapshotGroupByConnection](PolarisSnapshotGroupByConnection.md) | GroupBy connection for the snapshots of this workload. |
-| snapshotGroupByNewConnection | [PolarisSnapshotGroupByNewConnection](PolarisSnapshotGroupByNewConnection.md) | GroupBy connection for the snapshots of this workload. |
+| snapshotGroupByConnection | [PolarisSnapshotGroupByConnection](PolarisSnapshotGroupByConnection.md) | Group-by connection for the snapshots of this workload. |
+| snapshotGroupByNewConnection | [PolarisSnapshotGroupByNewConnection](PolarisSnapshotGroupByNewConnection.md) | Group-by connection for the snapshots of this workload. |
 | workloadSnapshotConnection | [GenericSnapshotConnection](GenericSnapshotConnection.md) | The list of snapshots taken for this workload. |
 | zone | String! | Zone of the disk. |
 

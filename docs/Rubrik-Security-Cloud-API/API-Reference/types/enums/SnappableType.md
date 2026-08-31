@@ -14,4 +14,5 @@ Snappable type.
 | SHAREPOINT_DRIVE | Sharepoint drive snappable. |
 | SHAREPOINT_LIST | Sharepoint list snappable. |
 | SHAREPOINT_SITE | Sharepoint site snappable. |
+| TASKS | Used for search of the Exchange Tasks workload. |
 | TEAMS | Teams snappable. |

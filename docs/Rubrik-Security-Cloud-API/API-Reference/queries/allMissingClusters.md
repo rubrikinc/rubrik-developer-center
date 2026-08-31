@@ -6,6 +6,10 @@ All missing clusters from the account.
 
 | Argument | Type | Description |
 |----------|------|-------------|
+| first | Int | Returns the first n elements from the list. |
+| after | String | Returns the elements in the list that occur after the specified cursor. |
+| last | Int | Returns the last n elements from the list. |
+| before | String | Returns the elements in the list that occur before the specified cursor. |
 | connectionStatus | [MissingClusterConnectionStatus](../types/enums/MissingClusterConnectionStatus.md) | Rubrik cluster connection status. |
 | isExcluded | Boolean | Rubrik cluster exclusion status. |
 
@@ -19,7 +23,7 @@ All missing clusters from the account.
 
     ```graphql
     query {
-      allMissingClusters {
+      allMissingClusters(first: 10) {
         nodes {
           clusterIp
           clusterType

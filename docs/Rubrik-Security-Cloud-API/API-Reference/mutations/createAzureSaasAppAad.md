@@ -1,6 +1,6 @@
 # createAzureSaasAppAad
 
-Create or get an Azure AAD application.
+Creates or gets the per-account Rubrik SaaS Azure AD application.
 
 ## Returns
 

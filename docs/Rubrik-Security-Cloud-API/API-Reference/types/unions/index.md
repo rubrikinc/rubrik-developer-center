@@ -1,6 +1,6 @@
 # Unions
 
-35 types.
+34 types.
 
 [AccessMethodDetailsType](AccessMethodDetailsType.md)  
 [ActionTypes](ActionTypes.md)  
@@ -20,7 +20,6 @@
 [MissedSnapshotGroupByInfo](MissedSnapshotGroupByInfo.md)  
 [MongoSnapshotGroupByInfo](MongoSnapshotGroupByInfo.md)  
 [MonthlyDaySpecification](MonthlyDaySpecification.md)  
-[MosaicSnapshotGroupByInfo](MosaicSnapshotGroupByInfo.md)  
 [NestedFilterConfig](NestedFilterConfig.md)  
 [NfAnomalyResultGroupByInfo](NfAnomalyResultGroupByInfo.md)  
 [OnPremAdPrincipalTypeSpecificMetadata](OnPremAdPrincipalTypeSpecificMetadata.md)  

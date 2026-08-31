@@ -1,19 +1,19 @@
 # objectFiles
 
-*No description available.*
+Returns the classified files across objects for a given day.
 
 ## Arguments
 
 | Argument | Type | Description |
 |----------|------|-------------|
-| filter | [ListObjectFilesFiltersInput](../types/inputs/ListObjectFilesFiltersInput.md) |  |
-| sort | [FileResultSortInput](../types/inputs/FileResultSortInput.md) | Sorts to apply when listing file results. |
-| day *(required)* | String! | Date in the format (YYYY-MM-DD). |
-| timezone *(required)* | String! | The timezone in which to display timestamps. |
 | first | Int | Returns the first n elements from the list. |
 | after | String | Returns the elements in the list that occur after the specified cursor. |
 | last | Int | Returns the last n elements from the list. |
 | before | String | Returns the elements in the list that occur before the specified cursor. |
+| filter | [ListObjectFilesFiltersInput](../types/inputs/ListObjectFilesFiltersInput.md) | Filters to apply when listing object files. |
+| sort | [FileResultSortInput](../types/inputs/FileResultSortInput.md) | Sorts to apply when listing file results. |
+| day *(required)* | String! | Date in the format (YYYY-MM-DD). |
+| timezone *(required)* | String! | The timezone in which to display timestamps. |
 
 ## Returns
 

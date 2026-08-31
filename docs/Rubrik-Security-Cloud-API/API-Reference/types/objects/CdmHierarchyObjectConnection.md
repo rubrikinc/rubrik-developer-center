@@ -28,5 +28,7 @@ Paginated list of CdmHierarchyObject objects with additional pagination informat
 - [CdmInventorySubHierarchyRoot.childConnection](CdmInventorySubHierarchyRoot.md)
 - [CdmInventorySubHierarchyRoot.descendantConnection](CdmInventorySubHierarchyRoot.md)
 - [CdmInventorySubHierarchyRoot.topLevelDescendantConnection](CdmInventorySubHierarchyRoot.md)
+- [HypervisorEnvironmentV1.descendantConnection](HypervisorEnvironmentV1.md)
+- [HypervisorEnvironmentV1.physicalChildConnection](HypervisorEnvironmentV1.md)
 - [NutanixCategoryValue.nutanixVms](NutanixCategoryValue.md)
 - [NutanixPrismCentral.nutanixClusters](NutanixPrismCentral.md)

@@ -26,6 +26,9 @@ Represents a node in a hierarchy path.
 - ActiveDirectoryDomainPhysicalChildType.effectiveSlaSourceObject
 - ActiveDirectoryDomainPhysicalChildType.logicalPath
 - ActiveDirectoryDomainPhysicalChildType.physicalPath
+- [AnthropicOrg.effectiveSlaSourceObject](AnthropicOrg.md)
+- [AnthropicOrg.logicalPath](AnthropicOrg.md)
+- [AnthropicOrg.physicalPath](AnthropicOrg.md)
 - [AtlassianSite.effectiveSlaSourceObject](AtlassianSite.md)
 - [AtlassianSite.logicalPath](AtlassianSite.md)
 - [AtlassianSite.physicalPath](AtlassianSite.md)
@@ -41,7 +44,4 @@ Represents a node in a hierarchy path.
 - [AwsNativeConfig.effectiveSlaSourceObject](AwsNativeConfig.md)
 - [AwsNativeConfig.logicalPath](AwsNativeConfig.md)
 - [AwsNativeConfig.physicalPath](AwsNativeConfig.md)
-- [AwsNativeDynamoDbTable.effectiveSlaSourceObject](AwsNativeDynamoDbTable.md)
-- [AwsNativeDynamoDbTable.logicalPath](AwsNativeDynamoDbTable.md)
-- [AwsNativeDynamoDbTable.physicalPath](AwsNativeDynamoDbTable.md)
-- *…and 922 more*
+- *…and 949 more*

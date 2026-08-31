@@ -1,6 +1,6 @@
 # O365TeamsChannel
 
-*No description available.*
+A Microsoft 365 Teams channel.
 
 **Implements:** [O365TeamsChannelObject](../interfaces/O365TeamsChannelObject.md)
 

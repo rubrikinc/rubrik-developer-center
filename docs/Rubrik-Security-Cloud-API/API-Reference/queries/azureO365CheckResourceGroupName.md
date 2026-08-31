@@ -1,14 +1,14 @@
 # azureO365CheckResourceGroupName
 
-Checks the resource group name.
+CheckAzureResourceGroupName checks that the given resource group name is valid and available for use in Azure.
 
 ## Arguments
 
 | Argument | Type | Description |
 |----------|------|-------------|
-| tenantId *(required)* | String! |  |
-| subscriptionId *(required)* | [UUID](../types/scalars/UUID.md)! |  |
-| groupName *(required)* | String! |  |
+| tenantId *(required)* | String! | The Azure tenant ID. |
+| subscriptionId *(required)* | [UUID](../types/scalars/UUID.md)! | The Azure subscription ID. |
+| groupName *(required)* | String! | The Azure resource group name. |
 
 ## Returns
 

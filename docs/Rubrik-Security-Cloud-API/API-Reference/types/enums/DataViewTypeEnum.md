@@ -28,6 +28,7 @@ All reporting table schemas.
 | GLOBAL_OBJECT_SUMMARY_DAILY | Global object summary daily database table schema. |
 | GLOBAL_OBJECT_SUMMARY_MONTHLY | Global object summary monthly database table schema. |
 | IDENTITY_ACTIVITY | Specifies the Identity Activity report information. |
+| IDENTITY_INVENTORY | Specifies the Identity Inventory report information. |
 | IDENTITY_RISKS | Specifies the Identity Risks report information. |
 | IDENTITY_SEGMENTATION_AUDIT | Specifies the Entra identity-segmentation audit report information: per-user licensing classification for a selected month. |
 | INDEXING *(deprecated: Use LATEST_GLOBAL_OBJECTS instead.)* | Indexing database schema. |
@@ -60,9 +61,9 @@ All reporting table schemas.
 | ROLE_LIST | Specifies the roles information. |
 | SERVICE_ACCOUNT | Specifies the database schema for service account. |
 | SIGNIN_LOGS | Specifies the sign-in logs report information. |
-| SLA_AUDIT_DETAIL *(deprecated: Use SLA_AUDIT_DETAIL_NG instead.)* | The DataView, which queries Audits DB table, lists all SLA audits for the single SLA in the NG Alpha report framework. |
+| SLA_AUDIT_DETAIL *(deprecated: Use SLA_AUDIT_DETAIL_NG instead.)* | The DataView, which queries the user_audits database table, lists all SLA audits for the single SLA Domain in the NG Alpha report framework. |
 | SLA_AUDIT_DETAIL_NG | Specifies all audit information for the single SLA Domain. |
-| SLA_AUDIT_LIST *(deprecated: Use SLA_AUDIT_LIST_NG instead.)* | The DataView, which queries Audits DB table, lists the latest SLA audits for each SLA in the NG Alpha report framework. |
+| SLA_AUDIT_LIST *(deprecated: Use SLA_AUDIT_LIST_NG instead.)* | The DataView, which queries the user_audits database table, lists the latest SLA audits for each SLA Domain in the NG Alpha report framework. |
 | SLA_AUDIT_LIST_NG | Specifies the latest audit information for each SLA Domain. |
 | SLA_COMPLIANCE *(deprecated: Use LATEST_GLOBAL_OBJECTS instead.)* | Sla Compliance. |
 | SSO_GROUP | Specifies the database schema for SSO groups. |

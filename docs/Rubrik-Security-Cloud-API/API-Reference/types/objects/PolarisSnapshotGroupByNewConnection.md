@@ -30,6 +30,7 @@ Paginated list of PolarisSnapshotGroupByNew objects. Each page of the results in
 - [AzureSqlManagedInstanceDatabase.snapshotGroupByNewConnection](AzureSqlManagedInstanceDatabase.md)
 - [AzureStorageAccount.snapshotGroupByNewConnection](AzureStorageAccount.md)
 - [GcpAlloyDbCluster.snapshotGroupByNewConnection](GcpAlloyDbCluster.md)
+- [GcpBigQueryDataset.snapshotGroupByNewConnection](GcpBigQueryDataset.md)
 - [GcpCloudSqlInstance.snapshotGroupByNewConnection](GcpCloudSqlInstance.md)
 - [GcpNativeDisk.snapshotGroupByNewConnection](GcpNativeDisk.md)
 - [GcpNativeGceInstance.snapshotGroupByNewConnection](GcpNativeGceInstance.md)
@@ -44,5 +45,4 @@ Paginated list of PolarisSnapshotGroupByNew objects. Each page of the results in
 - MicrosoftGroup.snapshotGroupByNewConnection
 - MicrosoftMailbox.snapshotGroupByNewConnection
 - MicrosoftOnedrive.snapshotGroupByNewConnection
-- MicrosoftOrg.snapshotGroupByNewConnection
-- *…and 13 more*
+- *…and 14 more*

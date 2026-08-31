@@ -8,8 +8,10 @@ Lists the O365 apps.
 |----------|------|-------------|
 | first | Int | Returns the first n elements from the list. |
 | after | String | Returns the elements in the list that occur after the specified cursor. |
-| o365AppFilters *(required)* | [[AppFilter](../types/inputs/AppFilter.md)!]! |  |
-| o365AppSortByParam | [AppSortByParam](../types/inputs/AppSortByParam.md) |  |
+| last | Int | Returns the last n elements from the list. |
+| before | String | Returns the elements in the list that occur before the specified cursor. |
+| o365AppFilters *(required)* | [[AppFilter](../types/inputs/AppFilter.md)!]! | Filters for the O365 app listing. |
+| o365AppSortByParam | [AppSortByParam](../types/inputs/AppSortByParam.md) | Sort parameter for the O365 app listing. |
 
 ## Returns
 

@@ -37,8 +37,10 @@ Refers to the AWS Native account that serves as a container for all your AWS res
         isProtectable
         lastRefreshedAt
         name
+        nativeId
         numWorkloadDescendants
         objectType
+        orgId
         rdsInstanceCount
         rscPendingObjectPauseAssignment
         s3BucketCount
@@ -58,7 +60,7 @@ Refers to the AWS Native account that serves as a container for all your AWS res
     ```json
     {
       "awsNativeAccountRubrikId": "00000000-0000-0000-0000-000000000000",
-      "awsNativeProtectionFeature": "CLOUD_DISCOVERY"
+      "awsNativeProtectionFeature": "CLOUD_COST_REPORT"
     }
     ```
 

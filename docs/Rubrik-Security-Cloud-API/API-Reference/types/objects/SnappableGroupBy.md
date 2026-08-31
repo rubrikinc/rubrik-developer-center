@@ -18,8 +18,8 @@ Snappable data with groupby info applied to it.
 | snappableConnection | after | String | Returns the elements in the list that occur after the specified cursor. |
 | snappableConnection | last | Int | Returns the last n elements from the list. |
 | snappableConnection | before | String | Returns the elements in the list that occur before the specified cursor. |
-| snappableConnection | sortOrder | [SortOrder](../enums/SortOrder.md) | Sorts the order of results. |
 | snappableConnection | sortBy | [SnappableSortByEnum](../enums/SnappableSortByEnum.md) | Sort workloads by field. |
+| snappableConnection | sortOrder | [SortOrder](../enums/SortOrder.md) | Sorts the order of results. |
 | snappableGroupBy | groupBy *(required)* | [SnappableGroupByEnum](../enums/SnappableGroupByEnum.md)! | Group workloads by field. |
 
 ## Used By

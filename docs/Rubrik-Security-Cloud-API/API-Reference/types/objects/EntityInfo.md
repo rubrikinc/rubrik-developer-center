@@ -6,8 +6,8 @@ The basic entity Information.
 
 | Field | Type | Description |
 |-------|------|-------------|
-| isArchived | Boolean! |  |
-| name | String! |  |
+| isArchived | Boolean! | Indicates whether the entity has been archived. |
+| name | String! | The display name of the entity. |
 
 ## Used By
 

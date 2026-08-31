@@ -6,6 +6,7 @@ Azure Cloud Account Subscription with exocompute configurations for feature conf
 
 | Field | Type | Description |
 |-------|------|-------------|
+| app | [AzureCloudAccountTenantApp](AzureCloudAccountTenantApp.md) | The Azure application backing this subscription, together with the authentication method it is bound to. Unset when the app cannot be resolved. |
 | azureSubscriptionNativeId | String! | Native ID for Azure subscription. |
 | azureSubscriptionRubrikId | String! | Rubrik ID for Azure subscription. |
 | exocomputeConfigs | [[AzureExocomputeConfigDetails](AzureExocomputeConfigDetails.md)!]! | Exocompute configurations of the subscription. |

@@ -163,6 +163,7 @@ Supported in v5.0+
 - [mutation: filesetDownloadSnapshotFiles](../../mutations/filesetDownloadSnapshotFiles.md)
 - [mutation: filesetDownloadSnapshotFilesFromArchivalLocation](../../mutations/filesetDownloadSnapshotFilesFromArchivalLocation.md)
 - [mutation: filesetExportSnapshotFiles](../../mutations/filesetExportSnapshotFiles.md)
+- [mutation: filesetExportSnapshotFilesFromArchivalLocation](../../mutations/filesetExportSnapshotFilesFromArchivalLocation.md)
 - [mutation: filesetRecoverFiles](../../mutations/filesetRecoverFiles.md)
 - [mutation: filesetRecoverFilesFromArchivalLocation](../../mutations/filesetRecoverFilesFromArchivalLocation.md)
 - [mutation: generateFilesetBackupReport](../../mutations/generateFilesetBackupReport.md)

@@ -6,7 +6,7 @@ Update a classification policy.
 
 | Argument | Type | Description |
 |----------|------|-------------|
-| input *(required)* | [UpdatePolicyInput](../types/inputs/UpdatePolicyInput.md)! |  |
+| input *(required)* | [UpdatePolicyInput](../types/inputs/UpdatePolicyInput.md)! | Input for updating a classification policy. |
 
 ## Returns
 

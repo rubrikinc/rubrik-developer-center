@@ -10,3 +10,4 @@ Input for initializeUploadSession.
 | md5Checksum | String | MD5 checksum of the file to be uploaded. |
 | packageName | String | Name of the file to be uploaded. |
 | packageSize | [Long](../scalars/Long.md) | Size of the file to be uploaded. |
+| targetType | [UpgradeTargetType](../enums/UpgradeTargetType.md) | What this package is being uploaded for. |

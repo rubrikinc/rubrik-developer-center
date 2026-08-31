@@ -39,6 +39,7 @@ A Polaris Managed Hierarchy Object.
 
 ## Implemented By
 
+- [AnthropicOrg](../objects/AnthropicOrg.md)
 - [AtlassianSite](../objects/AtlassianSite.md)
 - [AwsNativeAccount](../objects/AwsNativeAccount.md)
 - [AwsNativeConfig](../objects/AwsNativeConfig.md)
@@ -63,11 +64,10 @@ A Polaris Managed Hierarchy Object.
 - [AzureSqlManagedInstanceDatabase](../objects/AzureSqlManagedInstanceDatabase.md)
 - [AzureSqlManagedInstanceServer](../objects/AzureSqlManagedInstanceServer.md)
 - [AzureStorageAccount](../objects/AzureStorageAccount.md)
-- [CassandraColumnFamily](../objects/CassandraColumnFamily.md)
-- [CassandraKeyspace](../objects/CassandraKeyspace.md)
-- [CassandraSource](../objects/CassandraSource.md)
+- [CloudNativeTagRuleHierarchy](../objects/CloudNativeTagRuleHierarchy.md)
 - [Dynamics365Organization](../objects/Dynamics365Organization.md)
 - [GcpAlloyDbCluster](../objects/GcpAlloyDbCluster.md)
+- [GcpBigQueryDataset](../objects/GcpBigQueryDataset.md)
 - [GcpCloudSqlInstance](../objects/GcpCloudSqlInstance.md)
 - [GcpNativeDisk](../objects/GcpNativeDisk.md)
 - [GcpNativeGceInstance](../objects/GcpNativeGceInstance.md)
@@ -85,9 +85,6 @@ A Polaris Managed Hierarchy Object.
 - [M365BackupStorageOnedrive](../objects/M365BackupStorageOnedrive.md)
 - [M365BackupStorageOrg](../objects/M365BackupStorageOrg.md)
 - [M365BackupStorageSite](../objects/M365BackupStorageSite.md)
-- [MongodbCollection](../objects/MongodbCollection.md)
-- [MongodbDatabase](../objects/MongodbDatabase.md)
-- [MongodbSource](../objects/MongodbSource.md)
 - [O365Calendar](../objects/O365Calendar.md)
 - [O365Group](../objects/O365Group.md)
 - [O365Mailbox](../objects/O365Mailbox.md)

@@ -50,6 +50,7 @@ Query GitHub organization objects.
           rscPendingObjectPauseAssignment
           slaAssignment
           slaPauseStatus
+          zeusState
         }
         pageInfo {
           hasNextPage

@@ -7,7 +7,7 @@
 | Field | Type | Description |
 |-------|------|-------------|
 | nativePath | String! |  |
-| snappable | [HierarchyObject](../interfaces/HierarchyObject.md)! |  |
+| snappable | [HierarchyObject](../interfaces/HierarchyObject.md)! | The workload that this allowlist entry belongs to. |
 | stdPath | String! |  |
 | updateTs | [Long](../scalars/Long.md)! |  |
 | updateUsername | String! |  |

@@ -16,15 +16,5 @@ Supported in m3.2.0-m4.2.0 Response object from an async request to mosaic.
 **Mutations**
 
 - [mutation: addMosaicStore](../../mutations/addMosaicStore.md)
-- [mutation: bulkDeleteCassandraSources](../../mutations/bulkDeleteCassandraSources.md)
-- [mutation: bulkDeleteMongodbSources](../../mutations/bulkDeleteMongodbSources.md)
-- [mutation: createCassandraSource](../../mutations/createCassandraSource.md)
-- [mutation: createMongodbSource](../../mutations/createMongodbSource.md)
-- [mutation: deleteCassandraSource](../../mutations/deleteCassandraSource.md)
-- [mutation: deleteMongodbSource](../../mutations/deleteMongodbSource.md)
 - [mutation: deleteMosaicStore](../../mutations/deleteMosaicStore.md)
-- [mutation: recoverCassandraSource](../../mutations/recoverCassandraSource.md)
-- [mutation: recoverMongodbSource](../../mutations/recoverMongodbSource.md)
-- [mutation: updateCassandraSource](../../mutations/updateCassandraSource.md)
-- [mutation: updateMongodbSource](../../mutations/updateMongodbSource.md)
 - [mutation: updateMosaicStore](../../mutations/updateMosaicStore.md)

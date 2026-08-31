@@ -91,4 +91,4 @@ A cloud-managed snapshot type that extends the generic snapshot with additional 
 - [AzureNativeVirtualMachine.newestIndexedSnapshot](AzureNativeVirtualMachine.md)
 - [AzureNativeVirtualMachine.newestSnapshot](AzureNativeVirtualMachine.md)
 - [AzureNativeVirtualMachine.oldestSnapshot](AzureNativeVirtualMachine.md)
-- *…and 99 more*
+- *…and 102 more*

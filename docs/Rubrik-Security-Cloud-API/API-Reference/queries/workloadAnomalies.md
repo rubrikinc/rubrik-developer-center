@@ -26,6 +26,7 @@ Specifies workloads that have an anomalous snapshot.
 | locationsFilter | [String!] | Filter results by their location. |
 | resolutionStatusFilter | [[ResolutionStatus](../types/enums/ResolutionStatus.md)!] | Filter by anomaly resolution. |
 | riskLevelTypesFilter | [[RiskLevelType](../types/enums/RiskLevelType.md)!] | Filter by risk level type. |
+| anomalyCategoryFilter | [[WorkloadAnomalyCategory](../types/enums/WorkloadAnomalyCategory.md)!] | Filter by the category the anomaly is grouped under. |
 
 ## Returns
 
@@ -47,12 +48,14 @@ Specifies workloads that have an anomalous snapshot.
           anomalousSnapshotId
           anomalyAnalysisLocationId
           anomalyAnalysisLocationName
+          anomalyCategory
           anomalyId
           anomalyType
           createdFileCount
           deletedFileCount
           detectionTime
           encryption
+          isInfrastructureAlertsEnabled
           isSensitiveDataDiscoverySupported
           modifiedFileCount
           objectType
@@ -95,7 +98,7 @@ Specifies workloads that have an anomalous snapshot.
                 "anomalousSnapshotId": "example-string",
                 "anomalyAnalysisLocationId": "example-string",
                 "anomalyAnalysisLocationName": "example-string",
-                "anomalyId": "example-string"
+                "anomalyCategory": "ANOMALY_CATEGORY_UNSPECIFIED"
               }
             ]
           ],

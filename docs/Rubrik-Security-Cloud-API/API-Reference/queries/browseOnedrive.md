@@ -1,6 +1,6 @@
 # browseOnedrive
 
-Browse OneDrive files and folders.
+BrowseOnedriveFolderItems returns the contents (folders and files) of a OneDrive folder inside a single snapshot. Encapsulates the snapshot-expiry gate, the quarantine lookup for the synthetic root, and the response shaping previously performed in the GraphQL resolver `browseOnedrive`.
 
 ## Arguments
 
@@ -8,11 +8,13 @@ Browse OneDrive files and folders.
 |----------|------|-------------|
 | first | Int | Returns the first n elements from the list. |
 | after | String | Returns the elements in the list that occur after the specified cursor. |
-| snappableFid *(required)* | [UUID](../types/scalars/UUID.md)! | The FID for the workload. |
+| last | Int | Returns the last n elements from the list. |
+| before | String | Returns the elements in the list that occur before the specified cursor. |
+| snappableFid *(required)* | [UUID](../types/scalars/UUID.md)! | The FID for the OneDrive workload. |
 | snapshotFid *(required)* | [UUID](../types/scalars/UUID.md)! | The ID of the snapshot. |
-| folderId | String |  |
-| onedriveSearchFilter | [OnedriveSearchFilter](../types/inputs/OnedriveSearchFilter.md) |  |
 | orgId *(required)* | [UUID](../types/scalars/UUID.md)! | Org UUID. |
+| folderId | String | The folder to browse. Empty means the OneDrive root, which is synthesized rather than fetched from the search service. |
+| onedriveSearchFilter | [OnedriveSearchFilter](../types/inputs/OnedriveSearchFilter.md) | Optional OneDrive search filter. |
 
 ## Returns
 

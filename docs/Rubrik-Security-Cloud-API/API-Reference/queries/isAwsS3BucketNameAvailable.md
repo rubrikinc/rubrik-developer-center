@@ -8,6 +8,7 @@ Specifies whether an S3 bucket name is available for use in AWS or not. When tru
 |----------|------|-------------|
 | bucketName *(required)* | String! | Name of the AWS S3 bucket. |
 | awsAccountRubrikId *(required)* | [UUID](../types/scalars/UUID.md)! | Rubrik ID for AWS account. |
+| feature | [CloudAccountFeature](../types/enums/CloudAccountFeature.md) | Cloud account feature whose IAM role is assumed to answer the query. Defaults to S3 protection. |
 
 ## Returns
 

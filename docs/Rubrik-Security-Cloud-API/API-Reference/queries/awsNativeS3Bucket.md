@@ -33,6 +33,7 @@ Represents the Amazon S3 Bucket with a specific ID. For more information, see ht
         isProtectable
         isRelic
         isVersioningEnabled
+        latestCleanSnapshotTime
         name
         nativeName
         numWorkloadDescendants

@@ -10,7 +10,7 @@ NAS Cloud Direct back-end capacity for the requested clusters.
 
 ## Returns
 
-[NcdBackEndCapacity](../types/objects/NcdBackEndCapacity.md)
+[NcdBackEndCapacity](../types/objects/NcdBackEndCapacity.md)!
 
 ## Sample
 

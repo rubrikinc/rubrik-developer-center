@@ -13,3 +13,4 @@ Trigger AWS EC2 instance snapshot restore job.
 | shouldRestoreTags | Boolean! | Specifies whether to restore associated tags. If true, the restored EC2 Instance will have same tags associated. |
 | snapshotId | String! | ID of snapshot to restore. |
 | snapshotTypeToUseIfSourceExpired | [SnapshotTypeToUseIfSourceExpired](../enums/SnapshotTypeToUseIfSourceExpired.md) | Snapshot type to use if source snapshot is expired. |
+| surgicalRecoveryConfig | [SurgicalRecoveryConfigInput](SurgicalRecoveryConfigInput.md) | Clean-version selections for a surgical recovery: which quarantined files keep their clean version restored, and which encrypted files are restored from their clean counterparts. Requires recoveryPurpose SURGICAL_RECOVERY and the surgical recovery V2 entitlement on the account. Omit to restore with quarantined files excluded and encrypted files left as they stand. |

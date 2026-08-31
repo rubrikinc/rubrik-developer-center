@@ -34,6 +34,10 @@ Entra ID object.
 | azureAdServicePrincipal | [AzureAdServicePrincipal](AzureAdServicePrincipal.md) | Entra ID service principal object. |
 | azureAdTermsOfUse | [AzureAdTermsOfUse](AzureAdTermsOfUse.md) | Entra ID terms of use object. |
 | azureAdUser | [AzureAdUser](AzureAdUser.md) | Entra ID user object. |
+| entraIdClaimsMappingPolicy | [EntraIdClaimsMappingPolicy](EntraIdClaimsMappingPolicy.md) | Claims mapping policy object. |
+| entraIdHomeRealmDiscoveryPolicy | [EntraIdHomeRealmDiscoveryPolicy](EntraIdHomeRealmDiscoveryPolicy.md) | Home realm discovery policy object. |
+| entraIdTokenIssuancePolicy | [EntraIdTokenIssuancePolicy](EntraIdTokenIssuancePolicy.md) | Token issuance policy object. |
+| entraIdTokenLifetimePolicy | [EntraIdTokenLifetimePolicy](EntraIdTokenLifetimePolicy.md) | Token lifetime policy object. |
 | intuneAppProtectionPolicy | [IntuneAppProtectionPolicy](IntuneAppProtectionPolicy.md) | Intune app protection policy object. |
 | intuneAssignmentFilter | [IntuneAssignmentFilter](IntuneAssignmentFilter.md) | Intune assignment filter object. |
 | intuneAutopilotDeploymentProfile | [IntuneAutopilotDeploymentProfile](IntuneAutopilotDeploymentProfile.md) | Intune autopilot deployment profile object. |

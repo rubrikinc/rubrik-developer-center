@@ -7,6 +7,7 @@ Type of objects managed by SLA Domains.
 | Value | Description |
 |-------|-------------|
 | ACTIVE_DIRECTORY_OBJECT_TYPE | Active Directory object. |
+| ANTHROPIC_OBJECT_TYPE | Anthropic object. |
 | ATLASSIAN_JIRA_OBJECT_TYPE | Atlassian Jira object. |
 | AWS_CONFIG_OBJECT_TYPE | AWS Config object. |
 | AWS_DYNAMODB_OBJECT_TYPE | AWS DynamoDB object. |
@@ -33,8 +34,10 @@ Type of objects managed by SLA Domains.
 | GITHUB_OBJECT_TYPE | GitHub object. |
 | GLUE_ICEBERG_TABLE_OBJECT_TYPE | Glue Iceberg Table object. |
 | GOOGLE_WORKSPACE_OBJECT_TYPE | Google Workspace object. |
+| HVM_OBJECT_TYPE | HPE Virtual Machine Essentials SLA Domain object. |
 | HYPERV_OBJECT_TYPE | HyperV SLA Domain object. |
 | INFORMIX_INSTANCE_OBJECT_TYPE | Informix object. |
+| IRISDB_INSTANCE_OBJECT_TYPE | IRIS DB instance object type. SLA Domains are assigned at the instance level; databases within the instance inherit the instance's SLA Domain. |
 | K8S_OBJECT_TYPE | CDM Native K8s object. |
 | KUPR_OBJECT_TYPE | Kubernetes object. |
 | M365_BACKUP_STORAGE_OBJECT_TYPE | Microsoft 365 Backup Storage object. |
@@ -50,7 +53,7 @@ Type of objects managed by SLA Domains.
 | O365_OBJECT_TYPE | Office 365 object. |
 | OKTA_OBJECT_TYPE | Okta object. |
 | OLVM_OBJECT_TYPE | OLVM object. |
-| OPENSTACK_OBJECT_TYPE |  |
+| OPENSTACK_OBJECT_TYPE | OpenStack object. |
 | ORACLE_OBJECT_TYPE | Oracle object. |
 | PING_FEDERATE_OBJECT_TYPE | Ping Federate object. |
 | POSTGRES_DB_CLUSTER_OBJECT_TYPE | PostgreSQL DB Cluster object. |

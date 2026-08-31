@@ -13,6 +13,7 @@ Metadata for rendering an SLA Domain.
 | archivalLocationsUpgradeInfo | [[ArchivalLocationUpgradeInfo](ArchivalLocationUpgradeInfo.md)!] | Upgrade information about the configured archival locations and cascading archival locations. |
 | archivalSpec | [ArchivalSpec](ArchivalSpec.md) | Archiving specification for the SLA Domain. |
 | archivalSpecs | [[ArchivalSpec](ArchivalSpec.md)!]! | List of archival specifications for SLA Domain. |
+| assignedSystemTags | [[AssignedRscTag](AssignedRscTag.md)!]! | System tags that are directly assigned to this SLA Domain. |
 | backupLocationSpecs | [[BackupLocationSpec](BackupLocationSpec.md)!] | List of backup location specifications for the SLA Domain. |
 | backupType | [BackupType](../enums/BackupType.md)! | Type of backup. |
 | backupWindowSpec | [BackupWindowSpec](BackupWindowSpec.md) | Group of backup windows allowing backup termination. This groups regular backup windows and first full backup windows together with a shared setting that controls whether backups should be automatically terminated when they run longer than their allocated backup window. |

@@ -31,6 +31,8 @@ Retrieves workloads within a failover group for high-availability management.
           counterpartIds
           hostIds
           hostNames
+          location
+          locationId
           managedObjectType
           name
           primaryClusterUuid
@@ -73,9 +75,9 @@ Retrieves workloads within a failover group for high-availability management.
                 "hostNames": [
                   "example-string"
                 ],
-                "managedObjectType": "ACTIVE_DIRECTORY_DOMAIN",
-                "name": "example-string",
-                "primaryClusterUuid": "00000000-0000-0000-0000-000000000000"
+                "location": "example-string",
+                "locationId": "example-string",
+                "managedObjectType": "ACTIVE_DIRECTORY_DOMAIN"
               }
             ]
           ],

@@ -1,29 +1,29 @@
 # SonarContentReport
 
-*No description available.*
+A single row in the content classification report, aggregating classification results for a file, object, policy, analyzer, cluster, SLA Domain, or time bucket depending on the requested grouping.
 
 ## Fields
 
 | Field | Type | Description |
 |-------|------|-------------|
-| analyzerGroupResults | [[AnalyzerGroupResult](AnalyzerGroupResult.md)!]! |  |
-| analyzerId | String! |  |
-| analyzerResults | [[AnalyzerResult](AnalyzerResult.md)!]! |  |
-| cluster | String! |  |
-| fileName | String! |  |
-| filesWithHits | Int! |  |
-| hits | [Hits](Hits.md) |  |
-| id | String! |  |
-| location | String! |  |
+| analyzerGroupResults | [[AnalyzerGroupResult](AnalyzerGroupResult.md)!]! | Per-analyzer-group classification result counts for this row. |
+| analyzerId | String! | Identifier of the analyzer, when grouped by analyzer. |
+| analyzerResults | [[AnalyzerResult](AnalyzerResult.md)!]! | Per-analyzer classification result counts for this row. |
+| cluster | String! | Identifier of the Rubrik cluster, when grouped by cluster. |
+| fileName | String! | Name of the file this row represents, when grouped by file. |
+| filesWithHits | Int! | Number of files with classification hits in this row. |
+| hits | [Hits](Hits.md) | Classification hit counts for this row. |
+| id | String! | Identifier for the report row, whose value depends on the groupBy: workload ID and path for file, workload ID for object name, SLA Domain ID for SLA Domain, policy ID for policy, analyzer ID for analyzer, Rubrik cluster ID for Rubrik cluster, and timestamp for time. |
+| location | String! | Human-readable location of the object. |
 | logicalPath | [[PathNode](PathNode.md)!]! | A sequential list of this object's logical ancestors. |
-| objectName | String! |  |
-| objectType | [HierarchyObjectTypeEnum](../enums/HierarchyObjectTypeEnum.md)! |  |
-| path | String! |  |
-| policyId | String! |  |
-| size | [Long](../scalars/Long.md)! |  |
-| slaDomainId | String! |  |
-| snappableFid | String! |  |
-| snapshotTimestamp | [Long](../scalars/Long.md)! |  |
+| objectName | String! | Display name of the workload, when grouped by object name. |
+| objectType | [HierarchyObjectTypeEnum](../enums/HierarchyObjectTypeEnum.md)! | Type of the workload this row belongs to. |
+| path | String! | Full path of the file, when grouped by file. |
+| policyId | String! | Identifier of the classification policy, when grouped by policy. |
+| size | [Long](../scalars/Long.md)! | Size of the file in bytes, when grouped by file. |
+| slaDomainId | String! | Identifier of the SLA Domain, when grouped by SLA Domain. |
+| snappableFid | String! | Identifier of the workload this row belongs to. |
+| snapshotTimestamp | [Long](../scalars/Long.md)! | Snapshot time of the crawled data, in epoch seconds. |
 
 ## Used By
 

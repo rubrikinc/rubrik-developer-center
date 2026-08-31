@@ -1,14 +1,14 @@
 # azureO365CheckSubscriptionQuota
 
-Checks the Azure subscription quota.
+CheckAzureSubscriptionQuota checks the quota of E2s_v3 vCPUs and virtual machines of the customer's subscription in a specific Azure location.
 
 ## Arguments
 
 | Argument | Type | Description |
 |----------|------|-------------|
-| tenantId *(required)* | String! |  |
-| subscriptionId *(required)* | [UUID](../types/scalars/UUID.md)! |  |
-| regionName *(required)* | String! |  |
+| tenantId *(required)* | String! | Azure tenant ID. |
+| subscriptionId *(required)* | [UUID](../types/scalars/UUID.md)! | Azure subscription ID. |
+| regionName *(required)* | String! | Azure region name. |
 
 ## Returns
 

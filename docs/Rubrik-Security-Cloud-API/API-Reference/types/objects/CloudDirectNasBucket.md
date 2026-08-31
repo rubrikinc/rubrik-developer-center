@@ -2,7 +2,7 @@
 
 NAS Cloud Direct bucket.
 
-**Implements:** [HierarchySnappable](../interfaces/HierarchySnappable.md), [CloudDirectHierarchyWorkload](../interfaces/CloudDirectHierarchyWorkload.md), [CloudDirectHierarchyObject](../interfaces/CloudDirectHierarchyObject.md), [HierarchyObject](../interfaces/HierarchyObject.md), [CloudDirectNasSystemDescendantType](../interfaces/CloudDirectNasSystemDescendantType.md), [CloudDirectNasSystemLogicalChildType](../interfaces/CloudDirectNasSystemLogicalChildType.md), [CloudDirectNasNamespaceDescendantType](../interfaces/CloudDirectNasNamespaceDescendantType.md), [CloudDirectNasNamespaceLogicalChildType](../interfaces/CloudDirectNasNamespaceLogicalChildType.md)
+**Implements:** [CloudDirectHierarchyObject](../interfaces/CloudDirectHierarchyObject.md), [HierarchyObject](../interfaces/HierarchyObject.md), [HierarchySnappable](../interfaces/HierarchySnappable.md), [CloudDirectHierarchyWorkload](../interfaces/CloudDirectHierarchyWorkload.md), [CloudDirectNasSystemDescendantType](../interfaces/CloudDirectNasSystemDescendantType.md), [CloudDirectNasSystemLogicalChildType](../interfaces/CloudDirectNasSystemLogicalChildType.md), [CloudDirectNasNamespaceDescendantType](../interfaces/CloudDirectNasNamespaceDescendantType.md), [CloudDirectNasNamespaceLogicalChildType](../interfaces/CloudDirectNasNamespaceLogicalChildType.md)
 
 ## Fields
 

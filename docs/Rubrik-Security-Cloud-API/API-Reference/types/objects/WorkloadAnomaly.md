@@ -12,6 +12,7 @@ A workload that has a snapshot or children with anomalous activity.
 | anomalousSnapshotId | String! | The Rubrik cluster ID of the snapshot determined to have anomalous activity. |
 | anomalyAnalysisLocationId | String! | The ID of the archival location where anomaly analysis was performed. |
 | anomalyAnalysisLocationName | String! | The name of the archival location where anomaly analysis was performed. |
+| anomalyCategory | [WorkloadAnomalyCategory](../enums/WorkloadAnomalyCategory.md)! | The category this anomaly is grouped under for filtering. |
 | anomalyId | String! | Identifies the anomaly for a given workload. |
 | anomalyInfo | [AnomalyInfo](AnomalyInfo.md) | Represents the information about strains that cause anomalies. |
 | anomalyType | [AnomalyType](../enums/AnomalyType.md)! | Type of the anomaly detected. |
@@ -20,6 +21,7 @@ A workload that has a snapshot or children with anomalous activity.
 | deletedFileCount | [Long](../scalars/Long.md)! | The number of files deleted within the snapshot. |
 | detectionTime | [DateTime](../scalars/DateTime.md) | Time when the anomaly was detected. |
 | encryption | [EncryptionLevel](../enums/EncryptionLevel.md)! | The level of encryption detected within the snapshot. |
+| isInfrastructureAlertsEnabled | Boolean! | Indicates whether this object is enrolled in infrastructure deletion alerting. Only populated for supported object types (e.g., AWS S3 buckets) when the critical resource protection feature is enabled. |
 | isSensitiveDataDiscoverySupported | Boolean! | Flag to indicate if sensitive data discovery is supported for the object type. |
 | location | [SnappableLocationType](../unions/SnappableLocationType.md)! | The location of the workload. |
 | modifiedFileCount | [Long](../scalars/Long.md)! | The number of files modified within the snapshot. |

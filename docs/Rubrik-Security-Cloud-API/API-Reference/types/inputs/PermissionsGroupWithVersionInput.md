@@ -1,10 +1,10 @@
 # PermissionsGroupWithVersionInput
 
-Azure permissions group with its associated version number.
+Represents a permissions group with its version.
 
 ## Fields
 
 | Field | Type | Description |
 |-------|------|-------------|
-| permissionsGroup | [PermissionsGroup](../enums/PermissionsGroup.md)! | Azure cloud account permissions group. |
-| version | Int | Policy version of the permissions group. If a policy version is not specified, the latest version will be used. |
+| permissionsGroup | [PermissionsGroup](../enums/PermissionsGroup.md)! | Represents the permissions group. |
+| version | Int | Represents the version of the permissions group. |

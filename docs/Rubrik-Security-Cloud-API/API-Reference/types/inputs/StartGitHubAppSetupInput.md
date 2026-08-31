@@ -7,5 +7,6 @@ Request message for StartGitHubAppSetup.
 | Field | Type | Description |
 |-------|------|-------------|
 | appPurposes | [[PermissionsGroup](../enums/PermissionsGroup.md)!]! | The purposes for which GitHub Apps need to be set up. |
+| featuresWithPermissionsGroups | [[FeatureWithPermissionsGroups](FeatureWithPermissionsGroups.md)!] | Features to protect, each with the permission groups to set up for it. A GitHub App per purpose (backup/recovery) is shared across features, so its manifest unions the scopes of every feature listed here. |
 | orgName | String! | The name of the GitHub organization. |
 | organizationUrl | String | Optional canonical URL of the GitHub organization. Used for GHEC data residency where the org lives on a *.ghe.com domain (e.g., "https://acme.ghe.com/my-org"). For github.com orgs, callers may pass "https://github.com/<org_name>" or omit this field. |

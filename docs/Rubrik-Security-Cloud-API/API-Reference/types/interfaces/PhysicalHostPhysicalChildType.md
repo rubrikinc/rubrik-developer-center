@@ -56,4 +56,5 @@ Physical children of a Physical Host.
 - [LinuxFileset](../objects/LinuxFileset.md)
 - [MssqlInstance](../objects/MssqlInstance.md)
 - [ShareFileset](../objects/ShareFileset.md)
+- [VolumeGroup](../objects/VolumeGroup.md)
 - [WindowsFileset](../objects/WindowsFileset.md)

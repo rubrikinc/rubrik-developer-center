@@ -46,8 +46,10 @@ Paginated list of all AWS Native accounts.
           isProtectable
           lastRefreshedAt
           name
+          nativeId
           numWorkloadDescendants
           objectType
+          orgId
           rdsInstanceCount
           rscPendingObjectPauseAssignment
           s3BucketCount
@@ -71,7 +73,7 @@ Paginated list of all AWS Native accounts.
 
     ```json
     {
-      "awsNativeProtectionFeature": "CLOUD_DISCOVERY"
+      "awsNativeProtectionFeature": "CLOUD_COST_REPORT"
     }
     ```
 

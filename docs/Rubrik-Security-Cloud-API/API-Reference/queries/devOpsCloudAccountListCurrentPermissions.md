@@ -47,6 +47,7 @@ Retrieves currently configured permissions for a DevOps cloud account organizati
           ],
           "groupPermissions": [
             {
+              "feature": "ALL",
               "group": "ADVANCED_DIAGNOSTICS",
               "permissions": [
                 "example-string"

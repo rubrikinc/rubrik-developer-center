@@ -36,10 +36,12 @@ AWS native account.
 | lastRefreshedAt | [DateTime](../scalars/DateTime.md) | Last refresh time of the account, in UTC date-time format. |
 | logicalPath | [[PathNode](PathNode.md)!]! | Sequential list of the logical ancestors of this object. |
 | name | String! | Name of the hierarchy object. |
+| nativeId | String! | The 12-digit AWS account number. |
 | numWorkloadDescendants | Int! | Number of descendant workloads of this object. |
 | objectBackupWindow | [ObjectBackupWindowStatus](ObjectBackupWindowStatus.md) | Object-level backup window status of the hierarchy object. |
 | objectPauseStatus | [ObjectPauseStatus](ObjectPauseStatus.md) | Pause status of the hierarchy object. |
 | objectType | [HierarchyObjectTypeEnum](../enums/HierarchyObjectTypeEnum.md)! | Type of this object. |
+| orgId | String | ID of the AWS Organization this account belongs to, if any. |
 | physicalPath | [[PathNode](PathNode.md)!]! | Sequential list of the physical ancestors of this object. |
 | rdsInstanceCount | Int! | Count of RDS Instances in the account. |
 | regionSpecs | [[AwsNativeRegionSpec](AwsNativeRegionSpec.md)!]! | List of AWS region specifications associated with the account. |

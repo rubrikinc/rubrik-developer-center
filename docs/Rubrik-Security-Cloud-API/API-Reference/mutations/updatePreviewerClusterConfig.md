@@ -34,10 +34,10 @@ Update previewer cluster configuration and return the updated Rubrik cluster.
         isClusterRemovalTprEnabled
         isHealthy
         isTprEnabled
+        isTunnelEnabled
         lastConnectionTime
         licensedProducts
         name
-        noSqlWorkloadCount
         passesConnectivityCheck
         pauseStatus
         productType

@@ -8,6 +8,7 @@ Count of different types of PingFederate objects in a snapshot.
 |-------|------|-------------|
 | authenticationPolicyContracts | [Long](../scalars/Long.md) | Count of authentication policy contracts. |
 | authenticationPolicySettings | [Long](../scalars/Long.md) | Count of authentication policy settings. |
+| caCertificates | [Long](../scalars/Long.md) | Count of trusted CA certificates. |
 | dataStores | [Long](../scalars/Long.md) | Count of data stores. |
 | defaultAuthenticationPolicy | [Long](../scalars/Long.md) | Count of default authentication policy settings. |
 | generalSettings | [Long](../scalars/Long.md) | Count of general settings. |
@@ -30,6 +31,7 @@ Count of different types of PingFederate objects in a snapshot.
 | spConnections | [Long](../scalars/Long.md) | Count of SP connections. |
 | sslClientKeyPairs | [Long](../scalars/Long.md) | Count of SSL client key pairs. |
 | sslServerKeyPairs | [Long](../scalars/Long.md) | Count of SSL server key pairs. |
+| virtualHostNames | [Long](../scalars/Long.md) | Count of virtual host names. |
 | wsTrustStsSettings | [Long](../scalars/Long.md) | Count of WS-Trust STS settings. |
 
 ## Used By

@@ -8,7 +8,7 @@ Parameters to filter reports.
 |-------|------|-------------|
 | applyWhitelists | Boolean | Flag to hide or show allowed hits in report. |
 | clusterIds | [String!] | List of CDM clusters to filter report. |
-| objectTypes | [[HierarchyObjectTypeEnum](../enums/HierarchyObjectTypeEnum.md)!]! |  |
+| objectTypes | [[HierarchyObjectTypeEnum](../enums/HierarchyObjectTypeEnum.md)!]! | List of workload types to filter reports. |
 | policyIds | [String!] | List of policies to filter reports. |
 | search | String | Search keyword to filter reports. |
 | subscriptionIds | [String!] | List of M365 subscriptions to filter reports. |

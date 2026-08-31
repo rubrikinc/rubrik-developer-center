@@ -6,7 +6,7 @@ Details of the O365Org.
 
 | Argument | Type | Description |
 |----------|------|-------------|
-| fid *(required)* | [UUID](../types/scalars/UUID.md)! | Rubrik UUID for the object. |
+| fid *(required)* | [UUID](../types/scalars/UUID.md)! | FID of the O365 organization. |
 
 ## Returns
 

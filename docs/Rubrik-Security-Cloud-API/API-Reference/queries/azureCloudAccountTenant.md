@@ -66,6 +66,13 @@ Retrieves the details of the Azure tenant and all the subscriptions of the tenan
           "cloudType": "AZURECHINACLOUD",
           "domainName": "example-string",
           "entraIdGroupId": "example-string",
+          "apps": [
+            {
+              "appName": "example-string",
+              "authType": "AZURE_AUTH_TYPE_NON_OAUTH",
+              "clientId": "example-string"
+            }
+          ],
           "subscriptions": [
             {
               "azureLocalClusterCount": 0,

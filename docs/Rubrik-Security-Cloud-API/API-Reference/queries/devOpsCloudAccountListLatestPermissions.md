@@ -45,6 +45,7 @@ Retrieves the most recent permission definitions available for DevOps features a
           ],
           "groupPermissions": [
             {
+              "feature": "ALL",
               "group": "ADVANCED_DIAGNOSTICS",
               "permissions": [
                 "example-string"

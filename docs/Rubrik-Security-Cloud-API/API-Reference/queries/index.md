@@ -139,7 +139,6 @@
 [allNcdSlaComplianceData](allNcdSlaComplianceData.md)  
 [allNcdTaskData](allNcdTaskData.md)  
 [allNcdUsageOverTimeData](allNcdUsageOverTimeData.md)  
-[allNosqlStorageLocations](allNosqlStorageLocations.md)  
 [allO365AdGroups](allO365AdGroups.md)  
 [allO365OrgStatuses](allO365OrgStatuses.md)  
 [allO365SubscriptionsAppTypeCounts](allO365SubscriptionsAppTypeCounts.md)  
@@ -309,6 +308,7 @@
 
 ## B
 
+[backupWindowsForObjects](backupWindowsForObjects.md)  
 [batchSupportedAwsRdsDatabaseInstanceClasses](batchSupportedAwsRdsDatabaseInstanceClasses.md)  
 [browseCalendar](browseCalendar.md)  
 [browseContacts](browseContacts.md)  
@@ -318,6 +318,7 @@
 [browseSharepointDrive](browseSharepointDrive.md)  
 [browseSharepointList](browseSharepointList.md)  
 [browseSnapshotFileConnection](browseSnapshotFileConnection.md)  
+[browseTasks](browseTasks.md)  
 [browseTeamsChannels](browseTeamsChannels.md)  
 [browseTeamsDrive](browseTeamsDrive.md)  
 
@@ -325,14 +326,6 @@
 
 [canIgnoreClusterRemovalPrechecks](canIgnoreClusterRemovalPrechecks.md)  
 [capSettingsData](capSettingsData.md)  
-[cassandraColumnFamilies](cassandraColumnFamilies.md)  
-[cassandraColumnFamily](cassandraColumnFamily.md)  
-[cassandraColumnFamilyRecoverableRange](cassandraColumnFamilyRecoverableRange.md)  
-[cassandraColumnFamilySchema](cassandraColumnFamilySchema.md)  
-[cassandraKeyspace](cassandraKeyspace.md)  
-[cassandraKeyspaces](cassandraKeyspaces.md)  
-[cassandraSource](cassandraSource.md)  
-[cassandraSources](cassandraSources.md)  
 [ccProvisionMetadata](ccProvisionMetadata.md)  
 [cdmAdminUser](cdmAdminUser.md)  
 [cdmHierarchySnappableNew](cdmHierarchySnappableNew.md)  
@@ -599,6 +592,7 @@
 ## H
 
 [haPolicies](haPolicies.md)  
+[harmfulLifecyclePolicies](harmfulLifecyclePolicies.md)  
 [hasAccessToO365Objects](hasAccessToO365Objects.md)  
 [hasIdpConfigured](hasIdpConfigured.md)  
 [hasRelicAzureAdSnapshot](hasRelicAzureAdSnapshot.md)  
@@ -637,6 +631,7 @@
 ## I
 
 [identityDataLocationsEncryptionInfo](identityDataLocationsEncryptionInfo.md)  
+[imageClassificationClusterConfigs](imageClassificationClusterConfigs.md)  
 [installedVersionList](installedVersionList.md)  
 [integration](integration.md)  
 [inventoryRoot](inventoryRoot.md)  
@@ -693,6 +688,7 @@
 [kubernetesClusters](kubernetesClusters.md)  
 [kubernetesProtectionSet](kubernetesProtectionSet.md)  
 [kubernetesProtectionSets](kubernetesProtectionSets.md)  
+[kubernetesRecoverableClusters](kubernetesRecoverableClusters.md)  
 [kubernetesVirtualMachineSnapshots](kubernetesVirtualMachineSnapshots.md)  
 
 ## L
@@ -747,18 +743,6 @@
 [mongoRestoreTargetsForSnapshot](mongoRestoreTargetsForSnapshot.md)  
 [mongoSource](mongoSource.md)  
 [mongoSources](mongoSources.md)  
-[mongodbBulkRecoverableRange](mongodbBulkRecoverableRange.md)  
-[mongodbCollection](mongodbCollection.md)  
-[mongodbCollectionRecoverableRange](mongodbCollectionRecoverableRange.md)  
-[mongodbCollections](mongodbCollections.md)  
-[mongodbDatabase](mongodbDatabase.md)  
-[mongodbDatabases](mongodbDatabases.md)  
-[mongodbSource](mongodbSource.md)  
-[mongodbSources](mongodbSources.md)  
-[mosaicBulkRecoveryRange](mosaicBulkRecoveryRange.md)  
-[mosaicSnapshots](mosaicSnapshots.md)  
-[mosaicStores](mosaicStores.md)  
-[mosaicVersions](mosaicVersions.md)  
 [mssqlAvailabilityGroup](mssqlAvailabilityGroup.md)  
 [mssqlAvailabilityGroupDatabaseVirtualGroups](mssqlAvailabilityGroupDatabaseVirtualGroups.md)  
 [mssqlAvailabilityGroupVirtualGroups](mssqlAvailabilityGroupVirtualGroups.md)  
@@ -931,6 +915,7 @@
 [prechecksStatus](prechecksStatus.md)  
 [prechecksStatusWithNextJobInfo](prechecksStatusWithNextJobInfo.md)  
 [principalApiPermissions](principalApiPermissions.md)  
+[principalAttributes](principalAttributes.md)  
 [principalCountsSummaries](principalCountsSummaries.md)  
 [principalDepartments](principalDepartments.md)  
 [principalDetails](principalDetails.md)  
@@ -995,11 +980,14 @@
 [resourceGroups](resourceGroups.md)  
 [roleTemplates](roleTemplates.md)  
 [rscPermsToCdmInfo](rscPermsToCdmInfo.md)  
+[rscpUpgradeStatus](rscpUpgradeStatus.md)  
 [rvcDeploymentToolLink](rvcDeploymentToolLink.md)  
 
 ## S
 
 [s3BucketStateForRecovery](s3BucketStateForRecovery.md)  
+[s3TablesIcebergInventoryStats](s3TablesIcebergInventoryStats.md)  
+[saasAppCascadingImpact](saasAppCascadingImpact.md)  
 [saasAppOrganizations](saasAppOrganizations.md)  
 [saasWorkloadMetadataTypes](saasWorkloadMetadataTypes.md)  
 [salesforceObjects](salesforceObjects.md)  
@@ -1052,6 +1040,7 @@
 [snappableOnedriveSearch](snappableOnedriveSearch.md)  
 [snappableSharepointDriveSearch](snappableSharepointDriveSearch.md)  
 [snappableSharepointListSearch](snappableSharepointListSearch.md)  
+[snappableTaskSearch](snappableTaskSearch.md)  
 [snappableTeamsConversationsSearch](snappableTeamsConversationsSearch.md)  
 [snappableTeamsDriveSearch](snappableTeamsDriveSearch.md)  
 [snappablesWithLegalHoldSnapshotsSummary](snappablesWithLegalHoldSnapshotsSummary.md)  

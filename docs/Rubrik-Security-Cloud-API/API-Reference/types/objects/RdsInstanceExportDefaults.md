@@ -7,6 +7,7 @@ RDS Export defaults from AWS.
 | Field | Type | Description |
 |-------|------|-------------|
 | allocatedStorageInGb | [Long](../scalars/Long.md)! | Allocated size of an RDS Instance. |
+| availableDbEngineVersions | [[DbEngineVersionInfo](DbEngineVersionInfo.md)!]! | Lists the engine versions an export may target, each flagged for extended support and major-version change. |
 | databaseInstanceClass | String! | DB class for RDS Instance. AWS supported instance classes can be found here https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Concepts.DBInstanceClass.html#Concepts.DBInstanceClass.Types. |
 | dbEngine | [AwsNativeRdsDbEngine](../enums/AwsNativeRdsDbEngine.md)! | DB Engine of RDS Instance. |
 | dbEngineVersion | String! | Version of DB engine. |

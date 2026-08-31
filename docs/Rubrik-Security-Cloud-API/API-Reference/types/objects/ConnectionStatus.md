@@ -15,6 +15,7 @@ Connection status details of a SaaS organization.
 
 **Referenced by**
 
+- [AnthropicOrg.connectionStatus](AnthropicOrg.md)
 - [AtlassianSite.connectionStatus](AtlassianSite.md)
 - [Dynamics365Organization.connectionStatus](Dynamics365Organization.md)
 - [GoogleWorkspaceOrg.connectionStatus](GoogleWorkspaceOrg.md)

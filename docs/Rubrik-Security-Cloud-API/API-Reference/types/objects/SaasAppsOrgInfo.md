@@ -12,6 +12,7 @@ The information of the Saas Apps organization.
 
 **Referenced by**
 
+- [AnthropicOrg.saasAppsOrgInfo](AnthropicOrg.md)
 - [AtlassianSite.saasAppsOrgInfo](AtlassianSite.md)
 - [Dynamics365Organization.saasAppsOrgInfo](Dynamics365Organization.md)
 - [GoogleWorkspaceOrg.saasAppsOrgInfo](GoogleWorkspaceOrg.md)

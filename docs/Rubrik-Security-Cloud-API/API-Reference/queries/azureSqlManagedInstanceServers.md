@@ -13,6 +13,7 @@ Retrieves a paginated list of all Azure SQL Managed Instance Servers.
 | sortBy | [AzureSqlManagedInstanceServerSortFields](../types/enums/AzureSqlManagedInstanceServerSortFields.md) | Sort fields for list of Azure SQL Managed Instance Servers. |
 | sortOrder | [SortOrder](../types/enums/SortOrder.md) | Sorts the order of results. |
 | azureSqlManagedInstanceServerFilters | [AzureSqlManagedInstanceServerFilters](../types/inputs/AzureSqlManagedInstanceServerFilters.md) | Filters for listing Azure SQL Managed Instance Servers. |
+| authorizedOperationFilter | [Operation](../types/enums/Operation.md) | Filters the results to objects on which the caller is authorized to perform the specified operation. Only privilege operations are accepted. |
 
 ## Returns
 

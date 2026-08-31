@@ -1,6 +1,6 @@
 # createManualTargetMapping
 
-*No description available.*
+Creates a manual target mapping scoped to the caller's account.
 
 ## Arguments
 

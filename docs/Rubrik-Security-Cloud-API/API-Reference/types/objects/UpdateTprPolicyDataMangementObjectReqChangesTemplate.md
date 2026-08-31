@@ -9,6 +9,7 @@ TPR requested changes template for updating TPR data management by object polici
 | Field | Type | Description |
 |-------|------|-------------|
 | exemptServiceAccounts | [TprRequestedChangeServiceAccountEntry](TprRequestedChangeServiceAccountEntry.md) | Service accounts exempt from TPR policy. |
+| isCdmEnforcementDisabled | [TprRequestedChangeEntry](TprRequestedChangeEntry.md) | Whether CDM enforcement is turned off for the policy. |
 | quorumRequirement | [TprRequestedChangeEntry](TprRequestedChangeEntry.md) | Quorum authorization requirement |
 | selectedObjects | [TprRequestedChangeManagedObjectEntry](TprRequestedChangeManagedObjectEntry.md) | Selected objects. |
 | templateName | String! | Name of the requested changes template for quorum authorization. |

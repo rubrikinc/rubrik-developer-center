@@ -9,6 +9,7 @@ Anomaly analysis report from lambda service.
 | activitySeriesId | String! | Activity series id for the events of this anomaly. |
 | anomalyAnalysisLocationId | String! | The ID of the archival location where Ransomware Investigation was performed. |
 | anomalyAnalysisLocationName | String! | The name of the archival location where Ransomware Investigation was performed. |
+| anomalyCategory | [WorkloadAnomalyCategory](../enums/WorkloadAnomalyCategory.md)! | The category this anomaly is grouped under for filtering. |
 | anomalyInfo | [AnomalyInfo](AnomalyInfo.md) | Information about possible ransomware strains. |
 | anomalyProbability | Float! | The probability of the snapshot being anomalous. |
 | anomalyType | [AnomalyType](../enums/AnomalyType.md)! | Type of the anomaly detected. |
@@ -17,6 +18,7 @@ Anomaly analysis report from lambda service.
 | bytesModifiedCount | [Long](../scalars/Long.md)! | Total bytes modified. |
 | bytesNetChangedCount | [Long](../scalars/Long.md)! | Net change in the number of bytes. For example, if 5 bytes are added and 3 bytes deleted, this field returns 2 as the number of bytes that changed. |
 | bytesSuspiciousCount | [Long](../scalars/Long.md)! | Total suspicious bytes. |
+| cloudAuditEvent | [CloudAuditEvent](CloudAuditEvent.md) | The cloud provider audit log entry that recorded the deletion of the object. This field is only populated for AWS S3 buckets when the anomaly type is INFRASTRUCTURE_DELETION. |
 | cluster | [Cluster](Cluster.md)! | The Rubrik cluster of the object. |
 | detectionTime | [DateTime](../scalars/DateTime.md) | Time when the anomaly was detected. |
 | encryption | [EncryptionLevel](../enums/EncryptionLevel.md)! | Level of encryption detected. |
@@ -25,8 +27,10 @@ Anomaly analysis report from lambda service.
 | filesModifiedCount | [Long](../scalars/Long.md)! | The count of files modified. |
 | id | String! | The id of the anomaly. |
 | isAnomaly | Boolean! | Specifies whether the snapshot is anomalous. |
+| isCriticalResourceMonitored | Boolean | Indicates whether this object is enrolled in critical resource protection monitoring. Only populated for supported object types, such as AWS S3 buckets. |
 | location | String! | The location of the object. |
 | managedId | String! | The internal managed ID of the object. |
+| objectDeletedAt | [DateTime](../scalars/DateTime.md) | The timestamp when the object was deleted due to infrastructure deletion. This field is only populated for AWS S3 buckets when the anomaly type is INFRASTRUCTURE_DELETION. |
 | objectType | [ObjectTypeEnum](../enums/ObjectTypeEnum.md) | The type of the object. |
 | potentialSnoozedDirectories | [String!]! | The list of directories that can be snoozed from the anomaly. |
 | previousSnapshot | [CdmSnapshot](CdmSnapshot.md) | The previous snapshot. |

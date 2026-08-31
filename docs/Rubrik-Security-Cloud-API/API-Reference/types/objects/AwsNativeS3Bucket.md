@@ -31,6 +31,7 @@ AWS native S3 Bucket.
 | isProtectable | Boolean! | Indicates whether this S3 bucket is protectable or not. |
 | isRelic | Boolean! | Whether the bucket is relic. |
 | isVersioningEnabled | Boolean! | Whether versioning is enabled on the bucket. |
+| latestCleanSnapshotTime | [DateTime](../scalars/DateTime.md) | The date and time of the most recent snapshot that was not flagged as anomalous. |
 | logicalPath | [[PathNode](PathNode.md)!]! | Sequential list of the logical ancestors of this object. |
 | name | String! | Name of the hierarchy object. |
 | nativeName | String! | AWS Native name of the object. |

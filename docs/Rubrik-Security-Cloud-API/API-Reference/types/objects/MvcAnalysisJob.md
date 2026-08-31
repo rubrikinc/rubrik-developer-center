@@ -15,4 +15,5 @@ MvcAnalysisJob represents the most recent MVC analysis job for a profile.
 
 **Referenced by**
 
+- [M365AbrRecoveryPlan.analysisJob](M365AbrRecoveryPlan.md)
 - [MvcProfile.analysisJob](MvcProfile.md)

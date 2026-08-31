@@ -20,6 +20,7 @@ A generic snapshot type.
 - [ActiveDirectoryDomainController.snapshotDistribution](ActiveDirectoryDomainController.md)
 - ActiveDirectoryDomainDescendantType.snapshotDistribution
 - ActiveDirectoryDomainPhysicalChildType.snapshotDistribution
+- [AnthropicOrg.snapshotDistribution](AnthropicOrg.md)
 - [AtlassianSite.snapshotDistribution](AtlassianSite.md)
 - [AwsNativeAccount.snapshotDistribution](AwsNativeAccount.md)
 - AwsNativeAccountDescendantType.snapshotDistribution
@@ -45,5 +46,4 @@ A generic snapshot type.
 - [AzurePostgresFlexibleServer.snapshotDistribution](AzurePostgresFlexibleServer.md)
 - [AzureSqlDatabaseDb.snapshotDistribution](AzureSqlDatabaseDb.md)
 - [AzureSqlDatabaseServer.snapshotDistribution](AzureSqlDatabaseServer.md)
-- [AzureSqlManagedInstanceDatabase.snapshotDistribution](AzureSqlManagedInstanceDatabase.md)
-- *…and 285 more*
+- *…and 294 more*

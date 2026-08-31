@@ -6,6 +6,8 @@ Supported in v9.2+ Input to generate a manifest for the Kubernetes cluster.
 
 | Field | Type | Description |
 |-------|------|-------------|
+| backupSubnetCidr | String | Supported in v9.6+ Comma-separated IPv4 CIDR(s) the per-node backup proxy binds its backup NIC within. Only used when dataPathTransport is pernodeproxy. |
+| dataPathTransport | String | Supported in v9.6+ The transport type used for the RBA data movers. Set to pernodeproxy to include the per-node backup proxy DaemonSet in the generated manifest. |
 | distribution | String! | Required. Supported in v9.2+ Distribution of the Kubernetes cluster to be added. |
 | id | String | Supported in v9.2+ UUID of the Kubernetes cluster to be added. |
 | isAutoPsCreationEnabled | Boolean | Supported in v9.2+ Specifies whether to enable automatic protection set creation for the Kubernetes cluster. |

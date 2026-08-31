@@ -24,6 +24,7 @@ Get details of a GCE Instance
         fileIndexingStatus
         id
         isExocomputeConfigured
+        isProtectionOnboarded
         isRelic
         machineType
         name
@@ -65,7 +66,7 @@ Get details of a GCE Instance
           "fileIndexingStatus": "DISABLED",
           "id": "00000000-0000-0000-0000-000000000000",
           "isExocomputeConfigured": true,
-          "isRelic": true,
+          "isProtectionOnboarded": true,
           "allOrgs": [
             {
               "allUrls": [

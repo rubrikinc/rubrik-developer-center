@@ -27,3 +27,4 @@ Input to initiate an export job for an AWS native EC2 instance.
 | snapshotType | [SnapshotType](../enums/SnapshotType.md) | Type of snapshot used for export. |
 | sshKeyPairName | String | Name of the SSH key pair to be used for export. |
 | subnetId | String! | ID of the subnet to use for the exported instance. |
+| surgicalRecoveryConfig | [SurgicalRecoveryConfigInput](SurgicalRecoveryConfigInput.md) | Clean-version selections for a surgical recovery: which quarantined files keep their clean version restored, and which encrypted files are restored from their clean counterparts. Requires recoveryPurpose SURGICAL_RECOVERY and the surgical recovery V2 entitlement on the account. Omit to export with quarantined files excluded and encrypted files left as they stand. |

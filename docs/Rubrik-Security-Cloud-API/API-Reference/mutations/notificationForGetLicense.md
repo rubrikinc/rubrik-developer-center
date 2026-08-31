@@ -6,7 +6,7 @@ Send notification when the user clicks on the Get License button.
 
 | Argument | Type | Description |
 |----------|------|-------------|
-| input | [NotificationForGetLicenseInput](../types/inputs/NotificationForGetLicenseInput.md) | Request type for receiving license notifications. |
+| input | [NotificationForGetLicenseInput](../types/inputs/NotificationForGetLicenseInput.md) | Details of the get-license notification to send. |
 
 ## Returns
 

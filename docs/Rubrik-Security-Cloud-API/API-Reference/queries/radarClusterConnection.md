@@ -41,10 +41,10 @@
           isClusterRemovalTprEnabled
           isHealthy
           isTprEnabled
+          isTunnelEnabled
           lastConnectionTime
           licensedProducts
           name
-          noSqlWorkloadCount
           passesConnectivityCheck
           pauseStatus
           productType

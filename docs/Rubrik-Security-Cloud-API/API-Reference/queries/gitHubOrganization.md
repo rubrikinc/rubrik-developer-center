@@ -35,6 +35,7 @@ Query GitHub organization object.
         rscPendingObjectPauseAssignment
         slaAssignment
         slaPauseStatus
+        zeusState
       }
     }
     ```

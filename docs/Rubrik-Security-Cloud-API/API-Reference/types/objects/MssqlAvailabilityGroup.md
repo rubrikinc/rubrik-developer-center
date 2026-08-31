@@ -2,7 +2,7 @@
 
 SQL Server always on availability group.
 
-**Implements:** [HierarchyObject](../interfaces/HierarchyObject.md), [CdmHierarchyObject](../interfaces/CdmHierarchyObject.md), [MssqlTopLevelDescendantType](../interfaces/MssqlTopLevelDescendantType.md)
+**Implements:** [CdmHierarchyObject](../interfaces/CdmHierarchyObject.md), [HierarchyObject](../interfaces/HierarchyObject.md), [MssqlTopLevelDescendantType](../interfaces/MssqlTopLevelDescendantType.md)
 
 ## Fields
 

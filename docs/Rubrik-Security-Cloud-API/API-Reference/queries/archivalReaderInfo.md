@@ -21,6 +21,7 @@ GetArchivalReaderInfo returns information about the requested location that is r
       archivalReaderInfo(input: $input) {
         activeOwnerLocationIds
         activeReaderLocationIds
+        inactiveOwnerLocationIds
       }
     }
     ```
@@ -45,6 +46,9 @@ GetArchivalReaderInfo returns information about the requested location that is r
             "example-string"
           ],
           "activeReaderLocationIds": [
+            "example-string"
+          ],
+          "inactiveOwnerLocationIds": [
             "example-string"
           ],
           "readerRefreshStatus": {

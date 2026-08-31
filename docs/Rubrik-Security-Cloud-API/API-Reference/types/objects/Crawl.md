@@ -1,30 +1,31 @@
 # Crawl
 
-*No description available.*
+A single on-demand classification scan (crawl) over a set of workloads, including its lifecycle status, progress, and aggregate classification results.
 
 ## Fields
 
 | Field | Type | Description |
 |-------|------|-------------|
-| analyzerGroupResults | [[AnalyzerGroupResult](AnalyzerGroupResult.md)!]! |  |
-| analyzerResults | [[AnalyzerResult](AnalyzerResult.md)!]! |  |
-| crawlObj | [CrawlObj](CrawlObj.md)! |  |
-| crawlObjConnection | [CrawlObjConnection](CrawlObjConnection.md)! |  |
-| endTime | [Long](../scalars/Long.md)! |  |
-| failedObjectCount | Int! |  |
-| fileResultConnection | [FileResultConnection](FileResultConnection.md)! |  |
-| filesAnalyzeable | [Long](../scalars/Long.md)! |  |
-| filesAnalyzed | [Long](../scalars/Long.md)! |  |
-| filesTotal | [Long](../scalars/Long.md)! |  |
-| filesWithHits | [Long](../scalars/Long.md)! |  |
-| id | String! |  |
-| name | String! |  |
-| progress | Float! |  |
-| snappableTypeSummaries | [[SnappableTypeSummary](SnappableTypeSummary.md)!]! |  |
-| startTime | [Long](../scalars/Long.md)! |  |
-| status | [CrawlStatusEnum](../enums/CrawlStatusEnum.md)! |  |
-| totalHits | Int! |  |
-| user | [User](User.md) |  |
+| analyzerGroupResults | [[AnalyzerGroupResult](AnalyzerGroupResult.md)!]! | Per-analyzer-group classification result counts for the crawl. |
+| analyzerResults | [[AnalyzerResult](AnalyzerResult.md)!]! | Per-analyzer classification result counts for the crawl. |
+| crawlObj | [CrawlObj](CrawlObj.md)! | A single per-workload crawl object in this crawl. |
+| crawlObjConnection | [CrawlObjConnection](CrawlObjConnection.md)! | The per-workload crawl objects in this crawl. |
+| dataCategoryIds | [String!]! | Data category IDs selected for the crawl at Start time. Populated only on the single-crawl read path (GetCrawl) for v2 crawls; empty on the list path and for v1 crawls. |
+| endTime | [Long](../scalars/Long.md)! | End time of the crawl, in epoch seconds. Zero while the crawl is running. |
+| failedObjectCount | Int! | Number of workloads that failed to be crawled. |
+| fileResultConnection | [FileResultConnection](FileResultConnection.md)! | Browses the file classification results in this crawl. |
+| filesAnalyzeable | [Long](../scalars/Long.md)! | Number of files eligible for classification analysis. |
+| filesAnalyzed | [Long](../scalars/Long.md)! | Number of files that have been analyzed so far. |
+| filesTotal | [Long](../scalars/Long.md)! | Total number of files discovered by the crawl. |
+| filesWithHits | [Long](../scalars/Long.md)! | Number of analyzed files that had at least one classification hit. |
+| id | String! | Unique identifier of the crawl. |
+| name | String! | Human-readable name of the crawl. |
+| progress | Float! | Fraction of the crawl completed, from 0.0 to 1.0. |
+| snappableTypeSummaries | [[SnappableTypeSummary](SnappableTypeSummary.md)!]! | Per-workload-type summary counts for this crawl. |
+| startTime | [Long](../scalars/Long.md)! | Start time of the crawl, in epoch seconds. |
+| status | [CrawlStatusEnum](../enums/CrawlStatusEnum.md)! | Current lifecycle status of the crawl. |
+| totalHits | Int! | Total number of classification hits across all analyzers. |
+| user | [User](User.md) | The user who started this crawl. |
 
 ## Field Arguments
 

@@ -13,4 +13,3 @@ Kosmos workload Snapshot related app metadata for a Snapshot.
 **Referenced by**
 
 - [CdmSnapshot.mysqldbInstanceAppMetadata](CdmSnapshot.md)
-- [CdmSnapshot.postgresDbClusterAppMetadata](CdmSnapshot.md)

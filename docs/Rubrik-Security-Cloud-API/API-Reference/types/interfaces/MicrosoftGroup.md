@@ -9,21 +9,21 @@ An interface for Microsoft groups.
 | allOrgs | [[Org](../objects/Org.md)!]! | Organizations to which this hierarchy object belongs. |
 | allTags | [[AssignedRscTag](../objects/AssignedRscTag.md)!]! | RSC tags to which this hierarchy object is assigned. |
 | authorizedOperations | [[Operation](../enums/Operation.md)!]! | The authorized operations on the object. |
-| configuredGroupSpecification | [O365ConfiguredGroupSpec](../objects/O365ConfiguredGroupSpec.md)! | Configured Group Specs |
+| configuredGroupSpecification | [O365ConfiguredGroupSpec](../objects/O365ConfiguredGroupSpec.md)! | Configured Group Specs. |
 | configuredSlaDomain | [SlaDomain](SlaDomain.md)! | SLA Domain configured for the hierarchy object. |
-| deletedInAzure | Boolean! | Whether the Group is deleted in Microsoft Entra ID or not |
-| displayName | String! | Display name of Microsoft Group |
+| deletedInAzure | Boolean! | Whether the Group is deleted in Microsoft Entra ID or not. |
+| displayName | String! | Display name of Microsoft Group. |
 | effectiveRetentionSlaDomain | [SlaDomain](SlaDomain.md) | Effective retention of the SLA Domain of the hierarchy object. |
 | effectiveSlaDomain | [SlaDomain](SlaDomain.md)! | Effective SLA Domain of the hierarchy object. |
 | effectiveSlaSourceObject | [PathNode](../objects/PathNode.md) | Path node of the effective SLA Domain source. |
-| groupID | String! | Group ID of Microsoft Group |
-| groupSubType | [O365GroupSubType](../enums/O365GroupSubType.md)! | Group sub-type of the Microsoft Group |
-| groupType | [O365GroupType](../enums/O365GroupType.md)! | Group type of the Microsoft Group |
+| groupID | String! | Group ID of Microsoft Group. |
+| groupSubType | [O365GroupSubType](../enums/O365GroupSubType.md)! | Group sub-type of the Microsoft Group. |
+| groupType | [O365GroupType](../enums/O365GroupType.md)! | Group type of the Microsoft Group. |
 | id | [UUID](../scalars/UUID.md)! | ID of the hierarchy object. |
 | logicalPath | [[PathNode](../objects/PathNode.md)!]! | Sequential list of the logical ancestors of this object. |
-| metadata | [O365GroupMetadata](../objects/O365GroupMetadata.md) | Metadata of the Microsoft Group |
+| metadata | [O365GroupMetadata](../objects/O365GroupMetadata.md) | Metadata of the Microsoft Group. |
 | name | String! | Name of the hierarchy object. |
-| naturalID | String! | Natural ID of Microsoft Group |
+| naturalID | String! | Natural ID of Microsoft Group. |
 | newestIndexedSnapshot | [PolarisSnapshot](../objects/PolarisSnapshot.md) | The latest snapshot that is indexed and unexpired, and therefore restorable. |
 | newestSnapshot | [PolarisSnapshot](../objects/PolarisSnapshot.md) | The most recent snapshot of this workload. |
 | numWorkloadDescendants | Int! | Number of descendant workloads of this object. |
@@ -38,9 +38,9 @@ An interface for Microsoft groups.
 | slaPauseStatus | Boolean! | Pause status of the effective SLA Domain of the hierarchy object. |
 | snapshotConnection | [PolarisSnapshotConnection](../objects/PolarisSnapshotConnection.md) | The list of snapshots taken for this workload. |
 | snapshotDistribution | [SnapshotDistribution](../objects/SnapshotDistribution.md)! | Distribution of the snapshots of the hierarchy object. |
-| snapshotGroupByConnection | [PolarisSnapshotGroupByConnection](../objects/PolarisSnapshotGroupByConnection.md) | GroupBy connection for the snapshots of this workload. |
-| snapshotGroupByNewConnection | [PolarisSnapshotGroupByNewConnection](../objects/PolarisSnapshotGroupByNewConnection.md) | GroupBy connection for the snapshots of this workload. |
-| userCount | [Long](../scalars/Long.md)! | User count of Microsoft Group |
+| snapshotGroupByConnection | [PolarisSnapshotGroupByConnection](../objects/PolarisSnapshotGroupByConnection.md) | Group-by connection for the snapshots of this workload. |
+| snapshotGroupByNewConnection | [PolarisSnapshotGroupByNewConnection](../objects/PolarisSnapshotGroupByNewConnection.md) | Group-by connection for the snapshots of this workload. |
+| userCount | [Long](../scalars/Long.md)! | User count of Microsoft Group. |
 | workloadSnapshotConnection | [GenericSnapshotConnection](../objects/GenericSnapshotConnection.md) | The list of snapshots taken for this workload. |
 
 ## Field Arguments

@@ -1,6 +1,6 @@
 # SlaDomain
 
-*No description available.*
+Represents an SLA Domain, which is either a global or cluster SLA Domain.
 
 ## Fields
 

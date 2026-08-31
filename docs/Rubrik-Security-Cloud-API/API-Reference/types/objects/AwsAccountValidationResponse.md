@@ -1,20 +1,22 @@
 # AwsAccountValidationResponse
 
-Validate given aws accounts.
+Details of the AWS account.
 
 ## Fields
 
 | Field | Type | Description |
 |-------|------|-------------|
-| accountName | String! | AWS account name. |
-| cloudType | [AwsCloudType](../enums/AwsCloudType.md)! | AWS account cloud type. |
-| crossAccountRoleModel | [CrossAccountRoleModel](../enums/CrossAccountRoleModel.md)! | The cross-account role model for this account (SINGLE_ROLE or MULTI_ROLE). |
-| message | String! | AWS account validation response message. |
-| nativeId | String! | AWS account native ID. |
+| accountName | String! | Name of the cloud account. |
+| cloudType | [AwsCloudType](../enums/AwsCloudType.md)! | Type of the cloud account. |
+| crossAccountRoleModel | [CrossAccountRoleModel](../enums/CrossAccountRoleModel.md)! | Cross-account role model: SINGLE_ROLE or MULTI_ROLE. |
+| id | String! | Rubrik ID of the cloud account. |
+| message | String! | Message for the cloud account, in case of an error. |
+| nativeId | String! | Native ID of the cloud account. |
 | orgId | String! | The UUID of the onboarded AWS organization. |
 | orgName | String! | The AWS organization name with which you onboarded the AWS account. |
 | outpostAwsNativeId | String! | Native ID of the AWS Outpost account. |
-| seamlessFlowEnabled | Boolean! | Specfies whether seamless flow is enabled for this AWS account. |
+| seamlessFlowEnabled | Boolean! | Whether seamless flow is enabled on the cloud account. |
+| serviceType | [AwsCloudAccountServiceType](../enums/AwsCloudAccountServiceType.md)! | Service type indicating whether the account is onboarded for BaaS or non-BaaS use case. |
 
 ## Used By
 
