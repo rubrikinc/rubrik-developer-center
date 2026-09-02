@@ -1,0 +1,17 @@
+query {
+  salesforceObjects(
+    orgId: "00000000-0000-0000-0000-000000000001"
+    first: 50
+  ) {
+    count
+    nodes {
+      id
+      name
+      objectType
+    }
+    pageInfo {
+      hasNextPage
+      endCursor
+    }
+  }
+}

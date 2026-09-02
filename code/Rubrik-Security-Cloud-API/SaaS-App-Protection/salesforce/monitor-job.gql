@@ -1,0 +1,9 @@
+query {
+  taskchain(taskchainId: "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee") {
+    id
+    state
+    progress
+    startTime
+    endTime
+  }
+}

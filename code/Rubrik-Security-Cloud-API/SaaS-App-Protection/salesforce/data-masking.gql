@@ -1,0 +1,10 @@
+mutation {
+  startInPlaceDataMasking(input: {
+    destinationOrgId: "00000000-0000-0000-0000-000000000001"
+    maskingTemplateId: 1234
+    disableAutomations: true
+  }) {
+    jobId
+    taskchainId
+  }
+}

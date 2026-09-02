@@ -1,0 +1,17 @@
+query {
+  saasAppOrganizations(
+    typeFilter: [SALESFORCE_ORGANIZATION]
+    first: 50
+  ) {
+    count
+    nodes {
+      id
+      name
+      status
+    }
+    pageInfo {
+      hasNextPage
+      endCursor
+    }
+  }
+}

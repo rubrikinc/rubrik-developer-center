@@ -1,0 +1,15 @@
+mutation {
+  takeSaasOnDemandSnapshot(input: {
+    saasAppType: SALESFORCE
+    workloadIds: ["00000000-0000-0000-0000-000000000001"]
+  }) {
+    jobIds {
+      rubrikObjectId
+      jobId
+    }
+    errors {
+      rubrikObjectId
+      error
+    }
+  }
+}

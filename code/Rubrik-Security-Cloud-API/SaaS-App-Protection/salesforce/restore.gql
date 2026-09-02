@@ -1,0 +1,22 @@
+mutation {
+  startSaasAppItemsRestore(input: {
+    orgId: "00000000-0000-0000-0000-000000000001"
+    destinationOrgId: "00000000-0000-0000-0000-000000000002"
+    itemRestoreInfo: [
+      {
+        workloadId: "00000000-0000-0000-0000-000000000003"
+        appItemTypeToken: "Account"
+        itemsToRestore: [
+          {
+            itemId: "0015g00000AbCdEfAA"
+            snapshotId: "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee"
+            sequenceNumber: 1
+          }
+        ]
+      }
+    ]
+  }) {
+    jobId
+    taskchainId
+  }
+}
