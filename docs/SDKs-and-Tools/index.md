@@ -4,6 +4,17 @@ icon: material/toolbox-outline
 ---
 
 <div class="grid cards" markdown>
+-   :material-robot-outline:{ .lg .middle } __Rubrik MCP Server__
+
+    ---
+    - Connect Claude to Rubrik Security Cloud
+    - Natural-language querying, protection, and recovery
+    - Extend with custom saved workflows
+    ---
+    [:octicons-arrow-right-24: Get Started](Rubrik-MCP/index.md)
+
+    [:material-github: GitHub Project](https://github.com/rubrikinc/rubrik-mcp)
+
 -   :material-powershell:{ .lg .middle } __Rubrik Security Cloud PowerShell Module__
 
     ---
