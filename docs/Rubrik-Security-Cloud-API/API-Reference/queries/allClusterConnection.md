@@ -44,6 +44,7 @@
           isTunnelEnabled
           lastConnectionTime
           licensedProducts
+          managementType
           name
           passesConnectivityCheck
           pauseStatus

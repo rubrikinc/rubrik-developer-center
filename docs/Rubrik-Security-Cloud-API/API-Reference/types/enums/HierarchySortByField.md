@@ -86,6 +86,7 @@ Fields for sorting hierarchy objects.
 | EFFECTIVE_SLA_FREQUENCY | Sort based on the base frequency of effective SLA Domain. |
 | EFFECTIVE_SLA_MAX_RETENTION | Sort based on the maximum retention of the effective SLA Domain. |
 | EMAIL_ADDRESS | Sort by O365 user email address. |
+| EXCHANGE_SERVER_HOST_NAME | Sort Exchange Servers by the name, IP address, or FQDN of the host they run on. |
 | FAILOVER_CLUSTER_APP_CONNECTION_STATUS | Sort based on failover cluster app connection status. |
 | FAILOVER_CLUSTER_CONNECTION_STATUS | Sort based on failover cluster connection status. |
 | FILESET_TEMPLATE_DOES_NOT_EXCLUDE | Sort fileset templates based on the not excluded files. |

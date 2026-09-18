@@ -1,6 +1,6 @@
 # Interfaces
 
-190 types.
+204 types.
 
 [ActiveDirectoryDomainDescendantType](ActiveDirectoryDomainDescendantType.md)  
 [ActiveDirectoryDomainPhysicalChildType](ActiveDirectoryDomainPhysicalChildType.md)  
@@ -114,6 +114,14 @@
 [O365TeamsChannelObject](O365TeamsChannelObject.md)  
 [O365UserDescendant](O365UserDescendant.md)  
 [O365UserDescendantMetadata](O365UserDescendantMetadata.md)  
+[OlvmComputeClusterDescendant](OlvmComputeClusterDescendant.md)  
+[OlvmComputeClusterPhysicalChildType](OlvmComputeClusterPhysicalChildType.md)  
+[OlvmDatacenterDescendant](OlvmDatacenterDescendant.md)  
+[OlvmDatacenterPhysicalChildType](OlvmDatacenterPhysicalChildType.md)  
+[OlvmManagerDescendant](OlvmManagerDescendant.md)  
+[OlvmManagerPhysicalChildType](OlvmManagerPhysicalChildType.md)  
+[OlvmTagDescendant](OlvmTagDescendant.md)  
+[OlvmTagLogicalChild](OlvmTagLogicalChild.md)  
 [OpenstackAvailabilityZoneDescendantType](OpenstackAvailabilityZoneDescendantType.md)  
 [OpenstackAvailabilityZonePhysicalChildType](OpenstackAvailabilityZonePhysicalChildType.md)  
 [OpenstackDomainDescendantType](OpenstackDomainDescendantType.md)  
@@ -142,6 +150,12 @@
 [PolarisHierarchySnappable](PolarisHierarchySnappable.md)  
 [PolarisSpecificSnapshot](PolarisSpecificSnapshot.md)  
 [ProtectedObjectSummary](ProtectedObjectSummary.md)  
+[ProxmoxClusterDescendant](ProxmoxClusterDescendant.md)  
+[ProxmoxClusterPhysicalChildType](ProxmoxClusterPhysicalChildType.md)  
+[ProxmoxEnvironmentDescendant](ProxmoxEnvironmentDescendant.md)  
+[ProxmoxEnvironmentPhysicalChildType](ProxmoxEnvironmentPhysicalChildType.md)  
+[ProxmoxNodeDescendant](ProxmoxNodeDescendant.md)  
+[ProxmoxNodePhysicalChildType](ProxmoxNodePhysicalChildType.md)  
 [PureStorageArrayDescendantV1](PureStorageArrayDescendantV1.md)  
 [PureStorageArrayLogicalChildType](PureStorageArrayLogicalChildType.md)  
 [RequestedChangesTemplate](RequestedChangesTemplate.md)  

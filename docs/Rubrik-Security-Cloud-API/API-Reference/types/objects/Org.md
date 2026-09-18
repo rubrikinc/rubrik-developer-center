@@ -60,6 +60,9 @@ Details of an org.
 - [AwsNativeRegionHierarchyObject.allOrgs](AwsNativeRegionHierarchyObject.md)
 - [AwsNativeS3Bucket.allOrgs](AwsNativeS3Bucket.md)
 - [AzureAdDirectory.allOrgs](AzureAdDirectory.md)
+- [AzureCosmosNosqlAccount.allOrgs](AzureCosmosNosqlAccount.md)
+- [AzureCosmosNosqlContainer.allOrgs](AzureCosmosNosqlContainer.md)
+- [AzureCosmosNosqlDatabase.allOrgs](AzureCosmosNosqlDatabase.md)
 - [AzureDevOpsOrganization.allOrgs](AzureDevOpsOrganization.md)
 - [AzureDevOpsProject.allOrgs](AzureDevOpsProject.md)
 - [AzureDevOpsRepository.allOrgs](AzureDevOpsRepository.md)
@@ -67,8 +70,5 @@ Details of an org.
 - [AzureNativeManagedDisk.allOrgs](AzureNativeManagedDisk.md)
 - [AzureNativeRegionManagedObject.allOrgs](AzureNativeRegionManagedObject.md)
 - [AzureNativeResourceGroup.allOrgs](AzureNativeResourceGroup.md)
-- [AzureNativeSubscription.allOrgs](AzureNativeSubscription.md)
-- [AzureNativeVirtualMachine.allOrgs](AzureNativeVirtualMachine.md)
-- [AzurePostgresFlexibleServer.allOrgs](AzurePostgresFlexibleServer.md)
-- [AzureSqlDatabaseDb.allOrgs](AzureSqlDatabaseDb.md)
-- *…and 300 more*
+- [AzureNativeResourceGroupBase.allOrgs](AzureNativeResourceGroupBase.md)
+- *…and 335 more*

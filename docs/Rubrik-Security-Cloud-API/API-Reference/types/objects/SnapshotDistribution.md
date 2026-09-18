@@ -34,6 +34,9 @@ A generic snapshot type.
 - [AwsNativeRegionHierarchyObject.snapshotDistribution](AwsNativeRegionHierarchyObject.md)
 - [AwsNativeS3Bucket.snapshotDistribution](AwsNativeS3Bucket.md)
 - [AzureAdDirectory.snapshotDistribution](AzureAdDirectory.md)
+- [AzureCosmosNosqlAccount.snapshotDistribution](AzureCosmosNosqlAccount.md)
+- [AzureCosmosNosqlContainer.snapshotDistribution](AzureCosmosNosqlContainer.md)
+- [AzureCosmosNosqlDatabase.snapshotDistribution](AzureCosmosNosqlDatabase.md)
 - [AzureDevOpsOrganization.snapshotDistribution](AzureDevOpsOrganization.md)
 - [AzureDevOpsProject.snapshotDistribution](AzureDevOpsProject.md)
 - [AzureDevOpsRepository.snapshotDistribution](AzureDevOpsRepository.md)
@@ -41,9 +44,6 @@ A generic snapshot type.
 - [AzureNativeManagedDisk.snapshotDistribution](AzureNativeManagedDisk.md)
 - [AzureNativeRegionManagedObject.snapshotDistribution](AzureNativeRegionManagedObject.md)
 - [AzureNativeResourceGroup.snapshotDistribution](AzureNativeResourceGroup.md)
+- [AzureNativeResourceGroupBase.snapshotDistribution](AzureNativeResourceGroupBase.md)
 - [AzureNativeSubscription.snapshotDistribution](AzureNativeSubscription.md)
-- [AzureNativeVirtualMachine.snapshotDistribution](AzureNativeVirtualMachine.md)
-- [AzurePostgresFlexibleServer.snapshotDistribution](AzurePostgresFlexibleServer.md)
-- [AzureSqlDatabaseDb.snapshotDistribution](AzureSqlDatabaseDb.md)
-- [AzureSqlDatabaseServer.snapshotDistribution](AzureSqlDatabaseServer.md)
-- *…and 294 more*
+- *…and 329 more*

@@ -37,6 +37,7 @@ Update previewer cluster configuration and return the updated Rubrik cluster.
         isTunnelEnabled
         lastConnectionTime
         licensedProducts
+        managementType
         name
         passesConnectivityCheck
         pauseStatus

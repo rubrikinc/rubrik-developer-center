@@ -58,7 +58,7 @@ Details of TPR requests.
                 "orgName": "example-string",
                 "requestId": "00000000-0000-0000-0000-000000000000",
                 "status": "APPROVED",
-                "triggeredTprRule": "ASSIGN_TPR_ROLE",
+                "triggeredTprRule": "ASSIGN_COPY_SCHEDULE",
                 "updatedAt": "2024-01-01T00:00:00.000Z"
               }
             ]

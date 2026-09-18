@@ -2,7 +2,7 @@
 
 PostgreSQL database cluster details object.
 
-**Implements:** [KosmosDiscoverableEntityType](../interfaces/KosmosDiscoverableEntityType.md), [KosmosParentHierarchyObjectType](../interfaces/KosmosParentHierarchyObjectType.md), [KosmosSnappableHierarchyObjectType](../interfaces/KosmosSnappableHierarchyObjectType.md), [KosmosHierarchyObjectType](../interfaces/KosmosHierarchyObjectType.md), [CdmHierarchyObject](../interfaces/CdmHierarchyObject.md), [HierarchyObject](../interfaces/HierarchyObject.md)
+**Implements:** [KosmosDiscoverableEntityType](../interfaces/KosmosDiscoverableEntityType.md), [KosmosParentHierarchyObjectType](../interfaces/KosmosParentHierarchyObjectType.md), [KosmosHierarchyObjectType](../interfaces/KosmosHierarchyObjectType.md), [CdmHierarchyObject](../interfaces/CdmHierarchyObject.md), [HierarchyObject](../interfaces/HierarchyObject.md), [KosmosSnappableHierarchyObjectType](../interfaces/KosmosSnappableHierarchyObjectType.md), [CdmHierarchySnappableNew](../interfaces/CdmHierarchySnappableNew.md), [HierarchySnappable](../interfaces/HierarchySnappable.md)
 
 ## Fields
 

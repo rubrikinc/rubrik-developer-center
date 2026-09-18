@@ -48,5 +48,6 @@ OpenStack Project logical child.
 
 ## Implemented By
 
+- [OpenstackImage](../objects/OpenstackImage.md)
 - [OpenstackTag](../objects/OpenstackTag.md)
 - [OpenstackVirtualMachine](../objects/OpenstackVirtualMachine.md)

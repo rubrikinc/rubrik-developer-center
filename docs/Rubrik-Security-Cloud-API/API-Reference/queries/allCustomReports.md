@@ -21,6 +21,7 @@ Retrieve reports created by users.
       allCustomReports(input: $input) {
         createdAt
         createdBy
+        description
         id
         name
         reportCategory
@@ -50,10 +51,10 @@ Retrieve reports created by users.
           {
             "createdAt": "2024-01-01T00:00:00.000Z",
             "createdBy": "example-string",
+            "description": "example-string",
             "id": 0,
             "name": "example-string",
             "reportCategory": "AUDIT_AND_COMPLIANCE",
-            "reportViewType": "ACCOUNT_LIFECYCLE_REPORT",
             "reportFilters": [
               {
                 "name": "example-string",

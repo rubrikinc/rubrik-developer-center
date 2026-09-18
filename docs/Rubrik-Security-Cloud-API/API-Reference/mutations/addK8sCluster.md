@@ -19,13 +19,32 @@ Add a Kubernetes cluster  Supported in v9.0+ Adds a Kubernetes cluster to the Ru
     ```graphql
     mutation AddK8sCluster($input: AddK8sClusterInput!) {
       addK8sCluster(input: $input) {
+        backupSubnetCidr
+        dataPathTransport
         distribution
+        effectiveSlaId
+        effectiveSlaSource
+        effectiveSlaType
+        helmStatus
+        helmVersion
         id
+        isDbProtectionEnabled
+        k8SVersion
+        kubevirtVersion
+        kuprServerProxyPodMultusIp
         lastRefreshTime
+        loadbalancerIpDns
         maxConcurrentAgents
         maxPvcsPerAgent
+        nadName
+        nadNamespace
         name
+        namespaceCount
+        numLabels
+        numProtectionSets
+        numVms
         onboardingType
+        port
         pvcGroupingStrategy
         region
         registry
@@ -54,22 +73,23 @@ Add a Kubernetes cluster  Supported in v9.0+ Adds a Kubernetes cluster to the Ru
     {
       "data": {
         "addK8sCluster": {
+          "backupSubnetCidr": "example-string",
+          "dataPathTransport": "example-string",
           "distribution": "example-string",
-          "id": "example-string",
-          "lastRefreshTime": "2024-01-01T00:00:00.000Z",
-          "maxConcurrentAgents": 0,
-          "maxPvcsPerAgent": 0,
-          "name": "example-string",
+          "effectiveSlaId": "example-string",
+          "effectiveSlaSource": "example-string",
+          "effectiveSlaType": "example-string",
           "crdServiceAccountInfo": {
             "accessToken": "example-string",
             "clientId": "example-string",
             "isK8SError": true,
             "serviceAccountName": "example-string"
           },
-          "kuprServerProxyConfig": {
-            "cert": "example-string",
-            "ipAddress": "example-string",
-            "port": 0
+          "dbServiceAccountInfo": {
+            "accessToken": "example-string",
+            "clientId": "example-string",
+            "isK8SError": true,
+            "serviceAccountName": "example-string"
           }
         }
       }

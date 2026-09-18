@@ -8,11 +8,13 @@ List of sites in the Microsoft 365 organization.
 |----------|------|-------------|
 | first | Int | Returns the first n elements from the list. |
 | after | String | Returns the elements in the list that occur after the specified cursor. |
+| last | Int | Returns the last n elements from the list. |
+| before | String | Returns the elements in the list that occur before the specified cursor. |
 | sortBy | [HierarchySortByField](../types/enums/HierarchySortByField.md) | Sort hierarchy objects according to the hierarchy field. |
 | sortOrder | [SortOrder](../types/enums/SortOrder.md) | Sorts the order of results. |
 | filter | [[Filter](../types/inputs/Filter.md)!] | Hierarchy object filter. |
 | o365OrgId *(required)* | [UUID](../types/scalars/UUID.md)! | The FID for the O365 organization. |
-| excludeChildSites | Boolean | When excludeChildSites is set to true, nested child sites are excluded from the results. If not specified, nested child sites are included. |
+| excludeChildSites | Boolean | When true, excludes nested child sites. |
 | protectionType *(required)* | [ProtectionType](../types/enums/ProtectionType.md)! | Protection type for Microsoft 365 protection. |
 
 ## Returns

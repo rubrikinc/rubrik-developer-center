@@ -28,6 +28,7 @@ Retrieves reports created by users with pagination support.
         nodes {
           createdAt
           createdBy
+          description
           id
           name
           reportCategory
@@ -62,10 +63,10 @@ Retrieves reports created by users with pagination support.
               {
                 "createdAt": "2024-01-01T00:00:00.000Z",
                 "createdBy": "example-string",
+                "description": "example-string",
                 "id": 0,
                 "name": "example-string",
-                "reportCategory": "AUDIT_AND_COMPLIANCE",
-                "reportViewType": "ACCOUNT_LIFECYCLE_REPORT"
+                "reportCategory": "AUDIT_AND_COMPLIANCE"
               }
             ]
           ],

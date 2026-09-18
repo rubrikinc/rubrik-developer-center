@@ -36,6 +36,7 @@ List of GCP Cloud SQL instances.
           instanceId
           instanceTier
           isExocomputeConfigured
+          isProtectionOnboarded
           isRelic
           kmsKey
           name

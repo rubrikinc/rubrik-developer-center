@@ -48,4 +48,5 @@ OpenStack Availability Zone physical child.
 
 ## Implemented By
 
+- [OpenstackHost](../objects/OpenstackHost.md)
 - [OpenstackVirtualMachine](../objects/OpenstackVirtualMachine.md)

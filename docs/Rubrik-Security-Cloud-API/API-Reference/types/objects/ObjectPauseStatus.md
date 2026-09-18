@@ -32,6 +32,9 @@ Represents pause status of an object.
 - [AwsNativeRegionHierarchyObject.objectPauseStatus](AwsNativeRegionHierarchyObject.md)
 - [AwsNativeS3Bucket.objectPauseStatus](AwsNativeS3Bucket.md)
 - [AzureAdDirectory.objectPauseStatus](AzureAdDirectory.md)
+- [AzureCosmosNosqlAccount.objectPauseStatus](AzureCosmosNosqlAccount.md)
+- [AzureCosmosNosqlContainer.objectPauseStatus](AzureCosmosNosqlContainer.md)
+- [AzureCosmosNosqlDatabase.objectPauseStatus](AzureCosmosNosqlDatabase.md)
 - [AzureDevOpsOrganization.objectPauseStatus](AzureDevOpsOrganization.md)
 - [AzureDevOpsProject.objectPauseStatus](AzureDevOpsProject.md)
 - [AzureDevOpsRepository.objectPauseStatus](AzureDevOpsRepository.md)
@@ -39,9 +42,6 @@ Represents pause status of an object.
 - [AzureNativeManagedDisk.objectPauseStatus](AzureNativeManagedDisk.md)
 - [AzureNativeRegionManagedObject.objectPauseStatus](AzureNativeRegionManagedObject.md)
 - [AzureNativeResourceGroup.objectPauseStatus](AzureNativeResourceGroup.md)
+- [AzureNativeResourceGroupBase.objectPauseStatus](AzureNativeResourceGroupBase.md)
 - [AzureNativeSubscription.objectPauseStatus](AzureNativeSubscription.md)
-- [AzureNativeVirtualMachine.objectPauseStatus](AzureNativeVirtualMachine.md)
-- [AzurePostgresFlexibleServer.objectPauseStatus](AzurePostgresFlexibleServer.md)
-- [AzureSqlDatabaseDb.objectPauseStatus](AzureSqlDatabaseDb.md)
-- [AzureSqlDatabaseServer.objectPauseStatus](AzureSqlDatabaseServer.md)
-- *…and 293 more*
+- *…and 328 more*

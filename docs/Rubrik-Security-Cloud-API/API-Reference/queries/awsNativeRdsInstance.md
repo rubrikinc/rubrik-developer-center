@@ -31,6 +31,7 @@ Refers to AWS Relational Database Service (RDS) represented by a specific ID. Fo
         dbiResourceId
         id
         isExocomputeConfigured
+        isInfrastructureAlertsEnabled
         isMultiAz
         isProtectable
         isRelic

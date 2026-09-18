@@ -16,4 +16,5 @@ Supported in v9.2+ The details of the RSC service account.
 **Referenced by**
 
 - [K8sClusterSummary.crdServiceAccountInfo](K8sClusterSummary.md)
+- [K8sClusterSummary.dbServiceAccountInfo](K8sClusterSummary.md)
 - [K8sClusterSummary.onboardingServiceAccountInfo](K8sClusterSummary.md)

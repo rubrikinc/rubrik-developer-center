@@ -25,6 +25,7 @@ Customer-managed lifecycle rules detected on datacenter archival locations that 
       harmfulLifecyclePolicies(first: 10) {
         nodes {
           bucketName
+          cloudAccountName
           defaultStorageClass
           locationId
           locationName
@@ -56,11 +57,11 @@ Customer-managed lifecycle rules detected on datacenter archival locations that 
             [
               {
                 "bucketName": "example-string",
+                "cloudAccountName": "example-string",
                 "defaultStorageClass": "example-string",
                 "locationId": "00000000-0000-0000-0000-000000000000",
                 "locationName": "example-string",
-                "locationType": "AWS",
-                "region": "example-string"
+                "locationType": "AWS"
               }
             ]
           ],

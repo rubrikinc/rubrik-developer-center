@@ -111,4 +111,4 @@ A snapshot of a workload managed by a Rubrik cluster.
 - [FusionComputeVirtualMachine.newestIndexedSnapshot](FusionComputeVirtualMachine.md)
 - [FusionComputeVirtualMachine.newestReplicatedSnapshot](FusionComputeVirtualMachine.md)
 - [FusionComputeVirtualMachine.newestSnapshot](FusionComputeVirtualMachine.md)
-- *…and 144 more*
+- *…and 159 more*

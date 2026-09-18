@@ -48,4 +48,7 @@ OpenStack Region physical child.
 
 ## Implemented By
 
+- [OpenstackAvailabilityZone](../objects/OpenstackAvailabilityZone.md)
+- [OpenstackHost](../objects/OpenstackHost.md)
+- [OpenstackImage](../objects/OpenstackImage.md)
 - [OpenstackVirtualMachine](../objects/OpenstackVirtualMachine.md)

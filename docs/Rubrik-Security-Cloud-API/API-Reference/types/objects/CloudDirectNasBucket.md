@@ -60,6 +60,8 @@ NAS Cloud Direct bucket.
 |-------|----------|------|-------------|
 | childBuckets | first | Int | Returns the first n elements from the list. |
 | childBuckets | after | String | Returns the elements in the list that occur after the specified cursor. |
+| childBuckets | last | Int | Returns the last n elements from the list. |
+| childBuckets | before | String | Returns the elements in the list that occur before the specified cursor. |
 | childBuckets | sortBy | [HierarchySortByField](../enums/HierarchySortByField.md) | Sort hierarchy objects according to the hierarchy field. |
 | childBuckets | sortOrder | [SortOrder](../enums/SortOrder.md) | Sorts the order of results. |
 | cloudDirectSnapshotGroupBySummary | first | Int | Returns the first n elements from the list. |

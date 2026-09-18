@@ -2,7 +2,7 @@
 
 An Azure Native Managed Disk that refers to the block storage designed to be used with Azure Virtual Machines. Some examples are: ultra disks, premium solid-state drives (SSD), standard SSDs, and standard hard disk drives (HDD). For more information, see https://docs.microsoft.com/en-us/azure/virtual-machines/managed-disks-overview.
 
-**Implements:** [PolarisHierarchyObject](../interfaces/PolarisHierarchyObject.md), [PolarisHierarchySnappable](../interfaces/PolarisHierarchySnappable.md), [HierarchySnappable](../interfaces/HierarchySnappable.md), [HierarchyObject](../interfaces/HierarchyObject.md), [AzureNativeHierarchyObjectType](../interfaces/AzureNativeHierarchyObjectType.md)
+**Implements:** [PolarisHierarchyObject](../interfaces/PolarisHierarchyObject.md), [HierarchyObject](../interfaces/HierarchyObject.md), [PolarisHierarchySnappable](../interfaces/PolarisHierarchySnappable.md), [HierarchySnappable](../interfaces/HierarchySnappable.md), [AzureNativeHierarchyObjectType](../interfaces/AzureNativeHierarchyObjectType.md)
 
 ## Fields
 
@@ -16,9 +16,9 @@ An Azure Native Managed Disk that refers to the block storage designed to be use
 | authorizedOperations | [[PolarisSnappableAuthorizedOperationsEnum](../enums/PolarisSnappableAuthorizedOperationsEnum.md)!]! | The authorized operations on the object. |
 | availabilityZone | String! | Availability Zone associated with the Managed Disk. |
 | azureNativeResourceGroupAndSubscriptionDetails | [AzureNativeResourceGroupAndSubscriptionDetails](AzureNativeResourceGroupAndSubscriptionDetails.md) | Azure native resource group and subscription details. |
-| azureResourceGroup | [AzureNativeResourceGroup](AzureNativeResourceGroup.md) | Resource Group of the Azure Virtual Managed Disk. |
+| azureResourceGroup | [AzureNativeResourceGroup](AzureNativeResourceGroup.md) | Resource Group of the Azure object. |
 | azureResourceGroupDetails | [AzureResourceGroupDetails](AzureResourceGroupDetails.md)! | Azure native resource group and subscription details. |
-| cloudNativeId | String! | Native ID of the Managed Disk. |
+| cloudNativeId | String! | Azure Native ID of the object. |
 | configuredSlaDomain | [SlaDomain](../interfaces/SlaDomain.md)! | SLA Domain configured for the hierarchy object. |
 | diskIopsReadWrite | [Long](../scalars/Long.md)! | Number of Input/Output operations Per Second (IOPS) allowed for the Managed Disk. |
 | diskMbpsReadWrite | [Long](../scalars/Long.md)! | Bandwidth allowed for the Managed Disk, in millions of bytes per second (MBps). |
@@ -34,7 +34,7 @@ An Azure Native Managed Disk that refers to the block storage designed to be use
 | isExocomputeConfigured | Boolean! | Specifies whether exocompute is configured for the region in which the Managed Disk exists or not. When the value is true, exocompute can be used to perform tasks like file indexing. |
 | isFileIndexingEnabled | Boolean! | Specifies whether file indexing is enabled for this managed disk or not. When enabled, Rubrik scans the file structure within the managed disk in a protected environment, where only the metadata such as folder structure, file names, and file sizes is accessible to Rubrik. |
 | isProtectable | Boolean! | Specifies whether the managed disk is protectable. When the value is true, the managed disk can be protected by assigning sla. |
-| isRelic | Boolean! | Specifies whether the Managed Disk is a relic. When the value is true, the Managed Disk is a relic. A Managed Disk is a relic when it is unprotected or deleted, but the previously taken snapshots of the Managed Disk continue to exist within the Rubrik ecosystem. |
+| isRelic | Boolean! | Whether the object is a relic. |
 | logicalPath | [[PathNode](PathNode.md)!]! | Sequential list of the logical ancestors of this object. |
 | name | String! | Name of the hierarchy object. |
 | nativeName | String! | Azure Native name of the object. |
@@ -48,8 +48,8 @@ An Azure Native Managed Disk that refers to the block storage designed to be use
 | onDemandSnapshotCount | Int! | The number of on-demand snapshots. |
 | osType | [AzureNativeVmOsType](../enums/AzureNativeVmOsType.md)! | Type of the Operating System (OS) installed on the Managed Disk. |
 | physicalPath | [[PathNode](PathNode.md)!]! | Sequential list of the physical ancestors of this object. |
-| region | [AzureNativeRegion](../enums/AzureNativeRegion.md)! | Azure region where the Managed Disk is located. |
-| resourceGroup | [AzureNativeResourceGroup](AzureNativeResourceGroup.md)! | Resource Group of the Azure Native Managed Disk. |
+| region | [AzureNativeRegion](../enums/AzureNativeRegion.md)! | The Azure region to which the object belongs. |
+| resourceGroup | [AzureNativeResourceGroup](AzureNativeResourceGroup.md)! | Resource Group of the Azure object. |
 | rscNativeObjectPendingSla | [CompactSlaDomain](CompactSlaDomain.md) | SLA Domain assignment which is pending on the Rubrik Security Cloud native objects. |
 | rscPendingObjectPauseAssignment | [PendingObjectPauseAssignmentStatus](../enums/PendingObjectPauseAssignmentStatus.md) | Object pause pending assignment details for RSC objects. |
 | securityMetadata | [SecurityMetadata](SecurityMetadata.md) | Security posture metadata. |
@@ -57,9 +57,9 @@ An Azure Native Managed Disk that refers to the block storage designed to be use
 | slaPauseStatus | Boolean! | Pause status of the effective SLA Domain of the hierarchy object. |
 | snapshotConnection | [PolarisSnapshotConnection](PolarisSnapshotConnection.md) | The list of snapshots taken for this workload. |
 | snapshotDistribution | [SnapshotDistribution](SnapshotDistribution.md)! | Distribution of the snapshots of the hierarchy object. |
-| snapshotGroupByConnection | [PolarisSnapshotGroupByConnection](PolarisSnapshotGroupByConnection.md) | GroupBy connection for the snapshots of this workload. |
-| snapshotGroupByNewConnection | [PolarisSnapshotGroupByNewConnection](PolarisSnapshotGroupByNewConnection.md) | GroupBy connection for the snapshots of this workload. |
-| tags | [[AzureTag](AzureTag.md)!]! | List of tags associated with the Managed Disk. |
+| snapshotGroupByConnection | [PolarisSnapshotGroupByConnection](PolarisSnapshotGroupByConnection.md) | Group-by connection for the snapshots of this workload. |
+| snapshotGroupByNewConnection | [PolarisSnapshotGroupByNewConnection](PolarisSnapshotGroupByNewConnection.md) | Group-by connection for the snapshots of this workload. |
+| tags | [[AzureTag](AzureTag.md)!]! | List of tags that are assigned to the object. |
 | workloadSnapshotConnection | [GenericSnapshotConnection](GenericSnapshotConnection.md) | The list of snapshots taken for this workload. |
 
 ## Field Arguments

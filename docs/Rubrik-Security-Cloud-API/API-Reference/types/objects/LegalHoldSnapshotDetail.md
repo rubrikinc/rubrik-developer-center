@@ -6,8 +6,9 @@ LegalHoldSnapshotDetails.
 
 | Field | Type | Description |
 |-------|------|-------------|
-| customizations | [[SnapshotCustomization](../enums/SnapshotCustomization.md)!]! |  |
-| id | String! | ID. |
+| customizations | [[SnapshotCustomization](../enums/SnapshotCustomization.md)!]! | The customizations applied to the snapshot. |
+| id | String! | ID. The identifier is the for-ever snapshot id. |
+| legalHoldInfo | [LegalHoldInfo](LegalHoldInfo.md) | Legal hold configuration for the snapshot. Populated only for RSC native snapshots. |
 | legalHoldTime | [DateTime](../scalars/DateTime.md) | Legal hold time. |
 | snapshotRetentionInfo | [CdmSnapshotRetentionInfo](CdmSnapshotRetentionInfo.md) | Provides snapshot details for each location. |
 | snapshotTime | [DateTime](../scalars/DateTime.md) | Snapshot time. |

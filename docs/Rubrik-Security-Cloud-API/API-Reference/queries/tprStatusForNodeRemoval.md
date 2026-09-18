@@ -45,7 +45,7 @@ Check and update TPR request for node removal or replacement.
         "tprStatusForNodeRemoval": {
           "status": "APPROVED",
           "tprRequestId": "example-string",
-          "tprRule": "ASSIGN_TPR_ROLE"
+          "tprRule": "ASSIGN_COPY_SCHEDULE"
         }
       }
     }

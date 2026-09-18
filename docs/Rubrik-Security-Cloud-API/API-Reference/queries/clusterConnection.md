@@ -44,6 +44,7 @@ List of the available cluster objects.
           isTunnelEnabled
           lastConnectionTime
           licensedProducts
+          managementType
           name
           passesConnectivityCheck
           pauseStatus

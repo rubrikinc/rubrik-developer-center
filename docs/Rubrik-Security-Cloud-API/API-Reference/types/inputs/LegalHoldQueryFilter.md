@@ -14,5 +14,5 @@ Legal Hold query filter.
 | filterField | [LegalHoldQueryFilterField](../enums/LegalHoldQueryFilterField.md) | Filters for legal hold query. |
 | snappableName | String | Workload name. |
 | snappableTypes | [[ManagedObjectType](../enums/ManagedObjectType.md)!] | Workload types. |
-| snapshotCustomizations | [[SnapshotCustomization](../enums/SnapshotCustomization.md)!] |  |
+| snapshotCustomizations | [[SnapshotCustomization](../enums/SnapshotCustomization.md)!] | Snapshot customizations to filter by. |
 | snapshotTypes | [[SnapshotTypeEnum](../enums/SnapshotTypeEnum.md)!] | Snapshot types. |

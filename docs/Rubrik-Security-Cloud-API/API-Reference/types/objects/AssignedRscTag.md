@@ -37,6 +37,9 @@ Details of an RSC tag.
 - [AwsNativeRegionHierarchyObject.allTags](AwsNativeRegionHierarchyObject.md)
 - [AwsNativeS3Bucket.allTags](AwsNativeS3Bucket.md)
 - [AzureAdDirectory.allTags](AzureAdDirectory.md)
+- [AzureCosmosNosqlAccount.allTags](AzureCosmosNosqlAccount.md)
+- [AzureCosmosNosqlContainer.allTags](AzureCosmosNosqlContainer.md)
+- [AzureCosmosNosqlDatabase.allTags](AzureCosmosNosqlDatabase.md)
 - [AzureDevOpsOrganization.allTags](AzureDevOpsOrganization.md)
 - [AzureDevOpsProject.allTags](AzureDevOpsProject.md)
 - [AzureDevOpsRepository.allTags](AzureDevOpsRepository.md)
@@ -44,9 +47,6 @@ Details of an RSC tag.
 - [AzureNativeManagedDisk.allTags](AzureNativeManagedDisk.md)
 - [AzureNativeRegionManagedObject.allTags](AzureNativeRegionManagedObject.md)
 - [AzureNativeResourceGroup.allTags](AzureNativeResourceGroup.md)
+- [AzureNativeResourceGroupBase.allTags](AzureNativeResourceGroupBase.md)
 - [AzureNativeSubscription.allTags](AzureNativeSubscription.md)
-- [AzureNativeVirtualMachine.allTags](AzureNativeVirtualMachine.md)
-- [AzurePostgresFlexibleServer.allTags](AzurePostgresFlexibleServer.md)
-- [AzureSqlDatabaseDb.allTags](AzureSqlDatabaseDb.md)
-- [AzureSqlDatabaseServer.allTags](AzureSqlDatabaseServer.md)
-- *…and 295 more*
+- *…and 330 more*
