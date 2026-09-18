@@ -1,87 +1,702 @@
-[data-md-color-scheme="slate"] {
-    background-color: transparent;
-    background: radial-gradient(circle at 0% 0%,rgb(7,24,54),rgba(7,24,54,0) 72%) fixed,radial-gradient(circle at 50% 20%,rgb(0,91,193),rgba(0,91,193,0) 40%) fixed,radial-gradient(circle at 85% -5%,rgb(96,50,210),rgba(96,50,210,0) 42%) fixed,radial-gradient(circle at 50% 50%,rgb(0,106,192),rgba(0,106,192,0) 60%) fixed,radial-gradient(circle at 10% 80%,rgb(0,125,183),rgba(0,125,183,0) 50%) fixed,radial-gradient(circle at 88% 110%,rgb(1,136,160),rgb(0,63,119) 68%) fixed beige;
-    --md-primary-fg-color--dark: hsla(#{hex2hsl($clr-indigo-700)}, 1);
-    --md-primary-fg-color: #00000049; /* header color */
-    /* --md-primary-bg-color: transparent; */
-    /* --md-accent-bg-color: transparent; */
-    /* --md-primary-bg-color--light: transparent; */
-    /* --md-primary-fg-color--lighter: transparent; */
-    /* --md-default-fg-color: transparent; */
-    --md-default-bg-color: rgba(95, 50, 210, 0.9); /* scrollbar color */
-    --md-admonition-bg-color: transparent;
-    --md-typeset-a-color: #0056b3;
-}
-[data-md-color-scheme="default"] {
-    --md-primary-fg-color: #15292b;
-    --md-typeset-a-color: #0056b3;
-    .md-header {
-        background: url('../assets/bgr_right.png') right no-repeat #15292b;
-    }
-    .md-tabs {
-        background: url('../assets/bgr_right.png') right no-repeat #15292b;
-    }
-}
+/* ==========================================================================
+   Rubrik Developer Center - Aura design system theme
+   --------------------------------------------------------------------------
+   Layer 1  :root            Aura global color ramps (raw palette)
+   Layer 2  [data-md-color-scheme]  Aura semantic tokens per theme
+                             "default" = Aura Bright, "slate" = Aura Dark
+   Layer 3  mkdocs Material  --md-* variables mapped onto Aura semantics
+   Layer 4  components       site-specific pieces (status pills, feedback)
+
+   Source of truth: sdmain polaris/src/rubrik/spark-ui/packages/aura-ui
+     src/Color/GlobalColors.constants.tsx   raw ramps
+     src/Themes/BrightTheme.tsx             light semantic map
+     src/Themes/DarkTheme.tsx               dark semantic map
+     src/Styles/Font.tsx                    Open Sans / Fira Code
+   ========================================================================== */
+
+/* ==========================================================================
+   Layer 1 - Aura global ramps
+   ========================================================================== */
 
 :root {
-    --md-status--beta: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6 22a3 3 0 0 1-3-3c0-.6.18-1.16.5-1.63L9 7.81V6a1 1 0 0 1-1-1V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v1a1 1 0 0 1-1 1v1.81l5.5 9.56c.32.47.5 1.03.5 1.63a3 3 0 0 1-3 3zm-1-3a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1c0-.21-.07-.41-.18-.57l-2.29-3.96L14 17l-5.07-5.07-3.75 6.5c-.11.16-.18.36-.18.57m8-9a1 1 0 0 0-1 1 1 1 0 0 0 1 1 1 1 0 0 0 1-1 1 1 0 0 0-1-1"/></svg>');
+  --aura-white: #ffffff;
+  --aura-black: #000000;
+
+  --aura-grey-0: #fafcfb;
+  --aura-grey-1: #f6f8f7;
+  --aura-grey-2: #e6eae9;
+  --aura-grey-3: #d9dddc;
+  --aura-grey-4: #c6cbcb;
+  --aura-grey-5: #a4a9a8;
+  --aura-grey-6: #6c7576;
+  --aura-grey-7: #273637;
+  --aura-grey-8: #16292b;
+  --aura-grey-9: #001f23;
+
+  --aura-teal-1: #c8f9f4;
+  --aura-teal-2: #95eee5;
+  --aura-teal-3: #4dd2d2;
+  --aura-teal-4: #09a8b8;
+  --aura-teal-5: #007d93;
+  --aura-teal-6: #006777;
+  --aura-teal-7: #004551;
+
+  --aura-green-3: #21ddaa;
+  --aura-green-4: #00b287;
+  --aura-green-6: #02795b;
+
+  --aura-blue-1: #69e0ff;
+  --aura-blue-2: #2fcaff;
+  --aura-blue-3: #1da1dc;
+  --aura-blue-4: #0086c0;
+  --aura-blue-5: #00588c;
+  --aura-blue-6: #093565;
+  --aura-blue-7: #0a2e57;
+  --aura-blue-8: #0c2448;
+
+  --aura-deep-blue-1: #081d3f;
+  --aura-deep-blue-3: #03142e;
+  --aura-deep-blue-4: #020f24;
+
+  --aura-indigo-1: #b5d9ff;
+  --aura-indigo-3: #7aa6ff;
+  --aura-indigo-4: #537eff;
+  --aura-indigo-6: #00429d;
+
+  --aura-periwinkle-3: #a1a1ff;
+
+  --aura-violet-4: #9b79eb;
+  --aura-violet-6: #6417ba;
+
+  --aura-pink-3: #e67dd8;
+  --aura-pink-5: #b739a5;
+
+  --aura-red-3: #ff8183;
+  --aura-red-5: #f63747;
+  --aura-red-6: #cb0c1b;
+
+  --aura-orange-4: #ff721a;
+
+  --aura-amber-3: #ffbe49;
+  --aura-amber-6: #e36b00;
+
+  --aura-yellow-4: #ffd633;
+
+  --aura-lime-2: #ecfcd2;
+  --aura-olive-5: #8cd576;
+  --aura-mint-7: #41872d;
+
+  /* Type stack. Aura itself specifies Open Sans (Styles/Font.tsx +
+     spark-ui/public/fonts/fonts.css); we deviate to Source Sans 3, which
+     handles both long-form guide prose and identifier-heavy reference tables
+     better. Keep in sync with theme.font.text in mkdocs.yml - Material emits
+     the Google Fonts link from there, so changing one without the other
+     styles for a font that never loads. */
+  --app-font: "Source Sans 3", "Open Sans", -apple-system, BlinkMacSystemFont, sans-serif;
+  /* Fira Code, matching Aura's --monospace-font. Its programming ligatures are
+     switched off for documentation - see the code block rules below. */
+  --monospace-font: "Fira Code", "SFMono-Regular", Consolas, monospace;
+
+  /* Display face: Open Sans, which is what Aura actually specifies. Used for
+     UI chrome (header, tabs, nav, search, footer) and for content headings,
+     so the site keeps a visible thread of RSC's typography on the elements
+     people notice, while body prose stays on --app-font for reading comfort.
+     Loaded via overrides/main.html, not theme.font. */
+  --display-font: "Open Sans", var(--app-font);
 }
 
-.md-status--beta:after {
-    -webkit-mask-image: var(--md-status--beta);
-    mask-image: var(--md-status--beta);
+/* ==========================================================================
+   Layer 2 + 3 - Aura Bright  ->  Material "default" scheme
+   ========================================================================== */
+
+[data-md-color-scheme="default"] {
+  /* Aura semantics */
+  --aura-surface-primary: var(--aura-white);
+  --aura-text-strong: var(--aura-grey-8);
+  --aura-text-moderate: var(--aura-grey-7);
+  --aura-text-weak: rgba(22, 41, 43, 0.8);
+  /* Teal rather than Aura's blue links. Hover goes DARKER on light backgrounds
+     (teal6), because the usual lighter-on-hover would drop below the 4.5:1
+     contrast floor for body-size text. */
+  --aura-link-default: var(--aura-teal-5);
+  --aura-link-hover: var(--aura-teal-6);
+  --aura-border-weak: rgba(9, 168, 184, 0.24);
+  --aura-border-moderate: rgba(39, 54, 55, 0.16);
+
+  /* Aura surfaceBase - fixed radial wash, BrightTheme.tsx */
+  --aura-surface-base:
+    radial-gradient(circle at 0% 0%, rgb(238, 248, 247), rgba(238, 248, 247, 0) 85%),
+    radial-gradient(circle at 50% 15%, rgb(238, 255, 225), rgba(238, 255, 255, 0) 80%),
+    radial-gradient(circle at 90% 0%, rgba(231, 242, 238, 0.9), rgba(231, 242, 238, 0) 50%),
+    radial-gradient(circle at 0% 100%, rgb(210, 238, 238), rgba(210, 238, 238, 0) 70%),
+    radial-gradient(circle at 20% 90%, rgb(249, 252, 245), rgba(249, 252, 245, 0) 30%),
+    radial-gradient(circle at 80% 80%, rgb(200, 234, 243), rgb(230, 241, 237) 150%);
+  --aura-surface-base-fallback: #eef8f7;
+
+  /* Material mapping */
+  --md-primary-fg-color: var(--aura-grey-9);
+  --md-primary-fg-color--light: var(--aura-teal-6);
+  --md-primary-fg-color--dark: var(--aura-grey-9);
+  --md-primary-bg-color: var(--aura-white);
+  --md-primary-bg-color--light: rgba(255, 255, 255, 0.7);
+
+  --md-accent-fg-color: var(--aura-teal-5);
+  --md-accent-fg-color--transparent: rgba(9, 168, 184, 0.1);
+  --md-accent-bg-color: var(--aura-white);
+
+  --md-default-bg-color: var(--aura-surface-base-fallback);
+  --md-default-fg-color: var(--aura-text-strong);
+  --md-default-fg-color--light: var(--aura-grey-6);
+  --md-default-fg-color--lighter: var(--aura-grey-5);
+  --md-default-fg-color--lightest: var(--aura-grey-3);
+
+  --md-typeset-color: var(--aura-text-moderate);
+  --md-typeset-a-color: var(--aura-link-default);
+  --md-typeset-del-color: rgba(246, 55, 71, 0.15);
+  --md-typeset-ins-color: rgba(33, 221, 170, 0.18);
+  --md-typeset-mark-color: rgba(255, 214, 51, 0.4);
+
+  --md-code-bg-color: rgba(230, 234, 233, 0.6);
+  --md-code-fg-color: var(--aura-grey-8);
+  --md-code-hl-color: rgba(9, 168, 184, 0.16);
+
+  --md-code-hl-keyword-color: var(--aura-violet-6);
+  --md-code-hl-function-color: var(--aura-indigo-6);
+  --md-code-hl-string-color: var(--aura-green-6);
+  --md-code-hl-constant-color: var(--aura-teal-6);
+  --md-code-hl-number-color: var(--aura-teal-6);
+  --md-code-hl-special-color: var(--aura-pink-5);
+  --md-code-hl-operator-color: var(--aura-grey-6);
+  --md-code-hl-punctuation-color: var(--aura-grey-6);
+  --md-code-hl-comment-color: var(--aura-grey-6);
+  --md-code-hl-name-color: var(--aura-grey-8);
+  --md-code-hl-variable-color: var(--aura-mint-7);
+  --md-code-hl-generic-color: var(--aura-grey-6);
+
+  --md-footer-bg-color: var(--aura-grey-9);
+  --md-footer-bg-color--dark: var(--aura-grey-8);
+  --md-footer-fg-color: var(--aura-white);
+  --md-footer-fg-color--light: rgba(255, 255, 255, 0.7);
+  --md-footer-fg-color--lighter: rgba(255, 255, 255, 0.45);
+
+  --md-shadow-z1: 0 1px 2px rgba(0, 31, 35, 0.06), 0 0 1px rgba(0, 31, 35, 0.08);
+  --md-shadow-z2: 0 2px 8px rgba(0, 31, 35, 0.08), 0 0 1px rgba(0, 31, 35, 0.1);
+  --md-shadow-z3: 0 6px 20px rgba(0, 31, 35, 0.12), 0 0 1px rgba(0, 31, 35, 0.1);
+
+  /* Content card - Aura puts body content on surfacePrimary, not the wash */
+  --aura-content-bg: rgba(255, 255, 255, 0.72);
+  --aura-content-border: rgba(39, 54, 55, 0.08);
+}
+
+/* ==========================================================================
+   Layer 2 + 3 - Aura Dark  ->  Material "slate" scheme
+   ========================================================================== */
+
+[data-md-color-scheme="slate"] {
+  /* Aura semantics */
+  --aura-surface-primary: var(--aura-blue-6);
+  --aura-surface-secondary: var(--aura-blue-7);
+  --aura-surface-tertiary: var(--aura-blue-8);
+  --aura-text-strong: var(--aura-white);
+  --aura-text-moderate: rgba(255, 255, 255, 0.8);
+  --aura-text-weak: var(--aura-grey-4);
+  /* Teal links; on dark, hover goes lighter for the same contrast reason. */
+  --aura-link-default: var(--aura-teal-3);
+  --aura-link-hover: var(--aura-teal-2);
+  --aura-border-weak: rgba(9, 168, 184, 0.24);
+  --aura-border-moderate: rgba(255, 255, 255, 0.24);
+
+  /* Aura surfaceBase - fixed radial wash, DarkTheme.tsx */
+  --aura-surface-base:
+    radial-gradient(circle at 0% 0%, rgb(4, 25, 60), rgba(8, 29, 63, 0) 95%),
+    radial-gradient(circle at 90% 15%, rgba(40, 23, 144, 0.6), rgba(37, 30, 125, 0) 38%),
+    radial-gradient(circle at 40% 59%, rgb(0, 79, 173), rgba(0, 73, 159, 0) 60%),
+    radial-gradient(circle at 100% 100%, rgba(0, 134, 168, 0.68), rgba(14, 86, 117, 0.09) 64%),
+    radial-gradient(circle at 30% 100%, rgb(2, 88, 144), rgba(2, 88, 144, 0.1) 30%),
+    radial-gradient(circle at 99% 99%, rgb(0, 48, 83), rgb(0, 48, 83) 60%);
+  --aura-surface-base-fallback: #03142e;
+
+  /* Material mapping */
+  --md-primary-fg-color: var(--aura-deep-blue-3);
+  --md-primary-fg-color--light: var(--aura-blue-6);
+  --md-primary-fg-color--dark: var(--aura-deep-blue-4);
+  --md-primary-bg-color: var(--aura-white);
+  --md-primary-bg-color--light: rgba(255, 255, 255, 0.7);
+
+  --md-accent-fg-color: var(--aura-teal-3);
+  --md-accent-fg-color--transparent: rgba(77, 210, 210, 0.1);
+  --md-accent-bg-color: var(--aura-deep-blue-4);
+
+  --md-default-bg-color: var(--aura-surface-base-fallback);
+  --md-default-fg-color: var(--aura-text-strong);
+  --md-default-fg-color--light: rgba(255, 255, 255, 0.72);
+  --md-default-fg-color--lighter: rgba(255, 255, 255, 0.45);
+  --md-default-fg-color--lightest: rgba(255, 255, 255, 0.18);
+
+  --md-typeset-color: var(--aura-text-moderate);
+  --md-typeset-a-color: var(--aura-link-default);
+  --md-typeset-del-color: rgba(255, 129, 131, 0.2);
+  --md-typeset-ins-color: rgba(33, 221, 170, 0.2);
+  --md-typeset-mark-color: rgba(255, 214, 51, 0.3);
+
+  --md-code-bg-color: rgba(2, 15, 36, 0.58);
+  --md-code-fg-color: rgba(255, 255, 255, 0.88);
+  --md-code-hl-color: rgba(9, 168, 184, 0.22);
+
+  --md-code-hl-keyword-color: var(--aura-periwinkle-3);
+  --md-code-hl-function-color: var(--aura-blue-2);
+  --md-code-hl-string-color: var(--aura-olive-5);
+  --md-code-hl-constant-color: var(--aura-indigo-3);
+  --md-code-hl-number-color: var(--aura-indigo-3);
+  --md-code-hl-special-color: var(--aura-pink-3);
+  --md-code-hl-operator-color: var(--aura-grey-4);
+  --md-code-hl-punctuation-color: var(--aura-grey-4);
+  --md-code-hl-comment-color: var(--aura-grey-5);
+  --md-code-hl-name-color: rgba(255, 255, 255, 0.88);
+  --md-code-hl-variable-color: var(--aura-teal-3);
+  --md-code-hl-generic-color: var(--aura-grey-4);
+
+  --md-footer-bg-color: rgba(2, 15, 36, 0.72);
+  --md-footer-bg-color--dark: var(--aura-deep-blue-4);
+  --md-footer-fg-color: var(--aura-white);
+  --md-footer-fg-color--light: rgba(255, 255, 255, 0.7);
+  --md-footer-fg-color--lighter: rgba(255, 255, 255, 0.45);
+
+  --md-shadow-z1: 0 1px 2px rgba(0, 0, 0, 0.3);
+  --md-shadow-z2: 0 2px 8px rgba(0, 0, 0, 0.36);
+  --md-shadow-z3: 0 6px 20px rgba(0, 0, 0, 0.44);
+
+  --aura-content-bg: rgba(10, 46, 87, 0.42);
+  --aura-content-border: rgba(255, 255, 255, 0.1);
+}
+
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+
+:root {
+  --md-text-font: var(--app-font);
+  --md-code-font: var(--monospace-font);
+}
+
+/* UI chrome runs on the display face. Body prose is excluded - .md-typeset is
+   never matched here; content headings opt in separately below. */
+.md-header,
+.md-tabs,
+.md-nav,
+.md-search,
+.md-footer,
+.md-status,
+.md-version {
+  font-family: var(--display-font);
+}
+
+/* Chrome weights stay restrained so navigation reads as recessive against
+   page content. Only the active item uses weight to assert itself. */
+.md-header__title {
+  font-weight: 500;
+  letter-spacing: -0.01em;
+}
+
+.md-tabs__link {
+  font-weight: 400;
+}
+
+/* Sidebar section labels: small and uppercase-ish already, so weight does the
+   least work here. */
+.md-nav__title {
+  font-weight: 500;
+}
+
+.md-nav__link {
+  font-weight: 400;
+}
+
+/* The only place weight is load-bearing - it marks where you are. */
+.md-nav__link--active,
+.md-tabs__link--active {
+  font-weight: 600;
+}
+
+/* Content headings take the display face; body copy stays on --app-font. */
+.md-typeset h1,
+.md-typeset h2,
+.md-typeset h3,
+.md-typeset h4,
+.md-typeset h5,
+.md-typeset h6 {
+  font-family: var(--display-font);
+  color: var(--aura-text-strong);
+  font-weight: 600;
+}
+
+.md-typeset h1,
+.md-typeset h2,
+.md-typeset h3 {
+  letter-spacing: -0.01em;
+}
+
+/* Accented phrase inside a heading. Teal5 on light clears 4.5:1 against the
+   content card; teal3 is used on dark where teal5 would be far too low. */
+.md-typeset .accent-text {
+  color: var(--aura-teal-5);
+}
+
+[data-md-color-scheme="slate"] .md-typeset .accent-text {
+  color: var(--aura-teal-3);
+}
+
+.md-typeset a:hover,
+.md-typeset a:focus {
+  color: var(--aura-link-hover);
+}
+
+/* ==========================================================================
+   Page surface - Aura surfaceBase wash
+   ========================================================================== */
+
+body {
+  background-color: var(--aura-surface-base-fallback);
+  background-image: var(--aura-surface-base);
+  background-attachment: fixed, fixed, fixed, fixed, fixed, fixed;
+  background-repeat: no-repeat;
+}
+
+/* Let the wash show through Material's opaque content chrome */
+.md-main,
+.md-main__inner,
+.md-content,
+.md-sidebar,
+.md-sidebar__scrollwrap,
+.md-nav,
+.md-footer-nav {
+  background-color: transparent;
+}
+
+/* Content sits on an Aura surface so long-form text stays readable */
+.md-content__inner {
+  background-color: var(--aura-content-bg);
+  border: 1px solid var(--aura-content-border);
+  border-radius: 12px;
+  padding: 0.6rem 1.2rem 1.2rem;
+  margin-bottom: 1.6rem;
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+}
+
+@media screen and (max-width: 76.1875em) {
+  .md-content__inner {
+    border-radius: 0;
+    border-left: none;
+    border-right: none;
+    padding: 0.6rem 0.8rem 1rem;
+  }
+}
+
+/* ==========================================================================
+   Header, tabs, search
+   ========================================================================== */
+
+.md-header {
+  background-color: var(--md-primary-fg-color);
+  box-shadow: var(--md-shadow-z1);
+}
+
+.md-tabs {
+  background-color: var(--md-primary-fg-color);
+  border-bottom: 1px solid var(--aura-border-weak);
+}
+
+.md-tabs__link--active,
+.md-tabs__link:hover {
+  color: var(--aura-teal-3);
+  opacity: 1;
+}
+
+.md-search__form {
+  background-color: rgba(255, 255, 255, 0.12);
+  border-radius: 8px;
+}
+
+.md-search__form:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.md-search__input:focus-visible,
+.md-search__form:focus-within {
+  outline: 2px solid var(--aura-teal-4);
+  outline-offset: 1px;
+}
+
+/* ==========================================================================
+   Navigation
+   ========================================================================== */
+
+.md-nav__link--active,
+.md-nav__link:focus,
+.md-nav__link:hover {
+  color: var(--aura-teal-5);
+}
+
+[data-md-color-scheme="slate"] .md-nav__link--active,
+[data-md-color-scheme="slate"] .md-nav__link:focus,
+[data-md-color-scheme="slate"] .md-nav__link:hover {
+  color: var(--aura-teal-3);
+}
+
+/* Right-hand table of contents active marker */
+.md-nav--secondary .md-nav__link--active {
+  border-left: 2px solid var(--aura-teal-4);
+  padding-left: 0.4rem;
+}
+
+/* ==========================================================================
+   Code blocks
+   ========================================================================== */
+
+/* Fira Code draws != as a single glyph, => as an arrow, && as a merged form.
+   Harmless in an editor, but in documentation a reader is meant to retype what
+   they see, and those glyphs are not on a keyboard. Ligatures are purely
+   visual - the text always copied correctly - but this makes what is rendered
+   match what is copied. `none` covers calt (contextual alternates), which is
+   the feature Fira Code actually uses; disabling liga alone would not work. */
+code,
+kbd,
+pre,
+samp,
+.md-typeset code,
+.md-typeset pre,
+.highlight,
+.highlighttable {
+  font-variant-ligatures: none;
 }
 
 .md-typeset pre > code {
-    max-height: 20rem;
+  max-height: 20rem;
+  border-radius: 8px;
 }
 
-table, th, td {
-    background-color: transparent !important;
+.md-typeset code {
+  border-radius: 4px;
+}
+
+.md-typeset .highlight {
+  border: 1px solid var(--aura-border-weak);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.md-clipboard:hover {
+  color: var(--aura-teal-4);
+}
+
+/* Tabbed code samples (GraphQL / PowerShell / Bash) */
+.md-typeset .tabbed-labels > label {
+  font-weight: 600;
+}
+
+.md-typeset .tabbed-set > input:checked + label {
+  border-color: var(--aura-teal-4);
+  color: var(--aura-teal-5);
+}
+
+[data-md-color-scheme="slate"] .md-typeset .tabbed-set > input:checked + label {
+  color: var(--aura-teal-3);
+}
+
+/* ==========================================================================
+   Admonitions - Aura status colors
+   ========================================================================== */
+
+.md-typeset .admonition,
+.md-typeset details {
+  border-radius: 8px;
+  border-width: 1px;
+  border-left-width: 3px;
+  box-shadow: none;
+  background-color: var(--aura-content-bg);
+}
+
+.md-typeset .admonition.note,
+.md-typeset details.note {
+  border-color: var(--aura-blue-4);
+}
+.md-typeset .note > .admonition-title,
+.md-typeset .note > summary {
+  background-color: rgba(0, 134, 192, 0.1);
+}
+
+.md-typeset .admonition.tip,
+.md-typeset details.tip,
+.md-typeset .admonition.success,
+.md-typeset details.success {
+  border-color: var(--aura-green-4);
+}
+.md-typeset .tip > .admonition-title,
+.md-typeset .tip > summary,
+.md-typeset .success > .admonition-title,
+.md-typeset .success > summary {
+  background-color: rgba(0, 178, 135, 0.1);
+}
+
+.md-typeset .admonition.info,
+.md-typeset details.info {
+  border-color: var(--aura-teal-4);
+}
+.md-typeset .info > .admonition-title,
+.md-typeset .info > summary {
+  background-color: rgba(9, 168, 184, 0.1);
+}
+
+.md-typeset .admonition.warning,
+.md-typeset details.warning {
+  border-color: var(--aura-amber-6);
+}
+.md-typeset .warning > .admonition-title,
+.md-typeset .warning > summary {
+  background-color: rgba(227, 107, 0, 0.1);
+}
+
+.md-typeset .admonition.danger,
+.md-typeset details.danger,
+.md-typeset .admonition.failure,
+.md-typeset details.failure,
+.md-typeset .admonition.bug,
+.md-typeset details.bug {
+  border-color: var(--aura-red-5);
+}
+.md-typeset .danger > .admonition-title,
+.md-typeset .danger > summary,
+.md-typeset .failure > .admonition-title,
+.md-typeset .failure > summary,
+.md-typeset .bug > .admonition-title,
+.md-typeset .bug > summary {
+  background-color: rgba(246, 55, 71, 0.1);
+}
+
+.md-typeset .admonition.example,
+.md-typeset details.example {
+  border-color: var(--aura-violet-4);
+}
+.md-typeset .example > .admonition-title,
+.md-typeset .example > summary {
+  background-color: rgba(155, 121, 235, 0.1);
+}
+
+/* ==========================================================================
+   Tables
+   ========================================================================== */
+
+table,
+th,
+td {
+  background-color: transparent !important;
 }
 
 .md-typeset__table {
-    width: 100%;
-  }
-  
-  .md-typeset__table table:not([class]) {
-    display: table
+  width: 100%;
 }
 
-#feedback-widget {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 10px;
-    gap: 10px; /* Adds space between input and button */
-  }
-  
-  #feedback-input {
-    width: 20em;
-    padding: 8px;
-    font-size: .8rem;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background-color: #ffffff
-  }
-  
-  #send-feedback {
-    padding: 6px 14px;
-    font-size: .8rem;
-    cursor: pointer;
-    border: none;
-    background-color: #555;
-    color: white;
-    border-radius: 5px;
-  }
-  
-  #send-feedback:hover {
-    background-color: #0056b3;
-  }
+.md-typeset__table table:not([class]) {
+  display: table;
+}
 
-  #feedback-confirmation {
-    font-size: 0.8rem;
-    color: #FFD633; /* Yellow for success */
-    opacity: 0; /* Invisible by default */
-    transition: opacity 0.5s ease-in-out;
-  }
+.md-typeset table:not([class]) {
+  border: 1px solid var(--aura-border-moderate);
+  border-radius: 8px;
+}
+
+.md-typeset table:not([class]) th {
+  color: var(--aura-text-strong);
+  font-weight: 600;
+  border-bottom: 1px solid var(--aura-border-moderate);
+}
+
+.md-typeset table:not([class]) tr:hover td {
+  background-color: rgba(9, 168, 184, 0.06) !important;
+}
+
+/* Reference tables are mostly identifiers and prose, but the few numeric
+   columns (versions, sizes) line up with this. Harmless no-op otherwise. */
+.md-typeset table:not([class]) td,
+.md-typeset table:not([class]) th {
+  font-variant-numeric: tabular-nums;
+}
+
+/* ==========================================================================
+   Layer 4 - Site components
+   ========================================================================== */
+
+/* Beta status pill */
+:root {
+  --md-status--beta: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6 22a3 3 0 0 1-3-3c0-.6.18-1.16.5-1.63L9 7.81V6a1 1 0 0 1-1-1V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v1a1 1 0 0 1-1 1v1.81l5.5 9.56c.32.47.5 1.03.5 1.63a3 3 0 0 1-3 3zm-1-3a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1c0-.21-.07-.41-.18-.57l-2.29-3.96L14 17l-5.07-5.07-3.75 6.5c-.11.16-.18.36-.18.57m8-9a1 1 0 0 0-1 1 1 1 0 0 0 1 1 1 1 0 0 0 1-1 1 1 0 0 0-1-1"/></svg>');
+}
+
+.md-status--beta:after {
+  -webkit-mask-image: var(--md-status--beta);
+  mask-image: var(--md-status--beta);
+}
+
+/* Feedback widget */
+#feedback-widget {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  gap: 10px;
+}
+
+#feedback-input {
+  width: 20em;
+  padding: 8px 10px;
+  font-family: var(--app-font);
+  font-size: 0.8rem;
+  color: var(--aura-text-strong);
+  background-color: var(--aura-surface-primary);
+  border: 1px solid var(--aura-border-moderate);
+  border-radius: 6px;
+}
+
+#feedback-input:focus {
+  outline: none;
+  border-color: var(--aura-teal-4);
+  box-shadow: 0 0 0 3px rgba(9, 168, 184, 0.16);
+}
+
+#send-feedback {
+  padding: 8px 16px;
+  font-family: var(--app-font);
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  border-radius: 6px;
+  color: var(--aura-white);
+  background-color: var(--aura-teal-5);
+  transition: background-color 0.15s ease-in-out;
+}
+
+#send-feedback:hover {
+  background-color: var(--aura-teal-4);
+}
+
+#send-feedback:active {
+  background-color: var(--aura-teal-3);
+}
+
+#feedback-confirmation {
+  font-size: 0.8rem;
+  color: var(--aura-green-6);
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+[data-md-color-scheme="slate"] #feedback-confirmation {
+  color: var(--aura-green-3);
+}
+
+/* Accessibility - Aura a11yFocusBorder */
+:focus-visible {
+  outline: 2px solid var(--aura-teal-4);
+  outline-offset: 2px;
+}
