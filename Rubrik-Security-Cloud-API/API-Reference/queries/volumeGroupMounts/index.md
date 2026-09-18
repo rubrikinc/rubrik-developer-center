@@ -29,6 +29,7 @@ query {
       name
       nodeCompositeId
       nodeIp
+      recoveryPurpose
       restoreScriptPath
       smbShareName
       sourceVolumeGroupId

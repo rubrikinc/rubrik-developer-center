@@ -1,6 +1,6 @@
 # patchFusionComputeVm
 
-Patch FusionCompute virtual machine Supported in v9.6 Patch a FusionCompute virtual machine with specified properties.
+Patch FusionCompute virtual machine Supported in v9.6+ Patch a FusionCompute virtual machine with specified properties.
 
 ## Arguments
 

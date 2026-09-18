@@ -16,4 +16,5 @@ Paginated list of KubernetesVirtualMachine objects. Each page of the results inc
 **Referenced by**
 
 - [KubernetesCluster.k8sDescendantVirtualMachines](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/KubernetesCluster/index.md)
+- [KubernetesLabel.kubernetesDescendantVirtualMachines](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/KubernetesLabel/index.md)
 - [KubernetesNamespaceType.kubernetesDescendantVirtualMachines](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/KubernetesNamespaceType/index.md)

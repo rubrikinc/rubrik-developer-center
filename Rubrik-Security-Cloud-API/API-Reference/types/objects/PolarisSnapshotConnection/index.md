@@ -22,7 +22,9 @@ Paginated list of PolarisSnapshot objects. Each page of the results includes at 
 - [AwsNativeRdsInstance.snapshotConnection](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AwsNativeRdsInstance/index.md)
 - [AwsNativeS3Bucket.snapshotConnection](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AwsNativeS3Bucket/index.md)
 - [AzureAdDirectory.snapshotConnection](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AzureAdDirectory/index.md)
+- [AzureCosmosNosqlContainer.snapshotConnection](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AzureCosmosNosqlContainer/index.md)
 - [AzureDevOpsRepository.snapshotConnection](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AzureDevOpsRepository/index.md)
+- AzureNativeHierarchyObjectType.snapshotConnection
 - [AzureNativeManagedDisk.snapshotConnection](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AzureNativeManagedDisk/index.md)
 - [AzureNativeVirtualMachine.snapshotConnection](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AzureNativeVirtualMachine/index.md)
 - [AzurePostgresFlexibleServer.snapshotConnection](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AzurePostgresFlexibleServer/index.md)
@@ -43,6 +45,4 @@ Paginated list of PolarisSnapshot objects. Each page of the results includes at 
 - [M365BackupStorageOrg.snapshotConnection](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/M365BackupStorageOrg/index.md)
 - [M365BackupStorageSite.snapshotConnection](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/M365BackupStorageSite/index.md)
 - MicrosoftGroup.snapshotConnection
-- MicrosoftMailbox.snapshotConnection
-- MicrosoftOnedrive.snapshotConnection
-- *…and 16 more*
+- *…and 18 more*

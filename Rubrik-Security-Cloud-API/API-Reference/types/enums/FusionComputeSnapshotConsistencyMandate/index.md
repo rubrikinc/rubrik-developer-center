@@ -1,6 +1,6 @@
 # FusionComputeSnapshotConsistencyMandate
 
-Consistency level mandated for this FusionCompute virtual machine.
+Supported in v9.6+ Consistency level mandated for this FusionCompute virtual machine.
 
 ## Values
 

@@ -1,6 +1,6 @@
 # updateFusionComputeMount
 
-Power a FusionCompute Live Mount on and off Supported in v9.6 Power a specified FusionCompute Live Mount virtual machine on or off. Pass ***true*** to power the virtual machine on and pass ***false*** to power the virtual machine off.
+Power a FusionCompute Live Mount on and off Supported in v9.6+ Power a specified FusionCompute Live Mount virtual machine on or off. Pass ***true*** to power the virtual machine on and pass ***false*** to power the virtual machine off.
 
 ## Arguments
 

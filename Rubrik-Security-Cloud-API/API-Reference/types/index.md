@@ -410,6 +410,9 @@ All named types in the RSC GraphQL schema, grouped by kind.
 [AzureClusterStorageAccountRedundancyReply](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AzureClusterStorageAccountRedundancyReply/index.md)\
 [AzureCmk](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AzureCmk/index.md)\
 [AzureComputeSettings](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AzureComputeSettings/index.md)\
+[AzureCosmosNosqlAccount](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AzureCosmosNosqlAccount/index.md)\
+[AzureCosmosNosqlContainer](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AzureCosmosNosqlContainer/index.md)\
+[AzureCosmosNosqlDatabase](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AzureCosmosNosqlDatabase/index.md)\
 [AzureDevOpsConnectionStatusSummaryReply](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AzureDevOpsConnectionStatusSummaryReply/index.md)\
 [AzureDevOpsOrgInfo](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AzureDevOpsOrgInfo/index.md)\
 [AzureDevOpsOrganization](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AzureDevOpsOrganization/index.md)\
@@ -459,6 +462,7 @@ All named types in the RSC GraphQL schema, grouped by kind.
 [AzureNativeRegionSpec](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AzureNativeRegionSpec/index.md)\
 [AzureNativeResourceGroup](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AzureNativeResourceGroup/index.md)\
 [AzureNativeResourceGroupAndSubscriptionDetails](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AzureNativeResourceGroupAndSubscriptionDetails/index.md)\
+[AzureNativeResourceGroupBase](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AzureNativeResourceGroupBase/index.md)\
 [AzureNativeResourceGroupConnection](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AzureNativeResourceGroupConnection/index.md)\
 [AzureNativeResourceGroupEdge](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AzureNativeResourceGroupEdge/index.md)\
 [AzureNativeResourceGroupSlaAssignment](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AzureNativeResourceGroupSlaAssignment/index.md)\
@@ -616,6 +620,7 @@ All named types in the RSC GraphQL schema, grouped by kind.
 [CcWithCloudInfo](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/CcWithCloudInfo/index.md)\
 [CcprovisionInfo](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/CcprovisionInfo/index.md)\
 [CdmAgentStatus](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/CdmAgentStatus/index.md)\
+[CdmApiOperation](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/CdmApiOperation/index.md)\
 [CdmCertificateUsageInfo](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/CdmCertificateUsageInfo/index.md)\
 [CdmClusterStatus](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/CdmClusterStatus/index.md)\
 [CdmClusterStatusInfo](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/CdmClusterStatusInfo/index.md)\
@@ -715,6 +720,7 @@ All named types in the RSC GraphQL schema, grouped by kind.
 [CloudAccountAddressBlockV4](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/CloudAccountAddressBlockV4/index.md)\
 [CloudAccountDetail](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/CloudAccountDetail/index.md)\
 [CloudAccountDetails](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/CloudAccountDetails/index.md)\
+[CloudAccountEnabledFeature](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/CloudAccountEnabledFeature/index.md)\
 [CloudAccountFeaturePermission](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/CloudAccountFeaturePermission/index.md)\
 [CloudAccountFilterValueEntry](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/CloudAccountFilterValueEntry/index.md)\
 [CloudAccountFilterValues](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/CloudAccountFilterValues/index.md)\
@@ -1138,6 +1144,7 @@ All named types in the RSC GraphQL schema, grouped by kind.
 [DownloadPackageReplyWithUuid](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/DownloadPackageReplyWithUuid/index.md)\
 [DownloadPackageStatusReply](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/DownloadPackageStatusReply/index.md)\
 [DownloadResultsCsvReply](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/DownloadResultsCsvReply/index.md)\
+[DownloadSalesforceArchivedRecordsReply](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/DownloadSalesforceArchivedRecordsReply/index.md)\
 [DownloadSalesforcePermissionsReply](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/DownloadSalesforcePermissionsReply/index.md)\
 [DownloadSlaWithReplicationCsvReply](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/DownloadSlaWithReplicationCsvReply/index.md)\
 [DownloadThreatHuntCsvReply](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/DownloadThreatHuntCsvReply/index.md)\
@@ -1533,6 +1540,7 @@ All named types in the RSC GraphQL schema, grouped by kind.
 [GithubRepository](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/GithubRepository/index.md)\
 [GithubRepositoryConnection](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/GithubRepositoryConnection/index.md)\
 [GithubRepositoryEdge](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/GithubRepositoryEdge/index.md)\
+[GithubSlaConfig](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/GithubSlaConfig/index.md)\
 [GlobalCertificate](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/GlobalCertificate/index.md)\
 [GlobalCertificateConnection](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/GlobalCertificateConnection/index.md)\
 [GlobalCertificateEdge](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/GlobalCertificateEdge/index.md)\
@@ -1816,6 +1824,7 @@ All named types in the RSC GraphQL schema, grouped by kind.
 [K8sSnapshotSummary](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/K8sSnapshotSummary/index.md)\
 [K8sSnapshotSummaryListResponse](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/K8sSnapshotSummaryListResponse/index.md)\
 [K8sVmSnapshotSummary](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/K8sVmSnapshotSummary/index.md)\
+[K8sWorkloadComponentSummary](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/K8sWorkloadComponentSummary/index.md)\
 [KdcConfig](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/KdcConfig/index.md)\
 [KdcCredential](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/KdcCredential/index.md)\
 [KeyValuePair](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/KeyValuePair/index.md)\
@@ -1839,6 +1848,9 @@ All named types in the RSC GraphQL schema, grouped by kind.
 [KubernetesClusterDescendantConnection](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/KubernetesClusterDescendantConnection/index.md)\
 [KubernetesClusterDescendantEdge](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/KubernetesClusterDescendantEdge/index.md)\
 [KubernetesClusterEdge](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/KubernetesClusterEdge/index.md)\
+[KubernetesLabel](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/KubernetesLabel/index.md)\
+[KubernetesLabelDescendantConnection](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/KubernetesLabelDescendantConnection/index.md)\
+[KubernetesLabelDescendantEdge](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/KubernetesLabelDescendantEdge/index.md)\
 [KubernetesNamespaceDescendantConnection](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/KubernetesNamespaceDescendantConnection/index.md)\
 [KubernetesNamespaceDescendantEdge](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/KubernetesNamespaceDescendantEdge/index.md)\
 [KubernetesNamespaceType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/KubernetesNamespaceType/index.md)\
@@ -2070,7 +2082,6 @@ All named types in the RSC GraphQL schema, grouped by kind.
 [MonthlyDaySpecDayOfWeek](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/MonthlyDaySpecDayOfWeek/index.md)\
 [MonthlyDaySpecSpecificDate](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/MonthlyDaySpecSpecificDate/index.md)\
 [MonthlySnapshotSchedule](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/MonthlySnapshotSchedule/index.md)\
-[MosaicAsyncResponse](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/MosaicAsyncResponse/index.md)\
 [MountDiskReply](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/MountDiskReply/index.md)\
 [MountedVolume](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/MountedVolume/index.md)\
 [MssqlAppMetadata](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/MssqlAppMetadata/index.md)\
@@ -2438,6 +2449,28 @@ All named types in the RSC GraphQL schema, grouped by kind.
 [ObjectVersion](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/ObjectVersion/index.md)\
 [OktaIntegrationConfig](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/OktaIntegrationConfig/index.md)\
 [OktaTenantSpecificSnapshot](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/OktaTenantSpecificSnapshot/index.md)\
+[OlvmBackupScript](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/OlvmBackupScript/index.md)\
+[OlvmComputeClusterDescendantConnection](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/OlvmComputeClusterDescendantConnection/index.md)\
+[OlvmComputeClusterDescendantEdge](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/OlvmComputeClusterDescendantEdge/index.md)\
+[OlvmComputeClusterPhysicalChildTypeConnection](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/OlvmComputeClusterPhysicalChildTypeConnection/index.md)\
+[OlvmComputeClusterPhysicalChildTypeEdge](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/OlvmComputeClusterPhysicalChildTypeEdge/index.md)\
+[OlvmComputeClusterV1](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/OlvmComputeClusterV1/index.md)\
+[OlvmDatacenterDescendantConnection](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/OlvmDatacenterDescendantConnection/index.md)\
+[OlvmDatacenterDescendantEdge](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/OlvmDatacenterDescendantEdge/index.md)\
+[OlvmDatacenterPhysicalChildTypeConnection](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/OlvmDatacenterPhysicalChildTypeConnection/index.md)\
+[OlvmDatacenterPhysicalChildTypeEdge](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/OlvmDatacenterPhysicalChildTypeEdge/index.md)\
+[OlvmDatacenterV1](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/OlvmDatacenterV1/index.md)\
+[OlvmManagerDescendantConnection](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/OlvmManagerDescendantConnection/index.md)\
+[OlvmManagerDescendantEdge](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/OlvmManagerDescendantEdge/index.md)\
+[OlvmManagerPhysicalChildTypeConnection](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/OlvmManagerPhysicalChildTypeConnection/index.md)\
+[OlvmManagerPhysicalChildTypeEdge](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/OlvmManagerPhysicalChildTypeEdge/index.md)\
+[OlvmManagerV1](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/OlvmManagerV1/index.md)\
+[OlvmTagDescendantConnection](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/OlvmTagDescendantConnection/index.md)\
+[OlvmTagDescendantEdge](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/OlvmTagDescendantEdge/index.md)\
+[OlvmTagLogicalChildConnection](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/OlvmTagLogicalChildConnection/index.md)\
+[OlvmTagLogicalChildEdge](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/OlvmTagLogicalChildEdge/index.md)\
+[OlvmTagV1](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/OlvmTagV1/index.md)\
+[OlvmVirtualMachineV1](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/OlvmVirtualMachineV1/index.md)\
 [OlvmVmSubObject](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/OlvmVmSubObject/index.md)\
 [OnPremAdEventSourceMetadata](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/OnPremAdEventSourceMetadata/index.md)\
 [OnPremAdPrincipalMetadata](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/OnPremAdPrincipalMetadata/index.md)\
@@ -2446,9 +2479,16 @@ All named types in the RSC GraphQL schema, grouped by kind.
 [OnboardingModeStats](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/OnboardingModeStats/index.md)\
 [OnedriveAnalysisResult](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/OnedriveAnalysisResult/index.md)\
 [OnedriveForSelfService](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/OnedriveForSelfService/index.md)\
+[OpenstackAvailabilityZone](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/OpenstackAvailabilityZone/index.md)\
 [OpenstackCephSetting](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/OpenstackCephSetting/index.md)\
+[OpenstackDomain](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/OpenstackDomain/index.md)\
+[OpenstackEnvironment](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/OpenstackEnvironment/index.md)\
+[OpenstackHost](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/OpenstackHost/index.md)\
+[OpenstackImage](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/OpenstackImage/index.md)\
 [OpenstackMonHost](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/OpenstackMonHost/index.md)\
 [OpenstackNetworkTags](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/OpenstackNetworkTags/index.md)\
+[OpenstackProject](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/OpenstackProject/index.md)\
+[OpenstackRegion](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/OpenstackRegion/index.md)\
 [OpenstackTag](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/OpenstackTag/index.md)\
 [OpenstackVirtualMachine](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/OpenstackVirtualMachine/index.md)\
 [OpenstackVmAgentStatus](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/OpenstackVmAgentStatus/index.md)\
@@ -2679,6 +2719,7 @@ All named types in the RSC GraphQL schema, grouped by kind.
 [ProductTypeInfo](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/ProductTypeInfo/index.md)\
 [PropertiesOneof](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/PropertiesOneof/index.md)\
 [PropertyExtension](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/PropertyExtension/index.md)\
+[ProtectedAction](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/ProtectedAction/index.md)\
 [ProtectedObjectTypeToSla](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/ProtectedObjectTypeToSla/index.md)\
 [ProtectedObjects](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/ProtectedObjects/index.md)\
 [ProtectedObjectsConnection](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/ProtectedObjectsConnection/index.md)\
@@ -2689,10 +2730,28 @@ All named types in the RSC GraphQL schema, grouped by kind.
 [ProtectionTaskDetailsTableFilter](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/ProtectionTaskDetailsTableFilter/index.md)\
 [ProviderInfo](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/ProviderInfo/index.md)\
 [ProvisionCloudDirectCloudVmReply](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/ProvisionCloudDirectCloudVmReply/index.md)\
+[ProxmoxClusterDescendantConnection](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/ProxmoxClusterDescendantConnection/index.md)\
+[ProxmoxClusterDescendantEdge](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/ProxmoxClusterDescendantEdge/index.md)\
+[ProxmoxClusterPhysicalChildTypeConnection](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/ProxmoxClusterPhysicalChildTypeConnection/index.md)\
+[ProxmoxClusterPhysicalChildTypeEdge](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/ProxmoxClusterPhysicalChildTypeEdge/index.md)\
+[ProxmoxClusterV1](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/ProxmoxClusterV1/index.md)\
 [ProxmoxDetails](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/ProxmoxDetails/index.md)\
+[ProxmoxEnvironmentDescendantConnection](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/ProxmoxEnvironmentDescendantConnection/index.md)\
+[ProxmoxEnvironmentDescendantEdge](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/ProxmoxEnvironmentDescendantEdge/index.md)\
 [ProxmoxEnvironmentDetails](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/ProxmoxEnvironmentDetails/index.md)\
+[ProxmoxEnvironmentPhysicalChildTypeConnection](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/ProxmoxEnvironmentPhysicalChildTypeConnection/index.md)\
+[ProxmoxEnvironmentPhysicalChildTypeEdge](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/ProxmoxEnvironmentPhysicalChildTypeEdge/index.md)\
 [ProxmoxEnvironmentSummary](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/ProxmoxEnvironmentSummary/index.md)\
+[ProxmoxEnvironmentV1](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/ProxmoxEnvironmentV1/index.md)\
+[ProxmoxNodeDescendantConnection](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/ProxmoxNodeDescendantConnection/index.md)\
+[ProxmoxNodeDescendantEdge](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/ProxmoxNodeDescendantEdge/index.md)\
+[ProxmoxNodePhysicalChildTypeConnection](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/ProxmoxNodePhysicalChildTypeConnection/index.md)\
+[ProxmoxNodePhysicalChildTypeEdge](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/ProxmoxNodePhysicalChildTypeEdge/index.md)\
+[ProxmoxNodeV1](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/ProxmoxNodeV1/index.md)\
+[ProxmoxStorageDomain](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/ProxmoxStorageDomain/index.md)\
 [ProxmoxVirtualMachineDetails](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/ProxmoxVirtualMachineDetails/index.md)\
+[ProxmoxVirtualMachineV1](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/ProxmoxVirtualMachineV1/index.md)\
+[ProxmoxVmSubObject](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/ProxmoxVmSubObject/index.md)\
 [ProxySettings](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/ProxySettings/index.md)\
 [PureStorageArrayDescendantV1Connection](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/PureStorageArrayDescendantV1Connection/index.md)\
 [PureStorageArrayDescendantV1Edge](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/PureStorageArrayDescendantV1Edge/index.md)\
@@ -2786,6 +2845,8 @@ All named types in the RSC GraphQL schema, grouped by kind.
 [RecoveryPlanAwsAccount](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/RecoveryPlanAwsAccount/index.md)\
 [RecoveryPlanAzureSubscription](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/RecoveryPlanAzureSubscription/index.md)\
 [RecoveryPlanBasicInfo](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/RecoveryPlanBasicInfo/index.md)\
+[RecoveryPlanBasicInfoConnection](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/RecoveryPlanBasicInfoConnection/index.md)\
+[RecoveryPlanBasicInfoEdge](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/RecoveryPlanBasicInfoEdge/index.md)\
 [RecoveryPlanCdmCluster](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/RecoveryPlanCdmCluster/index.md)\
 [RecoveryPlanChildV2](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/RecoveryPlanChildV2/index.md)\
 [RecoveryPlanFilterTimeRange](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/RecoveryPlanFilterTimeRange/index.md)\
@@ -3195,6 +3256,8 @@ All named types in the RSC GraphQL schema, grouped by kind.
 [StartRecoveryReply](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/StartRecoveryReply/index.md)\
 [StartRscpPackageDownloadReply](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/StartRscpPackageDownloadReply/index.md)\
 [StartRscpUpgradeReply](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/StartRscpUpgradeReply/index.md)\
+[StartSalesforceArchivalJobReply](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/StartSalesforceArchivalJobReply/index.md)\
+[StartSalesforceObjectsUnarchiveReply](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/StartSalesforceObjectsUnarchiveReply/index.md)\
 [StartSalesforcePermissionAssessmentReply](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/StartSalesforcePermissionAssessmentReply/index.md)\
 [StartThreatHuntReply](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/StartThreatHuntReply/index.md)\
 [StartThreatHuntV2Reply](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/StartThreatHuntV2Reply/index.md)\
@@ -3849,7 +3912,6 @@ All named types in the RSC GraphQL schema, grouped by kind.
 [AddManagedVolumeInfo](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/AddManagedVolumeInfo/index.md)\
 [AddManagedVolumeInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/AddManagedVolumeInput/index.md)\
 [AddMongoSourceInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/AddMongoSourceInput/index.md)\
-[AddMosaicStoreInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/AddMosaicStoreInput/index.md)\
 [AddMysqldbInstanceInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/AddMysqldbInstanceInput/index.md)\
 [AddNodesConfigInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/AddNodesConfigInput/index.md)\
 [AddNodesToCloudClusterInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/AddNodesToCloudClusterInput/index.md)\
@@ -3906,6 +3968,7 @@ All named types in the RSC GraphQL schema, grouped by kind.
 [ArchivalSpecInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/ArchivalSpecInput/index.md)\
 [ArchivalTieringSpecInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/ArchivalTieringSpecInput/index.md)\
 [ArchiveK8sClusterInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/ArchiveK8sClusterInput/index.md)\
+[ArchivedRecordCriteria](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/ArchivedRecordCriteria/index.md)\
 [AssignCloudAccountToClusterInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/AssignCloudAccountToClusterInput/index.md)\
 [AssignMssqlSlaDomainPropertiesAsyncInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/AssignMssqlSlaDomainPropertiesAsyncInput/index.md)\
 [AssignMssqlSlaDomainPropertiesInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/AssignMssqlSlaDomainPropertiesInput/index.md)\
@@ -4494,7 +4557,6 @@ All named types in the RSC GraphQL schema, grouped by kind.
 [DeleteManagedVolumeInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/DeleteManagedVolumeInput/index.md)\
 [DeleteManagedVolumeSnapshotExportInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/DeleteManagedVolumeSnapshotExportInput/index.md)\
 [DeleteMongoSourceInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/DeleteMongoSourceInput/index.md)\
-[DeleteMosaicStoreInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/DeleteMosaicStoreInput/index.md)\
 [DeleteMssqlDbSnapshotsInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/DeleteMssqlDbSnapshotsInput/index.md)\
 [DeleteMssqlLiveMountInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/DeleteMssqlLiveMountInput/index.md)\
 [DeleteMvcProfilesInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/DeleteMvcProfilesInput/index.md)\
@@ -4518,6 +4580,7 @@ All named types in the RSC GraphQL schema, grouped by kind.
 [DeleteScheduledReportInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/DeleteScheduledReportInput/index.md)\
 [DeleteServiceAccountsFromAccountInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/DeleteServiceAccountsFromAccountInput/index.md)\
 [DeleteSmbDomainInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/DeleteSmbDomainInput/index.md)\
+[DeleteSnapshotsOfObjectsInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/DeleteSnapshotsOfObjectsInput/index.md)\
 [DeleteSnapshotsOfUnmanagedObjectsInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/DeleteSnapshotsOfUnmanagedObjectsInput/index.md)\
 [DeleteStorageArraysInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/DeleteStorageArraysInput/index.md)\
 [DeleteSyslogExportRuleInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/DeleteSyslogExportRuleInput/index.md)\
@@ -4607,6 +4670,7 @@ All named types in the RSC GraphQL schema, grouped by kind.
 [DownloadReportCsvAsyncInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/DownloadReportCsvAsyncInput/index.md)\
 [DownloadReportPdfAsyncInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/DownloadReportPdfAsyncInput/index.md)\
 [DownloadResultsCsvFiltersInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/DownloadResultsCsvFiltersInput/index.md)\
+[DownloadSalesforceArchivedRecordsInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/DownloadSalesforceArchivedRecordsInput/index.md)\
 [DownloadSalesforcePermissionsInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/DownloadSalesforcePermissionsInput/index.md)\
 [DownloadSapHanaSnapshotFromLocationInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/DownloadSapHanaSnapshotFromLocationInput/index.md)\
 [DownloadSapHanaSnapshotInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/DownloadSapHanaSnapshotInput/index.md)\
@@ -4675,6 +4739,8 @@ All named types in the RSC GraphQL schema, grouped by kind.
 [ExpireMongoCollectionSetDownloadedSnapshotsInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/ExpireMongoCollectionSetDownloadedSnapshotsInput/index.md)\
 [ExpireMongoOpsManagerSourceDownloadedSnapshotsInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/ExpireMongoOpsManagerSourceDownloadedSnapshotsInput/index.md)\
 [ExpireSnoozedDirectoriesInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/ExpireSnoozedDirectoriesInput/index.md)\
+[ExportExchangeDatabaseInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/ExportExchangeDatabaseInput/index.md)\
+[ExportExchangeDbJobConfigInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/ExportExchangeDbJobConfigInput/index.md)\
 [ExportFusionComputeSnapshotInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/ExportFusionComputeSnapshotInput/index.md)\
 [ExportHypervVirtualMachineInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/ExportHypervVirtualMachineInput/index.md)\
 [ExportK8sNamespaceInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/ExportK8sNamespaceInput/index.md)\
@@ -4920,6 +4986,7 @@ All named types in the RSC GraphQL schema, grouped by kind.
 [GetVmAgentDeploymentSettingInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/GetVmAgentDeploymentSettingInput/index.md)\
 [GetVmLevelFilesFromSnapshotInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/GetVmLevelFilesFromSnapshotInput/index.md)\
 [GetVmwareHostInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/GetVmwareHostInput/index.md)\
+[GithubSlaConfigInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/GithubSlaConfigInput/index.md)\
 [GlobalCertificatesQueryInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/GlobalCertificatesQueryInput/index.md)\
 [GlobalFileSearchInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/GlobalFileSearchInput/index.md)\
 [GlobalFileSearchQueryInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/GlobalFileSearchQueryInput/index.md)\
@@ -5131,6 +5198,7 @@ All named types in the RSC GraphQL schema, grouped by kind.
 [M365BackupStorageObjectRestorePointsInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/M365BackupStorageObjectRestorePointsInput/index.md)\
 [M365BackupStorageObjectSearchRestorePointsInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/M365BackupStorageObjectSearchRestorePointsInput/index.md)\
 [M365MetadataInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/M365MetadataInput/index.md)\
+[M365RecoveryOptionsInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/M365RecoveryOptionsInput/index.md)\
 [MailboxRestoreConfig](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/MailboxRestoreConfig/index.md)\
 [MakePrimaryInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/MakePrimaryInput/index.md)\
 [MalwareScanFileCriteriaInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/MalwareScanFileCriteriaInput/index.md)\
@@ -5183,7 +5251,6 @@ All named types in the RSC GraphQL schema, grouped by kind.
 [ModifyEventDigestBatchInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/ModifyEventDigestBatchInput/index.md)\
 [ModifyIdentityProviderInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/ModifyIdentityProviderInput/index.md)\
 [ModifyIpmiInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/ModifyIpmiInput/index.md)\
-[ModifyMosaicStoreInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/ModifyMosaicStoreInput/index.md)\
 [MongoClientHostInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/MongoClientHostInput/index.md)\
 [MongoCollectionAssignSlaConfigInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/MongoCollectionAssignSlaConfigInput/index.md)\
 [MongoCollectionsInfo](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/MongoCollectionsInfo/index.md)\
@@ -5201,8 +5268,6 @@ All named types in the RSC GraphQL schema, grouped by kind.
 [MongoSourcePatchRequestConfigInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/MongoSourcePatchRequestConfigInput/index.md)\
 [MonthlyDaySpecInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/MonthlyDaySpecInput/index.md)\
 [MonthlySnapshotScheduleInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/MonthlySnapshotScheduleInput/index.md)\
-[MosaicAddStoreRequestInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/MosaicAddStoreRequestInput/index.md)\
-[MosaicModifyStoreRequestInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/MosaicModifyStoreRequestInput/index.md)\
 [MosaicSourceInfo](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/MosaicSourceInfo/index.md)\
 [MosaicStorageLocationInfo](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/MosaicStorageLocationInfo/index.md)\
 [MountDiskInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/MountDiskInput/index.md)\
@@ -5246,6 +5311,7 @@ All named types in the RSC GraphQL schema, grouped by kind.
 [MssqlInstanceInfo](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/MssqlInstanceInfo/index.md)\
 [MssqlInstanceUpdateIdInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/MssqlInstanceUpdateIdInput/index.md)\
 [MssqlInstanceUpdateInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/MssqlInstanceUpdateInput/index.md)\
+[MssqlLogShippingApplyLogsInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/MssqlLogShippingApplyLogsInput/index.md)\
 [MssqlLogShippingCreateConfigInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/MssqlLogShippingCreateConfigInput/index.md)\
 [MssqlLogShippingCreateConfigV2Input](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/MssqlLogShippingCreateConfigV2Input/index.md)\
 [MssqlLogShippingReseedConfigInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/MssqlLogShippingReseedConfigInput/index.md)\
@@ -5349,6 +5415,7 @@ All named types in the RSC GraphQL schema, grouped by kind.
 [O365OauthConsentKickoffInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/O365OauthConsentKickoffInput/index.md)\
 [O365PdlAndWorkloadPairInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/O365PdlAndWorkloadPairInput/index.md)\
 [O365PdlGroupsInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/O365PdlGroupsInput/index.md)\
+[O365SaaSSetupKickoffInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/O365SaaSSetupKickoffInput/index.md)\
 [O365SaasSetupCompleteInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/O365SaasSetupCompleteInput/index.md)\
 [O365SharePointSite](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/O365SharePointSite/index.md)\
 [O365SharepointSnapshotFileDeltaInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/O365SharepointSnapshotFileDeltaInput/index.md)\
@@ -5555,6 +5622,7 @@ All named types in the RSC GraphQL schema, grouped by kind.
 [RecoveryPlanInfo](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/RecoveryPlanInfo/index.md)\
 [RecoveryPlanLocationInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/RecoveryPlanLocationInput/index.md)\
 [RecoveryPlanRecoverySpecMapInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/RecoveryPlanRecoverySpecMapInput/index.md)\
+[RecoveryPlanSortParamInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/RecoveryPlanSortParamInput/index.md)\
 [RecoveryPlanV2Input](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/RecoveryPlanV2Input/index.md)\
 [RecoveryReportInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/RecoveryReportInput/index.md)\
 [RecoverySortParamInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/RecoverySortParamInput/index.md)\
@@ -5699,6 +5767,7 @@ All named types in the RSC GraphQL schema, grouped by kind.
 [SaasWorkloadMetadataTypesReq](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/SaasWorkloadMetadataTypesReq/index.md)\
 [SailPointIntegrationConfigInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/SailPointIntegrationConfigInput/index.md)\
 [SailPointStatusInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/SailPointStatusInput/index.md)\
+[SalesforceArchivalCascadeNodeInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/SalesforceArchivalCascadeNodeInput/index.md)\
 [SalesforceRestoreConfig](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/SalesforceRestoreConfig/index.md)\
 [SapHanaConfigInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/SapHanaConfigInput/index.md)\
 [SapHanaDatabaseInfo](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/SapHanaDatabaseInfo/index.md)\
@@ -5853,6 +5922,7 @@ All named types in the RSC GraphQL schema, grouped by kind.
 [StartInPlaceDataMaskingInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/StartInPlaceDataMaskingInput/index.md)\
 [StartK8sDiagnosticsJobInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/StartK8sDiagnosticsJobInput/index.md)\
 [StartK8sVmMountJobInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/StartK8sVmMountJobInput/index.md)\
+[StartMssqlLogShippingApplyLogsJobInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/StartMssqlLogShippingApplyLogsJobInput/index.md)\
 [StartRecoverAzureNativeStorageAccountJobInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/StartRecoverAzureNativeStorageAccountJobInput/index.md)\
 [StartRecoverS3SnapshotJobInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/StartRecoverS3SnapshotJobInput/index.md)\
 [StartRecoveryInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/StartRecoveryInput/index.md)\
@@ -5862,6 +5932,8 @@ All named types in the RSC GraphQL schema, grouped by kind.
 [StartRestoreAzureNativeVirtualMachineJobInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/StartRestoreAzureNativeVirtualMachineJobInput/index.md)\
 [StartRscpPackageDownloadInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/StartRscpPackageDownloadInput/index.md)\
 [StartRscpUpgradeInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/StartRscpUpgradeInput/index.md)\
+[StartSalesforceArchivalJobInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/StartSalesforceArchivalJobInput/index.md)\
+[StartSalesforceObjectsUnarchiveInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/StartSalesforceObjectsUnarchiveInput/index.md)\
 [StartSalesforcePermissionAssessmentInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/StartSalesforcePermissionAssessmentInput/index.md)\
 [StartThreatHuntInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/StartThreatHuntInput/index.md)\
 [StartThreatHuntV2Input](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/StartThreatHuntV2Input/index.md)\
@@ -5961,6 +6033,8 @@ All named types in the RSC GraphQL schema, grouped by kind.
 [TurboThreatHuntConfig](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/TurboThreatHuntConfig/index.md)\
 [UemKmsSpecInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/UemKmsSpecInput/index.md)\
 [UnaccessedFilter](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/UnaccessedFilter/index.md)\
+[UnarchiveObjectInfo](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/UnarchiveObjectInfo/index.md)\
+[UnarchiveRecordsInfo](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/UnarchiveRecordsInfo/index.md)\
 [UnconfigureSapHanaRestoreInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/UnconfigureSapHanaRestoreInput/index.md)\
 [UnidirectionalReplicationSpecInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/UnidirectionalReplicationSpecInput/index.md)\
 [UninstallGitHubAppInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/UninstallGitHubAppInput/index.md)\
@@ -6445,6 +6519,9 @@ All named types in the RSC GraphQL schema, grouped by kind.
 [AzureCloudType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/AzureCloudType/index.md)\
 [AzureClusterStorageRedundancy](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/AzureClusterStorageRedundancy/index.md)\
 [AzureCommonRegion](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/AzureCommonRegion/index.md)\
+[AzureCosmosNosqlNetworkAccessMode](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/AzureCosmosNosqlNetworkAccessMode/index.md)\
+[AzureCosmosNosqlThroughputMode](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/AzureCosmosNosqlThroughputMode/index.md)\
+[AzureCosmosNosqlThroughputScope](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/AzureCosmosNosqlThroughputScope/index.md)\
 [AzureFeatureForPermissionCheck](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/AzureFeatureForPermissionCheck/index.md)\
 [AzureHostType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/AzureHostType/index.md)\
 [AzureInstanceType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/AzureInstanceType/index.md)\
@@ -6587,6 +6664,7 @@ All named types in the RSC GraphQL schema, grouped by kind.
 [ClusterKeyProtection](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/ClusterKeyProtection/index.md)\
 [ClusterKeyRotationState](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/ClusterKeyRotationState/index.md)\
 [ClusterLicenseInfoType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/ClusterLicenseInfoType/index.md)\
+[ClusterManagementType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/ClusterManagementType/index.md)\
 [ClusterNodePlatformType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/ClusterNodePlatformType/index.md)\
 [ClusterNodePosition](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/ClusterNodePosition/index.md)\
 [ClusterNodeRole](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/ClusterNodeRole/index.md)\
@@ -6714,6 +6792,7 @@ All named types in the RSC GraphQL schema, grouped by kind.
 [EntraIDIPRangeType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/EntraIDIPRangeType/index.md)\
 [EntraIDNamedLocationType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/EntraIDNamedLocationType/index.md)\
 [EntraIDRoleType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/EntraIDRoleType/index.md)\
+[EntraIdEventHubPermissionsStatus](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/EntraIdEventHubPermissionsStatus/index.md)\
 [EntraIdTokenIssuanceSigningAlgorithm](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/EntraIdTokenIssuanceSigningAlgorithm/index.md)\
 [EntraIdTokenResponseSigningPolicy](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/EntraIdTokenResponseSigningPolicy/index.md)\
 [EosStatus](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/EosStatus/index.md)\
@@ -6959,6 +7038,7 @@ All named types in the RSC GraphQL schema, grouped by kind.
 [Logging](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/Logging/index.md)\
 [LogicalOperator](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/LogicalOperator/index.md)\
 [LookBackWindow](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/LookBackWindow/index.md)\
+[M365AccessMode](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/M365AccessMode/index.md)\
 [M365AccessRecoveryState](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/M365AccessRecoveryState/index.md)\
 [M365Cloud](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/M365Cloud/index.md)\
 [M365DashboardOperationMode](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/M365DashboardOperationMode/index.md)\
@@ -7002,7 +7082,6 @@ All named types in the RSC GraphQL schema, grouped by kind.
 [MongoSslCertificateRequirement](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/MongoSslCertificateRequirement/index.md)\
 [MongoType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/MongoType/index.md)\
 [Month](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/Month/index.md)\
-[MosaicAddStoreRequestStoreType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/MosaicAddStoreRequestStoreType/index.md)\
 [MosaicSourceNosqlSourceType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/MosaicSourceNosqlSourceType/index.md)\
 [MountState](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/MountState/index.md)\
 [MssqlAvailabilityGroupDatabaseVirtualGroupFilterField](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/MssqlAvailabilityGroupDatabaseVirtualGroupFilterField/index.md)\
@@ -7090,10 +7169,13 @@ All named types in the RSC GraphQL schema, grouped by kind.
 [ObjectTypeAccessSummaryGroupBy](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/ObjectTypeAccessSummaryGroupBy/index.md)\
 [ObjectTypeAccessSummarySortBy](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/ObjectTypeAccessSummarySortBy/index.md)\
 [ObjectTypeEnum](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/ObjectTypeEnum/index.md)\
+[OlvmBackupScriptFailureHandling](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/OlvmBackupScriptFailureHandling/index.md)\
+[OlvmSnapshotConsistencyMandate](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/OlvmSnapshotConsistencyMandate/index.md)\
 [OnPremAdSupportedEncryptionTypes](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/OnPremAdSupportedEncryptionTypes/index.md)\
 [OnedriveSearchKeywordType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/OnedriveSearchKeywordType/index.md)\
 [OnedriveSearchObjectType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/OnedriveSearchObjectType/index.md)\
 [OpenAccessType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/OpenAccessType/index.md)\
+[OpenstackImageVisibilityType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/OpenstackImageVisibilityType/index.md)\
 [OperatingSystemType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/OperatingSystemType/index.md)\
 [Operation](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/Operation/index.md)\
 [Operator](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/Operator/index.md)\
@@ -7196,6 +7278,7 @@ All named types in the RSC GraphQL schema, grouped by kind.
 [RecoveryMethod](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/RecoveryMethod/index.md)\
 [RecoveryOutcome](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/RecoveryOutcome/index.md)\
 [RecoveryPlanFilterOp](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/RecoveryPlanFilterOp/index.md)\
+[RecoveryPlanSortType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/RecoveryPlanSortType/index.md)\
 [RecoveryPlanStatus](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/RecoveryPlanStatus/index.md)\
 [RecoveryPlanType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/RecoveryPlanType/index.md)\
 [RecoveryPurpose](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/RecoveryPurpose/index.md)\
@@ -7209,6 +7292,8 @@ All named types in the RSC GraphQL schema, grouped by kind.
 [RecoveryType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/RecoveryType/index.md)\
 [RefreshableObjectConnectionStatusType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/RefreshableObjectConnectionStatusType/index.md)\
 [RegisteredMode](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/RegisteredMode/index.md)\
+[RegistryHiveRoot](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/RegistryHiveRoot/index.md)\
+[RegistryValueType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/RegistryValueType/index.md)\
 [Relationship](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/Relationship/index.md)\
 [RelationshipConflictResolutionState](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/RelationshipConflictResolutionState/index.md)\
 [RelationshipType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/RelationshipType/index.md)\
@@ -7267,6 +7352,7 @@ All named types in the RSC GraphQL schema, grouped by kind.
 [SaasOrganizationStatus](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/SaasOrganizationStatus/index.md)\
 [SailPointStatusCode](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/SailPointStatusCode/index.md)\
 [SalesforceObjectBackupType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/SalesforceObjectBackupType/index.md)\
+[SalesforceRelationshipType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/SalesforceRelationshipType/index.md)\
 [SamlAttributeType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/SamlAttributeType/index.md)\
 [SapHanaDataPathType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/SapHanaDataPathType/index.md)\
 [SapHanaEncryptionProvider](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/SapHanaEncryptionProvider/index.md)\
@@ -7624,6 +7710,14 @@ All named types in the RSC GraphQL schema, grouped by kind.
 [O365TeamsChannelObject](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/O365TeamsChannelObject/index.md)\
 [O365UserDescendant](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/O365UserDescendant/index.md)\
 [O365UserDescendantMetadata](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/O365UserDescendantMetadata/index.md)\
+[OlvmComputeClusterDescendant](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/OlvmComputeClusterDescendant/index.md)\
+[OlvmComputeClusterPhysicalChildType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/OlvmComputeClusterPhysicalChildType/index.md)\
+[OlvmDatacenterDescendant](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/OlvmDatacenterDescendant/index.md)\
+[OlvmDatacenterPhysicalChildType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/OlvmDatacenterPhysicalChildType/index.md)\
+[OlvmManagerDescendant](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/OlvmManagerDescendant/index.md)\
+[OlvmManagerPhysicalChildType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/OlvmManagerPhysicalChildType/index.md)\
+[OlvmTagDescendant](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/OlvmTagDescendant/index.md)\
+[OlvmTagLogicalChild](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/OlvmTagLogicalChild/index.md)\
 [OpenstackAvailabilityZoneDescendantType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/OpenstackAvailabilityZoneDescendantType/index.md)\
 [OpenstackAvailabilityZonePhysicalChildType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/OpenstackAvailabilityZonePhysicalChildType/index.md)\
 [OpenstackDomainDescendantType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/OpenstackDomainDescendantType/index.md)\
@@ -7652,6 +7746,12 @@ All named types in the RSC GraphQL schema, grouped by kind.
 [PolarisHierarchySnappable](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/PolarisHierarchySnappable/index.md)\
 [PolarisSpecificSnapshot](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/PolarisSpecificSnapshot/index.md)\
 [ProtectedObjectSummary](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/ProtectedObjectSummary/index.md)\
+[ProxmoxClusterDescendant](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/ProxmoxClusterDescendant/index.md)\
+[ProxmoxClusterPhysicalChildType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/ProxmoxClusterPhysicalChildType/index.md)\
+[ProxmoxEnvironmentDescendant](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/ProxmoxEnvironmentDescendant/index.md)\
+[ProxmoxEnvironmentPhysicalChildType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/ProxmoxEnvironmentPhysicalChildType/index.md)\
+[ProxmoxNodeDescendant](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/ProxmoxNodeDescendant/index.md)\
+[ProxmoxNodePhysicalChildType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/ProxmoxNodePhysicalChildType/index.md)\
 [PureStorageArrayDescendantV1](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/PureStorageArrayDescendantV1/index.md)\
 [PureStorageArrayLogicalChildType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/PureStorageArrayLogicalChildType/index.md)\
 [RequestedChangesTemplate](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/RequestedChangesTemplate/index.md)\

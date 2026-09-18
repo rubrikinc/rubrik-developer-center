@@ -965,6 +965,7 @@
 [recoverDb2DatabaseToEndOfBackup](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/recoverDb2DatabaseToEndOfBackup/index.md)\
 [recoverDb2DatabaseToPointInTime](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/recoverDb2DatabaseToPointInTime/index.md)\
 [recoveries](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/recoveries/index.md)\
+[recoveryPlansBasicInfo](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/recoveryPlansBasicInfo/index.md)\
 [recoveryReport](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/recoveryReport/index.md)\
 [recoverySpecs](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/recoverySpecs/index.md)\
 [regions](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/regions/index.md)\

@@ -69,8 +69,8 @@ Enum representing all the possible object types which generate events.
 | CONFLUENCE_SPACE                                                                 | Confluence Space.                                                                                |
 | CROSS_ACCOUNT_PAIR                                                               | Cross-account pair event type.                                                                   |
 | CROWDSTRIKE_INTEGRATION                                                          | CrowdStrike integration object.                                                                  |
-| D365_DATAVERSE_TABLE                                                             | Dynamics 365 dataverse table.                                                                    |
-| D365_METADATA                                                                    | Dynamics 365 metadata.                                                                           |
+| D365_DATAVERSE_TABLE                                                             | Dataverse table.                                                                                 |
+| D365_METADATA                                                                    | Dataverse metadata.                                                                              |
 | D365_ORGANIZATION                                                                | Dynamics 365 organization.                                                                       |
 | DATA_LOCATION                                                                    | Data location object.                                                                            |
 | DB2_DATABASE                                                                     | Db2 database object.                                                                             |
@@ -199,6 +199,8 @@ Enum representing all the possible object types which generate events.
 | OPENSTACK_VIRTUAL_MACHINE                                                        | Openstack Virtual Machine.                                                                       |
 | ORACLE                                                                           | Oracle.                                                                                          |
 | ORACLE_DB                                                                        | Oracle database object.                                                                          |
+| ORACLE_FAILOVER_CLUSTER                                                          | Oracle Failover Cluster object.                                                                  |
+| ORACLE_FAILOVER_SERVICE                                                          | Oracle Failover Service object.                                                                  |
 | ORACLE_HOST                                                                      | Oracle host object.                                                                              |
 | ORACLE_RAC                                                                       | Oracle RAC object.                                                                               |
 | ORGANIZATION                                                                     | Organization object.                                                                             |

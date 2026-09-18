@@ -48,4 +48,6 @@ OpenStack Domain descendant.
 
 ## Implemented By
 
+- [OpenstackImage](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/OpenstackImage/index.md)
+- [OpenstackProject](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/OpenstackProject/index.md)
 - [OpenstackVirtualMachine](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/OpenstackVirtualMachine/index.md)

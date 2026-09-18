@@ -24,6 +24,7 @@ query ActiveDirectoryDomainController($fid: UUID!) {
     cdmPendingObjectPauseAssignment
     dcLocation
     domainControllerGuid
+    forestRootDomainSid
     fsmoRoles
     hostname
     id

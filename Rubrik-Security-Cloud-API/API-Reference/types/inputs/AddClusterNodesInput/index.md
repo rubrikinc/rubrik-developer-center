@@ -1,6 +1,6 @@
 # AddClusterNodesInput
 
-Input for AddClusterNodes.
+Input for add-nodes-to-cluster operations.
 
 ## Fields
 

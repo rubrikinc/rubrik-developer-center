@@ -18,6 +18,7 @@ Create a MySQL database instance Supported in v9.3+ Start an asynchronous job to
 mutation AddMysqlInstance($input: AddMysqldbInstanceInput!) {
   addMysqlInstance(input: $input) {
     id
+    kosmosTopologyStateId
   }
 }
 ```
@@ -47,6 +48,7 @@ mutation AddMysqlInstance($input: AddMysqldbInstanceInput!) {
   "data": {
     "addMysqlInstance": {
       "id": "example-string",
+      "kosmosTopologyStateId": "example-string",
       "asyncRequestStatus": {
         "endTime": "2024-01-01T00:00:00.000Z",
         "id": "example-string",

@@ -1,6 +1,6 @@
 # RequestSuccess
 
-Empty request type.
+Response returned for successful API requests.
 
 ## Fields
 

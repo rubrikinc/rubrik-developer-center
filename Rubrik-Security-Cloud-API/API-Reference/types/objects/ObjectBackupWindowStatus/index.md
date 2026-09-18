@@ -33,6 +33,9 @@ Represents the object-level backup window status of a hierarchy object.
 - [AwsNativeRegionHierarchyObject.objectBackupWindow](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AwsNativeRegionHierarchyObject/index.md)
 - [AwsNativeS3Bucket.objectBackupWindow](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AwsNativeS3Bucket/index.md)
 - [AzureAdDirectory.objectBackupWindow](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AzureAdDirectory/index.md)
+- [AzureCosmosNosqlAccount.objectBackupWindow](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AzureCosmosNosqlAccount/index.md)
+- [AzureCosmosNosqlContainer.objectBackupWindow](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AzureCosmosNosqlContainer/index.md)
+- [AzureCosmosNosqlDatabase.objectBackupWindow](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AzureCosmosNosqlDatabase/index.md)
 - [AzureDevOpsOrganization.objectBackupWindow](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AzureDevOpsOrganization/index.md)
 - [AzureDevOpsProject.objectBackupWindow](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AzureDevOpsProject/index.md)
 - [AzureDevOpsRepository.objectBackupWindow](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AzureDevOpsRepository/index.md)
@@ -40,9 +43,6 @@ Represents the object-level backup window status of a hierarchy object.
 - [AzureNativeManagedDisk.objectBackupWindow](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AzureNativeManagedDisk/index.md)
 - [AzureNativeRegionManagedObject.objectBackupWindow](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AzureNativeRegionManagedObject/index.md)
 - [AzureNativeResourceGroup.objectBackupWindow](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AzureNativeResourceGroup/index.md)
+- [AzureNativeResourceGroupBase.objectBackupWindow](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AzureNativeResourceGroupBase/index.md)
 - [AzureNativeSubscription.objectBackupWindow](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AzureNativeSubscription/index.md)
-- [AzureNativeVirtualMachine.objectBackupWindow](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AzureNativeVirtualMachine/index.md)
-- [AzurePostgresFlexibleServer.objectBackupWindow](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AzurePostgresFlexibleServer/index.md)
-- [AzureSqlDatabaseDb.objectBackupWindow](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AzureSqlDatabaseDb/index.md)
-- [AzureSqlDatabaseServer.objectBackupWindow](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AzureSqlDatabaseServer/index.md)
-- *…and 293 more*
+- *…and 328 more*

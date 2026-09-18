@@ -111,4 +111,4 @@ A snapshot of a workload managed by a Rubrik cluster.
 - [FusionComputeVirtualMachine.newestIndexedSnapshot](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/FusionComputeVirtualMachine/index.md)
 - [FusionComputeVirtualMachine.newestReplicatedSnapshot](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/FusionComputeVirtualMachine/index.md)
 - [FusionComputeVirtualMachine.newestSnapshot](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/FusionComputeVirtualMachine/index.md)
-- *…and 144 more*
+- *…and 159 more*

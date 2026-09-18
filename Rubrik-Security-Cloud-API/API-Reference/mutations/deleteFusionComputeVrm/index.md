@@ -1,6 +1,6 @@
 # deleteFusionComputeVrm
 
-Delete a FusionCompute VRM instance Supported in v9.6 Delete a FusionCompute VRM instance object and archive all associated objects.
+Delete a FusionCompute VRM instance Supported in v9.6+ Delete a FusionCompute VRM instance object and archive all associated objects.
 
 ## Arguments
 

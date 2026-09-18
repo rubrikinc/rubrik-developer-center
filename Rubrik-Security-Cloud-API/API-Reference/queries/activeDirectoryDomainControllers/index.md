@@ -29,6 +29,7 @@ query {
       cdmPendingObjectPauseAssignment
       dcLocation
       domainControllerGuid
+      forestRootDomainSid
       fsmoRoles
       hostname
       id

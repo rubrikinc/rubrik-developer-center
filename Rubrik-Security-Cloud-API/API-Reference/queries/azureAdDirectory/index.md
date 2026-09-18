@@ -24,6 +24,7 @@ query AzureAdDirectory($workloadFid: UUID!) {
     doesEventHubIngestionRequireAzureSignIn
     domainName
     eventHubConnectionStatus
+    eventHubPermissionsStatus
     exoHostType
     exocomputeId
     firstDeviceSnapshotTime
@@ -35,6 +36,7 @@ query AzureAdDirectory($workloadFid: UUID!) {
     isJitEnabled
     isProvisioned
     isRelic
+    isRubrikManagedApp
     latestAccessReviewScheduleDefinitionCount
     latestAdministrativeUnitsCount
     latestApplicationsCount

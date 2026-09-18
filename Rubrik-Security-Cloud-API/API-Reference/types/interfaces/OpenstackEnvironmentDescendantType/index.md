@@ -48,4 +48,10 @@ OpenStack Environment descendant.
 
 ## Implemented By
 
+- [OpenstackAvailabilityZone](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/OpenstackAvailabilityZone/index.md)
+- [OpenstackDomain](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/OpenstackDomain/index.md)
+- [OpenstackHost](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/OpenstackHost/index.md)
+- [OpenstackImage](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/OpenstackImage/index.md)
+- [OpenstackProject](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/OpenstackProject/index.md)
+- [OpenstackRegion](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/OpenstackRegion/index.md)
 - [OpenstackVirtualMachine](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/OpenstackVirtualMachine/index.md)

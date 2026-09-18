@@ -39,7 +39,7 @@ query TprStatusForNodeRemoval($input: TprStatusForNodeRemovalInput!) {
     "tprStatusForNodeRemoval": {
       "status": "APPROVED",
       "tprRequestId": "example-string",
-      "tprRule": "ASSIGN_TPR_ROLE"
+      "tprRule": "ASSIGN_COPY_SCHEDULE"
     }
   }
 }

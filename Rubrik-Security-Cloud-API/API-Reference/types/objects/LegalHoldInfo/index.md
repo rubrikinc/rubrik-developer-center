@@ -14,4 +14,5 @@ Contains information about the legal hold placed on the Snapshot.
 **Referenced by**
 
 - [CdmSnapshot.legalHoldInfo](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/CdmSnapshot/index.md)
+- [LegalHoldSnapshotDetail.legalHoldInfo](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/LegalHoldSnapshotDetail/index.md)
 - [PolarisSnapshot.legalHoldInfo](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/PolarisSnapshot/index.md)

@@ -1,6 +1,6 @@
 # SourceSslCertReqs
 
-*No description available.*
+SSL certificate requirements.
 
 ## Values
 

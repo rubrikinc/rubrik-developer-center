@@ -54,6 +54,7 @@ query AllLatestFeaturePermissionsForCloudAccounts($cloudVendor: CloudVendor!, $c
         "featurePermissions": [
           {
             "feature": "ALL",
+            "hasExocomputeLambdaRole": true,
             "permissionJson": "example-string",
             "version": 0
           }

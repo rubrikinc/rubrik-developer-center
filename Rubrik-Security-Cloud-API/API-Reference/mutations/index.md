@@ -36,7 +36,6 @@
 [addK8sProtectionSet](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/addK8sProtectionSet/index.md)\
 [addManagedVolume](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/addManagedVolume/index.md)\
 [addMongoSource](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/addMongoSource/index.md)\
-[addMosaicStore](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/addMosaicStore/index.md)\
 [addMssqlHost](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/addMssqlHost/index.md)\
 [addMysqlInstance](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/addMysqlInstance/index.md)\
 [addNodesToCloudCluster](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/addNodesToCloudCluster/index.md)\
@@ -339,7 +338,6 @@
 [deleteManagedVolume](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/deleteManagedVolume/index.md)\
 [deleteManagedVolumeSnapshotExport](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/deleteManagedVolumeSnapshotExport/index.md)\
 [deleteMongoSource](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/deleteMongoSource/index.md)\
-[deleteMosaicStore](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/deleteMosaicStore/index.md)\
 [deleteMssqlDbSnapshots](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/deleteMssqlDbSnapshots/index.md)\
 [deleteMssqlLiveMount](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/deleteMssqlLiveMount/index.md)\
 [deleteMvcProfiles](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/deleteMvcProfiles/index.md)\
@@ -368,6 +366,7 @@
 [deleteSecurityPolicy](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/deleteSecurityPolicy/index.md)\
 [deleteServiceAccountsFromAccount](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/deleteServiceAccountsFromAccount/index.md)\
 [deleteSmbDomain](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/deleteSmbDomain/index.md)\
+[deleteSnapshotsOfObjects](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/deleteSnapshotsOfObjects/index.md)\
 [deleteSnapshotsOfUnmanagedObjects](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/deleteSnapshotsOfUnmanagedObjects/index.md)\
 [deleteStorageArrays](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/deleteStorageArrays/index.md)\
 [deleteSyslogExportRule](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/deleteSyslogExportRule/index.md)\
@@ -437,6 +436,7 @@
 [downloadReportCsvAsync](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/downloadReportCsvAsync/index.md)\
 [downloadReportPdfAsync](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/downloadReportPdfAsync/index.md)\
 [downloadResultsCsv](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/downloadResultsCsv/index.md)\
+[downloadSalesforceArchivedRecords](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/downloadSalesforceArchivedRecords/index.md)\
 [downloadSalesforcePermissions](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/downloadSalesforcePermissions/index.md)\
 [downloadSapHanaSnapshot](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/downloadSapHanaSnapshot/index.md)\
 [downloadSapHanaSnapshotFromLocation](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/downloadSapHanaSnapshotFromLocation/index.md)\
@@ -475,6 +475,7 @@
 [expireMongoCollectionSetDownloadedSnapshots](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/expireMongoCollectionSetDownloadedSnapshots/index.md)\
 [expireMongoOpsManagerSourceDownloadedSnapshots](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/expireMongoOpsManagerSourceDownloadedSnapshots/index.md)\
 [expireSnoozedDirectories](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/expireSnoozedDirectories/index.md)\
+[exportExchangeDatabase](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/exportExchangeDatabase/index.md)\
 [exportFusionComputeSnapshot](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/exportFusionComputeSnapshot/index.md)\
 [exportHypervVirtualMachine](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/exportHypervVirtualMachine/index.md)\
 [exportK8sNamespace](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/exportK8sNamespace/index.md)\
@@ -806,6 +807,7 @@
 [startInPlaceDataMasking](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/startInPlaceDataMasking/index.md)\
 [startK8sDiagnosticsJob](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/startK8sDiagnosticsJob/index.md)\
 [startK8sVmMountJob](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/startK8sVmMountJob/index.md)\
+[startMssqlLogShippingApplyLogsJob](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/startMssqlLogShippingApplyLogsJob/index.md)\
 [startPeriodicUpgradePrechecksOnDemandJob](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/startPeriodicUpgradePrechecksOnDemandJob/index.md)\
 [startRecoverAzureNativeStorageAccountJob](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/startRecoverAzureNativeStorageAccountJob/index.md)\
 [startRecoverS3SnapshotJob](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/startRecoverS3SnapshotJob/index.md)\
@@ -817,6 +819,8 @@
 [startRscpPackageDownload](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/startRscpPackageDownload/index.md)\
 [startRscpUpgrade](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/startRscpUpgrade/index.md)\
 [startSaasAppItemsRestore](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/startSaasAppItemsRestore/index.md)\
+[startSalesforceArchivalJob](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/startSalesforceArchivalJob/index.md)\
+[startSalesforceObjectsUnarchive](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/startSalesforceObjectsUnarchive/index.md)\
 [startSalesforcePermissionAssessment](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/startSalesforcePermissionAssessment/index.md)\
 [startThreatHunt](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/startThreatHunt/index.md)\
 [startThreatHuntV2](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/startThreatHuntV2/index.md)\
@@ -945,7 +949,6 @@
 [updateManagedIdentitiesAsync](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/updateManagedIdentitiesAsync/index.md)\
 [updateManagedVolume](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/updateManagedVolume/index.md)\
 [updateManualTargetMapping](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/updateManualTargetMapping/index.md)\
-[updateMosaicStore](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/updateMosaicStore/index.md)\
 [updateMssqlDefaultProperties](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/updateMssqlDefaultProperties/index.md)\
 [updateMssqlLogShippingConfiguration](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/updateMssqlLogShippingConfiguration/index.md)\
 [updateMssqlLogShippingConfigurationV1](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/updateMssqlLogShippingConfigurationV1/index.md)\

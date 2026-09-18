@@ -1,6 +1,6 @@
 # Enums
 
-1219 types.
+1231 types.
 
 [AKSClusterAccessType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/AKSClusterAccessType/index.md)\
 [AKSNodeCountBucket](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/AKSNodeCountBucket/index.md)\
@@ -157,6 +157,9 @@
 [AzureCloudType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/AzureCloudType/index.md)\
 [AzureClusterStorageRedundancy](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/AzureClusterStorageRedundancy/index.md)\
 [AzureCommonRegion](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/AzureCommonRegion/index.md)\
+[AzureCosmosNosqlNetworkAccessMode](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/AzureCosmosNosqlNetworkAccessMode/index.md)\
+[AzureCosmosNosqlThroughputMode](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/AzureCosmosNosqlThroughputMode/index.md)\
+[AzureCosmosNosqlThroughputScope](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/AzureCosmosNosqlThroughputScope/index.md)\
 [AzureFeatureForPermissionCheck](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/AzureFeatureForPermissionCheck/index.md)\
 [AzureHostType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/AzureHostType/index.md)\
 [AzureInstanceType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/AzureInstanceType/index.md)\
@@ -299,6 +302,7 @@
 [ClusterKeyProtection](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/ClusterKeyProtection/index.md)\
 [ClusterKeyRotationState](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/ClusterKeyRotationState/index.md)\
 [ClusterLicenseInfoType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/ClusterLicenseInfoType/index.md)\
+[ClusterManagementType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/ClusterManagementType/index.md)\
 [ClusterNodePlatformType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/ClusterNodePlatformType/index.md)\
 [ClusterNodePosition](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/ClusterNodePosition/index.md)\
 [ClusterNodeRole](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/ClusterNodeRole/index.md)\
@@ -426,6 +430,7 @@
 [EntraIDIPRangeType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/EntraIDIPRangeType/index.md)\
 [EntraIDNamedLocationType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/EntraIDNamedLocationType/index.md)\
 [EntraIDRoleType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/EntraIDRoleType/index.md)\
+[EntraIdEventHubPermissionsStatus](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/EntraIdEventHubPermissionsStatus/index.md)\
 [EntraIdTokenIssuanceSigningAlgorithm](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/EntraIdTokenIssuanceSigningAlgorithm/index.md)\
 [EntraIdTokenResponseSigningPolicy](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/EntraIdTokenResponseSigningPolicy/index.md)\
 [EosStatus](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/EosStatus/index.md)\
@@ -671,6 +676,7 @@
 [Logging](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/Logging/index.md)\
 [LogicalOperator](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/LogicalOperator/index.md)\
 [LookBackWindow](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/LookBackWindow/index.md)\
+[M365AccessMode](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/M365AccessMode/index.md)\
 [M365AccessRecoveryState](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/M365AccessRecoveryState/index.md)\
 [M365Cloud](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/M365Cloud/index.md)\
 [M365DashboardOperationMode](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/M365DashboardOperationMode/index.md)\
@@ -714,7 +720,6 @@
 [MongoSslCertificateRequirement](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/MongoSslCertificateRequirement/index.md)\
 [MongoType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/MongoType/index.md)\
 [Month](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/Month/index.md)\
-[MosaicAddStoreRequestStoreType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/MosaicAddStoreRequestStoreType/index.md)\
 [MosaicSourceNosqlSourceType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/MosaicSourceNosqlSourceType/index.md)\
 [MountState](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/MountState/index.md)\
 [MssqlAvailabilityGroupDatabaseVirtualGroupFilterField](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/MssqlAvailabilityGroupDatabaseVirtualGroupFilterField/index.md)\
@@ -802,10 +807,13 @@
 [ObjectTypeAccessSummaryGroupBy](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/ObjectTypeAccessSummaryGroupBy/index.md)\
 [ObjectTypeAccessSummarySortBy](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/ObjectTypeAccessSummarySortBy/index.md)\
 [ObjectTypeEnum](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/ObjectTypeEnum/index.md)\
+[OlvmBackupScriptFailureHandling](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/OlvmBackupScriptFailureHandling/index.md)\
+[OlvmSnapshotConsistencyMandate](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/OlvmSnapshotConsistencyMandate/index.md)\
 [OnPremAdSupportedEncryptionTypes](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/OnPremAdSupportedEncryptionTypes/index.md)\
 [OnedriveSearchKeywordType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/OnedriveSearchKeywordType/index.md)\
 [OnedriveSearchObjectType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/OnedriveSearchObjectType/index.md)\
 [OpenAccessType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/OpenAccessType/index.md)\
+[OpenstackImageVisibilityType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/OpenstackImageVisibilityType/index.md)\
 [OperatingSystemType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/OperatingSystemType/index.md)\
 [Operation](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/Operation/index.md)\
 [Operator](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/Operator/index.md)\
@@ -908,6 +916,7 @@
 [RecoveryMethod](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/RecoveryMethod/index.md)\
 [RecoveryOutcome](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/RecoveryOutcome/index.md)\
 [RecoveryPlanFilterOp](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/RecoveryPlanFilterOp/index.md)\
+[RecoveryPlanSortType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/RecoveryPlanSortType/index.md)\
 [RecoveryPlanStatus](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/RecoveryPlanStatus/index.md)\
 [RecoveryPlanType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/RecoveryPlanType/index.md)\
 [RecoveryPurpose](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/RecoveryPurpose/index.md)\
@@ -921,6 +930,8 @@
 [RecoveryType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/RecoveryType/index.md)\
 [RefreshableObjectConnectionStatusType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/RefreshableObjectConnectionStatusType/index.md)\
 [RegisteredMode](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/RegisteredMode/index.md)\
+[RegistryHiveRoot](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/RegistryHiveRoot/index.md)\
+[RegistryValueType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/RegistryValueType/index.md)\
 [Relationship](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/Relationship/index.md)\
 [RelationshipConflictResolutionState](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/RelationshipConflictResolutionState/index.md)\
 [RelationshipType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/RelationshipType/index.md)\
@@ -979,6 +990,7 @@
 [SaasOrganizationStatus](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/SaasOrganizationStatus/index.md)\
 [SailPointStatusCode](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/SailPointStatusCode/index.md)\
 [SalesforceObjectBackupType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/SalesforceObjectBackupType/index.md)\
+[SalesforceRelationshipType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/SalesforceRelationshipType/index.md)\
 [SamlAttributeType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/SamlAttributeType/index.md)\
 [SapHanaDataPathType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/SapHanaDataPathType/index.md)\
 [SapHanaEncryptionProvider](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/SapHanaEncryptionProvider/index.md)\

@@ -33,6 +33,7 @@ query DevOpsCloudAccountListLatestPermissions($input: DevOpsCloudAccountListLate
       "featurePermissions": [
         {
           "feature": "ALL",
+          "hasExocomputeLambdaRole": true,
           "permissionJson": "example-string",
           "version": 0
         }

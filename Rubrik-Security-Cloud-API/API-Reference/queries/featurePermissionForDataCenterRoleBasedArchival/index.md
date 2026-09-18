@@ -18,6 +18,7 @@ Retrieves a list of AWS permissions required for Data Center Role Based Archival
 query FeaturePermissionForDataCenterRoleBasedArchival($permissionsGroups: [PermissionsGroup!]!) {
   featurePermissionForDataCenterRoleBasedArchival(permissionsGroups: $permissionsGroups) {
     feature
+    hasExocomputeLambdaRole
     permissionJson
     version
   }
@@ -37,6 +38,7 @@ query FeaturePermissionForDataCenterRoleBasedArchival($permissionsGroups: [Permi
   "data": {
     "featurePermissionForDataCenterRoleBasedArchival": {
       "feature": "ALL",
+      "hasExocomputeLambdaRole": true,
       "permissionJson": "example-string",
       "version": 0,
       "permissionsGroupVersions": [

@@ -1,6 +1,6 @@
 # failoverHaPolicy
 
-Failover a failover group Supported in v9.5 Starts an asynchronous request to failover a failover group when issued to a secondary cluster.
+Failover a failover group Supported in v9.5+ Starts an asynchronous request to failover a failover group when issued to a secondary cluster.
 
 ## Arguments
 

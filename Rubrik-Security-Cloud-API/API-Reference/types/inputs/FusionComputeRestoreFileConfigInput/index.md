@@ -4,7 +4,7 @@ Configuration for restoring a single file or folder from backup, specifying the 
 
 ## Fields
 
-| Field       | Type    | Description                                                                     |
-| ----------- | ------- | ------------------------------------------------------------------------------- |
-| path        | String! | Required. Absolute path of the source file or folder to restore.                |
-| restorePath | String! | Required. Absolute path of the target location for the restored file or folder. |
+| Field       | Type    | Description                                                                                        |
+| ----------- | ------- | -------------------------------------------------------------------------------------------------- |
+| path        | String! | Required. Supported in v9.6+ Absolute path of the source file or folder to restore.                |
+| restorePath | String! | Required. Supported in v9.6+ Absolute path of the target location for the restored file or folder. |

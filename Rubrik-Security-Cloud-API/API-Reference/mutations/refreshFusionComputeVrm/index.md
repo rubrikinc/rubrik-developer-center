@@ -1,6 +1,6 @@
 # refreshFusionComputeVrm
 
-Refresh the FusionCompute VRM metadata Supported in v9.6 Create a job to refresh the metadata for the specified FusionCompute VRM instance.
+Refresh the FusionCompute VRM metadata Supported in v9.6+ Create a job to refresh the metadata for the specified FusionCompute VRM instance.
 
 ## Arguments
 

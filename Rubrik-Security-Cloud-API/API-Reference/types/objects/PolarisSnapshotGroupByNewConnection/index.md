@@ -22,7 +22,9 @@ Paginated list of PolarisSnapshotGroupByNew objects. Each page of the results in
 - [AwsNativeRdsInstance.snapshotGroupByNewConnection](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AwsNativeRdsInstance/index.md)
 - [AwsNativeS3Bucket.snapshotGroupByNewConnection](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AwsNativeS3Bucket/index.md)
 - [AzureAdDirectory.snapshotGroupByNewConnection](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AzureAdDirectory/index.md)
+- [AzureCosmosNosqlContainer.snapshotGroupByNewConnection](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AzureCosmosNosqlContainer/index.md)
 - [AzureDevOpsRepository.snapshotGroupByNewConnection](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AzureDevOpsRepository/index.md)
+- AzureNativeHierarchyObjectType.snapshotGroupByNewConnection
 - [AzureNativeManagedDisk.snapshotGroupByNewConnection](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AzureNativeManagedDisk/index.md)
 - [AzureNativeVirtualMachine.snapshotGroupByNewConnection](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AzureNativeVirtualMachine/index.md)
 - [AzurePostgresFlexibleServer.snapshotGroupByNewConnection](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AzurePostgresFlexibleServer/index.md)
@@ -43,6 +45,4 @@ Paginated list of PolarisSnapshotGroupByNew objects. Each page of the results in
 - [M365BackupStorageOrg.snapshotGroupByNewConnection](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/M365BackupStorageOrg/index.md)
 - [M365BackupStorageSite.snapshotGroupByNewConnection](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/M365BackupStorageSite/index.md)
 - MicrosoftGroup.snapshotGroupByNewConnection
-- MicrosoftMailbox.snapshotGroupByNewConnection
-- MicrosoftOnedrive.snapshotGroupByNewConnection
-- *…and 14 more*
+- *…and 16 more*

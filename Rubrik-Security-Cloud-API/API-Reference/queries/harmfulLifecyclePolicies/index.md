@@ -23,6 +23,7 @@ query {
   harmfulLifecyclePolicies(first: 10) {
     nodes {
       bucketName
+      cloudAccountName
       defaultStorageClass
       locationId
       locationName
@@ -50,11 +51,11 @@ query {
         [
           {
             "bucketName": "example-string",
+            "cloudAccountName": "example-string",
             "defaultStorageClass": "example-string",
             "locationId": "00000000-0000-0000-0000-000000000000",
             "locationName": "example-string",
-            "locationType": "AWS",
-            "region": "example-string"
+            "locationType": "AWS"
           }
         ]
       ],

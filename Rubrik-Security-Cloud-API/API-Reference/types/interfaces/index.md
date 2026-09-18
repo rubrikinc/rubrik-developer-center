@@ -1,6 +1,6 @@
 # Interfaces
 
-190 types.
+204 types.
 
 [ActiveDirectoryDomainDescendantType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/ActiveDirectoryDomainDescendantType/index.md)\
 [ActiveDirectoryDomainPhysicalChildType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/ActiveDirectoryDomainPhysicalChildType/index.md)\
@@ -114,6 +114,14 @@
 [O365TeamsChannelObject](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/O365TeamsChannelObject/index.md)\
 [O365UserDescendant](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/O365UserDescendant/index.md)\
 [O365UserDescendantMetadata](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/O365UserDescendantMetadata/index.md)\
+[OlvmComputeClusterDescendant](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/OlvmComputeClusterDescendant/index.md)\
+[OlvmComputeClusterPhysicalChildType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/OlvmComputeClusterPhysicalChildType/index.md)\
+[OlvmDatacenterDescendant](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/OlvmDatacenterDescendant/index.md)\
+[OlvmDatacenterPhysicalChildType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/OlvmDatacenterPhysicalChildType/index.md)\
+[OlvmManagerDescendant](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/OlvmManagerDescendant/index.md)\
+[OlvmManagerPhysicalChildType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/OlvmManagerPhysicalChildType/index.md)\
+[OlvmTagDescendant](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/OlvmTagDescendant/index.md)\
+[OlvmTagLogicalChild](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/OlvmTagLogicalChild/index.md)\
 [OpenstackAvailabilityZoneDescendantType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/OpenstackAvailabilityZoneDescendantType/index.md)\
 [OpenstackAvailabilityZonePhysicalChildType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/OpenstackAvailabilityZonePhysicalChildType/index.md)\
 [OpenstackDomainDescendantType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/OpenstackDomainDescendantType/index.md)\
@@ -142,6 +150,12 @@
 [PolarisHierarchySnappable](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/PolarisHierarchySnappable/index.md)\
 [PolarisSpecificSnapshot](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/PolarisSpecificSnapshot/index.md)\
 [ProtectedObjectSummary](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/ProtectedObjectSummary/index.md)\
+[ProxmoxClusterDescendant](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/ProxmoxClusterDescendant/index.md)\
+[ProxmoxClusterPhysicalChildType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/ProxmoxClusterPhysicalChildType/index.md)\
+[ProxmoxEnvironmentDescendant](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/ProxmoxEnvironmentDescendant/index.md)\
+[ProxmoxEnvironmentPhysicalChildType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/ProxmoxEnvironmentPhysicalChildType/index.md)\
+[ProxmoxNodeDescendant](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/ProxmoxNodeDescendant/index.md)\
+[ProxmoxNodePhysicalChildType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/ProxmoxNodePhysicalChildType/index.md)\
 [PureStorageArrayDescendantV1](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/PureStorageArrayDescendantV1/index.md)\
 [PureStorageArrayLogicalChildType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/PureStorageArrayLogicalChildType/index.md)\
 [RequestedChangesTemplate](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/RequestedChangesTemplate/index.md)\

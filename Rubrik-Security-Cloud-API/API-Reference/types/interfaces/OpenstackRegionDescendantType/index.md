@@ -48,4 +48,7 @@ OpenStack Region descendant.
 
 ## Implemented By
 
+- [OpenstackAvailabilityZone](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/OpenstackAvailabilityZone/index.md)
+- [OpenstackHost](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/OpenstackHost/index.md)
+- [OpenstackImage](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/OpenstackImage/index.md)
 - [OpenstackVirtualMachine](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/OpenstackVirtualMachine/index.md)

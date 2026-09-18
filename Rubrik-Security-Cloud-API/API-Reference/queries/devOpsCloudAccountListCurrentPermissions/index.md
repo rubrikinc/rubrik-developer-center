@@ -35,6 +35,7 @@ query DevOpsCloudAccountListCurrentPermissions($input: DevOpsCloudAccountListCur
       "featurePermissions": [
         {
           "feature": "ALL",
+          "hasExocomputeLambdaRole": true,
           "permissionJson": "example-string",
           "version": 0
         }

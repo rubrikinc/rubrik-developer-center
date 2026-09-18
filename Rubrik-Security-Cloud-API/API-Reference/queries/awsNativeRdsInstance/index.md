@@ -29,6 +29,7 @@ query AwsNativeRdsInstance($rdsInstanceRubrikId: UUID!) {
     dbiResourceId
     id
     isExocomputeConfigured
+    isInfrastructureAlertsEnabled
     isMultiAz
     isProtectable
     isRelic

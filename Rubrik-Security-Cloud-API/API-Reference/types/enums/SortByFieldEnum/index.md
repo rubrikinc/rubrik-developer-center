@@ -1,12 +1,12 @@
 # SortByFieldEnum
 
-*No description available.*
+Sorting field for the aggregate custom report sort-by input, covering all report focus domains.
 
 ## Values
 
 | Value                       | Description                                                              |
 | --------------------------- | ------------------------------------------------------------------------ |
-| ANALYZER_NAME               |                                                                          |
+| ANALYZER_NAME               | Sort by analyzer name.                                                   |
 | ANOMALY_PROBABILITY         | Probability of anomaly.                                                  |
 | AVAILABLE_SPACE_PERCENT     | Percentage of available storage space in the cluster.                    |
 | ActivityStatus              | Sort by activity status.                                                 |
@@ -21,7 +21,7 @@
 | BYTES_DELETED_COUNT         | Count of deleted bytes.                                                  |
 | BYTES_MODIFIED_COUNT        | Count of modified bytes.                                                 |
 | BYTES_NET_CHANGED_COUNT     | Count of changed bytes.                                                  |
-| CLUSTER                     |                                                                          |
+| CLUSTER                     | Sort by cluster (sensitive data content reports).                        |
 | CLUSTER_LOCATION            | Location of the Rubrik cluster.                                          |
 | CLUSTER_UUID                | Unique ID of the cluster.                                                |
 | Cluster                     | Sort by the cluster that the workload belongs to.                        |
@@ -33,12 +33,12 @@
 | FILES_CREATED_COUNT         | Count of created files.                                                  |
 | FILES_DELETED_COUNT         | Count of deleted files.                                                  |
 | FILES_MODIFIED_COUNT        | Count of modified files.                                                 |
-| FILES_WITH_HITS             |                                                                          |
-| FILE_NAME                   |                                                                          |
+| FILES_WITH_HITS             | Sort by files with hits count.                                           |
+| FILE_NAME                   | Sort by file name.                                                       |
 | INSTALLED_VERSION           | Version of the installed Rubrik cluster.                                 |
 | IS_ANOMALY                  | Specifies whether the result is an anomaly.                              |
 | IS_ENCRYPTED                | Specifies whether the result is encrypted.                               |
-| LOCATION                    |                                                                          |
+| LOCATION                    | Sort by location (sensitive data content reports).                       |
 | LastSnapshot                | Sort by the time of the most recent snapshot of the workload.            |
 | LastUpdated                 | Sort by last updated time.                                               |
 | LatestArchivalSnapshot      | Sort by the time of the most recent archived snapshot of the workload.   |
@@ -51,19 +51,19 @@
 | LogicalDataReduction        | Sort by the logical data reduction ratio of the workload.                |
 | MANAGED_ID                  | Managed ID of the object.                                                |
 | MissedSnapshots             | Sort by the number of snapshots that were missed for the workload.       |
-| NUM_HIGH_RISK_LOCATIONS     |                                                                          |
-| NUM_OBJECTS                 |                                                                          |
-| NUM_VIOLATED_FILES          |                                                                          |
-| NUM_VIOLATION               |                                                                          |
+| NUM_HIGH_RISK_LOCATIONS     | Sort by number of high-risk locations.                                   |
+| NUM_OBJECTS                 | Sort by number of covered objects.                                       |
+| NUM_VIOLATED_FILES          | Sort by number of violated files.                                        |
+| NUM_VIOLATION               | Sort by number of violations.                                            |
 | Name                        | Sort by the name of the workload.                                        |
-| OBJECT_NAME                 |                                                                          |
+| OBJECT_NAME                 | Sort by object name (anomaly reports).                                   |
 | OBJECT_STATE                | Sort by the state of the workload.                                       |
-| OBJECT_TYPE                 | Type of the object.                                                      |
+| OBJECT_TYPE                 | Type of the object (anomaly reports).                                    |
 | ObjectName                  | Sort by object name.                                                     |
 | ObjectType                  | Sort by object type.                                                     |
-| PATH                        |                                                                          |
-| POLICY_NAME                 |                                                                          |
-| POLICY_STATUS               |                                                                          |
+| PATH                        | Sort by file path.                                                       |
+| POLICY_NAME                 | Sort by policy name.                                                     |
+| POLICY_STATUS               | Sort by policy status.                                                   |
 | PREVIOUS_SNAPSHOT_DATE      | Date of the previous snapshot.                                           |
 | PREVIOUS_SNAPSHOT_ID        | Id of the previous snapshot.                                             |
 | PULL_TIME                   | Sort by the time at which the workload data was pulled from the cluster. |
@@ -75,17 +75,17 @@
 | ReplicationComplianceStatus | Sort by the replication compliance status of the workload.               |
 | ReplicationSnapshotLag      | Sort by the replication lag of the workload.                             |
 | SEVERITY                    | Severity of the anomaly.                                                 |
-| SIZE                        |                                                                          |
-| SLA_DOMAIN                  |                                                                          |
+| SIZE                        | Sort by file size.                                                       |
+| SLA_DOMAIN                  | Sort by SLA Domain.                                                      |
 | SNAPSHOT_DATE               | Date of the snapshot.                                                    |
 | SNAPSHOT_ID                 | Id of the snapshot.                                                      |
-| SNAPSHOT_TIME               |                                                                          |
+| SNAPSHOT_TIME               | Sort by snapshot time.                                                   |
 | SUSPICIOUS_FILES_COUNT      | Count of suspicious files.                                               |
 | Severity                    | Sort by severity.                                                        |
 | SlaDomainName               | Sort by the name of the SLA Domain assigned to the workload.             |
 | SourceSiteName              | Sort by the source site name.                                            |
 | StartTime                   | Sort by the start time of the failover.                                  |
-| TOTAL_HITS                  |                                                                          |
+| TOTAL_HITS                  | Sort by total hits.                                                      |
 | TargetSiteName              | Sort by the target site name.                                            |
 | Time                        | Sort user audits by time.                                                |
 | TotalSnapshots              | Sort by the total number of snapshots of the workload.                   |

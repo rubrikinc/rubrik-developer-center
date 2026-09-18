@@ -82,13 +82,13 @@ A cloud-managed snapshot type that extends the generic snapshot with additional 
 - [AzureAdDirectory.newestIndexedSnapshot](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AzureAdDirectory/index.md)
 - [AzureAdDirectory.newestSnapshot](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AzureAdDirectory/index.md)
 - [AzureAdDirectory.oldestSnapshot](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AzureAdDirectory/index.md)
+- [AzureCosmosNosqlContainer.newestIndexedSnapshot](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AzureCosmosNosqlContainer/index.md)
+- [AzureCosmosNosqlContainer.newestSnapshot](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AzureCosmosNosqlContainer/index.md)
+- [AzureCosmosNosqlContainer.oldestSnapshot](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AzureCosmosNosqlContainer/index.md)
 - [AzureDevOpsRepository.newestIndexedSnapshot](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AzureDevOpsRepository/index.md)
 - [AzureDevOpsRepository.newestSnapshot](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AzureDevOpsRepository/index.md)
 - [AzureDevOpsRepository.oldestSnapshot](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AzureDevOpsRepository/index.md)
-- [AzureNativeManagedDisk.newestIndexedSnapshot](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AzureNativeManagedDisk/index.md)
-- [AzureNativeManagedDisk.newestSnapshot](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AzureNativeManagedDisk/index.md)
-- [AzureNativeManagedDisk.oldestSnapshot](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AzureNativeManagedDisk/index.md)
-- [AzureNativeVirtualMachine.newestIndexedSnapshot](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AzureNativeVirtualMachine/index.md)
-- [AzureNativeVirtualMachine.newestSnapshot](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AzureNativeVirtualMachine/index.md)
-- [AzureNativeVirtualMachine.oldestSnapshot](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AzureNativeVirtualMachine/index.md)
-- *…and 102 more*
+- AzureNativeHierarchyObjectType.newestIndexedSnapshot
+- AzureNativeHierarchyObjectType.newestSnapshot
+- AzureNativeHierarchyObjectType.oldestSnapshot
+- *…and 108 more*
