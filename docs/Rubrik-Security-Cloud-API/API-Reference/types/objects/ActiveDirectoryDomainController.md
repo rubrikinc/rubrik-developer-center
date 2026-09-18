@@ -25,6 +25,7 @@ Active Directory Domain Controller.
 | effectiveRetentionSlaDomain | [SlaDomain](../interfaces/SlaDomain.md) | Effective retention of the SLA Domain of the hierarchy object. |
 | effectiveSlaDomain | [SlaDomain](../interfaces/SlaDomain.md)! | Effective SLA Domain of the hierarchy object. |
 | effectiveSlaSourceObject | [PathNode](PathNode.md) | Path node of the effective SLA Domain source. |
+| forestRootDomainSid | String | The SID of the root domain of the forest this domain controller belongs to. This is the Active Directory scope key, and is null when the forest cannot be resolved. |
 | fsmoRoles | [[FsmoRoles](../enums/FsmoRoles.md)!]! | Different master roles played by the Domain Controller. |
 | host | [PhysicalHost](PhysicalHost.md) | Host information of this Active Directory Domain Controller. |
 | hostname | String! | Name of the host. |

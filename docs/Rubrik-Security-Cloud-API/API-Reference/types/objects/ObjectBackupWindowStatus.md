@@ -33,6 +33,9 @@ Represents the object-level backup window status of a hierarchy object.
 - [AwsNativeRegionHierarchyObject.objectBackupWindow](AwsNativeRegionHierarchyObject.md)
 - [AwsNativeS3Bucket.objectBackupWindow](AwsNativeS3Bucket.md)
 - [AzureAdDirectory.objectBackupWindow](AzureAdDirectory.md)
+- [AzureCosmosNosqlAccount.objectBackupWindow](AzureCosmosNosqlAccount.md)
+- [AzureCosmosNosqlContainer.objectBackupWindow](AzureCosmosNosqlContainer.md)
+- [AzureCosmosNosqlDatabase.objectBackupWindow](AzureCosmosNosqlDatabase.md)
 - [AzureDevOpsOrganization.objectBackupWindow](AzureDevOpsOrganization.md)
 - [AzureDevOpsProject.objectBackupWindow](AzureDevOpsProject.md)
 - [AzureDevOpsRepository.objectBackupWindow](AzureDevOpsRepository.md)
@@ -40,9 +43,6 @@ Represents the object-level backup window status of a hierarchy object.
 - [AzureNativeManagedDisk.objectBackupWindow](AzureNativeManagedDisk.md)
 - [AzureNativeRegionManagedObject.objectBackupWindow](AzureNativeRegionManagedObject.md)
 - [AzureNativeResourceGroup.objectBackupWindow](AzureNativeResourceGroup.md)
+- [AzureNativeResourceGroupBase.objectBackupWindow](AzureNativeResourceGroupBase.md)
 - [AzureNativeSubscription.objectBackupWindow](AzureNativeSubscription.md)
-- [AzureNativeVirtualMachine.objectBackupWindow](AzureNativeVirtualMachine.md)
-- [AzurePostgresFlexibleServer.objectBackupWindow](AzurePostgresFlexibleServer.md)
-- [AzureSqlDatabaseDb.objectBackupWindow](AzureSqlDatabaseDb.md)
-- [AzureSqlDatabaseServer.objectBackupWindow](AzureSqlDatabaseServer.md)
-- *…and 293 more*
+- *…and 328 more*

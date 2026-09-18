@@ -42,7 +42,7 @@ Update a TPR policy.
               "workloadHierarchy": "ANTHROPIC_CHILD_ORG_SETTINGS"
             },
             "tprRules": [
-              "ASSIGN_TPR_ROLE"
+              "ASSIGN_COPY_SCHEDULE"
             ]
           }
         ]

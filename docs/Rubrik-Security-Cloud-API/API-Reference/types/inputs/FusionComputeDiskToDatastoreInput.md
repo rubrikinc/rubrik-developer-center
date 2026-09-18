@@ -6,5 +6,5 @@ Mapping of a FusionCompute disk to a target datastore.
 
 | Field | Type | Description |
 |-------|------|-------------|
-| datastoreId | [UUID](../scalars/UUID.md)! | Required. ID of the target datastore. |
-| diskId | String! | Required. ID of the disk. |
+| datastoreId | [UUID](../scalars/UUID.md)! | Required. Supported in v9.6+ ID of the target datastore. |
+| diskId | String! | Required. Supported in v9.6+ ID of the disk. |

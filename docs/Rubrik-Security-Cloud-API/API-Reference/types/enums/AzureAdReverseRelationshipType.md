@@ -14,7 +14,7 @@ Reverse relationships of an Azure Active Directory object.
 | BOUND_TO_CONFIG | Intune policy object referenced by a config binding. |
 | CATALOG_ROLE_ASSIGNMENT_OF | Granted an Entitlement Management (EM) catalog-scoped role assignment (User, Group, or ServicePrincipal). |
 | DIRECT_REPORT | Direct report of a manager. |
-| EXTENDED_SSO_POLICY | Application that owns a directory extension used by a claims mapping policy. |
+| EXTENDED_SSO_POLICY *(deprecated: The SsoPolicyExtension relationship has been removed.)* | Application that owns a directory extension used by a claims mapping policy. |
 | INCLUDED_IN_POLICY | Component of a policy. For example, a named location included in the policy. |
 | INCOMPATIBLE_ACCESS_PACKAGE_OF | Access Package marked incompatible with another Access Package. |
 | INCOMPATIBLE_GROUP_OF | Group marked incompatible with an Access Package. |

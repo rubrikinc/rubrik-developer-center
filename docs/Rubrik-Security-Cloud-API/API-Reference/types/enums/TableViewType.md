@@ -18,6 +18,7 @@ All valid table views.
 | ANOMALY_DETECTION_COMPLIANCE_TABLE | Anomaly detection compliance report table. |
 | AUDIT_ALL_TABLE | Table showing audits. |
 | BACKUP_STRIKE_BY_OBJECT_TABLE | Table displaying back up strikes for each object. |
+| CDM_USER_ALL_TABLE | Main table for the CDM Users report. |
 | CLOUD_COMPLIANCE_ALL_TABLE | All cloud-native objects with compliance status (Cloud Compliance Report). |
 | CLOUD_COMPLIANCE_BY_CLOUD_ACCOUNT_TABLE | Cloud Compliance Report grouped by cloud account name. |
 | CLOUD_COMPLIANCE_BY_LOCATION_TABLE | Cloud Compliance Report grouped by source location. |

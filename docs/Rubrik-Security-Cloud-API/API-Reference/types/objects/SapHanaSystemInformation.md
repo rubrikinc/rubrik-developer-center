@@ -11,6 +11,7 @@ Additional info about the SAP HANA system.
 | azureFeatureUuid | [UUID](../scalars/UUID.md) | UUID of Azure feature linked to the SAP HANA system. |
 | hanaVersion | String! | SAP HANA version installed on the system. |
 | isDtEnabled | Boolean! | Specifies whether Dynamic Tiering service is enabled for the SAP HANA system. |
+| isLssSupported | Boolean! | Specifies whether the SAP HANA system supports LSS (Local Secure Store) backup encryption. |
 
 ## Used By
 

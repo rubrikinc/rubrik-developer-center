@@ -35,6 +35,9 @@ Represents security metadata of a workload.
 - [AwsNativeRegionHierarchyObject.securityMetadata](AwsNativeRegionHierarchyObject.md)
 - [AwsNativeS3Bucket.securityMetadata](AwsNativeS3Bucket.md)
 - [AzureAdDirectory.securityMetadata](AzureAdDirectory.md)
+- [AzureCosmosNosqlAccount.securityMetadata](AzureCosmosNosqlAccount.md)
+- [AzureCosmosNosqlContainer.securityMetadata](AzureCosmosNosqlContainer.md)
+- [AzureCosmosNosqlDatabase.securityMetadata](AzureCosmosNosqlDatabase.md)
 - [AzureDevOpsOrganization.securityMetadata](AzureDevOpsOrganization.md)
 - [AzureDevOpsProject.securityMetadata](AzureDevOpsProject.md)
 - [AzureDevOpsRepository.securityMetadata](AzureDevOpsRepository.md)
@@ -42,9 +45,6 @@ Represents security metadata of a workload.
 - [AzureNativeManagedDisk.securityMetadata](AzureNativeManagedDisk.md)
 - [AzureNativeRegionManagedObject.securityMetadata](AzureNativeRegionManagedObject.md)
 - [AzureNativeResourceGroup.securityMetadata](AzureNativeResourceGroup.md)
+- [AzureNativeResourceGroupBase.securityMetadata](AzureNativeResourceGroupBase.md)
 - [AzureNativeSubscription.securityMetadata](AzureNativeSubscription.md)
-- [AzureNativeVirtualMachine.securityMetadata](AzureNativeVirtualMachine.md)
-- [AzurePostgresFlexibleServer.securityMetadata](AzurePostgresFlexibleServer.md)
-- [AzureSqlDatabaseDb.securityMetadata](AzureSqlDatabaseDb.md)
-- [AzureSqlDatabaseServer.securityMetadata](AzureSqlDatabaseServer.md)
-- *…and 293 more*
+- *…and 328 more*

@@ -2,7 +2,7 @@
 
 FusionCompute site.
 
-**Implements:** [HierarchyObject](../interfaces/HierarchyObject.md), [CdmHierarchyObject](../interfaces/CdmHierarchyObject.md), [FusionComputeVrmDescendant](../interfaces/FusionComputeVrmDescendant.md), [FusionComputeVrmPhysicalChildType](../interfaces/FusionComputeVrmPhysicalChildType.md)
+**Implements:** [CdmHierarchyObject](../interfaces/CdmHierarchyObject.md), [HierarchyObject](../interfaces/HierarchyObject.md), [FusionComputeVrmDescendant](../interfaces/FusionComputeVrmDescendant.md), [FusionComputeVrmPhysicalChildType](../interfaces/FusionComputeVrmPhysicalChildType.md)
 
 ## Fields
 

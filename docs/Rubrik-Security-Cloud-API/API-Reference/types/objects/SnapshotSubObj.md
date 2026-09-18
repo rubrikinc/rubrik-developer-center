@@ -9,6 +9,7 @@ DataType representing the sub objects captured in a snapshot.
 | nutanixVmSubObj | [NutanixVmSubObject](NutanixVmSubObject.md) | A virtual disk captured in a Nutanix virtual machine snapshot. |
 | olvmVmSubObj | [OlvmVmSubObject](OlvmVmSubObject.md) | A virtual disk captured in an OLVM virtual machine snapshot. |
 | openstackVmSubObj | [OpenstackVmSubObject](OpenstackVmSubObject.md) | A virtual disk captured in an Openstack virtual machine snapshot. |
+| proxmoxVmSubObj | [ProxmoxVmSubObject](ProxmoxVmSubObject.md) | A virtual disk captured in a Proxmox virtual machine snapshot. |
 | vmwareVmSubObj | [VmwareVmSubObject](VmwareVmSubObject.md) | A virtual disk captured in a VMware virtual machine snapshot. |
 | volumeGroupSubObj | [VolumeGroupSubObject](VolumeGroupSubObject.md) | A volume captured in a volume group snapshot. |
 

@@ -1,6 +1,6 @@
 # snappableGroupByConnection
 
-*No description available.*
+Returns a paginated connection of workload group-by nodes.
 
 ## Arguments
 
@@ -12,8 +12,8 @@
 | before | String | Returns the elements in the list that occur before the specified cursor. |
 | groupBy *(required)* | [SnappableGroupByEnum](../types/enums/SnappableGroupByEnum.md)! | Group workloads by field. |
 | filter | [SnappableGroupByFilterInput](../types/inputs/SnappableGroupByFilterInput.md) | Filter workloads by groups. |
-| timezoneOffset | Float | Offset based on the customer timezone. |
-| requestedAggregations | [[SnappableAggregationsEnum](../types/enums/SnappableAggregationsEnum.md)!] | List of workload aggregations to retrieve. You can significantly reduce the runtime of the query by specifying a subset of aggregations to retrieve. |
+| timezoneOffset | Float | Browser timezone offset in hours for time-bucket alignment. |
+| requestedAggregations | [[SnappableAggregationsEnum](../types/enums/SnappableAggregationsEnum.md)!] | Aggregation columns to compute. |
 
 ## Returns
 

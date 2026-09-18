@@ -11,6 +11,7 @@ Configuration to initiate recovery of AzureAdDirectory with multiple passwords.
 | cleanRecoverySessionId | [UUID](../scalars/UUID.md) | Identifier of the clean-recovery session being committed. When set, the operator-approved set of objects and attributes is read from the granular-recovery data written during StartCleanRecovery, and the in-request selection is ignored. |
 | ctrConfig | [EntraIdCrossTenantRecoveryConfig](EntraIdCrossTenantRecoveryConfig.md) | Configuration for cross tenant recovery. |
 | forceChangePasswordWithMfa | Boolean! | Specifies whether to enable MFA during the recovery of one or more users. |
+| m365RecoveryOptions | [M365RecoveryOptionsInput](M365RecoveryOptionsInput.md) | Options for automated M365 Access Recovery. When absent, no M365 recovery runs and the restore proceeds as a standard granular recovery. |
 | objectRecoveryOptions | [ObjectRecoveryOptionsType](ObjectRecoveryOptionsType.md) | Represents recovery options for every AzureAdObjectType. |
 | objectTypeToIdMap | [[ObjectInfoType](ObjectInfoType.md)!]! | Map of azureAdObjectType to object IDs. |
 | objectsToDelete | [[ObjectInfoType](ObjectInfoType.md)!] | List of Entra ID objects to soft-delete from the target tenant after restore completes. |

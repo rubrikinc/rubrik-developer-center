@@ -44,6 +44,7 @@ A Rubrik CDM Cluster.
 | lambdaFeatureHistory | [LambdaFeatureHistory](LambdaFeatureHistory.md) | Lambda feature history. |
 | lastConnectionTime | [DateTime](../scalars/DateTime.md) | The time the cluster was last connected. |
 | licensedProducts | [[Product](../enums/Product.md)!]! | The licensed products that belong to this cluster. |
+| managementType | [ClusterManagementType](../enums/ClusterManagementType.md)! | Who operates the Rubrik cluster, either Rubrik on the customer's behalf or the customer. |
 | metadataPullScheduler | [JobsReply](JobsReply.md) | Metadata pull scheduler. |
 | metric | [ClusterMetric](ClusterMetric.md) | The most recent metric of a cluster. |
 | metricTimeSeries | [[metricTimeSeries](metricTimeSeries.md)!]! | The metric time series of a cluster. |
@@ -153,4 +154,4 @@ A Rubrik CDM Cluster.
 - [CloudDirectNasExport.cluster](CloudDirectNasExport.md)
 - [CloudDirectNasNamespace.cluster](CloudDirectNasNamespace.md)
 - CloudDirectNasNamespaceDescendantType.cluster
-- *…and 288 more*
+- *…and 319 more*

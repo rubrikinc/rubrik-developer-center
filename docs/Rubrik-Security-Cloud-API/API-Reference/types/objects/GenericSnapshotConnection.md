@@ -27,7 +27,9 @@ Paginated list of GenericSnapshot objects with additional pagination information
 - [AwsNativeRdsInstance.workloadSnapshotConnection](AwsNativeRdsInstance.md)
 - [AwsNativeS3Bucket.workloadSnapshotConnection](AwsNativeS3Bucket.md)
 - [AzureAdDirectory.workloadSnapshotConnection](AzureAdDirectory.md)
+- [AzureCosmosNosqlContainer.workloadSnapshotConnection](AzureCosmosNosqlContainer.md)
 - [AzureDevOpsRepository.workloadSnapshotConnection](AzureDevOpsRepository.md)
+- AzureNativeHierarchyObjectType.workloadSnapshotConnection
 - [AzureNativeManagedDisk.workloadSnapshotConnection](AzureNativeManagedDisk.md)
 - [AzureNativeVirtualMachine.workloadSnapshotConnection](AzureNativeVirtualMachine.md)
 - [AzurePostgresFlexibleServer.workloadSnapshotConnection](AzurePostgresFlexibleServer.md)
@@ -48,6 +50,4 @@ Paginated list of GenericSnapshot objects with additional pagination information
 - [M365BackupStorageOrg.workloadSnapshotConnection](M365BackupStorageOrg.md)
 - [M365BackupStorageSite.workloadSnapshotConnection](M365BackupStorageSite.md)
 - MicrosoftGroup.workloadSnapshotConnection
-- MicrosoftMailbox.workloadSnapshotConnection
-- MicrosoftOnedrive.workloadSnapshotConnection
-- *…and 14 more*
+- *…and 16 more*

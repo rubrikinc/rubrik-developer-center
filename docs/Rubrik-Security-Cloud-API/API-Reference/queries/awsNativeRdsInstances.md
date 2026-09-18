@@ -38,6 +38,7 @@ Paginated list of AWS RDS Instances on AWS Native account.
           dbiResourceId
           id
           isExocomputeConfigured
+          isInfrastructureAlertsEnabled
           isMultiAz
           isProtectable
           isRelic

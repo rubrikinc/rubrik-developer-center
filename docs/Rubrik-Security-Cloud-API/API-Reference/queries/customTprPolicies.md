@@ -60,7 +60,7 @@ All unarchived custom TPR policies.
             [
               {
                 "actions": [
-                  "ASSIGN_TPR_ROLE"
+                  "ASSIGN_COPY_SCHEDULE"
                 ],
                 "description": "example-string",
                 "numberOfObjectTypes": 0,

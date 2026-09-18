@@ -2,7 +2,7 @@
 
 FusionCompute datastore.
 
-**Implements:** [HierarchyObject](../interfaces/HierarchyObject.md), [CdmHierarchyObject](../interfaces/CdmHierarchyObject.md), [FusionComputeVrmDescendant](../interfaces/FusionComputeVrmDescendant.md), [FusionComputeSiteDescendant](../interfaces/FusionComputeSiteDescendant.md), [FusionComputeClusterDescendant](../interfaces/FusionComputeClusterDescendant.md), [FusionComputeHostDescendant](../interfaces/FusionComputeHostDescendant.md), [FusionComputeVrmPhysicalChildType](../interfaces/FusionComputeVrmPhysicalChildType.md), [FusionComputeSitePhysicalChildType](../interfaces/FusionComputeSitePhysicalChildType.md), [FusionComputeClusterPhysicalChildType](../interfaces/FusionComputeClusterPhysicalChildType.md), [FusionComputeHostPhysicalChildType](../interfaces/FusionComputeHostPhysicalChildType.md)
+**Implements:** [CdmHierarchyObject](../interfaces/CdmHierarchyObject.md), [HierarchyObject](../interfaces/HierarchyObject.md), [FusionComputeVrmDescendant](../interfaces/FusionComputeVrmDescendant.md), [FusionComputeSiteDescendant](../interfaces/FusionComputeSiteDescendant.md), [FusionComputeClusterDescendant](../interfaces/FusionComputeClusterDescendant.md), [FusionComputeHostDescendant](../interfaces/FusionComputeHostDescendant.md), [FusionComputeVrmPhysicalChildType](../interfaces/FusionComputeVrmPhysicalChildType.md), [FusionComputeSitePhysicalChildType](../interfaces/FusionComputeSitePhysicalChildType.md), [FusionComputeClusterPhysicalChildType](../interfaces/FusionComputeClusterPhysicalChildType.md), [FusionComputeHostPhysicalChildType](../interfaces/FusionComputeHostPhysicalChildType.md)
 
 ## Fields
 

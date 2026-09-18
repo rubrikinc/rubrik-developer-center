@@ -26,6 +26,7 @@ Details of the Azure AD corresponding to the workload ID.
         doesEventHubIngestionRequireAzureSignIn
         domainName
         eventHubConnectionStatus
+        eventHubPermissionsStatus
         exoHostType
         exocomputeId
         firstDeviceSnapshotTime
@@ -37,6 +38,7 @@ Details of the Azure AD corresponding to the workload ID.
         isJitEnabled
         isProvisioned
         isRelic
+        isRubrikManagedApp
         latestAccessReviewScheduleDefinitionCount
         latestAdministrativeUnitsCount
         latestApplicationsCount
