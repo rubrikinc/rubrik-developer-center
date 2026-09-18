@@ -6,8 +6,8 @@ Rubrik protects Salesforce as a SaaS application, backing up your orgs on a sche
 
 ## Prerequisites
 
-- A configured RSC service account or personal access token. See the [Authentication](../../authentication.md) guide.
-- An SLA Domain created and ready to assign. See the [SLA Domains](../SLA-Domains.md) guide.
+- A configured RSC service account or personal access token. See the [Authentication](../authentication.md) guide.
+- An SLA Domain created and ready to assign. See the [SLA Domains](../Data-Protection/SLA-Domains.md) guide.
 - The `SAAS_ROOM_ENABLED` feature flag must be active on your RSC tenant. Contact Rubrik Support to enable it.
 
 ## Object Model
@@ -63,7 +63,7 @@ The `objectType` field on each node will be `SALESFORCE_OBJECT` or `SALESFORCE_M
 
 ## Configure Protection
 
-To protect a Salesforce org, assign an SLA Domain to it. See [SLA Domains — Assigning an SLA to a Workload](../SLA-Domains.md#assigning-an-sla-to-a-workload) for the full walkthrough.
+To protect a Salesforce org, assign an SLA Domain to it. See [SLA Domains — Assigning an SLA to a Workload](../Data-Protection/SLA-Domains.md#assigning-an-sla-to-a-workload) for the full walkthrough.
 
 ## On-Demand Backup
 

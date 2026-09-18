@@ -8,6 +8,9 @@ theme:
   logo: assets/favicon.ico
   favicon: assets/favicon.ico
   custom_dir: overrides
+  font:
+    text: Source Sans 3
+    code: Fira Code
   palette:
     - scheme: default
       toggle:
