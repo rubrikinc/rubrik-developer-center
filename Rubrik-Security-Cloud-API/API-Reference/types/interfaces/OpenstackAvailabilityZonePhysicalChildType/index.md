@@ -48,4 +48,5 @@ OpenStack Availability Zone physical child.
 
 ## Implemented By
 
+- [OpenstackHost](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/OpenstackHost/index.md)
 - [OpenstackVirtualMachine](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/OpenstackVirtualMachine/index.md)

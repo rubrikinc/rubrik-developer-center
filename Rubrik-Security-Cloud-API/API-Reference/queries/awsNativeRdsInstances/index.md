@@ -36,6 +36,7 @@ query {
       dbiResourceId
       id
       isExocomputeConfigured
+      isInfrastructureAlertsEnabled
       isMultiAz
       isProtectable
       isRelic

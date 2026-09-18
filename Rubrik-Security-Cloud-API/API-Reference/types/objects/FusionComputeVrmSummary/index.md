@@ -6,9 +6,9 @@ Summary information for a FusionCompute Virtual Resource Management (VRM) instan
 
 | Field         | Type                                                                                                                       | Description                                                                                |
 | ------------- | -------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------ |
-| endpointUri   | String!                                                                                                                    | Required. The address of the FusionCompute VRM instance.                                   |
+| endpointUri   | String!                                                                                                                    | Required. Supported in v9.6+ The address of the FusionCompute VRM instance.                |
 | slaAssignable | [SlaAssignable](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/SlaAssignable/index.md) | Details of the SLA Domain assigned to the FusionCompute Virtual Resource Management (VRM). |
-| username      | String!                                                                                                                    | Required. The username of the FusionCompute VRM instance.                                  |
+| username      | String!                                                                                                                    | Required. Supported in v9.6+ The username of the FusionCompute VRM instance.               |
 
 ## Used By
 

@@ -1,6 +1,6 @@
 # fusionComputeMissedSnapshots
 
-Retrieve details about missed snapshots for a virtual machine Supported in v9.6 Retrieve the time of day when the snapshots were missed to a specific FusionCompute virtual machine.
+Retrieve details about missed snapshots for a virtual machine Supported in v9.6+ Retrieve the time of day when the snapshots were missed to a specific FusionCompute virtual machine.
 
 ## Arguments
 

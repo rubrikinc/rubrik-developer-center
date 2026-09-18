@@ -49,6 +49,7 @@ Represents different types of activities.
 | NutanixCluster                  | Nutanix cluster type.                                                                                       |
 | OWNERSHIP                       | Ownership change type.                                                                                      |
 | PERMISSION_ASSESSMENT           | Permission assessment event type.                                                                           |
+| PRE_SEEDING                     | Pre-seed event type.                                                                                        |
 | PROTECTED_OBJECT_DELETION       | Protected object deletion event type.                                                                       |
 | QUARANTINE                      | Quarantine event type.                                                                                      |
 | REENCRYPTION                    | Reencryption (re-encrypt a snapshot with the customer-managed key) event type.                              |

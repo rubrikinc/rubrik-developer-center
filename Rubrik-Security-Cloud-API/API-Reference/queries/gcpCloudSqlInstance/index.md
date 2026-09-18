@@ -27,6 +27,7 @@ query GcpCloudSqlInstance($gcpCloudSqlInstanceRubrikId: UUID!) {
     instanceId
     instanceTier
     isExocomputeConfigured
+    isProtectionOnboarded
     isRelic
     kmsKey
     name

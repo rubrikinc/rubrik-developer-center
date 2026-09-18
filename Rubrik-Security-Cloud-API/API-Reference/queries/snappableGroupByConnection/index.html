@@ -3164,6 +3164,8 @@
       
         
       
+        
+      
     
     
     
@@ -29349,6 +29351,34 @@
   
   
     <li class="md-nav__item">
+      <a href="../recoveryPlansBasicInfo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    recoveryPlansBasicInfo
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../recoveryReport/" class="md-nav__link">
         
   
@@ -38423,6 +38453,18 @@
       
         
       
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
     
     
     
@@ -38446,6 +38488,18 @@
       
         
           
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
         
       
         
@@ -41636,7 +41690,7 @@
 
 
 <h1 id="snappablegroupbyconnection">snappableGroupByConnection</h1>
-<p><em>No description available.</em></p>
+<p>Returns a paginated connection of workload group-by nodes.</p>
 <h2 id="arguments">Arguments</h2>
 <table>
 <thead>
@@ -41680,12 +41734,12 @@
 <tr>
 <td>timezoneOffset</td>
 <td>Float</td>
-<td>Offset based on the customer timezone.</td>
+<td>Browser timezone offset in hours for time-bucket alignment.</td>
 </tr>
 <tr>
 <td>requestedAggregations</td>
 <td>[<a href="../../types/enums/SnappableAggregationsEnum/">SnappableAggregationsEnum</a>!]</td>
-<td>List of workload aggregations to retrieve. You can significantly reduce the runtime of the query by specifying a subset of aggregations to retrieve.</td>
+<td>Aggregation columns to compute.</td>
 </tr>
 </tbody>
 </table>

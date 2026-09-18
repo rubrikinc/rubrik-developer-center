@@ -18,6 +18,7 @@ Retrieves an Azure Native Resource Group. Refers to a collection of resources in
 query AzureNativeResourceGroup($resourceGroupId: UUID!) {
   azureNativeResourceGroup(resourceGroupId: $resourceGroupId) {
     authorizedOperations
+    azureCosmosNosqlContainerCount
     azurePostgresFlexibleServerCount
     azureSqlDatabaseCount
     azureSqlManagedInstanceDbCount
@@ -51,11 +52,11 @@ query AzureNativeResourceGroup($resourceGroupId: UUID!) {
       "authorizedOperations": [
         "MANAGE_DATA_SOURCE"
       ],
+      "azureCosmosNosqlContainerCount": 0,
       "azurePostgresFlexibleServerCount": 0,
       "azureSqlDatabaseCount": 0,
       "azureSqlManagedInstanceDbCount": 0,
       "azureStorageAccountCount": 0,
-      "azureSubscriptionRubrikId": "00000000-0000-0000-0000-000000000000",
       "allOrgs": [
         {
           "allUrls": [

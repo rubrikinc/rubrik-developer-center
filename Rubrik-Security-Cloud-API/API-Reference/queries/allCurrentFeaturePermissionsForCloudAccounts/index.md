@@ -40,6 +40,7 @@ query AllCurrentFeaturePermissionsForCloudAccounts($cloudVendor: CloudVendor!) {
         "featurePermissions": [
           {
             "feature": "ALL",
+            "hasExocomputeLambdaRole": true,
             "permissionJson": "example-string",
             "version": 0
           }

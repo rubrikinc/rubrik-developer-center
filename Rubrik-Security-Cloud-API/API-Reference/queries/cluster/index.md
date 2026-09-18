@@ -35,6 +35,7 @@ query Cluster($clusterUuid: UUID!) {
     isTunnelEnabled
     lastConnectionTime
     licensedProducts
+    managementType
     name
     passesConnectivityCheck
     pauseStatus

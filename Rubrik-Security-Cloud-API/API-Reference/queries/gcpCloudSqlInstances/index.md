@@ -34,6 +34,7 @@ query {
       instanceId
       instanceTier
       isExocomputeConfigured
+      isProtectionOnboarded
       isRelic
       kmsKey
       name

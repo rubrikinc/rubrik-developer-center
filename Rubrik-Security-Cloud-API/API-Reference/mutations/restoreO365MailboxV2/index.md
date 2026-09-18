@@ -1,12 +1,12 @@
 # restoreO365MailboxV2
 
-Restores an Exchange mailbox data.
+Schedules on-demand restore job(s) for an Exchange mailbox.
 
 ## Arguments
 
-| Argument           | Type                                                                                                                                           | Description                         |
-| ------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------- |
-| input *(required)* | [RestoreO365MailboxInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/RestoreO365MailboxInput/index.md)! | The input for RestoreO365MailboxV2. |
+| Argument           | Type                                                                                                                                           | Description                              |
+| ------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------- |
+| input *(required)* | [RestoreO365MailboxInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/RestoreO365MailboxInput/index.md)! | Input for restoring an Exchange mailbox. |
 
 ## Returns
 

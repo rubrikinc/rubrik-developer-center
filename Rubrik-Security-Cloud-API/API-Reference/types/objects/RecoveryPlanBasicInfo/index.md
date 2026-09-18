@@ -23,6 +23,10 @@ Basic information about the recovery plans.
 
 ## Used By
 
+**Queries**
+
+- [query: recoveryPlansBasicInfo](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/recoveryPlansBasicInfo/index.md) *(via connection)*
+
 **Referenced by**
 
 - [Recovery.recoveryPlanBasicInfo](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/Recovery/index.md)

@@ -1,12 +1,12 @@
 # takeOnDemandSnapshot
 
-Triggers an on-demand snapshot for cloud-native workloads.
+Triggers on-demand snapshots for the specified workloads. Account and subject contexts are derived from req_ctx inside the handler.
 
 ## Arguments
 
-| Argument           | Type                                                                                                                                               | Description                                       |
-| ------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------- |
-| input *(required)* | [TakeOnDemandSnapshotInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/TakeOnDemandSnapshotInput/index.md)! | Input for taking on demand snapshot of workloads. |
+| Argument           | Type                                                                                                                                               | Description                                        |
+| ------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------- |
+| input *(required)* | [TakeOnDemandSnapshotInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/TakeOnDemandSnapshotInput/index.md)! | Input for taking on-demand snapshots of workloads. |
 
 ## Returns
 

@@ -13,6 +13,7 @@ Azure Tag.
 
 **Referenced by**
 
+- [AzureCosmosNosqlAccount.tags](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AzureCosmosNosqlAccount/index.md)
 - AzureNativeHierarchyObjectType.tags
 - [AzureNativeManagedDisk.tags](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AzureNativeManagedDisk/index.md)
 - [AzureNativeResourceGroup.tags](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AzureNativeResourceGroup/index.md)

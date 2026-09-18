@@ -1,6 +1,6 @@
 # fusionComputeVmRequestStatus
 
-Get asynchronous request details for FusionCompute requests Supported in v9.6 Get the details of an asynchronous request that involves FusionCompute operations.
+Get asynchronous request details for FusionCompute requests Supported in v9.6+ Get the details of an asynchronous request that involves FusionCompute operations.
 
 ## Arguments
 

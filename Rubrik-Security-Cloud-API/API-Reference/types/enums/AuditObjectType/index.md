@@ -67,8 +67,8 @@ Represents all the object types for which we expect to see audits.
 | CLUSTER                                                                          | Cluster object.                                                                                  |
 | CONFLUENCE_SPACE                                                                 | Confluence Space.                                                                                |
 | CROSS_ACCOUNT_PAIR                                                               | Cross-account pair event type.                                                                   |
-| D365_DATAVERSE_TABLE                                                             | Dynamics 365 dataverse table.                                                                    |
-| D365_METADATA                                                                    | Dynamics 365 metadata.                                                                           |
+| D365_DATAVERSE_TABLE                                                             | Dataverse table.                                                                                 |
+| D365_METADATA                                                                    | Dataverse metadata.                                                                              |
 | D365_ORGANIZATION                                                                | Dynamics 365 organization.                                                                       |
 | DATA_CENTER_CLOUD_ACCOUNT                                                        | Data Center Cloud Account object.                                                                |
 | DATA_LOCATION                                                                    | Data location object.                                                                            |
@@ -184,6 +184,8 @@ Represents all the object types for which we expect to see audits.
 | OPENSTACK_TAG                                                                    | OpenStack tag object.                                                                            |
 | OPENSTACK_VIRTUAL_MACHINE                                                        | Openstack Virtual Machine.                                                                       |
 | ORACLE_DB                                                                        | Oracle database object.                                                                          |
+| ORACLE_FAILOVER_CLUSTER                                                          | Oracle Failover Cluster object.                                                                  |
+| ORACLE_FAILOVER_SERVICE                                                          | Oracle Failover Service object.                                                                  |
 | ORACLE_HOST                                                                      | Oracle host object.                                                                              |
 | ORACLE_MOUNT                                                                     | Oracle Mount object.                                                                             |
 | ORACLE_RAC                                                                       | Oracle RAC object.                                                                               |

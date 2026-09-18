@@ -35,6 +35,7 @@ mutation UpdatePreviewerClusterConfig($previewerClusterConfig: PreviewerClusterC
     isTunnelEnabled
     lastConnectionTime
     licensedProducts
+    managementType
     name
     passesConnectivityCheck
     pauseStatus

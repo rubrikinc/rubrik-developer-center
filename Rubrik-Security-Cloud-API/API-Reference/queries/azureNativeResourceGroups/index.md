@@ -27,6 +27,7 @@ query {
   azureNativeResourceGroups(first: 10) {
     nodes {
       authorizedOperations
+      azureCosmosNosqlContainerCount
       azurePostgresFlexibleServerCount
       azureSqlDatabaseCount
       azureSqlManagedInstanceDbCount
@@ -66,11 +67,11 @@ query {
             "authorizedOperations": [
               "MANAGE_DATA_SOURCE"
             ],
+            "azureCosmosNosqlContainerCount": 0,
             "azurePostgresFlexibleServerCount": 0,
             "azureSqlDatabaseCount": 0,
             "azureSqlManagedInstanceDbCount": 0,
-            "azureStorageAccountCount": 0,
-            "azureSubscriptionRubrikId": "00000000-0000-0000-0000-000000000000"
+            "azureStorageAccountCount": 0
           }
         ]
       ],

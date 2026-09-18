@@ -4,10 +4,10 @@ Returns a single snapshot by snapshot forever UUID and cluster UUID. In case clu
 
 ## Arguments
 
-| Argument                 | Type                                                                                                      | Description                      |
-| ------------------------ | --------------------------------------------------------------------------------------------------------- | -------------------------------- |
-| snapshotFid *(required)* | [UUID](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/UUID/index.md)! | Snapshot persistent UUID in RSC. |
-| clusterUuid              | [UUID](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/UUID/index.md)  | The Rubrik cluster ID.           |
+| Argument                 | Type                                                                                                      | Description                                       |
+| ------------------------ | --------------------------------------------------------------------------------------------------------- | ------------------------------------------------- |
+| snapshotFid *(required)* | [UUID](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/UUID/index.md)! | Snapshot persistent UUID in RSC.                  |
+| clusterUuid              | [UUID](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/UUID/index.md)  | The Rubrik cluster ID to resolve the snapshot in. |
 
 ## Returns
 

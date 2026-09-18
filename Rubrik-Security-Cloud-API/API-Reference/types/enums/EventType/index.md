@@ -49,6 +49,7 @@ Enum representing all the possible event types.
 | NUTANIX_CLUSTER                   | Nutanix cluster type.                                                                                       |
 | OWNERSHIP                         | Ownership change type.                                                                                      |
 | PERMISSION_ASSESSMENT             | Permission assessment event type.                                                                           |
+| PRE_SEEDING                       | Pre-seed event type.                                                                                        |
 | PROTECTED_OBJECT_DELETION         | Protected object deletion event type.                                                                       |
 | QUARANTINE                        | Quarantine event type.                                                                                      |
 | RANSOMWARE_INVESTIGATION_ANALYSIS | Ransomware Investigation analysis type.                                                                     |

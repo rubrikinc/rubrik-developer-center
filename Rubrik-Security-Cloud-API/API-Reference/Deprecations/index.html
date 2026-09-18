@@ -4497,6 +4497,8 @@
       
         
       
+        
+      
     
     
     
@@ -4520,6 +4522,8 @@
       
         
           
+        
+      
         
       
         
@@ -8961,6 +8965,18 @@
       
         
       
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
     
     
     
@@ -8984,6 +9000,18 @@
       
         
           
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
         
       
         
@@ -13431,14 +13459,15 @@
 <h1 id="graphql-api-deprecations">GraphQL API Deprecations</h1>
 <p>This document lists all deprecated fields, queries, mutations, and enum values in the Rubrik Security Cloud GraphQL API.</p>
 <h2 id="deprecated-fields">Deprecated Fields</h2>
-<p><em>Extracted from schema: 20260831.graphql</em></p>
-<p><strong>Total deprecated items: 299</strong></p>
+<p><em>Extracted from schema: 20260914.graphql</em></p>
+<p><strong>Total deprecated items: 303</strong></p>
 <h3 id="deprecated-query-fields">Deprecated Query Fields</h3>
 <ul>
 <li><strong><code>accountSettings</code></strong>: Use getAccountSettingValue or getAccountSettingValueWithDefault instead.</li>
 <li><strong><code>allAzureResourceGroups</code></strong>: Use allResourceGroupsFromAzure instead.</li>
 <li><strong><code>allAzureSubnets</code></strong>: Use allAzureCloudAccountSubnetsByRegion instead.</li>
 <li><strong><code>allClusterWebCertsAndIpmis</code></strong>: Use clusterConnection instead.</li>
+<li><strong><code>allMissingClusters</code></strong>: Missing cluster management has been retired.</li>
 <li><strong><code>allUsersOnAccountConnection</code></strong>: Use usersInCurrentAndDescendantOrganization instead.</li>
 <li><strong><code>allWebhooks</code></strong>: Use allWebhooksV2 instead.</li>
 <li><strong><code>azureExocomputeNetworkSetupTemplate</code></strong>: Azure networking resources creation for Exocompute using ARM template will not be supported.</li>
@@ -13484,6 +13513,7 @@
 <li><strong><code>recoverCloudDirectPath</code></strong>: Not in use. Use recoverCloudDirectMultiPaths instead.</li>
 <li><strong><code>restoreO365Mailbox</code></strong>: Use restoreO365MailboxV2 instead.</li>
 <li><strong><code>setIpWhitelistEnabled</code></strong>: use <code>setIpWhitelistSetting</code> instead.</li>
+<li><strong><code>setMissingClusterStatus</code></strong>: Missing cluster management has been retired.</li>
 <li><strong><code>stopJobInstance</code></strong>: Use stopJobInstanceFromEventSeries instead.</li>
 <li><strong><code>testExistingWebhook</code></strong>: Use sendTestMessageToExistingWebhook instead.</li>
 <li><strong><code>testWebhook</code></strong>: Use sendTestMessageToWebhook instead.</li>
@@ -14028,6 +14058,7 @@
 <li><strong><code>CLOUD_DIRECT</code></strong>: Nothing returns this sync type; it will be removed in a future release.</li>
 <li><strong><code>CLUSTER_DISCONNECTED</code></strong>: This reason is no longer used.</li>
 <li><strong><code>COLDLINE_GCP</code></strong>: Use STANDARD_GCP instead.</li>
+<li><strong><code>DIRECT_REPORT</code></strong>: The SsoPolicyExtension relationship has been removed.</li>
 <li><strong><code>DNS_SERVERS_CHECK</code></strong>: Use CLUSTER_NAME_LENGTH_CHECK instead.</li>
 <li><strong><code>DOMAIN_HAS_FOREST</code></strong>: Use EBS_VOLUME_NAME_OR_VOLUME_ID instead.</li>
 <li><strong><code>EBS_VOLUME_INDEXING_STATUS</code></strong>: Use EBS_VOLUME_NAME_OR_VOLUME_ID instead.</li>
@@ -14070,6 +14101,7 @@
 <li><strong><code>SIGNIN_LOGS</code></strong>: Use SLA_AUDIT_DETAIL_NG instead.</li>
 <li><strong><code>SLA_AUDIT_DETAIL_NG</code></strong>: Use SLA_AUDIT_LIST_NG instead.</li>
 <li><strong><code>SLA_AUDIT_LIST_NG</code></strong>: Use LATEST_GLOBAL_OBJECTS instead.</li>
+<li><strong><code>SSO_POLICY_APPLIES_TO</code></strong>: The SSO Policy Extension relationship has been removed.</li>
 <li><strong><code>TOP_LEVEL_SITES_OF_O365_ORG</code></strong>: Not implemented - no longer used.</li>
 <li><strong><code>UEKM_RSA_BASED</code></strong>: Use UEKM_RSA_BASED or UEKM_AWS_KMS_BASED.</li>
 <li><strong><code>VSPHERE_RESTORE_FILE_TO_VM</code></strong>: VSphere snapshot poller is no longer used.</li>

@@ -1,6 +1,6 @@
 # updateFusionComputeVrm
 
-Update FusionCompute VRM instance Supported in v9.6 Update the metadata and configs of the specified FusionCompute VRM instance object.
+Update FusionCompute VRM instance Supported in v9.6+ Update the metadata and configs of the specified FusionCompute VRM instance object.
 
 ## Arguments
 

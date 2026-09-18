@@ -31,6 +31,7 @@ query {
       doesEventHubIngestionRequireAzureSignIn
       domainName
       eventHubConnectionStatus
+      eventHubPermissionsStatus
       exoHostType
       exocomputeId
       firstDeviceSnapshotTime
@@ -42,6 +43,7 @@ query {
       isJitEnabled
       isProvisioned
       isRelic
+      isRubrikManagedApp
       latestAccessReviewScheduleDefinitionCount
       latestAdministrativeUnitsCount
       latestApplicationsCount

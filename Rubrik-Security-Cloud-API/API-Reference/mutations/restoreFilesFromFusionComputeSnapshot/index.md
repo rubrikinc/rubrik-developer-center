@@ -1,6 +1,6 @@
 # restoreFilesFromFusionComputeSnapshot
 
-Recover files from a snapshot of FusionCompute Supported in v9.6 Recover files from a snapshot of a FusionCompute virtual machine.
+Recover files from a snapshot of FusionCompute Supported in v9.6+ Recover files from a snapshot of a FusionCompute virtual machine.
 
 ## Arguments
 

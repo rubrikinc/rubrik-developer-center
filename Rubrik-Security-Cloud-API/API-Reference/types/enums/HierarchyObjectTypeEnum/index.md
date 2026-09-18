@@ -58,8 +58,8 @@ Hierarchy object type enum covering all CDM and RSC hierarchy objects.
 | CLOUD_DIRECT_NAS_SYSTEM                     | CLOUD DIRECT NAS SYSTEM.                                                                         |
 | CONFLUENCE_SPACE                            | Confluence space.                                                                                |
 | CloudNativeTagRule                          | Cloud Native Tag Rule.                                                                           |
-| D365_DATAVERSE_TABLE                        | D365 Dataverse Table.                                                                            |
-| D365_FIXED_OBJECT                           | D365 Metadata.                                                                                   |
+| D365_DATAVERSE_TABLE                        | Dataverse Table.                                                                                 |
+| D365_FIXED_OBJECT                           | Dataverse Metadata.                                                                              |
 | D365_ORGANIZATION                           | D365 Organization.                                                                               |
 | Db2Database                                 | Db2database.                                                                                     |
 | Db2Instance                                 | Db2instance.                                                                                     |
