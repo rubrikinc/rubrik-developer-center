@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{#
+  Open Sans is loaded here rather than via theme.font in mkdocs.yml, because
+  Material's font option only takes one text family and that slot is used by
+  Source Sans 3 (body prose). Open Sans is Aura's own text face, used here as
+  the display face for chrome and content headings - see --display-font in
+  docs/css/extra.css for where it is applied.
+
+  Requested as a variable range (400..700) rather than discrete weights: that
+  is a single font file covering every weight in between, which is both smaller
+  than several static faces and lets the weights be tuned in CSS without
+  editing this file. No italics - chrome and headings never render italic.
+#}
+{% block extrahead %}
+  {{ super() }}
+  <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400..700&display=fallback"
+  />
+{% endblock %}
