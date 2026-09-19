@@ -122,7 +122,7 @@ See [Pagination](https://developer.rubrik.com/Rubrik-Security-Cloud-API/paginati
 
 ```graphql
 query {
-  cloudDirectNasShare(fid: "11111111-2222-3333-4444-555555555555") {
+  cloudDirectNasShare(fid: "a0eebc99-9c0b-4ef8-bb6d-6bb9bd380a11") {
     id
     name
     protocol
@@ -159,7 +159,7 @@ query {
 ```powershell
 # Replace with the share FID captured from cloudDirectNasShares.
 $query = New-RscQuery -GqlQuery cloudDirectNasShare
-$query.Var.fid = "11111111-2222-3333-4444-555555555555"
+$query.Var.fid = "a0eebc99-9c0b-4ef8-bb6d-6bb9bd380a11"
 
 $query.field = Get-RscType -Name CloudDirectNasShare -InitialProperties `
     id,`
@@ -184,7 +184,7 @@ $query.Invoke()
 
 # RSC_TOKEN="YOUR_RSC_ACCESS_TOKEN"
 # Replace the fid with a share FID captured from cloudDirectNasShares.
-query="query { cloudDirectNasShare(fid: \\\"11111111-2222-3333-4444-555555555555\\\") { id name protocol ncdPolicyName cloudDirectId isRelic isStale totalSnapshots newestSnapshot { id date } oldestSnapshot { id date } effectiveSlaDomain { id name } cloudDirectNasSystem { id name vendorType } cloudDirectNasNamespace { id name } } }"
+query="query { cloudDirectNasShare(fid: \\\"a0eebc99-9c0b-4ef8-bb6d-6bb9bd380a11\\\") { id name protocol ncdPolicyName cloudDirectId isRelic isStale totalSnapshots newestSnapshot { id date } oldestSnapshot { id date } effectiveSlaDomain { id name } cloudDirectNasSystem { id name vendorType } cloudDirectNasNamespace { id name } } }"
 
 # Execute the GraphQL query with curl
 curl -X POST \
@@ -360,7 +360,7 @@ Returns a list of statuses, not one
 mutation {
   takeCloudDirectSnapshot(input: {
     objectFid: "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee"
-    slaId: "11111111-2222-3333-4444-555555555555"
+    slaId: "a0eebc99-9c0b-4ef8-bb6d-6bb9bd380a11"
     exclusions: [
       { path: "/finance/tmp" }
       { pattern: "*.bak" }
@@ -384,7 +384,7 @@ $exclusion.pattern = "*.bak"
 
 $query.Var.input = Get-RscType -Name TakeCloudDirectSnapshotInput
 $query.Var.input.objectFid = "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee"
-$query.Var.input.slaId = "11111111-2222-3333-4444-555555555555"
+$query.Var.input.slaId = "a0eebc99-9c0b-4ef8-bb6d-6bb9bd380a11"
 $query.Var.input.exclusions = @($exclusion)
 
 # takeCloudDirectSnapshot returns a BatchAsyncRequestStatus — a list of
@@ -404,7 +404,7 @@ read -r -d '' variables <<'JSON'
 {
   "input": {
     "objectFid": "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee",
-    "slaId": "11111111-2222-3333-4444-555555555555",
+    "slaId": "a0eebc99-9c0b-4ef8-bb6d-6bb9bd380a11",
     "exclusions": [
       { "path": "/finance/tmp" },
       { "pattern": "*.bak" }
@@ -435,7 +435,7 @@ List the snapshots of a share to choose the point in time to recover from. Sort 
 # workloadId is the share FID passed as a String (not a UUID scalar).
 query {
   snapshotsOfCloudDirectShare(
-    workloadId: "11111111-2222-3333-4444-555555555555"
+    workloadId: "a0eebc99-9c0b-4ef8-bb6d-6bb9bd380a11"
     sortBy: CREATION_TIME
     sortOrder: DESC
   ) {
@@ -460,7 +460,7 @@ query {
 ```powershell
 # workloadId is the share FID passed as a String (not a UUID type).
 $query = New-RscQuery -GqlQuery snapshotsOfCloudDirectShare
-$query.Var.workloadId = "11111111-2222-3333-4444-555555555555"
+$query.Var.workloadId = "a0eebc99-9c0b-4ef8-bb6d-6bb9bd380a11"
 $query.Var.sortOrder = [RubrikSecurityCloud.Types.SortOrder]::DESC
 $query.Var.sortBy = [RubrikSecurityCloud.Types.SnapshotQuerySortByField]::CREATION_TIME
 
@@ -482,7 +482,7 @@ $query.Invoke().nodes
 
 # RSC_TOKEN="YOUR_RSC_ACCESS_TOKEN"
 # workloadId is the share FID passed as a String. Replace before running.
-query="query { snapshotsOfCloudDirectShare(workloadId: \\\"11111111-2222-3333-4444-555555555555\\\" sortBy: CREATION_TIME sortOrder: DESC) { nodes { id date expirationDate protocol isIndexed isQuarantined isExpired isOnDemandSnapshot } pageInfo { endCursor hasNextPage } } }"
+query="query { snapshotsOfCloudDirectShare(workloadId: \\\"a0eebc99-9c0b-4ef8-bb6d-6bb9bd380a11\\\" sortBy: CREATION_TIME sortOrder: DESC) { nodes { id date expirationDate protocol isIndexed isQuarantined isExpired isOnDemandSnapshot } pageInfo { endCursor hasNextPage } } }"
 
 # Execute the GraphQL query with curl
 curl -X POST \
@@ -501,7 +501,7 @@ When you know a filename or path prefix but not which snapshot contains it, sear
 ```graphql
 query {
   searchSnappableVersionedFiles(
-    snappableFid: "11111111-2222-3333-4444-555555555555"
+    snappableFid: "a0eebc99-9c0b-4ef8-bb6d-6bb9bd380a11"
     searchQuery: "quarterly-report"
     usePrefixSearch: false
   ) {
@@ -527,7 +527,7 @@ query {
 ```powershell
 # snappableFid is the share FID. searchQuery is a filename or path prefix.
 $query = New-RscQuery -GqlQuery searchSnappableVersionedFiles
-$query.Var.snappableFid = "11111111-2222-3333-4444-555555555555"
+$query.Var.snappableFid = "a0eebc99-9c0b-4ef8-bb6d-6bb9bd380a11"
 $query.Var.searchQuery = "quarterly-report"
 $query.Var.usePrefixSearch = $true
 
@@ -545,7 +545,7 @@ $query.Invoke().nodes
 
 # RSC_TOKEN="YOUR_RSC_ACCESS_TOKEN"
 # snappableFid is the share FID. searchQuery is a filename or path prefix.
-query="query { searchSnappableVersionedFiles(snappableFid: \\\"11111111-2222-3333-4444-555555555555\\\" searchQuery: \\\"quarterly-report\\\" usePrefixSearch: true) { nodes { filename absolutePath displayPath fileVersions { snapshotId size lastModified fileMode } } pageInfo { endCursor hasNextPage } } }"
+query="query { searchSnappableVersionedFiles(snappableFid: \\\"a0eebc99-9c0b-4ef8-bb6d-6bb9bd380a11\\\" searchQuery: \\\"quarterly-report\\\" usePrefixSearch: true) { nodes { filename absolutePath displayPath fileVersions { snapshotId size lastModified fileMode } } pageInfo { endCursor hasNextPage } } }"
 
 # Execute the GraphQL query with curl
 curl -X POST \
@@ -806,7 +806,7 @@ Registration is asynchronous
 # the background import completes (up to ~2 hours for large environments).
 mutation {
   addCloudDirectSystem(input: {
-    clusterId: "11111111-2222-3333-4444-555555555555"
+    clusterId: "a0eebc99-9c0b-4ef8-bb6d-6bb9bd380a11"
     host: "netapp01.example.com"
     systemType: NETAPP_CLUSTER_MODE
     username: "svc-rubrik"
@@ -826,7 +826,7 @@ mutation {
 $query = New-RscMutation -GqlMutation addCloudDirectSystem
 
 $query.Var.input = Get-RscType -Name AddCloudDirectSystemInput
-$query.Var.input.clusterId = "11111111-2222-3333-4444-555555555555"
+$query.Var.input.clusterId = "a0eebc99-9c0b-4ef8-bb6d-6bb9bd380a11"
 $query.Var.input.host = "netapp01.example.com"
 $query.Var.input.systemType = [RubrikSecurityCloud.Types.CloudDirectNasVendorType]::NETAPP_CLUSTER_MODE
 $query.Var.input.username = "svc-rubrik"
@@ -849,7 +849,7 @@ query="mutation AddCloudDirectSystem(\$input: AddCloudDirectSystemInput!) { addC
 read -r -d '' variables <<'JSON'
 {
   "input": {
-    "clusterId": "11111111-2222-3333-4444-555555555555",
+    "clusterId": "a0eebc99-9c0b-4ef8-bb6d-6bb9bd380a11",
     "host": "netapp01.example.com",
     "systemType": "NETAPP_CLUSTER_MODE",
     "username": "svc-rubrik",
@@ -893,7 +893,7 @@ The mutation is [`cloudDirectSystemDelete`](https://developer.rubrik.com/Rubrik-
 # Returns Void — there is no selection set.
 mutation {
   cloudDirectSystemDelete(input: {
-    clusterUuid: "11111111-2222-3333-4444-555555555555"
+    clusterUuid: "a0eebc99-9c0b-4ef8-bb6d-6bb9bd380a11"
     systemFid: "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee"
   })
 }
@@ -904,7 +904,7 @@ mutation {
 $query = New-RscMutation -GqlMutation cloudDirectSystemDelete
 
 $query.Var.input = Get-RscType -Name CloudDirectSystemDeleteInput
-$query.Var.input.clusterUuid = "11111111-2222-3333-4444-555555555555"
+$query.Var.input.clusterUuid = "a0eebc99-9c0b-4ef8-bb6d-6bb9bd380a11"
 $query.Var.input.systemFid = "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee"
 
 $query.Invoke()
@@ -921,7 +921,7 @@ query="mutation CloudDirectSystemDelete(\$input: CloudDirectSystemDeleteInput!) 
 read -r -d '' variables <<'JSON'
 {
   "input": {
-    "clusterUuid": "11111111-2222-3333-4444-555555555555",
+    "clusterUuid": "a0eebc99-9c0b-4ef8-bb6d-6bb9bd380a11",
     "systemFid": "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee"
   }
 }

@@ -59,6 +59,7 @@
   --aura-deep-blue-4: #020f24;
 
   --aura-indigo-1: #b5d9ff;
+  --aura-indigo-2: #a0c7ff;
   --aura-indigo-3: #7aa6ff;
   --aura-indigo-4: #537eff;
   --aura-indigo-6: #00429d;
@@ -186,6 +187,12 @@
   /* Content card - Aura puts body content on surfacePrimary, not the wash */
   --aura-content-bg: rgba(255, 255, 255, 0.72);
   --aura-content-border: rgba(39, 54, 55, 0.08);
+
+  /* Aura chipChipRow* (BrightTheme) */
+  --aura-chip-border: rgba(217, 221, 220, 0.56);
+  --aura-chip-border-hover: rgba(9, 168, 184, 0.56);
+  --aura-chip-bg-hover: rgba(9, 168, 184, 0.08);
+  --aura-chip-bg-active: rgba(77, 210, 210, 0.16);
 }
 
 /* ==========================================================================
@@ -268,6 +275,12 @@
 
   --aura-content-bg: rgba(10, 46, 87, 0.42);
   --aura-content-border: rgba(255, 255, 255, 0.1);
+
+  /* Aura chipChipRow* (DarkTheme) */
+  --aura-chip-border: rgba(160, 199, 255, 0.24);
+  --aura-chip-border-hover: rgba(47, 202, 255, 0.56);
+  --aura-chip-bg-hover: rgba(47, 202, 255, 0.08);
+  --aura-chip-bg-active: rgba(47, 202, 255, 0.16);
 }
 
 /* ==========================================================================
@@ -334,6 +347,30 @@
 .md-typeset h2,
 .md-typeset h3 {
   letter-spacing: -0.01em;
+}
+
+/* Grouped links in cards render as Aura chips rather than loose inline text,
+   which gives them an edge to sit against and a visible affordance. Values are
+   Aura's chipChipRow* tokens. `:not(:only-child)` scopes this to multi-link
+   rows, so a standalone "go" link stays a plain arrow link. */
+.md-typeset .grid.cards p > a:not(:only-child) {
+  display: inline-block;
+  padding: 0.12rem 0.5rem;
+  margin: 0.12rem 0.22rem 0.12rem 0;
+  border: 1px solid var(--aura-chip-border);
+  border-radius: 999px;
+  line-height: 1.5;
+  text-decoration: none;
+  transition: background-color 0.12s ease, border-color 0.12s ease;
+}
+
+.md-typeset .grid.cards p > a:not(:only-child):hover {
+  background-color: var(--aura-chip-bg-hover);
+  border-color: var(--aura-chip-border-hover);
+}
+
+.md-typeset .grid.cards p > a:not(:only-child):active {
+  background-color: var(--aura-chip-bg-active);
 }
 
 /* Accented phrase inside a heading. Teal5 on light clears 4.5:1 against the

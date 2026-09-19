@@ -456,7 +456,7 @@ mutation {
           timestampMs: 1737000000000   # epoch milliseconds (Jan 2025)
         }
         # OracleHost FID for standalone DBs, OracleRac FID for RAC DBs
-        targetOracleHostOrRacId: "11111111-2222-3333-4444-555555555555"
+        targetOracleHostOrRacId: "a0eebc99-9c0b-4ef8-bb6d-6bb9bd380a11"
         numChannels: 2
       }
     }
@@ -471,7 +471,7 @@ mutation {
 # No toolkit cmdlet available
 $oracleDb = Get-RscOracleDatabase -Name "example"
 # OracleHost FID for standalone DBs, OracleRac FID for RAC DBs
-$targetHostOrRacId = "11111111-2222-3333-4444-555555555555"
+$targetHostOrRacId = "a0eebc99-9c0b-4ef8-bb6d-6bb9bd380a11"
 
 $query = New-RscMutation -GqlMutation exportOracleDatabase
 $query.Var.input = Get-RscType -Name ExportOracleDatabaseInput -InitialProperties request.config.recoveryPoint
@@ -489,7 +489,7 @@ $query.Invoke()
 # RSC_TOKEN="YOUR_RSC_ACCESS_TOKEN"
 # Set exactly ONE recovery point: timestampMs, snapshotId, or scn.
 # targetOracleHostOrRacId is an OracleHost FID for standalone DBs, OracleRac FID for RAC DBs.
-query="mutation { exportOracleDatabase(input: { request: { id: \\\"40bac7c1-87ad-4ac0-b4a6-34ac592d8e77\\\" config: { recoveryPoint: { timestampMs: 1737000000000 } targetOracleHostOrRacId: \\\"11111111-2222-3333-4444-555555555555\\\" numChannels: 2 } } }) { id status } }"
+query="mutation { exportOracleDatabase(input: { request: { id: \\\"40bac7c1-87ad-4ac0-b4a6-34ac592d8e77\\\" config: { recoveryPoint: { timestampMs: 1737000000000 } targetOracleHostOrRacId: \\\"a0eebc99-9c0b-4ef8-bb6d-6bb9bd380a11\\\" numChannels: 2 } } }) { id status } }"
 
 # Execute the GraphQL query with curl
 curl -X POST \
@@ -516,7 +516,7 @@ mutation {
           timestampMs: 1737000000000   # epoch milliseconds (Jan 2025)
         }
         # OracleHost FID for standalone DBs, OracleRac FID for RAC DBs
-        targetOracleHostOrRacId: "11111111-2222-3333-4444-555555555555"
+        targetOracleHostOrRacId: "a0eebc99-9c0b-4ef8-bb6d-6bb9bd380a11"
       }
     }
   }) {
@@ -530,7 +530,7 @@ mutation {
 # No toolkit cmdlet available
 $oracleDb = Get-RscOracleDatabase -Name "example"
 # OracleHost FID for standalone DBs, OracleRac FID for RAC DBs
-$targetHostOrRacId = "11111111-2222-3333-4444-555555555555"
+$targetHostOrRacId = "a0eebc99-9c0b-4ef8-bb6d-6bb9bd380a11"
 
 $query = New-RscMutation -GqlMutation mountOracleDatabase
 $query.Var.input = Get-RscType -Name MountOracleDatabaseInput -InitialProperties request.config.recoveryPoint
@@ -548,7 +548,7 @@ $query.Invoke()
 # RSC_TOKEN="YOUR_RSC_ACCESS_TOKEN"
 # Set exactly ONE recovery point: timestampMs, snapshotId, or scn.
 # targetOracleHostOrRacId is an OracleHost FID for standalone DBs, OracleRac FID for RAC DBs.
-query="mutation { mountOracleDatabase(input: { request: { id: \\\"40bac7c1-87ad-4ac0-b4a6-34ac592d8e77\\\" config: { recoveryPoint: { timestampMs: 1737000000000 } targetOracleHostOrRacId: \\\"11111111-2222-3333-4444-555555555555\\\" } } }) { id status } }"
+query="mutation { mountOracleDatabase(input: { request: { id: \\\"40bac7c1-87ad-4ac0-b4a6-34ac592d8e77\\\" config: { recoveryPoint: { timestampMs: 1737000000000 } targetOracleHostOrRacId: \\\"a0eebc99-9c0b-4ef8-bb6d-6bb9bd380a11\\\" } } }) { id status } }"
 
 # Execute the GraphQL query with curl
 curl -X POST \

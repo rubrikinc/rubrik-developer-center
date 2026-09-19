@@ -875,7 +875,7 @@ Re-synchronize vCenter metadata â€” host, datastore, network, and VM inventory â
 ```graphql
 mutation {
   refreshVsphereVcenter(input: {
-    fid: "11111111-2222-3333-4444-555555555555"
+    fid: "a0eebc99-9c0b-4ef8-bb6d-6bb9bd380a11"
   }) {
     id
     status
@@ -887,7 +887,7 @@ mutation {
 # No toolkit cmdlet available
 $mutation = New-RscMutation -GqlQuery refreshVsphereVcenter
 $mutation.var.input = New-Object -TypeName RubrikSecurityCloud.Types.RefreshVsphereVcenterInput
-$mutation.var.input.Fid = "11111111-2222-3333-4444-555555555555"
+$mutation.var.input.Fid = "a0eebc99-9c0b-4ef8-bb6d-6bb9bd380a11"
 $mutation.invoke()
 ```
 
@@ -895,5 +895,5 @@ $mutation.invoke()
 curl -s -X POST "$RSC_URL/api/graphql" \
   -H "Authorization: Bearer $RSC_TOKEN" \
   -H "Content-Type: application/json" \
-  -d '{"query": "mutation { refreshVsphereVcenter(input: { fid: \"11111111-2222-3333-4444-555555555555\" }) { id status } }"}'
+  -d '{"query": "mutation { refreshVsphereVcenter(input: { fid: \"a0eebc99-9c0b-4ef8-bb6d-6bb9bd380a11\" }) { id status } }"}'
 ```
