@@ -3,7 +3,7 @@
 # the background import completes (up to ~2 hours for large environments).
 mutation {
   addCloudDirectSystem(input: {
-    clusterId: "11111111-2222-3333-4444-555555555555"
+    clusterId: "a0eebc99-9c0b-4ef8-bb6d-6bb9bd380a11"
     host: "netapp01.example.com"
     systemType: NETAPP_CLUSTER_MODE
     username: "svc-rubrik"

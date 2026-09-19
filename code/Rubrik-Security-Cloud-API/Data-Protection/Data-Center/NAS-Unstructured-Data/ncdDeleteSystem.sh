@@ -8,7 +8,7 @@ query="mutation CloudDirectSystemDelete(\$input: CloudDirectSystemDeleteInput!) 
 read -r -d '' variables <<'JSON'
 {
   "input": {
-    "clusterUuid": "11111111-2222-3333-4444-555555555555",
+    "clusterUuid": "a0eebc99-9c0b-4ef8-bb6d-6bb9bd380a11",
     "systemFid": "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee"
   }
 }
