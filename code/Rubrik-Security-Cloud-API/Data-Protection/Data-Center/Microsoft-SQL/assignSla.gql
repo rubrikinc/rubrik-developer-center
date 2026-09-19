@@ -11,5 +11,11 @@ mutation assignMssqlSla {
         }
       }
     }
-  })
+  }) {
+    items {
+      objectId
+      pendingSlaDomainId
+      pendingSlaDomainName
+    }
+  }
 }

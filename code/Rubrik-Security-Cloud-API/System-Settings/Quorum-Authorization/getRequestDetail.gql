@@ -7,7 +7,13 @@ query GetTprRequestDetail($requestId: String!) {
     executionExpiresAt
     triggeredTprRule
     triggeredTprRules
-    triggeredTprPolicies
+    triggeredTprPolicies {
+      id
+      name
+      status
+      quorumRequirement
+      approverIds
+    }
     isPotentialLastApprover
     executionType
     requester {
@@ -16,9 +22,10 @@ query GetTprRequestDetail($requestId: String!) {
       email
     }
     statusLog {
-      status
-      time
-      userId
+      operation
+      timestamp
+      authorId
+      authorName
       comment
     }
   }

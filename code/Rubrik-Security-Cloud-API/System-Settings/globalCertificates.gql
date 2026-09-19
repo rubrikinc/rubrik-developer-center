@@ -1,5 +1,5 @@
 query { 
-    globalCertificates {
+    globalCertificates(input: {searchText: ""}) {
     nodes {
         status
         certificate
