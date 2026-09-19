@@ -169,6 +169,9 @@ All recovery operations require a `recoveryPoint` that specifies the target poin
 | Point-in-time | `date` | ISO 8601 (`2025-01-15T14:30:00.000Z`) | Recovering to a known timestamp |
 | LSN-based | `lsnPoint.lsn` | SQL Server LSN string (`00000063:00000e28:0001`) | Recovering to a precise transaction boundary |
 
+!!! warning "Set exactly one recovery point field"
+    Every field inside `recoveryPoint` is declared optional, so an empty `recoveryPoint: {}` is accepted at the call site and fails when the job runs. Set one of `date`, `lsnPoint`, or `timestampMs`.
+
 ### In-Place Restore
 
 Restore a database to its original location and instance. The existing database is overwritten and brought back online after recovery. Use the request `id` returned by the mutation to monitor progress via [`mssqlJobStatus`](../../API-Reference/queries/mssqlJobStatus.md).
@@ -193,13 +196,7 @@ Restore a database to its original location and instance. The existing database 
 
 Export a backup to a different database name or SQL Server instance without touching the source database. This is the right choice for recovery validation, creating test/dev copies, or running a parallel recovery alongside the production database.
 
-Required fields in `config`:
-
-- `recoveryPoint` — the target point in time
-- `targetDatabaseName` — name for the new database on the target instance
-- `targetInstanceId` — UUID of the SQL Server instance where the database will be created (use the instance ID from the discovery query above)
-
-Set `allowOverwrite: true` only if a database with the target name already exists and you intend to replace it.
+`targetInstanceId` is the SQL Server instance where the new database will be created; use the instance ID from the discovery query above. Set `allowOverwrite: true` only if a database with the target name already exists and you intend to replace it.
 
 === "GraphQL"
     ```graphql
@@ -224,12 +221,7 @@ Live Mount is well-suited for:
 - Extracting specific rows or objects from a backup
 - Providing a point-in-time copy for developers without consuming extra storage
 
-Required fields in `config`:
-
-- `mountedDatabaseName` — the name the database will appear as on the target SQL Server instance
-- `recoveryPoint` — the point in time to mount
-
-`targetInstanceId` is optional; if omitted, the mount is created on the same instance as the source database.
+`mountedDatabaseName` is the name the database will appear as on the target SQL Server instance. `targetInstanceId` is optional; if omitted, the mount is created on the same instance as the source database.
 
 === "GraphQL"
     ```graphql
@@ -305,7 +297,12 @@ Use [`mssqlAvailabilityGroupVirtualGroups`](../../API-Reference/queries/mssqlAva
 
 #### Link Two Availability Groups
 
-Pass both AG FIDs in `objectIds` with `operation: LINK`. This creates the virtual group joining both AG objects. The `assignSlaReq` field is required by the input type but the SLA assignment is not applied during a `LINK` operation — set `slaDomainAssignType: NO_ASSIGNMENT`.
+Pass both AG FIDs in `objectIds` with `operation: LINK`. This creates the virtual group joining both AG objects and assigns the SLA Domain in the same call, so `assignSlaReq` must carry a real SLA: set `slaDomainAssignType: protectWithSlaId` and supply `slaOptionalId`.
+
+!!! warning "The SLA must already replicate between both clusters"
+    Linking runs a precheck against the SLA you pass. It fails if the SLA cannot be resolved, and it also fails unless the SLA's replication configuration lists every cluster involved in the link as both a source and a target. Configure replication on the SLA before linking.
+
+    Passing a no-assignment value here does not skip the assignment, it fails the precheck.
 
 === "GraphQL"
     ```graphql
