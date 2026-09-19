@@ -54,6 +54,8 @@ Exchange Server details object.
 |-------|----------|------|-------------|
 | descendantConnection | first | Int | Returns the first n elements from the list. |
 | descendantConnection | after | String | Returns the elements in the list that occur after the specified cursor. |
+| descendantConnection | last | Int | Returns the last n elements from the list. |
+| descendantConnection | before | String | Returns the elements in the list that occur before the specified cursor. |
 | descendantConnection | sortBy | [HierarchySortByField](../enums/HierarchySortByField.md) | Sort hierarchy objects according to the hierarchy field. |
 | descendantConnection | sortOrder | [SortOrder](../enums/SortOrder.md) | Sorts the order of results. |
 | descendantConnection | typeFilter | [[HierarchyObjectTypeEnum](../enums/HierarchyObjectTypeEnum.md)!] | Types of objects to include. |

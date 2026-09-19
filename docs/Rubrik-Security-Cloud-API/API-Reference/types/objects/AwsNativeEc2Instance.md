@@ -2,7 +2,7 @@
 
 AWS native EC2 instance.
 
-**Implements:** [PolarisHierarchyObject](../interfaces/PolarisHierarchyObject.md), [PolarisHierarchySnappable](../interfaces/PolarisHierarchySnappable.md), [HierarchyObject](../interfaces/HierarchyObject.md), [HierarchySnappable](../interfaces/HierarchySnappable.md), [AwsNativeAccountLogicalChildType](../interfaces/AwsNativeAccountLogicalChildType.md), [AwsNativeAccountDescendantType](../interfaces/AwsNativeAccountDescendantType.md), [AwsNativeHierarchyObject](../interfaces/AwsNativeHierarchyObject.md)
+**Implements:** [PolarisHierarchyObject](../interfaces/PolarisHierarchyObject.md), [HierarchyObject](../interfaces/HierarchyObject.md), [PolarisHierarchySnappable](../interfaces/PolarisHierarchySnappable.md), [HierarchySnappable](../interfaces/HierarchySnappable.md), [AwsNativeAccountLogicalChildType](../interfaces/AwsNativeAccountLogicalChildType.md), [AwsNativeAccountDescendantType](../interfaces/AwsNativeAccountDescendantType.md), [AwsNativeHierarchyObject](../interfaces/AwsNativeHierarchyObject.md)
 
 ## Fields
 
@@ -20,7 +20,7 @@ AWS native EC2 instance.
 | awsNativeAccountDetails | [AwsNativeAccountDetails](AwsNativeAccountDetails.md) | AWS native account details. |
 | awsNativeAccountName | String! | Name for the AWS Account. |
 | cloudNativeApplications | [[CloudNativeApplicationInfo](CloudNativeApplicationInfo.md)!]! | List of cloud native applications associated with this EC2 instance. |
-| cloudNativeId | String! | AWS Native ID of Instance. |
+| cloudNativeId | String! | AWS Native ID of the object. |
 | configuredSlaDomain | [SlaDomain](../interfaces/SlaDomain.md)! | SLA Domain configured for the hierarchy object. |
 | effectiveRetentionSlaDomain | [SlaDomain](../interfaces/SlaDomain.md) | Effective retention of the SLA Domain of the hierarchy object. |
 | effectiveSlaDomain | [SlaDomain](../interfaces/SlaDomain.md)! | Effective SLA Domain of the hierarchy object. |
@@ -37,7 +37,7 @@ AWS native EC2 instance.
 | isMarketplace | Boolean! | Whether the instance image is marketplace image. |
 | isPreOrPostScriptEnabled | Boolean! | Specifies whether the pre-script or post-script framework is enabled on the EC2 instance. When enabled, it facilitates application-consistent backups. |
 | isProtectable | Boolean! | Indicates whether this EC2 instance is protectable or not. |
-| isRelic | Boolean! | Whether the instance is relic. |
+| isRelic | Boolean! | Whether the object is a relic. |
 | logicalPath | [[PathNode](PathNode.md)!]! | Sequential list of the logical ancestors of this object. |
 | name | String! | Name of the hierarchy object. |
 | nativeName | String! | AWS Native name of the object. |
@@ -55,7 +55,7 @@ AWS native EC2 instance.
 | privateIp | String! | Private IP address for instance. |
 | publicIp | String! | Public IP address for instance. |
 | recoveryPlansInfo | [[RecoveryPlansInfo](RecoveryPlansInfo.md)!]! | List of Recovery Plans associated with the virtual machine. |
-| region | [AwsNativeRegion](../enums/AwsNativeRegion.md)! | Name of the region. Some examples are: US_EAST_1, AP_EAST_1. This field cannot be null or empty string and will be mapped directly to available regions for EC2 instance on cloud(AWS). For more information, see https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-regions-availability-zones.html#concepts-available-regions. |
+| region | [AwsNativeRegion](../enums/AwsNativeRegion.md)! | The AWS region to which the object belongs. |
 | rscNativeObjectPendingSla | [CompactSlaDomain](CompactSlaDomain.md) | SLA Domain assignment which is pending on the Rubrik Security Cloud native objects. |
 | rscPendingObjectPauseAssignment | [PendingObjectPauseAssignmentStatus](../enums/PendingObjectPauseAssignmentStatus.md) | Object pause pending assignment details for RSC objects. |
 | securityMetadata | [SecurityMetadata](SecurityMetadata.md) | Security posture metadata. |
@@ -63,10 +63,10 @@ AWS native EC2 instance.
 | slaPauseStatus | Boolean! | Pause status of the effective SLA Domain of the hierarchy object. |
 | snapshotConnection | [PolarisSnapshotConnection](PolarisSnapshotConnection.md) | The list of snapshots taken for this workload. |
 | snapshotDistribution | [SnapshotDistribution](SnapshotDistribution.md)! | Distribution of the snapshots of the hierarchy object. |
-| snapshotGroupByConnection | [PolarisSnapshotGroupByConnection](PolarisSnapshotGroupByConnection.md) | GroupBy connection for the snapshots of this workload. |
-| snapshotGroupByNewConnection | [PolarisSnapshotGroupByNewConnection](PolarisSnapshotGroupByNewConnection.md) | GroupBy connection for the snapshots of this workload. |
+| snapshotGroupByConnection | [PolarisSnapshotGroupByConnection](PolarisSnapshotGroupByConnection.md) | Group-by connection for the snapshots of this workload. |
+| snapshotGroupByNewConnection | [PolarisSnapshotGroupByNewConnection](PolarisSnapshotGroupByNewConnection.md) | Group-by connection for the snapshots of this workload. |
 | sshKeyPairName | String! | Name of SSH key-pair for the Instance. |
-| tags | [[Tag](Tag.md)!]! | List of tags associated with Instance. |
+| tags | [[Tag](Tag.md)!]! | List of tags that are assigned to the object. |
 | vmAppConsistentSpecs | [VmAppConsistentSpecsInternal](VmAppConsistentSpecsInternal.md) | Specifications for ensuring application consistency on the EC2 instance. |
 | vpcId | String! | ID of Virtual Private Cloud (VPC) associated with instance. |
 | vpcName | String! | Name of Virtual Private Cloud (VPC) associated with instance. |

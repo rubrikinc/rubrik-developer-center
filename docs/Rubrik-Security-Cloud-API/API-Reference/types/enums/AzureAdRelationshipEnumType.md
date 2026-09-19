@@ -50,4 +50,4 @@ Entra ID object relationship types.
 | SCOPE_ROLE_ELIGIBLE_ASSIGNMENT | Scope-side role eligibility (AU/User/Group/App/SP/Device to eligibility schedule). |
 | SCOPE_TAG_ASSIGNMENT | Scope tag assignment relationship for an Intune object. |
 | SSO_POLICY_APPLIES_TO | Service principals and applications an SSO policy is applied to. |
-| SSO_POLICY_EXTENSION | The application that a claims mapping policy extends. |
+| SSO_POLICY_EXTENSION *(deprecated: The SSO Policy Extension relationship has been removed.)* | The application that a claims mapping policy extends. |

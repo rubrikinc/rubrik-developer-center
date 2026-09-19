@@ -48,4 +48,10 @@ OpenStack Environment descendant.
 
 ## Implemented By
 
+- [OpenstackAvailabilityZone](../objects/OpenstackAvailabilityZone.md)
+- [OpenstackDomain](../objects/OpenstackDomain.md)
+- [OpenstackHost](../objects/OpenstackHost.md)
+- [OpenstackImage](../objects/OpenstackImage.md)
+- [OpenstackProject](../objects/OpenstackProject.md)
+- [OpenstackRegion](../objects/OpenstackRegion.md)
 - [OpenstackVirtualMachine](../objects/OpenstackVirtualMachine.md)

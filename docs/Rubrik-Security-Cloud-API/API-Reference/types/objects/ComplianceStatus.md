@@ -1,9 +1,9 @@
 # ComplianceStatus
 
-*No description available.*
+SLA compliance status of the group.
 
 ## Fields
 
 | Field | Type | Description |
 |-------|------|-------------|
-| enumValue | [ComplianceStatusEnum](../enums/ComplianceStatusEnum.md)! |  |
+| enumValue | [ComplianceStatusEnum](../enums/ComplianceStatusEnum.md)! | SLA compliance status of the group. |

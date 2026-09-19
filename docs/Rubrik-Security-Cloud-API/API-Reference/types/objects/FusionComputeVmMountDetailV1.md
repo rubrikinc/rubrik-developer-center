@@ -7,7 +7,7 @@ Detailed information for a FusionCompute Live Mount.
 | Field | Type | Description |
 |-------|------|-------------|
 | fusionComputeVmMountSummaryV1 | [FusionComputeVmMountSummaryV1](FusionComputeVmMountSummaryV1.md) | Summary fields for the Live Mount. |
-| nasIp | String | The IP address of the NFS share. |
+| nasIp | String | Supported in v9.6+ The IP address of the NFS share. |
 | powerStatus | String | The power status of the mounted virtual machine (such as ON or OFF). |
 
 ## Used By

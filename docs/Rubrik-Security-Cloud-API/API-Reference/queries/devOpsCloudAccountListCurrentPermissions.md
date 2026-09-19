@@ -41,6 +41,7 @@ Retrieves currently configured permissions for a DevOps cloud account organizati
           "featurePermissions": [
             {
               "feature": "ALL",
+              "hasExocomputeLambdaRole": true,
               "permissionJson": "example-string",
               "version": 0
             }

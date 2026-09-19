@@ -22,7 +22,9 @@ Paginated list of PolarisSnapshotGroupBy objects. Each page of the results inclu
 - [AwsNativeRdsInstance.snapshotGroupByConnection](AwsNativeRdsInstance.md)
 - [AwsNativeS3Bucket.snapshotGroupByConnection](AwsNativeS3Bucket.md)
 - [AzureAdDirectory.snapshotGroupByConnection](AzureAdDirectory.md)
+- [AzureCosmosNosqlContainer.snapshotGroupByConnection](AzureCosmosNosqlContainer.md)
 - [AzureDevOpsRepository.snapshotGroupByConnection](AzureDevOpsRepository.md)
+- AzureNativeHierarchyObjectType.snapshotGroupByConnection
 - [AzureNativeManagedDisk.snapshotGroupByConnection](AzureNativeManagedDisk.md)
 - [AzureNativeVirtualMachine.snapshotGroupByConnection](AzureNativeVirtualMachine.md)
 - [AzurePostgresFlexibleServer.snapshotGroupByConnection](AzurePostgresFlexibleServer.md)
@@ -43,6 +45,4 @@ Paginated list of PolarisSnapshotGroupBy objects. Each page of the results inclu
 - [M365BackupStorageOrg.snapshotGroupByConnection](M365BackupStorageOrg.md)
 - [M365BackupStorageSite.snapshotGroupByConnection](M365BackupStorageSite.md)
 - MicrosoftGroup.snapshotGroupByConnection
-- MicrosoftMailbox.snapshotGroupByConnection
-- MicrosoftOnedrive.snapshotGroupByConnection
-- *…and 14 more*
+- *…and 16 more*

@@ -1,8 +1,8 @@
 # KubernetesProtectionSet
 
-Kubernetes Protection Set.
+A Kubernetes Protection Set (workload) protected by Rubrik.
 
-**Implements:** [HierarchyObject](../interfaces/HierarchyObject.md), [HierarchySnappable](../interfaces/HierarchySnappable.md), [CdmHierarchyObject](../interfaces/CdmHierarchyObject.md), [CdmHierarchySnappableNew](../interfaces/CdmHierarchySnappableNew.md), [KubernetesClusterDescendant](../interfaces/KubernetesClusterDescendant.md)
+**Implements:** [CdmHierarchyObject](../interfaces/CdmHierarchyObject.md), [HierarchyObject](../interfaces/HierarchyObject.md), [HierarchySnappable](../interfaces/HierarchySnappable.md), [CdmHierarchySnappableNew](../interfaces/CdmHierarchySnappableNew.md), [KubernetesClusterDescendant](../interfaces/KubernetesClusterDescendant.md)
 
 ## Fields
 
@@ -24,7 +24,7 @@ Kubernetes Protection Set.
 | effectiveRetentionSlaDomain | [SlaDomain](../interfaces/SlaDomain.md) | Effective retention of the SLA Domain of the hierarchy object. |
 | effectiveSlaDomain | [SlaDomain](../interfaces/SlaDomain.md)! | Effective SLA Domain of the hierarchy object. |
 | effectiveSlaSourceObject | [PathNode](PathNode.md) | Path node of the effective SLA Domain source. |
-| id | [UUID](../scalars/UUID.md)! | Object ID. |
+| id | [UUID](../scalars/UUID.md)! | ID of the hierarchy object. |
 | isRelic | Boolean! | Specifies whether the Protection Set is a relic. |
 | isReplica | Boolean | True if this object is a replica, its current cluster differs from its source (primary) cluster. False if the object resides on its source cluster. Null when the source cluster is unknown. |
 | k8sClusterName | String! | Name of the Kubernetes Cluster. |

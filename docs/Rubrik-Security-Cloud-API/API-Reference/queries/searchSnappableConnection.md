@@ -1,6 +1,6 @@
 # searchSnappableConnection
 
-*No description available.*
+Returns a paginated connection of workloads matching the search filter. Account and subject contexts are derived from req_ctx inside the handler. Unlike the plain workload connection, the SLA time range from the filter is never applied to the base table query.
 
 ## Arguments
 
@@ -10,9 +10,9 @@
 | after | String | Returns the elements in the list that occur after the specified cursor. |
 | last | Int | Returns the last n elements from the list. |
 | before | String | Returns the elements in the list that occur before the specified cursor. |
-| sortOrder | [SortOrder](../types/enums/SortOrder.md) | Sorts the order of results. |
+| filter | [SnappableFilterInputWithSearch](../types/inputs/SnappableFilterInputWithSearch.md) | Filter workloads by input. |
 | sortBy | [SnappableSortByEnum](../types/enums/SnappableSortByEnum.md) | Sort workloads by field. |
-| filter | [SnappableFilterInputWithSearch](../types/inputs/SnappableFilterInputWithSearch.md) | Filter workloads by input (with search by name). |
+| sortOrder | [SortOrder](../types/enums/SortOrder.md) | Sort order for workloads. |
 
 ## Returns
 

@@ -47,6 +47,7 @@ S3CompatibleSubType enum specifies the sub location type of a S3Compatible locat
 | RSTOR | RStor subtype. |
 | SCALITY | Scality subtype. |
 | SCALITY_ARTESCA | Scality Artesca subtype. |
+| SCALITY_RING | Scality RING subtype. |
 | SEAGATE_LYVE | Seagate Lyve subtype. |
 | SPC_CLOUD | SPC Cloud subtype. |
 | STONEFLY | StoneFly subtype. |

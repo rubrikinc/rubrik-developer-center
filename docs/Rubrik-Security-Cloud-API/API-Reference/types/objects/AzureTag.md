@@ -13,6 +13,7 @@ Azure Tag.
 
 **Referenced by**
 
+- [AzureCosmosNosqlAccount.tags](AzureCosmosNosqlAccount.md)
 - AzureNativeHierarchyObjectType.tags
 - [AzureNativeManagedDisk.tags](AzureNativeManagedDisk.md)
 - [AzureNativeResourceGroup.tags](AzureNativeResourceGroup.md)

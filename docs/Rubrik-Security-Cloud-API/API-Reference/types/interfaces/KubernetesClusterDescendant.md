@@ -48,6 +48,7 @@ Descendants of a Kubernetes Cluster.
 
 ## Implemented By
 
+- [KubernetesLabel](../objects/KubernetesLabel.md)
 - [KubernetesNamespaceType](../objects/KubernetesNamespaceType.md)
 - [KubernetesProtectionSet](../objects/KubernetesProtectionSet.md)
 - [KubernetesVirtualMachine](../objects/KubernetesVirtualMachine.md)

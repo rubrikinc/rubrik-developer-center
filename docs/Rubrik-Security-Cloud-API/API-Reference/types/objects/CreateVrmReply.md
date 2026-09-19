@@ -6,8 +6,8 @@ Response for creating a FusionCompute Virtual Resource Management (VRM) instance
 
 | Field | Type | Description |
 |-------|------|-------------|
-| asyncRequestStatus | [AsyncRequestStatus](AsyncRequestStatus.md) | Required. |
-| id | String! | Required. The ID of the FusionCompute VRM instance. |
+| asyncRequestStatus | [AsyncRequestStatus](AsyncRequestStatus.md) | Required. Supported in v9.6+ |
+| id | String! | Required. Supported in v9.6+ The ID of the FusionCompute VRM instance. |
 
 ## Used By
 

@@ -17,6 +17,7 @@ Volume group live mount.
 | name | String! | Name of the live mount. |
 | nodeCompositeId | String | Composite Id of the node in the live mount. |
 | nodeIp | String | IP of the node in the live mount. |
+| recoveryPurpose | [RecoveryPurpose](../enums/RecoveryPurpose.md)! | Recovery purpose under which the Live Mount was delivered. SURGICAL_RECOVERY means quarantined files were deleted from the delivered data. |
 | restoreScriptPath | String | Path of the bare-metal restore script. |
 | smbShareName | String | Name of SMB share. |
 | sourceHost | [PhysicalHost](PhysicalHost.md)! | Source host of the live mount. |

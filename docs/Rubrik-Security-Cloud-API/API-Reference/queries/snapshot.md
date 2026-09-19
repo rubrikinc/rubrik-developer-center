@@ -7,7 +7,7 @@ Returns a single snapshot by snapshot forever UUID and cluster UUID. In case clu
 | Argument | Type | Description |
 |----------|------|-------------|
 | snapshotFid *(required)* | [UUID](../types/scalars/UUID.md)! | Snapshot persistent UUID in RSC. |
-| clusterUuid | [UUID](../types/scalars/UUID.md) | The Rubrik cluster ID. |
+| clusterUuid | [UUID](../types/scalars/UUID.md) | The Rubrik cluster ID to resolve the snapshot in. |
 
 ## Returns
 

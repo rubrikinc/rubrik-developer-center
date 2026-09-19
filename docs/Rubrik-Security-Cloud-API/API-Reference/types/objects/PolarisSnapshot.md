@@ -82,13 +82,13 @@ A cloud-managed snapshot type that extends the generic snapshot with additional 
 - [AzureAdDirectory.newestIndexedSnapshot](AzureAdDirectory.md)
 - [AzureAdDirectory.newestSnapshot](AzureAdDirectory.md)
 - [AzureAdDirectory.oldestSnapshot](AzureAdDirectory.md)
+- [AzureCosmosNosqlContainer.newestIndexedSnapshot](AzureCosmosNosqlContainer.md)
+- [AzureCosmosNosqlContainer.newestSnapshot](AzureCosmosNosqlContainer.md)
+- [AzureCosmosNosqlContainer.oldestSnapshot](AzureCosmosNosqlContainer.md)
 - [AzureDevOpsRepository.newestIndexedSnapshot](AzureDevOpsRepository.md)
 - [AzureDevOpsRepository.newestSnapshot](AzureDevOpsRepository.md)
 - [AzureDevOpsRepository.oldestSnapshot](AzureDevOpsRepository.md)
-- [AzureNativeManagedDisk.newestIndexedSnapshot](AzureNativeManagedDisk.md)
-- [AzureNativeManagedDisk.newestSnapshot](AzureNativeManagedDisk.md)
-- [AzureNativeManagedDisk.oldestSnapshot](AzureNativeManagedDisk.md)
-- [AzureNativeVirtualMachine.newestIndexedSnapshot](AzureNativeVirtualMachine.md)
-- [AzureNativeVirtualMachine.newestSnapshot](AzureNativeVirtualMachine.md)
-- [AzureNativeVirtualMachine.oldestSnapshot](AzureNativeVirtualMachine.md)
-- *…and 102 more*
+- AzureNativeHierarchyObjectType.newestIndexedSnapshot
+- AzureNativeHierarchyObjectType.newestSnapshot
+- AzureNativeHierarchyObjectType.oldestSnapshot
+- *…and 108 more*

@@ -1,8 +1,8 @@
 # KubernetesCluster
 
-Kubernetes cluster.
+A Kubernetes cluster onboarded to Rubrik CDM.
 
-**Implements:** [HierarchyObject](../interfaces/HierarchyObject.md), [CdmHierarchyObject](../interfaces/CdmHierarchyObject.md)
+**Implements:** [CdmHierarchyObject](../interfaces/CdmHierarchyObject.md), [HierarchyObject](../interfaces/HierarchyObject.md)
 
 ## Fields
 
@@ -11,7 +11,7 @@ Kubernetes cluster.
 | allOrgs | [[Org](Org.md)!]! | Organizations to which this hierarchy object belongs. |
 | allTags | [[AssignedRscTag](AssignedRscTag.md)!]! | RSC tags to which this hierarchy object is assigned. |
 | authorizedOperations | [[Operation](../enums/Operation.md)!]! | The authorized operations on the object. |
-| cdmId | String! | ID of Kubernetes ProtectionSet on Rubrik CDM. |
+| cdmId | String! | ID of Kubernetes Cluster on Rubrik CDM. |
 | cdmPendingObjectPauseAssignment | [PendingObjectPauseAssignmentStatus](../enums/PendingObjectPauseAssignmentStatus.md) | Object pause pending assignment details for CDM objects. |
 | cloudAccountId | String | ID of the cloud account used to establish a connection with the EKS Kubernetes cluster. |
 | cluster | [Cluster](Cluster.md)! | Rubrik cluster where this object originated. |
@@ -71,6 +71,8 @@ Kubernetes cluster.
 |-------|----------|------|-------------|
 | descendantConnection | first | Int | Returns the first n elements from the list. |
 | descendantConnection | after | String | Returns the elements in the list that occur after the specified cursor. |
+| descendantConnection | last | Int | Returns the last n elements from the list. |
+| descendantConnection | before | String | Returns the elements in the list that occur before the specified cursor. |
 | descendantConnection | sortBy | [HierarchySortByField](../enums/HierarchySortByField.md) | Sort hierarchy objects according to the hierarchy field. |
 | descendantConnection | sortOrder | [SortOrder](../enums/SortOrder.md) | Sorts the order of results. |
 | descendantConnection | typeFilter | [[HierarchyObjectTypeEnum](../enums/HierarchyObjectTypeEnum.md)!] | Types of objects to include. |
@@ -78,11 +80,15 @@ Kubernetes cluster.
 | descendantConnection | workloadHierarchy | [WorkloadLevelHierarchy](../enums/WorkloadLevelHierarchy.md) | Each enumeration value represents the hierarchy of a specific workload type for RBAC and SLA Domain assignments.  A value of 'None' represents the hierarchy of all workload types. |
 | k8sDescendantProtectionSets | first | Int | Returns the first n elements from the list. |
 | k8sDescendantProtectionSets | after | String | Returns the elements in the list that occur after the specified cursor. |
+| k8sDescendantProtectionSets | last | Int | Returns the last n elements from the list. |
+| k8sDescendantProtectionSets | before | String | Returns the elements in the list that occur before the specified cursor. |
 | k8sDescendantProtectionSets | sortBy | [HierarchySortByField](../enums/HierarchySortByField.md) | Sort hierarchy objects according to the hierarchy field. |
 | k8sDescendantProtectionSets | sortOrder | [SortOrder](../enums/SortOrder.md) | Sorts the order of results. |
 | k8sDescendantProtectionSets | filter | [[Filter](../inputs/Filter.md)!] | Hierarchy object filter. |
 | k8sDescendantVirtualMachines | first | Int | Returns the first n elements from the list. |
 | k8sDescendantVirtualMachines | after | String | Returns the elements in the list that occur after the specified cursor. |
+| k8sDescendantVirtualMachines | last | Int | Returns the last n elements from the list. |
+| k8sDescendantVirtualMachines | before | String | Returns the elements in the list that occur before the specified cursor. |
 | k8sDescendantVirtualMachines | sortBy | [HierarchySortByField](../enums/HierarchySortByField.md) | Sort hierarchy objects according to the hierarchy field. |
 | k8sDescendantVirtualMachines | sortOrder | [SortOrder](../enums/SortOrder.md) | Sorts the order of results. |
 | k8sDescendantVirtualMachines | filter | [[Filter](../inputs/Filter.md)!] | Hierarchy object filter. |

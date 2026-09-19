@@ -7,6 +7,7 @@ A customer-managed lifecycle rule that would tier files to offline tier or delet
 | Field | Type | Description |
 |-------|------|-------------|
 | bucketName | String! | The bucket holding the archived data. |
+| cloudAccountName | String! | The name of the cloud account associated with the archival location. |
 | defaultStorageClass | String! | The storage class the location's objects are written to. |
 | locationId | [UUID](../scalars/UUID.md)! | The unique identifier of the archival location. |
 | locationName | String! | The name of the archival location. |

@@ -6,4 +6,4 @@ Configuration for downloading a FusionCompute snapshot.
 
 | Field | Type | Description |
 |-------|------|-------------|
-| slaId | [UUID](../scalars/UUID.md) | ID of the SLA Domain that manages the retention of the downloaded snapshot. |
+| slaId | [UUID](../scalars/UUID.md) | Supported in v9.6+ ID of the SLA Domain that manages the retention of the downloaded snapshot. |
