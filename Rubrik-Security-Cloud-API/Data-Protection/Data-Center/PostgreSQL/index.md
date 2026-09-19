@@ -237,10 +237,7 @@ Recovery timestamps use ISO 8601 format (`2025-01-15T14:30:00.000Z`).
 
 [`restorePostgreSQLDbClusterToSnapshot`](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/restorePostgreSQLDbClusterToSnapshot/index.md) (v9.2+) mounts a specific snapshot onto one or more target hosts. The cluster runs directly off Rubrik backup storage, so the copy is available almost immediately without a full data transfer. This is the operation that creates a **live mount** — tear it down when you are finished (see [Manage Live Mounts](#manage-live-mounts)).
 
-Required fields in `postgresqlDbClusterRestoreConfig.restoreInfo`:
-
-- `snapshotId` — the specific snapshot to mount
-- `hostRecoveryTargets` — the target host(s) to mount onto, each identified by `hostId`
+Set `restoreInfo.snapshotId` to the snapshot you want, and `restoreInfo.hostRecoveryTargets` to the hosts it should mount onto.
 
 ```graphql
 mutation {
@@ -609,13 +606,7 @@ curl -X POST \
 
 Register a PostgreSQL cluster with Rubrik using [`addPostgreSQLDbCluster`](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/addPostgreSQLDbCluster/index.md). The host running PostgreSQL must already be added to your Rubrik cluster — see [Hosts](https://developer.rubrik.com/Rubrik-Security-Cloud-API/Data-Protection/Data-Center/Hosts/index.md). After registration, Rubrik discovers the databases automatically.
 
-Required fields:
-
-- `clusterUuid` — the Rubrik CDM cluster UUID that will manage this PostgreSQL cluster
-- `postgresqlDbClusterConfig.discoveryInfo` — the `entityInfo.name` for the cluster and the `hostInfo` list (each entry needs a `hostId`; `portNumber` defaults to the standard PostgreSQL port)
-- `postgresqlDbClusterConfig.systemUsername` — the PostgreSQL superuser account Rubrik uses
-
-If `loginInfo` is provided, both its `username` and `password` are required.
+`postgresqlDbClusterConfig.discoveryInfo` names the cluster and lists the hosts it runs on, where `portNumber` defaults to the standard PostgreSQL port. `systemUsername` is the superuser account Rubrik connects as.
 
 ```graphql
 mutation {

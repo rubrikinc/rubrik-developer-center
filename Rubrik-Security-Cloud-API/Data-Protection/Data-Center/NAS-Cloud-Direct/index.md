@@ -106,7 +106,7 @@ $query.Invoke().nodes
 #!/bin/bash
 
 # RSC_TOKEN="YOUR_RSC_ACCESS_TOKEN"
-query="query { cloudDirectNasShares(sortBy: NAME sortOrder: ASC filter: [ {field: IS_RELIC texts: \\\"false\\\"} {field: IS_REPLICATED texts: \\\"false\\\"} ]) { nodes { id name protocol ncdPolicyName cloudDirectId isRelic isStale totalSnapshots cloudDirectNasSystem { id name vendorType } cloudDirectNasNamespace { id name } effectiveSlaDomain { id name } } pageInfo { endCursor hasNextPage } } }"
+query="query { cloudDirectNasShares( sortBy: NAME sortOrder: ASC filter: [ { field: IS_RELIC, texts: \\\"false\\\" } { field: IS_REPLICATED, texts: \\\"false\\\" } ] ) { nodes { id name protocol ncdPolicyName cloudDirectId isStale totalSnapshots cloudDirectNasSystem { id name vendorType } cloudDirectNasNamespace { id name } effectiveSlaDomain { id name } } pageInfo { endCursor hasNextPage } } }"
 
 # Execute the GraphQL query with curl
 curl -X POST \
@@ -183,7 +183,6 @@ $query.Invoke()
 #!/bin/bash
 
 # RSC_TOKEN="YOUR_RSC_ACCESS_TOKEN"
-# Replace the fid with a share FID captured from cloudDirectNasShares.
 query="query { cloudDirectNasShare(fid: \\\"a0eebc99-9c0b-4ef8-bb6d-6bb9bd380a11\\\") { id name protocol ncdPolicyName cloudDirectId isRelic isStale totalSnapshots newestSnapshot { id date } oldestSnapshot { id date } effectiveSlaDomain { id name } cloudDirectNasSystem { id name vendorType } cloudDirectNasNamespace { id name } } }"
 
 # Execute the GraphQL query with curl
@@ -321,7 +320,7 @@ $query.Invoke().nodes
 #!/bin/bash
 
 # RSC_TOKEN="YOUR_RSC_ACCESS_TOKEN"
-query="query { cloudDirectNasNamespaces(filter: [ {field: NAME_EXACT_MATCH texts: \\\"example\\\"} {field: IS_RELIC texts: \\\"false\\\"} {field: IS_REPLICATED texts: \\\"false\\\"} ]) { nodes { name id cloudDirectId cloudDirectNasSystem { name id } shareCount cluster { name id } effectiveSlaDomain { name id } } } }"
+query="query { cloudDirectNasNamespaces(filter: [ {field: NAME_EXACT_MATCH texts: \\\"example\\\"} {field: IS_RELIC texts: \\\"false\\\"} {field: IS_REPLICATED texts: \\\"false\\\"} ]) { nodes { name id cloudDirectId cloudDirectNasSystem { name id } cluster { name id } effectiveSlaDomain { name id } } } }"
 
 # Execute the GraphQL query with curl
 curl -X POST \
@@ -397,27 +396,13 @@ $query.Invoke().responses
 #!/bin/bash
 
 # RSC_TOKEN="YOUR_RSC_ACCESS_TOKEN"
-# Take an on-demand snapshot of a share. Omit slaId to use the share's assigned SLA.
-query="mutation TakeCloudDirectSnapshot(\$input: TakeCloudDirectSnapshotInput!) { takeCloudDirectSnapshot(input: \$input) { responses { id status } } }"
+query="mutation { takeCloudDirectSnapshot(input: { objectFid: \\\"aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee\\\" slaId: \\\"a0eebc99-9c0b-4ef8-bb6d-6bb9bd380a11\\\" exclusions: [ { path: \\\"/finance/tmp\\\" } { pattern: \\\"*.bak\\\" } ] }) { responses { id status } } }"
 
-read -r -d '' variables <<'JSON'
-{
-  "input": {
-    "objectFid": "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee",
-    "slaId": "a0eebc99-9c0b-4ef8-bb6d-6bb9bd380a11",
-    "exclusions": [
-      { "path": "/finance/tmp" },
-      { "pattern": "*.bak" }
-    ]
-  }
-}
-JSON
-
-# Execute the GraphQL mutation with curl
+# Execute the GraphQL query with curl
 curl -X POST \
   -H "Content-Type: application/json" \
   -H "Authorization: Bearer $RSC_TOKEN" \
-  -d "$(jq -n --arg q "$query" --argjson v "$variables" '{query: $q, variables: $v}')" \
+  -d "{\"query\": \"$query\"}" \
   https://example.my.rubrik.com/api/graphql
 ```
 
@@ -481,8 +466,7 @@ $query.Invoke().nodes
 #!/bin/bash
 
 # RSC_TOKEN="YOUR_RSC_ACCESS_TOKEN"
-# workloadId is the share FID passed as a String. Replace before running.
-query="query { snapshotsOfCloudDirectShare(workloadId: \\\"a0eebc99-9c0b-4ef8-bb6d-6bb9bd380a11\\\" sortBy: CREATION_TIME sortOrder: DESC) { nodes { id date expirationDate protocol isIndexed isQuarantined isExpired isOnDemandSnapshot } pageInfo { endCursor hasNextPage } } }"
+query="query { snapshotsOfCloudDirectShare( workloadId: \\\"a0eebc99-9c0b-4ef8-bb6d-6bb9bd380a11\\\" sortBy: CREATION_TIME sortOrder: DESC ) { nodes { id date expirationDate protocol isIndexed isQuarantined isExpired isOnDemandSnapshot } pageInfo { endCursor hasNextPage } } }"
 
 # Execute the GraphQL query with curl
 curl -X POST \
@@ -544,8 +528,7 @@ $query.Invoke().nodes
 #!/bin/bash
 
 # RSC_TOKEN="YOUR_RSC_ACCESS_TOKEN"
-# snappableFid is the share FID. searchQuery is a filename or path prefix.
-query="query { searchSnappableVersionedFiles(snappableFid: \\\"a0eebc99-9c0b-4ef8-bb6d-6bb9bd380a11\\\" searchQuery: \\\"quarterly-report\\\" usePrefixSearch: true) { nodes { filename absolutePath displayPath fileVersions { snapshotId size lastModified fileMode } } pageInfo { endCursor hasNextPage } } }"
+query="query { searchSnappableVersionedFiles( snappableFid: \\\"a0eebc99-9c0b-4ef8-bb6d-6bb9bd380a11\\\" searchQuery: \\\"quarterly-report\\\" usePrefixSearch: false ) { nodes { absolutePath displayPath filename fileVersions { snapshotId size lastModified fileMode } } pageInfo { endCursor hasNextPage } } }"
 
 # Execute the GraphQL query with curl
 curl -X POST \
@@ -605,9 +588,7 @@ $query.Invoke().nodes
 #!/bin/bash
 
 # RSC_TOKEN="YOUR_RSC_ACCESS_TOKEN"
-# snapshotFid is captured from snapshotsOfCloudDirectShare.
-# Use "/" to browse the root, then drill into a directory's displayPath.
-query="query { browseSnapshotFileConnection(snapshotFid: \\\"aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee\\\" path: \\\"/\\\") { nodes { filename absolutePath displayPath fileMode size lastModified } pageInfo { endCursor hasNextPage } } }"
+query="query { browseSnapshotFileConnection( snapshotFid: \\\"aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee\\\" path: \\\"/\\\" ) { nodes { absolutePath displayPath filename fileMode size lastModified } pageInfo { endCursor hasNextPage } } }"
 
 # Execute the GraphQL query with curl
 curl -X POST \
@@ -671,26 +652,13 @@ $query.Invoke()
 #!/bin/bash
 
 # RSC_TOKEN="YOUR_RSC_ACCESS_TOKEN"
-# Restore a single file. An empty dstPath overwrites the source path in place.
-query="mutation RecoverCloudDirectNasShare(\$input: RecoverCloudDirectNasShareInput!) { recoverCloudDirectNasShare(input: \$input) { id status } }"
+query="mutation { recoverCloudDirectNasShare(input: { snapshotFid: \\\"aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee\\\" srcShareName: \\\"/finance\\\" restorePathPairList: [ { srcPath: \\\"/finance/quarterly-report.xlsx\\\", dstPath: \\\"\\\" } ] }) { id status } }"
 
-read -r -d '' variables <<'JSON'
-{
-  "input": {
-    "snapshotFid": "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee",
-    "srcShareName": "finance-share",
-    "restorePathPairList": [
-      { "srcPath": "/finance/quarterly-report.xlsx", "dstPath": "" }
-    ]
-  }
-}
-JSON
-
-# Execute the GraphQL mutation with curl
+# Execute the GraphQL query with curl
 curl -X POST \
   -H "Content-Type: application/json" \
   -H "Authorization: Bearer $RSC_TOKEN" \
-  -d "$(jq -n --arg q "$query" --argjson v "$variables" '{query: $q, variables: $v}')" \
+  -d "{\"query\": \"$query\"}" \
   https://example.my.rubrik.com/api/graphql
 ```
 
@@ -749,28 +717,13 @@ $query.Invoke()
 #!/bin/bash
 
 # RSC_TOKEN="YOUR_RSC_ACCESS_TOKEN"
-# Shopping-cart restore. All srcPaths must come from the same snapshot and not
-# overlap. All dstPaths must be identical (one destination) or all empty.
-query="mutation RecoverCloudDirectNasShare(\$input: RecoverCloudDirectNasShareInput!) { recoverCloudDirectNasShare(input: \$input) { id status } }"
+query="mutation { recoverCloudDirectNasShare(input: { snapshotFid: \\\"aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee\\\" srcShareName: \\\"/finance\\\" restorePathPairList: [ { srcPath: \\\"/finance/quarterly-report.xlsx\\\", dstPath: \\\"/restored/2026-06-15\\\" } { srcPath: \\\"/finance/budget.csv\\\", dstPath: \\\"/restored/2026-06-15\\\" } ] }) { id status } }"
 
-read -r -d '' variables <<'JSON'
-{
-  "input": {
-    "snapshotFid": "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee",
-    "srcShareName": "finance-share",
-    "restorePathPairList": [
-      { "srcPath": "/finance/quarterly-report.xlsx", "dstPath": "/restored/2026-06-15" },
-      { "srcPath": "/finance/budget.csv", "dstPath": "/restored/2026-06-15" }
-    ]
-  }
-}
-JSON
-
-# Execute the GraphQL mutation with curl
+# Execute the GraphQL query with curl
 curl -X POST \
   -H "Content-Type: application/json" \
   -H "Authorization: Bearer $RSC_TOKEN" \
-  -d "$(jq -n --arg q "$query" --argjson v "$variables" '{query: $q, variables: $v}')" \
+  -d "{\"query\": \"$query\"}" \
   https://example.my.rubrik.com/api/graphql
 ```
 
@@ -842,29 +795,13 @@ $query.Invoke()
 #!/bin/bash
 
 # RSC_TOKEN="YOUR_RSC_ACCESS_TOKEN"
-# Register a NAS appliance as a Cloud Direct system. Returns a jobId;
-# registration is asynchronous and shares appear once the import completes.
-query="mutation AddCloudDirectSystem(\$input: AddCloudDirectSystemInput!) { addCloudDirectSystem(input: \$input) { jobId } }"
+query="mutation { addCloudDirectSystem(input: { clusterId: \\\"a0eebc99-9c0b-4ef8-bb6d-6bb9bd380a11\\\" host: \\\"netapp01.example.com\\\" systemType: NETAPP_CLUSTER_MODE username: \\\"svc-rubrik\\\" password: \\\"REPLACE_WITH_PASSWORD\\\" skipServiceAccountCreation: false verifySsl: true }) { jobId } }"
 
-read -r -d '' variables <<'JSON'
-{
-  "input": {
-    "clusterId": "a0eebc99-9c0b-4ef8-bb6d-6bb9bd380a11",
-    "host": "netapp01.example.com",
-    "systemType": "NETAPP_CLUSTER_MODE",
-    "username": "svc-rubrik",
-    "password": "REPLACE_WITH_PASSWORD",
-    "skipServiceAccountCreation": false,
-    "verifySsl": true
-  }
-}
-JSON
-
-# Execute the GraphQL mutation with curl
+# Execute the GraphQL query with curl
 curl -X POST \
   -H "Content-Type: application/json" \
   -H "Authorization: Bearer $RSC_TOKEN" \
-  -d "$(jq -n --arg q "$query" --argjson v "$variables" '{query: $q, variables: $v}')" \
+  -d "{\"query\": \"$query\"}" \
   https://example.my.rubrik.com/api/graphql
 ```
 
@@ -914,24 +851,13 @@ $query.Invoke()
 #!/bin/bash
 
 # RSC_TOKEN="YOUR_RSC_ACCESS_TOKEN"
-# Remove a Cloud Direct system. Note the operation name: cloudDirectSystemDelete.
-# Returns Void — there is no selection set.
-query="mutation CloudDirectSystemDelete(\$input: CloudDirectSystemDeleteInput!) { cloudDirectSystemDelete(input: \$input) }"
+query="mutation { cloudDirectSystemDelete(input: { clusterUuid: \\\"a0eebc99-9c0b-4ef8-bb6d-6bb9bd380a11\\\" systemFid: \\\"aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee\\\" }) }"
 
-read -r -d '' variables <<'JSON'
-{
-  "input": {
-    "clusterUuid": "a0eebc99-9c0b-4ef8-bb6d-6bb9bd380a11",
-    "systemFid": "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee"
-  }
-}
-JSON
-
-# Execute the GraphQL mutation with curl
+# Execute the GraphQL query with curl
 curl -X POST \
   -H "Content-Type: application/json" \
   -H "Authorization: Bearer $RSC_TOKEN" \
-  -d "$(jq -n --arg q "$query" --argjson v "$variables" '{query: $q, variables: $v}')" \
+  -d "{\"query\": \"$query\"}" \
   https://example.my.rubrik.com/api/graphql
 ```
 

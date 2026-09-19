@@ -837,6 +837,8 @@
       
         
       
+        
+      
     
     
     
@@ -1015,6 +1017,34 @@
   
   
   
+    <li class="md-nav__item">
+      <a href="../../Archival/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Archival Locations
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
     
     
       
@@ -1153,7 +1183,7 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_7_5" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_7_6" checked>
         
           
           <div class="md-nav__link md-nav__container">
@@ -1175,14 +1205,14 @@
             </a>
             
               
-              <label class="md-nav__link " for="__nav_2_7_5" id="__nav_2_7_5_label" tabindex="0">
+              <label class="md-nav__link " for="__nav_2_7_6" id="__nav_2_7_6_label" tabindex="0">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
           </div>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_7_5_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_2_7_5">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_7_6_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_7_6">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -3332,14 +3362,7 @@
 </div>
 <h3 id="automated-restore">Automated Restore</h3>
 <p><a href="../../../API-Reference/mutations/createAutomatedRestoreMysqldbInstance/"><code>createAutomatedRestoreMysqldbInstance</code></a> (v9.5+) performs a full automated recovery into an <strong>existing</strong> target MySQL instance. It is richer than point-in-time recovery: it supports renaming the recovered databases, selecting instance-level versus database-level scope, and managing the target's configuration file.</p>
-<p>Required fields in <code>restoreConfig</code>:</p>
-<ul>
-<li><code>targetMysqldbInstanceId</code> (required) — the FID of the target instance to restore <em>into</em></li>
-<li><code>restoreInfo.restoreName</code> (required) — a name for the restore operation</li>
-<li><code>restoreInfo.restoreEntities</code> (required) — the databases to restore</li>
-<li><code>restoreInfo.locationMap</code> (required) — for each snapshot, the backup <code>locationId</code> and <code>snapshotId</code> to restore from</li>
-<li><code>restoreInfo.restoreTime</code> (optional) — the point in time to recover to</li>
-</ul>
+<p><code>targetMysqldbInstanceId</code> identifies the instance to restore <em>into</em>, and <code>restoreInfo.locationMap</code> pairs each snapshot with the backup location to restore it from. Set <code>restoreInfo.restoreTime</code> to recover to a point in time.</p>
 <p>The mutation returns a <a href="../../../API-Reference/types/objects/CreateAutomatedRestoreMysqldbInstanceReply/"><code>CreateAutomatedRestoreMysqldbInstanceReply</code></a>; track <code>asyncRequestStatus.id</code> to monitor progress.</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="5:3"><input checked="checked" id="__tabbed_5_1" name="__tabbed_5" type="radio" /><input id="__tabbed_5_2" name="__tabbed_5" type="radio" /><input id="__tabbed_5_3" name="__tabbed_5" type="radio" /><div class="tabbed-labels"><label for="__tabbed_5_1">GraphQL</label><label for="__tabbed_5_2">PowerShell SDK</label><label for="__tabbed_5_3">Shell</label></div>
 <div class="tabbed-content">
@@ -3556,12 +3579,7 @@
 <h2 id="set-up-a-mysql-instance">Set Up a MySQL Instance</h2>
 <h3 id="register-an-instance">Register an Instance</h3>
 <p>Register a MySQL instance with Rubrik using <a href="../../../API-Reference/mutations/addMysqlInstance/"><code>addMysqlInstance</code></a>. The host running MySQL must already be added to your Rubrik cluster — see <a href="../Hosts/">Hosts</a>. After registration, Rubrik discovers the databases automatically.</p>
-<p>Required fields:</p>
-<ul>
-<li><code>clusterUuid</code> — the Rubrik CDM cluster UUID that will manage this instance</li>
-<li><code>mysqldbInstanceConfig.discoveryInfo</code> — the <code>entityInfo.name</code> for the instance and the <code>hostInfo</code> list (each entry needs a <code>hostId</code>; <code>portNumber</code> is the port <code>mysqld</code> listens on)</li>
-</ul>
-<p>If <code>connectionInfo</code> is provided, its <code>username</code>, <code>password</code>, and <code>systemUsername</code> are all required. It also accepts an <code>authenticationType</code> (<code>MYSQLDB_AUTHENTICATION_TYPE_TCP_BASED</code> or <code>MYSQLDB_AUTHENTICATION_TYPE_SOCKET_BASED</code>), a <code>bindIpAddress</code>, a <code>socketFilePath</code>, and an <code>sslConfig</code> for the certificate, key, and CA file paths.</p>
+<p><code>mysqldbInstanceConfig.discoveryInfo</code> names the instance and lists the hosts it runs on, where <code>portNumber</code> is the port <code>mysqld</code> listens on. Supply <code>connectionInfo</code> to control how Rubrik authenticates: it takes TCP or socket-based <code>authenticationType</code>, an optional <code>bindIpAddress</code> or <code>socketFilePath</code>, and an <code>sslConfig</code> for certificate, key, and CA paths.</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="9:3"><input checked="checked" id="__tabbed_9_1" name="__tabbed_9" type="radio" /><input id="__tabbed_9_2" name="__tabbed_9" type="radio" /><input id="__tabbed_9_3" name="__tabbed_9" type="radio" /><div class="tabbed-labels"><label for="__tabbed_9_1">GraphQL</label><label for="__tabbed_9_2">PowerShell SDK</label><label for="__tabbed_9_3">Shell</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
@@ -3821,7 +3839,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="June 18, 2026 19:43:41 UTC">2026-06-18</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="September 19, 2026 04:00:23 UTC">2026-09-19</span>
   </span>
 
     

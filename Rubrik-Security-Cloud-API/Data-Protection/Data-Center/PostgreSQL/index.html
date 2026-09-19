@@ -837,6 +837,8 @@
       
         
       
+        
+      
     
     
     
@@ -1015,6 +1017,34 @@
   
   
   
+    <li class="md-nav__item">
+      <a href="../../Archival/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Archival Locations
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
     
     
       
@@ -1153,7 +1183,7 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_7_5" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_7_6" checked>
         
           
           <div class="md-nav__link md-nav__container">
@@ -1175,14 +1205,14 @@
             </a>
             
               
-              <label class="md-nav__link " for="__nav_2_7_5" id="__nav_2_7_5_label" tabindex="0">
+              <label class="md-nav__link " for="__nav_2_7_6" id="__nav_2_7_6_label" tabindex="0">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
           </div>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_7_5_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_2_7_5">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_7_6_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_7_6">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -3301,11 +3331,7 @@
 <p>Recovery timestamps use ISO 8601 format (<code>2025-01-15T14:30:00.000Z</code>).</p>
 <h3 id="mount-a-snapshot">Mount a Snapshot</h3>
 <p><a href="../../../API-Reference/mutations/restorePostgreSQLDbClusterToSnapshot/"><code>restorePostgreSQLDbClusterToSnapshot</code></a> (v9.2+) mounts a specific snapshot onto one or more target hosts. The cluster runs directly off Rubrik backup storage, so the copy is available almost immediately without a full data transfer. This is the operation that creates a <strong>live mount</strong> — tear it down when you are finished (see <a href="#manage-live-mounts">Manage Live Mounts</a>).</p>
-<p>Required fields in <code>postgresqlDbClusterRestoreConfig.restoreInfo</code>:</p>
-<ul>
-<li><code>snapshotId</code> — the specific snapshot to mount</li>
-<li><code>hostRecoveryTargets</code> — the target host(s) to mount onto, each identified by <code>hostId</code></li>
-</ul>
+<p>Set <code>restoreInfo.snapshotId</code> to the snapshot you want, and <code>restoreInfo.hostRecoveryTargets</code> to the hosts it should mount onto.</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="5:3"><input checked="checked" id="__tabbed_5_1" name="__tabbed_5" type="radio" /><input id="__tabbed_5_2" name="__tabbed_5" type="radio" /><input id="__tabbed_5_3" name="__tabbed_5" type="radio" /><div class="tabbed-labels"><label for="__tabbed_5_1">GraphQL</label><label for="__tabbed_5_2">PowerShell SDK</label><label for="__tabbed_5_3">Shell</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
@@ -3683,13 +3709,7 @@
 <h2 id="set-up-a-postgresql-cluster">Set Up a PostgreSQL Cluster</h2>
 <h3 id="register-a-cluster">Register a Cluster</h3>
 <p>Register a PostgreSQL cluster with Rubrik using <a href="../../../API-Reference/mutations/addPostgreSQLDbCluster/"><code>addPostgreSQLDbCluster</code></a>. The host running PostgreSQL must already be added to your Rubrik cluster — see <a href="../Hosts/">Hosts</a>. After registration, Rubrik discovers the databases automatically.</p>
-<p>Required fields:</p>
-<ul>
-<li><code>clusterUuid</code> — the Rubrik CDM cluster UUID that will manage this PostgreSQL cluster</li>
-<li><code>postgresqlDbClusterConfig.discoveryInfo</code> — the <code>entityInfo.name</code> for the cluster and the <code>hostInfo</code> list (each entry needs a <code>hostId</code>; <code>portNumber</code> defaults to the standard PostgreSQL port)</li>
-<li><code>postgresqlDbClusterConfig.systemUsername</code> — the PostgreSQL superuser account Rubrik uses</li>
-</ul>
-<p>If <code>loginInfo</code> is provided, both its <code>username</code> and <code>password</code> are required.</p>
+<p><code>postgresqlDbClusterConfig.discoveryInfo</code> names the cluster and lists the hosts it runs on, where <code>portNumber</code> defaults to the standard PostgreSQL port. <code>systemUsername</code> is the superuser account Rubrik connects as.</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="11:3"><input checked="checked" id="__tabbed_11_1" name="__tabbed_11" type="radio" /><input id="__tabbed_11_2" name="__tabbed_11" type="radio" /><input id="__tabbed_11_3" name="__tabbed_11" type="radio" /><div class="tabbed-labels"><label for="__tabbed_11_1">GraphQL</label><label for="__tabbed_11_2">PowerShell SDK</label><label for="__tabbed_11_3">Shell</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
@@ -3869,7 +3889,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="June 18, 2026 19:43:41 UTC">2026-06-18</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="September 19, 2026 04:00:23 UTC">2026-09-19</span>
   </span>
 
     

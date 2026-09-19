@@ -64,8 +64,9 @@ $query.Invoke().Nodes
 #!/bin/bash
 
 # RSC_TOKEN="YOUR_RSC_ACCESS_TOKEN"
-query="query ListPendingTprRequests { tprRequestSummaries(filter: { statuses: [PENDING] }) { nodes { requestId status updatedAt orgName requester { userId username email } triggeredTprRule } } }"
+query="query ListPendingTprRequests { tprRequestSummaries( filter: { statuses: [PENDING] } ) { nodes { requestId status updatedAt orgName requester { userId username email } triggeredTprRule } } }"
 
+# Execute the GraphQL query with curl
 curl -X POST \
   -H "Content-Type: application/json" \
   -H "Authorization: Bearer $RSC_TOKEN" \
@@ -89,7 +90,13 @@ query GetTprRequestDetail($requestId: String!) {
     executionExpiresAt
     triggeredTprRule
     triggeredTprRules
-    triggeredTprPolicies
+    triggeredTprPolicies {
+      id
+      name
+      status
+      quorumRequirement
+      approverIds
+    }
     isPotentialLastApprover
     executionType
     requester {
@@ -98,9 +105,10 @@ query GetTprRequestDetail($requestId: String!) {
       email
     }
     statusLog {
-      status
-      time
-      userId
+      operation
+      timestamp
+      authorId
+      authorName
       comment
     }
   }
@@ -128,13 +136,13 @@ $query.Invoke()
 #!/bin/bash
 
 # RSC_TOKEN="YOUR_RSC_ACCESS_TOKEN"
-# REQUEST_ID="YOUR_REQUEST_ID"
-query="query GetTprRequestDetail(\$requestId: String!) { tprRequestDetail(tprRequestId: \$requestId) { id status createdAt expiresAt executionExpiresAt triggeredTprRule triggeredTprRules triggeredTprPolicies isPotentialLastApprover executionType requester { userId username email } statusLog { status time userId comment } } }"
+query="query GetTprRequestDetail(\$requestId: String!) { tprRequestDetail(tprRequestId: \$requestId) { id status createdAt expiresAt executionExpiresAt triggeredTprRule triggeredTprRules triggeredTprPolicies { id name status quorumRequirement approverIds } isPotentialLastApprover executionType requester { userId username email } statusLog { operation timestamp authorId authorName comment } } }"
 
+# Execute the GraphQL query with curl
 curl -X POST \
   -H "Content-Type: application/json" \
   -H "Authorization: Bearer $RSC_TOKEN" \
-  -d "{\"query\": \"$query\", \"variables\": {\"requestId\": \"$REQUEST_ID\"}}" \
+  -d "{\"query\": \"$query\"}" \
   https://example.my.rubrik.com/api/graphql
 ```
 
@@ -168,21 +176,13 @@ $mutation.Invoke()
 #!/bin/bash
 
 # RSC_TOKEN="YOUR_RSC_ACCESS_TOKEN"
-# REQUEST_ID="YOUR_REQUEST_ID"
-# SNOW_TICKET="SCTASK0012345"
+query="mutation ApproveTprRequest(\$input: ApproveTprRequestInput!) { approveTprRequest(input: \$input) }"
 
+# Execute the GraphQL query with curl
 curl -X POST \
   -H "Content-Type: application/json" \
   -H "Authorization: Bearer $RSC_TOKEN" \
-  -d "{
-    \"query\": \"mutation ApproveTprRequest(\$input: ApproveTprRequestInput!) { approveTprRequest(input: \$input) }\",
-    \"variables\": {
-      \"input\": {
-        \"requestId\": \"$REQUEST_ID\",
-        \"comment\": \"Approved via ServiceNow ticket $SNOW_TICKET\"
-      }
-    }
-  }" \
+  -d "{\"query\": \"$query\"}" \
   https://example.my.rubrik.com/api/graphql
 ```
 
@@ -218,21 +218,13 @@ $mutation.Invoke()
 #!/bin/bash
 
 # RSC_TOKEN="YOUR_RSC_ACCESS_TOKEN"
-# REQUEST_ID="YOUR_REQUEST_ID"
-# SNOW_TICKET="SCTASK0012345"
+query="mutation DenyTprRequests(\$input: DenyTprRequestsInput!) { denyTprRequests(input: \$input) }"
 
+# Execute the GraphQL query with curl
 curl -X POST \
   -H "Content-Type: application/json" \
   -H "Authorization: Bearer $RSC_TOKEN" \
-  -d "{
-    \"query\": \"mutation DenyTprRequests(\$input: DenyTprRequestsInput!) { denyTprRequests(input: \$input) }\",
-    \"variables\": {
-      \"input\": {
-        \"requestIds\": [\"$REQUEST_ID\"],
-        \"comment\": \"Denied via ServiceNow ticket $SNOW_TICKET\"
-      }
-    }
-  }" \
+  -d "{\"query\": \"$query\"}" \
   https://example.my.rubrik.com/api/graphql
 ```
 
@@ -311,6 +303,7 @@ $query.Invoke().Nodes
 # RSC_TOKEN="YOUR_RSC_ACCESS_TOKEN"
 query="query { customTprPolicies { nodes { policyId policyName description orgName quorumRequirement actions numberOfObjectTypes numberOfProtectableObjects } } }"
 
+# Execute the GraphQL query with curl
 curl -X POST \
   -H "Content-Type: application/json" \
   -H "Authorization: Bearer $RSC_TOKEN" \
@@ -371,13 +364,13 @@ $query.Invoke()
 #!/bin/bash
 
 # RSC_TOKEN="YOUR_RSC_ACCESS_TOKEN"
-# POLICY_ID="YOUR_POLICY_ID"
 query="query GetPolicyDetail(\$policyId: UUID!) { tprPolicyDetail(tprPolicyId: \$policyId) { policyId name description policyScope quorumRequirement createdAt createdBy { username email } policyRules { tprRules tprPolicyObject { objectId clusterId managedObjectType } } exemptServiceAccounts { id name } } }"
 
+# Execute the GraphQL query with curl
 curl -X POST \
   -H "Content-Type: application/json" \
   -H "Authorization: Bearer $RSC_TOKEN" \
-  -d "{\"query\": \"$query\", \"variables\": {\"policyId\": \"$POLICY_ID\"}}" \
+  -d "{\"query\": \"$query\"}" \
   https://example.my.rubrik.com/api/graphql
 ```
 
@@ -441,32 +434,13 @@ $mutation.Invoke()
 #!/bin/bash
 
 # RSC_TOKEN="YOUR_RSC_ACCESS_TOKEN"
+query="mutation CreatePolicy(\$input: CreateTprPolicyInput!) { createTprPolicy(input: \$input) { policyId } }"
+
+# Execute the GraphQL query with curl
 curl -X POST \
   -H "Content-Type: application/json" \
   -H "Authorization: Bearer $RSC_TOKEN" \
-  -d '{
-    "query": "mutation CreatePolicy($input: CreateTprPolicyInput!) { createTprPolicy(input: $input) { policyId } }",
-    "variables": {
-      "input": {
-        "name": "Snapshot Delete Protection",
-        "description": "Require approval before deleting any snapshot",
-        "policyScope": "DATA_MANAGEMENT_BY_OBJECT",
-        "quorumRequirement": 1,
-        "exemptServiceAccounts": [],
-        "policyRules": [
-          {
-            "tprRules": ["DELETE_SNAPSHOT"],
-            "tprPolicyObject": {
-              "objectId": "YOUR_OBJECT_ID",
-              "clusterId": "YOUR_CLUSTER_ID",
-              "managedObjectType": "MSSQL_DATABASE",
-              "workloadHierarchy": "MSSQL_DATABASE"
-            }
-          }
-        ]
-      }
-    }
-  }' \
+  -d "{\"query\": \"$query\"}" \
   https://example.my.rubrik.com/api/graphql
 ```
 
@@ -531,32 +505,13 @@ $mutation.Invoke()
 #!/bin/bash
 
 # RSC_TOKEN="YOUR_RSC_ACCESS_TOKEN"
+query="mutation UpdatePolicy(\$input: UpdateTprPolicyInput!) { updateTprPolicy(input: \$input) }"
+
+# Execute the GraphQL query with curl
 curl -X POST \
   -H "Content-Type: application/json" \
   -H "Authorization: Bearer $RSC_TOKEN" \
-  -d '{
-    "query": "mutation UpdatePolicy($input: UpdateTprPolicyInput!) { updateTprPolicy(input: $input) }",
-    "variables": {
-      "input": {
-        "policyId": "YOUR_POLICY_ID",
-        "name": "Snapshot Delete Protection",
-        "description": "Updated description",
-        "quorumRequirement": 2,
-        "exemptServiceAccounts": [],
-        "policyRules": [
-          {
-            "tprRules": ["DELETE_SNAPSHOT", "DELETE_BACKUP_OBJECT"],
-            "tprPolicyObject": {
-              "objectId": "YOUR_OBJECT_ID",
-              "clusterId": "YOUR_CLUSTER_ID",
-              "managedObjectType": "MSSQL_DATABASE",
-              "workloadHierarchy": "MSSQL_DATABASE"
-            }
-          }
-        ]
-      }
-    }
-  }' \
+  -d "{\"query\": \"$query\"}" \
   https://example.my.rubrik.com/api/graphql
 ```
 
@@ -590,11 +545,13 @@ $mutation.Invoke()
 #!/bin/bash
 
 # RSC_TOKEN="YOUR_RSC_ACCESS_TOKEN"
-# POLICY_ID="YOUR_POLICY_ID"
+query="mutation DeletePolicy(\$input: DeleteTprPolicyInput!) { deleteTprPolicy(input: \$input) }"
+
+# Execute the GraphQL query with curl
 curl -X POST \
   -H "Content-Type: application/json" \
   -H "Authorization: Bearer $RSC_TOKEN" \
-  -d "{\"query\": \"mutation DeletePolicy(\$input: DeleteTprPolicyInput!) { deleteTprPolicy(input: \$input) }\", \"variables\": {\"input\": {\"policyId\": \"$POLICY_ID\"}}}" \
+  -d "{\"query\": \"$query\"}" \
   https://example.my.rubrik.com/api/graphql
 ```
 
@@ -626,6 +583,7 @@ $query.Invoke().AllOrgs
 # RSC_TOKEN="YOUR_RSC_ACCESS_TOKEN"
 query="query GetOrgId { orgsForPrincipal { allOrgs { id name } } }"
 
+# Execute the GraphQL query with curl
 curl -X POST \
   -H "Content-Type: application/json" \
   -H "Authorization: Bearer $RSC_TOKEN" \
@@ -669,13 +627,13 @@ $query.Invoke()
 #!/bin/bash
 
 # RSC_TOKEN="YOUR_RSC_ACCESS_TOKEN"
-# ORG_ID="YOUR_ORG_ID"
 query="query GetConfiguration(\$orgId: String!) { tprConfiguration(orgId: \$orgId) { isTprEnabled staticQuorumRequirement requestTimeoutHours reminderHours executionMaxTimeoutHours } }"
 
+# Execute the GraphQL query with curl
 curl -X POST \
   -H "Content-Type: application/json" \
   -H "Authorization: Bearer $RSC_TOKEN" \
-  -d "{\"query\": \"$query\", \"variables\": {\"orgId\": \"$ORG_ID\"}}" \
+  -d "{\"query\": \"$query\"}" \
   https://example.my.rubrik.com/api/graphql
 ```
 
@@ -711,19 +669,12 @@ $mutation.Invoke()
 #!/bin/bash
 
 # RSC_TOKEN="YOUR_RSC_ACCESS_TOKEN"
+query="mutation UpdateConfiguration(\$input: UpdateTprConfigurationInput!) { updateTprConfiguration(input: \$input) }"
+
+# Execute the GraphQL query with curl
 curl -X POST \
   -H "Content-Type: application/json" \
   -H "Authorization: Bearer $RSC_TOKEN" \
-  -d '{
-    "query": "mutation UpdateConfiguration($input: UpdateTprConfigurationInput!) { updateTprConfiguration(input: $input) }",
-    "variables": {
-      "input": {
-        "requestTimeoutHours": 24,
-        "reminderHours": 4,
-        "executionMaxTimeoutHours": 8,
-        "staticQuorumApprovalsRequirement": 1
-      }
-    }
-  }' \
+  -d "{\"query\": \"$query\"}" \
   https://example.my.rubrik.com/api/graphql
 ```

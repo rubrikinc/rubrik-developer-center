@@ -274,9 +274,9 @@ $vm | Register-RscRubrikBackupService
 #!/bin/bash
 
 # RSC_TOKEN="YOUR_RSC_ACCESS_TOKEN"
-# VM_ID="YOUR_VM_ID"
-query="mutation { vsphereVmRegisterAgent(input: { id: \\\"$VM_ID\\\" }) { success } }"
+query="mutation RegisterRbs { vsphereVmRegisterAgent(input: { id: \\\"YOUR_VM_ID\\\" }) { success } }"
 
+# Execute the GraphQL query with curl
 curl -X POST \
   -H "Content-Type: application/json" \
   -H "Authorization: Bearer $RSC_TOKEN" \
@@ -733,7 +733,7 @@ $result
 #!/bin/bash
 
 # RSC_TOKEN="YOUR_RSC_ACCESS_TOKEN"
-query="mutation { vsphereVmRecoverFilesNew(input: { id: \\\"4d94175e-9fd4-5198-8c46-64c2ce3559a2\\\" clusterUuid: \\\"6a271636-9392-4cba-90c5-bdbe227854ab\\\" config: { destObjectId: \\\"a8fd8809-bbdb-5a03-8663-1c1feb19791c\\\" shouldUseAgent: true restoreConfig: { restorePathPair: { path: \\\"C:\\foo\\bar\\example.txt\\\" restorePath: \\\"C:\\foo\\bar\\\" } } } }) { id } }"
+query="mutation { vsphereVmRecoverFilesNew(input: { id: \\\"4d94175e-9fd4-5198-8c46-64c2ce3559a2\\\" clusterUuid: \\\"6a271636-9392-4cba-90c5-bdbe227854ab\\\" config: { destObjectId: \\\"a8fd8809-bbdb-5a03-8663-1c1feb19791c\\\" shouldUseAgent: true restoreConfig: [ { restorePathPair: { path: \\\"C:\\foo\\bar\\example.txt\\\" restorePath: \\\"C:\\foo\\bar\\\" } } ] } }) { id status } }"
 
 # Execute the GraphQL query with curl
 curl -X POST \
@@ -892,8 +892,15 @@ $mutation.invoke()
 ```
 
 ```bash
-curl -s -X POST "$RSC_URL/api/graphql" \
-  -H "Authorization: Bearer $RSC_TOKEN" \
+#!/bin/bash
+
+# RSC_TOKEN="YOUR_RSC_ACCESS_TOKEN"
+query="mutation { refreshVsphereVcenter(input: { fid: \\\"a0eebc99-9c0b-4ef8-bb6d-6bb9bd380a11\\\" }) { id status } }"
+
+# Execute the GraphQL query with curl
+curl -X POST \
   -H "Content-Type: application/json" \
-  -d '{"query": "mutation { refreshVsphereVcenter(input: { fid: \"a0eebc99-9c0b-4ef8-bb6d-6bb9bd380a11\" }) { id status } }"}'
+  -H "Authorization: Bearer $RSC_TOKEN" \
+  -d "{\"query\": \"$query\"}" \
+  https://example.my.rubrik.com/api/graphql
 ```

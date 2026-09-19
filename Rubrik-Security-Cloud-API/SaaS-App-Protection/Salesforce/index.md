@@ -55,8 +55,9 @@ $query.invoke().nodes
 #!/bin/bash
 
 # RSC_TOKEN="YOUR_RSC_ACCESS_TOKEN"
-query='query { saasAppOrganizations(typeFilter: [SALESFORCE_ORGANIZATION], first: 50) { count nodes { id name status } pageInfo { hasNextPage endCursor } } }'
+query="query { saasAppOrganizations( typeFilter: [SALESFORCE_ORGANIZATION] first: 50 ) { count nodes { id name status } pageInfo { hasNextPage endCursor } } }"
 
+# Execute the GraphQL query with curl
 curl -X POST \
   -H "Content-Type: application/json" \
   -H "Authorization: Bearer $RSC_TOKEN" \
@@ -102,8 +103,9 @@ $query.invoke().nodes
 #!/bin/bash
 
 # RSC_TOKEN="YOUR_RSC_ACCESS_TOKEN"
-query='query { salesforceObjects(orgId: "00000000-0000-0000-0000-000000000001", first: 50) { count nodes { id name objectType } pageInfo { hasNextPage endCursor } } }'
+query="query { salesforceObjects( orgId: \\\"00000000-0000-0000-0000-000000000001\\\" first: 50 ) { count nodes { id name objectType } pageInfo { hasNextPage endCursor } } }"
 
+# Execute the GraphQL query with curl
 curl -X POST \
   -H "Content-Type: application/json" \
   -H "Authorization: Bearer $RSC_TOKEN" \
@@ -160,8 +162,9 @@ $result.jobIds
 #!/bin/bash
 
 # RSC_TOKEN="YOUR_RSC_ACCESS_TOKEN"
-query='mutation { takeSaasOnDemandSnapshot(input: { saasAppType: SALESFORCE, workloadIds: ["00000000-0000-0000-0000-000000000001"] }) { jobIds { rubrikObjectId jobId } errors { rubrikObjectId error } } }'
+query="mutation { takeSaasOnDemandSnapshot(input: { saasAppType: SALESFORCE workloadIds: [\\\"00000000-0000-0000-0000-000000000001\\\"] }) { jobIds { rubrikObjectId jobId } errors { rubrikObjectId error } } }"
 
+# Execute the GraphQL query with curl
 curl -X POST \
   -H "Content-Type: application/json" \
   -H "Authorization: Bearer $RSC_TOKEN" \
@@ -196,8 +199,9 @@ $query.invoke()
 #!/bin/bash
 
 # RSC_TOKEN="YOUR_RSC_ACCESS_TOKEN"
-query='query { taskchain(taskchainId: "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee") { id state progress startTime endTime } }'
+query="query { taskchain(taskchainId: \\\"aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee\\\") { id state progress startTime endTime } }"
 
+# Execute the GraphQL query with curl
 curl -X POST \
   -H "Content-Type: application/json" \
   -H "Authorization: Bearer $RSC_TOKEN" \
@@ -278,12 +282,17 @@ $mutation.Invoke()
 ```
 
 ```bash
-curl -s -X POST "$RSC_URL/api/graphql" \
-  -H "Authorization: Bearer $RSC_TOKEN" \
+#!/bin/bash
+
+# RSC_TOKEN="YOUR_RSC_ACCESS_TOKEN"
+query="mutation { startSaasAppItemsRestore(input: { orgId: \\\"00000000-0000-0000-0000-000000000001\\\" destinationOrgId: \\\"00000000-0000-0000-0000-000000000002\\\" itemRestoreInfo: [ { workloadId: \\\"00000000-0000-0000-0000-000000000003\\\" appItemTypeToken: \\\"Account\\\" itemsToRestore: [ { itemId: \\\"0015g00000AbCdEfAA\\\" snapshotId: \\\"aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee\\\" sequenceNumber: 1 } ] } ] }) { jobId taskchainId } }"
+
+# Execute the GraphQL query with curl
+curl -X POST \
   -H "Content-Type: application/json" \
-  -d '{
-    "query": "mutation { startSaasAppItemsRestore(input: { orgId: \"00000000-0000-0000-0000-000000000001\" destinationOrgId: \"00000000-0000-0000-0000-000000000002\" itemRestoreInfo: [{ workloadId: \"00000000-0000-0000-0000-000000000003\" appItemTypeToken: \"Account\" itemsToRestore: [{ itemId: \"0015g00000AbCdEfAA\" snapshotId: \"aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee\" sequenceNumber: 1 }] }] }) { jobId taskchainId } }"
-  }'
+  -H "Authorization: Bearer $RSC_TOKEN" \
+  -d "{\"query\": \"$query\"}" \
+  https://example.my.rubrik.com/api/graphql
 ```
 
 ## Permissions Assessment
@@ -309,12 +318,17 @@ $mutation.Invoke()
 ```
 
 ```bash
-curl -s -X POST "$RSC_URL/api/graphql" \
-  -H "Authorization: Bearer $RSC_TOKEN" \
+#!/bin/bash
+
+# RSC_TOKEN="YOUR_RSC_ACCESS_TOKEN"
+query="mutation { startSalesforcePermissionAssessment(input: { orgId: \\\"00000000-0000-0000-0000-000000000001\\\" }) { jobId taskchainId } }"
+
+# Execute the GraphQL query with curl
+curl -X POST \
   -H "Content-Type: application/json" \
-  -d '{
-    "query": "mutation { startSalesforcePermissionAssessment(input: { orgId: \"00000000-0000-0000-0000-000000000001\" }) { jobId taskchainId } }"
-  }'
+  -H "Authorization: Bearer $RSC_TOKEN" \
+  -d "{\"query\": \"$query\"}" \
+  https://example.my.rubrik.com/api/graphql
 ```
 
 Use [`downloadSalesforcePermissions`](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/downloadSalesforcePermissions/index.md) to export a ZIP of permission data after an assessment completes. Set `permissionReportType` to `MISSING_PERMISSIONS` or `EXCLUDED_PERMISSIONS`. Narrow the export with `permissionTypes` (`OBJECT`, `FIELD`, `SYSTEM_APP`) or `path` (specific object names).
@@ -345,12 +359,17 @@ $mutation.Invoke()
 ```
 
 ```bash
-curl -s -X POST "$RSC_URL/api/graphql" \
-  -H "Authorization: Bearer $RSC_TOKEN" \
+#!/bin/bash
+
+# RSC_TOKEN="YOUR_RSC_ACCESS_TOKEN"
+query="mutation { downloadSalesforcePermissions(input: { orgId: \\\"00000000-0000-0000-0000-000000000001\\\" permissionReportType: MISSING_PERMISSIONS permissionTypes: [OBJECT, FIELD] }) { jobId taskchainId } }"
+
+# Execute the GraphQL query with curl
+curl -X POST \
   -H "Content-Type: application/json" \
-  -d '{
-    "query": "mutation { downloadSalesforcePermissions(input: { orgId: \"00000000-0000-0000-0000-000000000001\" permissionReportType: MISSING_PERMISSIONS permissionTypes: [OBJECT, FIELD] }) { jobId taskchainId } }"
-  }'
+  -H "Authorization: Bearer $RSC_TOKEN" \
+  -d "{\"query\": \"$query\"}" \
+  https://example.my.rubrik.com/api/graphql
 ```
 
 ## Sandbox Seeding
@@ -407,12 +426,17 @@ $mutation.Invoke()
 ```
 
 ```bash
-curl -s -X POST "$RSC_URL/api/graphql" \
-  -H "Authorization: Bearer $RSC_TOKEN" \
+#!/bin/bash
+
+# RSC_TOKEN="YOUR_RSC_ACCESS_TOKEN"
+query="mutation { startSaasAppItemsRestore(input: { orgId: \\\"00000000-0000-0000-0000-000000000001\\\" destinationOrgId: \\\"00000000-0000-0000-0000-000000000002\\\" cascadingImpactOperationType: SANDBOX_SEEDING itemRestoreInfo: [ { workloadId: \\\"00000000-0000-0000-0000-000000000003\\\" appItemTypeToken: \\\"Account\\\" itemCriteria: { itemFilters: { conditions: [] } closestSnapshotTime: \\\"2026-08-31T00:00:00Z\\\" } } ] }) { jobId taskchainId } }"
+
+# Execute the GraphQL query with curl
+curl -X POST \
   -H "Content-Type: application/json" \
-  -d '{
-    "query": "mutation { startSaasAppItemsRestore(input: { orgId: \"00000000-0000-0000-0000-000000000001\" destinationOrgId: \"00000000-0000-0000-0000-000000000002\" cascadingImpactOperationType: SANDBOX_SEEDING itemRestoreInfo: [{ workloadId: \"00000000-0000-0000-0000-000000000003\" appItemTypeToken: \"Account\" itemCriteria: { itemFilters: {} closestSnapshotTime: \"2026-08-31T00:00:00Z\" } }] }) { jobId taskchainId } }"
-  }'
+  -H "Authorization: Bearer $RSC_TOKEN" \
+  -d "{\"query\": \"$query\"}" \
+  https://example.my.rubrik.com/api/graphql
 ```
 
 ## Data Masking
@@ -458,12 +482,17 @@ $mutation.Invoke()
 ```
 
 ```bash
-curl -s -X POST "$RSC_URL/api/graphql" \
-  -H "Authorization: Bearer $RSC_TOKEN" \
+#!/bin/bash
+
+# RSC_TOKEN="YOUR_RSC_ACCESS_TOKEN"
+query="mutation { startInPlaceDataMasking(input: { destinationOrgId: \\\"00000000-0000-0000-0000-000000000001\\\" maskingTemplateId: 1234 disableAutomations: true }) { jobId taskchainId } }"
+
+# Execute the GraphQL query with curl
+curl -X POST \
   -H "Content-Type: application/json" \
-  -d '{
-    "query": "mutation { startInPlaceDataMasking(input: { destinationOrgId: \"00000000-0000-0000-0000-000000000001\" maskingTemplateId: 1234 disableAutomations: true }) { jobId taskchainId } }"
-  }'
+  -H "Authorization: Bearer $RSC_TOKEN" \
+  -d "{\"query\": \"$query\"}" \
+  https://example.my.rubrik.com/api/graphql
 ```
 
 ## Cascading Impact
@@ -535,10 +564,15 @@ $query.Invoke()
 ```
 
 ```bash
-curl -s -X POST "$RSC_URL/api/graphql" \
-  -H "Authorization: Bearer $RSC_TOKEN" \
+#!/bin/bash
+
+# RSC_TOKEN="YOUR_RSC_ACCESS_TOKEN"
+query="query { saasAppCascadingImpact( saasAppType: SALESFORCE resolutionMode: SYNCHRONOUS restoreConfig: { orgId: \\\"00000000-0000-0000-0000-000000000001\\\" itemRestoreInfo: [ { workloadId: \\\"00000000-0000-0000-0000-000000000003\\\" appItemTypeToken: \\\"Account\\\" itemsToRestore: [ { itemId: \\\"0015g00000AbCdEfAA\\\" snapshotId: \\\"aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee\\\" sequenceNumber: 1 } ] } ] } ) { operationId result { appItemTypeToken appItemTypeDisplayName count isOptionalToRestore cascadedItems { appItemTypeToken appItemTypeDisplayName count isOptionalToRestore } } } }"
+
+# Execute the GraphQL query with curl
+curl -X POST \
   -H "Content-Type: application/json" \
-  -d '{
-    "query": "query { saasAppCascadingImpact(saasAppType: SALESFORCE resolutionMode: SYNCHRONOUS restoreConfig: { orgId: \"00000000-0000-0000-0000-000000000001\" itemRestoreInfo: [{ workloadId: \"00000000-0000-0000-0000-000000000003\" appItemTypeToken: \"Account\" itemsToRestore: [{ itemId: \"0015g00000AbCdEfAA\" snapshotId: \"aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee\" sequenceNumber: 1 }] }] }) { operationId result { appItemTypeToken appItemTypeDisplayName count isOptionalToRestore cascadedItems { appItemTypeToken appItemTypeDisplayName count isOptionalToRestore } } } }"
-  }'
+  -H "Authorization: Bearer $RSC_TOKEN" \
+  -d "{\"query\": \"$query\"}" \
+  https://example.my.rubrik.com/api/graphql
 ```

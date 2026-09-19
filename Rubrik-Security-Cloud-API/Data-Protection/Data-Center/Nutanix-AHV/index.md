@@ -299,9 +299,9 @@ Get-RscNutanixVm -Name "my-vm" | Register-RscRubrikBackupService
 #!/bin/bash
 
 # RSC_TOKEN="YOUR_RSC_ACCESS_TOKEN"
-# VM_ID="YOUR_VM_ID"
-query="mutation { registerAgentNutanixVm(input: { id: \\\"$VM_ID\\\" }) { success } }"
+query="mutation RegisterRbs { registerAgentNutanixVm(input: { id: \\\"YOUR_VM_ID\\\" }) { success } }"
 
+# Execute the GraphQL query with curl
 curl -X POST \
   -H "Content-Type: application/json" \
   -H "Authorization: Bearer $RSC_TOKEN" \
@@ -431,11 +431,9 @@ $mutation.Invoke()
 #!/bin/bash
 
 # RSC_TOKEN="YOUR_RSC_ACCESS_TOKEN"
-# id              = the snapshot FID (not the VM FID)
-# containerNaturalId = the Nutanix storage container UUID (not a Rubrik FID)
 query="mutation { exportNutanixSnapshot(input: { id: \\\"f5bc5502-b9a6-4759-bf02-05dc5a48f9f7\\\" config: { containerNaturalId: \\\"0005a1b2-1234-5678-90ab-cdef01234567\\\" nutanixClusterId: \\\"6450b2bb-3114-45ab-a45e-049c7f27b58e\\\" vmName: \\\"example-restored\\\" powerOn: true } }) { id status progress error { message } } }"
 
-# Execute the GraphQL mutation with curl
+# Execute the GraphQL query with curl
 curl -X POST \
   -H "Content-Type: application/json" \
   -H "Authorization: Bearer $RSC_TOKEN" \
@@ -500,13 +498,9 @@ $mutation.Invoke()
 #!/bin/bash
 
 # RSC_TOKEN="YOUR_RSC_ACCESS_TOKEN"
-# id = the snapshot FID (not the VM FID)
-# shouldDisableMigration is required. When true, Rubrik serves the VM and no
-# containerNaturalId is needed. When false, add containerNaturalId (a Nutanix
-# storage container UUID) so Nutanix can migrate the mounted VM to its storage.
 query="mutation { mountNutanixSnapshotV1(input: { id: \\\"f5bc5502-b9a6-4759-bf02-05dc5a48f9f7\\\" config: { shouldDisableMigration: true vmName: \\\"example-livemount\\\" shouldPowerOn: true } }) { id status progress error { message } } }"
 
-# Execute the GraphQL mutation with curl
+# Execute the GraphQL query with curl
 curl -X POST \
   -H "Content-Type: application/json" \
   -H "Authorization: Bearer $RSC_TOKEN" \
@@ -549,10 +543,9 @@ $mutation.Invoke()
 #!/bin/bash
 
 # RSC_TOKEN="YOUR_RSC_ACCESS_TOKEN"
-# id = the Live Mount object ID (not the async request ID from the mount call)
 query="mutation { deleteNutanixMountV1(input: { id: \\\"0a1b2c3d-4e5f-6789-abcd-ef0123456789\\\" }) { id status progress error { message } } }"
 
-# Execute the GraphQL mutation with curl
+# Execute the GraphQL query with curl
 curl -X POST \
   -H "Content-Type: application/json" \
   -H "Authorization: Bearer $RSC_TOKEN" \
@@ -613,11 +606,9 @@ $mutation.Invoke()
 #!/bin/bash
 
 # RSC_TOKEN="YOUR_RSC_ACCESS_TOKEN"
-# id = the snapshot FID (not the VM FID). Overwrites the source VM (CDM v9.3+).
-# shouldKeepRollbackSnapshot captures the pre-restore state so you can roll back.
 query="mutation { inplaceExportNutanixSnapshot(input: { id: \\\"f5bc5502-b9a6-4759-bf02-05dc5a48f9f7\\\" config: { containerNaturalId: \\\"0005a1b2-1234-5678-90ab-cdef01234567\\\" powerOn: true shouldKeepRollbackSnapshot: true } }) { id status progress error { message } } }"
 
-# Execute the GraphQL mutation with curl
+# Execute the GraphQL query with curl
 curl -X POST \
   -H "Content-Type: application/json" \
   -H "Authorization: Bearer $RSC_TOKEN" \
@@ -739,12 +730,17 @@ $mutation.invoke()
 ```
 
 ```bash
-curl -s -X POST "$RSC_URL/api/graphql" \
-  -H "Authorization: Bearer $RSC_TOKEN" \
+#!/bin/bash
+
+# RSC_TOKEN="YOUR_RSC_ACCESS_TOKEN"
+query="mutation { createNutanixPrismCentral(input: { prismCentralConfig: { hostname: \\\"prism-central.example.com\\\" username: \\\"admin\\\" password: \\\"your-password\\\" caCerts: \\\"-----BEGIN CERTIFICATE-----\nMIID....\n-----END CERTIFICATE-----\\\" } prismElementCdmTuple: [ { nutanixClusterId: \\\"00057b6e-1234-5678-0000-000000abcdef\\\" cdmClusterId: \\\"8417a938-96f5-43c6-9905-b36e051c5f98\\\" } ] isDrEnabled: false }) { responses { id status } } }"
+
+# Execute the GraphQL query with curl
+curl -X POST \
   -H "Content-Type: application/json" \
-  -d '{
-    "query": "mutation { createNutanixPrismCentral(input: { prismCentralConfig: { hostname: \"prism-central.example.com\" username: \"admin\" password: \"your-password\" caCerts: \"-----BEGIN CERTIFICATE-----\\nMIID....\\n-----END CERTIFICATE-----\" } prismElementCdmTuple: [{ nutanixClusterId: \"00057b6e-1234-5678-0000-000000abcdef\" cdmClusterId: \"8417a938-96f5-43c6-9905-b36e051c5f98\" }] isDrEnabled: false }) { responses { id status } } }"
-  }'
+  -H "Authorization: Bearer $RSC_TOKEN" \
+  -d "{\"query\": \"$query\"}" \
+  https://example.my.rubrik.com/api/graphql
 ```
 
 Returns a [`BatchAsyncRequestStatus`](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/BatchAsyncRequestStatus/index.md) — one async status per Prism Element discovered.
@@ -790,12 +786,17 @@ $mutation.invoke()
 ```
 
 ```bash
-curl -s -X POST "$RSC_URL/api/graphql" \
-  -H "Authorization: Bearer $RSC_TOKEN" \
+#!/bin/bash
+
+# RSC_TOKEN="YOUR_RSC_ACCESS_TOKEN"
+query="mutation { createNutanixCluster(input: { clusterUuid: \\\"8417a938-96f5-43c6-9905-b36e051c5f98\\\" nutanixClusterConfig: { hostname: \\\"prism.example.com\\\" nutanixClusterUuid: \\\"00057b6e-1234-5678-0000-000000abcdef\\\" username: \\\"admin\\\" password: \\\"your-password\\\" caCerts: \\\"-----BEGIN CERTIFICATE-----\nMIID....\n-----END CERTIFICATE-----\\\" } }) { id status error { message } } }"
+
+# Execute the GraphQL query with curl
+curl -X POST \
   -H "Content-Type: application/json" \
-  -d '{
-    "query": "mutation { createNutanixCluster(input: { clusterUuid: \"8417a938-96f5-43c6-9905-b36e051c5f98\" nutanixClusterConfig: { hostname: \"prism.example.com\" nutanixClusterUuid: \"00057b6e-1234-5678-0000-000000abcdef\" username: \"admin\" password: \"your-password\" caCerts: \"-----BEGIN CERTIFICATE-----\\nMIID....\\n-----END CERTIFICATE-----\" } }) { id status error { message } } }"
-  }'
+  -H "Authorization: Bearer $RSC_TOKEN" \
+  -d "{\"query\": \"$query\"}" \
+  https://example.my.rubrik.com/api/graphql
 ```
 
 ### Refresh a Cluster
@@ -822,10 +823,17 @@ $mutation.invoke()
 ```
 
 ```bash
-curl -s -X POST "$RSC_URL/api/graphql" \
-  -H "Authorization: Bearer $RSC_TOKEN" \
+#!/bin/bash
+
+# RSC_TOKEN="YOUR_RSC_ACCESS_TOKEN"
+query="mutation { refreshNutanixCluster(input: { id: \\\"a0eebc99-9c0b-4ef8-bb6d-6bb9bd380a11\\\" }) { id status } }"
+
+# Execute the GraphQL query with curl
+curl -X POST \
   -H "Content-Type: application/json" \
-  -d '{"query": "mutation { refreshNutanixCluster(input: { id: \"a0eebc99-9c0b-4ef8-bb6d-6bb9bd380a11\" }) { id status } }"}'
+  -H "Authorization: Bearer $RSC_TOKEN" \
+  -d "{\"query\": \"$query\"}" \
+  https://example.my.rubrik.com/api/graphql
 ```
 
 ### Refresh a Prism Central
@@ -854,8 +862,15 @@ $mutation.invoke()
 ```
 
 ```bash
-curl -s -X POST "$RSC_URL/api/graphql" \
-  -H "Authorization: Bearer $RSC_TOKEN" \
+#!/bin/bash
+
+# RSC_TOKEN="YOUR_RSC_ACCESS_TOKEN"
+query="mutation { refreshNutanixPrismCentral(input: { id: \\\"a0eebc99-9c0b-4ef8-bb6d-6bb9bd380a11\\\" }) { responses { id status } } }"
+
+# Execute the GraphQL query with curl
+curl -X POST \
   -H "Content-Type: application/json" \
-  -d '{"query": "mutation { refreshNutanixPrismCentral(input: { id: \"a0eebc99-9c0b-4ef8-bb6d-6bb9bd380a11\" }) { responses { id status } } }"}'
+  -H "Authorization: Bearer $RSC_TOKEN" \
+  -d "{\"query\": \"$query\"}" \
+  https://example.my.rubrik.com/api/graphql
 ```
