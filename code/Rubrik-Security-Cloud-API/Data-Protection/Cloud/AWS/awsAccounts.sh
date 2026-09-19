@@ -1,8 +1,9 @@
 #!/bin/bash
 
 # RSC_TOKEN="YOUR_RSC_ACCESS_TOKEN"
-query='query { awsNativeRoot { awsNativeAccounts(awsNativeProtectionFeature: EC2) { nodes { name id nativeId status regions effectiveSlaDomain { name id } } } } }'
+query="query { awsNativeAccounts( awsNativeProtectionFeature: EC2 ) { nodes { name id status awsRegions { nodes { regionName } } effectiveSlaDomain { name id } } } }"
 
+# Execute the GraphQL query with curl
 curl -X POST \
   -H "Content-Type: application/json" \
   -H "Authorization: Bearer $RSC_TOKEN" \

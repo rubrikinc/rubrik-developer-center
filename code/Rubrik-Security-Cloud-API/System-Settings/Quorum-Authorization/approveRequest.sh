@@ -1,19 +1,11 @@
 #!/bin/bash
 
 # RSC_TOKEN="YOUR_RSC_ACCESS_TOKEN"
-# REQUEST_ID="YOUR_REQUEST_ID"
-# SNOW_TICKET="SCTASK0012345"
+query="mutation ApproveTprRequest(\$input: ApproveTprRequestInput!) { approveTprRequest(input: \$input) }"
 
+# Execute the GraphQL query with curl
 curl -X POST \
   -H "Content-Type: application/json" \
   -H "Authorization: Bearer $RSC_TOKEN" \
-  -d "{
-    \"query\": \"mutation ApproveTprRequest(\$input: ApproveTprRequestInput!) { approveTprRequest(input: \$input) }\",
-    \"variables\": {
-      \"input\": {
-        \"requestId\": \"$REQUEST_ID\",
-        \"comment\": \"Approved via ServiceNow ticket $SNOW_TICKET\"
-      }
-    }
-  }" \
+  -d "{\"query\": \"$query\"}" \
   https://example.my.rubrik.com/api/graphql
