@@ -6,5 +6,5 @@ Configuration for restoring a single file or folder from backup, specifying the 
 
 | Field | Type | Description |
 |-------|------|-------------|
-| restoreConfig | [[FusionComputeRestoreFileConfigInput](FusionComputeRestoreFileConfigInput.md)!]! | Required. Array containing the full path of the source and target location for each file being restored. |
-| targetVmId | [UUID](../scalars/UUID.md) | Workload ID of the target FusionCompute virtual machine, which is the destination for the recovered data. |
+| restoreConfig | [[FusionComputeRestoreFileConfigInput](FusionComputeRestoreFileConfigInput.md)!]! | Required. Supported in v9.6+ Array containing the full path of the source and target location for each file being restored. |
+| targetVmId | [UUID](../scalars/UUID.md) | Supported in v9.6+ Workload ID of the target FusionCompute virtual machine, which is the destination for the recovered data. |

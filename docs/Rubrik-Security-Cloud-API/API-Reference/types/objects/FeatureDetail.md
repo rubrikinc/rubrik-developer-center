@@ -11,6 +11,7 @@ Feature specific details for a cloud account.
 | awsIamPairId | String | The internal ID of the IAM pair corresponds to the feature. The ID can be non-empty only for the DATA_CENTER_ROLE_BASED_ARCHIVAL feature. |
 | awsRegions | [[AwsCloudAccountRegion](../enums/AwsCloudAccountRegion.md)!]! | AWS regions. The list will be non-empty for cloud accounts on AWS GovCloud and commercial clouds. |
 | feature | [CloudAccountFeature](../enums/CloudAccountFeature.md)! | Feature enum. |
+| hasExocomputeLambdaRole | Boolean! | Whether an Exocompute Lambda execution role ARN is registered for the cloud account. Meaningful only for the EXOCOMPUTE feature, and false for every other feature. Also false for every feature of an organization without private Exocompute enabled. An Exocompute configuration can request an EKS cluster with a private API endpoint only while this is true. |
 | iamPairName | String | The name of the IAM pair corresponds to the feature. The name can be non-empty only for the DATA_CENTER_ROLE_BASED_ARCHIVAL feature. |
 | mappedAccounts | [[AwsMappedAccount](AwsMappedAccount.md)!]! | AWS accounts mapped to this feature. |
 | permissionsGroupVersions | [[PermissionsGroupWithVersion](PermissionsGroupWithVersion.md)!]! | Permissions groups with their versions used to generate the feature template. |

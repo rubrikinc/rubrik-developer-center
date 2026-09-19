@@ -1,8 +1,8 @@
 # KubernetesVirtualMachine
 
-Kubernetes virtual machine.
+A Kubernetes virtual machine protected by Rubrik.
 
-**Implements:** [HierarchyObject](../interfaces/HierarchyObject.md), [HierarchySnappable](../interfaces/HierarchySnappable.md), [CdmHierarchyObject](../interfaces/CdmHierarchyObject.md), [CdmHierarchySnappableNew](../interfaces/CdmHierarchySnappableNew.md), [KubernetesClusterDescendant](../interfaces/KubernetesClusterDescendant.md), [KubernetesNamespaceDescendant](../interfaces/KubernetesNamespaceDescendant.md), [KubernetesLabelDescendant](../interfaces/KubernetesLabelDescendant.md)
+**Implements:** [CdmHierarchyObject](../interfaces/CdmHierarchyObject.md), [HierarchyObject](../interfaces/HierarchyObject.md), [HierarchySnappable](../interfaces/HierarchySnappable.md), [CdmHierarchySnappableNew](../interfaces/CdmHierarchySnappableNew.md), [KubernetesClusterDescendant](../interfaces/KubernetesClusterDescendant.md), [KubernetesNamespaceDescendant](../interfaces/KubernetesNamespaceDescendant.md), [KubernetesLabelDescendant](../interfaces/KubernetesLabelDescendant.md)
 
 ## Fields
 
@@ -23,8 +23,8 @@ Kubernetes virtual machine.
 | effectiveSlaDomain | [SlaDomain](../interfaces/SlaDomain.md)! | Effective SLA Domain of the hierarchy object. |
 | effectiveSlaSourceObject | [PathNode](PathNode.md) | Path node of the effective SLA Domain source. |
 | guestOsName | String | Guest OS name of the K8s Virtual Machine. |
-| id | [UUID](../scalars/UUID.md)! | Object ID of Kubernetes Virtual Machine. |
-| isRelic | Boolean! | Specifies whether the Protection Set is a relic. |
+| id | [UUID](../scalars/UUID.md)! | ID of the hierarchy object. |
+| isRelic | Boolean! | Specifies whether the virtual machine is a relic. |
 | isReplica | Boolean | True if this object is a replica, its current cluster differs from its source (primary) cluster. False if the object resides on its source cluster. Null when the source cluster is unknown. |
 | k8sClusterName | String! | Name of the Kubernetes cluster. |
 | k8sClusterUuid | [UUID](../scalars/UUID.md)! | UUID of the Kubernetes Cluster. |
@@ -75,8 +75,10 @@ Kubernetes virtual machine.
 |-------|----------|------|-------------|
 | k8sVirtualMachineDisks | first | Int | Returns the first n elements from the list. |
 | k8sVirtualMachineDisks | after | String | Returns the elements in the list that occur after the specified cursor. |
-| k8sVirtualMachineDisks | filter | [K8sVirtualMachineDiskFilter](../inputs/K8sVirtualMachineDiskFilter.md) | Filter for Kubernetes virtual machine disks. |
-| k8sVirtualMachineDisks | sortBy | [K8sVirtualMachineDiskSortBy](../enums/K8sVirtualMachineDiskSortBy.md) | Sort by argument for Kubernetes virtual machine disks. |
+| k8sVirtualMachineDisks | last | Int | Returns the last n elements from the list. |
+| k8sVirtualMachineDisks | before | String | Returns the elements in the list that occur before the specified cursor. |
+| k8sVirtualMachineDisks | filter | [K8sVirtualMachineDiskFilter](../inputs/K8sVirtualMachineDiskFilter.md) | Hierarchy object filter. |
+| k8sVirtualMachineDisks | sortBy | [K8sVirtualMachineDiskSortBy](../enums/K8sVirtualMachineDiskSortBy.md) | Sort hierarchy objects according to the hierarchy field. |
 | k8sVirtualMachineDisks | sortOrder | [SortOrder](../enums/SortOrder.md) | Sorts the order of results. |
 | missedSnapshotConnection | first | Int | Returns the first n elements from the list. |
 | missedSnapshotConnection | after | String | Returns the elements in the list that occur after the specified cursor. |

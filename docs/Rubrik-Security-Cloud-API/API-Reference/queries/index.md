@@ -965,6 +965,7 @@
 [recoverDb2DatabaseToEndOfBackup](recoverDb2DatabaseToEndOfBackup.md)  
 [recoverDb2DatabaseToPointInTime](recoverDb2DatabaseToPointInTime.md)  
 [recoveries](recoveries.md)  
+[recoveryPlansBasicInfo](recoveryPlansBasicInfo.md)  
 [recoveryReport](recoveryReport.md)  
 [recoverySpecs](recoverySpecs.md)  
 [regions](regions.md)  

@@ -48,4 +48,7 @@ OpenStack Environment logical child.
 
 ## Implemented By
 
+- [OpenstackDomain](../objects/OpenstackDomain.md)
+- [OpenstackImage](../objects/OpenstackImage.md)
+- [OpenstackProject](../objects/OpenstackProject.md)
 - [OpenstackVirtualMachine](../objects/OpenstackVirtualMachine.md)

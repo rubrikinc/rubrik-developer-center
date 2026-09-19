@@ -1,12 +1,12 @@
 # UpdateVsphereAdvancedTagReply
 
-Reply Object for UpdateFilter.
+Reply Object for UpdateVsphereAdvancedTag.
 
 ## Fields
 
 | Field | Type | Description |
 |-------|------|-------------|
-| output | [FilterCreateResponse](FilterCreateResponse.md) |  |
+| output | [FilterCreateResponse](FilterCreateResponse.md) | Supported in v7.0+ Information about the asynchronous request initiated to create the multi-tag filter. |
 
 ## Used By
 

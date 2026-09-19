@@ -9,6 +9,7 @@ PermissionsGroup represents the collection of various permission groups that exi
 | ADVANCED_DIAGNOSTICS | Represents the set of read-only diagnostic permissions for Exocompute. These permissions let RSC surface Exocompute reachability, networking, scaling, and worker-node boot diagnostics. Currently applicable only to the AWS Exocompute feature. |
 | AKS_CUSTOM_PRIVATE_DNS_ZONE | Represents the permissions required to use custom private DNS zones for private AKS clusters. |
 | ALLOYDB | Represents the set of permissions required for AlloyDb operations. These permissions are applicable to the GCP AlloyDB Protection feature. |
+| ARC_VM_EXPORT | Represents the set of permissions required to export a Hyper-V virtual machine into an Azure Local (Azure Stack HCI) cluster as an Arc virtual machine. These permissions are applicable to the Azure Local cloud account feature. |
 | AUTOMATED_NETWORKING_SETUP | Represents the permissions required to setup networking for exocompute. |
 | BAAS_BASIC | Represents the basic set of permissions required for BaaS feature These permissions may be applicable to any feature that can run on BaaS. |
 | BACKUP_V2 | Represents the set of permissions required for immutable backup V2 operations. These permissions are applicable to the cloud native SQL DB and SQL MI features. |

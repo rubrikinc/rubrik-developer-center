@@ -23,7 +23,7 @@ Dynamics 365 organization.
 | id | [UUID](../scalars/UUID.md)! | ID of the hierarchy object. |
 | lastRefreshTime | [DateTime](../scalars/DateTime.md) | The time at which the Dynamics 365 organization was last synced to Rubrik. |
 | logicalPath | [[PathNode](PathNode.md)!]! | Sequential list of the logical ancestors of this object. |
-| metadataWorkloadID | [UUID](../scalars/UUID.md) | Rubrik ID of the Dynamics 365 metadata workload. |
+| metadataWorkloadID | [UUID](../scalars/UUID.md) | Rubrik ID of the Dataverse metadata workload. |
 | name | String! | Name of the hierarchy object. |
 | naturalId | String! | ID of the Dynamics 365 organization at the source. |
 | numWorkloadDescendants | Int! | Number of descendant workloads of this object. |

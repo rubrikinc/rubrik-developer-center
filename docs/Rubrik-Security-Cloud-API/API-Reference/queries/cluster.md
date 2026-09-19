@@ -37,6 +37,7 @@ A cluster object.
         isTunnelEnabled
         lastConnectionTime
         licensedProducts
+        managementType
         name
         passesConnectivityCheck
         pauseStatus

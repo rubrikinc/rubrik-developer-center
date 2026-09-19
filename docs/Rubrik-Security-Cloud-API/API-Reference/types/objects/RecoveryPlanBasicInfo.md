@@ -23,6 +23,10 @@ Basic information about the recovery plans.
 
 ## Used By
 
+**Queries**
+
+- [query: recoveryPlansBasicInfo](../../queries/recoveryPlansBasicInfo.md) *(via connection)*
+
 **Referenced by**
 
 - [Recovery.recoveryPlanBasicInfo](Recovery.md)

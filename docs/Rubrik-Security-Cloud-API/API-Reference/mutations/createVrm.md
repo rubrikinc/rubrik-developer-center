@@ -1,6 +1,6 @@
 # createVrm
 
-Add a FusionCompute VRM instance  Supported in v9.6 Create a FusionCompute VRM instance by providing the hostname and account credentials of the FusionCompute VRM. Establishes a connection to the VRM instance and retrieves all associated metadata objects.
+Add a FusionCompute VRM instance  Supported in v9.6+ Create a FusionCompute VRM instance by providing the hostname and account credentials of the FusionCompute VRM. Establishes a connection to the VRM instance and retrieves all associated metadata objects.
 
 ## Arguments
 

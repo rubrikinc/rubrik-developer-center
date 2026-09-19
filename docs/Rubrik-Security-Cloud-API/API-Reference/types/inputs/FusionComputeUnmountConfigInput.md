@@ -1,6 +1,6 @@
 # FusionComputeUnmountConfigInput
 
-Configuration for a FusionCompute unmount request.
+Supported in v9.6+ Configuration for a FusionCompute unmount request.
 
 ## Fields
 

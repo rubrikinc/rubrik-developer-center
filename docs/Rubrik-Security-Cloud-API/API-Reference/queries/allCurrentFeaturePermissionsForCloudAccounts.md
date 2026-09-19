@@ -46,6 +46,7 @@ Current permissions are granted by the client to Rubrik. For Azure, permissions 
             "featurePermissions": [
               {
                 "feature": "ALL",
+                "hasExocomputeLambdaRole": true,
                 "permissionJson": "example-string",
                 "version": 0
               }

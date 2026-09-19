@@ -10,6 +10,7 @@ Supported in v9.0+ v9.0: Input to export Kubernetes resources from a resource se
 | ignoreErrors | Boolean | Supported in v9.0+ Specifies whether to ignore errors during the export operation. By default, this value is false. |
 | namespaceMappings | [NamespaceMappingInput](NamespaceMappingInput.md) | Optional mapping of source namespace names to target namespace names for Application Protection Set exports. |
 | pvcNames | [String!] | Supported in v9.1+ |
+| restoreOrderTimeoutPolicy | String | Specifies what happens when a namespace tier does not become ready within its readiness deadline during an ordered recovery. Specify 'Continue' to record a warning and recover the remaining tiers, or 'Abort' to stop the recovery and preserve the namespaces that were already recovered. By default, this value is 'Continue'. This field is ignored unless ordered recovery is enabled on the cluster. |
 | shouldDeleteNamespaceIfExportFailed | Boolean | Supported in v9.1+ Specifies whether to delete exported namespace if the export failed. By default, this value is false. |
 | shouldKeepVirtualMachineMacAddresses | Boolean | Supported in v9.3+ Determines whether the MAC addresses of the network interfaces on the source virtual machine are assigned to the new virtual machine. Set to 'true' to keep the MAC addresses of the new virtual machine the same as the original virtual machine. Set to 'false' to assign new MAC addresses. |
 | storageMapping | [StorageMappingInput](StorageMappingInput.md) | Supported in v9.5+ The storage mapping to be used for the export operation. |

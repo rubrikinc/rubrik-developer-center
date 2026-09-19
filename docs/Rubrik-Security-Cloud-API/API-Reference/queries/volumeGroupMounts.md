@@ -31,6 +31,7 @@ Volume Group Live Mount Connection.
           name
           nodeCompositeId
           nodeIp
+          recoveryPurpose
           restoreScriptPath
           smbShareName
           sourceVolumeGroupId

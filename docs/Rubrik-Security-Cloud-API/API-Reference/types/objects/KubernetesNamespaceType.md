@@ -2,7 +2,7 @@
 
 Kubernetes namespace.
 
-**Implements:** [HierarchyObject](../interfaces/HierarchyObject.md), [CdmHierarchyObject](../interfaces/CdmHierarchyObject.md), [KubernetesClusterDescendant](../interfaces/KubernetesClusterDescendant.md), [KubernetesLabelDescendant](../interfaces/KubernetesLabelDescendant.md)
+**Implements:** [CdmHierarchyObject](../interfaces/CdmHierarchyObject.md), [HierarchyObject](../interfaces/HierarchyObject.md), [KubernetesClusterDescendant](../interfaces/KubernetesClusterDescendant.md), [KubernetesLabelDescendant](../interfaces/KubernetesLabelDescendant.md)
 
 ## Fields
 
@@ -55,6 +55,8 @@ Kubernetes namespace.
 |-------|----------|------|-------------|
 | descendantConnection | first | Int | Returns the first n elements from the list. |
 | descendantConnection | after | String | Returns the elements in the list that occur after the specified cursor. |
+| descendantConnection | last | Int | Returns the last n elements from the list. |
+| descendantConnection | before | String | Returns the elements in the list that occur before the specified cursor. |
 | descendantConnection | sortBy | [HierarchySortByField](../enums/HierarchySortByField.md) | Sort hierarchy objects according to the hierarchy field. |
 | descendantConnection | sortOrder | [SortOrder](../enums/SortOrder.md) | Sorts the order of results. |
 | descendantConnection | typeFilter | [[HierarchyObjectTypeEnum](../enums/HierarchyObjectTypeEnum.md)!] | Types of objects to include. |
@@ -62,6 +64,8 @@ Kubernetes namespace.
 | descendantConnection | workloadHierarchy | [WorkloadLevelHierarchy](../enums/WorkloadLevelHierarchy.md) | Each enumeration value represents the hierarchy of a specific workload type for RBAC and SLA Domain assignments.  A value of 'None' represents the hierarchy of all workload types. |
 | kubernetesDescendantVirtualMachines | first | Int | Returns the first n elements from the list. |
 | kubernetesDescendantVirtualMachines | after | String | Returns the elements in the list that occur after the specified cursor. |
+| kubernetesDescendantVirtualMachines | last | Int | Returns the last n elements from the list. |
+| kubernetesDescendantVirtualMachines | before | String | Returns the elements in the list that occur before the specified cursor. |
 | kubernetesDescendantVirtualMachines | sortBy | [HierarchySortByField](../enums/HierarchySortByField.md) | Sort hierarchy objects according to the hierarchy field. |
 | kubernetesDescendantVirtualMachines | sortOrder | [SortOrder](../enums/SortOrder.md) | Sorts the order of results. |
 | kubernetesDescendantVirtualMachines | filter | [[Filter](../inputs/Filter.md)!] | Hierarchy object filter. |

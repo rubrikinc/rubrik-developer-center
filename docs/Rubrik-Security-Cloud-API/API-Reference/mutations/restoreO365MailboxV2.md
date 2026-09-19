@@ -1,12 +1,12 @@
 # restoreO365MailboxV2
 
-Restores an Exchange mailbox data.
+Schedules on-demand restore job(s) for an Exchange mailbox.
 
 ## Arguments
 
 | Argument | Type | Description |
 |----------|------|-------------|
-| input *(required)* | [RestoreO365MailboxInput](../types/inputs/RestoreO365MailboxInput.md)! | The input for RestoreO365MailboxV2. |
+| input *(required)* | [RestoreO365MailboxInput](../types/inputs/RestoreO365MailboxInput.md)! | Input for restoring an Exchange mailbox. |
 
 ## Returns
 

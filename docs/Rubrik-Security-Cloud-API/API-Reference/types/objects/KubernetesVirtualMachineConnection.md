@@ -16,4 +16,5 @@ Paginated list of KubernetesVirtualMachine objects. Each page of the results inc
 **Referenced by**
 
 - [KubernetesCluster.k8sDescendantVirtualMachines](KubernetesCluster.md)
+- [KubernetesLabel.kubernetesDescendantVirtualMachines](KubernetesLabel.md)
 - [KubernetesNamespaceType.kubernetesDescendantVirtualMachines](KubernetesNamespaceType.md)

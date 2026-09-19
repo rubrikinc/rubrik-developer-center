@@ -1,6 +1,6 @@
 # AwsNativeAccountDescendantType
 
-*No description available.*
+Marker interface for the descendants of an AWS native account. A pure clone of PolarisHierarchyObject (no additional fields).
 
 ## Fields
 
