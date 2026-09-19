@@ -1,0 +1,19 @@
+mutation {
+  startExportAwsNativeEbsVolumeSnapshotJob(input: {
+    snapshotId: "a0eebc99-9c0b-4ef8-bb6d-6bb9bd380a11"
+    destinationAwsAccountRubrikId: "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee"
+    destinationRegionNativeId: US_EAST_1
+    availabilityZone: "us-east-1a"
+    volumeName: "my-restored-volume"
+    volumeSize: 100
+    volumeType: GP3
+    # iops is required by schema but unused for non-IOPS volume types; pass 0
+    iops: 0
+    shouldCopyTags: true
+    shouldReplaceAttached: false
+    # kmsKeyId: "arn:aws:kms:us-east-1:123456789012:key/mrk-..."
+  }) {
+    jobId
+    error
+  }
+}
