@@ -52,6 +52,7 @@ def main():
     parser.add_argument("--dir", type=Path, default=DEFAULT_CODE_DIR,
                         help=f"Directory to search for .gql files (default: {DEFAULT_CODE_DIR})")
     args = parser.parse_args()
+    args.dir = args.dir.resolve()
 
     if not args.schema.exists():
         print(f"ERROR: Schema not found: {args.schema}", file=sys.stderr)

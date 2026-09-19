@@ -1,4 +1,6 @@
 INHERIT: mkdocs.yml
+extra:
+  consent: null
 exclude_docs: |
   Rubrik-Security-Cloud-API/schemas/
   Rubrik-Security-Cloud-API/API-Reference/
