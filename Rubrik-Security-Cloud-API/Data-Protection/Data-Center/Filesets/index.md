@@ -100,7 +100,7 @@ mutation {
     clusterUuid: "8417a938-96f5-43c6-9905-b36e051c5f98"
     definitions: [
       {
-        templateId: "11111111-2222-3333-4444-555555555555"
+        templateId: "a0eebc99-9c0b-4ef8-bb6d-6bb9bd380a11"
         hostId: "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee"
       }
     ]
@@ -121,7 +121,7 @@ $mutation = New-RscMutation -GqlQuery bulkCreateFilesets
 $mutation.var.input = New-Object -TypeName RubrikSecurityCloud.Types.BulkCreateFilesetsInput
 $mutation.var.input.ClusterUuid = "8417a938-96f5-43c6-9905-b36e051c5f98"
 $filesetDef = New-Object -TypeName RubrikSecurityCloud.Types.FilesetCreateInput
-$filesetDef.TemplateId = "11111111-2222-3333-4444-555555555555"
+$filesetDef.TemplateId = "a0eebc99-9c0b-4ef8-bb6d-6bb9bd380a11"
 $filesetDef.HostId = "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee"
 $mutation.var.input.Definitions = @($filesetDef)
 $mutation.invoke()
@@ -132,7 +132,7 @@ curl -s -X POST "$RSC_URL/api/graphql" \
   -H "Authorization: Bearer $RSC_TOKEN" \
   -H "Content-Type: application/json" \
   -d '{
-    "query": "mutation { bulkCreateFilesets(input: { clusterUuid: \"8417a938-96f5-43c6-9905-b36e051c5f98\" definitions: [{ templateId: \"11111111-2222-3333-4444-555555555555\" hostId: \"aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee\" }] }) { data { filesetSummary { id name hostId } } } }"
+    "query": "mutation { bulkCreateFilesets(input: { clusterUuid: \"8417a938-96f5-43c6-9905-b36e051c5f98\" definitions: [{ templateId: \"a0eebc99-9c0b-4ef8-bb6d-6bb9bd380a11\" hostId: \"aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee\" }] }) { data { filesetSummary { id name hostId } } } }"
   }'
 ```
 
@@ -469,7 +469,7 @@ Use [`filesetRecoverFiles`](https://developer.rubrik.com/Rubrik-Security-Cloud-A
 - `restorePath: ""` (empty) — restore in place, overwriting the original location.
 - `restorePath: "/some/dir"` — restore to an alternate directory on the same host.
 
-Populate both path lists (SPARK-42157)
+Populate both path lists
 
 [`filesetRecoverFiles`](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/filesetRecoverFiles/index.md) requires the recovery paths in **two** places:
 

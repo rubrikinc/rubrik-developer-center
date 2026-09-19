@@ -452,7 +452,7 @@ Use [`mountNutanixSnapshotV1`](https://developer.rubrik.com/Rubrik-Security-Clou
 `shouldDisableMigration` is **required**. Its value changes what else you must supply:
 
 - **`shouldDisableMigration: true`** — Rubrik serves the mounted VM indefinitely from backup storage. `containerNaturalId` is **not** needed.
-- **`shouldDisableMigration: false`** — Nutanix migrates the VM onto one of its own storage containers after mount. `containerNaturalId` becomes **required at runtime**, even though the schema marks it optional. Omitting it fails the job.
+- **`shouldDisableMigration: false`** — Nutanix migrates the VM onto one of its own storage containers after mount. `containerNaturalId` is then **required**, and omitting it fails the job.
 
 ```graphql
 mutation {
@@ -805,7 +805,7 @@ Re-synchronize VM inventory and metadata for a standalone Nutanix cluster after 
 ```graphql
 mutation {
   refreshNutanixCluster(input: {
-    id: "11111111-2222-3333-4444-555555555555"
+    id: "a0eebc99-9c0b-4ef8-bb6d-6bb9bd380a11"
   }) {
     id
     status
@@ -817,7 +817,7 @@ mutation {
 # No toolkit cmdlet available
 $mutation = New-RscMutation -GqlQuery refreshNutanixCluster
 $mutation.var.input = New-Object -TypeName RubrikSecurityCloud.Types.RefreshNutanixClusterInput
-$mutation.var.input.Id = "11111111-2222-3333-4444-555555555555"
+$mutation.var.input.Id = "a0eebc99-9c0b-4ef8-bb6d-6bb9bd380a11"
 $mutation.invoke()
 ```
 
@@ -825,7 +825,7 @@ $mutation.invoke()
 curl -s -X POST "$RSC_URL/api/graphql" \
   -H "Authorization: Bearer $RSC_TOKEN" \
   -H "Content-Type: application/json" \
-  -d '{"query": "mutation { refreshNutanixCluster(input: { id: \"11111111-2222-3333-4444-555555555555\" }) { id status } }"}'
+  -d '{"query": "mutation { refreshNutanixCluster(input: { id: \"a0eebc99-9c0b-4ef8-bb6d-6bb9bd380a11\" }) { id status } }"}'
 ```
 
 ### Refresh a Prism Central
@@ -835,7 +835,7 @@ Re-synchronize metadata for a Prism Central and all its associated clusters. Ret
 ```graphql
 mutation {
   refreshNutanixPrismCentral(input: {
-    id: "11111111-2222-3333-4444-555555555555"
+    id: "a0eebc99-9c0b-4ef8-bb6d-6bb9bd380a11"
   }) {
     responses {
       id
@@ -849,7 +849,7 @@ mutation {
 # No toolkit cmdlet available
 $mutation = New-RscMutation -GqlQuery refreshNutanixPrismCentral
 $mutation.var.input = New-Object -TypeName RubrikSecurityCloud.Types.RefreshNutanixPrismCentralInput
-$mutation.var.input.Id = "11111111-2222-3333-4444-555555555555"
+$mutation.var.input.Id = "a0eebc99-9c0b-4ef8-bb6d-6bb9bd380a11"
 $mutation.invoke()
 ```
 
@@ -857,5 +857,5 @@ $mutation.invoke()
 curl -s -X POST "$RSC_URL/api/graphql" \
   -H "Authorization: Bearer $RSC_TOKEN" \
   -H "Content-Type: application/json" \
-  -d '{"query": "mutation { refreshNutanixPrismCentral(input: { id: \"11111111-2222-3333-4444-555555555555\" }) { responses { id status } } }"}'
+  -d '{"query": "mutation { refreshNutanixPrismCentral(input: { id: \"a0eebc99-9c0b-4ef8-bb6d-6bb9bd380a11\" }) { responses { id status } } }"}'
 ```
