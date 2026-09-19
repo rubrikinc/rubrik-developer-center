@@ -59,15 +59,13 @@ $mutation.Invoke().Output.Items
 #!/bin/bash
 
 # RSC_TOKEN="YOUR_RSC_ACCESS_TOKEN"
-# CLUSTER_UUID="YOUR_CLUSTER_UUID"
-# HOSTNAME="sqlserver01.example.com"
+query="mutation RegisterHost { bulkRegisterHostAsync(input: { clusterUuid: \\\"YOUR_CLUSTER_UUID\\\" hosts: [ { hostname: \\\"sqlserver01.example.com\\\" hasAgent: true } ] }) { output { items { hostSummary { id hostname status operatingSystem } } } } }"
 
-query='mutation RegisterHost($clusterUuid: String!, $hostname: String!) { bulkRegisterHostAsync(input: { clusterUuid: $clusterUuid hosts: [{ hostname: $hostname hasAgent: true }] }) { output { items { hostSummary { id hostname status operatingSystem } } } } }'
-
+# Execute the GraphQL query with curl
 curl -X POST \
   -H "Content-Type: application/json" \
   -H "Authorization: Bearer $RSC_TOKEN" \
-  -d "{\"query\": \"$query\", \"variables\": {\"clusterUuid\": \"$CLUSTER_UUID\", \"hostname\": \"$HOSTNAME\"}}" \
+  -d "{\"query\": \"$query\"}" \
   https://example.my.rubrik.com/api/graphql
 ```
 
@@ -117,14 +115,13 @@ $query.Invoke().Nodes
 #!/bin/bash
 
 # RSC_TOKEN="YOUR_RSC_ACCESS_TOKEN"
-# HOSTNAME="sqlserver01.example.com"
+query="query CheckHostDiscovery { physicalHosts( hostRoot: WINDOWS_HOST_ROOT filter: [{ field: NAME, texts: [\\\"sqlserver01.example.com\\\"] }] ) { nodes { id name connectionStatus { connectivity } isMssqlHost numWorkloadDescendants osType } } }"
 
-query='query CheckHostDiscovery($hostname: String!) { physicalHosts(hostRoot: WINDOWS_HOST_ROOT, filter: [{ field: NAME, texts: [$hostname] }]) { nodes { id name connectionStatus { connectivity } isMssqlHost numWorkloadDescendants osType } } }'
-
+# Execute the GraphQL query with curl
 curl -X POST \
   -H "Content-Type: application/json" \
   -H "Authorization: Bearer $RSC_TOKEN" \
-  -d "{\"query\": \"$query\", \"variables\": {\"hostname\": \"$HOSTNAME\"}}" \
+  -d "{\"query\": \"$query\"}" \
   https://example.my.rubrik.com/api/graphql
 ```
 

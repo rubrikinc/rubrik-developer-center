@@ -80,12 +80,17 @@ $mutation.invoke()
 ```
 
 ```bash
-curl -s -X POST "$RSC_URL/api/graphql" \
-  -H "Authorization: Bearer $RSC_TOKEN" \
+#!/bin/bash
+
+# RSC_TOKEN="YOUR_RSC_ACCESS_TOKEN"
+query="mutation { bulkCreateFilesetTemplates(input: { clusterUuid: \\\"8417a938-96f5-43c6-9905-b36e051c5f98\\\" definitions: [ { name: \\\"Web Server Files\\\" operatingSystemType: FILESET_TEMPLATE_CREATE_OPERATING_SYSTEM_TYPE_UNIX_LIKE includes: [\\\"/var/www\\\", \\\"/etc/nginx\\\"] excludes: [\\\"/var/www/cache\\\", \\\"*.tmp\\\"] exceptions: [] preBackupScript: \\\"\\\" postBackupScript: \\\"\\\" } ] }) { data { id filesetTemplateCreate { name includes excludes operatingSystemType } } } }"
+
+# Execute the GraphQL query with curl
+curl -X POST \
   -H "Content-Type: application/json" \
-  -d '{
-    "query": "mutation { bulkCreateFilesetTemplates(input: { clusterUuid: \"8417a938-96f5-43c6-9905-b36e051c5f98\" definitions: [{ name: \"Web Server Files\" operatingSystemType: FILESET_TEMPLATE_CREATE_OPERATING_SYSTEM_TYPE_UNIX_LIKE includes: [\"/var/www\", \"/etc/nginx\"] excludes: [\"/var/www/cache\", \"*.tmp\"] }] }) { data { id name operatingSystemType includes excludes } } }"
-  }'
+  -H "Authorization: Bearer $RSC_TOKEN" \
+  -d "{\"query\": \"$query\"}" \
+  https://example.my.rubrik.com/api/graphql
 ```
 
 Capture the template `id` from the response `data[0].id`.
@@ -128,12 +133,17 @@ $mutation.invoke()
 ```
 
 ```bash
-curl -s -X POST "$RSC_URL/api/graphql" \
-  -H "Authorization: Bearer $RSC_TOKEN" \
+#!/bin/bash
+
+# RSC_TOKEN="YOUR_RSC_ACCESS_TOKEN"
+query="mutation { bulkCreateFilesets(input: { clusterUuid: \\\"8417a938-96f5-43c6-9905-b36e051c5f98\\\" definitions: [ { templateId: \\\"a0eebc99-9c0b-4ef8-bb6d-6bb9bd380a11\\\" hostId: \\\"aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee\\\" } ] }) { data { filesetSummary { effectiveSlaDomainId effectiveSlaDomainName } } } }"
+
+# Execute the GraphQL query with curl
+curl -X POST \
   -H "Content-Type: application/json" \
-  -d '{
-    "query": "mutation { bulkCreateFilesets(input: { clusterUuid: \"8417a938-96f5-43c6-9905-b36e051c5f98\" definitions: [{ templateId: \"a0eebc99-9c0b-4ef8-bb6d-6bb9bd380a11\" hostId: \"aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee\" }] }) { data { filesetSummary { id name hostId } } } }"
-  }'
+  -H "Authorization: Bearer $RSC_TOKEN" \
+  -d "{\"query\": \"$query\"}" \
+  https://example.my.rubrik.com/api/graphql
 ```
 
 The returned fileset `id` is what you pass to backup and recovery mutations.
@@ -542,10 +552,7 @@ $query.invoke()
 #!/bin/bash
 
 # RSC_TOKEN="YOUR_RSC_ACCESS_TOKEN"
-# Both restorePathPairList AND config.restoreConfig must be populated with
-# the same paths. The backend reads only restorePathPairList (SPARK-42157),
-# but config.restoreConfig is schema-required and must be non-empty.
-query="mutation filesetRecoverFiles { filesetRecoverFiles(input: { snapshotFid: \\\"f79b1102-77b5-4434-8400-c2a66c9b2dc1\\\" osType: LINUX shareType: NoShareType restorePathPairList: [ { path: \\\"/var/www/html/config.php\\\" restorePath: \\\"\\\" } ] config: { ignoreErrors: false restoreConfig: [ { restorePathPair: { path: \\\"/var/www/html/config.php\\\" restorePath: \\\"\\\" } } ] } }) { id } }"
+query="mutation filesetRecoverFiles { filesetRecoverFiles(input: { snapshotFid: \\\"f79b1102-77b5-4434-8400-c2a66c9b2dc1\\\" osType: LINUX shareType: NoShareType restorePathPairList: [ { path: \\\"/var/www/html/config.php\\\", restorePath: \\\"\\\" } ] config: { ignoreErrors: false restoreConfig: [ { restorePathPair: { path: \\\"/var/www/html/config.php\\\", restorePath: \\\"\\\" } } ] } }) { id } }"
 
 # Execute the GraphQL query with curl
 curl -X POST \

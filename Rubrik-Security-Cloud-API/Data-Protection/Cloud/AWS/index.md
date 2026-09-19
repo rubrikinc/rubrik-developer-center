@@ -41,8 +41,9 @@ Get-RscAwsNativeAccount -ProtectionFeature EC2
 #!/bin/bash
 
 # RSC_TOKEN="YOUR_RSC_ACCESS_TOKEN"
-query='query { awsNativeRoot { awsNativeAccounts(awsNativeProtectionFeature: EC2) { nodes { name id nativeId status regions effectiveSlaDomain { name id } } } } }'
+query="query { awsNativeAccounts( awsNativeProtectionFeature: EC2 ) { nodes { name id status awsRegions { nodes { regionName } } effectiveSlaDomain { name id } } } }"
 
+# Execute the GraphQL query with curl
 curl -X POST \
   -H "Content-Type: application/json" \
   -H "Authorization: Bearer $RSC_TOKEN" \
@@ -161,12 +162,13 @@ New-RscMutationAwsNative -Operation StartRestoreEc2InstanceSnapshotJob `
 #!/bin/bash
 
 # RSC_TOKEN="YOUR_RSC_ACCESS_TOKEN"
-mutation='mutation { startRestoreAwsNativeEc2InstanceSnapshotJob(input: { snapshotId: "a0eebc99-9c0b-4ef8-bb6d-6bb9bd380a11" shouldPowerOn: true shouldRestoreTags: true }) { jobIds errors } }'
+query="mutation { startRestoreAwsNativeEc2InstanceSnapshotJob(input: { snapshotId: \\\"a0eebc99-9c0b-4ef8-bb6d-6bb9bd380a11\\\" shouldPowerOn: true shouldRestoreTags: true }) { jobId error } }"
 
+# Execute the GraphQL query with curl
 curl -X POST \
   -H "Content-Type: application/json" \
   -H "Authorization: Bearer $RSC_TOKEN" \
-  -d "{\"query\": \"$mutation\"}" \
+  -d "{\"query\": \"$query\"}" \
   https://example.my.rubrik.com/api/graphql
 ```
 
@@ -207,12 +209,13 @@ New-RscMutationAwsNative -Operation StartEc2InstanceSnapshotExportJob `
 #!/bin/bash
 
 # RSC_TOKEN="YOUR_RSC_ACCESS_TOKEN"
-mutation='mutation { startEc2InstanceSnapshotExportJob(input: { snapshotId: "a0eebc99-9c0b-4ef8-bb6d-6bb9bd380a11" destinationAwsAccountRubrikId: "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee" destinationRegionNativeId: "us-east-1" ec2InstanceType: "t3.medium" shouldPowerOn: true shouldCopyTags: true }) { jobIds errors } }'
+query="mutation { startEc2InstanceSnapshotExportJob(input: { snapshotId: \\\"a0eebc99-9c0b-4ef8-bb6d-6bb9bd380a11\\\" destinationAwsAccountRubrikId: \\\"aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee\\\" destinationRegionId: US_EAST_1 instanceName: \\\"my-exported-instance\\\" ec2InstanceType: \\\"t3.medium\\\" subnetId: \\\"subnet-0123456789abcdef0\\\" securityGroupIds: [\\\"sg-0123456789abcdef0\\\"] shouldCopyTags: true }) { jobId error } }"
 
+# Execute the GraphQL query with curl
 curl -X POST \
   -H "Content-Type: application/json" \
   -H "Authorization: Bearer $RSC_TOKEN" \
-  -d "{\"query\": \"$mutation\"}" \
+  -d "{\"query\": \"$query\"}" \
   https://example.my.rubrik.com/api/graphql
 ```
 
@@ -329,8 +332,9 @@ Get-RscQueryAwsNative -Operation IsEbsVolumeSnapshotRestorable `
 #!/bin/bash
 
 # RSC_TOKEN="YOUR_RSC_ACCESS_TOKEN"
-query='query { isAwsNativeEbsVolumeSnapshotRestorable(snapshotId: "a0eebc99-9c0b-4ef8-bb6d-6bb9bd380a11") { isRestorable reason } }'
+query="query { isAwsNativeEbsVolumeSnapshotRestorable( snapshotId: \\\"a0eebc99-9c0b-4ef8-bb6d-6bb9bd380a11\\\" ) { isRestorable } }"
 
+# Execute the GraphQL query with curl
 curl -X POST \
   -H "Content-Type: application/json" \
   -H "Authorization: Bearer $RSC_TOKEN" \
@@ -377,12 +381,13 @@ New-RscMutationAwsNative -Operation StartExportEbsVolumeSnapshotJob `
 #!/bin/bash
 
 # RSC_TOKEN="YOUR_RSC_ACCESS_TOKEN"
-mutation='mutation { startExportAwsNativeEbsVolumeSnapshotJob(input: { snapshotId: "a0eebc99-9c0b-4ef8-bb6d-6bb9bd380a11" destinationAwsAccountRubrikId: "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee" destinationRegionNativeId: "us-east-1" destinationAvailabilityZone: "us-east-1a" volumeType: "gp3" iops: 0 shouldCopyTags: true }) { jobIds errors } }'
+query="mutation { startExportAwsNativeEbsVolumeSnapshotJob(input: { snapshotId: \\\"a0eebc99-9c0b-4ef8-bb6d-6bb9bd380a11\\\" destinationAwsAccountRubrikId: \\\"aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee\\\" destinationRegionNativeId: US_EAST_1 availabilityZone: \\\"us-east-1a\\\" volumeName: \\\"my-restored-volume\\\" volumeSize: 100 volumeType: GP3 iops: 0 shouldCopyTags: true shouldReplaceAttached: false }) { jobId error } }"
 
+# Execute the GraphQL query with curl
 curl -X POST \
   -H "Content-Type: application/json" \
   -H "Authorization: Bearer $RSC_TOKEN" \
-  -d "{\"query\": \"$mutation\"}" \
+  -d "{\"query\": \"$query\"}" \
   https://example.my.rubrik.com/api/graphql
 ```
 
@@ -511,8 +516,9 @@ Get-RscAwsNativeRdsPointInTimeRestoreWindow `
 #!/bin/bash
 
 # RSC_TOKEN="YOUR_RSC_ACCESS_TOKEN"
-query='query { awsNativeRdsPointInTimeRestoreWindow(awsAccountRubrikId: "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee" region: "us-east-1" rdsDatabaseRubrikId: "a0eebc99-9c0b-4ef8-bb6d-6bb9bd380a11") { earliestTime latestTime } }'
+query="query { awsNativeRdsPointInTimeRestoreWindow( awsAccountRubrikId: \\\"aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee\\\" region: US_EAST_1 rdsInstanceName: \\\"my-rds-instance\\\" rdsDatabaseRubrikId: \\\"a0eebc99-9c0b-4ef8-bb6d-6bb9bd380a11\\\" ) { earliestTime latestTime } }"
 
+# Execute the GraphQL query with curl
 curl -X POST \
   -H "Content-Type: application/json" \
   -H "Authorization: Bearer $RSC_TOKEN" \
@@ -561,12 +567,13 @@ New-RscMutationAwsNative -Operation StartExportRdsInstanceJob `
 #!/bin/bash
 
 # RSC_TOKEN="YOUR_RSC_ACCESS_TOKEN"
-mutation='mutation { startExportRdsInstanceJob(input: { snapshotId: "a0eebc99-9c0b-4ef8-bb6d-6bb9bd380a11" destinationAwsNativeAccountId: "123456789012" destinationRegionNativeId: "us-east-1" databaseInstanceClass: "db.t3.medium" dbName: "restored-db" }) { jobIds errors } }'
+query="mutation { startExportRdsInstanceJob(input: { rdsInstanceId: \\\"a0eebc99-9c0b-4ef8-bb6d-6bb9bd380a11\\\" snapshotId: \\\"22222222-3333-4444-5555-666666666666\\\" isPointInTime: false destinationAwsNativeAccountId: \\\"123456789012\\\" destinationRegionNativeId: US_EAST_1 dbInstanceName: \\\"my-restored-rds\\\" dbInstanceClass: DB_T3_MEDIUM isMultiAz: false isPubliclyAccessible: false port: 3306 shouldExportTags: true }) { jobId error } }"
 
+# Execute the GraphQL query with curl
 curl -X POST \
   -H "Content-Type: application/json" \
   -H "Authorization: Bearer $RSC_TOKEN" \
-  -d "{\"query\": \"$mutation\"}" \
+  -d "{\"query\": \"$query\"}" \
   https://example.my.rubrik.com/api/graphql
 ```
 
@@ -706,12 +713,13 @@ New-RscMutationAwsNative -Operation StartRecoverS3SnapshotJob `
 #!/bin/bash
 
 # RSC_TOKEN="YOUR_RSC_ACCESS_TOKEN"
-mutation='mutation { startRecoverS3SnapshotJob(input: { snapshotId: "a0eebc99-9c0b-4ef8-bb6d-6bb9bd380a11" destinationAwsAccountRubrikId: "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee" destinationRegionNativeId: "us-east-1" destinationBucketName: "my-restored-bucket" }) { jobIds errors } }'
+query="mutation { startRecoverS3SnapshotJob(input: { workloadId: \\\"a0eebc99-9c0b-4ef8-bb6d-6bb9bd380a11\\\" snapshotId: \\\"22222222-3333-4444-5555-666666666666\\\" destinationBucketArn: \\\"arn:aws:s3:::my-restored-bucket\\\" shouldRecoverFullBucket: true objectKeys: [] targetAwsAccountRubrikId: \\\"aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee\\\" }) { jobId error } }"
 
+# Execute the GraphQL query with curl
 curl -X POST \
   -H "Content-Type: application/json" \
   -H "Authorization: Bearer $RSC_TOKEN" \
-  -d "{\"query\": \"$mutation\"}" \
+  -d "{\"query\": \"$query\"}" \
   https://example.my.rubrik.com/api/graphql
 ```
 

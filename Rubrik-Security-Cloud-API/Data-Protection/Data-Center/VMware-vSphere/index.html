@@ -837,6 +837,8 @@
       
         
       
+        
+      
     
     
     
@@ -1015,6 +1017,34 @@
   
   
   
+    <li class="md-nav__item">
+      <a href="../../Archival/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Archival Locations
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
     
     
       
@@ -1153,7 +1183,7 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_7_5" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_7_6" checked>
         
           
           <div class="md-nav__link md-nav__container">
@@ -1175,14 +1205,14 @@
             </a>
             
               
-              <label class="md-nav__link " for="__nav_2_7_5" id="__nav_2_7_5_label" tabindex="0">
+              <label class="md-nav__link " for="__nav_2_7_6" id="__nav_2_7_6_label" tabindex="0">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
           </div>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_7_5_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_2_7_5">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_7_6_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_7_6">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -3439,9 +3469,9 @@
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="ch">#!/bin/bash</span>
 </span><span id="__span-11-2"><a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a>
 </span><span id="__span-11-3"><a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a><span class="c1"># RSC_TOKEN="YOUR_RSC_ACCESS_TOKEN"</span>
-</span><span id="__span-11-4"><a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a><span class="c1"># VM_ID="YOUR_VM_ID"</span>
-</span><span id="__span-11-5"><a id="__codelineno-11-5" name="__codelineno-11-5" href="#__codelineno-11-5"></a><span class="nv">query</span><span class="o">=</span><span class="s2">"mutation { vsphereVmRegisterAgent(input: { id: \\\"</span><span class="nv">$VM_ID</span><span class="s2">\\\" }) { success } }"</span>
-</span><span id="__span-11-6"><a id="__codelineno-11-6" name="__codelineno-11-6" href="#__codelineno-11-6"></a>
+</span><span id="__span-11-4"><a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a><span class="nv">query</span><span class="o">=</span><span class="s2">"mutation RegisterRbs { vsphereVmRegisterAgent(input: { id: \\\"YOUR_VM_ID\\\" }) { success } }"</span>
+</span><span id="__span-11-5"><a id="__codelineno-11-5" name="__codelineno-11-5" href="#__codelineno-11-5"></a>
+</span><span id="__span-11-6"><a id="__codelineno-11-6" name="__codelineno-11-6" href="#__codelineno-11-6"></a><span class="c1"># Execute the GraphQL query with curl</span>
 </span><span id="__span-11-7"><a id="__codelineno-11-7" name="__codelineno-11-7" href="#__codelineno-11-7"></a>curl<span class="w"> </span>-X<span class="w"> </span>POST<span class="w"> </span><span class="se">\</span>
 </span><span id="__span-11-8"><a id="__codelineno-11-8" name="__codelineno-11-8" href="#__codelineno-11-8"></a><span class="w">  </span>-H<span class="w"> </span><span class="s2">"Content-Type: application/json"</span><span class="w"> </span><span class="se">\</span>
 </span><span id="__span-11-9"><a id="__codelineno-11-9" name="__codelineno-11-9" href="#__codelineno-11-9"></a><span class="w">  </span>-H<span class="w"> </span><span class="s2">"Authorization: Bearer </span><span class="nv">$RSC_TOKEN</span><span class="s2">"</span><span class="w"> </span><span class="se">\</span>
@@ -3962,7 +3992,7 @@
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-32-1"><a id="__codelineno-32-1" name="__codelineno-32-1" href="#__codelineno-32-1"></a><span class="ch">#!/bin/bash</span>
 </span><span id="__span-32-2"><a id="__codelineno-32-2" name="__codelineno-32-2" href="#__codelineno-32-2"></a>
 </span><span id="__span-32-3"><a id="__codelineno-32-3" name="__codelineno-32-3" href="#__codelineno-32-3"></a><span class="c1"># RSC_TOKEN="YOUR_RSC_ACCESS_TOKEN"</span>
-</span><span id="__span-32-4"><a id="__codelineno-32-4" name="__codelineno-32-4" href="#__codelineno-32-4"></a><span class="nv">query</span><span class="o">=</span><span class="s2">"mutation { vsphereVmRecoverFilesNew(input: { id: \\\"4d94175e-9fd4-5198-8c46-64c2ce3559a2\\\" clusterUuid: \\\"6a271636-9392-4cba-90c5-bdbe227854ab\\\" config: { destObjectId: \\\"a8fd8809-bbdb-5a03-8663-1c1feb19791c\\\" shouldUseAgent: true restoreConfig: { restorePathPair: { path: \\\"C:\\foo\\bar\\example.txt\\\" restorePath: \\\"C:\\foo\\bar\\\" } } } }) { id } }"</span>
+</span><span id="__span-32-4"><a id="__codelineno-32-4" name="__codelineno-32-4" href="#__codelineno-32-4"></a><span class="nv">query</span><span class="o">=</span><span class="s2">"mutation { vsphereVmRecoverFilesNew(input: { id: \\\"4d94175e-9fd4-5198-8c46-64c2ce3559a2\\\" clusterUuid: \\\"6a271636-9392-4cba-90c5-bdbe227854ab\\\" config: { destObjectId: \\\"a8fd8809-bbdb-5a03-8663-1c1feb19791c\\\" shouldUseAgent: true restoreConfig: [ { restorePathPair: { path: \\\"C:\\foo\\bar\\example.txt\\\" restorePath: \\\"C:\\foo\\bar\\\" } } ] } }) { id status } }"</span>
 </span><span id="__span-32-5"><a id="__codelineno-32-5" name="__codelineno-32-5" href="#__codelineno-32-5"></a>
 </span><span id="__span-32-6"><a id="__codelineno-32-6" name="__codelineno-32-6" href="#__codelineno-32-6"></a><span class="c1"># Execute the GraphQL query with curl</span>
 </span><span id="__span-32-7"><a id="__codelineno-32-7" name="__codelineno-32-7" href="#__codelineno-32-7"></a>curl<span class="w"> </span>-X<span class="w"> </span>POST<span class="w"> </span><span class="se">\</span>
@@ -4159,10 +4189,17 @@
 </span></code></pre></div>
 </div>
 <div class="tabbed-block">
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-41-1"><a id="__codelineno-41-1" name="__codelineno-41-1" href="#__codelineno-41-1"></a>curl<span class="w"> </span>-s<span class="w"> </span>-X<span class="w"> </span>POST<span class="w"> </span><span class="s2">"</span><span class="nv">$RSC_URL</span><span class="s2">/api/graphql"</span><span class="w"> </span><span class="se">\</span>
-</span><span id="__span-41-2"><a id="__codelineno-41-2" name="__codelineno-41-2" href="#__codelineno-41-2"></a><span class="w">  </span>-H<span class="w"> </span><span class="s2">"Authorization: Bearer </span><span class="nv">$RSC_TOKEN</span><span class="s2">"</span><span class="w"> </span><span class="se">\</span>
-</span><span id="__span-41-3"><a id="__codelineno-41-3" name="__codelineno-41-3" href="#__codelineno-41-3"></a><span class="w">  </span>-H<span class="w"> </span><span class="s2">"Content-Type: application/json"</span><span class="w"> </span><span class="se">\</span>
-</span><span id="__span-41-4"><a id="__codelineno-41-4" name="__codelineno-41-4" href="#__codelineno-41-4"></a><span class="w">  </span>-d<span class="w"> </span><span class="s1">'{"query": "mutation { refreshVsphereVcenter(input: { fid: \"a0eebc99-9c0b-4ef8-bb6d-6bb9bd380a11\" }) { id status } }"}'</span>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-41-1"><a id="__codelineno-41-1" name="__codelineno-41-1" href="#__codelineno-41-1"></a><span class="ch">#!/bin/bash</span>
+</span><span id="__span-41-2"><a id="__codelineno-41-2" name="__codelineno-41-2" href="#__codelineno-41-2"></a>
+</span><span id="__span-41-3"><a id="__codelineno-41-3" name="__codelineno-41-3" href="#__codelineno-41-3"></a><span class="c1"># RSC_TOKEN="YOUR_RSC_ACCESS_TOKEN"</span>
+</span><span id="__span-41-4"><a id="__codelineno-41-4" name="__codelineno-41-4" href="#__codelineno-41-4"></a><span class="nv">query</span><span class="o">=</span><span class="s2">"mutation { refreshVsphereVcenter(input: { fid: \\\"a0eebc99-9c0b-4ef8-bb6d-6bb9bd380a11\\\" }) { id status } }"</span>
+</span><span id="__span-41-5"><a id="__codelineno-41-5" name="__codelineno-41-5" href="#__codelineno-41-5"></a>
+</span><span id="__span-41-6"><a id="__codelineno-41-6" name="__codelineno-41-6" href="#__codelineno-41-6"></a><span class="c1"># Execute the GraphQL query with curl</span>
+</span><span id="__span-41-7"><a id="__codelineno-41-7" name="__codelineno-41-7" href="#__codelineno-41-7"></a>curl<span class="w"> </span>-X<span class="w"> </span>POST<span class="w"> </span><span class="se">\</span>
+</span><span id="__span-41-8"><a id="__codelineno-41-8" name="__codelineno-41-8" href="#__codelineno-41-8"></a><span class="w">  </span>-H<span class="w"> </span><span class="s2">"Content-Type: application/json"</span><span class="w"> </span><span class="se">\</span>
+</span><span id="__span-41-9"><a id="__codelineno-41-9" name="__codelineno-41-9" href="#__codelineno-41-9"></a><span class="w">  </span>-H<span class="w"> </span><span class="s2">"Authorization: Bearer </span><span class="nv">$RSC_TOKEN</span><span class="s2">"</span><span class="w"> </span><span class="se">\</span>
+</span><span id="__span-41-10"><a id="__codelineno-41-10" name="__codelineno-41-10" href="#__codelineno-41-10"></a><span class="w">  </span>-d<span class="w"> </span><span class="s2">"{\"query\": \"</span><span class="nv">$query</span><span class="s2">\"}"</span><span class="w"> </span><span class="se">\</span>
+</span><span id="__span-41-11"><a id="__codelineno-41-11" name="__codelineno-41-11" href="#__codelineno-41-11"></a><span class="w">  </span>https://example.my.rubrik.com/api/graphql
 </span></code></pre></div>
 </div>
 </div>

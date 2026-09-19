@@ -37,7 +37,7 @@ The `downloadReportCsvAsync` mutation will generate a report and return an `exte
 
 ```graphql
 mutation {
-  downloadReportCsvAsync(input: {id: <REPORT ID>}) {
+  downloadReportCsvAsync(input: {id: 12345}) {
     jobId
     referenceId
     externalId
@@ -53,7 +53,7 @@ mutation {
 #!/bin/bash
 
 # RSC_TOKEN="YOUR_RSC_ACCESS_TOKEN"
-query="mutation { downloadReportCsvAsync(input: {id: <REPORT ID>}) { jobId referenceId externalId } }"
+query="mutation { downloadReportCsvAsync(input: {id: 12345}) { jobId referenceId externalId } }"
 
 # Execute the GraphQL query with curl
 curl -X POST \

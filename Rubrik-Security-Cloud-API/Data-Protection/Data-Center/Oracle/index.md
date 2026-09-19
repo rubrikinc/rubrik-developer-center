@@ -157,8 +157,7 @@ Get-RscOracleHost
 #!/bin/bash
 
 # RSC_TOKEN="YOUR_RSC_ACCESS_TOKEN"
-# typeFilter scopes results to hosts and/or RAC clusters: [OracleHost], [OracleRac], or both.
-query="query { oracleTopLevelDescendants(typeFilter: [OracleHost, OracleRac] filter: [ {field: IS_RELIC texts: \\\"false\\\"} {field: IS_REPLICATED texts: \\\"false\\\"} ]) { nodes { name id objectType ... on OracleHost { descendantConnection { nodes { name id objectType } } } ... on OracleRac { descendantConnection { nodes { name id objectType } } } effectiveSlaDomain { name id } cluster { name id } } } }"
+query="query { oracleTopLevelDescendants( typeFilter: [OracleHost, OracleRac] filter: [ {field: IS_RELIC texts: \\\"false\\\"} {field: IS_REPLICATED texts: \\\"false\\\"} ] ) { nodes { name id objectType ... on OracleHost { descendantConnection { nodes { name id objectType } } } ... on OracleRac { descendantConnection { nodes { name id objectType } } } effectiveSlaDomain { name id } cluster { name id } } } }"
 
 # Execute the GraphQL query with curl
 curl -X POST \
@@ -238,7 +237,6 @@ $query.Invoke()
 #!/bin/bash
 
 # RSC_TOKEN="YOUR_RSC_ACCESS_TOKEN"
-# logRetentionHours: 720 = 30 days. -1 = delete immediately, 0 = inherit from parent.
 query="mutation { bulkUpdateOracleDatabases(input: { bulkUpdateProperties: { ids: [\\\"40bac7c1-87ad-4ac0-b4a6-34ac592d8e77\\\"] oracleUpdate: { oracleUpdateCommon: { logBackupFrequencyInMinutes: 30 logRetentionHours: 720 isPaused: false } } } }) { responses { dbUniqueName snapshotCount } } }"
 
 # Execute the GraphQL query with curl
@@ -487,8 +485,6 @@ $query.Invoke()
 #!/bin/bash
 
 # RSC_TOKEN="YOUR_RSC_ACCESS_TOKEN"
-# Set exactly ONE recovery point: timestampMs, snapshotId, or scn.
-# targetOracleHostOrRacId is an OracleHost FID for standalone DBs, OracleRac FID for RAC DBs.
 query="mutation { exportOracleDatabase(input: { request: { id: \\\"40bac7c1-87ad-4ac0-b4a6-34ac592d8e77\\\" config: { recoveryPoint: { timestampMs: 1737000000000 } targetOracleHostOrRacId: \\\"a0eebc99-9c0b-4ef8-bb6d-6bb9bd380a11\\\" numChannels: 2 } } }) { id status } }"
 
 # Execute the GraphQL query with curl
@@ -546,8 +542,6 @@ $query.Invoke()
 #!/bin/bash
 
 # RSC_TOKEN="YOUR_RSC_ACCESS_TOKEN"
-# Set exactly ONE recovery point: timestampMs, snapshotId, or scn.
-# targetOracleHostOrRacId is an OracleHost FID for standalone DBs, OracleRac FID for RAC DBs.
 query="mutation { mountOracleDatabase(input: { request: { id: \\\"40bac7c1-87ad-4ac0-b4a6-34ac592d8e77\\\" config: { recoveryPoint: { timestampMs: 1737000000000 } targetOracleHostOrRacId: \\\"a0eebc99-9c0b-4ef8-bb6d-6bb9bd380a11\\\" } } }) { id status } }"
 
 # Execute the GraphQL query with curl
@@ -591,7 +585,6 @@ $query.Invoke()
 #!/bin/bash
 
 # RSC_TOKEN="YOUR_RSC_ACCESS_TOKEN"
-# id is the Live Mount object ID, not the source database ID.
 query="mutation { deleteOracleMount(input: { id: \\\"99999999-8888-7777-6666-555555555555\\\" force: false }) { id status } }"
 
 # Execute the GraphQL query with curl
@@ -644,7 +637,6 @@ $query.Invoke()
 #!/bin/bash
 
 # RSC_TOKEN="YOUR_RSC_ACCESS_TOKEN"
-# Set exactly ONE recovery point: timestampMs, snapshotId, or scn.
 query="mutation { instantRecoverOracleSnapshot(input: { id: \\\"40bac7c1-87ad-4ac0-b4a6-34ac592d8e77\\\" config: { recoveryPoint: { timestampMs: 1737000000000 } } }) { id status } }"
 
 # Execute the GraphQL query with curl

@@ -173,9 +173,9 @@ Set-RscMssqlDatabase -RscMssqlDatabase $db -RscCluster $cluster -MaxDataStreams 
 #!/bin/bash
 
 # RSC_TOKEN="YOUR_RSC_ACCESS_TOKEN"
-query="mutation { bulkUpdateMssqlDbs(input: { clusterUuid: \\\"8417a938-96f5-43c6-9905-b36e051c5f98\\\" dbsUpdateProperties: [{ databaseId: \\\"85e98e61-4c1f-496a-b846-5eb871966025\\\" updateProperties: { maxDataStreams: 4 shouldForceFull: false } }] }) }"
+query="mutation updateMssqlDbProperties { bulkUpdateMssqlDbs(input: { clusterUuid: \\\"8417a938-96f5-43c6-9905-b36e051c5f98\\\" dbsUpdateProperties: [ { databaseId: \\\"85e98e61-4c1f-496a-b846-5eb871966025\\\" updateProperties: { maxDataStreams: 4 shouldForceFull: false } } ] }) { items { isLocal } } }"
 
-# Execute the GraphQL mutation with curl
+# Execute the GraphQL query with curl
 curl -X POST \
   -H "Content-Type: application/json" \
   -H "Authorization: Bearer $RSC_TOKEN" \
@@ -255,9 +255,9 @@ New-RscMssqlLogBackup -RscMssqlDatabase $db
 #!/bin/bash
 
 # RSC_TOKEN="YOUR_RSC_ACCESS_TOKEN"
-query="mutation { takeMssqlLogBackup(input: { id: \\\"85e98e61-4c1f-496a-b846-5eb871966025\\\" }) { id status progress error { message } } }"
+query="mutation takeMssqlLog { takeMssqlLogBackup(input: { id: \\\"85e98e61-4c1f-496a-b846-5eb871966025\\\" }) { id status progress error { message } } }"
 
-# Execute the GraphQL mutation with curl
+# Execute the GraphQL query with curl
 curl -X POST \
   -H "Content-Type: application/json" \
   -H "Authorization: Bearer $RSC_TOKEN" \
@@ -337,6 +337,10 @@ All recovery operations require a `recoveryPoint` that specifies the target poin
 | Point-in-time | `date`         | ISO 8601 (`2025-01-15T14:30:00.000Z`)            | Recovering to a known timestamp              |
 | LSN-based     | `lsnPoint.lsn` | SQL Server LSN string (`00000063:00000e28:0001`) | Recovering to a precise transaction boundary |
 
+Set exactly one recovery point field
+
+Every field inside `recoveryPoint` is declared optional, so an empty `recoveryPoint: {}` is accepted at the call site and fails when the job runs. Set one of `date`, `lsnPoint`, or `timestampMs`.
+
 ### In-Place Restore
 
 Restore a database to its original location and instance. The existing database is overwritten and brought back online after recovery. Use the request `id` returned by the mutation to monitor progress via [`mssqlJobStatus`](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/mssqlJobStatus/index.md).
@@ -379,9 +383,9 @@ New-RscMssqlRestore -RscMssqlDatabase $db `
 #!/bin/bash
 
 # RSC_TOKEN="YOUR_RSC_ACCESS_TOKEN"
-query="mutation { restoreMssqlDatabase(input: { id: \\\"85e98e61-4c1f-496a-b846-5eb871966025\\\" config: { recoveryPoint: { date: \\\"2025-01-15T14:30:00.000Z\\\" } finishRecovery: true maxDataStreams: 4 } }) { id status progress error { message } } }"
+query="mutation restoreMssqlDb { restoreMssqlDatabase(input: { id: \\\"85e98e61-4c1f-496a-b846-5eb871966025\\\" config: { recoveryPoint: { date: \\\"2025-01-15T14:30:00.000Z\\\" } finishRecovery: true maxDataStreams: 4 } }) { id status progress error { message } } }"
 
-# Execute the GraphQL mutation with curl
+# Execute the GraphQL query with curl
 curl -X POST \
   -H "Content-Type: application/json" \
   -H "Authorization: Bearer $RSC_TOKEN" \
@@ -393,13 +397,7 @@ curl -X POST \
 
 Export a backup to a different database name or SQL Server instance without touching the source database. This is the right choice for recovery validation, creating test/dev copies, or running a parallel recovery alongside the production database.
 
-Required fields in `config`:
-
-- `recoveryPoint` — the target point in time
-- `targetDatabaseName` — name for the new database on the target instance
-- `targetInstanceId` — UUID of the SQL Server instance where the database will be created (use the instance ID from the discovery query above)
-
-Set `allowOverwrite: true` only if a database with the target name already exists and you intend to replace it.
+`targetInstanceId` is the SQL Server instance where the new database will be created; use the instance ID from the discovery query above. Set `allowOverwrite: true` only if a database with the target name already exists and you intend to replace it.
 
 ```graphql
 mutation exportMssqlDb {
@@ -442,9 +440,9 @@ New-RscMssqlExport -RscMssqlDatabase $db `
 #!/bin/bash
 
 # RSC_TOKEN="YOUR_RSC_ACCESS_TOKEN"
-query="mutation { exportMssqlDatabase(input: { id: \\\"85e98e61-4c1f-496a-b846-5eb871966025\\\" config: { recoveryPoint: { date: \\\"2025-01-15T14:30:00.000Z\\\" } targetDatabaseName: \\\"AdventureWorks_Restored\\\" targetInstanceId: \\\"c7a56601-1234-5678-abcd-ef0123456789\\\" allowOverwrite: false finishRecovery: true maxDataStreams: 4 } }) { id status progress error { message } } }"
+query="mutation exportMssqlDb { exportMssqlDatabase(input: { id: \\\"85e98e61-4c1f-496a-b846-5eb871966025\\\" config: { recoveryPoint: { date: \\\"2025-01-15T14:30:00.000Z\\\" } targetDatabaseName: \\\"AdventureWorks_Restored\\\" targetInstanceId: \\\"c7a56601-1234-5678-abcd-ef0123456789\\\" allowOverwrite: false finishRecovery: true maxDataStreams: 4 } }) { id status progress error { message } } }"
 
-# Execute the GraphQL mutation with curl
+# Execute the GraphQL query with curl
 curl -X POST \
   -H "Content-Type: application/json" \
   -H "Authorization: Bearer $RSC_TOKEN" \
@@ -462,12 +460,7 @@ Live Mount is well-suited for:
 - Extracting specific rows or objects from a backup
 - Providing a point-in-time copy for developers without consuming extra storage
 
-Required fields in `config`:
-
-- `mountedDatabaseName` — the name the database will appear as on the target SQL Server instance
-- `recoveryPoint` — the point in time to mount
-
-`targetInstanceId` is optional; if omitted, the mount is created on the same instance as the source database.
+`mountedDatabaseName` is the name the database will appear as on the target SQL Server instance. `targetInstanceId` is optional; if omitted, the mount is created on the same instance as the source database.
 
 ```graphql
 mutation liveMountMssqlDb {
@@ -503,9 +496,9 @@ New-RscMssqlLiveMount -RscMssqlDatabase $db `
 #!/bin/bash
 
 # RSC_TOKEN="YOUR_RSC_ACCESS_TOKEN"
-query="mutation { createMssqlLiveMount(input: { id: \\\"85e98e61-4c1f-496a-b846-5eb871966025\\\" config: { mountedDatabaseName: \\\"AdventureWorks_LiveMount\\\" recoveryPoint: { date: \\\"2025-01-15T14:30:00.000Z\\\" } } }) { id status progress error { message } } }"
+query="mutation liveMountMssqlDb { createMssqlLiveMount(input: { id: \\\"85e98e61-4c1f-496a-b846-5eb871966025\\\" config: { mountedDatabaseName: \\\"AdventureWorks_LiveMount\\\" recoveryPoint: { date: \\\"2025-01-15T14:30:00.000Z\\\" } } }) { id status progress error { message } } }"
 
-# Execute the GraphQL mutation with curl
+# Execute the GraphQL query with curl
 curl -X POST \
   -H "Content-Type: application/json" \
   -H "Authorization: Bearer $RSC_TOKEN" \
@@ -544,10 +537,9 @@ Remove-RscMssqlLiveMount -MssqlLiveMount $mount
 #!/bin/bash
 
 # RSC_TOKEN="YOUR_RSC_ACCESS_TOKEN"
-# id is the live mount ID (not the async request ID). Query mssqlDatabaseLiveMounts to retrieve it.
-query="mutation { deleteMssqlLiveMount(input: { id: \\\"a1b2c3d4-5678-90ab-cdef-1234567890ab\\\" }) { id status progress error { message } } }"
+query="mutation unmountMssqlDb { deleteMssqlLiveMount(input: { id: \\\"a1b2c3d4-5678-90ab-cdef-1234567890ab\\\" }) { id status progress error { message } } }"
 
-# Execute the GraphQL mutation with curl
+# Execute the GraphQL query with curl
 curl -X POST \
   -H "Content-Type: application/json" \
   -H "Authorization: Bearer $RSC_TOKEN" \
@@ -616,8 +608,9 @@ Get-RscMssqlLinkedAvailabilityGroup
 #!/bin/bash
 
 # RSC_TOKEN="YOUR_RSC_ACCESS_TOKEN"
-query="query { mssqlAvailabilityGroupVirtualGroups { nodes { name linkedFids groups { id name cluster { id name } effectiveSlaDomain { id name } } } } }"
+query="query ListMssqlAvailabilityGroupVirtualGroups { mssqlAvailabilityGroupVirtualGroups { nodes { name linkedFids groups { id name cluster { id name } effectiveSlaDomain { id name } } } } }"
 
+# Execute the GraphQL query with curl
 curl -X POST \
   -H "Content-Type: application/json" \
   -H "Authorization: Bearer $RSC_TOKEN" \
@@ -627,7 +620,13 @@ curl -X POST \
 
 #### Link Two Availability Groups
 
-Pass both AG FIDs in `objectIds` with `operation: LINK`. This creates the virtual group joining both AG objects. The `assignSlaReq` field is required by the input type but the SLA assignment is not applied during a `LINK` operation — set `slaDomainAssignType: NO_ASSIGNMENT`.
+Pass both AG FIDs in `objectIds` with `operation: LINK`. This creates the virtual group joining both AG objects and assigns the SLA Domain in the same call, so `assignSlaReq` must carry a real SLA: set `slaDomainAssignType: protectWithSlaId` and supply `slaOptionalId`.
+
+The SLA must already replicate between both clusters
+
+Linking runs a precheck against the SLA you pass. It fails if the SLA cannot be resolved, and it also fails unless the SLA's replication configuration lists every cluster involved in the link as both a source and a target. Configure replication on the SLA before linking.
+
+Passing a no-assignment value here does not skip the assignment, it fails the precheck.
 
 ```graphql
 mutation LinkAvailabilityGroups {
@@ -638,7 +637,8 @@ mutation LinkAvailabilityGroups {
         "7734f7a2-9388-59e3-bcc5-25cb0a531910"
         "38fb7ce0-e616-53aa-a155-3b1c7216d44a"
       ]
-      slaDomainAssignType: NO_ASSIGNMENT
+      slaDomainAssignType: protectWithSlaId
+      slaOptionalId: "c2c3823f-d74d-49a1-afbe-8d7e0a4d3b7c"
     }
   }) {
     jobId
@@ -661,8 +661,9 @@ Protect-RscLinkedWorkload -InputObject $ag1 -LinkedObject $ag2 `
 #!/bin/bash
 
 # RSC_TOKEN="YOUR_RSC_ACCESS_TOKEN"
-query="mutation { manageProtectionForLinkedObjects(input: { operation: LINK assignSlaReq: { objectIds: [\\\"7734f7a2-9388-59e3-bcc5-25cb0a531910\\\", \\\"38fb7ce0-e616-53aa-a155-3b1c7216d44a\\\"] slaDomainAssignType: NO_ASSIGNMENT } }) { jobId taskchainId } }"
+query="mutation LinkAvailabilityGroups { manageProtectionForLinkedObjects(input: { operation: LINK assignSlaReq: { objectIds: [ \\\"7734f7a2-9388-59e3-bcc5-25cb0a531910\\\" \\\"38fb7ce0-e616-53aa-a155-3b1c7216d44a\\\" ] slaDomainAssignType: protectWithSlaId slaOptionalId: \\\"c2c3823f-d74d-49a1-afbe-8d7e0a4d3b7c\\\" } }) { jobId taskchainId } }"
 
+# Execute the GraphQL query with curl
 curl -X POST \
   -H "Content-Type: application/json" \
   -H "Authorization: Bearer $RSC_TOKEN" \
@@ -683,7 +684,7 @@ mutation AssignSlaToLinkedAvailabilityGroups {
         "7734f7a2-9388-59e3-bcc5-25cb0a531910"
         "38fb7ce0-e616-53aa-a155-3b1c7216d44a"
       ]
-      slaDomainAssignType: PROTECTED
+      slaDomainAssignType: protectWithSlaId
       slaOptionalId: "c2c3823f-d74d-49a1-afbe-8d7e0a4d3b7c"
     }
   }) {
@@ -707,8 +708,9 @@ Protect-RscLinkedWorkload -InputObject $ag1 -LinkedObject $ag2 `
 #!/bin/bash
 
 # RSC_TOKEN="YOUR_RSC_ACCESS_TOKEN"
-query="mutation { manageProtectionForLinkedObjects(input: { operation: ASSIGN_SLA assignSlaReq: { objectIds: [\\\"7734f7a2-9388-59e3-bcc5-25cb0a531910\\\", \\\"38fb7ce0-e616-53aa-a155-3b1c7216d44a\\\"] slaDomainAssignType: PROTECTED slaOptionalId: \\\"c2c3823f-d74d-49a1-afbe-8d7e0a4d3b7c\\\" } }) { jobId taskchainId } }"
+query="mutation AssignSlaToLinkedAvailabilityGroups { manageProtectionForLinkedObjects(input: { operation: ASSIGN_SLA assignSlaReq: { objectIds: [ \\\"7734f7a2-9388-59e3-bcc5-25cb0a531910\\\" \\\"38fb7ce0-e616-53aa-a155-3b1c7216d44a\\\" ] slaDomainAssignType: protectWithSlaId slaOptionalId: \\\"c2c3823f-d74d-49a1-afbe-8d7e0a4d3b7c\\\" } }) { jobId taskchainId } }"
 
+# Execute the GraphQL query with curl
 curl -X POST \
   -H "Content-Type: application/json" \
   -H "Authorization: Bearer $RSC_TOKEN" \
@@ -766,8 +768,9 @@ $query.invoke()
 #!/bin/bash
 
 # RSC_TOKEN="YOUR_RSC_ACCESS_TOKEN"
-query="query { mssqlAvailabilityGroupDatabaseVirtualGroups(fids: [\\\"7734f7a2-9388-59e3-bcc5-25cb0a531910\\\", \\\"38fb7ce0-e616-53aa-a155-3b1c7216d44a\\\"]) { nodes { name activeDbFid linkedFids databases { id name effectiveSlaDomain { id name } } } } }"
+query="query ListLinkedAvailabilityGroupDatabases { mssqlAvailabilityGroupDatabaseVirtualGroups( fids: [ \\\"7734f7a2-9388-59e3-bcc5-25cb0a531910\\\" \\\"38fb7ce0-e616-53aa-a155-3b1c7216d44a\\\" ] ) { nodes { name activeDbFid linkedFids databases { id name effectiveSlaDomain { id name } } } } }"
 
+# Execute the GraphQL query with curl
 curl -X POST \
   -H "Content-Type: application/json" \
   -H "Authorization: Bearer $RSC_TOKEN" \
@@ -788,7 +791,7 @@ mutation UnlinkAvailabilityGroups {
         "7734f7a2-9388-59e3-bcc5-25cb0a531910"
         "38fb7ce0-e616-53aa-a155-3b1c7216d44a"
       ]
-      slaDomainAssignType: NO_ASSIGNMENT
+      slaDomainAssignType: noAssignment
     }
   }) {
     jobId
@@ -809,8 +812,9 @@ Protect-RscLinkedWorkload -InputObject $ag1 -LinkedObject $ag2 `
 #!/bin/bash
 
 # RSC_TOKEN="YOUR_RSC_ACCESS_TOKEN"
-query="mutation { manageProtectionForLinkedObjects(input: { operation: UNLINK assignSlaReq: { objectIds: [\\\"7734f7a2-9388-59e3-bcc5-25cb0a531910\\\", \\\"38fb7ce0-e616-53aa-a155-3b1c7216d44a\\\"] slaDomainAssignType: NO_ASSIGNMENT } }) { jobId taskchainId } }"
+query="mutation UnlinkAvailabilityGroups { manageProtectionForLinkedObjects(input: { operation: UNLINK assignSlaReq: { objectIds: [ \\\"7734f7a2-9388-59e3-bcc5-25cb0a531910\\\" \\\"38fb7ce0-e616-53aa-a155-3b1c7216d44a\\\" ] slaDomainAssignType: noAssignment } }) { jobId taskchainId } }"
 
+# Execute the GraphQL query with curl
 curl -X POST \
   -H "Content-Type: application/json" \
   -H "Authorization: Bearer $RSC_TOKEN" \

@@ -276,12 +276,9 @@ $query.invoke()
 #!/bin/bash
 
 # RSC_TOKEN="YOUR_RSC_ACCESS_TOKEN"
-# id    = the VM FID
-# slaId = optional; omit to use the VM's assigned SLA. With no SLA assigned and
-#         no slaId, the snapshot is retained indefinitely.
 query="mutation { hypervOnDemandSnapshot(input: { id: \\\"a1b2c3d4-1111-2222-3333-444455556666\\\" config: { slaId: \\\"c7bd8eb2-7132-4c8f-8592-682d507520dc\\\" } }) { id status } }"
 
-# Execute the GraphQL mutation with curl
+# Execute the GraphQL query with curl
 curl -X POST \
   -H "Content-Type: application/json" \
   -H "Authorization: Bearer $RSC_TOKEN" \
@@ -369,11 +366,9 @@ $mutation.Invoke()
 #!/bin/bash
 
 # RSC_TOKEN="YOUR_RSC_ACCESS_TOKEN"
-# id   = the snapshot FID (not the VM FID)
-# path = destination path for the new VM's virtual disks (required, <= 260 chars)
-query="mutation { exportHypervVirtualMachine(input: { id: \\\"f5bc5502-b9a6-4759-bf02-05dc5a48f9f7\\\" config: { path: \\\"C:\\\\\\\\ClusterStorage\\\\\\\\Volume1\\\\\\\\Exports\\\\\\\\example-restored\\\" vmName: \\\"example-restored\\\" powerOn: true } }) { id status progress error { message } } }"
+query="mutation { exportHypervVirtualMachine(input: { id: \\\"f5bc5502-b9a6-4759-bf02-05dc5a48f9f7\\\" config: { path: \\\"C:\\ClusterStorage\\Volume1\\Exports\\example-restored\\\" vmName: \\\"example-restored\\\" powerOn: true } }) { id status progress error { message } } }"
 
-# Execute the GraphQL mutation with curl
+# Execute the GraphQL query with curl
 curl -X POST \
   -H "Content-Type: application/json" \
   -H "Authorization: Bearer $RSC_TOKEN" \
@@ -431,11 +426,9 @@ $mutation.Invoke()
 #!/bin/bash
 
 # RSC_TOKEN="YOUR_RSC_ACCESS_TOKEN"
-# id = the snapshot FID (not the VM FID)
-# config is optional; a bare { id } mounts with defaults.
 query="mutation { createHypervVirtualMachineSnapshotMount(input: { id: \\\"f5bc5502-b9a6-4759-bf02-05dc5a48f9f7\\\" config: { vmName: \\\"example-livemount\\\" powerOn: true } }) { id status progress error { message } } }"
 
-# Execute the GraphQL mutation with curl
+# Execute the GraphQL query with curl
 curl -X POST \
   -H "Content-Type: application/json" \
   -H "Authorization: Bearer $RSC_TOKEN" \
@@ -477,10 +470,9 @@ $mutation.Invoke()
 #!/bin/bash
 
 # RSC_TOKEN="YOUR_RSC_ACCESS_TOKEN"
-# id = the Live Mount object ID (from hypervMounts), not the async request ID
 query="mutation { deleteHypervVirtualMachineSnapshotMount(input: { id: \\\"0a1b2c3d-4e5f-6789-abcd-ef0123456789\\\" }) { id status progress error { message } } }"
 
-# Execute the GraphQL mutation with curl
+# Execute the GraphQL query with curl
 curl -X POST \
   -H "Content-Type: application/json" \
   -H "Authorization: Bearer $RSC_TOKEN" \
@@ -538,10 +530,9 @@ $mutation.Invoke()
 #!/bin/bash
 
 # RSC_TOKEN="YOUR_RSC_ACCESS_TOKEN"
-# id = the snapshot FID (not the VM FID). config is required.
 query="mutation { instantRecoverHypervVirtualMachineSnapshot(input: { id: \\\"f5bc5502-b9a6-4759-bf02-05dc5a48f9f7\\\" config: { vmName: \\\"example\\\" } }) { id status progress error { message } } }"
 
-# Execute the GraphQL mutation with curl
+# Execute the GraphQL query with curl
 curl -X POST \
   -H "Content-Type: application/json" \
   -H "Authorization: Bearer $RSC_TOKEN" \
@@ -624,8 +615,6 @@ $query.Invoke()
 #!/bin/bash
 
 # RSC_TOKEN="YOUR_RSC_ACCESS_TOKEN"
-# id          = the request id returned by the backup/recovery mutation
-# clusterUuid = the source VM's cluster.id (the mutation does not return it)
 query="query { hypervVirtualMachineAsyncRequestStatus(input: { id: \\\"CREATE_HYPERV_SNAPSHOT_a1b2c3d4-1111-2222-3333-444455556666_a1be6a78-3ce9-454d-964c-0ce30e19d080:::0\\\" clusterUuid: \\\"f79b1102-77b5-4434-8400-c2a66c9b2dc1\\\" }) { id status progress error { message } } }"
 
 # Execute the GraphQL query with curl
@@ -688,12 +677,9 @@ $mutation.Invoke()
 #!/bin/bash
 
 # RSC_TOKEN="YOUR_RSC_ACCESS_TOKEN"
-# clusterUuid       = the Rubrik CDM cluster UUID that will protect the environment
-# runAsAccount      = the SCVMM Run As account used to reach the Hyper-V hosts
-# shouldDeployAgent = true lets Rubrik push the host connector automatically
-query="mutation { registerHypervScvmm(input: { clusterUuid: \\\"f79b1102-77b5-4434-8400-c2a66c9b2dc1\\\" scvmm: { hostname: \\\"scvmm.example.com\\\" runAsAccount: \\\"EXAMPLE\\\\\\\\rubrik-svc\\\" shouldDeployAgent: true } }) { id status } }"
+query="mutation { registerHypervScvmm(input: { clusterUuid: \\\"f79b1102-77b5-4434-8400-c2a66c9b2dc1\\\" scvmm: { hostname: \\\"scvmm.example.com\\\" runAsAccount: \\\"EXAMPLE\\rubrik-svc\\\" shouldDeployAgent: true } }) { id status } }"
 
-# Execute the GraphQL mutation with curl
+# Execute the GraphQL query with curl
 curl -X POST \
   -H "Content-Type: application/json" \
   -H "Authorization: Bearer $RSC_TOKEN" \
