@@ -1,0 +1,23 @@
+mutation {
+  startExportRdsInstanceJob(input: {
+    rdsInstanceId: "a0eebc99-9c0b-4ef8-bb6d-6bb9bd380a11"
+    snapshotId: "22222222-3333-4444-5555-666666666666"
+    isPointInTime: false
+    # For PITR: isPointInTime: true, exportTime: "2024-01-15T12:00:00Z"
+    # destinationAwsNativeAccountId is the 12-digit AWS account ID (not a Rubrik UUID)
+    destinationAwsNativeAccountId: "123456789012"
+    destinationRegionNativeId: US_EAST_1
+    dbInstanceName: "my-restored-rds"
+    # dbInstanceClass is required (deprecated; databaseInstanceClass is optional free text)
+    dbInstanceClass: DB_T3_MEDIUM
+    isMultiAz: false
+    isPubliclyAccessible: false
+    port: 3306
+    shouldExportTags: true
+    # subnetGroupName: "my-subnet-group"
+    # parameterGroupName: "my-param-group"
+  }) {
+    jobId
+    error
+  }
+}

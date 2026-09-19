@@ -1,0 +1,16 @@
+query {
+  awsNativeAccounts(
+    awsNativeProtectionFeature: EC2
+    # awsNativeProtectionFeature: RDS
+    # awsNativeProtectionFeature: S3
+    # awsNativeProtectionFeature: DYNAMODB
+  ) {
+    nodes {
+      name
+      id
+      status
+      awsRegions { nodes { regionName } }
+      effectiveSlaDomain { name id }
+    }
+  }
+}
