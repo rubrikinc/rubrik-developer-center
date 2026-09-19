@@ -4,7 +4,7 @@
 $query = New-RscMutation -GqlMutation addCloudDirectSystem
 
 $query.Var.input = Get-RscType -Name AddCloudDirectSystemInput
-$query.Var.input.clusterId = "11111111-2222-3333-4444-555555555555"
+$query.Var.input.clusterId = "a0eebc99-9c0b-4ef8-bb6d-6bb9bd380a11"
 $query.Var.input.host = "netapp01.example.com"
 $query.Var.input.systemType = [RubrikSecurityCloud.Types.CloudDirectNasVendorType]::NETAPP_CLUSTER_MODE
 $query.Var.input.username = "svc-rubrik"

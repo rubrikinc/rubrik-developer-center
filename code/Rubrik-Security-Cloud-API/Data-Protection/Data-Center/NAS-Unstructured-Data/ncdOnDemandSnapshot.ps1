@@ -7,7 +7,7 @@ $exclusion.pattern = "*.bak"
 
 $query.Var.input = Get-RscType -Name TakeCloudDirectSnapshotInput
 $query.Var.input.objectFid = "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee"
-$query.Var.input.slaId = "11111111-2222-3333-4444-555555555555"
+$query.Var.input.slaId = "a0eebc99-9c0b-4ef8-bb6d-6bb9bd380a11"
 $query.Var.input.exclusions = @($exclusion)
 
 # takeCloudDirectSnapshot returns a BatchAsyncRequestStatus — a list of
