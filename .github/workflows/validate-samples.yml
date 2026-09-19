@@ -1,0 +1,53 @@
+name: Validate Code Samples
+
+# Two things drift silently without this:
+#   - .gql samples stop matching the schema after a release
+#   - .sh samples stop matching the .gql they are generated from
+# Both are published to developer.rubrik.com, so a broken sample is a broken
+# sample in front of a customer.
+#
+# Note .ps1 samples are NOT checked here. They use the PowerShell SDK object
+# model and may legitimately collapse a multi-field mutation into a single
+# cmdlet, so they cannot be derived from the .gql and have to be reviewed by
+# hand.
+
+on:
+  pull_request:
+    paths:
+      - "code/**"
+      - "docs/Rubrik-Security-Cloud-API/schemas/**"
+      - "scripts/validate_gql.py"
+      - "tools/generate_curl_examples.py"
+      - ".github/workflows/validate-samples.yml"
+  push:
+    branches:
+      - main
+    paths:
+      - "code/**"
+      - "docs/Rubrik-Security-Cloud-API/schemas/**"
+      - "scripts/validate_gql.py"
+      - "tools/generate_curl_examples.py"
+      - ".github/workflows/validate-samples.yml"
+  workflow_dispatch:
+
+jobs:
+  samples:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install graphql-core
+
+      - name: Validate .gql samples against the newest schema snapshot
+        run: |
+          SCHEMA=$(ls docs/Rubrik-Security-Cloud-API/schemas/*.graphql | sort | tail -1)
+          echo "Validating against $SCHEMA"
+          python3 scripts/validate_gql.py --schema "$SCHEMA"
+
+      - name: Check .sh samples match their .gql source
+        run: python3 tools/generate_curl_examples.py --check

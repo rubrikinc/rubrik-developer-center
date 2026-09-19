@@ -28,6 +28,10 @@ EXCLUDE = {
     # Annotated GraphQL-only example on the RSC API landing page. A shell twin
     # would be an orphan; no page includes it.
     "Rubrik-Security-Cloud-API/mssqlDatabasesExample.gql",
+    # AWS.md shows this step as GraphQL only, with no Shell tab.
+    "Rubrik-Security-Cloud-API/Data-Protection/Cloud/AWS/onboard.gql",
+    # PrivateContainerRegistry.md pairs this with a Variables tab, not a Shell tab.
+    "Rubrik-Security-Cloud-API/Data-Protection/Cloud/PrivateContainerRegistry/imageBundleBYOK.gql",
 }
 
 def remove_graphql_comments(query: str) -> str:
