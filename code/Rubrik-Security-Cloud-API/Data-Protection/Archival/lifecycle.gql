@@ -1,0 +1,46 @@
+# Pause a target
+mutation PauseTarget {
+  pauseTarget(input: {
+    id: "a1b2c3d4-e5f6-7890-abcd-ef1234567890"
+  }) {
+    locationId
+    status
+  }
+}
+
+# Resume a target
+mutation ResumeTarget {
+  resumeTarget(input: {
+    id: "a1b2c3d4-e5f6-7890-abcd-ef1234567890"
+  }) {
+    locationId
+    status
+  }
+}
+
+# Enable a target
+mutation EnableTarget {
+  enableTarget(input: {
+    id: "a1b2c3d4-e5f6-7890-abcd-ef1234567890"
+  }) {
+    locationId
+    status
+  }
+}
+
+# Disable a target
+mutation DisableTarget {
+  disableTarget(input: {
+    id: "a1b2c3d4-e5f6-7890-abcd-ef1234567890"
+  }) {
+    locationId
+    status
+  }
+}
+
+# Delete a target (returns Void — no selection set needed)
+mutation DeleteTarget {
+  deleteTarget(input: {
+    id: "a1b2c3d4-e5f6-7890-abcd-ef1234567890"
+  })
+}
