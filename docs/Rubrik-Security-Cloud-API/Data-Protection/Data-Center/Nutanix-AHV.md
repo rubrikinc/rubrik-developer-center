@@ -190,7 +190,7 @@ Use [`mountNutanixSnapshotV1`](../../API-Reference/mutations/mountNutanixSnapsho
     `shouldDisableMigration` is **required**. Its value changes what else you must supply:
 
     - **`shouldDisableMigration: true`** — Rubrik serves the mounted VM indefinitely from backup storage. `containerNaturalId` is **not** needed.
-    - **`shouldDisableMigration: false`** — Nutanix migrates the VM onto one of its own storage containers after mount. `containerNaturalId` becomes **required at runtime**, even though the schema marks it optional. Omitting it fails the job.
+    - **`shouldDisableMigration: false`** — Nutanix migrates the VM onto one of its own storage containers after mount. `containerNaturalId` is then **required**, and omitting it fails the job.
 
 === "GraphQL"
     ```graphql

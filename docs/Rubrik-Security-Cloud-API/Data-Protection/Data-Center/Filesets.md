@@ -190,7 +190,7 @@ Use [`filesetRecoverFiles`](../../API-Reference/mutations/filesetRecoverFiles.md
 - `restorePath: ""` (empty) — restore in place, overwriting the original location.
 - `restorePath: "/some/dir"` — restore to an alternate directory on the same host.
 
-!!! warning "Populate both path lists (SPARK-42157)"
+!!! warning "Populate both path lists"
     [`filesetRecoverFiles`](../../API-Reference/mutations/filesetRecoverFiles.md) requires the recovery paths in **two** places:
 
     - `restorePathPairList` — the top-level list (legacy [`OldRestorePathPairInput`](../../API-Reference/types/inputs/OldRestorePathPairInput.md) shape: `{ path, restorePath }`).
