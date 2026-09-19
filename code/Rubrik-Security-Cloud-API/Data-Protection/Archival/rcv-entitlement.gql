@@ -1,0 +1,14 @@
+query {
+  rcvAccountEntitlement {
+    entitlements {
+      usedCapacity
+      expectedUsedCapacity
+      entitlement {
+        tier
+        capacity
+        redundancy
+        expirationDate
+      }
+    }
+  }
+}

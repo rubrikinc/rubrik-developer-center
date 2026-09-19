@@ -1,0 +1,31 @@
+query ($after: String) {
+  targets(
+    after: $after
+    sortBy: NAME
+    sortOrder: ASC
+  ) {
+    count
+    nodes {
+      id
+      name
+      targetType
+      locationScope
+      status
+      isActive
+      isArchived
+      clusterName
+      cluster {
+        id
+        name
+      }
+      targetMapping {
+        id
+        name
+      }
+    }
+    pageInfo {
+      hasNextPage
+      endCursor
+    }
+  }
+}

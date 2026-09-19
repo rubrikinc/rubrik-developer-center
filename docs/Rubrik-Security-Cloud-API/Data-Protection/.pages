@@ -2,6 +2,7 @@ nav:
   - index.md
   - SLA-Domains.md
   - Snapshots.md
+  - Archival.md
   - Cloud
   - Data-Center
   - Infrastructure

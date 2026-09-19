@@ -1,0 +1,22 @@
+mutation {
+  createTapeTarget(input: {
+    name: "QStar-Tape-Library"
+    clusterUuid: "a1b2c3d4-e5f6-7890-abcd-ef1234567890"
+    hostName: "tape-server.example.com"
+    hostPort: 9000
+    integralVolumeName: "RubrikVolume01"
+    destinationFolderName: "RubrikArchive"
+    username: "tape-user"
+    password: "tape-password"
+    encryptionPassword: "s3cur3P@ssw0rd!"
+  }) {
+    id
+    name
+    targetType
+    status
+    targetMapping {
+      id
+      name
+    }
+  }
+}
