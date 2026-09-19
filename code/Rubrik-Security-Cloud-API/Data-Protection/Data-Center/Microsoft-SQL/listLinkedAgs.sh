@@ -1,8 +1,9 @@
 #!/bin/bash
 
 # RSC_TOKEN="YOUR_RSC_ACCESS_TOKEN"
-query="query { mssqlAvailabilityGroupVirtualGroups { nodes { name linkedFids groups { id name cluster { id name } effectiveSlaDomain { id name } } } } }"
+query="query ListMssqlAvailabilityGroupVirtualGroups { mssqlAvailabilityGroupVirtualGroups { nodes { name linkedFids groups { id name cluster { id name } effectiveSlaDomain { id name } } } } }"
 
+# Execute the GraphQL query with curl
 curl -X POST \
   -H "Content-Type: application/json" \
   -H "Authorization: Bearer $RSC_TOKEN" \

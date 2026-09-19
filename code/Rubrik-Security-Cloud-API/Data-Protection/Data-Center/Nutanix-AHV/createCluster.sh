@@ -1,6 +1,11 @@
-curl -s -X POST "$RSC_URL/api/graphql" \
-  -H "Authorization: Bearer $RSC_TOKEN" \
+#!/bin/bash
+
+# RSC_TOKEN="YOUR_RSC_ACCESS_TOKEN"
+query="mutation { createNutanixCluster(input: { clusterUuid: \\\"8417a938-96f5-43c6-9905-b36e051c5f98\\\" nutanixClusterConfig: { hostname: \\\"prism.example.com\\\" nutanixClusterUuid: \\\"00057b6e-1234-5678-0000-000000abcdef\\\" username: \\\"admin\\\" password: \\\"your-password\\\" caCerts: \\\"-----BEGIN CERTIFICATE-----\nMIID....\n-----END CERTIFICATE-----\\\" } }) { id status error { message } } }"
+
+# Execute the GraphQL query with curl
+curl -X POST \
   -H "Content-Type: application/json" \
-  -d '{
-    "query": "mutation { createNutanixCluster(input: { clusterUuid: \"8417a938-96f5-43c6-9905-b36e051c5f98\" nutanixClusterConfig: { hostname: \"prism.example.com\" nutanixClusterUuid: \"00057b6e-1234-5678-0000-000000abcdef\" username: \"admin\" password: \"your-password\" caCerts: \"-----BEGIN CERTIFICATE-----\\nMIID....\\n-----END CERTIFICATE-----\" } }) { id status error { message } } }"
-  }'
+  -H "Authorization: Bearer $RSC_TOKEN" \
+  -d "{\"query\": \"$query\"}" \
+  https://example.my.rubrik.com/api/graphql

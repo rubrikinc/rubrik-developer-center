@@ -3,6 +3,7 @@
 # RSC_TOKEN="YOUR_RSC_ACCESS_TOKEN"
 query="query { customTprPolicies { nodes { policyId policyName description orgName quorumRequirement actions numberOfObjectTypes numberOfProtectableObjects } } }"
 
+# Execute the GraphQL query with curl
 curl -X POST \
   -H "Content-Type: application/json" \
   -H "Authorization: Bearer $RSC_TOKEN" \

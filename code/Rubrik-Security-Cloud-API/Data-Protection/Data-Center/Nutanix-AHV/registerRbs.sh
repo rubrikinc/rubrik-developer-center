@@ -1,9 +1,9 @@
 #!/bin/bash
 
 # RSC_TOKEN="YOUR_RSC_ACCESS_TOKEN"
-# VM_ID="YOUR_VM_ID"
-query="mutation { registerAgentNutanixVm(input: { id: \\\"$VM_ID\\\" }) { success } }"
+query="mutation RegisterRbs { registerAgentNutanixVm(input: { id: \\\"YOUR_VM_ID\\\" }) { success } }"
 
+# Execute the GraphQL query with curl
 curl -X POST \
   -H "Content-Type: application/json" \
   -H "Authorization: Bearer $RSC_TOKEN" \

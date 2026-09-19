@@ -1,9 +1,7 @@
 #!/bin/bash
 
 # RSC_TOKEN="YOUR_RSC_ACCESS_TOKEN"
-# snapshotFid is captured from snapshotsOfCloudDirectShare.
-# Use "/" to browse the root, then drill into a directory's displayPath.
-query="query { browseSnapshotFileConnection(snapshotFid: \\\"aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee\\\" path: \\\"/\\\") { nodes { filename absolutePath displayPath fileMode size lastModified } pageInfo { endCursor hasNextPage } } }"
+query="query { browseSnapshotFileConnection( snapshotFid: \\\"aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee\\\" path: \\\"/\\\" ) { nodes { absolutePath displayPath filename fileMode size lastModified } pageInfo { endCursor hasNextPage } } }"
 
 # Execute the GraphQL query with curl
 curl -X POST \

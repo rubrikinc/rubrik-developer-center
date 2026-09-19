@@ -1,6 +1,11 @@
-curl -s -X POST "$RSC_URL/api/graphql" \
-  -H "Authorization: Bearer $RSC_TOKEN" \
+#!/bin/bash
+
+# RSC_TOKEN="YOUR_RSC_ACCESS_TOKEN"
+query="mutation { startInPlaceDataMasking(input: { destinationOrgId: \\\"00000000-0000-0000-0000-000000000001\\\" maskingTemplateId: 1234 disableAutomations: true }) { jobId taskchainId } }"
+
+# Execute the GraphQL query with curl
+curl -X POST \
   -H "Content-Type: application/json" \
-  -d '{
-    "query": "mutation { startInPlaceDataMasking(input: { destinationOrgId: \"00000000-0000-0000-0000-000000000001\" maskingTemplateId: 1234 disableAutomations: true }) { jobId taskchainId } }"
-  }'
+  -H "Authorization: Bearer $RSC_TOKEN" \
+  -d "{\"query\": \"$query\"}" \
+  https://example.my.rubrik.com/api/graphql

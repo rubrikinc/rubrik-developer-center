@@ -1,8 +1,6 @@
 #!/bin/bash
 
 # RSC_TOKEN="YOUR_RSC_ACCESS_TOKEN"
-# Set exactly ONE recovery point: timestampMs, snapshotId, or scn.
-# targetOracleHostOrRacId is an OracleHost FID for standalone DBs, OracleRac FID for RAC DBs.
 query="mutation { mountOracleDatabase(input: { request: { id: \\\"40bac7c1-87ad-4ac0-b4a6-34ac592d8e77\\\" config: { recoveryPoint: { timestampMs: 1737000000000 } targetOracleHostOrRacId: \\\"a0eebc99-9c0b-4ef8-bb6d-6bb9bd380a11\\\" } } }) { id status } }"
 
 # Execute the GraphQL query with curl
