@@ -221,10 +221,14 @@ def parse_diff_output(diff_output):
         line = re.sub(r'\x1b\[[0-9;]*m', '', line)
 
         # Skip header/summary lines
-        if (line.startswith('Comparing') or
-            line.startswith('Detected') or
-            line.startswith('between schemas') or
-            'breaking changes' in line.lower() and 'detected' in line.lower()):
+        # graphql-inspector's own summary lines, which are not changes. Match
+        # after stripping any [log]/[warn]/[error] prefix, and allow the
+        # singular "1 breaking change" as well as the plural.
+        bare = re.sub(r'^\[(log|warn|error)\]\s*', '', line).strip()
+        if (bare.startswith('Comparing') or
+                bare.startswith('Detected') or
+                bare.startswith('between schemas') or
+                re.match(r'^\d+ breaking change', bare)):
             continue
 
         # Determine category based on prefix
@@ -265,6 +269,11 @@ def parse_diff_output(diff_output):
             # graphql-inspector annotates removals of previously-deprecated items with "(deprecated)"
             if '(deprecated)' in cleaned.lower() and 'was removed' in cleaned.lower():
                 deprecated_removals.append(cleaned)
+            elif 'was deprecated' in cleaned.lower():
+                # A newly deprecated field still works. It is notice of a future
+                # removal, not something that broke, so it does not belong beside
+                # changes that break a caller today.
+                dangerous_changes.append(cleaned)
             else:
                 breaking_changes.append(cleaned)
         elif is_dangerous:
@@ -304,13 +313,13 @@ def generate_changelog_entry(date_str, breaking, deprecated_removals, dangerous,
         lines.append("")
 
     section("⚠️ Breaking Changes", breaking,
-            "*Existing requests may stop working. Review these before upgrading.*")
+            "*Requests that worked before may now fail. RSC updates automatically, so check whether your integrations use anything listed here.*")
 
     section("🗑️ Removed Deprecated Items", deprecated_removals,
             "*These items were previously marked `@deprecated` and have now been removed.*")
 
     section("⚡ May Require Changes", dangerous,
-            "*Existing requests keep working, but behavior or defaults shifted.*")
+            "*Your requests still work. Deprecations and shifted defaults to plan around.*")
 
     section("✨ Additions", safe,
             "*Purely additive. Nothing you send today stops working. If you switch "
