@@ -69,26 +69,50 @@ jobs:
     name: Writing style (report only)
     runs-on: ubuntu-latest
     continue-on-error: true
+    timeout-minutes: 10
     steps:
       - uses: actions/checkout@v4
 
+      - name: Install Vale
+        run: |
+          VERSION=3.22.0
+          curl -sL "https://github.com/errata-ai/vale/releases/download/v${VERSION}/vale_${VERSION}_Linux_64-bit.tar.gz" \
+            | tar -xz -C /usr/local/bin vale
+          vale --version
+
+      # Vale is invoked directly rather than through vale-action. The action's
+      # reviewdog reporter has nowhere to post on a push, and it was left
+      # running for 25+ minutes on the first attempt. Plain output in the log is
+      # predictable and enough for a report-only check.
+      #
+      # Authored guides only. The API reference is 10,183 generated pages whose
+      # text comes from schema descriptions, so findings there are not fixable
+      # in this repo; they belong upstream (SPARK-1005275). Scanning them was
+      # what made the first run unusable.
       - name: Vale
-        uses: errata-ai/vale-action@reviewdog
+        run: |
+          vale --output=line \
+            docs/index.md \
+            docs/Rubrik-Security-Cloud-API/Data-Protection \
+            docs/Rubrik-Security-Cloud-API/SaaS-App-Protection \
+            docs/Rubrik-Security-Cloud-API/Threat-Analytics \
+            docs/Rubrik-Security-Cloud-API/Observability \
+            docs/Rubrik-Security-Cloud-API/System-Settings \
+            docs/SDKs-and-Tools \
+            docs/Integrations \
+            docs/api-support \
+            > vale.txt 2>&1 || true
+          echo "### Writing style findings" >> "$GITHUB_STEP_SUMMARY"
+          echo "" >> "$GITHUB_STEP_SUMMARY"
+          echo "Total: $(wc -l < vale.txt)" >> "$GITHUB_STEP_SUMMARY"
+          echo "" >> "$GITHUB_STEP_SUMMARY"
+          echo "| count | rule |" >> "$GITHUB_STEP_SUMMARY"
+          echo "|---|---|" >> "$GITHUB_STEP_SUMMARY"
+          sed -E 's/.*:([A-Za-z.-]+):.*/\1/' vale.txt | sort | uniq -c | sort -rn | head -15 \
+            | awk '{print "| "$1" | "$2" |"}' >> "$GITHUB_STEP_SUMMARY"
+          cat vale.txt
+
+      - uses: actions/upload-artifact@v4
         with:
-          # Authored guides only. The API reference is generated from schema
-          # descriptions, so style findings there belong upstream in the schema,
-          # not in this repo.
-          files: |
-            docs/index.md
-            docs/Rubrik-Security-Cloud-API/Data-Protection
-            docs/Rubrik-Security-Cloud-API/SaaS-App-Protection
-            docs/Rubrik-Security-Cloud-API/Threat-Analytics
-            docs/Rubrik-Security-Cloud-API/Observability
-            docs/Rubrik-Security-Cloud-API/System-Settings
-            docs/SDKs-and-Tools
-            docs/Integrations
-            docs/api-support
-          fail_on_error: false
-          reporter: github-pr-check
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          name: vale-report
+          path: vale.txt
