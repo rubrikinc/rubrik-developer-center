@@ -906,16 +906,98 @@ def generate_types_index(schema, comments: dict[str, str], canonical = None) -> 
 
 
 def generate_api_reference_index(schema, schema_name: str) -> str:
-    lines = [
-        "# RSC GraphQL API Reference",
-        "",
-        "The RSC GraphQL API has a single endpoint: `POST /api/graphql`. Use the sidebar to browse [queries](queries/index.md), [mutations](mutations/index.md), and [types](types/index.md), or use search to find a specific operation.",
-        "",
-        "- [Changelog](Changelog.md) — schema changes by version",
-        "- [Deprecations](Deprecations.md) — fields and types deprecated in the current schema",
-        "",
-    ]
-    return "\n".join(lines)
+    """Landing page for the generated reference.
+
+    This is the primary way in: the queries/, mutations/, and types/ subtrees are
+    kept out of the nav and out of site search, so this page and the alphabetical
+    indexes it links are how readers navigate. Counts come from the schema so
+    they cannot go stale.
+    """
+    n_queries = len(schema.query_type.fields) if schema.query_type else 0
+    n_mutations = len(schema.mutation_type.fields) if schema.mutation_type else 0
+    n_types = sum(
+        1 for n in schema.type_map
+        if not n.startswith("__")
+    )
+
+    return f"""# API Reference
+
+Every query, mutation, and type in the Rubrik Security Cloud schema, generated
+directly from it. One endpoint serves all of it:
+
+```
+POST https://<INSTANCE>.my.rubrik.com/api/graphql
+```
+
+<div class="grid cards" markdown>
+
+-   :material-database-search:{{ .lg .middle }} __Queries__
+
+    ---
+    Read operations. Inventory a workload, list snapshots, check compliance,
+    poll a job.
+
+    [Browse all {n_queries:,} queries](queries/index.md)
+
+-   :material-pencil-box-outline:{{ .lg .middle }} __Mutations__
+
+    ---
+    Write operations. Take a snapshot, assign an SLA, start a recovery,
+    register a host.
+
+    [Browse all {n_mutations:,} mutations](mutations/index.md)
+
+-   :material-shape-outline:{{ .lg .middle }} __Types__
+
+    ---
+    Objects, inputs, enums, interfaces, unions, and scalars. What a field
+    returns and what an input accepts.
+
+    [Browse all {n_types:,} types](types/index.md)
+
+</div>
+
+## Guess the URL
+
+Pages are named after the thing they document, so you can skip the indexes when
+you already know the name:
+
+| Looking for | Goes to |
+|---|---|
+| the `takeOnDemandSnapshot` mutation | [`mutations/takeOnDemandSnapshot/`](mutations/takeOnDemandSnapshot.md) |
+| the `AwsNativeS3Bucket` object | [`types/objects/AwsNativeS3Bucket/`](types/objects/AwsNativeS3Bucket.md) |
+| the `SlaAssignTypeEnum` enum | [`types/enums/SlaAssignTypeEnum/`](types/enums/SlaAssignTypeEnum.md) |
+
+!!! tip "Reference pages are not in site search"
+    There are over ten thousand of them, so they are excluded from the search
+    index to keep search useful for the guides. Use the alphabetical indexes
+    above, or guess the URL.
+
+## Tracking changes
+
+The schema ships roughly weekly, and these pages are regenerated with it.
+
+- [Changelog](Changelog.md) — what was added, changed, and removed, by version
+- [Deprecations](Deprecations.md) — fields and types deprecated in the current schema
+
+!!! warning "Optional does not always mean optional"
+    A field the schema declares optional can still be required in practice, and
+    a required input whose own fields are all optional will accept an empty
+    object and then fail. The workload guides call out the cases where this
+    bites. If a call type-checks and fails at run time, check the guide for that
+    workload before assuming the reference is wrong.
+
+## Where to start instead
+
+If you are not looking up something specific, the guides are a better entry
+point. They show working requests for real tasks, in GraphQL, PowerShell, and
+shell.
+
+[Data Protection guides](../Data-Protection/index.md) ·
+[Authentication](../authentication.md) ·
+[Pagination](../pagination.md) ·
+[Troubleshooting](../troubleshooting.md)
+"""
 
 
 # ---------------------------------------------------------------------------
@@ -1087,7 +1169,15 @@ def main() -> int:
             w(cat_dir / f"{name}.md", page)
 
     # ── Top-level .pages for API-Reference/ ──────────────────────────────────
-    pages_content = "title: API Reference\nnav:\n  - index.md\n  - Changelog.md\n  - Deprecations.md\n  - queries\n  - mutations\n  - types\n"
+    # queries/, mutations/, and types/ are deliberately NOT listed here, and are
+    # also excluded via not_in_nav in mkdocs.yml. Material renders a page's
+    # siblings into every page, and types/objects alone holds ~3,900 of them,
+    # which made each reference page ~1.4MB and the whole site 9.8GB against
+    # GitHub Pages' 10GB deploy ceiling. Excluding them takes the build to
+    # ~430MB. Those pages are still built and linkable; the alphabetical
+    # indexes at queries/index.md, mutations/index.md, and types/index.md are
+    # how readers navigate them. Do not add them back without re-measuring.
+    pages_content = "title: API Reference\nnav:\n  - index.md\n  - Changelog.md\n  - Deprecations.md\n"
     w(output_dir / ".pages", pages_content)
 
     # ── Summary ──────────────────────────────────────────────────────────────
