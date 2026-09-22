@@ -3,6 +3,22 @@ site_url: https://developer.rubrik.com
 copyright: Copyright &copy; 2025 Rubrik, Inc.
 exclude_docs: |
   Rubrik-Security-Cloud-API/schemas/
+# Broken internal links and anchors are surfaced here and turned into failures
+# by `mkdocs build --strict` in CI. These are the 404s a reader actually hits,
+# and mkdocs resolves every internal link at build time, so catching them costs
+# nothing.
+#
+# omitted_files stays ignored on purpose: the ~10k generated reference pages are
+# deliberately absent from the nav (see not_in_nav) and would otherwise produce
+# ten thousand warnings.
+validation:
+  omitted_files: ignore
+  absolute_links: warn
+  unrecognized_links: warn
+  links:
+    not_found: warn
+    anchors: warn
+
 # The generated reference subtrees are built and linkable but deliberately kept
 # out of the nav. Material renders a page's siblings into every page, and
 # types/objects alone holds ~3,900 of them, which made each reference page ~1.4MB
