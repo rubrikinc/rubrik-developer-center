@@ -82,6 +82,9 @@ extra:
 markdown_extensions:
   - abbr
   - admonition
+  # Required for the `???` collapsible blocks the changelog generator emits.
+  # Without it they render as literal text followed by a code block.
+  - pymdownx.details
   - pymdownx.highlight:
       anchor_linenums: true
       line_spans: __span
