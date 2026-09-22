@@ -1,8 +1,18 @@
 # GraphQL Schema Changelog
 
-*Generated on September 22, 2026 at 07:08 AM*
+*Generated on September 22, 2026 at 08:51 AM*
 
 This changelog documents the evolution of the GraphQL schema across 60 versions.
+
+!!! note "Not every breaking change affects a generally available feature"
+    The schema also carries early access and in-development surfaces, which
+    change more freely than shipped ones. Nothing in the schema marks which is
+    which, so both appear here the same way. If an entry names a type or
+    operation you do not recognize and are not calling, it is most likely one
+    of those rather than a change to something you depend on.
+
+    The reliable check is whether your own integrations reference the names
+    listed. Search this page for the operations you call.
 
 ## September 14, 2026
 
