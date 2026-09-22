@@ -118,6 +118,83 @@ def clean_line(line):
     return line
 
 
+# Adding an enum value or an optional input field cannot break an existing
+# request. The one caveat, that a client exhaustively switching on an enum
+# should carry a default case, is noted in the Additions section rather than
+# by reclassifying thousands of entries as risky.
+_ADDITIVE = (
+    re.compile(r'^Enum value .* was added to enum '),
+    re.compile(r'^Input field .* was added to input object type '),
+)
+
+
+def is_additive(cleaned):
+    """True when a DANGEROUS-classified change cannot break an existing caller."""
+    return any(p.search(cleaned) for p in _ADDITIVE)
+
+
+# Repetitive entries are grouped by the thing they were added to, so a release
+# that adds 42 enum values reads as one line instead of 42.
+_GROUPERS = (
+    (re.compile(r'^Enum value `([^`]+)` was added to enum `([^`]+)`'),
+     'enum value{s} added to enum `{c}`'),
+    (re.compile(r'^Enum value `([^`]+)` was removed from enum `([^`]+)`'),
+     'enum value{s} removed from enum `{c}`'),
+    (re.compile(r'^Input field `([^`]+)`(?: of type `[^`]+`)? was added to input object type `([^`]+)`'),
+     'input field{s} added to `{c}`'),
+    (re.compile(r'^Field `([^`]+)` was added to object type `([^`]+)`'),
+     'field{s} added to `{c}`'),
+    (re.compile(r'^Field `([^`]+)` was removed from object type `([^`]+)`'),
+     'field{s} removed from `{c}`'),
+)
+
+# Changes with no container to group under. "Type X was added" is the single
+# largest shape in the changelog, so these collapse by shape instead.
+_SHAPE_GROUPERS = (
+    (re.compile(r'^Type `([^`]+)` was added$'), 'type{s} added'),
+    (re.compile(r'^Type `([^`]+)` was removed$'), 'type{s} removed'),
+)
+
+GROUP_THRESHOLD = 3
+
+
+def render_changes(changes):
+    """Render a bucket, collapsing repeated changes to the same container."""
+    groups = {}
+    singles = []
+    for ch in changes:
+        for pattern, template in _GROUPERS:
+            m = pattern.match(ch)
+            if m:
+                groups.setdefault((template, m.group(2)), []).append(m.group(1))
+                break
+        else:
+            for pattern, template in _SHAPE_GROUPERS:
+                m = pattern.match(ch)
+                if m:
+                    groups.setdefault((template, None), []).append(m.group(1))
+                    break
+            else:
+                singles.append(ch)
+
+    lines = []
+    for (template, container), members in groups.items():
+        phrase = template.format(s='', c=container) if container else template.format(s='')
+        if len(members) < GROUP_THRESHOLD:
+            for member in sorted(members):
+                lines.append(f"- `{member}` {phrase}")
+            continue
+        summary = template.format(s='s', c=container) if container else template.format(s='s')
+        lines.append(f'??? note "{len(members)} {summary}"')
+        lines.append("")
+        for member in sorted(members):
+            lines.append(f"    - `{member}`")
+        lines.append("")
+    for ch in singles:
+        lines.append(f"- {ch}")
+    return lines
+
+
 def parse_diff_output(diff_output):
     """Parse graphql-inspector diff output into categorized changes."""
     breaking_changes = []
@@ -181,7 +258,14 @@ def parse_diff_output(diff_output):
             else:
                 breaking_changes.append(cleaned)
         elif is_dangerous:
-            dangerous_changes.append(cleaned)
+            # graphql-inspector marks these DANGEROUS, but for an API consumer they
+            # are additive: nothing they send today stops working. Listing them as
+            # potentially breaking made that section ~78% additive noise, which
+            # trains readers to skip the section that also holds the real risks.
+            if is_additive(cleaned):
+                safe_changes.append(cleaned)
+            else:
+                dangerous_changes.append(cleaned)
         elif is_safe:
             safe_changes.append(cleaned)
 
@@ -196,40 +280,32 @@ def format_date(date_str):
 
 def generate_changelog_entry(date_str, breaking, deprecated_removals, dangerous, safe):
     """Generate a markdown changelog entry for a version."""
-    lines = []
-    lines.append(f"## {format_date(date_str)}")
-    lines.append("")
+    lines = [f"## {format_date(date_str)}", ""]
 
-    if breaking:
-        lines.append("### ⚠️ Breaking Changes")
+    def section(title, changes, note=None):
+        if not changes:
+            return
+        lines.append(f"### {title}")
         lines.append("")
-        for change in breaking:
-            lines.append(f"- {change}")
+        if note:
+            lines.append(note)
+            lines.append("")
+        lines.extend(render_changes(changes))
         lines.append("")
 
-    if deprecated_removals:
-        lines.append("### 🗑️ Removed Deprecated Items")
-        lines.append("")
-        lines.append("*These items were previously marked `@deprecated` and have now been removed.*")
-        lines.append("")
-        for change in deprecated_removals:
-            lines.append(f"- {change}")
-        lines.append("")
-    
-    if dangerous:
-        lines.append("### ⚡ Potentially Breaking Changes")
-        lines.append("")
-        for change in dangerous:
-            lines.append(f"- {change}")
-        lines.append("")
-    
-    if safe:
-        lines.append("### ✨ New Features & Additions")
-        lines.append("")
-        for change in safe:
-            lines.append(f"- {change}")
-        lines.append("")
-    
+    section("⚠️ Breaking Changes", breaking,
+            "*Existing requests may stop working. Review these before upgrading.*")
+
+    section("🗑️ Removed Deprecated Items", deprecated_removals,
+            "*These items were previously marked `@deprecated` and have now been removed.*")
+
+    section("⚡ May Require Changes", dangerous,
+            "*Existing requests keep working, but behavior or defaults shifted.*")
+
+    section("✨ Additions", safe,
+            "*Purely additive. Nothing you send today stops working. If you switch "
+            "exhaustively on an enum, add a default case for newly added values.*")
+
     return '\n'.join(lines)
 
 
