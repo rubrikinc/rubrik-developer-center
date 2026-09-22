@@ -32,7 +32,13 @@ jobs:
       run: pip install -r requirements.txt
 
     - name: Install graphql-inspector
-      run: npm install -g @graphql-inspector/cli
+      # Pinned. 7.0.0 enforces graphql-tools' "# import" convention, and three
+      # field descriptions in the RSC schema are English sentences starting with
+      # the word "import". v7 tries to resolve them as import statements, fails
+      # to load the file at all, and the generator writes the error into the
+      # published changelog. Tracked for a schema-side fix; unpin once the
+      # descriptions move to block strings.
+      run: npm install -g @graphql-inspector/cli@6.0.8
 
     - name: Regenerate Changelog
       run: python3 tools/generate_comprehensive_changelog.py
