@@ -3,6 +3,20 @@ site_url: https://developer.rubrik.com
 copyright: Copyright &copy; 2025 Rubrik, Inc.
 exclude_docs: |
   Rubrik-Security-Cloud-API/schemas/
+# The generated reference subtrees are built and linkable but deliberately kept
+# out of the nav. Material renders a page's siblings into every page, and
+# types/objects alone holds ~3,900 of them, which made each reference page ~1.4MB
+# and the whole site 9.8GB against GitHub Pages' 10GB ceiling. Excluding them
+# takes the build to ~430MB.
+#
+# Note these pages are ALSO excluded from search (see the exclude-search plugin
+# below), so the alphabetical indexes at API-Reference/{queries,mutations,types}
+# and cross-links from the guides are the only way in. Keep those indexes
+# working. API-Reference/index.md, Changelog, and Deprecations stay in the nav.
+not_in_nav: |
+  Rubrik-Security-Cloud-API/API-Reference/queries/
+  Rubrik-Security-Cloud-API/API-Reference/mutations/
+  Rubrik-Security-Cloud-API/API-Reference/types/
 theme:
   name: material
   logo: assets/favicon.ico
