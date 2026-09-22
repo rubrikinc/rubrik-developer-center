@@ -1,6 +1,6 @@
 # GraphQL Schema Changelog
 
-*Generated on September 21, 2026 at 09:33 PM*
+*Generated on September 22, 2026 at 07:08 AM*
 
 This changelog documents the evolution of the GraphQL schema across 60 versions.
 
@@ -8,7 +8,7 @@ This changelog documents the evolution of the GraphQL schema across 60 versions.
 
 ### ⚠️ Breaking Changes
 
-*Existing requests may stop working. Review these before upgrading.*
+*Requests that worked before may now fail. RSC updates automatically, so check whether your integrations use anything listed here.*
 
 7 types removed
 
@@ -34,7 +34,7 @@ This changelog documents the evolution of the GraphQL schema across 60 versions.
 
 ### ⚡ May Require Changes
 
-*Existing requests keep working, but behavior or defaults shifted.*
+*Your requests still work. Deprecations and shifted defaults to plan around.*
 
 - Argument before: String added to field `Query.browseSnapshotFileConnection`
 - Argument last: Int added to field `Query.browseSnapshotFileConnection`
@@ -232,16 +232,13 @@ This changelog documents the evolution of the GraphQL schema across 60 versions.
 
 ### ⚠️ Breaking Changes
 
-*Existing requests may stop working. Review these before upgrading.*
+*Requests that worked before may now fail. RSC updates automatically, so check whether your integrations use anything listed here.*
 
 - `PARTIALLY_SUCCEEDED` enum value removed from enum `WorkloadRecoveryStatusV2`
-- Enum value AzureAdRelationshipEnumType.SSO_POLICY_EXTENSION was deprecated with reason The SSO Policy Extension relationship has been removed.
-- Enum value AzureAdReverseRelationshipType.EXTENDED_SSO_POLICY was deprecated with reason The SsoPolicyExtension relationship has been removed.
-- Detected 1 breaking change
 
 ### ⚡ May Require Changes
 
-*Existing requests keep working, but behavior or defaults shifted.*
+*Your requests still work. Deprecations and shifted defaults to plan around.*
 
 - Argument before: String added to field `CloudDirectNasBucket.childBuckets`
 - Argument last: Int added to field `CloudDirectNasBucket.childBuckets`
@@ -302,6 +299,8 @@ This changelog documents the evolution of the GraphQL schema across 60 versions.
 - Argument last: Int added to field `Query.fusionComputeVrms`
 - Default value for argument hostname on field `Query.isSfdcReachable` changed from rubrik.force.com to rubrikinc.my.site.com
 - Input field `SupportPortalLoginInput.hostname` default value changed from rubrik.force.com to rubrikinc.my.site.com
+- Enum value AzureAdRelationshipEnumType.SSO_POLICY_EXTENSION was deprecated with reason The SSO Policy Extension relationship has been removed.
+- Enum value AzureAdReverseRelationshipType.EXTENDED_SSO_POLICY was deprecated with reason The SsoPolicyExtension relationship has been removed.
 
 ### ✨ Additions
 
@@ -623,7 +622,7 @@ This changelog documents the evolution of the GraphQL schema across 60 versions.
 
 ### ⚠️ Breaking Changes
 
-*Existing requests may stop working. Review these before upgrading.*
+*Requests that worked before may now fail. RSC updates automatically, so check whether your integrations use anything listed here.*
 
 10 types removed
 
@@ -663,7 +662,7 @@ This changelog documents the evolution of the GraphQL schema across 60 versions.
 
 ### ⚡ May Require Changes
 
-*Existing requests keep working, but behavior or defaults shifted.*
+*Your requests still work. Deprecations and shifted defaults to plan around.*
 
 - Argument before: String added to field `MssqlDatabase.liveMounts`
 - Argument last: Int added to field `MssqlDatabase.liveMounts`
@@ -1064,7 +1063,7 @@ This changelog documents the evolution of the GraphQL schema across 60 versions.
 
 ### ⚠️ Breaking Changes
 
-*Existing requests may stop working. Review these before upgrading.*
+*Requests that worked before may now fail. RSC updates automatically, so check whether your integrations use anything listed here.*
 
 - `D365DataverseTable` type removed
 - Field `AirMcpGatewayConnectionData`.idpTenantId changed type from `UUID`! to `String`!
@@ -1072,17 +1071,11 @@ This changelog documents the evolution of the GraphQL schema across 60 versions.
 - Input field `cloudInstanceId` was removed from input object type `HostRegisterInput`
 - Input field `id` was removed from input object type `HostRegisterInput`
 - Input field `connectionInfo` was removed from input object type `MysqldbHaReplicaConfigInput`
-- Enum value PendingActionSubGroupTypeEnum.ARCHIVAL_LOCATION_DISABLE was deprecated with reason Nothing creates this type; it will be removed in a future release.
-- Enum value PendingActionSubGroupTypeEnum.ARCHIVAL_LOCATION_ENABLE was deprecated with reason Nothing creates this type; it will be removed in a future release.
-- Enum value PendingActionSubGroupTypeEnum.ARCHIVAL_LOCATION_PAUSE was deprecated with reason Nothing creates this type; it will be removed in a future release.
-- Enum value PendingActionSubGroupTypeEnum.ARCHIVAL_LOCATION_RESUME was deprecated with reason Nothing creates this type; it will be removed in a future release.
-- Enum value PendingActionSubGroupTypeEnum.AWS_ROLE_BASED_ARCHIVAL_LOCATION was deprecated with reason Nothing creates this type; it will be removed in a future release.
-- Enum value PendingActionSyncType.DERIVED was deprecated with reason Nothing returns this sync type; it will be removed in a future release.
 - Input field `UpgradeGcpCloudAccountPermissionsWithoutOauthInput.feature` changed type from `CloudAccountFeature`! to `CloudAccountFeature`
 
 ### ⚡ May Require Changes
 
-*Existing requests keep working, but behavior or defaults shifted.*
+*Your requests still work. Deprecations and shifted defaults to plan around.*
 
 - M365BackupStorageGroup object implements PolarisHierarchySnappable interface
 - M365BackupStorageOrg object implements PolarisHierarchySnappable interface
@@ -1132,6 +1125,12 @@ This changelog documents the evolution of the GraphQL schema across 60 versions.
 - Argument last: Int added to field `Query.o365UserObjects`
 - Argument before: String added to field `Query.snappableTeamsDriveSearch`
 - Argument last: Int added to field `Query.snappableTeamsDriveSearch`
+- Enum value PendingActionSubGroupTypeEnum.ARCHIVAL_LOCATION_DISABLE was deprecated with reason Nothing creates this type; it will be removed in a future release.
+- Enum value PendingActionSubGroupTypeEnum.ARCHIVAL_LOCATION_ENABLE was deprecated with reason Nothing creates this type; it will be removed in a future release.
+- Enum value PendingActionSubGroupTypeEnum.ARCHIVAL_LOCATION_PAUSE was deprecated with reason Nothing creates this type; it will be removed in a future release.
+- Enum value PendingActionSubGroupTypeEnum.ARCHIVAL_LOCATION_RESUME was deprecated with reason Nothing creates this type; it will be removed in a future release.
+- Enum value PendingActionSubGroupTypeEnum.AWS_ROLE_BASED_ARCHIVAL_LOCATION was deprecated with reason Nothing creates this type; it will be removed in a future release.
+- Enum value PendingActionSyncType.DERIVED was deprecated with reason Nothing returns this sync type; it will be removed in a future release.
 
 ### ✨ Additions
 
@@ -1561,7 +1560,7 @@ This changelog documents the evolution of the GraphQL schema across 60 versions.
 
 ### ⚠️ Breaking Changes
 
-*Existing requests may stop working. Review these before upgrading.*
+*Requests that worked before may now fail. RSC updates automatically, so check whether your integrations use anything listed here.*
 
 6 types removed
 
@@ -1581,7 +1580,7 @@ This changelog documents the evolution of the GraphQL schema across 60 versions.
 
 ### ⚡ May Require Changes
 
-*Existing requests keep working, but behavior or defaults shifted.*
+*Your requests still work. Deprecations and shifted defaults to plan around.*
 
 - Argument anomalyCategoryFilter: [WorkloadAnomalyCategory!] added to field `Query.workloadAnomalies`
 
@@ -1712,7 +1711,7 @@ This changelog documents the evolution of the GraphQL schema across 60 versions.
 
 ### ⚠️ Breaking Changes
 
-*Existing requests may stop working. Review these before upgrading.*
+*Requests that worked before may now fail. RSC updates automatically, so check whether your integrations use anything listed here.*
 
 114 types removed
 
@@ -2014,7 +2013,7 @@ This changelog documents the evolution of the GraphQL schema across 60 versions.
 
 ### ⚡ May Require Changes
 
-*Existing requests keep working, but behavior or defaults shifted.*
+*Your requests still work. Deprecations and shifted defaults to plan around.*
 
 - Argument shouldDeleteRcvLocations: Boolean added to field `Mutation.removeCdmCluster`
 - Argument maxCacheStalenessSeconds: Int! (with default value) added to field `Query.allCloudNativeTagKeys`
@@ -2211,18 +2210,17 @@ This changelog documents the evolution of the GraphQL schema across 60 versions.
 
 ### ⚠️ Breaking Changes
 
-*Existing requests may stop working. Review these before upgrading.*
+*Requests that worked before may now fail. RSC updates automatically, so check whether your integrations use anything listed here.*
 
 - Field `PostgresHaClusterInfo`.replicas changed type from [KosmosTopologyReplicaInfo!]! to [PostgresTopologyReplicaInfo!]!
 - Input field `CompleteAzureAdAppSetupInput.stateToken` changed type from `String`! to `String`
 - Field `Query`.ncdBackEndCapacity changed type from `NcdBackEndCapacity` to `NcdBackEndCapacity`!
 - Field `Query`.ncdFrontEndCapacity changed type from `NcdFrontEndCapacity` to `NcdFrontEndCapacity`!
 - Field `Query`.ncdObjectProtectionStatus changed type from `NcdObjectProtectionStatus` to `NcdObjectProtectionStatus`!
-- Detected 1 breaking change
 
 ### ⚡ May Require Changes
 
-*Existing requests keep working, but behavior or defaults shifted.*
+*Your requests still work. Deprecations and shifted defaults to plan around.*
 
 - Argument idpTypes: [IdpType!] added to field `Query.allSecurityPolicies`
 - Argument before: String added to field `Query.azureAdDirectories`
@@ -2663,7 +2661,7 @@ This changelog documents the evolution of the GraphQL schema across 60 versions.
 
 ### ⚠️ Breaking Changes
 
-*Existing requests may stop working. Review these before upgrading.*
+*Requests that worked before may now fail. RSC updates automatically, so check whether your integrations use anything listed here.*
 
 - `altHostId` field removed from `AddcRecoverySpec`
 - Input field `altHostId` was removed from input object type `AddcRecoverySpecInput`
@@ -2672,7 +2670,7 @@ This changelog documents the evolution of the GraphQL schema across 60 versions.
 
 ### ⚡ May Require Changes
 
-*Existing requests keep working, but behavior or defaults shifted.*
+*Your requests still work. Deprecations and shifted defaults to plan around.*
 
 - Argument before: String added to field `ActiveDirectoryDomainController.missedSnapshotConnection`
 - Argument last: Int added to field `ActiveDirectoryDomainController.missedSnapshotConnection`
@@ -3650,7 +3648,7 @@ This changelog documents the evolution of the GraphQL schema across 60 versions.
 
 ### ⚠️ Breaking Changes
 
-*Existing requests may stop working. Review these before upgrading.*
+*Requests that worked before may now fail. RSC updates automatically, so check whether your integrations use anything listed here.*
 
 4 types removed
 
@@ -3677,7 +3675,7 @@ This changelog documents the evolution of the GraphQL schema across 60 versions.
 
 ### ⚡ May Require Changes
 
-*Existing requests keep working, but behavior or defaults shifted.*
+*Your requests still work. Deprecations and shifted defaults to plan around.*
 
 - Argument before: String added to field `Query.azureAdObjectsByType`
 - Argument last: Int added to field `Query.azureAdObjectsByType`
@@ -4115,18 +4113,17 @@ This changelog documents the evolution of the GraphQL schema across 60 versions.
 
 ### ⚠️ Breaking Changes
 
-*Existing requests may stop working. Review these before upgrading.*
+*Requests that worked before may now fail. RSC updates automatically, so check whether your integrations use anything listed here.*
 
 - Member TicketDetails was removed from `Union` type RemediationDetailsUnion
 - Input field `ApproveRcvPrivateEndpointInput.requestMessage` changed type from `UUID`! to `UUID`
 - Input field `BackupO365SharePointListInput.snappableUuid` changed type from `UUID`! to `UUID`
 - Input field `BackupO365SharePointSiteInput.siteFid` changed type from `UUID`! to `UUID`
 - Field `ChangeVfdOnHostReply`.output changed type from `InternalChangeVfdOnHostResponse` to `InternalChangeVfdOnHostResponse`!
-- Detected 1 breaking change
 
 ### ⚡ May Require Changes
 
-*Existing requests keep working, but behavior or defaults shifted.*
+*Your requests still work. Deprecations and shifted defaults to plan around.*
 
 - Default value true was added to argument includeWhitelistedResults on field `Query.allPrincipalRiskSummaries`
 - Argument after: String added to field `Query.policyDetails`
@@ -4352,15 +4349,14 @@ This changelog documents the evolution of the GraphQL schema across 60 versions.
 
 ### ⚠️ Breaking Changes
 
-*Existing requests may stop working. Review these before upgrading.*
+*Requests that worked before may now fail. RSC updates automatically, so check whether your integrations use anything listed here.*
 
 - Input field `backupRegion` was removed from input object type `AddAzureDevOpsCloudAccountInput`
 - Input field `PostgresHaClusterConfigInput.replicas` changed type from [PostgresHaReplicaConfigInput!]! to [PostgresHaReplicaConfigInput!]
-- Detected 1 breaking change
 
 ### ⚡ May Require Changes
 
-*Existing requests keep working, but behavior or defaults shifted.*
+*Your requests still work. Deprecations and shifted defaults to plan around.*
 
 - Argument dataCategoryIds: [String!] added to field `Mutation.startCrawl`
 - Input field `PostgresHaClusterConfigInput.replicas` default value changed from undefined to []
@@ -5110,7 +5106,7 @@ This changelog documents the evolution of the GraphQL schema across 60 versions.
 
 ### ⚠️ Breaking Changes
 
-*Existing requests may stop working. Review these before upgrading.*
+*Requests that worked before may now fail. RSC updates automatically, so check whether your integrations use anything listed here.*
 
 - `NODE_BOOT_DIAGNOSTICS` enum value removed from enum `ExoHealthCheckType`
 - `NODE_SCALING_DIAGNOSTICS` enum value removed from enum `ExoHealthCheckType`
@@ -5141,7 +5137,7 @@ This changelog documents the evolution of the GraphQL schema across 60 versions.
 
 ### ⚡ May Require Changes
 
-*Existing requests keep working, but behavior or defaults shifted.*
+*Your requests still work. Deprecations and shifted defaults to plan around.*
 
 - Argument operation: Operation! (with default value) added to field `Query.allAwsExocomputeConfigs`
 - Argument features: [CloudAccountFeature!] added to field `Query.allGcpCloudAccountProjectsByFeature`
@@ -5545,7 +5541,7 @@ This changelog documents the evolution of the GraphQL schema across 60 versions.
 
 ### ⚡ May Require Changes
 
-*Existing requests keep working, but behavior or defaults shifted.*
+*Your requests still work. Deprecations and shifted defaults to plan around.*
 
 - AzurePostgresFlexibleServer object implements PolarisHierarchySnappable interface
 - Argument before: String added to field `MissedSnapshotGroupBy.missedSnapshotConnection`
@@ -6123,13 +6119,13 @@ This changelog documents the evolution of the GraphQL schema across 60 versions.
 
 ### ⚠️ Breaking Changes
 
-*Existing requests may stop working. Review these before upgrading.*
+*Requests that worked before may now fail. RSC updates automatically, so check whether your integrations use anything listed here.*
 
 - Field `Query`.mssqlLogShippingTargets changed type from `MssqlLogShippingSummaryV2ListResponse` to `MssqlLogShippingSummaryV2ListResponse`!
 
 ### ⚡ May Require Changes
 
-*Existing requests keep working, but behavior or defaults shifted.*
+*Your requests still work. Deprecations and shifted defaults to plan around.*
 
 - Argument after: String added to field `Query.azureRegions`
 - Argument before: String added to field `Query.azureRegions`
@@ -6613,7 +6609,7 @@ This changelog documents the evolution of the GraphQL schema across 60 versions.
 
 ### ⚠️ Breaking Changes
 
-*Existing requests may stop working. Review these before upgrading.*
+*Requests that worked before may now fail. RSC updates automatically, so check whether your integrations use anything listed here.*
 
 - Field `CloudNativeSnapshotTypeDetails`.rcvTier changed type from `String` to `RcsTierEnumType`
 - Field `CloudNativeSnapshotTypeDetails`.storageClassTier changed type from `String` to `CloudNativeStorageClassTier`!
@@ -6625,7 +6621,7 @@ This changelog documents the evolution of the GraphQL schema across 60 versions.
 
 ### ⚡ May Require Changes
 
-*Existing requests keep working, but behavior or defaults shifted.*
+*Your requests still work. Deprecations and shifted defaults to plan around.*
 
 - Argument after: String added to field `Query.userActivityTimeline`
 - Argument before: String added to field `Query.userActivityTimeline`
@@ -6920,13 +6916,13 @@ This changelog documents the evolution of the GraphQL schema across 60 versions.
 
 ### ⚠️ Breaking Changes
 
-*Existing requests may stop working. Review these before upgrading.*
+*Requests that worked before may now fail. RSC updates automatically, so check whether your integrations use anything listed here.*
 
 - Field `UnregisteredDomainControllerInfo`.fsmoRoles changed type from [String!]! to [FsmoRoles!]!
 
 ### ⚡ May Require Changes
 
-*Existing requests keep working, but behavior or defaults shifted.*
+*Your requests still work. Deprecations and shifted defaults to plan around.*
 
 - Argument outpostArn: String added to field `Query.allEc2InstanceTypesByRegionFromAws`
 - Argument feature: CloudAccountFeature added to field `Query.allKmsEncryptionKeysByRegionFromAws`
@@ -7340,7 +7336,7 @@ This changelog documents the evolution of the GraphQL schema across 60 versions.
 
 ### ⚠️ Breaking Changes
 
-*Existing requests may stop working. Review these before upgrading.*
+*Requests that worked before may now fail. RSC updates automatically, so check whether your integrations use anything listed here.*
 
 - `REVIEW_SCOPE_OBJ_TYPE` enum value removed from enum `AzureAdObjectSearchType`
 - Field `CloudNativeFileVersion`.lastModified changed type from `DateTime`! to `DateTime`
@@ -7351,7 +7347,7 @@ This changelog documents the evolution of the GraphQL schema across 60 versions.
 
 ### ⚡ May Require Changes
 
-*Existing requests keep working, but behavior or defaults shifted.*
+*Your requests still work. Deprecations and shifted defaults to plan around.*
 
 - Argument feature: CloudAccountFeature added to field `Query.allAvailabilityZonesByRegionFromAws`
 - Argument snapshotLocationView: SnapshotLocationView added to field `Query.allSnapshotsByIds`
@@ -7611,7 +7607,7 @@ This changelog documents the evolution of the GraphQL schema across 60 versions.
 
 ### ⚠️ Breaking Changes
 
-*Existing requests may stop working. Review these before upgrading.*
+*Requests that worked before may now fail. RSC updates automatically, so check whether your integrations use anything listed here.*
 
 - `legalHoldMode` field removed from `LegalHoldInfo`
 - `LegalHoldMode` type removed
@@ -7623,7 +7619,7 @@ This changelog documents the evolution of the GraphQL schema across 60 versions.
 
 ### ⚡ May Require Changes
 
-*Existing requests keep working, but behavior or defaults shifted.*
+*Your requests still work. Deprecations and shifted defaults to plan around.*
 
 - Argument keyGenerationParams: KeyGenerationParamsInput added to field `Mutation.generateCsr`
 - Argument after: String added to field `Query.activeCustomAnalyzers`
@@ -7916,7 +7912,7 @@ This changelog documents the evolution of the GraphQL schema across 60 versions.
 
 ### ⚠️ Breaking Changes
 
-*Existing requests may stop working. Review these before upgrading.*
+*Requests that worked before may now fail. RSC updates automatically, so check whether your integrations use anything listed here.*
 
 - `GcpCloudSqlInstanceProjectFilter` type removed
 - `locationIds` field removed from `TprSnapshotInfo`
@@ -7931,7 +7927,7 @@ This changelog documents the evolution of the GraphQL schema across 60 versions.
 
 ### ⚡ May Require Changes
 
-*Existing requests keep working, but behavior or defaults shifted.*
+*Your requests still work. Deprecations and shifted defaults to plan around.*
 
 - Default value AZURE_SQL_DATABASE_DB was added to argument cloudNativeObjectType on field `Query.cloudNativeSqlServerSetupScript`
 - Argument policyFrameworks: [String!] added to field `Query.policyViolations`
@@ -8280,7 +8276,7 @@ This changelog documents the evolution of the GraphQL schema across 60 versions.
 
 ### ⚠️ Breaking Changes
 
-*Existing requests may stop working. Review these before upgrading.*
+*Requests that worked before may now fail. RSC updates automatically, so check whether your integrations use anything listed here.*
 
 - `jsValidationFunction` field removed from `Analyzer`
 
@@ -8780,7 +8776,7 @@ This changelog documents the evolution of the GraphQL schema across 60 versions.
 
 ### ⚠️ Breaking Changes
 
-*Existing requests may stop working. Review these before upgrading.*
+*Requests that worked before may now fail. RSC updates automatically, so check whether your integrations use anything listed here.*
 
 - Input field `purpose` was removed from input object type `UpdateGlobalSlaInput`
 
@@ -8792,7 +8788,7 @@ This changelog documents the evolution of the GraphQL schema across 60 versions.
 
 ### ⚡ May Require Changes
 
-*Existing requests keep working, but behavior or defaults shifted.*
+*Your requests still work. Deprecations and shifted defaults to plan around.*
 
 - Argument statusReasons: [PolicyViolationStatusReason!] added to field `Query.policyViolations`
 - Member TicketDetails was added to `Union` type RemediationDetailsUnion
@@ -9062,7 +9058,7 @@ This changelog documents the evolution of the GraphQL schema across 60 versions.
 
 ### ⚠️ Breaking Changes
 
-*Existing requests may stop working. Review these before upgrading.*
+*Requests that worked before may now fail. RSC updates automatically, so check whether your integrations use anything listed here.*
 
 - Input field `LegalHoldSnapshotsForSnappableInput.clusterUuid` changed type from `String`! to `String`
 - Input field `SnappablesWithLegalHoldSnapshotsInput.clusterUuid` changed type from `String`! to `String`
@@ -9070,7 +9066,7 @@ This changelog documents the evolution of the GraphQL schema across 60 versions.
 
 ### ⚡ May Require Changes
 
-*Existing requests keep working, but behavior or defaults shifted.*
+*Your requests still work. Deprecations and shifted defaults to plan around.*
 
 - Argument shouldExcludeNonIndexed: Boolean added to field `Query.allSnapshotsClosestToPointInTime`
 - Argument isPrefixSearch: Boolean added to field `Query.browseSnapshotFileConnection`
@@ -9440,14 +9436,14 @@ This changelog documents the evolution of the GraphQL schema across 60 versions.
 
 ### ⚠️ Breaking Changes
 
-*Existing requests may stop working. Review these before upgrading.*
+*Requests that worked before may now fail. RSC updates automatically, so check whether your integrations use anything listed here.*
 
 - Input field `GcpNativeExportGceInstanceInput.targetMachineType` changed type from `String`! to `String`
 - Input field `GcpNativeExportGceInstanceInput.targetSubnetName` changed type from `String`! to `String`
 
 ### ⚡ May Require Changes
 
-*Existing requests keep working, but behavior or defaults shifted.*
+*Your requests still work. Deprecations and shifted defaults to plan around.*
 
 - Argument onlyWithProtectedObjects: Boolean (with default value) added to field `Query.allClusterGlobalSlas`
 
@@ -9783,7 +9779,7 @@ This changelog documents the evolution of the GraphQL schema across 60 versions.
 
 ### ⚠️ Breaking Changes
 
-*Existing requests may stop working. Review these before upgrading.*
+*Requests that worked before may now fail. RSC updates automatically, so check whether your integrations use anything listed here.*
 
 - `LOCATION_PURPOSE` enum value removed from enum `ArchivalEntityQueryFilterField`
 - `LOCATION_PURPOSE` enum value removed from enum `TargetQueryFilterField`
@@ -9792,7 +9788,7 @@ This changelog documents the evolution of the GraphQL schema across 60 versions.
 
 ### ⚡ May Require Changes
 
-*Existing requests keep working, but behavior or defaults shifted.*
+*Your requests still work. Deprecations and shifted defaults to plan around.*
 
 - Argument shouldIncludeFullVersionName: Boolean added to field `Query.multiHopUpgradePath`
 
@@ -10098,12 +10094,6 @@ This changelog documents the evolution of the GraphQL schema across 60 versions.
 
 ## March 30, 2026
 
-### ⚠️ Breaking Changes
-
-*Existing requests may stop working. Review these before upgrading.*
-
-- Detected 1 breaking change
-
 ### 🗑️ Removed Deprecated Items
 
 *These items were previously marked `@deprecated` and have now been removed.*
@@ -10112,7 +10102,7 @@ This changelog documents the evolution of the GraphQL schema across 60 versions.
 
 ### ⚡ May Require Changes
 
-*Existing requests keep working, but behavior or defaults shifted.*
+*Your requests still work. Deprecations and shifted defaults to plan around.*
 
 - Default value 9223372036854776000 was added to argument limit on field `Query.allPendingActions`
 - Default value DESC was added to argument sortedOrder on field `Query.allPendingActions`
@@ -10516,14 +10506,14 @@ This changelog documents the evolution of the GraphQL schema across 60 versions.
 
 ### ⚠️ Breaking Changes
 
-*Existing requests may stop working. Review these before upgrading.*
+*Requests that worked before may now fail. RSC updates automatically, so check whether your integrations use anything listed here.*
 
 - `ACTIVE_DIRECTORY_FOREST` enum value removed from enum `HierarchyObjectTypeEnum`
 - `ACTIVE_DIRECTORY_FOREST` enum value removed from enum `ObjectTypeEnum`
 
 ### ⚡ May Require Changes
 
-*Existing requests keep working, but behavior or defaults shifted.*
+*Your requests still work. Deprecations and shifted defaults to plan around.*
 
 - Argument totalPrincipalCountsOnly: Boolean added to field `Query.policyObjs`
 
@@ -10728,11 +10718,10 @@ This changelog documents the evolution of the GraphQL schema across 60 versions.
 
 ### ⚠️ Breaking Changes
 
-*Existing requests may stop working. Review these before upgrading.*
+*Requests that worked before may now fail. RSC updates automatically, so check whether your integrations use anything listed here.*
 
 - Input field `AddCloudNativeSqlServerBackupCredentialsInput.backupCredentials` changed type from `LoginCredentials`! to `LoginCredentials`
 - Input field `SetupCloudNativeSqlServerBackupInput.databaseIds` changed type from [UUID!]! to [UUID!]
-- Detected 1 breaking change
 
 ### 🗑️ Removed Deprecated Items
 
@@ -10742,7 +10731,7 @@ This changelog documents the evolution of the GraphQL schema across 60 versions.
 
 ### ⚡ May Require Changes
 
-*Existing requests keep working, but behavior or defaults shifted.*
+*Your requests still work. Deprecations and shifted defaults to plan around.*
 
 - Argument managementGroupCustomerIds: [UUID!] added to field `Query.allAzureCloudAccountTenants`
 
@@ -10893,7 +10882,7 @@ This changelog documents the evolution of the GraphQL schema across 60 versions.
 
 ### ⚠️ Breaking Changes
 
-*Existing requests may stop working. Review these before upgrading.*
+*Requests that worked before may now fail. RSC updates automatically, so check whether your integrations use anything listed here.*
 
 - `RegionImageIds` type removed
 - Field `CrossAccountOrganization`.id changed type from `String`! to `UUID`!
@@ -10903,7 +10892,7 @@ This changelog documents the evolution of the GraphQL schema across 60 versions.
 
 ### ⚡ May Require Changes
 
-*Existing requests keep working, but behavior or defaults shifted.*
+*Your requests still work. Deprecations and shifted defaults to plan around.*
 
 - Input field `AzureVmConfig.subnetAzConfigs` default value changed from [] to undefined
 - Argument gcpNativeProtectionFeatures: [GcpNativeProtectionFeature!] added to field `Query.gcpNativeProjects`
@@ -11107,7 +11096,7 @@ This changelog documents the evolution of the GraphQL schema across 60 versions.
 
 ### ⚠️ Breaking Changes
 
-*Existing requests may stop working. Review these before upgrading.*
+*Requests that worked before may now fail. RSC updates automatically, so check whether your integrations use anything listed here.*
 
 - `SlaBackupType` type removed
 - `databaseId` field removed from `SqlServerSetupScriptDetails`
@@ -11117,7 +11106,7 @@ This changelog documents the evolution of the GraphQL schema across 60 versions.
 
 ### ⚡ May Require Changes
 
-*Existing requests keep working, but behavior or defaults shifted.*
+*Your requests still work. Deprecations and shifted defaults to plan around.*
 
 - Argument after: String added to field `Query.certificatesWithKey`
 - Argument before: String added to field `Query.certificatesWithKey`
@@ -11332,7 +11321,7 @@ This changelog documents the evolution of the GraphQL schema across 60 versions.
 
 ### ⚠️ Breaking Changes
 
-*Existing requests may stop working. Review these before upgrading.*
+*Requests that worked before may now fail. RSC updates automatically, so check whether your integrations use anything listed here.*
 
 5 types removed
 
@@ -11359,7 +11348,7 @@ This changelog documents the evolution of the GraphQL schema across 60 versions.
 
 ### ⚡ May Require Changes
 
-*Existing requests keep working, but behavior or defaults shifted.*
+*Your requests still work. Deprecations and shifted defaults to plan around.*
 
 - Argument beforeTime: DateTime added to field `ActiveDirectoryDomainController.newestCleanSnapshot`
 - Argument aggregateByTenant: Boolean added to field `Query.allAzureCloudAccountTenants`
@@ -11676,7 +11665,7 @@ This changelog documents the evolution of the GraphQL schema across 60 versions.
 
 ### ⚠️ Breaking Changes
 
-*Existing requests may stop working. Review these before upgrading.*
+*Requests that worked before may now fail. RSC updates automatically, so check whether your integrations use anything listed here.*
 
 - Field `M365Metadata`.parentObjectType changed type from `UUID`! to `String`!
 - Input field `M365MetadataInput.parentObjectType` changed type from `UUID` to `String`
@@ -11832,7 +11821,7 @@ This changelog documents the evolution of the GraphQL schema across 60 versions.
 
 ### ⚠️ Breaking Changes
 
-*Existing requests may stop working. Review these before upgrading.*
+*Requests that worked before may now fail. RSC updates automatically, so check whether your integrations use anything listed here.*
 
 - `AVAILABILITY_TYPE_UNSPECIFIED` enum value removed from enum `GcpCloudSqlAvailabilityType`
 - `CLOUD_SQL_ENGINE_UNSPECIFIED` enum value removed from enum `GcpCloudSqlEngineType`
@@ -11842,7 +11831,7 @@ This changelog documents the evolution of the GraphQL schema across 60 versions.
 
 ### ⚡ May Require Changes
 
-*Existing requests keep working, but behavior or defaults shifted.*
+*Your requests still work. Deprecations and shifted defaults to plan around.*
 
 - Argument disableAnalyzer: Boolean (with default value) added to field `Mutation.deactivateCustomAnalyzer`
 - Argument sortBy: SigninLogSortBy added to field `Query.signinLogs`
@@ -12068,7 +12057,7 @@ This changelog documents the evolution of the GraphQL schema across 60 versions.
 
 ### ⚠️ Breaking Changes
 
-*Existing requests may stop working. Review these before upgrading.*
+*Requests that worked before may now fail. RSC updates automatically, so check whether your integrations use anything listed here.*
 
 4 types removed
 
@@ -12102,7 +12091,7 @@ This changelog documents the evolution of the GraphQL schema across 60 versions.
 
 ### ⚡ May Require Changes
 
-*Existing requests keep working, but behavior or defaults shifted.*
+*Your requests still work. Deprecations and shifted defaults to plan around.*
 
 - Argument disableDataCategory: Boolean (with default value) added to field `Mutation.deactivatePolicy`
 
@@ -12236,7 +12225,7 @@ This changelog documents the evolution of the GraphQL schema across 60 versions.
 
 ### ⚠️ Breaking Changes
 
-*Existing requests may stop working. Review these before upgrading.*
+*Requests that worked before may now fail. RSC updates automatically, so check whether your integrations use anything listed here.*
 
 - `ClusterLocationEdit` type removed
 
@@ -12248,7 +12237,7 @@ This changelog documents the evolution of the GraphQL schema across 60 versions.
 
 ### ⚡ May Require Changes
 
-*Existing requests keep working, but behavior or defaults shifted.*
+*Your requests still work. Deprecations and shifted defaults to plan around.*
 
 - Default value for argument sortBy on field `Query.ldapAuthorizedPrincipalConnection` changed from `Name` to undefined
 - Default value for argument sortBy on field `Query.ldapIntegrationConnection` changed from `Name` to undefined
@@ -12539,7 +12528,7 @@ This changelog documents the evolution of the GraphQL schema across 60 versions.
 
 ### ⚠️ Breaking Changes
 
-*Existing requests may stop working. Review these before upgrading.*
+*Requests that worked before may now fail. RSC updates automatically, so check whether your integrations use anything listed here.*
 
 - `ObjectTypeConsumption` type removed
 - `PREMIUM` enum value removed from enum `RcsTierEnumType`
@@ -12549,7 +12538,7 @@ This changelog documents the evolution of the GraphQL schema across 60 versions.
 
 ### ⚡ May Require Changes
 
-*Existing requests keep working, but behavior or defaults shifted.*
+*Your requests still work. Deprecations and shifted defaults to plan around.*
 
 - Argument analyzerStatusFilter: AnalyzerStatusFilter added to field `Query.analyzerUsages`
 
@@ -12681,7 +12670,7 @@ This changelog documents the evolution of the GraphQL schema across 60 versions.
 
 ### ⚠️ Breaking Changes
 
-*Existing requests may stop working. Review these before upgrading.*
+*Requests that worked before may now fail. RSC updates automatically, so check whether your integrations use anything listed here.*
 
 3 types removed
 
@@ -12697,7 +12686,7 @@ This changelog documents the evolution of the GraphQL schema across 60 versions.
 
 ### ⚡ May Require Changes
 
-*Existing requests keep working, but behavior or defaults shifted.*
+*Your requests still work. Deprecations and shifted defaults to plan around.*
 
 - Input field `MonthlySnapshotScheduleInput.daysOfMonth` default value changed from [] to undefined
 - Argument snapshotManagementType: SnapshotManagementType added to field `Query.allUnmanagedObjectsSupportedTypes`
@@ -12853,7 +12842,7 @@ This changelog documents the evolution of the GraphQL schema across 60 versions.
 
 ### ⚠️ Breaking Changes
 
-*Existing requests may stop working. Review these before upgrading.*
+*Requests that worked before may now fail. RSC updates automatically, so check whether your integrations use anything listed here.*
 
 3 types removed
 
@@ -12867,7 +12856,7 @@ This changelog documents the evolution of the GraphQL schema across 60 versions.
 
 ### ⚡ May Require Changes
 
-*Existing requests keep working, but behavior or defaults shifted.*
+*Your requests still work. Deprecations and shifted defaults to plan around.*
 
 - Default value DESC was added to argument sortOrder on field `Query.getCdmReleaseDetailsForClusterFromSupportPortal`
 
@@ -13048,7 +13037,7 @@ This changelog documents the evolution of the GraphQL schema across 60 versions.
 
 ### ⚡ May Require Changes
 
-*Existing requests keep working, but behavior or defaults shifted.*
+*Your requests still work. Deprecations and shifted defaults to plan around.*
 
 - Argument shouldExcludeCdmSnapshotRetentionInfo: Boolean added to field `Query.snapshotOfASnappableConnection`
 - Argument shouldExcludeCdmSnapshotRetentionInfo: Boolean added to field `Query.snapshotOfSnappablesConnection`
@@ -13295,7 +13284,7 @@ This changelog documents the evolution of the GraphQL schema across 60 versions.
 
 ### ⚠️ Breaking Changes
 
-*Existing requests may stop working. Review these before upgrading.*
+*Requests that worked before may now fail. RSC updates automatically, so check whether your integrations use anything listed here.*
 
 - `userNote` input field added to `DeleteDb2DatabaseInput`
 - `userNote` input field added to `DeleteDb2InstanceInput`
@@ -13310,7 +13299,7 @@ This changelog documents the evolution of the GraphQL schema across 60 versions.
 
 ### ⚡ May Require Changes
 
-*Existing requests keep working, but behavior or defaults shifted.*
+*Your requests still work. Deprecations and shifted defaults to plan around.*
 
 - Argument archivalLocationId: String added to field `Query.allSnapshotsClosestToPointInTime`
 
@@ -13572,7 +13561,7 @@ This changelog documents the evolution of the GraphQL schema across 60 versions.
 
 ### ⚠️ Breaking Changes
 
-*Existing requests may stop working. Review these before upgrading.*
+*Requests that worked before may now fail. RSC updates automatically, so check whether your integrations use anything listed here.*
 
 - `DeleteSnapshotsInput` type removed
 - `DeleteSnapshotsOfObjectsInput` type removed
@@ -13582,7 +13571,7 @@ This changelog documents the evolution of the GraphQL schema across 60 versions.
 
 ### ⚡ May Require Changes
 
-*Existing requests keep working, but behavior or defaults shifted.*
+*Your requests still work. Deprecations and shifted defaults to plan around.*
 
 - CloudDirectNasBucket object implements HierarchySnappable interface
 - CloudDirectNasShare object implements HierarchySnappable interface
@@ -13847,7 +13836,7 @@ This changelog documents the evolution of the GraphQL schema across 60 versions.
 
 ### ⚠️ Breaking Changes
 
-*Existing requests may stop working. Review these before upgrading.*
+*Requests that worked before may now fail. RSC updates automatically, so check whether your integrations use anything listed here.*
 
 8 types removed
 
@@ -13879,7 +13868,7 @@ This changelog documents the evolution of the GraphQL schema across 60 versions.
 
 ### ⚡ May Require Changes
 
-*Existing requests keep working, but behavior or defaults shifted.*
+*Your requests still work. Deprecations and shifted defaults to plan around.*
 
 - Argument sensitiveDataDiscoveryFilters: SensitiveDataDiscoveryFiltersInput added to field `Query.snapshotFilesDeltaV2`
 - Argument sort: FileResultSortInput added to field `Query.snapshotFilesDeltaV2`
@@ -14081,7 +14070,7 @@ This changelog documents the evolution of the GraphQL schema across 60 versions.
 
 ### ⚡ May Require Changes
 
-*Existing requests keep working, but behavior or defaults shifted.*
+*Your requests still work. Deprecations and shifted defaults to plan around.*
 
 - Argument workloadLevelHierarchy: WorkloadLevelHierarchy added to field `AwsNativeAccount.awsRegions`
 
@@ -14227,7 +14216,7 @@ This changelog documents the evolution of the GraphQL schema across 60 versions.
 
 ### ⚠️ Breaking Changes
 
-*Existing requests may stop working. Review these before upgrading.*
+*Requests that worked before may now fail. RSC updates automatically, so check whether your integrations use anything listed here.*
 
 4 types removed
 
@@ -14374,7 +14363,7 @@ This changelog documents the evolution of the GraphQL schema across 60 versions.
 
 ### ⚠️ Breaking Changes
 
-*Existing requests may stop working. Review these before upgrading.*
+*Requests that worked before may now fail. RSC updates automatically, so check whether your integrations use anything listed here.*
 
 - `ArchivalParameters` type removed
 - `OptionalHealthChecks` type removed
@@ -14496,7 +14485,7 @@ This changelog documents the evolution of the GraphQL schema across 60 versions.
 
 ### ⚠️ Breaking Changes
 
-*Existing requests may stop working. Review these before upgrading.*
+*Requests that worked before may now fail. RSC updates automatically, so check whether your integrations use anything listed here.*
 
 - Field `ClusterNode`.role changed type from `String`! to `ClusterNodeRole`!
 - Field `ClusterNode`.subStatus changed type from `String` to `ClusterNodeSubStatus`
@@ -14505,7 +14494,7 @@ This changelog documents the evolution of the GraphQL schema across 60 versions.
 
 ### ⚡ May Require Changes
 
-*Existing requests keep working, but behavior or defaults shifted.*
+*Your requests still work. Deprecations and shifted defaults to plan around.*
 
 - Argument awsNativeProtectionFeatures: [AwsNativeProtectionFeature!] added to field `AwsNativeAccount.isProtectable`
 - Argument awsNativeProtectionFeatures: [AwsNativeProtectionFeature!] added to field `Query.awsNativeAccounts`
@@ -14653,7 +14642,7 @@ This changelog documents the evolution of the GraphQL schema across 60 versions.
 
 ### ⚠️ Breaking Changes
 
-*Existing requests may stop working. Review these before upgrading.*
+*Requests that worked before may now fail. RSC updates automatically, so check whether your integrations use anything listed here.*
 
 50 types removed
 
@@ -14766,7 +14755,7 @@ This changelog documents the evolution of the GraphQL schema across 60 versions.
 
 ### ⚡ May Require Changes
 
-*Existing requests keep working, but behavior or defaults shifted.*
+*Your requests still work. Deprecations and shifted defaults to plan around.*
 
 - Argument filter: CustomReportsFilter added to field `Query.customReports`
 - Argument sortBy: CustomReportSortByField added to field `Query.customReports`
@@ -14894,7 +14883,7 @@ This changelog documents the evolution of the GraphQL schema across 60 versions.
 
 ### ⚠️ Breaking Changes
 
-*Existing requests may stop working. Review these before upgrading.*
+*Requests that worked before may now fail. RSC updates automatically, so check whether your integrations use anything listed here.*
 
 - `set` field removed from `GlobalSmbAuthSettings`
 - Field `CloudSpecificRegionOneof`.awsRegion changed type from `AwsRegion`! to `AwsRegion`
@@ -14904,7 +14893,7 @@ This changelog documents the evolution of the GraphQL schema across 60 versions.
 
 ### ⚡ May Require Changes
 
-*Existing requests keep working, but behavior or defaults shifted.*
+*Your requests still work. Deprecations and shifted defaults to plan around.*
 
 - Argument azureNativeProtectionFeatures: [AzureNativeProtectionFeature!] added to field `AzureNativeSubscription.isProtectable`
 - GcpNativeDisk object implements GcpNativeHierarchyObject interface
@@ -15111,7 +15100,7 @@ This changelog documents the evolution of the GraphQL schema across 60 versions.
 
 ### ⚠️ Breaking Changes
 
-*Existing requests may stop working. Review these before upgrading.*
+*Requests that worked before may now fail. RSC updates automatically, so check whether your integrations use anything listed here.*
 
 4 types removed
 
@@ -15204,7 +15193,7 @@ This changelog documents the evolution of the GraphQL schema across 60 versions.
 
 ### ⚠️ Breaking Changes
 
-*Existing requests may stop working. Review these before upgrading.*
+*Requests that worked before may now fail. RSC updates automatically, so check whether your integrations use anything listed here.*
 
 - `TaskDetailTable` type removed
 - `TaskDetailTableColumnEnum` type removed
@@ -15328,14 +15317,14 @@ This changelog documents the evolution of the GraphQL schema across 60 versions.
 
 ### ⚠️ Breaking Changes
 
-*Existing requests may stop working. Review these before upgrading.*
+*Requests that worked before may now fail. RSC updates automatically, so check whether your integrations use anything listed here.*
 
 - `UNSPECIFIED` enum value removed from enum `BackupCopyType`
 - Field `PhysicalHostMetadata`.connectionStatus changed type from `HostConnectionStatus` to `HostConnectionStatus`!
 
 ### ⚡ May Require Changes
 
-*Existing requests keep working, but behavior or defaults shifted.*
+*Your requests still work. Deprecations and shifted defaults to plan around.*
 
 - Argument includeOnlySourceSnapshots: Boolean added to field `Query.snapshotOfASnappableConnection`
 - Argument includeOnlySourceSnapshots: Boolean added to field `Query.snapshotOfSnappablesConnection`
@@ -15428,14 +15417,14 @@ This changelog documents the evolution of the GraphQL schema across 60 versions.
 
 ### ⚠️ Breaking Changes
 
-*Existing requests may stop working. Review these before upgrading.*
+*Requests that worked before may now fail. RSC updates automatically, so check whether your integrations use anything listed here.*
 
 - Input field `AddNodesToCloudClusterInput.cloudAccountId` changed type from `UUID`! to `UUID`
 - Input field `UpdateCertificateUsagesForCloudAccountInput.cloudNativeAccountId` changed type from `String`! to `String`
 
 ### ⚡ May Require Changes
 
-*Existing requests keep working, but behavior or defaults shifted.*
+*Your requests still work. Deprecations and shifted defaults to plan around.*
 
 - Argument workloadHierarchy: WorkloadLevelHierarchy added to field `Query.azureNativeRegions`
 
@@ -15589,7 +15578,7 @@ This changelog documents the evolution of the GraphQL schema across 60 versions.
 
 ### ⚠️ Breaking Changes
 
-*Existing requests may stop working. Review these before upgrading.*
+*Requests that worked before may now fail. RSC updates automatically, so check whether your integrations use anything listed here.*
 
 - Field `DataHosts`.protocol changed type from `String`! to `CloudDirectNasProtocolType`!
 - Input field `dataTypeIds` was removed from input object type `GetDataPreviewRequest`
@@ -15597,7 +15586,7 @@ This changelog documents the evolution of the GraphQL schema across 60 versions.
 
 ### ⚡ May Require Changes
 
-*Existing requests keep working, but behavior or defaults shifted.*
+*Your requests still work. Deprecations and shifted defaults to plan around.*
 
 - Input field `SendScheduledReportAsyncInput.showChartsInEmailBody` default value changed from undefined to true
 
@@ -15703,7 +15692,7 @@ This changelog documents the evolution of the GraphQL schema across 60 versions.
 
 ### ⚠️ Breaking Changes
 
-*Existing requests may stop working. Review these before upgrading.*
+*Requests that worked before may now fail. RSC updates automatically, so check whether your integrations use anything listed here.*
 
 3 types removed
 
@@ -15757,7 +15746,7 @@ This changelog documents the evolution of the GraphQL schema across 60 versions.
 
 ### ⚡ May Require Changes
 
-*Existing requests keep working, but behavior or defaults shifted.*
+*Your requests still work. Deprecations and shifted defaults to plan around.*
 
 - Argument documentTypeIds: [UUID!] added to field `Query.policyDetails`
 
@@ -16017,7 +16006,7 @@ This changelog documents the evolution of the GraphQL schema across 60 versions.
 
 ### ⚠️ Breaking Changes
 
-*Existing requests may stop working. Review these before upgrading.*
+*Requests that worked before may now fail. RSC updates automatically, so check whether your integrations use anything listed here.*
 
 13 types removed
 
@@ -16099,7 +16088,7 @@ This changelog documents the evolution of the GraphQL schema across 60 versions.
 
 ### ⚡ May Require Changes
 
-*Existing requests keep working, but behavior or defaults shifted.*
+*Your requests still work. Deprecations and shifted defaults to plan around.*
 
 - KubernetesNamespaceType object implements KubernetesLabelDescendant interface
 - Argument objectTypeFilterParams: [ManagedObjectType!] added to field `Query.globalSearchResults`
@@ -16437,14 +16426,13 @@ This changelog documents the evolution of the GraphQL schema across 60 versions.
 
 ### ⚠️ Breaking Changes
 
-*Existing requests may stop working. Review these before upgrading.*
+*Requests that worked before may now fail. RSC updates automatically, so check whether your integrations use anything listed here.*
 
 - Field `GlobalSlaReply`.backupLocationSpecs changed type from [BackupLocationSpec!]! to [BackupLocationSpec!]
-- Detected 1 breaking change
 
 ### ⚡ May Require Changes
 
-*Existing requests keep working, but behavior or defaults shifted.*
+*Your requests still work. Deprecations and shifted defaults to plan around.*
 
 - Argument backupLocationId: String added to field `AwsNativeDynamoDbTable.newestSnapshot`
 - Argument backupLocationId: String added to field `AwsNativeDynamoDbTable.oldestSnapshot`
@@ -16734,21 +16722,16 @@ This changelog documents the evolution of the GraphQL schema across 60 versions.
 
 ## July 28, 2025
 
-### ⚠️ Breaking Changes
-
-*Existing requests may stop working. Review these before upgrading.*
-
-- Enum value SnapshotQueryFilterField.IS_ARCHIVED was deprecated with reason A snapshot can potentially be uploaded to multiple archival locations. This field does not give the archival status of the snapshot - whether it is uploaded to all the archival locations or partially uploaded to a few locations. Hence, this filter field is deprecated and would be removed subsequently. Please use a combination of ARCHIVAL_LOCATION_IDS and SOURCE_SNAPSHOT_IDS fields instead.
-- Enum value SnapshotQueryFilterField.SLA_ID was deprecated with reason There is no concept of SLA ID on a snapshot. SLA is assigned to an object and snapshots are taken based on the configuration of the SLA Domain at that point of time. However, SLA configurations may change at a later point in time, without reflecting the change on the snapshot, if not retroactively assigned. Hence, this filter field is deprecated and would be removed subsequently.
-
 ### ⚡ May Require Changes
 
-*Existing requests keep working, but behavior or defaults shifted.*
+*Your requests still work. Deprecations and shifted defaults to plan around.*
 
 - Argument aggregationType: NodeStatsAggregationType added to field `Cluster.clusterNodeStats`
 - Input field `GcpCloudAccountAddManualAuthProjectInput.featuresWithPermissionGroups` default value changed from [] to undefined
 - Argument scanResultCategoriesFilter: [ScanResultCategory!] added to field `Query.policyObjs`
 - Argument scanResultErrorCodesFilter: [FlowErrorCode!] added to field `Query.policyObjs`
+- Enum value SnapshotQueryFilterField.IS_ARCHIVED was deprecated with reason A snapshot can potentially be uploaded to multiple archival locations. This field does not give the archival status of the snapshot - whether it is uploaded to all the archival locations or partially uploaded to a few locations. Hence, this filter field is deprecated and would be removed subsequently. Please use a combination of ARCHIVAL_LOCATION_IDS and SOURCE_SNAPSHOT_IDS fields instead.
+- Enum value SnapshotQueryFilterField.SLA_ID was deprecated with reason There is no concept of SLA ID on a snapshot. SLA is assigned to an object and snapshots are taken based on the configuration of the SLA Domain at that point of time. However, SLA configurations may change at a later point in time, without reflecting the change on the snapshot, if not retroactively assigned. Hence, this filter field is deprecated and would be removed subsequently.
 
 ### ✨ Additions
 
@@ -16824,11 +16807,10 @@ This changelog documents the evolution of the GraphQL schema across 60 versions.
 
 ### ⚠️ Breaking Changes
 
-*Existing requests may stop working. Review these before upgrading.*
+*Requests that worked before may now fail. RSC updates automatically, so check whether your integrations use anything listed here.*
 
 - `PHYSICAL_HOSTS` enum value removed from enum `DataViewTypeEnum`
 - Input field `GcpCloudAccountAddManualAuthProjectInput.features` changed type from [CloudAccountFeature!]! to [CloudAccountFeature!]
-- Detected 1 breaking change
 
 ### ✨ Additions
 
@@ -16945,7 +16927,7 @@ This changelog documents the evolution of the GraphQL schema across 60 versions.
 
 ### ⚠️ Breaking Changes
 
-*Existing requests may stop working. Review these before upgrading.*
+*Requests that worked before may now fail. RSC updates automatically, so check whether your integrations use anything listed here.*
 
 - Field `DlpConfig`.policies changed type from [String!] to [String!]!
 - Field `DlpConfig`.serviceAccountId changed type from `String` to `String`!
@@ -17105,14 +17087,13 @@ This changelog documents the evolution of the GraphQL schema across 60 versions.
 
 ### ⚠️ Breaking Changes
 
-*Existing requests may stop working. Review these before upgrading.*
+*Requests that worked before may now fail. RSC updates automatically, so check whether your integrations use anything listed here.*
 
 - `dummyFieldWithAdminOnlyTag` field removed from `Query`
-- Detected 1 breaking change
 
 ### ⚡ May Require Changes
 
-*Existing requests keep working, but behavior or defaults shifted.*
+*Your requests still work. Deprecations and shifted defaults to plan around.*
 
 - Argument workloadHierarchy: WorkloadLevelHierarchy added to field `Query.azureNativeSubscription`
 
