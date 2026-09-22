@@ -49,8 +49,18 @@ def run_graphql_inspector_diff(old_schema, new_schema):
             str(old_schema), str(new_schema)
         ], capture_output=True, text=True)
 
-        # GraphQL Inspector returns exit code 1 when breaking changes are found
-        # This is normal behavior, not an error
+        # GraphQL Inspector returns exit code 1 when breaking changes are found,
+        # which is normal. It ALSO returns 1 when it cannot load a schema, so the
+        # exit code alone cannot distinguish success from failure. Without this
+        # check a load failure gets written into the published changelog as the
+        # body of every release, and CI reports success.
+        combined = (result.stdout or '') + (result.stderr or '')
+        if 'AggregateError' in combined or 'Failed to find any GraphQL type definitions' in combined:
+            print(f"ERROR: graphql-inspector could not load a schema comparing "
+                  f"{old_schema} -> {new_schema}", file=sys.stderr)
+            print(combined[:800], file=sys.stderr)
+            return None
+
         if result.returncode in [0, 1]:
             return result.stdout  # GraphQL Inspector outputs to stdout
         else:
