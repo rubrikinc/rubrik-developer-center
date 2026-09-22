@@ -4,7 +4,7 @@ Before Rubrik can discover and protect workloads on a Windows or Linux physical 
 
 Note
 
-If you're registering RBS on a VMware vSphere VM, see [VMware vSphere](https://developer.rubrik.com/Rubrik-Security-Cloud-API/Data-Protection/Data-Center/VMware-vSphere/#register-rbs-on-a-vm). For Nutanix AHV VMs, see [Nutanix AHV](https://developer.rubrik.com/Rubrik-Security-Cloud-API/Data-Protection/Data-Center/Nutanix-AHV/#register-rbs-on-a-vm).
+If you're registering RBS on a VMware vSphere VM, see [VMware vSphere](https://developer.rubrik.com/Rubrik-Security-Cloud-API/Data-Protection/Data-Center/VMware-vSphere/#register-the-rubrik-backup-service-rbs). For Nutanix AHV VMs, see [Nutanix AHV](https://developer.rubrik.com/Rubrik-Security-Cloud-API/Data-Protection/Data-Center/Nutanix-AHV/#register-the-rubrik-backup-service-rbs).
 
 ## Prerequisites
 
