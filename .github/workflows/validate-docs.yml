@@ -1,0 +1,94 @@
+name: Validate Docs
+
+# Two checks on the documentation itself, deliberately at different severities.
+#
+#   links  — BLOCKING. A broken internal link or anchor is a 404 for a reader,
+#            mkdocs already resolves every one at build time, and the tree is
+#            clean today, so there is no backlog to grandfather.
+#
+#   prose  — REPORT ONLY. Vale is configured in .vale.ini with write-good,
+#            proselint, and Microsoft, but has never actually run, so the
+#            existing findings are unknown and almost certainly large. Blocking
+#            on it now would stop all work. Read the output for a while, tune
+#            the rules, then decide what is worth enforcing.
+
+on:
+  pull_request:
+    paths:
+      - "docs/**"
+      - "mkdocs.yml"
+      - ".vale.ini"
+      - "styles/**"
+      - ".github/workflows/validate-docs.yml"
+  push:
+    branches:
+      - main
+    paths:
+      - "docs/**"
+      - "mkdocs.yml"
+      - ".vale.ini"
+      - "styles/**"
+      - ".github/workflows/validate-docs.yml"
+  workflow_dispatch:
+
+jobs:
+  links:
+    name: Links and anchors (blocking)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          # git-revision-date-localized reads commit history for page dates.
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+          cache: pip
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      # --strict promotes mkdocs warnings to errors. The validation block in
+      # mkdocs.yml decides which conditions warn in the first place; broken
+      # links and anchors are among them.
+      - name: Build with warnings as errors
+        run: mkdocs build --strict --site-dir /tmp/site
+
+      - name: Report site size
+        # The deploy ceiling is 10GB and the site sits near 430MB. A sudden jump
+        # usually means generated pages were added back into the nav.
+        run: |
+          SIZE=$(du -sm /tmp/site | cut -f1)
+          echo "Built site: ${SIZE} MB"
+          if [ "$SIZE" -gt 2000 ]; then
+            echo "::warning::Site is ${SIZE}MB, well above the usual ~430MB. Check whether generated pages re-entered the nav; the GitHub Pages deploy limit is 10GB."
+          fi
+
+  prose:
+    name: Writing style (report only)
+    runs-on: ubuntu-latest
+    continue-on-error: true
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Vale
+        uses: errata-ai/vale-action@reviewdog
+        with:
+          # Authored guides only. The API reference is generated from schema
+          # descriptions, so style findings there belong upstream in the schema,
+          # not in this repo.
+          files: |
+            docs/index.md
+            docs/Rubrik-Security-Cloud-API/Data-Protection
+            docs/Rubrik-Security-Cloud-API/SaaS-App-Protection
+            docs/Rubrik-Security-Cloud-API/Threat-Analytics
+            docs/Rubrik-Security-Cloud-API/Observability
+            docs/Rubrik-Security-Cloud-API/System-Settings
+            docs/SDKs-and-Tools
+            docs/Integrations
+            docs/api-support
+          fail_on_error: false
+          reporter: github-pr-check
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
