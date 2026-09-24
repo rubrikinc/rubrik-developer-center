@@ -7,6 +7,21 @@ directly from it. One endpoint serves all of it:
 POST https://<INSTANCE>.my.rubrik.com/api/graphql
 ```
 
+## Search the schema
+
+<input type="text" id="schema-search-input" placeholder="Search 10,002 queries, mutations, and types by name or description..." autocomplete="off">
+<div id="schema-search-filters">
+<label class="schema-search-filter"><input type="checkbox" value="query" checked><span>Queries</span></label>
+<label class="schema-search-filter"><input type="checkbox" value="mutation" checked><span>Mutations</span></label>
+<label class="schema-search-filter"><input type="checkbox" value="object"><span>Objects</span></label>
+<label class="schema-search-filter"><input type="checkbox" value="input"><span>Inputs</span></label>
+<label class="schema-search-filter"><input type="checkbox" value="enum"><span>Enums</span></label>
+<label class="schema-search-filter"><input type="checkbox" value="interface"><span>Interfaces</span></label>
+<label class="schema-search-filter"><input type="checkbox" value="union"><span>Unions</span></label>
+</div>
+<span id="schema-search-status"></span>
+<div id="schema-search-results"></div>
+
 <div class="grid cards" markdown>
 
 -   :material-database-search:{ .lg .middle } __Queries__
@@ -46,10 +61,10 @@ you already know the name:
 | the `AwsNativeS3Bucket` object | [`types/objects/AwsNativeS3Bucket/`](types/objects/AwsNativeS3Bucket.md) |
 | the `SlaAssignTypeEnum` enum | [`types/enums/SlaAssignTypeEnum/`](types/enums/SlaAssignTypeEnum.md) |
 
-!!! tip "Reference pages are not in site search"
-    There are over ten thousand of them, so they are excluded from the search
-    index to keep search useful for the guides. Use the alphabetical indexes
-    above, or guess the URL.
+!!! tip "Reference pages are not in the site's built-in search"
+    There are over ten thousand of them, so they are excluded from that index
+    to keep it useful for the guides. Use the schema search above instead — it
+    covers the same content — or the alphabetical indexes, or guess the URL.
 
 ## Tracking changes
 
