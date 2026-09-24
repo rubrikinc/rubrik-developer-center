@@ -76,6 +76,7 @@ extra_css:
   - css/extra.css
 extra_javascript:
   - javascripts/extra.js
+  - javascripts/schema-search.js
 extra:
   status:
     beta: Beta

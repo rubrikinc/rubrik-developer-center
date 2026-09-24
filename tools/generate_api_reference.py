@@ -929,6 +929,21 @@ directly from it. One endpoint serves all of it:
 POST https://<INSTANCE>.my.rubrik.com/api/graphql
 ```
 
+## Search the schema
+
+<input type="text" id="schema-search-input" placeholder="Search {n_queries + n_mutations + n_types:,} queries, mutations, and types by name or description..." autocomplete="off">
+<div id="schema-search-filters">
+<label class="schema-search-filter"><input type="checkbox" value="query" checked><span>Queries</span></label>
+<label class="schema-search-filter"><input type="checkbox" value="mutation" checked><span>Mutations</span></label>
+<label class="schema-search-filter"><input type="checkbox" value="object"><span>Objects</span></label>
+<label class="schema-search-filter"><input type="checkbox" value="input"><span>Inputs</span></label>
+<label class="schema-search-filter"><input type="checkbox" value="enum"><span>Enums</span></label>
+<label class="schema-search-filter"><input type="checkbox" value="interface"><span>Interfaces</span></label>
+<label class="schema-search-filter"><input type="checkbox" value="union"><span>Unions</span></label>
+</div>
+<span id="schema-search-status"></span>
+<div id="schema-search-results"></div>
+
 <div class="grid cards" markdown>
 
 -   :material-database-search:{{ .lg .middle }} __Queries__
@@ -968,10 +983,10 @@ you already know the name:
 | the `AwsNativeS3Bucket` object | [`types/objects/AwsNativeS3Bucket/`](types/objects/AwsNativeS3Bucket.md) |
 | the `SlaAssignTypeEnum` enum | [`types/enums/SlaAssignTypeEnum/`](types/enums/SlaAssignTypeEnum.md) |
 
-!!! tip "Reference pages are not in site search"
-    There are over ten thousand of them, so they are excluded from the search
-    index to keep search useful for the guides. Use the alphabetical indexes
-    above, or guess the URL.
+!!! tip "Reference pages are not in the site's built-in search"
+    There are over ten thousand of them, so they are excluded from that index
+    to keep it useful for the guides. Use the schema search above instead — it
+    covers the same content — or the alphabetical indexes, or guess the URL.
 
 ## Tracking changes
 
@@ -1003,6 +1018,55 @@ shell.
 # ---------------------------------------------------------------------------
 # File I/O
 # ---------------------------------------------------------------------------
+
+def build_search_index(schema, comments: dict[str, str], canonical: dict) -> list[dict]:
+    """Compact index of every query/mutation/type for client-side search.
+
+    Kept to name + kind + one-line description + relative page URL so it stays
+    small enough to fetch in the browser (unlike the full schema).
+    """
+    entries: list[dict] = []
+
+    def add(name: str, kind: str, comment_key: str, url: str) -> None:
+        desc = comments.get(comment_key, "")
+        if len(desc) > 200:
+            desc = desc[:197].rstrip() + "..."
+        entries.append({"n": name, "k": kind, "d": desc, "u": url})
+
+    if schema.query_type:
+        for name in schema.query_type.fields:
+            add(name, "query", f"Query.{name}", f"queries/{name}/")
+
+    if schema.mutation_type:
+        for name in schema.mutation_type.fields:
+            add(name, "mutation", f"Mutation.{name}", f"mutations/{name}/")
+
+    categories = [
+        ("objects",    "object",    GraphQLObjectType),
+        ("inputs",     "input",     GraphQLInputObjectType),
+        ("enums",      "enum",      GraphQLEnumType),
+        ("interfaces", "interface", GraphQLInterfaceType),
+        ("unions",     "union",     GraphQLUnionType),
+        # Scalars deliberately excluded: only 7 of them, not worth a filter
+        # chip, and an indexed entry with no chip to select it is unreachable.
+    ]
+    skip_names = BUILTIN_SCALARS | {"Query", "Mutation", "Subscription"}
+
+    for cat, kind, cls in categories:
+        names = sorted(
+            n for n, t in schema.type_map.items()
+            if isinstance(t, cls) and not n.startswith("__") and n not in skip_names
+        )
+        for name in names:
+            # Only canonical names get their own page (see generate_type_page
+            # call site) — non-canonical case-insensitive collisions redirect
+            # to the canonical file, so index only what's actually linkable.
+            if canonical.get(name, name) != name:
+                continue
+            add(name, kind, name, f"types/{cat}/{name}/")
+
+    return entries
+
 
 def smart_write(path: Path, content: str, dry_run: bool) -> bool:
     """Write file only if content has changed.  Returns True if written."""
@@ -1167,6 +1231,17 @@ def main() -> int:
                 print(f"   {i}/{len(names)}")
             page = generate_type_page(name, schema.type_map[name], schema, comments, canonical, reverse_index)
             w(cat_dir / f"{name}.md", page)
+
+    # ── Search index ─────────────────────────────────────────────────────────
+    # Lightweight (name/kind/description/url only) so the browser can fetch it
+    # directly — the full-schema indexes in rsc-client (mcp_*.json, ~15MB) are
+    # built for server-side BM25 search and are too large/differently-shaped
+    # for this. Regenerated every time the API Reference is, so it never
+    # drifts from the schema.
+    print("🔎 Building search index...")
+    search_index = build_search_index(schema, comments, canonical)
+    w(output_dir / "search-index.json", json.dumps(search_index, separators=(",", ":")))
+    print(f"   {len(search_index)} entries")
 
     # ── Top-level .pages for API-Reference/ ──────────────────────────────────
     # queries/, mutations/, and types/ are deliberately NOT listed here, and are
