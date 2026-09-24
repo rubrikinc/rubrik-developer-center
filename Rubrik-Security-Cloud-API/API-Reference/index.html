@@ -1769,6 +1769,17 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#search-the-schema" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Search the schema
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#guess-the-url" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1823,6 +1834,20 @@
 directly from it. One endpoint serves all of it:</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>POST https://&lt;INSTANCE&gt;.my.rubrik.com/api/graphql
 </span></code></pre></div>
+<h2 id="search-the-schema">Search the schema</h2>
+<p><input type="text" id="schema-search-input" placeholder="Search 10,002 queries, mutations, and types by name or description..." autocomplete="off"></p>
+<div id="schema-search-filters">
+<label class="schema-search-filter"><input type="checkbox" value="query" checked><span>Queries</span></label>
+<label class="schema-search-filter"><input type="checkbox" value="mutation" checked><span>Mutations</span></label>
+<label class="schema-search-filter"><input type="checkbox" value="object"><span>Objects</span></label>
+<label class="schema-search-filter"><input type="checkbox" value="input"><span>Inputs</span></label>
+<label class="schema-search-filter"><input type="checkbox" value="enum"><span>Enums</span></label>
+<label class="schema-search-filter"><input type="checkbox" value="interface"><span>Interfaces</span></label>
+<label class="schema-search-filter"><input type="checkbox" value="union"><span>Unions</span></label>
+</div>
+<p><span id="schema-search-status"></span></p>
+<div id="schema-search-results"></div>
+
 <div class="grid cards">
 <ul>
 <li>
@@ -1874,10 +1899,10 @@ you already know the name:</p>
 </tbody>
 </table>
 <div class="admonition tip">
-<p class="admonition-title">Reference pages are not in site search</p>
-<p>There are over ten thousand of them, so they are excluded from the search
-index to keep search useful for the guides. Use the alphabetical indexes
-above, or guess the URL.</p>
+<p class="admonition-title">Reference pages are not in the site's built-in search</p>
+<p>There are over ten thousand of them, so they are excluded from that index
+to keep it useful for the guides. Use the schema search above instead — it
+covers the same content — or the alphabetical indexes, or guess the URL.</p>
 </div>
 <h2 id="tracking-changes">Tracking changes</h2>
 <p>The schema ships roughly weekly, and these pages are regenerated with it.</p>

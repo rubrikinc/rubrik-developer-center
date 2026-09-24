@@ -6,6 +6,10 @@ Every query, mutation, and type in the Rubrik Security Cloud schema, generated d
 POST https://<INSTANCE>.my.rubrik.com/api/graphql
 ```
 
+## Search the schema
+
+Queries Mutations Objects Inputs Enums Interfaces Unions
+
 - **Queries**
 
   ______________________________________________________________________
@@ -40,9 +44,9 @@ Pages are named after the thing they document, so you can skip the indexes when 
 | the `AwsNativeS3Bucket` object      | [`types/objects/AwsNativeS3Bucket/`](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AwsNativeS3Bucket/index.md) |
 | the `SlaAssignTypeEnum` enum        | [`types/enums/SlaAssignTypeEnum/`](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/SlaAssignTypeEnum/index.md)     |
 
-Reference pages are not in site search
+Reference pages are not in the site's built-in search
 
-There are over ten thousand of them, so they are excluded from the search index to keep search useful for the guides. Use the alphabetical indexes above, or guess the URL.
+There are over ten thousand of them, so they are excluded from that index to keep it useful for the guides. Use the schema search above instead — it covers the same content — or the alphabetical indexes, or guess the URL.
 
 ## Tracking changes
 
