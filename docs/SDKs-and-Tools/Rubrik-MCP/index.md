@@ -3,7 +3,9 @@ title: Rubrik MCP Server
 icon: material/robot-outline
 ---
 
-The Rubrik MCP Server exposes Rubrik Security Cloud (RSC) to AI agents through the [Model Context Protocol](https://modelcontextprotocol.io). Once connected, an AI agent can describe tasks in plain language and translate them into GraphQL operations against your RSC tenant — querying workloads, checking compliance, triggering backups, and more.
+The Rubrik MCP Server exposes Rubrik Security Cloud (RSC) to AI agents through the [Model Context Protocol](https://modelcontextprotocol.io). It's built for Rubrik admins and automation teams writing automation against Rubrik, and runs locally (on your own workstation or on an agent's server) alongside the AI agent that connects to it.
+
+Once connected, an agent can describe tasks in plain language and translate them into GraphQL operations against your RSC tenant: querying workloads, checking compliance, triggering backups, and more.
 
 - **Schema-aware** — the server exposes the full RSC GraphQL schema so agents can discover and validate operations before executing them.
 - **Write-safe** — write tools can be restricted via `mcp-policy.json`; disabled tools return a reviewed Python script instead of executing directly.
