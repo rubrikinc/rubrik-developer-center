@@ -193,6 +193,14 @@
   --aura-chip-border-hover: rgba(9, 168, 184, 0.56);
   --aura-chip-bg-hover: rgba(9, 168, 184, 0.08);
   --aura-chip-bg-active: rgba(77, 210, 210, 0.16);
+
+  /* Aura chipChipRowInput* (BrightTheme) - the ToggleChip/InputChip variant,
+     distinct from chipChipRow* above. Border stays grey until hover/selected,
+     which both go solid teal4; the fill is blue-tinted (blue2), not teal. */
+  --aura-chip-input-border-default: rgba(217, 221, 220, 0.56);
+  --aura-chip-input-border-active: var(--aura-teal-4);
+  --aura-chip-input-bg-hover: rgba(47, 202, 255, 0.08);
+  --aura-chip-input-bg-active: rgba(47, 202, 255, 0.16);
 }
 
 /* ==========================================================================
@@ -281,6 +289,13 @@
   --aura-chip-border-hover: rgba(47, 202, 255, 0.56);
   --aura-chip-bg-hover: rgba(47, 202, 255, 0.08);
   --aura-chip-bg-active: rgba(47, 202, 255, 0.16);
+
+  /* Aura chipChipRowInput* (DarkTheme) - border tokens match Bright; only the
+     fill color source swaps from blue2 to blue1. */
+  --aura-chip-input-border-default: rgba(217, 221, 220, 0.56);
+  --aura-chip-input-border-active: var(--aura-teal-4);
+  --aura-chip-input-bg-hover: rgba(105, 224, 255, 0.08);
+  --aura-chip-input-bg-active: rgba(105, 224, 255, 0.16);
 }
 
 /* ==========================================================================
@@ -736,4 +751,151 @@ td {
 :focus-visible {
   outline: 2px solid var(--aura-teal-4);
   outline-offset: 2px;
+}
+
+/* Schema search widget (API Reference index page) */
+#schema-search-input {
+  width: 100%;
+  padding: 10px 14px;
+  font-family: var(--app-font);
+  font-size: 0.9rem;
+  color: var(--aura-text-strong);
+  background-color: var(--aura-surface-primary);
+  border: 1px solid var(--aura-border-moderate);
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+#schema-search-input:focus {
+  outline: none;
+  border-color: var(--aura-teal-4);
+  box-shadow: 0 0 0 3px rgba(9, 168, 184, 0.16);
+}
+
+#schema-search-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-top: 0.6rem;
+}
+
+.schema-search-filter {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  height: 24px;
+  padding: 0 12px;
+  font-family: var(--app-font);
+  font-size: 0.78rem;
+  color: var(--aura-text-strong);
+  background-color: transparent;
+  border: 1px solid var(--aura-chip-input-border-default);
+  border-radius: 4px;
+  cursor: pointer;
+  user-select: none;
+  transition: background-color 0.12s ease, border-color 0.12s ease;
+}
+
+/* Real checkbox stays in the DOM (native semantics, keyboard toggling,
+   change events) but is visually replaced by the chip around it. */
+.schema-search-filter input[type="checkbox"] {
+  position: absolute;
+  inset: 0;
+  margin: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.schema-search-filter:hover {
+  border-color: var(--aura-chip-input-border-active);
+  background-color: var(--aura-chip-input-bg-hover);
+}
+
+.schema-search-filter:has(input:checked) {
+  border-color: var(--aura-chip-input-border-active);
+  background-color: var(--aura-chip-input-bg-active);
+}
+
+.schema-search-filter:has(input:focus-visible) {
+  outline: 2px solid var(--aura-teal-4);
+  outline-offset: 2px;
+}
+
+#schema-search-status {
+  display: block;
+  margin-top: 0.4rem;
+  font-size: 0.8rem;
+  color: var(--aura-text-weak);
+}
+
+#schema-search-results {
+  margin-top: 0.6rem;
+  max-height: 22rem;
+  overflow-y: auto;
+  border: 1px solid var(--aura-border-moderate);
+  border-radius: 8px;
+}
+
+#schema-search-results:empty {
+  border: none;
+}
+
+.schema-search-result {
+  display: flex;
+  align-items: baseline;
+  gap: 0.6rem;
+  padding: 0.5rem 0.8rem;
+  border-bottom: 1px solid var(--aura-border-moderate);
+  text-decoration: none;
+  color: var(--aura-text-moderate);
+}
+
+.schema-search-result:last-child {
+  border-bottom: none;
+}
+
+.schema-search-result:hover {
+  background-color: rgba(9, 168, 184, 0.06);
+}
+
+.schema-search-kind {
+  flex: none;
+  font-family: var(--app-font);
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  padding: 0.1rem 0.4rem;
+  border-radius: 999px;
+  color: var(--aura-teal-6);
+  background-color: rgba(9, 168, 184, 0.12);
+}
+
+[data-md-color-scheme="slate"] .schema-search-kind {
+  color: var(--aura-teal-2);
+  background-color: rgba(47, 202, 255, 0.16);
+}
+
+.schema-search-kind--mutation {
+  color: var(--aura-violet-6);
+  background-color: rgba(155, 121, 235, 0.14);
+}
+
+[data-md-color-scheme="slate"] .schema-search-kind--mutation {
+  color: var(--aura-periwinkle-3);
+  background-color: rgba(161, 161, 255, 0.18);
+}
+
+.schema-search-name {
+  flex: none;
+  font-weight: 600;
+  color: var(--aura-text-strong);
+}
+
+.schema-search-desc {
+  color: var(--aura-text-weak);
+  font-size: 0.85rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
