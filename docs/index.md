@@ -9,6 +9,37 @@ hide:
 
 Every workload, policy, event, and recovery in Rubrik Security Cloud is reachable through a single GraphQL API. Pick a task below, or get a token and make your first call.
 
+<div class="mcp-hero" markdown>
+
+<div class="mcp-hero__pitch" markdown>
+
+<span class="mcp-hero__eyebrow">:material-robot-outline: New: Rubrik MCP Server</span>
+
+## Ask Rubrik Security Cloud in plain language
+
+Connect Claude, Copilot, or any MCP-compatible agent to your RSC tenant. The agent discovers the API for you, so you describe the task instead of writing the query.
+
+```bash
+pip install rubrik-mcp
+```
+
+[Get started](SDKs-and-Tools/Rubrik-MCP/index.md){ .md-button .md-button--primary }
+[What it can do](SDKs-and-Tools/Rubrik-MCP/index.md#what-you-can-do){ .md-button }
+
+</div>
+
+<div class="mcp-hero__prompts" markdown>
+
+<span class="mcp-hero__label">Try asking</span>
+
+<p class="mcp-hero__prompt">Show me all workloads that missed a backup in the last 24 hours.</p>
+<p class="mcp-hero__prompt">Which VMs are out of compliance with the Gold SLA?</p>
+<p class="mcp-hero__prompt">List all clusters and their storage runway.</p>
+
+</div>
+
+</div>
+
 <div class="grid cards" markdown>
 
 -   :material-rocket-launch-outline:{ .lg .middle } __Start here__
