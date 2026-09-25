@@ -1,6 +1,6 @@
 # UpdateClusterDefaultAddressInput
 
-Object containing the new address of the Rubrik cluster.
+Input to update the default address of a Rubrik cluster.
 
 ## Fields
 

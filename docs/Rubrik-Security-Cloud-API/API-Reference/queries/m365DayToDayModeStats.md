@@ -1,6 +1,6 @@
 # m365DayToDayModeStats
 
-Returns the statistics of an M365 organization product in day-to-day mode.
+Returns the day-to-day mode statistics for a workload type of an M365 organization.
 
 ## Arguments
 

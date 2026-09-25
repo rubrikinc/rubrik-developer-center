@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # RSC_TOKEN="YOUR_RSC_ACCESS_TOKEN"
-query="query { cloudDirectNasShares(sortBy: NAME sortOrder: ASC filter: [ {field: IS_RELIC texts: \\\"false\\\"} {field: IS_REPLICATED texts: \\\"false\\\"} ]) { nodes { id name protocol ncdPolicyName cloudDirectId isRelic isStale totalSnapshots cloudDirectNasSystem { id name vendorType } cloudDirectNasNamespace { id name } effectiveSlaDomain { id name } } pageInfo { endCursor hasNextPage } } }"
+query="query { cloudDirectNasShares( sortBy: NAME sortOrder: ASC filter: [ { field: IS_RELIC, texts: \\\"false\\\" } { field: IS_REPLICATED, texts: \\\"false\\\" } ] ) { nodes { id name protocol ncdPolicyName cloudDirectId isStale totalSnapshots cloudDirectNasSystem { id name vendorType } cloudDirectNasNamespace { id name } effectiveSlaDomain { id name } } pageInfo { endCursor hasNextPage } } }"
 
 # Execute the GraphQL query with curl
 curl -X POST \

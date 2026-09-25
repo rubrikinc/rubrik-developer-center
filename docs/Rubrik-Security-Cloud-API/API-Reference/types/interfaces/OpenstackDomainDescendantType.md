@@ -48,4 +48,6 @@ OpenStack Domain descendant.
 
 ## Implemented By
 
+- [OpenstackImage](../objects/OpenstackImage.md)
+- [OpenstackProject](../objects/OpenstackProject.md)
 - [OpenstackVirtualMachine](../objects/OpenstackVirtualMachine.md)

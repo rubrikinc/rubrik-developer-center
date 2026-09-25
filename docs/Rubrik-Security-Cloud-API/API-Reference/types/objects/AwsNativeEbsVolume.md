@@ -2,7 +2,7 @@
 
 AWS native EBS volume.
 
-**Implements:** [PolarisHierarchyObject](../interfaces/PolarisHierarchyObject.md), [PolarisHierarchySnappable](../interfaces/PolarisHierarchySnappable.md), [HierarchyObject](../interfaces/HierarchyObject.md), [HierarchySnappable](../interfaces/HierarchySnappable.md), [AwsNativeAccountLogicalChildType](../interfaces/AwsNativeAccountLogicalChildType.md), [AwsNativeAccountDescendantType](../interfaces/AwsNativeAccountDescendantType.md), [AwsNativeHierarchyObject](../interfaces/AwsNativeHierarchyObject.md)
+**Implements:** [PolarisHierarchyObject](../interfaces/PolarisHierarchyObject.md), [HierarchyObject](../interfaces/HierarchyObject.md), [PolarisHierarchySnappable](../interfaces/PolarisHierarchySnappable.md), [HierarchySnappable](../interfaces/HierarchySnappable.md), [AwsNativeAccountLogicalChildType](../interfaces/AwsNativeAccountLogicalChildType.md), [AwsNativeAccountDescendantType](../interfaces/AwsNativeAccountDescendantType.md), [AwsNativeHierarchyObject](../interfaces/AwsNativeHierarchyObject.md)
 
 ## Fields
 
@@ -19,7 +19,7 @@ AWS native EBS volume.
 | awsNativeAccount | [AwsNativeAccount](AwsNativeAccount.md)! | AWS Native account associated with the EBS Volumes. |
 | awsNativeAccountDetails | [AwsNativeAccountDetails](AwsNativeAccountDetails.md) | AWS native account details. |
 | awsNativeAccountName | String! | Name for the AWS account. |
-| cloudNativeId | String! | AWS Native ID of EBS volume. |
+| cloudNativeId | String! | AWS Native ID of the object. |
 | configuredSlaDomain | [SlaDomain](../interfaces/SlaDomain.md)! | SLA Domain configured for the hierarchy object. |
 | effectiveRetentionSlaDomain | [SlaDomain](../interfaces/SlaDomain.md) | Effective retention of the SLA Domain of the hierarchy object. |
 | effectiveSlaDomain | [SlaDomain](../interfaces/SlaDomain.md)! | Effective SLA Domain of the hierarchy object. |
@@ -31,7 +31,7 @@ AWS native EBS volume.
 | isIndexingEnabled | Boolean! | Specifies whether file indexing is enabled for this EBS volume or not. When enabled, Rubrik scans the file structure within the EBS volume in a protected environment, where only the metadata such as folder structure, file names, and file sizes is accessible to Rubrik. |
 | isMarketplace | Boolean! | Whether the volume image is marketplace image. |
 | isProtectable | Boolean! | Indicates whether this EBS volume is protectable or not. |
-| isRelic | Boolean! | Whether the volume is relic. |
+| isRelic | Boolean! | Whether the object is a relic. |
 | logicalPath | [[PathNode](PathNode.md)!]! | Sequential list of the logical ancestors of this object. |
 | name | String! | Name of the hierarchy object. |
 | nativeName | String! | AWS Native name of the object. |
@@ -45,7 +45,7 @@ AWS native EBS volume.
 | onDemandSnapshotCount | Int! | The number of on-demand snapshots. |
 | outpostArn | String! | ARN of the AWS Outpost this volume resides on, if applicable. |
 | physicalPath | [[PathNode](PathNode.md)!]! | Sequential list of the physical ancestors of this object. |
-| region | [AwsNativeRegion](../enums/AwsNativeRegion.md)! | Name of the region. Some examples are: US_EAST_1, AP_EAST_1. This field cannot be null or empty string and will be mapped directly to available regions for EBS volume on cloud(AWS). For more information, see https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-regions-availability-zones.html#concepts-available-regions. |
+| region | [AwsNativeRegion](../enums/AwsNativeRegion.md)! | The AWS region to which the object belongs. |
 | rscNativeObjectPendingSla | [CompactSlaDomain](CompactSlaDomain.md) | SLA Domain assignment which is pending on the Rubrik Security Cloud native objects. |
 | rscPendingObjectPauseAssignment | [PendingObjectPauseAssignmentStatus](../enums/PendingObjectPauseAssignmentStatus.md) | Object pause pending assignment details for RSC objects. |
 | securityMetadata | [SecurityMetadata](SecurityMetadata.md) | Security posture metadata. |
@@ -54,9 +54,9 @@ AWS native EBS volume.
 | slaPauseStatus | Boolean! | Pause status of the effective SLA Domain of the hierarchy object. |
 | snapshotConnection | [PolarisSnapshotConnection](PolarisSnapshotConnection.md) | The list of snapshots taken for this workload. |
 | snapshotDistribution | [SnapshotDistribution](SnapshotDistribution.md)! | Distribution of the snapshots of the hierarchy object. |
-| snapshotGroupByConnection | [PolarisSnapshotGroupByConnection](PolarisSnapshotGroupByConnection.md) | GroupBy connection for the snapshots of this workload. |
-| snapshotGroupByNewConnection | [PolarisSnapshotGroupByNewConnection](PolarisSnapshotGroupByNewConnection.md) | GroupBy connection for the snapshots of this workload. |
-| tags | [[Tag](Tag.md)!]! | List of tags associated with volume. |
+| snapshotGroupByConnection | [PolarisSnapshotGroupByConnection](PolarisSnapshotGroupByConnection.md) | Group-by connection for the snapshots of this workload. |
+| snapshotGroupByNewConnection | [PolarisSnapshotGroupByNewConnection](PolarisSnapshotGroupByNewConnection.md) | Group-by connection for the snapshots of this workload. |
+| tags | [[Tag](Tag.md)!]! | List of tags that are assigned to the object. |
 | volumeName | String! | Name of volume on AWS. Name is not necessarily unique for different volumes. |
 | volumeNativeId | String! | AWS Native ID of EBS volume. |
 | volumeType | String! | AWS Native EBS volume type. Some examples are: g3, io2. This field cannot be null or empty string and will be mapped directly to available EBS volumes on cloud(AWS). For more information, see https://aws.amazon.com/ebs/volume-types. |

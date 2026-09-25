@@ -1,0 +1,23 @@
+query {
+  targetMapping(targetMappingId: "a1b2c3d4-e5f6-7890-abcd-ef1234567890") {
+    id
+    name
+    groupType
+    targetType
+    connectionStatus {
+      status
+    }
+    targets {
+      ... on RubrikManagedAwsTarget {
+        id
+        name
+        cluster {
+          id
+          name
+        }
+        status
+        isActive
+      }
+    }
+  }
+}

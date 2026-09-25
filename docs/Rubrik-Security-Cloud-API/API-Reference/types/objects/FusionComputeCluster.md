@@ -2,7 +2,7 @@
 
 FusionCompute cluster.
 
-**Implements:** [HierarchyObject](../interfaces/HierarchyObject.md), [CdmHierarchyObject](../interfaces/CdmHierarchyObject.md), [FusionComputeVrmDescendant](../interfaces/FusionComputeVrmDescendant.md), [FusionComputeSiteDescendant](../interfaces/FusionComputeSiteDescendant.md), [FusionComputeVrmPhysicalChildType](../interfaces/FusionComputeVrmPhysicalChildType.md), [FusionComputeSitePhysicalChildType](../interfaces/FusionComputeSitePhysicalChildType.md)
+**Implements:** [CdmHierarchyObject](../interfaces/CdmHierarchyObject.md), [HierarchyObject](../interfaces/HierarchyObject.md), [FusionComputeVrmDescendant](../interfaces/FusionComputeVrmDescendant.md), [FusionComputeSiteDescendant](../interfaces/FusionComputeSiteDescendant.md), [FusionComputeVrmPhysicalChildType](../interfaces/FusionComputeVrmPhysicalChildType.md), [FusionComputeSitePhysicalChildType](../interfaces/FusionComputeSitePhysicalChildType.md)
 
 ## Fields
 

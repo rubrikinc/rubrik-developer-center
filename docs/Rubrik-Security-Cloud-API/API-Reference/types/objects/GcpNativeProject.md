@@ -19,6 +19,7 @@ Represents a GCP project.
 | effectiveRetentionSlaDomain | [SlaDomain](../interfaces/SlaDomain.md) | Effective retention of the SLA Domain of the hierarchy object. |
 | effectiveSlaDomain | [SlaDomain](../interfaces/SlaDomain.md)! | Effective SLA Domain of the hierarchy object. |
 | effectiveSlaSourceObject | [PathNode](PathNode.md) | Path node of the effective SLA Domain source. |
+| enabledFeatures | [[CloudAccountEnabledFeature](CloudAccountEnabledFeature.md)!]! | List of protection features enabled for the GCP project. |
 | gcpNativeGceInstanceConnection | [GcpNativeGceInstanceConnection](GcpNativeGceInstanceConnection.md)! | List of all GCE instances under this GCP project. |
 | id | [UUID](../scalars/UUID.md)! | ID of the hierarchy object. |
 | isRelic | Boolean! | Whether the object is a relic. |

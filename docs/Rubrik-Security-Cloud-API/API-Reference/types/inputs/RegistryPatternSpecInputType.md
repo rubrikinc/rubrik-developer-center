@@ -6,10 +6,13 @@ RegistryPatternSpec describes one Windows registry key search pattern and option
 
 | Field | Type | Description |
 |-------|------|-------------|
-| keyPattern | String! | Full HKLM\\...\\* or HKCU\\...\\* key path, validated on intake. |
+| hiveRoot | [RegistryHiveRoot](../enums/RegistryHiveRoot.md) | Structured registry root. When set, keyPath holds the root-relative path and keyPattern is a derived mirror. Takes precedence over keyPattern. |
+| keyPath | String | Root-relative key path; required when hiveRoot is set. |
+| keyPattern | String | Deprecated: use hiveRoot + keyPath for new hunts. Combined HKLM\...\* or HKCU\...\* key path; kept as a denormalized mirror when hiveRoot is set. |
 | valueDataContains | String | Case-insensitive substring match against value data. |
 | valueDataEq | String | Case-insensitive exact equality match against value data. |
 | valueDataNotContains | String | Substring must be absent from value data (case-insensitive). |
 | valueDataNotEq | String | Value data must not equal this string (case-insensitive). |
-| valueNames | [String!] | Exact value name match; or semantics across list entries. |
-| valueTypes | [String!] | Exact registry type match; or semantics across list entries. Allowed values: REG_SZ, REG_DWORD, REG_QWORD, REG_BINARY, REG_EXPAND_SZ, REG_MULTI_SZ, REG_NONE. |
+| valueNames | [String!] | Exact value name match. Callers set exactly one entry; kept as `repeated` to pass the value name alongside the other predicates for a single key in the same block. |
+| valueTypeList | [[RegistryValueType](../enums/RegistryValueType.md)!] | Structured value-type filter; may hold multiple value types (OR semantics), unlike valueNames above. Takes precedence over valueTypes when non-empty. |
+| valueTypes | [String!] | Deprecated: use valueTypeList for new hunts. Kept as a denormalized mirror when valueTypeList is populated. |

@@ -48,4 +48,6 @@ OpenStack Domain logical child.
 
 ## Implemented By
 
+- [OpenstackImage](../objects/OpenstackImage.md)
+- [OpenstackProject](../objects/OpenstackProject.md)
 - [OpenstackVirtualMachine](../objects/OpenstackVirtualMachine.md)

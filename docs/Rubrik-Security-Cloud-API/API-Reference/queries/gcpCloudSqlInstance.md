@@ -29,6 +29,7 @@ Get details of a GCP Cloud SQL instance.
         instanceId
         instanceTier
         isExocomputeConfigured
+        isProtectionOnboarded
         isRelic
         kmsKey
         name

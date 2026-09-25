@@ -87,6 +87,7 @@ Polaris protectable object.
 - [AwsNativeRdsInstance](../objects/AwsNativeRdsInstance.md)
 - [AwsNativeS3Bucket](../objects/AwsNativeS3Bucket.md)
 - [AzureAdDirectory](../objects/AzureAdDirectory.md)
+- [AzureCosmosNosqlContainer](../objects/AzureCosmosNosqlContainer.md)
 - [AzureDevOpsRepository](../objects/AzureDevOpsRepository.md)
 - [AzureNativeManagedDisk](../objects/AzureNativeManagedDisk.md)
 - [AzureNativeVirtualMachine](../objects/AzureNativeVirtualMachine.md)

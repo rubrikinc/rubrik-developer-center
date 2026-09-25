@@ -26,6 +26,7 @@ Summary of the given Active Directory domain controller.
         cdmPendingObjectPauseAssignment
         dcLocation
         domainControllerGuid
+        forestRootDomainSid
         fsmoRoles
         hostname
         id

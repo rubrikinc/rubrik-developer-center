@@ -1,6 +1,6 @@
 # m365Mvc
 
-ListMvcProfiles lists MVC profiles for an org.
+Lists Minimum Viable Company (MVC) profiles for an M365 organization. Each profile defines a set of Critical Operations Groups -- the M365 groups, users, and SharePoint sites required for minimum viable business recovery.
 
 ## Arguments
 

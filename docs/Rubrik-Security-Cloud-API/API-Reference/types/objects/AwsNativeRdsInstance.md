@@ -2,7 +2,7 @@
 
 AWS native RDS instance.
 
-**Implements:** [PolarisHierarchyObject](../interfaces/PolarisHierarchyObject.md), [PolarisHierarchySnappable](../interfaces/PolarisHierarchySnappable.md), [HierarchySnappable](../interfaces/HierarchySnappable.md), [HierarchyObject](../interfaces/HierarchyObject.md), [AwsNativeAccountLogicalChildType](../interfaces/AwsNativeAccountLogicalChildType.md), [AwsNativeAccountDescendantType](../interfaces/AwsNativeAccountDescendantType.md), [AwsNativeHierarchyObject](../interfaces/AwsNativeHierarchyObject.md)
+**Implements:** [PolarisHierarchyObject](../interfaces/PolarisHierarchyObject.md), [HierarchyObject](../interfaces/HierarchyObject.md), [PolarisHierarchySnappable](../interfaces/PolarisHierarchySnappable.md), [HierarchySnappable](../interfaces/HierarchySnappable.md), [AwsNativeAccountLogicalChildType](../interfaces/AwsNativeAccountLogicalChildType.md), [AwsNativeAccountDescendantType](../interfaces/AwsNativeAccountDescendantType.md), [AwsNativeHierarchyObject](../interfaces/AwsNativeHierarchyObject.md)
 
 ## Fields
 
@@ -18,7 +18,7 @@ AWS native RDS instance.
 | awsNativeAccount | [AwsNativeAccount](AwsNativeAccount.md)! | AWS account of the Amazon Relational Database Service (RDS) instance. |
 | awsNativeAccountDetails | [AwsNativeAccountDetails](AwsNativeAccountDetails.md) | AWS native account details. |
 | cloudNativeApplications | [[CloudNativeApplicationInfo](CloudNativeApplicationInfo.md)!]! | List of cloud native applications associated with this RDS instance. |
-| cloudNativeId | String! | Native ID of the RDS instance. |
+| cloudNativeId | String! | AWS Native ID of the object. |
 | configuredSlaDomain | [SlaDomain](../interfaces/SlaDomain.md)! | SLA Domain configured for the hierarchy object. |
 | dbEngine | [AwsNativeRdsDbEngine](../enums/AwsNativeRdsDbEngine.md)! | Engine being used for RDS Instance. |
 | dbInstanceClass | [AwsNativeRdsDbInstanceClass](../enums/AwsNativeRdsDbInstanceClass.md)! | Class type of RDS Instance. |
@@ -29,13 +29,14 @@ AWS native RDS instance.
 | effectiveSlaSourceObject | [PathNode](PathNode.md) | Path node of the effective SLA Domain source. |
 | id | [UUID](../scalars/UUID.md)! | ID of the hierarchy object. |
 | isExocomputeConfigured | Boolean! | A boolean specifying whether Exocompute is configured in the region. |
+| isInfrastructureAlertsEnabled | Boolean! | Whether infrastructure deletion alerts are enabled for the RDS instance. |
 | isMultiAz | Boolean! | Identifies if the RDS Instance is part of multiple Availability Zones. |
 | isProtectable | Boolean! | Indicates whether this RDS instance is protectable or not. |
-| isRelic | Boolean! | Specifies whether the RDS Instance is a relic. |
+| isRelic | Boolean! | Whether the object is a relic. |
 | logicalPath | [[PathNode](PathNode.md)!]! | Sequential list of the logical ancestors of this object. |
 | maintenanceWindow | String! | Maintenance window of RDS Instance. |
 | name | String! | Name of the hierarchy object. |
-| nativeName | String! | AWS native name of the object. |
+| nativeName | String! | AWS Native name of the object. |
 | newestIndexedSnapshot | [PolarisSnapshot](PolarisSnapshot.md) | The latest snapshot that is indexed and unexpired, and therefore restorable. |
 | newestSnapshot | [PolarisSnapshot](PolarisSnapshot.md) | The most recent snapshot of this workload. |
 | numWorkloadDescendants | Int! | Number of descendant workloads of this object. |
@@ -48,7 +49,7 @@ AWS native RDS instance.
 | primaryAvailabilityZone | String! | Name of Availability Zone(AZ) associated with RDS Instance. |
 | rdsType | [AwsNativeRdsType](../enums/AwsNativeRdsType.md)! | The type of the RDS instance such as Aurora or a regular instance. |
 | readReplicaSourceName | String! | Name of the source RDS instance if this instance is a read replica. This field is not applicable for primary RDS instances. |
-| region | [AwsNativeRegion](../enums/AwsNativeRegion.md)! | AWS region of RDS Instance. |
+| region | [AwsNativeRegion](../enums/AwsNativeRegion.md)! | The AWS region to which the object belongs. |
 | rscNativeObjectPendingSla | [CompactSlaDomain](CompactSlaDomain.md) | SLA Domain assignment which is pending on the Rubrik Security Cloud native objects. |
 | rscPendingObjectPauseAssignment | [PendingObjectPauseAssignmentStatus](../enums/PendingObjectPauseAssignmentStatus.md) | Object pause pending assignment details for RSC objects. |
 | securityMetadata | [SecurityMetadata](SecurityMetadata.md) | Security posture metadata. |
@@ -56,9 +57,9 @@ AWS native RDS instance.
 | slaPauseStatus | Boolean! | Pause status of the effective SLA Domain of the hierarchy object. |
 | snapshotConnection | [PolarisSnapshotConnection](PolarisSnapshotConnection.md) | The list of snapshots taken for this workload. |
 | snapshotDistribution | [SnapshotDistribution](SnapshotDistribution.md)! | Distribution of the snapshots of the hierarchy object. |
-| snapshotGroupByConnection | [PolarisSnapshotGroupByConnection](PolarisSnapshotGroupByConnection.md) | GroupBy connection for the snapshots of this workload. |
-| snapshotGroupByNewConnection | [PolarisSnapshotGroupByNewConnection](PolarisSnapshotGroupByNewConnection.md) | GroupBy connection for the snapshots of this workload. |
-| tags | [[Tag](Tag.md)!]! | List of tags associated with RDS Instance. |
+| snapshotGroupByConnection | [PolarisSnapshotGroupByConnection](PolarisSnapshotGroupByConnection.md) | Group-by connection for the snapshots of this workload. |
+| snapshotGroupByNewConnection | [PolarisSnapshotGroupByNewConnection](PolarisSnapshotGroupByNewConnection.md) | Group-by connection for the snapshots of this workload. |
+| tags | [[Tag](Tag.md)!]! | List of tags that are assigned to the object. |
 | vpcId | String! | Identifier of VPC associated with RDS Instance. |
 | vpcName | String! | Name of VPC associated with RDS Instance. |
 | workloadSnapshotConnection | [GenericSnapshotConnection](GenericSnapshotConnection.md) | The list of snapshots taken for this workload. |

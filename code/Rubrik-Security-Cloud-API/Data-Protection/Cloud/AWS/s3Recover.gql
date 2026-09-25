@@ -1,0 +1,16 @@
+mutation {
+  startRecoverS3SnapshotJob(input: {
+    workloadId: "a0eebc99-9c0b-4ef8-bb6d-6bb9bd380a11"
+    # Provide either snapshotId OR restoreDate — backend requires exactly one
+    snapshotId: "22222222-3333-4444-5555-666666666666"
+    # restoreDate: "2024-01-15T12:00:00Z"
+    destinationBucketArn: "arn:aws:s3:::my-restored-bucket"
+    # Full bucket recovery — set objectKeys to [] when shouldRecoverFullBucket is true
+    shouldRecoverFullBucket: true
+    objectKeys: []
+    targetAwsAccountRubrikId: "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee"
+  }) {
+    jobId
+    error
+  }
+}

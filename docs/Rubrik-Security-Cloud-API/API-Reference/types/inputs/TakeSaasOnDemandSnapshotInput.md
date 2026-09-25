@@ -1,6 +1,6 @@
 # TakeSaasOnDemandSnapshotInput
 
-Input for the takeSaasOnDemandSnapshot mutation.
+GQL-only input for the takeSaasOnDemandSnapshot mutation.
 
 ## Fields
 

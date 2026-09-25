@@ -31,6 +31,7 @@ Summary of all Active Directory domain controllers.
           cdmPendingObjectPauseAssignment
           dcLocation
           domainControllerGuid
+          forestRootDomainSid
           fsmoRoles
           hostname
           id

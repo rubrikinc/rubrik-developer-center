@@ -1,6 +1,6 @@
 # exportFusionComputeSnapshot
 
-Export a FusionCompute virtual machine  Supported in v9.6 Export a FusionCompute virtual machine from a snapshot.
+Export a FusionCompute virtual machine  Supported in v9.6+ Export a FusionCompute virtual machine from a snapshot.
 
 ## Arguments
 

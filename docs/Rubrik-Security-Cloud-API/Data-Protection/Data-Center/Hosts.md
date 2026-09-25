@@ -7,7 +7,7 @@ title: Hosts
 Before Rubrik can discover and protect workloads on a Windows or Linux physical server, the host must be registered with the Rubrik cluster. Registration initiates background discovery of installed software — for SQL Server hosts, this discovers instances and databases automatically.
 
 !!! note
-    If you're registering RBS on a VMware vSphere VM, see [VMware vSphere](VMware-vSphere.md#register-rbs-on-a-vm). For Nutanix AHV VMs, see [Nutanix AHV](Nutanix-AHV.md#register-rbs-on-a-vm).
+    If you're registering RBS on a VMware vSphere VM, see [VMware vSphere](VMware-vSphere.md#register-the-rubrik-backup-service-rbs). For Nutanix AHV VMs, see [Nutanix AHV](Nutanix-AHV.md#register-the-rubrik-backup-service-rbs).
 
 ## Prerequisites
 

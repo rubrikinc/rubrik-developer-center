@@ -4,9 +4,9 @@ This document lists all deprecated fields, queries, mutations, and enum values i
 
 ## Deprecated Fields
 
-*Extracted from schema: 20260831.graphql*
+*Extracted from schema: 20260914.graphql*
 
-**Total deprecated items: 299**
+**Total deprecated items: 303**
 
 ### Deprecated Query Fields
 
@@ -14,6 +14,7 @@ This document lists all deprecated fields, queries, mutations, and enum values i
 - **`allAzureResourceGroups`**: Use allResourceGroupsFromAzure instead.
 - **`allAzureSubnets`**: Use allAzureCloudAccountSubnetsByRegion instead.
 - **`allClusterWebCertsAndIpmis`**: Use clusterConnection instead.
+- **`allMissingClusters`**: Missing cluster management has been retired.
 - **`allUsersOnAccountConnection`**: Use usersInCurrentAndDescendantOrganization instead.
 - **`allWebhooks`**: Use allWebhooksV2 instead.
 - **`azureExocomputeNetworkSetupTemplate`**: Azure networking resources creation for Exocompute using ARM template will not be supported.
@@ -59,6 +60,7 @@ This document lists all deprecated fields, queries, mutations, and enum values i
 - **`recoverCloudDirectPath`**: Not in use. Use recoverCloudDirectMultiPaths instead.
 - **`restoreO365Mailbox`**: Use restoreO365MailboxV2 instead.
 - **`setIpWhitelistEnabled`**: use `setIpWhitelistSetting` instead.
+- **`setMissingClusterStatus`**: Missing cluster management has been retired.
 - **`stopJobInstance`**: Use stopJobInstanceFromEventSeries instead.
 - **`testExistingWebhook`**: Use sendTestMessageToExistingWebhook instead.
 - **`testWebhook`**: Use sendTestMessageToWebhook instead.
@@ -604,6 +606,7 @@ This document lists all deprecated fields, queries, mutations, and enum values i
 - **`CLOUD_DIRECT`**: Nothing returns this sync type; it will be removed in a future release.
 - **`CLUSTER_DISCONNECTED`**: This reason is no longer used.
 - **`COLDLINE_GCP`**: Use STANDARD_GCP instead.
+- **`DIRECT_REPORT`**: The SsoPolicyExtension relationship has been removed.
 - **`DNS_SERVERS_CHECK`**: Use CLUSTER_NAME_LENGTH_CHECK instead.
 - **`DOMAIN_HAS_FOREST`**: Use EBS_VOLUME_NAME_OR_VOLUME_ID instead.
 - **`EBS_VOLUME_INDEXING_STATUS`**: Use EBS_VOLUME_NAME_OR_VOLUME_ID instead.
@@ -646,6 +649,7 @@ This document lists all deprecated fields, queries, mutations, and enum values i
 - **`SIGNIN_LOGS`**: Use SLA_AUDIT_DETAIL_NG instead.
 - **`SLA_AUDIT_DETAIL_NG`**: Use SLA_AUDIT_LIST_NG instead.
 - **`SLA_AUDIT_LIST_NG`**: Use LATEST_GLOBAL_OBJECTS instead.
+- **`SSO_POLICY_APPLIES_TO`**: The SSO Policy Extension relationship has been removed.
 - **`TOP_LEVEL_SITES_OF_O365_ORG`**: Not implemented - no longer used.
 - **`UEKM_RSA_BASED`**: Use UEKM_RSA_BASED or UEKM_AWS_KMS_BASED.
 - **`VSPHERE_RESTORE_FILE_TO_VM`**: VSphere snapshot poller is no longer used.

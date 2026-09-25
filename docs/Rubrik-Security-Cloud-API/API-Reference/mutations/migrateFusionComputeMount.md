@@ -1,6 +1,6 @@
 # migrateFusionComputeMount
 
-Migrate a FusionCompute Live Mount to another datastore  Supported in v9.6 Run storage migration to relocate a FusionCompute Live Mount into another datastore.
+Migrate a FusionCompute Live Mount to another datastore  Supported in v9.6+ Run storage migration to relocate a FusionCompute Live Mount into another datastore.
 
 ## Arguments
 

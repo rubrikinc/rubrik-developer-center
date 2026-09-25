@@ -33,6 +33,7 @@ Lists all Azure AD directories for the account.
           doesEventHubIngestionRequireAzureSignIn
           domainName
           eventHubConnectionStatus
+          eventHubPermissionsStatus
           exoHostType
           exocomputeId
           firstDeviceSnapshotTime
@@ -44,6 +45,7 @@ Lists all Azure AD directories for the account.
           isJitEnabled
           isProvisioned
           isRelic
+          isRubrikManagedApp
           latestAccessReviewScheduleDefinitionCount
           latestAdministrativeUnitsCount
           latestApplicationsCount

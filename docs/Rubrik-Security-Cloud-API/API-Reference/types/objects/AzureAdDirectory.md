@@ -21,6 +21,7 @@ Details of the Azure AD directory object.
 | effectiveSlaDomain | [SlaDomain](../interfaces/SlaDomain.md)! | Effective SLA Domain of the hierarchy object. |
 | effectiveSlaSourceObject | [PathNode](PathNode.md) | Path node of the effective SLA Domain source. |
 | eventHubConnectionStatus | [AzureAdEventHubConnectionStatus](../enums/AzureAdEventHubConnectionStatus.md) | Whether Entra ID Event Hub ingestion is actively connected for this directory. Returns null if the status is currently unavailable. |
+| eventHubPermissionsStatus | [EntraIdEventHubPermissionsStatus](../enums/EntraIdEventHubPermissionsStatus.md) | Azure permissions status for Entra ID Event Hub ingestion on this directory. Returns null if the status is currently unavailable or if the directory has no Event Hub subscription. |
 | exoHostType | [AzureAdExocomputeHostType](../enums/AzureAdExocomputeHostType.md)! | Specifies the host type of the exocompute resource for this tenant. |
 | exocomputeId | String! | ID of the exocompute cluster. |
 | firstDeviceSnapshotTime | [DateTime](../scalars/DateTime.md) | When enabled, time of the first snapshot that includes devices. |
@@ -32,6 +33,7 @@ Details of the Azure AD directory object.
 | isJitEnabled | Boolean! | Specifies whether the tenant was onboarded using the Just In Time permissions feature. |
 | isProvisioned | Boolean! | Specifies whether the infrastructure has been provisioned to enable protection for this Azure AD. |
 | isRelic | Boolean! | Specifies whether the object is a relic. |
+| isRubrikManagedApp | Boolean! | Specifies whether the Entra ID app used for this directory is owned and managed by Rubrik (OAuth path) as opposed to a customer-provided app. |
 | latestAccessReviewScheduleDefinitionCount | Int! | Count of access review schedule definitions from the latest snapshot. |
 | latestAdministrativeUnitsCount | Int! | Count of administrative units from the latest snapshot. |
 | latestApplicationsCount | Int! | Applications count from the latest snapshot. |

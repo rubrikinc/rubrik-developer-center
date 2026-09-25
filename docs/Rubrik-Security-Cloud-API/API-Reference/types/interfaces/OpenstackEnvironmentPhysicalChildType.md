@@ -48,4 +48,8 @@ OpenStack Environment physical child.
 
 ## Implemented By
 
+- [OpenstackAvailabilityZone](../objects/OpenstackAvailabilityZone.md)
+- [OpenstackHost](../objects/OpenstackHost.md)
+- [OpenstackImage](../objects/OpenstackImage.md)
+- [OpenstackRegion](../objects/OpenstackRegion.md)
 - [OpenstackVirtualMachine](../objects/OpenstackVirtualMachine.md)

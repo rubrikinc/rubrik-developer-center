@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # RSC_TOKEN="YOUR_RSC_ACCESS_TOKEN"
-query="query { cloudDirectNasNamespaces(filter: [ {field: NAME_EXACT_MATCH texts: \\\"example\\\"} {field: IS_RELIC texts: \\\"false\\\"} {field: IS_REPLICATED texts: \\\"false\\\"} ]) { nodes { name id cloudDirectId cloudDirectNasSystem { name id } shareCount cluster { name id } effectiveSlaDomain { name id } } } }"
+query="query { cloudDirectNasNamespaces(filter: [ {field: NAME_EXACT_MATCH texts: \\\"example\\\"} {field: IS_RELIC texts: \\\"false\\\"} {field: IS_REPLICATED texts: \\\"false\\\"} ]) { nodes { name id cloudDirectId cloudDirectNasSystem { name id } cluster { name id } effectiveSlaDomain { name id } } } }"
 
 # Execute the GraphQL query with curl
 curl -X POST \

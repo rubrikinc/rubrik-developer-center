@@ -18,7 +18,9 @@ Update properties of the MySQL instance  Supported in v9.3+ Start an asynchronou
 
     ```graphql
     mutation PatchMysqlInstance($input: PatchMysqldbInstanceInput!) {
-      patchMysqlInstance(input: $input)
+      patchMysqlInstance(input: $input) {
+        kosmosTopologyStateId
+      }
     }
     ```
 
@@ -50,6 +52,7 @@ Update properties of the MySQL instance  Supported in v9.3+ Start an asynchronou
     {
       "data": {
         "patchMysqlInstance": {
+          "kosmosTopologyStateId": "example-string",
           "asyncRequestStatus": {
             "endTime": "2024-01-01T00:00:00.000Z",
             "id": "example-string",

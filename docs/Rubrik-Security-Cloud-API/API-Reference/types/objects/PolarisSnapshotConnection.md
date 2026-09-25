@@ -22,7 +22,9 @@ Paginated list of PolarisSnapshot objects. Each page of the results includes at 
 - [AwsNativeRdsInstance.snapshotConnection](AwsNativeRdsInstance.md)
 - [AwsNativeS3Bucket.snapshotConnection](AwsNativeS3Bucket.md)
 - [AzureAdDirectory.snapshotConnection](AzureAdDirectory.md)
+- [AzureCosmosNosqlContainer.snapshotConnection](AzureCosmosNosqlContainer.md)
 - [AzureDevOpsRepository.snapshotConnection](AzureDevOpsRepository.md)
+- AzureNativeHierarchyObjectType.snapshotConnection
 - [AzureNativeManagedDisk.snapshotConnection](AzureNativeManagedDisk.md)
 - [AzureNativeVirtualMachine.snapshotConnection](AzureNativeVirtualMachine.md)
 - [AzurePostgresFlexibleServer.snapshotConnection](AzurePostgresFlexibleServer.md)
@@ -43,6 +45,4 @@ Paginated list of PolarisSnapshot objects. Each page of the results includes at 
 - [M365BackupStorageOrg.snapshotConnection](M365BackupStorageOrg.md)
 - [M365BackupStorageSite.snapshotConnection](M365BackupStorageSite.md)
 - MicrosoftGroup.snapshotConnection
-- MicrosoftMailbox.snapshotConnection
-- MicrosoftOnedrive.snapshotConnection
-- *…and 16 more*
+- *…and 18 more*

@@ -60,6 +60,7 @@ Latest Permissions are the most recent set of permissions we require for a featu
             "featurePermissions": [
               {
                 "feature": "ALL",
+                "hasExocomputeLambdaRole": true,
                 "permissionJson": "example-string",
                 "version": 0
               }

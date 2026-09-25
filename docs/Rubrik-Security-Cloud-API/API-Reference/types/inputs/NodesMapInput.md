@@ -1,10 +1,10 @@
 # NodesMapInput
 
-Mapping of Node name to IP configurations for the node.
+Mapping of node name to IP configurations for add-nodes operations.
 
 ## Fields
 
 | Field | Type | Description |
 |-------|------|-------------|
-| key | String | Required. The name for the new node. |
-| value | [NodeConfigInput](NodeConfigInput.md)! | Node map value. |
+| key | String | The name for the new node. |
+| value | [NodeConfigInput](NodeConfigInput.md)! | The IP configuration for the new node. |

@@ -60,8 +60,8 @@ All supported Rubrik managed objects.
 | CLOUD_DIRECT_NAS_SYSTEM | NAS Cloud Direct system. |
 | CLOUD_NATIVE_TAG_RULE | Cloud tag rule. |
 | CONFLUENCE_SPACE | Confluence Space. |
-| D365_DATAVERSE_TABLE | D365 Dataverse Table. |
-| D365_FIXED_OBJECT | D365 metadata. |
+| D365_DATAVERSE_TABLE | Dataverse Table. |
+| D365_FIXED_OBJECT | Dataverse Metadata. |
 | D365_ORGANIZATION | D365 Organization. |
 | DB2_DATABASE | DB2 database. |
 | DB2_INSTANCE | DB2 instance. |

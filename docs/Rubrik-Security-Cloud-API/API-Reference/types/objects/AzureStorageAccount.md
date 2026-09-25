@@ -2,7 +2,7 @@
 
 An Azure storage account that contains Azure storage data objects including blobs, file shares, queues, tables, and disks. For more information, see https://learn.microsoft.com/en-us/azure/storage/common/storage-account-overview.
 
-**Implements:** [PolarisHierarchyObject](../interfaces/PolarisHierarchyObject.md), [PolarisHierarchySnappable](../interfaces/PolarisHierarchySnappable.md), [HierarchySnappable](../interfaces/HierarchySnappable.md), [HierarchyObject](../interfaces/HierarchyObject.md), [AzureNativeHierarchyObjectType](../interfaces/AzureNativeHierarchyObjectType.md)
+**Implements:** [PolarisHierarchyObject](../interfaces/PolarisHierarchyObject.md), [HierarchyObject](../interfaces/HierarchyObject.md), [PolarisHierarchySnappable](../interfaces/PolarisHierarchySnappable.md), [HierarchySnappable](../interfaces/HierarchySnappable.md), [AzureNativeHierarchyObjectType](../interfaces/AzureNativeHierarchyObjectType.md)
 
 ## Fields
 
@@ -14,9 +14,9 @@ An Azure storage account that contains Azure storage data objects including blob
 | allTags | [[AssignedRscTag](AssignedRscTag.md)!]! | RSC tags to which this hierarchy object is assigned. |
 | authorizedOperations | [[PolarisSnappableAuthorizedOperationsEnum](../enums/PolarisSnappableAuthorizedOperationsEnum.md)!]! | The authorized operations on the object. |
 | azureNativeResourceGroupAndSubscriptionDetails | [AzureNativeResourceGroupAndSubscriptionDetails](AzureNativeResourceGroupAndSubscriptionDetails.md) | Azure native resource group and subscription details. |
-| azureResourceGroup | [AzureNativeResourceGroup](AzureNativeResourceGroup.md) | Resource Group of the Azure storage account. |
+| azureResourceGroup | [AzureNativeResourceGroup](AzureNativeResourceGroup.md) | Resource Group of the Azure object. |
 | azureResourceGroupDetails | [AzureResourceGroupDetails](AzureResourceGroupDetails.md)! | Azure native resource group and subscription details. |
-| cloudNativeId | String! | Native ID of the storage account. |
+| cloudNativeId | String! | Azure Native ID of the object. |
 | configuredSlaDomain | [SlaDomain](../interfaces/SlaDomain.md)! | SLA Domain configured for the hierarchy object. |
 | effectiveRetentionSlaDomain | [SlaDomain](../interfaces/SlaDomain.md) | Effective retention of the SLA Domain of the hierarchy object. |
 | effectiveSlaDomain | [SlaDomain](../interfaces/SlaDomain.md)! | Effective SLA Domain of the hierarchy object. |
@@ -24,10 +24,10 @@ An Azure storage account that contains Azure storage data objects including blob
 | id | [UUID](../scalars/UUID.md)! | ID of the hierarchy object. |
 | isHierarchicalNamespaceEnabled | Boolean! | Specifies whether hierarchical namespace is enabled for the storage account or not. When the value is true, hierarchical namespace is enabled. |
 | isProtectable | Boolean! | Specifies whether the storage account is protectable. When the value is true, the storage account can be protected by assigning sla. |
-| isRelic | Boolean! | Specifies whether the storage account is a relic. When the value is true, the storage account is a relic. A storage account is a relic when it is unprotected or deleted, but the previously taken snapshots of the storage account continue to exist within the Rubrik ecosystem. |
+| isRelic | Boolean! | Whether the object is a relic. |
 | logicalPath | [[PathNode](PathNode.md)!]! | Sequential list of the logical ancestors of this object. |
 | name | String! | Name of the hierarchy object. |
-| nativeName | String! | Native name of the storage account. |
+| nativeName | String! | Azure Native name of the object. |
 | newestIndexedSnapshot | [PolarisSnapshot](PolarisSnapshot.md) | The latest snapshot that is indexed and unexpired, and therefore restorable. |
 | newestSnapshot | [PolarisSnapshot](PolarisSnapshot.md) | The most recent snapshot of this workload. |
 | numContainers | [Long](../scalars/Long.md)! | The number of containers in the storage account. |
@@ -39,8 +39,8 @@ An Azure storage account that contains Azure storage data objects including blob
 | oldestSnapshot | [PolarisSnapshot](PolarisSnapshot.md) | The oldest snapshot of this workload. |
 | onDemandSnapshotCount | Int! | The number of on-demand snapshots. |
 | physicalPath | [[PathNode](PathNode.md)!]! | Sequential list of the physical ancestors of this object. |
-| region | [AzureNativeRegion](../enums/AzureNativeRegion.md)! | Region where the storage account is located. |
-| resourceGroup | [AzureNativeResourceGroup](AzureNativeResourceGroup.md)! | Resource Group of the Azure storage account. |
+| region | [AzureNativeRegion](../enums/AzureNativeRegion.md)! | The Azure region to which the object belongs. |
+| resourceGroup | [AzureNativeResourceGroup](AzureNativeResourceGroup.md)! | Resource Group of the Azure object. |
 | rscNativeObjectPendingSla | [CompactSlaDomain](CompactSlaDomain.md) | SLA Domain assignment which is pending on the Rubrik Security Cloud native objects. |
 | rscPendingObjectPauseAssignment | [PendingObjectPauseAssignmentStatus](../enums/PendingObjectPauseAssignmentStatus.md) | Object pause pending assignment details for RSC objects. |
 | securityMetadata | [SecurityMetadata](SecurityMetadata.md) | Security posture metadata. |
@@ -48,9 +48,9 @@ An Azure storage account that contains Azure storage data objects including blob
 | slaPauseStatus | Boolean! | Pause status of the effective SLA Domain of the hierarchy object. |
 | snapshotConnection | [PolarisSnapshotConnection](PolarisSnapshotConnection.md) | The list of snapshots taken for this workload. |
 | snapshotDistribution | [SnapshotDistribution](SnapshotDistribution.md)! | Distribution of the snapshots of the hierarchy object. |
-| snapshotGroupByConnection | [PolarisSnapshotGroupByConnection](PolarisSnapshotGroupByConnection.md) | GroupBy connection for the snapshots of this workload. |
-| snapshotGroupByNewConnection | [PolarisSnapshotGroupByNewConnection](PolarisSnapshotGroupByNewConnection.md) | GroupBy connection for the snapshots of this workload. |
-| tags | [[AzureTag](AzureTag.md)!]! | Tags attached to the storage account. |
+| snapshotGroupByConnection | [PolarisSnapshotGroupByConnection](PolarisSnapshotGroupByConnection.md) | Group-by connection for the snapshots of this workload. |
+| snapshotGroupByNewConnection | [PolarisSnapshotGroupByNewConnection](PolarisSnapshotGroupByNewConnection.md) | Group-by connection for the snapshots of this workload. |
+| tags | [[AzureTag](AzureTag.md)!]! | List of tags that are assigned to the object. |
 | usedCapacityBytes | [Long](../scalars/Long.md)! | The used capacity bytes of the storage account. |
 | workloadSnapshotConnection | [GenericSnapshotConnection](GenericSnapshotConnection.md) | The list of snapshots taken for this workload. |
 

@@ -1,7 +1,7 @@
 # No toolkit cmdlet available
 $oracleDb = Get-RscOracleDatabase -Name "example"
 # OracleHost FID for standalone DBs, OracleRac FID for RAC DBs
-$targetHostOrRacId = "11111111-2222-3333-4444-555555555555"
+$targetHostOrRacId = "a0eebc99-9c0b-4ef8-bb6d-6bb9bd380a11"
 
 $query = New-RscMutation -GqlMutation mountOracleDatabase
 $query.Var.input = Get-RscType -Name MountOracleDatabaseInput -InitialProperties request.config.recoveryPoint

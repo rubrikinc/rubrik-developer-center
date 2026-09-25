@@ -26,6 +26,7 @@ Represents the Amazon DynamoDB Table with a specific ID. For more information, s
         id
         isAwsContinuousBackupEnabled
         isExocomputeConfigured
+        isInfrastructureAlertsEnabled
         isProtectable
         isRelic
         name

@@ -37,12 +37,12 @@ Paginated list of CdmSnapshot objects. Each page of the results includes at most
 - [MysqldbInstance.snapshotConnection](MysqldbInstance.md)
 - [NasFileset.snapshotConnection](NasFileset.md)
 - [NutanixVm.snapshotConnection](NutanixVm.md)
+- [OlvmVirtualMachineV1.snapshotConnection](OlvmVirtualMachineV1.md)
+- [OpenstackImage.snapshotConnection](OpenstackImage.md)
 - [OpenstackVirtualMachine.snapshotConnection](OpenstackVirtualMachine.md)
 - [OracleDataGuardGroup.snapshotConnection](OracleDataGuardGroup.md)
 - [OracleDatabase.snapshotConnection](OracleDatabase.md)
 - [PostgreSQLDbCluster.snapshotConnection](PostgreSQLDbCluster.md)
+- [ProxmoxVirtualMachineV1.snapshotConnection](ProxmoxVirtualMachineV1.md)
 - [PureStorageProtectionGroupV1.snapshotConnection](PureStorageProtectionGroupV1.md)
-- [PureStorageVolumeV1.snapshotConnection](PureStorageVolumeV1.md)
-- [SapHanaDatabase.snapshotConnection](SapHanaDatabase.md)
-- [SapHanaSystem.snapshotConnection](SapHanaSystem.md)
-- *…and 5 more*
+- *…and 8 more*

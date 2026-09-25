@@ -15,6 +15,7 @@ Object-specific configurations.
 | azureSqlManagedInstanceDbConfig | [AzureSqlManagedInstanceDbConfig](AzureSqlManagedInstanceDbConfig.md) | SLA Domain configuration for Azure SQL Managed Instance DB object. |
 | db2Config | [Db2Config](Db2Config.md) | SLA Domain configuration for Db2 database object. |
 | gcpCloudSqlConfig | [GcpCloudSqlConfig](GcpCloudSqlConfig.md) | SLA Domain configuration for GCP Cloud SQL object. |
+| githubSlaConfig | [GithubSlaConfig](GithubSlaConfig.md) | SLA Domain configuration for GitHub developer collaboration backup. |
 | icebergSlaConfig | [IcebergSlaConfig](IcebergSlaConfig.md) | SLA Domain configuration for Apache Iceberg table. |
 | informixSlaConfig | [InformixSlaConfig](InformixSlaConfig.md) | SLA Domain configuration for Informix object. |
 | irisdbSlaConfig | [IrisdbSlaConfig](IrisdbSlaConfig.md) | SLA Domain configuration for IRIS DB instances. |

@@ -16,6 +16,7 @@ Response for getting the TPR Policy detail.
 | policyId | [UUID](../scalars/UUID.md)! | ID of the TPR policy. |
 | policyRules | [[TprPolicyRule](TprPolicyRule.md)!]! | Rules of the TPR policy. |
 | policyScope | [TprPolicyScope](../enums/TprPolicyScope.md)! | The scope of the TPR policy. |
+| protectedActions | [[ProtectedAction](ProtectedAction.md)!]! | The CDM REST endpoints that this policy's rules protect. Contains one entry per distinct rule assigned to the policy that has a CDM REST mapping. The list is empty when no assigned rule has a CDM REST mapping yet. |
 | quorumRequirement | Int! | Quorum requirement for the TPR policy. |
 
 ## Used By

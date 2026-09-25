@@ -43,6 +43,7 @@ GetAllWorkloadsRecoveryInfo returns information regarding all workloads that are
               "workloadId": "00000000-0000-0000-0000-000000000000",
               "workloadName": "example-string",
               "workloadRecoveryId": "example-string",
+              "workloadRecoveryOutcome": "FAILED",
               "workloadRecoveryStatus": "FAILED",
               "workloadSizeInKbs": 0
             }

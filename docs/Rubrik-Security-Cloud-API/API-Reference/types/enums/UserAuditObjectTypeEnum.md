@@ -98,6 +98,7 @@ User audit object type.
 | M365_BACKUP_STORAGE_ONEDRIVE | Microsoft 365 Backup Storage OneDrive. |
 | M365_BACKUP_STORAGE_ORG | M365 Backup Storage Organization. |
 | M365_BACKUP_STORAGE_SITE | Microsoft 365 Backup Storage SharePoint Site. |
+| MARIADB_INSTANCE | MariaDB instance type. |
 | MONGODB_SOURCE | MongoDB source type. |
 | MONGO_COLLECTION | MongoDB Collection type. |
 | MONGO_SOURCE | MongoDB Source type. |

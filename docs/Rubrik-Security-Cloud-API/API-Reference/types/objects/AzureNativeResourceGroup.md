@@ -11,6 +11,7 @@ An Azure Native Resource Group. Refers to a collection of resources in which mul
 | allOrgs | [[Org](Org.md)!]! | Organizations to which this hierarchy object belongs. |
 | allTags | [[AssignedRscTag](AssignedRscTag.md)!]! | RSC tags to which this hierarchy object is assigned. |
 | authorizedOperations | [[PolarisObjectAuthorizedOperationsEnum](../enums/PolarisObjectAuthorizedOperationsEnum.md)!]! | The authorized operations on the object. |
+| azureCosmosNosqlContainerCount | Int! | Count of Azure Cosmos NoSQL containers in the resource group. |
 | azureNativeSubscriptionDetails | [AzureNativeSubscriptionDetails](AzureNativeSubscriptionDetails.md) | Subscription details of the resource group. |
 | azureNativeVirtualMachines | [AzureNativeVirtualMachineConnection](AzureNativeVirtualMachineConnection.md)! | Paginated ist of Azure Virtual Machines (VMs) in the Resource Group. |
 | azurePostgresFlexibleServerCount | Int! | The number of Azure PostgreSQL Flexible Servers in the resource group. |

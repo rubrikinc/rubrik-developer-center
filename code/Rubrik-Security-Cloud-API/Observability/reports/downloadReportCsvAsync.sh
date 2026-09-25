@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # RSC_TOKEN="YOUR_RSC_ACCESS_TOKEN"
-query="mutation { downloadReportCsvAsync(input: {id: <REPORT ID>}) { jobId referenceId externalId } }"
+query="mutation { downloadReportCsvAsync(input: {id: 12345}) { jobId referenceId externalId } }"
 
 # Execute the GraphQL query with curl
 curl -X POST \

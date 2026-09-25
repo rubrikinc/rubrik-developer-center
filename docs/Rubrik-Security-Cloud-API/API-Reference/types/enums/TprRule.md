@@ -6,6 +6,7 @@ The different TPR rules.
 
 | Value | Description |
 |-------|-------------|
+| ASSIGN_COPY_SCHEDULE | Quorum authorization is required to assign or unassign NAS Cloud Direct copy-schedule source shares. |
 | ASSIGN_TPR_ROLE | The TPR rule is for assigning TPR roles to a user. |
 | DELETE_BACKUP_OBJECT | Quorum authorization is required for deleting any backup object or its related configuration. |
 | DELETE_CLOUD_ACCOUNTS | Quorum authorization is required for deleting cloud accounts. |
@@ -30,6 +31,7 @@ The different TPR rules.
 | ENABLE_DISABLE_RCV | The TPR rule is for enabling and disabling RCV locations. |
 | EXCLUDE_DISK | The TPR rule is for excluding disks from snapshots. |
 | LEGAL_HOLD | The TPR rule is for legal holds. |
+| MANAGE_COPY_SCHEDULE | Quorum authorization is required to update a NAS Cloud Direct copy schedule. |
 | MANAGE_CUSTOM_CERTIFICATES | Quorum authorization is required for managing custom (trust store) certificates: add, update, delete. |
 | MANAGE_ENCRYPTION_SETTINGS | The TPR rule for managing encryption settings (Rubrik cluster key rotation and archival location rekey). |
 | MANAGE_SECURITY_SETTINGS | The TPR rule for managing platform security settings. |
@@ -47,6 +49,9 @@ The different TPR rules.
 | REPLACE_CLUSTER_NODE | The TPR rule is for replacing a cluster node. |
 | RESET_USER_PASSKEYS | Quorum authorization is required for resetting passkeys for a QAuth user. |
 | RESET_USER_TOTP_CONFIG | The TPR rule is for resetting MFA for a TPR user. |
+| RESTORE_AD_DOMAIN_CONTROLLER | Quorum authorization is required for restoring an Active Directory domain controller snapshot. |
+| RESTORE_AD_FOREST | Quorum authorization is required for restoring an Active Directory forest. |
+| RESTORE_AD_OBJECTS | Quorum authorization is required for granular restore of Active Directory objects. |
 | RESTORE_SERVICE_ACCOUNT_TPR_EXEMPTION | Quorum authorization is required to restore a service account's quorum authorization exemption. |
 | RETENTION_LOCK_OBJECT | The TPR rule is for retention lock objects. |
 | RETENTION_LOCK_SLA | The TPR rule is for retention lock SLA. |

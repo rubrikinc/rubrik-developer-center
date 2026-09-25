@@ -73,6 +73,8 @@ An object that can be backed-up by taking snapshots.
 - [LinuxFileset.reportWorkload](LinuxFileset.md)
 - [ManagedVolume.reportWorkload](ManagedVolume.md)
 - [NutanixVm.reportSnappable](NutanixVm.md)
+- [OlvmVirtualMachineV1.reportWorkload](OlvmVirtualMachineV1.md)
+- [ProxmoxVirtualMachineV1.reportWorkload](ProxmoxVirtualMachineV1.md)
 - [PureStorageProtectionGroupV1.reportWorkload](PureStorageProtectionGroupV1.md)
 - [PureStorageVolumeV1.reportWorkload](PureStorageVolumeV1.md)
 - [ShareFileset.reportWorkload](ShareFileset.md)

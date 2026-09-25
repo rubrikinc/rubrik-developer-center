@@ -49,8 +49,18 @@ def run_graphql_inspector_diff(old_schema, new_schema):
             str(old_schema), str(new_schema)
         ], capture_output=True, text=True)
 
-        # GraphQL Inspector returns exit code 1 when breaking changes are found
-        # This is normal behavior, not an error
+        # GraphQL Inspector returns exit code 1 when breaking changes are found,
+        # which is normal. It ALSO returns 1 when it cannot load a schema, so the
+        # exit code alone cannot distinguish success from failure. Without this
+        # check a load failure gets written into the published changelog as the
+        # body of every release, and CI reports success.
+        combined = (result.stdout or '') + (result.stderr or '')
+        if 'AggregateError' in combined or 'Failed to find any GraphQL type definitions' in combined:
+            print(f"ERROR: graphql-inspector could not load a schema comparing "
+                  f"{old_schema} -> {new_schema}", file=sys.stderr)
+            print(combined[:800], file=sys.stderr)
+            return None
+
         if result.returncode in [0, 1]:
             return result.stdout  # GraphQL Inspector outputs to stdout
         else:
@@ -118,6 +128,83 @@ def clean_line(line):
     return line
 
 
+# Adding an enum value or an optional input field cannot break an existing
+# request. The one caveat, that a client exhaustively switching on an enum
+# should carry a default case, is noted in the Additions section rather than
+# by reclassifying thousands of entries as risky.
+_ADDITIVE = (
+    re.compile(r'^Enum value .* was added to enum '),
+    re.compile(r'^Input field .* was added to input object type '),
+)
+
+
+def is_additive(cleaned):
+    """True when a DANGEROUS-classified change cannot break an existing caller."""
+    return any(p.search(cleaned) for p in _ADDITIVE)
+
+
+# Repetitive entries are grouped by the thing they were added to, so a release
+# that adds 42 enum values reads as one line instead of 42.
+_GROUPERS = (
+    (re.compile(r'^Enum value `([^`]+)` was added to enum `([^`]+)`'),
+     'enum value{s} added to enum `{c}`'),
+    (re.compile(r'^Enum value `([^`]+)` was removed from enum `([^`]+)`'),
+     'enum value{s} removed from enum `{c}`'),
+    (re.compile(r'^Input field `([^`]+)`(?: of type `[^`]+`)? was added to input object type `([^`]+)`'),
+     'input field{s} added to `{c}`'),
+    (re.compile(r'^Field `([^`]+)` was added to object type `([^`]+)`'),
+     'field{s} added to `{c}`'),
+    (re.compile(r'^Field `([^`]+)` was removed from object type `([^`]+)`'),
+     'field{s} removed from `{c}`'),
+)
+
+# Changes with no container to group under. "Type X was added" is the single
+# largest shape in the changelog, so these collapse by shape instead.
+_SHAPE_GROUPERS = (
+    (re.compile(r'^Type `([^`]+)` was added$'), 'type{s} added'),
+    (re.compile(r'^Type `([^`]+)` was removed$'), 'type{s} removed'),
+)
+
+GROUP_THRESHOLD = 3
+
+
+def render_changes(changes):
+    """Render a bucket, collapsing repeated changes to the same container."""
+    groups = {}
+    singles = []
+    for ch in changes:
+        for pattern, template in _GROUPERS:
+            m = pattern.match(ch)
+            if m:
+                groups.setdefault((template, m.group(2)), []).append(m.group(1))
+                break
+        else:
+            for pattern, template in _SHAPE_GROUPERS:
+                m = pattern.match(ch)
+                if m:
+                    groups.setdefault((template, None), []).append(m.group(1))
+                    break
+            else:
+                singles.append(ch)
+
+    lines = []
+    for (template, container), members in groups.items():
+        phrase = template.format(s='', c=container) if container else template.format(s='')
+        if len(members) < GROUP_THRESHOLD:
+            for member in sorted(members):
+                lines.append(f"- `{member}` {phrase}")
+            continue
+        summary = template.format(s='s', c=container) if container else template.format(s='s')
+        lines.append(f'??? note "{len(members)} {summary}"')
+        lines.append("")
+        for member in sorted(members):
+            lines.append(f"    - `{member}`")
+        lines.append("")
+    for ch in singles:
+        lines.append(f"- {ch}")
+    return lines
+
+
 def parse_diff_output(diff_output):
     """Parse graphql-inspector diff output into categorized changes."""
     breaking_changes = []
@@ -134,10 +221,14 @@ def parse_diff_output(diff_output):
         line = re.sub(r'\x1b\[[0-9;]*m', '', line)
 
         # Skip header/summary lines
-        if (line.startswith('Comparing') or
-            line.startswith('Detected') or
-            line.startswith('between schemas') or
-            'breaking changes' in line.lower() and 'detected' in line.lower()):
+        # graphql-inspector's own summary lines, which are not changes. Match
+        # after stripping any [log]/[warn]/[error] prefix, and allow the
+        # singular "1 breaking change" as well as the plural.
+        bare = re.sub(r'^\[(log|warn|error)\]\s*', '', line).strip()
+        if (bare.startswith('Comparing') or
+                bare.startswith('Detected') or
+                bare.startswith('between schemas') or
+                re.match(r'^\d+ breaking change', bare)):
             continue
 
         # Determine category based on prefix
@@ -178,10 +269,22 @@ def parse_diff_output(diff_output):
             # graphql-inspector annotates removals of previously-deprecated items with "(deprecated)"
             if '(deprecated)' in cleaned.lower() and 'was removed' in cleaned.lower():
                 deprecated_removals.append(cleaned)
+            elif 'was deprecated' in cleaned.lower():
+                # A newly deprecated field still works. It is notice of a future
+                # removal, not something that broke, so it does not belong beside
+                # changes that break a caller today.
+                dangerous_changes.append(cleaned)
             else:
                 breaking_changes.append(cleaned)
         elif is_dangerous:
-            dangerous_changes.append(cleaned)
+            # graphql-inspector marks these DANGEROUS, but for an API consumer they
+            # are additive: nothing they send today stops working. Listing them as
+            # potentially breaking made that section ~78% additive noise, which
+            # trains readers to skip the section that also holds the real risks.
+            if is_additive(cleaned):
+                safe_changes.append(cleaned)
+            else:
+                dangerous_changes.append(cleaned)
         elif is_safe:
             safe_changes.append(cleaned)
 
@@ -196,40 +299,32 @@ def format_date(date_str):
 
 def generate_changelog_entry(date_str, breaking, deprecated_removals, dangerous, safe):
     """Generate a markdown changelog entry for a version."""
-    lines = []
-    lines.append(f"## {format_date(date_str)}")
-    lines.append("")
+    lines = [f"## {format_date(date_str)}", ""]
 
-    if breaking:
-        lines.append("### ⚠️ Breaking Changes")
+    def section(title, changes, note=None):
+        if not changes:
+            return
+        lines.append(f"### {title}")
         lines.append("")
-        for change in breaking:
-            lines.append(f"- {change}")
+        if note:
+            lines.append(note)
+            lines.append("")
+        lines.extend(render_changes(changes))
         lines.append("")
 
-    if deprecated_removals:
-        lines.append("### 🗑️ Removed Deprecated Items")
-        lines.append("")
-        lines.append("*These items were previously marked `@deprecated` and have now been removed.*")
-        lines.append("")
-        for change in deprecated_removals:
-            lines.append(f"- {change}")
-        lines.append("")
-    
-    if dangerous:
-        lines.append("### ⚡ Potentially Breaking Changes")
-        lines.append("")
-        for change in dangerous:
-            lines.append(f"- {change}")
-        lines.append("")
-    
-    if safe:
-        lines.append("### ✨ New Features & Additions")
-        lines.append("")
-        for change in safe:
-            lines.append(f"- {change}")
-        lines.append("")
-    
+    section("⚠️ Breaking Changes", breaking,
+            "*Requests that worked before may now fail. RSC updates automatically, so check whether your integrations use anything listed here.*")
+
+    section("🗑️ Removed Deprecated Items", deprecated_removals,
+            "*These items were previously marked `@deprecated` and have now been removed.*")
+
+    section("⚡ May Require Changes", dangerous,
+            "*Your requests still work. Deprecations and shifted defaults to plan around.*")
+
+    section("✨ Additions", safe,
+            "*Purely additive. Nothing you send today stops working. If you switch "
+            "exhaustively on an enum, add a default case for newly added values.*")
+
     return '\n'.join(lines)
 
 
@@ -281,6 +376,16 @@ def main():
 *Generated on {now}*
 
 This changelog documents the evolution of the GraphQL schema across {len(schema_files)} versions.
+
+!!! note "Not every breaking change affects a generally available feature"
+    The schema also carries early access and in-development surfaces, which
+    change more freely than shipped ones. Nothing in the schema marks which is
+    which, so both appear here the same way. If an entry names a type or
+    operation you do not recognize and are not calling, it is most likely one
+    of those rather than a change to something you depend on.
+
+    The reliable check is whether your own integrations reference the names
+    listed. Search this page for the operations you call.
 
 """
 

@@ -1,0 +1,42 @@
+# Step 1: Validate and initiate account onboarding
+# Returns a CloudFormation template URL to deploy in your AWS account
+mutation ValidateAndCreate {
+  validateAndCreateAwsCloudAccount(input: {
+    action: CREATE
+    awsChildAccounts: [{
+      accountName: "My Production AWS Account"
+      nativeId: "123456789012"
+    }]
+    features: [CLOUD_NATIVE_PROTECTION]
+    # Add additional features as needed:
+    # features: [CLOUD_NATIVE_PROTECTION, RDS_PROTECTION, CLOUD_NATIVE_S3_PROTECTION, CLOUD_NATIVE_DYNAMODB_PROTECTION]
+  }) {
+    initiateResponse {
+      cloudFormationUrl
+      templateUrl
+      stackName
+      externalId
+      featureVersions { feature version }
+    }
+    validateResponse {
+      invalidAwsAccounts { nativeId message }
+    }
+  }
+}
+
+# Step 2: After deploying the CloudFormation stack, finalize the onboarding
+mutation FinalizeProtection {
+  finalizeAwsCloudAccountProtection(input: {
+    action: CREATE
+    awsChildAccounts: [{
+      accountName: "My Production AWS Account"
+      nativeId: "123456789012"
+    }]
+    features: [CLOUD_NATIVE_PROTECTION]
+    stackName: "rubrik-cloud-native-protection-stack"
+    # awsRegions: [US_EAST_1, US_WEST_2]
+  }) {
+    awsChildAccounts { accountName nativeId message }
+    message
+  }
+}

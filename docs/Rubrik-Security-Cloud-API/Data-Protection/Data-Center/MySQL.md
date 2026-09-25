@@ -141,13 +141,7 @@ The mutation returns a [`PitRestoreMysqldbInstanceResponse`](../../API-Reference
 
 [`createAutomatedRestoreMysqldbInstance`](../../API-Reference/mutations/createAutomatedRestoreMysqldbInstance.md) (v9.5+) performs a full automated recovery into an **existing** target MySQL instance. It is richer than point-in-time recovery: it supports renaming the recovered databases, selecting instance-level versus database-level scope, and managing the target's configuration file.
 
-Required fields in `restoreConfig`:
-
-- `targetMysqldbInstanceId` (required) — the FID of the target instance to restore *into*
-- `restoreInfo.restoreName` (required) — a name for the restore operation
-- `restoreInfo.restoreEntities` (required) — the databases to restore
-- `restoreInfo.locationMap` (required) — for each snapshot, the backup `locationId` and `snapshotId` to restore from
-- `restoreInfo.restoreTime` (optional) — the point in time to recover to
+`targetMysqldbInstanceId` identifies the instance to restore *into*, and `restoreInfo.locationMap` pairs each snapshot with the backup location to restore it from. Set `restoreInfo.restoreTime` to recover to a point in time.
 
 The mutation returns a [`CreateAutomatedRestoreMysqldbInstanceReply`](../../API-Reference/types/objects/CreateAutomatedRestoreMysqldbInstanceReply.md); track `asyncRequestStatus.id` to monitor progress.
 
@@ -226,12 +220,7 @@ Pass the request `id` as `requestId`, set `type` to `MYSQLDB_INSTANCE`, and prov
 
 Register a MySQL instance with Rubrik using [`addMysqlInstance`](../../API-Reference/mutations/addMysqlInstance.md). The host running MySQL must already be added to your Rubrik cluster — see [Hosts](Hosts.md). After registration, Rubrik discovers the databases automatically.
 
-Required fields:
-
-- `clusterUuid` — the Rubrik CDM cluster UUID that will manage this instance
-- `mysqldbInstanceConfig.discoveryInfo` — the `entityInfo.name` for the instance and the `hostInfo` list (each entry needs a `hostId`; `portNumber` is the port `mysqld` listens on)
-
-If `connectionInfo` is provided, its `username`, `password`, and `systemUsername` are all required. It also accepts an `authenticationType` (`MYSQLDB_AUTHENTICATION_TYPE_TCP_BASED` or `MYSQLDB_AUTHENTICATION_TYPE_SOCKET_BASED`), a `bindIpAddress`, a `socketFilePath`, and an `sslConfig` for the certificate, key, and CA file paths.
+`mysqldbInstanceConfig.discoveryInfo` names the instance and lists the hosts it runs on, where `portNumber` is the port `mysqld` listens on. Supply `connectionInfo` to control how Rubrik authenticates: it takes TCP or socket-based `authenticationType`, an optional `bindIpAddress` or `socketFilePath`, and an `sslConfig` for certificate, key, and CA paths.
 
 === "GraphQL"
     ```graphql

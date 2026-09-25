@@ -1,0 +1,18 @@
+mutation {
+  startEc2InstanceSnapshotExportJob(input: {
+    snapshotId: "a0eebc99-9c0b-4ef8-bb6d-6bb9bd380a11"
+    destinationAwsAccountRubrikId: "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee"
+    destinationRegionId: US_EAST_1
+    instanceName: "my-exported-instance"
+    # ec2InstanceType is required at runtime — pass the target instance type string
+    # (instanceType enum is deprecated; use ec2InstanceType)
+    ec2InstanceType: "t3.medium"
+    subnetId: "subnet-0123456789abcdef0"
+    securityGroupIds: ["sg-0123456789abcdef0"]
+    shouldCopyTags: true
+    # sshKeyPairName: "my-key-pair"
+  }) {
+    jobId
+    error
+  }
+}

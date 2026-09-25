@@ -2,7 +2,7 @@
 
 AWS native DynamoDB Table.
 
-**Implements:** [PolarisHierarchyObject](../interfaces/PolarisHierarchyObject.md), [PolarisHierarchySnappable](../interfaces/PolarisHierarchySnappable.md), [HierarchySnappable](../interfaces/HierarchySnappable.md), [HierarchyObject](../interfaces/HierarchyObject.md), [AwsNativeAccountLogicalChildType](../interfaces/AwsNativeAccountLogicalChildType.md), [AwsNativeAccountDescendantType](../interfaces/AwsNativeAccountDescendantType.md), [AwsNativeHierarchyObject](../interfaces/AwsNativeHierarchyObject.md)
+**Implements:** [PolarisHierarchyObject](../interfaces/PolarisHierarchyObject.md), [HierarchyObject](../interfaces/HierarchyObject.md), [PolarisHierarchySnappable](../interfaces/PolarisHierarchySnappable.md), [HierarchySnappable](../interfaces/HierarchySnappable.md), [AwsNativeAccountLogicalChildType](../interfaces/AwsNativeAccountLogicalChildType.md), [AwsNativeAccountDescendantType](../interfaces/AwsNativeAccountDescendantType.md), [AwsNativeHierarchyObject](../interfaces/AwsNativeHierarchyObject.md)
 
 ## Fields
 
@@ -14,7 +14,7 @@ AWS native DynamoDB Table.
 | awsAccount | [AwsNativeAccount](AwsNativeAccount.md) | AWS account of the Amazon DynamoDB Table. |
 | awsAccountRubrikId | String! | Rubrik ID of the AWS account. |
 | awsNativeAccountDetails | [AwsNativeAccountDetails](AwsNativeAccountDetails.md) | AWS native account details. |
-| cloudNativeId | String! | AWS native ID of DynamoDB Table. |
+| cloudNativeId | String! | AWS Native ID of the object. |
 | configuredSlaDomain | [SlaDomain](../interfaces/SlaDomain.md)! | SLA Domain configured for the hierarchy object. |
 | effectiveRetentionSlaDomain | [SlaDomain](../interfaces/SlaDomain.md) | Effective retention of the SLA Domain of the hierarchy object. |
 | effectiveSlaDomain | [SlaDomain](../interfaces/SlaDomain.md)! | Effective SLA Domain of the hierarchy object. |
@@ -22,11 +22,12 @@ AWS native DynamoDB Table.
 | id | [UUID](../scalars/UUID.md)! | ID of the hierarchy object. |
 | isAwsContinuousBackupEnabled | Boolean! | A boolean specifying whether AWS continuous backup is enabled in the backup region for the table. |
 | isExocomputeConfigured | Boolean! | A boolean specifying whether an exocompute is configured in the region. |
+| isInfrastructureAlertsEnabled | Boolean! | Whether infrastructure deletion alerts are enabled for the DynamoDB table. |
 | isProtectable | Boolean! | Indicates whether this DynamoDB table is protectable or not. |
-| isRelic | Boolean! | Whether the table is relic. |
+| isRelic | Boolean! | Whether the object is a relic. |
 | logicalPath | [[PathNode](PathNode.md)!]! | Sequential list of the logical ancestors of this object. |
 | name | String! | Name of the hierarchy object. |
-| nativeName | String! | AWS native name of the object. |
+| nativeName | String! | AWS Native name of the object. |
 | newestIndexedSnapshot | [PolarisSnapshot](PolarisSnapshot.md) | The latest snapshot that is indexed and unexpired, and therefore restorable. |
 | newestSnapshot | [PolarisSnapshot](PolarisSnapshot.md) | The most recent snapshot of this workload. |
 | nonBackupRegionNames | [[AwsNativeRegion](../enums/AwsNativeRegion.md)!]! | Names of the regions where the table is present but are not chosen as backup regions. This field is only valid for Global tables. |
@@ -37,7 +38,7 @@ AWS native DynamoDB Table.
 | oldestSnapshot | [PolarisSnapshot](PolarisSnapshot.md) | The oldest snapshot of this workload. |
 | onDemandSnapshotCount | Int! | The number of on-demand snapshots. |
 | physicalPath | [[PathNode](PathNode.md)!]! | Sequential list of the physical ancestors of this object. |
-| region | [AwsNativeRegion](../enums/AwsNativeRegion.md)! | Name of the region from where backup will be taken. Some examples are: US_EAST_1, AP_EAST_1. This field cannot be null or empty, and will be mapped directly to regions available for the DynamoDB table in the AWS cloud. |
+| region | [AwsNativeRegion](../enums/AwsNativeRegion.md)! | The AWS region to which the object belongs. |
 | rscNativeObjectPendingSla | [CompactSlaDomain](CompactSlaDomain.md) | SLA Domain assignment which is pending on the Rubrik Security Cloud native objects. |
 | rscPendingObjectPauseAssignment | [PendingObjectPauseAssignmentStatus](../enums/PendingObjectPauseAssignmentStatus.md) | Object pause pending assignment details for RSC objects. |
 | s3BackupBucket | String! | S3 backup bucket for the DynamoDB table. |
@@ -46,10 +47,10 @@ AWS native DynamoDB Table.
 | slaPauseStatus | Boolean! | Pause status of the effective SLA Domain of the hierarchy object. |
 | snapshotConnection | [PolarisSnapshotConnection](PolarisSnapshotConnection.md) | The list of snapshots taken for this workload. |
 | snapshotDistribution | [SnapshotDistribution](SnapshotDistribution.md)! | Distribution of the snapshots of the hierarchy object. |
-| snapshotGroupByConnection | [PolarisSnapshotGroupByConnection](PolarisSnapshotGroupByConnection.md) | GroupBy connection for the snapshots of this workload. |
-| snapshotGroupByNewConnection | [PolarisSnapshotGroupByNewConnection](PolarisSnapshotGroupByNewConnection.md) | GroupBy connection for the snapshots of this workload. |
+| snapshotGroupByConnection | [PolarisSnapshotGroupByConnection](PolarisSnapshotGroupByConnection.md) | Group-by connection for the snapshots of this workload. |
+| snapshotGroupByNewConnection | [PolarisSnapshotGroupByNewConnection](PolarisSnapshotGroupByNewConnection.md) | Group-by connection for the snapshots of this workload. |
 | tableSizeBytes | [Long](../scalars/Long.md)! | Size of the DynamoDB table in bytes. |
-| tags | [[Tag](Tag.md)!]! | List of tags associated with the table. |
+| tags | [[Tag](Tag.md)!]! | List of tags that are assigned to the object. |
 | workloadSnapshotConnection | [GenericSnapshotConnection](GenericSnapshotConnection.md) | The list of snapshots taken for this workload. |
 
 ## Field Arguments

@@ -14,4 +14,5 @@ Contains information about the legal hold placed on the Snapshot.
 **Referenced by**
 
 - [CdmSnapshot.legalHoldInfo](CdmSnapshot.md)
+- [LegalHoldSnapshotDetail.legalHoldInfo](LegalHoldSnapshotDetail.md)
 - [PolarisSnapshot.legalHoldInfo](PolarisSnapshot.md)

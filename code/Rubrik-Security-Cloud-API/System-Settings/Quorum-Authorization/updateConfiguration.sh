@@ -1,18 +1,11 @@
 #!/bin/bash
 
 # RSC_TOKEN="YOUR_RSC_ACCESS_TOKEN"
+query="mutation UpdateConfiguration(\$input: UpdateTprConfigurationInput!) { updateTprConfiguration(input: \$input) }"
+
+# Execute the GraphQL query with curl
 curl -X POST \
   -H "Content-Type: application/json" \
   -H "Authorization: Bearer $RSC_TOKEN" \
-  -d '{
-    "query": "mutation UpdateConfiguration($input: UpdateTprConfigurationInput!) { updateTprConfiguration(input: $input) }",
-    "variables": {
-      "input": {
-        "requestTimeoutHours": 24,
-        "reminderHours": 4,
-        "executionMaxTimeoutHours": 8,
-        "staticQuorumApprovalsRequirement": 1
-      }
-    }
-  }' \
+  -d "{\"query\": \"$query\"}" \
   https://example.my.rubrik.com/api/graphql

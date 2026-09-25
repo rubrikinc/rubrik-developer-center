@@ -8,8 +8,10 @@ Returns a list files whose name is prefixed by the query in the given snapshot.
 |----------|------|-------------|
 | first | Int | Returns the first n elements from the list. |
 | after | String | Returns the elements in the list that occur after the specified cursor. |
-| path *(required)* | String! | The path under which you want your search to run. |
+| last | Int | Returns the last n elements from the list. |
+| before | String | Returns the elements in the list that occur before the specified cursor. |
 | snapshotFid *(required)* | [UUID](../types/scalars/UUID.md)! | Snapshot persistent UUID in RSC. |
+| path *(required)* | String! | The path under which you want your search to run. |
 | searchPrefix | String | Prefix arg for searching for files within a snapshot. |
 | isPrefixSearch | Boolean | Determines whether to use a prefix search. |
 
@@ -22,10 +24,10 @@ Returns a list files whose name is prefixed by the query in the given snapshot.
 === "Query"
 
     ```graphql
-    query BrowseSnapshotFileConnection($path: String!, $snapshotFid: UUID!) {
+    query BrowseSnapshotFileConnection($snapshotFid: UUID!, $path: String!) {
       browseSnapshotFileConnection(
-        path: $path
         snapshotFid: $snapshotFid
+        path: $path
         first: 10
       ) {
         nodes {
@@ -50,8 +52,8 @@ Returns a list files whose name is prefixed by the query in the given snapshot.
 
     ```json
     {
-      "path": "example-string",
-      "snapshotFid": "00000000-0000-0000-0000-000000000000"
+      "snapshotFid": "00000000-0000-0000-0000-000000000000",
+      "path": "example-string"
     }
     ```
 

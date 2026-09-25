@@ -48,4 +48,5 @@ OpenStack Availability Zone descendant.
 
 ## Implemented By
 
+- [OpenstackHost](../objects/OpenstackHost.md)
 - [OpenstackVirtualMachine](../objects/OpenstackVirtualMachine.md)

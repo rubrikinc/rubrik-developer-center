@@ -1,5 +1,5 @@
 mutation {
-  downloadReportCsvAsync(input: {id: <REPORT ID>}) {
+  downloadReportCsvAsync(input: {id: 12345}) {
     jobId
     referenceId
     externalId

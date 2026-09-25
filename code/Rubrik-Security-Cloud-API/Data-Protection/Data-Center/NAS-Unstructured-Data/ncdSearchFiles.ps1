@@ -1,6 +1,6 @@
 # snappableFid is the share FID. searchQuery is a filename or path prefix.
 $query = New-RscQuery -GqlQuery searchSnappableVersionedFiles
-$query.Var.snappableFid = "11111111-2222-3333-4444-555555555555"
+$query.Var.snappableFid = "a0eebc99-9c0b-4ef8-bb6d-6bb9bd380a11"
 $query.Var.searchQuery = "quarterly-report"
 $query.Var.usePrefixSearch = $true
 

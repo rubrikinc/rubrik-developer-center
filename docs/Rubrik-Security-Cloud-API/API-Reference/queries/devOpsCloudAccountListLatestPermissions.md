@@ -39,6 +39,7 @@ Retrieves the most recent permission definitions available for DevOps features a
           "featurePermissions": [
             {
               "feature": "ALL",
+              "hasExocomputeLambdaRole": true,
               "permissionJson": "example-string",
               "version": 0
             }

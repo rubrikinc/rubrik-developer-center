@@ -2,7 +2,7 @@
 
 An Azure Native Virtual Machine that refers to the Azure infrastructure as a service (IaaS) used to deploy persistent VMs. For more information, see https://docs.microsoft.com/en-us/azure/virtual-machines/.
 
-**Implements:** [PolarisHierarchyObject](../interfaces/PolarisHierarchyObject.md), [PolarisHierarchySnappable](../interfaces/PolarisHierarchySnappable.md), [HierarchyObject](../interfaces/HierarchyObject.md), [HierarchySnappable](../interfaces/HierarchySnappable.md), [AzureNativeHierarchyObjectType](../interfaces/AzureNativeHierarchyObjectType.md)
+**Implements:** [PolarisHierarchyObject](../interfaces/PolarisHierarchyObject.md), [HierarchyObject](../interfaces/HierarchyObject.md), [PolarisHierarchySnappable](../interfaces/PolarisHierarchySnappable.md), [HierarchySnappable](../interfaces/HierarchySnappable.md), [AzureNativeHierarchyObjectType](../interfaces/AzureNativeHierarchyObjectType.md)
 
 ## Fields
 
@@ -16,9 +16,9 @@ An Azure Native Virtual Machine that refers to the Azure infrastructure as a ser
 | availabilitySetNativeId | String! | Native ID of the availability set associated with the virtual machine (VM). |
 | availabilityZone | String! | Availability Zone associated with the virtual machine (VM). |
 | azureNativeResourceGroupAndSubscriptionDetails | [AzureNativeResourceGroupAndSubscriptionDetails](AzureNativeResourceGroupAndSubscriptionDetails.md) | Azure native resource group and subscription details. |
-| azureResourceGroup | [AzureNativeResourceGroup](AzureNativeResourceGroup.md) | Resource Group of the Azure Virtual Machine (VM). |
+| azureResourceGroup | [AzureNativeResourceGroup](AzureNativeResourceGroup.md) | Resource Group of the Azure object. |
 | azureResourceGroupDetails | [AzureResourceGroupDetails](AzureResourceGroupDetails.md)! | Azure native resource group and subscription details. |
-| cloudNativeId | String! | Native ID of the the virtual machine (VM). |
+| cloudNativeId | String! | Azure Native ID of the object. |
 | configuredSlaDomain | [SlaDomain](../interfaces/SlaDomain.md)! | SLA Domain configured for the hierarchy object. |
 | effectiveRetentionSlaDomain | [SlaDomain](../interfaces/SlaDomain.md) | Effective retention of the SLA Domain of the hierarchy object. |
 | effectiveSlaDomain | [SlaDomain](../interfaces/SlaDomain.md)! | Effective SLA Domain of the hierarchy object. |
@@ -33,7 +33,7 @@ An Azure Native Virtual Machine that refers to the Azure infrastructure as a ser
 | isFileIndexingEnabled | Boolean! | Specifies whether file indexing is enabled for this virtual machine or not. When enabled, Rubrik scans the file structure within the virtual machine in a protected environment, where only the metadata such as folder structure, file names, and file sizes is accessible to Rubrik. |
 | isPreOrPostScriptEnabled | Boolean! | Specifies whether pre-script or post-script framework is enabled on the the virtual machine (VM) or not. When true, it facilitates application-consistent backups. |
 | isProtectable | Boolean! | Specifies whether the virtual machine is protectable. When the value is true, the virtual machine can be protected by assigning sla. |
-| isRelic | Boolean! | Specifies whether the virtual machine is a relic or not. A virtual machine is a relic when it is unprotected or deleted, but the previously taken snapshots of the virtual machine continue to exist within the Rubrik ecosystem. |
+| isRelic | Boolean! | Whether the object is a relic. |
 | logicalPath | [[PathNode](PathNode.md)!]! | Sequential list of the logical ancestors of this object. |
 | name | String! | Name of the hierarchy object. |
 | nativeName | String! | Azure Native name of the object. |
@@ -49,8 +49,8 @@ An Azure Native Virtual Machine that refers to the Azure infrastructure as a ser
 | physicalPath | [[PathNode](PathNode.md)!]! | Sequential list of the physical ancestors of this object. |
 | privateIp | String! | Private IP address of the virtual machine. |
 | recoveryPlansInfo | [[RecoveryPlansInfo](RecoveryPlansInfo.md)!]! | List of Recovery Plans associated with the virtual machine. |
-| region | [AzureNativeRegion](../enums/AzureNativeRegion.md)! | Azure region where the virtual machine (VM) is located. |
-| resourceGroup | [AzureNativeResourceGroup](AzureNativeResourceGroup.md)! | Resource Group of the Azure Virtual Machine (VM). |
+| region | [AzureNativeRegion](../enums/AzureNativeRegion.md)! | The Azure region to which the object belongs. |
+| resourceGroup | [AzureNativeResourceGroup](AzureNativeResourceGroup.md)! | Resource Group of the Azure object. |
 | rscNativeObjectPendingSla | [CompactSlaDomain](CompactSlaDomain.md) | SLA Domain assignment which is pending on the Rubrik Security Cloud native objects. |
 | rscPendingObjectPauseAssignment | [PendingObjectPauseAssignmentStatus](../enums/PendingObjectPauseAssignmentStatus.md) | Object pause pending assignment details for RSC objects. |
 | securityMetadata | [SecurityMetadata](SecurityMetadata.md) | Security posture metadata. |
@@ -59,10 +59,10 @@ An Azure Native Virtual Machine that refers to the Azure infrastructure as a ser
 | slaPauseStatus | Boolean! | Pause status of the effective SLA Domain of the hierarchy object. |
 | snapshotConnection | [PolarisSnapshotConnection](PolarisSnapshotConnection.md) | The list of snapshots taken for this workload. |
 | snapshotDistribution | [SnapshotDistribution](SnapshotDistribution.md)! | Distribution of the snapshots of the hierarchy object. |
-| snapshotGroupByConnection | [PolarisSnapshotGroupByConnection](PolarisSnapshotGroupByConnection.md) | GroupBy connection for the snapshots of this workload. |
-| snapshotGroupByNewConnection | [PolarisSnapshotGroupByNewConnection](PolarisSnapshotGroupByNewConnection.md) | GroupBy connection for the snapshots of this workload. |
+| snapshotGroupByConnection | [PolarisSnapshotGroupByConnection](PolarisSnapshotGroupByConnection.md) | Group-by connection for the snapshots of this workload. |
+| snapshotGroupByNewConnection | [PolarisSnapshotGroupByNewConnection](PolarisSnapshotGroupByNewConnection.md) | Group-by connection for the snapshots of this workload. |
 | subnetName | String! | Name of the subnet associated with the virtual machine (VM). |
-| tags | [[AzureTag](AzureTag.md)!]! | List of tags associated with the virtual machine (VM). |
+| tags | [[AzureTag](AzureTag.md)!]! | List of tags that are assigned to the object. |
 | virtuaMachineNativeId | String! | Native ID of the the virtual machine (VM). |
 | vmAppConsistentSpecs | [VmAppConsistentSpecsInternal](VmAppConsistentSpecsInternal.md) | Application Consistent Specifications of the virtual machine (VM). |
 | vmName | String! | Name of the Virtual Machine (VM). |

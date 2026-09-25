@@ -2,7 +2,7 @@
 
 A Pure Storage protection group protected by Rubrik.
 
-**Implements:** [HierarchyObject](../interfaces/HierarchyObject.md), [CdmHierarchyObject](../interfaces/CdmHierarchyObject.md), [HierarchySnappable](../interfaces/HierarchySnappable.md), [CdmHierarchySnappableNew](../interfaces/CdmHierarchySnappableNew.md), [PureStorageArrayDescendantV1](../interfaces/PureStorageArrayDescendantV1.md), [PureStorageArrayLogicalChildType](../interfaces/PureStorageArrayLogicalChildType.md)
+**Implements:** [CdmHierarchyObject](../interfaces/CdmHierarchyObject.md), [HierarchyObject](../interfaces/HierarchyObject.md), [HierarchySnappable](../interfaces/HierarchySnappable.md), [CdmHierarchySnappableNew](../interfaces/CdmHierarchySnappableNew.md), [PureStorageArrayDescendantV1](../interfaces/PureStorageArrayDescendantV1.md), [PureStorageArrayLogicalChildType](../interfaces/PureStorageArrayLogicalChildType.md)
 
 ## Fields
 

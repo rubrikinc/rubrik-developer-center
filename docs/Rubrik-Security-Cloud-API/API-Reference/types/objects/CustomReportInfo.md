@@ -8,6 +8,7 @@ Simplified report information for custom reports.
 |-------|------|-------------|
 | createdAt | [DateTime](../scalars/DateTime.md) | Timestamp of when the report was created. |
 | createdBy | String! | Email address of the user who created the report. |
+| description | String! | Description persisted with the report. Populated only for script reports, whose description is authored per report; template-backed reports take their description from the report template instead. |
 | id | [Long](../scalars/Long.md)! | Unique identifier of the report. |
 | name | String! | Name of the report. |
 | reportCategory | [ReportCategory](../enums/ReportCategory.md)! | Category of the report. |

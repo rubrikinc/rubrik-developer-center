@@ -1,6 +1,6 @@
 # FlexmotionFailoverType
 
-Type of flexmotion failover.
+Supported in v9.5+ Type of flexmotion failover.
 
 ## Values
 

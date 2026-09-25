@@ -45,4 +45,4 @@ Latest user note information.
 - [FusionComputeCluster.latestUserNote](FusionComputeCluster.md)
 - FusionComputeClusterDescendant.latestUserNote
 - FusionComputeClusterPhysicalChildType.latestUserNote
-- *…and 203 more*
+- *…and 234 more*

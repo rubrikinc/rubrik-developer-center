@@ -17,9 +17,19 @@ Every workload, policy, event, and recovery in Rubrik Security Cloud is reachabl
     New to the Rubrik API? Get a token, make your first call, and explore the
     schema interactively.
 
-    [Authenticate](Rubrik-Security-Cloud-API/authentication.md) ·
-    [API Playground](Rubrik-Security-Cloud-API/API-playground.md) ·
+    [Authenticate](Rubrik-Security-Cloud-API/authentication.md)
+    [API Playground](Rubrik-Security-Cloud-API/API-playground.md)
     [Pagination](Rubrik-Security-Cloud-API/pagination.md)
+
+-   :material-console:{ .lg .middle } __Already know your way around?__
+
+    ---
+    Skip ahead to the schema, the SDKs, and what changed recently.
+
+    [API Reference](Rubrik-Security-Cloud-API/API-Reference/index.md)
+    [SDKs and Tools](SDKs-and-Tools/index.md)
+    [Changelog](Rubrik-Security-Cloud-API/API-Reference/Changelog.md)
+    [Deprecations](Rubrik-Security-Cloud-API/API-Reference/Deprecations.md)
 
 </div>
 
@@ -32,49 +42,34 @@ Every workload, policy, event, and recovery in Rubrik Security Cloud is reachabl
 -   :material-cog-sync-outline:{ .lg .middle } __I want to automate…__
 
     ---
-    __Backup and recovery__ for a workload
+    __Back up and recover a workload__
 
-    [SQL Server](Rubrik-Security-Cloud-API/Data-Protection/Data-Center/Microsoft-SQL.md) ·
-    [VMware vSphere](Rubrik-Security-Cloud-API/Data-Protection/Data-Center/VMware-vSphere.md) ·
-    [Oracle](Rubrik-Security-Cloud-API/Data-Protection/Data-Center/Oracle.md) ·
-    [Nutanix AHV](Rubrik-Security-Cloud-API/Data-Protection/Data-Center/Nutanix-AHV.md) ·
-    [Hyper-V](Rubrik-Security-Cloud-API/Data-Protection/Data-Center/Microsoft-HyperV.md)
+    [SQL Server](Rubrik-Security-Cloud-API/Data-Protection/Data-Center/Microsoft-SQL.md)
+    [vSphere](Rubrik-Security-Cloud-API/Data-Protection/Data-Center/VMware-vSphere.md)
+    [Oracle](Rubrik-Security-Cloud-API/Data-Protection/Data-Center/Oracle.md)
+    [Nutanix AHV](Rubrik-Security-Cloud-API/Data-Protection/Data-Center/Nutanix-AHV.md)
+    [Microsoft 365](Rubrik-Security-Cloud-API/SaaS-App-Protection/Microsoft-M365.md)
 
-    [:octicons-arrow-right-24: All data center workloads](Rubrik-Security-Cloud-API/Data-Protection/Data-Center/index.md)
+    [:octicons-arrow-right-24: All workloads](Rubrik-Security-Cloud-API/Data-Protection/index.md)
 
-    __Cloud and SaaS__
+    __Set protection policy__
 
-    [AWS](Rubrik-Security-Cloud-API/Data-Protection/Cloud/AWS.md) ·
-    [Azure](Rubrik-Security-Cloud-API/Data-Protection/Cloud/Azure.md) ·
-    [GCP](Rubrik-Security-Cloud-API/Data-Protection/Cloud/GCP.md) ·
-    [Microsoft 365](Rubrik-Security-Cloud-API/SaaS-App-Protection/Microsoft-M365.md) ·
-    [Salesforce](Rubrik-Security-Cloud-API/SaaS-App-Protection/Salesforce.md)
-
-    __Protection policy__
-
-    [SLA Domains](Rubrik-Security-Cloud-API/Data-Protection/SLA-Domains.md) ·
-    [Snapshots](Rubrik-Security-Cloud-API/Data-Protection/Snapshots.md) ·
+    [SLA Domains](Rubrik-Security-Cloud-API/Data-Protection/SLA-Domains.md)
+    [Snapshots](Rubrik-Security-Cloud-API/Data-Protection/Snapshots.md)
     [Archival](Rubrik-Security-Cloud-API/Data-Protection/Archival.md)
 
 -   :material-monitor-eye:{ .lg .middle } __I want to monitor…__
 
     ---
-    __Events in a third-party system__
+    __Events__
 
-    Push Rubrik events into ServiceNow, an SIEM, or your own endpoint.
-
-    [:octicons-arrow-right-24: Integrations](Integrations/index.md)
-
-    __Events via the API__
-
-    Query and filter the event stream directly.
-
-    [Events](Rubrik-Security-Cloud-API/Observability/Events/index.md) ·
+    [Query the API](Rubrik-Security-Cloud-API/Observability/Events/index.md)
     [Event reference](Rubrik-Security-Cloud-API/Observability/Events/Event-Reference/Index.md)
+    [Send to ServiceNow](Integrations/index.md)
 
-    __Capacity, cost, and compliance__
+    __Capacity and compliance__
 
-    [Metrics](Rubrik-Security-Cloud-API/Observability/Metrics.md) ·
+    [Metrics](Rubrik-Security-Cloud-API/Observability/Metrics.md)
     [Reports](Rubrik-Security-Cloud-API/Observability/Reports.md)
 
 -   :material-shield-search:{ .lg .middle } __I want to investigate…__
@@ -82,54 +77,34 @@ Every workload, policy, event, and recovery in Rubrik Security Cloud is reachabl
     ---
     __A suspected compromise__
 
-    Find indicators of compromise across snapshots, review anomalous activity,
-    and identify a clean recovery point.
-
-    [Threat Hunting](Rubrik-Security-Cloud-API/Threat-Analytics/Threat-Hunting.md) ·
-    [Threat Monitoring](Rubrik-Security-Cloud-API/Threat-Analytics/Threat-Monitoring.md) ·
+    [Threat Hunting](Rubrik-Security-Cloud-API/Threat-Analytics/Threat-Hunting.md)
+    [Threat Monitoring](Rubrik-Security-Cloud-API/Threat-Analytics/Threat-Monitoring.md)
     [Anomaly Detection](Rubrik-Security-Cloud-API/Threat-Analytics/Anomaly-Detection.md)
 
 -   :material-account-key-outline:{ .lg .middle } __I want to manage access…__
 
     ---
-    __Users, roles, and service accounts__
+    __Users, roles, and approvals__
 
-    [:octicons-arrow-right-24: Users and Access](Rubrik-Security-Cloud-API/System-Settings/Users-and-Access.md)
-
-    __Approvals and certificates__
-
-    [Quorum Authorization](Rubrik-Security-Cloud-API/System-Settings/Quorum-Authorization.md) ·
-    [Certificate Management](Rubrik-Security-Cloud-API/System-Settings/Certificate-Management.md)
+    [Users and Access](Rubrik-Security-Cloud-API/System-Settings/Users-and-Access.md)
+    [Quorum Authorization](Rubrik-Security-Cloud-API/System-Settings/Quorum-Authorization.md)
+    [Certificates](Rubrik-Security-Cloud-API/System-Settings/Certificate-Management.md)
 
 -   :material-lifebuoy:{ .lg .middle } __I want to troubleshoot…__
 
     ---
-    __An error I'm getting back__
+    __An error, or a query I'm still writing__
 
-    Status codes, what usually causes them, and what to check first.
-
-    [:octicons-arrow-right-24: Troubleshooting](Rubrik-Security-Cloud-API/troubleshooting.md)
-
-    __A query I'm still writing__
-
-    Run it against the live schema, with autocomplete, before you ship it.
-
-    [:octicons-arrow-right-24: API Playground](Rubrik-Security-Cloud-API/API-playground.md)
+    [Troubleshooting](Rubrik-Security-Cloud-API/troubleshooting.md)
+    [API Playground](Rubrik-Security-Cloud-API/API-playground.md)
 
 -   :material-clipboard-check-outline:{ .lg .middle } __I want to know what's supported…__
 
     ---
-    __Support scope and status tiers__
+    __Support scope and upcoming change__
 
-    What Rubrik supports, what falls outside it, and how to reach us.
-
-    [:octicons-arrow-right-24: API Support](api-support/index.md)
-
-    __Deprecations and breaking changes__
-
-    Release cadence, deprecation policy, and what has changed.
-
-    [Changelog](Rubrik-Security-Cloud-API/API-Reference/Changelog.md) ·
+    [API Support](api-support/index.md)
+    [Changelog](Rubrik-Security-Cloud-API/API-Reference/Changelog.md)
     [Deprecations](Rubrik-Security-Cloud-API/API-Reference/Deprecations.md)
 
 </div>

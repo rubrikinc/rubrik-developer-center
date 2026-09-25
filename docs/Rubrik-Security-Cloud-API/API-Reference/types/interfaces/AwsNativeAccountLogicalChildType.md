@@ -1,6 +1,6 @@
 # AwsNativeAccountLogicalChildType
 
-*No description available.*
+Marker interface for the logical children of an AWS native account. A pure clone of PolarisHierarchyObject (no additional fields).
 
 ## Fields
 
