@@ -411,7 +411,6 @@
   --hero-border: rgba(255, 255, 255, 0.24);
   --hero-text-strong: var(--aura-white);
   --hero-text-moderate: rgba(255, 255, 255, 0.8);
-  --hero-code-bg: var(--aura-deep-blue-4);
   --hero-card-bg: linear-gradient(-45deg, rgba(47, 202, 255, 0.08), rgba(29, 161, 220, 0.08));
   --hero-card-border: rgba(255, 255, 255, 0.24);
   --hero-primary-bg: var(--aura-teal-5);
@@ -441,7 +440,6 @@
     linear-gradient(135deg, var(--aura-deep-blue-3) 0%, var(--aura-teal-7) 100%);
   --hero-border: rgba(77, 210, 210, 0.25);
   --hero-text-moderate: rgba(255, 255, 255, 0.85);
-  --hero-code-bg: rgba(0, 0, 0, 0.35);
   --hero-card-bg: rgba(255, 255, 255, 0.08);
   --hero-card-border: rgba(255, 255, 255, 0.14);
   --hero-primary-bg: var(--aura-teal-3);
@@ -486,11 +484,6 @@
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--aura-teal-3);
-}
-
-.md-typeset .mcp-hero .highlight pre > code {
-  background-color: var(--hero-code-bg);
-  color: var(--hero-text-strong);
 }
 
 .md-typeset .mcp-hero .md-button {
