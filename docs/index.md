@@ -28,10 +28,6 @@ Every workload, policy, event, and recovery in Rubrik Security Cloud is reachabl
 
 Connect Claude, Copilot, or any MCP-compatible agent to your RSC tenant. The agent discovers the API for you, so you describe the task instead of writing the query.
 
-```bash
-pip install rubrik-mcp
-```
-
 [Get started](SDKs-and-Tools/Rubrik-MCP/index.md){ .md-button .md-button--primary }
 [What it can do](SDKs-and-Tools/Rubrik-MCP/index.md#what-you-can-do){ .md-button }
 
