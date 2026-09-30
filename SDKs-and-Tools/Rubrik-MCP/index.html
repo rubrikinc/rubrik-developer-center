@@ -1513,7 +1513,7 @@
 <tbody>
 <tr>
 <td><code>rsc_save_workflow</code></td>
-<td>Save a multi-step workflow as a named tool. Workflows are written to <code>~/.rubrik/workflows/</code> as JSON files and are available immediately.</td>
+<td>Save a multi-step workflow as a named tool. Workflows are written to <code>~/.config/rubrik-mcp/workflows/</code> as JSON files and are available immediately.</td>
 </tr>
 <tr>
 <td><code>rsc_list_workflows</code></td>
@@ -1526,7 +1526,7 @@
 </tbody>
 </table>
 <h3 id="starter-workflows">Starter Workflows</h3>
-<p>The server seeds three starter workflows into <code>~/.rubrik/workflows/</code> on first run.</p>
+<p>The server seeds three starter workflows into <code>~/.config/rubrik-mcp/workflows/</code> on first run.</p>
 <table>
 <thead>
 <tr>
@@ -1550,7 +1550,7 @@
 </tbody>
 </table>
 <h3 id="community-workflows">Community Workflows</h3>
-<p>Additional workflows are available from the <a href="https://github.com/rubrikinc/rubrik-community">rubrik-community</a> repository. Install them by downloading the JSON files into <code>~/.rubrik/workflows/</code> and restarting the server.</p>
+<p>Additional workflows are available from the <a href="https://github.com/rubrikinc/rubrik-community">rubrik-community</a> repository. Install them by downloading the JSON files into <code>~/.config/rubrik-mcp/workflows/</code> and restarting the server.</p>
 <table>
 <thead>
 <tr>
@@ -1572,7 +1572,7 @@
 <h2 id="advanced-usage">Advanced Usage</h2>
 <hr />
 <h3 id="gating-policy">Gating Policy</h3>
-<p>The server seeds a policy file at <code>~/.rubrik/mcp-policy.json</code> on first run (mode <code>0600</code>). This file controls which write operations are allowed to execute directly versus generate as a reviewed Python script.</p>
+<p>The server seeds a policy file at <code>~/.config/rubrik-mcp/mcp-policy.json</code> on first run (mode <code>0600</code>). This file controls which write operations are allowed to execute directly versus generate as a reviewed Python script.</p>
 <div class="language-json highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="p">{</span>
 </span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="w">  </span><span class="nt">"writes_enabled"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
 </span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="w">  </span><span class="nt">"write_tools"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
@@ -1645,7 +1645,7 @@
 </span></code></pre></div>
 <p>The config directory can be relocated using the <code>RUBRIK_MCP_CONFIG_DIR</code> environment variable. This is the recommended approach for Docker deployments.</p>
 <h3 id="custom-workflows">Custom Workflows</h3>
-<p>Workflows are JSON files that define a sequence of tool calls. Save them with <code>rsc_save_workflow</code> or write them directly to <code>~/.rubrik/workflows/</code>. They load automatically at server start and appear as named tools alongside the built-ins.</p>
+<p>Workflows are JSON files that define a sequence of tool calls. Save them with <code>rsc_save_workflow</code> or write them directly to <code>~/.config/rubrik-mcp/workflows/</code>. They load automatically at server start and appear as named tools alongside the built-ins.</p>
 <p>Ask your AI agent to build and save a workflow during a session:</p>
 <blockquote>
 <p><em>"Save a workflow that finds all out-of-compliance VMs and takes an on-demand snapshot of each one. Call it <code>rsc_remediate_oc_vms</code>."</em></p>
@@ -1677,7 +1677,7 @@
 </span><span id="__span-8-24"><a id="__codelineno-8-24" name="__codelineno-8-24" href="#__codelineno-8-24"></a><span class="w">  </span><span class="p">]</span>
 </span><span id="__span-8-25"><a id="__codelineno-8-25" name="__codelineno-8-25" href="#__codelineno-8-25"></a><span class="p">}</span>
 </span></code></pre></div>
-<p>Reference earlier step results with <code>${step_id.path.to.value}</code> in <code>args</code>. Workflow files are plain JSON in <code>~/.rubrik/workflows/</code> — edit them directly and restart the server to pick up changes.</p>
+<p>Reference earlier step results with <code>${step_id.path.to.value}</code> in <code>args</code>. Workflow files are plain JSON in <code>~/.config/rubrik-mcp/workflows/</code> — edit them directly and restart the server to pick up changes.</p>
 <h3 id="docker-deployment">Docker Deployment</h3>
 <p>Docker is the recommended approach for hardened or shared deployments.</p>
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/rubrikinc/rubrik-mcp.git
@@ -1687,10 +1687,10 @@
 <p>For the distroless hardened variant:</p>
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>docker<span class="w"> </span>build<span class="w"> </span>--target<span class="w"> </span>distroless<span class="w"> </span>-t<span class="w"> </span>rubrik-mcp:hardened<span class="w"> </span>.
 </span></code></pre></div>
-<p>Mount <code>~/.rubrik</code> to <code>/config</code> to persist the policy file and any saved workflows:</p>
+<p>Mount <code>~/.config/rubrik-mcp</code> to <code>/config</code> to persist the policy file and any saved workflows:</p>
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>docker<span class="w"> </span>run<span class="w"> </span>--rm<span class="w"> </span><span class="se">\</span>
 </span><span id="__span-11-2"><a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a><span class="w">  </span>-e<span class="w"> </span><span class="nv">RSC_SERVICE_ACCOUNT_FILE</span><span class="o">=</span>/config/service_account.json<span class="w"> </span><span class="se">\</span>
-</span><span id="__span-11-3"><a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a><span class="w">  </span>-v<span class="w"> </span>~/.rubrik:/config<span class="w"> </span><span class="se">\</span>
+</span><span id="__span-11-3"><a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a><span class="w">  </span>-v<span class="w"> </span>~/.config/rubrik-mcp:/config<span class="w"> </span><span class="se">\</span>
 </span><span id="__span-11-4"><a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a><span class="w">  </span>rubrik-mcp
 </span></code></pre></div>
 <p>MCP client config for Docker:</p>
@@ -1700,7 +1700,7 @@
 </span><span id="__span-12-4"><a id="__codelineno-12-4" name="__codelineno-12-4" href="#__codelineno-12-4"></a><span class="w">      </span><span class="nt">"command"</span><span class="p">:</span><span class="w"> </span><span class="s2">"docker"</span><span class="p">,</span>
 </span><span id="__span-12-5"><a id="__codelineno-12-5" name="__codelineno-12-5" href="#__codelineno-12-5"></a><span class="w">      </span><span class="nt">"args"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">"run"</span><span class="p">,</span><span class="w"> </span><span class="s2">"--rm"</span><span class="p">,</span><span class="w"> </span><span class="s2">"-i"</span><span class="p">,</span>
 </span><span id="__span-12-6"><a id="__codelineno-12-6" name="__codelineno-12-6" href="#__codelineno-12-6"></a><span class="w">               </span><span class="s2">"-e"</span><span class="p">,</span><span class="w"> </span><span class="s2">"RSC_SERVICE_ACCOUNT_FILE=/config/service_account.json"</span><span class="p">,</span>
-</span><span id="__span-12-7"><a id="__codelineno-12-7" name="__codelineno-12-7" href="#__codelineno-12-7"></a><span class="w">               </span><span class="s2">"-v"</span><span class="p">,</span><span class="w"> </span><span class="s2">"/Users/you/.rubrik:/config"</span><span class="p">,</span>
+</span><span id="__span-12-7"><a id="__codelineno-12-7" name="__codelineno-12-7" href="#__codelineno-12-7"></a><span class="w">               </span><span class="s2">"-v"</span><span class="p">,</span><span class="w"> </span><span class="s2">"/Users/you/.config/rubrik-mcp:/config"</span><span class="p">,</span>
 </span><span id="__span-12-8"><a id="__codelineno-12-8" name="__codelineno-12-8" href="#__codelineno-12-8"></a><span class="w">               </span><span class="s2">"rubrik-mcp"</span><span class="p">]</span>
 </span><span id="__span-12-9"><a id="__codelineno-12-9" name="__codelineno-12-9" href="#__codelineno-12-9"></a><span class="w">    </span><span class="p">}</span>
 </span><span id="__span-12-10"><a id="__codelineno-12-10" name="__codelineno-12-10" href="#__codelineno-12-10"></a><span class="w">  </span><span class="p">}</span>
@@ -1708,8 +1708,8 @@
 </span></code></pre></div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>On <strong>Linux</strong>, create <code>~/.rubrik</code> before running. If Docker creates it, the directory will be owned by root.</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>mkdir<span class="w"> </span>-p<span class="w"> </span>~/.rubrik
+<p>On <strong>Linux</strong>, create <code>~/.config/rubrik-mcp</code> before running. If Docker creates it, the directory will be owned by root.</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>mkdir<span class="w"> </span>-p<span class="w"> </span>~/.config/rubrik-mcp
 </span></code></pre></div>
 <p>On <strong>macOS</strong> and <strong>Windows</strong>, Docker Desktop handles directory ownership automatically.</p>
 </div>
@@ -1739,7 +1739,7 @@
 </tr>
 <tr>
 <td><code>RUBRIK_MCP_CONFIG_DIR</code></td>
-<td>Override the config directory. Defaults to <code>~/.rubrik</code> (or <code>/config</code> in the official Docker image).</td>
+<td>Override the config directory. Defaults to <code>~/.config/rubrik-mcp</code> (or <code>/config</code> in the official Docker image).</td>
 </tr>
 </tbody>
 </table>
@@ -1773,7 +1773,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="September 24, 2026 18:17:03 UTC">2026-09-24</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="September 30, 2026 02:22:04 UTC">2026-09-30</span>
   </span>
 
     

@@ -178,15 +178,15 @@ Write tools are enabled by default. See [Gating Policy](#gating-policy) to restr
 
 Workflows are multi-step sequences saved as named MCP tools. Once saved, they load automatically on server start and appear alongside built-in tools.
 
-| Tool                  | Description                                                                                                                              |
-| --------------------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
-| `rsc_save_workflow`   | Save a multi-step workflow as a named tool. Workflows are written to `~/.rubrik/workflows/` as JSON files and are available immediately. |
-| `rsc_list_workflows`  | List all saved workflows with name, description, step count, and file path.                                                              |
-| `rsc_delete_workflow` | Remove a saved workflow by name. The file is deleted from disk.                                                                          |
+| Tool                  | Description                                                                                                                                         |
+| --------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `rsc_save_workflow`   | Save a multi-step workflow as a named tool. Workflows are written to `~/.config/rubrik-mcp/workflows/` as JSON files and are available immediately. |
+| `rsc_list_workflows`  | List all saved workflows with name, description, step count, and file path.                                                                         |
+| `rsc_delete_workflow` | Remove a saved workflow by name. The file is deleted from disk.                                                                                     |
 
 ### Starter Workflows
 
-The server seeds three starter workflows into `~/.rubrik/workflows/` on first run.
+The server seeds three starter workflows into `~/.config/rubrik-mcp/workflows/` on first run.
 
 | Workflow                | Description                                                                                                                             |
 | ----------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
@@ -196,7 +196,7 @@ The server seeds three starter workflows into `~/.rubrik/workflows/` on first ru
 
 ### Community Workflows
 
-Additional workflows are available from the [rubrik-community](https://github.com/rubrikinc/rubrik-community) repository. Install them by downloading the JSON files into `~/.rubrik/workflows/` and restarting the server.
+Additional workflows are available from the [rubrik-community](https://github.com/rubrikinc/rubrik-community) repository. Install them by downloading the JSON files into `~/.config/rubrik-mcp/workflows/` and restarting the server.
 
 | Workflow                             | Description                                                                                                                                    |
 | ------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -209,7 +209,7 @@ ______________________________________________________________________
 
 ### Gating Policy
 
-The server seeds a policy file at `~/.rubrik/mcp-policy.json` on first run (mode `0600`). This file controls which write operations are allowed to execute directly versus generate as a reviewed Python script.
+The server seeds a policy file at `~/.config/rubrik-mcp/mcp-policy.json` on first run (mode `0600`). This file controls which write operations are allowed to execute directly versus generate as a reviewed Python script.
 
 ```json
 {
@@ -258,7 +258,7 @@ The config directory can be relocated using the `RUBRIK_MCP_CONFIG_DIR` environm
 
 ### Custom Workflows
 
-Workflows are JSON files that define a sequence of tool calls. Save them with `rsc_save_workflow` or write them directly to `~/.rubrik/workflows/`. They load automatically at server start and appear as named tools alongside the built-ins.
+Workflows are JSON files that define a sequence of tool calls. Save them with `rsc_save_workflow` or write them directly to `~/.config/rubrik-mcp/workflows/`. They load automatically at server start and appear as named tools alongside the built-ins.
 
 Ask your AI agent to build and save a workflow during a session:
 
@@ -294,7 +294,7 @@ The agent will call `rsc_save_workflow` with a JSON spec. The spec format:
 }
 ```
 
-Reference earlier step results with `${step_id.path.to.value}` in `args`. Workflow files are plain JSON in `~/.rubrik/workflows/` — edit them directly and restart the server to pick up changes.
+Reference earlier step results with `${step_id.path.to.value}` in `args`. Workflow files are plain JSON in `~/.config/rubrik-mcp/workflows/` — edit them directly and restart the server to pick up changes.
 
 ### Docker Deployment
 
@@ -312,12 +312,12 @@ For the distroless hardened variant:
 docker build --target distroless -t rubrik-mcp:hardened .
 ```
 
-Mount `~/.rubrik` to `/config` to persist the policy file and any saved workflows:
+Mount `~/.config/rubrik-mcp` to `/config` to persist the policy file and any saved workflows:
 
 ```bash
 docker run --rm \
   -e RSC_SERVICE_ACCOUNT_FILE=/config/service_account.json \
-  -v ~/.rubrik:/config \
+  -v ~/.config/rubrik-mcp:/config \
   rubrik-mcp
 ```
 
@@ -330,7 +330,7 @@ MCP client config for Docker:
       "command": "docker",
       "args": ["run", "--rm", "-i",
                "-e", "RSC_SERVICE_ACCOUNT_FILE=/config/service_account.json",
-               "-v", "/Users/you/.rubrik:/config",
+               "-v", "/Users/you/.config/rubrik-mcp:/config",
                "rubrik-mcp"]
     }
   }
@@ -339,21 +339,21 @@ MCP client config for Docker:
 
 Note
 
-On **Linux**, create `~/.rubrik` before running. If Docker creates it, the directory will be owned by root.
+On **Linux**, create `~/.config/rubrik-mcp` before running. If Docker creates it, the directory will be owned by root.
 
 ```bash
-mkdir -p ~/.rubrik
+mkdir -p ~/.config/rubrik-mcp
 ```
 
 On **macOS** and **Windows**, Docker Desktop handles directory ownership automatically.
 
-| Variable                   | Description                                                                                         |
-| -------------------------- | --------------------------------------------------------------------------------------------------- |
-| `RSC_SERVICE_ACCOUNT_FILE` | Path to the service account JSON file (inside the container).                                       |
-| `RSC_URL`                  | RSC tenant URL (alternative to service account file).                                               |
-| `RSC_CLIENT_ID`            | Service account client ID (alternative to service account file).                                    |
-| `RSC_CLIENT_SECRET`        | Service account client secret (alternative to service account file).                                |
-| `RUBRIK_MCP_CONFIG_DIR`    | Override the config directory. Defaults to `~/.rubrik` (or `/config` in the official Docker image). |
+| Variable                   | Description                                                                                                    |
+| -------------------------- | -------------------------------------------------------------------------------------------------------------- |
+| `RSC_SERVICE_ACCOUNT_FILE` | Path to the service account JSON file (inside the container).                                                  |
+| `RSC_URL`                  | RSC tenant URL (alternative to service account file).                                                          |
+| `RSC_CLIENT_ID`            | Service account client ID (alternative to service account file).                                               |
+| `RSC_CLIENT_SECRET`        | Service account client secret (alternative to service account file).                                           |
+| `RUBRIK_MCP_CONFIG_DIR`    | Override the config directory. Defaults to `~/.config/rubrik-mcp` (or `/config` in the official Docker image). |
 
 ### Offline Distribution
 
