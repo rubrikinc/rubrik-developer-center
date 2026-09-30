@@ -55,6 +55,7 @@
   --aura-blue-8: #0c2448;
 
   --aura-deep-blue-1: #081d3f;
+  --aura-deep-blue-2: #071d3e;
   --aura-deep-blue-3: #03142e;
   --aura-deep-blue-4: #020f24;
 
@@ -398,9 +399,159 @@
   color: var(--aura-teal-3);
 }
 
+/* Homepage MCP splash. Two looks, chosen per scheme:
+   - slate: Aura's Deep theme (aura-ui Themes/DeepTheme.tsx, which inherits
+     anything it does not set from DarkTheme.tsx). Aura has no hero
+     component; Deep is its spec for a dark, immersive surface.
+   - default: a deepBlue-to-teal7 banner with a teal3 primary button. Not an
+     Aura spec; chosen over Deep for the light scheme after comparing both.
+   Component rules below read only the --hero-* tokens. */
+.md-typeset .mcp-hero {
+  --hero-surface: var(--aura-deep-blue-2);
+  --hero-border: rgba(255, 255, 255, 0.24);
+  --hero-text-strong: var(--aura-white);
+  --hero-text-moderate: rgba(255, 255, 255, 0.8);
+  --hero-code-bg: var(--aura-deep-blue-4);
+  --hero-card-bg: linear-gradient(-45deg, rgba(47, 202, 255, 0.08), rgba(29, 161, 220, 0.08));
+  --hero-card-border: rgba(255, 255, 255, 0.24);
+  --hero-primary-bg: var(--aura-teal-5);
+  --hero-primary-bg-hover: var(--aura-teal-4);
+  --hero-primary-text: var(--aura-white);
+  --hero-primary-text-hover: var(--aura-white);
+  --hero-secondary-border: var(--aura-grey-2);
+  --hero-secondary-border-hover: var(--aura-grey-2);
+  --hero-secondary-bg-hover: rgba(77, 210, 210, 0.16);
+  --hero-secondary-text: var(--aura-white);
+  --hero-secondary-text-hover: var(--aura-white);
+
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  margin: 1.5rem 0 2rem;
+  padding: 1.75rem;
+  border-radius: 0.75rem;
+  border: 1px solid var(--hero-border);
+  background: var(--hero-surface);
+  color: var(--hero-text-strong);
+}
+
+[data-md-color-scheme="default"] .md-typeset .mcp-hero {
+  --hero-surface:
+    radial-gradient(120% 140% at 100% 0%, rgba(9, 168, 184, 0.35) 0%, transparent 55%),
+    linear-gradient(135deg, var(--aura-deep-blue-3) 0%, var(--aura-teal-7) 100%);
+  --hero-border: rgba(77, 210, 210, 0.25);
+  --hero-text-moderate: rgba(255, 255, 255, 0.85);
+  --hero-code-bg: rgba(0, 0, 0, 0.35);
+  --hero-card-bg: rgba(255, 255, 255, 0.08);
+  --hero-card-border: rgba(255, 255, 255, 0.14);
+  --hero-primary-bg: var(--aura-teal-3);
+  --hero-primary-bg-hover: var(--aura-teal-2);
+  --hero-primary-text: var(--aura-deep-blue-3);
+  --hero-primary-text-hover: var(--aura-deep-blue-3);
+  --hero-secondary-border: rgba(255, 255, 255, 0.6);
+  --hero-secondary-border-hover: var(--aura-teal-2);
+  --hero-secondary-bg-hover: var(--aura-teal-2);
+  --hero-secondary-text-hover: var(--aura-deep-blue-3);
+}
+
+@media screen and (min-width: 60em) {
+  .md-typeset .mcp-hero {
+    grid-template-columns: 3fr 2fr;
+    align-items: center;
+    padding: 2.25rem 2.5rem;
+  }
+}
+
+.md-typeset .mcp-hero h2 {
+  margin: 0.5rem 0 0.75rem;
+  color: var(--hero-text-strong);
+  font-weight: 700;
+}
+
+.md-typeset .mcp-hero p {
+  color: var(--hero-text-moderate);
+}
+
+/* Teal3 matches .accent-text on slate, the site's accent on dark surfaces. */
+.md-typeset .mcp-hero__eyebrow,
+.md-typeset .mcp-hero__label {
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--aura-teal-3);
+}
+
+.md-typeset .mcp-hero .highlight pre > code {
+  background-color: var(--hero-code-bg);
+  color: var(--hero-text-strong);
+}
+
+.md-typeset .mcp-hero .md-button {
+  margin: 0.25rem 0.5rem 0.25rem 0;
+  background-color: transparent;
+  border-color: var(--hero-secondary-border);
+  color: var(--hero-secondary-text);
+}
+
+.md-typeset .mcp-hero .md-button:hover,
+.md-typeset .mcp-hero .md-button:focus {
+  background-color: var(--hero-secondary-bg-hover);
+  border-color: var(--hero-secondary-border-hover);
+  color: var(--hero-secondary-text-hover);
+}
+
+.md-typeset .mcp-hero .md-button--primary {
+  background-color: var(--hero-primary-bg);
+  border-color: var(--hero-primary-bg);
+  color: var(--hero-primary-text);
+}
+
+.md-typeset .mcp-hero .md-button--primary:hover,
+.md-typeset .mcp-hero .md-button--primary:focus {
+  background-color: var(--hero-primary-bg-hover);
+  border-color: var(--hero-primary-bg-hover);
+  color: var(--hero-primary-text-hover);
+}
+
+.md-typeset .mcp-hero__prompts {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+/* Chat-bubble corners: the flat bottom-left reads as a message. */
+.md-typeset .mcp-hero__prompt {
+  margin: 0;
+  padding: 0.7rem 0.9rem;
+  border-radius: 0.6rem 0.6rem 0.6rem 0.15rem;
+  background: var(--hero-card-bg);
+  border: 1px solid var(--hero-card-border);
+  font-size: 0.8rem;
+  line-height: 1.4;
+}
+
 .md-typeset a:hover,
 .md-typeset a:focus {
   color: var(--aura-link-hover);
+}
+
+/* Homepage MCP launch video, directly under the mcp-hero banner. Reuses the
+   same dark surface as mcp-hero's slate scheme for both color schemes, since
+   a video frame reads best against a consistently dark background. */
+.md-typeset .mcp-video {
+  margin: 0 0 2rem;
+  padding: 1rem;
+  border-radius: 0.75rem;
+  border: 1px solid rgba(255, 255, 255, 0.24);
+  background: var(--aura-deep-blue-2);
+}
+
+.md-typeset .mcp-video__player {
+  display: block;
+  width: 100%;
+  border-radius: 0.5rem;
+  background: var(--aura-deep-blue-4);
 }
 
 /* ==========================================================================
