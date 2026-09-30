@@ -191,15 +191,6 @@ The server seeds three starter workflows into `~/.config/rubrik-mcp/workflows/` 
 | `rsc_protection_gaps` | Return out-of-compliance workloads combined with backup failures from the last 24 hours in a single report. |
 | `rsc_snapshot_and_wait` | Take an on-demand snapshot for a cloud-native workload given its FID and object type, then poll until the job reaches a terminal state. |
 
-### Community Workflows
-
-Additional workflows are available from the [rubrik-community](https://github.com/rubrikinc/rubrik-community) repository. Install them by downloading the JSON files into `~/.config/rubrik-mcp/workflows/` and restarting the server.
-
-| Workflow | Description |
-|---------|-------------|
-| `rsc_threat_triage_for_workload` | Full incident-response sweep for a workload: anomaly detection, threat monitoring matches, sensitive data exposure, and quarantined file list. |
-| `rsc_fileset_partial_success_detail` | Detailed reasons for fileset `PARTIAL_SUCCESS` backup events in the last 24 hours: skipped files, VSS failures, and metadata scan errors. |
-
 ## Advanced Usage
 ---
 
