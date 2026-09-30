@@ -1,3 +1,17 @@
+- **Rubrik MCP Server**
+
+  ______________________________________________________________________
+
+  - Connect Claude to Rubrik Security Cloud
+  - Natural-language querying, protection, and recovery
+  - Extend with custom saved workflows
+
+  ______________________________________________________________________
+
+  [Get Started](https://developer.rubrik.com/SDKs-and-Tools/Rubrik-MCP/index.md)
+
+  [GitHub Project](https://github.com/rubrikinc/rubrik-mcp)
+
 - **Rubrik Security Cloud PowerShell Module**
 
   ______________________________________________________________________
