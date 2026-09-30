@@ -536,11 +536,11 @@
   color: var(--aura-link-hover);
 }
 
-/* Homepage MCP launch video, directly under the mcp-hero banner. Reuses the
+/* Homepage MCP launch video, directly above the mcp-hero banner. Reuses the
    same dark surface as mcp-hero's slate scheme for both color schemes, since
    a video frame reads best against a consistently dark background. */
 .md-typeset .mcp-video {
-  margin: 0 0 2rem;
+  margin: 0 0 1.5rem;
   padding: 1rem;
   border-radius: 0.75rem;
   border: 1px solid rgba(255, 255, 255, 0.24);
