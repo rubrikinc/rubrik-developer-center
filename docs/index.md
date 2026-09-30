@@ -40,6 +40,15 @@ pip install rubrik-mcp
 
 </div>
 
+<div class="mcp-video" markdown>
+
+<video class="mcp-video__player" controls preload="metadata">
+  <source src="assets/video/mcp-launch.mp4" type="video/mp4">
+  Your browser does not support embedded video. <a href="assets/video/mcp-launch.mp4">Download the video</a>.
+</video>
+
+</div>
+
 <div class="grid cards" markdown>
 
 -   :material-rocket-launch-outline:{ .lg .middle } __Start here__
