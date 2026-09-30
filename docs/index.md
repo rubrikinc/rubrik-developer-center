@@ -9,6 +9,15 @@ hide:
 
 Every workload, policy, event, and recovery in Rubrik Security Cloud is reachable through a single GraphQL API. Pick a task below, or get a token and make your first call.
 
+<div class="mcp-video" markdown>
+
+<video class="mcp-video__player" controls preload="metadata" poster="assets/video/mcp-launch-poster.jpg">
+  <source src="assets/video/mcp-launch.mp4" type="video/mp4">
+  Your browser does not support embedded video. <a href="assets/video/mcp-launch.mp4">Download the video</a>.
+</video>
+
+</div>
+
 <div class="mcp-hero" markdown>
 
 <div class="mcp-hero__pitch" markdown>
@@ -37,15 +46,6 @@ pip install rubrik-mcp
 <p class="mcp-hero__prompt">List all clusters and their storage runway.</p>
 
 </div>
-
-</div>
-
-<div class="mcp-video" markdown>
-
-<video class="mcp-video__player" controls preload="metadata">
-  <source src="assets/video/mcp-launch.mp4" type="video/mp4">
-  Your browser does not support embedded video. <a href="assets/video/mcp-launch.mp4">Download the video</a>.
-</video>
 
 </div>
 
