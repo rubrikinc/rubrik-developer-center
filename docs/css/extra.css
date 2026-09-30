@@ -457,7 +457,6 @@
 @media screen and (min-width: 60em) {
   .md-typeset .mcp-hero {
     grid-template-columns: 3fr 2fr;
-    align-items: center;
     padding: 2.25rem 2.5rem;
   }
 }
@@ -470,6 +469,13 @@
 
 .md-typeset .mcp-hero p {
   color: var(--hero-text-moderate);
+}
+
+/* The eyebrow's containing <p> isn't a direct child of .md-typeset, so
+   Material's first-child margin reset doesn't reach it. Zero it explicitly
+   to align the eyebrow with the top of the video column. */
+.md-typeset .mcp-hero__pitch > :first-child {
+  margin-top: 0;
 }
 
 /* Teal3 matches .accent-text on slate, the site's accent on dark surfaces. */
@@ -536,15 +542,9 @@
   color: var(--aura-link-hover);
 }
 
-/* Homepage MCP launch video, directly above the mcp-hero banner. Reuses the
-   same dark surface as mcp-hero's slate scheme for both color schemes, since
-   a video frame reads best against a consistently dark background. */
-.md-typeset .mcp-video {
-  margin: 0 0 1.5rem;
-  padding: 1rem;
-  border-radius: 0.75rem;
-  border: 1px solid rgba(255, 255, 255, 0.24);
-  background: var(--aura-deep-blue-2);
+/* Homepage MCP launch video, the left column of the mcp-hero banner. */
+.md-typeset .mcp-hero .mcp-video {
+  margin: 0;
 }
 
 .md-typeset .mcp-video__player {
