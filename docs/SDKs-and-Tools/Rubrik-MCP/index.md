@@ -181,16 +181,6 @@ Workflows are multi-step sequences saved as named MCP tools. Once saved, they lo
 | `rsc_list_workflows` | List all saved workflows with name, description, step count, and file path. |
 | `rsc_delete_workflow` | Remove a saved workflow by name. The file is deleted from disk. |
 
-### Starter Workflows
-
-The server seeds three starter workflows into `~/.config/rubrik-mcp/workflows/` on first run.
-
-| Workflow | Description |
-|---------|-------------|
-| `rsc_find_and_snapshot` | Find a cloud-native workload by name, take an on-demand snapshot, and wait for it to complete. |
-| `rsc_protection_gaps` | Return out-of-compliance workloads combined with backup failures from the last 24 hours in a single report. |
-| `rsc_snapshot_and_wait` | Take an on-demand snapshot for a cloud-native workload given its FID and object type, then poll until the job reaches a terminal state. |
-
 ## Advanced Usage
 ---
 
