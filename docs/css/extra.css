@@ -826,6 +826,12 @@ td {
   font-variant-numeric: tabular-nums;
 }
 
+/* Identifiers (tool names, field names, flags) shouldn't line-wrap mid-token
+   inside a table cell — it reads as broken text rather than a single name. */
+.md-typeset table:not([class]) code {
+  white-space: nowrap;
+}
+
 /* ==========================================================================
    Layer 4 - Site components
    ========================================================================== */
