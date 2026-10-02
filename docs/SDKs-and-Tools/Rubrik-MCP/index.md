@@ -8,13 +8,13 @@ The Rubrik MCP Server exposes Rubrik Security Cloud (RSC) to AI agents through t
 Once connected, an agent can describe tasks in plain language and translate them into GraphQL operations against your RSC tenant: querying workloads, checking compliance, triggering backups, and more.
 
 - **Schema-aware** — the server exposes the full RSC GraphQL schema so agents can discover and validate operations before executing them.
-- **Write-safe** — write tools can be restricted via `mcp-policy.json`; disabled tools return a reviewed Python script instead of executing directly.
+- **Write-safe**: write tools stay off until you enable them in `mcp-policy.json`. Raw GraphQL mutations are never executed; the agent returns a Python script for you to review and run instead.
 - **Extensible** — save multi-step workflows as named tools using `rsc_save_workflow` and they reload automatically on next start.
 - **Rubrik supported.** Customer support is available for help with the server and built-in tools.
 
 ### Prerequisites
 ---
-- Python ≥ 3.10
+- [uv](https://docs.astral.sh/uv/getting-started/installation/) (recommended), or Python ≥ 3.10 with pip
 - A Rubrik Security Cloud Service Account
 
 ## Quick Install via AI Agent
@@ -26,7 +26,7 @@ If your AI agent supports tool installation, paste the following prompt to have 
 Install the Rubrik MCP Server. 
 
 Steps:
-1. Install the package: pip install rubrik-mcp
+1. Run it with uvx rubrik-mcp (requires uv; no separate install step). If uv isn't available, install it with pip install rubrik-mcp and use the full path to the rubrik-mcp command instead.
 2. Register it as an MCP server named "rubrik" using the appropriate config for this client, with RSC_SERVICE_ACCOUNT_FILE set to the path of my service account JSON file.
 3. Verify the server is connected and list the available tools.
 
@@ -38,12 +38,13 @@ Replace `/path/to/service_account.json` with the actual path before sending.
 ## Installation
 ---
 
-```bash
-# With pip
-pip install rubrik-mcp
+The recommended way to run the server is `uvx rubrik-mcp`. There is no separate install step: `uvx` downloads the package from PyPI into a cached, isolated environment and runs it. To pin a release, use `uvx rubrik-mcp@<version>`.
 
-# With uv
-uv pip install rubrik-mcp
+To install it into an environment yourself instead:
+
+```bash
+pip install rubrik-mcp
+which rubrik-mcp   # use this full path as the command in your client config
 ```
 
 The server speaks the MCP stdio transport and works with any MCP-compatible client. Register it using your client's configuration method.
@@ -51,7 +52,7 @@ The server speaks the MCP stdio transport and works with any MCP-compatible clie
 **Claude Code:**
 
 ```bash
-claude mcp add rubrik -e RSC_SERVICE_ACCOUNT_FILE=/path/to/service_account.json -- rubrik-mcp
+claude mcp add rubrik -e RSC_SERVICE_ACCOUNT_FILE=/path/to/service_account.json -- uvx rubrik-mcp
 ```
 
 **Claude Desktop** (`~/Library/Application Support/Claude/claude_desktop_config.json` on macOS):
@@ -60,7 +61,8 @@ claude mcp add rubrik -e RSC_SERVICE_ACCOUNT_FILE=/path/to/service_account.json 
 {
   "mcpServers": {
     "rubrik": {
-      "command": "rubrik-mcp",
+      "command": "uvx",
+      "args": ["rubrik-mcp"],
       "env": {
         "RSC_SERVICE_ACCOUNT_FILE": "/path/to/service_account.json"
       }
@@ -69,16 +71,21 @@ claude mcp add rubrik -e RSC_SERVICE_ACCOUNT_FILE=/path/to/service_account.json 
 }
 ```
 
+Desktop apps don't always inherit your shell's `PATH`. If Claude Desktop can't find `uvx`, replace `"uvx"` with its full path from `which uvx`.
+
 **Generic stdio MCP client:**
 
 ```json
 {
-  "command": "rubrik-mcp",
+  "command": "uvx",
+  "args": ["rubrik-mcp"],
   "env": {
     "RSC_SERVICE_ACCOUNT_FILE": "/path/to/service_account.json"
   }
 }
 ```
+
+If you installed with pip, set `"command"` to the full path of `rubrik-mcp` and remove `"args"`.
 
 ## Service Account Setup
 ---
@@ -148,7 +155,7 @@ These tools work without RSC credentials. The AI agent uses them to explore the 
 These tools require RSC credentials. All queries run against your live RSC tenant.
 
 !!! note
-    Write tools are enabled by default. See [Gating Policy](#gating-policy) to restrict or disable them. When a write tool is disabled, the server returns a reviewed Python script instead of executing the operation directly.
+    The write tools below (`rsc_take_on_demand_snapshot`, `rsc_assign_sla`, and `rsc_onboard_host`) are disabled by default and aren't offered to the agent until you enable them. See [Gating Policy](#gating-policy).
 
 | Tool | Description |
 |------|-------------|
@@ -186,11 +193,13 @@ Workflows are multi-step sequences saved as named MCP tools. Once saved, they lo
 
 ### Gating Policy
 
-The server seeds a policy file at `~/.config/rubrik-mcp/mcp-policy.json` on first run (mode `0600`). This file controls which write operations are allowed to execute directly versus generate as a reviewed Python script.
+If no policy file exists, the server creates one at `~/.config/rubrik-mcp/mcp-policy.json` on first run (mode `0600`). The policy controls which write tools the agent can use and which queries `rsc_execute_operation` will run. It works alongside your service account's RSC role: the role bounds what the account can do, and the policy bounds what the MCP server will do.
+
+The default policy (a `_comment` key at the top explains each setting):
 
 ```json
 {
-  "writes_enabled": true,
+  "writes_enabled": false,
   "write_tools": {
     "rsc_take_on_demand_snapshot": true,
     "rsc_assign_sla": true,
@@ -209,23 +218,27 @@ The server seeds a policy file at `~/.config/rubrik-mcp/mcp-policy.json` on firs
 
 | Key | Type | Description |
 |-----|------|-------------|
-| `writes_enabled` | boolean | Master switch for all write tools. Defaults to `true`. Set to `false` to block all write operations — the server returns a reviewed Python script instead of executing. |
-| `write_tools.<name>` | boolean | Per-tool override. Omitted tools default to enabled. Set `false` to disable a specific write tool even when `writes_enabled` is `true`. |
+| `writes_enabled` | boolean | Master switch for all write tools. Defaults to `false`, which means no write tools are offered to the agent. Set to `true` to enable them. |
+| `write_tools.<name>` | boolean | Per-tool override, applied only when `writes_enabled` is `true`. Omitted tools default to enabled. Set `false` to keep a specific write tool off. |
 | `queries.allow_by_default` | boolean | When `true`, all queries are allowed unless explicitly listed in `denied`. When `false`, only queries listed in `allowed` are permitted. |
 | `queries.denied` | array | List of query operation names that `rsc_execute_operation` will refuse to run. |
 | `queries.allowed` | array | When `allow_by_default` is `false`, the explicit allowlist of permitted operation names. |
 | `cross_mcp_egress.allowed` | array | List of non-Rubrik MCP servers a workflow step may call. Empty means no cross-MCP calls are permitted. |
 
 !!! warning
-    The server fails closed: a malformed or missing `mcp-policy.json` causes the server to refuse to start. Validate JSON syntax before saving changes.
+    The server fails closed: if `mcp-policy.json` exists but is malformed, the server refuses to start. Validate JSON syntax before saving changes. If the file is missing, the server creates a new default policy.
 
-To disable all writes except on-demand snapshots:
+Raw GraphQL mutations sent through `rsc_execute_operation` are never executed, whatever the policy says. The agent returns a Python script for you to review and run instead.
+
+To enable on-demand snapshots and keep the other write tools off:
 
 ```json
 {
-  "writes_enabled": false,
+  "writes_enabled": true,
   "write_tools": {
-    "rsc_take_on_demand_snapshot": true
+    "rsc_take_on_demand_snapshot": true,
+    "rsc_assign_sla": false,
+    "rsc_onboard_host": false
   }
 }
 ```
@@ -291,7 +304,7 @@ docker build --target distroless -t rubrik-mcp:hardened .
 Mount `~/.config/rubrik-mcp` to `/config` to persist the policy file and any saved workflows:
 
 ```bash
-docker run --rm \
+docker run --rm -i \
   -e RSC_SERVICE_ACCOUNT_FILE=/config/service_account.json \
   -v ~/.config/rubrik-mcp:/config \
   rubrik-mcp
@@ -332,10 +345,13 @@ MCP client config for Docker:
 
 ### Offline Distribution
 
-For air-gapped or restricted environments, build a self-contained tarball:
+For air-gapped or restricted environments, build a self-contained tarball on a connected machine with the same operating system, CPU architecture, and Python version as the target. Each release publishes a hash-pinned `requirements.txt` in the repository; download the one for the version you're installing:
 
 ```bash
-pip download rubrik-mcp --dest ./dist
+VERSION=0.8.20260914   # the rubrik-mcp version to install
+curl -LO "https://raw.githubusercontent.com/rubrikinc/rubrik-mcp/v${VERSION}/requirements.txt"
+pip download --require-hashes -r requirements.txt --dest ./dist
+pip download --no-deps "rubrik-mcp==${VERSION}" --dest ./dist
 tar -czf rubrik-mcp-offline.tar.gz ./dist requirements.txt
 ```
 
