@@ -1260,14 +1260,14 @@
 <p>Once connected, an agent can describe tasks in plain language and translate them into GraphQL operations against your RSC tenant: querying workloads, checking compliance, triggering backups, and more.</p>
 <ul>
 <li><strong>Schema-aware</strong> — the server exposes the full RSC GraphQL schema so agents can discover and validate operations before executing them.</li>
-<li><strong>Write-safe</strong> — write tools can be restricted via <code>mcp-policy.json</code>; disabled tools return a reviewed Python script instead of executing directly.</li>
+<li><strong>Write-safe</strong>: write tools stay off until you enable them in <code>mcp-policy.json</code>. Raw GraphQL mutations are never executed; the agent returns a Python script for you to review and run instead.</li>
 <li><strong>Extensible</strong> — save multi-step workflows as named tools using <code>rsc_save_workflow</code> and they reload automatically on next start.</li>
 <li><strong>Rubrik supported.</strong> Customer support is available for help with the server and built-in tools.</li>
 </ul>
 <h3 id="prerequisites">Prerequisites</h3>
 <hr />
 <ul>
-<li>Python ≥ 3.10</li>
+<li><a href="https://docs.astral.sh/uv/getting-started/installation/">uv</a> (recommended), or Python ≥ 3.10 with pip</li>
 <li>A Rubrik Security Cloud Service Account</li>
 </ul>
 <h2 id="quick-install-via-ai-agent">Quick Install via AI Agent</h2>
@@ -1276,7 +1276,7 @@
 <div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>Install the Rubrik MCP Server. 
 </span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>
 </span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>Steps:
-</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>1. Install the package: pip install rubrik-mcp
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>1. Run it with uvx rubrik-mcp (requires uv; no separate install step). If uv isn't available, install it with pip install rubrik-mcp and use the full path to the rubrik-mcp command instead.
 </span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>2. Register it as an MCP server named "rubrik" using the appropriate config for this client, with RSC_SERVICE_ACCOUNT_FILE set to the path of my service account JSON file.
 </span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>3. Verify the server is connected and list the available tools.
 </span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>
@@ -1285,36 +1285,39 @@
 <p>Replace <code>/path/to/service_account.json</code> with the actual path before sending.</p>
 <h2 id="installation">Installation</h2>
 <hr />
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="c1"># With pip</span>
-</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>pip<span class="w"> </span>install<span class="w"> </span>rubrik-mcp
-</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>
-</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="c1"># With uv</span>
-</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>uv<span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span>rubrik-mcp
+<p>The recommended way to run the server is <code>uvx rubrik-mcp</code>. There is no separate install step: <code>uvx</code> downloads the package from PyPI into a cached, isolated environment and runs it. To pin a release, use <code>uvx rubrik-mcp@&lt;version&gt;</code>.</p>
+<p>To install it into an environment yourself instead:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>pip<span class="w"> </span>install<span class="w"> </span>rubrik-mcp
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>which<span class="w"> </span>rubrik-mcp<span class="w">   </span><span class="c1"># use this full path as the command in your client config</span>
 </span></code></pre></div>
 <p>The server speaks the MCP stdio transport and works with any MCP-compatible client. Register it using your client's configuration method.</p>
 <p><strong>Claude Code:</strong></p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>claude<span class="w"> </span>mcp<span class="w"> </span>add<span class="w"> </span>rubrik<span class="w"> </span>-e<span class="w"> </span><span class="nv">RSC_SERVICE_ACCOUNT_FILE</span><span class="o">=</span>/path/to/service_account.json<span class="w"> </span>--<span class="w"> </span>rubrik-mcp
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>claude<span class="w"> </span>mcp<span class="w"> </span>add<span class="w"> </span>rubrik<span class="w"> </span>-e<span class="w"> </span><span class="nv">RSC_SERVICE_ACCOUNT_FILE</span><span class="o">=</span>/path/to/service_account.json<span class="w"> </span>--<span class="w"> </span>uvx<span class="w"> </span>rubrik-mcp
 </span></code></pre></div>
 <p><strong>Claude Desktop</strong> (<code>~/Library/Application Support/Claude/claude_desktop_config.json</code> on macOS):</p>
 <div class="language-json highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="p">{</span>
 </span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="w">  </span><span class="nt">"mcpServers"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
 </span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="w">    </span><span class="nt">"rubrik"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="w">      </span><span class="nt">"command"</span><span class="p">:</span><span class="w"> </span><span class="s2">"rubrik-mcp"</span><span class="p">,</span>
-</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="w">      </span><span class="nt">"env"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="w">        </span><span class="nt">"RSC_SERVICE_ACCOUNT_FILE"</span><span class="p">:</span><span class="w"> </span><span class="s2">"/path/to/service_account.json"</span>
-</span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a><span class="w">      </span><span class="p">}</span>
-</span><span id="__span-3-8"><a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a><span class="w">    </span><span class="p">}</span>
-</span><span id="__span-3-9"><a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a><span class="w">  </span><span class="p">}</span>
-</span><span id="__span-3-10"><a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a><span class="p">}</span>
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="w">      </span><span class="nt">"command"</span><span class="p">:</span><span class="w"> </span><span class="s2">"uvx"</span><span class="p">,</span>
+</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="w">      </span><span class="nt">"args"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">"rubrik-mcp"</span><span class="p">],</span>
+</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="w">      </span><span class="nt">"env"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a><span class="w">        </span><span class="nt">"RSC_SERVICE_ACCOUNT_FILE"</span><span class="p">:</span><span class="w"> </span><span class="s2">"/path/to/service_account.json"</span>
+</span><span id="__span-3-8"><a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a><span class="w">      </span><span class="p">}</span>
+</span><span id="__span-3-9"><a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-3-10"><a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a><span class="w">  </span><span class="p">}</span>
+</span><span id="__span-3-11"><a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a><span class="p">}</span>
 </span></code></pre></div>
+<p>Desktop apps don't always inherit your shell's <code>PATH</code>. If Claude Desktop can't find <code>uvx</code>, replace <code>"uvx"</code> with its full path from <code>which uvx</code>.</p>
 <p><strong>Generic stdio MCP client:</strong></p>
 <div class="language-json highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="p">{</span>
-</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="w">  </span><span class="nt">"command"</span><span class="p">:</span><span class="w"> </span><span class="s2">"rubrik-mcp"</span><span class="p">,</span>
-</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="w">  </span><span class="nt">"env"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="w">    </span><span class="nt">"RSC_SERVICE_ACCOUNT_FILE"</span><span class="p">:</span><span class="w"> </span><span class="s2">"/path/to/service_account.json"</span>
-</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="w">  </span><span class="p">}</span>
-</span><span id="__span-4-6"><a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a><span class="p">}</span>
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="w">  </span><span class="nt">"command"</span><span class="p">:</span><span class="w"> </span><span class="s2">"uvx"</span><span class="p">,</span>
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="w">  </span><span class="nt">"args"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">"rubrik-mcp"</span><span class="p">],</span>
+</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="w">  </span><span class="nt">"env"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="w">    </span><span class="nt">"RSC_SERVICE_ACCOUNT_FILE"</span><span class="p">:</span><span class="w"> </span><span class="s2">"/path/to/service_account.json"</span>
+</span><span id="__span-4-6"><a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a><span class="w">  </span><span class="p">}</span>
+</span><span id="__span-4-7"><a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a><span class="p">}</span>
 </span></code></pre></div>
+<p>If you installed with pip, set <code>"command"</code> to the full path of <code>rubrik-mcp</code> and remove <code>"args"</code>.</p>
 <h2 id="service-account-setup">Service Account Setup</h2>
 <hr />
 <p>Create a service account in RSC under <strong>Apps (waffle icon) → Settings → API Access → Service Accounts</strong>. Download the JSON credentials file. The file contains your client ID, client secret, and RSC token endpoint:</p>
@@ -1422,7 +1425,7 @@
 <p>These tools require RSC credentials. All queries run against your live RSC tenant.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Write tools are enabled by default. See <a href="#gating-policy">Gating Policy</a> to restrict or disable them. When a write tool is disabled, the server returns a reviewed Python script instead of executing the operation directly.</p>
+<p>The write tools below (<code>rsc_take_on_demand_snapshot</code>, <code>rsc_assign_sla</code>, and <code>rsc_onboard_host</code>) are disabled by default and aren't offered to the agent until you enable them. See <a href="#gating-policy">Gating Policy</a>.</p>
 </div>
 <table>
 <thead>
@@ -1506,9 +1509,10 @@
 <h2 id="advanced-usage">Advanced Usage</h2>
 <hr />
 <h3 id="gating-policy">Gating Policy</h3>
-<p>The server seeds a policy file at <code>~/.config/rubrik-mcp/mcp-policy.json</code> on first run (mode <code>0600</code>). This file controls which write operations are allowed to execute directly versus generate as a reviewed Python script.</p>
+<p>If no policy file exists, the server creates one at <code>~/.config/rubrik-mcp/mcp-policy.json</code> on first run (mode <code>0600</code>). The policy controls which write tools the agent can use and which queries <code>rsc_execute_operation</code> will run. It works alongside your service account's RSC role: the role bounds what the account can do, and the policy bounds what the MCP server will do.</p>
+<p>The default policy (a <code>_comment</code> key at the top explains each setting):</p>
 <div class="language-json highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="p">{</span>
-</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="w">  </span><span class="nt">"writes_enabled"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="w">  </span><span class="nt">"writes_enabled"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 </span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="w">  </span><span class="nt">"write_tools"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
 </span><span id="__span-6-4"><a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="w">    </span><span class="nt">"rsc_take_on_demand_snapshot"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
 </span><span id="__span-6-5"><a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a><span class="w">    </span><span class="nt">"rsc_assign_sla"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
@@ -1536,12 +1540,12 @@
 <tr>
 <td><code>writes_enabled</code></td>
 <td>boolean</td>
-<td>Master switch for all write tools. Defaults to <code>true</code>. Set to <code>false</code> to block all write operations — the server returns a reviewed Python script instead of executing.</td>
+<td>Master switch for all write tools. Defaults to <code>false</code>, which means no write tools are offered to the agent. Set to <code>true</code> to enable them.</td>
 </tr>
 <tr>
 <td><code>write_tools.&lt;name&gt;</code></td>
 <td>boolean</td>
-<td>Per-tool override. Omitted tools default to enabled. Set <code>false</code> to disable a specific write tool even when <code>writes_enabled</code> is <code>true</code>.</td>
+<td>Per-tool override, applied only when <code>writes_enabled</code> is <code>true</code>. Omitted tools default to enabled. Set <code>false</code> to keep a specific write tool off.</td>
 </tr>
 <tr>
 <td><code>queries.allow_by_default</code></td>
@@ -1567,15 +1571,18 @@
 </table>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
-<p>The server fails closed: a malformed or missing <code>mcp-policy.json</code> causes the server to refuse to start. Validate JSON syntax before saving changes.</p>
+<p>The server fails closed: if <code>mcp-policy.json</code> exists but is malformed, the server refuses to start. Validate JSON syntax before saving changes. If the file is missing, the server creates a new default policy.</p>
 </div>
-<p>To disable all writes except on-demand snapshots:</p>
+<p>Raw GraphQL mutations sent through <code>rsc_execute_operation</code> are never executed, whatever the policy says. The agent returns a Python script for you to review and run instead.</p>
+<p>To enable on-demand snapshots and keep the other write tools off:</p>
 <div class="language-json highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="p">{</span>
-</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="w">  </span><span class="nt">"writes_enabled"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="w">  </span><span class="nt">"writes_enabled"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
 </span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="w">  </span><span class="nt">"write_tools"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-7-4"><a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a><span class="w">    </span><span class="nt">"rsc_take_on_demand_snapshot"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span>
-</span><span id="__span-7-5"><a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a><span class="w">  </span><span class="p">}</span>
-</span><span id="__span-7-6"><a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a><span class="p">}</span>
+</span><span id="__span-7-4"><a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a><span class="w">    </span><span class="nt">"rsc_take_on_demand_snapshot"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+</span><span id="__span-7-5"><a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a><span class="w">    </span><span class="nt">"rsc_assign_sla"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+</span><span id="__span-7-6"><a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a><span class="w">    </span><span class="nt">"rsc_onboard_host"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span>
+</span><span id="__span-7-7"><a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a><span class="w">  </span><span class="p">}</span>
+</span><span id="__span-7-8"><a id="__codelineno-7-8" name="__codelineno-7-8" href="#__codelineno-7-8"></a><span class="p">}</span>
 </span></code></pre></div>
 <p>The config directory can be relocated using the <code>RUBRIK_MCP_CONFIG_DIR</code> environment variable. This is the recommended approach for Docker deployments.</p>
 <h3 id="custom-workflows">Custom Workflows</h3>
@@ -1622,7 +1629,7 @@
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>docker<span class="w"> </span>build<span class="w"> </span>--target<span class="w"> </span>distroless<span class="w"> </span>-t<span class="w"> </span>rubrik-mcp:hardened<span class="w"> </span>.
 </span></code></pre></div>
 <p>Mount <code>~/.config/rubrik-mcp</code> to <code>/config</code> to persist the policy file and any saved workflows:</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>docker<span class="w"> </span>run<span class="w"> </span>--rm<span class="w"> </span><span class="se">\</span>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>docker<span class="w"> </span>run<span class="w"> </span>--rm<span class="w"> </span>-i<span class="w"> </span><span class="se">\</span>
 </span><span id="__span-11-2"><a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a><span class="w">  </span>-e<span class="w"> </span><span class="nv">RSC_SERVICE_ACCOUNT_FILE</span><span class="o">=</span>/config/service_account.json<span class="w"> </span><span class="se">\</span>
 </span><span id="__span-11-3"><a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a><span class="w">  </span>-v<span class="w"> </span>~/.config/rubrik-mcp:/config<span class="w"> </span><span class="se">\</span>
 </span><span id="__span-11-4"><a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a><span class="w">  </span>rubrik-mcp
@@ -1678,9 +1685,12 @@
 </tbody>
 </table>
 <h3 id="offline-distribution">Offline Distribution</h3>
-<p>For air-gapped or restricted environments, build a self-contained tarball:</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-14-1"><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a>pip<span class="w"> </span>download<span class="w"> </span>rubrik-mcp<span class="w"> </span>--dest<span class="w"> </span>./dist
-</span><span id="__span-14-2"><a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a>tar<span class="w"> </span>-czf<span class="w"> </span>rubrik-mcp-offline.tar.gz<span class="w"> </span>./dist<span class="w"> </span>requirements.txt
+<p>For air-gapped or restricted environments, build a self-contained tarball on a connected machine with the same operating system, CPU architecture, and Python version as the target. Each release publishes a hash-pinned <code>requirements.txt</code> in the repository; download the one for the version you're installing:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-14-1"><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a><span class="nv">VERSION</span><span class="o">=</span><span class="m">0</span>.8.20260914<span class="w">   </span><span class="c1"># the rubrik-mcp version to install</span>
+</span><span id="__span-14-2"><a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a>curl<span class="w"> </span>-LO<span class="w"> </span><span class="s2">"https://raw.githubusercontent.com/rubrikinc/rubrik-mcp/v</span><span class="si">${</span><span class="nv">VERSION</span><span class="si">}</span><span class="s2">/requirements.txt"</span>
+</span><span id="__span-14-3"><a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a>pip<span class="w"> </span>download<span class="w"> </span>--require-hashes<span class="w"> </span>-r<span class="w"> </span>requirements.txt<span class="w"> </span>--dest<span class="w"> </span>./dist
+</span><span id="__span-14-4"><a id="__codelineno-14-4" name="__codelineno-14-4" href="#__codelineno-14-4"></a>pip<span class="w"> </span>download<span class="w"> </span>--no-deps<span class="w"> </span><span class="s2">"rubrik-mcp==</span><span class="si">${</span><span class="nv">VERSION</span><span class="si">}</span><span class="s2">"</span><span class="w"> </span>--dest<span class="w"> </span>./dist
+</span><span id="__span-14-5"><a id="__codelineno-14-5" name="__codelineno-14-5" href="#__codelineno-14-5"></a>tar<span class="w"> </span>-czf<span class="w"> </span>rubrik-mcp-offline.tar.gz<span class="w"> </span>./dist<span class="w"> </span>requirements.txt
 </span></code></pre></div>
 <p>Transfer the archive to the target machine and install from the local files:</p>
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-15-1"><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a>tar<span class="w"> </span>-xzf<span class="w"> </span>rubrik-mcp-offline.tar.gz
@@ -1707,7 +1717,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="September 30, 2026 03:23:00 UTC">2026-09-30</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="October 2, 2026 17:04:09 UTC">2026-10-02</span>
   </span>
 
     
