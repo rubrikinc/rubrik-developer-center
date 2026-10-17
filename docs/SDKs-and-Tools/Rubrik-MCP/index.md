@@ -106,7 +106,7 @@ Create a service account in RSC under **Apps (waffle icon) → Settings → API 
 
 ### Personal access token
 
-A PAT lets the server act as you. Create one in RSC from the user menu under **User Preferences > Personal Access Token**, then select **Download as JSON**. The file has the same keys as a service account file. The client ID starts with `pat|`, and `access_token_uri` ends in `/api/pat_login`:
+A PAT lets the server act as you. Create one in RSC and download the credentials as JSON (see [Personal access tokens](https://docs.rubrik.com/en-us/saas/saas/personal_access_tokens.html) in the RSC user guide). The file has the same keys as a service account file. The client ID starts with `pat|`, and `access_token_uri` ends in `/api/pat_login`:
 
 ```json
 {
@@ -116,7 +116,7 @@ A PAT lets the server act as you. Create one in RSC from the user menu under **U
 }
 ```
 
-Point `RSC_SERVICE_ACCOUNT_FILE` at this file. The variable name is the same for both credential types. See [Personal Access Tokens](../../Rubrik-Security-Cloud-API/authentication.md#personal-access-tokens) for session limits and token policy.
+Point `RSC_SERVICE_ACCOUNT_FILE` at this file. The variable name is the same for both credential types. See [Personal Access Tokens](../../Rubrik-Security-Cloud-API/authentication.md#personal-access-tokens) for how sessions work. A PAT allows a limited number of concurrent sessions, and logging in beyond that limit ends the oldest one, so running the server alongside other scripts that use the same PAT can sign those scripts out.
 
 !!! note
     PATs work only through a credentials file. The individual `RSC_URL`, `RSC_CLIENT_ID`, and `RSC_CLIENT_SECRET` variables always authenticate against the service account endpoint.
