@@ -125,24 +125,16 @@ Run the following command to revoke the session established for the service acco
     ```
 
 ## Personal Access Tokens
-A personal access token (PAT) is an API credential owned by an individual RSC user. A PAT inherits the roles of the user who created it, is scoped to a single organization, and every API call made with it is recorded in the audit log under that user. Like a service account, a PAT cannot be used to sign in to the Rubrik web UI. Each user can have one active PAT at a time.
+A personal access token (PAT) is an API credential owned by an individual RSC user. Calls made with a PAT run with that user's roles and are recorded in the audit log under that user. A PAT uses the same client ID and client secret token exchange as a service account, so tools that accept a service account credentials file also accept a PAT file.
 
-!!! note
-    Personal access tokens are available on RSC commercial (RSC-C) accounts.
+For creating, rotating, and deactivating a PAT, and for how administrators manage PAT policy, see [Personal access tokens](https://docs.rubrik.com/en-us/saas/saas/personal_access_tokens.html) in the Rubrik Security Cloud user guide.
 
-### Guidelines {#pat-guidelines}
-Consider the following best practices when using personal access tokens:
-
-  - Use a service account, not a PAT, for shared, server-side, or production automation. A PAT stops working when its owner leaves or is locked out of RSC.
-  - Don't create PATs on administrator accounts for automation. Create a local user or service account with a more limited access scope instead.
-  - The client secret is shown only once, when the PAT is created or rotated. Treat it like a password and store it in a secure location.
-  - If the secret is lost, rotate the PAT. Rotation issues a new secret and keeps the same PAT ID.
-  - Cache and reuse access tokens until they expire, rather than requesting a new one for every call.
-
-### Creating a personal access token
-Users with the `MANAGE_OWN_PERSONAL_ACCESS_TOKEN` permission (the **Personal Access Token > User** privilege in the role editor) can manage their own PAT. In RSC, open the user menu, select **User Preferences**, and use the **Personal Access Token** card to create, rotate, or deactivate your token. After creating a token, select **Copy Credentials** or **Download as JSON**.
-
-The downloaded file has the same keys as a service account credentials file. The PAT ID starts with `pat|`, and `access_token_uri` points to the `/api/pat_login` endpoint:
+### What to know before you use a PAT
+  - A PAT has the same permissions as your user account. Use a service account with a narrowly scoped role for shared, server-side, or production automation.
+  - A PAT stops working if your user is locked or removed from RSC, or if an administrator deactivates it.
+  - You can have one active PAT. Creating a PAT requires a role with the Personal Access Token permission; ask your RSC administrator if the option isn't available.
+  - The client secret is shown only once. Store it like a password. If you lose it, rotate the PAT: the PAT ID stays the same and you get a new secret.
+  - The PAT ID starts with `pat|`. The downloaded credentials file has the same keys as a service account file, with `access_token_uri` pointing to `/api/pat_login`:
 
 ```json
 {
@@ -152,11 +144,9 @@ The downloaded file has the same keys as a service account credentials file. The
 }
 ```
 
-Administrators with the `DEACTIVATE_OTHERS_PERSONAL_ACCESS_TOKEN` permission can view and deactivate other users' tokens, and set the organization's token policy, under **Settings > Users & Access > API Access > Personal Access Tokens**.
-
 ### Usage {#pat-usage}
 #### Obtaining an access token {#pat-obtaining-an-access-token}
-Post the PAT ID and secret to the RSC `pat_login` endpoint. The request body uses the same `client_id` and `client_secret` fields as a service account, and accepts either form-encoded or JSON content. An optional `session_ttl_minutes` field requests a shorter session than the organization's default.
+Post the PAT ID and secret to the RSC `pat_login` endpoint. The request body uses the same `client_id` and `client_secret` fields as a service account.
 === "Shell"
     ```bash
     --8<-- "code/Rubrik-Security-Cloud-API/pat.sh"
@@ -169,31 +159,30 @@ The response has the same shape as the service account response:
 ```
 
 #### Using the access token {#pat-using-the-access-token}
-The access token is used as a `Bearer` token in the `Authorization` header, exactly as with a service account. See [Using the access token](#using-the-access-token). To end a session before it expires, send `DELETE /api/session` as described in [Deleting a session](#deleting-a-session).
+Send the access token as a `Bearer` token in the `Authorization` header, exactly as with a service account. See [Using the access token](#using-the-access-token). To end a session before it expires, send `DELETE /api/session` as described in [Deleting a session](#deleting-a-session).
 
-#### Sessions and token policy
-Administrators set the following limits for all PATs in the organization:
+#### Sessions
+Each successful call to `/api/pat_login` starts a new session. Your RSC administrator sets the limits that apply to every PAT in the organization.
 
-| Setting | Minimum | Maximum | Default |
-|---|---|---|---|
-| Concurrent Sessions Limit | 2 | 10 | 3 |
-| Token Inactivity Timeout (days) | 28 | 366 | 100 |
-| Session Timeout (minutes) | | 2160 | 720 |
-
-  - `session_ttl_minutes` can shorten a session but can't exceed the Session Timeout.
-  - When a new login would exceed the Concurrent Sessions Limit, RSC ends the oldest session for that PAT. The new login succeeds.
-  - Inactivity is measured from the PAT's last login. A PAT that passes the Token Inactivity Timeout is deactivated at its next login attempt.
-  - Rotating or deactivating a PAT ends all of its sessions immediately. Locking the owning user deactivates the PAT.
+  - **Concurrent sessions.** A PAT can hold a limited number of active sessions (3 by default). When a new login would exceed the limit, RSC ends the oldest session and the new login succeeds. A script that logs in on every run can end a session that another script is still using, so cache and reuse the access token until it expires.
+  - **Session length.** Sessions last 12 hours by default, up to a maximum your administrator sets. Add `session_ttl_minutes` to the request body to ask for a shorter session.
+  - **Inactivity.** A PAT that hasn't been used to log in for the organization's inactivity period (100 days by default) is deactivated at its next login attempt.
+  - **Rotation and deactivation.** Rotating or deactivating a PAT ends all of its sessions immediately. Update every tool that uses the PAT after you rotate it.
 
 #### Errors {#pat-errors}
-  - **HTTP 403** from `/api/pat_login` with the message "Personal Access Token feature has not been enabled on RSC" means PATs are not enabled for the account.
+  - **HTTP 403** from `/api/pat_login` with the message "Personal Access Token feature has not been enabled on RSC" means PATs are not enabled for your account.
   - A PAT ID sent to `/api/client_token` fails. Use `/api/pat_login` for PATs and `/api/client_token` for service accounts.
 
 ### Rubrik CDM {#pat-cdm}
-A PAT created in RSC can also open a session directly on a Rubrik cluster. Post the credentials to the cluster's `/api/v1/personal_access_token/session` endpoint. The cluster forwards the request to RSC for validation. Note that the CDM request body uses camelCase field names (`clientId`, `clientSecret`), and the session token is returned in the `token` field.
+A PAT created in RSC can also open a session directly on a Rubrik cluster, for use with the CDM REST API. Send the request to the cluster's own address, not to RSC: `POST https://<cluster-address>/api/v1/personal_access_token/session`. The CDM request body uses camelCase field names (`clientId`, `clientSecret`), and the session token is returned in the `token` field.
 === "Shell"
     ```bash
     --8<-- "code/Rubrik-Security-Cloud-API/patCdm.sh"
     ```
 
-PAT sessions on CDM require Rubrik CDM 9.5.2 or later.
+The cluster forwards the login to RSC for validation. Starting with CDM 9.6.1, the cluster also supports break-glass access: if the cluster can't reach RSC, it validates the PAT locally against a copy synced from RSC, so you can still authenticate during an RSC outage. If RSC is reachable and rejects the credentials, the cluster does not fall back to local validation.
+
+| Capability | Minimum CDM version |
+|---|---|
+| PAT sessions on CDM | 9.5.2 |
+| Break-glass access when RSC is unreachable | 9.6.1 |
