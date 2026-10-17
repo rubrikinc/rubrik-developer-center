@@ -13,7 +13,7 @@ Root of AWS native hierarchy.
 | Field | Argument | Type | Description |
 |-------|----------|------|-------------|
 | objectTypeDescendantConnection | first | Int | Returns the first n elements from the list. |
-| objectTypeDescendantConnection | after | String | Returns the elements in the list that occur after the specified cursor. |
+| objectTypeDescendantConnection | after | String | An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results. |
 | objectTypeDescendantConnection | sortBy | [HierarchySortByField](../enums/HierarchySortByField.md) | Sort hierarchy objects according to the hierarchy field. |
 | objectTypeDescendantConnection | sortOrder | [SortOrder](../enums/SortOrder.md) | Sorts the order of results. |
 | objectTypeDescendantConnection | objectTypeFilter *(required)* | [HierarchyObjectTypeEnum](../enums/HierarchyObjectTypeEnum.md)! | Type of objects to include. |

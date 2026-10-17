@@ -7,9 +7,11 @@ Paginated list of Microsoft SQL log shipping target.
 | Argument | Type | Description |
 |----------|------|-------------|
 | first | Int | Returns the first n elements from the list. |
-| after | String | Returns the elements in the list that occur after the specified cursor. |
+| after | String | An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results. |
+| last | Int | Returns the last n elements from the list. |
+| before | String | An opaque cursor returned from a previous query's startCursor field. Pass this value verbatim to retrieve the previous page of results. |
+| filters | [[MssqlLogShippingTargetFilterInput](../types/inputs/MssqlLogShippingTargetFilterInput.md)!] | Filters for MSSQL log shipping targets. No filters by default. |
 | sortBy | [MssqlLogShippingTargetSortByInput](../types/inputs/MssqlLogShippingTargetSortByInput.md) | Sort by argument for MSSQL log shipping targets. Default sort is by ID in ascending order. |
-| filters | [[MssqlLogShippingTargetFilterInput](../types/inputs/MssqlLogShippingTargetFilterInput.md)!] | Filters for Mssql log shipping targets. No filters by default. |
 
 ## Returns
 

@@ -1,6 +1,6 @@
 # addClusterRoute
 
-Add a new route config to all hosts in a Rubrik cluster. Supported in Rubrik CDM v5.0+
+Add a new route config to all hosts  Supported in v5.0+ Add a new route config to all hosts.
 
 ## Arguments
 

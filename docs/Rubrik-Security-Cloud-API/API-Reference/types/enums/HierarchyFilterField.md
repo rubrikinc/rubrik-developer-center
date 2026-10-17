@@ -267,6 +267,7 @@ Fields for filtering hierarchy objects.
 | LIST_APPLICATION_FILTER | Filter for listing cloud native applications. Encodes filters specific to the cloud_native_application table. texts format: "cloud_type:<VALUE>" or "protection_status:<VALUE>". Multiple entries of the same key are OR-combined; different keys are AND-combined. |
 | LOCATION | Filter by location or path of an object. |
 | M365_BACKUP_STORAGE_PROTECTION_STATUS_MISMATCH | Filter objects with mismatched SLA Domain and backup storage protection status. |
+| M365_OBJECT_STATUS | Filter M365 objects by their derived object status. Texts accepts one or more of "PROTECTED", "UNPROTECTED", "RELIC", "UNLICENSED"; an object matches when its status is any of them.  Status is a single value per object, resolved in precedence order RELIC > UNPROTECTED > UNLICENSED > PROTECTED, so the statuses partition the result set rather than overlapping. Only Mailbox and OneDrive carry licensing, so Sites and Teams are never UNLICENSED. |
 | M365_PREFERRED_DATA_LOCATION | Filter by preferred data location. Applicable for M365 workloads. |
 | MANAGED_VOLUME_EXPORT_ID | Filter by Managed Volume Export ID. |
 | MANAGED_VOLUME_EXPORT_MOUNT_TYPE | Filter according to the Managed Volume export mount type. |
@@ -394,7 +395,10 @@ Fields for filtering hierarchy objects.
 | SAP_HANA_SYSTEM_ID | Filter by the ID of parent SAP HANA system. |
 | SAP_HANA_SYSTEM_SID | Filter by SID of SapHanaSystem. |
 | SAP_HANA_SYSTEM_STATUS | Filter by status of SapHanaSystem. |
+| SECURITY_NOTIFICATION_MUTE_STATUS | Filter by whether the object is muted for either Threat Monitoring or Anomaly Detection security notifications. Combine with `texts`: texts = ["MUTED"] for the Muted bucket, texts = ["ACTIVE"] for the Active bucket. Omit the filter entirely for "All". Gated on the REL_ENABLE_DTA_OBJECT_MUTE feature flag; passing this filter for an account where the flag is off is rejected. |
 | SENSITIVITY_STATUS | Filter by sensitivity status. |
+| SNAPSHOT_TIME_RANGE | Filter M365 objects having at least one unexpired snapshot taken within a time window. Texts[0] is the RFC3339 start and Texts[1] the RFC3339 end, both inclusive. |
+| SNAPSHOT_TYPE | Filter M365 objects having at least one unexpired snapshot of the given type. Texts accepts one or more of "ON_DEMAND", "POLICY_BASED". |
 | TOP_LEVEL_SITES_OF_O365_ORG | Filter objects that are top level sites of all the O365 Orgs. Note that an org ID is not passed as a filter here so the top level sites under all the O365 orgs are returned. |
 | UDF_DATABASE_TYPE *(deprecated: Not implemented - no longer used.)* | Filter based on type of database in UDF schema. |
 | VCD_VAPP_TYPE | Filter vCD vApps by type. |

@@ -23,6 +23,7 @@
         cdmLink
         id
         isReplica
+        legallyHeldSnapshotCount
         name
         numWorkloadDescendants
         objectType

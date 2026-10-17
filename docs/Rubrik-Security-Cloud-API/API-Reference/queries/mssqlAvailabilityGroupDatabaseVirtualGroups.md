@@ -7,7 +7,9 @@ Paginated list of virtual groups for MSSQL databases.
 | Argument | Type | Description |
 |----------|------|-------------|
 | first | Int | Returns the first n elements from the list. |
-| after | String | Returns the elements in the list that occur after the specified cursor. |
+| after | String | An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results. |
+| last | Int | Returns the last n elements from the list. |
+| before | String | An opaque cursor returned from a previous query's startCursor field. Pass this value verbatim to retrieve the previous page of results. |
 | fids *(required)* | [[UUID](../types/scalars/UUID.md)!]! | The Rubrik UUIDs for the objects. |
 | filters | [[MssqlAvailabilityGroupDatabaseVirtualGroupFilterInput](../types/inputs/MssqlAvailabilityGroupDatabaseVirtualGroupFilterInput.md)!] | Filters for MSSQL availability group database virtual groups. The default is no filters, and all objects are returned. |
 | sortBy | [MssqlAvailabilityGroupDatabaseVirtualGroupSortByInput](../types/inputs/MssqlAvailabilityGroupDatabaseVirtualGroupSortByInput.md) | Sort by argument is for MSSQL availability group database virtual groups. By default, sort according to ID in ascending order. |

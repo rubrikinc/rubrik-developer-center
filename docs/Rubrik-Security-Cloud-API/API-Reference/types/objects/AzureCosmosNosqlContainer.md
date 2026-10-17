@@ -20,18 +20,20 @@ An Azure Cosmos NoSQL container. Refers to the unit of scalability and the item 
 | conflictResolutionPath | String! | Item path compared to resolve conflicts when conflictResolutionMode is LastWriterWins. Example: /_ts. |
 | conflictResolutionProcedure | String! | Stored procedure that resolves conflicts when conflictResolutionMode is Custom. |
 | containerName | String! | Name of the Azure Cosmos NoSQL container. |
-| cosmosDbDatabaseId | String! | Rubrik ID of the Azure Cosmos NoSQL database that owns the container. |
+| cosmosDbDatabaseId | [UUID](../scalars/UUID.md)! | Rubrik ID of the Azure Cosmos NoSQL database that owns the container. |
 | databaseName | String! | Name of the Azure Cosmos NoSQL database that owns the container. |
 | defaultTtlSeconds | Int! | Time-to-live in seconds applied to items that do not set their own. |
 | effectiveRetentionSlaDomain | [SlaDomain](../interfaces/SlaDomain.md) | Effective retention of the SLA Domain of the hierarchy object. |
 | effectiveSlaDomain | [SlaDomain](../interfaces/SlaDomain.md)! | Effective SLA Domain of the hierarchy object. |
 | effectiveSlaSourceObject | [PathNode](PathNode.md) | Path node of the effective SLA Domain source. |
 | excludedPathCount | Int! | Number of excluded paths in the indexing policy of the container. |
+| futureLegalHoldInfo | [FutureLegalHoldInfo](FutureLegalHoldInfo.md) | Future legal hold rule configured for this object, if any. |
 | id | [UUID](../scalars/UUID.md)! | ID of the hierarchy object. |
 | indexedPathCount | Int! | Number of included paths in the indexing policy of the container. |
 | indexingMode | String! | Indexing mode of the container. Examples: consistent, lazy, none. |
 | isIndexingAutomatic | Boolean! | Specifies whether the container indexes items automatically. |
 | isRelic | Boolean! | Specifies whether the Azure Cosmos NoSQL container is a relic or not. A container is a relic when it is unprotected or deleted, but the previously taken snapshots of the container continue to exist within the Rubrik ecosystem. |
+| legallyHeldSnapshotCount | Int | Number of snapshots on legal hold for this object. |
 | logicalPath | [[PathNode](PathNode.md)!]! | Sequential list of the logical ancestors of this object. |
 | name | String! | Name of the hierarchy object. |
 | newestIndexedSnapshot | [PolarisSnapshot](PolarisSnapshot.md) | The latest snapshot that is indexed and unexpired, and therefore restorable. |
@@ -46,7 +48,7 @@ An Azure Cosmos NoSQL container. Refers to the unit of scalability and the item 
 | physicalPath | [[PathNode](PathNode.md)!]! | Sequential list of the physical ancestors of this object. |
 | region | [AzureNativeRegion](../enums/AzureNativeRegion.md)! | Azure region where the Azure Cosmos NoSQL container is located. |
 | rscNativeObjectPendingSla | [CompactSlaDomain](CompactSlaDomain.md) | SLA Domain assignment which is pending on the Rubrik Security Cloud native objects. |
-| rscPendingObjectPauseAssignment | [PendingObjectPauseAssignmentStatus](../enums/PendingObjectPauseAssignmentStatus.md) | Object pause pending assignment details for RSC objects. |
+| rscPendingObjectPauseAssignment | [PendingObjectPauseAssignmentStatus](../enums/PendingObjectPauseAssignmentStatus.md) | Pending pause or unpause assignment for RSC-native objects. |
 | securityMetadata | [SecurityMetadata](SecurityMetadata.md) | Security posture metadata. |
 | slaAssignment | [SlaAssignmentTypeEnum](../enums/SlaAssignmentTypeEnum.md)! | SLA Domain assignment type for this object. |
 | slaPauseStatus | Boolean! | Pause status of the effective SLA Domain of the hierarchy object. |

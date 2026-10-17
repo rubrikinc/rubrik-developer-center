@@ -1,6 +1,6 @@
 # updateAzureAccount
 
-*No description available.*
+Updates an existing Azure cloud account.
 
 ## Arguments
 

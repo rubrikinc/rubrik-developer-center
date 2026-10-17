@@ -34,6 +34,7 @@ Retrieves an Azure Postgres Flexible Server. For more information, see https://l
         isProtectable
         isPublicNetworkAccess
         isRelic
+        legallyHeldSnapshotCount
         name
         nativeName
         numWorkloadDescendants

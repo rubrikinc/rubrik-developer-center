@@ -14,6 +14,7 @@ An Azure Native Subscription. Refers to the logical entity that provides entitle
 | applicationCloudAccountExoConfigs | [AzureApplicationCloudAccountToExocomputeConfig](AzureApplicationCloudAccountToExocomputeConfig.md)! | List of Exocompute configurations for the Azure subscription. |
 | authorizedOperations | [[PolarisObjectAuthorizedOperationsEnum](../enums/PolarisObjectAuthorizedOperationsEnum.md)!]! | The authorized operations on the object. |
 | azureCloudType | [AzureCloudType](../enums/AzureCloudType.md)! | Type of Azure cloud, for example, Azure Public Cloud and Azure China Cloud. |
+| azureCosmosNosqlContainerCount | Int! | The number of Azure Cosmos NoSQL containers in the subscription. |
 | azureNativeResourceGroups | [AzureNativeResourceGroupConnection](AzureNativeResourceGroupConnection.md)! | Paginated list of all Azure Resource Groups in the subscription. |
 | azurePostgresFlexibleServerCount | Int! | The number of Azure PostgreSQL Flexible Servers in the subscription. |
 | azureSqlDatabaseDbCount | Int! | Count of Azure SQL databases in the subscription. |
@@ -28,9 +29,11 @@ An Azure Native Subscription. Refers to the logical entity that provides entitle
 | effectiveSlaDomain | [SlaDomain](../interfaces/SlaDomain.md)! | Effective SLA Domain of the hierarchy object. |
 | effectiveSlaSourceObject | [PathNode](PathNode.md) | Path node of the effective SLA Domain source. |
 | enabledFeatures | [[AzureNativeSubscriptionEnabledFeature](AzureNativeSubscriptionEnabledFeature.md)!]! | Details of features enabled for the subscription. |
+| futureLegalHoldInfo | [FutureLegalHoldInfo](FutureLegalHoldInfo.md) | Future legal hold rule configured for this object, if any. |
 | id | [UUID](../scalars/UUID.md)! | ID of the hierarchy object. |
 | isProtectable | Boolean! | Whether the subscription is protectable for the specified protection features. |
 | lastRefreshedAt | [DateTime](../scalars/DateTime.md) | Last refresh time of the subscription, in UTC date-time format. |
+| legallyHeldSnapshotCount | Int | Number of snapshots on legal hold for this object. |
 | logicalPath | [[PathNode](PathNode.md)!]! | Sequential list of the logical ancestors of this object. |
 | name | String! | Name of the hierarchy object. |
 | numWorkloadDescendants | Int! | Number of descendant workloads of this object. |
@@ -40,7 +43,7 @@ An Azure Native Subscription. Refers to the logical entity that provides entitle
 | physicalPath | [[PathNode](PathNode.md)!]! | Sequential list of the physical ancestors of this object. |
 | regionSpecs | [[AzureNativeRegionSpec](AzureNativeRegionSpec.md)!]! | List of Azure region specifications associated with the subscription. |
 | rscNativeObjectPendingSla | [CompactSlaDomain](CompactSlaDomain.md) | SLA Domain assignment which is pending on the Rubrik Security Cloud native objects. |
-| rscPendingObjectPauseAssignment | [PendingObjectPauseAssignmentStatus](../enums/PendingObjectPauseAssignmentStatus.md) | Object pause pending assignment details for RSC objects. |
+| rscPendingObjectPauseAssignment | [PendingObjectPauseAssignmentStatus](../enums/PendingObjectPauseAssignmentStatus.md) | Pending pause or unpause assignment for RSC-native objects. |
 | securityMetadata | [SecurityMetadata](SecurityMetadata.md) | Security posture metadata. |
 | slaAssignment | [SlaAssignmentTypeEnum](../enums/SlaAssignmentTypeEnum.md)! | SLA Domain assignment type for this object. |
 | slaPauseStatus | Boolean! | Pause status of the effective SLA Domain of the hierarchy object. |
@@ -54,9 +57,9 @@ An Azure Native Subscription. Refers to the logical entity that provides entitle
 | Field | Argument | Type | Description |
 |-------|----------|------|-------------|
 | azureNativeResourceGroups | first | Int | Returns the first n elements from the list. |
-| azureNativeResourceGroups | after | String | Returns the elements in the list that occur after the specified cursor. |
+| azureNativeResourceGroups | after | String | An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results. |
 | azureNativeResourceGroups | last | Int | Returns the last n elements from the list. |
-| azureNativeResourceGroups | before | String | Returns the elements in the list that occur before the specified cursor. |
+| azureNativeResourceGroups | before | String | An opaque cursor returned from a previous query's startCursor field. Pass this value verbatim to retrieve the previous page of results. |
 | azureNativeResourceGroups | sortBy | [AzureNativeCommonResourceGroupSortFields](../enums/AzureNativeCommonResourceGroupSortFields.md) | Sort fields for listing Azure resource groups. |
 | azureNativeResourceGroups | sortOrder | [SortOrder](../enums/SortOrder.md) | Sorts the order of results. |
 | azureNativeResourceGroups | commonResourceGroupFilters | [AzureNativeCommonResourceGroupFilters](../inputs/AzureNativeCommonResourceGroupFilters.md) | Filters for listing Azure resource groups. |

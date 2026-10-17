@@ -39,6 +39,7 @@ All reporting table schemas.
 | MONITORING_COMPLETED | Monitoring completed database schema. |
 | MONITORING_FAILED | Monitoring failed database schema. |
 | MONITORING_IN_PROGRESS | Monitoring in progress database schema. |
+| MONITORING_PAUSED | Specifies the monitoring paused jobs report information. |
 | MONITORING_RETRYABLE_CANCELED | Monitoring retryable cancelled database schema. |
 | MONITORING_RETRYABLE_FAILED | Monitoring retryable failed database schema. |
 | MONITORING_SCHEDULED | Monitoring scheduled database schema. |

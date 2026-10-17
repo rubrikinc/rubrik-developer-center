@@ -30,6 +30,7 @@ Get details of a GCP Disk
         isProtectionOnboarded
         isRelic
         kmsKey
+        legallyHeldSnapshotCount
         name
         nativeName
         numWorkloadDescendants

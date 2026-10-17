@@ -25,6 +25,7 @@ Details of the given Hyper-V SCVMM.
         hostName
         id
         isReplica
+        legallyHeldSnapshotCount
         name
         numWorkloadDescendants
         objectType

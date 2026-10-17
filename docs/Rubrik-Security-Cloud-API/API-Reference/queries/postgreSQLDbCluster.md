@@ -27,6 +27,8 @@ Details of a PostgreSQL database cluster for a given FID.
         id
         isRelic
         isReplica
+        lastRecoverableRangeCheckedAt
+        legallyHeldSnapshotCount
         name
         numWorkloadDescendants
         objectType

@@ -22,6 +22,7 @@ A GCP native persistent disk.
 | effectiveSlaDomain | [SlaDomain](../interfaces/SlaDomain.md)! | Effective SLA Domain of the hierarchy object. |
 | effectiveSlaSourceObject | [PathNode](PathNode.md) | Path node of the effective SLA Domain source. |
 | fileIndexingStatus | [FileIndexingStatus](../enums/FileIndexingStatus.md)! | Specifies the file indexing status for this GCP disk. When enabled, Rubrik scans the file structure within the GCP disk in a protected environment, where only the metadata such as folder structure, file names, and file sizes is accessible to Rubrik. If the status is not specified by the user, file indexing is automatically enabled when archival is configured. |
+| futureLegalHoldInfo | [FutureLegalHoldInfo](FutureLegalHoldInfo.md) | Future legal hold rule configured for this object, if any. |
 | gcpNativeProject | [GcpNativeProject](GcpNativeProject.md)! | GCP Project of the disk. |
 | gcpNativeProjectDetails | [GcpNativeProjectDetails](GcpNativeProjectDetails.md) | Project details of the disk. |
 | gcpProject | [GcpNativeProject](GcpNativeProject.md) | GCP Project of the disk. |
@@ -32,6 +33,7 @@ A GCP native persistent disk.
 | isRelic | Boolean! | Whether the object is a relic. |
 | kmsKey | String! | KMS key for the disk. |
 | labels | [[Label](Label.md)!]! | List of labels that are assigned to the object. |
+| legallyHeldSnapshotCount | Int | Number of snapshots on legal hold for this object. |
 | logicalPath | [[PathNode](PathNode.md)!]! | Sequential list of the logical ancestors of this object. |
 | name | String! | Name of the hierarchy object. |
 | nativeName | String! | GCP Native name of the object. |
@@ -48,7 +50,7 @@ A GCP native persistent disk.
 | region | String! | Region of the disk. |
 | replicaZones | [String!]! | Replica zones of the disk. |
 | rscNativeObjectPendingSla | [CompactSlaDomain](CompactSlaDomain.md) | SLA Domain assignment which is pending on the Rubrik Security Cloud native objects. |
-| rscPendingObjectPauseAssignment | [PendingObjectPauseAssignmentStatus](../enums/PendingObjectPauseAssignmentStatus.md) | Object pause pending assignment details for RSC objects. |
+| rscPendingObjectPauseAssignment | [PendingObjectPauseAssignmentStatus](../enums/PendingObjectPauseAssignmentStatus.md) | Pending pause or unpause assignment for RSC-native objects. |
 | securityMetadata | [SecurityMetadata](SecurityMetadata.md) | Security posture metadata. |
 | sizeInGiBs | Int! | Size of disk in GiB. |
 | slaAssignment | [SlaAssignmentTypeEnum](../enums/SlaAssignmentTypeEnum.md)! | SLA Domain assignment type for this object. |

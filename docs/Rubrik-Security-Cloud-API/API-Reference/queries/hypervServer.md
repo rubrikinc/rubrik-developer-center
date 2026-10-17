@@ -25,6 +25,7 @@ Details of the given Hyper-V Server.
         hostname
         id
         isReplica
+        legallyHeldSnapshotCount
         name
         numWorkloadDescendants
         objectType

@@ -29,6 +29,7 @@ NAS Cloud Direct system.
         isRelic
         lastRefreshTime
         lastStatus
+        legallyHeldSnapshotCount
         name
         namespaceCount
         nfs4Hosts

@@ -26,6 +26,7 @@ A Microsoft SQL Availability Group.
         hostLogRetention
         id
         isReplica
+        legallyHeldSnapshotCount
         logBackupFrequencyInSeconds
         logBackupRetentionInHours
         name

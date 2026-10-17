@@ -22,11 +22,13 @@ Failover cluster App.
 | effectiveSlaSourceObject | [PathNode](PathNode.md) | Path node of the effective SLA Domain source. |
 | failoverClusterId | String! | ID of the failover cluster. |
 | failoverClusterType | String | Failover Rubrik cluster type. |
+| futureLegalHoldInfo | [FutureLegalHoldInfo](FutureLegalHoldInfo.md) | Future legal hold rule configured for this object, if any. |
 | hostFailoverCluster | [HostFailoverCluster](HostFailoverCluster.md)! | Get the host failover cluster app object. |
 | id | [UUID](../scalars/UUID.md)! | ID of the hierarchy object. |
 | isArchived | Boolean! | Boolean variable denoting if archived. |
 | isReplica | Boolean | True if this object is a replica, its current cluster differs from its source (primary) cluster. False if the object resides on its source cluster. Null when the source cluster is unknown. |
 | latestUserNote | [LatestUserNote](LatestUserNote.md) | Latest user note information. |
+| legallyHeldSnapshotCount | Int | Number of snapshots on legal hold for this object. |
 | logicalPath | [[PathNode](PathNode.md)!]! | Sequential list of the logical ancestors of this object. |
 | name | String! | Name of the hierarchy object. |
 | numWorkloadDescendants | Int! | Number of descendant workloads of this object. |
@@ -52,7 +54,9 @@ Failover cluster App.
 | Field | Argument | Type | Description |
 |-------|----------|------|-------------|
 | descendantConnection | first | Int | Returns the first n elements from the list. |
-| descendantConnection | after | String | Returns the elements in the list that occur after the specified cursor. |
+| descendantConnection | after | String | An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results. |
+| descendantConnection | last | Int | Returns the last n elements from the list. |
+| descendantConnection | before | String | An opaque cursor returned from a previous query's startCursor field. Pass this value verbatim to retrieve the previous page of results. |
 | descendantConnection | sortBy | [HierarchySortByField](../enums/HierarchySortByField.md) | Sort hierarchy objects according to the hierarchy field. |
 | descendantConnection | sortOrder | [SortOrder](../enums/SortOrder.md) | Sorts the order of results. |
 | descendantConnection | typeFilter | [[HierarchyObjectTypeEnum](../enums/HierarchyObjectTypeEnum.md)!] | Types of objects to include. |
@@ -64,7 +68,9 @@ Failover cluster App.
 | numWorkloadDescendants | before | String | Returns the elements in the list that occur before the specified cursor. |
 | numWorkloadDescendants | objectTypes | [[ManagedObjectType](../enums/ManagedObjectType.md)!] | Types of objects to limit the results. If absent, all object types are returned. |
 | physicalChildConnection | first | Int | Returns the first n elements from the list. |
-| physicalChildConnection | after | String | Returns the elements in the list that occur after the specified cursor. |
+| physicalChildConnection | after | String | An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results. |
+| physicalChildConnection | last | Int | Returns the last n elements from the list. |
+| physicalChildConnection | before | String | An opaque cursor returned from a previous query's startCursor field. Pass this value verbatim to retrieve the previous page of results. |
 | physicalChildConnection | sortBy | [HierarchySortByField](../enums/HierarchySortByField.md) | Sort hierarchy objects according to the hierarchy field. |
 | physicalChildConnection | sortOrder | [SortOrder](../enums/SortOrder.md) | Sorts the order of results. |
 | physicalChildConnection | typeFilter | [[HierarchyObjectTypeEnum](../enums/HierarchyObjectTypeEnum.md)!] | Types of objects to include. |

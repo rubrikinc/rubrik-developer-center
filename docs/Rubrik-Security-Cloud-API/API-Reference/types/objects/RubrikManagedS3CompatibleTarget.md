@@ -9,7 +9,9 @@ Specific information for Amazon S3 compatible target created on Rubrik.
 | Field | Type | Description |
 |-------|------|-------------|
 | accessKey | String! | Access key for authentication to the S3Compatible target. |
+| archivalLocationPurpose | [StorageLocationPurpose](../enums/StorageLocationPurpose.md) | Purpose of the target (e.g. CNP_BAAS for BaaS, PURPOSE_DEFAULT for user-created). Null on older servers that don't populate the field. |
 | bucketPrefix | String! | Prefix of the S3Compatible target bucket. |
+| certificateTrustMode | [CertificateTrustMode](../enums/CertificateTrustMode.md)! | The TLS trust mode. |
 | cluster | [Cluster](Cluster.md)! | The cluster to which this target belongs. |
 | clusterName | String | Name of the Rubrik cluster that archives to this archival location. |
 | connectionStatus | [ConnectionStatusType](../enums/ConnectionStatusType.md)! | Connection status of the S3Compatible target. |
@@ -39,5 +41,6 @@ Specific information for Amazon S3 compatible target created on Rubrik.
 | targetMapping | [TargetMappingBasic](TargetMappingBasic.md) | Archival location to which the mapping target belongs. |
 | targetMappingBasic | [[TargetMappingBasic](TargetMappingBasic.md)!] | List of archival groups the archival target belongs to. In case the target has no valid mappings, a null array is returned. |
 | targetType | [TargetType](../enums/TargetType.md)! | The type of the target. |
+| tlsCertificateId | String! | The certificate ID bound to this location. |
 | upgradeStatus | [UpgradeStatus](../enums/UpgradeStatus.md)! | Upgrade status of the target. |
 | useSystemProxy | Boolean! | Flag to check if system proxy is being used in this target. |

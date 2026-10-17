@@ -16,9 +16,9 @@ Anomaly result data with group by information applied to it.
 |-------|----------|------|-------------|
 | anomalyResultGroupedData | groupBy *(required)* | [AnomalyResultGroupBy](../enums/AnomalyResultGroupBy.md)! | Group anomaly results by field. |
 | anomalyResults | first | Int | Returns the first n elements from the list. |
-| anomalyResults | after | String | Returns the elements in the list that occur after the specified cursor. |
+| anomalyResults | after | String | An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results. |
 | anomalyResults | last | Int | Returns the last n elements from the list. |
-| anomalyResults | before | String | Returns the elements in the list that occur before the specified cursor. |
+| anomalyResults | before | String | An opaque cursor returned from a previous query's startCursor field. Pass this value verbatim to retrieve the previous page of results. |
 | anomalyResults | sortOrder | [SortOrder](../enums/SortOrder.md) | Sorts the order of results. |
 | anomalyResults | sortBy | [AnomalyResultSortBy](../enums/AnomalyResultSortBy.md) | Sort anomaly results by field. |
 | anomalyResults | filter | [AnomalyResultFilterInput](../inputs/AnomalyResultFilterInput.md) | Filter anomaly results by input. |

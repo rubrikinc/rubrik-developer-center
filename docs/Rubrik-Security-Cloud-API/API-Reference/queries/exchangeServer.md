@@ -1,12 +1,12 @@
 # exchangeServer
 
-Details of an Exchange Server for a given fid.
+Single Exchange Server lookup by FID.
 
 ## Arguments
 
 | Argument | Type | Description |
 |----------|------|-------------|
-| fid *(required)* | [UUID](../types/scalars/UUID.md)! | Rubrik UUID for the object. |
+| fid *(required)* | [UUID](../types/scalars/UUID.md)! | FID of the Exchange Server to retrieve. |
 
 ## Returns
 
@@ -25,6 +25,7 @@ Details of an Exchange Server for a given fid.
         hasVgConflict
         id
         isReplica
+        legallyHeldSnapshotCount
         name
         numWorkloadDescendants
         objectType

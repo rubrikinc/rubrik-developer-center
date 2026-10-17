@@ -49,4 +49,4 @@ Details of an RSC tag.
 - [AzureNativeResourceGroup.allTags](AzureNativeResourceGroup.md)
 - [AzureNativeResourceGroupBase.allTags](AzureNativeResourceGroupBase.md)
 - [AzureNativeSubscription.allTags](AzureNativeSubscription.md)
-- *…and 330 more*
+- *…and 334 more*

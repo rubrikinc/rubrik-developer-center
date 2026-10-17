@@ -23,6 +23,7 @@ Details for the OneDrive corresponding to the workload ID.
         id
         isRansomwareInvestigationEnabled
         isRelic
+        legallyHeldSnapshotCount
         name
         naturalId
         numWorkloadDescendants
@@ -61,8 +62,8 @@ Details for the OneDrive corresponding to the workload ID.
           "id": "00000000-0000-0000-0000-000000000000",
           "isRansomwareInvestigationEnabled": true,
           "isRelic": true,
+          "legallyHeldSnapshotCount": 0,
           "name": "example-string",
-          "naturalId": "example-string",
           "allOrgs": [
             {
               "allUrls": [

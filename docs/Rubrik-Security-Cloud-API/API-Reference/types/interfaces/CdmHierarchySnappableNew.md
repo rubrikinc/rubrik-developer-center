@@ -15,8 +15,10 @@ A managed hierarchy protected objects.
 | effectiveRetentionSlaDomain | [SlaDomain](SlaDomain.md) | Effective retention of the SLA Domain of the hierarchy object. |
 | effectiveSlaDomain | [SlaDomain](SlaDomain.md)! | Effective SLA Domain of the hierarchy object. |
 | effectiveSlaSourceObject | [PathNode](../objects/PathNode.md) | Path node of the effective SLA Domain source. |
+| futureLegalHoldInfo | [FutureLegalHoldInfo](../objects/FutureLegalHoldInfo.md) | Future legal hold rule configured for this object, if any. |
 | id | [UUID](../scalars/UUID.md)! | ID of the hierarchy object. |
 | isReplica | Boolean | True if this object is a replica, its current cluster differs from its source (primary) cluster. False if the object resides on its source cluster. Null when the source cluster is unknown. |
+| legallyHeldSnapshotCount | Int | Number of snapshots on legal hold for this object. |
 | logicalPath | [[PathNode](../objects/PathNode.md)!]! | Sequential list of the logical ancestors of this object. |
 | missedSnapshotConnection | [MissedSnapshotCommonConnection](../objects/MissedSnapshotCommonConnection.md) | The list of missed snapshots for this workload. |
 | missedSnapshotGroupByConnection | [MissedSnapshotGroupByConnection](../objects/MissedSnapshotGroupByConnection.md) | The list of missed snapshots for this workload. |
@@ -96,6 +98,8 @@ A managed hierarchy protected objects.
 - [FusionComputeVirtualMachine](../objects/FusionComputeVirtualMachine.md)
 - [HyperVVirtualMachine](../objects/HyperVVirtualMachine.md)
 - [HypervisorVirtualMachineV1](../objects/HypervisorVirtualMachineV1.md)
+- [InformixInstance](../objects/InformixInstance.md)
+- [IrisdbInstance](../objects/IrisdbInstance.md)
 - [KubernetesProtectionSet](../objects/KubernetesProtectionSet.md)
 - [KubernetesVirtualMachine](../objects/KubernetesVirtualMachine.md)
 - [LinuxFileset](../objects/LinuxFileset.md)
@@ -111,6 +115,7 @@ A managed hierarchy protected objects.
 - [OpenstackVirtualMachine](../objects/OpenstackVirtualMachine.md)
 - [OracleDataGuardGroup](../objects/OracleDataGuardGroup.md)
 - [OracleDatabase](../objects/OracleDatabase.md)
+- [PingFederateClusterV1](../objects/PingFederateClusterV1.md)
 - [PostgreSQLDbCluster](../objects/PostgreSQLDbCluster.md)
 - [ProxmoxVirtualMachineV1](../objects/ProxmoxVirtualMachineV1.md)
 - [PureStorageProtectionGroupV1](../objects/PureStorageProtectionGroupV1.md)
@@ -118,6 +123,7 @@ A managed hierarchy protected objects.
 - [SapHanaDatabase](../objects/SapHanaDatabase.md)
 - [SapHanaSystem](../objects/SapHanaSystem.md)
 - [ShareFileset](../objects/ShareFileset.md)
+- [SnapMirrorCloud](../objects/SnapMirrorCloud.md)
 - [VcdVapp](../objects/VcdVapp.md)
 - [VolumeGroup](../objects/VolumeGroup.md)
 - [VsphereVm](../objects/VsphereVm.md)

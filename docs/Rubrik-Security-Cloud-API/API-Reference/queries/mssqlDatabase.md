@@ -36,6 +36,7 @@ A Microsoft SQL Database.
         isOnline
         isRelic
         isReplica
+        legallyHeldSnapshotCount
         logBackupFrequencyInSeconds
         logBackupRetentionInHours
         name

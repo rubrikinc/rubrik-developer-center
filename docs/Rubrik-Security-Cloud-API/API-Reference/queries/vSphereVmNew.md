@@ -1,6 +1,6 @@
 # vSphereVmNew
 
-*No description available.*
+Details of the vSphere virtual machine with the given Rubrik ID.
 
 ## Arguments
 
@@ -36,6 +36,7 @@
         isBlueprintChild
         isRelic
         isReplica
+        legallyHeldSnapshotCount
         name
         numWorkloadDescendants
         objectType

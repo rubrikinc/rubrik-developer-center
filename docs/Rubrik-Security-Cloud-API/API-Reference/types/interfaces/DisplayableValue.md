@@ -1,14 +1,14 @@
 # DisplayableValue
 
-*No description available.*
+A single report cell's value: its rendered display, header and serialized forms, plus the concrete typed variant it holds.
 
 ## Fields
 
 | Field | Type | Description |
 |-------|------|-------------|
-| displayValue | String! |  |
-| reportHeader | String! |  |
-| serializedValue | String! |  |
+| displayValue | String! | The value rendered for display in the UI. |
+| reportHeader | String! | The value rendered in the report header. |
+| serializedValue | String! | The value in its serialized string form. |
 
 ## Implemented By
 

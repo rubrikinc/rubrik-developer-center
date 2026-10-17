@@ -34,6 +34,7 @@ Summary of a FusionCompute virtual machine.
         ipAddresses
         isRelic
         isReplica
+        legallyHeldSnapshotCount
         name
         numWorkloadDescendants
         objectType

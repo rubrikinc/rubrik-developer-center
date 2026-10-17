@@ -1,6 +1,6 @@
 # updateNfsTarget
 
-*No description available.*
+Updates an existing NFS target.
 
 ## Arguments
 
@@ -19,6 +19,7 @@
     ```graphql
     mutation UpdateNfsTarget($input: UpdateNfsTargetInput!) {
       updateNfsTarget(input: $input) {
+        archivalLocationPurpose
         clusterName
         consumedBytes
         failedTasks
@@ -54,11 +55,11 @@
     {
       "data": {
         "updateNfsTarget": {
+          "archivalLocationPurpose": "ADO",
           "clusterName": "example-string",
           "consumedBytes": 0,
           "failedTasks": 0,
-          "id": "example-string",
-          "isActive": true
+          "id": "example-string"
         }
       }
     }

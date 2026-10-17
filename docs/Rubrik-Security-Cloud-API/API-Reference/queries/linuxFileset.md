@@ -28,6 +28,7 @@ Information about a Linux fileset.
         isPassThrough
         isRelic
         isReplica
+        legallyHeldSnapshotCount
         name
         numWorkloadDescendants
         objectType

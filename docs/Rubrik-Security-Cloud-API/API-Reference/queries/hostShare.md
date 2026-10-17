@@ -24,6 +24,7 @@ Returns information about a host share.
         id
         isChangelistEnabled
         isReplica
+        legallyHeldSnapshotCount
         name
         nasMigrationInfo
         nasShareType
@@ -57,7 +58,7 @@ Returns information about a host share.
           "id": "00000000-0000-0000-0000-000000000000",
           "isChangelistEnabled": true,
           "isReplica": true,
-          "name": "example-string",
+          "legallyHeldSnapshotCount": 0,
           "allOrgs": [
             {
               "allUrls": [

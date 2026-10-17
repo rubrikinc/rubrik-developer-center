@@ -29,6 +29,7 @@ Retrieves an Azure SQL Database. Refers to the fully managed SQL database built 
         id
         isEligibleForPersistentBackups
         isRelic
+        legallyHeldSnapshotCount
         maximumSizeInBytes
         name
         numWorkloadDescendants

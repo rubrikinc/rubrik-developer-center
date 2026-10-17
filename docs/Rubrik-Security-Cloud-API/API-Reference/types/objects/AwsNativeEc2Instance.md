@@ -26,6 +26,7 @@ AWS native EC2 instance.
 | effectiveSlaDomain | [SlaDomain](../interfaces/SlaDomain.md)! | Effective SLA Domain of the hierarchy object. |
 | effectiveSlaSourceObject | [PathNode](PathNode.md) | Path node of the effective SLA Domain source. |
 | fileIndexingStatus | [FileIndexingStatus](../enums/FileIndexingStatus.md)! | Specifies the file indexing status for this EC2 instance. When enabled, Rubrik scans the file structure within the EC2 instance in a protected environment, where only the metadata such as folder structure, file names, and file sizes is accessible to Rubrik.If the status is not specified by the user, file indexing is automatically enabled when archival is configured. |
+| futureLegalHoldInfo | [FutureLegalHoldInfo](FutureLegalHoldInfo.md) | Future legal hold rule configured for this object, if any. |
 | hostInfo | [PhysicalHost](PhysicalHost.md) | Rubrik CDM host information for the AWS EC2 instance added as a host to the cluster. The value is Null when the virtual machine is not added as a host on any Rubrik cluster. |
 | id | [UUID](../scalars/UUID.md)! | ID of the hierarchy object. |
 | instanceName | String! | Name of instance on AWS. Name is not necessarily unique for different instances. |
@@ -38,6 +39,7 @@ AWS native EC2 instance.
 | isPreOrPostScriptEnabled | Boolean! | Specifies whether the pre-script or post-script framework is enabled on the EC2 instance. When enabled, it facilitates application-consistent backups. |
 | isProtectable | Boolean! | Indicates whether this EC2 instance is protectable or not. |
 | isRelic | Boolean! | Whether the object is a relic. |
+| legallyHeldSnapshotCount | Int | Number of snapshots on legal hold for this object. |
 | logicalPath | [[PathNode](PathNode.md)!]! | Sequential list of the logical ancestors of this object. |
 | name | String! | Name of the hierarchy object. |
 | nativeName | String! | AWS Native name of the object. |
@@ -57,7 +59,7 @@ AWS native EC2 instance.
 | recoveryPlansInfo | [[RecoveryPlansInfo](RecoveryPlansInfo.md)!]! | List of Recovery Plans associated with the virtual machine. |
 | region | [AwsNativeRegion](../enums/AwsNativeRegion.md)! | The AWS region to which the object belongs. |
 | rscNativeObjectPendingSla | [CompactSlaDomain](CompactSlaDomain.md) | SLA Domain assignment which is pending on the Rubrik Security Cloud native objects. |
-| rscPendingObjectPauseAssignment | [PendingObjectPauseAssignmentStatus](../enums/PendingObjectPauseAssignmentStatus.md) | Object pause pending assignment details for RSC objects. |
+| rscPendingObjectPauseAssignment | [PendingObjectPauseAssignmentStatus](../enums/PendingObjectPauseAssignmentStatus.md) | Pending pause or unpause assignment for RSC-native objects. |
 | securityMetadata | [SecurityMetadata](SecurityMetadata.md) | Security posture metadata. |
 | slaAssignment | [SlaAssignmentTypeEnum](../enums/SlaAssignmentTypeEnum.md)! | SLA Domain assignment type for this object. |
 | slaPauseStatus | Boolean! | Pause status of the effective SLA Domain of the hierarchy object. |

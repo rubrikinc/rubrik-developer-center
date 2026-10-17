@@ -1,6 +1,6 @@
 # createAwsTarget
 
-*No description available.*
+Creates an AWS archival target on a Rubrik cluster.
 
 ## Arguments
 
@@ -19,6 +19,7 @@
     ```graphql
     mutation CreateAwsTarget($input: CreateAwsTargetInput!) {
       createAwsTarget(input: $input) {
+        archivalLocationPurpose
         clusterName
         consumedBytes
         failedTasks
@@ -61,11 +62,11 @@
     {
       "data": {
         "createAwsTarget": {
+          "archivalLocationPurpose": "ADO",
           "clusterName": "example-string",
           "consumedBytes": 0,
           "failedTasks": 0,
-          "id": "example-string",
-          "isActive": true
+          "id": "example-string"
         }
       }
     }

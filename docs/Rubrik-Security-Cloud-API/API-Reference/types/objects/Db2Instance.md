@@ -21,6 +21,7 @@ Db2 Instance details object.
 | effectiveRetentionSlaDomain | [SlaDomain](../interfaces/SlaDomain.md) | Effective retention of the SLA Domain of the hierarchy object. |
 | effectiveSlaDomain | [SlaDomain](../interfaces/SlaDomain.md)! | Effective SLA Domain of the hierarchy object. |
 | effectiveSlaSourceObject | [PathNode](PathNode.md) | Path node of the effective SLA Domain source. |
+| futureLegalHoldInfo | [FutureLegalHoldInfo](FutureLegalHoldInfo.md) | Future legal hold rule configured for this object, if any. |
 | hosts | [[CdmLightweightHost](CdmLightweightHost.md)!]! | List of hosts associated with the Db2 instance. |
 | id | [UUID](../scalars/UUID.md)! | ID of the hierarchy object. |
 | instanceType | [Db2InstanceType](../enums/Db2InstanceType.md)! | Type of Db2 instance: STANDALONE, PARTITIONED, PURESCALE, or UNSPECIFIED. |
@@ -28,6 +29,7 @@ Db2 Instance details object.
 | lastRefreshTime | [DateTime](../scalars/DateTime.md) | Timestamp when last refresh job got triggered for the Db2 instance. |
 | lastSyncTime | [DateTime](../scalars/DateTime.md) | Time stamp of when last metadata sync happened for the Db2 instance. |
 | latestUserNote | [LatestUserNote](LatestUserNote.md) | Latest user note information. |
+| legallyHeldSnapshotCount | Int | Number of snapshots on legal hold for this object. |
 | logicalPath | [[PathNode](PathNode.md)!]! | Sequential list of the logical ancestors of this object. |
 | name | String! | Name of the hierarchy object. |
 | numWorkloadDescendants | Int! | Number of descendant workloads of this object. |
@@ -54,19 +56,19 @@ Db2 Instance details object.
 | Field | Argument | Type | Description |
 |-------|----------|------|-------------|
 | descendantConnection | first | Int | Returns the first n elements from the list. |
-| descendantConnection | after | String | Returns the elements in the list that occur after the specified cursor. |
+| descendantConnection | after | String | An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results. |
 | descendantConnection | sortBy | [HierarchySortByField](../enums/HierarchySortByField.md) | Sort hierarchy objects according to the hierarchy field. |
 | descendantConnection | sortOrder | [SortOrder](../enums/SortOrder.md) | Sorts the order of results. |
 | descendantConnection | typeFilter | [[HierarchyObjectTypeEnum](../enums/HierarchyObjectTypeEnum.md)!] | Types of objects to include. |
 | descendantConnection | filter | [[Filter](../inputs/Filter.md)!] | Hierarchy object filter. |
 | descendantConnection | workloadHierarchy | [WorkloadLevelHierarchy](../enums/WorkloadLevelHierarchy.md) | Each enumeration value represents the hierarchy of a specific workload type for RBAC and SLA Domain assignments.  A value of 'None' represents the hierarchy of all workload types. |
 | numWorkloadDescendants | first | Int | Returns the first n elements from the list. |
-| numWorkloadDescendants | after | String | Returns the elements in the list that occur after the specified cursor. |
+| numWorkloadDescendants | after | String | An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results. |
 | numWorkloadDescendants | last | Int | Returns the last n elements from the list. |
-| numWorkloadDescendants | before | String | Returns the elements in the list that occur before the specified cursor. |
+| numWorkloadDescendants | before | String | An opaque cursor returned from a previous query's startCursor field. Pass this value verbatim to retrieve the previous page of results. |
 | numWorkloadDescendants | objectTypes | [[ManagedObjectType](../enums/ManagedObjectType.md)!] | Types of objects to limit the results. If absent, all object types are returned. |
 | physicalChildConnection | first | Int | Returns the first n elements from the list. |
-| physicalChildConnection | after | String | Returns the elements in the list that occur after the specified cursor. |
+| physicalChildConnection | after | String | An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results. |
 | physicalChildConnection | sortBy | [HierarchySortByField](../enums/HierarchySortByField.md) | Sort hierarchy objects according to the hierarchy field. |
 | physicalChildConnection | sortOrder | [SortOrder](../enums/SortOrder.md) | Sorts the order of results. |
 | physicalChildConnection | typeFilter | [[HierarchyObjectTypeEnum](../enums/HierarchyObjectTypeEnum.md)!] | Types of objects to include. |

@@ -19,6 +19,7 @@ Creates reader type for RCS Azure archival location on a CDM cluster.
     ```graphql
     mutation CreateRcsReaderTarget($input: CreateRcsReaderTargetInput!) {
       createRcsReaderTarget(input: $input) {
+        archivalLocationPurpose
         clusterName
         consumedBytes
         failedTasks
@@ -57,11 +58,11 @@ Creates reader type for RCS Azure archival location on a CDM cluster.
     {
       "data": {
         "createRcsReaderTarget": {
+          "archivalLocationPurpose": "ADO",
           "clusterName": "example-string",
           "consumedBytes": 0,
           "failedTasks": 0,
-          "id": "example-string",
-          "isActive": true
+          "id": "example-string"
         }
       }
     }

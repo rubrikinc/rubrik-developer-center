@@ -16,9 +16,9 @@ Non-filesystem anomaly result data with group by information applied to it.
 |-------|----------|------|-------------|
 | nfAnomalyResultGroupedData | groupBy *(required)* | [NfAnomalyResultGroupBy](../enums/NfAnomalyResultGroupBy.md)! | Group non-filesystem anomaly results by field. |
 | nfAnomalyResults | first | Int | Returns the first n elements from the list. |
-| nfAnomalyResults | after | String | Returns the elements in the list that occur after the specified cursor. |
+| nfAnomalyResults | after | String | An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results. |
 | nfAnomalyResults | last | Int | Returns the last n elements from the list. |
-| nfAnomalyResults | before | String | Returns the elements in the list that occur before the specified cursor. |
+| nfAnomalyResults | before | String | An opaque cursor returned from a previous query's startCursor field. Pass this value verbatim to retrieve the previous page of results. |
 | nfAnomalyResults | sortOrder | [SortOrder](../enums/SortOrder.md) | Sorts the order of results. |
 | nfAnomalyResults | sortBy | [NfAnomalyResultSortBy](../enums/NfAnomalyResultSortBy.md) | Sort non-filesystem anomaly results by field. |
 | nfAnomalyResults | filter | [NfAnomalyResultFilterInput](../inputs/NfAnomalyResultFilterInput.md) | Filter non-filesystem anomaly results by input. |

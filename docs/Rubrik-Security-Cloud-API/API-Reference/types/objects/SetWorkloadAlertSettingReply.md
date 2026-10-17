@@ -6,7 +6,8 @@ Enable or disable Ransomware Investigation alerts for a workload.
 
 | Field | Type | Description |
 |-------|------|-------------|
-| enabled | Boolean! | Specifies whether anomaly alerts are enabled or not. |
+| enabled | Boolean! | Specifies whether Anomaly Detection (Data Threat Analytics) alerts are enabled or not. |
+| isThreatMonitoringEnabled | Boolean! | Whether Threat Monitoring notifications are enabled, that is, the workload is not muted. |
 
 ## Used By
 

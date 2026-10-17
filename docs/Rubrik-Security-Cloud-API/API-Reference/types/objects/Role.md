@@ -29,9 +29,9 @@ RBAC role.
 | Field | Argument | Type | Description |
 |-------|----------|------|-------------|
 | paginatedSyncedClusters | first | Int | Returns the first n elements from the list. |
-| paginatedSyncedClusters | after | String | Returns the elements in the list that occur after the specified cursor. |
+| paginatedSyncedClusters | after | String | An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results. |
 | paginatedSyncedClusters | last | Int | Returns the last n elements from the list. |
-| paginatedSyncedClusters | before | String | Returns the elements in the list that occur before the specified cursor. |
+| paginatedSyncedClusters | before | String | An opaque cursor returned from a previous query's startCursor field. Pass this value verbatim to retrieve the previous page of results. |
 | paginatedSyncedClusters | sortOrder | [SortOrder](../enums/SortOrder.md) | Sorts the order of results. |
 
 ## Used By

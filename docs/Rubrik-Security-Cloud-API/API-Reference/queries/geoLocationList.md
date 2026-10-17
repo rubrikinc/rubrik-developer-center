@@ -1,6 +1,6 @@
 # geoLocationList
 
-*No description available.*
+Geo locations of Rubrik clusters, grouped by location.
 
 ## Returns
 

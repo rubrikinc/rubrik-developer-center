@@ -29,6 +29,7 @@ Details of a Pure Storage protection group for a given ID.
         id
         isRelic
         isReplica
+        legallyHeldSnapshotCount
         name
         numVolumes
         numWorkloadDescendants

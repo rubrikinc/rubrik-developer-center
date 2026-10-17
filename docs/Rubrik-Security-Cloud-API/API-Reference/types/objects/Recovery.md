@@ -34,5 +34,6 @@ Recovery contains information around a particular recovery.
 
 **Referenced by**
 
+- [LastWorkloadRecoveryInfo.recovery](LastWorkloadRecoveryInfo.md)
 - [RecoveryPlanBasicInfo.latestRecovery](RecoveryPlanBasicInfo.md)
 - [RecoveryPlanV2.latestRecovery](RecoveryPlanV2.md)

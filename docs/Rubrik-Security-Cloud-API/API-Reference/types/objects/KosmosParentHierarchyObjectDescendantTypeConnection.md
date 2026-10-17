@@ -15,6 +15,8 @@ Paginated list of KosmosParentHierarchyObjectDescendantType objects with additio
 
 **Referenced by**
 
+- [InformixInstance.descendantConnection](InformixInstance.md)
+- [IrisdbInstance.descendantConnection](IrisdbInstance.md)
 - KosmosParentHierarchyObjectType.descendantConnection
 - [MysqldbInstance.descendantConnection](MysqldbInstance.md)
 - [PostgreSQLDbCluster.descendantConnection](PostgreSQLDbCluster.md)

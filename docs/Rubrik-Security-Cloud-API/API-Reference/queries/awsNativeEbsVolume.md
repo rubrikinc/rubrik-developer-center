@@ -33,6 +33,7 @@ Refers to the Amazon Elastic Block Store (EBS) Volume represented by a specific 
         isMarketplace
         isProtectable
         isRelic
+        legallyHeldSnapshotCount
         name
         nativeName
         numWorkloadDescendants

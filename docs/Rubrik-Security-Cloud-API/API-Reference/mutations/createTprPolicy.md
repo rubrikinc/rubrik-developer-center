@@ -47,7 +47,7 @@ Create a TPR policy.
             ]
           }
         ],
-        "policyScope": "DATA_MANAGEMENT_BY_CLUSTER"
+        "policyScope": "APPLICATION_CONFIGURATION"
       }
     }
     ```

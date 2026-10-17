@@ -43,4 +43,4 @@ SLA Domain name and ID.
 - [AzureNativeVirtualMachine.rscNativeObjectPendingSla](AzureNativeVirtualMachine.md)
 - [AzurePostgresFlexibleServer.rscNativeObjectPendingSla](AzurePostgresFlexibleServer.md)
 - [AzureSqlDatabaseDb.rscNativeObjectPendingSla](AzureSqlDatabaseDb.md)
-- *…and 49 more*
+- *…and 50 more*

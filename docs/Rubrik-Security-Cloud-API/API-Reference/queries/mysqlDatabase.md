@@ -1,6 +1,6 @@
 # mysqlDatabase
 
-Details of a MySQL database for a given FID.
+Returns the details of a single MySQL database identified by its unique identifier.
 
 ## Arguments
 
@@ -24,6 +24,7 @@ Details of a MySQL database for a given FID.
         id
         isRelic
         isReplica
+        legallyHeldSnapshotCount
         name
         numWorkloadDescendants
         objectType
@@ -55,7 +56,7 @@ Details of a MySQL database for a given FID.
           "id": "00000000-0000-0000-0000-000000000000",
           "isRelic": true,
           "isReplica": true,
-          "name": "example-string",
+          "legallyHeldSnapshotCount": 0,
           "allOrgs": [
             {
               "allUrls": [

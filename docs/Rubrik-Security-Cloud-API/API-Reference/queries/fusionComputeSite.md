@@ -26,6 +26,7 @@ Summary of a FusionCompute site.
         fcSiteId
         id
         isReplica
+        legallyHeldSnapshotCount
         name
         numWorkloadDescendants
         objectType

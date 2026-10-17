@@ -22,6 +22,8 @@ Paginated list of CdmSnapshotGroupBySummary objects. Each page of the results in
 - [FusionComputeVirtualMachine.snapshotGroupBySummary](FusionComputeVirtualMachine.md)
 - [HyperVVirtualMachine.snapshotGroupBySummary](HyperVVirtualMachine.md)
 - [HypervisorVirtualMachineV1.snapshotGroupBySummary](HypervisorVirtualMachineV1.md)
+- [InformixInstance.snapshotGroupBySummary](InformixInstance.md)
+- [IrisdbInstance.snapshotGroupBySummary](IrisdbInstance.md)
 - KosmosSnappableHierarchyObjectType.snapshotGroupBySummary
 - [KubernetesProtectionSet.snapshotGroupBySummary](KubernetesProtectionSet.md)
 - [KubernetesVirtualMachine.snapshotGroupBySummary](KubernetesVirtualMachine.md)
@@ -38,11 +40,9 @@ Paginated list of CdmSnapshotGroupBySummary objects. Each page of the results in
 - [OpenstackVirtualMachine.snapshotGroupBySummary](OpenstackVirtualMachine.md)
 - [OracleDataGuardGroup.snapshotGroupBySummary](OracleDataGuardGroup.md)
 - [OracleDatabase.snapshotGroupBySummary](OracleDatabase.md)
+- [PingFederateClusterV1.snapshotGroupBySummary](PingFederateClusterV1.md)
 - [PostgreSQLDbCluster.snapshotGroupBySummary](PostgreSQLDbCluster.md)
 - [ProxmoxVirtualMachineV1.snapshotGroupBySummary](ProxmoxVirtualMachineV1.md)
 - [PureStorageProtectionGroupV1.snapshotGroupBySummary](PureStorageProtectionGroupV1.md)
 - [PureStorageVolumeV1.snapshotGroupBySummary](PureStorageVolumeV1.md)
-- [SapHanaDatabase.snapshotGroupBySummary](SapHanaDatabase.md)
-- [SapHanaSystem.snapshotGroupBySummary](SapHanaSystem.md)
-- [ShareFileset.snapshotGroupBySummary](ShareFileset.md)
-- *…and 4 more*
+- *…and 8 more*

@@ -2,7 +2,7 @@
 
 SAP HANA system details object.
 
-**Implements:** [CdmHierarchyObject](../interfaces/CdmHierarchyObject.md), [CdmHierarchySnappableNew](../interfaces/CdmHierarchySnappableNew.md), [HierarchyObject](../interfaces/HierarchyObject.md), [HierarchySnappable](../interfaces/HierarchySnappable.md)
+**Implements:** [CdmHierarchyObject](../interfaces/CdmHierarchyObject.md), [HierarchyObject](../interfaces/HierarchyObject.md), [CdmHierarchySnappableNew](../interfaces/CdmHierarchySnappableNew.md), [HierarchySnappable](../interfaces/HierarchySnappable.md)
 
 ## Fields
 
@@ -12,7 +12,7 @@ SAP HANA system details object.
 | allTags | [[AssignedRscTag](AssignedRscTag.md)!]! | RSC tags to which this hierarchy object is assigned. |
 | authorizedOperations | [[Operation](../enums/Operation.md)!]! | The authorized operations on the object. |
 | backupTriggerType | [BackupTriggerType](../enums/BackupTriggerType.md) | The backup trigger type for the SAP HANA system. |
-| cdmId | String! | ID associated with SAP HANA system in CDM. |
+| cdmId | String! | The ID of the workload on the Rubrik cluster. |
 | cdmLink | String! | A link to view the workload on the Rubrik cluster. For dev use only. |
 | cdmPendingObjectPauseAssignment | [PendingObjectPauseAssignmentStatus](../enums/PendingObjectPauseAssignmentStatus.md) | Object pause pending assignment details for CDM objects. |
 | cluster | [Cluster](Cluster.md)! | Rubrik cluster where this object originated. |
@@ -23,15 +23,17 @@ SAP HANA system details object.
 | effectiveRetentionSlaDomain | [SlaDomain](../interfaces/SlaDomain.md) | Effective retention of the SLA Domain of the hierarchy object. |
 | effectiveSlaDomain | [SlaDomain](../interfaces/SlaDomain.md)! | Effective SLA Domain of the hierarchy object. |
 | effectiveSlaSourceObject | [PathNode](PathNode.md) | Path node of the effective SLA Domain source. |
+| futureLegalHoldInfo | [FutureLegalHoldInfo](FutureLegalHoldInfo.md) | Future legal hold rule configured for this object, if any. |
 | hosts | [[SapHanaHostObject](SapHanaHostObject.md)!]! | List of hosts associated with SAP HANA system. |
 | id | [UUID](../scalars/UUID.md)! | ID of the hierarchy object. |
 | instanceNumber | String! | Instance number for SAP HANA system. |
 | isForceFullOnMasterChangeEnabled | Boolean | Whether to force a full backup after a database failover. |
-| isRelic | Boolean! |  |
+| isRelic | Boolean! | Specifies whether the SAP HANA system is a relic. |
 | isReplica | Boolean | True if this object is a replica, its current cluster differs from its source (primary) cluster. False if the object resides on its source cluster. Null when the source cluster is unknown. |
 | lastRefreshTime | [DateTime](../scalars/DateTime.md) | Timestamp of the SAP HANA system refresh. Refresh process is responsible for configuring backint and discovering new databases. |
 | lastStatusUpdateTime | [DateTime](../scalars/DateTime.md) | Timestamp of the status update for the SAP HANA system. |
 | latestUserNote | [LatestUserNote](LatestUserNote.md) | Latest user note information. |
+| legallyHeldSnapshotCount | Int | Number of snapshots on legal hold for this object. |
 | logicalPath | [[PathNode](PathNode.md)!]! | Sequential list of the logical ancestors of this object. |
 | missedSnapshotConnection | [MissedSnapshotCommonConnection](MissedSnapshotCommonConnection.md) | The list of missed snapshots for this workload. |
 | missedSnapshotGroupByConnection | [MissedSnapshotGroupByConnection](MissedSnapshotGroupByConnection.md) | The list of missed snapshots for this workload. |

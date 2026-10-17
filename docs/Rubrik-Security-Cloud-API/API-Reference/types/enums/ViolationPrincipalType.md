@@ -13,6 +13,12 @@ Principal type for risk summary.
 | AU | Principal of the Entra ID administrative unit type. |
 | AUTHENTICATION_CONTEXT | Principal of the authentication context type. |
 | AUTHENTICATION_STRENGTH | Principal of the authentication strength type. |
+| AUTHENTICATOR | Principal of the authenticator type. |
+| AUTHORIZATION_SERVER | Principal of the authorization server type. |
+| AUTHORIZATION_SERVER_CLAIM | Principal of the authorization server claim type. |
+| AUTHORIZATION_SERVER_POLICY | Principal of the authorization server policy type. |
+| AUTHORIZATION_SERVER_POLICY_RULE | Principal of the authorization server policy rule type. |
+| AUTHORIZATION_SERVER_SCOPE | Principal of the authorization server scope type. |
 | CERTIFICATE_TEMPLATE | Principal of the AD Certificate Template type. |
 | CLASS_SCHEMA | Principal of the class schema type. |
 | COMPUTER | Principal of the computer type. |
@@ -27,12 +33,18 @@ Principal type for risk summary.
 | DNS_NODE | Principal of the AD DNS Record. |
 | DNS_ZONE | Principal of the AD DNS Zone. |
 | DOMAIN_DNS | Principal of the domain DNS type. |
+| EVENT_HOOK | Principal of the event hook type. |
 | EXTERNAL_ACCOUNT | Principal of the external account type. |
 | EXTERNAL_PRINCIPAL | Principal of the external principal type. |
 | FOREIGN_SECURITY_PRINCIPAL | Principal of the foreign security principal type. |
 | GPO | Principal of the Active Directory GPO type. |
 | GROUP | Principal of the group type. |
+| GROUP_PUSH_MAPPING | Principal of the group push mapping type. |
+| GROUP_RULE | Principal of the group rule type. |
+| IDENTITY_PROVIDER | Principal of the external identity provider type. |
+| IDP_KEY_CREDENTIAL | Principal of the identity provider key credential type. |
 | INFRASTRUCTURE_UPDATE | Principal of the infrastructure update type. |
+| INLINE_HOOK | Principal of the inline hook type. |
 | INTER_SITE_TRANSPORT | Principal of the inter-site transport type. |
 | INTER_SITE_TRANSPORT_CONTAINER | Principal of the inter-site transport container type. |
 | INVITATION | Principal of the invitation type. |
@@ -50,7 +62,10 @@ Principal type for risk summary.
 | PASSWORD_SETTINGS | Principal of the password settings type. |
 | PASSWORD_SETTINGS_CONTAINER | Principal of the password settings container type. |
 | PKI_ENROLLMENT_SERVICE | Principal of the AD PKI Enrollment Service type (CA). |
+| POLICY_RULE | Principal of the policy rule type. |
 | PRINT_QUEUE | Principal of the print queue type. |
+| PROFILE_MAPPING | Principal of the profile mapping type. |
+| PROVISIONING_SETTING | Principal of the application provisioning setting type. |
 | PUBLIC | Principal of the public identity type. |
 | RID_MANAGER | Principal of the RID manager type. |
 | SERVER | Principal of the server type. |
@@ -67,4 +82,11 @@ Principal type for risk summary.
 | UNIDENTIFIED | Principal that could not be matched to a known identity (unidentified target on a third-party alert). |
 | UNKNOWN | Principal of the unknown type. |
 | USER | Principal of the user type. |
+| USER_SCHEMA | Principal of the user profile schema type. |
+| USER_TYPE | Principal of the user type definition type. |
 | VOLUME | Principal of the volume type. |
+| WORKFLOW | Principal of the workflow type. |
+| WORKFLOW_CONNECTION | Principal of the workflow connection type. |
+| WORKFLOW_DATA_TABLE | Principal of the workflow data table type. |
+| WORKFLOW_DATA_TABLE_ROW | Principal of the workflow data table row type. |
+| WORKFLOW_FOLDER | Principal of the workflow folder type. |

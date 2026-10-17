@@ -1,54 +1,54 @@
 # GcpBigQueryLocation
 
-GCP BigQuery locations (multi-regions and regions). See https://cloud.google.com/bigquery/docs/locations.
+GCP BigQuery locations (multi-regions and regions). See https://docs.cloud.google.com/bigquery/docs/locations.
 
 ## Values
 
 | Value | Description |
 |-------|-------------|
-| AFRICA_SOUTH1 | Johannesburg. |
-| ASIA_EAST1 | Taiwan. |
+| AFRICA_SOUTH1 | Johannesburg, South Africa. |
+| ASIA_EAST1 | Changhua County, Taiwan. |
 | ASIA_EAST2 | Hong Kong. |
-| ASIA_NORTHEAST1 | Tokyo. |
-| ASIA_NORTHEAST2 | Osaka. |
-| ASIA_NORTHEAST3 | Seoul. |
-| ASIA_SOUTH1 | Mumbai. |
-| ASIA_SOUTH2 | Delhi. |
-| ASIA_SOUTHEAST1 | Singapore. |
-| ASIA_SOUTHEAST2 | Jakarta. |
-| ASIA_SOUTHEAST3 | Bangkok. |
-| AUSTRALIA_SOUTHEAST1 | Sydney. |
-| AUSTRALIA_SOUTHEAST2 | Melbourne. |
-| EU | Multi-region: European Union. |
-| EUROPE_CENTRAL2 | Warsaw. |
-| EUROPE_NORTH1 | Finland. |
-| EUROPE_NORTH2 | Stockholm. |
-| EUROPE_SOUTHWEST1 | Madrid. |
-| EUROPE_WEST1 | Belgium. |
-| EUROPE_WEST10 | Berlin. |
-| EUROPE_WEST12 | Turin. |
-| EUROPE_WEST2 | London. |
-| EUROPE_WEST3 | Frankfurt. |
-| EUROPE_WEST4 | Netherlands. |
-| EUROPE_WEST6 | Zurich. |
-| EUROPE_WEST8 | Milan. |
-| EUROPE_WEST9 | Paris. |
-| ME_CENTRAL1 | Doha. |
-| ME_CENTRAL2 | Dammam. |
-| ME_WEST1 | Tel Aviv. |
-| NORTHAMERICA_NORTHEAST1 | Montreal. |
-| NORTHAMERICA_NORTHEAST2 | Toronto. |
-| NORTHAMERICA_SOUTH1 | Mexico. |
-| SOUTHAMERICA_EAST1 | Sao Paulo. |
-| SOUTHAMERICA_WEST1 | Santiago. |
-| US | Multi-region: United States. |
-| US_CENTRAL1 | Iowa. |
-| US_CENTRAL2 | Oklahoma. |
-| US_EAST1 | South Carolina. |
-| US_EAST4 | Northern Virginia. |
+| ASIA_NORTHEAST1 | Tokyo, Japan. |
+| ASIA_NORTHEAST2 | Osaka, Japan. |
+| ASIA_NORTHEAST3 | Seoul, South Korea. |
+| ASIA_SOUTH1 | Mumbai, India. |
+| ASIA_SOUTH2 | Delhi, India. |
+| ASIA_SOUTHEAST1 | Jurong West, Singapore. |
+| ASIA_SOUTHEAST2 | Jakarta, Indonesia. |
+| ASIA_SOUTHEAST3 | Bangkok, Thailand. |
+| AUSTRALIA_SOUTHEAST1 | Sydney, Australia. |
+| AUSTRALIA_SOUTHEAST2 | Melbourne, Australia. |
+| EU | Multi-region: Data centers within member states of the European Union. |
+| EUROPE_CENTRAL2 | Warsaw, Poland. |
+| EUROPE_NORTH1 | Hamina, Finland. |
+| EUROPE_NORTH2 | Stockholm, Sweden. |
+| EUROPE_SOUTHWEST1 | Madrid, Spain. |
+| EUROPE_WEST1 | St. Ghislain, Belgium. |
+| EUROPE_WEST10 | Berlin, Germany. |
+| EUROPE_WEST12 | Turin, Italy. |
+| EUROPE_WEST2 | London, England. |
+| EUROPE_WEST3 | Frankfurt, Germany. |
+| EUROPE_WEST4 | Eemshaven, Netherlands. |
+| EUROPE_WEST6 | Zurich, Switzerland. |
+| EUROPE_WEST8 | Milan, Italy. |
+| EUROPE_WEST9 | Paris, France. |
+| ME_CENTRAL1 | Doha, Qatar. |
+| ME_CENTRAL2 | Dammam, Saudi Arabia. |
+| ME_WEST1 | Tel Aviv, Israel. |
+| NORTHAMERICA_NORTHEAST1 | Montreal, Canada. |
+| NORTHAMERICA_NORTHEAST2 | Toronto, Canada. |
+| NORTHAMERICA_SOUTH1 | Queretaro, Mexico. |
+| SOUTHAMERICA_EAST1 | Sao Paulo, Brazil. |
+| SOUTHAMERICA_WEST1 | Santiago, Chile. |
+| US | Multi-region: Data centers in the United States. |
+| US_CENTRAL1 | Council Bluffs, Iowa. |
+| US_CENTRAL2 | Pryor, Oklahoma. |
+| US_EAST1 | Moncks Corner, South Carolina. |
+| US_EAST4 | Ashburn, Virginia. |
 | US_EAST5 | Columbus, Ohio. |
-| US_SOUTH1 | Dallas. |
-| US_WEST1 | Oregon. |
-| US_WEST2 | Los Angeles. |
-| US_WEST3 | Salt Lake City. |
-| US_WEST4 | Las Vegas. |
+| US_SOUTH1 | Dallas, Texas. |
+| US_WEST1 | The Dalles, Oregon. |
+| US_WEST2 | Los Angeles, California. |
+| US_WEST3 | Salt Lake City, Utah. |
+| US_WEST4 | Las Vegas, Nevada. |

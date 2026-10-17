@@ -16,6 +16,7 @@ FilterType represents the possible types of filters.
 | SECURITY_DOCUMENT_LAST_MODIFIED | Document-level last modified time filter. |
 | SECURITY_DOCUMENT_MIP_LABEL | Document-level MIP label filter. |
 | SECURITY_DOCUMENT_SENSITIVITY | Document-level sensitivity filter. |
+| SECURITY_GPO_CLEAR_TEXT_PASSWORD | Filter for GPOs that configure the "Store passwords using reversible encryption" (ClearTextPassword) security option. Selects GPOs where the setting is configured to store passwords using reversible encryption (ClearTextPassword = 1). |
 | SECURITY_GPO_LDAP_SIGNING | GPO "LDAP signing not required" filter. Selects GPOs that configure the LDAPServerIntegrity security option and flags those whose decrypted value is not 2 (Require signing). Values: 0 = None (insecure), 1 = Negotiate signing (accepts unsigned, insecure), 2 = Require signing (secure). |
 | SECURITY_GPO_LLMNR_ENABLED | GPO "LLMNR explicitly enabled" filter. Selects GPOs that configure the EnableMulticast registry value under DNSClient to 1, explicitly re-enabling LLMNR and creating a credential interception risk. |
 | SECURITY_GPO_NO_LM_HASH | Filter for GPOs that configure the "Do not store LAN Manager hash value" security option. Selects GPOs where the NoLMHash setting is configured to store LM hashes (NoLMHash = 0). |
@@ -52,6 +53,7 @@ FilterType represents the possible types of filters.
 | SECURITY_IDENTITY_EVENT_SOURCE_ENTITY_ID | Identity event source entity ID. |
 | SECURITY_IDENTITY_EVENT_TARGET_ENTITY | Identity event target entity. |
 | SECURITY_IDENTITY_EVENT_TARGET_ENTITY_TYPE | Identity event target entity type. |
+| SECURITY_IDENTITY_EVENT_TARGET_OU | Filters identity events by the Active Directory Organizational Unit the event's resource belongs to, including nested sub-OUs. Values are OU names. Applies to on-prem AD events only. |
 | SECURITY_IDENTITY_EVENT_TIMESTAMP | Identity event timestamp. |
 | SECURITY_IDENTITY_EVENT_TITLE | Identity event title attribute. |
 | SECURITY_IDENTITY_EVENT_TYPE *(deprecated: Use SECURITY_IDENTITY_EVENT_TITLE instead.)* | Identity event type filter. |

@@ -22,9 +22,11 @@ An Azure SQL Database. Refers to the fully managed SQL database built for the cl
 | effectiveSlaSourceObject | [PathNode](PathNode.md) | Path node of the effective SLA Domain source. |
 | elasticPoolName | String! | Name of the Elastic Pool in which the Azure SQL Database resides. |
 | exocomputeConfigured | Boolean! | Specifies whether exocompute is configured for the database. |
+| futureLegalHoldInfo | [FutureLegalHoldInfo](FutureLegalHoldInfo.md) | Future legal hold rule configured for this object, if any. |
 | id | [UUID](../scalars/UUID.md)! | ID of the hierarchy object. |
 | isEligibleForPersistentBackups | Boolean! | Specifies whether the database is eligible for immutable backups or not. |
 | isRelic | Boolean! | Specifies whether the Azure SQL Database is a relic or not. A database is a relic when it is unprotected or deleted, but the previously taken snapshots of the database continue to exist within the Rubrik ecosystem. |
+| legallyHeldSnapshotCount | Int | Number of snapshots on legal hold for this object. |
 | logicalPath | [[PathNode](PathNode.md)!]! | Sequential list of the logical ancestors of this object. |
 | maximumSizeInBytes | [Long](../scalars/Long.md)! | Maximum size of the Azure SQL Database, in bytes. |
 | name | String! | Name of the hierarchy object. |
@@ -40,7 +42,7 @@ An Azure SQL Database. Refers to the fully managed SQL database built for the cl
 | physicalPath | [[PathNode](PathNode.md)!]! | Sequential list of the physical ancestors of this object. |
 | region | [AzureNativeRegion](../enums/AzureNativeRegion.md)! | Azure region where the Azure SQL Database is located. |
 | rscNativeObjectPendingSla | [CompactSlaDomain](CompactSlaDomain.md) | SLA Domain assignment which is pending on the Rubrik Security Cloud native objects. |
-| rscPendingObjectPauseAssignment | [PendingObjectPauseAssignmentStatus](../enums/PendingObjectPauseAssignmentStatus.md) | Object pause pending assignment details for RSC objects. |
+| rscPendingObjectPauseAssignment | [PendingObjectPauseAssignmentStatus](../enums/PendingObjectPauseAssignmentStatus.md) | Pending pause or unpause assignment for RSC-native objects. |
 | securityMetadata | [SecurityMetadata](SecurityMetadata.md) | Security posture metadata. |
 | serviceObjectiveName | String! | Specifies the service objective name of the Azure SQL Database. |
 | serviceTier | String! | Service Tier associated with the Azure SQL Database. Examples: Basic, General Purpose. |

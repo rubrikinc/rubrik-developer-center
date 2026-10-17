@@ -27,6 +27,7 @@ NAS Cloud Direct namespace.
         isArchived
         isHidden
         isStale
+        legallyHeldSnapshotCount
         name
         namespaceName
         nfs4Hosts

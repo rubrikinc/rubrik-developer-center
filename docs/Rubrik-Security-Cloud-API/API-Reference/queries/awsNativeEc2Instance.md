@@ -37,6 +37,7 @@ Refers to Amazon Elastic Compute Cloud (EC2) Instance represented by a specific 
         isPreOrPostScriptEnabled
         isProtectable
         isRelic
+        legallyHeldSnapshotCount
         name
         nativeName
         numWorkloadDescendants

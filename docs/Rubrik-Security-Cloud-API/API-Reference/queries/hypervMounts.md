@@ -7,7 +7,7 @@ HyperV Live Mount Connection.
 | Argument | Type | Description |
 |----------|------|-------------|
 | first | Int | Returns the first n elements from the list. |
-| after | String | Returns the elements in the list that occur after the specified cursor. |
+| after | String | An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results. |
 | filters | [[HypervLiveMountFilterInput](../types/inputs/HypervLiveMountFilterInput.md)!] | Filter for hyper-v live mounts. |
 | sortBy | [HypervLiveMountSortByInput](../types/inputs/HypervLiveMountSortByInput.md) | Sort by argument for hyper-v live mounts. |
 

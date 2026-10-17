@@ -26,6 +26,7 @@ Returns a single vSphere resource pool that is to be used as a recovery compute 
         hasDatastoresForRecovery
         id
         isReplica
+        legallyHeldSnapshotCount
         name
         numWorkloadDescendants
         objectType

@@ -11,5 +11,7 @@ A discoverable Kosmos object.
 
 ## Implemented By
 
+- [InformixInstance](../objects/InformixInstance.md)
+- [IrisdbInstance](../objects/IrisdbInstance.md)
 - [MysqldbInstance](../objects/MysqldbInstance.md)
 - [PostgreSQLDbCluster](../objects/PostgreSQLDbCluster.md)

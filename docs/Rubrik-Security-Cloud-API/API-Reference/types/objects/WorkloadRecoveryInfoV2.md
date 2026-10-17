@@ -6,6 +6,7 @@ Recovery information for a workload.
 
 | Field | Type | Description |
 |-------|------|-------------|
+| jobProgressPercentage | Float | Progress percentage of the recovery job for this workload, from 0 to 100. Absent when the underlying job reports no progress, and for data transfer types that do not report per-workload progress. |
 | workloadId | [UUID](../scalars/UUID.md)! | Workload ID. |
 | workloadName | String! | Workload name. |
 | workloadRecoveryId | String! | Taskchain ID or CDM job ID of the recovery operation for this workload. |

@@ -28,6 +28,7 @@ Information about a Windows fileset.
         isPassThrough
         isRelic
         isReplica
+        legallyHeldSnapshotCount
         name
         numWorkloadDescendants
         objectType

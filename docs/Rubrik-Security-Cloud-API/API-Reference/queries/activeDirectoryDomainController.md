@@ -34,6 +34,7 @@ Summary of the given Active Directory domain controller.
         isReadOnly
         isRelic
         isReplica
+        legallyHeldSnapshotCount
         macAddress
         macAddresses
         name

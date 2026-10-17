@@ -24,6 +24,7 @@ Get whether alerts for a given workload are enabled.
         workloadId: $workloadId
       ) {
         enabled
+        isThreatMonitoringEnabled
       }
     }
     ```
@@ -43,7 +44,8 @@ Get whether alerts for a given workload are enabled.
     {
       "data": {
         "workloadAlertSetting": {
-          "enabled": true
+          "enabled": true,
+          "isThreatMonitoringEnabled": true
         }
       }
     }

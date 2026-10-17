@@ -23,6 +23,7 @@ A Windows Cluster.
         cdmPendingObjectPauseAssignment
         id
         isReplica
+        legallyHeldSnapshotCount
         name
         numWorkloadDescendants
         objectType
@@ -53,8 +54,8 @@ A Windows Cluster.
           "cdmPendingObjectPauseAssignment": "NO_PENDING_PAUSE_ASSIGNMENT",
           "id": "00000000-0000-0000-0000-000000000000",
           "isReplica": true,
+          "legallyHeldSnapshotCount": 0,
           "name": "example-string",
-          "numWorkloadDescendants": 0,
           "allOrgs": [
             {
               "allUrls": [

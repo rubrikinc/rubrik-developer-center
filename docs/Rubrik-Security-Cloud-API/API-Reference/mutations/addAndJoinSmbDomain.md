@@ -46,10 +46,10 @@ Add a new domain  Supported in v5.0+ Add a new domain manually and join Active D
             "dnsServers": [
               "example-string"
             ],
+            "enableKerberosForSmb": true,
             "isStickySmbService": true,
             "name": "example-string",
-            "serviceAccount": "example-string",
-            "status": "SMB_DOMAIN_STATUS_CONFIGURED"
+            "serviceAccount": "example-string"
           }
         }
       }

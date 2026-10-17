@@ -24,6 +24,7 @@ AWS native S3 Bucket.
 | effectiveRetentionSlaDomain | [SlaDomain](../interfaces/SlaDomain.md) | Effective retention of the SLA Domain of the hierarchy object. |
 | effectiveSlaDomain | [SlaDomain](../interfaces/SlaDomain.md)! | Effective SLA Domain of the hierarchy object. |
 | effectiveSlaSourceObject | [PathNode](PathNode.md) | Path node of the effective SLA Domain source. |
+| futureLegalHoldInfo | [FutureLegalHoldInfo](FutureLegalHoldInfo.md) | Future legal hold rule configured for this object, if any. |
 | id | [UUID](../scalars/UUID.md)! | ID of the hierarchy object. |
 | isExocomputeConfigured | Boolean! | A boolean specifying whether exocompute is configured in the region. |
 | isInfrastructureAlertsEnabled | Boolean! | Whether infrastructure deletion alerts are enabled for the S3 bucket. |
@@ -32,6 +33,7 @@ AWS native S3 Bucket.
 | isRelic | Boolean! | Whether the object is a relic. |
 | isVersioningEnabled | Boolean! | Whether versioning is enabled on the bucket. |
 | latestCleanSnapshotTime | [DateTime](../scalars/DateTime.md) | The date and time of the most recent snapshot that was not flagged as anomalous. |
+| legallyHeldSnapshotCount | Int | Number of snapshots on legal hold for this object. |
 | logicalPath | [[PathNode](PathNode.md)!]! | Sequential list of the logical ancestors of this object. |
 | name | String! | Name of the hierarchy object. |
 | nativeName | String! | AWS Native name of the object. |
@@ -47,7 +49,7 @@ AWS native S3 Bucket.
 | physicalPath | [[PathNode](PathNode.md)!]! | Sequential list of the physical ancestors of this object. |
 | region | [AwsNativeRegion](../enums/AwsNativeRegion.md)! | The AWS region to which the object belongs. |
 | rscNativeObjectPendingSla | [CompactSlaDomain](CompactSlaDomain.md) | SLA Domain assignment which is pending on the Rubrik Security Cloud native objects. |
-| rscPendingObjectPauseAssignment | [PendingObjectPauseAssignmentStatus](../enums/PendingObjectPauseAssignmentStatus.md) | Object pause pending assignment details for RSC objects. |
+| rscPendingObjectPauseAssignment | [PendingObjectPauseAssignmentStatus](../enums/PendingObjectPauseAssignmentStatus.md) | Pending pause or unpause assignment for RSC-native objects. |
 | securityMetadata | [SecurityMetadata](SecurityMetadata.md) | Security posture metadata. |
 | slaAssignment | [SlaAssignmentTypeEnum](../enums/SlaAssignmentTypeEnum.md)! | SLA Domain assignment type for this object. |
 | slaPauseStatus | Boolean! | Pause status of the effective SLA Domain of the hierarchy object. |

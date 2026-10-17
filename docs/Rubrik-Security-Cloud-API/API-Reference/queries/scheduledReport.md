@@ -6,7 +6,7 @@ Retrieve details of a scheduled report.
 
 | Argument | Type | Description |
 |----------|------|-------------|
-| id *(required)* | Int! |  |
+| id *(required)* | Int! | Identifier of the scheduled report. |
 
 ## Returns
 

@@ -12,6 +12,7 @@ Specifies the validation results for the given AWS cloud account.
 | featureResults | [[ValidatePermissionsForFeatureReply](ValidatePermissionsForFeatureReply.md)!]! | Specifies the validation results for each of the features. |
 | numMissingPermissions | Int! | Specifies the number of missing permissions for the given AWS cloud account. |
 | permissionMissingForSimulation | Boolean! | Represents if the permissions for simulation are missing in the given AWS cloud account. |
+| region | String! | Specifies the AWS region the permissions were validated in. Empty when the permissions were validated without any region context. |
 | status | [SuccessStatus](../enums/SuccessStatus.md)! | Specifies the overall status of the validation for the given AWS cloud account. |
 
 ## Used By

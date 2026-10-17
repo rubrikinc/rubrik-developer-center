@@ -6,7 +6,7 @@ Storage settings information for Azure.
 
 | Field | Type | Description |
 |-------|------|-------------|
-| targetMapping | [TargetMapping](TargetMapping.md)! |  |
+| targetMapping | [TargetMapping](TargetMapping.md)! | Azure storage setting. |
 
 ## Used By
 

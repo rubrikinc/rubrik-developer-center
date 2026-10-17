@@ -16,9 +16,11 @@ Vsphere vCenter library child type information.
 | effectiveRetentionSlaDomain | [SlaDomain](SlaDomain.md) | Effective retention of the SLA Domain of the hierarchy object. |
 | effectiveSlaDomain | [SlaDomain](SlaDomain.md)! | Effective SLA Domain of the hierarchy object. |
 | effectiveSlaSourceObject | [PathNode](../objects/PathNode.md) | Path node of the effective SLA Domain source. |
+| futureLegalHoldInfo | [FutureLegalHoldInfo](../objects/FutureLegalHoldInfo.md) | Future legal hold rule configured for this object, if any. |
 | id | [UUID](../scalars/UUID.md)! | ID of the hierarchy object. |
 | isReplica | Boolean | True if this object is a replica, its current cluster differs from its source (primary) cluster. False if the object resides on its source cluster. Null when the source cluster is unknown. |
 | latestUserNote | [LatestUserNote](../objects/LatestUserNote.md) | Latest user note information. |
+| legallyHeldSnapshotCount | Int | Number of snapshots on legal hold for this object. |
 | logicalPath | [[PathNode](../objects/PathNode.md)!]! | Sequential list of the logical ancestors of this object. |
 | name | String! | Name of the hierarchy object. |
 | numWorkloadDescendants | Int! | Number of descendant workloads of this object. |
@@ -45,3 +47,7 @@ Vsphere vCenter library child type information.
 | numWorkloadDescendants | last | Int | Returns the last n elements from the list. |
 | numWorkloadDescendants | before | String | Returns the elements in the list that occur before the specified cursor. |
 | numWorkloadDescendants | objectTypes | [[ManagedObjectType](../enums/ManagedObjectType.md)!] | Types of objects to limit the results. If absent, all object types are returned. |
+
+## Implemented By
+
+- [VsphereContentLibrary](../objects/VsphereContentLibrary.md)

@@ -30,6 +30,7 @@ Retrieves an Azure Native Resource Group for SQL Workloads. Refers to a collecti
         disksCount
         id
         isProtectable
+        legallyHeldSnapshotCount
         name
         numWorkloadDescendants
         objectType

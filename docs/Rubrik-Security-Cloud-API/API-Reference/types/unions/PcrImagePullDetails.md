@@ -6,3 +6,4 @@ Details related to how user will retrieve images from our registry.
 
 - [PcrAwsImagePullDetails](../objects/PcrAwsImagePullDetails.md)
 - [PcrAzureImagePullDetails](../objects/PcrAzureImagePullDetails.md)
+- [PcrGcpImagePullDetails](../objects/PcrGcpImagePullDetails.md)

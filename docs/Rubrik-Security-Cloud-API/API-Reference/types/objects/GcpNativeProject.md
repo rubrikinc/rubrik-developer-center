@@ -20,11 +20,13 @@ Represents a GCP project.
 | effectiveSlaDomain | [SlaDomain](../interfaces/SlaDomain.md)! | Effective SLA Domain of the hierarchy object. |
 | effectiveSlaSourceObject | [PathNode](PathNode.md) | Path node of the effective SLA Domain source. |
 | enabledFeatures | [[CloudAccountEnabledFeature](CloudAccountEnabledFeature.md)!]! | List of protection features enabled for the GCP project. |
+| futureLegalHoldInfo | [FutureLegalHoldInfo](FutureLegalHoldInfo.md) | Future legal hold rule configured for this object, if any. |
 | gcpNativeGceInstanceConnection | [GcpNativeGceInstanceConnection](GcpNativeGceInstanceConnection.md)! | List of all GCE instances under this GCP project. |
 | id | [UUID](../scalars/UUID.md)! | ID of the hierarchy object. |
 | isRelic | Boolean! | Whether the object is a relic. |
 | labels | [[Label](Label.md)!]! | List of labels that are assigned to the object. |
 | lastRefreshedAt | [DateTime](../scalars/DateTime.md) | Last refreshed time of the GCP project. |
+| legallyHeldSnapshotCount | Int | Number of snapshots on legal hold for this object. |
 | logicalChildConnection | [GcpNativeProjectLogicalChildTypeConnection](GcpNativeProjectLogicalChildTypeConnection.md)! | List of logical children. |
 | logicalPath | [[PathNode](PathNode.md)!]! | Sequential list of the logical ancestors of this object. |
 | name | String! | Name of the hierarchy object. |
@@ -38,7 +40,7 @@ Represents a GCP project.
 | physicalPath | [[PathNode](PathNode.md)!]! | Sequential list of the physical ancestors of this object. |
 | projectNumber | String! | Project number of the GCP project. |
 | rscNativeObjectPendingSla | [CompactSlaDomain](CompactSlaDomain.md) | SLA Domain assignment which is pending on the Rubrik Security Cloud native objects. |
-| rscPendingObjectPauseAssignment | [PendingObjectPauseAssignmentStatus](../enums/PendingObjectPauseAssignmentStatus.md) | Object pause pending assignment details for RSC objects. |
+| rscPendingObjectPauseAssignment | [PendingObjectPauseAssignmentStatus](../enums/PendingObjectPauseAssignmentStatus.md) | Pending pause or unpause assignment for RSC-native objects. |
 | securityMetadata | [SecurityMetadata](SecurityMetadata.md) | Security posture metadata. |
 | slaAssignment | [SlaAssignmentTypeEnum](../enums/SlaAssignmentTypeEnum.md)! | SLA Domain assignment type for this object. |
 | slaPauseStatus | Boolean! | Pause status of the effective SLA Domain of the hierarchy object. |
@@ -52,9 +54,9 @@ Represents a GCP project.
 | Field | Argument | Type | Description |
 |-------|----------|------|-------------|
 | gcpNativeGceInstanceConnection | first | Int | Returns the first n elements from the list. |
-| gcpNativeGceInstanceConnection | after | String | Returns the elements in the list that occur after the specified cursor. |
+| gcpNativeGceInstanceConnection | after | String | An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results. |
 | gcpNativeGceInstanceConnection | last | Int | Returns the last n elements from the list. |
-| gcpNativeGceInstanceConnection | before | String | Returns the elements in the list that occur before the specified cursor. |
+| gcpNativeGceInstanceConnection | before | String | An opaque cursor returned from a previous query's startCursor field. Pass this value verbatim to retrieve the previous page of results. |
 | gcpNativeGceInstanceConnection | sortBy | [HierarchySortByField](../enums/HierarchySortByField.md) | Sort hierarchy objects according to the hierarchy field. |
 | gcpNativeGceInstanceConnection | sortOrder | [SortOrder](../enums/SortOrder.md) | Sorts the order of results. |
 | gcpNativeGceInstanceConnection | gceInstanceFilters | [GcpNativeGceInstanceFilters](../inputs/GcpNativeGceInstanceFilters.md) |  |

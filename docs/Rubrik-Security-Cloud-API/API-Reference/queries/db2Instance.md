@@ -28,6 +28,7 @@ Details of a db2 instance for a given fid.
         isReplica
         lastRefreshTime
         lastSyncTime
+        legallyHeldSnapshotCount
         name
         numWorkloadDescendants
         objectType

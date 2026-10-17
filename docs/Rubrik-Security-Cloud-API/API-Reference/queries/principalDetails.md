@@ -7,7 +7,7 @@ Get principal details.
 | Argument | Type | Description |
 |----------|------|-------------|
 | sid *(required)* | String! | Security identifier. |
-| timelineDate *(required)* | String! | Date for which the results will be retrieved. |
+| timelineDate | String | Date for which the results will be retrieved. Defaults to the current time. |
 | includeWhitelistedResults | Boolean | Specifies whether whitelisted results should be included. |
 
 ## Returns
@@ -19,11 +19,8 @@ Get principal details.
 === "Query"
 
     ```graphql
-    query PrincipalDetails($sid: String!, $timelineDate: String!) {
-      principalDetails(
-        sid: $sid
-        timelineDate: $timelineDate
-      )
+    query PrincipalDetails($sid: String!) {
+      principalDetails(sid: $sid)
     }
     ```
 
@@ -31,8 +28,7 @@ Get principal details.
 
     ```json
     {
-      "sid": "example-string",
-      "timelineDate": "example-string"
+      "sid": "example-string"
     }
     ```
 

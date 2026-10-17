@@ -1,6 +1,6 @@
 # clusterTypeList
 
-*No description available.*
+Counts of Rubrik clusters, grouped by cluster type.
 
 ## Returns
 

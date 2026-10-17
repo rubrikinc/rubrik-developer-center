@@ -6,7 +6,7 @@ Details of all the supported permission groups for the specified features.
 
 | Argument | Type | Description |
 |----------|------|-------------|
-| features *(required)* | [[CloudAccountFeature](../types/enums/CloudAccountFeature.md)!]! | Cloud account features. |
+| features *(required)* | [[CloudAccountFeature](../types/enums/CloudAccountFeature.md)!]! | The cloud account features whose permission groups are requested. |
 
 ## Returns
 
@@ -44,6 +44,9 @@ Details of all the supported permission groups for the specified features.
             "feature": "ALL",
             "permissionGroups": [
               {
+                "conditions": [
+                  "example-string"
+                ],
                 "permissionGroupType": "ADVANCED_DIAGNOSTICS",
                 "permissionsWithConditions": [
                   "example-string"

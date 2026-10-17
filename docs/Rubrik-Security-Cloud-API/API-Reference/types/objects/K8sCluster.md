@@ -19,9 +19,11 @@ Kubernetes cluster.
 | effectiveRetentionSlaDomain | [SlaDomain](../interfaces/SlaDomain.md) | Effective retention of the SLA Domain of the hierarchy object. |
 | effectiveSlaDomain | [SlaDomain](../interfaces/SlaDomain.md)! | Effective SLA Domain of the hierarchy object. |
 | effectiveSlaSourceObject | [PathNode](PathNode.md) | Path node of the effective SLA Domain source. |
+| futureLegalHoldInfo | [FutureLegalHoldInfo](FutureLegalHoldInfo.md) | Future legal hold rule configured for this object, if any. |
 | id | [UUID](../scalars/UUID.md)! | ID of the hierarchy object. |
 | k8sDescendantNamespaces | [K8sNamespaceConnection](K8sNamespaceConnection.md)! | Namespaces belonging to the Kubernetes cluster. |
 | lastRefreshTime | [DateTime](../scalars/DateTime.md) | Time of the last successful refresh task on the Kubernetes cluster. |
+| legallyHeldSnapshotCount | Int | Number of snapshots on legal hold for this object. |
 | logicalPath | [[PathNode](PathNode.md)!]! | Sequential list of the logical ancestors of this object. |
 | name | String! | Name of the hierarchy object. |
 | numWorkloadDescendants | Int! | Number of descendant workloads of this object. |
@@ -31,7 +33,7 @@ Kubernetes cluster.
 | physicalPath | [[PathNode](PathNode.md)!]! | Sequential list of the physical ancestors of this object. |
 | rbsPortRanges | [[K8sRbsInfo](K8sRbsInfo.md)!]! | Deprecated. Use clusterPortRanges instead. |
 | rscNativeObjectPendingSla | [CompactSlaDomain](CompactSlaDomain.md) | SLA Domain assignment which is pending on the Rubrik Security Cloud native objects. |
-| rscPendingObjectPauseAssignment | [PendingObjectPauseAssignmentStatus](../enums/PendingObjectPauseAssignmentStatus.md) | Object pause pending assignment details for RSC objects. |
+| rscPendingObjectPauseAssignment | [PendingObjectPauseAssignmentStatus](../enums/PendingObjectPauseAssignmentStatus.md) | Pending pause or unpause assignment for RSC-native objects. |
 | securityMetadata | [SecurityMetadata](SecurityMetadata.md) | Security posture metadata. |
 | slaAssignment | [SlaAssignmentTypeEnum](../enums/SlaAssignmentTypeEnum.md)! | SLA Domain assignment type for this object. |
 | slaPauseStatus | Boolean! | Pause status of the effective SLA Domain of the hierarchy object. |
@@ -43,21 +45,21 @@ Kubernetes cluster.
 | Field | Argument | Type | Description |
 |-------|----------|------|-------------|
 | descendantConnection | first | Int | Returns the first n elements from the list. |
-| descendantConnection | after | String | Returns the elements in the list that occur after the specified cursor. |
+| descendantConnection | after | String | An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results. |
 | descendantConnection | sortBy | [HierarchySortByField](../enums/HierarchySortByField.md) | Sort hierarchy objects according to the hierarchy field. |
 | descendantConnection | sortOrder | [SortOrder](../enums/SortOrder.md) | Sorts the order of results. |
 | descendantConnection | typeFilter | [[HierarchyObjectTypeEnum](../enums/HierarchyObjectTypeEnum.md)!] | Types of objects to include. |
 | descendantConnection | filter | [[Filter](../inputs/Filter.md)!] | Hierarchy object filter. |
 | descendantConnection | workloadHierarchy | [WorkloadLevelHierarchy](../enums/WorkloadLevelHierarchy.md) | Each enumeration value represents the hierarchy of a specific workload type for RBAC and SLA Domain assignments.  A value of 'None' represents the hierarchy of all workload types. |
 | k8sDescendantNamespaces | first | Int | Returns the first n elements from the list. |
-| k8sDescendantNamespaces | after | String | Returns the elements in the list that occur after the specified cursor. |
+| k8sDescendantNamespaces | after | String | An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results. |
 | k8sDescendantNamespaces | sortBy | [HierarchySortByField](../enums/HierarchySortByField.md) | Sort hierarchy objects according to the hierarchy field. |
 | k8sDescendantNamespaces | sortOrder | [SortOrder](../enums/SortOrder.md) | Sorts the order of results. |
 | k8sDescendantNamespaces | filter | [[Filter](../inputs/Filter.md)!] | Hierarchy object filter. |
 | numWorkloadDescendants | first | Int | Returns the first n elements from the list. |
-| numWorkloadDescendants | after | String | Returns the elements in the list that occur after the specified cursor. |
+| numWorkloadDescendants | after | String | An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results. |
 | numWorkloadDescendants | last | Int | Returns the last n elements from the list. |
-| numWorkloadDescendants | before | String | Returns the elements in the list that occur before the specified cursor. |
+| numWorkloadDescendants | before | String | An opaque cursor returned from a previous query's startCursor field. Pass this value verbatim to retrieve the previous page of results. |
 | numWorkloadDescendants | objectTypes | [[ManagedObjectType](../enums/ManagedObjectType.md)!] | Types of objects to limit the results. If absent, all object types are returned. |
 
 ## Used By

@@ -14,6 +14,7 @@ Summary of a threat hunt for a snapshot.
 | snapshotScanStatus | [ThreatHuntStatus](../enums/ThreatHuntStatus.md)! | Status of scanning this snapshot. |
 | status | [MalwareScanInSnapshotStatus](../enums/MalwareScanInSnapshotStatus.md)! | Status of scanning this snapshot. |
 | totalMatchedPaths | [Long](../scalars/Long.md)! | Total unique paths for which malware was found. |
+| totalRegistryKeyMatches | [Long](../scalars/Long.md)! | Total number of Windows registry key matches in this snapshot. |
 
 ## Used By
 

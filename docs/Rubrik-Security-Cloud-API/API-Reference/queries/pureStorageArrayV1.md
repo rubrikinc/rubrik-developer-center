@@ -26,6 +26,7 @@ Details of a Pure Storage array for a given ID.
         hostName
         id
         isReplica
+        legallyHeldSnapshotCount
         name
         numWorkloadDescendants
         objectType

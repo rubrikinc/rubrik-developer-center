@@ -29,6 +29,7 @@ Represents the Amazon DynamoDB Table with a specific ID. For more information, s
         isInfrastructureAlertsEnabled
         isProtectable
         isRelic
+        legallyHeldSnapshotCount
         name
         nativeName
         nonBackupRegionNames

@@ -16,4 +16,5 @@ List of exo-task images in the bundle.
 
 - [AWSExoTaskImageBundle.bundleImages](AWSExoTaskImageBundle.md)
 - [AzureExoTaskImageBundle.bundleImages](AzureExoTaskImageBundle.md)
+- [GcpExoTaskImageBundle.bundleImages](GcpExoTaskImageBundle.md)
 - [GetExotaskImageBundleReply.bundleImages](GetExotaskImageBundleReply.md)

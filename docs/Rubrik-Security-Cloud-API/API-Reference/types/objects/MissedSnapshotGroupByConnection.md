@@ -22,6 +22,8 @@ Paginated list of MissedSnapshotGroupBy objects. Each page of the results includ
 - [FusionComputeVirtualMachine.missedSnapshotGroupByConnection](FusionComputeVirtualMachine.md)
 - [HyperVVirtualMachine.missedSnapshotGroupByConnection](HyperVVirtualMachine.md)
 - [HypervisorVirtualMachineV1.missedSnapshotGroupByConnection](HypervisorVirtualMachineV1.md)
+- [InformixInstance.missedSnapshotGroupByConnection](InformixInstance.md)
+- [IrisdbInstance.missedSnapshotGroupByConnection](IrisdbInstance.md)
 - KosmosSnappableHierarchyObjectType.missedSnapshotGroupByConnection
 - [KubernetesProtectionSet.missedSnapshotGroupByConnection](KubernetesProtectionSet.md)
 - [KubernetesVirtualMachine.missedSnapshotGroupByConnection](KubernetesVirtualMachine.md)
@@ -38,11 +40,9 @@ Paginated list of MissedSnapshotGroupBy objects. Each page of the results includ
 - [OpenstackVirtualMachine.missedSnapshotGroupByConnection](OpenstackVirtualMachine.md)
 - [OracleDataGuardGroup.missedSnapshotGroupByConnection](OracleDataGuardGroup.md)
 - [OracleDatabase.missedSnapshotGroupByConnection](OracleDatabase.md)
+- [PingFederateClusterV1.missedSnapshotGroupByConnection](PingFederateClusterV1.md)
 - [PostgreSQLDbCluster.missedSnapshotGroupByConnection](PostgreSQLDbCluster.md)
 - [ProxmoxVirtualMachineV1.missedSnapshotGroupByConnection](ProxmoxVirtualMachineV1.md)
 - [PureStorageProtectionGroupV1.missedSnapshotGroupByConnection](PureStorageProtectionGroupV1.md)
 - [PureStorageVolumeV1.missedSnapshotGroupByConnection](PureStorageVolumeV1.md)
-- [SapHanaDatabase.missedSnapshotGroupByConnection](SapHanaDatabase.md)
-- [SapHanaSystem.missedSnapshotGroupByConnection](SapHanaSystem.md)
-- [ShareFileset.missedSnapshotGroupByConnection](ShareFileset.md)
-- *…and 4 more*
+- *…and 8 more*

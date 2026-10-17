@@ -11,6 +11,7 @@ Daily summary of violations.
 | policyTypes *(required)* | [[PolicyType](../types/enums/PolicyType.md)!]! | List of policy types. If empty, no results will be returned. |
 | resourceFilter | [ResourceFilterInput](../types/inputs/ResourceFilterInput.md) | Resource to filter by. |
 | idpTypes | [[IdpType](../types/enums/IdpType.md)!] | Identity provider types to filter by. If empty or null, the results will not be filtered. |
+| saasOrgIds | [String!] | SaaS organization IDs to filter by, matched against the organization recorded on each violation. If empty or null, the results will not be filtered. |
 
 ## Returns
 

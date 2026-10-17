@@ -25,6 +25,7 @@ An Oracle Host.
         hostLogRetentionHours
         id
         isReplica
+        legallyHeldSnapshotCount
         logBackupFrequency
         logRetentionHours
         name

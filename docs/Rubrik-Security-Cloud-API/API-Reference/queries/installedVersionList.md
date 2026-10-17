@@ -1,6 +1,6 @@
 # installedVersionList
 
-*No description available.*
+Retrieves the list of CDM versions installed across Rubrik clusters, with the cluster count for each version and whether an upgrade is recommended.
 
 ## Returns
 

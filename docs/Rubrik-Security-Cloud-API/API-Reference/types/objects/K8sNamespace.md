@@ -17,9 +17,11 @@ Kubernetes namespace.
 | effectiveRetentionSlaDomain | [SlaDomain](../interfaces/SlaDomain.md) | Effective retention of the SLA Domain of the hierarchy object. |
 | effectiveSlaDomain | [SlaDomain](../interfaces/SlaDomain.md)! | Effective SLA Domain of the hierarchy object. |
 | effectiveSlaSourceObject | [PathNode](PathNode.md) | Path node of the effective SLA Domain source. |
+| futureLegalHoldInfo | [FutureLegalHoldInfo](FutureLegalHoldInfo.md) | Future legal hold rule configured for this object, if any. |
 | id | [UUID](../scalars/UUID.md)! | Object ID. |
 | isRelic | Boolean! | Specifies whether the namespace is a relic. |
 | k8sClusterId | String! | Kubernetes cluster ID. |
+| legallyHeldSnapshotCount | Int | Number of snapshots on legal hold for this object. |
 | logicalPath | [[PathNode](PathNode.md)!]! | Sequential list of the logical ancestors of this object. |
 | name | String! | Name of the hierarchy object. |
 | namespaceName | String! | Name of the namespace. |
@@ -36,7 +38,7 @@ Kubernetes namespace.
 | physicalPath | [[PathNode](PathNode.md)!]! | Sequential list of the physical ancestors of this object. |
 | resourceVersion | String! | Version of the namespace on the Kubernetes cluster. |
 | rscNativeObjectPendingSla | [CompactSlaDomain](CompactSlaDomain.md) | SLA Domain assignment which is pending on the Rubrik Security Cloud native objects. |
-| rscPendingObjectPauseAssignment | [PendingObjectPauseAssignmentStatus](../enums/PendingObjectPauseAssignmentStatus.md) | Object pause pending assignment details for RSC objects. |
+| rscPendingObjectPauseAssignment | [PendingObjectPauseAssignmentStatus](../enums/PendingObjectPauseAssignmentStatus.md) | Pending pause or unpause assignment for RSC-native objects. |
 | securityMetadata | [SecurityMetadata](SecurityMetadata.md) | Security posture metadata. |
 | slaAssignment | [SlaAssignmentTypeEnum](../enums/SlaAssignmentTypeEnum.md)! | SLA Domain assignment type for this object. |
 | slaPauseStatus | Boolean! | Pause status of the effective SLA Domain of the hierarchy object. |
@@ -52,38 +54,38 @@ Kubernetes namespace.
 |-------|----------|------|-------------|
 | newestSnapshot | backupLocationId | String | Filter snapshots by backup location id. |
 | numWorkloadDescendants | first | Int | Returns the first n elements from the list. |
-| numWorkloadDescendants | after | String | Returns the elements in the list that occur after the specified cursor. |
+| numWorkloadDescendants | after | String | An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results. |
 | numWorkloadDescendants | last | Int | Returns the last n elements from the list. |
-| numWorkloadDescendants | before | String | Returns the elements in the list that occur before the specified cursor. |
+| numWorkloadDescendants | before | String | An opaque cursor returned from a previous query's startCursor field. Pass this value verbatim to retrieve the previous page of results. |
 | numWorkloadDescendants | objectTypes | [[ManagedObjectType](../enums/ManagedObjectType.md)!] | Types of objects to limit the results. If absent, all object types are returned. |
 | oldestSnapshot | backupLocationId | String | Filter snapshots by backup location id. |
 | onDemandSnapshotCount | backupLocationId | String | Filter snapshots by backup location id. |
 | snapshotConnection | first | Int | Returns the first n elements from the list. |
-| snapshotConnection | after | String | Returns the elements in the list that occur after the specified cursor. |
+| snapshotConnection | after | String | An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results. |
 | snapshotConnection | last | Int | Returns the last n elements from the list. |
-| snapshotConnection | before | String | Returns the elements in the list that occur before the specified cursor. |
+| snapshotConnection | before | String | An opaque cursor returned from a previous query's startCursor field. Pass this value verbatim to retrieve the previous page of results. |
 | snapshotConnection | filter | [PolarisSnapshotFilterInput](../inputs/PolarisSnapshotFilterInput.md) | Filter the Rubrik Security Cloud snapshot connection. |
 | snapshotConnection | sortBy | [PolarisSnapshotSortByEnum](../enums/PolarisSnapshotSortByEnum.md) | Sort Rubrik Security Cloud snapshots by field. |
 | snapshotConnection | sortOrder | [SortOrder](../enums/SortOrder.md) | Sorts the order of results. |
 | snapshotGroupByConnection | first | Int | Returns the first n elements from the list. |
-| snapshotGroupByConnection | after | String | Returns the elements in the list that occur after the specified cursor. |
+| snapshotGroupByConnection | after | String | An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results. |
 | snapshotGroupByConnection | last | Int | Returns the last n elements from the list. |
-| snapshotGroupByConnection | before | String | Returns the elements in the list that occur before the specified cursor. |
+| snapshotGroupByConnection | before | String | An opaque cursor returned from a previous query's startCursor field. Pass this value verbatim to retrieve the previous page of results. |
 | snapshotGroupByConnection | timezoneOffset | Float | Offset based on the customer timezone. |
 | snapshotGroupByConnection | filter | [PolarisSnapshotFilterInput](../inputs/PolarisSnapshotFilterInput.md) | Filter the Rubrik Security Cloud snapshot connection. |
 | snapshotGroupByConnection | groupBy *(required)* | [PolarisSnapshotGroupByEnum](../enums/PolarisSnapshotGroupByEnum.md)! | Group Rubrik Security Cloud snapshots by field. |
 | snapshotGroupByConnection | timezone | [Timezone](../scalars/Timezone.md) | Time zone identifier string. For example, 'America/Los_Angeles' is used for the U.S. Pacific Time zone. |
 | snapshotGroupByNewConnection | first | Int | Returns the first n elements from the list. |
-| snapshotGroupByNewConnection | after | String | Returns the elements in the list that occur after the specified cursor. |
+| snapshotGroupByNewConnection | after | String | An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results. |
 | snapshotGroupByNewConnection | last | Int | Returns the last n elements from the list. |
-| snapshotGroupByNewConnection | before | String | Returns the elements in the list that occur before the specified cursor. |
+| snapshotGroupByNewConnection | before | String | An opaque cursor returned from a previous query's startCursor field. Pass this value verbatim to retrieve the previous page of results. |
 | snapshotGroupByNewConnection | timezoneOffset | Float | Offset based on the customer timezone. |
 | snapshotGroupByNewConnection | snapshotFilter *(required)* | [[PolarisSnapshotFilterNewInput](../inputs/PolarisSnapshotFilterNewInput.md)!]! | Filter the Rubrik Security Cloud snapshot connection. |
 | snapshotGroupByNewConnection | snapshotGroupBy *(required)* | [SnapshotGroupByTime](../enums/SnapshotGroupByTime.md)! | Group Rubrik Security Cloud snapshots by field. |
 | workloadSnapshotConnection | first | Int | Returns the first n elements from the list. |
-| workloadSnapshotConnection | after | String | Returns the elements in the list that occur after the specified cursor. |
+| workloadSnapshotConnection | after | String | An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results. |
 | workloadSnapshotConnection | last | Int | Returns the last n elements from the list. |
-| workloadSnapshotConnection | before | String | Returns the elements in the list that occur before the specified cursor. |
+| workloadSnapshotConnection | before | String | An opaque cursor returned from a previous query's startCursor field. Pass this value verbatim to retrieve the previous page of results. |
 | workloadSnapshotConnection | workloadId *(required)* | String! | The FID of the workload. |
 | workloadSnapshotConnection | snapshotFilter | [[SnapshotQueryFilterInput](../inputs/SnapshotQueryFilterInput.md)!] | Filters for snapshot connection. |
 | workloadSnapshotConnection | sortOrder | [SortOrder](../enums/SortOrder.md) | Sorts the order of results. |

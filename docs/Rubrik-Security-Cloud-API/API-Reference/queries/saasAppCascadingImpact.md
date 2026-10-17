@@ -34,7 +34,7 @@ Returns the object types, and their record counts, that may be impacted or resto
 
     ```json
     {
-      "saasAppType": "ANTHROPIC_CHAT",
+      "saasAppType": "ANTHROPIC_APPS",
       "restoreConfig": {
         "orgId": "example-string"
       }

@@ -42,6 +42,7 @@ Quarantine details of a workload.
             "snapshotId": "example-string",
             "filesDetails": [
               {
+                "cleanSnapshotId": "00000000-0000-0000-0000-000000000000",
                 "fileName": "example-string"
               }
             ]

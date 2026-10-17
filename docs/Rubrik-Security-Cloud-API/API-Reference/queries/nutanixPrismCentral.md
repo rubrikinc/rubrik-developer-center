@@ -28,6 +28,7 @@ Details of the given Prism Central.
         isDrEnabled
         isReplica
         lastRefreshTime
+        legallyHeldSnapshotCount
         name
         naturalId
         nosVersion

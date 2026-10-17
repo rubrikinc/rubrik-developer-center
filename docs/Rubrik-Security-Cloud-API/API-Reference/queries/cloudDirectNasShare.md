@@ -32,6 +32,7 @@ NAS Cloud Direct share.
         isNasShareManuallyAdded
         isRelic
         isStale
+        legallyHeldSnapshotCount
         name
         namespaceId
         ncdPolicyName

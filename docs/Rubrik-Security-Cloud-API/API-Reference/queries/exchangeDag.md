@@ -25,6 +25,7 @@ Details of an Exchange DAG for a given fid.
         cdmPendingObjectPauseAssignment
         id
         isReplica
+        legallyHeldSnapshotCount
         name
         numWorkloadDescendants
         objectType

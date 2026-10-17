@@ -1,12 +1,12 @@
 # updateCloudNativeAzureStorageSetting
 
-*No description available.*
+Updates an existing storage setting for the archival of Azure cloud native protected objects.
 
 ## Arguments
 
 | Argument | Type | Description |
 |----------|------|-------------|
-| input *(required)* | [UpdateCloudNativeAzureStorageSettingInput](../types/inputs/UpdateCloudNativeAzureStorageSettingInput.md)! |  |
+| input *(required)* | [UpdateCloudNativeAzureStorageSettingInput](../types/inputs/UpdateCloudNativeAzureStorageSettingInput.md)! | Input for updating Azure cloud native storage settings. |
 
 ## Returns
 

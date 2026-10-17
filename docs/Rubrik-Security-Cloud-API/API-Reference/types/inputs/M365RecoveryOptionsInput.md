@@ -6,5 +6,6 @@ Options for automated M365 Access Recovery during a granular restore. Absent mea
 
 | Field | Type | Description |
 |-------|------|-------------|
+| conflictRule | [M365RecoveryConflictRule](../enums/M365RecoveryConflictRule.md) | How to handle data that already exists in the principal's Exchange mailbox or OneDrive. Applies to both workloads. Unspecified when not set. |
 | shouldIncludeExchange | Boolean! | When true, recover the principal's Exchange Online mailbox alongside the Entra ID object. |
 | shouldIncludeOneDrive | Boolean! | When true, recover the principal's OneDrive access alongside the Entra ID object. Recovering content from a permanently removed OneDrive site is not supported. |

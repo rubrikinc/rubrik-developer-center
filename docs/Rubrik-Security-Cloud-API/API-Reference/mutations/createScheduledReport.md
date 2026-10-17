@@ -6,7 +6,7 @@ Create a scheduled report.
 
 | Argument | Type | Description |
 |----------|------|-------------|
-| input *(required)* | [CreateScheduledReportInput](../types/inputs/CreateScheduledReportInput.md)! |  |
+| input *(required)* | [CreateScheduledReportInput](../types/inputs/CreateScheduledReportInput.md)! | Input for creating a scheduled report. |
 
 ## Returns
 

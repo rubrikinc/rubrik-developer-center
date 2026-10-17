@@ -1,6 +1,6 @@
 # vSphereResourcePool
 
-*No description available.*
+Details of a vSphere resource pool for a given ID.
 
 ## Arguments
 
@@ -26,6 +26,7 @@
         hasDatastoresForRecovery
         id
         isReplica
+        legallyHeldSnapshotCount
         name
         numWorkloadDescendants
         objectType

@@ -7,9 +7,9 @@ Retrieves basic information for recovery plans with pagination support. RSC prio
 | Argument | Type | Description |
 |----------|------|-------------|
 | first | Int | Returns the first n elements from the list. |
-| after | String | Returns the elements in the list that occur after the specified cursor. |
+| after | String | An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results. |
 | last | Int | Returns the last n elements from the list. |
-| before | String | Returns the elements in the list that occur before the specified cursor. |
+| before | String | An opaque cursor returned from a previous query's startCursor field. Pass this value verbatim to retrieve the previous page of results. |
 | recoveryPlanIds | [[UUID](../types/scalars/UUID.md)!] | List of recovery plan IDs to filter the results. |
 | sortParam | [RecoveryPlanSortParamInput](../types/inputs/RecoveryPlanSortParamInput.md) | Sort parameters for the results. |
 | recoveryPlanTypes | [[RecoveryPlanType](../types/enums/RecoveryPlanType.md)!] | Optional filter for recovery plan types. |
@@ -26,6 +26,8 @@ Retrieves basic information for recovery plans with pagination support. RSC prio
 | sourceRootDomainSids | [String!] | Optional filter for AD forest root domain SIDs. |
 | recoveryPlanStatuses | [[RecoveryPlanStatus](../types/enums/RecoveryPlanStatus.md)!] | Optional filter for recovery plan configuration statuses. |
 | lastRecoveryOutcomes | [[RecoveryOutcome](../types/enums/RecoveryOutcome.md)!] | Optional filter by the outcome of the most recent completed recovery. Plans with no recovery history are excluded from filtered results. |
+| recoveryTags | [[RecoveryTagClause](../types/inputs/RecoveryTagClause.md)!] | Optional filter by tag clauses. A plan matches if it has all the tags in at least one clause. Empty clauses are ignored. |
+| isPreSeedEnabled | Boolean | Optional filter by whether Pre-Seed is enabled for the recovery plan. When unset, recovery plans are returned regardless of Pre-Seed state. |
 
 ## Returns
 
@@ -41,6 +43,7 @@ Retrieves basic information for recovery plans with pagination support. RSC prio
         nodes {
           id
           isArchived
+          isPreSeedEnabled
           name
           numChildren
           recoveryPlanStatus
@@ -73,10 +76,10 @@ Retrieves basic information for recovery plans with pagination support. RSC prio
               {
                 "id": "00000000-0000-0000-0000-000000000000",
                 "isArchived": true,
+                "isPreSeedEnabled": true,
                 "name": "example-string",
                 "numChildren": 0,
-                "recoveryPlanStatus": "CONFIGURED",
-                "recoveryPlanType": "CYBER_RECOVERY"
+                "recoveryPlanStatus": "CONFIGURED"
               }
             ]
           ],

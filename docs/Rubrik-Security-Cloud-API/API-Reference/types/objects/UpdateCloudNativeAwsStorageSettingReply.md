@@ -6,7 +6,7 @@ Response of the mutation to update a storage setting for AWS.
 
 | Field | Type | Description |
 |-------|------|-------------|
-| targetMapping | [TargetMapping](TargetMapping.md)! |  |
+| targetMapping | [TargetMapping](TargetMapping.md)! | AWS storage setting. |
 
 ## Used By
 

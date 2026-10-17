@@ -1,6 +1,6 @@
 # backupWindowsForObjects
 
-Returns backup window information for the specified managed objects. The optional `scope` argument selects which layer to return per object: OBJECT_LEVEL (the override only) or SLA_LEVEL (the SLA's window only). When omitted (UNSPECIFIED), the effective window is returned: the object-level override if set, else the SLA window. Each entry's `scope` discriminator reports the layer that supplied the returned window, always OBJECT_LEVEL or SLA_LEVEL.
+Returns backup window information for the specified managed objects. The optional `scope` argument selects which layer to return per object: OBJECT_LEVEL (the override only) or SLA_LEVEL (the SLA's window only). When omitted (UNSPECIFIED), the effective window is returned: the object-level override if set, else the SLA window. Each entry's `scope` discriminator reports the layer that supplied the returned window, always OBJECT_LEVEL or SLA_LEVEL.  Entries are returned positionally -- one per input id, in request order -- unless `sortBy` asks for a different order.
 
 ## Arguments
 
@@ -8,6 +8,8 @@ Returns backup window information for the specified managed objects. The optiona
 |----------|------|-------------|
 | objectIds *(required)* | [[UUID](../types/scalars/UUID.md)!]! | Identifiers of the managed objects to look up. |
 | scope | [BackupWindowScope](../types/enums/BackupWindowScope.md) | Which backup window layer to return: OBJECT_LEVEL or SLA_LEVEL. Defaults to effective behavior when omitted. |
+| sortBy | [BackupWindowsForObjectsSortByField](../types/enums/BackupWindowsForObjectsSortByField.md) | Attribute to order the returned entries by. Omit to keep request order. OBJECT_NAME orders by the managed object name, which is resolved server-side and is not part of the reply. |
+| sortOrder | [SortOrder](../types/enums/SortOrder.md) | Direction to apply to `sortBy`. Defaults to ASC. |
 
 ## Returns
 

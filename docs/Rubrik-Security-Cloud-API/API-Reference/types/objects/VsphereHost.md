@@ -1,8 +1,8 @@
 # VsphereHost
 
-*No description available.*
+A vSphere ESXi host.
 
-**Implements:** [CdmHierarchyObject](../interfaces/CdmHierarchyObject.md), [HierarchyObject](../interfaces/HierarchyObject.md), [VsphereVcenterDescendantType](../interfaces/VsphereVcenterDescendantType.md), [VsphereVcenterPhysicalChildType](../interfaces/VsphereVcenterPhysicalChildType.md), [VsphereComputeClusterPhysicalChildType](../interfaces/VsphereComputeClusterPhysicalChildType.md), [VsphereComputeClusterDescendantType](../interfaces/VsphereComputeClusterDescendantType.md), [VsphereDatacenterDescendantType](../interfaces/VsphereDatacenterDescendantType.md), [VsphereDatacenterPhysicalChildType](../interfaces/VsphereDatacenterPhysicalChildType.md)
+**Implements:** [HierarchyObject](../interfaces/HierarchyObject.md), [CdmHierarchyObject](../interfaces/CdmHierarchyObject.md), [VsphereVcenterDescendantType](../interfaces/VsphereVcenterDescendantType.md), [VsphereVcenterPhysicalChildType](../interfaces/VsphereVcenterPhysicalChildType.md), [VsphereComputeClusterPhysicalChildType](../interfaces/VsphereComputeClusterPhysicalChildType.md), [VsphereComputeClusterDescendantType](../interfaces/VsphereComputeClusterDescendantType.md), [VsphereDatacenterDescendantType](../interfaces/VsphereDatacenterDescendantType.md), [VsphereDatacenterPhysicalChildType](../interfaces/VsphereDatacenterPhysicalChildType.md)
 
 ## Fields
 
@@ -20,12 +20,14 @@
 | effectiveRetentionSlaDomain | [SlaDomain](../interfaces/SlaDomain.md) | Effective retention of the SLA Domain of the hierarchy object. |
 | effectiveSlaDomain | [SlaDomain](../interfaces/SlaDomain.md)! | Effective SLA Domain of the hierarchy object. |
 | effectiveSlaSourceObject | [PathNode](PathNode.md) | Path node of the effective SLA Domain source. |
+| futureLegalHoldInfo | [FutureLegalHoldInfo](FutureLegalHoldInfo.md) | Future legal hold rule configured for this object, if any. |
 | hasDatastoresForRecovery | Boolean! | This field is true if this object has one or more vSphere datastore descendants available for use as a recovery target and false otherwise. |
 | id | [UUID](../scalars/UUID.md)! | ID of the hierarchy object. |
-| ioFilterStatus | String! | This vsphere host's IOFilter status can be Uninstalled or Installed. |
+| ioFilterStatus | String! | This vSphere host's IOFilter status. |
 | isReplica | Boolean | True if this object is a replica, its current cluster differs from its source (primary) cluster. False if the object resides on its source cluster. Null when the source cluster is unknown. |
-| isStandaloneHost | Boolean! |  |
+| isStandaloneHost | Boolean! | Indicates whether this ESXi host is a standalone host. |
 | latestUserNote | [LatestUserNote](LatestUserNote.md) | Latest user note information. |
+| legallyHeldSnapshotCount | Int | Number of snapshots on legal hold for this object. |
 | logicalPath | [[PathNode](PathNode.md)!]! | Sequential list of the logical ancestors of this object. |
 | name | String! | Name of the hierarchy object. |
 | numWorkloadDescendants | Int! | Number of descendant workloads of this object. |
@@ -37,15 +39,15 @@
 | physicalChildConnection | [VsphereHostPhysicalChildTypeConnection](VsphereHostPhysicalChildTypeConnection.md)! | List of physical children. |
 | physicalPath | [[PathNode](PathNode.md)!]! | Sequential list of the physical ancestors of this object. |
 | primaryClusterLocation | [DataLocation](DataLocation.md)! | The source cluster of this object. Returned as a data location because there is no guarantee that Rubrik has knowledge about the source cluster. |
-| recoveryTargetChildConnection | [VsphereHostPhysicalChildTypeConnection](VsphereHostPhysicalChildTypeConnection.md)! | List of recoveryTarget children. |
-| recoveryTargetDescendantConnection | [VsphereHostDescendantTypeConnection](VsphereHostDescendantTypeConnection.md)! | Paginated list of recovery target descendants. |
+| recoveryTargetChildConnection | [VsphereHostPhysicalChildTypeConnection](VsphereHostPhysicalChildTypeConnection.md)! | List of recovery target children. |
+| recoveryTargetDescendantConnection | [VsphereHostDescendantTypeConnection](VsphereHostDescendantTypeConnection.md)! | List of recovery target descendants. |
 | replicatedObjectCount | Int! | The number of objects either replicated by this object or related to this object by replication. |
 | replicatedObjects | [[CdmHierarchyObject](../interfaces/CdmHierarchyObject.md)!]! | Objects either replicated by this object or related to this object by replication. |
 | securityMetadata | [SecurityMetadata](SecurityMetadata.md) | Security posture metadata. |
 | slaAssignment | [SlaAssignmentTypeEnum](../enums/SlaAssignmentTypeEnum.md)! | SLA Domain assignment type for this object. |
 | slaPauseStatus | Boolean! | Pause status of the effective SLA Domain of the hierarchy object. |
 | snapshotConsistencyMandate | [ConsistencyLevelEnum](../enums/ConsistencyLevelEnum.md)! | Snapshot consistency mandate. |
-| snapshotConsistencySource | String | Fid of the object from where the snapshot consistency mandate is inherited. |
+| snapshotConsistencySource | String | ID of the object from which the snapshot consistency mandate is inherited. |
 | snapshotDistribution | [SnapshotDistribution](SnapshotDistribution.md)! | Distribution of the snapshots of the hierarchy object. |
 | sshEnabled | Boolean | Indicates whether SSH is enabled on this ESXi host. |
 
@@ -54,7 +56,9 @@
 | Field | Argument | Type | Description |
 |-------|----------|------|-------------|
 | descendantConnection | first | Int | Returns the first n elements from the list. |
-| descendantConnection | after | String | Returns the elements in the list that occur after the specified cursor. |
+| descendantConnection | after | String | An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results. |
+| descendantConnection | last | Int | Returns the last n elements from the list. |
+| descendantConnection | before | String | An opaque cursor returned from a previous query's startCursor field. Pass this value verbatim to retrieve the previous page of results. |
 | descendantConnection | sortBy | [HierarchySortByField](../enums/HierarchySortByField.md) | Sort hierarchy objects according to the hierarchy field. |
 | descendantConnection | sortOrder | [SortOrder](../enums/SortOrder.md) | Sorts the order of results. |
 | descendantConnection | typeFilter | [[HierarchyObjectTypeEnum](../enums/HierarchyObjectTypeEnum.md)!] | Types of objects to include. |
@@ -66,21 +70,27 @@
 | numWorkloadDescendants | before | String | Returns the elements in the list that occur before the specified cursor. |
 | numWorkloadDescendants | objectTypes | [[ManagedObjectType](../enums/ManagedObjectType.md)!] | Types of objects to limit the results. If absent, all object types are returned. |
 | physicalChildConnection | first | Int | Returns the first n elements from the list. |
-| physicalChildConnection | after | String | Returns the elements in the list that occur after the specified cursor. |
+| physicalChildConnection | after | String | An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results. |
+| physicalChildConnection | last | Int | Returns the last n elements from the list. |
+| physicalChildConnection | before | String | An opaque cursor returned from a previous query's startCursor field. Pass this value verbatim to retrieve the previous page of results. |
 | physicalChildConnection | sortBy | [HierarchySortByField](../enums/HierarchySortByField.md) | Sort hierarchy objects according to the hierarchy field. |
 | physicalChildConnection | sortOrder | [SortOrder](../enums/SortOrder.md) | Sorts the order of results. |
 | physicalChildConnection | typeFilter | [[HierarchyObjectTypeEnum](../enums/HierarchyObjectTypeEnum.md)!] | Types of objects to include. |
 | physicalChildConnection | filter | [[Filter](../inputs/Filter.md)!] | Hierarchy object filter. |
 | physicalChildConnection | workloadHierarchy | [WorkloadLevelHierarchy](../enums/WorkloadLevelHierarchy.md) | Each enumeration value represents the hierarchy of a specific workload type for RBAC and SLA Domain assignments.  A value of 'None' represents the hierarchy of all workload types. |
 | recoveryTargetChildConnection | first | Int | Returns the first n elements from the list. |
-| recoveryTargetChildConnection | after | String | Returns the elements in the list that occur after the specified cursor. |
+| recoveryTargetChildConnection | after | String | An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results. |
+| recoveryTargetChildConnection | last | Int | Returns the last n elements from the list. |
+| recoveryTargetChildConnection | before | String | An opaque cursor returned from a previous query's startCursor field. Pass this value verbatim to retrieve the previous page of results. |
 | recoveryTargetChildConnection | sortBy | [HierarchySortByField](../enums/HierarchySortByField.md) | Sort hierarchy objects according to the hierarchy field. |
 | recoveryTargetChildConnection | sortOrder | [SortOrder](../enums/SortOrder.md) | Sorts the order of results. |
 | recoveryTargetChildConnection | typeFilter | [[HierarchyObjectTypeEnum](../enums/HierarchyObjectTypeEnum.md)!] | Types of objects to include. |
 | recoveryTargetChildConnection | filter | [[Filter](../inputs/Filter.md)!] | Hierarchy object filter. |
 | recoveryTargetChildConnection | workloadHierarchy | [WorkloadLevelHierarchy](../enums/WorkloadLevelHierarchy.md) | Each enumeration value represents the hierarchy of a specific workload type for RBAC and SLA Domain assignments.  A value of 'None' represents the hierarchy of all workload types. |
 | recoveryTargetDescendantConnection | first | Int | Returns the first n elements from the list. |
-| recoveryTargetDescendantConnection | after | String | Returns the elements in the list that occur after the specified cursor. |
+| recoveryTargetDescendantConnection | after | String | An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results. |
+| recoveryTargetDescendantConnection | last | Int | Returns the last n elements from the list. |
+| recoveryTargetDescendantConnection | before | String | An opaque cursor returned from a previous query's startCursor field. Pass this value verbatim to retrieve the previous page of results. |
 | recoveryTargetDescendantConnection | sortBy | [HierarchySortByField](../enums/HierarchySortByField.md) | Sort hierarchy objects according to the hierarchy field. |
 | recoveryTargetDescendantConnection | sortOrder | [SortOrder](../enums/SortOrder.md) | Sorts the order of results. |
 | recoveryTargetDescendantConnection | typeFilter | [[HierarchyObjectTypeEnum](../enums/HierarchyObjectTypeEnum.md)!] | Types of objects to include. |

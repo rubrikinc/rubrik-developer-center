@@ -6,6 +6,7 @@ Recovery details for different snapshot types.
 
 | Field | Type | Description |
 |-------|------|-------------|
+| archivalLocationPurpose | [StorageLocationPurpose](../enums/StorageLocationPurpose.md) | Purpose of the archival location (e.g. CNP_BAAS for BaaS, PURPOSE_DEFAULT for user-created). Null for SOURCE/REPLICATED snapshots, which have no archival location, and older servers that don't populate the field. |
 | cloudNativeAccountId | [CloudNativeAccountIdWithName](CloudNativeAccountIdWithName.md) | Cloud native account ID required for different snapshot types. |
 | cloudType | [CloudProviderType](../enums/CloudProviderType.md)! | Cloud type required for different snapshot types. |
 | locationName | String! | Location name for the specific snapshot. |

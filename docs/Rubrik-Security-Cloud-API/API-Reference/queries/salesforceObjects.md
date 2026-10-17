@@ -7,9 +7,9 @@ The objects in the Salesforce organization.
 | Argument | Type | Description |
 |----------|------|-------------|
 | first | Int | Returns the first n elements from the list. |
-| after | String | Returns the elements in the list that occur after the specified cursor. |
+| after | String | An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results. |
 | last | Int | Returns the last n elements from the list. |
-| before | String | Returns the elements in the list that occur before the specified cursor. |
+| before | String | An opaque cursor returned from a previous query's startCursor field. Pass this value verbatim to retrieve the previous page of results. |
 | orgId *(required)* | [UUID](../types/scalars/UUID.md)! | Rubrik ID of the Salesforce organization. |
 | sortBy | [HierarchySortByField](../types/enums/HierarchySortByField.md) | Sort hierarchy objects according to the hierarchy field. |
 | filter *(required)* | [[Filter](../types/inputs/Filter.md)!]! | The hierarchy object filter. |
@@ -35,6 +35,7 @@ The objects in the Salesforce organization.
           id
           isRelic
           label
+          legallyHeldSnapshotCount
           name
           naturalId
           numWorkloadDescendants
@@ -80,8 +81,8 @@ The objects in the Salesforce organization.
                 "id": "00000000-0000-0000-0000-000000000000",
                 "isRelic": true,
                 "label": "example-string",
-                "name": "example-string",
-                "naturalId": "example-string"
+                "legallyHeldSnapshotCount": 0,
+                "name": "example-string"
               }
             ]
           ],

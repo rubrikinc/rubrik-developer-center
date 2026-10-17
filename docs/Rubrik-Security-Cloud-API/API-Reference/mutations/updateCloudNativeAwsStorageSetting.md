@@ -1,12 +1,12 @@
 # updateCloudNativeAwsStorageSetting
 
-*No description available.*
+Update storage settings for archiving AWS cloud native protected objects.
 
 ## Arguments
 
 | Argument | Type | Description |
 |----------|------|-------------|
-| input *(required)* | [UpdateCloudNativeAwsStorageSettingInput](../types/inputs/UpdateCloudNativeAwsStorageSettingInput.md)! |  |
+| input *(required)* | [UpdateCloudNativeAwsStorageSettingInput](../types/inputs/UpdateCloudNativeAwsStorageSettingInput.md)! | Update AWS cloud native storage setting. |
 
 ## Returns
 

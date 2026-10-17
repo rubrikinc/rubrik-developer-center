@@ -27,6 +27,7 @@ Details of the Azure AD directory object.
 | firstDeviceSnapshotTime | [DateTime](../scalars/DateTime.md) | When enabled, time of the first snapshot that includes devices. |
 | firstScopeSnapshotTime | [DateTime](../scalars/DateTime.md) | Time of the first snapshot with scope enabled for Role Assignments. |
 | firstZeusSnapshotTime | [DateTime](../scalars/DateTime.md) | When enabled, time of the first snapshot saved to the Zeus store. |
+| futureLegalHoldInfo | [FutureLegalHoldInfo](FutureLegalHoldInfo.md) | Future legal hold rule configured for this object, if any. |
 | id | [UUID](../scalars/UUID.md)! | ID of the hierarchy object. |
 | isEventHubIngestionEnabled | Boolean! | Specifies whether Event Hub ingestion is active for this Entra ID directory. |
 | isIntuneEnabled | Boolean! | Specifies whether Intune protection is enabled for the tenant. |
@@ -60,6 +61,7 @@ Details of the Azure AD directory object.
 | latestSnapshotTime | [DateTime](../scalars/DateTime.md) | Time of the latest snapshot. |
 | latestTermsOfUseCount | Int! | Terms of Use count from the latest snapshot. |
 | latestUserCount | Int! | User count from the latest snapshot. |
+| legallyHeldSnapshotCount | Int | Number of snapshots on legal hold for this object. |
 | logicalPath | [[PathNode](PathNode.md)!]! | Sequential list of the logical ancestors of this object. |
 | m365AccessRecoveryState | [M365AccessRecoveryState](../enums/M365AccessRecoveryState.md)! | Specifies the state of Automated M365 Access Recovery for the directory. A directory that has never been configured reports the default state. |
 | migratedFromColossus | Boolean! | Specifies whether the tenant was migrated from Colossus to the Zeus store. |
@@ -77,7 +79,7 @@ Details of the Azure AD directory object.
 | provisioningState | [AzureAdProvisioningState](../enums/AzureAdProvisioningState.md)! | Specifies the provisioning state of the infrastructure for this Azure AD. |
 | region | String! | Region of the Azure AD Directory. |
 | rscNativeObjectPendingSla | [CompactSlaDomain](CompactSlaDomain.md) | SLA Domain assignment which is pending on the Rubrik Security Cloud native objects. |
-| rscPendingObjectPauseAssignment | [PendingObjectPauseAssignmentStatus](../enums/PendingObjectPauseAssignmentStatus.md) | Object pause pending assignment details for RSC objects. |
+| rscPendingObjectPauseAssignment | [PendingObjectPauseAssignmentStatus](../enums/PendingObjectPauseAssignmentStatus.md) | Pending pause or unpause assignment for RSC-native objects. |
 | securityMetadata | [SecurityMetadata](SecurityMetadata.md) | Security posture metadata. |
 | slaAssignment | [SlaAssignmentTypeEnum](../enums/SlaAssignmentTypeEnum.md)! | SLA Domain assignment type for this object. |
 | slaPauseStatus | Boolean! | Pause status of the effective SLA Domain of the hierarchy object. |

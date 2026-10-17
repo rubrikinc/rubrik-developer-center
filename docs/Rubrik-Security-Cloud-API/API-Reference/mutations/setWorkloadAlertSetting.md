@@ -20,6 +20,7 @@ Enable/disable alerts for given workload on given cluster.
     mutation SetWorkloadAlertSetting($input: SetWorkloadAlertSettingInput!) {
       setWorkloadAlertSetting(input: $input) {
         enabled
+        isThreatMonitoringEnabled
       }
     }
     ```
@@ -38,7 +39,8 @@ Enable/disable alerts for given workload on given cluster.
     {
       "data": {
         "setWorkloadAlertSetting": {
-          "enabled": true
+          "enabled": true,
+          "isThreatMonitoringEnabled": true
         }
       }
     }

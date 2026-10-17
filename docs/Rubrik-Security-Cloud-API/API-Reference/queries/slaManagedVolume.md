@@ -29,6 +29,7 @@ Details of a SLA Managed Volume object.
         isRelic
         isReplica
         lastResetReason
+        legallyHeldSnapshotCount
         managedVolumeType
         mountState
         name

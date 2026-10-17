@@ -7,9 +7,9 @@ All support user access objects that satisfy the query criteria.
 | Argument | Type | Description |
 |----------|------|-------------|
 | first | Int | Returns the first n elements from the list. |
-| after | String | Returns the elements in the list that occur after the specified cursor. |
+| after | String | An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results. |
 | last | Int | Returns the last n elements from the list. |
-| before | String | Returns the elements in the list that occur before the specified cursor. |
+| before | String | An opaque cursor returned from a previous query's startCursor field. Pass this value verbatim to retrieve the previous page of results. |
 | sortBy | [SupportUserAccessSortByField](../types/enums/SupportUserAccessSortByField.md) | Sorting field for support access. |
 | sortOrder | [SortOrder](../types/enums/SortOrder.md) | Sorting order for support access. |
 | filters | [[SupportUserAccessFilterInput](../types/inputs/SupportUserAccessFilterInput.md)!] | Specifies how to filter the list of targets. |

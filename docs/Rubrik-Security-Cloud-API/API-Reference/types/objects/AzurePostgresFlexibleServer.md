@@ -24,6 +24,7 @@ An Azure Postgres Flexible Server. For more info, see https://learn.microsoft.co
 | effectiveSlaDomain | [SlaDomain](../interfaces/SlaDomain.md)! | Effective SLA Domain of the hierarchy object. |
 | effectiveSlaSourceObject | [PathNode](PathNode.md) | Path node of the effective SLA Domain source. |
 | engineVersion | String! | PostgreSQL engine major version of the Azure Postgres Flexible Server (e.g., "14", "15", "16"). |
+| futureLegalHoldInfo | [FutureLegalHoldInfo](FutureLegalHoldInfo.md) | Future legal hold rule configured for this object, if any. |
 | haMode | String! | High availability mode of the Azure Postgres Flexible Server (e.g., "ZoneRedundant" or "SameZone"). |
 | hostname | String! | Fully qualified domain name of the Azure Postgres Flexible Server. |
 | id | [UUID](../scalars/UUID.md)! | ID of the hierarchy object. |
@@ -31,6 +32,7 @@ An Azure Postgres Flexible Server. For more info, see https://learn.microsoft.co
 | isProtectable | Boolean! | Specifies whether the Azure Postgres Flexible Server is protectable. |
 | isPublicNetworkAccess | Boolean! | Specifies whether the Azure Postgres Flexible Server accepts traffic from the public internet. When the value is false, the server uses a private endpoint or virtual network integration. |
 | isRelic | Boolean! | Specifies whether the Azure Postgres Flexible Server is a relic or not. A resource is a relic when it is unprotected or deleted, but the previously taken snapshots of the resource continue to exist within the Rubrik ecosystem. |
+| legallyHeldSnapshotCount | Int | Number of snapshots on legal hold for this object. |
 | logicalPath | [[PathNode](PathNode.md)!]! | Sequential list of the logical ancestors of this object. |
 | name | String! | Name of the hierarchy object. |
 | nativeName | String! | Name of the Azure Postgres Flexible Server. |
@@ -45,7 +47,7 @@ An Azure Postgres Flexible Server. For more info, see https://learn.microsoft.co
 | physicalPath | [[PathNode](PathNode.md)!]! | Sequential list of the physical ancestors of this object. |
 | region | [AzureNativeRegion](../enums/AzureNativeRegion.md)! | Azure region where the Azure Postgres Flexible Server is located. |
 | rscNativeObjectPendingSla | [CompactSlaDomain](CompactSlaDomain.md) | SLA Domain assignment which is pending on the Rubrik Security Cloud native objects. |
-| rscPendingObjectPauseAssignment | [PendingObjectPauseAssignmentStatus](../enums/PendingObjectPauseAssignmentStatus.md) | Object pause pending assignment details for RSC objects. |
+| rscPendingObjectPauseAssignment | [PendingObjectPauseAssignmentStatus](../enums/PendingObjectPauseAssignmentStatus.md) | Pending pause or unpause assignment for RSC-native objects. |
 | securityMetadata | [SecurityMetadata](SecurityMetadata.md) | Security posture metadata. |
 | skuTier | String! | Compute tier of the Azure Postgres Flexible Server. |
 | slaAssignment | [SlaAssignmentTypeEnum](../enums/SlaAssignmentTypeEnum.md)! | SLA Domain assignment type for this object. |

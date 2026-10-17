@@ -1,6 +1,6 @@
 # deleteClusterRoute
 
-Delete an existing route on a Rubrik cluster. Supported in Rubrik CDM v5.0+
+Delete an existing route  Supported in v5.0+ Delete an existing route that was configured.
 
 ## Arguments
 

@@ -22,10 +22,12 @@ A Pure Storage array managed by Rubrik.
 | effectiveRetentionSlaDomain | [SlaDomain](../interfaces/SlaDomain.md) | Effective retention of the SLA Domain of the hierarchy object. |
 | effectiveSlaDomain | [SlaDomain](../interfaces/SlaDomain.md)! | Effective SLA Domain of the hierarchy object. |
 | effectiveSlaSourceObject | [PathNode](PathNode.md) | Path node of the effective SLA Domain source. |
+| futureLegalHoldInfo | [FutureLegalHoldInfo](FutureLegalHoldInfo.md) | Future legal hold rule configured for this object, if any. |
 | hostName | String! | Hostname or IP address of the array. |
 | id | [UUID](../scalars/UUID.md)! | ID of the hierarchy object. |
 | isReplica | Boolean | True if this object is a replica, its current cluster differs from its source (primary) cluster. False if the object resides on its source cluster. Null when the source cluster is unknown. |
 | latestUserNote | [LatestUserNote](LatestUserNote.md) | Latest user note information. |
+| legallyHeldSnapshotCount | Int | Number of snapshots on legal hold for this object. |
 | logicalChildConnection | [PureStorageArrayLogicalChildTypeConnection](PureStorageArrayLogicalChildTypeConnection.md)! | List of logical children. |
 | logicalPath | [[PathNode](PathNode.md)!]! | Sequential list of the logical ancestors of this object. |
 | name | String! | Name of the hierarchy object. |
@@ -77,3 +79,7 @@ A Pure Storage array managed by Rubrik.
 
 - [query: pureStorageArrayV1](../../queries/pureStorageArrayV1.md)
 - [query: pureStorageArraysV1](../../queries/pureStorageArraysV1.md) *(via connection)*
+
+**Referenced by**
+
+- [IrisdbInstance.pureStorageArray](IrisdbInstance.md)

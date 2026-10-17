@@ -26,6 +26,7 @@ Retrieves an Azure SQL Managed Instance Server. Refers to the server the Azure S
         id
         instancePoolName
         isProtectable
+        legallyHeldSnapshotCount
         name
         numWorkloadDescendants
         objectType

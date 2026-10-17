@@ -1,6 +1,6 @@
 # updateStorageArrayV1
 
-Update a storage array  Supported in v9.6+ Update the properties of a specified storage array object. At least one of isVolumeProtectionEnabled or isSnapshotOffloadingEnabled must be true. When isSnapshotOffloadingEnabled is true, username and password must either be provided in the request or already stored on the array. When isVolumeProtectionEnabled is true, apiToken must either be provided in the request or already stored on the array.
+Update a storage array  Supported in v9.6+ v9.6: Update the properties of a specified storage array object. At least one of isVolumeProtectionEnabled or isSnapshotOffloadingEnabled must be true. When isSnapshotOffloadingEnabled is true, username and password must either be provided in the request or already stored on the array. When isVolumeProtectionEnabled is true, apiToken must either be provided in the request or already stored on the array. v9.7: Update the properties of a specified storage array object. At least one of isVolumeProtectionEnabled, isSnapshotOffloadingEnabled, or isIrisdbProtectionEnabled must be true. When isSnapshotOffloadingEnabled is true, username and password must either be provided in the request or already stored on the array. When isVolumeProtectionEnabled or isIrisdbProtectionEnabled is true, apiToken must either be provided in the request or already stored on the array.
 
 ## Arguments
 
@@ -50,8 +50,8 @@ Update a storage array  Supported in v9.6+ Update the properties of a specified 
             "caCerts": "example-string",
             "hostname": "example-string",
             "id": "example-string",
-            "isSnapshotOffloadingEnabled": true,
-            "isVolumeProtectionEnabled": true
+            "isIrisdbProtectionEnabled": true,
+            "isSnapshotOffloadingEnabled": true
           }
         }
       }

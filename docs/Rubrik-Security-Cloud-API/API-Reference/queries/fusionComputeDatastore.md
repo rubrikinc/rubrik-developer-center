@@ -32,6 +32,7 @@ Summary of a FusionCompute datastore.
         id
         isLocal
         isReplica
+        legallyHeldSnapshotCount
         name
         numWorkloadDescendants
         objectType

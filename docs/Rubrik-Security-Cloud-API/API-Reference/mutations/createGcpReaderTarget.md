@@ -19,6 +19,7 @@ Creates reader type for GCP archival location on a CDM cluster.
     ```graphql
     mutation CreateGcpReaderTarget($input: CreateGcpReaderTargetInput!) {
       createGcpReaderTarget(input: $input) {
+        archivalLocationPurpose
         clusterName
         consumedBytes
         failedTasks
@@ -61,11 +62,11 @@ Creates reader type for GCP archival location on a CDM cluster.
     {
       "data": {
         "createGcpReaderTarget": {
+          "archivalLocationPurpose": "ADO",
           "clusterName": "example-string",
           "consumedBytes": 0,
           "failedTasks": 0,
-          "id": "example-string",
-          "isActive": true
+          "id": "example-string"
         }
       }
     }

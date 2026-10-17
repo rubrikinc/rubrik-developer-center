@@ -1,6 +1,6 @@
 # createRcsTarget
 
-*No description available.*
+Creates an RCS Azure archival target on the Rubrik cluster.
 
 ## Arguments
 
@@ -19,6 +19,7 @@
     ```graphql
     mutation CreateRcsTarget($input: CreateRcsTargetInput!) {
       createRcsTarget(input: $input) {
+        archivalLocationPurpose
         clusterName
         consumedBytes
         failedTasks
@@ -61,11 +62,11 @@
     {
       "data": {
         "createRcsTarget": {
+          "archivalLocationPurpose": "ADO",
           "clusterName": "example-string",
           "consumedBytes": 0,
           "failedTasks": 0,
-          "id": "example-string",
-          "isActive": true
+          "id": "example-string"
         }
       }
     }

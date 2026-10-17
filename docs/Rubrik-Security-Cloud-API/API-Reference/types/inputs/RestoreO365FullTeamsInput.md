@@ -8,6 +8,7 @@ Request for RestoreO365FullTeamsV2. Reproduces the flat fields of the V1 Restore
 |-------|------|-------------|
 | destTeamInfo | [DestTeamInfo](DestTeamInfo.md) | Information about the destination Team. |
 | inplaceRestoreConfig | [InplaceRestoreConfig](InplaceRestoreConfig.md) | In-place restore configuration. |
+| leaseId | String | ID of the just-in-time permission elevation lease covering this restore's write permissions, if elevation was required. Empty for full-access-mode apps. |
 | o365AppId | String! | UUID of the O365 App used for authorization. |
 | refreshTokenEncrypted | String! | Encrypted refresh token for O365 App authorization. |
 | snapshotId | [UUID](../scalars/UUID.md)! | ID of the snapshot from which to restore. |

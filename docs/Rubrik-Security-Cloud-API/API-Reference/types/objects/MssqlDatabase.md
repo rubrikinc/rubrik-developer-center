@@ -27,6 +27,7 @@ SQL Server database.
 | effectiveRetentionSlaDomain | [SlaDomain](../interfaces/SlaDomain.md) | Effective retention of the SLA Domain of the hierarchy object. |
 | effectiveSlaDomain | [SlaDomain](../interfaces/SlaDomain.md)! | Effective SLA Domain of the hierarchy object. |
 | effectiveSlaSourceObject | [PathNode](PathNode.md) | Path node of the effective SLA Domain source. |
+| futureLegalHoldInfo | [FutureLegalHoldInfo](FutureLegalHoldInfo.md) | Future legal hold rule configured for this object, if any. |
 | hasLogConfigFromSla | Boolean! | Boolean flag indicating if the database derives log backup configurations from SLA. |
 | hasPermissions | Boolean! | Specifies whether the the Rubrik Backup Service has permission to back up a SQL Server database. |
 | hostLogRetention | [Long](../scalars/Long.md)! | Interval, in seconds, between the deletion of archived log files whose 'nextTime' field specifies a time longer than this interval. To specify an interval, enter a positive integer. To immediately delete archived log files regardless of age, specify an interval of -1. To preserve all archived log files, specify an interval of -2. |
@@ -38,6 +39,7 @@ SQL Server database.
 | isRelic | Boolean! | Specifies if the SQL Server database is a relic. |
 | isReplica | Boolean | True if this object is a replica, its current cluster differs from its source (primary) cluster. False if the object resides on its source cluster. Null when the source cluster is unknown. |
 | latestUserNote | [LatestUserNote](LatestUserNote.md) | Latest user note information. |
+| legallyHeldSnapshotCount | Int | Number of snapshots on legal hold for this object. |
 | liveMounts | [MssqlDatabaseLiveMountConnection](MssqlDatabaseLiveMountConnection.md)! | List of live mounts for a SQL Server database. |
 | logBackupFrequencyInSeconds | Float! | Number of seconds between two log backups. When the value is set to 0, log backups are not enabled. When the value is set to -1, the default log backup frequency of the Rubrik cluster is used. When the value is set to -2, the log backup frequency is derived from the SLA Domain. |
 | logBackupRetentionInHours | Int! | Number of hours to retain a log backup. When the value is set to -1, the Rubrik cluster retains the log backup until the database snapshots that precede the log backup have expired. When the value is set to -2, the default log backup retention of the Rubrik cluster is used. When the value is set to -3, the log backup retention is derived from the SLA Domain. |
@@ -93,9 +95,9 @@ SQL Server database.
 | cdmSnapshots | CdmSnapshotFilter | [[CdmSnapshotFilter](../inputs/CdmSnapshotFilter.md)!] | Filter CDM snapshots. |
 | cdmSnapshots | sortBy | [CdmSnapshotSortByEnum](../enums/CdmSnapshotSortByEnum.md) | Sorts snapshots by field. |
 | liveMounts | first | Int | Returns the first n elements from the list. |
-| liveMounts | after | String | Returns the elements in the list that occur after the specified cursor. |
+| liveMounts | after | String | An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results. |
 | liveMounts | last | Int | Returns the last n elements from the list. |
-| liveMounts | before | String | Returns the elements in the list that occur before the specified cursor. |
+| liveMounts | before | String | An opaque cursor returned from a previous query's startCursor field. Pass this value verbatim to retrieve the previous page of results. |
 | liveMounts | sortBy | [MssqlDatabaseLiveMountSortByInput](../inputs/MssqlDatabaseLiveMountSortByInput.md) | Sort by argument for Mssql database live mounts. |
 | liveMounts | filters | [[MssqlDatabaseLiveMountFilterInput](../inputs/MssqlDatabaseLiveMountFilterInput.md)!] | Filters for Mssql database live mounts. |
 | missedSnapshotConnection | first | Int | Returns the first n elements from the list. |

@@ -1,21 +1,21 @@
 # gitHubOrganizations
 
-Query GitHub organization objects.
+Query GitHub organization hierarchy objects.
 
 ## Arguments
 
 | Argument | Type | Description |
 |----------|------|-------------|
 | first | Int | Returns the first n elements from the list. |
-| after | String | Returns the elements in the list that occur after the specified cursor. |
+| after | String | An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results. |
 | last | Int | Returns the last n elements from the list. |
-| before | String | Returns the elements in the list that occur before the specified cursor. |
-| queryType *(required)* | [QueryType](../types/enums/QueryType.md)! | The type of query to perform (CHILDREN or DESCENDANTS). |
+| before | String | An opaque cursor returned from a previous query's startCursor field. Pass this value verbatim to retrieve the previous page of results. |
 | ancestorId *(required)* | String! | Ancestor object/root ID. |
+| queryType *(required)* | [QueryType](../types/enums/QueryType.md)! | Type of query to perform (CHILDREN or DESCENDANTS). |
 | filter *(required)* | [[Filter](../types/inputs/Filter.md)!]! | The hierarchy object filter. |
-| sortBy | [HierarchySortByField](../types/enums/HierarchySortByField.md) | Sort hierarchy objects according to the hierarchy field. |
+| sortBy | [HierarchySortByField](../types/enums/HierarchySortByField.md) | Sort hierarchy objects by field. |
 | sortOrder | [SortOrder](../types/enums/SortOrder.md) | Sorts the order of results. |
-| workloadHierarchy | [WorkloadLevelHierarchy](../types/enums/WorkloadLevelHierarchy.md) | Each enumeration value represents the hierarchy of a specific workload type for RBAC and SLA Domain assignments.  A value of 'None' represents the hierarchy of all workload types. |
+| workloadHierarchy | [WorkloadLevelHierarchy](../types/enums/WorkloadLevelHierarchy.md) | Each enumeration value represents the hierarchy of a specific workload type for RBAC and SLA Domain assignments. |
 
 ## Returns
 
@@ -26,10 +26,10 @@ Query GitHub organization objects.
 === "Query"
 
     ```graphql
-    query GitHubOrganizations($queryType: QueryType!, $ancestorId: String!, $filter: [Filter!]!) {
+    query GitHubOrganizations($ancestorId: String!, $queryType: QueryType!, $filter: [Filter!]!) {
       gitHubOrganizations(
-        queryType: $queryType
         ancestorId: $ancestorId
+        queryType: $queryType
         filter: $filter
         first: 10
       ) {
@@ -40,6 +40,7 @@ Query GitHub organization objects.
           id
           isRelic
           lastRefreshTime
+          legallyHeldSnapshotCount
           name
           nativeId
           numWorkloadDescendants
@@ -64,8 +65,8 @@ Query GitHub organization objects.
 
     ```json
     {
-      "queryType": "CHILDREN",
       "ancestorId": "example-string",
+      "queryType": "CHILDREN",
       "filter": [
         {}
       ]

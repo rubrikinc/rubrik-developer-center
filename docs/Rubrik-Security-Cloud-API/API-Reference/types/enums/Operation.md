@@ -91,6 +91,7 @@ Operations defined in the RBAC system.
 | INSTANT_RECOVER | Instant recovery. |
 | ISSUE_ARCHIVAL_MIGRATION_DATA_MOVER_CREDENTIALS | Issue temporary credentials for the Rubrik data mover to migrate archival data to Rubrik Cloud Vault (RCV). |
 | MANAGE_ACCESS | Manage user access. |
+| MANAGE_AGENT_CLOUD_POLICIES | Manage Agent Cloud policies, violations, alerts, and insights. |
 | MANAGE_ANOMALY_DETECTION | Manage anomalies. |
 | MANAGE_ARCHIVAL_NETWORK_THROTTLE_SETTINGS | Manage archival network throttle settings. |
 | MANAGE_AUTH_DOMAIN | Manage Auth Domain. |
@@ -123,6 +124,7 @@ Operations defined in the RBAC system.
 | MANAGE_LEGAL_HOLD | Place and remove legal hold. |
 | MANAGE_LOCKOUT | Manage Lockout. |
 | MANAGE_LOG_SHIPPING | Manage log shipping. |
+| MANAGE_MAINTENANCE_MODE | Manage maintenance mode. |
 | MANAGE_MIGRATION_DASHBOARD | Manage migration dashboard. |
 | MANAGE_MODEL_ROUTER | Manage Agent Operations. |
 | MANAGE_OAUTH_APPLICATIONS | Manage OAuth applications. |
@@ -184,6 +186,7 @@ Operations defined in the RBAC system.
 | RESTORE_TO_ORIGIN | Restore over original. |
 | SELF_SERVICE_RESTORE | Users can recover their own objects. |
 | SEND_LICENSE_NOTIFICATION | Send license notification. |
+| SET_AGENT_CLOUD_POLICY_ENFORCEMENT | Set the enforcement type of Agent Cloud policies. |
 | SUSPEND_CHILD_ACCOUNTS | Suspend child accounts. |
 | TAKE_ON_DEMAND_SNAPSHOT | Take On-Demand Snapshot. |
 | TAKE_REMEDIATION_ACTIONS | Take remediation actions. |
@@ -242,6 +245,7 @@ Operations defined in the RBAC system.
 | VIEW_IDENTITY_RESILIENCY | View identity resiliency. |
 | VIEW_INVENTORY | View protectable objects. |
 | VIEW_IP_ADDRESS_IN_AUDITS | View client IP address in audits. |
+| VIEW_K8S_DB_CREDENTIALS | View K8s database credentials. |
 | VIEW_KMS_KEY_VAULT | View KMS Key Vaults. |
 | VIEW_LICENSE_DASHBOARD | View license dashboard. |
 | VIEW_MODEL_ROUTER | View Agent Operations. |

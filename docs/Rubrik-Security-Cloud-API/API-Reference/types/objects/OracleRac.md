@@ -26,10 +26,12 @@
 | effectiveSlaDomain | [SlaDomain](../interfaces/SlaDomain.md)! | Effective SLA Domain of the hierarchy object. |
 | effectiveSlaSourceObject | [PathNode](PathNode.md) | Path node of the effective SLA Domain source. |
 | excludedDbUniqueNames | [String!]! | The db_unique_names of the Oracle databases on this RAC that are excluded from discovery. An empty list means no databases are excluded. |
+| futureLegalHoldInfo | [FutureLegalHoldInfo](FutureLegalHoldInfo.md) | Future legal hold rule configured for this object, if any. |
 | hostLogRetentionHours | Int! | The host log retention, in hours, of the Oracle RAC. |
 | id | [UUID](../scalars/UUID.md)! | ID of the hierarchy object. |
 | isReplica | Boolean | True if this object is a replica, its current cluster differs from its source (primary) cluster. False if the object resides on its source cluster. Null when the source cluster is unknown. |
 | latestUserNote | [LatestUserNote](LatestUserNote.md) | Latest user note information. |
+| legallyHeldSnapshotCount | Int | Number of snapshots on legal hold for this object. |
 | logBackupFrequency | Int! | The log backup frequency, in minutes, of the Oracle RAC. |
 | logRetentionHours | Int! | The log retention, in hours, of the Oracle RAC. |
 | logicalChildConnection | [OracleRacLogicalChildTypeConnection](OracleRacLogicalChildTypeConnection.md)! | List of logical children. |
@@ -61,23 +63,23 @@
 | Field | Argument | Type | Description |
 |-------|----------|------|-------------|
 | descendantConnection | first | Int | Returns the first n elements from the list. |
-| descendantConnection | after | String | Returns the elements in the list that occur after the specified cursor. |
+| descendantConnection | after | String | An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results. |
 | descendantConnection | sortBy | [HierarchySortByField](../enums/HierarchySortByField.md) | Sort hierarchy objects according to the hierarchy field. |
 | descendantConnection | sortOrder | [SortOrder](../enums/SortOrder.md) | Sorts the order of results. |
 | descendantConnection | typeFilter | [[HierarchyObjectTypeEnum](../enums/HierarchyObjectTypeEnum.md)!] | Types of objects to include. |
 | descendantConnection | filter | [[Filter](../inputs/Filter.md)!] | Hierarchy object filter. |
 | descendantConnection | workloadHierarchy | [WorkloadLevelHierarchy](../enums/WorkloadLevelHierarchy.md) | Each enumeration value represents the hierarchy of a specific workload type for RBAC and SLA Domain assignments.  A value of 'None' represents the hierarchy of all workload types. |
 | logicalChildConnection | first | Int | Returns the first n elements from the list. |
-| logicalChildConnection | after | String | Returns the elements in the list that occur after the specified cursor. |
+| logicalChildConnection | after | String | An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results. |
 | logicalChildConnection | sortBy | [HierarchySortByField](../enums/HierarchySortByField.md) | Sort hierarchy objects according to the hierarchy field. |
 | logicalChildConnection | sortOrder | [SortOrder](../enums/SortOrder.md) | Sorts the order of results. |
 | logicalChildConnection | typeFilter | [[HierarchyObjectTypeEnum](../enums/HierarchyObjectTypeEnum.md)!] | Types of objects to include. |
 | logicalChildConnection | filter | [[Filter](../inputs/Filter.md)!] | Hierarchy object filter. |
 | logicalChildConnection | workloadHierarchy | [WorkloadLevelHierarchy](../enums/WorkloadLevelHierarchy.md) | Each enumeration value represents the hierarchy of a specific workload type for RBAC and SLA Domain assignments.  A value of 'None' represents the hierarchy of all workload types. |
 | numWorkloadDescendants | first | Int | Returns the first n elements from the list. |
-| numWorkloadDescendants | after | String | Returns the elements in the list that occur after the specified cursor. |
+| numWorkloadDescendants | after | String | An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results. |
 | numWorkloadDescendants | last | Int | Returns the last n elements from the list. |
-| numWorkloadDescendants | before | String | Returns the elements in the list that occur before the specified cursor. |
+| numWorkloadDescendants | before | String | An opaque cursor returned from a previous query's startCursor field. Pass this value verbatim to retrieve the previous page of results. |
 | numWorkloadDescendants | objectTypes | [[ManagedObjectType](../enums/ManagedObjectType.md)!] | Types of objects to limit the results. If absent, all object types are returned. |
 
 ## Used By

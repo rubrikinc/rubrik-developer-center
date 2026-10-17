@@ -78,20 +78,20 @@ A Rubrik CDM Cluster.
 | Field | Argument | Type | Description |
 |-------|----------|------|-------------|
 | activitySeriesConnection | first | Int | Returns the first n elements from the list. |
-| activitySeriesConnection | after | String | Returns the elements in the list that occur after the specified cursor. |
+| activitySeriesConnection | after | String | An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results. |
 | activitySeriesConnection | last | Int | Returns the last n elements from the list. |
-| activitySeriesConnection | before | String | Returns the elements in the list that occur before the specified cursor. |
+| activitySeriesConnection | before | String | An opaque cursor returned from a previous query's startCursor field. Pass this value verbatim to retrieve the previous page of results. |
 | activitySeriesConnection | sortBy | [ActivitySeriesSortField](../enums/ActivitySeriesSortField.md) | Sort activity series by field. |
 | activitySeriesConnection | filters | [ActivitySeriesFilter](../inputs/ActivitySeriesFilter.md) | Filters for the activity series. |
 | clusterDiskConnection | first | Int | Returns the first n elements from the list. |
-| clusterDiskConnection | after | String | Returns the elements in the list that occur after the specified cursor. |
+| clusterDiskConnection | after | String | An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results. |
 | clusterDiskConnection | last | Int | Returns the last n elements from the list. |
-| clusterDiskConnection | before | String | Returns the elements in the list that occur before the specified cursor. |
+| clusterDiskConnection | before | String | An opaque cursor returned from a previous query's startCursor field. Pass this value verbatim to retrieve the previous page of results. |
 | clusterDiskConnection | filter | [ClusterDiskFilterInput](../inputs/ClusterDiskFilterInput.md) | Rubrik Cluster disk filter. |
 | clusterNodeConnection | first | Int | Returns the first n elements from the list. |
-| clusterNodeConnection | after | String | Returns the elements in the list that occur after the specified cursor. |
+| clusterNodeConnection | after | String | An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results. |
 | clusterNodeConnection | last | Int | Returns the last n elements from the list. |
-| clusterNodeConnection | before | String | Returns the elements in the list that occur before the specified cursor. |
+| clusterNodeConnection | before | String | An opaque cursor returned from a previous query's startCursor field. Pass this value verbatim to retrieve the previous page of results. |
 | clusterNodeConnection | filter | [ClusterNodeFilterInput](../inputs/ClusterNodeFilterInput.md) | Rubrik Cluster node filter. |
 | clusterNodeConnection | sortBy | [ClusterNodeSortBy](../enums/ClusterNodeSortBy.md) | Sort Rubrik cluster nodes by field. |
 | clusterNodeConnection | sortOrder | [SortOrder](../enums/SortOrder.md) | Sorts the order of results. |
@@ -103,9 +103,9 @@ A Rubrik CDM Cluster.
 | metricTimeSeriesNew | timeRange | [TimeRangeInput](../inputs/TimeRangeInput.md) | Time range input. |
 | metricTimeSeriesNew | unit *(required)* | [TimeUnitEnum](../enums/TimeUnitEnum.md)! | Time unit input. |
 | snappableConnection | first | Int | Returns the first n elements from the list. |
-| snappableConnection | after | String | Returns the elements in the list that occur after the specified cursor. |
+| snappableConnection | after | String | An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results. |
 | snappableConnection | last | Int | Returns the last n elements from the list. |
-| snappableConnection | before | String | Returns the elements in the list that occur before the specified cursor. |
+| snappableConnection | before | String | An opaque cursor returned from a previous query's startCursor field. Pass this value verbatim to retrieve the previous page of results. |
 | snappableConnection | filter | [SnappableFilterInput](../inputs/SnappableFilterInput.md) | Filter protected objects by input. |
 
 ## Used By
@@ -154,4 +154,4 @@ A Rubrik CDM Cluster.
 - [CloudDirectNasExport.cluster](CloudDirectNasExport.md)
 - [CloudDirectNasNamespace.cluster](CloudDirectNasNamespace.md)
 - CloudDirectNasNamespaceDescendantType.cluster
-- *…and 319 more*
+- *…and 323 more*

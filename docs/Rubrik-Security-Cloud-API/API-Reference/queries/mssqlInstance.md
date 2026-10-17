@@ -32,6 +32,7 @@ A Microsoft SQL Instance.
         id
         isClusterInstance
         isReplica
+        legallyHeldSnapshotCount
         logBackupFrequencyInSeconds
         logBackupRetentionInHours
         name

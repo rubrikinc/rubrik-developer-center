@@ -27,6 +27,7 @@ Provides details for a MongoDB database identified by the fid.
         id
         isRelic
         isReplica
+        legallyHeldSnapshotCount
         name
         numWorkloadDescendants
         objectType

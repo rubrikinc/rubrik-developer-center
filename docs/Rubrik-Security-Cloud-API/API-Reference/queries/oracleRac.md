@@ -27,6 +27,7 @@ An Oracle Real Application Cluster.
         hostLogRetentionHours
         id
         isReplica
+        legallyHeldSnapshotCount
         logBackupFrequency
         logRetentionHours
         name

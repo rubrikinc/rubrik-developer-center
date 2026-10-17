@@ -8,6 +8,7 @@ Configuration for a Microsoft 365 App.
 
 | Field | Type | Description |
 |-------|------|-------------|
+| accessMode | [M365AccessMode](../enums/M365AccessMode.md)! | Baseline permission mode for the app. Every app is on full permissions today; JIT mode selection is not yet available. |
 | addedAt | [DateTime](../scalars/DateTime.md)! | The added time of the O365 app. |
 | appAuthStatus | [AppAuthStatus](../enums/AppAuthStatus.md)! | The authentication status of the app against the subscription. |
 | appAuthVersion | Int! | The authentication version of the app against the subscription. |

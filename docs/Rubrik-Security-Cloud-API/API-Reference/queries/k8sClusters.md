@@ -7,7 +7,7 @@
 | Argument | Type | Description |
 |----------|------|-------------|
 | first | Int | Returns the first n elements from the list. |
-| after | String | Returns the elements in the list that occur after the specified cursor. |
+| after | String | An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results. |
 | sortBy | [HierarchySortByField](../types/enums/HierarchySortByField.md) | Sort hierarchy objects according to the hierarchy field. |
 | sortOrder | [SortOrder](../types/enums/SortOrder.md) | Sorts the order of results. |
 | filter | [[Filter](../types/inputs/Filter.md)!] | Hierarchy object filter. |
@@ -28,6 +28,7 @@
           clusterIp
           id
           lastRefreshTime
+          legallyHeldSnapshotCount
           name
           numWorkloadDescendants
           objectType
@@ -67,8 +68,8 @@
                 ],
                 "id": "00000000-0000-0000-0000-000000000000",
                 "lastRefreshTime": "2024-01-01T00:00:00.000Z",
-                "name": "example-string",
-                "numWorkloadDescendants": 0
+                "legallyHeldSnapshotCount": 0,
+                "name": "example-string"
               }
             ]
           ],

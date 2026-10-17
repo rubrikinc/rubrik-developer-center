@@ -21,6 +21,7 @@
     query HierarchyObjects($fids: [UUID!]!) {
       hierarchyObjects(fids: $fids) {
         id
+        legallyHeldSnapshotCount
         name
         numWorkloadDescendants
         objectType

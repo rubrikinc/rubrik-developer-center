@@ -32,6 +32,7 @@ Details of a SAP HANA system for a given FID.
         isReplica
         lastRefreshTime
         lastStatusUpdateTime
+        legallyHeldSnapshotCount
         name
         numWorkloadDescendants
         objectType

@@ -22,6 +22,7 @@ Windows fileset.
 | effectiveSlaSourceObject | [PathNode](PathNode.md) | Path node of the effective SLA Domain source. |
 | failoverClusterApp | [FailoverClusterApp](FailoverClusterApp.md) | Failover Rubrik cluster app. |
 | filesetTemplate | [FilesetTemplate](FilesetTemplate.md) | Fileset template of the Windows fileset. |
+| futureLegalHoldInfo | [FutureLegalHoldInfo](FutureLegalHoldInfo.md) | Future legal hold rule configured for this object, if any. |
 | hardlinkSupportEnabled | Boolean! | Boolean variable denoting if hard link support is enabled. |
 | host | [PhysicalHost](PhysicalHost.md) | Host of Windows fileset. |
 | id | [UUID](../scalars/UUID.md)! | ID of the hierarchy object. |
@@ -29,6 +30,7 @@ Windows fileset.
 | isRelic | Boolean! | Boolean variable denoting if fileset is relic. |
 | isReplica | Boolean | True if this object is a replica, its current cluster differs from its source (primary) cluster. False if the object resides on its source cluster. Null when the source cluster is unknown. |
 | latestUserNote | [LatestUserNote](LatestUserNote.md) | Latest user note information. |
+| legallyHeldSnapshotCount | Int | Number of snapshots on legal hold for this object. |
 | logicalPath | [[PathNode](PathNode.md)!]! | Sequential list of the logical ancestors of this object. |
 | missedSnapshotConnection | [MissedSnapshotCommonConnection](MissedSnapshotCommonConnection.md) | The list of missed snapshots for this workload. |
 | missedSnapshotGroupByConnection | [MissedSnapshotGroupByConnection](MissedSnapshotGroupByConnection.md) | The list of missed snapshots for this workload. |

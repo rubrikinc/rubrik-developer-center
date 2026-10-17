@@ -6,6 +6,7 @@ Enum representing all the possible event types.
 
 | Value | Description |
 |-------|-------------|
+| AGENT_CLOUD_REWIND | Agent Cloud Rewind event type. |
 | AGENT_CLOUD_SECURITY_ALERT | Agent Cloud security alert event type. |
 | ANOMALY | Anomaly type. |
 | ARCHIVE | Archive type. |

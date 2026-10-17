@@ -26,6 +26,7 @@ Details of the given category value.
         duplicateObjectsAbsoluteCount
         id
         isReplica
+        legallyHeldSnapshotCount
         name
         numWorkloadDescendants
         objectType

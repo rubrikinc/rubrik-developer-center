@@ -34,6 +34,7 @@ Represents the Amazon S3 Bucket with a specific ID. For more information, see ht
         isRelic
         isVersioningEnabled
         latestCleanSnapshotTime
+        legallyHeldSnapshotCount
         name
         nativeName
         numWorkloadDescendants

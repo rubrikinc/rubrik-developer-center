@@ -11,6 +11,7 @@ Metadata describing an identity-event resource involved in a policy violation.
 | actorIdentityType | [ViolationPrincipalType](../enums/ViolationPrincipalType.md)! | Type of the actor identity. |
 | actorPrivilegeType | [PrivilegeType](../enums/PrivilegeType.md)! | Privilege type of the actor identity. |
 | actorState | [IdentityEventActorIdentificationState](../enums/IdentityEventActorIdentificationState.md)! | The identification state of the actor. |
+| additionalTargets | [[IdentityEventTarget](IdentityEventTarget.md)!]! | Targets of the originating event other than the violation's own target identity, in event order. Empty when the originating event is unavailable or touched no other principal. |
 | entityId | String! | Entity ID. |
 | entityName | String! | Entity name can be a domain name or a cloud account name, as described in IDPSpecificPrincipalProperties.GetEntityName(). |
 | eventTime | [DateTime](../scalars/DateTime.md) | Time of the origin event. |

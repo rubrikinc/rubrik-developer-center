@@ -29,6 +29,7 @@ Cloud Direct NAS export object.
         isArchived
         isProtected
         isRelic
+        legallyHeldSnapshotCount
         name
         numWorkloadDescendants
         objectType

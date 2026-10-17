@@ -10,6 +10,7 @@ Specific information for LCK archival target created on Rubrik cluster.
 |-------|------|-------------|
 | accountName | String! | Account name of the LCK target. |
 | agency | String! | Agency provided for the LCK target. |
+| archivalLocationPurpose | [StorageLocationPurpose](../enums/StorageLocationPurpose.md) | Purpose of the target (e.g. CNP_BAAS for BaaS, PURPOSE_DEFAULT for user-created). Null on older servers that don't populate the field. |
 | awsRetrievalTier | [AwsRetrievalTier](../enums/AwsRetrievalTier.md)! | AWS retrieval tier of the LCK target. |
 | bucketName | String! | Bucket name of the LCK target. |
 | certificateContent | String! | Certificate content provided for the LCK target. |

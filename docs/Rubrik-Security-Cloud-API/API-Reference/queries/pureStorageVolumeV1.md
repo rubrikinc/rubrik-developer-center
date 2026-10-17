@@ -28,6 +28,7 @@ Details of a Pure Storage volume for a given ID.
         id
         isRelic
         isReplica
+        legallyHeldSnapshotCount
         name
         numWorkloadDescendants
         objectType

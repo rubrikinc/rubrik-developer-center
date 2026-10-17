@@ -10,6 +10,7 @@ Azure DevOps Project.
 |-------|------|-------------|
 | allOrgs | [[Org](Org.md)!]! | Organizations to which this hierarchy object belongs. |
 | allTags | [[AssignedRscTag](AssignedRscTag.md)!]! | RSC tags to which this hierarchy object is assigned. |
+| artifactsFixedObjectId | [UUID](../scalars/UUID.md) | Managed object UUID of this project's artifacts fixed object. Null when the project artifacts fixed object has not been created yet. |
 | authorizedOperations | [[Operation](../enums/Operation.md)!]! | The authorized operations on the object. |
 | configuredSlaDomain | [SlaDomain](../interfaces/SlaDomain.md)! | SLA Domain configured for the hierarchy object. |
 | effectiveRetentionSlaDomain | [SlaDomain](../interfaces/SlaDomain.md) | Effective retention of the SLA Domain of the hierarchy object. |
@@ -17,9 +18,11 @@ Azure DevOps Project.
 | effectiveSlaSourceObject | [PathNode](PathNode.md) | Path node of the effective SLA Domain source. |
 | fixedObjectCounts | [AzureDevOpsProjectFixedObjectCounts](AzureDevOpsProjectFixedObjectCounts.md) | Developer-collaboration object counts for the project's fixed-object child. Returns null when the project has no fixed-object child. |
 | fixedObjectId | [UUID](../scalars/UUID.md) | Managed object UUID of this project's fixed object. Null when the project fixed object has not been created yet. |
+| futureLegalHoldInfo | [FutureLegalHoldInfo](FutureLegalHoldInfo.md) | Future legal hold rule configured for this object, if any. |
 | id | [UUID](../scalars/UUID.md)! | ID of the hierarchy object. |
 | isMissingDeveloperCollaborationAccess | [AzureDevOpsProjectMissingPermission](AzureDevOpsProjectMissingPermission.md) | True when the org has developer-collaboration protection enabled but this project has not yet been granted the required access. |
 | isRelic | Boolean! | True if the Azure DevOps project is a relic. |
+| legallyHeldSnapshotCount | Int | Number of snapshots on legal hold for this object. |
 | logicalPath | [[PathNode](PathNode.md)!]! | Sequential list of the logical ancestors of this object. |
 | name | String! | Name of the hierarchy object. |
 | nativeId | String! | Native ID of the Azure DevOps project. |
@@ -32,7 +35,7 @@ Azure DevOps Project.
 | physicalPath | [[PathNode](PathNode.md)!]! | Sequential list of the physical ancestors of this object. |
 | repoCount | Int! | Number of repositories in the Azure DevOps project. |
 | rscNativeObjectPendingSla | [CompactSlaDomain](CompactSlaDomain.md) | SLA Domain assignment which is pending on the Rubrik Security Cloud native objects. |
-| rscPendingObjectPauseAssignment | [PendingObjectPauseAssignmentStatus](../enums/PendingObjectPauseAssignmentStatus.md) | Object pause pending assignment details for RSC objects. |
+| rscPendingObjectPauseAssignment | [PendingObjectPauseAssignmentStatus](../enums/PendingObjectPauseAssignmentStatus.md) | Pending pause or unpause assignment for RSC-native objects. |
 | securityMetadata | [SecurityMetadata](SecurityMetadata.md) | Security posture metadata. |
 | slaAssignment | [SlaAssignmentTypeEnum](../enums/SlaAssignmentTypeEnum.md)! | SLA Domain assignment type for this object. |
 | slaPauseStatus | Boolean! | Pause status of the effective SLA Domain of the hierarchy object. |

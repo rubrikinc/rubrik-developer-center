@@ -22,6 +22,8 @@ Paginated list of CdmSnapshotGroupBy objects. Each page of the results includes 
 - [FusionComputeVirtualMachine.snapshotGroupByConnection](FusionComputeVirtualMachine.md)
 - [HyperVVirtualMachine.snapshotGroupByConnection](HyperVVirtualMachine.md)
 - [HypervisorVirtualMachineV1.snapshotGroupByConnection](HypervisorVirtualMachineV1.md)
+- [InformixInstance.snapshotGroupByConnection](InformixInstance.md)
+- [IrisdbInstance.snapshotGroupByConnection](IrisdbInstance.md)
 - KosmosSnappableHierarchyObjectType.snapshotGroupByConnection
 - [KubernetesProtectionSet.snapshotGroupByConnection](KubernetesProtectionSet.md)
 - [KubernetesVirtualMachine.snapshotGroupByConnection](KubernetesVirtualMachine.md)
@@ -38,11 +40,9 @@ Paginated list of CdmSnapshotGroupBy objects. Each page of the results includes 
 - [OpenstackVirtualMachine.snapshotGroupByConnection](OpenstackVirtualMachine.md)
 - [OracleDataGuardGroup.snapshotGroupByConnection](OracleDataGuardGroup.md)
 - [OracleDatabase.snapshotGroupByConnection](OracleDatabase.md)
+- [PingFederateClusterV1.snapshotGroupByConnection](PingFederateClusterV1.md)
 - [PostgreSQLDbCluster.snapshotGroupByConnection](PostgreSQLDbCluster.md)
 - [ProxmoxVirtualMachineV1.snapshotGroupByConnection](ProxmoxVirtualMachineV1.md)
 - [PureStorageProtectionGroupV1.snapshotGroupByConnection](PureStorageProtectionGroupV1.md)
 - [PureStorageVolumeV1.snapshotGroupByConnection](PureStorageVolumeV1.md)
-- [SapHanaDatabase.snapshotGroupByConnection](SapHanaDatabase.md)
-- [SapHanaSystem.snapshotGroupByConnection](SapHanaSystem.md)
-- [ShareFileset.snapshotGroupByConnection](ShareFileset.md)
-- *…and 4 more*
+- *…and 8 more*

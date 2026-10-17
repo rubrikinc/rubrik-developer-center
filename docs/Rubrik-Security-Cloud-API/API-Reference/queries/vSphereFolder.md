@@ -1,6 +1,6 @@
 # vSphereFolder
 
-*No description available.*
+Vsphere folder based on id passed in.
 
 ## Arguments
 
@@ -26,6 +26,7 @@
         folderType
         id
         isReplica
+        legallyHeldSnapshotCount
         name
         numWorkloadDescendants
         objectType

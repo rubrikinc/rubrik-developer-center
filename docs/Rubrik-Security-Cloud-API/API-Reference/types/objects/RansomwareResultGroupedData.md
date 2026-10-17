@@ -16,9 +16,9 @@ Ransomware Investigation data with group by information applied to it.
 |-------|----------|------|-------------|
 | ransomwareResultGroupedData | groupBy *(required)* | [RansomwareResultGroupBy](../enums/RansomwareResultGroupBy.md)! | Group ransomware results by field. |
 | ransomwareResults | first | Int | Returns the first n elements from the list. |
-| ransomwareResults | after | String | Returns the elements in the list that occur after the specified cursor. |
+| ransomwareResults | after | String | An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results. |
 | ransomwareResults | last | Int | Returns the last n elements from the list. |
-| ransomwareResults | before | String | Returns the elements in the list that occur before the specified cursor. |
+| ransomwareResults | before | String | An opaque cursor returned from a previous query's startCursor field. Pass this value verbatim to retrieve the previous page of results. |
 | ransomwareResults | sortBy | [RansomwareResultSortBy](../enums/RansomwareResultSortBy.md) | Sort ransomware results by field. |
 
 ## Used By

@@ -25,11 +25,13 @@ NAS Cloud Direct bucket.
 | effectiveSlaSourceObject | [PathNode](PathNode.md) | Path node of the effective SLA Domain source. |
 | excludes | [[Exclude](Exclude.md)!]! | List of exclusions for the NAS bucket. |
 | exportPath | String! | NAS Cloud Direct bucket path. |
+| futureLegalHoldInfo | [FutureLegalHoldInfo](FutureLegalHoldInfo.md) | Future legal hold rule configured for this object, if any. |
 | id | [UUID](../scalars/UUID.md)! | Bucket ID. |
 | isArchived | Boolean! | Specifies whether the bucket is archived. |
 | isHidden | Boolean! | Specifies whether the bucket is hidden. |
 | isRelic | Boolean! | Specifies whether the bucket is a relic. |
 | isStale | Boolean! | Specifies whether the bucket is stale. |
+| legallyHeldSnapshotCount | Int | Number of snapshots on legal hold for this object. |
 | logicalPath | [[PathNode](PathNode.md)!]! | Sequential list of the logical ancestors of this object. |
 | missedSnapshotGroupByConnection | [CloudDirectSnapshotsGroupBySummaryConnection](CloudDirectSnapshotsGroupBySummaryConnection.md) | Groups the missed snapshots of this NAS Cloud Direct bucket. |
 | name | String! | Name of the hierarchy object. |
@@ -59,9 +61,9 @@ NAS Cloud Direct bucket.
 | Field | Argument | Type | Description |
 |-------|----------|------|-------------|
 | childBuckets | first | Int | Returns the first n elements from the list. |
-| childBuckets | after | String | Returns the elements in the list that occur after the specified cursor. |
+| childBuckets | after | String | An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results. |
 | childBuckets | last | Int | Returns the last n elements from the list. |
-| childBuckets | before | String | Returns the elements in the list that occur before the specified cursor. |
+| childBuckets | before | String | An opaque cursor returned from a previous query's startCursor field. Pass this value verbatim to retrieve the previous page of results. |
 | childBuckets | sortBy | [HierarchySortByField](../enums/HierarchySortByField.md) | Sort hierarchy objects according to the hierarchy field. |
 | childBuckets | sortOrder | [SortOrder](../enums/SortOrder.md) | Sorts the order of results. |
 | cloudDirectSnapshotGroupBySummary | first | Int | Returns the first n elements from the list. |

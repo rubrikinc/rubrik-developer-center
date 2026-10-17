@@ -16,9 +16,9 @@ Snapshot data with groupby information applied to it.
 |-------|----------|------|-------------|
 | cdmSnapshotGroupBy | groupBy *(required)* | [CdmSnapshotGroupByEnum](../enums/CdmSnapshotGroupByEnum.md)! | Groups snapshots by field. |
 | snapshotConnection | first | Int | Returns the first n elements from the list. |
-| snapshotConnection | after | String | Returns the elements in the list that occur after the specified cursor. |
+| snapshotConnection | after | String | An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results. |
 | snapshotConnection | last | Int | Returns the last n elements from the list. |
-| snapshotConnection | before | String | Returns the elements in the list that occur before the specified cursor. |
+| snapshotConnection | before | String | An opaque cursor returned from a previous query's startCursor field. Pass this value verbatim to retrieve the previous page of results. |
 | snapshotConnection | sortOrder | [SortOrder](../enums/SortOrder.md) | Sorts the order of results. |
 | snapshotConnection | sortBy | [CdmSnapshotSortByEnum](../enums/CdmSnapshotSortByEnum.md) | Sorts snapshots by field. |
 

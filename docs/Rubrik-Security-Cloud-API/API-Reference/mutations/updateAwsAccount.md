@@ -1,6 +1,6 @@
 # updateAwsAccount
 
-*No description available.*
+Updates an existing AWS cloud account.
 
 ## Arguments
 

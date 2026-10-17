@@ -22,6 +22,7 @@ Query Azure DevOps repository object.
         authorizedOperations
         id
         isRelic
+        legallyHeldSnapshotCount
         name
         numWorkloadDescendants
         objectType
@@ -58,9 +59,9 @@ Query Azure DevOps repository object.
           ],
           "id": "00000000-0000-0000-0000-000000000000",
           "isRelic": true,
+          "legallyHeldSnapshotCount": 0,
           "name": "example-string",
           "numWorkloadDescendants": 0,
-          "objectType": "ACTIVE_DIRECTORY_DOMAIN",
           "allOrgs": [
             {
               "allUrls": [

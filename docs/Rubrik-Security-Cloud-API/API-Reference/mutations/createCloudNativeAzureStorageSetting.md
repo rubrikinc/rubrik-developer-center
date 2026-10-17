@@ -6,7 +6,7 @@ Creates Storage Settings for the archival of azure cloud native protected object
 
 | Argument | Type | Description |
 |----------|------|-------------|
-| input *(required)* | [CreateCloudNativeAzureStorageSettingInput](../types/inputs/CreateCloudNativeAzureStorageSettingInput.md)! |  |
+| input *(required)* | [CreateCloudNativeAzureStorageSettingInput](../types/inputs/CreateCloudNativeAzureStorageSettingInput.md)! | Create Azure cloud native storage setting. |
 
 ## Returns
 

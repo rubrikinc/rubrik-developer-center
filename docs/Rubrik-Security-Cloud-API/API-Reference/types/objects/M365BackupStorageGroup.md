@@ -19,10 +19,12 @@ M365 Backup Storage Groups from M365 Backup Storage hierarchy.
 | effectiveRetentionSlaDomain | [SlaDomain](../interfaces/SlaDomain.md) | Effective retention of the SLA Domain of the hierarchy object. |
 | effectiveSlaDomain | [SlaDomain](../interfaces/SlaDomain.md)! | Effective SLA Domain of the hierarchy object. |
 | effectiveSlaSourceObject | [PathNode](PathNode.md) | Path node of the effective SLA Domain source. |
+| futureLegalHoldInfo | [FutureLegalHoldInfo](FutureLegalHoldInfo.md) | Future legal hold rule configured for this object, if any. |
 | groupID | String! | Group ID of Microsoft Group. |
 | groupSubType | [O365GroupSubType](../enums/O365GroupSubType.md)! | Group sub-type of the Microsoft Group. |
 | groupType | [O365GroupType](../enums/O365GroupType.md)! | Group type of the Microsoft Group. |
 | id | [UUID](../scalars/UUID.md)! | ID of the hierarchy object. |
+| legallyHeldSnapshotCount | Int | Number of snapshots on legal hold for this object. |
 | logicalPath | [[PathNode](PathNode.md)!]! | Sequential list of the logical ancestors of this object. |
 | metadata | [O365GroupMetadata](O365GroupMetadata.md) | Metadata of the Microsoft Group. |
 | name | String! | Name of the hierarchy object. |
@@ -37,7 +39,7 @@ M365 Backup Storage Groups from M365 Backup Storage hierarchy.
 | onDemandSnapshotCount | Int! | The number of on-demand snapshots. |
 | physicalPath | [[PathNode](PathNode.md)!]! | Sequential list of the physical ancestors of this object. |
 | rscNativeObjectPendingSla | [CompactSlaDomain](CompactSlaDomain.md) | SLA Domain assignment which is pending on the Rubrik Security Cloud native objects. |
-| rscPendingObjectPauseAssignment | [PendingObjectPauseAssignmentStatus](../enums/PendingObjectPauseAssignmentStatus.md) | Object pause pending assignment details for RSC objects. |
+| rscPendingObjectPauseAssignment | [PendingObjectPauseAssignmentStatus](../enums/PendingObjectPauseAssignmentStatus.md) | Pending pause or unpause assignment for RSC-native objects. |
 | securityMetadata | [SecurityMetadata](SecurityMetadata.md) | Security posture metadata. |
 | slaAssignment | [SlaAssignmentTypeEnum](../enums/SlaAssignmentTypeEnum.md)! | SLA Domain assignment type for this object. |
 | slaPauseStatus | Boolean! | Pause status of the effective SLA Domain of the hierarchy object. |

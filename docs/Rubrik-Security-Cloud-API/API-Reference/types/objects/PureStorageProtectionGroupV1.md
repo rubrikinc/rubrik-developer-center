@@ -24,10 +24,12 @@ A Pure Storage protection group protected by Rubrik.
 | effectiveSlaDomain | [SlaDomain](../interfaces/SlaDomain.md)! | Effective SLA Domain of the hierarchy object. |
 | effectiveSlaSourceObject | [PathNode](PathNode.md) | Path node of the effective SLA Domain source. |
 | excludedVolumes | [[UUID](../scalars/UUID.md)!]! | IDs of volumes excluded from snapshots in this protection group. Look up each ID with `pureStorageVolumeV1`. |
+| futureLegalHoldInfo | [FutureLegalHoldInfo](FutureLegalHoldInfo.md) | Future legal hold rule configured for this object, if any. |
 | id | [UUID](../scalars/UUID.md)! | ID of the hierarchy object. |
 | isRelic | Boolean! | Whether the protection group has been deleted from Pure Storage. |
 | isReplica | Boolean | True if this object is a replica, its current cluster differs from its source (primary) cluster. False if the object resides on its source cluster. Null when the source cluster is unknown. |
 | latestUserNote | [LatestUserNote](LatestUserNote.md) | Latest user note information. |
+| legallyHeldSnapshotCount | Int | Number of snapshots on legal hold for this object. |
 | logicalPath | [[PathNode](PathNode.md)!]! | Sequential list of the logical ancestors of this object. |
 | missedSnapshotConnection | [MissedSnapshotCommonConnection](MissedSnapshotCommonConnection.md) | The list of missed snapshots for this workload. |
 | missedSnapshotGroupByConnection | [MissedSnapshotGroupByConnection](MissedSnapshotGroupByConnection.md) | The list of missed snapshots for this workload. |
@@ -124,3 +126,7 @@ A Pure Storage protection group protected by Rubrik.
 
 - [query: pureStorageProtectionGroupV1](../../queries/pureStorageProtectionGroupV1.md)
 - [query: pureStorageProtectionGroupsV1](../../queries/pureStorageProtectionGroupsV1.md) *(via connection)*
+
+**Referenced by**
+
+- [IrisdbInstance.protectionGroups](IrisdbInstance.md)

@@ -22,6 +22,7 @@ Details for the SharePoint drive corresponding to the snappable ID.
         authorizedOperations
         id
         isRelic
+        legallyHeldSnapshotCount
         listNaturalId
         name
         naturalId
@@ -62,9 +63,9 @@ Details for the SharePoint drive corresponding to the snappable ID.
           ],
           "id": "00000000-0000-0000-0000-000000000000",
           "isRelic": true,
+          "legallyHeldSnapshotCount": 0,
           "listNaturalId": "example-string",
           "name": "example-string",
-          "naturalId": "example-string",
           "allOrgs": [
             {
               "allUrls": [

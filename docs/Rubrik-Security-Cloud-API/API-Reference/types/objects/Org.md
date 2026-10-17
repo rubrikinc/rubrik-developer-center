@@ -71,4 +71,4 @@ Details of an org.
 - [AzureNativeRegionManagedObject.allOrgs](AzureNativeRegionManagedObject.md)
 - [AzureNativeResourceGroup.allOrgs](AzureNativeResourceGroup.md)
 - [AzureNativeResourceGroupBase.allOrgs](AzureNativeResourceGroupBase.md)
-- *…and 335 more*
+- *…and 339 more*

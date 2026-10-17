@@ -15,7 +15,7 @@ ManagedVolumeQueued Snapshot data with groupby info applied to it.
 | Field | Argument | Type | Description |
 |-------|----------|------|-------------|
 | managedVolumeQueuedSnapshotConnection | first | Int | Returns the first n elements from the list. |
-| managedVolumeQueuedSnapshotConnection | after | String | Returns the elements in the list that occur after the specified cursor. |
+| managedVolumeQueuedSnapshotConnection | after | String | An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results. |
 | managedVolumeQueuedSnapshotConnection | sortOrder | [SortOrder](../enums/SortOrder.md) | Sorts the order of results. |
 | managedVolumeQueuedSnapshotConnection | sortBy | [ManagedVolumeQueuedSnapshotSortBy](../enums/ManagedVolumeQueuedSnapshotSortBy.md) | Sorts snapshots by field. |
 | managedVolumeQueuedSnapshotGroupBy | groupBy *(required)* | [ManagedVolumeQueuedSnapshotGroupByTime](../enums/ManagedVolumeQueuedSnapshotGroupByTime.md)! | Groups snapshots by field. |

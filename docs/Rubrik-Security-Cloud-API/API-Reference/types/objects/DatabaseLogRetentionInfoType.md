@@ -12,4 +12,5 @@ Per-workload database transaction log retention policy for an archival or replic
 
 **Referenced by**
 
+- [ArchivalSpec.databaseLogRetentionInfo](ArchivalSpec.md)
 - [ReplicationSpecV2.databaseLogRetentionInfo](ReplicationSpecV2.md)

@@ -36,6 +36,7 @@ Refers to the AWS Native account that serves as a container for all your AWS res
         id
         isProtectable
         lastRefreshedAt
+        legallyHeldSnapshotCount
         name
         nativeId
         numWorkloadDescendants

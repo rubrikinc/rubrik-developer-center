@@ -34,8 +34,10 @@ A NAS System.
         isUserSuppliedSmbCredentials
         lastRefreshTime
         lastStatus
+        legallyHeldSnapshotCount
         name
         namespaceCount
+        nfsAuthMode
         nfsPseudoFsPrefix
         numWorkloadDescendants
         objectType
@@ -44,6 +46,7 @@ A NAS System.
         shareCount
         slaAssignment
         slaPauseStatus
+        smbAuthMode
         userSelectedNfsInterfaces
         userSelectedSmbInterfaces
         vendorType

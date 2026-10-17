@@ -23,6 +23,7 @@ Retrieves an Azure Native Subscription. Refers to the logical entity that provid
         accountConnectionId
         authorizedOperations
         azureCloudType
+        azureCosmosNosqlContainerCount
         azurePostgresFlexibleServerCount
         azureSqlDatabaseDbCount
         azureSqlManagedInstanceDbCount
@@ -34,6 +35,7 @@ Retrieves an Azure Native Subscription. Refers to the logical entity that provid
         id
         isProtectable
         lastRefreshedAt
+        legallyHeldSnapshotCount
         name
         numWorkloadDescendants
         objectType
@@ -65,9 +67,9 @@ Retrieves an Azure Native Subscription. Refers to the logical entity that provid
             "MANAGE_DATA_SOURCE"
           ],
           "azureCloudType": "AZURECHINACLOUD",
+          "azureCosmosNosqlContainerCount": 0,
           "azurePostgresFlexibleServerCount": 0,
           "azureSqlDatabaseDbCount": 0,
-          "azureSqlManagedInstanceDbCount": 0,
           "allOrgs": [
             {
               "allUrls": [

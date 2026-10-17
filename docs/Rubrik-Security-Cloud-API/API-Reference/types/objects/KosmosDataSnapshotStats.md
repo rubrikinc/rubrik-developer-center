@@ -15,6 +15,7 @@ The Statistics of the Kosmos workload Snapshots.
 
 **Referenced by**
 
+- [IrisdbInstanceAppMetadata.stats](IrisdbInstanceAppMetadata.md)
 - [KosmosWorkloadAppMetadata.stats](KosmosWorkloadAppMetadata.md)
 - [MariadbInstanceAppMetadata.stats](MariadbInstanceAppMetadata.md)
 - [MysqldbInstanceAppMetadata.stats](MysqldbInstanceAppMetadata.md)

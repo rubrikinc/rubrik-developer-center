@@ -9,5 +9,6 @@ Filters for list of Azure Postgres Flexible Servers.
 | effectiveSlaFilter | [EffectiveSlaFilter](EffectiveSlaFilter.md) | Filter by effective SLA Domain. |
 | nameSubstringFilter | [NameSubstringFilter](NameSubstringFilter.md) | Filter by name substring. |
 | regionFilter | [AzureNativeRegionFilter](AzureNativeRegionFilter.md) | Filter by region. |
+| relicFilter | [RelicFilter](RelicFilter.md) | Filter by relic status. |
 | resourceGroupFilter | [AzurePostgresFlexibleServerResourceGroupFilter](AzurePostgresFlexibleServerResourceGroupFilter.md) | Filter by resource group name. |
 | subscriptionFilter | [AzurePostgresFlexibleServerSubscriptionFilter](AzurePostgresFlexibleServerSubscriptionFilter.md) | Filter by subscription. |

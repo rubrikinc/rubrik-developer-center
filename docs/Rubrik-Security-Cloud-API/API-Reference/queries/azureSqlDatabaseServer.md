@@ -22,6 +22,7 @@ Retrieves an Azure SQL Database Server. Refers to the server that contains the A
         authorizedOperations
         id
         isProtectable
+        legallyHeldSnapshotCount
         name
         numWorkloadDescendants
         objectType
@@ -53,9 +54,9 @@ Retrieves an Azure SQL Database Server. Refers to the server that contains the A
           ],
           "id": "00000000-0000-0000-0000-000000000000",
           "isProtectable": true,
+          "legallyHeldSnapshotCount": 0,
           "name": "example-string",
           "numWorkloadDescendants": 0,
-          "objectType": "ACTIVE_DIRECTORY_DOMAIN",
           "allOrgs": [
             {
               "allUrls": [

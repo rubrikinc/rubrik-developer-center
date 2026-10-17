@@ -6,7 +6,8 @@ Enumerates the different SaaS applications. Each SaaS application type correspon
 
 | Value | Description |
 |-------|-------------|
-| ANTHROPIC_CHAT | Anthropic Chat application type (claude.ai conversations, projects, artifacts). |
+| ANTHROPIC_APPS | Anthropic Apps application type (claude.ai conversations, projects, artifacts). |
+| ANTHROPIC_CHAT *(deprecated: Use ANTHROPIC_APPS instead.)* | Anthropic Chat application type. |
 | ANTHROPIC_CODE | Anthropic Code application type (Claude Code endpoint files). |
 | ANTHROPIC_COWORK | Anthropic Cowork application type (Claude Cowork endpoint files). |
 | ANTHROPIC_SETTINGS | Anthropic settings application type (org settings, child org settings). |
@@ -17,6 +18,7 @@ Enumerates the different SaaS applications. Each SaaS application type correspon
 | ENTRA_ID | Entra ID application type. |
 | EXCHANGE | Exchange application type. |
 | GOOGLE_DRIVE | Google Workspace drive application type. |
+| GOOGLE_GROUPS | Google Workspace Groups application type. |
 | GOOGLE_MAIL | Google Workspace gmail application type. |
 | M365_BACKUP_STORAGE | Microsoft 365 Backup Storage application type. |
 | O365_COMMON | Shared Microsoft 365 application type used internally across M365 workloads. Not intended for direct customer use. |
@@ -27,6 +29,7 @@ Enumerates the different SaaS applications. Each SaaS application type correspon
 | POWER_PLATFORM_FLOW | Power Platform Flows (Power Automate) application type. |
 | SAAS_AZURE_DEVOPS | Azure DevOps application type. |
 | SAAS_GITHUB | GitHub application type. |
+| SAAS_GITHUB_ORG | GitHub organization-level application type, such as organization packages. |
 | SALESFORCE | Salesforce application type. |
 | SHAREPOINT | SharePoint application type. |
 | SLACK | Slack application type. |

@@ -19,6 +19,7 @@ Create a reader type for AWS archival location on a Rubrik cluster.
     ```graphql
     mutation CreateAwsReaderTarget($input: CreateAwsReaderTargetInput!) {
       createAwsReaderTarget(input: $input) {
+        archivalLocationPurpose
         clusterName
         consumedBytes
         failedTasks
@@ -62,11 +63,11 @@ Create a reader type for AWS archival location on a Rubrik cluster.
     {
       "data": {
         "createAwsReaderTarget": {
+          "archivalLocationPurpose": "ADO",
           "clusterName": "example-string",
           "consumedBytes": 0,
           "failedTasks": 0,
-          "id": "example-string",
-          "isActive": true
+          "id": "example-string"
         }
       }
     }

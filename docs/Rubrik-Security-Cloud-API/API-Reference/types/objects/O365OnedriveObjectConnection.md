@@ -25,3 +25,4 @@ Paginated list of O365OnedriveObject objects with additional pagination informat
 - [query: snappableTeamsDriveSearch](../../queries/snappableTeamsDriveSearch.md)
 - [query: snapshotOnedriveSearch](../../queries/snapshotOnedriveSearch.md)
 - [query: snapshotSharepointDriveSearch](../../queries/snapshotSharepointDriveSearch.md)
+- [query: snapshotSharepointListSearch](../../queries/snapshotSharepointListSearch.md)

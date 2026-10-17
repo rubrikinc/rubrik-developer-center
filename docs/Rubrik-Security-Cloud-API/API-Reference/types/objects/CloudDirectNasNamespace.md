@@ -21,10 +21,12 @@ NAS Cloud Direct namespace object.
 | effectiveRetentionSlaDomain | [SlaDomain](../interfaces/SlaDomain.md) | Effective retention of the SLA Domain of the hierarchy object. |
 | effectiveSlaDomain | [SlaDomain](../interfaces/SlaDomain.md)! | Effective SLA Domain of the hierarchy object. |
 | effectiveSlaSourceObject | [PathNode](PathNode.md) | Path node of the effective SLA Domain source. |
+| futureLegalHoldInfo | [FutureLegalHoldInfo](FutureLegalHoldInfo.md) | Future legal hold rule configured for this object, if any. |
 | id | [UUID](../scalars/UUID.md)! | Object ID. |
 | isArchived | Boolean! | Specifies whether the namespace is archived. |
 | isHidden | Boolean! | Specifies whether the namespace is hidden. |
 | isStale | Boolean! | Specifies whether the namespace is stale. |
+| legallyHeldSnapshotCount | Int | Number of snapshots on legal hold for this object. |
 | logicalChildConnection | [CloudDirectNasNamespaceLogicalChildTypeConnection](CloudDirectNasNamespaceLogicalChildTypeConnection.md)! | List of logical children. |
 | logicalPath | [[PathNode](PathNode.md)!]! | Sequential list of the logical ancestors of this object. |
 | name | String! | Name of the hierarchy object. |

@@ -20,6 +20,7 @@ Conflicting objects for an SLA Domain assignment.
     query SlaConflictObjects($fids: [UUID!]!) {
       slaConflictObjects(fids: $fids) {
         id
+        legallyHeldSnapshotCount
         name
         numWorkloadDescendants
         objectType

@@ -27,6 +27,7 @@ All of the VSphere hosts based on fids passed in.
         ioFilterStatus
         isReplica
         isStandaloneHost
+        legallyHeldSnapshotCount
         name
         numWorkloadDescendants
         objectType

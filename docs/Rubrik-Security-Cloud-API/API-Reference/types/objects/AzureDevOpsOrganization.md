@@ -26,9 +26,11 @@ Azure DevOps Organization.
 | effectiveSlaSourceObject | [PathNode](PathNode.md) | Path node of the effective SLA Domain source. |
 | exocomputeHostName | String! | Exocompute host name for the Azure DevOps organization. |
 | exocomputeId | String! | ID of the exocompute associated with the Azure DevOps organization. |
+| futureLegalHoldInfo | [FutureLegalHoldInfo](FutureLegalHoldInfo.md) | Future legal hold rule configured for this object, if any. |
 | id | [UUID](../scalars/UUID.md)! | ID of the hierarchy object. |
 | isRelic | Boolean! | True if the Azure DevOps organization is a relic. |
 | lastRefreshTime | [DateTime](../scalars/DateTime.md) | Last refresh time of the Azure DevOps organization. |
+| legallyHeldSnapshotCount | Int | Number of snapshots on legal hold for this object. |
 | logicalPath | [[PathNode](PathNode.md)!]! | Sequential list of the logical ancestors of this object. |
 | name | String! | Name of the hierarchy object. |
 | nativeId | String! | Native ID of the Azure DevOps organization. |
@@ -41,7 +43,7 @@ Azure DevOps Organization.
 | repoCount | Int! | Number of repositories in the Azure DevOps organization. |
 | repoHostType | [DevopsHostType](../enums/DevopsHostType.md)! | Exocompute host type of the Azure DevOps organization. |
 | rscNativeObjectPendingSla | [CompactSlaDomain](CompactSlaDomain.md) | SLA Domain assignment which is pending on the Rubrik Security Cloud native objects. |
-| rscPendingObjectPauseAssignment | [PendingObjectPauseAssignmentStatus](../enums/PendingObjectPauseAssignmentStatus.md) | Object pause pending assignment details for RSC objects. |
+| rscPendingObjectPauseAssignment | [PendingObjectPauseAssignmentStatus](../enums/PendingObjectPauseAssignmentStatus.md) | Pending pause or unpause assignment for RSC-native objects. |
 | rubrikHostedExocompute | [DevOpsRubrikHostedExocompute](DevOpsRubrikHostedExocompute.md) | Rubrik hosted exocompute associated with the Azure DevOps organization. |
 | securityMetadata | [SecurityMetadata](SecurityMetadata.md) | Security posture metadata. |
 | slaAssignment | [SlaAssignmentTypeEnum](../enums/SlaAssignmentTypeEnum.md)! | SLA Domain assignment type for this object. |

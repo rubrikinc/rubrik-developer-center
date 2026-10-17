@@ -7,7 +7,7 @@ List of all files in snapshots whose names match the specified search query.
 | Argument | Type | Description |
 |----------|------|-------------|
 | first | Int | Returns the first n elements from the list. |
-| after | String | Returns the elements in the list that occur after the specified cursor. |
+| after | String | An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results. |
 | snappableFid *(required)* | [UUID](../types/scalars/UUID.md)! | The ID of the workload. |
 | searchQuery *(required)* | String! | Specifies the name or path prefix used to search for files within a workload. |
 | usePrefixSearch | Boolean | Determines whether to use a prefix search. |

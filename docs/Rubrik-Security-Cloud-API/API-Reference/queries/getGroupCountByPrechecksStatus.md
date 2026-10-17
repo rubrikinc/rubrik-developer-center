@@ -1,6 +1,6 @@
 # getGroupCountByPrechecksStatus
 
-*No description available.*
+Counts of Rubrik clusters, grouped by the CDM upgrade prechecks status.
 
 ## Returns
 

@@ -18,9 +18,11 @@ O365 Organization.
 | effectiveSlaSourceObject | [PathNode](PathNode.md) | Path node of the effective SLA Domain source. |
 | exchangeGraphMigrationStatus | [ExchangeGraphMigrationStatus](ExchangeGraphMigrationStatus.md)! | Status of the EWS to Microsoft Graph migration for the org's protected Exchange mailboxes. |
 | exocomputeId | String! | External Exocompute cluster ID. |
+| futureLegalHoldInfo | [FutureLegalHoldInfo](FutureLegalHoldInfo.md) | Future legal hold rule configured for this object, if any. |
 | groupsSummary | [O365GroupsSummary](O365GroupsSummary.md)! | Summary of Microsoft groups count. |
 | hasSharePointLegacySnapshots | Boolean! | Specifies whether the org has legacy SharePoint Snapshots. |
 | id | [UUID](../scalars/UUID.md)! | ID of the hierarchy object. |
+| legallyHeldSnapshotCount | Int | Number of snapshots on legal hold for this object. |
 | logicalPath | [[PathNode](PathNode.md)!]! | Sequential list of the logical ancestors of this object. |
 | mailboxesPendingGraphMigration | Int! | Count of protected, active mailboxes not yet on Microsoft Graph. |
 | name | String! | Name of the hierarchy object. |
@@ -46,7 +48,7 @@ O365 Organization.
 | past1DayTeamsOutOfComplianceCount | Int! | Out of compliance count for Teams. |
 | physicalPath | [[PathNode](PathNode.md)!]! | Sequential list of the physical ancestors of this object. |
 | rscNativeObjectPendingSla | [CompactSlaDomain](CompactSlaDomain.md) | SLA Domain assignment which is pending on the Rubrik Security Cloud native objects. |
-| rscPendingObjectPauseAssignment | [PendingObjectPauseAssignmentStatus](../enums/PendingObjectPauseAssignmentStatus.md) | Object pause pending assignment details for RSC objects. |
+| rscPendingObjectPauseAssignment | [PendingObjectPauseAssignmentStatus](../enums/PendingObjectPauseAssignmentStatus.md) | Pending pause or unpause assignment for RSC-native objects. |
 | searchDescendantConnection | [O365OrgDescendantConnection](O365OrgDescendantConnection.md)! | List of all descendants of O365Org. |
 | securityMetadata | [SecurityMetadata](SecurityMetadata.md) | Security posture metadata. |
 | slaAssignment | [SlaAssignmentTypeEnum](../enums/SlaAssignmentTypeEnum.md)! | SLA Domain assignment type for this object. |

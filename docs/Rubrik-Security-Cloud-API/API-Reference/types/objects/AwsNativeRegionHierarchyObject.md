@@ -18,10 +18,12 @@ AWS native region.
 | effectiveRetentionSlaDomain | [SlaDomain](../interfaces/SlaDomain.md) | Effective retention of the SLA Domain of the hierarchy object. |
 | effectiveSlaDomain | [SlaDomain](../interfaces/SlaDomain.md)! | Effective SLA Domain of the hierarchy object. |
 | effectiveSlaSourceObject | [PathNode](PathNode.md) | Path node of the effective SLA Domain source. |
+| futureLegalHoldInfo | [FutureLegalHoldInfo](FutureLegalHoldInfo.md) | Future legal hold rule configured for this object, if any. |
 | glueIcebergCatalogCount | Int! | Number of Glue Iceberg catalogs in this region. |
 | glueIcebergDatabaseCount | Int! | Number of Glue Iceberg databases in this region. |
 | glueIcebergTableCount | Int! | Number of Glue Iceberg tables in this region. |
 | id | [UUID](../scalars/UUID.md)! | ID of the hierarchy object. |
+| legallyHeldSnapshotCount | Int | Number of snapshots on legal hold for this object. |
 | logicalPath | [[PathNode](PathNode.md)!]! | Sequential list of the logical ancestors of this object. |
 | name | String! | Name of the hierarchy object. |
 | numWorkloadDescendants | Int! | Number of descendant workloads of this object. |
@@ -33,7 +35,7 @@ AWS native region.
 | rdsInstanceCount | Int! | Number of RDS instances in this region. |
 | regionName | String! | Name of the AWS region. |
 | rscNativeObjectPendingSla | [CompactSlaDomain](CompactSlaDomain.md) | SLA Domain assignment which is pending on the Rubrik Security Cloud native objects. |
-| rscPendingObjectPauseAssignment | [PendingObjectPauseAssignmentStatus](../enums/PendingObjectPauseAssignmentStatus.md) | Object pause pending assignment details for RSC objects. |
+| rscPendingObjectPauseAssignment | [PendingObjectPauseAssignmentStatus](../enums/PendingObjectPauseAssignmentStatus.md) | Pending pause or unpause assignment for RSC-native objects. |
 | s3BucketCount | Int! | Number of S3 buckets in this region. |
 | s3TablesIcebergCatalogCount | Int! | Number of S3 Tables Iceberg catalogs in this region. |
 | s3TablesIcebergNamespaceCount | Int! | Number of S3 Tables Iceberg namespaces in this region. |

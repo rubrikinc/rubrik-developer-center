@@ -30,6 +30,7 @@ Vsphere datastore based on id passed in.
         isLocal
         isReplica
         isStandaloneDatastore
+        legallyHeldSnapshotCount
         name
         numWorkloadDescendants
         objectType

@@ -8,6 +8,7 @@ NAS namespace instance associated with registered NAS system.
 
 | Field | Type | Description |
 |-------|------|-------------|
+| adDomain | String | Kerberos realm reported by ONTAP for the SVM that hosts this namespace: the SVM's CIFS server domain, or its NFS Kerberos realm when the SVM has no CIFS server. Absent when ONTAP reports neither. |
 | allOrgs | [[Org](Org.md)!]! | Organizations to which this hierarchy object belongs. |
 | allTags | [[AssignedRscTag](AssignedRscTag.md)!]! | RSC tags to which this hierarchy object is assigned. |
 | authorizedOperations | [[Operation](../enums/Operation.md)!]! | The authorized operations on the object. |
@@ -20,14 +21,17 @@ NAS namespace instance associated with registered NAS system.
 | effectiveRetentionSlaDomain | [SlaDomain](../interfaces/SlaDomain.md) | Effective retention of the SLA Domain of the hierarchy object. |
 | effectiveSlaDomain | [SlaDomain](../interfaces/SlaDomain.md)! | Effective SLA Domain of the hierarchy object. |
 | effectiveSlaSourceObject | [PathNode](PathNode.md) | Path node of the effective SLA Domain source. |
-| id | [UUID](../scalars/UUID.md)! | Object ID. |
+| futureLegalHoldInfo | [FutureLegalHoldInfo](FutureLegalHoldInfo.md) | Future legal hold rule configured for this object, if any. |
+| id | [UUID](../scalars/UUID.md)! | ID of the hierarchy object. |
 | isReadonly | Boolean! | Determines whether the NAS namespace is read-only. |
 | isReplica | Boolean | True if this object is a replica, its current cluster differs from its source (primary) cluster. False if the object resides on its source cluster. Null when the source cluster is unknown. |
 | latestUserNote | [LatestUserNote](LatestUserNote.md) | Latest user note information. |
+| legallyHeldSnapshotCount | Int | Number of snapshots on legal hold for this object. |
 | logicalChildConnection | [NasNamespaceLogicalChildTypeConnection](NasNamespaceLogicalChildTypeConnection.md)! | List of logical children. |
 | logicalPath | [[PathNode](PathNode.md)!]! | Sequential list of the logical ancestors of this object. |
 | name | String! | Name of the hierarchy object. |
 | netAppMetroClusterInfo | [NasNamespaceNetAppMetroClusterInfo](NasNamespaceNetAppMetroClusterInfo.md) | Optional NetApp Metro Cluster info for the NAS namespace. |
+| nfsAuthMode | [NasAuthMode](../enums/NasAuthMode.md) | NFS authentication mode for this namespace. If absent, the namespace inherits from the NAS system setting. |
 | nfsDataAddresses | [String!]! | Specifies all available NFS data interfaces for the namespace. |
 | numWorkloadDescendants | Int! | Number of descendant workloads of this object. |
 | objectBackupWindow | [ObjectBackupWindowStatus](ObjectBackupWindowStatus.md) | Object-level backup window status of the hierarchy object. |
@@ -37,11 +41,13 @@ NAS namespace instance associated with registered NAS system.
 | pendingSla | [SlaDomain](../interfaces/SlaDomain.md) | SLA Domain assignment of the object during the process of being communicated over to Rubrik CDM. |
 | physicalPath | [[PathNode](PathNode.md)!]! | Sequential list of the physical ancestors of this object. |
 | primaryClusterLocation | [DataLocation](DataLocation.md)! | The source cluster of this object. Returned as a data location because there is no guarantee that Rubrik has knowledge about the source cluster. |
+| realmStatus | String | Kerberos realm reachability status for the namespace. One of KDC_TCP_REACHABLE, NOT_JOINED, or KDC_UNREACHABLE. KDC_TCP_REACHABLE means a TCP connection to the KDC succeeded; it does not confirm a full Kerberos exchange. NOT_JOINED means the Rubrik cluster is not joined to the realm. Absent when neither SMB nor NFS on the namespace uses Kerberos authentication. |
 | replicatedObjectCount | Int! | The number of objects either replicated by this object or related to this object by replication. |
 | replicatedObjects | [[CdmHierarchyObject](../interfaces/CdmHierarchyObject.md)!]! | Objects either replicated by this object or related to this object by replication. |
 | securityMetadata | [SecurityMetadata](SecurityMetadata.md) | Security posture metadata. |
 | slaAssignment | [SlaAssignmentTypeEnum](../enums/SlaAssignmentTypeEnum.md)! | SLA Domain assignment type for this object. |
 | slaPauseStatus | Boolean! | Pause status of the effective SLA Domain of the hierarchy object. |
+| smbAuthMode | [NasAuthMode](../enums/NasAuthMode.md) | SMB authentication mode for this namespace. If absent, the namespace inherits from the NAS system setting. |
 | smbDataAddresses | [String!]! | Specifies all available SMB data interfaces for the namespace. |
 | snapshotDistribution | [SnapshotDistribution](SnapshotDistribution.md)! | Distribution of the snapshots of the hierarchy object. |
 | userSelectedNfsInterfaces | [String!]! | List of hostnames or IP addresses used for NFS operations on the namespace. |
@@ -53,14 +59,18 @@ NAS namespace instance associated with registered NAS system.
 | Field | Argument | Type | Description |
 |-------|----------|------|-------------|
 | descendantConnection | first | Int | Returns the first n elements from the list. |
-| descendantConnection | after | String | Returns the elements in the list that occur after the specified cursor. |
+| descendantConnection | after | String | An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results. |
+| descendantConnection | last | Int | Returns the last n elements from the list. |
+| descendantConnection | before | String | An opaque cursor returned from a previous query's startCursor field. Pass this value verbatim to retrieve the previous page of results. |
 | descendantConnection | sortBy | [HierarchySortByField](../enums/HierarchySortByField.md) | Sort hierarchy objects according to the hierarchy field. |
 | descendantConnection | sortOrder | [SortOrder](../enums/SortOrder.md) | Sorts the order of results. |
 | descendantConnection | typeFilter | [[HierarchyObjectTypeEnum](../enums/HierarchyObjectTypeEnum.md)!] | Types of objects to include. |
 | descendantConnection | filter | [[Filter](../inputs/Filter.md)!] | Hierarchy object filter. |
 | descendantConnection | workloadHierarchy | [WorkloadLevelHierarchy](../enums/WorkloadLevelHierarchy.md) | Each enumeration value represents the hierarchy of a specific workload type for RBAC and SLA Domain assignments.  A value of 'None' represents the hierarchy of all workload types. |
 | logicalChildConnection | first | Int | Returns the first n elements from the list. |
-| logicalChildConnection | after | String | Returns the elements in the list that occur after the specified cursor. |
+| logicalChildConnection | after | String | An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results. |
+| logicalChildConnection | last | Int | Returns the last n elements from the list. |
+| logicalChildConnection | before | String | An opaque cursor returned from a previous query's startCursor field. Pass this value verbatim to retrieve the previous page of results. |
 | logicalChildConnection | sortBy | [HierarchySortByField](../enums/HierarchySortByField.md) | Sort hierarchy objects according to the hierarchy field. |
 | logicalChildConnection | sortOrder | [SortOrder](../enums/SortOrder.md) | Sorts the order of results. |
 | logicalChildConnection | typeFilter | [[HierarchyObjectTypeEnum](../enums/HierarchyObjectTypeEnum.md)!] | Types of objects to include. |

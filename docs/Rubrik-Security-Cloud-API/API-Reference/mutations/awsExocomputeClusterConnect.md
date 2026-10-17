@@ -1,6 +1,6 @@
 # awsExocomputeClusterConnect
 
-Connects a customer-managed cluster to RSC and obtains the connection command.
+AwsExocomputeClusterConnect takes the input of a BYOK8s cluster configured by the customer and stores the details in RSC.It also returns a kubectl command to be run by the customer in their cluster to establish secure reverse tunnel between the cluster and RSC.
 
 ## Arguments
 

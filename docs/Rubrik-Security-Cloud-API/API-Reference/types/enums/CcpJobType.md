@@ -11,6 +11,8 @@ Type of cluster job.
 | CLUSTER_DELETE | Delete the Rubrik cluster job. |
 | CLUSTER_OPS | The general Rubrik cluster operation job. |
 | CLUSTER_RECOVER | Recover the Rubrik cluster job. |
+| CONVERT_TO_DYNAMIC_SCALING_CCES | Convert a CCES cluster to dynamic scaling. |
+| CONVERT_TO_REGULAR_CCES | Convert a CCES cluster with dynamic scaling to a regular cluster. |
 | MANUAL_ADD_NODES | Manual add node(s) to a Rubrik cluster. |
 | MIGRATE_CLUSTER_TO_MANAGED_IDENTITY | Migrate cloud cluster to use managed identity. |
 | MIGRATE_NODES | Migrate cloud cluster nodes to new configuration. |

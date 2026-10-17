@@ -11,6 +11,7 @@ Represents security metadata of a workload.
 | isLaminarEnabled | Boolean! | True if Laminar is enabled for a given workload. |
 | lowSensitiveHits | [Long](../scalars/Long.md)! | Total hits with low sensitivity. |
 | mediumSensitiveHits | [Long](../scalars/Long.md)! | Total hits with medium sensitivity. |
+| securityFeaturesStatus | [SecurityFeaturesStatus](SecurityFeaturesStatus.md) | Threat Monitoring and Anomaly Detection security-notification mute and enablement state for this object. Null unless the requesting account has the DTA object mute feature enabled. |
 | sensitivityStatus | [SensitivityStatus](../enums/SensitivityStatus.md)! | Sensitivity status of a workload. |
 
 ## Used By
@@ -47,4 +48,4 @@ Represents security metadata of a workload.
 - [AzureNativeResourceGroup.securityMetadata](AzureNativeResourceGroup.md)
 - [AzureNativeResourceGroupBase.securityMetadata](AzureNativeResourceGroupBase.md)
 - [AzureNativeSubscription.securityMetadata](AzureNativeSubscription.md)
-- *…and 328 more*
+- *…and 332 more*

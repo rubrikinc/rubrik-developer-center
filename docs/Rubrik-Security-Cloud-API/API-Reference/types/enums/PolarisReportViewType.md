@@ -56,7 +56,7 @@ PolarisReportViewType is the template type for a report.
 | RECOVERY_TASKS_DETAIL_REPORT | Recovery tasks detail report. |
 | REPORT_UNSPECIFIED | Report view type is unspecified. |
 | ROLE_REPORT | Role report. |
-| SCRIPT_REPORT | TBD. |
+| RUBRIK_AI_REPORT | AI-generated script based reports authored by Rubrik AI. |
 | SERVICE_ACCOUNT_REPORT | Service account report. |
 | SIGNIN_LOGS_REPORT | Sign-in logs report. |
 | SLA_AUDIT_REPORT | SLA audit report. |

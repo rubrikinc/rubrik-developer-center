@@ -21,10 +21,12 @@ Cloud Direct NAS export object.
 | exportFid | [UUID](../scalars/UUID.md)! | Cloud Direct NAS export FID. |
 | exportPath | String! | Cloud Direct NAS export path. |
 | exportType | String! | Cloud Direct NAS export type. |
+| futureLegalHoldInfo | [FutureLegalHoldInfo](FutureLegalHoldInfo.md) | Future legal hold rule configured for this object, if any. |
 | id | [UUID](../scalars/UUID.md)! | ID of the hierarchy object. |
 | isArchived | Boolean! | Specifies whether the export has been deleted. |
 | isProtected | Boolean! | Specifies whether the export is protected. |
 | isRelic | Boolean! | Specifies whether the export is a relic. |
+| legallyHeldSnapshotCount | Int | Number of snapshots on legal hold for this object. |
 | logicalPath | [[PathNode](PathNode.md)!]! | Sequential list of the logical ancestors of this object. |
 | name | String! | Name of the hierarchy object. |
 | numWorkloadDescendants | Int! | Number of descendant workloads of this object. |

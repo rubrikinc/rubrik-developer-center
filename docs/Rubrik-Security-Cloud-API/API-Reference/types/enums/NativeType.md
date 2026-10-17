@@ -76,8 +76,30 @@ Native type of principal.
 | ENTRA_ID_TERMS_OF_USE | Entra ID terms of use. |
 | ENTRA_ID_USER | Entra ID user. |
 | OKTA_APPLICATION | Okta application. |
+| OKTA_AUTHENTICATOR | Okta authenticator. |
+| OKTA_AUTHORIZATION_SERVER | Okta authorization server. |
+| OKTA_AUTHORIZATION_SERVER_CLAIM | Okta authorization server claim. |
+| OKTA_AUTHORIZATION_SERVER_POLICY | Okta authorization server policy. |
+| OKTA_AUTHORIZATION_SERVER_POLICY_RULE | Okta authorization server policy rule. |
+| OKTA_AUTHORIZATION_SERVER_SCOPE | Okta authorization server scope. |
+| OKTA_EVENT_HOOK | Okta event hook. |
 | OKTA_GROUP | Okta group. |
+| OKTA_GROUP_PUSH_MAPPING | Okta group push mapping. |
+| OKTA_GROUP_RULE | Okta group rule. |
+| OKTA_IDENTITY_PROVIDER | Okta external identity provider. |
+| OKTA_IDP_KEY_CREDENTIAL | Okta identity provider key credential. |
+| OKTA_INLINE_HOOK | Okta inline hook. |
+| OKTA_NETWORK_ZONE | Okta network zone. |
 | OKTA_POLICY | Okta policy. |
+| OKTA_POLICY_RULE | Okta policy rule. |
+| OKTA_PROFILE_MAPPING | Okta profile mapping. |
+| OKTA_PROVISIONING_SETTING | Okta application provisioning setting. |
 | OKTA_USER | Okta user. |
+| OKTA_USER_SCHEMA | Okta user profile schema. |
 | OKTA_USER_TYPE | Okta user type. |
+| OKTA_WORKFLOW | Okta Workflows flow. |
+| OKTA_WORKFLOW_CONNECTION | Okta Workflows connection. |
+| OKTA_WORKFLOW_DATA_TABLE | Okta Workflows data table. |
+| OKTA_WORKFLOW_DATA_TABLE_ROW | Okta Workflows data table row. |
+| OKTA_WORKFLOW_FOLDER | Okta Workflows folder. |
 | UNKNOWN_NATIVE_TYPE | Unknown Native Type. |

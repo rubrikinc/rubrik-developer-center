@@ -18,6 +18,7 @@ An Azure Cosmos NoSQL account. Refers to the top-level Cosmos NoSQL resource tha
 | effectiveRetentionSlaDomain | [SlaDomain](../interfaces/SlaDomain.md) | Effective retention of the SLA Domain of the hierarchy object. |
 | effectiveSlaDomain | [SlaDomain](../interfaces/SlaDomain.md)! | Effective SLA Domain of the hierarchy object. |
 | effectiveSlaSourceObject | [PathNode](PathNode.md) | Path node of the effective SLA Domain source. |
+| futureLegalHoldInfo | [FutureLegalHoldInfo](FutureLegalHoldInfo.md) | Future legal hold rule configured for this object, if any. |
 | id | [UUID](../scalars/UUID.md)! | ID of the hierarchy object. |
 | isContinuousBackupEnabled | Boolean! | Specifies whether the account uses a continuous backup policy rather than a periodic one. |
 | isLocalAuthDisabled | Boolean! | Specifies whether key-based authentication is turned off, leaving Microsoft Entra ID as the only way to authenticate. |
@@ -25,6 +26,7 @@ An Azure Cosmos NoSQL account. Refers to the top-level Cosmos NoSQL resource tha
 | isProtectable | Boolean! | Specifies whether the Azure Cosmos NoSQL account is protectable. |
 | isServerless | Boolean! | Specifies whether the account has the serverless capability. Serverless accounts have no provisioned throughput. |
 | kind | String! | Cosmos NoSQL API kind of the account. Inventory covers the NoSQL API, reported as GlobalDocumentDB. |
+| legallyHeldSnapshotCount | Int | Number of snapshots on legal hold for this object. |
 | logicalPath | [[PathNode](PathNode.md)!]! | Sequential list of the logical ancestors of this object. |
 | name | String! | Name of the hierarchy object. |
 | networkAccessMode | [AzureCosmosNosqlNetworkAccessMode](../enums/AzureCosmosNosqlNetworkAccessMode.md)! | Reachability of the account, derived from its public network access, IP rule, virtual network filter and private endpoint settings. |
@@ -36,7 +38,7 @@ An Azure Cosmos NoSQL account. Refers to the top-level Cosmos NoSQL resource tha
 | publicNetworkAccess | String! | Raw public network access value reported by Azure. This is the audit anchor for the derived networkAccessMode. |
 | region | [AzureNativeRegion](../enums/AzureNativeRegion.md)! | Azure region where the Azure Cosmos NoSQL account is located. |
 | rscNativeObjectPendingSla | [CompactSlaDomain](CompactSlaDomain.md) | SLA Domain assignment which is pending on the Rubrik Security Cloud native objects. |
-| rscPendingObjectPauseAssignment | [PendingObjectPauseAssignmentStatus](../enums/PendingObjectPauseAssignmentStatus.md) | Object pause pending assignment details for RSC objects. |
+| rscPendingObjectPauseAssignment | [PendingObjectPauseAssignmentStatus](../enums/PendingObjectPauseAssignmentStatus.md) | Pending pause or unpause assignment for RSC-native objects. |
 | securityMetadata | [SecurityMetadata](SecurityMetadata.md) | Security posture metadata. |
 | slaAssignment | [SlaAssignmentTypeEnum](../enums/SlaAssignmentTypeEnum.md)! | SLA Domain assignment type for this object. |
 | slaPauseStatus | Boolean! | Pause status of the effective SLA Domain of the hierarchy object. |

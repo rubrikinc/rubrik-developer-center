@@ -7,9 +7,9 @@ Retrieves a paginated list of all Azure Native Subscriptions.
 | Argument | Type | Description |
 |----------|------|-------------|
 | first | Int | Returns the first n elements from the list. |
-| after | String | Returns the elements in the list that occur after the specified cursor. |
+| after | String | An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results. |
 | last | Int | Returns the last n elements from the list. |
-| before | String | Returns the elements in the list that occur before the specified cursor. |
+| before | String | An opaque cursor returned from a previous query's startCursor field. Pass this value verbatim to retrieve the previous page of results. |
 | sortBy | [AzureNativeSubscriptionSortFields](../types/enums/AzureNativeSubscriptionSortFields.md) | Sort fields for list of Azure subscriptions. |
 | sortOrder | [SortOrder](../types/enums/SortOrder.md) | Sorts the order of results. |
 | subscriptionFilters | [AzureNativeSubscriptionFilters](../types/inputs/AzureNativeSubscriptionFilters.md) |  |
@@ -33,6 +33,7 @@ Retrieves a paginated list of all Azure Native Subscriptions.
           accountConnectionId
           authorizedOperations
           azureCloudType
+          azureCosmosNosqlContainerCount
           azurePostgresFlexibleServerCount
           azureSqlDatabaseDbCount
           azureSqlManagedInstanceDbCount
@@ -44,6 +45,7 @@ Retrieves a paginated list of all Azure Native Subscriptions.
           id
           isProtectable
           lastRefreshedAt
+          legallyHeldSnapshotCount
           name
           numWorkloadDescendants
           objectType
@@ -81,9 +83,9 @@ Retrieves a paginated list of all Azure Native Subscriptions.
                   "MANAGE_DATA_SOURCE"
                 ],
                 "azureCloudType": "AZURECHINACLOUD",
+                "azureCosmosNosqlContainerCount": 0,
                 "azurePostgresFlexibleServerCount": 0,
-                "azureSqlDatabaseDbCount": 0,
-                "azureSqlManagedInstanceDbCount": 0
+                "azureSqlDatabaseDbCount": 0
               }
             ]
           ],

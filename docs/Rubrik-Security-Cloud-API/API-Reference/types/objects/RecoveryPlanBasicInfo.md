@@ -8,6 +8,7 @@ Basic information about the recovery plans.
 |-------|------|-------------|
 | id | [UUID](../scalars/UUID.md)! | Recovery plan identifier. |
 | isArchived | Boolean! | Whether the recovery plan is archived. |
+| isPreSeedEnabled | Boolean! | Whether Pre-Seed is enabled for the recovery plan. |
 | latestRecovery | [Recovery](Recovery.md) | The last completed recovery for this recovery plan. |
 | name | String! | Recovery plan name. |
 | numChildren | Int! | Number of non-archived child objects in the recovery plan. |
@@ -30,3 +31,4 @@ Basic information about the recovery plans.
 **Referenced by**
 
 - [Recovery.recoveryPlanBasicInfo](Recovery.md)
+- [WorkloadProtectionDetail.recoveryPlans](WorkloadProtectionDetail.md)

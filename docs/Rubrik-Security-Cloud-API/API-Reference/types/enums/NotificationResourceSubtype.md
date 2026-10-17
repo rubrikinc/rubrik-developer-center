@@ -9,6 +9,7 @@ The resource subtype associated with notifications and resources.
 | CROSS_ACCOUNT_CLUSTER | Cross-account cluster. |
 | CROSS_ACCOUNT_PAIR | Cross-account pair. |
 | EXOCOMPUTE_CLUSTER_READY | Exocompute cluster ready for data samples. |
+| M365_RECOVERY_PERMISSIONS | Write permissions granted to a Microsoft 365 workload app for recovery. |
 | MSSQL_DISCOVERY | MSSQL resource discovery. |
 | MVB_RECOVERY_ANALYSIS | MVB recovery analysis. |
 | MVC_RECOVERY_ANALYSIS | Minimum viable company recovery analysis. |

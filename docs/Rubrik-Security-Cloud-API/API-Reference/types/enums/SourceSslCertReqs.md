@@ -6,6 +6,6 @@ SSL certificate requirements.
 
 | Value | Description |
 |-------|-------------|
-| SOURCE_SSL_CERT_REQS_NONE |  |
-| SOURCE_SSL_CERT_REQS_OPTIONAL |  |
-| SOURCE_SSL_CERT_REQS_REQUIRED |  |
+| SOURCE_SSL_CERT_REQS_NONE | No certificate requirements. |
+| SOURCE_SSL_CERT_REQS_OPTIONAL | Certificate requirements are optional. |
+| SOURCE_SSL_CERT_REQS_REQUIRED | Certificate requirements are required. |

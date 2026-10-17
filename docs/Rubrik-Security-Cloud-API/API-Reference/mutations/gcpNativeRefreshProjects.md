@@ -1,12 +1,12 @@
 # gcpNativeRefreshProjects
 
-Trigger GCP native refresh project job for the given project IDs
+Trigger refresh of the given GCP projects.
 
 ## Arguments
 
 | Argument | Type | Description |
 |----------|------|-------------|
-| input *(required)* | [GcpNativeRefreshProjectsInput](../types/inputs/GcpNativeRefreshProjectsInput.md)! | Input to refresh GCP native projects. |
+| input *(required)* | [GcpNativeRefreshProjectsInput](../types/inputs/GcpNativeRefreshProjectsInput.md)! | Input to refresh GCP projects. |
 
 ## Returns
 
