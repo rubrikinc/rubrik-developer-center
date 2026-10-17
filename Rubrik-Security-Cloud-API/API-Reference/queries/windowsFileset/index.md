@@ -26,6 +26,7 @@ query WindowsFileset($fid: UUID!) {
     isPassThrough
     isRelic
     isReplica
+    legallyHeldSnapshotCount
     name
     numWorkloadDescendants
     objectType

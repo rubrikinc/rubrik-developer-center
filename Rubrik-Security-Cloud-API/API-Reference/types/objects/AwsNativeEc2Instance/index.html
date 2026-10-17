@@ -1037,6 +1037,11 @@
 <td>Specifies the file indexing status for this EC2 instance. When enabled, Rubrik scans the file structure within the EC2 instance in a protected environment, where only the metadata such as folder structure, file names, and file sizes is accessible to Rubrik.If the status is not specified by the user, file indexing is automatically enabled when archival is configured.</td>
 </tr>
 <tr>
+<td>futureLegalHoldInfo</td>
+<td><a href="../FutureLegalHoldInfo/">FutureLegalHoldInfo</a></td>
+<td>Future legal hold rule configured for this object, if any.</td>
+</tr>
+<tr>
 <td>hostInfo</td>
 <td><a href="../PhysicalHost/">PhysicalHost</a></td>
 <td>Rubrik CDM host information for the AWS EC2 instance added as a host to the cluster. The value is Null when the virtual machine is not added as a host on any Rubrik cluster.</td>
@@ -1095,6 +1100,11 @@
 <td>isRelic</td>
 <td>Boolean!</td>
 <td>Whether the object is a relic.</td>
+</tr>
+<tr>
+<td>legallyHeldSnapshotCount</td>
+<td>Int</td>
+<td>Number of snapshots on legal hold for this object.</td>
 </tr>
 <tr>
 <td>logicalPath</td>
@@ -1194,7 +1204,7 @@
 <tr>
 <td>rscPendingObjectPauseAssignment</td>
 <td><a href="../../enums/PendingObjectPauseAssignmentStatus/">PendingObjectPauseAssignmentStatus</a></td>
-<td>Object pause pending assignment details for RSC objects.</td>
+<td>Pending pause or unpause assignment for RSC-native objects.</td>
 </tr>
 <tr>
 <td>securityMetadata</td>

@@ -24,6 +24,7 @@ query MongoCollection($fid: UUID!) {
     id
     isRelic
     isReplica
+    legallyHeldSnapshotCount
     name
     numWorkloadDescendants
     objectType

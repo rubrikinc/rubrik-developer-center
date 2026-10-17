@@ -1,6 +1,6 @@
 # validateAndInitiateAwsOutpostAccount
 
-Validate and initiates the setup of AWS Outpost account. If validation fails, no error is returned and the cause is present in the "message" field of return object In case validation succeeds, it initiates creation of AWS Outpost account cloud formation stack. This is the first step to set up Laminar data classification on RSC.
+AwsOutpostAccountValidateAndInitiate validates the request to set up an AWS Outpost account and, on successful validation, initiates the CloudFormation stack setup. On validation failure it returns the validation error in validate_response without initiating (no error is returned).
 
 ## Arguments
 

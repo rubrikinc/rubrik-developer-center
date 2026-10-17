@@ -26,7 +26,6 @@ mutation AddK8sCluster($input: AddK8sClusterInput!) {
     helmStatus
     helmVersion
     id
-    isDbProtectionEnabled
     k8SVersion
     kubevirtVersion
     kuprServerProxyPodMultusIp
@@ -79,11 +78,10 @@ mutation AddK8sCluster($input: AddK8sClusterInput!) {
         "isK8SError": true,
         "serviceAccountName": "example-string"
       },
-      "dbServiceAccountInfo": {
-        "accessToken": "example-string",
-        "clientId": "example-string",
-        "isK8SError": true,
-        "serviceAccountName": "example-string"
+      "kuprServerProxyConfig": {
+        "cert": "example-string",
+        "ipAddress": "example-string",
+        "port": 0
       }
     }
   }

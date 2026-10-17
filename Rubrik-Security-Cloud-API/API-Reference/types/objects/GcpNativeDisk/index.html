@@ -1017,6 +1017,11 @@
 <td>Specifies the file indexing status for this GCP disk. When enabled, Rubrik scans the file structure within the GCP disk in a protected environment, where only the metadata such as folder structure, file names, and file sizes is accessible to Rubrik. If the status is not specified by the user, file indexing is automatically enabled when archival is configured.</td>
 </tr>
 <tr>
+<td>futureLegalHoldInfo</td>
+<td><a href="../FutureLegalHoldInfo/">FutureLegalHoldInfo</a></td>
+<td>Future legal hold rule configured for this object, if any.</td>
+</tr>
+<tr>
 <td>gcpNativeProject</td>
 <td><a href="../GcpNativeProject/">GcpNativeProject</a>!</td>
 <td>GCP Project of the disk.</td>
@@ -1065,6 +1070,11 @@
 <td>labels</td>
 <td>[<a href="../Label/">Label</a>!]!</td>
 <td>List of labels that are assigned to the object.</td>
+</tr>
+<tr>
+<td>legallyHeldSnapshotCount</td>
+<td>Int</td>
+<td>Number of snapshots on legal hold for this object.</td>
 </tr>
 <tr>
 <td>logicalPath</td>
@@ -1149,7 +1159,7 @@
 <tr>
 <td>rscPendingObjectPauseAssignment</td>
 <td><a href="../../enums/PendingObjectPauseAssignmentStatus/">PendingObjectPauseAssignmentStatus</a></td>
-<td>Object pause pending assignment details for RSC objects.</td>
+<td>Pending pause or unpause assignment for RSC-native objects.</td>
 </tr>
 <tr>
 <td>securityMetadata</td>

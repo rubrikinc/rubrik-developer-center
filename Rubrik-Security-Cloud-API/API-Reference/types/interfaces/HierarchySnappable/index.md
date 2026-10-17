@@ -12,7 +12,9 @@ A generic hierarchy protected objects.
 | effectiveRetentionSlaDomain | [SlaDomain](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/SlaDomain/index.md)                            | Effective retention of the SLA Domain of the hierarchy object.    |
 | effectiveSlaDomain          | [SlaDomain](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/SlaDomain/index.md)!                           | Effective SLA Domain of the hierarchy object.                     |
 | effectiveSlaSourceObject    | [PathNode](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/PathNode/index.md)                                 | Path node of the effective SLA Domain source.                     |
+| futureLegalHoldInfo         | [FutureLegalHoldInfo](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/FutureLegalHoldInfo/index.md)           | Future legal hold rule configured for this object, if any.        |
 | id                          | [UUID](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/UUID/index.md)!                                        | ID of the hierarchy object.                                       |
+| legallyHeldSnapshotCount    | Int                                                                                                                                              | Number of snapshots on legal hold for this object.                |
 | logicalPath                 | \[[PathNode](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/PathNode/index.md)!\]!                           | Sequential list of the logical ancestors of this object.          |
 | name                        | String!                                                                                                                                          | Name of the hierarchy object.                                     |
 | numWorkloadDescendants      | Int!                                                                                                                                             | Number of descendant workloads of this object.                    |
@@ -66,6 +68,8 @@ A generic hierarchy protected objects.
 - [GlueIcebergTable](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/GlueIcebergTable/index.md)
 - [HyperVVirtualMachine](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/HyperVVirtualMachine/index.md)
 - [HypervisorVirtualMachineV1](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/HypervisorVirtualMachineV1/index.md)
+- [InformixInstance](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/InformixInstance/index.md)
+- [IrisdbInstance](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/IrisdbInstance/index.md)
 - [K8sNamespace](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/K8sNamespace/index.md)
 - [KubernetesProtectionSet](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/KubernetesProtectionSet/index.md)
 - [KubernetesVirtualMachine](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/KubernetesVirtualMachine/index.md)
@@ -93,6 +97,7 @@ A generic hierarchy protected objects.
 - [OpenstackVirtualMachine](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/OpenstackVirtualMachine/index.md)
 - [OracleDataGuardGroup](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/OracleDataGuardGroup/index.md)
 - [OracleDatabase](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/OracleDatabase/index.md)
+- [PingFederateClusterV1](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/PingFederateClusterV1/index.md)
 - [PostgreSQLDbCluster](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/PostgreSQLDbCluster/index.md)
 - [ProxmoxVirtualMachineV1](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/ProxmoxVirtualMachineV1/index.md)
 - [PureStorageProtectionGroupV1](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/PureStorageProtectionGroupV1/index.md)
@@ -102,6 +107,7 @@ A generic hierarchy protected objects.
 - [SapHanaDatabase](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/SapHanaDatabase/index.md)
 - [SapHanaSystem](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/SapHanaSystem/index.md)
 - [ShareFileset](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/ShareFileset/index.md)
+- [SnapMirrorCloud](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/SnapMirrorCloud/index.md)
 - [VcdVapp](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/VcdVapp/index.md)
 - [VolumeGroup](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/VolumeGroup/index.md)
 - [VsphereVm](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/VsphereVm/index.md)

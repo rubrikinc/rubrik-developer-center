@@ -1,6 +1,6 @@
 # startMssqlLogShippingApplyLogsJob
 
-Apply pending transaction logs to a secondary database Supported in v9.7 Starts an asynchronous job that applies all pending transaction logs to the secondary database within the specified log shipping configuration without changing its state.
+Apply pending transaction logs to a secondary database Supported in v9.6+ Starts an asynchronous job that applies all pending transaction logs to the secondary database within the specified log shipping configuration without changing its state.
 
 ## Arguments
 

@@ -924,6 +924,11 @@
 </thead>
 <tbody>
 <tr>
+<td>backupCopyType</td>
+<td><a href="../../enums/BackupCopyType/">BackupCopyType</a></td>
+<td>Filter by backup copy type (PRIMARY = source, REPLICA = replicated). Omit to return both.</td>
+</tr>
+<tr>
 <td>clusterUuid</td>
 <td>String</td>
 <td>Rubrik cluster UUID. Omit for RSC native snapshots.</td>
@@ -932,6 +937,11 @@
 <td>filterParams</td>
 <td>[<a href="../LegalHoldQueryFilter/">LegalHoldQueryFilter</a>!]!</td>
 <td>Filter parameters list.</td>
+</tr>
+<tr>
+<td>legalHoldStateFilter</td>
+<td>[<a href="../../enums/LegalHoldStateFilterValue/">LegalHoldStateFilterValue</a>!]</td>
+<td>Legal hold state filter. Multiple values OR together. Omit to return workloads matching the default query behavior.</td>
 </tr>
 <tr>
 <td>sortParam</td>

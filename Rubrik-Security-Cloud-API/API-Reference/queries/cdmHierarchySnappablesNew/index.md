@@ -21,6 +21,7 @@ query CdmHierarchySnappablesNew($fids: [UUID!]!) {
     cdmLink
     id
     isReplica
+    legallyHeldSnapshotCount
     name
     numWorkloadDescendants
     objectType

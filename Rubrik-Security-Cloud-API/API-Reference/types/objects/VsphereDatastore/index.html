@@ -935,7 +935,7 @@
 
 <h1 id="vspheredatastore">VsphereDatastore</h1>
 <p>Vsphere datastore.</p>
-<p><strong>Implements:</strong> <a href="../../interfaces/CdmHierarchyObject/">CdmHierarchyObject</a>, <a href="../../interfaces/HierarchyObject/">HierarchyObject</a>, <a href="../../interfaces/VsphereComputeClusterDescendantType/">VsphereComputeClusterDescendantType</a>, <a href="../../interfaces/VsphereDatacenterDescendantType/">VsphereDatacenterDescendantType</a>, <a href="../../interfaces/VsphereHostDescendantType/">VsphereHostDescendantType</a>, <a href="../../interfaces/VsphereResourcePoolDescendantType/">VsphereResourcePoolDescendantType</a>, <a href="../../interfaces/VsphereVcenterDescendantType/">VsphereVcenterDescendantType</a>, <a href="../../interfaces/VsphereDatastoreClusterPhysicalChildType/">VsphereDatastoreClusterPhysicalChildType</a>, <a href="../../interfaces/VsphereDatastoreClusterDescendantType/">VsphereDatastoreClusterDescendantType</a></p>
+<p><strong>Implements:</strong> <a href="../../interfaces/HierarchyObject/">HierarchyObject</a>, <a href="../../interfaces/CdmHierarchyObject/">CdmHierarchyObject</a>, <a href="../../interfaces/VsphereComputeClusterDescendantType/">VsphereComputeClusterDescendantType</a>, <a href="../../interfaces/VsphereDatacenterDescendantType/">VsphereDatacenterDescendantType</a>, <a href="../../interfaces/VsphereHostDescendantType/">VsphereHostDescendantType</a>, <a href="../../interfaces/VsphereResourcePoolDescendantType/">VsphereResourcePoolDescendantType</a>, <a href="../../interfaces/VsphereVcenterDescendantType/">VsphereVcenterDescendantType</a>, <a href="../../interfaces/VsphereDatastoreClusterPhysicalChildType/">VsphereDatastoreClusterPhysicalChildType</a>, <a href="../../interfaces/VsphereDatastoreClusterDescendantType/">VsphereDatastoreClusterDescendantType</a></p>
 <h2 id="fields">Fields</h2>
 <table>
 <thead>
@@ -969,7 +969,7 @@
 <tr>
 <td>capacity</td>
 <td><a href="../../scalars/Long/">Long</a>!</td>
-<td></td>
+<td>Total capacity of the datastore, in bytes.</td>
 </tr>
 <tr>
 <td>cdmPendingObjectPauseAssignment</td>
@@ -994,7 +994,7 @@
 <tr>
 <td>datastoreType</td>
 <td>String!</td>
-<td></td>
+<td>Type of the datastore, e.g. VMFS or NFS.</td>
 </tr>
 <tr>
 <td>effectiveRetentionSlaDomain</td>
@@ -1014,12 +1014,17 @@
 <tr>
 <td>freeSpace</td>
 <td><a href="../../scalars/Long/">Long</a>!</td>
-<td></td>
+<td>Free space available on the datastore, in bytes.</td>
+</tr>
+<tr>
+<td>futureLegalHoldInfo</td>
+<td><a href="../FutureLegalHoldInfo/">FutureLegalHoldInfo</a></td>
+<td>Future legal hold rule configured for this object, if any.</td>
 </tr>
 <tr>
 <td>id</td>
 <td><a href="../../scalars/UUID/">UUID</a>!</td>
-<td>Object ID.</td>
+<td>ID of the hierarchy object.</td>
 </tr>
 <tr>
 <td>isArchived</td>
@@ -1029,7 +1034,7 @@
 <tr>
 <td>isLocal</td>
 <td>Boolean!</td>
-<td></td>
+<td>Indicates whether the datastore is local to a single host.</td>
 </tr>
 <tr>
 <td>isReplica</td>
@@ -1045,6 +1050,11 @@
 <td>latestUserNote</td>
 <td><a href="../LatestUserNote/">LatestUserNote</a></td>
 <td>Latest user note information.</td>
+</tr>
+<tr>
+<td>legallyHeldSnapshotCount</td>
+<td>Int</td>
+<td>Number of snapshots on legal hold for this object.</td>
 </tr>
 <tr>
 <td>logicalPath</td>

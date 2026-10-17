@@ -46,4 +46,4 @@ A generic snapshot type.
 - [AzureNativeResourceGroup.snapshotDistribution](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AzureNativeResourceGroup/index.md)
 - [AzureNativeResourceGroupBase.snapshotDistribution](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AzureNativeResourceGroupBase/index.md)
 - [AzureNativeSubscription.snapshotDistribution](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AzureNativeSubscription/index.md)
-- *…and 329 more*
+- *…and 333 more*

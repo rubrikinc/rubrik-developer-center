@@ -912,7 +912,7 @@
 
 
 <h1 id="vspheremountfilter">VSphereMountFilter</h1>
-<p><em>No description available.</em></p>
+<p>Filter for virtual machine Live Mounts.</p>
 <h2 id="fields">Fields</h2>
 <table>
 <thead>
@@ -926,22 +926,22 @@
 <tr>
 <td>clusterUuid</td>
 <td>[<a href="../../scalars/UUID/">UUID</a>!]</td>
-<td></td>
+<td>Filters Live Mounts by the UUIDs of the Rubrik clusters hosting them.</td>
 </tr>
 <tr>
 <td>name</td>
 <td>String</td>
-<td></td>
+<td>Filters Live Mounts by name.</td>
 </tr>
 <tr>
 <td>powerStatus</td>
 <td>[Boolean!]</td>
-<td></td>
+<td>Filters Live Mounts by power status: true for powered on, false for powered off.</td>
 </tr>
 <tr>
 <td>sourceVmId</td>
 <td><a href="../../scalars/UUID/">UUID</a></td>
-<td></td>
+<td>Filters Live Mounts by the RSC ID of the source virtual machine.</td>
 </tr>
 </tbody>
 </table>

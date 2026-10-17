@@ -25,3 +25,4 @@ Paginated list of O365OnedriveObject objects with additional pagination informat
 - [query: snappableTeamsDriveSearch](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/snappableTeamsDriveSearch/index.md)
 - [query: snapshotOnedriveSearch](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/snapshotOnedriveSearch/index.md)
 - [query: snapshotSharepointDriveSearch](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/snapshotSharepointDriveSearch/index.md)
+- [query: snapshotSharepointListSearch](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/snapshotSharepointListSearch/index.md)

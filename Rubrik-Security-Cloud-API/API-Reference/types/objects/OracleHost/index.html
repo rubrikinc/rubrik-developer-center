@@ -1027,6 +1027,11 @@
 <td>The db_unique_names of the Oracle databases on this host that are excluded from discovery. An empty list means no databases are excluded.</td>
 </tr>
 <tr>
+<td>futureLegalHoldInfo</td>
+<td><a href="../FutureLegalHoldInfo/">FutureLegalHoldInfo</a></td>
+<td>Future legal hold rule configured for this object, if any.</td>
+</tr>
+<tr>
 <td>host</td>
 <td><a href="../PhysicalHost/">PhysicalHost</a></td>
 <td>Source host of the Oracle database.</td>
@@ -1050,6 +1055,11 @@
 <td>latestUserNote</td>
 <td><a href="../LatestUserNote/">LatestUserNote</a></td>
 <td>Latest user note information.</td>
+</tr>
+<tr>
+<td>legallyHeldSnapshotCount</td>
+<td>Int</td>
+<td>Number of snapshots on legal hold for this object.</td>
 </tr>
 <tr>
 <td>logBackupFrequency</td>
@@ -1174,7 +1184,7 @@
 <td>descendantConnection</td>
 <td>after</td>
 <td>String</td>
-<td>Returns the elements in the list that occur after the specified cursor.</td>
+<td>An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results.</td>
 </tr>
 <tr>
 <td>descendantConnection</td>
@@ -1216,7 +1226,7 @@
 <td>logicalChildConnection</td>
 <td>after</td>
 <td>String</td>
-<td>Returns the elements in the list that occur after the specified cursor.</td>
+<td>An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results.</td>
 </tr>
 <tr>
 <td>logicalChildConnection</td>
@@ -1258,7 +1268,7 @@
 <td>numWorkloadDescendants</td>
 <td>after</td>
 <td>String</td>
-<td>Returns the elements in the list that occur after the specified cursor.</td>
+<td>An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results.</td>
 </tr>
 <tr>
 <td>numWorkloadDescendants</td>
@@ -1270,7 +1280,7 @@
 <td>numWorkloadDescendants</td>
 <td>before</td>
 <td>String</td>
-<td>Returns the elements in the list that occur before the specified cursor.</td>
+<td>An opaque cursor returned from a previous query's startCursor field. Pass this value verbatim to retrieve the previous page of results.</td>
 </tr>
 <tr>
 <td>numWorkloadDescendants</td>

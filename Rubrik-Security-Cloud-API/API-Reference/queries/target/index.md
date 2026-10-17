@@ -17,6 +17,7 @@ GetTarget returns a single archival location in the V2 shape, with its encryptio
 ```graphql
 query Target($input: UUID!) {
   target(input: $input) {
+    archivalLocationPurpose
     clusterName
     consumedBytes
     failedTasks
@@ -46,11 +47,11 @@ query Target($input: UUID!) {
 {
   "data": {
     "target": {
+      "archivalLocationPurpose": "ADO",
       "clusterName": "example-string",
       "consumedBytes": 0,
       "failedTasks": 0,
-      "id": "example-string",
-      "isActive": true
+      "id": "example-string"
     }
   }
 }

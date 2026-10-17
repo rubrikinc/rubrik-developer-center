@@ -13,6 +13,9 @@ The basic entity Information.
 
 **Referenced by**
 
+- [InformixInstance.entityInfo](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/InformixInstance/index.md)
+- [IrisdbDatabase.entityInfo](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/IrisdbDatabase/index.md)
+- [IrisdbInstance.entityInfo](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/IrisdbInstance/index.md)
 - KosmosDiscoverableEntityType.entityInfo
 - KosmosHierarchyObjectType.entityInfo
 - KosmosLeafHierarchyObjectType.entityInfo

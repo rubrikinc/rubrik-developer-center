@@ -977,6 +977,11 @@
 <td>Type of Azure cloud, for example, Azure Public Cloud and Azure China Cloud.</td>
 </tr>
 <tr>
+<td>azureCosmosNosqlContainerCount</td>
+<td>Int!</td>
+<td>The number of Azure Cosmos NoSQL containers in the subscription.</td>
+</tr>
+<tr>
 <td>azureNativeResourceGroups</td>
 <td><a href="../AzureNativeResourceGroupConnection/">AzureNativeResourceGroupConnection</a>!</td>
 <td>Paginated list of all Azure Resource Groups in the subscription.</td>
@@ -1047,6 +1052,11 @@
 <td>Details of features enabled for the subscription.</td>
 </tr>
 <tr>
+<td>futureLegalHoldInfo</td>
+<td><a href="../FutureLegalHoldInfo/">FutureLegalHoldInfo</a></td>
+<td>Future legal hold rule configured for this object, if any.</td>
+</tr>
+<tr>
 <td>id</td>
 <td><a href="../../scalars/UUID/">UUID</a>!</td>
 <td>ID of the hierarchy object.</td>
@@ -1060,6 +1070,11 @@
 <td>lastRefreshedAt</td>
 <td><a href="../../scalars/DateTime/">DateTime</a></td>
 <td>Last refresh time of the subscription, in UTC date-time format.</td>
+</tr>
+<tr>
+<td>legallyHeldSnapshotCount</td>
+<td>Int</td>
+<td>Number of snapshots on legal hold for this object.</td>
 </tr>
 <tr>
 <td>logicalPath</td>
@@ -1109,7 +1124,7 @@
 <tr>
 <td>rscPendingObjectPauseAssignment</td>
 <td><a href="../../enums/PendingObjectPauseAssignmentStatus/">PendingObjectPauseAssignmentStatus</a></td>
-<td>Object pause pending assignment details for RSC objects.</td>
+<td>Pending pause or unpause assignment for RSC-native objects.</td>
 </tr>
 <tr>
 <td>securityMetadata</td>
@@ -1169,7 +1184,7 @@
 <td>azureNativeResourceGroups</td>
 <td>after</td>
 <td>String</td>
-<td>Returns the elements in the list that occur after the specified cursor.</td>
+<td>An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results.</td>
 </tr>
 <tr>
 <td>azureNativeResourceGroups</td>
@@ -1181,7 +1196,7 @@
 <td>azureNativeResourceGroups</td>
 <td>before</td>
 <td>String</td>
-<td>Returns the elements in the list that occur before the specified cursor.</td>
+<td>An opaque cursor returned from a previous query's startCursor field. Pass this value verbatim to retrieve the previous page of results.</td>
 </tr>
 <tr>
 <td>azureNativeResourceGroups</td>

@@ -926,7 +926,7 @@
 <tr>
 <td>multiMysqldbRestoreSettings</td>
 <td>[<a href="../MysqldbPerReplicaRestoreSettingsInput/">MysqldbPerReplicaRestoreSettingsInput</a>!]</td>
-<td>Per-replica restore settings for an HA MySQL instance. Omitted (or empty) restores a standalone instance. One entry restores that single replica. Multiple entries restore every listed replica and re-establish replication across the HA cluster.</td>
+<td>Supported in v9.6+ Per-replica restore settings for an HA MySQL instance. Omitted (or empty) restores a standalone instance. One entry restores that single replica. Multiple entries restore every listed replica and re-establish replication across the HA cluster.</td>
 </tr>
 <tr>
 <td>mysqldbAutomatedRestoreConnectionInfo</td>
@@ -941,7 +941,7 @@
 <tr>
 <td>mysqldbAutomatedRestoreInstanceDetails</td>
 <td><a href="../MysqldbAutomatedRestoreInstanceDetailsInput/">MysqldbAutomatedRestoreInstanceDetailsInput</a></td>
-<td>Supported in v9.5+ v9.5-v9.6: Configuration to customize the MySQL Instance level restore. v9.7: Configuration to customize the MySQL Instance level restore. Ignored when multiMysqldbRestoreSettings is set.</td>
+<td>Supported in v9.5+ v9.5: Configuration to customize the MySQL Instance level restore. v9.6+: Configuration to customize the MySQL Instance level restore. Ignored when multiMysqldbRestoreSettings is set.</td>
 </tr>
 <tr>
 <td>restoreInfo</td>

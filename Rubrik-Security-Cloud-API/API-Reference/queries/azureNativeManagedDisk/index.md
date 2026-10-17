@@ -33,6 +33,7 @@ query AzureNativeManagedDisk($azureManagedDiskRubrikId: UUID!) {
     isFileIndexingEnabled
     isProtectable
     isRelic
+    legallyHeldSnapshotCount
     name
     nativeName
     numWorkloadDescendants

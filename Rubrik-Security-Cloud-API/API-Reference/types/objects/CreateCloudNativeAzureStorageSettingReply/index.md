@@ -4,9 +4,9 @@ Storage settings information for Azure.
 
 ## Fields
 
-| Field         | Type                                                                                                                        | Description |
-| ------------- | --------------------------------------------------------------------------------------------------------------------------- | ----------- |
-| targetMapping | [TargetMapping](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/TargetMapping/index.md)! |             |
+| Field         | Type                                                                                                                        | Description            |
+| ------------- | --------------------------------------------------------------------------------------------------------------------------- | ---------------------- |
+| targetMapping | [TargetMapping](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/TargetMapping/index.md)! | Azure storage setting. |
 
 ## Used By
 

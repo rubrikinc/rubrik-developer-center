@@ -28,6 +28,7 @@ query FusionComputeVrm($fid: UUID!) {
     isRefreshed
     isReplica
     lastRefreshTime
+    legallyHeldSnapshotCount
     name
     numWorkloadDescendants
     objectType

@@ -21,6 +21,7 @@ query K8sCluster($fid: UUID!) {
     clusterIp
     id
     lastRefreshTime
+    legallyHeldSnapshotCount
     name
     numWorkloadDescendants
     objectType
@@ -50,8 +51,8 @@ query K8sCluster($fid: UUID!) {
       ],
       "id": "00000000-0000-0000-0000-000000000000",
       "lastRefreshTime": "2024-01-01T00:00:00.000Z",
+      "legallyHeldSnapshotCount": 0,
       "name": "example-string",
-      "numWorkloadDescendants": 0,
       "allOrgs": [
         {
           "allUrls": [

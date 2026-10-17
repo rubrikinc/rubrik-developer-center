@@ -25,6 +25,8 @@ query PostgreSQLDbCluster($fid: UUID!) {
     id
     isRelic
     isReplica
+    lastRecoverableRangeCheckedAt
+    legallyHeldSnapshotCount
     name
     numWorkloadDescendants
     objectType

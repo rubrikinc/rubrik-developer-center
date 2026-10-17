@@ -4,28 +4,33 @@ This document lists all deprecated fields, queries, mutations, and enum values i
 
 ## Deprecated Fields
 
-*Extracted from schema: 20260914.graphql*
+*Extracted from schema: 20261012.graphql*
 
-**Total deprecated items: 303**
+**Total deprecated items: 311**
 
 ### Deprecated Query Fields
 
+- **`accountId`**: This endpoint is deprecated.
 - **`accountSettings`**: Use getAccountSettingValue or getAccountSettingValueWithDefault instead.
 - **`allAzureResourceGroups`**: Use allResourceGroupsFromAzure instead.
 - **`allAzureSubnets`**: Use allAzureCloudAccountSubnetsByRegion instead.
 - **`allClusterWebCertsAndIpmis`**: Use clusterConnection instead.
 - **`allMissingClusters`**: Missing cluster management has been retired.
+- **`allPendingActions`**: Pending actions are an internal implementation detail of RSC-to-CDM synchronization and are not intended for external use.
 - **`allUsersOnAccountConnection`**: Use usersInCurrentAndDescendantOrganization instead.
+- **`allVmRecoveryJobsInfo`**: Deprecated: API is not supported anymore. Use allWorkloadsRecoveryInfo instead.
 - **`allWebhooks`**: Use allWebhooksV2 instead.
 - **`azureExocomputeNetworkSetupTemplate`**: Azure networking resources creation for Exocompute using ARM template will not be supported.
 - **`failoverClusterTopLevelDescendants`**: No more users of failoverClusterTopLevelDescendants.
 - **`getKorgTaskchainStatus`**: Use `taskchain` field instead.
 - **`getPermissions`**: Use allEffectiveRbacPermissions instead.
 - **`hypervServers`**: Use hypervServersPaginated instead.
+- **`investigationCsvDownloadLink`**: This endpoint is deprecated.
 - **`ipWhitelist`**: use `ipWhitelistEntries` and `ipWhitelistSettings` instead.
 - **`k8sAppManifest`**: Not supported anymore.
 - **`mssqlDefaultProperties`**: Use mssqlDefaultPropertiesOnCluster instead.
 - **`o365SharepointObjects`**: This is deprecated as it was tied to the specific object type. Use o365SharepointObjectList instead.
+- **`pendingAction`**: Pending actions are an internal implementation detail of RSC-to-CDM synchronization and are not intended for external use.
 - **`protectedVolumesCount`**: This functionality is incorrect and deprecated.
 - **`recoverDb2DatabaseToEndOfBackup`**: Use mutation field instead. This query field will be removed in a future release.
 - **`recoverDb2DatabaseToPointInTime`**: Use mutation field instead. This query field will be removed in a future release.
@@ -33,7 +38,6 @@ This document lists all deprecated fields, queries, mutations, and enum values i
 - **`tableFilters`**: No longer supported.
 - **`taskDetailGroupByConnection`**: This endpoint doesn't provide new data. Use the count field in taskDetailConnection instead
 - **`userGroups`**: Use groupsInCurrentAndDescendantOrganization instead.
-- **`userNotifications`**: This query is deprecated.
 
 ### Deprecated Mutation Fields
 
@@ -46,6 +50,7 @@ This document lists all deprecated fields, queries, mutations, and enum values i
 - **`createAutomaticAzureTargetMapping`**: This mutation is deprecated.
 - **`createAutomaticRcsTargetMapping`**: This mutation is deprecated. Please use createRcvLocationsFromTemplate.
 - **`createOnDemandMongoDatabaseBackup`**: Use createOnDemandMongoDatabaseBackupV2 instead.
+- **`createRole`**: This endpoint is deprecated.
 - **`createWebhook`**: Use createWebhookV2 instead.
 - **`deleteCertificate`**: Deprecated. Use deleteGlobalCertificate instead.
 - **`deleteCloudWorkloadSnapshot`**: Use deleteUnmanagedSnapshots instead.
@@ -56,9 +61,12 @@ This document lists all deprecated fields, queries, mutations, and enum values i
 - **`downloadReportPdfAsync`**: Use downloadFile instead.
 - **`exportO365Mailbox`**: Use exportO365MailboxV2 instead.
 - **`gcpCloudAccountAddManualAuthProject`**: Use addGcpCloudAccountManualAuthProject instead.
+- **`gcpCloudAccountAddProjects`**: Use addGcpCloudAccountProjectsAsync instead.
+- **`gcpCloudAccountUpgradeProjects`**: Use updateGcpCloudAccountProjectsAsync instead.
 - **`listCidrsForComputeSetting`**: This endpoint is no longer maintained and will be removed.
 - **`recoverCloudDirectPath`**: Not in use. Use recoverCloudDirectMultiPaths instead.
 - **`restoreO365Mailbox`**: Use restoreO365MailboxV2 instead.
+- **`seedInitialPolicies`**: Use seedEnabledPolicies instead.
 - **`setIpWhitelistEnabled`**: use `setIpWhitelistSetting` instead.
 - **`setMissingClusterStatus`**: Missing cluster management has been retired.
 - **`stopJobInstance`**: Use stopJobInstanceFromEventSeries instead.
@@ -71,9 +79,8 @@ This document lists all deprecated fields, queries, mutations, and enum values i
 - **`updateIpWhitelist`**: use `setIpWhitelistSetting` to update the mode, or `update/add/deleteIpWhitelistEntries` to update entries instead.
 - **`updateManagedIdentities`**: Use updateManagedIdentitiesAsync instead.
 - **`updateRcsAutomaticTargetMapping`**: This mutation is deprecated. Please use updateRcvLocationsFromTemplate.
+- **`updateRole`**: This endpoint is deprecated.
 - **`updateWebhook`**: Use updateWebhookV2 instead.
-- **`vsphereExcludeVmDisks`**: Deprecated. Use excludeVmDisks instead.
-- **`vsphereVmRecoverFiles`**: Deprecated. Use vsphereVmRecoverFilesNew instead.
 
 ### Deprecated Type Fields
 
@@ -558,10 +565,6 @@ This document lists all deprecated fields, queries, mutations, and enum values i
 
 - **`configs`**: Deprecated in favor of BYOK8s, use exocomputeConfigs instead.
 
-#### Vcd
-
-- **`allVcenterConnectionStatuses`**: Use allVcenterConnectionsInfo instead.
-
 #### VsphereComputeCluster
 
 - **`hasDatastoresForRecovery`**: Use recoveryTargetDescendantConnection field directly instead
@@ -586,6 +589,7 @@ This document lists all deprecated fields, queries, mutations, and enum values i
 - **`ACTIVE_DIRECTORY_FOREST_RECOVERY_TABLE`**: Use EVENT_SERIES_BY_CLUSTER_TYPE_TABLE.
 - **`ACTIVE_DIRECTORY_FOREST_RECOVERY_TABLE`**: Use EVENT_SERIES_BY_OBJECT_TYPE_TABLE.
 - **`ACTIVE_DIRECTORY_FOREST_RECOVERY_TABLE`**: Use EVENT_SERIES_BY_TIME_TABLE.
+- **`ANTHROPIC_APPS`**: Use ANTHROPIC_APPS instead.
 - **`ARCHIVAL`**: Use `CLOUD_NATIVE_CONFIG_PROTECTION` instead.
 - **`ARCHIVAL_LOCATION_DELETE`**: Nothing creates this type; it will be removed in a future release.
 - **`ARCHIVAL_LOCATION_DELETE`**: Nothing creates this type; it will be removed in a future release.
@@ -603,6 +607,7 @@ This document lists all deprecated fields, queries, mutations, and enum values i
 - **`AZURE_DEVOPS_REPO_SIZE`**: This field is deprecated and no longer used.
 - **`CATEGORY_UNSPECIFIED`**: Use AUTHENTICATION_AND_SECRET_MANAGEMENT instead.
 - **`CLOUDDIRECT_NAS_NAMESPACE_VENDOR_TYPE`**: Not implemented - no longer used.
+- **`CLOUD_ACCOUNT_UPDATE`**: Use CLUSTER_PEER_TOKEN_GET_AND_SET instead. Removed 2027/09/28.
 - **`CLOUD_DIRECT`**: Nothing returns this sync type; it will be removed in a future release.
 - **`CLUSTER_DISCONNECTED`**: This reason is no longer used.
 - **`COLDLINE_GCP`**: Use STANDARD_GCP instead.

@@ -17,6 +17,7 @@ Creates reader type for S3Compatible archival location on a CDM cluster.
 ```graphql
 mutation CreateS3CompatibleReaderTarget($input: CreateS3CompatibleReaderTargetInput!) {
   createS3CompatibleReaderTarget(input: $input) {
+    archivalLocationPurpose
     clusterName
     consumedBytes
     failedTasks
@@ -58,11 +59,11 @@ mutation CreateS3CompatibleReaderTarget($input: CreateS3CompatibleReaderTargetIn
 {
   "data": {
     "createS3CompatibleReaderTarget": {
+      "archivalLocationPurpose": "ADO",
       "clusterName": "example-string",
       "consumedBytes": 0,
       "failedTasks": 0,
-      "id": "example-string",
-      "isActive": true
+      "id": "example-string"
     }
   }
 }

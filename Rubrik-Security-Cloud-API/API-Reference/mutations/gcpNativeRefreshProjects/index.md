@@ -1,12 +1,12 @@
 # gcpNativeRefreshProjects
 
-Trigger GCP native refresh project job for the given project IDs
+Trigger refresh of the given GCP projects.
 
 ## Arguments
 
-| Argument           | Type                                                                                                                                                       | Description                           |
-| ------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------- |
-| input *(required)* | [GcpNativeRefreshProjectsInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/GcpNativeRefreshProjectsInput/index.md)! | Input to refresh GCP native projects. |
+| Argument           | Type                                                                                                                                                       | Description                    |
+| ------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------ |
+| input *(required)* | [GcpNativeRefreshProjectsInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/GcpNativeRefreshProjectsInput/index.md)! | Input to refresh GCP projects. |
 
 ## Returns
 

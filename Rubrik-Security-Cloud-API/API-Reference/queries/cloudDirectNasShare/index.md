@@ -30,6 +30,7 @@ query CloudDirectNasShare($fid: UUID!) {
     isNasShareManuallyAdded
     isRelic
     isStale
+    legallyHeldSnapshotCount
     name
     namespaceId
     ncdPolicyName

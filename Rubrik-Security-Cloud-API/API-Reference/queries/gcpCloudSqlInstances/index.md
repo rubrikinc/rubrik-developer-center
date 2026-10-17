@@ -4,15 +4,15 @@ List of GCP Cloud SQL instances.
 
 ## Arguments
 
-| Argument                | Type                                                                                                                                                     | Description                                                              |
-| ----------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------ |
-| first                   | Int                                                                                                                                                      | Returns the first n elements from the list.                              |
-| after                   | String                                                                                                                                                   | Returns the elements in the list that occur after the specified cursor.  |
-| last                    | Int                                                                                                                                                      | Returns the last n elements from the list.                               |
-| before                  | String                                                                                                                                                   | Returns the elements in the list that occur before the specified cursor. |
-| sortBy                  | [GcpCloudSqlInstanceSortFields](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/GcpCloudSqlInstanceSortFields/index.md) | Sort fields for list of GCP Cloud SQL instances.                         |
-| sortOrder               | [SortOrder](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/SortOrder/index.md)                                         | Sorts the order of results.                                              |
-| cloudSqlInstanceFilters | [GcpCloudSqlInstanceFilters](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/GcpCloudSqlInstanceFilters/index.md)      | Filters for list of GCP Cloud SQL instances.                             |
+| Argument                | Type                                                                                                                                                     | Description                                                                                                                             |
+| ----------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
+| first                   | Int                                                                                                                                                      | Returns the first n elements from the list.                                                                                             |
+| after                   | String                                                                                                                                                   | An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results.       |
+| last                    | Int                                                                                                                                                      | Returns the last n elements from the list.                                                                                              |
+| before                  | String                                                                                                                                                   | An opaque cursor returned from a previous query's startCursor field. Pass this value verbatim to retrieve the previous page of results. |
+| sortBy                  | [GcpCloudSqlInstanceSortFields](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/GcpCloudSqlInstanceSortFields/index.md) | Sort fields for list of GCP Cloud SQL instances.                                                                                        |
+| sortOrder               | [SortOrder](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/SortOrder/index.md)                                         | Sorts the order of results.                                                                                                             |
+| cloudSqlInstanceFilters | [GcpCloudSqlInstanceFilters](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/GcpCloudSqlInstanceFilters/index.md)      | Filters for list of GCP Cloud SQL instances.                                                                                            |
 
 ## Returns
 
@@ -37,6 +37,7 @@ query {
       isProtectionOnboarded
       isRelic
       kmsKey
+      legallyHeldSnapshotCount
       name
       nativeId
       nativeName

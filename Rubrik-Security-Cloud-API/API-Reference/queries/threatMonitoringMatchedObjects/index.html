@@ -953,7 +953,7 @@
 <tr>
 <td>after</td>
 <td>String</td>
-<td>Returns the elements in the list that occur after the specified cursor.</td>
+<td>An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results.</td>
 </tr>
 <tr>
 <td>last</td>
@@ -963,12 +963,12 @@
 <tr>
 <td>before</td>
 <td>String</td>
-<td>Returns the elements in the list that occur before the specified cursor.</td>
+<td>An opaque cursor returned from a previous query's startCursor field. Pass this value verbatim to retrieve the previous page of results.</td>
 </tr>
 <tr>
 <td>beginTime</td>
 <td><a href="../../types/scalars/DateTime/">DateTime</a></td>
-<td>Filters results that started after this time.</td>
+<td>Filters results that started after this time. Unset means no lower bound, except for accounts with DTA dashboard enhancements enabled, where it is required and its absence returns an error.</td>
 </tr>
 <tr>
 <td>endTime</td>
@@ -999,6 +999,11 @@
 <td>severityFilter</td>
 <td>[<a href="../../types/enums/MatchSeverity/">MatchSeverity</a>!]</td>
 <td>Filters according to the severity of the match.</td>
+</tr>
+<tr>
+<td>muteStatusFilter</td>
+<td><a href="../../types/enums/ThreatMonitoringMuteStatusFilter/">ThreatMonitoringMuteStatusFilter</a></td>
+<td>Filter by whether the matched object is muted for Threat Monitoring notifications. Unset/UNSPECIFIED applies no filter.</td>
 </tr>
 </tbody>
 </table>

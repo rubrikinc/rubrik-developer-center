@@ -23,6 +23,7 @@ query K8sNamespace($fid: UUID!) {
     id
     isRelic
     k8sClusterId
+    legallyHeldSnapshotCount
     name
     namespaceName
     numPvcs

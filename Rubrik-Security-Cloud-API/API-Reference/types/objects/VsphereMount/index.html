@@ -937,32 +937,32 @@
 <tr>
 <td>attachingDiskCount</td>
 <td>Int</td>
-<td></td>
+<td>Flattened from the CDM mount spec.</td>
 </tr>
 <tr>
 <td>authorizedOperations</td>
 <td><a href="../AuthorizedOperations/">AuthorizedOperations</a>!</td>
-<td></td>
+<td>Operations the caller is authorized to perform on the Live Mount.</td>
 </tr>
 <tr>
 <td>cdmId</td>
 <td>String!</td>
-<td></td>
+<td>ID of the Live Mount on the Rubrik cluster.</td>
 </tr>
 <tr>
 <td>cluster</td>
 <td><a href="../Cluster/">Cluster</a>!</td>
-<td></td>
+<td>Cluster hosting this mount.</td>
 </tr>
 <tr>
 <td>clusterName</td>
 <td>String!</td>
-<td></td>
+<td>Name of the Rubrik cluster hosting the Live Mount.</td>
 </tr>
 <tr>
 <td>hasAttachingDisk</td>
 <td>Boolean</td>
-<td></td>
+<td>Specifies whether the Live Mount attaches disks to an existing virtual machine.</td>
 </tr>
 <tr>
 <td>host</td>
@@ -972,27 +972,27 @@
 <tr>
 <td>id</td>
 <td><a href="../../scalars/UUID/">UUID</a>!</td>
-<td></td>
+<td>RSC ID of the Live Mount.</td>
 </tr>
 <tr>
 <td>isReady</td>
 <td>Boolean!</td>
-<td></td>
+<td>Specifies whether the mounted virtual machine is ready.</td>
 </tr>
 <tr>
 <td>migrateDatastoreRequestId</td>
 <td>String</td>
-<td></td>
+<td>ID of the async request that migrates the Live Mount to another datastore.</td>
 </tr>
 <tr>
 <td>mountRequestId</td>
 <td>String</td>
-<td></td>
+<td>ID of the async request that created the Live Mount.</td>
 </tr>
 <tr>
 <td>mountTimestamp</td>
 <td><a href="../../scalars/DateTime/">DateTime</a></td>
-<td></td>
+<td>Time of the Live Mount, as recorded in the CDM mount spec.</td>
 </tr>
 <tr>
 <td>newVm</td>
@@ -1002,7 +1002,7 @@
 <tr>
 <td>newVmName</td>
 <td>String</td>
-<td></td>
+<td>Name of the virtual machine created by the Live Mount.</td>
 </tr>
 <tr>
 <td>sourceSnapshot</td>
@@ -1017,12 +1017,12 @@
 <tr>
 <td>status</td>
 <td><a href="../../enums/VsphereMountStatus/">VsphereMountStatus</a>!</td>
-<td></td>
+<td>Status of the Live Mount.</td>
 </tr>
 <tr>
 <td>unmountRequestId</td>
 <td>String</td>
-<td></td>
+<td>ID of the async request that removes the Live Mount.</td>
 </tr>
 </tbody>
 </table>

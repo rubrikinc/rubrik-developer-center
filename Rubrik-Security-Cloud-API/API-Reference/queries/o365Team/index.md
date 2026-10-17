@@ -20,6 +20,7 @@ query O365Team($snappableFid: UUID!) {
     authorizedOperations
     id
     isRelic
+    legallyHeldSnapshotCount
     membersCount
     name
     naturalId
@@ -51,9 +52,9 @@ query O365Team($snappableFid: UUID!) {
       ],
       "id": "00000000-0000-0000-0000-000000000000",
       "isRelic": true,
+      "legallyHeldSnapshotCount": 0,
       "membersCount": 0,
       "name": "example-string",
-      "naturalId": "example-string",
       "allOrgs": [
         {
           "allUrls": [

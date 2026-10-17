@@ -931,7 +931,7 @@
 <tr>
 <td>kmsSpec</td>
 <td><a href="../KmsSpecInput/">KmsSpecInput</a></td>
-<td>Azure KMS configuration, excluding the app secret.</td>
+<td>Azure KMS configuration, excluding the app secret. Mutually exclusive with uem_kms_spec; enforced in the service handler.</td>
 </tr>
 <tr>
 <td>prioritizedOnboardingSpec</td>
@@ -957,6 +957,11 @@
 <td>tenantId</td>
 <td>String!</td>
 <td>ID of the Azure tenant.</td>
+</tr>
+<tr>
+<td>uemKmsSpec</td>
+<td><a href="../UemKmsSpecInput/">UemKmsSpecInput</a></td>
+<td>UEM-managed KMS configuration. Set when the customer opts for a UEM-managed KMS. Mutually exclusive with kms_spec.</td>
 </tr>
 </tbody>
 </table>

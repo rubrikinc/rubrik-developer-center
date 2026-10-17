@@ -1022,6 +1022,11 @@
 <td>Path node of the effective SLA Domain source.</td>
 </tr>
 <tr>
+<td>futureLegalHoldInfo</td>
+<td><a href="../FutureLegalHoldInfo/">FutureLegalHoldInfo</a></td>
+<td>Future legal hold rule configured for this object, if any.</td>
+</tr>
+<tr>
 <td>hostName</td>
 <td>String!</td>
 <td>IP address of Nutanix Prism Central.</td>
@@ -1050,6 +1055,11 @@
 <td>latestUserNote</td>
 <td><a href="../LatestUserNote/">LatestUserNote</a></td>
 <td>Latest user note information.</td>
+</tr>
+<tr>
+<td>legallyHeldSnapshotCount</td>
+<td>Int</td>
+<td>Number of snapshots on legal hold for this object.</td>
 </tr>
 <tr>
 <td>logicalChildConnection</td>
@@ -1189,7 +1199,19 @@
 <td>descendantConnection</td>
 <td>after</td>
 <td>String</td>
-<td>Returns the elements in the list that occur after the specified cursor.</td>
+<td>An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results.</td>
+</tr>
+<tr>
+<td>descendantConnection</td>
+<td>last</td>
+<td>Int</td>
+<td>Returns the last n elements from the list.</td>
+</tr>
+<tr>
+<td>descendantConnection</td>
+<td>before</td>
+<td>String</td>
+<td>An opaque cursor returned from a previous query's startCursor field. Pass this value verbatim to retrieve the previous page of results.</td>
 </tr>
 <tr>
 <td>descendantConnection</td>
@@ -1231,7 +1253,19 @@
 <td>logicalChildConnection</td>
 <td>after</td>
 <td>String</td>
-<td>Returns the elements in the list that occur after the specified cursor.</td>
+<td>An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results.</td>
+</tr>
+<tr>
+<td>logicalChildConnection</td>
+<td>last</td>
+<td>Int</td>
+<td>Returns the last n elements from the list.</td>
+</tr>
+<tr>
+<td>logicalChildConnection</td>
+<td>before</td>
+<td>String</td>
+<td>An opaque cursor returned from a previous query's startCursor field. Pass this value verbatim to retrieve the previous page of results.</td>
 </tr>
 <tr>
 <td>logicalChildConnection</td>
@@ -1303,7 +1337,19 @@
 <td>nutanixClusters</td>
 <td>after</td>
 <td>String</td>
-<td>Returns the elements in the list that occur after the specified cursor.</td>
+<td>An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results.</td>
+</tr>
+<tr>
+<td>nutanixClusters</td>
+<td>last</td>
+<td>Int</td>
+<td>Returns the last n elements from the list.</td>
+</tr>
+<tr>
+<td>nutanixClusters</td>
+<td>before</td>
+<td>String</td>
+<td>An opaque cursor returned from a previous query's startCursor field. Pass this value verbatim to retrieve the previous page of results.</td>
 </tr>
 <tr>
 <td>nutanixClusters</td>

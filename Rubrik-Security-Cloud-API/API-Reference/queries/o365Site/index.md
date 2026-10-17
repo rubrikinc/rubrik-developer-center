@@ -22,6 +22,7 @@ query O365Site($snappableFid: UUID!) {
     id
     isRansomwareInvestigationEnabled
     isRelic
+    legallyHeldSnapshotCount
     name
     numWorkloadDescendants
     objectId
@@ -56,7 +57,7 @@ query O365Site($snappableFid: UUID!) {
       "id": "00000000-0000-0000-0000-000000000000",
       "isRansomwareInvestigationEnabled": true,
       "isRelic": true,
-      "name": "example-string",
+      "legallyHeldSnapshotCount": 0,
       "allOrgs": [
         {
           "allUrls": [

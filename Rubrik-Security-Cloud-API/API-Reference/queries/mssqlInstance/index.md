@@ -30,6 +30,7 @@ query MssqlInstance($fid: UUID!) {
     id
     isClusterInstance
     isReplica
+    legallyHeldSnapshotCount
     logBackupFrequencyInSeconds
     logBackupRetentionInHours
     name

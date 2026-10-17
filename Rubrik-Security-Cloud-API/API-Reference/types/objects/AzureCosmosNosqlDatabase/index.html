@@ -967,7 +967,7 @@
 </tr>
 <tr>
 <td>cosmosDbAccountId</td>
-<td>String!</td>
+<td><a href="../../scalars/UUID/">UUID</a>!</td>
 <td>Rubrik ID of the Azure Cosmos NoSQL account that owns the database.</td>
 </tr>
 <tr>
@@ -991,6 +991,11 @@
 <td>Path node of the effective SLA Domain source.</td>
 </tr>
 <tr>
+<td>futureLegalHoldInfo</td>
+<td><a href="../FutureLegalHoldInfo/">FutureLegalHoldInfo</a></td>
+<td>Future legal hold rule configured for this object, if any.</td>
+</tr>
+<tr>
 <td>id</td>
 <td><a href="../../scalars/UUID/">UUID</a>!</td>
 <td>ID of the hierarchy object.</td>
@@ -999,6 +1004,11 @@
 <td>isProtectable</td>
 <td>Boolean!</td>
 <td>Specifies whether the Azure Cosmos NoSQL database is protectable.</td>
+</tr>
+<tr>
+<td>legallyHeldSnapshotCount</td>
+<td>Int</td>
+<td>Number of snapshots on legal hold for this object.</td>
 </tr>
 <tr>
 <td>logicalPath</td>
@@ -1048,7 +1058,7 @@
 <tr>
 <td>rscPendingObjectPauseAssignment</td>
 <td><a href="../../enums/PendingObjectPauseAssignmentStatus/">PendingObjectPauseAssignmentStatus</a></td>
-<td>Object pause pending assignment details for RSC objects.</td>
+<td>Pending pause or unpause assignment for RSC-native objects.</td>
 </tr>
 <tr>
 <td>securityMetadata</td>

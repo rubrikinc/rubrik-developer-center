@@ -31,6 +31,7 @@ query KubernetesProtectionSet($fid: UUID!) {
     k8sClusterName
     k8sClusterUuid
     labelSelector
+    legallyHeldSnapshotCount
     name
     namespace
     namespaceExcludePatterns

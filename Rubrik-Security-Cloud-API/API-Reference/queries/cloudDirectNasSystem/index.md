@@ -27,6 +27,7 @@ query CloudDirectNasSystem($fid: UUID!) {
     isRelic
     lastRefreshTime
     lastStatus
+    legallyHeldSnapshotCount
     name
     namespaceCount
     nfs4Hosts

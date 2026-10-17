@@ -16,4 +16,5 @@ List of exo-task images in the bundle.
 
 - [AWSExoTaskImageBundle.bundleImages](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AWSExoTaskImageBundle/index.md)
 - [AzureExoTaskImageBundle.bundleImages](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AzureExoTaskImageBundle/index.md)
+- [GcpExoTaskImageBundle.bundleImages](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/GcpExoTaskImageBundle/index.md)
 - [GetExotaskImageBundleReply.bundleImages](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/GetExotaskImageBundleReply/index.md)

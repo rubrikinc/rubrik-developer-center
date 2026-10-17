@@ -1,12 +1,12 @@
 # exchangeDatabase
 
-Details of an Exchange Database for a given fid.
+Single Exchange Database lookup by FID.
 
 ## Arguments
 
-| Argument         | Type                                                                                                      | Description                 |
-| ---------------- | --------------------------------------------------------------------------------------------------------- | --------------------------- |
-| fid *(required)* | [UUID](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/UUID/index.md)! | Rubrik UUID for the object. |
+| Argument         | Type                                                                                                      | Description                               |
+| ---------------- | --------------------------------------------------------------------------------------------------------- | ----------------------------------------- |
+| fid *(required)* | [UUID](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/UUID/index.md)! | FID of the Exchange Database to retrieve. |
 
 ## Returns
 
@@ -25,6 +25,7 @@ query ExchangeDatabase($fid: UUID!) {
     id
     isRelic
     isReplica
+    legallyHeldSnapshotCount
     name
     numWorkloadDescendants
     objectType

@@ -30,6 +30,5 @@ Response returned for successful API requests.
 - [mutation: updateVsphereVm](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/updateVsphereVm/index.md)
 - [mutation: updateVsphereVmNew](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/updateVsphereVmNew/index.md)
 - [mutation: upgradeIoFilter](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/upgradeIoFilter/index.md)
-- [mutation: vsphereExcludeVmDisks](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/vsphereExcludeVmDisks/index.md)
 - [mutation: vsphereVmRegisterAgent](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/vsphereVmRegisterAgent/index.md)
 - [mutation: vsphereVmRegisterAgentWithOrg](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/vsphereVmRegisterAgentWithOrg/index.md)

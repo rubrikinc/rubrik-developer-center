@@ -934,7 +934,7 @@
 
 
 <h1 id="exchangelivemounts">exchangeLiveMounts</h1>
-<p>Paginated list of Exchange Database live mounts.</p>
+<p>List of Exchange Database live mounts.</p>
 <h2 id="arguments">Arguments</h2>
 <table>
 <thead>
@@ -953,17 +953,27 @@
 <tr>
 <td>after</td>
 <td>String</td>
-<td>Returns the elements in the list that occur after the specified cursor.</td>
+<td>An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results.</td>
+</tr>
+<tr>
+<td>last</td>
+<td>Int</td>
+<td>Returns the last n elements from the list.</td>
+</tr>
+<tr>
+<td>before</td>
+<td>String</td>
+<td>An opaque cursor returned from a previous query's startCursor field. Pass this value verbatim to retrieve the previous page of results.</td>
 </tr>
 <tr>
 <td>filters</td>
 <td>[<a href="../../types/inputs/ExchangeLiveMountFilterInput/">ExchangeLiveMountFilterInput</a>!]</td>
-<td>Filter for exchange live mounts.</td>
+<td>Filters for Exchange Database live mounts.</td>
 </tr>
 <tr>
 <td>sortBy</td>
 <td><a href="../../types/inputs/ExchangeLiveMountSortByInput/">ExchangeLiveMountSortByInput</a></td>
-<td>Sort by argument for exchange live mounts.</td>
+<td>Sort by argument for Exchange Database live mounts.</td>
 </tr>
 </tbody>
 </table>

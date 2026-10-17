@@ -1,6 +1,6 @@
 # updateGcpTarget
 
-*No description available.*
+Edits a GCP archival location's mutable fields.
 
 ## Arguments
 
@@ -17,6 +17,7 @@
 ```graphql
 mutation UpdateGcpTarget($input: UpdateGcpTargetInput!) {
   updateGcpTarget(input: $input) {
+    archivalLocationPurpose
     clusterName
     consumedBytes
     failedTasks
@@ -48,11 +49,11 @@ mutation UpdateGcpTarget($input: UpdateGcpTargetInput!) {
 {
   "data": {
     "updateGcpTarget": {
+      "archivalLocationPurpose": "ADO",
       "clusterName": "example-string",
       "consumedBytes": 0,
       "failedTasks": 0,
-      "id": "example-string",
-      "isActive": true
+      "id": "example-string"
     }
   }
 }

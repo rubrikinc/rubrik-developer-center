@@ -1,6 +1,6 @@
 # userFile
 
-User file.
+A single file that can be downloaded.
 
 ## Arguments
 

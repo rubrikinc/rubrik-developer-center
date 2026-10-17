@@ -4,12 +4,14 @@ Volume Group Live Mount Connection.
 
 ## Arguments
 
-| Argument | Type                                                                                                                                                               | Description                                                             |
-| -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------- |
-| first    | Int                                                                                                                                                                | Returns the first n elements from the list.                             |
-| after    | String                                                                                                                                                             | Returns the elements in the list that occur after the specified cursor. |
-| filters  | \[[VolumeGroupLiveMountFilterInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/VolumeGroupLiveMountFilterInput/index.md)!\] | Filter for volume group live mounts.                                    |
-| sortBy   | [VolumeGroupLiveMountSortByInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/VolumeGroupLiveMountSortByInput/index.md)      | Sort by argument for volume group live mounts.                          |
+| Argument | Type                                                                                                                                                               | Description                                                                                                                             |
+| -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------- |
+| first    | Int                                                                                                                                                                | Returns the first n elements from the list.                                                                                             |
+| after    | String                                                                                                                                                             | An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results.       |
+| last     | Int                                                                                                                                                                | Returns the last n elements from the list.                                                                                              |
+| before   | String                                                                                                                                                             | An opaque cursor returned from a previous query's startCursor field. Pass this value verbatim to retrieve the previous page of results. |
+| filters  | \[[VolumeGroupLiveMountFilterInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/VolumeGroupLiveMountFilterInput/index.md)!\] | Filter for volume group live mounts.                                                                                                    |
+| sortBy   | [VolumeGroupLiveMountSortByInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/VolumeGroupLiveMountSortByInput/index.md)      | Sort by argument for volume group live mounts.                                                                                          |
 
 ## Returns
 

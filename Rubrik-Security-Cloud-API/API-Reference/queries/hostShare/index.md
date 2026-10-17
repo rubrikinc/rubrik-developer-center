@@ -22,6 +22,7 @@ query HostShare($fid: UUID!) {
     id
     isChangelistEnabled
     isReplica
+    legallyHeldSnapshotCount
     name
     nasMigrationInfo
     nasShareType
@@ -51,7 +52,7 @@ query HostShare($fid: UUID!) {
       "id": "00000000-0000-0000-0000-000000000000",
       "isChangelistEnabled": true,
       "isReplica": true,
-      "name": "example-string",
+      "legallyHeldSnapshotCount": 0,
       "allOrgs": [
         {
           "allUrls": [

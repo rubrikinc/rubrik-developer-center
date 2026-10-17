@@ -28,6 +28,7 @@ query VSphereDatastore($fid: UUID!) {
     isLocal
     isReplica
     isStandaloneDatastore
+    legallyHeldSnapshotCount
     name
     numWorkloadDescendants
     objectType

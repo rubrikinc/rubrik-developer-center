@@ -24,6 +24,7 @@ query MssqlAvailabilityGroup($fid: UUID!) {
     hostLogRetention
     id
     isReplica
+    legallyHeldSnapshotCount
     logBackupFrequencyInSeconds
     logBackupRetentionInHours
     name

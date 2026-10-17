@@ -35,6 +35,7 @@ query AwsNativeEc2Instance($ec2InstanceRubrikId: UUID!) {
     isPreOrPostScriptEnabled
     isProtectable
     isRelic
+    legallyHeldSnapshotCount
     name
     nativeName
     numWorkloadDescendants

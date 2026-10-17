@@ -30,11 +30,6 @@ mutation AddClusterNodes($AddClusterNodesInput: AddClusterNodesInput!) {
     "nodesMap": [
       {
         "value": {
-          "ipmiIpConfig": {
-            "address": "example-string",
-            "gateway": "example-string",
-            "netmask": "example-string"
-          },
           "managementIpConfig": {
             "address": "example-string",
             "gateway": "example-string",

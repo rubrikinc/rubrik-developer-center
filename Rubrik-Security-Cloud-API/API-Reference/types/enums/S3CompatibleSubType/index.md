@@ -31,6 +31,7 @@ S3CompatibleSubType enum specifies the sub location type of a S3Compatible locat
 | IBM_SPECTRUM             | IBM Spectrum subtype.             |
 | IIJ_GIO                  | IIJ GIO subtype.                  |
 | ILAND_CLOUD              | Iland Cloud subtype.              |
+| INFINIDAT_INFINIBOX      | Infinidat InfiniBox subtype.      |
 | IRONCLOUD                | IronCloud subtype.                |
 | MINIO                    | MinIO subtype.                    |
 | NETAPPSG                 | NetAppSG subtype.                 |

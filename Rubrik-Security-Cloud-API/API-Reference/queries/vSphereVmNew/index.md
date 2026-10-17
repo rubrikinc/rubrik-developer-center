@@ -1,6 +1,6 @@
 # vSphereVmNew
 
-*No description available.*
+Details of the vSphere virtual machine with the given Rubrik ID.
 
 ## Arguments
 
@@ -34,6 +34,7 @@ query VSphereVmNew($fid: UUID!) {
     isBlueprintChild
     isRelic
     isReplica
+    legallyHeldSnapshotCount
     name
     numWorkloadDescendants
     objectType

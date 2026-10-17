@@ -21,6 +21,7 @@ query O365Onedrive($snappableFid: UUID!) {
     id
     isRansomwareInvestigationEnabled
     isRelic
+    legallyHeldSnapshotCount
     name
     naturalId
     numWorkloadDescendants
@@ -55,8 +56,8 @@ query O365Onedrive($snappableFid: UUID!) {
       "id": "00000000-0000-0000-0000-000000000000",
       "isRansomwareInvestigationEnabled": true,
       "isRelic": true,
+      "legallyHeldSnapshotCount": 0,
       "name": "example-string",
-      "naturalId": "example-string",
       "allOrgs": [
         {
           "allUrls": [

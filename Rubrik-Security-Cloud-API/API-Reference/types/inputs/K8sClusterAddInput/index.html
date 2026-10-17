@@ -979,6 +979,11 @@
 <td>Supported in v9.2+ Specifies whether to enable automatic protection set creation for the Kubernetes cluster.</td>
 </tr>
 <tr>
+<td>kubeSystemUid</td>
+<td>String</td>
+<td>UID of the kube-system namespace, the stable identifier of the physical Kubernetes cluster. For manifest and Helm onboarding the api-handler reads it from the in-cluster Kubernetes API and passes it here. For kubeconfig onboarding CDM reads it itself and ignores this field. Omit if unavailable; CDM populates it on the first refresh.</td>
+</tr>
+<tr>
 <td>kubeconfig</td>
 <td>String</td>
 <td>Supported in v9.0+ Kubeconfig is a YAML string to store Kubernetes cluster authentication information. You can get this config file directly from the cluster administrator or from a cloud platform if you are using managed Kubernetes cluster.</td>

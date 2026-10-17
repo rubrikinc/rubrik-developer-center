@@ -45,4 +45,4 @@ Represents the object-level backup window status of a hierarchy object.
 - [AzureNativeResourceGroup.objectBackupWindow](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AzureNativeResourceGroup/index.md)
 - [AzureNativeResourceGroupBase.objectBackupWindow](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AzureNativeResourceGroupBase/index.md)
 - [AzureNativeSubscription.objectBackupWindow](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AzureNativeSubscription/index.md)
-- *…and 328 more*
+- *…and 332 more*

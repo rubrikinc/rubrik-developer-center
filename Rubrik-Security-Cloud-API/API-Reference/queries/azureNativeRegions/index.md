@@ -7,9 +7,9 @@ Retrieves a paginated list of all Azure Native Regions.
 | Argument                  | Type                                                                                                                                                 | Description                                                                                                                                  |
 | ------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
 | first                     | Int                                                                                                                                                  | Returns the first n elements from the list.                                                                                                  |
-| after                     | String                                                                                                                                               | Returns the elements in the list that occur after the specified cursor.                                                                      |
+| after                     | String                                                                                                                                               | An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results.            |
 | last                      | Int                                                                                                                                                  | Returns the last n elements from the list.                                                                                                   |
-| before                    | String                                                                                                                                               | Returns the elements in the list that occur before the specified cursor.                                                                     |
+| before                    | String                                                                                                                                               | An opaque cursor returned from a previous query's startCursor field. Pass this value verbatim to retrieve the previous page of results.      |
 | sortBy                    | [AzureNativeRegionSortFields](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/AzureNativeRegionSortFields/index.md) | Sort fields for list of Azure regions.                                                                                                       |
 | sortOrder                 | [SortOrder](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/SortOrder/index.md)                                     | Sorts the order of results.                                                                                                                  |
 | regionFilters             | [AzureNativeRegionFilters](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/AzureNativeRegionFilters/index.md)      | Filters for list of Azure regions.                                                                                                           |
@@ -27,6 +27,7 @@ Retrieves a paginated list of all Azure Native Regions.
 query {
   azureNativeRegions(first: 10) {
     nodes {
+      azureCosmosNosqlContainerCount
       azurePostgresFlexibleServerCount
       azureSqlDatabaseDbCount
       azureSqlManagedInstanceDbCount
@@ -34,6 +35,7 @@ query {
       azureSubscriptionId
       disksCount
       id
+      legallyHeldSnapshotCount
       name
       numWorkloadDescendants
       objectType
@@ -61,12 +63,12 @@ query {
       "nodes": [
         [
           {
+            "azureCosmosNosqlContainerCount": 0,
             "azurePostgresFlexibleServerCount": 0,
             "azureSqlDatabaseDbCount": 0,
             "azureSqlManagedInstanceDbCount": 0,
             "azureStorageAccountCount": 0,
-            "azureSubscriptionId": "example-string",
-            "disksCount": 0
+            "azureSubscriptionId": "example-string"
           }
         ]
       ],

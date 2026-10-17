@@ -17,6 +17,7 @@ Creates Tape archival location on a CDM cluster.
 ```graphql
 mutation CreateTapeTarget($input: CreateTapeTargetInput!) {
   createTapeTarget(input: $input) {
+    archivalLocationPurpose
     clusterName
     consumedBytes
     failedTasks
@@ -56,11 +57,11 @@ mutation CreateTapeTarget($input: CreateTapeTargetInput!) {
 {
   "data": {
     "createTapeTarget": {
+      "archivalLocationPurpose": "ADO",
       "clusterName": "example-string",
       "consumedBytes": 0,
       "failedTasks": 0,
-      "id": "example-string",
-      "isActive": true
+      "id": "example-string"
     }
   }
 }

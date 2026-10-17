@@ -24,6 +24,7 @@ query GcpNativeGceInstance($fid: UUID!) {
     isExocomputeConfigured
     isProtectionOnboarded
     isRelic
+    legallyHeldSnapshotCount
     machineType
     name
     nativeId

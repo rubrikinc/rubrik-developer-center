@@ -33,6 +33,7 @@ query AwsNativeRdsInstance($rdsInstanceRubrikId: UUID!) {
     isMultiAz
     isProtectable
     isRelic
+    legallyHeldSnapshotCount
     maintenanceWindow
     name
     nativeName

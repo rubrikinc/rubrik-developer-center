@@ -23,6 +23,7 @@ query HypervScvmm($fid: UUID!) {
     hostName
     id
     isReplica
+    legallyHeldSnapshotCount
     name
     numWorkloadDescendants
     objectType

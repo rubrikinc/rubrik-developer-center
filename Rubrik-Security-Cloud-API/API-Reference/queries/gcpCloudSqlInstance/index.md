@@ -30,6 +30,7 @@ query GcpCloudSqlInstance($gcpCloudSqlInstanceRubrikId: UUID!) {
     isProtectionOnboarded
     isRelic
     kmsKey
+    legallyHeldSnapshotCount
     name
     nativeId
     nativeName

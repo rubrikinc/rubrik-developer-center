@@ -1,6 +1,6 @@
 # allUserFiles
 
-All user files.
+All files the user has access to.
 
 ## Arguments
 

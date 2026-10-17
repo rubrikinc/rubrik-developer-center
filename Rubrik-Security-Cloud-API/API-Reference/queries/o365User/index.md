@@ -21,6 +21,7 @@ query O365User($fid: UUID!) {
     emailAddress
     id
     isRelic
+    legallyHeldSnapshotCount
     name
     numWorkloadDescendants
     objectType
@@ -47,8 +48,8 @@ query O365User($fid: UUID!) {
       "emailAddress": "example-string",
       "id": "00000000-0000-0000-0000-000000000000",
       "isRelic": true,
+      "legallyHeldSnapshotCount": 0,
       "name": "example-string",
-      "numWorkloadDescendants": 0,
       "allOrgs": [
         {
           "allUrls": [

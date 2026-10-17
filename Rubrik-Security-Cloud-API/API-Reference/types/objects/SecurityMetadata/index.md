@@ -4,14 +4,15 @@ Represents security metadata of a workload.
 
 ## Fields
 
-| Field               | Type                                                                                                                                 | Description                                                             |
-| ------------------- | ------------------------------------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------- |
-| dataTypeResults     | \[[DataTypeResults](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/DataTypeResults/index.md)!\]! | List of identified data types with their total and violated hit counts. |
-| highSensitiveHits   | [Long](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/Long/index.md)!                            | Total hits with high sensitivity.                                       |
-| isLaminarEnabled    | Boolean!                                                                                                                             | True if Laminar is enabled for a given workload.                        |
-| lowSensitiveHits    | [Long](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/Long/index.md)!                            | Total hits with low sensitivity.                                        |
-| mediumSensitiveHits | [Long](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/Long/index.md)!                            | Total hits with medium sensitivity.                                     |
-| sensitivityStatus   | [SensitivityStatus](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/SensitivityStatus/index.md)!    | Sensitivity status of a workload.                                       |
+| Field                  | Type                                                                                                                                         | Description                                                                                                                                                                          |
+| ---------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| dataTypeResults        | \[[DataTypeResults](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/DataTypeResults/index.md)!\]!         | List of identified data types with their total and violated hit counts.                                                                                                              |
+| highSensitiveHits      | [Long](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/Long/index.md)!                                    | Total hits with high sensitivity.                                                                                                                                                    |
+| isLaminarEnabled       | Boolean!                                                                                                                                     | True if Laminar is enabled for a given workload.                                                                                                                                     |
+| lowSensitiveHits       | [Long](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/Long/index.md)!                                    | Total hits with low sensitivity.                                                                                                                                                     |
+| mediumSensitiveHits    | [Long](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/Long/index.md)!                                    | Total hits with medium sensitivity.                                                                                                                                                  |
+| securityFeaturesStatus | [SecurityFeaturesStatus](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/SecurityFeaturesStatus/index.md) | Threat Monitoring and Anomaly Detection security-notification mute and enablement state for this object. Null unless the requesting account has the DTA object mute feature enabled. |
+| sensitivityStatus      | [SensitivityStatus](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/SensitivityStatus/index.md)!            | Sensitivity status of a workload.                                                                                                                                                    |
 
 ## Used By
 
@@ -47,4 +48,4 @@ Represents security metadata of a workload.
 - [AzureNativeResourceGroup.securityMetadata](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AzureNativeResourceGroup/index.md)
 - [AzureNativeResourceGroupBase.securityMetadata](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AzureNativeResourceGroupBase/index.md)
 - [AzureNativeSubscription.securityMetadata](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AzureNativeSubscription/index.md)
-- *…and 328 more*
+- *…and 332 more*

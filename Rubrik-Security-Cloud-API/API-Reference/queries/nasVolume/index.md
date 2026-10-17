@@ -22,6 +22,7 @@ query NasVolume($fid: UUID!) {
     id
     isReadonly
     isReplica
+    legallyHeldSnapshotCount
     name
     numWorkloadDescendants
     objectType
@@ -52,7 +53,7 @@ query NasVolume($fid: UUID!) {
       "id": "00000000-0000-0000-0000-000000000000",
       "isReadonly": true,
       "isReplica": true,
-      "name": "example-string",
+      "legallyHeldSnapshotCount": 0,
       "allOrgs": [
         {
           "allUrls": [

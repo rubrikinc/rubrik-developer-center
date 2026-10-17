@@ -22,6 +22,7 @@ query HypervCluster($fid: UUID!) {
     connectionStatus
     id
     isReplica
+    legallyHeldSnapshotCount
     name
     numWorkloadDescendants
     objectType
@@ -50,7 +51,7 @@ query HypervCluster($fid: UUID!) {
       "connectionStatus": "CONNECTED",
       "id": "00000000-0000-0000-0000-000000000000",
       "isReplica": true,
-      "name": "example-string",
+      "legallyHeldSnapshotCount": 0,
       "allOrgs": [
         {
           "allUrls": [

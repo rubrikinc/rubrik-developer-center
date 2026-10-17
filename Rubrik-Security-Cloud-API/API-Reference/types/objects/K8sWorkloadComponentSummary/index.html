@@ -923,7 +923,7 @@
 
 
 <h1 id="k8sworkloadcomponentsummary">K8sWorkloadComponentSummary</h1>
-<p>Summary of a Rubrik workload component running (or deployable on-demand) in a Kubernetes cluster.</p>
+<p>Supported in v9.6+ Summary of a Rubrik workload component running (or deployable on-demand) in a Kubernetes cluster.</p>
 <h2 id="fields">Fields</h2>
 <table>
 <thead>
@@ -937,57 +937,57 @@
 <tr>
 <td>activeNodes</td>
 <td>[String!]!</td>
-<td>Names of cluster nodes hosting a ready pod for this workload. Null when no pods are ready or for on-demand workloads.</td>
+<td>Supported in v9.6+ Names of cluster nodes hosting a ready pod for this workload. Null when no pods are ready or for on-demand workloads.</td>
 </tr>
 <tr>
 <td>cpuLimit</td>
 <td>String</td>
-<td>CPU limit as a Kubernetes quantity string (e.g. "500m").</td>
+<td>Supported in v9.6+ CPU limit as a Kubernetes quantity string (e.g. "500m").</td>
 </tr>
 <tr>
 <td>cpuRequest</td>
 <td>String</td>
-<td>CPU request as a Kubernetes quantity string (e.g. "250m").</td>
+<td>Supported in v9.6+ CPU request as a Kubernetes quantity string (e.g. "250m").</td>
 </tr>
 <tr>
 <td>image</td>
 <td>String</td>
-<td>Container image reference, or null when not yet determined.</td>
+<td>Supported in v9.6+ Container image reference, or null when not yet determined.</td>
 </tr>
 <tr>
 <td>memoryLimit</td>
 <td>String</td>
-<td>Memory limit as a Kubernetes quantity string (e.g. "1024Mi").</td>
+<td>Supported in v9.6+ Memory limit as a Kubernetes quantity string (e.g. "1024Mi").</td>
 </tr>
 <tr>
 <td>memoryRequest</td>
 <td>String</td>
-<td>Memory request as a Kubernetes quantity string (e.g. "512Mi").</td>
+<td>Supported in v9.6+ Memory request as a Kubernetes quantity string (e.g. "512Mi").</td>
 </tr>
 <tr>
 <td>name</td>
 <td>String!</td>
-<td>Required. Name of the workload (e.g. appscontroller, kupr-proxy, backup-agent).</td>
+<td>Required. Supported in v9.6+ Name of the workload (e.g. appscontroller, kupr-proxy, backup-agent).</td>
 </tr>
 <tr>
 <td>replicas</td>
 <td>Int!</td>
-<td>Required. Desired replica count. -1 indicates an on-demand workload that is not permanently deployed.</td>
+<td>Required. Supported in v9.6+ Desired replica count. -1 indicates an on-demand workload that is not permanently deployed.</td>
 </tr>
 <tr>
 <td>scope</td>
 <td>String!</td>
-<td>Required. Deployment scope: Deployment (permanent single workload), Cluster-wide (DaemonSet across all nodes), or On-Demand (workload not permanently deployed).</td>
+<td>Required. Supported in v9.6+ Deployment scope: Deployment (permanent single workload), Cluster-wide (DaemonSet across all nodes), or On-Demand (workload not permanently deployed).</td>
 </tr>
 <tr>
 <td>status</td>
 <td>String</td>
-<td>Machine-readable health status: ok, degraded, crash_loop_back_off, image_pull_back_off, pending, or unknown. Null for on-demand workloads.</td>
+<td>Supported in v9.6+ Machine-readable health status: ok, degraded, crash_loop_back_off, image_pull_back_off, pending, or unknown. Null for on-demand workloads.</td>
 </tr>
 <tr>
 <td>statusMessage</td>
 <td>String</td>
-<td>Raw Kubernetes waiting reason or condition message associated with the current status. Null when status is ok or for on-demand workloads.</td>
+<td>Supported in v9.6+ Raw Kubernetes waiting reason or condition message associated with the current status. Null when status is ok or for on-demand workloads.</td>
 </tr>
 </tbody>
 </table>

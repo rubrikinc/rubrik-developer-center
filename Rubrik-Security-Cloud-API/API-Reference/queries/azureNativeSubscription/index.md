@@ -21,6 +21,7 @@ query AzureNativeSubscription($azureSubscriptionRubrikId: UUID!) {
     accountConnectionId
     authorizedOperations
     azureCloudType
+    azureCosmosNosqlContainerCount
     azurePostgresFlexibleServerCount
     azureSqlDatabaseDbCount
     azureSqlManagedInstanceDbCount
@@ -32,6 +33,7 @@ query AzureNativeSubscription($azureSubscriptionRubrikId: UUID!) {
     id
     isProtectable
     lastRefreshedAt
+    legallyHeldSnapshotCount
     name
     numWorkloadDescendants
     objectType
@@ -59,9 +61,9 @@ query AzureNativeSubscription($azureSubscriptionRubrikId: UUID!) {
         "MANAGE_DATA_SOURCE"
       ],
       "azureCloudType": "AZURECHINACLOUD",
+      "azureCosmosNosqlContainerCount": 0,
       "azurePostgresFlexibleServerCount": 0,
       "azureSqlDatabaseDbCount": 0,
-      "azureSqlManagedInstanceDbCount": 0,
       "allOrgs": [
         {
           "allUrls": [

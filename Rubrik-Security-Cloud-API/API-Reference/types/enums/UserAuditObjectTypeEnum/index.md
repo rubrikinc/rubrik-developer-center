@@ -12,6 +12,7 @@ User audit object type.
 | AGENT_CLOUD_ALERT                  | Agent Cloud alert object type.                |
 | AGENT_CLOUD_CONNECTION             | Agent Cloud connection object type.           |
 | AGENT_CLOUD_POLICY                 | Agent Cloud policy object type.               |
+| AGENT_CLOUD_REWIND_OBJECT          | Agent Cloud rewind object type.               |
 | AGENT_CLOUD_VIOLATION              | Agent Cloud violation object type.            |
 | AGENT_OPERATIONS_MODEL_ROUTER      | Agent Operations Model Router.                |
 | ATLASSIAN_SITE                     | Atlassian site.                               |
@@ -68,6 +69,7 @@ User audit object type.
 | FederatedAccess                    | Federated access type.                        |
 | GCP_BIG_QUERY_DATASET              | GCP BigQuery dataset type.                    |
 | GCP_CLOUD_SQL_INSTANCE             | GCP Cloud SQL Instance type.                  |
+| GOOGLE_WORKSPACE_GROUPS_METADATA   | Google Workspace Groups Metadata.             |
 | GOOGLE_WORKSPACE_USER_MAILBOX      | Google Workspace User Mailbox.                |
 | GcpNativeDisk                      | GCP native disk type.                         |
 | GcpNativeGceInstance               | GCP native GCE instance type.                 |
@@ -80,6 +82,7 @@ User audit object type.
 | INFORMIX_INSTANCE                  | Informix instance type.                       |
 | INTEGRATION                        | Integration.                                  |
 | INTEL_FEED                         | Intel feed.                                   |
+| IRISDB_INSTANCE                    | IRIS DB instance type.                        |
 | IpWhitelist                        | IP Whitelist type.                            |
 | JIRA_PROJECT                       | Atlassian Jira project.                       |
 | JIRA_SETTINGS                      | Atlassian Jira settings.                      |

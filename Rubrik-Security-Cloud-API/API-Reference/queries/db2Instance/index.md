@@ -26,6 +26,7 @@ query Db2Instance($id: UUID!) {
     isReplica
     lastRefreshTime
     lastSyncTime
+    legallyHeldSnapshotCount
     name
     numWorkloadDescendants
     objectType

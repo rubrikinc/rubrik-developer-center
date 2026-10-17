@@ -21,6 +21,7 @@ query O365Org($fid: UUID!) {
     exocomputeId
     hasSharePointLegacySnapshots
     id
+    legallyHeldSnapshotCount
     mailboxesPendingGraphMigration
     name
     numWorkloadDescendants
@@ -64,8 +65,8 @@ query O365Org($fid: UUID!) {
       "exocomputeId": "example-string",
       "hasSharePointLegacySnapshots": true,
       "id": "00000000-0000-0000-0000-000000000000",
+      "legallyHeldSnapshotCount": 0,
       "mailboxesPendingGraphMigration": 0,
-      "name": "example-string",
       "allOrgs": [
         {
           "allUrls": [

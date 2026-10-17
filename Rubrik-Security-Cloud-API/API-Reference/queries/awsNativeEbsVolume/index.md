@@ -31,6 +31,7 @@ query AwsNativeEbsVolume($ebsVolumeRubrikId: UUID!) {
     isMarketplace
     isProtectable
     isRelic
+    legallyHeldSnapshotCount
     name
     nativeName
     numWorkloadDescendants

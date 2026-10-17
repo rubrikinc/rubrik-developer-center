@@ -984,6 +984,11 @@
 <td>Supported in v9.6+ When true, applies Zero RPO redo logs after RMAN recovery to achieve maximum data recovery up to the latest streamed transaction. Requires Zero RPO to be enabled on the source database.</td>
 </tr>
 <tr>
+<td>shouldRestoreAsStandby</td>
+<td>Boolean</td>
+<td>Clone (RMAN DUPLICATE) only. When true, the cloned database is restored in the physical standby role and left open read only. Requires db_unique_name, differing from the source database, set either in the advanced recovery options or in the custom pfile. Constraints: cannot be combined with cloneDbName (a standby must keep the source DB_NAME), pdbsToClone (a standby requires all PDBs), shouldRestoreFilesOnly (files-only export runs no DUPLICATE), or a same-host target.</td>
+</tr>
+<tr>
 <td>shouldRestoreFilesOnly</td>
 <td>Boolean</td>
 <td>Specifies whether the database files are copied to the target host without recreating the database.</td>

@@ -17,6 +17,7 @@ Create a reader target of type Glacier on a Rubrik cluster.
 ```graphql
 mutation CreateGlacierReaderTarget($input: CreateGlacierReaderTargetInput!) {
   createGlacierReaderTarget(input: $input) {
+    archivalLocationPurpose
     clusterName
     consumedBytes
     failedTasks
@@ -53,11 +54,11 @@ mutation CreateGlacierReaderTarget($input: CreateGlacierReaderTargetInput!) {
 {
   "data": {
     "createGlacierReaderTarget": {
+      "archivalLocationPurpose": "ADO",
       "clusterName": "example-string",
       "consumedBytes": 0,
       "failedTasks": 0,
-      "id": "example-string",
-      "isActive": true
+      "id": "example-string"
     }
   }
 }

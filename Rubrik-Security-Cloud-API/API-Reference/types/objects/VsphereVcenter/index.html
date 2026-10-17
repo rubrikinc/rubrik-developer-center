@@ -934,8 +934,8 @@
 
 
 <h1 id="vspherevcenter">VsphereVcenter</h1>
-<p><em>No description available.</em></p>
-<p><strong>Implements:</strong> <a href="../../interfaces/CdmHierarchyObject/">CdmHierarchyObject</a>, <a href="../../interfaces/HierarchyObject/">HierarchyObject</a></p>
+<p>A vSphere vCenter.</p>
+<p><strong>Implements:</strong> <a href="../../interfaces/HierarchyObject/">HierarchyObject</a>, <a href="../../interfaces/CdmHierarchyObject/">CdmHierarchyObject</a></p>
 <h2 id="fields">Fields</h2>
 <table>
 <thead>
@@ -949,7 +949,7 @@
 <tr>
 <td>aboutInfo</td>
 <td><a href="../AboutInformation/">AboutInformation</a></td>
-<td></td>
+<td>Additional information about the vCenter object.</td>
 </tr>
 <tr>
 <td>allOrgs</td>
@@ -969,7 +969,7 @@
 <tr>
 <td>caCerts</td>
 <td>String!</td>
-<td></td>
+<td>CA certificates for the vCenter.</td>
 </tr>
 <tr>
 <td>cdmPendingObjectPauseAssignment</td>
@@ -994,7 +994,7 @@
 <tr>
 <td>conflictResolutionAuthz</td>
 <td><a href="../../enums/VcenterSummaryConflictResolutionAuthz/">VcenterSummaryConflictResolutionAuthz</a></td>
-<td></td>
+<td>Conflict resolution authorization for this vCenter.</td>
 </tr>
 <tr>
 <td>connectionStatus</td>
@@ -1027,6 +1027,11 @@
 <td>Path node of the effective SLA Domain source.</td>
 </tr>
 <tr>
+<td>futureLegalHoldInfo</td>
+<td><a href="../FutureLegalHoldInfo/">FutureLegalHoldInfo</a></td>
+<td>Future legal hold rule configured for this object, if any.</td>
+</tr>
+<tr>
 <td>id</td>
 <td><a href="../../scalars/UUID/">UUID</a>!</td>
 <td>ID of the hierarchy object.</td>
@@ -1054,17 +1059,22 @@
 <tr>
 <td>isVmc</td>
 <td>Boolean!</td>
-<td>Flag to determine whether this vcenter is from VMC or not.</td>
+<td>Whether this vCenter is from VMC or not.</td>
 </tr>
 <tr>
 <td>lastRefreshTime</td>
 <td><a href="../../scalars/DateTime/">DateTime</a></td>
-<td></td>
+<td>Last refresh time of the vCenter.</td>
 </tr>
 <tr>
 <td>latestUserNote</td>
 <td><a href="../LatestUserNote/">LatestUserNote</a></td>
 <td>Latest user note information.</td>
+</tr>
+<tr>
+<td>legallyHeldSnapshotCount</td>
+<td>Int</td>
+<td>Number of snapshots on legal hold for this object.</td>
 </tr>
 <tr>
 <td>libraryChildConnection</td>
@@ -1134,7 +1144,7 @@
 <tr>
 <td>recoveryLogicalChildConnection</td>
 <td><a href="../VsphereVcenterLogicalChildTypeConnection/">VsphereVcenterLogicalChildTypeConnection</a>!</td>
-<td>List of recoveryLogical children.</td>
+<td>List of recovery logical children.</td>
 </tr>
 <tr>
 <td>replicatedObjectCount</td>
@@ -1169,7 +1179,7 @@
 <tr>
 <td>snapshotConsistencySource</td>
 <td>String</td>
-<td>Fid of the object from where the snapshot consistency mandate is inherited.</td>
+<td>ID of the object from which the snapshot consistency mandate is inherited.</td>
 </tr>
 <tr>
 <td>snapshotDistribution</td>
@@ -1184,12 +1194,12 @@
 <tr>
 <td>username</td>
 <td>String!</td>
-<td></td>
+<td>Username for the vCenter.</td>
 </tr>
 <tr>
 <td>vcenterId</td>
 <td>String!</td>
-<td></td>
+<td>ID of the vCenter object on CDM.</td>
 </tr>
 <tr>
 <td>vmcProvider</td>
@@ -1199,7 +1209,7 @@
 <tr>
 <td>vsphereTagPath</td>
 <td>[<a href="../PathNode/">PathNode</a>!]!</td>
-<td></td>
+<td>The vSphere tag path of this vCenter.</td>
 </tr>
 </tbody>
 </table>
@@ -1224,7 +1234,19 @@
 <td>descendantConnection</td>
 <td>after</td>
 <td>String</td>
-<td>Returns the elements in the list that occur after the specified cursor.</td>
+<td>An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results.</td>
+</tr>
+<tr>
+<td>descendantConnection</td>
+<td>last</td>
+<td>Int</td>
+<td>Returns the last n elements from the list.</td>
+</tr>
+<tr>
+<td>descendantConnection</td>
+<td>before</td>
+<td>String</td>
+<td>An opaque cursor returned from a previous query's startCursor field. Pass this value verbatim to retrieve the previous page of results.</td>
 </tr>
 <tr>
 <td>descendantConnection</td>
@@ -1266,7 +1288,19 @@
 <td>libraryChildConnection</td>
 <td>after</td>
 <td>String</td>
-<td>Returns the elements in the list that occur after the specified cursor.</td>
+<td>An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results.</td>
+</tr>
+<tr>
+<td>libraryChildConnection</td>
+<td>last</td>
+<td>Int</td>
+<td>Returns the last n elements from the list.</td>
+</tr>
+<tr>
+<td>libraryChildConnection</td>
+<td>before</td>
+<td>String</td>
+<td>An opaque cursor returned from a previous query's startCursor field. Pass this value verbatim to retrieve the previous page of results.</td>
 </tr>
 <tr>
 <td>libraryChildConnection</td>
@@ -1308,7 +1342,19 @@
 <td>logicalChildConnection</td>
 <td>after</td>
 <td>String</td>
-<td>Returns the elements in the list that occur after the specified cursor.</td>
+<td>An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results.</td>
+</tr>
+<tr>
+<td>logicalChildConnection</td>
+<td>last</td>
+<td>Int</td>
+<td>Returns the last n elements from the list.</td>
+</tr>
+<tr>
+<td>logicalChildConnection</td>
+<td>before</td>
+<td>String</td>
+<td>An opaque cursor returned from a previous query's startCursor field. Pass this value verbatim to retrieve the previous page of results.</td>
 </tr>
 <tr>
 <td>logicalChildConnection</td>
@@ -1380,7 +1426,19 @@
 <td>physicalChildConnection</td>
 <td>after</td>
 <td>String</td>
-<td>Returns the elements in the list that occur after the specified cursor.</td>
+<td>An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results.</td>
+</tr>
+<tr>
+<td>physicalChildConnection</td>
+<td>last</td>
+<td>Int</td>
+<td>Returns the last n elements from the list.</td>
+</tr>
+<tr>
+<td>physicalChildConnection</td>
+<td>before</td>
+<td>String</td>
+<td>An opaque cursor returned from a previous query's startCursor field. Pass this value verbatim to retrieve the previous page of results.</td>
 </tr>
 <tr>
 <td>physicalChildConnection</td>
@@ -1422,7 +1480,19 @@
 <td>recoveryLogicalChildConnection</td>
 <td>after</td>
 <td>String</td>
-<td>Returns the elements in the list that occur after the specified cursor.</td>
+<td>An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results.</td>
+</tr>
+<tr>
+<td>recoveryLogicalChildConnection</td>
+<td>last</td>
+<td>Int</td>
+<td>Returns the last n elements from the list.</td>
+</tr>
+<tr>
+<td>recoveryLogicalChildConnection</td>
+<td>before</td>
+<td>String</td>
+<td>An opaque cursor returned from a previous query's startCursor field. Pass this value verbatim to retrieve the previous page of results.</td>
 </tr>
 <tr>
 <td>recoveryLogicalChildConnection</td>
@@ -1464,7 +1534,19 @@
 <td>tagChildConnection</td>
 <td>after</td>
 <td>String</td>
-<td>Returns the elements in the list that occur after the specified cursor.</td>
+<td>An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results.</td>
+</tr>
+<tr>
+<td>tagChildConnection</td>
+<td>last</td>
+<td>Int</td>
+<td>Returns the last n elements from the list.</td>
+</tr>
+<tr>
+<td>tagChildConnection</td>
+<td>before</td>
+<td>String</td>
+<td>An opaque cursor returned from a previous query's startCursor field. Pass this value verbatim to retrieve the previous page of results.</td>
 </tr>
 <tr>
 <td>tagChildConnection</td>

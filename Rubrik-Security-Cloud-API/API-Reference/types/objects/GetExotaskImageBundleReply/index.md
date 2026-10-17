@@ -11,6 +11,7 @@ Represents the reply of get exotask image bundle.
 | bundleImages  | \[[BundleImage](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/BundleImage/index.md)!\]!                   | Details of the exo-task images in the bundle.                             |
 | bundleVersion | String!                                                                                                                                        | The current Version of the exotask images bundle.                         |
 | eksVersion    | String!                                                                                                                                        | EKS version for EKS version dependent images.                             |
+| gcpImages     | [GcpExoTaskImageBundle](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/GcpExoTaskImageBundle/index.md)     | GCP Exocompute image details for PCR customers.                           |
 | repoUrl       | String!                                                                                                                                        | Contains the URL of Rubrik's ECR from where the images can be downloaded. |
 
 ## Used By

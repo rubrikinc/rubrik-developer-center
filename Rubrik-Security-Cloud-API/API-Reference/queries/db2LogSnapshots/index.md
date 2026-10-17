@@ -4,15 +4,15 @@ Connection of all log snapshots for Db2.
 
 ## Arguments
 
-| Argument  | Type                                                                                                                                              | Description                                                              |
-| --------- | ------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------ |
-| first     | Int                                                                                                                                               | Returns the first n elements from the list.                              |
-| after     | String                                                                                                                                            | Returns the elements in the list that occur after the specified cursor.  |
-| last      | Int                                                                                                                                               | Returns the last n elements from the list.                               |
-| before    | String                                                                                                                                            | Returns the elements in the list that occur before the specified cursor. |
-| sortOrder | [SortOrder](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/SortOrder/index.md)                                  | Sorts the order of results.                                              |
-| sortBy    | [Db2LogSnapshotSortBy](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/Db2LogSnapshotSortBy/index.md)            | Field to sort Db2 log snapshots.                                         |
-| filter    | [Db2LogSnapshotFilterInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/Db2LogSnapshotFilterInput/index.md) | Field to filter Db2 log snapshots.                                       |
+| Argument  | Type                                                                                                                                              | Description                                                                                                                             |
+| --------- | ------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
+| first     | Int                                                                                                                                               | Returns the first n elements from the list.                                                                                             |
+| after     | String                                                                                                                                            | An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results.       |
+| last      | Int                                                                                                                                               | Returns the last n elements from the list.                                                                                              |
+| before    | String                                                                                                                                            | An opaque cursor returned from a previous query's startCursor field. Pass this value verbatim to retrieve the previous page of results. |
+| sortOrder | [SortOrder](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/SortOrder/index.md)                                  | Sorts the order of results.                                                                                                             |
+| sortBy    | [Db2LogSnapshotSortBy](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/Db2LogSnapshotSortBy/index.md)            | Field to sort Db2 log snapshots.                                                                                                        |
+| filter    | [Db2LogSnapshotFilterInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/Db2LogSnapshotFilterInput/index.md) | Field to filter Db2 log snapshots.                                                                                                      |
 
 ## Returns
 

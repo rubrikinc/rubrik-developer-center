@@ -4,15 +4,15 @@ Paginated list of all AWS EC2 Instances by name or substring of name.
 
 ## Arguments
 
-| Argument                     | Type                                                                                                                                                       | Description                                                              |
-| ---------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------ |
-| first                        | Int                                                                                                                                                        | Returns the first n elements from the list.                              |
-| after                        | String                                                                                                                                                     | Returns the elements in the list that occur after the specified cursor.  |
-| last                         | Int                                                                                                                                                        | Returns the last n elements from the list.                               |
-| before                       | String                                                                                                                                                     | Returns the elements in the list that occur before the specified cursor. |
-| sortBy                       | [AwsNativeEc2InstanceSortFields](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/AwsNativeEc2InstanceSortFields/index.md) | Sort fields for list of AWS EC2 instances.                               |
-| sortOrder                    | [SortOrder](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/SortOrder/index.md)                                           | Sorts the order of results.                                              |
-| ec2InstanceName *(required)* | String!                                                                                                                                                    | Native name for the AWS EC2 Instance object.                             |
+| Argument                     | Type                                                                                                                                                       | Description                                                                                                                             |
+| ---------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
+| first                        | Int                                                                                                                                                        | Returns the first n elements from the list.                                                                                             |
+| after                        | String                                                                                                                                                     | An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results.       |
+| last                         | Int                                                                                                                                                        | Returns the last n elements from the list.                                                                                              |
+| before                       | String                                                                                                                                                     | An opaque cursor returned from a previous query's startCursor field. Pass this value verbatim to retrieve the previous page of results. |
+| sortBy                       | [AwsNativeEc2InstanceSortFields](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/AwsNativeEc2InstanceSortFields/index.md) | Sort fields for list of AWS EC2 instances.                                                                                              |
+| sortOrder                    | [SortOrder](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/SortOrder/index.md)                                           | Sorts the order of results.                                                                                                             |
+| ec2InstanceName *(required)* | String!                                                                                                                                                    | Native name for the AWS EC2 Instance object.                                                                                            |
 
 ## Returns
 
@@ -44,6 +44,7 @@ query AwsNativeEc2InstancesByName($ec2InstanceName: String!) {
       isPreOrPostScriptEnabled
       isProtectable
       isRelic
+      legallyHeldSnapshotCount
       name
       nativeName
       numWorkloadDescendants

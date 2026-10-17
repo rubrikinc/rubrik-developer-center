@@ -15,6 +15,9 @@ Kosmos User Message object.
 
 **Referenced by**
 
+- [InformixInstanceStatus.statusMessages](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/InformixInstanceStatus/index.md)
+- [IrisdbDatabaseStatus.statusMessages](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/IrisdbDatabaseStatus/index.md)
+- [IrisdbInstanceStatus.statusMessages](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/IrisdbInstanceStatus/index.md)
 - [MysqlTopologyReplicaInfo.statusMessageDetails](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/MysqlTopologyReplicaInfo/index.md)
 - [MysqldbInstanceStatus.statusMessages](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/MysqldbInstanceStatus/index.md)
 - [PostgreSQLDbClusterStatus.statusMessages](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/PostgreSQLDbClusterStatus/index.md)

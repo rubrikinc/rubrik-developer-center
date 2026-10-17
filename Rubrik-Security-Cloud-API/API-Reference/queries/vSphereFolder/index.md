@@ -1,6 +1,6 @@
 # vSphereFolder
 
-*No description available.*
+Vsphere folder based on id passed in.
 
 ## Arguments
 
@@ -24,6 +24,7 @@ query VSphereFolder($fid: UUID!) {
     folderType
     id
     isReplica
+    legallyHeldSnapshotCount
     name
     numWorkloadDescendants
     objectType

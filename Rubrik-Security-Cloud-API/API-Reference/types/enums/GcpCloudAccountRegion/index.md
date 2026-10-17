@@ -1,54 +1,53 @@
 # GcpCloudAccountRegion
 
-Enums containing GCP regions.
+GCP Compute regions. See https://docs.cloud.google.com/compute/docs/regions-zones.
 
 ## Values
 
-| Value                   | Description                |
-| ----------------------- | -------------------------- |
-| AFRICA_SOUTH1           | Africa South 1.            |
-| ASIA_EAST1              | Asia East 1.               |
-| ASIA_EAST2              | Asia East 2.               |
-| ASIA_NORTHEAST1         | Asia Northeast 1.          |
-| ASIA_NORTHEAST2         | Asia Northeast 2.          |
-| ASIA_NORTHEAST3         | Asia Northeast 3.          |
-| ASIA_SOUTH1             | Asia South 1.              |
-| ASIA_SOUTH2             | Asia South 2.              |
-| ASIA_SOUTHEAST1         | Asia Southeast 1.          |
-| ASIA_SOUTHEAST2         | Asia Southeast 2.          |
-| ASIA_SOUTHEAST3         | Asia Southeast 3.          |
-| AUSTRALIA_SOUTHEAST1    | Australia Southeast 1.     |
-| AUSTRALIA_SOUTHEAST2    | Australia Southeast 2.     |
-| EUROPE_CENTRAL2         | Europe Central 2.          |
-| EUROPE_NORTH1           | Europe North 1.            |
-| EUROPE_NORTH2           | Europe North 2.            |
-| EUROPE_SOUTHWEST1       | Europe Southwest 1.        |
-| EUROPE_WEST1            | Europe West 1.             |
-| EUROPE_WEST10           | Europe West 10.            |
-| EUROPE_WEST12           | Europe West 12.            |
-| EUROPE_WEST2            | Europe West 2.             |
-| EUROPE_WEST3            | Europe West 3.             |
-| EUROPE_WEST4            | Europe West 4.             |
-| EUROPE_WEST6            | Europe West 6.             |
-| EUROPE_WEST8            | Europe West 8.             |
-| EUROPE_WEST9            | Europe West 9.             |
-| ME_CENTRAL1             | Middle East Central 1.     |
-| ME_CENTRAL2             | Middle East Central 2.     |
-| ME_WEST1                | Middle East West 1.        |
-| NORTHAMERICA_NORTHEAST1 | North America Northeast 1. |
-| NORTHAMERICA_NORTHEAST2 | North America Northeast 2. |
-| NORTHAMERICA_SOUTH1     | North America South 1.     |
-| SOUTHAMERICA_EAST1      | South America East 1.      |
-| SOUTHAMERICA_WEST1      | South America West 1.      |
-| UNKNOWN_GCP_REGION      | Unknown region.            |
-| US_CENTRAL1             | US Central 1.              |
-| US_EAST1                | US East 1.                 |
-| US_EAST4                | US East 4.                 |
-| US_EAST5                | US East 5.                 |
-| US_EAST7                | US East 7.                 |
-| US_SOUTH1               | US South 1.                |
-| US_WEST1                | US West 1.                 |
-| US_WEST2                | US West 2.                 |
-| US_WEST3                | US West 3.                 |
-| US_WEST4                | US West 4.                 |
-| US_WEST8                | US West 8.                 |
+| Value                   | Description                    |
+| ----------------------- | ------------------------------ |
+| AFRICA_SOUTH1           | Johannesburg, South Africa.    |
+| ASIA_EAST1              | Changhua County, Taiwan.       |
+| ASIA_EAST2              | Hong Kong.                     |
+| ASIA_NORTHEAST1         | Tokyo, Japan.                  |
+| ASIA_NORTHEAST2         | Osaka, Japan.                  |
+| ASIA_NORTHEAST3         | Seoul, South Korea.            |
+| ASIA_SOUTH1             | Mumbai, India.                 |
+| ASIA_SOUTH2             | Delhi, India.                  |
+| ASIA_SOUTHEAST1         | Jurong West, Singapore.        |
+| ASIA_SOUTHEAST2         | Jakarta, Indonesia.            |
+| ASIA_SOUTHEAST3         | Bangkok, Thailand.             |
+| AUSTRALIA_SOUTHEAST1    | Sydney, Australia.             |
+| AUSTRALIA_SOUTHEAST2    | Melbourne, Australia.          |
+| EUROPE_CENTRAL2         | Warsaw, Poland.                |
+| EUROPE_NORTH1           | Hamina, Finland.               |
+| EUROPE_NORTH2           | Stockholm, Sweden.             |
+| EUROPE_SOUTHWEST1       | Madrid, Spain.                 |
+| EUROPE_WEST1            | St. Ghislain, Belgium.         |
+| EUROPE_WEST10           | Berlin, Germany.               |
+| EUROPE_WEST12           | Turin, Italy.                  |
+| EUROPE_WEST2            | London, England.               |
+| EUROPE_WEST3            | Frankfurt, Germany.            |
+| EUROPE_WEST4            | Eemshaven, Netherlands.        |
+| EUROPE_WEST6            | Zurich, Switzerland.           |
+| EUROPE_WEST8            | Milan, Italy.                  |
+| EUROPE_WEST9            | Paris, France.                 |
+| ME_CENTRAL1             | Doha, Qatar.                   |
+| ME_CENTRAL2             | Dammam, Saudi Arabia.          |
+| ME_WEST1                | Tel Aviv, Israel.              |
+| NORTHAMERICA_NORTHEAST1 | Montreal, Canada.              |
+| NORTHAMERICA_NORTHEAST2 | Toronto, Canada.               |
+| NORTHAMERICA_SOUTH1     | Queretaro, Mexico.             |
+| SOUTHAMERICA_EAST1      | Sao Paulo, Brazil.             |
+| SOUTHAMERICA_WEST1      | Santiago, Chile.               |
+| US_CENTRAL1             | Council Bluffs, Iowa.          |
+| US_EAST1                | Moncks Corner, South Carolina. |
+| US_EAST4                | Ashburn, Virginia.             |
+| US_EAST5                | Columbus, Ohio.                |
+| US_EAST7                | Bridgeport, Alabama.           |
+| US_SOUTH1               | Dallas, Texas.                 |
+| US_WEST1                | The Dalles, Oregon.            |
+| US_WEST2                | Los Angeles, California.       |
+| US_WEST3                | Salt Lake City, Utah.          |
+| US_WEST4                | Las Vegas, Nevada.             |
+| US_WEST8                | Phoenix, Arizona.              |

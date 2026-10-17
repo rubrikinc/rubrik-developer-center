@@ -4,10 +4,10 @@ List of all AWS exocompute configurations filtered by a cloud account ID or a cl
 
 ## Arguments
 
-| Argument                                    | Type                                                                                                              | Description                                                                                                                                                                            |
-| ------------------------------------------- | ----------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| awsNativeAccountIdOrNamePrefix *(required)* | String!                                                                                                           | A query that searches for Exocompute configurations with an account name or account native ID that is prefixed by the search query.                                                    |
-| operation *(required)*                      | [Operation](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/Operation/index.md)! | The operation used to scope the returned accounts to those the caller is authorized to perform. Defaults to CREATE_REPORT, which returns all accounts without operation-based scoping. |
+| Argument                                    | Type                                                                                                              | Description                                                                                          |
+| ------------------------------------------- | ----------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- |
+| awsNativeAccountIdOrNamePrefix *(required)* | String!                                                                                                           | Native account ID or account name prefix used to filter the AWS exocompute configurations to return. |
+| operation *(required)*                      | [Operation](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/Operation/index.md)! | Operation used to scope the returned accounts to those the caller can perform that operation on.     |
 
 ## Returns
 

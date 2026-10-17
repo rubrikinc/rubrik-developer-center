@@ -27,6 +27,7 @@ query PureStorageProtectionGroupV1($id: UUID!) {
     id
     isRelic
     isReplica
+    legallyHeldSnapshotCount
     name
     numVolumes
     numWorkloadDescendants

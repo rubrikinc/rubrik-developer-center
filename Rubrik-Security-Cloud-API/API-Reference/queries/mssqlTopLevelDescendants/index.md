@@ -1,17 +1,19 @@
 # mssqlTopLevelDescendants
 
-Paginated list of the highest-level Microsoft SQL Objects accessible by the current user.
+Paginated list of top-level Microsoft SQL hierarchy descendants: the direct children of the Microsoft SQL hierarchy root, spanning every top-level Microsoft SQL managed object type.
 
 ## Arguments
 
-| Argument   | Type                                                                                                                                              | Description                                                             |
-| ---------- | ------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------- |
-| first      | Int                                                                                                                                               | Returns the first n elements from the list.                             |
-| after      | String                                                                                                                                            | Returns the elements in the list that occur after the specified cursor. |
-| sortBy     | [HierarchySortByField](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/HierarchySortByField/index.md)            | Sort hierarchy objects according to the hierarchy field.                |
-| sortOrder  | [SortOrder](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/SortOrder/index.md)                                  | Sorts the order of results.                                             |
-| typeFilter | \[[HierarchyObjectTypeEnum](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/HierarchyObjectTypeEnum/index.md)!\] | Types of objects to include.                                            |
-| filter     | \[[Filter](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/Filter/index.md)!\]                                  | Hierarchy object filter.                                                |
+| Argument   | Type                                                                                                                                              | Description                                                                                                                             |
+| ---------- | ------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
+| first      | Int                                                                                                                                               | Returns the first n elements from the list.                                                                                             |
+| after      | String                                                                                                                                            | An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results.       |
+| last       | Int                                                                                                                                               | Returns the last n elements from the list.                                                                                              |
+| before     | String                                                                                                                                            | An opaque cursor returned from a previous query's startCursor field. Pass this value verbatim to retrieve the previous page of results. |
+| sortBy     | [HierarchySortByField](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/HierarchySortByField/index.md)            | Sort hierarchy objects according to the hierarchy field.                                                                                |
+| sortOrder  | [SortOrder](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/SortOrder/index.md)                                  | Sorts the order of results.                                                                                                             |
+| typeFilter | \[[HierarchyObjectTypeEnum](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/HierarchyObjectTypeEnum/index.md)!\] | Types of objects to include.                                                                                                            |
+| filter     | \[[Filter](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/Filter/index.md)!\]                                  | Hierarchy object filter.                                                                                                                |
 
 ## Returns
 
@@ -27,6 +29,7 @@ query {
       cdmPendingObjectPauseAssignment
       id
       isReplica
+      legallyHeldSnapshotCount
       name
       numWorkloadDescendants
       objectType

@@ -17,6 +17,7 @@ Creates an Azure archival target on the Rubrik cluster.
 ```graphql
 mutation CreateAzureTarget($input: CreateAzureTargetInput!) {
   createAzureTarget(input: $input) {
+    archivalLocationPurpose
     clusterName
     consumedBytes
     failedTasks
@@ -56,11 +57,11 @@ mutation CreateAzureTarget($input: CreateAzureTargetInput!) {
 {
   "data": {
     "createAzureTarget": {
+      "archivalLocationPurpose": "ADO",
       "clusterName": "example-string",
       "consumedBytes": 0,
       "failedTasks": 0,
-      "id": "example-string",
-      "isActive": true
+      "id": "example-string"
     }
   }
 }

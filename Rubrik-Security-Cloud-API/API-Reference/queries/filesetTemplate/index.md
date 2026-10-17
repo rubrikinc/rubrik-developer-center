@@ -29,6 +29,7 @@ query FilesetTemplate($fid: UUID!) {
     includes
     isArrayEnabled
     isReplica
+    legallyHeldSnapshotCount
     name
     numWorkloadDescendants
     objectType

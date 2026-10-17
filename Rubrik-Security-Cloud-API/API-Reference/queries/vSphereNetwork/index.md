@@ -1,6 +1,6 @@
 # vSphereNetwork
 
-*No description available.*
+Details of the vSphere network with the given Rubrik ID.
 
 ## Arguments
 
@@ -21,6 +21,7 @@ query VSphereNetwork($fid: UUID!) {
     cdmPendingObjectPauseAssignment
     id
     isReplica
+    legallyHeldSnapshotCount
     moid
     name
     numWorkloadDescendants
@@ -48,8 +49,8 @@ query VSphereNetwork($fid: UUID!) {
       "cdmPendingObjectPauseAssignment": "NO_PENDING_PAUSE_ASSIGNMENT",
       "id": "00000000-0000-0000-0000-000000000000",
       "isReplica": true,
+      "legallyHeldSnapshotCount": 0,
       "moid": "example-string",
-      "name": "example-string",
       "allOrgs": [
         {
           "allUrls": [

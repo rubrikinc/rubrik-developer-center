@@ -4,9 +4,9 @@ Update a scheduled report.
 
 ## Arguments
 
-| Argument           | Type                                                                                                                                                 | Description |
-| ------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------- | ----------- |
-| input *(required)* | [UpdateScheduledReportInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/UpdateScheduledReportInput/index.md)! |             |
+| Argument           | Type                                                                                                                                                 | Description                            |
+| ------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------- |
+| input *(required)* | [UpdateScheduledReportInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/UpdateScheduledReportInput/index.md)! | Input for updating a scheduled report. |
 
 ## Returns
 

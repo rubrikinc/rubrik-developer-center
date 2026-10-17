@@ -935,7 +935,7 @@
 
 <h1 id="saphanadatabase">SapHanaDatabase</h1>
 <p>SAP HANA Database details object.</p>
-<p><strong>Implements:</strong> <a href="../../interfaces/CdmHierarchyObject/">CdmHierarchyObject</a>, <a href="../../interfaces/HierarchySnappable/">HierarchySnappable</a>, <a href="../../interfaces/CdmHierarchySnappableNew/">CdmHierarchySnappableNew</a>, <a href="../../interfaces/HierarchyObject/">HierarchyObject</a>, <a href="../../interfaces/SapHanaSystemPhysicalChildType/">SapHanaSystemPhysicalChildType</a>, <a href="../../interfaces/SapHanaSystemDescendantType/">SapHanaSystemDescendantType</a></p>
+<p><strong>Implements:</strong> <a href="../../interfaces/CdmHierarchyObject/">CdmHierarchyObject</a>, <a href="../../interfaces/HierarchyObject/">HierarchyObject</a>, <a href="../../interfaces/HierarchySnappable/">HierarchySnappable</a>, <a href="../../interfaces/CdmHierarchySnappableNew/">CdmHierarchySnappableNew</a>, <a href="../../interfaces/SapHanaSystemPhysicalChildType/">SapHanaSystemPhysicalChildType</a>, <a href="../../interfaces/SapHanaSystemDescendantType/">SapHanaSystemDescendantType</a></p>
 <h2 id="fields">Fields</h2>
 <table>
 <thead>
@@ -969,7 +969,7 @@
 <tr>
 <td>cdmId</td>
 <td>String!</td>
-<td>ID associated with SAP HANA database in CDM.</td>
+<td>The ID of the workload on the Rubrik cluster.</td>
 </tr>
 <tr>
 <td>cdmLink</td>
@@ -1032,6 +1032,11 @@
 <td>Take a full backup instead of the scheduled incremental or differential backup. This is used when the previous backup is file-based.</td>
 </tr>
 <tr>
+<td>futureLegalHoldInfo</td>
+<td><a href="../FutureLegalHoldInfo/">FutureLegalHoldInfo</a></td>
+<td>Future legal hold rule configured for this object, if any.</td>
+</tr>
+<tr>
 <td>id</td>
 <td><a href="../../scalars/UUID/">UUID</a>!</td>
 <td>ID of the hierarchy object.</td>
@@ -1055,6 +1060,11 @@
 <td>latestUserNote</td>
 <td><a href="../LatestUserNote/">LatestUserNote</a></td>
 <td>Latest user note information.</td>
+</tr>
+<tr>
+<td>legallyHeldSnapshotCount</td>
+<td>Int</td>
+<td>Number of snapshots on legal hold for this object.</td>
 </tr>
 <tr>
 <td>logSnapshotConnection</td>
@@ -1099,7 +1109,7 @@
 <tr>
 <td>newestSnapshot</td>
 <td><a href="../CdmSnapshot/">CdmSnapshot</a></td>
-<td>The most recent snapshot for SAP HANA workload.</td>
+<td>The most recent snapshot of this workload.</td>
 </tr>
 <tr>
 <td>numWorkloadDescendants</td>
@@ -1124,12 +1134,12 @@
 <tr>
 <td>oldestSnapshot</td>
 <td><a href="../CdmSnapshot/">CdmSnapshot</a></td>
-<td>The oldest snapshot for SAP HANA workload.</td>
+<td>The oldest snapshot of this workload.</td>
 </tr>
 <tr>
 <td>onDemandSnapshotCount</td>
 <td>Int!</td>
-<td>The number of on-demand snapshots for SAP HANA workloads.</td>
+<td>The number of on-demand snapshots.</td>
 </tr>
 <tr>
 <td>pendingObjectDeletionStatus</td>

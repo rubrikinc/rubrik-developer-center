@@ -27,6 +27,7 @@ query NasFileset($fid: UUID!) {
     isPassThrough
     isRelic
     isReplica
+    legallyHeldSnapshotCount
     name
     nasMigrationInfo
     numWorkloadDescendants

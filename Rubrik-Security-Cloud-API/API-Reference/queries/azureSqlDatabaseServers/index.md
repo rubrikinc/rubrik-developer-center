@@ -7,9 +7,9 @@ Retrieves a paginated list of all Azure SQL Database Servers.
 | Argument                      | Type                                                                                                                                                           | Description                                                                                                                                  |
 | ----------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
 | first                         | Int                                                                                                                                                            | Returns the first n elements from the list.                                                                                                  |
-| after                         | String                                                                                                                                                         | Returns the elements in the list that occur after the specified cursor.                                                                      |
+| after                         | String                                                                                                                                                         | An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results.            |
 | last                          | Int                                                                                                                                                            | Returns the last n elements from the list.                                                                                                   |
-| before                        | String                                                                                                                                                         | Returns the elements in the list that occur before the specified cursor.                                                                     |
+| before                        | String                                                                                                                                                         | An opaque cursor returned from a previous query's startCursor field. Pass this value verbatim to retrieve the previous page of results.      |
 | sortBy                        | [AzureSqlDatabaseServerSortFields](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/AzureSqlDatabaseServerSortFields/index.md) | Sort fields for list of Azure SQL Database Servers.                                                                                          |
 | sortOrder                     | [SortOrder](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/SortOrder/index.md)                                               | Sorts the order of results.                                                                                                                  |
 | azureSqlDatabaseServerFilters | [AzureSqlDatabaseServerFilters](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/AzureSqlDatabaseServerFilters/index.md)      | Filters for listing Azure SQL Database Servers.                                                                                              |
@@ -28,6 +28,7 @@ query {
       authorizedOperations
       id
       isProtectable
+      legallyHeldSnapshotCount
       name
       numWorkloadDescendants
       objectType
@@ -61,9 +62,9 @@ query {
             ],
             "id": "00000000-0000-0000-0000-000000000000",
             "isProtectable": true,
+            "legallyHeldSnapshotCount": 0,
             "name": "example-string",
-            "numWorkloadDescendants": 0,
-            "objectType": "ACTIVE_DIRECTORY_DOMAIN"
+            "numWorkloadDescendants": 0
           }
         ]
       ],

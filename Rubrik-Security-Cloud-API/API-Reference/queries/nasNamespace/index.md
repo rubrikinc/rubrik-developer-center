@@ -17,19 +17,24 @@ A NAS Namespace.
 ```graphql
 query NasNamespace($fid: UUID!) {
   nasNamespace(fid: $fid) {
+    adDomain
     authorizedOperations
     cdmId
     cdmPendingObjectPauseAssignment
     id
     isReadonly
     isReplica
+    legallyHeldSnapshotCount
     name
+    nfsAuthMode
     nfsDataAddresses
     numWorkloadDescendants
     objectType
+    realmStatus
     replicatedObjectCount
     slaAssignment
     slaPauseStatus
+    smbAuthMode
     smbDataAddresses
     userSelectedNfsInterfaces
     userSelectedSmbInterfaces
@@ -48,6 +53,7 @@ query NasNamespace($fid: UUID!) {
 {
   "data": {
     "nasNamespace": {
+      "adDomain": "example-string",
       "authorizedOperations": [
         "ACCESS_CDM_CLUSTER"
       ],
@@ -55,7 +61,6 @@ query NasNamespace($fid: UUID!) {
       "cdmPendingObjectPauseAssignment": "NO_PENDING_PAUSE_ASSIGNMENT",
       "id": "00000000-0000-0000-0000-000000000000",
       "isReadonly": true,
-      "isReplica": true,
       "allOrgs": [
         {
           "allUrls": [

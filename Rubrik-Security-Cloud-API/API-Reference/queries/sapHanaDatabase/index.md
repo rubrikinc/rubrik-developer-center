@@ -28,6 +28,7 @@ query SapHanaDatabase($fid: UUID!) {
     id
     isRelic
     isReplica
+    legallyHeldSnapshotCount
     name
     numWorkloadDescendants
     objectType

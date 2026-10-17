@@ -1037,6 +1037,11 @@
 <td>Regex pattern for matching full snapshot names.</td>
 </tr>
 <tr>
+<td>futureLegalHoldInfo</td>
+<td><a href="../FutureLegalHoldInfo/">FutureLegalHoldInfo</a></td>
+<td>Future legal hold rule configured for this object, if any.</td>
+</tr>
+<tr>
 <td>id</td>
 <td><a href="../../scalars/UUID/">UUID</a>!</td>
 <td>Share ID.</td>
@@ -1070,6 +1075,11 @@
 <td>isStale</td>
 <td>Boolean!</td>
 <td>Specifies whether the share is stale.</td>
+</tr>
+<tr>
+<td>legallyHeldSnapshotCount</td>
+<td>Int</td>
+<td>Number of snapshots on legal hold for this object.</td>
 </tr>
 <tr>
 <td>logicalPath</td>
@@ -1214,7 +1224,7 @@
 <td>childShares</td>
 <td>after</td>
 <td>String</td>
-<td>Returns the elements in the list that occur after the specified cursor.</td>
+<td>An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results.</td>
 </tr>
 <tr>
 <td>childShares</td>
@@ -1226,7 +1236,7 @@
 <td>childShares</td>
 <td>before</td>
 <td>String</td>
-<td>Returns the elements in the list that occur before the specified cursor.</td>
+<td>An opaque cursor returned from a previous query's startCursor field. Pass this value verbatim to retrieve the previous page of results.</td>
 </tr>
 <tr>
 <td>childShares</td>

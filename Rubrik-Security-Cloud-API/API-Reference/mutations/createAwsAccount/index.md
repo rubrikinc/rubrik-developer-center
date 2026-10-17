@@ -1,6 +1,6 @@
 # createAwsAccount
 
-*No description available.*
+Creates a new AWS cloud account.
 
 ## Arguments
 

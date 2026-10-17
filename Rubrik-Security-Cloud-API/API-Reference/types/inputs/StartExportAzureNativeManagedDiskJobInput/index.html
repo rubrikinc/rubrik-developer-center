@@ -912,7 +912,7 @@
 
 
 <h1 id="startexportazurenativemanageddiskjobinput">StartExportAzureNativeManagedDiskJobInput</h1>
-<p>Input for the job to export the specified Azure Native Managed Disk to the specified destination.</p>
+<p>Input for the job to export an Azure managed disk from a snapshot.</p>
 <h2 id="fields">Fields</h2>
 <table>
 <thead>
@@ -926,77 +926,77 @@
 <tr>
 <td>archivedSnapshotId</td>
 <td><a href="../../scalars/UUID/">UUID</a></td>
-<td>ID of the archived snapshot to be exported. This field should be specified only when <code>snapshotType</code> is set to <code>Archived</code>. In such cases, the archived snapshot will be used for export. If <code>snapshotType</code> is not <code>Archived</code>, this field is ignored.</td>
+<td>ID of the archived snapshot to export. This field should be specified only when <code>snapshotType</code> is set to <code>Archived</code>.</td>
 </tr>
 <tr>
 <td>destinationAvailabilityZone</td>
 <td>String</td>
-<td>Availability Zone in which to export the disk. It is empty for regions types which do not support availability zones.</td>
+<td>Availability zone the managed disk is exported to. Leave empty for regions or disk types that do not support availability zones.</td>
 </tr>
 <tr>
 <td>destinationRegion</td>
 <td><a href="../../enums/AzureNativeRegion/">AzureNativeRegion</a>!</td>
-<td>Region in which the disk created after export will exist.</td>
+<td>Azure region the managed disk is exported to.</td>
 </tr>
 <tr>
 <td>destinationSubscriptionRubrikId</td>
 <td><a href="../../scalars/UUID/">UUID</a></td>
-<td>Rubrik ID of the subscription in which to export the disk. When empty, the disk is exported to same subscription.</td>
+<td>Rubrik ID of the Azure subscription the managed disk is exported to. When empty, the disk is exported to the subscription it was backed up from.</td>
 </tr>
 <tr>
 <td>diskEncryptionSetNativeId</td>
 <td>String</td>
-<td>Native ID of the disk encryption set for encrypting the newly created disks.</td>
+<td>Native ID of the disk encryption set used to encrypt the exported managed disk. When empty the disk is encrypted with the platform-managed key, which is the Azure default.</td>
 </tr>
 <tr>
 <td>diskName</td>
 <td>String!</td>
-<td>Name of the disk created after export.</td>
+<td>Name of the exported managed disk.</td>
 </tr>
 <tr>
 <td>diskSize</td>
 <td>Int!</td>
-<td>Size of the disk created after export, in GiB.</td>
+<td>Size of the exported managed disk, in GiB.</td>
 </tr>
 <tr>
 <td>diskStorageTier</td>
 <td><a href="../../enums/AzureNativeManagedDiskType/">AzureNativeManagedDiskType</a>!</td>
-<td>Type of the disk created after export.</td>
+<td>Storage tier of the exported managed disk.</td>
 </tr>
 <tr>
 <td>recoveryPurpose</td>
 <td><a href="../../enums/RecoveryPurpose/">RecoveryPurpose</a></td>
-<td>Purpose of the recovery operation. Set to SURGICAL_RECOVERY to automatically exclude quarantined files from the exported disk (subject to feature availability for the account). Defaults to RECOVERY_PURPOSE_UNSPECIFIED, which preserves prior behavior.</td>
+<td>Purpose of the recovery operation. Set to SURGICAL_RECOVERY to automatically exclude quarantined files from the exported managed disk (subject to feature availability for the account). Defaults to RECOVERY_PURPOSE_UNSPECIFIED, which preserves prior behavior.</td>
 </tr>
 <tr>
 <td>resourceGroup</td>
 <td>String!</td>
-<td>Resource group to be associated with the disk created after export.</td>
+<td>Name of the resource group the exported managed disk is created in.</td>
 </tr>
 <tr>
 <td>shouldExportTags</td>
 <td>Boolean!</td>
-<td>Specifies whether to export tags from the snapshot or not. When true, the tags from the snapshot are exported as well.</td>
+<td>Specifies whether the tags at the time of the snapshot are applied to the exported managed disk.</td>
 </tr>
 <tr>
 <td>shouldReplaceAttachedManagedDisk</td>
 <td>Boolean!</td>
-<td>Specifies whether to run only the export job or to run both the export and replace jobs. When true, the attached managed disk is exported and replaced.</td>
+<td>Specifies whether the exported managed disk replaces the original disk on the virtual machine it is attached to.</td>
 </tr>
 <tr>
 <td>shouldUseReplica</td>
 <td>Boolean</td>
-<td>Specifies whether to recover from the replica of the source snapshot or not. Default value is false.</td>
+<td>Specifies whether the replica of the snapshot is used for the export. Ignored when <code>snapshotType</code> is specified.</td>
 </tr>
 <tr>
 <td>snapshotId</td>
 <td><a href="../../scalars/UUID/">UUID</a>!</td>
-<td>Snapshot ID of the snapshot with which the disk is to be exported.</td>
+<td>Snapshot ID of the snapshot from which the managed disk is exported.</td>
 </tr>
 <tr>
 <td>snapshotType</td>
 <td><a href="../../enums/AzureSnapshotType/">AzureSnapshotType</a></td>
-<td>The type of the snapshot to recover from.</td>
+<td>Copy of the snapshot to export from. Defaults to the replica when <code>shouldUseReplica</code> is true, and to the source snapshot otherwise.</td>
 </tr>
 </tbody>
 </table>

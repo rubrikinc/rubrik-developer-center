@@ -25,6 +25,7 @@ query FusionComputeCluster($fid: UUID!) {
     fcClusterId
     id
     isReplica
+    legallyHeldSnapshotCount
     name
     numWorkloadDescendants
     objectType

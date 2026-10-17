@@ -951,6 +951,11 @@
 <td>Archival locations where the snapshot is present.</td>
 </tr>
 <tr>
+<td>archivalTieringStatus</td>
+<td>[<a href="../ArchivalTieringStatus/">ArchivalTieringStatus</a>!]!</td>
+<td>Per-location archival tiering status. One entry per archival location for which CDM has written tiering history. Empty when the snapshot has never been tiered to cold storage.</td>
+</tr>
+<tr>
 <td>cdmId</td>
 <td>String!</td>
 <td>The CDM internal ID.</td>
@@ -1034,6 +1039,11 @@
 <td>indexingAttempts</td>
 <td><a href="../../scalars/Long/">Long</a>!</td>
 <td>Number of indexing attempts.</td>
+</tr>
+<tr>
+<td>irisdbInstanceAppMetadata</td>
+<td><a href="../IrisdbInstanceAppMetadata/">IrisdbInstanceAppMetadata</a></td>
+<td>IRIS DB instance-specific metadata carrying the snapshot statistics and backup type. Null if the snapshot is not of an IRIS DB instance.</td>
 </tr>
 <tr>
 <td>isAnomaly</td>
@@ -1294,7 +1304,7 @@
 <li><a href="../FusionComputeVirtualMachine/">FusionComputeVirtualMachine.newestIndexedSnapshot</a></li>
 <li><a href="../FusionComputeVirtualMachine/">FusionComputeVirtualMachine.newestReplicatedSnapshot</a></li>
 <li><a href="../FusionComputeVirtualMachine/">FusionComputeVirtualMachine.newestSnapshot</a></li>
-<li><em>…and 159 more</em></li>
+<li><em>…and 179 more</em></li>
 </ul>
 
 

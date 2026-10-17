@@ -32,6 +32,7 @@ query AzureNativeVirtualMachine($azureVirtualMachineRubrikId: UUID!) {
     isPreOrPostScriptEnabled
     isProtectable
     isRelic
+    legallyHeldSnapshotCount
     name
     nativeName
     numWorkloadDescendants

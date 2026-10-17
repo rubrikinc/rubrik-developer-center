@@ -15,6 +15,8 @@ Paginated list of KosmosParentHierarchyObjectPhysicalChildType objects with addi
 
 **Referenced by**
 
+- [InformixInstance.physicalChildConnection](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/InformixInstance/index.md)
+- [IrisdbInstance.physicalChildConnection](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/IrisdbInstance/index.md)
 - KosmosParentHierarchyObjectType.physicalChildConnection
 - [MysqldbInstance.physicalChildConnection](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/MysqldbInstance/index.md)
 - [PostgreSQLDbCluster.physicalChildConnection](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/PostgreSQLDbCluster/index.md)

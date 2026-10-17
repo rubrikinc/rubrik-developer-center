@@ -1,6 +1,6 @@
 # isVMwareManagementEnabled
 
-*No description available.*
+Whether VMware management is enabled for the account.
 
 ## Returns
 

@@ -4,21 +4,21 @@ List of principal summaries.
 
 ## Arguments
 
-| Argument                         | Type                                                                                                                                                        | Description                                                              |
-| -------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------ |
-| first                            | Int                                                                                                                                                         | Returns the first n elements from the list.                              |
-| after                            | String                                                                                                                                                      | Returns the elements in the list that occur after the specified cursor.  |
-| last                             | Int                                                                                                                                                         | Returns the last n elements from the list.                               |
-| before                           | String                                                                                                                                                      | Returns the elements in the list that occur before the specified cursor. |
-| filter                           | [PrincipalSummariesFilterInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/PrincipalSummariesFilterInput/index.md)   | Filter to be applied when retrieving principal summaries.                |
-| timelineDate *(required)*        | String!                                                                                                                                                     | Date for which the results will be retrieved.                            |
-| sort                             | [ListPrincipalsSummarySortInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/ListPrincipalsSummarySortInput/index.md) | Field on which to perform the sorting operation.                         |
-| includeCount *(required)*        | Boolean!                                                                                                                                                    | Include counts in the results.                                           |
-| historicalDeltaDays *(required)* | Int!                                                                                                                                                        | Number of historical days to go backward in time to calculate the delta. |
-| includeWhitelistedResults        | Boolean                                                                                                                                                     | Specifies whether whitelisted results should be included.                |
-| insightsMetadataId               | String                                                                                                                                                      | Filter objects with insights metadata ID.                                |
-| includeInsightsMarker            | Boolean                                                                                                                                                     | Specifies whether to include the insights marker.                        |
-| includeAdditionalMetadata        | Boolean                                                                                                                                                     | Specifies whether to include additional metadata required for a feature. |
+| Argument                         | Type                                                                                                                                                        | Description                                                                                                                             |
+| -------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
+| first                            | Int                                                                                                                                                         | Returns the first n elements from the list.                                                                                             |
+| after                            | String                                                                                                                                                      | An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results.       |
+| last                             | Int                                                                                                                                                         | Returns the last n elements from the list.                                                                                              |
+| before                           | String                                                                                                                                                      | An opaque cursor returned from a previous query's startCursor field. Pass this value verbatim to retrieve the previous page of results. |
+| filter                           | [PrincipalSummariesFilterInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/PrincipalSummariesFilterInput/index.md)   | Filter to be applied when retrieving principal summaries.                                                                               |
+| timelineDate                     | String                                                                                                                                                      | Date for which the results will be retrieved. Defaults to the current time.                                                             |
+| sort                             | [ListPrincipalsSummarySortInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/ListPrincipalsSummarySortInput/index.md) | Field on which to perform the sorting operation.                                                                                        |
+| includeCount *(required)*        | Boolean!                                                                                                                                                    | Include counts in the results.                                                                                                          |
+| historicalDeltaDays *(required)* | Int!                                                                                                                                                        | Number of historical days to go backward in time to calculate the delta.                                                                |
+| includeWhitelistedResults        | Boolean                                                                                                                                                     | Specifies whether whitelisted results should be included.                                                                               |
+| insightsMetadataId               | String                                                                                                                                                      | Filter objects with insights metadata ID.                                                                                               |
+| includeInsightsMarker            | Boolean                                                                                                                                                     | Specifies whether to include the insights marker.                                                                                       |
+| includeAdditionalMetadata        | Boolean                                                                                                                                                     | Specifies whether to include additional metadata required for a feature.                                                                |
 
 ## Returns
 
@@ -27,9 +27,8 @@ List of principal summaries.
 ## Sample
 
 ```graphql
-query PrincipalSummaries($timelineDate: String!, $includeCount: Boolean!, $historicalDeltaDays: Int!) {
+query PrincipalSummaries($includeCount: Boolean!, $historicalDeltaDays: Int!) {
   principalSummaries(
-    timelineDate: $timelineDate
     includeCount: $includeCount
     historicalDeltaDays: $historicalDeltaDays
     first: 10
@@ -78,7 +77,6 @@ query PrincipalSummaries($timelineDate: String!, $includeCount: Boolean!, $histo
 
 ```json
 {
-  "timelineDate": "example-string",
   "includeCount": true,
   "historicalDeltaDays": 0
 }

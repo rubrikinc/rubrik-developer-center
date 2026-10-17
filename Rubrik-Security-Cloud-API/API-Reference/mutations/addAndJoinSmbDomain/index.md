@@ -40,10 +40,10 @@ mutation AddAndJoinSmbDomain($input: AddAndJoinSmbDomainInput!) {
         "dnsServers": [
           "example-string"
         ],
+        "enableKerberosForSmb": true,
         "isStickySmbService": true,
         "name": "example-string",
-        "serviceAccount": "example-string",
-        "status": "SMB_DOMAIN_STATUS_CONFIGURED"
+        "serviceAccount": "example-string"
       }
     }
   }

@@ -4,12 +4,12 @@ List all files and directories in a given snappable with the given prefix in nam
 
 ## Arguments
 
-| Argument                 | Type                                                                                                      | Description                                                                            |
-| ------------------------ | --------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------- |
-| first                    | Int                                                                                                       | Returns the first n elements from the list.                                            |
-| after                    | String                                                                                                    | Returns the elements in the list that occur after the specified cursor.                |
-| snappableId *(required)* | [UUID](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/UUID/index.md)! | Snappable ID.                                                                          |
-| searchQuery *(required)* | String!                                                                                                   | Specify either the name or path prefix argument to search for files within a workload. |
+| Argument                 | Type                                                                                                      | Description                                                                                                                       |
+| ------------------------ | --------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
+| first                    | Int                                                                                                       | Returns the first n elements from the list.                                                                                       |
+| after                    | String                                                                                                    | An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results. |
+| snappableId *(required)* | [UUID](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/UUID/index.md)! | Snappable ID.                                                                                                                     |
+| searchQuery *(required)* | String!                                                                                                   | Specify either the name or path prefix argument to search for files within a workload.                                            |
 
 ## Returns
 

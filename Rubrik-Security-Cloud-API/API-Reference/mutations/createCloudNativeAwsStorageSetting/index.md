@@ -1,12 +1,12 @@
 # createCloudNativeAwsStorageSetting
 
-*No description available.*
+Create storage settings for archiving AWS cloud native protected objects.
 
 ## Arguments
 
-| Argument           | Type                                                                                                                                                                           | Description |
-| ------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ----------- |
-| input *(required)* | [CreateCloudNativeAwsStorageSettingInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/CreateCloudNativeAwsStorageSettingInput/index.md)! |             |
+| Argument           | Type                                                                                                                                                                           | Description                              |
+| ------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------------------------------------- |
+| input *(required)* | [CreateCloudNativeAwsStorageSettingInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/CreateCloudNativeAwsStorageSettingInput/index.md)! | Create AWS cloud native storage setting. |
 
 ## Returns
 

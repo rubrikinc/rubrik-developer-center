@@ -947,6 +947,11 @@
 </thead>
 <tbody>
 <tr>
+<td>adDomain</td>
+<td>String</td>
+<td>Kerberos realm reported by ONTAP for the SVM that hosts this namespace: the SVM's CIFS server domain, or its NFS Kerberos realm when the SVM has no CIFS server. Absent when ONTAP reports neither.</td>
+</tr>
+<tr>
 <td>allOrgs</td>
 <td>[<a href="../Org/">Org</a>!]!</td>
 <td>Organizations to which this hierarchy object belongs.</td>
@@ -1007,9 +1012,14 @@
 <td>Path node of the effective SLA Domain source.</td>
 </tr>
 <tr>
+<td>futureLegalHoldInfo</td>
+<td><a href="../FutureLegalHoldInfo/">FutureLegalHoldInfo</a></td>
+<td>Future legal hold rule configured for this object, if any.</td>
+</tr>
+<tr>
 <td>id</td>
 <td><a href="../../scalars/UUID/">UUID</a>!</td>
-<td>Object ID.</td>
+<td>ID of the hierarchy object.</td>
 </tr>
 <tr>
 <td>isReadonly</td>
@@ -1025,6 +1035,11 @@
 <td>latestUserNote</td>
 <td><a href="../LatestUserNote/">LatestUserNote</a></td>
 <td>Latest user note information.</td>
+</tr>
+<tr>
+<td>legallyHeldSnapshotCount</td>
+<td>Int</td>
+<td>Number of snapshots on legal hold for this object.</td>
 </tr>
 <tr>
 <td>logicalChildConnection</td>
@@ -1045,6 +1060,11 @@
 <td>netAppMetroClusterInfo</td>
 <td><a href="../NasNamespaceNetAppMetroClusterInfo/">NasNamespaceNetAppMetroClusterInfo</a></td>
 <td>Optional NetApp Metro Cluster info for the NAS namespace.</td>
+</tr>
+<tr>
+<td>nfsAuthMode</td>
+<td><a href="../../enums/NasAuthMode/">NasAuthMode</a></td>
+<td>NFS authentication mode for this namespace. If absent, the namespace inherits from the NAS system setting.</td>
 </tr>
 <tr>
 <td>nfsDataAddresses</td>
@@ -1092,6 +1112,11 @@
 <td>The source cluster of this object. Returned as a data location because there is no guarantee that Rubrik has knowledge about the source cluster.</td>
 </tr>
 <tr>
+<td>realmStatus</td>
+<td>String</td>
+<td>Kerberos realm reachability status for the namespace. One of KDC_TCP_REACHABLE, NOT_JOINED, or KDC_UNREACHABLE. KDC_TCP_REACHABLE means a TCP connection to the KDC succeeded; it does not confirm a full Kerberos exchange. NOT_JOINED means the Rubrik cluster is not joined to the realm. Absent when neither SMB nor NFS on the namespace uses Kerberos authentication.</td>
+</tr>
+<tr>
 <td>replicatedObjectCount</td>
 <td>Int!</td>
 <td>The number of objects either replicated by this object or related to this object by replication.</td>
@@ -1115,6 +1140,11 @@
 <td>slaPauseStatus</td>
 <td>Boolean!</td>
 <td>Pause status of the effective SLA Domain of the hierarchy object.</td>
+</tr>
+<tr>
+<td>smbAuthMode</td>
+<td><a href="../../enums/NasAuthMode/">NasAuthMode</a></td>
+<td>SMB authentication mode for this namespace. If absent, the namespace inherits from the NAS system setting.</td>
 </tr>
 <tr>
 <td>smbDataAddresses</td>
@@ -1164,7 +1194,19 @@
 <td>descendantConnection</td>
 <td>after</td>
 <td>String</td>
-<td>Returns the elements in the list that occur after the specified cursor.</td>
+<td>An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results.</td>
+</tr>
+<tr>
+<td>descendantConnection</td>
+<td>last</td>
+<td>Int</td>
+<td>Returns the last n elements from the list.</td>
+</tr>
+<tr>
+<td>descendantConnection</td>
+<td>before</td>
+<td>String</td>
+<td>An opaque cursor returned from a previous query's startCursor field. Pass this value verbatim to retrieve the previous page of results.</td>
 </tr>
 <tr>
 <td>descendantConnection</td>
@@ -1206,7 +1248,19 @@
 <td>logicalChildConnection</td>
 <td>after</td>
 <td>String</td>
-<td>Returns the elements in the list that occur after the specified cursor.</td>
+<td>An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results.</td>
+</tr>
+<tr>
+<td>logicalChildConnection</td>
+<td>last</td>
+<td>Int</td>
+<td>Returns the last n elements from the list.</td>
+</tr>
+<tr>
+<td>logicalChildConnection</td>
+<td>before</td>
+<td>String</td>
+<td>An opaque cursor returned from a previous query's startCursor field. Pass this value verbatim to retrieve the previous page of results.</td>
 </tr>
 <tr>
 <td>logicalChildConnection</td>

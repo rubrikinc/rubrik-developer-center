@@ -946,16 +946,6 @@
 </thead>
 <tbody>
 <tr>
-<td>clusterUuid</td>
-<td><a href="../../types/scalars/UUID/">UUID</a></td>
-<td>The Rubrik cluster ID.</td>
-</tr>
-<tr>
-<td>status <em>(required)</em></td>
-<td>[<a href="../../types/enums/CdmReportMigrationStatus/">CdmReportMigrationStatus</a>!]!</td>
-<td>Rubrik cluster report migration status.</td>
-</tr>
-<tr>
 <td>first</td>
 <td>Int</td>
 <td>Returns the first n elements from the list.</td>
@@ -963,7 +953,7 @@
 <tr>
 <td>after</td>
 <td>String</td>
-<td>Returns the elements in the list that occur after the specified cursor.</td>
+<td>An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results.</td>
 </tr>
 <tr>
 <td>last</td>
@@ -973,7 +963,17 @@
 <tr>
 <td>before</td>
 <td>String</td>
-<td>Returns the elements in the list that occur before the specified cursor.</td>
+<td>An opaque cursor returned from a previous query's startCursor field. Pass this value verbatim to retrieve the previous page of results.</td>
+</tr>
+<tr>
+<td>clusterUuid</td>
+<td><a href="../../types/scalars/UUID/">UUID</a></td>
+<td>The Rubrik cluster ID.</td>
+</tr>
+<tr>
+<td>status <em>(required)</em></td>
+<td>[<a href="../../types/enums/CdmReportMigrationStatus/">CdmReportMigrationStatus</a>!]!</td>
+<td>Rubrik cluster report migration status.</td>
 </tr>
 </tbody>
 </table>

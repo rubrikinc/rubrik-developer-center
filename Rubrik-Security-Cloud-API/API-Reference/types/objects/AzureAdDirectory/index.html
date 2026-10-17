@@ -1042,6 +1042,11 @@
 <td>When enabled, time of the first snapshot saved to the Zeus store.</td>
 </tr>
 <tr>
+<td>futureLegalHoldInfo</td>
+<td><a href="../FutureLegalHoldInfo/">FutureLegalHoldInfo</a></td>
+<td>Future legal hold rule configured for this object, if any.</td>
+</tr>
+<tr>
 <td>id</td>
 <td><a href="../../scalars/UUID/">UUID</a>!</td>
 <td>ID of the hierarchy object.</td>
@@ -1207,6 +1212,11 @@
 <td>User count from the latest snapshot.</td>
 </tr>
 <tr>
+<td>legallyHeldSnapshotCount</td>
+<td>Int</td>
+<td>Number of snapshots on legal hold for this object.</td>
+</tr>
+<tr>
 <td>logicalPath</td>
 <td>[<a href="../PathNode/">PathNode</a>!]!</td>
 <td>Sequential list of the logical ancestors of this object.</td>
@@ -1294,7 +1304,7 @@
 <tr>
 <td>rscPendingObjectPauseAssignment</td>
 <td><a href="../../enums/PendingObjectPauseAssignmentStatus/">PendingObjectPauseAssignmentStatus</a></td>
-<td>Object pause pending assignment details for RSC objects.</td>
+<td>Pending pause or unpause assignment for RSC-native objects.</td>
 </tr>
 <tr>
 <td>securityMetadata</td>

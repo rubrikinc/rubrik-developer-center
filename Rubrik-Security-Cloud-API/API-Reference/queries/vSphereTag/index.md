@@ -1,6 +1,6 @@
 # vSphereTag
 
-*No description available.*
+Details of the vSphere tag with the given Rubrik ID.
 
 ## Arguments
 
@@ -24,6 +24,7 @@ query VSphereTag($fid: UUID!) {
     id
     isFilter
     isReplica
+    legallyHeldSnapshotCount
     name
     numWorkloadDescendants
     objectIds

@@ -32,6 +32,7 @@ query CloudNativeSnapshotTypeDetails($snapshotId: UUID!) {
     "cloudNativeSnapshotTypeDetails": {
       "snapshotDetails": [
         {
+          "archivalLocationPurpose": "ADO",
           "cloudType": "ALL",
           "locationName": "example-string",
           "rcvTier": "ARCHIVE",

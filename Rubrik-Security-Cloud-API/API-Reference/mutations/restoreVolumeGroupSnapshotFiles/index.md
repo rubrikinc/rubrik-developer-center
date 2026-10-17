@@ -1,6 +1,6 @@
 # restoreVolumeGroupSnapshotFiles
 
-Restore files from the Volume Group snapshot Supported in v5.0+ Restore filess to the original Host.
+Restore files from the Volume Group snapshot Supported in v5.0+ Restore files to the original host.
 
 ## Arguments
 

@@ -953,7 +953,7 @@
 <tr>
 <td>after</td>
 <td>String</td>
-<td>Returns the elements in the list that occur after the specified cursor.</td>
+<td>An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results.</td>
 </tr>
 <tr>
 <td>last</td>
@@ -963,7 +963,7 @@
 <tr>
 <td>before</td>
 <td>String</td>
-<td>Returns the elements in the list that occur before the specified cursor.</td>
+<td>An opaque cursor returned from a previous query's startCursor field. Pass this value verbatim to retrieve the previous page of results.</td>
 </tr>
 <tr>
 <td>snappableFid <em>(required)</em></td>
@@ -984,6 +984,16 @@
 <td>sharepointDriveSearchFilter</td>
 <td><a href="../../types/inputs/OnedriveSearchFilter/">OnedriveSearchFilter</a></td>
 <td>Optional SharePoint drive search filter.</td>
+</tr>
+<tr>
+<td>siteChildId</td>
+<td>String</td>
+<td>The site child ID for SharePoint descendant objects.</td>
+</tr>
+<tr>
+<td>siteChildType</td>
+<td><a href="../../types/enums/SharePointDescendantType/">SharePointDescendantType</a></td>
+<td>The site child type for SharePoint descendant objects.</td>
 </tr>
 </tbody>
 </table>

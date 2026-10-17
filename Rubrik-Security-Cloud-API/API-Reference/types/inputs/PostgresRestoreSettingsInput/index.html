@@ -926,22 +926,27 @@
 <tr>
 <td>customRestartScriptFile</td>
 <td>String</td>
-<td>Absolute path on the host to the custom script to restart the PostgreSQL instance during standby restore. Required when shouldUseCustomRestartScript is true and shouldRestoreAsReplica or shouldRestoreAsReadOnly is true.</td>
+<td>Supported in v9.6+ Absolute path on the host to the custom script to restart the PostgreSQL instance during standby restore. Required when shouldUseCustomRestartScript is true and shouldRestoreAsReplica or shouldRestoreAsReadOnly is true.</td>
 </tr>
 <tr>
 <td>customStartScriptFile</td>
 <td>String</td>
-<td>Absolute path on the host to the custom script to start the PostgreSQL instance during restore. Required when shouldUseCustomRestartScript is true.</td>
+<td>Supported in v9.6+ Absolute path on the host to the custom script to start the PostgreSQL instance during restore. Required when shouldUseCustomRestartScript is true.</td>
 </tr>
 <tr>
 <td>customStopScriptFile</td>
 <td>String</td>
-<td>Absolute path on the host to the custom script to stop the PostgreSQL instance during restore. Required when shouldUseCustomRestartScript is true.</td>
+<td>Supported in v9.6+ Absolute path on the host to the custom script to stop the PostgreSQL instance during restore. Required when shouldUseCustomRestartScript is true.</td>
 </tr>
 <tr>
 <td>dbUsername</td>
 <td>String</td>
 <td>Supported in v9.5+ PostgreSQL database role name for psql connections during restore. Use when peer authentication with ident maps requires a different DB role than the OS username.</td>
+</tr>
+<tr>
+<td>postgresAutomatedRestoreDatabaseDetails</td>
+<td><a href="../PostgresAutomatedRestoreDatabaseDetailsInput/">PostgresAutomatedRestoreDatabaseDetailsInput</a></td>
+<td>Database-level restore options. Omit for cluster-level restores.</td>
 </tr>
 <tr>
 <td>shouldOverrideConfFiles</td>
@@ -961,7 +966,7 @@
 <tr>
 <td>shouldUseCustomRestartScript</td>
 <td>Boolean</td>
-<td>Whether to use custom scripts for start/stop during restore. When true, customStartScriptFile and customStopScriptFile are required. customRestartScriptFile is additionally required when shouldRestoreAsReplica or shouldRestoreAsReadOnly is true. Requires the enableApiCustomRestartScripts cluster configuration to be enabled.</td>
+<td>Supported in v9.6+ Whether to use custom scripts for start/stop during restore. When true, customStartScriptFile and customStopScriptFile are required. customRestartScriptFile is additionally required when shouldRestoreAsReplica or shouldRestoreAsReadOnly is true. Requires the enableApiCustomRestartScripts cluster configuration to be enabled.</td>
 </tr>
 <tr>
 <td>systemUsername</td>

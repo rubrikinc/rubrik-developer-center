@@ -33,6 +33,7 @@ query NasShare($fid: UUID!) {
     isRelic
     isReplica
     isStale
+    legallyHeldSnapshotCount
     name
     numWorkloadDescendants
     objectType

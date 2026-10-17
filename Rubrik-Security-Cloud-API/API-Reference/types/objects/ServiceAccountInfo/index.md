@@ -16,5 +16,4 @@ Supported in v9.2+ The details of the RSC service account.
 **Referenced by**
 
 - [K8sClusterSummary.crdServiceAccountInfo](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/K8sClusterSummary/index.md)
-- [K8sClusterSummary.dbServiceAccountInfo](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/K8sClusterSummary/index.md)
 - [K8sClusterSummary.onboardingServiceAccountInfo](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/K8sClusterSummary/index.md)

@@ -923,8 +923,8 @@
 
 
 <h1 id="atlassiansite">AtlassianSite</h1>
-<p>Atlassian site.</p>
-<p><strong>Implements:</strong> <a href="../../interfaces/SaasAppsOrganization/">SaasAppsOrganization</a>, <a href="../../interfaces/HierarchyObject/">HierarchyObject</a>, <a href="../../interfaces/PolarisHierarchyObject/">PolarisHierarchyObject</a></p>
+<p>Atlassian site managed by Rubrik.</p>
+<p><strong>Implements:</strong> <a href="../../interfaces/SaasAppsOrganization/">SaasAppsOrganization</a>, <a href="../../interfaces/PolarisHierarchyObject/">PolarisHierarchyObject</a>, <a href="../../interfaces/HierarchyObject/">HierarchyObject</a></p>
 <h2 id="fields">Fields</h2>
 <table>
 <thead>
@@ -948,7 +948,7 @@
 <tr>
 <td>apiUsage</td>
 <td><a href="../ApiUsageInfo/">ApiUsageInfo</a>!</td>
-<td>The API usage of the organization during the last 24 hours.</td>
+<td>API usage data for an org by ID.</td>
 </tr>
 <tr>
 <td>authorizedOperations</td>
@@ -958,7 +958,7 @@
 <tr>
 <td>backupJobsStats</td>
 <td><a href="../backupJobsStats/">backupJobsStats</a></td>
-<td>Stats of the backup jobs in the last 24 hours.</td>
+<td>Backup job stats by org ID.</td>
 </tr>
 <tr>
 <td>configuredSlaDomain</td>
@@ -968,7 +968,7 @@
 <tr>
 <td>connectionStatus</td>
 <td><a href="../ConnectionStatus/">ConnectionStatus</a>!</td>
-<td>The connection status to the organization.</td>
+<td>Connection status for an org by ID.</td>
 </tr>
 <tr>
 <td>effectiveRetentionSlaDomain</td>
@@ -988,12 +988,17 @@
 <tr>
 <td>environmentType</td>
 <td><a href="../../enums/SaasEnvironmentType/">SaasEnvironmentType</a>!</td>
-<td></td>
+<td>Environment type of the organiztion.</td>
 </tr>
 <tr>
 <td>exocomputeId</td>
 <td><a href="../../scalars/UUID/">UUID</a></td>
 <td>Denotes the ID of the exocompute cluster associated with the org.</td>
+</tr>
+<tr>
+<td>futureLegalHoldInfo</td>
+<td><a href="../FutureLegalHoldInfo/">FutureLegalHoldInfo</a></td>
+<td>Future legal hold rule configured for this object, if any.</td>
 </tr>
 <tr>
 <td>id</td>
@@ -1018,7 +1023,12 @@
 <tr>
 <td>lastRefreshTime</td>
 <td><a href="../../scalars/DateTime/">DateTime</a></td>
-<td>The time at which the Atlassian site was last synced to Rubrik.</td>
+<td>The time at which the SaaS organization was last synced to Rubrik.</td>
+</tr>
+<tr>
+<td>legallyHeldSnapshotCount</td>
+<td>Int</td>
+<td>Number of snapshots on legal hold for this object.</td>
 </tr>
 <tr>
 <td>logicalPath</td>
@@ -1073,12 +1083,12 @@
 <tr>
 <td>rscPendingObjectPauseAssignment</td>
 <td><a href="../../enums/PendingObjectPauseAssignmentStatus/">PendingObjectPauseAssignmentStatus</a></td>
-<td>Object pause pending assignment details for RSC objects.</td>
+<td>Pending pause or unpause assignment for RSC-native objects.</td>
 </tr>
 <tr>
 <td>saasAppsOrgInfo</td>
 <td><a href="../SaasAppsOrgInfo/">SaasAppsOrgInfo</a>!</td>
-<td>The information of the Saas Apps organization.</td>
+<td>Org size info by org ID.</td>
 </tr>
 <tr>
 <td>saasOrgType</td>
@@ -1113,12 +1123,12 @@
 <tr>
 <td>status</td>
 <td><a href="../../enums/SaasOrganizationStatus/">SaasOrganizationStatus</a>!</td>
-<td></td>
+<td>The state of the SaaS organization.</td>
 </tr>
 <tr>
 <td>storageRegion</td>
 <td>String</td>
-<td>The RSC storage region for the organization.</td>
+<td>Exocompute cluster for an org's storage region.</td>
 </tr>
 </tbody>
 </table>

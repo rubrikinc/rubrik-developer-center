@@ -1,6 +1,6 @@
 # GcpStorageClass
 
-Storage class for GCP type location.
+GCP GCS storage classes. See https://docs.cloud.google.com/storage/docs/storage-classes.
 
 ## Values
 
@@ -11,4 +11,3 @@ Storage class for GCP type location.
 | DURABLE_REDUCED_AVAILABILITY_GCP *(deprecated: Use STANDARD_GCP instead.)* | Durable reduced Availability GCP storage class. |
 | NEARLINE_GCP                                                               | Nearline GCP storage class.                     |
 | STANDARD_GCP                                                               | Standard GCP storage class.                     |
-| UNKNOWN_STORAGE_CLASS_GCP                                                  | Unknown GCP storage class.                      |

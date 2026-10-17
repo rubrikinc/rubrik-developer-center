@@ -17,6 +17,7 @@ Creates reader type for Azure archival location on a CDM cluster.
 ```graphql
 mutation CreateAzureReaderTarget($input: CreateAzureReaderTargetInput!) {
   createAzureReaderTarget(input: $input) {
+    archivalLocationPurpose
     clusterName
     consumedBytes
     failedTasks
@@ -57,11 +58,11 @@ mutation CreateAzureReaderTarget($input: CreateAzureReaderTargetInput!) {
 {
   "data": {
     "createAzureReaderTarget": {
+      "archivalLocationPurpose": "ADO",
       "clusterName": "example-string",
       "consumedBytes": 0,
       "failedTasks": 0,
-      "id": "example-string",
-      "isActive": true
+      "id": "example-string"
     }
   }
 }

@@ -7,9 +7,9 @@ Query Azure DevOps project objects.
 | Argument                | Type                                                                                                                                       | Description                                                                                                                                                                        |
 | ----------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | first                   | Int                                                                                                                                        | Returns the first n elements from the list.                                                                                                                                        |
-| after                   | String                                                                                                                                     | Returns the elements in the list that occur after the specified cursor.                                                                                                            |
+| after                   | String                                                                                                                                     | An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results.                                                  |
 | last                    | Int                                                                                                                                        | Returns the last n elements from the list.                                                                                                                                         |
-| before                  | String                                                                                                                                     | Returns the elements in the list that occur before the specified cursor.                                                                                                           |
+| before                  | String                                                                                                                                     | An opaque cursor returned from a previous query's startCursor field. Pass this value verbatim to retrieve the previous page of results.                                            |
 | queryType *(required)*  | [QueryType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/QueryType/index.md)!                          | The type of query to perform (CHILDREN or DESCENDANTS).                                                                                                                            |
 | ancestorId *(required)* | String!                                                                                                                                    | Ancestor object/root ID.                                                                                                                                                           |
 | filter *(required)*     | \[[Filter](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/Filter/index.md)!\]!                          | The hierarchy object filter.                                                                                                                                                       |
@@ -32,10 +32,12 @@ query AzureDevOpsProjects($queryType: QueryType!, $ancestorId: String!, $filter:
     first: 10
   ) {
     nodes {
+      artifactsFixedObjectId
       authorizedOperations
       fixedObjectId
       id
       isRelic
+      legallyHeldSnapshotCount
       name
       nativeId
       numWorkloadDescendants
@@ -74,14 +76,14 @@ query AzureDevOpsProjects($queryType: QueryType!, $ancestorId: String!, $filter:
       "nodes": [
         [
           {
+            "artifactsFixedObjectId": "00000000-0000-0000-0000-000000000000",
             "authorizedOperations": [
               "ACCESS_CDM_CLUSTER"
             ],
             "fixedObjectId": "00000000-0000-0000-0000-000000000000",
             "id": "00000000-0000-0000-0000-000000000000",
             "isRelic": true,
-            "name": "example-string",
-            "nativeId": "example-string"
+            "legallyHeldSnapshotCount": 0
           }
         ]
       ],

@@ -4,18 +4,18 @@ List of GCP projects.
 
 ## Arguments
 
-| Argument                    | Type                                                                                                                                                    | Description                                                                                               |
-| --------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------- |
-| first                       | Int                                                                                                                                                     | Returns the first n elements from the list.                                                               |
-| after                       | String                                                                                                                                                  | Returns the elements in the list that occur after the specified cursor.                                   |
-| last                        | Int                                                                                                                                                     | Returns the last n elements from the list.                                                                |
-| before                      | String                                                                                                                                                  | Returns the elements in the list that occur before the specified cursor.                                  |
-| sortBy                      | [GcpNativeProjectSortFields](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/GcpNativeProjectSortFields/index.md)      | Sort fields for list of GCP projects.                                                                     |
-| sortOrder                   | [SortOrder](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/SortOrder/index.md)                                        | Sorts the order of results.                                                                               |
-| projectFilters              | [GcpNativeProjectFilters](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/GcpNativeProjectFilters/index.md)           | Filters for list of GCP projects.                                                                         |
-| authorizedOperationFilter   | [Operation](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/Operation/index.md)                                        | Restricts the list to projects the caller may perform the given operation on.                             |
-| workloadHierarchy           | [WorkloadLevelHierarchy](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/WorkloadLevelHierarchy/index.md)              | Provide optional workload hierarchy for RBAC and SLA, none value is assumed to be All workload hierarchy. |
-| gcpNativeProtectionFeatures | \[[GcpNativeProtectionFeature](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/GcpNativeProtectionFeature/index.md)!\] | List of GCP native protection features.                                                                   |
+| Argument                    | Type                                                                                                                                                    | Description                                                                                                                             |
+| --------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
+| first                       | Int                                                                                                                                                     | Returns the first n elements from the list.                                                                                             |
+| after                       | String                                                                                                                                                  | An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results.       |
+| last                        | Int                                                                                                                                                     | Returns the last n elements from the list.                                                                                              |
+| before                      | String                                                                                                                                                  | An opaque cursor returned from a previous query's startCursor field. Pass this value verbatim to retrieve the previous page of results. |
+| sortBy                      | [GcpNativeProjectSortFields](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/GcpNativeProjectSortFields/index.md)      | Sort fields for list of GCP projects.                                                                                                   |
+| sortOrder                   | [SortOrder](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/SortOrder/index.md)                                        | Sorts the order of results.                                                                                                             |
+| projectFilters              | [GcpNativeProjectFilters](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/GcpNativeProjectFilters/index.md)           | Filters for list of GCP projects.                                                                                                       |
+| authorizedOperationFilter   | [Operation](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/Operation/index.md)                                        | Restricts the list to projects the caller may perform the given operation on.                                                           |
+| workloadHierarchy           | [WorkloadLevelHierarchy](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/WorkloadLevelHierarchy/index.md)              | Provide optional workload hierarchy for RBAC and SLA, none value is assumed to be All workload hierarchy.                               |
+| gcpNativeProtectionFeatures | \[[GcpNativeProtectionFeature](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/GcpNativeProtectionFeature/index.md)!\] | List of GCP native protection features.                                                                                                 |
 
 ## Returns
 
@@ -35,6 +35,7 @@ query {
       id
       isRelic
       lastRefreshedAt
+      legallyHeldSnapshotCount
       name
       nativeId
       nativeName

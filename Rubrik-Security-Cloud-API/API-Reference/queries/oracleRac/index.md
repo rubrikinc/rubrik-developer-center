@@ -25,6 +25,7 @@ query OracleRac($fid: UUID!) {
     hostLogRetentionHours
     id
     isReplica
+    legallyHeldSnapshotCount
     logBackupFrequency
     logRetentionHours
     name

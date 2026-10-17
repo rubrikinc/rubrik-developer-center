@@ -30,6 +30,7 @@ query FusionComputeDatastore($fid: UUID!) {
     id
     isLocal
     isReplica
+    legallyHeldSnapshotCount
     name
     numWorkloadDescendants
     objectType

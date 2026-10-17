@@ -1967,6 +1967,10 @@
 <td>Filter objects with mismatched SLA Domain and backup storage protection status.</td>
 </tr>
 <tr>
+<td>M365_OBJECT_STATUS</td>
+<td>Filter M365 objects by their derived object status. Texts accepts one or more of "PROTECTED", "UNPROTECTED", "RELIC", "UNLICENSED"; an object matches when its status is any of them.  Status is a single value per object, resolved in precedence order RELIC &gt; UNPROTECTED &gt; UNLICENSED &gt; PROTECTED, so the statuses partition the result set rather than overlapping. Only Mailbox and OneDrive carry licensing, so Sites and Teams are never UNLICENSED.</td>
+</tr>
+<tr>
 <td>M365_PREFERRED_DATA_LOCATION</td>
 <td>Filter by preferred data location. Applicable for M365 workloads.</td>
 </tr>
@@ -2475,8 +2479,20 @@
 <td>Filter by status of SapHanaSystem.</td>
 </tr>
 <tr>
+<td>SECURITY_NOTIFICATION_MUTE_STATUS</td>
+<td>Filter by whether the object is muted for either Threat Monitoring or Anomaly Detection security notifications. Combine with <code>texts</code>: texts = ["MUTED"] for the Muted bucket, texts = ["ACTIVE"] for the Active bucket. Omit the filter entirely for "All". Gated on the REL_ENABLE_DTA_OBJECT_MUTE feature flag; passing this filter for an account where the flag is off is rejected.</td>
+</tr>
+<tr>
 <td>SENSITIVITY_STATUS</td>
 <td>Filter by sensitivity status.</td>
+</tr>
+<tr>
+<td>SNAPSHOT_TIME_RANGE</td>
+<td>Filter M365 objects having at least one unexpired snapshot taken within a time window. Texts[0] is the RFC3339 start and Texts[1] the RFC3339 end, both inclusive.</td>
+</tr>
+<tr>
+<td>SNAPSHOT_TYPE</td>
+<td>Filter M365 objects having at least one unexpired snapshot of the given type. Texts accepts one or more of "ON_DEMAND", "POLICY_BASED".</td>
 </tr>
 <tr>
 <td>TOP_LEVEL_SITES_OF_O365_ORG</td>

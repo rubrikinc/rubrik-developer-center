@@ -954,6 +954,11 @@
 <td>Supported in v9.2+ IP address of the master node of the Kubernetes cluster. This is required only when transport type is NodePort.</td>
 </tr>
 <tr>
+<td>loadBalancerAnnotations</td>
+<td><a href="../LoadBalancerAnnotationInput/">LoadBalancerAnnotationInput</a></td>
+<td>Annotations to set on the generated load balancer Service. Only used when transport is loadbalancer. When non-empty, this map replaces the built-in per-distribution annotations entirely.</td>
+</tr>
+<tr>
 <td>maxConcurrentAgents</td>
 <td>Int</td>
 <td>Supported in v9.6+ Maximum number of kupr backup agents allowed to run concurrently against this Kubernetes cluster. Set to 0 (or omit) to leave the throttle unlimited.</td>

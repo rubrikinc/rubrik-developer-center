@@ -21,6 +21,7 @@ query O365Mailbox($snappableFid: UUID!) {
     id
     isRelic
     jobTitle
+    legallyHeldSnapshotCount
     name
     numWorkloadDescendants
     objectType
@@ -50,8 +51,8 @@ query O365Mailbox($snappableFid: UUID!) {
       "id": "00000000-0000-0000-0000-000000000000",
       "isRelic": true,
       "jobTitle": "example-string",
+      "legallyHeldSnapshotCount": 0,
       "name": "example-string",
-      "numWorkloadDescendants": 0,
       "allOrgs": [
         {
           "allUrls": [

@@ -16,9 +16,11 @@ A Rubrik CDM Managed Hierarchy object.
 | effectiveRetentionSlaDomain       | [SlaDomain](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/SlaDomain/index.md)                                                 | Effective retention of the SLA Domain of the hierarchy object.                                                                                                                               |
 | effectiveSlaDomain                | [SlaDomain](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/SlaDomain/index.md)!                                                | Effective SLA Domain of the hierarchy object.                                                                                                                                                |
 | effectiveSlaSourceObject          | [PathNode](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/PathNode/index.md)                                                      | Path node of the effective SLA Domain source.                                                                                                                                                |
+| futureLegalHoldInfo               | [FutureLegalHoldInfo](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/FutureLegalHoldInfo/index.md)                                | Future legal hold rule configured for this object, if any.                                                                                                                                   |
 | id                                | [UUID](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/UUID/index.md)!                                                             | ID of the hierarchy object.                                                                                                                                                                  |
 | isReplica                         | Boolean                                                                                                                                                               | True if this object is a replica, its current cluster differs from its source (primary) cluster. False if the object resides on its source cluster. Null when the source cluster is unknown. |
 | latestUserNote                    | [LatestUserNote](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/LatestUserNote/index.md)                                          | Latest user note information.                                                                                                                                                                |
+| legallyHeldSnapshotCount          | Int                                                                                                                                                                   | Number of snapshots on legal hold for this object.                                                                                                                                           |
 | logicalPath                       | \[[PathNode](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/PathNode/index.md)!\]!                                                | Sequential list of the logical ancestors of this object.                                                                                                                                     |
 | name                              | String!                                                                                                                                                               | Name of the hierarchy object.                                                                                                                                                                |
 | numWorkloadDescendants            | Int!                                                                                                                                                                  | Number of descendant workloads of this object.                                                                                                                                               |
@@ -73,6 +75,9 @@ A Rubrik CDM Managed Hierarchy object.
 - [HypervServer](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/HypervServer/index.md)
 - [HypervisorEnvironmentV1](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/HypervisorEnvironmentV1/index.md)
 - [HypervisorVirtualMachineV1](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/HypervisorVirtualMachineV1/index.md)
+- [InformixInstance](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/InformixInstance/index.md)
+- [IrisdbDatabase](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/IrisdbDatabase/index.md)
+- [IrisdbInstance](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/IrisdbInstance/index.md)
 - [KubernetesCluster](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/KubernetesCluster/index.md)
 - [KubernetesLabel](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/KubernetesLabel/index.md)
 - [KubernetesNamespaceType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/KubernetesNamespaceType/index.md)
@@ -120,6 +125,7 @@ A Rubrik CDM Managed Hierarchy object.
 - [OracleHost](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/OracleHost/index.md)
 - [OracleRac](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/OracleRac/index.md)
 - [PhysicalHost](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/PhysicalHost/index.md)
+- [PingFederateClusterV1](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/PingFederateClusterV1/index.md)
 - [PostgreSQLDatabase](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/PostgreSQLDatabase/index.md)
 - [PostgreSQLDbCluster](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/PostgreSQLDbCluster/index.md)
 - [ProxmoxClusterV1](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/ProxmoxClusterV1/index.md)
@@ -132,14 +138,14 @@ A Rubrik CDM Managed Hierarchy object.
 - [SapHanaDatabase](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/SapHanaDatabase/index.md)
 - [SapHanaSystem](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/SapHanaSystem/index.md)
 - [ShareFileset](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/ShareFileset/index.md)
-- [Vcd](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/Vcd/index.md)
+- [SnapMirrorCloud](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/SnapMirrorCloud/index.md)
 - [VcdOrg](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/VcdOrg/index.md)
-- [VcdOrgVdc](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/VcdOrgVdc/index.md)
 - [VcdVapp](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/VcdVapp/index.md)
-- [VcdVimServer](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/VcdVimServer/index.md)
 - [VolumeGroup](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/VolumeGroup/index.md)
 - [VsphereComputeCluster](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/VsphereComputeCluster/index.md)
+- [VsphereContentLibrary](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/VsphereContentLibrary/index.md)
 - [VsphereDatacenter](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/VsphereDatacenter/index.md)
+- [VsphereDatacenterFolder](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/VsphereDatacenterFolder/index.md)
 - [VsphereDatastore](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/VsphereDatastore/index.md)
 - [VsphereDatastoreCluster](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/VsphereDatastoreCluster/index.md)
 - [VsphereFolder](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/VsphereFolder/index.md)

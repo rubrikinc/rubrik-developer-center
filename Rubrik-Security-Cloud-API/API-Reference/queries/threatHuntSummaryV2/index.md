@@ -4,19 +4,19 @@ The summary of the threat hunt.
 
 ## Arguments
 
-| Argument                 | Type                                                                                                                                                       | Description                                                                      |
-| ------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------- |
-| first                    | Int                                                                                                                                                        | Returns the first n elements from the list.                                      |
-| after                    | String                                                                                                                                                     | Returns the elements in the list that occur after the specified cursor.          |
-| last                     | Int                                                                                                                                                        | Returns the last n elements from the list.                                       |
-| before                   | String                                                                                                                                                     | Returns the elements in the list that occur before the specified cursor.         |
-| huntId *(required)*      | String!                                                                                                                                                    | ID of the threat hunt.                                                           |
-| objectTypeFilter         | [String!]                                                                                                                                                  | Optional list of object types to filter by. Should be of type ManagedObjectType. |
-| matchesFoundFilter       | [ThreatHuntMatchesFound](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/ThreatHuntMatchesFound/index.md)                 | Optionally filter by if the hunt had any matches.                                |
-| quarantinedMatchesFilter | [ThreatHuntQuarantinedMatchType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/ThreatHuntQuarantinedMatchType/index.md) | Optionally filter hunts based on whether they have quarantined matches.          |
-| threatHuntSummaryFilters | [ThreatHuntSummaryFiltersInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/ThreatHuntSummaryFiltersInput/index.md)  | Filters to apply to the threat hunt summary.                                     |
-| threatHuntSummarySort    | [ThreatHuntSummarySort](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/ThreatHuntSummarySort/index.md)                  | Sorts threat hunt object summaries.                                              |
-| workloadNameSearch       | String                                                                                                                                                     | Optional object name search filter with partial match.                           |
+| Argument                 | Type                                                                                                                                                       | Description                                                                                                                             |
+| ------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
+| first                    | Int                                                                                                                                                        | Returns the first n elements from the list.                                                                                             |
+| after                    | String                                                                                                                                                     | An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results.       |
+| last                     | Int                                                                                                                                                        | Returns the last n elements from the list.                                                                                              |
+| before                   | String                                                                                                                                                     | An opaque cursor returned from a previous query's startCursor field. Pass this value verbatim to retrieve the previous page of results. |
+| huntId *(required)*      | String!                                                                                                                                                    | ID of the threat hunt.                                                                                                                  |
+| objectTypeFilter         | [String!]                                                                                                                                                  | Optional list of object types to filter by. Should be of type ManagedObjectType.                                                        |
+| matchesFoundFilter       | [ThreatHuntMatchesFound](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/ThreatHuntMatchesFound/index.md)                 | Optionally filter by if the hunt had any matches.                                                                                       |
+| quarantinedMatchesFilter | [ThreatHuntQuarantinedMatchType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/ThreatHuntQuarantinedMatchType/index.md) | Optionally filter hunts based on whether they have quarantined matches.                                                                 |
+| threatHuntSummaryFilters | [ThreatHuntSummaryFiltersInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/ThreatHuntSummaryFiltersInput/index.md)  | Filters to apply to the threat hunt summary.                                                                                            |
+| threatHuntSummarySort    | [ThreatHuntSummarySort](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/ThreatHuntSummarySort/index.md)                  | Sorts threat hunt object summaries.                                                                                                     |
+| workloadNameSearch       | String                                                                                                                                                     | Optional object name search filter with partial match.                                                                                  |
 
 ## Returns
 
@@ -39,6 +39,7 @@ query ThreatHuntSummaryV2($huntId: String!) {
       objectScanStatus
       totalMatchedPaths
       totalMatchedSnapshots
+      totalRegistryKeyMatches
       totalUniqueMatchedPaths
     }
     pageInfo {

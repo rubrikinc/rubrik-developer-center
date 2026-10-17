@@ -4,9 +4,9 @@ Create a scheduled report.
 
 ## Arguments
 
-| Argument           | Type                                                                                                                                                 | Description |
-| ------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------- | ----------- |
-| input *(required)* | [CreateScheduledReportInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/CreateScheduledReportInput/index.md)! |             |
+| Argument           | Type                                                                                                                                                 | Description                            |
+| ------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------- |
+| input *(required)* | [CreateScheduledReportInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/CreateScheduledReportInput/index.md)! | Input for creating a scheduled report. |
 
 ## Returns
 

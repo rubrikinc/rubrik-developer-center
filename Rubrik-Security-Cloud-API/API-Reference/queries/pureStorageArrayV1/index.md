@@ -24,6 +24,7 @@ query PureStorageArrayV1($id: UUID!) {
     hostName
     id
     isReplica
+    legallyHeldSnapshotCount
     name
     numWorkloadDescendants
     objectType

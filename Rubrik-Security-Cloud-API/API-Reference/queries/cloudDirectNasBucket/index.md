@@ -27,6 +27,7 @@ query CloudDirectNasBucket($fid: UUID!) {
     isHidden
     isRelic
     isStale
+    legallyHeldSnapshotCount
     name
     namespaceId
     numWorkloadDescendants

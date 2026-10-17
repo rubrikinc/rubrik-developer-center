@@ -25,6 +25,7 @@ query FailoverClusterApp($fid: UUID!) {
     id
     isArchived
     isReplica
+    legallyHeldSnapshotCount
     name
     numWorkloadDescendants
     objectType

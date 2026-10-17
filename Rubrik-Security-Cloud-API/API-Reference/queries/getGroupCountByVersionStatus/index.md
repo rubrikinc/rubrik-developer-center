@@ -1,6 +1,6 @@
 # getGroupCountByVersionStatus
 
-*No description available.*
+Counts of Rubrik clusters grouped by CDM version status.
 
 ## Returns
 

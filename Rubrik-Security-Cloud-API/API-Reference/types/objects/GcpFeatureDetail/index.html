@@ -937,7 +937,7 @@
 <tr>
 <td>enabledPermissionGroups</td>
 <td>[<a href="../../enums/PermissionsGroup/">PermissionsGroup</a>!]!</td>
-<td>Permission Groups enabled for the feature.</td>
+<td>Permission Groups enabled for the feature. Only populated if the feature flag for permission groups is enabled.</td>
 </tr>
 <tr>
 <td>feature</td>
@@ -952,12 +952,12 @@
 <tr>
 <td>roleId</td>
 <td>String!</td>
-<td>ID of the role created for this feature.</td>
+<td>Specifies the ID of the feature-specific role, if it exists.</td>
 </tr>
 <tr>
 <td>status</td>
 <td><a href="../../enums/CloudAccountStatus/">CloudAccountStatus</a>!</td>
-<td>Current operational status of the feature.</td>
+<td>Specifies the status of the cloud account.</td>
 </tr>
 </tbody>
 </table>

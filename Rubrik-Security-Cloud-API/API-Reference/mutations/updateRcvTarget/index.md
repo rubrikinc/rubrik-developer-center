@@ -17,6 +17,7 @@ Updates the Rubrik Cloud Vault Azure archival location.
 ```graphql
 mutation UpdateRcvTarget($input: UpdateRcvTargetInput!) {
   updateRcvTarget(input: $input) {
+    archivalLocationPurpose
     clusterName
     consumedBytes
     failedTasks
@@ -49,11 +50,11 @@ mutation UpdateRcvTarget($input: UpdateRcvTargetInput!) {
 {
   "data": {
     "updateRcvTarget": {
+      "archivalLocationPurpose": "ADO",
       "clusterName": "example-string",
       "consumedBytes": 0,
       "failedTasks": 0,
-      "id": "example-string",
-      "isActive": true
+      "id": "example-string"
     }
   }
 }

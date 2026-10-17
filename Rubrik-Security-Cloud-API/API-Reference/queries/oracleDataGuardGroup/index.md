@@ -30,6 +30,7 @@ query OracleDataGuardGroup($fid: UUID!) {
     isRelic
     isReplica
     isZeroRpoEnabled
+    legallyHeldSnapshotCount
     logBackupFrequency
     logRatePerRmanChannelInMb
     logRetentionHours

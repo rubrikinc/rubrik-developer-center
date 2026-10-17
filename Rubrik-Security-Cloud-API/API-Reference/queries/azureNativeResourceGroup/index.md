@@ -27,6 +27,7 @@ query AzureNativeResourceGroup($resourceGroupId: UUID!) {
     disksCount
     id
     isProtectable
+    legallyHeldSnapshotCount
     name
     numWorkloadDescendants
     objectType

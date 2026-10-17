@@ -43,7 +43,7 @@ mutation CreateTprPolicy($input: CreateTprPolicyInput!) {
         ]
       }
     ],
-    "policyScope": "DATA_MANAGEMENT_BY_CLUSTER"
+    "policyScope": "APPLICATION_CONFIGURATION"
   }
 }
 ```

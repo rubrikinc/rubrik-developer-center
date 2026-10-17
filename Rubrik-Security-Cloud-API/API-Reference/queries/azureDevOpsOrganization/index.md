@@ -30,6 +30,7 @@ query AzureDevOpsOrganization($workloadId: UUID!) {
     id
     isRelic
     lastRefreshTime
+    legallyHeldSnapshotCount
     name
     nativeId
     numWorkloadDescendants

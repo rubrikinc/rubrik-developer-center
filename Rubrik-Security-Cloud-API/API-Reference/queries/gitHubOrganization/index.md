@@ -1,12 +1,12 @@
 # gitHubOrganization
 
-Query GitHub organization object.
+Retrieves a single GitHub organization by its managed object ID.
 
 ## Arguments
 
-| Argument                | Type                                                                                                      | Description             |
-| ----------------------- | --------------------------------------------------------------------------------------------------------- | ----------------------- |
-| workloadId *(required)* | [UUID](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/UUID/index.md)! | The ID of the workload. |
+| Argument                | Type                                                                                                      | Description                         |
+| ----------------------- | --------------------------------------------------------------------------------------------------------- | ----------------------------------- |
+| workloadId *(required)* | [UUID](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/UUID/index.md)! | The FID of the GitHub organization. |
 
 ## Returns
 
@@ -23,6 +23,7 @@ query GitHubOrganization($workloadId: UUID!) {
     id
     isRelic
     lastRefreshTime
+    legallyHeldSnapshotCount
     name
     nativeId
     numWorkloadDescendants

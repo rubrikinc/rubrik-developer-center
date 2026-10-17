@@ -15,6 +15,7 @@ The different SaaS organization types supported.
 | GITHUB_ORG                | GitHub Org type.                                          |
 | GOOGLE_WORKSPACE_ORG      | Google workspace Org type.                                |
 | M365_BACKUP_STORAGE_ORG   | M365 Backup Storage Org type.                             |
+| M365_CONFIGS_ORG          | M365 Configurations Organization type.                    |
 | OKTA_ORG                  | OKTA Org type.                                            |
 | POWER_PLATFORM_ORG        | Power Platform Org type.                                  |
 | SAAS_ORG_TYPE_UNSPECIFIED | Unspecified SaaS application type.                        |

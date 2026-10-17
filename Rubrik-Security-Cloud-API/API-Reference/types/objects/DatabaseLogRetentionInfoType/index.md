@@ -12,4 +12,5 @@ Per-workload database transaction log retention policy for an archival or replic
 
 **Referenced by**
 
+- [ArchivalSpec.databaseLogRetentionInfo](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/ArchivalSpec/index.md)
 - [ReplicationSpecV2.databaseLogRetentionInfo](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/ReplicationSpecV2/index.md)

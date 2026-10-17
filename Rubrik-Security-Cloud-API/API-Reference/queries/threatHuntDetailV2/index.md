@@ -24,6 +24,7 @@ query ThreatHuntDetailV2($huntId: String!) {
     status
     totalMatchedSnapshots
     totalObjectFids
+    totalRegistryKeyMatches
     totalScannedSnapshots
     totalUniqueFileMatches
   }

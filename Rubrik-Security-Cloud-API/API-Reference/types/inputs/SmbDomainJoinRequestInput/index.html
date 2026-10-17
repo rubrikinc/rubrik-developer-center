@@ -944,6 +944,11 @@
 <td>Supported in v5.0+ v5.0: Specifies an ordered list of domain controllers that are used to communicate with Active Directory domains.  v5.1+:</td>
 </tr>
 <tr>
+<td>enableKerberosForSmb</td>
+<td>Boolean</td>
+<td>Supported in v9.6+ A Boolean value that determines whether SMB sessions for this domain authenticate over Kerberos instead of NTLM. When this value is 'true,' Kerberos is used. When this value is 'false,' NTLM is used. Omit to default to 'false.'</td>
+</tr>
+<tr>
 <td>isStickySmbService</td>
 <td>Boolean</td>
 <td>Supported in v5.0+ A Boolean value that determines whether to run the SMB service when no shares are exposed. When this value is 'true,' the SMB service runs even when no shares are exposed. When this value is 'false,' the SMB service does not run when no shares are exposed.</td>

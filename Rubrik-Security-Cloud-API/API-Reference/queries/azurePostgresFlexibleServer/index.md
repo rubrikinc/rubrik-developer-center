@@ -32,6 +32,7 @@ query AzurePostgresFlexibleServer($azurePostgresFlexibleServerRubrikId: UUID!) {
     isProtectable
     isPublicNetworkAccess
     isRelic
+    legallyHeldSnapshotCount
     name
     nativeName
     numWorkloadDescendants

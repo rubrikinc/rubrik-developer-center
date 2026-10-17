@@ -26,6 +26,7 @@ query PureStorageVolumeV1($id: UUID!) {
     id
     isRelic
     isReplica
+    legallyHeldSnapshotCount
     name
     numWorkloadDescendants
     objectType

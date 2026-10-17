@@ -25,6 +25,7 @@ query GcpNativeProject($fid: UUID!) {
     id
     isRelic
     lastRefreshedAt
+    legallyHeldSnapshotCount
     name
     nativeId
     nativeName

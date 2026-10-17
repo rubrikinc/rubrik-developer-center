@@ -1,6 +1,6 @@
 # updateAwsTarget
 
-*No description available.*
+Updates an existing AWS archival target.
 
 ## Arguments
 
@@ -17,6 +17,7 @@
 ```graphql
 mutation UpdateAwsTarget($input: UpdateAwsTargetInput!) {
   updateAwsTarget(input: $input) {
+    archivalLocationPurpose
     clusterName
     consumedBytes
     failedTasks
@@ -48,11 +49,11 @@ mutation UpdateAwsTarget($input: UpdateAwsTargetInput!) {
 {
   "data": {
     "updateAwsTarget": {
+      "archivalLocationPurpose": "ADO",
       "clusterName": "example-string",
       "consumedBytes": 0,
       "failedTasks": 0,
-      "id": "example-string",
-      "isActive": true
+      "id": "example-string"
     }
   }
 }

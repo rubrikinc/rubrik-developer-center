@@ -4,12 +4,12 @@ HyperV Live Mount Connection.
 
 ## Arguments
 
-| Argument | Type                                                                                                                                                     | Description                                                             |
-| -------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------- |
-| first    | Int                                                                                                                                                      | Returns the first n elements from the list.                             |
-| after    | String                                                                                                                                                   | Returns the elements in the list that occur after the specified cursor. |
-| filters  | \[[HypervLiveMountFilterInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/HypervLiveMountFilterInput/index.md)!\] | Filter for hyper-v live mounts.                                         |
-| sortBy   | [HypervLiveMountSortByInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/HypervLiveMountSortByInput/index.md)      | Sort by argument for hyper-v live mounts.                               |
+| Argument | Type                                                                                                                                                     | Description                                                                                                                       |
+| -------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
+| first    | Int                                                                                                                                                      | Returns the first n elements from the list.                                                                                       |
+| after    | String                                                                                                                                                   | An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results. |
+| filters  | \[[HypervLiveMountFilterInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/HypervLiveMountFilterInput/index.md)!\] | Filter for hyper-v live mounts.                                                                                                   |
+| sortBy   | [HypervLiveMountSortByInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/HypervLiveMountSortByInput/index.md)      | Sort by argument for hyper-v live mounts.                                                                                         |
 
 ## Returns
 

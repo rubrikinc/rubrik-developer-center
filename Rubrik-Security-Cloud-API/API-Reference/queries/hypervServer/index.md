@@ -23,6 +23,7 @@ query HypervServer($fid: UUID!) {
     hostname
     id
     isReplica
+    legallyHeldSnapshotCount
     name
     numWorkloadDescendants
     objectType

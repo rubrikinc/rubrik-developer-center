@@ -963,6 +963,10 @@
 <td>Document-level sensitivity filter.</td>
 </tr>
 <tr>
+<td>SECURITY_GPO_CLEAR_TEXT_PASSWORD</td>
+<td>Filter for GPOs that configure the "Store passwords using reversible encryption" (ClearTextPassword) security option. Selects GPOs where the setting is configured to store passwords using reversible encryption (ClearTextPassword = 1).</td>
+</tr>
+<tr>
 <td>SECURITY_GPO_LDAP_SIGNING</td>
 <td>GPO "LDAP signing not required" filter. Selects GPOs that configure the LDAPServerIntegrity security option and flags those whose decrypted value is not 2 (Require signing). Values: 0 = None (insecure), 1 = Negotiate signing (accepts unsigned, insecure), 2 = Require signing (secure).</td>
 </tr>
@@ -1105,6 +1109,10 @@
 <tr>
 <td>SECURITY_IDENTITY_EVENT_TARGET_ENTITY_TYPE</td>
 <td>Identity event target entity type.</td>
+</tr>
+<tr>
+<td>SECURITY_IDENTITY_EVENT_TARGET_OU</td>
+<td>Filters identity events by the Active Directory Organizational Unit the event's resource belongs to, including nested sub-OUs. Values are OU names. Applies to on-prem AD events only.</td>
 </tr>
 <tr>
 <td>SECURITY_IDENTITY_EVENT_TIMESTAMP</td>

@@ -953,17 +953,27 @@
 <tr>
 <td>after</td>
 <td>String</td>
-<td>Returns the elements in the list that occur after the specified cursor.</td>
+<td>An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results.</td>
+</tr>
+<tr>
+<td>last</td>
+<td>Int</td>
+<td>Returns the last n elements from the list.</td>
+</tr>
+<tr>
+<td>before</td>
+<td>String</td>
+<td>An opaque cursor returned from a previous query's startCursor field. Pass this value verbatim to retrieve the previous page of results.</td>
+</tr>
+<tr>
+<td>filters</td>
+<td>[<a href="../../types/inputs/MssqlLogShippingTargetFilterInput/">MssqlLogShippingTargetFilterInput</a>!]</td>
+<td>Filters for MSSQL log shipping targets. No filters by default.</td>
 </tr>
 <tr>
 <td>sortBy</td>
 <td><a href="../../types/inputs/MssqlLogShippingTargetSortByInput/">MssqlLogShippingTargetSortByInput</a></td>
 <td>Sort by argument for MSSQL log shipping targets. Default sort is by ID in ascending order.</td>
-</tr>
-<tr>
-<td>filters</td>
-<td>[<a href="../../types/inputs/MssqlLogShippingTargetFilterInput/">MssqlLogShippingTargetFilterInput</a>!]</td>
-<td>Filters for Mssql log shipping targets. No filters by default.</td>
 </tr>
 </tbody>
 </table>

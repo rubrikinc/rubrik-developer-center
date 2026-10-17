@@ -1032,6 +1032,11 @@
 <td>The IP for connecting to the Kubernetes cluster on a NodePort.</td>
 </tr>
 <tr>
+<td>futureLegalHoldInfo</td>
+<td><a href="../FutureLegalHoldInfo/">FutureLegalHoldInfo</a></td>
+<td>Future legal hold rule configured for this object, if any.</td>
+</tr>
+<tr>
 <td>helmStatus</td>
 <td><a href="../../enums/HelmStatus/">HelmStatus</a></td>
 <td>Compatibility status between the deployed Helm chart and the running Rubrik CDM. NULL for non-Helm onboarded clusters.</td>
@@ -1062,6 +1067,11 @@
 <td>True if this object is a replica, its current cluster differs from its source (primary) cluster. False if the object resides on its source cluster. Null when the source cluster is unknown.</td>
 </tr>
 <tr>
+<td>k8sApi</td>
+<td><a href="../K8sApiProxyResponse/">K8sApiProxyResponse</a>!</td>
+<td>Proxy a K8s API request through the CDM cluster.</td>
+</tr>
+<tr>
 <td>k8sDescendantProtectionSets</td>
 <td><a href="../KubernetesProtectionSetConnection/">KubernetesProtectionSetConnection</a>!</td>
 <td>Protection Sets belonging to the Kubernetes cluster.</td>
@@ -1085,6 +1095,11 @@
 <td>latestUserNote</td>
 <td><a href="../LatestUserNote/">LatestUserNote</a></td>
 <td>Latest user note information.</td>
+</tr>
+<tr>
+<td>legallyHeldSnapshotCount</td>
+<td>Int</td>
+<td>Number of snapshots on legal hold for this object.</td>
 </tr>
 <tr>
 <td>logicalPath</td>
@@ -1249,7 +1264,7 @@
 <td>descendantConnection</td>
 <td>after</td>
 <td>String</td>
-<td>Returns the elements in the list that occur after the specified cursor.</td>
+<td>An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results.</td>
 </tr>
 <tr>
 <td>descendantConnection</td>
@@ -1261,7 +1276,7 @@
 <td>descendantConnection</td>
 <td>before</td>
 <td>String</td>
-<td>Returns the elements in the list that occur before the specified cursor.</td>
+<td>An opaque cursor returned from a previous query's startCursor field. Pass this value verbatim to retrieve the previous page of results.</td>
 </tr>
 <tr>
 <td>descendantConnection</td>
@@ -1294,6 +1309,12 @@
 <td>Each enumeration value represents the hierarchy of a specific workload type for RBAC and SLA Domain assignments.  A value of 'None' represents the hierarchy of all workload types.</td>
 </tr>
 <tr>
+<td>k8sApi</td>
+<td>path <em>(required)</em></td>
+<td>String!</td>
+<td>K8s API resource path.</td>
+</tr>
+<tr>
 <td>k8sDescendantProtectionSets</td>
 <td>first</td>
 <td>Int</td>
@@ -1303,7 +1324,7 @@
 <td>k8sDescendantProtectionSets</td>
 <td>after</td>
 <td>String</td>
-<td>Returns the elements in the list that occur after the specified cursor.</td>
+<td>An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results.</td>
 </tr>
 <tr>
 <td>k8sDescendantProtectionSets</td>
@@ -1315,7 +1336,7 @@
 <td>k8sDescendantProtectionSets</td>
 <td>before</td>
 <td>String</td>
-<td>Returns the elements in the list that occur before the specified cursor.</td>
+<td>An opaque cursor returned from a previous query's startCursor field. Pass this value verbatim to retrieve the previous page of results.</td>
 </tr>
 <tr>
 <td>k8sDescendantProtectionSets</td>
@@ -1345,7 +1366,7 @@
 <td>k8sDescendantVirtualMachines</td>
 <td>after</td>
 <td>String</td>
-<td>Returns the elements in the list that occur after the specified cursor.</td>
+<td>An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results.</td>
 </tr>
 <tr>
 <td>k8sDescendantVirtualMachines</td>
@@ -1357,7 +1378,7 @@
 <td>k8sDescendantVirtualMachines</td>
 <td>before</td>
 <td>String</td>
-<td>Returns the elements in the list that occur before the specified cursor.</td>
+<td>An opaque cursor returned from a previous query's startCursor field. Pass this value verbatim to retrieve the previous page of results.</td>
 </tr>
 <tr>
 <td>k8sDescendantVirtualMachines</td>

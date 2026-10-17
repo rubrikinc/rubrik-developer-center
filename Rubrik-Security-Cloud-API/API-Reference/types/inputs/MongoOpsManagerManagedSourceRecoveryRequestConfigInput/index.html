@@ -926,7 +926,7 @@
 <tr>
 <td>customNodes</td>
 <td>[<a href="../MongoOpsManagerCustomNodeConfigInput/">MongoOpsManagerCustomNodeConfigInput</a>!]</td>
-<td>Supported in v9.5+ Required when recoveryMode is Custom. Each entry identifies a Rubrik-registered host (by hostId) and the mongod port. Listed nodes get the RESTORE role; remaining cluster members receive the RESYNC role. Ignored when recoveryMode is All or Reachable.</td>
+<td>Supported in v9.4+ Required when recoveryMode is Custom. Each entry identifies a Rubrik-registered host (by hostId) and the mongod port. Listed nodes get the RESTORE role; remaining cluster members receive the RESYNC role. Ignored when recoveryMode is All or Reachable.</td>
 </tr>
 <tr>
 <td>oplogDumpDirPath</td>
@@ -936,7 +936,7 @@
 <tr>
 <td>recoveryMode</td>
 <td><a href="../../enums/MongoOpsManagerManagedSourceRecoveryRequestConfigRecoveryMode/">MongoOpsManagerManagedSourceRecoveryRequestConfigRecoveryMode</a></td>
-<td>Supported in v9.5+ Recovery mode. Defaults to All (every node receives data) when omitted, preserving the historical behavior. Reachable and Custom are not yet generally available in Ops Manager — use only when specifically advised by Rubrik Support. Reachable restores only RBS-reachable nodes; remaining cluster members resync using MongoDB native replication. Custom restores the caller-supplied node set; remaining cluster members resync.</td>
+<td>Supported in v9.4+ Recovery mode. Defaults to All (every node receives data) when omitted, preserving the historical behavior. Reachable and Custom are not yet generally available in Ops Manager — use only when specifically advised by Rubrik Support. Reachable restores only RBS-reachable nodes; remaining cluster members resync using MongoDB native replication. Custom restores the caller-supplied node set; remaining cluster members resync.</td>
 </tr>
 <tr>
 <td>restoreTime</td>

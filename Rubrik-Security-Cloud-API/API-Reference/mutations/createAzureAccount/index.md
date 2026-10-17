@@ -1,6 +1,6 @@
 # createAzureAccount
 
-*No description available.*
+Creates a new Azure cloud account.
 
 ## Arguments
 

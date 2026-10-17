@@ -1,6 +1,6 @@
 # vSphereDatacenter
 
-*No description available.*
+Details of the vSphere datacenter with the given Rubrik ID.
 
 ## Arguments
 
@@ -22,6 +22,7 @@ query VSphereDatacenter($fid: UUID!) {
     cdmPendingObjectPauseAssignment
     id
     isReplica
+    legallyHeldSnapshotCount
     name
     numWorkloadDescendants
     objectType
@@ -51,7 +52,7 @@ query VSphereDatacenter($fid: UUID!) {
       "cdmPendingObjectPauseAssignment": "NO_PENDING_PAUSE_ASSIGNMENT",
       "id": "00000000-0000-0000-0000-000000000000",
       "isReplica": true,
-      "name": "example-string",
+      "legallyHeldSnapshotCount": 0,
       "allOrgs": [
         {
           "allUrls": [

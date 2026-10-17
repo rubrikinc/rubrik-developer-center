@@ -934,7 +934,7 @@
 
 
 <h1 id="postgresdbclusterlivemounts">postgresDbClusterLiveMounts</h1>
-<p>The live mounts of the given workloads.</p>
+<p>Returns Live Mounts for PostgreSQL database clusters.</p>
 <h2 id="arguments">Arguments</h2>
 <table>
 <thead>
@@ -953,17 +953,27 @@
 <tr>
 <td>after</td>
 <td>String</td>
-<td>Returns the elements in the list that occur after the specified cursor.</td>
+<td>An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results.</td>
+</tr>
+<tr>
+<td>last</td>
+<td>Int</td>
+<td>Returns the last n elements from the list.</td>
+</tr>
+<tr>
+<td>before</td>
+<td>String</td>
+<td>An opaque cursor returned from a previous query's startCursor field. Pass this value verbatim to retrieve the previous page of results.</td>
 </tr>
 <tr>
 <td>filters</td>
 <td>[<a href="../../types/inputs/KosmosWorkloadLiveMountFilterInput/">KosmosWorkloadLiveMountFilterInput</a>!]</td>
-<td>Filter for Kosmos workload live mounts.</td>
+<td>Optional client-supplied filters.</td>
 </tr>
 <tr>
 <td>sortBy</td>
 <td><a href="../../types/inputs/KosmosWorkloadLiveMountSortByInput/">KosmosWorkloadLiveMountSortByInput</a></td>
-<td>Sort the live mounts of the Kosmos Workload based on the argument.</td>
+<td>Optional sort parameters.</td>
 </tr>
 </tbody>
 </table>

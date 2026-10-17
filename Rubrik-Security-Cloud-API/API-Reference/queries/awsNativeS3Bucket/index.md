@@ -32,6 +32,7 @@ query AwsNativeS3Bucket($s3BucketRubrikId: UUID!) {
     isRelic
     isVersioningEnabled
     latestCleanSnapshotTime
+    legallyHeldSnapshotCount
     name
     nativeName
     numWorkloadDescendants

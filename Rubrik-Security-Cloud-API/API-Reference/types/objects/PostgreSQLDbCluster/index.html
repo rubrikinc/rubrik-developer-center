@@ -1022,6 +1022,11 @@
 <td>The basic entity information.</td>
 </tr>
 <tr>
+<td>futureLegalHoldInfo</td>
+<td><a href="../FutureLegalHoldInfo/">FutureLegalHoldInfo</a></td>
+<td>Future legal hold rule configured for this object, if any.</td>
+</tr>
+<tr>
 <td>hostsInfo</td>
 <td>[<a href="../HostDiscoverableInfo/">HostDiscoverableInfo</a>!]!</td>
 <td>The host information of the discoverable entity.</td>
@@ -1042,9 +1047,19 @@
 <td>True if this object is a replica, its current cluster differs from its source (primary) cluster. False if the object resides on its source cluster. Null when the source cluster is unknown.</td>
 </tr>
 <tr>
+<td>lastRecoverableRangeCheckedAt</td>
+<td><a href="../../scalars/Long/">Long</a></td>
+<td>Unix epoch seconds when the recoverable range was last calculated. Absent until the first calculation completes.</td>
+</tr>
+<tr>
 <td>latestUserNote</td>
 <td><a href="../LatestUserNote/">LatestUserNote</a></td>
 <td>Latest user note information.</td>
+</tr>
+<tr>
+<td>legallyHeldSnapshotCount</td>
+<td>Int</td>
+<td>Number of snapshots on legal hold for this object.</td>
 </tr>
 <tr>
 <td>liveMounts</td>

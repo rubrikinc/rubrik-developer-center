@@ -26,6 +26,7 @@ Hierarchy object type enum covering all CDM and RSC hierarchy objects.
 | AZURE_COSMOS_NOSQL_DATABASE                 | Azure Cosmos NoSQL SQL (NoSQL) database.                                                         |
 | AZURE_DEVOPS_ORGANIZATION                   | Azure DevOps Organization.                                                                       |
 | AZURE_DEVOPS_PROJECT                        | Azure DevOps Project.                                                                            |
+| AZURE_DEVOPS_PROJECT_ARTIFACTS_FIXED_OBJECT | Azure DevOps project artifacts (feeds and packages).                                             |
 | AZURE_DEVOPS_PROJECT_FIXED_OBJECT           | Azure DevOps project-scoped fixed object to represent non repo entity.                           |
 | AZURE_DEVOPS_REPOSITORY                     | Azure DevOps Repository.                                                                         |
 | AZURE_POSTGRES_FLEXIBLE_SERVER              | Azure Postgres Flexible Server.                                                                  |
@@ -83,11 +84,14 @@ Hierarchy object type enum covering all CDM and RSC hierarchy objects.
 | GCP_BIGQUERY_DATASET                        | GCP BigQuery Dataset.                                                                            |
 | GCP_CLOUD_SQL_INSTANCE                      | GCP Cloud SQL Instance.                                                                          |
 | GITHUB_ORGANIZATION                         | GitHub Organization.                                                                             |
+| GITHUB_ORG_PACKAGES_FIXED_OBJECT            | GitHub organization packages.                                                                    |
 | GITHUB_REPOSITORY                           | GitHub Repository.                                                                               |
 | GLUE_ICEBERG_CATALOG                        | Glue Iceberg Catalog.                                                                            |
 | GLUE_ICEBERG_DATABASE                       | Glue Iceberg Database.                                                                           |
 | GLUE_ICEBERG_TABLE                          | Glue Iceberg Table.                                                                              |
+| GOOGLE_WORKSPACE_ADMIN_SETTINGS             | Google Workspace admin settings container -- one per org, backed by saasapps_fixed_objects.      |
 | GOOGLE_WORKSPACE_GROUP                      | Google Workspace Group.                                                                          |
+| GOOGLE_WORKSPACE_GROUPS_METADATA            | Google Workspace Groups -- one backup metadata object per organization.                          |
 | GOOGLE_WORKSPACE_ORGANIZATION               | Google Workspace Organization.                                                                   |
 | GOOGLE_WORKSPACE_ORG_UNIT                   | Google Workspace Organization Unit.                                                              |
 | GOOGLE_WORKSPACE_SHARED_DRIVE               | Google Workspace Shared Drive.                                                                   |
@@ -98,15 +102,15 @@ Hierarchy object type enum covering all CDM and RSC hierarchy objects.
 | GcpNativeGCEInstance                        | Gcp Native GCE Instance.                                                                         |
 | GcpNativeProject                            | Gcp Native Project.                                                                              |
 | HOST_FAILOVER_CLUSTER                       | Host Failover Cluster.                                                                           |
-| HVM_CLOUD                                   | HPE Virtual Machine Essentials cloud.                                                            |
-| HVM_CLUSTER                                 | HPE Virtual Machine Essentials cluster.                                                          |
-| HVM_DATASTORE                               | HPE Virtual Machine Essentials datastore.                                                        |
-| HVM_GROUP                                   | HPE Virtual Machine Essentials group.                                                            |
-| HVM_HOST                                    | HPE Virtual Machine Essentials host.                                                             |
-| HVM_INSTANCE                                | HPE Virtual Machine Essentials instance. An inventory hierarchy level, not a protectable object. |
-| HVM_MANAGER                                 | HPE Virtual Machine Essentials manager.                                                          |
-| HVM_NETWORK                                 | HPE Virtual Machine Essentials network.                                                          |
-| HVM_VIRTUAL_MACHINE                         | HPE Virtual Machine Essentials virtual machine. The protectable object in this hierarchy.        |
+| HPE_VME_CLOUD                               | HPE Virtual Machine Essentials cloud.                                                            |
+| HPE_VME_CLUSTER                             | HPE Virtual Machine Essentials cluster.                                                          |
+| HPE_VME_DATASTORE                           | HPE Virtual Machine Essentials datastore.                                                        |
+| HPE_VME_GROUP                               | HPE Virtual Machine Essentials group.                                                            |
+| HPE_VME_HOST                                | HPE Virtual Machine Essentials host.                                                             |
+| HPE_VME_INSTANCE                            | HPE Virtual Machine Essentials instance. An inventory hierarchy level, not a protectable object. |
+| HPE_VME_MANAGER                             | HPE Virtual Machine Essentials manager.                                                          |
+| HPE_VME_NETWORK                             | HPE Virtual Machine Essentials network.                                                          |
+| HPE_VME_VIRTUAL_MACHINE                     | HPE Virtual Machine Essentials virtual machine. The protectable object in this hierarchy.        |
 | Hdfs                                        | Hdfs.                                                                                            |
 | HostShare                                   | Host Share.                                                                                      |
 | HypervCluster                               | Hyperv Cluster.                                                                                  |
@@ -134,6 +138,7 @@ Hierarchy object type enum covering all CDM and RSC hierarchy objects.
 | M365_BACKUP_STORAGE_ORG                     | M365 Backup Storage Organization.                                                                |
 | M365_BACKUP_STORAGE_SITE                    | M365 Backup Storage Sharepoint Site.                                                             |
 | M365_BACKUP_STORAGE_USER                    | M365 Backup Storage User.                                                                        |
+| M365_CONFIGS_ORG                            | M365 Configurations Organization.                                                                |
 | MANAGED_VOLUME_EXPORT                       | Managed Volume Export.                                                                           |
 | MARIADB_DATABASE                            | MariaDB Database.                                                                                |
 | MARIADB_INSTANCE                            | MariaDB Instance.                                                                                |

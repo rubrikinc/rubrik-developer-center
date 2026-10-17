@@ -25,6 +25,7 @@ query CloudDirectNasNamespace($fid: UUID!) {
     isArchived
     isHidden
     isStale
+    legallyHeldSnapshotCount
     name
     namespaceName
     nfs4Hosts

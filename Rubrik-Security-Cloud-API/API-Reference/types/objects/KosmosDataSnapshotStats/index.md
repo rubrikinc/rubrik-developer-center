@@ -15,6 +15,7 @@ The Statistics of the Kosmos workload Snapshots.
 
 **Referenced by**
 
+- [IrisdbInstanceAppMetadata.stats](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/IrisdbInstanceAppMetadata/index.md)
 - [KosmosWorkloadAppMetadata.stats](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/KosmosWorkloadAppMetadata/index.md)
 - [MariadbInstanceAppMetadata.stats](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/MariadbInstanceAppMetadata/index.md)
 - [MysqldbInstanceAppMetadata.stats](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/MysqldbInstanceAppMetadata/index.md)

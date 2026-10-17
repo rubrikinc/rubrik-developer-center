@@ -4,12 +4,12 @@ Active Directory volume export connection.
 
 ## Arguments
 
-| Argument | Type                                                                                                                                              | Description                                                             |
-| -------- | ------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------- |
-| first    | Int                                                                                                                                               | Returns the first n elements from the list.                             |
-| after    | String                                                                                                                                            | Returns the elements in the list that occur after the specified cursor. |
-| filters  | \[[AdVolumeExportFilter](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/AdVolumeExportFilter/index.md)!\]      | Filter for Active Directory volume exports.                             |
-| sortBy   | [AdVolumeExportSortByInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/AdVolumeExportSortByInput/index.md) | Sort by argument for Active Directory volume exports.                   |
+| Argument | Type                                                                                                                                              | Description                                                                                                                       |
+| -------- | ------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
+| first    | Int                                                                                                                                               | Returns the first n elements from the list.                                                                                       |
+| after    | String                                                                                                                                            | An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results. |
+| filters  | \[[AdVolumeExportFilter](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/AdVolumeExportFilter/index.md)!\]      | Filter for Active Directory volume exports.                                                                                       |
+| sortBy   | [AdVolumeExportSortByInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/AdVolumeExportSortByInput/index.md) | Sort by argument for Active Directory volume exports.                                                                             |
 
 ## Returns
 

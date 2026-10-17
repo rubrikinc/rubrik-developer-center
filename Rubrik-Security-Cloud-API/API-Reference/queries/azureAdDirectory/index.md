@@ -62,6 +62,7 @@ query AzureAdDirectory($workloadFid: UUID!) {
     latestSnapshotTime
     latestTermsOfUseCount
     latestUserCount
+    legallyHeldSnapshotCount
     m365AccessRecoveryState
     migratedFromColossus
     name

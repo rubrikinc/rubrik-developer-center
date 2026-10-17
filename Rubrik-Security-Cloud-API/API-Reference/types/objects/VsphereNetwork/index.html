@@ -934,8 +934,8 @@
 
 
 <h1 id="vspherenetwork">VsphereNetwork</h1>
-<p><em>No description available.</em></p>
-<p><strong>Implements:</strong> <a href="../../interfaces/CdmHierarchyObject/">CdmHierarchyObject</a>, <a href="../../interfaces/HierarchyObject/">HierarchyObject</a>, <a href="../../interfaces/VsphereHostDescendantType/">VsphereHostDescendantType</a>, <a href="../../interfaces/VsphereComputeClusterDescendantType/">VsphereComputeClusterDescendantType</a>, <a href="../../interfaces/VsphereResourcePoolDescendantType/">VsphereResourcePoolDescendantType</a>, <a href="../../interfaces/VsphereVcenterDescendantType/">VsphereVcenterDescendantType</a></p>
+<p>A vSphere network.</p>
+<p><strong>Implements:</strong> <a href="../../interfaces/HierarchyObject/">HierarchyObject</a>, <a href="../../interfaces/CdmHierarchyObject/">CdmHierarchyObject</a>, <a href="../../interfaces/VsphereVcenterDescendantType/">VsphereVcenterDescendantType</a>, <a href="../../interfaces/VsphereComputeClusterDescendantType/">VsphereComputeClusterDescendantType</a>, <a href="../../interfaces/VsphereResourcePoolDescendantType/">VsphereResourcePoolDescendantType</a>, <a href="../../interfaces/VsphereHostDescendantType/">VsphereHostDescendantType</a></p>
 <h2 id="fields">Fields</h2>
 <table>
 <thead>
@@ -997,9 +997,14 @@
 <td>Path node of the effective SLA Domain source.</td>
 </tr>
 <tr>
+<td>futureLegalHoldInfo</td>
+<td><a href="../FutureLegalHoldInfo/">FutureLegalHoldInfo</a></td>
+<td>Future legal hold rule configured for this object, if any.</td>
+</tr>
+<tr>
 <td>id</td>
 <td><a href="../../scalars/UUID/">UUID</a>!</td>
-<td>Object ID.</td>
+<td>ID of the hierarchy object.</td>
 </tr>
 <tr>
 <td>isReplica</td>
@@ -1010,6 +1015,11 @@
 <td>latestUserNote</td>
 <td><a href="../LatestUserNote/">LatestUserNote</a></td>
 <td>Latest user note information.</td>
+</tr>
+<tr>
+<td>legallyHeldSnapshotCount</td>
+<td>Int</td>
+<td>Number of snapshots on legal hold for this object.</td>
 </tr>
 <tr>
 <td>logicalPath</td>

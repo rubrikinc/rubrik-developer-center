@@ -912,7 +912,7 @@
 
 
 <h1 id="mysqldbperreplicarestoresettingsinput">MysqldbPerReplicaRestoreSettingsInput</h1>
-<p>Restore settings for one target replica of an HA MySQL cluster.</p>
+<p>Supported in v9.6+ Restore settings for one target replica of an HA MySQL cluster.</p>
 <h2 id="fields">Fields</h2>
 <table>
 <thead>
@@ -926,17 +926,17 @@
 <tr>
 <td>mysqldbAutomatedRestoreConnectionInfo</td>
 <td><a href="../MysqldbAutomatedRestoreConnectionInfoInput/">MysqldbAutomatedRestoreConnectionInfoInput</a></td>
-<td>Credentials to be used during MySQL recovery for this replica.</td>
+<td>Supported in v9.6+ Credentials to be used during MySQL recovery for this replica.</td>
 </tr>
 <tr>
 <td>mysqldbAutomatedRestoreInstanceDetails</td>
 <td><a href="../MysqldbAutomatedRestoreInstanceDetailsInput/">MysqldbAutomatedRestoreInstanceDetailsInput</a></td>
-<td>Restore details for this replica, such as the MySQL configuration file path.</td>
+<td>Supported in v9.6+ Restore details for this replica, such as the MySQL configuration file path.</td>
 </tr>
 <tr>
 <td>replicaId</td>
 <td>String!</td>
-<td>Required. ID of the target replica being restored, as returned in the replicaId field of MysqldbHaReplicaConfig.</td>
+<td>Required. Supported in v9.6+ ID of the target replica being restored, as returned in the replicaId field of MysqldbHaReplicaConfig.</td>
 </tr>
 </tbody>
 </table>

@@ -1,6 +1,6 @@
 # bulkDeleteAwsCloudAccountWithoutCft
 
-Deletes specified AWS cloud accounts without using CloudFormation Template (CFT).
+BulkDeleteAwsCloudAccountWithoutCft deletes cloud accounts for the features provided in the request. If no feature is provided, then all the unarchived features are deleted. The API works in a best effort manner and reports back features along with the deletion status.
 
 ## Arguments
 

@@ -23,6 +23,7 @@ query OracleHost($fid: UUID!) {
     hostLogRetentionHours
     id
     isReplica
+    legallyHeldSnapshotCount
     logBackupFrequency
     logRetentionHours
     name

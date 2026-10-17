@@ -20,6 +20,7 @@ query O365SharepointDrive($snappableFid: UUID!) {
     authorizedOperations
     id
     isRelic
+    legallyHeldSnapshotCount
     listNaturalId
     name
     naturalId
@@ -56,9 +57,9 @@ query O365SharepointDrive($snappableFid: UUID!) {
       ],
       "id": "00000000-0000-0000-0000-000000000000",
       "isRelic": true,
+      "legallyHeldSnapshotCount": 0,
       "listNaturalId": "example-string",
       "name": "example-string",
-      "naturalId": "example-string",
       "allOrgs": [
         {
           "allUrls": [

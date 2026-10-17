@@ -30,7 +30,7 @@ query SaasAppCascadingImpact($saasAppType: SaasAppType!, $restoreConfig: AppItem
 
 ```json
 {
-  "saasAppType": "ANTHROPIC_CHAT",
+  "saasAppType": "ANTHROPIC_APPS",
   "restoreConfig": {
     "orgId": "example-string"
   }

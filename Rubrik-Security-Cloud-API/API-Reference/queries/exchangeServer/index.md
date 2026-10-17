@@ -1,12 +1,12 @@
 # exchangeServer
 
-Details of an Exchange Server for a given fid.
+Single Exchange Server lookup by FID.
 
 ## Arguments
 
-| Argument         | Type                                                                                                      | Description                 |
-| ---------------- | --------------------------------------------------------------------------------------------------------- | --------------------------- |
-| fid *(required)* | [UUID](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/UUID/index.md)! | Rubrik UUID for the object. |
+| Argument         | Type                                                                                                      | Description                             |
+| ---------------- | --------------------------------------------------------------------------------------------------------- | --------------------------------------- |
+| fid *(required)* | [UUID](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/UUID/index.md)! | FID of the Exchange Server to retrieve. |
 
 ## Returns
 
@@ -23,6 +23,7 @@ query ExchangeServer($fid: UUID!) {
     hasVgConflict
     id
     isReplica
+    legallyHeldSnapshotCount
     name
     numWorkloadDescendants
     objectType

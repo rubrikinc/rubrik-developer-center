@@ -4,12 +4,12 @@ Paginated list of Oracle Live Mounts.
 
 ## Arguments
 
-| Argument | Type                                                                                                                                                     | Description                                                             |
-| -------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------- |
-| first    | Int                                                                                                                                                      | Returns the first n elements from the list.                             |
-| after    | String                                                                                                                                                   | Returns the elements in the list that occur after the specified cursor. |
-| filters  | \[[OracleLiveMountFilterInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/OracleLiveMountFilterInput/index.md)!\] | Filter for Oracle live mounts.                                          |
-| sortBy   | [OracleLiveMountSortBy](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/OracleLiveMountSortBy/index.md)                | Sort by argument for Oracle live mounts.                                |
+| Argument | Type                                                                                                                                                     | Description                                                                                                                       |
+| -------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
+| first    | Int                                                                                                                                                      | Returns the first n elements from the list.                                                                                       |
+| after    | String                                                                                                                                                   | An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results. |
+| filters  | \[[OracleLiveMountFilterInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/OracleLiveMountFilterInput/index.md)!\] | Filter for Oracle live mounts.                                                                                                    |
+| sortBy   | [OracleLiveMountSortBy](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/OracleLiveMountSortBy/index.md)                | Sort by argument for Oracle live mounts.                                                                                          |
 
 ## Returns
 

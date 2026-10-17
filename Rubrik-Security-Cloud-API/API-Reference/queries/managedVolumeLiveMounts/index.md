@@ -4,13 +4,13 @@ Paginated list of Live Mounts.
 
 ## Arguments
 
-| Argument  | Type                                                                                                                                   | Description                                                             |
-| --------- | -------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------- |
-| first     | Int                                                                                                                                    | Returns the first n elements from the list.                             |
-| after     | String                                                                                                                                 | Returns the elements in the list that occur after the specified cursor. |
-| sortBy    | [HierarchySortByField](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/HierarchySortByField/index.md) | Sort hierarchy objects according to the hierarchy field.                |
-| sortOrder | [SortOrder](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/SortOrder/index.md)                       | Sorts the order of results.                                             |
-| filter    | \[[Filter](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/Filter/index.md)!\]                       | Hierarchy object filter.                                                |
+| Argument  | Type                                                                                                                                   | Description                                                                                                                       |
+| --------- | -------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
+| first     | Int                                                                                                                                    | Returns the first n elements from the list.                                                                                       |
+| after     | String                                                                                                                                 | An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results. |
+| sortBy    | [HierarchySortByField](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/HierarchySortByField/index.md) | Sort hierarchy objects according to the hierarchy field.                                                                          |
+| sortOrder | [SortOrder](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/SortOrder/index.md)                       | Sorts the order of results.                                                                                                       |
+| filter    | \[[Filter](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/Filter/index.md)!\]                       | Hierarchy object filter.                                                                                                          |
 
 ## Returns
 
@@ -26,6 +26,7 @@ query {
       cdmPendingObjectPauseAssignment
       id
       isReplica
+      legallyHeldSnapshotCount
       logicalUsedSize
       name
       numChannels
@@ -60,8 +61,8 @@ query {
             "cdmPendingObjectPauseAssignment": "NO_PENDING_PAUSE_ASSIGNMENT",
             "id": "00000000-0000-0000-0000-000000000000",
             "isReplica": true,
-            "logicalUsedSize": 0,
-            "name": "example-string"
+            "legallyHeldSnapshotCount": 0,
+            "logicalUsedSize": 0
           }
         ]
       ],

@@ -24,6 +24,7 @@ query AzureSqlManagedInstanceServer($azureSqlManagedInstanceServerRubrikId: UUID
     id
     instancePoolName
     isProtectable
+    legallyHeldSnapshotCount
     name
     numWorkloadDescendants
     objectType

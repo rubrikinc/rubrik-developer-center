@@ -4,15 +4,15 @@ All vSphere virtual machines, based on the FIDs passed.
 
 ## Arguments
 
-| Argument          | Type                                                                                                                                   | Description                                                              |
-| ----------------- | -------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------ |
-| first             | Int                                                                                                                                    | Returns the first n elements from the list.                              |
-| after             | String                                                                                                                                 | Returns the elements in the list that occur after the specified cursor.  |
-| last              | Int                                                                                                                                    | Returns the last n elements from the list.                               |
-| before            | String                                                                                                                                 | Returns the elements in the list that occur before the specified cursor. |
-| fids *(required)* | \[[UUID](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/UUID/index.md)!\]!                         | The Rubrik UUIDs for the objects.                                        |
-| sortBy            | [HierarchySortByField](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/HierarchySortByField/index.md) | Sort hierarchy objects according to the hierarchy field.                 |
-| sortOrder         | [SortOrder](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/SortOrder/index.md)                       | Sorts the order of results.                                              |
+| Argument          | Type                                                                                                                                   | Description                                                                                                                             |
+| ----------------- | -------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
+| first             | Int                                                                                                                                    | Returns the first n elements from the list.                                                                                             |
+| after             | String                                                                                                                                 | An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results.       |
+| last              | Int                                                                                                                                    | Returns the last n elements from the list.                                                                                              |
+| before            | String                                                                                                                                 | An opaque cursor returned from a previous query's startCursor field. Pass this value verbatim to retrieve the previous page of results. |
+| fids *(required)* | \[[UUID](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/UUID/index.md)!\]!                         | The Rubrik UUIDs for the objects.                                                                                                       |
+| sortBy            | [HierarchySortByField](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/HierarchySortByField/index.md) | Sort hierarchy objects according to the hierarchy field.                                                                                |
+| sortOrder         | [SortOrder](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/SortOrder/index.md)                       | Sorts the order of results.                                                                                                             |
 
 ## Returns
 
@@ -44,6 +44,7 @@ query AllVsphereVmsByFids($fids: [UUID!]!) {
       isBlueprintChild
       isRelic
       isReplica
+      legallyHeldSnapshotCount
       name
       numWorkloadDescendants
       objectType

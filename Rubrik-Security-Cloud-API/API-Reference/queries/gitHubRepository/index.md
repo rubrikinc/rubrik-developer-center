@@ -1,12 +1,12 @@
 # gitHubRepository
 
-Query GitHub repository object.
+Retrieves a single GitHub repository by its managed object ID.
 
 ## Arguments
 
-| Argument                | Type                                                                                                      | Description             |
-| ----------------------- | --------------------------------------------------------------------------------------------------------- | ----------------------- |
-| workloadId *(required)* | [UUID](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/UUID/index.md)! | The ID of the workload. |
+| Argument                | Type                                                                                                      | Description                       |
+| ----------------------- | --------------------------------------------------------------------------------------------------------- | --------------------------------- |
+| workloadId *(required)* | [UUID](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/UUID/index.md)! | The FID of the GitHub repository. |
 
 ## Returns
 
@@ -20,6 +20,7 @@ query GitHubRepository($workloadId: UUID!) {
     authorizedOperations
     id
     isRelic
+    legallyHeldSnapshotCount
     name
     numWorkloadDescendants
     objectType
@@ -49,9 +50,9 @@ query GitHubRepository($workloadId: UUID!) {
       ],
       "id": "00000000-0000-0000-0000-000000000000",
       "isRelic": true,
+      "legallyHeldSnapshotCount": 0,
       "name": "example-string",
       "numWorkloadDescendants": 0,
-      "objectType": "ACTIVE_DIRECTORY_DOMAIN",
       "allOrgs": [
         {
           "allUrls": [

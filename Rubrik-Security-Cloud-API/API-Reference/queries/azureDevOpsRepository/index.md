@@ -20,6 +20,7 @@ query AzureDevOpsRepository($workloadId: UUID!) {
     authorizedOperations
     id
     isRelic
+    legallyHeldSnapshotCount
     name
     numWorkloadDescendants
     objectType
@@ -52,9 +53,9 @@ query AzureDevOpsRepository($workloadId: UUID!) {
       ],
       "id": "00000000-0000-0000-0000-000000000000",
       "isRelic": true,
+      "legallyHeldSnapshotCount": 0,
       "name": "example-string",
       "numWorkloadDescendants": 0,
-      "objectType": "ACTIVE_DIRECTORY_DOMAIN",
       "allOrgs": [
         {
           "allUrls": [

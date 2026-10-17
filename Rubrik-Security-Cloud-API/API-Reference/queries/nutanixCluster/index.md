@@ -24,6 +24,7 @@ query NutanixCluster($fid: UUID!) {
     id
     isReplica
     lastRefreshTime
+    legallyHeldSnapshotCount
     name
     naturalId
     nosVersion

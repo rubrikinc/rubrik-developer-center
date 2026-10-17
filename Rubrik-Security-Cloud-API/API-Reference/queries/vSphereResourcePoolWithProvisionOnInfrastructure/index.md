@@ -24,6 +24,7 @@ query VSphereResourcePoolWithProvisionOnInfrastructure($fid: UUID!) {
     hasDatastoresForRecovery
     id
     isReplica
+    legallyHeldSnapshotCount
     name
     numWorkloadDescendants
     objectType

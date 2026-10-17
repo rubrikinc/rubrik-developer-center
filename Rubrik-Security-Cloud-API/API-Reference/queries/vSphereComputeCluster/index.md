@@ -1,6 +1,6 @@
 # vSphereComputeCluster
 
-*No description available.*
+Details of the vSphere compute cluster with the given Rubrik ID.
 
 ## Arguments
 
@@ -24,6 +24,7 @@ query VSphereComputeCluster($fid: UUID!) {
     id
     ioFilterStatus
     isReplica
+    legallyHeldSnapshotCount
     name
     numWorkloadDescendants
     objectType

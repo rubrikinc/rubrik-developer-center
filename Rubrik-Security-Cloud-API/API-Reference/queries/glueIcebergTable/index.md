@@ -24,6 +24,7 @@ query GlueIcebergTable($glueIcebergTableRubrikId: UUID!) {
     id
     isExocomputeConfigured
     isRelic
+    legallyHeldSnapshotCount
     location
     name
     nativeName

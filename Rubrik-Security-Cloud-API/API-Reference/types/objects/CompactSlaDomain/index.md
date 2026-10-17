@@ -43,4 +43,4 @@ SLA Domain name and ID.
 - [AzureNativeVirtualMachine.rscNativeObjectPendingSla](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AzureNativeVirtualMachine/index.md)
 - [AzurePostgresFlexibleServer.rscNativeObjectPendingSla](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AzurePostgresFlexibleServer/index.md)
 - [AzureSqlDatabaseDb.rscNativeObjectPendingSla](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AzureSqlDatabaseDb/index.md)
-- *…and 49 more*
+- *…and 50 more*

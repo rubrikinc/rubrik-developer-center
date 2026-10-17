@@ -32,8 +32,10 @@ query NasSystem($fid: UUID!) {
     isUserSuppliedSmbCredentials
     lastRefreshTime
     lastStatus
+    legallyHeldSnapshotCount
     name
     namespaceCount
+    nfsAuthMode
     nfsPseudoFsPrefix
     numWorkloadDescendants
     objectType
@@ -42,6 +44,7 @@ query NasSystem($fid: UUID!) {
     shareCount
     slaAssignment
     slaPauseStatus
+    smbAuthMode
     userSelectedNfsInterfaces
     userSelectedSmbInterfaces
     vendorType

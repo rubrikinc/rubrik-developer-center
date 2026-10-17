@@ -33,6 +33,7 @@ query KubernetesCluster($fid: UUID!) {
     isReplica
     k8sName
     k8sVersion
+    legallyHeldSnapshotCount
     maxConcurrentAgents
     maxPvcsPerAgent
     nadName

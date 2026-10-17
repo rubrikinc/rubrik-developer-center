@@ -4,15 +4,15 @@
 
 ## Arguments
 
-| Argument  | Type                                                                                                                                | Description                                                              |
-| --------- | ----------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------ |
-| first     | Int                                                                                                                                 | Returns the first n elements from the list.                              |
-| after     | String                                                                                                                              | Returns the elements in the list that occur after the specified cursor.  |
-| last      | Int                                                                                                                                 | Returns the last n elements from the list.                               |
-| before    | String                                                                                                                              | Returns the elements in the list that occur before the specified cursor. |
-| filter    | [ClusterFilterInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/ClusterFilterInput/index.md) | Filter by cluster.                                                       |
-| sortOrder | [SortOrder](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/SortOrder/index.md)                    | Cluster sort order.                                                      |
-| sortBy    | [ClusterSortByEnum](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/ClusterSortByEnum/index.md)    | Sort clusters by field.                                                  |
+| Argument  | Type                                                                                                                                | Description                                                                                                                             |
+| --------- | ----------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
+| first     | Int                                                                                                                                 | Returns the first n elements from the list.                                                                                             |
+| after     | String                                                                                                                              | An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results.       |
+| last      | Int                                                                                                                                 | Returns the last n elements from the list.                                                                                              |
+| before    | String                                                                                                                              | An opaque cursor returned from a previous query's startCursor field. Pass this value verbatim to retrieve the previous page of results. |
+| filter    | [ClusterFilterInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/ClusterFilterInput/index.md) | Filter by cluster.                                                                                                                      |
+| sortOrder | [SortOrder](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/SortOrder/index.md)                    | Cluster sort order.                                                                                                                     |
+| sortBy    | [ClusterSortByEnum](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/ClusterSortByEnum/index.md)    | Sort clusters by field.                                                                                                                 |
 
 ## Returns
 

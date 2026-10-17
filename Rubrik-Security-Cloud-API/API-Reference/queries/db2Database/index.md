@@ -31,6 +31,7 @@ query Db2Database($fid: UUID!) {
     isRelic
     isReplica
     lastSyncTime
+    legallyHeldSnapshotCount
     logBackupThreshold
     name
     numWorkloadDescendants

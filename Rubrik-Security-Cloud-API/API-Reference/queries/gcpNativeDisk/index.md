@@ -28,6 +28,7 @@ query GcpNativeDisk($fid: UUID!) {
     isProtectionOnboarded
     isRelic
     kmsKey
+    legallyHeldSnapshotCount
     name
     nativeName
     numWorkloadDescendants

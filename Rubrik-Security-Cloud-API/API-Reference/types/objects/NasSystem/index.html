@@ -1007,9 +1007,14 @@
 <td>Path node of the effective SLA Domain source.</td>
 </tr>
 <tr>
+<td>futureLegalHoldInfo</td>
+<td><a href="../FutureLegalHoldInfo/">FutureLegalHoldInfo</a></td>
+<td>Future legal hold rule configured for this object, if any.</td>
+</tr>
+<tr>
 <td>id</td>
 <td><a href="../../scalars/UUID/">UUID</a>!</td>
-<td>Object ID.</td>
+<td>ID of the hierarchy object.</td>
 </tr>
 <tr>
 <td>isChangelistEnabled</td>
@@ -1019,7 +1024,7 @@
 <tr>
 <td>isNetAppMetroClusterEnabled</td>
 <td>Boolean!</td>
-<td></td>
+<td>Specifies whether the NetApp Metro Cluster feature is enabled.</td>
 </tr>
 <tr>
 <td>isNetAppSnapDiffEnabled</td>
@@ -1072,6 +1077,11 @@
 <td>Latest user note information.</td>
 </tr>
 <tr>
+<td>legallyHeldSnapshotCount</td>
+<td>Int</td>
+<td>Number of snapshots on legal hold for this object.</td>
+</tr>
+<tr>
 <td>logicalChildConnection</td>
 <td><a href="../NasSystemLogicalChildTypeConnection/">NasSystemLogicalChildTypeConnection</a>!</td>
 <td>List of logical children.</td>
@@ -1095,6 +1105,11 @@
 <td>netAppMetroClusterInfo</td>
 <td><a href="../NasSystemNetAppMetroClusterInfo/">NasSystemNetAppMetroClusterInfo</a></td>
 <td>Optional NetApp Metro Cluster info for the NAS system.</td>
+</tr>
+<tr>
+<td>nfsAuthMode</td>
+<td><a href="../../enums/NasAuthMode/">NasAuthMode</a></td>
+<td>NFS authentication mode for all namespaces on this NAS system.</td>
 </tr>
 <tr>
 <td>nfsPseudoFsPrefix</td>
@@ -1177,6 +1192,11 @@
 <td>Pause status of the effective SLA Domain of the hierarchy object.</td>
 </tr>
 <tr>
+<td>smbAuthMode</td>
+<td><a href="../../enums/NasAuthMode/">NasAuthMode</a></td>
+<td>SMB authentication mode for all namespaces on this NAS system.</td>
+</tr>
+<tr>
 <td>snapshotDistribution</td>
 <td><a href="../SnapshotDistribution/">SnapshotDistribution</a>!</td>
 <td>Distribution of the snapshots of the hierarchy object.</td>
@@ -1224,7 +1244,19 @@
 <td>descendantConnection</td>
 <td>after</td>
 <td>String</td>
-<td>Returns the elements in the list that occur after the specified cursor.</td>
+<td>An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results.</td>
+</tr>
+<tr>
+<td>descendantConnection</td>
+<td>last</td>
+<td>Int</td>
+<td>Returns the last n elements from the list.</td>
+</tr>
+<tr>
+<td>descendantConnection</td>
+<td>before</td>
+<td>String</td>
+<td>An opaque cursor returned from a previous query's startCursor field. Pass this value verbatim to retrieve the previous page of results.</td>
 </tr>
 <tr>
 <td>descendantConnection</td>
@@ -1266,7 +1298,19 @@
 <td>logicalChildConnection</td>
 <td>after</td>
 <td>String</td>
-<td>Returns the elements in the list that occur after the specified cursor.</td>
+<td>An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results.</td>
+</tr>
+<tr>
+<td>logicalChildConnection</td>
+<td>last</td>
+<td>Int</td>
+<td>Returns the last n elements from the list.</td>
+</tr>
+<tr>
+<td>logicalChildConnection</td>
+<td>before</td>
+<td>String</td>
+<td>An opaque cursor returned from a previous query's startCursor field. Pass this value verbatim to retrieve the previous page of results.</td>
 </tr>
 <tr>
 <td>logicalChildConnection</td>

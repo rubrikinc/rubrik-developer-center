@@ -1,21 +1,21 @@
 # gitHubOrganizations
 
-Query GitHub organization objects.
+Query GitHub organization hierarchy objects.
 
 ## Arguments
 
-| Argument                | Type                                                                                                                                       | Description                                                                                                                                                                        |
-| ----------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| first                   | Int                                                                                                                                        | Returns the first n elements from the list.                                                                                                                                        |
-| after                   | String                                                                                                                                     | Returns the elements in the list that occur after the specified cursor.                                                                                                            |
-| last                    | Int                                                                                                                                        | Returns the last n elements from the list.                                                                                                                                         |
-| before                  | String                                                                                                                                     | Returns the elements in the list that occur before the specified cursor.                                                                                                           |
-| queryType *(required)*  | [QueryType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/QueryType/index.md)!                          | The type of query to perform (CHILDREN or DESCENDANTS).                                                                                                                            |
-| ancestorId *(required)* | String!                                                                                                                                    | Ancestor object/root ID.                                                                                                                                                           |
-| filter *(required)*     | \[[Filter](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/Filter/index.md)!\]!                          | The hierarchy object filter.                                                                                                                                                       |
-| sortBy                  | [HierarchySortByField](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/HierarchySortByField/index.md)     | Sort hierarchy objects according to the hierarchy field.                                                                                                                           |
-| sortOrder               | [SortOrder](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/SortOrder/index.md)                           | Sorts the order of results.                                                                                                                                                        |
-| workloadHierarchy       | [WorkloadLevelHierarchy](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/WorkloadLevelHierarchy/index.md) | Each enumeration value represents the hierarchy of a specific workload type for RBAC and SLA Domain assignments. A value of 'None' represents the hierarchy of all workload types. |
+| Argument                | Type                                                                                                                                       | Description                                                                                                                             |
+| ----------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------- |
+| first                   | Int                                                                                                                                        | Returns the first n elements from the list.                                                                                             |
+| after                   | String                                                                                                                                     | An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results.       |
+| last                    | Int                                                                                                                                        | Returns the last n elements from the list.                                                                                              |
+| before                  | String                                                                                                                                     | An opaque cursor returned from a previous query's startCursor field. Pass this value verbatim to retrieve the previous page of results. |
+| ancestorId *(required)* | String!                                                                                                                                    | Ancestor object/root ID.                                                                                                                |
+| queryType *(required)*  | [QueryType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/QueryType/index.md)!                          | Type of query to perform (CHILDREN or DESCENDANTS).                                                                                     |
+| filter *(required)*     | \[[Filter](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/Filter/index.md)!\]!                          | The hierarchy object filter.                                                                                                            |
+| sortBy                  | [HierarchySortByField](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/HierarchySortByField/index.md)     | Sort hierarchy objects by field.                                                                                                        |
+| sortOrder               | [SortOrder](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/SortOrder/index.md)                           | Sorts the order of results.                                                                                                             |
+| workloadHierarchy       | [WorkloadLevelHierarchy](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/WorkloadLevelHierarchy/index.md) | Each enumeration value represents the hierarchy of a specific workload type for RBAC and SLA Domain assignments.                        |
 
 ## Returns
 
@@ -24,10 +24,10 @@ Query GitHub organization objects.
 ## Sample
 
 ```graphql
-query GitHubOrganizations($queryType: QueryType!, $ancestorId: String!, $filter: [Filter!]!) {
+query GitHubOrganizations($ancestorId: String!, $queryType: QueryType!, $filter: [Filter!]!) {
   gitHubOrganizations(
-    queryType: $queryType
     ancestorId: $ancestorId
+    queryType: $queryType
     filter: $filter
     first: 10
   ) {
@@ -38,6 +38,7 @@ query GitHubOrganizations($queryType: QueryType!, $ancestorId: String!, $filter:
       id
       isRelic
       lastRefreshTime
+      legallyHeldSnapshotCount
       name
       nativeId
       numWorkloadDescendants
@@ -60,8 +61,8 @@ query GitHubOrganizations($queryType: QueryType!, $ancestorId: String!, $filter:
 
 ```json
 {
-  "queryType": "CHILDREN",
   "ancestorId": "example-string",
+  "queryType": "CHILDREN",
   "filter": [
     {}
   ]

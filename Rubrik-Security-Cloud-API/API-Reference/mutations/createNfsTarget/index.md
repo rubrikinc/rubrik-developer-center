@@ -1,6 +1,6 @@
 # createNfsTarget
 
-*No description available.*
+Creates an NFS archival target on the Rubrik cluster.
 
 ## Arguments
 
@@ -17,6 +17,7 @@
 ```graphql
 mutation CreateNfsTarget($input: CreateNfsTargetInput!) {
   createNfsTarget(input: $input) {
+    archivalLocationPurpose
     clusterName
     consumedBytes
     failedTasks
@@ -55,11 +56,11 @@ mutation CreateNfsTarget($input: CreateNfsTargetInput!) {
 {
   "data": {
     "createNfsTarget": {
+      "archivalLocationPurpose": "ADO",
       "clusterName": "example-string",
       "consumedBytes": 0,
       "failedTasks": 0,
-      "id": "example-string",
-      "isActive": true
+      "id": "example-string"
     }
   }
 }

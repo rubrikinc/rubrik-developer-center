@@ -27,6 +27,7 @@ query AwsNativeDynamoDbTable($dynamoDbTableRubrikId: UUID!) {
     isInfrastructureAlertsEnabled
     isProtectable
     isRelic
+    legallyHeldSnapshotCount
     name
     nativeName
     nonBackupRegionNames

@@ -4,9 +4,9 @@ Initiate a session before doing Gcp OAuth flow.
 
 ## Arguments
 
-| Argument           | Type                                                                                                                                                               | Description                                         |
-| ------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ | --------------------------------------------------- |
-| input *(required)* | [GcpCloudAccountOauthInitiateInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/GcpCloudAccountOauthInitiateInput/index.md)! | Input to initiate the GCP cloud account OAuth flow. |
+| Argument           | Type                                                                                                                                                               | Description                           |
+| ------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------- |
+| input *(required)* | [GcpCloudAccountOauthInitiateInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/GcpCloudAccountOauthInitiateInput/index.md)! | Input to initiate the GCP OAuth flow. |
 
 ## Returns
 

@@ -17,10 +17,12 @@ Query Azure DevOps project object.
 ```graphql
 query AzureDevOpsProject($workloadId: UUID!) {
   azureDevOpsProject(workloadId: $workloadId) {
+    artifactsFixedObjectId
     authorizedOperations
     fixedObjectId
     id
     isRelic
+    legallyHeldSnapshotCount
     name
     nativeId
     numWorkloadDescendants
@@ -47,14 +49,14 @@ query AzureDevOpsProject($workloadId: UUID!) {
 {
   "data": {
     "azureDevOpsProject": {
+      "artifactsFixedObjectId": "00000000-0000-0000-0000-000000000000",
       "authorizedOperations": [
         "ACCESS_CDM_CLUSTER"
       ],
       "fixedObjectId": "00000000-0000-0000-0000-000000000000",
       "id": "00000000-0000-0000-0000-000000000000",
       "isRelic": true,
-      "name": "example-string",
-      "nativeId": "example-string",
+      "legallyHeldSnapshotCount": 0,
       "allOrgs": [
         {
           "allUrls": [

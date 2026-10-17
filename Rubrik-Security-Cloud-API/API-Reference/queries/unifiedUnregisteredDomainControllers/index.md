@@ -4,15 +4,15 @@ Lists auto-discovered AD domain controllers without RBS, deduplicated across all
 
 ## Arguments
 
-| Argument  | Type                                                                                                                                             | Description                                                              |
-| --------- | ------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------ |
-| first     | Int                                                                                                                                              | Returns the first n elements from the list.                              |
-| after     | String                                                                                                                                           | Returns the elements in the list that occur after the specified cursor.  |
-| last      | Int                                                                                                                                              | Returns the last n elements from the list.                               |
-| before    | String                                                                                                                                           | Returns the elements in the list that occur before the specified cursor. |
-| sortBy    | [UnregisteredDcSortByField](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/UnregisteredDcSortByField/index.md) | Field to sort the results by.                                            |
-| sortOrder | [SortOrder](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/SortOrder/index.md)                                 | Sort order (ASC / DESC).                                                 |
-| filter    | \[[UnregisteredDcFilter](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/UnregisteredDcFilter/index.md)!\]     | Filters to apply to the result set.                                      |
+| Argument  | Type                                                                                                                                             | Description                                                                                                                             |
+| --------- | ------------------------------------------------------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------- |
+| first     | Int                                                                                                                                              | Returns the first n elements from the list.                                                                                             |
+| after     | String                                                                                                                                           | An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results.       |
+| last      | Int                                                                                                                                              | Returns the last n elements from the list.                                                                                              |
+| before    | String                                                                                                                                           | An opaque cursor returned from a previous query's startCursor field. Pass this value verbatim to retrieve the previous page of results. |
+| sortBy    | [UnregisteredDcSortByField](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/UnregisteredDcSortByField/index.md) | Field to sort the results by.                                                                                                           |
+| sortOrder | [SortOrder](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/SortOrder/index.md)                                 | Sort order (ASC / DESC).                                                                                                                |
+| filter    | \[[UnregisteredDcFilter](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/UnregisteredDcFilter/index.md)!\]     | Filters to apply to the result set.                                                                                                     |
 
 ## Returns
 

@@ -4,9 +4,9 @@ Details of all the supported permission groups for the specified features.
 
 ## Arguments
 
-| Argument              | Type                                                                                                                                       | Description             |
-| --------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ | ----------------------- |
-| features *(required)* | \[[CloudAccountFeature](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/CloudAccountFeature/index.md)!\]! | Cloud account features. |
+| Argument              | Type                                                                                                                                       | Description                                                       |
+| --------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------- |
+| features *(required)* | \[[CloudAccountFeature](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/CloudAccountFeature/index.md)!\]! | The cloud account features whose permission groups are requested. |
 
 ## Returns
 
@@ -38,6 +38,9 @@ query AllLatestPermissionsByPermissionsGroupGcp($features: [CloudAccountFeature!
         "feature": "ALL",
         "permissionGroups": [
           {
+            "conditions": [
+              "example-string"
+            ],
             "permissionGroupType": "ADVANCED_DIAGNOSTICS",
             "permissionsWithConditions": [
               "example-string"

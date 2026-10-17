@@ -1,16 +1,18 @@
 # postgreSQLDbClusters
 
-Connection of filtered PostgreSQL database cluster based on specific filters.
+Returns a connection of filtered PostgreSQL database clusters based on specific filters.
 
 ## Arguments
 
-| Argument  | Type                                                                                                                                   | Description                                                             |
-| --------- | -------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------- |
-| first     | Int                                                                                                                                    | Returns the first n elements from the list.                             |
-| after     | String                                                                                                                                 | Returns the elements in the list that occur after the specified cursor. |
-| sortBy    | [HierarchySortByField](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/HierarchySortByField/index.md) | Sort hierarchy objects according to the hierarchy field.                |
-| sortOrder | [SortOrder](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/SortOrder/index.md)                       | Sorts the order of results.                                             |
-| filter    | \[[Filter](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/Filter/index.md)!\]                       | Hierarchy object filter.                                                |
+| Argument  | Type                                                                                                                                   | Description                                                                                                                             |
+| --------- | -------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
+| first     | Int                                                                                                                                    | Returns the first n elements from the list.                                                                                             |
+| after     | String                                                                                                                                 | An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results.       |
+| last      | Int                                                                                                                                    | Returns the last n elements from the list.                                                                                              |
+| before    | String                                                                                                                                 | An opaque cursor returned from a previous query's startCursor field. Pass this value verbatim to retrieve the previous page of results. |
+| sortBy    | [HierarchySortByField](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/HierarchySortByField/index.md) | Sort hierarchy objects according to the hierarchy field.                                                                                |
+| sortOrder | [SortOrder](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/SortOrder/index.md)                       | Sorts the order of results.                                                                                                             |
+| filter    | \[[Filter](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/Filter/index.md)!\]                       | Hierarchy object filter.                                                                                                                |
 
 ## Returns
 
@@ -30,6 +32,8 @@ query {
       id
       isRelic
       isReplica
+      lastRecoverableRangeCheckedAt
+      legallyHeldSnapshotCount
       name
       numWorkloadDescendants
       objectType

@@ -27,7 +27,7 @@ Inventory workloads that are supported on Rubrik.
 | GCPNATIVE_ROOT                                                    | GCP Native root.                            |
 | GITHUB_ROOT                                                       | GitHub root.                                |
 | GOOGLE_WORKSPACE_ROOT                                             | The root of the Google workspace hierarchy. |
-| HVM_ROOT                                                          | HPE Virtual Machine Essentials root.        |
+| HPE_VME_ROOT                                                      | HPE Virtual Machine Essentials root.        |
 | HYPERV_ROOT                                                       | Hyper-V root.                               |
 | INFORMIX_ROOT                                                     | The root of the Informix hierarchy.         |
 | IRISDB_ROOT                                                       | The root of the IRIS DB sub-hierarchy.      |
@@ -35,6 +35,7 @@ Inventory workloads that are supported on Rubrik.
 | KUPR_ROOT                                                         | KUPR root.                                  |
 | LINUX_HOST_ROOT                                                   | Linux Host root.                            |
 | M365_BACKUP_STORAGE_ROOT                                          | M365 Backup Storage Root.                   |
+| M365_CONFIGS_ROOT                                                 | M365 Configs root.                          |
 | MANAGED_VOLUME_ROOT                                               | Managed Volume root.                        |
 | MARIADB_ROOT                                                      | MariaDB root.                               |
 | MONGODB_ROOT                                                      | MongoDB Root.                               |

@@ -1,6 +1,6 @@
 # getGroupCountByCdmClusterStatus
 
-*No description available.*
+Counts of Rubrik clusters, grouped by CDM cluster status, with the total number of clusters.
 
 ## Returns
 

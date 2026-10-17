@@ -4,9 +4,9 @@ Retrieve details of a scheduled report.
 
 ## Arguments
 
-| Argument        | Type | Description |
-| --------------- | ---- | ----------- |
-| id *(required)* | Int! |             |
+| Argument        | Type | Description                         |
+| --------------- | ---- | ----------------------------------- |
+| id *(required)* | Int! | Identifier of the scheduled report. |
 
 ## Returns
 

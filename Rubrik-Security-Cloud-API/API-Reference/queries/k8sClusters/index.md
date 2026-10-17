@@ -4,13 +4,13 @@
 
 ## Arguments
 
-| Argument  | Type                                                                                                                                   | Description                                                             |
-| --------- | -------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------- |
-| first     | Int                                                                                                                                    | Returns the first n elements from the list.                             |
-| after     | String                                                                                                                                 | Returns the elements in the list that occur after the specified cursor. |
-| sortBy    | [HierarchySortByField](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/HierarchySortByField/index.md) | Sort hierarchy objects according to the hierarchy field.                |
-| sortOrder | [SortOrder](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/SortOrder/index.md)                       | Sorts the order of results.                                             |
-| filter    | \[[Filter](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/Filter/index.md)!\]                       | Hierarchy object filter.                                                |
+| Argument  | Type                                                                                                                                   | Description                                                                                                                       |
+| --------- | -------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
+| first     | Int                                                                                                                                    | Returns the first n elements from the list.                                                                                       |
+| after     | String                                                                                                                                 | An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results. |
+| sortBy    | [HierarchySortByField](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/HierarchySortByField/index.md) | Sort hierarchy objects according to the hierarchy field.                                                                          |
+| sortOrder | [SortOrder](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/SortOrder/index.md)                       | Sorts the order of results.                                                                                                       |
+| filter    | \[[Filter](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/Filter/index.md)!\]                       | Hierarchy object filter.                                                                                                          |
 
 ## Returns
 
@@ -26,6 +26,7 @@ query {
       clusterIp
       id
       lastRefreshTime
+      legallyHeldSnapshotCount
       name
       numWorkloadDescendants
       objectType
@@ -61,8 +62,8 @@ query {
             ],
             "id": "00000000-0000-0000-0000-000000000000",
             "lastRefreshTime": "2024-01-01T00:00:00.000Z",
-            "name": "example-string",
-            "numWorkloadDescendants": 0
+            "legallyHeldSnapshotCount": 0,
+            "name": "example-string"
           }
         ]
       ],

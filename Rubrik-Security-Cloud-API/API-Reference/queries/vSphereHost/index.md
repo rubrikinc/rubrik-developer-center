@@ -1,6 +1,6 @@
 # vSphereHost
 
-*No description available.*
+Details of the vSphere host with the given Rubrik ID.
 
 ## Arguments
 
@@ -25,6 +25,7 @@ query VSphereHost($fid: UUID!) {
     ioFilterStatus
     isReplica
     isStandaloneHost
+    legallyHeldSnapshotCount
     name
     numWorkloadDescendants
     objectType

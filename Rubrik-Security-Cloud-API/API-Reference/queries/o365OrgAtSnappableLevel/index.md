@@ -25,6 +25,7 @@ query O365OrgAtSnappableLevel($fid: UUID!, $snappableType: SnappableType!) {
     exocomputeId
     hasSharePointLegacySnapshots
     id
+    legallyHeldSnapshotCount
     mailboxesPendingGraphMigration
     name
     numWorkloadDescendants
@@ -69,8 +70,8 @@ query O365OrgAtSnappableLevel($fid: UUID!, $snappableType: SnappableType!) {
       "exocomputeId": "example-string",
       "hasSharePointLegacySnapshots": true,
       "id": "00000000-0000-0000-0000-000000000000",
+      "legallyHeldSnapshotCount": 0,
       "mailboxesPendingGraphMigration": 0,
-      "name": "example-string",
       "allOrgs": [
         {
           "allUrls": [

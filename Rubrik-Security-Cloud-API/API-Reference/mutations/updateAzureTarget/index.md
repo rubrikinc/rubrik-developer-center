@@ -1,6 +1,6 @@
 # updateAzureTarget
 
-*No description available.*
+Updates an Azure archival target on the Rubrik cluster.
 
 ## Arguments
 
@@ -17,6 +17,7 @@
 ```graphql
 mutation UpdateAzureTarget($input: UpdateAzureTargetInput!) {
   updateAzureTarget(input: $input) {
+    archivalLocationPurpose
     clusterName
     consumedBytes
     failedTasks
@@ -49,11 +50,11 @@ mutation UpdateAzureTarget($input: UpdateAzureTargetInput!) {
 {
   "data": {
     "updateAzureTarget": {
+      "archivalLocationPurpose": "ADO",
       "clusterName": "example-string",
       "consumedBytes": 0,
       "failedTasks": 0,
-      "id": "example-string",
-      "isActive": true
+      "id": "example-string"
     }
   }
 }

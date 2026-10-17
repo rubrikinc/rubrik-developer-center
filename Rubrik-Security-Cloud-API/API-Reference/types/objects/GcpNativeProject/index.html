@@ -1007,6 +1007,11 @@
 <td>List of protection features enabled for the GCP project.</td>
 </tr>
 <tr>
+<td>futureLegalHoldInfo</td>
+<td><a href="../FutureLegalHoldInfo/">FutureLegalHoldInfo</a></td>
+<td>Future legal hold rule configured for this object, if any.</td>
+</tr>
+<tr>
 <td>gcpNativeGceInstanceConnection</td>
 <td><a href="../GcpNativeGceInstanceConnection/">GcpNativeGceInstanceConnection</a>!</td>
 <td>List of all GCE instances under this GCP project.</td>
@@ -1030,6 +1035,11 @@
 <td>lastRefreshedAt</td>
 <td><a href="../../scalars/DateTime/">DateTime</a></td>
 <td>Last refreshed time of the GCP project.</td>
+</tr>
+<tr>
+<td>legallyHeldSnapshotCount</td>
+<td>Int</td>
+<td>Number of snapshots on legal hold for this object.</td>
 </tr>
 <tr>
 <td>logicalChildConnection</td>
@@ -1099,7 +1109,7 @@
 <tr>
 <td>rscPendingObjectPauseAssignment</td>
 <td><a href="../../enums/PendingObjectPauseAssignmentStatus/">PendingObjectPauseAssignmentStatus</a></td>
-<td>Object pause pending assignment details for RSC objects.</td>
+<td>Pending pause or unpause assignment for RSC-native objects.</td>
 </tr>
 <tr>
 <td>securityMetadata</td>
@@ -1159,7 +1169,7 @@
 <td>gcpNativeGceInstanceConnection</td>
 <td>after</td>
 <td>String</td>
-<td>Returns the elements in the list that occur after the specified cursor.</td>
+<td>An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results.</td>
 </tr>
 <tr>
 <td>gcpNativeGceInstanceConnection</td>
@@ -1171,7 +1181,7 @@
 <td>gcpNativeGceInstanceConnection</td>
 <td>before</td>
 <td>String</td>
-<td>Returns the elements in the list that occur before the specified cursor.</td>
+<td>An opaque cursor returned from a previous query's startCursor field. Pass this value verbatim to retrieve the previous page of results.</td>
 </tr>
 <tr>
 <td>gcpNativeGceInstanceConnection</td>

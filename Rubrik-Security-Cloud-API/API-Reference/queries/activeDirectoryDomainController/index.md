@@ -32,6 +32,7 @@ query ActiveDirectoryDomainController($fid: UUID!) {
     isReadOnly
     isRelic
     isReplica
+    legallyHeldSnapshotCount
     macAddress
     macAddresses
     name

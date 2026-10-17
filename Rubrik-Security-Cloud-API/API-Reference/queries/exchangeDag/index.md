@@ -23,6 +23,7 @@ query ExchangeDag($fid: UUID!) {
     cdmPendingObjectPauseAssignment
     id
     isReplica
+    legallyHeldSnapshotCount
     name
     numWorkloadDescendants
     objectType

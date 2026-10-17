@@ -25,6 +25,7 @@ query VSphereDatastoreCluster($fid: UUID!) {
     id
     isReplica
     isSdrsEnabled
+    legallyHeldSnapshotCount
     name
     numWorkloadDescendants
     objectType

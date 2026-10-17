@@ -19,6 +19,7 @@ query PolarisSnapshot($snapshotFid: UUID!) {
   polarisSnapshot(snapshotFid: $snapshotFid) {
     archivalLocationId
     archivalLocationName
+    archivalLocationPurpose
     backupType
     consistencyLevel
     date
@@ -69,10 +70,10 @@ query PolarisSnapshot($snapshotFid: UUID!) {
     "polarisSnapshot": {
       "archivalLocationId": "example-string",
       "archivalLocationName": "example-string",
+      "archivalLocationPurpose": "ADO",
       "backupType": "NATIVE",
       "consistencyLevel": "SNAPSHOT_APP_CONSISTENT",
       "date": "2024-01-01T00:00:00.000Z",
-      "expirationDate": "2024-01-01T00:00:00.000Z",
       "archivedSnapshots": [
         {
           "id": "00000000-0000-0000-0000-000000000000",

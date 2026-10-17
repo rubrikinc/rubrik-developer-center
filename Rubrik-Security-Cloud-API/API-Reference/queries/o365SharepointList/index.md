@@ -20,6 +20,7 @@ query O365SharepointList($snappableFid: UUID!) {
     authorizedOperations
     id
     isRelic
+    legallyHeldSnapshotCount
     name
     naturalId
     numWorkloadDescendants
@@ -53,9 +54,9 @@ query O365SharepointList($snappableFid: UUID!) {
       ],
       "id": "00000000-0000-0000-0000-000000000000",
       "isRelic": true,
+      "legallyHeldSnapshotCount": 0,
       "name": "example-string",
       "naturalId": "example-string",
-      "numWorkloadDescendants": 0,
       "allOrgs": [
         {
           "allUrls": [

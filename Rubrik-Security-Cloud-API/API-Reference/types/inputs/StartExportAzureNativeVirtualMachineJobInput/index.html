@@ -912,7 +912,7 @@
 
 
 <h1 id="startexportazurenativevirtualmachinejobinput">StartExportAzureNativeVirtualMachineJobInput</h1>
-<p>Input for the job to export the specified Azure Native Virtual Machine to the specified destination.</p>
+<p>Input for the job to export an Azure virtual machine from a snapshot.</p>
 <h2 id="fields">Fields</h2>
 <table>
 <thead>
@@ -926,42 +926,42 @@
 <tr>
 <td>archivedSnapshotId</td>
 <td><a href="../../scalars/UUID/">UUID</a></td>
-<td>ID of the archived snapshot to be exported. This field should be specified only when <code>snapshotType</code> is set to <code>Archived</code>. In such cases, the archived snapshot will be used for export. If <code>snapshotType</code> is not <code>Archived</code>, this field is ignored.</td>
+<td>ID of the archived snapshot to export. This field should be specified only when <code>snapshotType</code> is set to <code>Archived</code>.</td>
 </tr>
 <tr>
 <td>availabilitySetNativeId</td>
 <td>String</td>
-<td>The native ID of the availability set used by the virtual machine created by the export job.</td>
+<td>Native ID of the availability set the exported virtual machine joins.</td>
 </tr>
 <tr>
 <td>destinationAvailabilityZone</td>
 <td>String</td>
-<td>The Availability Zone where the virtual machine created by the export job exists. When the region type does not support Availability Zones, this value is null.</td>
+<td>Availability zone the virtual machine is exported to. Leave empty for regions or virtual machine sizes that do not support availability zones.</td>
 </tr>
 <tr>
 <td>destinationKeyVaultName</td>
 <td>String</td>
-<td>Name of the key vault created in the destination region.This is required for cross region export of ADE enabled VMs.</td>
+<td>Name of the key vault created in the destination region. Required for cross-region export of virtual machines with Azure Disk Encryption enabled.</td>
 </tr>
 <tr>
 <td>destinationRegion</td>
 <td><a href="../../enums/AzureNativeRegion/">AzureNativeRegion</a>!</td>
-<td>The region where the virtual machine created by the export job exists.</td>
+<td>Azure region the virtual machine is exported to.</td>
 </tr>
 <tr>
 <td>destinationSubscriptionRubrikId</td>
 <td><a href="../../scalars/UUID/">UUID</a></td>
-<td>The Rubrik ID of the Azure subscription to which the virtual machine is exported. When this value is not specified, the virtual machine is exported to the same Azure subscription.</td>
+<td>Rubrik ID of the Azure subscription the virtual machine is exported to. When empty, the virtual machine is exported to the subscription it was backed up from.</td>
 </tr>
 <tr>
 <td>diskEncryptionSetNativeId</td>
 <td>String</td>
-<td>Native ID of the disk encryption set for encrypting the newly created disks.</td>
+<td>Native ID of the disk encryption set used to encrypt the disks created for the exported virtual machine.</td>
 </tr>
 <tr>
 <td>networkSecurityGroupNativeId</td>
 <td>String</td>
-<td>The native ID of the network security group used by the virtual machine created by the export job.</td>
+<td>Native ID of the network security group applied to the exported virtual machine.</td>
 </tr>
 <tr>
 <td>recoveryDiskIds</td>
@@ -976,52 +976,52 @@
 <tr>
 <td>resourceGroupName</td>
 <td>String!</td>
-<td>The resource group associated with the virtual machine created by the export job.</td>
+<td>Name of the resource group the exported virtual machine is created in.</td>
 </tr>
 <tr>
 <td>shouldEnableAcceleratedNetworking</td>
 <td>Boolean</td>
-<td>Specifies whether to enable accelerated networking for the virtual machine created by the export job. This value is false by default.</td>
+<td>Specifies whether accelerated networking is enabled on the exported virtual machine.</td>
 </tr>
 <tr>
 <td>shouldExportTags</td>
 <td>Boolean!</td>
-<td>Specifies whether to export the tags from the snapshot.</td>
+<td>Specifies whether the tags at the time of the snapshot are applied to the exported virtual machine.</td>
 </tr>
 <tr>
 <td>shouldPowerOff</td>
 <td>Boolean!</td>
-<td>Specifies whether to export the virtual machine in a powered-down state.</td>
+<td>Specifies whether the exported virtual machine is powered off after the export completes.</td>
 </tr>
 <tr>
 <td>shouldUseReplica</td>
 <td>Boolean</td>
-<td>Specifies whether to recover from a replica of the source snapshot.</td>
+<td>Specifies whether the replica of the snapshot is used for the export. Ignored when <code>snapshotType</code> is specified.</td>
 </tr>
 <tr>
 <td>snapshotId</td>
 <td><a href="../../scalars/UUID/">UUID</a>!</td>
-<td>The snapshot ID of the snapshot used to export a virtual machine.</td>
+<td>Snapshot ID of the snapshot from which the virtual machine is exported.</td>
 </tr>
 <tr>
 <td>snapshotType</td>
 <td><a href="../../enums/AzureSnapshotType/">AzureSnapshotType</a></td>
-<td>The type of the snapshot to recover from.</td>
+<td>Copy of the snapshot to export from. Defaults to the replica when <code>shouldUseReplica</code> is true, and to the source snapshot otherwise.</td>
 </tr>
 <tr>
 <td>subnetNativeId</td>
 <td>String!</td>
-<td>The native ID of the subnet used by the virtual machine created by the export job.</td>
+<td>Native ID of the subnet the exported virtual machine is attached to.</td>
 </tr>
 <tr>
 <td>virtualMachineName</td>
 <td>String!</td>
-<td>The name of the virtual machine created as a result of the export job.</td>
+<td>Name of the exported virtual machine.</td>
 </tr>
 <tr>
 <td>virtualMachineSize</td>
 <td>String!</td>
-<td>The size, in GiB, of the virtual machine created by the export job.</td>
+<td>Azure size of the exported virtual machine.</td>
 </tr>
 </tbody>
 </table>

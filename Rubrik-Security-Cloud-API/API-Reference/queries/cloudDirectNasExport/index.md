@@ -27,6 +27,7 @@ query CloudDirectNasExport($fid: UUID!) {
     isArchived
     isProtected
     isRelic
+    legallyHeldSnapshotCount
     name
     numWorkloadDescendants
     objectType

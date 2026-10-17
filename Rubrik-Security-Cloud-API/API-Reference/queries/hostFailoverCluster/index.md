@@ -23,6 +23,7 @@ query HostFailoverCluster($fid: UUID!) {
     id
     isArchived
     isReplica
+    legallyHeldSnapshotCount
     name
     nodesOsType
     numWorkloadDescendants

@@ -22,6 +22,7 @@ query WorkloadAlertSetting($clusterUuid: UUID!, $workloadId: UUID!) {
     workloadId: $workloadId
   ) {
     enabled
+    isThreatMonitoringEnabled
   }
 }
 ```
@@ -37,7 +38,8 @@ query WorkloadAlertSetting($clusterUuid: UUID!, $workloadId: UUID!) {
 {
   "data": {
     "workloadAlertSetting": {
-      "enabled": true
+      "enabled": true,
+      "isThreatMonitoringEnabled": true
     }
   }
 }

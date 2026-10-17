@@ -4,18 +4,18 @@ Query GitHub repository objects.
 
 ## Arguments
 
-| Argument                | Type                                                                                                                                       | Description                                                                                                                                                                        |
-| ----------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| first                   | Int                                                                                                                                        | Returns the first n elements from the list.                                                                                                                                        |
-| after                   | String                                                                                                                                     | Returns the elements in the list that occur after the specified cursor.                                                                                                            |
-| last                    | Int                                                                                                                                        | Returns the last n elements from the list.                                                                                                                                         |
-| before                  | String                                                                                                                                     | Returns the elements in the list that occur before the specified cursor.                                                                                                           |
-| queryType *(required)*  | [QueryType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/QueryType/index.md)!                          | The type of query to perform (CHILDREN or DESCENDANTS).                                                                                                                            |
-| ancestorId *(required)* | String!                                                                                                                                    | Ancestor object/root ID.                                                                                                                                                           |
-| filter *(required)*     | \[[Filter](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/Filter/index.md)!\]!                          | The hierarchy object filter.                                                                                                                                                       |
-| sortBy                  | [HierarchySortByField](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/HierarchySortByField/index.md)     | Sort hierarchy objects according to the hierarchy field.                                                                                                                           |
-| sortOrder               | [SortOrder](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/SortOrder/index.md)                           | Sorts the order of results.                                                                                                                                                        |
-| workloadHierarchy       | [WorkloadLevelHierarchy](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/WorkloadLevelHierarchy/index.md) | Each enumeration value represents the hierarchy of a specific workload type for RBAC and SLA Domain assignments. A value of 'None' represents the hierarchy of all workload types. |
+| Argument                | Type                                                                                                                                       | Description                                                                                                                             |
+| ----------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------- |
+| first                   | Int                                                                                                                                        | Returns the first n elements from the list.                                                                                             |
+| after                   | String                                                                                                                                     | An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results.       |
+| last                    | Int                                                                                                                                        | Returns the last n elements from the list.                                                                                              |
+| before                  | String                                                                                                                                     | An opaque cursor returned from a previous query's startCursor field. Pass this value verbatim to retrieve the previous page of results. |
+| queryType *(required)*  | [QueryType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/QueryType/index.md)!                          | Type of query to perform (CHILDREN or DESCENDANTS).                                                                                     |
+| ancestorId *(required)* | String!                                                                                                                                    | Ancestor object/root ID.                                                                                                                |
+| filter *(required)*     | \[[Filter](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/Filter/index.md)!\]!                          | The hierarchy object filter.                                                                                                            |
+| sortBy                  | [HierarchySortByField](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/HierarchySortByField/index.md)     | Sort hierarchy objects by field.                                                                                                        |
+| sortOrder               | [SortOrder](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/SortOrder/index.md)                           | Sorts the order of results.                                                                                                             |
+| workloadHierarchy       | [WorkloadLevelHierarchy](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/WorkloadLevelHierarchy/index.md) | Each enumeration value represents the hierarchy of a specific workload type for RBAC and SLA Domain assignments.                        |
 
 ## Returns
 
@@ -35,6 +35,7 @@ query GitHubRepositories($queryType: QueryType!, $ancestorId: String!, $filter: 
       authorizedOperations
       id
       isRelic
+      legallyHeldSnapshotCount
       name
       numWorkloadDescendants
       objectType
@@ -76,9 +77,9 @@ query GitHubRepositories($queryType: QueryType!, $ancestorId: String!, $filter: 
             ],
             "id": "00000000-0000-0000-0000-000000000000",
             "isRelic": true,
+            "legallyHeldSnapshotCount": 0,
             "name": "example-string",
-            "numWorkloadDescendants": 0,
-            "objectType": "ACTIVE_DIRECTORY_DOMAIN"
+            "numWorkloadDescendants": 0
           }
         ]
       ],

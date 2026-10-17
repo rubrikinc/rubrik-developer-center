@@ -7,9 +7,9 @@ Retrieves a paginated list of all Azure Native Subscriptions.
 | Argument                      | Type                                                                                                                                                             | Description                                                                                                                                  |
 | ----------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
 | first                         | Int                                                                                                                                                              | Returns the first n elements from the list.                                                                                                  |
-| after                         | String                                                                                                                                                           | Returns the elements in the list that occur after the specified cursor.                                                                      |
+| after                         | String                                                                                                                                                           | An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results.            |
 | last                          | Int                                                                                                                                                              | Returns the last n elements from the list.                                                                                                   |
-| before                        | String                                                                                                                                                           | Returns the elements in the list that occur before the specified cursor.                                                                     |
+| before                        | String                                                                                                                                                           | An opaque cursor returned from a previous query's startCursor field. Pass this value verbatim to retrieve the previous page of results.      |
 | sortBy                        | [AzureNativeSubscriptionSortFields](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/AzureNativeSubscriptionSortFields/index.md) | Sort fields for list of Azure subscriptions.                                                                                                 |
 | sortOrder                     | [SortOrder](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/SortOrder/index.md)                                                 | Sorts the order of results.                                                                                                                  |
 | subscriptionFilters           | [AzureNativeSubscriptionFilters](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/AzureNativeSubscriptionFilters/index.md)      |                                                                                                                                              |
@@ -31,6 +31,7 @@ query {
       accountConnectionId
       authorizedOperations
       azureCloudType
+      azureCosmosNosqlContainerCount
       azurePostgresFlexibleServerCount
       azureSqlDatabaseDbCount
       azureSqlManagedInstanceDbCount
@@ -42,6 +43,7 @@ query {
       id
       isProtectable
       lastRefreshedAt
+      legallyHeldSnapshotCount
       name
       numWorkloadDescendants
       objectType
@@ -75,9 +77,9 @@ query {
               "MANAGE_DATA_SOURCE"
             ],
             "azureCloudType": "AZURECHINACLOUD",
+            "azureCosmosNosqlContainerCount": 0,
             "azurePostgresFlexibleServerCount": 0,
-            "azureSqlDatabaseDbCount": 0,
-            "azureSqlManagedInstanceDbCount": 0
+            "azureSqlDatabaseDbCount": 0
           }
         ]
       ],

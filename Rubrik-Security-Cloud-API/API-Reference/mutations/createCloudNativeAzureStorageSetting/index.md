@@ -4,9 +4,9 @@ Creates Storage Settings for the archival of azure cloud native protected object
 
 ## Arguments
 
-| Argument           | Type                                                                                                                                                                               | Description |
-| ------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------- |
-| input *(required)* | [CreateCloudNativeAzureStorageSettingInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/CreateCloudNativeAzureStorageSettingInput/index.md)! |             |
+| Argument           | Type                                                                                                                                                                               | Description                                |
+| ------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------ |
+| input *(required)* | [CreateCloudNativeAzureStorageSettingInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/CreateCloudNativeAzureStorageSettingInput/index.md)! | Create Azure cloud native storage setting. |
 
 ## Returns
 

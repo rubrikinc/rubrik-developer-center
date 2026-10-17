@@ -34,6 +34,7 @@ query VSphereVmWithProvisionOnInfrastructure($fid: UUID!) {
     isBlueprintChild
     isRelic
     isReplica
+    legallyHeldSnapshotCount
     name
     numWorkloadDescendants
     objectType

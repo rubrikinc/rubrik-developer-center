@@ -14,6 +14,8 @@ The host information of the discoverable entity.
 
 **Referenced by**
 
+- [InformixInstance.hostsInfo](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/InformixInstance/index.md)
+- [IrisdbInstance.hostsInfo](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/IrisdbInstance/index.md)
 - KosmosDiscoverableEntityType.hostsInfo
 - [MysqldbInstance.hostsInfo](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/MysqldbInstance/index.md)
 - [PostgreSQLDbCluster.hostsInfo](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/PostgreSQLDbCluster/index.md)

@@ -1,6 +1,6 @@
 # downloadedVersionList
 
-*No description available.*
+Counts of Rubrik clusters grouped by the CDM version each has downloaded.
 
 ## Returns
 

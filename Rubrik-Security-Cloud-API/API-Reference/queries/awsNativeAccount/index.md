@@ -34,6 +34,7 @@ query AwsNativeAccount($awsNativeAccountRubrikId: UUID!, $awsNativeProtectionFea
     id
     isProtectable
     lastRefreshedAt
+    legallyHeldSnapshotCount
     name
     nativeId
     numWorkloadDescendants

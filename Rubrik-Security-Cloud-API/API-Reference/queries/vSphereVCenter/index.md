@@ -1,6 +1,6 @@
 # vSphereVCenter
 
-*No description available.*
+Details of the vSphere vCenter Server with the given Rubrik ID.
 
 ## Arguments
 
@@ -28,6 +28,7 @@ query VSphereVCenter($fid: UUID!) {
     isStandaloneHost
     isVmc
     lastRefreshTime
+    legallyHeldSnapshotCount
     name
     numWorkloadDescendants
     objectType

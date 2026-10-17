@@ -16,7 +16,7 @@ Queries Mutations Objects Inputs Enums Interfaces Unions
 
   Read operations. Inventory a workload, list snapshots, check compliance, poll a job.
 
-  [Browse all 1,159 queries](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/index.md)
+  [Browse all 1,175 queries](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/index.md)
 
 - **Mutations**
 
@@ -24,7 +24,7 @@ Queries Mutations Objects Inputs Enums Interfaces Unions
 
   Write operations. Take a snapshot, assign an SLA, start a recovery, register a host.
 
-  [Browse all 1,006 mutations](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/index.md)
+  [Browse all 1,014 mutations](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/index.md)
 
 - **Types**
 
@@ -32,7 +32,7 @@ Queries Mutations Objects Inputs Enums Interfaces Unions
 
   Objects, inputs, enums, interfaces, unions, and scalars. What a field returns and what an input accepts.
 
-  [Browse all 7,837 types](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/index.md)
+  [Browse all 7,948 types](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/index.md)
 
 ## Guess the URL
 

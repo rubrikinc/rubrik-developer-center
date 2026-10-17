@@ -25,6 +25,7 @@ query ActiveDirectoryDomain($fid: UUID!) {
     id
     isArchived
     isReplica
+    legallyHeldSnapshotCount
     name
     numWorkloadDescendants
     objectType

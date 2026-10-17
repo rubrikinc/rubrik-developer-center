@@ -4,9 +4,9 @@ Complete the OAuth flow and pass the authorization code.
 
 ## Arguments
 
-| Argument           | Type                                                                                                                                                               | Description                                         |
-| ------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ | --------------------------------------------------- |
-| input *(required)* | [GcpCloudAccountOauthCompleteInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/GcpCloudAccountOauthCompleteInput/index.md)! | Input to complete the GCP cloud account OAuth flow. |
+| Argument           | Type                                                                                                                                                               | Description                           |
+| ------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------- |
+| input *(required)* | [GcpCloudAccountOauthCompleteInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/GcpCloudAccountOauthCompleteInput/index.md)! | Input to complete the GCP OAuth flow. |
 
 ## Returns
 

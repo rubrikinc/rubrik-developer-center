@@ -4,17 +4,17 @@ Returns security information (anomaly, malware, quarantine) for snapshots of the
 
 ## Arguments
 
-| Argument                 | Type                                                                                                             | Description                                                               |
-| ------------------------ | ---------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------- |
-| first                    | Int                                                                                                              | Returns the first n elements from the list.                               |
-| after                    | String                                                                                                           | Returns the elements in the list that occur after the specified cursor.   |
-| last                     | Int                                                                                                              | Returns the last n elements from the list.                                |
-| before                   | String                                                                                                           | Returns the elements in the list that occur before the specified cursor.  |
-| workloadIds *(required)* | \[[UUID](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/UUID/index.md)!\]!   | List of workload IDs for which to retrieve snapshot security information. |
-| startTime                | [DateTime](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/DateTime/index.md) | Optional filter to consider only snapshots at or after this time.         |
-| endTime                  | [DateTime](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/DateTime/index.md) | Optional filter to consider only snapshots at or before this time.        |
-| sortOrder                | [SortOrder](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/SortOrder/index.md) | Sort order based on timestamp.                                            |
-| includeThreatHunts       | Boolean                                                                                                          | Include threat hunt information in results.                               |
+| Argument                 | Type                                                                                                             | Description                                                                                                                             |
+| ------------------------ | ---------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
+| first                    | Int                                                                                                              | Returns the first n elements from the list.                                                                                             |
+| after                    | String                                                                                                           | An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results.       |
+| last                     | Int                                                                                                              | Returns the last n elements from the list.                                                                                              |
+| before                   | String                                                                                                           | An opaque cursor returned from a previous query's startCursor field. Pass this value verbatim to retrieve the previous page of results. |
+| workloadIds *(required)* | \[[UUID](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/UUID/index.md)!\]!   | List of workload IDs for which to retrieve snapshot security information.                                                               |
+| startTime                | [DateTime](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/DateTime/index.md) | Optional filter to consider only snapshots at or after this time.                                                                       |
+| endTime                  | [DateTime](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/DateTime/index.md) | Optional filter to consider only snapshots at or before this time.                                                                      |
+| sortOrder                | [SortOrder](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/SortOrder/index.md) | Sort order based on timestamp.                                                                                                          |
+| includeThreatHunts       | Boolean                                                                                                          | Include threat hunt information in results.                                                                                             |
 
 ## Returns
 

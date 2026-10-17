@@ -37,7 +37,7 @@ query AwsValidatePermissions($input: AwsValidatePermissionsReq!) {
           "cloudAccountNativeId": "example-string",
           "numMissingPermissions": 0,
           "permissionMissingForSimulation": true,
-          "status": "FAILURE"
+          "region": "example-string"
         }
       ]
     }

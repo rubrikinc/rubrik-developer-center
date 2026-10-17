@@ -1,11 +1,11 @@
 # AzureSnapshotType
 
-The type of snapshot to be used in export or restore jobs.
+Type of snapshot to be used for recovery.
 
 ## Values
 
-| Value      | Description                  |
-| ---------- | ---------------------------- |
-| ARCHIVED   | Use the archived snapshot.   |
-| REPLICATED | Use the replicated snapshot. |
-| SOURCE     | Use the source snapshot.     |
+| Value      | Description          |
+| ---------- | -------------------- |
+| ARCHIVED   | Archived snapshot.   |
+| REPLICATED | Replicated snapshot. |
+| SOURCE     | Source snapshot.     |

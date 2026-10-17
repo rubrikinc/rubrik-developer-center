@@ -16,4 +16,5 @@ Snapshot location information.
 
 - [AggregateSnapshotLocationDetail.archivalInfos](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AggregateSnapshotLocationDetail/index.md)
 - [AggregateSnapshotLocationDetail.localInfo](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AggregateSnapshotLocationDetail/index.md)
+- [AggregateSnapshotLocationDetail.rehydratedInfo](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AggregateSnapshotLocationDetail/index.md)
 - [AggregateSnapshotLocationDetail.replicationInfos](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AggregateSnapshotLocationDetail/index.md)

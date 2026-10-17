@@ -24,6 +24,7 @@ query AzureSqlManagedInstanceDatabase($azureSqlManagedInstanceDatabaseRubrikId: 
     exocomputeConfigured
     id
     isRelic
+    legallyHeldSnapshotCount
     name
     numWorkloadDescendants
     objectType

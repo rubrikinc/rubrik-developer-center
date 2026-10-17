@@ -30,6 +30,7 @@ query MongoSource($fid: UUID!) {
     isRelic
     isReplica
     lastRefreshTime
+    legallyHeldSnapshotCount
     managementType
     name
     numWorkloadDescendants

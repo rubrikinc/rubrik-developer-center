@@ -26,6 +26,7 @@ query NutanixPrismCentral($fid: UUID!) {
     isDrEnabled
     isReplica
     lastRefreshTime
+    legallyHeldSnapshotCount
     name
     naturalId
     nosVersion

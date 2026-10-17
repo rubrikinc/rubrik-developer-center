@@ -25,6 +25,7 @@ query VSphereHostsByFids($fids: [UUID!]!) {
     ioFilterStatus
     isReplica
     isStandaloneHost
+    legallyHeldSnapshotCount
     name
     numWorkloadDescendants
     objectType

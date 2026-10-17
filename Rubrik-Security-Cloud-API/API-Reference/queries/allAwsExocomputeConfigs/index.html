@@ -948,12 +948,12 @@
 <tr>
 <td>awsNativeAccountIdOrNamePrefix <em>(required)</em></td>
 <td>String!</td>
-<td>A query that searches for Exocompute configurations with an account name or account native ID that is prefixed by the search query.</td>
+<td>Native account ID or account name prefix used to filter the AWS exocompute configurations to return.</td>
 </tr>
 <tr>
 <td>operation <em>(required)</em></td>
 <td><a href="../../types/enums/Operation/">Operation</a>!</td>
-<td>The operation used to scope the returned accounts to those the caller is authorized to perform. Defaults to CREATE_REPORT, which returns all accounts without operation-based scoping.</td>
+<td>Operation used to scope the returned accounts to those the caller can perform that operation on.</td>
 </tr>
 </tbody>
 </table>

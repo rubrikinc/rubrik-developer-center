@@ -10,8 +10,10 @@ Rubrik-specific information about snapshots of specific object types. Currently,
 
 ## Implemented By
 
+- [AwsNativeConfigSpecificSnapshot](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AwsNativeConfigSpecificSnapshot/index.md)
 - [AwsNativeEc2InstanceSpecificSnapshot](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AwsNativeEc2InstanceSpecificSnapshot/index.md)
 - [AwsNativeS3SpecificSnapshot](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AwsNativeS3SpecificSnapshot/index.md)
+- [AzureCosmosNosqlContainerSpecificSnapshot](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AzureCosmosNosqlContainerSpecificSnapshot/index.md)
 - [AzureNativeStorageAccountSpecificSnapshot](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AzureNativeStorageAccountSpecificSnapshot/index.md)
 - [AzureNativeVmSpecificSnapshot](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AzureNativeVmSpecificSnapshot/index.md)
 - [AzurePostgresFlexibleServerSpecificSnapshot](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AzurePostgresFlexibleServerSpecificSnapshot/index.md)

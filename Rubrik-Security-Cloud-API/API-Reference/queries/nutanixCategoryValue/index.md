@@ -24,6 +24,7 @@ query NutanixCategoryValue($fid: UUID!) {
     duplicateObjectsAbsoluteCount
     id
     isReplica
+    legallyHeldSnapshotCount
     name
     numWorkloadDescendants
     objectType

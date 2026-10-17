@@ -1,6 +1,6 @@
 # createS3CompatibleTarget
 
-*No description available.*
+Creates an S3-compatible archival target on the Rubrik cluster.
 
 ## Arguments
 
@@ -17,6 +17,7 @@
 ```graphql
 mutation CreateS3CompatibleTarget($input: CreateS3CompatibleTargetInput!) {
   createS3CompatibleTarget(input: $input) {
+    archivalLocationPurpose
     clusterName
     consumedBytes
     failedTasks
@@ -57,11 +58,11 @@ mutation CreateS3CompatibleTarget($input: CreateS3CompatibleTargetInput!) {
 {
   "data": {
     "createS3CompatibleTarget": {
+      "archivalLocationPurpose": "ADO",
       "clusterName": "example-string",
       "consumedBytes": 0,
       "failedTasks": 0,
-      "id": "example-string",
-      "isActive": true
+      "id": "example-string"
     }
   }
 }

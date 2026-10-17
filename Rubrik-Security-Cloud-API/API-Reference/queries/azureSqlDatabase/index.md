@@ -27,6 +27,7 @@ query AzureSqlDatabase($azureSqlDatabaseRubrikId: UUID!) {
     id
     isEligibleForPersistentBackups
     isRelic
+    legallyHeldSnapshotCount
     maximumSizeInBytes
     name
     numWorkloadDescendants

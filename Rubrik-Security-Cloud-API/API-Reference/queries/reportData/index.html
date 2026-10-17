@@ -934,7 +934,7 @@
 
 
 <h1 id="reportdata">reportData</h1>
-<p><em>No description available.</em></p>
+<p>Returns the rows of a report data view.</p>
 <h2 id="arguments">Arguments</h2>
 <table>
 <thead>
@@ -953,7 +953,7 @@
 <tr>
 <td>after</td>
 <td>String</td>
-<td>Returns the elements in the list that occur after the specified cursor.</td>
+<td>An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results.</td>
 </tr>
 <tr>
 <td>last</td>
@@ -963,12 +963,12 @@
 <tr>
 <td>before</td>
 <td>String</td>
-<td>Returns the elements in the list that occur before the specified cursor.</td>
+<td>An opaque cursor returned from a previous query's startCursor field. Pass this value verbatim to retrieve the previous page of results.</td>
 </tr>
 <tr>
 <td>dataView <em>(required)</em></td>
 <td><a href="../../types/enums/DataViewTypeEnum/">DataViewTypeEnum</a>!</td>
-<td></td>
+<td>The data view type of the report.</td>
 </tr>
 <tr>
 <td>columns <em>(required)</em></td>
@@ -978,7 +978,7 @@
 <tr>
 <td>filters</td>
 <td>[<a href="../../types/inputs/ReportFilterInput/">ReportFilterInput</a>!]</td>
-<td>A list of filters to filter result with</td>
+<td>A list of filters to filter result with.</td>
 </tr>
 <tr>
 <td>groupBy</td>

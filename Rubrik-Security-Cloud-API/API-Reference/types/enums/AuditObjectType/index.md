@@ -12,6 +12,7 @@ Represents all the object types for which we expect to see audits.
 | AGENT_CLOUD_ALERT                                                                | Agent Cloud alert object.                                                                        |
 | AGENT_CLOUD_CONNECTION                                                           | Agent Cloud connection object.                                                                   |
 | AGENT_CLOUD_POLICY                                                               | Agent Cloud policy object.                                                                       |
+| AGENT_CLOUD_REWIND_OBJECT                                                        | Agent Cloud rewind object.                                                                       |
 | AGENT_CLOUD_VIOLATION                                                            | Agent Cloud violation object.                                                                    |
 | AGENT_OPERATIONS_MODEL_ROUTER                                                    | Agent Operations Model Router object.                                                            |
 | ANTHROPIC_CHILD_ORG                                                              | Anthropic child org.                                                                             |
@@ -42,6 +43,7 @@ Represents all the object types for which we expect to see audits.
 | AZURE_COSMOS_NOSQL_DATABASE                                                      | Azure Cosmos NoSQL database.                                                                     |
 | AZURE_DEVOPS_ORGANIZATION                                                        | Azure DevOps Organisation.                                                                       |
 | AZURE_DEVOPS_PROJECT                                                             | Azure DevOps Project.                                                                            |
+| AZURE_DEVOPS_PROJECT_ARTIFACTS_FIXED_OBJECT                                      | Azure DevOps project artifacts (feeds, packages) per project.                                    |
 | AZURE_DEVOPS_PROJECT_FIXED_OBJECT                                                | Azure DevOps Developer Collaboration (work items, boards, wikis) per project.                    |
 | AZURE_DEVOPS_REPOSITORY                                                          | Azure DevOps Repository.                                                                         |
 | AZURE_NATIVE_DISK                                                                | Azure native disk object.                                                                        |
@@ -97,11 +99,14 @@ Represents all the object types for which we expect to see audits.
 | GCP_NATIVE_GCE_INSTANCE                                                          | GCP native GCE instance.                                                                         |
 | GCP_NATIVE_PROJECT                                                               | GCP native project.                                                                              |
 | GITHUB_ORGANIZATION                                                              | GitHub Organization.                                                                             |
+| GITHUB_ORG_PACKAGES_FIXED_OBJECT                                                 | GitHub organization packages per organization.                                                   |
 | GITHUB_REPOSITORY                                                                | GitHub Repository.                                                                               |
 | GLUE_ICEBERG_CATALOG                                                             | AWS Glue Iceberg Catalog.                                                                        |
 | GLUE_ICEBERG_DATABASE                                                            | AWS Glue Iceberg Database.                                                                       |
 | GLUE_ICEBERG_TABLE                                                               | AWS Glue Iceberg Table.                                                                          |
+| GOOGLE_WORKSPACE_ADMIN_SETTINGS                                                  | Google Workspace admin settings object (one per org).                                            |
 | GOOGLE_WORKSPACE_GROUP                                                           | Google Workspace Group.                                                                          |
+| GOOGLE_WORKSPACE_GROUPS_METADATA                                                 | Google Workspace Groups metadata object (one per org).                                           |
 | GOOGLE_WORKSPACE_ORGANIZATION                                                    | Google Workspace Organisation.                                                                   |
 | GOOGLE_WORKSPACE_ORG_UNIT                                                        | Google Workspace Organisation unit.                                                              |
 | GOOGLE_WORKSPACE_SHARED_DRIVE                                                    | Google Workspace Shared Drive.                                                                   |
@@ -110,15 +115,15 @@ Represents all the object types for which we expect to see audits.
 | GOOGLE_WORKSPACE_USER_MAILBOX                                                    | Google Workspace User Mailbox.                                                                   |
 | HOST                                                                             | Host object.                                                                                     |
 | HOST_FAILOVER_CLUSTER                                                            | Host Failover Cluster object.                                                                    |
-| HVM_CLOUD                                                                        | HPE Virtual Machine Essentials cloud.                                                            |
-| HVM_CLUSTER                                                                      | HPE Virtual Machine Essentials cluster.                                                          |
-| HVM_DATASTORE                                                                    | HPE Virtual Machine Essentials datastore.                                                        |
-| HVM_GROUP                                                                        | HPE Virtual Machine Essentials group.                                                            |
-| HVM_HOST                                                                         | HPE Virtual Machine Essentials host.                                                             |
-| HVM_INSTANCE                                                                     | HPE Virtual Machine Essentials instance. An inventory hierarchy level, not a protectable object. |
-| HVM_MANAGER                                                                      | HPE Virtual Machine Essentials manager.                                                          |
-| HVM_NETWORK                                                                      | HPE Virtual Machine Essentials network.                                                          |
-| HVM_VIRTUAL_MACHINE                                                              | HPE Virtual Machine Essentials virtual machine. The protectable object in this hierarchy.        |
+| HPE_VME_CLOUD                                                                    | HPE Virtual Machine Essentials cloud.                                                            |
+| HPE_VME_CLUSTER                                                                  | HPE Virtual Machine Essentials cluster.                                                          |
+| HPE_VME_DATASTORE                                                                | HPE Virtual Machine Essentials datastore.                                                        |
+| HPE_VME_GROUP                                                                    | HPE Virtual Machine Essentials group.                                                            |
+| HPE_VME_HOST                                                                     | HPE Virtual Machine Essentials host.                                                             |
+| HPE_VME_INSTANCE                                                                 | HPE Virtual Machine Essentials instance. An inventory hierarchy level, not a protectable object. |
+| HPE_VME_MANAGER                                                                  | HPE Virtual Machine Essentials manager.                                                          |
+| HPE_VME_NETWORK                                                                  | HPE Virtual Machine Essentials network.                                                          |
+| HPE_VME_VIRTUAL_MACHINE                                                          | HPE Virtual Machine Essentials virtual machine. The protectable object in this hierarchy.        |
 | HYPERV_SCVMM                                                                     | HyperV SCVMM object.                                                                             |
 | HYPERV_SERVER                                                                    | HyperV server object.                                                                            |
 | HYPERV_VM                                                                        | HyperV virtual machine object.                                                                   |
@@ -145,6 +150,7 @@ Represents all the object types for which we expect to see audits.
 | M365_BACKUP_STORAGE_ONEDRIVE                                                     | Microsoft 365 Backup Storage OneDrive.                                                           |
 | M365_BACKUP_STORAGE_ORG                                                          | Microsoft 365 Backup Storage Subscription.                                                       |
 | M365_BACKUP_STORAGE_SITE                                                         | Microsoft 365 Backup Storage SharePoint Site.                                                    |
+| M365_CONFIGS_ORG                                                                 | M365 Configurations Organization.                                                                |
 | MANAGED_VOLUME                                                                   | Managed Volume object.                                                                           |
 | MARIADB_INSTANCE                                                                 | MariaDB instance.                                                                                |
 | MONGODB_SOURCE                                                                   | MongoDB source.                                                                                  |

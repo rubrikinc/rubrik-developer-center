@@ -25,6 +25,7 @@ query FusionComputeNetwork($fid: UUID!) {
     hostIds
     id
     isReplica
+    legallyHeldSnapshotCount
     name
     networkName
     networkType

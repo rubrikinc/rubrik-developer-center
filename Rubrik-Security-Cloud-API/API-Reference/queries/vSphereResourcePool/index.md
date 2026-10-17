@@ -1,6 +1,6 @@
 # vSphereResourcePool
 
-*No description available.*
+Details of a vSphere resource pool for a given ID.
 
 ## Arguments
 
@@ -24,6 +24,7 @@ query VSphereResourcePool($fid: UUID!) {
     hasDatastoresForRecovery
     id
     isReplica
+    legallyHeldSnapshotCount
     name
     numWorkloadDescendants
     objectType

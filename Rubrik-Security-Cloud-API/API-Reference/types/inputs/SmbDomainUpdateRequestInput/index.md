@@ -4,6 +4,7 @@ Configuration for updating an SMB domain.
 
 ## Fields
 
-| Field      | Type      | Description                                                                                                                     |
-| ---------- | --------- | ------------------------------------------------------------------------------------------------------------------------------- |
-| dnsServers | [String!] | Updated DNS servers for this AD domain. Pass empty array [] to clear and revert to Rubrik cluster DNS. Omit to leave unchanged. |
+| Field                | Type      | Description                                                                                                                                                             |
+| -------------------- | --------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| dnsServers           | [String!] | Updated DNS servers for this AD domain. Pass empty array [] to clear and revert to Rubrik cluster DNS. Omit to leave unchanged.                                         |
+| enableKerberosForSmb | Boolean   | Supported in v9.6+ Whether SMB sessions for this domain authenticate over Kerberos instead of NTLM. Pass 'false' to revert the domain to NTLM. Omit to leave unchanged. |

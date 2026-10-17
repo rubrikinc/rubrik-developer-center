@@ -24,6 +24,7 @@ query FusionComputeSite($fid: UUID!) {
     fcSiteId
     id
     isReplica
+    legallyHeldSnapshotCount
     name
     numWorkloadDescendants
     objectType

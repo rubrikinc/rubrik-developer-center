@@ -30,6 +30,7 @@ query SapHanaSystem($fid: UUID!) {
     isReplica
     lastRefreshTime
     lastStatusUpdateTime
+    legallyHeldSnapshotCount
     name
     numWorkloadDescendants
     objectType

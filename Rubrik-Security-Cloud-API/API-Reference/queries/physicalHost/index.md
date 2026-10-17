@@ -36,6 +36,7 @@ query PhysicalHost($fid: UUID!) {
     isOracleHost
     isReplica
     lastSuccessfulUpgradeTime
+    legallyHeldSnapshotCount
     name
     nasApiEndpoint
     nasApiHostname

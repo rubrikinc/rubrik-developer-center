@@ -4,12 +4,12 @@ Nutanix Live Mount Connection.
 
 ## Arguments
 
-| Argument | Type                                                                                                                                                       | Description                                                             |
-| -------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------- |
-| first    | Int                                                                                                                                                        | Returns the first n elements from the list.                             |
-| after    | String                                                                                                                                                     | Returns the elements in the list that occur after the specified cursor. |
-| filters  | \[[NutanixLiveMountFilterInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/NutanixLiveMountFilterInput/index.md)!\] | Filter for Nutanix virtual machine live mounts.                         |
-| sortBy   | [NutanixLiveMountSortByInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/NutanixLiveMountSortByInput/index.md)      | Sort by argument for Nutanix virtual machine live mounts.               |
+| Argument | Type                                                                                                                                                       | Description                                                                                                                       |
+| -------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
+| first    | Int                                                                                                                                                        | Returns the first n elements from the list.                                                                                       |
+| after    | String                                                                                                                                                     | An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results. |
+| filters  | \[[NutanixLiveMountFilterInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/NutanixLiveMountFilterInput/index.md)!\] | Filter for Nutanix virtual machine live mounts.                                                                                   |
+| sortBy   | [NutanixLiveMountSortByInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/NutanixLiveMountSortByInput/index.md)      | Sort by argument for Nutanix virtual machine live mounts.                                                                         |
 
 ## Returns
 

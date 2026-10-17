@@ -1,6 +1,6 @@
 # refreshGlobalManagerConnectivityStatus
 
-*No description available.*
+Refreshes the global manager connectivity status of the Rubrik cluster.
 
 ## Arguments
 

@@ -4,9 +4,10 @@ Quarantine details of all snapshots.
 
 ## Arguments
 
-| Argument                 | Type       | Description           |
-| ------------------------ | ---------- | --------------------- |
-| snapshotIds *(required)* | [String!]! | List of snapshot IDs. |
+| Argument                  | Type       | Description                                                                            |
+| ------------------------- | ---------- | -------------------------------------------------------------------------------------- |
+| snapshotIds *(required)*  | [String!]! | List of snapshot IDs.                                                                  |
+| shouldIncludeRecoveryInfo | Boolean    | Specifies whether to include clean-version recovery details for each quarantined file. |
 
 ## Returns
 
@@ -38,6 +39,7 @@ query AllQuarantinedDetailsForSnapshots($snapshotIds: [String!]!) {
         "snapshotId": "example-string",
         "filesDetails": [
           {
+            "cleanSnapshotId": "00000000-0000-0000-0000-000000000000",
             "fileName": "example-string"
           }
         ]
