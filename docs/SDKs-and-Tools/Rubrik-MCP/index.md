@@ -90,11 +90,11 @@ If you installed with pip, set `"command"` to the full path of `rubrik-mcp` and 
 ## Credentials Setup {#service-account-setup}
 ---
 
-The server authenticates with either a service account or a personal access token (PAT). Both are downloaded from RSC as a JSON file, and both are loaded through `RSC_SERVICE_ACCOUNT_FILE`.
+The server authenticates with either a service account or a personal access token (PAT). Both are downloaded from RSC as a JSON file, and both are loaded through `RSC_SERVICE_ACCOUNT_FILE`. For how each credential type works with the RSC API, see [Authentication](../../Rubrik-Security-Cloud-API/authentication.md).
 
 ### Service account
 
-Create a service account in RSC under **Apps (waffle icon) → Settings → API Access → Service Accounts**. Download the JSON credentials file. The file contains your client ID, client secret, and RSC token endpoint:
+Create a service account in RSC under **Apps (waffle icon) → Settings → API Access → Service Accounts**. Download the JSON credentials file (see [Service Accounts](../../Rubrik-Security-Cloud-API/authentication.md#service-accounts-oauth2-client-credentials-grant)). The file contains your client ID, client secret, and RSC token endpoint:
 
 ```json
 {
