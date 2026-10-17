@@ -15,7 +15,7 @@ Once connected, an agent can describe tasks in plain language and translate them
 ### Prerequisites
 ---
 - [uv](https://docs.astral.sh/uv/getting-started/installation/) (recommended), or Python ≥ 3.10 with pip
-- A Rubrik Security Cloud Service Account
+- A Rubrik Security Cloud service account, or a [personal access token](../../Rubrik-Security-Cloud-API/authentication.md#personal-access-tokens) (requires rubrik-mcp X.Y or later)
 
 ## Quick Install via AI Agent
 ---
@@ -27,10 +27,10 @@ Install the Rubrik MCP Server.
 
 Steps:
 1. Run it with uvx rubrik-mcp (requires uv; no separate install step). If uv isn't available, install it with pip install rubrik-mcp and use the full path to the rubrik-mcp command instead.
-2. Register it as an MCP server named "rubrik" using the appropriate config for this client, with RSC_SERVICE_ACCOUNT_FILE set to the path of my service account JSON file.
+2. Register it as an MCP server named "rubrik" using the appropriate config for this client, with RSC_SERVICE_ACCOUNT_FILE set to the path of my credentials JSON file (a service account or personal access token file).
 3. Verify the server is connected and list the available tools.
 
-My service account JSON file is at: /path/to/service_account.json
+My credentials JSON file is at: /path/to/service_account.json
 ```
 
 Replace `/path/to/service_account.json` with the actual path before sending.
@@ -87,8 +87,12 @@ Desktop apps don't always inherit your shell's `PATH`. If Claude Desktop can't f
 
 If you installed with pip, set `"command"` to the full path of `rubrik-mcp` and remove `"args"`.
 
-## Service Account Setup
+## Credentials Setup {#service-account-setup}
 ---
+
+The server authenticates with either a service account or a personal access token (PAT). Both are downloaded from RSC as a JSON file, and both are loaded through `RSC_SERVICE_ACCOUNT_FILE`.
+
+### Service account
 
 Create a service account in RSC under **Apps (waffle icon) → Settings → API Access → Service Accounts**. Download the JSON credentials file. The file contains your client ID, client secret, and RSC token endpoint:
 
@@ -100,16 +104,42 @@ Create a service account in RSC under **Apps (waffle icon) → Settings → API 
 }
 ```
 
-The server resolves credentials in this priority order:
+### Personal access token
 
-| Priority | Method | How to configure |
-|----------|--------|-----------------|
-| 1 | `RSC_SERVICE_ACCOUNT_FILE` env var | Set to the full path of your service account JSON |
-| 2 | Individual env vars | Set `RSC_URL`, `RSC_CLIENT_ID`, and `RSC_CLIENT_SECRET` separately |
-| 3 | Config file | Place credentials in `~/.rsc/config.json` |
+A PAT lets the server act as you. Create one in RSC from the user menu under **User Preferences > Personal Access Token**, then select **Download as JSON**. The file has the same keys as a service account file. The client ID starts with `pat|`, and `access_token_uri` ends in `/api/pat_login`:
+
+```json
+{
+  "client_id": "pat|...",
+  "client_secret": "...",
+  "access_token_uri": "https://<your-domain>/api/pat_login"
+}
+```
+
+Point `RSC_SERVICE_ACCOUNT_FILE` at this file. The variable name is the same for both credential types. See [Personal Access Tokens](../../Rubrik-Security-Cloud-API/authentication.md#personal-access-tokens) for session limits and token policy.
+
+!!! note
+    PATs work only through a credentials file. The individual `RSC_URL`, `RSC_CLIENT_ID`, and `RSC_CLIENT_SECRET` variables always authenticate against the service account endpoint.
+
+If the server reports `Personal access token login was rejected (HTTP 403)`, PATs are not enabled on your RSC account.
+
+### Choosing a credential
+
+A PAT gives the agent your full RSC permissions, and every action it takes is recorded in the audit log under your name. Use a PAT for your own desktop agent, where per-user attribution matters. Use a narrowly scoped service account for shared, server-side, or production agents. The [gating policy](#gating-policy) applies to both.
 
 !!! note
     For production deployments, scope the service account to a minimum-privilege role. A read-only role covers all query and monitoring use cases. Use a **DevOps** role if you need to trigger backups or assign SLAs, and configure **Quorum Authorization** for destructive operations.
+
+### Credential resolution order
+
+The server resolves credentials in this priority order:
+
+| Priority | Method | How to configure | Supports PATs |
+|----------|--------|-----------------|---------------|
+| 1 | `RSC_SERVICE_ACCOUNT_FILE` env var | Set to the full path of your credentials JSON | Yes |
+| 2 | Credentials file referenced in `~/.rsc/config.json` | Set `"service_account_file"` to the file path | Yes |
+| 3 | Individual env vars | Set `RSC_URL`, `RSC_CLIENT_ID`, and `RSC_CLIENT_SECRET` separately | No |
+| 4 | Individual values in `~/.rsc/config.json` | Set `"url"`, `"client_id"`, and `"client_secret"` | No |
 
 ## Role Recommendations
 ---
@@ -119,6 +149,8 @@ The server resolves credentials in this priority order:
 | Monitoring and reporting | Read-only |
 | Backup and recovery automation | DevOps |
 | Destructive or irreversible operations | Quorum Authorization |
+
+These recommendations apply to service accounts. With a PAT, the agent's effective role is your own.
 
 Consider applying an IP allowlist to the service account and rotating credentials on a scheduled basis. Audit log activity is available under **Reports → Audit Log** in RSC.
 
@@ -337,10 +369,10 @@ MCP client config for Docker:
 
 | Variable | Description |
 |----------|-------------|
-| `RSC_SERVICE_ACCOUNT_FILE` | Path to the service account JSON file (inside the container). |
-| `RSC_URL` | RSC tenant URL (alternative to service account file). |
-| `RSC_CLIENT_ID` | Service account client ID (alternative to service account file). |
-| `RSC_CLIENT_SECRET` | Service account client secret (alternative to service account file). |
+| `RSC_SERVICE_ACCOUNT_FILE` | Path to the service account or PAT JSON file (inside the container). |
+| `RSC_URL` | RSC tenant URL (alternative to a credentials file; service accounts only). |
+| `RSC_CLIENT_ID` | Service account client ID (alternative to a credentials file; service accounts only). |
+| `RSC_CLIENT_SECRET` | Service account client secret (alternative to a credentials file; service accounts only). |
 | `RUBRIK_MCP_CONFIG_DIR` | Override the config directory. Defaults to `~/.config/rubrik-mcp` (or `/config` in the official Docker image). |
 
 ### Offline Distribution
