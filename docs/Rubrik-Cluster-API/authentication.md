@@ -5,7 +5,7 @@ The Rubrik Cluster API uses RSC (Rubrik Security Cloud) service account credenti
 
 To create a service account, see the [RSC Authentication](../Rubrik-Security-Cloud-API/authentication.md) page.
 
-### Guidelines
+### Best Practices
 
 Consider the following best practices when using service accounts with the CDM API:
 
@@ -53,3 +53,39 @@ Rubrik provides an API endpoint to delete an existing session. Run the following
     ```bash
     --8<-- "code/Rubrik-Cluster-API/Authentication/deleteSession.sh"
     ```
+
+## Personal Access Tokens (RSC Client Credentials)
+
+A personal access token (PAT) created in RSC can open a session on a Rubrik cluster. The session runs with the PAT owner's permissions on that cluster. Post the PAT client ID and secret to the cluster node, not to RSC. The cluster validates the credentials with RSC.
+
+To create a PAT, see [Personal Access Tokens](../Rubrik-Security-Cloud-API/authentication.md#personal-access-tokens) on the RSC Authentication page.
+
+PAT sessions on a Rubrik cluster require Rubrik CDM 9.6.0 or later.
+
+### Best Practices {#pat-best-practices}
+
+  - A PAT has the same permissions as its owner. Use a service account with a narrowly scoped role for shared, server-side, or production automation.
+  - Session tokens should be cached and reused until they expire.
+  - The client secret must be treated like a password and stored in a secure location.
+
+### Usage {#pat-usage}
+
+#### Obtaining an access token {#pat-obtaining-an-access-token}
+
+Post the PAT `clientId` and `clientSecret` to `https://<cluster_node>/api/v1/personal_access_token/session`. The response contains the session token in the `token` field.
+
+=== "Shell"
+    ```bash
+    --8<-- "code/Rubrik-Cluster-API/Authentication/getPatToken.sh"
+    ```
+
+An example response from the cluster:
+
+```json
+{"clientId":"pat|c9bba9a9-1234-1234-b7c6-123440b4cf64","token":"eyJ...","expirationTime":"2026-04-01T17:49:43.000Z","organizationId":""}
+```
+
+#### Using the access token {#pat-using-the-access-token}
+
+The session token is used as a `Bearer` token in the `Authorization` header, as described in [Using the access token](#using-the-access-token).
+
