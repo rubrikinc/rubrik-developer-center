@@ -1,6 +1,6 @@
 # getGroupCountByUpgradeJobStatus
 
-*No description available.*
+Counts of Rubrik clusters grouped by upgrade job status.
 
 ## Returns
 

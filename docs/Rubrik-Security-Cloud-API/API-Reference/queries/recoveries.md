@@ -7,9 +7,9 @@ Return a paginated list of recoveries corresponding to the filter passed. RSC pr
 | Argument | Type | Description |
 |----------|------|-------------|
 | first | Int | Returns the first n elements from the list. |
-| after | String | Returns the elements in the list that occur after the specified cursor. |
+| after | String | An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results. |
 | last | Int | Returns the last n elements from the list. |
-| before | String | Returns the elements in the list that occur before the specified cursor. |
+| before | String | An opaque cursor returned from a previous query's startCursor field. Pass this value verbatim to retrieve the previous page of results. |
 | recoveryIds | [[UUID](../types/scalars/UUID.md)!] | Filter by specific recovery IDs. |
 | recoveryType | [[RecoveryType](../types/enums/RecoveryType.md)!] | Filter by recovery type. |
 | endTime | [DateTime](../types/scalars/DateTime.md) | Only consider recoveries that started before this date. |
@@ -24,6 +24,7 @@ Return a paginated list of recoveries corresponding to the filter passed. RSC pr
 | workloadTypeFilter | [ManagedObjectType](../types/enums/ManagedObjectType.md) | Filter by workload type. |
 | recoveryNameSubstring | String | Filter by recovery name substring. |
 | sortParam | [RecoverySortParamInput](../types/inputs/RecoverySortParamInput.md) | Sorting parameters for the recovery list. |
+| recoveryTags | [[RecoveryTagClause](../types/inputs/RecoveryTagClause.md)!] | Filter by tag clauses. A recovery matches if it has all the tags in at least one clause. Empty clauses are ignored. |
 
 ## Returns
 

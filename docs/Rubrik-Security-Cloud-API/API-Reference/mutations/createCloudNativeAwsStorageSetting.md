@@ -1,12 +1,12 @@
 # createCloudNativeAwsStorageSetting
 
-*No description available.*
+Create storage settings for archiving AWS cloud native protected objects.
 
 ## Arguments
 
 | Argument | Type | Description |
 |----------|------|-------------|
-| input *(required)* | [CreateCloudNativeAwsStorageSettingInput](../types/inputs/CreateCloudNativeAwsStorageSettingInput.md)! |  |
+| input *(required)* | [CreateCloudNativeAwsStorageSettingInput](../types/inputs/CreateCloudNativeAwsStorageSettingInput.md)! | Create AWS cloud native storage setting. |
 
 ## Returns
 

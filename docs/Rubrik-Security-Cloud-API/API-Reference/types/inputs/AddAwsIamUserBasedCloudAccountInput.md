@@ -14,5 +14,5 @@ Input to add IAM user-based AWS cloud account for native protection.
 | features | [[CloudAccountFeature](../enums/CloudAccountFeature.md)!] | List of features to be enabled for cloud native protection. |
 | featuresWithPermissionsGroups | [[FeatureWithPermissionsGroups](FeatureWithPermissionsGroups.md)!] | List of cloud account features with specific permissions groups. |
 | nativeId | String! | Native ID of cloud account. |
-| roleArn | String | AWS Role ARN with native protection policy on AWS cloud account. Role name must start with 'rubrik-polaris-'. Role ARN is required only while adding new AWS cloud account. |
+| roleArn | String | AWS Role ARN with native protection policy on AWS cloud account. Role name must start with 'rubrik-polaris-'. Role ARN is required only while adding new AWS cloud account. Deprecated: no longer used. |
 | secretKey | String | Secret key for IAM user with native protection policy on AWS cloud account. Secret key is required only while adding new AWS cloud account. |

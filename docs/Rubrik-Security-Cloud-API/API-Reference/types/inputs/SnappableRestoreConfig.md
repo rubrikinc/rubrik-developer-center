@@ -16,6 +16,7 @@ Represents the snappable contents to be restored.
 | failedItemsRecoveryConfig | [FailedItemsRecoveryConfig](FailedItemsRecoveryConfig.md) | Configuration for failed items recovery jobs. |
 | fullTeamRestoreConfig | [FullTeamRestoreConfig](FullTeamRestoreConfig.md) | Restore configuration for a full Team restore. |
 | inplaceRestoreConfig | [InplaceRestoreConfig](InplaceRestoreConfig.md) | In-place restore configuration for restore jobs. |
+| leaseId | String | ID of the just-in-time permission elevation lease covering this restore's write permissions, if elevation was required. Empty for full-access-mode apps and for JIT-mode restores that needed no write permissions the app didn't already have. Correlates the restore taskchain to the lease adopted in `prepare` and released in `teardown`. |
 | relicRestoreConfig | [RelicRestoreConfig](RelicRestoreConfig.md) | Relic restore configuration for restore jobs. |
 | rubrikOrgUuid | String | UUID of the the logged-in user's RSC organization. |
 | sharePointFullRestoreConfig | [SharePointFullRestoreConfig](SharePointFullRestoreConfig.md) | Restore configuration for full SharePoint jobs. |

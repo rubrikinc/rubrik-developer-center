@@ -27,6 +27,7 @@ Get details of the given failover cluster app.
         id
         isArchived
         isReplica
+        legallyHeldSnapshotCount
         name
         numWorkloadDescendants
         objectType

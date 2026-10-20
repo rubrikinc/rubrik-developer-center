@@ -17,6 +17,7 @@ Supported in v9.0+ Input to add a Kubernetes cluster.
 | helmMinCdmVersion | String | Supported in v9.6+ Minimum CDM version required by the Helm chart being installed. Empty for non-Helm onboarding. |
 | id | String | Supported in v9.1+ UUID of the to be added Kubernetes cluster. |
 | isAutoPsCreationEnabled | Boolean | Supported in v9.2+ Specifies whether to enable automatic protection set creation for the Kubernetes cluster. |
+| kubeSystemUid | String | UID of the kube-system namespace, the stable identifier of the physical Kubernetes cluster. For manifest and Helm onboarding the api-handler reads it from the in-cluster Kubernetes API and passes it here. For kubeconfig onboarding CDM reads it itself and ignores this field. Omit if unavailable; CDM populates it on the first refresh. |
 | kubeconfig | String | Supported in v9.0+ Kubeconfig is a YAML string to store Kubernetes cluster authentication information. You can get this config file directly from the cluster administrator or from a cloud platform if you are using managed Kubernetes cluster. |
 | kuprServerProxyConfig | [KuprServerProxyConfigInput](KuprServerProxyConfigInput.md) | Supported in v9.2+ The configuration for the kupr server proxy to be added. |
 | maxConcurrentAgents | Int | Supported in v9.6+ Maximum number of kupr backup agents allowed to run concurrently against this Kubernetes cluster. Set to 0 (or omit) to leave the throttle unlimited. |

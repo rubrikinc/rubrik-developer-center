@@ -1,8 +1,8 @@
 # VsphereTagCategory
 
-*No description available.*
+A vSphere tag category.
 
-**Implements:** [CdmHierarchyObject](../interfaces/CdmHierarchyObject.md), [HierarchyObject](../interfaces/HierarchyObject.md), [VsphereVcenterDescendantType](../interfaces/VsphereVcenterDescendantType.md), [VsphereVcenterTagChildType](../interfaces/VsphereVcenterTagChildType.md)
+**Implements:** [HierarchyObject](../interfaces/HierarchyObject.md), [CdmHierarchyObject](../interfaces/CdmHierarchyObject.md), [VsphereVcenterDescendantType](../interfaces/VsphereVcenterDescendantType.md), [VsphereVcenterTagChildType](../interfaces/VsphereVcenterTagChildType.md)
 
 ## Fields
 
@@ -18,10 +18,12 @@
 | effectiveRetentionSlaDomain | [SlaDomain](../interfaces/SlaDomain.md) | Effective retention of the SLA Domain of the hierarchy object. |
 | effectiveSlaDomain | [SlaDomain](../interfaces/SlaDomain.md)! | Effective SLA Domain of the hierarchy object. |
 | effectiveSlaSourceObject | [PathNode](PathNode.md) | Path node of the effective SLA Domain source. |
-| id | [UUID](../scalars/UUID.md)! | Object ID. |
+| futureLegalHoldInfo | [FutureLegalHoldInfo](FutureLegalHoldInfo.md) | Future legal hold rule configured for this object, if any. |
+| id | [UUID](../scalars/UUID.md)! | ID of the hierarchy object. |
 | isFilterCategory | Boolean! | Specifies whether the child tags are multi-tag filters or vSphere tags. |
 | isReplica | Boolean | True if this object is a replica, its current cluster differs from its source (primary) cluster. False if the object resides on its source cluster. Null when the source cluster is unknown. |
 | latestUserNote | [LatestUserNote](LatestUserNote.md) | Latest user note information. |
+| legallyHeldSnapshotCount | Int | Number of snapshots on legal hold for this object. |
 | logicalPath | [[PathNode](PathNode.md)!]! | Sequential list of the logical ancestors of this object. |
 | name | String! | Name of the hierarchy object. |
 | numWorkloadDescendants | Int! | Number of descendant workloads of this object. |
@@ -38,11 +40,11 @@
 | slaAssignment | [SlaAssignmentTypeEnum](../enums/SlaAssignmentTypeEnum.md)! | SLA Domain assignment type for this object. |
 | slaPauseStatus | Boolean! | Pause status of the effective SLA Domain of the hierarchy object. |
 | snapshotConsistencyMandate | [ConsistencyLevelEnum](../enums/ConsistencyLevelEnum.md)! | Snapshot consistency mandate. |
-| snapshotConsistencySource | String | Fid of the object from where the snapshot consistency mandate is inherited. |
+| snapshotConsistencySource | String | ID of the object from which the snapshot consistency mandate is inherited. |
 | snapshotDistribution | [SnapshotDistribution](SnapshotDistribution.md)! | Distribution of the snapshots of the hierarchy object. |
 | tagChildConnection | [VsphereTagCategoryTagChildTypeConnection](VsphereTagCategoryTagChildTypeConnection.md)! | List of tag children. |
-| vcenterId | String! |  |
-| vsphereTagPath | [[PathNode](PathNode.md)!]! |  |
+| vcenterId | String! | The vCenter ID of the vSphere tag category. |
+| vsphereTagPath | [[PathNode](PathNode.md)!]! | The vSphere tag path. |
 
 ## Field Arguments
 
@@ -54,7 +56,9 @@
 | numWorkloadDescendants | before | String | Returns the elements in the list that occur before the specified cursor. |
 | numWorkloadDescendants | objectTypes | [[ManagedObjectType](../enums/ManagedObjectType.md)!] | Types of objects to limit the results. If absent, all object types are returned. |
 | tagChildConnection | first | Int | Returns the first n elements from the list. |
-| tagChildConnection | after | String | Returns the elements in the list that occur after the specified cursor. |
+| tagChildConnection | after | String | An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results. |
+| tagChildConnection | last | Int | Returns the last n elements from the list. |
+| tagChildConnection | before | String | An opaque cursor returned from a previous query's startCursor field. Pass this value verbatim to retrieve the previous page of results. |
 | tagChildConnection | sortBy | [HierarchySortByField](../enums/HierarchySortByField.md) | Sort hierarchy objects according to the hierarchy field. |
 | tagChildConnection | sortOrder | [SortOrder](../enums/SortOrder.md) | Sorts the order of results. |
 | tagChildConnection | typeFilter | [[HierarchyObjectTypeEnum](../enums/HierarchyObjectTypeEnum.md)!] | Types of objects to include. |

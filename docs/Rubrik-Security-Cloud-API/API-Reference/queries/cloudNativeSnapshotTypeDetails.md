@@ -38,6 +38,7 @@ Details of the available snapshot types.
         "cloudNativeSnapshotTypeDetails": {
           "snapshotDetails": [
             {
+              "archivalLocationPurpose": "ADO",
               "cloudType": "ALL",
               "locationName": "example-string",
               "rcvTier": "ARCHIVE",

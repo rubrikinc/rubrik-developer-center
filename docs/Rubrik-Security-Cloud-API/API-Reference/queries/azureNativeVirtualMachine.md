@@ -34,6 +34,7 @@ Retrieves an Azure Virtual Machine that refers to the Azure infrastructure as a 
         isPreOrPostScriptEnabled
         isProtectable
         isRelic
+        legallyHeldSnapshotCount
         name
         nativeName
         numWorkloadDescendants

@@ -19,6 +19,7 @@ Summary of a threat hunt for an object.
 | snapshotsStats | [[ThreatHuntResultSnapshotStats](ThreatHuntResultSnapshotStats.md)!]! | Threat hunt summaries for each snapshot. |
 | totalMatchedPaths | [Long](../scalars/Long.md)! | Total paths for which malware was found. |
 | totalMatchedSnapshots | Int! | Total snapshots where a match was found. |
+| totalRegistryKeyMatches | [Long](../scalars/Long.md)! | Total number of Windows registry key matches across all snapshots. |
 | totalUniqueMatchedPaths | [Long](../scalars/Long.md)! | Total unique paths for which malware was found. |
 
 ## Used By

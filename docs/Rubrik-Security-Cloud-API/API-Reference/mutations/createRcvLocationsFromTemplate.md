@@ -19,6 +19,7 @@ Creates Rubrik Cloud Vault Azure locations from the specified location template.
     ```graphql
     mutation CreateRcvLocationsFromTemplate($input: CreateRcvLocationsFromTemplateInput!) {
       createRcvLocationsFromTemplate(input: $input) {
+        archivalLocationPurpose
         clusterName
         consumedBytes
         failedTasks
@@ -57,11 +58,11 @@ Creates Rubrik Cloud Vault Azure locations from the specified location template.
       "data": {
         "createRcvLocationsFromTemplate": [
           {
+            "archivalLocationPurpose": "ADO",
             "clusterName": "example-string",
             "consumedBytes": 0,
             "failedTasks": 0,
-            "id": "example-string",
-            "isActive": true
+            "id": "example-string"
           }
         ]
       }

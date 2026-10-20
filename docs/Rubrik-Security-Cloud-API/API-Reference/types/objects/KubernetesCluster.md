@@ -25,17 +25,20 @@ A Kubernetes cluster onboarded to Rubrik CDM.
 | effectiveSlaSourceObject | [PathNode](PathNode.md) | Path node of the effective SLA Domain source. |
 | eksClusterArn | String | Amazon Resource Name (ARN) for the EKS Kubernetes cluster. |
 | externalIp | String | The IP for connecting to the Kubernetes cluster on a NodePort. |
+| futureLegalHoldInfo | [FutureLegalHoldInfo](FutureLegalHoldInfo.md) | Future legal hold rule configured for this object, if any. |
 | helmStatus | [HelmStatus](../enums/HelmStatus.md) | Compatibility status between the deployed Helm chart and the running Rubrik CDM. NULL for non-Helm onboarded clusters. |
 | helmVersion | String | Deployed Helm chart version on the cluster. NULL for non-Helm onboarded clusters. |
 | id | [UUID](../scalars/UUID.md)! | ID of the hierarchy object. |
 | isAutoPsCreationEnabled | Boolean! | Specifies whether automatic protection set creation is enabled. |
 | isPullSecretConfigured | Boolean! | Specifies whether the pull secret is configured. |
 | isReplica | Boolean | True if this object is a replica, its current cluster differs from its source (primary) cluster. False if the object resides on its source cluster. Null when the source cluster is unknown. |
+| k8sApi | [K8sApiProxyResponse](K8sApiProxyResponse.md)! | Proxy a K8s API request through the CDM cluster. |
 | k8sDescendantProtectionSets | [KubernetesProtectionSetConnection](KubernetesProtectionSetConnection.md)! | Protection Sets belonging to the Kubernetes cluster. |
 | k8sDescendantVirtualMachines | [KubernetesVirtualMachineConnection](KubernetesVirtualMachineConnection.md)! | Virtual machines belonging to the Kubernetes cluster. |
 | k8sName | String! | Name of Kubernetes Cluster. |
 | k8sVersion | String | Version of Kubernetes Cluster. |
 | latestUserNote | [LatestUserNote](LatestUserNote.md) | Latest user note information. |
+| legallyHeldSnapshotCount | Int | Number of snapshots on legal hold for this object. |
 | logicalPath | [[PathNode](PathNode.md)!]! | Sequential list of the logical ancestors of this object. |
 | maxConcurrentAgents | Int | Specifies the maximum number of concurrent backup agents. |
 | maxPvcsPerAgent | Int | Specifies the maximum number of PVCs per backup agent. |
@@ -70,25 +73,26 @@ A Kubernetes cluster onboarded to Rubrik CDM.
 | Field | Argument | Type | Description |
 |-------|----------|------|-------------|
 | descendantConnection | first | Int | Returns the first n elements from the list. |
-| descendantConnection | after | String | Returns the elements in the list that occur after the specified cursor. |
+| descendantConnection | after | String | An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results. |
 | descendantConnection | last | Int | Returns the last n elements from the list. |
-| descendantConnection | before | String | Returns the elements in the list that occur before the specified cursor. |
+| descendantConnection | before | String | An opaque cursor returned from a previous query's startCursor field. Pass this value verbatim to retrieve the previous page of results. |
 | descendantConnection | sortBy | [HierarchySortByField](../enums/HierarchySortByField.md) | Sort hierarchy objects according to the hierarchy field. |
 | descendantConnection | sortOrder | [SortOrder](../enums/SortOrder.md) | Sorts the order of results. |
 | descendantConnection | typeFilter | [[HierarchyObjectTypeEnum](../enums/HierarchyObjectTypeEnum.md)!] | Types of objects to include. |
 | descendantConnection | filter | [[Filter](../inputs/Filter.md)!] | Hierarchy object filter. |
 | descendantConnection | workloadHierarchy | [WorkloadLevelHierarchy](../enums/WorkloadLevelHierarchy.md) | Each enumeration value represents the hierarchy of a specific workload type for RBAC and SLA Domain assignments.  A value of 'None' represents the hierarchy of all workload types. |
+| k8sApi | path *(required)* | String! | K8s API resource path. |
 | k8sDescendantProtectionSets | first | Int | Returns the first n elements from the list. |
-| k8sDescendantProtectionSets | after | String | Returns the elements in the list that occur after the specified cursor. |
+| k8sDescendantProtectionSets | after | String | An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results. |
 | k8sDescendantProtectionSets | last | Int | Returns the last n elements from the list. |
-| k8sDescendantProtectionSets | before | String | Returns the elements in the list that occur before the specified cursor. |
+| k8sDescendantProtectionSets | before | String | An opaque cursor returned from a previous query's startCursor field. Pass this value verbatim to retrieve the previous page of results. |
 | k8sDescendantProtectionSets | sortBy | [HierarchySortByField](../enums/HierarchySortByField.md) | Sort hierarchy objects according to the hierarchy field. |
 | k8sDescendantProtectionSets | sortOrder | [SortOrder](../enums/SortOrder.md) | Sorts the order of results. |
 | k8sDescendantProtectionSets | filter | [[Filter](../inputs/Filter.md)!] | Hierarchy object filter. |
 | k8sDescendantVirtualMachines | first | Int | Returns the first n elements from the list. |
-| k8sDescendantVirtualMachines | after | String | Returns the elements in the list that occur after the specified cursor. |
+| k8sDescendantVirtualMachines | after | String | An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results. |
 | k8sDescendantVirtualMachines | last | Int | Returns the last n elements from the list. |
-| k8sDescendantVirtualMachines | before | String | Returns the elements in the list that occur before the specified cursor. |
+| k8sDescendantVirtualMachines | before | String | An opaque cursor returned from a previous query's startCursor field. Pass this value verbatim to retrieve the previous page of results. |
 | k8sDescendantVirtualMachines | sortBy | [HierarchySortByField](../enums/HierarchySortByField.md) | Sort hierarchy objects according to the hierarchy field. |
 | k8sDescendantVirtualMachines | sortOrder | [SortOrder](../enums/SortOrder.md) | Sorts the order of results. |
 | k8sDescendantVirtualMachines | filter | [[Filter](../inputs/Filter.md)!] | Hierarchy object filter. |

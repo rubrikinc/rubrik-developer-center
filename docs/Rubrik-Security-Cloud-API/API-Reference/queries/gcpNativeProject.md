@@ -27,6 +27,7 @@ Get details of a GCP Project
         id
         isRelic
         lastRefreshedAt
+        legallyHeldSnapshotCount
         name
         nativeId
         nativeName

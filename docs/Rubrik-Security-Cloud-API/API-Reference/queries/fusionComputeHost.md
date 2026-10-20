@@ -29,6 +29,7 @@ Summary of a FusionCompute host.
         id
         ipAddresses
         isReplica
+        legallyHeldSnapshotCount
         name
         numWorkloadDescendants
         objectType

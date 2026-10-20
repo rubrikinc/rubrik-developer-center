@@ -7,11 +7,11 @@ List of principal summaries.
 | Argument | Type | Description |
 |----------|------|-------------|
 | first | Int | Returns the first n elements from the list. |
-| after | String | Returns the elements in the list that occur after the specified cursor. |
+| after | String | An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results. |
 | last | Int | Returns the last n elements from the list. |
-| before | String | Returns the elements in the list that occur before the specified cursor. |
+| before | String | An opaque cursor returned from a previous query's startCursor field. Pass this value verbatim to retrieve the previous page of results. |
 | filter | [PrincipalSummariesFilterInput](../types/inputs/PrincipalSummariesFilterInput.md) | Filter to be applied when retrieving principal summaries. |
-| timelineDate *(required)* | String! | Date for which the results will be retrieved. |
+| timelineDate | String | Date for which the results will be retrieved. Defaults to the current time. |
 | sort | [ListPrincipalsSummarySortInput](../types/inputs/ListPrincipalsSummarySortInput.md) | Field on which to perform the sorting operation. |
 | includeCount *(required)* | Boolean! | Include counts in the results. |
 | historicalDeltaDays *(required)* | Int! | Number of historical days to go backward in time to calculate the delta. |
@@ -29,9 +29,8 @@ List of principal summaries.
 === "Query"
 
     ```graphql
-    query PrincipalSummaries($timelineDate: String!, $includeCount: Boolean!, $historicalDeltaDays: Int!) {
+    query PrincipalSummaries($includeCount: Boolean!, $historicalDeltaDays: Int!) {
       principalSummaries(
-        timelineDate: $timelineDate
         includeCount: $includeCount
         historicalDeltaDays: $historicalDeltaDays
         first: 10
@@ -82,7 +81,6 @@ List of principal summaries.
 
     ```json
     {
-      "timelineDate": "example-string",
       "includeCount": true,
       "historicalDeltaDays": 0
     }

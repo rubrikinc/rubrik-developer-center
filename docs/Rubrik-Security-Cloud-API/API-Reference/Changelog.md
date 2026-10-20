@@ -1,8 +1,8 @@
 # GraphQL Schema Changelog
 
-*Generated on September 22, 2026 at 08:51 AM*
+*Generated on October 17, 2026 at 05:20 PM*
 
-This changelog documents the evolution of the GraphQL schema across 60 versions.
+This changelog documents the evolution of the GraphQL schema across 64 versions.
 
 !!! note "Not every breaking change affects a generally available feature"
     The schema also carries early access and in-development surfaces, which
@@ -13,6 +13,1708 @@ This changelog documents the evolution of the GraphQL schema across 60 versions.
 
     The reliable check is whether your own integrations reference the names
     listed. Search this page for the operations you call.
+
+## October 12, 2026
+
+### ⚠️ Breaking Changes
+
+*Requests that worked before may now fail. RSC updates automatically, so check whether your integrations use anything listed here.*
+
+- Input field `NodeConfigInput.ipmiIpConfig` changed type from `IpConfigInput`! to `IpConfigInput`
+
+### ⚡ May Require Changes
+
+*Your requests still work. Deprecations and shifted defaults to plan around.*
+
+- Argument before: String added to field `FailoverClusterApp.descendantConnection`
+- Argument last: Int added to field `FailoverClusterApp.descendantConnection`
+- Argument before: String added to field `FailoverClusterApp.physicalChildConnection`
+- Argument last: Int added to field `FailoverClusterApp.physicalChildConnection`
+- Argument before: String added to field `HostFailoverCluster.descendantConnection`
+- Argument last: Int added to field `HostFailoverCluster.descendantConnection`
+- Argument before: String added to field `HostFailoverCluster.physicalChildConnection`
+- Argument last: Int added to field `HostFailoverCluster.physicalChildConnection`
+- Argument shouldIncludeRecoveryInfo: Boolean added to field `Query.allQuarantinedDetailsForSnapshots`
+- Argument separateSharedClusters: Boolean added to field `Query.countClusters`
+- Argument before: String added to field `Query.guestCredentialsV2`
+- Argument last: Int added to field `Query.guestCredentialsV2`
+- Argument recoveryTags: [RecoveryTagClause!] added to field `Query.recoveries`
+- Argument recoveryTags: [RecoveryTagClause!] added to field `Query.recoveryPlansBasicInfo`
+- Argument before: String added to field `Query.sapHanaDatabases`
+- Argument last: Int added to field `Query.sapHanaDatabases`
+- Argument before: String added to field `Query.sapHanaSystems`
+- Argument last: Int added to field `Query.sapHanaSystems`
+- Argument before: String added to field `Query.vCenterHotAddProxyVmsV2`
+- Argument last: Int added to field `Query.vCenterHotAddProxyVmsV2`
+- Argument before: String added to field `Query.vSphereComputeClusters`
+- Argument last: Int added to field `Query.vSphereComputeClusters`
+- Argument before: String added to field `Query.vSphereDatastoreClusters`
+- Argument last: Int added to field `Query.vSphereDatastoreClusters`
+- Argument before: String added to field `Query.vSphereDatastoreConnection`
+- Argument last: Int added to field `Query.vSphereDatastoreConnection`
+- Argument before: String added to field `Query.vSphereFolders`
+- Argument last: Int added to field `Query.vSphereFolders`
+- Argument before: String added to field `Query.vSphereHostConnection`
+- Argument last: Int added to field `Query.vSphereHostConnection`
+- Argument before: String added to field `Query.vSphereLiveMounts`
+- Argument last: Int added to field `Query.vSphereLiveMounts`
+- Argument before: String added to field `Query.vSphereMountConnection`
+- Argument last: Int added to field `Query.vSphereMountConnection`
+- Argument before: String added to field `Query.vSphereTopLevelDescendantsConnection`
+- Argument last: Int added to field `Query.vSphereTopLevelDescendantsConnection`
+- Argument before: String added to field `Query.vSphereTopLevelRecoveryTargets`
+- Argument last: Int added to field `Query.vSphereTopLevelRecoveryTargets`
+- Argument before: String added to field `Query.vSphereVCenterConnection`
+- Argument last: Int added to field `Query.vSphereVCenterConnection`
+- Argument before: String added to field `Query.vSphereVmNewConnection`
+- Argument last: Int added to field `Query.vSphereVmNewConnection`
+- Argument before: String added to field `Query.vcdTopLevelDescendants`
+- Argument last: Int added to field `Query.vcdTopLevelDescendants`
+- Argument before: String added to field `Query.vcdVappVms`
+- Argument last: Int added to field `Query.vcdVappVms`
+
+### ✨ Additions
+
+*Purely additive. Nothing you send today stops working. If you switch exhaustively on an enum, add a default case for newly added values.*
+
+- `M365_CONFIGS_ORG` enum value added to enum `ActivityObjectTypeEnum`
+- `M365_CONFIGS_ORG` enum value added to enum `AuditObjectType`
+??? note "3 enum values added to enum `AuthorizedOperation`"
+
+    - `MANAGE_AGENT_CLOUD_POLICIES`
+    - `MANAGE_MAINTENANCE_MODE`
+    - `SET_AGENT_CLOUD_POLICY_ENFORCEMENT`
+
+- `DOWNLOAD_CFT_TEMPLATE` enum value added to enum `CloudAccountAction`
+- `M365_CONFIGS_ORG` enum value added to enum `EventObjectType`
+- `ENCRYPTED_FILES_CSV` enum value added to enum `FileTypeEnumType`
+- `QUARANTINED_FILES_CSV` enum value added to enum `FileTypeEnumType`
+- `SECURITY_IDENTITY_EVENT_TARGET_OU` enum value added to enum `FilterType`
+- `M365_CONFIGS_ORG` enum value added to enum `HierarchyObjectTypeEnum`
+- `M365_CONFIGS` enum value added to enum `InventoryCard`
+- `M365_CONFIGS_ROOT` enum value added to enum `InventorySubHierarchyRootEnum`
+- `M365_CONFIGS_ORG` enum value added to enum `ManagedObjectType`
+??? note "3 enum values added to enum `Operation`"
+
+    - `MANAGE_AGENT_CLOUD_POLICIES`
+    - `MANAGE_MAINTENANCE_MODE`
+    - `SET_AGENT_CLOUD_POLICY_ENFORCEMENT`
+
+- `ATLASSIAN_CONFLUENCE` enum value added to enum `ProductName`
+- `ANTHROPIC_APPS` enum value added to enum `SaasAppType`
+- `SAAS_GITHUB_ORG` enum value added to enum `SaasAppType`
+- `RTP_RESTORE` enum value added to enum `SaasAppsCascadingImpactOperationType`
+- `M365_CONFIGS_ORG` enum value added to enum `SaasOrgType`
+- `M365_CONFIGS_OBJECT_TYPE` enum value added to enum `SlaObjectType`
+- `UEKM_GCP_KMS_BASED` enum value added to enum `TargetEncryptionTypeEnum`
+- `IRISDB_INSTANCE` enum value added to enum `UserAuditObjectTypeEnum`
+??? note "12 types added"
+
+    - `ArchivalTieringStatus`
+    - `GetMongoSnapshotRbacSummaryInput`
+    - `MongoClusterRecoveryRequestConfigInput`
+    - `MongoSnapshotRbacRoleAssignment`
+    - `MongoSnapshotRbacSummary`
+    - `MongoSnapshotRbacUser`
+    - `RecoverMongoClusterInput`
+    - `RecoveryTag`
+    - `RecoveryTagClause`
+    - `SetClusterKmsKeyIdInput`
+    - `SetClusterKmsKeyIdReply`
+    - `StorageLocationPurpose`
+
+- `namePrefixFilter` input field added to `AzureNativeCommonResourceGroupFilters`
+- `archivalLocationPurpose` field added to `CdmManagedAwsTarget`
+- `archivalLocationPurpose` field added to `CdmManagedAzureTarget`
+- `archivalLocationPurpose` field added to `CdmManagedDcaTarget`
+- `archivalLocationPurpose` field added to `CdmManagedGcpTarget`
+- `archivalLocationPurpose` field added to `CdmManagedGlacierTarget`
+- `archivalLocationPurpose` field added to `CdmManagedLckTarget`
+- `archivalLocationPurpose` field added to `CdmManagedNfsTarget`
+- `archivalLocationPurpose` field added to `CdmManagedS3CompatibleTarget`
+- `archivalLocationPurpose` field added to `CdmManagedTapeTarget`
+- `archivalTieringStatus` field added to `CdmSnapshot`
+- `archivalLocationPurpose` field added to `CdmTarget`
+- `archivalLocationPurpose` field added to `CloudNativeSnapshotTypeDetails`
+- `assignedByParentAccountClusters` field added to `CountClustersReply`
+- `kmsKeyId` input field added to `CreateAwsClusterInput`
+- `kmsKeyId` input field added to `CreateAzureClusterInput`
+- `certificateTrustMode` input field added to `CreateS3CompatibleReaderTargetInput`
+- `tlsCertificateId` input field added to `CreateS3CompatibleReaderTargetInput`
+??? note "3 fields added to `DataTypeStats`"
+
+    - `totalFilesWithHits`
+    - `totalPermittedFilesWithHits`
+    - `totalViolatedFilesWithHits`
+
+- `cleanSnapshotId` field added to `FileDetails`
+- `isDuplicateRegistration` field added to `HostDetail`
+- `kubeSystemUid` input field added to `K8sClusterAddInput`
+- `shardId` field added to `MongoHostDetail`
+- `recoverMongoCluster` field added to `Mutation`
+- `setClusterKmsKeyId` field added to `Mutation`
+- `archivalLocationPurpose` field added to `PolarisSnapshot`
+- `lastRecoverableRangeCheckedAt` field added to `PostgreSQLDbCluster`
+- `mongoSnapshotRbacSummary` field added to `Query`
+- `locationPurpose` field added to `RscSnapshotLocationRetentionInfo`
+- `archivalLocationPurpose` field added to `RubrikManagedAwsTarget`
+- `archivalLocationPurpose` field added to `RubrikManagedAzureTarget`
+- `archivalLocationPurpose` field added to `RubrikManagedDcaTarget`
+- `archivalLocationPurpose` field added to `RubrikManagedGcpTarget`
+- `archivalLocationPurpose` field added to `RubrikManagedGlacierTarget`
+- `archivalLocationPurpose` field added to `RubrikManagedLckTarget`
+- `archivalLocationPurpose` field added to `RubrikManagedNfsTarget`
+- `archivalLocationPurpose` field added to `RubrikManagedRcsTarget`
+- `archivalLocationPurpose` field added to `RubrikManagedRcvAwsTarget`
+- `archivalLocationPurpose` field added to `RubrikManagedRcvGcpTarget`
+- `archivalLocationPurpose` field added to `RubrikManagedS3CompatibleTarget`
+- `archivalLocationPurpose` field added to `RubrikManagedTapeTargetType`
+- Field `Query`.allVmRecoveryJobsInfo is deprecated
+- Enum value SaasAppType.ANTHROPIC_CHAT was deprecated with reason Use ANTHROPIC_APPS instead.
+- Field `archivalLocationPurpose` was added to interface Target
+
+## October 05, 2026
+
+### ⚠️ Breaking Changes
+
+*Requests that worked before may now fail. RSC updates automatically, so check whether your integrations use anything listed here.*
+
+- `UNKNOWN_GCP_REGION` enum value removed from enum `GcpCloudAccountRegion`
+??? note "21 types removed"
+
+    - `GcpNativeKmsCryptoKey`
+    - `RestoreConfig`
+    - `RestoreFileConfig`
+    - `Vcd`
+    - `VcdDescendantTypeConnection`
+    - `VcdDescendantTypeEdge`
+    - `VcdLogicalChildTypeConnection`
+    - `VcdLogicalChildTypeEdge`
+    - `VcdOrgVdc`
+    - `VcdOrgVdcDescendantTypeConnection`
+    - `VcdOrgVdcDescendantTypeEdge`
+    - `VcdOrgVdcLogicalChildTypeConnection`
+    - `VcdOrgVdcLogicalChildTypeEdge`
+    - `VcdVcenterConnectionInfo`
+    - `VcdVcenterConnectionState`
+    - `VcdVimServer`
+    - `VsphereAsyncRequestStatus`
+    - `VsphereExcludeVmDisksInput`
+    - `VsphereLink`
+    - `VsphereRequestErrorInfo`
+    - `VsphereVmRecoverFilesInput`
+
+- `UNKNOWN_STORAGE_CLASS_GCP` enum value removed from enum `GcpStorageClass`
+- `allGcpNativeAvailableKmsCryptoKeys` field removed from `Query`
+
+### 🗑️ Removed Deprecated Items
+
+*These items were previously marked `@deprecated` and have now been removed.*
+
+- Field `vsphereExcludeVmDisks` (deprecated) was removed from object type `Mutation`
+- Field `vsphereVmRecoverFiles` (deprecated) was removed from object type `Mutation`
+
+### ⚡ May Require Changes
+
+*Your requests still work. Deprecations and shifted defaults to plan around.*
+
+- Argument before: String added to field `NasNamespace.descendantConnection`
+- Argument last: Int added to field `NasNamespace.descendantConnection`
+- Argument before: String added to field `NasNamespace.logicalChildConnection`
+- Argument last: Int added to field `NasNamespace.logicalChildConnection`
+- Argument before: String added to field `NasShare.descendantConnection`
+- Argument last: Int added to field `NasShare.descendantConnection`
+- Argument before: String added to field `NasShare.logicalChildConnection`
+- Argument last: Int added to field `NasShare.logicalChildConnection`
+- Argument before: String added to field `NasSystem.descendantConnection`
+- Argument last: Int added to field `NasSystem.descendantConnection`
+- Argument before: String added to field `NasSystem.logicalChildConnection`
+- Argument last: Int added to field `NasSystem.logicalChildConnection`
+- Argument before: String added to field `NasVolume.descendantConnection`
+- Argument last: Int added to field `NasVolume.descendantConnection`
+- Argument before: String added to field `NasVolume.logicalChildConnection`
+- Argument last: Int added to field `NasVolume.logicalChildConnection`
+- Argument before: String added to field `Query.nasNamespaces`
+- Argument last: Int added to field `Query.nasNamespaces`
+- Argument before: String added to field `Query.nasShares`
+- Argument last: Int added to field `Query.nasShares`
+- Argument before: String added to field `Query.nasSystems`
+- Argument last: Int added to field `Query.nasSystems`
+- Argument before: String added to field `Query.nasTopLevelDescendants`
+- Argument last: Int added to field `Query.nasTopLevelDescendants`
+- Argument muteStatusFilter: ThreatMonitoringMuteStatusFilter added to field `Query.threatMonitoringMatchedObjects`
+- Argument before: String added to field `Query.vcdOrgs`
+- Argument last: Int added to field `Query.vcdOrgs`
+- Argument before: String added to field `Query.vcdVapps`
+- Argument last: Int added to field `Query.vcdVapps`
+- Argument before: String added to field `VsphereComputeCluster.descendantConnection`
+- Argument last: Int added to field `VsphereComputeCluster.descendantConnection`
+- Argument before: String added to field `VsphereComputeCluster.physicalChildConnection`
+- Argument last: Int added to field `VsphereComputeCluster.physicalChildConnection`
+- Argument before: String added to field `VsphereComputeCluster.recoveryTargetChildConnection`
+- Argument last: Int added to field `VsphereComputeCluster.recoveryTargetChildConnection`
+- Argument before: String added to field `VsphereComputeCluster.recoveryTargetDescendantConnection`
+- Argument last: Int added to field `VsphereComputeCluster.recoveryTargetDescendantConnection`
+- Argument before: String added to field `VsphereDatacenter.descendantConnection`
+- Argument last: Int added to field `VsphereDatacenter.descendantConnection`
+- Argument before: String added to field `VsphereDatacenter.logicalChildConnection`
+- Argument last: Int added to field `VsphereDatacenter.logicalChildConnection`
+- Argument before: String added to field `VsphereDatacenter.physicalChildConnection`
+- Argument last: Int added to field `VsphereDatacenter.physicalChildConnection`
+- Argument before: String added to field `VsphereDatacenter.recoveryLogicalChildConnection`
+- Argument last: Int added to field `VsphereDatacenter.recoveryLogicalChildConnection`
+- Argument before: String added to field `VsphereDatacenter.recoveryTargetChildConnection`
+- Argument last: Int added to field `VsphereDatacenter.recoveryTargetChildConnection`
+- Argument before: String added to field `VsphereDatastoreCluster.descendantConnection`
+- Argument last: Int added to field `VsphereDatastoreCluster.descendantConnection`
+- Argument before: String added to field `VsphereDatastoreCluster.physicalChildConnection`
+- Argument last: Int added to field `VsphereDatastoreCluster.physicalChildConnection`
+- Argument before: String added to field `VsphereFolder.descendantConnection`
+- Argument last: Int added to field `VsphereFolder.descendantConnection`
+- Argument before: String added to field `VsphereFolder.logicalChildConnection`
+- Argument last: Int added to field `VsphereFolder.logicalChildConnection`
+- Argument before: String added to field `VsphereFolder.recoveryLogicalChildConnection`
+- Argument last: Int added to field `VsphereFolder.recoveryLogicalChildConnection`
+- Argument before: String added to field `VsphereHost.descendantConnection`
+- Argument last: Int added to field `VsphereHost.descendantConnection`
+- Argument before: String added to field `VsphereHost.physicalChildConnection`
+- Argument last: Int added to field `VsphereHost.physicalChildConnection`
+- Argument before: String added to field `VsphereHost.recoveryTargetChildConnection`
+- Argument last: Int added to field `VsphereHost.recoveryTargetChildConnection`
+- Argument before: String added to field `VsphereHost.recoveryTargetDescendantConnection`
+- Argument last: Int added to field `VsphereHost.recoveryTargetDescendantConnection`
+- Argument before: String added to field `VsphereResourcePool.descendantConnection`
+- Argument last: Int added to field `VsphereResourcePool.descendantConnection`
+- Argument before: String added to field `VsphereResourcePool.physicalChildConnection`
+- Argument last: Int added to field `VsphereResourcePool.physicalChildConnection`
+- Argument before: String added to field `VsphereResourcePool.recoveryTargetChildConnection`
+- Argument last: Int added to field `VsphereResourcePool.recoveryTargetChildConnection`
+- Argument before: String added to field `VsphereResourcePool.recoveryTargetDescendantConnection`
+- Argument last: Int added to field `VsphereResourcePool.recoveryTargetDescendantConnection`
+- Argument before: String added to field `VsphereTag.tagChildConnection`
+- Argument last: Int added to field `VsphereTag.tagChildConnection`
+- Argument before: String added to field `VsphereTagCategory.tagChildConnection`
+- Argument last: Int added to field `VsphereTagCategory.tagChildConnection`
+- Argument before: String added to field `VsphereVcenter.descendantConnection`
+- Argument last: Int added to field `VsphereVcenter.descendantConnection`
+- Argument before: String added to field `VsphereVcenter.libraryChildConnection`
+- Argument last: Int added to field `VsphereVcenter.libraryChildConnection`
+- Argument before: String added to field `VsphereVcenter.logicalChildConnection`
+- Argument last: Int added to field `VsphereVcenter.logicalChildConnection`
+- Argument before: String added to field `VsphereVcenter.physicalChildConnection`
+- Argument last: Int added to field `VsphereVcenter.physicalChildConnection`
+- Argument before: String added to field `VsphereVcenter.recoveryLogicalChildConnection`
+- Argument last: Int added to field `VsphereVcenter.recoveryLogicalChildConnection`
+- Argument before: String added to field `VsphereVcenter.tagChildConnection`
+- Argument last: Int added to field `VsphereVcenter.tagChildConnection`
+- Argument before: String added to field `VsphereVm.vSphereLiveMounts`
+- Argument last: Int added to field `VsphereVm.vSphereLiveMounts`
+- Argument before: String added to field `VsphereVm.vSphereMounts`
+- Argument last: Int added to field `VsphereVm.vSphereMounts`
+- Argument before: String added to field `VsphereVm.vsphereVirtualDisks`
+- Argument last: Int added to field `VsphereVm.vsphereVirtualDisks`
+- Enum value PendingActionSubGroupTypeEnum.CLUSTER_PEER_TOKEN_GET was deprecated with reason Use CLUSTER_PEER_TOKEN_GET_AND_SET instead. Removed 2027/09/28.
+
+### ✨ Additions
+
+*Purely additive. Nothing you send today stops working. If you switch exhaustively on an enum, add a default case for newly added values.*
+
+- `AGENT_CLOUD_REWIND_OBJECT` enum value added to enum `ActivityObjectTypeEnum`
+- `GITHUB_ORG_PACKAGES_FIXED_OBJECT` enum value added to enum `ActivityObjectTypeEnum`
+- `AGENT_CLOUD_REWIND` enum value added to enum `ActivityTypeEnum`
+- `AGENT_CLOUD_REWIND_OBJECT` enum value added to enum `AuditObjectType`
+- `GITHUB_ORG_PACKAGES_FIXED_OBJECT` enum value added to enum `AuditObjectType`
+- `GITHUB_PACKAGES_PROTECTION` enum value added to enum `CloudAccountFeature`
+??? note "6 enum values added to enum `DataGovObjectType`"
+
+    - `FUSION_COMPUTE_CLUSTER`
+    - `FUSION_COMPUTE_HOST`
+    - `FUSION_COMPUTE_ROOT`
+    - `FUSION_COMPUTE_SITE`
+    - `FUSION_COMPUTE_VIRTUAL_MACHINE`
+    - `FUSION_COMPUTE_VRM`
+
+- `MONITORING_PAUSED` enum value added to enum `DataViewTypeEnum`
+- `AGENT_CLOUD_REWIND_OBJECT` enum value added to enum `EventObjectType`
+- `GITHUB_ORG_PACKAGES_FIXED_OBJECT` enum value added to enum `EventObjectType`
+- `AGENT_CLOUD_REWIND` enum value added to enum `EventType`
+- `ALERT_ACTIONS_LOG_CSV` enum value added to enum `FileTypeEnumType`
+- `SECURITY_NOTIFICATION_MUTE_STATUS` enum value added to enum `HierarchyFilterField`
+- `GITHUB_ORG_PACKAGES_FIXED_OBJECT` enum value added to enum `HierarchyObjectTypeEnum`
+- `GITHUB_ORG_PACKAGES_FIXED_OBJECT` enum value added to enum `ManagedObjectType`
+??? note "22 enum values added to enum `NativeType`"
+
+    - `OKTA_AUTHENTICATOR`
+    - `OKTA_AUTHORIZATION_SERVER`
+    - `OKTA_AUTHORIZATION_SERVER_CLAIM`
+    - `OKTA_AUTHORIZATION_SERVER_POLICY`
+    - `OKTA_AUTHORIZATION_SERVER_POLICY_RULE`
+    - `OKTA_AUTHORIZATION_SERVER_SCOPE`
+    - `OKTA_EVENT_HOOK`
+    - `OKTA_GROUP_PUSH_MAPPING`
+    - `OKTA_GROUP_RULE`
+    - `OKTA_IDENTITY_PROVIDER`
+    - `OKTA_IDP_KEY_CREDENTIAL`
+    - `OKTA_INLINE_HOOK`
+    - `OKTA_NETWORK_ZONE`
+    - `OKTA_POLICY_RULE`
+    - `OKTA_PROFILE_MAPPING`
+    - `OKTA_PROVISIONING_SETTING`
+    - `OKTA_USER_SCHEMA`
+    - `OKTA_WORKFLOW`
+    - `OKTA_WORKFLOW_CONNECTION`
+    - `OKTA_WORKFLOW_DATA_TABLE`
+    - `OKTA_WORKFLOW_DATA_TABLE_ROW`
+    - `OKTA_WORKFLOW_FOLDER`
+
+- `M365_RECOVERY_PERMISSIONS` enum value added to enum `NotificationResourceSubtype`
+- `GCP_PRIVATE_CONTAINER_REGISTRY` enum value added to enum `NotificationResourceType`
+- `TPR_BREAK_GLASS_ACCESS` enum value added to enum `NotificationResourceType`
+- `GITHUB_ORG_PACKAGES_FIXED_OBJECT` enum value added to enum `ObjectTypeEnum`
+??? note "22 enum values added to enum `PrincipalRiskySummaryPrincipalType`"
+
+    - `AUTHENTICATOR`
+    - `AUTHORIZATION_SERVER`
+    - `AUTHORIZATION_SERVER_CLAIM`
+    - `AUTHORIZATION_SERVER_POLICY`
+    - `AUTHORIZATION_SERVER_POLICY_RULE`
+    - `AUTHORIZATION_SERVER_SCOPE`
+    - `EVENT_HOOK`
+    - `GROUP_PUSH_MAPPING`
+    - `GROUP_RULE`
+    - `IDENTITY_PROVIDER`
+    - `IDP_KEY_CREDENTIAL`
+    - `INLINE_HOOK`
+    - `POLICY_RULE`
+    - `PROFILE_MAPPING`
+    - `PROVISIONING_SETTING`
+    - `USER_SCHEMA`
+    - `USER_TYPE`
+    - `WORKFLOW`
+    - `WORKFLOW_CONNECTION`
+    - `WORKFLOW_DATA_TABLE`
+    - `WORKFLOW_DATA_TABLE_ROW`
+    - `WORKFLOW_FOLDER`
+
+- `K8S_POSTGRES_DB_CLUSTER_OBJECT_TYPE` enum value added to enum `SlaObjectType`
+- `CLOUD_NATIVE_LOC_TEMPLATE_TYPE` enum value added to enum `TargetMappingQueryFilterField`
+??? note "4 enum values added to enum `TprSnapshotLocationType`"
+
+    - `TPR_SNAPSHOT_LOCATION_TYPE_BACKUP`
+    - `TPR_SNAPSHOT_LOCATION_TYPE_REPLICATION`
+    - `TPR_SNAPSHOT_LOCATION_TYPE_SOURCE`
+    - `UNRECOGNIZED`
+
+- `AGENT_CLOUD_REWIND_OBJECT` enum value added to enum `UserAuditObjectTypeEnum`
+??? note "22 enum values added to enum `ViolationPrincipalType`"
+
+    - `AUTHENTICATOR`
+    - `AUTHORIZATION_SERVER`
+    - `AUTHORIZATION_SERVER_CLAIM`
+    - `AUTHORIZATION_SERVER_POLICY`
+    - `AUTHORIZATION_SERVER_POLICY_RULE`
+    - `AUTHORIZATION_SERVER_SCOPE`
+    - `EVENT_HOOK`
+    - `GROUP_PUSH_MAPPING`
+    - `GROUP_RULE`
+    - `IDENTITY_PROVIDER`
+    - `IDP_KEY_CREDENTIAL`
+    - `INLINE_HOOK`
+    - `POLICY_RULE`
+    - `PROFILE_MAPPING`
+    - `PROVISIONING_SETTING`
+    - `USER_SCHEMA`
+    - `USER_TYPE`
+    - `WORKFLOW`
+    - `WORKFLOW_CONNECTION`
+    - `WORKFLOW_DATA_TABLE`
+    - `WORKFLOW_DATA_TABLE_ROW`
+    - `WORKFLOW_FOLDER`
+
+- `rehydratedInfo` field added to `AggregateSnapshotLocationDetail`
+??? note "36 types added"
+
+    - `ArchivalUploadJobPauseAction`
+    - `AzureCosmosNosqlContainerSpecificSnapshot`
+    - `GcpPcrConfig`
+    - `GoogleWorkspaceOrgFixedObjectWorkloads`
+    - `IdentityEventTarget`
+    - `InformixInstance`
+    - `InformixInstanceDetails`
+    - `InformixInstanceMetadata`
+    - `InformixInstanceStatus`
+    - `IrisdbAuthenticationType`
+    - `IrisdbDatabase`
+    - `IrisdbDatabaseStatus`
+    - `IrisdbInstance`
+    - `IrisdbInstanceSpec`
+    - `IrisdbInstanceStatus`
+    - `IrisdbSnapshotVolumeInfo`
+    - `IrisdbStorageSpec`
+    - `IrisdbVolume`
+    - `M365RecoveryConflictRule`
+    - `PauseResumeArchivalUploadJobInput`
+    - `PauseResumeArchivalUploadJobReply`
+    - `PingFederateClusterV1`
+    - `PostgresAutomatedRestoreDatabaseDetailsInput`
+    - `SecurityFeaturesStatus`
+    - `SnapMirrorCloud`
+    - `ThreatMonitoringMuteStatusFilter`
+    - `VsphereContentLibrary`
+    - `VsphereContentLibraryLibraryChildTypeConnection`
+    - `VsphereContentLibraryLibraryChildTypeEdge`
+    - `VsphereDatacenterFolder`
+    - `VsphereDatacenterFolderDescendantTypeConnection`
+    - `VsphereDatacenterFolderDescendantTypeEdge`
+    - `VsphereDatacenterFolderLogicalChildTypeConnection`
+    - `VsphereDatacenterFolderLogicalChildTypeEdge`
+    - `VsphereDatacenterFolderPhysicalChildTypeConnection`
+    - `VsphereDatacenterFolderPhysicalChildTypeEdge`
+
+- `userNote` input field added to `CreateOnDemandVolumeGroupBackupInput`
+- `rscCaseLink` field added to `CreateSupportCaseReply`
+- `objectCount` field added to `DataTypeHits`
+- `isProvisioned` field added to `DevOpsRubrikHostedExocompute`
+- `leaseId` input field added to `ExportO365MailboxInput`
+- `pcrConfig` input field added to `GcpGetResourceSetupTemplateReq`
+- `conditions` field added to `GcpPermissionGroup`
+- `onlyLocationsWithSnapshots` input field added to `GetPossibleSnapshotLocationsForObjectsInput`
+- `rscCaseLink` field added to `GetSupportCaseReply`
+- `fixedObjectWorkloads` field added to `GoogleWorkspaceOrg`
+- `additionalTargets` field added to `IdentityEventMetadata`
+??? note "3 fields added to `IrisdbInstanceAppMetadata`"
+
+    - `instanceVersion`
+    - `mountPaths`
+    - `volumes`
+
+- `conflictRule` input field added to `M365RecoveryOptionsInput`
+- `isTlsAtSnapshot` field added to `ManagedVolumeAppMetadata`
+- `pauseResumeArchivalUploadJob` field added to `Mutation`
+- `adDomain` field added to `NasNamespace`
+- `realmStatus` field added to `NasNamespace`
+- `uemKmsSpec` input field added to `O365SaasSetupCompleteInput`
+- `postgresAutomatedRestoreDatabaseDetails` input field added to `PostgresRestoreSettingsInput`
+- `allSecurityFeatureSupportedObjectTypes` field added to `Query`
+- `securityFeaturesStatus` field added to `SecurityMetadata`
+- `totalRegistryKeyMatches` field added to `ThreatHuntDetailsV2`
+- `totalRegistryAffectedObjects` field added to `ThreatHuntObjectMetricsReply`
+- `totalRegistryKeyMatches` field added to `ThreatHuntResultObjectsSummary`
+- `totalRegistryKeyMatches` field added to `ThreatHuntResultSnapshotStats`
+??? note "3 fields added to `ThreatHuntStats`"
+
+    - `totalRegistryAffectedObjects`
+    - `totalRegistryKeyMatches`
+    - `totalRegistryPatterns`
+
+- `region` field added to `ValidatePermissionsForAccountReply`
+- Input field `regions` of type [String!] was added to input object type `ValidatePermissionsForAccountReq`
+
+## September 28, 2026
+
+### ⚡ May Require Changes
+
+*Your requests still work. Deprecations and shifted defaults to plan around.*
+
+- Argument before: String added to field `NutanixCategory.descendantConnection`
+- Argument last: Int added to field `NutanixCategory.descendantConnection`
+- Argument before: String added to field `NutanixCategory.logicalChildConnection`
+- Argument last: Int added to field `NutanixCategory.logicalChildConnection`
+- Argument before: String added to field `NutanixCategoryValue.descendantConnection`
+- Argument last: Int added to field `NutanixCategoryValue.descendantConnection`
+- Argument before: String added to field `NutanixCategoryValue.logicalChildConnection`
+- Argument last: Int added to field `NutanixCategoryValue.logicalChildConnection`
+- Argument before: String added to field `NutanixCategoryValue.nutanixVms`
+- Argument last: Int added to field `NutanixCategoryValue.nutanixVms`
+- Argument before: String added to field `NutanixCluster.descendantConnection`
+- Argument last: Int added to field `NutanixCluster.descendantConnection`
+- Argument before: String added to field `NutanixCluster.logicalChildConnection`
+- Argument last: Int added to field `NutanixCluster.logicalChildConnection`
+- Argument before: String added to field `NutanixPrismCentral.descendantConnection`
+- Argument last: Int added to field `NutanixPrismCentral.descendantConnection`
+- Argument before: String added to field `NutanixPrismCentral.logicalChildConnection`
+- Argument last: Int added to field `NutanixPrismCentral.logicalChildConnection`
+- Argument before: String added to field `NutanixPrismCentral.nutanixClusters`
+- Argument last: Int added to field `NutanixPrismCentral.nutanixClusters`
+- Argument before: String added to field `Query.nutanixClusters`
+- Argument last: Int added to field `Query.nutanixClusters`
+- Argument before: String added to field `Query.nutanixPrismCentrals`
+- Argument last: Int added to field `Query.nutanixPrismCentrals`
+- Argument before: String added to field `Query.nutanixTopLevelDescendants`
+- Argument last: Int added to field `Query.nutanixTopLevelDescendants`
+- Argument before: String added to field `Query.nutanixVms`
+- Argument last: Int added to field `Query.nutanixVms`
+- Argument isPreSeedEnabled: Boolean added to field `Query.recoveryPlansBasicInfo`
+- Argument before: String added to field `Query.smbDomains`
+- Argument last: Int added to field `Query.smbDomains`
+- Argument before: String added to field `Query.vDiskMountableNutanixVms`
+- Argument last: Int added to field `Query.vDiskMountableNutanixVms`
+
+### ✨ Additions
+
+*Purely additive. Nothing you send today stops working. If you switch exhaustively on an enum, add a default case for newly added values.*
+
+- `GOOGLE_WORKSPACE_ADMIN_SETTINGS` enum value added to enum `ActivityObjectTypeEnum`
+- `GOOGLE_WORKSPACE_GROUPS_METADATA` enum value added to enum `ActivityObjectTypeEnum`
+- `AUTOMATION` enum value added to enum `ActorType`
+- `GOOGLE_WORKSPACE_ADMIN_SETTINGS` enum value added to enum `AuditObjectType`
+- `GOOGLE_WORKSPACE_GROUPS_METADATA` enum value added to enum `AuditObjectType`
+- `CONVERT_TO_DYNAMIC_SCALING_CCES` enum value added to enum `CcpJobType`
+- `CONVERT_TO_REGULAR_CCES` enum value added to enum `CcpJobType`
+- `SEAGATE_ST24000NM007H_FIRMWARE_RISK` enum value added to enum `ClusterNotificationType`
+- `GOOGLE_WORKSPACE_ADMIN_SETTINGS` enum value added to enum `EventObjectType`
+- `GOOGLE_WORKSPACE_GROUPS_METADATA` enum value added to enum `EventObjectType`
+- `DEVOPS_RECOVERY_REPORT` enum value added to enum `FileTypeEnumType`
+??? note "3 enum values added to enum `HierarchyFilterField`"
+
+    - `M365_OBJECT_STATUS`
+    - `SNAPSHOT_TIME_RANGE`
+    - `SNAPSHOT_TYPE`
+
+- `GOOGLE_WORKSPACE_ADMIN_SETTINGS` enum value added to enum `HierarchyObjectTypeEnum`
+- `GOOGLE_WORKSPACE_GROUPS_METADATA` enum value added to enum `HierarchyObjectTypeEnum`
+- `HPE_VME` enum value added to enum `InventoryCard`
+- `GOOGLE_WORKSPACE_ADMIN_SETTINGS` enum value added to enum `ManagedObjectType`
+- `GOOGLE_WORKSPACE_GROUPS_METADATA` enum value added to enum `ManagedObjectType`
+- `GOOGLE_WORKSPACE_GROUPS_METADATA` enum value added to enum `ObjectTypeEnum`
+- `AZURE_COSMOS_NOSQL_OBJECT_TYPE` enum value added to enum `SlaObjectType`
+- `REGISTRY` enum value added to enum `ThreatFeedType`
+- `GOOGLE_WORKSPACE_GROUPS_METADATA` enum value added to enum `UserAuditObjectTypeEnum`
+- `GOOGLE_WORKSPACE_GROUPS_METADATA` enum value added to enum `WorkloadLevelHierarchy`
+??? note "70 types added"
+
+    - `AddSupportCaseCommentInput`
+    - `AddSupportCaseCommentReply`
+    - `AwsActionWithUseCase`
+    - `AwsFeaturePermissions`
+    - `AwsNativeConfigSpecificSnapshot`
+    - `AwsPermissionStatement`
+    - `AwsPermissionsGroupPermissions`
+    - `AzureLocalExportTargetCluster`
+    - `AzureLocalExportTargetClustersResponse`
+    - `AzureLocalIpAllocationMethod`
+    - `AzureLocalIpPool`
+    - `AzureLocalIpv4Type`
+    - `AzureLocalLogicalNetwork`
+    - `AzureLocalLogicalNetworksResponse`
+    - `AzureLocalNicConfigInput`
+    - `AzureLocalResourceGroup`
+    - `AzureLocalResourceGroupsResponse`
+    - `CaseAttachmentItem`
+    - `CdmClusterNode`
+    - `CdmClusterNodeConnection`
+    - `CdmClusterNodeEdge`
+    - `CdmConfigNamespace`
+    - `CdmConfigParamState`
+    - `CdmConfigType`
+    - `CdmGlobalConfigFilter`
+    - `CdmGlobalConfigParam`
+    - `CdmGlobalConfigParamConnection`
+    - `CdmGlobalConfigParamEdge`
+    - `CdmLocalConfigFilter`
+    - `CdmLocalConfigNodeValue`
+    - `CdmLocalConfigParam`
+    - `CdmLocalConfigParamConnection`
+    - `CdmLocalConfigParamEdge`
+    - `CloseSupportCaseInput`
+    - `CloseSupportCaseReply`
+    - `CreateSupportCaseInput`
+    - `CreateSupportCaseReply`
+    - `DownloadCaseAttachmentReply`
+    - `DtaProduct`
+    - `EscalateSupportCaseWithCommentInput`
+    - `EscalateSupportCaseWithCommentReply`
+    - `GcpExoTaskImageBundle`
+    - `GetSupportCaseReply`
+    - `K8sApiProxyResponse`
+    - `ListCaseAttachmentsReply`
+    - `ListCaseAttachmentsReq`
+    - `LoadBalancerAnnotationEntry`
+    - `LoadBalancerAnnotationInput`
+    - `NasAuthMode`
+    - `NewCaseContactMethod`
+    - `NewCasePriority`
+    - `NewCaseSource`
+    - `NewCaseType`
+    - `RegenerateLoadBalancerAnnotationEntry`
+    - `RegenerateLoadBalancerAnnotationInput`
+    - `ReopenSupportCaseInput`
+    - `ReopenSupportCaseReply`
+    - `StartExportAzureLocalVirtualMachineJobInput`
+    - `SupportCaseAttachmentInput`
+    - `SupportCaseAttachmentResponse`
+    - `SupportCaseStatus`
+    - `SupportCaseStatusFilter`
+    - `SupportCaseSummary`
+    - `SupportCaseSummaryConnection`
+    - `SupportCaseSummaryEdge`
+    - `SupportCasesFilterInput`
+    - `SupportCasesSortField`
+    - `SupportPortalRole`
+    - `UpdateSupportCaseInput`
+    - `UpdateSupportCaseReply`
+
+- `relicFilter` input field added to `AzurePostgresFlexibleServerFilters`
+- `hasOwnPasswordCredential` field added to `EntraIDServicePrincipalMetadataProperties`
+- `isExternallyOwned` field added to `EntraIDServicePrincipalMetadataProperties`
+- `shouldRestoreAsStandby` input field added to `ExportOracleDbConfigInput`
+- `projectNativeId` field added to `GcpCmk`
+- `gcpImages` field added to `GetExotaskImageBundleReply`
+- `isThreatMonitoringEnabled` field added to `GetWorkloadAlertSettingReply`
+- `loadBalancerAnnotations` input field added to `K8sManifestConfigInput`
+- `loadBalancerAnnotations` input field added to `K8sRegenerateManifestConfigInput`
+- `k8sApi` field added to `KubernetesCluster`
+??? note "7 fields added to `Mutation`"
+
+    - `addSupportCaseComment`
+    - `closeSupportCase`
+    - `createSupportCase`
+    - `escalateSupportCaseWithComment`
+    - `reopenSupportCase`
+    - `startExportAzureLocalVirtualMachineJob`
+    - `updateSupportCase`
+
+- `nfsAuthMode` field added to `NasNamespace`
+- `smbAuthMode` field added to `NasNamespace`
+- `nfsAuthMode` field added to `NasSystem`
+- `smbAuthMode` field added to `NasSystem`
+??? note "14 fields added to `Query`"
+
+    - `allAWSLatestPermissionsByPermissionsGroup`
+    - `allCdmClusterConfigNamespaces`
+    - `allSupportCaseAttachments`
+    - `azureLocalExportTargetClusters`
+    - `azureLocalLogicalNetworks`
+    - `azureLocalResourceGroups`
+    - `cdmClusterGlobalConfigParams`
+    - `cdmClusterLocalConfigParams`
+    - `cdmClusterNodes`
+    - `snapshotSharepointListSearch`
+    - `supportCase`
+    - `supportCaseAttachmentContent`
+    - `supportCases`
+    - `supportPortalRole`
+
+- `leaseId` input field added to `RestoreO365FullTeamsInput`
+- `leaseId` input field added to `RestoreO365MailboxInput`
+- `leaseId` input field added to `RestoreO365TeamsConversationsInput`
+- `leaseId` input field added to `RestoreO365TeamsFilesInput`
+- `isThreatMonitoringEnabled` field added to `SetWorkloadAlertSettingReply`
+- `enableKerberosForSmb` field added to `SmbDomainDetail`
+- `enableKerberosForSmb` input field added to `SmbDomainJoinRequestInput`
+- `enableKerberosForSmb` input field added to `SmbDomainUpdateRequestInput`
+- `leaseId` input field added to `SnappableRestoreConfig`
+- `isIrisdbProtectionEnabled` field added to `StorageArrayDetail`
+- `isIrisdbProtectionEnabled` input field added to `StorageArrayV1DefinitionInput`
+- `isIrisdbProtectionEnabled` input field added to `StorageArrayV1UpdateDefinitionInput`
+- Input field `products` of type [DtaProduct!] with default value [] was added to input object type `SetWorkloadAlertSettingInput`
+- Input field `shouldChooseDefaultsOnMetadataMismatch` of type `Boolean` with default value false was added to input object type `StartInPlaceDataMaskingInput`
+- Field `rscNativeObjectPendingSla` was added to interface SaasAppsOrganization
+- Field `rscPendingObjectPauseAssignment` was added to interface SaasAppsOrganization
+
+## September 21, 2026
+
+### ⚠️ Breaking Changes
+
+*Requests that worked before may now fail. RSC updates automatically, so check whether your integrations use anything listed here.*
+
+??? note "9 enum values removed from enum `ActivityObjectTypeEnum`"
+
+    - `HVM_CLOUD`
+    - `HVM_CLUSTER`
+    - `HVM_DATASTORE`
+    - `HVM_GROUP`
+    - `HVM_HOST`
+    - `HVM_INSTANCE`
+    - `HVM_MANAGER`
+    - `HVM_NETWORK`
+    - `HVM_VIRTUAL_MACHINE`
+
+??? note "9 enum values removed from enum `AuditObjectType`"
+
+    - `HVM_CLOUD`
+    - `HVM_CLUSTER`
+    - `HVM_DATASTORE`
+    - `HVM_GROUP`
+    - `HVM_HOST`
+    - `HVM_INSTANCE`
+    - `HVM_MANAGER`
+    - `HVM_NETWORK`
+    - `HVM_VIRTUAL_MACHINE`
+
+??? note "9 enum values removed from enum `EventObjectType`"
+
+    - `HVM_CLOUD`
+    - `HVM_CLUSTER`
+    - `HVM_DATASTORE`
+    - `HVM_GROUP`
+    - `HVM_HOST`
+    - `HVM_INSTANCE`
+    - `HVM_MANAGER`
+    - `HVM_NETWORK`
+    - `HVM_VIRTUAL_MACHINE`
+
+??? note "9 enum values removed from enum `HierarchyObjectTypeEnum`"
+
+    - `HVM_CLOUD`
+    - `HVM_CLUSTER`
+    - `HVM_DATASTORE`
+    - `HVM_GROUP`
+    - `HVM_HOST`
+    - `HVM_INSTANCE`
+    - `HVM_MANAGER`
+    - `HVM_NETWORK`
+    - `HVM_VIRTUAL_MACHINE`
+
+- `HVM_ROOT` enum value removed from enum `InventorySubHierarchyRootEnum`
+- `dbServiceAccountInfo` field removed from `K8sClusterSummary`
+- `isDbProtectionEnabled` field removed from `K8sClusterSummary`
+??? note "9 enum values removed from enum `ManagedObjectType`"
+
+    - `HVM_CLOUD`
+    - `HVM_CLUSTER`
+    - `HVM_DATASTORE`
+    - `HVM_GROUP`
+    - `HVM_HOST`
+    - `HVM_INSTANCE`
+    - `HVM_MANAGER`
+    - `HVM_NETWORK`
+    - `HVM_VIRTUAL_MACHINE`
+
+- `HVM_VIRTUAL_MACHINE` enum value removed from enum `ObjectTypeEnum`
+- `SCRIPT_REPORT` enum value removed from enum `PolarisReportViewType`
+- `HVM_OBJECT_TYPE` enum value removed from enum `SlaObjectType`
+- `SCRIPT_REPORT_TABLE` enum value removed from enum `TableViewType`
+- `UserNotifications` type removed
+- Field `AzureCosmosNosqlContainer`.cosmosDbDatabaseId changed type from `String`! to `UUID`!
+- Field `AzureCosmosNosqlDatabase`.cosmosDbAccountId changed type from `String`! to `UUID`!
+- Field `GcpCloudAccountProjectForOauth`.missingPermissions changed type from [String!] to [String!]!
+
+### 🗑️ Removed Deprecated Items
+
+*These items were previously marked `@deprecated` and have now been removed.*
+
+- Field `userNotifications` (deprecated) was removed from object type `Query`
+
+### ⚡ May Require Changes
+
+*Your requests still work. Deprecations and shifted defaults to plan around.*
+
+- Argument input: O365SetupKickoffInput added to field `Mutation.o365SetupKickoff`
+- Member PcrGcpImagePullDetails was added to `Union` type PcrImagePullDetails
+- Argument sortBy: BackupWindowsForObjectsSortByField added to field `Query.backupWindowsForObjects`
+- Argument sortOrder: SortOrder added to field `Query.backupWindowsForObjects`
+- Argument before: String added to field `Query.cdmMssqlLogShippingTargets`
+- Argument last: Int added to field `Query.cdmMssqlLogShippingTargets`
+- Argument saasOrgIds: [String!] added to field `Query.dailyViolationsSummary`
+- Argument before: String added to field `Query.exchangeDags`
+- Argument last: Int added to field `Query.exchangeDags`
+- Argument before: String added to field `Query.exchangeDatabases`
+- Argument last: Int added to field `Query.exchangeDatabases`
+- Argument before: String added to field `Query.exchangeLiveMounts`
+- Argument last: Int added to field `Query.exchangeLiveMounts`
+- Argument before: String added to field `Query.exchangeServers`
+- Argument last: Int added to field `Query.exchangeServers`
+- Argument before: String added to field `Query.kubernetesClusters`
+- Argument last: Int added to field `Query.kubernetesClusters`
+- Argument before: String added to field `Query.kubernetesProtectionSets`
+- Argument last: Int added to field `Query.kubernetesProtectionSets`
+- Argument before: String added to field `Query.kubernetesRecoverableClusters`
+- Argument last: Int added to field `Query.kubernetesRecoverableClusters`
+- Argument before: String added to field `Query.mssqlAvailabilityGroupDatabaseVirtualGroups`
+- Argument last: Int added to field `Query.mssqlAvailabilityGroupDatabaseVirtualGroups`
+- Argument before: String added to field `Query.mssqlAvailabilityGroupVirtualGroups`
+- Argument last: Int added to field `Query.mssqlAvailabilityGroupVirtualGroups`
+- Argument before: String added to field `Query.mssqlDatabaseLiveMounts`
+- Argument last: Int added to field `Query.mssqlDatabaseLiveMounts`
+- Argument before: String added to field `Query.mssqlDatabases`
+- Argument last: Int added to field `Query.mssqlDatabases`
+- Argument before: String added to field `Query.mssqlTopLevelDescendants`
+- Argument last: Int added to field `Query.mssqlTopLevelDescendants`
+- Argument before: String added to field `Query.mysqlDatabases`
+- Argument last: Int added to field `Query.mysqlDatabases`
+- Argument before: String added to field `Query.mysqlInstanceLiveMounts`
+- Argument last: Int added to field `Query.mysqlInstanceLiveMounts`
+- Argument before: String added to field `Query.mysqlInstances`
+- Argument last: Int added to field `Query.mysqlInstances`
+- Argument before: String added to field `Query.postgreSQLDatabases`
+- Argument last: Int added to field `Query.postgreSQLDatabases`
+- Argument before: String added to field `Query.postgreSQLDbClusters`
+- Argument last: Int added to field `Query.postgreSQLDbClusters`
+- Argument before: String added to field `Query.postgresDbClusterLiveMounts`
+- Argument last: Int added to field `Query.postgresDbClusterLiveMounts`
+- Argument siteChildId: String added to field `Query.snapshotSharepointDriveSearch`
+- Argument siteChildType: SharePointDescendantType added to field `Query.snapshotSharepointDriveSearch`
+- Argument saasOrgIds: [String!] added to field `Query.violationsCategorySummary`
+- Argument before: String added to field `Query.volumeGroupMounts`
+- Argument last: Int added to field `Query.volumeGroupMounts`
+
+### ✨ Additions
+
+*Purely additive. Nothing you send today stops working. If you switch exhaustively on an enum, add a default case for newly added values.*
+
+??? note "10 enum values added to enum `ActivityObjectTypeEnum`"
+
+    - `AZURE_DEVOPS_PROJECT_ARTIFACTS_FIXED_OBJECT`
+    - `HPE_VME_CLOUD`
+    - `HPE_VME_CLUSTER`
+    - `HPE_VME_DATASTORE`
+    - `HPE_VME_GROUP`
+    - `HPE_VME_HOST`
+    - `HPE_VME_INSTANCE`
+    - `HPE_VME_MANAGER`
+    - `HPE_VME_NETWORK`
+    - `HPE_VME_VIRTUAL_MACHINE`
+
+??? note "10 enum values added to enum `AuditObjectType`"
+
+    - `AZURE_DEVOPS_PROJECT_ARTIFACTS_FIXED_OBJECT`
+    - `HPE_VME_CLOUD`
+    - `HPE_VME_CLUSTER`
+    - `HPE_VME_DATASTORE`
+    - `HPE_VME_GROUP`
+    - `HPE_VME_HOST`
+    - `HPE_VME_INSTANCE`
+    - `HPE_VME_MANAGER`
+    - `HPE_VME_NETWORK`
+    - `HPE_VME_VIRTUAL_MACHINE`
+
+- `VIEW_K8S_DB_CREDENTIALS` enum value added to enum `AuthorizedOperation`
+??? note "10 enum values added to enum `EventObjectType`"
+
+    - `AZURE_DEVOPS_PROJECT_ARTIFACTS_FIXED_OBJECT`
+    - `HPE_VME_CLOUD`
+    - `HPE_VME_CLUSTER`
+    - `HPE_VME_DATASTORE`
+    - `HPE_VME_GROUP`
+    - `HPE_VME_HOST`
+    - `HPE_VME_INSTANCE`
+    - `HPE_VME_MANAGER`
+    - `HPE_VME_NETWORK`
+    - `HPE_VME_VIRTUAL_MACHINE`
+
+- `DYNAMODB_RECOVERY_EXPORT` enum value added to enum `FileTypeEnumType`
+- `SECURITY_GPO_CLEAR_TEXT_PASSWORD` enum value added to enum `FilterType`
+??? note "10 enum values added to enum `HierarchyObjectTypeEnum`"
+
+    - `AZURE_DEVOPS_PROJECT_ARTIFACTS_FIXED_OBJECT`
+    - `HPE_VME_CLOUD`
+    - `HPE_VME_CLUSTER`
+    - `HPE_VME_DATASTORE`
+    - `HPE_VME_GROUP`
+    - `HPE_VME_HOST`
+    - `HPE_VME_INSTANCE`
+    - `HPE_VME_MANAGER`
+    - `HPE_VME_NETWORK`
+    - `HPE_VME_VIRTUAL_MACHINE`
+
+- `AZURE_COSMOS_NOSQL` enum value added to enum `InventoryCard`
+- `HPE_VME_ROOT` enum value added to enum `InventorySubHierarchyRootEnum`
+??? note "10 enum values added to enum `ManagedObjectType`"
+
+    - `AZURE_DEVOPS_PROJECT_ARTIFACTS_FIXED_OBJECT`
+    - `HPE_VME_CLOUD`
+    - `HPE_VME_CLUSTER`
+    - `HPE_VME_DATASTORE`
+    - `HPE_VME_GROUP`
+    - `HPE_VME_HOST`
+    - `HPE_VME_INSTANCE`
+    - `HPE_VME_MANAGER`
+    - `HPE_VME_NETWORK`
+    - `HPE_VME_VIRTUAL_MACHINE`
+
+- `AZURE_DEVOPS_PROJECT_ARTIFACTS_FIXED_OBJECT` enum value added to enum `ObjectTypeEnum`
+- `HPE_VME_VIRTUAL_MACHINE` enum value added to enum `ObjectTypeEnum`
+- `VIEW_K8S_DB_CREDENTIALS` enum value added to enum `Operation`
+- `RUBRIK_AI_REPORT` enum value added to enum `PolarisReportViewType`
+- `AAD_B2B_RECOVERY` enum value added to enum `ProductName`
+- `POWER_PLATFORM` enum value added to enum `ProductName`
+- `INFINIDAT_INFINIBOX` enum value added to enum `S3CompatibleSubType`
+- `GOOGLE_GROUPS` enum value added to enum `SaasAppType`
+- `HPE_VME_OBJECT_TYPE` enum value added to enum `SlaObjectType`
+- `RUBRIK_AI_REPORT_TABLE` enum value added to enum `TableViewType`
+- `APPLICATION_CONFIGURATION` enum value added to enum `TprPolicyScope`
+- `IDENTITY_RESILIENCE_REVERT` enum value added to enum `TprRule`
+- `futureLegalHoldInfo` field added to `ActiveDirectoryDomain`
+- `legallyHeldSnapshotCount` field added to `ActiveDirectoryDomain`
+- `futureLegalHoldInfo` field added to `ActiveDirectoryDomainController`
+- `legallyHeldSnapshotCount` field added to `ActiveDirectoryDomainController`
+- `futureLegalHoldInfo` field added to `AnthropicOrg`
+- `legallyHeldSnapshotCount` field added to `AnthropicOrg`
+- `databaseLogRetentionInfo` field added to `ArchivalSpec`
+- `databaseLogRetentionInfo` input field added to `ArchivalSpecInput`
+- `futureLegalHoldInfo` field added to `AtlassianSite`
+- `legallyHeldSnapshotCount` field added to `AtlassianSite`
+- `futureLegalHoldInfo` field added to `AwsNativeAccount`
+- `legallyHeldSnapshotCount` field added to `AwsNativeAccount`
+- `futureLegalHoldInfo` field added to `AwsNativeConfig`
+- `legallyHeldSnapshotCount` field added to `AwsNativeConfig`
+- `futureLegalHoldInfo` field added to `AwsNativeDynamoDbTable`
+- `legallyHeldSnapshotCount` field added to `AwsNativeDynamoDbTable`
+- `futureLegalHoldInfo` field added to `AwsNativeEbsVolume`
+- `legallyHeldSnapshotCount` field added to `AwsNativeEbsVolume`
+- `futureLegalHoldInfo` field added to `AwsNativeEc2Instance`
+- `legallyHeldSnapshotCount` field added to `AwsNativeEc2Instance`
+- `futureLegalHoldInfo` field added to `AwsNativeRdsInstance`
+- `legallyHeldSnapshotCount` field added to `AwsNativeRdsInstance`
+- `futureLegalHoldInfo` field added to `AwsNativeRegionHierarchyObject`
+- `legallyHeldSnapshotCount` field added to `AwsNativeRegionHierarchyObject`
+- `futureLegalHoldInfo` field added to `AwsNativeS3Bucket`
+- `legallyHeldSnapshotCount` field added to `AwsNativeS3Bucket`
+- `futureLegalHoldInfo` field added to `AzureAdDirectory`
+- `legallyHeldSnapshotCount` field added to `AzureAdDirectory`
+- `futureLegalHoldInfo` field added to `AzureCosmosNosqlAccount`
+- `legallyHeldSnapshotCount` field added to `AzureCosmosNosqlAccount`
+- `futureLegalHoldInfo` field added to `AzureCosmosNosqlContainer`
+- `legallyHeldSnapshotCount` field added to `AzureCosmosNosqlContainer`
+- `futureLegalHoldInfo` field added to `AzureCosmosNosqlDatabase`
+- `legallyHeldSnapshotCount` field added to `AzureCosmosNosqlDatabase`
+- `futureLegalHoldInfo` field added to `AzureDevOpsOrganization`
+- `legallyHeldSnapshotCount` field added to `AzureDevOpsOrganization`
+??? note "3 fields added to `AzureDevOpsProject`"
+
+    - `artifactsFixedObjectId`
+    - `futureLegalHoldInfo`
+    - `legallyHeldSnapshotCount`
+
+- `futureLegalHoldInfo` field added to `AzureDevOpsRepository`
+- `legallyHeldSnapshotCount` field added to `AzureDevOpsRepository`
+- `futureLegalHoldInfo` field added to `AzureNativeManagedDisk`
+- `legallyHeldSnapshotCount` field added to `AzureNativeManagedDisk`
+??? note "3 fields added to `AzureNativeRegionManagedObject`"
+
+    - `azureCosmosNosqlContainerCount`
+    - `futureLegalHoldInfo`
+    - `legallyHeldSnapshotCount`
+
+- `futureLegalHoldInfo` field added to `AzureNativeResourceGroup`
+- `legallyHeldSnapshotCount` field added to `AzureNativeResourceGroup`
+- `futureLegalHoldInfo` field added to `AzureNativeResourceGroupBase`
+- `legallyHeldSnapshotCount` field added to `AzureNativeResourceGroupBase`
+??? note "3 fields added to `AzureNativeSubscription`"
+
+    - `azureCosmosNosqlContainerCount`
+    - `futureLegalHoldInfo`
+    - `legallyHeldSnapshotCount`
+
+- `futureLegalHoldInfo` field added to `AzureNativeVirtualMachine`
+- `legallyHeldSnapshotCount` field added to `AzureNativeVirtualMachine`
+- `futureLegalHoldInfo` field added to `AzurePostgresFlexibleServer`
+- `legallyHeldSnapshotCount` field added to `AzurePostgresFlexibleServer`
+- `futureLegalHoldInfo` field added to `AzureSqlDatabaseDb`
+- `legallyHeldSnapshotCount` field added to `AzureSqlDatabaseDb`
+- `futureLegalHoldInfo` field added to `AzureSqlDatabaseServer`
+- `legallyHeldSnapshotCount` field added to `AzureSqlDatabaseServer`
+- `futureLegalHoldInfo` field added to `AzureSqlManagedInstanceDatabase`
+- `legallyHeldSnapshotCount` field added to `AzureSqlManagedInstanceDatabase`
+- `futureLegalHoldInfo` field added to `AzureSqlManagedInstanceServer`
+- `legallyHeldSnapshotCount` field added to `AzureSqlManagedInstanceServer`
+- `futureLegalHoldInfo` field added to `AzureStorageAccount`
+- `legallyHeldSnapshotCount` field added to `AzureStorageAccount`
+??? note "15 types added"
+
+    - `BackupWindowsForObjectsSortByField`
+    - `CertificateTrustMode`
+    - `FutureLegalHoldInfo`
+    - `GetWorkloadsProtectionDetailsReq`
+    - `GetWorkloadsProtectionDetailsResp`
+    - `IrisdbInstanceAppMetadata`
+    - `IrisdbSnapshotType`
+    - `LastWorkloadRecoveryInfo`
+    - `LegalHoldStateFilterValue`
+    - `O365SetupKickoffInput`
+    - `PcrGcpImagePullDetails`
+    - `PcrGcpImagePullDetailsInput`
+    - `RecoveryPlanStat`
+    - `WorkloadProtectionDetail`
+    - `WorkloadRecoveryCount`
+
+- `irisdbInstanceAppMetadata` field added to `CdmSnapshot`
+- `futureLegalHoldInfo` field added to `CloudDirectNasBucket`
+- `legallyHeldSnapshotCount` field added to `CloudDirectNasBucket`
+- `futureLegalHoldInfo` field added to `CloudDirectNasExport`
+- `legallyHeldSnapshotCount` field added to `CloudDirectNasExport`
+- `futureLegalHoldInfo` field added to `CloudDirectNasNamespace`
+- `legallyHeldSnapshotCount` field added to `CloudDirectNasNamespace`
+- `futureLegalHoldInfo` field added to `CloudDirectNasShare`
+- `legallyHeldSnapshotCount` field added to `CloudDirectNasShare`
+- `futureLegalHoldInfo` field added to `CloudDirectNasSystem`
+- `legallyHeldSnapshotCount` field added to `CloudDirectNasSystem`
+- `futureLegalHoldInfo` field added to `CloudNativeTagRuleHierarchy`
+- `legallyHeldSnapshotCount` field added to `CloudNativeTagRuleHierarchy`
+- `certificateTrustMode` input field added to `CreateS3CompatibleTargetInput`
+- `tlsCertificateId` input field added to `CreateS3CompatibleTargetInput`
+- `futureLegalHoldInfo` field added to `Db2Database`
+- `legallyHeldSnapshotCount` field added to `Db2Database`
+- `futureLegalHoldInfo` field added to `Db2Instance`
+- `legallyHeldSnapshotCount` field added to `Db2Instance`
+- `futureLegalHoldInfo` field added to `Dynamics365Organization`
+- `legallyHeldSnapshotCount` field added to `Dynamics365Organization`
+- `accelerateToFederatedDomain` field added to `EntraIdHomeRealmDiscoveryPolicy`
+- `preferredDomain` field added to `EntraIdHomeRealmDiscoveryPolicy`
+- `futureLegalHoldInfo` field added to `ExchangeDag`
+- `legallyHeldSnapshotCount` field added to `ExchangeDag`
+- `futureLegalHoldInfo` field added to `ExchangeDatabase`
+- `legallyHeldSnapshotCount` field added to `ExchangeDatabase`
+- `futureLegalHoldInfo` field added to `ExchangeHost`
+- `legallyHeldSnapshotCount` field added to `ExchangeHost`
+- `futureLegalHoldInfo` field added to `ExchangeServer`
+- `legallyHeldSnapshotCount` field added to `ExchangeServer`
+- `futureLegalHoldInfo` field added to `FailoverClusterApp`
+- `legallyHeldSnapshotCount` field added to `FailoverClusterApp`
+- `futureLegalHoldInfo` field added to `FilesetTemplate`
+- `legallyHeldSnapshotCount` field added to `FilesetTemplate`
+- `futureLegalHoldInfo` field added to `FusionComputeCluster`
+- `legallyHeldSnapshotCount` field added to `FusionComputeCluster`
+- `futureLegalHoldInfo` field added to `FusionComputeDatastore`
+- `legallyHeldSnapshotCount` field added to `FusionComputeDatastore`
+- `futureLegalHoldInfo` field added to `FusionComputeHost`
+- `legallyHeldSnapshotCount` field added to `FusionComputeHost`
+- `futureLegalHoldInfo` field added to `FusionComputeNetwork`
+- `legallyHeldSnapshotCount` field added to `FusionComputeNetwork`
+- `futureLegalHoldInfo` field added to `FusionComputeSite`
+- `legallyHeldSnapshotCount` field added to `FusionComputeSite`
+- `futureLegalHoldInfo` field added to `FusionComputeVirtualMachine`
+- `legallyHeldSnapshotCount` field added to `FusionComputeVirtualMachine`
+- `futureLegalHoldInfo` field added to `FusionComputeVrm`
+- `legallyHeldSnapshotCount` field added to `FusionComputeVrm`
+- `futureLegalHoldInfo` field added to `GcpAlloyDbCluster`
+- `legallyHeldSnapshotCount` field added to `GcpAlloyDbCluster`
+- `futureLegalHoldInfo` field added to `GcpBigQueryDataset`
+- `legallyHeldSnapshotCount` field added to `GcpBigQueryDataset`
+- `futureLegalHoldInfo` field added to `GcpCloudSqlInstance`
+- `legallyHeldSnapshotCount` field added to `GcpCloudSqlInstance`
+- `futureLegalHoldInfo` field added to `GcpNativeDisk`
+- `legallyHeldSnapshotCount` field added to `GcpNativeDisk`
+- `futureLegalHoldInfo` field added to `GcpNativeGceInstance`
+- `legallyHeldSnapshotCount` field added to `GcpNativeGceInstance`
+- `futureLegalHoldInfo` field added to `GcpNativeProject`
+- `legallyHeldSnapshotCount` field added to `GcpNativeProject`
+- `futureLegalHoldInfo` field added to `GithubOrganization`
+- `legallyHeldSnapshotCount` field added to `GithubOrganization`
+- `futureLegalHoldInfo` field added to `GithubRepository`
+- `legallyHeldSnapshotCount` field added to `GithubRepository`
+- `futureLegalHoldInfo` field added to `GlueIcebergCatalog`
+- `legallyHeldSnapshotCount` field added to `GlueIcebergCatalog`
+- `futureLegalHoldInfo` field added to `GlueIcebergDatabase`
+- `legallyHeldSnapshotCount` field added to `GlueIcebergDatabase`
+- `futureLegalHoldInfo` field added to `GlueIcebergTable`
+- `legallyHeldSnapshotCount` field added to `GlueIcebergTable`
+- `futureLegalHoldInfo` field added to `GoogleWorkspaceOrg`
+- `legallyHeldSnapshotCount` field added to `GoogleWorkspaceOrg`
+- `futureLegalHoldInfo` field added to `HostFailoverCluster`
+- `legallyHeldSnapshotCount` field added to `HostFailoverCluster`
+- `futureLegalHoldInfo` field added to `HostShare`
+- `legallyHeldSnapshotCount` field added to `HostShare`
+- `futureLegalHoldInfo` field added to `HyperVCluster`
+- `legallyHeldSnapshotCount` field added to `HyperVCluster`
+- `futureLegalHoldInfo` field added to `HyperVSCVMM`
+- `legallyHeldSnapshotCount` field added to `HyperVSCVMM`
+- `futureLegalHoldInfo` field added to `HyperVVirtualMachine`
+- `legallyHeldSnapshotCount` field added to `HyperVVirtualMachine`
+- `vmGeneration` field added to `HypervAppMetadata`
+- `futureLegalHoldInfo` field added to `HypervServer`
+- `legallyHeldSnapshotCount` field added to `HypervServer`
+- `futureLegalHoldInfo` field added to `HypervisorEnvironmentV1`
+- `legallyHeldSnapshotCount` field added to `HypervisorEnvironmentV1`
+- `futureLegalHoldInfo` field added to `HypervisorVirtualMachineV1`
+- `legallyHeldSnapshotCount` field added to `HypervisorVirtualMachineV1`
+- `futureLegalHoldInfo` field added to `K8sCluster`
+- `legallyHeldSnapshotCount` field added to `K8sCluster`
+- `futureLegalHoldInfo` field added to `K8sNamespace`
+- `legallyHeldSnapshotCount` field added to `K8sNamespace`
+- `futureLegalHoldInfo` field added to `KubernetesCluster`
+- `legallyHeldSnapshotCount` field added to `KubernetesCluster`
+- `futureLegalHoldInfo` field added to `KubernetesLabel`
+- `legallyHeldSnapshotCount` field added to `KubernetesLabel`
+- `futureLegalHoldInfo` field added to `KubernetesNamespaceType`
+- `legallyHeldSnapshotCount` field added to `KubernetesNamespaceType`
+- `futureLegalHoldInfo` field added to `KubernetesProtectionSet`
+- `legallyHeldSnapshotCount` field added to `KubernetesProtectionSet`
+- `futureLegalHoldInfo` field added to `KubernetesVirtualMachine`
+- `legallyHeldSnapshotCount` field added to `KubernetesVirtualMachine`
+- `futureLegalHoldInfo` field added to `LegalHoldSnappableDetail`
+- `futureLegalHoldInfo` field added to `LinuxFileset`
+- `legallyHeldSnapshotCount` field added to `LinuxFileset`
+- `futureLegalHoldInfo` field added to `M365BackupStorageGroup`
+- `legallyHeldSnapshotCount` field added to `M365BackupStorageGroup`
+- `futureLegalHoldInfo` field added to `M365BackupStorageMailbox`
+- `legallyHeldSnapshotCount` field added to `M365BackupStorageMailbox`
+- `futureLegalHoldInfo` field added to `M365BackupStorageOnedrive`
+- `legallyHeldSnapshotCount` field added to `M365BackupStorageOnedrive`
+- `futureLegalHoldInfo` field added to `M365BackupStorageOrg`
+- `legallyHeldSnapshotCount` field added to `M365BackupStorageOrg`
+- `futureLegalHoldInfo` field added to `M365BackupStorageSite`
+- `legallyHeldSnapshotCount` field added to `M365BackupStorageSite`
+- `futureLegalHoldInfo` field added to `ManagedVolume`
+- `legallyHeldSnapshotCount` field added to `ManagedVolume`
+- `futureLegalHoldInfo` field added to `ManagedVolumeMount`
+- `legallyHeldSnapshotCount` field added to `ManagedVolumeMount`
+- `futureLegalHoldInfo` field added to `MongoCollection`
+- `legallyHeldSnapshotCount` field added to `MongoCollection`
+- `futureLegalHoldInfo` field added to `MongoCollectionSet`
+- `legallyHeldSnapshotCount` field added to `MongoCollectionSet`
+- `futureLegalHoldInfo` field added to `MongoDatabase`
+- `legallyHeldSnapshotCount` field added to `MongoDatabase`
+- `futureLegalHoldInfo` field added to `MongoSource`
+- `legallyHeldSnapshotCount` field added to `MongoSource`
+- `futureLegalHoldInfo` field added to `MssqlAvailabilityGroup`
+- `legallyHeldSnapshotCount` field added to `MssqlAvailabilityGroup`
+- `futureLegalHoldInfo` field added to `MssqlDatabase`
+- `legallyHeldSnapshotCount` field added to `MssqlDatabase`
+- `futureLegalHoldInfo` field added to `MssqlHost`
+- `legallyHeldSnapshotCount` field added to `MssqlHost`
+- `futureLegalHoldInfo` field added to `MssqlInstance`
+- `legallyHeldSnapshotCount` field added to `MssqlInstance`
+- `futureLegalHoldInfo` field added to `MysqldbDatabase`
+- `legallyHeldSnapshotCount` field added to `MysqldbDatabase`
+- `futureLegalHoldInfo` field added to `MysqldbInstance`
+- `legallyHeldSnapshotCount` field added to `MysqldbInstance`
+- `futureLegalHoldInfo` field added to `NasFileset`
+- `legallyHeldSnapshotCount` field added to `NasFileset`
+- `futureLegalHoldInfo` field added to `NasNamespace`
+- `legallyHeldSnapshotCount` field added to `NasNamespace`
+- `futureLegalHoldInfo` field added to `NasShare`
+- `legallyHeldSnapshotCount` field added to `NasShare`
+- `futureLegalHoldInfo` field added to `NasSystem`
+- `legallyHeldSnapshotCount` field added to `NasSystem`
+- `futureLegalHoldInfo` field added to `NasVolume`
+- `legallyHeldSnapshotCount` field added to `NasVolume`
+- `futureLegalHoldInfo` field added to `NutanixCategory`
+- `legallyHeldSnapshotCount` field added to `NutanixCategory`
+- `futureLegalHoldInfo` field added to `NutanixCategoryValue`
+- `legallyHeldSnapshotCount` field added to `NutanixCategoryValue`
+- `futureLegalHoldInfo` field added to `NutanixCluster`
+- `legallyHeldSnapshotCount` field added to `NutanixCluster`
+- `futureLegalHoldInfo` field added to `NutanixPrismCentral`
+- `legallyHeldSnapshotCount` field added to `NutanixPrismCentral`
+- `futureLegalHoldInfo` field added to `NutanixVm`
+- `legallyHeldSnapshotCount` field added to `NutanixVm`
+- `accessMode` field added to `O365App`
+- `futureLegalHoldInfo` field added to `O365Calendar`
+- `legallyHeldSnapshotCount` field added to `O365Calendar`
+- `futureLegalHoldInfo` field added to `O365Group`
+- `legallyHeldSnapshotCount` field added to `O365Group`
+- `futureLegalHoldInfo` field added to `O365Mailbox`
+- `legallyHeldSnapshotCount` field added to `O365Mailbox`
+- `futureLegalHoldInfo` field added to `O365Onedrive`
+- `legallyHeldSnapshotCount` field added to `O365Onedrive`
+- `futureLegalHoldInfo` field added to `O365Org`
+- `legallyHeldSnapshotCount` field added to `O365Org`
+- `futureLegalHoldInfo` field added to `O365SharepointDrive`
+- `legallyHeldSnapshotCount` field added to `O365SharepointDrive`
+- `futureLegalHoldInfo` field added to `O365SharepointList`
+- `legallyHeldSnapshotCount` field added to `O365SharepointList`
+- `futureLegalHoldInfo` field added to `O365Site`
+- `legallyHeldSnapshotCount` field added to `O365Site`
+- `futureLegalHoldInfo` field added to `O365Teams`
+- `legallyHeldSnapshotCount` field added to `O365Teams`
+- `futureLegalHoldInfo` field added to `O365User`
+- `legallyHeldSnapshotCount` field added to `O365User`
+- `futureLegalHoldInfo` field added to `OlvmComputeClusterV1`
+- `legallyHeldSnapshotCount` field added to `OlvmComputeClusterV1`
+- `futureLegalHoldInfo` field added to `OlvmDatacenterV1`
+- `legallyHeldSnapshotCount` field added to `OlvmDatacenterV1`
+- `futureLegalHoldInfo` field added to `OlvmManagerV1`
+- `legallyHeldSnapshotCount` field added to `OlvmManagerV1`
+- `futureLegalHoldInfo` field added to `OlvmTagV1`
+- `legallyHeldSnapshotCount` field added to `OlvmTagV1`
+- `futureLegalHoldInfo` field added to `OlvmVirtualMachineV1`
+- `legallyHeldSnapshotCount` field added to `OlvmVirtualMachineV1`
+- `futureLegalHoldInfo` field added to `OpenstackAvailabilityZone`
+- `legallyHeldSnapshotCount` field added to `OpenstackAvailabilityZone`
+- `futureLegalHoldInfo` field added to `OpenstackDomain`
+- `legallyHeldSnapshotCount` field added to `OpenstackDomain`
+- `futureLegalHoldInfo` field added to `OpenstackEnvironment`
+- `legallyHeldSnapshotCount` field added to `OpenstackEnvironment`
+- `futureLegalHoldInfo` field added to `OpenstackHost`
+- `legallyHeldSnapshotCount` field added to `OpenstackHost`
+- `futureLegalHoldInfo` field added to `OpenstackImage`
+- `legallyHeldSnapshotCount` field added to `OpenstackImage`
+- `futureLegalHoldInfo` field added to `OpenstackProject`
+- `legallyHeldSnapshotCount` field added to `OpenstackProject`
+- `futureLegalHoldInfo` field added to `OpenstackRegion`
+- `legallyHeldSnapshotCount` field added to `OpenstackRegion`
+- `futureLegalHoldInfo` field added to `OpenstackTag`
+- `legallyHeldSnapshotCount` field added to `OpenstackTag`
+- `futureLegalHoldInfo` field added to `OpenstackVirtualMachine`
+- `legallyHeldSnapshotCount` field added to `OpenstackVirtualMachine`
+- `futureLegalHoldInfo` field added to `OracleDataGuardGroup`
+- `legallyHeldSnapshotCount` field added to `OracleDataGuardGroup`
+- `futureLegalHoldInfo` field added to `OracleDatabase`
+- `legallyHeldSnapshotCount` field added to `OracleDatabase`
+- `futureLegalHoldInfo` field added to `OracleHost`
+- `legallyHeldSnapshotCount` field added to `OracleHost`
+- `futureLegalHoldInfo` field added to `OracleRac`
+- `legallyHeldSnapshotCount` field added to `OracleRac`
+- `futureLegalHoldInfo` field added to `PhysicalHost`
+- `legallyHeldSnapshotCount` field added to `PhysicalHost`
+- `futureLegalHoldInfo` field added to `PostgreSQLDatabase`
+- `legallyHeldSnapshotCount` field added to `PostgreSQLDatabase`
+- `futureLegalHoldInfo` field added to `PostgreSQLDbCluster`
+- `legallyHeldSnapshotCount` field added to `PostgreSQLDbCluster`
+- `futureLegalHoldInfo` field added to `PowerPlatformEnvironment`
+- `legallyHeldSnapshotCount` field added to `PowerPlatformEnvironment`
+- `futureLegalHoldInfo` field added to `ProxmoxClusterV1`
+- `legallyHeldSnapshotCount` field added to `ProxmoxClusterV1`
+- `futureLegalHoldInfo` field added to `ProxmoxEnvironmentV1`
+- `legallyHeldSnapshotCount` field added to `ProxmoxEnvironmentV1`
+- `futureLegalHoldInfo` field added to `ProxmoxNodeV1`
+- `legallyHeldSnapshotCount` field added to `ProxmoxNodeV1`
+- `futureLegalHoldInfo` field added to `ProxmoxVirtualMachineV1`
+- `legallyHeldSnapshotCount` field added to `ProxmoxVirtualMachineV1`
+- `futureLegalHoldInfo` field added to `PureStorageArrayV1`
+- `legallyHeldSnapshotCount` field added to `PureStorageArrayV1`
+- `futureLegalHoldInfo` field added to `PureStorageProtectionGroupV1`
+- `legallyHeldSnapshotCount` field added to `PureStorageProtectionGroupV1`
+- `futureLegalHoldInfo` field added to `PureStorageVolumeV1`
+- `legallyHeldSnapshotCount` field added to `PureStorageVolumeV1`
+- `k8sClusterWithDetails` field added to `Query`
+- `workloadsProtectionDetails` field added to `Query`
+- `isPreSeedEnabled` field added to `RecoveryPlanBasicInfo`
+- `certificateTrustMode` field added to `RubrikManagedS3CompatibleTarget`
+- `tlsCertificateId` field added to `RubrikManagedS3CompatibleTarget`
+- `futureLegalHoldInfo` field added to `S3TablesIcebergCatalog`
+- `legallyHeldSnapshotCount` field added to `S3TablesIcebergCatalog`
+- `futureLegalHoldInfo` field added to `S3TablesIcebergNamespace`
+- `legallyHeldSnapshotCount` field added to `S3TablesIcebergNamespace`
+- `futureLegalHoldInfo` field added to `S3TablesIcebergTable`
+- `legallyHeldSnapshotCount` field added to `S3TablesIcebergTable`
+- `futureLegalHoldInfo` field added to `SalesforceObject`
+- `legallyHeldSnapshotCount` field added to `SalesforceObject`
+- `futureLegalHoldInfo` field added to `SalesforceOrganization`
+- `legallyHeldSnapshotCount` field added to `SalesforceOrganization`
+- `futureLegalHoldInfo` field added to `SapHanaDatabase`
+- `legallyHeldSnapshotCount` field added to `SapHanaDatabase`
+- `futureLegalHoldInfo` field added to `SapHanaSystem`
+- `legallyHeldSnapshotCount` field added to `SapHanaSystem`
+- `pcrGcpImagePullDetails` input field added to `SetPrivateContainerRegistryInput`
+- `futureLegalHoldInfo` field added to `ShareFileset`
+- `legallyHeldSnapshotCount` field added to `ShareFileset`
+- `backupCopyType` input field added to `SnappablesWithLegalHoldSnapshotsInput`
+- `certificateTrustMode` input field added to `UpdateS3CompatibleTargetInput`
+- `tlsCertificateId` input field added to `UpdateS3CompatibleTargetInput`
+- `futureLegalHoldInfo` field added to `Vcd`
+- `legallyHeldSnapshotCount` field added to `Vcd`
+- `futureLegalHoldInfo` field added to `VcdOrg`
+- `legallyHeldSnapshotCount` field added to `VcdOrg`
+- `futureLegalHoldInfo` field added to `VcdOrgVdc`
+- `legallyHeldSnapshotCount` field added to `VcdOrgVdc`
+- `futureLegalHoldInfo` field added to `VcdVapp`
+- `legallyHeldSnapshotCount` field added to `VcdVapp`
+- `futureLegalHoldInfo` field added to `VcdVimServer`
+- `legallyHeldSnapshotCount` field added to `VcdVimServer`
+- `futureLegalHoldInfo` field added to `VolumeGroup`
+- `legallyHeldSnapshotCount` field added to `VolumeGroup`
+- `futureLegalHoldInfo` field added to `VsphereComputeCluster`
+- `legallyHeldSnapshotCount` field added to `VsphereComputeCluster`
+- `futureLegalHoldInfo` field added to `VsphereDatacenter`
+- `legallyHeldSnapshotCount` field added to `VsphereDatacenter`
+- `futureLegalHoldInfo` field added to `VsphereDatastore`
+- `legallyHeldSnapshotCount` field added to `VsphereDatastore`
+- `futureLegalHoldInfo` field added to `VsphereDatastoreCluster`
+- `legallyHeldSnapshotCount` field added to `VsphereDatastoreCluster`
+- `futureLegalHoldInfo` field added to `VsphereFolder`
+- `legallyHeldSnapshotCount` field added to `VsphereFolder`
+- `futureLegalHoldInfo` field added to `VsphereHost`
+- `legallyHeldSnapshotCount` field added to `VsphereHost`
+- `futureLegalHoldInfo` field added to `VsphereNetwork`
+- `legallyHeldSnapshotCount` field added to `VsphereNetwork`
+- `futureLegalHoldInfo` field added to `VsphereResourcePool`
+- `legallyHeldSnapshotCount` field added to `VsphereResourcePool`
+- `futureLegalHoldInfo` field added to `VsphereTag`
+- `legallyHeldSnapshotCount` field added to `VsphereTag`
+- `futureLegalHoldInfo` field added to `VsphereTagCategory`
+- `legallyHeldSnapshotCount` field added to `VsphereTagCategory`
+- `futureLegalHoldInfo` field added to `VsphereVcenter`
+- `legallyHeldSnapshotCount` field added to `VsphereVcenter`
+- `futureLegalHoldInfo` field added to `VsphereVm`
+- `legallyHeldSnapshotCount` field added to `VsphereVm`
+- `futureLegalHoldInfo` field added to `WindowsCluster`
+- `legallyHeldSnapshotCount` field added to `WindowsCluster`
+- `futureLegalHoldInfo` field added to `WindowsFileset`
+- `legallyHeldSnapshotCount` field added to `WindowsFileset`
+- `jobProgressPercentage` field added to `WorkloadRecoveryInfoV2`
+- Field `futureLegalHoldInfo` was added to interface ActiveDirectoryDomainDescendantType
+- Field `legallyHeldSnapshotCount` was added to interface ActiveDirectoryDomainDescendantType
+- Field `futureLegalHoldInfo` was added to interface ActiveDirectoryDomainPhysicalChildType
+- Field `legallyHeldSnapshotCount` was added to interface ActiveDirectoryDomainPhysicalChildType
+- Field `futureLegalHoldInfo` was added to interface AwsNativeAccountDescendantType
+- Field `legallyHeldSnapshotCount` was added to interface AwsNativeAccountDescendantType
+- Field `futureLegalHoldInfo` was added to interface AwsNativeAccountLogicalChildType
+- Field `legallyHeldSnapshotCount` was added to interface AwsNativeAccountLogicalChildType
+- Field `futureLegalHoldInfo` was added to interface AwsNativeHierarchyObject
+- Field `legallyHeldSnapshotCount` was added to interface AwsNativeHierarchyObject
+- Field `futureLegalHoldInfo` was added to interface AzureNativeHierarchyObjectType
+- Field `legallyHeldSnapshotCount` was added to interface AzureNativeHierarchyObjectType
+- Field `futureLegalHoldInfo` was added to interface CdmHierarchyObject
+- Field `legallyHeldSnapshotCount` was added to interface CdmHierarchyObject
+- Field `futureLegalHoldInfo` was added to interface CdmHierarchySnappableNew
+- Field `legallyHeldSnapshotCount` was added to interface CdmHierarchySnappableNew
+- Field `futureLegalHoldInfo` was added to interface CloudDirectHierarchyObject
+- Field `legallyHeldSnapshotCount` was added to interface CloudDirectHierarchyObject
+- Field `futureLegalHoldInfo` was added to interface CloudDirectHierarchyWorkload
+- Field `legallyHeldSnapshotCount` was added to interface CloudDirectHierarchyWorkload
+- Field `futureLegalHoldInfo` was added to interface CloudDirectNasNamespaceDescendantType
+- Field `legallyHeldSnapshotCount` was added to interface CloudDirectNasNamespaceDescendantType
+- Field `futureLegalHoldInfo` was added to interface CloudDirectNasNamespaceLogicalChildType
+- Field `legallyHeldSnapshotCount` was added to interface CloudDirectNasNamespaceLogicalChildType
+- Field `futureLegalHoldInfo` was added to interface CloudDirectNasSystemDescendantType
+- Field `legallyHeldSnapshotCount` was added to interface CloudDirectNasSystemDescendantType
+- Field `futureLegalHoldInfo` was added to interface CloudDirectNasSystemLogicalChildType
+- Field `legallyHeldSnapshotCount` was added to interface CloudDirectNasSystemLogicalChildType
+- Field `futureLegalHoldInfo` was added to interface Db2InstanceDescendantType
+- Field `legallyHeldSnapshotCount` was added to interface Db2InstanceDescendantType
+- Field `futureLegalHoldInfo` was added to interface Db2InstancePhysicalChildType
+- Field `legallyHeldSnapshotCount` was added to interface Db2InstancePhysicalChildType
+- Field `futureLegalHoldInfo` was added to interface ExchangeDagDescendantType
+- Field `legallyHeldSnapshotCount` was added to interface ExchangeDagDescendantType
+- Field `futureLegalHoldInfo` was added to interface ExchangeHostDescendantType
+- Field `legallyHeldSnapshotCount` was added to interface ExchangeHostDescendantType
+- Field `futureLegalHoldInfo` was added to interface ExchangeHostPhysicalChildType
+- Field `legallyHeldSnapshotCount` was added to interface ExchangeHostPhysicalChildType
+- Field `futureLegalHoldInfo` was added to interface ExchangeServerDescendantType
+- Field `legallyHeldSnapshotCount` was added to interface ExchangeServerDescendantType
+- Field `futureLegalHoldInfo` was added to interface FailoverClusterAppDescendantType
+- Field `legallyHeldSnapshotCount` was added to interface FailoverClusterAppDescendantType
+- Field `futureLegalHoldInfo` was added to interface FailoverClusterAppPhysicalChildType
+- Field `legallyHeldSnapshotCount` was added to interface FailoverClusterAppPhysicalChildType
+- Field `futureLegalHoldInfo` was added to interface FailoverClusterTopLevelDescendantType
+- Field `legallyHeldSnapshotCount` was added to interface FailoverClusterTopLevelDescendantType
+- Field `futureLegalHoldInfo` was added to interface FilesetTemplateDescendantType
+- Field `legallyHeldSnapshotCount` was added to interface FilesetTemplateDescendantType
+- Field `futureLegalHoldInfo` was added to interface FilesetTemplatePhysicalChildType
+- Field `legallyHeldSnapshotCount` was added to interface FilesetTemplatePhysicalChildType
+- Field `futureLegalHoldInfo` was added to interface FusionComputeClusterDescendant
+- Field `legallyHeldSnapshotCount` was added to interface FusionComputeClusterDescendant
+- Field `futureLegalHoldInfo` was added to interface FusionComputeClusterPhysicalChildType
+- Field `legallyHeldSnapshotCount` was added to interface FusionComputeClusterPhysicalChildType
+- Field `futureLegalHoldInfo` was added to interface FusionComputeHostDescendant
+- Field `legallyHeldSnapshotCount` was added to interface FusionComputeHostDescendant
+- Field `futureLegalHoldInfo` was added to interface FusionComputeHostPhysicalChildType
+- Field `legallyHeldSnapshotCount` was added to interface FusionComputeHostPhysicalChildType
+- Field `futureLegalHoldInfo` was added to interface FusionComputeSiteDescendant
+- Field `legallyHeldSnapshotCount` was added to interface FusionComputeSiteDescendant
+- Field `futureLegalHoldInfo` was added to interface FusionComputeSitePhysicalChildType
+- Field `legallyHeldSnapshotCount` was added to interface FusionComputeSitePhysicalChildType
+- Field `futureLegalHoldInfo` was added to interface FusionComputeVrmDescendant
+- Field `legallyHeldSnapshotCount` was added to interface FusionComputeVrmDescendant
+- Field `futureLegalHoldInfo` was added to interface FusionComputeVrmPhysicalChildType
+- Field `legallyHeldSnapshotCount` was added to interface FusionComputeVrmPhysicalChildType
+- Field `futureLegalHoldInfo` was added to interface GcpNativeHierarchyObject
+- Field `legallyHeldSnapshotCount` was added to interface GcpNativeHierarchyObject
+- Field `futureLegalHoldInfo` was added to interface GcpNativeProjectDescendantType
+- Field `legallyHeldSnapshotCount` was added to interface GcpNativeProjectDescendantType
+- Field `futureLegalHoldInfo` was added to interface GcpNativeProjectLogicalChildType
+- Field `legallyHeldSnapshotCount` was added to interface GcpNativeProjectLogicalChildType
+- Field `futureLegalHoldInfo` was added to interface HierarchyObject
+- Field `legallyHeldSnapshotCount` was added to interface HierarchyObject
+- Field `futureLegalHoldInfo` was added to interface HierarchySnappable
+- Field `legallyHeldSnapshotCount` was added to interface HierarchySnappable
+- Field `futureLegalHoldInfo` was added to interface HostFailoverClusterDescendantType
+- Field `legallyHeldSnapshotCount` was added to interface HostFailoverClusterDescendantType
+- Field `futureLegalHoldInfo` was added to interface HostFailoverClusterPhysicalChildType
+- Field `legallyHeldSnapshotCount` was added to interface HostFailoverClusterPhysicalChildType
+- Field `futureLegalHoldInfo` was added to interface HostShareDescendantType
+- Field `legallyHeldSnapshotCount` was added to interface HostShareDescendantType
+- Field `futureLegalHoldInfo` was added to interface HostSharePhysicalChildType
+- Field `legallyHeldSnapshotCount` was added to interface HostSharePhysicalChildType
+- Field `futureLegalHoldInfo` was added to interface HyperVClusterDescendantType
+- Field `legallyHeldSnapshotCount` was added to interface HyperVClusterDescendantType
+- Field `futureLegalHoldInfo` was added to interface HyperVClusterLogicalChildType
+- Field `legallyHeldSnapshotCount` was added to interface HyperVClusterLogicalChildType
+- Field `futureLegalHoldInfo` was added to interface HyperVSCVMMDescendantType
+- Field `legallyHeldSnapshotCount` was added to interface HyperVSCVMMDescendantType
+- Field `futureLegalHoldInfo` was added to interface HyperVSCVMMLogicalChildType
+- Field `legallyHeldSnapshotCount` was added to interface HyperVSCVMMLogicalChildType
+- Field `futureLegalHoldInfo` was added to interface HypervServerDescendantType
+- Field `legallyHeldSnapshotCount` was added to interface HypervServerDescendantType
+- Field `futureLegalHoldInfo` was added to interface HypervServerLogicalChildType
+- Field `legallyHeldSnapshotCount` was added to interface HypervServerLogicalChildType
+- Field `futureLegalHoldInfo` was added to interface HypervTopLevelDescendantType
+- Field `legallyHeldSnapshotCount` was added to interface HypervTopLevelDescendantType
+- Field `futureLegalHoldInfo` was added to interface K8sClusterDescendant
+- Field `legallyHeldSnapshotCount` was added to interface K8sClusterDescendant
+- Field `futureLegalHoldInfo` was added to interface KosmosHierarchyObjectType
+- Field `legallyHeldSnapshotCount` was added to interface KosmosHierarchyObjectType
+- Field `futureLegalHoldInfo` was added to interface KosmosLeafHierarchyObjectType
+- Field `legallyHeldSnapshotCount` was added to interface KosmosLeafHierarchyObjectType
+- Field `futureLegalHoldInfo` was added to interface KosmosParentHierarchyObjectDescendantType
+- Field `legallyHeldSnapshotCount` was added to interface KosmosParentHierarchyObjectDescendantType
+- Field `futureLegalHoldInfo` was added to interface KosmosParentHierarchyObjectPhysicalChildType
+- Field `legallyHeldSnapshotCount` was added to interface KosmosParentHierarchyObjectPhysicalChildType
+- Field `futureLegalHoldInfo` was added to interface KosmosParentHierarchyObjectType
+- Field `legallyHeldSnapshotCount` was added to interface KosmosParentHierarchyObjectType
+- Field `futureLegalHoldInfo` was added to interface KosmosSnappableHierarchyObjectType
+- Field `legallyHeldSnapshotCount` was added to interface KosmosSnappableHierarchyObjectType
+- Field `futureLegalHoldInfo` was added to interface KubernetesClusterDescendant
+- Field `legallyHeldSnapshotCount` was added to interface KubernetesClusterDescendant
+- Field `futureLegalHoldInfo` was added to interface KubernetesLabelDescendant
+- Field `legallyHeldSnapshotCount` was added to interface KubernetesLabelDescendant
+- Field `futureLegalHoldInfo` was added to interface KubernetesNamespaceDescendant
+- Field `legallyHeldSnapshotCount` was added to interface KubernetesNamespaceDescendant
+- Field `futureLegalHoldInfo` was added to interface ManagedVolumeDescendantType
+- Field `legallyHeldSnapshotCount` was added to interface ManagedVolumeDescendantType
+- Field `futureLegalHoldInfo` was added to interface ManagedVolumePhysicalChildType
+- Field `legallyHeldSnapshotCount` was added to interface ManagedVolumePhysicalChildType
+- Field `futureLegalHoldInfo` was added to interface MicrosoftGroup
+- Field `legallyHeldSnapshotCount` was added to interface MicrosoftGroup
+- Field `futureLegalHoldInfo` was added to interface MicrosoftMailbox
+- Field `legallyHeldSnapshotCount` was added to interface MicrosoftMailbox
+- Field `futureLegalHoldInfo` was added to interface MicrosoftOnedrive
+- Field `legallyHeldSnapshotCount` was added to interface MicrosoftOnedrive
+- Field `futureLegalHoldInfo` was added to interface MicrosoftOrg
+- Field `legallyHeldSnapshotCount` was added to interface MicrosoftOrg
+- Field `futureLegalHoldInfo` was added to interface MicrosoftSite
+- Field `legallyHeldSnapshotCount` was added to interface MicrosoftSite
+- Field `futureLegalHoldInfo` was added to interface MongoCollectionSetDescendantType
+- Field `legallyHeldSnapshotCount` was added to interface MongoCollectionSetDescendantType
+- Field `futureLegalHoldInfo` was added to interface MongoCollectionSetPhysicalChildType
+- Field `legallyHeldSnapshotCount` was added to interface MongoCollectionSetPhysicalChildType
+- Field `futureLegalHoldInfo` was added to interface MongoDatabaseDescendantType
+- Field `legallyHeldSnapshotCount` was added to interface MongoDatabaseDescendantType
+- Field `futureLegalHoldInfo` was added to interface MongoDatabasePhysicalChildType
+- Field `legallyHeldSnapshotCount` was added to interface MongoDatabasePhysicalChildType
+- Field `futureLegalHoldInfo` was added to interface MongoSourceDescendantType
+- Field `legallyHeldSnapshotCount` was added to interface MongoSourceDescendantType
+- Field `futureLegalHoldInfo` was added to interface MongoSourcePhysicalChildType
+- Field `legallyHeldSnapshotCount` was added to interface MongoSourcePhysicalChildType
+- Field `futureLegalHoldInfo` was added to interface MssqlAvailabilityGroupDescendantType
+- Field `legallyHeldSnapshotCount` was added to interface MssqlAvailabilityGroupDescendantType
+- Field `futureLegalHoldInfo` was added to interface MssqlAvailabilityGroupLogicalChildType
+- Field `legallyHeldSnapshotCount` was added to interface MssqlAvailabilityGroupLogicalChildType
+- Field `futureLegalHoldInfo` was added to interface MssqlHostDescendantType
+- Field `legallyHeldSnapshotCount` was added to interface MssqlHostDescendantType
+- Field `futureLegalHoldInfo` was added to interface MssqlHostPhysicalChildType
+- Field `legallyHeldSnapshotCount` was added to interface MssqlHostPhysicalChildType
+- Field `futureLegalHoldInfo` was added to interface MssqlInstanceDescendantType
+- Field `legallyHeldSnapshotCount` was added to interface MssqlInstanceDescendantType
+- Field `futureLegalHoldInfo` was added to interface MssqlInstanceLogicalChildType
+- Field `legallyHeldSnapshotCount` was added to interface MssqlInstanceLogicalChildType
+- Field `futureLegalHoldInfo` was added to interface MssqlTopLevelDescendantType
+- Field `legallyHeldSnapshotCount` was added to interface MssqlTopLevelDescendantType
+- Field `Mutation`.createRole is deprecated
+- Field `Mutation`.gcpCloudAccountAddProjects is deprecated
+- Field `Mutation`.gcpCloudAccountUpgradeProjects is deprecated
+- Field `Mutation`.seedInitialPolicies is deprecated
+- Field `Mutation`.updateRole is deprecated
+- Field `futureLegalHoldInfo` was added to interface NasNamespaceDescendantType
+- Field `legallyHeldSnapshotCount` was added to interface NasNamespaceDescendantType
+- Field `futureLegalHoldInfo` was added to interface NasNamespaceLogicalChildType
+- Field `legallyHeldSnapshotCount` was added to interface NasNamespaceLogicalChildType
+- Field `futureLegalHoldInfo` was added to interface NasShareDescendantType
+- Field `legallyHeldSnapshotCount` was added to interface NasShareDescendantType
+- Field `futureLegalHoldInfo` was added to interface NasShareLogicalChildType
+- Field `legallyHeldSnapshotCount` was added to interface NasShareLogicalChildType
+- Field `futureLegalHoldInfo` was added to interface NasSystemDescendantType
+- Field `legallyHeldSnapshotCount` was added to interface NasSystemDescendantType
+- Field `futureLegalHoldInfo` was added to interface NasSystemLogicalChildType
+- Field `legallyHeldSnapshotCount` was added to interface NasSystemLogicalChildType
+- Field `futureLegalHoldInfo` was added to interface NasVolumeDescendantType
+- Field `legallyHeldSnapshotCount` was added to interface NasVolumeDescendantType
+- Field `futureLegalHoldInfo` was added to interface NasVolumeLogicalChildType
+- Field `legallyHeldSnapshotCount` was added to interface NasVolumeLogicalChildType
+- Field `futureLegalHoldInfo` was added to interface NutanixCategoryDescendantType
+- Field `legallyHeldSnapshotCount` was added to interface NutanixCategoryDescendantType
+- Field `futureLegalHoldInfo` was added to interface NutanixCategoryLogicalChildType
+- Field `legallyHeldSnapshotCount` was added to interface NutanixCategoryLogicalChildType
+- Field `futureLegalHoldInfo` was added to interface NutanixCategoryValueDescendantType
+- Field `legallyHeldSnapshotCount` was added to interface NutanixCategoryValueDescendantType
+- Field `futureLegalHoldInfo` was added to interface NutanixCategoryValueLogicalChildType
+- Field `legallyHeldSnapshotCount` was added to interface NutanixCategoryValueLogicalChildType
+- Field `futureLegalHoldInfo` was added to interface NutanixClusterDescendantType
+- Field `legallyHeldSnapshotCount` was added to interface NutanixClusterDescendantType
+- Field `futureLegalHoldInfo` was added to interface NutanixClusterLogicalChildType
+- Field `legallyHeldSnapshotCount` was added to interface NutanixClusterLogicalChildType
+- Field `futureLegalHoldInfo` was added to interface NutanixPrismCentralDescendantType
+- Field `legallyHeldSnapshotCount` was added to interface NutanixPrismCentralDescendantType
+- Field `futureLegalHoldInfo` was added to interface NutanixPrismCentralLogicalChildType
+- Field `legallyHeldSnapshotCount` was added to interface NutanixPrismCentralLogicalChildType
+- Field `futureLegalHoldInfo` was added to interface NutanixTopLevelDescendantType
+- Field `legallyHeldSnapshotCount` was added to interface NutanixTopLevelDescendantType
+- Field `accessMode` was added to interface O365AppObject
+- Field `futureLegalHoldInfo` was added to interface O365OrgDescendant
+- Field `legallyHeldSnapshotCount` was added to interface O365OrgDescendant
+- Field `futureLegalHoldInfo` was added to interface O365UserDescendant
+- Field `legallyHeldSnapshotCount` was added to interface O365UserDescendant
+- Field `futureLegalHoldInfo` was added to interface OlvmComputeClusterDescendant
+- Field `legallyHeldSnapshotCount` was added to interface OlvmComputeClusterDescendant
+- Field `futureLegalHoldInfo` was added to interface OlvmComputeClusterPhysicalChildType
+- Field `legallyHeldSnapshotCount` was added to interface OlvmComputeClusterPhysicalChildType
+- Field `futureLegalHoldInfo` was added to interface OlvmDatacenterDescendant
+- Field `legallyHeldSnapshotCount` was added to interface OlvmDatacenterDescendant
+- Field `futureLegalHoldInfo` was added to interface OlvmDatacenterPhysicalChildType
+- Field `legallyHeldSnapshotCount` was added to interface OlvmDatacenterPhysicalChildType
+- Field `futureLegalHoldInfo` was added to interface OlvmManagerDescendant
+- Field `legallyHeldSnapshotCount` was added to interface OlvmManagerDescendant
+- Field `futureLegalHoldInfo` was added to interface OlvmManagerPhysicalChildType
+- Field `legallyHeldSnapshotCount` was added to interface OlvmManagerPhysicalChildType
+- Field `futureLegalHoldInfo` was added to interface OlvmTagDescendant
+- Field `legallyHeldSnapshotCount` was added to interface OlvmTagDescendant
+- Field `futureLegalHoldInfo` was added to interface OlvmTagLogicalChild
+- Field `legallyHeldSnapshotCount` was added to interface OlvmTagLogicalChild
+- Field `futureLegalHoldInfo` was added to interface OpenstackAvailabilityZoneDescendantType
+- Field `legallyHeldSnapshotCount` was added to interface OpenstackAvailabilityZoneDescendantType
+- Field `futureLegalHoldInfo` was added to interface OpenstackAvailabilityZonePhysicalChildType
+- Field `legallyHeldSnapshotCount` was added to interface OpenstackAvailabilityZonePhysicalChildType
+- Field `futureLegalHoldInfo` was added to interface OpenstackDomainDescendantType
+- Field `legallyHeldSnapshotCount` was added to interface OpenstackDomainDescendantType
+- Field `futureLegalHoldInfo` was added to interface OpenstackDomainLogicalChildType
+- Field `legallyHeldSnapshotCount` was added to interface OpenstackDomainLogicalChildType
+- Field `futureLegalHoldInfo` was added to interface OpenstackEnvironmentDescendantType
+- Field `legallyHeldSnapshotCount` was added to interface OpenstackEnvironmentDescendantType
+- Field `futureLegalHoldInfo` was added to interface OpenstackEnvironmentLogicalChildType
+- Field `legallyHeldSnapshotCount` was added to interface OpenstackEnvironmentLogicalChildType
+- Field `futureLegalHoldInfo` was added to interface OpenstackEnvironmentPhysicalChildType
+- Field `legallyHeldSnapshotCount` was added to interface OpenstackEnvironmentPhysicalChildType
+- Field `futureLegalHoldInfo` was added to interface OpenstackHostDescendantType
+- Field `legallyHeldSnapshotCount` was added to interface OpenstackHostDescendantType
+- Field `futureLegalHoldInfo` was added to interface OpenstackHostPhysicalChildType
+- Field `legallyHeldSnapshotCount` was added to interface OpenstackHostPhysicalChildType
+- Field `futureLegalHoldInfo` was added to interface OpenstackProjectDescendantType
+- Field `legallyHeldSnapshotCount` was added to interface OpenstackProjectDescendantType
+- Field `futureLegalHoldInfo` was added to interface OpenstackProjectLogicalChildType
+- Field `legallyHeldSnapshotCount` was added to interface OpenstackProjectLogicalChildType
+- Field `futureLegalHoldInfo` was added to interface OpenstackRegionDescendantType
+- Field `legallyHeldSnapshotCount` was added to interface OpenstackRegionDescendantType
+- Field `futureLegalHoldInfo` was added to interface OpenstackRegionPhysicalChildType
+- Field `legallyHeldSnapshotCount` was added to interface OpenstackRegionPhysicalChildType
+- Field `futureLegalHoldInfo` was added to interface OpenstackTagDescendantType
+- Field `legallyHeldSnapshotCount` was added to interface OpenstackTagDescendantType
+- Field `futureLegalHoldInfo` was added to interface OpenstackTagLogicalChildType
+- Field `legallyHeldSnapshotCount` was added to interface OpenstackTagLogicalChildType
+- Field `futureLegalHoldInfo` was added to interface OracleDataGuardGroupDescendantType
+- Field `legallyHeldSnapshotCount` was added to interface OracleDataGuardGroupDescendantType
+- Field `futureLegalHoldInfo` was added to interface OracleDataGuardGroupLogicalChildType
+- Field `legallyHeldSnapshotCount` was added to interface OracleDataGuardGroupLogicalChildType
+- Field `futureLegalHoldInfo` was added to interface OracleHostDescendantType
+- Field `legallyHeldSnapshotCount` was added to interface OracleHostDescendantType
+- Field `futureLegalHoldInfo` was added to interface OracleHostLogicalChildType
+- Field `legallyHeldSnapshotCount` was added to interface OracleHostLogicalChildType
+- Field `futureLegalHoldInfo` was added to interface OracleRacDescendantType
+- Field `legallyHeldSnapshotCount` was added to interface OracleRacDescendantType
+- Field `futureLegalHoldInfo` was added to interface OracleRacLogicalChildType
+- Field `legallyHeldSnapshotCount` was added to interface OracleRacLogicalChildType
+- Field `futureLegalHoldInfo` was added to interface OracleTopLevelDescendantType
+- Field `legallyHeldSnapshotCount` was added to interface OracleTopLevelDescendantType
+- Field `futureLegalHoldInfo` was added to interface PhysicalHostDescendantType
+- Field `legallyHeldSnapshotCount` was added to interface PhysicalHostDescendantType
+- Field `futureLegalHoldInfo` was added to interface PhysicalHostPhysicalChildType
+- Field `legallyHeldSnapshotCount` was added to interface PhysicalHostPhysicalChildType
+- Field `futureLegalHoldInfo` was added to interface PolarisHierarchyObject
+- Field `legallyHeldSnapshotCount` was added to interface PolarisHierarchyObject
+- Field `futureLegalHoldInfo` was added to interface PolarisHierarchySnappable
+- Field `legallyHeldSnapshotCount` was added to interface PolarisHierarchySnappable
+- Input field `saasOrgIds` of type [String!] was added to input object type `PrincipalMetadataFiltersInput`
+- Field `futureLegalHoldInfo` was added to interface ProxmoxClusterDescendant
+- Field `legallyHeldSnapshotCount` was added to interface ProxmoxClusterDescendant
+- Field `futureLegalHoldInfo` was added to interface ProxmoxClusterPhysicalChildType
+- Field `legallyHeldSnapshotCount` was added to interface ProxmoxClusterPhysicalChildType
+- Field `futureLegalHoldInfo` was added to interface ProxmoxEnvironmentDescendant
+- Field `legallyHeldSnapshotCount` was added to interface ProxmoxEnvironmentDescendant
+- Field `futureLegalHoldInfo` was added to interface ProxmoxEnvironmentPhysicalChildType
+- Field `legallyHeldSnapshotCount` was added to interface ProxmoxEnvironmentPhysicalChildType
+- Field `futureLegalHoldInfo` was added to interface ProxmoxNodeDescendant
+- Field `legallyHeldSnapshotCount` was added to interface ProxmoxNodeDescendant
+- Field `futureLegalHoldInfo` was added to interface ProxmoxNodePhysicalChildType
+- Field `legallyHeldSnapshotCount` was added to interface ProxmoxNodePhysicalChildType
+- Field `futureLegalHoldInfo` was added to interface PureStorageArrayDescendantV1
+- Field `legallyHeldSnapshotCount` was added to interface PureStorageArrayDescendantV1
+- Field `futureLegalHoldInfo` was added to interface PureStorageArrayLogicalChildType
+- Field `legallyHeldSnapshotCount` was added to interface PureStorageArrayLogicalChildType
+- Field `Query`.accountId is deprecated
+- Field `Query`.allPendingActions is deprecated
+- Field `Query`.investigationCsvDownloadLink is deprecated
+- Field `Query`.pendingAction is deprecated
+- Type for argument timelineDate on field `Query.principalDetails` changed from `String`! to `String`
+- Type for argument timelineDate on field `Query.principalSummaries` changed from `String`! to `String`
+- Field `futureLegalHoldInfo` was added to interface SaasAppsOrganization
+- Field `legallyHeldSnapshotCount` was added to interface SaasAppsOrganization
+- Field `futureLegalHoldInfo` was added to interface SapHanaSystemDescendantType
+- Field `legallyHeldSnapshotCount` was added to interface SapHanaSystemDescendantType
+- Field `futureLegalHoldInfo` was added to interface SapHanaSystemPhysicalChildType
+- Field `legallyHeldSnapshotCount` was added to interface SapHanaSystemPhysicalChildType
+- Input field `legalHoldStateFilter` of type [LegalHoldStateFilterValue!] was added to input object type `SnappablesWithLegalHoldSnapshotsInput`
+- Field `futureLegalHoldInfo` was added to interface VcdCatalogDescendantType
+- Field `legallyHeldSnapshotCount` was added to interface VcdCatalogDescendantType
+- Field `futureLegalHoldInfo` was added to interface VcdCatalogLogicalChildType
+- Field `legallyHeldSnapshotCount` was added to interface VcdCatalogLogicalChildType
+- Field `futureLegalHoldInfo` was added to interface VcdDescendantType
+- Field `legallyHeldSnapshotCount` was added to interface VcdDescendantType
+- Field `futureLegalHoldInfo` was added to interface VcdLogicalChildType
+- Field `legallyHeldSnapshotCount` was added to interface VcdLogicalChildType
+- Field `futureLegalHoldInfo` was added to interface VcdOrgDescendantType
+- Field `legallyHeldSnapshotCount` was added to interface VcdOrgDescendantType
+- Field `futureLegalHoldInfo` was added to interface VcdOrgLogicalChildType
+- Field `legallyHeldSnapshotCount` was added to interface VcdOrgLogicalChildType
+- Field `futureLegalHoldInfo` was added to interface VcdOrgVdcDescendantType
+- Field `legallyHeldSnapshotCount` was added to interface VcdOrgVdcDescendantType
+- Field `futureLegalHoldInfo` was added to interface VcdOrgVdcLogicalChildType
+- Field `legallyHeldSnapshotCount` was added to interface VcdOrgVdcLogicalChildType
+- Field `futureLegalHoldInfo` was added to interface VcdTopLevelDescendantType
+- Field `legallyHeldSnapshotCount` was added to interface VcdTopLevelDescendantType
+- Field `futureLegalHoldInfo` was added to interface VcdVappDescendantType
+- Field `legallyHeldSnapshotCount` was added to interface VcdVappDescendantType
+- Field `futureLegalHoldInfo` was added to interface VcdVappLogicalChildType
+- Field `legallyHeldSnapshotCount` was added to interface VcdVappLogicalChildType
+- Field `futureLegalHoldInfo` was added to interface VsphereComputeClusterDescendantType
+- Field `legallyHeldSnapshotCount` was added to interface VsphereComputeClusterDescendantType
+- Field `futureLegalHoldInfo` was added to interface VsphereComputeClusterPhysicalChildType
+- Field `legallyHeldSnapshotCount` was added to interface VsphereComputeClusterPhysicalChildType
+- Field `futureLegalHoldInfo` was added to interface VsphereContentLibraryDescendantType
+- Field `legallyHeldSnapshotCount` was added to interface VsphereContentLibraryDescendantType
+- Field `futureLegalHoldInfo` was added to interface VsphereContentLibraryLibraryChildType
+- Field `legallyHeldSnapshotCount` was added to interface VsphereContentLibraryLibraryChildType
+- Field `futureLegalHoldInfo` was added to interface VsphereDatacenterDescendantType
+- Field `legallyHeldSnapshotCount` was added to interface VsphereDatacenterDescendantType
+- Field `futureLegalHoldInfo` was added to interface VsphereDatacenterFolderDescendantType
+- Field `legallyHeldSnapshotCount` was added to interface VsphereDatacenterFolderDescendantType
+- Field `futureLegalHoldInfo` was added to interface VsphereDatacenterFolderLogicalChildType
+- Field `legallyHeldSnapshotCount` was added to interface VsphereDatacenterFolderLogicalChildType
+- Field `futureLegalHoldInfo` was added to interface VsphereDatacenterFolderPhysicalChildType
+- Field `legallyHeldSnapshotCount` was added to interface VsphereDatacenterFolderPhysicalChildType
+- Field `futureLegalHoldInfo` was added to interface VsphereDatacenterLogicalChildType
+- Field `legallyHeldSnapshotCount` was added to interface VsphereDatacenterLogicalChildType
+- Field `futureLegalHoldInfo` was added to interface VsphereDatacenterPhysicalChildType
+- Field `legallyHeldSnapshotCount` was added to interface VsphereDatacenterPhysicalChildType
+- Field `futureLegalHoldInfo` was added to interface VsphereDatastoreClusterDescendantType
+- Field `legallyHeldSnapshotCount` was added to interface VsphereDatastoreClusterDescendantType
+- Field `futureLegalHoldInfo` was added to interface VsphereDatastoreClusterPhysicalChildType
+- Field `legallyHeldSnapshotCount` was added to interface VsphereDatastoreClusterPhysicalChildType
+- Field `futureLegalHoldInfo` was added to interface VsphereFolderDescendantType
+- Field `legallyHeldSnapshotCount` was added to interface VsphereFolderDescendantType
+- Field `futureLegalHoldInfo` was added to interface VsphereFolderLogicalChildType
+- Field `legallyHeldSnapshotCount` was added to interface VsphereFolderLogicalChildType
+- Field `futureLegalHoldInfo` was added to interface VsphereHostDescendantType
+- Field `legallyHeldSnapshotCount` was added to interface VsphereHostDescendantType
+- Field `futureLegalHoldInfo` was added to interface VsphereHostPhysicalChildType
+- Field `legallyHeldSnapshotCount` was added to interface VsphereHostPhysicalChildType
+- Field `futureLegalHoldInfo` was added to interface VsphereResourcePoolDescendantType
+- Field `legallyHeldSnapshotCount` was added to interface VsphereResourcePoolDescendantType
+- Field `futureLegalHoldInfo` was added to interface VsphereResourcePoolPhysicalChildType
+- Field `legallyHeldSnapshotCount` was added to interface VsphereResourcePoolPhysicalChildType
+- Field `futureLegalHoldInfo` was added to interface VsphereTagCategoryDescendantType
+- Field `legallyHeldSnapshotCount` was added to interface VsphereTagCategoryDescendantType
+- Field `futureLegalHoldInfo` was added to interface VsphereTagCategoryTagChildType
+- Field `legallyHeldSnapshotCount` was added to interface VsphereTagCategoryTagChildType
+- Field `futureLegalHoldInfo` was added to interface VsphereTagDescendantType
+- Field `legallyHeldSnapshotCount` was added to interface VsphereTagDescendantType
+- Field `futureLegalHoldInfo` was added to interface VsphereTagTagChildType
+- Field `legallyHeldSnapshotCount` was added to interface VsphereTagTagChildType
+- Field `futureLegalHoldInfo` was added to interface VsphereVcenterDescendantType
+- Field `legallyHeldSnapshotCount` was added to interface VsphereVcenterDescendantType
+- Field `futureLegalHoldInfo` was added to interface VsphereVcenterLibraryChildType
+- Field `legallyHeldSnapshotCount` was added to interface VsphereVcenterLibraryChildType
+- Field `futureLegalHoldInfo` was added to interface VsphereVcenterLogicalChildType
+- Field `legallyHeldSnapshotCount` was added to interface VsphereVcenterLogicalChildType
+- Field `futureLegalHoldInfo` was added to interface VsphereVcenterPhysicalChildType
+- Field `legallyHeldSnapshotCount` was added to interface VsphereVcenterPhysicalChildType
+- Field `futureLegalHoldInfo` was added to interface VsphereVcenterTagChildType
+- Field `legallyHeldSnapshotCount` was added to interface VsphereVcenterTagChildType
+- Field `futureLegalHoldInfo` was added to interface WindowsClusterDescendantType
+- Field `legallyHeldSnapshotCount` was added to interface WindowsClusterDescendantType
+- Field `futureLegalHoldInfo` was added to interface WindowsClusterLogicalChildType
+- Field `legallyHeldSnapshotCount` was added to interface WindowsClusterLogicalChildType
 
 ## September 14, 2026
 
@@ -992,11 +2694,11 @@ This changelog documents the evolution of the GraphQL schema across 60 versions.
 - `recoveryPurpose` input field added to `VolumeGroupMountSnapshotJobConfigInput`
 - `hypervVm` field added to `WorkloadSpecificRecoverySpec`
 - `hypervVm` input field added to `WorkloadSpecificRecoverySpecInput`
+- Input field `excludePaths` of type [String!] with default value [] was added to input object type `VolumeGroupMountSnapshotJobConfigInput`
 - Field `Query`.accountSettings is deprecated
 - Field `RcvEntitlementWithExpirationDate`.bundle is deprecated
 - Deprecation reason on field `RdsInstanceExportDefaults.supportedDbEngineVersions` has changed from `Use` available_db_engine_versions instead. to `Use` availableDbEngineVersions instead.
 - Input field `featuresToUpgrade` of type [FeatureWithPermissionsGroups!] was added to input object type `UpgradeGcpCloudAccountPermissionsWithoutOauthInput`
-- Input field `excludePaths` of type [String!] with default value [] was added to input object type `VolumeGroupMountSnapshotJobConfigInput`
 - Type cascadingImpactKeys was added
 
 ## August 17, 2026
@@ -2137,6 +3839,8 @@ This changelog documents the evolution of the GraphQL schema across 60 versions.
 - `objectBackupWindow` field added to `WindowsCluster`
 - `objectBackupWindow` field added to `WindowsFileset`
 - `hypervVm` field added to `WorkloadSpecificResourceSpec`
+- Input field `excludeValueRegex` of type `String` with default value "" was added to input object type `CreateCustomAnalyzerInput`
+- Input field `excludeValueRegex` of type `String` with default value "" was added to input object type `DataTypeDefinition`
 - Field `objectBackupWindow` was added to interface ActiveDirectoryDomainDescendantType
 - Field `objectBackupWindow` was added to interface ActiveDirectoryDomainPhysicalChildType
 - Field `objectBackupWindow` was added to interface AwsNativeAccountDescendantType
@@ -2155,8 +3859,6 @@ This changelog documents the evolution of the GraphQL schema across 60 versions.
 - Field `objectBackupWindow` was added to interface CloudDirectNasNamespaceLogicalChildType
 - Field `objectBackupWindow` was added to interface CloudDirectNasSystemDescendantType
 - Field `objectBackupWindow` was added to interface CloudDirectNasSystemLogicalChildType
-- Input field `excludeValueRegex` of type `String` with default value "" was added to input object type `CreateCustomAnalyzerInput`
-- Input field `excludeValueRegex` of type `String` with default value "" was added to input object type `DataTypeDefinition`
 - Field `objectBackupWindow` was added to interface Db2InstanceDescendantType
 - Field `objectBackupWindow` was added to interface Db2InstancePhysicalChildType
 - Field `objectBackupWindow` was added to interface ExchangeDagDescendantType
@@ -2806,7 +4508,6 @@ This changelog documents the evolution of the GraphQL schema across 60 versions.
 - `monthOfYear` field added to `YearlyDaySpec`
 - Enum value RvcLS was added to enum `ClusterTypeEnum`
 - Enum value RvcSS was added to enum `ClusterTypeEnum`
-- Field `CdmSnapshot`.k8sAppMetadata is deprecated
 - Input field `isEntraIdInitiatedOnboarding` of type `Boolean` with default value false was added to input object type `CompleteAzureCloudAccountOauthInput`
 - Input field `proximityDistance` of type `Int` with default value 0 was added to input object type `DataTypeDefinition`
 - Input field `proximityKeywordsRegex` of type `String` with default value "" was added to input object type `DataTypeDefinition`
@@ -2814,6 +4515,7 @@ This changelog documents the evolution of the GraphQL schema across 60 versions.
 - Input field `gpoSettingFilters` of type [GpoSettingFilterInput!] with default value [] was added to input object type `PrincipalSummariesFilterInput`
 - Input field `isEntraIdInitiatedOnboarding` of type `Boolean` with default value false was added to input object type `StartAzureCloudAccountOauthInput`
 - Input field `shouldIncludeArchive` of type `Boolean` with default value false was added to input object type `ThreatHuntBaseConfigInputType`
+- Field `CdmSnapshot`.k8sAppMetadata is deprecated
 
 ## July 06, 2026
 
@@ -3484,17 +5186,17 @@ This changelog documents the evolution of the GraphQL schema across 60 versions.
 - `snmpConfigV97` input field added to `UpdateSnmpConfigInput`
 - `syslogSettingsV97` input field added to `UpdateSyslogExportRuleInput`
 - `updatePropertiesV97` input field added to `UpdateVcenterInput`
-- Input field `organizationNativeIds` of type [String!] was added to input object type `AddAzureDevOpsCloudAccountInput`
 - Input field `healthCheckVmNamePrefix` of type `String` with default value "" was added to input object type `AzureExocomputeOptionalConfigInRegionInput`
-- Field `AzurePostgresFlexibleServer`.skuTier is deprecated
 - Input field `itemId` of type `String` with default value "" was added to input object type `CalendarSearchFilter`
 - Input field `itemId` of type `String` with default value "" was added to input object type `ContactsSearchFilter`
-- Input field `excludedTargetEntityTypes` of type [PrincipalRiskySummaryPrincipalType!] was added to input object type `IdentityFilter`
 - Input field `cloudAccountIds` of type [UUID!] with default value [] was added to input object type `LegalHoldQueryFilter`
+- Input field `itemId` of type `String` with default value "" was added to input object type `SearchFilter`
+- Input field `organizationNativeIds` of type [String!] was added to input object type `AddAzureDevOpsCloudAccountInput`
+- Field `AzurePostgresFlexibleServer`.skuTier is deprecated
+- Input field `excludedTargetEntityTypes` of type [PrincipalRiskySummaryPrincipalType!] was added to input object type `IdentityFilter`
 - Input field `actorTypes` of type [String!] was added to input object type `ListActivitiesFilter`
 - Input field `requestedChecks` of type [ExoHealthCheckType!] was added to input object type `OptionalHealthChecksInput`
 - Type for argument feature on field `Query.allGcpCloudAccountProjectsByFeature` changed from `CloudAccountFeature`! to `CloudAccountFeature`
-- Input field `itemId` of type `String` with default value "" was added to input object type `SearchFilter`
 - Field `sourceWorkloadCloud` was added to interface TargetTemplate
 
 ## June 22, 2026
@@ -4958,9 +6660,9 @@ This changelog documents the evolution of the GraphQL schema across 60 versions.
 - `isSnapshotOffloadingEnabled` field added to `StorageArrayDetail`
 - `isVolumeProtectionEnabled` field added to `StorageArrayDetail`
 - `isNutanixCftEnabled` input field added to `UpdateNasShareInput`
+- Input field `holdReplica` of type `Boolean` with default value false was added to input object type `HoldConfig`
 - Enum value FailoverGroup was added to enum `UserAuditObjectTypeEnum`
 - Input field `keyTypes` of type [KeyType!] was added to input object type `GlobalCertificatesQueryInput`
-- Input field `holdReplica` of type `Boolean` with default value false was added to input object type `HoldConfig`
 
 ## May 11, 2026
 
@@ -5179,6 +6881,9 @@ This changelog documents the evolution of the GraphQL schema across 60 versions.
 - `perLocationSnapshotInfos` field added to `TprSnapshotInfo`
 - `snapshotDate` field added to `TprSnapshotInfo`
 - `recoveryPurpose` input field added to `VsphereVmRecoverFilesNewInput`
+- Input field `backupNodes` of type [String!] with default value [] was added to input object type `OracleUpdateInput`
+- Input field `secondaryNodes` of type [String!] with default value [] was added to input object type `OracleUpdateInput`
+- Input field `excludePaths` of type [String!] with default value [] was added to input object type `RestoreFilesJobConfigInput`
 - Field `AzureAdPimPolicy`.activationMaxDurationMinutes is deprecated
 - Field `AzureAdPimPolicy`.activeAssignmentExpirationDays is deprecated
 - Field `AzureAdPimPolicy`.eligibleAssignmentExpirationDays is deprecated
@@ -5189,11 +6894,8 @@ This changelog documents the evolution of the GraphQL schema across 60 versions.
 - Field `AzureDevOpsOrganization`.exocomputeId is deprecated
 - Input field `sourceClusterUuids` of type [UUID!] was added to input object type `HaPolicyFilter`
 - Input field `targetClusterUuids` of type [UUID!] was added to input object type `HaPolicyFilter`
-- Input field `backupNodes` of type [String!] with default value [] was added to input object type `OracleUpdateInput`
-- Input field `secondaryNodes` of type [String!] with default value [] was added to input object type `OracleUpdateInput`
 - Input field `identityOrigins` of type [PrincipalOrigin!] was added to input object type `ResourceMetadataFiltersInput`
 - Input field `objectsToDelete` of type [ObjectInfoType!] was added to input object type `RestoreAzureAdObjectsWithPasswordsInput`
-- Input field `excludePaths` of type [String!] with default value [] was added to input object type `RestoreFilesJobConfigInput`
 - Input field `eventIds` of type [String!] was added to input object type `SigninLogsFilters`
 - Input field `failureCategories` of type [SigninLogFailureCategory!] was added to input object type `SigninLogsFilters`
 - Field `subStatus` was added to object type clusterState
@@ -5559,10 +7261,10 @@ This changelog documents the evolution of the GraphQL schema across 60 versions.
 - `clusterUuid` field added to `UpgradeDurationReply`
 - `identityActivitySubscription` input field added to `WebhookSubscriptionTypeV2Input`
 - Input field `serviceTypeFilter` of type [AwsCloudAccountServiceType!] with default value [] was added to input object type `AwsCloudAccountsWithFeaturesInput`
-- Field `FailoverGroupWorkload`.workloadType is deprecated
 - Input field `virtualSwitchMappings` of type [HypervVirtualSwitchMappingInput!] with default value [] was added to input object type `HypervInstantRecoveryJobConfigInput`
 - Input field `virtualSwitchMappings` of type [HypervVirtualSwitchMappingInput!] with default value [] was added to input object type `HypervMountSnapshotJobConfigInput`
 - Input field `namespacesToRestore` of type [String!] with default value [] was added to input object type `K8sRestoreParametersInput`
+- Field `FailoverGroupWorkload`.workloadType is deprecated
 
 ## April 27, 2026
 
@@ -6000,12 +7702,12 @@ This changelog documents the evolution of the GraphQL schema across 60 versions.
 - `recoveryLogicalChildConnection` field added to `VcdOrg`
 - `recoveryLogicalChildConnection` field added to `VcdOrgVdc`
 - `recoveryLogicalChildConnection` field added to `VcdVapp`
-- Field `AzureAdRole`.hasPolicy is deprecated
 - Input field `invalidateAllSessions` of type `Boolean` with default value false was added to input object type `ChangePasswordInput`
 - Input field `legalHoldMode` of type `LegalHoldMode` with default value LEGAL_HOLD_MODE_UNSPECIFIED was added to input object type `HoldConfig`
 - Input field `cloudRegions` of type [String!] with default value [] was added to input object type `LegalHoldQueryFilter`
 - Input field `cloudVendor` of type `CloudVendor` with default value AWS was added to input object type `LegalHoldQueryFilter`
 - Input field `departments` of type [String!] with default value [] was added to input object type `PrincipalSummariesFilterInput`
+- Field `AzureAdRole`.hasPolicy is deprecated
 - Input field `dnsNameServers` of type [String!] was added to input object type `RecoverCloudClusterInput`
 - Input field `dnsSearchDomains` of type [String!] was added to input object type `RecoverCloudClusterInput`
 - Input field `authenticationMethods` of type [String!] was added to input object type `SigninLogsFilters`
@@ -6234,13 +7936,13 @@ This changelog documents the evolution of the GraphQL schema across 60 versions.
 - `locationType` field added to `SnapshotLocation`
 - `snapshotCount` field added to `SnapshotLocation`
 - `readOnlyAuthInfo` field added to `WebhookV2`
-- Enum value ClusterCreateValidations.GCP_CLUSTER_NAME_LENGTH_CHECK was deprecated with reason Use CLUSTER_NAME_LENGTH_CHECK instead.
 - Input field `purpose` of type `SlaPurpose` with default value GENERAL was added to input object type `CreateGlobalSlaInput`
+- Input field `purpose` of type `SlaPurpose` with default value GENERAL was added to input object type `UpdateGlobalSlaInput`
+- Enum value ClusterCreateValidations.GCP_CLUSTER_NAME_LENGTH_CHECK was deprecated with reason Use CLUSTER_NAME_LENGTH_CHECK instead.
 - Field `FederatedLoginStatus`.inventoryCardEnabled is deprecated
 - Input field `actorIds` of type [String!] was added to input object type `ResourceMetadataFiltersInput`
 - Deprecation reason on field `SelfServicePermission.inventoryRoot` has changed from `No` longer in use. to `Use` hierarchyRoot field instead.
 - Input field `userIds` of type [String!] was added to input object type `SigninLogsFilters`
-- Input field `purpose` of type `SlaPurpose` with default value GENERAL was added to input object type `UpdateGlobalSlaInput`
 
 ## April 06, 2026
 
@@ -6892,13 +8594,13 @@ This changelog documents the evolution of the GraphQL schema across 60 versions.
 - `isAzResilient` input field added to `RecoverCloudClusterInput`
 - `reqIdPartial` input field added to `TprRequestFilterInput`
 - `shouldUseStrongEncryption` input field added to `VolumeGroupDownloadFilesJobConfigInput`
-- Input field `hierarchyFilters` of type [Filter!] was added to input object type `AwsNativeRdsInstanceFilters`
 - Input field `virtualSwitchMappings` of type [HypervVirtualSwitchMappingInput!] with default value [] was added to input object type `HypervExportSnapshotJobConfigInput`
+- Input field `updateAuthInfo` of type `Boolean` with default value false was added to input object type `UpdateWebhookInput`
+- Input field `updateAuthInfo` of type `Boolean` with default value false was added to input object type `UpdateWebhookV2Input`
+- Input field `hierarchyFilters` of type [Filter!] was added to input object type `AwsNativeRdsInstanceFilters`
 - Field `PolicyDetail`.pendingAnalysisObjects is deprecated
 - Input field `excludedTags` of type [String!] was added to input object type `SetCustomerTagsInput`
 - Input field `serverIds` of type [UUID!] was added to input object type `SetupCloudNativeSqlServerBackupInput`
-- Input field `updateAuthInfo` of type `Boolean` with default value false was added to input object type `UpdateWebhookInput`
-- Input field `updateAuthInfo` of type `Boolean` with default value false was added to input object type `UpdateWebhookV2Input`
 
 ## March 09, 2026
 
@@ -7045,12 +8747,12 @@ This changelog documents the evolution of the GraphQL schema across 60 versions.
 - `objectBackupType` field added to `SalesforceObject`
 - `fullName` field added to `SlaAssociatedOrganization`
 - `linkedActiveVm` field added to `VsphereVm`
+- Input field `gcpNativeProtectionFeatureNames` of type [GcpNativeProtectionFeature!] with default value [] was added to input object type `Filter`
 - Field `AzureCloudAccountRolePermission`.excludedActions is deprecated
 - Field `AzureCloudAccountRolePermission`.excludedDataActions is deprecated
 - Field `AzureCloudAccountRolePermission`.includedActions is deprecated
 - Field `AzureCloudAccountRolePermission`.includedDataActions is deprecated
 - Field `Column`.dataViewType is deprecated
-- Input field `gcpNativeProtectionFeatureNames` of type [GcpNativeProtectionFeature!] with default value [] was added to input object type `Filter`
 - Input field `scopedTargetEntities` of type [ActivityScopedTargetEntity!] was added to input object type `ListActivitiesFilter`
 
 ## March 02, 2026
@@ -7182,8 +8884,8 @@ This changelog documents the evolution of the GraphQL schema across 60 versions.
 - `displayNameSearchTerm` input field added to `SigninLogsFilters`
 - `serverId` field added to `SqlServerSetupScriptDetails`
 - `placement` input field added to `StartEc2InstanceSnapshotExportJobInput`
-- Field `AzureBlobConfig`.continuousBackupRetentionInDays is deprecated
 - Input field `affectedFilesDeltaTypes` of type [AffectedFilesDeltaType!] with default value [] was added to input object type `BrowseDirectoryFiltersInput`
+- Field `AzureBlobConfig`.continuousBackupRetentionInDays is deprecated
 - Input field `serverIds` of type [UUID!] was added to input object type `GetSqlServerSetupScriptsReqBulk`
 - Field `Mutation`.createWebhook is deprecated
 - Field `Mutation`.deleteWebhook is deprecated
@@ -7482,10 +9184,10 @@ This changelog documents the evolution of the GraphQL schema across 60 versions.
 - `immutabilitySetting` field added to `RubrikManagedNfsTarget`
 - `downloadedSnapshotsCount` field added to `UnmanagedObjectDetail`
 - `hasDownloadedSnapshots` input field added to `UnmanagedObjectsInput`
-- Enum value AuditObjectType.ENCRYPTION_MANAGEMENT deprecation reason changed from `Use` <T_O_D_O> instead. to `Use` UNIFIED_ENCRYPTION_MANAGEMENT instead.
 - Input field `aggregateAtPath` of type `Boolean` with default value false was added to input object type `BrowseDirectoryFiltersInput`
 - Input field `excludeFieldNamePattern` of type `String` with default value "" was added to input object type `CreateCustomAnalyzerInput`
 - Input field `excludePathPattern` of type `String` with default value "" was added to input object type `CreateCustomAnalyzerInput`
+- Enum value AuditObjectType.ENCRYPTION_MANAGEMENT deprecation reason changed from `Use` <T_O_D_O> instead. to `Use` UNIFIED_ENCRYPTION_MANAGEMENT instead.
 - Enum value EventObjectType.ENCRYPTION_MANAGEMENT deprecation reason changed from `Use` <T_O_D_O> instead. to `Use` UNIFIED_ENCRYPTION_MANAGEMENT instead.
 - Field `SelfServicePermission`.inventoryRoot is deprecated
 
@@ -7621,13 +9323,14 @@ This changelog documents the evolution of the GraphQL schema across 60 versions.
 - `orgName` field added to `TriggeredTprPolicy`
 - `downloadedSnapshotsBytes` field added to `UnmanagedObjectDetail`
 - `snapshotManagementType` input field added to `UnmanagedObjectsInput`
+- Input field `cdmProduct` of type `String` with default value "" was added to input object type `GcpVmConfigInput`
+- Input field `relationshipConflictResolutionMode` of type `RelationshipConflictResolutionState` with default value RELATIONSHIP_CONFLICT_RESOLUTION_STATE_UNKNOWN was added to input object type `RestoreAzureAdObjectsWithPasswordsInput`
 - Input field `externalArtifactMap` of type [ExternalArtifacts!] was added to input object type `AddAwsAuthenticationServerBasedCloudAccountInput`
 - Enum value AuditObjectType.ENCRYPTION_MANAGEMENT was deprecated with reason Use <T_O_D_O> instead.
 - Enum value AuditObjectType.UPGRADE was deprecated with reason Use <T_O_D_O> instead.
 - Enum value CloudAccountFeature.AWS_CONFIG_PROTECTION was deprecated with reason Use `CLOUD_NATIVE_CONFIG_PROTECTION` instead.
 - Enum value EventObjectType.ENCRYPTION_MANAGEMENT was deprecated with reason Use <T_O_D_O> instead.
 - Enum value GcpStorageClass.DURABLE_REDUCED_AVAILABILITY_GCP deprecation reason changed from `Deprecated`. Use STANDARD instead. to `Use` STANDARD_GCP instead.
-- Input field `cdmProduct` of type `String` with default value "" was added to input object type `GcpVmConfigInput`
 - Enum value HierarchyFilterField.CLOUDDIRECT_NAS_SHARE_HIDDEN was deprecated with reason Not implemented - no longer used.
 - Enum value HierarchyFilterField.EBS_VOLUME_ID was deprecated with reason Use EBS_VOLUME_NAME_OR_VOLUME_ID instead.
 - Enum value HierarchyFilterField.EBS_VOLUME_NAME was deprecated with reason Use EBS_VOLUME_NAME_OR_VOLUME_ID instead.
@@ -7640,7 +9343,6 @@ This changelog documents the evolution of the GraphQL schema across 60 versions.
 - Enum value RcvRedundancy.AZURE_LRS deprecation reason changed from `Deprecated`. Use SINGLE_ZONE instead. to `Use` SINGLE_ZONE instead.
 - Enum value RcvRedundancy.AZURE_ZRS deprecation reason changed from `Deprecated`. Use MULTI_ZONE instead. to `Use` MULTI_ZONE instead.
 - Enum value RcvRedundancy.UNKNOWN_AZURE_REDUNDANCY deprecation reason changed from `Deprecated`. Use UNKNOWN_REDUNDANCY instead. to `Use` REDUNDANCY_UNKNOWN instead.
-- Input field `relationshipConflictResolutionMode` of type `RelationshipConflictResolutionState` with default value RELATIONSHIP_CONFLICT_RESOLUTION_STATE_UNKNOWN was added to input object type `RestoreAzureAdObjectsWithPasswordsInput`
 - Enum value SlaMigrationIneligibilityReason.COMPLIANCE_RETENTION_LOCK_CONFIGURED was deprecated with reason This reason is no longer used.
 - Input field `regexPatterns` of type [String!] was added to input object type `StartRecoverAzureNativeStorageAccountJobInput`
 - Input field `regexPatterns` of type [String!] was added to input object type `StartRecoverS3SnapshotJobInput`
@@ -8033,9 +9735,9 @@ This changelog documents the evolution of the GraphQL schema across 60 versions.
 - `missingPermissions` field added to `StartAzureAdAppUpdateReply`
 - `useWindowsVss` field added to `TprFilesetOptions`
 - `backupScriptTimeout` field added to `TprFilesetTemplatePatch`
+- Input field `isInactive` of type `Boolean` with default value false was added to input object type `CreateCustomAnalyzerInput`
 - Field `pcrImagePullEksVersion` was added to interface AwsExocomputeGetConfigurationResponse
 - Field `Column`.type is deprecated
-- Input field `isInactive` of type `Boolean` with default value false was added to input object type `CreateCustomAnalyzerInput`
 - Field `Mutation`.listCidrsForComputeSetting is deprecated
 - Input field `exclusions` of type [CloudDirectExclusionInput!] was added to input object type `TakeCloudDirectSnapshotInput`
 
@@ -8277,8 +9979,8 @@ This changelog documents the evolution of the GraphQL schema across 60 versions.
 - Type for argument input on field `Mutation.vsphereVmUnregisterAgent` changed from `VsphereVmUnregisterAgentInput`! to `VmUnregisterAgentInput`!
 - Type for argument input on field `Mutation.vsphereVmUpdateAgentCertificate` changed from `VsphereVmUpdateAgentCertificateInput`! to `VmUpdateAgentCertificateInput`!
 - Input field `isObjectLevelAnalysis` of type `Boolean` with default value false was added to input object type `BrowseDirectoryFiltersInput`
-- Enum value ClusterSubStatus.INITIALIZING_REPORTS was deprecated with reason INITIALIZING_REPORTS is deprecated.
 - Input field `pvcsToMount` of type [String!] with default value [] was added to input object type `K8sVmMountParametersInput`
+- Enum value ClusterSubStatus.INITIALIZING_REPORTS was deprecated with reason INITIALIZING_REPORTS is deprecated.
 - Input field `orgs` of type [String!] was added to input object type `TprPolicyFilterInput`
 
 ## December 15, 2025
@@ -8745,18 +10447,18 @@ This changelog documents the evolution of the GraphQL schema across 60 versions.
 - `zipPassword` input field added to `VolumeGroupDownloadFilesJobConfigInput`
 - `snapshotProperties` field added to `VsphereVmRecoveryRangeStatusResp`
 - `daysOfWeek` field added to `WeeklySnapshotSchedule`
-- Field `authServerRegion` was added to interface AwsExocomputeGetConfigurationResponse
 - Input field `sensitiveDataDiscoveryScope` of type `SensitiveDataDiscoveryScope` with default value SENSITIVE_DATA_DISCOVERY_SCOPE_ALL_FILES was added to input object type `BrowseDirectoryFiltersInput`
+- Input field `daysOfMonth` of type [MonthlyDaySpecInput!] with default value [] was added to input object type `MonthlySnapshotScheduleInput`
+- Input field `version` of type `String` with default value "" was added to input object type `NodeRegistrationConfigsInput`
+- Input field `daysOfWeek` of type [WeeklyDaySpecInput!] with default value [] was added to input object type `WeeklySnapshotScheduleInput`
+- Field `authServerRegion` was added to interface AwsExocomputeGetConfigurationResponse
 - Field `GcpCloudSqlInstance`.gcpNativeProjectDetails is deprecated
 - Field `GcpNativeDisk`.gcpNativeProjectDetails is deprecated
 - Field `GcpNativeGceInstance`.gcpNativeProjectDetails is deprecated
 - Enum value InventorySubHierarchyRootEnum.PHYSICAL_HOST_ROOT deprecation reason changed from `No` longer in use. to `This` root is no longer in use.
-- Input field `daysOfMonth` of type [MonthlyDaySpecInput!] with default value [] was added to input object type `MonthlySnapshotScheduleInput`
 - Field `Mutation`.createOnDemandMongoDatabaseBackup is deprecated
-- Input field `version` of type `String` with default value "" was added to input object type `NodeRegistrationConfigsInput`
 - Field `Query`.azureExocomputeNetworkSetupTemplate is deprecated
 - Field `TprRulesMap`.dataManagementByObjectWorkloads is deprecated
-- Input field `daysOfWeek` of type [WeeklyDaySpecInput!] with default value [] was added to input object type `WeeklySnapshotScheduleInput`
 
 ## November 17, 2025
 
@@ -9093,11 +10795,11 @@ This changelog documents the evolution of the GraphQL schema across 60 versions.
 - `isComplianceImmutabilitySupported` field added to `RubrikManagedS3CompatibleTarget`
 - `isComplianceImmutabilitySupported` field added to `RubrikManagedTapeTargetType`
 - `numSnapshotsWithPolicy` field added to `UnmanagedObjectDetail`
-- Enum value CloudNativeTagRuleFilterFields.AWS_ACCOUNT was deprecated with reason USE CLOUD_NATIVE_ACCOUNT filter instead.
 - Input field `failoverGroupId` of type `String` with default value "" was added to input object type `CreateGlobalSlaInput`
 - Input field `mongoClientHosts` of type [MongoClientHostInput!] with default value [] was added to input object type `MongoSourcePatchRequestConfigInput`
-- Field `isComplianceImmutabilitySupported` was added to interface Target
 - Input field `failoverGroupId` of type `String` with default value "" was added to input object type `UpdateGlobalSlaInput`
+- Enum value CloudNativeTagRuleFilterFields.AWS_ACCOUNT was deprecated with reason USE CLOUD_NATIVE_ACCOUNT filter instead.
+- Field `isComplianceImmutabilitySupported` was added to interface Target
 
 ## October 27, 2025
 
@@ -9177,9 +10879,9 @@ This changelog documents the evolution of the GraphQL schema across 60 versions.
 - `dbName` field added to `RdsInstanceDetailsFromAws`
 - `bliMigrationStatusType` field added to `RubrikManagedRcsTarget`
 - `sshEnabled` field added to `VsphereHost`
-- Input field `featuresWithPermissionsGroups` of type [FeatureWithPermissionsGroups!] was added to input object type `AddAwsAuthenticationServerBasedCloudAccountInput`
 - Input field `skipCloudNativeResourceDeletion` of type `Boolean` with default value false was added to input object type `DeleteTargetMappingInput`
 - Input field `showHealthCheckStatus` of type `Boolean` with default value false was added to input object type `GcpGetExocomputeConfigsReq`
+- Input field `featuresWithPermissionsGroups` of type [FeatureWithPermissionsGroups!] was added to input object type `AddAwsAuthenticationServerBasedCloudAccountInput`
 
 ## October 13, 2025
 
@@ -9666,15 +11368,15 @@ This changelog documents the evolution of the GraphQL schema across 60 versions.
 - `shouldSddViaRba` field added to `OracleSddDetail`
 - `newestSnapshotForCloudDirectObject` field added to `Query`
 - `oldestSnapshotForCloudDirectObject` field added to `Query`
+- Input field `accessVia` of type `AccessVia` with default value ACCESS_TYPE_UNSPECIFIED was added to input object type `ListFileResultFiltersInput`
+- Input field `shouldResurrectSnapshot` of type `Boolean` with default value false was added to input object type `StartEc2InstanceSnapshotExportJobInput`
+- Input field `shouldResurrectSnapshot` of type `Boolean` with default value false was added to input object type `StartExportRdsInstanceJobInput`
 - Field `AzureAdReverseRelationship`.relatedObjectIds is deprecated
 - Field `GetSkippedTeamsSiteReportResp`.totalSkippedSiteCount is deprecated
-- Input field `accessVia` of type `AccessVia` with default value ACCESS_TYPE_UNSPECIFIED was added to input object type `ListFileResultFiltersInput`
 - Field `Mutation`.downloadAuditLogCsvAsync is deprecated
 - Field `Mutation`.downloadReportCsvAsync is deprecated
 - Field `Mutation`.downloadReportPdfAsync is deprecated
 - Field `Query`.taskDetailGroupByConnection is deprecated
-- Input field `shouldResurrectSnapshot` of type `Boolean` with default value false was added to input object type `StartEc2InstanceSnapshotExportJobInput`
-- Input field `shouldResurrectSnapshot` of type `Boolean` with default value false was added to input object type `StartExportRdsInstanceJobInput`
 
 ## September 15, 2025
 
@@ -9817,13 +11519,13 @@ This changelog documents the evolution of the GraphQL schema across 60 versions.
 - `isK8SError` field added to `ServiceAccountInfo`
 - `backupCopyType` field added to `UnmanagedObjectDetail`
 - Input field `clusterId` of type `UUID`! was added to input object type `CloudDirectCheckSharePathReq`
+- Input field `shouldResurrectSnapshot` of type `Boolean` with default value false was added to input object type `StartExportAwsNativeEbsVolumeSnapshotJobInput`
 - Enum value CloudAccountFeature.AZURE_LAMINAR_OUTPOST_APPLICATION deprecation reason changed from `Use` LAMINAR_OUTPOST_APPLICATION instead.) to `Use` `LAMINAR_OUTPOST_APPLICATION` instead.
 - Enum value CloudAccountFeature.AZURE_LAMINAR_OUTPOST_MANAGED_IDENTITY deprecation reason changed from `Use` LAMINAR_OUTPOST_MANAGED_IDENTITY instead.) to `Use` `LAMINAR_OUTPOST_MANAGED_IDENTITY` instead.
 - Enum value CloudAccountFeature.AZURE_LAMINAR_TARGET_APPLICATION deprecation reason changed from `Use` LAMINAR_TARGET_APPLICATION instead.) to `Use` `LAMINAR_TARGET_APPLICATION` instead.
 - Enum value CloudAccountFeature.AZURE_LAMINAR_TARGET_MANAGED_IDENTITY deprecation reason changed from `Use` LAMINAR_TARGET_MANAGED_IDENTITY instead.) to `Use` `LAMINAR_TARGET_MANAGED_IDENTITY` instead.
 - Field `Mutation`.gcpCloudAccountDeleteProjects is deprecated
 - Field `Mutation`.gcpNativeDisableProject is deprecated
-- Input field `shouldResurrectSnapshot` of type `Boolean` with default value false was added to input object type `StartExportAwsNativeEbsVolumeSnapshotJobInput`
 
 ## September 01, 2025
 
@@ -9926,11 +11628,11 @@ This changelog documents the evolution of the GraphQL schema across 60 versions.
 - `nutanixVmSubObj` field added to `SnapshotSubObj`
 - `cloudAccountId` input field added to `UpdateCertificateUsagesForCloudAccountInput`
 - `userNote` input field added to `UpdateManagedVolumeInput`
+- Input field `endpointSuffix` of type `String` with default value "" was added to input object type `AzureEsConfigInput`
+- Input field `dynamicScalingEnabled` of type `Boolean` with default value false was added to input object type `ClusterConfigInput`
 - Enum value UpgradeType was added to enum `UpgradeInfoSortByEnum`
 - Field `AzureAdRelatedItemCount`.relationshipType is deprecated
-- Input field `endpointSuffix` of type `String` with default value "" was added to input object type `AzureEsConfigInput`
 - Input field `upgradeStatusCategory` of type [String!] was added to input object type `CdmUpgradeInfoFilterInput`
-- Input field `dynamicScalingEnabled` of type `Boolean` with default value false was added to input object type `ClusterConfigInput`
 - Field `GcpNativeDisk`.gcpNativeProject is deprecated
 - Field `GcpNativeGceInstance`.gcpNativeProject is deprecated
 
@@ -10440,8 +12142,8 @@ This changelog documents the evolution of the GraphQL schema across 60 versions.
 - Input field `clusterUuid` of type `UUID`! was added to input object type `SetShareExclusionsInput`
 - Input field `aksCustomPrivateDnsZoneId` of type `String` with default value "" was added to input object type `AzureExocomputeOptionalConfigInRegionInput`
 - Input field `documentTypeIds` of type [UUID!] with default value [] was added to input object type `CreatePolicyInput`
-- Field `Query`.tableFilters is deprecated
 - Input field `documentTypeIds` of type [UUID!] with default value [] was added to input object type `UpdatePolicyInput`
+- Field `Query`.tableFilters is deprecated
 
 ## August 04, 2025
 
@@ -10660,14 +12362,14 @@ This changelog documents the evolution of the GraphQL schema across 60 versions.
     - `isEmailEnabled`
 
 - Input field `gcpImageId` of type `String` with default value "" was added to input object type `AddNodesToCloudClusterInput`
-- Enum value AwsCloudExternalArtifact.EXOCOMPUTE_EKS_MASTERNODE_INSTANCE_PROFILE was deprecated with reason Instance profile corresponds to worker node in an EKS
 - Input field `userSelectedNfsInterfaces` of type [String!] with default value [] was added to input object type `NasSystemUpdateInput`
 - Input field `userSelectedSmbInterfaces` of type [String!] with default value [] was added to input object type `NasSystemUpdateInput`
 - Input field `decommissionedNutanixClusters` of type [NutanixClustersListElementInput!] with default value [] was added to input object type `NutanixPrismCentralPatchInput`
-- Input field `archivalLocationId` of type [String!] was added to input object type `PolarisSnapshotFilterInput`
 - Input field `userSelectedNfsInterfaces` of type [String!] with default value [] was added to input object type `UpdateNasNamespaceInputInput`
 - Input field `userSelectedSmbInterfaces` of type [String!] with default value [] was added to input object type `UpdateNasNamespaceInputInput`
 - Input field `userSelectedInterfaces` of type [String!] with default value [] was added to input object type `UpdateNasShareInput`
+- Enum value AwsCloudExternalArtifact.EXOCOMPUTE_EKS_MASTERNODE_INSTANCE_PROFILE was deprecated with reason Instance profile corresponds to worker node in an EKS
+- Input field `archivalLocationId` of type [String!] was added to input object type `PolarisSnapshotFilterInput`
 
 ## July 28, 2025
 

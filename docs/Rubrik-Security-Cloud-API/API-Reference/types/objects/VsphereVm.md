@@ -1,8 +1,8 @@
 # VsphereVm
 
-*No description available.*
+A vSphere virtual machine.
 
-**Implements:** [CdmHierarchyObject](../interfaces/CdmHierarchyObject.md), [CdmHierarchySnappableNew](../interfaces/CdmHierarchySnappableNew.md), [HierarchyObject](../interfaces/HierarchyObject.md), [HierarchySnappable](../interfaces/HierarchySnappable.md), [VsphereComputeClusterDescendantType](../interfaces/VsphereComputeClusterDescendantType.md), [VsphereContentLibraryDescendantType](../interfaces/VsphereContentLibraryDescendantType.md), [VsphereContentLibraryLibraryChildType](../interfaces/VsphereContentLibraryLibraryChildType.md), [VsphereDatacenterDescendantType](../interfaces/VsphereDatacenterDescendantType.md), [VsphereDatacenterFolderDescendantType](../interfaces/VsphereDatacenterFolderDescendantType.md), [VsphereFolderLogicalChildType](../interfaces/VsphereFolderLogicalChildType.md), [VsphereFolderDescendantType](../interfaces/VsphereFolderDescendantType.md), [VsphereHostPhysicalChildType](../interfaces/VsphereHostPhysicalChildType.md), [VsphereHostDescendantType](../interfaces/VsphereHostDescendantType.md), [VsphereVcenterDescendantType](../interfaces/VsphereVcenterDescendantType.md), [VsphereTagTagChildType](../interfaces/VsphereTagTagChildType.md), [VsphereTagDescendantType](../interfaces/VsphereTagDescendantType.md), [VsphereTagCategoryDescendantType](../interfaces/VsphereTagCategoryDescendantType.md), [VcdDescendantType](../interfaces/VcdDescendantType.md), [VcdLogicalChildType](../interfaces/VcdLogicalChildType.md), [VcdOrgDescendantType](../interfaces/VcdOrgDescendantType.md), [VcdOrgLogicalChildType](../interfaces/VcdOrgLogicalChildType.md), [VcdOrgVdcDescendantType](../interfaces/VcdOrgVdcDescendantType.md), [VcdOrgVdcLogicalChildType](../interfaces/VcdOrgVdcLogicalChildType.md), [VcdVappDescendantType](../interfaces/VcdVappDescendantType.md), [VcdVappLogicalChildType](../interfaces/VcdVappLogicalChildType.md), [VcdTopLevelDescendantType](../interfaces/VcdTopLevelDescendantType.md)
+**Implements:** [HierarchyObject](../interfaces/HierarchyObject.md), [CdmHierarchyObject](../interfaces/CdmHierarchyObject.md), [CdmHierarchySnappableNew](../interfaces/CdmHierarchySnappableNew.md), [HierarchySnappable](../interfaces/HierarchySnappable.md), [VsphereVcenterDescendantType](../interfaces/VsphereVcenterDescendantType.md), [VsphereComputeClusterDescendantType](../interfaces/VsphereComputeClusterDescendantType.md), [VsphereContentLibraryDescendantType](../interfaces/VsphereContentLibraryDescendantType.md), [VsphereContentLibraryLibraryChildType](../interfaces/VsphereContentLibraryLibraryChildType.md), [VsphereDatacenterDescendantType](../interfaces/VsphereDatacenterDescendantType.md), [VsphereDatacenterFolderDescendantType](../interfaces/VsphereDatacenterFolderDescendantType.md), [VsphereFolderLogicalChildType](../interfaces/VsphereFolderLogicalChildType.md), [VsphereFolderDescendantType](../interfaces/VsphereFolderDescendantType.md), [VsphereHostPhysicalChildType](../interfaces/VsphereHostPhysicalChildType.md), [VsphereHostDescendantType](../interfaces/VsphereHostDescendantType.md), [VsphereTagTagChildType](../interfaces/VsphereTagTagChildType.md), [VsphereTagDescendantType](../interfaces/VsphereTagDescendantType.md), [VsphereTagCategoryDescendantType](../interfaces/VsphereTagCategoryDescendantType.md), [VcdTopLevelDescendantType](../interfaces/VcdTopLevelDescendantType.md), [VcdDescendantType](../interfaces/VcdDescendantType.md), [VcdLogicalChildType](../interfaces/VcdLogicalChildType.md), [VcdOrgDescendantType](../interfaces/VcdOrgDescendantType.md), [VcdOrgLogicalChildType](../interfaces/VcdOrgLogicalChildType.md), [VcdOrgVdcDescendantType](../interfaces/VcdOrgVdcDescendantType.md), [VcdOrgVdcLogicalChildType](../interfaces/VcdOrgVdcLogicalChildType.md), [VcdVappDescendantType](../interfaces/VcdVappDescendantType.md), [VcdVappLogicalChildType](../interfaces/VcdVappLogicalChildType.md)
 
 ## Fields
 
@@ -15,7 +15,7 @@
 | authorizedOperations | [[Operation](../enums/Operation.md)!]! | The authorized operations on the object. |
 | blueprintId | String | ID of the recovery plan when the virtual machine is a child of the recovery plan. |
 | blueprintName | String | Name of the Recovery Plan when the virtual machine is a child of the Recovery Plan. |
-| cdmId | String! |  |
+| cdmId | String! | The ID of the workload on the Rubrik cluster. |
 | cdmLink | String! | A link to view the workload on the Rubrik cluster. For dev use only. |
 | cdmPendingObjectPauseAssignment | [PendingObjectPauseAssignmentStatus](../enums/PendingObjectPauseAssignmentStatus.md) | Object pause pending assignment details for CDM objects. |
 | cluster | [Cluster](Cluster.md)! | Rubrik cluster where this object originated. |
@@ -25,18 +25,20 @@
 | effectiveRetentionSlaDomain | [SlaDomain](../interfaces/SlaDomain.md) | Effective retention of the SLA Domain of the hierarchy object. |
 | effectiveSlaDomain | [SlaDomain](../interfaces/SlaDomain.md)! | Effective SLA Domain of the hierarchy object. |
 | effectiveSlaSourceObject | [PathNode](PathNode.md) | Path node of the effective SLA Domain source. |
+| futureLegalHoldInfo | [FutureLegalHoldInfo](FutureLegalHoldInfo.md) | Future legal hold rule configured for this object, if any. |
 | guestCredentialAuthorizationStatus | [GuestCredentialAuthorizationStatus](../enums/GuestCredentialAuthorizationStatus.md)! | Guest OS credentials authorization status. |
 | guestCredentialId | String! | ID of guest credential assigned to the virtual machine. |
-| guestOsName | String! |  |
+| guestOsName | String! | Guest OS name of the virtual machine. |
 | guestOsType | [GuestOsType](../enums/GuestOsType.md)! | The Guest OS type of this virtual machine. |
-| id | [UUID](../scalars/UUID.md)! | Object ID. |
+| id | [UUID](../scalars/UUID.md)! | ID of the hierarchy object. |
 | isActive | Boolean! | Specifies whether the virtual machine is active or not. |
 | isArrayIntegrationPossible | Boolean! | If Virtual Machine integration with storage array is possible. |
 | isBlueprintChild | Boolean! | Specifies whether the virtual machine is a child of a disaster recovery or local recovery Plan. |
-| isRelic | Boolean! |  |
+| isRelic | Boolean! | Whether the virtual machine is a relic. |
 | isReplica | Boolean | True if this object is a replica, its current cluster differs from its source (primary) cluster. False if the object resides on its source cluster. Null when the source cluster is unknown. |
 | latestUserNote | [LatestUserNote](LatestUserNote.md) | Latest user note information. |
-| linkedActiveVm | [LinkedActiveVm](LinkedActiveVm.md) | The active virtual machine in a linked group for this virtual machine. Returns the active virtual machine for any inactive member (relic or unarchived). Returns null for virtual machines not in a group or already active. Used to show 'inactive member' banner with link to active virtual machine. |
+| legallyHeldSnapshotCount | Int | Number of snapshots on legal hold for this object. |
+| linkedActiveVm | [LinkedActiveVm](LinkedActiveVm.md) | The active virtual machine in a linked group for this virtual machine. |
 | logicalPath | [[PathNode](PathNode.md)!]! | Sequential list of the logical ancestors of this object. |
 | missedSnapshotConnection | [MissedSnapshotCommonConnection](MissedSnapshotCommonConnection.md) | The list of missed snapshots for this workload. |
 | missedSnapshotGroupByConnection | [MissedSnapshotGroupByConnection](MissedSnapshotGroupByConnection.md) | The list of missed snapshots for this workload. |
@@ -59,7 +61,7 @@
 | physicalPath | [[PathNode](PathNode.md)!]! | Sequential list of the physical ancestors of this object. |
 | postBackupScript | [PrePostScript](PrePostScript.md) | Post-backup script. |
 | postSnapScript | [PrePostScript](PrePostScript.md) | Post-snap script. |
-| powerStatus | [VmPowerStatus](../enums/VmPowerStatus.md) |  |
+| powerStatus | [VmPowerStatus](../enums/VmPowerStatus.md) | Power status of the virtual machine. |
 | preBackupScript | [PrePostScript](PrePostScript.md) | Pre-backup script. |
 | primaryClusterLocation | [DataLocation](DataLocation.md)! | The source cluster of this object. Returned as a data location because there is no guarantee that Rubrik has knowledge about the source cluster. |
 | protectionDate | [DateTime](../scalars/DateTime.md) | Date at which the SLA Domain was assigned or inherited. |
@@ -72,15 +74,15 @@
 | slaPauseStatus | Boolean! | Pause status of the effective SLA Domain of the hierarchy object. |
 | snapshotConnection | [CdmSnapshotConnection](CdmSnapshotConnection.md) | The list of snapshots taken for this workload. |
 | snapshotConsistencyMandate | [ConsistencyLevelEnum](../enums/ConsistencyLevelEnum.md)! | Snapshot consistency mandate. |
-| snapshotConsistencySource | String | Fid of the object from where the snapshot consistency mandate is inherited. |
+| snapshotConsistencySource | String | ID of the object from which the snapshot consistency mandate is inherited. |
 | snapshotDistribution | [SnapshotDistribution](SnapshotDistribution.md)! | Distribution of the snapshots of the hierarchy object. |
 | snapshotGroupByConnection | [CdmSnapshotGroupByConnection](CdmSnapshotGroupByConnection.md) | Group-by connection for the snapshots of this workload. |
 | snapshotGroupBySummary | [CdmSnapshotGroupBySummaryConnection](CdmSnapshotGroupBySummaryConnection.md) | Group-by connection for the snapshots of this workload. |
 | templateType | [VmwareTemplateType](../enums/VmwareTemplateType.md)! | VMware virtual machine template type. |
 | vSphereLiveMounts | [VsphereLiveMountConnection](VsphereLiveMountConnection.md)! | List of Live Mounts for this virtual machine. |
 | vSphereMounts | [VsphereMountConnection](VsphereMountConnection.md)! | List of Live Mounts for this virtual machine. |
-| vmwareToolsInstalled | Boolean! |  |
-| vsphereTagPath | [[PathNode](PathNode.md)!]! |  |
+| vmwareToolsInstalled | Boolean! | Whether VMware tools are installed. |
+| vsphereTagPath | [[PathNode](PathNode.md)!]! | The vSphere tag path for this virtual machine. |
 | vsphereVirtualDisks | [VsphereVirtualDiskConnection](VsphereVirtualDiskConnection.md)! | List of virtual disks for this virtual machine. |
 
 ## Field Arguments
@@ -130,19 +132,25 @@
 | snapshotGroupBySummary | filter | [CdmSnapshotFilterInput](../inputs/CdmSnapshotFilterInput.md) | Filter snapshot connection. |
 | snapshotGroupBySummary | groupBy *(required)* | [CdmSnapshotGroupByEnum](../enums/CdmSnapshotGroupByEnum.md)! | Groups snapshots by field. |
 | vSphereLiveMounts | first | Int | Returns the first n elements from the list. |
-| vSphereLiveMounts | after | String | Returns the elements in the list that occur after the specified cursor. |
-| vSphereLiveMounts | filter | [[VsphereLiveMountFilterInput](../inputs/VsphereLiveMountFilterInput.md)!] | Filter for virtual machine Live Mounts. |
-| vSphereLiveMounts | sortBy | [VsphereLiveMountSortBy](../inputs/VsphereLiveMountSortBy.md) | Sort virtual machine Live Mounts. |
+| vSphereLiveMounts | after | String | An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results. |
+| vSphereLiveMounts | last | Int | Returns the last n elements from the list. |
+| vSphereLiveMounts | before | String | An opaque cursor returned from a previous query's startCursor field. Pass this value verbatim to retrieve the previous page of results. |
+| vSphereLiveMounts | filter | [[VsphereLiveMountFilterInput](../inputs/VsphereLiveMountFilterInput.md)!] | Filter for this virtual machine's Live Mounts. |
+| vSphereLiveMounts | sortBy | [VsphereLiveMountSortBy](../inputs/VsphereLiveMountSortBy.md) | Sort order field for this virtual machine's Live Mounts. |
 | vSphereLiveMounts | sortOrder | [SortOrder](../enums/SortOrder.md) | Sorts the order of results. |
 | vSphereMounts | first | Int | Returns the first n elements from the list. |
-| vSphereMounts | after | String | Returns the elements in the list that occur after the specified cursor. |
-| vSphereMounts | filter | [VSphereMountFilter](../inputs/VSphereMountFilter.md) | Filter for virtual machine Live Mounts. |
-| vSphereMounts | sortBy | [VsphereMountSortBy](../enums/VsphereMountSortBy.md) |  |
+| vSphereMounts | after | String | An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results. |
+| vSphereMounts | last | Int | Returns the last n elements from the list. |
+| vSphereMounts | before | String | An opaque cursor returned from a previous query's startCursor field. Pass this value verbatim to retrieve the previous page of results. |
+| vSphereMounts | filter | [VSphereMountFilter](../inputs/VSphereMountFilter.md) | Filter for this virtual machine's mounts. |
+| vSphereMounts | sortBy | [VsphereMountSortBy](../enums/VsphereMountSortBy.md) | Sort order field for this virtual machine's mounts. |
 | vSphereMounts | sortOrder | [SortOrder](../enums/SortOrder.md) | Sorts the order of results. |
 | vsphereVirtualDisks | first | Int | Returns the first n elements from the list. |
-| vsphereVirtualDisks | after | String | Returns the elements in the list that occur after the specified cursor. |
-| vsphereVirtualDisks | filter | [VsphereVirtualDiskFilter](../inputs/VsphereVirtualDiskFilter.md) | Filter for virtual machine virtual disks. |
-| vsphereVirtualDisks | sortBy | [VsphereVirtualDiskSortBy](../enums/VsphereVirtualDiskSortBy.md) | Sort virtual disks by field. |
+| vsphereVirtualDisks | after | String | An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results. |
+| vsphereVirtualDisks | last | Int | Returns the last n elements from the list. |
+| vsphereVirtualDisks | before | String | An opaque cursor returned from a previous query's startCursor field. Pass this value verbatim to retrieve the previous page of results. |
+| vsphereVirtualDisks | filter | [VsphereVirtualDiskFilter](../inputs/VsphereVirtualDiskFilter.md) | Filter for this virtual machine's virtual disks. |
+| vsphereVirtualDisks | sortBy | [VsphereVirtualDiskSortBy](../enums/VsphereVirtualDiskSortBy.md) | Sort order field for this virtual machine's virtual disks. |
 | vsphereVirtualDisks | sortOrder | [SortOrder](../enums/SortOrder.md) | Sorts the order of results. |
 
 ## Used By

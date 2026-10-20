@@ -1,6 +1,6 @@
 # updateS3CompatibleTarget
 
-*No description available.*
+Updates an existing S3 compatible archival target.
 
 ## Arguments
 
@@ -19,6 +19,7 @@
     ```graphql
     mutation UpdateS3CompatibleTarget($input: UpdateS3CompatibleTargetInput!) {
       updateS3CompatibleTarget(input: $input) {
+        archivalLocationPurpose
         clusterName
         consumedBytes
         failedTasks
@@ -54,11 +55,11 @@
     {
       "data": {
         "updateS3CompatibleTarget": {
+          "archivalLocationPurpose": "ADO",
           "clusterName": "example-string",
           "consumedBytes": 0,
           "failedTasks": 0,
-          "id": "example-string",
-          "isActive": true
+          "id": "example-string"
         }
       }
     }

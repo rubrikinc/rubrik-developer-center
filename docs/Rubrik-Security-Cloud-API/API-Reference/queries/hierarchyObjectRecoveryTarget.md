@@ -20,6 +20,7 @@ Returns a single hierarchy object to be used as a recovery target. Permission ch
     query HierarchyObjectRecoveryTarget($fid: UUID!) {
       hierarchyObjectRecoveryTarget(fid: $fid) {
         id
+        legallyHeldSnapshotCount
         name
         numWorkloadDescendants
         objectType

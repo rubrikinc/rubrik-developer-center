@@ -7,7 +7,7 @@ Paginated list of Live Mounts.
 | Argument | Type | Description |
 |----------|------|-------------|
 | first | Int | Returns the first n elements from the list. |
-| after | String | Returns the elements in the list that occur after the specified cursor. |
+| after | String | An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results. |
 | sortBy | [HierarchySortByField](../types/enums/HierarchySortByField.md) | Sort hierarchy objects according to the hierarchy field. |
 | sortOrder | [SortOrder](../types/enums/SortOrder.md) | Sorts the order of results. |
 | filter | [[Filter](../types/inputs/Filter.md)!] | Hierarchy object filter. |
@@ -28,6 +28,7 @@ Paginated list of Live Mounts.
           cdmPendingObjectPauseAssignment
           id
           isReplica
+          legallyHeldSnapshotCount
           logicalUsedSize
           name
           numChannels
@@ -66,8 +67,8 @@ Paginated list of Live Mounts.
                 "cdmPendingObjectPauseAssignment": "NO_PENDING_PAUSE_ASSIGNMENT",
                 "id": "00000000-0000-0000-0000-000000000000",
                 "isReplica": true,
-                "logicalUsedSize": 0,
-                "name": "example-string"
+                "legallyHeldSnapshotCount": 0,
+                "logicalUsedSize": 0
               }
             ]
           ],

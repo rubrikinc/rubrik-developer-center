@@ -23,6 +23,5 @@ Supported in v5.0+
 - [StorageArrayDetail.connectionStatus](StorageArrayDetail.md)
 - [UpdateNutanixClusterReply.connectionStatus](UpdateNutanixClusterReply.md)
 - [UpdateNutanixPrismCentralReply.connectionStatus](UpdateNutanixPrismCentralReply.md)
-- [VcdVcenterConnectionState.status](VcdVcenterConnectionState.md)
 - [VcenterSummary.connectionStatus](VcenterSummary.md)
 - [VsphereVcenter.connectionStatus](VsphereVcenter.md)

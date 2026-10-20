@@ -27,6 +27,7 @@ Summary of the given Active Directory domain.
         id
         isArchived
         isReplica
+        legallyHeldSnapshotCount
         name
         numWorkloadDescendants
         objectType

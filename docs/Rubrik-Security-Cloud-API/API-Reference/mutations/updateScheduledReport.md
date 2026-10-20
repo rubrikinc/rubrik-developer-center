@@ -6,7 +6,7 @@ Update a scheduled report.
 
 | Argument | Type | Description |
 |----------|------|-------------|
-| input *(required)* | [UpdateScheduledReportInput](../types/inputs/UpdateScheduledReportInput.md)! |  |
+| input *(required)* | [UpdateScheduledReportInput](../types/inputs/UpdateScheduledReportInput.md)! | Input for updating a scheduled report. |
 
 ## Returns
 

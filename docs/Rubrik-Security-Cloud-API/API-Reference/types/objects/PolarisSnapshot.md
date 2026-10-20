@@ -10,6 +10,7 @@ A cloud-managed snapshot type that extends the generic snapshot with additional 
 |-------|------|-------------|
 | archivalLocationId | String | Specifies the ID of the location where the snapshot is uploaded to. |
 | archivalLocationName | String | Specifies the name of the location where the snapshot is uploaded. |
+| archivalLocationPurpose | [StorageLocationPurpose](../enums/StorageLocationPurpose.md) | Specifies the purpose of the location where the snapshot is uploaded. Null when the location cannot be resolved. |
 | archivedSnapshots | [[ArchivedSnapshot](ArchivedSnapshot.md)!] | Archived copies of the snapshot. |
 | backupType | [BackupType](../enums/BackupType.md) | Specifies backup type for this snapshot. |
 | consistencyLevel | [SnapshotConsistencyLevel](../enums/SnapshotConsistencyLevel.md)! | The consistency level of the snapshot. |

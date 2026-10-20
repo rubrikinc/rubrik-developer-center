@@ -31,6 +31,7 @@ Information about a fileset template.
         includes
         isArrayEnabled
         isReplica
+        legallyHeldSnapshotCount
         name
         numWorkloadDescendants
         objectType

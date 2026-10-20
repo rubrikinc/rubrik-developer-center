@@ -8,6 +8,7 @@ Hits stats of an individual data type within a data category.
 |-------|------|-------------|
 | dataTypeId | String! | Identifier of the data type. |
 | id | String! | Identifier of the data type for a given data category. |
+| objectCount | [Long](../scalars/Long.md)! | Number of objects with hits of the data type. |
 | totalHits | [Long](../scalars/Long.md)! | Total hits of the data type. |
 | totalViolatedHits | [Long](../scalars/Long.md)! | Total violated hits of the data type. |
 

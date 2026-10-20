@@ -32,6 +32,7 @@ Provides details for the MongoDB source cluster identified by the fid.
         isRelic
         isReplica
         lastRefreshTime
+        legallyHeldSnapshotCount
         managementType
         name
         numWorkloadDescendants

@@ -7,9 +7,9 @@ Returns total sensitive hits grouped by object type and also gives policy level 
 | Argument | Type | Description |
 |----------|------|-------------|
 | first | Int | Returns the first n elements from the list. |
-| after | String | Returns the elements in the list that occur after the specified cursor. |
+| after | String | An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results. |
 | last | Int | Returns the last n elements from the list. |
-| before | String | Returns the elements in the list that occur before the specified cursor. |
+| before | String | An opaque cursor returned from a previous query's startCursor field. Pass this value verbatim to retrieve the previous page of results. |
 | timelineDate *(required)* | String! | Date for which the results will be retrieved. |
 | historicalDeltaDays *(required)* | Int! | Number of historical days to go backward in time to calculate the delta. |
 | includeWhitelistedResults | Boolean | Specifies whether allowlisted results should be included. |

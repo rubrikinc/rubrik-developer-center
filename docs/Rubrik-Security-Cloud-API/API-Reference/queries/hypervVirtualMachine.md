@@ -27,6 +27,7 @@ Details of the given Hyper-V Virtual Machine.
         id
         isRelic
         isReplica
+        legallyHeldSnapshotCount
         name
         numWorkloadDescendants
         objectType

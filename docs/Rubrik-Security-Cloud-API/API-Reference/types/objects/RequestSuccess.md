@@ -30,6 +30,5 @@ Response returned for successful API requests.
 - [mutation: updateVsphereVm](../../mutations/updateVsphereVm.md)
 - [mutation: updateVsphereVmNew](../../mutations/updateVsphereVmNew.md)
 - [mutation: upgradeIoFilter](../../mutations/upgradeIoFilter.md)
-- [mutation: vsphereExcludeVmDisks](../../mutations/vsphereExcludeVmDisks.md)
 - [mutation: vsphereVmRegisterAgent](../../mutations/vsphereVmRegisterAgent.md)
 - [mutation: vsphereVmRegisterAgentWithOrg](../../mutations/vsphereVmRegisterAgentWithOrg.md)

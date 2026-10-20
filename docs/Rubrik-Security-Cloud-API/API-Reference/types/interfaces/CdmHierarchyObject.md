@@ -16,9 +16,11 @@ A Rubrik CDM Managed Hierarchy object.
 | effectiveRetentionSlaDomain | [SlaDomain](SlaDomain.md) | Effective retention of the SLA Domain of the hierarchy object. |
 | effectiveSlaDomain | [SlaDomain](SlaDomain.md)! | Effective SLA Domain of the hierarchy object. |
 | effectiveSlaSourceObject | [PathNode](../objects/PathNode.md) | Path node of the effective SLA Domain source. |
+| futureLegalHoldInfo | [FutureLegalHoldInfo](../objects/FutureLegalHoldInfo.md) | Future legal hold rule configured for this object, if any. |
 | id | [UUID](../scalars/UUID.md)! | ID of the hierarchy object. |
 | isReplica | Boolean | True if this object is a replica, its current cluster differs from its source (primary) cluster. False if the object resides on its source cluster. Null when the source cluster is unknown. |
 | latestUserNote | [LatestUserNote](../objects/LatestUserNote.md) | Latest user note information. |
+| legallyHeldSnapshotCount | Int | Number of snapshots on legal hold for this object. |
 | logicalPath | [[PathNode](../objects/PathNode.md)!]! | Sequential list of the logical ancestors of this object. |
 | name | String! | Name of the hierarchy object. |
 | numWorkloadDescendants | Int! | Number of descendant workloads of this object. |
@@ -73,6 +75,9 @@ A Rubrik CDM Managed Hierarchy object.
 - [HypervServer](../objects/HypervServer.md)
 - [HypervisorEnvironmentV1](../objects/HypervisorEnvironmentV1.md)
 - [HypervisorVirtualMachineV1](../objects/HypervisorVirtualMachineV1.md)
+- [InformixInstance](../objects/InformixInstance.md)
+- [IrisdbDatabase](../objects/IrisdbDatabase.md)
+- [IrisdbInstance](../objects/IrisdbInstance.md)
 - [KubernetesCluster](../objects/KubernetesCluster.md)
 - [KubernetesLabel](../objects/KubernetesLabel.md)
 - [KubernetesNamespaceType](../objects/KubernetesNamespaceType.md)
@@ -120,6 +125,7 @@ A Rubrik CDM Managed Hierarchy object.
 - [OracleHost](../objects/OracleHost.md)
 - [OracleRac](../objects/OracleRac.md)
 - [PhysicalHost](../objects/PhysicalHost.md)
+- [PingFederateClusterV1](../objects/PingFederateClusterV1.md)
 - [PostgreSQLDatabase](../objects/PostgreSQLDatabase.md)
 - [PostgreSQLDbCluster](../objects/PostgreSQLDbCluster.md)
 - [ProxmoxClusterV1](../objects/ProxmoxClusterV1.md)
@@ -132,14 +138,14 @@ A Rubrik CDM Managed Hierarchy object.
 - [SapHanaDatabase](../objects/SapHanaDatabase.md)
 - [SapHanaSystem](../objects/SapHanaSystem.md)
 - [ShareFileset](../objects/ShareFileset.md)
-- [Vcd](../objects/Vcd.md)
+- [SnapMirrorCloud](../objects/SnapMirrorCloud.md)
 - [VcdOrg](../objects/VcdOrg.md)
-- [VcdOrgVdc](../objects/VcdOrgVdc.md)
 - [VcdVapp](../objects/VcdVapp.md)
-- [VcdVimServer](../objects/VcdVimServer.md)
 - [VolumeGroup](../objects/VolumeGroup.md)
 - [VsphereComputeCluster](../objects/VsphereComputeCluster.md)
+- [VsphereContentLibrary](../objects/VsphereContentLibrary.md)
 - [VsphereDatacenter](../objects/VsphereDatacenter.md)
+- [VsphereDatacenterFolder](../objects/VsphereDatacenterFolder.md)
 - [VsphereDatastore](../objects/VsphereDatastore.md)
 - [VsphereDatastoreCluster](../objects/VsphereDatastoreCluster.md)
 - [VsphereFolder](../objects/VsphereFolder.md)

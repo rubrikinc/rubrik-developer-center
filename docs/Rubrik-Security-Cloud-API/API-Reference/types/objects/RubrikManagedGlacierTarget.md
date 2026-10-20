@@ -8,6 +8,7 @@ Information about the Amazon Glacier target created on Rubrik.
 
 | Field | Type | Description |
 |-------|------|-------------|
+| archivalLocationPurpose | [StorageLocationPurpose](../enums/StorageLocationPurpose.md) | Purpose of the target (e.g. CNP_BAAS for BaaS, PURPOSE_DEFAULT for user-created). Null on older servers that don't populate the field. |
 | cloudAccount | [CloudAccount](../interfaces/CloudAccount.md)! | Cloud account details of the Amazon Glacier target. |
 | cluster | [Cluster](Cluster.md)! | The cluster to which this target belongs. |
 | clusterName | String | Name of the Rubrik cluster that archives to this archival location. |

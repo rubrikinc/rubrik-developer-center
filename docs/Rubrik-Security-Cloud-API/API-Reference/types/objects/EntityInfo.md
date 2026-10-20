@@ -13,6 +13,9 @@ The basic entity Information.
 
 **Referenced by**
 
+- [InformixInstance.entityInfo](InformixInstance.md)
+- [IrisdbDatabase.entityInfo](IrisdbDatabase.md)
+- [IrisdbInstance.entityInfo](IrisdbInstance.md)
 - KosmosDiscoverableEntityType.entityInfo
 - KosmosHierarchyObjectType.entityInfo
 - KosmosLeafHierarchyObjectType.entityInfo

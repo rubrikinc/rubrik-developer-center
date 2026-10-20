@@ -10,6 +10,7 @@ Specific information for Azure target created on Rubrik.
 |-------|------|-------------|
 | accessKey | String | Access key of the Azure target. |
 | accessTier | [AzureStorageTier](../enums/AzureStorageTier.md) | Access tier of the Azure target. |
+| archivalLocationPurpose | [StorageLocationPurpose](../enums/StorageLocationPurpose.md) | Purpose of the target (e.g. CNP_BAAS for BaaS, PURPOSE_DEFAULT for user-created). Null on older servers that don't populate the field. |
 | bypassProxy | Boolean! | Specifies whether the proxy settings should be bypassed for creating this target location. |
 | cloudAccount | [CloudAccount](../interfaces/CloudAccount.md)! | Cloud account details of the Azure target. |
 | cloudNativeCompanion | [AzureCloudNativeTargetCompanion](AzureCloudNativeTargetCompanion.md) | Cloud native information of the Azure target. |

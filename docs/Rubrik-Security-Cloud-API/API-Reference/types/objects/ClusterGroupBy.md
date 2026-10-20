@@ -15,15 +15,15 @@ Cluster data with groupby info applied to it.
 | Field | Argument | Type | Description |
 |-------|----------|------|-------------|
 | clusterConnection | first | Int | Returns the first n elements from the list. |
-| clusterConnection | after | String | Returns the elements in the list that occur after the specified cursor. |
+| clusterConnection | after | String | An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results. |
 | clusterConnection | last | Int | Returns the last n elements from the list. |
-| clusterConnection | before | String | Returns the elements in the list that occur before the specified cursor. |
+| clusterConnection | before | String | An opaque cursor returned from a previous query's startCursor field. Pass this value verbatim to retrieve the previous page of results. |
 | clusterConnection | sortBy | [ClusterSortByEnum](../enums/ClusterSortByEnum.md) | Sort clusters by field. |
 | clusterConnection | sortOrder | [SortOrder](../enums/SortOrder.md) | Cluster sort order. |
 | clusterGroupBy | first | Int | Returns the first n elements from the list. |
-| clusterGroupBy | after | String | Returns the elements in the list that occur after the specified cursor. |
+| clusterGroupBy | after | String | An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results. |
 | clusterGroupBy | last | Int | Returns the last n elements from the list. |
-| clusterGroupBy | before | String | Returns the elements in the list that occur before the specified cursor. |
+| clusterGroupBy | before | String | An opaque cursor returned from a previous query's startCursor field. Pass this value verbatim to retrieve the previous page of results. |
 | clusterGroupBy | groupBy *(required)* | [ClusterGroupByEnum](../enums/ClusterGroupByEnum.md)! | Group by field. |
 
 ## Used By

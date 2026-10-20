@@ -32,6 +32,7 @@ Get details of a GCP Cloud SQL instance.
         isProtectionOnboarded
         isRelic
         kmsKey
+        legallyHeldSnapshotCount
         name
         nativeId
         nativeName

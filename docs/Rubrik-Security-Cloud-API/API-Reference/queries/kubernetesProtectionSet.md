@@ -33,6 +33,7 @@ Summary of a Kubernetes Protection Set.
         k8sClusterName
         k8sClusterUuid
         labelSelector
+        legallyHeldSnapshotCount
         name
         namespace
         namespaceExcludePatterns

@@ -25,6 +25,7 @@
         id
         isRelic
         k8sClusterId
+        legallyHeldSnapshotCount
         name
         namespaceName
         numPvcs

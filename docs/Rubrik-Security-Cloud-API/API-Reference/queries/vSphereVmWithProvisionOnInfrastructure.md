@@ -36,6 +36,7 @@ Returns compute resources information for a single vsphere virtual machine to be
         isBlueprintChild
         isRelic
         isReplica
+        legallyHeldSnapshotCount
         name
         numWorkloadDescendants
         objectType

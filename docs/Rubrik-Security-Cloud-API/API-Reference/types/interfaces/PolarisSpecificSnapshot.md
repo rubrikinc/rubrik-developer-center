@@ -10,8 +10,10 @@ Rubrik-specific information about snapshots of specific object types. Currently,
 
 ## Implemented By
 
+- [AwsNativeConfigSpecificSnapshot](../objects/AwsNativeConfigSpecificSnapshot.md)
 - [AwsNativeEc2InstanceSpecificSnapshot](../objects/AwsNativeEc2InstanceSpecificSnapshot.md)
 - [AwsNativeS3SpecificSnapshot](../objects/AwsNativeS3SpecificSnapshot.md)
+- [AzureCosmosNosqlContainerSpecificSnapshot](../objects/AzureCosmosNosqlContainerSpecificSnapshot.md)
 - [AzureNativeStorageAccountSpecificSnapshot](../objects/AzureNativeStorageAccountSpecificSnapshot.md)
 - [AzureNativeVmSpecificSnapshot](../objects/AzureNativeVmSpecificSnapshot.md)
 - [AzurePostgresFlexibleServerSpecificSnapshot](../objects/AzurePostgresFlexibleServerSpecificSnapshot.md)

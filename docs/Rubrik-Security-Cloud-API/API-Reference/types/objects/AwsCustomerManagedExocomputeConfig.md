@@ -10,7 +10,7 @@ AWS Customer Managed Exocompute Configuration in a region.
 |-------|------|-------------|
 | authServerRegion | [AwsAuthServerBasedCloudAccountRegion](../enums/AwsAuthServerBasedCloudAccountRegion.md) | Auth server-based region (ISO/ISOB), if applicable. |
 | byokClusterId | String! | Cluster ID of the customer managed exocompute. |
-| clusterName | String! |  |
+| clusterName | String! | Name of the customer managed exocompute cluster. |
 | configUuid | [UUID](../scalars/UUID.md)! | Exocompute configuration UUID. |
 | hasPcr | Boolean! | Whether this Exocompute uses a Private Container Registry (PCR). |
 | healthCheckStatus | [ExocomputeHealthCheckStatus](ExocomputeHealthCheckStatus.md)! | Status of the latest Exocompute health check. |

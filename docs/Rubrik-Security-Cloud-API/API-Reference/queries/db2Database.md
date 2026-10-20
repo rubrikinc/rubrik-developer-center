@@ -33,6 +33,7 @@ Details of a db2 database for a given fid.
         isRelic
         isReplica
         lastSyncTime
+        legallyHeldSnapshotCount
         logBackupThreshold
         name
         numWorkloadDescendants

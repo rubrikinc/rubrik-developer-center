@@ -35,6 +35,7 @@ Refers to AWS Relational Database Service (RDS) represented by a specific ID. Fo
         isMultiAz
         isProtectable
         isRelic
+        legallyHeldSnapshotCount
         maintenanceWindow
         name
         nativeName

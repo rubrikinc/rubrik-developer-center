@@ -27,6 +27,7 @@ Summary of a FusionCompute network.
         hostIds
         id
         isReplica
+        legallyHeldSnapshotCount
         name
         networkName
         networkType

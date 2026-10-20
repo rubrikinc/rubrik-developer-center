@@ -11,6 +11,7 @@ Request for restoring Teams channel conversations. The account, user, and RSC or
 | channelRecoveryType | [ChannelMembershipType](../enums/ChannelMembershipType.md)! | Specifies whether the channel being restored is STANDARD or PRIVATE. |
 | destTeamsChannelInfo | [TeamsChannelInfo](TeamsChannelInfo.md) | Information about the destination Teams channel. |
 | inplaceRestoreConfig | [InplaceRestoreConfig](InplaceRestoreConfig.md) | In-place restore configuration for the restore job. |
+| leaseId | String | ID of the just-in-time permission elevation lease covering this restore's write permissions, if elevation was required. Empty for full-access-mode apps. |
 | o365AppId | String! | UUID of the O365 App used for authorization. |
 | recoverWithLatestPermissions | Boolean! | Specifies whether the newly created Teams channel should have the latest permissions, which maybe different from the permissions at backup time. |
 | refreshTokenEncrypted | String! | Encrypted refresh token. |

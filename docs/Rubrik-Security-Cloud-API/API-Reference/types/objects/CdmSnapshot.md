@@ -11,6 +11,7 @@ A snapshot of a workload managed by a Rubrik cluster.
 | activeDirectoryAppMetadata | [ActiveDirectoryAppMetadata](ActiveDirectoryAppMetadata.md) | Active Directory specific metadata for the snapshot. Null if snapshot is not of a domain controller. |
 | aggregateSnapshotLocationDetail | [AggregateSnapshotLocationDetail](AggregateSnapshotLocationDetail.md) | Aggregate snapshot location detail, if set. |
 | archivalLocations | [[DataLocation](DataLocation.md)!] | Archival locations where the snapshot is present. |
+| archivalTieringStatus | [[ArchivalTieringStatus](ArchivalTieringStatus.md)!]! | Per-location archival tiering status. One entry per archival location for which CDM has written tiering history. Empty when the snapshot has never been tiered to cold storage. |
 | cdmId | String! | The CDM internal ID. |
 | cdmVersion | String! | The CDM version. |
 | cdmWorkloadSnapshot | [CdmWorkloadSnapshot](CdmWorkloadSnapshot.md) | Snapshot of a Rubrik CDM workload. |
@@ -28,6 +29,7 @@ A snapshot of a workload managed by a Rubrik cluster.
 | hypervVirtualMachineAppMetadata | [HypervAppMetadata](HypervAppMetadata.md) | Hyper-V virtual machine-specific metadata. Null if the snapshot is not of a Hyper-V virtual machine. |
 | id | [UUID](../scalars/UUID.md)! | Unique identifier for this snapshot. |
 | indexingAttempts | [Long](../scalars/Long.md)! | Number of indexing attempts. |
+| irisdbInstanceAppMetadata | [IrisdbInstanceAppMetadata](IrisdbInstanceAppMetadata.md) | IRIS DB instance-specific metadata carrying the snapshot statistics and backup type. Null if the snapshot is not of an IRIS DB instance. |
 | isAnomaly | Boolean! | Flag if the snapshot is an anomaly. |
 | isCorrupted | Boolean! | Whether the snapshot is corrupted. |
 | isCustomRetentionApplied | Boolean | Whether custom retention is applied. |
@@ -111,4 +113,4 @@ A snapshot of a workload managed by a Rubrik cluster.
 - [FusionComputeVirtualMachine.newestIndexedSnapshot](FusionComputeVirtualMachine.md)
 - [FusionComputeVirtualMachine.newestReplicatedSnapshot](FusionComputeVirtualMachine.md)
 - [FusionComputeVirtualMachine.newestSnapshot](FusionComputeVirtualMachine.md)
-- *…and 159 more*
+- *…and 179 more*

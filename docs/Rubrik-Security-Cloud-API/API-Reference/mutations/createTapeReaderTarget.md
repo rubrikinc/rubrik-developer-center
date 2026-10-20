@@ -19,6 +19,7 @@ Creates a reader location for a Tape archival location on a CDM cluster.
     ```graphql
     mutation CreateTapeReaderTarget($input: CreateTapeReaderTargetInput!) {
       createTapeReaderTarget(input: $input) {
+        archivalLocationPurpose
         clusterName
         consumedBytes
         failedTasks
@@ -63,11 +64,11 @@ Creates a reader location for a Tape archival location on a CDM cluster.
     {
       "data": {
         "createTapeReaderTarget": {
+          "archivalLocationPurpose": "ADO",
           "clusterName": "example-string",
           "consumedBytes": 0,
           "failedTasks": 0,
-          "id": "example-string",
-          "isActive": true
+          "id": "example-string"
         }
       }
     }

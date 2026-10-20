@@ -44,4 +44,4 @@ Represents pause status of an object.
 - [AzureNativeResourceGroup.objectPauseStatus](AzureNativeResourceGroup.md)
 - [AzureNativeResourceGroupBase.objectPauseStatus](AzureNativeResourceGroupBase.md)
 - [AzureNativeSubscription.objectPauseStatus](AzureNativeSubscription.md)
-- *…and 328 more*
+- *…and 332 more*

@@ -12,6 +12,7 @@ Request for restoring or exporting files and folders within a Teams channel.
 | filesToRestore | [[FileInfo](FileInfo.md)!]! | Files to restore. |
 | foldersToRestore | [[FolderInfo](FolderInfo.md)!]! | Folders to restore. |
 | inplaceRestoreConfig | [InplaceRestoreConfig](InplaceRestoreConfig.md) | In-place restore configuration; required for in-place restore actions. |
+| leaseId | String | ID of the just-in-time permission elevation lease covering this restore's write permissions, if elevation was required. Empty for full-access-mode apps. |
 | recoverWithLatestPermissions | Boolean! | Indicates whether the new channel will be created with the most recent permissions if a private channel is restored. |
 | shouldCreateDestChannel | Boolean! | Indicates whether a new channel must be created. |
 | snapshotSequenceNum | Int! | Specifies the sequence number of the snapshot being currently restored. |

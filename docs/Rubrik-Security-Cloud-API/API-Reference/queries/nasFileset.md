@@ -29,6 +29,7 @@ A NAS Fileset.
         isPassThrough
         isRelic
         isReplica
+        legallyHeldSnapshotCount
         name
         nasMigrationInfo
         numWorkloadDescendants

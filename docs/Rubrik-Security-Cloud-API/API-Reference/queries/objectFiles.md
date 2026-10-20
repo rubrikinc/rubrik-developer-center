@@ -7,9 +7,9 @@ Returns the classified files across objects for a given day.
 | Argument | Type | Description |
 |----------|------|-------------|
 | first | Int | Returns the first n elements from the list. |
-| after | String | Returns the elements in the list that occur after the specified cursor. |
+| after | String | An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results. |
 | last | Int | Returns the last n elements from the list. |
-| before | String | Returns the elements in the list that occur before the specified cursor. |
+| before | String | An opaque cursor returned from a previous query's startCursor field. Pass this value verbatim to retrieve the previous page of results. |
 | filter | [ListObjectFilesFiltersInput](../types/inputs/ListObjectFilesFiltersInput.md) | Filters to apply when listing object files. |
 | sort | [FileResultSortInput](../types/inputs/FileResultSortInput.md) | Sorts to apply when listing file results. |
 | day *(required)* | String! | Date in the format (YYYY-MM-DD). |

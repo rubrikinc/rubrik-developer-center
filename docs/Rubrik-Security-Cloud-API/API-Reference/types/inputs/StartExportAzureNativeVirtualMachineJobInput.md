@@ -1,28 +1,28 @@
 # StartExportAzureNativeVirtualMachineJobInput
 
-Input for the job to export the specified Azure Native Virtual Machine to the specified destination.
+Input for the job to export an Azure virtual machine from a snapshot.
 
 ## Fields
 
 | Field | Type | Description |
 |-------|------|-------------|
-| archivedSnapshotId | [UUID](../scalars/UUID.md) | ID of the archived snapshot to be exported. This field should be specified only when `snapshotType` is set to `Archived`. In such cases, the archived snapshot will be used for export. If `snapshotType` is not `Archived`, this field is ignored. |
-| availabilitySetNativeId | String | The native ID of the availability set used by the virtual machine created by the export job. |
-| destinationAvailabilityZone | String | The Availability Zone where the virtual machine created by the export job exists. When the region type does not support Availability Zones, this value is null. |
-| destinationKeyVaultName | String | Name of the key vault created in the destination region.This is required for cross region export of ADE enabled VMs. |
-| destinationRegion | [AzureNativeRegion](../enums/AzureNativeRegion.md)! | The region where the virtual machine created by the export job exists. |
-| destinationSubscriptionRubrikId | [UUID](../scalars/UUID.md) | The Rubrik ID of the Azure subscription to which the virtual machine is exported. When this value is not specified, the virtual machine is exported to the same Azure subscription. |
-| diskEncryptionSetNativeId | String | Native ID of the disk encryption set for encrypting the newly created disks. |
-| networkSecurityGroupNativeId | String | The native ID of the network security group used by the virtual machine created by the export job. |
+| archivedSnapshotId | [UUID](../scalars/UUID.md) | ID of the archived snapshot to export. This field should be specified only when `snapshotType` is set to `Archived`. |
+| availabilitySetNativeId | String | Native ID of the availability set the exported virtual machine joins. |
+| destinationAvailabilityZone | String | Availability zone the virtual machine is exported to. Leave empty for regions or virtual machine sizes that do not support availability zones. |
+| destinationKeyVaultName | String | Name of the key vault created in the destination region. Required for cross-region export of virtual machines with Azure Disk Encryption enabled. |
+| destinationRegion | [AzureNativeRegion](../enums/AzureNativeRegion.md)! | Azure region the virtual machine is exported to. |
+| destinationSubscriptionRubrikId | [UUID](../scalars/UUID.md) | Rubrik ID of the Azure subscription the virtual machine is exported to. When empty, the virtual machine is exported to the subscription it was backed up from. |
+| diskEncryptionSetNativeId | String | Native ID of the disk encryption set used to encrypt the disks created for the exported virtual machine. |
+| networkSecurityGroupNativeId | String | Native ID of the network security group applied to the exported virtual machine. |
 | recoveryDiskIds | [[UUID](../scalars/UUID.md)!] | Specifies a list of Azure disk unique native IDs that will be exported. When empty, all disks from the snapshot will be exported. |
 | recoveryPurpose | [RecoveryPurpose](../enums/RecoveryPurpose.md) | Purpose of the recovery operation. Set to SURGICAL_RECOVERY to automatically exclude quarantined files from the exported virtual machine (subject to feature availability for the account). Defaults to RECOVERY_PURPOSE_UNSPECIFIED, which preserves prior behavior. |
-| resourceGroupName | String! | The resource group associated with the virtual machine created by the export job. |
-| shouldEnableAcceleratedNetworking | Boolean | Specifies whether to enable accelerated networking for the virtual machine created by the export job. This value is false by default. |
-| shouldExportTags | Boolean! | Specifies whether to export the tags from the snapshot. |
-| shouldPowerOff | Boolean! | Specifies whether to export the virtual machine in a powered-down state. |
-| shouldUseReplica | Boolean | Specifies whether to recover from a replica of the source snapshot. |
-| snapshotId | [UUID](../scalars/UUID.md)! | The snapshot ID of the snapshot used to export a virtual machine. |
-| snapshotType | [AzureSnapshotType](../enums/AzureSnapshotType.md) | The type of the snapshot to recover from. |
-| subnetNativeId | String! | The native ID of the subnet used by the virtual machine created by the export job. |
-| virtualMachineName | String! | The name of the virtual machine created as a result of the export job. |
-| virtualMachineSize | String! | The size, in GiB, of the virtual machine created by the export job. |
+| resourceGroupName | String! | Name of the resource group the exported virtual machine is created in. |
+| shouldEnableAcceleratedNetworking | Boolean | Specifies whether accelerated networking is enabled on the exported virtual machine. |
+| shouldExportTags | Boolean! | Specifies whether the tags at the time of the snapshot are applied to the exported virtual machine. |
+| shouldPowerOff | Boolean! | Specifies whether the exported virtual machine is powered off after the export completes. |
+| shouldUseReplica | Boolean | Specifies whether the replica of the snapshot is used for the export. Ignored when `snapshotType` is specified. |
+| snapshotId | [UUID](../scalars/UUID.md)! | Snapshot ID of the snapshot from which the virtual machine is exported. |
+| snapshotType | [AzureSnapshotType](../enums/AzureSnapshotType.md) | Copy of the snapshot to export from. Defaults to the replica when `shouldUseReplica` is true, and to the source snapshot otherwise. |
+| subnetNativeId | String! | Native ID of the subnet the exported virtual machine is attached to. |
+| virtualMachineName | String! | Name of the exported virtual machine. |
+| virtualMachineSize | String! | Azure size of the exported virtual machine. |

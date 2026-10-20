@@ -16,6 +16,7 @@ ObjectTypeEnum covering all Rubrik cluster and RSC workload types.
 | AWS_NATIVE_S3_BUCKET | AWS native S3 Bucket. |
 | AZURE_AD_DIRECTORY | Azure AD Directory. |
 | AZURE_COSMOS_NOSQL_CONTAINER | Azure Cosmos NoSQL container. |
+| AZURE_DEVOPS_PROJECT_ARTIFACTS_FIXED_OBJECT | Azure DevOps project artifacts (feeds and packages). |
 | AZURE_DEVOPS_PROJECT_FIXED_OBJECT | Azure DevOps Developer Collaboration. |
 | AZURE_DEVOPS_REPOSITORY | Azure DevOps Repository. |
 | AZURE_POSTGRES_FLEXIBLE_SERVER | Azure Postgres Flexible Server. |
@@ -45,14 +46,16 @@ ObjectTypeEnum covering all Rubrik cluster and RSC workload types.
 | Fileset | Fileset. |
 | GCP_BIGQUERY_DATASET | GCP BigQuery dataset. |
 | GCP_CLOUD_SQL_INSTANCE | GCP Cloud SQL Instance. |
+| GITHUB_ORG_PACKAGES_FIXED_OBJECT | GitHub organization packages. |
 | GITHUB_REPOSITORY | GitHub Repository. |
 | GLUE_ICEBERG_TABLE | Glue Iceberg table. |
+| GOOGLE_WORKSPACE_GROUPS_METADATA | Google Workspace Groups Metadata. |
 | GOOGLE_WORKSPACE_SHARED_DRIVE | Google Workspace Shared Drive. |
 | GOOGLE_WORKSPACE_USER_DRIVE | Google Workspace User Drive. |
 | GOOGLE_WORKSPACE_USER_MAILBOX | Google Workspace User Mailbox. |
 | GcpNativeDisk | GCP native disk. |
 | GcpNativeGCEInstance | GCP native GCE instance. |
-| HVM_VIRTUAL_MACHINE | HPE Virtual Machine Essentials virtual machine. |
+| HPE_VME_VIRTUAL_MACHINE | HPE Virtual Machine Essentials virtual machine. |
 | Hdfs | Hadoop Distributed File System. |
 | HypervVirtualMachine | Hyper-V virtual machine. |
 | INFORMIX_INSTANCE | Informix Instance. |

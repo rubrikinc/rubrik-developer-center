@@ -26,6 +26,7 @@ Retrieves an Azure SQL Managed Instance Database. Refers to the database engine 
         exocomputeConfigured
         id
         isRelic
+        legallyHeldSnapshotCount
         name
         numWorkloadDescendants
         objectType

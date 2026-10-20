@@ -43,7 +43,7 @@ AwsValidatePermissions validates the permissions for the given AWS cloud account
               "cloudAccountNativeId": "example-string",
               "numMissingPermissions": 0,
               "permissionMissingForSimulation": true,
-              "status": "FAILURE"
+              "region": "example-string"
             }
           ]
         }

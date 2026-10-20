@@ -1,6 +1,6 @@
 # vSphereComputeCluster
 
-*No description available.*
+Details of the vSphere compute cluster with the given Rubrik ID.
 
 ## Arguments
 
@@ -26,6 +26,7 @@
         id
         ioFilterStatus
         isReplica
+        legallyHeldSnapshotCount
         name
         numWorkloadDescendants
         objectType

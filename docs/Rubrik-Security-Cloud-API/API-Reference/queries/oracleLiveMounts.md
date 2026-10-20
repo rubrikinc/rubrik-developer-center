@@ -7,7 +7,7 @@ Paginated list of Oracle Live Mounts.
 | Argument | Type | Description |
 |----------|------|-------------|
 | first | Int | Returns the first n elements from the list. |
-| after | String | Returns the elements in the list that occur after the specified cursor. |
+| after | String | An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results. |
 | filters | [[OracleLiveMountFilterInput](../types/inputs/OracleLiveMountFilterInput.md)!] | Filter for Oracle live mounts. |
 | sortBy | [OracleLiveMountSortBy](../types/inputs/OracleLiveMountSortBy.md) | Sort by argument for Oracle live mounts. |
 

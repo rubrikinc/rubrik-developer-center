@@ -1,6 +1,6 @@
 # CustomReportFiltersConfig
 
-*No description available.*
+Filters for custom reports data.
 
 ## Fields
 

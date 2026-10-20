@@ -1,6 +1,6 @@
 # vSphereTagCategory
 
-*No description available.*
+Details of the vSphere tag category with the given Rubrik ID.
 
 ## Arguments
 
@@ -24,6 +24,7 @@
         id
         isFilterCategory
         isReplica
+        legallyHeldSnapshotCount
         name
         numWorkloadDescendants
         objectType
@@ -58,7 +59,7 @@
           "id": "00000000-0000-0000-0000-000000000000",
           "isFilterCategory": true,
           "isReplica": true,
-          "name": "example-string",
+          "legallyHeldSnapshotCount": 0,
           "allOrgs": [
             {
               "allUrls": [

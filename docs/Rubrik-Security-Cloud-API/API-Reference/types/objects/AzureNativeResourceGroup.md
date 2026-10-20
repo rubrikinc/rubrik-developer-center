@@ -27,8 +27,10 @@ An Azure Native Resource Group. Refers to a collection of resources in which mul
 | effectiveRetentionSlaDomain | [SlaDomain](../interfaces/SlaDomain.md) | Effective retention of the SLA Domain of the hierarchy object. |
 | effectiveSlaDomain | [SlaDomain](../interfaces/SlaDomain.md)! | Effective SLA Domain of the hierarchy object. |
 | effectiveSlaSourceObject | [PathNode](PathNode.md) | Path node of the effective SLA Domain source. |
+| futureLegalHoldInfo | [FutureLegalHoldInfo](FutureLegalHoldInfo.md) | Future legal hold rule configured for this object, if any. |
 | id | [UUID](../scalars/UUID.md)! | ID of the hierarchy object. |
 | isProtectable | Boolean! | Whether the resource group is protectable for the specified protection features. |
+| legallyHeldSnapshotCount | Int | Number of snapshots on legal hold for this object. |
 | logicalPath | [[PathNode](PathNode.md)!]! | Sequential list of the logical ancestors of this object. |
 | name | String! | Name of the hierarchy object. |
 | numWorkloadDescendants | Int! | Number of descendant workloads of this object. |
@@ -39,7 +41,7 @@ An Azure Native Resource Group. Refers to a collection of resources in which mul
 | protectedObjectTypeToSla | [[ProtectedObjectTypeToSla](ProtectedObjectTypeToSla.md)!]! | A list of mappings between protected object types and SLA Domains. |
 | region | [AzureNativeRegion](../enums/AzureNativeRegion.md)! | Azure region associated with the Resource Group. |
 | rscNativeObjectPendingSla | [CompactSlaDomain](CompactSlaDomain.md) | SLA Domain assignment which is pending on the Rubrik Security Cloud native objects. |
-| rscPendingObjectPauseAssignment | [PendingObjectPauseAssignmentStatus](../enums/PendingObjectPauseAssignmentStatus.md) | Object pause pending assignment details for RSC objects. |
+| rscPendingObjectPauseAssignment | [PendingObjectPauseAssignmentStatus](../enums/PendingObjectPauseAssignmentStatus.md) | Pending pause or unpause assignment for RSC-native objects. |
 | securityMetadata | [SecurityMetadata](SecurityMetadata.md) | Security posture metadata. |
 | slaAssignment | [SlaAssignmentTypeEnum](../enums/SlaAssignmentTypeEnum.md)! | SLA Domain assignment type for this object. |
 | slaPauseStatus | Boolean! | Pause status of the effective SLA Domain of the hierarchy object. |
@@ -55,9 +57,9 @@ An Azure Native Resource Group. Refers to a collection of resources in which mul
 | Field | Argument | Type | Description |
 |-------|----------|------|-------------|
 | azureNativeVirtualMachines | first | Int | Returns the first n elements from the list. |
-| azureNativeVirtualMachines | after | String | Returns the elements in the list that occur after the specified cursor. |
+| azureNativeVirtualMachines | after | String | An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results. |
 | azureNativeVirtualMachines | last | Int | Returns the last n elements from the list. |
-| azureNativeVirtualMachines | before | String | Returns the elements in the list that occur before the specified cursor. |
+| azureNativeVirtualMachines | before | String | An opaque cursor returned from a previous query's startCursor field. Pass this value verbatim to retrieve the previous page of results. |
 | azureNativeVirtualMachines | sortBy | [AzureNativeVirtualMachineSortFields](../enums/AzureNativeVirtualMachineSortFields.md) | Sort fields for list of Azure virtual machines. |
 | azureNativeVirtualMachines | sortOrder | [SortOrder](../enums/SortOrder.md) | Sorts the order of results. |
 | azureNativeVirtualMachines | virtualMachineFilters | [AzureNativeVirtualMachineFilters](../inputs/AzureNativeVirtualMachineFilters.md) |  |

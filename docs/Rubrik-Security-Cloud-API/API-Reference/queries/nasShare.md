@@ -35,6 +35,7 @@ A NAS Share.
         isRelic
         isReplica
         isStale
+        legallyHeldSnapshotCount
         name
         numWorkloadDescendants
         objectType

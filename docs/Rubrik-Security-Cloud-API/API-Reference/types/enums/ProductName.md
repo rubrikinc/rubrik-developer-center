@@ -7,12 +7,14 @@ Name of product.
 | Value | Description |
 |-------|-------------|
 | AAD | Azure Active Directory protection. |
+| AAD_B2B_RECOVERY | Entra ID B2B Recovery. |
 | AAD_CYBER_POSTURE | Entra ID Cyber Posture. |
 | AAD_CYBER_RECOVERY | Entra ID Cyber Recovery. |
 | ANNAPURNA | Annapurna. |
 | APPFLOWS | AppFlows. |
 | APPFLOWS_ADFR | AppFlows for Active Directory Forest Recovery. |
 | APPFLOWS_UCL | AppFlows UCL. |
+| ATLASSIAN_CONFLUENCE | Atlassian Confluence protection. |
 | ATLASSIAN_JIRA | Atlassian Jira protection. |
 | AWS_BAAS | AWS BaaS. |
 | BAAS_UNSTRUCTURED | BaaS Cloud Unstructured (S3) data protection. |
@@ -40,6 +42,7 @@ Name of product.
 | ONPREM_AD | On-premise Active Directory Protection. |
 | ONPREM_AD_CP | On-premises Active Directory Cyber Posture. |
 | ONPREM_AD_CR | On-premises Active Directory Cyber Recovery. |
+| POWER_PLATFORM | Microsoft Power Platform protection. |
 | RADAR | Radar. |
 | RADAR_BAAS | Anomaly Detection on BaaS workloads (full AWS). |
 | RADAR_BAAS_UNSTRUCTURED | Anomaly Detection on BaaS unstructured (AWS S3). |

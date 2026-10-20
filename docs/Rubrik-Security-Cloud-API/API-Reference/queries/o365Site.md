@@ -24,6 +24,7 @@ Details for the SharePoint site corresponding to the snappable ID.
         id
         isRansomwareInvestigationEnabled
         isRelic
+        legallyHeldSnapshotCount
         name
         numWorkloadDescendants
         objectId
@@ -62,7 +63,7 @@ Details for the SharePoint site corresponding to the snappable ID.
           "id": "00000000-0000-0000-0000-000000000000",
           "isRansomwareInvestigationEnabled": true,
           "isRelic": true,
-          "name": "example-string",
+          "legallyHeldSnapshotCount": 0,
           "allOrgs": [
             {
               "allUrls": [

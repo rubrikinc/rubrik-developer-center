@@ -9,6 +9,7 @@ Specific information for DCA archival target created on Rubrik cluster.
 | Field | Type | Description |
 |-------|------|-------------|
 | agency | String! | Agency provided for the DCA target. |
+| archivalLocationPurpose | [StorageLocationPurpose](../enums/StorageLocationPurpose.md) | Purpose of the target (e.g. CNP_BAAS for BaaS, PURPOSE_DEFAULT for user-created). Null on older servers that don't populate the field. |
 | awsRetrievalTier | [AwsRetrievalTier](../enums/AwsRetrievalTier.md)! | AWS retrieval tier of the DCA target. |
 | bucketName | String! | Bucket name of the DCA target. |
 | capEndpoint | String! | CAP endpoint of the DCA target. |

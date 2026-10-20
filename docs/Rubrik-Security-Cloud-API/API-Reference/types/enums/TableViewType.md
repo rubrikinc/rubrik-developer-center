@@ -124,7 +124,7 @@ All valid table views.
 | RECOVERY_TASKS_DETAIL_BY_TIME_TABLE | Table displaying recovery task status statistics for a period of time. |
 | RECOVERY_TASKS_DETAIL_TABLE | Recovery task detail report's main table. |
 | ROLE_TABLE | Table displaying a list of role table. |
-| SCRIPT_REPORT_TABLE | TBD. |
+| RUBRIK_AI_REPORT_TABLE | Table view for AI-generated script based reports authored by Rubrik AI. |
 | SERVICE_ACCOUNT_TABLE | Table displaying a list of service accounts. |
 | SIGNIN_LOGS_TABLE | Table displaying sign-in logs. |
 | SLA_AUDIT_DETAIL_TABLE | Table displaying a list of audits for the single SLA Domain. |

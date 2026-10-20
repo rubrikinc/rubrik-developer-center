@@ -7,9 +7,9 @@ ListRCVAzureBLIMigrationDetails lists blob immutability migration details of RCV
 | Argument | Type | Description |
 |----------|------|-------------|
 | first | Int | Returns the first n elements from the list. |
-| after | String | Returns the elements in the list that occur after the specified cursor. |
+| after | String | An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results. |
 | last | Int | Returns the last n elements from the list. |
-| before | String | Returns the elements in the list that occur before the specified cursor. |
+| before | String | An opaque cursor returned from a previous query's startCursor field. Pass this value verbatim to retrieve the previous page of results. |
 | BliMigrationDetailsFilter | [RcvBliMigrationFilter](../types/inputs/RcvBliMigrationFilter.md) | Filters for listing BLI migration details for RCV Azure BLI migration details. |
 | sortBy | [RcvBliMigrationDetailsSortByField](../types/enums/RcvBliMigrationDetailsSortByField.md) | Sort by field for BLI migration details. |
 | sortOrder | [SortOrder](../types/enums/SortOrder.md) | Sort order (ASC/DESC) for BLI migration details. |

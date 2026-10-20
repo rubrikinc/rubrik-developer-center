@@ -1,6 +1,6 @@
 # awsCloudAccountsMigrateInitiate
 
-Generate CFT for migrating an existing AWS cloud accounts to AWS organizations.
+AwsCloudAccountsMigrateInitiate return template details for migrating the existing AWS accounts which are eligible for migration.
 
 ## Arguments
 

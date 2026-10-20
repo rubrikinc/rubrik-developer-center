@@ -1,8 +1,8 @@
 # AtlassianSite
 
-Atlassian site.
+Atlassian site managed by Rubrik.
 
-**Implements:** [SaasAppsOrganization](../interfaces/SaasAppsOrganization.md), [HierarchyObject](../interfaces/HierarchyObject.md), [PolarisHierarchyObject](../interfaces/PolarisHierarchyObject.md)
+**Implements:** [SaasAppsOrganization](../interfaces/SaasAppsOrganization.md), [PolarisHierarchyObject](../interfaces/PolarisHierarchyObject.md), [HierarchyObject](../interfaces/HierarchyObject.md)
 
 ## Fields
 
@@ -10,21 +10,23 @@ Atlassian site.
 |-------|------|-------------|
 | allOrgs | [[Org](Org.md)!]! | Organizations to which this hierarchy object belongs. |
 | allTags | [[AssignedRscTag](AssignedRscTag.md)!]! | RSC tags to which this hierarchy object is assigned. |
-| apiUsage | [ApiUsageInfo](ApiUsageInfo.md)! | The API usage of the organization during the last 24 hours. |
+| apiUsage | [ApiUsageInfo](ApiUsageInfo.md)! | API usage data for an org by ID. |
 | authorizedOperations | [[Operation](../enums/Operation.md)!]! | The authorized operations on the object. |
-| backupJobsStats | [backupJobsStats](backupJobsStats.md) | Stats of the backup jobs in the last 24 hours. |
+| backupJobsStats | [backupJobsStats](backupJobsStats.md) | Backup job stats by org ID. |
 | configuredSlaDomain | [SlaDomain](../interfaces/SlaDomain.md)! | SLA Domain configured for the hierarchy object. |
-| connectionStatus | [ConnectionStatus](ConnectionStatus.md)! | The connection status to the organization. |
+| connectionStatus | [ConnectionStatus](ConnectionStatus.md)! | Connection status for an org by ID. |
 | effectiveRetentionSlaDomain | [SlaDomain](../interfaces/SlaDomain.md) | Effective retention of the SLA Domain of the hierarchy object. |
 | effectiveSlaDomain | [SlaDomain](../interfaces/SlaDomain.md)! | Effective SLA Domain of the hierarchy object. |
 | effectiveSlaSourceObject | [PathNode](PathNode.md) | Path node of the effective SLA Domain source. |
-| environmentType | [SaasEnvironmentType](../enums/SaasEnvironmentType.md)! |  |
+| environmentType | [SaasEnvironmentType](../enums/SaasEnvironmentType.md)! | Environment type of the organiztion. |
 | exocomputeId | [UUID](../scalars/UUID.md) | Denotes the ID of the exocompute cluster associated with the org. |
+| futureLegalHoldInfo | [FutureLegalHoldInfo](FutureLegalHoldInfo.md) | Future legal hold rule configured for this object, if any. |
 | id | [UUID](../scalars/UUID.md)! | ID of the hierarchy object. |
 | jiraFeaturesWorkloadID | String! | Rubrik ID of the Jira Features workload. |
 | jiraProjectCount | Int! | The count of Jira projects under the Atlassian site. |
 | jiraSettingsWorkloadID | String! | Rubrik ID of the Jira Settings workload. |
-| lastRefreshTime | [DateTime](../scalars/DateTime.md) | The time at which the Atlassian site was last synced to Rubrik. |
+| lastRefreshTime | [DateTime](../scalars/DateTime.md) | The time at which the SaaS organization was last synced to Rubrik. |
+| legallyHeldSnapshotCount | Int | Number of snapshots on legal hold for this object. |
 | logicalPath | [[PathNode](PathNode.md)!]! | Sequential list of the logical ancestors of this object. |
 | name | String! | Name of the hierarchy object. |
 | naturalId | String! | ID of the Atlassian site at the source. |
@@ -35,16 +37,16 @@ Atlassian site.
 | onboardedAppTypes | [[SaasAppType](../enums/SaasAppType.md)!]! | The list of SaaS application types that are onboarded for the organization. |
 | physicalPath | [[PathNode](PathNode.md)!]! | Sequential list of the physical ancestors of this object. |
 | rscNativeObjectPendingSla | [CompactSlaDomain](CompactSlaDomain.md) | SLA Domain assignment which is pending on the Rubrik Security Cloud native objects. |
-| rscPendingObjectPauseAssignment | [PendingObjectPauseAssignmentStatus](../enums/PendingObjectPauseAssignmentStatus.md) | Object pause pending assignment details for RSC objects. |
-| saasAppsOrgInfo | [SaasAppsOrgInfo](SaasAppsOrgInfo.md)! | The information of the Saas Apps organization. |
+| rscPendingObjectPauseAssignment | [PendingObjectPauseAssignmentStatus](../enums/PendingObjectPauseAssignmentStatus.md) | Pending pause or unpause assignment for RSC-native objects. |
+| saasAppsOrgInfo | [SaasAppsOrgInfo](SaasAppsOrgInfo.md)! | Org size info by org ID. |
 | saasOrgType | [SaasOrgType](../enums/SaasOrgType.md)! | The organization type that categorizes the SaaS provider. |
 | securityMetadata | [SecurityMetadata](SecurityMetadata.md) | Security posture metadata. |
 | siteURL | [URL](../scalars/URL.md)! | The URL of the Atlassian site. |
 | slaAssignment | [SlaAssignmentTypeEnum](../enums/SlaAssignmentTypeEnum.md)! | SLA Domain assignment type for this object. |
 | slaPauseStatus | Boolean! | Pause status of the effective SLA Domain of the hierarchy object. |
 | snapshotDistribution | [SnapshotDistribution](SnapshotDistribution.md)! | Distribution of the snapshots of the hierarchy object. |
-| status | [SaasOrganizationStatus](../enums/SaasOrganizationStatus.md)! |  |
-| storageRegion | String | The RSC storage region for the organization. |
+| status | [SaasOrganizationStatus](../enums/SaasOrganizationStatus.md)! | The state of the SaaS organization. |
+| storageRegion | String | Exocompute cluster for an org's storage region. |
 
 ## Field Arguments
 

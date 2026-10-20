@@ -7,9 +7,9 @@ SearchCloudDirectWorkload searches for files across all snapshots of a NAS Cloud
 | Argument | Type | Description |
 |----------|------|-------------|
 | first | Int | Returns the first n elements from the list. |
-| after | String | Returns the elements in the list that occur after the specified cursor. |
+| after | String | An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results. |
 | last | Int | Returns the last n elements from the list. |
-| before | String | Returns the elements in the list that occur before the specified cursor. |
+| before | String | An opaque cursor returned from a previous query's startCursor field. Pass this value verbatim to retrieve the previous page of results. |
 | workloadFid *(required)* | [UUID](../types/scalars/UUID.md)! | ID of the NAS Cloud Direct workload to search. |
 | searchQuery *(required)* | String! | Search query string to match against file names. |
 | versionLimit | Int | Maximum number of file versions to return per file. |

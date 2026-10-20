@@ -16,6 +16,6 @@ Configuration to create a new scheduled report.
 | showChartsInEmailBody | Boolean | Specifies whether to show charts in email body. |
 | timeZone | String | Time zone of the schedule time in IANA format. |
 | title | String! | Title of the report. |
-| updateCreator | Boolean | Specifies whether to update the creator with the current user. This is typically used when the user account that was the schedule creator has been deleted from Rubrik. It will be null in createScheduledReport. |
+| updateCreator | Boolean | Specifies whether to update the creator with the current user. This is typically used when the user account that was the schedule creator has been deleted from Rubrik. |
 | weeklyDays | [[WeekDay](../enums/WeekDay.md)!] | List of weekdays for weekly schedule of reports. |
 | weeklyTime | [LocalTime](../scalars/LocalTime.md) | Time of the day for weekly report delivery on the configured weekdays. |

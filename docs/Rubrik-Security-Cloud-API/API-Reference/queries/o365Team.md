@@ -22,6 +22,7 @@ Details for the team corresponding to the snappable ID.
         authorizedOperations
         id
         isRelic
+        legallyHeldSnapshotCount
         membersCount
         name
         naturalId
@@ -57,9 +58,9 @@ Details for the team corresponding to the snappable ID.
           ],
           "id": "00000000-0000-0000-0000-000000000000",
           "isRelic": true,
+          "legallyHeldSnapshotCount": 0,
           "membersCount": 0,
           "name": "example-string",
-          "naturalId": "example-string",
           "allOrgs": [
             {
               "allUrls": [

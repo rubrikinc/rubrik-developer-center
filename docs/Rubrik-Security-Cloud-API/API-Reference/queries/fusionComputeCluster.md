@@ -27,6 +27,7 @@ Summary of a FusionCompute cluster.
         fcClusterId
         id
         isReplica
+        legallyHeldSnapshotCount
         name
         numWorkloadDescendants
         objectType

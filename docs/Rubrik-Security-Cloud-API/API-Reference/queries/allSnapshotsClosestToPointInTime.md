@@ -8,7 +8,7 @@ Details of the unexpired snapshot closest to the specified point in time for eac
 |----------|------|-------------|
 | beforeTime | [DateTime](../types/scalars/DateTime.md) | Specifies the time at which or before which the snapshot was taken. |
 | afterTime | [DateTime](../types/scalars/DateTime.md) | Specifies the time at which or after which the snapshot was taken. |
-| snappableIds *(required)* | [String!]! | Workload UUIDs. |
+| snappableIds *(required)* | [String!]! | Workload FIDs. |
 | includeLinked | Boolean | Specifies whether the retrieved snapshots should include the linked snapshots. |
 | ignoreActiveWorkloadCheck | Boolean | Specifies whether to ignore the active workload check. |
 | excludeQuarantined | Boolean | Specifies whether to exclude quarantined snapshots. |

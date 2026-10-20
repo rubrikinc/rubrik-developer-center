@@ -43,4 +43,4 @@ Pending snapshots deletion status for an object.
 - [FusionComputeDatastore.pendingObjectDeletionStatus](FusionComputeDatastore.md)
 - [FusionComputeHost.pendingObjectDeletionStatus](FusionComputeHost.md)
 - FusionComputeHostDescendant.pendingObjectDeletionStatus
-- *…and 230 more*
+- *…and 234 more*

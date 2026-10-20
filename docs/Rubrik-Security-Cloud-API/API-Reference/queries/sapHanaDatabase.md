@@ -30,6 +30,7 @@ Details of a SAP HANA database for a given FID.
         id
         isRelic
         isReplica
+        legallyHeldSnapshotCount
         name
         numWorkloadDescendants
         objectType

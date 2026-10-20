@@ -9,6 +9,7 @@ Archiving specification.
 | archivalGroupId | String | ID of the archival group. |
 | archivalLocationToClusterMapping | [[ArchivalLocationToClusterMappingInput](ArchivalLocationToClusterMappingInput.md)!] | Mapping between archival location and Rubrik cluster. |
 | archivalTieringSpecInput | [ArchivalTieringSpecInput](ArchivalTieringSpecInput.md) | Archival tiering specification. |
+| databaseLogRetentionInfo | [DatabaseLogRetentionInfo](DatabaseLogRetentionInfo.md) | Per-workload database transaction log retention policy for this location. |
 | frequencies | [[RetentionUnit](../enums/RetentionUnit.md)!] | Archives all snapshots taken with the specified frequency. |
 | isComplianceImmutabilityEnabled | Boolean | DEPRECATED: Compliance immutability for CNP has been reverted. This field is no longer read or written. |
 | threshold | Int | Archival threshold. |

@@ -1,12 +1,12 @@
 # gitHubOrganization
 
-Query GitHub organization object.
+Retrieves a single GitHub organization by its managed object ID.
 
 ## Arguments
 
 | Argument | Type | Description |
 |----------|------|-------------|
-| workloadId *(required)* | [UUID](../types/scalars/UUID.md)! | The ID of the workload. |
+| workloadId *(required)* | [UUID](../types/scalars/UUID.md)! | The FID of the GitHub organization. |
 
 ## Returns
 
@@ -25,6 +25,7 @@ Query GitHub organization object.
         id
         isRelic
         lastRefreshTime
+        legallyHeldSnapshotCount
         name
         nativeId
         numWorkloadDescendants

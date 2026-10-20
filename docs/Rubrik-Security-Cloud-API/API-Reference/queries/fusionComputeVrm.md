@@ -30,6 +30,7 @@ Summary of a FusionCompute VRM.
         isRefreshed
         isReplica
         lastRefreshTime
+        legallyHeldSnapshotCount
         name
         numWorkloadDescendants
         objectType

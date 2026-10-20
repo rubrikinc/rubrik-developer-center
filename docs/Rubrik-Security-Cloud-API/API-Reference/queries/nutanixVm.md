@@ -33,6 +33,7 @@ A Nutanix Virtual Machine.
         isBlueprintChild
         isRelic
         isReplica
+        legallyHeldSnapshotCount
         name
         numWorkloadDescendants
         nutanixSnapshotConsistencyMandate

@@ -2,7 +2,7 @@
 
 Nutanix virtual machine details.
 
-**Implements:** [CdmHierarchyObject](../interfaces/CdmHierarchyObject.md), [CdmHierarchySnappableNew](../interfaces/CdmHierarchySnappableNew.md), [HierarchyObject](../interfaces/HierarchyObject.md), [HierarchySnappable](../interfaces/HierarchySnappable.md), [NutanixClusterDescendantType](../interfaces/NutanixClusterDescendantType.md), [NutanixClusterLogicalChildType](../interfaces/NutanixClusterLogicalChildType.md), [NutanixPrismCentralDescendantType](../interfaces/NutanixPrismCentralDescendantType.md), [NutanixCategoryDescendantType](../interfaces/NutanixCategoryDescendantType.md), [NutanixCategoryValueDescendantType](../interfaces/NutanixCategoryValueDescendantType.md), [NutanixCategoryValueLogicalChildType](../interfaces/NutanixCategoryValueLogicalChildType.md)
+**Implements:** [CdmHierarchyObject](../interfaces/CdmHierarchyObject.md), [HierarchyObject](../interfaces/HierarchyObject.md), [CdmHierarchySnappableNew](../interfaces/CdmHierarchySnappableNew.md), [HierarchySnappable](../interfaces/HierarchySnappable.md), [NutanixClusterDescendantType](../interfaces/NutanixClusterDescendantType.md), [NutanixClusterLogicalChildType](../interfaces/NutanixClusterLogicalChildType.md), [NutanixPrismCentralDescendantType](../interfaces/NutanixPrismCentralDescendantType.md), [NutanixCategoryDescendantType](../interfaces/NutanixCategoryDescendantType.md), [NutanixCategoryValueDescendantType](../interfaces/NutanixCategoryValueDescendantType.md), [NutanixCategoryValueLogicalChildType](../interfaces/NutanixCategoryValueLogicalChildType.md)
 
 ## Fields
 
@@ -25,6 +25,7 @@ Nutanix virtual machine details.
 | effectiveSlaDomain | [SlaDomain](../interfaces/SlaDomain.md)! | Effective SLA Domain of the hierarchy object. |
 | effectiveSlaSourceObject | [PathNode](PathNode.md) | Path node of the effective SLA Domain source. |
 | excludedDisks | [String!]! | List of IDs of the excluded disks. |
+| futureLegalHoldInfo | [FutureLegalHoldInfo](FutureLegalHoldInfo.md) | Future legal hold rule configured for this object, if any. |
 | hypervisorType | String | Hypervisor type, such as AHV. This field will be set to null if not provided by Nutanix. |
 | id | [UUID](../scalars/UUID.md)! | Object ID. |
 | isAgentRegistered | Boolean! | Specifies if the agent is registered. |
@@ -32,6 +33,7 @@ Nutanix virtual machine details.
 | isRelic | Boolean! | Specifies whether this Nutanix virtual machine is currently present on the Nutanix cluster. |
 | isReplica | Boolean | True if this object is a replica, its current cluster differs from its source (primary) cluster. False if the object resides on its source cluster. Null when the source cluster is unknown. |
 | latestUserNote | [LatestUserNote](LatestUserNote.md) | Latest user note information. |
+| legallyHeldSnapshotCount | Int | Number of snapshots on legal hold for this object. |
 | logicalPath | [[PathNode](PathNode.md)!]! | Sequential list of the logical ancestors of this object. |
 | metadata | [NutanixVmMetadata](NutanixVmMetadata.md) | Metadata of the Nutanix virtual machine. |
 | missedSnapshotConnection | [MissedSnapshotCommonConnection](MissedSnapshotCommonConnection.md) | The list of missed snapshots for this workload. |

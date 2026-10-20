@@ -19,6 +19,7 @@ Represents a GCP GCE instance.
 | effectiveSlaDomain | [SlaDomain](../interfaces/SlaDomain.md)! | Effective SLA Domain of the hierarchy object. |
 | effectiveSlaSourceObject | [PathNode](PathNode.md) | Path node of the effective SLA Domain source. |
 | fileIndexingStatus | [FileIndexingStatus](../enums/FileIndexingStatus.md)! | Specifies the file indexing status for this GCE instance. When enabled, Rubrik scans the file structure within the GCE instance in a protected environment, where only the metadata such as folder structure, file names, and file sizes is accessible to Rubrik. If the status is not specified by the user, file indexing is automatically enabled when archival is configured. |
+| futureLegalHoldInfo | [FutureLegalHoldInfo](FutureLegalHoldInfo.md) | Future legal hold rule configured for this object, if any. |
 | gcpNativeProject | [GcpNativeProject](GcpNativeProject.md)! | GCP Project of the GCE Instance. |
 | gcpNativeProjectDetails | [GcpNativeProjectDetails](GcpNativeProjectDetails.md) | Project details of the GCE instance. |
 | gcpProject | [GcpNativeProject](GcpNativeProject.md) | GCP Project of the GCE Instance. |
@@ -28,6 +29,7 @@ Represents a GCP GCE instance.
 | isProtectionOnboarded | Boolean! | Specifies whether a protection feature is onboarded for this GCE instance. |
 | isRelic | Boolean! | Whether the object is a relic. |
 | labels | [[Label](Label.md)!]! | List of labels that are assigned to the object. |
+| legallyHeldSnapshotCount | Int | Number of snapshots on legal hold for this object. |
 | logicalPath | [[PathNode](PathNode.md)!]! | Sequential list of the logical ancestors of this object. |
 | machineType | String! | The machine type of the GCP instance. |
 | name | String! | Name of the hierarchy object. |
@@ -46,7 +48,7 @@ Represents a GCP GCE instance.
 | projectId | String! | GCP project ID. |
 | region | String! | The region of the GCP GCE instance. |
 | rscNativeObjectPendingSla | [CompactSlaDomain](CompactSlaDomain.md) | SLA Domain assignment which is pending on the Rubrik Security Cloud native objects. |
-| rscPendingObjectPauseAssignment | [PendingObjectPauseAssignmentStatus](../enums/PendingObjectPauseAssignmentStatus.md) | Object pause pending assignment details for RSC objects. |
+| rscPendingObjectPauseAssignment | [PendingObjectPauseAssignmentStatus](../enums/PendingObjectPauseAssignmentStatus.md) | Pending pause or unpause assignment for RSC-native objects. |
 | securityMetadata | [SecurityMetadata](SecurityMetadata.md) | Security posture metadata. |
 | slaAssignment | [SlaAssignmentTypeEnum](../enums/SlaAssignmentTypeEnum.md)! | SLA Domain assignment type for this object. |
 | slaPauseStatus | Boolean! | Pause status of the effective SLA Domain of the hierarchy object. |

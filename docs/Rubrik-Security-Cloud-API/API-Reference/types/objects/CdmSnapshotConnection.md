@@ -24,6 +24,8 @@ Paginated list of CdmSnapshot objects. Each page of the results includes at most
 - [FusionComputeVirtualMachine.snapshotConnection](FusionComputeVirtualMachine.md)
 - [HyperVVirtualMachine.snapshotConnection](HyperVVirtualMachine.md)
 - [HypervisorVirtualMachineV1.snapshotConnection](HypervisorVirtualMachineV1.md)
+- [InformixInstance.snapshotConnection](InformixInstance.md)
+- [IrisdbInstance.snapshotConnection](IrisdbInstance.md)
 - KosmosSnappableHierarchyObjectType.snapshotConnection
 - [KubernetesProtectionSet.snapshotConnection](KubernetesProtectionSet.md)
 - [KubernetesVirtualMachine.snapshotConnection](KubernetesVirtualMachine.md)
@@ -42,7 +44,5 @@ Paginated list of CdmSnapshot objects. Each page of the results includes at most
 - [OpenstackVirtualMachine.snapshotConnection](OpenstackVirtualMachine.md)
 - [OracleDataGuardGroup.snapshotConnection](OracleDataGuardGroup.md)
 - [OracleDatabase.snapshotConnection](OracleDatabase.md)
-- [PostgreSQLDbCluster.snapshotConnection](PostgreSQLDbCluster.md)
-- [ProxmoxVirtualMachineV1.snapshotConnection](ProxmoxVirtualMachineV1.md)
-- [PureStorageProtectionGroupV1.snapshotConnection](PureStorageProtectionGroupV1.md)
-- *…and 8 more*
+- [PingFederateClusterV1.snapshotConnection](PingFederateClusterV1.md)
+- *…and 12 more*

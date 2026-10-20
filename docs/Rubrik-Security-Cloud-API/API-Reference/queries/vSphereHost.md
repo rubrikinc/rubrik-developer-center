@@ -1,6 +1,6 @@
 # vSphereHost
 
-*No description available.*
+Details of the vSphere host with the given Rubrik ID.
 
 ## Arguments
 
@@ -27,6 +27,7 @@
         ioFilterStatus
         isReplica
         isStandaloneHost
+        legallyHeldSnapshotCount
         name
         numWorkloadDescendants
         objectType

@@ -8,4 +8,5 @@ Threat feed type.
 |-------|-------------|
 | FILE_PATTERN | File pattern type. |
 | HASH | Hash type. |
+| REGISTRY | Windows registry key pattern type. |
 | YARA | Yara type. |

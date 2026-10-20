@@ -7,9 +7,9 @@ List of matched files for an object for a specified threat hunt.
 | Argument | Type | Description |
 |----------|------|-------------|
 | first | Int | Returns the first n elements from the list. |
-| after | String | Returns the elements in the list that occur after the specified cursor. |
+| after | String | An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results. |
 | last | Int | Returns the last n elements from the list. |
-| before | String | Returns the elements in the list that occur before the specified cursor. |
+| before | String | An opaque cursor returned from a previous query's startCursor field. Pass this value verbatim to retrieve the previous page of results. |
 | huntId *(required)* | String! | ID of the threat hunt. |
 | objectFid *(required)* | [UUID](../types/scalars/UUID.md)! | FID of the object. |
 | filenameSearchFilter | String | Optional filename search. |

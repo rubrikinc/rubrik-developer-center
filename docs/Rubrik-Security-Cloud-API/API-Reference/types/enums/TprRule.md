@@ -30,6 +30,7 @@ The different TPR rules.
 | EDIT_TPR_ROLE | The TPR rule is for updating a TPR role that has been assigned to a user. |
 | ENABLE_DISABLE_RCV | The TPR rule is for enabling and disabling RCV locations. |
 | EXCLUDE_DISK | The TPR rule is for excluding disks from snapshots. |
+| IDENTITY_RESILIENCE_REVERT | Quorum authorization is required for Identity Resilience revert actions (manual activity log reverts and automated alert rule reverts). |
 | LEGAL_HOLD | The TPR rule is for legal holds. |
 | MANAGE_COPY_SCHEDULE | Quorum authorization is required to update a NAS Cloud Direct copy schedule. |
 | MANAGE_CUSTOM_CERTIFICATES | Quorum authorization is required for managing custom (trust store) certificates: add, update, delete. |

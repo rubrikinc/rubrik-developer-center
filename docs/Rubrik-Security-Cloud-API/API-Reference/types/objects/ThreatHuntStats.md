@@ -11,6 +11,9 @@ Represents the statistics related to the threat hunt.
 | totalIocs | [Long](../scalars/Long.md)! | Total number of IOCs. |
 | totalObjectsScanned | [Long](../scalars/Long.md)! | Total objects scanned. |
 | totalProcessedSnapshots | [Long](../scalars/Long.md)! | Total number of snapshots that are processed. |
+| totalRegistryAffectedObjects | [Long](../scalars/Long.md)! | Total objects with at least one Windows registry key match. An object with both file and registry matches is also counted in the total affected objects. |
+| totalRegistryKeyMatches | [Long](../scalars/Long.md)! | Total number of Windows registry key matches. |
+| totalRegistryPatterns | [Long](../scalars/Long.md)! | Total number of Windows registry key patterns, which are not included in the total number of IOCs. |
 | totalSnapshotsScanned | [Long](../scalars/Long.md)! | Total snapshots scanned. |
 | totalSucceededScans | [Long](../scalars/Long.md)! | Total scans where the malware scan succeeded. |
 | totalUniqueMatchedPaths | [Long](../scalars/Long.md)! | Total unique paths for which malware was found. |

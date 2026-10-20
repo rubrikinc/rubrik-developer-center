@@ -7,7 +7,7 @@ Get a summary of all failover cluster apps.
 | Argument | Type | Description |
 |----------|------|-------------|
 | first | Int | Returns the first n elements from the list. |
-| after | String | Returns the elements in the list that occur after the specified cursor. |
+| after | String | An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results. |
 | sortBy | [HierarchySortByField](../types/enums/HierarchySortByField.md) | Sort hierarchy objects according to the hierarchy field. |
 | sortOrder | [SortOrder](../types/enums/SortOrder.md) | Sorts the order of results. |
 | filter | [[Filter](../types/inputs/Filter.md)!] | Hierarchy object filter. |
@@ -36,6 +36,7 @@ Get a summary of all failover cluster apps.
           id
           isArchived
           isReplica
+          legallyHeldSnapshotCount
           name
           numWorkloadDescendants
           objectType

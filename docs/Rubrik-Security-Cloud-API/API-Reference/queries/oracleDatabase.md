@@ -33,6 +33,7 @@ An Oracle Database.
         isRelic
         isReplica
         isZeroRpoEnabled
+        legallyHeldSnapshotCount
         logBackupFrequency
         logRatePerRmanChannelInMb
         logRetentionHours

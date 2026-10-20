@@ -7,9 +7,9 @@ Get the lifecycle history of a single policy violation, including status changes
 | Argument | Type | Description |
 |----------|------|-------------|
 | first | Int | Returns the first n elements from the list. |
-| after | String | Returns the elements in the list that occur after the specified cursor. |
+| after | String | An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results. |
 | last | Int | Returns the last n elements from the list. |
-| before | String | Returns the elements in the list that occur before the specified cursor. |
+| before | String | An opaque cursor returned from a previous query's startCursor field. Pass this value verbatim to retrieve the previous page of results. |
 | violationId *(required)* | String! | The ID of the policy violation. |
 | policyType *(required)* | [PolicyType](../types/enums/PolicyType.md)! | The policy type of the violation. Must match the violation's actual policy type. |
 

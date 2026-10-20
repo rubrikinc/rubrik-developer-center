@@ -16,10 +16,12 @@ An interface for Microsoft groups.
 | effectiveRetentionSlaDomain | [SlaDomain](SlaDomain.md) | Effective retention of the SLA Domain of the hierarchy object. |
 | effectiveSlaDomain | [SlaDomain](SlaDomain.md)! | Effective SLA Domain of the hierarchy object. |
 | effectiveSlaSourceObject | [PathNode](../objects/PathNode.md) | Path node of the effective SLA Domain source. |
+| futureLegalHoldInfo | [FutureLegalHoldInfo](../objects/FutureLegalHoldInfo.md) | Future legal hold rule configured for this object, if any. |
 | groupID | String! | Group ID of Microsoft Group. |
 | groupSubType | [O365GroupSubType](../enums/O365GroupSubType.md)! | Group sub-type of the Microsoft Group. |
 | groupType | [O365GroupType](../enums/O365GroupType.md)! | Group type of the Microsoft Group. |
 | id | [UUID](../scalars/UUID.md)! | ID of the hierarchy object. |
+| legallyHeldSnapshotCount | Int | Number of snapshots on legal hold for this object. |
 | logicalPath | [[PathNode](../objects/PathNode.md)!]! | Sequential list of the logical ancestors of this object. |
 | metadata | [O365GroupMetadata](../objects/O365GroupMetadata.md) | Metadata of the Microsoft Group. |
 | name | String! | Name of the hierarchy object. |

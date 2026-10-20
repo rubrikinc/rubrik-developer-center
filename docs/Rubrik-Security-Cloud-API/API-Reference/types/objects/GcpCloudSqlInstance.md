@@ -20,6 +20,7 @@ Represents a GCP Cloud SQL instance.
 | effectiveSlaDomain | [SlaDomain](../interfaces/SlaDomain.md)! | Effective SLA Domain of the hierarchy object. |
 | effectiveSlaSourceObject | [PathNode](PathNode.md) | Path node of the effective SLA Domain source. |
 | engineType | [GcpCloudSqlEngineType](../enums/GcpCloudSqlEngineType.md)! | Type of database engine running on the instance. |
+| futureLegalHoldInfo | [FutureLegalHoldInfo](FutureLegalHoldInfo.md) | Future legal hold rule configured for this object, if any. |
 | gcpNativeProjectDetails | [GcpNativeProjectDetails](GcpNativeProjectDetails.md) | Project details of the Cloud SQL instance. |
 | gcpProject | [GcpNativeProject](GcpNativeProject.md) | GCP Project of the Cloud SQL instance. |
 | gcpProjectDetails | [GcpNativeProjectDetails](GcpNativeProjectDetails.md)! | Project details of the Cloud SQL instance. |
@@ -31,6 +32,7 @@ Represents a GCP Cloud SQL instance.
 | isRelic | Boolean! | Whether the object is a relic. |
 | kmsKey | String | KMS key used for encryption, if any. |
 | labels | [[Label](Label.md)!]! | List of labels that are assigned to the object. |
+| legallyHeldSnapshotCount | Int | Number of snapshots on legal hold for this object. |
 | logicalPath | [[PathNode](PathNode.md)!]! | Sequential list of the logical ancestors of this object. |
 | name | String! | Name of the hierarchy object. |
 | nativeId | String! | Cloud provider's native ID for the instance. |
@@ -47,7 +49,7 @@ Represents a GCP Cloud SQL instance.
 | projectId | String! | ID of the GCP project containing this instance. |
 | region | String! | Region of the Cloud SQL instance. |
 | rscNativeObjectPendingSla | [CompactSlaDomain](CompactSlaDomain.md) | SLA Domain assignment which is pending on the Rubrik Security Cloud native objects. |
-| rscPendingObjectPauseAssignment | [PendingObjectPauseAssignmentStatus](../enums/PendingObjectPauseAssignmentStatus.md) | Object pause pending assignment details for RSC objects. |
+| rscPendingObjectPauseAssignment | [PendingObjectPauseAssignmentStatus](../enums/PendingObjectPauseAssignmentStatus.md) | Pending pause or unpause assignment for RSC-native objects. |
 | securityMetadata | [SecurityMetadata](SecurityMetadata.md) | Security posture metadata. |
 | slaAssignment | [SlaAssignmentTypeEnum](../enums/SlaAssignmentTypeEnum.md)! | SLA Domain assignment type for this object. |
 | slaPauseStatus | Boolean! | Pause status of the effective SLA Domain of the hierarchy object. |

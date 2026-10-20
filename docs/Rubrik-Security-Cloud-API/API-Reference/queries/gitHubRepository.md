@@ -1,12 +1,12 @@
 # gitHubRepository
 
-Query GitHub repository object.
+Retrieves a single GitHub repository by its managed object ID.
 
 ## Arguments
 
 | Argument | Type | Description |
 |----------|------|-------------|
-| workloadId *(required)* | [UUID](../types/scalars/UUID.md)! | The ID of the workload. |
+| workloadId *(required)* | [UUID](../types/scalars/UUID.md)! | The FID of the GitHub repository. |
 
 ## Returns
 
@@ -22,6 +22,7 @@ Query GitHub repository object.
         authorizedOperations
         id
         isRelic
+        legallyHeldSnapshotCount
         name
         numWorkloadDescendants
         objectType
@@ -55,9 +56,9 @@ Query GitHub repository object.
           ],
           "id": "00000000-0000-0000-0000-000000000000",
           "isRelic": true,
+          "legallyHeldSnapshotCount": 0,
           "name": "example-string",
           "numWorkloadDescendants": 0,
-          "objectType": "ACTIVE_DIRECTORY_DOMAIN",
           "allOrgs": [
             {
               "allUrls": [

@@ -20,6 +20,8 @@ Paginated list of KosmosWorkloadLiveMount objects. Each page of the results incl
 
 **Referenced by**
 
+- [InformixInstance.liveMounts](InformixInstance.md)
+- [IrisdbInstance.liveMounts](IrisdbInstance.md)
 - KosmosSnappableHierarchyObjectType.liveMounts
 - [MysqldbInstance.liveMounts](MysqldbInstance.md)
 - [PostgreSQLDbCluster.liveMounts](PostgreSQLDbCluster.md)

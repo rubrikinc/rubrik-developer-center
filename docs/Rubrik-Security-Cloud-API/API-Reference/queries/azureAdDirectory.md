@@ -64,6 +64,7 @@ Details of the Azure AD corresponding to the workload ID.
         latestSnapshotTime
         latestTermsOfUseCount
         latestUserCount
+        legallyHeldSnapshotCount
         m365AccessRecoveryState
         migratedFromColossus
         name

@@ -1,6 +1,6 @@
 # AwsIamPairInput
 
-Input to specify either AWS IAM pair ID or AWS IAM role name.
+Represents the AWS IAM pair.
 
 ## Fields
 

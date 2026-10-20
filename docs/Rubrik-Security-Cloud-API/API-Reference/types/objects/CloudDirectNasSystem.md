@@ -21,11 +21,13 @@ NAS Cloud Direct System object.
 | effectiveRetentionSlaDomain | [SlaDomain](../interfaces/SlaDomain.md) | Effective retention of the SLA Domain of the hierarchy object. |
 | effectiveSlaDomain | [SlaDomain](../interfaces/SlaDomain.md)! | Effective SLA Domain of the hierarchy object. |
 | effectiveSlaSourceObject | [PathNode](PathNode.md) | Path node of the effective SLA Domain source. |
+| futureLegalHoldInfo | [FutureLegalHoldInfo](FutureLegalHoldInfo.md) | Future legal hold rule configured for this object, if any. |
 | id | [UUID](../scalars/UUID.md)! | Object ID. |
 | isArchived | Boolean! | Specifies whether the system has been deleted. |
 | isRelic | Boolean! | Specifies whether the system is a relic. |
 | lastRefreshTime | [DateTime](../scalars/DateTime.md) | Timestamp of the last refresh. |
 | lastStatus | [CloudDirectNasConnectivityStatus](../enums/CloudDirectNasConnectivityStatus.md)! | Last connectivity status of the system. |
+| legallyHeldSnapshotCount | Int | Number of snapshots on legal hold for this object. |
 | logicalChildConnection | [CloudDirectNasSystemLogicalChildTypeConnection](CloudDirectNasSystemLogicalChildTypeConnection.md)! | List of logical children. |
 | logicalPath | [[PathNode](PathNode.md)!]! | Sequential list of the logical ancestors of this object. |
 | managementInfo | [CloudDirectSystemManagementInfo](CloudDirectSystemManagementInfo.md) | Management information for this system. |

@@ -6,7 +6,7 @@ Initiate a session before doing Gcp OAuth flow.
 
 | Argument | Type | Description |
 |----------|------|-------------|
-| input *(required)* | [GcpCloudAccountOauthInitiateInput](../types/inputs/GcpCloudAccountOauthInitiateInput.md)! | Input to initiate the GCP cloud account OAuth flow. |
+| input *(required)* | [GcpCloudAccountOauthInitiateInput](../types/inputs/GcpCloudAccountOauthInitiateInput.md)! | Input to initiate the GCP OAuth flow. |
 
 ## Returns
 

@@ -33,6 +33,7 @@ All supported Rubrik managed objects.
 | AZURE_COSMOS_NOSQL_DATABASE | Azure Cosmos NoSQL database. |
 | AZURE_DEVOPS_ORGANIZATION | Azure DevOps organization. |
 | AZURE_DEVOPS_PROJECT | Azure DevOps project. |
+| AZURE_DEVOPS_PROJECT_ARTIFACTS_FIXED_OBJECT | Azure DevOps project artifacts (feeds and packages). |
 | AZURE_DEVOPS_PROJECT_FIXED_OBJECT | Azure DevOps project-scoped fixed object to represent non repo entity. |
 | AZURE_DEVOPS_REPOSITORY | Azure DevOps repository. |
 | AZURE_MANAGED_DISK | Azure managed disk. |
@@ -87,11 +88,14 @@ All supported Rubrik managed objects.
 | GCP_NATIVE_GCE_INSTANCE | GCP Google Compute Engine instance. |
 | GCP_NATIVE_PROJECT | GCP project. |
 | GITHUB_ORGANIZATION | GitHub organization. |
+| GITHUB_ORG_PACKAGES_FIXED_OBJECT | GitHub organization packages. |
 | GITHUB_REPOSITORY | GitHub repository. |
 | GLUE_ICEBERG_CATALOG | Glue Iceberg catalog. |
 | GLUE_ICEBERG_DATABASE | Glue Iceberg database. |
 | GLUE_ICEBERG_TABLE | Glue Iceberg table. |
+| GOOGLE_WORKSPACE_ADMIN_SETTINGS | Google Workspace admin settings container -- one per org, backed by saasapps_fixed_objects. |
 | GOOGLE_WORKSPACE_GROUP | Google Workspace Group. |
+| GOOGLE_WORKSPACE_GROUPS_METADATA | Google Workspace Groups metadata snappable -- one per org, backed by saasapps_fixed_objects. Stores group settings and membership data for all groups in the org. |
 | GOOGLE_WORKSPACE_ORGANIZATION | Google Workspace Organisation. |
 | GOOGLE_WORKSPACE_ORG_UNIT | Google Workspace Organisation units. |
 | GOOGLE_WORKSPACE_SHARED_DRIVE | Google Workspace Shared Drive. |
@@ -101,15 +105,15 @@ All supported Rubrik managed objects.
 | GROUP | Rubrik SaaS user group. |
 | HOST_FAILOVER_CLUSTER | Host failover cluster. |
 | HOST_SHARE | Host share. |
-| HVM_CLOUD | HPE Virtual Machine Essentials cloud. |
-| HVM_CLUSTER | HPE Virtual Machine Essentials cluster. |
-| HVM_DATASTORE | HPE Virtual Machine Essentials datastore. |
-| HVM_GROUP | HPE Virtual Machine Essentials group. |
-| HVM_HOST | HPE Virtual Machine Essentials host. |
-| HVM_INSTANCE | HPE Virtual Machine Essentials instance. An inventory hierarchy level, not a protectable object. |
-| HVM_MANAGER | HPE Virtual Machine Essentials manager. |
-| HVM_NETWORK | HPE Virtual Machine Essentials network. |
-| HVM_VIRTUAL_MACHINE | HPE Virtual Machine Essentials virtual machine. The protectable object in this hierarchy. |
+| HPE_VME_CLOUD | HPE Virtual Machine Essentials cloud. |
+| HPE_VME_CLUSTER | HPE Virtual Machine Essentials cluster. |
+| HPE_VME_DATASTORE | HPE Virtual Machine Essentials datastore. |
+| HPE_VME_GROUP | HPE Virtual Machine Essentials group. |
+| HPE_VME_HOST | HPE Virtual Machine Essentials host. |
+| HPE_VME_INSTANCE | HPE Virtual Machine Essentials instance. An inventory hierarchy level, not a protectable object. |
+| HPE_VME_MANAGER | HPE Virtual Machine Essentials manager. |
+| HPE_VME_NETWORK | HPE Virtual Machine Essentials network. |
+| HPE_VME_VIRTUAL_MACHINE | HPE Virtual Machine Essentials virtual machine. The protectable object in this hierarchy. |
 | HYPERV_CLUSTER | Hyper-V cluster. |
 | HYPERV_SCVMM | Hyper-V System Center Virtual Machine Manager. |
 | HYPERV_SERVER | Hyper-V server. |
@@ -135,6 +139,7 @@ All supported Rubrik managed objects.
 | M365_BACKUP_STORAGE_ORGANIZATION | M365 Backup Storage Organization. |
 | M365_BACKUP_STORAGE_SHAREPOINT_SITE | M365 Backup Storage Sharepoint Site. |
 | M365_BACKUP_STORAGE_USER | M365 Backup Storage User. |
+| M365_CONFIGS_ORG | M365 Configurations Organization. |
 | MANAGED_VOLUME | Managed Volume. |
 | MANAGED_VOLUME_EXPORT | Managed Volume Export. |
 | MARIADB_DATABASE | MariaDB Database. |

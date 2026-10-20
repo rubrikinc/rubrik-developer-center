@@ -6,6 +6,7 @@ Legal hold details of the workload.
 
 | Field | Type | Description |
 |-------|------|-------------|
+| futureLegalHoldInfo | [FutureLegalHoldInfo](FutureLegalHoldInfo.md) | Future legal hold rule configured for this workload, if any. |
 | id | String! | ID. |
 | name | String! | Workload name. |
 | physicalLocation | [[LocationPathPoint](LocationPathPoint.md)!]! | Physical path to this workload. |

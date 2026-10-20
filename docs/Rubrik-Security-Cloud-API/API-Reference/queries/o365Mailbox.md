@@ -23,6 +23,7 @@ Details for the Microsoft Exchange mailbox corresponding to the workload ID.
         id
         isRelic
         jobTitle
+        legallyHeldSnapshotCount
         name
         numWorkloadDescendants
         objectType
@@ -56,8 +57,8 @@ Details for the Microsoft Exchange mailbox corresponding to the workload ID.
           "id": "00000000-0000-0000-0000-000000000000",
           "isRelic": true,
           "jobTitle": "example-string",
+          "legallyHeldSnapshotCount": 0,
           "name": "example-string",
-          "numWorkloadDescendants": 0,
           "allOrgs": [
             {
               "allUrls": [

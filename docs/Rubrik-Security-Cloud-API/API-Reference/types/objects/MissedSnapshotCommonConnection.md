@@ -22,6 +22,8 @@ Paginated list of MissedSnapshotCommon objects. Each page of the results include
 - [FusionComputeVirtualMachine.missedSnapshotConnection](FusionComputeVirtualMachine.md)
 - [HyperVVirtualMachine.missedSnapshotConnection](HyperVVirtualMachine.md)
 - [HypervisorVirtualMachineV1.missedSnapshotConnection](HypervisorVirtualMachineV1.md)
+- [InformixInstance.missedSnapshotConnection](InformixInstance.md)
+- [IrisdbInstance.missedSnapshotConnection](IrisdbInstance.md)
 - KosmosSnappableHierarchyObjectType.missedSnapshotConnection
 - [KubernetesProtectionSet.missedSnapshotConnection](KubernetesProtectionSet.md)
 - [KubernetesVirtualMachine.missedSnapshotConnection](KubernetesVirtualMachine.md)
@@ -39,10 +41,8 @@ Paginated list of MissedSnapshotCommon objects. Each page of the results include
 - [OpenstackVirtualMachine.missedSnapshotConnection](OpenstackVirtualMachine.md)
 - [OracleDataGuardGroup.missedSnapshotConnection](OracleDataGuardGroup.md)
 - [OracleDatabase.missedSnapshotConnection](OracleDatabase.md)
+- [PingFederateClusterV1.missedSnapshotConnection](PingFederateClusterV1.md)
 - [PostgreSQLDbCluster.missedSnapshotConnection](PostgreSQLDbCluster.md)
 - [ProxmoxVirtualMachineV1.missedSnapshotConnection](ProxmoxVirtualMachineV1.md)
 - [PureStorageProtectionGroupV1.missedSnapshotConnection](PureStorageProtectionGroupV1.md)
-- [PureStorageVolumeV1.missedSnapshotConnection](PureStorageVolumeV1.md)
-- [SapHanaDatabase.missedSnapshotConnection](SapHanaDatabase.md)
-- [SapHanaSystem.missedSnapshotConnection](SapHanaSystem.md)
-- *…and 5 more*
+- *…and 9 more*

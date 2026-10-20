@@ -1,0 +1,37 @@
+# GetSupportCaseReply
+
+Details of a single support case.
+
+## Fields
+
+| Field | Type | Description |
+|-------|------|-------------|
+| assignedTo | String! | Name of the Salesforce user the case is assigned to. |
+| caseId | String! | Salesforce record ID of the support case. |
+| caseLink | String! | URL to view the case on the Rubrik Support portal. |
+| caseNumber | String! | Case number, e.g. "00123456". |
+| closedDate | [DateTime](../scalars/DateTime.md) | Timestamp when the case was closed, if applicable. |
+| component | String! | Component for the support case. |
+| contactEmail | String! | Email address of the contact. |
+| contactMethod | String! | How the case was opened, e.g. "Email", "Phone". |
+| contactName | String! | Name of the contact who filed the case. |
+| contactPhone | String! | Phone number of the contact. |
+| createdDate | [DateTime](../scalars/DateTime.md) | Timestamp when the support case was created. |
+| description | String! | Detailed description of the support case. |
+| functionalArea | String! | Functional area for the support case. |
+| isClosed | Boolean! | Whether the case is in a closed state. |
+| isEscalated | Boolean! | Whether the case has been escalated. |
+| origin | String! | How the case was opened, e.g. "Rubrik Security Cloud". |
+| priority | [NewCasePriority](../enums/NewCasePriority.md)! | Priority level of the support case. |
+| productLine | String! | Product line for the support case. |
+| resolutionDetails | String! | Resolution details for the support case. |
+| rscCaseLink | [URL](../scalars/URL.md) | URL to view the case in RSC support portal when REL_ENABLE_SUPPORT_PORTAL is enabled. Prefer this for in-app navigation over the external caseLink when present. |
+| status | String! | Current status of the support case, e.g. "In Progress". |
+| subject | String! | Short title describing the issue. |
+| type | String! |  |
+
+## Used By
+
+**Queries**
+
+- [query: supportCase](../../queries/supportCase.md)

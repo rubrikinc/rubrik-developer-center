@@ -16,17 +16,17 @@ Synced cluster details for the role.
 | Field | Argument | Type | Description |
 |-------|----------|------|-------------|
 | incompatibleClusters | first | Int | Returns the first n elements from the list. |
-| incompatibleClusters | after | String | Returns the elements in the list that occur after the specified cursor. |
+| incompatibleClusters | after | String | An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results. |
 | incompatibleClusters | last | Int | Returns the last n elements from the list. |
-| incompatibleClusters | before | String | Returns the elements in the list that occur before the specified cursor. |
+| incompatibleClusters | before | String | An opaque cursor returned from a previous query's startCursor field. Pass this value verbatim to retrieve the previous page of results. |
 | removedClusters | first | Int | Returns the first n elements from the list. |
-| removedClusters | after | String | Returns the elements in the list that occur after the specified cursor. |
+| removedClusters | after | String | An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results. |
 | removedClusters | last | Int | Returns the last n elements from the list. |
-| removedClusters | before | String | Returns the elements in the list that occur before the specified cursor. |
+| removedClusters | before | String | An opaque cursor returned from a previous query's startCursor field. Pass this value verbatim to retrieve the previous page of results. |
 | syncedClusters | first | Int | Returns the first n elements from the list. |
-| syncedClusters | after | String | Returns the elements in the list that occur after the specified cursor. |
+| syncedClusters | after | String | An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results. |
 | syncedClusters | last | Int | Returns the last n elements from the list. |
-| syncedClusters | before | String | Returns the elements in the list that occur before the specified cursor. |
+| syncedClusters | before | String | An opaque cursor returned from a previous query's startCursor field. Pass this value verbatim to retrieve the previous page of results. |
 
 ## Used By
 

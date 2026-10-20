@@ -25,6 +25,7 @@ Get details of the given host failover cluster.
         id
         isArchived
         isReplica
+        legallyHeldSnapshotCount
         name
         nodesOsType
         numWorkloadDescendants

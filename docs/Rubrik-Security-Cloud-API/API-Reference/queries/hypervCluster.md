@@ -24,6 +24,7 @@ Details of the given Hyper-V Cluster.
         connectionStatus
         id
         isReplica
+        legallyHeldSnapshotCount
         name
         numWorkloadDescendants
         objectType
@@ -56,7 +57,7 @@ Details of the given Hyper-V Cluster.
           "connectionStatus": "CONNECTED",
           "id": "00000000-0000-0000-0000-000000000000",
           "isReplica": true,
-          "name": "example-string",
+          "legallyHeldSnapshotCount": 0,
           "allOrgs": [
             {
               "allUrls": [

@@ -32,6 +32,7 @@ Query Azure DevOps organization object.
         id
         isRelic
         lastRefreshTime
+        legallyHeldSnapshotCount
         name
         nativeId
         numWorkloadDescendants

@@ -46,4 +46,4 @@ A generic snapshot type.
 - [AzureNativeResourceGroup.snapshotDistribution](AzureNativeResourceGroup.md)
 - [AzureNativeResourceGroupBase.snapshotDistribution](AzureNativeResourceGroupBase.md)
 - [AzureNativeSubscription.snapshotDistribution](AzureNativeSubscription.md)
-- *…and 329 more*
+- *…and 333 more*

@@ -8,6 +8,7 @@ Specific information for GCP target created on Rubrik.
 
 | Field | Type | Description |
 |-------|------|-------------|
+| archivalLocationPurpose | [StorageLocationPurpose](../enums/StorageLocationPurpose.md) | Purpose of the target (e.g. CNP_BAAS for BaaS, PURPOSE_DEFAULT for user-created). Null on older servers that don't populate the field. |
 | archivalProxySettings | [ProxySettings](ProxySettings.md) | Proxy setting of this GCP target. |
 | bucket | String! | Bucket of the GCP target. |
 | bypassProxy | Boolean! | Specifies whether the proxy settings should be bypassed for creating this target location. |

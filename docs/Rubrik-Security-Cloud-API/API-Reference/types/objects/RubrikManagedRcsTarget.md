@@ -8,6 +8,7 @@ Specific information for Rubrik Cloud Vault (RCV) Azure target created on Rubrik
 
 | Field | Type | Description |
 |-------|------|-------------|
+| archivalLocationPurpose | [StorageLocationPurpose](../enums/StorageLocationPurpose.md) | Purpose of the target (e.g. CNP_BAAS for BaaS, PURPOSE_DEFAULT for user-created). Null on older servers that don't populate the field. |
 | bliMigrationStatusType | [BliMigrationStatus](../enums/BliMigrationStatus.md)! | BLI migration status for this RCV Azure target. |
 | cluster | [Cluster](Cluster.md)! | The cluster to which this target belongs. |
 | clusterIpMapping | [ClusterIpMapping](ClusterIpMapping.md) | IP allow list for location. |

@@ -7,9 +7,11 @@ Paginated list of Microsoft SQL Database live mounts.
 | Argument | Type | Description |
 |----------|------|-------------|
 | first | Int | Returns the first n elements from the list. |
-| after | String | Returns the elements in the list that occur after the specified cursor. |
-| sortBy | [MssqlDatabaseLiveMountSortByInput](../types/inputs/MssqlDatabaseLiveMountSortByInput.md) | Sort by argument for Mssql database live mounts. |
-| filters | [[MssqlDatabaseLiveMountFilterInput](../types/inputs/MssqlDatabaseLiveMountFilterInput.md)!] | Filters for Mssql database live mounts. |
+| after | String | An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results. |
+| last | Int | Returns the last n elements from the list. |
+| before | String | An opaque cursor returned from a previous query's startCursor field. Pass this value verbatim to retrieve the previous page of results. |
+| filters | [[MssqlDatabaseLiveMountFilterInput](../types/inputs/MssqlDatabaseLiveMountFilterInput.md)!] | Filters for MSSQL database live mounts. |
+| sortBy | [MssqlDatabaseLiveMountSortByInput](../types/inputs/MssqlDatabaseLiveMountSortByInput.md) | Sort by argument for MSSQL database live mounts. |
 
 ## Returns
 

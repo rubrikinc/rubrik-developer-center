@@ -7,7 +7,7 @@ List of all files and directories in a given path with the given prefix in name.
 | Argument | Type | Description |
 |----------|------|-------------|
 | first | Int | Returns the first n elements from the list. |
-| after | String | Returns the elements in the list that occur after the specified cursor. |
+| after | String | An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results. |
 | path *(required)* | String! | The path under which you want your search to run. |
 | snapshotFid *(required)* | [UUID](../types/scalars/UUID.md)! | ID of the snapshot to be searched or browsed. |
 | searchPrefix | String | Name prefix to search for files within a snapshot. |

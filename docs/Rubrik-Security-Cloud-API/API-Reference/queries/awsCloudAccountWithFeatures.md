@@ -6,8 +6,8 @@ List of AWS cloud accounts and the features for each account, classified by ID.
 
 | Argument | Type | Description |
 |----------|------|-------------|
-| cloudAccountId *(required)* | [UUID](../types/scalars/UUID.md)! | The Rubrik ID of the cloud account. |
-| awsCloudAccountArg *(required)* | [AwsCloudAccountWithFeaturesInput](../types/inputs/AwsCloudAccountWithFeaturesInput.md)! | Arguments for get cloud account. |
+| cloudAccountId *(required)* | [UUID](../types/scalars/UUID.md)! | The UUID of the AWS cloud account to fetch. |
+| awsCloudAccountArg *(required)* | [AwsCloudAccountWithFeaturesInput](../types/inputs/AwsCloudAccountWithFeaturesInput.md)! | Arguments for getting the AWS cloud account with features. |
 
 ## Returns
 

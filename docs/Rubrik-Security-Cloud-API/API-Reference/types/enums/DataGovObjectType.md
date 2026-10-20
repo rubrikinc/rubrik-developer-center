@@ -25,6 +25,12 @@ Represents object types.
 | CLOUD_DIRECT_NAS_EXPORT | Represents the NAS Cloud Direct object. |
 | CLOUD_DIRECT_NAS_SHARE | Represents a NAS Cloud Direct share. |
 | CLOUD_NATIVE_TAG_RULE | Represents the Azure Cloud tag rule. |
+| FUSION_COMPUTE_CLUSTER | Represents the FusionCompute cluster. |
+| FUSION_COMPUTE_HOST | Represents the FusionCompute host. |
+| FUSION_COMPUTE_ROOT | Represents the FusionCompute root. |
+| FUSION_COMPUTE_SITE | Represents the FusionCompute site. |
+| FUSION_COMPUTE_VIRTUAL_MACHINE | Represents the FusionCompute virtual machine. |
+| FUSION_COMPUTE_VRM | Represents the FusionCompute VRM. |
 | GCP_NATIVE_DISK | Represents the native GCP disk. |
 | GCP_NATIVE_GCE_INSTANCE | Represents the GCP Native GCE Instance. |
 | HYPERV_CLUSTER | Represents the Hyper-V cluster. |

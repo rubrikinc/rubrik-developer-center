@@ -26,6 +26,7 @@ A Nutanix Cluster.
         id
         isReplica
         lastRefreshTime
+        legallyHeldSnapshotCount
         name
         naturalId
         nosVersion

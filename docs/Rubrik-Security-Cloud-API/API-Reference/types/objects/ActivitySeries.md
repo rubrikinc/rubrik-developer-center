@@ -51,9 +51,9 @@ A series of activities on either the RSC or a Rubrik cluster.
 | Field | Argument | Type | Description |
 |-------|----------|------|-------------|
 | activityConnection | first | Int | Returns the first n elements from the list. |
-| activityConnection | after | String | Returns the elements in the list that occur after the specified cursor. |
+| activityConnection | after | String | An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results. |
 | activityConnection | last | Int | Returns the last n elements from the list. |
-| activityConnection | before | String | Returns the elements in the list that occur before the specified cursor. |
+| activityConnection | before | String | An opaque cursor returned from a previous query's startCursor field. Pass this value verbatim to retrieve the previous page of results. |
 
 ## Used By
 

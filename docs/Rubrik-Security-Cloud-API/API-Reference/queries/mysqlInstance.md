@@ -1,6 +1,6 @@
 # mysqlInstance
 
-Details of a MySQL instance for a given FID.
+Returns the details of a single MySQL instance identified by its unique identifier.
 
 ## Arguments
 
@@ -27,6 +27,7 @@ Details of a MySQL instance for a given FID.
         id
         isRelic
         isReplica
+        legallyHeldSnapshotCount
         name
         numWorkloadDescendants
         objectType

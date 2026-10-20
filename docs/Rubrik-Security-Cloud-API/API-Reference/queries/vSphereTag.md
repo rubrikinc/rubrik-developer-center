@@ -1,6 +1,6 @@
 # vSphereTag
 
-*No description available.*
+Details of the vSphere tag with the given Rubrik ID.
 
 ## Arguments
 
@@ -26,6 +26,7 @@
         id
         isFilter
         isReplica
+        legallyHeldSnapshotCount
         name
         numWorkloadDescendants
         objectIds

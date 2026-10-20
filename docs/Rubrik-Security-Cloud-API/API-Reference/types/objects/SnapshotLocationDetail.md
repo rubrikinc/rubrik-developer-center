@@ -16,4 +16,5 @@ Snapshot location information.
 
 - [AggregateSnapshotLocationDetail.archivalInfos](AggregateSnapshotLocationDetail.md)
 - [AggregateSnapshotLocationDetail.localInfo](AggregateSnapshotLocationDetail.md)
+- [AggregateSnapshotLocationDetail.rehydratedInfo](AggregateSnapshotLocationDetail.md)
 - [AggregateSnapshotLocationDetail.replicationInfos](AggregateSnapshotLocationDetail.md)

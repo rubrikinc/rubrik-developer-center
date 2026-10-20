@@ -1,6 +1,6 @@
 # vSphereVCenter
 
-*No description available.*
+Details of the vSphere vCenter Server with the given Rubrik ID.
 
 ## Arguments
 
@@ -30,6 +30,7 @@
         isStandaloneHost
         isVmc
         lastRefreshTime
+        legallyHeldSnapshotCount
         name
         numWorkloadDescendants
         objectType

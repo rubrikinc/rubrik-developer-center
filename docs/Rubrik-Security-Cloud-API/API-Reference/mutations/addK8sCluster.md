@@ -28,7 +28,6 @@ Add a Kubernetes cluster  Supported in v9.0+ Adds a Kubernetes cluster to the Ru
         helmStatus
         helmVersion
         id
-        isDbProtectionEnabled
         k8SVersion
         kubevirtVersion
         kuprServerProxyPodMultusIp
@@ -85,11 +84,10 @@ Add a Kubernetes cluster  Supported in v9.0+ Adds a Kubernetes cluster to the Ru
             "isK8SError": true,
             "serviceAccountName": "example-string"
           },
-          "dbServiceAccountInfo": {
-            "accessToken": "example-string",
-            "clientId": "example-string",
-            "isK8SError": true,
-            "serviceAccountName": "example-string"
+          "kuprServerProxyConfig": {
+            "cert": "example-string",
+            "ipAddress": "example-string",
+            "port": 0
           }
         }
       }

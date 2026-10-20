@@ -15,9 +15,9 @@ Task detail with groupby info applied to it.
 | Field | Argument | Type | Description |
 |-------|----------|------|-------------|
 | taskDetailConnection | first | Int | Returns the first n elements from the list. |
-| taskDetailConnection | after | String | Returns the elements in the list that occur after the specified cursor. |
+| taskDetailConnection | after | String | An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results. |
 | taskDetailConnection | last | Int | Returns the last n elements from the list. |
-| taskDetailConnection | before | String | Returns the elements in the list that occur before the specified cursor. |
+| taskDetailConnection | before | String | An opaque cursor returned from a previous query's startCursor field. Pass this value verbatim to retrieve the previous page of results. |
 | taskDetailConnection | sortBy | [TaskDetailSortByEnum](../enums/TaskDetailSortByEnum.md) | Sort task detail by field. |
 | taskDetailConnection | sortOrder | [SortOrder](../enums/SortOrder.md) | Task detail sort order. |
 | taskDetailGroupBy | groupBy *(required)* | [TaskDetailGroupByEnum](../enums/TaskDetailGroupByEnum.md)! | Group task detail by a field. |

@@ -1,6 +1,6 @@
 # createGcpTarget
 
-*No description available.*
+Creates a Polaris-managed GCP archival location.
 
 ## Arguments
 
@@ -19,6 +19,7 @@
     ```graphql
     mutation CreateGcpTarget($input: CreateGcpTargetInput!) {
       createGcpTarget(input: $input) {
+        archivalLocationPurpose
         clusterName
         consumedBytes
         failedTasks
@@ -60,11 +61,11 @@
     {
       "data": {
         "createGcpTarget": {
+          "archivalLocationPurpose": "ADO",
           "clusterName": "example-string",
           "consumedBytes": 0,
           "failedTasks": 0,
-          "id": "example-string",
-          "isActive": true
+          "id": "example-string"
         }
       }
     }

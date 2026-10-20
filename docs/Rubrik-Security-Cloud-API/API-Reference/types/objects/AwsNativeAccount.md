@@ -28,12 +28,14 @@ AWS native account.
 | effectiveSlaSourceObject | [PathNode](PathNode.md) | Path node of the effective SLA Domain source. |
 | enabledFeatures | [[AwsNativeAccountEnabledFeature](AwsNativeAccountEnabledFeature.md)!]! | List of protection features enabled for the AWS account. |
 | featureDetails | [[FeatureDetail](FeatureDetail.md)!]! | Cloud account feature details including permissions groups for the AWS account. |
+| futureLegalHoldInfo | [FutureLegalHoldInfo](FutureLegalHoldInfo.md) | Future legal hold rule configured for this object, if any. |
 | glueIcebergCatalogCount | Int! | Count of Glue Iceberg catalogs in the AWS native account. |
 | glueIcebergDatabaseCount | Int! | Count of Glue Iceberg databases in the AWS native account. |
 | glueIcebergTableCount | Int! | Count of Glue Iceberg tables in the AWS native account. |
 | id | [UUID](../scalars/UUID.md)! | ID of the hierarchy object. |
 | isProtectable | Boolean! | Whether the AWS account is protectable for the specified protection features. |
 | lastRefreshedAt | [DateTime](../scalars/DateTime.md) | Last refresh time of the account, in UTC date-time format. |
+| legallyHeldSnapshotCount | Int | Number of snapshots on legal hold for this object. |
 | logicalPath | [[PathNode](PathNode.md)!]! | Sequential list of the logical ancestors of this object. |
 | name | String! | Name of the hierarchy object. |
 | nativeId | String! | The 12-digit AWS account number. |
@@ -47,7 +49,7 @@ AWS native account.
 | regionSpecs | [[AwsNativeRegionSpec](AwsNativeRegionSpec.md)!]! | List of AWS region specifications associated with the account. |
 | roleChainingDetails | [AwsRoleChainingAccount](AwsRoleChainingAccount.md) | Details of the role chaining account associated with the AWS account. |
 | rscNativeObjectPendingSla | [CompactSlaDomain](CompactSlaDomain.md) | SLA Domain assignment which is pending on the Rubrik Security Cloud native objects. |
-| rscPendingObjectPauseAssignment | [PendingObjectPauseAssignmentStatus](../enums/PendingObjectPauseAssignmentStatus.md) | Object pause pending assignment details for RSC objects. |
+| rscPendingObjectPauseAssignment | [PendingObjectPauseAssignmentStatus](../enums/PendingObjectPauseAssignmentStatus.md) | Pending pause or unpause assignment for RSC-native objects. |
 | s3BucketCount | Int! | Count of Amazon S3 Buckets in the AWS native account. |
 | s3TablesIcebergCatalogCount | Int! | Count of S3 Tables Iceberg catalogs in the AWS native account. |
 | s3TablesIcebergNamespaceCount | Int! | Count of S3 Tables Iceberg namespaces in the AWS native account. |
@@ -64,30 +66,30 @@ AWS native account.
 | Field | Argument | Type | Description |
 |-------|----------|------|-------------|
 | awsNativeEbsVolumes | first | Int | Returns the first n elements from the list. |
-| awsNativeEbsVolumes | after | String | Returns the elements in the list that occur after the specified cursor. |
+| awsNativeEbsVolumes | after | String | An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results. |
 | awsNativeEbsVolumes | last | Int | Returns the last n elements from the list. |
-| awsNativeEbsVolumes | before | String | Returns the elements in the list that occur before the specified cursor. |
+| awsNativeEbsVolumes | before | String | An opaque cursor returned from a previous query's startCursor field. Pass this value verbatim to retrieve the previous page of results. |
 | awsNativeEbsVolumes | sortBy | [AwsNativeEbsVolumeSortFields](../enums/AwsNativeEbsVolumeSortFields.md) | Sort fields for list of AWS EBS volumes. |
 | awsNativeEbsVolumes | sortOrder | [SortOrder](../enums/SortOrder.md) | Sorts the order of results. |
 | awsNativeEbsVolumes | ebsVolumeFilters | [AwsNativeEbsVolumeFilters](../inputs/AwsNativeEbsVolumeFilters.md) | Filter for EBS volumes. |
 | awsNativeEc2Instances | first | Int | Returns the first n elements from the list. |
-| awsNativeEc2Instances | after | String | Returns the elements in the list that occur after the specified cursor. |
+| awsNativeEc2Instances | after | String | An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results. |
 | awsNativeEc2Instances | last | Int | Returns the last n elements from the list. |
-| awsNativeEc2Instances | before | String | Returns the elements in the list that occur before the specified cursor. |
+| awsNativeEc2Instances | before | String | An opaque cursor returned from a previous query's startCursor field. Pass this value verbatim to retrieve the previous page of results. |
 | awsNativeEc2Instances | sortBy | [AwsNativeEc2InstanceSortFields](../enums/AwsNativeEc2InstanceSortFields.md) | Sort fields for list of AWS EC2 instances. |
 | awsNativeEc2Instances | sortOrder | [SortOrder](../enums/SortOrder.md) | Sorts the order of results. |
 | awsNativeEc2Instances | ec2InstanceFilters | [AwsNativeEc2InstanceFilters](../inputs/AwsNativeEc2InstanceFilters.md) | Filter for EC2 instances. |
 | awsNativeRdsInstances | first | Int | Returns the first n elements from the list. |
-| awsNativeRdsInstances | after | String | Returns the elements in the list that occur after the specified cursor. |
+| awsNativeRdsInstances | after | String | An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results. |
 | awsNativeRdsInstances | last | Int | Returns the last n elements from the list. |
-| awsNativeRdsInstances | before | String | Returns the elements in the list that occur before the specified cursor. |
+| awsNativeRdsInstances | before | String | An opaque cursor returned from a previous query's startCursor field. Pass this value verbatim to retrieve the previous page of results. |
 | awsNativeRdsInstances | sortBy | [AwsNativeRdsInstanceSortFields](../enums/AwsNativeRdsInstanceSortFields.md) | Sort fields for list of AWS RDS instances. |
 | awsNativeRdsInstances | sortOrder | [SortOrder](../enums/SortOrder.md) | Sorts the order of results. |
 | awsNativeRdsInstances | rdsInstanceFilters | [AwsNativeRdsInstanceFilters](../inputs/AwsNativeRdsInstanceFilters.md) | Filter for RDS instances. |
 | awsRegions | first | Int | Returns the first n elements from the list. |
-| awsRegions | after | String | Returns the elements in the list that occur after the specified cursor. |
+| awsRegions | after | String | An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results. |
 | awsRegions | last | Int | Returns the last n elements from the list. |
-| awsRegions | before | String | Returns the elements in the list that occur before the specified cursor. |
+| awsRegions | before | String | An opaque cursor returned from a previous query's startCursor field. Pass this value verbatim to retrieve the previous page of results. |
 | awsRegions | sortBy | [AwsNativeRegionSortFields](../enums/AwsNativeRegionSortFields.md) | Sort fields for list of AWS native regions. |
 | awsRegions | sortOrder | [SortOrder](../enums/SortOrder.md) | Sorts the order of results. |
 | awsRegions | regionFilters | [AwsNativeRegionFilters](../inputs/AwsNativeRegionFilters.md) | Filter for AWS native regions. |

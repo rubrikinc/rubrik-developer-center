@@ -26,6 +26,7 @@ Represents an AWS Glue Iceberg Table with a specific Rubrik ID.
         id
         isExocomputeConfigured
         isRelic
+        legallyHeldSnapshotCount
         location
         name
         nativeName

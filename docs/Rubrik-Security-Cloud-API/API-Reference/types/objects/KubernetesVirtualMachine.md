@@ -22,6 +22,7 @@ A Kubernetes virtual machine protected by Rubrik.
 | effectiveRetentionSlaDomain | [SlaDomain](../interfaces/SlaDomain.md) | Effective retention of the SLA Domain of the hierarchy object. |
 | effectiveSlaDomain | [SlaDomain](../interfaces/SlaDomain.md)! | Effective SLA Domain of the hierarchy object. |
 | effectiveSlaSourceObject | [PathNode](PathNode.md) | Path node of the effective SLA Domain source. |
+| futureLegalHoldInfo | [FutureLegalHoldInfo](FutureLegalHoldInfo.md) | Future legal hold rule configured for this object, if any. |
 | guestOsName | String | Guest OS name of the K8s Virtual Machine. |
 | id | [UUID](../scalars/UUID.md)! | ID of the hierarchy object. |
 | isRelic | Boolean! | Specifies whether the virtual machine is a relic. |
@@ -34,6 +35,7 @@ A Kubernetes virtual machine protected by Rubrik.
 | k8sProtectionLabelName | String | Protection label name of the Kubernetes virtual machine.. |
 | k8sVirtualMachineDisks | [KubernetesVirtualMachineDiskConnection](KubernetesVirtualMachineDiskConnection.md)! | List of Kubernetes virtual machine disks. |
 | latestUserNote | [LatestUserNote](LatestUserNote.md) | Latest user note information. |
+| legallyHeldSnapshotCount | Int | Number of snapshots on legal hold for this object. |
 | logicalPath | [[PathNode](PathNode.md)!]! | Sequential list of the logical ancestors of this object. |
 | missedSnapshotConnection | [MissedSnapshotCommonConnection](MissedSnapshotCommonConnection.md) | The list of missed snapshots for this workload. |
 | missedSnapshotGroupByConnection | [MissedSnapshotGroupByConnection](MissedSnapshotGroupByConnection.md) | The list of missed snapshots for this workload. |
@@ -74,9 +76,9 @@ A Kubernetes virtual machine protected by Rubrik.
 | Field | Argument | Type | Description |
 |-------|----------|------|-------------|
 | k8sVirtualMachineDisks | first | Int | Returns the first n elements from the list. |
-| k8sVirtualMachineDisks | after | String | Returns the elements in the list that occur after the specified cursor. |
+| k8sVirtualMachineDisks | after | String | An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results. |
 | k8sVirtualMachineDisks | last | Int | Returns the last n elements from the list. |
-| k8sVirtualMachineDisks | before | String | Returns the elements in the list that occur before the specified cursor. |
+| k8sVirtualMachineDisks | before | String | An opaque cursor returned from a previous query's startCursor field. Pass this value verbatim to retrieve the previous page of results. |
 | k8sVirtualMachineDisks | filter | [K8sVirtualMachineDiskFilter](../inputs/K8sVirtualMachineDiskFilter.md) | Hierarchy object filter. |
 | k8sVirtualMachineDisks | sortBy | [K8sVirtualMachineDiskSortBy](../enums/K8sVirtualMachineDiskSortBy.md) | Sort hierarchy objects according to the hierarchy field. |
 | k8sVirtualMachineDisks | sortOrder | [SortOrder](../enums/SortOrder.md) | Sorts the order of results. |

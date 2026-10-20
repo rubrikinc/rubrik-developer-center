@@ -11,5 +11,6 @@ Input for creating an Azure cloud cluster.
 | isAzResilient | Boolean | Indicates whether the cluster should be deployed across multiple availability zones. |
 | isEsType | Boolean | If cluster is CC-ES. |
 | keepClusterOnFailure | Boolean | Flag to keep the cluster on failure. |
+| kmsKeyId | String | KMS key ID for CCES upgrade context. |
 | validations | [[ClusterCreateValidations](../enums/ClusterCreateValidations.md)!] | Validations to perform on the request. |
 | vmConfig | [AzureVmConfig](AzureVmConfig.md) | Virtual Machine input configuration. |

@@ -23,6 +23,7 @@ Details for the O365 user corresponding to the ID.
         emailAddress
         id
         isRelic
+        legallyHeldSnapshotCount
         name
         numWorkloadDescendants
         objectType
@@ -53,8 +54,8 @@ Details for the O365 user corresponding to the ID.
           "emailAddress": "example-string",
           "id": "00000000-0000-0000-0000-000000000000",
           "isRelic": true,
+          "legallyHeldSnapshotCount": 0,
           "name": "example-string",
-          "numWorkloadDescendants": 0,
           "allOrgs": [
             {
               "allUrls": [

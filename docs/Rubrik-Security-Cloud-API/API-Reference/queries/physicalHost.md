@@ -38,6 +38,7 @@ Details of a physical host for a given ID.
         isOracleHost
         isReplica
         lastSuccessfulUpgradeTime
+        legallyHeldSnapshotCount
         name
         nasApiEndpoint
         nasApiHostname

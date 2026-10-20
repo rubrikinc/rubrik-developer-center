@@ -6,5 +6,5 @@ IP allow list of Rubrik cluster mappings.
 
 | Field | Type | Description |
 |-------|------|-------------|
-| clusterUuid | [UUID](../scalars/UUID.md)! | Rubrik cluster UUID. |
-| ips | [String!]! | IP addresses on the Rubrik cluster allow list. |
+| clusterUuid | [UUID](../scalars/UUID.md)! | UUID of the Rubrik cluster. |
+| ips | [String!]! | IP allow list of Rubrik clusters. |

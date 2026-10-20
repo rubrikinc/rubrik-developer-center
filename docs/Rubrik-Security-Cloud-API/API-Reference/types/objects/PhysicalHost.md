@@ -28,6 +28,7 @@ A physical host managed by Rubrik CDM.
 | effectiveRetentionSlaDomain | [SlaDomain](../interfaces/SlaDomain.md) | Effective retention of the SLA Domain of the hierarchy object. |
 | effectiveSlaDomain | [SlaDomain](../interfaces/SlaDomain.md)! | Effective SLA Domain of the hierarchy object. |
 | effectiveSlaSourceObject | [PathNode](PathNode.md) | Path node of the effective SLA Domain source. |
+| futureLegalHoldInfo | [FutureLegalHoldInfo](FutureLegalHoldInfo.md) | Future legal hold rule configured for this object, if any. |
 | hostRbaCertificate | [GlobalCertificate](GlobalCertificate.md) | The RBA certificate of the host. |
 | hostVolumes | [[CdmHostVolume](CdmHostVolume.md)!]! | Volumes on the physical host. |
 | id | [UUID](../scalars/UUID.md)! | ID of the hierarchy object. |
@@ -40,6 +41,7 @@ A physical host managed by Rubrik CDM.
 | isReplica | Boolean | True if this object is a replica, its current cluster differs from its source (primary) cluster. False if the object resides on its source cluster. Null when the source cluster is unknown. |
 | lastSuccessfulUpgradeTime | String | Timestamp of the last successful RBS upgrade on the host. |
 | latestUserNote | [LatestUserNote](LatestUserNote.md) | Latest user note information. |
+| legallyHeldSnapshotCount | Int | Number of snapshots on legal hold for this object. |
 | logicalPath | [[PathNode](PathNode.md)!]! | Sequential list of the logical ancestors of this object. |
 | mssqlSddDetail | [MssqlSddDetail](MssqlSddDetail.md) | Specifies the MSSQL SDD details. |
 | name | String! | Name of the hierarchy object. |
@@ -116,6 +118,7 @@ A physical host managed by Rubrik CDM.
 - [ExchangeServer.host](ExchangeServer.md)
 - [HostDiscoverableInfo.host](HostDiscoverableInfo.md)
 - [HostFailoverCluster.allNodes](HostFailoverCluster.md)
+- [IrisdbInstance.proxyHost](IrisdbInstance.md)
 - [KosmosWorkloadLiveMount.mountedHost](KosmosWorkloadLiveMount.md)
 - [LinuxFileset.host](LinuxFileset.md)
 - [ManagedVolume.host](ManagedVolume.md)

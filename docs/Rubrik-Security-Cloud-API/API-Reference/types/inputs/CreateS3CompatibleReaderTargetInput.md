@@ -9,6 +9,7 @@ Input for creating a S3Compatible Reader Target.
 | accessKey | String! | Field for specifying access key of the target. |
 | archivalDataSourceIds | [String!] | List of workload IDs on the original Rubrik cluster. This list should be empty for a full refresh. |
 | bucketPrefix | String! | Field for specifying the bucket prefix of the S3Compatible target. |
+| certificateTrustMode | [CertificateTrustMode](../enums/CertificateTrustMode.md) | The TLS trust mode for the S3-compatible target. |
 | clusterUuid | [UUID](../scalars/UUID.md)! | Field for specifying cluster UUID of the target. |
 | encryptionKeyInDer | String! | Field for specifying encryption key. |
 | encryptionPassword | String | Encryption password for the S3-compatible archival target. |
@@ -21,4 +22,5 @@ Input for creating a S3Compatible Reader Target.
 | readerRetrievalMethod | [ReaderRetrievalMethod](../enums/ReaderRetrievalMethod.md)! | Field for specifying the metadata to be retrieved from a target. |
 | secretKey | String! | Field for specifying the secret key of the target. |
 | subType | [S3CompatibleSubType](../enums/S3CompatibleSubType.md) | Subtype of an S3-compatible target. |
+| tlsCertificateId | String | Rubrik Security Cloud managed ID of the certificate to use as the TLS trust anchor for the S3-compatible target. |
 | useSystemProxy | Boolean! | Field for specifying whether to use system proxy or not. |

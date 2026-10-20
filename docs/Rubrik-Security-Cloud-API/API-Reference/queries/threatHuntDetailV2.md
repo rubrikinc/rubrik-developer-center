@@ -26,6 +26,7 @@ The details of a threat hunt.
         status
         totalMatchedSnapshots
         totalObjectFids
+        totalRegistryKeyMatches
         totalScannedSnapshots
         totalUniqueFileMatches
       }

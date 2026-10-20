@@ -7,7 +7,7 @@ A single workload-to-log-retention-policy entry. Pairs a workload type (e.g. "ms
 | Field | Type | Description |
 |-------|------|-------------|
 | config | [DatabaseLogRetentionConfigType](DatabaseLogRetentionConfigType.md) | Log retention policy for this workload type. |
-| workloadType | String! | The database workload type. Canonical value is "mssql"; must be unique within the parent entry list. |
+| workloadType | String! | The database workload type. Canonical values are "mssql", "oracle_database" and "db2_database"; must be unique within the parent entry list. |
 
 ## Used By
 

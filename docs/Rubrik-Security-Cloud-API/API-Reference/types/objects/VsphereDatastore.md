@@ -2,7 +2,7 @@
 
 Vsphere datastore.
 
-**Implements:** [CdmHierarchyObject](../interfaces/CdmHierarchyObject.md), [HierarchyObject](../interfaces/HierarchyObject.md), [VsphereComputeClusterDescendantType](../interfaces/VsphereComputeClusterDescendantType.md), [VsphereDatacenterDescendantType](../interfaces/VsphereDatacenterDescendantType.md), [VsphereHostDescendantType](../interfaces/VsphereHostDescendantType.md), [VsphereResourcePoolDescendantType](../interfaces/VsphereResourcePoolDescendantType.md), [VsphereVcenterDescendantType](../interfaces/VsphereVcenterDescendantType.md), [VsphereDatastoreClusterPhysicalChildType](../interfaces/VsphereDatastoreClusterPhysicalChildType.md), [VsphereDatastoreClusterDescendantType](../interfaces/VsphereDatastoreClusterDescendantType.md)
+**Implements:** [HierarchyObject](../interfaces/HierarchyObject.md), [CdmHierarchyObject](../interfaces/CdmHierarchyObject.md), [VsphereComputeClusterDescendantType](../interfaces/VsphereComputeClusterDescendantType.md), [VsphereDatacenterDescendantType](../interfaces/VsphereDatacenterDescendantType.md), [VsphereHostDescendantType](../interfaces/VsphereHostDescendantType.md), [VsphereResourcePoolDescendantType](../interfaces/VsphereResourcePoolDescendantType.md), [VsphereVcenterDescendantType](../interfaces/VsphereVcenterDescendantType.md), [VsphereDatastoreClusterPhysicalChildType](../interfaces/VsphereDatastoreClusterPhysicalChildType.md), [VsphereDatastoreClusterDescendantType](../interfaces/VsphereDatastoreClusterDescendantType.md)
 
 ## Fields
 
@@ -12,22 +12,24 @@ Vsphere datastore.
 | allTags | [[AssignedRscTag](AssignedRscTag.md)!]! | RSC tags to which this hierarchy object is assigned. |
 | authorizedOperations | [[Operation](../enums/Operation.md)!]! | The authorized operations on the object. |
 | backingDeviceName | String! | Specifies the device backing the datastore. |
-| capacity | [Long](../scalars/Long.md)! |  |
+| capacity | [Long](../scalars/Long.md)! | Total capacity of the datastore, in bytes. |
 | cdmPendingObjectPauseAssignment | [PendingObjectPauseAssignmentStatus](../enums/PendingObjectPauseAssignmentStatus.md) | Object pause pending assignment details for CDM objects. |
 | cluster | [Cluster](Cluster.md)! | Rubrik cluster where this object originated. |
 | configuredSlaDomain | [SlaDomain](../interfaces/SlaDomain.md)! | SLA Domain configured for the hierarchy object. |
 | crossAccountReplicatedObjectInfos | [[CrossAccountReplicatedObjectInfo](CrossAccountReplicatedObjectInfo.md)!] | Cross-account objects either replicated by this object or related to this object by replication. |
-| datastoreType | String! |  |
+| datastoreType | String! | Type of the datastore, e.g. VMFS or NFS. |
 | effectiveRetentionSlaDomain | [SlaDomain](../interfaces/SlaDomain.md) | Effective retention of the SLA Domain of the hierarchy object. |
 | effectiveSlaDomain | [SlaDomain](../interfaces/SlaDomain.md)! | Effective SLA Domain of the hierarchy object. |
 | effectiveSlaSourceObject | [PathNode](PathNode.md) | Path node of the effective SLA Domain source. |
-| freeSpace | [Long](../scalars/Long.md)! |  |
-| id | [UUID](../scalars/UUID.md)! | Object ID. |
+| freeSpace | [Long](../scalars/Long.md)! | Free space available on the datastore, in bytes. |
+| futureLegalHoldInfo | [FutureLegalHoldInfo](FutureLegalHoldInfo.md) | Future legal hold rule configured for this object, if any. |
+| id | [UUID](../scalars/UUID.md)! | ID of the hierarchy object. |
 | isArchived | Boolean! | Indicates whether the datastore is archived or not. |
-| isLocal | Boolean! |  |
+| isLocal | Boolean! | Indicates whether the datastore is local to a single host. |
 | isReplica | Boolean | True if this object is a replica, its current cluster differs from its source (primary) cluster. False if the object resides on its source cluster. Null when the source cluster is unknown. |
 | isStandaloneDatastore | Boolean! | Indicates whether the datastore is standalone or not. |
 | latestUserNote | [LatestUserNote](LatestUserNote.md) | Latest user note information. |
+| legallyHeldSnapshotCount | Int | Number of snapshots on legal hold for this object. |
 | logicalPath | [[PathNode](PathNode.md)!]! | Sequential list of the logical ancestors of this object. |
 | name | String! | Name of the hierarchy object. |
 | numWorkloadDescendants | Int! | Number of descendant workloads of this object. |

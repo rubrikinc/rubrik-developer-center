@@ -29,6 +29,7 @@ Retrieves an Azure Native Resource Group. Refers to a collection of resources in
         disksCount
         id
         isProtectable
+        legallyHeldSnapshotCount
         name
         numWorkloadDescendants
         objectType

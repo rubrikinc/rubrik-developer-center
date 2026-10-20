@@ -7,9 +7,9 @@ Lists the O365 apps.
 | Argument | Type | Description |
 |----------|------|-------------|
 | first | Int | Returns the first n elements from the list. |
-| after | String | Returns the elements in the list that occur after the specified cursor. |
+| after | String | An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results. |
 | last | Int | Returns the last n elements from the list. |
-| before | String | Returns the elements in the list that occur before the specified cursor. |
+| before | String | An opaque cursor returned from a previous query's startCursor field. Pass this value verbatim to retrieve the previous page of results. |
 | o365AppFilters *(required)* | [[AppFilter](../types/inputs/AppFilter.md)!]! | Filters for the O365 app listing. |
 | o365AppSortByParam | [AppSortByParam](../types/inputs/AppSortByParam.md) | Sort parameter for the O365 app listing. |
 
@@ -28,6 +28,7 @@ Lists the O365 apps.
         first: 10
       ) {
         nodes {
+          accessMode
           addedAt
           appAuthStatus
           appAuthVersion
@@ -66,12 +67,12 @@ Lists the O365 apps.
           "nodes": [
             [
               {
+                "accessMode": "M365_ACCESS_MODE_FULL_PERMISSIONS",
                 "addedAt": "2024-01-01T00:00:00.000Z",
                 "appAuthStatus": "FULLY_AUTHENTICATED",
                 "appAuthVersion": 0,
                 "appId": "example-string",
-                "appOwner": "example-string",
-                "appType": "example-string"
+                "appOwner": "example-string"
               }
             ]
           ],

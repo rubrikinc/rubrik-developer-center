@@ -19,6 +19,7 @@ Edit a target of type Glacier on a Rubrik cluster.
     ```graphql
     mutation UpdateGlacierTarget($input: UpdateGlacierTargetInput!) {
       updateGlacierTarget(input: $input) {
+        archivalLocationPurpose
         clusterName
         consumedBytes
         failedTasks
@@ -54,11 +55,11 @@ Edit a target of type Glacier on a Rubrik cluster.
     {
       "data": {
         "updateGlacierTarget": {
+          "archivalLocationPurpose": "ADO",
           "clusterName": "example-string",
           "consumedBytes": 0,
           "failedTasks": 0,
-          "id": "example-string",
-          "isActive": true
+          "id": "example-string"
         }
       }
     }

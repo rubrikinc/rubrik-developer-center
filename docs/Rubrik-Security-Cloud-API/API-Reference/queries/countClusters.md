@@ -7,6 +7,7 @@ Count Rubrik clusters grouped by status.
 | Argument | Type | Description |
 |----------|------|-------------|
 | filter | [ClusterFilterInput](../types/inputs/ClusterFilterInput.md) | Filter by cluster. |
+| separateSharedClusters | Boolean | When true and the MSP multi-account registration feature flag is enabled, clusters assigned by a parent account are counted in assignedByParentAccountClusters instead of the health-status buckets. |
 
 ## Returns
 
@@ -19,6 +20,7 @@ Count Rubrik clusters grouped by status.
     ```graphql
     query {
       countClusters {
+        assignedByParentAccountClusters
         disconnectedClusters
         fatalClusters
         okClusters
@@ -41,12 +43,12 @@ Count Rubrik clusters grouped by status.
     {
       "data": {
         "countClusters": {
+          "assignedByParentAccountClusters": 0,
           "disconnectedClusters": 0,
           "fatalClusters": 0,
           "okClusters": 0,
           "totalClusters": 0,
-          "tunnelEnabledClusters": 0,
-          "warningClusters": 0
+          "tunnelEnabledClusters": 0
         }
       }
     }

@@ -1,6 +1,6 @@
 # DisplayableValueDateTime
 
-*No description available.*
+A timestamp displayable value.
 
 **Implements:** [DisplayableValue](../interfaces/DisplayableValue.md)
 
@@ -8,7 +8,7 @@
 
 | Field | Type | Description |
 |-------|------|-------------|
-| displayValue | String! |  |
-| reportHeader | String! |  |
-| serializedValue | String! |  |
-| value | [DateTime](../scalars/DateTime.md) |  |
+| displayValue | String! | The value rendered for display in the UI. |
+| reportHeader | String! | The value rendered in the report header. |
+| serializedValue | String! | The value in its serialized string form. |
+| value | [DateTime](../scalars/DateTime.md) | The timestamp value; unset when there is no value. |

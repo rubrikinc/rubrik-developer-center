@@ -29,6 +29,7 @@ NAS Cloud Direct bucket.
         isHidden
         isRelic
         isStale
+        legallyHeldSnapshotCount
         name
         namespaceId
         numWorkloadDescendants

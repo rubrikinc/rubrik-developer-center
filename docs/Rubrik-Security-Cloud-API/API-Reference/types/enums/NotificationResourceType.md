@@ -14,6 +14,7 @@ The resource type associated with the notification.
 | DEFAULT_EVENT | Default event. |
 | ENTRA_ID | Microsoft Entra ID. |
 | EXOCOMPUTE_CLUSTER | Exocompute cluster. |
+| GCP_PRIVATE_CONTAINER_REGISTRY | GCP private container registry for Exocompute. |
 | HIGH_IMPACT_CHANGE | High impact change release group. |
 | IDENTITY_PROVIDER | SSO identity provider. |
 | LICENSE | License dashboard resource. |
@@ -29,5 +30,6 @@ The resource type associated with the notification.
 | SLA_AUTO_MIGRATION | SLA Domain auto migration notification. |
 | SUPPORT_CASE | Rubrik support case. |
 | THREAT_MONITORING_MATCH | A Threat Monitoring match. |
+| TPR_BREAK_GLASS_ACCESS | Quorum Authorization break-glass approver management page. |
 | TPR_BREAK_GLASS_ENROLLMENT | Quorum Authorization break-glass approver enrollment. |
 | USER_ACCOUNT | User account. |

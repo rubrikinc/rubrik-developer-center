@@ -8,6 +8,7 @@ Specific information for AWS target created on Rubrik.
 
 | Field | Type | Description |
 |-------|------|-------------|
+| archivalLocationPurpose | [StorageLocationPurpose](../enums/StorageLocationPurpose.md) | Purpose of the target (e.g. CNP_BAAS for BaaS, PURPOSE_DEFAULT for user-created). Null on older servers that don't populate the field. |
 | awsIamPairId | String | Optional field of an AWS IAM pair ID that is used to identify AWS role-based credentials used by the target location. |
 | awsKmsKeyId | String | AWS KMS key ID. |
 | awsKmsKeyManager | String | Name of the AWS KMS key manager. |

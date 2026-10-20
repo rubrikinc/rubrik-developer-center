@@ -1,12 +1,12 @@
 # exchangeDatabase
 
-Details of an Exchange Database for a given fid.
+Single Exchange Database lookup by FID.
 
 ## Arguments
 
 | Argument | Type | Description |
 |----------|------|-------------|
-| fid *(required)* | [UUID](../types/scalars/UUID.md)! | Rubrik UUID for the object. |
+| fid *(required)* | [UUID](../types/scalars/UUID.md)! | FID of the Exchange Database to retrieve. |
 
 ## Returns
 
@@ -27,6 +27,7 @@ Details of an Exchange Database for a given fid.
         id
         isRelic
         isReplica
+        legallyHeldSnapshotCount
         name
         numWorkloadDescendants
         objectType

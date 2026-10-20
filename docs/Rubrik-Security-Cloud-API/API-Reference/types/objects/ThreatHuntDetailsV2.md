@@ -15,6 +15,7 @@ Details for the threat hunt.
 | status | [ThreatHuntStatus](../enums/ThreatHuntStatus.md)! | Status of the threat hunt. |
 | totalMatchedSnapshots | [Long](../scalars/Long.md)! | Total number of snapshots for which malware was found and hunt succeeded, or partially succeeded, or is in progress. |
 | totalObjectFids | [Long](../scalars/Long.md)! | Total number of object FIDs. |
+| totalRegistryKeyMatches | [Long](../scalars/Long.md)! | Total number of Windows registry key matches. |
 | totalScannedSnapshots | [Long](../scalars/Long.md)! | Total number of snapshots across all objects selected for scan. |
 | totalUniqueFileMatches | [Long](../scalars/Long.md)! | Total number of unique paths for which malware was found. |
 

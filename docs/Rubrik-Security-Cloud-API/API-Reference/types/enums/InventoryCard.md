@@ -16,6 +16,7 @@ Inventory Card options that the user can select as a workload.
 | AZURE | Inventory Card is Azure Virtual Machines. |
 | AZURE_AD | Inventory card is Azure Active Directory. |
 | AZURE_BLOB_STORAGE | Inventory Card is Azure Blob Storage. |
+| AZURE_COSMOS_NOSQL | Inventory card is Azure Cosmos NoSQL. |
 | AZURE_DEVOPS | Inventory card is Azure DevOps. |
 | AZURE_POSTGRES_FLEXIBLE_SERVER | Inventory card is Azure Postgres Flexible Server. |
 | AZURE_SQL_DB | Inventory Card is Azure SQL Databases. |
@@ -32,6 +33,7 @@ Inventory Card options that the user can select as a workload.
 | GITHUB | Inventory card is GitHub. |
 | GLUE_ICEBERG | Inventory card is AWS Glue Iceberg. |
 | GOOGLE_WORKSPACE | Inventory Card is Google Workspace. |
+| HPE_VME | Inventory card is HPE Virtual Machine Essentials. |
 | HYPERV | Inventory Card is HyperV. |
 | HYPERV_VMS_CDM | Inventory Card is HyperV CDM. |
 | INFORMIX | Inventory card is Informix. |
@@ -41,6 +43,7 @@ Inventory Card options that the user can select as a workload.
 | LINUX_UNIX_FILESETS | Inventory Card is Linux Filesets. |
 | LINUX_UNIX_HOSTS_CDM | Inventory Card is Linux Hosts. |
 | M365_BACKUP_STORAGE | Inventory Card is Microsoft 365 Backup Storage. |
+| M365_CONFIGS | Inventory card is Microsoft 365 tenant configurations. |
 | MANAGED_VOLUMES | Inventory Card is Managed Volumes. |
 | MANAGED_VOLUMES_CDM | Inventory Card is Managed Volumes CDM. |
 | MARIADB | Inventory card is MariaDB. |

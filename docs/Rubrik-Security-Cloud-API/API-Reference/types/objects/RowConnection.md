@@ -6,7 +6,7 @@ Paginated list of Row objects. Each page of the results includes at most 1000 en
 
 | Field | Type | Description |
 |-------|------|-------------|
-| columns | [[Column](Column.md)!]! |  |
+| columns | [[Column](Column.md)!]! | The columns present in the result, in result order. |
 | count | Int! | Total number of Row objects matching the request arguments. |
 | edges | [[RowEdge](RowEdge.md)!]! | List of Row objects with additional pagination information. Use `nodes` if per-object cursors are not needed. |
 | nodes | [[Row](Row.md)!]! | List of Row objects. |

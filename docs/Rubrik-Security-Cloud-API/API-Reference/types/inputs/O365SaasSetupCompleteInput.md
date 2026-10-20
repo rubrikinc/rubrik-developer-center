@@ -7,9 +7,10 @@ Configuration for the setup of a Rubrik-hosted subscription.
 | Field | Type | Description |
 |-------|------|-------------|
 | appTypes | [String!]! | Types of the apps created in the flow. |
-| kmsSpec | [KmsSpecInput](KmsSpecInput.md) | Azure KMS configuration, excluding the app secret. |
+| kmsSpec | [KmsSpecInput](KmsSpecInput.md) | Azure KMS configuration, excluding the app secret. Mutually exclusive with uem_kms_spec; enforced in the service handler. |
 | prioritizedOnboardingSpec | [PrioritizedOnboardingSpec](PrioritizedOnboardingSpec.md) | Prioritized onboarding configuration. |
 | regionName | String! | The value of this field depends on the value of the storeBackupInSameRegionAsData field. When its value is false, regionName represents the Azure region name. When true, regionName represents the name of the central data location of the M365 organization. |
 | stateToken | String! | CSRF token for the setup flow. |
 | storeBackupInSameRegionAsData | Boolean! | Specifies whether the backups will be stored in the same region as the source data. When true, the regionName field represents the name of the central data location of the M365 organization. |
 | tenantId | String! | ID of the Azure tenant. |
+| uemKmsSpec | [UemKmsSpecInput](UemKmsSpecInput.md) | UEM-managed KMS configuration. Set when the customer opts for a UEM-managed KMS. Mutually exclusive with kms_spec. |

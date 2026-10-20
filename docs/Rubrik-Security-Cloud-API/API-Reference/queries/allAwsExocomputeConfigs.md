@@ -6,8 +6,8 @@ List of all AWS exocompute configurations filtered by a cloud account ID or a cl
 
 | Argument | Type | Description |
 |----------|------|-------------|
-| awsNativeAccountIdOrNamePrefix *(required)* | String! | A query that searches for Exocompute configurations with an account name or account native ID that is prefixed by the search query. |
-| operation *(required)* | [Operation](../types/enums/Operation.md)! | The operation used to scope the returned accounts to those the caller is authorized to perform. Defaults to CREATE_REPORT, which returns all accounts without operation-based scoping. |
+| awsNativeAccountIdOrNamePrefix *(required)* | String! | Native account ID or account name prefix used to filter the AWS exocompute configurations to return. |
+| operation *(required)* | [Operation](../types/enums/Operation.md)! | Operation used to scope the returned accounts to those the caller can perform that operation on. |
 
 ## Returns
 

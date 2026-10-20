@@ -16,6 +16,7 @@ Type of objects managed by SLA Domains.
 | AWS_S3_OBJECT_TYPE | AWS S3 object. |
 | AZURE_AD_OBJECT_TYPE | Azure Active Directory object. |
 | AZURE_BLOB_OBJECT_TYPE | Azure Blob object. |
+| AZURE_COSMOS_NOSQL_OBJECT_TYPE | Azure Cosmos DB for NoSQL object. SLA Domains are assignable at the account, database and container levels; the container is the object that is backed up, and the levels above it cascade their SLA Domain down to the containers beneath them. |
 | AZURE_DEVOPS_OBJECT_TYPE | Azure DevOps object. |
 | AZURE_OBJECT_TYPE | Azure object. |
 | AZURE_POSTGRES_FLEXIBLE_SERVER_OBJECT_TYPE | Azure PostgreSQL Flexible Server object. |
@@ -34,13 +35,15 @@ Type of objects managed by SLA Domains.
 | GITHUB_OBJECT_TYPE | GitHub object. |
 | GLUE_ICEBERG_TABLE_OBJECT_TYPE | Glue Iceberg Table object. |
 | GOOGLE_WORKSPACE_OBJECT_TYPE | Google Workspace object. |
-| HVM_OBJECT_TYPE | HPE Virtual Machine Essentials SLA Domain object. |
+| HPE_VME_OBJECT_TYPE | HPE Virtual Machine Essentials SLA Domain object. |
 | HYPERV_OBJECT_TYPE | HyperV SLA Domain object. |
 | INFORMIX_INSTANCE_OBJECT_TYPE | Informix object. |
 | IRISDB_INSTANCE_OBJECT_TYPE | IRIS DB instance object type. SLA Domains are assigned at the instance level; databases within the instance inherit the instance's SLA Domain. |
 | K8S_OBJECT_TYPE | CDM Native K8s object. |
+| K8S_POSTGRES_DB_CLUSTER_OBJECT_TYPE | K8s PostgreSQL database cluster object type. SLA Domains are assigned at the cluster level; databases within the cluster inherit the cluster's SLA Domain. |
 | KUPR_OBJECT_TYPE | Kubernetes object. |
 | M365_BACKUP_STORAGE_OBJECT_TYPE | Microsoft 365 Backup Storage object. |
+| M365_CONFIGS_OBJECT_TYPE | Microsoft 365 Configs Object. |
 | MANAGED_VOLUME_OBJECT_TYPE | Managed Volume object. |
 | MARIADB_OBJECT_TYPE | MariaDB object. |
 | MONGODB_OBJECT_TYPE | MongoDB object. |

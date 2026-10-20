@@ -35,6 +35,7 @@ Retrieves an Azure Native Managed Disk that refers to the block storage designed
         isFileIndexingEnabled
         isProtectable
         isRelic
+        legallyHeldSnapshotCount
         name
         nativeName
         numWorkloadDescendants

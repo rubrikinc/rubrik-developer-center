@@ -1,6 +1,6 @@
 # DisplayableValueBoolean
 
-*No description available.*
+A boolean-typed displayable value.
 
 **Implements:** [DisplayableValue](../interfaces/DisplayableValue.md)
 
@@ -8,7 +8,7 @@
 
 | Field | Type | Description |
 |-------|------|-------------|
-| displayValue | String! |  |
-| reportHeader | String! |  |
-| serializedValue | String! |  |
-| value | Boolean |  |
+| displayValue | String! | The value rendered for display in the UI. |
+| reportHeader | String! | The value rendered in the report header. |
+| serializedValue | String! | The value in its serialized string form. |
+| value | Boolean | The boolean value; unset when there is no value. |

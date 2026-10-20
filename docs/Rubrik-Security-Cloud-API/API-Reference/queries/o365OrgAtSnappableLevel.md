@@ -27,6 +27,7 @@ Details of the O365Org at snappable level, given the snappable type.
         exocomputeId
         hasSharePointLegacySnapshots
         id
+        legallyHeldSnapshotCount
         mailboxesPendingGraphMigration
         name
         numWorkloadDescendants
@@ -75,8 +76,8 @@ Details of the O365Org at snappable level, given the snappable type.
           "exocomputeId": "example-string",
           "hasSharePointLegacySnapshots": true,
           "id": "00000000-0000-0000-0000-000000000000",
+          "legallyHeldSnapshotCount": 0,
           "mailboxesPendingGraphMigration": 0,
-          "name": "example-string",
           "allOrgs": [
             {
               "allUrls": [

@@ -8,7 +8,7 @@ RegistryPatternSpec describes one Windows registry key search pattern and option
 |-------|------|-------------|
 | hiveRoot | [RegistryHiveRoot](../enums/RegistryHiveRoot.md)! | Structured registry root. When set, keyPath holds the root-relative path and keyPattern is a derived mirror. Takes precedence over keyPattern. |
 | keyPath | String! | Root-relative key path; required when hiveRoot is set. |
-| keyPattern | String! | Deprecated: use hiveRoot + keyPath for new hunts. Combined HKLM\...\* or HKCU\...\* key path; kept as a denormalized mirror when hiveRoot is set. |
+| keyPattern | String! | Output-only: denormalized mirror of hive_root + key_path, populated by OHS on create/update for downstream consumers that read this field. Not accepted as an input; set hive_root and key_path instead. |
 | patternId | String! | Stable UUID assigned by orion-hunt-service at hunt creation. Must be non-empty; used as the join key between match rows and their predicate context in the hunt config. |
 | valueDataContains | String! | Case-insensitive substring match against value data. |
 | valueDataEq | String! | Case-insensitive exact equality match against value data. |

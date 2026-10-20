@@ -19,10 +19,12 @@ A Kosmos snappable object in the Hierarchy.
 | effectiveSlaDomain | [SlaDomain](SlaDomain.md)! | Effective SLA Domain of the hierarchy object. |
 | effectiveSlaSourceObject | [PathNode](../objects/PathNode.md) | Path node of the effective SLA Domain source. |
 | entityInfo | [EntityInfo](../objects/EntityInfo.md)! | The basic entity information. |
+| futureLegalHoldInfo | [FutureLegalHoldInfo](../objects/FutureLegalHoldInfo.md) | Future legal hold rule configured for this object, if any. |
 | id | [UUID](../scalars/UUID.md)! | ID of the hierarchy object. |
 | isRelic | Boolean! | Indicates whether the workload type is a relic. |
 | isReplica | Boolean | True if this object is a replica, its current cluster differs from its source (primary) cluster. False if the object resides on its source cluster. Null when the source cluster is unknown. |
 | latestUserNote | [LatestUserNote](../objects/LatestUserNote.md) | Latest user note information. |
+| legallyHeldSnapshotCount | Int | Number of snapshots on legal hold for this object. |
 | liveMounts | [KosmosWorkloadLiveMountConnection](../objects/KosmosWorkloadLiveMountConnection.md)! | The live mounts of the given workloads. |
 | logicalPath | [[PathNode](../objects/PathNode.md)!]! | Sequential list of the logical ancestors of this object. |
 | missedSnapshotConnection | [MissedSnapshotCommonConnection](../objects/MissedSnapshotCommonConnection.md) | The list of missed snapshots for this workload. |
@@ -106,5 +108,7 @@ A Kosmos snappable object in the Hierarchy.
 
 ## Implemented By
 
+- [InformixInstance](../objects/InformixInstance.md)
+- [IrisdbInstance](../objects/IrisdbInstance.md)
 - [MysqldbInstance](../objects/MysqldbInstance.md)
 - [PostgreSQLDbCluster](../objects/PostgreSQLDbCluster.md)

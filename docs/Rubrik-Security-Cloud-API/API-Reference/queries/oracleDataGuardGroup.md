@@ -32,6 +32,7 @@ An Oracle Data Guard Group.
         isRelic
         isReplica
         isZeroRpoEnabled
+        legallyHeldSnapshotCount
         logBackupFrequency
         logRatePerRmanChannelInMb
         logRetentionHours

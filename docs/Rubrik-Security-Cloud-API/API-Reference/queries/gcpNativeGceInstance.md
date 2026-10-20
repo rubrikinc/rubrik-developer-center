@@ -26,6 +26,7 @@ Get details of a GCE Instance
         isExocomputeConfigured
         isProtectionOnboarded
         isRelic
+        legallyHeldSnapshotCount
         machineType
         name
         nativeId

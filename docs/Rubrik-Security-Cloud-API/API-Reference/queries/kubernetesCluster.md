@@ -35,6 +35,7 @@ Summary of a Kubernetes Cluster.
         isReplica
         k8sName
         k8sVersion
+        legallyHeldSnapshotCount
         maxConcurrentAgents
         maxPvcsPerAgent
         nadName
