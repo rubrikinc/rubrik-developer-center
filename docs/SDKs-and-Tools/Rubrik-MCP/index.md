@@ -15,7 +15,7 @@ Once connected, an agent can describe tasks in plain language and translate them
 ### Prerequisites
 ---
 - [uv](https://docs.astral.sh/uv/getting-started/installation/) (recommended), or Python ≥ 3.10 with pip
-- A Rubrik Security Cloud service account, or a [personal access token](../../Rubrik-Security-Cloud-API/authentication.md#personal-access-tokens) (requires rubrik-mcp X.Y or later)
+- A Rubrik Security Cloud service account, or a [personal access token](../../Rubrik-Security-Cloud-API/authentication.md#personal-access-tokens) (requires rubrik-mcp 0.9.20260928 or later)
 
 ## Quick Install via AI Agent
 ---
@@ -94,7 +94,7 @@ The server authenticates with either a service account or a personal access toke
 
 ### Service account
 
-Create a service account in RSC under **Apps (waffle icon) → Settings → API Access → Service Accounts**. Download the JSON credentials file (see [Service Accounts](../../Rubrik-Security-Cloud-API/authentication.md#service-accounts-oauth2-client-credentials-grant)). The file contains your client ID, client secret, and RSC token endpoint:
+Create a service account in RSC under **Apps (waffle icon) → Settings → API Access → Service Accounts**. Download the JSON credentials file (see [Service Accounts](../../Rubrik-Security-Cloud-API/authentication.md#service-accounts)). The file contains your client ID, client secret, and RSC token endpoint:
 
 ```json
 {
