@@ -15,7 +15,7 @@ Once connected, an agent can describe tasks in plain language and translate them
 ### Prerequisites
 ---
 - [uv](https://docs.astral.sh/uv/getting-started/installation/) (recommended), or Python ≥ 3.10 with pip
-- A Rubrik Security Cloud service account, or a [personal access token](../../Rubrik-Security-Cloud-API/authentication.md#personal-access-tokens) (requires rubrik-mcp 0.9.20260928 or later)
+- A Rubrik Security Cloud service account, or a [personal access token](../../Rubrik-Security-Cloud-API/authentication.md#personal-access-tokens) (requires rubrik-mcp 0.9.20260928 or later; see [Upgrading](#upgrading))
 
 ## Quick Install via AI Agent
 ---
@@ -86,6 +86,14 @@ Desktop apps don't always inherit your shell's `PATH`. If Claude Desktop can't f
 ```
 
 If you installed with pip, set `"command"` to the full path of `rubrik-mcp` and remove `"args"`.
+
+### Upgrading
+
+`uvx rubrik-mcp` keeps using the version it cached on first run. To move to the latest release, run it once with `uvx rubrik-mcp@latest`, or pin `rubrik-mcp@<version>` in your client config, then restart your MCP client. With pip, run `pip install --upgrade rubrik-mcp`. For Docker, build or load the new image and update the tag in your client config. The `/config` volume keeps your policy and workflows (see [Docker Deployment](#docker-deployment)).
+
+Upgrading doesn't change `mcp-policy.json`. When `writes_enabled` is `true`, any write tool not listed in `write_tools` is enabled, so a write tool added in a new release turns on automatically. List it as `false` to keep it off (see [Gating Policy](#gating-policy)).
+
+If you used a version that stored config in `~/.rubrik`, move it to the new location as described in the [advanced reference](https://github.com/rubrikinc/rubrik-mcp/blob/main/docs/advanced.md#gating-policy).
 
 ## Credentials Setup {#service-account-setup}
 ---
