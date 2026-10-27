@@ -21,7 +21,7 @@
       
       
       <link rel="icon" href="../../assets/favicon.ico">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.8.0">
     
     
       
@@ -29,10 +29,10 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.57a0d79d.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.fb2fffe2.min.css">
       
       
 
@@ -1074,16 +1074,83 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Installation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#upgrading" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Upgrading
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
   <a href="#service-account-setup" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Service Account Setup
+        Credentials Setup
       
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="Credentials Setup">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#service-account" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Service account
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#personal-access-token" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Personal access token
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#choosing-a-credential" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Choosing a credential
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#credential-resolution-order" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Credential resolution order
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1268,7 +1335,7 @@
 <hr />
 <ul>
 <li><a href="https://docs.astral.sh/uv/getting-started/installation/">uv</a> (recommended), or Python ≥ 3.10 with pip</li>
-<li>A Rubrik Security Cloud Service Account</li>
+<li>A Rubrik Security Cloud service account, or a <a href="../../Rubrik-Security-Cloud-API/authentication/#personal-access-tokens">personal access token</a> (requires rubrik-mcp 0.9.20260928 or later; see <a href="#upgrading">Upgrading</a>)</li>
 </ul>
 <h2 id="quick-install-via-ai-agent">Quick Install via AI Agent</h2>
 <hr />
@@ -1277,10 +1344,10 @@
 </span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>
 </span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>Steps:
 </span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>1. Run it with uvx rubrik-mcp (requires uv; no separate install step). If uv isn't available, install it with pip install rubrik-mcp and use the full path to the rubrik-mcp command instead.
-</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>2. Register it as an MCP server named "rubrik" using the appropriate config for this client, with RSC_SERVICE_ACCOUNT_FILE set to the path of my service account JSON file.
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>2. Register it as an MCP server named "rubrik" using the appropriate config for this client, with RSC_SERVICE_ACCOUNT_FILE set to the path of my credentials JSON file (a service account or personal access token file).
 </span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>3. Verify the server is connected and list the available tools.
 </span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>
-</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>My service account JSON file is at: /path/to/service_account.json
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>My credentials JSON file is at: /path/to/service_account.json
 </span></code></pre></div>
 <p>Replace <code>/path/to/service_account.json</code> with the actual path before sending.</p>
 <h2 id="installation">Installation</h2>
@@ -1318,15 +1385,42 @@
 </span><span id="__span-4-7"><a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a><span class="p">}</span>
 </span></code></pre></div>
 <p>If you installed with pip, set <code>"command"</code> to the full path of <code>rubrik-mcp</code> and remove <code>"args"</code>.</p>
-<h2 id="service-account-setup">Service Account Setup</h2>
+<h3 id="upgrading">Upgrading</h3>
+<p><code>uvx rubrik-mcp</code> keeps using the version it cached on first run. To move to the latest release, run it once with <code>uvx rubrik-mcp@latest</code>, or pin <code>rubrik-mcp@&lt;version&gt;</code> in your client config, then restart your MCP client. With pip, run <code>pip install --upgrade rubrik-mcp</code>. For Docker, build or load the new image and update the tag in your client config. The <code>/config</code> volume keeps your policy and workflows (see <a href="#docker-deployment">Docker Deployment</a>).</p>
+<p>Upgrading doesn't change <code>mcp-policy.json</code>. When <code>writes_enabled</code> is <code>true</code>, any write tool not listed in <code>write_tools</code> is enabled, so a write tool added in a new release turns on automatically. List it as <code>false</code> to keep it off (see <a href="#gating-policy">Gating Policy</a>).</p>
+<p>If you used a version that stored config in <code>~/.rubrik</code>, move it to the new location as described in the <a href="https://github.com/rubrikinc/rubrik-mcp/blob/main/docs/advanced.md#gating-policy">advanced reference</a>.</p>
+<h2 id="service-account-setup">Credentials Setup</h2>
 <hr />
-<p>Create a service account in RSC under <strong>Apps (waffle icon) → Settings → API Access → Service Accounts</strong>. Download the JSON credentials file. The file contains your client ID, client secret, and RSC token endpoint:</p>
+<p>The server authenticates with either a service account or a personal access token (PAT). Both are downloaded from RSC as a JSON file, and both are loaded through <code>RSC_SERVICE_ACCOUNT_FILE</code>. For how each credential type works with the RSC API, see <a href="../../Rubrik-Security-Cloud-API/authentication/">Authentication</a>.</p>
+<h3 id="service-account">Service account</h3>
+<p>Create a service account in RSC under <strong>Apps (waffle icon) → Settings → API Access → Service Accounts</strong>. Download the JSON credentials file (see <a href="../../Rubrik-Security-Cloud-API/authentication/#service-accounts">Service Accounts</a>). The file contains your client ID, client secret, and RSC token endpoint:</p>
 <div class="language-json highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="p">{</span>
 </span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="w">  </span><span class="nt">"client_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"client|..."</span><span class="p">,</span>
 </span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="w">  </span><span class="nt">"client_secret"</span><span class="p">:</span><span class="w"> </span><span class="s2">"..."</span><span class="p">,</span>
 </span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="w">  </span><span class="nt">"access_token_uri"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://&lt;your-domain&gt;/api/client_token"</span>
 </span><span id="__span-5-5"><a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="p">}</span>
 </span></code></pre></div>
+<h3 id="personal-access-token">Personal access token</h3>
+<p>A PAT lets the server act as you. Create one in RSC and download the credentials as JSON (see <a href="https://docs.rubrik.com/en-us/saas/saas/personal_access_tokens.html">Personal access tokens</a> in the RSC user guide). The file has the same keys as a service account file. The client ID starts with <code>pat|</code>, and <code>access_token_uri</code> ends in <code>/api/pat_login</code>:</p>
+<div class="language-json highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="p">{</span>
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="w">  </span><span class="nt">"client_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"pat|..."</span><span class="p">,</span>
+</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="w">  </span><span class="nt">"client_secret"</span><span class="p">:</span><span class="w"> </span><span class="s2">"..."</span><span class="p">,</span>
+</span><span id="__span-6-4"><a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="w">  </span><span class="nt">"access_token_uri"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://&lt;your-domain&gt;/api/pat_login"</span>
+</span><span id="__span-6-5"><a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a><span class="p">}</span>
+</span></code></pre></div>
+<p>Point <code>RSC_SERVICE_ACCOUNT_FILE</code> at this file. The variable name is the same for both credential types. See <a href="../../Rubrik-Security-Cloud-API/authentication/#personal-access-tokens">Personal Access Tokens</a> for how sessions work. A PAT allows a limited number of concurrent sessions, and logging in beyond that limit ends the oldest one, so running the server alongside other scripts that use the same PAT can sign those scripts out.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>PATs work only through a credentials file. The individual <code>RSC_URL</code>, <code>RSC_CLIENT_ID</code>, and <code>RSC_CLIENT_SECRET</code> variables always authenticate against the service account endpoint.</p>
+</div>
+<p>If the server reports <code>Personal access token login was rejected (HTTP 403)</code>, PATs are not enabled on your RSC account.</p>
+<h3 id="choosing-a-credential">Choosing a credential</h3>
+<p>A PAT gives the agent your full RSC permissions, and every action it takes is recorded in the audit log under your name. Use a PAT for your own desktop agent, where per-user attribution matters. Use a narrowly scoped service account for shared, server-side, or production agents. The <a href="#gating-policy">gating policy</a> applies to both.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>For production deployments, scope the service account to a minimum-privilege role. A read-only role covers all query and monitoring use cases. Use a <strong>DevOps</strong> role if you need to trigger backups or assign SLAs, and configure <strong>Quorum Authorization</strong> for destructive operations.</p>
+</div>
+<h3 id="credential-resolution-order">Credential resolution order</h3>
 <p>The server resolves credentials in this priority order:</p>
 <table>
 <thead>
@@ -1334,30 +1428,36 @@
 <th>Priority</th>
 <th>Method</th>
 <th>How to configure</th>
+<th>Supports PATs</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>1</td>
 <td><code>RSC_SERVICE_ACCOUNT_FILE</code> env var</td>
-<td>Set to the full path of your service account JSON</td>
+<td>Set to the full path of your credentials JSON</td>
+<td>Yes</td>
 </tr>
 <tr>
 <td>2</td>
-<td>Individual env vars</td>
-<td>Set <code>RSC_URL</code>, <code>RSC_CLIENT_ID</code>, and <code>RSC_CLIENT_SECRET</code> separately</td>
+<td>Credentials file referenced in <code>~/.rsc/config.json</code></td>
+<td>Set <code>"service_account_file"</code> to the file path</td>
+<td>Yes</td>
 </tr>
 <tr>
 <td>3</td>
-<td>Config file</td>
-<td>Place credentials in <code>~/.rsc/config.json</code></td>
+<td>Individual env vars</td>
+<td>Set <code>RSC_URL</code>, <code>RSC_CLIENT_ID</code>, and <code>RSC_CLIENT_SECRET</code> separately</td>
+<td>No</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Individual values in <code>~/.rsc/config.json</code></td>
+<td>Set <code>"url"</code>, <code>"client_id"</code>, and <code>"client_secret"</code></td>
+<td>No</td>
 </tr>
 </tbody>
 </table>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>For production deployments, scope the service account to a minimum-privilege role. A read-only role covers all query and monitoring use cases. Use a <strong>DevOps</strong> role if you need to trigger backups or assign SLAs, and configure <strong>Quorum Authorization</strong> for destructive operations.</p>
-</div>
 <h2 id="role-recommendations">Role Recommendations</h2>
 <hr />
 <table>
@@ -1382,6 +1482,7 @@
 </tr>
 </tbody>
 </table>
+<p>These recommendations apply to service accounts. With a PAT, the agent's effective role is your own.</p>
 <p>Consider applying an IP allowlist to the service account and rotating credentials on a scheduled basis. Audit log activity is available under <strong>Reports → Audit Log</strong> in RSC.</p>
 <h2 id="what-you-can-do">What You Can Do</h2>
 <hr />
@@ -1511,22 +1612,22 @@
 <h3 id="gating-policy">Gating Policy</h3>
 <p>If no policy file exists, the server creates one at <code>~/.config/rubrik-mcp/mcp-policy.json</code> on first run (mode <code>0600</code>). The policy controls which write tools the agent can use and which queries <code>rsc_execute_operation</code> will run. It works alongside your service account's RSC role: the role bounds what the account can do, and the policy bounds what the MCP server will do.</p>
 <p>The default policy (a <code>_comment</code> key at the top explains each setting):</p>
-<div class="language-json highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="p">{</span>
-</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="w">  </span><span class="nt">"writes_enabled"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
-</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="w">  </span><span class="nt">"write_tools"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-6-4"><a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="w">    </span><span class="nt">"rsc_take_on_demand_snapshot"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
-</span><span id="__span-6-5"><a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a><span class="w">    </span><span class="nt">"rsc_assign_sla"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
-</span><span id="__span-6-6"><a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a><span class="w">    </span><span class="nt">"rsc_onboard_host"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span>
-</span><span id="__span-6-7"><a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a><span class="w">  </span><span class="p">},</span>
-</span><span id="__span-6-8"><a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a><span class="w">  </span><span class="nt">"queries"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-6-9"><a id="__codelineno-6-9" name="__codelineno-6-9" href="#__codelineno-6-9"></a><span class="w">    </span><span class="nt">"allow_by_default"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
-</span><span id="__span-6-10"><a id="__codelineno-6-10" name="__codelineno-6-10" href="#__codelineno-6-10"></a><span class="w">    </span><span class="nt">"allowed"</span><span class="p">:</span><span class="w"> </span><span class="p">[],</span>
-</span><span id="__span-6-11"><a id="__codelineno-6-11" name="__codelineno-6-11" href="#__codelineno-6-11"></a><span class="w">    </span><span class="nt">"denied"</span><span class="p">:</span><span class="w"> </span><span class="p">[]</span>
-</span><span id="__span-6-12"><a id="__codelineno-6-12" name="__codelineno-6-12" href="#__codelineno-6-12"></a><span class="w">  </span><span class="p">},</span>
-</span><span id="__span-6-13"><a id="__codelineno-6-13" name="__codelineno-6-13" href="#__codelineno-6-13"></a><span class="w">  </span><span class="nt">"cross_mcp_egress"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-6-14"><a id="__codelineno-6-14" name="__codelineno-6-14" href="#__codelineno-6-14"></a><span class="w">    </span><span class="nt">"allowed"</span><span class="p">:</span><span class="w"> </span><span class="p">[]</span>
-</span><span id="__span-6-15"><a id="__codelineno-6-15" name="__codelineno-6-15" href="#__codelineno-6-15"></a><span class="w">  </span><span class="p">}</span>
-</span><span id="__span-6-16"><a id="__codelineno-6-16" name="__codelineno-6-16" href="#__codelineno-6-16"></a><span class="p">}</span>
+<div class="language-json highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="p">{</span>
+</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="w">  </span><span class="nt">"writes_enabled"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="w">  </span><span class="nt">"write_tools"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-7-4"><a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a><span class="w">    </span><span class="nt">"rsc_take_on_demand_snapshot"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+</span><span id="__span-7-5"><a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a><span class="w">    </span><span class="nt">"rsc_assign_sla"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+</span><span id="__span-7-6"><a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a><span class="w">    </span><span class="nt">"rsc_onboard_host"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span>
+</span><span id="__span-7-7"><a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a><span class="w">  </span><span class="p">},</span>
+</span><span id="__span-7-8"><a id="__codelineno-7-8" name="__codelineno-7-8" href="#__codelineno-7-8"></a><span class="w">  </span><span class="nt">"queries"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-7-9"><a id="__codelineno-7-9" name="__codelineno-7-9" href="#__codelineno-7-9"></a><span class="w">    </span><span class="nt">"allow_by_default"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+</span><span id="__span-7-10"><a id="__codelineno-7-10" name="__codelineno-7-10" href="#__codelineno-7-10"></a><span class="w">    </span><span class="nt">"allowed"</span><span class="p">:</span><span class="w"> </span><span class="p">[],</span>
+</span><span id="__span-7-11"><a id="__codelineno-7-11" name="__codelineno-7-11" href="#__codelineno-7-11"></a><span class="w">    </span><span class="nt">"denied"</span><span class="p">:</span><span class="w"> </span><span class="p">[]</span>
+</span><span id="__span-7-12"><a id="__codelineno-7-12" name="__codelineno-7-12" href="#__codelineno-7-12"></a><span class="w">  </span><span class="p">},</span>
+</span><span id="__span-7-13"><a id="__codelineno-7-13" name="__codelineno-7-13" href="#__codelineno-7-13"></a><span class="w">  </span><span class="nt">"cross_mcp_egress"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-7-14"><a id="__codelineno-7-14" name="__codelineno-7-14" href="#__codelineno-7-14"></a><span class="w">    </span><span class="nt">"allowed"</span><span class="p">:</span><span class="w"> </span><span class="p">[]</span>
+</span><span id="__span-7-15"><a id="__codelineno-7-15" name="__codelineno-7-15" href="#__codelineno-7-15"></a><span class="w">  </span><span class="p">}</span>
+</span><span id="__span-7-16"><a id="__codelineno-7-16" name="__codelineno-7-16" href="#__codelineno-7-16"></a><span class="p">}</span>
 </span></code></pre></div>
 <table>
 <thead>
@@ -1575,14 +1676,14 @@
 </div>
 <p>Raw GraphQL mutations sent through <code>rsc_execute_operation</code> are never executed, whatever the policy says. The agent returns a Python script for you to review and run instead.</p>
 <p>To enable on-demand snapshots and keep the other write tools off:</p>
-<div class="language-json highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="p">{</span>
-</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="w">  </span><span class="nt">"writes_enabled"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
-</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="w">  </span><span class="nt">"write_tools"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-7-4"><a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a><span class="w">    </span><span class="nt">"rsc_take_on_demand_snapshot"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
-</span><span id="__span-7-5"><a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a><span class="w">    </span><span class="nt">"rsc_assign_sla"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
-</span><span id="__span-7-6"><a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a><span class="w">    </span><span class="nt">"rsc_onboard_host"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span>
-</span><span id="__span-7-7"><a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a><span class="w">  </span><span class="p">}</span>
-</span><span id="__span-7-8"><a id="__codelineno-7-8" name="__codelineno-7-8" href="#__codelineno-7-8"></a><span class="p">}</span>
+<div class="language-json highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="p">{</span>
+</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="w">  </span><span class="nt">"writes_enabled"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+</span><span id="__span-8-3"><a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a><span class="w">  </span><span class="nt">"write_tools"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-8-4"><a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a><span class="w">    </span><span class="nt">"rsc_take_on_demand_snapshot"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+</span><span id="__span-8-5"><a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a><span class="w">    </span><span class="nt">"rsc_assign_sla"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+</span><span id="__span-8-6"><a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a><span class="w">    </span><span class="nt">"rsc_onboard_host"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span>
+</span><span id="__span-8-7"><a id="__codelineno-8-7" name="__codelineno-8-7" href="#__codelineno-8-7"></a><span class="w">  </span><span class="p">}</span>
+</span><span id="__span-8-8"><a id="__codelineno-8-8" name="__codelineno-8-8" href="#__codelineno-8-8"></a><span class="p">}</span>
 </span></code></pre></div>
 <p>The config directory can be relocated using the <code>RUBRIK_MCP_CONFIG_DIR</code> environment variable. This is the recommended approach for Docker deployments.</p>
 <h3 id="custom-workflows">Custom Workflows</h3>
@@ -1592,65 +1693,65 @@
 <p><em>"Save a workflow that finds all out-of-compliance VMs and takes an on-demand snapshot of each one. Call it <code>rsc_remediate_oc_vms</code>."</em></p>
 </blockquote>
 <p>The agent will call <code>rsc_save_workflow</code> with a JSON spec. The spec format:</p>
-<div class="language-json highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="p">{</span>
-</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="w">  </span><span class="nt">"schema_version"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
-</span><span id="__span-8-3"><a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a><span class="w">  </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"rsc_remediate_oc_vms"</span><span class="p">,</span>
-</span><span id="__span-8-4"><a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a><span class="w">  </span><span class="nt">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Find out-of-compliance VMs and snapshot each one."</span><span class="p">,</span>
-</span><span id="__span-8-5"><a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a><span class="w">  </span><span class="nt">"steps"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
-</span><span id="__span-8-6"><a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a><span class="w">    </span><span class="p">{</span>
-</span><span id="__span-8-7"><a id="__codelineno-8-7" name="__codelineno-8-7" href="#__codelineno-8-7"></a><span class="w">      </span><span class="nt">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"get_oc"</span><span class="p">,</span>
-</span><span id="__span-8-8"><a id="__codelineno-8-8" name="__codelineno-8-8" href="#__codelineno-8-8"></a><span class="w">      </span><span class="nt">"mcp"</span><span class="p">:</span><span class="w"> </span><span class="s2">"rubrik"</span><span class="p">,</span>
-</span><span id="__span-8-9"><a id="__codelineno-8-9" name="__codelineno-8-9" href="#__codelineno-8-9"></a><span class="w">      </span><span class="nt">"tool"</span><span class="p">:</span><span class="w"> </span><span class="s2">"rsc_get_workloads"</span><span class="p">,</span>
-</span><span id="__span-8-10"><a id="__codelineno-8-10" name="__codelineno-8-10" href="#__codelineno-8-10"></a><span class="w">      </span><span class="nt">"args"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-8-11"><a id="__codelineno-8-11" name="__codelineno-8-11" href="#__codelineno-8-11"></a><span class="w">        </span><span class="nt">"compliance_status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"OUT_OF_COMPLIANCE"</span><span class="p">,</span>
-</span><span id="__span-8-12"><a id="__codelineno-8-12" name="__codelineno-8-12" href="#__codelineno-8-12"></a><span class="w">        </span><span class="nt">"object_type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"VmwareVirtualMachine"</span>
-</span><span id="__span-8-13"><a id="__codelineno-8-13" name="__codelineno-8-13" href="#__codelineno-8-13"></a><span class="w">      </span><span class="p">}</span>
-</span><span id="__span-8-14"><a id="__codelineno-8-14" name="__codelineno-8-14" href="#__codelineno-8-14"></a><span class="w">    </span><span class="p">},</span>
-</span><span id="__span-8-15"><a id="__codelineno-8-15" name="__codelineno-8-15" href="#__codelineno-8-15"></a><span class="w">    </span><span class="p">{</span>
-</span><span id="__span-8-16"><a id="__codelineno-8-16" name="__codelineno-8-16" href="#__codelineno-8-16"></a><span class="w">      </span><span class="nt">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"snapshot"</span><span class="p">,</span>
-</span><span id="__span-8-17"><a id="__codelineno-8-17" name="__codelineno-8-17" href="#__codelineno-8-17"></a><span class="w">      </span><span class="nt">"mcp"</span><span class="p">:</span><span class="w"> </span><span class="s2">"rubrik"</span><span class="p">,</span>
-</span><span id="__span-8-18"><a id="__codelineno-8-18" name="__codelineno-8-18" href="#__codelineno-8-18"></a><span class="w">      </span><span class="nt">"tool"</span><span class="p">:</span><span class="w"> </span><span class="s2">"rsc_take_on_demand_snapshot"</span><span class="p">,</span>
-</span><span id="__span-8-19"><a id="__codelineno-8-19" name="__codelineno-8-19" href="#__codelineno-8-19"></a><span class="w">      </span><span class="nt">"args"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-8-20"><a id="__codelineno-8-20" name="__codelineno-8-20" href="#__codelineno-8-20"></a><span class="w">        </span><span class="nt">"workload_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"${get_oc.workloads[0].fid}"</span><span class="p">,</span>
-</span><span id="__span-8-21"><a id="__codelineno-8-21" name="__codelineno-8-21" href="#__codelineno-8-21"></a><span class="w">        </span><span class="nt">"object_type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"VmwareVirtualMachine"</span>
-</span><span id="__span-8-22"><a id="__codelineno-8-22" name="__codelineno-8-22" href="#__codelineno-8-22"></a><span class="w">      </span><span class="p">}</span>
-</span><span id="__span-8-23"><a id="__codelineno-8-23" name="__codelineno-8-23" href="#__codelineno-8-23"></a><span class="w">    </span><span class="p">}</span>
-</span><span id="__span-8-24"><a id="__codelineno-8-24" name="__codelineno-8-24" href="#__codelineno-8-24"></a><span class="w">  </span><span class="p">]</span>
-</span><span id="__span-8-25"><a id="__codelineno-8-25" name="__codelineno-8-25" href="#__codelineno-8-25"></a><span class="p">}</span>
+<div class="language-json highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="p">{</span>
+</span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="w">  </span><span class="nt">"schema_version"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
+</span><span id="__span-9-3"><a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a><span class="w">  </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"rsc_remediate_oc_vms"</span><span class="p">,</span>
+</span><span id="__span-9-4"><a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a><span class="w">  </span><span class="nt">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Find out-of-compliance VMs and snapshot each one."</span><span class="p">,</span>
+</span><span id="__span-9-5"><a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a><span class="w">  </span><span class="nt">"steps"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+</span><span id="__span-9-6"><a id="__codelineno-9-6" name="__codelineno-9-6" href="#__codelineno-9-6"></a><span class="w">    </span><span class="p">{</span>
+</span><span id="__span-9-7"><a id="__codelineno-9-7" name="__codelineno-9-7" href="#__codelineno-9-7"></a><span class="w">      </span><span class="nt">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"get_oc"</span><span class="p">,</span>
+</span><span id="__span-9-8"><a id="__codelineno-9-8" name="__codelineno-9-8" href="#__codelineno-9-8"></a><span class="w">      </span><span class="nt">"mcp"</span><span class="p">:</span><span class="w"> </span><span class="s2">"rubrik"</span><span class="p">,</span>
+</span><span id="__span-9-9"><a id="__codelineno-9-9" name="__codelineno-9-9" href="#__codelineno-9-9"></a><span class="w">      </span><span class="nt">"tool"</span><span class="p">:</span><span class="w"> </span><span class="s2">"rsc_get_workloads"</span><span class="p">,</span>
+</span><span id="__span-9-10"><a id="__codelineno-9-10" name="__codelineno-9-10" href="#__codelineno-9-10"></a><span class="w">      </span><span class="nt">"args"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-9-11"><a id="__codelineno-9-11" name="__codelineno-9-11" href="#__codelineno-9-11"></a><span class="w">        </span><span class="nt">"compliance_status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"OUT_OF_COMPLIANCE"</span><span class="p">,</span>
+</span><span id="__span-9-12"><a id="__codelineno-9-12" name="__codelineno-9-12" href="#__codelineno-9-12"></a><span class="w">        </span><span class="nt">"object_type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"VmwareVirtualMachine"</span>
+</span><span id="__span-9-13"><a id="__codelineno-9-13" name="__codelineno-9-13" href="#__codelineno-9-13"></a><span class="w">      </span><span class="p">}</span>
+</span><span id="__span-9-14"><a id="__codelineno-9-14" name="__codelineno-9-14" href="#__codelineno-9-14"></a><span class="w">    </span><span class="p">},</span>
+</span><span id="__span-9-15"><a id="__codelineno-9-15" name="__codelineno-9-15" href="#__codelineno-9-15"></a><span class="w">    </span><span class="p">{</span>
+</span><span id="__span-9-16"><a id="__codelineno-9-16" name="__codelineno-9-16" href="#__codelineno-9-16"></a><span class="w">      </span><span class="nt">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"snapshot"</span><span class="p">,</span>
+</span><span id="__span-9-17"><a id="__codelineno-9-17" name="__codelineno-9-17" href="#__codelineno-9-17"></a><span class="w">      </span><span class="nt">"mcp"</span><span class="p">:</span><span class="w"> </span><span class="s2">"rubrik"</span><span class="p">,</span>
+</span><span id="__span-9-18"><a id="__codelineno-9-18" name="__codelineno-9-18" href="#__codelineno-9-18"></a><span class="w">      </span><span class="nt">"tool"</span><span class="p">:</span><span class="w"> </span><span class="s2">"rsc_take_on_demand_snapshot"</span><span class="p">,</span>
+</span><span id="__span-9-19"><a id="__codelineno-9-19" name="__codelineno-9-19" href="#__codelineno-9-19"></a><span class="w">      </span><span class="nt">"args"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-9-20"><a id="__codelineno-9-20" name="__codelineno-9-20" href="#__codelineno-9-20"></a><span class="w">        </span><span class="nt">"workload_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"${get_oc.workloads[0].fid}"</span><span class="p">,</span>
+</span><span id="__span-9-21"><a id="__codelineno-9-21" name="__codelineno-9-21" href="#__codelineno-9-21"></a><span class="w">        </span><span class="nt">"object_type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"VmwareVirtualMachine"</span>
+</span><span id="__span-9-22"><a id="__codelineno-9-22" name="__codelineno-9-22" href="#__codelineno-9-22"></a><span class="w">      </span><span class="p">}</span>
+</span><span id="__span-9-23"><a id="__codelineno-9-23" name="__codelineno-9-23" href="#__codelineno-9-23"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-9-24"><a id="__codelineno-9-24" name="__codelineno-9-24" href="#__codelineno-9-24"></a><span class="w">  </span><span class="p">]</span>
+</span><span id="__span-9-25"><a id="__codelineno-9-25" name="__codelineno-9-25" href="#__codelineno-9-25"></a><span class="p">}</span>
 </span></code></pre></div>
 <p>Reference earlier step results with <code>${step_id.path.to.value}</code> in <code>args</code>. Workflow files are plain JSON in <code>~/.config/rubrik-mcp/workflows/</code> — edit them directly and restart the server to pick up changes.</p>
 <h3 id="docker-deployment">Docker Deployment</h3>
 <p>Docker is the recommended approach for hardened or shared deployments.</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/rubrikinc/rubrik-mcp.git
-</span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="nb">cd</span><span class="w"> </span>rubrik-mcp
-</span><span id="__span-9-3"><a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a>docker<span class="w"> </span>build<span class="w"> </span>-t<span class="w"> </span>rubrik-mcp<span class="w"> </span>.
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/rubrikinc/rubrik-mcp.git
+</span><span id="__span-10-2"><a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a><span class="nb">cd</span><span class="w"> </span>rubrik-mcp
+</span><span id="__span-10-3"><a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a>docker<span class="w"> </span>build<span class="w"> </span>-t<span class="w"> </span>rubrik-mcp<span class="w"> </span>.
 </span></code></pre></div>
 <p>For the distroless hardened variant:</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>docker<span class="w"> </span>build<span class="w"> </span>--target<span class="w"> </span>distroless<span class="w"> </span>-t<span class="w"> </span>rubrik-mcp:hardened<span class="w"> </span>.
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>docker<span class="w"> </span>build<span class="w"> </span>--target<span class="w"> </span>distroless<span class="w"> </span>-t<span class="w"> </span>rubrik-mcp:hardened<span class="w"> </span>.
 </span></code></pre></div>
 <p>Mount <code>~/.config/rubrik-mcp</code> to <code>/config</code> to persist the policy file and any saved workflows:</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>docker<span class="w"> </span>run<span class="w"> </span>--rm<span class="w"> </span>-i<span class="w"> </span><span class="se">\</span>
-</span><span id="__span-11-2"><a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a><span class="w">  </span>-e<span class="w"> </span><span class="nv">RSC_SERVICE_ACCOUNT_FILE</span><span class="o">=</span>/config/service_account.json<span class="w"> </span><span class="se">\</span>
-</span><span id="__span-11-3"><a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a><span class="w">  </span>-v<span class="w"> </span>~/.config/rubrik-mcp:/config<span class="w"> </span><span class="se">\</span>
-</span><span id="__span-11-4"><a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a><span class="w">  </span>rubrik-mcp
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>docker<span class="w"> </span>run<span class="w"> </span>--rm<span class="w"> </span>-i<span class="w"> </span><span class="se">\</span>
+</span><span id="__span-12-2"><a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a><span class="w">  </span>-e<span class="w"> </span><span class="nv">RSC_SERVICE_ACCOUNT_FILE</span><span class="o">=</span>/config/service_account.json<span class="w"> </span><span class="se">\</span>
+</span><span id="__span-12-3"><a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a><span class="w">  </span>-v<span class="w"> </span>~/.config/rubrik-mcp:/config<span class="w"> </span><span class="se">\</span>
+</span><span id="__span-12-4"><a id="__codelineno-12-4" name="__codelineno-12-4" href="#__codelineno-12-4"></a><span class="w">  </span>rubrik-mcp
 </span></code></pre></div>
 <p>MCP client config for Docker:</p>
-<div class="language-json highlight"><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="p">{</span>
-</span><span id="__span-12-2"><a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a><span class="w">  </span><span class="nt">"mcpServers"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-12-3"><a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a><span class="w">    </span><span class="nt">"rubrik"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-12-4"><a id="__codelineno-12-4" name="__codelineno-12-4" href="#__codelineno-12-4"></a><span class="w">      </span><span class="nt">"command"</span><span class="p">:</span><span class="w"> </span><span class="s2">"docker"</span><span class="p">,</span>
-</span><span id="__span-12-5"><a id="__codelineno-12-5" name="__codelineno-12-5" href="#__codelineno-12-5"></a><span class="w">      </span><span class="nt">"args"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">"run"</span><span class="p">,</span><span class="w"> </span><span class="s2">"--rm"</span><span class="p">,</span><span class="w"> </span><span class="s2">"-i"</span><span class="p">,</span>
-</span><span id="__span-12-6"><a id="__codelineno-12-6" name="__codelineno-12-6" href="#__codelineno-12-6"></a><span class="w">               </span><span class="s2">"-e"</span><span class="p">,</span><span class="w"> </span><span class="s2">"RSC_SERVICE_ACCOUNT_FILE=/config/service_account.json"</span><span class="p">,</span>
-</span><span id="__span-12-7"><a id="__codelineno-12-7" name="__codelineno-12-7" href="#__codelineno-12-7"></a><span class="w">               </span><span class="s2">"-v"</span><span class="p">,</span><span class="w"> </span><span class="s2">"/Users/you/.config/rubrik-mcp:/config"</span><span class="p">,</span>
-</span><span id="__span-12-8"><a id="__codelineno-12-8" name="__codelineno-12-8" href="#__codelineno-12-8"></a><span class="w">               </span><span class="s2">"rubrik-mcp"</span><span class="p">]</span>
-</span><span id="__span-12-9"><a id="__codelineno-12-9" name="__codelineno-12-9" href="#__codelineno-12-9"></a><span class="w">    </span><span class="p">}</span>
-</span><span id="__span-12-10"><a id="__codelineno-12-10" name="__codelineno-12-10" href="#__codelineno-12-10"></a><span class="w">  </span><span class="p">}</span>
-</span><span id="__span-12-11"><a id="__codelineno-12-11" name="__codelineno-12-11" href="#__codelineno-12-11"></a><span class="p">}</span>
+<div class="language-json highlight"><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="p">{</span>
+</span><span id="__span-13-2"><a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a><span class="w">  </span><span class="nt">"mcpServers"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-13-3"><a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a><span class="w">    </span><span class="nt">"rubrik"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-13-4"><a id="__codelineno-13-4" name="__codelineno-13-4" href="#__codelineno-13-4"></a><span class="w">      </span><span class="nt">"command"</span><span class="p">:</span><span class="w"> </span><span class="s2">"docker"</span><span class="p">,</span>
+</span><span id="__span-13-5"><a id="__codelineno-13-5" name="__codelineno-13-5" href="#__codelineno-13-5"></a><span class="w">      </span><span class="nt">"args"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">"run"</span><span class="p">,</span><span class="w"> </span><span class="s2">"--rm"</span><span class="p">,</span><span class="w"> </span><span class="s2">"-i"</span><span class="p">,</span>
+</span><span id="__span-13-6"><a id="__codelineno-13-6" name="__codelineno-13-6" href="#__codelineno-13-6"></a><span class="w">               </span><span class="s2">"-e"</span><span class="p">,</span><span class="w"> </span><span class="s2">"RSC_SERVICE_ACCOUNT_FILE=/config/service_account.json"</span><span class="p">,</span>
+</span><span id="__span-13-7"><a id="__codelineno-13-7" name="__codelineno-13-7" href="#__codelineno-13-7"></a><span class="w">               </span><span class="s2">"-v"</span><span class="p">,</span><span class="w"> </span><span class="s2">"/Users/you/.config/rubrik-mcp:/config"</span><span class="p">,</span>
+</span><span id="__span-13-8"><a id="__codelineno-13-8" name="__codelineno-13-8" href="#__codelineno-13-8"></a><span class="w">               </span><span class="s2">"rubrik-mcp"</span><span class="p">]</span>
+</span><span id="__span-13-9"><a id="__codelineno-13-9" name="__codelineno-13-9" href="#__codelineno-13-9"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-13-10"><a id="__codelineno-13-10" name="__codelineno-13-10" href="#__codelineno-13-10"></a><span class="w">  </span><span class="p">}</span>
+</span><span id="__span-13-11"><a id="__codelineno-13-11" name="__codelineno-13-11" href="#__codelineno-13-11"></a><span class="p">}</span>
 </span></code></pre></div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>On <strong>Linux</strong>, create <code>~/.config/rubrik-mcp</code> before running. If Docker creates it, the directory will be owned by root.</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>mkdir<span class="w"> </span>-p<span class="w"> </span>~/.config/rubrik-mcp
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-14-1"><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a>mkdir<span class="w"> </span>-p<span class="w"> </span>~/.config/rubrik-mcp
 </span></code></pre></div>
 <p>On <strong>macOS</strong> and <strong>Windows</strong>, Docker Desktop handles directory ownership automatically.</p>
 </div>
@@ -1664,19 +1765,19 @@
 <tbody>
 <tr>
 <td><code>RSC_SERVICE_ACCOUNT_FILE</code></td>
-<td>Path to the service account JSON file (inside the container).</td>
+<td>Path to the service account or PAT JSON file (inside the container).</td>
 </tr>
 <tr>
 <td><code>RSC_URL</code></td>
-<td>RSC tenant URL (alternative to service account file).</td>
+<td>RSC tenant URL (alternative to a credentials file; service accounts only).</td>
 </tr>
 <tr>
 <td><code>RSC_CLIENT_ID</code></td>
-<td>Service account client ID (alternative to service account file).</td>
+<td>Service account client ID (alternative to a credentials file; service accounts only).</td>
 </tr>
 <tr>
 <td><code>RSC_CLIENT_SECRET</code></td>
-<td>Service account client secret (alternative to service account file).</td>
+<td>Service account client secret (alternative to a credentials file; service accounts only).</td>
 </tr>
 <tr>
 <td><code>RUBRIK_MCP_CONFIG_DIR</code></td>
@@ -1686,16 +1787,16 @@
 </table>
 <h3 id="offline-distribution">Offline Distribution</h3>
 <p>For air-gapped or restricted environments, build a self-contained tarball on a connected machine with the same operating system, CPU architecture, and Python version as the target. Each release publishes a hash-pinned <code>requirements.txt</code> in the repository; download the one for the version you're installing:</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-14-1"><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a><span class="nv">VERSION</span><span class="o">=</span><span class="m">0</span>.8.20260914<span class="w">   </span><span class="c1"># the rubrik-mcp version to install</span>
-</span><span id="__span-14-2"><a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a>curl<span class="w"> </span>-LO<span class="w"> </span><span class="s2">"https://raw.githubusercontent.com/rubrikinc/rubrik-mcp/v</span><span class="si">${</span><span class="nv">VERSION</span><span class="si">}</span><span class="s2">/requirements.txt"</span>
-</span><span id="__span-14-3"><a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a>pip<span class="w"> </span>download<span class="w"> </span>--require-hashes<span class="w"> </span>-r<span class="w"> </span>requirements.txt<span class="w"> </span>--dest<span class="w"> </span>./dist
-</span><span id="__span-14-4"><a id="__codelineno-14-4" name="__codelineno-14-4" href="#__codelineno-14-4"></a>pip<span class="w"> </span>download<span class="w"> </span>--no-deps<span class="w"> </span><span class="s2">"rubrik-mcp==</span><span class="si">${</span><span class="nv">VERSION</span><span class="si">}</span><span class="s2">"</span><span class="w"> </span>--dest<span class="w"> </span>./dist
-</span><span id="__span-14-5"><a id="__codelineno-14-5" name="__codelineno-14-5" href="#__codelineno-14-5"></a>tar<span class="w"> </span>-czf<span class="w"> </span>rubrik-mcp-offline.tar.gz<span class="w"> </span>./dist<span class="w"> </span>requirements.txt
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-15-1"><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a><span class="nv">VERSION</span><span class="o">=</span><span class="m">0</span>.8.20260914<span class="w">   </span><span class="c1"># the rubrik-mcp version to install</span>
+</span><span id="__span-15-2"><a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a>curl<span class="w"> </span>-LO<span class="w"> </span><span class="s2">"https://raw.githubusercontent.com/rubrikinc/rubrik-mcp/v</span><span class="si">${</span><span class="nv">VERSION</span><span class="si">}</span><span class="s2">/requirements.txt"</span>
+</span><span id="__span-15-3"><a id="__codelineno-15-3" name="__codelineno-15-3" href="#__codelineno-15-3"></a>pip<span class="w"> </span>download<span class="w"> </span>--require-hashes<span class="w"> </span>-r<span class="w"> </span>requirements.txt<span class="w"> </span>--dest<span class="w"> </span>./dist
+</span><span id="__span-15-4"><a id="__codelineno-15-4" name="__codelineno-15-4" href="#__codelineno-15-4"></a>pip<span class="w"> </span>download<span class="w"> </span>--no-deps<span class="w"> </span><span class="s2">"rubrik-mcp==</span><span class="si">${</span><span class="nv">VERSION</span><span class="si">}</span><span class="s2">"</span><span class="w"> </span>--dest<span class="w"> </span>./dist
+</span><span id="__span-15-5"><a id="__codelineno-15-5" name="__codelineno-15-5" href="#__codelineno-15-5"></a>tar<span class="w"> </span>-czf<span class="w"> </span>rubrik-mcp-offline.tar.gz<span class="w"> </span>./dist<span class="w"> </span>requirements.txt
 </span></code></pre></div>
 <p>Transfer the archive to the target machine and install from the local files:</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-15-1"><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a>tar<span class="w"> </span>-xzf<span class="w"> </span>rubrik-mcp-offline.tar.gz
-</span><span id="__span-15-2"><a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a>pip<span class="w"> </span>install<span class="w"> </span>--no-index<span class="w"> </span>--find-links<span class="w"> </span>./dist<span class="w"> </span>--require-hashes<span class="w"> </span>-r<span class="w"> </span>requirements.txt
-</span><span id="__span-15-3"><a id="__codelineno-15-3" name="__codelineno-15-3" href="#__codelineno-15-3"></a>pip<span class="w"> </span>install<span class="w"> </span>--no-deps<span class="w"> </span>--no-index<span class="w"> </span>--find-links<span class="w"> </span>./dist<span class="w"> </span>rubrik-mcp
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-16-1"><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a>tar<span class="w"> </span>-xzf<span class="w"> </span>rubrik-mcp-offline.tar.gz
+</span><span id="__span-16-2"><a id="__codelineno-16-2" name="__codelineno-16-2" href="#__codelineno-16-2"></a>pip<span class="w"> </span>install<span class="w"> </span>--no-index<span class="w"> </span>--find-links<span class="w"> </span>./dist<span class="w"> </span>--require-hashes<span class="w"> </span>-r<span class="w"> </span>requirements.txt
+</span><span id="__span-16-3"><a id="__codelineno-16-3" name="__codelineno-16-3" href="#__codelineno-16-3"></a>pip<span class="w"> </span>install<span class="w"> </span>--no-deps<span class="w"> </span>--no-index<span class="w"> </span>--find-links<span class="w"> </span>./dist<span class="w"> </span>rubrik-mcp
 </span></code></pre></div>
 
 
@@ -1717,7 +1818,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="October 2, 2026 17:04:09 UTC">2026-10-02</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="October 27, 2026 19:52:35 UTC">2026-10-27</span>
   </span>
 
     
@@ -1869,10 +1970,10 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["content.code.copy", "content.code.annotate", "content.tooltips", "content.tabs.link", "navigation.tabs", "navigation.indexes", "navigation.prune", "search.share"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["content.code.copy", "content.code.annotate", "content.tooltips", "content.tabs.link", "navigation.tabs", "navigation.indexes", "navigation.prune", "search.share"], "search": "../../assets/javascripts/workers/search.a7633da7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      <script src="../../assets/javascripts/bundle.c21346df.min.js"></script>
       
         <script src="../../javascripts/extra.js"></script>
       
