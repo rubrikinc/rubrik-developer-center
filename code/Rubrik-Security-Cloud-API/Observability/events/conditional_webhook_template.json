@@ -1,0 +1,15 @@
+{
+    "title": "{{.ActivityType}} - {{.Status}}",
+    "message": "{{.Message}}",
+    "priority": "{{if eq .Severity \"critical\"}}P1{{else if eq .Severity \"warning\"}}P3{{else}}P5{{end}}", //(1)!
+    "pageOnCall": "{{if and (eq .Severity \"critical\") (eq .Status \"Failure\")}}yes{{else}}no{{end}}", //(2)!
+    "objectName": "{{.ObjectName}}",
+    "cluster": "{{if .ClusterName}}{{.ClusterName}}{{else}}Rubrik Security Cloud{{end}}" //(3)!
+    {{if .Error.Message}}, //(4)!
+    "error": {
+        "code": "{{.Error.ErrorCode}}",
+        "reason": "{{.Error.Reason}}",
+        "remedy": "{{.Error.Remedy}}"
+    }
+    {{end}}
+}
