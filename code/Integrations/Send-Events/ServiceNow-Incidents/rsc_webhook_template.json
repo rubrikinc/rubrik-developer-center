@@ -1,0 +1,23 @@
+{
+  "eventId":      "{{.UUID}}",
+  "seriesId":     "{{.ActivitySeriesID}}",
+  "eventType":    "{{.ActivityType}}",
+  "status":       "{{.Status}}",
+  "severity":     "{{.Severity}}",
+  "message":      "{{.Message}}",
+  "timestamp":    "{{.Time.UTC.Format "2006-01-02T15:04:05Z"}}",
+  "objectId":     "{{.ObjectID}}",
+  "objectName":   "{{.ObjectName}}",
+  "objectType":   "{{.ObjectType}}",
+  "clusterId":    "{{.ClusterUUID}}",
+  "clusterName":  "{{.ClusterName}}",
+  "location":     "{{.Location}}",
+  "url":          "{{.URL}}",
+  "eventLink":    "https://YOUR-TENANT.my.rubrik.com/events/details/{{.ActivitySeriesID}}?clusterUuid=\"{{.ClusterUUID}}\"",
+  "errorCode":    "{{.Error.ErrorCode}}",
+  "errorMessage": "{{.Error.Message}}",
+  "errorReason":  "{{.Error.Reason}}",
+  "errorRemedy":  "{{.Error.Remedy}}",
+  "errorId":      "{{.Error.ID}}",
+  "eventInfo":    {{.EventInfo}}
+}

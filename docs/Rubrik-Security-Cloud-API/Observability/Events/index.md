@@ -230,13 +230,11 @@ Wrap each condition in parentheses when combining them with `and`, `or` or
     payload is valid JSON before saving.
 
 ### Pre-Built Webhook Templates
-#### Datadog Webhook Template Example
 
-Datadog requires a specific payload format to [post an event](https://docs.datadoghq.com/api/latest/events/#post-an-event). The following is an example webhook template that can be used to send events to Datadog. Authentication is required to send events to Datadog. In the Rubrik webhook configuration, choose custom, input `DD-API-KEY` as the header key, and provide the [Datadog API key](https://docs.datadoghq.com/account_management/api-app-keys/#api-keys) as the header value. Customize the payload as needed for the events being sent.
-
-```json title="datadog webhook template example"
---8<-- "code/Rubrik-Security-Cloud-API/Observability/events/datadog_webhook_template.json"
-```
+Ready-made templates and setup guides for specific tools, such as ServiceNow
+and Datadog, are under [Send Events to Third-Party Tools](../../../Integrations/Send-Events/index.md).
+That section also covers which events to subscribe to and how to tell a real
+problem from routine activity, which applies to any destination.
 
 ### Managing Webhook Subscriptions
 
