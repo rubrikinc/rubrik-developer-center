@@ -35,10 +35,11 @@
   - Sending events to ServiceNow Event Management requires ServiceNow ITOM
   - Sending events to ServiceNow scripted REST endpoint has no requirements
   - Incident creation requires ITSM and an incident creation script
+  - Sample incident creation script: one incident per problem, attached to the right CI, closed automatically on recovery
 
   ______________________________________________________________________
 
-  [RSC Docs](https://docs.rubrik.com/en-us/saas/saas/common/configuring_servicenow_create_incident.html)
+  [Incident creation script](https://developer.rubrik.com/Integrations/Send-Events/ServiceNow-Incidents/index.md) [RSC Docs](https://docs.rubrik.com/en-us/saas/saas/common/configuring_servicenow_create_incident.html)
 
 - **Rubrik** Ticketing Integration
 
