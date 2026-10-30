@@ -1,0 +1,95 @@
+# PowerPlatformFlow
+
+Power Platform flow.
+
+**Implements:** [PolarisHierarchyObject](../interfaces/PolarisHierarchyObject.md), [HierarchyObject](../interfaces/HierarchyObject.md), [PolarisHierarchySnappable](../interfaces/PolarisHierarchySnappable.md), [HierarchySnappable](../interfaces/HierarchySnappable.md)
+
+## Fields
+
+| Field | Type | Description |
+|-------|------|-------------|
+| allOrgs | [[Org](Org.md)!]! | Organizations to which this hierarchy object belongs. |
+| allTags | [[AssignedRscTag](AssignedRscTag.md)!]! | RSC tags to which this hierarchy object is assigned. |
+| authorizedOperations | [[Operation](../enums/Operation.md)!]! | The authorized operations on the object. |
+| configuredSlaDomain | [SlaDomain](../interfaces/SlaDomain.md)! | SLA Domain configured for the hierarchy object. |
+| effectiveRetentionSlaDomain | [SlaDomain](../interfaces/SlaDomain.md) | Effective retention of the SLA Domain of the hierarchy object. |
+| effectiveSlaDomain | [SlaDomain](../interfaces/SlaDomain.md)! | Effective SLA Domain of the hierarchy object. |
+| effectiveSlaSourceObject | [PathNode](PathNode.md) | Path node of the effective SLA Domain source. |
+| flowStatus | [PowerPlatformFlowStatus](../enums/PowerPlatformFlowStatus.md)! | Status of the Power Platform flow. |
+| flowType | [PowerPlatformFlowType](../enums/PowerPlatformFlowType.md)! | Type of the Power Platform flow. |
+| futureLegalHoldInfo | [FutureLegalHoldInfo](FutureLegalHoldInfo.md) | Future legal hold rule configured for this object, if any. |
+| id | [UUID](../scalars/UUID.md)! | ID of the hierarchy object. |
+| isRelic | Boolean! | True if the Power Platform flow is a relic. |
+| lastModifiedAt | [DateTime](../scalars/DateTime.md)! | Time the Power Platform flow was last modified. |
+| legallyHeldSnapshotCount | Int | Number of snapshots on legal hold for this object. |
+| logicalPath | [[PathNode](PathNode.md)!]! | Sequential list of the logical ancestors of this object. |
+| name | String! | Name of the hierarchy object. |
+| naturalId | String! | Natural ID of the Power Platform flow. |
+| newestIndexedSnapshot | [PolarisSnapshot](PolarisSnapshot.md) | The latest snapshot that is indexed and unexpired, and therefore restorable. |
+| newestSnapshot | [PolarisSnapshot](PolarisSnapshot.md) | The most recent snapshot of this workload. |
+| numWorkloadDescendants | Int! | Number of descendant workloads of this object. |
+| objectBackupWindow | [ObjectBackupWindowStatus](ObjectBackupWindowStatus.md) | Object-level backup window status of the hierarchy object. |
+| objectPauseStatus | [ObjectPauseStatus](ObjectPauseStatus.md) | Pause status of the hierarchy object. |
+| objectType | [HierarchyObjectTypeEnum](../enums/HierarchyObjectTypeEnum.md)! | Type of this object. |
+| oldestSnapshot | [PolarisSnapshot](PolarisSnapshot.md) | The oldest snapshot of this workload. |
+| onDemandSnapshotCount | Int! | The number of on-demand snapshots. |
+| orgId | String! | ID of the Power Platform environment the flow belongs to. |
+| ownerEmail | String! | Email of the Power Platform flow owner. |
+| parentId | String! | Parent ID of the Power Platform flow. |
+| physicalPath | [[PathNode](PathNode.md)!]! | Sequential list of the physical ancestors of this object. |
+| publisher | String! | Publisher of the Power Platform flow. |
+| rscNativeObjectPendingSla | [CompactSlaDomain](CompactSlaDomain.md) | SLA Domain assignment which is pending on the Rubrik Security Cloud native objects. |
+| rscPendingObjectPauseAssignment | [PendingObjectPauseAssignmentStatus](../enums/PendingObjectPauseAssignmentStatus.md) | Pending pause or unpause assignment for RSC-native objects. |
+| securityMetadata | [SecurityMetadata](SecurityMetadata.md) | Security posture metadata. |
+| slaAssignment | [SlaAssignmentTypeEnum](../enums/SlaAssignmentTypeEnum.md)! | SLA Domain assignment type for this object. |
+| slaPauseStatus | Boolean! | Pause status of the effective SLA Domain of the hierarchy object. |
+| snapshotConnection | [PolarisSnapshotConnection](PolarisSnapshotConnection.md) | The list of snapshots taken for this workload. |
+| snapshotDistribution | [SnapshotDistribution](SnapshotDistribution.md)! | Distribution of the snapshots of the hierarchy object. |
+| snapshotGroupByConnection | [PolarisSnapshotGroupByConnection](PolarisSnapshotGroupByConnection.md) | Group-by connection for the snapshots of this workload. |
+| snapshotGroupByNewConnection | [PolarisSnapshotGroupByNewConnection](PolarisSnapshotGroupByNewConnection.md) | Group-by connection for the snapshots of this workload. |
+| workloadSnapshotConnection | [GenericSnapshotConnection](GenericSnapshotConnection.md) | The list of snapshots taken for this workload. |
+
+## Field Arguments
+
+| Field | Argument | Type | Description |
+|-------|----------|------|-------------|
+| newestSnapshot | backupLocationId | String | Filter snapshots by backup location id. |
+| numWorkloadDescendants | first | Int | Returns the first n elements from the list. |
+| numWorkloadDescendants | after | String | Returns the elements in the list that occur after the specified cursor. |
+| numWorkloadDescendants | last | Int | Returns the last n elements from the list. |
+| numWorkloadDescendants | before | String | Returns the elements in the list that occur before the specified cursor. |
+| numWorkloadDescendants | objectTypes | [[ManagedObjectType](../enums/ManagedObjectType.md)!] | Types of objects to limit the results. If absent, all object types are returned. |
+| oldestSnapshot | backupLocationId | String | Filter snapshots by backup location id. |
+| onDemandSnapshotCount | backupLocationId | String | Filter snapshots by backup location id. |
+| snapshotConnection | first | Int | Returns the first n elements from the list. |
+| snapshotConnection | after | String | Returns the elements in the list that occur after the specified cursor. |
+| snapshotConnection | last | Int | Returns the last n elements from the list. |
+| snapshotConnection | before | String | Returns the elements in the list that occur before the specified cursor. |
+| snapshotConnection | filter | [PolarisSnapshotFilterInput](../inputs/PolarisSnapshotFilterInput.md) | Filter the Rubrik Security Cloud snapshot connection. |
+| snapshotConnection | sortBy | [PolarisSnapshotSortByEnum](../enums/PolarisSnapshotSortByEnum.md) | Sort Rubrik Security Cloud snapshots by field. |
+| snapshotConnection | sortOrder | [SortOrder](../enums/SortOrder.md) | Sorts the order of results. |
+| snapshotGroupByConnection | first | Int | Returns the first n elements from the list. |
+| snapshotGroupByConnection | after | String | Returns the elements in the list that occur after the specified cursor. |
+| snapshotGroupByConnection | last | Int | Returns the last n elements from the list. |
+| snapshotGroupByConnection | before | String | Returns the elements in the list that occur before the specified cursor. |
+| snapshotGroupByConnection | timezoneOffset | Float | Offset based on the customer timezone. |
+| snapshotGroupByConnection | filter | [PolarisSnapshotFilterInput](../inputs/PolarisSnapshotFilterInput.md) | Filter the Rubrik Security Cloud snapshot connection. |
+| snapshotGroupByConnection | groupBy *(required)* | [PolarisSnapshotGroupByEnum](../enums/PolarisSnapshotGroupByEnum.md)! | Group Rubrik Security Cloud snapshots by field. |
+| snapshotGroupByConnection | timezone | [Timezone](../scalars/Timezone.md) | Time zone identifier string. For example, 'America/Los_Angeles' is used for the U.S. Pacific Time zone. |
+| snapshotGroupByNewConnection | first | Int | Returns the first n elements from the list. |
+| snapshotGroupByNewConnection | after | String | Returns the elements in the list that occur after the specified cursor. |
+| snapshotGroupByNewConnection | last | Int | Returns the last n elements from the list. |
+| snapshotGroupByNewConnection | before | String | Returns the elements in the list that occur before the specified cursor. |
+| snapshotGroupByNewConnection | timezoneOffset | Float | Offset based on the customer timezone. |
+| snapshotGroupByNewConnection | snapshotFilter *(required)* | [[PolarisSnapshotFilterNewInput](../inputs/PolarisSnapshotFilterNewInput.md)!]! | Filter the Rubrik Security Cloud snapshot connection. |
+| snapshotGroupByNewConnection | snapshotGroupBy *(required)* | [SnapshotGroupByTime](../enums/SnapshotGroupByTime.md)! | Group Rubrik Security Cloud snapshots by field. |
+| workloadSnapshotConnection | first | Int | Returns the first n elements from the list. |
+| workloadSnapshotConnection | after | String | Returns the elements in the list that occur after the specified cursor. |
+| workloadSnapshotConnection | last | Int | Returns the last n elements from the list. |
+| workloadSnapshotConnection | before | String | Returns the elements in the list that occur before the specified cursor. |
+| workloadSnapshotConnection | workloadId *(required)* | String! | The FID of the workload. |
+| workloadSnapshotConnection | snapshotFilter | [[SnapshotQueryFilterInput](../inputs/SnapshotQueryFilterInput.md)!] | Filters for snapshot connection. |
+| workloadSnapshotConnection | sortOrder | [SortOrder](../enums/SortOrder.md) | Sorts the order of results. |
+| workloadSnapshotConnection | sortBy | [SnapshotQuerySortByField](../enums/SnapshotQuerySortByField.md) | Sorts snapshots by field. |
+| workloadSnapshotConnection | timeRange | [TimeRangeInput](../inputs/TimeRangeInput.md) | Time range input. |
+| workloadSnapshotConnection | ignoreActiveWorkloadCheck | Boolean | Specifies whether to ignore the active workload check. |

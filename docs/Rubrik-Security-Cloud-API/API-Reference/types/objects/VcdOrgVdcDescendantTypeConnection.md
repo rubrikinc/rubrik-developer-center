@@ -15,4 +15,5 @@ Paginated list of VcdOrgVdcDescendantType objects with additional pagination inf
 
 **Referenced by**
 
+- [VcdCatalog.descendantConnection](VcdCatalog.md)
 - [VcdOrgVdc.descendantConnection](VcdOrgVdc.md)

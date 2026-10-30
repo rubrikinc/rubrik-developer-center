@@ -1,6 +1,6 @@
 # OracleTopLevelDescendantType
 
-*No description available.*
+An object that can appear as a top-level descendant of an Oracle host, Oracle RAC, Oracle database, or Oracle Data Guard group.
 
 ## Fields
 
@@ -52,5 +52,6 @@
 
 - [OracleDataGuardGroup](../objects/OracleDataGuardGroup.md)
 - [OracleDatabase](../objects/OracleDatabase.md)
+- [OracleFailoverCluster](../objects/OracleFailoverCluster.md)
 - [OracleHost](../objects/OracleHost.md)
 - [OracleRac](../objects/OracleRac.md)

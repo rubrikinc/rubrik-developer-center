@@ -15,6 +15,7 @@ Supported in v5.0+
 | nutanixClusterName | String | Supported in v5.0+ v5.0-v5.3: The name of the Nutanix cluster to which this VM belongs v6.0-v8.0: The name of the Nutanix cluster to which this VM belongs. v8.1+: The name of the Nutanix cluster to which this virtual machine belongs. |
 | operatingSystemType | [OperatingSystemType](../enums/OperatingSystemType.md) | Supported in v5.0+ The type of the operating system running on the Nutanix virtual machine. |
 | pendingSlaDomain | [ManagedObjectPendingSlaInfo](ManagedObjectPendingSlaInfo.md) | Supported in v5.3+ Describes any pending SLA Domain assignment on this object. |
+| protectionDate | [DateTime](../scalars/DateTime.md) | UTC timestamp for when the Nutanix virtual machine became protected by its current SLA Domain. Omitted if no SLA Domain has been assigned. The value resets every time the SLA Domain changes, including a reassignment to Unprotected. |
 | snappable | [CdmWorkload](CdmWorkload.md) |  |
 | snapshotConsistencyMandate | [CdmNutanixSnapshotConsistencyMandate](../enums/CdmNutanixSnapshotConsistencyMandate.md)! | Required. Supported in v5.0+ v5.0-v8.0: Consistency level mandated for this VM. v8.1+: Consistency level mandated for this virtual machine. |
 

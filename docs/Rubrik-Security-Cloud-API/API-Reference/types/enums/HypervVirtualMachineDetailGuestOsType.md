@@ -1,11 +1,11 @@
 # HypervVirtualMachineDetailGuestOsType
 
-*No description available.*
+Guest OS type of a Hyper-V virtual machine.
 
 ## Values
 
 | Value | Description |
 |-------|-------------|
-| HYPERV_VIRTUAL_MACHINE_DETAIL_GUEST_OS_TYPE_LINUX |  |
-| HYPERV_VIRTUAL_MACHINE_DETAIL_GUEST_OS_TYPE_UNKNOWN |  |
-| HYPERV_VIRTUAL_MACHINE_DETAIL_GUEST_OS_TYPE_WINDOWS |  |
+| HYPERV_VIRTUAL_MACHINE_DETAIL_GUEST_OS_TYPE_LINUX | Linux guest OS. |
+| HYPERV_VIRTUAL_MACHINE_DETAIL_GUEST_OS_TYPE_UNKNOWN | Unknown guest OS. |
+| HYPERV_VIRTUAL_MACHINE_DETAIL_GUEST_OS_TYPE_WINDOWS | Windows guest OS. |

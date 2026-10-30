@@ -59,6 +59,7 @@
 [archiveCrawl](archiveCrawl.md)  
 [archiveK8sCluster](archiveK8sCluster.md)  
 [assignCloudAccountToCluster](assignCloudAccountToCluster.md)  
+[assignCloudDirectCopySchedule](assignCloudDirectCopySchedule.md)  
 [assignMssqlSlaDomainProperties](assignMssqlSlaDomainProperties.md)  
 [assignMssqlSlaDomainPropertiesAsync](assignMssqlSlaDomainPropertiesAsync.md)  
 [assignRetentionSLAToSnappables](assignRetentionSLAToSnappables.md)  
@@ -195,6 +196,7 @@
 [createAzureReaderTarget](createAzureReaderTarget.md)  
 [createAzureSaasAppAad](createAzureSaasAppAad.md)  
 [createAzureTarget](createAzureTarget.md)  
+[createCloudDirectCopySchedule](createCloudDirectCopySchedule.md)  
 [createCloudNativeAwsStorageSetting](createCloudNativeAwsStorageSetting.md)  
 [createCloudNativeAzureStorageSetting](createCloudNativeAzureStorageSetting.md)  
 [createCloudNativeLabelRule](createCloudNativeLabelRule.md)  
@@ -303,6 +305,7 @@
 [deleteAzureDevOpsCloudAccount](deleteAzureDevOpsCloudAccount.md)  
 [deleteCephSetting](deleteCephSetting.md)  
 [deleteCertificate](deleteCertificate.md)  
+[deleteCloudDirectCopySchedule](deleteCloudDirectCopySchedule.md)  
 [deleteCloudDirectGenericS3TenantCredential](deleteCloudDirectGenericS3TenantCredential.md)  
 [deleteCloudDirectKerberosCredential](deleteCloudDirectKerberosCredential.md)  
 [deleteCloudNativeLabelRule](deleteCloudNativeLabelRule.md)  
@@ -819,6 +822,7 @@
 [startMssqlLogShippingApplyLogsJob](startMssqlLogShippingApplyLogsJob.md)  
 [startPeriodicUpgradePrechecksOnDemandJob](startPeriodicUpgradePrechecksOnDemandJob.md)  
 [startRecoverAzureNativeStorageAccountJob](startRecoverAzureNativeStorageAccountJob.md)  
+[startRecoverDynamoDbSnapshotJob](startRecoverDynamoDbSnapshotJob.md)  
 [startRecoverS3SnapshotJob](startRecoverS3SnapshotJob.md)  
 [startRecovery](startRecovery.md)  
 [startRefreshAwsNativeAccountsJob](startRefreshAwsNativeAccountsJob.md)  
@@ -864,6 +868,7 @@
 
 ## U
 
+[unassignCloudDirectCopySchedule](unassignCloudDirectCopySchedule.md)  
 [unconfigureSapHanaRestore](unconfigureSapHanaRestore.md)  
 [uninstallGitHubApp](uninstallGitHubApp.md)  
 [uninstallIoFilter](uninstallIoFilter.md)  
@@ -899,6 +904,7 @@
 [updateCertificate](updateCertificate.md)  
 [updateCertificateHost](updateCertificateHost.md)  
 [updateCertificateUsagesForCloudAccount](updateCertificateUsagesForCloudAccount.md)  
+[updateCloudDirectCopySchedule](updateCloudDirectCopySchedule.md)  
 [updateCloudDirectKerberosCredential](updateCloudDirectKerberosCredential.md)  
 [updateCloudNativeAwsStorageSetting](updateCloudNativeAwsStorageSetting.md)  
 [updateCloudNativeAzureStorageSetting](updateCloudNativeAzureStorageSetting.md)  

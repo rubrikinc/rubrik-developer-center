@@ -50,4 +50,6 @@ A logical child of a vCD organization.
 
 ## Implemented By
 
+- [VcdCatalog](../objects/VcdCatalog.md)
+- [VcdOrgVdc](../objects/VcdOrgVdc.md)
 - [VsphereVm](../objects/VsphereVm.md)

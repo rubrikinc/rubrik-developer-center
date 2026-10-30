@@ -128,6 +128,9 @@ A Rubrik CDM Cluster.
 - [ActiveDirectoryDomainController.cluster](ActiveDirectoryDomainController.md)
 - ActiveDirectoryDomainDescendantType.cluster
 - ActiveDirectoryDomainPhysicalChildType.cluster
+- [ActiveDirectoryForest.cluster](ActiveDirectoryForest.md)
+- ActiveDirectoryForestDescendantType.cluster
+- ActiveDirectoryForestPhysicalChildType.cluster
 - [ActivitySeries.cluster](ActivitySeries.md)
 - [AdVolumeExport.cluster](AdVolumeExport.md)
 - [AddStorageArrayReply.cluster](AddStorageArrayReply.md)
@@ -151,7 +154,4 @@ A Rubrik CDM Cluster.
 - CloudDirectHierarchyObject.cluster
 - CloudDirectHierarchyWorkload.cluster
 - [CloudDirectNasBucket.cluster](CloudDirectNasBucket.md)
-- [CloudDirectNasExport.cluster](CloudDirectNasExport.md)
-- [CloudDirectNasNamespace.cluster](CloudDirectNasNamespace.md)
-- CloudDirectNasNamespaceDescendantType.cluster
-- *…and 323 more*
+- *…and 352 more*

@@ -24,7 +24,7 @@ Operations defined in the RBAC system.
 | APPROVE_TPR_REQUEST | Approve TPR request. |
 | ASSIGN_COPY_SCHEDULES | Assign NAS shares to NAS Cloud Direct copy schedules. |
 | ASSIGN_KMS_KEY_VAULT | Assign KMS Key Vault to data locations. |
-| ASSIGN_MIP_LABELS | Assign Microsoft Information Protection(MIP) labels. |
+| ASSIGN_MIP_LABELS *(deprecated: Legacy deprecated operation. No longer used in any RSC APIs.)* | Assign Microsoft Information Protection(MIP) labels. |
 | ASSIGN_ROLE | Assign Role. |
 | BROWSE_WORKLOAD_CONTENTS | Browse snapshot and object contents. |
 | CANCEL_RUNNING_ACTIVITY | Cancel a running activity. |
@@ -51,10 +51,10 @@ Operations defined in the RBAC system.
 | DELETE_CHILD_ACCOUNTS | Delete child accounts. |
 | DELETE_CLOUD_NATIVE_APPLICATION | Delete a cloud native application. |
 | DELETE_GCP_CLOUD_ACCOUNT | Delete GCP accounts. |
-| DELETE_INVENTORY | Remove an object. |
+| DELETE_INVENTORY *(deprecated: Legacy deprecated operation. No longer used in any RSC APIs.)* | Remove an object. |
 | DELETE_OCI_CLOUD_ACCOUNT | Delete OCI cloud account. |
 | DELETE_REPORT | Delete reports. |
-| DELETE_SLA | Delete SLA Domains. |
+| DELETE_SLA *(deprecated: Legacy deprecated operation. No longer used in any RSC APIs.)* | Delete SLA Domains. |
 | DELETE_SNAPSHOT | Delete snapshots. |
 | DELETE_STORAGE_SETTINGS | Delete archival location. |
 | DOWNLOAD | Download files. |
@@ -77,18 +77,18 @@ Operations defined in the RBAC system.
 | EDIT_ORGANIZATION | Edit organization. |
 | EDIT_QUARANTINE | Add files to quarantine and remove files from quarantine. |
 | EDIT_REPLICATION_SETTINGS | Edit replication settings. |
-| EDIT_SECURITY_SETTINGS | Edit security settings. |
+| EDIT_SECURITY_SETTINGS *(deprecated: Legacy deprecated operation. No longer used in any RSC APIs.)* | Edit security settings. |
 | EDIT_STORAGE_SETTINGS | Edit archival location (pause/resume, enable/disable, and promote cluster as reader). |
 | EDIT_SUPPRESS_EVENT_NOTIFICATION_RULE | Edit suppress event notification rules. |
 | EDIT_SYSTEM_PREFERENCE | Edit system preferences. |
-| EDIT_USER_MANAGEMENT | Configure user management. |
-| ENABLE_ACCESS_LOGGING | Enable access logging. |
-| EXPORT | Export data. |
+| EDIT_USER_MANAGEMENT *(deprecated: Legacy deprecated operation. No longer used in any RSC APIs.)* | Configure user management. |
+| ENABLE_ACCESS_LOGGING *(deprecated: Legacy deprecated operation. No longer used in any RSC APIs.)* | Enable access logging. |
+| EXPORT *(deprecated: Legacy deprecated operation. No longer used in any RSC APIs.)* | Export data. |
 | EXPORT_DATA_CLASS_GLOBAL | Download classification results. |
 | EXPORT_FILES | Export files. |
 | EXPORT_SNAPSHOTS | Export snapshots. |
 | GRANULAR_RECOVERY | Recover specific objects from backup. |
-| INSTANT_RECOVER | Instant recovery. |
+| INSTANT_RECOVER *(deprecated: Legacy deprecated operation. No longer used in any RSC APIs.)* | Instant recovery. |
 | ISSUE_ARCHIVAL_MIGRATION_DATA_MOVER_CREDENTIALS | Issue temporary credentials for the Rubrik data mover to migrate archival data to Rubrik Cloud Vault (RCV). |
 | MANAGE_ACCESS | Manage user access. |
 | MANAGE_AGENT_CLOUD_POLICIES | Manage Agent Cloud policies, violations, alerts, and insights. |
@@ -96,7 +96,7 @@ Operations defined in the RBAC system.
 | MANAGE_ARCHIVAL_NETWORK_THROTTLE_SETTINGS | Manage archival network throttle settings. |
 | MANAGE_AUTH_DOMAIN | Manage Auth Domain. |
 | MANAGE_AUTO_QUARANTINE | Allow users to manage auto quarantine settings. |
-| MANAGE_CDM_ADMIN | Manage cluster local administrator user credentials. |
+| MANAGE_CDM_ADMIN *(deprecated: Superseded by ManageCdmUser. Runtime checks still accept this permission during the transition period.)* | Manage cluster local administrator user credentials. |
 | MANAGE_CDM_USER | Manage CDM users. |
 | MANAGE_CDP_IO_FILTER | The operation to manage CDP IO Filter. |
 | MANAGE_CERTIFICATE | Manage certificates and certificate signing requests. |
@@ -126,7 +126,7 @@ Operations defined in the RBAC system.
 | MANAGE_LOG_SHIPPING | Manage log shipping. |
 | MANAGE_MAINTENANCE_MODE | Manage maintenance mode. |
 | MANAGE_MIGRATION_DASHBOARD | Manage migration dashboard. |
-| MANAGE_MODEL_ROUTER | Manage Agent Operations. |
+| MANAGE_MODEL_ROUTER | Manage Agent Operations, Connections, MCP Servers, and Inventories. |
 | MANAGE_OAUTH_APPLICATIONS | Manage OAuth applications. |
 | MANAGE_OKTA_INTEGRATION | Manage Okta integration. |
 | MANAGE_ORCHESTRATED_RECOVERY | Manage recoveries within Orchestrated Recovery. |
@@ -140,7 +140,7 @@ Operations defined in the RBAC system.
 | MANAGE_ROLLING_UPGRADES | Manage rolling upgrades on account level. |
 | MANAGE_RSCP_CLUSTER_SETTINGS | Manage RSC-P cluster settings. |
 | MANAGE_RSCP_UPGRADE | Trigger and manage RSC-P appliance upgrades. |
-| MANAGE_RUBY | Manage Ruby (LLM) settings, including enablement. |
+| MANAGE_RUBY | Manage Rubrik AI settings, including enablement. |
 | MANAGE_SECURITY_POLICIES | Manage security policies. |
 | MANAGE_SECURITY_POLICY | Manage Security Policy. |
 | MANAGE_SECURITY_VIOLATIONS | Manage security violations. |
@@ -168,7 +168,7 @@ Operations defined in the RBAC system.
 | MODIFY_EVENT_CLUSTER_SETTING | Modify event cluster settings. |
 | MODIFY_INVENTORY | Edit settings. |
 | MODIFY_REPORT | Edit reports. |
-| MODIFY_SLA | Edit SLA Domains. |
+| MODIFY_SLA *(deprecated: Legacy deprecated operation. No longer used in any RSC APIs.)* | Edit SLA Domains. |
 | MOUNT | Mount snapshot. |
 | MOUNT_NUTANIX_VDISK | Mount Nutanix virtual disks. |
 | PREVIEW_DATA_CLASSIFICATION_SAMPLES | Preview samples from customers data from classification results. |
@@ -181,7 +181,7 @@ Operations defined in the RBAC system.
 | REMOVE_CLUSTER_NODES | Remove nodes from the cluster. |
 | RENEW_CERTIFICATE | Renew RSC-managed certificates. |
 | RESIZE_MANAGED_VOLUME | Operation to Resize Managed Volume. |
-| RESTORE | Restore data. |
+| RESTORE *(deprecated: Legacy deprecated operation. No longer used in any RSC APIs.)* | Restore data. |
 | RESTORE_ACTIVE_DIRECTORY_FOREST | Restore Active Directory Forest. |
 | RESTORE_TO_ORIGIN | Restore over original. |
 | SELF_SERVICE_RESTORE | Users can recover their own objects. |
@@ -210,7 +210,7 @@ Operations defined in the RBAC system.
 | VIEW_AUDIT_LOG | View audit logs. |
 | VIEW_AWS_CLOUD_ACCOUNT | View AWS accounts. |
 | VIEW_AZURE_CLOUD_ACCOUNT | View Azure accounts. |
-| VIEW_CDM_ADMIN | View cluster local administrator user login information. |
+| VIEW_CDM_ADMIN *(deprecated: Superseded by ViewCdmUser. Runtime checks still accept this permission during the transition period.)* | View cluster local administrator user login information. |
 | VIEW_CDM_CLUSTER_STORAGE_STAT | View CDM cluster storage statistics. |
 | VIEW_CDM_NETWORK_SETTING | View network settings. |
 | VIEW_CDM_NETWORK_STAT | View CDM network statistics. |
@@ -227,12 +227,12 @@ Operations defined in the RBAC system.
 | VIEW_COPY_SCHEDULES | View NAS Cloud Direct copy schedules. |
 | VIEW_CORS_SETTINGS | View CORS settings. |
 | VIEW_CROSS_ACCOUNT_PAIR | View cross-account pair. |
-| VIEW_DASHBOARD | View dashboard. |
+| VIEW_DASHBOARD *(deprecated: Legacy deprecated operation. No longer used in any RSC APIs.)* | View dashboard. |
 | VIEW_DATA_ACCESS_GOVERNANCE | View data access governance. |
 | VIEW_DATA_CLASS_GLOBAL | View data classification. |
 | VIEW_DATA_DETECTION_AND_RESPONSE_ALERTS | View data threat alerts. |
 | VIEW_DATA_SECURITY_DETAILS | View account-wide data security risk metrics, scores, and recommendations. |
-| VIEW_DATA_SECURITY_POSTURE_RESULTS | View data security posture results. |
+| VIEW_DATA_SECURITY_POSTURE_RESULTS *(deprecated: Legacy deprecated operation. No longer used in any RSC APIs.)* | View data security posture results. |
 | VIEW_DB_LOG_REPORT_PROPERTIES | View the database log reporting properties for a cluster. |
 | VIEW_DL_EMAIL_SETTINGS | View distribution list email settings. |
 | VIEW_DSPM_INTEGRATIONS | View security integrations. |
@@ -265,7 +265,7 @@ Operations defined in the RBAC system.
 | VIEW_RSCP_UPGRADE | View RSC-P upgrade status. |
 | VIEW_RUBY_INSIGHTS | View Ruby Insights use case. |
 | VIEW_SECURITY_POLICY | View Security Policy. |
-| VIEW_SECURITY_SETTINGS | View security settings. |
+| VIEW_SECURITY_SETTINGS *(deprecated: Legacy deprecated operation. No longer used in any RSC APIs.)* | View security settings. |
 | VIEW_SENSITIVE_HITS_IN_IMPACTED_FILES | View sensitive hits in impacted files. |
 | VIEW_SERVICENOW_INTEGRATION | View ServiceNow integration. |
 | VIEW_SERVICE_ACCOUNT | View Service Account. |
@@ -286,6 +286,6 @@ Operations defined in the RBAC system.
 | VIEW_TPR_POLICY | View TPR policy. |
 | VIEW_TPR_REQUEST | View TPR request. |
 | VIEW_USER | View User. |
-| VIEW_USER_MANAGEMENT | View user management. |
+| VIEW_USER_MANAGEMENT *(deprecated: Legacy deprecated operation. No longer used in any RSC APIs.)* | View user management. |
 | VIEW_WEBHOOKS | View webhooks configuration. |
 | VIEW_ZSCALER_DLP_INTEGRATION | View Zscaler integration. |

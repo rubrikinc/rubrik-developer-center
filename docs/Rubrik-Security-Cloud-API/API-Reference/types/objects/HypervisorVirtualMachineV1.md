@@ -50,6 +50,7 @@ Hypervisor virtual machine hierarchy object.
 | primaryClusterUuid | [UUID](../scalars/UUID.md)! | UUID of the primary cluster. |
 | replicatedObjectCount | Int! | The number of objects either replicated by this object or related to this object by replication. |
 | replicatedObjects | [[CdmHierarchyObject](../interfaces/CdmHierarchyObject.md)!]! | Objects either replicated by this object or related to this object by replication. |
+| reportWorkload | [Snappable](Snappable.md) | Contains statistics for the protected objects, including physical bytes and archive storage for virtual machine archival. |
 | securityMetadata | [SecurityMetadata](SecurityMetadata.md) | Security posture metadata. |
 | slaAssignment | [SlaAssignmentTypeEnum](../enums/SlaAssignmentTypeEnum.md)! | SLA Domain assignment type for this object. |
 | slaPauseStatus | Boolean! | Pause status of the effective SLA Domain of the hierarchy object. |

@@ -1,17 +1,17 @@
 # CdmUpgradeInfoFilterInput
 
-Filters for the cluster list.
+Input to filter clusters for the CDM upgrade info list.
 
 ## Fields
 
 | Field | Type | Description |
 |-------|------|-------------|
 | clusterLocation | [String!] | Location of cluster. |
-| connectionState | [[ClusterStatus](../enums/ClusterStatus.md)!] |  |
+| connectionState | [[ClusterStatus](../enums/ClusterStatus.md)!] | Connection status of the Rubrik cluster. |
 | downloadedVersion | [String!] | Cluster software version greater than or equal to. |
 | eosStatus | [[ClusterEosStatus](../enums/ClusterEosStatus.md)!] | End of support status of the Rubrik cluster. |
 | id | [[UUID](../scalars/UUID.md)!] | Cluster UUIDs. |
-| installedVersion | [String!] |  |
+| installedVersion | [String!] | Cluster software version greater than or equal to. |
 | isAssignedByParentAccount | Boolean | Filter on shared (parent-assigned) Rubrik clusters. When true, return only shared Rubrik clusters; when false, exclude them; omit for no filter. |
 | minSoftwareVersion | String | Cluster software version greater than or equal to. |
 | name | [String!] | Cluster names. |
@@ -21,6 +21,6 @@ Filters for the cluster list.
 | registrationTime_lt | [DateTime](../scalars/DateTime.md) | Cluster registration time less than. |
 | type | [[ClusterTypeEnum](../enums/ClusterTypeEnum.md)!] |  |
 | upgradeJobStatus | [[ClusterJobStatusTypeEnum](../enums/ClusterJobStatusTypeEnum.md)!] | Cluster upgrade job status. |
-| upgradeScheduled | Boolean |  |
+| upgradeScheduled | Boolean | Whether an upgrade is scheduled. |
 | upgradeStatusCategory | [String!] | Upgrade status categories for filtering clusters. Valid values are defined in the GPS service. |
-| versionStatus | [[VersionStatus](../enums/VersionStatus.md)!] |  |
+| versionStatus | [[VersionStatus](../enums/VersionStatus.md)!] | Version status of the cluster. |

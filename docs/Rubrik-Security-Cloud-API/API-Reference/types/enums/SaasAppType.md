@@ -7,7 +7,6 @@ Enumerates the different SaaS applications. Each SaaS application type correspon
 | Value | Description |
 |-------|-------------|
 | ANTHROPIC_APPS | Anthropic Apps application type (claude.ai conversations, projects, artifacts). |
-| ANTHROPIC_CHAT *(deprecated: Use ANTHROPIC_APPS instead.)* | Anthropic Chat application type. |
 | ANTHROPIC_CODE | Anthropic Code application type (Claude Code endpoint files). |
 | ANTHROPIC_COWORK | Anthropic Cowork application type (Claude Cowork endpoint files). |
 | ANTHROPIC_SETTINGS | Anthropic settings application type (org settings, child org settings). |
@@ -21,6 +20,12 @@ Enumerates the different SaaS applications. Each SaaS application type correspon
 | GOOGLE_GROUPS | Google Workspace Groups application type. |
 | GOOGLE_MAIL | Google Workspace gmail application type. |
 | M365_BACKUP_STORAGE | Microsoft 365 Backup Storage application type. |
+| M365_CFGS_DEFENDER | M365 Configurations Defender for Office 365 application type. |
+| M365_CFGS_EXCHANGE | M365 Configurations Exchange Online application type. |
+| M365_CFGS_ONEDRIVE | M365 Configurations OneDrive application type. |
+| M365_CFGS_PURVIEW | M365 Configurations Purview application type. |
+| M365_CFGS_SHAREPOINT | M365 Configurations SharePoint application type. |
+| M365_CFGS_TEAMS | M365 Configurations Teams application type. |
 | O365_COMMON | Shared Microsoft 365 application type used internally across M365 workloads. Not intended for direct customer use. |
 | OKTA | Okta application type. |
 | OKTA_FEDERATION | Okta federation integration app type. |

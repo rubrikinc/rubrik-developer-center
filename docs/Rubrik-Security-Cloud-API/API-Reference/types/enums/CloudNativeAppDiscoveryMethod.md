@@ -8,4 +8,5 @@ CloudNativeAppDiscoveryMethod mirrors cloudnativeservice.DiscoveryMethod. Define
 |-------|-------------|
 | CLOUD_NATIVE_APP_AUTO_DISCOVERY | Auto discovery. |
 | CLOUD_NATIVE_APP_DISCOVERY_METHOD_UNSPECIFIED | Unspecified discovery method. |
+| CLOUD_NATIVE_APP_MANUALLY_SELECTED | Explicitly selected by the user via an inclusion list. |
 | CLOUD_NATIVE_APP_TAG_BASED | Tag based discovery. |

@@ -6,7 +6,7 @@ Create a live mount request  Supported in v5.0+ Create a live mount request with
 
 | Argument | Type | Description |
 |----------|------|-------------|
-| input *(required)* | [CreateHypervVirtualMachineSnapshotMountInput](../types/inputs/CreateHypervVirtualMachineSnapshotMountInput.md)! | Input for InternalCreateHypervVirtualMachineSnapshotMount. |
+| input *(required)* | [CreateHypervVirtualMachineSnapshotMountInput](../types/inputs/CreateHypervVirtualMachineSnapshotMountInput.md)! | The configuration for the mount request. |
 
 ## Returns
 

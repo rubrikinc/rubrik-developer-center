@@ -15,4 +15,5 @@ Details of S3 Bucket containing name, region and ARN.
 
 **Queries**
 
+- [query: allAwsNativeRdsExportS3Buckets](../../queries/allAwsNativeRdsExportS3Buckets.md)
 - [query: allS3BucketsDetailsFromAws](../../queries/allS3BucketsDetailsFromAws.md)

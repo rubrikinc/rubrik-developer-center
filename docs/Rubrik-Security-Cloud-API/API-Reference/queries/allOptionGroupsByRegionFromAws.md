@@ -9,8 +9,8 @@ List of all RDS option groups in a given region. Refers to settings of how a par
 | awsAccountRubrikId *(required)* | [UUID](../types/scalars/UUID.md)! | Rubrik ID for AWS account. |
 | region *(required)* | [AwsNativeRegion](../types/enums/AwsNativeRegion.md)! | Region in AWS. |
 | dbEngine *(required)* | [AwsNativeRdsDbEngine](../types/enums/AwsNativeRdsDbEngine.md)! | DB Engine of RDS Instance. |
-| dbEngineVersion *(required)* | String! | Version of DB engine. |
 | majorEngineVersion *(required)* | String! | Major version of the option group engine. |
+| dbEngineVersion *(required)* | String! | DB engine version of the option group engine. Unused by the resolver. |
 
 ## Returns
 
@@ -21,13 +21,13 @@ List of all RDS option groups in a given region. Refers to settings of how a par
 === "Query"
 
     ```graphql
-    query AllOptionGroupsByRegionFromAws($awsAccountRubrikId: UUID!, $region: AwsNativeRegion!, $dbEngine: AwsNativeRdsDbEngine!, $dbEngineVersion: String!, $majorEngineVersion: String!) {
+    query AllOptionGroupsByRegionFromAws($awsAccountRubrikId: UUID!, $region: AwsNativeRegion!, $dbEngine: AwsNativeRdsDbEngine!, $majorEngineVersion: String!, $dbEngineVersion: String!) {
       allOptionGroupsByRegionFromAws(
         awsAccountRubrikId: $awsAccountRubrikId
         region: $region
         dbEngine: $dbEngine
-        dbEngineVersion: $dbEngineVersion
         majorEngineVersion: $majorEngineVersion
+        dbEngineVersion: $dbEngineVersion
       ) {
         arn
         engine
@@ -45,8 +45,8 @@ List of all RDS option groups in a given region. Refers to settings of how a par
       "awsAccountRubrikId": "00000000-0000-0000-0000-000000000000",
       "region": "AF_SOUTH_1",
       "dbEngine": "AURORA",
-      "dbEngineVersion": "example-string",
-      "majorEngineVersion": "example-string"
+      "majorEngineVersion": "example-string",
+      "dbEngineVersion": "example-string"
     }
     ```
 

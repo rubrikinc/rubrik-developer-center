@@ -6,4 +6,4 @@ Represents the filter input for Managed Volume queued snapshots.
 
 | Field | Type | Description |
 |-------|------|-------------|
-| timeRange | [TimeRangeInput](TimeRangeInput.md) | Store information. |
+| timeRange | [TimeRangeInput](TimeRangeInput.md) | Time range the snapshot date must fall in. |

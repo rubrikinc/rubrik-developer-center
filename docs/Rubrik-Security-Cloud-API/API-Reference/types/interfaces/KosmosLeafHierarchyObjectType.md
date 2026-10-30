@@ -53,5 +53,6 @@ A Kosmos leaf object in the hierarchy.
 ## Implemented By
 
 - [IrisdbDatabase](../objects/IrisdbDatabase.md)
+- [MariadbDatabase](../objects/MariadbDatabase.md)
 - [MysqldbDatabase](../objects/MysqldbDatabase.md)
 - [PostgreSQLDatabase](../objects/PostgreSQLDatabase.md)

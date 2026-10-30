@@ -40,7 +40,15 @@ Validate if a Cloud Cluster can be recovered.
       "data": {
         "cloudClusterRecoveryValidation": {
           "canBeRecovered": true,
-          "message": "example-string"
+          "message": "example-string",
+          "findings": [
+            {
+              "check": "BUCKET_ACCESS_DENIED",
+              "detail": "example-string",
+              "remediation": "example-string",
+              "severity": "BLOCKER"
+            }
+          ]
         }
       }
     }

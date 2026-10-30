@@ -1,13 +1,13 @@
 # awsNativeRdsInstance
 
-Refers to AWS Relational Database Service (RDS) represented by a specific ID. For more information, see https://aws.amazon.com/rds/.
+Returns a single AWS Native RDS instance by its Rubrik FID.
 
 ## Arguments
 
 | Argument | Type | Description |
 |----------|------|-------------|
-| rdsInstanceRubrikId *(required)* | [UUID](../types/scalars/UUID.md)! | The Rubrik ID for the AWS RDS Instance. |
-| includeSecurityMetadata | Boolean | Filter to include the security metadata. |
+| rdsInstanceRubrikId *(required)* | [UUID](../types/scalars/UUID.md)! | Rubrik FID of the RDS instance. |
+| includeSecurityMetadata | Boolean | Whether to include the object's security metadata in the response. |
 
 ## Returns
 

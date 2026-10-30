@@ -18,5 +18,6 @@ Paginated list of KosmosParentHierarchyObjectPhysicalChildType objects with addi
 - [InformixInstance.physicalChildConnection](InformixInstance.md)
 - [IrisdbInstance.physicalChildConnection](IrisdbInstance.md)
 - KosmosParentHierarchyObjectType.physicalChildConnection
+- [MariadbInstance.physicalChildConnection](MariadbInstance.md)
 - [MysqldbInstance.physicalChildConnection](MysqldbInstance.md)
 - [PostgreSQLDbCluster.physicalChildConnection](PostgreSQLDbCluster.md)

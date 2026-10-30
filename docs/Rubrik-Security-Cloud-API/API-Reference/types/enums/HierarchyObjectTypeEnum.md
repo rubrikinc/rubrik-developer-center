@@ -104,12 +104,10 @@ Hierarchy object type enum covering all CDM and RSC hierarchy objects.
 | HOST_FAILOVER_CLUSTER | Host Failover Cluster. |
 | HPE_VME_CLOUD | HPE Virtual Machine Essentials cloud. |
 | HPE_VME_CLUSTER | HPE Virtual Machine Essentials cluster. |
-| HPE_VME_DATASTORE | HPE Virtual Machine Essentials datastore. |
 | HPE_VME_GROUP | HPE Virtual Machine Essentials group. |
 | HPE_VME_HOST | HPE Virtual Machine Essentials host. |
 | HPE_VME_INSTANCE | HPE Virtual Machine Essentials instance. An inventory hierarchy level, not a protectable object. |
 | HPE_VME_MANAGER | HPE Virtual Machine Essentials manager. |
-| HPE_VME_NETWORK | HPE Virtual Machine Essentials network. |
 | HPE_VME_VIRTUAL_MACHINE | HPE Virtual Machine Essentials virtual machine. The protectable object in this hierarchy. |
 | Hdfs | Hdfs. |
 | HostShare | Host Share. |
@@ -197,6 +195,8 @@ Hierarchy object type enum covering all CDM and RSC hierarchy objects.
 | OPENSTACK_TAG | OpenStack tag. |
 | OPENSTACK_VIRTUAL_MACHINE | OpenStack Virtual Machine. |
 | ORACLE_DATA_GUARD_GROUP | ORACLE DATA GUARD GROUP. |
+| ORACLE_FAILOVER_CLUSTER | Oracle failover cluster: a customer-asserted machine set for Oracle AIX PowerHA active-passive clusters. |
+| ORACLE_FAILOVER_SERVICE | Oracle failover service: a logical HA resource group under an Oracle failover cluster. |
 | ORCHESTRATED_APPLICATION_RECOVERY_BLUEPRINT | Orchestrated Application Recovery Blueprint. |
 | ORCHESTRATED_APPLICATION_RECOVERY_PLAN | Orchestrated Application Recovery Plan. |
 | OracleDatabase | Oracle Database. |
@@ -219,6 +219,7 @@ Hierarchy object type enum covering all CDM and RSC hierarchy objects.
 | PROXMOX_CLUSTER | Proxmox Cluster. |
 | PROXMOX_ENVIRONMENT | Proxmox Environment. |
 | PROXMOX_NODE | Proxmox Node. |
+| PROXMOX_TAG | Proxmox Tag. |
 | PROXMOX_VIRTUAL_MACHINE | Proxmox Virtual Machine. |
 | PURE_STORAGE_ARRAY | Pure Storage array. |
 | PURE_STORAGE_PROTECTION_GROUP | Pure Storage protection group. |
@@ -239,9 +240,17 @@ Hierarchy object type enum covering all CDM and RSC hierarchy objects.
 | ShareFileset | Share Fileset. |
 | SnapMirrorCloud | Snap Mirror Cloud. |
 | StorageArrayVolumeGroup | Storage Array Volume Group. |
+| VCFA_APPLIANCE | VMware Cloud Foundation Automation (VCFA) appliance. |
+| VCFA_ORG | VCFA organization. |
+| VCFA_PROJECT | VCFA project. |
+| VCFA_REGION | VCFA region. |
+| VCF_FLEET | VCF fleet -- one VCF Operations appliance. |
+| VCF_INSTANCE | VCF instance -- one SDDC Manager under a fleet. |
 | VSPHERE_CONTENT_LIBRARY | VSphere Content Library. |
 | VSPHERE_DATACENTER_FOLDER | VSphere datacenter folder. |
 | VSPHERE_DATASTORE_CLUSTER | VSphere Datastore cluster. |
+| VSPHERE_NAMESPACE | Namespace of a vSphere Supervisor. |
+| VSPHERE_SUPERVISOR | Supervisor of a vSphere vCenter. |
 | VSPHERE_VIRTUAL_DISK | VSphere Virtual Disk. |
 | VSphereComputeCluster | V Sphere Compute Cluster. |
 | VSphereDatacenter | V Sphere Datacenter. |

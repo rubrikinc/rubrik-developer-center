@@ -1,10 +1,10 @@
 # HypervVirtualMachineDetailOperatingSystemType
 
-*No description available.*
+Operating system type of a Hyper-V virtual machine.
 
 ## Values
 
 | Value | Description |
 |-------|-------------|
-| HYPERV_VIRTUAL_MACHINE_DETAIL_OPERATING_SYSTEM_TYPE_LINUX |  |
-| HYPERV_VIRTUAL_MACHINE_DETAIL_OPERATING_SYSTEM_TYPE_WINDOWS |  |
+| HYPERV_VIRTUAL_MACHINE_DETAIL_OPERATING_SYSTEM_TYPE_LINUX | Linux operating system. |
+| HYPERV_VIRTUAL_MACHINE_DETAIL_OPERATING_SYSTEM_TYPE_WINDOWS | Windows operating system. |

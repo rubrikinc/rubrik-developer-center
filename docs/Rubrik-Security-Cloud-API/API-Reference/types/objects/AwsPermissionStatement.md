@@ -16,4 +16,10 @@ AWS IAM permission statement.
 
 **Referenced by**
 
+- [AwsPermissionDiffEntry.added](AwsPermissionDiffEntry.md)
+- [AwsPermissionDiffEntry.existing](AwsPermissionDiffEntry.md)
+- [AwsPermissionDiffEntry.removed](AwsPermissionDiffEntry.md)
+- [AwsPermissionModification.latest](AwsPermissionModification.md)
+- [AwsPermissionModification.previous](AwsPermissionModification.md)
+- [AwsPermissionModification.unchanged](AwsPermissionModification.md)
 - [AwsPermissionsGroupPermissions.permissionStatements](AwsPermissionsGroupPermissions.md)

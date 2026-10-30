@@ -27,6 +27,7 @@ Regions for Rubrik Cloud Storage Archival Location.
 | CANADA_EAST | Canada East or Quebec City. |
 | CANADA_WEST_CALGARY | Canada West Calgary. |
 | CHILE_CENTRAL | Chile Central or Santiago. |
+| DENMARK_EAST | Denmark East or Copenhagen. |
 | EUROPE_NORTH | Europe North or Netherlands. |
 | EUROPE_NORTH_FINLAND | Europe North (Finland). |
 | EUROPE_STOCKHOLM | Europe Stockholm. |
@@ -46,6 +47,7 @@ Regions for Rubrik Cloud Storage Archival Location.
 | INDIA_CENTRAL | India Central or Pune. |
 | INDIA_SOUTH | India South or Chennai. |
 | INDIA_SOUTH_2 | Delhi (India South 2). |
+| INDIA_SOUTH_CENTRAL | India South Central or Hyderabad. |
 | INDIA_WEST | India West or Mumbai. |
 | INDONESIA_CENTRAL | Indonesia Central or Jakarta. |
 | ISRAEL_CENTRAL | Israel Central or Israel. |

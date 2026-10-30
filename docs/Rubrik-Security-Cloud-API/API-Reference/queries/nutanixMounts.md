@@ -8,6 +8,8 @@ Nutanix Live Mount Connection.
 |----------|------|-------------|
 | first | Int | Returns the first n elements from the list. |
 | after | String | An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results. |
+| last | Int | Returns the last n elements from the list. |
+| before | String | An opaque cursor returned from a previous query's startCursor field. Pass this value verbatim to retrieve the previous page of results. |
 | filters | [[NutanixLiveMountFilterInput](../types/inputs/NutanixLiveMountFilterInput.md)!] | Filter for Nutanix virtual machine live mounts. |
 | sortBy | [NutanixLiveMountSortByInput](../types/inputs/NutanixLiveMountSortByInput.md) | Sort by argument for Nutanix virtual machine live mounts. |
 

@@ -17,6 +17,9 @@ Pending snapshots deletion status for an object.
 - [ActiveDirectoryDomainController.pendingObjectDeletionStatus](ActiveDirectoryDomainController.md)
 - ActiveDirectoryDomainDescendantType.pendingObjectDeletionStatus
 - ActiveDirectoryDomainPhysicalChildType.pendingObjectDeletionStatus
+- [ActiveDirectoryForest.pendingObjectDeletionStatus](ActiveDirectoryForest.md)
+- ActiveDirectoryForestDescendantType.pendingObjectDeletionStatus
+- ActiveDirectoryForestPhysicalChildType.pendingObjectDeletionStatus
 - CdmHierarchyObject.pendingObjectDeletionStatus
 - [Db2Database.pendingObjectDeletionStatus](Db2Database.md)
 - [Db2Instance.pendingObjectDeletionStatus](Db2Instance.md)
@@ -40,7 +43,4 @@ Pending snapshots deletion status for an object.
 - [FusionComputeCluster.pendingObjectDeletionStatus](FusionComputeCluster.md)
 - FusionComputeClusterDescendant.pendingObjectDeletionStatus
 - FusionComputeClusterPhysicalChildType.pendingObjectDeletionStatus
-- [FusionComputeDatastore.pendingObjectDeletionStatus](FusionComputeDatastore.md)
-- [FusionComputeHost.pendingObjectDeletionStatus](FusionComputeHost.md)
-- FusionComputeHostDescendant.pendingObjectDeletionStatus
-- *…and 234 more*
+- *…and 263 more*

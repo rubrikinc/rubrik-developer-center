@@ -54,6 +54,8 @@ An object in the Kosmos hierarchy framework.
 - [InformixInstance](../objects/InformixInstance.md)
 - [IrisdbDatabase](../objects/IrisdbDatabase.md)
 - [IrisdbInstance](../objects/IrisdbInstance.md)
+- [MariadbDatabase](../objects/MariadbDatabase.md)
+- [MariadbInstance](../objects/MariadbInstance.md)
 - [MysqldbDatabase](../objects/MysqldbDatabase.md)
 - [MysqldbInstance](../objects/MysqldbInstance.md)
 - [PostgreSQLDatabase](../objects/PostgreSQLDatabase.md)

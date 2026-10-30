@@ -17,7 +17,14 @@ The forward-looking legal hold rule on a workload. Any snapshot of the workload 
 - [ActiveDirectoryDomainController.futureLegalHoldInfo](ActiveDirectoryDomainController.md)
 - ActiveDirectoryDomainDescendantType.futureLegalHoldInfo
 - ActiveDirectoryDomainPhysicalChildType.futureLegalHoldInfo
+- [ActiveDirectoryForest.futureLegalHoldInfo](ActiveDirectoryForest.md)
+- ActiveDirectoryForestDescendantType.futureLegalHoldInfo
+- ActiveDirectoryForestPhysicalChildType.futureLegalHoldInfo
+- [AnthropicChildOrg.futureLegalHoldInfo](AnthropicChildOrg.md)
+- [AnthropicClaudeChatWorkload.futureLegalHoldInfo](AnthropicClaudeChatWorkload.md)
 - [AnthropicOrg.futureLegalHoldInfo](AnthropicOrg.md)
+- [AnthropicOrgSetting.futureLegalHoldInfo](AnthropicOrgSetting.md)
+- [AnthropicUser.futureLegalHoldInfo](AnthropicUser.md)
 - [AtlassianSite.futureLegalHoldInfo](AtlassianSite.md)
 - [AwsNativeAccount.futureLegalHoldInfo](AwsNativeAccount.md)
 - AwsNativeAccountDescendantType.futureLegalHoldInfo
@@ -36,11 +43,4 @@ The forward-looking legal hold rule on a workload. Any snapshot of the workload 
 - [AzureCosmosNosqlDatabase.futureLegalHoldInfo](AzureCosmosNosqlDatabase.md)
 - [AzureDevOpsOrganization.futureLegalHoldInfo](AzureDevOpsOrganization.md)
 - [AzureDevOpsProject.futureLegalHoldInfo](AzureDevOpsProject.md)
-- [AzureDevOpsRepository.futureLegalHoldInfo](AzureDevOpsRepository.md)
-- AzureNativeHierarchyObjectType.futureLegalHoldInfo
-- [AzureNativeManagedDisk.futureLegalHoldInfo](AzureNativeManagedDisk.md)
-- [AzureNativeRegionManagedObject.futureLegalHoldInfo](AzureNativeRegionManagedObject.md)
-- [AzureNativeResourceGroup.futureLegalHoldInfo](AzureNativeResourceGroup.md)
-- [AzureNativeResourceGroupBase.futureLegalHoldInfo](AzureNativeResourceGroupBase.md)
-- [AzureNativeSubscription.futureLegalHoldInfo](AzureNativeSubscription.md)
-- *…and 333 more*
+- *…and 378 more*

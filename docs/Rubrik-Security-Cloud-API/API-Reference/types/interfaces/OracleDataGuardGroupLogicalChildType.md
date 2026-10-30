@@ -1,6 +1,6 @@
 # OracleDataGuardGroupLogicalChildType
 
-*No description available.*
+Logical child of the Oracle Data Guard group object.
 
 ## Fields
 

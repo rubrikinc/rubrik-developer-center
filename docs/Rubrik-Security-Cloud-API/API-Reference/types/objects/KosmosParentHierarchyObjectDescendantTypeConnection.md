@@ -18,5 +18,6 @@ Paginated list of KosmosParentHierarchyObjectDescendantType objects with additio
 - [InformixInstance.descendantConnection](InformixInstance.md)
 - [IrisdbInstance.descendantConnection](IrisdbInstance.md)
 - KosmosParentHierarchyObjectType.descendantConnection
+- [MariadbInstance.descendantConnection](MariadbInstance.md)
 - [MysqldbInstance.descendantConnection](MysqldbInstance.md)
 - [PostgreSQLDbCluster.descendantConnection](PostgreSQLDbCluster.md)

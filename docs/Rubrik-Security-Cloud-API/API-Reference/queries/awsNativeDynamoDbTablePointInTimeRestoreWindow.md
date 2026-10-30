@@ -1,6 +1,6 @@
 # awsNativeDynamoDbTablePointInTimeRestoreWindow
 
-The Point-in-Time (PiT) restore window of a DynamoDB table in an AWS native account refers to the range of time available for restoration. This window defines the period during which you can restore the table to a specific point in time. For more information, see https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Point-in-time-recovery.html.
+GetAwsNativeDynamoDbTablePointInTimeRestoreWindow returns the recoverable range for the DynamoDB table identified by its Rubrik ID, authorizing the caller against the table via authz-service.
 
 ## Arguments
 

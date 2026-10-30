@@ -51,5 +51,6 @@ The descendant of Kosmos parent hierarchy objects
 ## Implemented By
 
 - [IrisdbDatabase](../objects/IrisdbDatabase.md)
+- [MariadbDatabase](../objects/MariadbDatabase.md)
 - [MysqldbDatabase](../objects/MysqldbDatabase.md)
 - [PostgreSQLDatabase](../objects/PostgreSQLDatabase.md)

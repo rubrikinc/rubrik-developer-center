@@ -6,7 +6,7 @@ Is Rubrik Suppport Portal reachable from this deployment.
 
 | Argument | Type | Description |
 |----------|------|-------------|
-| hostname *(required)* | String! | Hostname to access the Support portal. |
+| hostname | String | Hostname to access the Support portal. |
 
 ## Returns
 
@@ -17,17 +17,15 @@ Boolean!
 === "Query"
 
     ```graphql
-    query IsSfdcReachable($hostname: String!) {
-      isSfdcReachable(hostname: $hostname)
+    query {
+      isSfdcReachable
     }
     ```
 
 === "Variables"
 
     ```json
-    {
-      "hostname": "example-string"
-    }
+    {}
     ```
 
 === "Example Response"

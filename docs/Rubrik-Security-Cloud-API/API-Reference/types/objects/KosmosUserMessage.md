@@ -18,6 +18,7 @@ Kosmos User Message object.
 - [InformixInstanceStatus.statusMessages](InformixInstanceStatus.md)
 - [IrisdbDatabaseStatus.statusMessages](IrisdbDatabaseStatus.md)
 - [IrisdbInstanceStatus.statusMessages](IrisdbInstanceStatus.md)
+- [MariadbInstanceStatus.statusMessages](MariadbInstanceStatus.md)
 - [MysqlTopologyReplicaInfo.statusMessageDetails](MysqlTopologyReplicaInfo.md)
 - [MysqldbInstanceStatus.statusMessages](MysqldbInstanceStatus.md)
 - [PostgreSQLDbClusterStatus.statusMessages](PostgreSQLDbClusterStatus.md)

@@ -16,6 +16,7 @@ Paginated list of CdmSnapshot objects. Each page of the results includes at most
 **Referenced by**
 
 - [ActiveDirectoryDomainController.snapshotConnection](ActiveDirectoryDomainController.md)
+- [ActiveDirectoryForest.snapshotConnection](ActiveDirectoryForest.md)
 - CdmHierarchySnappableNew.snapshotConnection
 - [CdmSnapshotGroupBy.snapshotConnection](CdmSnapshotGroupBy.md)
 - [CdmSnapshotGroupBySummary.cdmSnapshots](CdmSnapshotGroupBySummary.md)
@@ -31,6 +32,7 @@ Paginated list of CdmSnapshot objects. Each page of the results includes at most
 - [KubernetesVirtualMachine.snapshotConnection](KubernetesVirtualMachine.md)
 - [LinuxFileset.snapshotConnection](LinuxFileset.md)
 - [ManagedVolume.snapshotConnection](ManagedVolume.md)
+- [MariadbInstance.snapshotConnection](MariadbInstance.md)
 - [MongoCollection.mongoSnapshotConnection](MongoCollection.md)
 - [MongoCollectionSet.snapshotConnection](MongoCollectionSet.md)
 - [MongoSnapshotGroupBy.mongoSnapshotConnection](MongoSnapshotGroupBy.md)
@@ -43,6 +45,4 @@ Paginated list of CdmSnapshot objects. Each page of the results includes at most
 - [OpenstackImage.snapshotConnection](OpenstackImage.md)
 - [OpenstackVirtualMachine.snapshotConnection](OpenstackVirtualMachine.md)
 - [OracleDataGuardGroup.snapshotConnection](OracleDataGuardGroup.md)
-- [OracleDatabase.snapshotConnection](OracleDatabase.md)
-- [PingFederateClusterV1.snapshotConnection](PingFederateClusterV1.md)
-- *…and 12 more*
+- *…and 14 more*

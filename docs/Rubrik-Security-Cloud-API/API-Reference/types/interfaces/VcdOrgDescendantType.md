@@ -50,5 +50,7 @@ A descendant of a vCD organization.
 
 ## Implemented By
 
+- [VcdCatalog](../objects/VcdCatalog.md)
+- [VcdOrgVdc](../objects/VcdOrgVdc.md)
 - [VcdVapp](../objects/VcdVapp.md)
 - [VsphereVm](../objects/VsphereVm.md)

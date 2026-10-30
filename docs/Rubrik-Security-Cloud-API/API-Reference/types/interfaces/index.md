@@ -1,9 +1,11 @@
 # Interfaces
 
-204 types.
+211 types.
 
 [ActiveDirectoryDomainDescendantType](ActiveDirectoryDomainDescendantType.md)  
 [ActiveDirectoryDomainPhysicalChildType](ActiveDirectoryDomainPhysicalChildType.md)  
+[ActiveDirectoryForestDescendantType](ActiveDirectoryForestDescendantType.md)  
+[ActiveDirectoryForestPhysicalChildType](ActiveDirectoryForestPhysicalChildType.md)  
 [ArchivalEntity](ArchivalEntity.md)  
 [AwsExocomputeGetConfigurationResponse](AwsExocomputeGetConfigurationResponse.md)  
 [AwsNativeAccountDescendantType](AwsNativeAccountDescendantType.md)  
@@ -139,6 +141,8 @@
 [OpenstackTagLogicalChildType](OpenstackTagLogicalChildType.md)  
 [OracleDataGuardGroupDescendantType](OracleDataGuardGroupDescendantType.md)  
 [OracleDataGuardGroupLogicalChildType](OracleDataGuardGroupLogicalChildType.md)  
+[OracleFailoverClusterDescendantType](OracleFailoverClusterDescendantType.md)  
+[OracleFailoverServiceDescendantType](OracleFailoverServiceDescendantType.md)  
 [OracleHostDescendantType](OracleHostDescendantType.md)  
 [OracleHostLogicalChildType](OracleHostLogicalChildType.md)  
 [OracleRacDescendantType](OracleRacDescendantType.md)  
@@ -156,6 +160,8 @@
 [ProxmoxEnvironmentPhysicalChildType](ProxmoxEnvironmentPhysicalChildType.md)  
 [ProxmoxNodeDescendant](ProxmoxNodeDescendant.md)  
 [ProxmoxNodePhysicalChildType](ProxmoxNodePhysicalChildType.md)  
+[ProxmoxTagDescendant](ProxmoxTagDescendant.md)  
+[ProxmoxTagLogicalChild](ProxmoxTagLogicalChild.md)  
 [PureStorageArrayDescendantV1](PureStorageArrayDescendantV1.md)  
 [PureStorageArrayLogicalChildType](PureStorageArrayLogicalChildType.md)  
 [RequestedChangesTemplate](RequestedChangesTemplate.md)  
@@ -195,6 +201,7 @@
 [VsphereHostPhysicalChildType](VsphereHostPhysicalChildType.md)  
 [VsphereResourcePoolDescendantType](VsphereResourcePoolDescendantType.md)  
 [VsphereResourcePoolPhysicalChildType](VsphereResourcePoolPhysicalChildType.md)  
+[VsphereSupervisorDescendantType](VsphereSupervisorDescendantType.md)  
 [VsphereTagCategoryDescendantType](VsphereTagCategoryDescendantType.md)  
 [VsphereTagCategoryTagChildType](VsphereTagCategoryTagChildType.md)  
 [VsphereTagDescendantType](VsphereTagDescendantType.md)  

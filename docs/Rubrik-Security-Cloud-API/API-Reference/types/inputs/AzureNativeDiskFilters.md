@@ -13,6 +13,7 @@ Filters for list of Azure disks.
 | exocomputeConnectedFilter | [AzureNativeDiskExocomputeConnectedFilter](AzureNativeDiskExocomputeConnectedFilter.md) | Filter by Exocompute connection status in the disk region. |
 | fileIndexingFilter | [AzureNativeDiskFileIndexingFilter](AzureNativeDiskFileIndexingFilter.md) | Filter disks where file indexing is enabled. |
 | isEligibleForProtection | Boolean | Filter workloads based on their eligibility for protection. |
+| namePrefixFilter | [NamePrefixFilter](NamePrefixFilter.md) | Filter by disk name prefix. |
 | nameSubstringFilter | [NameSubstringFilter](NameSubstringFilter.md) | Filter by disk name. |
 | orgFilter | [OrgFilter](OrgFilter.md) | Filter by organization ID. |
 | protectionStatusFilter | [ProtectionStatusFilter](ProtectionStatusFilter.md) | Filter by protection status. |

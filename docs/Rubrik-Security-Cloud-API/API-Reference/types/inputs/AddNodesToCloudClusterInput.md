@@ -14,6 +14,6 @@ Nodes add request for a cloud cluster.
 | gcpImageId | String | GCP image ID to deploy to add nodes to a Rubrik Cloud Cluster for GCP, without accessing the marketplace. |
 | gcpTestImage | [GcpTestImage](GcpTestImage.md) | GCP test image deployed for adding nodes to a Rubrik Cloud Cluster for GCP without accessing the marketplace. |
 | numberOfNodes | Int | Number of nodes to add. |
-| ociImageId | String | OCI Image ID to deploy to add nodes to an OCI Cloud Cluster without the marketplace. |
+| ociImageId | String | OCI Image ID to deploy to add nodes to an OCI Cloud Cluster without the marketplace.  Deprecated: supplying an image bypasses Marketplace resolution and with it the App Catalog terms gate. Select a CDM version and let RSC resolve the image. The field is removed in a later release; the tag is not reused. |
 | shouldKeepResourcesOnFailure | Boolean! | Specifies whether node resources are preserved if the add node operation fails. |
 | vendor | [CcpVendorType](../enums/CcpVendorType.md)! | Cloud vendor type. |

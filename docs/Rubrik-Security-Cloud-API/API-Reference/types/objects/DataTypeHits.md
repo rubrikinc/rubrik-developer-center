@@ -7,6 +7,7 @@ Hits stats of an individual data type within a data category.
 | Field | Type | Description |
 |-------|------|-------------|
 | dataTypeId | String! | Identifier of the data type. |
+| fileCount | [Long](../scalars/Long.md)! | Sum of per-object files with hits for the data type. Populated only when the caller asks for file counts. |
 | id | String! | Identifier of the data type for a given data category. |
 | objectCount | [Long](../scalars/Long.md)! | Number of objects with hits of the data type. |
 | totalHits | [Long](../scalars/Long.md)! | Total hits of the data type. |

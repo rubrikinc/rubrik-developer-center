@@ -12,5 +12,6 @@ Platform-specific recovery specification.
 | awsRdsInstance | [AwsRdsInstanceRecoverySpecInput](AwsRdsInstanceRecoverySpecInput.md) | AWS RDS instance recovery specification. |
 | azureVm | [AzureNativeVmRecoverySpecInput](AzureNativeVmRecoverySpecInput.md) | Azure native virtual machine recovery specification. |
 | hypervVm | [HypervVmRecoverySpecInput](HypervVmRecoverySpecInput.md) | HyperV virtual machine recovery specification. |
+| mssqlDatabase | [MssqlDatabaseRecoverySpecInput](MssqlDatabaseRecoverySpecInput.md) | SQL Server database recovery specification. |
 | nutanixVm | [NutanixVmRecoverySpecInput](NutanixVmRecoverySpecInput.md) | Nutanix virtual machine recovery specification. |
 | vmwareVm | [VsphereVmRecoverySpecInput](VsphereVmRecoverySpecInput.md) | VMware virtual machine recovery specification. |

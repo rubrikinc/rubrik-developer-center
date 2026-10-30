@@ -21,6 +21,8 @@ The basic entity Information.
 - KosmosLeafHierarchyObjectType.entityInfo
 - KosmosParentHierarchyObjectType.entityInfo
 - KosmosSnappableHierarchyObjectType.entityInfo
+- [MariadbDatabase.entityInfo](MariadbDatabase.md)
+- [MariadbInstance.entityInfo](MariadbInstance.md)
 - [MysqldbDatabase.entityInfo](MysqldbDatabase.md)
 - [MysqldbInstance.entityInfo](MysqldbInstance.md)
 - [PostgreSQLDatabase.entityInfo](PostgreSQLDatabase.md)

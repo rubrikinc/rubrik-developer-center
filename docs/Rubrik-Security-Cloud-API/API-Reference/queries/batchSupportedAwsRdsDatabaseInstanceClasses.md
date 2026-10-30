@@ -1,6 +1,6 @@
 # batchSupportedAwsRdsDatabaseInstanceClasses
 
-Batch query to list all the database instance classes supported by AWS RDS database for multiple DB engine and engine version combinations.
+BatchSupportedAwsRdsDatabaseInstanceClasses returns the list of supported DB instance classes for multiple engine/version combinations in a single batch request.
 
 ## Arguments
 
@@ -8,7 +8,7 @@ Batch query to list all the database instance classes supported by AWS RDS datab
 |----------|------|-------------|
 | awsAccountRubrikId *(required)* | [UUID](../types/scalars/UUID.md)! | Rubrik ID for AWS account. |
 | region *(required)* | [AwsNativeRegion](../types/enums/AwsNativeRegion.md)! | Region in AWS. |
-| requests *(required)* | [[RdsInstanceClassRequest](../types/inputs/RdsInstanceClassRequest.md)!]! | List of DB engine and version combinations to query for supported instance classes. |
+| requests *(required)* | [[RdsInstanceClassRequest](../types/inputs/RdsInstanceClassRequest.md)!]! | Engine and version combinations to look up. |
 
 ## Returns
 

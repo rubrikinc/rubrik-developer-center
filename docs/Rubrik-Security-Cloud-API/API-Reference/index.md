@@ -9,7 +9,7 @@ POST https://<INSTANCE>.my.rubrik.com/api/graphql
 
 ## Search the schema
 
-<input type="text" id="schema-search-input" placeholder="Search 10,137 queries, mutations, and types by name or description..." autocomplete="off">
+<input type="text" id="schema-search-input" placeholder="Search 10,321 queries, mutations, and types by name or description..." autocomplete="off">
 <div id="schema-search-filters">
 <label class="schema-search-filter"><input type="checkbox" value="query" checked><span>Queries</span></label>
 <label class="schema-search-filter"><input type="checkbox" value="mutation" checked><span>Mutations</span></label>
@@ -30,7 +30,7 @@ POST https://<INSTANCE>.my.rubrik.com/api/graphql
     Read operations. Inventory a workload, list snapshots, check compliance,
     poll a job.
 
-    [Browse all 1,175 queries](queries/index.md)
+    [Browse all 1,184 queries](queries/index.md)
 
 -   :material-pencil-box-outline:{ .lg .middle } __Mutations__
 
@@ -38,7 +38,7 @@ POST https://<INSTANCE>.my.rubrik.com/api/graphql
     Write operations. Take a snapshot, assign an SLA, start a recovery,
     register a host.
 
-    [Browse all 1,014 mutations](mutations/index.md)
+    [Browse all 1,020 mutations](mutations/index.md)
 
 -   :material-shape-outline:{ .lg .middle } __Types__
 
@@ -46,7 +46,7 @@ POST https://<INSTANCE>.my.rubrik.com/api/graphql
     Objects, inputs, enums, interfaces, unions, and scalars. What a field
     returns and what an input accepts.
 
-    [Browse all 7,948 types](types/index.md)
+    [Browse all 8,117 types](types/index.md)
 
 </div>
 

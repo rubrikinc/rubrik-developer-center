@@ -10,6 +10,7 @@ SMB domain.
 | cluster | [Cluster](Cluster.md)! | Cluster of the SMB domain. |
 | dnsServers | [String!]! | DNS servers authoritative for this SMB domain. Empty when per-domain DNS is not configured. |
 | domainId | String! | Domain ID of SMB domain. |
+| enableKerberosForSmb | Boolean! | Whether SMB sessions for this domain authenticate over Kerberos instead of NTLM. False when not configured. |
 | id | [UUID](../scalars/UUID.md)! | ID of the SMB domain. |
 | isArchived | Boolean! | Specifies if the SMB domain is archived. |
 | name | String! | Name of the SMB domain. |

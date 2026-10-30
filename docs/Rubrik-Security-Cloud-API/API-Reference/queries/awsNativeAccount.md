@@ -1,13 +1,14 @@
 # awsNativeAccount
 
-Refers to the AWS Native account that serves as a container for all your AWS resources. The AWS Native account contains information about the metadata related to the AWS Native resources.
+Returns a single AWS Native account by its Rubrik FID.
 
 ## Arguments
 
 | Argument | Type | Description |
 |----------|------|-------------|
-| awsNativeAccountRubrikId *(required)* | [UUID](../types/scalars/UUID.md)! | The Rubrik ID for the AWS Native account. |
-| awsNativeProtectionFeature *(required)* | [AwsNativeProtectionFeature](../types/enums/AwsNativeProtectionFeature.md)! | Cloud native protection feature. |
+| awsNativeAccountRubrikId *(required)* | [UUID](../types/scalars/UUID.md)! | Rubrik FID of the AWS Native account. |
+| awsNativeProtectionFeature *(required)* | [AwsNativeProtectionFeature](../types/enums/AwsNativeProtectionFeature.md)! | Protection feature whose workload scopes the account's SLA. |
+| includeSecurityMetadata | Boolean | Whether to include the object's security metadata in the response. |
 
 ## Returns
 

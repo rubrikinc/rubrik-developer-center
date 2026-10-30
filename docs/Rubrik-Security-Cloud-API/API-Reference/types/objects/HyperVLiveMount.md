@@ -14,7 +14,7 @@ HyperV live mount.
 | mountSpec | String! | Specification of the live mount in JSON string. |
 | mountTime | [DateTime](../scalars/DateTime.md) | Time when the snapshot was mounted. |
 | mountedVmFid | [UUID](../scalars/UUID.md)! | ID of the mounted virtual machine.. |
-| mountedVmStatus | [HypervMountedVmStatusType](../enums/HypervMountedVmStatusType.md)! | Power Status of HyperV Live Mount. |
+| mountedVmStatus | [HypervMountedVmStatusType](../enums/HypervMountedVmStatusType.md)! | Power status of the live-mounted Hyper-V virtual machine. |
 | name | String! | Name of the live mount. |
 | serverFid | [UUID](../scalars/UUID.md)! | ID of the HyperV server. |
 | serverName | String! | Host name of the server where Hyper-V virtual machine is live mounted. |

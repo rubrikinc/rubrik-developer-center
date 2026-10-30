@@ -33,6 +33,7 @@ Supported in v5.0+
 | numMissedSnapshot | Int | Supported in v5.1+ An integer that specifies the number of missed snapshots. |
 | numTablespaces | Int! | Required. Supported in v5.0+ Count of the number of table spaces in Oracle database. |
 | primaryClusterId | String! | Required. Supported in v5.0+ |
+| protectionDate | [DateTime](../scalars/DateTime.md) | Supported in v9.7 UTC timestamp for when the Oracle database became protected by its current SLA Domain. Omitted if no SLA Domain has been assigned. The value resets every time the SLA Domain changes, including a reassignment to Unprotected. |
 | racId | String | Supported in v5.0+ Rubrik ID of the RAC on which this database is hosted. This field will be empty if the database is not hosted on a RAC environment. |
 | racName | String | Supported in v5.0+ v5.0-v5.3: RAC name of cluster database. v6.0+: RAC name of the cluster database. |
 | shouldUseSecureThriftForDataTransfer | Boolean | Supported in v9.4+ Boolean value specifying whether to use secure thrift as the data transfer mechanism between the Rubrik cluster and the Oracle database instead of NFS. The default data transfer mechanism is NFS. |

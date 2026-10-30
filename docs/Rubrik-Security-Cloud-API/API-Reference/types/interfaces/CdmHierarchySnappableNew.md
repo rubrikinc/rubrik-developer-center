@@ -93,6 +93,7 @@ A managed hierarchy protected objects.
 ## Implemented By
 
 - [ActiveDirectoryDomainController](../objects/ActiveDirectoryDomainController.md)
+- [ActiveDirectoryForest](../objects/ActiveDirectoryForest.md)
 - [Db2Database](../objects/Db2Database.md)
 - [ExchangeDatabase](../objects/ExchangeDatabase.md)
 - [FusionComputeVirtualMachine](../objects/FusionComputeVirtualMachine.md)
@@ -104,6 +105,7 @@ A managed hierarchy protected objects.
 - [KubernetesVirtualMachine](../objects/KubernetesVirtualMachine.md)
 - [LinuxFileset](../objects/LinuxFileset.md)
 - [ManagedVolume](../objects/ManagedVolume.md)
+- [MariadbInstance](../objects/MariadbInstance.md)
 - [MongoCollectionSet](../objects/MongoCollectionSet.md)
 - [MongoSource](../objects/MongoSource.md)
 - [MssqlDatabase](../objects/MssqlDatabase.md)

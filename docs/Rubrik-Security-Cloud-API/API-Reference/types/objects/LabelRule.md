@@ -14,6 +14,7 @@ A single label Rule.
 | label | [CloudNativeLabel](CloudNativeLabel.md) | Label key and value. |
 | labelConditions | [CloudNativeTagConditionOutput](CloudNativeTagConditionOutput.md) | Label conditions for the label rule. |
 | name | String! | Name of the label rule. |
+| objectPauseStatus | [ObjectPauseStatus](ObjectPauseStatus.md) | Pause status of the label rule. |
 | objectType | [ManagedObjectType](../enums/ManagedObjectType.md)! | Object type for which the label rule is applicable. |
 | rscNativeObjectPendingSla | [CompactSlaDomain](CompactSlaDomain.md) | SLA Domain assignment which is pending on the Rubrik Security Cloud native objects. |
 

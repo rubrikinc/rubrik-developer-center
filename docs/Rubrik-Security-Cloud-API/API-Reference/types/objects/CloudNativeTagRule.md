@@ -12,6 +12,7 @@ Cloud-native tag rule.
 | hasPermissionToModify | Boolean! | Specifies whether the user has permissions to modify the tag rule. |
 | id | String! | ID of the tag rule. |
 | name | String! | Name of the tag rule. |
+| objectPauseStatus | [ObjectPauseStatus](ObjectPauseStatus.md) | Pause status of the tag rule. |
 | objectType | [ManagedObjectType](../enums/ManagedObjectType.md)! | Object type to which the tag rule will be applied. |
 | rscNativeObjectPendingSla | [CompactSlaDomain](CompactSlaDomain.md) | SLA Domain assignment which is pending on the Rubrik Security Cloud native objects. |
 | tag | [TagRuleTag](TagRuleTag.md) | Tag for the tag rule. |

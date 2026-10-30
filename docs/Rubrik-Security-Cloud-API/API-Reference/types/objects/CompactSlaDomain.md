@@ -13,7 +13,11 @@ SLA Domain name and ID.
 
 **Referenced by**
 
+- [AnthropicChildOrg.rscNativeObjectPendingSla](AnthropicChildOrg.md)
+- [AnthropicClaudeChatWorkload.rscNativeObjectPendingSla](AnthropicClaudeChatWorkload.md)
 - [AnthropicOrg.rscNativeObjectPendingSla](AnthropicOrg.md)
+- [AnthropicOrgSetting.rscNativeObjectPendingSla](AnthropicOrgSetting.md)
+- [AnthropicUser.rscNativeObjectPendingSla](AnthropicUser.md)
 - [AtlassianSite.rscNativeObjectPendingSla](AtlassianSite.md)
 - [AwsNativeAccount.rscNativeObjectPendingSla](AwsNativeAccount.md)
 - AwsNativeAccountDescendantType.rscNativeObjectPendingSla
@@ -39,8 +43,4 @@ SLA Domain name and ID.
 - [AzureNativeResourceGroup.rscNativeObjectPendingSla](AzureNativeResourceGroup.md)
 - [AzureNativeResourceGroupBase.rscNativeObjectPendingSla](AzureNativeResourceGroupBase.md)
 - [AzureNativeResourceGroupSlaAssignment.rscNativeObjectPendingSla](AzureNativeResourceGroupSlaAssignment.md)
-- [AzureNativeSubscription.rscNativeObjectPendingSla](AzureNativeSubscription.md)
-- [AzureNativeVirtualMachine.rscNativeObjectPendingSla](AzureNativeVirtualMachine.md)
-- [AzurePostgresFlexibleServer.rscNativeObjectPendingSla](AzurePostgresFlexibleServer.md)
-- [AzureSqlDatabaseDb.rscNativeObjectPendingSla](AzureSqlDatabaseDb.md)
-- *…and 50 more*
+- *…and 66 more*

@@ -20,6 +20,7 @@ Supported in v5.0+
 | ipAddress | String! | Required. Supported in v5.0+ |
 | isRelic | Boolean! | Required. Supported in v5.0+ |
 | isReplicationEnabled | Boolean! | Required. Supported in v5.0+ |
+| isVmServiceVm | Boolean | Supported in v9.7 Specifies whether the virtual machine is managed by a vSphere Supervisor. |
 | moid | String! | Required. Supported in v5.0+ |
 | parentAppInfo | [ParentAppInfo](ParentAppInfo.md) | Supported in v5.0+ Configuration information for the vApp that manages a specified virtual machine. |
 | powerStatus | String | Supported in v5.0+ The power status of VM(ON,OFF,SLEEP etc.). |
@@ -30,6 +31,7 @@ Supported in v5.0+
 | toolsInstalled | Boolean | Supported in v5.0+ |
 | vcenterId | String | Supported in v5.0+ |
 | vmwareToolsInstalled | Boolean! | Required. Supported in v5.0+ |
+| vsphereNamespaceId | String | Supported in v9.7 The ID of the vSphere Namespace that a Supervisor-managed virtual machine belongs to. Absent for other virtual machines. |
 
 ## Used By
 

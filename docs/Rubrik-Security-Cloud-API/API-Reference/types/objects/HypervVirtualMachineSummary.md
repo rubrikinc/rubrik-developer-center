@@ -16,6 +16,7 @@ Supported in v5.0+
 | isRelic | Boolean! | Required. Supported in v5.0+ |
 | name | String! | Required. Supported in v5.0+ |
 | pendingSlaDomain | [ManagedObjectPendingSlaInfo](ManagedObjectPendingSlaInfo.md) | Supported in v5.3+ Describes any pending SLA Domain assignment on this object. |
+| protectionDate | [DateTime](../scalars/DateTime.md) | UTC timestamp for when the Hyper-V virtual machine became protected by its current SLA Domain. Omitted if no SLA Domain has been assigned. The value resets every time the SLA Domain changes, including a reassignment to Unprotected. |
 | snappable | [CdmWorkload](CdmWorkload.md) |  |
 
 ## Used By

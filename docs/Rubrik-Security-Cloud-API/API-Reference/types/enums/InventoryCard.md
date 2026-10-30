@@ -44,6 +44,7 @@ Inventory Card options that the user can select as a workload.
 | LINUX_UNIX_HOSTS_CDM | Inventory Card is Linux Hosts. |
 | M365_BACKUP_STORAGE | Inventory Card is Microsoft 365 Backup Storage. |
 | M365_CONFIGS | Inventory card is Microsoft 365 tenant configurations. |
+| M365_JOURNALING | Inventory card is Microsoft 365 Exchange Journal Vault. |
 | MANAGED_VOLUMES | Inventory Card is Managed Volumes. |
 | MANAGED_VOLUMES_CDM | Inventory Card is Managed Volumes CDM. |
 | MARIADB | Inventory card is MariaDB. |

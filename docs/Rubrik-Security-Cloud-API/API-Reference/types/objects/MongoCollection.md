@@ -2,7 +2,7 @@
 
 Information about MongoDB Collection.
 
-**Implements:** [HierarchyObject](../interfaces/HierarchyObject.md), [CdmHierarchyObject](../interfaces/CdmHierarchyObject.md), [MongoSourceDescendantType](../interfaces/MongoSourceDescendantType.md), [MongoDatabaseDescendantType](../interfaces/MongoDatabaseDescendantType.md), [MongoCollectionSetDescendantType](../interfaces/MongoCollectionSetDescendantType.md), [MongoCollectionSetPhysicalChildType](../interfaces/MongoCollectionSetPhysicalChildType.md)
+**Implements:** [CdmHierarchyObject](../interfaces/CdmHierarchyObject.md), [HierarchyObject](../interfaces/HierarchyObject.md), [MongoSourceDescendantType](../interfaces/MongoSourceDescendantType.md), [MongoDatabaseDescendantType](../interfaces/MongoDatabaseDescendantType.md), [MongoCollectionSetDescendantType](../interfaces/MongoCollectionSetDescendantType.md), [MongoCollectionSetPhysicalChildType](../interfaces/MongoCollectionSetPhysicalChildType.md)
 
 ## Fields
 
@@ -62,19 +62,19 @@ Information about MongoDB Collection.
 | mongoSnapshotConnection | filter | [CdmSnapshotFilterInput](../inputs/CdmSnapshotFilterInput.md) | Filter snapshot connection. |
 | mongoSnapshotConnection | sortBy | [CdmSnapshotSortByEnum](../enums/CdmSnapshotSortByEnum.md) | Sorts snapshots by field. |
 | mongoSnapshotConnection | sortOrder | [SortOrder](../enums/SortOrder.md) | Sorts the order of results. |
-| mongoSnapshotConnection | timezone | [Timezone](../scalars/Timezone.md) | Time zone identifier string. For example, 'America/Los_Angeles' is used for the U.S. Pacific Time zone. |
+| mongoSnapshotConnection | timezone | [Timezone](../scalars/Timezone.md) | Time zone identifier string. |
 | mongoSnapshotGroupByConnection | first | Int | Returns the first n elements from the list. |
 | mongoSnapshotGroupByConnection | after | String | An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results. |
 | mongoSnapshotGroupByConnection | last | Int | Returns the last n elements from the list. |
 | mongoSnapshotGroupByConnection | before | String | An opaque cursor returned from a previous query's startCursor field. Pass this value verbatim to retrieve the previous page of results. |
-| mongoSnapshotGroupByConnection | timezoneOffset | Float | Offset based on the customer timezone. |
 | mongoSnapshotGroupByConnection | filter | [CdmSnapshotFilterInput](../inputs/CdmSnapshotFilterInput.md) | Filter snapshot connection. |
 | mongoSnapshotGroupByConnection | groupBy *(required)* | [MongoSnapshotGroupByTime](../enums/MongoSnapshotGroupByTime.md)! | Groups MongoDB Snapshots by field. |
-| mongoSnapshotGroupByConnection | timezone | [Timezone](../scalars/Timezone.md) | Time zone identifier string. For example, 'America/Los_Angeles' is used for the U.S. Pacific Time zone. |
+| mongoSnapshotGroupByConnection | timezoneOffset | Float | Offset based on the customer timezone. |
+| mongoSnapshotGroupByConnection | timezone | [Timezone](../scalars/Timezone.md) | Time zone identifier string. |
 | numWorkloadDescendants | first | Int | Returns the first n elements from the list. |
-| numWorkloadDescendants | after | String | An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results. |
+| numWorkloadDescendants | after | String | Returns the elements in the list that occur after the specified cursor. |
 | numWorkloadDescendants | last | Int | Returns the last n elements from the list. |
-| numWorkloadDescendants | before | String | An opaque cursor returned from a previous query's startCursor field. Pass this value verbatim to retrieve the previous page of results. |
+| numWorkloadDescendants | before | String | Returns the elements in the list that occur before the specified cursor. |
 | numWorkloadDescendants | objectTypes | [[ManagedObjectType](../enums/ManagedObjectType.md)!] | Types of objects to limit the results. If absent, all object types are returned. |
 
 ## Used By

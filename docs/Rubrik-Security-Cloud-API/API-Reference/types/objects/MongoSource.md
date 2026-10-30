@@ -2,7 +2,7 @@
 
 Information about MongoDB Source.
 
-**Implements:** [HierarchyObject](../interfaces/HierarchyObject.md), [CdmHierarchySnappableNew](../interfaces/CdmHierarchySnappableNew.md), [CdmHierarchyObject](../interfaces/CdmHierarchyObject.md)
+**Implements:** [CdmHierarchySnappableNew](../interfaces/CdmHierarchySnappableNew.md), [HierarchySnappable](../interfaces/HierarchySnappable.md), [HierarchyObject](../interfaces/HierarchyObject.md), [CdmHierarchyObject](../interfaces/CdmHierarchyObject.md)
 
 ## Fields
 
@@ -13,10 +13,10 @@ Information about MongoDB Source.
 | allTags | [[AssignedRscTag](AssignedRscTag.md)!]! | RSC tags to which this hierarchy object is assigned. |
 | authorizedOperations | [[Operation](../enums/Operation.md)!]! | The authorized operations on the object. |
 | caCertificateId | [UUID](../scalars/UUID.md) | Certificate ID referencing the certificate imported by using Rubrik's certificate management framework. |
-| cdmId | String! | CDM ID of the MongoDB source. |
+| cdmId | String! | The ID of the workload on the Rubrik cluster. |
 | cdmLink | String! | A link to view the workload on the Rubrik cluster. For dev use only. |
 | cdmPendingObjectPauseAssignment | [PendingObjectPauseAssignmentStatus](../enums/PendingObjectPauseAssignmentStatus.md) | Object pause pending assignment details for CDM objects. |
-| cluster | [Cluster](Cluster.md)! | Information about CDM cluster for this MongoDB cluster. |
+| cluster | [Cluster](Cluster.md)! | The Rubrik cluster from which this workload originated. |
 | clusterUuid | [UUID](../scalars/UUID.md)! | UUID of the CDM cluster. |
 | configuredSlaDomain | [SlaDomain](../interfaces/SlaDomain.md)! | SLA Domain configured for the hierarchy object. |
 | crossAccountReplicatedObjectInfos | [[CrossAccountReplicatedObjectInfo](CrossAccountReplicatedObjectInfo.md)!] | Cross-account objects either replicated by this object or related to this object by replication. |
@@ -56,8 +56,9 @@ Information about MongoDB Source.
 | physicalChildConnection | [MongoSourcePhysicalChildTypeConnection](MongoSourcePhysicalChildTypeConnection.md)! | List of physical children. |
 | physicalPath | [[PathNode](PathNode.md)!]! | Sequential list of the physical ancestors of this object. |
 | primaryClusterLocation | [DataLocation](DataLocation.md)! | The source cluster of this object. Returned as a data location because there is no guarantee that Rubrik has knowledge about the source cluster. |
-| primaryClusterUuid | [UUID](../scalars/UUID.md)! | IP of the MongoDB source. |
+| primaryClusterUuid | [UUID](../scalars/UUID.md)! | UUID of the primary Rubrik cluster for this MongoDB source. |
 | protectedCollectionCount | Int! | Count of protected collections for this MongoDB source. |
+| replicaSetMembers | [[CdmMongoNode](CdmMongoNode.md)!]! | MongoDB processes of the source, one entry per mongod, including config server replica set members. Excludes arbiters, ignored and removed members, mongos routers, and members whose host has no live Rubrik agent. |
 | replicatedObjectCount | Int! | The number of objects either replicated by this object or related to this object by replication. |
 | replicatedObjects | [[CdmHierarchyObject](../interfaces/CdmHierarchyObject.md)!]! | Objects either replicated by this object or related to this object by replication. |
 | securityMetadata | [SecurityMetadata](SecurityMetadata.md) | Security posture metadata. |
@@ -78,61 +79,69 @@ Information about MongoDB Source.
 
 | Field | Argument | Type | Description |
 |-------|----------|------|-------------|
+| dataHosts | first | Int | Returns the first n elements from the list. |
+| dataHosts | after | String | An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results. |
+| dataHosts | last | Int | Returns the last n elements from the list. |
+| dataHosts | before | String | An opaque cursor returned from a previous query's startCursor field. Pass this value verbatim to retrieve the previous page of results. |
 | dataHosts | sortBy | [HierarchySortByField](../enums/HierarchySortByField.md) | Sort hierarchy objects according to the hierarchy field. |
 | dataHosts | sortOrder | [SortOrder](../enums/SortOrder.md) | Sorts the order of results. |
 | dataHosts | filter | [[Filter](../inputs/Filter.md)!] | Hierarchy object filter. |
 | descendantConnection | first | Int | Returns the first n elements from the list. |
 | descendantConnection | after | String | An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results. |
+| descendantConnection | last | Int | Returns the last n elements from the list. |
+| descendantConnection | before | String | An opaque cursor returned from a previous query's startCursor field. Pass this value verbatim to retrieve the previous page of results. |
 | descendantConnection | sortBy | [HierarchySortByField](../enums/HierarchySortByField.md) | Sort hierarchy objects according to the hierarchy field. |
 | descendantConnection | sortOrder | [SortOrder](../enums/SortOrder.md) | Sorts the order of results. |
 | descendantConnection | typeFilter | [[HierarchyObjectTypeEnum](../enums/HierarchyObjectTypeEnum.md)!] | Types of objects to include. |
 | descendantConnection | filter | [[Filter](../inputs/Filter.md)!] | Hierarchy object filter. |
 | descendantConnection | workloadHierarchy | [WorkloadLevelHierarchy](../enums/WorkloadLevelHierarchy.md) | Each enumeration value represents the hierarchy of a specific workload type for RBAC and SLA Domain assignments.  A value of 'None' represents the hierarchy of all workload types. |
 | missedSnapshotConnection | first | Int | Returns the first n elements from the list. |
-| missedSnapshotConnection | after | String | An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results. |
+| missedSnapshotConnection | after | String | Returns the elements in the list that occur after the specified cursor. |
 | missedSnapshotConnection | last | Int | Returns the last n elements from the list. |
-| missedSnapshotConnection | before | String | An opaque cursor returned from a previous query's startCursor field. Pass this value verbatim to retrieve the previous page of results. |
+| missedSnapshotConnection | before | String | Returns the elements in the list that occur before the specified cursor. |
 | missedSnapshotConnection | filter | [MissedSnapshotFilterInput](../inputs/MissedSnapshotFilterInput.md) | Filter missed snapshots by date. |
 | missedSnapshotGroupByConnection | first | Int | Returns the first n elements from the list. |
-| missedSnapshotGroupByConnection | after | String | An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results. |
+| missedSnapshotGroupByConnection | after | String | Returns the elements in the list that occur after the specified cursor. |
 | missedSnapshotGroupByConnection | last | Int | Returns the last n elements from the list. |
-| missedSnapshotGroupByConnection | before | String | An opaque cursor returned from a previous query's startCursor field. Pass this value verbatim to retrieve the previous page of results. |
+| missedSnapshotGroupByConnection | before | String | Returns the elements in the list that occur before the specified cursor. |
 | missedSnapshotGroupByConnection | filter | [MissedSnapshotFilterInput](../inputs/MissedSnapshotFilterInput.md) | Filter missed snapshots by date. |
 | missedSnapshotGroupByConnection | groupBy *(required)* | [MissedSnapshotGroupByTime](../enums/MissedSnapshotGroupByTime.md)! | Group snapshots by field. |
 | missedSnapshotGroupByConnection | timezoneOffset | Float | Offset based on the customer timezone. |
 | missedSnapshotGroupByConnection | timezone | [Timezone](../scalars/Timezone.md) | Time zone identifier string. For example, 'America/Los_Angeles' is used for the U.S. Pacific Time zone. |
 | newestSnapshot | beforeTime | [DateTime](../scalars/DateTime.md) | Specifies the time at which or before the snapshot was taken. |
 | numWorkloadDescendants | first | Int | Returns the first n elements from the list. |
-| numWorkloadDescendants | after | String | An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results. |
+| numWorkloadDescendants | after | String | Returns the elements in the list that occur after the specified cursor. |
 | numWorkloadDescendants | last | Int | Returns the last n elements from the list. |
-| numWorkloadDescendants | before | String | An opaque cursor returned from a previous query's startCursor field. Pass this value verbatim to retrieve the previous page of results. |
+| numWorkloadDescendants | before | String | Returns the elements in the list that occur before the specified cursor. |
 | numWorkloadDescendants | objectTypes | [[ManagedObjectType](../enums/ManagedObjectType.md)!] | Types of objects to limit the results. If absent, all object types are returned. |
 | physicalChildConnection | first | Int | Returns the first n elements from the list. |
 | physicalChildConnection | after | String | An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results. |
+| physicalChildConnection | last | Int | Returns the last n elements from the list. |
+| physicalChildConnection | before | String | An opaque cursor returned from a previous query's startCursor field. Pass this value verbatim to retrieve the previous page of results. |
 | physicalChildConnection | sortBy | [HierarchySortByField](../enums/HierarchySortByField.md) | Sort hierarchy objects according to the hierarchy field. |
 | physicalChildConnection | sortOrder | [SortOrder](../enums/SortOrder.md) | Sorts the order of results. |
 | physicalChildConnection | typeFilter | [[HierarchyObjectTypeEnum](../enums/HierarchyObjectTypeEnum.md)!] | Types of objects to include. |
 | physicalChildConnection | filter | [[Filter](../inputs/Filter.md)!] | Hierarchy object filter. |
 | physicalChildConnection | workloadHierarchy | [WorkloadLevelHierarchy](../enums/WorkloadLevelHierarchy.md) | Each enumeration value represents the hierarchy of a specific workload type for RBAC and SLA Domain assignments.  A value of 'None' represents the hierarchy of all workload types. |
 | snapshotConnection | first | Int | Returns the first n elements from the list. |
-| snapshotConnection | after | String | An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results. |
+| snapshotConnection | after | String | Returns the elements in the list that occur after the specified cursor. |
 | snapshotConnection | last | Int | Returns the last n elements from the list. |
-| snapshotConnection | before | String | An opaque cursor returned from a previous query's startCursor field. Pass this value verbatim to retrieve the previous page of results. |
+| snapshotConnection | before | String | Returns the elements in the list that occur before the specified cursor. |
 | snapshotConnection | filter | [CdmSnapshotFilterInput](../inputs/CdmSnapshotFilterInput.md) | Filter snapshot connection. |
 | snapshotConnection | sortBy | [CdmSnapshotSortByEnum](../enums/CdmSnapshotSortByEnum.md) | Sorts snapshots by field. |
 | snapshotConnection | sortOrder | [SortOrder](../enums/SortOrder.md) | Sorts the order of results. |
 | snapshotGroupByConnection | first | Int | Returns the first n elements from the list. |
-| snapshotGroupByConnection | after | String | An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results. |
+| snapshotGroupByConnection | after | String | Returns the elements in the list that occur after the specified cursor. |
 | snapshotGroupByConnection | last | Int | Returns the last n elements from the list. |
-| snapshotGroupByConnection | before | String | An opaque cursor returned from a previous query's startCursor field. Pass this value verbatim to retrieve the previous page of results. |
+| snapshotGroupByConnection | before | String | Returns the elements in the list that occur before the specified cursor. |
 | snapshotGroupByConnection | timezoneOffset | Float | Offset based on the customer timezone. |
 | snapshotGroupByConnection | filter | [CdmSnapshotFilterInput](../inputs/CdmSnapshotFilterInput.md) | Filter snapshot connection. |
 | snapshotGroupByConnection | groupBy *(required)* | [CdmSnapshotGroupByEnum](../enums/CdmSnapshotGroupByEnum.md)! | Groups snapshots by field. |
 | snapshotGroupByConnection | timezone | [Timezone](../scalars/Timezone.md) | Time zone identifier string. For example, 'America/Los_Angeles' is used for the U.S. Pacific Time zone. |
 | snapshotGroupBySummary | first | Int | Returns the first n elements from the list. |
-| snapshotGroupBySummary | after | String | An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results. |
+| snapshotGroupBySummary | after | String | Returns the elements in the list that occur after the specified cursor. |
 | snapshotGroupBySummary | last | Int | Returns the last n elements from the list. |
-| snapshotGroupBySummary | before | String | An opaque cursor returned from a previous query's startCursor field. Pass this value verbatim to retrieve the previous page of results. |
+| snapshotGroupBySummary | before | String | Returns the elements in the list that occur before the specified cursor. |
 | snapshotGroupBySummary | timezoneOffset | Float | Offset based on the customer timezone. |
 | snapshotGroupBySummary | timezone | [Timezone](../scalars/Timezone.md) | Time zone identifier string. For example, 'America/Los_Angeles' is used for the U.S. Pacific Time zone. |
 | snapshotGroupBySummary | filter | [CdmSnapshotFilterInput](../inputs/CdmSnapshotFilterInput.md) | Filter snapshot connection. |

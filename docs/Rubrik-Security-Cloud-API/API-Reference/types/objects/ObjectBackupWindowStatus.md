@@ -19,7 +19,14 @@ Represents the object-level backup window status of a hierarchy object.
 - [ActiveDirectoryDomainController.objectBackupWindow](ActiveDirectoryDomainController.md)
 - ActiveDirectoryDomainDescendantType.objectBackupWindow
 - ActiveDirectoryDomainPhysicalChildType.objectBackupWindow
+- [ActiveDirectoryForest.objectBackupWindow](ActiveDirectoryForest.md)
+- ActiveDirectoryForestDescendantType.objectBackupWindow
+- ActiveDirectoryForestPhysicalChildType.objectBackupWindow
+- [AnthropicChildOrg.objectBackupWindow](AnthropicChildOrg.md)
+- [AnthropicClaudeChatWorkload.objectBackupWindow](AnthropicClaudeChatWorkload.md)
 - [AnthropicOrg.objectBackupWindow](AnthropicOrg.md)
+- [AnthropicOrgSetting.objectBackupWindow](AnthropicOrgSetting.md)
+- [AnthropicUser.objectBackupWindow](AnthropicUser.md)
 - [AtlassianSite.objectBackupWindow](AtlassianSite.md)
 - [AwsNativeAccount.objectBackupWindow](AwsNativeAccount.md)
 - AwsNativeAccountDescendantType.objectBackupWindow
@@ -38,11 +45,4 @@ Represents the object-level backup window status of a hierarchy object.
 - [AzureCosmosNosqlDatabase.objectBackupWindow](AzureCosmosNosqlDatabase.md)
 - [AzureDevOpsOrganization.objectBackupWindow](AzureDevOpsOrganization.md)
 - [AzureDevOpsProject.objectBackupWindow](AzureDevOpsProject.md)
-- [AzureDevOpsRepository.objectBackupWindow](AzureDevOpsRepository.md)
-- AzureNativeHierarchyObjectType.objectBackupWindow
-- [AzureNativeManagedDisk.objectBackupWindow](AzureNativeManagedDisk.md)
-- [AzureNativeRegionManagedObject.objectBackupWindow](AzureNativeRegionManagedObject.md)
-- [AzureNativeResourceGroup.objectBackupWindow](AzureNativeResourceGroup.md)
-- [AzureNativeResourceGroupBase.objectBackupWindow](AzureNativeResourceGroupBase.md)
-- [AzureNativeSubscription.objectBackupWindow](AzureNativeSubscription.md)
-- *…and 332 more*
+- *…and 377 more*

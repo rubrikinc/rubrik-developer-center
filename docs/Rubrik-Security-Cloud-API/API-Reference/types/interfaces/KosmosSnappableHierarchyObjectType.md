@@ -110,5 +110,6 @@ A Kosmos snappable object in the Hierarchy.
 
 - [InformixInstance](../objects/InformixInstance.md)
 - [IrisdbInstance](../objects/IrisdbInstance.md)
+- [MariadbInstance](../objects/MariadbInstance.md)
 - [MysqldbInstance](../objects/MysqldbInstance.md)
 - [PostgreSQLDbCluster](../objects/PostgreSQLDbCluster.md)

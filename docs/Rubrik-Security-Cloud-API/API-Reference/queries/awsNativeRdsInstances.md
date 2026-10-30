@@ -1,6 +1,6 @@
 # awsNativeRdsInstances
 
-Paginated list of AWS RDS Instances on AWS Native account.
+Lists the AWS Native RDS instances under the AWS-native hierarchy root.
 
 ## Arguments
 
@@ -10,10 +10,10 @@ Paginated list of AWS RDS Instances on AWS Native account.
 | after | String | An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results. |
 | last | Int | Returns the last n elements from the list. |
 | before | String | An opaque cursor returned from a previous query's startCursor field. Pass this value verbatim to retrieve the previous page of results. |
-| sortBy | [AwsNativeRdsInstanceSortFields](../types/enums/AwsNativeRdsInstanceSortFields.md) | Sort fields for list of AWS RDS instances. |
-| sortOrder | [SortOrder](../types/enums/SortOrder.md) | Sorts the order of results. |
-| rdsInstanceFilters | [AwsNativeRdsInstanceFilters](../types/inputs/AwsNativeRdsInstanceFilters.md) | Filter for RDS instances. |
-| includeSecurityMetadata | Boolean | Filter to include the security metadata. |
+| sortBy | [AwsNativeRdsInstanceSortFields](../types/enums/AwsNativeRdsInstanceSortFields.md) | Field of the RDS instance to order the results by. Defaults to the instance name. |
+| sortOrder | [SortOrder](../types/enums/SortOrder.md) | Direction the results are ordered in. Defaults to ascending. |
+| rdsInstanceFilters | [AwsNativeRdsInstanceFilters](../types/inputs/AwsNativeRdsInstanceFilters.md) | Narrows the results to the RDS instances matching every filter supplied. Unset returns all non-relic instances. |
+| includeSecurityMetadata | Boolean | Whether to include each object's security metadata in the response. |
 
 ## Returns
 

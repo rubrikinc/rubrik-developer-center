@@ -1,6 +1,6 @@
 # awsNativeRoot
 
-Root of AWS native hierarchy.
+Returns the root of the AWS Native hierarchy.
 
 ## Returns
 

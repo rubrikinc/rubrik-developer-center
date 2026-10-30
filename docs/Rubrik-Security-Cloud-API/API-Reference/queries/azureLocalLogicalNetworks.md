@@ -39,6 +39,10 @@ List logical networks attached to the destination cluster.
           "logicalNetworks": [
             {
               "addressPrefix": "example-string",
+              "dnsServers": [
+                "example-string"
+              ],
+              "gateway": "example-string",
               "id": "example-string",
               "ipv4Type": "DYNAMIC",
               "name": "example-string"

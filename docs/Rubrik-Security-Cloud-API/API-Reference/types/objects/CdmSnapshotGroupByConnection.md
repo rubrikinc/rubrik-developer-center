@@ -16,6 +16,7 @@ Paginated list of CdmSnapshotGroupBy objects. Each page of the results includes 
 **Referenced by**
 
 - [ActiveDirectoryDomainController.snapshotGroupByConnection](ActiveDirectoryDomainController.md)
+- [ActiveDirectoryForest.snapshotGroupByConnection](ActiveDirectoryForest.md)
 - CdmHierarchySnappableNew.snapshotGroupByConnection
 - [Db2Database.snapshotGroupByConnection](Db2Database.md)
 - [ExchangeDatabase.snapshotGroupByConnection](ExchangeDatabase.md)
@@ -29,6 +30,7 @@ Paginated list of CdmSnapshotGroupBy objects. Each page of the results includes 
 - [KubernetesVirtualMachine.snapshotGroupByConnection](KubernetesVirtualMachine.md)
 - [LinuxFileset.snapshotGroupByConnection](LinuxFileset.md)
 - [ManagedVolume.snapshotGroupByConnection](ManagedVolume.md)
+- [MariadbInstance.snapshotGroupByConnection](MariadbInstance.md)
 - [MongoCollectionSet.snapshotGroupByConnection](MongoCollectionSet.md)
 - [MongoSource.snapshotGroupByConnection](MongoSource.md)
 - [MssqlDatabase.snapshotGroupByConnection](MssqlDatabase.md)
@@ -43,6 +45,4 @@ Paginated list of CdmSnapshotGroupBy objects. Each page of the results includes 
 - [PingFederateClusterV1.snapshotGroupByConnection](PingFederateClusterV1.md)
 - [PostgreSQLDbCluster.snapshotGroupByConnection](PostgreSQLDbCluster.md)
 - [ProxmoxVirtualMachineV1.snapshotGroupByConnection](ProxmoxVirtualMachineV1.md)
-- [PureStorageProtectionGroupV1.snapshotGroupByConnection](PureStorageProtectionGroupV1.md)
-- [PureStorageVolumeV1.snapshotGroupByConnection](PureStorageVolumeV1.md)
-- *…and 8 more*
+- *…and 10 more*

@@ -4,9 +4,9 @@ This document lists all deprecated fields, queries, mutations, and enum values i
 
 ## Deprecated Fields
 
-*Extracted from schema: 20261012.graphql*
+*Extracted from schema: 20261026.graphql*
 
-**Total deprecated items: 311**
+**Total deprecated items: 350**
 
 ### Deprecated Query Fields
 
@@ -78,6 +78,7 @@ This document lists all deprecated fields, queries, mutations, and enum values i
 - **`updateCertificate`**: Deprecated. Use updateGlobalCertificate instead.
 - **`updateIpWhitelist`**: use `setIpWhitelistSetting` to update the mode, or `update/add/deleteIpWhitelistEntries` to update entries instead.
 - **`updateManagedIdentities`**: Use updateManagedIdentitiesAsync instead.
+- **`updateMssqlLogShippingConfigurationV1`**: Use updateMssqlLogShippingConfiguration instead.
 - **`updateRcsAutomaticTargetMapping`**: This mutation is deprecated. Please use updateRcvLocationsFromTemplate.
 - **`updateRole`**: This endpoint is deprecated.
 - **`updateWebhook`**: Use updateWebhookV2 instead.
@@ -154,6 +155,10 @@ This document lists all deprecated fields, queries, mutations, and enum values i
 #### AwsNativeS3Bucket
 
 - **`awsNativeAccount`**: Deprecated, use awsAccount instead.
+
+#### AwsPermissionDiff
+
+- **`unresolvedFeatures`**: Use the NOT_AVAILABLE entries instead.
 
 #### AzureAdDirectory
 
@@ -350,6 +355,10 @@ This document lists all deprecated fields, queries, mutations, and enum values i
 
 - **`gcpNativeProjectDetails`**: Deprecated, use gcpProjectDetails instead.
 
+#### GcpNativeCloudSqlSpecificSnapshot
+
+- **`kmsKey`**: Use encryptionKey instead.
+
 #### GcpNativeDisk
 
 - **`gcpNativeProject`**: Deprecated, use `gcpProject` instead.
@@ -461,6 +470,10 @@ This document lists all deprecated fields, queries, mutations, and enum values i
 
 - **`supportedDbEngineVersions`**: Use availableDbEngineVersions instead.
 
+#### RecoveryPlansInfo
+
+- **`recoveryType`**: Use recoveryPlanType instead.
+
 #### RemediationMetadata
 
 - **`policyViolationId`**: Use targets instead.
@@ -565,6 +578,10 @@ This document lists all deprecated fields, queries, mutations, and enum values i
 
 - **`configs`**: Deprecated in favor of BYOK8s, use exocomputeConfigs instead.
 
+#### Vcd
+
+- **`allVcenterConnectionStatuses`**: Use allVcenterConnectionsInfo instead.
+
 #### VsphereComputeCluster
 
 - **`hasDatastoresForRecovery`**: Use recoveryTargetDescendantConnection field directly instead
@@ -589,12 +606,13 @@ This document lists all deprecated fields, queries, mutations, and enum values i
 - **`ACTIVE_DIRECTORY_FOREST_RECOVERY_TABLE`**: Use EVENT_SERIES_BY_CLUSTER_TYPE_TABLE.
 - **`ACTIVE_DIRECTORY_FOREST_RECOVERY_TABLE`**: Use EVENT_SERIES_BY_OBJECT_TYPE_TABLE.
 - **`ACTIVE_DIRECTORY_FOREST_RECOVERY_TABLE`**: Use EVENT_SERIES_BY_TIME_TABLE.
-- **`ANTHROPIC_APPS`**: Use ANTHROPIC_APPS instead.
 - **`ARCHIVAL`**: Use `CLOUD_NATIVE_CONFIG_PROTECTION` instead.
 - **`ARCHIVAL_LOCATION_DELETE`**: Nothing creates this type; it will be removed in a future release.
 - **`ARCHIVAL_LOCATION_DELETE`**: Nothing creates this type; it will be removed in a future release.
 - **`ARCHIVAL_LOCATION_DELETE`**: Nothing creates this type; it will be removed in a future release.
 - **`ARCHIVAL_LOCATION_DELETE`**: Nothing creates this type; it will be removed in a future release.
+- **`ASSIGN_KMS_KEY_VAULT`**: Legacy deprecated operation. No longer used in any RSC APIs.
+- **`ASSIGN_KMS_KEY_VAULT`**: Legacy deprecated operation. No longer used in any RSC APIs.
 - **`AUDIT_LIST`**: Use BACKUP_STRIKES_V2 instead.
 - **`AUDIT_LIST`**: Use LATEST_GLOBAL_OBJECTS instead.
 - **`AWS_IAM_CUSTOMER_ACCOUNT_UPSERT`**: Nothing creates this type; it will be removed in a future release.
@@ -605,12 +623,18 @@ This document lists all deprecated fields, queries, mutations, and enum values i
 - **`AZURE_DEVOPS_REPOSITORY_PROTECTION`**: Use `LAMINAR_TARGET_APPLICATION` instead.
 - **`AZURE_DEVOPS_REPOSITORY_PROTECTION`**: Use `LAMINAR_TARGET_MANAGED_IDENTITY` instead.
 - **`AZURE_DEVOPS_REPO_SIZE`**: This field is deprecated and no longer used.
+- **`AZURE_DISK_SIZE`**: Use AZURE_DISK_CRG_SUBSCRIPTION_ID instead.
+- **`AZURE_VM_SIZE`**: Use AZURE_VM_CRG_SUBSCRIPTION_ID instead.
 - **`CATEGORY_UNSPECIFIED`**: Use AUTHENTICATION_AND_SECRET_MANAGEMENT instead.
 - **`CLOUDDIRECT_NAS_NAMESPACE_VENDOR_TYPE`**: Not implemented - no longer used.
 - **`CLOUD_ACCOUNT_UPDATE`**: Use CLUSTER_PEER_TOKEN_GET_AND_SET instead. Removed 2027/09/28.
 - **`CLOUD_DIRECT`**: Nothing returns this sync type; it will be removed in a future release.
 - **`CLUSTER_DISCONNECTED`**: This reason is no longer used.
 - **`COLDLINE_GCP`**: Use STANDARD_GCP instead.
+- **`DELETE_GCP_CLOUD_ACCOUNT`**: Legacy deprecated operation. No longer used in any RSC APIs.
+- **`DELETE_GCP_CLOUD_ACCOUNT`**: Legacy deprecated operation. No longer used in any RSC APIs.
+- **`DELETE_REPORT`**: Legacy deprecated operation. No longer used in any RSC APIs.
+- **`DELETE_REPORT`**: Legacy deprecated operation. No longer used in any RSC APIs.
 - **`DIRECT_REPORT`**: The SsoPolicyExtension relationship has been removed.
 - **`DNS_SERVERS_CHECK`**: Use CLUSTER_NAME_LENGTH_CHECK instead.
 - **`DOMAIN_HAS_FOREST`**: Use EBS_VOLUME_NAME_OR_VOLUME_ID instead.
@@ -619,12 +643,22 @@ This document lists all deprecated fields, queries, mutations, and enum values i
 - **`EC2_INSTANCE`**: Use UNIFIED_ENCRYPTION_MANAGEMENT instead.
 - **`EC2_INSTANCE`**: Use UNIFIED_ENCRYPTION_MANAGEMENT instead.
 - **`EC2_INSTANCE_INDEXING_STATUS`**: Use EC2_INSTANCE_NAME_OR_INSTANCE_ID instead.
+- **`EDIT_REPLICATION_SETTINGS`**: Legacy deprecated operation. No longer used in any RSC APIs.
+- **`EDIT_REPLICATION_SETTINGS`**: Legacy deprecated operation. No longer used in any RSC APIs.
+- **`EDIT_SYSTEM_PREFERENCE`**: Legacy deprecated operation. No longer used in any RSC APIs.
+- **`EDIT_SYSTEM_PREFERENCE`**: Legacy deprecated operation. No longer used in any RSC APIs.
+- **`EDIT_SYSTEM_PREFERENCE`**: Legacy deprecated operation. No longer used in any RSC APIs.
+- **`EDIT_SYS_PREFERENCE`**: Legacy deprecated operation. No longer used in any RSC APIs.
+- **`EDIT_SYS_PREFERENCE`**: Legacy deprecated operation. No longer used in any RSC APIs.
+- **`EDIT_SYS_PREFERENCE`**: Legacy deprecated operation. No longer used in any RSC APIs.
 - **`EXCESSIVE_IDENTITY_RIGHTS`**: Use CATEGORY_UNSPECIFIED instead.
 - **`EXOCOMPUTE_EKS_LAMBDA_ROLE_ARN`**: Instance profile corresponds to worker node in an EKS\ncluster, please use EXOCOMPUTE_EKS_WORKERNODE_INSTANCE_PROFILE\ninstead.
 - **`EXTERNAL_CDM_LOCATION_ID`**: Archived locations should not be queried for.
 - **`EXTERNAL_CDM_LOCATION_ID`**: We do not use archival groups currently.
 - **`EXTERNAL_CDM_LOCATION_ID`**: We do not use archival groups currently.
 - **`FSXN`**: Use specific vendor types instead of GENERIC
+- **`GRANULAR_RECOVERY`**: Legacy deprecated operation. No longer used in any RSC APIs.
+- **`GRANULAR_RECOVERY`**: Legacy deprecated operation. No longer used in any RSC APIs.
 - **`HYPERV_VM_SNAPSHOT`**: Hyper-V VM poller is no longer used.
 - **`IDENTITY_PROVIDER_SECURITY`**: Use CATEGORY_UNSPECIFIED instead.
 - **`IDENTITY_PROVIDER_SECURITY`**: Use IDENTITY_HYGIENE instead.
@@ -636,6 +670,10 @@ This document lists all deprecated fields, queries, mutations, and enum values i
 - **`ISILON`**: Use FSXN (AWS FSx for NetApp ONTAP) or other specific vendor types instead of NETAPP.
 - **`IS_ARCHIVAL_COPY`**: A snapshot can potentially be uploaded to multiple archival locations. This field does not give the archival status of the snapshot - whether it is uploaded to all the archival locations or partially uploaded to a few locations. Hence, this filter field is deprecated and would be removed subsequently. Please use a combination of ARCHIVAL_LOCATION_IDS and SOURCE_SNAPSHOT_IDS fields instead.
 - **`IS_GHOST`**: Not implemented - no longer used.
+- **`MANAGE_AUTO_QUARANTINE`**: Superseded by ManageCdmUser. Runtime checks still accept this permission during the transition period.
+- **`MANAGE_AUTO_QUARANTINE`**: Superseded by ManageCdmUser. Runtime checks still accept this permission during the transition period.
+- **`MODIFY_REPORT`**: Legacy deprecated operation. No longer used in any RSC APIs.
+- **`MODIFY_REPORT`**: Legacy deprecated operation. No longer used in any RSC APIs.
 - **`MONGO_DATABASE`**: MONGO_DB is deprecated and no longer used.
 - **`NF_ANOMALIES`**: Use OBJECT_PROTECTION_AUDIT_DETAIL instead.
 - **`NF_ANOMALIES`**: Use OBJECT_PROTECTION_AUDIT_LIST instead.
@@ -647,6 +685,8 @@ This document lists all deprecated fields, queries, mutations, and enum values i
 - **`PURE_STORAGE_VOLUME`**: RECOVERY_PLAN is deprecated and no longer used.
 - **`RDS_AWS_NATIVE_ACCOUNT_ID`**: There is no concept of SLA ID on a snapshot. SLA is assigned to an object and snapshots are taken based on the configuration of the SLA Domain at that point of time. However, SLA configurations may change at a later point in time, without reflecting the change on the snapshot, if not retroactively assigned. Hence, this filter field is deprecated and would be removed subsequently.
 - **`REMEDIATION_TYPE_IDP_EVENT_REVERT`**: Use REMEDIATION_TYPE_REMEDIATE_ENTRA_ID_RISK instead.
+- **`RESIZE_MANAGED_VOLUME`**: Legacy deprecated operation. No longer used in any RSC APIs.
+- **`RESIZE_MANAGED_VOLUME`**: Legacy deprecated operation. No longer used in any RSC APIs.
 - **`SAASAPPS_IS_HIDDEN`**: use `SAASAPPS_ORGANIZATION_SCOPE` instead.
 - **`SECURITY_IDENTITY_DEPARTMENT`**: Use SECURITY_IDENTITY_DIRECT_DESCENDANT_COUNT instead.
 - **`SECURITY_IDENTITY_EVENT_DC_NAME`**: Use SECURITY_IDENTITY_EVENT_POLICY_INSIGHTS instead.
@@ -654,8 +694,19 @@ This document lists all deprecated fields, queries, mutations, and enum values i
 - **`SIGNIN_LOGS`**: Use SLA_AUDIT_DETAIL_NG instead.
 - **`SLA_AUDIT_DETAIL_NG`**: Use SLA_AUDIT_LIST_NG instead.
 - **`SLA_AUDIT_LIST_NG`**: Use LATEST_GLOBAL_OBJECTS instead.
+- **`SOUTHAMERICA_WEST1`**: Do not use. Specify a valid GCP region instead.
 - **`SSO_POLICY_APPLIES_TO`**: The SSO Policy Extension relationship has been removed.
 - **`TOP_LEVEL_SITES_OF_O365_ORG`**: Not implemented - no longer used.
 - **`UEKM_RSA_BASED`**: Use UEKM_RSA_BASED or UEKM_AWS_KMS_BASED.
+- **`VIEW_AZURE_CLOUD_ACCOUNT`**: Superseded by ViewCdmUser. Runtime checks still accept this permission during the transition period.
+- **`VIEW_AZURE_CLOUD_ACCOUNT`**: Superseded by ViewCdmUser. Runtime checks still accept this permission during the transition period.
+- **`VIEW_CROSS_ACCOUNT_PAIR`**: Legacy deprecated operation. No longer used in any RSC APIs.
+- **`VIEW_CROSS_ACCOUNT_PAIR`**: Legacy deprecated operation. No longer used in any RSC APIs.
+- **`VIEW_DATA_SECURITY_DETAILS`**: Legacy deprecated operation. No longer used in any RSC APIs.
+- **`VIEW_DATA_SECURITY_DETAILS`**: Legacy deprecated operation. No longer used in any RSC APIs.
+- **`VIEW_SECURITY_POLICY`**: Legacy deprecated operation. No longer used in any RSC APIs.
+- **`VIEW_SECURITY_POLICY`**: Legacy deprecated operation. No longer used in any RSC APIs.
+- **`VIEW_USER`**: Legacy deprecated operation. No longer used in any RSC APIs.
+- **`VIEW_USER`**: Legacy deprecated operation. No longer used in any RSC APIs.
 - **`VSPHERE_RESTORE_FILE_TO_VM`**: VSphere snapshot poller is no longer used.
 - **`resourceGroup`**: Deprecated, use azureResourceGroup instead.

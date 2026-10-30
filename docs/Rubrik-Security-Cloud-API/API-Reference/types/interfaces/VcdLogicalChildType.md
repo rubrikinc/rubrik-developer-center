@@ -50,5 +50,8 @@ A logical child of a vCD instance.
 
 ## Implemented By
 
+- [VcdCatalog](../objects/VcdCatalog.md)
 - [VcdOrg](../objects/VcdOrg.md)
+- [VcdOrgVdc](../objects/VcdOrgVdc.md)
+- [VcdVimServer](../objects/VcdVimServer.md)
 - [VsphereVm](../objects/VsphereVm.md)

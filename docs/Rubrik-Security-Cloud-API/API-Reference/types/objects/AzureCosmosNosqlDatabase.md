@@ -8,10 +8,13 @@ An Azure Cosmos NoSQL database. Refers to the container namespace within a Cosmo
 
 | Field | Type | Description |
 |-------|------|-------------|
+| accountName | String! | Name of the Azure Cosmos NoSQL account that owns the database. |
 | allOrgs | [[Org](Org.md)!]! | Organizations to which this hierarchy object belongs. |
 | allTags | [[AssignedRscTag](AssignedRscTag.md)!]! | RSC tags to which this hierarchy object is assigned. |
 | authorizedOperations | [[Operation](../enums/Operation.md)!]! | The authorized operations on the object. |
 | autoscaleMaxRuPerSec | Int! | Ceiling for autoscale throughput, in request units per second. Zero when throughputMode is not autoscale. |
+| azureCosmosNosqlContainerCount | Int! | Number of containers in the Azure Cosmos NoSQL database as of the last inventory refresh. |
+| azureResourceGroupDetails | [AzureResourceGroupDetails](AzureResourceGroupDetails.md) | Resource group of the Azure Cosmos NoSQL account that owns the database, including its subscription. |
 | cloudNativeId | String! | Azure resource ID of the Azure Cosmos NoSQL database. |
 | configuredSlaDomain | [SlaDomain](../interfaces/SlaDomain.md)! | SLA Domain configured for the hierarchy object. |
 | cosmosDbAccountId | [UUID](../scalars/UUID.md)! | Rubrik ID of the Azure Cosmos NoSQL account that owns the database. |

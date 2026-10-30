@@ -280,6 +280,7 @@ Represents different types of activity objects.
 | PROXMOX_CLUSTER | Proxmox cluster. |
 | PROXMOX_ENVIRONMENT | Proxmox environment. |
 | PROXMOX_NODE | Proxmox node. |
+| PROXMOX_TAG | Proxmox tag. |
 | PROXMOX_VIRTUAL_MACHINE | Proxmox virtual machine. |
 | PURE_STORAGE_ARRAY | Everpure FlashArray. |
 | PURE_STORAGE_PROTECTION_GROUP | Everpure protection group. |
@@ -311,6 +312,8 @@ Represents different types of activity objects.
 | UnknownObjectType | Unknown object type. |
 | Upgrade | Upgrade. |
 | User | User. |
+| VCF_FLEET | VMware Cloud Foundation (VCF) fleet. An inventory hierarchy level above the VCF instances, not a protectable object. |
+| VCF_INSTANCE | VMware Cloud Foundation (VCF) instance. An inventory hierarchy level between a fleet and its vCenters, not a protectable object. |
 | VMWARE_HOST | VMware host. |
 | Vcd | VCD. |
 | VcdVapp | VCD vApp. |

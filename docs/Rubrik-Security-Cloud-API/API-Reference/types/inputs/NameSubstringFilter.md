@@ -6,4 +6,4 @@ Filter to return objects with a given substring in their name.
 
 | Field | Type | Description |
 |-------|------|-------------|
-| nameSubstring | String! |  |
+| nameSubstring | String! | The substring to filter object names by. |

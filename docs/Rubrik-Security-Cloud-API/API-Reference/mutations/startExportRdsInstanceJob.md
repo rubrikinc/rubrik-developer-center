@@ -1,12 +1,12 @@
 # startExportRdsInstanceJob
 
-Start a job to export RDS Instance. The job creates a new RDS Instance with the same properties as that of the instance that is exported.
+StartExportRdsInstanceJob starts an on-demand export of an RDS or Aurora database, either launching a new RDS instance from a snapshot or a point in time, or writing the snapshot data to a customer S3 bucket.
 
 ## Arguments
 
 | Argument | Type | Description |
 |----------|------|-------------|
-| input *(required)* | [StartExportRdsInstanceJobInput](../types/inputs/StartExportRdsInstanceJobInput.md)! | Input to trigger export AWS native RDS Instance job. |
+| input *(required)* | [StartExportRdsInstanceJobInput](../types/inputs/StartExportRdsInstanceJobInput.md)! | Input for the AWS RDS Instance export job. |
 
 ## Returns
 

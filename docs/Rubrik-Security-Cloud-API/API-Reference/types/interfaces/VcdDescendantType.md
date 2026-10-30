@@ -50,6 +50,9 @@ A descendant of a vCD instance.
 
 ## Implemented By
 
+- [VcdCatalog](../objects/VcdCatalog.md)
 - [VcdOrg](../objects/VcdOrg.md)
+- [VcdOrgVdc](../objects/VcdOrgVdc.md)
 - [VcdVapp](../objects/VcdVapp.md)
+- [VcdVimServer](../objects/VcdVimServer.md)
 - [VsphereVm](../objects/VsphereVm.md)

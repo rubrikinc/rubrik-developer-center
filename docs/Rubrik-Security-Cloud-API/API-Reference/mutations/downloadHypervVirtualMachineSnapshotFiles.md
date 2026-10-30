@@ -6,7 +6,7 @@ Download files from a Hyper-V VM backup  Supported in v5.0+ Start an asynchronou
 
 | Argument | Type | Description |
 |----------|------|-------------|
-| input *(required)* | [DownloadHypervVirtualMachineSnapshotFilesInput](../types/inputs/DownloadHypervVirtualMachineSnapshotFilesInput.md)! | Input for DownloadHypervVMSnapshotFilesRequest. |
+| input *(required)* | [DownloadHypervVirtualMachineSnapshotFilesInput](../types/inputs/DownloadHypervVirtualMachineSnapshotFilesInput.md)! | Input for downloadHypervVirtualMachineSnapshotFiles. |
 
 ## Returns
 

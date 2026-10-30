@@ -27,6 +27,7 @@ Represents the status of a single async job.
 - [mutation: startExportAzureSqlManagedInstanceDbJob](../../mutations/startExportAzureSqlManagedInstanceDbJob.md)
 - [mutation: startExportRdsInstanceJob](../../mutations/startExportRdsInstanceJob.md)
 - [mutation: startRecoverAzureNativeStorageAccountJob](../../mutations/startRecoverAzureNativeStorageAccountJob.md)
+- [mutation: startRecoverDynamoDbSnapshotJob](../../mutations/startRecoverDynamoDbSnapshotJob.md)
 - [mutation: startRecoverS3SnapshotJob](../../mutations/startRecoverS3SnapshotJob.md)
 - [mutation: startRestoreAwsNativeEc2InstanceSnapshotJob](../../mutations/startRestoreAwsNativeEc2InstanceSnapshotJob.md)
 - [mutation: startRestoreAzureNativeVirtualMachineJob](../../mutations/startRestoreAzureNativeVirtualMachineJob.md)

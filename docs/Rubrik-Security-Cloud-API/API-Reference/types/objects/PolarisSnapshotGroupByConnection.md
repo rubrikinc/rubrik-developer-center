@@ -15,6 +15,7 @@ Paginated list of PolarisSnapshotGroupBy objects. Each page of the results inclu
 
 **Referenced by**
 
+- [AnthropicClaudeChatWorkload.snapshotGroupByConnection](AnthropicClaudeChatWorkload.md)
 - [AwsNativeConfig.snapshotGroupByConnection](AwsNativeConfig.md)
 - [AwsNativeDynamoDbTable.snapshotGroupByConnection](AwsNativeDynamoDbTable.md)
 - [AwsNativeEbsVolume.snapshotGroupByConnection](AwsNativeEbsVolume.md)
@@ -31,6 +32,8 @@ Paginated list of PolarisSnapshotGroupBy objects. Each page of the results inclu
 - [AzureSqlDatabaseDb.snapshotGroupByConnection](AzureSqlDatabaseDb.md)
 - [AzureSqlManagedInstanceDatabase.snapshotGroupByConnection](AzureSqlManagedInstanceDatabase.md)
 - [AzureStorageAccount.snapshotGroupByConnection](AzureStorageAccount.md)
+- [ConfluenceSpace.snapshotGroupByConnection](ConfluenceSpace.md)
+- [D365DataverseTable.snapshotGroupByConnection](D365DataverseTable.md)
 - [GcpAlloyDbCluster.snapshotGroupByConnection](GcpAlloyDbCluster.md)
 - [GcpBigQueryDataset.snapshotGroupByConnection](GcpBigQueryDataset.md)
 - [GcpCloudSqlInstance.snapshotGroupByConnection](GcpCloudSqlInstance.md)
@@ -38,11 +41,8 @@ Paginated list of PolarisSnapshotGroupBy objects. Each page of the results inclu
 - [GcpNativeGceInstance.snapshotGroupByConnection](GcpNativeGceInstance.md)
 - [GithubRepository.snapshotGroupByConnection](GithubRepository.md)
 - [GlueIcebergTable.snapshotGroupByConnection](GlueIcebergTable.md)
-- [K8sNamespace.snapshotGroupByConnection](K8sNamespace.md)
-- [M365BackupStorageGroup.snapshotGroupByConnection](M365BackupStorageGroup.md)
-- [M365BackupStorageMailbox.snapshotGroupByConnection](M365BackupStorageMailbox.md)
-- [M365BackupStorageOnedrive.snapshotGroupByConnection](M365BackupStorageOnedrive.md)
-- [M365BackupStorageOrg.snapshotGroupByConnection](M365BackupStorageOrg.md)
-- [M365BackupStorageSite.snapshotGroupByConnection](M365BackupStorageSite.md)
-- MicrosoftGroup.snapshotGroupByConnection
-- *…and 16 more*
+- [GoogleWorkspaceSharedDrive.snapshotGroupByConnection](GoogleWorkspaceSharedDrive.md)
+- [GoogleWorkspaceUserDrive.snapshotGroupByConnection](GoogleWorkspaceUserDrive.md)
+- [GoogleWorkspaceUserMailbox.snapshotGroupByConnection](GoogleWorkspaceUserMailbox.md)
+- [JiraProject.snapshotGroupByConnection](JiraProject.md)
+- *…and 26 more*

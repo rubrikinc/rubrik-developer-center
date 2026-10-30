@@ -1,13 +1,13 @@
 # glueIcebergTable
 
-Represents an AWS Glue Iceberg Table with a specific Rubrik ID.
+GetGlueIcebergTable returns the hierarchy details for a single AWS Glue Iceberg table.
 
 ## Arguments
 
 | Argument | Type | Description |
 |----------|------|-------------|
-| glueIcebergTableRubrikId *(required)* | [UUID](../types/scalars/UUID.md)! | Rubrik ID for the AWS Glue Iceberg table object. |
-| includeSecurityMetadata | Boolean | Filter to include the security metadata. |
+| glueIcebergTableRubrikId *(required)* | [UUID](../types/scalars/UUID.md)! | Rubrik ID of the Glue Iceberg table. |
+| includeSecurityMetadata | Boolean | Whether to include security metadata on the returned object. |
 
 ## Returns
 

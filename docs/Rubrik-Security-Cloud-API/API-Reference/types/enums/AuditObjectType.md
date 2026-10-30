@@ -46,6 +46,7 @@ Represents all the object types for which we expect to see audits.
 | AZURE_DEVOPS_PROJECT_ARTIFACTS_FIXED_OBJECT | Azure DevOps project artifacts (feeds, packages) per project. |
 | AZURE_DEVOPS_PROJECT_FIXED_OBJECT | Azure DevOps Developer Collaboration (work items, boards, wikis) per project. |
 | AZURE_DEVOPS_REPOSITORY | Azure DevOps Repository. |
+| AZURE_LOCAL_SUBSCRIPTION | Azure Local subscription object. |
 | AZURE_NATIVE_DISK | Azure native disk object. |
 | AZURE_NATIVE_SUBSCRIPTION | Azure native subscription object. |
 | AZURE_NATIVE_VM | Azure native virtual machine object. |
@@ -210,6 +211,7 @@ Represents all the object types for which we expect to see audits.
 | POWER_PLATFORM_MODEL_DRIVEN_APP | Power Platform model-driven app. |
 | POWER_PLATFORM_ORGANIZATION | Power Platform organization. |
 | PROXMOX_ENVIRONMENT | Proxmox environment. |
+| PROXMOX_TAG | Proxmox tag. |
 | PROXMOX_VIRTUAL_MACHINE | Proxmox virtual machine. |
 | PUBLIC_CLOUD_MACHINE_INSTANCE | Public cloud machine instance. |
 | PURE_STORAGE_ARRAY | Everpure FlashArray. |
@@ -248,6 +250,8 @@ Represents all the object types for which we expect to see audits.
 | VCD | VCD. |
 | VCD_VAPP | VCD vApp. |
 | VCENTER | VCenter. |
+| VCF_FLEET | VMware Cloud Foundation (VCF) fleet. An inventory hierarchy level above the VCF instances, not a protectable object. |
+| VCF_INSTANCE | VMware Cloud Foundation (VCF) instance. An inventory hierarchy level between a fleet and its vCenters, not a protectable object. |
 | VMWARE_COMPUTE_CLUSTER | VMware compute cluster. |
 | VMWARE_MOUNT | Vmware Mount object. |
 | VMWARE_VM | VMware virtual machine. |

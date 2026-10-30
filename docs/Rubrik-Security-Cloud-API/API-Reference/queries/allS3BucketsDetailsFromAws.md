@@ -1,13 +1,13 @@
 # allS3BucketsDetailsFromAws
 
-List of all S3 bucket details across regions for the AWS Native account.
+ListS3BucketsDetails lists all the s3 bucket details across regions.
 
 ## Arguments
 
 | Argument | Type | Description |
 |----------|------|-------------|
-| awsAccountRubrikId *(required)* | [UUID](../types/scalars/UUID.md)! | Rubrik ID for AWS account. |
-| region | [AwsNativeRegion](../types/enums/AwsNativeRegion.md) | The region in AWS. If no region is provided, the AWS function will return all buckets. |
+| awsAccountRubrikId *(required)* | [UUID](../types/scalars/UUID.md)! | Rubrik FID of the AWS Native account. |
+| region | [AwsNativeRegion](../types/enums/AwsNativeRegion.md) | Region to restrict the listing to. All regions when omitted. |
 
 ## Returns
 

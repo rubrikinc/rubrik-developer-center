@@ -1,6 +1,6 @@
 # cloudNativeCheckArchivedSnapshotsLocked
 
-Archived snapshot locking related details for a workload. If no snapshots IDs are passed, all the expired source snapshots and the source snapshots that have a unexpired archival copy will be checked.
+Archived snapshot locking related details for a workload. If no snapshot IDs are passed, all the globally unexpired source snapshots are checked. A source snapshot that has no archival copy is reported as invalid rather than as locked or unlocked.
 
 ## Arguments
 

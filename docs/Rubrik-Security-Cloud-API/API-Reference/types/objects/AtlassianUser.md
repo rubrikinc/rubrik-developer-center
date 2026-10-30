@@ -1,0 +1,16 @@
+# AtlassianUser
+
+Atlassian user.
+
+## Fields
+
+| Field | Type | Description |
+|-------|------|-------------|
+| displayName | String! | The display name of the user. |
+| naturalId | String! | ID of the Atlassian user. |
+
+## Used By
+
+**Referenced by**
+
+- [JiraProject.lead](JiraProject.md)

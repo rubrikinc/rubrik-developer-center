@@ -1,6 +1,6 @@
 # hypervTopLevelDescendants
 
-Paginated list of the highest-level HyperV Objects accessible by the current user.
+Paginated list of the highest-level HyperV objects accessible by the current user.
 
 ## Arguments
 
@@ -8,10 +8,12 @@ Paginated list of the highest-level HyperV Objects accessible by the current use
 |----------|------|-------------|
 | first | Int | Returns the first n elements from the list. |
 | after | String | An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results. |
-| sortBy | [HierarchySortByField](../types/enums/HierarchySortByField.md) | Sort hierarchy objects according to the hierarchy field. |
+| last | Int | Returns the last n elements from the list. |
+| before | String | An opaque cursor returned from a previous query's startCursor field. Pass this value verbatim to retrieve the previous page of results. |
+| filter | [[Filter](../types/inputs/Filter.md)!] | Hierarchy object filters. |
+| sortBy | [HierarchySortByField](../types/enums/HierarchySortByField.md) | Field to sort the returned descendants by. |
 | sortOrder | [SortOrder](../types/enums/SortOrder.md) | Sorts the order of results. |
 | typeFilter | [[HierarchyObjectTypeEnum](../types/enums/HierarchyObjectTypeEnum.md)!] | Types of objects to include. |
-| filter | [[Filter](../types/inputs/Filter.md)!] | Hierarchy object filter. |
 
 ## Returns
 

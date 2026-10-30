@@ -22,7 +22,14 @@ Represents security metadata of a workload.
 - [ActiveDirectoryDomainController.securityMetadata](ActiveDirectoryDomainController.md)
 - ActiveDirectoryDomainDescendantType.securityMetadata
 - ActiveDirectoryDomainPhysicalChildType.securityMetadata
+- [ActiveDirectoryForest.securityMetadata](ActiveDirectoryForest.md)
+- ActiveDirectoryForestDescendantType.securityMetadata
+- ActiveDirectoryForestPhysicalChildType.securityMetadata
+- [AnthropicChildOrg.securityMetadata](AnthropicChildOrg.md)
+- [AnthropicClaudeChatWorkload.securityMetadata](AnthropicClaudeChatWorkload.md)
 - [AnthropicOrg.securityMetadata](AnthropicOrg.md)
+- [AnthropicOrgSetting.securityMetadata](AnthropicOrgSetting.md)
+- [AnthropicUser.securityMetadata](AnthropicUser.md)
 - [AtlassianSite.securityMetadata](AtlassianSite.md)
 - [AwsNativeAccount.securityMetadata](AwsNativeAccount.md)
 - AwsNativeAccountDescendantType.securityMetadata
@@ -41,11 +48,4 @@ Represents security metadata of a workload.
 - [AzureCosmosNosqlDatabase.securityMetadata](AzureCosmosNosqlDatabase.md)
 - [AzureDevOpsOrganization.securityMetadata](AzureDevOpsOrganization.md)
 - [AzureDevOpsProject.securityMetadata](AzureDevOpsProject.md)
-- [AzureDevOpsRepository.securityMetadata](AzureDevOpsRepository.md)
-- AzureNativeHierarchyObjectType.securityMetadata
-- [AzureNativeManagedDisk.securityMetadata](AzureNativeManagedDisk.md)
-- [AzureNativeRegionManagedObject.securityMetadata](AzureNativeRegionManagedObject.md)
-- [AzureNativeResourceGroup.securityMetadata](AzureNativeResourceGroup.md)
-- [AzureNativeResourceGroupBase.securityMetadata](AzureNativeResourceGroupBase.md)
-- [AzureNativeSubscription.securityMetadata](AzureNativeSubscription.md)
-- *…and 332 more*
+- *…and 377 more*

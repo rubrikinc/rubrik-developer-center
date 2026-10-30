@@ -22,6 +22,7 @@ Regions for Azure.
 | CHINA_EAST | Azure region is China East. |
 | CHINA_EAST2 | Azure region is China East 2. |
 | CHINA_NORTH | Azure region is China North. |
+| DENMARK_EAST | Azure region is Denmark East. |
 | EUROPE_NORTH | Azure region is North Europe. |
 | EUROPE_WEST | Azure region is West Europe. |
 | FRANCE_CENTRAL | Azure region is France Central. |
@@ -37,6 +38,7 @@ Regions for Azure.
 | GOV_US_VIRGINIA | Azure region is US Gov Virginia. |
 | INDIA_CENTRAL | Azure region is Central India. |
 | INDIA_SOUTH | Azure region is South India. |
+| INDIA_SOUTH_CENTRAL | Azure region is India South Central. |
 | INDIA_WEST | Azure region is West India. |
 | INDONESIA_CENTRAL | Azure region is Indonesia Central. |
 | ISRAEL_CENTRAL | Azure region is Israel Central. |

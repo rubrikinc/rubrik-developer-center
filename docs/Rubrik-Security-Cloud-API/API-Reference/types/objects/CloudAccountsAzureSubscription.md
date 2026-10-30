@@ -7,13 +7,13 @@ AzureSubscription is a representation of the native Azure subscription.
 | Field | Type | Description |
 |-------|------|-------------|
 | app | [AzureCloudAccountTenantApp](AzureCloudAccountTenantApp.md) | The Azure application backing this subscription, together with the authentication method it is bound to. Unset for a discovered subscription that is not yet onboarded. |
-| cloudType | [AzureCloudType](../enums/AzureCloudType.md)! | Cloud type in which the subscription is present. |
-| customerSubscriptionId | String! | Customer subscription ID. |
-| customerTenantId | String! | Tenant ID of the subscription. |
+| cloudType | [AzureCloudType](../enums/AzureCloudType.md)! | Cloud type of the Azure subscription. |
+| customerSubscriptionId | String! | Cloud account ID of the subscription. |
+| customerTenantId | String! | Rubrik ID of the Azure tenant in which this subscription is present. |
 | ineligibilityReason | [AzureOnboardingIneligibilityReason](../enums/AzureOnboardingIneligibilityReason.md)! | The reason the subscription cannot be onboarded in the current pass, or UNSPECIFIED when it is eligible. This field is set in discovery responses only. |
-| isAuthorized | Boolean! | Authorization status to perform CRUD actions on the subscription. |
-| name | String! | Name of the subscription. |
-| nativeId | String! | Azure Native ID of the subscription. |
+| isAuthorized | Boolean! | Specifies whether the requester has appropriate permissions on this subscription. |
+| name | String! | Subscription name as specified in Azure. |
+| nativeId | String! | Subscription UUID as specified in Azure. |
 
 ## Used By
 

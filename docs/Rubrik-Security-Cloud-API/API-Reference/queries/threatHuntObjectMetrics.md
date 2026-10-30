@@ -23,6 +23,7 @@ Aggregated object metrics for a threat hunt.
         totalAffectedObjects
         totalObjectsScanned
         totalObjectsUnscannable
+        totalObjectsWithMatches
         totalRegistryAffectedObjects
         totalUnaffectedObjects
         unaffectedObjectsFromDb
@@ -48,8 +49,8 @@ Aggregated object metrics for a threat hunt.
           "totalAffectedObjects": 0,
           "totalObjectsScanned": 0,
           "totalObjectsUnscannable": 0,
-          "totalRegistryAffectedObjects": 0,
-          "totalUnaffectedObjects": 0
+          "totalObjectsWithMatches": 0,
+          "totalRegistryAffectedObjects": 0
         }
       }
     }

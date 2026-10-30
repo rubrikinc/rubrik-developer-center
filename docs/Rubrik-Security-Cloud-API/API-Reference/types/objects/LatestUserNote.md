@@ -19,6 +19,9 @@ Latest user note information.
 - [ActiveDirectoryDomainController.latestUserNote](ActiveDirectoryDomainController.md)
 - ActiveDirectoryDomainDescendantType.latestUserNote
 - ActiveDirectoryDomainPhysicalChildType.latestUserNote
+- [ActiveDirectoryForest.latestUserNote](ActiveDirectoryForest.md)
+- ActiveDirectoryForestDescendantType.latestUserNote
+- ActiveDirectoryForestPhysicalChildType.latestUserNote
 - CdmHierarchyObject.latestUserNote
 - [CdmSnapshot.latestUserNote](CdmSnapshot.md)
 - [CdmWorkloadSnapshot.latestUserNote](CdmWorkloadSnapshot.md)
@@ -42,7 +45,4 @@ Latest user note information.
 - [FilesetTemplate.latestUserNote](FilesetTemplate.md)
 - FilesetTemplateDescendantType.latestUserNote
 - FilesetTemplatePhysicalChildType.latestUserNote
-- [FusionComputeCluster.latestUserNote](FusionComputeCluster.md)
-- FusionComputeClusterDescendant.latestUserNote
-- FusionComputeClusterPhysicalChildType.latestUserNote
-- *…and 238 more*
+- *…and 267 more*

@@ -38,6 +38,7 @@ An Anthropic organization managed by Rubrik.
 | saasAppsOrgInfo | [SaasAppsOrgInfo](SaasAppsOrgInfo.md)! | Org size info by org ID. |
 | saasOrgType | [SaasOrgType](../enums/SaasOrgType.md)! | The organization type that categorizes the SaaS provider. |
 | securityMetadata | [SecurityMetadata](SecurityMetadata.md) | Security posture metadata. |
+| shouldProtectAllChildOrgs | Boolean! | Whether all child organizations are automatically protected, including future ones. When false, only child orgs selected at setup are protected. |
 | slaAssignment | [SlaAssignmentTypeEnum](../enums/SlaAssignmentTypeEnum.md)! | SLA Domain assignment type for this object. |
 | slaPauseStatus | Boolean! | Pause status of the effective SLA Domain of the hierarchy object. |
 | snapshotDistribution | [SnapshotDistribution](SnapshotDistribution.md)! | Distribution of the snapshots of the hierarchy object. |

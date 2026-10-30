@@ -18,7 +18,14 @@ Represents pause status of an object.
 - [ActiveDirectoryDomainController.objectPauseStatus](ActiveDirectoryDomainController.md)
 - ActiveDirectoryDomainDescendantType.objectPauseStatus
 - ActiveDirectoryDomainPhysicalChildType.objectPauseStatus
+- [ActiveDirectoryForest.objectPauseStatus](ActiveDirectoryForest.md)
+- ActiveDirectoryForestDescendantType.objectPauseStatus
+- ActiveDirectoryForestPhysicalChildType.objectPauseStatus
+- [AnthropicChildOrg.objectPauseStatus](AnthropicChildOrg.md)
+- [AnthropicClaudeChatWorkload.objectPauseStatus](AnthropicClaudeChatWorkload.md)
 - [AnthropicOrg.objectPauseStatus](AnthropicOrg.md)
+- [AnthropicOrgSetting.objectPauseStatus](AnthropicOrgSetting.md)
+- [AnthropicUser.objectPauseStatus](AnthropicUser.md)
 - [AtlassianSite.objectPauseStatus](AtlassianSite.md)
 - [AwsNativeAccount.objectPauseStatus](AwsNativeAccount.md)
 - AwsNativeAccountDescendantType.objectPauseStatus
@@ -37,11 +44,4 @@ Represents pause status of an object.
 - [AzureCosmosNosqlDatabase.objectPauseStatus](AzureCosmosNosqlDatabase.md)
 - [AzureDevOpsOrganization.objectPauseStatus](AzureDevOpsOrganization.md)
 - [AzureDevOpsProject.objectPauseStatus](AzureDevOpsProject.md)
-- [AzureDevOpsRepository.objectPauseStatus](AzureDevOpsRepository.md)
-- AzureNativeHierarchyObjectType.objectPauseStatus
-- [AzureNativeManagedDisk.objectPauseStatus](AzureNativeManagedDisk.md)
-- [AzureNativeRegionManagedObject.objectPauseStatus](AzureNativeRegionManagedObject.md)
-- [AzureNativeResourceGroup.objectPauseStatus](AzureNativeResourceGroup.md)
-- [AzureNativeResourceGroupBase.objectPauseStatus](AzureNativeResourceGroupBase.md)
-- [AzureNativeSubscription.objectPauseStatus](AzureNativeSubscription.md)
-- *…and 332 more*
+- *…and 379 more*

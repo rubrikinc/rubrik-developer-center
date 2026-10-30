@@ -6,7 +6,7 @@ Create SLA Domain.
 
 | Argument | Type | Description |
 |----------|------|-------------|
-| input *(required)* | [CreateGlobalSlaInput](../types/inputs/CreateGlobalSlaInput.md)! |  |
+| input *(required)* | [CreateGlobalSlaInput](../types/inputs/CreateGlobalSlaInput.md)! | Input to create SLA Domain. |
 
 ## Returns
 

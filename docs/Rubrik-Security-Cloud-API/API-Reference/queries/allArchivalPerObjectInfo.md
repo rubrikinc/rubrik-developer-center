@@ -47,6 +47,7 @@ Get archival information for all objects across every archival location the call
           slaDomain
           storageTier
           storageUsage
+          workloadFid
           workloadId
         }
         pageInfo {

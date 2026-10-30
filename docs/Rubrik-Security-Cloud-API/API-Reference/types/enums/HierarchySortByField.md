@@ -22,8 +22,16 @@ Fields for sorting hierarchy objects.
 | AWS_VPC_ID *(deprecated: Use EC2_INSTANCE_VPC_ID or RDS_INSTANCE_VPC_ID instead.)* | Sort by AWS VPC ID. |
 | AZURE_BLOB_STORAGE_ACCOUNT_CAPACITY_USED | Sort Azure storage accounts by capacity used. |
 | AZURE_BLOB_STORAGE_ACCOUNT_CONTAINER_COUNT | Sort Azure storage accounts by number of containers. |
+| AZURE_COSMOS_NOSQL_ACCOUNT_DATABASE_COUNT | Sort Azure Cosmos NoSQL accounts by their number of databases as of the last inventory refresh. An account with no stored count sorts first ascending and last descending. |
+| AZURE_COSMOS_NOSQL_ACCOUNT_RESOURCE_GROUP_NAME | Sort Azure Cosmos NoSQL accounts by the name of their resource group. |
+| AZURE_COSMOS_NOSQL_ACCOUNT_SUBSCRIPTION_NAME | Sort Azure Cosmos NoSQL accounts by the name of their subscription. |
 | AZURE_COSMOS_NOSQL_CONTAINER_ACCOUNT_NAME | Sort Azure Cosmos NoSQL containers by the name of their ancestor account, denormalized onto the container as a property. |
 | AZURE_COSMOS_NOSQL_CONTAINER_DATABASE_NAME | Sort Azure Cosmos NoSQL containers by the name of their parent database, denormalized onto the container as a property. |
+| AZURE_COSMOS_NOSQL_CONTAINER_RESOURCE_GROUP_NAME | Sort Azure Cosmos NoSQL containers by the name of the resource group of the account that owns their parent database. |
+| AZURE_COSMOS_NOSQL_DATABASE_ACCOUNT_NAME | Sort Azure Cosmos NoSQL databases by the name of their parent account, denormalized onto the database as a property. A database with no stored name sorts first ascending and last descending. |
+| AZURE_COSMOS_NOSQL_DATABASE_CONTAINER_COUNT | Sort Azure Cosmos NoSQL databases by their number of containers as of the last inventory refresh. A database with no stored count sorts first ascending and last descending. |
+| AZURE_COSMOS_NOSQL_DATABASE_RESOURCE_GROUP_NAME | Sort Azure Cosmos NoSQL databases by the name of the resource group of their parent account. |
+| AZURE_COSMOS_NOSQL_DATABASE_SUBSCRIPTION_NAME | Sort Azure Cosmos NoSQL databases by the name of the subscription of their parent account. |
 | AZURE_DEVOPS_REPO_SIZE | Sort Azure DevOps repositories by size. |
 | AZURE_DISK_ATTACHED_VM *(deprecated: This field is deprecated and no longer used.)* | Sort Azure disks by attached virtual machine name. |
 | AZURE_DISK_CRG_NAME | Sort Azure disks by common resource group name. |

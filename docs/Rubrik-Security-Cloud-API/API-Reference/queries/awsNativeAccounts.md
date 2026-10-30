@@ -1,6 +1,6 @@
 # awsNativeAccounts
 
-Paginated list of all AWS Native accounts.
+Lists the AWS Native accounts under the AWS-native hierarchy root.
 
 ## Arguments
 
@@ -10,12 +10,13 @@ Paginated list of all AWS Native accounts.
 | after | String | An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results. |
 | last | Int | Returns the last n elements from the list. |
 | before | String | An opaque cursor returned from a previous query's startCursor field. Pass this value verbatim to retrieve the previous page of results. |
-| sortBy | [AwsNativeAccountSortFields](../types/enums/AwsNativeAccountSortFields.md) | Sort fields for list of AWS accounts. |
-| sortOrder | [SortOrder](../types/enums/SortOrder.md) | Sorts the order of results. |
-| accountFilters | [AwsNativeAccountFilters](../types/inputs/AwsNativeAccountFilters.md) |  |
-| authorizedOperationFilter | [Operation](../types/enums/Operation.md) |  |
-| awsNativeProtectionFeature *(required)* | [AwsNativeProtectionFeature](../types/enums/AwsNativeProtectionFeature.md)! | Cloud native protection feature. |
-| awsNativeProtectionFeatures | [[AwsNativeProtectionFeature](../types/enums/AwsNativeProtectionFeature.md)!] | List of cloud native protection features. |
+| sortBy | [AwsNativeAccountSortFields](../types/enums/AwsNativeAccountSortFields.md) | Field of the account to order the results by. Defaults to the account name. |
+| sortOrder | [SortOrder](../types/enums/SortOrder.md) | Direction the results are ordered in. Defaults to ascending. |
+| accountFilters | [AwsNativeAccountFilters](../types/inputs/AwsNativeAccountFilters.md) | Narrows the results to the accounts matching every filter supplied. Unset returns all non-relic accounts. |
+| authorizedOperationFilter | [Operation](../types/enums/Operation.md) | RBAC operation the caller must be authorized for on each returned account. Defaults to VIEW_INVENTORY. |
+| awsNativeProtectionFeature *(required)* | [AwsNativeProtectionFeature](../types/enums/AwsNativeProtectionFeature.md)! | Protection feature the returned accounts must have enabled, and whose workload scopes their SLA. Ignored when awsNativeProtectionFeatures is set. |
+| awsNativeProtectionFeatures | [[AwsNativeProtectionFeature](../types/enums/AwsNativeProtectionFeature.md)!] | Protection features the returned accounts must have at least one of enabled. Defaults to awsNativeProtectionFeature alone when unset. |
+| includeSecurityMetadata | Boolean | Whether to include each object's security metadata in the response. |
 
 ## Returns
 

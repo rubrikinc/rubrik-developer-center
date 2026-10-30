@@ -17,5 +17,6 @@ The host information of the discoverable entity.
 - [InformixInstance.hostsInfo](InformixInstance.md)
 - [IrisdbInstance.hostsInfo](IrisdbInstance.md)
 - KosmosDiscoverableEntityType.hostsInfo
+- [MariadbInstance.hostsInfo](MariadbInstance.md)
 - [MysqldbInstance.hostsInfo](MysqldbInstance.md)
 - [PostgreSQLDbCluster.hostsInfo](PostgreSQLDbCluster.md)

@@ -20,6 +20,7 @@ A generic TPR requested-changes template.
 - [EditFilesetTemplateTprReqChangesTemplate](../objects/EditFilesetTemplateTprReqChangesTemplate.md)
 - [EditReplicationPairTprReqChangesTemplate](../objects/EditReplicationPairTprReqChangesTemplate.md)
 - [EditSlaTprReqChangesTemplate](../objects/EditSlaTprReqChangesTemplate.md)
+- [IdentityResilienceRevertReqChangesTemplate](../objects/IdentityResilienceRevertReqChangesTemplate.md)
 - [ManageUserTprReqChangesTemplate](../objects/ManageUserTprReqChangesTemplate.md)
 - [MutateRoleReqChangesTemplate](../objects/MutateRoleReqChangesTemplate.md)
 - [PamIntegrationReqChangesTemplate](../objects/PamIntegrationReqChangesTemplate.md)

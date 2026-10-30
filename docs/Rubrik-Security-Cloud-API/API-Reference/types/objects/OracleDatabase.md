@@ -1,8 +1,8 @@
 # OracleDatabase
 
-*No description available.*
+An Oracle database.
 
-**Implements:** [HierarchyObject](../interfaces/HierarchyObject.md), [CdmHierarchyObject](../interfaces/CdmHierarchyObject.md), [HierarchySnappable](../interfaces/HierarchySnappable.md), [CdmHierarchySnappableNew](../interfaces/CdmHierarchySnappableNew.md), [OracleTopLevelDescendantType](../interfaces/OracleTopLevelDescendantType.md), [OracleHostDescendantType](../interfaces/OracleHostDescendantType.md), [OracleHostLogicalChildType](../interfaces/OracleHostLogicalChildType.md), [OracleRacDescendantType](../interfaces/OracleRacDescendantType.md), [OracleRacLogicalChildType](../interfaces/OracleRacLogicalChildType.md), [OracleDataGuardGroupDescendantType](../interfaces/OracleDataGuardGroupDescendantType.md), [OracleDataGuardGroupLogicalChildType](../interfaces/OracleDataGuardGroupLogicalChildType.md)
+**Implements:** [CdmHierarchyObject](../interfaces/CdmHierarchyObject.md), [HierarchyObject](../interfaces/HierarchyObject.md), [HierarchySnappable](../interfaces/HierarchySnappable.md), [CdmHierarchySnappableNew](../interfaces/CdmHierarchySnappableNew.md), [OracleTopLevelDescendantType](../interfaces/OracleTopLevelDescendantType.md), [OracleHostDescendantType](../interfaces/OracleHostDescendantType.md), [OracleHostLogicalChildType](../interfaces/OracleHostLogicalChildType.md), [OracleRacDescendantType](../interfaces/OracleRacDescendantType.md), [OracleRacLogicalChildType](../interfaces/OracleRacLogicalChildType.md), [OracleDataGuardGroupDescendantType](../interfaces/OracleDataGuardGroupDescendantType.md), [OracleDataGuardGroupLogicalChildType](../interfaces/OracleDataGuardGroupLogicalChildType.md), [OracleFailoverClusterDescendantType](../interfaces/OracleFailoverClusterDescendantType.md), [OracleFailoverServiceDescendantType](../interfaces/OracleFailoverServiceDescendantType.md)
 
 ## Fields
 
@@ -12,7 +12,7 @@
 | allTags | [[AssignedRscTag](AssignedRscTag.md)!]! | RSC tags to which this hierarchy object is assigned. |
 | archiveLogMode | String! | ARCHIVELOGMODE of the Oracle database. |
 | authorizedOperations | [[Operation](../enums/Operation.md)!]! | The authorized operations on the object. |
-| cdmId | String! | CDM ID of the Oracle database. |
+| cdmId | String! | The ID of the workload on the Rubrik cluster. |
 | cdmLink | String! | A link to view the workload on the Rubrik cluster. For dev use only. |
 | cdmPendingObjectPauseAssignment | [PendingObjectPauseAssignmentStatus](../enums/PendingObjectPauseAssignmentStatus.md) | Object pause pending assignment details for CDM objects. |
 | cluster | [Cluster](Cluster.md)! | Rubrik cluster where this object originated. |
@@ -90,46 +90,48 @@
 |-------|----------|------|-------------|
 | liveMounts | first | Int | Returns the first n elements from the list. |
 | liveMounts | after | String | An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results. |
+| liveMounts | last | Int | Returns the last n elements from the list. |
+| liveMounts | before | String | An opaque cursor returned from a previous query's startCursor field. Pass this value verbatim to retrieve the previous page of results. |
 | liveMounts | filters | [[OracleLiveMountFilterInput](../inputs/OracleLiveMountFilterInput.md)!] | Filter for Oracle live mounts. |
 | liveMounts | sortBy | [OracleLiveMountSortBy](../inputs/OracleLiveMountSortBy.md) | Sort by argument for Oracle live mounts. |
 | missedSnapshotConnection | first | Int | Returns the first n elements from the list. |
-| missedSnapshotConnection | after | String | An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results. |
+| missedSnapshotConnection | after | String | Returns the elements in the list that occur after the specified cursor. |
 | missedSnapshotConnection | last | Int | Returns the last n elements from the list. |
-| missedSnapshotConnection | before | String | An opaque cursor returned from a previous query's startCursor field. Pass this value verbatim to retrieve the previous page of results. |
+| missedSnapshotConnection | before | String | Returns the elements in the list that occur before the specified cursor. |
 | missedSnapshotConnection | filter | [MissedSnapshotFilterInput](../inputs/MissedSnapshotFilterInput.md) | Filter missed snapshots by date. |
 | missedSnapshotGroupByConnection | first | Int | Returns the first n elements from the list. |
-| missedSnapshotGroupByConnection | after | String | An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results. |
+| missedSnapshotGroupByConnection | after | String | Returns the elements in the list that occur after the specified cursor. |
 | missedSnapshotGroupByConnection | last | Int | Returns the last n elements from the list. |
-| missedSnapshotGroupByConnection | before | String | An opaque cursor returned from a previous query's startCursor field. Pass this value verbatim to retrieve the previous page of results. |
+| missedSnapshotGroupByConnection | before | String | Returns the elements in the list that occur before the specified cursor. |
 | missedSnapshotGroupByConnection | filter | [MissedSnapshotFilterInput](../inputs/MissedSnapshotFilterInput.md) | Filter missed snapshots by date. |
 | missedSnapshotGroupByConnection | groupBy *(required)* | [MissedSnapshotGroupByTime](../enums/MissedSnapshotGroupByTime.md)! | Group snapshots by field. |
 | missedSnapshotGroupByConnection | timezoneOffset | Float | Offset based on the customer timezone. |
 | missedSnapshotGroupByConnection | timezone | [Timezone](../scalars/Timezone.md) | Time zone identifier string. For example, 'America/Los_Angeles' is used for the U.S. Pacific Time zone. |
 | newestSnapshot | beforeTime | [DateTime](../scalars/DateTime.md) | Specifies the time at which or before the snapshot was taken. |
 | numWorkloadDescendants | first | Int | Returns the first n elements from the list. |
-| numWorkloadDescendants | after | String | An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results. |
+| numWorkloadDescendants | after | String | Returns the elements in the list that occur after the specified cursor. |
 | numWorkloadDescendants | last | Int | Returns the last n elements from the list. |
-| numWorkloadDescendants | before | String | An opaque cursor returned from a previous query's startCursor field. Pass this value verbatim to retrieve the previous page of results. |
+| numWorkloadDescendants | before | String | Returns the elements in the list that occur before the specified cursor. |
 | numWorkloadDescendants | objectTypes | [[ManagedObjectType](../enums/ManagedObjectType.md)!] | Types of objects to limit the results. If absent, all object types are returned. |
 | snapshotConnection | first | Int | Returns the first n elements from the list. |
-| snapshotConnection | after | String | An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results. |
+| snapshotConnection | after | String | Returns the elements in the list that occur after the specified cursor. |
 | snapshotConnection | last | Int | Returns the last n elements from the list. |
-| snapshotConnection | before | String | An opaque cursor returned from a previous query's startCursor field. Pass this value verbatim to retrieve the previous page of results. |
+| snapshotConnection | before | String | Returns the elements in the list that occur before the specified cursor. |
 | snapshotConnection | filter | [CdmSnapshotFilterInput](../inputs/CdmSnapshotFilterInput.md) | Filter snapshot connection. |
 | snapshotConnection | sortBy | [CdmSnapshotSortByEnum](../enums/CdmSnapshotSortByEnum.md) | Sorts snapshots by field. |
 | snapshotConnection | sortOrder | [SortOrder](../enums/SortOrder.md) | Sorts the order of results. |
 | snapshotGroupByConnection | first | Int | Returns the first n elements from the list. |
-| snapshotGroupByConnection | after | String | An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results. |
+| snapshotGroupByConnection | after | String | Returns the elements in the list that occur after the specified cursor. |
 | snapshotGroupByConnection | last | Int | Returns the last n elements from the list. |
-| snapshotGroupByConnection | before | String | An opaque cursor returned from a previous query's startCursor field. Pass this value verbatim to retrieve the previous page of results. |
+| snapshotGroupByConnection | before | String | Returns the elements in the list that occur before the specified cursor. |
 | snapshotGroupByConnection | timezoneOffset | Float | Offset based on the customer timezone. |
 | snapshotGroupByConnection | filter | [CdmSnapshotFilterInput](../inputs/CdmSnapshotFilterInput.md) | Filter snapshot connection. |
 | snapshotGroupByConnection | groupBy *(required)* | [CdmSnapshotGroupByEnum](../enums/CdmSnapshotGroupByEnum.md)! | Groups snapshots by field. |
 | snapshotGroupByConnection | timezone | [Timezone](../scalars/Timezone.md) | Time zone identifier string. For example, 'America/Los_Angeles' is used for the U.S. Pacific Time zone. |
 | snapshotGroupBySummary | first | Int | Returns the first n elements from the list. |
-| snapshotGroupBySummary | after | String | An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results. |
+| snapshotGroupBySummary | after | String | Returns the elements in the list that occur after the specified cursor. |
 | snapshotGroupBySummary | last | Int | Returns the last n elements from the list. |
-| snapshotGroupBySummary | before | String | An opaque cursor returned from a previous query's startCursor field. Pass this value verbatim to retrieve the previous page of results. |
+| snapshotGroupBySummary | before | String | Returns the elements in the list that occur before the specified cursor. |
 | snapshotGroupBySummary | timezoneOffset | Float | Offset based on the customer timezone. |
 | snapshotGroupBySummary | timezone | [Timezone](../scalars/Timezone.md) | Time zone identifier string. For example, 'America/Los_Angeles' is used for the U.S. Pacific Time zone. |
 | snapshotGroupBySummary | filter | [CdmSnapshotFilterInput](../inputs/CdmSnapshotFilterInput.md) | Filter snapshot connection. |

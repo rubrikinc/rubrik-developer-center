@@ -2,7 +2,7 @@
 
 Hyper-V cluster details.
 
-**Implements:** [HierarchyObject](../interfaces/HierarchyObject.md), [CdmHierarchyObject](../interfaces/CdmHierarchyObject.md), [HyperVSCVMMDescendantType](../interfaces/HyperVSCVMMDescendantType.md), [HyperVSCVMMLogicalChildType](../interfaces/HyperVSCVMMLogicalChildType.md), [HypervTopLevelDescendantType](../interfaces/HypervTopLevelDescendantType.md)
+**Implements:** [CdmHierarchyObject](../interfaces/CdmHierarchyObject.md), [HierarchyObject](../interfaces/HierarchyObject.md), [HyperVSCVMMDescendantType](../interfaces/HyperVSCVMMDescendantType.md), [HyperVSCVMMLogicalChildType](../interfaces/HyperVSCVMMLogicalChildType.md), [HypervTopLevelDescendantType](../interfaces/HypervTopLevelDescendantType.md)
 
 ## Fields
 
@@ -14,7 +14,7 @@ Hyper-V cluster details.
 | cdmPendingObjectPauseAssignment | [PendingObjectPauseAssignmentStatus](../enums/PendingObjectPauseAssignmentStatus.md) | Object pause pending assignment details for CDM objects. |
 | cluster | [Cluster](Cluster.md)! | Rubrik cluster where this object originated. |
 | configuredSlaDomain | [SlaDomain](../interfaces/SlaDomain.md)! | SLA Domain configured for the hierarchy object. |
-| connectionStatus | [HypervHostStatusType](../enums/HypervHostStatusType.md)! | Connectivity Status of HyperV Cluster. |
+| connectionStatus | [HypervHostStatusType](../enums/HypervHostStatusType.md)! | Connection status of the cluster, aggregated from server_status_list by the ScalaToProtoConverter. |
 | crossAccountReplicatedObjectInfos | [[CrossAccountReplicatedObjectInfo](CrossAccountReplicatedObjectInfo.md)!] | Cross-account objects either replicated by this object or related to this object by replication. |
 | descendantConnection | [HyperVClusterDescendantTypeConnection](HyperVClusterDescendantTypeConnection.md)! | List of descendants. |
 | effectiveRetentionSlaDomain | [SlaDomain](../interfaces/SlaDomain.md) | Effective retention of the SLA Domain of the hierarchy object. |
@@ -50,6 +50,8 @@ Hyper-V cluster details.
 |-------|----------|------|-------------|
 | descendantConnection | first | Int | Returns the first n elements from the list. |
 | descendantConnection | after | String | An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results. |
+| descendantConnection | last | Int | Returns the last n elements from the list. |
+| descendantConnection | before | String | An opaque cursor returned from a previous query's startCursor field. Pass this value verbatim to retrieve the previous page of results. |
 | descendantConnection | sortBy | [HierarchySortByField](../enums/HierarchySortByField.md) | Sort hierarchy objects according to the hierarchy field. |
 | descendantConnection | sortOrder | [SortOrder](../enums/SortOrder.md) | Sorts the order of results. |
 | descendantConnection | typeFilter | [[HierarchyObjectTypeEnum](../enums/HierarchyObjectTypeEnum.md)!] | Types of objects to include. |
@@ -57,15 +59,17 @@ Hyper-V cluster details.
 | descendantConnection | workloadHierarchy | [WorkloadLevelHierarchy](../enums/WorkloadLevelHierarchy.md) | Each enumeration value represents the hierarchy of a specific workload type for RBAC and SLA Domain assignments.  A value of 'None' represents the hierarchy of all workload types. |
 | logicalChildConnection | first | Int | Returns the first n elements from the list. |
 | logicalChildConnection | after | String | An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results. |
+| logicalChildConnection | last | Int | Returns the last n elements from the list. |
+| logicalChildConnection | before | String | An opaque cursor returned from a previous query's startCursor field. Pass this value verbatim to retrieve the previous page of results. |
 | logicalChildConnection | sortBy | [HierarchySortByField](../enums/HierarchySortByField.md) | Sort hierarchy objects according to the hierarchy field. |
 | logicalChildConnection | sortOrder | [SortOrder](../enums/SortOrder.md) | Sorts the order of results. |
 | logicalChildConnection | typeFilter | [[HierarchyObjectTypeEnum](../enums/HierarchyObjectTypeEnum.md)!] | Types of objects to include. |
 | logicalChildConnection | filter | [[Filter](../inputs/Filter.md)!] | Hierarchy object filter. |
 | logicalChildConnection | workloadHierarchy | [WorkloadLevelHierarchy](../enums/WorkloadLevelHierarchy.md) | Each enumeration value represents the hierarchy of a specific workload type for RBAC and SLA Domain assignments.  A value of 'None' represents the hierarchy of all workload types. |
 | numWorkloadDescendants | first | Int | Returns the first n elements from the list. |
-| numWorkloadDescendants | after | String | An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results. |
+| numWorkloadDescendants | after | String | Returns the elements in the list that occur after the specified cursor. |
 | numWorkloadDescendants | last | Int | Returns the last n elements from the list. |
-| numWorkloadDescendants | before | String | An opaque cursor returned from a previous query's startCursor field. Pass this value verbatim to retrieve the previous page of results. |
+| numWorkloadDescendants | before | String | Returns the elements in the list that occur before the specified cursor. |
 | numWorkloadDescendants | objectTypes | [[ManagedObjectType](../enums/ManagedObjectType.md)!] | Types of objects to limit the results. If absent, all object types are returned. |
 
 ## Used By

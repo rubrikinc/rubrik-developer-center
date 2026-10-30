@@ -8,10 +8,12 @@ Get a summary of all host failover clusters.
 |----------|------|-------------|
 | first | Int | Returns the first n elements from the list. |
 | after | String | An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results. |
+| last | Int | Returns the last n elements from the list. |
+| before | String | An opaque cursor returned from a previous query's startCursor field. Pass this value verbatim to retrieve the previous page of results. |
+| hostFailoverClusterRoot *(required)* | [HostFailoverClusterRoot](../types/enums/HostFailoverClusterRoot.md)! | Host failover cluster root type. |
 | sortBy | [HierarchySortByField](../types/enums/HierarchySortByField.md) | Sort hierarchy objects according to the hierarchy field. |
 | sortOrder | [SortOrder](../types/enums/SortOrder.md) | Sorts the order of results. |
 | filter | [[Filter](../types/inputs/Filter.md)!] | Hierarchy object filter. |
-| hostFailoverClusterRoot *(required)* | [HostFailoverClusterRoot](../types/enums/HostFailoverClusterRoot.md)! | Host failover cluster root type. |
 
 ## Returns
 

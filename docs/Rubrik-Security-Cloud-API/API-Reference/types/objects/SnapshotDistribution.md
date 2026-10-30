@@ -20,7 +20,14 @@ A generic snapshot type.
 - [ActiveDirectoryDomainController.snapshotDistribution](ActiveDirectoryDomainController.md)
 - ActiveDirectoryDomainDescendantType.snapshotDistribution
 - ActiveDirectoryDomainPhysicalChildType.snapshotDistribution
+- [ActiveDirectoryForest.snapshotDistribution](ActiveDirectoryForest.md)
+- ActiveDirectoryForestDescendantType.snapshotDistribution
+- ActiveDirectoryForestPhysicalChildType.snapshotDistribution
+- [AnthropicChildOrg.snapshotDistribution](AnthropicChildOrg.md)
+- [AnthropicClaudeChatWorkload.snapshotDistribution](AnthropicClaudeChatWorkload.md)
 - [AnthropicOrg.snapshotDistribution](AnthropicOrg.md)
+- [AnthropicOrgSetting.snapshotDistribution](AnthropicOrgSetting.md)
+- [AnthropicUser.snapshotDistribution](AnthropicUser.md)
 - [AtlassianSite.snapshotDistribution](AtlassianSite.md)
 - [AwsNativeAccount.snapshotDistribution](AwsNativeAccount.md)
 - AwsNativeAccountDescendantType.snapshotDistribution
@@ -39,11 +46,4 @@ A generic snapshot type.
 - [AzureCosmosNosqlDatabase.snapshotDistribution](AzureCosmosNosqlDatabase.md)
 - [AzureDevOpsOrganization.snapshotDistribution](AzureDevOpsOrganization.md)
 - [AzureDevOpsProject.snapshotDistribution](AzureDevOpsProject.md)
-- [AzureDevOpsRepository.snapshotDistribution](AzureDevOpsRepository.md)
-- AzureNativeHierarchyObjectType.snapshotDistribution
-- [AzureNativeManagedDisk.snapshotDistribution](AzureNativeManagedDisk.md)
-- [AzureNativeRegionManagedObject.snapshotDistribution](AzureNativeRegionManagedObject.md)
-- [AzureNativeResourceGroup.snapshotDistribution](AzureNativeResourceGroup.md)
-- [AzureNativeResourceGroupBase.snapshotDistribution](AzureNativeResourceGroupBase.md)
-- [AzureNativeSubscription.snapshotDistribution](AzureNativeSubscription.md)
-- *…and 333 more*
+- *…and 378 more*

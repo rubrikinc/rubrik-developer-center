@@ -1,13 +1,13 @@
 # awsNativeEbsVolume
 
-Refers to the Amazon Elastic Block Store (EBS) Volume represented by a specific ID. For more information, see https://aws.amazon.com/ebs/.
+Returns a single AWS Native EBS volume by its Rubrik FID.
 
 ## Arguments
 
 | Argument | Type | Description |
 |----------|------|-------------|
-| ebsVolumeRubrikId *(required)* | [UUID](../types/scalars/UUID.md)! | Rubrik ID for the AWS EBS Volume object. |
-| includeSecurityMetadata | Boolean | Filter to include the security metadata. |
+| ebsVolumeRubrikId *(required)* | [UUID](../types/scalars/UUID.md)! | Rubrik FID of the EBS volume. |
+| includeSecurityMetadata | Boolean | Whether to include the object's security metadata in the response. |
 
 ## Returns
 

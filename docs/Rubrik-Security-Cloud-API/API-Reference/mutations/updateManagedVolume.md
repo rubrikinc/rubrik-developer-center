@@ -27,6 +27,7 @@ Mutation to update an existing Managed Volume.
         mvType
         numChannels
         pendingSnapshotCount
+        protectionDate
         shareType
         smbDomainName
         smbValidIps

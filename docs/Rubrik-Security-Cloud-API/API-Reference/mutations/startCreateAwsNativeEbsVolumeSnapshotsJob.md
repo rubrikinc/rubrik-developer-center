@@ -1,12 +1,12 @@
 # startCreateAwsNativeEbsVolumeSnapshotsJob
 
-Start job to create snapshots of EBS Volumes with given IDs. When completed, this will start taking an on-demand snapshot of the selected EBS Volumes  as per the SLA Policy assigned to the respective volumes.
+StartCreateAwsNativeEbsVolumeSnapshotsJob starts on-demand snapshot jobs for a list of EBS volumes. Each volume id succeeds or fails independently, so the reply reports a job id for every volume a job was submitted for and an error for every volume it was not.
 
 ## Arguments
 
 | Argument | Type | Description |
 |----------|------|-------------|
-| input *(required)* | [StartCreateAwsNativeEbsVolumeSnapshotsJobInput](../types/inputs/StartCreateAwsNativeEbsVolumeSnapshotsJobInput.md)! | Input for create AWS EBS volume create snapshots job. |
+| input *(required)* | [StartCreateAwsNativeEbsVolumeSnapshotsJobInput](../types/inputs/StartCreateAwsNativeEbsVolumeSnapshotsJobInput.md)! | Input for create AWS EBS Volume snapshots job. |
 
 ## Returns
 

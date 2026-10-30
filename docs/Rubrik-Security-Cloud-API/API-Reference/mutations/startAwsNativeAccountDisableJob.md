@@ -1,12 +1,12 @@
 # startAwsNativeAccountDisableJob
 
-Starts a job to disable a specific AWS Native account. When complete, the job will disable protection for the specified AWS Native account.
+StartAwsNativeAccountDisableJob starts the job that disables one protection feature of an AWS Native account, optionally deleting the snapshots the feature took.
 
 ## Arguments
 
 | Argument | Type | Description |
 |----------|------|-------------|
-| input *(required)* | [StartAwsNativeAccountDisableJobInput](../types/inputs/StartAwsNativeAccountDisableJobInput.md)! | Input for AWS native account disable job. |
+| input *(required)* | [StartAwsNativeAccountDisableJobInput](../types/inputs/StartAwsNativeAccountDisableJobInput.md)! | Input for the AWS Native account disable job. |
 
 ## Returns
 

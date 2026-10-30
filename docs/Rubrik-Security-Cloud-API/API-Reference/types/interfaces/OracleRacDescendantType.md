@@ -1,6 +1,6 @@
 # OracleRacDescendantType
 
-*No description available.*
+Descendant of the Oracle RAC object.
 
 ## Fields
 

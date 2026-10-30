@@ -13,7 +13,7 @@ Details for the threat hunt.
 | hashCatalogLimitExceeded | Boolean! | Flag indicating if the hash catalog hits limit has been breached for the threat hunt. This can be used to provide a warning for turbo threat hunts that the hunt is not conclusive. |
 | startTime | [DateTime](../scalars/DateTime.md) | Start time of the threat hunt. |
 | status | [ThreatHuntStatus](../enums/ThreatHuntStatus.md)! | Status of the threat hunt. |
-| totalMatchedSnapshots | [Long](../scalars/Long.md)! | Total number of snapshots for which malware was found and hunt succeeded, or partially succeeded, or is in progress. |
+| totalMatchedSnapshots | [Long](../scalars/Long.md)! | Total number of snapshots with at least one file or Windows registry key match where the hunt succeeded, partially succeeded, or is in progress. |
 | totalObjectFids | [Long](../scalars/Long.md)! | Total number of object FIDs. |
 | totalRegistryKeyMatches | [Long](../scalars/Long.md)! | Total number of Windows registry key matches. |
 | totalScannedSnapshots | [Long](../scalars/Long.md)! | Total number of snapshots across all objects selected for scan. |

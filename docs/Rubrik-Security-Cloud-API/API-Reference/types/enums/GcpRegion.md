@@ -48,7 +48,7 @@ GCP GCS locations (multi-regions, dual-regions, and regions). See https://docs.c
 | NORTHAMERICA_SOUTH1 | Queretaro, Mexico. |
 | SOUTHAMERICA_EAST1 | Sao Paulo, Brazil. |
 | SOUTHAMERICA_WEST1 | Santiago, Chile. |
-| UNKNOWN_GCP_REGION | Location not specified. |
+| UNKNOWN_GCP_REGION *(deprecated: Do not use. Specify a valid GCP region instead.)* | Location not specified. |
 | US | Multi-region: Data centers in the United States. |
 | USCENTRAL1 | Council Bluffs, Iowa. |
 | USEAST1 | Moncks Corner, South Carolina. |

@@ -21,6 +21,7 @@ Archival object information.
 | slaDomain | String! | SLA Domain of the object. |
 | storageTier | String! | Storage tier or class for this archival location (e.g. STANDARD, STANDARD_IA, COOL, ARCHIVE, GLACIER). The exact value space varies by location_type; consult cloud-provider tier documentation for the meaningful values per type. |
 | storageUsage | [Long](../scalars/Long.md)! | Archival storage usage of the object in bytes. |
+| workloadFid | String | FID of the object. Use this, not workloadId, for snapshot queries that require an object FID. |
 | workloadId | String | Internal ID of the object. |
 
 ## Used By

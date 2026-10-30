@@ -49,6 +49,7 @@ Cloud account features.
 | GCP_BIGQUERY_PROTECTION | Cloud account feature is GCP BigQuery Protection. |
 | GCP_BIGQUERY_RESERVATION | Cloud account feature is GCP BigQuery Reservation host. |
 | GCP_SHARED_VPC_HOST | Cloud account feature is GCP Shared VPC Host. |
+| GITHUB_ACTIONS_PROTECTION | GITHUB_ACTIONS_PROTECTION refers to the feature enabling protection of GitHub Actions workflow runs and run logs. |
 | GITHUB_DEVELOPER_COLLABORATION_PROTECTION | GITHUB_DEVELOPER_COLLABORATION_PROTECTION refers to the GitHub Developer Collaboration feature. |
 | GITHUB_PACKAGES_PROTECTION | GITHUB_PACKAGES_PROTECTION refers to the feature enabling protection of the packages published to a GitHub organization. |
 | GITHUB_REPOSITORY_PROTECTION | GITHUB_REPOSITORY_PROTECTION refers to the feature enabling protection of GitHub repositories and related workload. |

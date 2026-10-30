@@ -1,13 +1,13 @@
 # validateAwsNativeDynamoDbTableNameForRecovery
 
-Validates the DynamoDB table name provided by the user for recovery.
+ValidateAwsNativeDynamoDbTableNameForRecovery validates the recovery table name entered by the customer, authorizing the caller against the AWS Native account and gating on the DynamoDB feature flag.
 
 ## Arguments
 
 | Argument | Type | Description |
 |----------|------|-------------|
 | awsAccountRubrikId *(required)* | [UUID](../types/scalars/UUID.md)! | Rubrik ID for AWS account. |
-| dynamoDBTableNameForRecovery *(required)* | String! | Name of the DynamoDB table for recovery. |
+| dynamoDBTableNameForRecovery *(required)* | String! | Table name to validate for recovery. |
 | region *(required)* | [AwsNativeRegion](../types/enums/AwsNativeRegion.md)! | Region in AWS. |
 
 ## Returns

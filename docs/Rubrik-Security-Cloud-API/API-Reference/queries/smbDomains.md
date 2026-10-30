@@ -28,6 +28,7 @@ Paginated list of SMB domains.
           accountName
           dnsServers
           domainId
+          enableKerberosForSmb
           id
           isArchived
           name
@@ -61,9 +62,9 @@ Paginated list of SMB domains.
                   "example-string"
                 ],
                 "domainId": "example-string",
+                "enableKerberosForSmb": true,
                 "id": "00000000-0000-0000-0000-000000000000",
-                "isArchived": true,
-                "name": "example-string"
+                "isArchived": true
               }
             ]
           ],

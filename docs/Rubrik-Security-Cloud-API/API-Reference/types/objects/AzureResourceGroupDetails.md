@@ -14,6 +14,8 @@ Azure native resource group and subscription details.
 
 **Referenced by**
 
+- [AzureCosmosNosqlAccount.azureResourceGroupDetails](AzureCosmosNosqlAccount.md)
+- [AzureCosmosNosqlDatabase.azureResourceGroupDetails](AzureCosmosNosqlDatabase.md)
 - [AzureNativeManagedDisk.azureResourceGroupDetails](AzureNativeManagedDisk.md)
 - [AzureNativeVirtualMachine.azureResourceGroupDetails](AzureNativeVirtualMachine.md)
 - [AzurePostgresFlexibleServer.azureResourceGroupDetails](AzurePostgresFlexibleServer.md)

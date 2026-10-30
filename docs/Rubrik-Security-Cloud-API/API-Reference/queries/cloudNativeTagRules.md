@@ -8,7 +8,7 @@ Cloud native tag rules.
 |----------|------|-------------|
 | objectType *(required)* | [CloudNativeTagObjectType](../types/enums/CloudNativeTagObjectType.md)! | Type of managed object on which tag rule will be applied. |
 | filters | [[CloudNativeFilter](../types/inputs/CloudNativeFilter.md)!] | Fields and values according to which rules will be filtered. |
-| sortBy | [CloudNativeTagRuleSortByFields](../types/enums/CloudNativeTagRuleSortByFields.md) |  |
+| sortBy | [CloudNativeTagRuleSortByFields](../types/enums/CloudNativeTagRuleSortByFields.md) | Field according to which rules will be sorted. |
 | sortOrder | [SortOrder](../types/enums/SortOrder.md) | Sorts the order of results. |
 
 ## Returns

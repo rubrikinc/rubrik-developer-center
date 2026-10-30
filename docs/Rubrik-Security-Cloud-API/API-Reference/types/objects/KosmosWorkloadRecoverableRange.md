@@ -18,5 +18,6 @@ Kosmos Workload Recoverable Range.
 - [InformixInstance.recoverableRanges](InformixInstance.md)
 - [IrisdbInstance.recoverableRanges](IrisdbInstance.md)
 - KosmosSnappableHierarchyObjectType.recoverableRanges
+- [MariadbInstance.recoverableRanges](MariadbInstance.md)
 - [MysqldbInstance.recoverableRanges](MysqldbInstance.md)
 - [PostgreSQLDbCluster.recoverableRanges](PostgreSQLDbCluster.md)

@@ -1,9 +1,9 @@
 # FileVersionSourceEnum
 
-*No description available.*
+The location where a file version is stored.
 
 ## Values
 
 | Value | Description |
 |-------|-------------|
-| CLOUD |  |
+| CLOUD | The file version is stored in the cloud. |

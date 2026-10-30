@@ -16,6 +16,7 @@ Paginated list of MissedSnapshotCommon objects. Each page of the results include
 **Referenced by**
 
 - [ActiveDirectoryDomainController.missedSnapshotConnection](ActiveDirectoryDomainController.md)
+- [ActiveDirectoryForest.missedSnapshotConnection](ActiveDirectoryForest.md)
 - CdmHierarchySnappableNew.missedSnapshotConnection
 - [Db2Database.missedSnapshotConnection](Db2Database.md)
 - [ExchangeDatabase.missedSnapshotConnection](ExchangeDatabase.md)
@@ -29,6 +30,7 @@ Paginated list of MissedSnapshotCommon objects. Each page of the results include
 - [KubernetesVirtualMachine.missedSnapshotConnection](KubernetesVirtualMachine.md)
 - [LinuxFileset.missedSnapshotConnection](LinuxFileset.md)
 - [ManagedVolume.missedSnapshotConnection](ManagedVolume.md)
+- [MariadbInstance.missedSnapshotConnection](MariadbInstance.md)
 - [MissedSnapshotGroupBy.missedSnapshotConnection](MissedSnapshotGroupBy.md)
 - [MongoCollectionSet.missedSnapshotConnection](MongoCollectionSet.md)
 - [MongoSource.missedSnapshotConnection](MongoSource.md)
@@ -43,6 +45,4 @@ Paginated list of MissedSnapshotCommon objects. Each page of the results include
 - [OracleDatabase.missedSnapshotConnection](OracleDatabase.md)
 - [PingFederateClusterV1.missedSnapshotConnection](PingFederateClusterV1.md)
 - [PostgreSQLDbCluster.missedSnapshotConnection](PostgreSQLDbCluster.md)
-- [ProxmoxVirtualMachineV1.missedSnapshotConnection](ProxmoxVirtualMachineV1.md)
-- [PureStorageProtectionGroupV1.missedSnapshotConnection](PureStorageProtectionGroupV1.md)
-- *…and 9 more*
+- *…and 11 more*

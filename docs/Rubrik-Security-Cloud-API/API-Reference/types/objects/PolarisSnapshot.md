@@ -62,6 +62,9 @@ A cloud-managed snapshot type that extends the generic snapshot with additional 
 
 **Referenced by**
 
+- [AnthropicClaudeChatWorkload.newestIndexedSnapshot](AnthropicClaudeChatWorkload.md)
+- [AnthropicClaudeChatWorkload.newestSnapshot](AnthropicClaudeChatWorkload.md)
+- [AnthropicClaudeChatWorkload.oldestSnapshot](AnthropicClaudeChatWorkload.md)
 - [AwsNativeConfig.newestIndexedSnapshot](AwsNativeConfig.md)
 - [AwsNativeConfig.newestSnapshot](AwsNativeConfig.md)
 - [AwsNativeConfig.oldestSnapshot](AwsNativeConfig.md)
@@ -89,7 +92,4 @@ A cloud-managed snapshot type that extends the generic snapshot with additional 
 - [AzureDevOpsRepository.newestIndexedSnapshot](AzureDevOpsRepository.md)
 - [AzureDevOpsRepository.newestSnapshot](AzureDevOpsRepository.md)
 - [AzureDevOpsRepository.oldestSnapshot](AzureDevOpsRepository.md)
-- AzureNativeHierarchyObjectType.newestIndexedSnapshot
-- AzureNativeHierarchyObjectType.newestSnapshot
-- AzureNativeHierarchyObjectType.oldestSnapshot
-- *…and 108 more*
+- *…and 138 more*

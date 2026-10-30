@@ -8,6 +8,8 @@ List files with their deltas in a given snapshot, with optional search string fi
 |----------|------|-------------|
 | first | Int | Returns the first n elements from the list. |
 | after | String | An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results. |
+| last | Int | Returns the last n elements from the list. |
+| before | String | An opaque cursor returned from a previous query's startCursor field. Pass this value verbatim to retrieve the previous page of results. |
 | snapshotFid *(required)* | [UUID](../types/scalars/UUID.md)! | Snapshot persistent UUID in RSC. |
 | searchString | String | Optional search string to filter files by filename. |
 | filter | [SnapshotDeltaFilterInput](../types/inputs/SnapshotDeltaFilterInput.md) | Filter snapshot delta based on delta types. |

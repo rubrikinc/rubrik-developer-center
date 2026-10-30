@@ -6,7 +6,7 @@ Reply for listing Azure Local export target clusters.
 
 | Field | Type | Description |
 |-------|------|-------------|
-| clusters | [[AzureLocalExportTargetCluster](AzureLocalExportTargetCluster.md)!]! | Azure Local clusters eligible as export destinations for the requested snapshot. |
+| clusters | [[AzureLocalExportTargetCluster](AzureLocalExportTargetCluster.md)!]! | Azure Local clusters eligible as export destinations for the requested snapshot or source CDM cluster. |
 
 ## Used By
 

@@ -69,6 +69,7 @@ An object that can be backed-up by taking snapshots.
 - [DuplicatedVm.reportWorkload](DuplicatedVm.md)
 - [FusionComputeVirtualMachine.reportWorkload](FusionComputeVirtualMachine.md)
 - [HyperVVirtualMachine.reportWorkload](HyperVVirtualMachine.md)
+- [HypervisorVirtualMachineV1.reportWorkload](HypervisorVirtualMachineV1.md)
 - [KubernetesVirtualMachine.reportWorkload](KubernetesVirtualMachine.md)
 - [LinuxFileset.reportWorkload](LinuxFileset.md)
 - [ManagedVolume.reportWorkload](ManagedVolume.md)

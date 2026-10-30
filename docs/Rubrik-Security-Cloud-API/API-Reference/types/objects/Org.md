@@ -45,8 +45,15 @@ Details of an org.
 - [ActiveDirectoryDomainController.allOrgs](ActiveDirectoryDomainController.md)
 - ActiveDirectoryDomainDescendantType.allOrgs
 - ActiveDirectoryDomainPhysicalChildType.allOrgs
+- [ActiveDirectoryForest.allOrgs](ActiveDirectoryForest.md)
+- ActiveDirectoryForestDescendantType.allOrgs
+- ActiveDirectoryForestPhysicalChildType.allOrgs
 - [ActivitySeries.organizations](ActivitySeries.md)
+- [AnthropicChildOrg.allOrgs](AnthropicChildOrg.md)
+- [AnthropicClaudeChatWorkload.allOrgs](AnthropicClaudeChatWorkload.md)
 - [AnthropicOrg.allOrgs](AnthropicOrg.md)
+- [AnthropicOrgSetting.allOrgs](AnthropicOrgSetting.md)
+- [AnthropicUser.allOrgs](AnthropicUser.md)
 - [AtlassianSite.allOrgs](AtlassianSite.md)
 - [AwsNativeAccount.allOrgs](AwsNativeAccount.md)
 - AwsNativeAccountDescendantType.allOrgs
@@ -64,11 +71,4 @@ Details of an org.
 - [AzureCosmosNosqlContainer.allOrgs](AzureCosmosNosqlContainer.md)
 - [AzureCosmosNosqlDatabase.allOrgs](AzureCosmosNosqlDatabase.md)
 - [AzureDevOpsOrganization.allOrgs](AzureDevOpsOrganization.md)
-- [AzureDevOpsProject.allOrgs](AzureDevOpsProject.md)
-- [AzureDevOpsRepository.allOrgs](AzureDevOpsRepository.md)
-- AzureNativeHierarchyObjectType.allOrgs
-- [AzureNativeManagedDisk.allOrgs](AzureNativeManagedDisk.md)
-- [AzureNativeRegionManagedObject.allOrgs](AzureNativeRegionManagedObject.md)
-- [AzureNativeResourceGroup.allOrgs](AzureNativeResourceGroup.md)
-- [AzureNativeResourceGroupBase.allOrgs](AzureNativeResourceGroupBase.md)
-- *…and 339 more*
+- *…and 384 more*

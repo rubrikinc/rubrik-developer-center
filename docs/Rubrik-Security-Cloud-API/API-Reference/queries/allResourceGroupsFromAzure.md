@@ -1,6 +1,6 @@
 # allResourceGroupsFromAzure
 
-Retrieves a list og all resource groups in the specified account.
+Retrieves a list of all resource groups in the specified account.
 
 ## Arguments
 

@@ -2,7 +2,7 @@
 
 Proxmox virtual machine.
 
-**Implements:** [CdmHierarchyObject](../interfaces/CdmHierarchyObject.md), [HierarchyObject](../interfaces/HierarchyObject.md), [CdmHierarchySnappableNew](../interfaces/CdmHierarchySnappableNew.md), [HierarchySnappable](../interfaces/HierarchySnappable.md), [ProxmoxEnvironmentDescendant](../interfaces/ProxmoxEnvironmentDescendant.md), [ProxmoxClusterDescendant](../interfaces/ProxmoxClusterDescendant.md), [ProxmoxNodeDescendant](../interfaces/ProxmoxNodeDescendant.md), [ProxmoxEnvironmentPhysicalChildType](../interfaces/ProxmoxEnvironmentPhysicalChildType.md), [ProxmoxClusterPhysicalChildType](../interfaces/ProxmoxClusterPhysicalChildType.md), [ProxmoxNodePhysicalChildType](../interfaces/ProxmoxNodePhysicalChildType.md)
+**Implements:** [CdmHierarchyObject](../interfaces/CdmHierarchyObject.md), [HierarchyObject](../interfaces/HierarchyObject.md), [CdmHierarchySnappableNew](../interfaces/CdmHierarchySnappableNew.md), [HierarchySnappable](../interfaces/HierarchySnappable.md), [ProxmoxEnvironmentDescendant](../interfaces/ProxmoxEnvironmentDescendant.md), [ProxmoxClusterDescendant](../interfaces/ProxmoxClusterDescendant.md), [ProxmoxNodeDescendant](../interfaces/ProxmoxNodeDescendant.md), [ProxmoxEnvironmentPhysicalChildType](../interfaces/ProxmoxEnvironmentPhysicalChildType.md), [ProxmoxClusterPhysicalChildType](../interfaces/ProxmoxClusterPhysicalChildType.md), [ProxmoxNodePhysicalChildType](../interfaces/ProxmoxNodePhysicalChildType.md), [ProxmoxTagDescendant](../interfaces/ProxmoxTagDescendant.md), [ProxmoxTagLogicalChild](../interfaces/ProxmoxTagLogicalChild.md)
 
 ## Fields
 

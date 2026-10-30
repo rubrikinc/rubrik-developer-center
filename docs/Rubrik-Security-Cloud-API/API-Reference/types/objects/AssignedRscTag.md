@@ -23,7 +23,14 @@ Details of an RSC tag.
 - [ActiveDirectoryDomainController.allTags](ActiveDirectoryDomainController.md)
 - ActiveDirectoryDomainDescendantType.allTags
 - ActiveDirectoryDomainPhysicalChildType.allTags
+- [ActiveDirectoryForest.allTags](ActiveDirectoryForest.md)
+- ActiveDirectoryForestDescendantType.allTags
+- ActiveDirectoryForestPhysicalChildType.allTags
+- [AnthropicChildOrg.allTags](AnthropicChildOrg.md)
+- [AnthropicClaudeChatWorkload.allTags](AnthropicClaudeChatWorkload.md)
 - [AnthropicOrg.allTags](AnthropicOrg.md)
+- [AnthropicOrgSetting.allTags](AnthropicOrgSetting.md)
+- [AnthropicUser.allTags](AnthropicUser.md)
 - [AtlassianSite.allTags](AtlassianSite.md)
 - [AwsNativeAccount.allTags](AwsNativeAccount.md)
 - AwsNativeAccountDescendantType.allTags
@@ -42,11 +49,4 @@ Details of an RSC tag.
 - [AzureCosmosNosqlDatabase.allTags](AzureCosmosNosqlDatabase.md)
 - [AzureDevOpsOrganization.allTags](AzureDevOpsOrganization.md)
 - [AzureDevOpsProject.allTags](AzureDevOpsProject.md)
-- [AzureDevOpsRepository.allTags](AzureDevOpsRepository.md)
-- AzureNativeHierarchyObjectType.allTags
-- [AzureNativeManagedDisk.allTags](AzureNativeManagedDisk.md)
-- [AzureNativeRegionManagedObject.allTags](AzureNativeRegionManagedObject.md)
-- [AzureNativeResourceGroup.allTags](AzureNativeResourceGroup.md)
-- [AzureNativeResourceGroupBase.allTags](AzureNativeResourceGroupBase.md)
-- [AzureNativeSubscription.allTags](AzureNativeSubscription.md)
-- *…and 334 more*
+- *…and 379 more*

@@ -82,6 +82,7 @@ Polaris protectable object.
 
 ## Implemented By
 
+- [AnthropicClaudeChatWorkload](../objects/AnthropicClaudeChatWorkload.md)
 - [AwsNativeConfig](../objects/AwsNativeConfig.md)
 - [AwsNativeDynamoDbTable](../objects/AwsNativeDynamoDbTable.md)
 - [AwsNativeEbsVolume](../objects/AwsNativeEbsVolume.md)
@@ -97,6 +98,8 @@ Polaris protectable object.
 - [AzureSqlDatabaseDb](../objects/AzureSqlDatabaseDb.md)
 - [AzureSqlManagedInstanceDatabase](../objects/AzureSqlManagedInstanceDatabase.md)
 - [AzureStorageAccount](../objects/AzureStorageAccount.md)
+- [ConfluenceSpace](../objects/ConfluenceSpace.md)
+- [D365DataverseTable](../objects/D365DataverseTable.md)
 - [GcpAlloyDbCluster](../objects/GcpAlloyDbCluster.md)
 - [GcpBigQueryDataset](../objects/GcpBigQueryDataset.md)
 - [GcpCloudSqlInstance](../objects/GcpCloudSqlInstance.md)
@@ -104,6 +107,10 @@ Polaris protectable object.
 - [GcpNativeGceInstance](../objects/GcpNativeGceInstance.md)
 - [GithubRepository](../objects/GithubRepository.md)
 - [GlueIcebergTable](../objects/GlueIcebergTable.md)
+- [GoogleWorkspaceSharedDrive](../objects/GoogleWorkspaceSharedDrive.md)
+- [GoogleWorkspaceUserDrive](../objects/GoogleWorkspaceUserDrive.md)
+- [GoogleWorkspaceUserMailbox](../objects/GoogleWorkspaceUserMailbox.md)
+- [JiraProject](../objects/JiraProject.md)
 - [K8sNamespace](../objects/K8sNamespace.md)
 - [M365BackupStorageGroup](../objects/M365BackupStorageGroup.md)
 - [M365BackupStorageMailbox](../objects/M365BackupStorageMailbox.md)
@@ -119,5 +126,8 @@ Polaris protectable object.
 - [O365SharepointList](../objects/O365SharepointList.md)
 - [O365Site](../objects/O365Site.md)
 - [O365Teams](../objects/O365Teams.md)
+- [OktaTenant](../objects/OktaTenant.md)
+- [PowerPlatformApp](../objects/PowerPlatformApp.md)
+- [PowerPlatformFlow](../objects/PowerPlatformFlow.md)
 - [S3TablesIcebergTable](../objects/S3TablesIcebergTable.md)
 - [SalesforceObject](../objects/SalesforceObject.md)

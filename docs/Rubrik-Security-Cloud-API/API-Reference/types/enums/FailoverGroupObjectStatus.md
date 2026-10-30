@@ -6,6 +6,7 @@ Status of a host/object in a failover group.
 
 | Value | Description |
 |-------|-------------|
+| FAILOVER_GROUP_OBJECT_STATUS_ARCHIVED | Workload is archived on its cluster. |
 | FAILOVER_GROUP_OBJECT_STATUS_DISCONNECTED | Disconnected status. |
 | FAILOVER_GROUP_OBJECT_STATUS_FAILBACK_COMPLETED | Failback completed. |
 | FAILOVER_GROUP_OBJECT_STATUS_FAILBACK_IN_PROGRESS | Failback in progress. |

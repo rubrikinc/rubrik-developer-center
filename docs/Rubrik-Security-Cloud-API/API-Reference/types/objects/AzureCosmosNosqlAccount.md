@@ -12,6 +12,8 @@ An Azure Cosmos NoSQL account. Refers to the top-level Cosmos NoSQL resource tha
 | allOrgs | [[Org](Org.md)!]! | Organizations to which this hierarchy object belongs. |
 | allTags | [[AssignedRscTag](AssignedRscTag.md)!]! | RSC tags to which this hierarchy object is assigned. |
 | authorizedOperations | [[Operation](../enums/Operation.md)!]! | The authorized operations on the object. |
+| azureCosmosNosqlDatabaseCount | Int! | Number of databases in the Azure Cosmos NoSQL account as of the last inventory refresh. |
+| azureResourceGroupDetails | [AzureResourceGroupDetails](AzureResourceGroupDetails.md) | Resource group of the Azure Cosmos NoSQL account, including its subscription. |
 | cloudNativeId | String! | Azure resource ID of the Azure Cosmos NoSQL account. |
 | configuredSlaDomain | [SlaDomain](../interfaces/SlaDomain.md)! | SLA Domain configured for the hierarchy object. |
 | defaultConsistencyLevel | String! | Default consistency level of the account. Examples: Strong, BoundedStaleness, Session, ConsistentPrefix, Eventual. |

@@ -52,4 +52,5 @@ Descendants of a Proxmox environment.
 
 - [ProxmoxClusterV1](../objects/ProxmoxClusterV1.md)
 - [ProxmoxNodeV1](../objects/ProxmoxNodeV1.md)
+- [ProxmoxTagV1](../objects/ProxmoxTagV1.md)
 - [ProxmoxVirtualMachineV1](../objects/ProxmoxVirtualMachineV1.md)

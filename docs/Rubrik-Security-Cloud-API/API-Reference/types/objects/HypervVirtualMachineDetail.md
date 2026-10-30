@@ -18,9 +18,9 @@ Supported in v5.0+
 
 | Field | Argument | Type | Description |
 |-------|----------|------|-------------|
-| virtualDiskInfo | diskNameFilter | String | Filter Hyper-V virtual disk by name. |
-| virtualDiskInfo | sortBy | [HypervExcludeDiskSortByField](../enums/HypervExcludeDiskSortByField.md) | Sort by argument for hyper-v virtual hard disks. By default, name of the disk will be used. |
-| virtualDiskInfo | sortOrder | [SortOrder](../enums/SortOrder.md) | Sorts the order of results. |
+| virtualDiskInfo | diskNameFilter | String |  |
+| virtualDiskInfo | sortBy | [HypervExcludeDiskSortByField](../enums/HypervExcludeDiskSortByField.md) |  |
+| virtualDiskInfo | sortOrder | [SortOrder](../enums/SortOrder.md) |  |
 
 ## Used By
 

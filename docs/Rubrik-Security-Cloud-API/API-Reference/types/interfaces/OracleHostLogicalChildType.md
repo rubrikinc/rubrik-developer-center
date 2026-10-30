@@ -1,6 +1,6 @@
 # OracleHostLogicalChildType
 
-*No description available.*
+Logical child of the Oracle host object.
 
 ## Fields
 

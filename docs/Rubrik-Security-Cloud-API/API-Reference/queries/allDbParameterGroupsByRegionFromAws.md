@@ -1,6 +1,6 @@
 # allDbParameterGroupsByRegionFromAws
 
-List of all DB parameter groups in a given region. Refers to container for engine configuration that applies to one or more DB Instances. For more information, see https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_WorkingWithOptionGroups.html.
+ListDbParameterGroups returns the RDS DB parameter groups available in the given region of an AWS Native account.
 
 ## Arguments
 
@@ -8,9 +8,9 @@ List of all DB parameter groups in a given region. Refers to container for engin
 |----------|------|-------------|
 | awsAccountRubrikId *(required)* | [UUID](../types/scalars/UUID.md)! | Rubrik ID for AWS account. |
 | region *(required)* | [AwsNativeRegion](../types/enums/AwsNativeRegion.md)! | Region in AWS. |
-| dbEngine *(required)* | [AwsNativeRdsDbEngine](../types/enums/AwsNativeRdsDbEngine.md)! | DB Engine of RDS Instance. |
-| dbEngineVersion *(required)* | String! | Version of DB engine. |
-| rdsType | [AwsNativeRdsType](../types/enums/AwsNativeRdsType.md) | Type of RDS deployment. |
+| dbEngine *(required)* | [AwsNativeRdsDbEngine](../types/enums/AwsNativeRdsDbEngine.md)! | Database engine of the RDS instance. |
+| dbEngineVersion *(required)* | String! | Database engine version of the RDS instance. |
+| rdsType | [AwsNativeRdsType](../types/enums/AwsNativeRdsType.md) | Type of the RDS instance. Defaults to a regular RDS instance. |
 
 ## Returns
 

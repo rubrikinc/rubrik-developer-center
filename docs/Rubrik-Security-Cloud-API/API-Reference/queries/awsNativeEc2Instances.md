@@ -1,6 +1,6 @@
 # awsNativeEc2Instances
 
-Paginated list of all AWS EC2 Instances.
+Lists the AWS Native EC2 instances under the AWS-native hierarchy root.
 
 ## Arguments
 
@@ -10,11 +10,11 @@ Paginated list of all AWS EC2 Instances.
 | after | String | An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results. |
 | last | Int | Returns the last n elements from the list. |
 | before | String | An opaque cursor returned from a previous query's startCursor field. Pass this value verbatim to retrieve the previous page of results. |
-| sortBy | [AwsNativeEc2InstanceSortFields](../types/enums/AwsNativeEc2InstanceSortFields.md) | Sort fields for list of AWS EC2 instances. |
-| sortOrder | [SortOrder](../types/enums/SortOrder.md) | Sorts the order of results. |
-| descendantTypeFilter | [[HierarchyObjectTypeEnum](../types/enums/HierarchyObjectTypeEnum.md)!] | Filter the CDM cloud hosts by workload type. |
-| ec2InstanceFilters | [AwsNativeEc2InstanceFilters](../types/inputs/AwsNativeEc2InstanceFilters.md) | Filter for EC2 instances. |
-| includeSecurityMetadata | Boolean | Filter to include the security metadata. |
+| sortBy | [AwsNativeEc2InstanceSortFields](../types/enums/AwsNativeEc2InstanceSortFields.md) | Field of the EC2 instance to order the results by. Defaults to the instance name. |
+| sortOrder | [SortOrder](../types/enums/SortOrder.md) | Direction the results are ordered in. Defaults to ascending. |
+| descendantTypeFilter | [[HierarchyObjectTypeEnum](../types/enums/HierarchyObjectTypeEnum.md)!] | Filter the CDM cloud hosts by workload type: returns only the EC2 instances whose CDM host has a workload of one of these types. No filtering when empty. |
+| ec2InstanceFilters | [AwsNativeEc2InstanceFilters](../types/inputs/AwsNativeEc2InstanceFilters.md) | Narrows the results to the EC2 instances matching every filter supplied. Unset returns all non-relic instances. |
+| includeSecurityMetadata | Boolean | Whether to include each object's security metadata in the response. |
 
 ## Returns
 

@@ -23,6 +23,7 @@ Azure region Enum.
 | CHINAEAST2 | Azure region is China East 2. |
 | CHINANORTH | Azure region is China North. |
 | CHINANORTH2 | Azure region is China North 2. |
+| DENMARKEAST | Azure region is Denmark East. |
 | EASTASIA | Azure region is East Asia. |
 | EASTUS | Azure region is East US. |
 | EASTUS2 | Azure region is East US 2. |
@@ -30,6 +31,7 @@ Azure region Enum.
 | FRANCESOUTH | Azure region is France South. |
 | GERMANYNORTH | Azure region is Germany North. |
 | GERMANYWESTCENTRAL | Azure region is Germany West Central. |
+| INDIASOUTHCENTRAL | Azure region is India South Central. |
 | INDONESIACENTRAL | Azure region is Indonesia Central. |
 | ISRAELCENTRAL | Azure region is Israel Central. |
 | ITALYNORTH | Azure region is Italy North. |

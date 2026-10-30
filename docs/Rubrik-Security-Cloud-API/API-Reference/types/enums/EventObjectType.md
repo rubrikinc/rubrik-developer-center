@@ -285,6 +285,7 @@ Enum representing all the possible object types which generate events.
 | PROXMOX_CLUSTER | Proxmox cluster. |
 | PROXMOX_ENVIRONMENT | Proxmox environment. |
 | PROXMOX_NODE | Proxmox node. |
+| PROXMOX_TAG | Proxmox tag. |
 | PROXMOX_VIRTUAL_MACHINE | Proxmox virtual machine. |
 | PUBLIC_CLOUD_MACHINE_INSTANCE | Public cloud machine instance. |
 | PURE_STORAGE_ARRAY | Everpure FlashArray. |
@@ -315,6 +316,8 @@ Enum representing all the possible object types which generate events.
 | UNKNOWN_EVENT_OBJECT_TYPE | Unknown object type. |
 | USER | User. |
 | VCD_VAPP | VCD vApp. |
+| VCF_FLEET | VMware Cloud Foundation (VCF) fleet. An inventory hierarchy level above the VCF instances, not a protectable object. |
+| VCF_INSTANCE | VMware Cloud Foundation (VCF) instance. An inventory hierarchy level between a fleet and its vCenters, not a protectable object. |
 | VMWARE_COMPUTE_CLUSTER | VMware compute cluster. |
 | VMWARE_HOST | VMware host. |
 | VMWARE_VM | VMware virtual machine. |

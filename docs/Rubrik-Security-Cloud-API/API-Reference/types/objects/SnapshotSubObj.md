@@ -6,6 +6,7 @@ DataType representing the sub objects captured in a snapshot.
 
 | Field | Type | Description |
 |-------|------|-------------|
+| hpeVmeVmSubObj | [HpeVmeVmSubObject](HpeVmeVmSubObject.md) | A virtual disk captured in an HPE Virtual Machine Essentials virtual machine snapshot. |
 | nutanixVmSubObj | [NutanixVmSubObject](NutanixVmSubObject.md) | A virtual disk captured in a Nutanix virtual machine snapshot. |
 | olvmVmSubObj | [OlvmVmSubObject](OlvmVmSubObject.md) | A virtual disk captured in an OLVM virtual machine snapshot. |
 | openstackVmSubObj | [OpenstackVmSubObject](OpenstackVmSubObject.md) | A virtual disk captured in an Openstack virtual machine snapshot. |

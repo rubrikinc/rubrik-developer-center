@@ -18,6 +18,9 @@ The replicated cross-account object information.
 - [ActiveDirectoryDomainController.crossAccountReplicatedObjectInfos](ActiveDirectoryDomainController.md)
 - ActiveDirectoryDomainDescendantType.crossAccountReplicatedObjectInfos
 - ActiveDirectoryDomainPhysicalChildType.crossAccountReplicatedObjectInfos
+- [ActiveDirectoryForest.crossAccountReplicatedObjectInfos](ActiveDirectoryForest.md)
+- ActiveDirectoryForestDescendantType.crossAccountReplicatedObjectInfos
+- ActiveDirectoryForestPhysicalChildType.crossAccountReplicatedObjectInfos
 - CdmHierarchyObject.crossAccountReplicatedObjectInfos
 - [Db2Database.crossAccountReplicatedObjectInfos](Db2Database.md)
 - [Db2Instance.crossAccountReplicatedObjectInfos](Db2Instance.md)
@@ -41,7 +44,4 @@ The replicated cross-account object information.
 - [FusionComputeCluster.crossAccountReplicatedObjectInfos](FusionComputeCluster.md)
 - FusionComputeClusterDescendant.crossAccountReplicatedObjectInfos
 - FusionComputeClusterPhysicalChildType.crossAccountReplicatedObjectInfos
-- [FusionComputeDatastore.crossAccountReplicatedObjectInfos](FusionComputeDatastore.md)
-- [FusionComputeHost.crossAccountReplicatedObjectInfos](FusionComputeHost.md)
-- FusionComputeHostDescendant.crossAccountReplicatedObjectInfos
-- *…and 234 more*
+- *…and 263 more*

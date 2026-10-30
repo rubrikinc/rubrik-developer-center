@@ -18,3 +18,4 @@ The connection status of a host.
 - [OracleRac.connectionStatus](OracleRac.md)
 - [PhysicalHost.connectionStatus](PhysicalHost.md)
 - [PhysicalHostMetadata.connectionStatus](PhysicalHostMetadata.md)
+- [Vcd.vcdConnectionStatus](Vcd.md)

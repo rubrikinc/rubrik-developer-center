@@ -6,7 +6,7 @@ Attaching disks from a snapshot to an existing virtual machine  Supported in v9.
 
 | Argument | Type | Description |
 |----------|------|-------------|
-| input *(required)* | [CreateMountHypervVirtualDisksInput](../types/inputs/CreateMountHypervVirtualDisksInput.md)! | Input for InternalCreateMountHypervVirtualDisks. |
+| input *(required)* | [CreateMountHypervVirtualDisksInput](../types/inputs/CreateMountHypervVirtualDisksInput.md)! | Configuration for the disk mount job. |
 
 ## Returns
 

@@ -20,6 +20,7 @@ Paginated list of GenericSnapshot objects with additional pagination information
 
 **Referenced by**
 
+- [AnthropicClaudeChatWorkload.workloadSnapshotConnection](AnthropicClaudeChatWorkload.md)
 - [AwsNativeConfig.workloadSnapshotConnection](AwsNativeConfig.md)
 - [AwsNativeDynamoDbTable.workloadSnapshotConnection](AwsNativeDynamoDbTable.md)
 - [AwsNativeEbsVolume.workloadSnapshotConnection](AwsNativeEbsVolume.md)
@@ -36,6 +37,8 @@ Paginated list of GenericSnapshot objects with additional pagination information
 - [AzureSqlDatabaseDb.workloadSnapshotConnection](AzureSqlDatabaseDb.md)
 - [AzureSqlManagedInstanceDatabase.workloadSnapshotConnection](AzureSqlManagedInstanceDatabase.md)
 - [AzureStorageAccount.workloadSnapshotConnection](AzureStorageAccount.md)
+- [ConfluenceSpace.workloadSnapshotConnection](ConfluenceSpace.md)
+- [D365DataverseTable.workloadSnapshotConnection](D365DataverseTable.md)
 - [GcpAlloyDbCluster.workloadSnapshotConnection](GcpAlloyDbCluster.md)
 - [GcpBigQueryDataset.workloadSnapshotConnection](GcpBigQueryDataset.md)
 - [GcpCloudSqlInstance.workloadSnapshotConnection](GcpCloudSqlInstance.md)
@@ -43,11 +46,8 @@ Paginated list of GenericSnapshot objects with additional pagination information
 - [GcpNativeGceInstance.workloadSnapshotConnection](GcpNativeGceInstance.md)
 - [GithubRepository.workloadSnapshotConnection](GithubRepository.md)
 - [GlueIcebergTable.workloadSnapshotConnection](GlueIcebergTable.md)
-- [K8sNamespace.workloadSnapshotConnection](K8sNamespace.md)
-- [M365BackupStorageGroup.workloadSnapshotConnection](M365BackupStorageGroup.md)
-- [M365BackupStorageMailbox.workloadSnapshotConnection](M365BackupStorageMailbox.md)
-- [M365BackupStorageOnedrive.workloadSnapshotConnection](M365BackupStorageOnedrive.md)
-- [M365BackupStorageOrg.workloadSnapshotConnection](M365BackupStorageOrg.md)
-- [M365BackupStorageSite.workloadSnapshotConnection](M365BackupStorageSite.md)
-- MicrosoftGroup.workloadSnapshotConnection
-- *…and 16 more*
+- [GoogleWorkspaceSharedDrive.workloadSnapshotConnection](GoogleWorkspaceSharedDrive.md)
+- [GoogleWorkspaceUserDrive.workloadSnapshotConnection](GoogleWorkspaceUserDrive.md)
+- [GoogleWorkspaceUserMailbox.workloadSnapshotConnection](GoogleWorkspaceUserMailbox.md)
+- [JiraProject.workloadSnapshotConnection](JiraProject.md)
+- *…and 26 more*

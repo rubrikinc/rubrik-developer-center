@@ -22,6 +22,9 @@ Data Location.
 - [ActiveDirectoryDomainController.primaryClusterLocation](ActiveDirectoryDomainController.md)
 - ActiveDirectoryDomainDescendantType.primaryClusterLocation
 - ActiveDirectoryDomainPhysicalChildType.primaryClusterLocation
+- [ActiveDirectoryForest.primaryClusterLocation](ActiveDirectoryForest.md)
+- ActiveDirectoryForestDescendantType.primaryClusterLocation
+- ActiveDirectoryForestPhysicalChildType.primaryClusterLocation
 - CdmHierarchyObject.primaryClusterLocation
 - CdmHierarchySnappableNew.primaryClusterLocation
 - [CdmSnapshot.archivalLocations](CdmSnapshot.md)
@@ -45,7 +48,4 @@ Data Location.
 - FailoverClusterAppDescendantType.primaryClusterLocation
 - FailoverClusterAppPhysicalChildType.primaryClusterLocation
 - FailoverClusterTopLevelDescendantType.primaryClusterLocation
-- [FilesetTemplate.primaryClusterLocation](FilesetTemplate.md)
-- FilesetTemplateDescendantType.primaryClusterLocation
-- FilesetTemplatePhysicalChildType.primaryClusterLocation
-- *…and 241 more*
+- *…and 270 more*

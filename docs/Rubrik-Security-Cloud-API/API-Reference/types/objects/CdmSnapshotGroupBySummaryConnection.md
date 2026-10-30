@@ -16,6 +16,7 @@ Paginated list of CdmSnapshotGroupBySummary objects. Each page of the results in
 **Referenced by**
 
 - [ActiveDirectoryDomainController.snapshotGroupBySummary](ActiveDirectoryDomainController.md)
+- [ActiveDirectoryForest.snapshotGroupBySummary](ActiveDirectoryForest.md)
 - CdmHierarchySnappableNew.snapshotGroupBySummary
 - [Db2Database.snapshotGroupBySummary](Db2Database.md)
 - [ExchangeDatabase.snapshotGroupBySummary](ExchangeDatabase.md)
@@ -29,6 +30,7 @@ Paginated list of CdmSnapshotGroupBySummary objects. Each page of the results in
 - [KubernetesVirtualMachine.snapshotGroupBySummary](KubernetesVirtualMachine.md)
 - [LinuxFileset.snapshotGroupBySummary](LinuxFileset.md)
 - [ManagedVolume.snapshotGroupBySummary](ManagedVolume.md)
+- [MariadbInstance.snapshotGroupBySummary](MariadbInstance.md)
 - [MongoCollectionSet.snapshotGroupBySummary](MongoCollectionSet.md)
 - [MongoSource.snapshotGroupBySummary](MongoSource.md)
 - [MssqlDatabase.snapshotGroupBySummary](MssqlDatabase.md)
@@ -43,6 +45,4 @@ Paginated list of CdmSnapshotGroupBySummary objects. Each page of the results in
 - [PingFederateClusterV1.snapshotGroupBySummary](PingFederateClusterV1.md)
 - [PostgreSQLDbCluster.snapshotGroupBySummary](PostgreSQLDbCluster.md)
 - [ProxmoxVirtualMachineV1.snapshotGroupBySummary](ProxmoxVirtualMachineV1.md)
-- [PureStorageProtectionGroupV1.snapshotGroupBySummary](PureStorageProtectionGroupV1.md)
-- [PureStorageVolumeV1.snapshotGroupBySummary](PureStorageVolumeV1.md)
-- *…and 8 more*
+- *…and 10 more*

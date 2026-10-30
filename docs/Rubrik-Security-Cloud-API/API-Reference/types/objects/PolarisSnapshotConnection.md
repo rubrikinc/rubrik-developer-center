@@ -15,6 +15,7 @@ Paginated list of PolarisSnapshot objects. Each page of the results includes at 
 
 **Referenced by**
 
+- [AnthropicClaudeChatWorkload.snapshotConnection](AnthropicClaudeChatWorkload.md)
 - [AwsNativeConfig.snapshotConnection](AwsNativeConfig.md)
 - [AwsNativeDynamoDbTable.snapshotConnection](AwsNativeDynamoDbTable.md)
 - [AwsNativeEbsVolume.snapshotConnection](AwsNativeEbsVolume.md)
@@ -31,6 +32,8 @@ Paginated list of PolarisSnapshot objects. Each page of the results includes at 
 - [AzureSqlDatabaseDb.snapshotConnection](AzureSqlDatabaseDb.md)
 - [AzureSqlManagedInstanceDatabase.snapshotConnection](AzureSqlManagedInstanceDatabase.md)
 - [AzureStorageAccount.snapshotConnection](AzureStorageAccount.md)
+- [ConfluenceSpace.snapshotConnection](ConfluenceSpace.md)
+- [D365DataverseTable.snapshotConnection](D365DataverseTable.md)
 - [GcpAlloyDbCluster.snapshotConnection](GcpAlloyDbCluster.md)
 - [GcpBigQueryDataset.snapshotConnection](GcpBigQueryDataset.md)
 - [GcpCloudSqlInstance.snapshotConnection](GcpCloudSqlInstance.md)
@@ -38,11 +41,8 @@ Paginated list of PolarisSnapshot objects. Each page of the results includes at 
 - [GcpNativeGceInstance.snapshotConnection](GcpNativeGceInstance.md)
 - [GithubRepository.snapshotConnection](GithubRepository.md)
 - [GlueIcebergTable.snapshotConnection](GlueIcebergTable.md)
-- [K8sNamespace.snapshotConnection](K8sNamespace.md)
-- [M365BackupStorageGroup.snapshotConnection](M365BackupStorageGroup.md)
-- [M365BackupStorageMailbox.snapshotConnection](M365BackupStorageMailbox.md)
-- [M365BackupStorageOnedrive.snapshotConnection](M365BackupStorageOnedrive.md)
-- [M365BackupStorageOrg.snapshotConnection](M365BackupStorageOrg.md)
-- [M365BackupStorageSite.snapshotConnection](M365BackupStorageSite.md)
-- MicrosoftGroup.snapshotConnection
-- *…and 18 more*
+- [GoogleWorkspaceSharedDrive.snapshotConnection](GoogleWorkspaceSharedDrive.md)
+- [GoogleWorkspaceUserDrive.snapshotConnection](GoogleWorkspaceUserDrive.md)
+- [GoogleWorkspaceUserMailbox.snapshotConnection](GoogleWorkspaceUserMailbox.md)
+- [JiraProject.snapshotConnection](JiraProject.md)
+- *…and 28 more*

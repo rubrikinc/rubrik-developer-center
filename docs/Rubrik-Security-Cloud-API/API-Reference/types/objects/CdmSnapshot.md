@@ -26,6 +26,7 @@ A snapshot of a workload managed by a Rubrik cluster.
 | expiryHint | Boolean! | Whether the snapshot uses an expiry hint. |
 | fileCount | [Long](../scalars/Long.md)! | Number of files in the snapshot. |
 | hasDelta | Boolean! | Whether the snapshot has incremental delta changes. |
+| hpeVmeResourceSpec | [HpeVmeResourceSpec](HpeVmeResourceSpec.md) | Sizing and placement of the HPE Virtual Machine Essentials virtual machine when the snapshot was taken. Null if the snapshot is not of an HPE Virtual Machine Essentials virtual machine or carries no resource spec. |
 | hypervVirtualMachineAppMetadata | [HypervAppMetadata](HypervAppMetadata.md) | Hyper-V virtual machine-specific metadata. Null if the snapshot is not of a Hyper-V virtual machine. |
 | id | [UUID](../scalars/UUID.md)! | Unique identifier for this snapshot. |
 | indexingAttempts | [Long](../scalars/Long.md)! | Number of indexing attempts. |
@@ -89,6 +90,11 @@ A snapshot of a workload managed by a Rubrik cluster.
 - [ActiveDirectoryDomainController.newestReplicatedSnapshot](ActiveDirectoryDomainController.md)
 - [ActiveDirectoryDomainController.newestSnapshot](ActiveDirectoryDomainController.md)
 - [ActiveDirectoryDomainController.oldestSnapshot](ActiveDirectoryDomainController.md)
+- [ActiveDirectoryForest.newestArchivedSnapshot](ActiveDirectoryForest.md)
+- [ActiveDirectoryForest.newestIndexedSnapshot](ActiveDirectoryForest.md)
+- [ActiveDirectoryForest.newestReplicatedSnapshot](ActiveDirectoryForest.md)
+- [ActiveDirectoryForest.newestSnapshot](ActiveDirectoryForest.md)
+- [ActiveDirectoryForest.oldestSnapshot](ActiveDirectoryForest.md)
 - [ActiveDirectorySearchVersions.snapshot](ActiveDirectorySearchVersions.md)
 - [AdVolumeExport.sourceSnapshot](AdVolumeExport.md)
 - [AnomalyResult.snapshot](AnomalyResult.md)
@@ -108,9 +114,4 @@ A snapshot of a workload managed by a Rubrik cluster.
 - [ExchangeDatabase.newestReplicatedSnapshot](ExchangeDatabase.md)
 - [ExchangeDatabase.newestSnapshot](ExchangeDatabase.md)
 - [ExchangeDatabase.oldestSnapshot](ExchangeDatabase.md)
-- [ExchangeLiveMount.sourceSnapshot](ExchangeLiveMount.md)
-- [FusionComputeVirtualMachine.newestArchivedSnapshot](FusionComputeVirtualMachine.md)
-- [FusionComputeVirtualMachine.newestIndexedSnapshot](FusionComputeVirtualMachine.md)
-- [FusionComputeVirtualMachine.newestReplicatedSnapshot](FusionComputeVirtualMachine.md)
-- [FusionComputeVirtualMachine.newestSnapshot](FusionComputeVirtualMachine.md)
-- *…and 179 more*
+- *…and 189 more*

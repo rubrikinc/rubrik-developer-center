@@ -6,7 +6,7 @@ Update SLA Domain.
 
 | Argument | Type | Description |
 |----------|------|-------------|
-| input *(required)* | [UpdateGlobalSlaInput](../types/inputs/UpdateGlobalSlaInput.md)! |  |
+| input *(required)* | [UpdateGlobalSlaInput](../types/inputs/UpdateGlobalSlaInput.md)! | Input to update SLA Domain. |
 
 ## Returns
 
