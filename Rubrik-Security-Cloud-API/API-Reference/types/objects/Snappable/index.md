@@ -69,6 +69,7 @@ An object that can be backed-up by taking snapshots.
 - [DuplicatedVm.reportWorkload](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/DuplicatedVm/index.md)
 - [FusionComputeVirtualMachine.reportWorkload](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/FusionComputeVirtualMachine/index.md)
 - [HyperVVirtualMachine.reportWorkload](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/HyperVVirtualMachine/index.md)
+- [HypervisorVirtualMachineV1.reportWorkload](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/HypervisorVirtualMachineV1/index.md)
 - [KubernetesVirtualMachine.reportWorkload](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/KubernetesVirtualMachine/index.md)
 - [LinuxFileset.reportWorkload](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/LinuxFileset/index.md)
 - [ManagedVolume.reportWorkload](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/ManagedVolume/index.md)

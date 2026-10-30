@@ -45,6 +45,7 @@ query AllArchivalPerObjectInfo($activeOnly: Boolean!, $useCase: ArchivalEntityUs
       slaDomain
       storageTier
       storageUsage
+      workloadFid
       workloadId
     }
     pageInfo {

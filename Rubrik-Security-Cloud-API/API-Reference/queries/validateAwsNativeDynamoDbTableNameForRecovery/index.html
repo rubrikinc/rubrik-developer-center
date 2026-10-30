@@ -938,7 +938,7 @@
 
 
 <h1 id="validateawsnativedynamodbtablenameforrecovery">validateAwsNativeDynamoDbTableNameForRecovery</h1>
-<p>Validates the DynamoDB table name provided by the user for recovery.</p>
+<p>ValidateAwsNativeDynamoDbTableNameForRecovery validates the recovery table name entered by the customer, authorizing the caller against the AWS Native account and gating on the DynamoDB feature flag.</p>
 <h2 id="arguments">Arguments</h2>
 <table>
 <thead>
@@ -957,7 +957,7 @@
 <tr>
 <td>dynamoDBTableNameForRecovery <em>(required)</em></td>
 <td>String!</td>
-<td>Name of the DynamoDB table for recovery.</td>
+<td>Table name to validate for recovery.</td>
 </tr>
 <tr>
 <td>region <em>(required)</em></td>

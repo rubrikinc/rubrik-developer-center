@@ -17,6 +17,7 @@ Name of product.
 | ATLASSIAN_CONFLUENCE                         | Atlassian Confluence protection.                              |
 | ATLASSIAN_JIRA                               | Atlassian Jira protection.                                    |
 | AWS_BAAS                                     | AWS BaaS.                                                     |
+| AWS_BAAS_STORAGE                             | Rubrik-managed storage (BETB) for AWS Backup as a Service.    |
 | BAAS_UNSTRUCTURED                            | BaaS Cloud Unstructured (S3) data protection.                 |
 | CC_ES                                        | Cloud Cluster ES.                                             |
 | CLOUDNATIVE                                  | CloudNative.                                                  |

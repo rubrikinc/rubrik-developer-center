@@ -16,11 +16,11 @@ Supported in v5.0+
 
 ## Field Arguments
 
-| Field           | Argument       | Type                                                                                                                                                   | Description                                                                                 |
-| --------------- | -------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------- |
-| virtualDiskInfo | diskNameFilter | String                                                                                                                                                 | Filter Hyper-V virtual disk by name.                                                        |
-| virtualDiskInfo | sortBy         | [HypervExcludeDiskSortByField](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/HypervExcludeDiskSortByField/index.md) | Sort by argument for hyper-v virtual hard disks. By default, name of the disk will be used. |
-| virtualDiskInfo | sortOrder      | [SortOrder](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/SortOrder/index.md)                                       | Sorts the order of results.                                                                 |
+| Field           | Argument       | Type                                                                                                                                                   | Description |
+| --------------- | -------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ | ----------- |
+| virtualDiskInfo | diskNameFilter | String                                                                                                                                                 |             |
+| virtualDiskInfo | sortBy         | [HypervExcludeDiskSortByField](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/HypervExcludeDiskSortByField/index.md) |             |
+| virtualDiskInfo | sortOrder      | [SortOrder](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/SortOrder/index.md)                                       |             |
 
 ## Used By
 

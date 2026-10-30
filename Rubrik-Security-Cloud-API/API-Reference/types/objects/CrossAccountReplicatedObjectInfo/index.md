@@ -18,6 +18,9 @@ The replicated cross-account object information.
 - [ActiveDirectoryDomainController.crossAccountReplicatedObjectInfos](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/ActiveDirectoryDomainController/index.md)
 - ActiveDirectoryDomainDescendantType.crossAccountReplicatedObjectInfos
 - ActiveDirectoryDomainPhysicalChildType.crossAccountReplicatedObjectInfos
+- [ActiveDirectoryForest.crossAccountReplicatedObjectInfos](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/ActiveDirectoryForest/index.md)
+- ActiveDirectoryForestDescendantType.crossAccountReplicatedObjectInfos
+- ActiveDirectoryForestPhysicalChildType.crossAccountReplicatedObjectInfos
 - CdmHierarchyObject.crossAccountReplicatedObjectInfos
 - [Db2Database.crossAccountReplicatedObjectInfos](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/Db2Database/index.md)
 - [Db2Instance.crossAccountReplicatedObjectInfos](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/Db2Instance/index.md)
@@ -41,7 +44,4 @@ The replicated cross-account object information.
 - [FusionComputeCluster.crossAccountReplicatedObjectInfos](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/FusionComputeCluster/index.md)
 - FusionComputeClusterDescendant.crossAccountReplicatedObjectInfos
 - FusionComputeClusterPhysicalChildType.crossAccountReplicatedObjectInfos
-- [FusionComputeDatastore.crossAccountReplicatedObjectInfos](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/FusionComputeDatastore/index.md)
-- [FusionComputeHost.crossAccountReplicatedObjectInfos](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/FusionComputeHost/index.md)
-- FusionComputeHostDescendant.crossAccountReplicatedObjectInfos
-- *…and 234 more*
+- *…and 263 more*

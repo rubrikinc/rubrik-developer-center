@@ -927,7 +927,7 @@
 
 
 <h1 id="vcd">Vcd</h1>
-<p><em>No description available.</em></p>
+<p>A vCloud Director instance.</p>
 <p><strong>Implements:</strong> <a href="../../interfaces/HierarchyObject/">HierarchyObject</a>, <a href="../../interfaces/CdmHierarchyObject/">CdmHierarchyObject</a>, <a href="../../interfaces/VcdTopLevelDescendantType/">VcdTopLevelDescendantType</a></p>
 <h2 id="fields">Fields</h2>
 <table>
@@ -1015,6 +1015,11 @@
 <td>Path node of the effective SLA Domain source.</td>
 </tr>
 <tr>
+<td>futureLegalHoldInfo</td>
+<td><a href="../FutureLegalHoldInfo/">FutureLegalHoldInfo</a></td>
+<td>Future legal hold rule configured for this object, if any.</td>
+</tr>
+<tr>
 <td>hostname</td>
 <td>String!</td>
 <td>The hostname of VCD instance.</td>
@@ -1033,6 +1038,11 @@
 <td>latestUserNote</td>
 <td><a href="../LatestUserNote/">LatestUserNote</a></td>
 <td>Latest user note information.</td>
+</tr>
+<tr>
+<td>legallyHeldSnapshotCount</td>
+<td>Int</td>
+<td>Number of snapshots on legal hold for this object.</td>
 </tr>
 <tr>
 <td>logicalChildConnection</td>

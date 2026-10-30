@@ -938,7 +938,7 @@
 
 
 <h1 id="hypervtopleveldescendants">hypervTopLevelDescendants</h1>
-<p>Paginated list of the highest-level HyperV Objects accessible by the current user.</p>
+<p>Paginated list of the highest-level HyperV objects accessible by the current user.</p>
 <h2 id="arguments">Arguments</h2>
 <table>
 <thead>
@@ -960,9 +960,24 @@
 <td>An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results.</td>
 </tr>
 <tr>
+<td>last</td>
+<td>Int</td>
+<td>Returns the last n elements from the list.</td>
+</tr>
+<tr>
+<td>before</td>
+<td>String</td>
+<td>An opaque cursor returned from a previous query's startCursor field. Pass this value verbatim to retrieve the previous page of results.</td>
+</tr>
+<tr>
+<td>filter</td>
+<td>[<a href="../../types/inputs/Filter/">Filter</a>!]</td>
+<td>Hierarchy object filters.</td>
+</tr>
+<tr>
 <td>sortBy</td>
 <td><a href="../../types/enums/HierarchySortByField/">HierarchySortByField</a></td>
-<td>Sort hierarchy objects according to the hierarchy field.</td>
+<td>Field to sort the returned descendants by.</td>
 </tr>
 <tr>
 <td>sortOrder</td>
@@ -973,11 +988,6 @@
 <td>typeFilter</td>
 <td>[<a href="../../types/enums/HierarchyObjectTypeEnum/">HierarchyObjectTypeEnum</a>!]</td>
 <td>Types of objects to include.</td>
-</tr>
-<tr>
-<td>filter</td>
-<td>[<a href="../../types/inputs/Filter/">Filter</a>!]</td>
-<td>Hierarchy object filter.</td>
 </tr>
 </tbody>
 </table>

@@ -950,6 +950,26 @@
 </thead>
 <tbody>
 <tr>
+<td>first</td>
+<td>Int</td>
+<td>Returns the first n elements from the list.</td>
+</tr>
+<tr>
+<td>after</td>
+<td>String</td>
+<td>An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results.</td>
+</tr>
+<tr>
+<td>last</td>
+<td>Int</td>
+<td>Returns the last n elements from the list.</td>
+</tr>
+<tr>
+<td>before</td>
+<td>String</td>
+<td>An opaque cursor returned from a previous query's startCursor field. Pass this value verbatim to retrieve the previous page of results.</td>
+</tr>
+<tr>
 <td>rootOptionalFid</td>
 <td><a href="../../types/scalars/UUID/">UUID</a></td>
 <td>Forever UUID of the object root. The value of  <code>none</code> represents the global hierarchy root.</td>
@@ -978,26 +998,6 @@
 <td>sortOrder</td>
 <td><a href="../../types/enums/SortOrder/">SortOrder</a></td>
 <td>Sorts the order of results.</td>
-</tr>
-<tr>
-<td>first</td>
-<td>Int</td>
-<td>Returns the first n elements from the list.</td>
-</tr>
-<tr>
-<td>after</td>
-<td>String</td>
-<td>An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results.</td>
-</tr>
-<tr>
-<td>last</td>
-<td>Int</td>
-<td>Returns the last n elements from the list.</td>
-</tr>
-<tr>
-<td>before</td>
-<td>String</td>
-<td>An opaque cursor returned from a previous query's startCursor field. Pass this value verbatim to retrieve the previous page of results.</td>
 </tr>
 </tbody>
 </table>

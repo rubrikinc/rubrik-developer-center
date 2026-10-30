@@ -916,7 +916,7 @@
 
 
 <h1 id="azureexocomputeoptionalconfiginregioninput">AzureExocomputeOptionalConfigInRegionInput</h1>
-<p>Represents optional parameters that are to be configured during the configuration of exocompute for azure.</p>
+<p>Represents optional parameters to be configured during the exocompute configuration for Azure.</p>
 <h2 id="fields">Fields</h2>
 <table>
 <thead>
@@ -940,7 +940,7 @@
 <tr>
 <td>aksClusterTier</td>
 <td><a href="../../enums/AKSProvisionTier/">AKSProvisionTier</a></td>
-<td>Cluster tier of the provisioned aks cluster.</td>
+<td>Cluster tier of the provisioned AKS cluster.</td>
 </tr>
 <tr>
 <td>aksCustomPrivateDnsZoneId</td>
@@ -950,7 +950,7 @@
 <tr>
 <td>aksNodeCountBucket</td>
 <td><a href="../../enums/AKSNodeCountBucket/">AKSNodeCountBucket</a></td>
-<td>Bucket to determine the node count in the aks cluster.</td>
+<td>Bucket to determine the node count in the AKS cluster.</td>
 </tr>
 <tr>
 <td>aksNodeRgPrefix</td>
@@ -958,14 +958,19 @@
 <td>Resource group prefix for AKS nodes.</td>
 </tr>
 <tr>
+<td>aksPrivateDnsZoneMode</td>
+<td><a href="../../enums/AksPrivateDnsZoneMode/">AksPrivateDnsZoneMode</a></td>
+<td>Private DNS zone mode for the API server of a private AKS cluster.</td>
+</tr>
+<tr>
 <td>azurePostgresFlexServerPrivateDnsZoneId</td>
 <td>String</td>
-<td>Azure resource ID of the private DNS zone used to resolve FQDNs of Rubrik-managed Azure Postgres Flexible Servers from the exocompute subnet. The DNS zone name must end with '.postgres.database.azure.com' and be linked to the exocompute VNet. Per-region only: not valid on the globalConfig argument of azureExocomputeConfigsUpdate.</td>
+<td>Azure resource ID of the private DNS zone used to resolve FQDNs of Rubrik-managed Azure Postgres Flexible Servers from the exocompute subnet.</td>
 </tr>
 <tr>
 <td>azurePostgresFlexServerSubnetNativeId</td>
 <td>String</td>
-<td>Azure resource ID of the subnet, in the exocompute VNet, that is delegated to Microsoft.DBforPostgreSQL/flexibleServers. Used for VNet integration of Rubrik-managed Azure Postgres Flexible Servers. Must be different from the exocompute (AKS) subnet. Per-region only: not valid on the globalConfig argument of azureExocomputeConfigsUpdate.</td>
+<td>Azure resource ID of the subnet, in the exocompute VNet, that is delegated to Microsoft.DBforPostgreSQL/flexibleServers. This subnet is used for VNet integration of Rubrik-managed Azure Postgres Flexible Servers. Must be different from the exocompute (AKS) subnet - AKS cannot launch in a delegated subnet. Minimum subnet size: /28 (16 IPs). This is Azure's hard requirement for Postgres Flexible Server delegated subnets - Azure reserves 5 addresses per delegated subnet for its own use, so a smaller prefix cannot host any Postgres instance.</td>
 </tr>
 <tr>
 <td>azureSqlPrivateDnsZoneId</td>
@@ -990,7 +995,7 @@
 <tr>
 <td>healthCheckVmNamePrefix</td>
 <td>String</td>
-<td>Customer-configured name prefix for the health-check launch virtual machine. When empty, the default prefix is used; a Rubrik-owned marker and a UUID suffix are appended automatically and are not part of this value.</td>
+<td>Customer-configured name prefix for the health-check launch virtual machine. When empty, the default prefix is used. A Rubrik-owned marker and a UUID suffix are appended automatically and are not part of this value.</td>
 </tr>
 <tr>
 <td>privateDnsZoneId</td>

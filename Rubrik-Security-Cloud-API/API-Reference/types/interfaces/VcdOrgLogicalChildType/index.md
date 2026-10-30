@@ -50,4 +50,6 @@ A logical child of a vCD organization.
 
 ## Implemented By
 
+- [VcdCatalog](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/VcdCatalog/index.md)
+- [VcdOrgVdc](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/VcdOrgVdc/index.md)
 - [VsphereVm](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/VsphereVm/index.md)

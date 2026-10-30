@@ -1,6 +1,6 @@
 # AzureCloudAccountSubscription
 
-Azure Cloud Account Subscription for a given feature.
+AzureSubscription is a representation of the native Azure subscription.
 
 ## Fields
 

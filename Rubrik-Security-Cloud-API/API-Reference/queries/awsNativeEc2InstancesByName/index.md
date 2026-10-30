@@ -1,6 +1,6 @@
 # awsNativeEc2InstancesByName
 
-Paginated list of all AWS EC2 Instances by name or substring of name.
+Lists the AWS Native EC2 instances under the AWS-native hierarchy root whose name or instance ID matches the given substring.
 
 ## Arguments
 
@@ -10,9 +10,10 @@ Paginated list of all AWS EC2 Instances by name or substring of name.
 | after                        | String                                                                                                                                                     | An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results.       |
 | last                         | Int                                                                                                                                                        | Returns the last n elements from the list.                                                                                              |
 | before                       | String                                                                                                                                                     | An opaque cursor returned from a previous query's startCursor field. Pass this value verbatim to retrieve the previous page of results. |
-| sortBy                       | [AwsNativeEc2InstanceSortFields](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/AwsNativeEc2InstanceSortFields/index.md) | Sort fields for list of AWS EC2 instances.                                                                                              |
-| sortOrder                    | [SortOrder](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/SortOrder/index.md)                                           | Sorts the order of results.                                                                                                             |
-| ec2InstanceName *(required)* | String!                                                                                                                                                    | Native name for the AWS EC2 Instance object.                                                                                            |
+| sortBy                       | [AwsNativeEc2InstanceSortFields](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/AwsNativeEc2InstanceSortFields/index.md) | Field of the EC2 instance to order the results by. Defaults to the instance name.                                                       |
+| sortOrder                    | [SortOrder](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/SortOrder/index.md)                                           | Direction the results are ordered in. Defaults to ascending.                                                                            |
+| ec2InstanceName *(required)* | String!                                                                                                                                                    | Case-insensitive substring matched against each EC2 instance's name and instance ID.                                                    |
+| includeSecurityMetadata      | Boolean                                                                                                                                                    | Whether to include each object's security metadata in the response.                                                                     |
 
 ## Returns
 

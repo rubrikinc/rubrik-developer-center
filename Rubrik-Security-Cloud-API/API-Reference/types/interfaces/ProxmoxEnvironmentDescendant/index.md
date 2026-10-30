@@ -52,4 +52,5 @@ Descendants of a Proxmox environment.
 
 - [ProxmoxClusterV1](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/ProxmoxClusterV1/index.md)
 - [ProxmoxNodeV1](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/ProxmoxNodeV1/index.md)
+- [ProxmoxTagV1](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/ProxmoxTagV1/index.md)
 - [ProxmoxVirtualMachineV1](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/ProxmoxVirtualMachineV1/index.md)

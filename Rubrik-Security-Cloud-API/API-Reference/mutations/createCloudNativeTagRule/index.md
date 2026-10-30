@@ -1,6 +1,6 @@
 # createCloudNativeTagRule
 
-Create cloud native tag rule
+Tag Rules CRUD Create cloud native tag rule
 
 ## Arguments
 

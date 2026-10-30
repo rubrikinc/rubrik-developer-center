@@ -916,7 +916,7 @@
 
 
 <h1 id="clusterfilterinput">ClusterFilterInput</h1>
-<p>Filters for the cluster list.</p>
+<p>Input to filter clusters for the cluster list.</p>
 <h2 id="fields">Fields</h2>
 <table>
 <thead>
@@ -965,12 +965,17 @@
 <tr>
 <td>isInFatalOrDisconnectedState</td>
 <td>Boolean</td>
-<td>Include Rubrik clusters which are disconnected  or in fatal state.</td>
+<td>Include Rubrik clusters which are disconnected or in fatal state.</td>
 </tr>
 <tr>
 <td>isSupportTunnelEnabled</td>
 <td>Boolean</td>
 <td>Filter on the support tunnel state of the Rubrik cluster. When true, return only Rubrik clusters with at least one node whose support tunnel is open; when false, return only Rubrik clusters with no such node; omit for no filter.</td>
+</tr>
+<tr>
+<td>managementType</td>
+<td>[<a href="../../enums/ClusterManagementType/">ClusterManagementType</a>!]</td>
+<td>Filter on who operates the Rubrik cluster. Omit for no filter. MANAGEMENT_TYPE_SELF_MANAGED keeps clusters the customer operates, including clusters with no recorded management type; MANAGEMENT_TYPE_RUBRIK_MANAGED keeps clusters Rubrik operates on the customer's behalf.</td>
 </tr>
 <tr>
 <td>minSoftwareVersion</td>

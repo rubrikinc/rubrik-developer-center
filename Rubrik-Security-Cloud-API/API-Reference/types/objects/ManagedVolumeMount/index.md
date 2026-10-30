@@ -2,7 +2,7 @@
 
 Managed Volume Export details object.
 
-**Implements:** [HierarchyObject](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/HierarchyObject/index.md), [CdmHierarchyObject](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/CdmHierarchyObject/index.md), [ManagedVolumeDescendantType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/ManagedVolumeDescendantType/index.md), [ManagedVolumePhysicalChildType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/ManagedVolumePhysicalChildType/index.md)
+**Implements:** [CdmHierarchyObject](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/CdmHierarchyObject/index.md), [HierarchyObject](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/HierarchyObject/index.md), [ManagedVolumeDescendantType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/ManagedVolumeDescendantType/index.md), [ManagedVolumePhysicalChildType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/ManagedVolumePhysicalChildType/index.md)
 
 ## Fields
 
@@ -48,13 +48,13 @@ Managed Volume Export details object.
 
 ## Field Arguments
 
-| Field                  | Argument    | Type                                                                                                                                  | Description                                                                                                                             |
-| ---------------------- | ----------- | ------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
-| numWorkloadDescendants | first       | Int                                                                                                                                   | Returns the first n elements from the list.                                                                                             |
-| numWorkloadDescendants | after       | String                                                                                                                                | An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results.       |
-| numWorkloadDescendants | last        | Int                                                                                                                                   | Returns the last n elements from the list.                                                                                              |
-| numWorkloadDescendants | before      | String                                                                                                                                | An opaque cursor returned from a previous query's startCursor field. Pass this value verbatim to retrieve the previous page of results. |
-| numWorkloadDescendants | objectTypes | \[[ManagedObjectType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/ManagedObjectType/index.md)!\] | Types of objects to limit the results. If absent, all object types are returned.                                                        |
+| Field                  | Argument    | Type                                                                                                                                  | Description                                                                      |
+| ---------------------- | ----------- | ------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------- |
+| numWorkloadDescendants | first       | Int                                                                                                                                   | Returns the first n elements from the list.                                      |
+| numWorkloadDescendants | after       | String                                                                                                                                | Returns the elements in the list that occur after the specified cursor.          |
+| numWorkloadDescendants | last        | Int                                                                                                                                   | Returns the last n elements from the list.                                       |
+| numWorkloadDescendants | before      | String                                                                                                                                | Returns the elements in the list that occur before the specified cursor.         |
+| numWorkloadDescendants | objectTypes | \[[ManagedObjectType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/ManagedObjectType/index.md)!\] | Types of objects to limit the results. If absent, all object types are returned. |
 
 ## Used By
 

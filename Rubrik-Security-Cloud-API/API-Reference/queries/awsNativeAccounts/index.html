@@ -938,7 +938,7 @@
 
 
 <h1 id="awsnativeaccounts">awsNativeAccounts</h1>
-<p>Paginated list of all AWS Native accounts.</p>
+<p>Lists the AWS Native accounts under the AWS-native hierarchy root.</p>
 <h2 id="arguments">Arguments</h2>
 <table>
 <thead>
@@ -972,32 +972,37 @@
 <tr>
 <td>sortBy</td>
 <td><a href="../../types/enums/AwsNativeAccountSortFields/">AwsNativeAccountSortFields</a></td>
-<td>Sort fields for list of AWS accounts.</td>
+<td>Field of the account to order the results by. Defaults to the account name.</td>
 </tr>
 <tr>
 <td>sortOrder</td>
 <td><a href="../../types/enums/SortOrder/">SortOrder</a></td>
-<td>Sorts the order of results.</td>
+<td>Direction the results are ordered in. Defaults to ascending.</td>
 </tr>
 <tr>
 <td>accountFilters</td>
 <td><a href="../../types/inputs/AwsNativeAccountFilters/">AwsNativeAccountFilters</a></td>
-<td></td>
+<td>Narrows the results to the accounts matching every filter supplied. Unset returns all non-relic accounts.</td>
 </tr>
 <tr>
 <td>authorizedOperationFilter</td>
 <td><a href="../../types/enums/Operation/">Operation</a></td>
-<td></td>
+<td>RBAC operation the caller must be authorized for on each returned account. Defaults to VIEW_INVENTORY.</td>
 </tr>
 <tr>
 <td>awsNativeProtectionFeature <em>(required)</em></td>
 <td><a href="../../types/enums/AwsNativeProtectionFeature/">AwsNativeProtectionFeature</a>!</td>
-<td>Cloud native protection feature.</td>
+<td>Protection feature the returned accounts must have enabled, and whose workload scopes their SLA. Ignored when awsNativeProtectionFeatures is set.</td>
 </tr>
 <tr>
 <td>awsNativeProtectionFeatures</td>
 <td>[<a href="../../types/enums/AwsNativeProtectionFeature/">AwsNativeProtectionFeature</a>!]</td>
-<td>List of cloud native protection features.</td>
+<td>Protection features the returned accounts must have at least one of enabled. Defaults to awsNativeProtectionFeature alone when unset.</td>
+</tr>
+<tr>
+<td>includeSecurityMetadata</td>
+<td>Boolean</td>
+<td>Whether to include each object's security metadata in the response.</td>
 </tr>
 </tbody>
 </table>

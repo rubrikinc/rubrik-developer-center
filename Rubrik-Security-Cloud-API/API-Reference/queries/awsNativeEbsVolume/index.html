@@ -938,7 +938,7 @@
 
 
 <h1 id="awsnativeebsvolume">awsNativeEbsVolume</h1>
-<p>Refers to the Amazon Elastic Block Store (EBS) Volume represented by a specific ID. For more information, see https://aws.amazon.com/ebs/.</p>
+<p>Returns a single AWS Native EBS volume by its Rubrik FID.</p>
 <h2 id="arguments">Arguments</h2>
 <table>
 <thead>
@@ -952,12 +952,12 @@
 <tr>
 <td>ebsVolumeRubrikId <em>(required)</em></td>
 <td><a href="../../types/scalars/UUID/">UUID</a>!</td>
-<td>Rubrik ID for the AWS EBS Volume object.</td>
+<td>Rubrik FID of the EBS volume.</td>
 </tr>
 <tr>
 <td>includeSecurityMetadata</td>
 <td>Boolean</td>
-<td>Filter to include the security metadata.</td>
+<td>Whether to include the object's security metadata in the response.</td>
 </tr>
 </tbody>
 </table>

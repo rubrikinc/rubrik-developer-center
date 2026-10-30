@@ -944,6 +944,16 @@
 <td>CIDR of the logical network's address space, e.g. "10.1.212.0/23". Absent for Dynamic networks (ARM does not require a CIDR for DHCP networks).</td>
 </tr>
 <tr>
+<td>dnsServers</td>
+<td>[String!]!</td>
+<td>DNS server addresses defined on this logical network, in priority order. Empty when the network defines none.</td>
+</tr>
+<tr>
+<td>gateway</td>
+<td>String</td>
+<td>Default gateway of this logical network's subnet, e.g. "10.1.212.1": the next hop of its 0.0.0.0/0 route. Absent when the subnet defines no default route. Read-only: Azure Local derives a NIC's gateway from its logical network.</td>
+</tr>
+<tr>
 <td>id</td>
 <td>String!</td>
 <td>ARM logical network ID.</td>

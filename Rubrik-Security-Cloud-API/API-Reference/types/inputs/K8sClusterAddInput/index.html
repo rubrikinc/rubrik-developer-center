@@ -998,6 +998,11 @@
 <td>Supported in v9.2+ The configuration for the kupr server proxy to be added.</td>
 </tr>
 <tr>
+<td>loadBalancerAnnotations</td>
+<td><a href="../ClusterAddLoadBalancerAnnotationInput/">ClusterAddLoadBalancerAnnotationInput</a></td>
+<td>Annotations to set on the load balancer Service for the Kubernetes cluster. Only used when transport is loadbalancer. When non-empty, this map replaces the built-in per-distribution annotations entirely.</td>
+</tr>
+<tr>
 <td>maxConcurrentAgents</td>
 <td>Int</td>
 <td>Supported in v9.6+ Maximum number of kupr backup agents allowed to run concurrently against this Kubernetes cluster. Set to 0 (or omit) to leave the throttle unlimited.</td>

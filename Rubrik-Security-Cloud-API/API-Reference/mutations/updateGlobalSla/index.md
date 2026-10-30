@@ -4,9 +4,9 @@ Update SLA Domain.
 
 ## Arguments
 
-| Argument           | Type                                                                                                                                     | Description |
-| ------------------ | ---------------------------------------------------------------------------------------------------------------------------------------- | ----------- |
-| input *(required)* | [UpdateGlobalSlaInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/UpdateGlobalSlaInput/index.md)! |             |
+| Argument           | Type                                                                                                                                     | Description                 |
+| ------------------ | ---------------------------------------------------------------------------------------------------------------------------------------- | --------------------------- |
+| input *(required)* | [UpdateGlobalSlaInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/UpdateGlobalSlaInput/index.md)! | Input to update SLA Domain. |
 
 ## Returns
 

@@ -938,7 +938,7 @@
 
 
 <h1 id="startawsnativeec2instancesnapshotsjob">startAwsNativeEc2InstanceSnapshotsJob</h1>
-<p>Start an on demand create snapshot job for AWS EC2 Instances.When completed, this will start taking an on-demand snapshot of the selected EC2 Instances  as per the SLA Policy assigned to the respective instances.</p>
+<p>StartAwsNativeEc2InstanceSnapshotsJob starts on-demand snapshot jobs for a list of EC2 instances. Each instance id succeeds or fails independently, so the reply reports a job id for every instance a job was submitted for and an error for every instance it was not.</p>
 <h2 id="arguments">Arguments</h2>
 <table>
 <thead>

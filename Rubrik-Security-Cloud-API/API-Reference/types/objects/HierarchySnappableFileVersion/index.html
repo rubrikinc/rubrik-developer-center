@@ -927,7 +927,7 @@
 
 
 <h1 id="hierarchysnappablefileversion">HierarchySnappableFileVersion</h1>
-<p><em>No description available.</em></p>
+<p>A single version of a file, as captured in one snapshot.</p>
 <h2 id="fields">Fields</h2>
 <table>
 <thead>
@@ -941,17 +941,17 @@
 <tr>
 <td>fileCreationTime</td>
 <td><a href="../../scalars/DateTime/">DateTime</a></td>
-<td></td>
+<td>The time at which the file was created. Populated only for CDM clusters starting from 9.2.2 onwards, and only when the file system supports a creation time.</td>
 </tr>
 <tr>
 <td>fileMode</td>
 <td><a href="../../enums/FileModeEnum/">FileModeEnum</a>!</td>
-<td></td>
+<td>The type of file system entry, such as a file or a directory.</td>
 </tr>
 <tr>
 <td>lastModified</td>
 <td><a href="../../scalars/DateTime/">DateTime</a>!</td>
-<td></td>
+<td>The time at which this version of the file was last modified.</td>
 </tr>
 <tr>
 <td>quarantineInfo</td>
@@ -961,7 +961,7 @@
 <tr>
 <td>size</td>
 <td><a href="../../scalars/Long/">Long</a>!</td>
-<td></td>
+<td>The size of this version of the file, in bytes.</td>
 </tr>
 <tr>
 <td>snapshot</td>
@@ -971,17 +971,17 @@
 <tr>
 <td>snapshotId</td>
 <td>String!</td>
-<td></td>
+<td>The FID of the snapshot that contains this version of the file.</td>
 </tr>
 <tr>
 <td>snapshotTime</td>
 <td><a href="../../scalars/DateTime/">DateTime</a></td>
-<td></td>
+<td>The time at which the snapshot containing this version was taken.</td>
 </tr>
 <tr>
 <td>source</td>
 <td><a href="../../enums/FileVersionSourceEnum/">FileVersionSourceEnum</a>!</td>
-<td></td>
+<td>The location where the file is stored, either in the cloud or locally.</td>
 </tr>
 </tbody>
 </table>

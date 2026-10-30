@@ -62,6 +62,9 @@ A cloud-managed snapshot type that extends the generic snapshot with additional 
 
 **Referenced by**
 
+- [AnthropicClaudeChatWorkload.newestIndexedSnapshot](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AnthropicClaudeChatWorkload/index.md)
+- [AnthropicClaudeChatWorkload.newestSnapshot](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AnthropicClaudeChatWorkload/index.md)
+- [AnthropicClaudeChatWorkload.oldestSnapshot](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AnthropicClaudeChatWorkload/index.md)
 - [AwsNativeConfig.newestIndexedSnapshot](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AwsNativeConfig/index.md)
 - [AwsNativeConfig.newestSnapshot](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AwsNativeConfig/index.md)
 - [AwsNativeConfig.oldestSnapshot](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AwsNativeConfig/index.md)
@@ -89,7 +92,4 @@ A cloud-managed snapshot type that extends the generic snapshot with additional 
 - [AzureDevOpsRepository.newestIndexedSnapshot](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AzureDevOpsRepository/index.md)
 - [AzureDevOpsRepository.newestSnapshot](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AzureDevOpsRepository/index.md)
 - [AzureDevOpsRepository.oldestSnapshot](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AzureDevOpsRepository/index.md)
-- AzureNativeHierarchyObjectType.newestIndexedSnapshot
-- AzureNativeHierarchyObjectType.newestSnapshot
-- AzureNativeHierarchyObjectType.oldestSnapshot
-- *…and 108 more*
+- *…and 138 more*

@@ -4,9 +4,9 @@ Download files from a Hyper-V VM backup Supported in v5.0+ Start an asynchronous
 
 ## Arguments
 
-| Argument           | Type                                                                                                                                                                                         | Description                                     |
-| ------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------- |
-| input *(required)* | [DownloadHypervVirtualMachineSnapshotFilesInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/DownloadHypervVirtualMachineSnapshotFilesInput/index.md)! | Input for DownloadHypervVMSnapshotFilesRequest. |
+| Argument           | Type                                                                                                                                                                                         | Description                                          |
+| ------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------- |
+| input *(required)* | [DownloadHypervVirtualMachineSnapshotFilesInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/DownloadHypervVirtualMachineSnapshotFilesInput/index.md)! | Input for downloadHypervVirtualMachineSnapshotFiles. |
 
 ## Returns
 

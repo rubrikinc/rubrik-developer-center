@@ -946,7 +946,7 @@
 <tr>
 <td>totalAffectedObjects</td>
 <td><a href="../../scalars/Long/">Long</a>!</td>
-<td>Total number of objects in which malware was found and hunt succeeded, or partially succeeded, or is in progress.</td>
+<td>Total number of objects with at least one file match where the hunt succeeded, partially succeeded, or is in progress.</td>
 </tr>
 <tr>
 <td>totalObjectsScanned</td>
@@ -957,6 +957,11 @@
 <td>totalObjectsUnscannable</td>
 <td><a href="../../scalars/Long/">Long</a>!</td>
 <td>Total number of objects where hunt failed, or partially succeeded without matches, or did not scan.</td>
+</tr>
+<tr>
+<td>totalObjectsWithMatches</td>
+<td><a href="../../scalars/Long/">Long</a>!</td>
+<td>Total number of objects with at least one file or registry key match, counting each object once. Use this instead of combining total_affected_objects and total_registry_affected_objects. For a hunt in SUCCEEDED, PARTIALLY_SUCCEEDED or FAILED status, this plus total_unaffected_objects and total_objects_unscannable equals total_objects_scanned.</td>
 </tr>
 <tr>
 <td>totalRegistryAffectedObjects</td>

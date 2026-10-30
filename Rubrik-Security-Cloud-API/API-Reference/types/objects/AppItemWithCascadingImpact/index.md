@@ -1,6 +1,6 @@
 # AppItemWithCascadingImpact
 
-App item type with its cascading impact.
+An app item type and the count of its items impacted by a cascading action.
 
 ## Fields
 

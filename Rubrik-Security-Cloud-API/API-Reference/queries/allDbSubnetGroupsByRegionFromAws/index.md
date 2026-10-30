@@ -1,6 +1,6 @@
 # allDbSubnetGroupsByRegionFromAws
 
-All DB subnet groups in a given region. Refers to logical isolation of RDS on a network. For more information, see https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_VPC.WorkingWithRDSInstanceinaVPC.html.
+ListDbSubnetGroups returns the RDS DB subnet groups available in the given region of an AWS Native account.
 
 ## Arguments
 

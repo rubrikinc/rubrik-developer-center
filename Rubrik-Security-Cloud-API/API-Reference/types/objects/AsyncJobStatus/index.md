@@ -27,6 +27,7 @@ Represents the status of a single async job.
 - [mutation: startExportAzureSqlManagedInstanceDbJob](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/startExportAzureSqlManagedInstanceDbJob/index.md)
 - [mutation: startExportRdsInstanceJob](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/startExportRdsInstanceJob/index.md)
 - [mutation: startRecoverAzureNativeStorageAccountJob](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/startRecoverAzureNativeStorageAccountJob/index.md)
+- [mutation: startRecoverDynamoDbSnapshotJob](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/startRecoverDynamoDbSnapshotJob/index.md)
 - [mutation: startRecoverS3SnapshotJob](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/startRecoverS3SnapshotJob/index.md)
 - [mutation: startRestoreAwsNativeEc2InstanceSnapshotJob](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/startRestoreAwsNativeEc2InstanceSnapshotJob/index.md)
 - [mutation: startRestoreAzureNativeVirtualMachineJob](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/startRestoreAzureNativeVirtualMachineJob/index.md)

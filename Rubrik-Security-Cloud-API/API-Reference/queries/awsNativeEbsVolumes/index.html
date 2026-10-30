@@ -938,7 +938,7 @@
 
 
 <h1 id="awsnativeebsvolumes">awsNativeEbsVolumes</h1>
-<p>Paginated list of all AWS EBS Volumes.</p>
+<p>Lists the AWS Native EBS volumes under the AWS-native hierarchy root.</p>
 <h2 id="arguments">Arguments</h2>
 <table>
 <thead>
@@ -972,22 +972,22 @@
 <tr>
 <td>sortBy</td>
 <td><a href="../../types/enums/AwsNativeEbsVolumeSortFields/">AwsNativeEbsVolumeSortFields</a></td>
-<td>Sort fields for list of AWS EBS volumes.</td>
+<td>Field of the EBS volume to order the results by. Defaults to the volume name.</td>
 </tr>
 <tr>
 <td>sortOrder</td>
 <td><a href="../../types/enums/SortOrder/">SortOrder</a></td>
-<td>Sorts the order of results.</td>
+<td>Direction the results are ordered in. Defaults to ascending.</td>
 </tr>
 <tr>
 <td>ebsVolumeFilters</td>
 <td><a href="../../types/inputs/AwsNativeEbsVolumeFilters/">AwsNativeEbsVolumeFilters</a></td>
-<td>Filter for EBS volumes.</td>
+<td>Narrows the results to the EBS volumes matching every filter supplied. Unset returns all non-relic volumes.</td>
 </tr>
 <tr>
 <td>includeSecurityMetadata</td>
 <td>Boolean</td>
-<td>Filter to include the security metadata.</td>
+<td>Whether to include each object's security metadata in the response.</td>
 </tr>
 </tbody>
 </table>

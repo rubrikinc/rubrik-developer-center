@@ -938,7 +938,7 @@
 
 
 <h1 id="cloudnativecheckarchivedsnapshotslocked">cloudNativeCheckArchivedSnapshotsLocked</h1>
-<p>Archived snapshot locking related details for a workload. If no snapshots IDs are passed, all the expired source snapshots and the source snapshots that have a unexpired archival copy will be checked.</p>
+<p>Archived snapshot locking related details for a workload. If no snapshot IDs are passed, all the globally unexpired source snapshots are checked. A source snapshot that has no archival copy is reported as invalid rather than as locked or unlocked.</p>
 <h2 id="arguments">Arguments</h2>
 <table>
 <thead>

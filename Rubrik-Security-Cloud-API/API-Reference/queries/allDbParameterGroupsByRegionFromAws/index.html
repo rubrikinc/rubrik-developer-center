@@ -938,7 +938,7 @@
 
 
 <h1 id="alldbparametergroupsbyregionfromaws">allDbParameterGroupsByRegionFromAws</h1>
-<p>List of all DB parameter groups in a given region. Refers to container for engine configuration that applies to one or more DB Instances. For more information, see https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_WorkingWithOptionGroups.html.</p>
+<p>ListDbParameterGroups returns the RDS DB parameter groups available in the given region of an AWS Native account.</p>
 <h2 id="arguments">Arguments</h2>
 <table>
 <thead>
@@ -962,17 +962,17 @@
 <tr>
 <td>dbEngine <em>(required)</em></td>
 <td><a href="../../types/enums/AwsNativeRdsDbEngine/">AwsNativeRdsDbEngine</a>!</td>
-<td>DB Engine of RDS Instance.</td>
+<td>Database engine of the RDS instance.</td>
 </tr>
 <tr>
 <td>dbEngineVersion <em>(required)</em></td>
 <td>String!</td>
-<td>Version of DB engine.</td>
+<td>Database engine version of the RDS instance.</td>
 </tr>
 <tr>
 <td>rdsType</td>
 <td><a href="../../types/enums/AwsNativeRdsType/">AwsNativeRdsType</a></td>
-<td>Type of RDS deployment.</td>
+<td>Type of the RDS instance. Defaults to a regular RDS instance.</td>
 </tr>
 </tbody>
 </table>

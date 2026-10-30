@@ -12,6 +12,7 @@ Object Type for cloud-native tag rule.
 | AWS_EC2_INSTANCE                  | AWS EC2 Instance.                  |
 | AWS_RDS_INSTANCE                  | AWS RDS Instance.                  |
 | AWS_S3_BUCKET                     | AWS S3 Bucket.                     |
+| AZURE_COSMOS_NOSQL_ACCOUNT        | Azure Cosmos DB for NoSQL Account. |
 | AZURE_MANAGED_DISK                | Azure Managed Disk.                |
 | AZURE_POSTGRES_FLEXIBLE_SERVER    | Azure Postgres Flexible Server.    |
 | AZURE_SQL_DATABASE_DB             | Azure SQL Database DB.             |

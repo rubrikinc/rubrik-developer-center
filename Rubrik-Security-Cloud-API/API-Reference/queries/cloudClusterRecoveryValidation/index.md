@@ -34,7 +34,15 @@ query CloudClusterRecoveryValidation($clusterUuid: String!) {
   "data": {
     "cloudClusterRecoveryValidation": {
       "canBeRecovered": true,
-      "message": "example-string"
+      "message": "example-string",
+      "findings": [
+        {
+          "check": "BUCKET_ACCESS_DENIED",
+          "detail": "example-string",
+          "remediation": "example-string",
+          "severity": "BLOCKER"
+        }
+      ]
     }
   }
 }

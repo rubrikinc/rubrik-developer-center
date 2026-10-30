@@ -59,6 +59,7 @@
 [archiveCrawl](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/archiveCrawl/index.md)\
 [archiveK8sCluster](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/archiveK8sCluster/index.md)\
 [assignCloudAccountToCluster](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/assignCloudAccountToCluster/index.md)\
+[assignCloudDirectCopySchedule](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/assignCloudDirectCopySchedule/index.md)\
 [assignMssqlSlaDomainProperties](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/assignMssqlSlaDomainProperties/index.md)\
 [assignMssqlSlaDomainPropertiesAsync](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/assignMssqlSlaDomainPropertiesAsync/index.md)\
 [assignRetentionSLAToSnappables](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/assignRetentionSLAToSnappables/index.md)\
@@ -195,6 +196,7 @@
 [createAzureReaderTarget](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/createAzureReaderTarget/index.md)\
 [createAzureSaasAppAad](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/createAzureSaasAppAad/index.md)\
 [createAzureTarget](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/createAzureTarget/index.md)\
+[createCloudDirectCopySchedule](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/createCloudDirectCopySchedule/index.md)\
 [createCloudNativeAwsStorageSetting](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/createCloudNativeAwsStorageSetting/index.md)\
 [createCloudNativeAzureStorageSetting](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/createCloudNativeAzureStorageSetting/index.md)\
 [createCloudNativeLabelRule](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/createCloudNativeLabelRule/index.md)\
@@ -303,6 +305,7 @@
 [deleteAzureDevOpsCloudAccount](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/deleteAzureDevOpsCloudAccount/index.md)\
 [deleteCephSetting](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/deleteCephSetting/index.md)\
 [deleteCertificate](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/deleteCertificate/index.md)\
+[deleteCloudDirectCopySchedule](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/deleteCloudDirectCopySchedule/index.md)\
 [deleteCloudDirectGenericS3TenantCredential](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/deleteCloudDirectGenericS3TenantCredential/index.md)\
 [deleteCloudDirectKerberosCredential](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/deleteCloudDirectKerberosCredential/index.md)\
 [deleteCloudNativeLabelRule](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/deleteCloudNativeLabelRule/index.md)\
@@ -819,6 +822,7 @@
 [startMssqlLogShippingApplyLogsJob](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/startMssqlLogShippingApplyLogsJob/index.md)\
 [startPeriodicUpgradePrechecksOnDemandJob](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/startPeriodicUpgradePrechecksOnDemandJob/index.md)\
 [startRecoverAzureNativeStorageAccountJob](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/startRecoverAzureNativeStorageAccountJob/index.md)\
+[startRecoverDynamoDbSnapshotJob](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/startRecoverDynamoDbSnapshotJob/index.md)\
 [startRecoverS3SnapshotJob](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/startRecoverS3SnapshotJob/index.md)\
 [startRecovery](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/startRecovery/index.md)\
 [startRefreshAwsNativeAccountsJob](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/startRefreshAwsNativeAccountsJob/index.md)\
@@ -864,6 +868,7 @@
 
 ## U
 
+[unassignCloudDirectCopySchedule](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/unassignCloudDirectCopySchedule/index.md)\
 [unconfigureSapHanaRestore](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/unconfigureSapHanaRestore/index.md)\
 [uninstallGitHubApp](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/uninstallGitHubApp/index.md)\
 [uninstallIoFilter](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/uninstallIoFilter/index.md)\
@@ -899,6 +904,7 @@
 [updateCertificate](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/updateCertificate/index.md)\
 [updateCertificateHost](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/updateCertificateHost/index.md)\
 [updateCertificateUsagesForCloudAccount](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/updateCertificateUsagesForCloudAccount/index.md)\
+[updateCloudDirectCopySchedule](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/updateCloudDirectCopySchedule/index.md)\
 [updateCloudDirectKerberosCredential](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/updateCloudDirectKerberosCredential/index.md)\
 [updateCloudNativeAwsStorageSetting](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/updateCloudNativeAwsStorageSetting/index.md)\
 [updateCloudNativeAzureStorageSetting](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/updateCloudNativeAzureStorageSetting/index.md)\

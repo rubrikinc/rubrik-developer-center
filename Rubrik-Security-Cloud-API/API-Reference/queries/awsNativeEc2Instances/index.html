@@ -938,7 +938,7 @@
 
 
 <h1 id="awsnativeec2instances">awsNativeEc2Instances</h1>
-<p>Paginated list of all AWS EC2 Instances.</p>
+<p>Lists the AWS Native EC2 instances under the AWS-native hierarchy root.</p>
 <h2 id="arguments">Arguments</h2>
 <table>
 <thead>
@@ -972,27 +972,27 @@
 <tr>
 <td>sortBy</td>
 <td><a href="../../types/enums/AwsNativeEc2InstanceSortFields/">AwsNativeEc2InstanceSortFields</a></td>
-<td>Sort fields for list of AWS EC2 instances.</td>
+<td>Field of the EC2 instance to order the results by. Defaults to the instance name.</td>
 </tr>
 <tr>
 <td>sortOrder</td>
 <td><a href="../../types/enums/SortOrder/">SortOrder</a></td>
-<td>Sorts the order of results.</td>
+<td>Direction the results are ordered in. Defaults to ascending.</td>
 </tr>
 <tr>
 <td>descendantTypeFilter</td>
 <td>[<a href="../../types/enums/HierarchyObjectTypeEnum/">HierarchyObjectTypeEnum</a>!]</td>
-<td>Filter the CDM cloud hosts by workload type.</td>
+<td>Filter the CDM cloud hosts by workload type: returns only the EC2 instances whose CDM host has a workload of one of these types. No filtering when empty.</td>
 </tr>
 <tr>
 <td>ec2InstanceFilters</td>
 <td><a href="../../types/inputs/AwsNativeEc2InstanceFilters/">AwsNativeEc2InstanceFilters</a></td>
-<td>Filter for EC2 instances.</td>
+<td>Narrows the results to the EC2 instances matching every filter supplied. Unset returns all non-relic instances.</td>
 </tr>
 <tr>
 <td>includeSecurityMetadata</td>
 <td>Boolean</td>
-<td>Filter to include the security metadata.</td>
+<td>Whether to include each object's security metadata in the response.</td>
 </tr>
 </tbody>
 </table>

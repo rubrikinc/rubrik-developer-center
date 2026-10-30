@@ -939,7 +939,7 @@
 
 <h1 id="mongocollection">MongoCollection</h1>
 <p>Information about MongoDB Collection.</p>
-<p><strong>Implements:</strong> <a href="../../interfaces/HierarchyObject/">HierarchyObject</a>, <a href="../../interfaces/CdmHierarchyObject/">CdmHierarchyObject</a>, <a href="../../interfaces/MongoSourceDescendantType/">MongoSourceDescendantType</a>, <a href="../../interfaces/MongoDatabaseDescendantType/">MongoDatabaseDescendantType</a>, <a href="../../interfaces/MongoCollectionSetDescendantType/">MongoCollectionSetDescendantType</a>, <a href="../../interfaces/MongoCollectionSetPhysicalChildType/">MongoCollectionSetPhysicalChildType</a></p>
+<p><strong>Implements:</strong> <a href="../../interfaces/CdmHierarchyObject/">CdmHierarchyObject</a>, <a href="../../interfaces/HierarchyObject/">HierarchyObject</a>, <a href="../../interfaces/MongoSourceDescendantType/">MongoSourceDescendantType</a>, <a href="../../interfaces/MongoDatabaseDescendantType/">MongoDatabaseDescendantType</a>, <a href="../../interfaces/MongoCollectionSetDescendantType/">MongoCollectionSetDescendantType</a>, <a href="../../interfaces/MongoCollectionSetPhysicalChildType/">MongoCollectionSetPhysicalChildType</a></p>
 <h2 id="fields">Fields</h2>
 <table>
 <thead>
@@ -1219,7 +1219,7 @@
 <td>mongoSnapshotConnection</td>
 <td>timezone</td>
 <td><a href="../../scalars/Timezone/">Timezone</a></td>
-<td>Time zone identifier string. For example, 'America/Los_Angeles' is used for the U.S. Pacific Time zone.</td>
+<td>Time zone identifier string.</td>
 </tr>
 <tr>
 <td>mongoSnapshotGroupByConnection</td>
@@ -1244,12 +1244,6 @@
 <td>before</td>
 <td>String</td>
 <td>An opaque cursor returned from a previous query's startCursor field. Pass this value verbatim to retrieve the previous page of results.</td>
-</tr>
-<tr>
-<td>mongoSnapshotGroupByConnection</td>
-<td>timezoneOffset</td>
-<td>Float</td>
-<td>Offset based on the customer timezone.</td>
 </tr>
 <tr>
 <td>mongoSnapshotGroupByConnection</td>
@@ -1265,9 +1259,15 @@
 </tr>
 <tr>
 <td>mongoSnapshotGroupByConnection</td>
+<td>timezoneOffset</td>
+<td>Float</td>
+<td>Offset based on the customer timezone.</td>
+</tr>
+<tr>
+<td>mongoSnapshotGroupByConnection</td>
 <td>timezone</td>
 <td><a href="../../scalars/Timezone/">Timezone</a></td>
-<td>Time zone identifier string. For example, 'America/Los_Angeles' is used for the U.S. Pacific Time zone.</td>
+<td>Time zone identifier string.</td>
 </tr>
 <tr>
 <td>numWorkloadDescendants</td>
@@ -1279,7 +1279,7 @@
 <td>numWorkloadDescendants</td>
 <td>after</td>
 <td>String</td>
-<td>An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results.</td>
+<td>Returns the elements in the list that occur after the specified cursor.</td>
 </tr>
 <tr>
 <td>numWorkloadDescendants</td>
@@ -1291,7 +1291,7 @@
 <td>numWorkloadDescendants</td>
 <td>before</td>
 <td>String</td>
-<td>An opaque cursor returned from a previous query's startCursor field. Pass this value verbatim to retrieve the previous page of results.</td>
+<td>Returns the elements in the list that occur before the specified cursor.</td>
 </tr>
 <tr>
 <td>numWorkloadDescendants</td>

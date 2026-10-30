@@ -946,7 +946,7 @@
 <tr>
 <td>prioritizedOnboardingDays</td>
 <td>Int!</td>
-<td>Number of days of history that prioritized onboarding ingests for the workload type, in the range 1 to 180. Zero when the workload type has no prioritized onboarding policy.</td>
+<td>Number of days of history that prioritized onboarding ingests for the workload type, in the range 1 to 180. Set only when operation_mode is PRIORITIZED_ONBOARDING or BACKFILL_ONBOARDING. Zero when the workload type has no prioritized onboarding policy or its policy uses an absolute cutoff date rather than a number of days.</td>
 </tr>
 <tr>
 <td>prioritizedOnboardingEndTime</td>

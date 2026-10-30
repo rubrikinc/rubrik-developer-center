@@ -1042,6 +1042,17 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#awspermissiondiff" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        AwsPermissionDiff
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#azureaddirectory" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1504,6 +1515,17 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#gcpnativecloudsqlspecificsnapshot" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        GcpNativeCloudSqlSpecificSnapshot
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#gcpnativedisk" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1768,6 +1790,17 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#recoveryplansinfo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        RecoveryPlansInfo
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#remediationmetadata" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -2025,6 +2058,17 @@
     <span class="md-ellipsis">
       
         UpdateAwsExocomputeConfigsReply
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vcd" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Vcd
       
     </span>
   </a>
@@ -3323,6 +3367,17 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#awspermissiondiff" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        AwsPermissionDiff
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#azureaddirectory" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -3785,6 +3840,17 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#gcpnativecloudsqlspecificsnapshot" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        GcpNativeCloudSqlSpecificSnapshot
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#gcpnativedisk" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -4042,6 +4108,17 @@
     <span class="md-ellipsis">
       
         RdsInstanceExportDefaults
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#recoveryplansinfo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        RecoveryPlansInfo
       
     </span>
   </a>
@@ -4313,6 +4390,17 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#vcd" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Vcd
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#vspherecomputecluster" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -4397,8 +4485,8 @@
 <h1 id="graphql-api-deprecations">GraphQL API Deprecations</h1>
 <p>This document lists all deprecated fields, queries, mutations, and enum values in the Rubrik Security Cloud GraphQL API.</p>
 <h2 id="deprecated-fields">Deprecated Fields</h2>
-<p><em>Extracted from schema: 20261012.graphql</em></p>
-<p><strong>Total deprecated items: 311</strong></p>
+<p><em>Extracted from schema: 20261026.graphql</em></p>
+<p><strong>Total deprecated items: 350</strong></p>
 <h3 id="deprecated-query-fields">Deprecated Query Fields</h3>
 <ul>
 <li><strong><code>accountId</code></strong>: This endpoint is deprecated.</li>
@@ -4469,6 +4557,7 @@
 <li><strong><code>updateCertificate</code></strong>: Deprecated. Use updateGlobalCertificate instead.</li>
 <li><strong><code>updateIpWhitelist</code></strong>: use <code>setIpWhitelistSetting</code> to update the mode, or <code>update/add/deleteIpWhitelistEntries</code> to update entries instead.</li>
 <li><strong><code>updateManagedIdentities</code></strong>: Use updateManagedIdentitiesAsync instead.</li>
+<li><strong><code>updateMssqlLogShippingConfigurationV1</code></strong>: Use updateMssqlLogShippingConfiguration instead.</li>
 <li><strong><code>updateRcsAutomaticTargetMapping</code></strong>: This mutation is deprecated. Please use updateRcvLocationsFromTemplate.</li>
 <li><strong><code>updateRole</code></strong>: This endpoint is deprecated.</li>
 <li><strong><code>updateWebhook</code></strong>: Use updateWebhookV2 instead.</li>
@@ -4544,6 +4633,10 @@
 <h4 id="awsnatives3bucket">AwsNativeS3Bucket</h4>
 <ul>
 <li><strong><code>awsNativeAccount</code></strong>: Deprecated, use awsAccount instead.</li>
+</ul>
+<h4 id="awspermissiondiff">AwsPermissionDiff</h4>
+<ul>
+<li><strong><code>unresolvedFeatures</code></strong>: Use the NOT_AVAILABLE entries instead.</li>
 </ul>
 <h4 id="azureaddirectory">AzureAdDirectory</h4>
 <ul>
@@ -4740,6 +4833,10 @@
 <ul>
 <li><strong><code>gcpNativeProjectDetails</code></strong>: Deprecated, use gcpProjectDetails instead.</li>
 </ul>
+<h4 id="gcpnativecloudsqlspecificsnapshot">GcpNativeCloudSqlSpecificSnapshot</h4>
+<ul>
+<li><strong><code>kmsKey</code></strong>: Use encryptionKey instead.</li>
+</ul>
 <h4 id="gcpnativedisk">GcpNativeDisk</h4>
 <ul>
 <li><strong><code>gcpNativeProject</code></strong>: Deprecated, use <code>gcpProject</code> instead.</li>
@@ -4851,6 +4948,10 @@
 <ul>
 <li><strong><code>supportedDbEngineVersions</code></strong>: Use availableDbEngineVersions instead.</li>
 </ul>
+<h4 id="recoveryplansinfo">RecoveryPlansInfo</h4>
+<ul>
+<li><strong><code>recoveryType</code></strong>: Use recoveryPlanType instead.</li>
+</ul>
 <h4 id="remediationmetadata">RemediationMetadata</h4>
 <ul>
 <li><strong><code>policyViolationId</code></strong>: Use targets instead.</li>
@@ -4955,6 +5056,10 @@
 <ul>
 <li><strong><code>configs</code></strong>: Deprecated in favor of BYOK8s, use exocomputeConfigs instead.</li>
 </ul>
+<h4 id="vcd">Vcd</h4>
+<ul>
+<li><strong><code>allVcenterConnectionStatuses</code></strong>: Use allVcenterConnectionsInfo instead.</li>
+</ul>
 <h4 id="vspherecomputecluster">VsphereComputeCluster</h4>
 <ul>
 <li><strong><code>hasDatastoresForRecovery</code></strong>: Use recoveryTargetDescendantConnection field directly instead</li>
@@ -4979,12 +5084,13 @@
 <li><strong><code>ACTIVE_DIRECTORY_FOREST_RECOVERY_TABLE</code></strong>: Use EVENT_SERIES_BY_CLUSTER_TYPE_TABLE.</li>
 <li><strong><code>ACTIVE_DIRECTORY_FOREST_RECOVERY_TABLE</code></strong>: Use EVENT_SERIES_BY_OBJECT_TYPE_TABLE.</li>
 <li><strong><code>ACTIVE_DIRECTORY_FOREST_RECOVERY_TABLE</code></strong>: Use EVENT_SERIES_BY_TIME_TABLE.</li>
-<li><strong><code>ANTHROPIC_APPS</code></strong>: Use ANTHROPIC_APPS instead.</li>
 <li><strong><code>ARCHIVAL</code></strong>: Use <code>CLOUD_NATIVE_CONFIG_PROTECTION</code> instead.</li>
 <li><strong><code>ARCHIVAL_LOCATION_DELETE</code></strong>: Nothing creates this type; it will be removed in a future release.</li>
 <li><strong><code>ARCHIVAL_LOCATION_DELETE</code></strong>: Nothing creates this type; it will be removed in a future release.</li>
 <li><strong><code>ARCHIVAL_LOCATION_DELETE</code></strong>: Nothing creates this type; it will be removed in a future release.</li>
 <li><strong><code>ARCHIVAL_LOCATION_DELETE</code></strong>: Nothing creates this type; it will be removed in a future release.</li>
+<li><strong><code>ASSIGN_KMS_KEY_VAULT</code></strong>: Legacy deprecated operation. No longer used in any RSC APIs.</li>
+<li><strong><code>ASSIGN_KMS_KEY_VAULT</code></strong>: Legacy deprecated operation. No longer used in any RSC APIs.</li>
 <li><strong><code>AUDIT_LIST</code></strong>: Use BACKUP_STRIKES_V2 instead.</li>
 <li><strong><code>AUDIT_LIST</code></strong>: Use LATEST_GLOBAL_OBJECTS instead.</li>
 <li><strong><code>AWS_IAM_CUSTOMER_ACCOUNT_UPSERT</code></strong>: Nothing creates this type; it will be removed in a future release.</li>
@@ -4995,12 +5101,18 @@
 <li><strong><code>AZURE_DEVOPS_REPOSITORY_PROTECTION</code></strong>: Use <code>LAMINAR_TARGET_APPLICATION</code> instead.</li>
 <li><strong><code>AZURE_DEVOPS_REPOSITORY_PROTECTION</code></strong>: Use <code>LAMINAR_TARGET_MANAGED_IDENTITY</code> instead.</li>
 <li><strong><code>AZURE_DEVOPS_REPO_SIZE</code></strong>: This field is deprecated and no longer used.</li>
+<li><strong><code>AZURE_DISK_SIZE</code></strong>: Use AZURE_DISK_CRG_SUBSCRIPTION_ID instead.</li>
+<li><strong><code>AZURE_VM_SIZE</code></strong>: Use AZURE_VM_CRG_SUBSCRIPTION_ID instead.</li>
 <li><strong><code>CATEGORY_UNSPECIFIED</code></strong>: Use AUTHENTICATION_AND_SECRET_MANAGEMENT instead.</li>
 <li><strong><code>CLOUDDIRECT_NAS_NAMESPACE_VENDOR_TYPE</code></strong>: Not implemented - no longer used.</li>
 <li><strong><code>CLOUD_ACCOUNT_UPDATE</code></strong>: Use CLUSTER_PEER_TOKEN_GET_AND_SET instead. Removed 2027/09/28.</li>
 <li><strong><code>CLOUD_DIRECT</code></strong>: Nothing returns this sync type; it will be removed in a future release.</li>
 <li><strong><code>CLUSTER_DISCONNECTED</code></strong>: This reason is no longer used.</li>
 <li><strong><code>COLDLINE_GCP</code></strong>: Use STANDARD_GCP instead.</li>
+<li><strong><code>DELETE_GCP_CLOUD_ACCOUNT</code></strong>: Legacy deprecated operation. No longer used in any RSC APIs.</li>
+<li><strong><code>DELETE_GCP_CLOUD_ACCOUNT</code></strong>: Legacy deprecated operation. No longer used in any RSC APIs.</li>
+<li><strong><code>DELETE_REPORT</code></strong>: Legacy deprecated operation. No longer used in any RSC APIs.</li>
+<li><strong><code>DELETE_REPORT</code></strong>: Legacy deprecated operation. No longer used in any RSC APIs.</li>
 <li><strong><code>DIRECT_REPORT</code></strong>: The SsoPolicyExtension relationship has been removed.</li>
 <li><strong><code>DNS_SERVERS_CHECK</code></strong>: Use CLUSTER_NAME_LENGTH_CHECK instead.</li>
 <li><strong><code>DOMAIN_HAS_FOREST</code></strong>: Use EBS_VOLUME_NAME_OR_VOLUME_ID instead.</li>
@@ -5009,12 +5121,22 @@
 <li><strong><code>EC2_INSTANCE</code></strong>: Use UNIFIED_ENCRYPTION_MANAGEMENT instead.</li>
 <li><strong><code>EC2_INSTANCE</code></strong>: Use UNIFIED_ENCRYPTION_MANAGEMENT instead.</li>
 <li><strong><code>EC2_INSTANCE_INDEXING_STATUS</code></strong>: Use EC2_INSTANCE_NAME_OR_INSTANCE_ID instead.</li>
+<li><strong><code>EDIT_REPLICATION_SETTINGS</code></strong>: Legacy deprecated operation. No longer used in any RSC APIs.</li>
+<li><strong><code>EDIT_REPLICATION_SETTINGS</code></strong>: Legacy deprecated operation. No longer used in any RSC APIs.</li>
+<li><strong><code>EDIT_SYSTEM_PREFERENCE</code></strong>: Legacy deprecated operation. No longer used in any RSC APIs.</li>
+<li><strong><code>EDIT_SYSTEM_PREFERENCE</code></strong>: Legacy deprecated operation. No longer used in any RSC APIs.</li>
+<li><strong><code>EDIT_SYSTEM_PREFERENCE</code></strong>: Legacy deprecated operation. No longer used in any RSC APIs.</li>
+<li><strong><code>EDIT_SYS_PREFERENCE</code></strong>: Legacy deprecated operation. No longer used in any RSC APIs.</li>
+<li><strong><code>EDIT_SYS_PREFERENCE</code></strong>: Legacy deprecated operation. No longer used in any RSC APIs.</li>
+<li><strong><code>EDIT_SYS_PREFERENCE</code></strong>: Legacy deprecated operation. No longer used in any RSC APIs.</li>
 <li><strong><code>EXCESSIVE_IDENTITY_RIGHTS</code></strong>: Use CATEGORY_UNSPECIFIED instead.</li>
 <li><strong><code>EXOCOMPUTE_EKS_LAMBDA_ROLE_ARN</code></strong>: Instance profile corresponds to worker node in an EKS\ncluster, please use EXOCOMPUTE_EKS_WORKERNODE_INSTANCE_PROFILE\ninstead.</li>
 <li><strong><code>EXTERNAL_CDM_LOCATION_ID</code></strong>: Archived locations should not be queried for.</li>
 <li><strong><code>EXTERNAL_CDM_LOCATION_ID</code></strong>: We do not use archival groups currently.</li>
 <li><strong><code>EXTERNAL_CDM_LOCATION_ID</code></strong>: We do not use archival groups currently.</li>
 <li><strong><code>FSXN</code></strong>: Use specific vendor types instead of GENERIC</li>
+<li><strong><code>GRANULAR_RECOVERY</code></strong>: Legacy deprecated operation. No longer used in any RSC APIs.</li>
+<li><strong><code>GRANULAR_RECOVERY</code></strong>: Legacy deprecated operation. No longer used in any RSC APIs.</li>
 <li><strong><code>HYPERV_VM_SNAPSHOT</code></strong>: Hyper-V VM poller is no longer used.</li>
 <li><strong><code>IDENTITY_PROVIDER_SECURITY</code></strong>: Use CATEGORY_UNSPECIFIED instead.</li>
 <li><strong><code>IDENTITY_PROVIDER_SECURITY</code></strong>: Use IDENTITY_HYGIENE instead.</li>
@@ -5026,6 +5148,10 @@
 <li><strong><code>ISILON</code></strong>: Use FSXN (AWS FSx for NetApp ONTAP) or other specific vendor types instead of NETAPP.</li>
 <li><strong><code>IS_ARCHIVAL_COPY</code></strong>: A snapshot can potentially be uploaded to multiple archival locations. This field does not give the archival status of the snapshot - whether it is uploaded to all the archival locations or partially uploaded to a few locations. Hence, this filter field is deprecated and would be removed subsequently. Please use a combination of ARCHIVAL_LOCATION_IDS and SOURCE_SNAPSHOT_IDS fields instead.</li>
 <li><strong><code>IS_GHOST</code></strong>: Not implemented - no longer used.</li>
+<li><strong><code>MANAGE_AUTO_QUARANTINE</code></strong>: Superseded by ManageCdmUser. Runtime checks still accept this permission during the transition period.</li>
+<li><strong><code>MANAGE_AUTO_QUARANTINE</code></strong>: Superseded by ManageCdmUser. Runtime checks still accept this permission during the transition period.</li>
+<li><strong><code>MODIFY_REPORT</code></strong>: Legacy deprecated operation. No longer used in any RSC APIs.</li>
+<li><strong><code>MODIFY_REPORT</code></strong>: Legacy deprecated operation. No longer used in any RSC APIs.</li>
 <li><strong><code>MONGO_DATABASE</code></strong>: MONGO_DB is deprecated and no longer used.</li>
 <li><strong><code>NF_ANOMALIES</code></strong>: Use OBJECT_PROTECTION_AUDIT_DETAIL instead.</li>
 <li><strong><code>NF_ANOMALIES</code></strong>: Use OBJECT_PROTECTION_AUDIT_LIST instead.</li>
@@ -5037,6 +5163,8 @@
 <li><strong><code>PURE_STORAGE_VOLUME</code></strong>: RECOVERY_PLAN is deprecated and no longer used.</li>
 <li><strong><code>RDS_AWS_NATIVE_ACCOUNT_ID</code></strong>: There is no concept of SLA ID on a snapshot. SLA is assigned to an object and snapshots are taken based on the configuration of the SLA Domain at that point of time. However, SLA configurations may change at a later point in time, without reflecting the change on the snapshot, if not retroactively assigned. Hence, this filter field is deprecated and would be removed subsequently.</li>
 <li><strong><code>REMEDIATION_TYPE_IDP_EVENT_REVERT</code></strong>: Use REMEDIATION_TYPE_REMEDIATE_ENTRA_ID_RISK instead.</li>
+<li><strong><code>RESIZE_MANAGED_VOLUME</code></strong>: Legacy deprecated operation. No longer used in any RSC APIs.</li>
+<li><strong><code>RESIZE_MANAGED_VOLUME</code></strong>: Legacy deprecated operation. No longer used in any RSC APIs.</li>
 <li><strong><code>SAASAPPS_IS_HIDDEN</code></strong>: use <code>SAASAPPS_ORGANIZATION_SCOPE</code> instead.</li>
 <li><strong><code>SECURITY_IDENTITY_DEPARTMENT</code></strong>: Use SECURITY_IDENTITY_DIRECT_DESCENDANT_COUNT instead.</li>
 <li><strong><code>SECURITY_IDENTITY_EVENT_DC_NAME</code></strong>: Use SECURITY_IDENTITY_EVENT_POLICY_INSIGHTS instead.</li>
@@ -5044,9 +5172,20 @@
 <li><strong><code>SIGNIN_LOGS</code></strong>: Use SLA_AUDIT_DETAIL_NG instead.</li>
 <li><strong><code>SLA_AUDIT_DETAIL_NG</code></strong>: Use SLA_AUDIT_LIST_NG instead.</li>
 <li><strong><code>SLA_AUDIT_LIST_NG</code></strong>: Use LATEST_GLOBAL_OBJECTS instead.</li>
+<li><strong><code>SOUTHAMERICA_WEST1</code></strong>: Do not use. Specify a valid GCP region instead.</li>
 <li><strong><code>SSO_POLICY_APPLIES_TO</code></strong>: The SSO Policy Extension relationship has been removed.</li>
 <li><strong><code>TOP_LEVEL_SITES_OF_O365_ORG</code></strong>: Not implemented - no longer used.</li>
 <li><strong><code>UEKM_RSA_BASED</code></strong>: Use UEKM_RSA_BASED or UEKM_AWS_KMS_BASED.</li>
+<li><strong><code>VIEW_AZURE_CLOUD_ACCOUNT</code></strong>: Superseded by ViewCdmUser. Runtime checks still accept this permission during the transition period.</li>
+<li><strong><code>VIEW_AZURE_CLOUD_ACCOUNT</code></strong>: Superseded by ViewCdmUser. Runtime checks still accept this permission during the transition period.</li>
+<li><strong><code>VIEW_CROSS_ACCOUNT_PAIR</code></strong>: Legacy deprecated operation. No longer used in any RSC APIs.</li>
+<li><strong><code>VIEW_CROSS_ACCOUNT_PAIR</code></strong>: Legacy deprecated operation. No longer used in any RSC APIs.</li>
+<li><strong><code>VIEW_DATA_SECURITY_DETAILS</code></strong>: Legacy deprecated operation. No longer used in any RSC APIs.</li>
+<li><strong><code>VIEW_DATA_SECURITY_DETAILS</code></strong>: Legacy deprecated operation. No longer used in any RSC APIs.</li>
+<li><strong><code>VIEW_SECURITY_POLICY</code></strong>: Legacy deprecated operation. No longer used in any RSC APIs.</li>
+<li><strong><code>VIEW_SECURITY_POLICY</code></strong>: Legacy deprecated operation. No longer used in any RSC APIs.</li>
+<li><strong><code>VIEW_USER</code></strong>: Legacy deprecated operation. No longer used in any RSC APIs.</li>
+<li><strong><code>VIEW_USER</code></strong>: Legacy deprecated operation. No longer used in any RSC APIs.</li>
 <li><strong><code>VSPHERE_RESTORE_FILE_TO_VM</code></strong>: VSphere snapshot poller is no longer used.</li>
 <li><strong><code>resourceGroup</code></strong>: Deprecated, use azureResourceGroup instead.</li>
 </ul>

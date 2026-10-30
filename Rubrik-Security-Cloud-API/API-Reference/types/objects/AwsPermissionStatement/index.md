@@ -16,4 +16,10 @@ AWS IAM permission statement.
 
 **Referenced by**
 
+- [AwsPermissionDiffEntry.added](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AwsPermissionDiffEntry/index.md)
+- [AwsPermissionDiffEntry.existing](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AwsPermissionDiffEntry/index.md)
+- [AwsPermissionDiffEntry.removed](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AwsPermissionDiffEntry/index.md)
+- [AwsPermissionModification.latest](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AwsPermissionModification/index.md)
+- [AwsPermissionModification.previous](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AwsPermissionModification/index.md)
+- [AwsPermissionModification.unchanged](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AwsPermissionModification/index.md)
 - [AwsPermissionsGroupPermissions.permissionStatements](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AwsPermissionsGroupPermissions/index.md)

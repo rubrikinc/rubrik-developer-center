@@ -938,7 +938,7 @@
 
 
 <h1 id="awsnativeebsvolumesbyname">awsNativeEbsVolumesByName</h1>
-<p>Paginated list of all AWS EBS Volumes by name or substring of name.</p>
+<p>Lists the AWS Native EBS volumes under the AWS-native hierarchy root whose name or volume ID matches the given substring.</p>
 <h2 id="arguments">Arguments</h2>
 <table>
 <thead>
@@ -970,19 +970,19 @@
 <td>An opaque cursor returned from a previous query's startCursor field. Pass this value verbatim to retrieve the previous page of results.</td>
 </tr>
 <tr>
+<td>ebsVolumeName <em>(required)</em></td>
+<td>String!</td>
+<td>Case-insensitive substring matched against each EBS volume's name and volume ID.</td>
+</tr>
+<tr>
 <td>sortBy</td>
 <td><a href="../../types/enums/AwsNativeEbsVolumeSortFields/">AwsNativeEbsVolumeSortFields</a></td>
-<td>Sort fields for list of AWS EBS volumes.</td>
+<td>Field of the EBS volume to order the results by. Defaults to the volume name.</td>
 </tr>
 <tr>
 <td>sortOrder</td>
 <td><a href="../../types/enums/SortOrder/">SortOrder</a></td>
-<td>Sorts the order of results.</td>
-</tr>
-<tr>
-<td>ebsVolumeName <em>(required)</em></td>
-<td>String!</td>
-<td>The native name for the AWS EBS Volume object.</td>
+<td>Direction the results are ordered in. Defaults to ascending.</td>
 </tr>
 </tbody>
 </table>

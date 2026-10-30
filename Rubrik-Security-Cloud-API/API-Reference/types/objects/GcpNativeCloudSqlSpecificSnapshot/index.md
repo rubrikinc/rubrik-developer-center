@@ -10,6 +10,7 @@ Snapshot information specific to the GCP Cloud SQL instance.
 | --------------- | ----------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------- |
 | databaseVersion | String!                                                                                                                             | Database version of the Cloud SQL instance.                 |
 | edition         | [GcpCloudSqlEdition](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/GcpCloudSqlEdition/index.md)! | Edition of the Cloud SQL instance.                          |
+| encryptionKey   | [GcpKmsCryptoKey](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/GcpKmsCryptoKey/index.md)      | KMS key used for encryption, if any.                        |
 | instanceTier    | String!                                                                                                                             | Instance tier of the Cloud SQL instance.                    |
 | kmsKey          | String                                                                                                                              | KMS key used for encryption, if any.                        |
 | snapshotId      | [UUID](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/UUID/index.md)!                           | ID of the snapshot.                                         |

@@ -1,9 +1,11 @@
 # Interfaces
 
-204 types.
+211 types.
 
 [ActiveDirectoryDomainDescendantType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/ActiveDirectoryDomainDescendantType/index.md)\
 [ActiveDirectoryDomainPhysicalChildType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/ActiveDirectoryDomainPhysicalChildType/index.md)\
+[ActiveDirectoryForestDescendantType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/ActiveDirectoryForestDescendantType/index.md)\
+[ActiveDirectoryForestPhysicalChildType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/ActiveDirectoryForestPhysicalChildType/index.md)\
 [ArchivalEntity](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/ArchivalEntity/index.md)\
 [AwsExocomputeGetConfigurationResponse](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/AwsExocomputeGetConfigurationResponse/index.md)\
 [AwsNativeAccountDescendantType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/AwsNativeAccountDescendantType/index.md)\
@@ -139,6 +141,8 @@
 [OpenstackTagLogicalChildType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/OpenstackTagLogicalChildType/index.md)\
 [OracleDataGuardGroupDescendantType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/OracleDataGuardGroupDescendantType/index.md)\
 [OracleDataGuardGroupLogicalChildType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/OracleDataGuardGroupLogicalChildType/index.md)\
+[OracleFailoverClusterDescendantType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/OracleFailoverClusterDescendantType/index.md)\
+[OracleFailoverServiceDescendantType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/OracleFailoverServiceDescendantType/index.md)\
 [OracleHostDescendantType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/OracleHostDescendantType/index.md)\
 [OracleHostLogicalChildType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/OracleHostLogicalChildType/index.md)\
 [OracleRacDescendantType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/OracleRacDescendantType/index.md)\
@@ -156,6 +160,8 @@
 [ProxmoxEnvironmentPhysicalChildType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/ProxmoxEnvironmentPhysicalChildType/index.md)\
 [ProxmoxNodeDescendant](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/ProxmoxNodeDescendant/index.md)\
 [ProxmoxNodePhysicalChildType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/ProxmoxNodePhysicalChildType/index.md)\
+[ProxmoxTagDescendant](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/ProxmoxTagDescendant/index.md)\
+[ProxmoxTagLogicalChild](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/ProxmoxTagLogicalChild/index.md)\
 [PureStorageArrayDescendantV1](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/PureStorageArrayDescendantV1/index.md)\
 [PureStorageArrayLogicalChildType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/PureStorageArrayLogicalChildType/index.md)\
 [RequestedChangesTemplate](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/RequestedChangesTemplate/index.md)\
@@ -195,6 +201,7 @@
 [VsphereHostPhysicalChildType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/VsphereHostPhysicalChildType/index.md)\
 [VsphereResourcePoolDescendantType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/VsphereResourcePoolDescendantType/index.md)\
 [VsphereResourcePoolPhysicalChildType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/VsphereResourcePoolPhysicalChildType/index.md)\
+[VsphereSupervisorDescendantType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/VsphereSupervisorDescendantType/index.md)\
 [VsphereTagCategoryDescendantType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/VsphereTagCategoryDescendantType/index.md)\
 [VsphereTagCategoryTagChildType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/VsphereTagCategoryTagChildType/index.md)\
 [VsphereTagDescendantType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/VsphereTagDescendantType/index.md)\

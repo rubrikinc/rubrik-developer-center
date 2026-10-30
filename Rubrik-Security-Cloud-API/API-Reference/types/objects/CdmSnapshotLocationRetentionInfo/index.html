@@ -954,6 +954,11 @@
 <td>Supported in v5.2+ Indicates whether expiration information of the snapshot is unavailable at this location. This field is always and only present for replication locations. Its value is true if and only if the replicated snapshots are from pre-5.2 cluster.</td>
 </tr>
 <tr>
+<td>isReaderArchivalLocation</td>
+<td>Boolean!</td>
+<td>When true, this archival location is connected as a reader. Reader clusters never assign expiration dates for archival snapshots. The expiration date should be checked on the owner cluster.</td>
+</tr>
+<tr>
 <td>isSnapshotOnLegalHold</td>
 <td>Boolean!</td>
 <td>Boolean to indicate whether the snapshot is legally held at the specified location.</td>

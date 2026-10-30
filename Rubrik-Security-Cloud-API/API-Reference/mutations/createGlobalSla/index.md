@@ -4,9 +4,9 @@ Create SLA Domain.
 
 ## Arguments
 
-| Argument           | Type                                                                                                                                     | Description |
-| ------------------ | ---------------------------------------------------------------------------------------------------------------------------------------- | ----------- |
-| input *(required)* | [CreateGlobalSlaInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/CreateGlobalSlaInput/index.md)! |             |
+| Argument           | Type                                                                                                                                     | Description                 |
+| ------------------ | ---------------------------------------------------------------------------------------------------------------------------------------- | --------------------------- |
+| input *(required)* | [CreateGlobalSlaInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/CreateGlobalSlaInput/index.md)! | Input to create SLA Domain. |
 
 ## Returns
 

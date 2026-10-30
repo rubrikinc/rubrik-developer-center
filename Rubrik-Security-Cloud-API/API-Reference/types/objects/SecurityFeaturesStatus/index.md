@@ -15,4 +15,5 @@ Security notification feature state for one object.
 
 **Referenced by**
 
+- [SecurityFeaturesStatusEntry.status](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/SecurityFeaturesStatusEntry/index.md)
 - [SecurityMetadata.securityFeaturesStatus](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/SecurityMetadata/index.md)

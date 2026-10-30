@@ -50,5 +50,8 @@ A logical child of a vCD instance.
 
 ## Implemented By
 
+- [VcdCatalog](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/VcdCatalog/index.md)
 - [VcdOrg](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/VcdOrg/index.md)
+- [VcdOrgVdc](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/VcdOrgVdc/index.md)
+- [VcdVimServer](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/VcdVimServer/index.md)
 - [VsphereVm](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/VsphereVm/index.md)

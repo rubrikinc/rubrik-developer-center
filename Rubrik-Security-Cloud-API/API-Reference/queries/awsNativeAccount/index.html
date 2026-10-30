@@ -938,7 +938,7 @@
 
 
 <h1 id="awsnativeaccount">awsNativeAccount</h1>
-<p>Refers to the AWS Native account that serves as a container for all your AWS resources. The AWS Native account contains information about the metadata related to the AWS Native resources.</p>
+<p>Returns a single AWS Native account by its Rubrik FID.</p>
 <h2 id="arguments">Arguments</h2>
 <table>
 <thead>
@@ -952,12 +952,17 @@
 <tr>
 <td>awsNativeAccountRubrikId <em>(required)</em></td>
 <td><a href="../../types/scalars/UUID/">UUID</a>!</td>
-<td>The Rubrik ID for the AWS Native account.</td>
+<td>Rubrik FID of the AWS Native account.</td>
 </tr>
 <tr>
 <td>awsNativeProtectionFeature <em>(required)</em></td>
 <td><a href="../../types/enums/AwsNativeProtectionFeature/">AwsNativeProtectionFeature</a>!</td>
-<td>Cloud native protection feature.</td>
+<td>Protection feature whose workload scopes the account's SLA.</td>
+</tr>
+<tr>
+<td>includeSecurityMetadata</td>
+<td>Boolean</td>
+<td>Whether to include the object's security metadata in the response.</td>
 </tr>
 </tbody>
 </table>

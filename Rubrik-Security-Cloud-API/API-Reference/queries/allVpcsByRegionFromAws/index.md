@@ -1,14 +1,14 @@
 # allVpcsByRegionFromAws
 
-List of all Virtual Private Clouds (VPCs) in the AWS Native account, classified by region.
+Lists the Virtual Private Clouds (VPCs) of an AWS Native account in a region, read directly from AWS.
 
 ## Arguments
 
-| Argument                        | Type                                                                                                                                 | Description                                                          |
-| ------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------- |
-| awsAccountRubrikId *(required)* | [UUID](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/UUID/index.md)!                            | Rubrik ID for AWS account.                                           |
-| region *(required)*             | [AwsNativeRegion](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/AwsNativeRegion/index.md)!        | Region in AWS.                                                       |
-| feature                         | [CloudAccountFeature](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/CloudAccountFeature/index.md) | Cloud-account feature for credential routing on MULTI_ROLE accounts. |
+| Argument                        | Type                                                                                                                                 | Description                                           |
+| ------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------ | ----------------------------------------------------- |
+| awsAccountRubrikId *(required)* | [UUID](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/UUID/index.md)!                            | Rubrik FID of the AWS Native account.                 |
+| region *(required)*             | [AwsNativeRegion](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/AwsNativeRegion/index.md)!        | Region to list the VPCs of.                           |
+| feature                         | [CloudAccountFeature](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/CloudAccountFeature/index.md) | Cloud account feature whose role is used to read AWS. |
 
 ## Returns
 

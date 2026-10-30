@@ -15,4 +15,5 @@ Details of S3 Bucket containing name, region and ARN.
 
 **Queries**
 
+- [query: allAwsNativeRdsExportS3Buckets](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/allAwsNativeRdsExportS3Buckets/index.md)
 - [query: allS3BucketsDetailsFromAws](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/allS3BucketsDetailsFromAws/index.md)

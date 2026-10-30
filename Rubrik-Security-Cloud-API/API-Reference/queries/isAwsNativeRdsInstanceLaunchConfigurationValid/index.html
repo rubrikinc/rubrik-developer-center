@@ -938,7 +938,7 @@
 
 
 <h1 id="isawsnativerdsinstancelaunchconfigurationvalid">isAwsNativeRdsInstanceLaunchConfigurationValid</h1>
-<p>Specifies whether the given DbInstance class, storage type, multi-az capability, encryption capability, iops value are supported for the given dbEngine, dbEngineVersion in the specified availability zone. When true, the specification is valid for a RDS Instance and can be used to create a new Instance.</p>
+<p>Validates whether the given RDS launch configuration is orderable in AWS.</p>
 <h2 id="arguments">Arguments</h2>
 <table>
 <thead>
@@ -952,7 +952,7 @@
 <tr>
 <td>awsAccountRubrikId <em>(required)</em></td>
 <td><a href="../../types/scalars/UUID/">UUID</a>!</td>
-<td>Rubrik ID for AWS account.</td>
+<td>Rubrik ID for the AWS Native account.</td>
 </tr>
 <tr>
 <td>region <em>(required)</em></td>
@@ -962,47 +962,47 @@
 <tr>
 <td>dbEngine <em>(required)</em></td>
 <td><a href="../../types/enums/AwsNativeRdsDbEngine/">AwsNativeRdsDbEngine</a>!</td>
-<td>DB Engine of RDS Instance.</td>
+<td>DB Engine of the RDS Instance.</td>
 </tr>
 <tr>
 <td>dbEngineVersion <em>(required)</em></td>
 <td>String!</td>
-<td>Version of DB engine.</td>
+<td>Version of the DB engine.</td>
 </tr>
 <tr>
 <td>dbClass <em>(required)</em></td>
 <td><a href="../../types/enums/AwsNativeRdsDbInstanceClass/">AwsNativeRdsDbInstanceClass</a>!</td>
-<td>DB class of the exported RDS DB instance.</td>
+<td>Deprecated DB class enum, used as a fallback when databaseInstanceClass is unset.</td>
 </tr>
 <tr>
 <td>databaseInstanceClass</td>
 <td>String</td>
-<td>DB class of the exported RDS DB instance. AWS supported instance classes can be found here https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Concepts.DBInstanceClass.html#Concepts.DBInstanceClass.Types.</td>
+<td>Preferred DB instance class string.</td>
 </tr>
 <tr>
 <td>primaryAz</td>
 <td>String</td>
-<td>AZ in which the exported RDS DB instance must be launched.</td>
+<td>AZ in which the instance would be launched.</td>
 </tr>
 <tr>
 <td>storageType</td>
 <td><a href="../../types/enums/AwsNativeRdsStorageType/">AwsNativeRdsStorageType</a></td>
-<td>Storage type of the exported RDS DB instance.</td>
+<td>Storage type of the instance.</td>
 </tr>
 <tr>
 <td>isMultiAz <em>(required)</em></td>
 <td>Boolean!</td>
-<td>Whether the exported RDS DB instance is multi-AZ or not.</td>
+<td>Whether the instance is multi-AZ.</td>
 </tr>
 <tr>
 <td>kmsKeyId</td>
 <td>String</td>
-<td>KMS Key ID of the exported RDS DB instance.</td>
+<td>KMS Key ID; presence determines whether the instance is treated as encrypted.</td>
 </tr>
 <tr>
 <td>iops</td>
 <td>Int</td>
-<td>IOPs of the exported RDS DB instance.</td>
+<td>IOPS of the instance.</td>
 </tr>
 </tbody>
 </table>

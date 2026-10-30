@@ -1,13 +1,13 @@
 # awsNativeDynamoDbTable
 
-Represents the Amazon DynamoDB Table with a specific ID. For more information, see https://aws.amazon.com/dynamodb/.
+GetAwsNativeDynamoDbTable returns the AWS native DynamoDB table identified by the request's Rubrik ID.
 
 ## Arguments
 
-| Argument                           | Type                                                                                                      | Description                                  |
-| ---------------------------------- | --------------------------------------------------------------------------------------------------------- | -------------------------------------------- |
-| dynamoDbTableRubrikId *(required)* | [UUID](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/UUID/index.md)! | Rubrik ID for the AWS DynamoDB table object. |
-| includeSecurityMetadata            | Boolean                                                                                                   | Filter to include the security metadata.     |
+| Argument                           | Type                                                                                                      | Description                                                  |
+| ---------------------------------- | --------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------ |
+| dynamoDbTableRubrikId *(required)* | [UUID](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/UUID/index.md)! | Rubrik ID for the AWS DynamoDB table object.                 |
+| includeSecurityMetadata            | Boolean                                                                                                   | Whether to include security metadata on the returned object. |
 
 ## Returns
 

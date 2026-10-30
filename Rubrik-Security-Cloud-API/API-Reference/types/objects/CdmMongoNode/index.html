@@ -958,12 +958,18 @@
 <td>Int!</td>
 <td>Port details of the MongoDB node.</td>
 </tr>
+<tr>
+<td>shardId</td>
+<td>String!</td>
+<td>Name of the replica set the node belongs to, such as a shard's replica set or the config server replica set.</td>
+</tr>
 </tbody>
 </table>
 <h2 id="used-by">Used By</h2>
 <p><strong>Referenced by</strong></p>
 <ul>
 <li><a href="../MongoSource/">MongoSource.ignoreSecondaryNodes</a></li>
+<li><a href="../MongoSource/">MongoSource.replicaSetMembers</a></li>
 <li><a href="../MongoSource/">MongoSource.sourceNodes</a></li>
 <li><a href="../SourceMetadata/">SourceMetadata.managementNodes</a></li>
 </ul>

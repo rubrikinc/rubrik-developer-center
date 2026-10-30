@@ -1,6 +1,6 @@
 # OracleHostDescendantType
 
-*No description available.*
+Descendant of the Oracle host object.
 
 ## Fields
 

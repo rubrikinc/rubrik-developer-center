@@ -21,6 +21,7 @@ query ThreatHuntObjectMetrics($huntId: String!) {
     totalAffectedObjects
     totalObjectsScanned
     totalObjectsUnscannable
+    totalObjectsWithMatches
     totalRegistryAffectedObjects
     totalUnaffectedObjects
     unaffectedObjectsFromDb
@@ -42,8 +43,8 @@ query ThreatHuntObjectMetrics($huntId: String!) {
       "totalAffectedObjects": 0,
       "totalObjectsScanned": 0,
       "totalObjectsUnscannable": 0,
-      "totalRegistryAffectedObjects": 0,
-      "totalUnaffectedObjects": 0
+      "totalObjectsWithMatches": 0,
+      "totalRegistryAffectedObjects": 0
     }
   }
 }

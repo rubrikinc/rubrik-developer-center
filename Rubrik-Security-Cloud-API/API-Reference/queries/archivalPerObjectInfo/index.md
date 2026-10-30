@@ -43,6 +43,7 @@ query ArchivalPerObjectInfo($input: UUID!) {
       slaDomain
       storageTier
       storageUsage
+      workloadFid
       workloadId
     }
     pageInfo {

@@ -1074,6 +1074,11 @@
 <td>Required. Supported in v5.0+</td>
 </tr>
 <tr>
+<td>protectionDate</td>
+<td><a href="../../scalars/DateTime/">DateTime</a></td>
+<td>Supported in v9.7 UTC timestamp for when the Oracle database became protected by its current SLA Domain. Omitted if no SLA Domain has been assigned. The value resets every time the SLA Domain changes, including a reassignment to Unprotected.</td>
+</tr>
+<tr>
 <td>racId</td>
 <td>String</td>
 <td>Supported in v5.0+ Rubrik ID of the RAC on which this database is hosted. This field will be empty if the database is not hosted on a RAC environment.</td>

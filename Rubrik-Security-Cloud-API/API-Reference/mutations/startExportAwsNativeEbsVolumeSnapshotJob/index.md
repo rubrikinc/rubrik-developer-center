@@ -1,12 +1,12 @@
 # startExportAwsNativeEbsVolumeSnapshotJob
 
-Start a job to export EBS Volume. The job creates a new EBS Volume with the same properties as that of the snapshot that is exported.
+StartExportAwsNativeEbsVolumeSnapshotJob starts an on-demand job that exports an EBS volume snapshot into a new EBS volume, optionally replacing the volume attached to the source EC2 instance.
 
 ## Arguments
 
-| Argument           | Type                                                                                                                                                                                       | Description                                                 |
-| ------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------- |
-| input *(required)* | [StartExportAwsNativeEbsVolumeSnapshotJobInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/StartExportAwsNativeEbsVolumeSnapshotJobInput/index.md)! | Input to trigger export AWS native EBS volume snapshot job. |
+| Argument           | Type                                                                                                                                                                                       | Description                                       |
+| ------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------- |
+| input *(required)* | [StartExportAwsNativeEbsVolumeSnapshotJobInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/StartExportAwsNativeEbsVolumeSnapshotJobInput/index.md)! | Input for the AWS EBS Volume snapshot export job. |
 
 ## Returns
 

@@ -960,6 +960,21 @@
 <td>An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results.</td>
 </tr>
 <tr>
+<td>last</td>
+<td>Int</td>
+<td>Returns the last n elements from the list.</td>
+</tr>
+<tr>
+<td>before</td>
+<td>String</td>
+<td>An opaque cursor returned from a previous query's startCursor field. Pass this value verbatim to retrieve the previous page of results.</td>
+</tr>
+<tr>
+<td>hostFailoverClusterRoot <em>(required)</em></td>
+<td><a href="../../types/enums/HostFailoverClusterRoot/">HostFailoverClusterRoot</a>!</td>
+<td>Host failover cluster root type.</td>
+</tr>
+<tr>
 <td>sortBy</td>
 <td><a href="../../types/enums/HierarchySortByField/">HierarchySortByField</a></td>
 <td>Sort hierarchy objects according to the hierarchy field.</td>
@@ -973,11 +988,6 @@
 <td>filter</td>
 <td>[<a href="../../types/inputs/Filter/">Filter</a>!]</td>
 <td>Hierarchy object filter.</td>
-</tr>
-<tr>
-<td>hostFailoverClusterRoot <em>(required)</em></td>
-<td><a href="../../types/enums/HostFailoverClusterRoot/">HostFailoverClusterRoot</a>!</td>
-<td>Host failover cluster root type.</td>
 </tr>
 </tbody>
 </table>

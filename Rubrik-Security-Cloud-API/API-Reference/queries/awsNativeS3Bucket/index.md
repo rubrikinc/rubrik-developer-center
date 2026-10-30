@@ -1,13 +1,13 @@
 # awsNativeS3Bucket
 
-Represents the Amazon S3 Bucket with a specific ID. For more information, see https://aws.amazon.com/s3/.
+GetAwsNativeS3Bucket returns the hierarchy details for a single AWS native S3 bucket.
 
 ## Arguments
 
-| Argument                      | Type                                                                                                      | Description                              |
-| ----------------------------- | --------------------------------------------------------------------------------------------------------- | ---------------------------------------- |
-| s3BucketRubrikId *(required)* | [UUID](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/UUID/index.md)! | Rubrik ID for the AWS S3 bucket object.  |
-| includeSecurityMetadata       | Boolean                                                                                                   | Filter to include the security metadata. |
+| Argument                      | Type                                                                                                      | Description                                                  |
+| ----------------------------- | --------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------ |
+| s3BucketRubrikId *(required)* | [UUID](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/UUID/index.md)! | Rubrik ID of the S3 bucket.                                  |
+| includeSecurityMetadata       | Boolean                                                                                                   | Whether to include security metadata on the returned object. |
 
 ## Returns
 

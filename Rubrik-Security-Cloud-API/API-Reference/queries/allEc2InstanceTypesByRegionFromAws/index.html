@@ -938,7 +938,7 @@
 
 
 <h1 id="allec2instancetypesbyregionfromaws">allEc2InstanceTypesByRegionFromAws</h1>
-<p>List of EC2 instance types available in a region, optionally scoped to a single AWS Outpost.</p>
+<p>Lists the EC2 instance types available to an AWS Native account in a region, optionally scoped to a single AWS Outpost. An account that has not granted the permission to read instance-type offerings from AWS gets the full static list of known instance-type names instead.</p>
 <h2 id="arguments">Arguments</h2>
 <table>
 <thead>
@@ -952,17 +952,17 @@
 <tr>
 <td>awsAccountRubrikId <em>(required)</em></td>
 <td><a href="../../types/scalars/UUID/">UUID</a>!</td>
-<td>Rubrik ID for AWS account.</td>
+<td>Rubrik FID of the AWS Native account.</td>
 </tr>
 <tr>
 <td>region <em>(required)</em></td>
 <td><a href="../../types/enums/AwsNativeRegion/">AwsNativeRegion</a>!</td>
-<td>Region in AWS.</td>
+<td>Region to list the instance types of.</td>
 </tr>
 <tr>
 <td>outpostArn</td>
 <td>String</td>
-<td>Optional ARN of an AWS Outpost. When set, scopes the result to instance types available on that Outpost.</td>
+<td>ARN of the Outpost to scope the listing to.</td>
 </tr>
 </tbody>
 </table>

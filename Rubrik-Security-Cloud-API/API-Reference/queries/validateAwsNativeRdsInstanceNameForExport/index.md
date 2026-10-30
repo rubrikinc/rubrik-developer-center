@@ -4,11 +4,11 @@ Validates the name used for an RDS Instance during an export operation. Returns 
 
 ## Arguments
 
-| Argument                        | Type                                                                                                                          | Description                 |
-| ------------------------------- | ----------------------------------------------------------------------------------------------------------------------------- | --------------------------- |
-| awsAccountRubrikId *(required)* | [UUID](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/UUID/index.md)!                     | Rubrik ID for AWS account.  |
-| region *(required)*             | [AwsNativeRegion](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/AwsNativeRegion/index.md)! | Region in AWS.              |
-| rdsInstanceName *(required)*    | String!                                                                                                                       | Name of the RDS DB Instance |
+| Argument                        | Type                                                                                                                          | Description                  |
+| ------------------------------- | ----------------------------------------------------------------------------------------------------------------------------- | ---------------------------- |
+| awsAccountRubrikId *(required)* | [UUID](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/UUID/index.md)!                     | Rubrik ID for AWS account.   |
+| region *(required)*             | [AwsNativeRegion](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/AwsNativeRegion/index.md)! | Region in AWS.               |
+| rdsInstanceName *(required)*    | String!                                                                                                                       | Name of the RDS DB Instance. |
 
 ## Returns
 

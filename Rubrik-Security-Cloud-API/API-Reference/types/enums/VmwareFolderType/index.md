@@ -8,5 +8,6 @@ VMware folder type.
 | ---------- | ------------------ |
 | DATACENTER | Datacenter folder. |
 | HOST       | Host folder.       |
+| NAMESPACE  | Namespace folder.  |
 | UNDEFINED  | Undefined folder.  |
 | VM         | VM folder.         |

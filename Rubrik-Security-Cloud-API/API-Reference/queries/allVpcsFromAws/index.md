@@ -1,12 +1,12 @@
 # allVpcsFromAws
 
-List of all Virtual Private Clouds (VPCs) in the AWS Native account.
+Lists the persisted Virtual Private Clouds (VPCs) of every AWS Native account the caller can view, optionally scoped to a single account. Subnets and security groups are not returned.
 
 ## Arguments
 
-| Argument           | Type                                                                                                     | Description                |
-| ------------------ | -------------------------------------------------------------------------------------------------------- | -------------------------- |
-| awsAccountRubrikId | [UUID](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/UUID/index.md) | Rubrik ID for AWS account. |
+| Argument           | Type                                                                                                     | Description                                                   |
+| ------------------ | -------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------- |
+| awsAccountRubrikId | [UUID](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/UUID/index.md) | Rubrik FID of the AWS Native account to scope the listing to. |
 
 ## Returns
 

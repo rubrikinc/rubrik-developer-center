@@ -128,6 +128,9 @@ A Rubrik CDM Cluster.
 - [ActiveDirectoryDomainController.cluster](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/ActiveDirectoryDomainController/index.md)
 - ActiveDirectoryDomainDescendantType.cluster
 - ActiveDirectoryDomainPhysicalChildType.cluster
+- [ActiveDirectoryForest.cluster](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/ActiveDirectoryForest/index.md)
+- ActiveDirectoryForestDescendantType.cluster
+- ActiveDirectoryForestPhysicalChildType.cluster
 - [ActivitySeries.cluster](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/ActivitySeries/index.md)
 - [AdVolumeExport.cluster](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AdVolumeExport/index.md)
 - [AddStorageArrayReply.cluster](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AddStorageArrayReply/index.md)
@@ -151,7 +154,4 @@ A Rubrik CDM Cluster.
 - CloudDirectHierarchyObject.cluster
 - CloudDirectHierarchyWorkload.cluster
 - [CloudDirectNasBucket.cluster](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/CloudDirectNasBucket/index.md)
-- [CloudDirectNasExport.cluster](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/CloudDirectNasExport/index.md)
-- [CloudDirectNasNamespace.cluster](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/CloudDirectNasNamespace/index.md)
-- CloudDirectNasNamespaceDescendantType.cluster
-- *…and 323 more*
+- *…and 352 more*

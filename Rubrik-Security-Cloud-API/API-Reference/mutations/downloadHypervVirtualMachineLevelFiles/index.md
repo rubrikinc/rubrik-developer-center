@@ -1,12 +1,12 @@
 # downloadHypervVirtualMachineLevelFiles
 
-Download virtual machine files from the snapshot Supported in v9.1+ Download virtual machine configuration & disk files from the snapshot.
+Download VM-level files from a Hyper-V VM backup snapshot. Supported in v9.1+ Start an asynchronous job to download virtual machine configuration and disk files from a specified Hyper-V VM backup snapshot. The response returns an asynchronous request ID.
 
 ## Arguments
 
-| Argument           | Type                                                                                                                                                                                       | Description                                                 |
-| ------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------- |
-| input *(required)* | [DownloadHypervVirtualMachineVmLevelFilesInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/DownloadHypervVirtualMachineVmLevelFilesInput/index.md)! | Input for InternalDownloadHypervVirtualMachineVmLevelFiles. |
+| Argument           | Type                                                                                                                                                                                       | Description                                       |
+| ------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------- |
+| input *(required)* | [DownloadHypervVirtualMachineVmLevelFilesInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/DownloadHypervVirtualMachineVmLevelFilesInput/index.md)! | Input for downloadHypervVirtualMachineLevelFiles. |
 
 ## Returns
 

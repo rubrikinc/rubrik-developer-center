@@ -1,13 +1,13 @@
 # awsNativeEc2Instance
 
-Refers to Amazon Elastic Compute Cloud (EC2) Instance represented by a specific ID. For more information, see https://aws.amazon.com/ec2/.
+Returns a single AWS Native EC2 instance by its Rubrik FID.
 
 ## Arguments
 
-| Argument                         | Type                                                                                                      | Description                              |
-| -------------------------------- | --------------------------------------------------------------------------------------------------------- | ---------------------------------------- |
-| ec2InstanceRubrikId *(required)* | [UUID](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/UUID/index.md)! | Rubrik ID for the AWS EC2 Instance.      |
-| includeSecurityMetadata          | Boolean                                                                                                   | Filter to include the security metadata. |
+| Argument                         | Type                                                                                                      | Description                                                        |
+| -------------------------------- | --------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------ |
+| ec2InstanceRubrikId *(required)* | [UUID](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/UUID/index.md)! | Rubrik FID of the EC2 instance.                                    |
+| includeSecurityMetadata          | Boolean                                                                                                   | Whether to include the object's security metadata in the response. |
 
 ## Returns
 

@@ -938,7 +938,7 @@
 
 
 <h1 id="awsnativerdsinstance">awsNativeRdsInstance</h1>
-<p>Refers to AWS Relational Database Service (RDS) represented by a specific ID. For more information, see https://aws.amazon.com/rds/.</p>
+<p>Returns a single AWS Native RDS instance by its Rubrik FID.</p>
 <h2 id="arguments">Arguments</h2>
 <table>
 <thead>
@@ -952,12 +952,12 @@
 <tr>
 <td>rdsInstanceRubrikId <em>(required)</em></td>
 <td><a href="../../types/scalars/UUID/">UUID</a>!</td>
-<td>The Rubrik ID for the AWS RDS Instance.</td>
+<td>Rubrik FID of the RDS instance.</td>
 </tr>
 <tr>
 <td>includeSecurityMetadata</td>
 <td>Boolean</td>
-<td>Filter to include the security metadata.</td>
+<td>Whether to include the object's security metadata in the response.</td>
 </tr>
 </tbody>
 </table>

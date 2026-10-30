@@ -940,6 +940,11 @@
 </thead>
 <tbody>
 <tr>
+<td>accountName</td>
+<td>String!</td>
+<td>Name of the Azure Cosmos NoSQL account that owns the database.</td>
+</tr>
+<tr>
 <td>allOrgs</td>
 <td>[<a href="../Org/">Org</a>!]!</td>
 <td>Organizations to which this hierarchy object belongs.</td>
@@ -958,6 +963,16 @@
 <td>autoscaleMaxRuPerSec</td>
 <td>Int!</td>
 <td>Ceiling for autoscale throughput, in request units per second. Zero when throughputMode is not autoscale.</td>
+</tr>
+<tr>
+<td>azureCosmosNosqlContainerCount</td>
+<td>Int!</td>
+<td>Number of containers in the Azure Cosmos NoSQL database as of the last inventory refresh.</td>
+</tr>
+<tr>
+<td>azureResourceGroupDetails</td>
+<td><a href="../AzureResourceGroupDetails/">AzureResourceGroupDetails</a></td>
+<td>Resource group of the Azure Cosmos NoSQL account that owns the database, including its subscription.</td>
 </tr>
 <tr>
 <td>cloudNativeId</td>

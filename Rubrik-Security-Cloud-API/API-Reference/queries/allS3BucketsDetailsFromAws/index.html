@@ -938,7 +938,7 @@
 
 
 <h1 id="alls3bucketsdetailsfromaws">allS3BucketsDetailsFromAws</h1>
-<p>List of all S3 bucket details across regions for the AWS Native account.</p>
+<p>ListS3BucketsDetails lists all the s3 bucket details across regions.</p>
 <h2 id="arguments">Arguments</h2>
 <table>
 <thead>
@@ -952,12 +952,12 @@
 <tr>
 <td>awsAccountRubrikId <em>(required)</em></td>
 <td><a href="../../types/scalars/UUID/">UUID</a>!</td>
-<td>Rubrik ID for AWS account.</td>
+<td>Rubrik FID of the AWS Native account.</td>
 </tr>
 <tr>
 <td>region</td>
 <td><a href="../../types/enums/AwsNativeRegion/">AwsNativeRegion</a></td>
-<td>The region in AWS. If no region is provided, the AWS function will return all buckets.</td>
+<td>Region to restrict the listing to. All regions when omitted.</td>
 </tr>
 </tbody>
 </table>

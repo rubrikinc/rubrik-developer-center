@@ -1,12 +1,12 @@
 # excludeAwsNativeEbsVolumesFromSnapshot
 
-Mark AWS Native EBS Volumes to be excluded from EC2 Instance snapshot. By default, all EBS Volumes are marked as included.
+ExcludeAwsNativeEbsVolumesFromSnapshot marks EBS volumes attached to an EC2 instance as excluded from, or included in, that instance's snapshots. The change is applied atomically.
 
 ## Arguments
 
-| Argument           | Type                                                                                                                                                                                   | Description                                                |
-| ------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------- |
-| input *(required)* | [ExcludeAwsNativeEbsVolumesFromSnapshotInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/ExcludeAwsNativeEbsVolumesFromSnapshotInput/index.md)! | Input to mark EBS volumes to be excluded for EC2 snapshot. |
+| Argument           | Type                                                                                                                                                                                   | Description                                                  |
+| ------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------ |
+| input *(required)* | [ExcludeAwsNativeEbsVolumesFromSnapshotInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/ExcludeAwsNativeEbsVolumesFromSnapshotInput/index.md)! | EC2 instance and the exclusion state of each of its volumes. |
 
 ## Returns
 

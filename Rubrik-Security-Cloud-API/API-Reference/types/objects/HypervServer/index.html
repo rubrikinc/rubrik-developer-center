@@ -939,7 +939,7 @@
 
 <h1 id="hypervserver">HypervServer</h1>
 <p>Hyper-V server details.</p>
-<p><strong>Implements:</strong> <a href="../../interfaces/HierarchyObject/">HierarchyObject</a>, <a href="../../interfaces/CdmHierarchyObject/">CdmHierarchyObject</a>, <a href="../../interfaces/PhysicalHostDescendantType/">PhysicalHostDescendantType</a>, <a href="../../interfaces/PhysicalHostPhysicalChildType/">PhysicalHostPhysicalChildType</a>, <a href="../../interfaces/HyperVSCVMMDescendantType/">HyperVSCVMMDescendantType</a>, <a href="../../interfaces/HyperVSCVMMLogicalChildType/">HyperVSCVMMLogicalChildType</a>, <a href="../../interfaces/HyperVClusterDescendantType/">HyperVClusterDescendantType</a>, <a href="../../interfaces/HyperVClusterLogicalChildType/">HyperVClusterLogicalChildType</a>, <a href="../../interfaces/HypervTopLevelDescendantType/">HypervTopLevelDescendantType</a></p>
+<p><strong>Implements:</strong> <a href="../../interfaces/CdmHierarchyObject/">CdmHierarchyObject</a>, <a href="../../interfaces/HierarchyObject/">HierarchyObject</a>, <a href="../../interfaces/PhysicalHostDescendantType/">PhysicalHostDescendantType</a>, <a href="../../interfaces/PhysicalHostPhysicalChildType/">PhysicalHostPhysicalChildType</a>, <a href="../../interfaces/HyperVSCVMMDescendantType/">HyperVSCVMMDescendantType</a>, <a href="../../interfaces/HyperVSCVMMLogicalChildType/">HyperVSCVMMLogicalChildType</a>, <a href="../../interfaces/HyperVClusterDescendantType/">HyperVClusterDescendantType</a>, <a href="../../interfaces/HyperVClusterLogicalChildType/">HyperVClusterLogicalChildType</a>, <a href="../../interfaces/HypervTopLevelDescendantType/">HypervTopLevelDescendantType</a></p>
 <h2 id="fields">Fields</h2>
 <table>
 <thead>
@@ -983,7 +983,7 @@
 <tr>
 <td>connectionStatus</td>
 <td><a href="../../enums/HypervHostStatusType/">HypervHostStatusType</a>!</td>
-<td>Connectivity Status of Hyper-V Host.</td>
+<td>Connection status of the Hyper-V host, computed from status.connectivity by the ScalaToProtoConverter.</td>
 </tr>
 <tr>
 <td>crossAccountReplicatedObjectInfos</td>
@@ -1157,6 +1157,18 @@
 </tr>
 <tr>
 <td>descendantConnection</td>
+<td>last</td>
+<td>Int</td>
+<td>Returns the last n elements from the list.</td>
+</tr>
+<tr>
+<td>descendantConnection</td>
+<td>before</td>
+<td>String</td>
+<td>An opaque cursor returned from a previous query's startCursor field. Pass this value verbatim to retrieve the previous page of results.</td>
+</tr>
+<tr>
+<td>descendantConnection</td>
 <td>sortBy</td>
 <td><a href="../../enums/HierarchySortByField/">HierarchySortByField</a></td>
 <td>Sort hierarchy objects according to the hierarchy field.</td>
@@ -1199,6 +1211,18 @@
 </tr>
 <tr>
 <td>logicalChildConnection</td>
+<td>last</td>
+<td>Int</td>
+<td>Returns the last n elements from the list.</td>
+</tr>
+<tr>
+<td>logicalChildConnection</td>
+<td>before</td>
+<td>String</td>
+<td>An opaque cursor returned from a previous query's startCursor field. Pass this value verbatim to retrieve the previous page of results.</td>
+</tr>
+<tr>
+<td>logicalChildConnection</td>
 <td>sortBy</td>
 <td><a href="../../enums/HierarchySortByField/">HierarchySortByField</a></td>
 <td>Sort hierarchy objects according to the hierarchy field.</td>
@@ -1237,7 +1261,7 @@
 <td>numWorkloadDescendants</td>
 <td>after</td>
 <td>String</td>
-<td>An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results.</td>
+<td>Returns the elements in the list that occur after the specified cursor.</td>
 </tr>
 <tr>
 <td>numWorkloadDescendants</td>
@@ -1249,7 +1273,7 @@
 <td>numWorkloadDescendants</td>
 <td>before</td>
 <td>String</td>
-<td>An opaque cursor returned from a previous query's startCursor field. Pass this value verbatim to retrieve the previous page of results.</td>
+<td>Returns the elements in the list that occur before the specified cursor.</td>
 </tr>
 <tr>
 <td>numWorkloadDescendants</td>

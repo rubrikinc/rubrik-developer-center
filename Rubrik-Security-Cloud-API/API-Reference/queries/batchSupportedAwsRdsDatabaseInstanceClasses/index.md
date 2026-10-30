@@ -1,14 +1,14 @@
 # batchSupportedAwsRdsDatabaseInstanceClasses
 
-Batch query to list all the database instance classes supported by AWS RDS database for multiple DB engine and engine version combinations.
+BatchSupportedAwsRdsDatabaseInstanceClasses returns the list of supported DB instance classes for multiple engine/version combinations in a single batch request.
 
 ## Arguments
 
-| Argument                        | Type                                                                                                                                                | Description                                                                         |
-| ------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------- |
-| awsAccountRubrikId *(required)* | [UUID](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/UUID/index.md)!                                           | Rubrik ID for AWS account.                                                          |
-| region *(required)*             | [AwsNativeRegion](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/AwsNativeRegion/index.md)!                       | Region in AWS.                                                                      |
-| requests *(required)*           | \[[RdsInstanceClassRequest](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/RdsInstanceClassRequest/index.md)!\]! | List of DB engine and version combinations to query for supported instance classes. |
+| Argument                        | Type                                                                                                                                                | Description                                 |
+| ------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------- |
+| awsAccountRubrikId *(required)* | [UUID](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/UUID/index.md)!                                           | Rubrik ID for AWS account.                  |
+| region *(required)*             | [AwsNativeRegion](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/AwsNativeRegion/index.md)!                       | Region in AWS.                              |
+| requests *(required)*           | \[[RdsInstanceClassRequest](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/RdsInstanceClassRequest/index.md)!\]! | Engine and version combinations to look up. |
 
 ## Returns
 

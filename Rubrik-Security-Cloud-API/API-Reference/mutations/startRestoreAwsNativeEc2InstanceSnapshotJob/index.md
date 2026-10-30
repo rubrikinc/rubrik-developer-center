@@ -1,6 +1,6 @@
 # startRestoreAwsNativeEc2InstanceSnapshotJob
 
-Start an on demand restore snapshot job for AWS EC2 Instance. When completed, this will replace the original EC2 Instance with the selected snapshot.
+StartRestoreAwsNativeEc2InstanceSnapshotJob starts an in-place restore of an EC2 instance from one of its snapshots. A retrieval tier the caller leaves unset is read as the bulk tier.
 
 ## Arguments
 

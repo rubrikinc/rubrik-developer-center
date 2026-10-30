@@ -1,6 +1,6 @@
 # vsphereVmwareCdpLiveInfo
 
-*No description available.*
+Returns the live CDP info for a set of CDP-enabled virtual machines Supported in v5.1+.
 
 ## Arguments
 

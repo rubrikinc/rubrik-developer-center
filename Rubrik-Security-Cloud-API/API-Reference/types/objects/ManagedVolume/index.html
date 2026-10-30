@@ -939,7 +939,7 @@
 
 <h1 id="managedvolume">ManagedVolume</h1>
 <p>Managed Volume information.</p>
-<p><strong>Implements:</strong> <a href="../../interfaces/HierarchyObject/">HierarchyObject</a>, <a href="../../interfaces/CdmHierarchyObject/">CdmHierarchyObject</a>, <a href="../../interfaces/CdmHierarchySnappableNew/">CdmHierarchySnappableNew</a></p>
+<p><strong>Implements:</strong> <a href="../../interfaces/CdmHierarchyObject/">CdmHierarchyObject</a>, <a href="../../interfaces/HierarchyObject/">HierarchyObject</a>, <a href="../../interfaces/CdmHierarchySnappableNew/">CdmHierarchySnappableNew</a>, <a href="../../interfaces/HierarchySnappable/">HierarchySnappable</a></p>
 <h2 id="fields">Fields</h2>
 <table>
 <thead>
@@ -963,7 +963,7 @@
 <tr>
 <td>applicationTag</td>
 <td><a href="../../enums/ManagedVolumeApplicationTag/">ManagedVolumeApplicationTag</a></td>
-<td>Mount protocol used for Managed Volume.</td>
+<td>Application tag of the Managed Volume.</td>
 </tr>
 <tr>
 <td>authorizedOperations</td>
@@ -1322,6 +1322,18 @@
 </tr>
 <tr>
 <td>descendantConnection</td>
+<td>last</td>
+<td>Int</td>
+<td>Returns the last n elements from the list.</td>
+</tr>
+<tr>
+<td>descendantConnection</td>
+<td>before</td>
+<td>String</td>
+<td>An opaque cursor returned from a previous query's startCursor field. Pass this value verbatim to retrieve the previous page of results.</td>
+</tr>
+<tr>
+<td>descendantConnection</td>
 <td>sortBy</td>
 <td><a href="../../enums/HierarchySortByField/">HierarchySortByField</a></td>
 <td>Sort hierarchy objects according to the hierarchy field.</td>
@@ -1364,6 +1376,18 @@
 </tr>
 <tr>
 <td>liveMounts</td>
+<td>last</td>
+<td>Int</td>
+<td>Returns the last n elements from the list.</td>
+</tr>
+<tr>
+<td>liveMounts</td>
+<td>before</td>
+<td>String</td>
+<td>An opaque cursor returned from a previous query's startCursor field. Pass this value verbatim to retrieve the previous page of results.</td>
+</tr>
+<tr>
+<td>liveMounts</td>
 <td>sortBy</td>
 <td><a href="../../enums/HierarchySortByField/">HierarchySortByField</a></td>
 <td>Sort hierarchy objects according to the hierarchy field.</td>
@@ -1390,7 +1414,7 @@
 <td>missedSnapshotConnection</td>
 <td>after</td>
 <td>String</td>
-<td>An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results.</td>
+<td>Returns the elements in the list that occur after the specified cursor.</td>
 </tr>
 <tr>
 <td>missedSnapshotConnection</td>
@@ -1402,7 +1426,7 @@
 <td>missedSnapshotConnection</td>
 <td>before</td>
 <td>String</td>
-<td>An opaque cursor returned from a previous query's startCursor field. Pass this value verbatim to retrieve the previous page of results.</td>
+<td>Returns the elements in the list that occur before the specified cursor.</td>
 </tr>
 <tr>
 <td>missedSnapshotConnection</td>
@@ -1420,7 +1444,7 @@
 <td>missedSnapshotGroupByConnection</td>
 <td>after</td>
 <td>String</td>
-<td>An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results.</td>
+<td>Returns the elements in the list that occur after the specified cursor.</td>
 </tr>
 <tr>
 <td>missedSnapshotGroupByConnection</td>
@@ -1432,7 +1456,7 @@
 <td>missedSnapshotGroupByConnection</td>
 <td>before</td>
 <td>String</td>
-<td>An opaque cursor returned from a previous query's startCursor field. Pass this value verbatim to retrieve the previous page of results.</td>
+<td>Returns the elements in the list that occur before the specified cursor.</td>
 </tr>
 <tr>
 <td>missedSnapshotGroupByConnection</td>
@@ -1474,7 +1498,7 @@
 <td>numWorkloadDescendants</td>
 <td>after</td>
 <td>String</td>
-<td>An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results.</td>
+<td>Returns the elements in the list that occur after the specified cursor.</td>
 </tr>
 <tr>
 <td>numWorkloadDescendants</td>
@@ -1486,7 +1510,7 @@
 <td>numWorkloadDescendants</td>
 <td>before</td>
 <td>String</td>
-<td>An opaque cursor returned from a previous query's startCursor field. Pass this value verbatim to retrieve the previous page of results.</td>
+<td>Returns the elements in the list that occur before the specified cursor.</td>
 </tr>
 <tr>
 <td>numWorkloadDescendants</td>
@@ -1505,6 +1529,18 @@
 <td>after</td>
 <td>String</td>
 <td>An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results.</td>
+</tr>
+<tr>
+<td>physicalChildConnection</td>
+<td>last</td>
+<td>Int</td>
+<td>Returns the last n elements from the list.</td>
+</tr>
+<tr>
+<td>physicalChildConnection</td>
+<td>before</td>
+<td>String</td>
+<td>An opaque cursor returned from a previous query's startCursor field. Pass this value verbatim to retrieve the previous page of results.</td>
 </tr>
 <tr>
 <td>physicalChildConnection</td>
@@ -1598,6 +1634,18 @@
 </tr>
 <tr>
 <td>queuedSnapshots</td>
+<td>last</td>
+<td>Int</td>
+<td>Returns the last n elements from the list.</td>
+</tr>
+<tr>
+<td>queuedSnapshots</td>
+<td>before</td>
+<td>String</td>
+<td>An opaque cursor returned from a previous query's startCursor field. Pass this value verbatim to retrieve the previous page of results.</td>
+</tr>
+<tr>
+<td>queuedSnapshots</td>
 <td>filter</td>
 <td><a href="../../inputs/ManagedVolumeQueuedSnapshotFilterInput/">ManagedVolumeQueuedSnapshotFilterInput</a></td>
 <td>Filter queued snapshots by date.</td>
@@ -1624,7 +1672,7 @@
 <td>snapshotConnection</td>
 <td>after</td>
 <td>String</td>
-<td>An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results.</td>
+<td>Returns the elements in the list that occur after the specified cursor.</td>
 </tr>
 <tr>
 <td>snapshotConnection</td>
@@ -1636,7 +1684,7 @@
 <td>snapshotConnection</td>
 <td>before</td>
 <td>String</td>
-<td>An opaque cursor returned from a previous query's startCursor field. Pass this value verbatim to retrieve the previous page of results.</td>
+<td>Returns the elements in the list that occur before the specified cursor.</td>
 </tr>
 <tr>
 <td>snapshotConnection</td>
@@ -1666,7 +1714,7 @@
 <td>snapshotGroupByConnection</td>
 <td>after</td>
 <td>String</td>
-<td>An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results.</td>
+<td>Returns the elements in the list that occur after the specified cursor.</td>
 </tr>
 <tr>
 <td>snapshotGroupByConnection</td>
@@ -1678,7 +1726,7 @@
 <td>snapshotGroupByConnection</td>
 <td>before</td>
 <td>String</td>
-<td>An opaque cursor returned from a previous query's startCursor field. Pass this value verbatim to retrieve the previous page of results.</td>
+<td>Returns the elements in the list that occur before the specified cursor.</td>
 </tr>
 <tr>
 <td>snapshotGroupByConnection</td>
@@ -1714,7 +1762,7 @@
 <td>snapshotGroupBySummary</td>
 <td>after</td>
 <td>String</td>
-<td>An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results.</td>
+<td>Returns the elements in the list that occur after the specified cursor.</td>
 </tr>
 <tr>
 <td>snapshotGroupBySummary</td>
@@ -1726,7 +1774,7 @@
 <td>snapshotGroupBySummary</td>
 <td>before</td>
 <td>String</td>
-<td>An opaque cursor returned from a previous query's startCursor field. Pass this value verbatim to retrieve the previous page of results.</td>
+<td>Returns the elements in the list that occur before the specified cursor.</td>
 </tr>
 <tr>
 <td>snapshotGroupBySummary</td>

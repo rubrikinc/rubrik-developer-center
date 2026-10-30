@@ -8,7 +8,7 @@ Cloud native label rules.
 | ----------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------ |
 | objectType *(required)* | [CloudNativeLabelObjectType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/CloudNativeLabelObjectType/index.md)!        | Type of managed object on which label rule will be applied.  |
 | filters                 | \[[CloudNativeFilter](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/CloudNativeFilter/index.md)!\]                     | Fields and values according to which rules will be filtered. |
-| sortBy                  | [CloudNativeTagRuleSortByFields](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/CloudNativeTagRuleSortByFields/index.md) |                                                              |
+| sortBy                  | [CloudNativeTagRuleSortByFields](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/CloudNativeTagRuleSortByFields/index.md) | Field according to which rules will be sorted.               |
 | sortOrder               | [SortOrder](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/SortOrder/index.md)                                           | Sorts the order of results.                                  |
 
 ## Returns

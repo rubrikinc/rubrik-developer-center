@@ -1,16 +1,16 @@
 # allDbParameterGroupsByRegionFromAws
 
-List of all DB parameter groups in a given region. Refers to container for engine configuration that applies to one or more DB Instances. For more information, see https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_WorkingWithOptionGroups.html.
+ListDbParameterGroups returns the RDS DB parameter groups available in the given region of an AWS Native account.
 
 ## Arguments
 
-| Argument                        | Type                                                                                                                                    | Description                |
-| ------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- | -------------------------- |
-| awsAccountRubrikId *(required)* | [UUID](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/UUID/index.md)!                               | Rubrik ID for AWS account. |
-| region *(required)*             | [AwsNativeRegion](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/AwsNativeRegion/index.md)!           | Region in AWS.             |
-| dbEngine *(required)*           | [AwsNativeRdsDbEngine](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/AwsNativeRdsDbEngine/index.md)! | DB Engine of RDS Instance. |
-| dbEngineVersion *(required)*    | String!                                                                                                                                 | Version of DB engine.      |
-| rdsType                         | [AwsNativeRdsType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/AwsNativeRdsType/index.md)          | Type of RDS deployment.    |
+| Argument                        | Type                                                                                                                                    | Description                                                   |
+| ------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------- |
+| awsAccountRubrikId *(required)* | [UUID](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/UUID/index.md)!                               | Rubrik ID for AWS account.                                    |
+| region *(required)*             | [AwsNativeRegion](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/AwsNativeRegion/index.md)!           | Region in AWS.                                                |
+| dbEngine *(required)*           | [AwsNativeRdsDbEngine](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/AwsNativeRdsDbEngine/index.md)! | Database engine of the RDS instance.                          |
+| dbEngineVersion *(required)*    | String!                                                                                                                                 | Database engine version of the RDS instance.                  |
+| rdsType                         | [AwsNativeRdsType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/AwsNativeRdsType/index.md)          | Type of the RDS instance. Defaults to a regular RDS instance. |
 
 ## Returns
 

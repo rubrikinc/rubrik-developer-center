@@ -949,6 +949,11 @@
 <td>Specifies whether the expiration date for this snapshot has been calculated. This field will be absent if the snapshot has never existed at this location.</td>
 </tr>
 <tr>
+<td>isReaderArchivalLocation</td>
+<td>Boolean!</td>
+<td>When true, this archival location is connected as a reader. Reader clusters never assign expiration dates for archival snapshots. The expiration date should be checked on the owner cluster.</td>
+</tr>
+<tr>
 <td>isSnapshotOnLegalHold</td>
 <td>Boolean!</td>
 <td>Boolean to indicate whether the snapshot is legally held at the specified location.</td>

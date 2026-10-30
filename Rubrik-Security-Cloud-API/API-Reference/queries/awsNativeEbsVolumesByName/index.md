@@ -1,6 +1,6 @@
 # awsNativeEbsVolumesByName
 
-Paginated list of all AWS EBS Volumes by name or substring of name.
+Lists the AWS Native EBS volumes under the AWS-native hierarchy root whose name or volume ID matches the given substring.
 
 ## Arguments
 
@@ -10,9 +10,9 @@ Paginated list of all AWS EBS Volumes by name or substring of name.
 | after                      | String                                                                                                                                                 | An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results.       |
 | last                       | Int                                                                                                                                                    | Returns the last n elements from the list.                                                                                              |
 | before                     | String                                                                                                                                                 | An opaque cursor returned from a previous query's startCursor field. Pass this value verbatim to retrieve the previous page of results. |
-| sortBy                     | [AwsNativeEbsVolumeSortFields](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/AwsNativeEbsVolumeSortFields/index.md) | Sort fields for list of AWS EBS volumes.                                                                                                |
-| sortOrder                  | [SortOrder](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/SortOrder/index.md)                                       | Sorts the order of results.                                                                                                             |
-| ebsVolumeName *(required)* | String!                                                                                                                                                | The native name for the AWS EBS Volume object.                                                                                          |
+| ebsVolumeName *(required)* | String!                                                                                                                                                | Case-insensitive substring matched against each EBS volume's name and volume ID.                                                        |
+| sortBy                     | [AwsNativeEbsVolumeSortFields](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/AwsNativeEbsVolumeSortFields/index.md) | Field of the EBS volume to order the results by. Defaults to the volume name.                                                           |
+| sortOrder                  | [SortOrder](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/SortOrder/index.md)                                       | Direction the results are ordered in. Defaults to ascending.                                                                            |
 
 ## Returns
 

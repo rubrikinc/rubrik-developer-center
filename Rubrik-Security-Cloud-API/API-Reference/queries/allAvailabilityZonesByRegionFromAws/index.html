@@ -938,7 +938,7 @@
 
 
 <h1 id="allavailabilityzonesbyregionfromaws">allAvailabilityZonesByRegionFromAws</h1>
-<p>List of Availability Zones (AZs) in the specified region on the specified AWS Native account.</p>
+<p>Lists the availability zones of a region, as seen by an AWS Native account. Different accounts can see different zones in the same region.</p>
 <h2 id="arguments">Arguments</h2>
 <table>
 <thead>
@@ -952,17 +952,17 @@
 <tr>
 <td>awsAccountRubrikId <em>(required)</em></td>
 <td><a href="../../types/scalars/UUID/">UUID</a>!</td>
-<td>Rubrik ID for AWS account.</td>
+<td>Rubrik FID of the AWS Native account.</td>
 </tr>
 <tr>
 <td>region <em>(required)</em></td>
 <td><a href="../../types/enums/AwsNativeRegion/">AwsNativeRegion</a>!</td>
-<td>Region in AWS.</td>
+<td>Region to list the availability zones of.</td>
 </tr>
 <tr>
 <td>feature</td>
 <td><a href="../../types/enums/CloudAccountFeature/">CloudAccountFeature</a></td>
-<td>Cloud-account feature for credential routing on MULTI_ROLE accounts.</td>
+<td>Cloud account feature whose role is used to read AWS.</td>
 </tr>
 </tbody>
 </table>

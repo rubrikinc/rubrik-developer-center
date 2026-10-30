@@ -12,6 +12,7 @@ Cloud native object type enum.
 | AWS_EC2_INSTANCE                  | AWS EC2 INSTANCE.                  |
 | AWS_RDS_INSTANCE                  | AWS RDS INSTANCE.                  |
 | AWS_S3_BUCKET                     | AWS S3 BUCKET.                     |
+| AZURE_COSMOS_NOSQL_ACCOUNT        | AZURE COSMOS NOSQL ACCOUNT.        |
 | AZURE_MANAGED_DISK                | AZURE MANAGED DISK.                |
 | AZURE_POSTGRES_FLEXIBLE_SERVER    | AZURE POSTGRES FLEXIBLE SERVER.    |
 | AZURE_SQL_DATABASE_DB             | AZURE SQL DATABASE DB.             |

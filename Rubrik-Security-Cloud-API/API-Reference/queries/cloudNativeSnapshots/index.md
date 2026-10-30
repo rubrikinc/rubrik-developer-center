@@ -4,13 +4,15 @@ List of all files and directories in a given path with the given prefix in name.
 
 ## Arguments
 
-| Argument                 | Type                                                                                                      | Description                                                                                                                       |
-| ------------------------ | --------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
-| first                    | Int                                                                                                       | Returns the first n elements from the list.                                                                                       |
-| after                    | String                                                                                                    | An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results. |
-| path *(required)*        | String!                                                                                                   | The path under which you want your search to run.                                                                                 |
-| snapshotFid *(required)* | [UUID](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/UUID/index.md)! | ID of the snapshot to be searched or browsed.                                                                                     |
-| searchPrefix             | String                                                                                                    | Name prefix to search for files within a snapshot.                                                                                |
+| Argument                 | Type                                                                                                      | Description                                                                                                                             |
+| ------------------------ | --------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
+| first                    | Int                                                                                                       | Returns the first n elements from the list.                                                                                             |
+| after                    | String                                                                                                    | An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results.       |
+| last                     | Int                                                                                                       | Returns the last n elements from the list.                                                                                              |
+| before                   | String                                                                                                    | An opaque cursor returned from a previous query's startCursor field. Pass this value verbatim to retrieve the previous page of results. |
+| snapshotFid *(required)* | [UUID](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/UUID/index.md)! | ID of the snapshot to be searched or browsed.                                                                                           |
+| path *(required)*        | String!                                                                                                   | The path under which you want your search to run.                                                                                       |
+| searchPrefix             | String                                                                                                    | Name prefix to search for files within a snapshot.                                                                                      |
 
 ## Returns
 
@@ -19,10 +21,10 @@ List of all files and directories in a given path with the given prefix in name.
 ## Sample
 
 ```graphql
-query CloudNativeSnapshots($path: String!, $snapshotFid: UUID!) {
+query CloudNativeSnapshots($snapshotFid: UUID!, $path: String!) {
   cloudNativeSnapshots(
-    path: $path
     snapshotFid: $snapshotFid
+    path: $path
     first: 10
   ) {
     nodes {
@@ -45,8 +47,8 @@ query CloudNativeSnapshots($path: String!, $snapshotFid: UUID!) {
 
 ```json
 {
-  "path": "example-string",
-  "snapshotFid": "00000000-0000-0000-0000-000000000000"
+  "snapshotFid": "00000000-0000-0000-0000-000000000000",
+  "path": "example-string"
 }
 ```
 

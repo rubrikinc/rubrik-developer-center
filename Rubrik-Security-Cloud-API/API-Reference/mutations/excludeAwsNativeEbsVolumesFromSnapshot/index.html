@@ -938,7 +938,7 @@
 
 
 <h1 id="excludeawsnativeebsvolumesfromsnapshot">excludeAwsNativeEbsVolumesFromSnapshot</h1>
-<p>Mark AWS Native EBS Volumes to be excluded from EC2 Instance snapshot. By default, all EBS Volumes are marked as included.</p>
+<p>ExcludeAwsNativeEbsVolumesFromSnapshot marks EBS volumes attached to an EC2 instance as excluded from, or included in, that instance's snapshots. The change is applied atomically.</p>
 <h2 id="arguments">Arguments</h2>
 <table>
 <thead>
@@ -952,7 +952,7 @@
 <tr>
 <td>input <em>(required)</em></td>
 <td><a href="../../types/inputs/ExcludeAwsNativeEbsVolumesFromSnapshotInput/">ExcludeAwsNativeEbsVolumesFromSnapshotInput</a>!</td>
-<td>Input to mark EBS volumes to be excluded for EC2 snapshot.</td>
+<td>EC2 instance and the exclusion state of each of its volumes.</td>
 </tr>
 </tbody>
 </table>

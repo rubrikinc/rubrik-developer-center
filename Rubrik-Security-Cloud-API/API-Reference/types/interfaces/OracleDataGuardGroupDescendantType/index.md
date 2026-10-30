@@ -1,6 +1,6 @@
 # OracleDataGuardGroupDescendantType
 
-*No description available.*
+Descendant of the Oracle Data Guard group object.
 
 ## Fields
 

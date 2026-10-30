@@ -1,14 +1,914 @@
 # GraphQL Schema Changelog
 
-*Generated on October 17, 2026 at 05:20 PM*
+*Generated on October 30, 2026 at 07:52 PM*
 
-This changelog documents the evolution of the GraphQL schema across 64 versions.
+This changelog documents the evolution of the GraphQL schema across 66 versions.
 
 Not every breaking change affects a generally available feature
 
 The schema also carries early access and in-development surfaces, which change more freely than shipped ones. Nothing in the schema marks which is which, so both appear here the same way. If an entry names a type or operation you do not recognize and are not calling, it is most likely one of those rather than a change to something you depend on.
 
 The reliable check is whether your own integrations reference the names listed. Search this page for the operations you call.
+
+## October 26, 2026
+
+### ⚠️ Breaking Changes
+
+*Requests that worked before may now fail. RSC updates automatically, so check whether your integrations use anything listed here.*
+
+- Field `HypervVmAgentStatus`.connectionStatus changed type from `HypervVmAgentConnectionStatus`! to `HypervVmAgentConnectionStatus`
+- Field `IrisdbStorageSpec`.storageId changed type from `String`! to `String`
+- Input field `RestoreItemInfo.sequenceNumber` changed type from `Int`! to `Int`
+- Input field `RestoreItemInfo.snapshotId` changed type from `UUID`! to `UUID`
+
+### ⚡ May Require Changes
+
+*Your requests still work. Deprecations and shifted defaults to plan around.*
+
+- Argument before: String added to field `ActiveDirectoryDomain.descendantConnection`
+- Argument last: Int added to field `ActiveDirectoryDomain.descendantConnection`
+- Argument before: String added to field `ActiveDirectoryDomain.physicalChildConnection`
+- Argument last: Int added to field `ActiveDirectoryDomain.physicalChildConnection`
+- Argument after: String added to field `ActiveDirectoryDomainController.vsphereVirtualMachines`
+- Argument before: String added to field `ActiveDirectoryDomainController.vsphereVirtualMachines`
+- Argument first: Int added to field `ActiveDirectoryDomainController.vsphereVirtualMachines`
+- Argument last: Int added to field `ActiveDirectoryDomainController.vsphereVirtualMachines`
+- Argument before: String added to field `HyperVCluster.descendantConnection`
+- Argument last: Int added to field `HyperVCluster.descendantConnection`
+- Argument before: String added to field `HyperVCluster.logicalChildConnection`
+- Argument last: Int added to field `HyperVCluster.logicalChildConnection`
+- Argument before: String added to field `HyperVSCVMM.descendantConnection`
+- Argument last: Int added to field `HyperVSCVMM.descendantConnection`
+- Argument before: String added to field `HyperVSCVMM.logicalChildConnection`
+- Argument last: Int added to field `HyperVSCVMM.logicalChildConnection`
+- Argument before: String added to field `HypervServer.descendantConnection`
+- Argument last: Int added to field `HypervServer.descendantConnection`
+- Argument before: String added to field `HypervServer.logicalChildConnection`
+- Argument last: Int added to field `HypervServer.logicalChildConnection`
+- MongoCollectionSet object implements HierarchySnappable interface
+- Argument before: String added to field `MongoCollectionSet.descendantConnection`
+- Argument last: Int added to field `MongoCollectionSet.descendantConnection`
+- Argument before: String added to field `MongoCollectionSet.physicalChildConnection`
+- Argument last: Int added to field `MongoCollectionSet.physicalChildConnection`
+- Argument before: String added to field `MongoDatabase.descendantConnection`
+- Argument last: Int added to field `MongoDatabase.descendantConnection`
+- Argument before: String added to field `MongoDatabase.physicalChildConnection`
+- Argument last: Int added to field `MongoDatabase.physicalChildConnection`
+- MongoSource object implements HierarchySnappable interface
+- Argument after: String added to field `MongoSource.dataHosts`
+- Argument before: String added to field `MongoSource.dataHosts`
+- Argument first: Int added to field `MongoSource.dataHosts`
+- Argument last: Int added to field `MongoSource.dataHosts`
+- Argument before: String added to field `MongoSource.descendantConnection`
+- Argument last: Int added to field `MongoSource.descendantConnection`
+- Argument before: String added to field `MongoSource.physicalChildConnection`
+- Argument last: Int added to field `MongoSource.physicalChildConnection`
+- OracleDatabase object implements OracleFailoverClusterDescendantType interface
+- ProxmoxVirtualMachineV1 object implements ProxmoxTagDescendant interface
+- Argument includeSecurityMetadata: Boolean added to field `Query.awsNativeAccount`
+- Argument includeSecurityMetadata: Boolean added to field `Query.awsNativeAccounts`
+- Argument includeSecurityMetadata: Boolean added to field `Query.awsNativeEc2InstancesByName`
+- Argument before: String added to field `Query.cloudNativeSnapshots`
+- Argument last: Int added to field `Query.cloudNativeSnapshots`
+- Argument before: String added to field `Query.cloudNativeWorkloadVersionedFiles`
+- Argument last: Int added to field `Query.cloudNativeWorkloadVersionedFiles`
+- Argument before: String added to field `Query.failoverClusterApps`
+- Argument last: Int added to field `Query.failoverClusterApps`
+- Argument before: String added to field `Query.hostFailoverClusters`
+- Argument last: Int added to field `Query.hostFailoverClusters`
+- Argument before: String added to field `Query.hypervMounts`
+- Argument last: Int added to field `Query.hypervMounts`
+- Argument before: String added to field `Query.hypervScvmms`
+- Argument last: Int added to field `Query.hypervScvmms`
+- Argument before: String added to field `Query.hypervServersPaginated`
+- Argument last: Int added to field `Query.hypervServersPaginated`
+- Argument before: String added to field `Query.hypervTopLevelDescendants`
+- Argument last: Int added to field `Query.hypervTopLevelDescendants`
+- Argument before: String added to field `Query.hypervVirtualMachines`
+- Argument last: Int added to field `Query.hypervVirtualMachines`
+- Default value for argument hostname on field `Query.isSfdcReachable` changed from rubrikinc.my.site.com to undefined
+- Argument before: String added to field `Query.managedVolumeLiveMounts`
+- Argument last: Int added to field `Query.managedVolumeLiveMounts`
+- Argument before: String added to field `Query.managedVolumes`
+- Argument last: Int added to field `Query.managedVolumes`
+- Argument before: String added to field `Query.mongoCollections`
+- Argument last: Int added to field `Query.mongoCollections`
+- Argument before: String added to field `Query.mongoDatabases`
+- Argument last: Int added to field `Query.mongoDatabases`
+- Argument before: String added to field `Query.mongoSources`
+- Argument last: Int added to field `Query.mongoSources`
+- Argument before: String added to field `Query.nutanixMounts`
+- Argument last: Int added to field `Query.nutanixMounts`
+- Argument before: String added to field `Query.oracleDatabases`
+- Argument last: Int added to field `Query.oracleDatabases`
+- Argument before: String added to field `Query.oracleLiveMounts`
+- Argument last: Int added to field `Query.oracleLiveMounts`
+- Argument before: String added to field `Query.oracleTopLevelDescendants`
+- Argument last: Int added to field `Query.oracleTopLevelDescendants`
+- Argument before: String added to field `Query.slaManagedVolumes`
+- Argument last: Int added to field `Query.slaManagedVolumes`
+- Argument before: String added to field `Query.vSphereRootRecoveryHierarchy`
+- Argument last: Int added to field `Query.vSphereRootRecoveryHierarchy`
+- Input field `SupportPortalLoginInput.hostname` default value changed from rubrikinc.my.site.com to undefined
+- Input field `SupportPortalLoginInput.organizationId` default value changed from 00D40000000N3x2 to undefined
+
+### ✨ Additions
+
+*Purely additive. Nothing you send today stops working. If you switch exhaustively on an enum, add a default case for newly added values.*
+
+3 enum values added to enum `ActivityObjectTypeEnum`
+
+- `PROXMOX_TAG`
+- `VCF_FLEET`
+- `VCF_INSTANCE`
+
+3 enum values added to enum `AuditObjectType`
+
+- `PROXMOX_TAG`
+
+- `VCF_FLEET`
+
+- `VCF_INSTANCE`
+
+- `CRITICAL_RESOURCE_PROTECTION` enum value added to enum `AwsNativeProtectionFeature`
+
+- `AZURE_COSMOS_NOSQL_IMPERSONATION` enum value added to enum `AzureAppPermission`
+
+- `AZURE_COSMOS_NOSQL` enum value added to enum `AzureOauthResource`
+
+3 enum values added to enum `EventObjectType`
+
+- `PROXMOX_TAG`
+
+- `VCF_FLEET`
+
+- `VCF_INSTANCE`
+
+- `FAILOVER_GROUP_OBJECT_STATUS_ARCHIVED` enum value added to enum `FailoverGroupObjectStatus`
+
+6 enum values added to enum `GcpInstanceType`
+
+- `N4D_HIGHMEM_16`
+- `N4D_STANDARD_16`
+- `N4D_STANDARD_8`
+- `N4_HIGHMEM_16`
+- `N4_STANDARD_16`
+- `N4_STANDARD_8`
+
+9 enum values added to enum `HierarchyFilterField`
+
+- `AZURE_COSMOS_NOSQL_ACCOUNT_RG_NAME`
+- `AZURE_COSMOS_NOSQL_ACCOUNT_SUBSCRIPTION_ID`
+- `AZURE_COSMOS_NOSQL_CONTAINER_RG_NAME`
+- `AZURE_COSMOS_NOSQL_CONTAINER_SUBSCRIPTION_ID`
+- `AZURE_COSMOS_NOSQL_DATABASE_ACCOUNT_NAME`
+- `AZURE_COSMOS_NOSQL_DATABASE_RG_NAME`
+- `AZURE_COSMOS_NOSQL_DATABASE_SUBSCRIPTION_ID`
+- `IRISDB_STORAGE_ARRAY_ID`
+- `SAASAPPS_RTP_ENABLED`
+
+9 enum values added to enum `HierarchyObjectTypeEnum`
+
+- `PROXMOX_TAG`
+- `VCFA_APPLIANCE`
+- `VCFA_ORG`
+- `VCFA_PROJECT`
+- `VCFA_REGION`
+- `VCF_FLEET`
+- `VCF_INSTANCE`
+- `VSPHERE_NAMESPACE`
+- `VSPHERE_SUPERVISOR`
+
+8 enum values added to enum `HierarchySortByField`
+
+- `AZURE_COSMOS_NOSQL_ACCOUNT_DATABASE_COUNT`
+
+- `AZURE_COSMOS_NOSQL_ACCOUNT_RESOURCE_GROUP_NAME`
+
+- `AZURE_COSMOS_NOSQL_ACCOUNT_SUBSCRIPTION_NAME`
+
+- `AZURE_COSMOS_NOSQL_CONTAINER_RESOURCE_GROUP_NAME`
+
+- `AZURE_COSMOS_NOSQL_DATABASE_ACCOUNT_NAME`
+
+- `AZURE_COSMOS_NOSQL_DATABASE_CONTAINER_COUNT`
+
+- `AZURE_COSMOS_NOSQL_DATABASE_RESOURCE_GROUP_NAME`
+
+- `AZURE_COSMOS_NOSQL_DATABASE_SUBSCRIPTION_NAME`
+
+- `M365_JOURNALING` enum value added to enum `InventoryCard`
+
+7 enum values added to enum `ManagedObjectType`
+
+- `PROXMOX_TAG`
+- `VCFA_APPLIANCE`
+- `VCFA_ORG`
+- `VCFA_PROJECT`
+- `VCFA_REGION`
+- `VCF_FLEET`
+- `VCF_INSTANCE`
+
+6 enum values added to enum `SaasAppType`
+
+- `M365_CFGS_DEFENDER`
+
+- `M365_CFGS_EXCHANGE`
+
+- `M365_CFGS_ONEDRIVE`
+
+- `M365_CFGS_PURVIEW`
+
+- `M365_CFGS_SHAREPOINT`
+
+- `M365_CFGS_TEAMS`
+
+- `NAMESPACE` enum value added to enum `VmwareFolderType`
+
+160 types added
+
+- `ActiveDirectoryForest`
+
+- `ActiveDirectoryForestDescendantType`
+
+- `ActiveDirectoryForestDescendantTypeConnection`
+
+- `ActiveDirectoryForestDescendantTypeEdge`
+
+- `ActiveDirectoryForestPhysicalChildType`
+
+- `ActiveDirectoryForestPhysicalChildTypeConnection`
+
+- `ActiveDirectoryForestPhysicalChildTypeEdge`
+
+- `AksPrivateDnsZoneMode`
+
+- `AnthropicChildOrg`
+
+- `AnthropicClaudeChatWorkload`
+
+- `AnthropicOrgSetting`
+
+- `AnthropicUser`
+
+- `AssignCloudDirectCopyScheduleInput`
+
+- `AssignCloudDirectCopyScheduleReply`
+
+- `AtlassianUser`
+
+- `AttributeDetails`
+
+- `AwsPermissionDiff`
+
+- `AwsPermissionDiffEntry`
+
+- `AwsPermissionDiffStatus`
+
+- `AwsPermissionDiffTarget`
+
+- `AwsPermissionModification`
+
+- `AwsPermissionsGroupVersion`
+
+- `AzureAdObjectAttributeDifferenceEnumType`
+
+- `AzureDiskDetails`
+
+- `AzureLiveMountDetails`
+
+- `CloudDirectCopyScheduleAssignmentItem`
+
+- `CloudDirectCopyScheduleAssignmentList`
+
+- `CloudDirectCopyScheduleDetail`
+
+- `CloudDirectCopyScheduleItem`
+
+- `CloudDirectCopyScheduleList`
+
+- `CloudNativeSearchFilter`
+
+- `CloudNativeSearchOperator`
+
+- `CompareAzureAdObjectAttributesInput`
+
+- `CompareObjectAttributesResponse`
+
+- `ConfluenceSpace`
+
+- `CopyScheduleAssignShareResult`
+
+- `CopyScheduleCloudProvider`
+
+- `CopyScheduleCloudTarget`
+
+- `CopyScheduleCloudTargetInput`
+
+- `CopyScheduleDestinationInput`
+
+- `CopyScheduleDestinationOutput`
+
+- `CopyScheduleFrequency`
+
+- `CopyScheduleStorageTier`
+
+- `CopyScheduleTargetType`
+
+- `CopyScheduleUnassignResult`
+
+- `CreateCloudDirectCopyScheduleInput`
+
+- `CreateCloudDirectCopyScheduleReply`
+
+- `D365DataverseTable`
+
+- `DeleteCloudDirectCopyScheduleInput`
+
+- `DeleteCloudDirectCopyScheduleReply`
+
+- `DynamoDbOverwriteMode`
+
+- `DynamoDbRestoreCustomAttributeInput`
+
+- `DynamoDbRestoreDestination`
+
+- `DynamoDbRestoreOverwriteInput`
+
+- `DynamoDbRestoreSearchInput`
+
+- `DynamoDbRestoreTtlInput`
+
+- `DynamoDbTtlHandling`
+
+- `EffectiveSlaAssignment`
+
+- `FusionComputeVrmUserType`
+
+- `GcpKmsCryptoKey`
+
+- `GcpKmsLocation`
+
+- `GetMountDetailsInput`
+
+- `GetMountDetailsReply`
+
+- `GoogleWorkspaceGroup`
+
+- `GoogleWorkspaceOrgUnit`
+
+- `GoogleWorkspaceSharedDrive`
+
+- `GoogleWorkspaceUser`
+
+- `GoogleWorkspaceUserDrive`
+
+- `GoogleWorkspaceUserMailbox`
+
+- `HierarchyObjectSlaAssignment`
+
+- `HpeVmeHierarchyCloud`
+
+- `HpeVmeHierarchyCluster`
+
+- `HpeVmeHierarchyGroup`
+
+- `HpeVmeHierarchyHost`
+
+- `HpeVmeHierarchyInstance`
+
+- `HpeVmeInstance`
+
+- `HpeVmeResourceSpec`
+
+- `HpeVmeVmSubObject`
+
+- `IdentityResilienceRevertReqChangesTemplate`
+
+- `JiraProject`
+
+- `JiraProjectStyleKey`
+
+- `JiraProjectTypeKey`
+
+- `LiveMountDetails`
+
+- `M365Domain`
+
+- `M365DomainConnection`
+
+- `M365DomainEdge`
+
+- `M365DomainFilter`
+
+- `MariadbDatabase`
+
+- `MariadbDatabaseMetadata`
+
+- `MariadbDatabaseProtectionState`
+
+- `MariadbInstance`
+
+- `MariadbInstanceAdvancedConfig`
+
+- `MariadbInstanceAuthenticationType`
+
+- `MariadbInstanceDetails`
+
+- `MariadbInstanceMetadata`
+
+- `MariadbInstanceSslConfig`
+
+- `MariadbInstanceStatus`
+
+- `MountStatusEnum`
+
+- `MssqlDatabaseRecoverySpecInput`
+
+- `MssqlDatabaseRestoreRecoverySpecInput`
+
+- `OktaTenant`
+
+- `OracleFailoverCluster`
+
+- `OracleFailoverClusterDescendantType`
+
+- `OracleFailoverService`
+
+- `OracleFailoverServiceDescendantType`
+
+- `PingFederateClusterV1`
+
+- `PowerPlatformApp`
+
+- `PowerPlatformAppStatus`
+
+- `PowerPlatformAppType`
+
+- `PowerPlatformFlow`
+
+- `PowerPlatformFlowStatus`
+
+- `PowerPlatformFlowType`
+
+- `ProxmoxTagDescendant`
+
+- `ProxmoxTagDescendantConnection`
+
+- `ProxmoxTagDescendantEdge`
+
+- `ProxmoxTagLogicalChild`
+
+- `ProxmoxTagLogicalChildConnection`
+
+- `ProxmoxTagLogicalChildEdge`
+
+- `ProxmoxTagV1`
+
+- `RecoveryCheck`
+
+- `RecoverySeverity`
+
+- `RecoveryValidationFinding`
+
+- `ResourceGroupDetails`
+
+- `SecurityFeaturesStatusEntry`
+
+- `ShareAssignStatus`
+
+- `ShareUnassignStatus`
+
+- `SlaAssignmentDetail`
+
+- `SpecificMountDetails`
+
+- `StartRecoverDynamoDBSnapshotJobInput`
+
+- `SubscriptionDetails`
+
+- `UnassignCloudDirectCopyScheduleInput`
+
+- `UnassignCloudDirectCopyScheduleReply`
+
+- `UpdateCloudDirectCopyScheduleInput`
+
+- `UpdateCloudDirectCopyScheduleReply`
+
+- `Vcd`
+
+- `VcdCatalog`
+
+- `VcdCatalogLogicalChildTypeConnection`
+
+- `VcdCatalogLogicalChildTypeEdge`
+
+- `VcdDescendantTypeConnection`
+
+- `VcdDescendantTypeEdge`
+
+- `VcdLogicalChildTypeConnection`
+
+- `VcdLogicalChildTypeEdge`
+
+- `VcdOrgVdc`
+
+- `VcdOrgVdcDescendantTypeConnection`
+
+- `VcdOrgVdcDescendantTypeEdge`
+
+- `VcdOrgVdcLogicalChildTypeConnection`
+
+- `VcdOrgVdcLogicalChildTypeEdge`
+
+- `VcdVcenterConnectionInfo`
+
+- `VcdVcenterConnectionState`
+
+- `VcdVimServer`
+
+- `VcfaAppliance`
+
+- `VcfaOrg`
+
+- `VcfaProject`
+
+- `VcfaRegion`
+
+- `VirtualMachineDetails`
+
+- `VsphereNamespace`
+
+- `VsphereNamespaceStatus`
+
+- `VsphereSupervisor`
+
+- `VsphereSupervisorDescendantType`
+
+- `VsphereSupervisorStatus`
+
+- `azureCosmosNosqlDatabaseCount` field added to `AzureCosmosNosqlAccount`
+
+- `azureResourceGroupDetails` field added to `AzureCosmosNosqlAccount`
+
+- `isExocomputeConfigured` field added to `AzureCosmosNosqlContainer`
+
+3 fields added to `AzureCosmosNosqlDatabase`
+
+- `accountName`
+
+- `azureCosmosNosqlContainerCount`
+
+- `azureResourceGroupDetails`
+
+- `isAksPrivateDnsZoneModeNoneRequiresPrivateCluster` field added to `AzureExocomputeConfigValidationInfo`
+
+- `isAksPrivateDnsZoneModeNoneWithCustomZone` field added to `AzureExocomputeConfigValidationInfo`
+
+- `aksPrivateDnsZoneMode` field added to `AzureExocomputeOptionalConfigInRegion`
+
+- `aksPrivateDnsZoneMode` input field added to `AzureExocomputeOptionalConfigInRegionInput`
+
+- `dnsServers` field added to `AzureLocalLogicalNetwork`
+
+- `gateway` field added to `AzureLocalLogicalNetwork`
+
+- `shardId` field added to `CdmMongoNode`
+
+- `hpeVmeResourceSpec` field added to `CdmSnapshot`
+
+- `objectPauseStatus` field added to `CloudNativeTagRule`
+
+- `fileCount` field added to `DataTypeHits`
+
+- `userType` input field added to `FusionComputeVrmInput`
+
+- `userType` input field added to `FusionComputeVrmUpdateConfigInput`
+
+- `encryptionKey` field added to `GcpNativeCloudSqlSpecificSnapshot`
+
+- `protectionDate` field added to `HypervVirtualMachineSummary`
+
+- `reportWorkload` field added to `HypervisorVirtualMachineV1`
+
+- `objectPauseStatus` field added to `LabelRule`
+
+6 fields added to `Mutation`
+
+- `assignCloudDirectCopySchedule`
+
+- `createCloudDirectCopySchedule`
+
+- `deleteCloudDirectCopySchedule`
+
+- `startRecoverDynamoDbSnapshotJob`
+
+- `unassignCloudDirectCopySchedule`
+
+- `updateCloudDirectCopySchedule`
+
+- `protectionDate` field added to `NutanixVmSummary`
+
+- `protectionDate` field added to `OracleDbSummary`
+
+9 fields added to `Query`
+
+- `GetMountDetails`
+
+- `allAwsNativeRdsExportS3Buckets`
+
+- `allSecurityFeaturesStatuses`
+
+- `awsPermissionDiff`
+
+- `cloudDirectCopySchedule`
+
+- `cloudDirectCopyScheduleAssignments`
+
+- `cloudDirectCopySchedules`
+
+- `compareAzureAdObjectAttributes`
+
+- `m365SubscriptionDomains`
+
+- `ignoreNetworkReconfigureError` input field added to `RecoveryConfigV2`
+
+- `ignoreNetworkReconfigureError` field added to `RecoveryConfigV2Output`
+
+- `recoveryPlanType` field added to `RecoveryPlansInfo`
+
+- `enableKerberosForSmb` field added to `SmbDomain`
+
+- `hpeVmeVmSubObj` field added to `SnapshotSubObj`
+
+- `totalObjectsWithMatches` field added to `ThreatHuntObjectMetricsReply`
+
+- `totalObjectsWithMatches` field added to `ThreatHuntStats`
+
+- `protectionDate` field added to `UpdateManagedVolumeReply`
+
+- `findings` field added to `ValidationRecoveryReply`
+
+- `isVmServiceVm` field added to `VirtualMachineSummary`
+
+- `vsphereNamespaceId` field added to `VirtualMachineSummary`
+
+- `protectionDate` field added to `VolumeGroupSummary`
+
+- `mssqlDatabase` input field added to `WorkloadSpecificRecoverySpecInput`
+
+- Input field `skipResourceDeletion` of type `Boolean` with default value false was added to input object type `GcpCloudAccountDeleteProjectsV2FeatureInput`
+
+- Input field `shouldEnsureDefaultApp` of type `Boolean` with default value false was added to input object type `StartAzureCloudAccountOauthInput`
+
+- Field `GcpNativeCloudSqlSpecificSnapshot`.kmsKey is deprecated
+
+- Enum value HierarchyFilterField.AZURE_DISK_SUBSCRIPTION_ID was deprecated with reason Use AZURE_DISK_CRG_SUBSCRIPTION_ID instead.
+
+- Enum value HierarchyFilterField.AZURE_VM_SUBSCRIPTION_ID was deprecated with reason Use AZURE_VM_CRG_SUBSCRIPTION_ID instead.
+
+- Field `Mutation`.updateMssqlLogShippingConfigurationV1 is deprecated
+
+- Type for argument hostname on field `Query.isSfdcReachable` changed from `String`! to `String`
+
+- Field `RecoveryPlansInfo`.recoveryType is deprecated
+
+## October 19, 2026
+
+### ⚠️ Breaking Changes
+
+*Requests that worked before may now fail. RSC updates automatically, so check whether your integrations use anything listed here.*
+
+- `HPE_VME_DATASTORE` enum value removed from enum `HierarchyObjectTypeEnum`
+- `HPE_VME_NETWORK` enum value removed from enum `HierarchyObjectTypeEnum`
+- `HPE_VME_DATASTORE` enum value removed from enum `ManagedObjectType`
+- `HPE_VME_NETWORK` enum value removed from enum `ManagedObjectType`
+- `PingFederateClusterV1` type removed
+- Input field `AttributeRecoveryConfig.id` changed type from `UUID`! to `UUID`
+
+### 🗑️ Removed Deprecated Items
+
+*These items were previously marked `@deprecated` and have now been removed.*
+
+- Enum value `ANTHROPIC_CHAT` (deprecated) was removed from enum `SaasAppType`
+
+### ⚡ May Require Changes
+
+*Your requests still work. Deprecations and shifted defaults to plan around.*
+
+- Db2Database object implements HierarchySnappable interface
+- ManagedVolume object implements HierarchySnappable interface
+- Argument before: String added to field `ManagedVolume.descendantConnection`
+- Argument last: Int added to field `ManagedVolume.descendantConnection`
+- Argument before: String added to field `ManagedVolume.liveMounts`
+- Argument last: Int added to field `ManagedVolume.liveMounts`
+- Argument before: String added to field `ManagedVolume.physicalChildConnection`
+- Argument last: Int added to field `ManagedVolume.physicalChildConnection`
+- Argument before: String added to field `ManagedVolume.queuedSnapshots`
+- Argument last: Int added to field `ManagedVolume.queuedSnapshots`
+- Argument before: String added to field `ManagedVolumeQueuedSnapshotGroupBy.managedVolumeQueuedSnapshotConnection`
+- Argument last: Int added to field `ManagedVolumeQueuedSnapshotGroupBy.managedVolumeQueuedSnapshotConnection`
+- Argument before: String added to field `OracleDataGuardGroup.descendantConnection`
+- Argument last: Int added to field `OracleDataGuardGroup.descendantConnection`
+- Argument before: String added to field `OracleDataGuardGroup.logicalChildConnection`
+- Argument last: Int added to field `OracleDataGuardGroup.logicalChildConnection`
+- Argument before: String added to field `OracleDatabase.liveMounts`
+- Argument last: Int added to field `OracleDatabase.liveMounts`
+- Argument before: String added to field `OracleHost.descendantConnection`
+- Argument last: Int added to field `OracleHost.descendantConnection`
+- Argument before: String added to field `OracleHost.logicalChildConnection`
+- Argument last: Int added to field `OracleHost.logicalChildConnection`
+- Argument before: String added to field `OracleRac.descendantConnection`
+- Argument last: Int added to field `OracleRac.descendantConnection`
+- Argument before: String added to field `OracleRac.logicalChildConnection`
+- Argument last: Int added to field `OracleRac.logicalChildConnection`
+- Argument before: String added to field `Query.db2Databases`
+- Argument last: Int added to field `Query.db2Databases`
+- Argument before: String added to field `Query.db2Instances`
+- Argument last: Int added to field `Query.db2Instances`
+- Argument before: String added to field `Query.listDiffFilesForSnapshot`
+- Argument last: Int added to field `Query.listDiffFilesForSnapshot`
+- Argument before: String added to field `Query.searchSnappableVersionedFiles`
+- Argument last: Int added to field `Query.searchSnappableVersionedFiles`
+- Argument before: String added to field `Query.snapshotFilesDeltaV2`
+- Argument last: Int added to field `Query.snapshotFilesDeltaV2`
+- Input field `UpgradeAzureCloudAccountPermissionsWithoutOauthInput.feature` default value changed from undefined to `FEATURE_UNSPECIFIED`
+
+### ✨ Additions
+
+*Purely additive. Nothing you send today stops working. If you switch exhaustively on an enum, add a default case for newly added values.*
+
+- `AZURE_LOCAL_SUBSCRIPTION` enum value added to enum `AuditObjectType`
+- `GLUE_ICEBERG_PROTECTION_ROLE_ARN` enum value added to enum `AwsCloudExternalArtifact`
+- `S3_TABLES_ICEBERG_PROTECTION_ROLE_ARN` enum value added to enum `AwsCloudExternalArtifact`
+- `DENMARKEAST` enum value added to enum `AzureCloudAccountRegion`
+- `INDIASOUTHCENTRAL` enum value added to enum `AzureCloudAccountRegion`
+- `DENMARKEAST` enum value added to enum `AzureCommonRegion`
+- `INDIASOUTHCENTRAL` enum value added to enum `AzureCommonRegion`
+- `DENMARK_EAST` enum value added to enum `AzureNativeRegion`
+- `INDIA_SOUTH_CENTRAL` enum value added to enum `AzureNativeRegion`
+- `DENMARK_EAST` enum value added to enum `AzureRegion`
+- `INDIA_SOUTH_CENTRAL` enum value added to enum `AzureRegion`
+- `GITHUB_ACTIONS_PROTECTION` enum value added to enum `CloudAccountFeature`
+- `CLOUD_NATIVE_APP_MANUALLY_SELECTED` enum value added to enum `CloudNativeAppDiscoveryMethod`
+- `AZURE_COSMOS_NOSQL_ACCOUNT` enum value added to enum `CloudNativeObjectType`
+- `AZURE_COSMOS_NOSQL_ACCOUNT` enum value added to enum `CloudNativeTagObjectType`
+- `NAME_OR_EMAIL_ADDRESS_PREFIX` enum value added to enum `HierarchyFilterField`
+- `O365_SITE_NAME_PREFIX` enum value added to enum `HierarchyFilterField`
+- `ORACLE_FAILOVER_CLUSTER` enum value added to enum `HierarchyObjectTypeEnum`
+- `ORACLE_FAILOVER_SERVICE` enum value added to enum `HierarchyObjectTypeEnum`
+- `ORACLE_FAILOVER_CLUSTER` enum value added to enum `ManagedObjectType`
+- `ORACLE_FAILOVER_SERVICE` enum value added to enum `ManagedObjectType`
+- `AWS_BAAS_STORAGE` enum value added to enum `ProductName`
+- `DENMARK_EAST` enum value added to enum `RcsRegionEnumType`
+- `INDIA_SOUTH_CENTRAL` enum value added to enum `RcsRegionEnumType`
+- `cloudRehydrationSpeed` input field added to `ActiveDirectorySnapshotDownloadConfigInput`
+- `shouldProtectAllChildOrgs` field added to `AnthropicOrg`
+- `workloadFid` field added to `ArchivalObjectInfo`
+
+10 types added
+
+- `AzureCosmosNosqlConfig`
+
+- `AzureCosmosNosqlConfigInput`
+
+- `CloudStorageRehydrationSpeed`
+
+- `ClusterAddLoadBalancerAnnotationEntry`
+
+- `ClusterAddLoadBalancerAnnotationInput`
+
+- `ClusterUpdateLoadBalancerAnnotationEntry`
+
+- `ClusterUpdateLoadBalancerAnnotationInput`
+
+- `HypervAzureLocalNicSpecInput`
+
+- `HypervAzureLocalTargetInput`
+
+- `NicIpConfigInput`
+
+- `namePrefixFilter` input field added to `AzureNativeDiskFilters`
+
+- `isReaderArchivalLocation` field added to `CdmSnapshotLocationRetentionInfo`
+
+- `cloudRehydrationSpeed` input field added to `Db2DownloadRecoverableRangeRequestInput`
+
+- `cloudRehydrationSpeed` input field added to `Db2SnapshotDownloadRequestInput`
+
+- `cloudRehydrationSpeed` input field added to `DownloadManagedVolumeRequestInput`
+
+- `cloudRehydrationSpeed` input field added to `ExchangeSnapshotDownloadRequestInput`
+
+- `cloudRehydrationSpeed` input field added to `FilesetDownloadRequestInput`
+
+- `cloudRehydrationSpeed` input field added to `FusionComputeSnapshotDownloadRequestInput`
+
+- `azureLocal` input field added to `HypervTargetConfigInput`
+
+- `cloudRehydrationSpeed` input field added to `HypervVirtualMachineSnapshotDownloadConfigInput`
+
+- `loadBalancerAnnotations` input field added to `K8sClusterAddInput`
+
+- `loadBalancerAnnotations` input field added to `K8sClusterUpdateConfigInput`
+
+- `cloudRehydrationSpeed` input field added to `K8sSnapshotDownloadConfigInput`
+
+- `cloudRehydrationSpeed` input field added to `MongoSnapshotDownloadRequestInput`
+
+- `cloudRehydrationSpeed` input field added to `MssqlDownloadFromArchiveConfigV2Input`
+
+- `cloudRehydrationSpeed` input field added to `NutanixVmDownloadRequestInput`
+
+- `azureCosmosNosqlConfig` field added to `ObjectSpecificConfigs`
+
+- `azureCosmosNosqlConfigInput` input field added to `ObjectSpecificConfigsInput`
+
+- `cloudRehydrationSpeed` input field added to `OpenstackVmSnapshotDownloadConfigInput`
+
+- `cloudRehydrationSpeed` input field added to `OracleSnapshotDownloadRequestInput`
+
+- `cloudRehydrationSpeed` input field added to `PureStorageSnapshotDownloadRequestInput`
+
+- `isReaderArchivalLocation` field added to `RscSnapshotLocationRetentionInfo`
+
+- `cloudRehydrationSpeed` input field added to `SapHanaDownloadRecoverableRangeRequestInput`
+
+- `cloudRehydrationSpeed` input field added to `SapHanaDownloadRequestInput`
+
+- `cloudRehydrationSpeed` input field added to `VmwareSnapshotDownloadRequestInput`
+
+- `cloudRehydrationSpeed` input field added to `VolumeGroupSnapshotDownloadConfigInput`
+
+- Enum value AuthorizedOperation.ASSIGN_MIP_LABELS was deprecated with reason Legacy deprecated operation. No longer used in any RSC APIs.
+
+- Enum value AuthorizedOperation.DELETE_INVENTORY was deprecated with reason Legacy deprecated operation. No longer used in any RSC APIs.
+
+- Enum value AuthorizedOperation.DELETE_SLA was deprecated with reason Legacy deprecated operation. No longer used in any RSC APIs.
+
+- Enum value AuthorizedOperation.EDIT_SECURITY_SETTINGS was deprecated with reason Legacy deprecated operation. No longer used in any RSC APIs.
+
+- Enum value AuthorizedOperation.EDIT_USER_MANAGEMENT was deprecated with reason Legacy deprecated operation. No longer used in any RSC APIs.
+
+- Enum value AuthorizedOperation.ENABLE_ACCESS_LOGGING was deprecated with reason Legacy deprecated operation. No longer used in any RSC APIs.
+
+- Enum value AuthorizedOperation.EXPORT was deprecated with reason Legacy deprecated operation. No longer used in any RSC APIs.
+
+- Enum value AuthorizedOperation.INSTANT_RECOVER was deprecated with reason Legacy deprecated operation. No longer used in any RSC APIs.
+
+- Enum value AuthorizedOperation.MANAGE_CDM_ADMIN was deprecated with reason Superseded by ManageCdmUser. Runtime checks still accept this permission during the transition period.
+
+- Enum value AuthorizedOperation.MODIFY_SLA was deprecated with reason Legacy deprecated operation. No longer used in any RSC APIs.
+
+- Enum value AuthorizedOperation.RESTORE was deprecated with reason Legacy deprecated operation. No longer used in any RSC APIs.
+
+- Enum value AuthorizedOperation.VIEW_CDM_ADMIN was deprecated with reason Superseded by ViewCdmUser. Runtime checks still accept this permission during the transition period.
+
+- Enum value AuthorizedOperation.VIEW_DASHBOARD was deprecated with reason Legacy deprecated operation. No longer used in any RSC APIs.
+
+- Enum value AuthorizedOperation.VIEW_DATA_SECURITY_POSTURE_RESULTS was deprecated with reason Legacy deprecated operation. No longer used in any RSC APIs.
+
+- Enum value AuthorizedOperation.VIEW_SECURITY_SETTINGS was deprecated with reason Legacy deprecated operation. No longer used in any RSC APIs.
+
+- Enum value AuthorizedOperation.VIEW_USER_MANAGEMENT was deprecated with reason Legacy deprecated operation. No longer used in any RSC APIs.
+
+- Input field `managementType` of type [ClusterManagementType!] was added to input object type `ClusterFilterInput`
+
+- Enum value GcpRegion.UNKNOWN_GCP_REGION was deprecated with reason Do not use. Specify a valid GCP region instead.
+
+- Enum value Operation.ASSIGN_MIP_LABELS was deprecated with reason Legacy deprecated operation. No longer used in any RSC APIs.
+
+- Enum value Operation.DELETE_INVENTORY was deprecated with reason Legacy deprecated operation. No longer used in any RSC APIs.
+
+- Enum value Operation.DELETE_SLA was deprecated with reason Legacy deprecated operation. No longer used in any RSC APIs.
+
+- Enum value Operation.EDIT_SECURITY_SETTINGS was deprecated with reason Legacy deprecated operation. No longer used in any RSC APIs.
+
+- Enum value Operation.EDIT_USER_MANAGEMENT was deprecated with reason Legacy deprecated operation. No longer used in any RSC APIs.
+
+- Enum value Operation.ENABLE_ACCESS_LOGGING was deprecated with reason Legacy deprecated operation. No longer used in any RSC APIs.
+
+- Enum value Operation.EXPORT was deprecated with reason Legacy deprecated operation. No longer used in any RSC APIs.
+
+- Enum value Operation.INSTANT_RECOVER was deprecated with reason Legacy deprecated operation. No longer used in any RSC APIs.
+
+- Enum value Operation.MANAGE_CDM_ADMIN was deprecated with reason Superseded by ManageCdmUser. Runtime checks still accept this permission during the transition period.
+
+- Enum value Operation.MODIFY_SLA was deprecated with reason Legacy deprecated operation. No longer used in any RSC APIs.
+
+- Enum value Operation.RESTORE was deprecated with reason Legacy deprecated operation. No longer used in any RSC APIs.
+
+- Enum value Operation.VIEW_CDM_ADMIN was deprecated with reason Superseded by ViewCdmUser. Runtime checks still accept this permission during the transition period.
+
+- Enum value Operation.VIEW_DASHBOARD was deprecated with reason Legacy deprecated operation. No longer used in any RSC APIs.
+
+- Enum value Operation.VIEW_DATA_SECURITY_POSTURE_RESULTS was deprecated with reason Legacy deprecated operation. No longer used in any RSC APIs.
+
+- Enum value Operation.VIEW_SECURITY_SETTINGS was deprecated with reason Legacy deprecated operation. No longer used in any RSC APIs.
+
+- Enum value Operation.VIEW_USER_MANAGEMENT was deprecated with reason Legacy deprecated operation. No longer used in any RSC APIs.
+
+- Input field `leaseIds` of type [String!] was added to input object type `RestoreO365FullTeamsInput`
 
 ## October 12, 2026
 

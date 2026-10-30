@@ -33,6 +33,7 @@
 [allAwsCloudAccountsWithFeatures](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/allAwsCloudAccountsWithFeatures/index.md)\
 [allAwsExocomputeConfigs](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/allAwsExocomputeConfigs/index.md)\
 [allAwsInstanceProfileNames](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/allAwsInstanceProfileNames/index.md)\
+[allAwsNativeRdsExportS3Buckets](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/allAwsNativeRdsExportS3Buckets/index.md)\
 [allAwsPermissionPolicies](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/allAwsPermissionPolicies/index.md)\
 [allAwsRegions](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/allAwsRegions/index.md)\
 [allAzureArmTemplatesByFeature](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/allAzureArmTemplatesByFeature/index.md)\
@@ -170,6 +171,7 @@
 [allS3BucketsDetailsFromAws](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/allS3BucketsDetailsFromAws/index.md)\
 [allS3BucketsFromAws](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/allS3BucketsFromAws/index.md)\
 [allSecurityFeatureSupportedObjectTypes](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/allSecurityFeatureSupportedObjectTypes/index.md)\
+[allSecurityFeaturesStatuses](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/allSecurityFeaturesStatuses/index.md)\
 [allSecurityPolicies](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/allSecurityPolicies/index.md)\
 [allSharepointSiteExclusions](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/allSharepointSiteExclusions/index.md)\
 [allSlaSummariesByIds](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/allSlaSummariesByIds/index.md)\
@@ -243,6 +245,7 @@
 [awsNativeRdsPointInTimeRestoreWindow](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/awsNativeRdsPointInTimeRestoreWindow/index.md)\
 [awsNativeRoot](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/awsNativeRoot/index.md)\
 [awsNativeS3Bucket](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/awsNativeS3Bucket/index.md)\
+[awsPermissionDiff](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/awsPermissionDiff/index.md)\
 [awsRegionDetails](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/awsRegionDetails/index.md)\
 [awsTrustPolicy](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/awsTrustPolicy/index.md)\
 [awsValidatePermissions](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/awsValidatePermissions/index.md)\
@@ -364,6 +367,9 @@
 [cloudDirectCheckSharePath](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/cloudDirectCheckSharePath/index.md)\
 [cloudDirectClusterEndpoints](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/cloudDirectClusterEndpoints/index.md)\
 [cloudDirectClusterLambdaConfig](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/cloudDirectClusterLambdaConfig/index.md)\
+[cloudDirectCopySchedule](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/cloudDirectCopySchedule/index.md)\
+[cloudDirectCopyScheduleAssignments](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/cloudDirectCopyScheduleAssignments/index.md)\
+[cloudDirectCopySchedules](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/cloudDirectCopySchedules/index.md)\
 [cloudDirectEventSeriesTaskReport](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/cloudDirectEventSeriesTaskReport/index.md)\
 [cloudDirectGlobalSearch](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/cloudDirectGlobalSearch/index.md)\
 [cloudDirectJobRecentErrorsReport](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/cloudDirectJobRecentErrorsReport/index.md)\
@@ -424,6 +430,7 @@
 [clusterVlans](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/clusterVlans/index.md)\
 [clusterWebSignedCertificate](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/clusterWebSignedCertificate/index.md)\
 [clusterWithUpgradesInfo](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/clusterWithUpgradesInfo/index.md)\
+[compareAzureAdObjectAttributes](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/compareAzureAdObjectAttributes/index.md)\
 [computeClusterStatus](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/computeClusterStatus/index.md)\
 [configuredGroupMembers](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/configuredGroupMembers/index.md)\
 [coordinatorLabels](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/coordinatorLabels/index.md)\
@@ -546,6 +553,7 @@
 
 ## G
 
+[GetMountDetails](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/GetMountDetails/index.md)\
 [gcpCloudAccountGetProject](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/gcpCloudAccountGetProject/index.md)\
 [gcpCloudSqlInstance](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/gcpCloudSqlInstance/index.md)\
 [gcpCloudSqlInstances](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/gcpCloudSqlInstances/index.md)\
@@ -736,6 +744,7 @@
 [m365OrgBackupLocations](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/m365OrgBackupLocations/index.md)\
 [m365OrgOperationModes](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/m365OrgOperationModes/index.md)\
 [m365Regions](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/m365Regions/index.md)\
+[m365SubscriptionDomains](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/m365SubscriptionDomains/index.md)\
 [managedVolume](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/managedVolume/index.md)\
 [managedVolumeInventoryStats](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/managedVolumeInventoryStats/index.md)\
 [managedVolumeLiveMounts](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/managedVolumeLiveMounts/index.md)\

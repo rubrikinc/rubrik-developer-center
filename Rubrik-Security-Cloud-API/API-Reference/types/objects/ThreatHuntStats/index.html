@@ -941,22 +941,27 @@
 <tr>
 <td>totalAffectedObjects</td>
 <td><a href="../../scalars/Long/">Long</a>!</td>
-<td>Total objects in which malware was found.</td>
+<td>Total objects with at least one file match.</td>
 </tr>
 <tr>
 <td>totalAffectedSnapshots</td>
 <td><a href="../../scalars/Long/">Long</a>!</td>
-<td>Total snapshots in which malware was found.</td>
+<td>Total snapshots with at least one file or Windows registry key match.</td>
 </tr>
 <tr>
 <td>totalIocs</td>
 <td><a href="../../scalars/Long/">Long</a>!</td>
-<td>Total number of IOCs.</td>
+<td>Total number of IOCs, including Windows registry key patterns.</td>
 </tr>
 <tr>
 <td>totalObjectsScanned</td>
 <td><a href="../../scalars/Long/">Long</a>!</td>
 <td>Total objects scanned.</td>
+</tr>
+<tr>
+<td>totalObjectsWithMatches</td>
+<td><a href="../../scalars/Long/">Long</a>!</td>
+<td>Total number of objects with at least one file or registry key match, counting each object once. Use this instead of combining total_affected_objects and total_registry_affected_objects.</td>
 </tr>
 <tr>
 <td>totalProcessedSnapshots</td>
@@ -966,7 +971,7 @@
 <tr>
 <td>totalRegistryAffectedObjects</td>
 <td><a href="../../scalars/Long/">Long</a>!</td>
-<td>Total objects with at least one Windows registry key match. An object with both file and registry matches is also counted in the total affected objects.</td>
+<td>Total objects with at least one Windows registry key match. An object with both file and registry matches is also counted in total_affected_objects, so the two must not be summed.</td>
 </tr>
 <tr>
 <td>totalRegistryKeyMatches</td>
@@ -976,7 +981,7 @@
 <tr>
 <td>totalRegistryPatterns</td>
 <td><a href="../../scalars/Long/">Long</a>!</td>
-<td>Total number of Windows registry key patterns, which are not included in the total number of IOCs.</td>
+<td>Total number of Windows registry key patterns. These are also included in total_iocs.</td>
 </tr>
 <tr>
 <td>totalSnapshotsScanned</td>

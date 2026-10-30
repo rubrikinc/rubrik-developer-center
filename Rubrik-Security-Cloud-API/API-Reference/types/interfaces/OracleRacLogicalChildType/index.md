@@ -1,6 +1,6 @@
 # OracleRacLogicalChildType
 
-*No description available.*
+Logical child of the Oracle RAC object.
 
 ## Fields
 

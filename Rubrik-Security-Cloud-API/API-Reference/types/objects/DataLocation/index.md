@@ -22,6 +22,9 @@ Data Location.
 - [ActiveDirectoryDomainController.primaryClusterLocation](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/ActiveDirectoryDomainController/index.md)
 - ActiveDirectoryDomainDescendantType.primaryClusterLocation
 - ActiveDirectoryDomainPhysicalChildType.primaryClusterLocation
+- [ActiveDirectoryForest.primaryClusterLocation](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/ActiveDirectoryForest/index.md)
+- ActiveDirectoryForestDescendantType.primaryClusterLocation
+- ActiveDirectoryForestPhysicalChildType.primaryClusterLocation
 - CdmHierarchyObject.primaryClusterLocation
 - CdmHierarchySnappableNew.primaryClusterLocation
 - [CdmSnapshot.archivalLocations](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/CdmSnapshot/index.md)
@@ -45,7 +48,4 @@ Data Location.
 - FailoverClusterAppDescendantType.primaryClusterLocation
 - FailoverClusterAppPhysicalChildType.primaryClusterLocation
 - FailoverClusterTopLevelDescendantType.primaryClusterLocation
-- [FilesetTemplate.primaryClusterLocation](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/FilesetTemplate/index.md)
-- FilesetTemplateDescendantType.primaryClusterLocation
-- FilesetTemplatePhysicalChildType.primaryClusterLocation
-- *…and 241 more*
+- *…and 270 more*

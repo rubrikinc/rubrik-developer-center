@@ -26,6 +26,7 @@ query {
       accountName
       dnsServers
       domainId
+      enableKerberosForSmb
       id
       isArchived
       name
@@ -55,9 +56,9 @@ query {
               "example-string"
             ],
             "domainId": "example-string",
+            "enableKerberosForSmb": true,
             "id": "00000000-0000-0000-0000-000000000000",
-            "isArchived": true,
-            "name": "example-string"
+            "isArchived": true
           }
         ]
       ],

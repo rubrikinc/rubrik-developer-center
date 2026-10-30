@@ -17,6 +17,9 @@ Pending snapshots deletion status for an object.
 - [ActiveDirectoryDomainController.pendingObjectDeletionStatus](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/ActiveDirectoryDomainController/index.md)
 - ActiveDirectoryDomainDescendantType.pendingObjectDeletionStatus
 - ActiveDirectoryDomainPhysicalChildType.pendingObjectDeletionStatus
+- [ActiveDirectoryForest.pendingObjectDeletionStatus](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/ActiveDirectoryForest/index.md)
+- ActiveDirectoryForestDescendantType.pendingObjectDeletionStatus
+- ActiveDirectoryForestPhysicalChildType.pendingObjectDeletionStatus
 - CdmHierarchyObject.pendingObjectDeletionStatus
 - [Db2Database.pendingObjectDeletionStatus](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/Db2Database/index.md)
 - [Db2Instance.pendingObjectDeletionStatus](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/Db2Instance/index.md)
@@ -40,7 +43,4 @@ Pending snapshots deletion status for an object.
 - [FusionComputeCluster.pendingObjectDeletionStatus](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/FusionComputeCluster/index.md)
 - FusionComputeClusterDescendant.pendingObjectDeletionStatus
 - FusionComputeClusterPhysicalChildType.pendingObjectDeletionStatus
-- [FusionComputeDatastore.pendingObjectDeletionStatus](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/FusionComputeDatastore/index.md)
-- [FusionComputeHost.pendingObjectDeletionStatus](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/FusionComputeHost/index.md)
-- FusionComputeHostDescendant.pendingObjectDeletionStatus
-- *…and 234 more*
+- *…and 263 more*

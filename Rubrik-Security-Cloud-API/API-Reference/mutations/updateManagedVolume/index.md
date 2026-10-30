@@ -25,6 +25,7 @@ mutation UpdateManagedVolume($input: UpdateManagedVolumeInput!) {
     mvType
     numChannels
     pendingSnapshotCount
+    protectionDate
     shareType
     smbDomainName
     smbValidIps

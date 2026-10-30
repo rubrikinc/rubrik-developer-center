@@ -4,14 +4,15 @@ Status of a host/object in a failover group.
 
 ## Values
 
-| Value                                                 | Description                      |
-| ----------------------------------------------------- | -------------------------------- |
-| FAILOVER_GROUP_OBJECT_STATUS_DISCONNECTED             | Disconnected status.             |
-| FAILOVER_GROUP_OBJECT_STATUS_FAILBACK_COMPLETED       | Failback completed.              |
-| FAILOVER_GROUP_OBJECT_STATUS_FAILBACK_IN_PROGRESS     | Failback in progress.            |
-| FAILOVER_GROUP_OBJECT_STATUS_FAILOVER_IN_PROGRESS     | Failover in progress.            |
-| FAILOVER_GROUP_OBJECT_STATUS_INCONSISTENT_REPLICATION | Inconsistent replication status. |
-| FAILOVER_GROUP_OBJECT_STATUS_READY_TO_FAILBACK        | Ready to failback.               |
-| FAILOVER_GROUP_OBJECT_STATUS_READY_TO_FAILOVER        | Ready to failover.               |
-| FAILOVER_GROUP_OBJECT_STATUS_UNSPECIFIED              | Default/unknown status.          |
-| FAILOVER_GROUP_OBJECT_STATUS_WARNING                  | Warning status.                  |
+| Value                                                 | Description                          |
+| ----------------------------------------------------- | ------------------------------------ |
+| FAILOVER_GROUP_OBJECT_STATUS_ARCHIVED                 | Workload is archived on its cluster. |
+| FAILOVER_GROUP_OBJECT_STATUS_DISCONNECTED             | Disconnected status.                 |
+| FAILOVER_GROUP_OBJECT_STATUS_FAILBACK_COMPLETED       | Failback completed.                  |
+| FAILOVER_GROUP_OBJECT_STATUS_FAILBACK_IN_PROGRESS     | Failback in progress.                |
+| FAILOVER_GROUP_OBJECT_STATUS_FAILOVER_IN_PROGRESS     | Failover in progress.                |
+| FAILOVER_GROUP_OBJECT_STATUS_INCONSISTENT_REPLICATION | Inconsistent replication status.     |
+| FAILOVER_GROUP_OBJECT_STATUS_READY_TO_FAILBACK        | Ready to failback.                   |
+| FAILOVER_GROUP_OBJECT_STATUS_READY_TO_FAILOVER        | Ready to failover.                   |
+| FAILOVER_GROUP_OBJECT_STATUS_UNSPECIFIED              | Default/unknown status.              |
+| FAILOVER_GROUP_OBJECT_STATUS_WARNING                  | Warning status.                      |

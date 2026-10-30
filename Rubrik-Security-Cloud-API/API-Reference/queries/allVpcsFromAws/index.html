@@ -938,7 +938,7 @@
 
 
 <h1 id="allvpcsfromaws">allVpcsFromAws</h1>
-<p>List of all Virtual Private Clouds (VPCs) in the AWS Native account.</p>
+<p>Lists the persisted Virtual Private Clouds (VPCs) of every AWS Native account the caller can view, optionally scoped to a single account. Subnets and security groups are not returned.</p>
 <h2 id="arguments">Arguments</h2>
 <table>
 <thead>
@@ -952,7 +952,7 @@
 <tr>
 <td>awsAccountRubrikId</td>
 <td><a href="../../types/scalars/UUID/">UUID</a></td>
-<td>Rubrik ID for AWS account.</td>
+<td>Rubrik FID of the AWS Native account to scope the listing to.</td>
 </tr>
 </tbody>
 </table>

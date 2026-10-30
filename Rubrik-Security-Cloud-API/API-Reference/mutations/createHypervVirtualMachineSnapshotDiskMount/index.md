@@ -4,9 +4,9 @@ Attaching disks from a snapshot to an existing virtual machine Supported in v9.1
 
 ## Arguments
 
-| Argument           | Type                                                                                                                                                                 | Description                                      |
-| ------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------ |
-| input *(required)* | [CreateMountHypervVirtualDisksInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/CreateMountHypervVirtualDisksInput/index.md)! | Input for InternalCreateMountHypervVirtualDisks. |
+| Argument           | Type                                                                                                                                                                 | Description                           |
+| ------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------- |
+| input *(required)* | [CreateMountHypervVirtualDisksInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/CreateMountHypervVirtualDisksInput/index.md)! | Configuration for the disk mount job. |
 
 ## Returns
 

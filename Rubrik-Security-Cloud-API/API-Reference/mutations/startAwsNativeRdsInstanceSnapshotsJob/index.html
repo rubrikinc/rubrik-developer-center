@@ -938,7 +938,7 @@
 
 
 <h1 id="startawsnativerdsinstancesnapshotsjob">startAwsNativeRdsInstanceSnapshotsJob</h1>
-<p>Start job to create snapshots of RDS Instance with given IDs. When completed, this will start taking an on-demand snapshot of the selected RDS Instances  as per the SLA Policy assigned to the respective instances.</p>
+<p>StartAwsNativeRdsInstanceSnapshotsJob starts on-demand snapshot jobs for a list of RDS or Aurora instances. Each resource id succeeds or fails independently, so the reply reports a job id for every instance a job was submitted for and an error for every instance it was not.</p>
 <h2 id="arguments">Arguments</h2>
 <table>
 <thead>
@@ -952,7 +952,7 @@
 <tr>
 <td>input <em>(required)</em></td>
 <td><a href="../../types/inputs/StartAwsNativeRdsInstanceSnapshotsJobInput/">StartAwsNativeRdsInstanceSnapshotsJobInput</a>!</td>
-<td>Input to trigger job to create AWS RDS Instance snapshots.</td>
+<td>Input for create AWS RDS Instance snapshots job.</td>
 </tr>
 </tbody>
 </table>

@@ -1,6 +1,6 @@
 # deleteGlobalSla
 
-*No description available.*
+Endpoint to delete an SLA Domain.
 
 ## Arguments
 

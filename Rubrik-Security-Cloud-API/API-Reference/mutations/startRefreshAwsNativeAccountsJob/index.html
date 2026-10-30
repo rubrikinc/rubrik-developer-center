@@ -938,7 +938,7 @@
 
 
 <h1 id="startrefreshawsnativeaccountsjob">startRefreshAwsNativeAccountsJob</h1>
-<p>Start an on demand job to refresh AWS accounts. The job updates the Rubrik platform with changes to the AWS Native accounts.</p>
+<p>StartRefreshAwsNativeAccountsJob starts on-demand refresh jobs for a list of AWS Native accounts. Each account id succeeds or fails independently, so the reply reports a job id for every account a job was submitted for and an error for every account it was not.</p>
 <h2 id="arguments">Arguments</h2>
 <table>
 <thead>
@@ -952,7 +952,7 @@
 <tr>
 <td>input <em>(required)</em></td>
 <td><a href="../../types/inputs/StartRefreshAwsNativeAccountsJobInput/">StartRefreshAwsNativeAccountsJobInput</a>!</td>
-<td>Input for refresh AWS native accounts job.</td>
+<td>Input for the AWS Native accounts refresh job.</td>
 </tr>
 </tbody>
 </table>

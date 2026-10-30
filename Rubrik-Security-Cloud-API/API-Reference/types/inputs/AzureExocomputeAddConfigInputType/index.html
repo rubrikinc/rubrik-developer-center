@@ -916,7 +916,7 @@
 
 
 <h1 id="azureexocomputeaddconfiginputtype">AzureExocomputeAddConfigInputType</h1>
-<p>Azure Exocompute configuration to add.</p>
+<p>Represents an Azure Exocompute Configuration for a specific region. The Azure Exocompute Configuration includes the subnet native ID to be used for launching an Azure Kubernetes Service (AKS) Cluster in a specific region.</p>
 <h2 id="fields">Fields</h2>
 <table>
 <thead>
@@ -930,32 +930,32 @@
 <tr>
 <td>isRscManaged</td>
 <td>Boolean!</td>
-<td>Specifies if this configuration is managed by Rubrik.</td>
+<td>Specifies whether Exocompute is managed by Rubrik or not.</td>
 </tr>
 <tr>
 <td>optionalConfig</td>
 <td><a href="../AzureExocomputeOptionalConfigInRegionInput/">AzureExocomputeOptionalConfigInRegionInput</a></td>
-<td>Optional configurations for aks cluster.</td>
+<td>Optional configurations for AKS cluster.</td>
 </tr>
 <tr>
 <td>podOverlayNetworkCidr</td>
 <td>String</td>
-<td>The CIDR range for pods if Exocompute is launched with the CNI overlay network plugin.</td>
+<td>The CIDR range assigned for pods when launching Exocompute with the CNI overlay network plugin mode.</td>
 </tr>
 <tr>
 <td>podSubnetNativeId</td>
 <td>String</td>
-<td>Native ID of the subnet where the Exocompute pods should be launched.</td>
+<td>Native ID of the subnet, configured for usage in this region for the Exocompute pods.</td>
 </tr>
 <tr>
 <td>region</td>
 <td><a href="../../enums/AzureCloudAccountRegion/">AzureCloudAccountRegion</a>!</td>
-<td>The region for which the configuration is specified.</td>
+<td>Azure region for the cloud account in which Exocompute is configured.</td>
 </tr>
 <tr>
 <td>subnetNativeId</td>
 <td>String</td>
-<td>Subnet native ID where Exocompute cluster should be launched.</td>
+<td>Native ID of the subnet, configured for usage in this region for the Exocompute cluster.</td>
 </tr>
 </tbody>
 </table>

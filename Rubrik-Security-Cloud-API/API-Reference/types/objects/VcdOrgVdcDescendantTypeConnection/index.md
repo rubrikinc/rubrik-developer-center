@@ -15,4 +15,5 @@ Paginated list of VcdOrgVdcDescendantType objects with additional pagination inf
 
 **Referenced by**
 
+- [VcdCatalog.descendantConnection](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/VcdCatalog/index.md)
 - [VcdOrgVdc.descendantConnection](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/VcdOrgVdc/index.md)

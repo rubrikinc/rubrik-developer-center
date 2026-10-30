@@ -938,7 +938,7 @@
 
 
 <h1 id="awsnatives3bucket">awsNativeS3Bucket</h1>
-<p>Represents the Amazon S3 Bucket with a specific ID. For more information, see https://aws.amazon.com/s3/.</p>
+<p>GetAwsNativeS3Bucket returns the hierarchy details for a single AWS native S3 bucket.</p>
 <h2 id="arguments">Arguments</h2>
 <table>
 <thead>
@@ -952,12 +952,12 @@
 <tr>
 <td>s3BucketRubrikId <em>(required)</em></td>
 <td><a href="../../types/scalars/UUID/">UUID</a>!</td>
-<td>Rubrik ID for the AWS S3 bucket object.</td>
+<td>Rubrik ID of the S3 bucket.</td>
 </tr>
 <tr>
 <td>includeSecurityMetadata</td>
 <td>Boolean</td>
-<td>Filter to include the security metadata.</td>
+<td>Whether to include security metadata on the returned object.</td>
 </tr>
 </tbody>
 </table>

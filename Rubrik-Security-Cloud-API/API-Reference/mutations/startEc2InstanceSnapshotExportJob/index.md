@@ -1,12 +1,12 @@
 # startEc2InstanceSnapshotExportJob
 
-Starts a job to export an EC2 Instance snapshot. The job creates a new EC2 Instance with the same properties as that of the snapshot that is exported.
+StartEc2InstanceSnapshotExportJob starts an on-demand job that exports an EC2 instance snapshot into a new EC2 instance, optionally in a different AWS account and region.
 
 ## Arguments
 
-| Argument           | Type                                                                                                                                                                         | Description                                                   |
-| ------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------- |
-| input *(required)* | [StartEc2InstanceSnapshotExportJobInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/StartEc2InstanceSnapshotExportJobInput/index.md)! | Input to trigger export AWS native EC2 Instance snapshot job. |
+| Argument           | Type                                                                                                                                                                         | Description                                         |
+| ------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------- |
+| input *(required)* | [StartEc2InstanceSnapshotExportJobInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/StartEc2InstanceSnapshotExportJobInput/index.md)! | Input for the AWS EC2 Instance snapshot export job. |
 
 ## Returns
 

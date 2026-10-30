@@ -938,8 +938,8 @@
 
 
 <h1 id="oracledataguardgroup">OracleDataGuardGroup</h1>
-<p><em>No description available.</em></p>
-<p><strong>Implements:</strong> <a href="../../interfaces/HierarchyObject/">HierarchyObject</a>, <a href="../../interfaces/HierarchySnappable/">HierarchySnappable</a>, <a href="../../interfaces/CdmHierarchyObject/">CdmHierarchyObject</a>, <a href="../../interfaces/CdmHierarchySnappableNew/">CdmHierarchySnappableNew</a>, <a href="../../interfaces/OracleTopLevelDescendantType/">OracleTopLevelDescendantType</a></p>
+<p>An Oracle Data Guard group.</p>
+<p><strong>Implements:</strong> <a href="../../interfaces/CdmHierarchyObject/">CdmHierarchyObject</a>, <a href="../../interfaces/HierarchyObject/">HierarchyObject</a>, <a href="../../interfaces/HierarchySnappable/">HierarchySnappable</a>, <a href="../../interfaces/CdmHierarchySnappableNew/">CdmHierarchySnappableNew</a>, <a href="../../interfaces/OracleTopLevelDescendantType/">OracleTopLevelDescendantType</a></p>
 <h2 id="fields">Fields</h2>
 <table>
 <thead>
@@ -968,7 +968,7 @@
 <tr>
 <td>cdmId</td>
 <td>String!</td>
-<td>CDM ID of the Oracle Data Guard Group.</td>
+<td>The ID of the workload on the Rubrik cluster.</td>
 </tr>
 <tr>
 <td>cdmLink</td>
@@ -1332,6 +1332,18 @@
 </tr>
 <tr>
 <td>descendantConnection</td>
+<td>last</td>
+<td>Int</td>
+<td>Returns the last n elements from the list.</td>
+</tr>
+<tr>
+<td>descendantConnection</td>
+<td>before</td>
+<td>String</td>
+<td>An opaque cursor returned from a previous query's startCursor field. Pass this value verbatim to retrieve the previous page of results.</td>
+</tr>
+<tr>
+<td>descendantConnection</td>
 <td>sortBy</td>
 <td><a href="../../enums/HierarchySortByField/">HierarchySortByField</a></td>
 <td>Sort hierarchy objects according to the hierarchy field.</td>
@@ -1374,6 +1386,18 @@
 </tr>
 <tr>
 <td>logicalChildConnection</td>
+<td>last</td>
+<td>Int</td>
+<td>Returns the last n elements from the list.</td>
+</tr>
+<tr>
+<td>logicalChildConnection</td>
+<td>before</td>
+<td>String</td>
+<td>An opaque cursor returned from a previous query's startCursor field. Pass this value verbatim to retrieve the previous page of results.</td>
+</tr>
+<tr>
+<td>logicalChildConnection</td>
 <td>sortBy</td>
 <td><a href="../../enums/HierarchySortByField/">HierarchySortByField</a></td>
 <td>Sort hierarchy objects according to the hierarchy field.</td>
@@ -1412,7 +1436,7 @@
 <td>missedSnapshotConnection</td>
 <td>after</td>
 <td>String</td>
-<td>An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results.</td>
+<td>Returns the elements in the list that occur after the specified cursor.</td>
 </tr>
 <tr>
 <td>missedSnapshotConnection</td>
@@ -1424,7 +1448,7 @@
 <td>missedSnapshotConnection</td>
 <td>before</td>
 <td>String</td>
-<td>An opaque cursor returned from a previous query's startCursor field. Pass this value verbatim to retrieve the previous page of results.</td>
+<td>Returns the elements in the list that occur before the specified cursor.</td>
 </tr>
 <tr>
 <td>missedSnapshotConnection</td>
@@ -1442,7 +1466,7 @@
 <td>missedSnapshotGroupByConnection</td>
 <td>after</td>
 <td>String</td>
-<td>An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results.</td>
+<td>Returns the elements in the list that occur after the specified cursor.</td>
 </tr>
 <tr>
 <td>missedSnapshotGroupByConnection</td>
@@ -1454,7 +1478,7 @@
 <td>missedSnapshotGroupByConnection</td>
 <td>before</td>
 <td>String</td>
-<td>An opaque cursor returned from a previous query's startCursor field. Pass this value verbatim to retrieve the previous page of results.</td>
+<td>Returns the elements in the list that occur before the specified cursor.</td>
 </tr>
 <tr>
 <td>missedSnapshotGroupByConnection</td>
@@ -1496,7 +1520,7 @@
 <td>numWorkloadDescendants</td>
 <td>after</td>
 <td>String</td>
-<td>An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results.</td>
+<td>Returns the elements in the list that occur after the specified cursor.</td>
 </tr>
 <tr>
 <td>numWorkloadDescendants</td>
@@ -1508,7 +1532,7 @@
 <td>numWorkloadDescendants</td>
 <td>before</td>
 <td>String</td>
-<td>An opaque cursor returned from a previous query's startCursor field. Pass this value verbatim to retrieve the previous page of results.</td>
+<td>Returns the elements in the list that occur before the specified cursor.</td>
 </tr>
 <tr>
 <td>numWorkloadDescendants</td>
@@ -1526,7 +1550,7 @@
 <td>snapshotConnection</td>
 <td>after</td>
 <td>String</td>
-<td>An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results.</td>
+<td>Returns the elements in the list that occur after the specified cursor.</td>
 </tr>
 <tr>
 <td>snapshotConnection</td>
@@ -1538,7 +1562,7 @@
 <td>snapshotConnection</td>
 <td>before</td>
 <td>String</td>
-<td>An opaque cursor returned from a previous query's startCursor field. Pass this value verbatim to retrieve the previous page of results.</td>
+<td>Returns the elements in the list that occur before the specified cursor.</td>
 </tr>
 <tr>
 <td>snapshotConnection</td>
@@ -1568,7 +1592,7 @@
 <td>snapshotGroupByConnection</td>
 <td>after</td>
 <td>String</td>
-<td>An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results.</td>
+<td>Returns the elements in the list that occur after the specified cursor.</td>
 </tr>
 <tr>
 <td>snapshotGroupByConnection</td>
@@ -1580,7 +1604,7 @@
 <td>snapshotGroupByConnection</td>
 <td>before</td>
 <td>String</td>
-<td>An opaque cursor returned from a previous query's startCursor field. Pass this value verbatim to retrieve the previous page of results.</td>
+<td>Returns the elements in the list that occur before the specified cursor.</td>
 </tr>
 <tr>
 <td>snapshotGroupByConnection</td>
@@ -1616,7 +1640,7 @@
 <td>snapshotGroupBySummary</td>
 <td>after</td>
 <td>String</td>
-<td>An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results.</td>
+<td>Returns the elements in the list that occur after the specified cursor.</td>
 </tr>
 <tr>
 <td>snapshotGroupBySummary</td>
@@ -1628,7 +1652,7 @@
 <td>snapshotGroupBySummary</td>
 <td>before</td>
 <td>String</td>
-<td>An opaque cursor returned from a previous query's startCursor field. Pass this value verbatim to retrieve the previous page of results.</td>
+<td>Returns the elements in the list that occur before the specified cursor.</td>
 </tr>
 <tr>
 <td>snapshotGroupBySummary</td>

@@ -1,12 +1,12 @@
 # startAwsNativeRdsInstanceSnapshotsJob
 
-Start job to create snapshots of RDS Instance with given IDs. When completed, this will start taking an on-demand snapshot of the selected RDS Instances as per the SLA Policy assigned to the respective instances.
+StartAwsNativeRdsInstanceSnapshotsJob starts on-demand snapshot jobs for a list of RDS or Aurora instances. Each resource id succeeds or fails independently, so the reply reports a job id for every instance a job was submitted for and an error for every instance it was not.
 
 ## Arguments
 
-| Argument           | Type                                                                                                                                                                                 | Description                                                |
-| ------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------- |
-| input *(required)* | [StartAwsNativeRdsInstanceSnapshotsJobInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/StartAwsNativeRdsInstanceSnapshotsJobInput/index.md)! | Input to trigger job to create AWS RDS Instance snapshots. |
+| Argument           | Type                                                                                                                                                                                 | Description                                      |
+| ------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------ |
+| input *(required)* | [StartAwsNativeRdsInstanceSnapshotsJobInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/StartAwsNativeRdsInstanceSnapshotsJobInput/index.md)! | Input for create AWS RDS Instance snapshots job. |
 
 ## Returns
 

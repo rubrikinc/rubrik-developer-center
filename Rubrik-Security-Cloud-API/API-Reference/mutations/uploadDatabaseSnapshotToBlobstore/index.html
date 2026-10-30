@@ -938,7 +938,7 @@
 
 
 <h1 id="uploaddatabasesnapshottoblobstore">uploadDatabaseSnapshotToBlobstore</h1>
-<p>Start a job to upload a database snapshot to a target blobstore.</p>
+<p>Start a job to upload a database snapshot to a target blobstore. The taskchain creates the target blobstore location (Azure container or storage account, S3 bucket and so on) first if it does not already exist. Only Azure SQL persistent snapshots can be uploaded to a target storage account.</p>
 <h2 id="arguments">Arguments</h2>
 <table>
 <thead>

@@ -23,6 +23,7 @@ Azure cloud account region Enum.
 | CHINAEAST2           | Azure Cloud account region is China East 2.         |
 | CHINANORTH           | Azure Cloud account region is China North.          |
 | CHINANORTH2          | Azure Cloud account region is China North 2.        |
+| DENMARKEAST          | Azure Cloud account region is Denmark East.         |
 | EASTASIA             | Azure Cloud account region is East Asia.            |
 | EASTUS               | Azure Cloud account region is East US.              |
 | EASTUS2              | Azure Cloud account region is East US 2.            |
@@ -30,6 +31,7 @@ Azure cloud account region Enum.
 | FRANCESOUTH          | Azure Cloud account region is France South.         |
 | GERMANYNORTH         | Azure Cloud account region is Germany North.        |
 | GERMANYWESTCENTRAL   | Azure Cloud account region is Germany West Central. |
+| INDIASOUTHCENTRAL    | Azure Cloud account region is India South Central.  |
 | INDONESIACENTRAL     | Azure Cloud account region is Indonesia Central.    |
 | ISRAELCENTRAL        | Azure Cloud account region is Israel Central.       |
 | ITALYNORTH           | Azure Cloud account region is Italy North.          |

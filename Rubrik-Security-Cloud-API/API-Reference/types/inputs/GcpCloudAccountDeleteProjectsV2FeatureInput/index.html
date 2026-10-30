@@ -935,12 +935,17 @@
 <tr>
 <td>deleteSnapshots</td>
 <td>Boolean</td>
-<td>For protection features whether to delete the corresponding snapshots from GCP as well.</td>
+<td>Specifies whether to also delete the corresponding snapshots from GCP. Applies only to protection features. Snapshots are kept when this is unset or false. Can't be true when skipResourceDeletion is true. Deprecated, will be replaced by skipResourceDeletion.</td>
 </tr>
 <tr>
 <td>feature</td>
 <td><a href="../../enums/CloudAccountFeature/">CloudAccountFeature</a>!</td>
 <td>Feature to be deleted.</td>
+</tr>
+<tr>
+<td>skipResourceDeletion</td>
+<td>Boolean</td>
+<td>When true, removes the cloud account from Rubrik Security Cloud without tearing down most resources in GCP. Some Rubrik-created GCP resources may remain and require manual cleanup.</td>
 </tr>
 </tbody>
 </table>

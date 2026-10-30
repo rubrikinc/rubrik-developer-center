@@ -4,9 +4,9 @@ Create a live mount request Supported in v5.0+ Create a live mount request with 
 
 ## Arguments
 
-| Argument           | Type                                                                                                                                                                                     | Description                                                |
-| ------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------- |
-| input *(required)* | [CreateHypervVirtualMachineSnapshotMountInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/CreateHypervVirtualMachineSnapshotMountInput/index.md)! | Input for InternalCreateHypervVirtualMachineSnapshotMount. |
+| Argument           | Type                                                                                                                                                                                     | Description                              |
+| ------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------- |
+| input *(required)* | [CreateHypervVirtualMachineSnapshotMountInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/CreateHypervVirtualMachineSnapshotMountInput/index.md)! | The configuration for the mount request. |
 
 ## Returns
 

@@ -19,6 +19,9 @@ Latest user note information.
 - [ActiveDirectoryDomainController.latestUserNote](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/ActiveDirectoryDomainController/index.md)
 - ActiveDirectoryDomainDescendantType.latestUserNote
 - ActiveDirectoryDomainPhysicalChildType.latestUserNote
+- [ActiveDirectoryForest.latestUserNote](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/ActiveDirectoryForest/index.md)
+- ActiveDirectoryForestDescendantType.latestUserNote
+- ActiveDirectoryForestPhysicalChildType.latestUserNote
 - CdmHierarchyObject.latestUserNote
 - [CdmSnapshot.latestUserNote](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/CdmSnapshot/index.md)
 - [CdmWorkloadSnapshot.latestUserNote](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/CdmWorkloadSnapshot/index.md)
@@ -42,7 +45,4 @@ Latest user note information.
 - [FilesetTemplate.latestUserNote](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/FilesetTemplate/index.md)
 - FilesetTemplateDescendantType.latestUserNote
 - FilesetTemplatePhysicalChildType.latestUserNote
-- [FusionComputeCluster.latestUserNote](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/FusionComputeCluster/index.md)
-- FusionComputeClusterDescendant.latestUserNote
-- FusionComputeClusterPhysicalChildType.latestUserNote
-- *…and 238 more*
+- *…and 267 more*

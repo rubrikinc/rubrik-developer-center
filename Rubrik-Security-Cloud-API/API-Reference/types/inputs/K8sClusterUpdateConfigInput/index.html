@@ -973,6 +973,11 @@
 <td>Supported in v9.2+ The configuration for the kupr server proxy to be updated.</td>
 </tr>
 <tr>
+<td>loadBalancerAnnotations</td>
+<td><a href="../ClusterUpdateLoadBalancerAnnotationInput/">ClusterUpdateLoadBalancerAnnotationInput</a></td>
+<td>Annotations to set on the load balancer Service for the Kubernetes cluster. Only used when transport is loadbalancer. When non-empty, this list replaces the current custom annotations entirely. Omitting the field or sending an empty list leaves the current annotations unchanged. Removing all custom annotations is not supported through this API.</td>
+</tr>
+<tr>
 <td>maxConcurrentAgents</td>
 <td>Int</td>
 <td>Supported in v9.6+ Maximum number of kupr backup agents allowed to run concurrently against this Kubernetes cluster. Set to 0 to disable the concurrent-agent throttle. Omit to leave the current setting unchanged.</td>
