@@ -4,7 +4,7 @@ export RSC_CLIENT_SECRET="ExampleSecret"
 
 CDM_RESPONSE=$(curl --silent --location "https://$CDM_NODE/api/v1/service_account/session" \
   --header "Content-Type: application/json" \
-  --data "{\"clientId\":\"$RSC_CLIENT_ID\",\"clientSecret\":\"$RSC_CLIENT_SECRET\"}")
+  --data "{\"serviceAccountId\":\"$RSC_CLIENT_ID\",\"secret\":\"$RSC_CLIENT_SECRET\"}")
 
 CDM_TOKEN=$(echo "$CDM_RESPONSE" | jq -r '.token')
 CDM_SESSION_ID=$(echo "$CDM_RESPONSE" | jq -r '.sessionId')
