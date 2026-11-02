@@ -19,7 +19,7 @@ Consider the following best practices when using service accounts with the CDM A
 
 #### Obtaining an access token
 
-Post the RSC service account `clientId` and `clientSecret` to `https://<cluster_node>/api/v1/service_account/session`. The response contains the session token needed for authenticated API calls. The `jq` tool is used to parse the token from the JSON response and store it in a variable for reuse.
+Post the RSC service account client ID as `serviceAccountId` and the client secret as `secret` to `https://<cluster_node>/api/v1/service_account/session`. The response contains the session token needed for authenticated API calls. The `jq` tool is used to parse the token from the JSON response and store it in a variable for reuse.
 
 === "Shell"
     ```bash
