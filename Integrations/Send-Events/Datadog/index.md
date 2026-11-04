@@ -25,17 +25,12 @@ In Rubrik Security Cloud, go to **Settings > Webhooks > Add Webhook**.
 
   Use the `event-management-intake` host shown here, not `api.<site>`. Datadog has deprecated `api.<site>/api/v2/events` for posting events.
 
-- **Authentication:** turn on **Authentication**, choose **Advanced or Custom Authentication**, and add two headers:
+- **Authentication:** turn on **Authentication**, choose **Advanced or Custom Authentication**, and add a header with **HTTP Header Key** `DD-API-KEY` and your [Datadog API key](https://docs.datadoghq.com/account_management/api-app-keys/#api-keys) as the **Value**. Sending events needs only the API key, not an application key.
 
-  | HTTP Header Key      | Value                                                                                                     |
-  | -------------------- | --------------------------------------------------------------------------------------------------------- |
-  | `DD-API-KEY`         | Your [Datadog API key](https://docs.datadoghq.com/account_management/api-app-keys/#api-keys)              |
-  | `DD-APPLICATION-KEY` | A [Datadog application key](https://docs.datadoghq.com/account_management/api-app-keys/#application-keys) |
+- **Event and severity:** choose event types deliberately, then select **all three severities** for each. See [Choosing what to subscribe to](https://developer.rubrik.com/Integrations/Send-Events/#choosing-what-to-subscribe-to).
 
-  Use **Add Header** for the second one. Consider a [scoped application key](https://docs.datadoghq.com/account_management/api-app-keys/#scopes) or one owned by a [service account](https://docs.datadoghq.com/account_management/org_settings/service_accounts/), so the webhook does not carry a personal key.
+- **Templates:** Rubrik formats events and audits with separate templates, so set both:
 
-  - **Event and severity:** choose event types deliberately, then select **all three severities** for each. See [Choosing what to subscribe to](https://developer.rubrik.com/Integrations/Send-Events/#choosing-what-to-subscribe-to).
-  - **Templates:** Rubrik formats events and audits with separate templates, so set both:
   - **Event Export Template:** choose **Customize export template** and replace the default with the [events template](#events-template). Replace `YOUR-TENANT` with your own Rubrik Security Cloud hostname first.
   - **Audit Export Template:** choose **Customize export template** and replace the default with the [audit template](#audit-template).
 
