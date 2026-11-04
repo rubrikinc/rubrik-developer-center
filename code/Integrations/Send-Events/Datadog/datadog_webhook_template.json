@@ -2,16 +2,26 @@
     "data": {
         "type": "event",
         "attributes": {
-            "aggregation_key": "{{.ActivitySeriesID}}",
-            "tags": "[Rubrik]",
             "category": "alert",
-            "message": "{{.Message}}",
-            "timestamp": "{{.Time}}",
+            "aggregation_key": "{{.ObjectID}}-{{.ActivityType}}",
             "title": "{{.ActivityType}} - {{.Status}}",
+            "message": "{{.Message}}",
+            "timestamp": "{{.Time.UTC.Format "2006-01-02T15:04:05Z07:00"}}",
+            "tags": [
+                "source:rubrik",
+                "rubrik_event:event",
+                "rubrik_activity_type:{{.ActivityType}}",
+                "rubrik_object_type:{{.ObjectType}}",
+                "rubrik_severity:{{.Severity}}"
+            ],
             "attributes": {
+                "status": "{{if eq .Severity "critical"}}error{{else if eq .Severity "warning"}}warn{{else}}ok{{end}}",
+                "priority": "{{if eq .Severity "critical"}}1{{else if eq .Severity "warning"}}3{{else}}5{{end}}",
                 "custom": {
                     "severity": "{{.Severity}}",
+                    "status": "{{.Status}}",
                     "id": "{{.UUID}}",
+                    "series_id": "{{.ActivitySeriesID}}",
                     "object": {
                         "name": "{{.ObjectName}}",
                         "id": "{{.ObjectID}}",
@@ -32,13 +42,11 @@
                 },
                 "links": [
                     {
-                        "category": "dashboard",
-                        "title": "Rubrik Security Cloud",
-                        "url": "https://example.my.rubrik.com"
+                        "category": "resource",
+                        "title": "View in Rubrik Security Cloud",
+                        "url": "https://YOUR-TENANT.my.rubrik.com/events/details/{{.ActivitySeriesID}}?clusterUuid=\"{{.ClusterUUID}}\""
                     }
-                ],
-                "priority": "5",
-                "status": "error"
+                ]
             }
         }
     }

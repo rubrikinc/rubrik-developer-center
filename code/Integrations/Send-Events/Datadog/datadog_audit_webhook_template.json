@@ -1,0 +1,42 @@
+{
+    "data": {
+        "type": "event",
+        "attributes": {
+            "category": "alert",
+            "title": "{{if .AuditType}}{{.AuditType}}{{else}}Audit{{end}} - {{.EventStatus}}",
+            "message": "{{.Message}}",
+            "timestamp": "{{.Time.UTC.Format "2006-01-02T15:04:05Z07:00"}}",
+            "tags": [
+                "source:rubrik",
+                "rubrik_event:audit",
+                "rubrik_audit_type:{{if .AuditType}}{{.AuditType}}{{else}}unknown{{end}}",
+                "rubrik_severity:{{if .Severity}}{{.Severity}}{{else}}unknown{{end}}"
+            ],
+            "attributes": {
+                "status": "{{if eq .Severity "critical"}}error{{else if eq .Severity "warning"}}warn{{else}}ok{{end}}",
+                "priority": "{{if eq .Severity "critical"}}1{{else if eq .Severity "warning"}}3{{else}}5{{end}}",
+                "custom": {
+                    "id": "{{.UUID}}",
+                    "audit_type": "{{.AuditType}}",
+                    "severity": "{{.Severity}}",
+                    "status": "{{.EventStatus}}",
+                    "user": {
+                        "name": "{{.UserName}}",
+                        "id": "{{.UserID}}",
+                        "ip_address": "{{.IPAddress}}"
+                    },
+                    "object": {
+                        "name": "{{.ObjectName}}",
+                        "id": "{{.ObjectID}}",
+                        "type": "{{.ObjectType}}",
+                        "cluster": {
+                            "name": "{{.ClusterName}}",
+                            "id": "{{.ClusterUUID}}"
+                        }
+                    },
+                    "org_id": "{{.OrgID}}"
+                }
+            }
+        }
+    }
+}

@@ -22,7 +22,7 @@ write a template, see [Events](../../Rubrik-Security-Cloud-API/Observability/Eve
 -   __Datadog__
 
     ---
-    Post Rubrik events to the Datadog event stream.
+    Post Rubrik events and audit logs to the Datadog event stream.
 
     [:octicons-arrow-right-24: Datadog](Datadog.md)
 
