@@ -14,7 +14,7 @@ Rubrik Security Cloud can send every event it records to another system as it ha
 
   ______________________________________________________________________
 
-  Post Rubrik events to the Datadog event stream.
+  Post Rubrik events and audit logs to the Datadog event stream.
 
   [Datadog](https://developer.rubrik.com/Integrations/Send-Events/Datadog/index.md)
 

@@ -116,6 +116,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#create-the-webhook" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -915,6 +920,24 @@
       
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Datadog
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -931,6 +954,56 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#create-the-webhook" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Create the webhook
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#events-template" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Events template
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#audit-template" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Audit template
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -1037,6 +1110,47 @@
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#create-the-webhook" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Create the webhook
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#events-template" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Events template
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#audit-template" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Audit template
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1054,58 +1168,241 @@
 
   <h1>Datadog</h1>
 
-<p>Datadog requires a specific payload format to <a href="https://docs.datadoghq.com/api/latest/events/#post-an-event">post an event</a>. The following webhook template sends Rubrik events to Datadog.</p>
-<p>Authentication is required to send events to Datadog. In the Rubrik webhook configuration, choose <strong>Custom Header</strong> authentication, enter <code>DD-API-KEY</code> as the header key, and provide your <a href="https://docs.datadoghq.com/account_management/api-app-keys/#api-keys">Datadog API key</a> as the header value. Customize the payload as needed for the events being sent.</p>
-<div class="language-json highlight"><span class="filename">datadog webhook template</span><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="p">{</span>
+<p>These webhook templates send Rubrik Security Cloud events and audit logs to the
+Datadog event stream using Datadog's
+<a href="https://docs.datadoghq.com/api/latest/events/post-an-event/#post-an-event-v2">Post an event</a>
+API (v2). Both events and audit logs arrive as Datadog <strong>alert</strong> events, with a
+status and priority that follow Rubrik's severity.</p>
+<p>These templates are samples to adapt, not a supported integration. See
+<a href="../../../api-support/#out-of-scope">API Support</a> for what Rubrik Support
+covers.</p>
+<p>Before you subscribe the webhook to events, read
+<a href="../">Send Events to Third-Party Tools</a> for which events to subscribe to
+and how to tell a real problem from a routine one.</p>
+<h2 id="create-the-webhook">Create the webhook</h2>
+<p>In Rubrik Security Cloud, go to <strong>Settings &gt; Webhooks &gt; Add Webhook</strong>.</p>
+<ul>
+<li><strong>Provider:</strong> Generic</li>
+<li>
+<p><strong>Endpoint:</strong> the Datadog events intake for your
+  <a href="https://docs.datadoghq.com/getting_started/site/">Datadog site</a>:</p>
+<table>
+<thead>
+<tr>
+<th>Datadog site</th>
+<th>Endpoint</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>US1</td>
+<td><code>https://event-management-intake.datadoghq.com/api/v2/events</code></td>
+</tr>
+<tr>
+<td>US3</td>
+<td><code>https://event-management-intake.us3.datadoghq.com/api/v2/events</code></td>
+</tr>
+<tr>
+<td>US5</td>
+<td><code>https://event-management-intake.us5.datadoghq.com/api/v2/events</code></td>
+</tr>
+<tr>
+<td>EU1</td>
+<td><code>https://event-management-intake.datadoghq.eu/api/v2/events</code></td>
+</tr>
+<tr>
+<td>AP1</td>
+<td><code>https://event-management-intake.ap1.datadoghq.com/api/v2/events</code></td>
+</tr>
+<tr>
+<td>AP2</td>
+<td><code>https://event-management-intake.ap2.datadoghq.com/api/v2/events</code></td>
+</tr>
+<tr>
+<td>UK1</td>
+<td><code>https://event-management-intake.uk1.datadoghq.com/api/v2/events</code></td>
+</tr>
+<tr>
+<td>US1-FED</td>
+<td><code>https://event-management-intake.ddog-gov.com/api/v2/events</code></td>
+</tr>
+</tbody>
+</table>
+<p>Use the <code>event-management-intake</code> host shown here, not <code>api.&lt;site&gt;</code>.
+Datadog has deprecated <code>api.&lt;site&gt;/api/v2/events</code> for posting events.</p>
+</li>
+<li>
+<p><strong>Authentication:</strong> turn on <strong>Authentication</strong>, choose
+  <strong>Advanced or Custom Authentication</strong>, and add two headers:</p>
+<table>
+<thead>
+<tr>
+<th>HTTP Header Key</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>DD-API-KEY</code></td>
+<td>Your <a href="https://docs.datadoghq.com/account_management/api-app-keys/#api-keys">Datadog API key</a></td>
+</tr>
+<tr>
+<td><code>DD-APPLICATION-KEY</code></td>
+<td>A <a href="https://docs.datadoghq.com/account_management/api-app-keys/#application-keys">Datadog application key</a></td>
+</tr>
+</tbody>
+</table>
+<p>Use <strong>Add Header</strong> for the second one. Consider a
+<a href="https://docs.datadoghq.com/account_management/api-app-keys/#scopes">scoped application key</a>
+or one owned by a
+<a href="https://docs.datadoghq.com/account_management/org_settings/service_accounts/">service account</a>,
+so the webhook does not carry a personal key.
+- <strong>Event and severity:</strong> choose event types deliberately, then select
+  <strong>all three severities</strong> for each. See
+  <a href="../#choosing-what-to-subscribe-to">Choosing what to subscribe to</a>.
+- <strong>Templates:</strong> Rubrik formats events and audits with separate templates,
+  so set both:
+- <strong>Event Export Template:</strong> choose <strong>Customize export template</strong> and
+  replace the default with the <a href="#events-template">events template</a>.
+  Replace <code>YOUR-TENANT</code> with your own Rubrik Security Cloud hostname
+  first.
+- <strong>Audit Export Template:</strong> choose <strong>Customize export template</strong> and
+  replace the default with the <a href="#audit-template">audit template</a>.</p>
+</li>
+</ul>
+<p>Use the template preview to confirm each template renders, then send a test.
+Datadog responds with <code>202 Accepted</code> when it accepts an event.</p>
+<h2 id="events-template">Events template</h2>
+<div class="language-json highlight"><span class="filename">datadog_webhook_template.json</span><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="p">{</span>
 </span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">    </span><span class="nt">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
 </span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">        </span><span class="nt">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"event"</span><span class="p">,</span>
 </span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">        </span><span class="nt">"attributes"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="w">            </span><span class="nt">"aggregation_key"</span><span class="p">:</span><span class="w"> </span><span class="s2">"{{.ActivitySeriesID}}"</span><span class="p">,</span>
-</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="w">            </span><span class="nt">"tags"</span><span class="p">:</span><span class="w"> </span><span class="s2">"[Rubrik]"</span><span class="p">,</span>
-</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="w">            </span><span class="nt">"category"</span><span class="p">:</span><span class="w"> </span><span class="s2">"alert"</span><span class="p">,</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="w">            </span><span class="nt">"category"</span><span class="p">:</span><span class="w"> </span><span class="s2">"alert"</span><span class="p">,</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="w">            </span><span class="nt">"aggregation_key"</span><span class="p">:</span><span class="w"> </span><span class="s2">"{{.ObjectID}}-{{.ActivityType}}"</span><span class="p">,</span>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="w">            </span><span class="nt">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"{{.ActivityType}} - {{.Status}}"</span><span class="p">,</span>
 </span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="w">            </span><span class="nt">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"{{.Message}}"</span><span class="p">,</span>
-</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="w">            </span><span class="nt">"timestamp"</span><span class="p">:</span><span class="w"> </span><span class="s2">"{{.Time}}"</span><span class="p">,</span>
-</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="w">            </span><span class="nt">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"{{.ActivityType}} - {{.Status}}"</span><span class="p">,</span>
-</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="w">            </span><span class="nt">"attributes"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a><span class="w">                </span><span class="nt">"custom"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a><span class="w">                    </span><span class="nt">"severity"</span><span class="p">:</span><span class="w"> </span><span class="s2">"{{.Severity}}"</span><span class="p">,</span>
-</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a><span class="w">                    </span><span class="nt">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"{{.UUID}}"</span><span class="p">,</span>
-</span><span id="__span-0-15"><a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a><span class="w">                    </span><span class="nt">"object"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-0-16"><a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a><span class="w">                        </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"{{.ObjectName}}"</span><span class="p">,</span>
-</span><span id="__span-0-17"><a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a><span class="w">                        </span><span class="nt">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"{{.ObjectID}}"</span><span class="p">,</span>
-</span><span id="__span-0-18"><a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a><span class="w">                        </span><span class="nt">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"{{.ObjectType}}"</span><span class="p">,</span>
-</span><span id="__span-0-19"><a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a><span class="w">                        </span><span class="nt">"location"</span><span class="p">:</span><span class="w"> </span><span class="s2">"{{.Location}}"</span><span class="p">,</span>
-</span><span id="__span-0-20"><a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a><span class="w">                        </span><span class="nt">"cluster"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-0-21"><a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a><span class="w">                            </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"{{.ClusterName}}"</span><span class="p">,</span>
-</span><span id="__span-0-22"><a id="__codelineno-0-22" name="__codelineno-0-22" href="#__codelineno-0-22"></a><span class="w">                            </span><span class="nt">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"{{.ClusterUUID}}"</span>
-</span><span id="__span-0-23"><a id="__codelineno-0-23" name="__codelineno-0-23" href="#__codelineno-0-23"></a><span class="w">                        </span><span class="p">}</span>
-</span><span id="__span-0-24"><a id="__codelineno-0-24" name="__codelineno-0-24" href="#__codelineno-0-24"></a><span class="w">                    </span><span class="p">},</span>
-</span><span id="__span-0-25"><a id="__codelineno-0-25" name="__codelineno-0-25" href="#__codelineno-0-25"></a><span class="w">                    </span><span class="nt">"error"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-0-26"><a id="__codelineno-0-26" name="__codelineno-0-26" href="#__codelineno-0-26"></a><span class="w">                        </span><span class="nt">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"{{.Error.ID}}"</span><span class="p">,</span>
-</span><span id="__span-0-27"><a id="__codelineno-0-27" name="__codelineno-0-27" href="#__codelineno-0-27"></a><span class="w">                        </span><span class="nt">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"{{.Error.ErrorCode}}"</span><span class="p">,</span>
-</span><span id="__span-0-28"><a id="__codelineno-0-28" name="__codelineno-0-28" href="#__codelineno-0-28"></a><span class="w">                        </span><span class="nt">"remedy"</span><span class="p">:</span><span class="w"> </span><span class="s2">"{{.Error.Remedy}}"</span><span class="p">,</span>
-</span><span id="__span-0-29"><a id="__codelineno-0-29" name="__codelineno-0-29" href="#__codelineno-0-29"></a><span class="w">                        </span><span class="nt">"reason"</span><span class="p">:</span><span class="w"> </span><span class="s2">"{{.Error.Reason}}"</span><span class="p">,</span>
-</span><span id="__span-0-30"><a id="__codelineno-0-30" name="__codelineno-0-30" href="#__codelineno-0-30"></a><span class="w">                        </span><span class="nt">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"{{.Error.Message}}"</span>
-</span><span id="__span-0-31"><a id="__codelineno-0-31" name="__codelineno-0-31" href="#__codelineno-0-31"></a><span class="w">                    </span><span class="p">}</span>
-</span><span id="__span-0-32"><a id="__codelineno-0-32" name="__codelineno-0-32" href="#__codelineno-0-32"></a><span class="w">                </span><span class="p">},</span>
-</span><span id="__span-0-33"><a id="__codelineno-0-33" name="__codelineno-0-33" href="#__codelineno-0-33"></a><span class="w">                </span><span class="nt">"links"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
-</span><span id="__span-0-34"><a id="__codelineno-0-34" name="__codelineno-0-34" href="#__codelineno-0-34"></a><span class="w">                    </span><span class="p">{</span>
-</span><span id="__span-0-35"><a id="__codelineno-0-35" name="__codelineno-0-35" href="#__codelineno-0-35"></a><span class="w">                        </span><span class="nt">"category"</span><span class="p">:</span><span class="w"> </span><span class="s2">"dashboard"</span><span class="p">,</span>
-</span><span id="__span-0-36"><a id="__codelineno-0-36" name="__codelineno-0-36" href="#__codelineno-0-36"></a><span class="w">                        </span><span class="nt">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Rubrik Security Cloud"</span><span class="p">,</span>
-</span><span id="__span-0-37"><a id="__codelineno-0-37" name="__codelineno-0-37" href="#__codelineno-0-37"></a><span class="w">                        </span><span class="nt">"url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://example.my.rubrik.com"</span>
-</span><span id="__span-0-38"><a id="__codelineno-0-38" name="__codelineno-0-38" href="#__codelineno-0-38"></a><span class="w">                    </span><span class="p">}</span>
-</span><span id="__span-0-39"><a id="__codelineno-0-39" name="__codelineno-0-39" href="#__codelineno-0-39"></a><span class="w">                </span><span class="p">],</span>
-</span><span id="__span-0-40"><a id="__codelineno-0-40" name="__codelineno-0-40" href="#__codelineno-0-40"></a><span class="w">                </span><span class="nt">"priority"</span><span class="p">:</span><span class="w"> </span><span class="s2">"5"</span><span class="p">,</span>
-</span><span id="__span-0-41"><a id="__codelineno-0-41" name="__codelineno-0-41" href="#__codelineno-0-41"></a><span class="w">                </span><span class="nt">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"error"</span>
-</span><span id="__span-0-42"><a id="__codelineno-0-42" name="__codelineno-0-42" href="#__codelineno-0-42"></a><span class="w">            </span><span class="p">}</span>
-</span><span id="__span-0-43"><a id="__codelineno-0-43" name="__codelineno-0-43" href="#__codelineno-0-43"></a><span class="w">        </span><span class="p">}</span>
-</span><span id="__span-0-44"><a id="__codelineno-0-44" name="__codelineno-0-44" href="#__codelineno-0-44"></a><span class="w">    </span><span class="p">}</span>
-</span><span id="__span-0-45"><a id="__codelineno-0-45" name="__codelineno-0-45" href="#__codelineno-0-45"></a><span class="p">}</span>
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="w">            </span><span class="nt">"timestamp"</span><span class="p">:</span><span class="w"> </span><span class="s2">"{{.Time.UTC.Format "</span><span class="mi">2006-01-02</span><span class="err">T</span><span class="mi">15</span><span class="p">:</span><span class="mi">04</span><span class="p">:</span><span class="mi">05</span><span class="err">Z</span><span class="mi">07</span><span class="p">:</span><span class="mi">00</span><span class="s2">"}}"</span><span class="p">,</span>
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="w">            </span><span class="nt">"tags"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="w">                </span><span class="s2">"source:rubrik"</span><span class="p">,</span>
+</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a><span class="w">                </span><span class="s2">"rubrik_event:event"</span><span class="p">,</span>
+</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a><span class="w">                </span><span class="s2">"rubrik_activity_type:{{.ActivityType}}"</span><span class="p">,</span>
+</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a><span class="w">                </span><span class="s2">"rubrik_object_type:{{.ObjectType}}"</span><span class="p">,</span>
+</span><span id="__span-0-15"><a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a><span class="w">                </span><span class="s2">"rubrik_severity:{{.Severity}}"</span>
+</span><span id="__span-0-16"><a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a><span class="w">            </span><span class="p">],</span>
+</span><span id="__span-0-17"><a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a><span class="w">            </span><span class="nt">"attributes"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-0-18"><a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a><span class="w">                </span><span class="nt">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"{{if eq .Severity "</span><span class="err">cri</span><span class="kc">t</span><span class="err">ical</span><span class="s2">"}}error{{else if eq .Severity "</span><span class="err">war</span><span class="kc">n</span><span class="err">i</span><span class="kc">n</span><span class="err">g</span><span class="s2">"}}warn{{else}}ok{{end}}"</span><span class="p">,</span>
+</span><span id="__span-0-19"><a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a><span class="w">                </span><span class="nt">"priority"</span><span class="p">:</span><span class="w"> </span><span class="s2">"{{if eq .Severity "</span><span class="err">cri</span><span class="kc">t</span><span class="err">ical</span><span class="s2">"}}1{{else if eq .Severity "</span><span class="err">war</span><span class="kc">n</span><span class="err">i</span><span class="kc">n</span><span class="err">g</span><span class="s2">"}}3{{else}}5{{end}}"</span><span class="p">,</span>
+</span><span id="__span-0-20"><a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a><span class="w">                </span><span class="nt">"custom"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-0-21"><a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a><span class="w">                    </span><span class="nt">"severity"</span><span class="p">:</span><span class="w"> </span><span class="s2">"{{.Severity}}"</span><span class="p">,</span>
+</span><span id="__span-0-22"><a id="__codelineno-0-22" name="__codelineno-0-22" href="#__codelineno-0-22"></a><span class="w">                    </span><span class="nt">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"{{.Status}}"</span><span class="p">,</span>
+</span><span id="__span-0-23"><a id="__codelineno-0-23" name="__codelineno-0-23" href="#__codelineno-0-23"></a><span class="w">                    </span><span class="nt">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"{{.UUID}}"</span><span class="p">,</span>
+</span><span id="__span-0-24"><a id="__codelineno-0-24" name="__codelineno-0-24" href="#__codelineno-0-24"></a><span class="w">                    </span><span class="nt">"series_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"{{.ActivitySeriesID}}"</span><span class="p">,</span>
+</span><span id="__span-0-25"><a id="__codelineno-0-25" name="__codelineno-0-25" href="#__codelineno-0-25"></a><span class="w">                    </span><span class="nt">"object"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-0-26"><a id="__codelineno-0-26" name="__codelineno-0-26" href="#__codelineno-0-26"></a><span class="w">                        </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"{{.ObjectName}}"</span><span class="p">,</span>
+</span><span id="__span-0-27"><a id="__codelineno-0-27" name="__codelineno-0-27" href="#__codelineno-0-27"></a><span class="w">                        </span><span class="nt">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"{{.ObjectID}}"</span><span class="p">,</span>
+</span><span id="__span-0-28"><a id="__codelineno-0-28" name="__codelineno-0-28" href="#__codelineno-0-28"></a><span class="w">                        </span><span class="nt">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"{{.ObjectType}}"</span><span class="p">,</span>
+</span><span id="__span-0-29"><a id="__codelineno-0-29" name="__codelineno-0-29" href="#__codelineno-0-29"></a><span class="w">                        </span><span class="nt">"location"</span><span class="p">:</span><span class="w"> </span><span class="s2">"{{.Location}}"</span><span class="p">,</span>
+</span><span id="__span-0-30"><a id="__codelineno-0-30" name="__codelineno-0-30" href="#__codelineno-0-30"></a><span class="w">                        </span><span class="nt">"cluster"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-0-31"><a id="__codelineno-0-31" name="__codelineno-0-31" href="#__codelineno-0-31"></a><span class="w">                            </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"{{.ClusterName}}"</span><span class="p">,</span>
+</span><span id="__span-0-32"><a id="__codelineno-0-32" name="__codelineno-0-32" href="#__codelineno-0-32"></a><span class="w">                            </span><span class="nt">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"{{.ClusterUUID}}"</span>
+</span><span id="__span-0-33"><a id="__codelineno-0-33" name="__codelineno-0-33" href="#__codelineno-0-33"></a><span class="w">                        </span><span class="p">}</span>
+</span><span id="__span-0-34"><a id="__codelineno-0-34" name="__codelineno-0-34" href="#__codelineno-0-34"></a><span class="w">                    </span><span class="p">},</span>
+</span><span id="__span-0-35"><a id="__codelineno-0-35" name="__codelineno-0-35" href="#__codelineno-0-35"></a><span class="w">                    </span><span class="nt">"error"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-0-36"><a id="__codelineno-0-36" name="__codelineno-0-36" href="#__codelineno-0-36"></a><span class="w">                        </span><span class="nt">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"{{.Error.ID}}"</span><span class="p">,</span>
+</span><span id="__span-0-37"><a id="__codelineno-0-37" name="__codelineno-0-37" href="#__codelineno-0-37"></a><span class="w">                        </span><span class="nt">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"{{.Error.ErrorCode}}"</span><span class="p">,</span>
+</span><span id="__span-0-38"><a id="__codelineno-0-38" name="__codelineno-0-38" href="#__codelineno-0-38"></a><span class="w">                        </span><span class="nt">"remedy"</span><span class="p">:</span><span class="w"> </span><span class="s2">"{{.Error.Remedy}}"</span><span class="p">,</span>
+</span><span id="__span-0-39"><a id="__codelineno-0-39" name="__codelineno-0-39" href="#__codelineno-0-39"></a><span class="w">                        </span><span class="nt">"reason"</span><span class="p">:</span><span class="w"> </span><span class="s2">"{{.Error.Reason}}"</span><span class="p">,</span>
+</span><span id="__span-0-40"><a id="__codelineno-0-40" name="__codelineno-0-40" href="#__codelineno-0-40"></a><span class="w">                        </span><span class="nt">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"{{.Error.Message}}"</span>
+</span><span id="__span-0-41"><a id="__codelineno-0-41" name="__codelineno-0-41" href="#__codelineno-0-41"></a><span class="w">                    </span><span class="p">}</span>
+</span><span id="__span-0-42"><a id="__codelineno-0-42" name="__codelineno-0-42" href="#__codelineno-0-42"></a><span class="w">                </span><span class="p">},</span>
+</span><span id="__span-0-43"><a id="__codelineno-0-43" name="__codelineno-0-43" href="#__codelineno-0-43"></a><span class="w">                </span><span class="nt">"links"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+</span><span id="__span-0-44"><a id="__codelineno-0-44" name="__codelineno-0-44" href="#__codelineno-0-44"></a><span class="w">                    </span><span class="p">{</span>
+</span><span id="__span-0-45"><a id="__codelineno-0-45" name="__codelineno-0-45" href="#__codelineno-0-45"></a><span class="w">                        </span><span class="nt">"category"</span><span class="p">:</span><span class="w"> </span><span class="s2">"resource"</span><span class="p">,</span>
+</span><span id="__span-0-46"><a id="__codelineno-0-46" name="__codelineno-0-46" href="#__codelineno-0-46"></a><span class="w">                        </span><span class="nt">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"View in Rubrik Security Cloud"</span><span class="p">,</span>
+</span><span id="__span-0-47"><a id="__codelineno-0-47" name="__codelineno-0-47" href="#__codelineno-0-47"></a><span class="w">                        </span><span class="nt">"url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://YOUR-TENANT.my.rubrik.com/events/details/{{.ActivitySeriesID}}?clusterUuid=\"{{.ClusterUUID}}\""</span>
+</span><span id="__span-0-48"><a id="__codelineno-0-48" name="__codelineno-0-48" href="#__codelineno-0-48"></a><span class="w">                    </span><span class="p">}</span>
+</span><span id="__span-0-49"><a id="__codelineno-0-49" name="__codelineno-0-49" href="#__codelineno-0-49"></a><span class="w">                </span><span class="p">]</span>
+</span><span id="__span-0-50"><a id="__codelineno-0-50" name="__codelineno-0-50" href="#__codelineno-0-50"></a><span class="w">            </span><span class="p">}</span>
+</span><span id="__span-0-51"><a id="__codelineno-0-51" name="__codelineno-0-51" href="#__codelineno-0-51"></a><span class="w">        </span><span class="p">}</span>
+</span><span id="__span-0-52"><a id="__codelineno-0-52" name="__codelineno-0-52" href="#__codelineno-0-52"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-0-53"><a id="__codelineno-0-53" name="__codelineno-0-53" href="#__codelineno-0-53"></a><span class="p">}</span>
 </span></code></pre></div>
-<p>This template is a sample to adapt, not a supported integration. See
-<a href="../../../api-support/#out-of-scope">API Support</a> for what Rubrik Support
-covers.</p>
-<p>Before you subscribe the webhook to events, read <a href="../">Send Events to Third-Party Tools</a> for which events to subscribe to and how to tell a real problem from a routine one.</p>
+<ul>
+<li><strong>Status and priority follow severity.</strong> Datadog alert events take a status
+  of <code>error</code>, <code>warn</code> or <code>ok</code>, and a priority from <code>1</code> (highest) to <code>5</code>. The
+  template maps Rubrik's <code>critical</code>, <code>warning</code> and <code>info</code> severities onto
+  them, so a ransomware detection arrives as an error at priority 1 and a
+  routine backup as <code>ok</code> at priority 5. Decide on severity, not status: see
+  <a href="../#use-severity-not-status">Use severity, not status</a>.</li>
+<li><strong>Grouping.</strong> Datadog groups events that share an <code>aggregation_key</code>. The
+  template groups by object and activity type, so the retries and runs of one
+  failing backup stay together. See
+  <a href="../#grouping-related-events">Grouping related events</a>.</li>
+<li><strong>Tags</strong> carry the activity type, object type and severity, for filtering and
+  monitors in Datadog. <code>rubrik_event:event</code> separates events from audits.</li>
+<li><strong>The link</strong> opens the event in Rubrik Security Cloud. See
+  <a href="../#linking-to-the-event-in-rubrik">Linking to the event in Rubrik</a>.</li>
+<li><strong>Error fields</strong> are empty when Rubrik has no diagnosis for the event. See
+  <a href="../#diagnosis-fields-are-not-always-populated">Diagnosis fields are not always populated</a>.</li>
+</ul>
+<h2 id="audit-template">Audit template</h2>
+<div class="language-json highlight"><span class="filename">datadog_audit_webhook_template.json</span><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="p">{</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="w">    </span><span class="nt">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="w">        </span><span class="nt">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"event"</span><span class="p">,</span>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="w">        </span><span class="nt">"attributes"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="w">            </span><span class="nt">"category"</span><span class="p">:</span><span class="w"> </span><span class="s2">"alert"</span><span class="p">,</span>
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="w">            </span><span class="nt">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"{{if .AuditType}}{{.AuditType}}{{else}}Audit{{end}} - {{.EventStatus}}"</span><span class="p">,</span>
+</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="w">            </span><span class="nt">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"{{.Message}}"</span><span class="p">,</span>
+</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a><span class="w">            </span><span class="nt">"timestamp"</span><span class="p">:</span><span class="w"> </span><span class="s2">"{{.Time.UTC.Format "</span><span class="mi">2006-01-02</span><span class="err">T</span><span class="mi">15</span><span class="p">:</span><span class="mi">04</span><span class="p">:</span><span class="mi">05</span><span class="err">Z</span><span class="mi">07</span><span class="p">:</span><span class="mi">00</span><span class="s2">"}}"</span><span class="p">,</span>
+</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a><span class="w">            </span><span class="nt">"tags"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+</span><span id="__span-1-10"><a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a><span class="w">                </span><span class="s2">"source:rubrik"</span><span class="p">,</span>
+</span><span id="__span-1-11"><a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a><span class="w">                </span><span class="s2">"rubrik_event:audit"</span><span class="p">,</span>
+</span><span id="__span-1-12"><a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a><span class="w">                </span><span class="s2">"rubrik_audit_type:{{if .AuditType}}{{.AuditType}}{{else}}unknown{{end}}"</span><span class="p">,</span>
+</span><span id="__span-1-13"><a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a><span class="w">                </span><span class="s2">"rubrik_severity:{{if .Severity}}{{.Severity}}{{else}}unknown{{end}}"</span>
+</span><span id="__span-1-14"><a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a><span class="w">            </span><span class="p">],</span>
+</span><span id="__span-1-15"><a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a><span class="w">            </span><span class="nt">"attributes"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-1-16"><a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a><span class="w">                </span><span class="nt">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"{{if eq .Severity "</span><span class="err">cri</span><span class="kc">t</span><span class="err">ical</span><span class="s2">"}}error{{else if eq .Severity "</span><span class="err">war</span><span class="kc">n</span><span class="err">i</span><span class="kc">n</span><span class="err">g</span><span class="s2">"}}warn{{else}}ok{{end}}"</span><span class="p">,</span>
+</span><span id="__span-1-17"><a id="__codelineno-1-17" name="__codelineno-1-17" href="#__codelineno-1-17"></a><span class="w">                </span><span class="nt">"priority"</span><span class="p">:</span><span class="w"> </span><span class="s2">"{{if eq .Severity "</span><span class="err">cri</span><span class="kc">t</span><span class="err">ical</span><span class="s2">"}}1{{else if eq .Severity "</span><span class="err">war</span><span class="kc">n</span><span class="err">i</span><span class="kc">n</span><span class="err">g</span><span class="s2">"}}3{{else}}5{{end}}"</span><span class="p">,</span>
+</span><span id="__span-1-18"><a id="__codelineno-1-18" name="__codelineno-1-18" href="#__codelineno-1-18"></a><span class="w">                </span><span class="nt">"custom"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-1-19"><a id="__codelineno-1-19" name="__codelineno-1-19" href="#__codelineno-1-19"></a><span class="w">                    </span><span class="nt">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"{{.UUID}}"</span><span class="p">,</span>
+</span><span id="__span-1-20"><a id="__codelineno-1-20" name="__codelineno-1-20" href="#__codelineno-1-20"></a><span class="w">                    </span><span class="nt">"audit_type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"{{.AuditType}}"</span><span class="p">,</span>
+</span><span id="__span-1-21"><a id="__codelineno-1-21" name="__codelineno-1-21" href="#__codelineno-1-21"></a><span class="w">                    </span><span class="nt">"severity"</span><span class="p">:</span><span class="w"> </span><span class="s2">"{{.Severity}}"</span><span class="p">,</span>
+</span><span id="__span-1-22"><a id="__codelineno-1-22" name="__codelineno-1-22" href="#__codelineno-1-22"></a><span class="w">                    </span><span class="nt">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"{{.EventStatus}}"</span><span class="p">,</span>
+</span><span id="__span-1-23"><a id="__codelineno-1-23" name="__codelineno-1-23" href="#__codelineno-1-23"></a><span class="w">                    </span><span class="nt">"user"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-1-24"><a id="__codelineno-1-24" name="__codelineno-1-24" href="#__codelineno-1-24"></a><span class="w">                        </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"{{.UserName}}"</span><span class="p">,</span>
+</span><span id="__span-1-25"><a id="__codelineno-1-25" name="__codelineno-1-25" href="#__codelineno-1-25"></a><span class="w">                        </span><span class="nt">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"{{.UserID}}"</span><span class="p">,</span>
+</span><span id="__span-1-26"><a id="__codelineno-1-26" name="__codelineno-1-26" href="#__codelineno-1-26"></a><span class="w">                        </span><span class="nt">"ip_address"</span><span class="p">:</span><span class="w"> </span><span class="s2">"{{.IPAddress}}"</span>
+</span><span id="__span-1-27"><a id="__codelineno-1-27" name="__codelineno-1-27" href="#__codelineno-1-27"></a><span class="w">                    </span><span class="p">},</span>
+</span><span id="__span-1-28"><a id="__codelineno-1-28" name="__codelineno-1-28" href="#__codelineno-1-28"></a><span class="w">                    </span><span class="nt">"object"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-1-29"><a id="__codelineno-1-29" name="__codelineno-1-29" href="#__codelineno-1-29"></a><span class="w">                        </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"{{.ObjectName}}"</span><span class="p">,</span>
+</span><span id="__span-1-30"><a id="__codelineno-1-30" name="__codelineno-1-30" href="#__codelineno-1-30"></a><span class="w">                        </span><span class="nt">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"{{.ObjectID}}"</span><span class="p">,</span>
+</span><span id="__span-1-31"><a id="__codelineno-1-31" name="__codelineno-1-31" href="#__codelineno-1-31"></a><span class="w">                        </span><span class="nt">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"{{.ObjectType}}"</span><span class="p">,</span>
+</span><span id="__span-1-32"><a id="__codelineno-1-32" name="__codelineno-1-32" href="#__codelineno-1-32"></a><span class="w">                        </span><span class="nt">"cluster"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-1-33"><a id="__codelineno-1-33" name="__codelineno-1-33" href="#__codelineno-1-33"></a><span class="w">                            </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"{{.ClusterName}}"</span><span class="p">,</span>
+</span><span id="__span-1-34"><a id="__codelineno-1-34" name="__codelineno-1-34" href="#__codelineno-1-34"></a><span class="w">                            </span><span class="nt">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"{{.ClusterUUID}}"</span>
+</span><span id="__span-1-35"><a id="__codelineno-1-35" name="__codelineno-1-35" href="#__codelineno-1-35"></a><span class="w">                        </span><span class="p">}</span>
+</span><span id="__span-1-36"><a id="__codelineno-1-36" name="__codelineno-1-36" href="#__codelineno-1-36"></a><span class="w">                    </span><span class="p">},</span>
+</span><span id="__span-1-37"><a id="__codelineno-1-37" name="__codelineno-1-37" href="#__codelineno-1-37"></a><span class="w">                    </span><span class="nt">"org_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"{{.OrgID}}"</span>
+</span><span id="__span-1-38"><a id="__codelineno-1-38" name="__codelineno-1-38" href="#__codelineno-1-38"></a><span class="w">                </span><span class="p">}</span>
+</span><span id="__span-1-39"><a id="__codelineno-1-39" name="__codelineno-1-39" href="#__codelineno-1-39"></a><span class="w">            </span><span class="p">}</span>
+</span><span id="__span-1-40"><a id="__codelineno-1-40" name="__codelineno-1-40" href="#__codelineno-1-40"></a><span class="w">        </span><span class="p">}</span>
+</span><span id="__span-1-41"><a id="__codelineno-1-41" name="__codelineno-1-41" href="#__codelineno-1-41"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-1-42"><a id="__codelineno-1-42" name="__codelineno-1-42" href="#__codelineno-1-42"></a><span class="p">}</span>
+</span></code></pre></div>
+<p>Audits use the same alert shape as events, so status and priority follow
+severity in the same way.</p>
+<ul>
+<li><strong>Title</strong> is the audit type and its status, such as <code>Login - Success</code>.
+  Audits with no type show as <code>Audit</code>.</li>
+<li><strong>Tags</strong> carry the audit type and severity, with <code>rubrik_event:audit</code> to
+  separate audits from events. Audits that have no type or severity are tagged
+  <code>unknown</code>.</li>
+<li><strong>User, IP address and object details</strong> are under <code>custom</code>. Not every audit
+  has them: system actions have no user, and account-level actions have no
+  object, so expect these fields to be empty for some audits.</li>
+<li><strong>No grouping key.</strong> Each audit is a separate record of who did what, so the
+  template does not set an <code>aggregation_key</code>.</li>
+</ul>
 
 
 
@@ -1126,7 +1423,7 @@ covers.</p>
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="October 28, 2026 15:29:25 UTC">2026-10-28</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="November 4, 2026 16:04:06 UTC">2026-11-04</span>
   </span>
 
     
