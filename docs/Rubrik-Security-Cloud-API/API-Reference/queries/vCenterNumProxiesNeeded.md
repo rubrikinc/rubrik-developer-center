@@ -1,6 +1,6 @@
 # vCenterNumProxiesNeeded
 
-Get the number of HotAdd proxies needed for the vCenter  Supported in v5.3+ Get the number of HotAdd proxies that need to be deployed to the vCenter to support the maximum number of ingest jobs.
+Get the number of HotAdd proxies needed for the vCenter Supported in v5.3+ Get the number of HotAdd proxies that need to be deployed to the vCenter to support the maximum number of ingest jobs.
 
 ## Arguments
 

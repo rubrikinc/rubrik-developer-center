@@ -1,6 +1,6 @@
 # downloadSapHanaSnapshotFromLocation
 
-Download a snapshot from the remote location  Supported in v8.1+ Initiates a job to download a snapshot from the specified location when the snapshot does not exist locally. The specified location can be replication target or archival location. If SLA Domain is not selected, the snapshot will be retained forever.
+Download a snapshot from the remote location Supported in v8.1+ Initiates a job to download a snapshot from the specified location when the snapshot does not exist locally. The specified location can be replication target or archival location. If SLA Domain is not selected, the snapshot will be retained forever.
 
 ## Arguments
 

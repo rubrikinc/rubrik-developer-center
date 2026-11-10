@@ -1,6 +1,6 @@
 # patchSapHanaSystem
 
-v5.3-v8.1: Update the SLA Domain for a SAP HANA system v9.0+: Update the system properties of the SAP HANA system  Supported in v5.3+ v5.3-v8.1: Update the SLA Domain that is configured for a SAP HANA system. v9.0+: Update the system properties for the SAP HANA system.
+v5.3-v8.1: Update the SLA Domain for a SAP HANA system v9.0+: Update the system properties of the SAP HANA system Supported in v5.3+ v5.3-v8.1: Update the SLA Domain that is configured for a SAP HANA system. v9.0+: Update the system properties for the SAP HANA system.
 
 ## Arguments
 

@@ -1,6 +1,6 @@
 # createOnDemandDb2Backup
 
-Create on demand database snapshot  Supported in v8.0+ Initiates a job to take an on demand, full snapshot of a specified Db2 database object. Use the GET /db2/db/request/{id} endpoint to monitor the progress of the job.
+Create on demand database snapshot Supported in v8.0+ Initiates a job to take an on demand, full snapshot of a specified Db2 database object. Use the GET /db2/db/request/{id} endpoint to monitor the progress of the job.
 
 ## Arguments
 

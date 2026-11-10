@@ -90,6 +90,7 @@ User audit object type.
 | K8S_CLUSTER | Kubernetes Cluster type. |
 | K8S_LABEL | Kubernetes label type. |
 | K8S_NAMESPACE_V2 | Kubernetes Virtual Machine namespace type. |
+| K8S_POSTGRES_DB_CLUSTER | Kubernetes-hosted PostgreSQL database cluster type. |
 | K8S_PROTECTION_SET | Kubernetes Protection Set type. |
 | K8S_VIRTUAL_MACHINE | Kubernetes Virtual Machine type. |
 | KMS_KEY_VAULT | KMS Key Vault. |
@@ -121,7 +122,7 @@ User audit object type.
 | NutanixVm | Nutanix virtual machine type. |
 | O365Calendar | Office 365 calendar type. |
 | O365Group | Office 365 Group type. |
-| O365Mailbox | Office 365  Mailbox type. |
+| O365Mailbox | Office 365 Mailbox type. |
 | O365Onedrive | Office 365 Onedrive type. |
 | O365Organization | Office 365 organization type. |
 | O365SharepointDrive | Office 365 SharePoint drive type. |

@@ -1,6 +1,6 @@
 # startInPlaceDataMasking
 
-Initiates an asynchronous job to permanently mask sensitive field values in a live Salesforce organization using the specified masking template.  Warning: This operation is irreversible and modifies production Salesforce data directly. It is distinct from restore-time masking, which masks a copy.  Requires the Salesforce data masking feature to be enabled.
+Initiates an asynchronous job to permanently mask sensitive field values in a live Salesforce organization using the specified masking template. Warning: This operation is irreversible and modifies production Salesforce data directly. It is distinct from restore-time masking, which masks a copy. Requires the Salesforce data masking feature to be enabled.
 
 ## Arguments
 

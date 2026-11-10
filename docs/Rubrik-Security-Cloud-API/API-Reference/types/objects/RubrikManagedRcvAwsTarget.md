@@ -26,6 +26,7 @@ Specific information for Rubrik Cloud Vault (RCV) AWS target created on Rubrik.
 | privateConnectivity | [RcvAwsPrivateConnectivityEndpoints](RcvAwsPrivateConnectivityEndpoints.md) | VPC interface endpoints configured for private connectivity. |
 | proxySettings | [ProxySettings](ProxySettings.md) | Proxy configuration used by the Rubrik cluster to reach this Rubrik Cloud Vault AWS location. |
 | rcvConversion | [[RcvConversionType](RcvConversionType.md)!] | List of conversions for this RCV location. |
+| rcvResourceCreationReadiness | [RcvResourceCreationReadiness](../enums/RcvResourceCreationReadiness.md)! | Indicates the provisioning state of the cloud resources for this Rubrik Cloud Vault (RCV) archival target. |
 | readerRetrievalMethod | [ReaderRetrievalMethod](../enums/ReaderRetrievalMethod.md) | The retrieval method of the reader target. |
 | redundancy | [RcvRedundancy](../enums/RcvRedundancy.md)! | Redundancy for RCV AWS target. |
 | region | [RcsRegionEnumType](../enums/RcsRegionEnumType.md)! | Region of RCV AWS target. |

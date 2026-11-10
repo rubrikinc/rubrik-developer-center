@@ -1,6 +1,6 @@
 # exportPureStorageProtectionGroupSnapshot
 
-Export a Pure Storage protection group snapshot.  Supported in v9.6 Export a Pure Storage protection group from a snapshot.
+Export a Pure Storage protection group snapshot. Supported in v9.6 Export a Pure Storage protection group from a snapshot.
 
 ## Arguments
 

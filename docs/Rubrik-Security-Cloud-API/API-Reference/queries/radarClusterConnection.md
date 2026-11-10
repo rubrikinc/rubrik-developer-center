@@ -1,6 +1,6 @@
 # radarClusterConnection
 
-*No description available.*
+Returns a paginated list of Rubrik CDM clusters.
 
 ## Arguments
 

@@ -1,6 +1,6 @@
 # addMongoSource
 
-v8.1-v9.2: Add a new MongoDB source v9.3+: Add a new MongoDB source for logical backup and recovery  Supported in v8.1+ v8.1-v9.2: Adds a new MongoDB source to the Rubrik Cluster. v9.3+: Adds a new MongoDB source to the Rubrik Cluster which would be managed using logical backup and recovery.
+v8.1-v9.2: Add a new MongoDB source v9.3+: Add a new MongoDB source for logical backup and recovery Supported in v8.1+ v8.1-v9.2: Adds a new MongoDB source to the Rubrik Cluster. v9.3+: Adds a new MongoDB source to the Rubrik Cluster which would be managed using logical backup and recovery.
 
 ## Arguments
 

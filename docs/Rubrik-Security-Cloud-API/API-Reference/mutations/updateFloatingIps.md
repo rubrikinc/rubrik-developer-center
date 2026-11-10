@@ -1,6 +1,6 @@
 # updateFloatingIps
 
-Modify the list of cluster IPs  Supported in v5.0+ Modify the list of cluster IPs.
+Modify the list of cluster IPs Supported in v5.0+ Modify the list of cluster IPs.
 
 ## Arguments
 

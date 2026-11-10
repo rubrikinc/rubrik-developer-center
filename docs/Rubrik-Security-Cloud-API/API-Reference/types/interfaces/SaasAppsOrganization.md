@@ -55,5 +55,6 @@ A SaaS app organization.
 - [AtlassianSite](../objects/AtlassianSite.md)
 - [Dynamics365Organization](../objects/Dynamics365Organization.md)
 - [GoogleWorkspaceOrg](../objects/GoogleWorkspaceOrg.md)
+- [M365ConfigsOrg](../objects/M365ConfigsOrg.md)
 - [PowerPlatformEnvironment](../objects/PowerPlatformEnvironment.md)
 - [SalesforceOrganization](../objects/SalesforceOrganization.md)

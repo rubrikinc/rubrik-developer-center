@@ -1,6 +1,6 @@
 # patchOpsManagerManagedMongoSource
 
-v9.2: Edit a MongoDB source v9.3+: Edit a MongoDB source managed by Ops Manager  Supported in v9.2+ v9.2: Edits the properties of a MongoDB source. Name, group ID and cluster ID cannot be modified for a source once added. v9.3+: Edits the properties of a MongoDB source managed by Ops Manager. Source name, Group / Project ID, Cluster / Deployment ID, and the Ops Manager host cannot be modified for a source once added.
+v9.2: Edit a MongoDB source v9.3+: Edit a MongoDB source managed by Ops Manager Supported in v9.2+ v9.2: Edits the properties of a MongoDB source. Name, group ID and cluster ID cannot be modified for a source once added. v9.3+: Edits the properties of a MongoDB source managed by Ops Manager. Source name, Group / Project ID, Cluster / Deployment ID, and the Ops Manager host cannot be modified for a source once added.
 
 ## Arguments
 

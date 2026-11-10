@@ -7,4 +7,4 @@ CDP performance dashboard sorting parameters.
 | Field | Type | Description |
 |-------|------|-------------|
 | sortOrder | [SortOrder](../enums/SortOrder.md) | Sorts by order. |
-| type | [CdpPerfDashboardSortType](../enums/CdpPerfDashboardSortType.md) |  |
+| type | [CdpPerfDashboardSortType](../enums/CdpPerfDashboardSortType.md) | Sort type. |

@@ -7,4 +7,4 @@ Legal hold sorting parameters.
 | Field | Type | Description |
 |-------|------|-------------|
 | sortOrder | [SortOrder](../enums/SortOrder.md) | Sorts by order. |
-| type | [LegalHoldSortType](../enums/LegalHoldSortType.md) |  |
+| type | [LegalHoldSortType](../enums/LegalHoldSortType.md) | Sort type. |

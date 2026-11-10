@@ -1,6 +1,6 @@
 # agentDeploymentSetting
 
-Get Rubrik Backup Service deployment setting  Supported in v5.0+ Retrieve the global setting for automatic deployment of the Rubrik Backup Service to virtual machines.
+Get Rubrik Backup Service deployment setting Supported in v5.0+ Retrieve the global setting for automatic deployment of the Rubrik Backup Service to virtual machines.
 
 ## Arguments
 

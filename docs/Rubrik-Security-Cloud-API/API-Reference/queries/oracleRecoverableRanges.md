@@ -1,6 +1,6 @@
 # oracleRecoverableRanges
 
-Get recoverable ranges of a Oracle database  Supported in v5.0+ Retrieve the recoverable ranges for a specified Oracle database. A begin and/or end timestamp can be provided to retrieve only the ranges that fall within the window.
+Get recoverable ranges of a Oracle database Supported in v5.0+ Retrieve the recoverable ranges for a specified Oracle database. A begin and/or end timestamp can be provided to retrieve only the ranges that fall within the window.
 
 ## Arguments
 

@@ -1,6 +1,6 @@
 # exportManagedVolumeSnapshot
 
-Create a request to export a snapshot  Supported in v5.0+ Export a managed volume snapshot as a share.
+Create a request to export a snapshot Supported in v5.0+ Export a managed volume snapshot as a share.
 
 ## Arguments
 

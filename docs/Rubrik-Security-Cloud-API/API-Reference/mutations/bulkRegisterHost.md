@@ -1,6 +1,6 @@
 # bulkRegisterHost
 
-Register hosts  Supported in v5.0+ Register hosts with Rubrik clusters.
+Register hosts Supported in v5.0+ Register hosts with Rubrik clusters.
 
 ## Arguments
 

@@ -1,6 +1,6 @@
 # bulkUpdateNasShares
 
-Update properties of NAS shares  Supported in v8.1+ Update the properties of the specified NAS shares.
+Update properties of NAS shares Supported in v8.1+ Update the properties of the specified NAS shares.
 
 ## Arguments
 

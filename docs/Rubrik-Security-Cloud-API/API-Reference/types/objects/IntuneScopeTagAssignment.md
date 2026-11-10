@@ -13,7 +13,7 @@ Intune scope tag assignment.
 | id | String! | ID of the scope tag assignment. |
 | scopeTagId | String! | ID of the scope tag. |
 | scopeTagName | String! | Name of the scope tag. |
-| type | [IntunePolicyAssignmentType](../enums/IntunePolicyAssignmentType.md)! |  |
+| type | [IntunePolicyAssignmentType](../enums/IntunePolicyAssignmentType.md)! | Type of the assignment. |
 
 ## Used By
 

@@ -1,6 +1,6 @@
 # hostDiagnosis
 
-Get host availability statuses  Supported in v5.0+ Retrieve the availability status for each host registered with a specified Rubrik CDM instance.
+Get host availability statuses Supported in v5.0+ Retrieve the availability status for each host registered with a specified Rubrik CDM instance.
 
 ## Arguments
 

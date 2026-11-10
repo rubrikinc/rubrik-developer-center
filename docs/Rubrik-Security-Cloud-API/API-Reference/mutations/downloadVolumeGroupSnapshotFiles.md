@@ -1,6 +1,6 @@
 # downloadVolumeGroupSnapshotFiles
 
-Download files from Volume Group snapshot  Supported in v5.0+ Create a download files request.
+Download files from Volume Group snapshot Supported in v5.0+ Create a download files request.
 
 ## Arguments
 

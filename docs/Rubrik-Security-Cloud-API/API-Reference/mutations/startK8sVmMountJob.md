@@ -1,6 +1,6 @@
 # startK8sVmMountJob
 
-Create a job to live mount a Kubernetes virtual machine snapshot  Supported in v9.4+ Initiate a job to live mount a Kubernetes virtual machine from a snapshot to a target Kubernetes cluster and namespace.
+Create a job to live mount a Kubernetes virtual machine snapshot Supported in v9.4+ Initiate a job to live mount a Kubernetes virtual machine from a snapshot to a target Kubernetes cluster and namespace.
 
 ## Arguments
 

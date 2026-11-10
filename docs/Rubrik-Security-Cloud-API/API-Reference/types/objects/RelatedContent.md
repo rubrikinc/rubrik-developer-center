@@ -10,7 +10,7 @@ A snippet of the related help topic.
 | id | String! | ID of the related help topic. |
 | link | [URL](../scalars/URL.md) | URL pointing to the related help topic. |
 | title | String! | Title of the related help topic. |
-| type | [ProductDocumentationType](../enums/ProductDocumentationType.md)! |  |
+| type | [ProductDocumentationType](../enums/ProductDocumentationType.md)! | Type of the related help topic. |
 
 ## Used By
 

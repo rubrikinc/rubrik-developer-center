@@ -1,6 +1,6 @@
 # deleteNutanixMountV1
 
-Remove a Live Mount of a Nutanix virtual machine snapshot  Supported in v6.0+ Initiates a request to remove a Live Mount of a Nutanix virtual machine snapshot identified by the ID of the Live Mount.
+Remove a Live Mount of a Nutanix virtual machine snapshot Supported in v6.0+ Initiates a request to remove a Live Mount of a Nutanix virtual machine snapshot identified by the ID of the Live Mount.
 
 ## Arguments
 

@@ -8,7 +8,7 @@ List of matching objects.
 |-------|------|-------------|
 | dnt | Int! | Required. Supported in v9.1+ The Distinguished Name Tag (DNT) of the Active Directory object. |
 | name | String! | Required. Supported in v9.1+ Display name of the Active Directory object. |
-| objectType | [ActiveDirectoryObjectType](../enums/ActiveDirectoryObjectType.md)! |  |
+| objectType | [ActiveDirectoryObjectType](../enums/ActiveDirectoryObjectType.md)! | Type of the Active Directory object. |
 | versions | [[ActiveDirectorySearchVersions](ActiveDirectorySearchVersions.md)!]! | Required. Supported in v9.1+ Resultant versions of the objects with that name. |
 
 ## Used By

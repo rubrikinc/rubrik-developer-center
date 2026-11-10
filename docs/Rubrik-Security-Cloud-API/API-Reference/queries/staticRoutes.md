@@ -1,6 +1,6 @@
 # staticRoutes
 
-Get all existing route configs  Supported in v5.0+ Lists all existing route configs.
+Get all existing route configs Supported in v5.0+ Lists all existing route configs.
 
 ## Arguments
 

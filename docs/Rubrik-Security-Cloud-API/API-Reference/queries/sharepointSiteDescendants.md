@@ -1,6 +1,6 @@
 # sharepointSiteDescendants
 
-Browse site and descendants objects.  BrowseSharepointSite returns SharePoint descendant objects directly under a site (or a synthetic "root" entry when site_id is unset) for a single snapshot. Mirrors the legacy sharepointSiteDescendants resolver: rejects expired snapshots, drops is_excluded_from_protection items, and -- when site_id is unset -- synthesizes a single root descendant decorated with quarantine information using the snapshot-quarantine and snapshot-sequence lookups.
+Browse site and descendants objects. BrowseSharepointSite returns SharePoint descendant objects directly under a site (or a synthetic "root" entry when site_id is unset) for a single snapshot. Mirrors the legacy sharepointSiteDescendants resolver: rejects expired snapshots, drops is_excluded_from_protection items, and -- when site_id is unset -- synthesizes a single root descendant decorated with quarantine information using the snapshot-quarantine and snapshot-sequence lookups.
 
 ## Arguments
 

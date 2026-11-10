@@ -1,6 +1,6 @@
 # recoverSapHanaDatabaseToFullBackup
 
-Recover SAP HANA database to the full backup  Supported in v9.4+ Recover the SAP HANA database to the provided full backup.
+Recover SAP HANA database to the full backup Supported in v9.4+ Recover the SAP HANA database to the provided full backup.
 
 ## Arguments
 

@@ -1,6 +1,6 @@
 # updateSnmpConfig
 
-Update SNMP configuration  Supported in v5.0+ Update the SNMP configuration for a specified Rubrik cluster.
+Update SNMP configuration Supported in v5.0+ Update the SNMP configuration for a specified Rubrik cluster.
 
 ## Arguments
 

@@ -13,7 +13,7 @@ Returns objects that match the specifications of a configured group.
 | orgId *(required)* | [UUID](../types/scalars/UUID.md)! | Org UUID. |
 | wildcard | String | A wildcard pattern that group members' names or URLs must match. |
 | pdls *(required)* | [String!]! | A list of preferred data locations that group members must match. |
-| workloadHierarchy | [WorkloadLevelHierarchy](../types/enums/WorkloadLevelHierarchy.md) | Each enumeration value represents the hierarchy of a specific workload type for RBAC and SLA Domain assignments.  A value of 'None' represents the hierarchy of all workload types. |
+| workloadHierarchy | [WorkloadLevelHierarchy](../types/enums/WorkloadLevelHierarchy.md) | Each enumeration value represents the hierarchy of a specific workload type for RBAC and SLA Domain assignments. A value of 'None' represents the hierarchy of all workload types. |
 | groupFilterAttributes | [[GroupFilterAttribute](../types/inputs/GroupFilterAttribute.md)!] | A list of attributes to filter out group members. |
 
 ## Returns

@@ -30,6 +30,7 @@ Specific information for Rubrik Cloud Vault (RCV) Azure target created on Rubrik
 | privateEndpointConnections | [[PrivateEndpointConnection](PrivateEndpointConnection.md)!] | Private endpoint connections for this location. |
 | proxySettings | [ProxySettings](ProxySettings.md) | Proxy configuration used by the Rubrik cluster to reach this Rubrik Cloud Vault Azure location. |
 | rcvConversion | [[RcvConversionType](RcvConversionType.md)!] | List of conversions for this RCV location. |
+| rcvResourceCreationReadiness | [RcvResourceCreationReadiness](../enums/RcvResourceCreationReadiness.md)! | Indicates the provisioning state of the cloud resources for this Rubrik Cloud Vault (RCV) archival target. |
 | readerRetrievalMethod | [ReaderRetrievalMethod](../enums/ReaderRetrievalMethod.md) | The retrieval method of the reader target. |
 | redundancy | [RcvRedundancy](../enums/RcvRedundancy.md)! | Redundancy for RCV Azure target. |
 | redundancyState | [RcvRedundancyState](../enums/RcvRedundancyState.md)! | Redundancy state for RCV Azure target. |

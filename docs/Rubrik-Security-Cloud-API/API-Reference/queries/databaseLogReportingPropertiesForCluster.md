@@ -1,6 +1,6 @@
 # databaseLogReportingPropertiesForCluster
 
-Get the database log backup report properties  Supported in v5.3+ Get the properties for the database (SQL and Oracle) log backup delay email notification creation. The properties are logDelayThresholdInMin and logDelayNotificationFrequencyInMin.
+Get the database log backup report properties Supported in v5.3+ Get the properties for the database (SQL and Oracle) log backup delay email notification creation. The properties are logDelayThresholdInMin and logDelayNotificationFrequencyInMin.
 
 ## Arguments
 

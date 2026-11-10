@@ -27,14 +27,19 @@ All reporting attributes.
 | CLUSTER_LOCATION | The cluster location attribute in the report. |
 | CLUSTER_TYPE | The cluster type attribute in the report. |
 | COMPLIANCE_STATUS | The compliance status attribute in the report. |
+| COVERAGE | Splits the objects in scope of the Blast Radius report into those with and without sensitive data. Used by the report's Coverage chart. |
 | CURRENT_REPLICATION_TASK_STATUS | The current replication task status in the report. |
+| DATA_CATEGORY | The data category of a data type in the Blast Radius report. |
+| DATA_DISCOVERY_SCAN_STATUS | Whether a Blast Radius object has been scanned for sensitive data. |
 | DATA_SOURCE | The data source attribute in the report. |
+| DATA_TYPE | The data type of a Blast Radius Data Types row. |
 | DIRECT_ARCHIVE | Specifies if the data is archived directly to storage. |
 | END_TIME | The end time in the report. |
 | FAILURE_REASON | The reason for task failure in the report. |
 | FOREST_NAME | The Active Directory forest name. |
 | FOREST_RECOVERY_STATUS | Status of the forest recovery. |
 | IOC_TYPE | The threat monitoring ioc type in the report. |
+| LAST_SCANNED_TIME | When a Blast Radius object was last scanned for sensitive data. |
 | LAST_SUCCESSFUL_BACKUP | The last successful backup in the report. |
 | LATEST_ARCHIVAL_SNAPSHOT | The latest archival snapshot in the report. |
 | LATEST_LOCAL_SNAPSHOT | The latest local snapshot in the report. |
@@ -60,6 +65,7 @@ All reporting attributes.
 | RESOURCE_GROUP | The cloud resource group attribute in the report (Azure resource group). |
 | RISK_CATEGORY | Category of the policy. |
 | RISK_SEVERITY | Severity of the policy. |
+| SENSITIVITY_LEVEL | The sensitivity level of a Blast Radius data type or object. |
 | SEVERITY | The severity attribute in the report. |
 | SLA | The SLA Domain attribute in the report. |
 | SNAPSHOT_CONSISTENCY | Specifies the reliability and state of the snapshot for recovery. |

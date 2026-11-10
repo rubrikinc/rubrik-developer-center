@@ -1,6 +1,6 @@
 # updateK8sProtectionSet
 
-Update a Kubernetes protection set  Supported in v9.1+ Updates a Kubernetes protection set with the specified properties.
+Update a Kubernetes protection set Supported in v9.1+ Updates a Kubernetes protection set with the specified properties.
 
 ## Arguments
 

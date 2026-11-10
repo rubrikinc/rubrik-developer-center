@@ -29,6 +29,7 @@ GetAwsNativeS3Bucket returns the hierarchy details for a single AWS native S3 bu
         id
         isExocomputeConfigured
         isInfrastructureAlertsEnabled
+        isInfrastructureAlertsRegionConnected
         isOnboarding
         isProtectable
         isRelic

@@ -1,6 +1,6 @@
 # addClusterRoute
 
-Add a new route config to all hosts  Supported in v5.0+ Add a new route config to all hosts.
+Add a new route config to all hosts Supported in v5.0+ Add a new route config to all hosts.
 
 ## Arguments
 

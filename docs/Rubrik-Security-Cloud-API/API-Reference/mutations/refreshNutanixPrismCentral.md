@@ -1,6 +1,6 @@
 # refreshNutanixPrismCentral
 
-Refresh Nutanix Prism Central metadata  Supported in v9.0+ Initiates a job to refresh the metadata for the specified Nutanix Prism Central and all its associated clusters.
+Refresh Nutanix Prism Central metadata Supported in v9.0+ Initiates a job to refresh the metadata for the specified Nutanix Prism Central and all its associated clusters.
 
 ## Arguments
 

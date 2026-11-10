@@ -65,6 +65,9 @@ A cloud-managed snapshot type that extends the generic snapshot with additional 
 - [AnthropicClaudeChatWorkload.newestIndexedSnapshot](AnthropicClaudeChatWorkload.md)
 - [AnthropicClaudeChatWorkload.newestSnapshot](AnthropicClaudeChatWorkload.md)
 - [AnthropicClaudeChatWorkload.oldestSnapshot](AnthropicClaudeChatWorkload.md)
+- [AnthropicOrgLocalSessions.newestIndexedSnapshot](AnthropicOrgLocalSessions.md)
+- [AnthropicOrgLocalSessions.newestSnapshot](AnthropicOrgLocalSessions.md)
+- [AnthropicOrgLocalSessions.oldestSnapshot](AnthropicOrgLocalSessions.md)
 - [AwsNativeConfig.newestIndexedSnapshot](AwsNativeConfig.md)
 - [AwsNativeConfig.newestSnapshot](AwsNativeConfig.md)
 - [AwsNativeConfig.oldestSnapshot](AwsNativeConfig.md)
@@ -89,7 +92,4 @@ A cloud-managed snapshot type that extends the generic snapshot with additional 
 - [AzureCosmosNosqlContainer.newestIndexedSnapshot](AzureCosmosNosqlContainer.md)
 - [AzureCosmosNosqlContainer.newestSnapshot](AzureCosmosNosqlContainer.md)
 - [AzureCosmosNosqlContainer.oldestSnapshot](AzureCosmosNosqlContainer.md)
-- [AzureDevOpsRepository.newestIndexedSnapshot](AzureDevOpsRepository.md)
-- [AzureDevOpsRepository.newestSnapshot](AzureDevOpsRepository.md)
-- [AzureDevOpsRepository.oldestSnapshot](AzureDevOpsRepository.md)
-- *…and 138 more*
+- *…and 141 more*

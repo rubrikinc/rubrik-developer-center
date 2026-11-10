@@ -1,6 +1,6 @@
 # nutanixClusterNetworks
 
-Get list of networks on this cluster  Supported in v8.1+ Retrieves the list of networks by querying the Nutanix cluster. The list of networks is used for restore purposes.
+Get list of networks on this cluster Supported in v8.1+ Retrieves the list of networks by querying the Nutanix cluster. The list of networks is used for restore purposes.
 
 ## Arguments
 

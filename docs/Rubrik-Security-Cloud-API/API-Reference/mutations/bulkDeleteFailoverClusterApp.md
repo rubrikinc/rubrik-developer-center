@@ -1,6 +1,6 @@
 # bulkDeleteFailoverClusterApp
 
-Delete failover cluster applications  Supported in v5.3+ Delete failover cluster applications from Rubrik cluster.
+Delete failover cluster applications Supported in v5.3+ Delete failover cluster applications from Rubrik cluster.
 
 ## Arguments
 

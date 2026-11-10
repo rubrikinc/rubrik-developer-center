@@ -24,6 +24,7 @@ Represents pause status of an object.
 - [AnthropicChildOrg.objectPauseStatus](AnthropicChildOrg.md)
 - [AnthropicClaudeChatWorkload.objectPauseStatus](AnthropicClaudeChatWorkload.md)
 - [AnthropicOrg.objectPauseStatus](AnthropicOrg.md)
+- [AnthropicOrgLocalSessions.objectPauseStatus](AnthropicOrgLocalSessions.md)
 - [AnthropicOrgSetting.objectPauseStatus](AnthropicOrgSetting.md)
 - [AnthropicUser.objectPauseStatus](AnthropicUser.md)
 - [AtlassianSite.objectPauseStatus](AtlassianSite.md)
@@ -43,5 +44,4 @@ Represents pause status of an object.
 - [AzureCosmosNosqlContainer.objectPauseStatus](AzureCosmosNosqlContainer.md)
 - [AzureCosmosNosqlDatabase.objectPauseStatus](AzureCosmosNosqlDatabase.md)
 - [AzureDevOpsOrganization.objectPauseStatus](AzureDevOpsOrganization.md)
-- [AzureDevOpsProject.objectPauseStatus](AzureDevOpsProject.md)
-- *…and 379 more*
+- *…and 386 more*

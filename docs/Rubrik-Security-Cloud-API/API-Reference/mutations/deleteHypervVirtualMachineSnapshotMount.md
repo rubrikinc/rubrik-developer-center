@@ -1,6 +1,6 @@
 # deleteHypervVirtualMachineSnapshotMount
 
-Requst to delete a live mount  Supported in v5.0+ Create a request to delete a live mount.
+Requst to delete a live mount Supported in v5.0+ Create a request to delete a live mount.
 
 ## Arguments
 

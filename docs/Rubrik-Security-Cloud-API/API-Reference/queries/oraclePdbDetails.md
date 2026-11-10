@@ -1,6 +1,6 @@
 # oraclePdbDetails
 
-Get PDB details  Supported in v8.0+ Retrieves information about available pluggable databases (PDBs) for a given recovery point.
+Get PDB details Supported in v8.0+ Retrieves information about available pluggable databases (PDBs) for a given recovery point.
 
 ## Arguments
 

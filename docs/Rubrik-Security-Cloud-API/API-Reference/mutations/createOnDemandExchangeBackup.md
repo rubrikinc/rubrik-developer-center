@@ -1,6 +1,6 @@
 # createOnDemandExchangeBackup
 
-Take an on-demand backup of a Microsoft Exchange database  Supported in v8.0+ Takes an on-demand backup of a Microsoft Exchange database. The forceFullSnapshot property can be set to true to force a full snapshot. To check the result of the request, poll /exchange/request/{id}.
+Take an on-demand backup of a Microsoft Exchange database Supported in v8.0+ Takes an on-demand backup of a Microsoft Exchange database. The forceFullSnapshot property can be set to true to force a full snapshot. To check the result of the request, poll /exchange/request/{id}.
 
 ## Arguments
 

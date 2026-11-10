@@ -1,6 +1,6 @@
 # inplaceExportNutanixSnapshot
 
-In-place export a snapshot to a Nutanix virtual machine  Supported in v9.3+ Restores the Nutanix virtual machine to the specified snapshot in-place.
+In-place export a snapshot to a Nutanix virtual machine Supported in v9.3+ Restores the Nutanix virtual machine to the specified snapshot in-place.
 
 ## Arguments
 

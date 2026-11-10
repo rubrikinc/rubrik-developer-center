@@ -6,4 +6,4 @@ Input for updating configuration of multiple SAP HANA systems.
 
 | Field | Type | Description |
 |-------|------|-------------|
-| input | [BulkUpdateSystemConfigInput](BulkUpdateSystemConfigInput.md)! |  |
+| input | [BulkUpdateSystemConfigInput](BulkUpdateSystemConfigInput.md)! | Required. Config for bulk update. |

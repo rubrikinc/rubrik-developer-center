@@ -82,3 +82,4 @@ An Azure Native Subscription. Refers to the logical entity that provides entitle
 
 - [AzureNativeResourceGroup.azureSubscription](AzureNativeResourceGroup.md)
 - [AzureNativeResourceGroup.subscription](AzureNativeResourceGroup.md)
+- [BlueprintAzureLocation.subscription](BlueprintAzureLocation.md)

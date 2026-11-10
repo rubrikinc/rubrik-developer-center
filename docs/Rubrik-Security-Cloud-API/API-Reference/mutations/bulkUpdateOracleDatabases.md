@@ -1,6 +1,6 @@
 # bulkUpdateOracleDatabases
 
-Update Oracle Databases  Supported in v5.2+ Update the properties of the objects that represent the specified Oracle Databases.
+Update Oracle Databases Supported in v5.2+ Update the properties of the objects that represent the specified Oracle Databases.
 
 ## Arguments
 

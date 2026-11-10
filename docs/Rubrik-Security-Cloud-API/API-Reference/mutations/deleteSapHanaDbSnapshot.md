@@ -1,6 +1,6 @@
 # deleteSapHanaDbSnapshot
 
-Delete a particular full snapshot of a SAP HANA database  Supported in v5.3+ Initiates a request to delete a particular full snapshot of a SAP HANA database. If the log retention period for the database is still in effect, the snapshot will be deleted when the log retention period ends.
+Delete a particular full snapshot of a SAP HANA database Supported in v5.3+ Initiates a request to delete a particular full snapshot of a SAP HANA database. If the log retention period for the database is still in effect, the snapshot will be deleted when the log retention period ends.
 
 ## Arguments
 

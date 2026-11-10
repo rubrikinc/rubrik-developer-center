@@ -1,6 +1,6 @@
 # restoreFilesNutanixSnapshot
 
-Restore files  Supported in v5.0+ Restore files from a snapshot to the source Nutanix virtual machine.
+Restore files Supported in v5.0+ Restore files from a snapshot to the source Nutanix virtual machine.
 
 ## Arguments
 

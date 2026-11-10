@@ -1,6 +1,6 @@
 # ActivityEntry
 
-This struct represents an activity.  IMPORTANT: When adding new fields here, consider whether they should also appear in webhook payloads. If so, update IdentityActivityWebhookMessage in activityauditor/proto/identity_activity_webhook_message.proto as well.
+This struct represents an activity. IMPORTANT: When adding new fields here, consider whether they should also appear in webhook payloads. If so, update IdentityActivityWebhookMessage in activityauditor/proto/identity_activity_webhook_message.proto as well.
 
 ## Fields
 

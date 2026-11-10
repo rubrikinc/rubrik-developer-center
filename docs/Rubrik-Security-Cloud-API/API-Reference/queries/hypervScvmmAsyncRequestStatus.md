@@ -1,6 +1,6 @@
 # hypervScvmmAsyncRequestStatus
 
-Get Hyper-V SCVMM async request  Supported in v5.0+ Get details about a Hyper-V SCVMM related async request.
+Get Hyper-V SCVMM async request Supported in v5.0+ Get details about a Hyper-V SCVMM related async request.
 
 ## Arguments
 

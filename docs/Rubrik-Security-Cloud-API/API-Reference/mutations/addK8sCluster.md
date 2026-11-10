@@ -1,6 +1,6 @@
 # addK8sCluster
 
-Add a Kubernetes cluster  Supported in v9.0+ Adds a Kubernetes cluster to the Rubrik cluster.
+Add a Kubernetes cluster Supported in v9.0+ Adds a Kubernetes cluster to the Rubrik cluster.
 
 ## Arguments
 
@@ -84,10 +84,10 @@ Add a Kubernetes cluster  Supported in v9.0+ Adds a Kubernetes cluster to the Ru
             "isK8SError": true,
             "serviceAccountName": "example-string"
           },
-          "kuprServerProxyConfig": {
-            "cert": "example-string",
-            "ipAddress": "example-string",
-            "port": 0
+          "discoveryScope": {
+            "namespaces": [
+              "example-string"
+            ]
           }
         }
       }

@@ -7,4 +7,4 @@ Unmanaged objects sorting parameters.
 | Field | Type | Description |
 |-------|------|-------------|
 | sortOrder | [SortOrder](../enums/SortOrder.md) | Sorts by order. |
-| type | [UnmanagedObjectsSortType](../enums/UnmanagedObjectsSortType.md) |  |
+| type | [UnmanagedObjectsSortType](../enums/UnmanagedObjectsSortType.md) | Sort type. |

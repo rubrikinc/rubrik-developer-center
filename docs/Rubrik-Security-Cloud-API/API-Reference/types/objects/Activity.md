@@ -18,4 +18,4 @@ An activity that occurred on RSC or a Rubrik cluster.
 | severity | [ActivitySeverityEnum](../enums/ActivitySeverityEnum.md)! | The severity of this activity. |
 | status | [ActivityStatusEnum](../enums/ActivityStatusEnum.md)! | The status of this activity. |
 | time | [DateTime](../scalars/DateTime.md)! | The time at which this activity occurred. |
-| type | [ActivityTypeEnum](../enums/ActivityTypeEnum.md)! |  |
+| type | [ActivityTypeEnum](../enums/ActivityTypeEnum.md)! | The type of this activity. |

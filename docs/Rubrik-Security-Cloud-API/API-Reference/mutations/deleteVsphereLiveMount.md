@@ -1,6 +1,6 @@
 # deleteVsphereLiveMount
 
-Delete a Live Mount VM  Supported in v5.0+ Create a request to delete a Live Mount virtual machine.
+Delete a Live Mount VM Supported in v5.0+ Create a request to delete a Live Mount virtual machine.
 
 ## Arguments
 

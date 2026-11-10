@@ -1,6 +1,6 @@
 # addOpsManagerManagedMongoSource
 
-Add a new MongoDB source managed by Ops Manager  Supported in v9.2+ Adds a new MongoDB source which is managed by Ops Manager to the Rubrik Cluster.
+Add a new MongoDB source managed by Ops Manager Supported in v9.2+ Adds a new MongoDB source which is managed by Ops Manager to the Rubrik Cluster.
 
 ## Arguments
 

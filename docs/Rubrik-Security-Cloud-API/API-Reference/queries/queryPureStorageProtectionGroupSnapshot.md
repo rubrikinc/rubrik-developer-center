@@ -1,6 +1,6 @@
 # queryPureStorageProtectionGroupSnapshot
 
-Get list of snapshots of a Pure Storage protection group  Supported in v9.6+ Retrieve summary information for the snapshots of a Pure Storage protection group.
+Get list of snapshots of a Pure Storage protection group Supported in v9.6+ Retrieve summary information for the snapshots of a Pure Storage protection group.
 
 ## Arguments
 

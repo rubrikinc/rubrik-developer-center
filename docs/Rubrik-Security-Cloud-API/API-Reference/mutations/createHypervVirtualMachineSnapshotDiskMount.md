@@ -1,6 +1,6 @@
 # createHypervVirtualMachineSnapshotDiskMount
 
-Attaching disks from a snapshot to an existing virtual machine  Supported in v9.1+ Requests a Live Mount to attach disks to an existing virtual machine.
+Attaching disks from a snapshot to an existing virtual machine Supported in v9.1+ Requests a Live Mount to attach disks to an existing virtual machine.
 
 ## Arguments
 

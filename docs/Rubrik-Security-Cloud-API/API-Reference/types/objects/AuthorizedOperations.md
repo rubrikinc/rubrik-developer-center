@@ -19,6 +19,7 @@ Authorized actions permitted on a single object.
 **Referenced by**
 
 - [CdmUpgradeInfo.authorizedOperations](CdmUpgradeInfo.md)
+- [CloudNativeApplication.authorizedOperations](CloudNativeApplication.md)
 - [Cluster.authorizedOperations](Cluster.md)
 - [VolumeGroupLiveMount.authorizedOperations](VolumeGroupLiveMount.md)
 - [VsphereMount.authorizedOperations](VsphereMount.md)

@@ -1,6 +1,6 @@
 # supportBundle
 
-Get the status of generating support bundle  Supported in v5.0+ Given a request ID for generate support bundle request, provide the status of the request. If the request is successful, the download link for the support bundle would be included.
+Get the status of generating support bundle Supported in v5.0+ Given a request ID for generate support bundle request, provide the status of the request. If the request is successful, the download link for the support bundle would be included.
 
 ## Arguments
 

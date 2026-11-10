@@ -8,4 +8,4 @@ Input for creating manual target mapping.
 |-------|------|-------------|
 | archivalLocationClusterMappings | [[TargetToClusterMapping](TargetToClusterMapping.md)!] | Field for specifying target and Rubrik cluster mapping. |
 | name | String | Field for specifying name of the target mapping. |
-| type | [TargetType](../enums/TargetType.md) |  |
+| type | [TargetType](../enums/TargetType.md) | Field for specifying target type of the target mapping. |

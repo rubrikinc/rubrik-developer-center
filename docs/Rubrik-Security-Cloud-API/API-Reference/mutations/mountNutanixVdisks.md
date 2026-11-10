@@ -1,6 +1,6 @@
 # mountNutanixVdisks
 
-Attaching disks from a snapshot to an existing virtual machine  Supported in v9.2+ Requests a vDisk Mount to attach disks to an existing virtual machine.
+Attaching disks from a snapshot to an existing virtual machine Supported in v9.2+ Requests a vDisk Mount to attach disks to an existing virtual machine.
 
 ## Arguments
 

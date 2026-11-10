@@ -7,4 +7,4 @@ Filter input for clusters.
 | Field | Type | Description |
 |-------|------|-------------|
 | id | [[UUID](../scalars/UUID.md)!] | Rubrik cluster UUID. |
-| type | [[ClusterTypeEnum](../enums/ClusterTypeEnum.md)!] |  |
+| type | [[ClusterTypeEnum](../enums/ClusterTypeEnum.md)!] | Rubrik cluster type. |

@@ -1,6 +1,6 @@
 # updateAgentDeploymentSetting
 
-Change the Rubrik Backup Service deployment setting  Supported in v5.0+ Modify the global setting for automatic deployment of the Rubrik Backup Service to virtual machines.
+Change the Rubrik Backup Service deployment setting Supported in v5.0+ Modify the global setting for automatic deployment of the Rubrik Backup Service to virtual machines.
 
 ## Arguments
 

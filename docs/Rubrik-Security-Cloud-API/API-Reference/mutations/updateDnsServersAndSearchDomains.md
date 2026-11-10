@@ -6,7 +6,7 @@ Update cluster DNS servers and search domains.
 
 | Argument | Type | Description |
 |----------|------|-------------|
-| input *(required)* | [UpdateDnsServersAndSearchDomainsInput](../types/inputs/UpdateDnsServersAndSearchDomainsInput.md)! | Input for UpdateDnsServersAndSearchDomains. |
+| input *(required)* | [UpdateDnsServersAndSearchDomainsInput](../types/inputs/UpdateDnsServersAndSearchDomainsInput.md)! | Input for updating DNS servers and search domains. |
 
 ## Returns
 

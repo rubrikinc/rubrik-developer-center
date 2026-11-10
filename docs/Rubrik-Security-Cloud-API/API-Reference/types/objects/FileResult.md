@@ -62,7 +62,7 @@ Contains metadata and the counts and results for a single file.
 | stdPath | String! | Standardized path (Linux style). Use this path for any path-based query parameters. |
 | totalHits | [Hits](Hits.md) | Represents the total number of hits, including sensitive and non-sensitive hits. |
 | totalSensitiveHits | [Long](../scalars/Long.md)! | Represents the sum of high, medium, and low sensitive hits. |
-| type | String! |  |
+| type | String! | Represents data type of column for databases. |
 | userAccessType | [UserAccessType](../enums/UserAccessType.md)! | Represents the type of user access for a file. |
 
 ## Used By

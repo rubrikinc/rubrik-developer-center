@@ -1,6 +1,6 @@
 # completeGitHubAppInstallation
 
-Completes the GitHub App installation (step 3 of the 3-step flow).  After calling completeGitHubAppRegistration (step 2) and the user installs the app on their GitHub organization, GitHub provides an installation ID. Pass this ID along with the session ID from step 1 to finalize the setup. After this step the GitHub App is fully configured and ready for use.
+Completes the GitHub App installation (step 3 of the 3-step flow). After calling completeGitHubAppRegistration (step 2) and the user installs the app on their GitHub organization, GitHub provides an installation ID. Pass this ID along with the session ID from step 1 to finalize the setup. After this step the GitHub App is fully configured and ready for use.
 
 ## Arguments
 

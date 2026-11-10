@@ -1,6 +1,6 @@
 # updateVcenterV2
 
-Update vCenter Server  Supported in v8.1+ Update the address, username, and password of the specified vCenter Server object.
+Update vCenter Server Supported in v8.1+ Update the address, username, and password of the specified vCenter Server object.
 
 ## Arguments
 

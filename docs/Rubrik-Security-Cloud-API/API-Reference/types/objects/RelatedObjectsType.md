@@ -9,7 +9,7 @@ Related object type in the Azure AD reverse relationship.
 | id | String! | ID of the parent object. |
 | metadata | String! | Metadata of the relationship with the parent object. |
 | name | String! | Name of the parent object. |
-| type | [AzureAdObjectType](../enums/AzureAdObjectType.md)! |  |
+| type | [AzureAdObjectType](../enums/AzureAdObjectType.md)! | Azure AD object type of the parent object. |
 
 ## Used By
 

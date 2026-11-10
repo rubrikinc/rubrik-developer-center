@@ -1,6 +1,6 @@
 # deleteOracleMount
 
-Delete an Oracle database Live Mount  Supported in v5.0+ Request an asynchronous job to delete a specified Live Mount of an Oracle database snapshot. Poll the job status by using /oracle/request/{id}.
+Delete an Oracle database Live Mount Supported in v5.0+ Request an asynchronous job to delete a specified Live Mount of an Oracle database snapshot. Poll the job status by using /oracle/request/{id}.
 
 ## Arguments
 

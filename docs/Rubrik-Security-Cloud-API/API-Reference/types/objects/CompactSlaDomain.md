@@ -16,6 +16,7 @@ SLA Domain name and ID.
 - [AnthropicChildOrg.rscNativeObjectPendingSla](AnthropicChildOrg.md)
 - [AnthropicClaudeChatWorkload.rscNativeObjectPendingSla](AnthropicClaudeChatWorkload.md)
 - [AnthropicOrg.rscNativeObjectPendingSla](AnthropicOrg.md)
+- [AnthropicOrgLocalSessions.rscNativeObjectPendingSla](AnthropicOrgLocalSessions.md)
 - [AnthropicOrgSetting.rscNativeObjectPendingSla](AnthropicOrgSetting.md)
 - [AnthropicUser.rscNativeObjectPendingSla](AnthropicUser.md)
 - [AtlassianSite.rscNativeObjectPendingSla](AtlassianSite.md)
@@ -42,5 +43,4 @@ SLA Domain name and ID.
 - [AzureNativeRegionManagedObject.rscNativeObjectPendingSla](AzureNativeRegionManagedObject.md)
 - [AzureNativeResourceGroup.rscNativeObjectPendingSla](AzureNativeResourceGroup.md)
 - [AzureNativeResourceGroupBase.rscNativeObjectPendingSla](AzureNativeResourceGroupBase.md)
-- [AzureNativeResourceGroupSlaAssignment.rscNativeObjectPendingSla](AzureNativeResourceGroupSlaAssignment.md)
-- *…and 66 more*
+- *…and 68 more*

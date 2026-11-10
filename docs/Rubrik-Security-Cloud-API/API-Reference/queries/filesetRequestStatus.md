@@ -1,6 +1,6 @@
 # filesetRequestStatus
 
-Get details about an async request  Supported in v5.0+ Get details about a fileset related async request.
+Get details about an async request Supported in v5.0+ Get details about a fileset related async request.
 
 ## Arguments
 

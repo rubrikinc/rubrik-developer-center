@@ -1,6 +1,6 @@
 # updateNutanixVm
 
-v5.0-v8.0: Patch VM v8.1+: Patch virtual machine  Supported in v5.0+ v5.0-v5.3: Patch VM with specified properties v6.0-v8.0: Patch VM with specified properties. v8.1+: Patch virtual machine with specified properties.
+v5.0-v8.0: Patch VM v8.1+: Patch virtual machine Supported in v5.0+ v5.0-v5.3: Patch VM with specified properties v6.0-v8.0: Patch VM with specified properties. v8.1+: Patch virtual machine with specified properties.
 
 ## Arguments
 

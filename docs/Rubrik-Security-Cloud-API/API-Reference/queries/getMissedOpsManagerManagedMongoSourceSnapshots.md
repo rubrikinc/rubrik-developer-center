@@ -1,6 +1,6 @@
 # getMissedOpsManagerManagedMongoSourceSnapshots
 
-Retrieve information on the missed snapshots for a MongoDB source managed by Ops Manager  Supported in v9.5+ Retrieve the time of day when the snapshots were missed for a MongoDB source managed by Ops Manager.
+Retrieve information on the missed snapshots for a MongoDB source managed by Ops Manager Supported in v9.5+ Retrieve the time of day when the snapshots were missed for a MongoDB source managed by Ops Manager.
 
 ## Arguments
 

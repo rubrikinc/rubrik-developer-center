@@ -1,6 +1,6 @@
 # bulkTierExistingSnapshots
 
-Bulk tier existing snapshots to cold storage  Supported in v6.0+ Schedules a job to tier existing snapshots of the specified objects to cold storage.
+Bulk tier existing snapshots to cold storage Supported in v6.0+ Schedules a job to tier existing snapshots of the specified objects to cold storage.
 
 ## Arguments
 

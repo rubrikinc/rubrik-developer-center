@@ -1,6 +1,6 @@
 # vsphereVmMountRelocate
 
-Relocate a virtual machine to another datastore  Supported in v5.0+ Run storage VMotion to relocate a specified Live Mount into another data store.
+Relocate a virtual machine to another datastore Supported in v5.0+ Run storage VMotion to relocate a specified Live Mount into another data store.
 
 ## Arguments
 

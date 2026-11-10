@@ -1,6 +1,6 @@
 # refreshVsphereVcenter
 
-Refresh vCenter Server metadata  Supported in v5.0+ Create a job to refresh the metadata for the specified vCenter Server.
+Refresh vCenter Server metadata Supported in v5.0+ Create a job to refresh the metadata for the specified vCenter Server.
 
 ## Arguments
 

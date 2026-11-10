@@ -14,12 +14,13 @@ PolarisReportViewType is the template type for a report.
 | ANOMALY_REPORT | Anomaly report (ransomware monitoring). |
 | AUDIT_REPORT | Audit report. |
 | BACKUP_STRIKES_REPORT | Backup Strikes report. |
+| BLAST_RADIUS_REPORT | Blast Radius report -- sensitive data exposure of selected objects as of a classification day. |
 | CDM_USER_REPORT | CDM Users report -- one row per (user, cluster) for principals configured directly on connected CDM clusters. |
 | CLOUD_COMPLIANCE_REPORT | Cloud Compliance Report - cloud-native workloads with dimensional model. |
 | CLOUD_COST_REPORT | Cloud cost report for cloud-native protection cost analysis. Displays cost breakdown by cloud provider, account, and cost dimension with tag-level attribution. Supports time series and bar charts. |
 | CLOUD_OVERLAP_OBJECTS_REPORT | Cloud overlap objects report. |
-| CNP_OBJECT_CAPACITY_OVER_TIME_REPORT | Cloud Native Protection Object Capacity Over Time Report.  This report presents capacity metrics over time for cloud-native protection features, specifically for resources managed under customer-onboarded cloud accounts (e.g., Azure, AWS, GCP). |
-| CNP_OBJECT_CAPACITY_REPORT | Cloud Native Protection Object Capacity Report.  This report presents capacity metrics for cloud-native protection features, specifically for resources managed under customer-onboarded cloud accounts (e.g., Azure, AWS, GCP). |
+| CNP_OBJECT_CAPACITY_OVER_TIME_REPORT | Cloud Native Protection Object Capacity Over Time Report. This report presents capacity metrics over time for cloud-native protection features, specifically for resources managed under customer-onboarded cloud accounts (e.g., Azure, AWS, GCP). |
+| CNP_OBJECT_CAPACITY_REPORT | Cloud Native Protection Object Capacity Report. This report presents capacity metrics for cloud-native protection features, specifically for resources managed under customer-onboarded cloud accounts (e.g., Azure, AWS, GCP). |
 | CNP_PROTECTION_TASKS_DETAIL_REPORT | Cloud Native Protection (CNP) protection tasks detail report. Scopes the protection tasks detail data to cloud-native (AWS, Azure, GCP) object types. |
 | CNP_RECOVERY_TASKS_DETAIL_REPORT | Cloud Native Protection (CNP) recovery tasks detail report. Scopes the recovery tasks detail data to cloud-native (AWS, Azure, GCP) object types. |
 | COMPLIANCE_REPORT | Compliance report. |
@@ -30,7 +31,7 @@ PolarisReportViewType is the template type for a report.
 | FAILOVER_REPORT | Failover report. |
 | GPO_CAP_CHANGES_REPORT | GPO/CAP changes report. |
 | GROUP_CHANGES_REPORT | Group changes report. |
-| GROUP_MEMBERSHIP_REPORT | Group membership report \u2014 direct group-to-member edges. |
+| GROUP_MEMBERSHIP_REPORT | Group membership report — direct group-to-member edges. |
 | IDENTITY_ACTIVITY_REPORT | Identity Activity Auditor report. |
 | IDENTITY_INVENTORY_REPORT | Displays the identity inventory report — a current-state list of all principals (users, groups, service accounts, computers, GPOs, conditional access policies). |
 | IDENTITY_RISKS_REPORT | Identity Risks report. |

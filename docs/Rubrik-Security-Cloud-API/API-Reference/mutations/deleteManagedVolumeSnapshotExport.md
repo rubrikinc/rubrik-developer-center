@@ -1,6 +1,6 @@
 # deleteManagedVolumeSnapshotExport
 
-Delete an exported Managed Volume snapshot  Supported in v7.0+ Deletes an exported Managed Volume snapshot, identified by the snapshot ID.
+Delete an exported Managed Volume snapshot Supported in v7.0+ Deletes an exported Managed Volume snapshot, identified by the snapshot ID.
 
 ## Arguments
 

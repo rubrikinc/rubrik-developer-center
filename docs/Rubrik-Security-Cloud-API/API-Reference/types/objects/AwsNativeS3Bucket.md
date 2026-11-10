@@ -28,6 +28,7 @@ AWS native S3 Bucket.
 | id | [UUID](../scalars/UUID.md)! | ID of the hierarchy object. |
 | isExocomputeConfigured | Boolean! | A boolean specifying whether exocompute is configured in the region. |
 | isInfrastructureAlertsEnabled | Boolean! | Whether infrastructure deletion alerts are enabled for the S3 bucket. |
+| isInfrastructureAlertsRegionConnected | Boolean | Whether Critical Resource Protection forwards deletion events from this resource's region. Unset when that could not be determined: CRP is not licensed, or the read failed. |
 | isOnboarding | Boolean! | Flag to specify if the S3 bucket is being onboarded for backup. |
 | isProtectable | Boolean! | Indicates whether this S3 bucket is protectable or not. |
 | isRelic | Boolean! | Whether the object is a relic. |

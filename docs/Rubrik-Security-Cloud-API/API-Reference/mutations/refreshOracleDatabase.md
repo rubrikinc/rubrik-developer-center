@@ -1,6 +1,6 @@
 # refreshOracleDatabase
 
-Refresh an Oracle database  Supported in v6.0+ Starts an asynchronous job to refresh the Oracle database metadata by querying the database instances on all the underlying hosts.
+Refresh an Oracle database Supported in v6.0+ Starts an asynchronous job to refresh the Oracle database metadata by querying the database instances on all the underlying hosts.
 
 ## Arguments
 

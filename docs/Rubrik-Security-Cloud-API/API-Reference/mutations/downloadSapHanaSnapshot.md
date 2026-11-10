@@ -1,6 +1,6 @@
 # downloadSapHanaSnapshot
 
-Download SAP HANA database snapshot from archive  Supported in v8.0+ Downloads a specific SAP HANA database snapshot from the specified archival location.
+Download SAP HANA database snapshot from archive Supported in v8.0+ Downloads a specific SAP HANA database snapshot from the specified archival location.
 
 ## Arguments
 

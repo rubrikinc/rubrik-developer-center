@@ -1,6 +1,6 @@
 # oracleDatabaseAsyncRequestDetails
 
-Get Oracle database async request details  Supported in v5.0+ Retrieve the task object for a specified Oracle database asynchronous request.
+Get Oracle database async request details Supported in v5.0+ Retrieve the task object for a specified Oracle database asynchronous request.
 
 ## Arguments
 

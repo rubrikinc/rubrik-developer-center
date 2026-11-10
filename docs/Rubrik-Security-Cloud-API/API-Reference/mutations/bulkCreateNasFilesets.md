@@ -1,6 +1,6 @@
 # bulkCreateNasFilesets
 
-Create filesets in bulk for NAS shares  Supported in v7.0+ Create primary filesets for a list of NAS shares.
+Create filesets in bulk for NAS shares Supported in v7.0+ Create primary filesets for a list of NAS shares.
 
 ## Arguments
 

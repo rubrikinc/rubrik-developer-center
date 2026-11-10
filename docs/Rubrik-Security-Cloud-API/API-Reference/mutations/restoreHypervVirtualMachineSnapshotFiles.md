@@ -1,6 +1,6 @@
 # restoreHypervVirtualMachineSnapshotFiles
 
-Restore files from snapshot  Supported in v5.0+ Restore files from a snapshot to the original source location.
+Restore files from snapshot Supported in v5.0+ Restore files from a snapshot to the original source location.
 
 ## Arguments
 

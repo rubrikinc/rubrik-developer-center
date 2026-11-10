@@ -1,6 +1,6 @@
 # addSyslogExportRule
 
-Add a new syslog export rule  Supported in v5.1+ Adds a new rule specifying where to export the specified syslog information.
+Add a new syslog export rule Supported in v5.1+ Adds a new rule specifying where to export the specified syslog information.
 
 ## Arguments
 

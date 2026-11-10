@@ -1,6 +1,6 @@
 # registerNasSystem
 
-Register a NAS System  Supported in v7.0+ Register a NAS system such as a NetApp or an Isilon cluster to be protected.
+Register a NAS System Supported in v7.0+ Register a NAS system such as a NetApp or an Isilon cluster to be protected.
 
 ## Arguments
 

@@ -14,4 +14,5 @@ CDP recovery state for a workload.
 
 **Referenced by**
 
+- [ChildVmRecoveryInfo.recoveryState](ChildVmRecoveryInfo.md)
 - [RecoveryCoverage.recoveryState](RecoveryCoverage.md)

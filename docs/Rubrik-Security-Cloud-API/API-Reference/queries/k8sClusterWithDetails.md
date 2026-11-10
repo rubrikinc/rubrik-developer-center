@@ -1,6 +1,6 @@
 # k8sClusterWithDetails
 
-Get summary information for a Kubernetes cluster  Supported in v9.0+ Retrieves summary information for the Kubernetes cluster by specifying the ID of the cluster.
+Get summary information for a Kubernetes cluster Supported in v9.0+ Retrieves summary information for the Kubernetes cluster by specifying the ID of the cluster.
 
 ## Arguments
 
@@ -79,10 +79,10 @@ Get summary information for a Kubernetes cluster  Supported in v9.0+ Retrieves s
             "isK8SError": true,
             "serviceAccountName": "example-string"
           },
-          "kuprServerProxyConfig": {
-            "cert": "example-string",
-            "ipAddress": "example-string",
-            "port": 0
+          "discoveryScope": {
+            "namespaces": [
+              "example-string"
+            ]
           }
         }
       }

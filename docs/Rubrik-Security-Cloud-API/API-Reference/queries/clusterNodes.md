@@ -1,6 +1,6 @@
 # clusterNodes
 
-Get list of nodes in this Rubrik cluster  Supported in v5.0+ Returns the list of all Rubrik nodes.
+Get list of nodes in this Rubrik cluster Supported in v5.0+ Returns the list of all Rubrik nodes.
 
 ## Arguments
 

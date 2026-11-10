@@ -1,6 +1,6 @@
 # batchInstantRecoverHypervVm
 
-Instantly recovers snapshots from multiple virtual machines  Supported in v7.0+ Instantly recovers a batch of snapshots from a group of specified virtual machines.
+Instantly recovers snapshots from multiple virtual machines Supported in v7.0+ Instantly recovers a batch of snapshots from a group of specified virtual machines.
 
 ## Arguments
 

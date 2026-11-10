@@ -9,5 +9,5 @@ The hostname and account credentials of a FusionCompute Virtual Resource Managem
 | caCerts | String | Supported in v9.6+ Optional CA certificate content for SSL verification. |
 | endpointUri | String! | Required. Supported in v9.6+ The address of the new FusionCompute VRM instance. |
 | password | String! | Required. Supported in v9.6+ The password for authenticating with the FusionCompute VRM. |
-| userType | [FusionComputeVrmUserType](../enums/FusionComputeVrmUserType.md) | User type Rubrik logs in to the VRM with. Defaults to LocalUser. |
+| userType | [FusionComputeVrmUserType](../enums/FusionComputeVrmUserType.md) | Supported in Rubrik CDM v9.6.2+. Type of the VRM user account that Rubrik logs in with. When omitted, Rubrik logs in as a local user. |
 | username | String! | Required. Supported in v9.6+ The username of the FusionCompute VRM. |

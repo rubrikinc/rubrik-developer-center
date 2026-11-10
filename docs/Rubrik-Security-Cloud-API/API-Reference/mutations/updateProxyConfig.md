@@ -1,6 +1,6 @@
 # updateProxyConfig
 
-Update proxy config  Supported in v5.0+ Update proxy config.
+Update proxy config Supported in v5.0+ Update proxy config.
 
 ## Arguments
 

@@ -17,7 +17,7 @@ Nutanix virtual machine live mount.
 | migrationJobStatus | String | Status of the migration job. This is applicable only if the mounted virtual machine is being migrated. |
 | mountJobInstanceId | String! | Mount job instance ID. |
 | mountSpec | String! | Specification of the live mount in JSON string. |
-| mountStatus | [NutanixVmMountStatus](../enums/NutanixVmMountStatus.md) | Mount Status of the Virtual Machine. If the CDM cluster is disconnected, then None is  returned. |
+| mountStatus | [NutanixVmMountStatus](../enums/NutanixVmMountStatus.md) | Mount Status of the Virtual Machine. If the CDM cluster is disconnected, then None is returned. |
 | mountedDate | [DateTime](../scalars/DateTime.md) | Time when the virtual machine was mounted. This may be set to null if the mount specification does not contain this information. |
 | mountedVmFid | String | ID of the mounted virtual machine. This may be set to null if the mount specification does not contain this information. |
 | mountedVmId | String | CDM ID of the mounted virtual machine. This may be set to null if the mount specification does not contain this information. |
@@ -27,7 +27,7 @@ Nutanix virtual machine live mount.
 | nutanixClusterName | String! | Name of the Nutanix cluster. |
 | organizationId | String! | Organization ID of the live mount. |
 | ownerId | String! | Owner ID of the live mount. |
-| powerStatus | String! | Power Status of the Virtual Machine. It is set to 'ON' or 'OFF'. If the CDM cluster is disconnected, then it is set to  'Unknown'. |
+| powerStatus | String! | Power Status of the Virtual Machine. It is set to 'ON' or 'OFF'. If the CDM cluster is disconnected, then it is set to 'Unknown'. |
 | snapshotDate | [DateTime](../scalars/DateTime.md) | Time when the snapshot was taken. This may be set to null if the mount specification does not contain this information. |
 | snapshotId | String! | Rubrik CDM ID of the snapshot used for the Live Mount. |
 | sourceSnapshot | [CdmSnapshot](CdmSnapshot.md)! | Source snapshot of the Live Mount. |

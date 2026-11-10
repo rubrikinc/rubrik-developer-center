@@ -1,6 +1,6 @@
 # AmiTypeForAwsNativeArchivedSnapshotExportInput
 
-Input to retrieve  Amazon Machine Image (AMI) type for AWS Archived snapshot export.
+Input to retrieve Amazon Machine Image (AMI) type for AWS Archived snapshot export.
 
 ## Fields
 

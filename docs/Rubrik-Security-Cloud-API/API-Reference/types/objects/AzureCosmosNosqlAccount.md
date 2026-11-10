@@ -23,6 +23,7 @@ An Azure Cosmos NoSQL account. Refers to the top-level Cosmos NoSQL resource tha
 | futureLegalHoldInfo | [FutureLegalHoldInfo](FutureLegalHoldInfo.md) | Future legal hold rule configured for this object, if any. |
 | id | [UUID](../scalars/UUID.md)! | ID of the hierarchy object. |
 | isContinuousBackupEnabled | Boolean! | Specifies whether the account uses a continuous backup policy rather than a periodic one. |
+| isExocomputeConfigured | Boolean! | Specifies whether exocompute is configured for the subscription and region of the Azure Cosmos NoSQL account. |
 | isLocalAuthDisabled | Boolean! | Specifies whether key-based authentication is turned off, leaving Microsoft Entra ID as the only way to authenticate. |
 | isPartitionMergeEnabled | Boolean! | Specifies whether partition merge is permitted on the account. This is a capability flag, not a record of past merges. |
 | isProtectable | Boolean! | Specifies whether the Azure Cosmos NoSQL account is protectable. |

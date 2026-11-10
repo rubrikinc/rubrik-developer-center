@@ -1,6 +1,6 @@
 # batchExportHypervVm
 
-Exports a snapshot from each member of a set of virtual machines  Supported in v7.0+ Export a snapshot from each member of a set of virtual machines.
+Exports a snapshot from each member of a set of virtual machines Supported in v7.0+ Export a snapshot from each member of a set of virtual machines.
 
 ## Arguments
 

@@ -1,6 +1,6 @@
 # mssqlHostConfiguration
 
-Get the configuration for a specific host  Supported in v6.0+ Returns the configuration for the specified SQL Server host.
+Get the configuration for a specific host Supported in v6.0+ Returns the configuration for the specified SQL Server host.
 
 ## Arguments
 

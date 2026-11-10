@@ -7,5 +7,5 @@ FilterConfig represents an individual filter, including its type, values, and re
 | Field | Type | Description |
 |-------|------|-------------|
 | relationship | [Relationship](../enums/Relationship.md)! | The relationship between this filter type and values. |
-| type | [FilterType](../enums/FilterType.md)! |  |
+| type | [FilterType](../enums/FilterType.md)! | The type of the filter. |
 | values | [String!]! | The values for this filter. |

@@ -1,6 +1,6 @@
 # vsphereVmExportSnapshotWithDownloadFromCloud
 
-Download a snapshot from an archival location, then export a virtual machine using the downloaded snapshot  Supported in v5.3+ Download a snapshot from an archival location and then export a virtual machine using the downloaded snapshot.
+Download a snapshot from an archival location, then export a virtual machine using the downloaded snapshot Supported in v5.3+ Download a snapshot from an archival location and then export a virtual machine using the downloaded snapshot.
 
 ## Arguments
 

@@ -1,6 +1,6 @@
 # createK8sProtectionSetSnapshot
 
-Initiate an on-demand backup for Kubernetes protection set workload  Supported in v9.1+ Creates an on-demand backup request for the specified Kubernetes protection set workload.
+Initiate an on-demand backup for Kubernetes protection set workload Supported in v9.1+ Creates an on-demand backup request for the specified Kubernetes protection set workload.
 
 ## Arguments
 

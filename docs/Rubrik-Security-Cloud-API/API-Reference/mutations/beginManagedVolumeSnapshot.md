@@ -1,6 +1,6 @@
 # beginManagedVolumeSnapshot
 
-Begin Managed Volume snapshot  Supported in v7.0+ Opens the Managed Volume for writes. All data written to the Managed Volume until the next end-snapshot call will be part of this snapshot.
+Begin Managed Volume snapshot Supported in v7.0+ Opens the Managed Volume for writes. All data written to the Managed Volume until the next end-snapshot call will be part of this snapshot.
 
 ## Arguments
 

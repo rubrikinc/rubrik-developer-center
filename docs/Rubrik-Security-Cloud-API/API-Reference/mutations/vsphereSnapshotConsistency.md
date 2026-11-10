@@ -1,6 +1,6 @@
 # vsphereSnapshotConsistency
 
-Update snapshot consistency of VMware hierarchy objects  Supported in v9.3+ Initiates a job to update snapshot consistency of VMware hierarchy objects.
+Update snapshot consistency of VMware hierarchy objects Supported in v9.3+ Initiates a job to update snapshot consistency of VMware hierarchy objects.
 
 ## Arguments
 

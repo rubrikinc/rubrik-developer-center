@@ -1,6 +1,6 @@
 # createHypervVirtualMachineSnapshotMount
 
-Create a live mount request  Supported in v5.0+ Create a live mount request with given configuration.
+Create a live mount request Supported in v5.0+ Create a live mount request with given configuration.
 
 ## Arguments
 

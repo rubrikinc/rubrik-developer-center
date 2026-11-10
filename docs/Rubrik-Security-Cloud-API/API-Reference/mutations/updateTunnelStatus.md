@@ -1,6 +1,6 @@
 # updateTunnelStatus
 
-Enable or disable the SSH Tunnel for Support Access  Supported in v5.0+ To be used by Admin to open or close a SSH tunnel for support. When enabling the support tunnel, the node 'id' must be *me* or the current node's 'id', because remote open is not supported. When disabling a support tunnel, the node 'id' can be that of any node in the cluster.
+Enable or disable the SSH Tunnel for Support Access Supported in v5.0+ To be used by Admin to open or close a SSH tunnel for support. When enabling the support tunnel, the node 'id' must be *me* or the current node's 'id', because remote open is not supported. When disabling a support tunnel, the node 'id' can be that of any node in the cluster.
 
 ## Arguments
 

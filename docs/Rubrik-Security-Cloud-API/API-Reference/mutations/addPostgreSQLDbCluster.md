@@ -1,6 +1,6 @@
 # addPostgreSQLDbCluster
 
-Create a PostgreSQL database cluster instance  Supported in v9.2+ Start an asynchronous job to create an instance of PostgreSQL database cluster.
+Create a PostgreSQL database cluster instance Supported in v9.2+ Start an asynchronous job to create an instance of PostgreSQL database cluster.
 
 ## Arguments
 

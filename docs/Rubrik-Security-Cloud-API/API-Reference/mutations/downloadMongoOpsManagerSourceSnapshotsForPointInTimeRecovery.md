@@ -1,6 +1,6 @@
 # downloadMongoOpsManagerSourceSnapshotsForPointInTimeRecovery
 
-Download MongoDB OpsManager source snapshots for a point in time recovery  Supported in v9.5+ Downloads the most recent full snapshot and the log snapshots taken after the full snapshot, required for the point in time recovery of a MongoDB source managed by Ops Manager.
+Download MongoDB OpsManager source snapshots for a point in time recovery Supported in v9.5+ Downloads the most recent full snapshot and the log snapshots taken after the full snapshot, required for the point in time recovery of a MongoDB source managed by Ops Manager.
 
 ## Arguments
 

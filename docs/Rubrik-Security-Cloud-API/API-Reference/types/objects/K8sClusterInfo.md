@@ -10,7 +10,7 @@ Information of the Kubernetes cluster.
 | k8sVersion | String | Kubernetes version. |
 | kuprClusterUuid | [UUID](../scalars/UUID.md)! | UUID of the Kubernetes cluster. |
 | port | Int! | Port on the Kubernetes cluster used for communication with RSC. |
-| type | [K8sClusterType](../enums/K8sClusterType.md)! |  |
+| type | [K8sClusterType](../enums/K8sClusterType.md)! | Type of the Kubernetes cluster. |
 
 ## Used By
 

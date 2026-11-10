@@ -1,6 +1,6 @@
 # updateNetworkThrottle
 
-Update a network throttle  Supported in v5.0+ Update the configuration of a specified network throttle object.
+Update a network throttle Supported in v5.0+ Update the configuration of a specified network throttle object.
 
 ## Arguments
 

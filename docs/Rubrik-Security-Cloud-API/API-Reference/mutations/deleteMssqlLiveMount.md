@@ -1,6 +1,6 @@
 # deleteMssqlLiveMount
 
-Delete a Live Mount of a SQL Server database  Supported in v5.0+ Create an async request to delete a Live Mount of a SQL Server database. Poll the task status by using /mssql/request/{id}.
+Delete a Live Mount of a SQL Server database Supported in v5.0+ Create an async request to delete a Live Mount of a SQL Server database. Poll the task status by using /mssql/request/{id}.
 
 ## Arguments
 

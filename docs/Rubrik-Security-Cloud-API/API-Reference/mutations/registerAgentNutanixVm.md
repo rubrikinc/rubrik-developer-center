@@ -1,6 +1,6 @@
 # registerAgentNutanixVm
 
-v5.0-v8.0: Register the agent installed on the Nutanix VM v8.1+: Register the agent installed on the Nutanix virtual machine  Supported in v5.0+ v5.0-v5.3: Register the agent installed on the Nutanix VM v6.0-v8.0: Register the agent installed on the Nutanix VM. v8.1+: Register the agent installed on the Nutanix virtual machine.
+v5.0-v8.0: Register the agent installed on the Nutanix VM v8.1+: Register the agent installed on the Nutanix virtual machine Supported in v5.0+ v5.0-v5.3: Register the agent installed on the Nutanix VM v6.0-v8.0: Register the agent installed on the Nutanix VM. v8.1+: Register the agent installed on the Nutanix virtual machine.
 
 ## Arguments
 

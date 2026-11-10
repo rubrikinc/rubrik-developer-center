@@ -1,6 +1,6 @@
 # addMysqlInstance
 
-Create a MySQL database instance  Supported in v9.3+ Start an asynchronous job to create an instance of MySQL database.
+Create a MySQL database instance Supported in v9.3+ Start an asynchronous job to create an instance of MySQL database.
 
 ## Arguments
 

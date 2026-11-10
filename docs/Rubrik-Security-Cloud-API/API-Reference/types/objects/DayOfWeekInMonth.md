@@ -1,6 +1,6 @@
 # DayOfWeekInMonth
 
-Supported in v9.5+ Specifies a day-of-week pattern within a month by combining an ordinal position (First, Second, Third, Fourth, Last) with a day of the week (Monday through Sunday). Examples: - weekOrdinal: Second, dayOfWeek: Friday = Second Friday of the month - weekOrdinal: Last, dayOfWeek: Sunday = Last Sunday of the month - weekOrdinal: First, dayOfWeek: Monday = First Monday of the month  Note: Some months may not have a Fourth or Fifth occurrence of a particular day, in which case they will be ignored for that month.
+Supported in v9.5+ Specifies a day-of-week pattern within a month by combining an ordinal position (First, Second, Third, Fourth, Last) with a day of the week (Monday through Sunday). Examples: - weekOrdinal: Second, dayOfWeek: Friday = Second Friday of the month - weekOrdinal: Last, dayOfWeek: Sunday = Last Sunday of the month - weekOrdinal: First, dayOfWeek: Monday = First Monday of the month Note: Some months may not have a Fourth or Fifth occurrence of a particular day, in which case they will be ignored for that month.
 
 ## Fields
 

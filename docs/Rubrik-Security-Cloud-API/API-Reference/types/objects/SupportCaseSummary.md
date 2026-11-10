@@ -15,7 +15,7 @@ A summary of a single support case (list-view fields).
 | productLine | String! | Product line for the support case. |
 | status | String! | Raw SFDC status string, e.g. "In Progress". |
 | subject | String! | Support case subject/title. |
-| type | String! |  |
+| type | String! | Raw SFDC type string, e.g. "Software", "Hardware", or empty. |
 
 ## Used By
 

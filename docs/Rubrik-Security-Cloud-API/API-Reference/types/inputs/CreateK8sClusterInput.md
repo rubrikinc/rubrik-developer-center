@@ -12,5 +12,5 @@ Configuration of the Kubernetes cluster to onboard.
 | port | Int! | Port on the Kubernetes node for the Kubernetes Ingress Controller. |
 | proxyUrl | String | The proxy URL for the Kubernetes agent. |
 | rbsPortRanges | [[PortRange](PortRange.md)!]! | Ports in the NodePort service range of the Kubernetes cluster. |
-| type | [K8sClusterProtoType](../enums/K8sClusterProtoType.md)! |  |
+| type | [K8sClusterProtoType](../enums/K8sClusterProtoType.md)! | KuprClusterType of the Kubernetes cluster. |
 | userDrivenPortRanges | [[PortRange](PortRange.md)!] | NodePort ranges dedicated for export operations. |

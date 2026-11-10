@@ -1,6 +1,6 @@
 # updateVsphereAdvancedTag
 
-Update the multi-tag filter  Supported in v7.0+ v7.0-v9.1: Updates the name, condition, and description of the specified multi-tag filter. v9.2+: Updates the name, condition, and description of the specified multi-tag filter. It is not supported on Standalone Hosts.
+Update the multi-tag filter Supported in v7.0+ v7.0-v9.1: Updates the name, condition, and description of the specified multi-tag filter. v9.2+: Updates the name, condition, and description of the specified multi-tag filter. It is not supported on Standalone Hosts.
 
 ## Arguments
 

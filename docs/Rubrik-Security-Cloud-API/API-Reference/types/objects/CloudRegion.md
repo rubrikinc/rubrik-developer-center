@@ -12,4 +12,7 @@ Represents a cloud region.
 
 **Referenced by**
 
+- [ApplicationResourceMetadata.region](ApplicationResourceMetadata.md)
+- [CloudNativeApplication.region](CloudNativeApplication.md)
 - [DevOpsCloudNativeExocompute.region](DevOpsCloudNativeExocompute.md)
+- [GetApplicationResourceCountResponse.region](GetApplicationResourceCountResponse.md)

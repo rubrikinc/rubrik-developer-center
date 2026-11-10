@@ -1,6 +1,6 @@
 # refreshNasSystems
 
-On-demand discovery of a list of NAS systems  Supported in v7.0+ Runs the NAS_DISCOVER job for autodiscovery/refresh of NAS systems.
+On-demand discovery of a list of NAS systems Supported in v7.0+ Runs the NAS_DISCOVER job for autodiscovery/refresh of NAS systems.
 
 ## Arguments
 

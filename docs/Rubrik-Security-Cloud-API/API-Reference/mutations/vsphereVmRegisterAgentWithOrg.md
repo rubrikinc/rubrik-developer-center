@@ -1,6 +1,6 @@
 # vsphereVmRegisterAgentWithOrg
 
-Register Rubrik Backup Service  Supported in v5.0+ Register the Rubrik Backup Service that is running on a specified host with the specified Rubrik cluster.
+Register Rubrik Backup Service Supported in v5.0+ Register the Rubrik Backup Service that is running on a specified host with the specified Rubrik cluster.
 
 ## Arguments
 

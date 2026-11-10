@@ -1,6 +1,6 @@
 # downloadOracleDatabaseSnapshot
 
-Download Oracle snapshot from cloud  Supported in v5.0+ Create an asynchronous job to download an Oracle database snapshot and associated logs using the snapshot ID. The response includes the ID of the asynchronous job request. To see the status of the request, poll /oracle/request/{id}.
+Download Oracle snapshot from cloud Supported in v5.0+ Create an asynchronous job to download an Oracle database snapshot and associated logs using the snapshot ID. The response includes the ID of the asynchronous job request. To see the status of the request, poll /oracle/request/{id}.
 
 ## Arguments
 

@@ -1,6 +1,6 @@
 # hypervHostAsyncRequestStatus
 
-Get Hyper-V host async request  Supported in v5.0+ Get details about a Hyper-V host related async request.
+Get Hyper-V host async request Supported in v5.0+ Get details about a Hyper-V host related async request.
 
 ## Arguments
 

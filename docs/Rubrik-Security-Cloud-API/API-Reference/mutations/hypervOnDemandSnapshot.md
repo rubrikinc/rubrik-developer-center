@@ -1,6 +1,6 @@
 # hypervOnDemandSnapshot
 
-Create on-demand VM snapshot  Supported in v5.0+ Create an on-demand snapshot for the given VM ID.
+Create on-demand VM snapshot Supported in v5.0+ Create an on-demand snapshot for the given VM ID.
 
 ## Arguments
 

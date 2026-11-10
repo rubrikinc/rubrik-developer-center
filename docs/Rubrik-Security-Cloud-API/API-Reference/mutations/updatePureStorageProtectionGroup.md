@@ -1,6 +1,6 @@
 # updatePureStorageProtectionGroup
 
-Update a Pure Storage protection group  Supported in v9.6+ Update the snapshot consistency mandate of a Pure Storage protection group.
+Update a Pure Storage protection group Supported in v9.6+ Update the snapshot consistency mandate of a Pure Storage protection group.
 
 ## Arguments
 

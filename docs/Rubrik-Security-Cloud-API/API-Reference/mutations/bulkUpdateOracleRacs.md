@@ -1,6 +1,6 @@
 # bulkUpdateOracleRacs
 
-Update Oracle RACs  Supported in v5.2+ Update the properties of the objects that represent the specified Oracle RAC.
+Update Oracle RACs Supported in v5.2+ Update the properties of the objects that represent the specified Oracle RAC.
 
 ## Arguments
 

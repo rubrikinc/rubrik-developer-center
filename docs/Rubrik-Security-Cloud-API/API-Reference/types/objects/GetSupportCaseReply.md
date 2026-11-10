@@ -28,7 +28,7 @@ Details of a single support case.
 | rscCaseLink | [URL](../scalars/URL.md) | URL to view the case in RSC support portal when REL_ENABLE_SUPPORT_PORTAL is enabled. Prefer this for in-app navigation over the external caseLink when present. |
 | status | String! | Current status of the support case, e.g. "In Progress". |
 | subject | String! | Short title describing the issue. |
-| type | String! |  |
+| type | String! | Case type, such as "Software", "Hardware". |
 
 ## Used By
 

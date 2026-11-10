@@ -1,6 +1,6 @@
 # clusterFloatingIps
 
-Get a list of a cluster's always-available Ips  Supported in v5.0+ Get a list of a cluster's always-available Ips.
+Get a list of a cluster's always-available Ips Supported in v5.0+ Get a list of a cluster's always-available Ips.
 
 ## Arguments
 

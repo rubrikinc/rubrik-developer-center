@@ -1,6 +1,6 @@
 # downloadHypervVirtualMachineLevelFiles
 
-Download VM-level files from a Hyper-V VM backup snapshot.  Supported in v9.1+ Start an asynchronous job to download virtual machine configuration and disk files from a specified Hyper-V VM backup snapshot. The response returns an asynchronous request ID.
+Download VM-level files from a Hyper-V VM backup snapshot. Supported in v9.1+ Start an asynchronous job to download virtual machine configuration and disk files from a specified Hyper-V VM backup snapshot. The response returns an asynchronous request ID.
 
 ## Arguments
 

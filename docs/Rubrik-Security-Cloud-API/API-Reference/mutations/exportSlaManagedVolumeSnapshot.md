@@ -1,6 +1,6 @@
 # exportSlaManagedVolumeSnapshot
 
-Create a request to export a snapshot and mount it on a host  Supported in v5.3+ Export a managed volume snapshot as a share and mount it on a given host.
+Create a request to export a snapshot and mount it on a host Supported in v5.3+ Export a managed volume snapshot as a share and mount it on a given host.
 
 ## Arguments
 

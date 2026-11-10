@@ -16,7 +16,7 @@
 | resourceType | [PolicyResourceType](../enums/PolicyResourceType.md)! | The resource type of the remediation resource. |
 | state | [RemediationState](../enums/RemediationState.md)! | The state of the remediation. |
 | targets | [RemediationTargets](RemediationTargets.md) | The targets that the remediation have been applied on. |
-| type | [RemediationType](../enums/RemediationType.md)! |  |
+| type | [RemediationType](../enums/RemediationType.md)! | The type of the remediation. |
 
 ## Used By
 

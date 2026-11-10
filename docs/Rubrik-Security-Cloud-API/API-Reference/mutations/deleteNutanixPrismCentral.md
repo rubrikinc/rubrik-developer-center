@@ -1,6 +1,6 @@
 # deleteNutanixPrismCentral
 
-Remove Nutanix Prism Central  Supported in v9.0+ Initiates an asynchronous job to remove a Nutanix Prism Central object. The Nutanix Clusters attached to the Prism Central cannot have Virtual Machines mounted through the Rubrik cluster.
+Remove Nutanix Prism Central Supported in v9.0+ Initiates an asynchronous job to remove a Nutanix Prism Central object. The Nutanix Clusters attached to the Prism Central cannot have Virtual Machines mounted through the Rubrik cluster.
 
 ## Arguments
 

@@ -1,6 +1,6 @@
 # sharepointSiteSearch
 
-Search site and descendant objects.  SearchSharepointSite returns a paginated, GraphQL-shaped list of SharePoint descendant objects for the given site workload across all snapshots. Encapsulates the response shaping (filter out is_excluded_from_protection items per SPARK-151589) that previously lived in the GraphQL resolver `sharepointSiteSearch`.
+Search site and descendant objects. SearchSharepointSite returns a paginated, GraphQL-shaped list of SharePoint descendant objects for the given site workload across all snapshots. Encapsulates the response shaping (filter out is_excluded_from_protection items per SPARK-151589) that previously lived in the GraphQL resolver `sharepointSiteSearch`.
 
 ## Arguments
 

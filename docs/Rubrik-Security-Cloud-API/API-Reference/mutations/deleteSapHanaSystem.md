@@ -1,6 +1,6 @@
 # deleteSapHanaSystem
 
-Delete a SAP HANA system  Supported in v5.3+ Initiates a job to delete a SAP HANA system object. GET /sap_hana/system/request/{id} endpoint can be used to monitor the progress of the job.
+Delete a SAP HANA system Supported in v5.3+ Initiates a job to delete a SAP HANA system object. GET /sap_hana/system/request/{id} endpoint can be used to monitor the progress of the job.
 
 ## Arguments
 

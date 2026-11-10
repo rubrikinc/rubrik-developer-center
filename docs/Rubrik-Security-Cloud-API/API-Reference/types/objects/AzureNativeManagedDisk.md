@@ -12,7 +12,7 @@ An Azure Native Managed Disk that refers to the block storage designed to be use
 | allOrgs | [[Org](Org.md)!]! | Organizations to which this hierarchy object belongs. |
 | allTags | [[AssignedRscTag](AssignedRscTag.md)!]! | RSC tags to which this hierarchy object is assigned. |
 | attachedAzureNativeVirtualMachines | [[AzureNativeVirtualMachine](AzureNativeVirtualMachine.md)!]! | All Virtual Machines (VMs) attached to the Managed Disk. |
-| attachmentSpecs | [[AttachmentSpecsForManagedDisk](AttachmentSpecsForManagedDisk.md)!]! | Attachment Specifications are properties of the Managed Disk,  like the ID of the virtual machine (VM) that is associated with the Managed Disk. |
+| attachmentSpecs | [[AttachmentSpecsForManagedDisk](AttachmentSpecsForManagedDisk.md)!]! | Attachment Specifications are properties of the Managed Disk, like the ID of the virtual machine (VM) that is associated with the Managed Disk. |
 | authorizedOperations | [[PolarisSnappableAuthorizedOperationsEnum](../enums/PolarisSnappableAuthorizedOperationsEnum.md)!]! | The authorized operations on the object. |
 | availabilityZone | String! | Availability Zone associated with the Managed Disk. |
 | azureNativeResourceGroupAndSubscriptionDetails | [AzureNativeResourceGroupAndSubscriptionDetails](AzureNativeResourceGroupAndSubscriptionDetails.md) | Azure native resource group and subscription details. |

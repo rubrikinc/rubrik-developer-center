@@ -1,6 +1,6 @@
 # downloadExchangeSnapshotV2
 
-Download exchange database snapshot from archive  Supported in v9.2+ Downloads a Microsoft Exchange database snapshot from the specified archival location.
+Download exchange database snapshot from archive Supported in v9.2+ Downloads a Microsoft Exchange database snapshot from the specified archival location.
 
 ## Arguments
 

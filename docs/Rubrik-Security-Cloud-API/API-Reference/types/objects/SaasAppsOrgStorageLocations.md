@@ -14,3 +14,4 @@ Storage locations details for a SaaS organization.
 
 - [AnthropicOrg.storageRegions](AnthropicOrg.md)
 - [GoogleWorkspaceOrg.storageRegions](GoogleWorkspaceOrg.md)
+- [M365ConfigsOrg.storageRegions](M365ConfigsOrg.md)

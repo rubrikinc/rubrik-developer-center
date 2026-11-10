@@ -1,6 +1,6 @@
 # instantRecoverOracleSnapshot
 
-Instant recovery of a database  Supported in v5.0+ Creates an instant recover request that restores a target database from the given snapshot.
+Instant recovery of a database Supported in v5.0+ Creates an instant recover request that restores a target database from the given snapshot.
 
 ## Arguments
 

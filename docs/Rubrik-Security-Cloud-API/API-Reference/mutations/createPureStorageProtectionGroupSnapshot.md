@@ -1,6 +1,6 @@
 # createPureStorageProtectionGroupSnapshot
 
-Initiate an on-demand snapshot for a Pure Storage protection group  Supported in v9.6+ Creates an on-demand snapshot request for the specified Pure Storage protection group.
+Initiate an on-demand snapshot for a Pure Storage protection group Supported in v9.6+ Creates an on-demand snapshot request for the specified Pure Storage protection group.
 
 ## Arguments
 

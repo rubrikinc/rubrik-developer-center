@@ -9,7 +9,7 @@ Represents the definitions of M365 backup storage object restore point.
 | expirationDateTime | [DateTime](../scalars/DateTime.md) | Represents the expiration time for M365 backup storage backup snapshot. |
 | id | String! | Represents ID of restore point. |
 | protectionDateTime | [DateTime](../scalars/DateTime.md) | Represents the backup time of M365 backup storage object. |
-| type | [RestorePointTagType](../enums/RestorePointTagType.md)! |  |
+| type | [RestorePointTagType](../enums/RestorePointTagType.md)! | Represents the type of restore point. |
 
 ## Used By
 

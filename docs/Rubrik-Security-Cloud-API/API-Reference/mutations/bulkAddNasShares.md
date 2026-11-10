@@ -1,6 +1,6 @@
 # bulkAddNasShares
 
-Add multiple NAS shares to a NAS System  Supported in v8.1+ This operation adds NAS shares that were not discovered automatically. If the input contains SMB credentials for any share, they are stored but not validated.
+Add multiple NAS shares to a NAS System Supported in v8.1+ This operation adds NAS shares that were not discovered automatically. If the input contains SMB credentials for any share, they are stored but not validated.
 
 ## Arguments
 

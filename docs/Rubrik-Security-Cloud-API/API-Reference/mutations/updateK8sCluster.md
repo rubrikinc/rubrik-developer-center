@@ -1,6 +1,6 @@
 # updateK8sCluster
 
-Update a Kubernetes cluster  Supported in v9.1+ Updates a Kubernetes cluster with the specified properties.
+Update a Kubernetes cluster Supported in v9.1+ Updates a Kubernetes cluster with the specified properties.
 
 ## Arguments
 

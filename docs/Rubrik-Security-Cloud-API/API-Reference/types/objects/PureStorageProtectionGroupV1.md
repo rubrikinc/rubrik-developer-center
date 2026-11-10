@@ -86,6 +86,7 @@ A Pure Storage protection group protected by Rubrik.
 | missedSnapshotGroupByConnection | timezoneOffset | Float | Offset based on the customer timezone. |
 | missedSnapshotGroupByConnection | timezone | [Timezone](../scalars/Timezone.md) | Time zone identifier string. For example, 'America/Los_Angeles' is used for the U.S. Pacific Time zone. |
 | newestSnapshot | beforeTime | [DateTime](../scalars/DateTime.md) | Specifies the time at which or before the snapshot was taken. |
+| newestSnapshot | excludeLatestSnapshot | Boolean | Specifies whether to ignore the newest snapshot of the workload when choosing the result. |
 | numWorkloadDescendants | first | Int | Returns the first n elements from the list. |
 | numWorkloadDescendants | after | String | Returns the elements in the list that occur after the specified cursor. |
 | numWorkloadDescendants | last | Int | Returns the last n elements from the list. |
@@ -115,7 +116,9 @@ A Pure Storage protection group protected by Rubrik.
 | snapshotGroupBySummary | filter | [CdmSnapshotFilterInput](../inputs/CdmSnapshotFilterInput.md) | Filter snapshot connection. |
 | snapshotGroupBySummary | groupBy *(required)* | [CdmSnapshotGroupByEnum](../enums/CdmSnapshotGroupByEnum.md)! | Groups snapshots by field. |
 | volumes | first | Int | Returns the first n elements from the list. |
-| volumes | after | String | Returns the elements in the list that occur after the specified cursor. |
+| volumes | after | String | An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results. |
+| volumes | last | Int | Returns the last n elements from the list. |
+| volumes | before | String | An opaque cursor returned from a previous query's startCursor field. Pass this value verbatim to retrieve the previous page of results. |
 | volumes | sortBy | [HierarchySortByField](../enums/HierarchySortByField.md) | Sort hierarchy objects according to the hierarchy field. |
 | volumes | sortOrder | [SortOrder](../enums/SortOrder.md) | Sorts the order of results. |
 | volumes | filter | [[Filter](../inputs/Filter.md)!] | Hierarchy object filter. |

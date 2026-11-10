@@ -12,3 +12,4 @@ Input for filtering TPR requests.
 | submittedBy | [TprSubmittedByUser](../enums/TprSubmittedByUser.md) | Filtering TPR requests by users. |
 | timeGt | [DateTime](../scalars/DateTime.md) | Lower time bound for filtering TPR requests. |
 | timeLt | [DateTime](../scalars/DateTime.md) | Upper time bound for filtering TPR requests. |
+| tprRules | [[TprRule](../enums/TprRule.md)!] | Highest priority triggered TPR rules for filtering TPR requests. |

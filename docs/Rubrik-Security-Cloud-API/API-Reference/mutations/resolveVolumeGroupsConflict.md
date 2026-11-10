@@ -1,6 +1,6 @@
 # resolveVolumeGroupsConflict
 
-Marks that the user has resolved that there are no conflicting volume groups on the host where this Exchange server exists  Supported in v8.0+ Marks that the user has resolved that there are no conflicting volume groups on the host where this Exchange server exists.
+Marks that the user has resolved that there are no conflicting volume groups on the host where this Exchange server exists Supported in v8.0+ Marks that the user has resolved that there are no conflicting volume groups on the host where this Exchange server exists.
 
 ## Arguments
 

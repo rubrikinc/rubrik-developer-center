@@ -1,6 +1,6 @@
 # patchDb2Database
 
-Update a Db2 database  Supported in v9.0+ Updating a Db2 database involves modifying the metadata associated with the Db2 database using the provided input values.
+Update a Db2 database Supported in v9.0+ Updating a Db2 database involves modifying the metadata associated with the Db2 database using the provided input values.
 
 ## Arguments
 

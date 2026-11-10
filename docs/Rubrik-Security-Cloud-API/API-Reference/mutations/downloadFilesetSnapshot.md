@@ -1,6 +1,6 @@
 # downloadFilesetSnapshot
 
-Create a download fileset snapshot from archival request  Supported in v5.0+ Create a download fileset snapshot from archival request.
+Create a download fileset snapshot from archival request Supported in v5.0+ Create a download fileset snapshot from archival request.
 
 ## Arguments
 

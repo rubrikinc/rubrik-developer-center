@@ -6,6 +6,7 @@ Configuration settings for a Ceph storage backend in an OpenStack environment.
 
 | Field | Type | Description |
 |-------|------|-------------|
+| cephUser | String | Supported in v9.6+ The Ceph user to authenticate as, for example `cinder`. A leading `client.` prefix is removed. When absent, the `client.admin` user is used. |
 | fsid | String | Supported in v9.5+ The Ceph filesystem ID (optional). |
 | id | String | Supported in v9.5+ The ID of the existing Ceph setting (if updating). |
 | keyring | String | Supported in v9.5+ The Ceph keyring for authentication (optional). |

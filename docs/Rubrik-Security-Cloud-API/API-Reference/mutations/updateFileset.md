@@ -1,6 +1,6 @@
 # updateFileset
 
-Update a Fileset  Supported in v5.0+ Update a Fileset with the specified properties.
+Update a Fileset Supported in v5.0+ Update a Fileset with the specified properties.
 
 ## Arguments
 

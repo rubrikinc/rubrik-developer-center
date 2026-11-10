@@ -1,6 +1,6 @@
 # updateSyslogExportRule
 
-Update the specified syslog export rule  Supported in v5.1+ Update the syslog export rule specified by the given id.
+Update the specified syslog export rule Supported in v5.1+ Update the syslog export rule specified by the given id.
 
 ## Arguments
 

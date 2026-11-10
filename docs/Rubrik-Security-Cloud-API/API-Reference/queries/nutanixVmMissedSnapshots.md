@@ -1,6 +1,6 @@
 # nutanixVmMissedSnapshots
 
-v5.0-v8.0: Get details about missed snapshots for a VM v8.1+: Get details about missed snapshots for a virtual machine  Supported in v5.0+ v5.0-v8.0: Retrieve the time of the day when the snapshots were missed specific to a vm. v8.1+: Retrieve the time of the day when the snapshots were missed specific to a virtual machine.
+v5.0-v8.0: Get details about missed snapshots for a VM v8.1+: Get details about missed snapshots for a virtual machine Supported in v5.0+ v5.0-v8.0: Retrieve the time of the day when the snapshots were missed specific to a vm. v8.1+: Retrieve the time of the day when the snapshots were missed specific to a virtual machine.
 
 ## Arguments
 

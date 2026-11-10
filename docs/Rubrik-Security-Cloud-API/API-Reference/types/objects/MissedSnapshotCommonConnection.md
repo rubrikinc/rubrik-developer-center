@@ -45,4 +45,4 @@ Paginated list of MissedSnapshotCommon objects. Each page of the results include
 - [OracleDatabase.missedSnapshotConnection](OracleDatabase.md)
 - [PingFederateClusterV1.missedSnapshotConnection](PingFederateClusterV1.md)
 - [PostgreSQLDbCluster.missedSnapshotConnection](PostgreSQLDbCluster.md)
-- *…and 11 more*
+- *…and 12 more*

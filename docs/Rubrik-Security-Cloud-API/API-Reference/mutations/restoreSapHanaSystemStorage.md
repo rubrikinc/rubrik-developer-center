@@ -1,6 +1,6 @@
 # restoreSapHanaSystemStorage
 
-Restore SAP HANA storage to a storage snapshot  Supported in v9.1+ Initiates a job to restore the storage of a SAP HANA system object. The GET /sap_hana/system/request/{id} endpoint can be used to monitor the progress of the job.
+Restore SAP HANA storage to a storage snapshot Supported in v9.1+ Initiates a job to restore the storage of a SAP HANA system object. The GET /sap_hana/system/request/{id} endpoint can be used to monitor the progress of the job.
 
 ## Arguments
 

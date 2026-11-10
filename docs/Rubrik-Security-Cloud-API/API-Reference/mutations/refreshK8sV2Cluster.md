@@ -1,6 +1,6 @@
 # refreshK8sV2Cluster
 
-Initiate an on-demand refresh for a Kubernetes cluster  Supported in v9.0+ Initiates an on-demand refresh request for the specified Kubernetes cluster.
+Initiate an on-demand refresh for a Kubernetes cluster Supported in v9.0+ Initiates an on-demand refresh request for the specified Kubernetes cluster.
 
 ## Arguments
 

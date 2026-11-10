@@ -1,6 +1,6 @@
 # bulkOnDemandSnapshotNutanixVm
 
-Take an on-demand snapshot for selected Nutanix virtual machines  Supported in v9.0+ Take bulk backups for multiple Nutanix virtual machines.
+Take an on-demand snapshot for selected Nutanix virtual machines Supported in v9.0+ Take bulk backups for multiple Nutanix virtual machines.
 
 ## Arguments
 

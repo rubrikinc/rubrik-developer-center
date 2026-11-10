@@ -24,6 +24,7 @@ Specific information for Rubrik Cloud Vault (RCV) GCP target created on Rubrik.
 | locationScope | [LocationScope](../enums/LocationScope.md)! | The scope of the location of the target. Possible values are Global or Local. |
 | name | String! | The name of the target. |
 | proxySettings | [ProxySettings](ProxySettings.md) | Proxy configuration used by the Rubrik cluster to reach this Rubrik Cloud Vault GCP location. |
+| rcvResourceCreationReadiness | [RcvResourceCreationReadiness](../enums/RcvResourceCreationReadiness.md)! | Indicates the provisioning state of the cloud resources for this Rubrik Cloud Vault (RCV) archival target. |
 | readerRetrievalMethod | [ReaderRetrievalMethod](../enums/ReaderRetrievalMethod.md) | The retrieval method of the reader target. |
 | region | [RcsRegionEnumType](../enums/RcsRegionEnumType.md)! | Region of RCV GCP target. |
 | runningTasks | Int | Number of archiving tasks running on this target. |

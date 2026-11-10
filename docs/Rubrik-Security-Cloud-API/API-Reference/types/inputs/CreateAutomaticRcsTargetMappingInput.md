@@ -15,6 +15,6 @@ Input for creating RCS locations.
 | redundancy | [RcvRedundancy](../enums/RcvRedundancy.md) | Redundancy for the RCV location. |
 | region | [RcsRegionEnumType](../enums/RcsRegionEnumType.md)! | Region for the RCS location. |
 | rsaKey | String | RSA key for the RCS location. |
-| shouldBypassProxy | Boolean | Specifies whether the proxy settings must be bypassed for  the RCV archival target. |
+| shouldBypassProxy | Boolean | Specifies whether the proxy settings must be bypassed for the RCV archival target. |
 | shouldBypassProxyForDatapaths | Boolean | When set, blob storage (data path) traffic bypasses the configured proxy while Azure AD authentication traffic continues to use it. |
 | tier | [RcsTierEnumType](../enums/RcsTierEnumType.md)! | Tier for the RCS location. |

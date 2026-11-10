@@ -1,6 +1,6 @@
 # deleteNasSystem
 
-Delete a registered NAS system  Supported in v7.0+ Delete a NAS system by specifying the NAS system ID.
+Delete a registered NAS system Supported in v7.0+ Delete a NAS system by specifying the NAS system ID.
 
 ## Arguments
 

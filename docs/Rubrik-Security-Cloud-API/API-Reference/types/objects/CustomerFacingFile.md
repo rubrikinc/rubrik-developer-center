@@ -13,7 +13,7 @@ CustomerFacingFile is all the information that this service has stored about a f
 | externalId | String! | File external ID. |
 | filename | String! | Name of the file. |
 | state | [FileStateEnumType](../enums/FileStateEnumType.md)! | File state. |
-| type | [FileTypeEnumType](../enums/FileTypeEnumType.md)! |  |
+| type | [FileTypeEnumType](../enums/FileTypeEnumType.md)! | File type. |
 
 ## Used By
 

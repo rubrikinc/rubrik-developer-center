@@ -1,6 +1,6 @@
 # putSmbConfiguration
 
-SMB configuration  Supported in v5.0+ SMB configuration.
+SMB configuration Supported in v5.0+ SMB configuration.
 
 ## Arguments
 

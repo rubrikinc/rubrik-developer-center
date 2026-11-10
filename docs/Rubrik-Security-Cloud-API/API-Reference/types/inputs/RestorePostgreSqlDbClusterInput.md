@@ -1,6 +1,6 @@
 # RestorePostgreSqlDbClusterInput
 
-Input for triggering the  PostgreSQL database cluster restore in the provided host.
+Input for triggering the PostgreSQL database cluster restore in the provided host.
 
 ## Fields
 

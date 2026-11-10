@@ -43,4 +43,4 @@ Pending snapshots deletion status for an object.
 - [FusionComputeCluster.pendingObjectDeletionStatus](FusionComputeCluster.md)
 - FusionComputeClusterDescendant.pendingObjectDeletionStatus
 - FusionComputeClusterPhysicalChildType.pendingObjectDeletionStatus
-- *…and 263 more*
+- *…and 264 more*

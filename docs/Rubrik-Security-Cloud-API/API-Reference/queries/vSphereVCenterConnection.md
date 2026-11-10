@@ -41,6 +41,7 @@ Query vSphere vCenters.
           name
           numWorkloadDescendants
           objectType
+          refreshResumeTime
           replicatedObjectCount
           slaAssignment
           slaPauseStatus

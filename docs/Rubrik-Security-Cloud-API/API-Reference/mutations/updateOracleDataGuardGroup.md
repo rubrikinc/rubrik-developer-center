@@ -1,6 +1,6 @@
 # updateOracleDataGuardGroup
 
-Update an Oracle Data Guard group  Supported in v6.0+ Update properties of an Oracle Data Guard group object.
+Update an Oracle Data Guard group Supported in v6.0+ Update properties of an Oracle Data Guard group object.
 
 ## Arguments
 

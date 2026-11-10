@@ -1,6 +1,6 @@
 # deleteMongoSource
 
-Delete a MongoDB source  Supported in v8.1+ Deletes a specific MongoDB source.
+Delete a MongoDB source Supported in v8.1+ Deletes a specific MongoDB source.
 
 ## Arguments
 

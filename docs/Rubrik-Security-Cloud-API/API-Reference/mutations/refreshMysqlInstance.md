@@ -1,6 +1,6 @@
 # refreshMysqlInstance
 
-Refresh MySQL instance metadata  Supported in v9.3+ Initiates a job to refresh metadata of a MySQL instance object. The GET /mysqldb/instance/request/{id} endpoint can be used to monitor the progress of the job.
+Refresh MySQL instance metadata Supported in v9.3+ Initiates a job to refresh metadata of a MySQL instance object. The GET /mysqldb/instance/request/{id} endpoint can be used to monitor the progress of the job.
 
 ## Arguments
 

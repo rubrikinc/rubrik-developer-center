@@ -1,6 +1,6 @@
 # mssqlJobStatus
 
-Get details for an async request  Supported in v5.0+ Returns the task object for an async request related to SQL Server databases.
+Get details for an async request Supported in v5.0+ Returns the task object for an async request related to SQL Server databases.
 
 ## Arguments
 

@@ -9,7 +9,7 @@ Config as the input to start a threat hunt.
 | clusterUuid | String! | UUID used to identify the cluster the request goes to. |
 | fileScanCriteria | [MalwareScanFileCriteria](MalwareScanFileCriteria.md) | Criteria to restrict files to scan. |
 | indicatorsOfCompromise | [[IndicatorOfCompromise](IndicatorOfCompromise.md)!]! | List of IOCs to scan for. |
-| maxMatchesPerSnapshot | Int | Maximum number of matches per shapshot, per IOC.  Scanning for an Indicator Of Compromise within a snapshot will terminate once this many matches have been detected. Defaults to one. |
+| maxMatchesPerSnapshot | Int | Maximum number of matches per shapshot, per IOC. Scanning for an Indicator Of Compromise within a snapshot will terminate once this many matches have been detected. Defaults to one. |
 | name | String! | Name of this threat hunt. |
 | notes | String! | Notes to describe this threat hunt. |
 | objects | [[CdmHierarchySnappableNew](../interfaces/CdmHierarchySnappableNew.md)!]! | The objects to be scanned for malware. |

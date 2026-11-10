@@ -1,6 +1,6 @@
 # nutanixVmAsyncRequestStatus
 
-v5.0-v8.0: Get VM async request details v8.1+: Get virtual machine async request details  Supported in v5.0+ v5.0-v8.0: Get details about a Nutanix VM-related async request. v8.1+: Get details about a Nutanix virtual machine-related async request.
+v5.0-v8.0: Get VM async request details v8.1+: Get virtual machine async request details Supported in v5.0+ v5.0-v8.0: Get details about a Nutanix VM-related async request. v8.1+: Get details about a Nutanix virtual machine-related async request.
 
 ## Arguments
 

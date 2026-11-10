@@ -28,6 +28,7 @@ Represents security metadata of a workload.
 - [AnthropicChildOrg.securityMetadata](AnthropicChildOrg.md)
 - [AnthropicClaudeChatWorkload.securityMetadata](AnthropicClaudeChatWorkload.md)
 - [AnthropicOrg.securityMetadata](AnthropicOrg.md)
+- [AnthropicOrgLocalSessions.securityMetadata](AnthropicOrgLocalSessions.md)
 - [AnthropicOrgSetting.securityMetadata](AnthropicOrgSetting.md)
 - [AnthropicUser.securityMetadata](AnthropicUser.md)
 - [AtlassianSite.securityMetadata](AtlassianSite.md)
@@ -47,5 +48,4 @@ Represents security metadata of a workload.
 - [AzureCosmosNosqlContainer.securityMetadata](AzureCosmosNosqlContainer.md)
 - [AzureCosmosNosqlDatabase.securityMetadata](AzureCosmosNosqlDatabase.md)
 - [AzureDevOpsOrganization.securityMetadata](AzureDevOpsOrganization.md)
-- [AzureDevOpsProject.securityMetadata](AzureDevOpsProject.md)
-- *…and 377 more*
+- *…and 384 more*

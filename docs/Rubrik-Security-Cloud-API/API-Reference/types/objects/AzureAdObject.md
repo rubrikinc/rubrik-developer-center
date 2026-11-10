@@ -12,7 +12,7 @@ Represents a search result for a generic Entra ID object.
 | reverseRelationships | [[AzureAdReverseRelationship](AzureAdReverseRelationship.md)!]! | Reverse relationships of the Entra ID object. |
 | snapshotId | String! | ID of the snapshot containing Entra ID Object. |
 | snapshotRange | [AzureAdSnapshotRange](AzureAdSnapshotRange.md)! | Snapshot range containing the Entra ID object. |
-| type | [AzureAdObjectType](../enums/AzureAdObjectType.md)! |  |
+| type | [AzureAdObjectType](../enums/AzureAdObjectType.md)! | Entra ID object type. |
 
 ## Used By
 

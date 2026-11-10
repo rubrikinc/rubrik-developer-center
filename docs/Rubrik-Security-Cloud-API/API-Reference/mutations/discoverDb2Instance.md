@@ -1,6 +1,6 @@
 # discoverDb2Instance
 
-On-demand discovery of a Db2 instance  Supported in v7.0+ Initiates an on-demand job to discover a Db2 instance.
+On-demand discovery of a Db2 instance Supported in v7.0+ Initiates an on-demand job to discover a Db2 instance.
 
 ## Arguments
 

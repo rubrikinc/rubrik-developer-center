@@ -1,6 +1,6 @@
 # mssqlDatabaseRestoreEstimate
 
-Returns a size estimate for a restore or export  Supported in v5.3+ Provides an estimate of resources needed for the specified restore or export operation.
+Returns a size estimate for a restore or export Supported in v5.3+ Provides an estimate of resources needed for the specified restore or export operation.
 
 ## Arguments
 

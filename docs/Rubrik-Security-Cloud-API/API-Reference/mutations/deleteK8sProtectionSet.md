@@ -1,6 +1,6 @@
 # deleteK8sProtectionSet
 
-Delete a Kubernetes protection set  Supported in v9.1+ Deletes a Kubernetes protection set by specifying the protection set ID.
+Delete a Kubernetes protection set Supported in v9.1+ Deletes a Kubernetes protection set by specifying the protection set ID.
 
 ## Arguments
 

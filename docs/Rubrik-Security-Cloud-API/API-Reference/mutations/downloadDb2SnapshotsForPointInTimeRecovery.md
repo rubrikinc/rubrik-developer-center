@@ -1,6 +1,6 @@
 # downloadDb2SnapshotsForPointInTimeRecovery
 
-Download Db2 database snapshots from archive for a point in time recovery  Supported in v8.0+ Downloads the most recent full snapshot and the log snapshots taken after the full snapshot, required for the point in time recovery of a Db2 database.
+Download Db2 database snapshots from archive for a point in time recovery Supported in v8.0+ Downloads the most recent full snapshot and the log snapshots taken after the full snapshot, required for the point in time recovery of a Db2 database.
 
 ## Arguments
 

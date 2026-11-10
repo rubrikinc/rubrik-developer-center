@@ -1,6 +1,6 @@
 # oracleMissedRecoverableRanges
 
-Get missed recoverable ranges of a Oracle database  Supported in v5.0+ Retrieve a list of missed recoverable ranges for a Oracle database. For each run of one type of error, the first and last occurrence of the error are given.
+Get missed recoverable ranges of a Oracle database Supported in v5.0+ Retrieve a list of missed recoverable ranges for a Oracle database. For each run of one type of error, the first and last occurrence of the error are given.
 
 ## Arguments
 

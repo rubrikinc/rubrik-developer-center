@@ -1,6 +1,6 @@
 # addAndJoinSmbDomain
 
-Add a new domain  Supported in v5.0+ Add a new domain manually and join Active Directory.
+Add a new domain Supported in v5.0+ Add a new domain manually and join Active Directory.
 
 ## Arguments
 

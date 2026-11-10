@@ -1,6 +1,6 @@
 # exportExchangeDatabase
 
-Create a request to export a Microsoft Exchange database  Supported in v9.7 Create a request to export (restore to an alternate target host and database name) a Microsoft Exchange database from a snapshot.
+Create a request to export a Microsoft Exchange database Supported in v9.7 Create a request to export (restore to an alternate target host and database name) a Microsoft Exchange database from a snapshot.
 
 ## Arguments
 

@@ -1,6 +1,6 @@
 # bulkUpdateExchangeDag
 
-Update multiple Exchange DAGs  Supported in v8.0+ Update multiple Exchange DAGs with the specified properties.
+Update multiple Exchange DAGs Supported in v8.0+ Update multiple Exchange DAGs with the specified properties.
 
 ## Arguments
 

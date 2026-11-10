@@ -1,6 +1,6 @@
 # clusterCertificates
 
-Get all certificates  Supported in v5.1+ Get all certificates.
+Get all certificates Supported in v5.1+ Get all certificates.
 
 ## Arguments
 

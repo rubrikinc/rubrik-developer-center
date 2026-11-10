@@ -1,6 +1,6 @@
 # deleteK8sVmMount
 
-Remove a Live Mount of a Kubernetes virtual machine snapshot  Supported in v9.4+ Initiates a request to remove a Live Mount of a Kubernetes virtual machine snapshot identified by the ID of the Live Mount.
+Remove a Live Mount of a Kubernetes virtual machine snapshot Supported in v9.4+ Initiates a request to remove a Live Mount of a Kubernetes virtual machine snapshot identified by the ID of the Live Mount.
 
 ## Arguments
 

@@ -1,6 +1,6 @@
 # vsphereVmInitiateDiskMount
 
-Attaching disks from a snapshot to an existing virtual machine  Supported in v5.0+ Requests a snapshot mount to attach disks to an existing virtual machine.
+Attaching disks from a snapshot to an existing virtual machine Supported in v5.0+ Requests a snapshot mount to attach disks to an existing virtual machine.
 
 ## Arguments
 

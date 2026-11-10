@@ -1,6 +1,6 @@
 # deleteDb2Database
 
-Delete Db2 database  Supported in v8.1+ Deletes a Db2 database.
+Delete Db2 database Supported in v8.1+ Deletes a Db2 database.
 
 ## Arguments
 

@@ -13,4 +13,4 @@ Supported in v5.0+
 | lastName | String | Supported in v5.0+ |
 | mfaServerId | String | Supported in v5.0+ |
 | password | String | Supported in v5.0+ |
-| sshKey | String | Supported in v6.0+ v6.0-v9.2: SSH key used for Rubrik cluster login.  v9.3+: SSH public key used for authorizing Rubrik cluster logins. |
+| sshKey | String | Supported in v6.0+ v6.0-v9.2: SSH key used for Rubrik cluster login. v9.3+: SSH public key used for authorizing Rubrik cluster logins. |

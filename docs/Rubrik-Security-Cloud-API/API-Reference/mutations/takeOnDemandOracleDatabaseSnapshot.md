@@ -1,6 +1,6 @@
 # takeOnDemandOracleDatabaseSnapshot
 
-On-demand backup of an Oracle database  Supported in v5.0+ Create an asynchronous job for an on-demand snapshot of an Oracle database. The response includes an ID for the asynchronous job request. To see the status of the request, poll /oracle/request/{id}.
+On-demand backup of an Oracle database Supported in v5.0+ Create an asynchronous job for an on-demand snapshot of an Oracle database. The response includes an ID for the asynchronous job request. To see the status of the request, poll /oracle/request/{id}.
 
 ## Arguments
 

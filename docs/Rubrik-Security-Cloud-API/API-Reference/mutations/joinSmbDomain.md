@@ -1,6 +1,6 @@
 # joinSmbDomain
 
-Join Active Directory  Supported in v5.0+ Join Active Directory.
+Join Active Directory Supported in v5.0+ Join Active Directory.
 
 ## Arguments
 

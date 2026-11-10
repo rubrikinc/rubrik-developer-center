@@ -1,6 +1,6 @@
 # deleteMysqlInstance
 
-Delete a MySQL instance  Supported in v9.3+ Initiates a job to delete a MySQL instance. GET /mysqldb/instance/request/{id} endpoint can be used to monitor the progress of the job.
+Delete a MySQL instance Supported in v9.3+ Initiates a job to delete a MySQL instance. GET /mysqldb/instance/request/{id} endpoint can be used to monitor the progress of the job.
 
 ## Arguments
 

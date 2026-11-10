@@ -16,6 +16,7 @@ Feature specific details for a cloud account.
 | mappedAccounts | [[AwsMappedAccount](AwsMappedAccount.md)!]! | AWS accounts mapped to this feature. |
 | permissionsGroupVersions | [[PermissionsGroupWithVersion](PermissionsGroupWithVersion.md)!]! | Permissions groups with their versions used to generate the feature template. |
 | permissionsGroups | [[PermissionsGroup](../enums/PermissionsGroup.md)!] | Permissions groups onboarded for the cloud accounts feature. Permissions groups will be present only for customer-managed cluster users. |
+| regionStatuses | [[FeatureRegionStatus](FeatureRegionStatus.md)!] | Per-region state for features that report it, one entry per region in aws_regions. Empty for features that do not report per-region state, and when the state could not be read. |
 | roleArn | String! | Role ARN for feature. This field has a non-empty value only for CFT-based accounts. |
 | roleChainingDetails | [AwsRoleChainingDetails](AwsRoleChainingDetails.md) | AWS account details which facilitates role chaining. |
 | stackArn | String! | Stack ARN for feature. This field has a non-empty value only for CFT-based accounts. |

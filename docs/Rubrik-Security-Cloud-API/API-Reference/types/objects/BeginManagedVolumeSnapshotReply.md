@@ -8,7 +8,7 @@ Supported in v7.0+
 |-------|------|-------------|
 | asyncRequestStatus | [AsyncRequestStatus](AsyncRequestStatus.md) | Supported in v7.0+ Status of the asynchronous request that was initiated for the Managed Volume Begin Snapshot job. |
 | ownerId | String | Supported in v7.0+ An ID representing the owner of a snapshot. |
-| rscSnapshotId | String | RSC Snapshot ID of the snapshot that  will be created for this Managed Volume. |
+| rscSnapshotId | String | RSC Snapshot ID of the snapshot that will be created for this Managed Volume. |
 | snapshotId | String! | Required. Supported in v7.0+ ID of the snapshot. All writes to the Managed Volume until the next end-snapshot call will be part of this snapshot. |
 
 ## Field Arguments

@@ -1,6 +1,6 @@
 # allMssqlDatabaseRestoreFiles
 
-Returns a list all database files to be restored  Supported in v5.3+ Provides a list of database files to be restored for the specified restore or export operation.
+Returns a list all database files to be restored Supported in v5.3+ Provides a list of database files to be restored for the specified restore or export operation.
 
 ## Arguments
 

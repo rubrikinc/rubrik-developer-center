@@ -120,3 +120,4 @@ AWS native account.
 - [AwsNativeRdsInstance.awsNativeAccount](AwsNativeRdsInstance.md)
 - [AwsNativeS3Bucket.awsAccount](AwsNativeS3Bucket.md)
 - [AwsNativeS3Bucket.awsNativeAccount](AwsNativeS3Bucket.md)
+- [BlueprintAwsLocation.account](BlueprintAwsLocation.md)

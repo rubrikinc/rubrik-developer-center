@@ -1,6 +1,6 @@
 # setWebSignedCertificate
 
-Set a signed certificate for Web server  Supported in v5.3+ Setting the given certificate for each node's web server to use.
+Set a signed certificate for Web server Supported in v5.3+ Setting the given certificate for each node's web server to use.
 
 ## Arguments
 

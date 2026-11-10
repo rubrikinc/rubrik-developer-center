@@ -1,6 +1,6 @@
 # createNutanixCluster
 
-Add Nutanix cluster  Supported in v5.0+ Create a Nutanix cluster object by providing an address and account credentials for Prism. Initiates an asynchronous job to establish a connection with the cluster and retrieve all metadata. Use GET /nutanix_cluster/{id}/status to check status.
+Add Nutanix cluster Supported in v5.0+ Create a Nutanix cluster object by providing an address and account credentials for Prism. Initiates an asynchronous job to establish a connection with the cluster and retrieve all metadata. Use GET /nutanix_cluster/{id}/status to check status.
 
 ## Arguments
 

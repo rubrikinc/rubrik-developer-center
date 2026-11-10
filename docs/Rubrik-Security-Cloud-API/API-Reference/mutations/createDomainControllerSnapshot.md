@@ -1,6 +1,6 @@
 # createDomainControllerSnapshot
 
-On-demand snapshot of an Active Directory Domain Controller  Supported in v9.0+ Initiates an on-demand snapshot job of a specified Active Directory Domain Controller.
+On-demand snapshot of an Active Directory Domain Controller Supported in v9.0+ Initiates an on-demand snapshot job of a specified Active Directory Domain Controller.
 
 ## Arguments
 

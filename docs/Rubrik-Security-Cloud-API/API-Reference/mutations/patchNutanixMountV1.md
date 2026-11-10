@@ -1,6 +1,6 @@
 # patchNutanixMountV1
 
-Change Nutanix Live Mount power status  Supported in v6.0+ Changes the power status of a mounted Nutanix virtual machine.
+Change Nutanix Live Mount power status Supported in v6.0+ Changes the power status of a mounted Nutanix virtual machine.
 
 ## Arguments
 

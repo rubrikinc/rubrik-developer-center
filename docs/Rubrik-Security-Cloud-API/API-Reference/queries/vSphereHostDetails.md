@@ -1,6 +1,6 @@
 # vSphereHostDetails
 
-Get details of a ESXi hypervisor  Supported in v5.0+ Get details of a ESXi hypervisor.
+Get details of a ESXi hypervisor Supported in v5.0+ Get details of a ESXi hypervisor.
 
 ## Arguments
 

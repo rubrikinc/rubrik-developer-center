@@ -1,6 +1,6 @@
 # upgradeIoFilter
 
-Upgrade the Rubrik ioFilter for the VMware cluster with a specific ID  Supported in v5.1+ Upgrade the Rubrik ioFilter for a VMware cluster with a specific ID. The cluster must be in maintenance mode to upgrade the ioFilter successfully. The vCenter of the VMware compute cluster must be of version 6.7 and above.
+Upgrade the Rubrik ioFilter for the VMware cluster with a specific ID Supported in v5.1+ Upgrade the Rubrik ioFilter for a VMware cluster with a specific ID. The cluster must be in maintenance mode to upgrade the ioFilter successfully. The vCenter of the VMware compute cluster must be of version 6.7 and above.
 
 ## Arguments
 

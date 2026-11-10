@@ -1,6 +1,6 @@
 # downloadManagedVolumeFiles
 
-Download files from a managed volume backup  Supported in v5.0+ Start an asynchronous job to download multiple files and folders from a specified managed volume backup. The response returns an asynchronous request ID. Get the URL for downloading the ZIP file including the specific files/folders by sending a GET request to 'managed-volume/request/{id}'.
+Download files from a managed volume backup Supported in v5.0+ Start an asynchronous job to download multiple files and folders from a specified managed volume backup. The response returns an asynchronous request ID. Get the URL for downloading the ZIP file including the specific files/folders by sending a GET request to 'managed-volume/request/{id}'.
 
 ## Arguments
 

@@ -24,6 +24,7 @@ AWS native DynamoDB Table.
 | isAwsContinuousBackupEnabled | Boolean! | A boolean specifying whether AWS continuous backup is enabled in the backup region for the table. |
 | isExocomputeConfigured | Boolean! | A boolean specifying whether an exocompute is configured in the region. |
 | isInfrastructureAlertsEnabled | Boolean! | Whether infrastructure deletion alerts are enabled for the DynamoDB table. |
+| isInfrastructureAlertsRegionConnected | Boolean | Whether Critical Resource Protection forwards deletion events from this resource's region. Unset when that could not be determined: CRP is not licensed, or the read failed. |
 | isProtectable | Boolean! | Indicates whether this DynamoDB table is protectable or not. |
 | isRelic | Boolean! | Whether the object is a relic. |
 | legallyHeldSnapshotCount | Int | Number of snapshots on legal hold for this object. |

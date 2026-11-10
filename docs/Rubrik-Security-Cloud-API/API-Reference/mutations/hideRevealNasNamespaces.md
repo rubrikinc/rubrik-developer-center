@@ -1,6 +1,6 @@
 # hideRevealNasNamespaces
 
-Hide and reveal NAS namespaces  Supported in v7.0+ Hide individually selected NAS namespaces by setting the "action" field to "Hide". Reveal the selected NAS namespaces by setting the "action" field to "Reveal".
+Hide and reveal NAS namespaces Supported in v7.0+ Hide individually selected NAS namespaces by setting the "action" field to "Hide". Reveal the selected NAS namespaces by setting the "action" field to "Reveal".
 
 ## Arguments
 

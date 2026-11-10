@@ -1,6 +1,6 @@
 # downloadHypervVirtualMachineSnapshotFiles
 
-Download files from a Hyper-V VM backup  Supported in v5.0+ Start an asynchronous job to download multiple files and folders from a specified Hyper-V VM backup. The response returns an asynchrounous request ID. Get the URL for downloading the ZIP file including the specific files/folders by sending a GET request to 'hyperv/vm/request/{id}'.
+Download files from a Hyper-V VM backup Supported in v5.0+ Start an asynchronous job to download multiple files and folders from a specified Hyper-V VM backup. The response returns an asynchrounous request ID. Get the URL for downloading the ZIP file including the specific files/folders by sending a GET request to 'hyperv/vm/request/{id}'.
 
 ## Arguments
 

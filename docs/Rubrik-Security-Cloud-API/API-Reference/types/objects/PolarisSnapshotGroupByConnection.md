@@ -16,6 +16,7 @@ Paginated list of PolarisSnapshotGroupBy objects. Each page of the results inclu
 **Referenced by**
 
 - [AnthropicClaudeChatWorkload.snapshotGroupByConnection](AnthropicClaudeChatWorkload.md)
+- [AnthropicOrgLocalSessions.snapshotGroupByConnection](AnthropicOrgLocalSessions.md)
 - [AwsNativeConfig.snapshotGroupByConnection](AwsNativeConfig.md)
 - [AwsNativeDynamoDbTable.snapshotGroupByConnection](AwsNativeDynamoDbTable.md)
 - [AwsNativeEbsVolume.snapshotGroupByConnection](AwsNativeEbsVolume.md)
@@ -44,5 +45,4 @@ Paginated list of PolarisSnapshotGroupBy objects. Each page of the results inclu
 - [GoogleWorkspaceSharedDrive.snapshotGroupByConnection](GoogleWorkspaceSharedDrive.md)
 - [GoogleWorkspaceUserDrive.snapshotGroupByConnection](GoogleWorkspaceUserDrive.md)
 - [GoogleWorkspaceUserMailbox.snapshotGroupByConnection](GoogleWorkspaceUserMailbox.md)
-- [JiraProject.snapshotGroupByConnection](JiraProject.md)
-- *…and 26 more*
+- *…and 27 more*

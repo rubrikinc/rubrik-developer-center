@@ -8,6 +8,7 @@ Detailed cloud information for a Cloud Cluster.
 |-------|------|-------------|
 | cloudAccount | String! | Native name of the cloud account where the Cloud Cluster exists. |
 | cloudAccountId | [UUID](../scalars/UUID.md)! | Rubrik-generated cloud account UUID. |
+| connectedCustomerAccounts | [String!]! | Connected customer cloud accounts for BaaS clusters. |
 | isDynamicScalingEnabled | Boolean! | Specifies whether the Cloud Cluster has dynamic scaling enabled. |
 | name | String! | Cloud Cluster name. |
 | nativeCloudAccountId | String! | Native (AWS/Azure) ID of cloud account. |

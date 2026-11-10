@@ -1,6 +1,6 @@
 # createOraclePdbRestore
 
-Restore PDBs on an Oracle database  Supported in v8.0+ Initiates an asynchronous request to restore PDBs on an Oracle database from a specified snapshot or timestamp.
+Restore PDBs on an Oracle database Supported in v8.0+ Initiates an asynchronous request to restore PDBs on an Oracle database from a specified snapshot or timestamp.
 
 ## Arguments
 

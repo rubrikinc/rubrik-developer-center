@@ -1,6 +1,6 @@
 # bulkDeleteFileset
 
-Delete filesets  Supported in v5.0+ Delete filesets by specifying the fileset IDs.
+Delete filesets Supported in v5.0+ Delete filesets by specifying the fileset IDs.
 
 ## Arguments
 

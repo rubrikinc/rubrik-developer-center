@@ -83,6 +83,7 @@ Polaris protectable object.
 ## Implemented By
 
 - [AnthropicClaudeChatWorkload](../objects/AnthropicClaudeChatWorkload.md)
+- [AnthropicOrgLocalSessions](../objects/AnthropicOrgLocalSessions.md)
 - [AwsNativeConfig](../objects/AwsNativeConfig.md)
 - [AwsNativeDynamoDbTable](../objects/AwsNativeDynamoDbTable.md)
 - [AwsNativeEbsVolume](../objects/AwsNativeEbsVolume.md)

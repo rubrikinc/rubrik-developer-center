@@ -1,6 +1,6 @@
 # syslogExportRules
 
-Get the configured syslog export rules  Supported in v5.1+ Return the list of all configured syslog export rules.
+Get the configured syslog export rules Supported in v5.1+ Return the list of all configured syslog export rules.
 
 ## Arguments
 

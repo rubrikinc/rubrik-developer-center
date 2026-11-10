@@ -7,7 +7,7 @@
 | Argument | Type | Description |
 |----------|------|-------------|
 | fid *(required)* | [UUID](../types/scalars/UUID.md)! | Rubrik UUID for the object. |
-| workloadHierarchy | [WorkloadLevelHierarchy](../types/enums/WorkloadLevelHierarchy.md) | Each enumeration value represents the hierarchy of a specific workload type for RBAC and SLA Domain assignments.  A value of 'None' represents the hierarchy of all workload types. |
+| workloadHierarchy | [WorkloadLevelHierarchy](../types/enums/WorkloadLevelHierarchy.md) | Each enumeration value represents the hierarchy of a specific workload type for RBAC and SLA Domain assignments. A value of 'None' represents the hierarchy of all workload types. |
 
 ## Returns
 

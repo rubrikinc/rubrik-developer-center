@@ -1,6 +1,6 @@
 # makePrimary
 
-Make this cluster the primary for agents on a set of hosts  Supported in v5.3+ Migrate the primary cluster with which the agent is able to perform regular operations (backup, restore etc). This can be done on a specified set of hosts or for all hosts that currently have a specified primary cluster for disaster recovery. Specify exactly one of `ids` or `oldPrimaryClusterUuid`.
+Make this cluster the primary for agents on a set of hosts Supported in v5.3+ Migrate the primary cluster with which the agent is able to perform regular operations (backup, restore etc). This can be done on a specified set of hosts or for all hosts that currently have a specified primary cluster for disaster recovery. Specify exactly one of `ids` or `oldPrimaryClusterUuid`.
 
 ## Arguments
 

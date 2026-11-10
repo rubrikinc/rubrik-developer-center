@@ -16,6 +16,7 @@ Paginated list of PolarisSnapshot objects. Each page of the results includes at 
 **Referenced by**
 
 - [AnthropicClaudeChatWorkload.snapshotConnection](AnthropicClaudeChatWorkload.md)
+- [AnthropicOrgLocalSessions.snapshotConnection](AnthropicOrgLocalSessions.md)
 - [AwsNativeConfig.snapshotConnection](AwsNativeConfig.md)
 - [AwsNativeDynamoDbTable.snapshotConnection](AwsNativeDynamoDbTable.md)
 - [AwsNativeEbsVolume.snapshotConnection](AwsNativeEbsVolume.md)
@@ -44,5 +45,4 @@ Paginated list of PolarisSnapshot objects. Each page of the results includes at 
 - [GoogleWorkspaceSharedDrive.snapshotConnection](GoogleWorkspaceSharedDrive.md)
 - [GoogleWorkspaceUserDrive.snapshotConnection](GoogleWorkspaceUserDrive.md)
 - [GoogleWorkspaceUserMailbox.snapshotConnection](GoogleWorkspaceUserMailbox.md)
-- [JiraProject.snapshotConnection](JiraProject.md)
-- *…and 28 more*
+- *…and 29 more*

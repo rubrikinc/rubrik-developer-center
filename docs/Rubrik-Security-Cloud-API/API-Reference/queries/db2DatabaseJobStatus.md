@@ -1,6 +1,6 @@
 # db2DatabaseJobStatus
 
-Retrieve the status of a Db2 database job request  Supported in v8.0+ Retrieve details about a Db2 database-related request which includes the status of the database-related job.
+Retrieve the status of a Db2 database job request Supported in v8.0+ Retrieve details about a Db2 database-related request which includes the status of the database-related job.
 
 ## Arguments
 

@@ -9,7 +9,7 @@ The configuration to start a hunt, including which objects, indicators of compro
 | clusterUuid | [UUID](../scalars/UUID.md)! | UUID used to identify the cluster the request goes to. |
 | fileScanCriteria | [MalwareScanFileCriteriaInput](MalwareScanFileCriteriaInput.md) | Criteria to restrict files to scan. |
 | indicatorsOfCompromise | [[IndicatorOfCompromiseInput](IndicatorOfCompromiseInput.md)!]! | List of IOCs to scan for. |
-| maxMatchesPerSnapshot | Int | Maximum number of matches per shapshot, per IOC.  Scanning for an Indicator Of Compromise within a snapshot will terminate once this many matches have been detected. Defaults to one. |
+| maxMatchesPerSnapshot | Int | Maximum number of matches per shapshot, per IOC. Scanning for an Indicator Of Compromise within a snapshot will terminate once this many matches have been detected. Defaults to one. |
 | name | String! | Name of this threat hunt. |
 | notes | String | Notes to describe this threat hunt. |
 | objectFids | [[UUID](../scalars/UUID.md)!]! | Object FIDs to scan for malware. |

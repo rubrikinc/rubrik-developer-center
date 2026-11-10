@@ -39,6 +39,7 @@ Lists the AWS Native RDS instances under the AWS-native hierarchy root.
           id
           isExocomputeConfigured
           isInfrastructureAlertsEnabled
+          isInfrastructureAlertsRegionConnected
           isMultiAz
           isProtectable
           isRelic

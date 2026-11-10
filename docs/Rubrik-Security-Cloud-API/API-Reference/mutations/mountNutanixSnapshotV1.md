@@ -1,6 +1,6 @@
 # mountNutanixSnapshotV1
 
-Initiate a Live Mount of a Nutanix virtual machine snapshot  Supported in v6.0+ Initiates a request to perform a Live Mount of a Nutanix virtual machine snapshot identified by the snapshot ID.
+Initiate a Live Mount of a Nutanix virtual machine snapshot Supported in v6.0+ Initiates a request to perform a Live Mount of a Nutanix virtual machine snapshot identified by the snapshot ID.
 
 ## Arguments
 

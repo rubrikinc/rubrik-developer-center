@@ -1,6 +1,6 @@
 # exportOracleDatabase
 
-Export an Oracle database  Supported in v5.0+ Request an asynchronous job to export an Oracle database from a specified snapshot or timestamp.
+Export an Oracle database Supported in v5.0+ Request an asynchronous job to export an Oracle database from a specified snapshot or timestamp.
 
 ## Arguments
 

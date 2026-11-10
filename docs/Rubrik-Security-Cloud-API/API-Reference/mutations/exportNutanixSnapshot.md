@@ -1,6 +1,6 @@
 # exportNutanixSnapshot
 
-v5.0-v8.0: Export VM snapshot v8.1+: Export virtual machine snapshot  Supported in v5.0+ v5.0-v8.0: Export snapshot of a vm. v8.1+: Export snapshot of a virtual machine.
+v5.0-v8.0: Export VM snapshot v8.1+: Export virtual machine snapshot Supported in v5.0+ v5.0-v8.0: Export snapshot of a vm. v8.1+: Export snapshot of a virtual machine.
 
 ## Arguments
 

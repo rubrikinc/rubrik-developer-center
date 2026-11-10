@@ -1,6 +1,6 @@
 # refreshDb2Database
 
-On-demand refresh of a Db2 database  Supported in v8.1+ Initiates an on-demand job to refresh a Db2 database. Currently, this is allowed only for Db2 HADR databases.
+On-demand refresh of a Db2 database Supported in v8.1+ Initiates an on-demand job to refresh a Db2 database. Currently, this is allowed only for Db2 HADR databases.
 
 ## Arguments
 

@@ -45,4 +45,4 @@ Latest user note information.
 - [FilesetTemplate.latestUserNote](FilesetTemplate.md)
 - FilesetTemplateDescendantType.latestUserNote
 - FilesetTemplatePhysicalChildType.latestUserNote
-- *…and 267 more*
+- *…and 268 more*

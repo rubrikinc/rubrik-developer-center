@@ -1,6 +1,6 @@
 # updateNasShares
 
-Bulk update multiple NAS shares  Supported in v7.0+ Updates fields like changelist of multiple NAS shares.
+Bulk update multiple NAS shares Supported in v7.0+ Updates fields like changelist of multiple NAS shares.
 
 ## Arguments
 

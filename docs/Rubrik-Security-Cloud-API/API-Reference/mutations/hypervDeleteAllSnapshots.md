@@ -1,6 +1,6 @@
 # hypervDeleteAllSnapshots
 
-Delete all snapshots of VM  Supported in v5.0+ Delete all snapshots of a virtual machine.
+Delete all snapshots of VM Supported in v5.0+ Delete all snapshots of a virtual machine.
 
 ## Arguments
 

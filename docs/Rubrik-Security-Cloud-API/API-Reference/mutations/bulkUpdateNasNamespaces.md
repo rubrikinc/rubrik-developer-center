@@ -1,6 +1,6 @@
 # bulkUpdateNasNamespaces
 
-Update NAS namespaces with SMB credentials  Supported in v8.1+ Add, update, or remove SMB credentials for NAS namespaces.
+Update NAS namespaces with SMB credentials Supported in v8.1+ Add, update, or remove SMB credentials for NAS namespaces.
 
 ## Arguments
 

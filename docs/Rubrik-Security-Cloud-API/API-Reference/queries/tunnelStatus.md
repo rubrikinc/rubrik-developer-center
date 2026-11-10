@@ -1,6 +1,6 @@
 # tunnelStatus
 
-Check support tunnel status for a particular node  Supported in v5.0+ To be used by Admin to check status of the support tunnel.
+Check support tunnel status for a particular node Supported in v5.0+ To be used by Admin to check status of the support tunnel.
 
 ## Arguments
 

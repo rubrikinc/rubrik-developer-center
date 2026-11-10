@@ -1,6 +1,6 @@
 # startK8sDiagnosticsJob
 
-Triggers an on-demand diagnostic job  Supported in v9.4+ Triggers an on-demand diagnostic job for the specified Kubernetes cluster.
+Triggers an on-demand diagnostic job Supported in v9.4+ Triggers an on-demand diagnostic job for the specified Kubernetes cluster.
 
 ## Arguments
 

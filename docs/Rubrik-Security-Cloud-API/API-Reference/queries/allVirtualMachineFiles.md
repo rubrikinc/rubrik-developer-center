@@ -1,6 +1,6 @@
 # allVirtualMachineFiles
 
-Get virtual machine files for a snapshot  Supported in v9.0+ Returns all virtual machine files, such as .vmdk, .vmx, and .nvram files, for the specified virtual machine snapshot.
+Get virtual machine files for a snapshot Supported in v9.0+ Returns all virtual machine files, such as .vmdk, .vmx, and .nvram files, for the specified virtual machine snapshot.
 
 ## Arguments
 

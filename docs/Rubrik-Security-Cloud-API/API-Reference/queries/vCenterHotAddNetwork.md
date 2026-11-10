@@ -1,6 +1,6 @@
 # vCenterHotAddNetwork
 
-Retrieve the user-configured network for HotAdd operations  Supported in v5.3+ Retrieve the user-configured network for HotAdd backup and recovery operations on VMware on AWS.
+Retrieve the user-configured network for HotAdd operations Supported in v5.3+ Retrieve the user-configured network for HotAdd backup and recovery operations on VMware on AWS.
 
 ## Arguments
 

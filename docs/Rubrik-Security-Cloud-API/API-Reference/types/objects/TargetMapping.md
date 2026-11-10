@@ -36,6 +36,7 @@ Target mapping information.
 **Referenced by**
 
 - [ArchivalEntityTargetMapping.targetMapping](ArchivalEntityTargetMapping.md)
+- [ArchivalSpec.archivalGroup](ArchivalSpec.md)
 - [ArchivalSpec.storageSetting](ArchivalSpec.md)
 - [BackupLocationSpec.archivalGroup](BackupLocationSpec.md)
 - [CreateCloudNativeAwsStorageSettingReply.targetMapping](CreateCloudNativeAwsStorageSettingReply.md)

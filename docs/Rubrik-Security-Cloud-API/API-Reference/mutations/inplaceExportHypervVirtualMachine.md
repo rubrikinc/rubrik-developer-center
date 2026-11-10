@@ -1,6 +1,6 @@
 # inplaceExportHypervVirtualMachine
 
-In-place exports a virtual machine snapshot on the host  Supported in v9.1+ Overwrites the Hyperv virtual machine's configuration and virtual disks in-place based on the snapshot. The recovery process only transfers the changed blocks to the target host.
+In-place exports a virtual machine snapshot on the host Supported in v9.1+ Overwrites the Hyperv virtual machine's configuration and virtual disks in-place based on the snapshot. The recovery process only transfers the changed blocks to the target host.
 
 ## Arguments
 

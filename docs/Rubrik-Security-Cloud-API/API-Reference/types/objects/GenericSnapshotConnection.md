@@ -21,6 +21,7 @@ Paginated list of GenericSnapshot objects with additional pagination information
 **Referenced by**
 
 - [AnthropicClaudeChatWorkload.workloadSnapshotConnection](AnthropicClaudeChatWorkload.md)
+- [AnthropicOrgLocalSessions.workloadSnapshotConnection](AnthropicOrgLocalSessions.md)
 - [AwsNativeConfig.workloadSnapshotConnection](AwsNativeConfig.md)
 - [AwsNativeDynamoDbTable.workloadSnapshotConnection](AwsNativeDynamoDbTable.md)
 - [AwsNativeEbsVolume.workloadSnapshotConnection](AwsNativeEbsVolume.md)
@@ -49,5 +50,4 @@ Paginated list of GenericSnapshot objects with additional pagination information
 - [GoogleWorkspaceSharedDrive.workloadSnapshotConnection](GoogleWorkspaceSharedDrive.md)
 - [GoogleWorkspaceUserDrive.workloadSnapshotConnection](GoogleWorkspaceUserDrive.md)
 - [GoogleWorkspaceUserMailbox.workloadSnapshotConnection](GoogleWorkspaceUserMailbox.md)
-- [JiraProject.workloadSnapshotConnection](JiraProject.md)
-- *…and 26 more*
+- *…and 27 more*

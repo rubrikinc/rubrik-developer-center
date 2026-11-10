@@ -1,6 +1,6 @@
 # addClusterCertificate
 
-Import a certificate  Supported in v5.1+ Import a certificate.
+Import a certificate Supported in v5.1+ Import a certificate.
 
 ## Arguments
 

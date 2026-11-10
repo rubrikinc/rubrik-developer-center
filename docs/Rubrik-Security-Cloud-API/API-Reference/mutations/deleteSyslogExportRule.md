@@ -1,6 +1,6 @@
 # deleteSyslogExportRule
 
-Delete the specified syslog export rule  Supported in v5.1+ Delete the syslog export rule specified by the given id.
+Delete the specified syslog export rule Supported in v5.1+ Delete the syslog export rule specified by the given id.
 
 ## Arguments
 

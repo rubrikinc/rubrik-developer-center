@@ -19,7 +19,7 @@ Root of GCP native hierarchy.
 | objectTypeDescendantConnection | objectTypeFilter *(required)* | [HierarchyObjectTypeEnum](../enums/HierarchyObjectTypeEnum.md)! | Type of objects to include. |
 | objectTypeDescendantConnection | filter | [[Filter](../inputs/Filter.md)!] | Hierarchy object filter. |
 | objectTypeDescendantConnection | includeSecurityMetadata | Boolean | Filter to include the security metadata. |
-| objectTypeDescendantConnection | workloadHierarchy | [WorkloadLevelHierarchy](../enums/WorkloadLevelHierarchy.md) | Each enumeration value represents the hierarchy of a specific workload type for RBAC and SLA Domain assignments.  A value of 'None' represents the hierarchy of all workload types. |
+| objectTypeDescendantConnection | workloadHierarchy | [WorkloadLevelHierarchy](../enums/WorkloadLevelHierarchy.md) | Each enumeration value represents the hierarchy of a specific workload type for RBAC and SLA Domain assignments. A value of 'None' represents the hierarchy of all workload types. |
 
 ## Used By
 

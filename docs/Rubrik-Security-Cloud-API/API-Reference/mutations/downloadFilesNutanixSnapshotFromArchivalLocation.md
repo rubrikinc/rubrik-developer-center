@@ -1,6 +1,6 @@
 # downloadFilesNutanixSnapshotFromArchivalLocation
 
-Initiate a job to download multiple files or folders  Supported in v8.0+ v8.0: Initiates a job to download one or more files or folders from an archived Nutanix VM snapshot. Returns the job instance ID. v8.1+: Initiates a job to download one or more files or folders from an archived Nutanix virtual machine snapshot. Returns the job instance ID.
+Initiate a job to download multiple files or folders Supported in v8.0+ v8.0: Initiates a job to download one or more files or folders from an archived Nutanix VM snapshot. Returns the job instance ID. v8.1+: Initiates a job to download one or more files or folders from an archived Nutanix virtual machine snapshot. Returns the job instance ID.
 
 ## Arguments
 

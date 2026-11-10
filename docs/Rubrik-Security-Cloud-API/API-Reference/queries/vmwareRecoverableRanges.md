@@ -1,6 +1,6 @@
 # vmwareRecoverableRanges
 
-Get available time ranges for point in time recovery  Supported in v5.1+ Gets time ranges available for point-in-time recovery. The time ranges are indicated by start and end date-time strings.
+Get available time ranges for point in time recovery Supported in v5.1+ Gets time ranges available for point-in-time recovery. The time ranges are indicated by start and end date-time strings.
 
 ## Arguments
 

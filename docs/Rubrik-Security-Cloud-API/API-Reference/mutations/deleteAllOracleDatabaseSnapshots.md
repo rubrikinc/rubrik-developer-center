@@ -1,6 +1,6 @@
 # deleteAllOracleDatabaseSnapshots
 
-Delete Oracle database snapshots  Supported in v5.0+ Delete all snapshots for a specified Oracle database object. For the operation to succeed the referenced database must not be assigned to an SLA Domain.
+Delete Oracle database snapshots Supported in v5.0+ Delete all snapshots for a specified Oracle database object. For the operation to succeed the referenced database must not be assigned to an SLA Domain.
 
 ## Arguments
 

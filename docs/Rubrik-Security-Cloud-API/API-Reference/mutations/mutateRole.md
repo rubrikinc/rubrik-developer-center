@@ -9,9 +9,10 @@ Creates a role if `roleId` is not provided; otherwise updates the existing role.
 | roleId | String | ID of the role. |
 | name *(required)* | String! | Name of the role. |
 | description *(required)* | String! | Description of the role. |
-| permissions *(required)* | [[PermissionInput](../types/inputs/PermissionInput.md)!]! | Permissions in the role. |
+| permissions *(required)* | [[PermissionInput](../types/inputs/PermissionInput.md)!]! | Object-scoped permissions in the role. A role is either object-scoped (permissions) or tag-scoped (tagPermissions), never both. |
 | protectableClusters *(required)* | [String!]! | List of protectable clusters. |
 | isSynced | Boolean | Determines whether the role is marked to be synced to Rubrik CDM; false if null. |
+| tagPermissions | [[TagPermissionInput](../types/inputs/TagPermissionInput.md)!] | Tag-scoped permissions in the role. A role is either object-scoped (permissions) or tag-scoped (tagPermissions), never both. |
 
 ## Returns
 

@@ -1,6 +1,6 @@
 # hideRevealNasShares
 
-Hide or reveal NAS shares  Supported in v7.0+ Hide individually selected NAS shares by setting the "action" field to "Hide". Reveal selected NAS shares by setting the "action" field to "Reveal".
+Hide or reveal NAS shares Supported in v7.0+ Hide individually selected NAS shares by setting the "action" field to "Hide". Reveal selected NAS shares by setting the "action" field to "Reveal".
 
 ## Arguments
 

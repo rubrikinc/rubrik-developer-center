@@ -14,4 +14,5 @@ VMware virtual machine volume.
 
 **Referenced by**
 
+- [VmwareResourceSpec.vmWareVolumeSpecs](VmwareResourceSpec.md)
 - [VmwareVirtualMachineResourceSpec.storageVolumes](VmwareVirtualMachineResourceSpec.md)

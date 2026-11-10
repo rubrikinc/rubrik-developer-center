@@ -27,6 +27,7 @@ GetAwsNativeDynamoDbTable returns the AWS native DynamoDB table identified by th
         isAwsContinuousBackupEnabled
         isExocomputeConfigured
         isInfrastructureAlertsEnabled
+        isInfrastructureAlertsRegionConnected
         isProtectable
         isRelic
         legallyHeldSnapshotCount

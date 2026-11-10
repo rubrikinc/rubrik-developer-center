@@ -1,6 +1,6 @@
 # downloadHypervVirtualMachineSnapshot
 
-Creates a download from archival request  Supported in v5.0+ Download a snapshot from archival.
+Creates a download from archival request Supported in v5.0+ Download a snapshot from archival.
 
 ## Arguments
 

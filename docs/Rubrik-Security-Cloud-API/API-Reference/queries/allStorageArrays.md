@@ -1,6 +1,6 @@
 # allStorageArrays
 
-Summary of all storage arrays  Supported in v5.0+ Retrieve the host IP and username for all storage arrays.
+Summary of all storage arrays Supported in v5.0+ Retrieve the host IP and username for all storage arrays.
 
 ## Arguments
 

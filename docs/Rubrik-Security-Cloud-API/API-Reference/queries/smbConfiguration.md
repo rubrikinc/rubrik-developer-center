@@ -1,6 +1,6 @@
 # smbConfiguration
 
-Get SMB configuration  Supported in v5.0+ Get SMB configuration.
+Get SMB configuration Supported in v5.0+ Get SMB configuration.
 
 ## Arguments
 

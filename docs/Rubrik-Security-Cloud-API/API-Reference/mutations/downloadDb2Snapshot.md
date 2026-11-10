@@ -1,6 +1,6 @@
 # downloadDb2Snapshot
 
-Download Db2 database snapshot from archive  Supported in v8.0+ Downloads a specific Db2 database snapshot from the specified archival location.
+Download Db2 database snapshot from archive Supported in v8.0+ Downloads a specific Db2 database snapshot from the specified archival location.
 
 ## Arguments
 

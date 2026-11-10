@@ -1,6 +1,6 @@
 # vsphereVMRecoverableRangeInBatch
 
-Returns the recoverable ranges for a set of CDP-enabled virtual machines  Supported in v5.3+.
+Returns the recoverable ranges for a set of CDP-enabled virtual machines Supported in v5.3+.
 
 ## Arguments
 

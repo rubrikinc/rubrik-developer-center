@@ -1,6 +1,6 @@
 # createOnDemandSapHanaBackup
 
-Create on demand database snapshot  Supported in v5.3+ Initiates a job to take an on demand full snapshot of a specified SAP HANA database object. The GET /sap_hana/db/request/{id} endpoint can be used to monitor the progress of the job.
+Create on demand database snapshot Supported in v5.3+ Initiates a job to take an on demand full snapshot of a specified SAP HANA database object. The GET /sap_hana/db/request/{id} endpoint can be used to monitor the progress of the job.
 
 ## Arguments
 

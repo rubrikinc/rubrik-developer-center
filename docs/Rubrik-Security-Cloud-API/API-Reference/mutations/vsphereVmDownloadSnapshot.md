@@ -1,6 +1,6 @@
 # vsphereVmDownloadSnapshot
 
-Download snapshot from archive  Supported in v5.0+ Provides a method for retrieving a snapshot, that is not available locally, from an archival location.
+Download snapshot from archive Supported in v5.0+ Provides a method for retrieving a snapshot, that is not available locally, from an archival location.
 
 ## Arguments
 

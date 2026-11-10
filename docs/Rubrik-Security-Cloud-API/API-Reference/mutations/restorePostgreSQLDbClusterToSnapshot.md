@@ -1,6 +1,6 @@
 # restorePostgreSQLDbClusterToSnapshot
 
-Mount the specified PostgreSQL database cluster snapshot to host  Supported in v9.2+ Initiates a job to mount the snapshot to the given host. The GET /postgresql/db_cluster/request/{id} endpoint can be used to monitor the progress of the job.
+Mount the specified PostgreSQL database cluster snapshot to host Supported in v9.2+ Initiates a job to mount the snapshot to the given host. The GET /postgresql/db_cluster/request/{id} endpoint can be used to monitor the progress of the job.
 
 ## Arguments
 

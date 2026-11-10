@@ -1,6 +1,6 @@
 # finishArchivalMigration
 
-Finishes an archival migration by swapping the source location's backing storage to point to the migration target.  Prerequisites: - Data copy to the migration target must be complete. - Data validation must have succeeded.  Calling this before prerequisites are met may result in data loss or an inconsistent location state.
+Finishes an archival migration by swapping the source location's backing storage to point to the migration target. Prerequisites: - Data copy to the migration target must be complete. - Data validation must have succeeded. Calling this before prerequisites are met may result in data loss or an inconsistent location state.
 
 ## Arguments
 

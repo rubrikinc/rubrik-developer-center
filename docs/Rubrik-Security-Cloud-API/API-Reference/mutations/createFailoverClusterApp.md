@@ -1,6 +1,6 @@
 # createFailoverClusterApp
 
-Create a failover cluster app  Supported in v5.2+ Create a failover cluster app.
+Create a failover cluster app Supported in v5.2+ Create a failover cluster app.
 
 ## Arguments
 

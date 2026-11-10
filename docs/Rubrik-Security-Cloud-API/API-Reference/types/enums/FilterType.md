@@ -19,6 +19,7 @@ FilterType represents the possible types of filters.
 | SECURITY_GPO_CLEAR_TEXT_PASSWORD | Filter for GPOs that configure the "Store passwords using reversible encryption" (ClearTextPassword) security option. Selects GPOs where the setting is configured to store passwords using reversible encryption (ClearTextPassword = 1). |
 | SECURITY_GPO_LDAP_SIGNING | GPO "LDAP signing not required" filter. Selects GPOs that configure the LDAPServerIntegrity security option and flags those whose decrypted value is not 2 (Require signing). Values: 0 = None (insecure), 1 = Negotiate signing (accepts unsigned, insecure), 2 = Require signing (secure). |
 | SECURITY_GPO_LLMNR_ENABLED | GPO "LLMNR explicitly enabled" filter. Selects GPOs that configure the EnableMulticast registry value under DNSClient to 1, explicitly re-enabling LLMNR and creating a credential interception risk. |
+| SECURITY_GPO_NETLOGON_VULNERABLE_CHANNEL | GPO "vulnerable Netlogon secure channel allowed" filter. Selects GPOs that configure the VulnerableChannelAllowList security option to a non-empty allow-list, which lets the listed principals use the vulnerable Netlogon secure channel (CVE-2020-1472, Zerologon). The predicate is fixed at IS_NOT [""]. |
 | SECURITY_GPO_NO_LM_HASH | Filter for GPOs that configure the "Do not store LAN Manager hash value" security option. Selects GPOs where the NoLMHash setting is configured to store LM hashes (NoLMHash = 0). |
 | SECURITY_GPO_RISKY_MACHINE_SCRIPT | GPO "risky machine script path" filter. Selects GPOs that configure a Startup or Shutdown machine script whose Command path falls outside the GPO's own SYSVOL directory (gPCFileSysPath), indicating an externally- sourced script that may be used for persistence or privilege escalation. |
 | SECURITY_GPO_SE_ASSIGN_PRIMARY_TOKEN_PRIVILEGE | Filter for GPOs that grant the "Replace a process level token" (SeAssignPrimaryTokenPrivilege) user right to a non-default principal. |
@@ -69,6 +70,7 @@ FilterType represents the possible types of filters.
 | SECURITY_IDENTITY_METADATA_BITMASK | Identity metadata bitmask check filter (bit SET/NOT_SET). |
 | SECURITY_IDENTITY_METADATA_LABEL | Identity-level metadata label filter. |
 | SECURITY_IDENTITY_METADATA_LIST_LENGTH | Identity metadata list length comparison filter (JSON_LENGTH with relational operator). |
+| SECURITY_IDENTITY_METADATA_NUMERIC_COMPARISON | Identity metadata numeric comparison filter, used for comparing numeric metadata. |
 | SECURITY_IDENTITY_METADATA_VALUES | Identity metadata values filter (CONTAINS / DOES_NOT_CONTAIN). |
 | SECURITY_IDENTITY_MFA_STRENGTH | Identity MFA strength filter for users. |
 | SECURITY_IDENTITY_NAME | Identity name filter. |

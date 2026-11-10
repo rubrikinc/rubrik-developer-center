@@ -1,6 +1,6 @@
 # PolicyViolationCsvColumn
 
-Columns available for the policy violations CSV export. Validity per group-by view is enforced server-side; not all columns are valid in every grouping (the server rejects invalid combinations with INVALID_ARGUMENT).  Valid columns by group-by view: GROUP_BY_NONE:     POLICY_NAME, SEVERITY, IDENTITY_NAME, STATUS, SOURCE, DETECTION_TIME, FRAMEWORK, TICKET_NUMBER, RESOLVED_ON. GROUP_BY_POLICY:   POLICY_NAME, SEVERITY, VIOLATION_COUNT, CATEGORY, SOURCE, FRAMEWORK. GROUP_BY_RESOURCE: IDENTITY_NAME, IDENTITY_TITLE, VIOLATION_COUNT, SOURCE, IDENTITY_ORIGIN.
+Columns available for the policy violations CSV export. Validity per group-by view is enforced server-side; not all columns are valid in every grouping (the server rejects invalid combinations with INVALID_ARGUMENT). Valid columns by group-by view: GROUP_BY_NONE: POLICY_NAME, SEVERITY, IDENTITY_NAME, STATUS, SOURCE, DETECTION_TIME, FRAMEWORK, TICKET_NUMBER, RESOLVED_ON. GROUP_BY_POLICY: POLICY_NAME, SEVERITY, VIOLATION_COUNT, CATEGORY, SOURCE, FRAMEWORK. GROUP_BY_RESOURCE: IDENTITY_NAME, IDENTITY_TITLE, VIOLATION_COUNT, SOURCE, IDENTITY_ORIGIN.
 
 ## Values
 

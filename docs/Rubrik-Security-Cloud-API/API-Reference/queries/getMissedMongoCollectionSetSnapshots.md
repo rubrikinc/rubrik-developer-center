@@ -1,6 +1,6 @@
 # getMissedMongoCollectionSetSnapshots
 
-Retrieve information on the missed snapshots for a MongoDB collection set  Supported in v9.5+ Retrieve the time of day when the snapshots were missed for a MongoDB collection set.
+Retrieve information on the missed snapshots for a MongoDB collection set Supported in v9.5+ Retrieve the time of day when the snapshots were missed for a MongoDB collection set.
 
 ## Arguments
 

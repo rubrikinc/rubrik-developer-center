@@ -1,6 +1,6 @@
 # nutanixClusterAsyncRequestStatus
 
-Get Nutanix cluster async request  Supported in v5.0+ Get details about a Nutanix cluster-related async request.
+Get Nutanix cluster async request Supported in v5.0+ Get details about a Nutanix cluster-related async request.
 
 ## Arguments
 

@@ -8,7 +8,7 @@ Expiration settings for access package assignments.
 |-------|------|-------------|
 | durationSeconds | [Long](../scalars/Long.md)! | Duration before assignments expire, in seconds (e.g. P30D -> 2592000). Zero when the expiration mode is not duration-based. |
 | endDateTime | [DateTime](../scalars/DateTime.md) | Date and time when assignments expire. |
-| type | [EmExpirationType](../enums/EmExpirationType.md)! |  |
+| type | [EmExpirationType](../enums/EmExpirationType.md)! | Expiration mode (duration, date and time, or never). |
 
 ## Used By
 

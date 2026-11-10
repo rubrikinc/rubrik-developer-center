@@ -1,6 +1,6 @@
 # updateHypervVirtualMachine
 
-Update VM  Supported in v5.0+ Update VM with specified properties.
+Update VM Supported in v5.0+ Update VM with specified properties.
 
 ## Arguments
 

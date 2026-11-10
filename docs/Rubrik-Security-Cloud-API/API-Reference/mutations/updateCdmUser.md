@@ -1,6 +1,6 @@
 # updateCdmUser
 
-ADMIN ONLY: Update existing User  Supported in v5.0+ To be used by Admin to update existing User.
+ADMIN ONLY: Update existing User Supported in v5.0+ To be used by Admin to update existing User.
 
 ## Arguments
 

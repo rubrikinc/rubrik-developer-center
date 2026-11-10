@@ -1,6 +1,6 @@
 # addSapHanaSystem
 
-Add a SAP HANA system  Supported in v5.3+ Add a SAP HANA system to the Rubrik cluster.
+Add a SAP HANA system Supported in v5.3+ Add a SAP HANA system to the Rubrik cluster.
 
 ## Arguments
 

@@ -1,6 +1,6 @@
 # deleteNutanixCluster
 
-Remove Nutanix cluster  Supported in v5.0+ Initiates an asynchronous job to remove a Nutanix cluster object. The Nutanix cluster cannot have VMs mounted through the Rubrik cluster.
+Remove Nutanix cluster Supported in v5.0+ Initiates an asynchronous job to remove a Nutanix cluster object. The Nutanix cluster cannot have VMs mounted through the Rubrik cluster.
 
 ## Arguments
 

@@ -45,4 +45,4 @@ Paginated list of CdmSnapshotGroupBySummary objects. Each page of the results in
 - [PingFederateClusterV1.snapshotGroupBySummary](PingFederateClusterV1.md)
 - [PostgreSQLDbCluster.snapshotGroupBySummary](PostgreSQLDbCluster.md)
 - [ProxmoxVirtualMachineV1.snapshotGroupBySummary](ProxmoxVirtualMachineV1.md)
-- *…and 10 more*
+- *…and 11 more*

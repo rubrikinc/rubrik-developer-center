@@ -20,4 +20,5 @@ Active Directory Domain Controller recovery specification.
 **Referenced by**
 
 - [AdfrRecoverySpec.addc](AdfrRecoverySpec.md)
+- [AdfrRecoverySpecType.addc](AdfrRecoverySpecType.md)
 - [WorkloadSpecificRecoverySpec.addc](WorkloadSpecificRecoverySpec.md)

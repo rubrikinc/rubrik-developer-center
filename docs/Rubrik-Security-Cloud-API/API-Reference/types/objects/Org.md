@@ -52,6 +52,7 @@ Details of an org.
 - [AnthropicChildOrg.allOrgs](AnthropicChildOrg.md)
 - [AnthropicClaudeChatWorkload.allOrgs](AnthropicClaudeChatWorkload.md)
 - [AnthropicOrg.allOrgs](AnthropicOrg.md)
+- [AnthropicOrgLocalSessions.allOrgs](AnthropicOrgLocalSessions.md)
 - [AnthropicOrgSetting.allOrgs](AnthropicOrgSetting.md)
 - [AnthropicUser.allOrgs](AnthropicUser.md)
 - [AtlassianSite.allOrgs](AtlassianSite.md)
@@ -70,5 +71,4 @@ Details of an org.
 - [AzureCosmosNosqlAccount.allOrgs](AzureCosmosNosqlAccount.md)
 - [AzureCosmosNosqlContainer.allOrgs](AzureCosmosNosqlContainer.md)
 - [AzureCosmosNosqlDatabase.allOrgs](AzureCosmosNosqlDatabase.md)
-- [AzureDevOpsOrganization.allOrgs](AzureDevOpsOrganization.md)
-- *…and 384 more*
+- *…and 391 more*

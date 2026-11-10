@@ -45,4 +45,4 @@ Paginated list of CdmSnapshot objects. Each page of the results includes at most
 - [OpenstackImage.snapshotConnection](OpenstackImage.md)
 - [OpenstackVirtualMachine.snapshotConnection](OpenstackVirtualMachine.md)
 - [OracleDataGuardGroup.snapshotConnection](OracleDataGuardGroup.md)
-- *…and 14 more*
+- *…and 15 more*

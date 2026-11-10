@@ -1,6 +1,6 @@
 # Unions
 
-34 types.
+36 types.
 
 [AccessMethodDetailsType](AccessMethodDetailsType.md)  
 [ActionTypes](ActionTypes.md)  
@@ -28,6 +28,8 @@
 [PossibleFilterValues](PossibleFilterValues.md)  
 [PrincipalMetadata](PrincipalMetadata.md)  
 [RansomwareResultGroupByInfo](RansomwareResultGroupByInfo.md)  
+[RecoveryPlanChildResourceSpec](RecoveryPlanChildResourceSpec.md)  
+[RecoveryPlanChildWorkload](RecoveryPlanChildWorkload.md)  
 [RemediationDetailsUnion](RemediationDetailsUnion.md)  
 [ResourceMetadataUnion](ResourceMetadataUnion.md)  
 [SnappableGroupByInfo](SnappableGroupByInfo.md)  

@@ -1,6 +1,6 @@
 # SegregatedFETBConsumption
 
-6 segregation buckets: (active/relic) \u00D7 (Protected/DoNotProtect/NoSla)
+6 segregation buckets: (active/relic) × (Protected/DoNotProtect/NoSla)
 
 ## Fields
 

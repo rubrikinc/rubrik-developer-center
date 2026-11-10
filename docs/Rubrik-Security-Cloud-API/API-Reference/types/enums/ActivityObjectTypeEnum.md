@@ -17,6 +17,7 @@ Represents different types of activity objects.
 | ANTHROPIC_CHILD_ORG_USER | Anthropic child org user. |
 | ANTHROPIC_DEVICE | Anthropic device. |
 | ANTHROPIC_ORG | Anthropic org. |
+| ANTHROPIC_ORG_LOCAL_SESSIONS | Claude local sessions of an Anthropic org. |
 | ANTHROPIC_ORG_SETTINGS | Anthropic org settings. |
 | ANTHROPIC_USER_CLAUDE_CHAT | Anthropic user Claude chat. |
 | ATLASSIAN_SITE | Atlassian site. |
@@ -158,7 +159,13 @@ Represents different types of activity objects.
 | M365_BACKUP_STORAGE_ONEDRIVE | Microsoft 365 Backup Storage OneDrive. |
 | M365_BACKUP_STORAGE_ORG | Microsoft 365 Backup Storage Subscription. |
 | M365_BACKUP_STORAGE_SITE | Microsoft 365 Backup Storage SharePoint Site. |
+| M365_CONFIGS_DEFENDER | M365 Configurations Defender for Office 365 settings. |
+| M365_CONFIGS_EXCHANGE | M365 Configurations Exchange Online settings. |
+| M365_CONFIGS_ONEDRIVE | M365 Configurations OneDrive settings. |
 | M365_CONFIGS_ORG | M365 Configurations Organization. |
+| M365_CONFIGS_PURVIEW | M365 Configurations Purview settings. |
+| M365_CONFIGS_SHAREPOINT | M365 Configurations SharePoint settings. |
+| M365_CONFIGS_TEAMS | M365 Configurations Teams settings. |
 | MARIADB_INSTANCE | MariaDB instance. |
 | MICROSOFT_DEFENDER_INTEGRATION | Microsoft Defender for Identity integration object. |
 | MONGODB_COLLECTION | MongoDB collection. |
@@ -312,6 +319,10 @@ Represents different types of activity objects.
 | UnknownObjectType | Unknown object type. |
 | Upgrade | Upgrade. |
 | User | User. |
+| VCFA_APPLIANCE | VMware Cloud Foundation Automation (VCFA) appliance. The root of the VCFA inventory hierarchy under the vSphere root, not a protectable object. |
+| VCFA_ORG | VMware Cloud Foundation Automation (VCFA) organization. An inventory hierarchy level under a VCFA appliance, not a protectable object. |
+| VCFA_PROJECT | VMware Cloud Foundation Automation (VCFA) project. An inventory hierarchy level under a VCFA organization, not a protectable object. |
+| VCFA_REGION | VMware Cloud Foundation Automation (VCFA) region. An inventory hierarchy level under a VCFA appliance, not a protectable object. |
 | VCF_FLEET | VMware Cloud Foundation (VCF) fleet. An inventory hierarchy level above the VCF instances, not a protectable object. |
 | VCF_INSTANCE | VMware Cloud Foundation (VCF) instance. An inventory hierarchy level between a fleet and its vCenters, not a protectable object. |
 | VMWARE_HOST | VMware host. |

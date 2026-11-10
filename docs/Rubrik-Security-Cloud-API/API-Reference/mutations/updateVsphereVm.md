@@ -1,6 +1,6 @@
 # updateVsphereVm
 
-Update VM  Supported in v5.0+ Update a virtual machine with specified properties. Use the guestCredential field to update the guest credential for a specified virtual machine.
+Update VM Supported in v5.0+ Update a virtual machine with specified properties. Use the guestCredential field to update the guest credential for a specified virtual machine.
 
 ## Arguments
 

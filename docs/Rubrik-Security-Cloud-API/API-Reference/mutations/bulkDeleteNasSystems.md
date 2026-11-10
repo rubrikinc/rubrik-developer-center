@@ -1,6 +1,6 @@
 # bulkDeleteNasSystems
 
-Delete multiple NAS systems  Supported in v7.0+ Triggers a delete of the specified NAS systems. Returns an asynchronous request to check their delete status.
+Delete multiple NAS systems Supported in v7.0+ Triggers a delete of the specified NAS systems. Returns an asynchronous request to check their delete status.
 
 ## Arguments
 

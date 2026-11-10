@@ -1,6 +1,6 @@
 # kubernetesVirtualMachineSnapshots
 
-Get a list of snapshots of a Kubernetes virtual machine  Supported in v9.3+ Retrieves summary information for each of the snapshots of a specified Kubernetes virtual machine.
+Get a list of snapshots of a Kubernetes virtual machine Supported in v9.3+ Retrieves summary information for each of the snapshots of a specified Kubernetes virtual machine.
 
 ## Arguments
 

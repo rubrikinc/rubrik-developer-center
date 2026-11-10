@@ -1,6 +1,6 @@
 # createOnDemandVolumeGroupBackup
 
-Create on-demand snapshot for the Volume Group  Supported in v5.3+ Create an on-demand snapshot for the given Volume Group ID.
+Create on-demand snapshot for the Volume Group Supported in v5.3+ Create an on-demand snapshot for the given Volume Group ID.
 
 ## Arguments
 

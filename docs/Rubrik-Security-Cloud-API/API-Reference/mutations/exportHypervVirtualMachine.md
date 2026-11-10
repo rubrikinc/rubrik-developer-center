@@ -1,6 +1,6 @@
 # exportHypervVirtualMachine
 
-Export VM snapshot  Supported in v5.0+ Export snapshot of a vm.
+Export VM snapshot Supported in v5.0+ Export snapshot of a vm.
 
 ## Arguments
 

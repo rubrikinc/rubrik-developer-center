@@ -1,6 +1,6 @@
 # updateVcenterHotAddNetwork
 
-Set the user-configured network for HotAdd backup and recovery  Supported in v5.3+ Set the user-configured network for HotAdd backup and recovery operations on VMware on AWS.
+Set the user-configured network for HotAdd backup and recovery Supported in v5.3+ Set the user-configured network for HotAdd backup and recovery operations on VMware on AWS.
 
 ## Arguments
 

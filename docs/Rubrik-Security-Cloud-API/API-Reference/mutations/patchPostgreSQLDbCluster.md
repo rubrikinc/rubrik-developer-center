@@ -1,6 +1,6 @@
 # patchPostgreSQLDbCluster
 
-Update properties of the PostgreSQL database cluster instance  Supported in v9.2+ Start an asynchronous job to update the properties of the PostgreSQL database cluster.
+Update properties of the PostgreSQL database cluster instance Supported in v9.2+ Start an asynchronous job to update the properties of the PostgreSQL database cluster.
 
 ## Arguments
 

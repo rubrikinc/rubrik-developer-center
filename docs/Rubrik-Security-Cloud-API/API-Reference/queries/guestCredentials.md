@@ -1,6 +1,6 @@
 # guestCredentials
 
-Summary of all guest OS credentials  Supported in v5.0+ Retrieve the ID, domain, username and password for all guest OS credentials.
+Summary of all guest OS credentials Supported in v5.0+ Retrieve the ID, domain, username and password for all guest OS credentials.
 
 ## Arguments
 

@@ -14,4 +14,5 @@ Nutanix virtual machine volume.
 
 **Referenced by**
 
+- [NutanixResourceSpec.nutanixVolumeSpecs](NutanixResourceSpec.md)
 - [NutanixVirtualMachineResourceSpec.storageVolumes](NutanixVirtualMachineResourceSpec.md)

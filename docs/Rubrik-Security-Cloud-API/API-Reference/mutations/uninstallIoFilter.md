@@ -1,6 +1,6 @@
 # uninstallIoFilter
 
-Uninstall the Rubrik ioFilter from the VMware cluster with a specific ID  Supported in v5.1+ Uninstall the Rubrik ioFilter from the VMware cluster with a specific ID. The cluster must be in maintenance mode to uninstall the ioFilter successfully. The vCenter of the VMware compute cluster must be of version 6.7 and above.
+Uninstall the Rubrik ioFilter from the VMware cluster with a specific ID Supported in v5.1+ Uninstall the Rubrik ioFilter from the VMware cluster with a specific ID. The cluster must be in maintenance mode to uninstall the ioFilter successfully. The vCenter of the VMware compute cluster must be of version 6.7 and above.
 
 ## Arguments
 

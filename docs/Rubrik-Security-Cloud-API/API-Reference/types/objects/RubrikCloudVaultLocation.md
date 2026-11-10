@@ -10,7 +10,7 @@ Rubrik Cloud Vault archival location details.
 | id | [UUID](../scalars/UUID.md)! | The Rubrik Cloud Vault ID. |
 | name | String! | The Rubrik Cloud Vault name. |
 | slaDomains | [String!]! | SLA Domains connecting the Rubrik cluster to the Rubrik Cloud Vault. |
-| type | [RubrikCloudVaultType](../enums/RubrikCloudVaultType.md)! |  |
+| type | [RubrikCloudVaultType](../enums/RubrikCloudVaultType.md)! | The Rubrik Cloud Vault type. |
 
 ## Used By
 

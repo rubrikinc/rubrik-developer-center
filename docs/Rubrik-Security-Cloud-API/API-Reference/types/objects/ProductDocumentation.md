@@ -16,7 +16,7 @@ A help topic in the product documentation.
 | prevDocTitle | String! | Title of the previous topic. |
 | related | [[RelatedContent](RelatedContent.md)!]! | List of related help topics. |
 | title | String! | Title of the help topic. |
-| type | [ProductDocumentationType](../enums/ProductDocumentationType.md)! |  |
+| type | [ProductDocumentationType](../enums/ProductDocumentationType.md)! | Type of the help topic. |
 
 ## Used By
 

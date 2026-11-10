@@ -1,6 +1,6 @@
 # addManagedVolume
 
-Create a Managed Volume  Supported in v7.0+ v7.0: Initiates an asynchronous job to create a Managed Volume stack. v8.0+: Start an asynchronous job to create a Managed Volume stack.
+Create a Managed Volume Supported in v7.0+ v7.0: Initiates an asynchronous job to create a Managed Volume stack. v8.0+: Start an asynchronous job to create a Managed Volume stack.
 
 ## Arguments
 

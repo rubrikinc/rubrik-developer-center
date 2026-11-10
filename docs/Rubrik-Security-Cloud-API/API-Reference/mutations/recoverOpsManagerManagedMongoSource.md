@@ -1,6 +1,6 @@
 # recoverOpsManagerManagedMongoSource
 
-Recover an existing snapshot to the target MongoDB cluster managed by Ops Manager  Supported in v9.3+ Recovers the selected snapshot to target MongoDB cluster.
+Recover an existing snapshot to the target MongoDB cluster managed by Ops Manager Supported in v9.3+ Recovers the selected snapshot to target MongoDB cluster.
 
 ## Arguments
 

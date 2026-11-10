@@ -1,6 +1,6 @@
 # hypervServers
 
-Get summary of all the Hyper-V hosts  Supported in v5.0+ Get summary of all the Hyper-V hosts.
+Get summary of all the Hyper-V hosts Supported in v5.0+ Get summary of all the Hyper-V hosts.
 
 ## Arguments
 

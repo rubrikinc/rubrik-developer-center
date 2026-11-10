@@ -1,6 +1,6 @@
 # recoverSapHanaDatabaseToPointInTime
 
-Recover the SAP HANA database to a point in time  Supported in v9.4+ Recover the SAP HANA database to the provided point in time.
+Recover the SAP HANA database to a point in time Supported in v9.4+ Recover the SAP HANA database to the provided point in time.
 
 ## Arguments
 

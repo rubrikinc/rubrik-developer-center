@@ -1,6 +1,6 @@
 # BulkExportMssqlDatabasesInput
 
-Supported in v9.2+\\nInput for exporting multiple SQL Server databases.
+Supported in v9.2+\nInput for exporting multiple SQL Server databases.
 
 ## Fields
 

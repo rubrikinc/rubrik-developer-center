@@ -1,6 +1,6 @@
 # instantRecoverHypervVirtualMachineSnapshot
 
-Creates an instant recover request that restores a target VM from the given Rubrik-hosted-snapshot  Supported in v5.0+ The VM will be started with networking enabled. If the VM does not exist anymore, a new VM will be created.
+Creates an instant recover request that restores a target VM from the given Rubrik-hosted-snapshot Supported in v5.0+ The VM will be started with networking enabled. If the VM does not exist anymore, a new VM will be created.
 
 ## Arguments
 

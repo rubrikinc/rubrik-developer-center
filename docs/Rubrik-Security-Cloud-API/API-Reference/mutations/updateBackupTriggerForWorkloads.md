@@ -1,6 +1,6 @@
 # updateBackupTriggerForWorkloads
 
-Set the backup trigger type for the workloads  Supported in v9.4+ Updates the backup trigger type for the workloads passed in the input.
+Set the backup trigger type for the workloads Supported in v9.4+ Updates the backup trigger type for the workloads passed in the input.
 
 ## Arguments
 

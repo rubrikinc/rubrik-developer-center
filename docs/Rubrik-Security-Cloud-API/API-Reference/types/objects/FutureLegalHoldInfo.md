@@ -23,6 +23,7 @@ The forward-looking legal hold rule on a workload. Any snapshot of the workload 
 - [AnthropicChildOrg.futureLegalHoldInfo](AnthropicChildOrg.md)
 - [AnthropicClaudeChatWorkload.futureLegalHoldInfo](AnthropicClaudeChatWorkload.md)
 - [AnthropicOrg.futureLegalHoldInfo](AnthropicOrg.md)
+- [AnthropicOrgLocalSessions.futureLegalHoldInfo](AnthropicOrgLocalSessions.md)
 - [AnthropicOrgSetting.futureLegalHoldInfo](AnthropicOrgSetting.md)
 - [AnthropicUser.futureLegalHoldInfo](AnthropicUser.md)
 - [AtlassianSite.futureLegalHoldInfo](AtlassianSite.md)
@@ -42,5 +43,4 @@ The forward-looking legal hold rule on a workload. Any snapshot of the workload 
 - [AzureCosmosNosqlContainer.futureLegalHoldInfo](AzureCosmosNosqlContainer.md)
 - [AzureCosmosNosqlDatabase.futureLegalHoldInfo](AzureCosmosNosqlDatabase.md)
 - [AzureDevOpsOrganization.futureLegalHoldInfo](AzureDevOpsOrganization.md)
-- [AzureDevOpsProject.futureLegalHoldInfo](AzureDevOpsProject.md)
-- *…and 378 more*
+- *…and 385 more*

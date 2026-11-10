@@ -1,6 +1,6 @@
 # deleteExchangeSnapshotMount
 
-Request to delete a mount for the Microsoft Exchange database snapshot  Supported in v8.0+ Request to delete a mount for Microsoft Exchange database snapshot.
+Request to delete a mount for the Microsoft Exchange database snapshot Supported in v8.0+ Request to delete a mount for Microsoft Exchange database snapshot.
 
 ## Arguments
 

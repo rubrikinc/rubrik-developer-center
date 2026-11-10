@@ -1,6 +1,6 @@
 # updateNutanixPrismCentral
 
-Patch Nutanix Prism Central  Supported in v9.0+ Patch the host and credentials of Nutanix Prism Central.
+Patch Nutanix Prism Central Supported in v9.0+ Patch the host and credentials of Nutanix Prism Central.
 
 ## Arguments
 

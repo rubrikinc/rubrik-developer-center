@@ -1,6 +1,6 @@
 # refreshHypervServer
 
-Refresh Hyper-V host metadata  Supported in v5.0+ Create a job to refresh the metadata for the specified Hyper-V host.
+Refresh Hyper-V host metadata Supported in v5.0+ Create a job to refresh the metadata for the specified Hyper-V host.
 
 ## Arguments
 

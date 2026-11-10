@@ -1,6 +1,6 @@
 # createNutanixPrismCentral
 
-Add Nutanix Prism Central and it's corresponding Prism Elements  Supported in v9.0+ Create a Nutanix Prism Central object and refresh the Prism Elements present in it.
+Add Nutanix Prism Central and it's corresponding Prism Elements Supported in v9.0+ Create a Nutanix Prism Central object and refresh the Prism Elements present in it.
 
 ## Arguments
 

@@ -1,6 +1,6 @@
 # filesetSnapshot
 
-Get information for a fileset snapshot  Supported in v5.0+ Retrieve summary information for a fileset snapshot by specifying the snapshot ID.
+Get information for a fileset snapshot Supported in v5.0+ Retrieve summary information for a fileset snapshot by specifying the snapshot ID.
 
 ## Arguments
 

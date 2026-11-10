@@ -1,6 +1,6 @@
 # postgresDbClusterAsyncRequestStatus
 
-Get the status of a PostgreSQL database cluster job request  Supported in v9.2+ Get details about a PostgreSQL database cluster-related request, which includes the status of the cluster-related job.
+Get the status of a PostgreSQL database cluster job request Supported in v9.2+ Get details about a PostgreSQL database cluster-related request, which includes the status of the cluster-related job.
 
 ## Arguments
 

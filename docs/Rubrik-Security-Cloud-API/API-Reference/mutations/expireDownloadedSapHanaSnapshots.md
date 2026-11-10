@@ -1,6 +1,6 @@
 # expireDownloadedSapHanaSnapshots
 
-Expire downloaded snapshots of an SAP HANA database  Supported in v8.0+ Requests an asynchronous job to expire all downloaded data and log snapshots. You can specify a begin time or an end time or both to provide a time range to expire only the downloaded data and log snapshots that were taken within the specified time range. The time is relative to when the snapshot was originally taken, not when it was downloaded. You can also configure a flag to expire only the log snapshots.
+Expire downloaded snapshots of an SAP HANA database Supported in v8.0+ Requests an asynchronous job to expire all downloaded data and log snapshots. You can specify a begin time or an end time or both to provide a time range to expire only the downloaded data and log snapshots that were taken within the specified time range. The time is relative to when the snapshot was originally taken, not when it was downloaded. You can also configure a flag to expire only the log snapshots.
 
 ## Arguments
 

@@ -1,6 +1,6 @@
 # deleteVsphereAdvancedTag
 
-Remove the multi-tag filter  Supported in v7.0+ v7.0-v9.1: Remove the multi-tag filter. v9.2+: Remove the multi-tag filter. It is not supported on Standalone Hosts.
+Remove the multi-tag filter Supported in v7.0+ v7.0-v9.1: Remove the multi-tag filter. v9.2+: Remove the multi-tag filter. It is not supported on Standalone Hosts.
 
 ## Arguments
 

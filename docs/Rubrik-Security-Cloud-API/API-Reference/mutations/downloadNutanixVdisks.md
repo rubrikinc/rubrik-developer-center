@@ -1,6 +1,6 @@
 # downloadNutanixVdisks
 
-Download virtual disks from the snapshot of a Nutanix virtual machine  Supported in v9.2+ Start an asynchronous job to download multiple virtual disks from a specified Nutanix virtual machine snapshot. Once initiated, you will receive an asynchronous request ID in response. To obtain the URL for downloading the virtual disk files, including the specific virtual disks, send a GET request to 'nutanix/vm/request/{id}'.
+Download virtual disks from the snapshot of a Nutanix virtual machine Supported in v9.2+ Start an asynchronous job to download multiple virtual disks from a specified Nutanix virtual machine snapshot. Once initiated, you will receive an asynchronous request ID in response. To obtain the URL for downloading the virtual disk files, including the specific virtual disks, send a GET request to 'nutanix/vm/request/{id}'.
 
 ## Arguments
 

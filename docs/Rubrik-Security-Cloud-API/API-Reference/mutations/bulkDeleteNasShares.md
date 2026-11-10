@@ -1,6 +1,6 @@
 # bulkDeleteNasShares
 
-Delete multiple NAS shares  Supported in v8.1+ Initiates the delete operation for the specified NAS shares.
+Delete multiple NAS shares Supported in v8.1+ Initiates the delete operation for the specified NAS shares.
 
 ## Arguments
 

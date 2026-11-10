@@ -1,6 +1,6 @@
 # recoverMongoCluster
 
-Recover objects from source to target MongoDB cluster with cluster-level config  Supported in v9.6+ Recovers the selected database or collection objects managed using logical backups from a source to a target MongoDB cluster, including admin-DB RBAC and config-DB zone/balancer state. Drops every user database on the target and overwrites cluster-wide config.tags — use only for full-cluster recovery.
+Recover objects from source to target MongoDB cluster with cluster-level config Supported in v9.6+ Recovers the selected database or collection objects managed using logical backups from a source to a target MongoDB cluster, including admin-DB RBAC and config-DB zone/balancer state. Drops every user database on the target and overwrites cluster-wide config.tags — use only for full-cluster recovery.
 
 ## Arguments
 

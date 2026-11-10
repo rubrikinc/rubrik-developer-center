@@ -1,6 +1,6 @@
 # hypervVirtualMachineAsyncRequestStatus
 
-Get VM async request details  Supported in v5.0+ Get details about a Hyper-V vm related async request.
+Get VM async request details Supported in v5.0+ Get details about a Hyper-V vm related async request.
 
 ## Arguments
 

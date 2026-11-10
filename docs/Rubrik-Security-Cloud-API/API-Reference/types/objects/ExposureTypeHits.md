@@ -9,7 +9,7 @@ ExposureTypeHits represents sensitive hit statistics for a particular exposure c
 | deltaHits | [SensitiveFiles](SensitiveFiles.md) | Detailed delta sensitive hits counts broken down by risk category (high, medium, low, etc.). |
 | hits | [SensitiveHits](SensitiveHits.md) | Detailed sensitive hits counts broken down by risk category (high, medium, low, etc.). |
 | policySummaryDetails | [[PolicySummaryDetails](PolicySummaryDetails.md)!]! | Detailed policy summary information for the sensitive hits. |
-| type | [ExposureType](../enums/ExposureType.md)! |  |
+| type | [ExposureType](../enums/ExposureType.md)! | Specifies the exposure type (for example: public, organization-wide, external). |
 
 ## Used By
 

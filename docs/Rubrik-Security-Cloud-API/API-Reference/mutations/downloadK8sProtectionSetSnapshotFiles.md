@@ -1,6 +1,6 @@
 # downloadK8sProtectionSetSnapshotFiles
 
-Download multiple files and folders  Supported in v9.4+ Start an asynchronous job to download multiple files and folders from a specified Kubernetes protection set backup.
+Download multiple files and folders Supported in v9.4+ Start an asynchronous job to download multiple files and folders from a specified Kubernetes protection set backup.
 
 ## Arguments
 

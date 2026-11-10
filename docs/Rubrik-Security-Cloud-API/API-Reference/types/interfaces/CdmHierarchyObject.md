@@ -151,6 +151,7 @@ A Rubrik CDM Managed Hierarchy object.
 - [SapHanaSystem](../objects/SapHanaSystem.md)
 - [ShareFileset](../objects/ShareFileset.md)
 - [SnapMirrorCloud](../objects/SnapMirrorCloud.md)
+- [VSphereBlueprint](../objects/VSphereBlueprint.md)
 - [Vcd](../objects/Vcd.md)
 - [VcdCatalog](../objects/VcdCatalog.md)
 - [VcdOrg](../objects/VcdOrg.md)

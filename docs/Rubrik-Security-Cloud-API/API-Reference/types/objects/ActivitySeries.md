@@ -61,6 +61,7 @@ A series of activities on either the RSC or a Rubrik cluster.
 
 - [query: activitySeries](../../queries/activitySeries.md)
 - [query: activitySeriesConnection](../../queries/activitySeriesConnection.md) *(via connection)*
+- [query: eventSeriesOfWorkloadGroup](../../queries/eventSeriesOfWorkloadGroup.md) *(via connection)*
 
 **Referenced by**
 

@@ -1,6 +1,6 @@
 # activeDirectorySearchSnapshots
 
-Search across a range of snapshots of a domain controller for Active Directory objects  Supported in v9.1+ Return the Active Directory objects matching the search criteria.
+Search across a range of snapshots of a domain controller for Active Directory objects Supported in v9.1+ Return the Active Directory objects matching the search criteria.
 
 ## Arguments
 
@@ -8,6 +8,8 @@ Search across a range of snapshots of a domain controller for Active Directory o
 |----------|------|-------------|
 | first | Int | Returns the first n elements from the list. |
 | after | String | An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results. |
+| last | Int | Returns the last n elements from the list. |
+| before | String | An opaque cursor returned from a previous query's startCursor field. Pass this value verbatim to retrieve the previous page of results. |
 | id *(required)* | String! | ID of the Active Directory domain controller that needs to be explored. |
 | snapshotAfterDate | [DateTime](../types/scalars/DateTime.md) | Searches across the snapshots taken on or after the specified date. |
 | snapshotBeforeDate | [DateTime](../types/scalars/DateTime.md) | Searches across the snapshots taken on or before the specified date. |

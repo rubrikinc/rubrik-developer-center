@@ -8,7 +8,7 @@ Active Directory workload related app metadata for a snapshot.
 |-------|------|-------------|
 | attributeVersionNumberOpt | Int | Attribute version number. |
 | cdmVersion | String! | CDM version of the cluster at the time of the snapshot. |
-| configDir | String | System32\\config directory path. |
+| configDir | String | System32\config directory path. |
 | dcMetadataOpt | [DcMetadata](DcMetadata.md) | Domain controller identity metadata for forest recovery. |
 | diskLayoutDetailsOpt | [WindowsDiskLayoutDetails](WindowsDiskLayoutDetails.md) | Windows disk layout of the domain controller at the time of the snapshot. |
 | firmwareTypeOpt | String | Firmware type (UEFI or BIOS). |

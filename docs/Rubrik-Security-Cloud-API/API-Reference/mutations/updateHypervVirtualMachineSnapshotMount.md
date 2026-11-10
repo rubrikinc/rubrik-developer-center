@@ -1,6 +1,6 @@
 # updateHypervVirtualMachineSnapshotMount
 
-Power a Live Mount on and off  Supported in v5.0+ Power a specified Live Mount virtual machine on or off. Pass **_true_** to power the virtual machine on and pass **_false_** to power the virtual machine off.
+Power a Live Mount on and off Supported in v5.0+ Power a specified Live Mount virtual machine on or off. Pass **_true_** to power the virtual machine on and pass **_false_** to power the virtual machine off.
 
 ## Arguments
 

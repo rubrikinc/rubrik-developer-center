@@ -1,6 +1,6 @@
 # signinLogFilterValues
 
-Get possible filter values for sign-in logs with optional search.  This API supports typeahead/autocomplete functionality for filter dropdowns. When searchTerm is empty, returns top N most common values ordered by frequency. When searchTerm is provided, returns values matching the prefix in alphabetical order.
+Get possible filter values for sign-in logs with optional search. This API supports typeahead/autocomplete functionality for filter dropdowns. When searchTerm is empty, returns top N most common values ordered by frequency. When searchTerm is provided, returns values matching the prefix in alphabetical order.
 
 ## Arguments
 

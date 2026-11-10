@@ -8,7 +8,7 @@ Represents the document attribute.
 |-------|------|-------------|
 | id | [UUID](../scalars/UUID.md)! | Represents the ID of the attribute. |
 | name | String! | Represents the title of the attribute. |
-| type | [DocumentAttributeType](../enums/DocumentAttributeType.md)! |  |
+| type | [DocumentAttributeType](../enums/DocumentAttributeType.md)! | Represents the type of the attribute. |
 
 ## Used By
 

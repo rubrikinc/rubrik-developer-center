@@ -10,7 +10,7 @@ Product enabled via Salesforce.
 | expirationDate | [DateTime](../scalars/DateTime.md) | Date when product expires. |
 | name | [ProductName](../enums/ProductName.md)! | Name of the product - GPS, Sonar, etc. |
 | state | [ProductState](../enums/ProductState.md)! | State of the product - Active, disabled, etc. |
-| type | [ProductType](../enums/ProductType.md)! |  |
+| type | [ProductType](../enums/ProductType.md)! | The type of product - Revenue, Trial, POC. |
 
 ## Used By
 

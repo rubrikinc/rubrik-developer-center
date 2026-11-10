@@ -1,6 +1,6 @@
 # bulkUpdateOracleHosts
 
-Update Oracle Hosts  Supported in v5.2+ Update properties to Oracle Host objects.
+Update Oracle Hosts Supported in v5.2+ Update properties to Oracle Host objects.
 
 ## Arguments
 

@@ -52,6 +52,7 @@ OLVM virtual machine.
 | physicalPath | [[PathNode](PathNode.md)!]! | Sequential list of the physical ancestors of this object. |
 | postBackupScript | [OlvmBackupScript](OlvmBackupScript.md) | Post backup script configuration. |
 | postSnapScript | [OlvmBackupScript](OlvmBackupScript.md) | Post snapshot script configuration. |
+| powerStatus | [OlvmVirtualMachinePowerStatus](../enums/OlvmVirtualMachinePowerStatus.md) | Power status of the virtual machine. Unset until the cluster has synced a status OLVM reports as powered on, powered off or suspended. |
 | preBackupScript | [OlvmBackupScript](OlvmBackupScript.md) | Pre backup script configuration. |
 | primaryClusterLocation | [DataLocation](DataLocation.md)! | The source cluster of this object. Returned as a data location because there is no guarantee that Rubrik has knowledge about the source cluster. |
 | primaryClusterUuid | [UUID](../scalars/UUID.md)! | UUID of primary CDM cluster. |
@@ -88,6 +89,7 @@ OLVM virtual machine.
 | missedSnapshotGroupByConnection | timezoneOffset | Float | Offset based on the customer timezone. |
 | missedSnapshotGroupByConnection | timezone | [Timezone](../scalars/Timezone.md) | Time zone identifier string. For example, 'America/Los_Angeles' is used for the U.S. Pacific Time zone. |
 | newestSnapshot | beforeTime | [DateTime](../scalars/DateTime.md) | Specifies the time at which or before the snapshot was taken. |
+| newestSnapshot | excludeLatestSnapshot | Boolean | Specifies whether to ignore the newest snapshot of the workload when choosing the result. |
 | numWorkloadDescendants | first | Int | Returns the first n elements from the list. |
 | numWorkloadDescendants | after | String | Returns the elements in the list that occur after the specified cursor. |
 | numWorkloadDescendants | last | Int | Returns the last n elements from the list. |

@@ -1,6 +1,6 @@
 # updateVlan
 
-Update a VLAN interface on the Rubrik cluster  Supported in v8.0+ Update the configuration of an existing VLAN on the Rubrik cluster. VLAN netmask and IP addresses can be changed.
+Update a VLAN interface on the Rubrik cluster Supported in v8.0+ Update the configuration of an existing VLAN on the Rubrik cluster. VLAN netmask and IP addresses can be changed.
 
 ## Arguments
 

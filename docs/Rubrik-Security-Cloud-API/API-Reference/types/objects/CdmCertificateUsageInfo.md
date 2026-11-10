@@ -9,7 +9,7 @@ Different types of usages of a certificate on a Rubrik cluster.
 | clusterName | String! | The name of the Rubrik cluster where the certificate is used. |
 | clusterUuid | String! | The Rubrik cluster where the certificate is used. |
 | id | String! | The ID of the object for which the certificate is used, if applicable. |
-| type | [CdmCertificateUsage](../enums/CdmCertificateUsage.md)! |  |
+| type | [CdmCertificateUsage](../enums/CdmCertificateUsage.md)! | The type of usage of the certificate on Rubrik CDM. |
 
 ## Used By
 

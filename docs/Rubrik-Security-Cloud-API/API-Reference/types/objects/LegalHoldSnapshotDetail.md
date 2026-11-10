@@ -12,7 +12,7 @@ LegalHoldSnapshotDetails.
 | legalHoldTime | [DateTime](../scalars/DateTime.md) | Legal hold time. |
 | snapshotRetentionInfo | [CdmSnapshotRetentionInfo](CdmSnapshotRetentionInfo.md) | Provides snapshot details for each location. |
 | snapshotTime | [DateTime](../scalars/DateTime.md) | Snapshot time. |
-| type | [SnapshotTypeEnum](../enums/SnapshotTypeEnum.md)! |  |
+| type | [SnapshotTypeEnum](../enums/SnapshotTypeEnum.md)! | Snapshot type. |
 
 ## Used By
 

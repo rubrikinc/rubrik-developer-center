@@ -34,6 +34,7 @@ Details of the vSphere vCenter Server with the given Rubrik ID.
         name
         numWorkloadDescendants
         objectType
+        refreshResumeTime
         replicatedObjectCount
         slaAssignment
         slaPauseStatus

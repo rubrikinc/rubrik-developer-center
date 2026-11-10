@@ -1,6 +1,6 @@
 # SalesforceArchivalCascadeNodeInput
 
-One node in the cascade selection tree for Salesforce archival, describing which related child objects to include alongside an object. Recursive: each node may select its own children.  For each node, set include_all_children to include every related child object, or leave it false and list specific children. The root node's object_name identifies the object the tree applies to. relationship_type and object_label are populated on read and ignored on write.
+One node in the cascade selection tree for Salesforce archival, describing which related child objects to include alongside an object. Recursive: each node may select its own children. For each node, set include_all_children to include every related child object, or leave it false and list specific children. The root node's object_name identifies the object the tree applies to. relationship_type and object_label are populated on read and ignored on write.
 
 ## Fields
 

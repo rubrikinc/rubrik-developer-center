@@ -1,6 +1,6 @@
 # createFailoverCluster
 
-Create a failover cluster  Supported in v5.2+ Create a failover cluster.
+Create a failover cluster Supported in v5.2+ Create a failover cluster.
 
 ## Arguments
 

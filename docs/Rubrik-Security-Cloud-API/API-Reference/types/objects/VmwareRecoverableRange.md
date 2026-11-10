@@ -13,5 +13,7 @@ Supported in v5.1+
 
 **Referenced by**
 
+- [ChildVmRecoveryInfo.missedRecoverableRanges](ChildVmRecoveryInfo.md)
+- [ChildVmRecoveryInfo.recoverableRanges](ChildVmRecoveryInfo.md)
 - [VmwareRecoverableRangeListResponse.data](VmwareRecoverableRangeListResponse.md)
 - [VmwareVmRecoverableRanges.recoverableRanges](VmwareVmRecoverableRanges.md)

@@ -1,6 +1,6 @@
 # requestPureStorageProtectionGroupForceFullSnapshot
 
-Request a full snapshot for the next backup job of a Pure Storage protection group  Supported in v9.6+ Request a full snapshot to be taken for the next backup job of a Pure Storage protection group.
+Request a full snapshot for the next backup job of a Pure Storage protection group Supported in v9.6+ Request a full snapshot to be taken for the next backup job of a Pure Storage protection group.
 
 ## Arguments
 

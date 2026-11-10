@@ -11,6 +11,7 @@ Supported in v9.0+ Input to add a Kubernetes cluster.
 | clientId | String | Supported in v9.1+ The client ID for the service account. |
 | clientSecret | String | Supported in v9.1+ The client secret for the service account. |
 | dataPathTransport | String | Supported in v9.6+ The transport type used for the RBA data movers. Defaults to the control-plane transport when unset. Set to pernodeproxy to route data movers through the per-node backup proxy. |
+| discoveryScope | [K8sDiscoveryScopeInput](K8sDiscoveryScopeInput.md) | Limits discovery and protection for this CDM to a subset of namespaces and/or label selectors. |
 | distribution | String | Supported in v9.1+ Distribution of the Kubernetes cluster to be added. |
 | eksConfig | [EksConfigInput](EksConfigInput.md) | The configuration for adding an EKS cluster. |
 | helmChartVersion | String | Supported in v9.6+ Helm chart version installed on the Kubernetes cluster. Set by the chart at install time. Empty for non-Helm onboarding. |

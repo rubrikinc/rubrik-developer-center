@@ -1,6 +1,6 @@
 # deletePostgreSQLDbCluster
 
-Delete a PostgreSQL database cluster  Supported in v9.2+ Initiates a job to delete a PostgreSQL database cluster. GET /postgresql/db_cluster/request/{id} endpoint can be used to monitor the progress of the job.
+Delete a PostgreSQL database cluster Supported in v9.2+ Initiates a job to delete a PostgreSQL database cluster. GET /postgresql/db_cluster/request/{id} endpoint can be used to monitor the progress of the job.
 
 ## Arguments
 

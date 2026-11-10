@@ -1,6 +1,6 @@
 # discoverNodes
 
-v5.0-v5.1: Discover bootstrappable nodes v5.2+: (DEPRECATED) Discover bootstrappable nodes  Supported in v5.0+ v5.0-v5.1: Searches for nodes bootstrappable to the specified Rubrik cluster v5.2+: Searches for nodes that can bootstrap into the specified Rubrik cluster. This endpoint will be moved to v1 in the next major version.
+v5.0-v5.1: Discover bootstrappable nodes v5.2+: (DEPRECATED) Discover bootstrappable nodes Supported in v5.0+ v5.0-v5.1: Searches for nodes bootstrappable to the specified Rubrik cluster v5.2+: Searches for nodes that can bootstrap into the specified Rubrik cluster. This endpoint will be moved to v1 in the next major version.
 
 ## Arguments
 

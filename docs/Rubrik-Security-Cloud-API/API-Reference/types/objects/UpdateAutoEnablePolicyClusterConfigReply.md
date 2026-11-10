@@ -9,7 +9,7 @@ Represents updated Rubrik cluster configuration.
 | datagovAutoEnablePolicyConfig | [AutoEnablePolicyClusterConfigReply](AutoEnablePolicyClusterConfigReply.md)! | Auto Enable Sensitive Data Discovery policy configuration. |
 | id | [UUID](../scalars/UUID.md)! | The cluster UUID. |
 | name | String! | The cluster name. |
-| type | [ClusterTypeEnum](../enums/ClusterTypeEnum.md)! |  |
+| type | [ClusterTypeEnum](../enums/ClusterTypeEnum.md)! | The cluster type. |
 | version | String | The software version. |
 
 ## Used By

@@ -1,6 +1,6 @@
 # nutanixBrowseSnapshot
 
-v5.0-v8.0: Lists all files in VM snapshot v8.1+: Lists all files in virtual machine snapshot  Supported in v5.0+ Lists all files and directories in a given path.
+v5.0-v8.0: Lists all files in VM snapshot v8.1+: Lists all files in virtual machine snapshot Supported in v5.0+ Lists all files and directories in a given path.
 
 ## Arguments
 

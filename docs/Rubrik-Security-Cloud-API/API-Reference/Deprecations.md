@@ -4,9 +4,9 @@ This document lists all deprecated fields, queries, mutations, and enum values i
 
 ## Deprecated Fields
 
-*Extracted from schema: 20261026.graphql*
+*Extracted from schema: 20261102.graphql*
 
-**Total deprecated items: 350**
+**Total deprecated items: 366**
 
 ### Deprecated Query Fields
 
@@ -15,6 +15,7 @@ This document lists all deprecated fields, queries, mutations, and enum values i
 - **`allAzureResourceGroups`**: Use allResourceGroupsFromAzure instead.
 - **`allAzureSubnets`**: Use allAzureCloudAccountSubnetsByRegion instead.
 - **`allClusterWebCertsAndIpmis`**: Use clusterConnection instead.
+- **`allGcpCloudAccountProjectsForOauth`**: Please use gcpListAllProjectsForOauth instead.
 - **`allMissingClusters`**: Missing cluster management has been retired.
 - **`allPendingActions`**: Pending actions are an internal implementation detail of RSC-to-CDM synchronization and are not intended for external use.
 - **`allUsersOnAccountConnection`**: Use usersInCurrentAndDescendantOrganization instead.
@@ -24,20 +25,6 @@ This document lists all deprecated fields, queries, mutations, and enum values i
 - **`failoverClusterTopLevelDescendants`**: No more users of failoverClusterTopLevelDescendants.
 - **`getKorgTaskchainStatus`**: Use `taskchain` field instead.
 - **`getPermissions`**: Use allEffectiveRbacPermissions instead.
-- **`hypervServers`**: Use hypervServersPaginated instead.
-- **`investigationCsvDownloadLink`**: This endpoint is deprecated.
-- **`ipWhitelist`**: use `ipWhitelistEntries` and `ipWhitelistSettings` instead.
-- **`k8sAppManifest`**: Not supported anymore.
-- **`mssqlDefaultProperties`**: Use mssqlDefaultPropertiesOnCluster instead.
-- **`o365SharepointObjects`**: This is deprecated as it was tied to the specific object type. Use o365SharepointObjectList instead.
-- **`pendingAction`**: Pending actions are an internal implementation detail of RSC-to-CDM synchronization and are not intended for external use.
-- **`protectedVolumesCount`**: This functionality is incorrect and deprecated.
-- **`recoverDb2DatabaseToEndOfBackup`**: Use mutation field instead. This query field will be removed in a future release.
-- **`recoverDb2DatabaseToPointInTime`**: Use mutation field instead. This query field will be removed in a future release.
-- **`snapshotFilesDelta`**: This endpoint only works for Data Center workloads. Use snapshotFilesDeltaV2 instead.
-- **`tableFilters`**: No longer supported.
-- **`taskDetailGroupByConnection`**: This endpoint doesn't provide new data. Use the count field in taskDetailConnection instead
-- **`userGroups`**: Use groupsInCurrentAndDescendantOrganization instead.
 
 ### Deprecated Mutation Fields
 
@@ -197,6 +184,10 @@ This document lists all deprecated fields, queries, mutations, and enum values i
 - **`exocomputeHostName`**: Use cloudNativeExocompute.hostName instead.
 - **`exocomputeId`**: Use cloudNativeExocompute.id instead.
 
+#### AzureExocomputeOptionalConfigInRegion
+
+- **`enableUserDefinedRouting`**: Use aksOutboundType instead, it also supports the NAT gateway.
+
 #### AzureNativeManagedDisk
 
 - **`allAttachedAzureNativeVirtualMachines`**: Deprecated, use attachedAzureNativeVirtualMachines instead.
@@ -241,6 +232,10 @@ This document lists all deprecated fields, queries, mutations, and enum values i
 #### BackupLocationSpec
 
 - **`isComplianceImmutabilityEnabled`**: Compliance Retention Lock is no longer supported.
+
+#### BlueprintCdmLocation
+
+- **`bootPriority`**: deprecated, use boot priority from recovery spec instead.
 
 #### CascadingArchivalSpec
 
@@ -423,6 +418,12 @@ This document lists all deprecated fields, queries, mutations, and enum values i
 
 - **`dataHosts`**: Use hostDetails instead.
 
+#### NutanixVm
+
+- **`blueprintId`**: Use recoveryPlansInfo instead.
+- **`blueprintName`**: Use recoveryPlansInfo instead.
+- **`isBlueprintChild`**: Use recoveryPlansInfo instead.
+
 #### O365Group
 
 - **`configuredGroupSpec`**: Use configuredGroupSpecification instead.
@@ -469,6 +470,11 @@ This document lists all deprecated fields, queries, mutations, and enum values i
 #### RdsInstanceExportDefaults
 
 - **`supportedDbEngineVersions`**: Use availableDbEngineVersions instead.
+
+#### RecoveryPlan
+
+- **`pauseBetweenPriorityGroups`**: Use pauseBetweenPriorityGroups in the BlueprintRecoverySpecinstead.
+- **`recoveryRange`**: Use recoveryInfo on the RecoveryPlanChild instead.
 
 #### RecoveryPlansInfo
 
@@ -578,9 +584,18 @@ This document lists all deprecated fields, queries, mutations, and enum values i
 
 - **`configs`**: Deprecated in favor of BYOK8s, use exocomputeConfigs instead.
 
+#### VSphereBlueprint
+
+- **`recoveryInfo`**: Use recoveryInfo on the RecoveryPlanChild instead.
+
 #### Vcd
 
 - **`allVcenterConnectionStatuses`**: Use allVcenterConnectionsInfo instead.
+
+#### VsphereBlueprintNew
+
+- **`recoveryInfo`**: Use recoveryInfo on the RecoveryPlanChild instead.
+- **`timeoutBetweenPriorityGroups`**: This field is deprecated. Use pauseBetweenPriorityGroups in the BlueprintRecoverySpec instead.
 
 #### VsphereComputeCluster
 
@@ -594,9 +609,46 @@ This document lists all deprecated fields, queries, mutations, and enum values i
 
 - **`hasDatastoresForRecovery`**: Use recoveryTargetDescendantConnection field directly instead
 
+#### VsphereVm
+
+- **`blueprintId`**: Use recoveryPlansInfo instead.
+- **`blueprintName`**: Use recoveryPlansInfo instead.
+- **`isBlueprintChild`**: Use recoveryPlansInfo instead.
+
 #### WorkloadRecoveryInfo
 
 - **`oldWorkloadId`**: Use the set of [oldWorkloadId + oldWorkloadIds] instead for multiple old IDs mapping to the same new ID.
+
+#### for
+
+- **`hypervServers`**: Use hypervServersPaginated instead.
+- **`investigationCsvDownloadLink`**: This endpoint is deprecated.
+- **`ipWhitelist`**: use `ipWhitelistEntries` and `ipWhitelistSettings` instead.
+- **`k8sAppManifest`**: Not supported anymore.
+- **`mssqlDefaultProperties`**: Use mssqlDefaultPropertiesOnCluster instead.
+- **`o365SharepointObjects`**: This is deprecated as it was tied to the specific object type. Use o365SharepointObjectList instead.
+- **`pendingAction`**: Pending actions are an internal implementation detail of RSC-to-CDM synchronization and are not intended for external use.
+- **`protectedVolumesCount`**: This functionality is incorrect and deprecated.
+- **`recoverDb2DatabaseToEndOfBackup`**: Use mutation field instead. This query field will be removed in a future release.
+- **`recoverDb2DatabaseToPointInTime`**: Use mutation field instead. This query field will be removed in a future release.
+- **`snapshotFilesDelta`**: This endpoint only works for Data Center workloads. Use snapshotFilesDeltaV2 instead.
+- **`tableFilters`**: No longer supported.
+- **`taskDetailGroupByConnection`**: This endpoint doesn't provide new data. Use the count field in taskDetailConnection instead
+- **`userGroups`**: Use groupsInCurrentAndDescendantOrganization instead.
+
+#### is
+
+- **`AWS_TAG`**: Use EC2_INSTANCE_VPC_ID or RDS_INSTANCE_VPC_ID instead.
+- **`AZURE_DISK_SIZE`**: Use AZURE_DISK_CRG_SUBSCRIPTION_ID instead.
+- **`AZURE_VM_SIZE`**: Use AZURE_VM_CRG_SUBSCRIPTION_ID instead.
+- **`CLOUDDIRECT_NAS_NAMESPACE_VENDOR_TYPE`**: Not implemented - no longer used.
+- **`DOMAIN_HAS_FOREST`**: Use EBS_VOLUME_NAME_OR_VOLUME_ID instead.
+- **`EBS_VOLUME_INDEXING_STATUS`**: Use EBS_VOLUME_NAME_OR_VOLUME_ID instead.
+- **`EBS_VOLUME_TYPE`**: Use EC2_INSTANCE_NAME_OR_INSTANCE_ID instead.
+- **`EC2_INSTANCE_INDEXING_STATUS`**: Use EC2_INSTANCE_NAME_OR_INSTANCE_ID instead.
+- **`IS_GHOST`**: Not implemented - no longer used.
+- **`SAASAPPS_IS_HIDDEN`**: use `SAASAPPS_ORGANIZATION_SCOPE` instead.
+- **`TOP_LEVEL_SITES_OF_O365_ORG`**: Not implemented - no longer used.
 
 ### Deprecated Enum Values
 
@@ -616,17 +668,14 @@ This document lists all deprecated fields, queries, mutations, and enum values i
 - **`AUDIT_LIST`**: Use BACKUP_STRIKES_V2 instead.
 - **`AUDIT_LIST`**: Use LATEST_GLOBAL_OBJECTS instead.
 - **`AWS_IAM_CUSTOMER_ACCOUNT_UPSERT`**: Nothing creates this type; it will be removed in a future release.
+- **`AWS_LAMBDA`**: Use AWS_LAUNCH_TEMPLATE_VERSION instead. Backup and\nrecovery operate on launch-template versions; the bare\nlaunch-template entity has no producers and is never persisted\nin the snapshot.
 - **`AWS_REGION`**: Use EC2_INSTANCE_VPC_ID or RDS_INSTANCE_VPC_ID instead.
-- **`AWS_TAG`**: Use EC2_INSTANCE_VPC_ID or RDS_INSTANCE_VPC_ID instead.
 - **`AZURE_DEVOPS_REPOSITORY_PROTECTION`**: Use `LAMINAR_OUTPOST_APPLICATION` instead.
 - **`AZURE_DEVOPS_REPOSITORY_PROTECTION`**: Use `LAMINAR_OUTPOST_MANAGED_IDENTITY` instead.
 - **`AZURE_DEVOPS_REPOSITORY_PROTECTION`**: Use `LAMINAR_TARGET_APPLICATION` instead.
 - **`AZURE_DEVOPS_REPOSITORY_PROTECTION`**: Use `LAMINAR_TARGET_MANAGED_IDENTITY` instead.
 - **`AZURE_DEVOPS_REPO_SIZE`**: This field is deprecated and no longer used.
-- **`AZURE_DISK_SIZE`**: Use AZURE_DISK_CRG_SUBSCRIPTION_ID instead.
-- **`AZURE_VM_SIZE`**: Use AZURE_VM_CRG_SUBSCRIPTION_ID instead.
 - **`CATEGORY_UNSPECIFIED`**: Use AUTHENTICATION_AND_SECRET_MANAGEMENT instead.
-- **`CLOUDDIRECT_NAS_NAMESPACE_VENDOR_TYPE`**: Not implemented - no longer used.
 - **`CLOUD_ACCOUNT_UPDATE`**: Use CLUSTER_PEER_TOKEN_GET_AND_SET instead. Removed 2027/09/28.
 - **`CLOUD_DIRECT`**: Nothing returns this sync type; it will be removed in a future release.
 - **`CLUSTER_DISCONNECTED`**: This reason is no longer used.
@@ -637,12 +686,8 @@ This document lists all deprecated fields, queries, mutations, and enum values i
 - **`DELETE_REPORT`**: Legacy deprecated operation. No longer used in any RSC APIs.
 - **`DIRECT_REPORT`**: The SsoPolicyExtension relationship has been removed.
 - **`DNS_SERVERS_CHECK`**: Use CLUSTER_NAME_LENGTH_CHECK instead.
-- **`DOMAIN_HAS_FOREST`**: Use EBS_VOLUME_NAME_OR_VOLUME_ID instead.
-- **`EBS_VOLUME_INDEXING_STATUS`**: Use EBS_VOLUME_NAME_OR_VOLUME_ID instead.
-- **`EBS_VOLUME_TYPE`**: Use EC2_INSTANCE_NAME_OR_INSTANCE_ID instead.
 - **`EC2_INSTANCE`**: Use UNIFIED_ENCRYPTION_MANAGEMENT instead.
 - **`EC2_INSTANCE`**: Use UNIFIED_ENCRYPTION_MANAGEMENT instead.
-- **`EC2_INSTANCE_INDEXING_STATUS`**: Use EC2_INSTANCE_NAME_OR_INSTANCE_ID instead.
 - **`EDIT_REPLICATION_SETTINGS`**: Legacy deprecated operation. No longer used in any RSC APIs.
 - **`EDIT_REPLICATION_SETTINGS`**: Legacy deprecated operation. No longer used in any RSC APIs.
 - **`EDIT_SYSTEM_PREFERENCE`**: Legacy deprecated operation. No longer used in any RSC APIs.
@@ -669,7 +714,6 @@ This document lists all deprecated fields, queries, mutations, and enum values i
 - **`IN_PROGRESS`**: No longer applicable.
 - **`ISILON`**: Use FSXN (AWS FSx for NetApp ONTAP) or other specific vendor types instead of NETAPP.
 - **`IS_ARCHIVAL_COPY`**: A snapshot can potentially be uploaded to multiple archival locations. This field does not give the archival status of the snapshot - whether it is uploaded to all the archival locations or partially uploaded to a few locations. Hence, this filter field is deprecated and would be removed subsequently. Please use a combination of ARCHIVAL_LOCATION_IDS and SOURCE_SNAPSHOT_IDS fields instead.
-- **`IS_GHOST`**: Not implemented - no longer used.
 - **`MANAGE_AUTO_QUARANTINE`**: Superseded by ManageCdmUser. Runtime checks still accept this permission during the transition period.
 - **`MANAGE_AUTO_QUARANTINE`**: Superseded by ManageCdmUser. Runtime checks still accept this permission during the transition period.
 - **`MODIFY_REPORT`**: Legacy deprecated operation. No longer used in any RSC APIs.
@@ -687,7 +731,6 @@ This document lists all deprecated fields, queries, mutations, and enum values i
 - **`REMEDIATION_TYPE_IDP_EVENT_REVERT`**: Use REMEDIATION_TYPE_REMEDIATE_ENTRA_ID_RISK instead.
 - **`RESIZE_MANAGED_VOLUME`**: Legacy deprecated operation. No longer used in any RSC APIs.
 - **`RESIZE_MANAGED_VOLUME`**: Legacy deprecated operation. No longer used in any RSC APIs.
-- **`SAASAPPS_IS_HIDDEN`**: use `SAASAPPS_ORGANIZATION_SCOPE` instead.
 - **`SECURITY_IDENTITY_DEPARTMENT`**: Use SECURITY_IDENTITY_DIRECT_DESCENDANT_COUNT instead.
 - **`SECURITY_IDENTITY_EVENT_DC_NAME`**: Use SECURITY_IDENTITY_EVENT_POLICY_INSIGHTS instead.
 - **`SECURITY_IDENTITY_EVENT_TITLE`**: Use SECURITY_IDENTITY_EVENT_TITLE instead.
@@ -696,7 +739,6 @@ This document lists all deprecated fields, queries, mutations, and enum values i
 - **`SLA_AUDIT_LIST_NG`**: Use LATEST_GLOBAL_OBJECTS instead.
 - **`SOUTHAMERICA_WEST1`**: Do not use. Specify a valid GCP region instead.
 - **`SSO_POLICY_APPLIES_TO`**: The SSO Policy Extension relationship has been removed.
-- **`TOP_LEVEL_SITES_OF_O365_ORG`**: Not implemented - no longer used.
 - **`UEKM_RSA_BASED`**: Use UEKM_RSA_BASED or UEKM_AWS_KMS_BASED.
 - **`VIEW_AZURE_CLOUD_ACCOUNT`**: Superseded by ViewCdmUser. Runtime checks still accept this permission during the transition period.
 - **`VIEW_AZURE_CLOUD_ACCOUNT`**: Superseded by ViewCdmUser. Runtime checks still accept this permission during the transition period.
@@ -710,3 +752,4 @@ This document lists all deprecated fields, queries, mutations, and enum values i
 - **`VIEW_USER`**: Legacy deprecated operation. No longer used in any RSC APIs.
 - **`VSPHERE_RESTORE_FILE_TO_VM`**: VSphere snapshot poller is no longer used.
 - **`resourceGroup`**: Deprecated, use azureResourceGroup instead.
+- **`timeoutBetweenPriorityGroups`**: Use pauseBetweenPriorityGroups in the BlueprintRecoverySpec instead.

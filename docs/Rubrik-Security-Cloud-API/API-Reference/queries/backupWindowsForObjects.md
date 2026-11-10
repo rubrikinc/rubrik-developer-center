@@ -1,6 +1,6 @@
 # backupWindowsForObjects
 
-Returns backup window information for the specified managed objects. The optional `scope` argument selects which layer to return per object: OBJECT_LEVEL (the override only) or SLA_LEVEL (the SLA's window only). When omitted (UNSPECIFIED), the effective window is returned: the object-level override if set, else the SLA window. Each entry's `scope` discriminator reports the layer that supplied the returned window, always OBJECT_LEVEL or SLA_LEVEL.  Entries are returned positionally -- one per input id, in request order -- unless `sortBy` asks for a different order.
+Returns backup window information for the specified managed objects. The optional `scope` argument selects which layer to return per object: OBJECT_LEVEL (the override only) or SLA_LEVEL (the SLA's window only). When omitted (UNSPECIFIED), the effective window is returned: the object-level override if set, else the SLA window. Each entry's `scope` discriminator reports the layer that supplied the returned window, always OBJECT_LEVEL or SLA_LEVEL. Entries are returned positionally -- one per input id, in request order -- unless `sortBy` asks for a different order.
 
 ## Arguments
 

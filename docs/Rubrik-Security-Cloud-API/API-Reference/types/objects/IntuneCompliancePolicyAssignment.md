@@ -14,7 +14,7 @@ Intune compliance policy assignment.
 | id | String! | ID of the Intune compliance policy assignment. |
 | policyId | String! | ID of the Intune compliance policy. |
 | policyName | String! | Name of the Intune compliance policy. |
-| type | [IntuneCompliancePolicyAssignmentType](../enums/IntuneCompliancePolicyAssignmentType.md)! |  |
+| type | [IntuneCompliancePolicyAssignmentType](../enums/IntuneCompliancePolicyAssignmentType.md)! | Type of the Intune compliance policy assignment. |
 
 ## Used By
 

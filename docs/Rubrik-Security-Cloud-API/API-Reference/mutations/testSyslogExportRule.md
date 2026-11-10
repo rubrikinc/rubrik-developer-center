@@ -1,6 +1,6 @@
 # testSyslogExportRule
 
-Test the specified syslog export rule  Supported in v5.1+ Send a test message using the syslog export rule specified by the given id.
+Test the specified syslog export rule Supported in v5.1+ Send a test message using the syslog export rule specified by the given id.
 
 ## Arguments
 

@@ -6,7 +6,7 @@ The number of objects protected by the SLA Domains.
 
 | Argument | Type | Description |
 |----------|------|-------------|
-| rootOptionalFid | [UUID](../types/scalars/UUID.md) | Forever UUID of the object root. The value of  `none` represents the global hierarchy root. |
+| rootOptionalFid | [UUID](../types/scalars/UUID.md) | Forever UUID of the object root. The value of `none` represents the global hierarchy root. |
 | slaIds *(required)* | [[UUID](../types/scalars/UUID.md)!]! | A list of SLA Domain IDs. |
 | filter | [[Filter](../types/inputs/Filter.md)!] | Hierarchy object filter. |
 | typeFilter | [[HierarchyObjectTypeEnum](../types/enums/HierarchyObjectTypeEnum.md)!] | Types of objects to include. |

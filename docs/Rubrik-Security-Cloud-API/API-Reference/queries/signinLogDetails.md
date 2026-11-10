@@ -1,6 +1,6 @@
 # signinLogDetails
 
-Get details for a specific sign-in event.  Retrieves comprehensive details for a single sign-in event by its ID. For optimal performance, provide eventDate (extracted from the list view) to enable BigQuery partition pruning (98.9% cost reduction).
+Get details for a specific sign-in event. Retrieves comprehensive details for a single sign-in event by its ID. For optimal performance, provide eventDate (extracted from the list view) to enable BigQuery partition pruning (98.9% cost reduction).
 
 ## Arguments
 

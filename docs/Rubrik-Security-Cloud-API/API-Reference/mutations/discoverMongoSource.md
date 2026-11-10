@@ -1,6 +1,6 @@
 # discoverMongoSource
 
-Discover a MongoDB source on-demand  Supported in v8.1+ Initiates an on-demand job to discover a MongoDB source.
+Discover a MongoDB source on-demand Supported in v8.1+ Initiates an on-demand job to discover a MongoDB source.
 
 ## Arguments
 

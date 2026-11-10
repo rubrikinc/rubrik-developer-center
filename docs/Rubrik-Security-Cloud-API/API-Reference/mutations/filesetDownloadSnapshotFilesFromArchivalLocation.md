@@ -1,6 +1,6 @@
 # filesetDownloadSnapshotFilesFromArchivalLocation
 
-Initiate a job to download files or folders  Supported in v8.0+ Initiates a job to download one or more files or folders from an archived Fileset snapshot. Returns the job instance ID.
+Initiate a job to download files or folders Supported in v8.0+ Initiates a job to download one or more files or folders from an archived Fileset snapshot. Returns the job instance ID.
 
 ## Arguments
 

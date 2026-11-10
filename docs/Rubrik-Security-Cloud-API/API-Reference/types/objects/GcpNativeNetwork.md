@@ -8,7 +8,7 @@ Represents a GCP native VPC network.
 |-------|------|-------------|
 | firewallRules | [[GcpNativeFirewallRule](GcpNativeFirewallRule.md)!]! | Firewall rules of the GCP native VPC network. |
 | name | String! | Name of the GCP native VPC network. |
-| nativeProjectId | String! | Project ID of the  GCP native VPC network. |
+| nativeProjectId | String! | Project ID of the GCP native VPC network. |
 | subnetworks | [[GcpNativeSubnetwork](GcpNativeSubnetwork.md)!]! | Subnetworks of the GCP native VPC network. |
 
 ## Used By

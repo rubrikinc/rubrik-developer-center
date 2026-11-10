@@ -1,6 +1,6 @@
 # isRemoveClusterTprConfigured
 
-Check if Remove Cluster Authorization policy is set on the  cluster.
+Check if Remove Cluster Authorization policy is set on the cluster.
 
 ## Arguments
 

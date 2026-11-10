@@ -1,6 +1,6 @@
 # modifyIpmi
 
-Modify IPMI settings  Supported in v5.0+ modify IPMI settings.
+Modify IPMI settings Supported in v5.0+ modify IPMI settings.
 
 ## Arguments
 

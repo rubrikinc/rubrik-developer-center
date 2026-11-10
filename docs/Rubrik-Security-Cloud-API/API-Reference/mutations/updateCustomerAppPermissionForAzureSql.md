@@ -1,6 +1,6 @@
 # updateCustomerAppPermissionForAzureSql
 
-Updates the Azure app for the specified account in an idempotent manner to support Azure SQL Database and  Managed Instance Database authentication.
+Updates the Azure app for the specified account in an idempotent manner to support Azure SQL Database and Managed Instance Database authentication.
 
 ## Returns
 

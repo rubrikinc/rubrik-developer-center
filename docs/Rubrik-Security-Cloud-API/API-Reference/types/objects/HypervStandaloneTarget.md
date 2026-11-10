@@ -15,4 +15,5 @@ Target standalone HyperV host for recovery.
 
 **Referenced by**
 
+- [HypervRecoverySpecType.standaloneTarget](HypervRecoverySpecType.md)
 - [HypervTargetConfig.standalone](HypervTargetConfig.md)

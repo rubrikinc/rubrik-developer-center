@@ -29,6 +29,7 @@ Details of an RSC tag.
 - [AnthropicChildOrg.allTags](AnthropicChildOrg.md)
 - [AnthropicClaudeChatWorkload.allTags](AnthropicClaudeChatWorkload.md)
 - [AnthropicOrg.allTags](AnthropicOrg.md)
+- [AnthropicOrgLocalSessions.allTags](AnthropicOrgLocalSessions.md)
 - [AnthropicOrgSetting.allTags](AnthropicOrgSetting.md)
 - [AnthropicUser.allTags](AnthropicUser.md)
 - [AtlassianSite.allTags](AtlassianSite.md)
@@ -48,5 +49,4 @@ Details of an RSC tag.
 - [AzureCosmosNosqlContainer.allTags](AzureCosmosNosqlContainer.md)
 - [AzureCosmosNosqlDatabase.allTags](AzureCosmosNosqlDatabase.md)
 - [AzureDevOpsOrganization.allTags](AzureDevOpsOrganization.md)
-- [AzureDevOpsProject.allTags](AzureDevOpsProject.md)
-- *…and 379 more*
+- *…and 386 more*

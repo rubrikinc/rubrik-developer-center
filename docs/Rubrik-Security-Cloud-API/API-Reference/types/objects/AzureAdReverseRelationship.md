@@ -8,7 +8,7 @@ Reverse Relationships of an Azure Active Directory object.
 |-------|------|-------------|
 | relatedObjectIds | [[UUID](../scalars/UUID.md)!]! | IDs of the objects related to the Azure Active Directory object. |
 | relatedObjects | [[RelatedObjectsType](RelatedObjectsType.md)!]! | List of related objects in the Azure AD reverse relationship. |
-| type | [AzureAdReverseRelationshipType](../enums/AzureAdReverseRelationshipType.md)! |  |
+| type | [AzureAdReverseRelationshipType](../enums/AzureAdReverseRelationshipType.md)! | Type of the reverse relationship. |
 
 ## Used By
 

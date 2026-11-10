@@ -12,4 +12,5 @@ Nutanix virtual machine network interface.
 
 **Referenced by**
 
+- [NutanixResourceSpec.nutanixNics](NutanixResourceSpec.md)
 - [NutanixVirtualMachineResourceSpec.networkInterfaces](NutanixVirtualMachineResourceSpec.md)

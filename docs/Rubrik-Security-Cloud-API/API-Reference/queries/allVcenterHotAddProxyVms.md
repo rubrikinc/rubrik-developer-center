@@ -1,6 +1,6 @@
 # allVcenterHotAddProxyVms
 
-Get a list of HotAdd proxy virtual machines  Supported in v5.3+ Retrieve summary information for all HotAdd proxy virtual machines.
+Get a list of HotAdd proxy virtual machines Supported in v5.3+ Retrieve summary information for all HotAdd proxy virtual machines.
 
 ## Arguments
 

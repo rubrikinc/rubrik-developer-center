@@ -1,6 +1,6 @@
 # setCephSettings
 
-Set the Ceph settings for an OpenStack Availability Zone  Supported in v9.5+ Set the Ceph storage settings for an OpenStack Availability Zone. Accepts multiple settings.
+Set the Ceph settings for an OpenStack Availability Zone Supported in v9.5+ Set the Ceph storage settings for an OpenStack Availability Zone. Accepts multiple settings.
 
 ## Arguments
 
@@ -55,12 +55,12 @@ Set the Ceph settings for an OpenStack Availability Zone  Supported in v9.5+ Set
         "setCephSettings": {
           "data": [
             {
+              "cephUser": "example-string",
               "fsid": "example-string",
               "id": "example-string",
               "keyring": "example-string",
               "openstackAvailabilityZoneId": "example-string",
-              "volumePoolName": "example-string",
-              "volumeTypeId": "example-string"
+              "volumePoolName": "example-string"
             }
           ]
         }

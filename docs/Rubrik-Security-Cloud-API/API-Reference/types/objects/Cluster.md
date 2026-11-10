@@ -69,7 +69,7 @@ A Rubrik CDM Cluster.
 | systemStatusAffectedNodes | [[ClusterNode](ClusterNode.md)!] | List of affected nodes in the cluster. |
 | systemStatusMessage | String | Human readable message explaining the systemStatus. |
 | timezone | String | The cluster's timezone. |
-| type | [ClusterTypeEnum](../enums/ClusterTypeEnum.md)! |  |
+| type | [ClusterTypeEnum](../enums/ClusterTypeEnum.md)! | The cluster type. |
 | version | String | The software version. |
 | webServerCertificate | [WebServerCertificate](WebServerCertificate.md) | Web server certificate of the cluster. |
 
@@ -137,6 +137,8 @@ A Rubrik CDM Cluster.
 - [AgentDeploymentSettingsInfo.cluster](AgentDeploymentSettingsInfo.md)
 - [AnomalyResult.cluster](AnomalyResult.md)
 - [BackupThrottleSetting.cluster](BackupThrottleSetting.md)
+- Blueprint.cluster
+- [BlueprintCdmLocation.cluster](BlueprintCdmLocation.md)
 - [CdmGuestCredential.cluster](CdmGuestCredential.md)
 - CdmHierarchyObject.cluster
 - CdmHierarchySnappableNew.cluster
@@ -152,6 +154,4 @@ A Rubrik CDM Cluster.
 - [CdmSnapshot.cluster](CdmSnapshot.md)
 - [CdmTarget.cluster](CdmTarget.md)
 - CloudDirectHierarchyObject.cluster
-- CloudDirectHierarchyWorkload.cluster
-- [CloudDirectNasBucket.cluster](CloudDirectNasBucket.md)
-- *…and 352 more*
+- *…and 355 more*

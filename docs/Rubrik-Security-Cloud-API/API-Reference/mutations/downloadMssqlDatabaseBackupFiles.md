@@ -1,6 +1,6 @@
 # downloadMssqlDatabaseBackupFiles
 
-Downloads a list of snapshot and log backups from a Microsoft SQL database  Supported in v5.2+ Downloads a list of snapshot and log backups from a Microsoft SQL database.
+Downloads a list of snapshot and log backups from a Microsoft SQL database Supported in v5.2+ Downloads a list of snapshot and log backups from a Microsoft SQL database.
 
 ## Arguments
 

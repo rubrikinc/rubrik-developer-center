@@ -1,6 +1,6 @@
 # deleteMysqldbInstanceLiveMount
 
-Delete a Live Mount of a MySQL instance  Supported in v9.4+ Deletes the Live Mount of a MySQL instance associated with the specified ID.
+Delete a Live Mount of a MySQL instance Supported in v9.4+ Deletes the Live Mount of a MySQL instance associated with the specified ID.
 
 ## Arguments
 

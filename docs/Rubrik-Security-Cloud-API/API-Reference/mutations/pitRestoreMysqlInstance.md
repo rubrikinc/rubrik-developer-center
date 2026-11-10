@@ -1,6 +1,6 @@
 # pitRestoreMysqlInstance
 
-Point-in-time recovery of the specified MySQL instance to host  Supported in v9.4+ Initiates a job to export the data and log snapshot to the given host. The GET /mysqldb/instance/request/{id} endpoint can be used to monitor the progress of the job.
+Point-in-time recovery of the specified MySQL instance to host Supported in v9.4+ Initiates a job to export the data and log snapshot to the given host. The GET /mysqldb/instance/request/{id} endpoint can be used to monitor the progress of the job.
 
 ## Arguments
 

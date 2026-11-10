@@ -1,6 +1,6 @@
 # DetectionWindow
 
-DetectionWindow carries the timing fields shared by every anomaly violation_details message. Persisted on the violation_details blob; read by the anomaly dedup helper and surfaced in the Overview tab.  Relocated from policyengine_common.proto into this dedicated anomaly-common file so anomaly-specific protos (e.g. policyengine_signin_anomaly.proto) can import DetectionWindow without forming a common -> signin -> common import cycle. Same Go package (rubrik/policyengine/proto), so Go consumers are unaffected by the relocation.
+DetectionWindow carries the timing fields shared by every anomaly violation_details message. Persisted on the violation_details blob; read by the anomaly dedup helper and surfaced in the Overview tab. Relocated from policyengine_common.proto into this dedicated anomaly-common file so anomaly-specific protos (e.g. policyengine_signin_anomaly.proto) can import DetectionWindow without forming a common -> signin -> common import cycle. Same Go package (rubrik/policyengine/proto), so Go consumers are unaffected by the relocation.
 
 ## Fields
 

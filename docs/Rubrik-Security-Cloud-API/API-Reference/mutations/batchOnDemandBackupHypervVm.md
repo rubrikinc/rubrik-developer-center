@@ -1,6 +1,6 @@
 # batchOnDemandBackupHypervVm
 
-Takes bulk on-demand backup of Hyper-V virtual machines  Supported in v9.0+ Takes on-demand backup of multiple specified Hyper-V virtual machines.
+Takes bulk on-demand backup of Hyper-V virtual machines Supported in v9.0+ Takes on-demand backup of multiple specified Hyper-V virtual machines.
 
 ## Arguments
 

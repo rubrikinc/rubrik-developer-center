@@ -32,6 +32,7 @@ Returns a single AWS Native RDS instance by its Rubrik FID.
         id
         isExocomputeConfigured
         isInfrastructureAlertsEnabled
+        isInfrastructureAlertsRegionConnected
         isMultiAz
         isProtectable
         isRelic

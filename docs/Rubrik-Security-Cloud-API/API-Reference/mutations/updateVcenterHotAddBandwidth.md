@@ -1,6 +1,6 @@
 # updateVcenterHotAddBandwidth
 
-Set the ingest and export bandwidth limits for HotAdd with the vCenter  Supported in v5.3+ Set the ingest and export bandwidth limits in Mbps when using HotAdd with the vCenter. These limits are shared across all HotAdd proxies for the Center.
+Set the ingest and export bandwidth limits for HotAdd with the vCenter Supported in v5.3+ Set the ingest and export bandwidth limits in Mbps when using HotAdd with the vCenter. These limits are shared across all HotAdd proxies for the Center.
 
 ## Arguments
 

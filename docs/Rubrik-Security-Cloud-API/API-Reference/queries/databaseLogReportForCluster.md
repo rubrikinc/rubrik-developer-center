@@ -1,6 +1,6 @@
 # databaseLogReportForCluster
 
-Get the database log backup delay information  Supported in v5.3+ v5.3: v6.0+: Get the database log backup delay information.
+Get the database log backup delay information Supported in v5.3+ v5.3: v6.0+: Get the database log backup delay information.
 
 ## Arguments
 

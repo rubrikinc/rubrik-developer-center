@@ -1,6 +1,6 @@
 # deleteFailoverClusterApp
 
-Delete a failover cluster app  Supported in v5.2+ Delete a failover cluster app.
+Delete a failover cluster app Supported in v5.2+ Delete a failover cluster app.
 
 ## Arguments
 

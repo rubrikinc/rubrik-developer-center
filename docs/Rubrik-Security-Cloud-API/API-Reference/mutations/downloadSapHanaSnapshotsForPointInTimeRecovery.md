@@ -1,6 +1,6 @@
 # downloadSapHanaSnapshotsForPointInTimeRecovery
 
-Download SAP HANA database snapshots from archive for a point in time recovery  Supported in v8.0+ Downloads the most recent full snapshot and the log snapshots taken after the full snapshot, required for the point in time recovery of an SAP HANA database.
+Download SAP HANA database snapshots from archive for a point in time recovery Supported in v8.0+ Downloads the most recent full snapshot and the log snapshots taken after the full snapshot, required for the point in time recovery of an SAP HANA database.
 
 ## Arguments
 

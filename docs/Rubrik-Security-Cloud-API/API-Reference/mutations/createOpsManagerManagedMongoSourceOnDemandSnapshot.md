@@ -1,6 +1,6 @@
 # createOpsManagerManagedMongoSourceOnDemandSnapshot
 
-Take an on-demand snapshot of a MongoDB source managed by Ops Manager  Supported in v9.3+ Initiates a job to take an on-demand, full or incremental snapshot of the specified MongoDB source.
+Take an on-demand snapshot of a MongoDB source managed by Ops Manager Supported in v9.3+ Initiates a job to take an on-demand, full or incremental snapshot of the specified MongoDB source.
 
 ## Arguments
 

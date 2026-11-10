@@ -1,6 +1,6 @@
 # nutanixClusterContainers
 
-Get list of containers on this cluster  Supported in v5.0+ Query the nutanix cluster to get the list of containers, used for export purposes.
+Get list of containers on this cluster Supported in v5.0+ Query the nutanix cluster to get the list of containers, used for export purposes.
 
 ## Arguments
 

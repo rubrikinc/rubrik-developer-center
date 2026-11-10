@@ -6,6 +6,7 @@ Archiving specification.
 
 | Field | Type | Description |
 |-------|------|-------------|
+| archivalGroup | [TargetMapping](TargetMapping.md) | Archival storage settings of an archival group. |
 | archivalLocationToClusterMapping | [[ArchivalLocationToClusterMapping](ArchivalLocationToClusterMapping.md)!]! | Mapping between the archival location and the Rubrik cluster. |
 | archivalTieringSpec | [ArchivalTieringSpec](ArchivalTieringSpec.md) | Archival tiering specification. |
 | databaseLogRetentionInfo | [DatabaseLogRetentionInfoType](DatabaseLogRetentionInfoType.md) | Per-workload database transaction log retention policy for this location. |

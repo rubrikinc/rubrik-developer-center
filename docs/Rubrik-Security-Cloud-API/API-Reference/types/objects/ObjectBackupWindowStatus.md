@@ -25,6 +25,7 @@ Represents the object-level backup window status of a hierarchy object.
 - [AnthropicChildOrg.objectBackupWindow](AnthropicChildOrg.md)
 - [AnthropicClaudeChatWorkload.objectBackupWindow](AnthropicClaudeChatWorkload.md)
 - [AnthropicOrg.objectBackupWindow](AnthropicOrg.md)
+- [AnthropicOrgLocalSessions.objectBackupWindow](AnthropicOrgLocalSessions.md)
 - [AnthropicOrgSetting.objectBackupWindow](AnthropicOrgSetting.md)
 - [AnthropicUser.objectBackupWindow](AnthropicUser.md)
 - [AtlassianSite.objectBackupWindow](AtlassianSite.md)
@@ -44,5 +45,4 @@ Represents the object-level backup window status of a hierarchy object.
 - [AzureCosmosNosqlContainer.objectBackupWindow](AzureCosmosNosqlContainer.md)
 - [AzureCosmosNosqlDatabase.objectBackupWindow](AzureCosmosNosqlDatabase.md)
 - [AzureDevOpsOrganization.objectBackupWindow](AzureDevOpsOrganization.md)
-- [AzureDevOpsProject.objectBackupWindow](AzureDevOpsProject.md)
-- *…and 377 more*
+- *…and 384 more*

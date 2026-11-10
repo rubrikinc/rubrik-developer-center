@@ -1,6 +1,6 @@
 # Interfaces
 
-211 types.
+218 types.
 
 [ActiveDirectoryDomainDescendantType](ActiveDirectoryDomainDescendantType.md)  
 [ActiveDirectoryDomainPhysicalChildType](ActiveDirectoryDomainPhysicalChildType.md)  
@@ -12,6 +12,11 @@
 [AwsNativeAccountLogicalChildType](AwsNativeAccountLogicalChildType.md)  
 [AwsNativeHierarchyObject](AwsNativeHierarchyObject.md)  
 [AzureNativeHierarchyObjectType](AzureNativeHierarchyObjectType.md)  
+[Blueprint](Blueprint.md)  
+[BlueprintChild](BlueprintChild.md)  
+[BlueprintFailoverInstance](BlueprintFailoverInstance.md)  
+[BlueprintLocation](BlueprintLocation.md)  
+[BlueprintNew](BlueprintNew.md)  
 [CdmHierarchyObject](CdmHierarchyObject.md)  
 [CdmHierarchySnappableNew](CdmHierarchySnappableNew.md)  
 [CloudAccount](CloudAccount.md)  
@@ -164,7 +169,9 @@
 [ProxmoxTagLogicalChild](ProxmoxTagLogicalChild.md)  
 [PureStorageArrayDescendantV1](PureStorageArrayDescendantV1.md)  
 [PureStorageArrayLogicalChildType](PureStorageArrayLogicalChildType.md)  
+[RecoverySpec](RecoverySpec.md)  
 [RequestedChangesTemplate](RequestedChangesTemplate.md)  
+[ResourceSpec](ResourceSpec.md)  
 [SaasAppsOrganization](SaasAppsOrganization.md)  
 [SapHanaSystemDescendantType](SapHanaSystemDescendantType.md)  
 [SapHanaSystemPhysicalChildType](SapHanaSystemPhysicalChildType.md)  

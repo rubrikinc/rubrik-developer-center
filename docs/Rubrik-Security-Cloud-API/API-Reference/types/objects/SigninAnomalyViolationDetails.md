@@ -1,6 +1,6 @@
 # SigninAnomalyViolationDetails
 
-SigninAnomalyViolationDetails is the violation_details payload for POLICY_TYPE_SIGNIN_ANOMALY violations.  No denormalized domain_name/tenant_id is carried here -- CAPs are principals keyed by cap_id, so alert-list hydration resolves the chip (name/type/domain) via the existing principalMap path.
+SigninAnomalyViolationDetails is the violation_details payload for POLICY_TYPE_SIGNIN_ANOMALY violations. No denormalized domain_name/tenant_id is carried here -- CAPs are principals keyed by cap_id, so alert-list hydration resolves the chip (name/type/domain) via the existing principalMap path.
 
 ## Fields
 

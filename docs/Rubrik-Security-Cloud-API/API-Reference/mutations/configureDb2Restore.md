@@ -1,6 +1,6 @@
 # configureDb2Restore
 
-Configuring a Db2 database restore for different host  Supported in v9.1+ Configures the target host for cross host recovery for a source Db2 database.
+Configuring a Db2 database restore for different host Supported in v9.1+ Configures the target host for cross host recovery for a source Db2 database.
 
 ## Arguments
 

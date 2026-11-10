@@ -1,6 +1,6 @@
 # createVsphereAdvancedTag
 
-Create a multi-tag filter for vSphere tags  Supported in v7.0+ v7.0-v9.1: Create a filter consisting of vSphere tags joined with logical operators. v9.2+: Create a filter consisting of vSphere tags joined with logical operators. It is not supported onStandalone Hosts.
+Create a multi-tag filter for vSphere tags Supported in v7.0+ v7.0-v9.1: Create a filter consisting of vSphere tags joined with logical operators. v9.2+: Create a filter consisting of vSphere tags joined with logical operators. It is not supported onStandalone Hosts.
 
 ## Arguments
 

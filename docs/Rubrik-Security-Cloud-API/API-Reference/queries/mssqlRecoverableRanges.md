@@ -1,6 +1,6 @@
 # mssqlRecoverableRanges
 
-Get recoverable ranges of a Microsoft SQL database  Supported in v5.0+ Retrieve the recoverable ranges for a specified Microsoft SQL database. A begin and/or end timestamp can be provided to retrieve only the ranges that fall within the window.
+Get recoverable ranges of a Microsoft SQL database Supported in v5.0+ Retrieve the recoverable ranges for a specified Microsoft SQL database. A begin and/or end timestamp can be provided to retrieve only the ranges that fall within the window.
 
 ## Arguments
 

@@ -1,6 +1,6 @@
 # deleteManagedVolume
 
-Delete a Managed Volume  Supported in v7.0+ Delete a Managed Volume.
+Delete a Managed Volume Supported in v7.0+ Delete a Managed Volume.
 
 ## Arguments
 

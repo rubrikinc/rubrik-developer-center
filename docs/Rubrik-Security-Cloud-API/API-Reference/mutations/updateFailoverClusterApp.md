@@ -1,6 +1,6 @@
 # updateFailoverClusterApp
 
-Update a failover cluster app  Supported in v5.2+ Update the failover cluster app with specified properties.
+Update a failover cluster app Supported in v5.2+ Update the failover cluster app with specified properties.
 
 ## Arguments
 

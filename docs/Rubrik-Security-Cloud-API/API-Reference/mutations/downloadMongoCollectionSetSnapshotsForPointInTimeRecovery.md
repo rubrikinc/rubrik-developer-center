@@ -1,6 +1,6 @@
 # downloadMongoCollectionSetSnapshotsForPointInTimeRecovery
 
-Download MongoDB collection set snapshots for a point in time recovery  Supported in v9.5+ Downloads the most recent full snapshot and the log snapshots taken after the full snapshot, required for the point in time recovery of a MongoDB collection set.
+Download MongoDB collection set snapshots for a point in time recovery Supported in v9.5+ Downloads the most recent full snapshot and the log snapshots taken after the full snapshot, required for the point in time recovery of a MongoDB collection set.
 
 ## Arguments
 

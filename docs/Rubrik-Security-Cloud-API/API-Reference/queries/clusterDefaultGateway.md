@@ -1,6 +1,6 @@
 # clusterDefaultGateway
 
-Get current default gateway  Supported in v5.0+ Get current default gateway.
+Get current default gateway Supported in v5.0+ Get current default gateway.
 
 ## Arguments
 

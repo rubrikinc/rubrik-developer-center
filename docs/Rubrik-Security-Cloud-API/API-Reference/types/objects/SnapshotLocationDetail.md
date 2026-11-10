@@ -8,7 +8,7 @@ Snapshot location information.
 |-------|------|-------------|
 | locationId | String! | Id of the location. |
 | name | String! | Name of the location. |
-| type | [SnapshotLocType](../enums/SnapshotLocType.md) |  |
+| type | [SnapshotLocType](../enums/SnapshotLocType.md) | Type of the snapshot location. When the location type cannot be determined, the value is UNSPECIFIED. |
 
 ## Used By
 

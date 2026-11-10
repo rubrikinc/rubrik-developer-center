@@ -1,6 +1,6 @@
 # updateClusterNtpServers
 
-Assign NTP servers to Rubrik cluster  Supported in v5.0+ Assign NTP servers to Rubrik cluster.
+Assign NTP servers to Rubrik cluster Supported in v5.0+ Assign NTP servers to Rubrik cluster.
 
 ## Arguments
 

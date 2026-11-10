@@ -1,6 +1,6 @@
 # deleteCephSetting
 
-Delete a Ceph setting for an OpenStack Availability Zone  Supported in v9.5+ Delete a specific Ceph storage setting for an OpenStack Availability Zone.
+Delete a Ceph setting for an OpenStack Availability Zone Supported in v9.5+ Delete a specific Ceph storage setting for an OpenStack Availability Zone.
 
 ## Arguments
 

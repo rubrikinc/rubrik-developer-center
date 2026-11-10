@@ -1,6 +1,6 @@
 # exportK8sVirtualMachineSnapshot
 
-Create a job to export a Kubernetes virtual machine snapshot  Supported in v9.3+ Launches a job to export the Kubernetes resources from a virtual machine snapshot to a namespace in a target Kubernetes cluster.
+Create a job to export a Kubernetes virtual machine snapshot Supported in v9.3+ Launches a job to export the Kubernetes resources from a virtual machine snapshot to a namespace in a target Kubernetes cluster.
 
 ## Arguments
 

@@ -15,4 +15,5 @@ VMware virtual machine network interface.
 
 **Referenced by**
 
+- [VmwareResourceSpec.vmwareNics](VmwareResourceSpec.md)
 - [VmwareVirtualMachineResourceSpec.networkInterfaces](VmwareVirtualMachineResourceSpec.md)

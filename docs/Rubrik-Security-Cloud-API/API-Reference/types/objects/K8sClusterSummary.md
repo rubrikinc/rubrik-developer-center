@@ -9,6 +9,7 @@ Supported in v9.0+ Key properties of a Kubernetes cluster.
 | backupSubnetCidr | String | Supported in v9.6+ Comma-separated IPv4 CIDR(s) the per-node backup proxy binds its backup NIC within. Populated only when dataPathTransport is pernodeproxy. |
 | crdServiceAccountInfo | [ServiceAccountInfo](ServiceAccountInfo.md) | Supported in v9.2+ The details of the RSC service account used for CRD operations. |
 | dataPathTransport | String | Supported in v9.6+ Transport type used for RBA data movers. Set to pernodeproxy when the per-node backup proxy DaemonSet routes data traffic. Null for clusters without per-node-proxy configured. |
+| discoveryScope | [K8sDiscoveryScope](K8sDiscoveryScope.md) | Limits discovery and protection for this CDM to a subset of namespaces and/or label selectors. |
 | distribution | String | Supported in v9.1+ Distribution of the Kubernetes cluster. |
 | effectiveSlaId | String | Supported in v9.6+ Effective SLA domain ID inherited or directly assigned. |
 | effectiveSlaSource | String | Supported in v9.6+ Source of the effective SLA (direct assignment or inherited hierarchy). |

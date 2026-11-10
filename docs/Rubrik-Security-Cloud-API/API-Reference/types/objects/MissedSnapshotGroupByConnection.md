@@ -45,4 +45,4 @@ Paginated list of MissedSnapshotGroupBy objects. Each page of the results includ
 - [PingFederateClusterV1.missedSnapshotGroupByConnection](PingFederateClusterV1.md)
 - [PostgreSQLDbCluster.missedSnapshotGroupByConnection](PostgreSQLDbCluster.md)
 - [ProxmoxVirtualMachineV1.missedSnapshotGroupByConnection](ProxmoxVirtualMachineV1.md)
-- *…and 10 more*
+- *…and 11 more*

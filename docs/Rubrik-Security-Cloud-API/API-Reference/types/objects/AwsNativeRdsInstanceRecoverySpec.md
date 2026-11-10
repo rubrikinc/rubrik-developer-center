@@ -1,0 +1,31 @@
+# AwsNativeRdsInstanceRecoverySpec
+
+AWS native RDS instance recovery spec.
+
+**Implements:** [RecoverySpec](../interfaces/RecoverySpec.md)
+
+## Fields
+
+| Field | Type | Description |
+|-------|------|-------------|
+| appId | [UUID](../scalars/UUID.md)! | ID of the recovery plan. |
+| clusterParameterGroupName | String | Cluster parameter group name to be associated with the recovered RDS instance. |
+| dbEngineVersion | String! | Database engine version for the recovered RDS instance. |
+| dbInstanceClass | String! | Instance class type for the recovered RDS instance. |
+| iops | [Long](../scalars/Long.md) | Provisioned IOPS for the recovered RDS instance. |
+| isMultiAz | Boolean! | Whether the recovered RDS instance should be configured for multi-AZ deployment. |
+| isPubliclyAccessible | Boolean! | Whether the recovered RDS instance should be publicly accessible. |
+| kmsKeyId | String | KMS key ID for the recovered RDS instance. |
+| optionGroupName | String | Option group name to be associated with the recovered RDS instance. |
+| parameterGroupName | String | Parameter group name to be associated with the recovered RDS instance. |
+| port | [Long](../scalars/Long.md)! | Port on which the recovered RDS instance will accept connections. |
+| primaryAz | String | Primary availability zone for the recovered RDS instance. |
+| recoveryPointOpt | [Long](../scalars/Long.md) | Recovery point of the workload. |
+| securityGroupNativeIds | [String!] | Security group native IDs to be associated with the recovered RDS instance. |
+| snappableId | String! | ID of the workload. |
+| snapshotType | [SnapshotType](../enums/SnapshotType.md) | Which type of snapshot used to recover the RDS instance from. This is only used in INSTANCE Spec for a recovery. |
+| storageType | String | Storage type for the recovered RDS instance. |
+| subnetGroupName | String | Subnet group name for the recovered RDS instance. |
+| userData | String | Script to run on the recovered RDS instance after reboot. |
+| version | [Long](../scalars/Long.md)! | Version of the recovery specification. |
+| vpcNativeId | String! | VPC native ID where the recovered RDS instance will be created. |

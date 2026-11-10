@@ -1,6 +1,6 @@
 # assignSlaToMongoDbCollection
 
-Assign SLA Domain to MongoDB collection objects  Supported in v8.1+ Assigns SLA Domain to the given MongoDB collection objects.
+Assign SLA Domain to MongoDB collection objects Supported in v8.1+ Assigns SLA Domain to the given MongoDB collection objects.
 
 ## Arguments
 

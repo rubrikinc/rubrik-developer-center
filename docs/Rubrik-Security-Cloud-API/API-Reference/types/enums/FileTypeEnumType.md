@@ -1,6 +1,6 @@
 # FileTypeEnumType
 
-FileType is the type of file this represents.  This is updated each time we have a new type of file that can be downloaded from RSC.
+FileType is the type of file this represents. This is updated each time we have a new type of file that can be downloaded from RSC.
 
 ## Values
 

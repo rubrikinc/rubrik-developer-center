@@ -8,4 +8,4 @@ Input for an attachment in a support case.
 |-------|------|-------------|
 | contentBase64 | String! | Attachment content encoded as a Base64 string. |
 | name | String! | Attachment name. |
-| type | String! |  |
+| type | String! | Attachment type. |

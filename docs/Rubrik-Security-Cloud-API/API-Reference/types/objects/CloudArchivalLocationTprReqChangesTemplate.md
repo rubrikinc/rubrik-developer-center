@@ -13,4 +13,4 @@ Template for deleting a cloud archival location with the quorum authorization re
 | name | String! | Name of the archival location. |
 | requestedAction | String! | Requested action string. |
 | templateName | String! | Name of the requested changes template for quorum authorization. |
-| type | [TargetType](../enums/TargetType.md)! |  |
+| type | [TargetType](../enums/TargetType.md)! | Type of archival location. |

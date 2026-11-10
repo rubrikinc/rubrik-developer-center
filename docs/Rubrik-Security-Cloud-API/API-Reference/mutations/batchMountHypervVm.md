@@ -1,6 +1,6 @@
 # batchMountHypervVm
 
-Mount snapshots from multiple virtual machines  Supported in v7.0+ Mounts a batch of snapshots from a group of specified virtual machines.
+Mount snapshots from multiple virtual machines Supported in v7.0+ Mounts a batch of snapshots from a group of specified virtual machines.
 
 ## Arguments
 

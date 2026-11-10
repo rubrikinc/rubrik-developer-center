@@ -1,6 +1,6 @@
 # patchMongoSource
 
-v8.1-v9.2: Edit a MongoDB source v9.3+: Edit a MongoDB source managed using logical backup and recovery  Supported in v8.1+ v8.1-v9.2: Edits the properties of a MongoDB source. Hosts, name, and type of MongoDB cannot be changed once added. v9.3+: Edits the properties of a MongoDB source managed using logical backup and recovery. Hosts, name, and the type of the MongoDB deployment cannot be changed once added.
+v8.1-v9.2: Edit a MongoDB source v9.3+: Edit a MongoDB source managed using logical backup and recovery Supported in v8.1+ v8.1-v9.2: Edits the properties of a MongoDB source. Hosts, name, and type of MongoDB cannot be changed once added. v9.3+: Edits the properties of a MongoDB source managed using logical backup and recovery. Hosts, name, and the type of the MongoDB deployment cannot be changed once added.
 
 ## Arguments
 

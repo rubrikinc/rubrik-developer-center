@@ -1,6 +1,6 @@
 # updateNasSystem
 
-Modify the information for a registered NAS system  Supported in v7.0+ Change the hostname that is associated with a NAS system. Update the credentials used to access the vendor-specific APIs.
+Modify the information for a registered NAS system Supported in v7.0+ Change the hostname that is associated with a NAS system. Update the credentials used to access the vendor-specific APIs.
 
 ## Arguments
 

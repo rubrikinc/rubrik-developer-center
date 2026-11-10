@@ -1,6 +1,6 @@
 # deleteK8sCluster
 
-Delete a Kubernetes cluster  Supported in v9.0+ Deletes a Kubernetes cluster by specifying the cluster ID.
+Delete a Kubernetes cluster Supported in v9.0+ Deletes a Kubernetes cluster by specifying the cluster ID.
 
 ## Arguments
 

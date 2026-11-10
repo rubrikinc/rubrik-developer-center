@@ -1,6 +1,6 @@
 # clusterNetworkInterfaces
 
-Get network interfaces for a Rubrik Cluster cluster  Supported in v5.0+ Retrieves network interfaces(including VLANs) on bond0/bond1.
+Get network interfaces for a Rubrik Cluster cluster Supported in v5.0+ Retrieves network interfaces(including VLANs) on bond0/bond1.
 
 ## Arguments
 

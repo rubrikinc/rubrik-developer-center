@@ -1,6 +1,6 @@
 # clusterWebSignedCertificate
 
-Get the signed certificate for Web server  Supported in v5.2+ If the web server uses a signed certificate, fetch it.
+Get the signed certificate for Web server Supported in v5.2+ If the web server uses a signed certificate, fetch it.
 
 ## Arguments
 

@@ -8,7 +8,7 @@ Represents a reviewer in an access review schedule definition.
 |-------|------|-------------|
 | displayName | String! | Display name of the reviewer. |
 | isFallback | Boolean! | Whether this is a fallback reviewer. |
-| type | [AzureAdObjectType](../enums/AzureAdObjectType.md)! |  |
+| type | [AzureAdObjectType](../enums/AzureAdObjectType.md)! | Type of the reviewer principal. |
 
 ## Used By
 

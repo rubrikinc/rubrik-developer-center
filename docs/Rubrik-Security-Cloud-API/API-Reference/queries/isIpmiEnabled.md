@@ -6,7 +6,7 @@ Check if IPMI is enabled on the cluster.
 
 | Argument | Type | Description |
 |----------|------|-------------|
-| input *(required)* | [IsIpmiEnabledInput](../types/inputs/IsIpmiEnabledInput.md)! | Input for determining if IPMI is enabled on the cluster. |
+| input *(required)* | [IsIpmiEnabledInput](../types/inputs/IsIpmiEnabledInput.md)! | Input for checking if IPMI is enabled on a cluster. |
 
 ## Returns
 

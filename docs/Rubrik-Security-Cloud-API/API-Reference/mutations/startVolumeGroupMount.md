@@ -1,6 +1,6 @@
 # startVolumeGroupMount
 
-Initiate a live mount for a given Volume Group snapshot  Supported in v5.0+ Create a live mount request for a Volume Group snapshot.
+Initiate a live mount for a given Volume Group snapshot Supported in v5.0+ Create a live mount request for a Volume Group snapshot.
 
 ## Arguments
 

@@ -8,7 +8,7 @@ Principal insight details.
 |-------|------|-------------|
 | message | String! | Message of the insight. |
 | time | [DateTime](../scalars/DateTime.md)! | Timestamp of the insight in Unix milliseconds. |
-| type | [UserAccessInsightType](../enums/UserAccessInsightType.md)! |  |
+| type | [UserAccessInsightType](../enums/UserAccessInsightType.md)! | Type of the insight. |
 
 ## Used By
 

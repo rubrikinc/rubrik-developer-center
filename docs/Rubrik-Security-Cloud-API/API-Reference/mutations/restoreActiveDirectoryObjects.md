@@ -1,6 +1,6 @@
 # restoreActiveDirectoryObjects
 
-Restore the given objects to the Active Directory  Supported in v9.0+ Initiates a recovery for the given Active Directory objects.
+Restore the given objects to the Active Directory Supported in v9.0+ Initiates a recovery for the given Active Directory objects.
 
 ## Arguments
 

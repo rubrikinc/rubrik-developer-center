@@ -1,6 +1,6 @@
 # endManagedVolumeSnapshot
 
-End Managed Volume snapshot  Supported in v7.0+ Close a Managed Volume for writes. A snapshot will be created containing all writes since the last begin-snapshot call.
+End Managed Volume snapshot Supported in v7.0+ Close a Managed Volume for writes. A snapshot will be created containing all writes since the last begin-snapshot call.
 
 ## Arguments
 

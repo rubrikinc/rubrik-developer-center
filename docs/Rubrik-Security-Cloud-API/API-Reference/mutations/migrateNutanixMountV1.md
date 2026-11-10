@@ -1,6 +1,6 @@
 # migrateNutanixMountV1
 
-Relocate a Nutanix virtual machine to another storage container  Supported in v6.0+ Initiate a request to migrate the virtual disks of a specified Nutanix Live Mount to another storage container. The destination storage container has been specified when the Live Mount was created. The Live Mount will be deleted when the relocation succeeds.
+Relocate a Nutanix virtual machine to another storage container Supported in v6.0+ Initiate a request to migrate the virtual disks of a specified Nutanix Live Mount to another storage container. The destination storage container has been specified when the Live Mount was created. The Live Mount will be deleted when the relocation succeeds.
 
 ## Arguments
 

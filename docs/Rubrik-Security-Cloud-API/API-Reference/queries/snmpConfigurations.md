@@ -1,6 +1,6 @@
 # snmpConfigurations
 
-Get SNMP configuration of the cluster  Supported in v5.0+ Get SNMP configuration of the queried cluster.
+Get SNMP configuration of the cluster Supported in v5.0+ Get SNMP configuration of the queried cluster.
 
 ## Arguments
 

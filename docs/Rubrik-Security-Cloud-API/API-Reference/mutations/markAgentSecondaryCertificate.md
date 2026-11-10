@@ -1,6 +1,6 @@
 # markAgentSecondaryCertificate
 
-Mark a certificate to be added to agents  Supported in v5.3+ Mark a secondary cluster certificate to be asynchronously synced to all Rubrik Backup Service instances for which this cluster is the primary.
+Mark a certificate to be added to agents Supported in v5.3+ Mark a secondary cluster certificate to be asynchronously synced to all Rubrik Backup Service instances for which this cluster is the primary.
 
 ## Arguments
 

@@ -1,6 +1,6 @@
 # deleteSmbDomain
 
-Delete Active Directory from Rubrik  Supported in v5.0+ Delete Active Directory from Rubrik.
+Delete Active Directory from Rubrik Supported in v5.0+ Delete Active Directory from Rubrik.
 
 ## Arguments
 

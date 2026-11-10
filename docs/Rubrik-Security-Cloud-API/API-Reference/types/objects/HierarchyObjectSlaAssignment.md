@@ -15,3 +15,4 @@ Containing calculated information about SLA assignment on a particular object.
 **Referenced by**
 
 - [AnthropicClaudeChatWorkload.fullSlaAssignment](AnthropicClaudeChatWorkload.md)
+- [AnthropicOrgLocalSessions.fullSlaAssignment](AnthropicOrgLocalSessions.md)

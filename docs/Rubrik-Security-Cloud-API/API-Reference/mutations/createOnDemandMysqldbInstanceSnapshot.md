@@ -1,6 +1,6 @@
 # createOnDemandMysqldbInstanceSnapshot
 
-Create an on-demand snapshot for the MySQL instance  Supported in v9.5+ Initiates a job to take an on-demand snapshot of a specified MySQL instance. You can use the GET /mysqldb/instance/request/{id} endpoint to monitor the progress of the job.
+Create an on-demand snapshot for the MySQL instance Supported in v9.5+ Initiates a job to take an on-demand snapshot of a specified MySQL instance. You can use the GET /mysqldb/instance/request/{id} endpoint to monitor the progress of the job.
 
 ## Arguments
 

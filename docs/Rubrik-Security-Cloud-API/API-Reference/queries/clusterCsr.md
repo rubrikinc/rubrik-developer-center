@@ -1,6 +1,6 @@
 # clusterCsr
 
-Get the cluster certificate signing request  Supported in v7.0+ Returns the certificate signing request generated from the private key of the Rubrik cluster.
+Get the cluster certificate signing request Supported in v7.0+ Returns the certificate signing request generated from the private key of the Rubrik cluster.
 
 ## Arguments
 

@@ -1,6 +1,6 @@
 # validateOracleAcoFile
 
-Validate Oracle ACO file  Supported in v6.0+ Validate the provided Oracle ACO (Advanced Cloning Options) file.
+Validate Oracle ACO file Supported in v6.0+ Validate the provided Oracle ACO (Advanced Cloning Options) file.
 
 ## Arguments
 

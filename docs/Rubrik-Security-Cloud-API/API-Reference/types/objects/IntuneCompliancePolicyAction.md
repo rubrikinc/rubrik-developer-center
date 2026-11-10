@@ -12,7 +12,7 @@ Intune compliance policy scheduled action.
 | notificationTemplateName | String | Name of the notification template associated with the action. |
 | policyId | String! | ID of the Intune compliance policy. |
 | recipientCount | [Long](../scalars/Long.md) | Number of recipients for the notification. |
-| type | [IntuneComplianceActionType](../enums/IntuneComplianceActionType.md)! |  |
+| type | [IntuneComplianceActionType](../enums/IntuneComplianceActionType.md)! | Type of the Intune compliance policy action. |
 
 ## Used By
 

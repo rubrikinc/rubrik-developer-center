@@ -1,6 +1,6 @@
 # oracleMissedSnapshots
 
-Get missed snapshots for an Oracle database  Supported in v5.0+ Retrieve summary information about the missed snapshots of an Oracle database.
+Get missed snapshots for an Oracle database Supported in v5.0+ Retrieve summary information about the missed snapshots of an Oracle database.
 
 ## Arguments
 

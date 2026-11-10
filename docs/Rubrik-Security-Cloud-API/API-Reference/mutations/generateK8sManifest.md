@@ -1,6 +1,6 @@
 # generateK8sManifest
 
-Generate manifest for adding Kubernetes cluster  Supported in v9.2+ Generates a manifest for adding a Kubernetes Cluster.
+Generate manifest for adding Kubernetes cluster Supported in v9.2+ Generates a manifest for adding a Kubernetes Cluster.
 
 ## Arguments
 

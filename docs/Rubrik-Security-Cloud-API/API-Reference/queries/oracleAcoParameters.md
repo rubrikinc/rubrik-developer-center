@@ -1,6 +1,6 @@
 # oracleAcoParameters
 
-List of supported Advanced Cloning Options  Supported in v6.0+ Get the list of supported Advanced Cloning Options (ACO) parameters.
+List of supported Advanced Cloning Options Supported in v6.0+ Get the list of supported Advanced Cloning Options (ACO) parameters.
 
 ## Arguments
 

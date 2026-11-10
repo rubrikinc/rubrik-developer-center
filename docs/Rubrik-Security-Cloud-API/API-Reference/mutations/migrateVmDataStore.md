@@ -1,6 +1,6 @@
 # migrateVmDataStore
 
-Migrate datastore of a Live Mount  Supported in v9.4+ Triggers a datastore migration job to migrate the datastore of a Hyper-V virtual machine Live Mount.
+Migrate datastore of a Live Mount Supported in v9.4+ Triggers a datastore migration job to migrate the datastore of a Hyper-V virtual machine Live Mount.
 
 ## Arguments
 

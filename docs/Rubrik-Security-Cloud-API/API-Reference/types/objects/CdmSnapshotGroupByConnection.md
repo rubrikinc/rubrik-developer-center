@@ -45,4 +45,4 @@ Paginated list of CdmSnapshotGroupBy objects. Each page of the results includes 
 - [PingFederateClusterV1.snapshotGroupByConnection](PingFederateClusterV1.md)
 - [PostgreSQLDbCluster.snapshotGroupByConnection](PostgreSQLDbCluster.md)
 - [ProxmoxVirtualMachineV1.snapshotGroupByConnection](ProxmoxVirtualMachineV1.md)
-- *…and 10 more*
+- *…and 11 more*

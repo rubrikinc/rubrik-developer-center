@@ -114,4 +114,4 @@ A snapshot of a workload managed by a Rubrik cluster.
 - [ExchangeDatabase.newestReplicatedSnapshot](ExchangeDatabase.md)
 - [ExchangeDatabase.newestSnapshot](ExchangeDatabase.md)
 - [ExchangeDatabase.oldestSnapshot](ExchangeDatabase.md)
-- *…and 189 more*
+- *…and 194 more*

@@ -1,6 +1,6 @@
 # patchMysqlInstance
 
-Update properties of the MySQL instance  Supported in v9.3+ Start an asynchronous job to update the properties of the MySQL Instance.
+Update properties of the MySQL instance Supported in v9.3+ Start an asynchronous job to update the properties of the MySQL Instance.
 
 ## Arguments
 

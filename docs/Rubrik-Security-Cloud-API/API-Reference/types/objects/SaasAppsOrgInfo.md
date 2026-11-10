@@ -16,6 +16,7 @@ The information of the Saas Apps organization.
 - [AtlassianSite.saasAppsOrgInfo](AtlassianSite.md)
 - [Dynamics365Organization.saasAppsOrgInfo](Dynamics365Organization.md)
 - [GoogleWorkspaceOrg.saasAppsOrgInfo](GoogleWorkspaceOrg.md)
+- [M365ConfigsOrg.saasAppsOrgInfo](M365ConfigsOrg.md)
 - [PowerPlatformEnvironment.saasAppsOrgInfo](PowerPlatformEnvironment.md)
 - SaasAppsOrganization.saasAppsOrgInfo
 - [SalesforceOrganization.saasAppsOrgInfo](SalesforceOrganization.md)

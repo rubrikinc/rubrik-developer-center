@@ -1,6 +1,6 @@
 # resizeManagedVolume
 
-Resize managed volume  Supported in v5.3+ Resize the managed volume to a larger size. Once a volume size has been increased, it can not be decreased.
+Resize managed volume Supported in v5.3+ Resize the managed volume to a larger size. Once a volume size has been increased, it can not be decreased.
 
 ## Arguments
 

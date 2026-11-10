@@ -1,6 +1,6 @@
 # vsphereOnDemandSnapshot
 
-Create an on-demand snapshot for a VM  Supported in v5.0+ Use the ID of a virtual machine to create an on-demand snapshot.
+Create an on-demand snapshot for a VM Supported in v5.0+ Use the ID of a virtual machine to create an on-demand snapshot.
 
 ## Arguments
 

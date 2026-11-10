@@ -1,6 +1,6 @@
 # UpdateCustomerAppPermissionsInput
 
-Input to update the Azure app  with specified permissions in an idempotent manner.
+Input to update the Azure app with specified permissions in an idempotent manner.
 
 ## Fields
 

@@ -1,6 +1,6 @@
 # restoreOpenstackVmSnapshotFiles
 
-Restore files from an OpenStack virtual machine snapshot  Supported in v9.5+ Start an asynchronous job to restore files and folders from a specified OpenStack virtual machine snapshot to the source virtual machine or a different target virtual machine.
+Restore files from an OpenStack virtual machine snapshot Supported in v9.5+ Start an asynchronous job to restore files and folders from a specified OpenStack virtual machine snapshot to the source virtual machine or a different target virtual machine.
 
 ## Arguments
 

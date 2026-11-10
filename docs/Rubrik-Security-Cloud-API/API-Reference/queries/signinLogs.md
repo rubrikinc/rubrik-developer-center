@@ -1,6 +1,6 @@
 # signinLogs
 
-List sign-in logs with filtering and pagination.  Retrieves sign-in events from identity providers (Entra ID, Okta, On-Prem AD) with support for filtering by time range, actor, provider, result, and other criteria.
+List sign-in logs with filtering and pagination. Retrieves sign-in events from identity providers (Entra ID, Okta, On-Prem AD) with support for filtering by time range, actor, provider, result, and other criteria.
 
 ## Arguments
 

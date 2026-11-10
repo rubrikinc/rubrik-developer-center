@@ -1,6 +1,6 @@
 # k8sProtectionSetSnapshots
 
-Get a list of snapshots of a Kubernetes protection set workload  Supported in v9.1+ Retrieves summary information for each of the snapshots of a specified Kubernetes protection set workload.
+Get a list of snapshots of a Kubernetes protection set workload Supported in v9.1+ Retrieves summary information for each of the snapshots of a specified Kubernetes protection set workload.
 
 ## Arguments
 

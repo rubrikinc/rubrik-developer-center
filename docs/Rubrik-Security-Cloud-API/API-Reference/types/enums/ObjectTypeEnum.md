@@ -9,6 +9,7 @@ ObjectTypeEnum covering all Rubrik cluster and RSC workload types.
 | ACTIVE_DIRECTORY_DOMAIN_CONTROLLER | Active Directory domain controller. |
 | ANTHROPIC_CHILD_ORG_SETTINGS | Anthropic child org settings. |
 | ANTHROPIC_DEVICE | Anthropic device. |
+| ANTHROPIC_ORG_LOCAL_SESSIONS | Claude local sessions of an Anthropic organization. |
 | ANTHROPIC_ORG_SETTINGS | Anthropic org settings. |
 | ANTHROPIC_USER_CLAUDE_CHAT | Anthropic user Claude chat. |
 | AWS_NATIVE_CONFIG | AWS Native Config. |
@@ -70,6 +71,12 @@ ObjectTypeEnum covering all Rubrik cluster and RSC workload types.
 | M365_BACKUP_STORAGE_MAILBOX | M365 Backup Storage Mailbox. |
 | M365_BACKUP_STORAGE_ONEDRIVE | M365 Backup Storage Onedrive. |
 | M365_BACKUP_STORAGE_SITE | M365 Backup Storage Sharepoint Site. |
+| M365_CONFIGS_DEFENDER | M365 Configurations Defender for Office 365 settings. |
+| M365_CONFIGS_EXCHANGE | M365 Configurations Exchange Online settings. |
+| M365_CONFIGS_ONEDRIVE | M365 Configurations OneDrive settings. |
+| M365_CONFIGS_PURVIEW | M365 Configurations Purview settings. |
+| M365_CONFIGS_SHAREPOINT | M365 Configurations SharePoint settings. |
+| M365_CONFIGS_TEAMS | M365 Configurations Teams settings. |
 | MARIADB_INSTANCE | MariaDB Instance. |
 | MONGODB_COLLECTION | MongoDB Collection. |
 | MONGODB_DATABASE | MongoDB Database. |

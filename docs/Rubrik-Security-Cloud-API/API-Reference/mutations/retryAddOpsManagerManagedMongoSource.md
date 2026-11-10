@@ -1,6 +1,6 @@
 # retryAddOpsManagerManagedMongoSource
 
-Update a MongoDB source managed by Ops Manager  Supported in v9.2+ v9.2: Updates the configuration of a MongoDB source managed by OpsManager. You can use this endpoint for updating MongoDB source details when the request to add a source fails. v9.3+: Updates the configuration of a MongoDB source managed by Ops Manager. This endpoint must be used for updating the MongoDB source details when the request to add a source had previously failed.
+Update a MongoDB source managed by Ops Manager Supported in v9.2+ v9.2: Updates the configuration of a MongoDB source managed by OpsManager. You can use this endpoint for updating MongoDB source details when the request to add a source fails. v9.3+: Updates the configuration of a MongoDB source managed by Ops Manager. This endpoint must be used for updating the MongoDB source details when the request to add a source had previously failed.
 
 ## Arguments
 

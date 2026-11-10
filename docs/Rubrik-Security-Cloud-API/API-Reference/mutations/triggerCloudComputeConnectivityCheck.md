@@ -1,6 +1,6 @@
 # triggerCloudComputeConnectivityCheck
 
-Trigger cloud compute connectivity check  Supported in v6.0+ Triggers a background job to perform the cloud compute connectivity check for the specified archival location.
+Trigger cloud compute connectivity check Supported in v6.0+ Triggers a background job to perform the cloud compute connectivity check for the specified archival location.
 
 ## Arguments
 

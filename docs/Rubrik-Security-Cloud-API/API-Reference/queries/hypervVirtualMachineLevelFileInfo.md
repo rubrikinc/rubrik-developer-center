@@ -1,6 +1,6 @@
 # hypervVirtualMachineLevelFileInfo
 
-Retrieve VM-level files from snapshot  Supported in v9.1+ Retrieves virtual-machine-level file details from the snapshot.
+Retrieve VM-level files from snapshot Supported in v9.1+ Retrieves virtual-machine-level file details from the snapshot.
 
 ## Arguments
 

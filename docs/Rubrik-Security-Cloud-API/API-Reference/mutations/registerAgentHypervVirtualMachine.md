@@ -1,6 +1,6 @@
 # registerAgentHypervVirtualMachine
 
-Register the agent installed in VM  Supported in v5.0+ Register the agent that installed in VM.
+Register the agent installed in VM Supported in v5.0+ Register the agent that installed in VM.
 
 ## Arguments
 

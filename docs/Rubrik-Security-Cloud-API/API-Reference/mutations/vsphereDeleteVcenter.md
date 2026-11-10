@@ -1,6 +1,6 @@
 # vsphereDeleteVcenter
 
-Remove vCenter Server  Supported in v5.0+ Initiates an asynchronous job to remove a vCenter Server object. The vCenter Server cannot have VMs mounted through the Rubrik cluster.
+Remove vCenter Server Supported in v5.0+ Initiates an asynchronous job to remove a vCenter Server object. The vCenter Server cannot have VMs mounted through the Rubrik cluster.
 
 ## Arguments
 

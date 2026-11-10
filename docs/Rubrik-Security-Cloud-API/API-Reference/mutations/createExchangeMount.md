@@ -1,6 +1,6 @@
 # createExchangeMount
 
-Create a request to mount a Microsoft Exchange database snapshot  Supported in v8.0+ Create a request to mount a Microsoft Exchange database snapshot.
+Create a request to mount a Microsoft Exchange database snapshot Supported in v8.0+ Create a request to mount a Microsoft Exchange database snapshot.
 
 ## Arguments
 

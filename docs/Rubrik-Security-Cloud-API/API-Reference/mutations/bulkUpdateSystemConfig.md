@@ -1,6 +1,6 @@
 # bulkUpdateSystemConfig
 
-Bulk update system config params  Supported in v9.5+ Updates configs for multiple SAP HANA systems.
+Bulk update system config params Supported in v9.5+ Updates configs for multiple SAP HANA systems.
 
 ## Arguments
 

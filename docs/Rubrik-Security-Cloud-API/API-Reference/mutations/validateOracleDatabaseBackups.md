@@ -1,6 +1,6 @@
 # validateOracleDatabaseBackups
 
-Validate Oracle database backups  Supported in v5.3+ Queue a job to validate Oracle backups for a database snapshot or a specified timestamp.
+Validate Oracle database backups Supported in v5.3+ Queue a job to validate Oracle backups for a database snapshot or a specified timestamp.
 
 ## Arguments
 

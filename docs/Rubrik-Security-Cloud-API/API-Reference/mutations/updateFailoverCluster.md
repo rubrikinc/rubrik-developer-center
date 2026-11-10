@@ -1,6 +1,6 @@
 # updateFailoverCluster
 
-Update a failover cluster  Supported in v5.2+ Update failover cluster with specified properties.
+Update a failover cluster Supported in v5.2+ Update failover cluster with specified properties.
 
 ## Arguments
 

@@ -1,6 +1,6 @@
 # retryAddMongoSource
 
-v8.1-v9.2: Update a MongoDB source v9.3+: Update a MongoDB source managed using logical backup and recovery  Supported in v8.1+ v8.1-v9.2: Updates a MongoDB source details. You can use this endpoint for updating MongoDB source details when the request to add a source fails. v9.3+: Updates a MongoDB source details. You can use this endpoint for updating MongoDB source details managed using logical backup and recovery when the request to add a source fails.
+v8.1-v9.2: Update a MongoDB source v9.3+: Update a MongoDB source managed using logical backup and recovery Supported in v8.1+ v8.1-v9.2: Updates a MongoDB source details. You can use this endpoint for updating MongoDB source details when the request to add a source fails. v9.3+: Updates a MongoDB source details. You can use this endpoint for updating MongoDB source details managed using logical backup and recovery when the request to add a source fails.
 
 ## Arguments
 

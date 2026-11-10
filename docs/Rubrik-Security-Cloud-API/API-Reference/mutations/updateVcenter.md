@@ -1,6 +1,6 @@
 # updateVcenter
 
-Update vCenter Server  Supported in v5.0+ Update the address, username and password of the specified vCenter Server object.
+Update vCenter Server Supported in v5.0+ Update the address, username and password of the specified vCenter Server object.
 
 ## Arguments
 

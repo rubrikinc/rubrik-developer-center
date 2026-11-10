@@ -1,6 +1,6 @@
 # principalAttributes
 
-ListPrincipalAttributes returns per-principal directory attributes as a cursor-paginated connection. Joins userawareness_principals_version (UAPV) with userawareness_principals (UAP) on sid; returns one entry per principal carrying its identifying fields plus an open bag of attributes deserialized from UAPV.metadata (minus a server-side sensitive-attribute deny-list).  v1 reality: only ON_PREM_AD principals carry populated attributes; non-AD principals return with an empty bag.  Authorization: ViewIdentityResiliency, account-scoped (tenant isolation enforced by the per-account customer DB).
+ListPrincipalAttributes returns per-principal directory attributes as a cursor-paginated connection. Joins userawareness_principals_version (UAPV) with userawareness_principals (UAP) on sid; returns one entry per principal carrying its identifying fields plus an open bag of attributes deserialized from UAPV.metadata (minus a server-side sensitive-attribute deny-list). v1 reality: only ON_PREM_AD principals carry populated attributes; non-AD principals return with an empty bag. Authorization: ViewIdentityResiliency, account-scoped (tenant isolation enforced by the per-account customer DB).
 
 ## Arguments
 

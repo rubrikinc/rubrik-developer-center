@@ -1,6 +1,6 @@
 # createOnDemandSapHanaStorageSnapshot
 
-Create on demand storage snapshot  Supported in v9.1+ Initiates a job to take an on demand storage snapshot of a specified SAP HANA system object. The GET /sap_hana/system/request/{id} endpoint can be used to monitor the progress of the job.
+Create on demand storage snapshot Supported in v9.1+ Initiates a job to take an on demand storage snapshot of a specified SAP HANA system object. The GET /sap_hana/system/request/{id} endpoint can be used to monitor the progress of the job.
 
 ## Arguments
 

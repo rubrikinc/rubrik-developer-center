@@ -1,6 +1,6 @@
 # removeProxyConfig
 
-Delete existing proxy configuration  Supported in v5.0+ Delete an existing proxy that was configured.
+Delete existing proxy configuration Supported in v5.0+ Delete an existing proxy that was configured.
 
 ## Arguments
 

@@ -1,6 +1,6 @@
 # expireMongoOpsManagerSourceDownloadedSnapshots
 
-Expire downloaded snapshots of a MongoDB source managed by Ops Manager  Supported in v9.5+ Expires all downloaded data and log snapshots. You can specify a begin time, an end time, or both to provide a time range to expire only the downloaded data and log snapshots that were taken within the specified time range. The time is relative to when the snapshot was originally taken, not when it was downloaded. You can also configure a flag to expire only the log snapshots.
+Expire downloaded snapshots of a MongoDB source managed by Ops Manager Supported in v9.5+ Expires all downloaded data and log snapshots. You can specify a begin time, an end time, or both to provide a time range to expire only the downloaded data and log snapshots that were taken within the specified time range. The time is relative to when the snapshot was originally taken, not when it was downloaded. You can also configure a flag to expire only the log snapshots.
 
 ## Arguments
 

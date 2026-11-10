@@ -1,6 +1,6 @@
 # updateDatabaseLogReportingPropertiesForCluster
 
-Update the database log backup report properties  Supported in v5.3+ Update the properties for the database (SQL and Oracle) log backup delay email notification creation. The properties are logDelayThresholdInMin and logDelayNotificationFrequencyInMin.
+Update the database log backup report properties Supported in v5.3+ Update the properties for the database (SQL and Oracle) log backup delay email notification creation. The properties are logDelayThresholdInMin and logDelayNotificationFrequencyInMin.
 
 ## Arguments
 

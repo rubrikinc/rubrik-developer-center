@@ -1,6 +1,6 @@
 # mountOracleDatabase
 
-Live Mount an Oracle database snapshot  Supported in v5.0+ Create an asynchronous job to Live Mount an Oracle database from a snapshot.
+Live Mount an Oracle database snapshot Supported in v5.0+ Create an asynchronous job to Live Mount an Oracle database from a snapshot.
 
 ## Arguments
 

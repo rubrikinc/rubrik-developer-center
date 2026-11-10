@@ -1,6 +1,6 @@
 # clusterNtpServers
 
-Get NTP Servers  Supported in v5.0+ Retrieve a list of the NTP servers assigned to the Rubrik cluster. Encryption keys are not reported.
+Get NTP Servers Supported in v5.0+ Retrieve a list of the NTP servers assigned to the Rubrik cluster. Encryption keys are not reported.
 
 ## Arguments
 

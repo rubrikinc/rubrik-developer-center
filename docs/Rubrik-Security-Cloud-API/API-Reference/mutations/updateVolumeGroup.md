@@ -1,6 +1,6 @@
 # updateVolumeGroup
 
-Update Volume Group properties  Supported in v5.3+ Patch Volume Group with specified properties.
+Update Volume Group properties Supported in v5.3+ Patch Volume Group with specified properties.
 
 ## Arguments
 

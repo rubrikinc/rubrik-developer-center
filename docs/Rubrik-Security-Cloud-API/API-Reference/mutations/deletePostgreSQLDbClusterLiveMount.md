@@ -1,6 +1,6 @@
 # deletePostgreSQLDbClusterLiveMount
 
-Delete a Live Mount of a PostgreSQL database cluster  Supported in v9.2+ Deletes the Live Mount of a PostgreSQL database cluster associated with the specified ID.
+Delete a Live Mount of a PostgreSQL database cluster Supported in v9.2+ Deletes the Live Mount of a PostgreSQL database cluster associated with the specified ID.
 
 ## Arguments
 

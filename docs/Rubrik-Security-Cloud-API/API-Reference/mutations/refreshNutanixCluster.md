@@ -1,6 +1,6 @@
 # refreshNutanixCluster
 
-Refresh Nutanix cluster metadata  Supported in v5.0+ Create a job to refresh the metadata for the specified Nutanix cluster.
+Refresh Nutanix cluster metadata Supported in v5.0+ Create a job to refresh the metadata for the specified Nutanix cluster.
 
 ## Arguments
 

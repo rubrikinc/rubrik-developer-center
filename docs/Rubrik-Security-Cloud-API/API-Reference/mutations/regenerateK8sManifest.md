@@ -1,6 +1,6 @@
 # regenerateK8sManifest
 
-Regenerate a manifest for an existing Kubernetes cluster  Supported in v9.2+ Regenerates the manifest for the Kubernetes cluster by specifying the ID of the cluster.
+Regenerate a manifest for an existing Kubernetes cluster Supported in v9.2+ Regenerates the manifest for the Kubernetes cluster by specifying the ID of the cluster.
 
 ## Arguments
 

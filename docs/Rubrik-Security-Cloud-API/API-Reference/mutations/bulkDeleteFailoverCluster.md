@@ -1,6 +1,6 @@
 # bulkDeleteFailoverCluster
 
-Delete the provided failover clusters  Supported in v5.3+ Delete the provided failover clusters.
+Delete the provided failover clusters Supported in v5.3+ Delete the provided failover clusters.
 
 ## Arguments
 

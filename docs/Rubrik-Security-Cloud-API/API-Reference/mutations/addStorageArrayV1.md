@@ -1,6 +1,6 @@
 # addStorageArrayV1
 
-Add a storage array  Supported in v9.6+ Adds a storage array object and initiates an asynchronous job to obtain the metadata of the storage array for the object. Fields username and password are required for Array Integration features. Field apiToken is required for Volume Protection features.
+Add a storage array Supported in v9.6+ Adds a storage array object and initiates an asynchronous job to obtain the metadata of the storage array for the object. Fields username and password are required for Array Integration features. Field apiToken is required for Volume Protection features.
 
 ## Arguments
 

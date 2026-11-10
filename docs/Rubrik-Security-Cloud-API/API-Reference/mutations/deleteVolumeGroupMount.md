@@ -1,6 +1,6 @@
 # deleteVolumeGroupMount
 
-Request to delete a mount  Supported in v5.0+ Create a request to delete a mount. If there are volumes mounted on a target host, this will use best-effort to unmount those volumes from the host, and proceed to unmount storage on Rubrik.
+Request to delete a mount Supported in v5.0+ Create a request to delete a mount. If there are volumes mounted on a target host, this will use best-effort to unmount those volumes from the host, and proceed to unmount storage on Rubrik.
 
 ## Arguments
 

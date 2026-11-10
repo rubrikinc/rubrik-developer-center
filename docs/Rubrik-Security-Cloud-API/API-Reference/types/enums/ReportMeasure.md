@@ -31,6 +31,7 @@ All reporting measures.
 | COMPUTE_COST | Compute cost (exocompute, restore/export instances). |
 | DATA_TRANSFERRED | The total amount of data successfully transferred during a backup operation. |
 | DATA_TRANSFERRED_OVER_WIRE | The amount of data transmitted over the network during a backup operation. |
+| DATA_TYPES_FOUND_LIST | The data types found in a Blast Radius object, with their counts. |
 | DISK_CAPACITY | The total capacity of disks in bytes. |
 | DISK_COUNT | The total number of disks. |
 | DISK_USED | The total used space of disks in bytes. |
@@ -91,6 +92,7 @@ All reporting measures.
 | REPLICA_STORAGE | The replica storage measure. |
 | SENSITIVE_FILES | The sensitive files measure. |
 | SENSITIVE_HITS | The sensitive hits measure. |
+| SENSITIVE_OBJECT_COUNT | The count of objects with sensitive data. |
 | SOURCE_SIZE | NCD The source size measure. |
 | SOURCE_SNAPSHOT_COST | Source snapshot cost (EC2, EBS, RDS backups). |
 | SPARSE_AWARE_SIZE | Estimated size of data that would be restored, accounting for sparse-file optimization; can be smaller than the used size for objects with sparse files. |

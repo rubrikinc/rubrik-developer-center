@@ -1,6 +1,6 @@
 # bulkUpdateFilesetTemplate
 
-Modify fileset templates  Supported in v5.0+ Modify the values of specified fileset templates.
+Modify fileset templates Supported in v5.0+ Modify the values of specified fileset templates.
 
 ## Arguments
 

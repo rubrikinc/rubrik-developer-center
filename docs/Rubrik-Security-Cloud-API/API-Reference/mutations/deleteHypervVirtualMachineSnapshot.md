@@ -1,6 +1,6 @@
 # deleteHypervVirtualMachineSnapshot
 
-Delete VM snapshot  Supported in v5.0+ Delete a snapshot by expiring it. Snapshot is expired only if it is a manual snapshot or a snapshot of an unprotected vm.
+Delete VM snapshot Supported in v5.0+ Delete a snapshot by expiring it. Snapshot is expired only if it is a manual snapshot or a snapshot of an unprotected vm.
 
 ## Arguments
 

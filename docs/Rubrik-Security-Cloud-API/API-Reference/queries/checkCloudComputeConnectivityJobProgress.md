@@ -1,6 +1,6 @@
 # checkCloudComputeConnectivityJobProgress
 
-Get details of the cloud compute connectivity check request  Supported in v6.0+ Gets the details of the request that was triggered to check the cloud compute connectivity of an archival location.
+Get details of the cloud compute connectivity check request Supported in v6.0+ Gets the details of the request that was triggered to check the cloud compute connectivity of an archival location.
 
 ## Arguments
 

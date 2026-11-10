@@ -1,6 +1,6 @@
 # oracleAcoExampleDownloadLink
 
-Link to download the Advanced Recovery Options example file  Supported in v5.3+ Link to download the Advanced Recovery Options example file which can be used to customize Oracle recoveries.
+Link to download the Advanced Recovery Options example file Supported in v5.3+ Link to download the Advanced Recovery Options example file which can be used to customize Oracle recoveries.
 
 ## Arguments
 

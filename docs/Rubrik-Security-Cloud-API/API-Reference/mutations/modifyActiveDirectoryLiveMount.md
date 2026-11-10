@@ -1,6 +1,6 @@
 # modifyActiveDirectoryLiveMount
 
-Modifies a Live Mount of an Active Directory domain controller snapshot  Supported in v9.0+ Modifies the parameters of a Live Mount of an Active Directory domain controller snapshot.
+Modifies a Live Mount of an Active Directory domain controller snapshot Supported in v9.0+ Modifies the parameters of a Live Mount of an Active Directory domain controller snapshot.
 
 ## Arguments
 

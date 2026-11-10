@@ -1,6 +1,6 @@
 # updateNutanixCluster
 
-Patch Nutanix cluster  Supported in v5.0+ Patch the host, credentials, and/or CA certs of the specified Nutanix cluster object.
+Patch Nutanix cluster Supported in v5.0+ Patch the host, credentials, and/or CA certs of the specified Nutanix cluster object.
 
 ## Arguments
 

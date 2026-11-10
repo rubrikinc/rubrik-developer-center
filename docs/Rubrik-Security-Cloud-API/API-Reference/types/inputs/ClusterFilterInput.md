@@ -27,4 +27,4 @@ Input to filter clusters for the cluster list.
 | registrationTime_gt | [DateTime](../scalars/DateTime.md) | Cluster registration time greater than. |
 | registrationTime_lt | [DateTime](../scalars/DateTime.md) | Cluster registration time less than. |
 | systemStatus | [[ClusterSystemStatus](../enums/ClusterSystemStatus.md)!] | System status of the Rubrik cluster. |
-| type | [[ClusterTypeEnum](../enums/ClusterTypeEnum.md)!] |  |
+| type | [[ClusterTypeEnum](../enums/ClusterTypeEnum.md)!] | Cluster types. |

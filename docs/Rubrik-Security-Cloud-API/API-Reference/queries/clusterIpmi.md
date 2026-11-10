@@ -1,6 +1,6 @@
 # clusterIpmi
 
-Get IPMI details  Supported in v5.0+ get IPMI details of availability and enabled access in the cluster.
+Get IPMI details Supported in v5.0+ get IPMI details of availability and enabled access in the cluster.
 
 ## Arguments
 

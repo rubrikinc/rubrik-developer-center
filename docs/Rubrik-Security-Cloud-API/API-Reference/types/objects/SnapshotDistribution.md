@@ -26,6 +26,7 @@ A generic snapshot type.
 - [AnthropicChildOrg.snapshotDistribution](AnthropicChildOrg.md)
 - [AnthropicClaudeChatWorkload.snapshotDistribution](AnthropicClaudeChatWorkload.md)
 - [AnthropicOrg.snapshotDistribution](AnthropicOrg.md)
+- [AnthropicOrgLocalSessions.snapshotDistribution](AnthropicOrgLocalSessions.md)
 - [AnthropicOrgSetting.snapshotDistribution](AnthropicOrgSetting.md)
 - [AnthropicUser.snapshotDistribution](AnthropicUser.md)
 - [AtlassianSite.snapshotDistribution](AtlassianSite.md)
@@ -45,5 +46,4 @@ A generic snapshot type.
 - [AzureCosmosNosqlContainer.snapshotDistribution](AzureCosmosNosqlContainer.md)
 - [AzureCosmosNosqlDatabase.snapshotDistribution](AzureCosmosNosqlDatabase.md)
 - [AzureDevOpsOrganization.snapshotDistribution](AzureDevOpsOrganization.md)
-- [AzureDevOpsProject.snapshotDistribution](AzureDevOpsProject.md)
-- *…and 378 more*
+- *…and 385 more*

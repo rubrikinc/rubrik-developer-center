@@ -1,6 +1,6 @@
 # bulkRecoverSapHanaDatabases
 
-Bulk recovery of SAP HANA databases to a point in time  Supported in v9.4+ Recover multiple SAP HANA databases to the provided point in time.
+Bulk recovery of SAP HANA databases to a point in time Supported in v9.4+ Recover multiple SAP HANA databases to the provided point in time.
 
 ## Arguments
 

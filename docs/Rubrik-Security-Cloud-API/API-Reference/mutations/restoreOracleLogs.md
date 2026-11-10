@@ -1,6 +1,6 @@
 # restoreOracleLogs
 
-Restore archive logs of an Oracle database  Supported in v6.0+ v6.0: Create an asynchronous job to restore archive logs of an Oracle database. v7.0+: Starts an asynchronous job to restore archive logs of an Oracle database.
+Restore archive logs of an Oracle database Supported in v6.0+ v6.0: Create an asynchronous job to restore archive logs of an Oracle database. v7.0+: Starts an asynchronous job to restore archive logs of an Oracle database.
 
 ## Arguments
 

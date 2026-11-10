@@ -1,6 +1,6 @@
 # computeClusterStatus
 
-Get details for the compute cluster  Supported in v5.1+ Get details for the compute cluster.
+Get details for the compute cluster Supported in v5.1+ Get details for the compute cluster.
 
 ## Arguments
 

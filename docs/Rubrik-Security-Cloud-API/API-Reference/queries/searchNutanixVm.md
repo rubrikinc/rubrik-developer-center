@@ -1,6 +1,6 @@
 # searchNutanixVm
 
-v5.0-v8.0: Search for file in Nutanix VM v8.1+: Search for file in Nutanix virtual machine  Supported in v5.0+ Search for a file within the Nutanix Virtual Machine. Search via full path prefix or filename prefix.
+v5.0-v8.0: Search for file in Nutanix VM v8.1+: Search for file in Nutanix virtual machine Supported in v5.0+ Search for a file within the Nutanix Virtual Machine. Search via full path prefix or filename prefix.
 
 ## Arguments
 

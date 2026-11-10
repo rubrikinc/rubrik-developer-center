@@ -1,6 +1,6 @@
 # exportOracleTablespace
 
-Export an Oracle tablespace  Supported in v5.0+ Request an asynchronous job to export an Oracle tablespace from a specified snapshot or timestamp.
+Export an Oracle tablespace Supported in v5.0+ Request an asynchronous job to export an Oracle tablespace from a specified snapshot or timestamp.
 
 ## Arguments
 

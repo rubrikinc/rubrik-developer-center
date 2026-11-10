@@ -7,4 +7,4 @@ IOC provider with threat feed type.
 | Field | Type | Description |
 |-------|------|-------------|
 | providerId | String! | Provider Id. |
-| type | [ThreatFeedType](../enums/ThreatFeedType.md)! |  |
+| type | [ThreatFeedType](../enums/ThreatFeedType.md)! | Threat feed type. |

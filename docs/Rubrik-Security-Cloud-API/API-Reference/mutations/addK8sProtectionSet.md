@@ -1,6 +1,6 @@
 # addK8sProtectionSet
 
-Add a Kubernetes protection set  Supported in v9.1+ Adds a Kubernetes protection set to the Rubrik cluster.
+Add a Kubernetes protection set Supported in v9.1+ Adds a Kubernetes protection set to the Rubrik cluster.
 
 ## Arguments
 
