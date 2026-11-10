@@ -8,7 +8,7 @@ Principal insight details.
 | ------- | ----------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------- |
 | message | String!                                                                                                                                   | Message of the insight.                        |
 | time    | [DateTime](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/DateTime/index.md)!                         | Timestamp of the insight in Unix milliseconds. |
-| type    | [UserAccessInsightType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/UserAccessInsightType/index.md)! |                                                |
+| type    | [UserAccessInsightType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/UserAccessInsightType/index.md)! | Type of the insight.                           |
 
 ## Used By
 

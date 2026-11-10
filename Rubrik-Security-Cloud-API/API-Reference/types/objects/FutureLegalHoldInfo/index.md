@@ -23,6 +23,7 @@ The forward-looking legal hold rule on a workload. Any snapshot of the workload 
 - [AnthropicChildOrg.futureLegalHoldInfo](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AnthropicChildOrg/index.md)
 - [AnthropicClaudeChatWorkload.futureLegalHoldInfo](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AnthropicClaudeChatWorkload/index.md)
 - [AnthropicOrg.futureLegalHoldInfo](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AnthropicOrg/index.md)
+- [AnthropicOrgLocalSessions.futureLegalHoldInfo](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AnthropicOrgLocalSessions/index.md)
 - [AnthropicOrgSetting.futureLegalHoldInfo](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AnthropicOrgSetting/index.md)
 - [AnthropicUser.futureLegalHoldInfo](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AnthropicUser/index.md)
 - [AtlassianSite.futureLegalHoldInfo](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AtlassianSite/index.md)
@@ -42,5 +43,4 @@ The forward-looking legal hold rule on a workload. Any snapshot of the workload 
 - [AzureCosmosNosqlContainer.futureLegalHoldInfo](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AzureCosmosNosqlContainer/index.md)
 - [AzureCosmosNosqlDatabase.futureLegalHoldInfo](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AzureCosmosNosqlDatabase/index.md)
 - [AzureDevOpsOrganization.futureLegalHoldInfo](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AzureDevOpsOrganization/index.md)
-- [AzureDevOpsProject.futureLegalHoldInfo](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AzureDevOpsProject/index.md)
-- *…and 378 more*
+- *…and 385 more*

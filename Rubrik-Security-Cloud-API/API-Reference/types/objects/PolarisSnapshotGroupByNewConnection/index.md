@@ -16,6 +16,7 @@ Paginated list of PolarisSnapshotGroupByNew objects. Each page of the results in
 **Referenced by**
 
 - [AnthropicClaudeChatWorkload.snapshotGroupByNewConnection](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AnthropicClaudeChatWorkload/index.md)
+- [AnthropicOrgLocalSessions.snapshotGroupByNewConnection](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AnthropicOrgLocalSessions/index.md)
 - [AwsNativeConfig.snapshotGroupByNewConnection](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AwsNativeConfig/index.md)
 - [AwsNativeDynamoDbTable.snapshotGroupByNewConnection](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AwsNativeDynamoDbTable/index.md)
 - [AwsNativeEbsVolume.snapshotGroupByNewConnection](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AwsNativeEbsVolume/index.md)
@@ -44,5 +45,4 @@ Paginated list of PolarisSnapshotGroupByNew objects. Each page of the results in
 - [GoogleWorkspaceSharedDrive.snapshotGroupByNewConnection](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/GoogleWorkspaceSharedDrive/index.md)
 - [GoogleWorkspaceUserDrive.snapshotGroupByNewConnection](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/GoogleWorkspaceUserDrive/index.md)
 - [GoogleWorkspaceUserMailbox.snapshotGroupByNewConnection](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/GoogleWorkspaceUserMailbox/index.md)
-- [JiraProject.snapshotGroupByNewConnection](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/JiraProject/index.md)
-- *…and 26 more*
+- *…and 27 more*

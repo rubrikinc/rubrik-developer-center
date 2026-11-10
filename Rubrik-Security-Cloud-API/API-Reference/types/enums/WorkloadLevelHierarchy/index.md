@@ -8,6 +8,7 @@
 | ------------------------------------ | --------------------------------------------- |
 | ANTHROPIC_CHILD_ORG_SETTINGS         | Anthropic child org settings.                 |
 | ANTHROPIC_DEVICE                     | Anthropic device.                             |
+| ANTHROPIC_ORG_LOCAL_SESSIONS         | Claude local sessions of an Anthropic org.    |
 | ANTHROPIC_ORG_SETTINGS               | Anthropic org settings.                       |
 | ANTHROPIC_USER_CLAUDE_CHAT           | Anthropic user Claude chat.                   |
 | AUTH0_TENANT                         | Auth0 tenant.                                 |
@@ -28,6 +29,7 @@
 | AzureSqlManagedInstanceDb            |                                               |
 | GCP_BIGQUERY_DATASET                 | GCP BigQuery Dataset.                         |
 | GCP_CLOUD_SQL_INSTANCE               | GCP Cloud SQL Instance.                       |
+| GCP_GCS_BUCKET                       | GCP Cloud Storage bucket.                     |
 | GLUE_ICEBERG_TABLE                   | AWS Glue Iceberg Table.                       |
 | GOOGLE_WORKSPACE_GROUPS_METADATA     | Google Workspace Groups Metadata.             |
 | GOOGLE_WORKSPACE_SHARED_DRIVE        | Google Workspace Shared Drive.                |

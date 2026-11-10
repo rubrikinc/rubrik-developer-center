@@ -82,3 +82,4 @@ An Azure Native Subscription. Refers to the logical entity that provides entitle
 
 - [AzureNativeResourceGroup.azureSubscription](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AzureNativeResourceGroup/index.md)
 - [AzureNativeResourceGroup.subscription](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AzureNativeResourceGroup/index.md)
+- [BlueprintAzureLocation.subscription](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/BlueprintAzureLocation/index.md)

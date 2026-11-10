@@ -14,4 +14,5 @@ CDP recovery state for a workload.
 
 **Referenced by**
 
+- [ChildVmRecoveryInfo.recoveryState](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/ChildVmRecoveryInfo/index.md)
 - [RecoveryCoverage.recoveryState](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/RecoveryCoverage/index.md)

@@ -989,6 +989,11 @@
 <td>Permissions groups onboarded for the cloud accounts feature. Permissions groups will be present only for customer-managed cluster users.</td>
 </tr>
 <tr>
+<td>regionStatuses</td>
+<td>[<a href="../FeatureRegionStatus/">FeatureRegionStatus</a>!]</td>
+<td>Per-region state for features that report it, one entry per region in aws_regions. Empty for features that do not report per-region state, and when the state could not be read.</td>
+</tr>
+<tr>
 <td>roleArn</td>
 <td>String!</td>
 <td>Role ARN for feature. This field has a non-empty value only for CFT-based accounts.</td>

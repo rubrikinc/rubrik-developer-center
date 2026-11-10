@@ -8,6 +8,7 @@ A source that can contribute evidence to an activity's classification.
 | ------------------ | ------------------------------------------------------ |
 | CROWDSTRIKE        | CrowdStrike threat intelligence.                       |
 | IOC_FILE           | An indicators-of-compromise file uploaded by the user. |
+| LEGITIMATE_IP_FILE | A legitimate IP list uploaded by the user.             |
 | MICROSOFT_DEFENDER | Microsoft Defender threat intelligence.                |
 | SAILPOINT          | SailPoint identity governance.                         |
 | WORKDAY            | Workday HR system.                                     |

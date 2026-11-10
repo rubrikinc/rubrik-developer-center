@@ -44,4 +44,4 @@ The replicated cross-account object information.
 - [FusionComputeCluster.crossAccountReplicatedObjectInfos](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/FusionComputeCluster/index.md)
 - FusionComputeClusterDescendant.crossAccountReplicatedObjectInfos
 - FusionComputeClusterPhysicalChildType.crossAccountReplicatedObjectInfos
-- *…and 263 more*
+- *…and 264 more*

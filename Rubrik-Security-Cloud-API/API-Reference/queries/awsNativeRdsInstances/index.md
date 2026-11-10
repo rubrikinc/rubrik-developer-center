@@ -37,6 +37,7 @@ query {
       id
       isExocomputeConfigured
       isInfrastructureAlertsEnabled
+      isInfrastructureAlertsRegionConnected
       isMultiAz
       isProtectable
       isRelic

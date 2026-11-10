@@ -7,7 +7,7 @@ Different types of usages of a certificate on Rubrik Security Cloud.
 | Field  | Type                                                                                                                                                     | Description                                                        |
 | ------ | -------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------ |
 | params | \[[CertificateUsageParameter](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/CertificateUsageParameter/index.md)!\]! | The metadata about a certificate's usage on Rubrik Security Cloud. |
-| type   | [CertificateUsage](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/CertificateUsage/index.md)!                          |                                                                    |
+| type   | [CertificateUsage](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/CertificateUsage/index.md)!                          | The type of usage of the certificate on Rubrik Security Cloud.     |
 
 ## Used By
 

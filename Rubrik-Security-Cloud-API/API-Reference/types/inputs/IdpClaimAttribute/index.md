@@ -8,4 +8,4 @@ Name and type of the IdP claim.
 | ------------- | --------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------ |
 | attributeType | [SamlAttributeType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/SamlAttributeType/index.md)! | SAML attribute type enum.                              |
 | name          | String!                                                                                                                           | Name of the claim. The claim name depends on your IdP. |
-| type          | String                                                                                                                            |                                                        |
+| type          | String                                                                                                                            | Type of claim. For example email or group.             |

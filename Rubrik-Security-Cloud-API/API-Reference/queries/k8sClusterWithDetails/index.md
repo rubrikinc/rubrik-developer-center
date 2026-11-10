@@ -73,10 +73,10 @@ query K8sClusterWithDetails($id: UUID!) {
         "isK8SError": true,
         "serviceAccountName": "example-string"
       },
-      "kuprServerProxyConfig": {
-        "cert": "example-string",
-        "ipAddress": "example-string",
-        "port": 0
+      "discoveryScope": {
+        "namespaces": [
+          "example-string"
+        ]
       }
     }
   }

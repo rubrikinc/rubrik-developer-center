@@ -12,7 +12,7 @@ Data Location.
 | isActive    | Boolean!                                                                                                                        | Specifies if the data location is active.                                                    |
 | isArchived  | Boolean!                                                                                                                        | Specifies if the snapshot is archived.                                                       |
 | name        | String!                                                                                                                         | The name of the data location.                                                               |
-| type        | [DataLocationName](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/DataLocationName/index.md)! |                                                                                              |
+| type        | [DataLocationName](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/DataLocationName/index.md)! | Specifies the type of data location.                                                         |
 
 ## Used By
 
@@ -48,4 +48,4 @@ Data Location.
 - FailoverClusterAppDescendantType.primaryClusterLocation
 - FailoverClusterAppPhysicalChildType.primaryClusterLocation
 - FailoverClusterTopLevelDescendantType.primaryClusterLocation
-- *…and 270 more*
+- *…and 271 more*

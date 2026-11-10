@@ -15,3 +15,4 @@ Containing calculated information about SLA assignment on a particular object.
 **Referenced by**
 
 - [AnthropicClaudeChatWorkload.fullSlaAssignment](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AnthropicClaudeChatWorkload/index.md)
+- [AnthropicOrgLocalSessions.fullSlaAssignment](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AnthropicOrgLocalSessions/index.md)

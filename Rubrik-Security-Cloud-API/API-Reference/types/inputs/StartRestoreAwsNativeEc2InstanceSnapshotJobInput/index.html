@@ -933,6 +933,11 @@
 <td>ID of the archived snapshot to be restored. This field should be specified only when <code>snapshotTypeToUseIfSourceExpired</code> is set to <code>Archived</code>. In such cases, the archived snapshot will be used for restore. If <code>snapshotTypeToUseIfSourceExpired</code> is not <code>Archived</code>, this field is ignored.</td>
 </tr>
 <tr>
+<td>customTags</td>
+<td><a href="../TagsInput/">TagsInput</a></td>
+<td>Tags to apply to the restored EC2 Instance and to every resource Rubrik creates for the restore (recovered volumes, and the image and snapshots copied for a cross-region restore), in addition to the tags Rubrik manages and any tags restored from the snapshot. These tags apply only to this restore. The request is rejected if any tag uses the key Name, a key reserved by Rubrik (rk_) or AWS (aws:), a key or value AWS will not accept, or a key more than once, or if there are more than 41 tags.</td>
+</tr>
+<tr>
 <td>recoveryPurpose</td>
 <td><a href="../../enums/RecoveryPurpose/">RecoveryPurpose</a></td>
 <td>Purpose of the recovery operation. Set to SURGICAL_RECOVERY to automatically exclude quarantined files from the restored instance (subject to feature availability for the account). Defaults to RECOVERY_PURPOSE_UNSPECIFIED, which preserves prior behavior.</td>

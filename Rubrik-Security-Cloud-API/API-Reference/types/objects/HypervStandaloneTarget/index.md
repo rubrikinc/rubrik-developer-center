@@ -15,4 +15,5 @@ Target standalone HyperV host for recovery.
 
 **Referenced by**
 
+- [HypervRecoverySpecType.standaloneTarget](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/HypervRecoverySpecType/index.md)
 - [HypervTargetConfig.standalone](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/HypervTargetConfig/index.md)

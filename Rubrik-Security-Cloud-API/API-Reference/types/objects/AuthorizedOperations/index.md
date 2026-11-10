@@ -19,6 +19,7 @@ Authorized actions permitted on a single object.
 **Referenced by**
 
 - [CdmUpgradeInfo.authorizedOperations](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/CdmUpgradeInfo/index.md)
+- [CloudNativeApplication.authorizedOperations](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/CloudNativeApplication/index.md)
 - [Cluster.authorizedOperations](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/Cluster/index.md)
 - [VolumeGroupLiveMount.authorizedOperations](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/VolumeGroupLiveMount/index.md)
 - [VsphereMount.authorizedOperations](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/VsphereMount/index.md)

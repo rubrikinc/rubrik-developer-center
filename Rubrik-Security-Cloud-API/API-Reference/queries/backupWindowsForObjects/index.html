@@ -938,7 +938,7 @@
 
 
 <h1 id="backupwindowsforobjects">backupWindowsForObjects</h1>
-<p>Returns backup window information for the specified managed objects. The optional <code>scope</code> argument selects which layer to return per object: OBJECT_LEVEL (the override only) or SLA_LEVEL (the SLA's window only). When omitted (UNSPECIFIED), the effective window is returned: the object-level override if set, else the SLA window. Each entry's <code>scope</code> discriminator reports the layer that supplied the returned window, always OBJECT_LEVEL or SLA_LEVEL.  Entries are returned positionally -- one per input id, in request order -- unless <code>sortBy</code> asks for a different order.</p>
+<p>Returns backup window information for the specified managed objects. The optional <code>scope</code> argument selects which layer to return per object: OBJECT_LEVEL (the override only) or SLA_LEVEL (the SLA's window only). When omitted (UNSPECIFIED), the effective window is returned: the object-level override if set, else the SLA window. Each entry's <code>scope</code> discriminator reports the layer that supplied the returned window, always OBJECT_LEVEL or SLA_LEVEL. Entries are returned positionally -- one per input id, in request order -- unless <code>sortBy</code> asks for a different order.</p>
 <h2 id="arguments">Arguments</h2>
 <table>
 <thead>

@@ -4,9 +4,9 @@ Check if IPMI is enabled on the cluster.
 
 ## Arguments
 
-| Argument           | Type                                                                                                                                 | Description                                              |
-| ------------------ | ------------------------------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------- |
-| input *(required)* | [IsIpmiEnabledInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/IsIpmiEnabledInput/index.md)! | Input for determining if IPMI is enabled on the cluster. |
+| Argument           | Type                                                                                                                                 | Description                                         |
+| ------------------ | ------------------------------------------------------------------------------------------------------------------------------------ | --------------------------------------------------- |
+| input *(required)* | [IsIpmiEnabledInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/IsIpmiEnabledInput/index.md)! | Input for checking if IPMI is enabled on a cluster. |
 
 ## Returns
 

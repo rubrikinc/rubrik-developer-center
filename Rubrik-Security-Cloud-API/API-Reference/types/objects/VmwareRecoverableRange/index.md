@@ -13,5 +13,7 @@ Supported in v5.1+
 
 **Referenced by**
 
+- [ChildVmRecoveryInfo.missedRecoverableRanges](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/ChildVmRecoveryInfo/index.md)
+- [ChildVmRecoveryInfo.recoverableRanges](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/ChildVmRecoveryInfo/index.md)
 - [VmwareRecoverableRangeListResponse.data](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/VmwareRecoverableRangeListResponse/index.md)
 - [VmwareVmRecoverableRanges.recoverableRanges](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/VmwareVmRecoverableRanges/index.md)

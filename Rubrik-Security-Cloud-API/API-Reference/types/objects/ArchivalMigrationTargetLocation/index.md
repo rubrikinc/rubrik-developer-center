@@ -4,10 +4,11 @@ Wrapper for archival migration target location details.
 
 ## Fields
 
-| Field        | Type                                                                                                                                                                   | Description                               |
-| ------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------- |
-| rcvAws       | [RcvAwsArchivalMigrationTarget](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/RcvAwsArchivalMigrationTarget/index.md)             | Rubrik Cloud Vault on AWS target details. |
-| s3Compatible | [S3CompatibleArchivalMigrationTarget](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/S3CompatibleArchivalMigrationTarget/index.md) | S3 compatible target details.             |
+| Field        | Type                                                                                                                                                                   | Description                                 |
+| ------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------- |
+| rcvAws       | [RcvAwsArchivalMigrationTarget](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/RcvAwsArchivalMigrationTarget/index.md)             | Rubrik Cloud Vault on AWS target details.   |
+| rcvAzure     | [RcvAzureArchivalMigrationTarget](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/RcvAzureArchivalMigrationTarget/index.md)         | Rubrik Cloud Vault on Azure target details. |
+| s3Compatible | [S3CompatibleArchivalMigrationTarget](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/S3CompatibleArchivalMigrationTarget/index.md) | S3 compatible target details.               |
 
 ## Used By
 

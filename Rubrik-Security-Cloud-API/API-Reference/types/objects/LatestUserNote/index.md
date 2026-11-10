@@ -45,4 +45,4 @@ Latest user note information.
 - [FilesetTemplate.latestUserNote](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/FilesetTemplate/index.md)
 - FilesetTemplateDescendantType.latestUserNote
 - FilesetTemplatePhysicalChildType.latestUserNote
-- *…and 267 more*
+- *…and 268 more*

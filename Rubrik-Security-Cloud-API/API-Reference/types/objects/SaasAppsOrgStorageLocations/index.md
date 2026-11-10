@@ -14,3 +14,4 @@ Storage locations details for a SaaS organization.
 
 - [AnthropicOrg.storageRegions](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AnthropicOrg/index.md)
 - [GoogleWorkspaceOrg.storageRegions](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/GoogleWorkspaceOrg/index.md)
+- [M365ConfigsOrg.storageRegions](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/M365ConfigsOrg/index.md)

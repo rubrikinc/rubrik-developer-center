@@ -14,7 +14,7 @@ Intune compliance policy assignment.
 | id         | String!                                                                                                                                                                                         | ID of the Intune compliance policy assignment.                  |
 | policyId   | String!                                                                                                                                                                                         | ID of the Intune compliance policy.                             |
 | policyName | String!                                                                                                                                                                                         | Name of the Intune compliance policy.                           |
-| type       | [IntuneCompliancePolicyAssignmentType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/IntuneCompliancePolicyAssignmentType/index.md)!                         |                                                                 |
+| type       | [IntuneCompliancePolicyAssignmentType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/IntuneCompliancePolicyAssignmentType/index.md)!                         | Type of the Intune compliance policy assignment.                |
 
 ## Used By
 

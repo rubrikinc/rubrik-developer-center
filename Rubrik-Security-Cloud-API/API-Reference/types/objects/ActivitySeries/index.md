@@ -61,6 +61,7 @@ A series of activities on either the RSC or a Rubrik cluster.
 
 - [query: activitySeries](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/activitySeries/index.md)
 - [query: activitySeriesConnection](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/activitySeriesConnection/index.md) *(via connection)*
+- [query: eventSeriesOfWorkloadGroup](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/eventSeriesOfWorkloadGroup/index.md) *(via connection)*
 
 **Referenced by**
 

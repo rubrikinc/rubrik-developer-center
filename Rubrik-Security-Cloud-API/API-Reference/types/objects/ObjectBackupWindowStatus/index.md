@@ -25,6 +25,7 @@ Represents the object-level backup window status of a hierarchy object.
 - [AnthropicChildOrg.objectBackupWindow](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AnthropicChildOrg/index.md)
 - [AnthropicClaudeChatWorkload.objectBackupWindow](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AnthropicClaudeChatWorkload/index.md)
 - [AnthropicOrg.objectBackupWindow](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AnthropicOrg/index.md)
+- [AnthropicOrgLocalSessions.objectBackupWindow](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AnthropicOrgLocalSessions/index.md)
 - [AnthropicOrgSetting.objectBackupWindow](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AnthropicOrgSetting/index.md)
 - [AnthropicUser.objectBackupWindow](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AnthropicUser/index.md)
 - [AtlassianSite.objectBackupWindow](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AtlassianSite/index.md)
@@ -44,5 +45,4 @@ Represents the object-level backup window status of a hierarchy object.
 - [AzureCosmosNosqlContainer.objectBackupWindow](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AzureCosmosNosqlContainer/index.md)
 - [AzureCosmosNosqlDatabase.objectBackupWindow](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AzureCosmosNosqlDatabase/index.md)
 - [AzureDevOpsOrganization.objectBackupWindow](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AzureDevOpsOrganization/index.md)
-- [AzureDevOpsProject.objectBackupWindow](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AzureDevOpsProject/index.md)
-- *…and 377 more*
+- *…and 384 more*

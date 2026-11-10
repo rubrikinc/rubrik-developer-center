@@ -8,7 +8,7 @@ List of matching objects.
 | ---------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------- |
 | dnt        | Int!                                                                                                                                                             | Required. Supported in v9.1+ The Distinguished Name Tag (DNT) of the Active Directory object. |
 | name       | String!                                                                                                                                                          | Required. Supported in v9.1+ Display name of the Active Directory object.                     |
-| objectType | [ActiveDirectoryObjectType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/ActiveDirectoryObjectType/index.md)!                |                                                                                               |
+| objectType | [ActiveDirectoryObjectType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/ActiveDirectoryObjectType/index.md)!                | Type of the Active Directory object.                                                          |
 | versions   | \[[ActiveDirectorySearchVersions](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/ActiveDirectorySearchVersions/index.md)!\]! | Required. Supported in v9.1+ Resultant versions of the objects with that name.                |
 
 ## Used By

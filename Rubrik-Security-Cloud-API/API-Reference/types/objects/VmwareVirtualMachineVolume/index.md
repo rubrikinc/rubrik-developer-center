@@ -14,4 +14,5 @@ VMware virtual machine volume.
 
 **Referenced by**
 
+- [VmwareResourceSpec.vmWareVolumeSpecs](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/VmwareResourceSpec/index.md)
 - [VmwareVirtualMachineResourceSpec.storageVolumes](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/VmwareVirtualMachineResourceSpec/index.md)

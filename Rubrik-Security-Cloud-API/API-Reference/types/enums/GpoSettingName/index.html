@@ -932,7 +932,7 @@
 </tr>
 <tr>
 <td>GPO_SETTING_NAME_ENABLE_MULTICAST</td>
-<td>Registry Settings (Admin Templates / Registry extension namespace).  "Turn off multicast name resolution (LLMNR)" administrative template setting, backed by the registry value EnableMulticast under HKLM\Software\Policies\Microsoft\Windows NT\DNSClient. A value of 1 explicitly re-enables LLMNR (which can override an org-wide disable), allowing credential interception attacks.</td>
+<td>Registry Settings (Admin Templates / Registry extension namespace). "Turn off multicast name resolution (LLMNR)" administrative template setting, backed by the registry value EnableMulticast under HKLM\Software\Policies\Microsoft\Windows NT\DNSClient. A value of 1 explicitly re-enables LLMNR (which can override an org-wide disable), allowing credential interception attacks.</td>
 </tr>
 <tr>
 <td>GPO_SETTING_NAME_LDAP_SERVER_INTEGRITY</td>
@@ -948,7 +948,7 @@
 </tr>
 <tr>
 <td>GPO_SETTING_NAME_MACHINE_SCRIPT_COMMAND</td>
-<td>Scripts extension settings.  Command paths from all Startup and Shutdown machine scripts configured by this GPO (Scripts extension). Used to identify script commands that reference paths outside the GPO's own SYSVOL directory, indicating a potentially risky external script path.</td>
+<td>Scripts extension settings. Command paths from all Startup and Shutdown machine scripts configured by this GPO (Scripts extension). Used to identify script commands that reference paths outside the GPO's own SYSVOL directory, indicating a potentially risky external script path.</td>
 </tr>
 <tr>
 <td>GPO_SETTING_NAME_MAXIMUM_PASSWORD_AGE</td>
@@ -979,8 +979,12 @@
 <td>Minimum password length policy setting.</td>
 </tr>
 <tr>
+<td>GPO_SETTING_NAME_NETLOGON_VULNERABLE_CHANNEL_ALLOW_LIST</td>
+<td>The "Domain controller: Allow vulnerable Netlogon secure channel connections" security option, backed by the registry value VulnerableChannelAllowList under MACHINE\System\CurrentControlSet\Services\Netlogon\Parameters. The configured value is an SDDL string naming the principals that may connect with a vulnerable Netlogon secure channel (CVE-2020-1472, Zerologon). An empty value is secure; any principal in the list is a security risk.</td>
+</tr>
+<tr>
 <td>GPO_SETTING_NAME_NO_LM_HASH</td>
-<td>Security Options.  "Network security: Do not store LAN Manager hash value on next password change" security option, backed by the registry value NoLMHash under MACHINE\System\CurrentControlSet\Control\Lsa. The configured value is 1 when LM hashes are not stored (secure) and 0 when they are stored (insecure).</td>
+<td>Security Options. "Network security: Do not store LAN Manager hash value on next password change" security option, backed by the registry value NoLMHash under MACHINE\System\CurrentControlSet\Control\Lsa. The configured value is 1 when LM hashes are not stored (secure) and 0 when they are stored (insecure).</td>
 </tr>
 <tr>
 <td>GPO_SETTING_NAME_PASSWORD_COMPLEXITY</td>

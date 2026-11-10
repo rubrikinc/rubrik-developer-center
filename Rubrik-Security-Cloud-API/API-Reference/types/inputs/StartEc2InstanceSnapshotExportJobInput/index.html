@@ -938,6 +938,11 @@
 <td>ID of the archived snapshot to be exported. This field should be specified only when <code>snapshotType</code> is set to <code>Archived</code>. In such cases, the archived snapshot will be used for export. If <code>snapshotType</code> is not <code>Archived</code>, this field is ignored.</td>
 </tr>
 <tr>
+<td>customTags</td>
+<td><a href="../TagsInput/">TagsInput</a></td>
+<td>Tags to apply to the exported EC2 Instance and to every resource Rubrik creates for the export (volumes, copied or registered images and snapshots, network interfaces and Elastic IPs), in addition to the tags Rubrik manages and any tags copied from the source instance. These tags apply only to this export. The request is rejected if any tag uses the key Name, a key reserved by Rubrik (rk_) or AWS (aws:), a key or value AWS will not accept, or a key more than once, or if there are more than 41 tags.</td>
+</tr>
+<tr>
 <td>dedicatedHostId</td>
 <td>String</td>
 <td>Deprecated, use placement instead. ID of the AWS Dedicated Host to be used for export. If specified, the tenancy of the exported EC2 instance will be set to <code>host</code>, else it will be set to <code>default</code>. This field is required for <code>mac</code> instance types.</td>

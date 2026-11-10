@@ -1160,6 +1160,11 @@
 <td>Post snapshot script configuration.</td>
 </tr>
 <tr>
+<td>powerStatus</td>
+<td><a href="../../enums/OlvmVirtualMachinePowerStatus/">OlvmVirtualMachinePowerStatus</a></td>
+<td>Power status of the virtual machine. Unset until the cluster has synced a status OLVM reports as powered on, powered off or suspended.</td>
+</tr>
+<tr>
 <td>preBackupScript</td>
 <td><a href="../OlvmBackupScript/">OlvmBackupScript</a></td>
 <td>Pre backup script configuration.</td>
@@ -1340,6 +1345,12 @@
 <td>beforeTime</td>
 <td><a href="../../scalars/DateTime/">DateTime</a></td>
 <td>Specifies the time at which or before the snapshot was taken.</td>
+</tr>
+<tr>
+<td>newestSnapshot</td>
+<td>excludeLatestSnapshot</td>
+<td>Boolean</td>
+<td>Specifies whether to ignore the newest snapshot of the workload when choosing the result.</td>
 </tr>
 <tr>
 <td>numWorkloadDescendants</td>

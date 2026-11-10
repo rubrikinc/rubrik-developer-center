@@ -958,6 +958,11 @@
 <td>Supported in v9.6+ The transport type used for the RBA data movers. Defaults to the control-plane transport when unset. Set to pernodeproxy to route data movers through the per-node backup proxy. An empty string clears the field.</td>
 </tr>
 <tr>
+<td>discoveryScope</td>
+<td><a href="../K8sDiscoveryScopeInput/">K8sDiscoveryScopeInput</a></td>
+<td>Limits discovery and protection for this CDM to a subset of namespaces and/or label selectors.</td>
+</tr>
+<tr>
 <td>isAutoPsCreationEnabled</td>
 <td>Boolean</td>
 <td>Supported in v9.2+ Specifies whether to enable automatic protection set creation for the Kubernetes cluster.</td>

@@ -951,7 +951,7 @@
 <tr>
 <td>uniformJson</td>
 <td>String!</td>
-<td>Uniform JSON tree of GPO settings, suitable for structured UI rendering. Populated only when return_uniform_json is true in the request. Empty string if transformer fails (frontend falls back to raw XML).  The JSON is compact (no whitespace). Call JSON.parse() to get an object with shape: { "name": "Computer Configuration", "children": [ { "name": "Policies", "setting": "value", "children": [...] } ] }  Each node has "name" (string) and optionally "setting" (string) and "children" (array of nodes).</td>
+<td>Uniform JSON tree of GPO settings, suitable for structured UI rendering. Populated only when return_uniform_json is true in the request. Empty string if transformer fails (frontend falls back to raw XML). The JSON is compact (no whitespace). Call JSON.parse() to get an object with shape: { "name": "Computer Configuration", "children": [ { "name": "Policies", "setting": "value", "children": [...] } ] } Each node has "name" (string) and optionally "setting" (string) and "children" (array of nodes).</td>
 </tr>
 <tr>
 <td>versionNumber</td>

@@ -939,7 +939,7 @@
 
 <h1 id="k8snamespace">K8sNamespace</h1>
 <p>Kubernetes namespace.</p>
-<p><strong>Implements:</strong> <a href="../../interfaces/HierarchyObject/">HierarchyObject</a>, <a href="../../interfaces/HierarchySnappable/">HierarchySnappable</a>, <a href="../../interfaces/PolarisHierarchyObject/">PolarisHierarchyObject</a>, <a href="../../interfaces/PolarisHierarchySnappable/">PolarisHierarchySnappable</a>, <a href="../../interfaces/K8sClusterDescendant/">K8sClusterDescendant</a></p>
+<p><strong>Implements:</strong> <a href="../../interfaces/PolarisHierarchyObject/">PolarisHierarchyObject</a>, <a href="../../interfaces/HierarchyObject/">HierarchyObject</a>, <a href="../../interfaces/PolarisHierarchySnappable/">PolarisHierarchySnappable</a>, <a href="../../interfaces/HierarchySnappable/">HierarchySnappable</a>, <a href="../../interfaces/K8sClusterDescendant/">K8sClusterDescendant</a></p>
 <h2 id="fields">Fields</h2>
 <table>
 <thead>
@@ -1133,12 +1133,12 @@
 <tr>
 <td>snapshotGroupByConnection</td>
 <td><a href="../PolarisSnapshotGroupByConnection/">PolarisSnapshotGroupByConnection</a></td>
-<td>GroupBy connection for the snapshots of this workload.</td>
+<td>Group-by connection for the snapshots of this workload.</td>
 </tr>
 <tr>
 <td>snapshotGroupByNewConnection</td>
 <td><a href="../PolarisSnapshotGroupByNewConnection/">PolarisSnapshotGroupByNewConnection</a></td>
-<td>GroupBy connection for the snapshots of this workload.</td>
+<td>Group-by connection for the snapshots of this workload.</td>
 </tr>
 <tr>
 <td>workloadSnapshotConnection</td>
@@ -1174,7 +1174,7 @@
 <td>numWorkloadDescendants</td>
 <td>after</td>
 <td>String</td>
-<td>An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results.</td>
+<td>Returns the elements in the list that occur after the specified cursor.</td>
 </tr>
 <tr>
 <td>numWorkloadDescendants</td>
@@ -1186,7 +1186,7 @@
 <td>numWorkloadDescendants</td>
 <td>before</td>
 <td>String</td>
-<td>An opaque cursor returned from a previous query's startCursor field. Pass this value verbatim to retrieve the previous page of results.</td>
+<td>Returns the elements in the list that occur before the specified cursor.</td>
 </tr>
 <tr>
 <td>numWorkloadDescendants</td>
@@ -1216,7 +1216,7 @@
 <td>snapshotConnection</td>
 <td>after</td>
 <td>String</td>
-<td>An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results.</td>
+<td>Returns the elements in the list that occur after the specified cursor.</td>
 </tr>
 <tr>
 <td>snapshotConnection</td>
@@ -1228,7 +1228,7 @@
 <td>snapshotConnection</td>
 <td>before</td>
 <td>String</td>
-<td>An opaque cursor returned from a previous query's startCursor field. Pass this value verbatim to retrieve the previous page of results.</td>
+<td>Returns the elements in the list that occur before the specified cursor.</td>
 </tr>
 <tr>
 <td>snapshotConnection</td>
@@ -1258,7 +1258,7 @@
 <td>snapshotGroupByConnection</td>
 <td>after</td>
 <td>String</td>
-<td>An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results.</td>
+<td>Returns the elements in the list that occur after the specified cursor.</td>
 </tr>
 <tr>
 <td>snapshotGroupByConnection</td>
@@ -1270,7 +1270,7 @@
 <td>snapshotGroupByConnection</td>
 <td>before</td>
 <td>String</td>
-<td>An opaque cursor returned from a previous query's startCursor field. Pass this value verbatim to retrieve the previous page of results.</td>
+<td>Returns the elements in the list that occur before the specified cursor.</td>
 </tr>
 <tr>
 <td>snapshotGroupByConnection</td>
@@ -1306,7 +1306,7 @@
 <td>snapshotGroupByNewConnection</td>
 <td>after</td>
 <td>String</td>
-<td>An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results.</td>
+<td>Returns the elements in the list that occur after the specified cursor.</td>
 </tr>
 <tr>
 <td>snapshotGroupByNewConnection</td>
@@ -1318,7 +1318,7 @@
 <td>snapshotGroupByNewConnection</td>
 <td>before</td>
 <td>String</td>
-<td>An opaque cursor returned from a previous query's startCursor field. Pass this value verbatim to retrieve the previous page of results.</td>
+<td>Returns the elements in the list that occur before the specified cursor.</td>
 </tr>
 <tr>
 <td>snapshotGroupByNewConnection</td>
@@ -1348,7 +1348,7 @@
 <td>workloadSnapshotConnection</td>
 <td>after</td>
 <td>String</td>
-<td>An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results.</td>
+<td>Returns the elements in the list that occur after the specified cursor.</td>
 </tr>
 <tr>
 <td>workloadSnapshotConnection</td>
@@ -1360,7 +1360,7 @@
 <td>workloadSnapshotConnection</td>
 <td>before</td>
 <td>String</td>
-<td>An opaque cursor returned from a previous query's startCursor field. Pass this value verbatim to retrieve the previous page of results.</td>
+<td>Returns the elements in the list that occur before the specified cursor.</td>
 </tr>
 <tr>
 <td>workloadSnapshotConnection</td>

@@ -114,4 +114,4 @@ A snapshot of a workload managed by a Rubrik cluster.
 - [ExchangeDatabase.newestReplicatedSnapshot](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/ExchangeDatabase/index.md)
 - [ExchangeDatabase.newestSnapshot](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/ExchangeDatabase/index.md)
 - [ExchangeDatabase.oldestSnapshot](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/ExchangeDatabase/index.md)
-- *…and 189 more*
+- *…and 194 more*

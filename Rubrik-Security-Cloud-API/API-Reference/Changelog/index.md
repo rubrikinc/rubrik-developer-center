@@ -1,14 +1,748 @@
 # GraphQL Schema Changelog
 
-*Generated on October 30, 2026 at 07:52 PM*
+*Generated on November 10, 2026 at 07:32 PM*
 
-This changelog documents the evolution of the GraphQL schema across 66 versions.
+This changelog documents the evolution of the GraphQL schema across 67 versions.
 
 Not every breaking change affects a generally available feature
 
 The schema also carries early access and in-development surfaces, which change more freely than shipped ones. Nothing in the schema marks which is which, so both appear here the same way. If an entry names a type or operation you do not recognize and are not calling, it is most likely one of those rather than a change to something you depend on.
 
 The reliable check is whether your own integrations reference the names listed. Search this page for the operations you call.
+
+## November 02, 2026
+
+### ✨ Additions
+
+*Purely additive. Nothing you send today stops working. If you switch exhaustively on an enum, add a default case for newly added values.*
+
+- `LEGITIMATE_IP_FILE` enum value added to enum `ActivityClassificationSourceType`
+
+11 enum values added to enum `ActivityObjectTypeEnum`
+
+- `ANTHROPIC_ORG_LOCAL_SESSIONS`
+
+- `M365_CONFIGS_DEFENDER`
+
+- `M365_CONFIGS_EXCHANGE`
+
+- `M365_CONFIGS_ONEDRIVE`
+
+- `M365_CONFIGS_PURVIEW`
+
+- `M365_CONFIGS_SHAREPOINT`
+
+- `M365_CONFIGS_TEAMS`
+
+- `VCFA_APPLIANCE`
+
+- `VCFA_ORG`
+
+- `VCFA_PROJECT`
+
+- `VCFA_REGION`
+
+- `ARCHIVAL_MIGRATION_TARGET_RCV_AZURE` enum value added to enum `ArchivalMigrationTargetType`
+
+12 enum values added to enum `AuditObjectType`
+
+- `ANTHROPIC_ORG_LOCAL_SESSIONS`
+
+- `M365_CONFIGS_DEFENDER`
+
+- `M365_CONFIGS_EXCHANGE`
+
+- `M365_CONFIGS_ONEDRIVE`
+
+- `M365_CONFIGS_PURVIEW`
+
+- `M365_CONFIGS_SHAREPOINT`
+
+- `M365_CONFIGS_TEAMS`
+
+- `M365_JOURNAL_VAULT`
+
+- `VCFA_APPLIANCE`
+
+- `VCFA_ORG`
+
+- `VCFA_PROJECT`
+
+- `VCFA_REGION`
+
+- `AZURE_ONBOARDING_INELIGIBILITY_REASON_NOT_IN_MANAGEMENT_GROUP` enum value added to enum `AzureOnboardingIneligibilityReason`
+
+- `MAINTENANCE_MODE` enum value added to enum `ClusterNodeSubStatus`
+
+11 enum values added to enum `EventObjectType`
+
+- `ANTHROPIC_ORG_LOCAL_SESSIONS`
+
+- `M365_CONFIGS_DEFENDER`
+
+- `M365_CONFIGS_EXCHANGE`
+
+- `M365_CONFIGS_ONEDRIVE`
+
+- `M365_CONFIGS_PURVIEW`
+
+- `M365_CONFIGS_SHAREPOINT`
+
+- `M365_CONFIGS_TEAMS`
+
+- `VCFA_APPLIANCE`
+
+- `VCFA_ORG`
+
+- `VCFA_PROJECT`
+
+- `VCFA_REGION`
+
+- `SECURITY_GPO_NETLOGON_VULNERABLE_CHANNEL` enum value added to enum `FilterType`
+
+- `SECURITY_IDENTITY_METADATA_NUMERIC_COMPARISON` enum value added to enum `FilterType`
+
+- `GPO_SETTING_NAME_NETLOGON_VULNERABLE_CHANNEL_ALLOW_LIST` enum value added to enum `GpoSettingName`
+
+3 enum values added to enum `HierarchyFilterField`
+
+- `ORACLE_DATA_GUARD_TYPE`
+- `ORACLE_DB_NAME_OR_UNIQUE_NAME`
+- `PROXMOX_TAG_IS_REGISTERED`
+
+7 enum values added to enum `HierarchyObjectTypeEnum`
+
+- `ANTHROPIC_ORG_LOCAL_SESSIONS`
+- `M365_CONFIGS_DEFENDER`
+- `M365_CONFIGS_EXCHANGE`
+- `M365_CONFIGS_ONEDRIVE`
+- `M365_CONFIGS_PURVIEW`
+- `M365_CONFIGS_SHAREPOINT`
+- `M365_CONFIGS_TEAMS`
+
+7 enum values added to enum `ManagedObjectType`
+
+- `ANTHROPIC_ORG_LOCAL_SESSIONS`
+- `M365_CONFIGS_DEFENDER`
+- `M365_CONFIGS_EXCHANGE`
+- `M365_CONFIGS_ONEDRIVE`
+- `M365_CONFIGS_PURVIEW`
+- `M365_CONFIGS_SHAREPOINT`
+- `M365_CONFIGS_TEAMS`
+
+7 enum values added to enum `ObjectTypeEnum`
+
+- `ANTHROPIC_ORG_LOCAL_SESSIONS`
+
+- `M365_CONFIGS_DEFENDER`
+
+- `M365_CONFIGS_EXCHANGE`
+
+- `M365_CONFIGS_ONEDRIVE`
+
+- `M365_CONFIGS_PURVIEW`
+
+- `M365_CONFIGS_SHAREPOINT`
+
+- `M365_CONFIGS_TEAMS`
+
+- `BLAST_RADIUS_REPORT` enum value added to enum `PolarisReportViewType`
+
+6 enum values added to enum `ReportAttribute`
+
+- `COVERAGE`
+
+- `DATA_CATEGORY`
+
+- `DATA_DISCOVERY_SCAN_STATUS`
+
+- `DATA_TYPE`
+
+- `LAST_SCANNED_TIME`
+
+- `SENSITIVITY_LEVEL`
+
+- `DATA_TYPES_FOUND_LIST` enum value added to enum `ReportMeasure`
+
+- `SENSITIVE_OBJECT_COUNT` enum value added to enum `ReportMeasure`
+
+- `REPORT_ROOM_AI_RESILIENCE` enum value added to enum `ReportRoomType`
+
+- `CANCELLED` enum value added to enum `SnappableCrawlStatus`
+
+- `BLAST_RADIUS_DATA_TYPES_TABLE` enum value added to enum `TableViewType`
+
+- `BLAST_RADIUS_OBJECT_DETAILS_TABLE` enum value added to enum `TableViewType`
+
+- `K8S_POSTGRES_DB_CLUSTER` enum value added to enum `UserAuditObjectTypeEnum`
+
+- `ANTHROPIC_ORG_LOCAL_SESSIONS` enum value added to enum `WorkloadLevelHierarchy`
+
+- `GCP_GCS_BUCKET` enum value added to enum `WorkloadLevelHierarchy`
+
+229 types added
+
+- `AccountResourceGraphNode`
+
+- `AccountResourceGroup`
+
+- `AddcRecoverySpecType`
+
+- `AdfrRecoverySpecType`
+
+- `AksOutboundType`
+
+- `AnthropicOrgLocalSessions`
+
+- `AppBlueprintFailoverStatus`
+
+- `AppBlueprintLastFailoverStatus`
+
+- `AppBlueprintRmStatus`
+
+- `AppBlueprintStatus`
+
+- `AppflowsBlueprintFailoverReportStatusEnum`
+
+- `ApplicationCloudConfig`
+
+- `ApplicationCloudConfigInput`
+
+- `ApplicationConfigSnapshotDownloadLinkRequest`
+
+- `ApplicationConfigSnapshotDownloadLinkResponse`
+
+- `ApplicationRecoveryInfo`
+
+- `ApplicationRecoveryOutcome`
+
+- `ApplicationRecoveryStatus`
+
+- `ApplicationResource`
+
+- `ApplicationResourceConnection`
+
+- `ApplicationResourceEdge`
+
+- `ApplicationResourceMetadata`
+
+- `ApplicationResourceType`
+
+- `ApplicationResourceTypeCount`
+
+- `ApplicationResourceTypeFilter`
+
+- `ApplicationResourceTypeFilterInput`
+
+- `ApplicationResourceTypeInput`
+
+- `ApplicationServiceConfiguration`
+
+- `ApplicationServiceConfigurationInput`
+
+- `ApplicationWarningFlag`
+
+- `AwsApplicationServiceConfiguration`
+
+- `AwsApplicationServiceConfigurationInput`
+
+- `AwsCidrMappingInput`
+
+- `AwsCloneVpcAlternateCidrInput`
+
+- `AwsCloneVpcSameCidrInput`
+
+- `AwsEc2Instance`
+
+- `AwsEcsCapacityProviderType`
+
+- `AwsEksAccessType`
+
+- `AwsEksComputeType`
+
+- `AwsElasticacheConfigurationType`
+
+- `AwsElasticacheEngineType`
+
+- `AwsKmsSettingsInput`
+
+- `AwsLambdaHookInfoInput`
+
+- `AwsLambdaPackageType`
+
+- `AwsLoadBalancerStatus`
+
+- `AwsLoadBalancerType`
+
+- `AwsNativeEc2InstanceRecoverySpec`
+
+- `AwsNativeEc2InstanceResourceSpec`
+
+- `AwsNativeRdsInstanceRecoverySpec`
+
+- `AwsNativeRdsInstanceResourceSpec`
+
+- `AwsNetworkingSettingsInput`
+
+- `AwsParameterGroupType`
+
+- `AwsRecoverySettingsInput`
+
+- `AwsRoute53Input`
+
+- `AwsS3BucketDestinationInput`
+
+- `AwsS3BucketRecoveryTargetInput`
+
+- `AwsS3ExistingBucketTargetInput`
+
+- `AwsS3NewBucketTargetInput`
+
+- `AwsS3RecoverySettingsInput`
+
+- `AwsTargetGroupTargetType`
+
+- `AwsUseExistingVpcInput`
+
+- `AwsVpcCidrMappingInput`
+
+- `AwsVpcIdMappingInput`
+
+- `AwsVpcStatus`
+
+- `AzureNativeResourceSpec`
+
+- `AzureNativeVirtualMachineRecoverySpec`
+
+- `Blueprint`
+
+- `BlueprintAwsLocation`
+
+- `BlueprintAzureLocation`
+
+- `BlueprintCdmLocation`
+
+- `BlueprintChild`
+
+- `BlueprintChildConnection`
+
+- `BlueprintChildEdge`
+
+- `BlueprintFailover`
+
+- `BlueprintFailoverInstance`
+
+- `BlueprintFailoverStatus`
+
+- `BlueprintLocation`
+
+- `BlueprintLocationType`
+
+- `BlueprintNew`
+
+- `BlueprintPlatform`
+
+- `BlueprintRecoveryCount`
+
+- `BlueprintRecoveryRange`
+
+- `BlueprintRecoveryRanges`
+
+- `BlueprintStatus`
+
+- `ChildVmRecoveryInfo`
+
+- `CloudNativeApplication`
+
+- `CloudNativeApplicationConnection`
+
+- `CloudNativeApplicationEdge`
+
+- `CloudNativeApplicationNameValidationStatus`
+
+- `CloudNativeApplicationRefreshStatus`
+
+- `CloudNativeApplicationSortByField`
+
+- `CloudNativeApplicationWorkloads`
+
+- `CloudNativeProtectionStatus`
+
+- `CloudRegionInput`
+
+- `CloudRegionOneofInput`
+
+- `CloudSettingsInput`
+
+- `ConfigResource`
+
+- `ConfigResourceAwsAutoScalingGroup`
+
+- `ConfigResourceAwsEcr`
+
+- `ConfigResourceAwsEcs`
+
+- `ConfigResourceAwsEks`
+
+- `ConfigResourceAwsElasticache`
+
+- `ConfigResourceAwsElasticacheParameterGroup`
+
+- `ConfigResourceAwsElasticacheSubnetGroup`
+
+- `ConfigResourceAwsHostedZone`
+
+- `ConfigResourceAwsIamRole`
+
+- `ConfigResourceAwsLambda`
+
+- `ConfigResourceAwsLaunchTemplate`
+
+- `ConfigResourceAwsLoadBalancer`
+
+- `ConfigResourceAwsOptionGroup`
+
+- `ConfigResourceAwsParameterGroup`
+
+- `ConfigResourceAwsSecurityGroup`
+
+- `ConfigResourceAwsSubnet`
+
+- `ConfigResourceAwsTargetGroup`
+
+- `ConfigResourceAwsVpc`
+
+- `ConfigResourceConnection`
+
+- `ConfigResourceEdge`
+
+- `ConfigResourceInfo`
+
+- `ConfigResourcePropertyName`
+
+- `ConfigResourcePropertyValue`
+
+- `ConfigResourcePropertyValueConnection`
+
+- `ConfigResourcePropertyValueEdge`
+
+- `ConfigResourceType`
+
+- `ConfigSortByField`
+
+- `ConfigSortByParam`
+
+- `CreateApplicationMatchingTagInput`
+
+- `CreateApplicationMatchingTagInputEntry`
+
+- `CreateCloudNativeApplicationInput`
+
+- `CreateCloudNativeApplicationReply`
+
+- `DeleteCloudNativeApplicationInput`
+
+- `DevOpsObjectStatEntry`
+
+- `DevOpsObjectStatKey`
+
+- `DevOpsObjectStats`
+
+- `DiscoveryMethod`
+
+- `DiscoveryMethodFilterInput`
+
+- `DownloadAnchorResourcesRequest`
+
+- `DownloadAnchorResourcesResponse`
+
+- `DownloadApplicationResourcesRequest`
+
+- `DownloadApplicationResourcesResponse`
+
+- `DownloadConfigRecoveryReportReply`
+
+- `DownloadConfigRecoveryReportRequest`
+
+- `EventSeriesOfWorkloadGroupConnection`
+
+- `Failover`
+
+- `FailoverReport`
+
+- `FeatureRegionState`
+
+- `FeatureRegionStatus`
+
+- `GetAccountResourceDependencyGraphRequest`
+
+- `GetAccountResourceDependencyGraphResponse`
+
+- `GetApplicationResourceCountRequest`
+
+- `GetApplicationResourceCountResponse`
+
+- `GetCloudNativeApplicationWorkloadsByConfigSnapshotReply`
+
+- `GetConfigResourceCountRequest`
+
+- `GetConfigResourceCountResponse`
+
+- `GranularApplicationResourceType`
+
+- `GranularResourceProtection`
+
+- `HookFailureHandling`
+
+- `HookInput`
+
+- `HypervRecoverySpecType`
+
+- `IsValidCloudNativeApplicationNameRequest`
+
+- `IsValidCloudNativeApplicationNameResponse`
+
+- `K8sDiscoveryScope`
+
+- `K8sDiscoveryScopeInput`
+
+- `K8sLabelSelector`
+
+- `K8sLabelSelectorInput`
+
+- `LastTestStatusEnum`
+
+- `ListApplicationRecoveriesReply`
+
+- `ListApplicationsFilter`
+
+- `ListCloudNativeApplicationsSortParam`
+
+- `M365ConfigsOrg`
+
+- `MatchingTags`
+
+- `MatchingTagsEntry`
+
+- `NutanixRecoveryComputeTarget`
+
+- `NutanixRecoverySpec`
+
+- `NutanixResourceSpec`
+
+- `NutanixVMNicSpec`
+
+- `NutanixVMVolumeSpec`
+
+- `OlvmVirtualMachinePowerStatus`
+
+- `PropertyFilterField`
+
+- `PropertyFilterInput`
+
+- `RcvAzureArchivalMigrationTarget`
+
+- `RcvAzureArchivalMigrationTargetInput`
+
+- `RcvResourceCreationReadiness`
+
+- `RecoverCloudNativeApplicationInput`
+
+- `RecoverCloudNativeApplicationReply`
+
+- `RecoveryConfig`
+
+- `RecoveryErrorHandling`
+
+- `RecoveryHookInfoInput`
+
+- `RecoveryHookInput`
+
+- `RecoveryPlan`
+
+- `RecoveryPlanChild`
+
+- `RecoveryPlanChildResourceSpec`
+
+- `RecoveryPlanChildWorkload`
+
+- `RecoveryPoints`
+
+- `RecoverySpec`
+
+- `RefreshCloudNativeApplicationInput`
+
+- `RefreshCloudNativeApplicationReply`
+
+- `Resource`
+
+- `ResourceSpec`
+
+- `ResourceTag`
+
+- `ResourceTagEntry`
+
+- `ResourceTraversalRule`
+
+- `ResourceTypeCount`
+
+- `ResourceUriList`
+
+- `RpoLagInfo`
+
+- `Schedule`
+
+- `ScheduleInfo`
+
+- `SpecificResource`
+
+- `StartRefreshAzureLocalSubscriptionJobInput`
+
+- `StartRefreshAzureLocalSubscriptionJobReply`
+
+- `TagFilterInput`
+
+- `TagPermissionInput`
+
+- `TargetCloudAccountInfo`
+
+- `TightlyCoupledRelation`
+
+- `UpdateApplicationMatchingTagInput`
+
+- `UpdateApplicationMatchingTagInputEntry`
+
+- `UpdateCloudNativeApplicationInput`
+
+- `UpdateCloudNativeApplicationReply`
+
+- `VSphereBlueprint`
+
+- `VSphereVMNicSpec`
+
+- `VSphereVMVolumeSpec`
+
+- `VSphereVmChild`
+
+- `VmwareResourceSpec`
+
+- `VpcOptionInput`
+
+- `VsphereBlueprintChildFailoverInstance`
+
+- `VsphereBlueprintNew`
+
+- `VsphereRecoveryComputeTarget`
+
+- `VsphereRecoverySpec`
+
+- `WorkloadResource`
+
+- `WorkloadSnapshotInput`
+
+- `rcvAzure` field added to `ArchivalMigrationTargetLocation`
+
+- `archivalGroup` field added to `ArchivalSpec`
+
+- `isInfrastructureAlertsRegionConnected` field added to `AwsNativeDynamoDbTable`
+
+- `isInfrastructureAlertsRegionConnected` field added to `AwsNativeRdsInstance`
+
+- `isInfrastructureAlertsRegionConnected` field added to `AwsNativeS3Bucket`
+
+- `isExocomputeConfigured` field added to `AzureCosmosNosqlAccount`
+
+- `aksOutboundType` field added to `AzureExocomputeOptionalConfigInRegion`
+
+- `aksOutboundType` input field added to `AzureExocomputeOptionalConfigInRegionInput`
+
+- `connectedCustomerAccounts` field added to `CcWithCloudInfo`
+
+- `regionStatuses` field added to `FeatureDetail`
+
+- `discoveryScope` input field added to `K8sClusterAddInput`
+
+- `discoveryScope` field added to `K8sClusterSummary`
+
+- `discoveryScope` input field added to `K8sClusterUpdateConfigInput`
+
+6 fields added to `Mutation`
+
+- `createCloudNativeApplication`
+
+- `deleteCloudNativeApplication`
+
+- `recoverCloudNativeApplication`
+
+- `refreshCloudNativeApplication`
+
+- `startRefreshAzureLocalSubscriptionJob`
+
+- `updateCloudNativeApplication`
+
+- `powerStatus` field added to `OlvmVirtualMachineV1`
+
+- `cephUser` field added to `OpenstackCephSetting`
+
+- `cephUser` input field added to `OpenstackCephSettingInput`
+
+17 fields added to `Query`
+
+- `accountResourceDependencyGraph`
+
+- `applicationConfigSnapshotDownloadLink`
+
+- `applicationRecoveries`
+
+- `applicationResourceCount`
+
+- `applicationResources`
+
+- `cloudNativeApplication`
+
+- `cloudNativeApplicationWorkloadsByConfigSnapshot`
+
+- `cloudNativeApplications`
+
+- `configResourceCount`
+
+- `configResourcePropertyValues`
+
+- `configResources`
+
+- `devOpsObjectStatsSummary`
+
+- `downloadAnchorResources`
+
+- `downloadApplicationResources`
+
+- `downloadConfigRecoveryReport`
+
+- `eventSeriesOfWorkloadGroup`
+
+- `isValidCloudNativeApplicationName`
+
+- `rcvResourceCreationReadiness` field added to `RubrikManagedRcsTarget`
+
+- `rcvResourceCreationReadiness` field added to `RubrikManagedRcvAwsTarget`
+
+- `rcvResourceCreationReadiness` field added to `RubrikManagedRcvGcpTarget`
+
+- `customTags` input field added to `StartEc2InstanceSnapshotExportJobInput`
+
+- `customTags` input field added to `StartRestoreAwsNativeEc2InstanceSnapshotJobInput`
+
+- `rcvAzure` input field added to `TargetOneof`
+
+- `refreshResumeTime` field added to `VsphereVcenter`
+
+- Input field `exocomputeLambdaRoleArn` of type `String` with default value "" was added to input object type `FeatureSpecificDetailsInput`
+
+- Input field `exocomputeMasterRoleArn` of type `String` with default value "" was added to input object type `FeatureSpecificDetailsInput`
+
+- Input field `exocomputeWorkerRoleArn` of type `String` with default value "" was added to input object type `FeatureSpecificDetailsInput`
+
+- Input field `tprRules` of type [TprRule!] was added to input object type `TprRequestFilterInput`
 
 ## October 26, 2026
 
@@ -20547,7 +21281,7 @@ The reliable check is whether your own integrations reference the names listed. 
 
 - Input field `userSelectedInterfaces` of type [String!] with default value [] was added to input object type `UpdateNasShareInput`
 
-- Enum value AwsCloudExternalArtifact.EXOCOMPUTE_EKS_MASTERNODE_INSTANCE_PROFILE was deprecated with reason Instance profile corresponds to worker node in an EKS
+- Enum value AwsCloudExternalArtifact.EXOCOMPUTE_EKS_MASTERNODE_INSTANCE_PROFILE was deprecated with reason Instance profile corresponds to worker node in an EKS cluster, please use EXOCOMPUTE_EKS_WORKERNODE_INSTANCE_PROFILE instead.
 
 - Input field `archivalLocationId` of type [String!] was added to input object type `PolarisSnapshotFilterInput`
 

@@ -916,7 +916,7 @@
 
 
 <h1 id="cdmupgradeinfofilterinput">CdmUpgradeInfoFilterInput</h1>
-<p>Input to filter clusters for the CDM upgrade info list.</p>
+<p>Filter input for clusterWithUpgradesInfo. Mirrors CdmUpgradeInfoFilter; defined here to avoid the circular import between cluster_upgrade_filter.proto and cdmupgradeservice.proto.</p>
 <h2 id="fields">Fields</h2>
 <table>
 <thead>
@@ -930,77 +930,77 @@
 <tr>
 <td>clusterLocation</td>
 <td>[String!]</td>
-<td>Location of cluster.</td>
+<td>Cluster locations to filter by.</td>
 </tr>
 <tr>
 <td>connectionState</td>
 <td>[<a href="../../enums/ClusterStatus/">ClusterStatus</a>!]</td>
-<td>Connection status of the Rubrik cluster.</td>
+<td>Cluster connection states to filter by.</td>
 </tr>
 <tr>
 <td>downloadedVersion</td>
 <td>[String!]</td>
-<td>Cluster software version greater than or equal to.</td>
+<td>Downloaded versions to filter by.</td>
 </tr>
 <tr>
 <td>eosStatus</td>
 <td>[<a href="../../enums/ClusterEosStatus/">ClusterEosStatus</a>!]</td>
-<td>End of support status of the Rubrik cluster.</td>
+<td>End-of-support statuses to filter by.</td>
 </tr>
 <tr>
 <td>id</td>
 <td>[<a href="../../scalars/UUID/">UUID</a>!]</td>
-<td>Cluster UUIDs.</td>
+<td>Cluster UUIDs to filter by.</td>
 </tr>
 <tr>
 <td>installedVersion</td>
 <td>[String!]</td>
-<td>Cluster software version greater than or equal to.</td>
+<td>Installed software versions to filter by.</td>
 </tr>
 <tr>
 <td>isAssignedByParentAccount</td>
 <td>Boolean</td>
-<td>Filter on shared (parent-assigned) Rubrik clusters. When true, return only shared Rubrik clusters; when false, exclude them; omit for no filter.</td>
+<td>Filter on shared (parent-assigned) clusters.</td>
 </tr>
 <tr>
 <td>minSoftwareVersion</td>
 <td>String</td>
-<td>Cluster software version greater than or equal to.</td>
+<td>Minimum software version.</td>
 </tr>
 <tr>
 <td>name</td>
 <td>[String!]</td>
-<td>Cluster names.</td>
+<td>Cluster names to filter by.</td>
 </tr>
 <tr>
 <td>prechecksStatus</td>
 <td>[<a href="../../enums/PrechecksStatusTypeEnum/">PrechecksStatusTypeEnum</a>!]</td>
-<td>Prechecks status of cluster.</td>
+<td>Prechecks statuses to filter by.</td>
 </tr>
 <tr>
 <td>productType</td>
 <td>[<a href="../../enums/ClusterProductEnum/">ClusterProductEnum</a>!]</td>
-<td>Product type of Rubrik cluster.</td>
+<td>Product types to filter by.</td>
 </tr>
 <tr>
 <td>registrationTime_gt</td>
 <td><a href="../../scalars/DateTime/">DateTime</a></td>
-<td>Cluster registration time greater than.</td>
+<td>Cluster registration time (lower bound).</td>
 </tr>
 <tr>
 <td>registrationTime_lt</td>
 <td><a href="../../scalars/DateTime/">DateTime</a></td>
-<td>Cluster registration time less than.</td>
+<td>Cluster registration time (upper bound).</td>
 </tr>
 <tr>
 <td>type</td>
 <td>[<a href="../../enums/ClusterTypeEnum/">ClusterTypeEnum</a>!]</td>
-<td></td>
+<td>Registered cluster types to filter by.</td>
 </tr>
 <tr>
 <td>upgradeJobStatus</td>
 <td>[<a href="../../enums/ClusterJobStatusTypeEnum/">ClusterJobStatusTypeEnum</a>!]</td>
-<td>Cluster upgrade job status.</td>
+<td>Upgrade job statuses to filter by.</td>
 </tr>
 <tr>
 <td>upgradeScheduled</td>
@@ -1010,12 +1010,12 @@
 <tr>
 <td>upgradeStatusCategory</td>
 <td>[String!]</td>
-<td>Upgrade status categories for filtering clusters. Valid values are defined in the GPS service.</td>
+<td>Upgrade status categories to filter by.</td>
 </tr>
 <tr>
 <td>versionStatus</td>
 <td>[<a href="../../enums/VersionStatus/">VersionStatus</a>!]</td>
-<td>Version status of the cluster.</td>
+<td>Version statuses to filter by.</td>
 </tr>
 </tbody>
 </table>

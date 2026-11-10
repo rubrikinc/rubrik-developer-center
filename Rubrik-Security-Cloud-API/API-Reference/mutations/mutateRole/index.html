@@ -967,7 +967,7 @@
 <tr>
 <td>permissions <em>(required)</em></td>
 <td>[<a href="../../types/inputs/PermissionInput/">PermissionInput</a>!]!</td>
-<td>Permissions in the role.</td>
+<td>Object-scoped permissions in the role. A role is either object-scoped (permissions) or tag-scoped (tagPermissions), never both.</td>
 </tr>
 <tr>
 <td>protectableClusters <em>(required)</em></td>
@@ -978,6 +978,11 @@
 <td>isSynced</td>
 <td>Boolean</td>
 <td>Determines whether the role is marked to be synced to Rubrik CDM; false if null.</td>
+</tr>
+<tr>
+<td>tagPermissions</td>
+<td>[<a href="../../types/inputs/TagPermissionInput/">TagPermissionInput</a>!]</td>
+<td>Tag-scoped permissions in the role. A role is either object-scoped (permissions) or tag-scoped (tagPermissions), never both.</td>
 </tr>
 </tbody>
 </table>

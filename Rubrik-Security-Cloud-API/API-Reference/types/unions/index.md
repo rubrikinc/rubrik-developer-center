@@ -1,6 +1,6 @@
 # Unions
 
-34 types.
+36 types.
 
 [AccessMethodDetailsType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/unions/AccessMethodDetailsType/index.md)\
 [ActionTypes](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/unions/ActionTypes/index.md)\
@@ -28,6 +28,8 @@
 [PossibleFilterValues](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/unions/PossibleFilterValues/index.md)\
 [PrincipalMetadata](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/unions/PrincipalMetadata/index.md)\
 [RansomwareResultGroupByInfo](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/unions/RansomwareResultGroupByInfo/index.md)\
+[RecoveryPlanChildResourceSpec](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/unions/RecoveryPlanChildResourceSpec/index.md)\
+[RecoveryPlanChildWorkload](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/unions/RecoveryPlanChildWorkload/index.md)\
 [RemediationDetailsUnion](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/unions/RemediationDetailsUnion/index.md)\
 [ResourceMetadataUnion](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/unions/ResourceMetadataUnion/index.md)\
 [SnappableGroupByInfo](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/unions/SnappableGroupByInfo/index.md)\

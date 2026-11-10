@@ -8,7 +8,7 @@
 | --------------- | --------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------- |
 | snapshotFid     | String!                                                                                                                     | The associated snapshot FID if the type is snapshot, otherwise empty string. |
 | timestamp       | [Long](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/Long/index.md)!                   | Timestamp of the issue event in milliseconds.                                |
-| type            | [IssueEventType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/IssueEventType/index.md)! |                                                                              |
+| type            | [IssueEventType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/IssueEventType/index.md)! | Type of the issue event, for example whitelist or snapshot.                  |
 | violations      | Int!                                                                                                                        | Total number of violations for this event.                                   |
 | violationsDelta | Int!                                                                                                                        | Change in number of violations as a result of this event.                    |
 

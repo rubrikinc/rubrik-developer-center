@@ -1812,7 +1812,7 @@
 </tr>
 <tr>
 <td>IRISDB_STORAGE_ARRAY_ID</td>
-<td>Filter IRIS DB instances by the ID of the storage array backing the instance's volumes, resolved via the array id on the instance's storage spec.</td>
+<td>Filter IRIS DB instances by the IDs of the storage arrays backing the instance's volumes (up to 100 IDs), resolved via the array id on the instance's storage spec.</td>
 </tr>
 <tr>
 <td>IS_ACTIVE</td>
@@ -2004,7 +2004,7 @@
 </tr>
 <tr>
 <td>M365_OBJECT_STATUS</td>
-<td>Filter M365 objects by their derived object status. Texts accepts one or more of "PROTECTED", "UNPROTECTED", "RELIC", "UNLICENSED"; an object matches when its status is any of them.  Status is a single value per object, resolved in precedence order RELIC &gt; UNPROTECTED &gt; UNLICENSED &gt; PROTECTED, so the statuses partition the result set rather than overlapping. Only Mailbox and OneDrive carry licensing, so Sites and Teams are never UNLICENSED.</td>
+<td>Filter M365 objects by their derived object status. Texts accepts one or more of "PROTECTED", "UNPROTECTED", "RELIC", "UNLICENSED"; an object matches when its status is any of them. Status is a single value per object, resolved in precedence order RELIC &gt; UNPROTECTED &gt; UNLICENSED &gt; PROTECTED, so the statuses partition the result set rather than overlapping. Only Mailbox and OneDrive carry licensing, so Sites and Teams are never UNLICENSED.</td>
 </tr>
 <tr>
 <td>M365_PREFERRED_DATA_LOCATION</td>
@@ -2271,6 +2271,14 @@
 <td>Filter OpenStack projects by their native OpenStack project ID.</td>
 </tr>
 <tr>
+<td>ORACLE_DATA_GUARD_TYPE</td>
+<td>Filter Oracle databases by Data Guard type. Texts takes one or both of the CdmOracleDatabase.DataGuardType names NON_DATA_GUARD and DATA_GUARD_MEMBER; any other value is rejected. A database with no Data Guard type counts as NON_DATA_GUARD. Objects with no Oracle database record are dropped from the result. Data Guard groups have one, so restrict the object type to ORACLE_DATABASE to exclude them.</td>
+</tr>
+<tr>
+<td>ORACLE_DB_NAME_OR_UNIQUE_NAME</td>
+<td>Filter Oracle databases by a case-insensitive substring match on the database name or the database unique name. Takes exactly one text of at most 255 bytes. Objects with no Oracle database record are dropped from the result. Data Guard groups have one, so restrict the object type to ORACLE_DATABASE to exclude them.</td>
+</tr>
+<tr>
 <td>ORACLE_OS_TYPE</td>
 <td>Filter Oracle host and RAC objects by OS type.</td>
 </tr>
@@ -2393,6 +2401,10 @@
 <tr>
 <td>PROXMOX_NODE_RBS_CONFIGURED</td>
 <td>Filter Proxmox nodes by Rubrik Backup Service configuration status. No index on <code>rbs_configured</code> is required: <code>cdm_pve_node</code> is small (bounded by per-cluster node count, typically a few hundred rows), and the filter is always combined with the unique-keyed JOIN on <code>managed_object.id = cdm_pve_node.fid</code>, so the filter scan is already bounded by the JOIN's index lookup.</td>
+</tr>
+<tr>
+<td>PROXMOX_TAG_IS_REGISTERED</td>
+<td>Filter Proxmox tags by whether they are registered on Rubrik CDM. Passing both "true" and "false" applies no filter.</td>
 </tr>
 <tr>
 <td>RDS_INSTANCE_VPC_ID</td>

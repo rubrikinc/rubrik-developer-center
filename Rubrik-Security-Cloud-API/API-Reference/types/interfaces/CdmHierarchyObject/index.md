@@ -151,6 +151,7 @@ A Rubrik CDM Managed Hierarchy object.
 - [SapHanaSystem](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/SapHanaSystem/index.md)
 - [ShareFileset](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/ShareFileset/index.md)
 - [SnapMirrorCloud](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/SnapMirrorCloud/index.md)
+- [VSphereBlueprint](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/VSphereBlueprint/index.md)
 - [Vcd](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/Vcd/index.md)
 - [VcdCatalog](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/VcdCatalog/index.md)
 - [VcdOrg](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/VcdOrg/index.md)

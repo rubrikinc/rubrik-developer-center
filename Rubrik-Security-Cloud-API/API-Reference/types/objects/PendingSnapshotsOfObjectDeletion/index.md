@@ -43,4 +43,4 @@ Pending snapshots deletion status for an object.
 - [FusionComputeCluster.pendingObjectDeletionStatus](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/FusionComputeCluster/index.md)
 - FusionComputeClusterDescendant.pendingObjectDeletionStatus
 - FusionComputeClusterPhysicalChildType.pendingObjectDeletionStatus
-- *…and 263 more*
+- *…and 264 more*

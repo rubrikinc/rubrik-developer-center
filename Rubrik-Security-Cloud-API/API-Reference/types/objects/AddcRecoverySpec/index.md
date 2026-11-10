@@ -20,4 +20,5 @@ Active Directory Domain Controller recovery specification.
 **Referenced by**
 
 - [AdfrRecoverySpec.addc](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AdfrRecoverySpec/index.md)
+- [AdfrRecoverySpecType.addc](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AdfrRecoverySpecType/index.md)
 - [WorkloadSpecificRecoverySpec.addc](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/WorkloadSpecificRecoverySpec/index.md)

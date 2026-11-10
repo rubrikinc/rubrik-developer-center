@@ -10,7 +10,7 @@ Information related to cluster licenses.
 | product                | [Product](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/Product/index.md)!                               | The product included in this cluster license.                           |
 | requestedCapacityBytes | Float!                                                                                                                                      | The total requested capacity, in bytes.                                 |
 | totalCapacityBytes     | Float!                                                                                                                                      | The total requested capacity, in bytes.                                 |
-| type                   | [ClusterLicenseInfoType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/ClusterLicenseInfoType/index.md)! |                                                                         |
+| type                   | [ClusterLicenseInfoType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/ClusterLicenseInfoType/index.md)! | The type of information.                                                |
 | usableCapacityBytes    | Float!                                                                                                                                      | The usable capacity of this product, in bytes.                          |
 | usedCapacityBytes      | Float!                                                                                                                                      | The capacity consumed, in bytes.                                        |
 

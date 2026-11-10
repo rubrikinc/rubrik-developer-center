@@ -1,6 +1,6 @@
 # Interfaces
 
-211 types.
+218 types.
 
 [ActiveDirectoryDomainDescendantType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/ActiveDirectoryDomainDescendantType/index.md)\
 [ActiveDirectoryDomainPhysicalChildType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/ActiveDirectoryDomainPhysicalChildType/index.md)\
@@ -12,6 +12,11 @@
 [AwsNativeAccountLogicalChildType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/AwsNativeAccountLogicalChildType/index.md)\
 [AwsNativeHierarchyObject](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/AwsNativeHierarchyObject/index.md)\
 [AzureNativeHierarchyObjectType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/AzureNativeHierarchyObjectType/index.md)\
+[Blueprint](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/Blueprint/index.md)\
+[BlueprintChild](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/BlueprintChild/index.md)\
+[BlueprintFailoverInstance](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/BlueprintFailoverInstance/index.md)\
+[BlueprintLocation](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/BlueprintLocation/index.md)\
+[BlueprintNew](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/BlueprintNew/index.md)\
 [CdmHierarchyObject](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/CdmHierarchyObject/index.md)\
 [CdmHierarchySnappableNew](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/CdmHierarchySnappableNew/index.md)\
 [CloudAccount](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/CloudAccount/index.md)\
@@ -164,7 +169,9 @@
 [ProxmoxTagLogicalChild](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/ProxmoxTagLogicalChild/index.md)\
 [PureStorageArrayDescendantV1](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/PureStorageArrayDescendantV1/index.md)\
 [PureStorageArrayLogicalChildType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/PureStorageArrayLogicalChildType/index.md)\
+[RecoverySpec](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/RecoverySpec/index.md)\
 [RequestedChangesTemplate](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/RequestedChangesTemplate/index.md)\
+[ResourceSpec](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/ResourceSpec/index.md)\
 [SaasAppsOrganization](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/SaasAppsOrganization/index.md)\
 [SapHanaSystemDescendantType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/SapHanaSystemDescendantType/index.md)\
 [SapHanaSystemPhysicalChildType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/SapHanaSystemPhysicalChildType/index.md)\

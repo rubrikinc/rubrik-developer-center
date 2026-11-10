@@ -39,6 +39,7 @@ query {
       name
       numWorkloadDescendants
       objectType
+      refreshResumeTime
       replicatedObjectCount
       slaAssignment
       slaPauseStatus

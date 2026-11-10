@@ -1428,6 +1428,12 @@
 <td>Specifies the time at which or before the snapshot was taken.</td>
 </tr>
 <tr>
+<td>newestSnapshot</td>
+<td>excludeLatestSnapshot</td>
+<td>Boolean</td>
+<td>Specifies whether to ignore the newest snapshot of the workload when choosing the result.</td>
+</tr>
+<tr>
 <td>numWorkloadDescendants</td>
 <td>first</td>
 <td>Int</td>
@@ -1734,6 +1740,7 @@
 </ul>
 <p><strong>Referenced by</strong></p>
 <ul>
+<li><a href="../VSphereVmChild/">VSphereVmChild.snappable</a></li>
 <li><a href="../VsphereLiveMount/">VsphereLiveMount.mountedVm</a></li>
 <li><a href="../VsphereLiveMount/">VsphereLiveMount.sourceVm</a></li>
 <li><a href="../VsphereMount/">VsphereMount.newVm</a></li>

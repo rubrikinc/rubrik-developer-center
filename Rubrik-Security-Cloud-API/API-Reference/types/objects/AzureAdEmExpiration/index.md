@@ -8,7 +8,7 @@ Expiration settings for access package assignments.
 | --------------- | ------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
 | durationSeconds | [Long](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/Long/index.md)!                       | Duration before assignments expire, in seconds (e.g. P30D -> 2592000). Zero when the expiration mode is not duration-based. |
 | endDateTime     | [DateTime](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/DateTime/index.md)                | Date and time when assignments expire.                                                                                      |
-| type            | [EmExpirationType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/EmExpirationType/index.md)! |                                                                                                                             |
+| type            | [EmExpirationType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/EmExpirationType/index.md)! | Expiration mode (duration, date and time, or never).                                                                        |
 
 ## Used By
 

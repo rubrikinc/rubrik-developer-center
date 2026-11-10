@@ -10,7 +10,7 @@ A snippet of the related help topic.
 | id          | String!                                                                                                                                         | ID of the related help topic.           |
 | link        | [URL](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/URL/index.md)                                          | URL pointing to the related help topic. |
 | title       | String!                                                                                                                                         | Title of the related help topic.        |
-| type        | [ProductDocumentationType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/ProductDocumentationType/index.md)! |                                         |
+| type        | [ProductDocumentationType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/ProductDocumentationType/index.md)! | Type of the related help topic.         |
 
 ## Used By
 

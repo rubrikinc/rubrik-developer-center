@@ -16,7 +16,7 @@
 | resourceType       | [PolicyResourceType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/PolicyResourceType/index.md)!              | The resource type of the remediation resource.             |
 | state              | [RemediationState](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/RemediationState/index.md)!                  | The state of the remediation.                              |
 | targets            | [RemediationTargets](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/RemediationTargets/index.md)             | The targets that the remediation have been applied on.     |
-| type               | [RemediationType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/RemediationType/index.md)!                    |                                                            |
+| type               | [RemediationType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/RemediationType/index.md)!                    | The type of the remediation.                               |
 
 ## Used By
 

@@ -938,7 +938,7 @@
 
 
 <h1 id="activedirectorysearchsnapshots">activeDirectorySearchSnapshots</h1>
-<p>Search across a range of snapshots of a domain controller for Active Directory objects  Supported in v9.1+ Return the Active Directory objects matching the search criteria.</p>
+<p>Search across a range of snapshots of a domain controller for Active Directory objects Supported in v9.1+ Return the Active Directory objects matching the search criteria.</p>
 <h2 id="arguments">Arguments</h2>
 <table>
 <thead>
@@ -958,6 +958,16 @@
 <td>after</td>
 <td>String</td>
 <td>An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results.</td>
+</tr>
+<tr>
+<td>last</td>
+<td>Int</td>
+<td>Returns the last n elements from the list.</td>
+</tr>
+<tr>
+<td>before</td>
+<td>String</td>
+<td>An opaque cursor returned from a previous query's startCursor field. Pass this value verbatim to retrieve the previous page of results.</td>
 </tr>
 <tr>
 <td>id <em>(required)</em></td>

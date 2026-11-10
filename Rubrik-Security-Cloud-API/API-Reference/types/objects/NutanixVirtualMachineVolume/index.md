@@ -14,4 +14,5 @@ Nutanix virtual machine volume.
 
 **Referenced by**
 
+- [NutanixResourceSpec.nutanixVolumeSpecs](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/NutanixResourceSpec/index.md)
 - [NutanixVirtualMachineResourceSpec.storageVolumes](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/NutanixVirtualMachineResourceSpec/index.md)

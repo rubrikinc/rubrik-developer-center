@@ -25,6 +25,7 @@ query AwsNativeDynamoDbTable($dynamoDbTableRubrikId: UUID!) {
     isAwsContinuousBackupEnabled
     isExocomputeConfigured
     isInfrastructureAlertsEnabled
+    isInfrastructureAlertsRegionConnected
     isProtectable
     isRelic
     legallyHeldSnapshotCount

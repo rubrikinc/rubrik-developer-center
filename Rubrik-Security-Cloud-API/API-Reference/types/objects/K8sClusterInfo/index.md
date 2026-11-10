@@ -10,7 +10,7 @@ Information of the Kubernetes cluster.
 | k8sVersion      | String                                                                                                                      | Kubernetes version.                                             |
 | kuprClusterUuid | [UUID](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/UUID/index.md)!                   | UUID of the Kubernetes cluster.                                 |
 | port            | Int!                                                                                                                        | Port on the Kubernetes cluster used for communication with RSC. |
-| type            | [K8sClusterType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/K8sClusterType/index.md)! |                                                                 |
+| type            | [K8sClusterType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/K8sClusterType/index.md)! | Type of the Kubernetes cluster.                                 |
 
 ## Used By
 

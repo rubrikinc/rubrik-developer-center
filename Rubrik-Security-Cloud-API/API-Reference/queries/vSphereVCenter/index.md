@@ -32,6 +32,7 @@ query VSphereVCenter($fid: UUID!) {
     name
     numWorkloadDescendants
     objectType
+    refreshResumeTime
     replicatedObjectCount
     slaAssignment
     slaPauseStatus

@@ -4,9 +4,9 @@ Update cluster DNS servers and search domains.
 
 ## Arguments
 
-| Argument           | Type                                                                                                                                                                       | Description                                 |
-| ------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------- |
-| input *(required)* | [UpdateDnsServersAndSearchDomainsInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/UpdateDnsServersAndSearchDomainsInput/index.md)! | Input for UpdateDnsServersAndSearchDomains. |
+| Argument           | Type                                                                                                                                                                       | Description                                        |
+| ------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------- |
+| input *(required)* | [UpdateDnsServersAndSearchDomainsInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/UpdateDnsServersAndSearchDomainsInput/index.md)! | Input for updating DNS servers and search domains. |
 
 ## Returns
 

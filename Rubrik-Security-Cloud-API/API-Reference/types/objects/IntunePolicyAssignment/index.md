@@ -14,7 +14,7 @@ Intune policy assignment.
 | id         | String!                                                                                                                                                                                         | ID of the policy assignment.                                    |
 | policyId   | String!                                                                                                                                                                                         | ID of the policy.                                               |
 | policyName | String!                                                                                                                                                                                         | Name of the policy.                                             |
-| type       | [IntunePolicyAssignmentType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/IntunePolicyAssignmentType/index.md)!                                             |                                                                 |
+| type       | [IntunePolicyAssignmentType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/IntunePolicyAssignmentType/index.md)!                                             | Type of the assignment.                                         |
 
 ## Used By
 

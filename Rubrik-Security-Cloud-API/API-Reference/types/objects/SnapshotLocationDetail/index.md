@@ -4,11 +4,11 @@ Snapshot location information.
 
 ## Fields
 
-| Field      | Type                                                                                                                         | Description           |
-| ---------- | ---------------------------------------------------------------------------------------------------------------------------- | --------------------- |
-| locationId | String!                                                                                                                      | Id of the location.   |
-| name       | String!                                                                                                                      | Name of the location. |
-| type       | [SnapshotLocType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/SnapshotLocType/index.md) |                       |
+| Field      | Type                                                                                                                         | Description                                                                                           |
+| ---------- | ---------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- |
+| locationId | String!                                                                                                                      | Id of the location.                                                                                   |
+| name       | String!                                                                                                                      | Name of the location.                                                                                 |
+| type       | [SnapshotLocType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/SnapshotLocType/index.md) | Type of the snapshot location. When the location type cannot be determined, the value is UNSPECIFIED. |
 
 ## Used By
 

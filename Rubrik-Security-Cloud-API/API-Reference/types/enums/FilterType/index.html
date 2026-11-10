@@ -979,6 +979,10 @@
 <td>GPO "LLMNR explicitly enabled" filter. Selects GPOs that configure the EnableMulticast registry value under DNSClient to 1, explicitly re-enabling LLMNR and creating a credential interception risk.</td>
 </tr>
 <tr>
+<td>SECURITY_GPO_NETLOGON_VULNERABLE_CHANNEL</td>
+<td>GPO "vulnerable Netlogon secure channel allowed" filter. Selects GPOs that configure the VulnerableChannelAllowList security option to a non-empty allow-list, which lets the listed principals use the vulnerable Netlogon secure channel (CVE-2020-1472, Zerologon). The predicate is fixed at IS_NOT [""].</td>
+</tr>
+<tr>
 <td>SECURITY_GPO_NO_LM_HASH</td>
 <td>Filter for GPOs that configure the "Do not store LAN Manager hash value" security option. Selects GPOs where the NoLMHash setting is configured to store LM hashes (NoLMHash = 0).</td>
 </tr>
@@ -1177,6 +1181,10 @@
 <tr>
 <td>SECURITY_IDENTITY_METADATA_LIST_LENGTH</td>
 <td>Identity metadata list length comparison filter (JSON_LENGTH with relational operator).</td>
+</tr>
+<tr>
+<td>SECURITY_IDENTITY_METADATA_NUMERIC_COMPARISON</td>
+<td>Identity metadata numeric comparison filter, used for comparing numeric metadata.</td>
 </tr>
 <tr>
 <td>SECURITY_IDENTITY_METADATA_VALUES</td>

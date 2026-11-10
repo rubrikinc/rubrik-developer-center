@@ -120,3 +120,4 @@ AWS native account.
 - [AwsNativeRdsInstance.awsNativeAccount](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AwsNativeRdsInstance/index.md)
 - [AwsNativeS3Bucket.awsAccount](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AwsNativeS3Bucket/index.md)
 - [AwsNativeS3Bucket.awsNativeAccount](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AwsNativeS3Bucket/index.md)
+- [BlueprintAwsLocation.account](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/BlueprintAwsLocation/index.md)

@@ -13,6 +13,7 @@ Hierarchy object type enum covering all CDM and RSC hierarchy objects.
 | ANTHROPIC_CHILD_ORG_USER                    | Anthropic child organization user.                                                                       |
 | ANTHROPIC_DEVICE                            | Anthropic endpoint device (workload, leaf).                                                              |
 | ANTHROPIC_ORG                               | Anthropic organization.                                                                                  |
+| ANTHROPIC_ORG_LOCAL_SESSIONS                | Claude local sessions of an Anthropic organization (workload, leaf).                                     |
 | ANTHROPIC_ORG_SETTINGS                      | Anthropic organization settings (workload, leaf).                                                        |
 | ANTHROPIC_USER_CLAUDE_CHAT                  | Anthropic user Claude chat (workload, leaf).                                                             |
 | ATLASSIAN_SITE                              | Atlassian site.                                                                                          |
@@ -136,7 +137,13 @@ Hierarchy object type enum covering all CDM and RSC hierarchy objects.
 | M365_BACKUP_STORAGE_ORG                     | M365 Backup Storage Organization.                                                                        |
 | M365_BACKUP_STORAGE_SITE                    | M365 Backup Storage Sharepoint Site.                                                                     |
 | M365_BACKUP_STORAGE_USER                    | M365 Backup Storage User.                                                                                |
+| M365_CONFIGS_DEFENDER                       | M365 Configurations Defender for Office 365 settings.                                                    |
+| M365_CONFIGS_EXCHANGE                       | M365 Configurations Exchange Online settings.                                                            |
+| M365_CONFIGS_ONEDRIVE                       | M365 Configurations OneDrive settings.                                                                   |
 | M365_CONFIGS_ORG                            | M365 Configurations Organization.                                                                        |
+| M365_CONFIGS_PURVIEW                        | M365 Configurations Purview settings.                                                                    |
+| M365_CONFIGS_SHAREPOINT                     | M365 Configurations SharePoint settings.                                                                 |
+| M365_CONFIGS_TEAMS                          | M365 Configurations Teams settings.                                                                      |
 | MANAGED_VOLUME_EXPORT                       | Managed Volume Export.                                                                                   |
 | MARIADB_DATABASE                            | MariaDB Database.                                                                                        |
 | MARIADB_INSTANCE                            | MariaDB Instance.                                                                                        |

@@ -15,4 +15,5 @@ VMware virtual machine network interface.
 
 **Referenced by**
 
+- [VmwareResourceSpec.vmwareNics](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/VmwareResourceSpec/index.md)
 - [VmwareVirtualMachineResourceSpec.networkInterfaces](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/VmwareVirtualMachineResourceSpec/index.md)

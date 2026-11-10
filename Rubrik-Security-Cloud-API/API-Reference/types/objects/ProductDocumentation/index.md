@@ -16,7 +16,7 @@ A help topic in the product documentation.
 | prevDocTitle | String!                                                                                                                                         | Title of the previous topic.                                           |
 | related      | \[[RelatedContent](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/RelatedContent/index.md)!\]!              | List of related help topics.                                           |
 | title        | String!                                                                                                                                         | Title of the help topic.                                               |
-| type         | [ProductDocumentationType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/ProductDocumentationType/index.md)! |                                                                        |
+| type         | [ProductDocumentationType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/ProductDocumentationType/index.md)! | Type of the help topic.                                                |
 
 ## Used By
 

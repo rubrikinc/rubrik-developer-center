@@ -9,7 +9,7 @@ SecretMetaData describes metadata on the secret of the principal.
 | creationDate   | [DateTime](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/DateTime/index.md) | Creation date of the secret.   |
 | expirationDate | [DateTime](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/DateTime/index.md) | Expiration date of the secret. |
 | name           | String!                                                                                                          | The name of the secret.        |
-| type           | String!                                                                                                          |                                |
+| type           | String!                                                                                                          | The type of the secret.        |
 
 ## Used By
 

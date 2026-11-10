@@ -49,12 +49,12 @@ mutation SetCephSettings($input: SetCephSettingsInput!) {
     "setCephSettings": {
       "data": [
         {
+          "cephUser": "example-string",
           "fsid": "example-string",
           "id": "example-string",
           "keyring": "example-string",
           "openstackAvailabilityZoneId": "example-string",
-          "volumePoolName": "example-string",
-          "volumeTypeId": "example-string"
+          "volumePoolName": "example-string"
         }
       ]
     }

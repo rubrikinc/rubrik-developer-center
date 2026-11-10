@@ -12,7 +12,7 @@ LegalHoldSnapshotDetails.
 | legalHoldTime         | [DateTime](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/DateTime/index.md)                                 | Legal hold time.                                                                    |
 | snapshotRetentionInfo | [CdmSnapshotRetentionInfo](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/CdmSnapshotRetentionInfo/index.md) | Provides snapshot details for each location.                                        |
 | snapshotTime          | [DateTime](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/DateTime/index.md)                                 | Snapshot time.                                                                      |
-| type                  | [SnapshotTypeEnum](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/SnapshotTypeEnum/index.md)!                  |                                                                                     |
+| type                  | [SnapshotTypeEnum](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/SnapshotTypeEnum/index.md)!                  | Snapshot type.                                                                      |
 
 ## Used By
 

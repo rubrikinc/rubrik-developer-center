@@ -1,6 +1,6 @@
 # allClusterConnection
 
-*No description available.*
+List all clusters across all product types.
 
 ## Arguments
 

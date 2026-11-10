@@ -3,6 +3,7 @@
 ## A
 
 [accountId](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/accountId/index.md)\
+[accountResourceDependencyGraph](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/accountResourceDependencyGraph/index.md)\
 [accountSettings](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/accountSettings/index.md)\
 [activeCustomAnalyzers](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/activeCustomAnalyzers/index.md)\
 [activeDirectoryDomain](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/activeDirectoryDomain/index.md)\
@@ -213,6 +214,10 @@
 [appAccessGraph](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/appAccessGraph/index.md)\
 [appAccessImpact](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/appAccessImpact/index.md)\
 [appAccessPrincipals](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/appAccessPrincipals/index.md)\
+[applicationConfigSnapshotDownloadLink](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/applicationConfigSnapshotDownloadLink/index.md)\
+[applicationRecoveries](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/applicationRecoveries/index.md)\
+[applicationResourceCount](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/applicationResourceCount/index.md)\
+[applicationResources](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/applicationResources/index.md)\
 [archivalEntities](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/archivalEntities/index.md)\
 [archivalLocationForecastRefreshStatus](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/archivalLocationForecastRefreshStatus/index.md)\
 [archivalLocationsForFailoverGroup](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/archivalLocationsForFailoverGroup/index.md)\
@@ -387,7 +392,10 @@
 [cloudDirectSnapshotExclusions](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/cloudDirectSnapshotExclusions/index.md)\
 [cloudDirectSnapshots](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/cloudDirectSnapshots/index.md)\
 [cloudDirectSystems](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/cloudDirectSystems/index.md)\
+[cloudNativeApplication](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/cloudNativeApplication/index.md)\
 [cloudNativeApplicationSnapshots](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/cloudNativeApplicationSnapshots/index.md)\
+[cloudNativeApplicationWorkloadsByConfigSnapshot](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/cloudNativeApplicationWorkloadsByConfigSnapshot/index.md)\
+[cloudNativeApplications](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/cloudNativeApplications/index.md)\
 [cloudNativeCheckArchivedSnapshotsLocked](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/cloudNativeCheckArchivedSnapshotsLocked/index.md)\
 [cloudNativeCheckRequiredPermissionsForFeature](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/cloudNativeCheckRequiredPermissionsForFeature/index.md)\
 [cloudNativeCustomerSettings](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/cloudNativeCustomerSettings/index.md)\
@@ -432,6 +440,9 @@
 [clusterWithUpgradesInfo](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/clusterWithUpgradesInfo/index.md)\
 [compareAzureAdObjectAttributes](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/compareAzureAdObjectAttributes/index.md)\
 [computeClusterStatus](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/computeClusterStatus/index.md)\
+[configResourceCount](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/configResourceCount/index.md)\
+[configResourcePropertyValues](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/configResourcePropertyValues/index.md)\
+[configResources](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/configResources/index.md)\
 [configuredGroupMembers](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/configuredGroupMembers/index.md)\
 [coordinatorLabels](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/coordinatorLabels/index.md)\
 [coordinatorLabelsValidation](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/coordinatorLabelsValidation/index.md)\
@@ -477,6 +488,7 @@
 [devOpsBackupJobInformation](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/devOpsBackupJobInformation/index.md)\
 [devOpsCloudAccountListCurrentPermissions](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/devOpsCloudAccountListCurrentPermissions/index.md)\
 [devOpsCloudAccountListLatestPermissions](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/devOpsCloudAccountListLatestPermissions/index.md)\
+[devOpsObjectStatsSummary](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/devOpsObjectStatsSummary/index.md)\
 [devOpsProtectedObjectCountSummary](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/devOpsProtectedObjectCountSummary/index.md)\
 [diffFmd](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/diffFmd/index.md)\
 [discoverNodes](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/discoverNodes/index.md)\
@@ -484,7 +496,10 @@
 [distributionListDigest](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/distributionListDigest/index.md)\
 [documentTypesDetails](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/documentTypesDetails/index.md)\
 [doesAzureNativeResourceGroupExist](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/doesAzureNativeResourceGroupExist/index.md)\
+[downloadAnchorResources](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/downloadAnchorResources/index.md)\
+[downloadApplicationResources](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/downloadApplicationResources/index.md)\
 [downloadCdmUpgradesPdf](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/downloadCdmUpgradesPdf/index.md)\
+[downloadConfigRecoveryReport](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/downloadConfigRecoveryReport/index.md)\
 [downloadPackageStatus](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/downloadPackageStatus/index.md)\
 [downloadSlaWithReplicationCsv](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/downloadSlaWithReplicationCsv/index.md)\
 [downloadTurboThreatHuntCsv](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/downloadTurboThreatHuntCsv/index.md)\
@@ -495,6 +510,7 @@
 [edgeWindowsToolLink](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/edgeWindowsToolLink/index.md)\
 [eligibleAccountsForMigrationToAwsOrg](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/eligibleAccountsForMigrationToAwsOrg/index.md)\
 [entityInsights](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/entityInsights/index.md)\
+[eventSeriesOfWorkloadGroup](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/eventSeriesOfWorkloadGroup/index.md)\
 [exchangeDag](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/exchangeDag/index.md)\
 [exchangeDags](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/exchangeDags/index.md)\
 [exchangeDatabase](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/exchangeDatabase/index.md)\
@@ -682,6 +698,7 @@
 [isUpgradeAvailable](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/isUpgradeAvailable/index.md)\
 [isUpgradeRecommended](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/isUpgradeRecommended/index.md)\
 [isVMwareManagementEnabled](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/isVMwareManagementEnabled/index.md)\
+[isValidCloudNativeApplicationName](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/isValidCloudNativeApplicationName/index.md)\
 [isValidTprPolicyName](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/isValidTprPolicyName/index.md)\
 [isZrsAvailableForLocation](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/isZrsAvailableForLocation/index.md)\
 [issue](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/issue/index.md)\

@@ -7,7 +7,7 @@ EntraIDIPRange represents an IP range. Ref: https://learn.microsoft.com/en-us/gr
 | Field       | Type                                                                                                                                | Description                            |
 | ----------- | ----------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------- |
 | cidrAddress | String!                                                                                                                             | The IP address range in CIDR notation. |
-| type        | [EntraIDIPRangeType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/EntraIDIPRangeType/index.md)! |                                        |
+| type        | [EntraIDIPRangeType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/EntraIDIPRangeType/index.md)! | The type of IP range (IPv4 or IPv6).   |
 
 ## Used By
 

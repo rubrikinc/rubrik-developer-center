@@ -11,7 +11,7 @@ SaaS workload table field.
 | isParent       | Boolean!   | Indicates whether this field acts as a parent for other records.                                                                               |
 | label          | String!    | Display name of the field.                                                                                                                     |
 | name           | String!    | Name of the SaaS workload field.                                                                                                               |
-| type           | String!    |                                                                                                                                                |
+| type           | String!    | Type of the SaaS workload field.                                                                                                               |
 
 ## Used By
 

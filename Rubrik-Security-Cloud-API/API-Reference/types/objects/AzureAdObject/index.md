@@ -12,7 +12,7 @@ Represents a search result for a generic Entra ID object.
 | reverseRelationships | \[[AzureAdReverseRelationship](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AzureAdReverseRelationship/index.md)!\]! | Reverse relationships of the Entra ID object.            |
 | snapshotId           | String!                                                                                                                                                    | ID of the snapshot containing Entra ID Object.           |
 | snapshotRange        | [AzureAdSnapshotRange](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AzureAdSnapshotRange/index.md)!                  | Snapshot range containing the Entra ID object.           |
-| type                 | [AzureAdObjectType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/AzureAdObjectType/index.md)!                          |                                                          |
+| type                 | [AzureAdObjectType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/AzureAdObjectType/index.md)!                          | Entra ID object type.                                    |
 
 ## Used By
 

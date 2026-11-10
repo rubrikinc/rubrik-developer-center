@@ -36,6 +36,7 @@ Target mapping information.
 **Referenced by**
 
 - [ArchivalEntityTargetMapping.targetMapping](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/ArchivalEntityTargetMapping/index.md)
+- [ArchivalSpec.archivalGroup](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/ArchivalSpec/index.md)
 - [ArchivalSpec.storageSetting](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/ArchivalSpec/index.md)
 - [BackupLocationSpec.archivalGroup](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/BackupLocationSpec/index.md)
 - [CreateCloudNativeAwsStorageSettingReply.targetMapping](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/CreateCloudNativeAwsStorageSettingReply/index.md)

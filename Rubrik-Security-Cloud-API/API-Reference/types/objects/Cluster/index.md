@@ -69,7 +69,7 @@ A Rubrik CDM Cluster.
 | systemStatusAffectedNodes            | \[[ClusterNode](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/ClusterNode/index.md)!\]                                                   | List of affected nodes in the cluster.                                                                                                   |
 | systemStatusMessage                  | String                                                                                                                                                                        | Human readable message explaining the systemStatus.                                                                                      |
 | timezone                             | String                                                                                                                                                                        | The cluster's timezone.                                                                                                                  |
-| type                                 | [ClusterTypeEnum](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/ClusterTypeEnum/index.md)!                                                 |                                                                                                                                          |
+| type                                 | [ClusterTypeEnum](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/ClusterTypeEnum/index.md)!                                                 | The cluster type.                                                                                                                        |
 | version                              | String                                                                                                                                                                        | The software version.                                                                                                                    |
 | webServerCertificate                 | [WebServerCertificate](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/WebServerCertificate/index.md)                                      | Web server certificate of the cluster.                                                                                                   |
 
@@ -137,6 +137,8 @@ A Rubrik CDM Cluster.
 - [AgentDeploymentSettingsInfo.cluster](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AgentDeploymentSettingsInfo/index.md)
 - [AnomalyResult.cluster](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AnomalyResult/index.md)
 - [BackupThrottleSetting.cluster](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/BackupThrottleSetting/index.md)
+- Blueprint.cluster
+- [BlueprintCdmLocation.cluster](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/BlueprintCdmLocation/index.md)
 - [CdmGuestCredential.cluster](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/CdmGuestCredential/index.md)
 - CdmHierarchyObject.cluster
 - CdmHierarchySnappableNew.cluster
@@ -152,6 +154,4 @@ A Rubrik CDM Cluster.
 - [CdmSnapshot.cluster](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/CdmSnapshot/index.md)
 - [CdmTarget.cluster](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/CdmTarget/index.md)
 - CloudDirectHierarchyObject.cluster
-- CloudDirectHierarchyWorkload.cluster
-- [CloudDirectNasBucket.cluster](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/CloudDirectNasBucket/index.md)
-- *…and 352 more*
+- *…and 355 more*

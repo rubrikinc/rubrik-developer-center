@@ -4,10 +4,11 @@ The room of a report, which in turn decides the schema configuration and the dat
 
 ## Values
 
-| Value                 | Description                                            |
-| --------------------- | ------------------------------------------------------ |
-| DATA_THREAT_ANALYTICS | Data Threat Analytics reports.                         |
-| REPORT_ROOM_DSPM      | Data Security Posture Management reports.              |
-| REPORT_ROOM_IR        | Identity Resiliency reports.                           |
-| REPORT_ROOM_NONE      | Reports that are not limited to an application in RSC. |
-| REPORT_ROOM_SAAS      | Reports for SaaS workloads.                            |
+| Value                     | Description                                            |
+| ------------------------- | ------------------------------------------------------ |
+| DATA_THREAT_ANALYTICS     | Data Threat Analytics reports.                         |
+| REPORT_ROOM_AI_RESILIENCE | AI Resilience (Agent Protect) reports.                 |
+| REPORT_ROOM_DSPM          | Data Security Posture Management reports.              |
+| REPORT_ROOM_IR            | Identity Resiliency reports.                           |
+| REPORT_ROOM_NONE          | Reports that are not limited to an application in RSC. |
+| REPORT_ROOM_SAAS          | Reports for SaaS workloads.                            |
