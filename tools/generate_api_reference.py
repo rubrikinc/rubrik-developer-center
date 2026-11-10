@@ -177,6 +177,40 @@ def extract_comments(schema_text: str) -> dict[str, str]:
     return comments
 
 
+def merge_schema_descriptions(schema, comments: dict[str, str]) -> int:
+    """Overlay GraphQL string descriptions onto the # comment map.
+
+    Snapshots before 20261102 carry descriptions as # comments, which the
+    parser drops. From 20261102 on they are real "..." / \"\"\"...\"\"\"
+    descriptions, which build_schema keeps on each element. Real descriptions
+    win; keys are the same shape extract_comments produces.
+    """
+    added = 0
+
+    def put(key: str, desc) -> None:
+        nonlocal added
+        if desc and desc.strip():
+            comments[key] = " ".join(desc.split())
+            added += 1
+
+    for tname, t in schema.type_map.items():
+        if tname.startswith("__"):
+            continue
+        put(tname, getattr(t, "description", None))
+        if isinstance(t, GraphQLEnumType):
+            for vname, v in t.values.items():
+                put(f"{tname}.{vname}", v.description)
+            continue
+        fields = getattr(t, "fields", None)
+        if not fields:
+            continue
+        for fname, f in fields.items():
+            put(f"{tname}.{fname}", f.description)
+            for aname, a in (getattr(f, "args", None) or {}).items():
+                put(f"{tname}.{fname}.{aname}", a.description)
+    return added
+
+
 def _join_comment(parts: list[str]) -> str:
     """Collapse multi-line # comment blocks into a single string."""
     # Preserve paragraph breaks (empty comment lines become spaces)
@@ -1131,6 +1165,8 @@ def main() -> int:
     print("💬 Extracting inline comments...")
     comments = extract_comments(schema_text)
     print(f"   {len(comments)} comment entries found")
+    n_desc = merge_schema_descriptions(schema, comments)
+    print(f"   {n_desc} schema descriptions merged ({len(comments)} total)")
 
     print("🔗 Building reverse type index...")
     reverse_index = build_reverse_index(schema)
