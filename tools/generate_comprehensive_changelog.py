@@ -212,13 +212,32 @@ def parse_diff_output(diff_output):
     dangerous_changes = []
     safe_changes = []
 
-    for line in diff_output.split('\n'):
-        line = line.strip()
-        if not line:
+    # graphql-inspector wraps a message across lines when it quotes multi-line
+    # description text. Rejoin continuation lines onto the message they belong
+    # to, or they are dropped and the message is truncated.
+    lines = []
+    for raw in diff_output.split('\n'):
+        raw = re.sub(r'\x1b\[[0-9;]*m', '', raw).strip()
+        if not raw:
             continue
+        if re.match(r'^\[success\]', raw):
+            continue  # "[success] No breaking changes detected" summary line
+        if re.match(r'^\[(log|warn|error|info)\]', raw) or not lines:
+            lines.append(raw)
+        else:
+            lines[-1] += ' ' + raw
 
-        # Remove ANSI color codes first
-        line = re.sub(r'\x1b\[[0-9;]*m', '', line)
+    for line in lines:
+        # Description-only changes. Through 20261026 the schema carried
+        # descriptions as # comments, which graphql-inspector cannot see; from
+        # 20261102 they are real GraphQL descriptions and every one shows up as
+        # a change. They never affect a caller, and their text (words like
+        # "deleted") trips the breaking-change keywords below, so leave them out.
+        msg = re.sub(r'^\[(log|warn|error)\]\s*[✖✔‼⚠]?\s*', '', line)
+        if (' has description ' in msg or
+                re.match(r'^Description .* was (added to|removed from) ', msg) or
+                re.search(r'\bdescription (for .* )?changed from ', msg, re.I)):
+            continue
 
         # Skip header/summary lines
         # graphql-inspector's own summary lines, which are not changes. Match
