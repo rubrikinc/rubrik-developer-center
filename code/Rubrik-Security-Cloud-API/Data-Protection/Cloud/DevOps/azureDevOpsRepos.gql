@@ -1,0 +1,26 @@
+query {
+  # queryType: DESCENDANTS with an org id returns every repo across every
+  # project in that org in one call, skipping the intermediate project walk.
+  azureDevOpsRepositories(
+    queryType: DESCENDANTS
+    ancestorId: "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee" # organization or project id
+    filter: []
+  ) {
+    count
+    nodes {
+      id
+      name
+      projectId
+      projectName
+      orgId
+      orgName
+      size
+      onDemandSnapshotCount
+      effectiveSlaDomain { name id }
+    }
+    pageInfo {
+      hasNextPage
+      endCursor
+    }
+  }
+}

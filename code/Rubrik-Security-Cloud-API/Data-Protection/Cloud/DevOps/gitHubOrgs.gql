@@ -1,0 +1,19 @@
+query {
+  gitHubOrganizations(
+    queryType: CHILDREN
+    ancestorId: "GITHUB_ROOT" # fixed root sentinel -- lists all onboarded orgs
+    filter: []
+  ) {
+    count
+    nodes {
+      id
+      name
+      connectionStatus
+      effectiveSlaDomain { name id }
+    }
+    pageInfo {
+      hasNextPage
+      endCursor
+    }
+  }
+}

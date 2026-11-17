@@ -1,0 +1,21 @@
+mutation {
+  recoverDevOpsRepository(
+    input: {
+      repositoryId: "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee" # source: a GitHub repository snapshot
+      snapshotId: "11111111-2222-3333-4444-555555555555"
+      repoType: GITHUB
+      orgId: "22222222-3333-4444-5555-666666666666" # destination: an Azure DevOps organization
+      repositoryName: "recovered-repo"
+      includePipelines: false # true is rejected for cross-platform recovery
+      devopsTypeRestoreConfig: {
+        azureDevopsRecoveryConfig: {
+          # Always required when the destination is Azure DevOps.
+          projectId: "33333333-4444-5555-6666-777777777777"
+        }
+      }
+    }
+  ) {
+    taskchainId
+    errorMessage
+  }
+}
