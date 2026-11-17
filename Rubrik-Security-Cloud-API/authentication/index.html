@@ -2362,7 +2362,7 @@
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>curl<span class="w"> </span>--location<span class="w"> </span><span class="s2">"https://</span><span class="nv">$RSC_FQDN</span><span class="s2">/api/graphql"</span><span class="w"> </span><span class="se">\</span>
 </span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>--header<span class="w"> </span><span class="s2">"Content-Type: application/json"</span><span class="w"> </span><span class="se">\</span>
 </span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>--header<span class="w"> </span><span class="s2">"Authorization: Bearer </span><span class="nv">$RSC_TOKEN</span><span class="s2">"</span><span class="w"> </span><span class="se">\</span>
-</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>--data<span class="w"> </span><span class="s1">'{"query":"query slaDomains {nodes {name id}}}","variables":{}}'</span>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>--data<span class="w"> </span><span class="s1">'{"query":"query { slaDomains { nodes { name id } } }","variables":{}}'</span>
 </span></code></pre></div>
 </div>
 </div>

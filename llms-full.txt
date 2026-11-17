@@ -239,7 +239,7 @@ The access token is used as a `Bearer` token in the `Authorization` header of al
 curl --location "https://$RSC_FQDN/api/graphql" \
 --header "Content-Type: application/json" \
 --header "Authorization: Bearer $RSC_TOKEN" \
---data '{"query":"query slaDomains {nodes {name id}}}","variables":{}}'
+--data '{"query":"query { slaDomains { nodes { name id } } }","variables":{}}'
 ```
 
 #### Deleting a session
