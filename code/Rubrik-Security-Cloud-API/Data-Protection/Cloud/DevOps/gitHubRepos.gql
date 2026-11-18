@@ -1,0 +1,22 @@
+query {
+  gitHubRepositories(
+    queryType: CHILDREN
+    ancestorId: "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee" # organization id
+    filter: []
+  ) {
+    count
+    nodes {
+      id
+      name
+      orgId
+      orgName
+      size
+      onDemandSnapshotCount
+      effectiveSlaDomain { name id }
+    }
+    pageInfo {
+      hasNextPage
+      endCursor
+    }
+  }
+}

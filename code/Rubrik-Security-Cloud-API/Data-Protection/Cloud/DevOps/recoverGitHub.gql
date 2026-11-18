@@ -1,0 +1,15 @@
+mutation {
+  recoverDevOpsRepository(
+    input: {
+      repositoryId: "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee"
+      snapshotId: "11111111-2222-3333-4444-555555555555"
+      repoType: GITHUB
+      orgId: "99999999-8888-7777-6666-555555555555" # destination GitHub organization
+      repositoryName: "recovered-repo"
+      includePipelines: false # required, but ignored for GitHub destinations
+    }
+  ) {
+    taskchainId
+    errorMessage
+  }
+}

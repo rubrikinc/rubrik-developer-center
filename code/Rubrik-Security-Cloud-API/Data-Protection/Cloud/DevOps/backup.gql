@@ -1,0 +1,13 @@
+mutation {
+  backupDevOpsRepository(
+    input: {
+      repositoryId: "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee"
+      # Always pass retentionSlaId -- an omitted value is NOT replaced with the
+      # repository's assigned SLA. The snapshot is left ungoverned instead.
+      retentionSlaId: "11111111-2222-3333-4444-555555555555"
+    }
+  ) {
+    taskchainId
+    errorMessage
+  }
+}

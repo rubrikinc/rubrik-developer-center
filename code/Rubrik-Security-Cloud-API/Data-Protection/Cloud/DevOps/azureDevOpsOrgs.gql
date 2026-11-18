@@ -1,0 +1,21 @@
+query {
+  azureDevOpsOrganizations(
+    queryType: CHILDREN
+    ancestorId: "AZURE_DEVOPS_ROOT" # fixed root sentinel -- lists all onboarded orgs
+    filter: []
+  ) {
+    count
+    nodes {
+      id
+      name
+      connectionStatus
+      projectCount
+      repoCount
+      effectiveSlaDomain { name id }
+    }
+    pageInfo {
+      hasNextPage
+      endCursor
+    }
+  }
+}
