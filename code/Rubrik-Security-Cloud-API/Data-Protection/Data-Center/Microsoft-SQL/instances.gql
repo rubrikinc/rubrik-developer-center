@@ -1,33 +1,36 @@
 query {
-  mssqlTopLevelDescendants(filter: [
-    {field: NAME_EXACT_MATCH, texts: "example"}
-    {field: IS_RELIC, texts: "false"}
-    {field: IS_ARCHIVED, texts: "false"}
-    {field: IS_REPLICATED, texts: "false"}
-    ]) {
-      nodes {
-        id
-        name
-        numWorkloadDescendants
-        ... on PhysicalHost {
-          id
-          name
+  mssqlTopLevelDescendants(
+    typeFilter: [MSSQL_HOST]
+    filter: [
+      {field: NAME_EXACT_MATCH, texts: "example"}
+      {field: IS_RELIC, texts: "false"}
+      {field: IS_ARCHIVED, texts: "false"}
+      {field: IS_REPLICATED, texts: "false"}
+    ]
+  ) {
+    nodes {
+      id
+      name
+      numWorkloadDescendants
+      ... on MssqlHost {
+        physicalHostMetadata {
           cbtStatus
-          physicalChildConnection {
-            nodes {
-              ... on MssqlInstance {
-                id
+        }
+        physicalChildConnection {
+          nodes {
+            ... on MssqlInstance {
+              id
+              name
+              slaAssignment
+              effectiveSlaDomain {
                 name
-                slaAssignment
-                effectiveSlaDomain {
-                  name
-                  id
-                  version
-                }
+                id
+                version
               }
             }
           }
         }
       }
+    }
   }
 }
