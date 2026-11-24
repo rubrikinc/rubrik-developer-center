@@ -8,7 +8,7 @@ Rubrik provides API-driven backup and recovery for Microsoft SQL Server database
 
 The SQL Server object hierarchy in RSC is:
 
-**Physical Host** → **SQL Server Instance** → **Availability Group** → **Database**
+**SQL Server Host** → **SQL Server Instance** → **Availability Group** → **Database**
 
 SLA policies assigned at the host or instance level are inherited by all objects below them. Operations like backup and restore are performed at the database level.
 
