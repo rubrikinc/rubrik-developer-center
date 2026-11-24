@@ -4,7 +4,7 @@ Rubrik provides API-driven backup and recovery for Microsoft SQL Server database
 
 The SQL Server object hierarchy in RSC is:
 
-**Physical Host** → **SQL Server Instance** → **Availability Group** → **Database**
+**SQL Server Host** → **SQL Server Instance** → **Availability Group** → **Database**
 
 SLA policies assigned at the host or instance level are inherited by all objects below them. Operations like backup and restore are performed at the database level.
 
@@ -24,36 +24,39 @@ After registering a host, query your SQL Server instances to confirm discovery c
 
 ```graphql
 query {
-  mssqlTopLevelDescendants(filter: [
-    {field: NAME_EXACT_MATCH, texts: "example"}
-    {field: IS_RELIC, texts: "false"}
-    {field: IS_ARCHIVED, texts: "false"}
-    {field: IS_REPLICATED, texts: "false"}
-    ]) {
-      nodes {
-        id
-        name
-        numWorkloadDescendants
-        ... on PhysicalHost {
-          id
-          name
+  mssqlTopLevelDescendants(
+    typeFilter: [MSSQL_HOST]
+    filter: [
+      {field: NAME_EXACT_MATCH, texts: "example"}
+      {field: IS_RELIC, texts: "false"}
+      {field: IS_ARCHIVED, texts: "false"}
+      {field: IS_REPLICATED, texts: "false"}
+    ]
+  ) {
+    nodes {
+      id
+      name
+      numWorkloadDescendants
+      ... on MssqlHost {
+        physicalHostMetadata {
           cbtStatus
-          physicalChildConnection {
-            nodes {
-              ... on MssqlInstance {
-                id
+        }
+        physicalChildConnection {
+          nodes {
+            ... on MssqlInstance {
+              id
+              name
+              slaAssignment
+              effectiveSlaDomain {
                 name
-                slaAssignment
-                effectiveSlaDomain {
-                  name
-                  id
-                  version
-                }
+                id
+                version
               }
             }
           }
         }
       }
+    }
   }
 }
 ```
@@ -66,7 +69,7 @@ Get-RscMssqlInstance -Hostname "mssql.example.com" -Relic:$false -Replica:$false
 #!/bin/bash
 
 # RSC_TOKEN="YOUR_RSC_ACCESS_TOKEN"
-query="query { mssqlTopLevelDescendants(filter: [ {field: NAME_EXACT_MATCH, texts: \\\"example\\\"} {field: IS_RELIC, texts: \\\"false\\\"} {field: IS_ARCHIVED, texts: \\\"false\\\"} {field: IS_REPLICATED, texts: \\\"false\\\"} ]) { nodes { id name numWorkloadDescendants ... on PhysicalHost { id name cbtStatus physicalChildConnection { nodes { ... on MssqlInstance { id name slaAssignment effectiveSlaDomain { name id version } } } } } } } }"
+query="query { mssqlTopLevelDescendants( typeFilter: [MSSQL_HOST] filter: [ {field: NAME_EXACT_MATCH, texts: \\\"example\\\"} {field: IS_RELIC, texts: \\\"false\\\"} {field: IS_ARCHIVED, texts: \\\"false\\\"} {field: IS_REPLICATED, texts: \\\"false\\\"} ] ) { nodes { id name numWorkloadDescendants ... on MssqlHost { physicalHostMetadata { cbtStatus } physicalChildConnection { nodes { ... on MssqlInstance { id name slaAssignment effectiveSlaDomain { name id version } } } } } } } }"
 
 # Execute the GraphQL query with curl
 curl -X POST \
