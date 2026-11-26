@@ -40,7 +40,7 @@ Each feature typically has three parallel sample files:
 
 ### Schemas
 
-GraphQL schema snapshots are stored in `docs/Rubrik-Security-Cloud-API/schemas/` with filenames in `YYYYMMDD.graphql` format (weekly cadence). The `.graphqlconfig` file points to the latest schema for VSCode GraphQL extension introspection.
+GraphQL schema snapshots are stored in `docs/Rubrik-Security-Cloud-API/schemas/` with filenames in `YYYYMMDD.graphql` format (weekly cadence).
 
 ### Tools (Private / Gitignored)
 
