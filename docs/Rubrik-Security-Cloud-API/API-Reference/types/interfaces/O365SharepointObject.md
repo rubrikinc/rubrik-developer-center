@@ -14,6 +14,6 @@ An interface for Microsoft SharePoint objects (sites, drives, lists).
 
 ## Implemented By
 
-- [O365SharepointDrive](../objects/O365SharePointDrive.md)
+- [O365SharepointDrive](../objects/O365SharepointDrive-2.md)
 - [O365SharepointList](../objects/O365SharepointList.md)
 - [O365Site](../objects/O365Site.md)

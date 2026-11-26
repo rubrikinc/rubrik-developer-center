@@ -45,7 +45,7 @@ Descendants of a Microsoft 365 organization.
 - [O365Group](../objects/O365Group.md)
 - [O365Mailbox](../objects/O365Mailbox.md)
 - [O365Onedrive](../objects/O365Onedrive.md)
-- [O365SharepointDrive](../objects/O365SharePointDrive.md)
+- [O365SharepointDrive](../objects/O365SharepointDrive-2.md)
 - [O365SharepointList](../objects/O365SharepointList.md)
 - [O365Site](../objects/O365Site.md)
 - [O365Teams](../objects/O365Teams.md)

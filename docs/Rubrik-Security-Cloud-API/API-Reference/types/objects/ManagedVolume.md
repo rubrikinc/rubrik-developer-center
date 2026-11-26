@@ -45,7 +45,7 @@ Managed Volume information.
 | newestIndexedSnapshot | [CdmSnapshot](CdmSnapshot.md) | The most recent indexed snapshot of this workload. |
 | newestReplicatedSnapshot | [CdmSnapshot](CdmSnapshot.md) | The newest snapshot replicated to a Rubrik cluster. |
 | newestSnapshot | [CdmSnapshot](CdmSnapshot.md) | The most recent snapshot of this workload. |
-| nfsSettings | [ManagedVolumeNfsSettings](ManagedVolumeNFSSettings.md) | NFS settings and configurations for the Managed Volume. |
+| nfsSettings | [ManagedVolumeNfsSettings](ManagedVolumeNfsSettings-2.md) | NFS settings and configurations for the Managed Volume. |
 | numChannels | Int! | Number of channels in the Managed Volume. |
 | numWorkloadDescendants | Int! | Number of descendant workloads of this object. |
 | objectBackupWindow | [ObjectBackupWindowStatus](ObjectBackupWindowStatus.md) | Object-level backup window status of the hierarchy object. |

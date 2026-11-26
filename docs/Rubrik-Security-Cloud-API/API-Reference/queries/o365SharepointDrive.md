@@ -10,7 +10,7 @@ Details for the SharePoint drive corresponding to the snappable ID.
 
 ## Returns
 
-[O365SharepointDrive](../types/objects/O365SharePointDrive.md)!
+[O365SharepointDrive](../types/objects/O365SharepointDrive-2.md)!
 
 ## Sample
 

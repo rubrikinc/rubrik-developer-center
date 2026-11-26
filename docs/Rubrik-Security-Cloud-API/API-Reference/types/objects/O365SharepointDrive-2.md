@@ -1,0 +1,104 @@
+# O365SharepointDrive
+
+O365 SharePoint Drive.
+
+**Implements:** [HierarchyObject](../interfaces/HierarchyObject.md), [HierarchySnappable](../interfaces/HierarchySnappable.md), [PolarisHierarchyObject](../interfaces/PolarisHierarchyObject.md), [PolarisHierarchySnappable](../interfaces/PolarisHierarchySnappable.md), [O365OrgDescendant](../interfaces/O365OrgDescendant.md), [O365SharepointObject](../interfaces/O365SharepointObject.md)
+
+## Fields
+
+| Field | Type | Description |
+|-------|------|-------------|
+| allOrgs | [[Org](Org.md)!]! | Organizations to which this hierarchy object belongs. |
+| allTags | [[AssignedRscTag](AssignedRscTag.md)!]! | RSC tags to which this hierarchy object is assigned. |
+| authorizedOperations | [[Operation](../enums/Operation.md)!]! | The authorized operations on the object. |
+| configuredSlaDomain | [SlaDomain](../interfaces/SlaDomain.md)! | SLA Domain configured for the hierarchy object. |
+| effectiveRetentionSlaDomain | [SlaDomain](../interfaces/SlaDomain.md) | Effective retention of the SLA Domain of the hierarchy object. |
+| effectiveSlaDomain | [SlaDomain](../interfaces/SlaDomain.md)! | Effective SLA Domain of the hierarchy object. |
+| effectiveSlaSourceObject | [PathNode](PathNode.md) | Path node of the effective SLA Domain source. |
+| futureLegalHoldInfo | [FutureLegalHoldInfo](FutureLegalHoldInfo.md) | Future legal hold rule configured for this object, if any. |
+| id | [UUID](../scalars/UUID.md)! | ID of the hierarchy object. |
+| isRelic | Boolean! | Specifies whether the SharePoint drive is a relic. |
+| legallyHeldSnapshotCount | Int | Number of snapshots on legal hold for this object. |
+| listNaturalId | String! | The list natural ID of the SharePoint drive. |
+| logicalPath | [[PathNode](PathNode.md)!]! | Sequential list of the logical ancestors of this object. |
+| name | String! | Name of the hierarchy object. |
+| naturalId | String! | The natural ID of the SharePoint drive. |
+| newestIndexedSnapshot | [PolarisSnapshot](PolarisSnapshot.md) | The latest snapshot that is indexed and unexpired, and therefore restorable. |
+| newestSnapshot | [PolarisSnapshot](PolarisSnapshot.md) | The most recent snapshot of this workload. |
+| numWorkloadDescendants | Int! | Number of descendant workloads of this object. |
+| objectBackupWindow | [ObjectBackupWindowStatus](ObjectBackupWindowStatus.md) | Object-level backup window status of the hierarchy object. |
+| objectId | String! | The SharePoint object ID. |
+| objectPauseStatus | [ObjectPauseStatus](ObjectPauseStatus.md) | Pause status of the hierarchy object. |
+| objectType | [HierarchyObjectTypeEnum](../enums/HierarchyObjectTypeEnum.md)! | Type of this object. |
+| oldestSnapshot | [PolarisSnapshot](PolarisSnapshot.md) | The oldest snapshot of this workload. |
+| onDemandSnapshotCount | Int! | The number of on-demand snapshots. |
+| parentId | String! | The parent ID of the object. |
+| physicalPath | [[PathNode](PathNode.md)!]! | Sequential list of the physical ancestors of this object. |
+| preferredDataLocation | String! | The preferred data location of the SharePoint workload. |
+| rscNativeObjectPendingSla | [CompactSlaDomain](CompactSlaDomain.md) | SLA Domain assignment which is pending on the Rubrik Security Cloud native objects. |
+| rscPendingObjectPauseAssignment | [PendingObjectPauseAssignmentStatus](../enums/PendingObjectPauseAssignmentStatus.md) | Pending pause or unpause assignment for RSC-native objects. |
+| securityMetadata | [SecurityMetadata](SecurityMetadata.md) | Security posture metadata. |
+| siteChildId | String! | The child ID of the object used for full SharePoint. |
+| slaAssignment | [SlaAssignmentTypeEnum](../enums/SlaAssignmentTypeEnum.md)! | SLA Domain assignment type for this object. |
+| slaPauseStatus | Boolean! | Pause status of the effective SLA Domain of the hierarchy object. |
+| snapshotConnection | [PolarisSnapshotConnection](PolarisSnapshotConnection.md) | The list of snapshots taken for this workload. |
+| snapshotDistribution | [SnapshotDistribution](SnapshotDistribution.md)! | Distribution of the snapshots of the hierarchy object. |
+| snapshotGroupByConnection | [PolarisSnapshotGroupByConnection](PolarisSnapshotGroupByConnection.md) | Group-by connection for the snapshots of this workload. |
+| snapshotGroupByNewConnection | [PolarisSnapshotGroupByNewConnection](PolarisSnapshotGroupByNewConnection.md) | Group-by connection for the snapshots of this workload. |
+| title | String! | The title or name of the SharePoint object. |
+| totalStorageInBytes | [Long](../scalars/Long.md)! | Total storage allocated to the SharePoint drive in bytes. |
+| url | String! | The URL of the SharePoint drive. |
+| usedStorageInBytes | [Long](../scalars/Long.md)! | Used storage of the SharePoint drive in bytes. |
+| workloadSnapshotConnection | [GenericSnapshotConnection](GenericSnapshotConnection.md) | The list of snapshots taken for this workload. |
+
+## Field Arguments
+
+| Field | Argument | Type | Description |
+|-------|----------|------|-------------|
+| newestSnapshot | backupLocationId | String | Filter snapshots by backup location id. |
+| numWorkloadDescendants | first | Int | Returns the first n elements from the list. |
+| numWorkloadDescendants | after | String | Returns the elements in the list that occur after the specified cursor. |
+| numWorkloadDescendants | last | Int | Returns the last n elements from the list. |
+| numWorkloadDescendants | before | String | Returns the elements in the list that occur before the specified cursor. |
+| numWorkloadDescendants | objectTypes | [[ManagedObjectType](../enums/ManagedObjectType.md)!] | Types of objects to limit the results. If absent, all object types are returned. |
+| oldestSnapshot | backupLocationId | String | Filter snapshots by backup location id. |
+| onDemandSnapshotCount | backupLocationId | String | Filter snapshots by backup location id. |
+| snapshotConnection | first | Int | Returns the first n elements from the list. |
+| snapshotConnection | after | String | An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results. |
+| snapshotConnection | last | Int | Returns the last n elements from the list. |
+| snapshotConnection | before | String | An opaque cursor returned from a previous query's startCursor field. Pass this value verbatim to retrieve the previous page of results. |
+| snapshotConnection | filter | [PolarisSnapshotFilterInput](../inputs/PolarisSnapshotFilterInput.md) | Filter the Rubrik Security Cloud snapshot connection. |
+| snapshotConnection | sortBy | [PolarisSnapshotSortByEnum](../enums/PolarisSnapshotSortByEnum.md) | Sort Rubrik Security Cloud snapshots by field. |
+| snapshotConnection | sortOrder | [SortOrder](../enums/SortOrder.md) | Sorts the order of results. |
+| snapshotGroupByConnection | first | Int | Returns the first n elements from the list. |
+| snapshotGroupByConnection | after | String | Returns the elements in the list that occur after the specified cursor. |
+| snapshotGroupByConnection | last | Int | Returns the last n elements from the list. |
+| snapshotGroupByConnection | before | String | Returns the elements in the list that occur before the specified cursor. |
+| snapshotGroupByConnection | timezoneOffset | Float | Offset based on the customer timezone. |
+| snapshotGroupByConnection | filter | [PolarisSnapshotFilterInput](../inputs/PolarisSnapshotFilterInput.md) | Filter the Rubrik Security Cloud snapshot connection. |
+| snapshotGroupByConnection | groupBy *(required)* | [PolarisSnapshotGroupByEnum](../enums/PolarisSnapshotGroupByEnum.md)! | Group Rubrik Security Cloud snapshots by field. |
+| snapshotGroupByConnection | timezone | [Timezone](../scalars/Timezone.md) | Time zone identifier string. For example, 'America/Los_Angeles' is used for the U.S. Pacific Time zone. |
+| snapshotGroupByNewConnection | first | Int | Returns the first n elements from the list. |
+| snapshotGroupByNewConnection | after | String | Returns the elements in the list that occur after the specified cursor. |
+| snapshotGroupByNewConnection | last | Int | Returns the last n elements from the list. |
+| snapshotGroupByNewConnection | before | String | Returns the elements in the list that occur before the specified cursor. |
+| snapshotGroupByNewConnection | timezoneOffset | Float | Offset based on the customer timezone. |
+| snapshotGroupByNewConnection | snapshotFilter *(required)* | [[PolarisSnapshotFilterNewInput](../inputs/PolarisSnapshotFilterNewInput.md)!]! | Filter the Rubrik Security Cloud snapshot connection. |
+| snapshotGroupByNewConnection | snapshotGroupBy *(required)* | [SnapshotGroupByTime](../enums/SnapshotGroupByTime.md)! | Group Rubrik Security Cloud snapshots by field. |
+| workloadSnapshotConnection | first | Int | Returns the first n elements from the list. |
+| workloadSnapshotConnection | after | String | An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results. |
+| workloadSnapshotConnection | last | Int | Returns the last n elements from the list. |
+| workloadSnapshotConnection | before | String | An opaque cursor returned from a previous query's startCursor field. Pass this value verbatim to retrieve the previous page of results. |
+| workloadSnapshotConnection | workloadId *(required)* | String! | The FID of the workload. |
+| workloadSnapshotConnection | snapshotFilter | [[SnapshotQueryFilterInput](../inputs/SnapshotQueryFilterInput.md)!] | Filters for snapshot connection. |
+| workloadSnapshotConnection | sortOrder | [SortOrder](../enums/SortOrder.md) | Sorts the order of results. |
+| workloadSnapshotConnection | sortBy | [SnapshotQuerySortByField](../enums/SnapshotQuerySortByField.md) | Sorts snapshots by field. |
+| workloadSnapshotConnection | timeRange | [TimeRangeInput](../inputs/TimeRangeInput.md) | Time range input. |
+| workloadSnapshotConnection | ignoreActiveWorkloadCheck | Boolean | Specifies whether to ignore the active workload check. |
+
+## Used By
+
+**Queries**
+
+- [query: o365SharepointDrive](../../queries/o365SharepointDrive.md)
+- [query: o365SharepointDrives](../../queries/o365SharepointDrives.md) *(via connection)*
