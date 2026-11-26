@@ -6,8 +6,8 @@ Storage usage of an archival location.
 
 | Argument | Type | Description |
 |----------|------|-------------|
-| input *(required)* | [UUID](../types/scalars/UUID.md)! | Corresponds to ID of the target in Rubrik. |
-| lookBackWindow | [LookBackWindow](../types/enums/LookBackWindow.md) | Lookback window defines how far back in time to look for a specific archival-related metric. |
+| input *(required)* | [UUID](../types/scalars/UUID.md)! | ID of the archival location. |
+| lookBackWindow | [LookBackWindow](../types/enums/LookBackWindow.md) | How far back to report storage usage. |
 
 ## Returns
 

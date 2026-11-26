@@ -1,12 +1,12 @@
 # target
 
-GetTarget returns a single archival location in the V2 shape, with its encryption details and Cloud Direct immutability mode resolved.
+Returns one archival location. Includes the AWS KMS key assignment for locations managed by Rubrik Security Cloud that use a customer-managed AWS KMS key, and the immutability mode for NAS Cloud Direct locations.
 
 ## Arguments
 
 | Argument | Type | Description |
 |----------|------|-------------|
-| input *(required)* | [UUID](../types/scalars/UUID.md)! | Corresponds to ID of the target in Rubrik. |
+| input *(required)* | [UUID](../types/scalars/UUID.md)! | ID of the archival location. |
 
 ## Returns
 

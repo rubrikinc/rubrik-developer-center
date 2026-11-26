@@ -1,6 +1,6 @@
 # recoveryPlansBasicInfo
 
-Retrieves basic information for recovery plans with pagination support. RSC prioritizes recovery_plan_ids if they are passed in the filter. All filters are combined using AND logic.
+Lists basic information for recovery plans that match every given filter, with pagination. When recoveryPlanIds is set, it takes priority over the other filters.
 
 ## Arguments
 
@@ -13,7 +13,7 @@ Retrieves basic information for recovery plans with pagination support. RSC prio
 | recoveryPlanIds | [[UUID](../types/scalars/UUID.md)!] | List of recovery plan IDs to filter the results. |
 | sortParam | [RecoveryPlanSortParamInput](../types/inputs/RecoveryPlanSortParamInput.md) | Sort parameters for the results. |
 | recoveryPlanTypes | [[RecoveryPlanType](../types/enums/RecoveryPlanType.md)!] | Optional filter for recovery plan types. |
-| workloadTypes | [[ManagedObjectType](../types/enums/ManagedObjectType.md)!] | Filter for workload types. |
+| workloadTypes | [[ManagedObjectType](../types/enums/ManagedObjectType.md)!] | Workload types to return. Defaults to VSPHERE_VIRTUAL_MACHINE, so set it to see plans for other workload types. |
 | sourceLocationIds | [String!] | Optional filter for source location IDs. |
 | nameSubstring | String | Optional filter for recovery plan name substring. |
 | targetLocationIds | [[UUID](../types/scalars/UUID.md)!] | Optional filter for target location IDs. |

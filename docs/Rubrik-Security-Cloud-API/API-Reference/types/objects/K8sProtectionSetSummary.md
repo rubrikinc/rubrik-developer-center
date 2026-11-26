@@ -17,6 +17,7 @@ Supported in v9.1+ Key properties of a Kubernetes protection set.
 | namespaceExcludePatterns | [String!]! | Supported in v9.6+ Namespace exclusion patterns. Present for rsType "application" only. |
 | namespaceIncludePatterns | [String!]! | Supported in v9.6+ Namespace names or patterns included in an Application Protection Set. Present for rsType "application" only. |
 | rsType | String! | Required. Supported in v9.1+ v9.1-v9.5: Type of the Kubernetes protection set. v9.6+: Type of the Kubernetes protection set. One of: namespace, cluster, application. |
+| slaProtection | [SlaProtection](SlaProtection.md) | How the Kubernetes protection set is protected, computed by the Rubrik cluster from the stored effective SLA Domain of the protection set, including an SLA Domain inherited from the cluster. Use this, not effectiveSlaDomainId or configuredSlaDomainId, to display the protection of the protection set. |
 
 ## Used By
 

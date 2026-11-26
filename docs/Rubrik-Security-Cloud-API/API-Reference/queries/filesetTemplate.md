@@ -1,12 +1,12 @@
 # filesetTemplate
 
-Information about a fileset template.
+Returns the details of a fileset template.
 
 ## Arguments
 
 | Argument | Type | Description |
 |----------|------|-------------|
-| fid *(required)* | [UUID](../types/scalars/UUID.md)! | Rubrik UUID for the object. |
+| fid *(required)* | [UUID](../types/scalars/UUID.md)! | ID of the fileset template. |
 
 ## Returns
 

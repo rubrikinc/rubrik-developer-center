@@ -1,0 +1,19 @@
+# GcpNativeExportBigQueryDatasetInput
+
+Input required to export data from a BigQuery dataset snapshot.
+
+## Fields
+
+| Field | Type | Description |
+|-------|------|-------------|
+| encryptionKey | [GcpRecoveryEncryptionKeyConfig](GcpRecoveryEncryptionKeyConfig.md)! | Encryption configuration for the recovered resources. |
+| recoveryMode | [BigQueryRecoveryMode](../enums/BigQueryRecoveryMode.md)! | Discriminator selecting the recovery data source. Required. |
+| recoveryTime | [DateTime](../scalars/DateTime.md) | Point-in-time to recover to. Required when recoveryMode is PITR; must be unset otherwise. The time must fall within the source dataset's time-travel window. |
+| shouldAddRubrikLabels | Boolean! | Specifies whether to add Rubrik labels to the created tables and dataset or not. |
+| shouldCopyLabels | Boolean! | Specifies whether to copy labels to the created tables and dataset from the snapshot or not. |
+| snapshotId | [UUID](../scalars/UUID.md) | Snapshot Rubrik ID. Required when recoveryMode is SNAPSHOT_BASED; must be unset otherwise. |
+| sourceBigQueryDatasetRubrikId | [UUID](../scalars/UUID.md)! | Rubrik UUID of the source BigQuery dataset. Required for both recovery modes. |
+| tablesToBeExported | [String!] | If specified, only these tables will be recovered. |
+| targetDatasetName | String | The name of the target dataset. Required. A table export may target the source dataset's name in the same project only when the source dataset no longer exists; use table restore to recover tables in place. |
+| targetGcpProjectRubrikId | [UUID](../scalars/UUID.md)! | The target GCP project's Rubrik ID. |
+| targetLocation | [GcpBigQueryLocation](../enums/GcpBigQueryLocation.md) | The location of the exported dataset. If specified, creation of a new dataset with the given name will be attempted, else it will be assumed that the given dataset already exists. |

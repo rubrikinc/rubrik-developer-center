@@ -54,6 +54,7 @@ Enum representing all the possible event types.
 | PROTECTED_OBJECT_DELETION | Protected object deletion event type. |
 | QUARANTINE | Quarantine event type. |
 | RANSOMWARE_INVESTIGATION_ANALYSIS | Ransomware Investigation analysis type. |
+| REAL_TIME_PROTECTION | Real-Time Protection event type. |
 | RECOVERY | Recovery type. |
 | REENCRYPTION | Reencryption (re-encrypt a snapshot with the customer-managed key) event type. |
 | REPLICATION | Replication type. |

@@ -1,6 +1,6 @@
 # createAzureReaderTarget
 
-Creates reader type for Azure archival location on a CDM cluster.
+Creates a reader location on a Rubrik cluster for an existing Azure archival location, so the cluster can read and recover data another cluster archived there.
 
 ## Arguments
 

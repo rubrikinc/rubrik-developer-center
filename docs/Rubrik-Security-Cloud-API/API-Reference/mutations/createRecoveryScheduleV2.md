@@ -6,7 +6,7 @@ Creates a recovery schedule for a recovery plan.
 
 | Argument | Type | Description |
 |----------|------|-------------|
-| input *(required)* | [CreateRecoveryScheduleV2Input](../types/inputs/CreateRecoveryScheduleV2Input.md)! | Creates the recovery schedule information linked to the recovery plan. |
+| input *(required)* | [CreateRecoveryScheduleV2Input](../types/inputs/CreateRecoveryScheduleV2Input.md)! | The recovery plan ID and the schedule. startRunTime and recoveryConfig are required even though the schema marks them optional, and startRunTime may be at most 30 minutes in the past. |
 
 ## Returns
 

@@ -6,7 +6,7 @@ Updates a manual target mapping scoped to the caller's account.
 
 | Argument | Type | Description |
 |----------|------|-------------|
-| input *(required)* | [UpdateManualTargetMappingInput](../types/inputs/UpdateManualTargetMappingInput.md)! | Update manual target mapping. |
+| input *(required)* | [UpdateManualTargetMappingInput](../types/inputs/UpdateManualTargetMappingInput.md)! | ID of the archival group, its new name (required, unique), and the archival location to Rubrik cluster mappings. |
 
 ## Returns
 

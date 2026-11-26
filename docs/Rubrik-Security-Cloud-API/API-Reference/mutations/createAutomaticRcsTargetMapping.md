@@ -1,12 +1,12 @@
 # createAutomaticRcsTargetMapping
 
-*No description available.*
+Creates an automatic Rubrik Cloud Vault Azure archival group.
 
 ## Arguments
 
 | Argument | Type | Description |
 |----------|------|-------------|
-| input *(required)* | [CreateAutomaticRcsTargetMappingInput](../types/inputs/CreateAutomaticRcsTargetMappingInput.md)! | Request argument for creating a new Rubrik Cloud Vault location. |
+| input *(required)* | [CreateAutomaticRcsTargetMappingInput](../types/inputs/CreateAutomaticRcsTargetMappingInput.md)! | Input for creating an automatic Rubrik Cloud Vault Azure archival group. |
 
 ## Returns
 

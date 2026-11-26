@@ -17,3 +17,4 @@ Paginated list of Row objects. Each page of the results includes at most 1000 en
 **Queries**
 
 - [query: reportData](../../queries/reportData.md)
+- [query: reportTableData](../../queries/reportTableData.md)

@@ -1,12 +1,12 @@
 # refreshNasSystems
 
-On-demand discovery of a list of NAS systems Supported in v7.0+ Runs the NAS_DISCOVER job for autodiscovery/refresh of NAS systems.
+Starts rediscovery of the given NAS systems and returns the status of each discovery job.
 
 ## Arguments
 
 | Argument | Type | Description |
 |----------|------|-------------|
-| input *(required)* | [RefreshNasSystemsInput](../types/inputs/RefreshNasSystemsInput.md)! | Input for V1DiscoverNasSystems. |
+| input *(required)* | [RefreshNasSystemsInput](../types/inputs/RefreshNasSystemsInput.md)! | IDs of the NAS systems to rediscover. |
 
 ## Returns
 

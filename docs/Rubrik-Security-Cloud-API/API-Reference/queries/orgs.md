@@ -1,6 +1,6 @@
 # orgs
 
-All orgs.
+Lists the organizations visible to the caller, filterable by name, MFA status, and cross-account access.
 
 ## Arguments
 

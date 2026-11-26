@@ -1,6 +1,6 @@
 # startDisableAzureCloudAccountJob
 
-Start on-demand jobs to disable the feature for the given Azure Cloud Accounts. When completed, the status of cloud account feature will change to Disabled and the feature will become eligible to be deleted.
+AzureCloudAccountFeatureDisable disables the feature so that cloud accounts stop using the feature and teardowns anything needed so that after this feature for the cloud account can be deleted. The endpoint triggers one job per subscription ID which runs asynchronously and updates the status of cloud account to Disabled.
 
 ## Arguments
 

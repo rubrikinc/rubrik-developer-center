@@ -6,7 +6,7 @@ A virtual disk captured in a Nutanix virtual machine snapshot.
 
 | Field | Type | Description |
 |-------|------|-------------|
-| clusterUuid | String! |  |
+| clusterUuid | String! | UUID of the CDM cluster that took the snapshot. |
 | diskId | String! | ID of the virtual disk. |
 | diskUsedBytesOpt | [Long](../scalars/Long.md)! | Actual disk usage in bytes (optional). |
 | logicalSnapshotFileSizeInBytes | [Long](../scalars/Long.md)! | Logical file size of the virtual disk in bytes. |

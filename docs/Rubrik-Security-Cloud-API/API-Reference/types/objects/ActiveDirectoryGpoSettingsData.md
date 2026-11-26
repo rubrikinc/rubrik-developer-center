@@ -16,3 +16,5 @@ Supported in v9.4+
 **Referenced by**
 
 - [GetLatestGpoSettingsRes.gpoSettings](GetLatestGpoSettingsRes.md)
+- [GpoSettingsChangeDataRes.currGpoSettings](GpoSettingsChangeDataRes.md)
+- [GpoSettingsChangeDataRes.prevGpoSettings](GpoSettingsChangeDataRes.md)

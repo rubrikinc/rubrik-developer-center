@@ -225,6 +225,7 @@ Fields for filtering hierarchy objects.
 | INCLUDE_DIRECT_ASSIGN_OBJECT | Filter will retrieve all objects with SLA Domains assigned directly. |
 | INCLUDE_INDEPENDENT_REPLICA | Filter independent replica objects on which you can assign an SLA Domain independently, without depending on source objects. |
 | INFORMIX_HOST_CONNECTION_STATUS | Filters Informix instances by their host connection status. |
+| INFRASTRUCTURE_MONITORING_STATUS | Filters S3 buckets, RDS instances and DynamoDB tables by their Infrastructure Monitoring status. Texts are one or more CrpMonitoringStatus value names, ORed. The filter adds nothing when the account lacks the Critical Resource Protection entitlement. |
 | IRISDB_CONNECTION_STATUS | Filter IRIS DB instances by the Rubrik Backup Service (RBS) connection status of their host. |
 | IRISDB_HOST_ID | Filter IRIS DB instances by host ID. |
 | IRISDB_STORAGE_ARRAY_ID | Filter IRIS DB instances by the IDs of the storage arrays backing the instance's volumes (up to 100 IDs), resolved via the array id on the instance's storage spec. |
@@ -344,6 +345,7 @@ Fields for filtering hierarchy objects.
 | OPENSTACK_PROJECT_NATIVE_ID | Filter OpenStack projects by their native OpenStack project ID. |
 | ORACLE_DATA_GUARD_TYPE | Filter Oracle databases by Data Guard type. Texts takes one or both of the CdmOracleDatabase.DataGuardType names NON_DATA_GUARD and DATA_GUARD_MEMBER; any other value is rejected. A database with no Data Guard type counts as NON_DATA_GUARD. Objects with no Oracle database record are dropped from the result. Data Guard groups have one, so restrict the object type to ORACLE_DATABASE to exclude them. |
 | ORACLE_DB_NAME_OR_UNIQUE_NAME | Filter Oracle databases by a case-insensitive substring match on the database name or the database unique name. Takes exactly one text of at most 255 bytes. Objects with no Oracle database record are dropped from the result. Data Guard groups have one, so restrict the object type to ORACLE_DATABASE to exclude them. |
+| ORACLE_HOST_PHYSICAL_HOST_ID | Filter Oracle hosts by the CDM ID of their physical host. Texts takes one to 100 physical host CDM IDs, matched against cdm_oracle_host.host_id. |
 | ORACLE_OS_TYPE | Filter Oracle host and RAC objects by OS type. |
 | ORGANIZATION_ID | Filter by organization ID. |
 | OS_NAME | Filter physical hosts by OS name. |
@@ -422,6 +424,7 @@ Fields for filtering hierarchy objects.
 | VMWARE_IS_STANDALONE_HOST | Filter VMware standalone hosts from vCenters and standalone hosts. |
 | VMWARE_SNAPSHOT_CONSISTENCY | Filter VMware objects according to the snapshot consistency mandate. |
 | VMWARE_VCD_HOSTNAME | Filter by vCD hostname. |
+| VMWARE_VM_IS_VM_SERVICE_VM | Filter VMware virtual machines by whether a vSphere Supervisor runs them through its virtual machine service. |
 | VMWARE_VM_MAC_ADDRESS | Filter VMWare virtual machine using a MAC Address. |
 | VMWARE_VM_MOID | Filter by moid of VMware virtual machines. |
 | VMWARE_VM_RBS_AGENT_STATUS | Filter VMware virtual machines by RBS agent status. |

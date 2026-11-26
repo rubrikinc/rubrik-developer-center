@@ -1,6 +1,6 @@
 # adVolumeExports
 
-Active Directory volume export connection.
+Lists the volume exports created by Live Mounts of Active Directory domain controller snapshots.
 
 ## Arguments
 

@@ -47,6 +47,7 @@ ObjectTypeEnum covering all Rubrik cluster and RSC workload types.
 | Fileset | Fileset. |
 | GCP_BIGQUERY_DATASET | GCP BigQuery dataset. |
 | GCP_CLOUD_SQL_INSTANCE | GCP Cloud SQL Instance. |
+| GCP_GCS_BUCKET | GCP GCS Bucket. |
 | GITHUB_ORG_PACKAGES_FIXED_OBJECT | GitHub organization packages. |
 | GITHUB_REPOSITORY | GitHub Repository. |
 | GLUE_ICEBERG_TABLE | Glue Iceberg table. |
@@ -123,6 +124,7 @@ ObjectTypeEnum covering all Rubrik cluster and RSC workload types.
 | S3_TABLES_ICEBERG_TABLE | S3 Tables Iceberg table. |
 | SALESFORCE_FIXED_OBJECT | Salesforce metadata. |
 | SALESFORCE_OBJECT | Salesforce object. |
+| SANGFOR_VIRTUAL_MACHINE | Sangfor virtual machine. |
 | SAP_HANA_SYSTEM | SAP HANA System. |
 | SapHanaDatabase | SAP HANA Database. |
 | ShareFileset | Share fileset. |

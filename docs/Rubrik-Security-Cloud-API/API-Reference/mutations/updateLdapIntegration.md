@@ -1,6 +1,6 @@
 # updateLdapIntegration
 
-Mutate LDAP integration.
+Creates or updates an LDAP directory integration used to sign users in, from the bind account, base DN, servers, and user and group search settings.
 
 ## Arguments
 

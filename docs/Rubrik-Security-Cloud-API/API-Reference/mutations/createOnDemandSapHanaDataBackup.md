@@ -1,12 +1,12 @@
 # createOnDemandSapHanaDataBackup
 
-Create an on-demand snapshot of the database Supported in v9.4+ Initiates a job to take an on-demand snapshot of a specified SAP HANA database object. You can use the GET /sap_hana/db/request/{id} endpoint to monitor the progress of the job.
+Starts an on-demand full, differential or incremental backup of a SAP HANA database, on Rubrik cluster version 9.4 or later. For a full backup on an older cluster use createOnDemandSapHanaBackup. Returns the async request; jobInfo (type SAP_HANA_DATABASE) can track only a full backup, not a differential or incremental one.
 
 ## Arguments
 
 | Argument | Type | Description |
 |----------|------|-------------|
-| input *(required)* | [CreateOnDemandSapHanaDataBackupInput](../types/inputs/CreateOnDemandSapHanaDataBackupInput.md)! | Input for V1CreateOnDemandSapHanaDataBackup. |
+| input *(required)* | [CreateOnDemandSapHanaDataBackupInput](../types/inputs/CreateOnDemandSapHanaDataBackupInput.md)! | The database ID, an optional backupType (SAP_HANA_ON_DEMAND_BACKUP_CONFIG_BACKUP_TYPE_FULL, SAP_HANA_ON_DEMAND_BACKUP_CONFIG_BACKUP_TYPE_DIFFERENTIAL or SAP_HANA_ON_DEMAND_BACKUP_CONFIG_BACKUP_TYPE_INCREMENTAL), and an optional SLA Domain ID. |
 
 ## Returns
 

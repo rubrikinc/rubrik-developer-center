@@ -1,12 +1,12 @@
 # createGcpReaderTarget
 
-Creates reader type for GCP archival location on a CDM cluster.
+Creates a reader location on a Rubrik cluster for an existing GCP archival location, so the cluster can read and recover data another cluster archived there.
 
 ## Arguments
 
 | Argument | Type | Description |
 |----------|------|-------------|
-| input *(required)* | [CreateGcpReaderTargetInput](../types/inputs/CreateGcpReaderTargetInput.md)! | Request for creating a new Gcp reader target. |
+| input *(required)* | [CreateGcpReaderTargetInput](../types/inputs/CreateGcpReaderTargetInput.md)! | Request for creating a new GCP reader target. |
 
 ## Returns
 

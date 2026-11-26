@@ -1,12 +1,12 @@
 # updateFailoverCluster
 
-Update a failover cluster Supported in v5.2+ Update failover cluster with specified properties.
+Changes a host failover cluster's name, hosts, or SLA Domain.
 
 ## Arguments
 
 | Argument | Type | Description |
 |----------|------|-------------|
-| input *(required)* | [UpdateFailoverClusterInput](../types/inputs/UpdateFailoverClusterInput.md)! | Input for V1UpdateFailoverCluster. |
+| input *(required)* | [UpdateFailoverClusterInput](../types/inputs/UpdateFailoverClusterInput.md)! | ID of the failover cluster and updateProperties. name and hostIds are required, so send the full configuration. configuredSlaDomainId is optional. |
 
 ## Returns
 

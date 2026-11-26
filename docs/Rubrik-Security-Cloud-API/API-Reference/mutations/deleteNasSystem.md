@@ -1,12 +1,12 @@
 # deleteNasSystem
 
-Delete a registered NAS system Supported in v7.0+ Delete a NAS system by specifying the NAS system ID.
+Starts deletion of a registered NAS system and returns the status of the asynchronous delete request.
 
 ## Arguments
 
 | Argument | Type | Description |
 |----------|------|-------------|
-| input *(required)* | [DeleteNasSystemInput](../types/inputs/DeleteNasSystemInput.md)! | Input for V1DeleteNasSystem. |
+| input *(required)* | [DeleteNasSystemInput](../types/inputs/DeleteNasSystemInput.md)! | ID of the NAS system to delete. |
 
 ## Returns
 

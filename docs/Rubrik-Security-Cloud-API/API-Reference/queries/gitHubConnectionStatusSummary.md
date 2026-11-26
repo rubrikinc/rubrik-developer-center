@@ -1,6 +1,6 @@
 # gitHubConnectionStatusSummary
 
-GitHubConnectionStatusSummary returns the connection status of all the GitHub cloud accounts.
+Returns the connection status of every GitHub cloud account.
 
 ## Returns
 

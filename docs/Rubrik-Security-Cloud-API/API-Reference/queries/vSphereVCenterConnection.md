@@ -13,6 +13,7 @@ Query vSphere vCenters.
 | sortBy | [HierarchySortByField](../types/enums/HierarchySortByField.md) | Sort hierarchy objects according to the hierarchy field. |
 | sortOrder | [SortOrder](../types/enums/SortOrder.md) | Sorts the order of results. |
 | filter | [[Filter](../types/inputs/Filter.md)!] | Hierarchy object filter. |
+| vcfInstanceFid | [UUID](../types/scalars/UUID.md) | Rubrik UUID of the VCF instance whose vCenters to list. |
 
 ## Returns
 

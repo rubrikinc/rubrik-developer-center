@@ -1,12 +1,12 @@
 # sapHanaRecoverableRange
 
-Details of a SAP HANA recoverable range for a given FID.
+Returns one SAP HANA recoverable range, a span of time a database can be recovered to, by its Rubrik ID; find IDs with sapHanaRecoverableRanges.
 
 ## Arguments
 
 | Argument | Type | Description |
 |----------|------|-------------|
-| fid *(required)* | [UUID](../types/scalars/UUID.md)! | Rubrik UUID for the object. |
+| fid *(required)* | [UUID](../types/scalars/UUID.md)! | Rubrik ID of the recoverable range. |
 
 ## Returns
 

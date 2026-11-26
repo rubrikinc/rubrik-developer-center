@@ -1,12 +1,12 @@
 # bulkUpdateNasShares
 
-Update properties of NAS shares Supported in v8.1+ Update the properties of the specified NAS shares.
+Updates several NAS shares: export point, credentials, change tracking (Isilon changelist, NetApp SnapDiff, Nutanix Changed File Tracking), and the interfaces used for fileset jobs. Returns the updated shares and a connectivity check request for each; updateNasShares changes only change tracking.
 
 ## Arguments
 
 | Argument | Type | Description |
 |----------|------|-------------|
-| input *(required)* | [BulkUpdateNasSharesInput](../types/inputs/BulkUpdateNasSharesInput.md)! | Input for V1BulkUpdateNasShares. |
+| input *(required)* | [BulkUpdateNasSharesInput](../types/inputs/BulkUpdateNasSharesInput.md)! | For each NAS share, its ID plus any export point, access credentials, change-tracking, or fileset-interface settings to change. |
 
 ## Returns
 

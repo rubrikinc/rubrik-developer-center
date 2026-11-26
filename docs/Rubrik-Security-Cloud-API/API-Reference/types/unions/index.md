@@ -1,14 +1,16 @@
 # Unions
 
-36 types.
+38 types.
 
 [AccessMethodDetailsType](AccessMethodDetailsType.md)  
 [ActionTypes](ActionTypes.md)  
+[ActivitySeriesGroupByInfo](ActivitySeriesGroupByInfo.md)  
 [AnomalyResultGroupByInfo](AnomalyResultGroupByInfo.md)  
 [ApplicationSpecificMetadata](ApplicationSpecificMetadata.md)  
 [AzureSpecificFeatureDetails](AzureSpecificFeatureDetails.md)  
 [CdmSnapshotGroupByInfo](CdmSnapshotGroupByInfo.md)  
 [CloudDirectNasObject](CloudDirectNasObject.md)  
+[CloudSpecificMissingPermissionUnion](CloudSpecificMissingPermissionUnion.md)  
 [ClusterGroupByInfo](ClusterGroupByInfo.md)  
 [ClusterMetricGroupByInfo](ClusterMetricGroupByInfo.md)  
 [DataLocationClusterInfo](DataLocationClusterInfo.md)  

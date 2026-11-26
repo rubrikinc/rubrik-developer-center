@@ -1,6 +1,6 @@
 # updateDistributionListDigest
 
-Update specific distribution list digests.
+Creates or updates the distribution list digest named digestName for each user in recipientUserIds, matched by recipient and name; digestId is not used. Returns the saved digests.
 
 ## Arguments
 

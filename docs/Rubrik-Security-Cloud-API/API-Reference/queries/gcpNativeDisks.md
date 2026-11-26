@@ -1,6 +1,6 @@
 # gcpNativeDisks
 
-List of GCP disks.
+Lists the GCP persistent disks in the GCP projects added to Rubrik.
 
 ## Arguments
 

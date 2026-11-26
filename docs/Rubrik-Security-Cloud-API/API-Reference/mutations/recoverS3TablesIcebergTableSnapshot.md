@@ -1,6 +1,6 @@
 # recoverS3TablesIcebergTableSnapshot
 
-Schedules an on-demand job to recover an S3 Tables Iceberg table snapshot and returns the taskchain id. Per-arm, per-FID RBAC runs ahead of the handler.
+Starts a job that recovers an Amazon S3 Tables Iceberg table from a snapshot. Returns the job ID.
 
 ## Arguments
 

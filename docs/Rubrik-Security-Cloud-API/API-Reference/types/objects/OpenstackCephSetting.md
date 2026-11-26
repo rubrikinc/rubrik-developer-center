@@ -9,7 +9,7 @@ Configuration settings for a Ceph storage backend in an OpenStack environment.
 | cephUser | String | Supported in v9.6+ The Ceph user to authenticate as, for example `cinder`. A leading `client.` prefix is removed. When absent, the `client.admin` user is used. |
 | fsid | String | Supported in v9.5+ The Ceph filesystem ID (optional). |
 | id | String | Supported in v9.5+ The ID of the existing Ceph setting (if updating). |
-| keyring | String | Supported in v9.5+ The Ceph keyring for authentication (optional). |
+| keyring | String | Supported in v9.5+ v9.5-v9.6: The Ceph keyring for authentication (optional). v9.7: The Ceph keyring for authentication (optional). Responses carry "<SECRET REDACTED>" when a keyring is stored. When an existing setting is updated, "<SECRET REDACTED>" keeps the stored keyring and an absent keyring removes it. |
 | monHosts | [[OpenstackMonHost](OpenstackMonHost.md)!]! | Required. Supported in v9.5+ The list of Ceph monitor hosts. |
 | openstackAvailabilityZoneId | String! | Required. Supported in v9.5+ The ID of the OpenStack availability zone. |
 | volumePoolName | String! | Required. Supported in v9.5+ The name of the Ceph volume pool. |

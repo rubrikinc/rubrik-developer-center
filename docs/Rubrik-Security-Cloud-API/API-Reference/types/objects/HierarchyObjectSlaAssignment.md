@@ -16,3 +16,4 @@ Containing calculated information about SLA assignment on a particular object.
 
 - [AnthropicClaudeChatWorkload.fullSlaAssignment](AnthropicClaudeChatWorkload.md)
 - [AnthropicOrgLocalSessions.fullSlaAssignment](AnthropicOrgLocalSessions.md)
+- [DevOpsObject.slaAssignment](DevOpsObject.md)

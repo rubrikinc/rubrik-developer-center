@@ -1,6 +1,6 @@
 # updateServiceAccount
 
-Update the specified service account.
+Updates a service account's description, the only property it can change, and returns the account.
 
 ## Arguments
 

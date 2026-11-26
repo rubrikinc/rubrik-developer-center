@@ -1,12 +1,12 @@
 # filesetRequestStatus
 
-Get details about an async request Supported in v5.0+ Get details about a fileset related async request.
+Returns the status, progress, and any error of an asynchronous fileset request, such as an on-demand backup, download, export, or restore.
 
 ## Arguments
 
 | Argument | Type | Description |
 |----------|------|-------------|
-| input *(required)* | [GetFilesetAsyncRequestStatusInput](../types/inputs/GetFilesetAsyncRequestStatusInput.md)! | Input for V1GetFilesetAsyncRequestStatus. |
+| input *(required)* | [GetFilesetAsyncRequestStatusInput](../types/inputs/GetFilesetAsyncRequestStatusInput.md)! | Input fields: id, the request ID returned by the mutation; clusterUuid, its Rubrik cluster. |
 
 ## Returns
 

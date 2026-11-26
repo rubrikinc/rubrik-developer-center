@@ -29,6 +29,7 @@ Reply to Create on-demand job request.
 - [mutation: manageProtectionForLinkedObjects](../../mutations/manageProtectionForLinkedObjects.md)
 - [mutation: refreshK8sCluster](../../mutations/refreshK8sCluster.md)
 - [mutation: refreshO365Org](../../mutations/refreshO365Org.md)
+- [mutation: restoreActiveDirectoryForest](../../mutations/restoreActiveDirectoryForest.md)
 - [mutation: restoreK8sNamespace](../../mutations/restoreK8sNamespace.md)
 - [mutation: restoreO365FullTeams](../../mutations/restoreO365FullTeams.md)
 - [mutation: restoreO365Mailbox](../../mutations/restoreO365Mailbox.md)

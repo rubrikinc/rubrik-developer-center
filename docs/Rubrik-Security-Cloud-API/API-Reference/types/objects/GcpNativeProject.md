@@ -22,6 +22,7 @@ Represents a GCP project.
 | enabledFeatures | [[CloudAccountEnabledFeature](CloudAccountEnabledFeature.md)!]! | List of protection features enabled for the GCP project. |
 | futureLegalHoldInfo | [FutureLegalHoldInfo](FutureLegalHoldInfo.md) | Future legal hold rule configured for this object, if any. |
 | gcpNativeGceInstanceConnection | [GcpNativeGceInstanceConnection](GcpNativeGceInstanceConnection.md)! | List of all GCE instances under this GCP project. |
+| gcsBucketCount | Int! | Number of GCS buckets in the GCP project. |
 | id | [UUID](../scalars/UUID.md)! | ID of the hierarchy object. |
 | isRelic | Boolean! | Whether the object is a relic. |
 | labels | [[Label](Label.md)!]! | List of labels that are assigned to the object. |
@@ -61,7 +62,9 @@ Represents a GCP project.
 | gcpNativeGceInstanceConnection | sortOrder | [SortOrder](../enums/SortOrder.md) | Sorts the order of results. |
 | gcpNativeGceInstanceConnection | gceInstanceFilters | [GcpNativeGceInstanceFilters](../inputs/GcpNativeGceInstanceFilters.md) |  |
 | logicalChildConnection | first | Int | Returns the first n elements from the list. |
-| logicalChildConnection | after | String | Returns the elements in the list that occur after the specified cursor. |
+| logicalChildConnection | after | String | An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results. |
+| logicalChildConnection | last | Int | Returns the last n elements from the list. |
+| logicalChildConnection | before | String | An opaque cursor returned from a previous query's startCursor field. Pass this value verbatim to retrieve the previous page of results. |
 | logicalChildConnection | sortBy | [HierarchySortByField](../enums/HierarchySortByField.md) | Sort hierarchy objects according to the hierarchy field. |
 | logicalChildConnection | sortOrder | [SortOrder](../enums/SortOrder.md) | Sorts the order of results. |
 | logicalChildConnection | typeFilter | [[HierarchyObjectTypeEnum](../enums/HierarchyObjectTypeEnum.md)!] | Types of objects to include. |
@@ -85,7 +88,10 @@ Represents a GCP project.
 - [GcpAlloyDbCluster.gcpProject](GcpAlloyDbCluster.md)
 - [GcpBigQueryDataset.gcpProject](GcpBigQueryDataset.md)
 - [GcpCloudSqlInstance.gcpProject](GcpCloudSqlInstance.md)
+- [GcpGcsBucket.gcpProject](GcpGcsBucket.md)
 - [GcpNativeDisk.gcpNativeProject](GcpNativeDisk.md)
 - [GcpNativeDisk.gcpProject](GcpNativeDisk.md)
 - [GcpNativeGceInstance.gcpNativeProject](GcpNativeGceInstance.md)
 - [GcpNativeGceInstance.gcpProject](GcpNativeGceInstance.md)
+- [GcpSpannerDatabase.gcpProject](GcpSpannerDatabase.md)
+- [GcpSpannerInstance.gcpProject](GcpSpannerInstance.md)

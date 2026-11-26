@@ -25,6 +25,7 @@ Supported in v5.0+
 | parentAppInfo | [ParentAppInfo](ParentAppInfo.md) | Supported in v5.0+ Configuration information for the vApp that manages a specified virtual machine. |
 | powerStatus | String | Supported in v5.0+ The power status of VM(ON,OFF,SLEEP etc.). |
 | protectionDate | [DateTime](../scalars/DateTime.md) | Supported in v5.0+ |
+| slaProtection | [SlaProtection](SlaProtection.md) | Supported in v9.7 How the virtual machine is protected, computed by the Rubrik cluster from the effective SLA Domain of the virtual machine, including an SLA Domain inherited from a parent object. Use this, not effectiveSlaDomainId or configuredSlaDomainId, to display the protection of the virtual machine. |
 | snappable | [CdmWorkload](CdmWorkload.md) |  |
 | snapshotConsistencyMandate | [VirtualMachineSummarySnapshotConsistencyMandate](../enums/VirtualMachineSummarySnapshotConsistencyMandate.md)! | Required. Supported in v5.0+ Consistency level mandated for this VM or empty string for none. |
 | templateType | [VirtualMachineTemplateType](../enums/VirtualMachineTemplateType.md) | Virtual Machine Template summary. |

@@ -1,6 +1,6 @@
 # startAwsNativeAccountDisableJob
 
-StartAwsNativeAccountDisableJob starts the job that disables one protection feature of an AWS Native account, optionally deleting the snapshots the feature took.
+Starts a job that turns off one protection feature on an AWS account, optionally deleting the snapshots it took.
 
 ## Arguments
 

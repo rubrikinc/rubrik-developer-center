@@ -1,6 +1,6 @@
 # filesetRecoverFiles
 
-v5.0-v9.2: Create restore job to restore multiple files/directories v9.3+: (DEPRECATED) Create restore job to restore multiple files/directories Supported in v5.0+ v5.0-v9.2: Initiate a job to copy one or more file or folder from a fileset backup to the source host. Returns the job instance ID. v9.3+: Initiate a job to copy one or more file or folder from a fileset backup to the source host. Returns the job instance ID. This endpoint will be removed in CDM v9.3.0 in favor of `POST v1/fileset/snapshot/{id}/restore_files`.
+Starts a job that restores files or folders from a fileset snapshot in place, to the source host. Returns an async request, poll its ID with filesetRequestStatus. On Rubrik clusters running 9.3 or later, CDM marks the internal restore endpoint behind this field as deprecated. To restore to a different host, use filesetExportSnapshotFiles.
 
 ## Arguments
 

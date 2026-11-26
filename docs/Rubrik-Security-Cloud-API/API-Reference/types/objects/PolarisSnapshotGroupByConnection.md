@@ -38,11 +38,11 @@ Paginated list of PolarisSnapshotGroupBy objects. Each page of the results inclu
 - [GcpAlloyDbCluster.snapshotGroupByConnection](GcpAlloyDbCluster.md)
 - [GcpBigQueryDataset.snapshotGroupByConnection](GcpBigQueryDataset.md)
 - [GcpCloudSqlInstance.snapshotGroupByConnection](GcpCloudSqlInstance.md)
+- [GcpGcsBucket.snapshotGroupByConnection](GcpGcsBucket.md)
 - [GcpNativeDisk.snapshotGroupByConnection](GcpNativeDisk.md)
 - [GcpNativeGceInstance.snapshotGroupByConnection](GcpNativeGceInstance.md)
+- [GcpSpannerDatabase.snapshotGroupByConnection](GcpSpannerDatabase.md)
 - [GithubRepository.snapshotGroupByConnection](GithubRepository.md)
 - [GlueIcebergTable.snapshotGroupByConnection](GlueIcebergTable.md)
 - [GoogleWorkspaceSharedDrive.snapshotGroupByConnection](GoogleWorkspaceSharedDrive.md)
-- [GoogleWorkspaceUserDrive.snapshotGroupByConnection](GoogleWorkspaceUserDrive.md)
-- [GoogleWorkspaceUserMailbox.snapshotGroupByConnection](GoogleWorkspaceUserMailbox.md)
-- *…and 27 more*
+- *…and 30 more*

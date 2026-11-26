@@ -1,6 +1,6 @@
 # downloadReportCsvAsync
 
-Download a report in CSV format asynchronously.
+Deprecated: use downloadFile. Starts an asynchronous CSV download of a saved report; track the file with allUserFiles.
 
 ## Arguments
 

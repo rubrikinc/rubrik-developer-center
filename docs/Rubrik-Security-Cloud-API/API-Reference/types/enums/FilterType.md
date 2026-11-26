@@ -33,6 +33,7 @@ FilterType represents the possible types of filters.
 | SECURITY_GPO_SE_TAKE_OWNERSHIP_PRIVILEGE | Filter for GPOs that grant the "Take ownership of files or other objects" (SeTakeOwnershipPrivilege) user right to a non-default principal. |
 | SECURITY_GPO_SE_TCB_PRIVILEGE | Filter for GPOs that grant the "Act as part of the operating system" (SeTcbPrivilege) user right to a non-default principal. |
 | SECURITY_GPO_SE_TRUSTED_CRED_MAN_ACCESS_PRIVILEGE | Filter for GPOs that grant the "Access Credential Manager as a trusted caller" (SeTrustedCredManAccessPrivilege) user right to a non-default principal. |
+| SECURITY_GPO_WSUS_INSECURE_URL | GPO "insecure WSUS server URL" filter. Selects GPOs whose "Specify intranet Microsoft update service location" policy is Enabled with a server URL that uses the plain http scheme instead of https, so Windows clients download updates without TLS and an on-path attacker can forge update metadata. The predicate is a fixed IS or IS_NOT over "true" or "false", evaluated against the URL by a heuristic. |
 | SECURITY_IDENTITY_ACCOUNT_EXPIRY_TIME | Identity account expiry time filter. |
 | SECURITY_IDENTITY_AES_ENCRYPTION_SUPPORTED | Identity AES encryption supported boolean filter. |
 | SECURITY_IDENTITY_APP_REG_NO_ACTIVE_USER_OWNER | Entra ID App Registration linked to this service principal has no active user owner. |

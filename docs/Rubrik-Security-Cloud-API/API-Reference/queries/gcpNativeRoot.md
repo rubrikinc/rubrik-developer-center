@@ -1,6 +1,6 @@
 # gcpNativeRoot
 
-Root of GCP native hierarchy.
+Returns the top-level object for GCP workloads in Rubrik, from which projects and their workloads can be listed.
 
 ## Returns
 

@@ -1,12 +1,12 @@
 # createWebhookV2
 
-Create webhook configuration.
+Creates a webhook that sends events, audits, or identity activity matching its subscription to an external HTTPS endpoint. It starts ENABLED, and the reply returns its ID.
 
 ## Arguments
 
 | Argument | Type | Description |
 |----------|------|-------------|
-| input *(required)* | [CreateWebhookV2Input](../types/inputs/CreateWebhookV2Input.md)! | Create webhook input. |
+| input *(required)* | [CreateWebhookV2Input](../types/inputs/CreateWebhookV2Input.md)! | name, providerType, and subscriptionType are required; the URL must use https, and authentication is given in plain or base64-encoded form, not both. |
 
 ## Returns
 
@@ -28,7 +28,7 @@ Create webhook configuration.
     {
       "input": {
         "payload": {
-          "providerType": "CUSTOM",
+          "providerType": "CROWDSTRIKE_NG_SIEM",
           "subscriptionType": {}
         }
       }

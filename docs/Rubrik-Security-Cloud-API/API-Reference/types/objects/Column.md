@@ -14,3 +14,11 @@ Column represents a report table column for the UI.
 | nullable | Boolean! | Specifies if the value of the column can be null. |
 | sortable | Boolean! | Specifies if the table can be sorted by the column. |
 | type | [DataTypeEnum](../enums/DataTypeEnum.md)! | Specifies the data type of the column. |
+
+## Used By
+
+**Referenced by**
+
+- [ReportSchema.allColumns](ReportSchema.md)
+- [ReportSchema.sortBy](ReportSchema.md)
+- [ReportSchema.tableColumns](ReportSchema.md)

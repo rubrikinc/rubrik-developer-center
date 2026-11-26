@@ -6,7 +6,7 @@ Delete webhook configuration.
 
 | Argument | Type | Description |
 |----------|------|-------------|
-| input *(required)* | [DeleteWebhookV2Input](../types/inputs/DeleteWebhookV2Input.md)! | Delete webhook input. |
+| input *(required)* | [DeleteWebhookV2Input](../types/inputs/DeleteWebhookV2Input.md)! | The ID of the webhook to delete. |
 
 ## Returns
 

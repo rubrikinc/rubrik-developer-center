@@ -1,12 +1,12 @@
 # updateDestinationRoleForRcvMigration
 
-Updates the destination role ARN for S3 or S3-compatible to an RCV location for migration using DataSync. This is needed when the data migrator runs in the customers environment.
+Updates the destination role ARN (Amazon Resource Name) used when AWS DataSync migrates an S3 or S3-compatible location to Rubrik Cloud Vault from the customer's environment.
 
 ## Arguments
 
 | Argument | Type | Description |
 |----------|------|-------------|
-| input *(required)* | [UpdateDestinationRoleForRcvMigrationInput](../types/inputs/UpdateDestinationRoleForRcvMigrationInput.md)! | Input to update encryption key for RCV migration. |
+| input *(required)* | [UpdateDestinationRoleForRcvMigrationInput](../types/inputs/UpdateDestinationRoleForRcvMigrationInput.md)! | The location being migrated and the new destination role ARN. |
 
 ## Returns
 

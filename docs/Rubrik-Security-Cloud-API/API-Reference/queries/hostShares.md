@@ -1,6 +1,6 @@
 # hostShares
 
-Get all host shares.
+Lists the host shares the caller can view.
 
 ## Arguments
 
@@ -10,9 +10,9 @@ Get all host shares.
 | after | String | An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results. |
 | last | Int | Returns the last n elements from the list. |
 | before | String | An opaque cursor returned from a previous query's startCursor field. Pass this value verbatim to retrieve the previous page of results. |
-| sortBy | [HierarchySortByField](../types/enums/HierarchySortByField.md) | Sort hierarchy objects according to the hierarchy field. |
+| sortBy | [HierarchySortByField](../types/enums/HierarchySortByField.md) | Field to sort by; results are sorted only when sortOrder is also set. |
 | sortOrder | [SortOrder](../types/enums/SortOrder.md) | Sorts the order of results. |
-| filter | [[Filter](../types/inputs/Filter.md)!] | Hierarchy object filter. |
+| filter | [[Filter](../types/inputs/Filter.md)!] | Filters the results by object fields. Supported fields: NAME, NAME_EXACT_MATCH, NAME_PREFIX, IS_RELIC, IS_GHOST, IS_ARCHIVED, CLUSTER_ID, IS_REPLICATED, and HOST_SHARE_MIGRATION_STATUS. Ghost objects and hidden replicas are excluded unless IS_GHOST or IS_REPLICATED is set. |
 
 ## Returns
 

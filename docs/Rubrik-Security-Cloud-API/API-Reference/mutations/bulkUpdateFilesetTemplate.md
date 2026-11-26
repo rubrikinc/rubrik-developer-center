@@ -1,12 +1,12 @@
 # bulkUpdateFilesetTemplate
 
-Modify fileset templates Supported in v5.0+ Modify the values of specified fileset templates.
+Changes the settings of the given fileset templates.
 
 ## Arguments
 
 | Argument | Type | Description |
 |----------|------|-------------|
-| input *(required)* | [BulkUpdateFilesetTemplateInput](../types/inputs/BulkUpdateFilesetTemplateInput.md)! | Input for InternalBulkUpdateFilesetTemplate. |
+| input *(required)* | [BulkUpdateFilesetTemplateInput](../types/inputs/BulkUpdateFilesetTemplateInput.md)! | Input fields: definitions, one entry per template with its ID and the values to change. |
 
 ## Returns
 

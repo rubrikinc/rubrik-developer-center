@@ -51,3 +51,4 @@ Descendants of a vSphere Supervisor.
 ## Implemented By
 
 - [VsphereNamespace](../objects/VsphereNamespace.md)
+- [VsphereVm](../objects/VsphereVm.md)

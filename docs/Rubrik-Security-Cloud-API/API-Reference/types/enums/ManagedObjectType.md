@@ -85,6 +85,7 @@ All supported Rubrik managed objects.
 | GCP_ALLOY_DB_CLUSTER | GCP AlloyDB Cluster. |
 | GCP_BIGQUERY_DATASET | GCP BigQuery Dataset. |
 | GCP_CLOUD_SQL_INSTANCE | GCP Cloud SQL Instance. |
+| GCP_GCS_BUCKET | GCP GCS Bucket. |
 | GCP_NATIVE_DISK | GCP disk. |
 | GCP_NATIVE_GCE_INSTANCE | GCP Google Compute Engine instance. |
 | GCP_NATIVE_PROJECT | GCP project. |
@@ -243,6 +244,13 @@ All supported Rubrik managed objects.
 | SALESFORCE_FIXED_OBJECT | Salesforce metadata. |
 | SALESFORCE_OBJECT | Salesforce object. |
 | SALESFORCE_ORGANIZATION | Salesforce organization. |
+| SANGFOR_AVAILABILITY_ZONE | Sangfor availability zone (resource pool). |
+| SANGFOR_CLUSTER | Sangfor cluster. |
+| SANGFOR_DATASTORE | Sangfor datastore. |
+| SANGFOR_HOST | Sangfor host. |
+| SANGFOR_NETWORK | Sangfor network. |
+| SANGFOR_SCP | Sangfor Cloud Platform (SCP) manager. |
+| SANGFOR_VIRTUAL_MACHINE | Sangfor virtual machine. The protectable object in this hierarchy. |
 | SAP_HANA_DATABASE | SAP HANA database. |
 | SAP_HANA_SYSTEM | SAP HANA system. |
 | SHARE_FILESET | Share fileset. |
@@ -270,8 +278,10 @@ All supported Rubrik managed objects.
 | VSPHERE_DATASTORE_CLUSTER | VMware vSphere database cluster. |
 | VSPHERE_FOLDER | VMware vSphere folder. |
 | VSPHERE_HOST | VMware vSphere host. |
+| VSPHERE_NAMESPACE | VMware vSphere Namespace. |
 | VSPHERE_NETWORK | VMware vSphere network. |
 | VSPHERE_RESOURCE_POOL | VMware vSphere resource pool. |
+| VSPHERE_SUPERVISOR | VMware vSphere Supervisor. |
 | VSPHERE_TAG | VMware vSphere tag. |
 | VSPHERE_TAG_CATEGORY | VMware vSphere tag category. |
 | VSPHERE_VCENTER | VMware vSphere vCenter. |

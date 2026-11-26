@@ -4,9 +4,9 @@ This document lists all deprecated fields, queries, mutations, and enum values i
 
 ## Deprecated Fields
 
-*Extracted from schema: 20261102.graphql*
+*Extracted from schema: 20261116.graphql*
 
-**Total deprecated items: 366**
+**Total deprecated items: 367**
 
 ### Deprecated Query Fields
 
@@ -14,6 +14,7 @@ This document lists all deprecated fields, queries, mutations, and enum values i
 - **`accountSettings`**: Use getAccountSettingValue or getAccountSettingValueWithDefault instead.
 - **`allAzureResourceGroups`**: Use allResourceGroupsFromAzure instead.
 - **`allAzureSubnets`**: Use allAzureCloudAccountSubnetsByRegion instead.
+- **`allCdpVmsInfos`**: Deprecated: API is not supported anymore.
 - **`allClusterWebCertsAndIpmis`**: Use clusterConnection instead.
 - **`allGcpCloudAccountProjectsForOauth`**: Please use gcpListAllProjectsForOauth instead.
 - **`allMissingClusters`**: Missing cluster management has been retired.
@@ -33,17 +34,13 @@ This document lists all deprecated fields, queries, mutations, and enum values i
 - **`backupO365SharepointDrive`**: Use backupM365SharepointDrive instead.
 - **`backupO365Team`**: Use backupM365Team instead.
 - **`cancelTaskchain`**: Endpoint is no longer maintained
-- **`createAutomaticAwsTargetMapping`**: This mutation is deprecated.
-- **`createAutomaticAzureTargetMapping`**: This mutation is deprecated.
-- **`createAutomaticRcsTargetMapping`**: This mutation is deprecated. Please use createRcvLocationsFromTemplate.
-- **`createOnDemandMongoDatabaseBackup`**: Use createOnDemandMongoDatabaseBackupV2 instead.
+- **`createAutomaticAwsTargetMapping`**: This mutation is deprecated. Use createAwsTarget to create an AWS archival location on each Rubrik cluster.
+- **`createAutomaticAzureTargetMapping`**: This mutation is deprecated. Use createAzureTarget to create an Azure archival location on each Rubrik cluster.
+- **`createAutomaticRcsTargetMapping`**: This mutation is deprecated. Use createRcvLocationsFromTemplate to create Rubrik Cloud Vault Azure archival locations.
 - **`createRole`**: This endpoint is deprecated.
-- **`createWebhook`**: Use createWebhookV2 instead.
 - **`deleteCertificate`**: Deprecated. Use deleteGlobalCertificate instead.
 - **`deleteCloudWorkloadSnapshot`**: Use deleteUnmanagedSnapshots instead.
 - **`deleteSapHanaDbSnapshot`**: Please use deleteUnmanagedSnapshots mutation instead or use the RSC UI delete button from snapshots page
-- **`deleteWebhook`**: Use deleteWebhookV2 instead.
-- **`downloadAuditLogCsvAsync`**: Use downloadFile instead.
 - **`downloadReportCsvAsync`**: Use downloadFile instead.
 - **`downloadReportPdfAsync`**: Use downloadFile instead.
 - **`exportO365Mailbox`**: Use exportO365MailboxV2 instead.
@@ -56,17 +53,14 @@ This document lists all deprecated fields, queries, mutations, and enum values i
 - **`seedInitialPolicies`**: Use seedEnabledPolicies instead.
 - **`setIpWhitelistEnabled`**: use `setIpWhitelistSetting` instead.
 - **`setMissingClusterStatus`**: Missing cluster management has been retired.
-- **`stopJobInstance`**: Use stopJobInstanceFromEventSeries instead.
 - **`testExistingWebhook`**: Use sendTestMessageToExistingWebhook instead.
-- **`testWebhook`**: Use sendTestMessageToWebhook instead.
 - **`updateAgentDeploymentSettingInBatch`**: Deprecated. Use updateAgentDeploymentSettingInBatchNew instead.
-- **`updateAutomaticAwsTargetMapping`**: This mutation is deprecated.
-- **`updateAutomaticAzureTargetMapping`**: This mutation is deprecated.
+- **`updateAutomaticAwsTargetMapping`**: This mutation is deprecated. Use updateAwsTarget to update each AWS archival location.
+- **`updateAutomaticAzureTargetMapping`**: This mutation is deprecated. Use updateAzureTarget to update each Azure archival location.
 - **`updateCertificate`**: Deprecated. Use updateGlobalCertificate instead.
 - **`updateIpWhitelist`**: use `setIpWhitelistSetting` to update the mode, or `update/add/deleteIpWhitelistEntries` to update entries instead.
-- **`updateManagedIdentities`**: Use updateManagedIdentitiesAsync instead.
 - **`updateMssqlLogShippingConfigurationV1`**: Use updateMssqlLogShippingConfiguration instead.
-- **`updateRcsAutomaticTargetMapping`**: This mutation is deprecated. Please use updateRcvLocationsFromTemplate.
+- **`updateRcsAutomaticTargetMapping`**: This mutation is deprecated. Use updateRcvTarget to update each Rubrik Cloud Vault Azure archival location.
 - **`updateRole`**: This endpoint is deprecated.
 - **`updateWebhook`**: Use updateWebhookV2 instead.
 
@@ -107,10 +101,15 @@ This document lists all deprecated fields, queries, mutations, and enum values i
 #### ArchivalSpec
 
 - **`isComplianceImmutabilityEnabled`**: Compliance Retention Lock is no longer supported.
+- **`storageSetting`**: Use archivalGroup instead.
 
 #### AuthorizedOps
 
 - **`operations`**: Use authorizedOperations instead.
+
+#### AwsCloudAccountFeaturesWithExoConfigs
+
+- **`exocomputeConfigs`**: deprecated in favor of BYOK8s. Please use configs instead.
 
 #### AwsCustomerManagedExocomputeConfig
 
@@ -386,6 +385,14 @@ This document lists all deprecated fields, queries, mutations, and enum values i
 - **`ownerOrgName`**: This field has been deprecated in favor of ownerOrg field.
 - **`replicationSpec`**: Use replicationSpecsV2 instead.
 
+#### GpoLabelPaths
+
+- **`label`**: Use policy_insights instead.
+
+#### GpoSettingsChangeDataRes
+
+- **`labelPaths`**: Use policy_insight_details instead.
+
 #### IdentityMetadata
 
 - **`identityTags`**: This field is no longer populated. Use the principal summary\nquery instead.
@@ -450,6 +457,10 @@ This document lists all deprecated fields, queries, mutations, and enum values i
 
 - **`attributesSummary`**: No longer populated or consumed by any caller.
 
+#### QueryRCVReadersOwnerEncryptionKeyReply
+
+- **`ownerEncryptionKeyDetails`**: Use ownerEncryptionKeyDetailsOptional; this field is only present when ownerExists is true.
+
 #### RbacObject
 
 - **`objectId`**: Deprecated: use managedId instead.
@@ -493,6 +504,10 @@ This document lists all deprecated fields, queries, mutations, and enum values i
 #### RoleTemplate
 
 - **`permissions`**: Use explicitlyAssignedPermissions instead.
+
+#### RscTag
+
+- **`name`**: This field is deprecated. Use value instead.
 
 #### RubrikManagedAwsTarget
 
@@ -677,6 +692,7 @@ This document lists all deprecated fields, queries, mutations, and enum values i
 - **`AZURE_DEVOPS_REPO_SIZE`**: This field is deprecated and no longer used.
 - **`CATEGORY_UNSPECIFIED`**: Use AUTHENTICATION_AND_SECRET_MANAGEMENT instead.
 - **`CLOUD_ACCOUNT_UPDATE`**: Use CLUSTER_PEER_TOKEN_GET_AND_SET instead. Removed 2027/09/28.
+- **`CLOUD_COST_BY_PROVIDER_TABLE`**: Use CLOUD_COST_TABLE.
 - **`CLOUD_DIRECT`**: Nothing returns this sync type; it will be removed in a future release.
 - **`CLUSTER_DISCONNECTED`**: This reason is no longer used.
 - **`COLDLINE_GCP`**: Use STANDARD_GCP instead.

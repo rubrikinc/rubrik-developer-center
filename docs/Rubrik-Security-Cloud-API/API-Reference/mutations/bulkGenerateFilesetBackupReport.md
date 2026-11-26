@@ -1,12 +1,12 @@
 # bulkGenerateFilesetBackupReport
 
-BulkGenerateFilesetBackupReport generates backup reports for multiple fileset snapshots.
+Starts a success and failure report for each of several fileset snapshots. Returns one request status per snapshot, with an error for snapshots that could not start. Each report's status and download link appear in the events for the fileset, not through filesetRequestStatus.
 
 ## Arguments
 
 | Argument | Type | Description |
 |----------|------|-------------|
-| input *(required)* | [BulkGenerateFilesetBackupReportInput](../types/inputs/BulkGenerateFilesetBackupReportInput.md)! | Input containing snapshot IDs for which to generate backup reports. |
+| input *(required)* | [BulkGenerateFilesetBackupReportInput](../types/inputs/BulkGenerateFilesetBackupReportInput.md)! | Input fields: snapshotIds, the fileset snapshots to report on. |
 
 ## Returns
 

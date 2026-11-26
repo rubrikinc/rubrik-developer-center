@@ -1,6 +1,6 @@
 # tprPolicyDetail
 
-Details for a TPR policy.
+Returns the details of one quorum authorization (two-person rule) policy.
 
 ## Arguments
 

@@ -54,3 +54,9 @@ AWS native region.
 | numWorkloadDescendants | last | Int | Returns the last n elements from the list. |
 | numWorkloadDescendants | before | String | Returns the elements in the list that occur before the specified cursor. |
 | numWorkloadDescendants | objectTypes | [[ManagedObjectType](../enums/ManagedObjectType.md)!] | Types of objects to limit the results. If absent, all object types are returned. |
+
+## Used By
+
+**Queries**
+
+- [query: awsNativeRegions](../../queries/awsNativeRegions.md) *(via connection)*

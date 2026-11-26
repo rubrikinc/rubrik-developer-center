@@ -54,6 +54,7 @@ A snapshot of a workload managed by a Rubrik cluster.
 | locations | [[DataLocation](DataLocation.md)!] | All locations where the snapshot is present. |
 | managedVolumeAppMetadata | [ManagedVolumeAppMetadata](ManagedVolumeAppMetadata.md) | Managed Volume specific metadata for the snapshot. Null if snapshot is not of a managed volume. |
 | mariadbInstanceAppMetadata | [MariadbInstanceAppMetadata](MariadbInstanceAppMetadata.md) | MariaDB instance-specific metadata carrying the snapshot statistics and the full or differential snapshot type. Null if the snapshot is not of a MariaDB instance. |
+| mongoDatabaseAppMetadata | [MongoDatabaseAppMetadata](MongoDatabaseAppMetadata.md) | Mongo database specific metadata for the snapshot. Null if the snapshot is not of a Mongo database. |
 | mongoSourceAppMetadata | [MongoSourceAppMetadata](MongoSourceAppMetadata.md) | Mongo source specific metadata for the snapshot. |
 | mssqlAppMetadata | [MssqlAppMetadata](MssqlAppMetadata.md) | Mssql specific metadata for the snapshot. |
 | mysqldbInstanceAppMetadata | [KosmosWorkloadAppMetadata](KosmosWorkloadAppMetadata.md) | MySQL instance-specific metadata. Null if the snapshot is not of a MySQL Instance. |
@@ -63,6 +64,7 @@ A snapshot of a workload managed by a Rubrik cluster.
 | pendingSnapshotDeletion | [PendingSnapshotDeletion](PendingSnapshotDeletion.md) | Mapping from snapshot to delete pending action status. |
 | pingFederateAppMetadata | [PingFederateAppMetadata](PingFederateAppMetadata.md) | PingFederate-specific metadata for the snapshot. Null if the snapshot is not of a PingFederate cluster. |
 | postgresDbClusterAppMetadata | [PostgresDbClusterAppMetadata](PostgresDbClusterAppMetadata.md) | PostgreSQL Database Cluster-specific metadata. Null if the snapshot is not of a PostgreSQL Database Cluster. |
+| proxmoxSnapshotNetworkAdapters | [ProxmoxSnapshotNetworkAdapters](ProxmoxSnapshotNetworkAdapters.md) | Network interfaces the cluster recorded when the Proxmox virtual machine snapshot was taken. Null if the snapshot is not of a Proxmox virtual machine or carries no interface record; an empty list means the virtual machine had no network interfaces. |
 | replicationLocations | [[DataLocation](DataLocation.md)!] | Replication locations where the snapshot is present. |
 | resourceSpec | String | Resource spec JSON, if present. |
 | retentionLockModeAcrossLocations | [RetentionLockMode](../enums/RetentionLockMode.md) | Retention lock mode across locations. |
@@ -84,6 +86,7 @@ A snapshot of a workload managed by a Rubrik cluster.
 
 **Referenced by**
 
+- [ActiveDirectoryCleanRecoveryConfig.preferredSnapshot](ActiveDirectoryCleanRecoveryConfig.md)
 - [ActiveDirectoryDomainController.newestArchivedSnapshot](ActiveDirectoryDomainController.md)
 - [ActiveDirectoryDomainController.newestCleanSnapshot](ActiveDirectoryDomainController.md)
 - [ActiveDirectoryDomainController.newestIndexedSnapshot](ActiveDirectoryDomainController.md)
@@ -113,5 +116,4 @@ A snapshot of a workload managed by a Rubrik cluster.
 - [ExchangeDatabase.newestIndexedSnapshot](ExchangeDatabase.md)
 - [ExchangeDatabase.newestReplicatedSnapshot](ExchangeDatabase.md)
 - [ExchangeDatabase.newestSnapshot](ExchangeDatabase.md)
-- [ExchangeDatabase.oldestSnapshot](ExchangeDatabase.md)
-- *…and 194 more*
+- *…and 195 more*

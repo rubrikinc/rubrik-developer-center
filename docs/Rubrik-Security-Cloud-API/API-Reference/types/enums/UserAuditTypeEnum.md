@@ -39,4 +39,5 @@ User audit type.
 | THREAT_FEED | Audit type for Intel feed. |
 | THREAT_HUNT | Audit type for threat hunt use cases. |
 | THREAT_MONITORING | Audit type for Threat Monitoring enable/disable on a cluster, cloud account, subscription, project, or M365 organization. |
+| TPR | Audit type for Quorum Authorization requests, policies and configuration. |
 | UnknownUserAuditType | Unknown user audit type. |

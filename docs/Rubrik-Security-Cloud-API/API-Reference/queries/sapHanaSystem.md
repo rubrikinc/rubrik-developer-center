@@ -1,12 +1,12 @@
 # sapHanaSystem
 
-Details of a SAP HANA system for a given FID.
+Returns one SAP HANA system by its Rubrik ID; find IDs with sapHanaSystems.
 
 ## Arguments
 
 | Argument | Type | Description |
 |----------|------|-------------|
-| fid *(required)* | [UUID](../types/scalars/UUID.md)! | Rubrik UUID for the object. |
+| fid *(required)* | [UUID](../types/scalars/UUID.md)! | Rubrik ID of the SAP HANA system. |
 
 ## Returns
 

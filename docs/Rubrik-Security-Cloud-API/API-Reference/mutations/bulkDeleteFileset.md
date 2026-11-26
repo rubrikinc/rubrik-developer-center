@@ -1,12 +1,12 @@
 # bulkDeleteFileset
 
-Delete filesets Supported in v5.0+ Delete filesets by specifying the fileset IDs.
+Deletes the given filesets. Existing snapshots are kept by default, set preserveSnapshots to false to delete them.
 
 ## Arguments
 
 | Argument | Type | Description |
 |----------|------|-------------|
-| input *(required)* | [BulkDeleteFilesetInput](../types/inputs/BulkDeleteFilesetInput.md)! | Input for InternalBulkDeleteFileset. |
+| input *(required)* | [BulkDeleteFilesetInput](../types/inputs/BulkDeleteFilesetInput.md)! | IDs of the filesets and an optional preserveSnapshots flag. |
 
 ## Returns
 

@@ -37,6 +37,7 @@ Cluster feature identifiers.
 | ARCHIVAL_QSTAR | ARCHIVAL_QSTAR. |
 | ASSIGN_SLA_FOR_CDM_ARCHIVAL_SNAPSHOT_DOWNLOAD | Supports assigning an SLA Domain for snapshot downloaded from archival location. |
 | CDM_LOCATION_UPGRADE | Upgrade CDM managed archival locations. |
+| CLOUD_REHYDRATION_SPEED_FOR_CDM_ARCHIVAL_SNAPSHOT_DOWNLOAD | Support for choosing the retrieval tier of an archival snapshot download. |
 | DOWNLOAD_REPLICATED_SNAPSHOT | Download snapshot from replication target. |
 | HYPERV_BATCH_ON_DEMAND_BACKUP | HYPERV_BATCH_ON_DEMAND_BACKUP. |
 | HYPERV_CHANGE_RETENTION | HYPERV_CHANGE_RETENTION. |

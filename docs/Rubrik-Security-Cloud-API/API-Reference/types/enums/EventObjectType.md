@@ -94,6 +94,7 @@ Enum representing all the possible object types which generate events.
 | GCP_ALLOY_DB_CLUSTER | GCP AlloyDB Cluster. |
 | GCP_BIG_QUERY_DATASET | GCP BigQuery Dataset. |
 | GCP_CLOUD_SQL_INSTANCE | GCP Cloud SQL Instance. |
+| GCP_GCS_BUCKET | GCP GCS Bucket. |
 | GCP_NATIVE_DISK | GCP native disk. |
 | GCP_NATIVE_GCE_INSTANCE | GCP native GCE instance. |
 | GCP_NATIVE_PROJECT | GCP native project. |
@@ -310,6 +311,13 @@ Enum representing all the possible object types which generate events.
 | SALESFORCE_OBJECT | Salesforce objects. |
 | SALESFORCE_ORGANIZATION | Salesforce organization. |
 | SAML_SSO | SAML single sign-on. |
+| SANGFOR_AVAILABILITY_ZONE | Sangfor availability zone (resource pool). |
+| SANGFOR_CLUSTER | Sangfor cluster. |
+| SANGFOR_DATASTORE | Sangfor datastore. |
+| SANGFOR_HOST | Sangfor host. |
+| SANGFOR_NETWORK | Sangfor network. |
+| SANGFOR_SCP | Sangfor Cloud Platform (SCP) manager. |
+| SANGFOR_VIRTUAL_MACHINE | Sangfor virtual machine. |
 | SAP_HANA_DB | SAP HANA database. |
 | SAP_HANA_SYSTEM | SAP HANA system. |
 | SHARE_FILESET | Share fileset object. |

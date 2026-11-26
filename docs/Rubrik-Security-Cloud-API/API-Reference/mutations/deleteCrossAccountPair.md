@@ -1,6 +1,6 @@
 # deleteCrossAccountPair
 
-Delete cross-account pair.
+Deletes a cross-account pair between two Rubrik Security Cloud accounts.
 
 ## Arguments
 

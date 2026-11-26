@@ -6,7 +6,7 @@ Get a time series of total incoming bandwidth to the replication clusters.
 
 | Argument | Type | Description |
 |----------|------|-------------|
-| input *(required)* | [ReplicationBandwidthIncomingInput](../types/inputs/ReplicationBandwidthIncomingInput.md)! | Input for InternalReplicationBandwidthIncoming. |
+| input *(required)* | [ReplicationBandwidthIncomingInput](../types/inputs/ReplicationBandwidthIncomingInput.md)! | The Rubrik cluster UUID and an optional range such as -1h (default). |
 
 ## Returns
 

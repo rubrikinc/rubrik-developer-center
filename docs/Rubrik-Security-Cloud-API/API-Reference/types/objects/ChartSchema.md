@@ -15,4 +15,5 @@ The chart schema that contains all available charts of the the report.
 
 **Referenced by**
 
+- [PolarisReportSchema.chartSchema](PolarisReportSchema.md)
 - [RscReportTemplate.chartSchema](RscReportTemplate.md)

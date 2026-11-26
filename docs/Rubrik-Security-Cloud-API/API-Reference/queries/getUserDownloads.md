@@ -1,6 +1,6 @@
 # getUserDownloads
 
-GetUserDownloads returns downloads of a user in the last 24 hours.
+Lists the calling user's file downloads that are pending or active, and those that completed in the last 24 hours. Get a file's link with getDownloadUrl.
 
 ## Arguments
 

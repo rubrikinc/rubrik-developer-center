@@ -1,12 +1,12 @@
 # downloadSapHanaSnapshot
 
-Download SAP HANA database snapshot from archive Supported in v8.0+ Downloads a specific SAP HANA database snapshot from the specified archival location.
+Downloads one SAP HANA database snapshot from an archival location to the Rubrik cluster. Returns the async request.
 
 ## Arguments
 
 | Argument | Type | Description |
 |----------|------|-------------|
-| input *(required)* | [DownloadSapHanaSnapshotInput](../types/inputs/DownloadSapHanaSnapshotInput.md)! | Input for V1DownloadSapHanaSnapshot. |
+| input *(required)* | [DownloadSapHanaSnapshotInput](../types/inputs/DownloadSapHanaSnapshotInput.md)! | The snapshot ID and the archival location ID. |
 
 ## Returns
 

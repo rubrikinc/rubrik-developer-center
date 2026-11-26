@@ -1,6 +1,6 @@
 # userAuditConnection
 
-Paginated list of user audit data. Each page of the results will include at most 50 entries unless otherwise specified using the first parameter. Query the pageInfo.hasNextPage field to know whether all audits were returned.
+Paginated list of user audit entries, newest first by default, up to 1,000 per page (also the default when first is omitted). Returns an empty list without permission to view the audit log.
 
 ## Arguments
 

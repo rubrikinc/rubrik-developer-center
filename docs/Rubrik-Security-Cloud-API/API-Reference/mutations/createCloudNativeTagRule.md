@@ -1,6 +1,6 @@
 # createCloudNativeTagRule
 
-Tag Rules CRUD Create cloud native tag rule
+Creates a cloud native tag rule, which assigns an SLA Domain to cloud resources by tag.
 
 ## Arguments
 

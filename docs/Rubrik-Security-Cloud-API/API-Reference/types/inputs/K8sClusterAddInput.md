@@ -22,14 +22,14 @@ Supported in v9.0+ Input to add a Kubernetes cluster.
 | kubeconfig | String | Supported in v9.0+ Kubeconfig is a YAML string to store Kubernetes cluster authentication information. You can get this config file directly from the cluster administrator or from a cloud platform if you are using managed Kubernetes cluster. |
 | kuprServerProxyConfig | [KuprServerProxyConfigInput](KuprServerProxyConfigInput.md) | Supported in v9.2+ The configuration for the kupr server proxy to be added. |
 | loadBalancerAnnotations | [ClusterAddLoadBalancerAnnotationInput](ClusterAddLoadBalancerAnnotationInput.md) | Annotations to set on the load balancer Service for the Kubernetes cluster. Only used when transport is loadbalancer. When non-empty, this map replaces the built-in per-distribution annotations entirely. |
-| maxConcurrentAgents | Int | Supported in v9.6+ Maximum number of kupr backup agents allowed to run concurrently against this Kubernetes cluster. Set to 0 (or omit) to leave the throttle unlimited. |
+| maxConcurrentAgents | Int | Supported in v9.6+ Maximum number of kupr backup agents allowed to run concurrently against this Kubernetes cluster. A positive value is required for the batched PVC workflow. Set to 0 (or omit) to disable the batched PVC workflow. This field then sets no limit on agents, but other throttle configs may still apply. |
 | maxPvcsPerAgent | Int | Supported in v9.6+ Maximum number of PVCs assigned to a single kupr backup agent. Required by the count grouping strategy and used as a per-group cap for the node_affinity strategy. Defaults to 30 when omitted. Set to 0 to disable the per-agent cap. |
 | nadName | String | Supported in v9.4+ The name of the network attachment definition object. |
 | nadNamespace | String | Supported in v9.4+ The namespace to which the network attachment definition object belongs. |
 | name | String! | Required. Supported in v9.0+ Name of the Kubernetes cluster to be added. |
 | onboardingType | String | Supported in v9.2+ The type of onboarding. It can be kubeconfig or manifest. |
 | pullSecret | String | Supported in v9.1+ The pull secret required for pulling Rubrik container images. |
-| pvcGroupingStrategy | String | Supported in v9.6+ PVC grouping strategy used for multi-agent backup. Determines how PVCs are partitioned across kupr backup agents. One of: node_affinity, count, none. Defaults to node_affinity when omitted. |
+| pvcGroupingStrategy | String | Supported in v9.6+ PVC grouping strategy used for multi-agent backup. Determines how PVCs are partitioned across kupr backup agents. One of: node_affinity, count. Defaults to node_affinity when omitted. |
 | region | String | Supported in v9.1+ Region of the Kubernetes cluster to be added. |
 | registry | String | Supported in v9.0+ Container registry URL for storing Rubrik container images. |
 | serviceAccountName | String | Supported in v9.1+ The name of the RSC service account. |

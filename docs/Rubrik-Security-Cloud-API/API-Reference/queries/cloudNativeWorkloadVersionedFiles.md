@@ -1,6 +1,6 @@
 # cloudNativeWorkloadVersionedFiles
 
-List all files and directories in a given snappable with the given prefix in name.
+Lists the files and folders in a cloud native workload whose name or path starts with the given text.
 
 ## Arguments
 
@@ -10,7 +10,7 @@ List all files and directories in a given snappable with the given prefix in nam
 | after | String | An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results. |
 | last | Int | Returns the last n elements from the list. |
 | before | String | An opaque cursor returned from a previous query's startCursor field. Pass this value verbatim to retrieve the previous page of results. |
-| snappableId *(required)* | [UUID](../types/scalars/UUID.md)! | Snappable ID. |
+| snappableId *(required)* | [UUID](../types/scalars/UUID.md)! | ID of the workload. |
 | searchQuery *(required)* | String! | Specify either the name or path prefix argument to search for files within a workload. |
 
 ## Returns

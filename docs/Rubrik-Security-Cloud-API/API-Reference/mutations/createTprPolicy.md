@@ -1,6 +1,6 @@
 # createTprPolicy
 
-Create a TPR policy.
+Creates a quorum authorization (two-person rule) policy.
 
 ## Arguments
 

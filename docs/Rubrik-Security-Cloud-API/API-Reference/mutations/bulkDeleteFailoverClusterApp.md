@@ -1,12 +1,12 @@
 # bulkDeleteFailoverClusterApp
 
-Delete failover cluster applications Supported in v5.3+ Delete failover cluster applications from Rubrik cluster.
+Deletes the given failover cluster apps from a Rubrik cluster. Existing snapshots are kept by default, set preserveSnapshots to false to delete them.
 
 ## Arguments
 
 | Argument | Type | Description |
 |----------|------|-------------|
-| input *(required)* | [BulkDeleteFailoverClusterAppInput](../types/inputs/BulkDeleteFailoverClusterAppInput.md)! | Input for V1BulkDeleteFailoverClusterApp. |
+| input *(required)* | [BulkDeleteFailoverClusterAppInput](../types/inputs/BulkDeleteFailoverClusterAppInput.md)! | IDs of the failover cluster apps and an optional preserveSnapshots flag. |
 
 ## Returns
 

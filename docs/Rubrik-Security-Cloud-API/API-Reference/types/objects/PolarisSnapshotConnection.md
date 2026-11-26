@@ -38,11 +38,11 @@ Paginated list of PolarisSnapshot objects. Each page of the results includes at 
 - [GcpAlloyDbCluster.snapshotConnection](GcpAlloyDbCluster.md)
 - [GcpBigQueryDataset.snapshotConnection](GcpBigQueryDataset.md)
 - [GcpCloudSqlInstance.snapshotConnection](GcpCloudSqlInstance.md)
+- [GcpGcsBucket.snapshotConnection](GcpGcsBucket.md)
 - [GcpNativeDisk.snapshotConnection](GcpNativeDisk.md)
 - [GcpNativeGceInstance.snapshotConnection](GcpNativeGceInstance.md)
+- [GcpSpannerDatabase.snapshotConnection](GcpSpannerDatabase.md)
 - [GithubRepository.snapshotConnection](GithubRepository.md)
 - [GlueIcebergTable.snapshotConnection](GlueIcebergTable.md)
 - [GoogleWorkspaceSharedDrive.snapshotConnection](GoogleWorkspaceSharedDrive.md)
-- [GoogleWorkspaceUserDrive.snapshotConnection](GoogleWorkspaceUserDrive.md)
-- [GoogleWorkspaceUserMailbox.snapshotConnection](GoogleWorkspaceUserMailbox.md)
-- *…and 29 more*
+- *…and 32 more*

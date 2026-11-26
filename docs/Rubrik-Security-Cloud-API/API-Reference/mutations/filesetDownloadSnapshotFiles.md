@@ -1,12 +1,12 @@
 # filesetDownloadSnapshotFiles
 
-Download files from a fileset backup Supported in v5.0+ Start an asynchronous job to download multiple files and folders from a specified fileset backup. The response returns an asynchronous request ID. Get the URL for downloading the ZIP file including the specific files/folders by sending a GET request to 'fileset/request/{id}'.
+Starts a job that packages files and folders from a fileset snapshot into a ZIP file for download; poll the returned request ID with filesetRequestStatus to get the download link.
 
 ## Arguments
 
 | Argument | Type | Description |
 |----------|------|-------------|
-| input *(required)* | [FilesetDownloadSnapshotFilesInput](../types/inputs/FilesetDownloadSnapshotFilesInput.md)! | Input for fileset download snapshot files. |
+| input *(required)* | [FilesetDownloadSnapshotFilesInput](../types/inputs/FilesetDownloadSnapshotFilesInput.md)! | The fileset snapshot and the paths to download. |
 
 ## Returns
 

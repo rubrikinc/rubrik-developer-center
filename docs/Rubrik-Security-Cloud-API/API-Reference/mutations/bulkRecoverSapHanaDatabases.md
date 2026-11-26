@@ -1,12 +1,12 @@
 # bulkRecoverSapHanaDatabases
 
-Bulk recovery of SAP HANA databases to a point in time Supported in v9.4+ Recover multiple SAP HANA databases to the provided point in time.
+Not supported yet: the Rubrik cluster rejects this call as not implemented. To recover a SAP HANA database to a point in time, use recoverSapHanaDatabaseToPointInTime.
 
 ## Arguments
 
 | Argument | Type | Description |
 |----------|------|-------------|
-| input *(required)* | [BulkRecoverSapHanaDatabasesInput](../types/inputs/BulkRecoverSapHanaDatabasesInput.md)! | Input for V1BulkRecoverSapHanaDatabases. |
+| input *(required)* | [BulkRecoverSapHanaDatabasesInput](../types/inputs/BulkRecoverSapHanaDatabasesInput.md)! | Database IDs, the recovery time and whether to use the nearest point after or before it, whether to initialize the log area, and an optional source-to-target map for system copy. |
 
 ## Returns
 

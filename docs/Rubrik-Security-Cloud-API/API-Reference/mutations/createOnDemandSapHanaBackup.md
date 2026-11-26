@@ -1,12 +1,12 @@
 # createOnDemandSapHanaBackup
 
-Create on demand database snapshot Supported in v5.3+ Initiates a job to take an on demand full snapshot of a specified SAP HANA database object. The GET /sap_hana/db/request/{id} endpoint can be used to monitor the progress of the job.
+Starts an on-demand full backup of a SAP HANA database, optionally kept under a given SLA Domain; for differential or incremental backups use createOnDemandSapHanaDataBackup. Returns the async request; track it with jobInfo (type SAP_HANA_DATABASE, requestId = the returned id, clusterUuid = the cluster's UUID).
 
 ## Arguments
 
 | Argument | Type | Description |
 |----------|------|-------------|
-| input *(required)* | [CreateOnDemandSapHanaBackupInput](../types/inputs/CreateOnDemandSapHanaBackupInput.md)! | Input for V1CreateOnDemandSapHanaBackup. |
+| input *(required)* | [CreateOnDemandSapHanaBackupInput](../types/inputs/CreateOnDemandSapHanaBackupInput.md)! | The database ID and an optional SLA Domain ID for the backup. |
 
 ## Returns
 

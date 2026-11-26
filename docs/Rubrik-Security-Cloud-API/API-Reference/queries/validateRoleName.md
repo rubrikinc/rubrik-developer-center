@@ -1,6 +1,6 @@
 # validateRoleName
 
-Validate a role name.
+Checks whether a role name can be used in the caller's organization and returns a validity status.
 
 ## Arguments
 

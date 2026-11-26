@@ -1,6 +1,6 @@
 # setCloudNativeGatewayKmsKeys
 
-SetCloudNativeGatewayKmsKeys sets the map of the region to the KMS key ARN for gateway encryption.
+Sets, per region, the ARN of the AWS KMS key Rubrik uses to re-encrypt snapshots copied into that region.
 
 ## Arguments
 

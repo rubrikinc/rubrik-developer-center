@@ -1,6 +1,6 @@
 # validateAdForestTransition
 
-Validates if given account is ready to transition from Active Directory domain inventory page to Active Directory forest inventory page.
+Checks whether the account can switch from the domain-based to the forest-based Active Directory inventory. Returns OK, INTERNAL_ERROR, or CLUSTER_UNSUPPORTED when some clusters do not support it.
 
 ## Returns
 

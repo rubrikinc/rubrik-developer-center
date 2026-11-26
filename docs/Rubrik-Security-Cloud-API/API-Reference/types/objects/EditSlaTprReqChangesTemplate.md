@@ -1,6 +1,6 @@
 # EditSlaTprReqChangesTemplate
 
-*No description available.*
+Template for TPR Requested Changes for Edit SLA.
 
 **Implements:** [RequestedChangesTemplate](../interfaces/RequestedChangesTemplate.md)
 

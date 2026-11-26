@@ -20,6 +20,7 @@ Supported in v5.0+
 
 **Queries**
 
+- [query: activeDirectoryAsyncRequestStatus](../../queries/activeDirectoryAsyncRequestStatus.md)
 - [query: checkCloudComputeConnectivityJobProgress](../../queries/checkCloudComputeConnectivityJobProgress.md)
 - [query: db2DatabaseJobStatus](../../queries/db2DatabaseJobStatus.md)
 - [query: filesetRequestStatus](../../queries/filesetRequestStatus.md)
@@ -47,6 +48,7 @@ Supported in v5.0+
 - [mutation: bulkRecoverSapHanaDatabases](../../mutations/bulkRecoverSapHanaDatabases.md)
 - [mutation: bulkTierExistingSnapshots](../../mutations/bulkTierExistingSnapshots.md)
 - [mutation: bulkUpdateSystemConfig](../../mutations/bulkUpdateSystemConfig.md)
+- [mutation: configureLogExport](../../mutations/configureLogExport.md)
 - [mutation: configureSapHanaRestore](../../mutations/configureSapHanaRestore.md)
 - [mutation: createActiveDirectoryDownloadFilesJob](../../mutations/createActiveDirectoryDownloadFilesJob.md)
 - [mutation: createActiveDirectoryLiveMount](../../mutations/createActiveDirectoryLiveMount.md)
@@ -65,7 +67,6 @@ Supported in v5.0+
 - [mutation: createNutanixCluster](../../mutations/createNutanixCluster.md)
 - [mutation: createOnDemandDb2Backup](../../mutations/createOnDemandDb2Backup.md)
 - [mutation: createOnDemandExchangeBackup](../../mutations/createOnDemandExchangeBackup.md)
-- [mutation: createOnDemandMongoDatabaseBackup](../../mutations/createOnDemandMongoDatabaseBackup.md)
 - [mutation: createOnDemandMongoDatabaseBackupV2](../../mutations/createOnDemandMongoDatabaseBackupV2.md)
 - [mutation: createOnDemandMssqlBackup](../../mutations/createOnDemandMssqlBackup.md)
 - [mutation: createOnDemandMysqldbInstanceSnapshot](../../mutations/createOnDemandMysqldbInstanceSnapshot.md)
@@ -259,6 +260,7 @@ Supported in v5.0+
 
 **Referenced by**
 
+- [ActiveDirectoryForestRestoreStatus.status](ActiveDirectoryForestRestoreStatus.md)
 - [AddDb2InstanceReply.asyncRequestStatus](AddDb2InstanceReply.md)
 - [AddManagedVolumeReply.asyncRequestStatus](AddManagedVolumeReply.md)
 - [AddMongoSourceReply.asyncRequestStatus](AddMongoSourceReply.md)
@@ -288,5 +290,4 @@ Supported in v5.0+
 - [PatchSapHanaSystemReply.asyncRequestStatus](PatchSapHanaSystemReply.md)
 - [PitRestoreMysqldbInstanceResponse.asyncRequestStatus](PitRestoreMysqldbInstanceResponse.md)
 - [PitRestorePostgresDbClusterResponse.asyncRequestStatus](PitRestorePostgresDbClusterResponse.md)
-- [RegisterNasSystemReply.nasDiscoverJobStatus](RegisterNasSystemReply.md)
-- *…and 4 more*
+- *…and 6 more*

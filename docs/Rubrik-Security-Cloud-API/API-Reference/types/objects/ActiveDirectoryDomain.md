@@ -87,3 +87,5 @@ Active Directory Domain.
 **Referenced by**
 
 - [ActiveDirectoryDomainController.activeDirectoryDomain](ActiveDirectoryDomainController.md)
+- [PromoteHostForestRestoreJobStatus.domain](PromoteHostForestRestoreJobStatus.md)
+- [UnifiedActiveDirectoryDomain.domains](UnifiedActiveDirectoryDomain.md)

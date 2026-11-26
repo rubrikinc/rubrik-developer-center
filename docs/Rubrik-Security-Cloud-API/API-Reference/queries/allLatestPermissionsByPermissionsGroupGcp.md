@@ -6,7 +6,7 @@ Details of all the supported permission groups for the specified features.
 
 | Argument | Type | Description |
 |----------|------|-------------|
-| features *(required)* | [[CloudAccountFeature](../types/enums/CloudAccountFeature.md)!]! | The cloud account features whose permission groups are requested. |
+| features *(required)* | [[CloudAccountFeature](../types/enums/CloudAccountFeature.md)!]! | The cloud account features whose permission groups to return. |
 
 ## Returns
 

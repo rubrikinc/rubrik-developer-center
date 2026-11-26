@@ -1,6 +1,6 @@
 # tableFilters
 
-*No description available.*
+Deprecated and no longer supported; do not use in new integrations.
 
 ## Returns
 

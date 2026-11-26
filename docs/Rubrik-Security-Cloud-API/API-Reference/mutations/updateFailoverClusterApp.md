@@ -1,12 +1,12 @@
 # updateFailoverClusterApp
 
-Update a failover cluster app Supported in v5.2+ Update the failover cluster app with specified properties.
+Changes a failover cluster app's name, cluster, source, or SLA Domain.
 
 ## Arguments
 
 | Argument | Type | Description |
 |----------|------|-------------|
-| input *(required)* | [UpdateFailoverClusterAppInput](../types/inputs/UpdateFailoverClusterAppInput.md)! | Input for V1UpdateFailoverClusterApp. |
+| input *(required)* | [UpdateFailoverClusterAppInput](../types/inputs/UpdateFailoverClusterAppInput.md)! | ID of the app and updateProperties. name, failoverClusterId, failoverClusterType and failoverClusterAppSource are required, so send the full configuration. configuredSlaDomainId is optional. |
 
 ## Returns
 

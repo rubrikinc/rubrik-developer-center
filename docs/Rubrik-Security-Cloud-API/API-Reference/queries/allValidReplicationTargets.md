@@ -1,6 +1,6 @@
 # allValidReplicationTargets
 
-Lists all valid replication target clusters.
+Lists Rubrik clusters that can be chosen as replication targets.
 
 ## Arguments
 
@@ -12,7 +12,7 @@ Lists all valid replication target clusters.
 | before | String | An opaque cursor returned from a previous query's startCursor field. Pass this value verbatim to retrieve the previous page of results. |
 | sortBy | [ListValidReplicationTargetsSortByField](../types/enums/ListValidReplicationTargetsSortByField.md) | Field to sort by for valid replication targets. |
 | sortOrder | [SortOrder](../types/enums/SortOrder.md) | Sort order. |
-| isCrossAccount | Boolean | Deprecated. Use ListValidReplicationTargetFilter instead. |
+| isCrossAccount | Boolean | Deprecated; use validReplicationTargetFilter instead. |
 | validReplicationTargetFilter | [ListValidReplicationTargetFilter](../types/inputs/ListValidReplicationTargetFilter.md) | Filter to retrieve valid replication targets. |
 
 ## Returns

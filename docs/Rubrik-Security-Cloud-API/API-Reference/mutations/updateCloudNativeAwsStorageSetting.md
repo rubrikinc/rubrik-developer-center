@@ -6,7 +6,7 @@ Update storage settings for archiving AWS cloud native protected objects.
 
 | Argument | Type | Description |
 |----------|------|-------------|
-| input *(required)* | [UpdateCloudNativeAwsStorageSettingInput](../types/inputs/UpdateCloudNativeAwsStorageSettingInput.md)! | Update AWS cloud native storage setting. |
+| input *(required)* | [UpdateCloudNativeAwsStorageSettingInput](../types/inputs/UpdateCloudNativeAwsStorageSettingInput.md)! | ID of the storage setting and the values to change: name, storage class, KMS key, bucket tags, or deletion of all bucket tags. The Intelligent-Tiering storage class is not supported. |
 
 ## Returns
 

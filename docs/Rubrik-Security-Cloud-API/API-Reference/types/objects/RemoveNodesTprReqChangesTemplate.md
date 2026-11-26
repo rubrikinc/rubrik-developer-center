@@ -1,6 +1,6 @@
 # RemoveNodesTprReqChangesTemplate
 
-*No description available.*
+Remove cluster nodes TPR requested-changes template.
 
 **Implements:** [RequestedChangesTemplate](../interfaces/RequestedChangesTemplate.md)
 

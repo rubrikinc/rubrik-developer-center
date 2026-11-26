@@ -1,6 +1,6 @@
 # cloudNativeCheckRequiredPermissionsForFeature
 
-Queries whether Polaris has the required permissions for a particular feature.
+Checks whether Rubrik has the permissions a feature needs on a cloud account.
 
 ## Arguments
 

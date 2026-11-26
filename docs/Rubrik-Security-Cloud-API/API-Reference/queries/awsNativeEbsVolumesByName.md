@@ -1,6 +1,6 @@
 # awsNativeEbsVolumesByName
 
-Lists the AWS Native EBS volumes under the AWS-native hierarchy root whose name or volume ID matches the given substring.
+Lists the Amazon EBS volumes in the AWS accounts added to Rubrik whose name or volume ID contains the given text.
 
 ## Arguments
 

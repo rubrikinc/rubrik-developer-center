@@ -1,12 +1,12 @@
 # hostFailoverCluster
 
-Get details of the given host failover cluster.
+Returns the details of a host failover cluster.
 
 ## Arguments
 
 | Argument | Type | Description |
 |----------|------|-------------|
-| fid *(required)* | [UUID](../types/scalars/UUID.md)! | Rubrik UUID for the object. |
+| fid *(required)* | [UUID](../types/scalars/UUID.md)! | ID of the host failover cluster. |
 
 ## Returns
 

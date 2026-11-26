@@ -48,9 +48,9 @@ Polaris protectable object.
 | oldestSnapshot | backupLocationId | String | Filter snapshots by backup location id. |
 | onDemandSnapshotCount | backupLocationId | String | Filter snapshots by backup location id. |
 | snapshotConnection | first | Int | Returns the first n elements from the list. |
-| snapshotConnection | after | String | Returns the elements in the list that occur after the specified cursor. |
+| snapshotConnection | after | String | An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results. |
 | snapshotConnection | last | Int | Returns the last n elements from the list. |
-| snapshotConnection | before | String | Returns the elements in the list that occur before the specified cursor. |
+| snapshotConnection | before | String | An opaque cursor returned from a previous query's startCursor field. Pass this value verbatim to retrieve the previous page of results. |
 | snapshotConnection | filter | [PolarisSnapshotFilterInput](../inputs/PolarisSnapshotFilterInput.md) | Filter the Rubrik Security Cloud snapshot connection. |
 | snapshotConnection | sortBy | [PolarisSnapshotSortByEnum](../enums/PolarisSnapshotSortByEnum.md) | Sort Rubrik Security Cloud snapshots by field. |
 | snapshotConnection | sortOrder | [SortOrder](../enums/SortOrder.md) | Sorts the order of results. |
@@ -70,9 +70,9 @@ Polaris protectable object.
 | snapshotGroupByNewConnection | snapshotFilter *(required)* | [[PolarisSnapshotFilterNewInput](../inputs/PolarisSnapshotFilterNewInput.md)!]! | Filter the Rubrik Security Cloud snapshot connection. |
 | snapshotGroupByNewConnection | snapshotGroupBy *(required)* | [SnapshotGroupByTime](../enums/SnapshotGroupByTime.md)! | Group Rubrik Security Cloud snapshots by field. |
 | workloadSnapshotConnection | first | Int | Returns the first n elements from the list. |
-| workloadSnapshotConnection | after | String | Returns the elements in the list that occur after the specified cursor. |
+| workloadSnapshotConnection | after | String | An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results. |
 | workloadSnapshotConnection | last | Int | Returns the last n elements from the list. |
-| workloadSnapshotConnection | before | String | Returns the elements in the list that occur before the specified cursor. |
+| workloadSnapshotConnection | before | String | An opaque cursor returned from a previous query's startCursor field. Pass this value verbatim to retrieve the previous page of results. |
 | workloadSnapshotConnection | workloadId *(required)* | String! | The FID of the workload. |
 | workloadSnapshotConnection | snapshotFilter | [[SnapshotQueryFilterInput](../inputs/SnapshotQueryFilterInput.md)!] | Filters for snapshot connection. |
 | workloadSnapshotConnection | sortOrder | [SortOrder](../enums/SortOrder.md) | Sorts the order of results. |
@@ -104,8 +104,10 @@ Polaris protectable object.
 - [GcpAlloyDbCluster](../objects/GcpAlloyDbCluster.md)
 - [GcpBigQueryDataset](../objects/GcpBigQueryDataset.md)
 - [GcpCloudSqlInstance](../objects/GcpCloudSqlInstance.md)
+- [GcpGcsBucket](../objects/GcpGcsBucket.md)
 - [GcpNativeDisk](../objects/GcpNativeDisk.md)
 - [GcpNativeGceInstance](../objects/GcpNativeGceInstance.md)
+- [GcpSpannerDatabase](../objects/GcpSpannerDatabase.md)
 - [GithubRepository](../objects/GithubRepository.md)
 - [GlueIcebergTable](../objects/GlueIcebergTable.md)
 - [GoogleWorkspaceSharedDrive](../objects/GoogleWorkspaceSharedDrive.md)
@@ -118,6 +120,7 @@ Polaris protectable object.
 - [M365BackupStorageOnedrive](../objects/M365BackupStorageOnedrive.md)
 - [M365BackupStorageOrg](../objects/M365BackupStorageOrg.md)
 - [M365BackupStorageSite](../objects/M365BackupStorageSite.md)
+- [M365ConfigsWorkload](../objects/M365ConfigsWorkload.md)
 - [O365Calendar](../objects/O365Calendar.md)
 - [O365Group](../objects/O365Group.md)
 - [O365Mailbox](../objects/O365Mailbox.md)

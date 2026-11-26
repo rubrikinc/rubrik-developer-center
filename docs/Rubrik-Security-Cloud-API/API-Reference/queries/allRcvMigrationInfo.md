@@ -1,12 +1,12 @@
 # allRcvMigrationInfo
 
-Gets migration related information for a location undergoing conversion to an RCV location.
+Returns migration information for a data center archival location that is being migrated to Rubrik Cloud Vault. Fails if no migration is in progress.
 
 ## Arguments
 
 | Argument | Type | Description |
 |----------|------|-------------|
-| locationId *(required)* | [UUID](../types/scalars/UUID.md)! | ID of the source location undergoing migration to RCV. This will be template location id for a cloud native location and location id for a data center location. |
+| locationId *(required)* | [UUID](../types/scalars/UUID.md)! | ID of the data center archival location being migrated. |
 
 ## Returns
 

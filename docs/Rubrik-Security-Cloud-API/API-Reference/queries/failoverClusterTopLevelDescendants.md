@@ -1,6 +1,6 @@
 # failoverClusterTopLevelDescendants
 
-Get a summary of all failover cluster top level descendants.
+Lists the host failover clusters, failover cluster apps, and Linux and Windows filesets under the Linux or Windows host root.
 
 ## Arguments
 
@@ -8,11 +8,11 @@ Get a summary of all failover cluster top level descendants.
 |----------|------|-------------|
 | first | Int | Returns the first n elements from the list. |
 | after | String | An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results. |
-| sortBy | [HierarchySortByField](../types/enums/HierarchySortByField.md) | Sort hierarchy objects according to the hierarchy field. |
+| sortBy | [HierarchySortByField](../types/enums/HierarchySortByField.md) | Field to sort by; results are sorted only when sortOrder is also set. |
 | sortOrder | [SortOrder](../types/enums/SortOrder.md) | Sorts the order of results. |
-| typeFilter | [[HierarchyObjectTypeEnum](../types/enums/HierarchyObjectTypeEnum.md)!] | Types of objects to include. |
-| filter | [[Filter](../types/inputs/Filter.md)!] | Hierarchy object filter. |
-| hostFailoverClusterRoot *(required)* | [HostFailoverClusterRoot](../types/enums/HostFailoverClusterRoot.md)! | Host failover cluster root type. |
+| typeFilter | [[HierarchyObjectTypeEnum](../types/enums/HierarchyObjectTypeEnum.md)!] | Object types to include. |
+| filter | [[Filter](../types/inputs/Filter.md)!] | Filters the results by object fields. Supported fields: NAME, NAME_EXACT_MATCH, NAME_PREFIX, IS_RELIC, IS_GHOST, IS_ARCHIVED, CLUSTER_ID, and IS_REPLICATED. Ghost objects and hidden replicas are excluded unless IS_GHOST or IS_REPLICATED is set. |
+| hostFailoverClusterRoot *(required)* | [HostFailoverClusterRoot](../types/enums/HostFailoverClusterRoot.md)! | LINUX_HOST_ROOT or WINDOWS_HOST_ROOT. |
 
 ## Returns
 

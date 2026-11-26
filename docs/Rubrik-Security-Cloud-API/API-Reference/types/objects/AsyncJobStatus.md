@@ -13,8 +13,13 @@ Represents the status of a single async job.
 
 **Mutations**
 
+- [mutation: forceDeleteCloudAccount](../../mutations/forceDeleteCloudAccount.md)
+- [mutation: gcpNativeExportBigQueryDataset](../../mutations/gcpNativeExportBigQueryDataset.md)
+- [mutation: gcpNativeExportCloudSqlInstance](../../mutations/gcpNativeExportCloudSqlInstance.md)
 - [mutation: gcpNativeExportDisk](../../mutations/gcpNativeExportDisk.md)
 - [mutation: gcpNativeExportGceInstance](../../mutations/gcpNativeExportGceInstance.md)
+- [mutation: gcpNativeRestoreBigQueryDataset](../../mutations/gcpNativeRestoreBigQueryDataset.md)
+- [mutation: gcpNativeRestoreCloudSqlInstance](../../mutations/gcpNativeRestoreCloudSqlInstance.md)
 - [mutation: gcpNativeRestoreGceInstance](../../mutations/gcpNativeRestoreGceInstance.md)
 - [mutation: startAwsExocomputeDisableJob](../../mutations/startAwsExocomputeDisableJob.md)
 - [mutation: startAwsNativeAccountDisableJob](../../mutations/startAwsNativeAccountDisableJob.md)

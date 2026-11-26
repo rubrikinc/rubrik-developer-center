@@ -1,12 +1,12 @@
 # createGcpTarget
 
-Creates a Polaris-managed GCP archival location.
+Creates a GCP archival location on a Rubrik cluster, managed by Rubrik Security Cloud.
 
 ## Arguments
 
 | Argument | Type | Description |
 |----------|------|-------------|
-| input *(required)* | [CreateGcpTargetInput](../types/inputs/CreateGcpTargetInput.md)! | Request for creating a new Gcp target. |
+| input *(required)* | [CreateGcpTargetInput](../types/inputs/CreateGcpTargetInput.md)! | Request for creating a new GCP target. |
 
 ## Returns
 

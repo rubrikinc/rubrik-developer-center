@@ -1,6 +1,6 @@
 # deleteCloudNativeLabelRule
 
-Delete cloud native label rule.
+Deletes a cloud native label rule.
 
 ## Arguments
 

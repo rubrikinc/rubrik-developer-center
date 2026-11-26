@@ -13,6 +13,10 @@ Paginated list of AwsNativeRegionHierarchyObject objects. Each page of the resul
 
 ## Used By
 
+**Queries**
+
+- [query: awsNativeRegions](../../queries/awsNativeRegions.md)
+
 **Referenced by**
 
 - [AwsNativeAccount.awsRegions](AwsNativeAccount.md)

@@ -41,6 +41,7 @@ Azure cloud account region Enum.
 | KOREASOUTH | Azure Cloud account region is Korea South. |
 | MALAYSIAWEST | Azure Cloud account region is Malaysia West. |
 | MEXICOCENTRAL | Azure Cloud account region is Mexico Central. |
+| NEWZEALANDNORTH | Azure Cloud account region is New Zealand North. |
 | NORTHCENTRALUS | Azure Cloud account region is North Central US. |
 | NORTHEUROPE | Azure Cloud account region is North Europe. |
 | NORWAYEAST | Azure Cloud account region is Norway East. |
@@ -57,11 +58,13 @@ Azure cloud account region Enum.
 | SWEDENSOUTH | Azure Cloud account region is Sweden South. |
 | SWITZERLANDNORTH | Azure Cloud account region is Switzerland North. |
 | SWITZERLANDWEST | Azure Cloud account region is Switzerland West. |
+| TAIWANNORTH | Azure Cloud account region is Taiwan North. |
 | UAECENTRAL | Azure Cloud account region is UAE Central. |
 | UAENORTH | Azure Cloud account region is UAE North. |
 | UKSOUTH | Azure Cloud account region is UK South. |
 | UKWEST | Azure Cloud account region is UK West. |
 | UNKNOWN_AZURE_REGION | Azure Cloud account region is Unknown. |
+| UNRECOGNIZED | The value of this enum was not recognized by the API. |
 | USGOVARIZONA | Azure Cloud account region is US Gov Arizona. |
 | USGOVTEXAS | Azure Cloud account region is US Gov Texas. |
 | USGOVVIRGINIA | Azure Cloud account region is US Gov Virginia. |

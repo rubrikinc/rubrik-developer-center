@@ -43,11 +43,11 @@ Paginated list of GenericSnapshot objects with additional pagination information
 - [GcpAlloyDbCluster.workloadSnapshotConnection](GcpAlloyDbCluster.md)
 - [GcpBigQueryDataset.workloadSnapshotConnection](GcpBigQueryDataset.md)
 - [GcpCloudSqlInstance.workloadSnapshotConnection](GcpCloudSqlInstance.md)
+- [GcpGcsBucket.workloadSnapshotConnection](GcpGcsBucket.md)
 - [GcpNativeDisk.workloadSnapshotConnection](GcpNativeDisk.md)
 - [GcpNativeGceInstance.workloadSnapshotConnection](GcpNativeGceInstance.md)
+- [GcpSpannerDatabase.workloadSnapshotConnection](GcpSpannerDatabase.md)
 - [GithubRepository.workloadSnapshotConnection](GithubRepository.md)
 - [GlueIcebergTable.workloadSnapshotConnection](GlueIcebergTable.md)
 - [GoogleWorkspaceSharedDrive.workloadSnapshotConnection](GoogleWorkspaceSharedDrive.md)
-- [GoogleWorkspaceUserDrive.workloadSnapshotConnection](GoogleWorkspaceUserDrive.md)
-- [GoogleWorkspaceUserMailbox.workloadSnapshotConnection](GoogleWorkspaceUserMailbox.md)
-- *…and 27 more*
+- *…and 30 more*

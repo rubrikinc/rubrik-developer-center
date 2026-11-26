@@ -175,6 +175,7 @@ Fields for sorting hierarchy objects.
 | UNMANAGED_OBJECTS_UNEXPIRED_SNAPSHOT_COUNT | Sort unmanaged objects by number of snapshot count. |
 | VMWARE_VCENTER_NAME_AND_VM_NAME | Sort based on the combination of vCenter name and virtual machine name. |
 | VMWARE_VM_AGENT_STATUS | Sort based on the VMware virtual machine agent status. |
+| VMWARE_VM_HOST_NAME | Sort vSphere virtual machines by the name of the compute cluster of their ESXi host, or by the host name when the host is not in a compute cluster. |
 | VSPHERE_DATASTORE_CAPACITY | Sort vSphere datastores by capacity. |
 | VSPHERE_DATASTORE_FREE_SPACE | Sort vSphere datastores by free space. |
 | VSPHERE_DATASTORE_TYPE | Sort vSphere datastores by datastore type. |

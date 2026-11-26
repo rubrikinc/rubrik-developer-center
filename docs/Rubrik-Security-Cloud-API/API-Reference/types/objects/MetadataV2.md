@@ -14,4 +14,5 @@ MetadataV2 is a new version of generic Metadata type and will deprecate the old 
 **Referenced by**
 
 - [CellData.metadataV2](CellData.md)
+- [ChartDataResult.metadata](ChartDataResult.md)
 - [Row.metadataV2](Row.md)

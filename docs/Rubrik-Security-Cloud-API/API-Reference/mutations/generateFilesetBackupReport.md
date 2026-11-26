@@ -1,12 +1,12 @@
 # generateFilesetBackupReport
 
-Generate a success and failure report for a fileset backup Supported in v9.2+ Start an asynchronous job to generate success and failure files for a specified fileset backup. The response returns an asynchronous request ID. To get the URL for downloading the ZIP file containing the specific files and folders, send a GET request to 'fileset/request/{id}'.
+Starts a job that lists the files that succeeded and failed in a fileset backup, as a ZIP file. The job status and download link appear in the events for the fileset, not through filesetRequestStatus.
 
 ## Arguments
 
 | Argument | Type | Description |
 |----------|------|-------------|
-| input *(required)* | [GenerateFilesetBackupReportInput](../types/inputs/GenerateFilesetBackupReportInput.md)! | Input for V1GenerateFilesetBackupReport. |
+| input *(required)* | [GenerateFilesetBackupReportInput](../types/inputs/GenerateFilesetBackupReportInput.md)! | ID of the fileset snapshot. |
 
 ## Returns
 

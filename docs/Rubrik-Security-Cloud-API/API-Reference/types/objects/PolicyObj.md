@@ -52,16 +52,16 @@ A workload evaluated against a classification policy at a point in time, along w
 | allAnalyzerMappings | stdPath *(required)* | String! | The standard path of the directory to browse. |
 | allAnalyzerMappings | fileMode | [DataGovFileMode](../enums/DataGovFileMode.md) | FileMode represents the type of object at the path (File/Directory/Symlink). |
 | fileResultConnection | first | Int | Returns the first n elements from the list. |
-| fileResultConnection | after | String | Returns the elements in the list that occur after the specified cursor. |
+| fileResultConnection | after | String | An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results. |
 | fileResultConnection | last | Int | Returns the last n elements from the list. |
-| fileResultConnection | before | String | Returns the elements in the list that occur before the specified cursor. |
+| fileResultConnection | before | String | An opaque cursor returned from a previous query's startCursor field. Pass this value verbatim to retrieve the previous page of results. |
 | fileResultConnection | filter | [ListFileResultFiltersInput](../inputs/ListFileResultFiltersInput.md) |  |
 | fileResultConnection | sort | [FileResultSortInput](../inputs/FileResultSortInput.md) | Sorts to apply when listing file results. |
 | fileResultConnection | timezone *(required)* | String! | The timezone in which to display timestamps. |
 | folderChildConnection | first | Int | Returns the first n elements from the list. |
-| folderChildConnection | after | String | Returns the elements in the list that occur after the specified cursor. |
+| folderChildConnection | after | String | An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results. |
 | folderChildConnection | last | Int | Returns the last n elements from the list. |
-| folderChildConnection | before | String | Returns the elements in the list that occur before the specified cursor. |
+| folderChildConnection | before | String | An opaque cursor returned from a previous query's startCursor field. Pass this value verbatim to retrieve the previous page of results. |
 | folderChildConnection | filter | [BrowseDirectoryFiltersInput](../inputs/BrowseDirectoryFiltersInput.md) | Filters for browsing directory contents. |
 | folderChildConnection | sort | [FileResultSortInput](../inputs/FileResultSortInput.md) | Sorts to apply when listing file results. |
 | folderChildConnection | stdPath *(required)* | String! | The standard path of the directory to browse. |

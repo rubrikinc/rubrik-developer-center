@@ -1,6 +1,6 @@
 # validateRdsExportExocomputePort
 
-ValidateRdsExportExocomputePort checks if the exocompute worker node security group used for RDS export allows outbound traffic on a port.
+Checks whether the security group of the Exocompute worker nodes used for RDS export allows outbound traffic on a port.
 
 ## Arguments
 

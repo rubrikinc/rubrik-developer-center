@@ -1,12 +1,12 @@
 # upgradeCdmManagedTarget
 
-Upgrade archival locations managed through a Rubrik cluster.
+Starts converting archival locations managed by a Rubrik cluster into locations managed by Rubrik Security Cloud, keeping their IDs. Conversion runs in the background. Ineligible locations are skipped, and errors for individual locations are not returned. An empty list converts every eligible location.
 
 ## Arguments
 
 | Argument | Type | Description |
 |----------|------|-------------|
-| input *(required)* | [UpgradeCdmManagedTargetInput](../types/inputs/UpgradeCdmManagedTargetInput.md)! | Request for upgrading archival locations managed through a Rubrik cluster. |
+| input *(required)* | [UpgradeCdmManagedTargetInput](../types/inputs/UpgradeCdmManagedTargetInput.md)! | IDs of the archival locations to upgrade. |
 
 ## Returns
 

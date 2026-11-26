@@ -1,6 +1,6 @@
 # allValidReplicationSources
 
-Lists all valid replication source clusters.
+Lists Rubrik clusters that can be chosen as replication sources, local or cross-account.
 
 ## Arguments
 

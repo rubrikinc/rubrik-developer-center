@@ -1,12 +1,12 @@
 # updateSnmpConfig
 
-Update SNMP configuration Supported in v5.0+ Update the SNMP configuration for a specified Rubrik cluster.
+Updates the SNMP (Simple Network Management Protocol) configuration of a Rubrik cluster, version 5.0 or later, and returns the result.
 
 ## Arguments
 
 | Argument | Type | Description |
 |----------|------|-------------|
-| input *(required)* | [UpdateSnmpConfigInput](../types/inputs/UpdateSnmpConfigInput.md)! | Input for InternalUpdateSnmpConfig. |
+| input *(required)* | [UpdateSnmpConfigInput](../types/inputs/UpdateSnmpConfigInput.md)! | clusterUuid routes the request; id is the Rubrik cluster ID or "me"; set the snmpConfigV* field that matches the cluster's software version. |
 
 ## Returns
 

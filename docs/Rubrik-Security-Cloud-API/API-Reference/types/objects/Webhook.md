@@ -30,5 +30,4 @@ A webhook configuration in the account.
 
 **Referenced by**
 
-- [CreateWebhookReply.webhook](CreateWebhookReply.md)
 - [UpdateWebhookReply.webhook](UpdateWebhookReply.md)

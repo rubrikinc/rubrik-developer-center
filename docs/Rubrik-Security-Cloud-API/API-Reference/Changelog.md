@@ -1,8 +1,8 @@
 # GraphQL Schema Changelog
 
-*Generated on November 10, 2026 at 07:32 PM*
+*Generated on November 26, 2026 at 02:27 AM*
 
-This changelog documents the evolution of the GraphQL schema across 67 versions.
+This changelog documents the evolution of the GraphQL schema across 68 versions.
 
 !!! note "Not every breaking change affects a generally available feature"
     The schema also carries early access and in-development surfaces, which
@@ -13,6 +13,1266 @@ This changelog documents the evolution of the GraphQL schema across 67 versions.
 
     The reliable check is whether your own integrations reference the names
     listed. Search this page for the operations you call.
+
+## November 16, 2026
+
+### ⚠️ Breaking Changes
+
+*Requests that worked before may now fail. RSC updates automatically, so check whether your integrations use anything listed here.*
+
+??? note "11 types removed"
+
+    - `CreateWebhookInput`
+    - `CreateWebhookReply`
+    - `DeleteWebhookInput`
+    - `DownloadAuditLogCsvAsyncInput`
+    - `FeatureFlagAttributeInput`
+    - `FlagAttribute`
+    - `SecurityFeaturesStatusEntry`
+    - `TestWebhookInput`
+    - `TestWebhookReply`
+    - `UpdateManagedIdentitiesInput`
+    - `UpdateManagedIdentitiesReply`
+
+- `INTUNE_DEVICE_MANAGEMENT_POLICY_TYPE_BIOS_CONFIGURATIONS_REACT` enum value removed from enum `IntuneDeviceManagementPolicyType`
+- `INTUNE_DEVICE_MANAGEMENT_POLICY_TYPE_DEVICE_FIRMWARE_CONFIGURATION_INTERFACE_REACT` enum value removed from enum `IntuneDeviceManagementPolicyType`
+- `allSecurityFeaturesStatuses` field removed from `Query`
+- `isCdmEnforcementDisabled` field removed from `UpdateTprPolicyDataMangementClusterReqChangesTemplate`
+- `isCdmEnforcementDisabled` field removed from `UpdateTprPolicyDataMangementObjectReqChangesTemplate`
+- `isCdmEnforcementDisabled` field removed from `UpdateTprPolicyDataMangementSlaReqChangesTemplate`
+- `isCdmEnforcementDisabled` field removed from `UpdateTprPolicySystemConfigReqChangesTemplate`
+- Input field `GcpCloudAccountOauthInitiateInput.customerUrl` changed type from `String`! to `String`
+
+### 🗑️ Removed Deprecated Items
+
+*These items were previously marked `@deprecated` and have now been removed.*
+
+- Field `createOnDemandMongoDatabaseBackup` (deprecated) was removed from object type `Mutation`
+- Field `createWebhook` (deprecated) was removed from object type `Mutation`
+- Field `deleteWebhook` (deprecated) was removed from object type `Mutation`
+- Field `downloadAuditLogCsvAsync` (deprecated) was removed from object type `Mutation`
+- Field `stopJobInstance` (deprecated) was removed from object type `Mutation`
+- Field `testWebhook` (deprecated) was removed from object type `Mutation`
+- Field `updateManagedIdentities` (deprecated) was removed from object type `Mutation`
+
+### ⚡ May Require Changes
+
+*Your requests still work. Deprecations and shifted defaults to plan around.*
+
+- Argument after: String added to field `ActiveDirectoryDomainController.hypervVirtualMachines`
+- Argument before: String added to field `ActiveDirectoryDomainController.hypervVirtualMachines`
+- Argument first: Int added to field `ActiveDirectoryDomainController.hypervVirtualMachines`
+- Argument last: Int added to field `ActiveDirectoryDomainController.hypervVirtualMachines`
+- Argument before: String added to field `AwsNativeRoot.objectTypeDescendantConnection`
+- Argument last: Int added to field `AwsNativeRoot.objectTypeDescendantConnection`
+- Argument before: String added to field `AzureNativeRoot.objectTypeDescendantConnection`
+- Argument last: Int added to field `AzureNativeRoot.objectTypeDescendantConnection`
+- Argument before: String added to field `CloudDirectNasNamespace.descendantConnection`
+- Argument last: Int added to field `CloudDirectNasNamespace.descendantConnection`
+- Argument before: String added to field `CloudDirectNasNamespace.logicalChildConnection`
+- Argument last: Int added to field `CloudDirectNasNamespace.logicalChildConnection`
+- Argument before: String added to field `CloudDirectNasSystem.descendantConnection`
+- Argument last: Int added to field `CloudDirectNasSystem.descendantConnection`
+- Argument before: String added to field `CloudDirectNasSystem.logicalChildConnection`
+- Argument last: Int added to field `CloudDirectNasSystem.logicalChildConnection`
+- Argument after: String added to field `CloudDirectSnapshotsGroupBySummary.cloudDirectSnapshots`
+- Argument before: String added to field `CloudDirectSnapshotsGroupBySummary.cloudDirectSnapshots`
+- Argument first: Int added to field `CloudDirectSnapshotsGroupBySummary.cloudDirectSnapshots`
+- Argument last: Int added to field `CloudDirectSnapshotsGroupBySummary.cloudDirectSnapshots`
+- Argument before: String added to field `Db2Instance.descendantConnection`
+- Argument last: Int added to field `Db2Instance.descendantConnection`
+- Argument before: String added to field `Db2Instance.physicalChildConnection`
+- Argument last: Int added to field `Db2Instance.physicalChildConnection`
+- Argument before: String added to field `FilesetTemplate.descendantConnection`
+- Argument last: Int added to field `FilesetTemplate.descendantConnection`
+- Argument before: String added to field `FilesetTemplate.physicalChildConnection`
+- Argument last: Int added to field `FilesetTemplate.physicalChildConnection`
+- Argument before: String added to field `FusionComputeCluster.descendantConnection`
+- Argument last: Int added to field `FusionComputeCluster.descendantConnection`
+- Argument before: String added to field `FusionComputeCluster.physicalChildConnection`
+- Argument last: Int added to field `FusionComputeCluster.physicalChildConnection`
+- Argument before: String added to field `FusionComputeHost.descendantConnection`
+- Argument last: Int added to field `FusionComputeHost.descendantConnection`
+- Argument before: String added to field `FusionComputeHost.physicalChildConnection`
+- Argument last: Int added to field `FusionComputeHost.physicalChildConnection`
+- Argument before: String added to field `FusionComputeSite.descendantConnection`
+- Argument last: Int added to field `FusionComputeSite.descendantConnection`
+- Argument before: String added to field `FusionComputeSite.physicalChildConnection`
+- Argument last: Int added to field `FusionComputeSite.physicalChildConnection`
+- Argument before: String added to field `FusionComputeVrm.descendantConnection`
+- Argument last: Int added to field `FusionComputeVrm.descendantConnection`
+- Argument before: String added to field `FusionComputeVrm.physicalChildConnection`
+- Argument last: Int added to field `FusionComputeVrm.physicalChildConnection`
+- Argument before: String added to field `GcpNativeProject.logicalChildConnection`
+- Argument last: Int added to field `GcpNativeProject.logicalChildConnection`
+- Argument before: String added to field `GcpNativeRoot.objectTypeDescendantConnection`
+- Argument last: Int added to field `GcpNativeRoot.objectTypeDescendantConnection`
+- Argument before: String added to field `HostShare.descendantConnection`
+- Argument last: Int added to field `HostShare.descendantConnection`
+- Argument before: String added to field `HostShare.physicalChildConnection`
+- Argument last: Int added to field `HostShare.physicalChildConnection`
+- Argument before: String added to field `InformixInstance.descendantConnection`
+- Argument last: Int added to field `InformixInstance.descendantConnection`
+- Argument before: String added to field `InformixInstance.liveMounts`
+- Argument last: Int added to field `InformixInstance.liveMounts`
+- Argument before: String added to field `InformixInstance.physicalChildConnection`
+- Argument last: Int added to field `InformixInstance.physicalChildConnection`
+- Argument before: String added to field `IrisdbInstance.descendantConnection`
+- Argument last: Int added to field `IrisdbInstance.descendantConnection`
+- Argument before: String added to field `IrisdbInstance.liveMounts`
+- Argument last: Int added to field `IrisdbInstance.liveMounts`
+- Argument before: String added to field `IrisdbInstance.physicalChildConnection`
+- Argument last: Int added to field `IrisdbInstance.physicalChildConnection`
+- Argument before: String added to field `KosmosParentHierarchyObjectType.descendantConnection`
+- Argument last: Int added to field `KosmosParentHierarchyObjectType.descendantConnection`
+- Argument before: String added to field `KosmosParentHierarchyObjectType.physicalChildConnection`
+- Argument last: Int added to field `KosmosParentHierarchyObjectType.physicalChildConnection`
+- Argument before: String added to field `KosmosSnappableHierarchyObjectType.liveMounts`
+- Argument last: Int added to field `KosmosSnappableHierarchyObjectType.liveMounts`
+- Argument before: String added to field `MariadbInstance.descendantConnection`
+- Argument last: Int added to field `MariadbInstance.descendantConnection`
+- Argument before: String added to field `MariadbInstance.liveMounts`
+- Argument last: Int added to field `MariadbInstance.liveMounts`
+- Argument before: String added to field `MariadbInstance.physicalChildConnection`
+- Argument last: Int added to field `MariadbInstance.physicalChildConnection`
+- Argument before: String added to field `MssqlAvailabilityGroup.descendantConnection`
+- Argument last: Int added to field `MssqlAvailabilityGroup.descendantConnection`
+- Argument before: String added to field `MssqlAvailabilityGroup.logicalChildConnection`
+- Argument last: Int added to field `MssqlAvailabilityGroup.logicalChildConnection`
+- Argument before: String added to field `MssqlHost.descendantConnection`
+- Argument last: Int added to field `MssqlHost.descendantConnection`
+- Argument before: String added to field `MssqlHost.physicalChildConnection`
+- Argument last: Int added to field `MssqlHost.physicalChildConnection`
+- Argument before: String added to field `MssqlInstance.descendantConnection`
+- Argument last: Int added to field `MssqlInstance.descendantConnection`
+- Argument before: String added to field `MssqlInstance.logicalChildConnection`
+- Argument last: Int added to field `MssqlInstance.logicalChildConnection`
+- Argument before: String added to field `MysqldbInstance.descendantConnection`
+- Argument last: Int added to field `MysqldbInstance.descendantConnection`
+- Argument before: String added to field `MysqldbInstance.liveMounts`
+- Argument last: Int added to field `MysqldbInstance.liveMounts`
+- Argument before: String added to field `MysqldbInstance.physicalChildConnection`
+- Argument last: Int added to field `MysqldbInstance.physicalChildConnection`
+- Argument before: String added to field `O365Org.childConnection`
+- Argument last: Int added to field `O365Org.childConnection`
+- Argument before: String added to field `O365Org.searchDescendantConnection`
+- Argument last: Int added to field `O365Org.searchDescendantConnection`
+- Argument before: String added to field `O365User.childConnection`
+- Argument last: Int added to field `O365User.childConnection`
+- Argument before: String added to field `PhysicalHost.descendantConnection`
+- Argument last: Int added to field `PhysicalHost.descendantConnection`
+- Argument before: String added to field `PhysicalHost.physicalChildConnection`
+- Argument last: Int added to field `PhysicalHost.physicalChildConnection`
+- Argument before: String added to field `PostgreSQLDbCluster.descendantConnection`
+- Argument last: Int added to field `PostgreSQLDbCluster.descendantConnection`
+- Argument before: String added to field `PostgreSQLDbCluster.liveMounts`
+- Argument last: Int added to field `PostgreSQLDbCluster.liveMounts`
+- Argument before: String added to field `PostgreSQLDbCluster.physicalChildConnection`
+- Argument last: Int added to field `PostgreSQLDbCluster.physicalChildConnection`
+- Argument before: String added to field `PureStorageProtectionGroupV1.cdmSnapshots`
+- Argument last: Int added to field `PureStorageProtectionGroupV1.cdmSnapshots`
+- Argument includeTags: Boolean added to field `Query.allS3BucketsDetailsFromAws`
+- Argument vcfInstanceFid: UUID added to field `Query.vSphereVCenterConnection`
+- Argument skipBlueprintGrouping: Boolean added to field `Query.workloadAnomalies`
+- Argument before: String added to field `SapHanaSystem.descendantConnection`
+- Argument last: Int added to field `SapHanaSystem.descendantConnection`
+- Argument before: String added to field `SapHanaSystem.physicalChildConnection`
+- Argument last: Int added to field `SapHanaSystem.physicalChildConnection`
+- Argument before: String added to field `Vcd.descendantConnection`
+- Argument last: Int added to field `Vcd.descendantConnection`
+- Argument before: String added to field `Vcd.logicalChildConnection`
+- Argument last: Int added to field `Vcd.logicalChildConnection`
+- Argument before: String added to field `Vcd.recoveryLogicalChildConnection`
+- Argument last: Int added to field `Vcd.recoveryLogicalChildConnection`
+- Argument before: String added to field `VcdCatalog.descendantConnection`
+- Argument last: Int added to field `VcdCatalog.descendantConnection`
+- Argument before: String added to field `VcdCatalog.logicalChildConnection`
+- Argument last: Int added to field `VcdCatalog.logicalChildConnection`
+- Argument before: String added to field `VcdCatalog.recoveryLogicalChildConnection`
+- Argument last: Int added to field `VcdCatalog.recoveryLogicalChildConnection`
+- Argument before: String added to field `VcdOrg.descendantConnection`
+- Argument last: Int added to field `VcdOrg.descendantConnection`
+- Argument before: String added to field `VcdOrg.logicalChildConnection`
+- Argument last: Int added to field `VcdOrg.logicalChildConnection`
+- Argument before: String added to field `VcdOrg.recoveryLogicalChildConnection`
+- Argument last: Int added to field `VcdOrg.recoveryLogicalChildConnection`
+- Argument before: String added to field `VcdOrgVdc.descendantConnection`
+- Argument last: Int added to field `VcdOrgVdc.descendantConnection`
+- Argument before: String added to field `VcdOrgVdc.logicalChildConnection`
+- Argument last: Int added to field `VcdOrgVdc.logicalChildConnection`
+- Argument before: String added to field `VcdOrgVdc.recoveryLogicalChildConnection`
+- Argument last: Int added to field `VcdOrgVdc.recoveryLogicalChildConnection`
+- Argument before: String added to field `VcdVapp.logicalChildConnection`
+- Argument last: Int added to field `VcdVapp.logicalChildConnection`
+- Argument before: String added to field `VcdVapp.recoveryLogicalChildConnection`
+- Argument last: Int added to field `VcdVapp.recoveryLogicalChildConnection`
+- VsphereNamespace object implements VsphereVcenterSupervisorChildType interface
+- VsphereSupervisor object implements VsphereVcenterSupervisorChildType interface
+- VsphereVm object implements VsphereSupervisorDescendantType interface
+- Argument before: String added to field `WindowsCluster.descendantConnection`
+- Argument last: Int added to field `WindowsCluster.descendantConnection`
+- Argument before: String added to field `WindowsCluster.logicalChildConnection`
+- Argument last: Int added to field `WindowsCluster.logicalChildConnection`
+
+### ✨ Additions
+
+*Purely additive. Nothing you send today stops working. If you switch exhaustively on an enum, add a default case for newly added values.*
+
+??? note "8 enum values added to enum `ActivityObjectTypeEnum`"
+
+    - `GCP_GCS_BUCKET`
+    - `SANGFOR_AVAILABILITY_ZONE`
+    - `SANGFOR_CLUSTER`
+    - `SANGFOR_DATASTORE`
+    - `SANGFOR_HOST`
+    - `SANGFOR_NETWORK`
+    - `SANGFOR_SCP`
+    - `SANGFOR_VIRTUAL_MACHINE`
+
+- `REAL_TIME_PROTECTION` enum value added to enum `ActivityTypeEnum`
+??? note "10 enum values added to enum `AuditObjectType`"
+
+    - `CLOUD_NATIVE_APPLICATION`
+    - `GCP_GCS_BUCKET`
+    - `SANGFOR_AVAILABILITY_ZONE`
+    - `SANGFOR_CLUSTER`
+    - `SANGFOR_DATASTORE`
+    - `SANGFOR_HOST`
+    - `SANGFOR_NETWORK`
+    - `SANGFOR_SCP`
+    - `SANGFOR_VIRTUAL_MACHINE`
+    - `WEBHOOK`
+
+??? note "5 enum values added to enum `AuthorizedOperation`"
+
+    - `DELETE_CDM_KERBEROS_REALM`
+    - `EDIT_ALERT_POLICY`
+    - `MANAGE_CDM_KERBEROS_REALM`
+    - `VIEW_ALERT_POLICY`
+    - `VIEW_CDM_KERBEROS_REALM`
+
+??? note "3 enum values added to enum `AzureCloudAccountRegion`"
+
+    - `NEWZEALANDNORTH`
+    - `TAIWANNORTH`
+    - `UNRECOGNIZED`
+
+- `NEW_ZEALAND_NORTH` enum value added to enum `AzureNativeRegion`
+- `TAIWAN_NORTH` enum value added to enum `AzureNativeRegion`
+- `CLOUD_REHYDRATION_SPEED_FOR_CDM_ARCHIVAL_SNAPSHOT_DOWNLOAD` enum value added to enum `CdmFeatureFlagType`
+- `GCP_GCS_PROTECTION` enum value added to enum `CloudAccountFeature`
+- `GCP_SPANNER_PROTECTION` enum value added to enum `CloudAccountFeature`
+- `GCP_GCS_BUCKET` enum value added to enum `CloudNativeLabelObjectType`
+??? note "8 enum values added to enum `EventObjectType`"
+
+    - `GCP_GCS_BUCKET`
+    - `SANGFOR_AVAILABILITY_ZONE`
+    - `SANGFOR_CLUSTER`
+    - `SANGFOR_DATASTORE`
+    - `SANGFOR_HOST`
+    - `SANGFOR_NETWORK`
+    - `SANGFOR_SCP`
+    - `SANGFOR_VIRTUAL_MACHINE`
+
+- `INTUNE_AUDIT_LOG` enum value added to enum `EventProvider`
+- `REAL_TIME_PROTECTION` enum value added to enum `EventType`
+- `SECURITY_GPO_WSUS_INSECURE_URL` enum value added to enum `FilterType`
+- `GCS` enum value added to enum `GcpNativeProtectionFeature`
+- `GPO_SETTING_NAME_WSUS_INTRANET_UPDATE_URL` enum value added to enum `GpoSettingName`
+??? note "3 enum values added to enum `HierarchyFilterField`"
+
+    - `INFRASTRUCTURE_MONITORING_STATUS`
+    - `ORACLE_HOST_PHYSICAL_HOST_ID`
+    - `VMWARE_VM_IS_VM_SERVICE_VM`
+
+??? note "8 enum values added to enum `HierarchyObjectTypeEnum`"
+
+    - `GCP_GCS_BUCKET`
+    - `SANGFOR_AVAILABILITY_ZONE`
+    - `SANGFOR_CLUSTER`
+    - `SANGFOR_DATASTORE`
+    - `SANGFOR_HOST`
+    - `SANGFOR_NETWORK`
+    - `SANGFOR_SCP`
+    - `SANGFOR_VIRTUAL_MACHINE`
+
+- `VMWARE_VM_HOST_NAME` enum value added to enum `HierarchySortByField`
+- `GCP_GCS` enum value added to enum `InventoryCard`
+- `SANGFOR_ROOT` enum value added to enum `InventorySubHierarchyRootEnum`
+- `TARGET_SCOPE_INTUNE` enum value added to enum `LambdaTargetScope`
+??? note "10 enum values added to enum `ManagedObjectType`"
+
+    - `GCP_GCS_BUCKET`
+    - `SANGFOR_AVAILABILITY_ZONE`
+    - `SANGFOR_CLUSTER`
+    - `SANGFOR_DATASTORE`
+    - `SANGFOR_HOST`
+    - `SANGFOR_NETWORK`
+    - `SANGFOR_SCP`
+    - `SANGFOR_VIRTUAL_MACHINE`
+    - `VSPHERE_NAMESPACE`
+    - `VSPHERE_SUPERVISOR`
+
+- `GCP_GCS_BUCKET` enum value added to enum `ObjectTypeEnum`
+- `SANGFOR_VIRTUAL_MACHINE` enum value added to enum `ObjectTypeEnum`
+??? note "5 enum values added to enum `Operation`"
+
+    - `DELETE_CDM_KERBEROS_REALM`
+    - `EDIT_ALERT_POLICY`
+    - `MANAGE_CDM_KERBEROS_REALM`
+    - `VIEW_ALERT_POLICY`
+    - `VIEW_CDM_KERBEROS_REALM`
+
+- `PAST_90_DAYS` enum value added to enum `PastDurationEnum`
+??? note "5 enum values added to enum `ProductName`"
+
+    - `RADAR_CLU_INVESTIGATION`
+    - `RADAR_INVESTIGATION`
+    - `RADAR_NAS_INVESTIGATION`
+    - `RADAR_O365_INVESTIGATION`
+    - `RADAR_UCL_INVESTIGATION`
+
+- `CROWDSTRIKE_NG_SIEM` enum value added to enum `ProviderTypeV2`
+- `GCP_GCS_BUCKET_OBJECT_TYPE` enum value added to enum `SlaObjectType`
+- `SANGFOR_OBJECT_TYPE` enum value added to enum `SlaObjectType`
+- `TPR` enum value added to enum `UserAuditTypeEnum`
+??? note "657 types added"
+
+    - `AcknowledgeActiveDirectoryForestRestoreFailedHealthChecksInput`
+    - `AcknowledgeActiveDirectoryForestRestoreFailedHealthChecksReply`
+    - `AcknowledgeAdForestRestoreHealthCheckStepInput`
+    - `AcknowledgeAdPromoteHostHealthCheckStepInput`
+    - `ActiveDirectoryAsyncRequestStatusInput`
+    - `ActiveDirectoryCleanRecoveryConfig`
+    - `ActiveDirectoryCleanRecoverySnapshots`
+    - `ActiveDirectoryDomainCleanRecoverySnapshots`
+    - `ActiveDirectoryForestCleanRecoverySnapshots`
+    - `ActiveDirectoryForestConnection`
+    - `ActiveDirectoryForestEdge`
+    - `ActiveDirectoryForestRecoveryJobConfigInput`
+    - `ActiveDirectoryForestRestoreConfigInput`
+    - `ActiveDirectoryForestRestoreStatus`
+    - `ActiveDirectoryForestRestoreStepProgress`
+    - `ActiveDirectoryObjectAttributeDiffValue`
+    - `ActiveDirectoryObjectAttributesDiffResponse`
+    - `ActiveDirectoryObjectAttributesDiffResponseListResponse`
+    - `ActiveDirectorySnapshotBrowse`
+    - `ActiveDirectorySnapshotBrowseConnection`
+    - `ActiveDirectorySnapshotBrowseEdge`
+    - `ActivityObjectType`
+    - `ActivitySeriesFilterInput`
+    - `ActivitySeriesGroupBy`
+    - `ActivitySeriesGroupByConnection`
+    - `ActivitySeriesGroupByEdge`
+    - `ActivitySeriesGroupByEnum`
+    - `ActivitySeriesGroupByInfo`
+    - `ActivitySeriesSortByEnum`
+    - `ActivityStatus`
+    - `ActivityType`
+    - `AdClusterInfo`
+    - `AdDomainInfo`
+    - `AdForestRecoveryTargetType`
+    - `AdForestRestorePromoteHostChildJobStatus`
+    - `AdForestRestorePromoteHostJobStatus`
+    - `AdHostInfo`
+    - `AddAgentCloudPolicyPacksInput`
+    - `AddAgentCloudPolicyPacksReply`
+    - `AddAwsKmsInput`
+    - `AddAwsKmsReply`
+    - `AddAwsKmsWithCloudAccountInput`
+    - `AddAwsKmsWithCloudAccountReply`
+    - `AddAzureDevOpsCloudAccountWithoutOauthInput`
+    - `AddAzureKeyVaultKmsInput`
+    - `AddAzureKeyVaultKmsReply`
+    - `AddEmailDomainAllowlistEntriesInput`
+    - `AddSecureAuthAzureKeyVaultInput`
+    - `AddSecureAuthAzureKeyVaultReply`
+    - `AgentCloudAgent`
+    - `AgentCloudAgentConnection`
+    - `AgentCloudAgentEdge`
+    - `AgentCloudAgentFilter`
+    - `AgentCloudAgentScopeEditInput`
+    - `AgentCloudAgentScopeTarget`
+    - `AgentCloudAgentScopeTargetInput`
+    - `AgentCloudApplicationRef`
+    - `AgentCloudAuthorizationStatus`
+    - `AgentCloudCategoryListInput`
+    - `AgentCloudDocumentContentType`
+    - `AgentCloudDocumentInput`
+    - `AgentCloudEnforcementTypeAvailability`
+    - `AgentCloudEnforcementTypeAvailabilityStatus`
+    - `AgentCloudExampleClassification`
+    - `AgentCloudFrameworkControl`
+    - `AgentCloudMcpServerRef`
+    - `AgentCloudNaturalLanguageExample`
+    - `AgentCloudNaturalLanguageExampleInput`
+    - `AgentCloudNaturalLanguageRule`
+    - `AgentCloudNaturalLanguageRuleInput`
+    - `AgentCloudPolicy`
+    - `AgentCloudPolicyCategory`
+    - `AgentCloudPolicyConnection`
+    - `AgentCloudPolicyCreateInput`
+    - `AgentCloudPolicyDraft`
+    - `AgentCloudPolicyEdge`
+    - `AgentCloudPolicyEnforcementType`
+    - `AgentCloudPolicyErrorType`
+    - `AgentCloudPolicyFilter`
+    - `AgentCloudPolicyFramework`
+    - `AgentCloudPolicyPack`
+    - `AgentCloudPolicyPackCategory`
+    - `AgentCloudPolicyPackConnection`
+    - `AgentCloudPolicyPackEdge`
+    - `AgentCloudPolicyPackFilter`
+    - `AgentCloudPolicyPackRef`
+    - `AgentCloudPolicyPackSubscription`
+    - `AgentCloudPolicyResult`
+    - `AgentCloudPolicyScope`
+    - `AgentCloudPolicyScopeEditInput`
+    - `AgentCloudPolicyScopeInput`
+    - `AgentCloudPolicySeverity`
+    - `AgentCloudPolicySource`
+    - `AgentCloudPolicyStatus`
+    - `AgentCloudPolicySurface`
+    - `AgentCloudPolicyUpdateInput`
+    - `AgentCloudScopeMode`
+    - `AgentCloudSurfaceListInput`
+    - `AgentCloudTool`
+    - `AgentCloudToolConnection`
+    - `AgentCloudToolEdge`
+    - `AgentCloudToolFilter`
+    - `AgentCloudToolScopeEditInput`
+    - `AgentCloudToolScopeTarget`
+    - `AgentCloudToolScopeTargetInput`
+    - `ArchivalBandwidthStatsInput`
+    - `ArchivalBandwidthStatsReply`
+    - `ArchivalBandwidthStatsRequestType`
+    - `ArchivalGroupRekeyStatus`
+    - `ArchivalLag`
+    - `ArchivalLocationAwsKmsAssignmentInfo`
+    - `ArchivalLocationAzureKeyVaultAssignmentInfo`
+    - `ArchivalLocationEncryptionCipher`
+    - `ArchivalLocationEncryptionDetails`
+    - `ArchivalLocationEncryptionDetailsConnection`
+    - `ArchivalLocationEncryptionDetailsEdge`
+    - `ArchivalLocationEncryptionHealth`
+    - `ArchivalLocationEncryptionHealthStatus`
+    - `ArchivalLocationEncryptionJobInfo`
+    - `ArchivalLocationEncryptionJobStatus`
+    - `ArchivalLocationEncryptionJobsSummary`
+    - `ArchivalLocationEncryptionKeyType`
+    - `ArchivalLocationEncryptionStatusFilter`
+    - `ArchivalLocationKeyAssignmentInfo`
+    - `ArchivalLocationKeyVaultAssignmentInfo`
+    - `AreClusterAlertsPausedInput`
+    - `AssignObjectsToTagInput`
+    - `AssignObjectsToTagsInput`
+    - `AwsCloudAccountFeaturesWithExoConfigs`
+    - `AwsCloudAccountListKMSKeysResponse`
+    - `AwsCustomerOrgReply`
+    - `AwsCustomerOrgsReply`
+    - `AwsExocomputeKmsMappingStatus`
+    - `AwsExocomputeKmsMappingStatusReply`
+    - `AwsKmsDetails`
+    - `AwsKmsInfo`
+    - `AwsKmsKeyDetails`
+    - `AwsKmsWithCloudAccountDetails`
+    - `AwsNativeCidrMappingWithSubnets`
+    - `AwsNativeEc2DedicatedHost`
+    - `AwsNativeEc2DedicatedHostState`
+    - `AwsNativeLambdaFunctionInfo`
+    - `AwsNativeOutpost`
+    - `AwsNativeSubnetCidrMapping`
+    - `AwsNativeSubnetInfo`
+    - `AwsNativeSubnetMapping`
+    - `AwsNativeVpcInfo`
+    - `AwsNativeVpcValidationStatus`
+    - `AwsOrgChildrenSortFields`
+    - `AwsOrgEnabledFeaturesReply`
+    - `AwsOrgType`
+    - `AwsSecretRegionEnabledState`
+    - `AwsTriggerCftStatusPollingInput`
+    - `AzureDevOpsCheckIfAuthenticationMechanismValidForOrgReply`
+    - `AzureDevOpsProjectNameValidationErrorReason`
+    - `AzureKeyVaultInfo`
+    - `AzureKeyVaultInfoInput`
+    - `AzureKeyVaultKeyDetails`
+    - `AzureKeyVaultKeyState`
+    - `AzureMissingPermissions`
+    - `AzureSetRubrikCustomerAppForAzureDevopsInput`
+    - `BigQueryRecoveryMode`
+    - `BucketOwnershipControls`
+    - `BulkAddKmipServerInput`
+    - `BulkAddKmipServerReply`
+    - `BulkRotateClusterEncryptionKeyInput`
+    - `BulkRotateClusterEncryptionKeyReply`
+    - `CannotMigrateReasonEnum`
+    - `CdmKeyRotationState`
+    - `CdmLocationBasicInfo`
+    - `CdmLocationBasicInfoConnection`
+    - `CdmLocationBasicInfoEdge`
+    - `CdmMigrationStatus`
+    - `CdmRbacConfigSummaryStats`
+    - `CdmRole`
+    - `CdmRoleConnection`
+    - `CdmRoleEdge`
+    - `CdmSSOGroup`
+    - `CdmSSOGroupConnection`
+    - `CdmSSOGroupEdge`
+    - `CdmUser`
+    - `CdmUserConnection`
+    - `CdmUserEdge`
+    - `CertificateAuthoritySettingsReply`
+    - `ChartConfig`
+    - `ChartDataResult`
+    - `ChartPrimaryGroupBy`
+    - `ChartSecondaryGroupBy`
+    - `ChartViewType`
+    - `ChartViewWithName`
+    - `CloudAccountAzureKeyVaultDetails`
+    - `CloudAccountGcpKmsDetails`
+    - `CloudNativeAccount`
+    - `CloudSpecificMissingPermissionUnion`
+    - `CnpArchivalGroupEncryptionDetails`
+    - `CnpArchivalGroupEncryptionDetailsConnection`
+    - `CnpArchivalGroupEncryptionDetailsEdge`
+    - `CnpArchivalLocationEncryptionDetails`
+    - `CnpArchivalLocationEncryptionJobInfo`
+    - `CnpArchivalLocationEncryptionJobStatus`
+    - `CnpArchivalLocationEncryptionJobsSummary`
+    - `ComplianceFrequency`
+    - `ConfigGroupByInput`
+    - `ConfigureLogExportInput`
+    - `CreateAgentCloudPoliciesInput`
+    - `CreateAgentCloudPoliciesReply`
+    - `CreateCloudNativeGcpStorageSettingInput`
+    - `CreateCloudNativeGcpStorageSettingReply`
+    - `CreateCloudNativeRcvAwsStorageSettingInput`
+    - `CreateCloudNativeRcvAwsStorageSettingReply`
+    - `CreateCloudNativeRcvGcpStorageSettingInput`
+    - `CreateCloudNativeRcvGcpStorageSettingReply`
+    - `CreateOrGetKmsAzureAppIdReply`
+    - `CreatePasskeyInput`
+    - `CreatePasskeyReply`
+    - `CreatePolarisReportInput`
+    - `CreatePolarisReportReply`
+    - `CreateRcvAwsLocationsFromTemplateInput`
+    - `CreateRcvAwsReaderTargetInput`
+    - `CreateRcvGcpReaderTargetInput`
+    - `CreateRscTagInput`
+    - `CreateRscTagReply`
+    - `CreateS3BucketInput`
+    - `CreateS3BucketReply`
+    - `CsrKeyConfig`
+    - `CustomReportConfigInput`
+    - `CustomerRcvZonesDetails`
+    - `DailyComplianceStats`
+    - `DataLocationInfo`
+    - `DataLocationType`
+    - `DataLocationsPerKmipServer`
+    - `DataLocationsPerKmipServerConnection`
+    - `DataLocationsPerKmipServerEdge`
+    - `DataLocationsPerKmsKeyVault`
+    - `DataLocationsPerKmsKeyVaultConnection`
+    - `DataLocationsPerKmsKeyVaultEdge`
+    - `DataSizeFormatType`
+    - `DeactivateOthersPatInput`
+    - `DeactivateOwnPatInput`
+    - `DeleteAgentCloudPoliciesInput`
+    - `DeleteAgentCloudPoliciesReply`
+    - `DeleteAwsDataCenterKeyBasedCloudAccountInput`
+    - `DeleteAzureDataCenterAccountInput`
+    - `DeleteAzureDevOpsCloudAccountWithoutOauthInput`
+    - `DeleteKmipServerInput`
+    - `DeleteKmipServerReply`
+    - `DeleteKmsInstanceInput`
+    - `DeletePasskeyInput`
+    - `DeletePasskeyReply`
+    - `DeleteRscTagInput`
+    - `DeleteSsoGroupsFromAccountInput`
+    - `DeleteUserDeviceInput`
+    - `DevOpsObject`
+    - `DevOpsObjectQuerySelectionMode`
+    - `DevOpsObjectSelection`
+    - `DevOpsObjectWithClosestSnapshot`
+    - `DevOpsObjectWithClosestSnapshotConnection`
+    - `DevOpsObjectWithClosestSnapshotEdge`
+    - `DevOpsQueryFilter`
+    - `DevOpsSnapshot`
+    - `DevOpsSnapshotConnection`
+    - `DevOpsSnapshotEdge`
+    - `DevOpsTimeRangeFilter`
+    - `DeviceType`
+    - `DiffPath`
+    - `DirectAzureKeyVaultDetails`
+    - `DnsDelegationConfigInput`
+    - `DoesEmailDomainAllowlistEntryExistReply`
+    - `DoesEmailDomainAllowlistEntryExistReq`
+    - `DomainControllerForestRestoreJobStatus`
+    - `DomainControllerOperationMasterRoles`
+    - `DomainPromotionInput`
+    - `DownloadReportFileInput`
+    - `EditPasskeyInput`
+    - `EditPasskeyReply`
+    - `EditUserDeviceInput`
+    - `EffectiveGpoReport`
+    - `EmailDomainAllowlistEntriesFilter`
+    - `EmailDomainAllowlistEntriesSortByField`
+    - `EmailDomainAllowlistEntriesSortByParam`
+    - `EmailDomainAllowlistEntry`
+    - `EmailDomainAllowlistEntryConnection`
+    - `EmailDomainAllowlistEntryEdge`
+    - `EmailDomainAllowlistEntryType`
+    - `ExistingOrgRule`
+    - `FailureAcknowledgedStep`
+    - `FeatureMissingPermissions`
+    - `FeaturePermissionGroupDescriptions`
+    - `FeaturePermissionGroupVersionRangeInput`
+    - `FederatedLoginStatusInput`
+    - `FileTypeEnum`
+    - `FilterTypeEnum`
+    - `ForceDeleteCloudAccountEligibilityInput`
+    - `ForceDeleteCloudAccountEligibilityReply`
+    - `ForceDeleteCloudAccountInput`
+    - `ForceDeleteEligibilityReason`
+    - `ForceDeleteEligibilityReasonList`
+    - `ForestRecoveryDcStatus`
+    - `ForestRecoveryJobPhase`
+    - `ForestRecoveryStep`
+    - `ForestRecoveryStepStatus`
+    - `ForestRestoreJobPhase`
+    - `ForestRestoreJobStatus`
+    - `FormatInput`
+    - `GcpBigQueryDatasetConnection`
+    - `GcpBigQueryDatasetEdge`
+    - `GcpBigQueryDatasetFilters`
+    - `GcpBigQueryDatasetNameOrIdSubstringFilter`
+    - `GcpBigQueryDatasetPointInTimeRecoveryWindow`
+    - `GcpBigQueryDatasetSortFields`
+    - `GcpCmkInput`
+    - `GcpGcsBucket`
+    - `GcpKmsCryptoKeyInput`
+    - `GcpKmsInfo`
+    - `GcpKmsKeyDetails`
+    - `GcpKmsKeyIdentifierInput`
+    - `GcpListAllProjectsForOauthReply`
+    - `GcpListAllProjectsForOauthReq`
+    - `GcpLocationType`
+    - `GcpMissingPermissions`
+    - `GcpNativeBucket`
+    - `GcpNativeExportBigQueryDatasetInput`
+    - `GcpNativeExportCloudSqlInstanceInput`
+    - `GcpNativeRestoreBigQueryDatasetInput`
+    - `GcpNativeRestoreCloudSqlInstanceInput`
+    - `GcpNetwork`
+    - `GcpPcrServiceAccountValidationFailure`
+    - `GcpPermissionDetails`
+    - `GcpPrivateContainerRegistryDetail`
+    - `GcpProjectMissingPermissions`
+    - `GcpRecoveryEncryptionKeyConfig`
+    - `GcpRecoveryEncryptionKeyType`
+    - `GcpSpannerDatabase`
+    - `GcpSpannerDatabaseDialect`
+    - `GcpSpannerEdition`
+    - `GcpSpannerInstance`
+    - `GcpSpannerLocation`
+    - `GcpSubnetwork`
+    - `GenerateAzureDevOpsOnboardingScriptReply`
+    - `GenerateAzureDevOpsOnboardingScriptReq`
+    - `GenerateCidrMappingsReply`
+    - `GetAdForestRestoreChildJobStatusesReply`
+    - `GetAwsOrgFeaturesInput`
+    - `GetAwsSecretRegionEnabledStateInput`
+    - `GetAwsSecretRegionEnabledStateReply`
+    - `GetBrandLogoReply`
+    - `GetEc2InstanceTypesByAzReply`
+    - `GetEc2InstanceTypesByAzReq`
+    - `GetEffectiveSessionTimeoutsReply`
+    - `GetEventSeriesPermissionInfoReply`
+    - `GetGcpExocomputePrivateContainerRegistryReply`
+    - `GetKeyVersionsOfAzureKeyInput`
+    - `GetLocationArchivalLagReq`
+    - `GetMissingPermissionsInput`
+    - `GetMissingPermissionsParams`
+    - `GetMissingPermissionsReply`
+    - `GetPersonalAccessTokenReply`
+    - `GetRCVRegionsFilter`
+    - `GetRCVRegionsFilterField`
+    - `GetRCVRegionsReply`
+    - `GetReplicatedObjectsRequest`
+    - `GetRscTagByIdReply`
+    - `GetRscTagByIdReq`
+    - `GetSPExplicitReply`
+    - `GlobalObjectLocation`
+    - `GlobalObjectLocationConnection`
+    - `GlobalObjectLocationEdge`
+    - `GlobalObjectLocationsFilterField`
+    - `GlobalObjectLocationsFilterInput`
+    - `GpoAlertDetailsReply`
+    - `GpoAlertDetailsReq`
+    - `GpoChangeLabel`
+    - `GpoDataAvailability`
+    - `GpoLabelPaths`
+    - `GpoLinkType`
+    - `GpoLinkedOus`
+    - `GpoSettingsChangeDataReq`
+    - `GpoSettingsChangeDataRes`
+    - `HierarchySortOrder`
+    - `InstanceTypesPerAz`
+    - `IrPrerequisiteCheckStatus`
+    - `IsAuthorizedOnDescendantsRequest`
+    - `IsEmailAllowedByDomainAllowlistReply`
+    - `JobRetryStatus`
+    - `KMSKey`
+    - `KeyStrengthConfig`
+    - `KeyTypeConfig`
+    - `KeyVaultInfo`
+    - `KeyVaultKeyDetails`
+    - `KeyVaultKeyIdentifierWithKmsName`
+    - `KeyVersionInAzureKeyVault`
+    - `KmipProtectedEntityType`
+    - `KmipServerInfo`
+    - `KmipServerKeyAssignmentInfoSortBy`
+    - `KmsConnectionValidationInput`
+    - `KmsInstance`
+    - `KmsInstanceConnection`
+    - `KmsInstanceEdge`
+    - `KmsInstancesSortBy`
+    - `KmsMappingProvisioningStatus`
+    - `KmsNameVerification`
+    - `KmsSharingMode`
+    - `KmsType`
+    - `ListAwsKmsRegionsReply`
+    - `ListAwsOrgChildrenInput`
+    - `LogicalOperatorType`
+    - `LookbackPeriod`
+    - `M365ConfigsWorkload`
+    - `ManualValidation`
+    - `MissingPermissions`
+    - `MongoConfigDbSummary`
+    - `MongoDatabaseAppMetadata`
+    - `MongoShardZones`
+    - `MongoSourceShardToTargetShardEntry`
+    - `MongoSourceShardToTargetShardMapInput`
+    - `MongoTargetShardToSourceShardEntry`
+    - `MongoTargetShardToSourceShardMapInput`
+    - `NasAutomigrationTaskList`
+    - `NasMigrationFilesetDetail`
+    - `NasMigrationHostDetail`
+    - `NasMigrationHostDetailConnection`
+    - `NasMigrationHostDetailEdge`
+    - `NasMigrationShareDetail`
+    - `NgAlphaReportConfigInput`
+    - `NgReportConfigInput`
+    - `NodeKeyRotation`
+    - `NodeKeyRotationConnection`
+    - `NodeKeyRotationEdge`
+    - `NodeKeyRotationSortBy`
+    - `ObjectWithSnapType`
+    - `OktaAuthenticator`
+    - `OktaAuthenticatorConnection`
+    - `OktaAuthenticatorEdge`
+    - `OktaAuthenticatorFilter`
+    - `OktaAuthenticatorFilterType`
+    - `OktaAuthenticatorIdFilter`
+    - `OktaAuthenticatorIdFilterType`
+    - `OktaAuthenticatorMethodType`
+    - `OktaAuthenticatorSortByField`
+    - `OktaAuthenticatorStatus`
+    - `OktaAuthenticatorType`
+    - `OktaIdentityProvider`
+    - `OktaIdentityProviderAuthenticatorIdFilter`
+    - `OktaIdentityProviderConnection`
+    - `OktaIdentityProviderEdge`
+    - `OktaIdentityProviderFilter`
+    - `OktaIdentityProviderFilterType`
+    - `OktaIdentityProviderPolicyRuleIdFilter`
+    - `OktaIdentityProviderSortByField`
+    - `OktaIdpProvisioningAction`
+    - `OktaIdpRoutingRule`
+    - `OktaIdpRoutingRuleConnection`
+    - `OktaIdpRoutingRuleEdge`
+    - `OktaIdpRoutingRuleFilter`
+    - `OktaIdpRoutingRuleFilterType`
+    - `OktaIdpRoutingRuleIdentityProviderIdFilter`
+    - `OktaIdpRoutingRuleSortByField`
+    - `OktaIdpRoutingRuleStatus`
+    - `OktaIdpStatus`
+    - `OktaIdpType`
+    - `OktaProfileMappingStatus`
+    - `OktaSearchFilter`
+    - `OrgEntity`
+    - `OrgEntityConnection`
+    - `OrgEntityEdge`
+    - `OrgRuleOverlap`
+    - `PatConfigurationsReply`
+    - `Path`
+    - `PauseClusterAlertsInput`
+    - `PcrConfig`
+    - `PerOrgSessionTimeoutConfig`
+    - `PermissionInfoMetadata`
+    - `PermissionInfoRequirement`
+    - `PermissionVersionDescription`
+    - `PermissionVersionDescriptions`
+    - `PermissionVersionDescriptionsInput`
+    - `PermissionsGroupMissingPermissions`
+    - `PersonalAccessToken`
+    - `PersonalAccessTokenConnection`
+    - `PersonalAccessTokenEdge`
+    - `PersonalAccessTokenFilter`
+    - `PersonalAccessTokenSortByField`
+    - `PersonalAccessTokenSortByParam`
+    - `PolarisReportColumn`
+    - `PolarisReportConfig`
+    - `PolarisReportFilter`
+    - `PolarisReportFilterConfigs`
+    - `PolarisReportSchema`
+    - `PolarisReportSchemaConfig`
+    - `PolarisReportTableIntrospection`
+    - `PolarisReportsFilterInput`
+    - `PolarisReportsFilterType`
+    - `PolicyInsightDetails`
+    - `PowerPlatformAppConnection`
+    - `PowerPlatformAppEdge`
+    - `PowerPlatformFlowConnection`
+    - `PowerPlatformFlowEdge`
+    - `PreSeedState`
+    - `PreSeedStatus`
+    - `Predicate`
+    - `PredicateType`
+    - `PreprocessArchivalEnablementInput`
+    - `PromoteHostConfigInput`
+    - `PromoteHostForestRestoreJobStatus`
+    - `PromoteHostJobConfigInput`
+    - `PromoteHostPostForestRestoreInput`
+    - `PromoteHostPostForestRestoreReply`
+    - `ProvisioningMethod`
+    - `ProxmoxSnapshotNetworkAdapter`
+    - `ProxmoxSnapshotNetworkAdapters`
+    - `QueryArchivalLocationsEncryptionDetailsSortByField`
+    - `QueryRCVReadersOwnerEncryptionKeyInput`
+    - `QueryRCVReadersOwnerEncryptionKeyReply`
+    - `RCVRegionList`
+    - `RbacSpecialCase`
+    - `RcvAwsPrivateConnectivityEndpointsInput`
+    - `RcvLocationBasicInfo`
+    - `RcvLocationBasicInfoConnection`
+    - `RcvLocationBasicInfoEdge`
+    - `RcvLocationDetail`
+    - `RcvOwnerArchivalLocationEncryptionKey`
+    - `RcvZoneDetails`
+    - `RecoveredDcInfoInput`
+    - `RefreshHarmfulLifecyclePoliciesReply`
+    - `RefreshHarmfulLifecyclePoliciesStatus`
+    - `RegionPair`
+    - `RekeyArchivalLocationMasterKeyWithAwsKmsKeyInput`
+    - `RekeyArchivalLocationMasterKeyWithAzureKeyVaultKeyInput`
+    - `RekeyArchivalLocationReply`
+    - `RemoveAgentCloudPolicyPacksInput`
+    - `RemoveAgentCloudPolicyPacksReply`
+    - `RemoveEmailDomainAllowlistEntriesInput`
+    - `ReportChartConfigInput`
+    - `ReportChartConfigV2`
+    - `ReportFilter`
+    - `ReportFilterDetail`
+    - `ReportFormat`
+    - `ReportGridPosition`
+    - `ReportGridPositionInput`
+    - `ReportSchema`
+    - `ReportVersionType`
+    - `ResetPasskeysInput`
+    - `ResetPasskeysReply`
+    - `RestoreActiveDirectoryForestInput`
+    - `RscTag`
+    - `RscTagConnection`
+    - `RscTagEdge`
+    - `RscTagFilterField`
+    - `RscTagSortByFieldEnum`
+    - `RscTagSortByParam`
+    - `RscTagUniquenessInput`
+    - `RscTagUniquenessReply`
+    - `RunActiveDirectoryForestRestoreFailedHealthChecksInput`
+    - `RunActiveDirectoryForestRestoreFailedHealthChecksReply`
+    - `RunCertificateRotationPrechecksInput`
+    - `RunCertificateRotationPrechecksReply`
+    - `S3Tag`
+    - `SangforHierarchyAvailabilityZone`
+    - `SangforHierarchyCluster`
+    - `SangforHierarchyDatastore`
+    - `SangforHierarchyHost`
+    - `SangforHierarchyNetwork`
+    - `ScheduleBulkCertRotationInput`
+    - `Scope`
+    - `SecondaryTableConfig`
+    - `SecureAuthAzureKeyVaultDetails`
+    - `SessionBasedAuth`
+    - `SetBrandLogoInput`
+    - `SetBrandLogoReply`
+    - `SetObjectsTagsAssignmentInput`
+    - `SetPasskeyConfigInput`
+    - `SetPasskeyConfigReply`
+    - `SetTempServiceProviderInput`
+    - `SimpleOrg`
+    - `SlaProtection`
+    - `SlaProtectionStatus`
+    - `SnapshotDownloadInput`
+    - `SnapshotDownloadStatus`
+    - `StartFetchCdmRbacConfigJobInput`
+    - `StartMigrateCdmRbacConfigJobInput`
+    - `SubscriptionMissingPermissions`
+    - `SyncRotateClusterEncryptionKeyInput`
+    - `SystemTagObjectType`
+    - `TableViewRelation`
+    - `TableViewWithName`
+    - `TagFilter`
+    - `TagRule`
+    - `TaggedObject`
+    - `TaggedObjectConnection`
+    - `TaggedObjectEdge`
+    - `TaggedObjectFilter`
+    - `TaggedObjectFilterField`
+    - `TaggedObjectSortByField`
+    - `TaggedObjectSortByParam`
+    - `TaskchainInfoReply`
+    - `TriggerRcvGrsCustomFailoverInput`
+    - `UnRecoveredDcInfoInput`
+    - `UnassignObjectsFromTagInput`
+    - `UnifiedActiveDirectoryDomain`
+    - `UnifiedActiveDirectoryDomainConnection`
+    - `UnifiedActiveDirectoryDomainEdge`
+    - `UnifiedActiveDirectoryForest`
+    - `UnifiedActiveDirectoryForestConnection`
+    - `UnifiedActiveDirectoryForestEdge`
+    - `UnpauseClusterAlertsInput`
+    - `UpdateAgentCloudPoliciesInput`
+    - `UpdateAgentCloudPoliciesReply`
+    - `UpdateAwsKmsInput`
+    - `UpdateAzureKeyVaultKmsInput`
+    - `UpdateCertificateAuthoritySettingsInput`
+    - `UpdateCloudNativeGcpStorageSettingInput`
+    - `UpdateCloudNativeGcpStorageSettingReply`
+    - `UpdateCloudNativeRcvAwsStorageSettingInput`
+    - `UpdateCloudNativeRcvAwsStorageSettingReply`
+    - `UpdateCloudNativeRcvGcpStorageSettingInput`
+    - `UpdateCloudNativeRcvGcpStorageSettingReply`
+    - `UpdateEmailDomainAllowlistEntryInput`
+    - `UpdateKmipServerInput`
+    - `UpdateKmipServerReply`
+    - `UpdateManualKmsMappingAccountInput`
+    - `UpdateManualKmsMappingInput`
+    - `UpdateManualKmsMappingReply`
+    - `UpdateManualKmsMappingResult`
+    - `UpdatePatConfigurationsInput`
+    - `UpdatePolarisReportInput`
+    - `UpdateRcvAzureChildCnpLocationInput`
+    - `UpdateReaderLocationMasterKeyWithAzureKeyVaultKeyInput`
+    - `UpdateReaderLocationMasterKeyWithOwnerLocationKeyInput`
+    - `UpdateRscTagInput`
+    - `UpgradeAzureDevOpsCloudAccountWithoutOauthInput`
+    - `UpgradeAzureDevOpsCloudAccountWithoutOauthReply`
+    - `UserDevice`
+    - `UserSettingInputType`
+    - `ValidateAndCreateAwsOrganizationInput`
+    - `ValidateAndCreateAwsOrganizationReply`
+    - `ValidateAzureDevOpsProjectNameReply`
+    - `ValidateCertificateInput`
+    - `ValidateCertificateReply`
+    - `ValidateGcpPcrServiceAccountInput`
+    - `ValidateGcpPcrServiceAccountReply`
+    - `ValidateKmsConnectionReply`
+    - `ValidateKmsConnectionReq`
+    - `ValidateVpcForRecoveryReply`
+    - `VcfConnectionStatus`
+    - `VcfFleet`
+    - `VcfInstance`
+    - `VsphereNamespaceChildType`
+    - `VsphereNamespaceDescendantType`
+    - `VsphereSupervisorChildType`
+    - `VsphereVcenterSupervisorChildType`
+    - `WorkloadFilter`
+    - `WorkloadGroupByAggregationData`
+    - `WorkloadGroupByEnum`
+    - `WorkloadGroupByInfo`
+    - `WorkloadGroupByPrimaryGroupByItem`
+    - `WorkloadGroupByReply`
+    - `WorkloadGroupBySecondaryGroupByItem`
+
+- `evidenceId` field added to `ActivityClassificationSource`
+- `fileName` field added to `ActivityClassificationSource`
+- `forecastedBytes` field added to `ArchivalLocationForecast`
+- `growthPct` field added to `ArchivalLocationForecast`
+- `objectStats` field added to `AzureDevOpsProject`
+- `mongoDatabaseAppMetadata` field added to `CdmSnapshot`
+- `proxmoxSnapshotNetworkAdapters` field added to `CdmSnapshot`
+- `cachedWorkloadName` field added to `ChildRecoverySpecMapV2`
+- `slaProtection` field added to `Db2InstanceSummary`
+- `slaProtection` field added to `ExchangeDagSummary`
+- `slaProtection` field added to `FailoverClusterSummary`
+- `gcsBucketCount` field added to `GcpNativeProject`
+- `permissionsWithConditionsDetails` field added to `GcpPermissionGroup`
+- `permissionsWithoutConditionsDetails` field added to `GcpPermissionGroup`
+- `lastCheckedTime` field added to `HarmfulLifecyclePolicyConnection`
+- `slaProtection` field added to `HypervVirtualMachineSummary`
+- `slaProtection` field added to `K8sClusterSummary`
+- `slaProtection` field added to `K8sProtectionSetSummary`
+- `url` field added to `M365ConfigsOrg`
+- `sourceShardToTargetShardMap` input field added to `MongoClusterRecoveryRequestConfigInput`
+- `targetShardToSourceShardMap` input field added to `MongoClusterRecoveryRequestConfigInput`
+- `slaProtection` field added to `MssqlDbSummary`
+- `enableVmwareAcceleratedMssqlSnapshot` field added to `MssqlHostConfiguration`
+??? note "96 fields added to `Mutation`"
+
+    - `acknowledgeActiveDirectoryForestRestoreFailedHealthChecks`
+    - `addAgentCloudPolicyPacks`
+    - `addAwsKms`
+    - `addAwsKmsWithCloudAccount`
+    - `addAzureDevOpsCloudAccountWithoutOauth`
+    - `addAzureKeyVaultKms`
+    - `addCertificate`
+    - `addEmailDomainAllowlistEntries`
+    - `addSecureAuthAzureKeyVault`
+    - `assignObjectsToTag`
+    - `assignObjectsToTags`
+    - `awsTriggerCftStatusPolling`
+    - `azureSetRubrikCustomerAppForAzureDevops`
+    - `batchRefreshDomains`
+    - `bulkAddKmipServer`
+    - `bulkRotateClusterEncryptionKey`
+    - `cancelActiveDirectoryForestRestore`
+    - `configureLogExport`
+    - `createAgentCloudPolicies`
+    - `createCloudNativeGcpStorageSetting`
+    - `createCloudNativeRcvAwsStorageSetting`
+    - `createCloudNativeRcvGcpStorageSetting`
+    - `createOrGetKmsAzureAppId`
+    - `createPasskey`
+    - `createPolarisReport`
+    - `createRcvAwsLocationsFromTemplate`
+    - `createRcvAwsReaderTarget`
+    - `createRcvGcpReaderTarget`
+    - `createRscTag`
+    - `createS3Bucket`
+    - `deactivateOthersPat`
+    - `deactivateOwnPat`
+    - `deleteAgentCloudPolicies`
+    - `deleteAwsDataCenterKeyBasedCloudAccount`
+    - `deleteAzureDataCenterCloudAccount`
+    - `deleteAzureDevOpsCloudAccountWithoutOauth`
+    - `deleteBrandLogo`
+    - `deleteKmipServer`
+    - `deleteKmsInstance`
+    - `deletePasskey`
+    - `deleteRscTag`
+    - `deleteSsoGroupsFromAccount`
+    - `deleteUserDevice`
+    - `disableEmailDomainAllowlist`
+    - `downloadFile`
+    - `editPasskey`
+    - `editUserDevice`
+    - `enableEmailDomainAllowlist`
+    - `forceDeleteCloudAccount`
+    - `gcpNativeExportBigQueryDataset`
+    - `gcpNativeExportCloudSqlInstance`
+    - `gcpNativeRestoreBigQueryDataset`
+    - `gcpNativeRestoreCloudSqlInstance`
+    - `pauseClusterAlerts`
+    - `preprocessArchivalEnablement`
+    - `promoteHostPostForestRestore`
+    - `refreshHarmfulLifecyclePolicies`
+    - `rekeyArchivalLocationMasterKeyWithAwsKmsKey`
+    - `rekeyArchivalLocationMasterKeyWithAzureKeyVaultKey`
+    - `removeAgentCloudPolicyPacks`
+    - `removeEmailDomainAllowlistEntries`
+    - `resetPasskeys`
+    - `restoreActiveDirectoryForest`
+    - `runActiveDirectoryForestRestoreFailedHealthChecks`
+    - `scheduleBulkCertRotation`
+    - `setAdForestTransitionAccountSetting`
+    - `setBrandLogo`
+    - `setFederatedLoginStatus`
+    - `setObjectsTagsAssignment`
+    - `setPasskeyConfig`
+    - `setTempServiceProvider`
+    - `setUserSetting`
+    - `startFetchCdmRbacConfigJob`
+    - `startMigrateCdmRbacConfigJob`
+    - `syncRotateClusterEncryptionKey`
+    - `triggerRcvGrsCustomFailover`
+    - `unassignObjectsFromTag`
+    - `unpauseClusterAlerts`
+    - `updateAgentCloudPolicies`
+    - `updateAwsKms`
+    - `updateAzureKeyVaultKms`
+    - `updateCertificateAuthoritySettings`
+    - `updateCloudNativeGcpStorageSetting`
+    - `updateCloudNativeRcvAwsStorageSetting`
+    - `updateCloudNativeRcvGcpStorageSetting`
+    - `updateEmailDomainAllowlistEntry`
+    - `updateKmipServer`
+    - `updateManualKmsMapping`
+    - `updatePatConfigurations`
+    - `updatePolarisReport`
+    - `updateRcvAzureChildCnpLocation`
+    - `updateReaderLocationMasterKeyWithAzureKeyVaultKey`
+    - `updateReaderLocationMasterKeyWithOwnerLocationKey`
+    - `updateRscTag`
+    - `upgradeAzureDevOpsCloudAccountWithoutOauth`
+    - `validateAndCreateAwsOrganization`
+
+- `slaProtection` field added to `NutanixVmSummary`
+- `slaProtection` field added to `OracleDbSummary`
+- `zeroRpoEndTime` field added to `OracleRecoverableRange`
+- `zeroRpoEndTime` field added to `OracleRecoverableRangeMinimal`
+??? note "126 fields added to `Query`"
+
+    - `AwsCloudAccountListKMSKeys`
+    - `activeDirectoryAsyncRequestStatus`
+    - `activeDirectoryForestCleanRecoverySnapshots`
+    - `activeDirectoryForestRestoreStatus`
+    - `activeDirectoryForests`
+    - `activeDirectoryObjectDiff`
+    - `activeDirectorySnapshotSearch`
+    - `activitySeriesGroupByConnection`
+    - `adForestRestoreChildJobStatuses`
+    - `agentCloudAgents`
+    - `agentCloudPolicies`
+    - `agentCloudPolicy`
+    - `agentCloudPolicyPacks`
+    - `agentCloudTools`
+    - `allAWSOrgsForCloudType`
+    - `allAgentCloudPolicyCategories`
+    - `allAgentCloudPolicyDrafts`
+    - `allAwsCloudAccountsFeaturesWithExoConfigs`
+    - `allAwsNativeLambdaFunctionsByRegionFromAws`
+    - `allAwsNativeOutposts`
+    - `allAwsNativeVpcInfoFromSnapshot`
+    - `allCloudNativeAccountsForCloudType`
+    - `allComplianceTimeSeries`
+    - `allEc2DedicatedHostsByRegionFromAws`
+    - `allGcpNativeBuckets`
+    - `allGcpNativeCloudSqlInstanceTiers`
+    - `allGcpNativeNetworksByCloudAccountId`
+    - `allLocationArchivalLag`
+    - `allOverlapsForOrgAdminPermissions`
+    - `allRehydratedLocationsOnCdm`
+    - `allRscReportConfigs`
+    - `allUserDevices`
+    - `archivalBandwidthStats`
+    - `archivalLocationEncryptionDetails`
+    - `areClusterAlertsPaused`
+    - `awsExocomputeKmsMappingStatus`
+    - `awsKmsRegions`
+    - `awsNativeCidrMappings`
+    - `awsNativeRegions`
+    - `awsNativeValidateVpcForRecovery`
+    - `awsOrgEnabledFeatures`
+    - `azureDevOpsCheckIfAuthenticationMechanismValidForOrg`
+    - `azureDevOpsDevCollabSnapshotsByRepository`
+    - `brandLogo`
+    - `cdmRbacMigrationStatuses`
+    - `cdmRolesForMigration`
+    - `cdmSSOGroupsForMigration`
+    - `cdmUsersForMigration`
+    - `certificateAuthoritySettings`
+    - `clusterRcvLocations`
+    - `cnpArchivalGroupsEncryptionDetails`
+    - `csrKeyConfig`
+    - `customerRcvZonesDetailsList`
+    - `dataLocationsPerKmipServer`
+    - `dataLocationsPerKmsKeyVault`
+    - `devOpsObjectsWithClosestSnapshot`
+    - `doesEmailDomainAllowlistEntryExist`
+    - `ec2InstanceTypesFromAwsByAz`
+    - `effectiveGpo`
+    - `effectiveSessionTimeouts`
+    - `emailDomainAllowlistConfig`
+    - `eventSeriesPermissionInfo`
+    - `fetchedCdmRbacConfigSummaryStats`
+    - `filesetTemplatesByFids`
+    - `forceDeleteCloudAccountEligibility`
+    - `gcpBigQueryDataset`
+    - `gcpBigQueryDatasetPointInTimeRecoveryWindow`
+    - `gcpBigQueryDatasets`
+    - `gcpCloudAccountGrantedPermissionsGroups`
+    - `gcpExocomputePrivateContainerRegistry`
+    - `gcpListAllProjectsForOauth`
+    - `generateAzureDevOpsOnboardingScript`
+    - `generateNasMigrationReport`
+    - `getAdForestTransitionAccountSetting`
+    - `getAwsCustomerOrg`
+    - `getAwsSecretRegionEnabledState`
+    - `getCloudAccountsMissingPermissions`
+    - `globalObjectLocations`
+    - `gpoAlertDetails`
+    - `gpoSettingsChangeData`
+    - `hasAnyInventoryItems`
+    - `isEmailAllowedByDomainAllowlist`
+    - `keyIdsInAwsKms`
+    - `keyNamesInAzureKeyVault`
+    - `keyVersionsForKeyNameInAzureKeyVault`
+    - `kmsInstances`
+    - `listAwsOrgChildren`
+    - `listNasAutomigrationTasks`
+    - `mandatoryTotpGracePeriod`
+    - `nodeKeyRotation`
+    - `oktaAuthenticators`
+    - `oktaIdentityProviders`
+    - `oktaIdpRoutingRules`
+    - `patConfigurations`
+    - `permissionVersionDescriptions`
+    - `personalAccessToken`
+    - `personalAccessTokens`
+    - `polarisReportConfig`
+    - `polarisReportSchema`
+    - `polarisReportTableIntrospection`
+    - `powerPlatformApps`
+    - `powerPlatformFlows`
+    - `rcvCustomerSpecificString`
+    - `rcvRegions`
+    - `readerRcvOwnerEncryptionKey`
+    - `replicatedObjects`
+    - `reportChartData`
+    - `reportSchema`
+    - `reportTableData`
+    - `rscTagById`
+    - `rscTagUniqueness`
+    - `rscTags`
+    - `runCertificateRotationPrechecks`
+    - `s3TablesIcebergTable`
+    - `serviceProviderMetadataFields`
+    - `taggedObjectsByTagId`
+    - `unifiedActiveDirectoryDomain`
+    - `unifiedActiveDirectoryDomainControllers`
+    - `unifiedActiveDirectoryDomains`
+    - `unifiedActiveDirectoryForests`
+    - `validateAzureDevOpsProjectName`
+    - `validateCertificate`
+    - `validateGcpPcrServiceAccount`
+    - `validateKmsConnection`
+    - `verifyKmsName`
+    - `workloadGroupByAtSpecifiedTime`
+
+- `preSeedStatus` field added to `RecoveryPlanChild`
+- `targetMappingId` input field added to `ReplicationSpecV2Input`
+- `tags` field added to `S3BucketDetails`
+- `slaProtection` field added to `SapHanaSystemSummary`
+- `slaProtection` field added to `UpdateManagedVolumeReply`
+- `slaProtection` field added to `VirtualMachineSummary`
+- `isVmServiceVmSnapshot` field added to `VmwareAppMetadata`
+- `slaProtection` field added to `VolumeGroupDetailInfo`
+- `virtualDeviceNode` field added to `VsphereVirtualDisk`
+- Description A source that contributed evidence to an activity\s classification. on type ActivityClassificationSource has changed to `One` piece of evidence behind an activity\s classification.
+- Field `ArchivalSpec`.storageSetting is deprecated
+- Description Input for deleting Exocompute configurations for an Azure Cloud Account. on type DeleteAzureCloudAccountExocomputeConfigurationsInput has changed to `AzureExocomputeConfigsDeleteReq` defines the request for deleting the exocompute configs specified by the exocompute_config_ids.
+- Description GetArchivalReaderInfoReq is the request object for GetArchivalReaderInfo. on type GetArchivalReaderInfoReq has changed to `Input` for getting the reader location details of an archival location.
+- Deprecation reason on field `Mutation.updateRcsAutomaticTargetMapping` has changed from `This` mutation is deprecated. Please use updateRcvLocationsFromTemplate. to `This` mutation is deprecated. Use updateRcvTarget to update each Rubrik Cloud Vault Azure archival location.
+- Field `Query`.allCdpVmsInfos is deprecated
+- Description Customer-provided VPC interface endpoint (PrivateLink) DNS names for routing a Rubrik Cloud Vault (RCV) AWS CDM location\s S3 and STS traffic privately. These are the regional interface-endpoint DNS hostnames. on type RcvAwsPrivateConnectivityEndpoints has changed to `Customer`-provided VPC interface endpoint (PrivateLink) DNS names for routing the S3 and STS traffic of a Rubrik Cloud Vault AWS location on a Rubrik cluster privately. These are the regional interface-endpoint DNS hostnames.'
+- Description Paginated list of Recovery objects. Each page of the results includes at most 1000 entries. Query the `pageInfo.hasNextPage` field to know whether all objects were returned. on type RecoveryConnection has changed to `Paginated` list of Recovery objects. Each page of the results includes at most 50 entries. Query the `pageInfo.hasNextPage` field to know whether all objects were returned.
+- Description Details of S3 Bucket containing name, region and ARN. on type S3BucketDetails has changed to `Details` of S3 Bucket containing name, region, ARN and, when requested, tags.
+- Description Input for starting jobs to disable a cloud account feature for a list of Azure Cloud Accounts. on type StartDisableAzureCloudAccountJobInput has changed to `Input` for starting jobs to disable a cloud account feature for a list of Azure Cloud Accounts.
+- Enum value TableViewType.CLOUD_COST_EXPORT_TABLE was deprecated with reason Use CLOUD_COST_TABLE.
+- Description Input for unmapping Azure cloud accounts from the mapped Exocompute subscription. on type UnmapAzureCloudAccountExocomputeSubscriptionInput has changed to `Input` for unmapping Azure cloud accounts from the mapped Exocompute subscription.
+- Type mandatoryTotpGracePeriod was added
 
 ## November 02, 2026
 

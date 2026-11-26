@@ -2,7 +2,7 @@
 
 A vSphere Supervisor.
 
-**Implements:** [HierarchyObject](../interfaces/HierarchyObject.md), [CdmHierarchyObject](../interfaces/CdmHierarchyObject.md), [VsphereVcenterDescendantType](../interfaces/VsphereVcenterDescendantType.md)
+**Implements:** [CdmHierarchyObject](../interfaces/CdmHierarchyObject.md), [HierarchyObject](../interfaces/HierarchyObject.md), [VsphereVcenterDescendantType](../interfaces/VsphereVcenterDescendantType.md), [VsphereVcenterSupervisorChildType](../interfaces/VsphereVcenterSupervisorChildType.md)
 
 ## Fields
 

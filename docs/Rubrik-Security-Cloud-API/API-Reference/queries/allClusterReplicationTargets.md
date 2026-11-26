@@ -1,12 +1,12 @@
 # allClusterReplicationTargets
 
-All replication targets for a cluster.
+Lists the replication target clusters for a source Rubrik cluster.
 
 ## Arguments
 
 | Argument | Type | Description |
 |----------|------|-------------|
-| clusterUuid *(required)* | [UUID](../types/scalars/UUID.md)! | UUID of the cluster. |
+| clusterUuid *(required)* | [UUID](../types/scalars/UUID.md)! | UUID of the source Rubrik cluster. |
 
 ## Returns
 

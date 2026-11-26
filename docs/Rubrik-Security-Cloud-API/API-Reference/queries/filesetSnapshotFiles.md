@@ -1,6 +1,6 @@
 # filesetSnapshotFiles
 
-Lists all files and directories in a given path Supported in v5.0+ Lists all files and directories in a given path.
+Lists the files and folders at a path inside a fileset snapshot, sorted by name.
 
 ## Arguments
 

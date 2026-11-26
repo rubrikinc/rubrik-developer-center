@@ -38,6 +38,7 @@ Supported in v5.0+
 | racName | String | Supported in v5.0+ v5.0-v5.3: RAC name of cluster database. v6.0+: RAC name of the cluster database. |
 | shouldUseSecureThriftForDataTransfer | Boolean | Supported in v9.4+ Boolean value specifying whether to use secure thrift as the data transfer mechanism between the Rubrik cluster and the Oracle database instead of NFS. The default data transfer mechanism is NFS. |
 | sid | String | Supported in v5.0+ System identifier (SID) of the Oracle database. |
+| slaProtection | [SlaProtection](SlaProtection.md) | Supported in v9.7 How the Oracle database or Data Guard group is protected, computed by the Rubrik cluster from the effective SLA Domain of the object, including an SLA Domain inherited from a parent object. Use this, not effectiveSlaDomainId or configuredSlaDomainId, to display the protection of the object. |
 | snappable | [CdmWorkload](CdmWorkload.md) |  |
 | standaloneHostId | String | Supported in v5.0+ Rubrik ID of the standalone Oracle host on which this database is hosted. This field will be empty if the database is not hosted on a standalone system. |
 | standaloneHostName | String | Supported in v5.0+ Hostname of the standalone Oracle database host. |

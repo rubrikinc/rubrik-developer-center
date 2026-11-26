@@ -6,6 +6,7 @@ The provider of the endpoint to which the webhook will be sent.
 
 | Value | Description |
 |-------|-------------|
+| CROWDSTRIKE_NG_SIEM | A CrowdStrike Falcon Next-Gen SIEM endpoint receives the webhook. |
 | CUSTOM | A generic endpoint receives the webhook. |
 | GOOGLE_SECOPS | A Google SecOps endpoint receives the webhook. |
 | LOGSCALE | A CrowdStrike Falcon LogScale endpoint receives the webhook. |

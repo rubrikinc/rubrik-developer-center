@@ -44,4 +44,4 @@ Represents a node in a hierarchy path.
 - [AnthropicOrg.effectiveSlaSourceObject](AnthropicOrg.md)
 - [AnthropicOrg.logicalPath](AnthropicOrg.md)
 - [AnthropicOrg.physicalPath](AnthropicOrg.md)
-- *…and 1223 more*
+- *…and 1268 more*

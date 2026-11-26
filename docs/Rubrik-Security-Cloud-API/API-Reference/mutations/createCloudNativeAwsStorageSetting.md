@@ -6,7 +6,7 @@ Create storage settings for archiving AWS cloud native protected objects.
 
 | Argument | Type | Description |
 |----------|------|-------------|
-| input *(required)* | [CreateCloudNativeAwsStorageSettingInput](../types/inputs/CreateCloudNativeAwsStorageSettingInput.md)! | Create AWS cloud native storage setting. |
+| input *(required)* | [CreateCloudNativeAwsStorageSettingInput](../types/inputs/CreateCloudNativeAwsStorageSettingInput.md)! | Name, AWS cloud account ID, bucket prefix, storage class (Intelligent-Tiering is not supported), and template type (source region or a specific region). Provide exactly one encryption key: a KMS master key ID or an AWS KMS key. Region is needed for a specific-region template. Bucket tags are optional. |
 
 ## Returns
 

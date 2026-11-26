@@ -1,12 +1,12 @@
 # targetMapping
 
-GetTargetMapping returns a single archival group (target mapping) in the V2 shape.
+Returns one archival group (target mapping).
 
 ## Arguments
 
 | Argument | Type | Description |
 |----------|------|-------------|
-| targetMappingId *(required)* | [UUID](../types/scalars/UUID.md)! | Corresponds to ID of target mapping in Rubrik. |
+| targetMappingId *(required)* | [UUID](../types/scalars/UUID.md)! | ID of the archival group. |
 
 ## Returns
 

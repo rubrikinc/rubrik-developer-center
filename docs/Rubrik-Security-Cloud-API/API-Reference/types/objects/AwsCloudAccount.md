@@ -28,6 +28,7 @@ Details of the AWS account.
 
 - [AddAwsAuthenticationServerBasedCloudAccountReply.awsAccount](AddAwsAuthenticationServerBasedCloudAccountReply.md)
 - [AddAwsIamUserBasedCloudAccountReply.awsAccount](AddAwsIamUserBasedCloudAccountReply.md)
+- [AwsCloudAccountFeaturesWithExoConfigs.awsCloudAccount](AwsCloudAccountFeaturesWithExoConfigs.md)
 - [AwsCloudAccountWithFeatures.awsCloudAccount](AwsCloudAccountWithFeatures.md)
 - [AwsCloudAccountsMigrateInitiateReply.eligibleAwsAccounts](AwsCloudAccountsMigrateInitiateReply.md)
 - [AwsExocomputeConfig.awsCloudAccount](AwsExocomputeConfig.md)

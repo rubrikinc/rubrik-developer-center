@@ -2,7 +2,7 @@
 
 A vSphere virtual machine.
 
-**Implements:** [HierarchyObject](../interfaces/HierarchyObject.md), [CdmHierarchyObject](../interfaces/CdmHierarchyObject.md), [CdmHierarchySnappableNew](../interfaces/CdmHierarchySnappableNew.md), [HierarchySnappable](../interfaces/HierarchySnappable.md), [VsphereVcenterDescendantType](../interfaces/VsphereVcenterDescendantType.md), [VsphereComputeClusterDescendantType](../interfaces/VsphereComputeClusterDescendantType.md), [VsphereContentLibraryDescendantType](../interfaces/VsphereContentLibraryDescendantType.md), [VsphereContentLibraryLibraryChildType](../interfaces/VsphereContentLibraryLibraryChildType.md), [VsphereDatacenterDescendantType](../interfaces/VsphereDatacenterDescendantType.md), [VsphereDatacenterFolderDescendantType](../interfaces/VsphereDatacenterFolderDescendantType.md), [VsphereFolderLogicalChildType](../interfaces/VsphereFolderLogicalChildType.md), [VsphereFolderDescendantType](../interfaces/VsphereFolderDescendantType.md), [VsphereHostPhysicalChildType](../interfaces/VsphereHostPhysicalChildType.md), [VsphereHostDescendantType](../interfaces/VsphereHostDescendantType.md), [VsphereTagTagChildType](../interfaces/VsphereTagTagChildType.md), [VsphereTagDescendantType](../interfaces/VsphereTagDescendantType.md), [VsphereTagCategoryDescendantType](../interfaces/VsphereTagCategoryDescendantType.md), [VcdTopLevelDescendantType](../interfaces/VcdTopLevelDescendantType.md), [VcdDescendantType](../interfaces/VcdDescendantType.md), [VcdLogicalChildType](../interfaces/VcdLogicalChildType.md), [VcdOrgDescendantType](../interfaces/VcdOrgDescendantType.md), [VcdOrgLogicalChildType](../interfaces/VcdOrgLogicalChildType.md), [VcdOrgVdcDescendantType](../interfaces/VcdOrgVdcDescendantType.md), [VcdOrgVdcLogicalChildType](../interfaces/VcdOrgVdcLogicalChildType.md), [VcdVappDescendantType](../interfaces/VcdVappDescendantType.md), [VcdVappLogicalChildType](../interfaces/VcdVappLogicalChildType.md)
+**Implements:** [HierarchyObject](../interfaces/HierarchyObject.md), [CdmHierarchyObject](../interfaces/CdmHierarchyObject.md), [CdmHierarchySnappableNew](../interfaces/CdmHierarchySnappableNew.md), [HierarchySnappable](../interfaces/HierarchySnappable.md), [VsphereVcenterDescendantType](../interfaces/VsphereVcenterDescendantType.md), [VsphereComputeClusterDescendantType](../interfaces/VsphereComputeClusterDescendantType.md), [VsphereContentLibraryDescendantType](../interfaces/VsphereContentLibraryDescendantType.md), [VsphereContentLibraryLibraryChildType](../interfaces/VsphereContentLibraryLibraryChildType.md), [VsphereDatacenterDescendantType](../interfaces/VsphereDatacenterDescendantType.md), [VsphereDatacenterFolderDescendantType](../interfaces/VsphereDatacenterFolderDescendantType.md), [VsphereFolderLogicalChildType](../interfaces/VsphereFolderLogicalChildType.md), [VsphereFolderDescendantType](../interfaces/VsphereFolderDescendantType.md), [VsphereHostPhysicalChildType](../interfaces/VsphereHostPhysicalChildType.md), [VsphereHostDescendantType](../interfaces/VsphereHostDescendantType.md), [VsphereTagTagChildType](../interfaces/VsphereTagTagChildType.md), [VsphereTagDescendantType](../interfaces/VsphereTagDescendantType.md), [VsphereTagCategoryDescendantType](../interfaces/VsphereTagCategoryDescendantType.md), [VsphereSupervisorDescendantType](../interfaces/VsphereSupervisorDescendantType.md), [VsphereNamespaceChildType](../interfaces/VsphereNamespaceChildType.md), [VsphereNamespaceDescendantType](../interfaces/VsphereNamespaceDescendantType.md), [VcdTopLevelDescendantType](../interfaces/VcdTopLevelDescendantType.md), [VcdDescendantType](../interfaces/VcdDescendantType.md), [VcdLogicalChildType](../interfaces/VcdLogicalChildType.md), [VcdOrgDescendantType](../interfaces/VcdOrgDescendantType.md), [VcdOrgLogicalChildType](../interfaces/VcdOrgLogicalChildType.md), [VcdOrgVdcDescendantType](../interfaces/VcdOrgVdcDescendantType.md), [VcdOrgVdcLogicalChildType](../interfaces/VcdOrgVdcLogicalChildType.md), [VcdVappLogicalChildType](../interfaces/VcdVappLogicalChildType.md), [VcdVappDescendantType](../interfaces/VcdVappDescendantType.md)
 
 ## Fields
 
@@ -90,14 +90,14 @@ A vSphere virtual machine.
 | Field | Argument | Type | Description |
 |-------|----------|------|-------------|
 | missedSnapshotConnection | first | Int | Returns the first n elements from the list. |
-| missedSnapshotConnection | after | String | Returns the elements in the list that occur after the specified cursor. |
+| missedSnapshotConnection | after | String | An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results. |
 | missedSnapshotConnection | last | Int | Returns the last n elements from the list. |
-| missedSnapshotConnection | before | String | Returns the elements in the list that occur before the specified cursor. |
+| missedSnapshotConnection | before | String | An opaque cursor returned from a previous query's startCursor field. Pass this value verbatim to retrieve the previous page of results. |
 | missedSnapshotConnection | filter | [MissedSnapshotFilterInput](../inputs/MissedSnapshotFilterInput.md) | Filter missed snapshots by date. |
 | missedSnapshotGroupByConnection | first | Int | Returns the first n elements from the list. |
-| missedSnapshotGroupByConnection | after | String | Returns the elements in the list that occur after the specified cursor. |
+| missedSnapshotGroupByConnection | after | String | An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results. |
 | missedSnapshotGroupByConnection | last | Int | Returns the last n elements from the list. |
-| missedSnapshotGroupByConnection | before | String | Returns the elements in the list that occur before the specified cursor. |
+| missedSnapshotGroupByConnection | before | String | An opaque cursor returned from a previous query's startCursor field. Pass this value verbatim to retrieve the previous page of results. |
 | missedSnapshotGroupByConnection | filter | [MissedSnapshotFilterInput](../inputs/MissedSnapshotFilterInput.md) | Filter missed snapshots by date. |
 | missedSnapshotGroupByConnection | groupBy *(required)* | [MissedSnapshotGroupByTime](../enums/MissedSnapshotGroupByTime.md)! | Group snapshots by field. |
 | missedSnapshotGroupByConnection | timezoneOffset | Float | Offset based on the customer timezone. |
@@ -110,9 +110,9 @@ A vSphere virtual machine.
 | numWorkloadDescendants | before | String | Returns the elements in the list that occur before the specified cursor. |
 | numWorkloadDescendants | objectTypes | [[ManagedObjectType](../enums/ManagedObjectType.md)!] | Types of objects to limit the results. If absent, all object types are returned. |
 | snapshotConnection | first | Int | Returns the first n elements from the list. |
-| snapshotConnection | after | String | Returns the elements in the list that occur after the specified cursor. |
+| snapshotConnection | after | String | An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results. |
 | snapshotConnection | last | Int | Returns the last n elements from the list. |
-| snapshotConnection | before | String | Returns the elements in the list that occur before the specified cursor. |
+| snapshotConnection | before | String | An opaque cursor returned from a previous query's startCursor field. Pass this value verbatim to retrieve the previous page of results. |
 | snapshotConnection | filter | [CdmSnapshotFilterInput](../inputs/CdmSnapshotFilterInput.md) | Filter snapshot connection. |
 | snapshotConnection | sortBy | [CdmSnapshotSortByEnum](../enums/CdmSnapshotSortByEnum.md) | Sorts snapshots by field. |
 | snapshotConnection | sortOrder | [SortOrder](../enums/SortOrder.md) | Sorts the order of results. |

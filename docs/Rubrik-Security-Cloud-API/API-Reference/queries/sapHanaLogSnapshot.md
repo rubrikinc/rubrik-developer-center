@@ -1,12 +1,12 @@
 # sapHanaLogSnapshot
 
-Details of a SAP HANA log snapshot for a given FID.
+Returns one SAP HANA log snapshot by its Rubrik ID; find IDs with sapHanaLogSnapshots.
 
 ## Arguments
 
 | Argument | Type | Description |
 |----------|------|-------------|
-| fid *(required)* | [UUID](../types/scalars/UUID.md)! | Rubrik UUID for the object. |
+| fid *(required)* | [UUID](../types/scalars/UUID.md)! | Rubrik ID of the log snapshot. |
 
 ## Returns
 

@@ -1,12 +1,12 @@
 # addManagedVolume
 
-Create a Managed Volume Supported in v7.0+ v7.0: Initiates an asynchronous job to create a Managed Volume stack. v8.0+: Start an asynchronous job to create a Managed Volume stack.
+Starts an asynchronous job that creates a Managed Volume on the given Rubrik cluster, and returns the job's request status with a summary of the new Managed Volume. Requires Rubrik CDM 7.0 or later.
 
 ## Arguments
 
 | Argument | Type | Description |
 |----------|------|-------------|
-| input *(required)* | [AddManagedVolumeInput](../types/inputs/AddManagedVolumeInput.md)! | Input for V1CreateManagedVolumeV1. |
+| input *(required)* | [AddManagedVolumeInput](../types/inputs/AddManagedVolumeInput.md)! | The Rubrik cluster UUID and the Managed Volume configuration. |
 
 ## Returns
 

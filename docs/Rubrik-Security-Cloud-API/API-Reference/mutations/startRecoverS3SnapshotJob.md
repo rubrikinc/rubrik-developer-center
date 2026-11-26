@@ -1,6 +1,6 @@
 # startRecoverS3SnapshotJob
 
-StartRecoverS3SnapshotJob schedules an on-demand job to recover an AWS S3 bucket from a snapshot or a point in time, resolving which of the two the caller asked for from the snapshot id and restore date on the input.
+Starts a job that recovers an S3 bucket from a snapshot or to a point in time; pass a snapshot ID or a restore date.
 
 ## Arguments
 

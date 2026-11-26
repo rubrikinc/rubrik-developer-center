@@ -15,6 +15,7 @@ Supported in v5.2+
 | primaryClusterId | String! | Required. Supported in v5.2+ |
 | slaAssignable | [SlaAssignable](SlaAssignable.md) |  |
 | slaAssignment | [SlaAssignment](../enums/SlaAssignment.md) | Supported in v5.2+ SLA Domain assignment for failover cluster. |
+| slaProtection | [SlaProtection](SlaProtection.md) | How the failover cluster is protected, computed by the Rubrik cluster from the SLA Domain assigned to the failover cluster. A failover cluster has no parent to inherit an SLA Domain from. A retention SLA Domain reports DO_NOT_PROTECT. Use this, not effectiveSlaDomainId or configuredSlaDomainId, to display the protection of the failover cluster. |
 
 ## Used By
 

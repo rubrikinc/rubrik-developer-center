@@ -1,6 +1,6 @@
 # createRole
 
-This endpoint is deprecated.
+Deprecated; use mutateRole. Creates a custom role with the given name, description, and permissions and returns its ID.
 
 ## Arguments
 

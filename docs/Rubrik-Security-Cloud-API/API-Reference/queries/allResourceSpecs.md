@@ -1,6 +1,6 @@
 # allResourceSpecs
 
-Lists resource specifications for the specified Recovery Plan or recovery. If both a recovery ID and a Recovery Plan ID are provided, we return the resource specifications used by that recovery and ignore the Recovery Plan ID.
+Lists resource specifications for a recovery plan or for one recovery. When both IDs are given, returns the specifications that recovery used and ignores the recovery plan ID.
 
 ## Arguments
 

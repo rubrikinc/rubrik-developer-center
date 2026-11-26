@@ -1,12 +1,12 @@
 # recoverSapHanaDatabaseToFullBackup
 
-Recover SAP HANA database to the full backup Supported in v9.4+ Recover the SAP HANA database to the provided full backup.
+Recovers a SAP HANA database to a full backup. Returns the async request; track it with jobInfo (type SAP_HANA_DATABASE, requestId = the returned id, clusterUuid = the cluster's UUID).
 
 ## Arguments
 
 | Argument | Type | Description |
 |----------|------|-------------|
-| input *(required)* | [RecoverSapHanaDatabaseToFullBackupInput](../types/inputs/RecoverSapHanaDatabaseToFullBackupInput.md)! | Input for V1RecoverSapHanaDatabaseToFullBackup. |
+| input *(required)* | [RecoverSapHanaDatabaseToFullBackupInput](../types/inputs/RecoverSapHanaDatabaseToFullBackupInput.md)! | The recovery configuration, including the full backup to recover to. |
 
 ## Returns
 

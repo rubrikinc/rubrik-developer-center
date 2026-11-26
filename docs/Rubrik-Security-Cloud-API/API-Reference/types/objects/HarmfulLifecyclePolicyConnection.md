@@ -7,6 +7,7 @@ Paginated list of HarmfulLifecyclePolicy objects. Each page of the results inclu
 | Field | Type | Description |
 |-------|------|-------------|
 | edges | [[HarmfulLifecyclePolicyEdge](HarmfulLifecyclePolicyEdge.md)!]! | List of HarmfulLifecyclePolicy objects with additional pagination information. Use `nodes` if per-object cursors are not needed. |
+| lastCheckedTime | [DateTime](../scalars/DateTime.md) | Time of the last successful lifecycle policy check for this account. |
 | nodes | [[HarmfulLifecyclePolicy](HarmfulLifecyclePolicy.md)!]! | List of HarmfulLifecyclePolicy objects. |
 | pageInfo | [PageInfo](PageInfo.md)! | General information about this result page. |
 

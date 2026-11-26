@@ -1,6 +1,6 @@
 # isOrgServiceAccountDisabled
 
-Returns whether the service accounts of the organization are not enabled.
+Returns true when service accounts are turned off for the caller's organization, in which case updateServiceAccount and rotateServiceAccountSecret fail.
 
 ## Returns
 

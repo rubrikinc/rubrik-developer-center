@@ -84,6 +84,7 @@ Hierarchy object type enum covering all CDM and RSC hierarchy objects.
 | GCP_ALLOY_DB_CLUSTER | GCP AlloyDB Cluster. |
 | GCP_BIGQUERY_DATASET | GCP BigQuery Dataset. |
 | GCP_CLOUD_SQL_INSTANCE | GCP Cloud SQL Instance. |
+| GCP_GCS_BUCKET | GCP GCS Bucket. |
 | GITHUB_ORGANIZATION | GitHub Organization. |
 | GITHUB_ORG_PACKAGES_FIXED_OBJECT | GitHub organization packages. |
 | GITHUB_REPOSITORY | GitHub Repository. |
@@ -241,6 +242,13 @@ Hierarchy object type enum covering all CDM and RSC hierarchy objects.
 | SALESFORCE_FIXED_OBJECT | Salesforce metadata. |
 | SALESFORCE_OBJECT | Salesforce object. |
 | SALESFORCE_ORGANIZATION | Salesforce organization. |
+| SANGFOR_AVAILABILITY_ZONE | Sangfor availability zone (resource pool). |
+| SANGFOR_CLUSTER | Sangfor cluster. |
+| SANGFOR_DATASTORE | Sangfor datastore. |
+| SANGFOR_HOST | Sangfor host. |
+| SANGFOR_NETWORK | Sangfor network. |
+| SANGFOR_SCP | Sangfor Cloud Platform (SCP) manager. |
+| SANGFOR_VIRTUAL_MACHINE | Sangfor virtual machine. The protectable object in this hierarchy. |
 | SAP_HANA_SYSTEM | SAP HANA System. |
 | SapHanaDatabase | SAP HANA Database. |
 | SapHanaSystem | SAP HANA System. |

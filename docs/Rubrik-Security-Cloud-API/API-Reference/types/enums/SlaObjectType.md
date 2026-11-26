@@ -31,6 +31,7 @@ Type of objects managed by SLA Domains.
 | GCP_ALLOY_DB_CLUSTER_OBJECT_TYPE | GCP AlloyDB Cluster object. |
 | GCP_BIGQUERY_OBJECT_TYPE | GCP BigQuery object. |
 | GCP_CLOUD_SQL_OBJECT_TYPE | GCP Cloud SQL object. |
+| GCP_GCS_BUCKET_OBJECT_TYPE | GCP Cloud Storage bucket object. SLA Domains are assignable at the project and bucket levels; the bucket is the object that is backed up. |
 | GCP_OBJECT_TYPE | GCP object. |
 | GITHUB_OBJECT_TYPE | GitHub object. |
 | GLUE_ICEBERG_TABLE_OBJECT_TYPE | Glue Iceberg Table object. |
@@ -66,6 +67,7 @@ Type of objects managed by SLA Domains.
 | RSC_TAG_OBJECT_TYPE | RSC tag object. Used when an SLA Domain is assigned to an RSC tag so that assigned objects inherit the SLA Domain from the tag. |
 | S3_TABLES_ICEBERG_TABLE_OBJECT_TYPE | S3 Tables Iceberg Table object. |
 | SALESFORCE_OBJECT_TYPE | Salesforce object. |
+| SANGFOR_OBJECT_TYPE | Sangfor Cloud Platform SLA Domain object. |
 | SAP_HANA_OBJECT_TYPE | SAP HANA object. |
 | SNAPMIRROR_CLOUD_OBJECT_TYPE | SnapMirror Cloud object. |
 | UNKNOWN_OBJECT_TYPE | Unknown object. |

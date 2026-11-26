@@ -1,6 +1,6 @@
 # resumeRecovery
 
-Resume existing paused recovery.
+Resumes a paused recovery and returns nothing. Follow the recovery with recoveries.
 
 ## Arguments
 

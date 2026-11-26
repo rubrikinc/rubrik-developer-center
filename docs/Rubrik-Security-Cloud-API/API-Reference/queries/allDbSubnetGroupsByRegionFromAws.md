@@ -1,6 +1,6 @@
 # allDbSubnetGroupsByRegionFromAws
 
-ListDbSubnetGroups returns the RDS DB subnet groups available in the given region of an AWS Native account.
+Lists the Amazon RDS DB subnet groups in a region of an AWS account.
 
 ## Arguments
 

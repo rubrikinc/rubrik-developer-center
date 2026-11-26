@@ -1,6 +1,6 @@
 # userGroups
 
-*No description available.*
+Deprecated; use groupsInCurrentAndDescendantOrganization. Lists the user groups in the account, optionally filtered by role.
 
 ## Arguments
 

@@ -1,6 +1,6 @@
 # awsNativeAccounts
 
-Lists the AWS Native accounts under the AWS-native hierarchy root.
+Lists the AWS accounts added to Rubrik for protection.
 
 ## Arguments
 

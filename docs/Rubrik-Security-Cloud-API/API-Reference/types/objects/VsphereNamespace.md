@@ -2,7 +2,7 @@
 
 A vSphere Namespace.
 
-**Implements:** [HierarchyObject](../interfaces/HierarchyObject.md), [CdmHierarchyObject](../interfaces/CdmHierarchyObject.md), [VsphereVcenterDescendantType](../interfaces/VsphereVcenterDescendantType.md), [VsphereSupervisorDescendantType](../interfaces/VsphereSupervisorDescendantType.md)
+**Implements:** [CdmHierarchyObject](../interfaces/CdmHierarchyObject.md), [HierarchyObject](../interfaces/HierarchyObject.md), [VsphereVcenterDescendantType](../interfaces/VsphereVcenterDescendantType.md), [VsphereSupervisorDescendantType](../interfaces/VsphereSupervisorDescendantType.md), [VsphereVcenterSupervisorChildType](../interfaces/VsphereVcenterSupervisorChildType.md), [VsphereSupervisorChildType](../interfaces/VsphereSupervisorChildType.md)
 
 ## Fields
 
@@ -41,7 +41,7 @@ A vSphere Namespace.
 | snapshotConsistencyMandate | [ConsistencyLevelEnum](../enums/ConsistencyLevelEnum.md)! | Consistency level mandated for snapshots under this Namespace. |
 | snapshotDistribution | [SnapshotDistribution](SnapshotDistribution.md)! | Distribution of the snapshots of the hierarchy object. |
 | status | [VsphereNamespaceStatus](../enums/VsphereNamespaceStatus.md)! | Status of the Namespace. |
-| supervisorId | [UUID](../scalars/UUID.md)! | RSC id of the Supervisor that owns the Namespace. |
+| supervisorId | [UUID](../scalars/UUID.md) | RSC id of the Supervisor that owns the Namespace. Null when the Namespace has no Supervisor. |
 | vCenterId | [UUID](../scalars/UUID.md)! | ID of the vCenter Server that hosts the vSphere Namespace. |
 
 ## Field Arguments

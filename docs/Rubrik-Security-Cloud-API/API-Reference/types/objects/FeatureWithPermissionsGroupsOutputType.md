@@ -14,3 +14,4 @@ Represents the feature with permission groups.
 **Referenced by**
 
 - [AwsIamPair.featuresWithPermissionsGroups](AwsIamPair.md)
+- [AwsOrgEnabledFeaturesReply.featuresWithPermissionsGroups](AwsOrgEnabledFeaturesReply.md)

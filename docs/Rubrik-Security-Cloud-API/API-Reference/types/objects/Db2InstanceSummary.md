@@ -19,6 +19,7 @@ Supported in v7.0+
 | protectionDate | String! | Required. Supported in v7.0+ UTC timestamp of the most recent Db2 instance refresh job. |
 | relicDatabaseIds | [String!]! | Supported in v8.0+ List of relic database IDs present in this Db2 instance. |
 | slaDomainId | String! | Required. Supported in v7.0+ SLA Domain ID assigned to the Db2 instance. |
+| slaProtection | [SlaProtection](SlaProtection.md) | How the Db2 instance is protected, computed by the Rubrik cluster from the SLA Domain assigned to the instance. A Db2 instance has no parent to inherit an SLA Domain from, so the status is NO_SLA when no SLA Domain is assigned. Use this, not slaDomainId, to display the protection of the instance. |
 | slaType | String! | Required. Supported in v7.0+ Type of the SLA Domain assigned to the Db2 instance. |
 | status | [Db2InstanceSummaryStatus](../enums/Db2InstanceSummaryStatus.md)! | Required. Supported in v7.0+ Status of the most recent Db2 instance refresh job. |
 | statusMessage | String! | Required. Supported in v7.0+ Status messsage of the most recent Db2 instance refresh job. |

@@ -10,3 +10,4 @@ Cloud-native object type for the label.
 | GCP_CLOUD_SQL_INSTANCE | GCP Cloud SQL Instance. |
 | GCP_DISK | GCP Disk. |
 | GCP_GCE_INSTANCE | GCP GCE Instance. |
+| GCP_GCS_BUCKET | GCP Cloud Storage bucket. |

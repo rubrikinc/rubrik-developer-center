@@ -45,4 +45,4 @@ Represents the object-level backup window status of a hierarchy object.
 - [AzureCosmosNosqlContainer.objectBackupWindow](AzureCosmosNosqlContainer.md)
 - [AzureCosmosNosqlDatabase.objectBackupWindow](AzureCosmosNosqlDatabase.md)
 - [AzureDevOpsOrganization.objectBackupWindow](AzureDevOpsOrganization.md)
-- *…and 384 more*
+- *…and 399 more*

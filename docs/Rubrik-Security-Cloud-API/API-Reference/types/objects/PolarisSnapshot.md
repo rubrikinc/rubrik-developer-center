@@ -92,4 +92,4 @@ A cloud-managed snapshot type that extends the generic snapshot with additional 
 - [AzureCosmosNosqlContainer.newestIndexedSnapshot](AzureCosmosNosqlContainer.md)
 - [AzureCosmosNosqlContainer.newestSnapshot](AzureCosmosNosqlContainer.md)
 - [AzureCosmosNosqlContainer.oldestSnapshot](AzureCosmosNosqlContainer.md)
-- *…and 141 more*
+- *…and 150 more*

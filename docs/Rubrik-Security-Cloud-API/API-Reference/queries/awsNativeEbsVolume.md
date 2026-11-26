@@ -1,12 +1,12 @@
 # awsNativeEbsVolume
 
-Returns a single AWS Native EBS volume by its Rubrik FID.
+Returns an Amazon EBS volume protected by Rubrik, by its Rubrik ID.
 
 ## Arguments
 
 | Argument | Type | Description |
 |----------|------|-------------|
-| ebsVolumeRubrikId *(required)* | [UUID](../types/scalars/UUID.md)! | Rubrik FID of the EBS volume. |
+| ebsVolumeRubrikId *(required)* | [UUID](../types/scalars/UUID.md)! | Rubrik ID of the EBS volume. |
 | includeSecurityMetadata | Boolean | Whether to include the object's security metadata in the response. |
 
 ## Returns

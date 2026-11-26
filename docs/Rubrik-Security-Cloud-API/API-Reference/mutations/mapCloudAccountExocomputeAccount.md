@@ -1,6 +1,6 @@
 # mapCloudAccountExocomputeAccount
 
-Map cloud accounts to an Exocompute account.
+Maps cloud accounts to an Exocompute account, so their protection tasks run on that account's Exocompute.
 
 ## Arguments
 

@@ -1,6 +1,6 @@
 # serviceAccounts
 
-Browse service accounts.
+Lists the service accounts in the caller's organization that the caller can see, with the roles assigned directly to each account.
 
 ## Arguments
 

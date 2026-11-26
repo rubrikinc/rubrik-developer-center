@@ -16,7 +16,10 @@ A key-value label on a GCP resource.
 - [GcpAlloyDbCluster.labels](GcpAlloyDbCluster.md)
 - [GcpBigQueryDataset.labels](GcpBigQueryDataset.md)
 - [GcpCloudSqlInstance.labels](GcpCloudSqlInstance.md)
+- [GcpGcsBucket.labels](GcpGcsBucket.md)
 - [GcpNativeDisk.labels](GcpNativeDisk.md)
 - [GcpNativeGceInstance.labels](GcpNativeGceInstance.md)
 - GcpNativeHierarchyObject.labels
 - [GcpNativeProject.labels](GcpNativeProject.md)
+- [GcpSpannerDatabase.labels](GcpSpannerDatabase.md)
+- [GcpSpannerInstance.labels](GcpSpannerInstance.md)

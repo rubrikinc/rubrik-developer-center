@@ -1,6 +1,6 @@
 # ssmDocumentForEc2
 
-GetSSMDocumentForEC2 retrieves the SSM document that allows RSC to trigger scripts on EC2 instances. This will be used for triggering post recovery script for application resilience.
+Returns the AWS Systems Manager (SSM) document that lets Rubrik run post-recovery scripts on EC2 instances.
 
 ## Returns
 

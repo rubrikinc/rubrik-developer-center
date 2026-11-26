@@ -14,4 +14,7 @@ Metadata is a generic key/value pair carrying additional information about a rep
 **Referenced by**
 
 - [CellData.metadata](CellData.md)
+- [ChartPrimaryGroupBy.metadata](ChartPrimaryGroupBy.md)
+- [ChartSecondaryGroupBy.metadata](ChartSecondaryGroupBy.md)
+- [PolarisReportColumn.metadata](PolarisReportColumn.md)
 - [Row.metadata](Row.md)

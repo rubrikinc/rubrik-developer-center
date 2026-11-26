@@ -1,12 +1,12 @@
 # updateAwsExocomputeConfigs
 
-Update AWS Exocompute configs.
+Updates Exocompute configurations for AWS cloud accounts.
 
 ## Arguments
 
 | Argument | Type | Description |
 |----------|------|-------------|
-| input *(required)* | [UpdateAwsExocomputeConfigsInput](../types/inputs/UpdateAwsExocomputeConfigsInput.md)! | Input to create AWS exocompute configurations. |
+| input *(required)* | [UpdateAwsExocomputeConfigsInput](../types/inputs/UpdateAwsExocomputeConfigsInput.md)! | The AWS Exocompute configurations to update. |
 
 ## Returns
 

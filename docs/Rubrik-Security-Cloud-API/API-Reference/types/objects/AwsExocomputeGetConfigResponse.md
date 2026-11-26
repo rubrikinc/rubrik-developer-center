@@ -24,6 +24,7 @@ AWS Exocompute configuration in a region.
 
 **Referenced by**
 
+- [AwsCloudAccountFeaturesWithExoConfigs.exocomputeConfigs](AwsCloudAccountFeaturesWithExoConfigs.md)
 - [AwsExocomputeConfig.configs](AwsExocomputeConfig.md)
 - [AwsFeatureConfig.exocomputeConfigs](AwsFeatureConfig.md)
 - [CreateAwsExocomputeConfigsReply.configs](CreateAwsExocomputeConfigsReply.md)

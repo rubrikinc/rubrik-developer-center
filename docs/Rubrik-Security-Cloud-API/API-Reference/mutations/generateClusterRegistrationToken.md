@@ -1,6 +1,6 @@
 # generateClusterRegistrationToken
 
-Generate a JWT that can be used to register clusters with Rubrik. If ManagedByRubrikArg is not given, the product type is inferred automatically.
+Generates a token (JWT) that registers a Rubrik cluster with this account. When the input does not say whether Rubrik manages the cluster, the product type is inferred.
 
 ## Arguments
 

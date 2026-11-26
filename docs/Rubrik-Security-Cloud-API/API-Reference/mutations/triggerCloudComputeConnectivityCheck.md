@@ -1,12 +1,12 @@
 # triggerCloudComputeConnectivityCheck
 
-Trigger cloud compute connectivity check Supported in v6.0+ Triggers a background job to perform the cloud compute connectivity check for the specified archival location.
+Starts a background check of cloud compute connectivity for an archival location on a Rubrik cluster. Follow it with checkCloudComputeConnectivityJobProgress.
 
 ## Arguments
 
 | Argument | Type | Description |
 |----------|------|-------------|
-| input *(required)* | [TriggerCloudComputeConnectivityCheckInput](../types/inputs/TriggerCloudComputeConnectivityCheckInput.md)! | Input for V1TriggerCloudComputeConnectivityCheck. |
+| input *(required)* | [TriggerCloudComputeConnectivityCheckInput](../types/inputs/TriggerCloudComputeConnectivityCheckInput.md)! | The archival location ID, and whether to check connectivity for CloudOn and CloudOut in addition to archiving. |
 
 ## Returns
 

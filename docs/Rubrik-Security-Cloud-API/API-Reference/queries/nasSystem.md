@@ -1,6 +1,6 @@
 # nasSystem
 
-A NAS System.
+Returns one registered NAS system, such as a NetApp or Isilon cluster, by its ID.
 
 ## Arguments
 

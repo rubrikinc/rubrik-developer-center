@@ -1,6 +1,6 @@
 # createAutomaticAzureTargetMapping
 
-*No description available.*
+Creates an automatic Azure archival group.
 
 ## Arguments
 

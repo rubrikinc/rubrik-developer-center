@@ -32,9 +32,7 @@ Initiate a session before doing Gcp OAuth flow.
 
     ```json
     {
-      "input": {
-        "customerUrl": "example-string"
-      }
+      "input": {}
     }
     ```
 

@@ -1,6 +1,6 @@
 # generateRecoveryReport
 
-Generate recovery report for download.
+Starts generating a PDF report for one recovery and returns its reportId. Poll recoveryReport with that ID until the status is ACTIVE or GENERATION_FAILED; when it is ACTIVE, download the report from reportUrl.
 
 ## Arguments
 

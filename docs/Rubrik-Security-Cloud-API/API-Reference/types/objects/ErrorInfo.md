@@ -14,6 +14,5 @@ The status code and message describing an error.
 **Referenced by**
 
 - [TestExistingWebhookReply.errorInfo](TestExistingWebhookReply.md)
-- [TestWebhookReply.errorInfo](TestWebhookReply.md)
 - [UpdateWebhookReply.testError](UpdateWebhookReply.md)
 - [Webhook.lastFailedErrorInfo](Webhook.md)

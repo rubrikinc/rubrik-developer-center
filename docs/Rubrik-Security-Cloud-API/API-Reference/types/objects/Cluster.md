@@ -151,7 +151,7 @@ A Rubrik CDM Cluster.
 - [CdmManagedNfsTarget.cluster](CdmManagedNfsTarget.md)
 - [CdmManagedS3CompatibleTarget.cluster](CdmManagedS3CompatibleTarget.md)
 - [CdmManagedTapeTarget.cluster](CdmManagedTapeTarget.md)
+- [CdmRole.cluster](CdmRole.md)
+- [CdmSSOGroup.cluster](CdmSSOGroup.md)
 - [CdmSnapshot.cluster](CdmSnapshot.md)
-- [CdmTarget.cluster](CdmTarget.md)
-- CloudDirectHierarchyObject.cluster
-- *…and 355 more*
+- *…and 370 more*

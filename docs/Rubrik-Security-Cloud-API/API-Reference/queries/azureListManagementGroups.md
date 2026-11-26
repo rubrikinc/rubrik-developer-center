@@ -1,6 +1,6 @@
 # azureListManagementGroups
 
-AzureListManagementGroups lists all the management groups that a user has read access to.
+Lists the Azure management groups the user can read.
 
 ## Arguments
 

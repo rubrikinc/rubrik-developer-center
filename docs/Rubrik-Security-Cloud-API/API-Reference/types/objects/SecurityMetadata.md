@@ -48,4 +48,4 @@ Represents security metadata of a workload.
 - [AzureCosmosNosqlContainer.securityMetadata](AzureCosmosNosqlContainer.md)
 - [AzureCosmosNosqlDatabase.securityMetadata](AzureCosmosNosqlDatabase.md)
 - [AzureDevOpsOrganization.securityMetadata](AzureDevOpsOrganization.md)
-- *…and 384 more*
+- *…and 399 more*

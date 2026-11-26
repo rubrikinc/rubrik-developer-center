@@ -46,7 +46,13 @@ S3 buckets that can hold the output of an RDS recover-to-S3 export, each with th
             "arn": "example-string",
             "name": "example-string",
             "region": "example-string",
-            "regionEnum": "AF_SOUTH_1"
+            "regionEnum": "AF_SOUTH_1",
+            "tags": [
+              {
+                "key": "example-string",
+                "value": "example-string"
+              }
+            ]
           }
         ]
       }

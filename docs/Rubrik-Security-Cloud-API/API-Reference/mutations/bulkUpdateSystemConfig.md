@@ -1,12 +1,12 @@
 # bulkUpdateSystemConfig
 
-Bulk update system config params Supported in v9.5+ Updates configs for multiple SAP HANA systems.
+Turns on or off a forced full backup after a primary (master) host failover for several SAP HANA systems, on Rubrik cluster version 9.5 or later. Runs synchronously: the returned status and result are final and there is no job to track with jobInfo.
 
 ## Arguments
 
 | Argument | Type | Description |
 |----------|------|-------------|
-| input *(required)* | [BulkUpdateSapHanaSystemConfigInput](../types/inputs/BulkUpdateSapHanaSystemConfigInput.md)! | Input for V1BulkUpdateSystemConfig. |
+| input *(required)* | [BulkUpdateSapHanaSystemConfigInput](../types/inputs/BulkUpdateSapHanaSystemConfigInput.md)! | The system IDs and isForceFullOnMasterChangeEnabled. |
 
 ## Returns
 

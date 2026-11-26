@@ -1,6 +1,6 @@
 # taskDetailGroupByConnection
 
-*No description available.*
+Deprecated: use the count field of taskDetailConnection instead. Groups task details by one field and returns each group.
 
 ## Arguments
 

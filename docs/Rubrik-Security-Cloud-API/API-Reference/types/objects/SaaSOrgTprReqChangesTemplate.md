@@ -1,6 +1,6 @@
 # SaaSOrgTprReqChangesTemplate
 
-*No description available.*
+SaaS organization TPR requested-changes template.
 
 **Implements:** [RequestedChangesTemplate](../interfaces/RequestedChangesTemplate.md)
 

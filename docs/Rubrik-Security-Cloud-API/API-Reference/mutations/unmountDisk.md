@@ -1,6 +1,6 @@
 # unmountDisk
 
-Unmount selected disks.
+Unmounts the selected disks mounted from snapshots.
 
 ## Arguments
 

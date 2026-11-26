@@ -13,5 +13,6 @@ Supported in v5.0+
 
 **Referenced by**
 
+- [ArchivalBandwidthStatsReply.items](ArchivalBandwidthStatsReply.md)
 - [InternalReplicationBandwidthIncomingResponse.items](InternalReplicationBandwidthIncomingResponse.md)
 - [InternalReplicationBandwidthOutgoingResponse.items](InternalReplicationBandwidthOutgoingResponse.md)

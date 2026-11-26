@@ -1,12 +1,12 @@
 # createRcsReaderTarget
 
-Creates reader type for RCS Azure archival location on a CDM cluster.
+Creates a reader location on a Rubrik cluster for an existing Rubrik Cloud Vault Azure archival location, so the cluster can read and recover data another cluster archived there.
 
 ## Arguments
 
 | Argument | Type | Description |
 |----------|------|-------------|
-| input *(required)* | [CreateRcsReaderTargetInput](../types/inputs/CreateRcsReaderTargetInput.md)! | Input for creating a new RCS reader target. |
+| input *(required)* | [CreateRcsReaderTargetInput](../types/inputs/CreateRcsReaderTargetInput.md)! | Rubrik cluster UUID, reader location name, name of the Rubrik Cloud Vault Azure location to read from, and retrieval settings. |
 
 ## Returns
 

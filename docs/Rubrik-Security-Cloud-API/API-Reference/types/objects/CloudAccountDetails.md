@@ -15,6 +15,7 @@ Cloud Account with mapped Exocompute account.
 **Referenced by**
 
 - [ApplicationCloudAccountToExocomputeConfig.mappedExocomputeAccount](ApplicationCloudAccountToExocomputeConfig.md)
+- [AwsCloudAccountFeaturesWithExoConfigs.mappedExocomputeAccount](AwsCloudAccountFeaturesWithExoConfigs.md)
 - [AwsExocomputeConfig.mappedCloudAccounts](AwsExocomputeConfig.md)
 - [AwsFeatureConfig.mappedExocomputeAccount](AwsFeatureConfig.md)
 - [AzureApplicationCloudAccountToExocomputeConfig.mappedExocomputeAccount](AzureApplicationCloudAccountToExocomputeConfig.md)

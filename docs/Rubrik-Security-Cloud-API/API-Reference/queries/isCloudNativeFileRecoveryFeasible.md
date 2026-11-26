@@ -1,6 +1,6 @@
 # isCloudNativeFileRecoveryFeasible
 
-List of snapshots with their file recovery feasibility status
+Returns, for each given snapshot, whether files can be recovered from it.
 
 ## Arguments
 

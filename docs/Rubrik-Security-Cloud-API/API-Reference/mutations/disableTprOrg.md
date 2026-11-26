@@ -1,6 +1,6 @@
 # disableTprOrg
 
-Disable TPR for an organization.
+Turns off quorum authorization (two-person rule) for an organization.
 
 ## Arguments
 

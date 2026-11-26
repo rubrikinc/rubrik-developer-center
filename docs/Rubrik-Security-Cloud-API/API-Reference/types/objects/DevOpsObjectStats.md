@@ -13,3 +13,7 @@ Aggregated statistics for DevOps managed objects, as one entry per requested Obj
 **Queries**
 
 - [query: devOpsObjectStatsSummary](../../queries/devOpsObjectStatsSummary.md)
+
+**Referenced by**
+
+- [AzureDevOpsProject.objectStats](AzureDevOpsProject.md)

@@ -27,6 +27,7 @@ Specifies workloads that have an anomalous snapshot.
 | resolutionStatusFilter | [[ResolutionStatus](../types/enums/ResolutionStatus.md)!] | Filter by anomaly resolution. |
 | riskLevelTypesFilter | [[RiskLevelType](../types/enums/RiskLevelType.md)!] | Filter by risk level type. |
 | anomalyCategoryFilter | [[WorkloadAnomalyCategory](../types/enums/WorkloadAnomalyCategory.md)!] | Filter by the category the anomaly is grouped under. |
+| skipBlueprintGrouping | Boolean | Return one row per anomalous object instead of grouping objects under Recovery Plans. |
 
 ## Returns
 

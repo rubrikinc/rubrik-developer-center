@@ -78,21 +78,21 @@ Db2 Database details object.
 | Field | Argument | Type | Description |
 |-------|----------|------|-------------|
 | logSnapshots | first | Int | Returns the first n elements from the list. |
-| logSnapshots | after | String | Returns the elements in the list that occur after the specified cursor. |
+| logSnapshots | after | String | An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results. |
 | logSnapshots | last | Int | Returns the last n elements from the list. |
-| logSnapshots | before | String | Returns the elements in the list that occur before the specified cursor. |
+| logSnapshots | before | String | An opaque cursor returned from a previous query's startCursor field. Pass this value verbatim to retrieve the previous page of results. |
 | logSnapshots | sortOrder | [SortOrder](../enums/SortOrder.md) | Sorts the order of results. |
 | logSnapshots | sortBy | [Db2LogSnapshotSortBy](../enums/Db2LogSnapshotSortBy.md) | Field to sort Db2 log snapshots. |
 | logSnapshots | filter | [Db2LogSnapshotFilterInput](../inputs/Db2LogSnapshotFilterInput.md) | Field to filter Db2 log snapshots. |
 | missedSnapshotConnection | first | Int | Returns the first n elements from the list. |
-| missedSnapshotConnection | after | String | Returns the elements in the list that occur after the specified cursor. |
+| missedSnapshotConnection | after | String | An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results. |
 | missedSnapshotConnection | last | Int | Returns the last n elements from the list. |
-| missedSnapshotConnection | before | String | Returns the elements in the list that occur before the specified cursor. |
+| missedSnapshotConnection | before | String | An opaque cursor returned from a previous query's startCursor field. Pass this value verbatim to retrieve the previous page of results. |
 | missedSnapshotConnection | filter | [MissedSnapshotFilterInput](../inputs/MissedSnapshotFilterInput.md) | Filter missed snapshots by date. |
 | missedSnapshotGroupByConnection | first | Int | Returns the first n elements from the list. |
-| missedSnapshotGroupByConnection | after | String | Returns the elements in the list that occur after the specified cursor. |
+| missedSnapshotGroupByConnection | after | String | An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results. |
 | missedSnapshotGroupByConnection | last | Int | Returns the last n elements from the list. |
-| missedSnapshotGroupByConnection | before | String | Returns the elements in the list that occur before the specified cursor. |
+| missedSnapshotGroupByConnection | before | String | An opaque cursor returned from a previous query's startCursor field. Pass this value verbatim to retrieve the previous page of results. |
 | missedSnapshotGroupByConnection | filter | [MissedSnapshotFilterInput](../inputs/MissedSnapshotFilterInput.md) | Filter missed snapshots by date. |
 | missedSnapshotGroupByConnection | groupBy *(required)* | [MissedSnapshotGroupByTime](../enums/MissedSnapshotGroupByTime.md)! | Group snapshots by field. |
 | missedSnapshotGroupByConnection | timezoneOffset | Float | Offset based on the customer timezone. |
@@ -105,16 +105,16 @@ Db2 Database details object.
 | numWorkloadDescendants | before | String | Returns the elements in the list that occur before the specified cursor. |
 | numWorkloadDescendants | objectTypes | [[ManagedObjectType](../enums/ManagedObjectType.md)!] | Types of objects to limit the results. If absent, all object types are returned. |
 | recoverableRanges | first | Int | Returns the first n elements from the list. |
-| recoverableRanges | after | String | Returns the elements in the list that occur after the specified cursor. |
+| recoverableRanges | after | String | An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results. |
 | recoverableRanges | last | Int | Returns the last n elements from the list. |
-| recoverableRanges | before | String | Returns the elements in the list that occur before the specified cursor. |
+| recoverableRanges | before | String | An opaque cursor returned from a previous query's startCursor field. Pass this value verbatim to retrieve the previous page of results. |
 | recoverableRanges | sortOrder | [SortOrder](../enums/SortOrder.md) | Sorts the order of results. |
 | recoverableRanges | sortBy | [Db2RecoverableRangeSortBy](../enums/Db2RecoverableRangeSortBy.md) | Field to sort Db2 recoverable ranges. |
 | recoverableRanges | filter | [Db2RecoverableRangeFilterInput](../inputs/Db2RecoverableRangeFilterInput.md) | Field to filter Db2 recoverable ranges. |
 | snapshotConnection | first | Int | Returns the first n elements from the list. |
-| snapshotConnection | after | String | Returns the elements in the list that occur after the specified cursor. |
+| snapshotConnection | after | String | An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results. |
 | snapshotConnection | last | Int | Returns the last n elements from the list. |
-| snapshotConnection | before | String | Returns the elements in the list that occur before the specified cursor. |
+| snapshotConnection | before | String | An opaque cursor returned from a previous query's startCursor field. Pass this value verbatim to retrieve the previous page of results. |
 | snapshotConnection | filter | [CdmSnapshotFilterInput](../inputs/CdmSnapshotFilterInput.md) | Filter snapshot connection. |
 | snapshotConnection | sortBy | [CdmSnapshotSortByEnum](../enums/CdmSnapshotSortByEnum.md) | Sorts snapshots by field. |
 | snapshotConnection | sortOrder | [SortOrder](../enums/SortOrder.md) | Sorts the order of results. |

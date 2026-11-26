@@ -43,4 +43,4 @@ The forward-looking legal hold rule on a workload. Any snapshot of the workload 
 - [AzureCosmosNosqlContainer.futureLegalHoldInfo](AzureCosmosNosqlContainer.md)
 - [AzureCosmosNosqlDatabase.futureLegalHoldInfo](AzureCosmosNosqlDatabase.md)
 - [AzureDevOpsOrganization.futureLegalHoldInfo](AzureDevOpsOrganization.md)
-- *…and 385 more*
+- *…and 400 more*

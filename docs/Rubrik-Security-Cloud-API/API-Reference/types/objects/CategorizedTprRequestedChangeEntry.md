@@ -6,7 +6,7 @@ Categorized changed entry in a TPR request.
 
 | Field | Type | Description |
 |-------|------|-------------|
-| categoryName | String! | TODO (SPARK-221595): Add enum for category names. Name of the category. |
+| categoryName | String! | Name of the category. |
 | entries | [[TprRequestedChangeEntry](TprRequestedChangeEntry.md)!]! | Entries changed by the TPR request. |
 
 ## Used By

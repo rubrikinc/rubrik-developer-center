@@ -11,6 +11,10 @@ User settings represented by key-value pairs for the predefined keys in Rubrik.
 
 ## Used By
 
+**Mutations**
+
+- [mutation: setUserSetting](../../mutations/setUserSetting.md)
+
 **Referenced by**
 
 - [UserSettings.settings](UserSettings.md)

@@ -1,6 +1,6 @@
 # generateCsr
 
-Generate CSR.
+Generates a certificate signing request (CSR) and its private key in RSC for the given subject details. Use the CSR to get a signed certificate, then import it with addCertificate.
 
 ## Arguments
 

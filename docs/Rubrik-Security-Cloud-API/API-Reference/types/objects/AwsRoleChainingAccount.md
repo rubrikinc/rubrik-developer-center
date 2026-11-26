@@ -14,6 +14,7 @@ Details of AWS account which facilitates role chaining.
 
 **Referenced by**
 
+- [AwsCloudAccountFeaturesWithExoConfigs.roleChainingAccount](AwsCloudAccountFeaturesWithExoConfigs.md)
 - [AwsCloudAccountWithFeatures.roleChainingAccount](AwsCloudAccountWithFeatures.md)
 - [AwsExocomputeConfig.roleChainingAccount](AwsExocomputeConfig.md)
 - [AwsFeatureConfig.roleChainingAccount](AwsFeatureConfig.md)

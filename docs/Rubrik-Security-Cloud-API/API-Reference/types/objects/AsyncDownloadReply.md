@@ -15,7 +15,7 @@ A reply of the async download request.
 
 **Mutations**
 
-- [mutation: downloadAuditLogCsvAsync](../../mutations/downloadAuditLogCsvAsync.md)
+- [mutation: downloadFile](../../mutations/downloadFile.md)
 - [mutation: downloadReportCsvAsync](../../mutations/downloadReportCsvAsync.md)
 - [mutation: downloadReportPdfAsync](../../mutations/downloadReportPdfAsync.md)
 - [mutation: sendScheduledReportAsync](../../mutations/sendScheduledReportAsync.md)

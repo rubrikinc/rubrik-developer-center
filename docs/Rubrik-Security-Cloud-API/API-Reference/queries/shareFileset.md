@@ -1,12 +1,12 @@
 # shareFileset
 
-Information about a NAS share fileset.
+Returns the details of a NAS share fileset.
 
 ## Arguments
 
 | Argument | Type | Description |
 |----------|------|-------------|
-| fid *(required)* | [UUID](../types/scalars/UUID.md)! | Rubrik UUID for the object. |
+| fid *(required)* | [UUID](../types/scalars/UUID.md)! | ID of the NAS share fileset. |
 
 ## Returns
 

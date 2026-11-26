@@ -1,12 +1,12 @@
 # createFilesetSnapshot
 
-Initiate an on-demand backup for a fileset Supported in v5.0+ Create an on-demand backup request for the given fileset.
+Starts an on-demand backup of a fileset; poll the returned request ID with filesetRequestStatus.
 
 ## Arguments
 
 | Argument | Type | Description |
 |----------|------|-------------|
-| input *(required)* | [CreateFilesetSnapshotInput](../types/inputs/CreateFilesetSnapshotInput.md)! | Input for V1CreateFilesetBackupJob. |
+| input *(required)* | [CreateFilesetSnapshotInput](../types/inputs/CreateFilesetSnapshotInput.md)! | ID of the fileset, an optional config.slaId for retention, and an optional userNote. |
 
 ## Returns
 

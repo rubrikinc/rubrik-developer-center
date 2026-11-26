@@ -35,9 +35,10 @@ Supported in v9.0+ Key properties of a Kubernetes cluster.
 | onboardingServiceAccountInfo | [ServiceAccountInfo](ServiceAccountInfo.md) | Supported in v9.2+ The details of the RSC service account used for onboarding using manifest. |
 | onboardingType | String | Supported in v9.2+ The type of onboarding. It can be kubeconfig or manifest. |
 | port | Int | Supported in v9.6+ NodePort or LoadBalancer port used to reach the kupr proxy service. |
-| pvcGroupingStrategy | String | Supported in v9.6+ PVC grouping strategy (node_affinity | count | none). Omitted when FF is off. |
+| pvcGroupingStrategy | String | Supported in v9.6+ PVC grouping strategy (node_affinity | count). Omitted when FF is off. |
 | region | String | Supported in v9.1+ Region of the Kubernetes cluster. |
 | registry | String | Supported in v9.0+ Container registry URL for storing Rubrik container images. |
+| slaProtection | [SlaProtection](SlaProtection.md) | How the Kubernetes cluster is protected, computed by the Rubrik cluster. Use this, not effectiveSlaId, to display the protection of the cluster. |
 | status | String! | Required. Supported in v9.0+ Connection status of the Kubernetes cluster. |
 | transport | String | Supported in v9.1+ The transport type used for communication with the Kubernetes cluster. |
 | workloads | [[K8sWorkloadComponentSummary](K8sWorkloadComponentSummary.md)!]! | Supported in v9.6+ In-cluster Rubrik workload components (persistent and on-demand). Null on list responses; populated only by the single-cluster GET. |

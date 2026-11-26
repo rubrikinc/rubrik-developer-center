@@ -29,6 +29,7 @@ Azure DevOps Project.
 | numWorkloadDescendants | Int! | Number of descendant workloads of this object. |
 | objectBackupWindow | [ObjectBackupWindowStatus](ObjectBackupWindowStatus.md) | Object-level backup window status of the hierarchy object. |
 | objectPauseStatus | [ObjectPauseStatus](ObjectPauseStatus.md) | Pause status of the hierarchy object. |
+| objectStats | [DevOpsObjectStats](DevOpsObjectStats.md) | DevOps object stats for this project, aggregated across the objects it contains. |
 | objectType | [HierarchyObjectTypeEnum](../enums/HierarchyObjectTypeEnum.md)! | Type of this object. |
 | orgId | [UUID](../scalars/UUID.md)! | ID of the Azure DevOps organization associated with the project. |
 | orgName | String! | Name of the Azure DevOps organization associated with the project. |

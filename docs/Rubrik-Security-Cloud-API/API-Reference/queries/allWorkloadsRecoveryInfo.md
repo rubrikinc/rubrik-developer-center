@@ -1,6 +1,6 @@
 # allWorkloadsRecoveryInfo
 
-GetAllWorkloadsRecoveryInfo returns information regarding all workloads that are part of a specific recovery.
+Returns the recovery status and details of every workload in one recovery.
 
 ## Arguments
 

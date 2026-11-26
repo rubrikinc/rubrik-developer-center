@@ -1,6 +1,6 @@
 # validateOutpostAccountNetwork
 
-ValidateOutpostNetwork validates the network configuration of an outpost account.
+Checks the network configuration of an AWS Outpost account.
 
 ## Arguments
 

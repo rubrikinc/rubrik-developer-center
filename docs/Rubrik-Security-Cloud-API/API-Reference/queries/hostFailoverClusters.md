@@ -1,6 +1,6 @@
 # hostFailoverClusters
 
-Get a summary of all host failover clusters.
+Lists the host failover clusters under the Linux or Windows host root.
 
 ## Arguments
 
@@ -10,10 +10,10 @@ Get a summary of all host failover clusters.
 | after | String | An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results. |
 | last | Int | Returns the last n elements from the list. |
 | before | String | An opaque cursor returned from a previous query's startCursor field. Pass this value verbatim to retrieve the previous page of results. |
-| hostFailoverClusterRoot *(required)* | [HostFailoverClusterRoot](../types/enums/HostFailoverClusterRoot.md)! | Host failover cluster root type. |
-| sortBy | [HierarchySortByField](../types/enums/HierarchySortByField.md) | Sort hierarchy objects according to the hierarchy field. |
+| hostFailoverClusterRoot *(required)* | [HostFailoverClusterRoot](../types/enums/HostFailoverClusterRoot.md)! | LINUX_HOST_ROOT or WINDOWS_HOST_ROOT. |
+| sortBy | [HierarchySortByField](../types/enums/HierarchySortByField.md) | Field to sort by; results are sorted only when sortOrder is also set. |
 | sortOrder | [SortOrder](../types/enums/SortOrder.md) | Sorts the order of results. |
-| filter | [[Filter](../types/inputs/Filter.md)!] | Hierarchy object filter. |
+| filter | [[Filter](../types/inputs/Filter.md)!] | Filters the results by object fields. Supported fields: NAME, NAME_EXACT_MATCH, NAME_PREFIX, IS_RELIC, IS_GHOST, IS_ARCHIVED, CLUSTER_ID, IS_REPLICATED, and FAILOVER_CLUSTER_CONNECTION_STATUS (Connected or Disconnected). Ghost objects and hidden replicas are excluded unless IS_GHOST or IS_REPLICATED is set. |
 
 ## Returns
 

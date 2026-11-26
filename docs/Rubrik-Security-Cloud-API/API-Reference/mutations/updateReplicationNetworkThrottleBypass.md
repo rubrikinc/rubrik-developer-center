@@ -1,12 +1,12 @@
 # updateReplicationNetworkThrottleBypass
 
-Update the throttle bypass configuration of a replication target location on a particular source.
+Updates the throttle bypass setting of a replication target on a source Rubrik cluster.
 
 ## Arguments
 
 | Argument | Type | Description |
 |----------|------|-------------|
-| input *(required)* | [UpdateReplicationNetworkThrottleBypassInput](../types/inputs/UpdateReplicationNetworkThrottleBypassInput.md)! | Input for V1UpdateReplicationTargetInfo. |
+| input *(required)* | [UpdateReplicationNetworkThrottleBypassInput](../types/inputs/UpdateReplicationNetworkThrottleBypassInput.md)! | The source Rubrik cluster UUID, the target cluster UUID (configured with a private network), and the new bypass setting. |
 
 ## Returns
 

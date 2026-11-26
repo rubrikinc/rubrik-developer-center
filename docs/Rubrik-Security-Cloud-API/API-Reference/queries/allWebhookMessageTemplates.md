@@ -1,12 +1,12 @@
 # allWebhookMessageTemplates
 
-Retrieve webhook message templates.
+Returns all webhook message templates in the account, both Rubrik defaults and custom templates.
 
 ## Arguments
 
 | Argument | Type | Description |
 |----------|------|-------------|
-| input *(required)* | [WebhookMessageTemplatesReqInput](../types/inputs/WebhookMessageTemplatesReqInput.md)! | Retrieve message templates input. |
+| input *(required)* | [WebhookMessageTemplatesReqInput](../types/inputs/WebhookMessageTemplatesReqInput.md)! | Requires recordType (DEFAULT or CUSTOM), which is not applied as a filter today. |
 
 ## Returns
 

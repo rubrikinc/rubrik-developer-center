@@ -44,4 +44,4 @@ The replicated cross-account object information.
 - [FusionComputeCluster.crossAccountReplicatedObjectInfos](FusionComputeCluster.md)
 - FusionComputeClusterDescendant.crossAccountReplicatedObjectInfos
 - FusionComputeClusterPhysicalChildType.crossAccountReplicatedObjectInfos
-- *…and 264 more*
+- *…and 275 more*

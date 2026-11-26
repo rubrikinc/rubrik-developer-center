@@ -1,6 +1,6 @@
 # modifyDistributionListDigestBatch
 
-Modify distribution list digests.
+Overwrites the distribution list digests identified by each entry's digestId. IDs not found in the caller's organization are skipped without error.
 
 ## Arguments
 

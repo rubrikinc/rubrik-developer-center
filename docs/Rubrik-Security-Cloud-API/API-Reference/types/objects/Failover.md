@@ -19,7 +19,7 @@ A protection task.
 | source | String! | Source of the workload associated with this Orchestrated Application Recovery failover job. |
 | startTime | [DateTime](../scalars/DateTime.md)! | The timestamp that the job starts. |
 | targetSite | String! | Target site of the Orchestrated Application Recovery failover job. |
-| taskchainId | [UUID](../scalars/UUID.md)! |  |
+| taskchainId | [UUID](../scalars/UUID.md)! | Taskchain ID of the failover job. |
 
 ## Field Arguments
 

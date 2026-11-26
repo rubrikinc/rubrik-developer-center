@@ -27,6 +27,7 @@ Feature specific details for a cloud account.
 
 **Referenced by**
 
+- [AwsCloudAccountFeaturesWithExoConfigs.featureDetails](AwsCloudAccountFeaturesWithExoConfigs.md)
 - [AwsCloudAccountWithFeatures.featureDetails](AwsCloudAccountWithFeatures.md)
 - [AwsExocomputeConfig.featureDetail](AwsExocomputeConfig.md)
 - [AwsFeatureConfig.featureDetail](AwsFeatureConfig.md)

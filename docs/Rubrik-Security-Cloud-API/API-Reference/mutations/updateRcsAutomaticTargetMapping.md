@@ -1,12 +1,12 @@
 # updateRcsAutomaticTargetMapping
 
-Update RCS automatic target mapping.
+Updates an automatic Rubrik Cloud Vault Azure archival group. The ID must belong to a Rubrik Cloud Vault Azure archival group, and an omitted name keeps the current name.
 
 ## Arguments
 
 | Argument | Type | Description |
 |----------|------|-------------|
-| input *(required)* | [UpdateRcsAutomaticTargetMappingInput](../types/inputs/UpdateRcsAutomaticTargetMappingInput.md)! | Update RCS automatic target mapping. |
+| input *(required)* | [UpdateRcsAutomaticTargetMappingInput](../types/inputs/UpdateRcsAutomaticTargetMappingInput.md)! | Input for updating an automatic Rubrik Cloud Vault Azure archival group. |
 
 ## Returns
 

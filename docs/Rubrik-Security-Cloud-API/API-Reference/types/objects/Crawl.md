@@ -33,9 +33,9 @@ A single on-demand classification scan (crawl) over a set of workloads, includin
 |-------|----------|------|-------------|
 | crawlObj | snappableFid *(required)* | String! | The unique identifier of the workload. |
 | fileResultConnection | first | Int | Returns the first n elements from the list. |
-| fileResultConnection | after | String | Returns the elements in the list that occur after the specified cursor. |
+| fileResultConnection | after | String | An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results. |
 | fileResultConnection | last | Int | Returns the last n elements from the list. |
-| fileResultConnection | before | String | Returns the elements in the list that occur before the specified cursor. |
+| fileResultConnection | before | String | An opaque cursor returned from a previous query's startCursor field. Pass this value verbatim to retrieve the previous page of results. |
 | fileResultConnection | filter | [ListFileResultFiltersInput](../inputs/ListFileResultFiltersInput.md) |  |
 | fileResultConnection | sort | [FileResultSortInput](../inputs/FileResultSortInput.md) | Sorts to apply when listing file results. |
 

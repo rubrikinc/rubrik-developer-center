@@ -1,12 +1,12 @@
 # recoverSapHanaDatabaseToPointInTime
 
-Recover the SAP HANA database to a point in time Supported in v9.4+ Recover the SAP HANA database to the provided point in time.
+Recovers a SAP HANA database to a point in time within its recoverable ranges (see sapHanaRecoverableRanges). Returns the async request; track it with jobInfo (type SAP_HANA_DATABASE, requestId = the returned id, clusterUuid = the cluster's UUID).
 
 ## Arguments
 
 | Argument | Type | Description |
 |----------|------|-------------|
-| input *(required)* | [RecoverSapHanaDatabaseToPointInTimeInput](../types/inputs/RecoverSapHanaDatabaseToPointInTimeInput.md)! | Input for V1RecoverSapHanaDatabaseToPointInTime. |
+| input *(required)* | [RecoverSapHanaDatabaseToPointInTimeInput](../types/inputs/RecoverSapHanaDatabaseToPointInTimeInput.md)! | The recovery configuration, including the point in time. |
 
 ## Returns
 

@@ -1,6 +1,6 @@
 # awsNativeDynamoDbTable
 
-GetAwsNativeDynamoDbTable returns the AWS native DynamoDB table identified by the request's Rubrik ID.
+Returns an Amazon DynamoDB table protected by Rubrik, by its Rubrik ID.
 
 ## Arguments
 

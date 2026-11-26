@@ -1,6 +1,6 @@
 # awsNativeS3Bucket
 
-GetAwsNativeS3Bucket returns the hierarchy details for a single AWS native S3 bucket.
+Returns an Amazon S3 bucket protected by Rubrik, by its Rubrik ID.
 
 ## Arguments
 

@@ -1,12 +1,12 @@
 # hostShare
 
-Returns information about a host share.
+Returns the details of a host share.
 
 ## Arguments
 
 | Argument | Type | Description |
 |----------|------|-------------|
-| fid *(required)* | [UUID](../types/scalars/UUID.md)! | Rubrik UUID for the object. |
+| fid *(required)* | [UUID](../types/scalars/UUID.md)! | ID of the host share. |
 
 ## Returns
 

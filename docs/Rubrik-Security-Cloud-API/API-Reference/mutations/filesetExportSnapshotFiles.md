@@ -1,12 +1,12 @@
 # filesetExportSnapshotFiles
 
-Create an export job to export multiple files or directories Supported in v5.0+ Starts a job that exports one or more files or folders from a fileset backup to the destination host. Returns the job status as of the job creation time. This job status includes the job ID.
+Starts a job that exports files or folders from a fileset snapshot to a destination host; poll the returned request ID with filesetRequestStatus.
 
 ## Arguments
 
 | Argument | Type | Description |
 |----------|------|-------------|
-| input *(required)* | [FilesetExportSnapshotFilesInput](../types/inputs/FilesetExportSnapshotFilesInput.md)! | Input for fileset download snapshot files. |
+| input *(required)* | [FilesetExportSnapshotFilesInput](../types/inputs/FilesetExportSnapshotFilesInput.md)! | The fileset snapshot, the paths to export, and the destination host. |
 
 ## Returns
 

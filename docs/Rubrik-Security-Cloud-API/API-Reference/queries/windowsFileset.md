@@ -1,12 +1,12 @@
 # windowsFileset
 
-Information about a Windows fileset.
+Returns the details of a Windows fileset.
 
 ## Arguments
 
 | Argument | Type | Description |
 |----------|------|-------------|
-| fid *(required)* | [UUID](../types/scalars/UUID.md)! | Rubrik UUID for the object. |
+| fid *(required)* | [UUID](../types/scalars/UUID.md)! | ID of the Windows fileset. |
 
 ## Returns
 

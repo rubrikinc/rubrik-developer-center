@@ -1,12 +1,12 @@
 # setSsoCertificate
 
-Set User defined SSO certs.
+Sets a certificate you uploaded as the single sign-on (SSO) signing or encryption certificate for the caller's organization.
 
 ## Arguments
 
 | Argument | Type | Description |
 |----------|------|-------------|
-| input *(required)* | [SetSsoCertificateInput](../types/inputs/SetSsoCertificateInput.md)! | SSO certificate details to be set. |
+| input *(required)* | [SetSsoCertificateInput](../types/inputs/SetSsoCertificateInput.md)! | Contains certificateType and certificateFid, the ID of an uploaded certificate. certificateId is deprecated. |
 
 ## Returns
 

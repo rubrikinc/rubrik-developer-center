@@ -1,6 +1,6 @@
 # upgradeToRsc
 
-Converts a GPS account to an RSC account.
+Converts a legacy account to a Rubrik Security Cloud (RSC) account.
 
 ## Returns
 

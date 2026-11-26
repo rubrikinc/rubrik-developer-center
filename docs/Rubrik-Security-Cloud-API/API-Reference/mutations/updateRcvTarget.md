@@ -1,12 +1,12 @@
 # updateRcvTarget
 
-Updates the Rubrik Cloud Vault Azure archival location.
+Updates a Rubrik Cloud Vault Azure archival location. For AWS or GCP, use updateRcvAwsTarget or updateRcvGcpTarget. Values not given are kept, except the IP allow list and proxy settings, which are replaced: leaving them out clears them. A lock duration of 0 keeps the current lock duration.
 
 ## Arguments
 
 | Argument | Type | Description |
 |----------|------|-------------|
-| input *(required)* | [UpdateRcvTargetInput](../types/inputs/UpdateRcvTargetInput.md)! | Request for updating a new Rubrik Cloud Vault Azure archival location. |
+| input *(required)* | [UpdateRcvTargetInput](../types/inputs/UpdateRcvTargetInput.md)! | ID of the location and the values to change. |
 
 ## Returns
 

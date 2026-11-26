@@ -1,6 +1,6 @@
 # bulkDeleteAwsCloudAccountWithoutCft
 
-BulkDeleteAwsCloudAccountWithoutCft deletes cloud accounts for the features provided in the request. If no feature is provided, then all the unarchived features are deleted. The API works in a best effort manner and reports back features along with the deletion status.
+Removes the given features, or all features when none are given, from AWS cloud accounts added without a CloudFormation template, and reports each feature's deletion status. Best effort: one failure does not stop the rest.
 
 ## Arguments
 

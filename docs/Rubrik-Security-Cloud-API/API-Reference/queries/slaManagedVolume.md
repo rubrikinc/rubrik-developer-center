@@ -1,12 +1,12 @@
 # slaManagedVolume
 
-Details of a SLA Managed Volume object.
+Returns one SLA Managed Volume by its ID.
 
 ## Arguments
 
 | Argument | Type | Description |
 |----------|------|-------------|
-| fid *(required)* | [UUID](../types/scalars/UUID.md)! | Rubrik UUID for the object. |
+| fid *(required)* | [UUID](../types/scalars/UUID.md)! | The SLA Managed Volume ID. |
 
 ## Returns
 

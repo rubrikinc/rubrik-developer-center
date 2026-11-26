@@ -6,7 +6,7 @@ Retrieves replication throttle bypass status for a specified replication target 
 
 | Argument | Type | Description |
 |----------|------|-------------|
-| input *(required)* | [QueryByIdReplicationTargetInfoInput](../types/inputs/QueryByIdReplicationTargetInfoInput.md)! | Input for V1QueryByIdReplicationTargetInfo. |
+| input *(required)* | [QueryByIdReplicationTargetInfoInput](../types/inputs/QueryByIdReplicationTargetInfoInput.md)! | UUID of the replication source Rubrik cluster and UUID of the target cluster. |
 
 ## Returns
 

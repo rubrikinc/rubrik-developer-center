@@ -1,12 +1,12 @@
 # pauseResumeArchivalUploadJob
 
-Pauses or resumes an in-flight archival upload job on a CDM cluster.
+Pauses or resumes an in-progress archival upload job on a Rubrik cluster. The job is identified by its event series ID. The request is acknowledged right away and the job pauses at its next pausable point. Pausing must be enabled for the cluster; resuming is always allowed.
 
 ## Arguments
 
 | Argument | Type | Description |
 |----------|------|-------------|
-| input *(required)* | [PauseResumeArchivalUploadJobInput](../types/inputs/PauseResumeArchivalUploadJobInput.md)! | Request for pausing or resuming an archival upload job. |
+| input *(required)* | [PauseResumeArchivalUploadJobInput](../types/inputs/PauseResumeArchivalUploadJobInput.md)! | The Rubrik cluster UUID, the event series ID of the upload job, and whether to pause or resume. |
 
 ## Returns
 

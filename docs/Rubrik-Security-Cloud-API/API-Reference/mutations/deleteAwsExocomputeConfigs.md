@@ -1,6 +1,6 @@
 # deleteAwsExocomputeConfigs
 
-Deletes AWS Exocompute configs.
+Deletes the given AWS Exocompute configurations.
 
 ## Arguments
 

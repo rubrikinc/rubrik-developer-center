@@ -1,12 +1,13 @@
 # Interfaces
 
-218 types.
+224 types.
 
 [ActiveDirectoryDomainDescendantType](ActiveDirectoryDomainDescendantType.md)  
 [ActiveDirectoryDomainPhysicalChildType](ActiveDirectoryDomainPhysicalChildType.md)  
 [ActiveDirectoryForestDescendantType](ActiveDirectoryForestDescendantType.md)  
 [ActiveDirectoryForestPhysicalChildType](ActiveDirectoryForestPhysicalChildType.md)  
 [ArchivalEntity](ArchivalEntity.md)  
+[ArchivalLocationKeyVaultAssignmentInfo](ArchivalLocationKeyVaultAssignmentInfo.md)  
 [AwsExocomputeGetConfigurationResponse](AwsExocomputeGetConfigurationResponse.md)  
 [AwsNativeAccountDescendantType](AwsNativeAccountDescendantType.md)  
 [AwsNativeAccountLogicalChildType](AwsNativeAccountLogicalChildType.md)  
@@ -64,6 +65,7 @@
 [HypervServerLogicalChildType](HypervServerLogicalChildType.md)  
 [HypervTopLevelDescendantType](HypervTopLevelDescendantType.md)  
 [K8sClusterDescendant](K8sClusterDescendant.md)  
+[KeyVaultInfo](KeyVaultInfo.md)  
 [KosmosDiscoverableEntityType](KosmosDiscoverableEntityType.md)  
 [KosmosHierarchyObjectType](KosmosHierarchyObjectType.md)  
 [KosmosLeafHierarchyObjectType](KosmosLeafHierarchyObjectType.md)  
@@ -206,8 +208,11 @@
 [VsphereFolderLogicalChildType](VsphereFolderLogicalChildType.md)  
 [VsphereHostDescendantType](VsphereHostDescendantType.md)  
 [VsphereHostPhysicalChildType](VsphereHostPhysicalChildType.md)  
+[VsphereNamespaceChildType](VsphereNamespaceChildType.md)  
+[VsphereNamespaceDescendantType](VsphereNamespaceDescendantType.md)  
 [VsphereResourcePoolDescendantType](VsphereResourcePoolDescendantType.md)  
 [VsphereResourcePoolPhysicalChildType](VsphereResourcePoolPhysicalChildType.md)  
+[VsphereSupervisorChildType](VsphereSupervisorChildType.md)  
 [VsphereSupervisorDescendantType](VsphereSupervisorDescendantType.md)  
 [VsphereTagCategoryDescendantType](VsphereTagCategoryDescendantType.md)  
 [VsphereTagCategoryTagChildType](VsphereTagCategoryTagChildType.md)  
@@ -217,6 +222,7 @@
 [VsphereVcenterLibraryChildType](VsphereVcenterLibraryChildType.md)  
 [VsphereVcenterLogicalChildType](VsphereVcenterLogicalChildType.md)  
 [VsphereVcenterPhysicalChildType](VsphereVcenterPhysicalChildType.md)  
+[VsphereVcenterSupervisorChildType](VsphereVcenterSupervisorChildType.md)  
 [VsphereVcenterTagChildType](VsphereVcenterTagChildType.md)  
 [WindowsClusterDescendantType](WindowsClusterDescendantType.md)  
 [WindowsClusterLogicalChildType](WindowsClusterLogicalChildType.md)  

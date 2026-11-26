@@ -1,6 +1,6 @@
 # createOrg
 
-Create a new organization under global org.
+Creates a new tenant organization in the account.
 
 ## Arguments
 

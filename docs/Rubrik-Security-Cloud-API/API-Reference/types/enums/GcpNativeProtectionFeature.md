@@ -10,3 +10,4 @@ GCP native protection features.
 | CLOUD_SQL | GCP native protection feature is Cloud SQL. |
 | GCE | GCP native protection feature is GCE. |
 | GCP_NATIVE_PROTECTION_FEATURE_NAME_UNSPECIFIED | Unspecified feature. |
+| GCS | GCP native protection feature is GCS. |

@@ -1,6 +1,6 @@
 # rotateServiceAccountSecret
 
-Rotate service account secret.
+Issues a new client secret for a service account and ends sessions that used the old one. When quorum authorization protects the account, the reply also lists the quorum authorization policies whose exemptions for this account were suspended.
 
 ## Arguments
 

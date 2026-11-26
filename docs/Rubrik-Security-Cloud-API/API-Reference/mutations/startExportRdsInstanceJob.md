@@ -1,6 +1,6 @@
 # startExportRdsInstanceJob
 
-StartExportRdsInstanceJob starts an on-demand export of an RDS or Aurora database, either launching a new RDS instance from a snapshot or a point in time, or writing the snapshot data to a customer S3 bucket.
+Starts a job that exports an RDS or Aurora database to a new instance, from a snapshot or a point in time, or writes the snapshot data to an S3 bucket.
 
 ## Arguments
 

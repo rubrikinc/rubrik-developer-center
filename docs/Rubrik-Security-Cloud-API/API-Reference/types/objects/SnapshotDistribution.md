@@ -46,4 +46,4 @@ A generic snapshot type.
 - [AzureCosmosNosqlContainer.snapshotDistribution](AzureCosmosNosqlContainer.md)
 - [AzureCosmosNosqlDatabase.snapshotDistribution](AzureCosmosNosqlDatabase.md)
 - [AzureDevOpsOrganization.snapshotDistribution](AzureDevOpsOrganization.md)
-- *…and 385 more*
+- *…and 400 more*

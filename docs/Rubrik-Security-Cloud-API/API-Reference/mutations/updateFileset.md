@@ -1,12 +1,12 @@
 # updateFileset
 
-Update a Fileset Supported in v5.0+ Update a Fileset with the specified properties.
+Changes a fileset's SLA Domain, forces a full backup, or sets its SnapMirror labels, and returns the updated fileset.
 
 ## Arguments
 
 | Argument | Type | Description |
 |----------|------|-------------|
-| input *(required)* | [UpdateFilesetInput](../types/inputs/UpdateFilesetInput.md)! | Input for V1UpdateFileset. |
+| input *(required)* | [UpdateFilesetInput](../types/inputs/UpdateFilesetInput.md)! | Input fields: id and filesetUpdateProperties, with configuredSlaDomainId, forceFull, forceFullPartitionIds, and SnapMirror labels for full and incremental backups. |
 
 ## Returns
 

@@ -17,6 +17,7 @@ Supported in v5.0+
 | name | String! | Required. Supported in v5.0+ |
 | pendingSlaDomain | [ManagedObjectPendingSlaInfo](ManagedObjectPendingSlaInfo.md) | Supported in v5.3+ Describes any pending SLA Domain assignment on this object. |
 | protectionDate | [DateTime](../scalars/DateTime.md) | UTC timestamp for when the Hyper-V virtual machine became protected by its current SLA Domain. Omitted if no SLA Domain has been assigned. The value resets every time the SLA Domain changes, including a reassignment to Unprotected. |
+| slaProtection | [SlaProtection](SlaProtection.md) | How the Hyper-V virtual machine is protected, computed by the Rubrik cluster from the effective SLA Domain of the virtual machine, including an SLA Domain inherited from a parent object. Use this, not effectiveSlaDomainId or configuredSlaDomainId, to display the protection of the virtual machine. |
 | snappable | [CdmWorkload](CdmWorkload.md) |  |
 
 ## Used By

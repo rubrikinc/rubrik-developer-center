@@ -1,12 +1,12 @@
 # sapHanaDatabase
 
-Details of a SAP HANA database for a given FID.
+Returns one SAP HANA database by its Rubrik ID; find IDs with sapHanaDatabases.
 
 ## Arguments
 
 | Argument | Type | Description |
 |----------|------|-------------|
-| fid *(required)* | [UUID](../types/scalars/UUID.md)! | Rubrik UUID for the object. |
+| fid *(required)* | [UUID](../types/scalars/UUID.md)! | Rubrik ID of the SAP HANA database. |
 
 ## Returns
 

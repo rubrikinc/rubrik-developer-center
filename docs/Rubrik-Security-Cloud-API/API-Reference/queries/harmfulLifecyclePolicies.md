@@ -1,6 +1,6 @@
 # harmfulLifecyclePolicies
 
-Customer-managed lifecycle rules detected on datacenter archival locations that would tier or delete Rubrik-owned objects.
+Lists customer-managed lifecycle rules on AWS S3 and Azure archival locations that would tier or delete objects Rubrik wrote.
 
 ## Arguments
 
@@ -10,7 +10,7 @@ Customer-managed lifecycle rules detected on datacenter archival locations that 
 | after | String | An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results. |
 | last | Int | Returns the last n elements from the list. |
 | before | String | An opaque cursor returned from a previous query's startCursor field. Pass this value verbatim to retrieve the previous page of results. |
-| filter | [HarmfulLifecyclePolicyFilter](../types/inputs/HarmfulLifecyclePolicyFilter.md) | The filters restricting which lifecycle policies are returned. |
+| filter | [HarmfulLifecyclePolicyFilter](../types/inputs/HarmfulLifecyclePolicyFilter.md) | Archival location IDs and location types to include. An empty list includes all. |
 
 ## Returns
 

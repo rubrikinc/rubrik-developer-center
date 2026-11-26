@@ -1,12 +1,12 @@
 # endManagedVolumeSnapshot
 
-End Managed Volume snapshot Supported in v7.0+ Close a Managed Volume for writes. A snapshot will be created containing all writes since the last begin-snapshot call.
+Closes a Managed Volume for writes and creates a snapshot of everything written since beginManagedVolumeSnapshot. Optionally delay the close, pass the owner ID used at the start, or set an SLA Domain, which makes it an on-demand snapshot. Requires Rubrik CDM 7.0 or later.
 
 ## Arguments
 
 | Argument | Type | Description |
 |----------|------|-------------|
-| input *(required)* | [EndManagedVolumeSnapshotInput](../types/inputs/EndManagedVolumeSnapshotInput.md)! | Input for V1CloseWritesV1. |
+| input *(required)* | [EndManagedVolumeSnapshotInput](../types/inputs/EndManagedVolumeSnapshotInput.md)! | The Managed Volume ID, plus the optional delay in seconds, owner ID, and SLA Domain override. |
 
 ## Returns
 

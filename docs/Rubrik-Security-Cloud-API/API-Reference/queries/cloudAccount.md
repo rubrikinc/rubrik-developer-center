@@ -6,7 +6,7 @@ Get cloud account details for a given cloud account ID.
 
 | Argument | Type | Description |
 |----------|------|-------------|
-| cloudAccountId *(required)* | [UUID](../types/scalars/UUID.md)! | Corresponds to Cloud Account Id in Rubrik tables |
+| cloudAccountId *(required)* | [UUID](../types/scalars/UUID.md)! | Rubrik ID of the cloud account. |
 
 ## Returns
 

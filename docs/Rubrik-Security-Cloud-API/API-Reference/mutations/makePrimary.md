@@ -1,12 +1,12 @@
 # makePrimary
 
-Make this cluster the primary for agents on a set of hosts Supported in v5.3+ Migrate the primary cluster with which the agent is able to perform regular operations (backup, restore etc). This can be done on a specified set of hosts or for all hosts that currently have a specified primary cluster for disaster recovery. Specify exactly one of `ids` or `oldPrimaryClusterUuid`.
+Makes this Rubrik cluster the primary cluster for the backup agent on the given hosts, or on every host whose primary is a given cluster.
 
 ## Arguments
 
 | Argument | Type | Description |
 |----------|------|-------------|
-| input *(required)* | [MakePrimaryInput](../types/inputs/MakePrimaryInput.md)! | Input for V1HostMakePrimary. |
+| input *(required)* | [MakePrimaryInput](../types/inputs/MakePrimaryInput.md)! | Input fields: hosts, with exactly one of ids or oldPrimaryClusterUuid, plus an option to skip the certificate update on secondary clusters. |
 
 ## Returns
 

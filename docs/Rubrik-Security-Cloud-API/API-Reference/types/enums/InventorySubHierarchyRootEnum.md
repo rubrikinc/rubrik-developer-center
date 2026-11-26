@@ -57,6 +57,7 @@ Inventory workloads that are supported on Rubrik.
 | PROXMOX_ROOT | Proxmox root. |
 | PURE_STORAGE_ROOT | Pure Storage root. |
 | SALESFORCE_ROOT | Salesforce root. |
+| SANGFOR_ROOT | Sangfor Cloud Platform root. |
 | SAP_HANA_ROOT | SAP HANA root. |
 | VCD_ROOT | VCD root. |
 | VSPHERE_ROOT | VSphere root. |

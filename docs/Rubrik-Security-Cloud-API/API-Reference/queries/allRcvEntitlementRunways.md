@@ -1,12 +1,12 @@
 # allRcvEntitlementRunways
 
-Returns projected runway in days per RCV entitlement group. Each requested group is identified by tier and redundancy; the response includes aggregated current storage, weekly growth rate, projected runway in days, and the freshness of the underlying forecast.
+Returns the projected runway in days for each Rubrik Cloud Vault entitlement group, identified by tier and redundancy, with current storage, weekly growth, and forecast freshness.
 
 ## Arguments
 
 | Argument | Type | Description |
 |----------|------|-------------|
-| groups *(required)* | [[RcvEntitlementGroupQueryInput](../types/inputs/RcvEntitlementGroupQueryInput.md)!]! | Per-entitlement-group inputs. |
+| groups *(required)* | [[RcvEntitlementGroupQueryInput](../types/inputs/RcvEntitlementGroupQueryInput.md)!]! | Entitlement groups to project, each a tier and redundancy. |
 
 ## Returns
 

@@ -1,6 +1,6 @@
 # allDbParameterGroupsByRegionFromAws
 
-ListDbParameterGroups returns the RDS DB parameter groups available in the given region of an AWS Native account.
+Lists the Amazon RDS DB parameter groups in a region of an AWS account, for the given engine and version.
 
 ## Arguments
 

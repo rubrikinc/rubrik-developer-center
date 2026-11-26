@@ -1,12 +1,12 @@
 # createOrgSwitchSession
 
-CreateOrgSwitchSessionV2 creates a new auth token for a user switching between orgs. V2 version that consolidates resolver/DAL logic into the RPC handler.
+Creates a session token for the calling user in another organization they belong to, so they can switch to it.
 
 ## Arguments
 
 | Argument | Type | Description |
 |----------|------|-------------|
-| input *(required)* | [CreateOrgSwitchSessionInput](../types/inputs/CreateOrgSwitchSessionInput.md)! | Input for creating an org switch session. |
+| input *(required)* | [CreateOrgSwitchSessionInput](../types/inputs/CreateOrgSwitchSessionInput.md)! | ID of the organization to switch to. |
 
 ## Returns
 

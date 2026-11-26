@@ -44,5 +44,8 @@ Descendant type for GCP project.
 - [GcpAlloyDbCluster](../objects/GcpAlloyDbCluster.md)
 - [GcpBigQueryDataset](../objects/GcpBigQueryDataset.md)
 - [GcpCloudSqlInstance](../objects/GcpCloudSqlInstance.md)
+- [GcpGcsBucket](../objects/GcpGcsBucket.md)
 - [GcpNativeDisk](../objects/GcpNativeDisk.md)
 - [GcpNativeGceInstance](../objects/GcpNativeGceInstance.md)
+- [GcpSpannerDatabase](../objects/GcpSpannerDatabase.md)
+- [GcpSpannerInstance](../objects/GcpSpannerInstance.md)

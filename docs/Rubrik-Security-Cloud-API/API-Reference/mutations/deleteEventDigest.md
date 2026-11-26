@@ -1,6 +1,6 @@
 # deleteEventDigest
 
-Delete event digests for specific recipients.
+Deletes every event digest for the given recipient users.
 
 ## Arguments
 

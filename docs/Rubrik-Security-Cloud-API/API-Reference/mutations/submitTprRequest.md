@@ -1,6 +1,6 @@
 # submitTprRequest
 
-Submit a TPR request.
+Submits a quorum authorization (two-person rule) request for approval.
 
 ## Arguments
 

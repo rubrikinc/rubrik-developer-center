@@ -13,4 +13,4 @@ Archiving specification.
 | frequencies | [[RetentionUnit](../enums/RetentionUnit.md)!] | Archives all snapshots taken with the specified frequency. |
 | isComplianceImmutabilityEnabled | Boolean | DEPRECATED: Compliance immutability for CNP has been reverted. This field is no longer read or written. |
 | threshold | Int | Archival threshold. |
-| thresholdUnit | [RetentionUnit](../enums/RetentionUnit.md) | Unit of archival threshold. |
+| thresholdUnit | [RetentionUnit](../enums/RetentionUnit.md) | Unit of archival threshold. For cloud native archival groups, a non-zero threshold must be in DAYS. A threshold of 0 (instant archival) can use any unit. |

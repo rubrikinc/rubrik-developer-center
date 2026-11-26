@@ -10,7 +10,7 @@ List all target mappings.
 | sortOrder | [SortOrder](../types/enums/SortOrder.md) | Sorts the order of results. |
 | filter | [[TargetMappingFilterInput](../types/inputs/TargetMappingFilterInput.md)!] | Specification on how to filter a list of target mappings. |
 | contextFilter | [ContextFilterTypeEnum](../types/enums/ContextFilterTypeEnum.md) | Specifies the context filter to use. |
-| isRcsStatsRequired | Boolean | Corresponds to rcs stats flag, only true value will add rcs stats in response. |
+| isRcsStatsRequired | Boolean | True to include Rubrik Cloud Vault Azure storage statistics in the response. |
 
 ## Returns
 

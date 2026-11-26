@@ -1,6 +1,6 @@
 # AirGappedTprReqChangesTemplate
 
-*No description available.*
+Air-gapped TPR requested-changes template.
 
 **Implements:** [RequestedChangesTemplate](../interfaces/RequestedChangesTemplate.md)
 

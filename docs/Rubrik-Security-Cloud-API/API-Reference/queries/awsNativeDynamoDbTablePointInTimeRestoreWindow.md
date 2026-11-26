@@ -1,6 +1,6 @@
 # awsNativeDynamoDbTablePointInTimeRestoreWindow
 
-GetAwsNativeDynamoDbTablePointInTimeRestoreWindow returns the recoverable range for the DynamoDB table identified by its Rubrik ID, authorizing the caller against the table via authz-service.
+Returns the time range a DynamoDB table can be recovered to.
 
 ## Arguments
 

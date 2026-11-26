@@ -32,14 +32,14 @@ Detailed view of a data classification policy.
 
 | Field | Argument | Type | Description |
 |-------|----------|------|-------------|
+| assignmentResources | first | Int | Returns the first n elements from the list. |
+| assignmentResources | after | String | An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results. |
+| assignmentResources | last | Int | Returns the last n elements from the list. |
+| assignmentResources | before | String | An opaque cursor returned from a previous query's startCursor field. Pass this value verbatim to retrieve the previous page of results. |
 | assignmentResources | searchObjectName | String | Object name to search. |
 | assignmentResources | workloadTypes | [[DataGovObjectType](../enums/DataGovObjectType.md)!] | Types of workloads used for filtering the query results. |
 | assignmentResources | sortOrder | [SortOrder](../enums/SortOrder.md) | Sorts the order of results. |
 | assignmentResources | directResourceAssignmentSortBy | [DirectResourceAssignmentSortBy](../enums/DirectResourceAssignmentSortBy.md) | Sort by policy resource assignment type. |
-| assignmentResources | first | Int | Returns the first n elements from the list. |
-| assignmentResources | after | String | Returns the elements in the list that occur after the specified cursor. |
-| assignmentResources | last | Int | Returns the last n elements from the list. |
-| assignmentResources | before | String | Returns the elements in the list that occur before the specified cursor. |
 | hierarchyObjectConnection | first | Int | Returns the first n elements from the list. |
 | hierarchyObjectConnection | after | String | Returns the elements in the list that occur after the specified cursor. |
 | hierarchyObjectConnection | last | Int | Returns the last n elements from the list. |

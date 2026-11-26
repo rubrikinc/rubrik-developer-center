@@ -1,6 +1,6 @@
 # deleteManagedVolumeSnapshotExport
 
-Delete an exported Managed Volume snapshot Supported in v7.0+ Deletes an exported Managed Volume snapshot, identified by the snapshot ID.
+Starts an asynchronous job that deletes an exported Managed Volume snapshot, identified by the export's ID, and returns the job's request status. Requires Rubrik CDM 7.0 or later.
 
 ## Arguments
 

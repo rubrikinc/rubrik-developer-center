@@ -31,6 +31,7 @@ Supported in v5.0+
 | recoveryModel | [MssqlDbSummaryRecoveryModel](../enums/MssqlDbSummaryRecoveryModel.md) | Supported in v5.0+ This field is deprecated. Use the recoveryModel field on the replicas list instead. This field will continue to work for non-availability databases, but it is meaningless for availability databases. |
 | replicas | [[MssqlDbReplica](MssqlDbReplica.md)!]! | Required. Supported in v5.0+ List of replicas of this database. An availability database may have multiple replicas, while other databases will have only one replica. |
 | rootProperties | [MssqlRootProperties](MssqlRootProperties.md) | Required. Supported in v5.0+ |
+| slaProtection | [SlaProtection](SlaProtection.md) | Supported in v9.7 How the database is protected, computed by the Rubrik cluster from the effective SLA Domain of the database, including an SLA Domain inherited from an availability group or an instance. Use this, not effectiveSlaDomainId or configuredSlaDomainId, to display the protection of the database. |
 | snappable | [CdmWorkload](CdmWorkload.md) |  |
 | state | String | Supported in v5.0+ This field is deprecated. Use the state field on the replicas list instead. This field will continue to work for non-availability databases, but it is meaningless for availability databases. |
 | unprotectableReasonsV50 | [[MssqlUnprotectableReason](MssqlUnprotectableReason.md)!]! | A list of reasons that a SQL Server database cannot be protected by Rubrik. |

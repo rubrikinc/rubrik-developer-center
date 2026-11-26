@@ -1,6 +1,6 @@
 # isTriggerRcvGrsTprConfigured
 
-Verify whether the trigger RCV GRS failover quorum authorization policy is set.
+Returns whether a quorum authorization policy covers geo-redundant Rubrik Cloud Vault failover for the caller's account. The triggerRcvGrsCustomFailover mutation fails without one.
 
 ## Returns
 

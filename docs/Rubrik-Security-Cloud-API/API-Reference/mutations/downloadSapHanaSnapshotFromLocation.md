@@ -1,12 +1,12 @@
 # downloadSapHanaSnapshotFromLocation
 
-Download a snapshot from the remote location Supported in v8.1+ Initiates a job to download a snapshot from the specified location when the snapshot does not exist locally. The specified location can be replication target or archival location. If SLA Domain is not selected, the snapshot will be retained forever.
+Downloads a SAP HANA snapshot that is not on the Rubrik cluster from a replication target or archival location; without an SLA Domain the copy is kept forever. Returns the async request.
 
 ## Arguments
 
 | Argument | Type | Description |
 |----------|------|-------------|
-| input *(required)* | [DownloadSapHanaSnapshotFromLocationInput](../types/inputs/DownloadSapHanaSnapshotFromLocationInput.md)! | Input for V1DownloadSapHanaSnapshotFromLocation. |
+| input *(required)* | [DownloadSapHanaSnapshotFromLocationInput](../types/inputs/DownloadSapHanaSnapshotFromLocationInput.md)! | The snapshot ID, the location ID, and optional download settings such as the SLA Domain. |
 
 ## Returns
 

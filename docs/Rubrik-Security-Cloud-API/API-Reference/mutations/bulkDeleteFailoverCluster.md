@@ -1,12 +1,12 @@
 # bulkDeleteFailoverCluster
 
-Delete the provided failover clusters Supported in v5.3+ Delete the provided failover clusters.
+Deletes the given host failover clusters. Existing snapshots are kept by default, set preserveSnapshots to false to delete them.
 
 ## Arguments
 
 | Argument | Type | Description |
 |----------|------|-------------|
-| input *(required)* | [BulkDeleteFailoverClusterInput](../types/inputs/BulkDeleteFailoverClusterInput.md)! | Input for V1BulkDeleteFailoverCluster. |
+| input *(required)* | [BulkDeleteFailoverClusterInput](../types/inputs/BulkDeleteFailoverClusterInput.md)! | IDs of the failover clusters and an optional preserveSnapshots flag. |
 
 ## Returns
 

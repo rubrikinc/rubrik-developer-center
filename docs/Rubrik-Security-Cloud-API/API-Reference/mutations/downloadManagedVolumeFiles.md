@@ -1,6 +1,6 @@
 # downloadManagedVolumeFiles
 
-Download files from a managed volume backup Supported in v5.0+ Start an asynchronous job to download multiple files and folders from a specified managed volume backup. The response returns an asynchronous request ID. Get the URL for downloading the ZIP file including the specific files/folders by sending a GET request to 'managed-volume/request/{id}'.
+Starts a job to download files and folders from a Managed Volume snapshot as a ZIP file, and returns the job's request status. Requires Rubrik CDM 5.0 or later.
 
 ## Arguments
 

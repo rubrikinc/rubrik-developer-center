@@ -1,6 +1,6 @@
 # tprRulesMap
 
-Map of TPR policy types to TPR rules.
+Previews which protected actions each quorum authorization (two-person rule) policy type covers for the given rules and scope.
 
 ## Arguments
 

@@ -1,12 +1,12 @@
 # awsNativeEc2Instance
 
-Returns a single AWS Native EC2 instance by its Rubrik FID.
+Returns an Amazon EC2 instance protected by Rubrik, by its Rubrik ID.
 
 ## Arguments
 
 | Argument | Type | Description |
 |----------|------|-------------|
-| ec2InstanceRubrikId *(required)* | [UUID](../types/scalars/UUID.md)! | Rubrik FID of the EC2 instance. |
+| ec2InstanceRubrikId *(required)* | [UUID](../types/scalars/UUID.md)! | Rubrik ID of the EC2 instance. |
 | includeSecurityMetadata | Boolean | Whether to include the object's security metadata in the response. |
 
 ## Returns

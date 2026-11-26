@@ -6,4 +6,4 @@ Input to initiate the GCP cloud account OAuth flow.
 
 | Field | Type | Description |
 |-------|------|-------------|
-| customerUrl | String! | Customer URL. |
+| customerUrl | String | Customer URL. Deprecated: Do not use. |

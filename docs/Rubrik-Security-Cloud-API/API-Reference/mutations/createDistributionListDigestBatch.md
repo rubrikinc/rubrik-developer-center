@@ -1,6 +1,6 @@
 # createDistributionListDigestBatch
 
-Create distribution list digests for specific recipients.
+Creates distribution list digests that email activity summaries to each digest's eventDigestConfig.emailAddresses. A digest with no email address or an invalid activity type rejects the whole request.
 
 ## Arguments
 

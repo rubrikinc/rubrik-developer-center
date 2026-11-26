@@ -1,12 +1,12 @@
 # approveRcvPrivateEndpoint
 
-ApproveRCVPrivateEndpoint approves a pending request for RCV private endpoints. After approving the private endpoint connection request, the customer can start using the private tunnel to send data to and from the CDM cluster to the Rubrik hosted storage account.
+Approves a pending private endpoint request for a Rubrik Cloud Vault location. Once approved, the Rubrik cluster can send data to and from the Rubrik-hosted storage account over the private link.
 
 ## Arguments
 
 | Argument | Type | Description |
 |----------|------|-------------|
-| input *(required)* | [ApproveRcvPrivateEndpointInput](../types/inputs/ApproveRcvPrivateEndpointInput.md)! | Input for approving a private endpoint connection request for an RCV location. |
+| input *(required)* | [ApproveRcvPrivateEndpointInput](../types/inputs/ApproveRcvPrivateEndpointInput.md)! | ID of the Rubrik Cloud Vault location and the private endpoint to approve. |
 
 ## Returns
 

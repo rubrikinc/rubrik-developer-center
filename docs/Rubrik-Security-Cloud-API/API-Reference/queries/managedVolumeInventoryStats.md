@@ -1,6 +1,6 @@
 # managedVolumeInventoryStats
 
-Aggregated inventory information for Managed Volume.
+Returns the count, provisioned size, and used size (in bytes) of Managed Volumes, split into always-mounted and SLA-based Managed Volumes.
 
 ## Returns
 

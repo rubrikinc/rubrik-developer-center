@@ -1,6 +1,6 @@
 # recoveries
 
-Return a paginated list of recoveries corresponding to the filter passed. RSC prioritizes recovery_ids if they are passed in the filter. All the filters, if passed, will work as AND logic. A maximum of 50 objects per page is supported.
+Lists recoveries that match every given filter, up to 50 per page. When recoveryIds is set, it takes priority over the other filters.
 
 ## Arguments
 
@@ -21,7 +21,7 @@ Return a paginated list of recoveries corresponding to the filter passed. RSC pr
 | recoveryNames | [String!] | Filter by recovery names. |
 | recoveryTriggeredFrom | [[RecoveryTriggeredFrom](../types/enums/RecoveryTriggeredFrom.md)!] | Filter by how the recovery was triggered. |
 | recoveryPlanIds | [[UUID](../types/scalars/UUID.md)!] | Filter by recovery plan IDs. |
-| workloadTypeFilter | [ManagedObjectType](../types/enums/ManagedObjectType.md) | Filter by workload type. |
+| workloadTypeFilter | [ManagedObjectType](../types/enums/ManagedObjectType.md) | Workload type to return. Defaults to VSPHERE_VIRTUAL_MACHINE, so set it to see recoveries of other workload types. |
 | recoveryNameSubstring | String | Filter by recovery name substring. |
 | sortParam | [RecoverySortParamInput](../types/inputs/RecoverySortParamInput.md) | Sorting parameters for the recovery list. |
 | recoveryTags | [[RecoveryTagClause](../types/inputs/RecoveryTagClause.md)!] | Filter by tag clauses. A recovery matches if it has all the tags in at least one clause. Empty clauses are ignored. |

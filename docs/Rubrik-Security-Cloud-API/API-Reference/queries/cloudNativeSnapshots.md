@@ -1,6 +1,6 @@
 # cloudNativeSnapshots
 
-List of all files and directories in a given path with the given prefix in name.
+Lists the files and folders under a path in a cloud native snapshot whose names start with the given prefix.
 
 ## Arguments
 

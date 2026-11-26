@@ -1,12 +1,12 @@
 # failoverClusterApp
 
-Get details of the given failover cluster app.
+Returns the details of a failover cluster app.
 
 ## Arguments
 
 | Argument | Type | Description |
 |----------|------|-------------|
-| fid *(required)* | [UUID](../types/scalars/UUID.md)! | Rubrik UUID for the object. |
+| fid *(required)* | [UUID](../types/scalars/UUID.md)! | ID of the failover cluster app. |
 
 ## Returns
 

@@ -1,6 +1,6 @@
 # createAwsReaderTarget
 
-Create a reader type for AWS archival location on a Rubrik cluster.
+Creates a reader location on a Rubrik cluster for an existing AWS archival location, so the cluster can read and recover data another cluster archived there.
 
 ## Arguments
 

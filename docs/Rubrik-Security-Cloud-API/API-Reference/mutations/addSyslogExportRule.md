@@ -1,12 +1,12 @@
 # addSyslogExportRule
 
-Add a new syslog export rule Supported in v5.1+ Adds a new rule specifying where to export the specified syslog information.
+Adds a syslog export rule on a Rubrik cluster (version 5.1 or later), naming the syslog server that receives its messages. Returns the new rule with its ID.
 
 ## Arguments
 
 | Argument | Type | Description |
 |----------|------|-------------|
-| input *(required)* | [AddSyslogExportRuleInput](../types/inputs/AddSyslogExportRuleInput.md)! | Input for V1AddSyslogExportRule. |
+| input *(required)* | [AddSyslogExportRuleInput](../types/inputs/AddSyslogExportRuleInput.md)! | clusterUuid identifies the Rubrik cluster; set the syslogExportRuleV* field that matches the cluster's software version. |
 
 ## Returns
 

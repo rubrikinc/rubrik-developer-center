@@ -1,6 +1,6 @@
 # cloudAccountsGetListFilters
 
-CloudAccountsGetListFilters returns available filter values for cloud account list APIs (e.g., tenant domain names and management group IDs).
+Returns the values available to filter cloud account lists by, such as tenant domain names and management group IDs.
 
 ## Arguments
 

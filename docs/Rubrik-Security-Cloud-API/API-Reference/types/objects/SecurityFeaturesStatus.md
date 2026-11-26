@@ -15,5 +15,4 @@ Security notification feature state for one object.
 
 **Referenced by**
 
-- [SecurityFeaturesStatusEntry.status](SecurityFeaturesStatusEntry.md)
 - [SecurityMetadata.securityFeaturesStatus](SecurityMetadata.md)

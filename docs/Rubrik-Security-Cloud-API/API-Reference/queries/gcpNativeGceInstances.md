@@ -1,6 +1,6 @@
 # gcpNativeGceInstances
 
-List of GCE instances.
+Lists the Google Compute Engine (GCE) instances in the GCP projects added to Rubrik.
 
 ## Arguments
 

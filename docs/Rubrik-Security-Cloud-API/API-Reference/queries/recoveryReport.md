@@ -1,12 +1,12 @@
 # recoveryReport
 
-Returns status and information about a recovery report.
+Returns the status of a recovery report (GENERATING, ACTIVE, GENERATION_FAILED, or EXPIRED) and, once it is ACTIVE, its download URL and expiry time.
 
 ## Arguments
 
 | Argument | Type | Description |
 |----------|------|-------------|
-| input *(required)* | [RecoveryReportInput](../types/inputs/RecoveryReportInput.md)! | Recovery report request parameters. |
+| input *(required)* | [RecoveryReportInput](../types/inputs/RecoveryReportInput.md)! | The reportId returned by generateRecoveryReport. |
 
 ## Returns
 

@@ -1,6 +1,6 @@
 # clusterReportMigrationCount
 
-Retrieve details of the Rubrik clusters' reports migration.
+Returns the number of reports in each migration status as reports move from Rubrik clusters to Rubrik Security Cloud, for one cluster or, when clusterUuid is omitted, all clusters.
 
 ## Arguments
 

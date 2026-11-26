@@ -6,12 +6,16 @@ The replicated object information.
 
 | Field | Type | Description |
 |-------|------|-------------|
-| cdmObjectId | String! | CDM ID of the object. |
-| clusterName | String | Name of the Rubrik CDM cluster. |
-| clusterUuid | [UUID](../scalars/UUID.md)! | UUID of the Rubrik CDM cluster. |
-| fid | [UUID](../scalars/UUID.md)! | FID of the object. |
+| cdmObjectId | String! | ID of the object on its Rubrik cluster. |
+| clusterName | String | Name of the Rubrik cluster that holds this copy. |
+| clusterUuid | [UUID](../scalars/UUID.md)! | UUID of the Rubrik cluster that holds this copy. |
+| fid | [UUID](../scalars/UUID.md)! | ID of this copy of the object in Rubrik Security Cloud. |
 
 ## Used By
+
+**Queries**
+
+- [query: replicatedObjects](../../queries/replicatedObjects.md)
 
 **Referenced by**
 

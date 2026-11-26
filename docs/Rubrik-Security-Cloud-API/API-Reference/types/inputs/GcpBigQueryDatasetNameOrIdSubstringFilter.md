@@ -1,0 +1,9 @@
+# GcpBigQueryDatasetNameOrIdSubstringFilter
+
+Filter to return GCP BigQuery datasets with a given substring in their name or ID.
+
+## Fields
+
+| Field | Type | Description |
+|-------|------|-------------|
+| nameOrIdSubstring | String! | Name or ID substring. |

@@ -1,0 +1,14 @@
+# GpoSettingsChangeDataReq
+
+GetGpoSettingsChangeDataReq is the request type to get the GPO settings change data.
+
+## Fields
+
+| Field | Type | Description |
+|-------|------|-------------|
+| eventId | String | Event ID of the GPO change event. |
+| eventTime | [DateTime](../scalars/DateTime.md) | Event timestamp of the GPO change event. |
+| jsonDisplayFieldsOnly | Boolean | When true and return_uniform_json is also true, strip the raw name and value fields from each node, returning only friendly_name, display_value, and children. Has no effect when return_uniform_json is false. |
+| returnDiffJson | Boolean | When true, compute a merged diff tree from the prev and curr uniform JSON trees. The diff tree matches nodes by friendly_name and classifies each as ADDED, DELETED, MODIFIED, or UNCHANGED. This flag implicitly enables uniform JSON processing internally, so it does not require return_uniform_json to also be true; however, the curr_uniform_json and prev_uniform_json response fields are only returned when return_uniform_json is also true. |
+| returnUniformJson | Boolean | When true, also return the GPO settings as a uniform JSON tree structure with friendly names, suitable for structured UI rendering and diff. The raw data field is omitted unless should_return_xml is also true. |
+| shouldReturnXml | Boolean | Controls the format of the raw settings data. When false and return_uniform_json is false, returns HTML. When true and return_uniform_json is false, returns XML. When return_uniform_json is true, returns JSON regardless of this flag. |

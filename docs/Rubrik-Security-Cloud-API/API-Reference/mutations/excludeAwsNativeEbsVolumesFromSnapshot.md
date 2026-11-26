@@ -1,6 +1,6 @@
 # excludeAwsNativeEbsVolumesFromSnapshot
 
-ExcludeAwsNativeEbsVolumesFromSnapshot marks EBS volumes attached to an EC2 instance as excluded from, or included in, that instance's snapshots. The change is applied atomically.
+Excludes EBS volumes attached to an EC2 instance from that instance's snapshots, or includes them again. All changes apply together or not at all.
 
 ## Arguments
 

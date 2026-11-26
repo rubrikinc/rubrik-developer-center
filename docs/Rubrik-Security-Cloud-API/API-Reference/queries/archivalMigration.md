@@ -6,7 +6,7 @@ Retrieves the current migration status and target location details for a given s
 
 | Argument | Type | Description |
 |----------|------|-------------|
-| sourceLocationId *(required)* | [UUID](../types/scalars/UUID.md)! | Rubrik Managed ID of the source archival location. |
+| sourceLocationId *(required)* | [UUID](../types/scalars/UUID.md)! | ID of the source archival location. |
 
 ## Returns
 

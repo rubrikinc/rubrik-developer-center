@@ -12,6 +12,7 @@ Supported in v5.0+
 
 **Mutations**
 
+- [mutation: batchRefreshDomains](../../mutations/batchRefreshDomains.md)
 - [mutation: bulkCreateFusionComputeVmBackup](../../mutations/bulkCreateFusionComputeVmBackup.md)
 - [mutation: bulkDeleteNasSystems](../../mutations/bulkDeleteNasSystems.md)
 - [mutation: createNutanixPrismCentral](../../mutations/createNutanixPrismCentral.md)

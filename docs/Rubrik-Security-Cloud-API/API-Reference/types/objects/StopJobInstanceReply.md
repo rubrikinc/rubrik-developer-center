@@ -12,4 +12,4 @@ Stop job instance output.
 
 **Mutations**
 
-- [mutation: stopJobInstance](../../mutations/stopJobInstance.md)
+- [mutation: cancelActiveDirectoryForestRestore](../../mutations/cancelActiveDirectoryForestRestore.md)

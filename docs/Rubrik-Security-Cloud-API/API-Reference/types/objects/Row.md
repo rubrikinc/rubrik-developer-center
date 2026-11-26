@@ -15,3 +15,4 @@ Row is a generic message type similar to SQL row.
 **Queries**
 
 - [query: reportData](../../queries/reportData.md) *(via connection)*
+- [query: reportTableData](../../queries/reportTableData.md) *(via connection)*

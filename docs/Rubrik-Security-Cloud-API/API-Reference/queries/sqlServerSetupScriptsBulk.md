@@ -6,7 +6,7 @@ The script to setup the SQL Server / Managed Instance for backups, given the lis
 
 | Argument | Type | Description |
 |----------|------|-------------|
-| input *(required)* | [GetSqlServerSetupScriptsReqBulk](../types/inputs/GetSqlServerSetupScriptsReqBulk.md)! | Input for getting scripts for manual managed backup credentials setup. |
+| input *(required)* | [GetSqlServerSetupScriptsReqBulk](../types/inputs/GetSqlServerSetupScriptsReqBulk.md)! | The object IDs to get backup setup scripts for. |
 
 ## Returns
 

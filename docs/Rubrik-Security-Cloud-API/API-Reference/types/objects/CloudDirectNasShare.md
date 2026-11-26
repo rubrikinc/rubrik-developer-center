@@ -71,9 +71,9 @@ NAS Cloud Direct share.
 | childShares | sortBy | [HierarchySortByField](../enums/HierarchySortByField.md) | Sort hierarchy objects according to the hierarchy field. |
 | childShares | sortOrder | [SortOrder](../enums/SortOrder.md) | Sorts the order of results. |
 | cloudDirectSnapshotGroupBySummary | first | Int | Returns the first n elements from the list. |
-| cloudDirectSnapshotGroupBySummary | after | String | Returns the elements in the list that occur after the specified cursor. |
+| cloudDirectSnapshotGroupBySummary | after | String | An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results. |
 | cloudDirectSnapshotGroupBySummary | last | Int | Returns the last n elements from the list. |
-| cloudDirectSnapshotGroupBySummary | before | String | Returns the elements in the list that occur before the specified cursor. |
+| cloudDirectSnapshotGroupBySummary | before | String | An opaque cursor returned from a previous query's startCursor field. Pass this value verbatim to retrieve the previous page of results. |
 | cloudDirectSnapshotGroupBySummary | sortOrder | [SortOrder](../enums/SortOrder.md) | Sorts the order of results. |
 | cloudDirectSnapshotGroupBySummary | timezoneOffset | Float | Offset based on the customer timezone. |
 | cloudDirectSnapshotGroupBySummary | filter | [[CloudDirectSnapshotsFilterInput](../inputs/CloudDirectSnapshotsFilterInput.md)!] | Filter for NAS Cloud Direct snapshots. |
@@ -81,9 +81,9 @@ NAS Cloud Direct share.
 | cloudDirectSnapshotGroupBySummary | timeRange | [TimeRangeInput](../inputs/TimeRangeInput.md) | Time range input. |
 | cloudDirectSnapshotGroupBySummary | cloudDirectTargetId | [UUID](../scalars/UUID.md) | The NAS Cloud Direct target ID. |
 | missedSnapshotGroupByConnection | first | Int | Returns the first n elements from the list. |
-| missedSnapshotGroupByConnection | after | String | Returns the elements in the list that occur after the specified cursor. |
+| missedSnapshotGroupByConnection | after | String | An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results. |
 | missedSnapshotGroupByConnection | last | Int | Returns the last n elements from the list. |
-| missedSnapshotGroupByConnection | before | String | Returns the elements in the list that occur before the specified cursor. |
+| missedSnapshotGroupByConnection | before | String | An opaque cursor returned from a previous query's startCursor field. Pass this value verbatim to retrieve the previous page of results. |
 | missedSnapshotGroupByConnection | sortOrder | [SortOrder](../enums/SortOrder.md) | Sorts the order of results. |
 | missedSnapshotGroupByConnection | timezoneOffset | Float | Offset based on the customer timezone. |
 | missedSnapshotGroupByConnection | filter | [[CloudDirectSnapshotsFilterInput](../inputs/CloudDirectSnapshotsFilterInput.md)!] | Filter for NAS Cloud Direct snapshots. |

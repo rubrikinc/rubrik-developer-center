@@ -43,4 +43,4 @@ SLA Domain name and ID.
 - [AzureNativeRegionManagedObject.rscNativeObjectPendingSla](AzureNativeRegionManagedObject.md)
 - [AzureNativeResourceGroup.rscNativeObjectPendingSla](AzureNativeResourceGroup.md)
 - [AzureNativeResourceGroupBase.rscNativeObjectPendingSla](AzureNativeResourceGroupBase.md)
-- *…and 68 more*
+- *…and 72 more*

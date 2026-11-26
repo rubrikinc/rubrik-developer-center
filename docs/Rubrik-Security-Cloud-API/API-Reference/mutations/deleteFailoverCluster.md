@@ -1,12 +1,12 @@
 # deleteFailoverCluster
 
-Delete a failover cluster Supported in v5.2+ Delete a failover cluster.
+Deletes a host failover cluster. Existing snapshots are kept by default, set preserveSnapshots to false to delete them.
 
 ## Arguments
 
 | Argument | Type | Description |
 |----------|------|-------------|
-| input *(required)* | [DeleteFailoverClusterInput](../types/inputs/DeleteFailoverClusterInput.md)! | Input for V1DeleteFailoverCluster. |
+| input *(required)* | [DeleteFailoverClusterInput](../types/inputs/DeleteFailoverClusterInput.md)! | ID of the failover cluster and an optional preserveSnapshots flag. |
 
 ## Returns
 

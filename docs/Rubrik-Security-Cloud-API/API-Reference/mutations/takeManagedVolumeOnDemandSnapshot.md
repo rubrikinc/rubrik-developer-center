@@ -1,6 +1,6 @@
 # takeManagedVolumeOnDemandSnapshot
 
-Take an on-demand snapshot of an SLA Managed Volume Supported in v5.3+ Create a job for an on-demand snapshot of an SLA Managed Volume. The response returns a request ID. To see the status of the request, poll 'managed-volume/request/{id}' with the request ID obtained in the response.
+Starts an on-demand snapshot of an SLA Managed Volume and returns the job's request status. Optionally set an SLA Domain to control how long the snapshot is kept. Requires Rubrik CDM 5.3 or later.
 
 ## Arguments
 

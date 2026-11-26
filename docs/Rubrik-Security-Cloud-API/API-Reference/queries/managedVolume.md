@@ -1,12 +1,12 @@
 # managedVolume
 
-Details of a Managed Volume Object.
+Returns one Managed Volume by its ID.
 
 ## Arguments
 
 | Argument | Type | Description |
 |----------|------|-------------|
-| fid *(required)* | [UUID](../types/scalars/UUID.md)! | Rubrik UUID for the object. |
+| fid *(required)* | [UUID](../types/scalars/UUID.md)! | The Managed Volume ID. |
 
 ## Returns
 

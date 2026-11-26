@@ -1,12 +1,12 @@
 # downloadFilesetSnapshot
 
-Create a download fileset snapshot from archival request Supported in v5.0+ Create a download fileset snapshot from archival request.
+Starts a job that downloads a fileset snapshot from its archival location back to the Rubrik cluster; poll the returned request ID with filesetRequestStatus.
 
 ## Arguments
 
 | Argument | Type | Description |
 |----------|------|-------------|
-| input *(required)* | [DownloadFilesetSnapshotInput](../types/inputs/DownloadFilesetSnapshotInput.md)! | Input for V1CreateDownloadFilesetSnapshotFromCloud. |
+| input *(required)* | [DownloadFilesetSnapshotInput](../types/inputs/DownloadFilesetSnapshotInput.md)! | ID of the fileset snapshot. |
 
 ## Returns
 

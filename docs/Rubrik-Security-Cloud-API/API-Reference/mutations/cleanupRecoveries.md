@@ -1,6 +1,6 @@
 # cleanupRecoveries
 
-Cleans up recoveries by scheduling a clean up job for each recovery.
+Schedules a cleanup job for each given recovery and reports, per recovery, whether it was scheduled. Follow each cleanup with recoveries until its status is CLEANUP_SUCCEEDED or CLEANUP_FAILED.
 
 ## Arguments
 

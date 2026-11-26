@@ -1,6 +1,6 @@
 # updateOrg
 
-Update an organization.
+Updates the settings of an existing tenant organization.
 
 ## Arguments
 

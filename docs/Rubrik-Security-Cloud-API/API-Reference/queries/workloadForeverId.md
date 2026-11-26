@@ -1,6 +1,6 @@
 # workloadForeverId
 
-Returns the RSC forever ID of a workload.
+Returns the Rubrik Security Cloud ID of a workload, given the Rubrik cluster ID and the workload's ID on that cluster.
 
 ## Arguments
 

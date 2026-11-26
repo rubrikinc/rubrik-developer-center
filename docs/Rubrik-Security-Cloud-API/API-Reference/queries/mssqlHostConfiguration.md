@@ -30,6 +30,7 @@ Get the configuration for a specific host Supported in v6.0+ Returns the configu
         enableMssqlMultiNodeRestore
         enableVdi
         enableVdiDb
+        enableVmwareAcceleratedMssqlSnapshot
         fileRestoreReadParallelism
         fileRestoreWriteParallelism
         fileTransferParallelism

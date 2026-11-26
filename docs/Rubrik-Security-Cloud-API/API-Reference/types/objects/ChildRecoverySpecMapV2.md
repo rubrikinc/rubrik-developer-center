@@ -7,6 +7,7 @@ Child recovery specification mapping for workload recovery.
 | Field | Type | Description |
 |-------|------|-------------|
 | bootPriority | Int! | Boot priority order for the workload during recovery. |
+| cachedWorkloadName | String! | Workload name captured when recovery started. |
 | postFailoverSlaId | [UUID](../scalars/UUID.md) | Post-failover SLA Domain identifier. |
 | recoveryPoint | [Long](../scalars/Long.md)! | Recovery point timestamp for the workload. |
 | snapshotId | [UUID](../scalars/UUID.md) | Snapshot identifier. |

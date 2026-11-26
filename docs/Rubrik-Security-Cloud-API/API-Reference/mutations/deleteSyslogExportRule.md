@@ -1,12 +1,12 @@
 # deleteSyslogExportRule
 
-Delete the specified syslog export rule Supported in v5.1+ Delete the syslog export rule specified by the given id.
+Deletes a syslog export rule from a Rubrik cluster (version 5.1 or later), by the rule ID from syslogExportRules.
 
 ## Arguments
 
 | Argument | Type | Description |
 |----------|------|-------------|
-| input *(required)* | [DeleteSyslogExportRuleInput](../types/inputs/DeleteSyslogExportRuleInput.md)! | Input for V1DeleteSyslogExportRule. |
+| input *(required)* | [DeleteSyslogExportRuleInput](../types/inputs/DeleteSyslogExportRuleInput.md)! | clusterUuid identifies the Rubrik cluster; id is the rule to delete. |
 
 ## Returns
 

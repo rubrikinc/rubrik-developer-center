@@ -1,6 +1,6 @@
 # tprRoleEligibility
 
-Checks if a user can be assigned a TPR role.
+Checks whether a user can be assigned a quorum authorization (two-person rule) role in an organization.
 
 ## Arguments
 

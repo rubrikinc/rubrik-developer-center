@@ -1,6 +1,6 @@
 # gcpCloudSqlInstances
 
-List of GCP Cloud SQL instances.
+Lists the Google Cloud SQL instances in the GCP projects added to Rubrik.
 
 ## Arguments
 

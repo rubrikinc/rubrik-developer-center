@@ -1,6 +1,6 @@
 # updateCloudNativeTagRule
 
-Update cloud native tag rule
+Updates a cloud native tag rule.
 
 ## Arguments
 

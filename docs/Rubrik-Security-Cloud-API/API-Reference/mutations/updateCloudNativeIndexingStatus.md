@@ -1,6 +1,6 @@
 # updateCloudNativeIndexingStatus
 
-Update indexing status for cloudnative snappables
+Turns file indexing on or off for cloud native workloads.
 
 ## Arguments
 

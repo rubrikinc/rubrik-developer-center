@@ -1,0 +1,29 @@
+# ActiveDirectoryForestRestoreConfigInput
+
+Supported in v9.2+
+
+## Fields
+
+| Field | Type | Description |
+|-------|------|-------------|
+| clientDnsIps | [String!] | Supported in v9.2+ List of IP addresses of the DNS servers. |
+| clientDnsRecoveryType | [DnsRecoveryType](../enums/DnsRecoveryType.md) | Supported in v9.4+ DNS recovery type for the restored domain controller. |
+| clientDnsStaticIps | [String!] | Supported in v9.3+ If recovering to an alternate host, this should be the list of DNS server IP addresses if the original domain controller was assigned with static IP address. |
+| dcsToCleanUp | [String!] | Supported in v9.2+ v9.2-v9.3: Hostnames of all DCs to remove from domain. v9.4+: (DEPRECATED) Use unRecoveredDcInfo instead. Hostnames of all DCs to remove from domain. |
+| dnsDelegationConfigs | [[DnsDelegationConfigInput](DnsDelegationConfigInput.md)!] | Supported in v9.2+ Configuration for the delegation records to add. |
+| dsrmAdminPassword | String | Supported in v9.5+ Directory Services Restore Mode admin password. Required for application-only forest recovery. |
+| fsmoRoles | [[DomainControllerOperationMasterRoles](../enums/DomainControllerOperationMasterRoles.md)!] | Supported in v9.2+ Roles to assign to the restored DC. |
+| hostId | String | Supported in v9.2+ ID of the host on which the restore must be performed. Leave empty to restore to the original host. |
+| isBmr | Boolean | Supported in v9.4+ v9.4: Whether to perform BMR recovery or system state. v9.5+: Deprecated -- use recoveryMethod instead. Whether to perform BMR recovery or system state. |
+| networkInterfaceSetting | [NetworkInterfaceSetting](../enums/NetworkInterfaceSetting.md) | Supported in v9.4+ Network settings of the restored Domain Controller. |
+| password | String | Supported in v9.2+ Password for the specified user. This should be the password of the user in the snapshot. |
+| recoveredDcInfo | [[RecoveredDcInfoInput](RecoveredDcInfoInput.md)!] | Supported in v9.4+ Information about domain controllers that are being recovered. |
+| recoveryMethod | [RecoveryMethod](../enums/RecoveryMethod.md) | Supported in v9.5+ Recovery method for the domain controller. When set, takes precedence over isBmr. |
+| shouldCleanupUnrecoveredDcMetadata | Boolean | Supported in v9.5+ Whether to cleanup metadata of unrecovered DCs or not. |
+| shouldRebuildGc | Boolean | Supported in v9.2+ Whether to rebuild global catalog or not. |
+| shouldResetKerberos | Boolean | Supported in v9.2+ Whether to reset kerberos tickets or not. |
+| snapshotId | String! | Required. Supported in v9.2+ Snapshot ID of the Active Directory Domain Controller to be used for recovery. |
+| trustSecret | String | Supported in v9.2+ Secret to be used to reset inter domain trusts. |
+| unRecoveredDcInfo | [[UnRecoveredDcInfoInput](UnRecoveredDcInfoInput.md)!] | Supported in v9.4+ Information about domain controllers that are not being recovered. |
+| username | String | Supported in v9.2+ User with domain admin level privileges to perform post recovery orchestration steps. This user should exist in the snapshot. |
+| winTimeServers | [String!] | Supported in v9.2+ List of hostnames or IP addresses of the time servers. |

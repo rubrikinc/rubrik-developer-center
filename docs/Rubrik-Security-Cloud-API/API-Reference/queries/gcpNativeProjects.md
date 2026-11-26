@@ -1,6 +1,6 @@
 # gcpNativeProjects
 
-List of GCP projects.
+Lists the GCP projects added to Rubrik.
 
 ## Arguments
 
@@ -34,6 +34,7 @@ List of GCP projects.
           cloudAccountId
           cloudNativeId
           diskCount
+          gcsBucketCount
           id
           isRelic
           lastRefreshedAt
@@ -82,7 +83,7 @@ List of GCP projects.
                 "cloudAccountId": "example-string",
                 "cloudNativeId": "example-string",
                 "diskCount": 0,
-                "id": "00000000-0000-0000-0000-000000000000"
+                "gcsBucketCount": 0
               }
             ]
           ],

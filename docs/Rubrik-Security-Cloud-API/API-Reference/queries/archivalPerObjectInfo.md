@@ -13,7 +13,7 @@ Get archival information for all objects with data archived to the specified loc
 | sortOrder | [SortOrder](../types/enums/SortOrder.md) | Sorts the order of results. |
 | sortBy | [ArchivalPerObjectInfoSortByField](../types/enums/ArchivalPerObjectInfoSortByField.md) | Specifies the field by which the list of archival object info will be sorted. |
 | filter | [[ArchivalPerObjectInfoFilterInput](../types/inputs/ArchivalPerObjectInfoFilterInput.md)!] | Specifies how to filter the list of archival object info. |
-| input *(required)* | [UUID](../types/scalars/UUID.md)! | Corresponds to ID of the target in Rubrik. |
+| input *(required)* | [UUID](../types/scalars/UUID.md)! | ID of the archival location. |
 
 ## Returns
 

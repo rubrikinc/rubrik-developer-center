@@ -1,6 +1,6 @@
 # validateAndInitiateAwsOutpostAccount
 
-AwsOutpostAccountValidateAndInitiate validates the request to set up an AWS Outpost account and, on successful validation, initiates the CloudFormation stack setup. On validation failure it returns the validation error in validate_response without initiating (no error is returned).
+Validates an AWS Outpost account setup and, if it passes, starts the CloudFormation stack setup. A validation failure is returned in the reply, not as an error.
 
 ## Arguments
 

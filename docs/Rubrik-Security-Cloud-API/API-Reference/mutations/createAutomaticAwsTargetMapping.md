@@ -1,6 +1,6 @@
 # createAutomaticAwsTargetMapping
 
-*No description available.*
+Creates an automatic AWS archival group.
 
 ## Arguments
 

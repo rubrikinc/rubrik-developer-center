@@ -1,6 +1,6 @@
 # modifyEventDigestBatch
 
-Modify event digests for specific recipients.
+Overwrites the event digests identified by each entry's digestId; use updateEventDigest to apply one setting to many recipients. IDs not found in the caller's organization are skipped without error.
 
 ## Arguments
 

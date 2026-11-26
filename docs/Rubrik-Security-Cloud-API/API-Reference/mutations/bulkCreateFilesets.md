@@ -1,12 +1,12 @@
 # bulkCreateFilesets
 
-Create filesets for a host Supported in v5.0+ Create filesets for a network host. Each fileset is a fileset template applied to a host.
+Creates filesets by applying fileset templates to hosts, one fileset per entry.
 
 ## Arguments
 
 | Argument | Type | Description |
 |----------|------|-------------|
-| input *(required)* | [BulkCreateFilesetsInput](../types/inputs/BulkCreateFilesetsInput.md)! | Input for InternalBulkCreateFileset. |
+| input *(required)* | [BulkCreateFilesetsInput](../types/inputs/BulkCreateFilesetsInput.md)! | Input fields: clusterUuid and definitions, each naming a host and a fileset template. |
 
 ## Returns
 

@@ -16,3 +16,4 @@ Paginated list of FilesetTemplate objects. Each page of the results includes at 
 **Queries**
 
 - [query: filesetTemplates](../../queries/filesetTemplates.md)
+- [query: filesetTemplatesByFids](../../queries/filesetTemplatesByFids.md)

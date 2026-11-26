@@ -1,6 +1,6 @@
 # createRecoveryPlanV2
 
-CreateRecoveryPlan creates a new recovery plan with the specified configuration.
+Creates a recovery plan from the given configuration and returns the plan ID and the IDs of its recovery specifications.
 
 ## Arguments
 

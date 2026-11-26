@@ -1,6 +1,6 @@
 # workloadsProtectionDetails
 
-GetWorkloadsProtectionDetails returns list of recoveries and recovery plans information around each workload provided.
+For each given workload, lists the recoveries and recovery plans it belongs to.
 
 ## Arguments
 

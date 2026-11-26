@@ -1,12 +1,12 @@
 # bulkCreateNasFilesets
 
-Create filesets in bulk for NAS shares Supported in v7.0+ Create primary filesets for a list of NAS shares.
+Creates filesets for a list of NAS shares from one fileset template.
 
 ## Arguments
 
 | Argument | Type | Description |
 |----------|------|-------------|
-| input *(required)* | [BulkCreateNasFilesetsInput](../types/inputs/BulkCreateNasFilesetsInput.md)! | Input for V1BulkCreatePolarisNasFilesets. |
+| input *(required)* | [BulkCreateNasFilesetsInput](../types/inputs/BulkCreateNasFilesetsInput.md)! | Input fields: bulkRequest, with nasShareIds, the filesetTemplate to apply, and options such as isPassthrough, isHardlinkSupportEnabled, and SnapMirror labels. |
 
 ## Returns
 

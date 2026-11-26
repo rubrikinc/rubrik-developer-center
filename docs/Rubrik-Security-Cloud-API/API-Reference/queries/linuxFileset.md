@@ -1,12 +1,12 @@
 # linuxFileset
 
-Information about a Linux fileset.
+Returns the details of a Linux fileset.
 
 ## Arguments
 
 | Argument | Type | Description |
 |----------|------|-------------|
-| fid *(required)* | [UUID](../types/scalars/UUID.md)! | Rubrik UUID for the object. |
+| fid *(required)* | [UUID](../types/scalars/UUID.md)! | ID of the Linux fileset. |
 
 ## Returns
 

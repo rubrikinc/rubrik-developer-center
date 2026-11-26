@@ -1,0 +1,15 @@
+# GcpNativeRestoreBigQueryDatasetInput
+
+Input required to restore from a BigQuery dataset snapshot.
+
+## Fields
+
+| Field | Type | Description |
+|-------|------|-------------|
+| recoveryMode | [BigQueryRecoveryMode](../enums/BigQueryRecoveryMode.md)! | Discriminator selecting the recovery data source. Required. |
+| recoveryTime | [DateTime](../scalars/DateTime.md) | Point-in-time to recover to. Required when recoveryMode is PITR; must be unset otherwise. The time must fall within the source dataset's time-travel window. |
+| shouldAddRubrikLabels | Boolean! | Specifies whether to add Rubrik labels to the restored entities or not. |
+| shouldRestoreLabels | Boolean! | Specifies whether to restore labels from the snapshot or not. |
+| snapshotId | [UUID](../scalars/UUID.md) | Snapshot Rubrik ID. Required when recoveryMode is SNAPSHOT_BASED; must be unset otherwise. |
+| sourceBigQueryDatasetRubrikId | [UUID](../scalars/UUID.md)! | Rubrik UUID of the source BigQuery dataset. Required for both recovery modes. |
+| tablesToBeRestored | [String!]! | Tables to be restored. |

@@ -1,12 +1,12 @@
 # sendTestMessageToWebhook
 
-Send test message to webhook.
+Sends a sample message using connection settings in the request, without saving a webhook, to check them before createWebhookV2; use sendTestMessageToExistingWebhook for a saved webhook. Failures come back in errorInfo with isSuccessful false.
 
 ## Arguments
 
 | Argument | Type | Description |
 |----------|------|-------------|
-| input *(required)* | [SendTestMessageToWebhookInput](../types/inputs/SendTestMessageToWebhookInput.md)! | Send test message to webhook input. |
+| input *(required)* | [SendTestMessageToWebhookInput](../types/inputs/SendTestMessageToWebhookInput.md)! | Endpoint URL (https), provider type, and optional authentication and server certificate. |
 
 ## Returns
 
@@ -29,7 +29,7 @@ Send test message to webhook.
     ```json
     {
       "input": {
-        "providerType": "CUSTOM"
+        "providerType": "CROWDSTRIKE_NG_SIEM"
       }
     }
     ```

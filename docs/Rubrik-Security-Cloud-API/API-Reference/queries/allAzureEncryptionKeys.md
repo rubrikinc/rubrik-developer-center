@@ -1,12 +1,12 @@
 # allAzureEncryptionKeys
 
-List of all Encryption Keys in an Azure Key Vault.
+Lists the encryption keys in an Azure Key Vault.
 
 ## Arguments
 
 | Argument | Type | Description |
 |----------|------|-------------|
-| azureEncryptionKeysInput *(required)* | [AzureEncryptionKeysInput](../types/inputs/AzureEncryptionKeysInput.md)! | Input for fetching Encryption Keys in an Azure Key Vault. |
+| azureEncryptionKeysInput *(required)* | [AzureEncryptionKeysInput](../types/inputs/AzureEncryptionKeysInput.md)! | The cloud account ID and the name and resource group of the Key Vault. |
 
 ## Returns
 

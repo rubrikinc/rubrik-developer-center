@@ -19,4 +19,5 @@ Paginated list of ActivitySeries objects. Each page of the results includes at m
 
 **Referenced by**
 
+- [ActivitySeriesGroupBy.activitySeriesConnection](ActivitySeriesGroupBy.md)
 - [Cluster.activitySeriesConnection](Cluster.md)

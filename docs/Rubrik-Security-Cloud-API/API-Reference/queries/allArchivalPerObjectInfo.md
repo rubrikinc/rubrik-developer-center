@@ -1,6 +1,6 @@
 # allArchivalPerObjectInfo
 
-Get archival information for all objects across every archival location the caller can view. Each row is one (object, archival location) pair; an object protected to multiple locations emits one row per location. The five per-location fields (archivalLocationId, archivalLocationName, storageTier, locationType, isRcv) are populated only by this field; archivalPerObjectInfo leaves them empty.
+Lists archival information for every object across all archival locations the caller can view, with one row per object and location pair. An object archived to several locations has one row for each location.
 
 ## Arguments
 
@@ -13,8 +13,8 @@ Get archival information for all objects across every archival location the call
 | sortOrder | [SortOrder](../types/enums/SortOrder.md) | Sorts the order of results. |
 | sortBy | [ArchivalPerObjectInfoSortByField](../types/enums/ArchivalPerObjectInfoSortByField.md) | Specifies the field by which the list of archival object info will be sorted. |
 | filter | [[ArchivalPerObjectInfoFilterInput](../types/inputs/ArchivalPerObjectInfoFilterInput.md)!] | Specifies how to filter the list of archival object info. |
-| activeOnly *(required)* | Boolean! | When true (default), excludes soft-deleted (archived) managed objects from the all-locations result. Pass false to include them. |
-| useCase *(required)* | [ArchivalEntityUseCaseType](../types/enums/ArchivalEntityUseCaseType.md)! | Selects which data plane's archival locations to return. CLOUD_NATIVE returns CNP locations; DATA_CENTER returns CDM locations; NAS_CD returns NCD locations. USE_CASE_TYPE_UNSPECIFIED and BACKUP are rejected. |
+| activeOnly *(required)* | Boolean! | When true (default), excludes deleted objects. Pass false to include them. |
+| useCase *(required)* | [ArchivalEntityUseCaseType](../types/enums/ArchivalEntityUseCaseType.md)! | Which archival locations to include: cloud-native, data center (Rubrik cluster), or NAS Cloud Direct. Other values are rejected. |
 
 ## Returns
 

@@ -9,14 +9,12 @@ Specifies the policy type of an Intune device management configuration policy.
 | INTUNE_DEVICE_MANAGEMENT_POLICY_TYPE_ADMINISTRATIVE_TEMPLATES | ADMX-backed administrative templates. |
 | INTUNE_DEVICE_MANAGEMENT_POLICY_TYPE_ANDROID_FOR_WORK_MIGRATION_POLICY | Migration profile for moving to Android Management API. |
 | INTUNE_DEVICE_MANAGEMENT_POLICY_TYPE_BIOS_CONFIGURATIONS | BIOS and firmware settings (Dell, HP, Lenovo, etc.). |
-| INTUNE_DEVICE_MANAGEMENT_POLICY_TYPE_BIOS_CONFIGURATIONS_REACT | BIOS configurations React internal variant. |
 | INTUNE_DEVICE_MANAGEMENT_POLICY_TYPE_CUSTOM | OMA-URI custom configuration profiles. |
 | INTUNE_DEVICE_MANAGEMENT_POLICY_TYPE_CUSTOM_ADMINISTRATIVE_TEMPLATES | Imported ADMX administrative templates (Preview). |
 | INTUNE_DEVICE_MANAGEMENT_POLICY_TYPE_DELIVERY_OPTIMIZATION | Windows Update delivery optimization settings. |
 | INTUNE_DEVICE_MANAGEMENT_POLICY_TYPE_DERIVED_CREDENTIAL | Derived credential enrollment profiles. |
 | INTUNE_DEVICE_MANAGEMENT_POLICY_TYPE_DEVICE_FEATURES | Platform-specific device features (AirPrint, notifications, etc.). |
 | INTUNE_DEVICE_MANAGEMENT_POLICY_TYPE_DEVICE_FIRMWARE_CONFIGURATION_INTERFACE | DFCI BIOS management profiles. |
-| INTUNE_DEVICE_MANAGEMENT_POLICY_TYPE_DEVICE_FIRMWARE_CONFIGURATION_INTERFACE_REACT | DFCI BIOS management React internal variant. |
 | INTUNE_DEVICE_MANAGEMENT_POLICY_TYPE_DEVICE_RESTRICTIONS | Platform-specific device restriction profiles. |
 | INTUNE_DEVICE_MANAGEMENT_POLICY_TYPE_DEVICE_RESTRICTIONS_WINDOWS_10_TEAM | Device restrictions for Windows 10 Team (Surface Hub). |
 | INTUNE_DEVICE_MANAGEMENT_POLICY_TYPE_DOMAIN_JOIN | Hybrid Azure AD join domain join configuration. |

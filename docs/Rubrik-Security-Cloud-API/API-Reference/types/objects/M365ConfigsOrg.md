@@ -44,6 +44,7 @@ An M365 Configs organization managed by Rubrik.
 | status | [SaasOrganizationStatus](../enums/SaasOrganizationStatus.md)! | The state of the SaaS organization. |
 | storageRegion | String | The storage region for the organization. |
 | storageRegions | [SaasAppsOrgStorageLocations](SaasAppsOrgStorageLocations.md)! | The storage regions where RSC backs up organization's data. |
+| url | [URL](../scalars/URL.md) | The initial domain of the M365 tenant. |
 
 ## Field Arguments
 

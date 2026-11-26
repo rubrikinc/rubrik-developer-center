@@ -1,6 +1,6 @@
 # updateRole
 
-This endpoint is deprecated.
+Deprecated; use mutateRole. Replaces a custom role's name, description, and permissions.
 
 ## Arguments
 

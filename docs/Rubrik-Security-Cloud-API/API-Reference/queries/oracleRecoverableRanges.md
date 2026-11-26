@@ -49,7 +49,8 @@ Get recoverable ranges of a Oracle database Supported in v5.0+ Retrieve the reco
             {
               "beginTime": "2024-01-01T00:00:00.000Z",
               "endTime": "2024-01-01T00:00:00.000Z",
-              "status": "example-string"
+              "status": "example-string",
+              "zeroRpoEndTime": "2024-01-01T00:00:00.000Z"
             }
           ]
         }

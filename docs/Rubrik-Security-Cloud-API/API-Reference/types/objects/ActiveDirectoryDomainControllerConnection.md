@@ -16,3 +16,4 @@ Paginated list of ActiveDirectoryDomainController objects. Each page of the resu
 **Queries**
 
 - [query: activeDirectoryDomainControllers](../../queries/activeDirectoryDomainControllers.md)
+- [query: unifiedActiveDirectoryDomainControllers](../../queries/unifiedActiveDirectoryDomainControllers.md)

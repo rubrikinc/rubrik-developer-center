@@ -1,6 +1,6 @@
 # startRecoverDynamoDbSnapshotJob
 
-Starts an on-demand snapshot recovery job for the specified AWS DynamoDB table. Returns the ID of the taskchain initiated for the recovery job.
+Starts a job that recovers a DynamoDB table from a snapshot. Returns the job ID.
 
 ## Arguments
 

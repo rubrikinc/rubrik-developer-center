@@ -23,3 +23,4 @@ GcpProject represents a Google Cloud Platform (GCP) project within the Rubrik pl
 **Referenced by**
 
 - [GcpCloudAccountGetProjectResponse.project](GcpCloudAccountGetProjectResponse.md)
+- [GcpListAllProjectsForOauthReply.projects](GcpListAllProjectsForOauthReply.md)

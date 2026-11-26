@@ -18,8 +18,10 @@ Supported in v9.6+ Configuration for MongoDB databases or collections cluster-le
 | sourceCollectionIds | [String!] | Supported in v9.6+ Managed IDs of the MongoDB collection objects. |
 | sourceDatabaseIds | [String!] | Supported in v9.6+ Managed IDs of the MongoDB database objects. |
 | sourceMongoClusterId | String! | Required. Supported in v9.6+ Managed ID of the MongoDB source cluster. |
+| sourceShardToTargetShardMap | [MongoSourceShardToTargetShardMapInput](MongoSourceShardToTargetShardMapInput.md) | Map from source cluster shards to target cluster shards for primary shard placement of databases and unsharded collections. |
 | targetAuthenticationType | [MongoAuthenticationType](../enums/MongoAuthenticationType.md) | Supported in v9.6+ Type of user authentication used when recovering to a target MongoDB cluster. If no option is provided, the one used while adding the target source is used. |
 | targetCollectionName | String | Supported in v9.6+ Name of the target collection for recovery. |
 | targetDatabaseName | String | Supported in v9.6+ Name of the target database for recovery. |
 | targetMongoClusterId | String! | Required. Supported in v9.6+ Managed ID of the MongoDB target cluster. |
+| targetShardToSourceShardMap | [MongoTargetShardToSourceShardMapInput](MongoTargetShardToSourceShardMapInput.md) | Map from target cluster shards to source cluster shards for zone assignment. Required when shard sets differ and config database recovery is selected. Shards map to self when shard sets match. |
 | versionTime | [DateTime](../scalars/DateTime.md) | Supported in v9.6+ Timestamp of the snapshot version used to restore the user databases. Omit this field to skip user database recovery. |

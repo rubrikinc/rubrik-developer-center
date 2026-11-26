@@ -1,12 +1,12 @@
 # networkThrottle
 
-Network Throttle Information.
+Returns the network throttle settings on a Rubrik cluster, optionally only for archival or replication egress.
 
 ## Arguments
 
 | Argument | Type | Description |
 |----------|------|-------------|
-| input *(required)* | [QueryNetworkThrottleInput](../types/inputs/QueryNetworkThrottleInput.md)! | Input for InternalQueryNetworkThrottle. |
+| input *(required)* | [QueryNetworkThrottleInput](../types/inputs/QueryNetworkThrottleInput.md)! | The Rubrik cluster UUID and an optional resource: archival egress or replication egress. |
 
 ## Returns
 

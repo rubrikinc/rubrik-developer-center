@@ -15,3 +15,4 @@ Cloud Account ID along with Features and permissions serialized in JSON format.
 
 - [query: allCurrentFeaturePermissionsForCloudAccounts](../../queries/allCurrentFeaturePermissionsForCloudAccounts.md)
 - [query: allLatestFeaturePermissionsForCloudAccounts](../../queries/allLatestFeaturePermissionsForCloudAccounts.md)
+- [query: gcpCloudAccountGrantedPermissionsGroups](../../queries/gcpCloudAccountGrantedPermissionsGroups.md)

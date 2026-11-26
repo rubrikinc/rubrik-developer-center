@@ -1,6 +1,6 @@
 # updateAutomaticAwsTargetMapping
 
-*No description available.*
+Updates an automatic AWS archival group. The ID must belong to an AWS archival group, an omitted name keeps the current name, and the Intelligent-Tiering storage class is not supported.
 
 ## Arguments
 

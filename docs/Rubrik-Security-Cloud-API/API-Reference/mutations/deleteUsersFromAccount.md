@@ -1,12 +1,12 @@
 # deleteUsersFromAccount
 
-Deletes specified users from the account.
+Deletes the given users from the account.
 
 ## Arguments
 
 | Argument | Type | Description |
 |----------|------|-------------|
-| ids *(required)* | [String!]! | List of IDs. |
+| ids *(required)* | [String!]! | IDs of the users to delete. |
 
 ## Returns
 

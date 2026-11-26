@@ -1,12 +1,12 @@
 # configureSapHanaRestore
 
-Configure the target database for system copy restore Supported in v6.0+ Initiates a job to configure the specified target database for a system copy restore by sending metadata about the source database. System copy restore in SAP HANA is done across different databases.
+Prepares a target SAP HANA database for a system copy restore by sending it the source database's metadata; undo with unconfigureSapHanaRestore. Returns the async request; track it with jobInfo (type SAP_HANA_DATABASE, requestId = the returned id, clusterUuid = the cluster's UUID).
 
 ## Arguments
 
 | Argument | Type | Description |
 |----------|------|-------------|
-| input *(required)* | [ConfigureSapHanaRestoreInput](../types/inputs/ConfigureSapHanaRestoreInput.md)! | Input for V1ConfigureSapHanaRestore. |
+| input *(required)* | [ConfigureSapHanaRestoreInput](../types/inputs/ConfigureSapHanaRestoreInput.md)! | The target database ID and the source database's configuration metadata. |
 
 ## Returns
 

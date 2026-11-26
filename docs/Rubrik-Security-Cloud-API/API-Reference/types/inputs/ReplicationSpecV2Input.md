@@ -17,3 +17,4 @@ Replication specification.
 | replicationPairs | [[ReplicationPairInput](ReplicationPairInput.md)!] | Datacenter replication pairs. |
 | retentionDuration | [SlaDurationInput](SlaDurationInput.md) | Retention duration. |
 | storageSettingId | String | Storage setting ID. |
+| targetMappingId | String | ID of the target mapping used as the replication target. |

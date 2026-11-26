@@ -18,3 +18,5 @@ Information about a Recovery Plan.
 - [ActiveDirectoryForest.recoveryPlansInfo](ActiveDirectoryForest.md)
 - [AwsNativeEc2Instance.recoveryPlansInfo](AwsNativeEc2Instance.md)
 - [AzureNativeVirtualMachine.recoveryPlansInfo](AzureNativeVirtualMachine.md)
+- [UnifiedActiveDirectoryDomain.recoveryPlansInfo](UnifiedActiveDirectoryDomain.md)
+- [UnifiedActiveDirectoryForest.recoveryPlansInfo](UnifiedActiveDirectoryForest.md)

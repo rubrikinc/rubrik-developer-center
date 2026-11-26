@@ -77,15 +77,19 @@ Active Directory Domain Controller.
 
 | Field | Argument | Type | Description |
 |-------|----------|------|-------------|
+| hypervVirtualMachines | first | Int | Returns the first n elements from the list. |
+| hypervVirtualMachines | after | String | An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results. |
+| hypervVirtualMachines | last | Int | Returns the last n elements from the list. |
+| hypervVirtualMachines | before | String | An opaque cursor returned from a previous query's startCursor field. Pass this value verbatim to retrieve the previous page of results. |
 | missedSnapshotConnection | first | Int | Returns the first n elements from the list. |
-| missedSnapshotConnection | after | String | Returns the elements in the list that occur after the specified cursor. |
+| missedSnapshotConnection | after | String | An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results. |
 | missedSnapshotConnection | last | Int | Returns the last n elements from the list. |
-| missedSnapshotConnection | before | String | Returns the elements in the list that occur before the specified cursor. |
+| missedSnapshotConnection | before | String | An opaque cursor returned from a previous query's startCursor field. Pass this value verbatim to retrieve the previous page of results. |
 | missedSnapshotConnection | filter | [MissedSnapshotFilterInput](../inputs/MissedSnapshotFilterInput.md) | Filter missed snapshots by date. |
 | missedSnapshotGroupByConnection | first | Int | Returns the first n elements from the list. |
-| missedSnapshotGroupByConnection | after | String | Returns the elements in the list that occur after the specified cursor. |
+| missedSnapshotGroupByConnection | after | String | An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results. |
 | missedSnapshotGroupByConnection | last | Int | Returns the last n elements from the list. |
-| missedSnapshotGroupByConnection | before | String | Returns the elements in the list that occur before the specified cursor. |
+| missedSnapshotGroupByConnection | before | String | An opaque cursor returned from a previous query's startCursor field. Pass this value verbatim to retrieve the previous page of results. |
 | missedSnapshotGroupByConnection | filter | [MissedSnapshotFilterInput](../inputs/MissedSnapshotFilterInput.md) | Filter missed snapshots by date. |
 | missedSnapshotGroupByConnection | groupBy *(required)* | [MissedSnapshotGroupByTime](../enums/MissedSnapshotGroupByTime.md)! | Group snapshots by field. |
 | missedSnapshotGroupByConnection | timezoneOffset | Float | Offset based on the customer timezone. |
@@ -99,9 +103,9 @@ Active Directory Domain Controller.
 | numWorkloadDescendants | before | String | Returns the elements in the list that occur before the specified cursor. |
 | numWorkloadDescendants | objectTypes | [[ManagedObjectType](../enums/ManagedObjectType.md)!] | Types of objects to limit the results. If absent, all object types are returned. |
 | snapshotConnection | first | Int | Returns the first n elements from the list. |
-| snapshotConnection | after | String | Returns the elements in the list that occur after the specified cursor. |
+| snapshotConnection | after | String | An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results. |
 | snapshotConnection | last | Int | Returns the last n elements from the list. |
-| snapshotConnection | before | String | Returns the elements in the list that occur before the specified cursor. |
+| snapshotConnection | before | String | An opaque cursor returned from a previous query's startCursor field. Pass this value verbatim to retrieve the previous page of results. |
 | snapshotConnection | filter | [CdmSnapshotFilterInput](../inputs/CdmSnapshotFilterInput.md) | Filter snapshot connection. |
 | snapshotConnection | sortBy | [CdmSnapshotSortByEnum](../enums/CdmSnapshotSortByEnum.md) | Sorts snapshots by field. |
 | snapshotConnection | sortOrder | [SortOrder](../enums/SortOrder.md) | Sorts the order of results. |
@@ -132,3 +136,10 @@ Active Directory Domain Controller.
 
 - [query: activeDirectoryDomainController](../../queries/activeDirectoryDomainController.md)
 - [query: activeDirectoryDomainControllers](../../queries/activeDirectoryDomainControllers.md) *(via connection)*
+- [query: unifiedActiveDirectoryDomainControllers](../../queries/unifiedActiveDirectoryDomainControllers.md) *(via connection)*
+
+**Referenced by**
+
+- [ActiveDirectoryCleanRecoveryConfig.preferredDomainController](ActiveDirectoryCleanRecoveryConfig.md)
+- [ActiveDirectoryCleanRecoveryConfig.preferredReplicatedDomainControllerObject](ActiveDirectoryCleanRecoveryConfig.md)
+- [DomainControllerForestRestoreJobStatus.domainController](DomainControllerForestRestoreJobStatus.md)

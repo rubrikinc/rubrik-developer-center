@@ -1,6 +1,6 @@
 # mountDisk
 
-Mount disks to the given workload.
+Mounts disks from a snapshot onto the given workload.
 
 ## Arguments
 

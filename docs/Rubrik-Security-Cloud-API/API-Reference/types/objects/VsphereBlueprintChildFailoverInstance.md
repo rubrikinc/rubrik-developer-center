@@ -9,7 +9,7 @@
 | Field | Type | Description |
 |-------|------|-------------|
 | failoverInstance | [AwsEc2Instance](AwsEc2Instance.md)! |  |
-| snappableId | String! |  |
+| snappableId | String! | The Blueprint child object ID. |
 
 ## Used By
 

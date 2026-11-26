@@ -24,4 +24,6 @@ Role customization details for the AWS account.
 
 **Referenced by**
 
+- [AwsCloudAccountFeaturesWithExoConfigs.awsRoleCustomization](AwsCloudAccountFeaturesWithExoConfigs.md)
 - [AwsCloudAccountWithFeatures.awsRoleCustomization](AwsCloudAccountWithFeatures.md)
+- [AwsOrgEnabledFeaturesReply.awsRoleCustomization](AwsOrgEnabledFeaturesReply.md)
